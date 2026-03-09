@@ -61,7 +61,7 @@ public class ShortLambdaValue extends ExecutableValue {
       ShortLambdaExpression__BehaviorDescriptor.putLambdaArg_id5s__jxCq8Sv.invoke(le, lambdaArg.value);
     }
     SNode ttt = IShortLambdaContainer__BehaviorDescriptor.requiredType_id6zmBjqUm7MF.invoke(SNodeOperations.cast(SNodeOperations.getParent(le), CONCEPTS.IShortLambdaContainer$6m));
-    SLinkOperations.setTarget(lambdaArg.value, LINKS.type$8xXf, ttt);
+    SLinkOperations.setTarget(lambdaArg.value, LINKS.type$8xXf, SNodeOperations.copyNode(ttt));
     ListSequence.fromList(SLinkOperations.getChildren(lambda, LINKS.args$8wKH)).addElement(lambdaArg.value);
     ListSequence.fromList(SNodeOperations.getNodeDescendants(SLinkOperations.getTarget(lambda, LINKS.expression$T2aj), CONCEPTS.ShortLambdaItExpression$k0, true, new SAbstractConcept[]{})).visitAll((it) -> {
       // do not go into nested short lambda expressions, otherwise all

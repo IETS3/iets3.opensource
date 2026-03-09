@@ -468,148 +468,143 @@
       <node id="3012580140941925239" at="156,29,157,100" concept="4" />
       <node id="3012580140942153051" at="157,100,158,70" concept="4" />
       <node id="2960065033402845537" at="161,9,162,0" concept="12" />
-      <node id="1073600042466450031" at="162,0,163,100" concept="11" />
-      <node id="3331197186571411759" at="163,100,164,83" concept="9" />
-      <node id="3331197186571511994" at="164,83,165,219" concept="4" />
-      <node id="3331197186571622516" at="165,219,166,40" concept="1" />
-      <node id="2960065033445906643" at="166,40,167,144" concept="10" />
-      <node id="2960065033446056484" at="168,5,169,106" concept="10" />
-      <node id="5714859726079000871" at="172,96,173,73" concept="9" />
-      <node id="5714859726079000875" at="173,73,174,130" concept="4" />
-      <node id="5714859726079000888" at="174,130,175,31" concept="10" />
-      <node id="7270168163181682139" at="188,81,189,70" concept="9" />
-      <node id="7270168163181721006" at="189,70,190,178" concept="4" />
-      <node id="6726385156427554114" at="191,32,192,150" concept="9" />
-      <node id="6726385156427621309" at="193,31,194,69" concept="4" />
-      <node id="6219983863606333077" at="195,7,196,23" concept="10" />
-      <node id="6726385156427314870" at="198,31,199,75" concept="4" />
-      <node id="3935512159061699393" at="201,5,202,79" concept="10" />
-      <node id="5913325679855478629" at="206,117,207,95" concept="9" />
-      <node id="5913325679855478643" at="207,95,208,69" concept="9" />
-      <node id="5913325679855810602" at="208,69,209,17" concept="10" />
-      <node id="3255940176388092143" at="220,103,221,35" concept="10" />
-      <node id="3012580140933750867" at="224,82,225,121" concept="9" />
-      <node id="3012580140933750873" at="225,121,226,132" concept="9" />
-      <node id="3012580140933750879" at="226,132,227,0" concept="12" />
-      <node id="7980339574873629915" at="228,33,229,18" concept="10" />
-      <node id="2829104491451434947" at="231,55,232,18" concept="10" />
-      <node id="2829104491451419673" at="233,5,234,0" concept="12" />
-      <node id="3012580140933750978" at="234,0,235,55" concept="10" />
-      <node id="6415158579086134948" at="238,81,239,58" concept="11" />
-      <node id="6415158579086134959" at="239,58,240,118" concept="9" />
-      <node id="6415158579086134977" at="241,154,242,69" concept="9" />
-      <node id="6415158579086134984" at="242,69,243,193" concept="10" />
-      <node id="6415158579084865083" at="247,82,248,172" concept="9" />
-      <node id="6415158579084820255" at="248,172,249,0" concept="12" />
-      <node id="6415158579084423252" at="249,0,250,111" concept="9" />
-      <node id="6415158579084685338" at="250,111,251,0" concept="12" />
-      <node id="6415158579084363844" at="252,72,253,54" concept="9" />
-      <node id="6415158579084363854" at="253,54,254,207" concept="10" />
-      <node id="2388984315078134576" at="258,63,259,326" concept="10" />
-      <node id="2388984315073210222" at="264,264,265,60" concept="4" />
-      <node id="2388984315073210229" at="265,60,266,93" concept="4" />
-      <node id="2388984315073210235" at="267,7,268,0" concept="12" />
-      <node id="2388984315073158388" at="271,43,272,139" concept="9" />
-      <node id="2388984315073158398" at="272,139,273,257" concept="4" />
-      <node id="2388984315073158423" at="273,257,274,259" concept="4" />
-      <node id="2388984315077808977" at="277,53,278,98" concept="11" />
-      <node id="2388984315077809000" at="279,121,280,47" concept="11" />
-      <node id="2388984315077809009" at="280,47,281,70" concept="4" />
-      <node id="2388984315077809015" at="281,70,282,130" concept="11" />
-      <node id="1702607279122593825" at="282,130,283,77" concept="4" />
-      <node id="2221974065847065937" at="288,60,289,192" concept="4" />
-      <node id="2221974065847434613" at="289,192,290,13" concept="10" />
-      <node id="7567776041894777805" at="291,7,292,64" concept="4" />
-      <node id="3012580140934393259" at="292,64,293,36" concept="4" />
-      <node id="3012580140934438433" at="293,36,294,45" concept="4" />
-      <node id="2096528664889890073" at="294,45,295,0" concept="12" />
-      <node id="7567776041895746121" at="295,0,296,35" concept="4" />
-      <node id="3012580140934618574" at="296,35,297,46" concept="4" />
-      <node id="3012580140934658332" at="297,46,298,91" concept="4" />
-      <node id="4553534215492093699" at="298,91,299,0" concept="12" />
-      <node id="653124372847845181" at="299,0,300,68" concept="4" />
-      <node id="2221974065899999482" at="305,75,306,125" concept="10" />
-      <node id="2221974065899999491" at="307,5,308,69" concept="4" />
-      <node id="2221974065899999496" at="308,69,309,0" concept="12" />
-      <node id="2221974065899999497" at="309,0,310,96" concept="9" />
-      <node id="2221974065900711522" at="310,96,311,93" concept="4" />
-      <node id="2221974065899999501" at="311,93,312,97" concept="9" />
-      <node id="2221974065899999527" at="312,97,313,100" concept="4" />
-      <node id="2221974065899999532" at="313,100,314,56" concept="9" />
-      <node id="3255940176375315228" at="314,56,315,114" concept="9" />
-      <node id="2221974065899999537" at="315,114,316,111" concept="4" />
-      <node id="2221974065899999553" at="316,111,317,18" concept="10" />
-      <node id="8205517310620913051" at="321,94,322,514" concept="10" />
-      <node id="7567776041895063398" at="325,59,326,115" concept="9" />
-      <node id="7567776041895063407" at="326,115,327,56" concept="4" />
-      <node id="993412995928286314" at="327,56,328,0" concept="12" />
-      <node id="6809538291476026363" at="328,0,329,79" concept="4" />
-      <node id="1029053223887457664" at="332,119,333,0" concept="12" />
-      <node id="6809538291407048171" at="334,126,335,64" concept="9" />
-      <node id="6809538291407113360" at="335,64,336,54" concept="9" />
-      <node id="6809538291407444152" at="337,121,338,832" concept="9" />
-      <node id="6809538291407505860" at="338,832,339,87" concept="4" />
-      <node id="3012580140932631510" at="345,0,346,0" concept="13" trace="name$MnvL" />
-      <node id="3012580140932631510" at="346,0,347,0" concept="13" trace="selectionState$zbc1" />
-      <node id="3012580140932631510" at="347,0,348,0" concept="13" trace="complete$4SB6" />
-      <node id="3012580140932631510" at="351,0,352,0" concept="13" trace="value$kgDc" />
-      <node id="3012580140932631510" at="355,0,356,0" concept="13" trace="AbstractFeatureConfiguration$3P" />
-      <node id="3012580140932631510" at="356,0,357,0" concept="13" trace="FeatureAttributeAssignment$1f" />
-      <node id="3012580140932631510" at="357,0,358,0" concept="13" trace="FeatureConfiguration$x2" />
+      <node id="1073600042466450031" at="162,0,163,83" concept="11" />
+      <node id="9175141916451451604" at="163,83,164,52" concept="10" />
+      <node id="2960065033446056484" at="165,5,166,106" concept="10" />
+      <node id="5714859726079000871" at="169,96,170,73" concept="9" />
+      <node id="5714859726079000875" at="170,73,171,130" concept="4" />
+      <node id="5714859726079000888" at="171,130,172,31" concept="10" />
+      <node id="7270168163181682139" at="185,81,186,70" concept="9" />
+      <node id="7270168163181721006" at="186,70,187,178" concept="4" />
+      <node id="6726385156427554114" at="188,32,189,150" concept="9" />
+      <node id="6726385156427621309" at="190,31,191,69" concept="4" />
+      <node id="6219983863606333077" at="192,7,193,23" concept="10" />
+      <node id="6726385156427314870" at="195,31,196,75" concept="4" />
+      <node id="3935512159061699393" at="198,5,199,79" concept="10" />
+      <node id="5913325679855478629" at="203,117,204,95" concept="9" />
+      <node id="5913325679855478643" at="204,95,205,69" concept="9" />
+      <node id="5913325679855810602" at="205,69,206,17" concept="10" />
+      <node id="9175141916453288104" at="217,103,218,200" concept="11" />
+      <node id="3255940176388092143" at="218,200,219,35" concept="10" />
+      <node id="3012580140933750867" at="222,82,223,121" concept="9" />
+      <node id="3012580140933750873" at="223,121,224,132" concept="9" />
+      <node id="3012580140933750879" at="224,132,225,0" concept="12" />
+      <node id="7980339574873629915" at="226,33,227,18" concept="10" />
+      <node id="2829104491451434947" at="229,55,230,18" concept="10" />
+      <node id="2829104491451419673" at="231,5,232,0" concept="12" />
+      <node id="3012580140933750978" at="232,0,233,55" concept="10" />
+      <node id="6415158579086134948" at="236,81,237,58" concept="11" />
+      <node id="6415158579086134959" at="237,58,238,118" concept="9" />
+      <node id="6415158579086134977" at="239,154,240,69" concept="9" />
+      <node id="6415158579086134984" at="240,69,241,193" concept="10" />
+      <node id="6415158579084865083" at="245,82,246,172" concept="9" />
+      <node id="6415158579084820255" at="246,172,247,0" concept="12" />
+      <node id="6415158579084423252" at="247,0,248,111" concept="9" />
+      <node id="6415158579084685338" at="248,111,249,0" concept="12" />
+      <node id="6415158579084363844" at="250,72,251,54" concept="9" />
+      <node id="6415158579084363854" at="251,54,252,207" concept="10" />
+      <node id="2388984315078134576" at="256,63,257,326" concept="10" />
+      <node id="2388984315073210222" at="262,264,263,60" concept="4" />
+      <node id="2388984315073210229" at="263,60,264,93" concept="4" />
+      <node id="2388984315073210235" at="265,7,266,0" concept="12" />
+      <node id="2388984315073158388" at="269,43,270,139" concept="9" />
+      <node id="2388984315073158398" at="270,139,271,257" concept="4" />
+      <node id="2388984315073158423" at="271,257,272,259" concept="4" />
+      <node id="2221974065847065937" at="276,60,277,192" concept="4" />
+      <node id="2221974065847434613" at="277,192,278,13" concept="10" />
+      <node id="7567776041894777805" at="279,7,280,64" concept="4" />
+      <node id="3012580140934393259" at="280,64,281,36" concept="4" />
+      <node id="3012580140934438433" at="281,36,282,45" concept="4" />
+      <node id="2096528664889890073" at="282,45,283,0" concept="12" />
+      <node id="7567776041895746121" at="283,0,284,35" concept="4" />
+      <node id="3012580140934658332" at="284,35,285,91" concept="4" />
+      <node id="4553534215492093699" at="285,91,286,0" concept="12" />
+      <node id="653124372847845181" at="286,0,287,68" concept="4" />
+      <node id="9175141916450848971" at="290,113,291,81" concept="9" />
+      <node id="9175141916450848975" at="291,81,292,218" concept="4" />
+      <node id="9175141916450849111" at="292,218,293,38" concept="1" />
+      <node id="9175141916450849115" at="293,38,294,145" concept="10" />
+      <node id="2221974065899999482" at="298,75,299,125" concept="10" />
+      <node id="2221974065899999491" at="300,5,301,69" concept="4" />
+      <node id="2221974065899999496" at="301,69,302,0" concept="12" />
+      <node id="2221974065899999497" at="302,0,303,96" concept="9" />
+      <node id="2221974065900711522" at="303,96,304,93" concept="4" />
+      <node id="2221974065899999501" at="304,93,305,97" concept="9" />
+      <node id="2221974065899999527" at="305,97,306,100" concept="4" />
+      <node id="2221974065899999532" at="306,100,307,56" concept="9" />
+      <node id="3255940176375315228" at="307,56,308,114" concept="9" />
+      <node id="2221974065899999537" at="308,114,309,111" concept="4" />
+      <node id="2221974065899999553" at="309,111,310,18" concept="10" />
+      <node id="8205517310620913051" at="314,94,315,514" concept="10" />
+      <node id="7567776041895063398" at="318,59,319,115" concept="9" />
+      <node id="7567776041895063407" at="319,115,320,56" concept="4" />
+      <node id="993412995928286314" at="320,56,321,0" concept="12" />
+      <node id="6809538291476026363" at="321,0,322,79" concept="4" />
+      <node id="1029053223887457664" at="325,119,326,0" concept="12" />
+      <node id="6809538291407048171" at="327,126,328,64" concept="9" />
+      <node id="6809538291407113360" at="328,64,329,54" concept="9" />
+      <node id="6809538291407444152" at="330,121,331,832" concept="9" />
+      <node id="6809538291407505860" at="331,832,332,87" concept="4" />
+      <node id="3012580140932631510" at="338,0,339,0" concept="13" trace="name$MnvL" />
+      <node id="3012580140932631510" at="339,0,340,0" concept="13" trace="selectionState$zbc1" />
+      <node id="3012580140932631510" at="340,0,341,0" concept="13" trace="complete$4SB6" />
+      <node id="3012580140932631510" at="344,0,345,0" concept="13" trace="value$kgDc" />
+      <node id="3012580140932631510" at="348,0,349,0" concept="13" trace="AbstractFeatureConfiguration$3P" />
+      <node id="3012580140932631510" at="349,0,350,0" concept="13" trace="FeatureAttributeAssignment$1f" />
+      <node id="3012580140932631510" at="350,0,351,0" concept="13" trace="FeatureConfiguration$x2" />
       <node id="1702607279119477958" at="138,12,140,7" concept="2" />
-      <node id="3255940176388700354" at="185,0,187,0" concept="8" trace="optimizeDefaultAttributes#(Ljava/util/Collection;Ljava/util/List;)V" />
+      <node id="3255940176388700354" at="182,0,184,0" concept="8" trace="optimizeDefaultAttributes#(Ljava/util/Collection;Ljava/util/List;)V" />
       <node id="3012580140933799945" at="57,0,60,0" concept="3" trace="ConfigurationSolverFacade#(Lorg/jetbrains/mps/openapi/model/SNode;)V" />
       <node id="6726385156427796945" at="70,166,73,5" concept="7" />
       <node id="3255940176367389851" at="92,13,95,11" concept="7" />
       <node id="5691927678175114420" at="99,31,102,11" concept="7" />
       <node id="6726385156428830414" at="124,123,127,9" concept="7" />
-      <node id="6726385156427621309" at="192,150,195,7" concept="7" />
-      <node id="6726385156427314870" at="197,12,200,7" concept="7" />
-      <node id="3012580140942336679" at="220,0,223,0" concept="8" trace="configFixedValuesFor#(Lorg/iets3/variability/base/behavior/MpsActions;Ljava/util/Collection;)Lorg/iets3/variability/configuration/base/plugin/ConfigFixedValues;" />
-      <node id="7980339574873539619" at="227,0,230,5" concept="7" />
-      <node id="2829104491451434938" at="230,5,233,5" concept="7" />
-      <node id="3012580140933497480" at="258,0,261,0" concept="8" trace="errorMessageForFailedFixedValues#(Ljava/lang/String;)Ljava/lang/String;" />
-      <node id="2221974065899999480" at="304,34,307,5" concept="7" />
-      <node id="8205517310620643042" at="321,0,324,0" concept="14" trace="matches#(Lorg/jetbrains/mps/openapi/language/SEnumerationLiteral;Lorg/iets3/analysis/solversupport/util/plugin/FixedValueCategory;)Z" />
-      <node id="6726385156427291708" at="197,10,201,5" concept="2" />
-      <node id="6415158579086135003" at="240,118,244,7" concept="10" />
-      <node id="6415158579084363838" at="251,0,255,7" concept="10" />
-      <node id="2388984315073210202" at="263,52,267,7" concept="4" />
-      <node id="2221974065846692655" at="287,66,291,7" concept="4" />
-      <node id="6601016507955284485" at="336,54,340,7" concept="7" />
+      <node id="6726385156427621309" at="189,150,192,7" concept="7" />
+      <node id="6726385156427314870" at="194,12,197,7" concept="7" />
+      <node id="7980339574873539619" at="225,0,228,5" concept="7" />
+      <node id="2829104491451434938" at="228,5,231,5" concept="7" />
+      <node id="3012580140933497480" at="256,0,259,0" concept="8" trace="errorMessageForFailedFixedValues#(Ljava/lang/String;)Ljava/lang/String;" />
+      <node id="2221974065899999480" at="297,34,300,5" concept="7" />
+      <node id="8205517310620643042" at="314,0,317,0" concept="14" trace="matches#(Lorg/jetbrains/mps/openapi/language/SEnumerationLiteral;Lorg/iets3/analysis/solversupport/util/plugin/FixedValueCategory;)Z" />
+      <node id="6726385156427291708" at="194,10,198,5" concept="2" />
+      <node id="3012580140942336679" at="217,0,221,0" concept="8" trace="configFixedValuesFor#(Lorg/iets3/variability/base/behavior/MpsActions;Ljava/util/Collection;)Lorg/iets3/variability/configuration/base/plugin/ConfigFixedValues;" />
+      <node id="6415158579086135003" at="238,118,242,7" concept="10" />
+      <node id="6415158579084363838" at="249,0,253,7" concept="10" />
+      <node id="2388984315073210202" at="261,52,265,7" concept="4" />
+      <node id="2221974065846692655" at="275,66,279,7" concept="4" />
+      <node id="6601016507955284485" at="329,54,333,7" concept="7" />
       <node id="1702607279118928329" at="135,174,140,7" concept="7" />
       <node id="3213593602024203756" at="155,0,160,0" concept="8" trace="run#()V" />
-      <node id="5714859726079000898" at="172,0,177,0" concept="8" trace="needsUpdate#(Lorg/iets3/variability/base/behavior/MpsActions;Lorg/iets3/variability/configuration/base/plugin/ConfigFixedValues;)Z" />
-      <node id="3012580140944302141" at="206,0,211,0" concept="8" trace="makeWaitForAll#(Ljava/util/Collection;)Ljava/util/concurrent/CompletableFuture;" />
-      <node id="3012580140934051282" at="271,0,276,0" concept="8" trace="forcedChoiceToUserChoice#()V" />
+      <node id="5714859726079000898" at="169,0,174,0" concept="8" trace="needsUpdate#(Lorg/iets3/variability/base/behavior/MpsActions;Lorg/iets3/variability/configuration/base/plugin/ConfigFixedValues;)Z" />
+      <node id="3012580140944302141" at="203,0,208,0" concept="8" trace="makeWaitForAll#(Ljava/util/Collection;)Ljava/util/concurrent/CompletableFuture;" />
+      <node id="3012580140934051282" at="269,0,274,0" concept="8" trace="forcedChoiceToUserChoice#()V" />
       <node id="2221974065900914768" at="61,0,67,0" concept="8" trace="runSolver#()Lorg/iets3/core/base/behavior/IResult;" />
       <node id="5691927678175114455" at="110,9,116,7" concept="18" />
-      <node id="2388984315077808997" at="278,98,284,5" concept="6" />
-      <node id="7567776041895063395" at="325,0,331,0" concept="14" trace="updateState#(Lorg/iets3/variability/configuration/base/plugin/ConfigFixedValues;)V" />
+      <node id="3012580140934132240" at="290,0,296,0" concept="8" trace="propagateToReferringConfigs#(Lorg/iets3/variability/base/behavior/MpsActions;)Ljava/util/Collection;" />
+      <node id="7567776041895063395" at="318,0,324,0" concept="14" trace="updateState#(Lorg/iets3/variability/configuration/base/plugin/ConfigFixedValues;)V" />
       <node id="7270168163168592654" at="122,75,129,9" concept="4" />
       <node id="1702607279118401091" at="134,111,141,7" concept="4" />
       <node id="3213593602024203748" at="153,0,160,11" concept="4" />
-      <node id="3012580140933707941" at="263,0,270,0" concept="8" trace="unsetAutomaticAttributeAssignment#()V" />
-      <node id="6415158579086135010" at="238,0,246,0" concept="8" trace="hasAttributeValueChanged#(Lorg/iets3/variability/configuration/base/plugin/ConfigFixedValues;)Z" />
-      <node id="6809538291406913796" at="333,0,341,5" concept="6" />
+      <node id="3012580140933707941" at="261,0,268,0" concept="8" trace="unsetAutomaticAttributeAssignment#()V" />
+      <node id="6415158579086135010" at="236,0,244,0" concept="8" trace="hasAttributeValueChanged#(Lorg/iets3/variability/configuration/base/plugin/ConfigFixedValues;)Z" />
+      <node id="6809538291406913796" at="326,0,334,5" concept="6" />
       <node id="1702607279116814936" at="134,0,143,0" concept="8" trace="storeLastResult#(Ljava/util/List;Ljava/util/Optional;)V" />
-      <node id="3012580140934132240" at="277,0,286,0" concept="8" trace="propagateToReferringConfigurations#()V" />
       <node id="7270168163168592487" at="121,0,131,7" concept="10" />
-      <node id="6415158579084363881" at="247,0,257,0" concept="8" trace="someSelectionStateChanged#(Lorg/iets3/variability/configuration/base/plugin/ConfigFixedValues;)Z" />
-      <node id="3935512159061621287" at="190,178,201,5" concept="7" />
-      <node id="7567776041894545190" at="332,0,343,0" concept="14" trace="adoptConfigSelectionStates#(Ljava/util/Collection;)V" />
-      <node id="3012580140933750861" at="224,0,237,0" concept="8" trace="needsUpdateToSolverResult#(Lorg/iets3/variability/configuration/base/plugin/ConfigFixedValues;)Z" />
-      <node id="3012580140934229851" at="287,0,302,0" concept="8" trace="updateConfig#(Lorg/iets3/variability/configuration/base/plugin/ConfigFixedValues;)V" />
-      <node id="2221974065899999471" at="304,0,319,0" concept="8" trace="solverResult#()Lorg/iets3/core/base/behavior/IResult;" />
+      <node id="6415158579084363881" at="245,0,255,0" concept="8" trace="someSelectionStateChanged#(Lorg/iets3/variability/configuration/base/plugin/ConfigFixedValues;)Z" />
+      <node id="3935512159061621287" at="187,178,198,5" concept="7" />
+      <node id="7567776041894545190" at="325,0,336,0" concept="14" trace="adoptConfigSelectionStates#(Ljava/util/Collection;)V" />
+      <node id="3012580140933750861" at="222,0,235,0" concept="8" trace="needsUpdateToSolverResult#(Lorg/iets3/variability/configuration/base/plugin/ConfigFixedValues;)Z" />
+      <node id="3012580140934229851" at="275,0,289,0" concept="8" trace="updateConfig#(Lorg/iets3/variability/configuration/base/plugin/ConfigFixedValues;)V" />
+      <node id="2221974065899999471" at="297,0,312,0" concept="8" trace="solverResult#()Lorg/iets3/core/base/behavior/IResult;" />
       <node id="2960065033412875751" at="145,52,161,9" concept="4" />
-      <node id="3012580140945132956" at="188,0,204,0" concept="8" trace="runSolvableAsync#(Lorg/iets3/variability/base/behavior/MpsActions;)Ljava/util/concurrent/CompletableFuture;" />
+      <node id="3012580140945132956" at="185,0,201,0" concept="8" trace="runSolvableAsync#(Lorg/iets3/variability/base/behavior/MpsActions;)Ljava/util/concurrent/CompletableFuture;" />
       <node id="5691927678175114340" at="91,74,109,9" concept="18" />
       <node id="5691927678175114334" at="90,180,110,9" concept="4" />
-      <node id="8205517310628094651" at="144,201,168,5" concept="7" />
-      <node id="3012580140941792598" at="144,0,171,0" concept="8" trace="updateSelectionsAttributeAssignments#(Lorg/iets3/variability/base/behavior/MpsActions;Ljava/util/Collection;Lorg/iets3/variability/configuration/base/plugin/ConfigFixedValues;)Ljava/util/Collection;" />
+      <node id="8205517310628094651" at="144,201,165,5" concept="7" />
+      <node id="3012580140941792598" at="144,0,168,0" concept="8" trace="updateSelectionsAttributeAssignments#(Lorg/iets3/variability/base/behavior/MpsActions;Ljava/util/Collection;Lorg/iets3/variability/configuration/base/plugin/ConfigFixedValues;)Ljava/util/Collection;" />
       <node id="5691927678175114248" at="76,0,120,31" concept="9" />
       <node id="3012580140942832682" at="68,0,133,0" concept="8" trace="solverResultsAsync#(Lorg/iets3/variability/base/behavior/MpsActions;)Ljava/util/concurrent/CompletableFuture;" />
-      <scope id="3255940176388700334" at="185,138,185,138" />
+      <scope id="3255940176388700334" at="182,138,182,138" />
       <scope id="3012580140933799948" at="57,47,58,19" />
       <scope id="6726385156427796945" at="71,29,72,65" />
       <scope id="3255940176367389851" at="93,35,94,68" />
@@ -618,97 +613,99 @@
       <scope id="6726385156428830414" at="125,33,126,57" />
       <scope id="1702607279118928331" at="136,30,137,137" />
       <scope id="1702607279119477959" at="138,14,139,230" />
-      <scope id="6726385156427621309" at="193,31,194,69" />
-      <scope id="6726385156427314870" at="198,31,199,75" />
-      <scope id="263709446588282897" at="220,103,221,35" />
-      <scope id="7980339574873539621" at="228,33,229,18" />
-      <scope id="2829104491451434939" at="231,55,232,18" />
-      <scope id="2388984315077983589" at="258,63,259,326" />
-      <scope id="2221974065899999481" at="305,75,306,125" />
-      <scope id="8205517310620643046" at="321,94,322,514" />
+      <scope id="6726385156427621309" at="190,31,191,69" />
+      <scope id="6726385156427314870" at="195,31,196,75" />
+      <scope id="7980339574873539621" at="226,33,227,18" />
+      <scope id="2829104491451434939" at="229,55,230,18" />
+      <scope id="2388984315077983589" at="256,63,257,326" />
+      <scope id="2221974065899999481" at="298,75,299,125" />
+      <scope id="8205517310620643046" at="314,94,315,514" />
       <scope id="5691927678175114440" at="106,19,108,28" />
       <scope id="5691927678175114456" at="111,11,113,22" />
       <scope id="5691927678175114461" at="114,7,116,7">
         <var name="e" id="5691927678175114467" />
       </scope>
       <scope id="3213593602024203759" at="156,29,158,70" />
-      <scope id="3255940176388700354" at="185,0,187,0">
+      <scope id="3255940176388700354" at="182,0,184,0">
         <var name="allChecks" id="3255940176388700342" />
         <var name="expressionForFeatureAttributeAssignmentAlreadySet" id="3255940176388880768" />
       </scope>
-      <scope id="6415158579086134976" at="241,154,243,193">
+      <scope id="263709446588282897" at="217,103,219,35" />
+      <scope id="6415158579086134976" at="239,154,241,193">
         <var name="newExpr" id="6415158579086134978" />
       </scope>
-      <scope id="6415158579084363843" at="252,72,254,207">
+      <scope id="6415158579084363843" at="250,72,252,207">
         <var name="fvc" id="6415158579084363845" />
       </scope>
-      <scope id="2388984315073210221" at="264,264,266,93" />
-      <scope id="2221974065846886352" at="288,60,290,13" />
-      <scope id="6601016507955284487" at="337,121,339,87">
+      <scope id="2388984315073210221" at="262,264,264,93" />
+      <scope id="2221974065846886352" at="276,60,278,13" />
+      <scope id="6601016507955284487" at="330,121,332,87">
         <var name="selectionState" id="6809538291407444153" />
       </scope>
       <scope id="3012580140933799945" at="57,0,60,0">
         <var name="fmc" id="3012580140933799949" />
       </scope>
-      <scope id="5714859726079000868" at="172,96,175,31">
+      <scope id="5714859726079000868" at="169,96,172,31">
         <var name="updateChanges" id="5714859726079000872" />
       </scope>
-      <scope id="6726385156427291709" at="197,12,200,7" />
-      <scope id="5913325679855478628" at="206,117,209,17">
+      <scope id="6726385156427291709" at="194,12,197,7" />
+      <scope id="5913325679855478628" at="203,117,206,17">
         <var name="allOf" id="5913325679855478644" />
         <var name="toArray" id="5913325679855478630" />
       </scope>
-      <scope id="3012580140942336679" at="220,0,223,0">
-        <var name="mpsActions" id="263709446588282913" />
-        <var name="result" id="263709446588282915" />
-      </scope>
-      <scope id="3012580140933497480" at="258,0,261,0">
+      <scope id="3012580140933497480" at="256,0,259,0">
         <var name="msg" id="2388984315077983627" />
       </scope>
-      <scope id="2388984315073158387" at="271,43,274,259">
+      <scope id="2388984315073158387" at="269,43,272,259">
         <var name="descFMC" id="2388984315073158389" />
       </scope>
-      <scope id="8205517310620643042" at="321,0,324,0">
+      <scope id="8205517310620643042" at="314,0,317,0">
         <var name="fvc" id="8205517310620822690" />
         <var name="selectionState" id="8205517310620676074" />
       </scope>
       <scope id="2221974065900914774" at="61,30,65,24">
         <var name="solverResult" id="2221974065900914779" />
       </scope>
-      <scope id="2388984315077808999" at="279,121,283,77" />
-      <scope id="7567776041895063397" at="325,59,329,79">
+      <scope id="3012580140942336679" at="217,0,221,0">
+        <var name="mpsActions" id="263709446588282913" />
+        <var name="result" id="263709446588282915" />
+      </scope>
+      <scope id="2388984315077808976" at="290,113,294,145">
+        <var name="allReferrers" id="9175141916450848972" />
+      </scope>
+      <scope id="7567776041895063397" at="318,59,322,79">
         <var name="valuesForSelectionState" id="7567776041895063399" />
       </scope>
       <scope id="7270168163168592659" at="123,36,128,108" />
       <scope id="1702607279118604534" at="135,174,140,7" />
       <scope id="3213593602024203756" at="155,0,160,0" />
-      <scope id="5714859726079000898" at="172,0,177,0">
+      <scope id="5714859726079000898" at="169,0,174,0">
         <var name="configFixedValues" id="5714859726079000892" />
         <var name="mpsAction" id="5714859726079000890" />
       </scope>
-      <scope id="3935512159061621289" at="191,32,196,23">
+      <scope id="3935512159061621289" at="188,32,193,23">
         <var name="submitted" id="6726385156427554115" />
       </scope>
-      <scope id="3012580140944302141" at="206,0,211,0">
+      <scope id="3012580140944302141" at="203,0,208,0">
         <var name="referrerSolverChecks" id="5913325679855657197" />
       </scope>
-      <scope id="2388984315073210201" at="263,52,268,0" />
-      <scope id="3012580140934051282" at="271,0,276,0" />
+      <scope id="2388984315073210201" at="261,52,266,0" />
+      <scope id="3012580140934051282" at="269,0,274,0" />
       <scope id="2221974065900914768" at="61,0,67,0" />
       <scope id="5691927678175114341" at="92,13,98,104">
         <var name="referrerSolverChecks" id="3255940176367389856" />
       </scope>
       <scope id="5691927678175114419" at="99,31,105,40" />
-      <scope id="6415158579086134945" at="238,81,244,7">
+      <scope id="6415158579086134945" at="236,81,242,7">
         <var name="attributeAssignment2Expression" id="6415158579086134960" />
       </scope>
-      <scope id="2388984315077808997" at="278,98,284,5">
-        <var name="otherFMC" id="2388984315077808998" />
+      <scope id="3012580140934132240" at="290,0,296,0">
+        <var name="mpsActions" id="9175141916450908533" />
       </scope>
-      <scope id="7567776041895063395" at="325,0,331,0">
+      <scope id="7567776041895063395" at="318,0,324,0">
         <var name="fv" id="7567776041895063544" />
       </scope>
-      <scope id="6809538291406913802" at="334,126,340,7">
+      <scope id="6809538291406913802" at="327,126,333,7">
         <var name="config" id="6809538291407113361" />
         <var name="value" id="6809538291407048172" />
       </scope>
@@ -716,40 +713,38 @@
         <var name="t" id="5691927678175114416" />
       </scope>
       <scope id="1702607279116814895" at="134,111,141,7" />
-      <scope id="3012580140933707941" at="263,0,270,0" />
-      <scope id="2388984315077808976" at="277,53,284,5" />
+      <scope id="3012580140933707941" at="261,0,268,0" />
       <scope id="7270168163168592653" at="122,75,130,46" />
-      <scope id="6415158579086135010" at="238,0,246,0">
+      <scope id="6415158579086135010" at="236,0,244,0">
         <var name="configFixedValues" id="6415158579086135005" />
       </scope>
-      <scope id="6415158579084363837" at="247,82,255,7">
+      <scope id="6415158579084363837" at="245,82,253,7">
         <var name="afc2FixedValue" id="6415158579084423253" />
         <var name="subFeatureConfigurations" id="6415158579084865086" />
       </scope>
-      <scope id="6809538291406913796" at="333,0,341,5">
+      <scope id="6809538291406913796" at="326,0,334,5">
         <var name="valueToSelectionState" id="6809538291406913798" />
       </scope>
       <scope id="1702607279116814936" at="134,0,143,0">
         <var name="failedCheck" id="1702607279116984086" />
         <var name="result" id="1702607279116814925" />
       </scope>
-      <scope id="3012580140934132240" at="277,0,286,0" />
-      <scope id="7567776041894545192" at="332,119,341,5" />
-      <scope id="6415158579084363881" at="247,0,257,0">
+      <scope id="7567776041894545192" at="325,119,334,5" />
+      <scope id="6415158579084363881" at="245,0,255,0">
         <var name="configFixedValues" id="6415158579084363876" />
       </scope>
-      <scope id="3012580140933750863" at="224,82,235,55">
+      <scope id="3012580140933750863" at="222,82,233,55">
         <var name="currentHash" id="3012580140933750874" />
         <var name="oldHash" id="3012580140933750868" />
       </scope>
-      <scope id="7567776041894545190" at="332,0,343,0">
+      <scope id="7567776041894545190" at="325,0,336,0">
         <var name="valuesForSelectionState" id="7567776041894545248" />
       </scope>
-      <scope id="3012580140933750861" at="224,0,237,0">
+      <scope id="2759754755149691622" at="275,66,287,68" />
+      <scope id="3012580140933750861" at="222,0,235,0">
         <var name="configFixedValues" id="3012580140933750981" />
       </scope>
-      <scope id="2759754755149691622" at="287,66,300,68" />
-      <scope id="2221974065899999479" at="304,34,317,18">
+      <scope id="2221974065899999479" at="297,34,310,18">
         <var name="configFixedValues" id="3255940176375315229" />
         <var name="mpsAction" id="2221974065899999533" />
         <var name="result" id="2221974065899999502" />
@@ -759,22 +754,20 @@
         <var name="expressionForFeatureAttributeAssignmentAlreadySet" id="3255940176362794183" />
         <var name="faas" id="3255940176384249543" />
       </scope>
-      <scope id="6219983863606333060" at="188,81,202,79">
+      <scope id="6219983863606333060" at="185,81,199,79">
         <var name="shouldBeChecked" id="7270168163181682140" />
       </scope>
-      <scope id="3012580140934229851" at="287,0,302,0">
+      <scope id="3012580140934229851" at="275,0,289,0">
         <var name="configFixedValues" id="2759754755149691778" />
       </scope>
-      <scope id="2221974065899999471" at="304,0,319,0" />
-      <scope id="3012580140945132956" at="188,0,204,0">
+      <scope id="2221974065899999471" at="297,0,312,0" />
+      <scope id="3012580140945132956" at="185,0,201,0">
         <var name="actions" id="7270168163181668020" />
       </scope>
       <scope id="5691927678175114339" at="91,74,109,9" />
-      <scope id="8205517310628094653" at="145,52,167,144">
-        <var name="allReferrers" id="3331197186571411760" />
-      </scope>
-      <scope id="263709446588591312" at="144,201,169,106" />
-      <scope id="3012580140941792598" at="144,0,171,0">
+      <scope id="8205517310628094653" at="145,52,164,52" />
+      <scope id="263709446588591312" at="144,201,166,106" />
+      <scope id="3012580140941792598" at="144,0,168,0">
         <var name="allChecks" id="263709446588591332" />
         <var name="configFixedValues" id="3255940176375487982" />
         <var name="mpsAction" id="263709446588591330" />
@@ -792,11 +785,11 @@
       <scope id="3012580140942832682" at="68,0,133,0">
         <var name="mpsActions" id="7270168163168592667" />
       </scope>
-      <unit id="3012580140932631510" at="350,0,353,0" name="org.iets3.variability.configuration.base.plugin.ConfigurationSolverFacade$LINKS" />
-      <unit id="3012580140932631510" at="344,0,349,0" name="org.iets3.variability.configuration.base.plugin.ConfigurationSolverFacade$PROPS" />
-      <unit id="3012580140932631510" at="354,0,359,0" name="org.iets3.variability.configuration.base.plugin.ConfigurationSolverFacade$CONCEPTS" />
+      <unit id="3012580140932631510" at="343,0,346,0" name="org.iets3.variability.configuration.base.plugin.ConfigurationSolverFacade$LINKS" />
+      <unit id="3012580140932631510" at="337,0,342,0" name="org.iets3.variability.configuration.base.plugin.ConfigurationSolverFacade$PROPS" />
+      <unit id="3012580140932631510" at="347,0,352,0" name="org.iets3.variability.configuration.base.plugin.ConfigurationSolverFacade$CONCEPTS" />
       <unit id="3213593602024203754" at="154,34,160,9" name="org.iets3.variability.configuration.base.plugin.ConfigurationSolverFacade$1" />
-      <unit id="3012580140932631510" at="53,0,360,0" name="org.iets3.variability.configuration.base.plugin.ConfigurationSolverFacade" />
+      <unit id="3012580140932631510" at="53,0,353,0" name="org.iets3.variability.configuration.base.plugin.ConfigurationSolverFacade" />
     </file>
   </root>
   <root nodeRef="r:83d54567-d361-47ca-a949-7374ea89921d(org.iets3.variability.configuration.base.plugin)/3255940176392007035">
@@ -825,28 +818,28 @@
       <node id="5714859726081759311" at="16,0,17,0" concept="13" trace="delta" />
       <node id="5714859726082853797" at="18,38,19,14" concept="4" />
       <node id="3255940176396764888" at="23,39,24,58" concept="10" />
-      <node id="3255940176396784589" at="27,95,28,76" concept="10" />
-      <node id="4729478301155515654" at="32,25,33,21" concept="10" />
+      <node id="3255940176396784589" at="28,95,29,76" concept="10" />
+      <node id="4729478301155515654" at="33,25,34,21" concept="10" />
       <node id="5714859726082853791" at="18,0,21,0" concept="14" trace="setDelta#(I)V" />
       <node id="4729478301155442286" at="22,0,26,0" concept="8" trace="runSolver#(Lorg/jetbrains/mps/openapi/model/SNode;)Lorg/iets3/core/base/behavior/IResult;" />
-      <node id="4729478301155442296" at="26,0,30,0" concept="8" trace="solverResultsAsync#(Lorg/jetbrains/mps/openapi/model/SNode;Lorg/iets3/variability/base/behavior/MpsActions;)Ljava/util/concurrent/CompletableFuture;" />
-      <node id="4729478301155509030" at="31,0,35,0" concept="8" trace="priority#()I" />
+      <node id="4729478301155442296" at="27,0,31,0" concept="8" trace="solverResultsAsync#(Lorg/jetbrains/mps/openapi/model/SNode;Lorg/iets3/variability/base/behavior/MpsActions;)Ljava/util/concurrent/CompletableFuture;" />
+      <node id="4729478301155509030" at="32,0,36,0" concept="8" trace="priority#()I" />
       <scope id="5714859726082853796" at="18,38,19,14" />
       <scope id="4729478301155442292" at="23,39,24,58" />
-      <scope id="4729478301155442306" at="27,95,28,76" />
-      <scope id="4729478301155509037" at="32,25,33,21" />
+      <scope id="4729478301155442306" at="28,95,29,76" />
+      <scope id="4729478301155509037" at="33,25,34,21" />
       <scope id="5714859726082853791" at="18,0,21,0">
         <var name="d" id="5714859726082853793" />
       </scope>
       <scope id="4729478301155442286" at="22,0,26,0">
         <var name="fmc" id="4729478301155442287" />
       </scope>
-      <scope id="4729478301155442296" at="26,0,30,0">
+      <scope id="4729478301155442296" at="27,0,31,0">
         <var name="fmc" id="4729478301155442297" />
         <var name="mpsAction" id="4729478301155442299" />
       </scope>
-      <scope id="4729478301155509030" at="31,0,35,0" />
-      <unit id="4729478301155439532" at="14,0,36,0" name="org.iets3.variability.configuration.base.plugin.ConfigurationSolverBase" />
+      <scope id="4729478301155509030" at="32,0,36,0" />
+      <unit id="4729478301155439532" at="14,0,37,0" name="org.iets3.variability.configuration.base.plugin.ConfigurationSolverBase" />
     </file>
   </root>
   <root nodeRef="r:83d54567-d361-47ca-a949-7374ea89921d(org.iets3.variability.configuration.base.plugin)/4729478301156387910">
@@ -1303,22 +1296,23 @@
   <root nodeRef="r:83d54567-d361-47ca-a949-7374ea89921d(org.iets3.variability.configuration.base.plugin)/719012571943167848">
     <file name="FixAdaptToExtendedFMC.java">
       <node id="719012571943173214" at="15,37,16,172" concept="11" />
-      <node id="719012571943173245" at="16,172,17,70" concept="4" />
-      <node id="719012571943173248" at="17,70,18,0" concept="12" />
-      <node id="719012571943173249" at="18,0,19,111" concept="4" />
-      <node id="719012571943173256" at="20,101,21,115" concept="4" />
-      <node id="719012571943173269" at="22,5,23,0" concept="12" />
-      <node id="719012571943173270" at="23,0,24,92" concept="4" />
-      <node id="719012571943167848" at="28,0,29,0" concept="13" trace="FMCInheritanceCheck$Kn" />
-      <node id="719012571943173254" at="19,111,22,5" concept="7" />
-      <node id="719012571943173202" at="15,0,26,0" concept="14" trace="run#(Lorg/jetbrains/mps/openapi/model/SNode;)V" />
-      <scope id="719012571943173255" at="20,101,21,115" />
-      <scope id="719012571943173207" at="15,37,24,92" />
-      <scope id="719012571943173202" at="15,0,26,0">
+      <node id="7853777384870514836" at="16,172,17,116" concept="11" />
+      <node id="719012571943173245" at="17,116,18,70" concept="4" />
+      <node id="719012571943173248" at="18,70,19,0" concept="12" />
+      <node id="719012571943173249" at="19,0,20,111" concept="4" />
+      <node id="719012571943173256" at="21,101,22,115" concept="4" />
+      <node id="719012571943173269" at="23,5,24,0" concept="12" />
+      <node id="719012571943173270" at="24,0,25,92" concept="4" />
+      <node id="719012571943167848" at="29,0,30,0" concept="13" trace="FMCInheritanceCheck$Kn" />
+      <node id="719012571943173254" at="20,111,23,5" concept="7" />
+      <node id="719012571943173202" at="15,0,27,0" concept="14" trace="run#(Lorg/jetbrains/mps/openapi/model/SNode;)V" />
+      <scope id="719012571943173255" at="21,101,22,115" />
+      <scope id="719012571943173207" at="15,37,25,92" />
+      <scope id="719012571943173202" at="15,0,27,0">
         <var name="fmc" id="719012571943173204" />
       </scope>
-      <unit id="719012571943167848" at="27,0,30,0" name="org.iets3.variability.configuration.base.plugin.FixAdaptToExtendedFMC$CONCEPTS" />
-      <unit id="719012571943167848" at="13,0,31,0" name="org.iets3.variability.configuration.base.plugin.FixAdaptToExtendedFMC" />
+      <unit id="719012571943167848" at="28,0,31,0" name="org.iets3.variability.configuration.base.plugin.FixAdaptToExtendedFMC$CONCEPTS" />
+      <unit id="719012571943167848" at="13,0,32,0" name="org.iets3.variability.configuration.base.plugin.FixAdaptToExtendedFMC" />
     </file>
   </root>
   <root nodeRef="r:83d54567-d361-47ca-a949-7374ea89921d(org.iets3.variability.configuration.base.plugin)/9038024733918075975">

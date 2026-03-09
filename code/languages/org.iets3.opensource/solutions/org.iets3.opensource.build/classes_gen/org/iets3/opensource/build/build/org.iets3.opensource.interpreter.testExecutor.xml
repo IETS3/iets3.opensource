@@ -212,6 +212,7 @@
       <plugin path="${artifacts.com.mbeddr.platform}/mpsutil.refactoring" id="com.mbeddr.mpsutil.refactoring" />
       <plugin path="${artifacts.com.mbeddr.platform}/org.modelix.model.api" id="org.modelix.model.api" />
       <plugin path="${artifacts.mps}/lib/mps-workbench.jar" id="com.intellij.modules.mps" />
+      <plugin path="${artifacts.mps}/plugins/java" id="com.intellij.java" />
       <plugin path="${artifacts.mps}/plugins/mps-build" id="jetbrains.mps.build" />
       <plugin path="${artifacts.mps}/plugins/mps-console" id="jetbrains.mps.console" />
       <plugin path="${artifacts.mps}/plugins/mps-context-actions" id="jetbrains.mps.editor.contextActions" />
@@ -291,7 +292,6 @@
         <fileset file="${artifacts.mps}/lib/mps-generator.jar" />
         <fileset file="${artifacts.mps}/lib/mps-environment.jar" />
         <fileset file="${artifacts.mps}/lib/mps-project-check.jar" />
-        <fileset file="${artifacts.mps}/lib/junit4.jar" />
         <fileset file="${artifacts.mps}/lib/app.jar" />
         <fileset file="${artifacts.mps}/lib/app-client.jar" />
         <fileset file="${artifacts.mps}/lib/lib.jar" />
@@ -301,11 +301,16 @@
         <fileset file="${artifacts.mps}/lib/util-8.jar" />
         <fileset file="${artifacts.mps}/lib/forms_rt.jar" />
         <fileset file="${artifacts.mps}/lib/java-frontback.jar" />
-        <fileset file="${artifacts.mps}/lib/java-impl.jar" />
         <fileset file="${artifacts.mps}/lib/jps-model.jar" />
         <fileset file="${artifacts.mps}/lib/testFramework.jar" />
         <fileset file="${artifacts.mps}/lib/stats.jar" />
         <fileset file="${artifacts.mps}/lib/platform-loader.jar" />
+        <fileset file="${artifacts.mps}/lib/module-intellij.libraries.asm.jar" />
+        <fileset file="${artifacts.mps}/lib/module-intellij.libraries.gson.jar" />
+        <fileset file="${artifacts.mps}/lib/module-intellij.libraries.miglayout.swing.jar" />
+        <fileset file="${artifacts.mps}/lib/module-intellij.platform.vcs.jar" />
+        <fileset file="${artifacts.mps}/lib/module-intellij.platform.vcs.core.jar" />
+        <fileset file="${artifacts.mps}/lib/module-intellij.xml.parser.jar" />
         <fileset file="${artifacts.mps}/lib/annotations.jar" />
         <fileset file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.logging.runtime.jar" />
         <fileset file="${artifacts.mps}/plugins/mps-execution-configurations/languages/jetbrains.mps.baseLanguage.unitTest.execution.jar" />
@@ -318,6 +323,7 @@
         <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.traceable.jar" />
         <fileset file="${artifacts.org.iets3.opensource}/org.iets3.core.junit.interpretertest.runner/languages/org.iets3.core.junit.interpreter.run.configuration/org.iets3.core.junit.interpreter.run.configuration.jar" />
         <fileset file="${artifacts.org.iets3.opensource}/org.iets3.build.os/languages/iets3.build/org.iets3.opensource.build.gentests.jar" />
+        <fileset file="${artifacts.mps}/lib/junit4.jar" />
         <fileset dir="${artifacts.mps}/plugins/mps-junit5/lib" includes="apiguardian-api-1.1.2.jar" />
         <fileset dir="${artifacts.mps}/plugins/mps-junit5/lib" includes="junit-jupiter-api-5.13.4.jar" />
         <fileset dir="${artifacts.mps}/plugins/mps-junit5/lib" includes="junit-jupiter-engine-5.13.4.jar" />
@@ -395,6 +401,7 @@
       <plugin path="${artifacts.com.mbeddr.platform}/mpsutil.refactoring" id="com.mbeddr.mpsutil.refactoring" />
       <plugin path="${artifacts.com.mbeddr.platform}/org.modelix.model.api" id="org.modelix.model.api" />
       <plugin path="${artifacts.mps}/lib/mps-workbench.jar" id="com.intellij.modules.mps" />
+      <plugin path="${artifacts.mps}/plugins/java" id="com.intellij.java" />
       <plugin path="${artifacts.mps}/plugins/mps-build" id="jetbrains.mps.build" />
       <plugin path="${artifacts.mps}/plugins/mps-console" id="jetbrains.mps.console" />
       <plugin path="${artifacts.mps}/plugins/mps-context-actions" id="jetbrains.mps.editor.contextActions" />

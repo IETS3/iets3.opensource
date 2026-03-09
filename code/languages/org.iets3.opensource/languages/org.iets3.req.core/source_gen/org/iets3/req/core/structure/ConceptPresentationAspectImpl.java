@@ -24,6 +24,7 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
   private ConceptPresentation props_PlainReqRefWord;
   private ConceptPresentation props_PriorityTag;
   private ConceptPresentation props_RelKindConflicts;
+  private ConceptPresentation props_RelKindRequires;
   private ConceptPresentation props_RelTag;
   private ConceptPresentation props_RelationKind;
   private ConceptPresentation props_ReqRef;
@@ -143,11 +144,19 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
       case LanguageConceptSwitch.RelKindConflicts:
         if (props_RelKindConflicts == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
-          cpb.shortDesc("a conflict with relation kind");
+          cpb.shortDesc("a \"conflicts with\" relation kind");
           cpb.rawPresentation("conflicts with");
           props_RelKindConflicts = cpb.create();
         }
         return props_RelKindConflicts;
+      case LanguageConceptSwitch.RelKindRequires:
+        if (props_RelKindRequires == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.shortDesc("a \"requires\" relation kind");
+          cpb.rawPresentation("requires");
+          props_RelKindRequires = cpb.create();
+        }
+        return props_RelKindRequires;
       case LanguageConceptSwitch.RelTag:
         if (props_RelTag == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();

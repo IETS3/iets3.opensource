@@ -62,14 +62,34 @@ import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
     style.set(StyleAttributes.INDENT_LAYOUT_ON_NEW_LINE, _StyleParameter_QueryFunction_cw8s4g_a0a());
     editorCell.getStyle().putAll(style);
     editorCell.addEditorCell(createCustomFactory_1());
-    editorCell.addEditorCell(createCustomFactory_3());
-    editorCell.addEditorCell(createCustomFactory_5());
+    editorCell.addEditorCell(createCustomFactory_7());
+    editorCell.addEditorCell(createCustomFactory_9());
     return editorCell;
   }
   private boolean _StyleParameter_QueryFunction_cw8s4g_a0a() {
     return SNodeOperations.isInstanceOf(SNodeOperations.getParent(getNode()), CONCEPTS.MapLiteral$cP) && SNodeOperations.getIndexInParent(getNode()) % 5 == 0;
   }
   private EditorCell createCustomFactory_0(final EditorContext editorContext, final SNode node) {
+
+
+    final EditorCell cell = createCustomFactory_3();
+    EditorCell editorCell = ((_FunctionTypes._return_P0_E0<EditorCell>) () -> cell).invoke();
+    return editorCell;
+  }
+  private EditorCell createCustomFactory_1() {
+    return createCustomFactory_0(getEditorContext(), getNode());
+  }
+  private EditorCell createCustomFactory_2(final EditorContext editorContext, final SNode node) {
+
+
+    final EditorCell cell = createCustomFactory_5();
+    EditorCell editorCell = ((_FunctionTypes._return_P0_E0<EditorCell>) () -> cell).invoke();
+    return editorCell;
+  }
+  private EditorCell createCustomFactory_3() {
+    return createCustomFactory_2(getEditorContext(), getNode());
+  }
+  private EditorCell createCustomFactory_4(final EditorContext editorContext, final SNode node) {
 
 
     final EditorCell cell = createRefNode_0();
@@ -160,18 +180,18 @@ import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
     }).invoke();
     return editorCell;
   }
-  private EditorCell createCustomFactory_1() {
-    return createCustomFactory_0(getEditorContext(), myNode);
+  private EditorCell createCustomFactory_5() {
+    return createCustomFactory_4(getEditorContext(), getNode());
   }
   private EditorCell createRefNode_0() {
-    SingleRoleCellProvider provider = new keySingleRoleHandler_cw8s4g_a0a(myNode, LINKS.key$DF7q, getEditorContext());
+    SingleRoleCellProvider provider = new keySingleRoleHandler_cw8s4g_a0a0a(myNode, LINKS.key$DF7q, getEditorContext());
     return provider.createCell();
   }
-  private static class keySingleRoleHandler_cw8s4g_a0a extends SingleRoleCellProvider {
+  private static class keySingleRoleHandler_cw8s4g_a0a0a extends SingleRoleCellProvider {
     @NotNull
     private SNode myNode;
 
-    public keySingleRoleHandler_cw8s4g_a0a(SNode ownerNode, SContainmentLink containmentLink, EditorContext context) {
+    public keySingleRoleHandler_cw8s4g_a0a0a(SNode ownerNode, SContainmentLink containmentLink, EditorContext context) {
       super(containmentLink, context);
       myNode = ownerNode;
     }
@@ -218,7 +238,7 @@ import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
       return "<no key>";
     }
   }
-  private EditorCell createCustomFactory_2(final EditorContext editorContext, final SNode node) {
+  private EditorCell createCustomFactory_6(final EditorContext editorContext, final SNode node) {
 
 
     final EditorCell cell = createConstant_0();
@@ -273,8 +293,8 @@ import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
     }).invoke();
     return editorCell;
   }
-  private EditorCell createCustomFactory_3() {
-    return createCustomFactory_2(getEditorContext(), myNode);
+  private EditorCell createCustomFactory_7() {
+    return createCustomFactory_6(getEditorContext(), getNode());
   }
   private EditorCell createConstant_0() {
     EditorCell_Constant editorCell = new EditorCell_Constant(getEditorContext(), myNode, "->");
@@ -286,7 +306,27 @@ import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
     editorCell.setDefaultText("");
     return editorCell;
   }
-  private EditorCell createCustomFactory_4(final EditorContext editorContext, final SNode node) {
+  private EditorCell createCustomFactory_8(final EditorContext editorContext, final SNode node) {
+
+
+    final EditorCell cell = createCustomFactory_11();
+    EditorCell editorCell = ((_FunctionTypes._return_P0_E0<EditorCell>) () -> cell).invoke();
+    return editorCell;
+  }
+  private EditorCell createCustomFactory_9() {
+    return createCustomFactory_8(getEditorContext(), getNode());
+  }
+  private EditorCell createCustomFactory_10(final EditorContext editorContext, final SNode node) {
+
+
+    final EditorCell cell = createCustomFactory_13();
+    EditorCell editorCell = ((_FunctionTypes._return_P0_E0<EditorCell>) () -> cell).invoke();
+    return editorCell;
+  }
+  private EditorCell createCustomFactory_11() {
+    return createCustomFactory_10(getEditorContext(), getNode());
+  }
+  private EditorCell createCustomFactory_12(final EditorContext editorContext, final SNode node) {
 
 
     final EditorCell cell = createRefNode_1();
@@ -377,18 +417,18 @@ import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
     }).invoke();
     return editorCell;
   }
-  private EditorCell createCustomFactory_5() {
-    return createCustomFactory_4(getEditorContext(), myNode);
+  private EditorCell createCustomFactory_13() {
+    return createCustomFactory_12(getEditorContext(), getNode());
   }
   private EditorCell createRefNode_1() {
-    SingleRoleCellProvider provider = new valSingleRoleHandler_cw8s4g_a2a(myNode, LINKS.val$DF_s, getEditorContext());
+    SingleRoleCellProvider provider = new valSingleRoleHandler_cw8s4g_a0a2a(myNode, LINKS.val$DF_s, getEditorContext());
     return provider.createCell();
   }
-  private static class valSingleRoleHandler_cw8s4g_a2a extends SingleRoleCellProvider {
+  private static class valSingleRoleHandler_cw8s4g_a0a2a extends SingleRoleCellProvider {
     @NotNull
     private SNode myNode;
 
-    public valSingleRoleHandler_cw8s4g_a2a(SNode ownerNode, SContainmentLink containmentLink, EditorContext context) {
+    public valSingleRoleHandler_cw8s4g_a0a2a(SNode ownerNode, SContainmentLink containmentLink, EditorContext context) {
       super(containmentLink, context);
       myNode = ownerNode;
     }

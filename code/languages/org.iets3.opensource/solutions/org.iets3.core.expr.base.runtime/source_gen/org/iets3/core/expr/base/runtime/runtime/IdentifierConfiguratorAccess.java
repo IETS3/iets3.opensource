@@ -30,18 +30,35 @@ public class IdentifierConfiguratorAccess {
   }
 
   public static boolean allowUmlautsInIdentifiers(SAbstractConcept concept) {
-    return IdentifierConfiguratorAccess.resolveIdentConfig().allowUmlautsInIdentifiers(concept);
+    return allowUmlautsInIdentifiers(concept, false);
+  }
+
+  public static boolean allowUmlautsInIdentifiers(SAbstractConcept concept, boolean defaultOverrideValue) {
+    IdentifierConfigurator cfg = IdentifierConfiguratorAccess.resolveIdentConfig();
+    return (defaultOverrideValue ? cfg.overrideAllowUmlautsInIdentifiers(defaultOverrideValue) : cfg.allowUmlautsInIdentifiers(concept));
   }
 
   public static boolean allowParagraphsInIdentifiers(SAbstractConcept concept) {
-    return IdentifierConfiguratorAccess.resolveIdentConfig().allowParagraphsInIdentifiers(concept);
+    return allowParagraphsInIdentifiers(concept, false);
   }
+
+  public static boolean allowParagraphsInIdentifiers(SAbstractConcept concept, boolean defaultOverrideValue) {
+    IdentifierConfigurator cfg = IdentifierConfiguratorAccess.resolveIdentConfig();
+    return (defaultOverrideValue ? cfg.overrideAllowParagraphsInIdentifiers(defaultOverrideValue) : cfg.allowParagraphsInIdentifiers(concept));
+  }
+
+  public static boolean allowApostropheInIdentifiers(SAbstractConcept concept, boolean defaultOverrideValue) {
+    IdentifierConfigurator cfg = IdentifierConfiguratorAccess.resolveIdentConfig();
+    // we allow apostrophes by default
+    return (defaultOverrideValue ? cfg.allowApostropheInIdentifiers(concept) : cfg.overrideAllowApostrophesInIdentifiers(defaultOverrideValue));
+  }
+
 
   /**
    * This method is only intended for testing purposes!
    * 
    * It allows to reset the chosen ExtensionPoint implementation for the EP identifierConfigurator
-   * For more information see TestingIdentifierConfiguratorEP: 
+   * For more information see TestingIdentifierConfiguratorEP:
    * http://127.0.0.1:63320/node?ref=r%3A6a32786e-0823-4465-b671-9705159d21d5%28test.in.expr.os.messages%40tests%29%2F3338854161630853284
    */
   public static void reset() {

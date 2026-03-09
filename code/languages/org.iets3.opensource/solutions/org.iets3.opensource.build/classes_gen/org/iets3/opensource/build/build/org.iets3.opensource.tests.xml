@@ -54,6 +54,7 @@
       <include name="3rd-party.jar" />
       <include name="3rd-party-rt.jar" />
       <include name="util-8.jar" />
+      <include name="module-intellij.libraries.asm.jar" />
       <include name="forms*.jar" />
     </fileset>
     <fileset dir="${idea_home}/plugins/java/lib">
@@ -539,6 +540,7 @@
           <module ref="e55e6749-03cb-4ea7-9695-2322bab791c1(jetbrains.mps.lang.test.matcher)" kind="rt" />
           <module ref="707c4fde-f79a-44b5-b3d7-b5cef8844ccf(jetbrains.mps.lang.test.runtime)" kind="rt" />
           <module ref="9a4afe51-f114-4595-b5df-048ce3c596be(jetbrains.mps.runtime)" kind="rt" />
+          <module ref="b0f8641f-bd77-4421-8425-30d9088a82f7(org.apache.commons)" kind="rt" />
           <module ref="dbe08fb5-334d-4b64-86a0-622406fa0e87(org.iets3.core.expr.base.runtime)" kind="rt" />
           <module ref="00ca1323-762b-4f39-ab5a-6a6bd602dc4b(org.iets3.core.expr.base.shared.runtime)" kind="rt" />
           <module ref="272bf1ac-d70c-4dac-96a3-976884f641b8(org.iets3.core.expr.collections.rt)" kind="rt" />
@@ -996,6 +998,7 @@
           <module ref="e55e6749-03cb-4ea7-9695-2322bab791c1(jetbrains.mps.lang.test.matcher)" kind="rt" />
           <module ref="707c4fde-f79a-44b5-b3d7-b5cef8844ccf(jetbrains.mps.lang.test.runtime)" kind="rt" />
           <module ref="9a4afe51-f114-4595-b5df-048ce3c596be(jetbrains.mps.runtime)" kind="rt" />
+          <module ref="b0f8641f-bd77-4421-8425-30d9088a82f7(org.apache.commons)" kind="rt" />
           <module ref="dbe08fb5-334d-4b64-86a0-622406fa0e87(org.iets3.core.expr.base.runtime)" kind="rt" />
           <module ref="00ca1323-762b-4f39-ab5a-6a6bd602dc4b(org.iets3.core.expr.base.shared.runtime)" kind="rt" />
           <module ref="272bf1ac-d70c-4dac-96a3-976884f641b8(org.iets3.core.expr.collections.rt)" kind="rt" />
@@ -1403,6 +1406,7 @@
           <module ref="dbe08fb5-334d-4b64-86a0-622406fa0e87(org.iets3.core.expr.base.runtime)" kind="rt" />
           <module ref="63b449db-0918-4a4a-a891-2c430ab133e4(org.junit.junit5)" kind="rt" />
           <module ref="c6420b75-4569-420d-aaf7-9bc590ad7b2a(de.itemis.mps.comparator)" kind="cl" />
+          <module ref="ecfb9949-7433-4db5-85de-0f84d172e4ce(de.q60.mps.collections.libs)" kind="cl" />
           <module ref="6b277d9a-d52d-416f-a209-1919bd737f50(org.iets3.core.expr.simpleTypes)" kind="cl" />
           <module ref="71226ee2-bbc4-45d2-a41d-20b97237156c(org.iets3.variability.configuration.base)" kind="cl" />
           <module ref="c1fcd3e0-0603-4035-834f-14c6337eec24(test.org.iets3.common.base)" kind="cl" />
@@ -1753,6 +1757,9 @@
           <language id="l:cb91a38e-738a-4811-a96d-448d08f526fa:org.iets3.core.expr.typetags.units" />
           <language id="l:be679007-4312-4db1-9ac0-ab7dfbe66a74:org.iets3.core.expr.typetags.units.quantity" />
           <language id="l:8bb1251e-eae5-47ab-9843-33adfae8edaa:org.iets3.core.expr.util" />
+          <language id="l:f0883503-8eaa-4bc8-8846-eb63220ab1dd:org.iets3.variability.artifacts.base" />
+          <language id="l:71226ee2-bbc4-45d2-a41d-20b97237156c:org.iets3.variability.configuration.base" />
+          <language id="l:165f1d05-2506-4544-895e-1424f54166ec:org.iets3.variability.featuremodel.base" />
           <language id="l:b80fab4e-53f2-409c-81d8-3475855e0e42:test.ts.expr.os.nix" />
           <language id="l:a2242e6f-d308-41e6-ac06-28b0a2a4ad79:test.ts.expr.os.validNameConcept" />
         </uses>
@@ -1930,6 +1937,7 @@
       <plugin path="${artifacts.com.mbeddr.platform}/mpsutil.refactoring" id="com.mbeddr.mpsutil.refactoring" />
       <plugin path="${artifacts.com.mbeddr.platform}/org.modelix.model.api" id="org.modelix.model.api" />
       <plugin path="${artifacts.mps}/lib/mps-workbench.jar" id="com.intellij.modules.mps" />
+      <plugin path="${artifacts.mps}/plugins/java" id="com.intellij.java" />
       <plugin path="${artifacts.mps}/plugins/mps-build" id="jetbrains.mps.build" />
       <plugin path="${artifacts.mps}/plugins/mps-console" id="jetbrains.mps.console" />
       <plugin path="${artifacts.mps}/plugins/mps-context-actions" id="jetbrains.mps.editor.contextActions" />
@@ -2057,11 +2065,16 @@
         <fileset file="${artifacts.mps}/lib/util-8.jar" />
         <fileset file="${artifacts.mps}/lib/forms_rt.jar" />
         <fileset file="${artifacts.mps}/lib/java-frontback.jar" />
-        <fileset file="${artifacts.mps}/lib/java-impl.jar" />
         <fileset file="${artifacts.mps}/lib/jps-model.jar" />
         <fileset file="${artifacts.mps}/lib/testFramework.jar" />
         <fileset file="${artifacts.mps}/lib/stats.jar" />
         <fileset file="${artifacts.mps}/lib/platform-loader.jar" />
+        <fileset file="${artifacts.mps}/lib/module-intellij.libraries.asm.jar" />
+        <fileset file="${artifacts.mps}/lib/module-intellij.libraries.gson.jar" />
+        <fileset file="${artifacts.mps}/lib/module-intellij.libraries.miglayout.swing.jar" />
+        <fileset file="${artifacts.mps}/lib/module-intellij.platform.vcs.jar" />
+        <fileset file="${artifacts.mps}/lib/module-intellij.platform.vcs.core.jar" />
+        <fileset file="${artifacts.mps}/lib/module-intellij.xml.parser.jar" />
         <fileset file="${artifacts.com.mbeddr.platform}/mbeddr.platform/languages/com.mbeddr.platform/com.mbeddr.core.base.jar" />
         <fileset file="${artifacts.com.mbeddr.platform}/de.itemis.mps.blutil/languages/de.itemis.mps.blutil/com.mbeddr.mpsutil.blutil.jar" />
         <fileset file="${artifacts.com.mbeddr.platform}/com.mbeddr.mpsutil.filepicker/languages/group.filepicker/com.mbeddr.mpsutil.filepicker.jar" />
@@ -2151,11 +2164,16 @@
         <fileset file="${artifacts.mps}/lib/util-8.jar" />
         <fileset file="${artifacts.mps}/lib/forms_rt.jar" />
         <fileset file="${artifacts.mps}/lib/java-frontback.jar" />
-        <fileset file="${artifacts.mps}/lib/java-impl.jar" />
         <fileset file="${artifacts.mps}/lib/jps-model.jar" />
         <fileset file="${artifacts.mps}/lib/testFramework.jar" />
         <fileset file="${artifacts.mps}/lib/stats.jar" />
         <fileset file="${artifacts.mps}/lib/platform-loader.jar" />
+        <fileset file="${artifacts.mps}/lib/module-intellij.libraries.asm.jar" />
+        <fileset file="${artifacts.mps}/lib/module-intellij.libraries.gson.jar" />
+        <fileset file="${artifacts.mps}/lib/module-intellij.libraries.miglayout.swing.jar" />
+        <fileset file="${artifacts.mps}/lib/module-intellij.platform.vcs.jar" />
+        <fileset file="${artifacts.mps}/lib/module-intellij.platform.vcs.core.jar" />
+        <fileset file="${artifacts.mps}/lib/module-intellij.xml.parser.jar" />
         <fileset file="${artifacts.com.mbeddr.platform}/mbeddr.platform/languages/com.mbeddr.platform/com.mbeddr.core.base.jar" />
         <fileset file="${artifacts.com.mbeddr.platform}/de.itemis.mps.blutil/languages/de.itemis.mps.blutil/com.mbeddr.mpsutil.blutil.jar" />
         <fileset file="${artifacts.com.mbeddr.platform}/com.mbeddr.mpsutil.filepicker/languages/group.filepicker/com.mbeddr.mpsutil.filepicker.jar" />
@@ -2239,11 +2257,16 @@
         <fileset file="${artifacts.mps}/lib/util-8.jar" />
         <fileset file="${artifacts.mps}/lib/forms_rt.jar" />
         <fileset file="${artifacts.mps}/lib/java-frontback.jar" />
-        <fileset file="${artifacts.mps}/lib/java-impl.jar" />
         <fileset file="${artifacts.mps}/lib/jps-model.jar" />
         <fileset file="${artifacts.mps}/lib/testFramework.jar" />
         <fileset file="${artifacts.mps}/lib/stats.jar" />
         <fileset file="${artifacts.mps}/lib/platform-loader.jar" />
+        <fileset file="${artifacts.mps}/lib/module-intellij.libraries.asm.jar" />
+        <fileset file="${artifacts.mps}/lib/module-intellij.libraries.gson.jar" />
+        <fileset file="${artifacts.mps}/lib/module-intellij.libraries.miglayout.swing.jar" />
+        <fileset file="${artifacts.mps}/lib/module-intellij.platform.vcs.jar" />
+        <fileset file="${artifacts.mps}/lib/module-intellij.platform.vcs.core.jar" />
+        <fileset file="${artifacts.mps}/lib/module-intellij.xml.parser.jar" />
         <fileset file="${artifacts.com.mbeddr.platform}/mbeddr.platform/languages/com.mbeddr.platform/com.mbeddr.core.base.jar" />
         <fileset file="${artifacts.com.mbeddr.platform}/de.itemis.mps.blutil/languages/de.itemis.mps.blutil/com.mbeddr.mpsutil.blutil.jar" />
         <fileset file="${artifacts.com.mbeddr.platform}/com.mbeddr.mpsutil.filepicker/languages/group.filepicker/com.mbeddr.mpsutil.filepicker.jar" />
@@ -2321,11 +2344,16 @@
         <fileset file="${artifacts.mps}/lib/util-8.jar" />
         <fileset file="${artifacts.mps}/lib/forms_rt.jar" />
         <fileset file="${artifacts.mps}/lib/java-frontback.jar" />
-        <fileset file="${artifacts.mps}/lib/java-impl.jar" />
         <fileset file="${artifacts.mps}/lib/jps-model.jar" />
         <fileset file="${artifacts.mps}/lib/testFramework.jar" />
         <fileset file="${artifacts.mps}/lib/stats.jar" />
         <fileset file="${artifacts.mps}/lib/platform-loader.jar" />
+        <fileset file="${artifacts.mps}/lib/module-intellij.libraries.asm.jar" />
+        <fileset file="${artifacts.mps}/lib/module-intellij.libraries.gson.jar" />
+        <fileset file="${artifacts.mps}/lib/module-intellij.libraries.miglayout.swing.jar" />
+        <fileset file="${artifacts.mps}/lib/module-intellij.platform.vcs.jar" />
+        <fileset file="${artifacts.mps}/lib/module-intellij.platform.vcs.core.jar" />
+        <fileset file="${artifacts.mps}/lib/module-intellij.xml.parser.jar" />
         <fileset file="${artifacts.mps}/lib/annotations.jar" />
         <fileset file="${artifacts.com.mbeddr.platform}/mbeddr.platform/languages/com.mbeddr.platform/com.mbeddr.core.base.jar" />
         <fileset file="${artifacts.com.mbeddr.platform}/de.itemis.mps.blutil/languages/de.itemis.mps.blutil/com.mbeddr.mpsutil.blutil.jar" />
@@ -2405,11 +2433,16 @@
         <fileset file="${artifacts.mps}/lib/util-8.jar" />
         <fileset file="${artifacts.mps}/lib/forms_rt.jar" />
         <fileset file="${artifacts.mps}/lib/java-frontback.jar" />
-        <fileset file="${artifacts.mps}/lib/java-impl.jar" />
         <fileset file="${artifacts.mps}/lib/jps-model.jar" />
         <fileset file="${artifacts.mps}/lib/testFramework.jar" />
         <fileset file="${artifacts.mps}/lib/stats.jar" />
         <fileset file="${artifacts.mps}/lib/platform-loader.jar" />
+        <fileset file="${artifacts.mps}/lib/module-intellij.libraries.asm.jar" />
+        <fileset file="${artifacts.mps}/lib/module-intellij.libraries.gson.jar" />
+        <fileset file="${artifacts.mps}/lib/module-intellij.libraries.miglayout.swing.jar" />
+        <fileset file="${artifacts.mps}/lib/module-intellij.platform.vcs.jar" />
+        <fileset file="${artifacts.mps}/lib/module-intellij.platform.vcs.core.jar" />
+        <fileset file="${artifacts.mps}/lib/module-intellij.xml.parser.jar" />
         <fileset file="${artifacts.mps}/lib/annotations.jar" />
         <fileset file="${artifacts.com.mbeddr.platform}/mbeddr.platform/languages/com.mbeddr.platform/com.mbeddr.core.base.jar" />
         <fileset file="${artifacts.com.mbeddr.platform}/de.itemis.mps.blutil/languages/de.itemis.mps.blutil/com.mbeddr.mpsutil.blutil.jar" />
@@ -2475,8 +2508,6 @@
         <fileset file="${artifacts.mps}/lib/mps-project-check.jar" />
         <fileset file="${artifacts.mps}/lib/mps-test.jar" />
         <fileset file="${artifacts.mps}/lib/mps-textgen.jar" />
-        <fileset file="${artifacts.mps}/lib/ant/lib/ant.jar" />
-        <fileset file="${artifacts.mps}/lib/junit4.jar" />
         <fileset file="${artifacts.mps}/lib/app.jar" />
         <fileset file="${artifacts.mps}/lib/app-client.jar" />
         <fileset file="${artifacts.mps}/lib/lib.jar" />
@@ -2486,11 +2517,16 @@
         <fileset file="${artifacts.mps}/lib/util-8.jar" />
         <fileset file="${artifacts.mps}/lib/forms_rt.jar" />
         <fileset file="${artifacts.mps}/lib/java-frontback.jar" />
-        <fileset file="${artifacts.mps}/lib/java-impl.jar" />
         <fileset file="${artifacts.mps}/lib/jps-model.jar" />
         <fileset file="${artifacts.mps}/lib/testFramework.jar" />
         <fileset file="${artifacts.mps}/lib/stats.jar" />
         <fileset file="${artifacts.mps}/lib/platform-loader.jar" />
+        <fileset file="${artifacts.mps}/lib/module-intellij.libraries.asm.jar" />
+        <fileset file="${artifacts.mps}/lib/module-intellij.libraries.gson.jar" />
+        <fileset file="${artifacts.mps}/lib/module-intellij.libraries.miglayout.swing.jar" />
+        <fileset file="${artifacts.mps}/lib/module-intellij.platform.vcs.jar" />
+        <fileset file="${artifacts.mps}/lib/module-intellij.platform.vcs.core.jar" />
+        <fileset file="${artifacts.mps}/lib/module-intellij.xml.parser.jar" />
         <fileset file="${artifacts.mps}/lib/annotations.jar" />
         <fileset file="${artifacts.com.mbeddr.platform}/mbeddr.platform/languages/com.mbeddr.platform/com.mbeddr.core.base.jar" />
         <fileset file="${artifacts.com.mbeddr.platform}/de.itemis.mps.blutil/languages/de.itemis.mps.blutil/com.mbeddr.mpsutil.blutil.jar" />
@@ -2539,6 +2575,8 @@
         <fileset file="${artifacts.org.iets3.opensource}/org.iets3.core.os/languages/iets3.core.os/org.iets3.core.expr.lambda.jar" />
         <fileset file="${artifacts.org.iets3.opensource}/org.iets3.core.os/languages/iets3.core.os/org.iets3.core.expr.path.jar" />
         <fileset file="${artifacts.org.iets3.opensource}/org.iets3.core.os/languages/iets3.core.os/org.iets3.core.expr.toplevel.jar" />
+        <fileset file="${artifacts.mps}/lib/ant/lib/ant.jar" />
+        <fileset file="${artifacts.mps}/lib/junit4.jar" />
         <fileset dir="${artifacts.com.mbeddr.platform}/mps-multiline/lib" includes="diff_match_patch.jar" />
         <fileset dir="${artifacts.mps}/plugins/mps-junit5/lib" includes="apiguardian-api-1.1.2.jar" />
         <fileset dir="${artifacts.mps}/plugins/mps-junit5/lib" includes="junit-jupiter-api-5.13.4.jar" />
@@ -2591,8 +2629,6 @@
         <fileset file="${artifacts.mps}/lib/mps-project-check.jar" />
         <fileset file="${artifacts.mps}/lib/mps-test.jar" />
         <fileset file="${artifacts.mps}/lib/mps-textgen.jar" />
-        <fileset file="${artifacts.mps}/lib/ant/lib/ant.jar" />
-        <fileset file="${artifacts.mps}/lib/junit4.jar" />
         <fileset file="${artifacts.mps}/lib/app.jar" />
         <fileset file="${artifacts.mps}/lib/app-client.jar" />
         <fileset file="${artifacts.mps}/lib/lib.jar" />
@@ -2602,11 +2638,16 @@
         <fileset file="${artifacts.mps}/lib/util-8.jar" />
         <fileset file="${artifacts.mps}/lib/forms_rt.jar" />
         <fileset file="${artifacts.mps}/lib/java-frontback.jar" />
-        <fileset file="${artifacts.mps}/lib/java-impl.jar" />
         <fileset file="${artifacts.mps}/lib/jps-model.jar" />
         <fileset file="${artifacts.mps}/lib/testFramework.jar" />
         <fileset file="${artifacts.mps}/lib/stats.jar" />
         <fileset file="${artifacts.mps}/lib/platform-loader.jar" />
+        <fileset file="${artifacts.mps}/lib/module-intellij.libraries.asm.jar" />
+        <fileset file="${artifacts.mps}/lib/module-intellij.libraries.gson.jar" />
+        <fileset file="${artifacts.mps}/lib/module-intellij.libraries.miglayout.swing.jar" />
+        <fileset file="${artifacts.mps}/lib/module-intellij.platform.vcs.jar" />
+        <fileset file="${artifacts.mps}/lib/module-intellij.platform.vcs.core.jar" />
+        <fileset file="${artifacts.mps}/lib/module-intellij.xml.parser.jar" />
         <fileset file="${artifacts.mps}/lib/annotations.jar" />
         <fileset file="${artifacts.com.mbeddr.platform}/de.itemis.mps.blutil/languages/de.itemis.mps.blutil/com.mbeddr.mpsutil.blutil.rt.jar" />
         <fileset file="${artifacts.com.mbeddr.platform}/com.mbeddr.mpsutil.interpreter/languages/group.interpreter/com.mbeddr.mpsutil.interpreter.rt.jar" />
@@ -2628,6 +2669,7 @@
         <fileset file="${artifacts.mps}/plugins/mps-testing/languages/languageDesign/jetbrains.mps.lang.test.matcher.jar" />
         <fileset file="${artifacts.mps}/plugins/mps-testing/languages/languageDesign/jetbrains.mps.lang.test.runtime.jar" />
         <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.traceable.jar" />
+        <fileset file="${artifacts.com.mbeddr.platform}/mps-apache-commons/languages/mps-apache-commons/org.apache.commons.jar" />
         <fileset file="${artifacts.org.iets3.opensource}/org.iets3.core.os/languages/iets3.core.os/org.iets3.core.expr.base.collections.stubs.jar" />
         <fileset file="${artifacts.org.iets3.opensource}/org.iets3.core.os/languages/iets3.core.os/org.iets3.core.expr.base.runtime.jar" />
         <fileset file="${artifacts.org.iets3.opensource}/org.iets3.core.os/languages/iets3.core.os/org.iets3.core.expr.base.shared.runtime.jar" />
@@ -2644,7 +2686,16 @@
         <fileset file="${artifacts.org.iets3.opensource}/org.iets3.core.os/languages/iets3.core.os/org.iets3.core.expr.stringvalidation.runtime.jar" />
         <fileset file="${artifacts.org.iets3.opensource}/org.iets3.core.os/languages/iets3.core.os/org.iets3.core.expr.temporal.runtime.jar" />
         <fileset file="${artifacts.org.iets3.opensource}/org.iets3.core.os/languages/iets3.core.os/org.iets3.core.expr.tests.rt.jar" />
+        <fileset file="${artifacts.mps}/lib/ant/lib/ant.jar" />
+        <fileset file="${artifacts.mps}/lib/junit4.jar" />
         <fileset dir="${artifacts.com.mbeddr.platform}/mps-multiline/lib" includes="diff_match_patch.jar" />
+        <fileset dir="${artifacts.com.mbeddr.platform}/mps-apache-commons/lib" includes="commons-csv.jar" />
+        <fileset dir="${artifacts.com.mbeddr.platform}/mps-apache-commons/lib" includes="commons-io.jar" />
+        <fileset dir="${artifacts.com.mbeddr.platform}/mps-apache-commons/lib" includes="commons-lang3.jar" />
+        <fileset dir="${artifacts.com.mbeddr.platform}/mps-apache-commons/lib" includes="commons-math3.jar" />
+        <fileset dir="${artifacts.com.mbeddr.platform}/mps-apache-commons/lib" includes="commons-primitives.jar" />
+        <fileset dir="${artifacts.com.mbeddr.platform}/mps-apache-commons/lib" includes="miglayout-core.jar" />
+        <fileset dir="${artifacts.com.mbeddr.platform}/mps-apache-commons/lib" includes="miglayout-swing.jar" />
         <fileset dir="${artifacts.org.iets3.opensource}/org.iets3.core.os/lib" includes="pcollections.jar" />
         <fileset dir="${artifacts.org.iets3.opensource}/org.iets3.core.expr.genjava/lib" includes="functionaljava.jar" />
         <fileset dir="${artifacts.mps}/plugins/mps-junit5/lib" includes="apiguardian-api-1.1.2.jar" />
@@ -2698,8 +2749,6 @@
         <fileset file="${artifacts.mps}/lib/mps-project-check.jar" />
         <fileset file="${artifacts.mps}/lib/mps-test.jar" />
         <fileset file="${artifacts.mps}/lib/mps-textgen.jar" />
-        <fileset file="${artifacts.mps}/lib/ant/lib/ant.jar" />
-        <fileset file="${artifacts.mps}/lib/junit4.jar" />
         <fileset file="${artifacts.mps}/lib/app.jar" />
         <fileset file="${artifacts.mps}/lib/app-client.jar" />
         <fileset file="${artifacts.mps}/lib/lib.jar" />
@@ -2709,11 +2758,16 @@
         <fileset file="${artifacts.mps}/lib/util-8.jar" />
         <fileset file="${artifacts.mps}/lib/forms_rt.jar" />
         <fileset file="${artifacts.mps}/lib/java-frontback.jar" />
-        <fileset file="${artifacts.mps}/lib/java-impl.jar" />
         <fileset file="${artifacts.mps}/lib/jps-model.jar" />
         <fileset file="${artifacts.mps}/lib/testFramework.jar" />
         <fileset file="${artifacts.mps}/lib/stats.jar" />
         <fileset file="${artifacts.mps}/lib/platform-loader.jar" />
+        <fileset file="${artifacts.mps}/lib/module-intellij.libraries.asm.jar" />
+        <fileset file="${artifacts.mps}/lib/module-intellij.libraries.gson.jar" />
+        <fileset file="${artifacts.mps}/lib/module-intellij.libraries.miglayout.swing.jar" />
+        <fileset file="${artifacts.mps}/lib/module-intellij.platform.vcs.jar" />
+        <fileset file="${artifacts.mps}/lib/module-intellij.platform.vcs.core.jar" />
+        <fileset file="${artifacts.mps}/lib/module-intellij.xml.parser.jar" />
         <fileset file="${artifacts.mps}/lib/annotations.jar" />
         <fileset file="${artifacts.com.mbeddr.platform}/de.itemis.mps.blutil/languages/de.itemis.mps.blutil/com.mbeddr.mpsutil.blutil.rt.jar" />
         <fileset file="${artifacts.com.mbeddr.platform}/de.itemis.mps.grammarcells/languages/de.itemis.mps.grammarcells/com.mbeddr.mpsutil.grammarcells.runtime.jar" />
@@ -2736,6 +2790,8 @@
         <fileset file="${artifacts.mps}/plugins/mps-testing/languages/languageDesign/jetbrains.mps.lang.test.runtime.jar" />
         <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.traceable.jar" />
         <fileset file="${artifacts.org.iets3.opensource}/org.iets3.core.os/languages/iets3.core.os/org.iets3.core.expr.base.runtime.jar" />
+        <fileset file="${artifacts.mps}/lib/ant/lib/ant.jar" />
+        <fileset file="${artifacts.mps}/lib/junit4.jar" />
         <fileset dir="${artifacts.com.mbeddr.platform}/mps-multiline/lib" includes="diff_match_patch.jar" />
         <fileset dir="${artifacts.mps}/plugins/mps-junit5/lib" includes="apiguardian-api-1.1.2.jar" />
         <fileset dir="${artifacts.mps}/plugins/mps-junit5/lib" includes="junit-jupiter-api-5.13.4.jar" />
@@ -2788,8 +2844,6 @@
         <fileset file="${artifacts.mps}/lib/mps-project-check.jar" />
         <fileset file="${artifacts.mps}/lib/mps-test.jar" />
         <fileset file="${artifacts.mps}/lib/mps-textgen.jar" />
-        <fileset file="${artifacts.mps}/lib/ant/lib/ant.jar" />
-        <fileset file="${artifacts.mps}/lib/junit4.jar" />
         <fileset file="${artifacts.mps}/lib/app.jar" />
         <fileset file="${artifacts.mps}/lib/app-client.jar" />
         <fileset file="${artifacts.mps}/lib/lib.jar" />
@@ -2799,11 +2853,16 @@
         <fileset file="${artifacts.mps}/lib/util-8.jar" />
         <fileset file="${artifacts.mps}/lib/forms_rt.jar" />
         <fileset file="${artifacts.mps}/lib/java-frontback.jar" />
-        <fileset file="${artifacts.mps}/lib/java-impl.jar" />
         <fileset file="${artifacts.mps}/lib/jps-model.jar" />
         <fileset file="${artifacts.mps}/lib/testFramework.jar" />
         <fileset file="${artifacts.mps}/lib/stats.jar" />
         <fileset file="${artifacts.mps}/lib/platform-loader.jar" />
+        <fileset file="${artifacts.mps}/lib/module-intellij.libraries.asm.jar" />
+        <fileset file="${artifacts.mps}/lib/module-intellij.libraries.gson.jar" />
+        <fileset file="${artifacts.mps}/lib/module-intellij.libraries.miglayout.swing.jar" />
+        <fileset file="${artifacts.mps}/lib/module-intellij.platform.vcs.jar" />
+        <fileset file="${artifacts.mps}/lib/module-intellij.platform.vcs.core.jar" />
+        <fileset file="${artifacts.mps}/lib/module-intellij.xml.parser.jar" />
         <fileset file="${artifacts.mps}/lib/annotations.jar" />
         <fileset file="${artifacts.com.mbeddr.platform}/mbeddr.platform/languages/com.mbeddr.platform/com.mbeddr.core.base.jar" />
         <fileset file="${artifacts.com.mbeddr.platform}/de.itemis.mps.blutil/languages/de.itemis.mps.blutil/com.mbeddr.mpsutil.blutil.jar" />
@@ -2854,6 +2913,8 @@
         <fileset file="${artifacts.org.iets3.opensource}/org.iets3.core.os/languages/iets3.core.os/org.iets3.core.expr.path.jar" />
         <fileset file="${artifacts.org.iets3.opensource}/org.iets3.core.os/languages/iets3.core.os/org.iets3.core.expr.toplevel.jar" />
         <fileset file="${artifacts.org.iets3.opensource}/org.iets3.core.mapping/languages/org.iets3.mapping/org.iets3.core.mapping.jar" />
+        <fileset file="${artifacts.mps}/lib/ant/lib/ant.jar" />
+        <fileset file="${artifacts.mps}/lib/junit4.jar" />
         <fileset dir="${artifacts.com.mbeddr.platform}/mps-multiline/lib" includes="diff_match_patch.jar" />
         <fileset dir="${artifacts.mps}/plugins/mps-junit5/lib" includes="apiguardian-api-1.1.2.jar" />
         <fileset dir="${artifacts.mps}/plugins/mps-junit5/lib" includes="junit-jupiter-api-5.13.4.jar" />
@@ -2905,8 +2966,6 @@
         <fileset file="${artifacts.mps}/lib/mps-project-check.jar" />
         <fileset file="${artifacts.mps}/lib/mps-test.jar" />
         <fileset file="${artifacts.mps}/lib/mps-textgen.jar" />
-        <fileset file="${artifacts.mps}/lib/ant/lib/ant.jar" />
-        <fileset file="${artifacts.mps}/lib/junit4.jar" />
         <fileset file="${artifacts.mps}/lib/app.jar" />
         <fileset file="${artifacts.mps}/lib/app-client.jar" />
         <fileset file="${artifacts.mps}/lib/lib.jar" />
@@ -2916,11 +2975,16 @@
         <fileset file="${artifacts.mps}/lib/util-8.jar" />
         <fileset file="${artifacts.mps}/lib/forms_rt.jar" />
         <fileset file="${artifacts.mps}/lib/java-frontback.jar" />
-        <fileset file="${artifacts.mps}/lib/java-impl.jar" />
         <fileset file="${artifacts.mps}/lib/jps-model.jar" />
         <fileset file="${artifacts.mps}/lib/testFramework.jar" />
         <fileset file="${artifacts.mps}/lib/stats.jar" />
         <fileset file="${artifacts.mps}/lib/platform-loader.jar" />
+        <fileset file="${artifacts.mps}/lib/module-intellij.libraries.asm.jar" />
+        <fileset file="${artifacts.mps}/lib/module-intellij.libraries.gson.jar" />
+        <fileset file="${artifacts.mps}/lib/module-intellij.libraries.miglayout.swing.jar" />
+        <fileset file="${artifacts.mps}/lib/module-intellij.platform.vcs.jar" />
+        <fileset file="${artifacts.mps}/lib/module-intellij.platform.vcs.core.jar" />
+        <fileset file="${artifacts.mps}/lib/module-intellij.xml.parser.jar" />
         <fileset file="${artifacts.mps}/lib/annotations.jar" />
         <fileset file="${artifacts.com.mbeddr.platform}/mbeddr.platform/languages/com.mbeddr.platform/com.mbeddr.core.base.jar" />
         <fileset file="${artifacts.com.mbeddr.platform}/de.itemis.mps.blutil/languages/de.itemis.mps.blutil/com.mbeddr.mpsutil.blutil.jar" />
@@ -2969,6 +3033,8 @@
         <fileset file="${artifacts.org.iets3.opensource}/org.iets3.core.os/languages/iets3.core.os/org.iets3.core.expr.path.jar" />
         <fileset file="${artifacts.org.iets3.opensource}/org.iets3.core.os/languages/iets3.core.os/org.iets3.core.expr.toplevel.jar" />
         <fileset file="${artifacts.org.iets3.opensource}/org.iets3.trace/languages/iets3.trace/org.iets3.core.trace.jar" />
+        <fileset file="${artifacts.mps}/lib/ant/lib/ant.jar" />
+        <fileset file="${artifacts.mps}/lib/junit4.jar" />
         <fileset dir="${artifacts.com.mbeddr.platform}/mps-multiline/lib" includes="diff_match_patch.jar" />
         <fileset dir="${artifacts.mps}/plugins/mps-junit5/lib" includes="apiguardian-api-1.1.2.jar" />
         <fileset dir="${artifacts.mps}/plugins/mps-junit5/lib" includes="junit-jupiter-api-5.13.4.jar" />
@@ -3021,8 +3087,6 @@
         <fileset file="${artifacts.mps}/lib/mps-project-check.jar" />
         <fileset file="${artifacts.mps}/lib/mps-test.jar" />
         <fileset file="${artifacts.mps}/lib/mps-textgen.jar" />
-        <fileset file="${artifacts.mps}/lib/ant/lib/ant.jar" />
-        <fileset file="${artifacts.mps}/lib/junit4.jar" />
         <fileset file="${artifacts.mps}/lib/app.jar" />
         <fileset file="${artifacts.mps}/lib/app-client.jar" />
         <fileset file="${artifacts.mps}/lib/lib.jar" />
@@ -3032,11 +3096,16 @@
         <fileset file="${artifacts.mps}/lib/util-8.jar" />
         <fileset file="${artifacts.mps}/lib/forms_rt.jar" />
         <fileset file="${artifacts.mps}/lib/java-frontback.jar" />
-        <fileset file="${artifacts.mps}/lib/java-impl.jar" />
         <fileset file="${artifacts.mps}/lib/jps-model.jar" />
         <fileset file="${artifacts.mps}/lib/testFramework.jar" />
         <fileset file="${artifacts.mps}/lib/stats.jar" />
         <fileset file="${artifacts.mps}/lib/platform-loader.jar" />
+        <fileset file="${artifacts.mps}/lib/module-intellij.libraries.asm.jar" />
+        <fileset file="${artifacts.mps}/lib/module-intellij.libraries.gson.jar" />
+        <fileset file="${artifacts.mps}/lib/module-intellij.libraries.miglayout.swing.jar" />
+        <fileset file="${artifacts.mps}/lib/module-intellij.platform.vcs.jar" />
+        <fileset file="${artifacts.mps}/lib/module-intellij.platform.vcs.core.jar" />
+        <fileset file="${artifacts.mps}/lib/module-intellij.xml.parser.jar" />
         <fileset file="${artifacts.mps}/lib/annotations.jar" />
         <fileset file="${artifacts.com.mbeddr.platform}/mbeddr.platform/languages/com.mbeddr.platform/com.mbeddr.core.base.jar" />
         <fileset file="${artifacts.com.mbeddr.platform}/de.itemis.mps.blutil/languages/de.itemis.mps.blutil/com.mbeddr.mpsutil.blutil.jar" />
@@ -3077,6 +3146,8 @@
         <fileset file="${artifacts.org.iets3.opensource}/org.iets3.core.os/languages/iets3.core.os/org.iets3.core.expr.base.jar" />
         <fileset file="${artifacts.org.iets3.opensource}/org.iets3.core.os/languages/iets3.core.os/org.iets3.core.expr.base.runtime.jar" />
         <fileset file="${artifacts.org.iets3.opensource}/org.iets3.safety.os/languages/org.iets3.safety.os/org.iets3.safety.attributes.jar" />
+        <fileset file="${artifacts.mps}/lib/ant/lib/ant.jar" />
+        <fileset file="${artifacts.mps}/lib/junit4.jar" />
         <fileset dir="${artifacts.com.mbeddr.platform}/mps-multiline/lib" includes="diff_match_patch.jar" />
         <fileset dir="${artifacts.mps}/plugins/mps-junit5/lib" includes="apiguardian-api-1.1.2.jar" />
         <fileset dir="${artifacts.mps}/plugins/mps-junit5/lib" includes="junit-jupiter-api-5.13.4.jar" />
@@ -3130,8 +3201,6 @@
         <fileset file="${artifacts.mps}/lib/mps-project-check.jar" />
         <fileset file="${artifacts.mps}/lib/mps-test.jar" />
         <fileset file="${artifacts.mps}/lib/mps-textgen.jar" />
-        <fileset file="${artifacts.mps}/lib/ant/lib/ant.jar" />
-        <fileset file="${artifacts.mps}/lib/junit4.jar" />
         <fileset file="${artifacts.mps}/lib/app.jar" />
         <fileset file="${artifacts.mps}/lib/app-client.jar" />
         <fileset file="${artifacts.mps}/lib/lib.jar" />
@@ -3141,11 +3210,16 @@
         <fileset file="${artifacts.mps}/lib/util-8.jar" />
         <fileset file="${artifacts.mps}/lib/forms_rt.jar" />
         <fileset file="${artifacts.mps}/lib/java-frontback.jar" />
-        <fileset file="${artifacts.mps}/lib/java-impl.jar" />
         <fileset file="${artifacts.mps}/lib/jps-model.jar" />
         <fileset file="${artifacts.mps}/lib/testFramework.jar" />
         <fileset file="${artifacts.mps}/lib/stats.jar" />
         <fileset file="${artifacts.mps}/lib/platform-loader.jar" />
+        <fileset file="${artifacts.mps}/lib/module-intellij.libraries.asm.jar" />
+        <fileset file="${artifacts.mps}/lib/module-intellij.libraries.gson.jar" />
+        <fileset file="${artifacts.mps}/lib/module-intellij.libraries.miglayout.swing.jar" />
+        <fileset file="${artifacts.mps}/lib/module-intellij.platform.vcs.jar" />
+        <fileset file="${artifacts.mps}/lib/module-intellij.platform.vcs.core.jar" />
+        <fileset file="${artifacts.mps}/lib/module-intellij.xml.parser.jar" />
         <fileset file="${artifacts.mps}/lib/annotations.jar" />
         <fileset file="${artifacts.com.mbeddr.platform}/mbeddr.platform/languages/com.mbeddr.platform/com.mbeddr.core.base.jar" />
         <fileset file="${artifacts.com.mbeddr.platform}/de.itemis.mps.blutil/languages/de.itemis.mps.blutil/com.mbeddr.mpsutil.blutil.jar" />
@@ -3184,6 +3258,7 @@
         <fileset file="${artifacts.mps}/plugins/mps-testing/languages/languageDesign/jetbrains.mps.lang.test.matcher.jar" />
         <fileset file="${artifacts.mps}/plugins/mps-testing/languages/languageDesign/jetbrains.mps.lang.test.runtime.jar" />
         <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.traceable.jar" />
+        <fileset file="${artifacts.com.mbeddr.platform}/mps-apache-commons/languages/mps-apache-commons/org.apache.commons.jar" />
         <fileset file="${artifacts.org.iets3.opensource}/org.iets3.core.os/languages/iets3.core.os/org.iets3.analysis.base.jar" />
         <fileset file="${artifacts.org.iets3.opensource}/org.iets3.core.os/languages/iets3.core.os/org.iets3.core.base.jar" />
         <fileset file="${artifacts.org.iets3.opensource}/org.iets3.core.os/languages/iets3.core.os/org.iets3.core.expr.adt.jar" />
@@ -3245,7 +3320,16 @@
         <fileset file="${artifacts.org.iets3.opensource}/org.iets3.core.os/languages/iets3.core.os/org.iets3.core.expr.typetags.units.interpreter.jar" />
         <fileset file="${artifacts.org.iets3.opensource}/org.iets3.core.os/languages/iets3.core.os/org.iets3.core.expr.typetags.units.si.jar" />
         <fileset file="${artifacts.org.iets3.opensource}/org.iets3.core.os/languages/iets3.core.os/org.iets3.core.expr.util.interpreter.jar" />
+        <fileset file="${artifacts.mps}/lib/ant/lib/ant.jar" />
+        <fileset file="${artifacts.mps}/lib/junit4.jar" />
         <fileset dir="${artifacts.com.mbeddr.platform}/mps-multiline/lib" includes="diff_match_patch.jar" />
+        <fileset dir="${artifacts.com.mbeddr.platform}/mps-apache-commons/lib" includes="commons-csv.jar" />
+        <fileset dir="${artifacts.com.mbeddr.platform}/mps-apache-commons/lib" includes="commons-io.jar" />
+        <fileset dir="${artifacts.com.mbeddr.platform}/mps-apache-commons/lib" includes="commons-lang3.jar" />
+        <fileset dir="${artifacts.com.mbeddr.platform}/mps-apache-commons/lib" includes="commons-math3.jar" />
+        <fileset dir="${artifacts.com.mbeddr.platform}/mps-apache-commons/lib" includes="commons-primitives.jar" />
+        <fileset dir="${artifacts.com.mbeddr.platform}/mps-apache-commons/lib" includes="miglayout-core.jar" />
+        <fileset dir="${artifacts.com.mbeddr.platform}/mps-apache-commons/lib" includes="miglayout-swing.jar" />
         <fileset dir="${artifacts.org.iets3.opensource}/org.iets3.core.os/lib" includes="pcollections.jar" />
         <fileset dir="${artifacts.org.iets3.opensource}/org.iets3.core.expr.genjava/lib" includes="functionaljava.jar" />
         <fileset dir="${artifacts.org.iets3.opensource}/org.iets3.core.os/lib" includes="big-math.jar" />
@@ -3299,8 +3383,6 @@
         <fileset file="${artifacts.mps}/lib/mps-generator.jar" />
         <fileset file="${artifacts.mps}/lib/mps-project-check.jar" />
         <fileset file="${artifacts.mps}/lib/mps-test.jar" />
-        <fileset file="${artifacts.mps}/lib/ant/lib/ant.jar" />
-        <fileset file="${artifacts.mps}/lib/junit4.jar" />
         <fileset file="${artifacts.mps}/lib/app.jar" />
         <fileset file="${artifacts.mps}/lib/app-client.jar" />
         <fileset file="${artifacts.mps}/lib/lib.jar" />
@@ -3310,11 +3392,16 @@
         <fileset file="${artifacts.mps}/lib/util-8.jar" />
         <fileset file="${artifacts.mps}/lib/forms_rt.jar" />
         <fileset file="${artifacts.mps}/lib/java-frontback.jar" />
-        <fileset file="${artifacts.mps}/lib/java-impl.jar" />
         <fileset file="${artifacts.mps}/lib/jps-model.jar" />
         <fileset file="${artifacts.mps}/lib/testFramework.jar" />
         <fileset file="${artifacts.mps}/lib/stats.jar" />
         <fileset file="${artifacts.mps}/lib/platform-loader.jar" />
+        <fileset file="${artifacts.mps}/lib/module-intellij.libraries.asm.jar" />
+        <fileset file="${artifacts.mps}/lib/module-intellij.libraries.gson.jar" />
+        <fileset file="${artifacts.mps}/lib/module-intellij.libraries.miglayout.swing.jar" />
+        <fileset file="${artifacts.mps}/lib/module-intellij.platform.vcs.jar" />
+        <fileset file="${artifacts.mps}/lib/module-intellij.platform.vcs.core.jar" />
+        <fileset file="${artifacts.mps}/lib/module-intellij.xml.parser.jar" />
         <fileset file="${artifacts.mps}/lib/annotations.jar" />
         <fileset file="${artifacts.com.mbeddr.platform}/mbeddr.platform/languages/com.mbeddr.platform/com.mbeddr.core.base.jar" />
         <fileset file="${artifacts.com.mbeddr.platform}/de.itemis.mps.blutil/languages/de.itemis.mps.blutil/com.mbeddr.mpsutil.blutil.jar" />
@@ -3350,6 +3437,8 @@
         <fileset file="${artifacts.org.iets3.opensource}/org.iets3.core.os/languages/iets3.core.os/org.iets3.core.base.jar" />
         <fileset file="${artifacts.org.iets3.opensource}/org.iets3.core.os/languages/iets3.core.os/org.iets3.core.expr.base.jar" />
         <fileset file="${artifacts.org.iets3.opensource}/org.iets3.core.os/languages/iets3.core.os/org.iets3.core.expr.simpleTypes.jar" />
+        <fileset file="${artifacts.mps}/lib/ant/lib/ant.jar" />
+        <fileset file="${artifacts.mps}/lib/junit4.jar" />
         <fileset dir="${artifacts.com.mbeddr.platform}/mps-multiline/lib" includes="diff_match_patch.jar" />
         <fileset dir="${artifacts.mps}/plugins/mps-junit5/lib" includes="apiguardian-api-1.1.2.jar" />
         <fileset dir="${artifacts.mps}/plugins/mps-junit5/lib" includes="junit-jupiter-api-5.13.4.jar" />
@@ -3406,8 +3495,6 @@
         <fileset file="${artifacts.mps}/lib/mps-project-check.jar" />
         <pathelement path="${build.tmp}/java/out/test.org.iets3.analysis.base.solvable" />
         <fileset file="${artifacts.mps}/lib/mps-test.jar" />
-        <fileset file="${artifacts.mps}/lib/ant/lib/ant.jar" />
-        <fileset file="${artifacts.mps}/lib/junit4.jar" />
         <fileset file="${artifacts.mps}/lib/annotations.jar" />
         <fileset file="${artifacts.mps}/lib/app.jar" />
         <fileset file="${artifacts.mps}/lib/app-client.jar" />
@@ -3418,11 +3505,16 @@
         <fileset file="${artifacts.mps}/lib/util-8.jar" />
         <fileset file="${artifacts.mps}/lib/forms_rt.jar" />
         <fileset file="${artifacts.mps}/lib/java-frontback.jar" />
-        <fileset file="${artifacts.mps}/lib/java-impl.jar" />
         <fileset file="${artifacts.mps}/lib/jps-model.jar" />
         <fileset file="${artifacts.mps}/lib/testFramework.jar" />
         <fileset file="${artifacts.mps}/lib/stats.jar" />
         <fileset file="${artifacts.mps}/lib/platform-loader.jar" />
+        <fileset file="${artifacts.mps}/lib/module-intellij.libraries.asm.jar" />
+        <fileset file="${artifacts.mps}/lib/module-intellij.libraries.gson.jar" />
+        <fileset file="${artifacts.mps}/lib/module-intellij.libraries.miglayout.swing.jar" />
+        <fileset file="${artifacts.mps}/lib/module-intellij.platform.vcs.jar" />
+        <fileset file="${artifacts.mps}/lib/module-intellij.platform.vcs.core.jar" />
+        <fileset file="${artifacts.mps}/lib/module-intellij.xml.parser.jar" />
         <fileset file="${artifacts.com.mbeddr.platform}/mbeddr.platform/languages/com.mbeddr.platform/com.mbeddr.core.base.jar" />
         <fileset file="${artifacts.com.mbeddr.platform}/de.itemis.mps.blutil/languages/de.itemis.mps.blutil/com.mbeddr.mpsutil.blutil.jar" />
         <fileset file="${artifacts.com.mbeddr.platform}/de.itemis.mps.blutil/languages/de.itemis.mps.blutil/com.mbeddr.mpsutil.blutil.rt.jar" />
@@ -3459,6 +3551,8 @@
         <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.traceable.jar" />
         <fileset file="${artifacts.org.iets3.opensource}/org.iets3.core.os/languages/iets3.core.os/org.iets3.analysis.base.jar" />
         <fileset file="${artifacts.org.iets3.opensource}/org.iets3.core.os/languages/iets3.core.os/org.iets3.core.base.jar" />
+        <fileset file="${artifacts.mps}/lib/ant/lib/ant.jar" />
+        <fileset file="${artifacts.mps}/lib/junit4.jar" />
         <fileset dir="${artifacts.com.mbeddr.platform}/mps-multiline/lib" includes="diff_match_patch.jar" />
         <fileset dir="${artifacts.mps}/plugins/mps-junit5/lib" includes="apiguardian-api-1.1.2.jar" />
         <fileset dir="${artifacts.mps}/plugins/mps-junit5/lib" includes="junit-jupiter-api-5.13.4.jar" />
@@ -3511,8 +3605,6 @@
         <fileset file="${artifacts.mps}/lib/mps-project-check.jar" />
         <fileset file="${artifacts.mps}/lib/mps-test.jar" />
         <fileset file="${artifacts.mps}/lib/mps-textgen.jar" />
-        <fileset file="${artifacts.mps}/lib/ant/lib/ant.jar" />
-        <fileset file="${artifacts.mps}/lib/junit4.jar" />
         <fileset file="${artifacts.mps}/lib/app.jar" />
         <fileset file="${artifacts.mps}/lib/app-client.jar" />
         <fileset file="${artifacts.mps}/lib/lib.jar" />
@@ -3522,11 +3614,16 @@
         <fileset file="${artifacts.mps}/lib/util-8.jar" />
         <fileset file="${artifacts.mps}/lib/forms_rt.jar" />
         <fileset file="${artifacts.mps}/lib/java-frontback.jar" />
-        <fileset file="${artifacts.mps}/lib/java-impl.jar" />
         <fileset file="${artifacts.mps}/lib/jps-model.jar" />
         <fileset file="${artifacts.mps}/lib/testFramework.jar" />
         <fileset file="${artifacts.mps}/lib/stats.jar" />
         <fileset file="${artifacts.mps}/lib/platform-loader.jar" />
+        <fileset file="${artifacts.mps}/lib/module-intellij.libraries.asm.jar" />
+        <fileset file="${artifacts.mps}/lib/module-intellij.libraries.gson.jar" />
+        <fileset file="${artifacts.mps}/lib/module-intellij.libraries.miglayout.swing.jar" />
+        <fileset file="${artifacts.mps}/lib/module-intellij.platform.vcs.jar" />
+        <fileset file="${artifacts.mps}/lib/module-intellij.platform.vcs.core.jar" />
+        <fileset file="${artifacts.mps}/lib/module-intellij.xml.parser.jar" />
         <fileset file="${artifacts.mps}/lib/annotations.jar" />
         <fileset file="${artifacts.com.mbeddr.platform}/de.itemis.mps.blutil/languages/de.itemis.mps.blutil/com.mbeddr.mpsutil.blutil.rt.jar" />
         <fileset file="${artifacts.com.mbeddr.platform}/de.itemis.mps.grammarcells/languages/de.itemis.mps.grammarcells/com.mbeddr.mpsutil.grammarcells.runtime.jar" />
@@ -3549,6 +3646,8 @@
         <fileset file="${artifacts.mps}/plugins/mps-testing/languages/languageDesign/jetbrains.mps.lang.test.runtime.jar" />
         <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.traceable.jar" />
         <fileset file="${artifacts.org.iets3.opensource}/org.iets3.core.os/languages/iets3.core.os/org.iets3.core.expr.base.runtime.jar" />
+        <fileset file="${artifacts.mps}/lib/ant/lib/ant.jar" />
+        <fileset file="${artifacts.mps}/lib/junit4.jar" />
         <fileset dir="${artifacts.com.mbeddr.platform}/mps-multiline/lib" includes="diff_match_patch.jar" />
         <fileset dir="${artifacts.mps}/plugins/mps-junit5/lib" includes="apiguardian-api-1.1.2.jar" />
         <fileset dir="${artifacts.mps}/plugins/mps-junit5/lib" includes="junit-jupiter-api-5.13.4.jar" />
@@ -3601,8 +3700,6 @@
         <fileset file="${artifacts.mps}/lib/mps-project-check.jar" />
         <fileset file="${artifacts.mps}/lib/mps-test.jar" />
         <fileset file="${artifacts.mps}/lib/mps-textgen.jar" />
-        <fileset file="${artifacts.mps}/lib/ant/lib/ant.jar" />
-        <fileset file="${artifacts.mps}/lib/junit4.jar" />
         <fileset file="${artifacts.mps}/lib/app.jar" />
         <fileset file="${artifacts.mps}/lib/app-client.jar" />
         <fileset file="${artifacts.mps}/lib/lib.jar" />
@@ -3612,11 +3709,16 @@
         <fileset file="${artifacts.mps}/lib/util-8.jar" />
         <fileset file="${artifacts.mps}/lib/forms_rt.jar" />
         <fileset file="${artifacts.mps}/lib/java-frontback.jar" />
-        <fileset file="${artifacts.mps}/lib/java-impl.jar" />
         <fileset file="${artifacts.mps}/lib/jps-model.jar" />
         <fileset file="${artifacts.mps}/lib/testFramework.jar" />
         <fileset file="${artifacts.mps}/lib/stats.jar" />
         <fileset file="${artifacts.mps}/lib/platform-loader.jar" />
+        <fileset file="${artifacts.mps}/lib/module-intellij.libraries.asm.jar" />
+        <fileset file="${artifacts.mps}/lib/module-intellij.libraries.gson.jar" />
+        <fileset file="${artifacts.mps}/lib/module-intellij.libraries.miglayout.swing.jar" />
+        <fileset file="${artifacts.mps}/lib/module-intellij.platform.vcs.jar" />
+        <fileset file="${artifacts.mps}/lib/module-intellij.platform.vcs.core.jar" />
+        <fileset file="${artifacts.mps}/lib/module-intellij.xml.parser.jar" />
         <fileset file="${artifacts.mps}/lib/annotations.jar" />
         <fileset file="${artifacts.com.mbeddr.platform}/mbeddr.platform/languages/com.mbeddr.platform/com.mbeddr.core.base.jar" />
         <fileset file="${artifacts.com.mbeddr.platform}/de.itemis.mps.blutil/languages/de.itemis.mps.blutil/com.mbeddr.mpsutil.blutil.jar" />
@@ -3666,6 +3768,8 @@
         <fileset file="${artifacts.org.iets3.opensource}/org.iets3.core.os/languages/iets3.core.os/org.iets3.core.expr.toplevel.jar" />
         <fileset file="${artifacts.org.iets3.opensource}/org.iets3.core.mapping/languages/org.iets3.mapping/org.iets3.core.mapping.jar" />
         <fileset file="${artifacts.org.iets3.opensource}/org.iets3.protocol/languages/org.iets3.protocols/org.iets3.protocol.transport.jar" />
+        <fileset file="${artifacts.mps}/lib/ant/lib/ant.jar" />
+        <fileset file="${artifacts.mps}/lib/junit4.jar" />
         <fileset dir="${artifacts.com.mbeddr.platform}/mps-multiline/lib" includes="diff_match_patch.jar" />
         <fileset dir="${artifacts.mps}/plugins/mps-junit5/lib" includes="apiguardian-api-1.1.2.jar" />
         <fileset dir="${artifacts.mps}/plugins/mps-junit5/lib" includes="junit-jupiter-api-5.13.4.jar" />
@@ -3718,8 +3822,6 @@
         <fileset file="${artifacts.mps}/lib/mps-project-check.jar" />
         <fileset file="${artifacts.mps}/lib/mps-test.jar" />
         <fileset file="${artifacts.mps}/lib/mps-textgen.jar" />
-        <fileset file="${artifacts.mps}/lib/ant/lib/ant.jar" />
-        <fileset file="${artifacts.mps}/lib/junit4.jar" />
         <fileset file="${artifacts.mps}/lib/app.jar" />
         <fileset file="${artifacts.mps}/lib/app-client.jar" />
         <fileset file="${artifacts.mps}/lib/lib.jar" />
@@ -3729,11 +3831,16 @@
         <fileset file="${artifacts.mps}/lib/util-8.jar" />
         <fileset file="${artifacts.mps}/lib/forms_rt.jar" />
         <fileset file="${artifacts.mps}/lib/java-frontback.jar" />
-        <fileset file="${artifacts.mps}/lib/java-impl.jar" />
         <fileset file="${artifacts.mps}/lib/jps-model.jar" />
         <fileset file="${artifacts.mps}/lib/testFramework.jar" />
         <fileset file="${artifacts.mps}/lib/stats.jar" />
         <fileset file="${artifacts.mps}/lib/platform-loader.jar" />
+        <fileset file="${artifacts.mps}/lib/module-intellij.libraries.asm.jar" />
+        <fileset file="${artifacts.mps}/lib/module-intellij.libraries.gson.jar" />
+        <fileset file="${artifacts.mps}/lib/module-intellij.libraries.miglayout.swing.jar" />
+        <fileset file="${artifacts.mps}/lib/module-intellij.platform.vcs.jar" />
+        <fileset file="${artifacts.mps}/lib/module-intellij.platform.vcs.core.jar" />
+        <fileset file="${artifacts.mps}/lib/module-intellij.xml.parser.jar" />
         <fileset file="${artifacts.mps}/lib/annotations.jar" />
         <fileset file="${artifacts.com.mbeddr.platform}/mbeddr.platform/languages/com.mbeddr.platform/com.mbeddr.core.base.jar" />
         <fileset file="${artifacts.com.mbeddr.platform}/de.itemis.mps.blutil/languages/de.itemis.mps.blutil/com.mbeddr.mpsutil.blutil.jar" />
@@ -3785,6 +3892,12 @@
         <fileset file="${artifacts.org.iets3.opensource}/org.iets3.variability.os/languages/org.iets3.variability.os/org.iets3.variability.configuration.base.jar" />
         <fileset file="${artifacts.org.iets3.opensource}/org.iets3.variability.os/languages/org.iets3.variability.os/org.iets3.variability.featuremodel.base.jar" />
         <fileset file="${artifacts.org.iets3.opensource}/org.iets3.variability.os/languages/org.iets3.variability.os/test.org.iets3.common.base.jar" />
+        <fileset file="${artifacts.mps}/lib/ant/lib/ant.jar" />
+        <fileset file="${artifacts.mps}/lib/junit4.jar" />
+        <fileset dir="${artifacts.com.mbeddr.platform}/de.q60.mps.collections.libs/lib" includes="commons-collections4.jar" />
+        <fileset dir="${artifacts.com.mbeddr.platform}/de.q60.mps.collections.libs/lib" includes="guava.jar" />
+        <fileset dir="${artifacts.com.mbeddr.platform}/de.q60.mps.collections.libs/lib" includes="trove4j.jar" />
+        <fileset dir="${artifacts.com.mbeddr.platform}/de.q60.mps.collections.libs/lib" includes="vavr.jar" />
         <fileset dir="${artifacts.com.mbeddr.platform}/mps-multiline/lib" includes="diff_match_patch.jar" />
         <fileset dir="${artifacts.mps}/plugins/mps-junit5/lib" includes="apiguardian-api-1.1.2.jar" />
         <fileset dir="${artifacts.mps}/plugins/mps-junit5/lib" includes="junit-jupiter-api-5.13.4.jar" />
@@ -3837,8 +3950,6 @@
         <fileset file="${artifacts.mps}/lib/mps-project-check.jar" />
         <fileset file="${artifacts.mps}/lib/mps-test.jar" />
         <fileset file="${artifacts.mps}/lib/mps-textgen.jar" />
-        <fileset file="${artifacts.mps}/lib/ant/lib/ant.jar" />
-        <fileset file="${artifacts.mps}/lib/junit4.jar" />
         <fileset file="${artifacts.mps}/lib/app.jar" />
         <fileset file="${artifacts.mps}/lib/app-client.jar" />
         <fileset file="${artifacts.mps}/lib/lib.jar" />
@@ -3848,11 +3959,16 @@
         <fileset file="${artifacts.mps}/lib/util-8.jar" />
         <fileset file="${artifacts.mps}/lib/forms_rt.jar" />
         <fileset file="${artifacts.mps}/lib/java-frontback.jar" />
-        <fileset file="${artifacts.mps}/lib/java-impl.jar" />
         <fileset file="${artifacts.mps}/lib/jps-model.jar" />
         <fileset file="${artifacts.mps}/lib/testFramework.jar" />
         <fileset file="${artifacts.mps}/lib/stats.jar" />
         <fileset file="${artifacts.mps}/lib/platform-loader.jar" />
+        <fileset file="${artifacts.mps}/lib/module-intellij.libraries.asm.jar" />
+        <fileset file="${artifacts.mps}/lib/module-intellij.libraries.gson.jar" />
+        <fileset file="${artifacts.mps}/lib/module-intellij.libraries.miglayout.swing.jar" />
+        <fileset file="${artifacts.mps}/lib/module-intellij.platform.vcs.jar" />
+        <fileset file="${artifacts.mps}/lib/module-intellij.platform.vcs.core.jar" />
+        <fileset file="${artifacts.mps}/lib/module-intellij.xml.parser.jar" />
         <fileset file="${artifacts.mps}/lib/annotations.jar" />
         <fileset file="${artifacts.com.mbeddr.platform}/mbeddr.platform/languages/com.mbeddr.platform/com.mbeddr.core.base.jar" />
         <fileset file="${artifacts.com.mbeddr.platform}/de.itemis.mps.blutil/languages/de.itemis.mps.blutil/com.mbeddr.mpsutil.blutil.jar" />
@@ -3903,6 +4019,8 @@
         <fileset file="${artifacts.org.iets3.opensource}/org.iets3.variability.os/languages/org.iets3.variability.os/org.iets3.variability.configuration.base.jar" />
         <fileset file="${artifacts.org.iets3.opensource}/org.iets3.variability.os/languages/org.iets3.variability.os/org.iets3.variability.featuremodel.base.jar" />
         <fileset file="${artifacts.org.iets3.opensource}/org.iets3.variability.os/languages/org.iets3.variability.os/test.org.iets3.common.base.jar" />
+        <fileset file="${artifacts.mps}/lib/ant/lib/ant.jar" />
+        <fileset file="${artifacts.mps}/lib/junit4.jar" />
         <fileset dir="${artifacts.com.mbeddr.platform}/mps-multiline/lib" includes="diff_match_patch.jar" />
         <fileset dir="${artifacts.mps}/plugins/mps-junit5/lib" includes="apiguardian-api-1.1.2.jar" />
         <fileset dir="${artifacts.mps}/plugins/mps-junit5/lib" includes="junit-jupiter-api-5.13.4.jar" />
@@ -3955,8 +4073,6 @@
         <fileset file="${artifacts.mps}/lib/mps-project-check.jar" />
         <fileset file="${artifacts.mps}/lib/mps-test.jar" />
         <fileset file="${artifacts.mps}/lib/mps-textgen.jar" />
-        <fileset file="${artifacts.mps}/lib/ant/lib/ant.jar" />
-        <fileset file="${artifacts.mps}/lib/junit4.jar" />
         <fileset file="${artifacts.mps}/lib/app.jar" />
         <fileset file="${artifacts.mps}/lib/app-client.jar" />
         <fileset file="${artifacts.mps}/lib/lib.jar" />
@@ -3966,11 +4082,16 @@
         <fileset file="${artifacts.mps}/lib/util-8.jar" />
         <fileset file="${artifacts.mps}/lib/forms_rt.jar" />
         <fileset file="${artifacts.mps}/lib/java-frontback.jar" />
-        <fileset file="${artifacts.mps}/lib/java-impl.jar" />
         <fileset file="${artifacts.mps}/lib/jps-model.jar" />
         <fileset file="${artifacts.mps}/lib/testFramework.jar" />
         <fileset file="${artifacts.mps}/lib/stats.jar" />
         <fileset file="${artifacts.mps}/lib/platform-loader.jar" />
+        <fileset file="${artifacts.mps}/lib/module-intellij.libraries.asm.jar" />
+        <fileset file="${artifacts.mps}/lib/module-intellij.libraries.gson.jar" />
+        <fileset file="${artifacts.mps}/lib/module-intellij.libraries.miglayout.swing.jar" />
+        <fileset file="${artifacts.mps}/lib/module-intellij.platform.vcs.jar" />
+        <fileset file="${artifacts.mps}/lib/module-intellij.platform.vcs.core.jar" />
+        <fileset file="${artifacts.mps}/lib/module-intellij.xml.parser.jar" />
         <fileset file="${artifacts.mps}/lib/annotations.jar" />
         <fileset file="${artifacts.com.mbeddr.platform}/mbeddr.platform/languages/com.mbeddr.platform/com.mbeddr.core.base.jar" />
         <fileset file="${artifacts.com.mbeddr.platform}/de.itemis.mps.blutil/languages/de.itemis.mps.blutil/com.mbeddr.mpsutil.blutil.jar" />
@@ -4018,6 +4139,8 @@
         <fileset file="${artifacts.org.iets3.opensource}/org.iets3.core.os/languages/iets3.core.os/org.iets3.core.expr.lambda.jar" />
         <fileset file="${artifacts.org.iets3.opensource}/org.iets3.core.os/languages/iets3.core.os/org.iets3.core.expr.path.jar" />
         <fileset file="${artifacts.org.iets3.opensource}/org.iets3.core.os/languages/iets3.core.os/org.iets3.core.expr.toplevel.jar" />
+        <fileset file="${artifacts.mps}/lib/ant/lib/ant.jar" />
+        <fileset file="${artifacts.mps}/lib/junit4.jar" />
         <fileset dir="${artifacts.com.mbeddr.platform}/mps-multiline/lib" includes="diff_match_patch.jar" />
         <fileset dir="${artifacts.mps}/plugins/mps-junit5/lib" includes="apiguardian-api-1.1.2.jar" />
         <fileset dir="${artifacts.mps}/plugins/mps-junit5/lib" includes="junit-jupiter-api-5.13.4.jar" />
@@ -4070,8 +4193,6 @@
         <fileset file="${artifacts.mps}/lib/mps-project-check.jar" />
         <fileset file="${artifacts.mps}/lib/mps-test.jar" />
         <fileset file="${artifacts.mps}/lib/mps-textgen.jar" />
-        <fileset file="${artifacts.mps}/lib/ant/lib/ant.jar" />
-        <fileset file="${artifacts.mps}/lib/junit4.jar" />
         <fileset file="${artifacts.mps}/lib/app.jar" />
         <fileset file="${artifacts.mps}/lib/app-client.jar" />
         <fileset file="${artifacts.mps}/lib/lib.jar" />
@@ -4081,11 +4202,16 @@
         <fileset file="${artifacts.mps}/lib/util-8.jar" />
         <fileset file="${artifacts.mps}/lib/forms_rt.jar" />
         <fileset file="${artifacts.mps}/lib/java-frontback.jar" />
-        <fileset file="${artifacts.mps}/lib/java-impl.jar" />
         <fileset file="${artifacts.mps}/lib/jps-model.jar" />
         <fileset file="${artifacts.mps}/lib/testFramework.jar" />
         <fileset file="${artifacts.mps}/lib/stats.jar" />
         <fileset file="${artifacts.mps}/lib/platform-loader.jar" />
+        <fileset file="${artifacts.mps}/lib/module-intellij.libraries.asm.jar" />
+        <fileset file="${artifacts.mps}/lib/module-intellij.libraries.gson.jar" />
+        <fileset file="${artifacts.mps}/lib/module-intellij.libraries.miglayout.swing.jar" />
+        <fileset file="${artifacts.mps}/lib/module-intellij.platform.vcs.jar" />
+        <fileset file="${artifacts.mps}/lib/module-intellij.platform.vcs.core.jar" />
+        <fileset file="${artifacts.mps}/lib/module-intellij.xml.parser.jar" />
         <fileset file="${artifacts.mps}/lib/annotations.jar" />
         <fileset file="${artifacts.com.mbeddr.platform}/mbeddr.platform/languages/com.mbeddr.platform/com.mbeddr.core.base.jar" />
         <fileset file="${artifacts.com.mbeddr.platform}/de.itemis.mps.blutil/languages/de.itemis.mps.blutil/com.mbeddr.mpsutil.blutil.jar" />
@@ -4134,6 +4260,8 @@
         <fileset file="${artifacts.org.iets3.opensource}/org.iets3.core.os/languages/iets3.core.os/org.iets3.core.expr.lambda.jar" />
         <fileset file="${artifacts.org.iets3.opensource}/org.iets3.core.os/languages/iets3.core.os/org.iets3.core.expr.path.jar" />
         <fileset file="${artifacts.org.iets3.opensource}/org.iets3.core.os/languages/iets3.core.os/org.iets3.core.expr.toplevel.jar" />
+        <fileset file="${artifacts.mps}/lib/ant/lib/ant.jar" />
+        <fileset file="${artifacts.mps}/lib/junit4.jar" />
         <fileset dir="${artifacts.com.mbeddr.platform}/mps-multiline/lib" includes="diff_match_patch.jar" />
         <fileset dir="${artifacts.mps}/plugins/mps-junit5/lib" includes="apiguardian-api-1.1.2.jar" />
         <fileset dir="${artifacts.mps}/plugins/mps-junit5/lib" includes="junit-jupiter-api-5.13.4.jar" />
@@ -4190,8 +4318,6 @@
         <fileset file="${artifacts.mps}/lib/mps-textgen.jar" />
         <fileset file="${artifacts.mps}/lib/mps-icons.jar" />
         <fileset file="${artifacts.mps}/lib/mps-workbench.jar" />
-        <fileset file="${artifacts.mps}/lib/ant/lib/ant.jar" />
-        <fileset file="${artifacts.mps}/lib/junit4.jar" />
         <fileset file="${artifacts.mps}/lib/app.jar" />
         <fileset file="${artifacts.mps}/lib/app-client.jar" />
         <fileset file="${artifacts.mps}/lib/lib.jar" />
@@ -4201,11 +4327,16 @@
         <fileset file="${artifacts.mps}/lib/util-8.jar" />
         <fileset file="${artifacts.mps}/lib/forms_rt.jar" />
         <fileset file="${artifacts.mps}/lib/java-frontback.jar" />
-        <fileset file="${artifacts.mps}/lib/java-impl.jar" />
         <fileset file="${artifacts.mps}/lib/jps-model.jar" />
         <fileset file="${artifacts.mps}/lib/testFramework.jar" />
         <fileset file="${artifacts.mps}/lib/stats.jar" />
         <fileset file="${artifacts.mps}/lib/platform-loader.jar" />
+        <fileset file="${artifacts.mps}/lib/module-intellij.libraries.asm.jar" />
+        <fileset file="${artifacts.mps}/lib/module-intellij.libraries.gson.jar" />
+        <fileset file="${artifacts.mps}/lib/module-intellij.libraries.miglayout.swing.jar" />
+        <fileset file="${artifacts.mps}/lib/module-intellij.platform.vcs.jar" />
+        <fileset file="${artifacts.mps}/lib/module-intellij.platform.vcs.core.jar" />
+        <fileset file="${artifacts.mps}/lib/module-intellij.xml.parser.jar" />
         <fileset file="${artifacts.mps}/lib/annotations.jar" />
         <fileset file="${artifacts.com.mbeddr.platform}/mbeddr.platform/languages/com.mbeddr.platform/com.mbeddr.core.base.jar" />
         <fileset file="${artifacts.com.mbeddr.platform}/de.itemis.mps.blutil/languages/de.itemis.mps.blutil/com.mbeddr.mpsutil.blutil.jar" />
@@ -4284,6 +4415,8 @@
         <fileset file="${artifacts.org.iets3.opensource}/org.iets3.core.os/languages/iets3.core.os/org.iets3.core.expr.typetags.units.jar" />
         <fileset file="${artifacts.org.iets3.opensource}/org.iets3.core.os/languages/iets3.core.os/org.iets3.core.expr.typetags.units.si.jar" />
         <fileset file="${artifacts.org.iets3.opensource}/org.iets3.core.os/languages/iets3.core.os/org.iets3.core.expr.util.jar" />
+        <fileset file="${artifacts.mps}/lib/ant/lib/ant.jar" />
+        <fileset file="${artifacts.mps}/lib/junit4.jar" />
         <fileset dir="${artifacts.com.mbeddr.platform}/mps-multiline/lib" includes="diff_match_patch.jar" />
         <fileset dir="${artifacts.org.iets3.opensource}/org.iets3.core.os/lib" includes="pcollections.jar" />
         <fileset dir="${artifacts.mps}/plugins/mps-junit5/lib" includes="apiguardian-api-1.1.2.jar" />
@@ -4339,8 +4472,6 @@
         <fileset file="${artifacts.mps}/lib/mps-textgen.jar" />
         <fileset file="${artifacts.mps}/lib/mps-icons.jar" />
         <fileset file="${artifacts.mps}/lib/mps-workbench.jar" />
-        <fileset file="${artifacts.mps}/lib/ant/lib/ant.jar" />
-        <fileset file="${artifacts.mps}/lib/junit4.jar" />
         <fileset file="${artifacts.mps}/lib/app.jar" />
         <fileset file="${artifacts.mps}/lib/app-client.jar" />
         <fileset file="${artifacts.mps}/lib/lib.jar" />
@@ -4350,11 +4481,16 @@
         <fileset file="${artifacts.mps}/lib/util-8.jar" />
         <fileset file="${artifacts.mps}/lib/forms_rt.jar" />
         <fileset file="${artifacts.mps}/lib/java-frontback.jar" />
-        <fileset file="${artifacts.mps}/lib/java-impl.jar" />
         <fileset file="${artifacts.mps}/lib/jps-model.jar" />
         <fileset file="${artifacts.mps}/lib/testFramework.jar" />
         <fileset file="${artifacts.mps}/lib/stats.jar" />
         <fileset file="${artifacts.mps}/lib/platform-loader.jar" />
+        <fileset file="${artifacts.mps}/lib/module-intellij.libraries.asm.jar" />
+        <fileset file="${artifacts.mps}/lib/module-intellij.libraries.gson.jar" />
+        <fileset file="${artifacts.mps}/lib/module-intellij.libraries.miglayout.swing.jar" />
+        <fileset file="${artifacts.mps}/lib/module-intellij.platform.vcs.jar" />
+        <fileset file="${artifacts.mps}/lib/module-intellij.platform.vcs.core.jar" />
+        <fileset file="${artifacts.mps}/lib/module-intellij.xml.parser.jar" />
         <fileset file="${artifacts.mps}/lib/annotations.jar" />
         <fileset file="${artifacts.com.mbeddr.platform}/mbeddr.platform/languages/com.mbeddr.platform/com.mbeddr.core.base.jar" />
         <fileset file="${artifacts.com.mbeddr.platform}/de.itemis.mps.blutil/languages/de.itemis.mps.blutil/com.mbeddr.mpsutil.blutil.jar" />
@@ -4396,6 +4532,8 @@
         <fileset file="${artifacts.org.iets3.opensource}/org.iets3.core.os/languages/iets3.core.os/org.iets3.core.expr.base.jar" />
         <fileset file="${artifacts.org.iets3.opensource}/org.iets3.core.os/languages/iets3.core.os/org.iets3.core.expr.base.runtime.jar" />
         <fileset file="${artifacts.org.iets3.opensource}/org.iets3.core.os/languages/iets3.core.os/org.iets3.core.expr.simpleTypes.jar" />
+        <fileset file="${artifacts.mps}/lib/ant/lib/ant.jar" />
+        <fileset file="${artifacts.mps}/lib/junit4.jar" />
         <fileset dir="${artifacts.com.mbeddr.platform}/mps-multiline/lib" includes="diff_match_patch.jar" />
         <fileset dir="${artifacts.mps}/plugins/mps-junit5/lib" includes="apiguardian-api-1.1.2.jar" />
         <fileset dir="${artifacts.mps}/plugins/mps-junit5/lib" includes="junit-jupiter-api-5.13.4.jar" />
@@ -4446,6 +4584,7 @@
         <arg value="-Xmx2048m" />
         <arg value="-Didea.config.path=${build.mps.config.path}" />
         <arg value="-Didea.system.path=${build.mps.system.path}" />
+        <arg value="-Didea.split.test.logs=true" />
         <arg value="-Djna.boot.library.path=${build.jna.library.path}" />
       </jvmargs>
       
@@ -4517,6 +4656,7 @@
       <plugin id="com.mbeddr.mpsutil.refactoring" path="${artifacts.com.mbeddr.platform}/mpsutil.refactoring" />
       <plugin id="org.modelix.model.api" path="${artifacts.com.mbeddr.platform}/org.modelix.model.api" />
       <plugin id="com.intellij.modules.mps" path="${artifacts.mps}/lib/mps-workbench.jar" />
+      <plugin id="com.intellij.java" path="${artifacts.mps}/plugins/java" />
       <plugin id="jetbrains.mps.build" path="${artifacts.mps}/plugins/mps-build" />
       <plugin id="jetbrains.mps.console" path="${artifacts.mps}/plugins/mps-console" />
       <plugin id="jetbrains.mps.editor.contextActions" path="${artifacts.mps}/plugins/mps-context-actions" />
@@ -4726,6 +4866,9 @@
           <patternset refid="plugin.deployed.jars" />
         </fileset>
         <fileset file="${artifacts.mps}/lib/mps-workbench.jar" />
+        <fileset dir="${artifacts.mps}/plugins/java">
+          <patternset refid="plugin.deployed.jars" />
+        </fileset>
         <fileset dir="${artifacts.mps}/plugins/mps-build">
           <patternset refid="plugin.deployed.jars" />
         </fileset>

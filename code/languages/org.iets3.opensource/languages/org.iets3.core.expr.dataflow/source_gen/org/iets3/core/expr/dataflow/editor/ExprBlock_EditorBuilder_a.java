@@ -43,6 +43,7 @@ import com.mbeddr.mpsutil.grammarcells.runtime.StringOrSequenceQuery;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
 import com.mbeddr.mpsutil.grammarcells.runtime.MultiTextActionItem;
 import jetbrains.mps.smodel.action.SNodeFactoryOperations;
+import org.iets3.core.expr.base.plugin.EditorCustomizationConfigHelper;
 import org.jetbrains.annotations.Nullable;
 import com.mbeddr.mpsutil.grammarcells.runtime.GrammarCellsUtil;
 import java.util.Objects;
@@ -140,7 +141,7 @@ import org.jetbrains.mps.openapi.language.SConcept;
     return editorCell;
   }
   private EditorCell createCustomFactory_1() {
-    return createCustomFactory_0(getEditorContext(), myNode);
+    return createCustomFactory_0(getEditorContext(), getNode());
   }
   private EditorCell createCustomFactory_2(final EditorContext editorContext, final SNode node) {
 
@@ -154,7 +155,7 @@ import org.jetbrains.mps.openapi.language.SConcept;
     return editorCell;
   }
   private EditorCell createCustomFactory_3() {
-    return createCustomFactory_2(getEditorContext(), myNode);
+    return createCustomFactory_2(getEditorContext(), getNode());
   }
   private EditorCell createReadOnlyModelAccessor_0() {
     EditorCell_Property editorCell = EditorCell_Property.create(getEditorContext(), new ModelAccessor.ReadOnly() {
@@ -216,6 +217,11 @@ import org.jetbrains.mps.openapi.language.SConcept;
           public SNode doSubstitute(@NotNull String pattern) {
             SNode result = ListSequence.fromList(SLinkOperations.getChildren(SNodeOperations.cast(ctx.getNode(), CONCEPTS.ExprBlock$YR), LINKS.params$7rRh)).insertElement(0, SNodeFactoryOperations.createNewNode(CONCEPTS.BlockParameter$jO, null));
             EditorContext editorContext = ctx.getEditorContext();
+            new Object() {
+              public void postprocess(SNode node) {
+                EditorCustomizationConfigHelper.getConfig().postProcessOptionalCell(EditorCustomizationConfigHelper.getIdentifier(CONCEPTS.ExprBlock$YR, LINKS.params$7rRh), node, editorContext);
+              }
+            }.postprocess(ctx.getNode());
 
             return result;
           }
@@ -230,7 +236,8 @@ import org.jetbrains.mps.openapi.language.SConcept;
             SNode node = ctx.getNode();
             String originalText = super.getShortDescriptionText(pattern);
             EditorContext editorContext = ctx.getEditorContext();
-            return "parameters for the expression block";
+            String description = EditorCustomizationConfigHelper.getConfig().getOptionalCellDescriptionText(EditorCustomizationConfigHelper.getIdentifier(CONCEPTS.ExprBlock$YR, LINKS.params$7rRh), node, originalText, editorContext);
+            return ((description != null && description.length() > 0) ? description : "add parameters for the expression block");
           }
 
         });
@@ -265,6 +272,11 @@ import org.jetbrains.mps.openapi.language.SConcept;
             String description = "Insert child into " + child.getSNode().getContainmentLink();
             SNodeReference trace = new SNodePointer("r:258df551-f8f8-4039-9c6c-f44cd05c65e3(org.iets3.core.expr.dataflow.editor)", "2870058499324011455");
             _FunctionTypes._void_P1_E0<? super SNode> postprocessor = null;
+            postprocessor = new _FunctionTypes._void_P1_E0<SNode>() {
+              public void invoke(SNode node) {
+                EditorCustomizationConfigHelper.getConfig().postProcessOptionalCell(EditorCustomizationConfigHelper.getIdentifier(CONCEPTS.ExprBlock$YR, LINKS.params$7rRh), node, editorContext);
+              }
+            };
             CompositeTransformationMenuLookup.add(child, new ListInsertActionLookup(matchingTexts, false, parentCellId, description, child.getSNode(), trace, postprocessor));
             CompositeTransformationMenuLookup.add(child, new ListInsertActionLookup(matchingTexts, true, parentCellId, description, child.getSNode(), trace, postprocessor));
           }
@@ -275,7 +287,7 @@ import org.jetbrains.mps.openapi.language.SConcept;
     return editorCell;
   }
   private EditorCell createCustomFactory_5() {
-    return createCustomFactory_4(getEditorContext(), myNode);
+    return createCustomFactory_4(getEditorContext(), getNode());
   }
   private EditorCell createCollection_1() {
     jetbrains.mps.nodeEditor.cells.EditorCell_Collection editorCell = new jetbrains.mps.nodeEditor.cells.EditorCell_Collection(getEditorContext(), myNode, new CellLayout_Indent());
@@ -463,7 +475,7 @@ import org.jetbrains.mps.openapi.language.SConcept;
     return editorCell;
   }
   private EditorCell createCustomFactory_7() {
-    return createCustomFactory_6(getEditorContext(), myNode);
+    return createCustomFactory_6(getEditorContext(), getNode());
   }
   private EditorCell createCustomFactory_8(final EditorContext editorContext, final SNode node) {
 
@@ -495,7 +507,7 @@ import org.jetbrains.mps.openapi.language.SConcept;
     return editorCell;
   }
   private EditorCell createCustomFactory_9() {
-    return createCustomFactory_8(getEditorContext(), myNode);
+    return createCustomFactory_8(getEditorContext(), getNode());
   }
   private EditorCell createCollection_2() {
     jetbrains.mps.nodeEditor.cells.EditorCell_Collection editorCell = new jetbrains.mps.nodeEditor.cells.EditorCell_Collection(getEditorContext(), myNode, new CellLayout_Indent());

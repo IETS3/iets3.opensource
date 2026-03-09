@@ -213,11 +213,11 @@
       <node id="7814222126786013877" at="24,0,25,0" concept="7" trace="CONCEPT" />
       <node id="7814222126786013877" at="26,0,27,0" concept="7" trace="getPathLabel_id6LLGpXJ4YES" />
       <node id="7814222126786013877" at="27,0,28,0" concept="7" trace="getPathColor_id2U5Q01Ug$y6" />
-      <node id="7814222126786013877" at="28,0,29,0" concept="7" trace="allowUmlaute_id5YygIlbih$m" />
+      <node id="7814222126786013877" at="28,0,29,0" concept="7" trace="overrideDefaultAllowUmlaute_id5D8v3P4jYKp" />
       <node id="7814222126786013877" at="30,0,31,0" concept="7" trace="BH_METHODS" />
       <node id="7814222126786013892" at="35,85,36,72" concept="6" />
       <node id="3352322994209966792" at="38,84,39,16" concept="6" />
-      <node id="6891143932408648136" at="41,100,42,16" concept="6" />
+      <node id="6891143932408648136" at="41,115,42,16" concept="6" />
       <node id="7814222126786013877" at="49,114,50,21" concept="2" />
       <node id="7814222126786013877" at="54,114,55,49" concept="5" />
       <node id="7814222126786013877" at="56,26,57,56" concept="10" />
@@ -226,7 +226,7 @@
       <node id="7814222126786013877" at="64,14,65,58" concept="10" />
       <node id="7814222126786013877" at="70,128,71,49" concept="5" />
       <node id="7814222126786013877" at="72,26,73,56" concept="10" />
-      <node id="7814222126786013877" at="76,13,77,67" concept="6" />
+      <node id="7814222126786013877" at="76,13,77,82" concept="6" />
       <node id="7814222126786013877" at="78,14,79,58" concept="10" />
       <node id="7814222126786013877" at="85,48,86,22" concept="6" />
       <node id="7814222126786013877" at="91,40,92,19" concept="6" />
@@ -235,7 +235,7 @@
       <node id="7814222126786013877" at="45,0,47,0" concept="1" trace="IMember__BehaviorDescriptor#()V" />
       <node id="7814222126786013877" at="35,0,38,0" concept="8" trace="getPathLabel_id6LLGpXJ4YES#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljava/lang/String;" />
       <node id="7814222126786013877" at="38,0,41,0" concept="8" trace="getPathColor_id2U5Q01Ug$y6#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljava/awt/Color;" />
-      <node id="7814222126786013877" at="41,0,44,0" concept="8" trace="allowUmlaute_id5YygIlbih$m#(Lorg/jetbrains/mps/openapi/language/SAbstractConcept;)Z" />
+      <node id="7814222126786013877" at="41,0,44,0" concept="8" trace="overrideDefaultAllowUmlaute_id5D8v3P4jYKp#(Lorg/jetbrains/mps/openapi/language/SAbstractConcept;)Z" />
       <node id="7814222126786013877" at="55,49,58,5" concept="3" />
       <node id="7814222126786013877" at="71,49,74,5" concept="3" />
       <node id="7814222126786013877" at="48,0,52,0" concept="4" trace="initNode#(Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/core/aspects/behaviour/api/SConstructor;[Ljava/lang/Object;)V" />
@@ -249,14 +249,14 @@
       <scope id="7814222126786013877" at="45,45,45,45" />
       <scope id="7814222126786013882" at="35,85,36,72" />
       <scope id="3352322994209966217" at="38,84,39,16" />
-      <scope id="6891143932408585532" at="41,100,42,16" />
+      <scope id="6891143932408585532" at="41,115,42,16" />
       <scope id="7814222126786013877" at="49,114,50,21" />
       <scope id="7814222126786013877" at="56,26,57,56" />
       <scope id="7814222126786013877" at="60,13,61,63" />
       <scope id="7814222126786013877" at="62,13,63,62" />
       <scope id="7814222126786013877" at="64,14,65,58" />
       <scope id="7814222126786013877" at="72,26,73,56" />
-      <scope id="7814222126786013877" at="76,13,77,67" />
+      <scope id="7814222126786013877" at="76,13,77,82" />
       <scope id="7814222126786013877" at="78,14,79,58" />
       <scope id="7814222126786013877" at="85,48,86,22" />
       <scope id="7814222126786013877" at="91,40,92,19" />

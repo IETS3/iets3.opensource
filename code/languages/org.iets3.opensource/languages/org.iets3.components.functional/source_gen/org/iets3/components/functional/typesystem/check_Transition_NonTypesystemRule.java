@@ -22,7 +22,7 @@ public class check_Transition_NonTypesystemRule extends AbstractNonTypesystemRul
   public check_Transition_NonTypesystemRule() {
   }
   public void applyRule(final SNode t, final TypeCheckingContext typeCheckingContext, IsApplicableStatus status) {
-    if (SNodeOperations.isInstanceOf(SLinkOperations.getTarget(t, LINKS.trigger$Hlcy), CONCEPTS.ConditionalDataTrigger$oB) && SNodeOperations.isInstanceOf(SLinkOperations.getTarget(SNodeOperations.cast(SLinkOperations.getTarget(t, LINKS.trigger$Hlcy), CONCEPTS.ConditionalDataTrigger$oB), LINKS.condition$KrT5), CONCEPTS.TrueLiteral$_K)) {
+    if (SNodeOperations.isInstanceOf(SLinkOperations.getTarget(t, LINKS.trigger$Hlcy), CONCEPTS.ConditionalDataTrigger$oB) && SNodeOperations.isInstanceOf(SLinkOperations.getTarget(SNodeOperations.as(SLinkOperations.getTarget(t, LINKS.trigger$Hlcy), CONCEPTS.ConditionalDataTrigger$oB), LINKS.condition$KrT5), CONCEPTS.TrueLiteral$_K)) {
       SNode state = SNodeOperations.getNodeAncestor(t, CONCEPTS.AbstractState$W6, false, false);
       Iterable<SNode> otherTransitions = Sequence.fromIterable(SNodeOperations.ofConcept(SLinkOperations.getChildren(state, LINKS.contents$Xv1y), CONCEPTS.Transition$cC)).where((it) -> it != t);
       if (Sequence.fromIterable(otherTransitions).isNotEmpty()) {

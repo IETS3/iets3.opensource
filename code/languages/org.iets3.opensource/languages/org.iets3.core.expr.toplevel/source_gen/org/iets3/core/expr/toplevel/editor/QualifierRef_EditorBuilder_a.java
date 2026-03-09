@@ -9,6 +9,7 @@ import jetbrains.mps.openapi.editor.EditorContext;
 import jetbrains.mps.openapi.editor.cells.EditorCell;
 import jetbrains.mps.nodeEditor.cells.EditorCell_Collection;
 import jetbrains.mps.nodeEditor.cellLayout.CellLayout_Indent;
+import jetbrains.mps.baseLanguage.closures.runtime._FunctionTypes;
 import org.jetbrains.mps.openapi.language.SReferenceLink;
 import jetbrains.mps.lang.editor.cellProviders.SReferenceCellProvider;
 import jetbrains.mps.editor.runtime.impl.CellUtil;
@@ -63,10 +64,30 @@ import org.jetbrains.mps.openapi.language.SConcept;
     editorCell.setCellId("Collection_vzw1o1_a");
     editorCell.setBig(true);
     setCellContext(editorCell);
-    editorCell.addEditorCell(createRefCell_0());
+    editorCell.addEditorCell(createCustomFactory_1());
     editorCell.addEditorCell(createConstant_0());
     editorCell.addEditorCell(createRefCell_1());
     return editorCell;
+  }
+  private EditorCell createCustomFactory_0(final EditorContext editorContext, final SNode node) {
+
+
+    final EditorCell cell = createCustomFactory_3();
+    EditorCell editorCell = ((_FunctionTypes._return_P0_E0<EditorCell>) () -> cell).invoke();
+    return editorCell;
+  }
+  private EditorCell createCustomFactory_1() {
+    return createCustomFactory_0(getEditorContext(), getNode());
+  }
+  private EditorCell createCustomFactory_2(final EditorContext editorContext, final SNode node) {
+
+
+    final EditorCell cell = createRefCell_0();
+    EditorCell editorCell = ((_FunctionTypes._return_P0_E0<EditorCell>) () -> cell).invoke();
+    return editorCell;
+  }
+  private EditorCell createCustomFactory_3() {
+    return createCustomFactory_2(getEditorContext(), getNode());
   }
   private EditorCell createRefCell_0() {
     final SReferenceLink referenceLink = LINKS.enum$$Z9W;
@@ -135,6 +156,7 @@ import org.jetbrains.mps.openapi.language.SConcept;
         Style style = new StyleImpl();
         style.set(StyleAttributes.FONT_STYLE, MPSFonts.BOLD_ITALIC);
         style.set(StyleAttributes.TEXT_COLOR, getStyleRegistry().getSimpleColor(MPSColors.darkGray));
+        style.set(StyleAttributes.AUTO_DELETABLE, true);
         editorCell.getStyle().putAll(style);
         editorCell.setSubstituteInfo(new SPropertySubstituteInfo(editorCell, property));
         setCellContext(editorCell);

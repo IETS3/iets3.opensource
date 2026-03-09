@@ -71,7 +71,7 @@ import org.jetbrains.mps.openapi.language.SProperty;
     if (alternationCondition) {
       editorCell = createCustomFactory_1();
     } else {
-      editorCell = createRefNode_0();
+      editorCell = createCustomFactory_5();
     }
     EditorCell bigCell = BigCellUtil.findBigCell(editorCell, getNode());
     if (bigCell != null) {
@@ -139,7 +139,7 @@ import org.jetbrains.mps.openapi.language.SProperty;
     return editorCell;
   }
   private EditorCell createCustomFactory_1() {
-    return createCustomFactory_0(getEditorContext(), myNode);
+    return createCustomFactory_0(getEditorContext(), getNode());
   }
   private EditorCell createRefCell_0() {
     final SReferenceLink referenceLink = LINKS.busType_old$TIk;
@@ -246,7 +246,7 @@ import org.jetbrains.mps.openapi.language.SProperty;
       return editorCell;
     }
     private EditorCell createCustomFactory_3() {
-      return createCustomFactory_2(getEditorContext(), myNode);
+      return createCustomFactory_2(getEditorContext(), getNode());
     }
     private EditorCell createReadOnlyModelAccessor_0() {
       EditorCell_Property editorCell = EditorCell_Property.create(getEditorContext(), new ModelAccessor.ReadOnly() {
@@ -263,15 +263,35 @@ import org.jetbrains.mps.openapi.language.SProperty;
       return editorCell;
     }
   }
+  private EditorCell createCustomFactory_4(final EditorContext editorContext, final SNode node) {
+
+
+    final EditorCell cell = createCustomFactory_7();
+    EditorCell editorCell = ((_FunctionTypes._return_P0_E0<EditorCell>) () -> cell).invoke();
+    return editorCell;
+  }
+  private EditorCell createCustomFactory_5() {
+    return createCustomFactory_4(getEditorContext(), getNode());
+  }
+  private EditorCell createCustomFactory_6(final EditorContext editorContext, final SNode node) {
+
+
+    final EditorCell cell = createRefNode_0();
+    EditorCell editorCell = ((_FunctionTypes._return_P0_E0<EditorCell>) () -> cell).invoke();
+    return editorCell;
+  }
+  private EditorCell createCustomFactory_7() {
+    return createCustomFactory_6(getEditorContext(), getNode());
+  }
   private EditorCell createRefNode_0() {
-    SingleRoleCellProvider provider = new busTypeSingleRoleHandler_uwjeig_a0(myNode, LINKS.busType$HmsX, getEditorContext());
+    SingleRoleCellProvider provider = new busTypeSingleRoleHandler_uwjeig_a0a0(myNode, LINKS.busType$HmsX, getEditorContext());
     return provider.createCell();
   }
-  private static class busTypeSingleRoleHandler_uwjeig_a0 extends SingleRoleCellProvider {
+  private static class busTypeSingleRoleHandler_uwjeig_a0a0 extends SingleRoleCellProvider {
     @NotNull
     private SNode myNode;
 
-    public busTypeSingleRoleHandler_uwjeig_a0(SNode ownerNode, SContainmentLink containmentLink, EditorContext context) {
+    public busTypeSingleRoleHandler_uwjeig_a0a0(SNode ownerNode, SContainmentLink containmentLink, EditorContext context) {
       super(containmentLink, context);
       myNode = ownerNode;
     }

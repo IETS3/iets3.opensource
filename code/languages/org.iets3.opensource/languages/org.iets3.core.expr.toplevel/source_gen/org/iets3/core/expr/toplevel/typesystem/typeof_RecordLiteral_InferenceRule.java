@@ -38,7 +38,7 @@ public class typeof_RecordLiteral_InferenceRule extends AbstractInferenceRule_Ru
       final SNode ttt = typeCheckingContext.typeOf(SLinkOperations.getTarget(rl, LINKS.type$EhVN), "r:8023e40c-26d4-4543-bd46-2ec2c03f861f(org.iets3.core.expr.toplevel.typesystem)", "7849023854693506613", true);
       typeCheckingContext.whenConcrete(ttt, () -> {
         if (SNodeOperations.isInstanceOf(typeCheckingContext.getExpandedNode(ttt), CONCEPTS.IRecordType$ka)) {
-          SNode rt = SNodeOperations.cast(typeCheckingContext.getExpandedNode(ttt), CONCEPTS.IRecordType$ka);
+          SNode rt = SNodeOperations.as(typeCheckingContext.getExpandedNode(ttt), CONCEPTS.IRecordType$ka);
           {
             SNode _nodeToCheck_1029348928467 = rl;
             EquationInfo _info_12389875345 = new EquationInfo(_nodeToCheck_1029348928467, null, "r:8023e40c-26d4-4543-bd46-2ec2c03f861f(org.iets3.core.expr.toplevel.typesystem)", "8811147530085342312", 0, null);

@@ -14,13 +14,125 @@
   <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1070475587102:jetbrains.mps.baseLanguage.structure.SuperConstructorInvocation" />
   <root>
     <file name="IntentionsDescriptor.java">
-      <unit at="18,0,112,0" name="org.iets3.core.expr.simpleTypes.intentions.IntentionsDescriptor" />
+      <unit at="18,0,120,0" name="org.iets3.core.expr.simpleTypes.intentions.IntentionsDescriptor" />
+    </file>
+  </root>
+  <root nodeRef="r:3b39cd50-0a79-4fd4-9364-96f1b53f89fa(org.iets3.core.expr.simpleTypes.intentions)/2889875685512181776">
+    <file name="IntentionsDescriptor.java">
+      <node id="2889875685512181776" at="90,47,91,71" concept="2" />
+      <node id="2889875685512181776" at="114,58,115,58" concept="2" />
+    </file>
+    <file name="SplitStringIntoConcatenation_Intention.java">
+      <node id="2889875685512181776" at="26,0,27,0" concept="3" trace="myCachedExecutable" />
+      <node id="2889875685512181776" at="28,51,29,157" concept="11" />
+      <node id="2889875685512181776" at="33,35,34,42" concept="7" />
+      <node id="2889875685512181776" at="38,35,39,17" concept="7" />
+      <node id="2889875685512181776" at="43,37,44,105" concept="2" />
+      <node id="2889875685512181776" at="45,5,46,30" concept="7" />
+      <node id="2889875685512183040" at="53,87,54,47" concept="7" />
+      <node id="2889875685512226429" at="58,78,59,88" concept="6" />
+      <node id="2889875685512230135" at="59,88,60,50" concept="6" />
+      <node id="2889875685512242181" at="60,50,61,170" concept="6" />
+      <node id="2889875685512281419" at="61,170,62,167" concept="6" />
+      <node id="2889875685512308358" at="62,167,63,69" concept="6" />
+      <node id="2889875685512317423" at="63,69,64,63" concept="2" />
+      <node id="2889875685512181776" at="69,55,70,21" concept="7" />
+      <node id="2889875685512181776" at="71,7,72,18" concept="7" />
+      <node id="2889875685512208557" at="75,93,76,76" concept="7" />
+      <node id="2889875685512181776" at="81,48,82,57" concept="7" />
+      <node id="2889875685512313258" at="86,80,87,74" concept="6" />
+      <node id="2889875685512313258" at="88,5,89,85" concept="6" />
+      <node id="2889875685512313258" at="89,85,90,43" concept="2" />
+      <node id="2889875685512313258" at="92,5,93,86" concept="6" />
+      <node id="2889875685512313258" at="93,86,94,43" concept="2" />
+      <node id="2889875685512313258" at="95,5,96,26" concept="7" />
+      <node id="2889875685512181776" at="100,0,101,0" concept="9" trace="value$zwlK" />
+      <node id="2889875685512181776" at="104,0,105,0" concept="9" trace="PlusExpression$mx" />
+      <node id="2889875685512181776" at="105,0,106,0" concept="9" trace="StringLiteral$By" />
+      <node id="2889875685512181776" at="109,0,110,0" concept="9" trace="left$zxUa" />
+      <node id="2889875685512181776" at="110,0,111,0" concept="9" trace="right$zBjx" />
+      <node id="2889875685512181776" at="49,0,51,0" concept="1" trace="IntentionImplementation#()V" />
+      <node id="2889875685512181776" at="28,0,31,0" concept="1" trace="SplitStringIntoConcatenation_Intention#()V" />
+      <node id="2889875685512181776" at="42,99,45,5" concept="4" />
+      <node id="2889875685512181776" at="68,86,71,7" concept="4" />
+      <node id="2889875685512181776" at="75,0,78,0" concept="5" trace="isApplicableToNode#(Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/openapi/editor/EditorContext;)Z" />
+      <node id="2889875685512181776" at="32,0,36,0" concept="5" trace="getPresentation#()Ljava/lang/String;" />
+      <node id="2889875685512181776" at="37,0,41,0" concept="5" trace="isSurroundWith#()Z" />
+      <node id="2889875685512181776" at="52,0,56,0" concept="5" trace="getDescription#(Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/openapi/editor/EditorContext;)Ljava/lang/String;" />
+      <node id="2889875685512181776" at="80,0,84,0" concept="5" trace="getDescriptor#()Ljetbrains/mps/openapi/intentions/IntentionDescriptor;" />
+      <node id="2889875685512313258" at="87,74,91,5" concept="0" />
+      <node id="2889875685512313258" at="91,5,95,5" concept="0" />
+      <node id="2889875685512181776" at="42,0,48,0" concept="5" trace="instances#(Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/openapi/editor/EditorContext;)Ljava/util/Collection;" />
+      <node id="2889875685512181776" at="67,0,74,0" concept="5" trace="isApplicable#(Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/openapi/editor/EditorContext;)Z" />
+      <node id="2889875685512181776" at="57,0,66,0" concept="5" trace="execute#(Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/openapi/editor/EditorContext;)V" />
+      <node id="2889875685512313258" at="86,0,98,0" concept="10" trace="createPlusExpression_336h86_a0e0a#(Ljava/lang/String;Ljava/lang/String;)Lorg/jetbrains/mps/openapi/model/SNode;" />
+      <scope id="2889875685512181776" at="49,38,49,38" />
+      <scope id="2889875685512181776" at="28,51,29,157" />
+      <scope id="2889875685512181776" at="33,35,34,42" />
+      <scope id="2889875685512181776" at="38,35,39,17" />
+      <scope id="2889875685512181776" at="43,37,44,105" />
+      <scope id="2889875685512181778" at="53,87,54,47" />
+      <scope id="2889875685512181776" at="69,55,70,21" />
+      <scope id="2889875685512184595" at="75,93,76,76" />
+      <scope id="2889875685512181776" at="81,48,82,57" />
+      <scope id="2889875685512181776" at="49,0,51,0" />
+      <scope id="2889875685512313258" at="88,5,90,43">
+        <var name="n1" id="2889875685512313258" />
+      </scope>
+      <scope id="2889875685512313258" at="92,5,94,43">
+        <var name="n2" id="2889875685512313258" />
+      </scope>
+      <scope id="2889875685512181776" at="28,0,31,0" />
+      <scope id="2889875685512181776" at="75,0,78,0">
+        <var name="editorContext" id="2889875685512181776" />
+        <var name="node" id="2889875685512181776" />
+      </scope>
+      <scope id="2889875685512181776" at="32,0,36,0" />
+      <scope id="2889875685512181776" at="37,0,41,0" />
+      <scope id="2889875685512181776" at="42,99,46,30" />
+      <scope id="2889875685512181776" at="52,0,56,0">
+        <var name="editorContext" id="2889875685512181776" />
+        <var name="node" id="2889875685512181776" />
+      </scope>
+      <scope id="2889875685512181776" at="68,86,72,18" />
+      <scope id="2889875685512181776" at="80,0,84,0" />
+      <scope id="2889875685512181776" at="42,0,48,0">
+        <var name="context" id="2889875685512181776" />
+        <var name="node" id="2889875685512181776" />
+      </scope>
+      <scope id="2889875685512181780" at="58,78,64,63">
+        <var name="caretPosition" id="2889875685512230138" />
+        <var name="cell" id="2889875685512226430" />
+        <var name="l" id="2889875685512242184" />
+        <var name="plusExpression" id="2889875685512308361" />
+        <var name="r" id="2889875685512281422" />
+      </scope>
+      <scope id="2889875685512181776" at="67,0,74,0">
+        <var name="editorContext" id="2889875685512181776" />
+        <var name="node" id="2889875685512181776" />
+      </scope>
+      <scope id="2889875685512181776" at="57,0,66,0">
+        <var name="editorContext" id="2889875685512181776" />
+        <var name="node" id="2889875685512181776" />
+      </scope>
+      <scope id="2889875685512313258" at="86,80,96,26">
+        <var name="n0" id="2889875685512313258" />
+      </scope>
+      <scope id="2889875685512313258" at="86,0,98,0">
+        <var name="p0" id="2889875685512313258" />
+        <var name="p1" id="2889875685512313258" />
+      </scope>
+      <unit id="2889875685512181776" at="99,0,102,0" name="org.iets3.core.expr.simpleTypes.intentions.SplitStringIntoConcatenation_Intention$PROPS" />
+      <unit id="2889875685512181776" at="103,0,107,0" name="org.iets3.core.expr.simpleTypes.intentions.SplitStringIntoConcatenation_Intention$CONCEPTS" />
+      <unit id="2889875685512181776" at="108,0,112,0" name="org.iets3.core.expr.simpleTypes.intentions.SplitStringIntoConcatenation_Intention$LINKS" />
+      <unit id="2889875685512181776" at="48,0,86,0" name="org.iets3.core.expr.simpleTypes.intentions.SplitStringIntoConcatenation_Intention$IntentionImplementation" />
+      <unit id="2889875685512181776" at="25,0,113,0" name="org.iets3.core.expr.simpleTypes.intentions.SplitStringIntoConcatenation_Intention" />
     </file>
   </root>
   <root nodeRef="r:3b39cd50-0a79-4fd4-9364-96f1b53f89fa(org.iets3.core.expr.simpleTypes.intentions)/3209299898989139551">
     <file name="IntentionsDescriptor.java">
       <node id="3209299898989139551" at="51,47,52,70" concept="2" />
-      <node id="3209299898989139551" at="98,36,99,56" concept="2" />
+      <node id="3209299898989139551" at="105,36,106,56" concept="2" />
     </file>
     <file name="wrapWithPrecisionConversion_Intention.java">
       <node id="3209299898989139551" at="30,0,31,0" concept="3" trace="myCachedExecutable" />
@@ -103,7 +215,7 @@
   <root nodeRef="r:3b39cd50-0a79-4fd4-9364-96f1b53f89fa(org.iets3.core.expr.simpleTypes.intentions)/3220811986924913313">
     <file name="IntentionsDescriptor.java">
       <node id="3220811986924913313" at="72,47,73,59" concept="2" />
-      <node id="3220811986924913313" at="102,41,103,45" concept="2" />
+      <node id="3220811986924913313" at="109,41,110,45" concept="2" />
     </file>
     <file name="toggleExcludeMin_Intention.java">
       <node id="3220811986924913313" at="21,0,22,0" concept="3" trace="myCachedExecutable" />
@@ -166,7 +278,7 @@
   <root nodeRef="r:3b39cd50-0a79-4fd4-9364-96f1b53f89fa(org.iets3.core.expr.simpleTypes.intentions)/3220811986925040968">
     <file name="IntentionsDescriptor.java">
       <node id="3220811986925040968" at="73,59,74,59" concept="2" />
-      <node id="3220811986925040968" at="103,45,104,45" concept="2" />
+      <node id="3220811986925040968" at="110,45,111,45" concept="2" />
     </file>
     <file name="toggleExcludeMax_Intention.java">
       <node id="3220811986925040968" at="21,0,22,0" concept="3" trace="myCachedExecutable" />
@@ -229,7 +341,7 @@
   <root nodeRef="r:3b39cd50-0a79-4fd4-9364-96f1b53f89fa(org.iets3.core.expr.simpleTypes.intentions)/3314379818047315216">
     <file name="IntentionsDescriptor.java">
       <node id="3314379818047315216" at="82,47,83,51" concept="2" />
-      <node id="3314379818047315216" at="96,53,97,37" concept="2" />
+      <node id="3314379818047315216" at="103,53,104,37" concept="2" />
     </file>
     <file name="addRange_Intention.java">
       <node id="3314379818047315216" at="21,0,22,0" concept="3" trace="myCachedExecutable" />
@@ -302,7 +414,7 @@
   <root nodeRef="r:3b39cd50-0a79-4fd4-9364-96f1b53f89fa(org.iets3.core.expr.simpleTypes.intentions)/3314379818047334427">
     <file name="IntentionsDescriptor.java">
       <node id="3314379818047334427" at="83,51,84,50" concept="2" />
-      <node id="3314379818047334427" at="97,37,98,36" concept="2" />
+      <node id="3314379818047334427" at="104,37,105,36" concept="2" />
     </file>
     <file name="addPrec_Intention.java">
       <node id="3314379818047334427" at="23,0,24,0" concept="3" trace="myCachedExecutable" />
@@ -381,7 +493,7 @@
   <root nodeRef="r:3b39cd50-0a79-4fd4-9364-96f1b53f89fa(org.iets3.core.expr.simpleTypes.intentions)/4095553279640250754">
     <file name="IntentionsDescriptor.java">
       <node id="4095553279640250754" at="44,47,45,60" concept="2" />
-      <node id="4095553279640250754" at="99,56,100,46" concept="2" />
+      <node id="4095553279640250754" at="106,56,107,46" concept="2" />
     </file>
     <file name="makeLimitFromCast_Intention.java">
       <node id="4095553279640250754" at="23,0,24,0" concept="3" trace="myCachedExecutable" />
@@ -451,7 +563,7 @@
   <root nodeRef="r:3b39cd50-0a79-4fd4-9364-96f1b53f89fa(org.iets3.core.expr.simpleTypes.intentions)/7023368003705196013">
     <file name="IntentionsDescriptor.java">
       <node id="7023368003705196013" at="65,47,66,63" concept="2" />
-      <node id="7023368003705196013" at="104,45,105,49" concept="2" />
+      <node id="7023368003705196013" at="111,45,112,49" concept="2" />
     </file>
     <file name="toggleNumberHexValue_Intention.java">
       <node id="7023368003705196013" at="24,0,25,0" concept="3" trace="myCachedExecutable" />
@@ -532,7 +644,7 @@
   <root nodeRef="r:3b39cd50-0a79-4fd4-9364-96f1b53f89fa(org.iets3.core.expr.simpleTypes.intentions)/7023368003706206137">
     <file name="IntentionsDescriptor.java">
       <node id="7023368003706206137" at="74,59,75,71" concept="2" />
-      <node id="7023368003706206137" at="105,49,106,57" concept="2" />
+      <node id="7023368003706206137" at="112,49,113,57" concept="2" />
     </file>
     <file name="toggleNumberRangeHexMinValue_Intention.java">
       <node id="7023368003706206137" at="26,0,27,0" concept="3" trace="myCachedExecutable" />
@@ -626,7 +738,7 @@
   <root nodeRef="r:3b39cd50-0a79-4fd4-9364-96f1b53f89fa(org.iets3.core.expr.simpleTypes.intentions)/7023368003706245990">
     <file name="IntentionsDescriptor.java">
       <node id="7023368003706245990" at="75,71,76,71" concept="2" />
-      <node id="7023368003706245990" at="106,57,107,58" concept="2" />
+      <node id="7023368003706245990" at="113,57,114,58" concept="2" />
     </file>
     <file name="toggleNumberRangeHexMaxValue_Intention.java">
       <node id="7023368003706245990" at="26,0,27,0" concept="3" trace="myCachedExecutable" />
@@ -720,7 +832,7 @@
   <root nodeRef="r:3b39cd50-0a79-4fd4-9364-96f1b53f89fa(org.iets3.core.expr.simpleTypes.intentions)/9142018459486645396">
     <file name="IntentionsDescriptor.java">
       <node id="9142018459486645396" at="58,47,59,56" concept="2" />
-      <node id="9142018459486645396" at="100,46,101,42" concept="2" />
+      <node id="9142018459486645396" at="107,46,108,42" concept="2" />
     </file>
     <file name="changeIntoAlt_Intention.java">
       <node id="9142018459486645396" at="24,0,25,0" concept="3" trace="myCachedExecutable" />
@@ -826,7 +938,7 @@
   <root nodeRef="r:3b39cd50-0a79-4fd4-9364-96f1b53f89fa(org.iets3.core.expr.simpleTypes.intentions)/9142018459486681249">
     <file name="IntentionsDescriptor.java">
       <node id="9142018459486681249" at="37,47,38,55" concept="2" />
-      <node id="9142018459486681249" at="101,42,102,41" concept="2" />
+      <node id="9142018459486681249" at="108,42,109,41" concept="2" />
     </file>
     <file name="changeIntoIf_Intention.java">
       <node id="9142018459486681249" at="25,0,26,0" concept="3" trace="myCachedExecutable" />

@@ -65,7 +65,7 @@ public class typeof_LookupTable_InferenceRule extends AbstractInferenceRule_Runt
           {
             SNode _nodeToCheck_1029348928467 = lookupTable;
             EquationInfo _info_12389875345 = new EquationInfo(_nodeToCheck_1029348928467, null, "r:817b82e1-1691-4f71-96ee-c3e7b8f0dc52(org.iets3.core.expr.lookup.typesystem)", "5860825012165095634", 0, null);
-            typeCheckingContext.createEquation((SNode) typeCheckingContext.typeOf(_nodeToCheck_1029348928467, "r:817b82e1-1691-4f71-96ee-c3e7b8f0dc52(org.iets3.core.expr.lookup.typesystem)", "5860825012165094679", true), (SNode) createLookupTableType_u8k8v2_a1a0c0a0b0a1a0a9a1(SNodeOperations.copyNode(SLinkOperations.getTarget(lookupTable, LINKS.rowType$zr7p)), SNodeOperations.copyNode(SLinkOperations.getTarget(lookupTable, LINKS.colType$zsiu)), SNodeOperations.cast(typeCheckingContext.getExpandedNode(concreteResultType), CONCEPTS.Type$WK)), _info_12389875345);
+            typeCheckingContext.createEquation((SNode) typeCheckingContext.typeOf(_nodeToCheck_1029348928467, "r:817b82e1-1691-4f71-96ee-c3e7b8f0dc52(org.iets3.core.expr.lookup.typesystem)", "5860825012165094679", true), (SNode) createLookupTableType_u8k8v2_a1a0c0a0b0a1a0a9a1(SNodeOperations.copyNode(SLinkOperations.getTarget(lookupTable, LINKS.rowType$zr7p)), SNodeOperations.copyNode(SLinkOperations.getTarget(lookupTable, LINKS.colType$zsiu)), SNodeOperations.as(typeCheckingContext.getExpandedNode(concreteResultType), CONCEPTS.Type$WK)), _info_12389875345);
           }
         }, "r:817b82e1-1691-4f71-96ee-c3e7b8f0dc52(org.iets3.core.expr.lookup.typesystem)", "1678583990201701742", false, false);
       }

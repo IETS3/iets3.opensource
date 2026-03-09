@@ -34,9 +34,9 @@ public class typeof_BoundsExpression_InferenceRule extends AbstractInferenceRule
               final SNode upperType = typeCheckingContext.typeOf(SLinkOperations.getTarget(be, LINKS.upper$yFCO), "r:050f6d52-a81b-4b31-9a1c-531c1a04708e(org.iets3.core.expr.simpleTypes.typesystem)", "575162706484848238", true);
               typeCheckingContext.whenConcrete(upperType, () -> {
                 if (SNodeOperations.isInstanceOf(typeCheckingContext.getExpandedNode(exprType), CONCEPTS.NumberType$n) && SNodeOperations.isInstanceOf(typeCheckingContext.getExpandedNode(lowerType), CONCEPTS.NumberType$n) && SNodeOperations.isInstanceOf(typeCheckingContext.getExpandedNode(upperType), CONCEPTS.NumberType$n)) {
-                  SNode nt = SNodeOperations.copyNode(SNodeOperations.cast(typeCheckingContext.getExpandedNode(exprType), CONCEPTS.NumberType$n));
-                  SNode lowerLT = SNodeOperations.cast(typeCheckingContext.getExpandedNode(lowerType), CONCEPTS.NumberType$n);
-                  SNode upperLT = SNodeOperations.cast(typeCheckingContext.getExpandedNode(upperType), CONCEPTS.NumberType$n);
+                  SNode nt = SNodeOperations.copyNode(SNodeOperations.as(typeCheckingContext.getExpandedNode(exprType), CONCEPTS.NumberType$n));
+                  SNode lowerLT = SNodeOperations.as(typeCheckingContext.getExpandedNode(lowerType), CONCEPTS.NumberType$n);
+                  SNode upperLT = SNodeOperations.as(typeCheckingContext.getExpandedNode(upperType), CONCEPTS.NumberType$n);
                   if ((int) NumberType__BehaviorDescriptor.precision_id19PglA20ASE.invoke(lowerLT) != (int) NumberType__BehaviorDescriptor.precision_id19PglA20ASE.invoke(upperLT)) {
                     {
                       final MessageTarget errorTarget = new NodeMessageTarget();

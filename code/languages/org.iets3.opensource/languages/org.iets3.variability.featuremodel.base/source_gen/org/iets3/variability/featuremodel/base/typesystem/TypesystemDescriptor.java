@@ -42,10 +42,6 @@ public class TypesystemDescriptor extends BaseHelginsDescriptor {
       this.myInferenceRules.add(inferenceRule);
     }
     {
-      InferenceRule_Runtime inferenceRule = new typeof_FeatureAttributeAssignment_InferenceRule();
-      this.myInferenceRules.add(inferenceRule);
-    }
-    {
       InferenceRule_Runtime inferenceRule = new typeof_FeatureAttributeDotTarget_InferenceRule();
       this.myInferenceRules.add(inferenceRule);
     }
@@ -60,14 +56,6 @@ public class TypesystemDescriptor extends BaseHelginsDescriptor {
     {
       InferenceRule_Runtime inferenceRule = new typeof_UsingParamRefDotTarget_InferenceRule();
       this.myInferenceRules.add(inferenceRule);
-    }
-    {
-      NonTypesystemRule_Runtime nonTypesystemRule = new EnforceSubFeatureDecisions_NonTypesystemRule();
-      this.myNonTypesystemRules.add(nonTypesystemRule);
-    }
-    {
-      NonTypesystemRule_Runtime nonTypesystemRule = new checkFeatureModelConfigurationInitialSolverRun_NonTypesystemRule();
-      this.myNonTypesystemRules.add(nonTypesystemRule);
     }
     {
       NonTypesystemRule_Runtime nonTypesystemRule = new check_AbstractFeatureModel_NonTypesystemRule();
@@ -87,10 +75,6 @@ public class TypesystemDescriptor extends BaseHelginsDescriptor {
     }
     {
       NonTypesystemRule_Runtime nonTypesystemRule = new check_FeatureRefExpr_NonTypesystemRule();
-      this.myNonTypesystemRules.add(nonTypesystemRule);
-    }
-    {
-      NonTypesystemRule_Runtime nonTypesystemRule = new check_FeatureWithCardinalityConfiguration_NonTypesystemRule();
       this.myNonTypesystemRules.add(nonTypesystemRule);
     }
     {

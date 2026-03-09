@@ -33,10 +33,10 @@ public final class LocalVarDeclExpr__BehaviorDescriptor extends BaseBHDescriptor
   public static final SMethod<String> getErrorMessage_idZYPG76w9Fc = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("getErrorMessage").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(1152594682400774860L).languageId(0xb66a309a6e1a7290L, 0xcfaa4966b7d54b69L).build2(SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""), SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""));
   public static final SMethod<String> getMatchingText_id69Qfsw3InJX = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("getMatchingText").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(7094926192234036221L).languageId(0x9b92103b95ca8c0cL, 0xceab519525ea4f22L).build2(SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""));
   public static final SMethod<String> getVisibleMatchingText_id69Qfsw3Ipre = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("getVisibleMatchingText").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(7094926192234043086L).languageId(0x9b92103b95ca8c0cL, 0xceab519525ea4f22L).build2(SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""));
-  public static final SMethod<Boolean> allowUmlaute_id5YygIlbih$m = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("allowUmlaute").modifiers(9, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(6891143932408305942L).languageId(0xbd9c05c0f8725a35L, 0x7b68d745a7b848b9L).build2();
+  public static final SMethod<Boolean> overrideDefaultAllowUmlaute_id5D8v3P4jYKp = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("overrideDefaultUmlaute").modifiers(9, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(6505586264317619225L).languageId(0xbd9c05c0f8725a35L, 0x7b68d745a7b848b9L).build2();
   public static final SMethod<String> allowsEffectForNode_idORfz$DS6Ap = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("allowsEffectForNode").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(952298261448780185L).languageId(0xb66a309a6e1a7290L, 0xcfaa4966b7d54b69L).build2(SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""));
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(renderReadable_id4Y0vh0cfqjE, getNodeFromWhichToDeriveType_id5aHkq2w4m8L, getErrorMessage_idZYPG76w9Fc, getMatchingText_id69Qfsw3InJX, getVisibleMatchingText_id69Qfsw3Ipre, allowUmlaute_id5YygIlbih$m, allowsEffectForNode_idORfz$DS6Ap);
+  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(renderReadable_id4Y0vh0cfqjE, getNodeFromWhichToDeriveType_id5aHkq2w4m8L, getErrorMessage_idZYPG76w9Fc, getMatchingText_id69Qfsw3InJX, getVisibleMatchingText_id69Qfsw3Ipre, overrideDefaultAllowUmlaute_id5D8v3P4jYKp, allowsEffectForNode_idORfz$DS6Ap);
 
   private static void ___init___(@NotNull SNode __thisNode__) {
   }
@@ -68,7 +68,7 @@ public final class LocalVarDeclExpr__BehaviorDescriptor extends BaseBHDescriptor
   /*package*/ static String getVisibleMatchingText_id69Qfsw3Ipre(@NotNull SNode __thisNode__, SNode reference) {
     return SPropertyOperations.getString(__thisNode__, PROPS.name$MnvL);
   }
-  /*package*/ static boolean allowUmlaute_id5YygIlbih$m(@NotNull SAbstractConcept __thisConcept__) {
+  /*package*/ static boolean overrideDefaultAllowUmlaute_id5D8v3P4jYKp(@NotNull SAbstractConcept __thisConcept__) {
     return true;
   }
   /*package*/ static String allowsEffectForNode_idORfz$DS6Ap(@NotNull SNode __thisNode__, SNode n) {
@@ -115,7 +115,7 @@ public final class LocalVarDeclExpr__BehaviorDescriptor extends BaseBHDescriptor
     }
     switch (methodIndex) {
       case 5:
-        return (T) ((Boolean) allowUmlaute_id5YygIlbih$m(concept));
+        return (T) ((Boolean) overrideDefaultAllowUmlaute_id5D8v3P4jYKp(concept));
       default:
         throw new BHMethodNotFoundException(this, method);
     }

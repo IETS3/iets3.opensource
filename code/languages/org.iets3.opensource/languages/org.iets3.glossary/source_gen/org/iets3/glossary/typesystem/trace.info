@@ -25,7 +25,7 @@
     </file>
     <file name="check_TermRefTermAttribute_NonTypesystemRule.java">
       <node id="7551038907536692793" at="31,102,32,67" concept="5" />
-      <node id="7551038907536709406" at="32,67,33,110" concept="5" />
+      <node id="7551038907536709406" at="32,67,33,108" concept="5" />
       <node id="7551038907536716005" at="35,9,36,68" concept="5" />
       <node id="7551038907536716005" at="36,68,37,385" concept="5" />
       <node id="7551038907536775138" at="38,11,39,167" concept="5" />
@@ -54,7 +54,7 @@
       <node id="7551038907536776453" at="47,410,53,11" concept="0" />
       <node id="7551038907536716005" at="34,295,44,9" concept="0" />
       <node id="7551038907536717098" at="44,9,54,9" concept="0" />
-      <node id="7551038907536692971" at="33,110,55,7" concept="3" />
+      <node id="7551038907536692971" at="33,108,55,7" concept="3" />
       <node id="7551038907536691864" at="30,115,56,5" concept="3" />
       <node id="7551038907536691771" at="30,0,58,0" concept="4" trace="applyRule#(Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/typesystem/inference/TypeCheckingContext;Ljetbrains/mps/lang/typesystem/runtime/IsApplicableStatus;)V" />
       <scope id="7551038907536691771" at="28,57,28,57" />
@@ -104,7 +104,7 @@
       <node id="7551038907536775970" at="20,44,21,32" concept="6" />
       <node id="7551038907536765543" at="23,35,24,116" concept="5" />
       <node id="7551038907536765669" at="24,116,25,166" concept="2" />
-      <node id="7551038907536771617" at="25,166,26,202" concept="2" />
+      <node id="7551038907536771617" at="25,166,26,200" concept="2" />
       <node id="7551038907536765081" at="30,0,31,0" concept="7" trace="attrs$r7h3" />
       <node id="7551038907536765081" at="31,0,32,0" concept="7" trace="term$gAJS" />
       <node id="7551038907536765081" at="35,0,36,0" concept="7" trace="GlossaryTerm$tH" />
@@ -117,7 +117,7 @@
       <scope id="7551038907536765081" at="20,0,23,0">
         <var name="node" id="7551038907536765081" />
       </scope>
-      <scope id="7551038907536765083" at="23,35,26,202">
+      <scope id="7551038907536765083" at="23,35,26,200">
         <var name="copy" id="7551038907536765544" />
       </scope>
       <scope id="7551038907536765081" at="23,0,28,0">

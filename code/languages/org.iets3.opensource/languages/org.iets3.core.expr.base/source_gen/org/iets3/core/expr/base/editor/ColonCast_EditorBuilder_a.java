@@ -9,6 +9,7 @@ import jetbrains.mps.openapi.editor.EditorContext;
 import jetbrains.mps.openapi.editor.cells.EditorCell;
 import jetbrains.mps.nodeEditor.cells.EditorCell_Collection;
 import jetbrains.mps.nodeEditor.cellLayout.CellLayout_Indent;
+import jetbrains.mps.baseLanguage.closures.runtime._FunctionTypes;
 import jetbrains.mps.lang.editor.cellProviders.SingleRoleCellProvider;
 import org.jetbrains.mps.openapi.language.SContainmentLink;
 import jetbrains.mps.openapi.editor.cells.CellActionType;
@@ -17,7 +18,6 @@ import jetbrains.mps.openapi.editor.cells.DefaultSubstituteInfo;
 import jetbrains.mps.nodeEditor.cellMenu.SEmptyContainmentSubstituteInfo;
 import jetbrains.mps.nodeEditor.cellMenu.SChildSubstituteInfo;
 import jetbrains.mps.openapi.editor.menus.transformation.SNodeLocation;
-import jetbrains.mps.baseLanguage.closures.runtime._FunctionTypes;
 import org.jetbrains.mps.openapi.language.SAbstractConcept;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
 import com.mbeddr.mpsutil.grammarcells.runtime.ConstantSubstituteInfo;
@@ -33,6 +33,7 @@ import jetbrains.mps.editor.runtime.selection.SelectionUtil;
 import jetbrains.mps.openapi.editor.selection.SelectionManager;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SConceptOperations;
 import jetbrains.mps.nodeEditor.cells.EditorCell_Constant;
+import org.iets3.core.expr.base.plugin.EditorCustomizationConfigHelper;
 import jetbrains.mps.openapi.editor.style.Style;
 import jetbrains.mps.editor.runtime.style.StyleImpl;
 import com.mbeddr.mpsutil.grammarcells.runtime.GrammarCellsUtil;
@@ -64,20 +65,40 @@ import org.jetbrains.mps.openapi.language.SConcept;
     editorCell.setCellId("Collection_bkbqhz_a");
     editorCell.setBig(true);
     setCellContext(editorCell);
-    editorCell.addEditorCell(createRefNode_0());
     editorCell.addEditorCell(createCustomFactory_1());
-    editorCell.addEditorCell(createCustomFactory_7());
+    editorCell.addEditorCell(createCustomFactory_5());
+    editorCell.addEditorCell(createCustomFactory_11());
     return editorCell;
   }
+  private EditorCell createCustomFactory_0(final EditorContext editorContext, final SNode node) {
+
+
+    final EditorCell cell = createCustomFactory_3();
+    EditorCell editorCell = ((_FunctionTypes._return_P0_E0<EditorCell>) () -> cell).invoke();
+    return editorCell;
+  }
+  private EditorCell createCustomFactory_1() {
+    return createCustomFactory_0(getEditorContext(), getNode());
+  }
+  private EditorCell createCustomFactory_2(final EditorContext editorContext, final SNode node) {
+
+
+    final EditorCell cell = createRefNode_0();
+    EditorCell editorCell = ((_FunctionTypes._return_P0_E0<EditorCell>) () -> cell).invoke();
+    return editorCell;
+  }
+  private EditorCell createCustomFactory_3() {
+    return createCustomFactory_2(getEditorContext(), getNode());
+  }
   private EditorCell createRefNode_0() {
-    SingleRoleCellProvider provider = new exprSingleRoleHandler_bkbqhz_a0(myNode, LINKS.expr$CW3E, getEditorContext());
+    SingleRoleCellProvider provider = new exprSingleRoleHandler_bkbqhz_a0a0(myNode, LINKS.expr$CW3E, getEditorContext());
     return provider.createCell();
   }
-  private static class exprSingleRoleHandler_bkbqhz_a0 extends SingleRoleCellProvider {
+  private static class exprSingleRoleHandler_bkbqhz_a0a0 extends SingleRoleCellProvider {
     @NotNull
     private SNode myNode;
 
-    public exprSingleRoleHandler_bkbqhz_a0(SNode ownerNode, SContainmentLink containmentLink, EditorContext context) {
+    public exprSingleRoleHandler_bkbqhz_a0a0(SNode ownerNode, SContainmentLink containmentLink, EditorContext context) {
       super(containmentLink, context);
       myNode = ownerNode;
     }
@@ -124,10 +145,10 @@ import org.jetbrains.mps.openapi.language.SConcept;
       return "<no expr>";
     }
   }
-  private EditorCell createCustomFactory_0(final EditorContext editorContext, final SNode node) {
+  private EditorCell createCustomFactory_4(final EditorContext editorContext, final SNode node) {
 
 
-    final EditorCell cell = createCustomFactory_3();
+    final EditorCell cell = createCustomFactory_7();
     EditorCell editorCell = ((_FunctionTypes._return_P0_E0<EditorCell>) () -> {
       final SAbstractConcept subconcept = SNodeOperations.getConcept(myNode);
       cell.setSubstituteInfo(new ConstantSubstituteInfo(getEditorContext(), myNode) {
@@ -148,13 +169,13 @@ import org.jetbrains.mps.openapi.language.SConcept;
     }).invoke();
     return editorCell;
   }
-  private EditorCell createCustomFactory_1() {
-    return createCustomFactory_0(getEditorContext(), myNode);
+  private EditorCell createCustomFactory_5() {
+    return createCustomFactory_4(getEditorContext(), getNode());
   }
-  private EditorCell createCustomFactory_2(final EditorContext editorContext, final SNode node) {
+  private EditorCell createCustomFactory_6(final EditorContext editorContext, final SNode node) {
 
 
-    final EditorCell cell = createCustomFactory_5();
+    final EditorCell cell = createCustomFactory_9();
     EditorCell editorCell = ((_FunctionTypes._return_P0_E0<EditorCell>) () -> {
       cell.setAction(CellActionType.DELETE, new CellActionWithReadAccess() {
         public void execute(EditorContext editorContext) {
@@ -206,10 +227,10 @@ import org.jetbrains.mps.openapi.language.SConcept;
     }).invoke();
     return editorCell;
   }
-  private EditorCell createCustomFactory_3() {
-    return createCustomFactory_2(getEditorContext(), myNode);
+  private EditorCell createCustomFactory_7() {
+    return createCustomFactory_6(getEditorContext(), getNode());
   }
-  private EditorCell createCustomFactory_4(final EditorContext editorContext, final SNode node) {
+  private EditorCell createCustomFactory_8(final EditorContext editorContext, final SNode node) {
 
 
     final EditorCell cell = createConstant_0();
@@ -218,17 +239,21 @@ import org.jetbrains.mps.openapi.language.SConcept;
       EditorCell_Constant constant = ((EditorCell_Constant) cell);
       String text = new Object() {
         public String query(SAbstractConcept subconcept) {
-          return SConceptOperations.conceptAlias(subconcept);
+          return EditorCustomizationConfigHelper.getConfig().getConstantText(EditorCustomizationConfigHelper.getIdentifier(CONCEPTS.ColonCast$8S), subconcept);
         }
       }.query(subconcept);
       constant.setText(text);
       constant.setOriginalText(text);
       return cell;
     }).invoke();
+    Style style = new StyleImpl();
+    style.set(StyleAttributes.PUNCTUATION_LEFT, true);
+    style.set(StyleAttributes.PUNCTUATION_RIGHT, true);
+    editorCell.getStyle().putAll(style);
     return editorCell;
   }
-  private EditorCell createCustomFactory_5() {
-    return createCustomFactory_4(getEditorContext(), myNode);
+  private EditorCell createCustomFactory_9() {
+    return createCustomFactory_8(getEditorContext(), getNode());
   }
   private EditorCell createConstant_0() {
     EditorCell_Constant editorCell = new EditorCell_Constant(getEditorContext(), myNode, "");
@@ -240,7 +265,7 @@ import org.jetbrains.mps.openapi.language.SConcept;
     editorCell.setDefaultText("");
     return editorCell;
   }
-  private EditorCell createCustomFactory_6(final EditorContext editorContext, final SNode node) {
+  private EditorCell createCustomFactory_10(final EditorContext editorContext, final SNode node) {
 
 
     final EditorCell cell = createRefNode_1();
@@ -331,8 +356,8 @@ import org.jetbrains.mps.openapi.language.SConcept;
     }).invoke();
     return editorCell;
   }
-  private EditorCell createCustomFactory_7() {
-    return createCustomFactory_6(getEditorContext(), myNode);
+  private EditorCell createCustomFactory_11() {
+    return createCustomFactory_10(getEditorContext(), getNode());
   }
   private EditorCell createRefNode_1() {
     SingleRoleCellProvider provider = new typeSingleRoleHandler_bkbqhz_a2a(myNode, LINKS.type$EhVN, getEditorContext());
@@ -396,6 +421,7 @@ import org.jetbrains.mps.openapi.language.SConcept;
   }
 
   private static final class CONCEPTS {
+    /*package*/ static final SConcept ColonCast$8S = MetaAdapterFactory.getConcept(0xcfaa4966b7d54b69L, 0xb66a309a6e1a7290L, 0x52a5783d23e687ffL, "org.iets3.core.expr.base.structure.ColonCast");
     /*package*/ static final SConcept Type$WK = MetaAdapterFactory.getConcept(0xcfaa4966b7d54b69L, 0xb66a309a6e1a7290L, 0x670d5e92f854a614L, "org.iets3.core.expr.base.structure.Type");
   }
 }

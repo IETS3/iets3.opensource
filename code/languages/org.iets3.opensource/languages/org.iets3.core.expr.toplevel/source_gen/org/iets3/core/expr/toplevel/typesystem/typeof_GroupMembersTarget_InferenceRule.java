@@ -28,7 +28,7 @@ public class typeof_GroupMembersTarget_InferenceRule extends AbstractInferenceRu
           {
             SNode _nodeToCheck_1029348928467 = gmt;
             EquationInfo _info_12389875345 = new EquationInfo(_nodeToCheck_1029348928467, null, "r:8023e40c-26d4-4543-bd46-2ec2c03f861f(org.iets3.core.expr.toplevel.typesystem)", "8293738266729564822", 0, null);
-            typeCheckingContext.createEquation((SNode) typeCheckingContext.typeOf(_nodeToCheck_1029348928467, "r:8023e40c-26d4-4543-bd46-2ec2c03f861f(org.iets3.core.expr.toplevel.typesystem)", "8293738266729564832", true), (SNode) createListType_92ymxj_a1a0c0a0a0b0a1a0a1(SNodeOperations.as(SNodeOperations.copyNode(SLinkOperations.getTarget(SNodeOperations.cast(typeCheckingContext.getExpandedNode(ctxType), CONCEPTS.GroupType$K$), LINKS.memberType$ihzD)), CONCEPTS.Type$WK)), _info_12389875345);
+            typeCheckingContext.createEquation((SNode) typeCheckingContext.typeOf(_nodeToCheck_1029348928467, "r:8023e40c-26d4-4543-bd46-2ec2c03f861f(org.iets3.core.expr.toplevel.typesystem)", "8293738266729564832", true), (SNode) createListType_92ymxj_a1a0c0a0a0b0a1a0a1(SNodeOperations.as(SNodeOperations.copyNode(SLinkOperations.getTarget(SNodeOperations.as(typeCheckingContext.getExpandedNode(ctxType), CONCEPTS.GroupType$K$), LINKS.memberType$ihzD)), CONCEPTS.Type$WK)), _info_12389875345);
           }
         }
       }, "r:8023e40c-26d4-4543-bd46-2ec2c03f861f(org.iets3.core.expr.toplevel.typesystem)", "8293738266729564818", false, false);

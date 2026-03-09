@@ -29,7 +29,7 @@ public class typeof_IFunctionRef_InferenceRule extends AbstractInferenceRule_Run
       final SNode targetFunType = typeCheckingContext.typeOf(SLinkOperations.getTarget(ifr, LINKS.fun$DJ6H), "r:3b5d2a4d-f539-4854-bc25-c43da4b5202c(org.iets3.core.expr.lambda.typesystem)", "4790956042240968461", true);
       typeCheckingContext.whenConcrete(targetFunType, () -> {
         final SNode ft = SConceptOperations.createNewNode(MetaAdapterFactory.getConcept(0x9464fa065ab9409bL, 0x927464ab29588457L, 0x68d69d36ba4ecfb6L, "org.iets3.core.expr.lambda.structure.FunctionType"));
-        SLinkOperations.setTarget(ft, LINKS.returnType$nq7J, SNodeOperations.cast(SNodeOperations.copyNode(typeCheckingContext.getExpandedNode(targetFunType)), CONCEPTS.Type$WK));
+        SLinkOperations.setTarget(ft, LINKS.returnType$nq7J, SNodeOperations.as(SNodeOperations.copyNode(typeCheckingContext.getExpandedNode(targetFunType)), CONCEPTS.Type$WK));
         ListSequence.fromList(SLinkOperations.getChildren(SLinkOperations.getTarget(ifr, LINKS.fun$DJ6H), LINKS.args$XOIh)).visitAll((it) -> ListSequence.fromList(SLinkOperations.getChildren(ft, LINKS.argumentTypes$npDH)).addElement(SNodeOperations.copyNode(SLinkOperations.getTarget(it, LINKS.type$8xXf))));
         EffectDescriptor effectDescriptor = IMayHaveEffect__BehaviorDescriptor.effectDescriptor_id6GySMNjjWfO.invoke(SLinkOperations.getTarget(ifr, LINKS.fun$DJ6H));
         if (effectDescriptor != null && effectDescriptor.readsOrModifiesMutableState()) {

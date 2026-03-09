@@ -14,7 +14,6 @@ import java.util.Arrays;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.mps.openapi.model.SNode;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations;
-import org.iets3.core.expr.base.runtime.runtime.IdentifierConfiguratorAccess;
 import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
@@ -24,22 +23,14 @@ public final class DataRow__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getConcept(0xb25b8ad14d3d4e45L, 0x8c7872091b39fddaL, 0x335c4a1eb652889L, "org.iets3.core.expr.data.structure.DataRow");
 
   public static final SMethod<String> getPresentation_idhEwIMiw = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("getPresentation").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(1213877396640L).languageId(0x9b92103b95ca8c0cL, 0xceab519525ea4f22L).build2();
-  public static final SMethod<Boolean> allowUmlaute_id5YygIlbih$m = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("allowUmlaute").modifiers(9, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(6891143932408305942L).languageId(0xbd9c05c0f8725a35L, 0x7b68d745a7b848b9L).build2();
-  public static final SMethod<Boolean> allowParagraph_id4ZH31cjGRan = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("allowParagraph").modifiers(9, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5759272774551171735L).languageId(0xbd9c05c0f8725a35L, 0x7b68d745a7b848b9L).build2();
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(getPresentation_idhEwIMiw, allowUmlaute_id5YygIlbih$m, allowParagraph_id4ZH31cjGRan);
+  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(getPresentation_idhEwIMiw);
 
   private static void ___init___(@NotNull SNode __thisNode__) {
   }
 
   /*package*/ static String getPresentation_idhEwIMiw(@NotNull SNode __thisNode__) {
     return SPropertyOperations.getString(__thisNode__, PROPS.name$MnvL);
-  }
-  /*package*/ static boolean allowUmlaute_id5YygIlbih$m(@NotNull SAbstractConcept __thisConcept__) {
-    return IdentifierConfiguratorAccess.allowUmlautsInIdentifiers(__thisConcept__);
-  }
-  /*package*/ static boolean allowParagraph_id4ZH31cjGRan(@NotNull SAbstractConcept __thisConcept__) {
-    return IdentifierConfiguratorAccess.allowParagraphsInIdentifiers(__thisConcept__);
   }
 
   /*package*/ DataRow__BehaviorDescriptor() {
@@ -71,10 +62,6 @@ public final class DataRow__BehaviorDescriptor extends BaseBHDescriptor {
       throw new BHMethodNotFoundException(this, method);
     }
     switch (methodIndex) {
-      case 1:
-        return (T) ((Boolean) allowUmlaute_id5YygIlbih$m(concept));
-      case 2:
-        return (T) ((Boolean) allowParagraph_id4ZH31cjGRan(concept));
       default:
         throw new BHMethodNotFoundException(this, method);
     }

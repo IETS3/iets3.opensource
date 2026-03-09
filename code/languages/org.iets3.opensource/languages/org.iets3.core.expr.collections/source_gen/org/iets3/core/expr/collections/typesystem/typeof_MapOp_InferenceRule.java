@@ -29,7 +29,7 @@ public class typeof_MapOp_InferenceRule extends AbstractInferenceRule_Runtime im
       final SNode predType = typeCheckingContext.typeOf(SLinkOperations.getTarget(mapOp, LINKS.expr$CW3E), "r:1fd78142-d7d8-42c9-9cbb-0609b1bc5311(org.iets3.core.expr.collections.typesystem)", "7554398283340650019", true);
       typeCheckingContext.whenConcrete(predType, () -> {
         if (SNodeOperations.isInstanceOf(typeCheckingContext.getExpandedNode(predType), CONCEPTS.FunctionType$RQ)) {
-          final SNode ft = SNodeOperations.cast(typeCheckingContext.getExpandedNode(predType), CONCEPTS.FunctionType$RQ);
+          final SNode ft = SNodeOperations.as(typeCheckingContext.getExpandedNode(predType), CONCEPTS.FunctionType$RQ);
           if (ListSequence.fromList(SLinkOperations.getChildren(ft, LINKS.argumentTypes$npDH)).count() != 1) {
             {
               final MessageTarget errorTarget = new NodeMessageTarget();
@@ -39,7 +39,7 @@ public class typeof_MapOp_InferenceRule extends AbstractInferenceRule_Runtime im
             {
               final SNode ctxType = typeCheckingContext.typeOf(IDotTarget__BehaviorDescriptor.contextExpression_id6zmBjqUivyF.invoke(mapOp), "r:1fd78142-d7d8-42c9-9cbb-0609b1bc5311(org.iets3.core.expr.collections.typesystem)", "3989687177019401721", true);
               typeCheckingContext.whenConcrete(ctxType, () -> {
-                SNode collType = CollectionType__BehaviorDescriptor.createListOrCollectionType_id2D48zR6ryTu.invoke(SNodeOperations.cast(typeCheckingContext.getExpandedNode(ctxType), CONCEPTS.CollectionType$kS));
+                SNode collType = CollectionType__BehaviorDescriptor.createListOrCollectionType_id2D48zR6ryTu.invoke(SNodeOperations.as(typeCheckingContext.getExpandedNode(ctxType), CONCEPTS.CollectionType$kS));
                 {
                   SNode _nodeToCheck_1029348928467 = mapOp;
                   EquationInfo _info_12389875345 = new EquationInfo(_nodeToCheck_1029348928467, null, "r:1fd78142-d7d8-42c9-9cbb-0609b1bc5311(org.iets3.core.expr.collections.typesystem)", "7554398283340679492", 0, null);

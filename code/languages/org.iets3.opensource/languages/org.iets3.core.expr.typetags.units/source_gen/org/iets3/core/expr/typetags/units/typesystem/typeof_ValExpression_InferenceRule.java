@@ -49,9 +49,9 @@ public class typeof_ValExpression_InferenceRule extends AbstractInferenceRule_Ru
         SNode result = null;
 
         if (SNodeOperations.isInstanceOf(specifierType, CONCEPTS.TaggedType$O4)) {
-          result = TaggedType__BehaviorDescriptor.addTag_id2JXkwhJ7y6m.invoke(SNodeOperations.cast(specifierType, CONCEPTS.TaggedType$O4), tag);
+          result = TaggedType__BehaviorDescriptor.addTag_id2JXkwhJ7y6m.invoke(SNodeOperations.as(specifierType, CONCEPTS.TaggedType$O4), tag);
         } else if (SNodeOperations.isInstanceOf(specifierType, CONCEPTS.Type$WK)) {
-          result = TaggedType__BehaviorDescriptor.create_id2JXkwhJbtfS.invoke(SNodeOperations.asSConcept(CONCEPTS.TaggedType$O4), SNodeOperations.cast(specifierType, CONCEPTS.Type$WK), tag);
+          result = TaggedType__BehaviorDescriptor.create_id2JXkwhJbtfS.invoke(SNodeOperations.asSConcept(CONCEPTS.TaggedType$O4), SNodeOperations.as(specifierType, CONCEPTS.Type$WK), tag);
         }
 
         if (result != null) {

@@ -95,7 +95,7 @@
       <node id="2460310434914324772" at="30,70,31,231" concept="7" />
       <node id="2460310434913776618" at="34,11,35,50" concept="7" />
       <node id="2460310434913776618" at="35,50,36,206" concept="7" />
-      <node id="2460310434913776618" at="36,206,37,472" concept="3" />
+      <node id="2460310434913776618" at="36,206,37,468" concept="3" />
       <node id="2460310434913774224" at="43,50,44,41" concept="8" />
       <node id="2460310434913774224" at="46,68,47,102" concept="8" />
       <node id="2460310434913774224" at="49,30,50,17" concept="8" />
@@ -124,7 +124,7 @@
         <var name="_reporter_2309309498" id="2460310434914324772" />
         <var name="errorTarget" id="2460310434914324772" />
       </scope>
-      <scope id="2460310434913776618" at="34,11,37,472">
+      <scope id="2460310434913776618" at="34,11,37,468">
         <var name="_info_12389875345" id="2460310434913776618" />
         <var name="_nodeToCheck_1029348928467" id="2460310434913776618" />
       </scope>
@@ -499,7 +499,7 @@
     <file name="typeof_AlgebraicArgAccess_InferenceRule.java">
       <node id="5849458724939242230" at="30,72,31,16" concept="8" />
       <node id="5849458724932733140" at="34,5,35,215" concept="7" />
-      <node id="5955298286240681691" at="37,131,38,266" concept="7" />
+      <node id="5955298286240681691" at="37,131,38,264" concept="7" />
       <node id="5955298286240676079" at="40,13,41,72" concept="7" />
       <node id="5955298286240676079" at="41,72,42,230" concept="7" />
       <node id="5955298286240685097" at="45,13,46,53" concept="7" />
@@ -523,7 +523,7 @@
       <node id="5955298286240685097" at="44,18,49,13" concept="0" />
       <node id="5955298286240631452" at="51,14,56,9" concept="0" />
       <node id="5955298286240682996" at="44,16,50,11" concept="0" />
-      <node id="5955298286240638310" at="38,266,50,11" concept="5" />
+      <node id="5955298286240638310" at="38,264,50,11" concept="5" />
       <node id="5955298286240628244" at="36,59,56,9" concept="5" />
       <node id="5849458724932733140" at="35,215,57,124" concept="3" />
       <node id="5849458724932733140" at="33,116,58,5" concept="0" />
@@ -589,27 +589,24 @@
       <node id="5955298286239375988" at="24,50,25,48" concept="8" />
       <node id="5955298286239375988" at="27,68,28,102" concept="8" />
       <node id="5955298286239375988" at="30,27,31,17" concept="8" />
-      <node id="5955298286239375988" at="33,39,34,16" concept="8" />
-      <node id="5955298286239386756" at="36,66,37,73" concept="7" />
-      <node id="5955298286239386756" at="37,73,38,54" concept="3" />
-      <node id="5955298286239386756" at="38,54,39,26" concept="8" />
-      <node id="5955298286239375988" at="43,0,44,0" concept="9" trace="constructor$F6Xq" />
-      <node id="5955298286239375988" at="44,0,45,0" concept="9" trace="declaration$4bEv" />
-      <node id="5955298286239375988" at="48,0,49,0" concept="9" trace="AlgebraicConstructorType$ja" />
-      <node id="5955298286239375988" at="49,0,50,0" concept="9" trace="AlgebraicType$Df" />
+      <node id="5955298286239386756" at="33,66,34,73" concept="7" />
+      <node id="5955298286239386756" at="34,73,35,54" concept="3" />
+      <node id="5955298286239386756" at="35,54,36,26" concept="8" />
+      <node id="5955298286239375988" at="40,0,41,0" concept="9" trace="constructor$F6Xq" />
+      <node id="5955298286239375988" at="41,0,42,0" concept="9" trace="declaration$4bEv" />
+      <node id="5955298286239375988" at="45,0,46,0" concept="9" trace="AlgebraicConstructorType$ja" />
+      <node id="5955298286239375988" at="46,0,47,0" concept="9" trace="AlgebraicType$Df" />
       <node id="5955298286239375988" at="19,0,21,0" concept="1" trace="supertypeOf_AlgebraicCaseType_SubtypingRule#()V" />
       <node id="5955298286239375988" at="21,0,24,0" concept="6" trace="getSubOrSuperType#(Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/typesystem/inference/TypeCheckingContext;Ljetbrains/mps/lang/typesystem/runtime/IsApplicableStatus;)Lorg/jetbrains/mps/openapi/model/SNode;" />
       <node id="5955298286239375988" at="24,0,27,0" concept="6" trace="getApplicableConcept#()Lorg/jetbrains/mps/openapi/language/SAbstractConcept;" />
       <node id="5955298286239375988" at="27,0,30,0" concept="6" trace="isApplicableAndPattern#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljetbrains/mps/lang/typesystem/runtime/IsApplicableStatus;" />
       <node id="5955298286239375988" at="30,0,33,0" concept="6" trace="isWeak#()Z" />
-      <node id="5955298286239375988" at="33,0,36,0" concept="6" trace="surelyKeepsConcept#()Z" />
-      <node id="5955298286239386756" at="36,0,41,0" concept="10" trace="createAlgebraicType_j5ot3q_a0a1#(Lorg/jetbrains/mps/openapi/model/SNode;)Lorg/jetbrains/mps/openapi/model/SNode;" />
+      <node id="5955298286239386756" at="33,0,38,0" concept="10" trace="createAlgebraicType_j5ot3q_a0a1#(Lorg/jetbrains/mps/openapi/model/SNode;)Lorg/jetbrains/mps/openapi/model/SNode;" />
       <scope id="5955298286239375988" at="19,56,19,56" />
       <scope id="5955298286239375989" at="21,113,22,167" />
       <scope id="5955298286239375988" at="24,50,25,48" />
       <scope id="5955298286239375988" at="27,68,28,102" />
       <scope id="5955298286239375988" at="30,27,31,17" />
-      <scope id="5955298286239375988" at="33,39,34,16" />
       <scope id="5955298286239375988" at="19,0,21,0" />
       <scope id="5955298286239375988" at="21,0,24,0">
         <var name="act" id="5955298286239375988" />
@@ -621,16 +618,15 @@
         <var name="argument" id="5955298286239375988" />
       </scope>
       <scope id="5955298286239375988" at="30,0,33,0" />
-      <scope id="5955298286239375988" at="33,0,36,0" />
-      <scope id="5955298286239386756" at="36,66,39,26">
+      <scope id="5955298286239386756" at="33,66,36,26">
         <var name="n0" id="5955298286239386756" />
       </scope>
-      <scope id="5955298286239386756" at="36,0,41,0">
+      <scope id="5955298286239386756" at="33,0,38,0">
         <var name="p0" id="5955298286239386756" />
       </scope>
-      <unit id="5955298286239375988" at="42,0,46,0" name="org.iets3.core.expr.adt.typesystem.supertypeOf_AlgebraicCaseType_SubtypingRule$LINKS" />
-      <unit id="5955298286239375988" at="47,0,51,0" name="org.iets3.core.expr.adt.typesystem.supertypeOf_AlgebraicCaseType_SubtypingRule$CONCEPTS" />
-      <unit id="5955298286239375988" at="18,0,52,0" name="org.iets3.core.expr.adt.typesystem.supertypeOf_AlgebraicCaseType_SubtypingRule" />
+      <unit id="5955298286239375988" at="39,0,43,0" name="org.iets3.core.expr.adt.typesystem.supertypeOf_AlgebraicCaseType_SubtypingRule$LINKS" />
+      <unit id="5955298286239375988" at="44,0,48,0" name="org.iets3.core.expr.adt.typesystem.supertypeOf_AlgebraicCaseType_SubtypingRule$CONCEPTS" />
+      <unit id="5955298286239375988" at="18,0,49,0" name="org.iets3.core.expr.adt.typesystem.supertypeOf_AlgebraicCaseType_SubtypingRule" />
     </file>
   </root>
   <root nodeRef="r:55ae05df-8f25-48f0-a826-0655584ce598(org.iets3.core.expr.adt.typesystem)/5955298286239453760">
@@ -1480,7 +1476,7 @@
     </file>
     <file name="typeof_AllComponentsExpr_InferenceRule.java">
       <node id="5955298286259465599" at="31,116,32,141" concept="7" />
-      <node id="5955298286259469942" at="33,75,34,76" concept="7" />
+      <node id="5955298286259469942" at="33,75,34,74" concept="7" />
       <node id="5955298286259522597" at="35,146,36,129" concept="7" />
       <node id="5955298286259587685" at="38,11,39,51" concept="7" />
       <node id="5955298286259587685" at="39,51,40,206" concept="7" />
@@ -1489,8 +1485,8 @@
       <node id="5955298286259601799" at="45,51,46,206" concept="7" />
       <node id="5955298286259601799" at="46,206,47,422" concept="3" />
       <node id="5955298286259615081" at="49,16,50,201" concept="7" />
-      <node id="5955298286259688303" at="51,61,52,350" concept="7" />
-      <node id="5955298286259629114" at="52,350,53,137" concept="3" />
+      <node id="5955298286259688303" at="51,61,52,348" concept="7" />
+      <node id="5955298286259629114" at="52,348,53,137" concept="3" />
       <node id="5955298286259616769" at="55,11,56,51" concept="7" />
       <node id="5955298286259616769" at="56,51,57,206" concept="7" />
       <node id="5955298286259616769" at="57,206,58,249" concept="3" />
@@ -1527,7 +1523,7 @@
       <node id="5955298286259468587" at="67,10,72,5" concept="0" />
       <node id="5955298286259614794" at="49,14,60,9" concept="0" />
       <node id="5955298286259577533" at="36,129,60,9" concept="5" />
-      <node id="5955298286259470090" at="34,76,66,7" concept="5" />
+      <node id="5955298286259470090" at="34,74,66,7" concept="5" />
       <node id="5955298286259465875" at="32,141,72,5" concept="5" />
       <node id="5955298286259462905" at="31,0,74,0" concept="6" trace="applyRule#(Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/typesystem/inference/TypeCheckingContext;Ljetbrains/mps/lang/typesystem/runtime/IsApplicableStatus;)V" />
       <scope id="5955298286259462905" at="29,51,29,51" />

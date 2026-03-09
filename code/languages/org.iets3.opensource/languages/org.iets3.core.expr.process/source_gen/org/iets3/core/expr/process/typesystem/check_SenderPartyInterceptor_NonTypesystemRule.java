@@ -23,7 +23,7 @@ public class check_SenderPartyInterceptor_NonTypesystemRule extends AbstractNonT
   }
   public void applyRule(final SNode spi, final TypeCheckingContext typeCheckingContext, IsApplicableStatus status) {
     SNode tt = TypecheckingFacade.getFromContext().getTypeOf(SLinkOperations.getTarget(spi, LINKS.expr$CW3E));
-    if (!(SNodeOperations.isInstanceOf(tt, CONCEPTS.PartyType$21) || SNodeOperations.isInstanceOf(tt, CONCEPTS.CollectionType$kS) && SNodeOperations.isInstanceOf(SLinkOperations.getTarget(SNodeOperations.cast(tt, CONCEPTS.CollectionType$kS), LINKS.baseType$5NOJ), CONCEPTS.PartyType$21))) {
+    if (!(SNodeOperations.isInstanceOf(tt, CONCEPTS.PartyType$21) || SNodeOperations.isInstanceOf(tt, CONCEPTS.CollectionType$kS) && SNodeOperations.isInstanceOf(SLinkOperations.getTarget(SNodeOperations.as(tt, CONCEPTS.CollectionType$kS), LINKS.baseType$5NOJ), CONCEPTS.PartyType$21))) {
       {
         final MessageTarget errorTarget = new NodeMessageTarget();
         IErrorReporter _reporter_2309309498 = typeCheckingContext.reportTypeError(SLinkOperations.getTarget(spi, LINKS.expr$CW3E), "party or collection of parties required", "r:f58f4a3c-02d7-4cfe-abe9-c107d957e34d(org.iets3.core.expr.process.typesystem)", "5456956546144091821", null, errorTarget);

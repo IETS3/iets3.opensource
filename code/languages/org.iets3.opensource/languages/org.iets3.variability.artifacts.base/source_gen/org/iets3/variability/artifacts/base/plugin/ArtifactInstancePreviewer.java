@@ -52,9 +52,9 @@ import org.jetbrains.mps.openapi.language.SContainmentLink;
 import org.jetbrains.mps.openapi.language.SReferenceLink;
 
 /**
- * Compute top-level nodes affected by selections in a configuration and 
+ * Compute top-level nodes affected by selections in a configuration and
  * preview an instance of affected artifacts according to the selected criteria.
- * For example if can hide not selected nodes and its dependencies or 
+ * For example if can hide not selected nodes and its dependencies or
  * highlight those nodes.
  * 
  * Note: This class depends on an ISkeletonTreeBuilder and an IArtifactEvaluator. Depending on the extensions
@@ -305,11 +305,11 @@ public class ArtifactInstancePreviewer {
     return data;
   }
 
-  private static ArtifactPath nodeInRecalculatedPath(SkeletonNode node) {
-    if (check_ifwv5z_a0a75(node.getPivot())) {
-      return node.getParent().getFullPath();
+  private static ArtifactPath nodeInRecalculatedPath(SkeletonNode skeletonNode) {
+    if (skeletonNode.isInstance()) {
+      return skeletonNode.getParent().getFullPath();
     } else {
-      return node.getFullPath();
+      return skeletonNode.getFullPath();
     }
   }
 
@@ -587,7 +587,7 @@ public class ArtifactInstancePreviewer {
 
   /**
    * The listener is used to render editors on open and reset render status on close.
-   * It avoids re-computation of preview visualization data and assures update of editors 
+   * It avoids re-computation of preview visualization data and assures update of editors
    * that are closed in the moment of the computation.
    * 
    * It replaces the solution based on checking rules, because it could not be used with
@@ -674,12 +674,6 @@ public class ArtifactInstancePreviewer {
       return checkedDotOperand.asInstancePath();
     }
     return null;
-  }
-  private static boolean check_ifwv5z_a0a75(SkeletonNode.PivotInfo checkedDotOperand) {
-    if (null != checkedDotOperand) {
-      return checkedDotOperand.isInstance();
-    }
-    return false;
   }
 
   private static final class PROPS {

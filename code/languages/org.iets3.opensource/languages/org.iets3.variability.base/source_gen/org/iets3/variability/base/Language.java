@@ -13,6 +13,8 @@ import org.iets3.variability.base.actions.ActionAspectDescriptorImpl;
 import jetbrains.mps.smodel.runtime.BehaviorAspectDescriptor;
 import jetbrains.mps.openapi.editor.descriptor.EditorAspectDescriptor;
 import org.iets3.variability.base.editor.EditorAspectDescriptorImpl;
+import jetbrains.mps.lang.typesystem.runtime.IHelginsDescriptor;
+import org.iets3.variability.base.typesystem.TypesystemDescriptor;
 import jetbrains.mps.smodel.runtime.StructureAspectDescriptor;
 import jetbrains.mps.smodel.runtime.ConceptPresentationAspect;
 import org.iets3.variability.base.structure.ConceptPresentationAspectImpl;
@@ -42,7 +44,8 @@ public class Language extends LanguageRuntime {
 
   @Override
   protected void fillExtendedLanguages(Collection<SLanguage> extendedLanguages) {
-    extendedLanguages.add(MetaAdapterFactory.getLanguage(SLanguageId.deserialize("165f1d05-2506-4544-895e-1424f54166ec"), "org.iets3.variability.featuremodel.base"));
+    extendedLanguages.add(MetaAdapterFactory.getLanguage(SLanguageId.deserialize("d4280a54-f6df-4383-aa41-d1b2bffa7eb1"), "com.mbeddr.core.base"));
+    extendedLanguages.add(MetaAdapterFactory.getLanguage(SLanguageId.deserialize("db8bd035-3f51-41d8-8fed-954c202d18be"), "org.iets3.analysis.base"));
   }
 
   @Override
@@ -55,6 +58,9 @@ public class Language extends LanguageRuntime {
     }
     if (aspectClass == EditorAspectDescriptor.class) {
       return aspectClass.cast(new EditorAspectDescriptorImpl());
+    }
+    if (aspectClass == IHelginsDescriptor.class) {
+      return aspectClass.cast(new TypesystemDescriptor());
     }
     if (aspectClass == StructureAspectDescriptor.class) {
       return aspectClass.cast(new org.iets3.variability.base.structure.StructureAspectDescriptor());

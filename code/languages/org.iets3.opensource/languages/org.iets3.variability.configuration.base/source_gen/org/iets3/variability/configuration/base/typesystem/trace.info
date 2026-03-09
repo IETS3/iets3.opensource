@@ -22,8 +22,8 @@
     <file name="fix_AdaptToExtendedFMC_QuickFix.java">
       <node id="1713046119076006319" at="14,44,15,146" concept="12" />
       <node id="1713046119076009175" at="17,44,18,68" concept="7" />
-      <node id="1713046119076006604" at="20,35,21,82" concept="6" />
-      <node id="719012571943174617" at="21,82,22,35" concept="2" />
+      <node id="1713046119076006604" at="20,35,21,80" concept="6" />
+      <node id="719012571943174617" at="21,80,22,35" concept="2" />
       <node id="1713046119076006319" at="26,0,27,0" concept="10" trace="FeatureModelConfiguration$nE" />
       <node id="1713046119076006319" at="14,0,17,0" concept="1" trace="fix_AdaptToExtendedFMC_QuickFix#()V" />
       <node id="1713046119076006319" at="17,0,20,0" concept="5" trace="getDescription#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljava/lang/String;" />
@@ -358,8 +358,8 @@
     <file name="fix_RemoveConflictingInheritance_QuickFix.java">
       <node id="3632605611358162954" at="17,54,18,146" concept="12" />
       <node id="3632605611358163527" at="20,44,21,44" concept="7" />
-      <node id="3632605611358186680" at="23,35,24,82" concept="6" />
-      <node id="3995081778274708160" at="24,82,25,87" concept="2" />
+      <node id="3632605611358186680" at="23,35,24,80" concept="6" />
+      <node id="3995081778274708160" at="24,80,25,87" concept="2" />
       <node id="7877854869141085400" at="25,87,26,94" concept="2" />
       <node id="3632605611358186694" at="27,101,28,115" concept="2" />
       <node id="3632605611358162954" at="33,0,34,0" concept="10" trace="FeatureModelConfiguration$nE" />
@@ -465,38 +465,38 @@
     </file>
   </root>
   <root nodeRef="r:791971f5-b094-4342-a75c-0ce6c1b43e9d(org.iets3.variability.configuration.base.typesystem)/4999651317656018903">
-    <file name="propagateFMchangesToConfig_QuickFix.java">
-      <node id="4999651317656018903" at="12,48,13,146" concept="12" />
-      <node id="6821044287482817894" at="15,44,16,96" concept="7" />
-      <node id="6664904932736150068" at="18,35,19,136" concept="2" />
-      <node id="4999651317656018903" at="12,0,15,0" concept="1" trace="propagateFMchangesToConfig_QuickFix#()V" />
-      <node id="4999651317656018903" at="15,0,18,0" concept="5" trace="getDescription#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljava/lang/String;" />
-      <node id="4999651317656018903" at="18,0,21,0" concept="5" trace="execute#(Lorg/jetbrains/mps/openapi/model/SNode;)V" />
-      <scope id="4999651317656018903" at="12,48,13,146" />
-      <scope id="4999651317656031586" at="15,44,16,96" />
-      <scope id="4999651317656018905" at="18,35,19,136" />
-      <scope id="4999651317656018903" at="12,0,15,0" />
-      <scope id="4999651317656018903" at="15,0,18,0">
+    <file name="fix_AdaptToChangesInFM_QuickFix.java">
+      <node id="4999651317656018903" at="11,44,12,146" concept="12" />
+      <node id="6821044287482817894" at="14,44,15,96" concept="7" />
+      <node id="6475603066513758109" at="17,35,18,134" concept="2" />
+      <node id="4999651317656018903" at="11,0,14,0" concept="1" trace="fix_AdaptToChangesInFM_QuickFix#()V" />
+      <node id="4999651317656018903" at="14,0,17,0" concept="5" trace="getDescription#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljava/lang/String;" />
+      <node id="4999651317656018903" at="17,0,20,0" concept="5" trace="execute#(Lorg/jetbrains/mps/openapi/model/SNode;)V" />
+      <scope id="4999651317656018903" at="11,44,12,146" />
+      <scope id="4999651317656031586" at="14,44,15,96" />
+      <scope id="4999651317656018905" at="17,35,18,134" />
+      <scope id="4999651317656018903" at="11,0,14,0" />
+      <scope id="4999651317656018903" at="14,0,17,0">
         <var name="node" id="4999651317656018903" />
       </scope>
-      <scope id="4999651317656018903" at="18,0,21,0">
+      <scope id="4999651317656018903" at="17,0,20,0">
         <var name="node" id="4999651317656018903" />
       </scope>
-      <unit id="4999651317656018903" at="11,0,22,0" name="org.iets3.variability.configuration.base.typesystem.propagateFMchangesToConfig_QuickFix" />
+      <unit id="4999651317656018903" at="10,0,21,0" name="org.iets3.variability.configuration.base.typesystem.fix_AdaptToChangesInFM_QuickFix" />
     </file>
   </root>
   <root nodeRef="r:791971f5-b094-4342-a75c-0ce6c1b43e9d(org.iets3.variability.configuration.base.typesystem)/4999651317689199059">
-    <file name="makeConfigAbstract_QuickFix.java">
-      <node id="4999651317689199059" at="13,40,14,146" concept="12" />
+    <file name="fix_MakeConfigAbstract_QuickFix.java">
+      <node id="4999651317689199059" at="13,44,14,146" concept="12" />
       <node id="4999651317689202099" at="16,44,17,27" concept="7" />
-      <node id="4999651317689202654" at="19,35,20,118" concept="2" />
+      <node id="4999651317689202654" at="19,35,20,122" concept="2" />
       <node id="4999651317689199059" at="24,0,25,0" concept="10" trace="abstract$Wu4W" />
-      <node id="4999651317689199059" at="13,0,16,0" concept="1" trace="makeConfigAbstract_QuickFix#()V" />
+      <node id="4999651317689199059" at="13,0,16,0" concept="1" trace="fix_MakeConfigAbstract_QuickFix#()V" />
       <node id="4999651317689199059" at="16,0,19,0" concept="5" trace="getDescription#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljava/lang/String;" />
       <node id="4999651317689199059" at="19,0,22,0" concept="5" trace="execute#(Lorg/jetbrains/mps/openapi/model/SNode;)V" />
-      <scope id="4999651317689199059" at="13,40,14,146" />
+      <scope id="4999651317689199059" at="13,44,14,146" />
       <scope id="4999651317689201030" at="16,44,17,27" />
-      <scope id="4999651317689199061" at="19,35,20,118" />
+      <scope id="4999651317689199061" at="19,35,20,122" />
       <scope id="4999651317689199059" at="13,0,16,0" />
       <scope id="4999651317689199059" at="16,0,19,0">
         <var name="node" id="4999651317689199059" />
@@ -504,8 +504,8 @@
       <scope id="4999651317689199059" at="19,0,22,0">
         <var name="node" id="4999651317689199059" />
       </scope>
-      <unit id="4999651317689199059" at="23,0,26,0" name="org.iets3.variability.configuration.base.typesystem.makeConfigAbstract_QuickFix$PROPS" />
-      <unit id="4999651317689199059" at="12,0,27,0" name="org.iets3.variability.configuration.base.typesystem.makeConfigAbstract_QuickFix" />
+      <unit id="4999651317689199059" at="23,0,26,0" name="org.iets3.variability.configuration.base.typesystem.fix_MakeConfigAbstract_QuickFix$PROPS" />
+      <unit id="4999651317689199059" at="12,0,27,0" name="org.iets3.variability.configuration.base.typesystem.fix_MakeConfigAbstract_QuickFix" />
     </file>
   </root>
   <root nodeRef="r:791971f5-b094-4342-a75c-0ce6c1b43e9d(org.iets3.variability.configuration.base.typesystem)/5154894928108155412">
@@ -538,8 +538,8 @@
       <node id="8133409598993665832" at="71,0,72,109" concept="8" />
       <node id="3543850148881346922" at="74,7,75,66" concept="6" />
       <node id="3543850148881346922" at="75,66,76,315" concept="6" />
-      <node id="4999651317663867413" at="77,9,78,197" concept="6" />
-      <node id="4999651317663872959" at="78,197,79,52" concept="2" />
+      <node id="4999651317663867413" at="77,9,78,193" concept="6" />
+      <node id="4999651317663872959" at="78,193,79,52" concept="2" />
       <node id="4999651317663867413" at="79,52,80,71" concept="2" />
       <node id="3812644477754966928" at="82,7,83,13" concept="7" />
       <node id="3543850148881360944" at="84,5,85,0" concept="9" />
@@ -587,8 +587,8 @@
       <node id="4999651317681583358" at="169,78,170,285" concept="6" />
       <node id="4999651317681596651" at="172,9,173,68" concept="6" />
       <node id="4999651317681596651" at="173,68,174,422" concept="6" />
-      <node id="4999651317689220572" at="175,11,176,191" concept="6" />
-      <node id="4999651317689227037" at="176,191,177,54" concept="2" />
+      <node id="4999651317689220572" at="175,11,176,195" concept="6" />
+      <node id="4999651317689227037" at="176,195,177,54" concept="2" />
       <node id="4999651317689220572" at="177,54,178,73" concept="2" />
       <node id="1107029096515419315" at="180,9,181,15" concept="7" />
       <node id="8133409599008272734" at="182,7,183,45" concept="8" />
@@ -921,17 +921,17 @@
     </file>
   </root>
   <root nodeRef="r:791971f5-b094-4342-a75c-0ce6c1b43e9d(org.iets3.variability.configuration.base.typesystem)/6475083214301144680">
-    <file name="fix_applyInheritance_QuickFix.java">
+    <file name="fix_ApplyInheritance_QuickFix.java">
       <node id="6475083214301144680" at="15,42,16,146" concept="12" />
       <node id="7702113793573282219" at="18,44,19,40" concept="7" />
-      <node id="6475083214301150142" at="21,35,22,82" concept="6" />
-      <node id="7230050046971552108" at="22,82,23,92" concept="2" />
+      <node id="6475083214301150142" at="21,35,22,80" concept="6" />
+      <node id="7230050046971552108" at="22,80,23,92" concept="2" />
       <node id="3215608712571639703" at="23,92,24,0" concept="9" />
       <node id="3641280906426210926" at="24,0,25,112" concept="2" />
       <node id="3632605611358129405" at="26,101,27,115" concept="2" />
       <node id="6475083214301144680" at="32,0,33,0" concept="10" trace="FeatureModelConfiguration$nE" />
       <node id="6475083214301144680" at="33,0,34,0" concept="10" trace="FMCInheritanceCheck$Kn" />
-      <node id="6475083214301144680" at="15,0,18,0" concept="1" trace="fix_applyInheritance_QuickFix#()V" />
+      <node id="6475083214301144680" at="15,0,18,0" concept="1" trace="fix_ApplyInheritance_QuickFix#()V" />
       <node id="6475083214301144680" at="18,0,21,0" concept="5" trace="getDescription#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljava/lang/String;" />
       <node id="6094072976784811951" at="25,112,28,5" concept="4" />
       <node id="6475083214301144680" at="21,0,30,0" concept="5" trace="execute#(Lorg/jetbrains/mps/openapi/model/SNode;)V" />
@@ -948,8 +948,45 @@
       <scope id="6475083214301144680" at="21,0,30,0">
         <var name="node" id="6475083214301144680" />
       </scope>
-      <unit id="6475083214301144680" at="31,0,35,0" name="org.iets3.variability.configuration.base.typesystem.fix_applyInheritance_QuickFix$CONCEPTS" />
-      <unit id="6475083214301144680" at="14,0,36,0" name="org.iets3.variability.configuration.base.typesystem.fix_applyInheritance_QuickFix" />
+      <unit id="6475083214301144680" at="31,0,35,0" name="org.iets3.variability.configuration.base.typesystem.fix_ApplyInheritance_QuickFix$CONCEPTS" />
+      <unit id="6475083214301144680" at="14,0,36,0" name="org.iets3.variability.configuration.base.typesystem.fix_ApplyInheritance_QuickFix" />
+    </file>
+  </root>
+  <root nodeRef="r:791971f5-b094-4342-a75c-0ce6c1b43e9d(org.iets3.variability.configuration.base.typesystem)/6475603066513617363">
+    <file name="ConfigUpdateQuickfixHelper.java">
+      <node id="6475603066513617363" at="21,0,22,0" concept="10" trace="LOG" />
+      <node id="6475603066513673047" at="23,67,24,53" concept="6" />
+      <node id="6475603066504557958" at="24,53,25,58" concept="6" />
+      <node id="6475603066509647961" at="25,58,26,66" concept="6" />
+      <node id="6475603066509680197" at="28,31,29,150" concept="2" />
+      <node id="6475603066509703010" at="30,7,31,13" concept="7" />
+      <node id="6475603066515224733" at="32,5,33,0" concept="9" />
+      <node id="6475603066509672864" at="33,0,34,74" concept="6" />
+      <node id="6279010743056426247" at="35,59,36,87" concept="6" />
+      <node id="6279010743056452098" at="36,87,37,46" concept="2" />
+      <node id="7853777384870130696" at="37,46,38,32" concept="2" />
+      <node id="6475603066513617363" at="43,0,44,0" concept="10" trace="name$MnvL" />
+      <node id="6475603066509680197" at="27,25,30,7" concept="4" />
+      <node id="6279010743061317989" at="34,74,39,7" concept="2" />
+      <node id="6475603066509677051" at="26,66,32,5" concept="4" />
+      <node id="6475603066513751292" at="23,0,41,0" concept="11" trace="run#(Lorg/jetbrains/mps/openapi/model/SNode;Ljava/lang/String;)V" />
+      <scope id="6475603066509680197" at="28,31,29,150" />
+      <scope id="6279010743061332960" at="35,59,38,32">
+        <var name="task" id="6279010743056426248" />
+      </scope>
+      <scope id="6475603066509677053" at="27,25,31,13" />
+      <scope id="6475603066513628482" at="23,67,39,7">
+        <var name="model" id="6475603066504557959" />
+        <var name="module" id="6475603066509647962" />
+        <var name="prefix" id="6475603066513673050" />
+        <var name="project" id="6475603066509672865" />
+      </scope>
+      <scope id="6475603066513751292" at="23,0,41,0">
+        <var name="config" id="6475603066513632799" />
+        <var name="quickfixName" id="6475603066513629973" />
+      </scope>
+      <unit id="6475603066513617363" at="42,0,45,0" name="org.iets3.variability.configuration.base.typesystem.ConfigUpdateQuickfixHelper$PROPS" />
+      <unit id="6475603066513617363" at="20,0,46,0" name="org.iets3.variability.configuration.base.typesystem.ConfigUpdateQuickfixHelper" />
     </file>
   </root>
   <root nodeRef="r:791971f5-b094-4342-a75c-0ce6c1b43e9d(org.iets3.variability.configuration.base.typesystem)/9159423170672956616">

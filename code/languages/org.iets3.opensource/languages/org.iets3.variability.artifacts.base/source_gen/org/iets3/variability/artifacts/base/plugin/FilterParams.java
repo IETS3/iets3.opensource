@@ -225,7 +225,7 @@ public class FilterParams {
   }
 
   /**
-   * During Instantiation references which referred to a component now should refer to the instantiation. 
+   * During Instantiation references which referred to a component now should refer to the instantiation.
    * if true tries to fix such broken links
    */
   public boolean fixBrokenLinks = true;
@@ -254,7 +254,7 @@ public class FilterParams {
 
       // set default parameters to avoid null issues
       fp.setFilterRuntimeInformation(new FilterRunInformation());
-      fp.setRenamer(new Renamer());
+      fp.setRenamer(new DefaultRenamer());
       fp.setNodeMapper(new INodeMapper() {});
       fp.setCopyLogic(ICopyLogic.defaultCopyLogic());
       fp.setVarExprReplacer(null);

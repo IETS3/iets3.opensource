@@ -43,7 +43,7 @@ public class typeof_RangeExpr_InferenceRule extends AbstractInferenceRule_Runtim
             return;
           }
         }
-        SNode lt = createListType_16rle5_a0c0c0a0b0b(ListSequence.fromList(expressions).count() + "", ListSequence.fromList(expressions).count() + "", SNodeOperations.cast(elementSupertype, CONCEPTS.Type$WK));
+        SNode lt = createListType_16rle5_a0c0c0a0b0b(ListSequence.fromList(expressions).count() + "", ListSequence.fromList(expressions).count() + "", SNodeOperations.as(elementSupertype, CONCEPTS.Type$WK));
         {
           SNode _nodeToCheck_1029348928467 = re;
           EquationInfo _info_12389875345 = new EquationInfo(_nodeToCheck_1029348928467, null, "r:6081d9c2-0e60-4ebc-a451-4434c25f85c8(org.iets3.core.expr.repl.typesystem)", "8694548031077641933", 0, null);

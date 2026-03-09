@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<product version="3" modelHash="ak35twmau0egm780mm0l7t5eblbs4qm">
-  <files names="TypesystemDescriptor.java:check_ICanRunCheckManually_NonTypesystemRule.java" />
+<product version="3" modelHash="-12bdnv6i68j0j28rs1w9m7y8vperb98">
+  <files names="Check_ICanRunCheckManuallyUtil.java:TypesystemDescriptor.java:check_ICanRunCheckManually_NonTypesystemRule.java" />
 </product>
 

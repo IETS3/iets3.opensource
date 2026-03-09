@@ -30,7 +30,7 @@ public class check_TermRefTermAttribute_NonTypesystemRule extends AbstractNonTyp
   public void applyRule(final SNode ta, final TypeCheckingContext typeCheckingContext, IsApplicableStatus status) {
     if ((boolean) TermRefTermAttribute__BehaviorDescriptor.isBidirectional_id6zaFu4oSd9t.invoke(ta)) {
       SNode other = SLinkOperations.getTarget(ta, LINKS.term$gAJS);
-      final SNode currentTerm = SNodeOperations.cast(SNodeOperations.getParent(ta), CONCEPTS.GlossaryTerm$tH);
+      final SNode currentTerm = SNodeOperations.as(SNodeOperations.getParent(ta), CONCEPTS.GlossaryTerm$tH);
       if (!(Sequence.fromIterable(SNodeOperations.ofConcept(SLinkOperations.getChildren(other, LINKS.attrs$r7h3), CONCEPTS.TermRefTermAttribute$DG)).any((it) -> SLinkOperations.getTarget(it, LINKS.term$gAJS) == currentTerm && SNodeOperations.getConcept(it) == SNodeOperations.getConcept(ta)))) {
         {
           final MessageTarget errorTarget = new NodeMessageTarget();

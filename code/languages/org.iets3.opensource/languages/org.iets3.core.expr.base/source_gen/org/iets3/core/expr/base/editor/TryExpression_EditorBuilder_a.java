@@ -43,6 +43,7 @@ import jetbrains.mps.openapi.editor.menus.transformation.TransformationMenuItem;
 import jetbrains.mps.openapi.editor.menus.transformation.TransformationMenuContext;
 import jetbrains.mps.internal.collections.runtime.ListSequence;
 import java.util.ArrayList;
+import org.iets3.core.expr.base.plugin.EditorCustomizationConfigHelper;
 import jetbrains.mps.lang.editor.menus.transformation.MenuLocations;
 import com.mbeddr.mpsutil.grammarcells.runtime.menu.GrammarCellsSideTransformTransformationMenuItem;
 import org.jetbrains.annotations.Nullable;
@@ -111,7 +112,7 @@ import org.jetbrains.mps.openapi.language.SProperty;
     EditorCell_Collection editorCell = new EditorCell_Collection(getEditorContext(), myNode, new CellLayout_Indent());
     editorCell.setCellId("Collection_jcqzj0_a0a");
     editorCell.addEditorCell(createCustomFactory_1());
-    editorCell.addEditorCell(createAlternation_0());
+    editorCell.addEditorCell(createCustomFactory_5());
     editorCell.addEditorCell(createRefNode_0());
     editorCell.addEditorCell(createAlternation_1());
     editorCell.addEditorCell(createRefNode_2());
@@ -125,7 +126,7 @@ import org.jetbrains.mps.openapi.language.SProperty;
     return editorCell;
   }
   private EditorCell createCustomFactory_1() {
-    return createCustomFactory_0(getEditorContext(), myNode);
+    return createCustomFactory_0(getEditorContext(), getNode());
   }
   private EditorCell createCustomFactory_2(final EditorContext editorContext, final SNode node) {
 
@@ -139,7 +140,7 @@ import org.jetbrains.mps.openapi.language.SProperty;
     return editorCell;
   }
   private EditorCell createCustomFactory_3() {
-    return createCustomFactory_2(getEditorContext(), myNode);
+    return createCustomFactory_2(getEditorContext(), getNode());
   }
   private EditorCell createReadOnlyModelAccessor_0() {
     EditorCell_Property editorCell = EditorCell_Property.create(getEditorContext(), new ModelAccessor.ReadOnly() {
@@ -167,27 +168,39 @@ import org.jetbrains.mps.openapi.language.SProperty;
       return new EditorMenuDescriptorBase("replace node (custom node concept: " + "Expression" + ")", new SNodePointer("r:8405f486-53b5-4fe6-af3e-7f68358bd631(org.iets3.core.expr.base.editor)", "1790111001740719990"));
     }
   }
+  private EditorCell createCustomFactory_4(final EditorContext editorContext, final SNode node) {
+
+
+    final EditorCell cell = createAlternation_0();
+    EditorCell editorCell = ((_FunctionTypes._return_P0_E0<EditorCell>) () -> cell).invoke();
+    Style style = new StyleImpl();
+    new iets3KeywordStyleClass(this).apply(style, editorCell);
+    editorCell.getStyle().putAll(style);
+    return editorCell;
+  }
+  private EditorCell createCustomFactory_5() {
+    return createCustomFactory_4(getEditorContext(), getNode());
+  }
   private EditorCell createAlternation_0() {
     boolean alternationCondition = true;
-    alternationCondition = nodeCondition_jcqzj0_a1a0a();
+    alternationCondition = nodeCondition_jcqzj0_a0b0a0();
     EditorCell editorCell = null;
     if (alternationCondition) {
-      editorCell = createCustomFactory_5();
+      editorCell = createCustomFactory_7();
     } else {
       editorCell = createSideTransformationSectionCell_0();
     }
     return editorCell;
   }
-  private boolean nodeCondition_jcqzj0_a1a0a() {
+  private boolean nodeCondition_jcqzj0_a0b0a0() {
     IFlagModelAccess access = new DefaultFlagModelAccess(PROPS.complete$PYwr);
     if (!(access.read(myNode))) {
       return false;
     }
 
-
     return true;
   }
-  private EditorCell createCustomFactory_4(final EditorContext editorContext, final SNode node) {
+  private EditorCell createCustomFactory_6(final EditorContext editorContext, final SNode node) {
 
 
     final EditorCell cell = createConstant_0();
@@ -210,8 +223,8 @@ import org.jetbrains.mps.openapi.language.SProperty;
     }).invoke();
     return editorCell;
   }
-  private EditorCell createCustomFactory_5() {
-    return createCustomFactory_4(getEditorContext(), myNode);
+  private EditorCell createCustomFactory_7() {
+    return createCustomFactory_6(getEditorContext(), getNode());
   }
   private EditorCell createConstant_0() {
     EditorCell_Constant editorCell = new EditorCell_Constant(getEditorContext(), myNode, "complete");
@@ -226,13 +239,13 @@ import org.jetbrains.mps.openapi.language.SProperty;
     SideTransformationHolderCell editorCell = new SideTransformationHolderCell(getEditorContext(), myNode, null, "flag 'complete'") {
       @Override
       public List<MenuPart<TransformationMenuItem, TransformationMenuContext>> createMenuParts() {
-        return ListSequence.fromListAndArray(new ArrayList<MenuPart<TransformationMenuItem, TransformationMenuContext>>(), new GenericMenuPart_a0a1a0a());
+        return ListSequence.fromListAndArray(new ArrayList<MenuPart<TransformationMenuItem, TransformationMenuContext>>(), new GenericMenuPart_a0a0b0a0());
       }
     };
-    editorCell.setCellId("SideTransformationSectionCell_jcqzj0_a1a0a");
+    editorCell.setCellId("SideTransformationSectionCell_jcqzj0_a0b0a0");
     return editorCell;
   }
-  private class GenericMenuPart_a0a1a0a implements MenuPart<TransformationMenuItem, TransformationMenuContext> {
+  private class GenericMenuPart_a0a0b0a0 implements MenuPart<TransformationMenuItem, TransformationMenuContext> {
 
     @NotNull
     @Override
@@ -245,6 +258,11 @@ import org.jetbrains.mps.openapi.language.SProperty;
           EditorContext editorContext = ctx.getEditorContext();
           IFlagModelAccess access = new DefaultFlagModelAccess(PROPS.complete$PYwr);
           boolean applicable = !(access.read(node));
+          applicable &= new Object() {
+            public boolean query() {
+              return EditorCustomizationConfigHelper.getConfig().isFlagCellSideTransformationActivated(EditorCustomizationConfigHelper.getIdentifier(CONCEPTS.TryExpression$s4, PROPS.complete$PYwr), subconcept, node, editorContext);
+            }
+          }.query();
           applicable &= !(GrammarCellsUtil.isProperty(ctx.getEditorContext().getSelectedCell())) || ctx.getMenuLocation() != MenuLocations.RIGHT_SIDE_TRANSFORM;
           return applicable;
         }
@@ -258,7 +276,8 @@ import org.jetbrains.mps.openapi.language.SProperty;
             SNode node = ctx.getNode();
             String originalText = super.getShortDescriptionText(pattern);
             EditorContext editorContext = ctx.getEditorContext();
-            return "check that all error clauses are present";
+            String descriptiontext = EditorCustomizationConfigHelper.getConfig().getFlagCellDescriptionText(EditorCustomizationConfigHelper.getIdentifier(CONCEPTS.TryExpression$s4, PROPS.complete$PYwr), originalText, editorContext);
+            return ((descriptiontext != null && descriptiontext.length() > 0) ? descriptiontext : "a try expression that checks that all error clauses are present");
           }
           public String getMatchingText(String pattern) {
             return "complete";
@@ -344,7 +363,7 @@ import org.jetbrains.mps.openapi.language.SProperty;
     alternationCondition = nodeCondition_jcqzj0_a3a0a();
     EditorCell editorCell = null;
     if (alternationCondition) {
-      editorCell = createCustomFactory_7();
+      editorCell = createCustomFactory_9();
     } else {
       editorCell = createSideTransformationSectionCell_1();
     }
@@ -353,10 +372,10 @@ import org.jetbrains.mps.openapi.language.SProperty;
   private boolean nodeCondition_jcqzj0_a3a0a() {
     return Sequence.fromIterable(AttributeOperations.getChildNodesAndAttributes(myNode, LINKS.optionalName$AhFr)).isNotEmpty();
   }
-  private EditorCell createCustomFactory_6(final EditorContext editorContext, final SNode node) {
+  private EditorCell createCustomFactory_8(final EditorContext editorContext, final SNode node) {
 
 
-    final EditorCell cell = createCustomFactory_9();
+    final EditorCell cell = createCustomFactory_11();
     EditorCell editorCell = ((_FunctionTypes._return_P0_E0<EditorCell>) () -> {
       cell.setAction(CellActionType.BACKSPACE, new CellActionWithReadAccess() {
         public void execute(EditorContext editorContext) {
@@ -380,10 +399,10 @@ import org.jetbrains.mps.openapi.language.SProperty;
     }).invoke();
     return editorCell;
   }
-  private EditorCell createCustomFactory_7() {
-    return createCustomFactory_6(getEditorContext(), myNode);
+  private EditorCell createCustomFactory_9() {
+    return createCustomFactory_8(getEditorContext(), getNode());
   }
-  private EditorCell createCustomFactory_8(final EditorContext editorContext, final SNode node) {
+  private EditorCell createCustomFactory_10(final EditorContext editorContext, final SNode node) {
 
 
     final EditorCell cell = createCollection_2();
@@ -407,8 +426,8 @@ import org.jetbrains.mps.openapi.language.SProperty;
     }).invoke();
     return editorCell;
   }
-  private EditorCell createCustomFactory_9() {
-    return createCustomFactory_8(getEditorContext(), myNode);
+  private EditorCell createCustomFactory_11() {
+    return createCustomFactory_10(getEditorContext(), getNode());
   }
   private EditorCell createCollection_2() {
     EditorCell_Collection editorCell = new EditorCell_Collection(getEditorContext(), myNode, new CellLayout_Indent());
@@ -512,6 +531,11 @@ import org.jetbrains.mps.openapi.language.SProperty;
             final SNode sourceNode = ctx.getNode();
             EditorContext editorContext = ctx.getEditorContext();
             SNode newNode = SNodeFactoryOperations.setNewChild(SNodeOperations.cast(sourceNode, CONCEPTS.TryExpression$s4), LINKS.optionalName$AhFr, null);
+            new Object() {
+              public void postprocess(SNode node) {
+                EditorCustomizationConfigHelper.getConfig().postProcessOptionalCell(EditorCustomizationConfigHelper.getIdentifier(CONCEPTS.TryExpression$s4, LINKS.optionalName$AhFr), node, editorContext);
+              }
+            }.postprocess(sourceNode);
           }
           @Override
           public SAbstractConcept getOutputConcept() {
@@ -524,7 +548,8 @@ import org.jetbrains.mps.openapi.language.SProperty;
             SNode node = ctx.getNode();
             String originalText = super.getShortDescriptionText(pattern);
             EditorContext editorContext = ctx.getEditorContext();
-            return "a name for the try expression";
+            String description = EditorCustomizationConfigHelper.getConfig().getOptionalCellDescriptionText(EditorCustomizationConfigHelper.getIdentifier(CONCEPTS.TryExpression$s4, LINKS.optionalName$AhFr), node, originalText, editorContext);
+            return ((description != null && description.length() > 0) ? description : "add a name for the try expression");
           }
         });
       }

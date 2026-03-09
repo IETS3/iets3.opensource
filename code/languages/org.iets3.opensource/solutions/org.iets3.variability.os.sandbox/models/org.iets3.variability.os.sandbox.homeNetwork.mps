@@ -100,9 +100,6 @@
       <concept id="3414566187106618468" name="org.iets3.variability.featuremodel.base.structure.ICalculateHashForUpdateWarning" flags="ngI" index="bVzmZ">
         <property id="3414566187106619445" name="__updateHash" index="bVyBI" />
       </concept>
-      <concept id="3989254429232883574" name="org.iets3.variability.featuremodel.base.structure.VariabilityModelChunk_old" flags="ng" index="12icEN">
-        <child id="3989254429232890937" name="contents_old" index="12i2BY" />
-      </concept>
       <concept id="3989254429233029895" name="org.iets3.variability.featuremodel.base.structure.Feature" flags="ng" index="12iwV3">
         <property id="3989254429233130872" name="subFeatureRelationship" index="12h82W" />
         <child id="8997672845436698678" name="attributes" index="21GevL" />
@@ -128,7 +125,6 @@
   </registry>
   <node concept="12icEM" id="7oSKjSJ25cu">
     <property role="TrG5h" value="HomeNetworkFeatures" />
-    <node concept="12i7jc" id="7oSKjSJ25cv" role="12i2BY" />
     <node concept="12iwZl" id="19VDUSODbI5" role="12i2BX">
       <property role="bVyBI" value="-2114197766" />
       <property role="0Rz4W" value="881601232" />
@@ -270,7 +266,6 @@
   </node>
   <node concept="12icEM" id="7oSKjSJ2nP$">
     <property role="TrG5h" value="Configurations" />
-    <node concept="12i7jc" id="7oSKjSJ2nP_" role="12i2BY" />
     <node concept="rqKB5" id="7oSKjSJ2z24" role="12i2BX">
       <property role="26YOJW" value="" />
       <property role="bVyBI" value="-141850337" />

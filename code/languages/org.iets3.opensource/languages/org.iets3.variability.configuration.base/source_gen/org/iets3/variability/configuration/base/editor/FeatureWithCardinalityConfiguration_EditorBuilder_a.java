@@ -59,7 +59,6 @@ import jetbrains.mps.editor.runtime.cells.EmptyCellAction;
 import jetbrains.mps.nodeEditor.cellLayout.CellLayout_Horizontal;
 import jetbrains.mps.nodeEditor.cells.EditorCell_Component;
 import javax.swing.JComponent;
-import org.iets3.variability.featuremodel.base.editor.FeatureConfigButton;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SConceptOperations;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations;
@@ -156,7 +155,7 @@ import org.jetbrains.mps.openapi.language.SConcept;
     }
   }
   private EditorCell createEnumCheckbox_1() {
-    return createEnumCheckbox_0(getEditorContext(), myNode);
+    return createEnumCheckbox_0(getEditorContext(), getNode());
   }
   private EditorCell createAlternation_0() {
     boolean alternationCondition = true;

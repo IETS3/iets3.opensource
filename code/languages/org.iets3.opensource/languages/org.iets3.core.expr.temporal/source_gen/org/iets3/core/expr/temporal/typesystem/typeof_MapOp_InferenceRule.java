@@ -33,7 +33,7 @@ public class typeof_MapOp_InferenceRule extends AbstractInferenceRule_Runtime im
             final SNode predType = typeCheckingContext.typeOf(SLinkOperations.getTarget(mapOp, LINKS.expr$CW3E), "r:782cab7d-c30f-4797-991c-cb17d0274086(org.iets3.core.expr.temporal.typesystem)", "7554398283340650019", true);
             typeCheckingContext.whenConcrete(predType, () -> {
               if (SNodeOperations.isInstanceOf(typeCheckingContext.getExpandedNode(predType), CONCEPTS.FunctionType$RQ)) {
-                final SNode ft = SNodeOperations.cast(typeCheckingContext.getExpandedNode(predType), CONCEPTS.FunctionType$RQ);
+                final SNode ft = SNodeOperations.as(typeCheckingContext.getExpandedNode(predType), CONCEPTS.FunctionType$RQ);
                 if (ListSequence.fromList(SLinkOperations.getChildren(ft, LINKS.argumentTypes$npDH)).count() != 1) {
                   {
                     final MessageTarget errorTarget = new NodeMessageTarget();
@@ -43,7 +43,7 @@ public class typeof_MapOp_InferenceRule extends AbstractInferenceRule_Runtime im
                   {
                     SNode _nodeToCheck_1029348928467 = mapOp;
                     EquationInfo _info_12389875345 = new EquationInfo(_nodeToCheck_1029348928467, null, "r:782cab7d-c30f-4797-991c-cb17d0274086(org.iets3.core.expr.temporal.typesystem)", "4048497906959721134", 0, null);
-                    typeCheckingContext.createGreaterThanInequality((SNode) typeCheckingContext.typeOf(ListSequence.fromList(SLinkOperations.getChildren(ft, LINKS.argumentTypes$npDH)).first(), "r:782cab7d-c30f-4797-991c-cb17d0274086(org.iets3.core.expr.temporal.typesystem)", "4048497906959721143", true), (SNode) SLinkOperations.getTarget(SNodeOperations.cast(typeCheckingContext.getExpandedNode(ctxType), CONCEPTS.TemporalType$oH), LINKS.baseType$ZN4a), false, true, _info_12389875345);
+                    typeCheckingContext.createGreaterThanInequality((SNode) typeCheckingContext.typeOf(ListSequence.fromList(SLinkOperations.getChildren(ft, LINKS.argumentTypes$npDH)).first(), "r:782cab7d-c30f-4797-991c-cb17d0274086(org.iets3.core.expr.temporal.typesystem)", "4048497906959721143", true), (SNode) SLinkOperations.getTarget(SNodeOperations.as(typeCheckingContext.getExpandedNode(ctxType), CONCEPTS.TemporalType$oH), LINKS.baseType$ZN4a), false, true, _info_12389875345);
                   }
                   {
                     SNode _nodeToCheck_1029348928467 = mapOp;

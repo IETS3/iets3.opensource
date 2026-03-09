@@ -120,6 +120,10 @@ public class TypesystemDescriptor extends BaseHelginsDescriptor {
       this.myNonTypesystemRules.add(nonTypesystemRule);
     }
     {
+      NonTypesystemRule_Runtime nonTypesystemRule = new check_DecTabOtherswiseDefault_NonTypesystemRule();
+      this.myNonTypesystemRules.add(nonTypesystemRule);
+    }
+    {
       NonTypesystemRule_Runtime nonTypesystemRule = new check_DecTreeNode_NonTypesystemRule();
       this.myNonTypesystemRules.add(nonTypesystemRule);
     }
@@ -166,7 +170,7 @@ public class TypesystemDescriptor extends BaseHelginsDescriptor {
       return PTF.createBooleanType();
     }
     public boolean isApplicable(SubtypingManager subtypingManager, SNode operation, SNode leftOperandType, SNode rightOperandType) {
-      return (boolean) TupleType__BehaviorDescriptor.hasSameStructure_id2ck7OjOKh8Y.invoke(SNodeOperations.cast(leftOperandType, CONCEPTS.TupleType$8E), SNodeOperations.cast(rightOperandType, CONCEPTS.TupleType$8E));
+      return (boolean) TupleType__BehaviorDescriptor.hasSameStructure_id2ck7OjOKh8Y.invoke(SNodeOperations.as(leftOperandType, CONCEPTS.TupleType$8E), SNodeOperations.as(rightOperandType, CONCEPTS.TupleType$8E));
     }
     @Override
     public void reportConflict(IRuleConflictWarningProducer producer) {

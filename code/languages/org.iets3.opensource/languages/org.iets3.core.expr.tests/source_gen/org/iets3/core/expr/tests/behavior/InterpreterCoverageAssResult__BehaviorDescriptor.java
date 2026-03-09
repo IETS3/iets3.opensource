@@ -14,6 +14,7 @@ import java.util.List;
 import java.util.Arrays;
 import org.jetbrains.annotations.NotNull;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
+import jetbrains.mps.smodel.adapter.ids.MetaIdByDeclaration;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
 import jetbrains.mps.internal.collections.runtime.ListSequence;
@@ -42,7 +43,8 @@ public final class InterpreterCoverageAssResult__BehaviorDescriptor extends Base
     if (SLinkOperations.getTarget(__thisNode__, LINKS.concept$EaN1) == null) {
       return null;
     }
-    return SLinkOperations.getTarget(__thisNode__, LINKS.concept$EaN1).getNodeId().toString();
+    // takes languageID and nodeID into account
+    return MetaIdByDeclaration.getConceptId(SLinkOperations.getTarget(__thisNode__, LINKS.concept$EaN1)).toString();
   }
   /*package*/ static void updateValues_id5L$H31Kf5$y(@NotNull SNode __thisNode__, SNode updatedResult) {
     SPropertyOperations.assign(__thisNode__, PROPS.comment$tCAa, SPropertyOperations.getString(SNodeOperations.cast(updatedResult, CONCEPTS.InterpreterCoverageAssResult$oe), PROPS.comment$tCAa));

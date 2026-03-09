@@ -44,6 +44,7 @@ import jetbrains.mps.openapi.editor.cells.CellActionType;
 import com.mbeddr.mpsutil.grammarcells.runtime.CellActionWithReadAccess;
 import com.mbeddr.mpsutil.grammarcells.runtime.SavedCaretPosition;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
+import com.mbeddr.mpsutil.grammarcells.runtime.DelegateToParentCellAction;
 import jetbrains.mps.lang.editor.cellProviders.SingleRoleCellProvider;
 import jetbrains.mps.editor.runtime.impl.cellActions.CellAction_DeleteSmart;
 import jetbrains.mps.openapi.editor.cells.DefaultSubstituteInfo;
@@ -132,9 +133,9 @@ import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
     }
     @Override
     protected List<MenuPart<TransformationMenuItem, TransformationMenuContext>> getParts() {
-      return Arrays.<MenuPart<TransformationMenuItem, TransformationMenuContext>>asList(new GenericMenuPart_a0a1a0_5(), new TMP_Action_jzv0jz_b0a1a0());
+      return Arrays.<MenuPart<TransformationMenuItem, TransformationMenuContext>>asList(new GenericMenuPart_a0a1a0_2(), new TMP_Action_jzv0jz_b0a1a0());
     }
-    private class GenericMenuPart_a0a1a0_5 implements MenuPart<TransformationMenuItem, TransformationMenuContext> {
+    private class GenericMenuPart_a0a1a0_2 implements MenuPart<TransformationMenuItem, TransformationMenuContext> {
 
       @NotNull
       @Override
@@ -191,7 +192,7 @@ import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
       return jetbrains.mps.nodeEditor.cells.EditorCell_Collection.createVertical(editorContext, node);
     }
 
-    final EditorCell cell = createRefNode_0();
+    final EditorCell cell = createCustomFactory_3();
     EditorCell editorCell = ((_FunctionTypes._return_P0_E0<EditorCell>) () -> {
       cell.setAction(CellActionType.BACKSPACE, new CellActionWithReadAccess() {
         public void execute(EditorContext editorContext) {
@@ -216,17 +217,49 @@ import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
     return editorCell;
   }
   private EditorCell createCustomFactory_1() {
-    return createCustomFactory_0(getEditorContext(), myNode);
+    return createCustomFactory_0(getEditorContext(), getNode());
+  }
+  private EditorCell createCustomFactory_2(final EditorContext editorContext, final SNode node) {
+
+    if (!(new Object() {
+      public boolean showWrapped() {
+        return Sequence.fromIterable(AttributeOperations.getChildNodesAndAttributes(myNode, LINKS.cardinality$$N8P)).isNotEmpty();
+      }
+    }.showWrapped())) {
+      return jetbrains.mps.nodeEditor.cells.EditorCell_Collection.createVertical(editorContext, node);
+    }
+
+    final EditorCell cell = createRefNode_0();
+    EditorCell editorCell = ((_FunctionTypes._return_P0_E0<EditorCell>) () -> {
+      new Object() {
+        public void removeDeleteAction(EditorCell descendantCell) {
+          if (descendantCell.getSNode() == myNode) {
+            descendantCell.setAction(CellActionType.DELETE, new DelegateToParentCellAction(descendantCell, CellActionType.DELETE));
+            descendantCell.setAction(CellActionType.BACKSPACE, new DelegateToParentCellAction(descendantCell, CellActionType.BACKSPACE));
+            if (descendantCell instanceof EditorCell_Collection) {
+              for (EditorCell childCell : Sequence.fromIterable(((EditorCell_Collection) descendantCell))) {
+                removeDeleteAction(childCell);
+              }
+            }
+          }
+        }
+      }.removeDeleteAction(cell);
+      return cell;
+    }).invoke();
+    return editorCell;
+  }
+  private EditorCell createCustomFactory_3() {
+    return createCustomFactory_2(getEditorContext(), getNode());
   }
   private EditorCell createRefNode_0() {
-    SingleRoleCellProvider provider = new cardinalitySingleRoleHandler_jzv0jz_a2a0(myNode, LINKS.cardinality$$N8P, getEditorContext());
+    SingleRoleCellProvider provider = new cardinalitySingleRoleHandler_jzv0jz_a0c0a(myNode, LINKS.cardinality$$N8P, getEditorContext());
     return provider.createCell();
   }
-  private static class cardinalitySingleRoleHandler_jzv0jz_a2a0 extends SingleRoleCellProvider {
+  private static class cardinalitySingleRoleHandler_jzv0jz_a0c0a extends SingleRoleCellProvider {
     @NotNull
     private SNode myNode;
 
-    public cardinalitySingleRoleHandler_jzv0jz_a2a0(SNode ownerNode, SContainmentLink containmentLink, EditorContext context) {
+    public cardinalitySingleRoleHandler_jzv0jz_a0c0a(SNode ownerNode, SContainmentLink containmentLink, EditorContext context) {
       super(containmentLink, context);
       myNode = ownerNode;
     }

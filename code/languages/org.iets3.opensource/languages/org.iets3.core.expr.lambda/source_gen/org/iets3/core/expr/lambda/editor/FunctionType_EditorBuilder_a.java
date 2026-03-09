@@ -65,6 +65,7 @@ import jetbrains.mps.smodel.action.SNodeFactoryOperations;
 import com.mbeddr.mpsutil.grammarcells.runtime.CellActionWithReadAccess;
 import com.mbeddr.mpsutil.grammarcells.runtime.SavedCaretPosition;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
+import com.mbeddr.mpsutil.grammarcells.runtime.DelegateToParentCellAction;
 import jetbrains.mps.lang.editor.cellProviders.SingleRoleCellProvider;
 import jetbrains.mps.editor.runtime.impl.cellActions.CellAction_DeleteSmart;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
@@ -126,7 +127,7 @@ import org.jetbrains.mps.openapi.language.SConcept;
     return editorCell;
   }
   private EditorCell createCustomFactory_1() {
-    return createCustomFactory_0(getEditorContext(), myNode);
+    return createCustomFactory_0(getEditorContext(), getNode());
   }
   private EditorCell createCustomFactory_2(final EditorContext editorContext, final SNode node) {
 
@@ -140,7 +141,7 @@ import org.jetbrains.mps.openapi.language.SConcept;
     return editorCell;
   }
   private EditorCell createCustomFactory_3() {
-    return createCustomFactory_2(getEditorContext(), myNode);
+    return createCustomFactory_2(getEditorContext(), getNode());
   }
   private EditorCell createReadOnlyModelAccessor_0() {
     EditorCell_Property editorCell = EditorCell_Property.create(getEditorContext(), new ModelAccessor.ReadOnly() {
@@ -359,7 +360,7 @@ import org.jetbrains.mps.openapi.language.SConcept;
       return jetbrains.mps.nodeEditor.cells.EditorCell_Collection.createVertical(editorContext, node);
     }
 
-    final EditorCell cell = createRefNode_0();
+    final EditorCell cell = createCustomFactory_7();
     EditorCell editorCell = ((_FunctionTypes._return_P0_E0<EditorCell>) () -> {
       cell.setAction(CellActionType.BACKSPACE, new CellActionWithReadAccess() {
         public void execute(EditorContext editorContext) {
@@ -384,17 +385,49 @@ import org.jetbrains.mps.openapi.language.SConcept;
     return editorCell;
   }
   private EditorCell createCustomFactory_5() {
-    return createCustomFactory_4(getEditorContext(), myNode);
+    return createCustomFactory_4(getEditorContext(), getNode());
+  }
+  private EditorCell createCustomFactory_6(final EditorContext editorContext, final SNode node) {
+
+    if (!(new Object() {
+      public boolean showWrapped() {
+        return Sequence.fromIterable(AttributeOperations.getChildNodesAndAttributes(myNode, LINKS.effect$V$Pd)).isNotEmpty();
+      }
+    }.showWrapped())) {
+      return jetbrains.mps.nodeEditor.cells.EditorCell_Collection.createVertical(editorContext, node);
+    }
+
+    final EditorCell cell = createRefNode_0();
+    EditorCell editorCell = ((_FunctionTypes._return_P0_E0<EditorCell>) () -> {
+      new Object() {
+        public void removeDeleteAction(EditorCell descendantCell) {
+          if (descendantCell.getSNode() == myNode) {
+            descendantCell.setAction(CellActionType.DELETE, new DelegateToParentCellAction(descendantCell, CellActionType.DELETE));
+            descendantCell.setAction(CellActionType.BACKSPACE, new DelegateToParentCellAction(descendantCell, CellActionType.BACKSPACE));
+            if (descendantCell instanceof EditorCell_Collection) {
+              for (EditorCell childCell : Sequence.fromIterable(((EditorCell_Collection) descendantCell))) {
+                removeDeleteAction(childCell);
+              }
+            }
+          }
+        }
+      }.removeDeleteAction(cell);
+      return cell;
+    }).invoke();
+    return editorCell;
+  }
+  private EditorCell createCustomFactory_7() {
+    return createCustomFactory_6(getEditorContext(), getNode());
   }
   private EditorCell createRefNode_0() {
-    SingleRoleCellProvider provider = new effectSingleRoleHandler_bqk3nx_a4a0(myNode, LINKS.effect$V$Pd, getEditorContext());
+    SingleRoleCellProvider provider = new effectSingleRoleHandler_bqk3nx_a0e0a(myNode, LINKS.effect$V$Pd, getEditorContext());
     return provider.createCell();
   }
-  private static class effectSingleRoleHandler_bqk3nx_a4a0 extends SingleRoleCellProvider {
+  private static class effectSingleRoleHandler_bqk3nx_a0e0a extends SingleRoleCellProvider {
     @NotNull
     private SNode myNode;
 
-    public effectSingleRoleHandler_bqk3nx_a4a0(SNode ownerNode, SContainmentLink containmentLink, EditorContext context) {
+    public effectSingleRoleHandler_bqk3nx_a0e0a(SNode ownerNode, SContainmentLink containmentLink, EditorContext context) {
       super(containmentLink, context);
       myNode = ownerNode;
     }

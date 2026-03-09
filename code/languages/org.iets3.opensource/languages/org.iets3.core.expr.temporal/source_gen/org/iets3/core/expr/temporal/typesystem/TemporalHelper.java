@@ -16,7 +16,7 @@ import org.jetbrains.mps.openapi.language.SContainmentLink;
 public class TemporalHelper {
 
   /**
-   * Unwraps a node, like ConstantRef, recursively until a DateLiteral is reached or unwrapping is not 
+   * Unwraps a node, like ConstantRef, recursively until a DateLiteral is reached or unwrapping is not
    * possible anymore, e.g. an unhandled concept is used for wrapping
    * 
    * @param wrapper the node that should be unwrapper to retrieve the DateLiteral
@@ -32,14 +32,14 @@ public class TemporalHelper {
       boolean noneMatched = true;
       if (noneMatched && SConceptOperations.isSubConceptOf(cncpt, CONCEPTS.ConstantRef$5J)) {
         noneMatched = false;
-        unwrapped = SLinkOperations.getTarget(SLinkOperations.getTarget(SNodeOperations.cast(unwrapped, CONCEPTS.ConstantRef$5J), LINKS.constant$YVF7), LINKS.expr$CW3E);
+        unwrapped = SLinkOperations.getTarget(SLinkOperations.getTarget(SNodeOperations.as(unwrapped, CONCEPTS.ConstantRef$5J), LINKS.constant$YVF7), LINKS.expr$CW3E);
       }
       if (noneMatched) {
         unwrapped = null;
       }
     }
 
-    return ((unwrapped != null) ? SNodeOperations.cast(unwrapped, CONCEPTS.DateLiteral$RZ) : null);
+    return ((unwrapped != null) ? SNodeOperations.as(unwrapped, CONCEPTS.DateLiteral$RZ) : null);
   }
 
   private static final class CONCEPTS {

@@ -19,6 +19,7 @@ import jetbrains.mps.internal.collections.runtime.ListSequence;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SConceptOperations;
 import com.mbeddr.doc.behavior.TextParagraph__BehaviorDescriptor;
+import org.apache.commons.lang3.StringUtils;
 import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
@@ -39,8 +40,10 @@ public final class AbstractRequirement__BehaviorDescriptor extends BaseBHDescrip
   public static final SMethod<String> getNameFirstLetter_id7Kc02r7ViA5 = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("getNameFirstLetter").modifiers(8, AccessPrivileges.PROTECTED).concept(CONCEPT).baseMethodId(8938519526986557829L).languageId(0x951b463b8427a245L, 0xa3c6f64241b744cbL).build2();
   public static final SMethod<String> getDisplayName_id7gL8KYmPHWW = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("getDisplayName").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(8372511732120608572L).languageId(0x951b463b8427a245L, 0xa3c6f64241b744cbL).build2();
   public static final SMethod<Boolean> suppressTags_id6Q6YvW0IOIs = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("suppressTags").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(7892270270637624220L).languageId(0x951b463b8427a245L, 0xa3c6f64241b744cbL).build2();
+  public static final SMethod<String> getIndent_id4zL1IiCQnzF = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("getIndent").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5255989819273214187L).languageId(0x951b463b8427a245L, 0xa3c6f64241b744cbL).build2();
+  public static final SMethod<Boolean> showChildReqs_id4zL1IiCStbX = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("showChildReqs").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5255989819273761533L).languageId(0x951b463b8427a245L, 0xa3c6f64241b744cbL).build2();
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(qualificationPath_id7Dcax7AecRI, getFqName_idhEwIO9y, addChild_id7Dcax7AeLVS, addSibling_id7Dcax7AghL2, prepareNewReq_id7Dcax7Agpw_, initializeAddedReq_idaOl9Vl0j4a, getNameFirstLetter_id7Kc02r7ViA5, getDisplayName_id7gL8KYmPHWW, suppressTags_id6Q6YvW0IOIs);
+  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(qualificationPath_id7Dcax7AecRI, getFqName_idhEwIO9y, addChild_id7Dcax7AeLVS, addSibling_id7Dcax7AghL2, prepareNewReq_id7Dcax7Agpw_, initializeAddedReq_idaOl9Vl0j4a, getNameFirstLetter_id7Kc02r7ViA5, getDisplayName_id7gL8KYmPHWW, suppressTags_id6Q6YvW0IOIs, getIndent_id4zL1IiCQnzF, showChildReqs_id4zL1IiCStbX);
 
   private static void ___init___(@NotNull SNode __thisNode__) {
   }
@@ -89,6 +92,18 @@ public final class AbstractRequirement__BehaviorDescriptor extends BaseBHDescrip
   /*package*/ static boolean suppressTags_id6Q6YvW0IOIs(@NotNull SNode __thisNode__) {
     return false;
   }
+  /*package*/ static String getIndent_id4zL1IiCQnzF(@NotNull SNode __thisNode__) {
+    int c = ListSequence.fromList(SNodeOperations.getNodeAncestors(__thisNode__, CONCEPTS.AbstractRequirement$yu, false)).count();
+    return StringUtils.repeat("  ", c);
+  }
+  /*package*/ static boolean showChildReqs_id4zL1IiCStbX(@NotNull SNode __thisNode__) {
+    SNode chunk = SNodeOperations.getNodeAncestor(__thisNode__, CONCEPTS.RequirementsChunk$eX, false, false);
+    if ((chunk == null)) {
+      return true;
+    }
+
+    return !(SPropertyOperations.getBoolean(chunk, PROPS.hideEmptyChildReqsSection$guzy) && ListSequence.fromList(SLinkOperations.getChildren(__thisNode__, LINKS.requirements$OjTk)).isEmpty());
+  }
 
   /*package*/ AbstractRequirement__BehaviorDescriptor() {
   }
@@ -124,6 +139,10 @@ public final class AbstractRequirement__BehaviorDescriptor extends BaseBHDescrip
         return (T) ((String) getDisplayName_id7gL8KYmPHWW(node));
       case 8:
         return (T) ((Boolean) suppressTags_id6Q6YvW0IOIs(node));
+      case 9:
+        return (T) ((String) getIndent_id4zL1IiCQnzF(node));
+      case 10:
+        return (T) ((Boolean) showChildReqs_id4zL1IiCStbX(node));
       default:
         throw new BHMethodNotFoundException(this, method);
     }
@@ -155,12 +174,14 @@ public final class AbstractRequirement__BehaviorDescriptor extends BaseBHDescrip
 
   private static final class PROPS {
     /*package*/ static final SProperty name$MnvL = MetaAdapterFactory.getProperty(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L, 0x110396ec041L, "name");
+    /*package*/ static final SProperty hideEmptyChildReqsSection$guzy = MetaAdapterFactory.getProperty(0xa3c6f64241b744cbL, 0x951b463b8427a245L, 0x477d8ab2bc81949cL, 0x48f106e4a8e1b075L, "hideEmptyChildReqsSection");
   }
 
   private static final class CONCEPTS {
     /*package*/ static final SConcept AbstractRequirement$yu = MetaAdapterFactory.getConcept(0xa3c6f64241b744cbL, 0x951b463b8427a245L, 0x477d8ab2bc8195aeL, "org.iets3.req.core.structure.AbstractRequirement");
     /*package*/ static final SInterfaceConcept INamedConcept$Kd = MetaAdapterFactory.getInterfaceConcept(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L, "jetbrains.mps.lang.core.structure.INamedConcept");
     /*package*/ static final SConcept TextParagraph$NS = MetaAdapterFactory.getConcept(0x2374bc907e3741f1L, 0xa9c4c2e35194c36aL, 0x2e7fd03a4b7ccef2L, "com.mbeddr.doc.structure.TextParagraph");
+    /*package*/ static final SConcept RequirementsChunk$eX = MetaAdapterFactory.getConcept(0xa3c6f64241b744cbL, 0x951b463b8427a245L, 0x477d8ab2bc81949cL, "org.iets3.req.core.structure.RequirementsChunk");
   }
 
   private static final class LINKS {

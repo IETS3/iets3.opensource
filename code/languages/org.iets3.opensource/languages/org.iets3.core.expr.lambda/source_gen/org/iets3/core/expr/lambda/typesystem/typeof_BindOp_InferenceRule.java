@@ -27,7 +27,7 @@ public class typeof_BindOp_InferenceRule extends AbstractInferenceRule_Runtime i
     {
       final SNode ct = typeCheckingContext.typeOf(IDotTarget__BehaviorDescriptor.contextExpression_id6zmBjqUivyF.invoke(bind), "r:3b5d2a4d-f539-4854-bc25-c43da4b5202c(org.iets3.core.expr.lambda.typesystem)", "2807135271606960001", true);
       typeCheckingContext.whenConcrete(ct, () -> {
-        SNode ft = SNodeOperations.cast(typeCheckingContext.getExpandedNode(ct), CONCEPTS.FunctionType$RQ);
+        SNode ft = SNodeOperations.as(typeCheckingContext.getExpandedNode(ct), CONCEPTS.FunctionType$RQ);
         if (ListSequence.fromList(SLinkOperations.getChildren(bind, LINKS.args$6yy4)).count() == 0) {
           {
             final MessageTarget errorTarget = new NodeMessageTarget();

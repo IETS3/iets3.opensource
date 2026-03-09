@@ -23,11 +23,20 @@ import java.awt.event.ActionEvent;
 import jetbrains.mps.ide.project.ProjectHelper;
 import javax.swing.JToggleButton;
 import java.io.File;
+import java.nio.file.Path;
+import java.nio.file.Paths;
+import java.nio.file.Files;
+import java.io.IOException;
 import org.iets3.variability.artifacts.base.behavior.SkeletonTree;
 import org.iets3.variability.artifacts.base.plugin.IArtifactAlgorithms;
 import java.io.BufferedWriter;
 import java.io.FileWriter;
-import java.io.IOException;
+import java.io.BufferedReader;
+import java.io.InputStreamReader;
+import java.util.List;
+import jetbrains.mps.internal.collections.runtime.ListSequence;
+import java.util.ArrayList;
+import jetbrains.mps.baseLanguage.logging.rt.LogContext;
 import javax.swing.JComponent;
 
 public class SkeletonTreeViewer_Tool extends GeneratedTool {
@@ -104,7 +113,24 @@ public class SkeletonTreeViewer_Tool extends GeneratedTool {
     String path = SkeletonTreeViewer_Tool.this.mpsProject.getProjectFile().getParent() + "/.temp_gen/dotfiles/";
     new File(path).mkdirs();
     File dotfile = new File(path, "out.dot");
+    String imgpath = dotfile.getAbsolutePath() + "." + outtype;
     if (withRebuild) {
+      // remove old output format file, if any
+      Path oldImage = Paths.get(imgpath);
+      try {
+        boolean wasDeleted = Files.deleteIfExists(oldImage);
+        if (wasDeleted) {
+          if (LOG.isInfoLevel()) {
+            LOG.info("Old " + outtype + " file has been deleted successfully");
+          }
+        }
+      } catch (IOException e) {
+        if (LOG.isErrorLevel()) {
+          LOG.error("Deletion of previous " + outtype + " file failed (" + e.getMessage() + ")");
+        }
+      }
+
+      // create new graph and convert it to output format
       SkeletonTree skeltree = IArtifactAlgorithms.instance().skeletonTreeBuilder().buildTree(SkeletonTreeViewer_Tool.this.ivaa);
       String graph = skeltree.buildGraph(true);
       try {
@@ -112,9 +138,29 @@ public class SkeletonTreeViewer_Tool extends GeneratedTool {
         writer.append(graph);
         writer.close();
 
-        String cmd = "dot -T" + outtype + " -O " + dotfile.getAbsolutePath();
-        Process exec = Runtime.getRuntime().exec(cmd);
-        exec.waitFor();
+        ProcessBuilder pb = new ProcessBuilder("dot", "-T" + outtype, "-O ", dotfile.getAbsolutePath());
+        pb.redirectErrorStream(true);
+        Process process = pb.start();
+        BufferedReader reader = new BufferedReader(new InputStreamReader(process.getInputStream()));
+        List<String> output = ListSequence.fromList(new ArrayList<String>());
+        String line;
+        while ((line = reader.readLine()) != null) {
+          ListSequence.fromList(output).addElement(line);
+        }
+        int result = process.waitFor();
+        if (result != 0) {
+          if (LOG.isErrorLevel()) {
+            LOG.error("Execution of dot-tool for image rendering failed (ret=" + result + ")");
+          }
+          for (String msg : output) {
+            if (LOG.isInfoLevel()) {
+              LOG.info("> " + msg);
+            }
+            if (msg.startsWith("Error:")) {
+              LogContext.with(SkeletonTreeViewer_Tool.class, null, null, null).error("Graphviz problem: " + msg);
+            }
+          }
+        }
       } catch (IOException e) {
         if (LOG.isErrorLevel()) {
           LOG.error("Cannot create intermediate file: " + e.getMessage());
@@ -124,10 +170,10 @@ public class SkeletonTreeViewer_Tool extends GeneratedTool {
           LOG.warning("Graph rendering process has been interrupted: " + e.getMessage());
         }
       }
+
     }
 
     SkelTreeHTMLBuilder builder = new SkelTreeHTMLBuilder();
-    String imgpath = dotfile.getAbsolutePath() + "." + outtype;
     String html = builder.genHTML(SkeletonTreeViewer_Tool.this.ivaa, imgpath, SkeletonTreeViewer_Tool.this.scaleToFit);
     SkeletonTreeViewer_Tool.this.browser.loadHTML(html);
   }

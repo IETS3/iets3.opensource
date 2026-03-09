@@ -41,14 +41,14 @@ public class check_FunCompose_NonTypesystemRule extends AbstractNonTypesystemRul
       return;
     }
 
-    if (ListSequence.fromList(SLinkOperations.getChildren(SNodeOperations.cast(leftType, CONCEPTS.FunctionType$RQ), LINKS.argumentTypes$npDH)).count() != 1) {
+    if (ListSequence.fromList(SLinkOperations.getChildren(SNodeOperations.as(leftType, CONCEPTS.FunctionType$RQ), LINKS.argumentTypes$npDH)).count() != 1) {
       {
         final MessageTarget errorTarget = new NodeMessageTarget();
         IErrorReporter _reporter_2309309498 = typeCheckingContext.reportTypeError(SLinkOperations.getTarget(funCompose, LINKS.left$zxUa), "only functions with one argument can be composed", "r:3b5d2a4d-f539-4854-bc25-c43da4b5202c(org.iets3.core.expr.lambda.typesystem)", "6850639405182482699", null, errorTarget);
       }
     } else {
-      SNode rightReturn = SLinkOperations.getTarget(SNodeOperations.cast(rightType, CONCEPTS.FunctionType$RQ), LINKS.returnType$nq7J);
-      SNode leftInput = ListSequence.fromList(SLinkOperations.getChildren(SNodeOperations.cast(leftType, CONCEPTS.FunctionType$RQ), LINKS.argumentTypes$npDH)).first();
+      SNode rightReturn = SLinkOperations.getTarget(SNodeOperations.as(rightType, CONCEPTS.FunctionType$RQ), LINKS.returnType$nq7J);
+      SNode leftInput = ListSequence.fromList(SLinkOperations.getChildren(SNodeOperations.as(leftType, CONCEPTS.FunctionType$RQ), LINKS.argumentTypes$npDH)).first();
       if (!(TypecheckingFacade.getFromContext().isSubtype(rightReturn, leftInput))) {
         {
           final MessageTarget errorTarget = new NodeMessageTarget();

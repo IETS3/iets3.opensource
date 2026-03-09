@@ -26,7 +26,7 @@ public class coverage_StyleSheet {
         return null;
       }
       if (IDefaultCoverageAnalyzer.isIgnored(getNode())) {
-        return null;
+        return IDefaultCoverageAnalyzer.CODE_IGNORE;
       }
 
       String covStatus = IDefaultCoverageAnalyzer.getNodeCoverage(getNode()).getStatus();

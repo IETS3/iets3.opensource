@@ -25,7 +25,7 @@ public class check_AssignmentExpr_NonTypesystemRule extends AbstractNonTypesyste
   public void applyRule(final SNode ae, final TypeCheckingContext typeCheckingContext, IsApplicableStatus status) {
     String errorMessage = "The expression is not an ‹lvalue› An ‹lvalue› refers to a location in memory that can be assigned a value, such as a variable.";
     if (SNodeOperations.isInstanceOf(SLinkOperations.getTarget(ae, LINKS.left$zxUa), CONCEPTS.ICanBeLValue$lB)) {
-      if (!((boolean) ICanBeLValue__BehaviorDescriptor.isLValue_idaPhVmWYjn5.invoke(SNodeOperations.cast(SLinkOperations.getTarget(ae, LINKS.left$zxUa), CONCEPTS.ICanBeLValue$lB)))) {
+      if (!((boolean) ICanBeLValue__BehaviorDescriptor.isLValue_idaPhVmWYjn5.invoke(SNodeOperations.as(SLinkOperations.getTarget(ae, LINKS.left$zxUa), CONCEPTS.ICanBeLValue$lB)))) {
         {
           final MessageTarget errorTarget = new NodeMessageTarget();
           IErrorReporter _reporter_2309309498 = typeCheckingContext.reportTypeError(ae, errorMessage, "r:80cf2246-750c-4158-9056-a619ebcf894c(org.iets3.core.expr.base.typesystem)", "195141004745727372", null, errorTarget);

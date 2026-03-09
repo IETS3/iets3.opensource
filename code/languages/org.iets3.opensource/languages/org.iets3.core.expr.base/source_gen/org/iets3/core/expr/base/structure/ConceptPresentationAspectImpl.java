@@ -411,7 +411,7 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
         if (props_DotExpression == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
           cpb.shortDesc("a dot expression");
-          cpb.rawPresentation("DotExpression");
+          cpb.rawPresentation(".");
           props_DotExpression = cpb.create();
         }
         return props_DotExpression;

@@ -59,7 +59,7 @@ import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
     editorCell.setBig(true);
     setCellContext(editorCell);
     editorCell.addEditorCell(createCustomFactory_1());
-    editorCell.addEditorCell(createRefNode_0());
+    editorCell.addEditorCell(createCustomFactory_3());
     return editorCell;
   }
   private EditorCell createCustomFactory_0(final EditorContext editorContext, final SNode node) {
@@ -118,7 +118,7 @@ import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
     return editorCell;
   }
   private EditorCell createCustomFactory_1() {
-    return createCustomFactory_0(getEditorContext(), myNode);
+    return createCustomFactory_0(getEditorContext(), getNode());
   }
   private EditorCell createConstant_0() {
     EditorCell_Constant editorCell = new EditorCell_Constant(getEditorContext(), myNode, "!");
@@ -134,15 +134,35 @@ import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
   private Color _StyleParameter_QueryFunction_vjiyxy_a2a0a() {
     return IETS3Colors.TYPE.brighter();
   }
+  private EditorCell createCustomFactory_2(final EditorContext editorContext, final SNode node) {
+
+
+    final EditorCell cell = createCustomFactory_5();
+    EditorCell editorCell = ((_FunctionTypes._return_P0_E0<EditorCell>) () -> cell).invoke();
+    return editorCell;
+  }
+  private EditorCell createCustomFactory_3() {
+    return createCustomFactory_2(getEditorContext(), getNode());
+  }
+  private EditorCell createCustomFactory_4(final EditorContext editorContext, final SNode node) {
+
+
+    final EditorCell cell = createRefNode_0();
+    EditorCell editorCell = ((_FunctionTypes._return_P0_E0<EditorCell>) () -> cell).invoke();
+    return editorCell;
+  }
+  private EditorCell createCustomFactory_5() {
+    return createCustomFactory_4(getEditorContext(), getNode());
+  }
   private EditorCell createRefNode_0() {
-    SingleRoleCellProvider provider = new tagSingleRoleHandler_vjiyxy_b0(myNode, LINKS.tag$bwWW, getEditorContext());
+    SingleRoleCellProvider provider = new tagSingleRoleHandler_vjiyxy_a0b0(myNode, LINKS.tag$bwWW, getEditorContext());
     return provider.createCell();
   }
-  private static class tagSingleRoleHandler_vjiyxy_b0 extends SingleRoleCellProvider {
+  private static class tagSingleRoleHandler_vjiyxy_a0b0 extends SingleRoleCellProvider {
     @NotNull
     private SNode myNode;
 
-    public tagSingleRoleHandler_vjiyxy_b0(SNode ownerNode, SContainmentLink containmentLink, EditorContext context) {
+    public tagSingleRoleHandler_vjiyxy_a0b0(SNode ownerNode, SContainmentLink containmentLink, EditorContext context) {
       super(containmentLink, context);
       myNode = ownerNode;
     }

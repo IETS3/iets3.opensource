@@ -57,7 +57,7 @@ public class Pivot {
    * @return a new segment corresponding to this pivot
    */
   public Segment asSegment(String segmentName) {
-    return new Segment(pivotNode, segmentName, fmInclude, targetIVAA);
+    return new Segment(pivotNode, segmentName, fmInclude, targetIVAA, targetNode);
   }
 
   @Override

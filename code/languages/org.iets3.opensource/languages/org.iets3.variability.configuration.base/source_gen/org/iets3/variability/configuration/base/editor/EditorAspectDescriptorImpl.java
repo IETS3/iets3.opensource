@@ -13,6 +13,9 @@ import jetbrains.mps.openapi.editor.descriptor.ConceptEditor;
 import org.jetbrains.mps.openapi.language.SAbstractConcept;
 import java.util.Collections;
 import jetbrains.mps.openapi.editor.descriptor.ConceptEditorComponent;
+import java.util.function.Consumer;
+import org.jetbrains.mps.openapi.language.SLanguage;
+import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.openapi.editor.descriptor.TransformationMenu;
 import jetbrains.mps.openapi.editor.descriptor.SubstituteMenu;
 import jetbrains.mps.openapi.editor.descriptor.NamedMenuId;
@@ -59,8 +62,11 @@ public class EditorAspectDescriptorImpl extends EditorAspectDescriptorBase imple
     return Collections.emptyList();
   }
   private Collection<ConceptEditorComponent> getDeclaredEC_1(String editorComponentId) {
-    if ("org.iets3.variability.configuration.base.editor.AssignmentCauseEditor".equals(editorComponentId)) {
-      return Collections.singletonList(new AssignmentCauseEditor());
+    switch (editorComponentId) {
+      case "org.iets3.variability.configuration.base.editor.AssignmentCauseEditor":
+        return Collections.singletonList(new AssignmentCauseEditor());
+      case "org.iets3.variability.configuration.base.editor.FeatureAttrAssignmentEditor":
+        return Collections.singletonList(new FeatureAttrAssignmentEditor());
     }
     return Collections.emptyList();
   }
@@ -79,6 +85,10 @@ public class EditorAspectDescriptorImpl extends EditorAspectDescriptorBase imple
 
   public Collection<ConceptEditorHint> getHints() {
     return myHints;
+  }
+  @Override
+  public void employsHintsFrom(Consumer<SLanguage> consumer) {
+    consumer.accept(MetaAdapterFactory.getLanguage(0x5474e4cd66214b33L, 0xa39a75552543ba57L, "de.slisson.mps.conditionalEditor.hints"));
   }
 
   @NotNull

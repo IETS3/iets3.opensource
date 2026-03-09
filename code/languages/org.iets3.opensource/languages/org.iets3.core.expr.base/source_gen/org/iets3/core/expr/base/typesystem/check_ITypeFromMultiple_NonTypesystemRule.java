@@ -27,7 +27,7 @@ public class check_ITypeFromMultiple_NonTypesystemRule extends AbstractNonTypesy
     if (SNodeOperations.isInstanceOf(t, CONCEPTS.RuntimeErrorType$3c)) {
       {
         final MessageTarget errorTarget = new NodeMessageTarget();
-        IErrorReporter _reporter_2309309498 = typeCheckingContext.reportTypeError(fm, SPropertyOperations.getString(SNodeOperations.cast(t, CONCEPTS.RuntimeErrorType$3c), PROPS.errorText$leWQ), "r:80cf2246-750c-4158-9056-a619ebcf894c(org.iets3.core.expr.base.typesystem)", "1206081519717707389", null, errorTarget);
+        IErrorReporter _reporter_2309309498 = typeCheckingContext.reportTypeError(fm, SPropertyOperations.getString(SNodeOperations.as(t, CONCEPTS.RuntimeErrorType$3c), PROPS.errorText$leWQ), "r:80cf2246-750c-4158-9056-a619ebcf894c(org.iets3.core.expr.base.typesystem)", "1206081519717707389", null, errorTarget);
       }
     }
   }

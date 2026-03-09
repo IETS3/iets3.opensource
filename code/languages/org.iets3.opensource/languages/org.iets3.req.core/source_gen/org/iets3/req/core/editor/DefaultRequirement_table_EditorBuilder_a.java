@@ -14,16 +14,16 @@ import de.slisson.mps.tables.runtime.style.ITableStyleFactory;
 import jetbrains.mps.editor.runtime.style.StyleImpl;
 import jetbrains.mps.nodeEditor.cells.EditorCell_Error;
 import de.slisson.mps.tables.runtime.cells.PartialTableEditor;
+import com.mbeddr.mpsutil.editor.displayControl.behavior.ICanHide__BehaviorDescriptor;
 import java.util.List;
 import java.util.ArrayList;
+import org.iets3.req.core.behavior.AbstractRequirement__BehaviorDescriptor;
 import jetbrains.mps.internal.collections.runtime.ListSequence;
 import de.slisson.mps.tables.runtime.gridmodel.EditorCellGridLeaf;
 import jetbrains.mps.nodeEditor.cells.EditorCell_Collection;
 import jetbrains.mps.nodeEditor.cellLayout.CellLayout_Indent;
 import jetbrains.mps.nodeEditor.cells.EditorCell_Property;
 import jetbrains.mps.nodeEditor.cells.ModelAccessor;
-import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
-import org.apache.commons.lang3.StringUtils;
 import jetbrains.mps.openapi.editor.cells.CellActionType;
 import jetbrains.mps.editor.runtime.cells.EmptyCellAction;
 import jetbrains.mps.editor.runtime.style.StyleAttributes;
@@ -32,6 +32,7 @@ import jetbrains.mps.openapi.editor.menus.transformation.SPropertyInfo;
 import jetbrains.mps.nodeEditor.cells.SPropertyAccessor;
 import jetbrains.mps.nodeEditor.MPSFonts;
 import jetbrains.mps.nodeEditor.cellMenu.SPropertySubstituteInfo;
+import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.IAttributeDescriptor;
 import jetbrains.mps.internal.collections.runtime.Sequence;
 import java.util.Objects;
@@ -72,8 +73,8 @@ import de.slisson.mps.tables.runtime.gridmodel.EditorCellFactory;
 import jetbrains.mps.editor.runtime.cells.AbstractCellAction;
 import jetbrains.mps.nodeEditor.cellMenu.DefaultSChildSubstituteInfo;
 import de.slisson.mps.tables.runtime.gridmodel.IRowCreateHandler;
-import org.jetbrains.mps.openapi.language.SConcept;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
+import org.jetbrains.mps.openapi.language.SConcept;
 
 /*package*/ class DefaultRequirement_table_EditorBuilder_a extends AbstractEditorBuilder {
   @NotNull
@@ -130,16 +131,27 @@ import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
     }
   }
   private EditorCell createPartialTable_1() {
-    return createPartialTable_0(getEditorContext(), myNode);
+    return createPartialTable_0(getEditorContext(), getNode());
   }
   public Grid createStaticVertical_jcypnx_a0(final EditorContext editorContext, final SNode node) {
+    if (!(new Object() {
+      public boolean condition() {
+        return (boolean) ICanHide__BehaviorDescriptor.isVisible_id5I8v_DCodq4.invoke(node);
+      }
+    }.condition())) {
+      return new Grid();
+    }
     Grid grid = new Grid();
 
     List<Grid> children = new ArrayList<Grid>(2);
     if (true) {
       children.add(createStaticHorizontal_jcypnx_a0a(editorContext, node));
     }
-    if (true) {
+    if (new Object() {
+      public boolean condition() {
+        return (boolean) AbstractRequirement__BehaviorDescriptor.showChildReqs_id4zL1IiCStbX.invoke(node);
+      }
+    }.condition()) {
       children.add(createChildsVertical_jcypnx_b0a(editorContext, node));
     }
     int maxWidth = grid.getColumnHeadersSizeX();
@@ -235,8 +247,7 @@ import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
   private EditorCell createReadOnlyModelAccessor_0() {
     EditorCell_Property editorCell = EditorCell_Property.create(getEditorContext(), new ModelAccessor.ReadOnly() {
       public String getText() {
-        int c = ListSequence.fromList(SNodeOperations.getNodeAncestors(myNode, CONCEPTS.AbstractRequirement$yu, false)).count();
-        return StringUtils.repeat("  ", c);
+        return (String) AbstractRequirement__BehaviorDescriptor.getIndent_id4zL1IiCQnzF.invoke(myNode);
       }
     }, myNode);
     editorCell.setAction(CellActionType.DELETE, EmptyCellAction.getInstance());
@@ -711,6 +722,13 @@ import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
     return editorCell;
   }
   public Grid createChildsVertical_jcypnx_b0a(final EditorContext editorContext, final SNode node) {
+    if (!(new Object() {
+      public boolean condition() {
+        return (boolean) AbstractRequirement__BehaviorDescriptor.showChildReqs_id4zL1IiCStbX.invoke(node);
+      }
+    }.condition())) {
+      return new Grid();
+    }
     Grid grid = new Grid();
     GridAdapter gridAdapter = new GridAdapter(grid, editorContext, node);
 
@@ -785,15 +803,14 @@ import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
     return grid;
   }
 
-  private static final class CONCEPTS {
-    /*package*/ static final SConcept AbstractRequirement$yu = MetaAdapterFactory.getConcept(0xa3c6f64241b744cbL, 0x951b463b8427a245L, 0x477d8ab2bc8195aeL, "org.iets3.req.core.structure.AbstractRequirement");
-    /*package*/ static final SConcept PropertyAttribute$Gb = MetaAdapterFactory.getConcept(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x2eb1ad060897da56L, "jetbrains.mps.lang.core.structure.PropertyAttribute");
-    /*package*/ static final SConcept Tag$O4 = MetaAdapterFactory.getConcept(0xa3c6f64241b744cbL, 0x951b463b8427a245L, 0x477d8ab2bc895b1cL, "org.iets3.req.core.structure.Tag");
-  }
-
   private static final class PROPS {
     /*package*/ static final SProperty name$MnvL = MetaAdapterFactory.getProperty(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L, 0x110396ec041L, "name");
     /*package*/ static final SProperty title$RzQI = MetaAdapterFactory.getProperty(0xa3c6f64241b744cbL, 0x951b463b8427a245L, 0x477d8ab2bc8195aeL, 0x477d8ab2bc8195f3L, "title");
+  }
+
+  private static final class CONCEPTS {
+    /*package*/ static final SConcept PropertyAttribute$Gb = MetaAdapterFactory.getConcept(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x2eb1ad060897da56L, "jetbrains.mps.lang.core.structure.PropertyAttribute");
+    /*package*/ static final SConcept Tag$O4 = MetaAdapterFactory.getConcept(0xa3c6f64241b744cbL, 0x951b463b8427a245L, 0x477d8ab2bc895b1cL, "org.iets3.req.core.structure.Tag");
   }
 
   private static final class LINKS {

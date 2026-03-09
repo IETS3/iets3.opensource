@@ -30,7 +30,6 @@ import org.iets3.core.expr.base.behavior.ITraceRoot__BehaviorDescriptor;
 import org.iets3.core.expr.base.plugin.EffectHelper;
 import org.iets3.analysis.base.plugin.STF;
 import org.iets3.core.expr.base.behavior.Expression__BehaviorDescriptor;
-import org.iets3.core.expr.base.runtime.runtime.IdentifierConfiguratorAccess;
 import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
@@ -63,10 +62,8 @@ public final class Constant__BehaviorDescriptor extends BaseBHDescriptor {
   public static final SMethod<String> getPresentation_idhEwIMiw = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("getPresentation").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(1213877396640L).languageId(0x9b92103b95ca8c0cL, 0xceab519525ea4f22L).build2();
   public static final SMethod<String> getMatchingText_id69Qfsw3InJX = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("getMatchingText").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(7094926192234036221L).languageId(0x9b92103b95ca8c0cL, 0xceab519525ea4f22L).build2(SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""));
   public static final SMethod<String> getVisibleMatchingText_id69Qfsw3Ipre = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("getVisibleMatchingText").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(7094926192234043086L).languageId(0x9b92103b95ca8c0cL, 0xceab519525ea4f22L).build2(SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""));
-  public static final SMethod<Boolean> allowUmlaute_id5YygIlbih$m = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("allowUmlaute").modifiers(9, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(6891143932408305942L).languageId(0xbd9c05c0f8725a35L, 0x7b68d745a7b848b9L).build2();
-  public static final SMethod<Boolean> allowParagraph_id4ZH31cjGRan = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("allowParagraph").modifiers(9, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5759272774551171735L).languageId(0xbd9c05c0f8725a35L, 0x7b68d745a7b848b9L).build2();
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(getNodeFromWhichToDeriveType_id5aHkq2w4m8L, getErrorMessage_idZYPG76w9Fc, relevantType_id6wzrxL3bLaK, transformToFunction_id2KGel$SrnY1, getVariableName_id7BxfuU7QrrQ, getVariableType_id7BxfuU7QrsR, isVariableTypeInferred_id1996aX6uZ1A, isToplevelCoverageContent_id2hXd3rsZYy8, getChildrenForCoverage_id5IKJrJHNCE8, getVariableConstraints_id7BxfuU7Qruw, getDependentValues_id1xFBUnwWaWp, getDependenciesRelevantForCycleDetection_id59HbAIOYveX, getErrorMessageForElementInCycle_id2G8yZXxNStd, getRootTrace_id7obiejCh8Tv, isTraceAvailable_id7lHetQyBQe3, allowsEffectForNode_idORfz$DS6Ap, createSolverTask_id4pkidg67Lgb, getPresentation_idhEwIMiw, getMatchingText_id69Qfsw3InJX, getVisibleMatchingText_id69Qfsw3Ipre, allowUmlaute_id5YygIlbih$m, allowParagraph_id4ZH31cjGRan);
+  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(getNodeFromWhichToDeriveType_id5aHkq2w4m8L, getErrorMessage_idZYPG76w9Fc, relevantType_id6wzrxL3bLaK, transformToFunction_id2KGel$SrnY1, getVariableName_id7BxfuU7QrrQ, getVariableType_id7BxfuU7QrsR, isVariableTypeInferred_id1996aX6uZ1A, isToplevelCoverageContent_id2hXd3rsZYy8, getChildrenForCoverage_id5IKJrJHNCE8, getVariableConstraints_id7BxfuU7Qruw, getDependentValues_id1xFBUnwWaWp, getDependenciesRelevantForCycleDetection_id59HbAIOYveX, getErrorMessageForElementInCycle_id2G8yZXxNStd, getRootTrace_id7obiejCh8Tv, isTraceAvailable_id7lHetQyBQe3, allowsEffectForNode_idORfz$DS6Ap, createSolverTask_id4pkidg67Lgb, getPresentation_idhEwIMiw, getMatchingText_id69Qfsw3InJX, getVisibleMatchingText_id69Qfsw3Ipre);
 
   private static void ___init___(@NotNull SNode __thisNode__) {
   }
@@ -150,12 +147,6 @@ public final class Constant__BehaviorDescriptor extends BaseBHDescriptor {
   /*package*/ static String getVisibleMatchingText_id69Qfsw3Ipre(@NotNull SNode __thisNode__, SNode reference) {
     return SPropertyOperations.getString(__thisNode__, PROPS.name$MnvL);
   }
-  /*package*/ static boolean allowUmlaute_id5YygIlbih$m(@NotNull SAbstractConcept __thisConcept__) {
-    return IdentifierConfiguratorAccess.allowUmlautsInIdentifiers(__thisConcept__);
-  }
-  /*package*/ static boolean allowParagraph_id4ZH31cjGRan(@NotNull SAbstractConcept __thisConcept__) {
-    return IdentifierConfiguratorAccess.allowParagraphsInIdentifiers(__thisConcept__);
-  }
 
   /*package*/ Constant__BehaviorDescriptor() {
   }
@@ -224,10 +215,6 @@ public final class Constant__BehaviorDescriptor extends BaseBHDescriptor {
       throw new BHMethodNotFoundException(this, method);
     }
     switch (methodIndex) {
-      case 20:
-        return (T) ((Boolean) allowUmlaute_id5YygIlbih$m(concept));
-      case 21:
-        return (T) ((Boolean) allowParagraph_id4ZH31cjGRan(concept));
       default:
         throw new BHMethodNotFoundException(this, method);
     }

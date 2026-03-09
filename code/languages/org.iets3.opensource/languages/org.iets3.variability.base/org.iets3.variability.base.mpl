@@ -14,13 +14,14 @@
   <dependencies>
     <dependency reexport="false">5186c6ce-428c-4f09-a9df-73d9e86c27d3(org.iets3.core.expr.typetags)</dependency>
     <dependency reexport="false">6b277d9a-d52d-416f-a209-1919bd737f50(org.iets3.core.expr.simpleTypes)</dependency>
+    <dependency reexport="false">165f1d05-2506-4544-895e-1424f54166ec(org.iets3.variability.featuremodel.base)</dependency>
   </dependencies>
   <languageVersions>
     <language slang="l:f3061a53-9226-4cc5-a443-f952ceaf5816:jetbrains.mps.baseLanguage" version="12" />
     <language slang="l:443f4c36-fcf5-4eb6-9500-8d06ed259e3e:jetbrains.mps.baseLanguage.classifiers" version="0" />
     <language slang="l:fd392034-7849-419d-9071-12563d152375:jetbrains.mps.baseLanguage.closures" version="0" />
     <language slang="l:83888646-71ce-4f1c-9c53-c54016f6ad4f:jetbrains.mps.baseLanguage.collections" version="2" />
-    <language slang="l:f2801650-65d5-424e-bb1b-463a8781b786:jetbrains.mps.baseLanguage.javadoc" version="2" />
+    <language slang="l:f2801650-65d5-424e-bb1b-463a8781b786:jetbrains.mps.baseLanguage.javadoc" version="3" />
     <language slang="l:c7d5b9dd-a05f-4be2-bc73-f2e16994cc67:jetbrains.mps.baseLanguage.lightweightdsl" version="1" />
     <language slang="l:760a0a8c-eabb-4521-8bfd-65db761a9ba3:jetbrains.mps.baseLanguage.logging" version="0" />
     <language slang="l:a247e09e-2435-45ba-b8d2-07e93feba96a:jetbrains.mps.baseLanguage.tuples" version="0" />
@@ -101,7 +102,8 @@
     <module reference="165f1d05-2506-4544-895e-1424f54166ec(org.iets3.variability.featuremodel.base)" version="36" />
   </dependencyVersions>
   <extendedLanguages>
-    <extendedLanguage>165f1d05-2506-4544-895e-1424f54166ec(org.iets3.variability.featuremodel.base)</extendedLanguage>
+    <extendedLanguage>d4280a54-f6df-4383-aa41-d1b2bffa7eb1(com.mbeddr.core.base)</extendedLanguage>
+    <extendedLanguage>db8bd035-3f51-41d8-8fed-954c202d18be(org.iets3.analysis.base)</extendedLanguage>
   </extendedLanguages>
 </language>
 

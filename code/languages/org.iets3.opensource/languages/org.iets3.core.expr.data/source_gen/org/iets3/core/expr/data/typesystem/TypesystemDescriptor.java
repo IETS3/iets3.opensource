@@ -84,7 +84,7 @@ public class TypesystemDescriptor extends BaseHelginsDescriptor {
       return PTF.createBooleanType();
     }
     public boolean isApplicable(SubtypingManager subtypingManager, SNode operation, SNode leftOperandType, SNode rightOperandType) {
-      return SLinkOperations.getTarget(SNodeOperations.cast(leftOperandType, CONCEPTS.DataTableType$eA), LINKS.table$tErP) == SLinkOperations.getTarget(SNodeOperations.cast(rightOperandType, CONCEPTS.DataTableType$eA), LINKS.table$tErP);
+      return SLinkOperations.getTarget(SNodeOperations.as(leftOperandType, CONCEPTS.DataTableType$eA), LINKS.table$tErP) == SLinkOperations.getTarget(SNodeOperations.as(rightOperandType, CONCEPTS.DataTableType$eA), LINKS.table$tErP);
     }
     @Override
     public void reportConflict(IRuleConflictWarningProducer producer) {

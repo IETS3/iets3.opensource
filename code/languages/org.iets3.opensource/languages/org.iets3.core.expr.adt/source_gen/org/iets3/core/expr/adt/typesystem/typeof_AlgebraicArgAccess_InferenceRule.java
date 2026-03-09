@@ -35,7 +35,7 @@ public class typeof_AlgebraicArgAccess_InferenceRule extends AbstractInferenceRu
       final SNode contextType = typeCheckingContext.typeOf(SLinkOperations.getTarget(aaa, LINKS.expr$CW3E), "r:55ae05df-8f25-48f0-a826-0655584ce598(org.iets3.core.expr.adt.typesystem)", "5849458724932733159", true);
       typeCheckingContext.whenConcrete(contextType, () -> {
         if (SNodeOperations.isInstanceOf(typeCheckingContext.getExpandedNode(contextType), CONCEPTS.AlgebraicConstructorType$ja)) {
-          List<SNode> args = AlgebraicConstructor__BehaviorDescriptor.argumentTypes_id5a_u3OzNoA1.invoke(SLinkOperations.getTarget(SNodeOperations.cast(typeCheckingContext.getExpandedNode(contextType), CONCEPTS.AlgebraicConstructorType$ja), LINKS.constructor$F6Xq));
+          List<SNode> args = AlgebraicConstructor__BehaviorDescriptor.argumentTypes_id5a_u3OzNoA1.invoke(SLinkOperations.getTarget(SNodeOperations.as(typeCheckingContext.getExpandedNode(contextType), CONCEPTS.AlgebraicConstructorType$ja), LINKS.constructor$F6Xq));
           if (SPropertyOperations.getInteger(aaa, PROPS.index$vCa5) >= ListSequence.fromList(args).count()) {
             {
               final MessageTarget errorTarget = new NodeMessageTarget();

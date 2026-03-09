@@ -17,7 +17,6 @@ import org.jetbrains.annotations.NotNull;
 import org.iets3.core.expr.base.runtime.runtime.PTF;
 import jetbrains.mps.internal.collections.runtime.ListSequence;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
-import org.iets3.core.expr.base.runtime.runtime.IdentifierConfiguratorAccess;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SConceptOperations;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
 import jetbrains.mps.scope.ListScope;
@@ -37,12 +36,10 @@ public final class DataTable__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getConcept(0xb25b8ad14d3d4e45L, 0x8c7872091b39fddaL, 0x335c4a1eb648aeeL, "org.iets3.core.expr.data.structure.DataTable");
 
   public static final SMethod<Iterable<SNode>> getUniquelyNamedElements_id4qSf1u1TRfj = new SMethodBuilder<Iterable<SNode>>(new SJavaCompoundTypeImpl((Class<Iterable<SNode>>) ((Class) Object.class))).name("getUniquelyNamedElements").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5095889050031059923L).languageId(0xaa41d1b2bffa7eb1L, 0xd4280a54f6df4383L).build2();
-  public static final SMethod<Boolean> allowUmlaute_id5YygIlbih$m = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("allowUmlaute").modifiers(9, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(6891143932408305942L).languageId(0xbd9c05c0f8725a35L, 0x7b68d745a7b848b9L).build2();
-  public static final SMethod<Boolean> allowParagraph_id4ZH31cjGRan = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("allowParagraph").modifiers(9, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5759272774551171735L).languageId(0xbd9c05c0f8725a35L, 0x7b68d745a7b848b9L).build2();
   public static final SMethod<Scope> getScope_id52_Geb4QDV$ = new SMethodBuilder<Scope>(new SJavaCompoundTypeImpl(Scope.class)).name("getScope").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5811245382203252452L).languageId(0x9b92103b95ca8c0cL, 0xceab519525ea4f22L).build2(SMethodBuilder.createJavaParameter((Class<SAbstractConcept>) ((Class) Object.class), ""), SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""));
   public static final SMethod<SNode> getValue_id5LghDpmkwQU = new SMethodBuilder<SNode>(new SJavaCompoundTypeImpl((Class<SNode>) ((Class) Object.class))).name("getValue").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(6651894261133479354L).languageId(0x8c7872091b39fddaL, 0xb25b8ad14d3d4e45L).build2(SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""), SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""));
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(getUniquelyNamedElements_id4qSf1u1TRfj, allowUmlaute_id5YygIlbih$m, allowParagraph_id4ZH31cjGRan, getScope_id52_Geb4QDV$, getValue_id5LghDpmkwQU);
+  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(getUniquelyNamedElements_id4qSf1u1TRfj, getScope_id52_Geb4QDV$, getValue_id5LghDpmkwQU);
 
   private static void ___init___(@NotNull SNode __thisNode__) {
     SNode c1 = createDataColDef_1qlxxy_a0a0a(PTF.createGenericIntegerType());
@@ -55,12 +52,6 @@ public final class DataTable__BehaviorDescriptor extends BaseBHDescriptor {
 
   /*package*/ static Iterable<SNode> getUniquelyNamedElements_id4qSf1u1TRfj(@NotNull SNode __thisNode__) {
     return ListSequence.fromList(SLinkOperations.getChildren(__thisNode__, LINKS.dataCols$8Lcc)).union(ListSequence.fromList(SLinkOperations.getChildren(__thisNode__, LINKS.rows$1pKa)));
-  }
-  /*package*/ static boolean allowUmlaute_id5YygIlbih$m(@NotNull SAbstractConcept __thisConcept__) {
-    return IdentifierConfiguratorAccess.allowUmlautsInIdentifiers(__thisConcept__);
-  }
-  /*package*/ static boolean allowParagraph_id4ZH31cjGRan(@NotNull SAbstractConcept __thisConcept__) {
-    return IdentifierConfiguratorAccess.allowParagraphsInIdentifiers(__thisConcept__);
   }
   /*package*/ static Scope getScope_id52_Geb4QDV$(@NotNull SNode __thisNode__, SAbstractConcept kind, SNode child) {
     if (SConceptOperations.isSubConceptOf(SNodeOperations.asSConcept(kind), CONCEPTS.DataColDef$5U)) {
@@ -94,9 +85,9 @@ public final class DataTable__BehaviorDescriptor extends BaseBHDescriptor {
     switch (methodIndex) {
       case 0:
         return (T) ((Iterable<SNode>) getUniquelyNamedElements_id4qSf1u1TRfj(node));
-      case 3:
+      case 1:
         return (T) ((Scope) getScope_id52_Geb4QDV$(node, (SAbstractConcept) parameters[0], (SNode) parameters[1]));
-      case 4:
+      case 2:
         return (T) ((SNode) getValue_id5LghDpmkwQU(node, (SNode) parameters[0], (SNode) parameters[1]));
       default:
         throw new BHMethodNotFoundException(this, method);
@@ -110,10 +101,6 @@ public final class DataTable__BehaviorDescriptor extends BaseBHDescriptor {
       throw new BHMethodNotFoundException(this, method);
     }
     switch (methodIndex) {
-      case 1:
-        return (T) ((Boolean) allowUmlaute_id5YygIlbih$m(concept));
-      case 2:
-        return (T) ((Boolean) allowParagraph_id4ZH31cjGRan(concept));
       default:
         throw new BHMethodNotFoundException(this, method);
     }

@@ -24,7 +24,7 @@ public class SetActualUsingParameter_QuickFix extends QuickFix_Runtime {
     return "Set using-parameter '" + SPropertyOperations.getString(((SNode) SetActualUsingParameter_QuickFix.this.getField("param")[0]), PROPS.name$MnvL) + "'";
   }
   public void execute(SNode node) {
-    SNode fmi = SNodeOperations.cast(node, CONCEPTS.FeatureModelInclude$Iq);
+    SNode fmi = SNodeOperations.as(node, CONCEPTS.FeatureModelInclude$Iq);
     ListSequence.fromList(SLinkOperations.getChildren(fmi, LINKS.actualParams$nrMf)).addElement(createFMActualParam_lup5h5_a0a1a2(((SNode) SetActualUsingParameter_QuickFix.this.getField("param")[0]), UsingParamHelper.findFeatureModelForParam(((SNode) SetActualUsingParameter_QuickFix.this.getField("param")[0]), fmi)));
   }
   private static SNode createFMActualParam_lup5h5_a0a1a2(SNode p0, SNode p1) {

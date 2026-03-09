@@ -31,7 +31,7 @@ public class typeof_WithSliceOp_InferenceRule extends AbstractInferenceRule_Runt
         {
           SNode _nodeToCheck_1029348928467 = SLinkOperations.getTarget(SLinkOperations.getTarget(wso, LINKS.slice$g8Ka), LINKS.value$uFkc);
           EquationInfo _info_12389875345 = new EquationInfo(_nodeToCheck_1029348928467, null, "r:782cab7d-c30f-4797-991c-cb17d0274086(org.iets3.core.expr.temporal.typesystem)", "7638810057891364001", 0, null);
-          typeCheckingContext.createLessThanInequality((SNode) typeCheckingContext.typeOf(_nodeToCheck_1029348928467, "r:782cab7d-c30f-4797-991c-cb17d0274086(org.iets3.core.expr.temporal.typesystem)", "7638810057891355547", true), (SNode) typeCheckingContext.typeOf(SLinkOperations.getTarget(SNodeOperations.cast(typeCheckingContext.getExpandedNode(ctxType), CONCEPTS.TemporalType$oH), LINKS.baseType$ZN4a), "r:782cab7d-c30f-4797-991c-cb17d0274086(org.iets3.core.expr.temporal.typesystem)", "7638810057891364027", true), false, true, _info_12389875345);
+          typeCheckingContext.createLessThanInequality((SNode) typeCheckingContext.typeOf(_nodeToCheck_1029348928467, "r:782cab7d-c30f-4797-991c-cb17d0274086(org.iets3.core.expr.temporal.typesystem)", "7638810057891355547", true), (SNode) typeCheckingContext.typeOf(SLinkOperations.getTarget(SNodeOperations.as(typeCheckingContext.getExpandedNode(ctxType), CONCEPTS.TemporalType$oH), LINKS.baseType$ZN4a), "r:782cab7d-c30f-4797-991c-cb17d0274086(org.iets3.core.expr.temporal.typesystem)", "7638810057891364027", true), false, true, _info_12389875345);
         }
       }, "r:782cab7d-c30f-4797-991c-cb17d0274086(org.iets3.core.expr.temporal.typesystem)", "7638810057891351705", false, false);
     }

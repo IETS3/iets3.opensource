@@ -33,6 +33,7 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
   private ConceptPresentation props_IGroupPower;
   private ConceptPresentation props_IHaveIUnitSpecification;
   private ConceptPresentation props_IReference;
+  private ConceptPresentation props_IRepresentUnit;
   private ConceptPresentation props_ISpecification;
   private ConceptPresentation props_ITransformationProperty;
   private ConceptPresentation props_IUnit;
@@ -239,6 +240,12 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           props_IReference = cpb.create();
         }
         return props_IReference;
+      case LanguageConceptSwitch.IRepresentUnit:
+        if (props_IRepresentUnit == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          props_IRepresentUnit = cpb.create();
+        }
+        return props_IRepresentUnit;
       case LanguageConceptSwitch.ISpecification:
         if (props_ISpecification == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();

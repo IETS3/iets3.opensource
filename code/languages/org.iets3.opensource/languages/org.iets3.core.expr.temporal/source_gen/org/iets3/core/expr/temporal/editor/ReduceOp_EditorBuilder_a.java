@@ -61,6 +61,7 @@ import com.mbeddr.mpsutil.grammarcells.runtime.GrammarCellsUtil;
 import jetbrains.mps.smodel.action.SNodeFactoryOperations;
 import com.mbeddr.mpsutil.grammarcells.runtime.CellActionWithReadAccess;
 import com.mbeddr.mpsutil.grammarcells.runtime.SavedCaretPosition;
+import com.mbeddr.mpsutil.grammarcells.runtime.DelegateToParentCellAction;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import org.iets3.core.expr.temporal.behavior.IProvideTemporalContext__BehaviorDescriptor;
 import org.iets3.core.base.editor.IETS3Styles_StyleSheet.iets3GreyTextStyleClass;
@@ -106,7 +107,7 @@ import org.jetbrains.mps.openapi.language.SInterfaceConcept;
       editorCell.addEditorCell(createCustomFactory_5());
     }
     if (nodeCondition_u96rfm_a6a0()) {
-      editorCell.addEditorCell(createCustomFactory_7());
+      editorCell.addEditorCell(createCustomFactory_9());
     }
     editorCell.addEditorCell(createConstant_2());
     return editorCell;
@@ -125,7 +126,7 @@ import org.jetbrains.mps.openapi.language.SInterfaceConcept;
     return editorCell;
   }
   private EditorCell createCustomFactory_1() {
-    return createCustomFactory_0(getEditorContext(), myNode);
+    return createCustomFactory_0(getEditorContext(), getNode());
   }
   private EditorCell createCustomFactory_2(final EditorContext editorContext, final SNode node) {
 
@@ -136,7 +137,7 @@ import org.jetbrains.mps.openapi.language.SInterfaceConcept;
     return editorCell;
   }
   private EditorCell createCustomFactory_3() {
-    return createCustomFactory_2(getEditorContext(), myNode);
+    return createCustomFactory_2(getEditorContext(), getNode());
   }
   private EditorCell createReadOnlyModelAccessor_0() {
     EditorCell_Property editorCell = EditorCell_Property.create(getEditorContext(), new ModelAccessor.ReadOnly() {
@@ -324,7 +325,7 @@ import org.jetbrains.mps.openapi.language.SInterfaceConcept;
       return jetbrains.mps.nodeEditor.cells.EditorCell_Collection.createVertical(editorContext, node);
     }
 
-    final EditorCell cell = createRefNode_1();
+    final EditorCell cell = createCustomFactory_7();
     EditorCell editorCell = ((_FunctionTypes._return_P0_E0<EditorCell>) () -> {
       cell.setAction(CellActionType.BACKSPACE, new CellActionWithReadAccess() {
         public void execute(EditorContext editorContext) {
@@ -349,17 +350,49 @@ import org.jetbrains.mps.openapi.language.SInterfaceConcept;
     return editorCell;
   }
   private EditorCell createCustomFactory_5() {
-    return createCustomFactory_4(getEditorContext(), myNode);
+    return createCustomFactory_4(getEditorContext(), getNode());
+  }
+  private EditorCell createCustomFactory_6(final EditorContext editorContext, final SNode node) {
+
+    if (!(new Object() {
+      public boolean showWrapped() {
+        return Sequence.fromIterable(AttributeOperations.getChildNodesAndAttributes(myNode, LINKS.daterange$wvGJ)).isNotEmpty();
+      }
+    }.showWrapped())) {
+      return jetbrains.mps.nodeEditor.cells.EditorCell_Collection.createVertical(editorContext, node);
+    }
+
+    final EditorCell cell = createRefNode_1();
+    EditorCell editorCell = ((_FunctionTypes._return_P0_E0<EditorCell>) () -> {
+      new Object() {
+        public void removeDeleteAction(EditorCell descendantCell) {
+          if (descendantCell.getSNode() == myNode) {
+            descendantCell.setAction(CellActionType.DELETE, new DelegateToParentCellAction(descendantCell, CellActionType.DELETE));
+            descendantCell.setAction(CellActionType.BACKSPACE, new DelegateToParentCellAction(descendantCell, CellActionType.BACKSPACE));
+            if (descendantCell instanceof EditorCell_Collection) {
+              for (EditorCell childCell : Sequence.fromIterable(((EditorCell_Collection) descendantCell))) {
+                removeDeleteAction(childCell);
+              }
+            }
+          }
+        }
+      }.removeDeleteAction(cell);
+      return cell;
+    }).invoke();
+    return editorCell;
+  }
+  private EditorCell createCustomFactory_7() {
+    return createCustomFactory_6(getEditorContext(), getNode());
   }
   private EditorCell createRefNode_1() {
-    SingleRoleCellProvider provider = new daterangeSingleRoleHandler_u96rfm_a5a0(myNode, LINKS.daterange$wvGJ, getEditorContext());
+    SingleRoleCellProvider provider = new daterangeSingleRoleHandler_u96rfm_a0f0a(myNode, LINKS.daterange$wvGJ, getEditorContext());
     return provider.createCell();
   }
-  private static class daterangeSingleRoleHandler_u96rfm_a5a0 extends SingleRoleCellProvider {
+  private static class daterangeSingleRoleHandler_u96rfm_a0f0a extends SingleRoleCellProvider {
     @NotNull
     private SNode myNode;
 
-    public daterangeSingleRoleHandler_u96rfm_a5a0(SNode ownerNode, SContainmentLink containmentLink, EditorContext context) {
+    public daterangeSingleRoleHandler_u96rfm_a0f0a(SNode ownerNode, SContainmentLink containmentLink, EditorContext context) {
       super(containmentLink, context);
       myNode = ownerNode;
     }
@@ -406,7 +439,7 @@ import org.jetbrains.mps.openapi.language.SInterfaceConcept;
       return "<no daterange>";
     }
   }
-  private EditorCell createCustomFactory_6(final EditorContext editorContext, final SNode node) {
+  private EditorCell createCustomFactory_8(final EditorContext editorContext, final SNode node) {
 
     if (!(new Object() {
       public boolean showWrapped() {
@@ -416,7 +449,7 @@ import org.jetbrains.mps.openapi.language.SInterfaceConcept;
       return jetbrains.mps.nodeEditor.cells.EditorCell_Collection.createVertical(editorContext, node);
     }
 
-    final EditorCell cell = createCustomFactory_9();
+    final EditorCell cell = createCustomFactory_11();
     EditorCell editorCell = ((_FunctionTypes._return_P0_E0<EditorCell>) () -> {
       cell.setAction(CellActionType.DELETE, new CellActionWithReadAccess() {
         public void execute(EditorContext editorContext) {
@@ -432,10 +465,10 @@ import org.jetbrains.mps.openapi.language.SInterfaceConcept;
     }).invoke();
     return editorCell;
   }
-  private EditorCell createCustomFactory_7() {
-    return createCustomFactory_6(getEditorContext(), myNode);
+  private EditorCell createCustomFactory_9() {
+    return createCustomFactory_8(getEditorContext(), getNode());
   }
-  private EditorCell createCustomFactory_8(final EditorContext editorContext, final SNode node) {
+  private EditorCell createCustomFactory_10(final EditorContext editorContext, final SNode node) {
 
     if (!(new Object() {
       public boolean showWrapped() {
@@ -449,8 +482,8 @@ import org.jetbrains.mps.openapi.language.SInterfaceConcept;
     EditorCell editorCell = ((_FunctionTypes._return_P0_E0<EditorCell>) () -> cell).invoke();
     return editorCell;
   }
-  private EditorCell createCustomFactory_9() {
-    return createCustomFactory_8(getEditorContext(), myNode);
+  private EditorCell createCustomFactory_11() {
+    return createCustomFactory_10(getEditorContext(), getNode());
   }
   private EditorCell createReadOnlyModelAccessor_1() {
     EditorCell_Property editorCell = EditorCell_Property.create(getEditorContext(), new ModelAccessor.ReadOnly() {

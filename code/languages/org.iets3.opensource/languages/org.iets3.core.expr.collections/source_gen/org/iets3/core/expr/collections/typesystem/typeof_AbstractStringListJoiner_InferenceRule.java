@@ -27,7 +27,7 @@ public class typeof_AbstractStringListJoiner_InferenceRule extends AbstractInfer
     {
       final SNode ctxType = typeCheckingContext.typeOf(IDotTarget__BehaviorDescriptor.contextExpression_id6zmBjqUivyF.invoke(joiner), "r:1fd78142-d7d8-42c9-9cbb-0609b1bc5311(org.iets3.core.expr.collections.typesystem)", "5070313213695400172", true);
       typeCheckingContext.whenConcrete(ctxType, () -> {
-        if (SNodeOperations.isInstanceOf(typeCheckingContext.getExpandedNode(ctxType), CONCEPTS.CollectionType$kS) && PTF.isStringType(SLinkOperations.getTarget(SNodeOperations.cast(typeCheckingContext.getExpandedNode(ctxType), CONCEPTS.CollectionType$kS), LINKS.baseType$5NOJ))) {
+        if (SNodeOperations.isInstanceOf(typeCheckingContext.getExpandedNode(ctxType), CONCEPTS.CollectionType$kS) && PTF.isStringType(SLinkOperations.getTarget(SNodeOperations.as(typeCheckingContext.getExpandedNode(ctxType), CONCEPTS.CollectionType$kS), LINKS.baseType$5NOJ))) {
           {
             SNode _nodeToCheck_1029348928467 = joiner;
             EquationInfo _info_12389875345 = new EquationInfo(_nodeToCheck_1029348928467, null, "r:1fd78142-d7d8-42c9-9cbb-0609b1bc5311(org.iets3.core.expr.collections.typesystem)", "322483866855013097", 0, null);

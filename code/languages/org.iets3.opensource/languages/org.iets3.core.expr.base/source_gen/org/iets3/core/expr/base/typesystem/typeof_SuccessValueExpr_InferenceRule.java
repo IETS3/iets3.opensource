@@ -28,13 +28,13 @@ public class typeof_SuccessValueExpr_InferenceRule extends AbstractInferenceRule
           {
             SNode _nodeToCheck_1029348928467 = sve;
             EquationInfo _info_12389875345 = new EquationInfo(_nodeToCheck_1029348928467, null, "r:80cf2246-750c-4158-9056-a619ebcf894c(org.iets3.core.expr.base.typesystem)", "7089558164910729863", 0, null);
-            typeCheckingContext.createEquation((SNode) typeCheckingContext.typeOf(_nodeToCheck_1029348928467, "r:80cf2246-750c-4158-9056-a619ebcf894c(org.iets3.core.expr.base.typesystem)", "7089558164910729715", true), (SNode) SLinkOperations.getTarget(SNodeOperations.cast(typeCheckingContext.getExpandedNode(exprType), CONCEPTS.AttemptType$h8), LINKS.successType$Xfwb), _info_12389875345);
+            typeCheckingContext.createEquation((SNode) typeCheckingContext.typeOf(_nodeToCheck_1029348928467, "r:80cf2246-750c-4158-9056-a619ebcf894c(org.iets3.core.expr.base.typesystem)", "7089558164910729715", true), (SNode) SLinkOperations.getTarget(SNodeOperations.as(typeCheckingContext.getExpandedNode(exprType), CONCEPTS.AttemptType$h8), LINKS.successType$Xfwb), _info_12389875345);
           }
         } else if (SNodeOperations.isInstanceOf(typeCheckingContext.getExpandedNode(exprType), CONCEPTS.AttemptType$h8)) {
           {
             SNode _nodeToCheck_1029348928467 = sve;
             EquationInfo _info_12389875345 = new EquationInfo(_nodeToCheck_1029348928467, null, "r:80cf2246-750c-4158-9056-a619ebcf894c(org.iets3.core.expr.base.typesystem)", "3543187326074591642", 0, null);
-            typeCheckingContext.createEquation((SNode) typeCheckingContext.typeOf(_nodeToCheck_1029348928467, "r:80cf2246-750c-4158-9056-a619ebcf894c(org.iets3.core.expr.base.typesystem)", "3543187326074591649", true), (SNode) SLinkOperations.getTarget(SNodeOperations.cast(typeCheckingContext.getExpandedNode(exprType), CONCEPTS.AttemptType$h8), LINKS.successType$Xfwb), _info_12389875345);
+            typeCheckingContext.createEquation((SNode) typeCheckingContext.typeOf(_nodeToCheck_1029348928467, "r:80cf2246-750c-4158-9056-a619ebcf894c(org.iets3.core.expr.base.typesystem)", "3543187326074591649", true), (SNode) SLinkOperations.getTarget(SNodeOperations.as(typeCheckingContext.getExpandedNode(exprType), CONCEPTS.AttemptType$h8), LINKS.successType$Xfwb), _info_12389875345);
           }
         } else {
           {

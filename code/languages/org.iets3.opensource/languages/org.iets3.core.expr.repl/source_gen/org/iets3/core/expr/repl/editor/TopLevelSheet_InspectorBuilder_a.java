@@ -20,13 +20,13 @@ import jetbrains.mps.nodeEditor.cellProviders.CellProviderWithRole;
 import de.itemis.mps.editor.bool.runtime.CheckboxCellProvider;
 import de.itemis.mps.editor.bool.runtime.EditorCell_Checkbox;
 import com.mbeddr.mpsutil.grammarcells.runtime.SideTransformationHolderCell;
+import jetbrains.mps.baseLanguage.closures.runtime._FunctionTypes;
+import org.iets3.core.base.editor.IETS3Styles_StyleSheet.iets3KeywordStyleClass;
 import com.mbeddr.mpsutil.grammarcells.runtime.IFlagModelAccess;
 import com.mbeddr.mpsutil.grammarcells.runtime.DefaultFlagModelAccess;
-import jetbrains.mps.baseLanguage.closures.runtime._FunctionTypes;
 import jetbrains.mps.openapi.editor.cells.CellActionType;
 import com.mbeddr.mpsutil.grammarcells.runtime.CellActionWithReadAccess;
 import com.mbeddr.mpsutil.grammarcells.runtime.GrammarCellsUtil;
-import org.iets3.core.base.editor.IETS3Styles_StyleSheet.iets3KeywordStyleClass;
 import java.util.List;
 import jetbrains.mps.lang.editor.menus.MenuPart;
 import jetbrains.mps.openapi.editor.menus.transformation.TransformationMenuItem;
@@ -35,6 +35,7 @@ import jetbrains.mps.internal.collections.runtime.ListSequence;
 import java.util.ArrayList;
 import org.jetbrains.mps.openapi.language.SAbstractConcept;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
+import org.iets3.core.expr.base.plugin.EditorCustomizationConfigHelper;
 import jetbrains.mps.lang.editor.menus.transformation.MenuLocations;
 import com.mbeddr.mpsutil.grammarcells.runtime.menu.GrammarCellsSideTransformTransformationMenuItem;
 import org.jetbrains.annotations.Nullable;
@@ -92,7 +93,7 @@ import org.jetbrains.mps.openapi.language.SConcept;
     style.set(StyleAttributes.SELECTABLE, false);
     editorCell.getStyle().putAll(style);
     editorCell.addEditorCell(createConstant_0());
-    editorCell.addEditorCell(createCheckbox_1());
+    editorCell.addEditorCell(createCheckbox_0());
     return editorCell;
   }
   private EditorCell createConstant_0() {
@@ -101,12 +102,12 @@ import org.jetbrains.mps.openapi.language.SConcept;
     editorCell.setDefaultText("");
     return editorCell;
   }
-  private EditorCell createCheckbox_0(EditorContext editorContext, SNode node) {
+  private EditorCell createCheckbox_0() {
     SProperty property = PROPS.hideTitle$Pl6X;
-    CellProviderWithRole provider = new CheckboxCellProvider(node, property, editorContext);
+    CellProviderWithRole provider = new CheckboxCellProvider(getNode(), property, getEditorContext());
     provider.setNoTargetText("<no hideTitle>");
     EditorCell_Checkbox editorCell;
-    editorCell = ((EditorCell_Checkbox) provider.createEditorCell(editorContext));
+    editorCell = ((EditorCell_Checkbox) provider.createEditorCell(getEditorContext()));
     editorCell.setCellId("property_hideTitle");
     editorCell.setSubstituteInfo(provider.createDefaultSubstituteInfo());
     SNode attributeConcept = provider.getRoleAttribute();
@@ -114,9 +115,6 @@ import org.jetbrains.mps.openapi.language.SConcept;
       return getUpdateSession().updateAttributeCell(provider.getRoleAttributeKind(), editorCell, attributeConcept);
     } else
     return editorCell;
-  }
-  private EditorCell createCheckbox_1() {
-    return createCheckbox_0(getEditorContext(), myNode);
   }
   private EditorCell createSideTransformationHolderProcessor_0() {
     final EditorCell editorCell = createCollection_2();
@@ -128,32 +126,44 @@ import org.jetbrains.mps.openapi.language.SConcept;
   private EditorCell createCollection_2() {
     EditorCell_Collection editorCell = new EditorCell_Collection(getEditorContext(), myNode, new CellLayout_Indent());
     editorCell.setCellId("Collection_b3zhke_2");
-    editorCell.addEditorCell(createAlternation_0());
+    editorCell.addEditorCell(createCustomFactory_1());
     editorCell.addEditorCell(createConstant_2());
     editorCell.addEditorCell(createProperty_0());
     return editorCell;
   }
+  private EditorCell createCustomFactory_0(final EditorContext editorContext, final SNode node) {
+
+
+    final EditorCell cell = createAlternation_0();
+    EditorCell editorCell = ((_FunctionTypes._return_P0_E0<EditorCell>) () -> cell).invoke();
+    Style style = new StyleImpl();
+    new iets3KeywordStyleClass(this).apply(style, editorCell);
+    editorCell.getStyle().putAll(style);
+    return editorCell;
+  }
+  private EditorCell createCustomFactory_1() {
+    return createCustomFactory_0(getEditorContext(), getNode());
+  }
   private EditorCell createAlternation_0() {
     boolean alternationCondition = true;
-    alternationCondition = nodeCondition_b3zhke_a0a1a();
+    alternationCondition = nodeCondition_b3zhke_a0a0b0();
     EditorCell editorCell = null;
     if (alternationCondition) {
-      editorCell = createCustomFactory_1();
+      editorCell = createCustomFactory_3();
     } else {
       editorCell = createSideTransformationSectionCell_0();
     }
     return editorCell;
   }
-  private boolean nodeCondition_b3zhke_a0a1a() {
+  private boolean nodeCondition_b3zhke_a0a0b0() {
     IFlagModelAccess access = new DefaultFlagModelAccess(PROPS.template$GBxP);
     if (!(access.read(myNode))) {
       return false;
     }
 
-
     return true;
   }
-  private EditorCell createCustomFactory_0(final EditorContext editorContext, final SNode node) {
+  private EditorCell createCustomFactory_2(final EditorContext editorContext, final SNode node) {
 
 
     final EditorCell cell = createConstant_1();
@@ -176,8 +186,8 @@ import org.jetbrains.mps.openapi.language.SConcept;
     }).invoke();
     return editorCell;
   }
-  private EditorCell createCustomFactory_1() {
-    return createCustomFactory_0(getEditorContext(), myNode);
+  private EditorCell createCustomFactory_3() {
+    return createCustomFactory_2(getEditorContext(), getNode());
   }
   private EditorCell createConstant_1() {
     EditorCell_Constant editorCell = new EditorCell_Constant(getEditorContext(), myNode, "template");
@@ -192,13 +202,13 @@ import org.jetbrains.mps.openapi.language.SConcept;
     SideTransformationHolderCell editorCell = new SideTransformationHolderCell(getEditorContext(), myNode, null, "flag 'template'") {
       @Override
       public List<MenuPart<TransformationMenuItem, TransformationMenuContext>> createMenuParts() {
-        return ListSequence.fromListAndArray(new ArrayList<MenuPart<TransformationMenuItem, TransformationMenuContext>>(), new GenericMenuPart_a0a0a1a());
+        return ListSequence.fromListAndArray(new ArrayList<MenuPart<TransformationMenuItem, TransformationMenuContext>>(), new GenericMenuPart_a0a0a0b0());
       }
     };
     editorCell.setCellId("SideTransformationSectionCell_b3zhke_0");
     return editorCell;
   }
-  private class GenericMenuPart_a0a0a1a implements MenuPart<TransformationMenuItem, TransformationMenuContext> {
+  private class GenericMenuPart_a0a0a0b0 implements MenuPart<TransformationMenuItem, TransformationMenuContext> {
 
     @NotNull
     @Override
@@ -211,6 +221,11 @@ import org.jetbrains.mps.openapi.language.SConcept;
           EditorContext editorContext = ctx.getEditorContext();
           IFlagModelAccess access = new DefaultFlagModelAccess(PROPS.template$GBxP);
           boolean applicable = !(access.read(node));
+          applicable &= new Object() {
+            public boolean query() {
+              return EditorCustomizationConfigHelper.getConfig().isFlagCellSideTransformationActivated(EditorCustomizationConfigHelper.getIdentifier(CONCEPTS.TopLevelSheet$M3, PROPS.template$GBxP), subconcept, node, editorContext);
+            }
+          }.query();
           applicable &= !(GrammarCellsUtil.isProperty(ctx.getEditorContext().getSelectedCell())) || ctx.getMenuLocation() != MenuLocations.RIGHT_SIDE_TRANSFORM;
           return applicable;
         }
@@ -224,7 +239,8 @@ import org.jetbrains.mps.openapi.language.SConcept;
             SNode node = ctx.getNode();
             String originalText = super.getShortDescriptionText(pattern);
             EditorContext editorContext = ctx.getEditorContext();
-            return "a template spreadsheet";
+            String descriptiontext = EditorCustomizationConfigHelper.getConfig().getFlagCellDescriptionText(EditorCustomizationConfigHelper.getIdentifier(CONCEPTS.TopLevelSheet$M3, PROPS.template$GBxP), originalText, editorContext);
+            return ((descriptiontext != null && descriptiontext.length() > 0) ? descriptiontext : "a template spreadsheet");
           }
           public String getMatchingText(String pattern) {
             return "template";

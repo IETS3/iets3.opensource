@@ -22,7 +22,7 @@ public class check_NaturalLangageCallSyntax_NonTypesystemRule extends AbstractNo
   public check_NaturalLangageCallSyntax_NonTypesystemRule() {
   }
   public void applyRule(final SNode naturalLangageCallSyntax, final TypeCheckingContext typeCheckingContext, IsApplicableStatus status) {
-    SNode funLike = SNodeOperations.cast(SNodeOperations.getParent(naturalLangageCallSyntax), CONCEPTS.IFunctionLike$t6);
+    SNode funLike = SNodeOperations.as(SNodeOperations.getParent(naturalLangageCallSyntax), CONCEPTS.IFunctionLike$t6);
     if (!(SPropertyOperations.getBoolean(funLike, PROPS.ext$atYv))) {
       final MessageTarget errorTarget = new NodeMessageTarget();
       IErrorReporter _reporter_2309309498 = typeCheckingContext.reportTypeError(funLike, "can only be used with extension functions", "r:bdb5c130-3f2d-4741-b8aa-76ccc2ea69e5(org.iets3.core.expr.natlang.typesystem)", "1693890388431463513", null, errorTarget);

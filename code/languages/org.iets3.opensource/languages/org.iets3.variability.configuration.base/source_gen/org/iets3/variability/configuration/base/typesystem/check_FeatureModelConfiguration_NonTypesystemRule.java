@@ -75,7 +75,7 @@ public class check_FeatureModelConfiguration_NonTypesystemRule extends AbstractN
         final MessageTarget errorTarget = new NodeMessageTarget();
         IErrorReporter _reporter_2309309498 = typeCheckingContext.reportTypeError(fmc, "There were changes in the Feature Model. Please adapt this config to its Feature Model.", "r:791971f5-b094-4342-a75c-0ce6c1b43e9d(org.iets3.variability.configuration.base.typesystem)", "3543850148881346922", null, errorTarget);
         {
-          BaseQuickFixProvider intentionProvider = new BaseQuickFixProvider("org.iets3.variability.configuration.base.typesystem.propagateFMchangesToConfig_QuickFix", "4999651317663867413", false);
+          BaseQuickFixProvider intentionProvider = new BaseQuickFixProvider("org.iets3.variability.configuration.base.typesystem.fix_AdaptToChangesInFM_QuickFix", "4999651317663867413", false);
           intentionProvider.putArgument("fmc", fmc);
           _reporter_2309309498.addIntentionProvider(intentionProvider);
         }
@@ -92,7 +92,7 @@ public class check_FeatureModelConfiguration_NonTypesystemRule extends AbstractN
           final MessageTarget errorTarget = new NodeMessageTarget();
           IErrorReporter _reporter_2309309498 = typeCheckingContext.reportTypeError(fmc, "dummy for quickfix", "r:791971f5-b094-4342-a75c-0ce6c1b43e9d(org.iets3.variability.configuration.base.typesystem)", "3543850148881346873", null, errorTarget);
           {
-            BaseQuickFixProvider intentionProvider = new BaseQuickFixProvider("org.iets3.variability.configuration.base.typesystem.fix_applyInheritance_QuickFix", "3543850148881346876", true);
+            BaseQuickFixProvider intentionProvider = new BaseQuickFixProvider("org.iets3.variability.configuration.base.typesystem.fix_ApplyInheritance_QuickFix", "3543850148881346876", true);
             _reporter_2309309498.addIntentionProvider(intentionProvider);
           }
         }
@@ -173,7 +173,7 @@ public class check_FeatureModelConfiguration_NonTypesystemRule extends AbstractN
           final MessageTarget errorTarget = new NodeMessageTarget();
           IErrorReporter _reporter_2309309498 = typeCheckingContext.reportTypeError(fmc, "Needs to be abstract, at least one abstract Feature Model Configuration referenced. " + SPropertyOperations.getString(SLinkOperations.getTarget(abstractFMI, LINKS.config$VWuN), PROPS.name$MnvL), "r:791971f5-b094-4342-a75c-0ce6c1b43e9d(org.iets3.variability.configuration.base.typesystem)", "4999651317681596651", null, errorTarget);
           {
-            BaseQuickFixProvider intentionProvider = new BaseQuickFixProvider("org.iets3.variability.configuration.base.typesystem.makeConfigAbstract_QuickFix", "4999651317689220572", false);
+            BaseQuickFixProvider intentionProvider = new BaseQuickFixProvider("org.iets3.variability.configuration.base.typesystem.fix_MakeConfigAbstract_QuickFix", "4999651317689220572", false);
             intentionProvider.putArgument("fmc", fmc);
             _reporter_2309309498.addIntentionProvider(intentionProvider);
           }

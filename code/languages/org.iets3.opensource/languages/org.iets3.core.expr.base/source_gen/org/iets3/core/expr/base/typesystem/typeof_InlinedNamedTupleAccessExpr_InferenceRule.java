@@ -28,7 +28,7 @@ public class typeof_InlinedNamedTupleAccessExpr_InferenceRule extends AbstractIn
       final SNode ctxType = typeCheckingContext.typeOf(IDotTarget__BehaviorDescriptor.contextExpression_id6zmBjqUivyF.invoke(inta), "r:80cf2246-750c-4158-9056-a619ebcf894c(org.iets3.core.expr.base.typesystem)", "8293738266746101333", true);
       typeCheckingContext.whenConcrete(ctxType, () -> {
         if (SNodeOperations.isInstanceOf(typeCheckingContext.getExpandedNode(ctxType), CONCEPTS.InlineTupleType$R5)) {
-          SNode tt = SNodeOperations.cast(typeCheckingContext.getExpandedNode(ctxType), CONCEPTS.InlineTupleType$R5);
+          SNode tt = SNodeOperations.as(typeCheckingContext.getExpandedNode(ctxType), CONCEPTS.InlineTupleType$R5);
           SNode tmd = ListSequence.fromList(ITupleDeclaration__BehaviorDescriptor.getMembers_id5r47dOfJ8UL.invoke(SLinkOperations.getTarget(tt, LINKS.decl$6NEE))).findFirst((it) -> Objects.equals(it, SLinkOperations.getTarget(inta, LINKS.member$TSxL)));
           if (tmd != null) {
             {

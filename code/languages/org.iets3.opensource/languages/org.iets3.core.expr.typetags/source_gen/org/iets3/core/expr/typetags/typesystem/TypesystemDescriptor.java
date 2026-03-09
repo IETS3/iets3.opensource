@@ -91,7 +91,7 @@ public class TypesystemDescriptor extends BaseHelginsDescriptor {
     }
     public boolean isApplicable(SubtypingManager subtypingManager, SNode operation, SNode leftOperandType, SNode rightOperandType) {
       boolean c1 = SNodeOperations.isInstanceOf(leftOperandType, CONCEPTS.TaggedType$O4) && SNodeOperations.isInstanceOf(rightOperandType, CONCEPTS.TaggedType$O4);
-      boolean c2 = Type__BehaviorDescriptor.getCapabilityRequirement_id7McqtXGyz8c.invoke(SNodeOperations.cast(leftOperandType, CONCEPTS.Type$WK)) instanceof TagHandlingCapability && Type__BehaviorDescriptor.getCapabilityRequirement_id7McqtXGyz8c.invoke(SNodeOperations.cast(rightOperandType, CONCEPTS.Type$WK)) instanceof TagHandlingCapability;
+      boolean c2 = Type__BehaviorDescriptor.getCapabilityRequirement_id7McqtXGyz8c.invoke(SNodeOperations.as(leftOperandType, CONCEPTS.Type$WK)) instanceof TagHandlingCapability && Type__BehaviorDescriptor.getCapabilityRequirement_id7McqtXGyz8c.invoke(SNodeOperations.as(rightOperandType, CONCEPTS.Type$WK)) instanceof TagHandlingCapability;
       return c1 && c2;
     }
     @Override

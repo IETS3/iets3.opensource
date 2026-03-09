@@ -41,7 +41,7 @@ public class ArtifactPath extends InstancePath<SNode, Segment, ArtifactPath> {
 
   @Override
   protected Optional<SNode> getDefinition(Segment segment) {
-    return Optional.ofNullable(segment.getTarget());
+    return Optional.ofNullable(segment.getTargetIVAA());
   }
 
   @Override
@@ -91,10 +91,14 @@ public class ArtifactPath extends InstancePath<SNode, Segment, ArtifactPath> {
   public String asDependency() {
     Segment direct = Sequence.fromIterable(segments()).findLast((it) -> it.isDirect());
     if (direct != null) {
-      return IVariabilityAwareArtifact__BehaviorDescriptor.artifactName_id7eAm6HphX4A.invoke(direct.getTarget());
+      return IVariabilityAwareArtifact__BehaviorDescriptor.artifactName_id7eAm6HphX4A.invoke(direct.getTargetIVAA());
     } else {
       return asSegmentPathString();
     }
+  }
+
+  public ArtifactPath asInstanceOnlyPath() {
+    return new ArtifactPath(this.root()).append(Sequence.fromIterable(this.segments()).where((it) -> it.isInstance()).toList());
   }
 
   private static SNode createFeatureRefExpr_vbbj4r_a0c0v(SNode p0) {

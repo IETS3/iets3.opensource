@@ -23,7 +23,7 @@ public class typeof_RootTreeNode_InferenceRule extends AbstractInferenceRule_Run
   }
   public void applyRule(final SNode r, final TypeCheckingContext typeCheckingContext, IsApplicableStatus status) {
     List<SNode> leaves = new ArrayList<SNode>();
-    for (SNode leaf : Sequence.fromIterable(DecTree__BehaviorDescriptor.leaves_id22hm_0$b9NC.invoke(SNodeOperations.cast(SNodeOperations.getParent(r), CONCEPTS.DecTree$r5)))) {
+    for (SNode leaf : Sequence.fromIterable(DecTree__BehaviorDescriptor.leaves_id22hm_0$b9NC.invoke(SNodeOperations.as(SNodeOperations.getParent(r), CONCEPTS.DecTree$r5)))) {
       ListSequence.fromList(leaves).addElement(leaf);
     }
     TypingHelper.inferCommonType(typeCheckingContext, r, leaves);

@@ -28,6 +28,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
   /*package*/ final ConceptDescriptor myConceptPlainReqRefWord = createDescriptorForPlainReqRefWord();
   /*package*/ final ConceptDescriptor myConceptPriorityTag = createDescriptorForPriorityTag();
   /*package*/ final ConceptDescriptor myConceptRelKindConflicts = createDescriptorForRelKindConflicts();
+  /*package*/ final ConceptDescriptor myConceptRelKindRequires = createDescriptorForRelKindRequires();
   /*package*/ final ConceptDescriptor myConceptRelTag = createDescriptorForRelTag();
   /*package*/ final ConceptDescriptor myConceptRelationKind = createDescriptorForRelationKind();
   /*package*/ final ConceptDescriptor myConceptReqRef = createDescriptorForReqRef();
@@ -52,13 +53,14 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     deps.extendedLanguage(0xd4280a54f6df4383L, 0xaa41d1b2bffa7eb1L, "com.mbeddr.core.base");
     deps.extendedLanguage(0x2374bc907e3741f1L, 0xa9c4c2e35194c36aL, "com.mbeddr.doc");
     deps.extendedLanguage(0x7b68d745a7b848b9L, 0xbd9c05c0f8725a35L, "org.iets3.core.base");
+    deps.extendedLanguage(0x5fef253e34b0443dL, 0x80359a2928b716d3L, "com.mbeddr.mpsutil.editor.displayControl");
     deps.extendedLanguage(0x92d2ea165a424fdfL, 0xa676c7604efe3504L, "de.slisson.mps.richtext");
     deps.aggregatedLanguage(0xf95247f1a2854e98L, 0x864f7f4b1723a807L, "org.iets3.core.users");
   }
 
   @Override
   public Collection<ConceptDescriptor> getDescriptors() {
-    return Arrays.asList(myConceptAbstractRequirement, myConceptCCTag, myConceptDefaultRequirement, myConceptIReqContainer, myConceptIReqContent, myConceptIReqContextLabelProvider, myConceptIReqDocContent, myConceptIReqRefCtx, myConceptIRequirementsRelation, myConceptKind, myConceptKindFunctional, myConceptNonMergeableWord, myConceptPlainReqRefWord, myConceptPriorityTag, myConceptRelKindConflicts, myConceptRelTag, myConceptRelationKind, myConceptReqRef, myConceptReqRelWord, myConceptRequirementsChunk, myConceptRequirementsDocSection, myConceptState, myConceptStateAccepted, myConceptStateDone, myConceptStateNew, myConceptTag);
+    return Arrays.asList(myConceptAbstractRequirement, myConceptCCTag, myConceptDefaultRequirement, myConceptIReqContainer, myConceptIReqContent, myConceptIReqContextLabelProvider, myConceptIReqDocContent, myConceptIReqRefCtx, myConceptIRequirementsRelation, myConceptKind, myConceptKindFunctional, myConceptNonMergeableWord, myConceptPlainReqRefWord, myConceptPriorityTag, myConceptRelKindConflicts, myConceptRelKindRequires, myConceptRelTag, myConceptRelationKind, myConceptReqRef, myConceptReqRelWord, myConceptRequirementsChunk, myConceptRequirementsDocSection, myConceptState, myConceptStateAccepted, myConceptStateDone, myConceptStateNew, myConceptTag);
   }
 
   @Override
@@ -95,6 +97,8 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
         return myConceptPriorityTag;
       case LanguageConceptSwitch.RelKindConflicts:
         return myConceptRelKindConflicts;
+      case LanguageConceptSwitch.RelKindRequires:
+        return myConceptRelKindRequires;
       case LanguageConceptSwitch.RelTag:
         return myConceptRelTag;
       case LanguageConceptSwitch.RelationKind:
@@ -132,6 +136,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.class_(false, true, false);
     b.parent(0x7b68d745a7b848b9L, 0xbd9c05c0f8725a35L, 0x32f64a31a179034L);
     b.parent(0xa3c6f64241b744cbL, 0x951b463b8427a245L, 0x477d8ab2bc87c94fL);
+    b.parent(0x5fef253e34b0443dL, 0x80359a2928b716d3L, 0x5136578b182923d9L);
     b.origin("r:82415404-e5c7-47c8-ae5b-951fc882e316(org.iets3.req.core.structure)/5151426049053136302");
     b.version(3);
     b.property("title", 0x477d8ab2bc8195f3L).type(PrimitiveTypeId.STRING).origin("5151426049053136371").done();
@@ -267,6 +272,16 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.alias("conflicts with");
     return b.create();
   }
+  private static ConceptDescriptor createDescriptorForRelKindRequires() {
+    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("org.iets3.req.core", "RelKindRequires", 0xa3c6f64241b744cbL, 0x951b463b8427a245L, 0x48f106e4a8ecfbe7L);
+    b.class_(false, false, false);
+    // extends: org.iets3.req.core.structure.RelationKind
+    b.super_(0xa3c6f64241b744cbL, 0x951b463b8427a245L, 0x5fd70b0af6e3a494L);
+    b.origin("r:82415404-e5c7-47c8-ae5b-951fc882e316(org.iets3.req.core.structure)/5255989819274492903");
+    b.version(3);
+    b.alias("requires");
+    return b.create();
+  }
   private static ConceptDescriptor createDescriptorForRelTag() {
     ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("org.iets3.req.core", "RelTag", 0xa3c6f64241b744cbL, 0x951b463b8427a245L, 0x5fd70b0af6e5d5fbL);
     b.class_(false, false, false);
@@ -313,6 +328,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.parent(0x7b68d745a7b848b9L, 0xbd9c05c0f8725a35L, 0x6c4f9fd23e57eb38L);
     b.origin("r:82415404-e5c7-47c8-ae5b-951fc882e316(org.iets3.req.core.structure)/5151426049053136028");
     b.version(3);
+    b.property("hideEmptyChildReqsSection", 0x48f106e4a8e1b075L).type(PrimitiveTypeId.BOOLEAN).origin("5255989819273752693").done();
     return b.create();
   }
   private static ConceptDescriptor createDescriptorForRequirementsDocSection() {

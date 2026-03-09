@@ -32,26 +32,23 @@
       <node id="2060704857949559883" at="21,50,22,37" concept="7" />
       <node id="2060704857949559883" at="24,68,25,102" concept="7" />
       <node id="2060704857949559883" at="27,27,28,17" concept="7" />
-      <node id="2060704857949559883" at="30,39,31,16" concept="7" />
-      <node id="2060704857949559886" at="33,66,34,81" concept="6" />
-      <node id="2060704857949559886" at="34,81,35,26" concept="7" />
-      <node id="2060704857949559883" at="39,0,40,0" concept="9" trace="YearRangeType$Em" />
-      <node id="2060704857949559883" at="40,0,41,0" concept="9" trace="DiscreteDateRangeType$Ih" />
+      <node id="2060704857949559886" at="30,66,31,81" concept="6" />
+      <node id="2060704857949559886" at="31,81,32,26" concept="7" />
+      <node id="2060704857949559883" at="36,0,37,0" concept="9" trace="YearRangeType$Em" />
+      <node id="2060704857949559883" at="37,0,38,0" concept="9" trace="DiscreteDateRangeType$Ih" />
       <node id="2060704857949559883" at="16,0,18,0" concept="1" trace="supertypeOf_YearRange_SubtypingRule#()V" />
       <node id="2060704857949559883" at="18,0,21,0" concept="5" trace="getSubOrSuperType#(Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/typesystem/inference/TypeCheckingContext;Ljetbrains/mps/lang/typesystem/runtime/IsApplicableStatus;)Lorg/jetbrains/mps/openapi/model/SNode;" />
       <node id="2060704857949559883" at="21,0,24,0" concept="5" trace="getApplicableConcept#()Lorg/jetbrains/mps/openapi/language/SAbstractConcept;" />
       <node id="2060704857949559883" at="24,0,27,0" concept="5" trace="isApplicableAndPattern#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljetbrains/mps/lang/typesystem/runtime/IsApplicableStatus;" />
       <node id="2060704857949559883" at="27,0,30,0" concept="5" trace="isWeak#()Z" />
-      <node id="2060704857949559883" at="30,0,33,0" concept="5" trace="surelyKeepsConcept#()Z" />
-      <node id="2060704857949559886" at="33,0,37,0" concept="10" trace="createDiscreteDateRangeType_54z5nk_a0a1#()Lorg/jetbrains/mps/openapi/model/SNode;" />
+      <node id="2060704857949559886" at="30,0,34,0" concept="10" trace="createDiscreteDateRangeType_54z5nk_a0a1#()Lorg/jetbrains/mps/openapi/model/SNode;" />
       <scope id="2060704857949559883" at="16,48,16,48" />
       <scope id="2060704857949559884" at="18,113,19,53" />
       <scope id="2060704857949559883" at="21,50,22,37" />
       <scope id="2060704857949559883" at="24,68,25,102" />
       <scope id="2060704857949559883" at="27,27,28,17" />
-      <scope id="2060704857949559883" at="30,39,31,16" />
       <scope id="2060704857949559883" at="16,0,18,0" />
-      <scope id="2060704857949559886" at="33,66,35,26">
+      <scope id="2060704857949559886" at="30,66,32,26">
         <var name="n0" id="2060704857949559886" />
       </scope>
       <scope id="2060704857949559883" at="18,0,21,0">
@@ -64,10 +61,9 @@
         <var name="argument" id="2060704857949559883" />
       </scope>
       <scope id="2060704857949559883" at="27,0,30,0" />
-      <scope id="2060704857949559883" at="30,0,33,0" />
-      <scope id="2060704857949559886" at="33,0,37,0" />
-      <unit id="2060704857949559883" at="38,0,42,0" name="org.iets3.core.expr.datetime.typesystem.supertypeOf_YearRange_SubtypingRule$CONCEPTS" />
-      <unit id="2060704857949559883" at="15,0,43,0" name="org.iets3.core.expr.datetime.typesystem.supertypeOf_YearRange_SubtypingRule" />
+      <scope id="2060704857949559886" at="30,0,34,0" />
+      <unit id="2060704857949559883" at="35,0,39,0" name="org.iets3.core.expr.datetime.typesystem.supertypeOf_YearRange_SubtypingRule$CONCEPTS" />
+      <unit id="2060704857949559883" at="15,0,40,0" name="org.iets3.core.expr.datetime.typesystem.supertypeOf_YearRange_SubtypingRule" />
     </file>
   </root>
   <root nodeRef="r:8fb8c021-a1ab-41a1-a284-a1a372e0faad(org.iets3.core.expr.datetime.typesystem)/2060704857949560148">
@@ -207,7 +203,7 @@
       <node id="2425357398686134861" at="286,34,287,109" concept="2" />
       <node id="2425357398686134861" at="287,109,288,48" concept="2" />
       <node id="2425357398686134864" at="290,99,291,46" concept="7" />
-      <node id="2425357398686134874" at="293,132,294,301" concept="7" />
+      <node id="2425357398686134874" at="293,132,294,297" concept="7" />
       <node id="2425357398686134861" at="297,71,298,59" concept="2" />
       <node id="2425357398686134867" at="300,70,301,83" concept="6" />
       <node id="2425357398686134867" at="301,83,302,28" concept="7" />
@@ -225,7 +221,7 @@
       <node id="2425357398686143088" at="321,34,322,109" concept="2" />
       <node id="2425357398686143088" at="322,109,323,48" concept="2" />
       <node id="2425357398686143091" at="325,99,326,46" concept="7" />
-      <node id="2425357398686143101" at="328,132,329,301" concept="7" />
+      <node id="2425357398686143101" at="328,132,329,297" concept="7" />
       <node id="2425357398686143088" at="332,71,333,59" concept="2" />
       <node id="2425357398686143094" at="335,57,336,70" concept="6" />
       <node id="2425357398686143094" at="336,70,337,28" concept="7" />
@@ -243,7 +239,7 @@
       <node id="2425357398686145284" at="356,34,357,109" concept="2" />
       <node id="2425357398686145284" at="357,109,358,48" concept="2" />
       <node id="2425357398686145287" at="360,99,361,46" concept="7" />
-      <node id="2425357398686145297" at="363,132,364,301" concept="7" />
+      <node id="2425357398686145297" at="363,132,364,297" concept="7" />
       <node id="2425357398686145284" at="367,71,368,59" concept="2" />
       <node id="2425357398686145290" at="370,70,371,83" concept="6" />
       <node id="2425357398686145290" at="371,83,372,28" concept="7" />
@@ -261,7 +257,7 @@
       <node id="553080662195561846" at="597,34,598,109" concept="2" />
       <node id="553080662195561846" at="598,109,599,47" concept="2" />
       <node id="553080662195561849" at="601,99,602,46" concept="7" />
-      <node id="8974664565762643186" at="604,132,605,301" concept="7" />
+      <node id="8974664565762643186" at="604,132,605,297" concept="7" />
       <node id="553080662195561846" at="608,71,609,59" concept="2" />
       <node id="553080662195561852" at="611,58,612,70" concept="6" />
       <node id="553080662195561852" at="612,70,613,28" concept="7" />
@@ -298,16 +294,16 @@
       <node id="2425357398686145284" at="349,0,360,0" concept="1" trace="CustomOverloadedOperationsTypesProvider_d#(Lorg/jetbrains/mps/openapi/language/SAbstractConcept;)V" />
       <node id="553080662195561846" at="590,0,601,0" concept="1" trace="CustomOverloadedOperationsTypesProvider_a_1#(Lorg/jetbrains/mps/openapi/language/SAbstractConcept;)V" />
       <scope id="2425357398686134863" at="290,99,291,46" />
-      <scope id="2425357398686134873" at="293,132,294,301" />
+      <scope id="2425357398686134873" at="293,132,294,297" />
       <scope id="2425357398686134861" at="297,71,298,59" />
       <scope id="2425357398686143090" at="325,99,326,46" />
-      <scope id="2425357398686143100" at="328,132,329,301" />
+      <scope id="2425357398686143100" at="328,132,329,297" />
       <scope id="2425357398686143088" at="332,71,333,59" />
       <scope id="2425357398686145286" at="360,99,361,46" />
-      <scope id="2425357398686145296" at="363,132,364,301" />
+      <scope id="2425357398686145296" at="363,132,364,297" />
       <scope id="2425357398686145284" at="367,71,368,59" />
       <scope id="553080662195561848" at="601,99,602,46" />
-      <scope id="8974664565762642700" at="604,132,605,301" />
+      <scope id="8974664565762642700" at="604,132,605,297" />
       <scope id="553080662195561846" at="608,71,609,59" />
       <scope id="2425357398686134867" at="300,70,302,28">
         <var name="n0" id="2425357398686134867" />
@@ -504,26 +500,23 @@
       <node id="3885635233757802102" at="21,50,22,32" concept="7" />
       <node id="3885635233757802102" at="24,68,25,102" concept="7" />
       <node id="3885635233757802102" at="27,27,28,17" concept="7" />
-      <node id="3885635233757802102" at="30,39,31,16" concept="7" />
-      <node id="3885635233757802635" at="33,61,34,76" concept="6" />
-      <node id="3885635233757802635" at="34,76,35,26" concept="7" />
-      <node id="3885635233757802102" at="39,0,40,0" concept="9" trace="DateType$dZ" />
-      <node id="3885635233757802102" at="40,0,41,0" concept="9" trace="AbstractDateType$Jj" />
+      <node id="3885635233757802635" at="30,61,31,76" concept="6" />
+      <node id="3885635233757802635" at="31,76,32,26" concept="7" />
+      <node id="3885635233757802102" at="36,0,37,0" concept="9" trace="DateType$dZ" />
+      <node id="3885635233757802102" at="37,0,38,0" concept="9" trace="AbstractDateType$Jj" />
       <node id="3885635233757802102" at="16,0,18,0" concept="1" trace="supertypeof_DateType_SubtypingRule#()V" />
       <node id="3885635233757802102" at="18,0,21,0" concept="5" trace="getSubOrSuperType#(Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/typesystem/inference/TypeCheckingContext;Ljetbrains/mps/lang/typesystem/runtime/IsApplicableStatus;)Lorg/jetbrains/mps/openapi/model/SNode;" />
       <node id="3885635233757802102" at="21,0,24,0" concept="5" trace="getApplicableConcept#()Lorg/jetbrains/mps/openapi/language/SAbstractConcept;" />
       <node id="3885635233757802102" at="24,0,27,0" concept="5" trace="isApplicableAndPattern#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljetbrains/mps/lang/typesystem/runtime/IsApplicableStatus;" />
       <node id="3885635233757802102" at="27,0,30,0" concept="5" trace="isWeak#()Z" />
-      <node id="3885635233757802102" at="30,0,33,0" concept="5" trace="surelyKeepsConcept#()Z" />
-      <node id="3885635233757802635" at="33,0,37,0" concept="10" trace="createAbstractDateType_epsr6f_a0a1#()Lorg/jetbrains/mps/openapi/model/SNode;" />
+      <node id="3885635233757802635" at="30,0,34,0" concept="10" trace="createAbstractDateType_epsr6f_a0a1#()Lorg/jetbrains/mps/openapi/model/SNode;" />
       <scope id="3885635233757802102" at="16,47,16,47" />
       <scope id="3885635233757802103" at="18,118,19,48" />
       <scope id="3885635233757802102" at="21,50,22,32" />
       <scope id="3885635233757802102" at="24,68,25,102" />
       <scope id="3885635233757802102" at="27,27,28,17" />
-      <scope id="3885635233757802102" at="30,39,31,16" />
       <scope id="3885635233757802102" at="16,0,18,0" />
-      <scope id="3885635233757802635" at="33,61,35,26">
+      <scope id="3885635233757802635" at="30,61,32,26">
         <var name="n0" id="3885635233757802635" />
       </scope>
       <scope id="3885635233757802102" at="18,0,21,0">
@@ -536,10 +529,9 @@
         <var name="argument" id="3885635233757802102" />
       </scope>
       <scope id="3885635233757802102" at="27,0,30,0" />
-      <scope id="3885635233757802102" at="30,0,33,0" />
-      <scope id="3885635233757802635" at="33,0,37,0" />
-      <unit id="3885635233757802102" at="38,0,42,0" name="org.iets3.core.expr.datetime.typesystem.supertypeof_DateType_SubtypingRule$CONCEPTS" />
-      <unit id="3885635233757802102" at="15,0,43,0" name="org.iets3.core.expr.datetime.typesystem.supertypeof_DateType_SubtypingRule" />
+      <scope id="3885635233757802635" at="30,0,34,0" />
+      <unit id="3885635233757802102" at="35,0,39,0" name="org.iets3.core.expr.datetime.typesystem.supertypeof_DateType_SubtypingRule$CONCEPTS" />
+      <unit id="3885635233757802102" at="15,0,40,0" name="org.iets3.core.expr.datetime.typesystem.supertypeof_DateType_SubtypingRule" />
     </file>
   </root>
   <root nodeRef="r:8fb8c021-a1ab-41a1-a284-a1a372e0faad(org.iets3.core.expr.datetime.typesystem)/3885635233759216725">
@@ -660,26 +652,23 @@
       <node id="3885635233759311548" at="21,50,22,38" concept="7" />
       <node id="3885635233759311548" at="24,68,25,102" concept="7" />
       <node id="3885635233759311548" at="27,27,28,17" concept="7" />
-      <node id="3885635233759311548" at="30,39,31,16" concept="7" />
-      <node id="3885635233759311685" at="33,66,34,81" concept="6" />
-      <node id="3885635233759311685" at="34,81,35,26" concept="7" />
-      <node id="3885635233759311548" at="39,0,40,0" concept="9" trace="MonthRangeType$IK" />
-      <node id="3885635233759311548" at="40,0,41,0" concept="9" trace="DiscreteDateRangeType$Ih" />
+      <node id="3885635233759311685" at="30,66,31,81" concept="6" />
+      <node id="3885635233759311685" at="31,81,32,26" concept="7" />
+      <node id="3885635233759311548" at="36,0,37,0" concept="9" trace="MonthRangeType$IK" />
+      <node id="3885635233759311548" at="37,0,38,0" concept="9" trace="DiscreteDateRangeType$Ih" />
       <node id="3885635233759311548" at="16,0,18,0" concept="1" trace="supertypeOf_MonthRange_SubtypingRule#()V" />
       <node id="3885635233759311548" at="18,0,21,0" concept="5" trace="getSubOrSuperType#(Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/typesystem/inference/TypeCheckingContext;Ljetbrains/mps/lang/typesystem/runtime/IsApplicableStatus;)Lorg/jetbrains/mps/openapi/model/SNode;" />
       <node id="3885635233759311548" at="21,0,24,0" concept="5" trace="getApplicableConcept#()Lorg/jetbrains/mps/openapi/language/SAbstractConcept;" />
       <node id="3885635233759311548" at="24,0,27,0" concept="5" trace="isApplicableAndPattern#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljetbrains/mps/lang/typesystem/runtime/IsApplicableStatus;" />
       <node id="3885635233759311548" at="27,0,30,0" concept="5" trace="isWeak#()Z" />
-      <node id="3885635233759311548" at="30,0,33,0" concept="5" trace="surelyKeepsConcept#()Z" />
-      <node id="3885635233759311685" at="33,0,37,0" concept="10" trace="createDiscreteDateRangeType_qxz0gi_a0a1#()Lorg/jetbrains/mps/openapi/model/SNode;" />
+      <node id="3885635233759311685" at="30,0,34,0" concept="10" trace="createDiscreteDateRangeType_qxz0gi_a0a1#()Lorg/jetbrains/mps/openapi/model/SNode;" />
       <scope id="3885635233759311548" at="16,49,16,49" />
       <scope id="3885635233759311549" at="18,113,19,53" />
       <scope id="3885635233759311548" at="21,50,22,38" />
       <scope id="3885635233759311548" at="24,68,25,102" />
       <scope id="3885635233759311548" at="27,27,28,17" />
-      <scope id="3885635233759311548" at="30,39,31,16" />
       <scope id="3885635233759311548" at="16,0,18,0" />
-      <scope id="3885635233759311685" at="33,66,35,26">
+      <scope id="3885635233759311685" at="30,66,32,26">
         <var name="n0" id="3885635233759311685" />
       </scope>
       <scope id="3885635233759311548" at="18,0,21,0">
@@ -692,10 +681,9 @@
         <var name="argument" id="3885635233759311548" />
       </scope>
       <scope id="3885635233759311548" at="27,0,30,0" />
-      <scope id="3885635233759311548" at="30,0,33,0" />
-      <scope id="3885635233759311685" at="33,0,37,0" />
-      <unit id="3885635233759311548" at="38,0,42,0" name="org.iets3.core.expr.datetime.typesystem.supertypeOf_MonthRange_SubtypingRule$CONCEPTS" />
-      <unit id="3885635233759311548" at="15,0,43,0" name="org.iets3.core.expr.datetime.typesystem.supertypeOf_MonthRange_SubtypingRule" />
+      <scope id="3885635233759311685" at="30,0,34,0" />
+      <unit id="3885635233759311548" at="35,0,39,0" name="org.iets3.core.expr.datetime.typesystem.supertypeOf_MonthRange_SubtypingRule$CONCEPTS" />
+      <unit id="3885635233759311548" at="15,0,40,0" name="org.iets3.core.expr.datetime.typesystem.supertypeOf_MonthRange_SubtypingRule" />
     </file>
   </root>
   <root nodeRef="r:8fb8c021-a1ab-41a1-a284-a1a372e0faad(org.iets3.core.expr.datetime.typesystem)/3885635233759352259">
@@ -1039,7 +1027,7 @@
       <node id="4274681253355138405" at="391,34,392,109" concept="2" />
       <node id="4274681253355138405" at="392,109,393,48" concept="2" />
       <node id="4274681253355138408" at="395,99,396,46" concept="7" />
-      <node id="4274681253355138418" at="398,132,399,301" concept="7" />
+      <node id="4274681253355138418" at="398,132,399,297" concept="7" />
       <node id="4274681253355138405" at="402,71,403,59" concept="2" />
       <node id="4274681253355138411" at="405,57,406,70" concept="6" />
       <node id="4274681253355138411" at="406,70,407,28" concept="7" />
@@ -1057,7 +1045,7 @@
       <node id="4274681253355138430" at="426,34,427,109" concept="2" />
       <node id="4274681253355138430" at="427,109,428,48" concept="2" />
       <node id="4274681253355138433" at="430,99,431,46" concept="7" />
-      <node id="4274681253355138443" at="433,132,434,301" concept="7" />
+      <node id="4274681253355138443" at="433,132,434,297" concept="7" />
       <node id="4274681253355138430" at="437,71,438,59" concept="2" />
       <node id="4274681253355138436" at="440,57,441,70" concept="6" />
       <node id="4274681253355138436" at="441,70,442,28" concept="7" />
@@ -1075,7 +1063,7 @@
       <node id="4274681253356169761" at="461,34,462,109" concept="2" />
       <node id="4274681253356169761" at="462,109,463,48" concept="2" />
       <node id="4274681253356169764" at="465,99,466,43" concept="7" />
-      <node id="4274681253356169775" at="468,132,469,301" concept="7" />
+      <node id="4274681253356169775" at="468,132,469,297" concept="7" />
       <node id="4274681253356169761" at="472,71,473,59" concept="2" />
       <node id="4274681253356169767" at="475,57,476,70" concept="6" />
       <node id="4274681253356169767" at="476,70,477,28" concept="7" />
@@ -1105,13 +1093,13 @@
       <node id="4274681253355138430" at="419,0,430,0" concept="1" trace="CustomOverloadedOperationsTypesProvider_b_0#(Lorg/jetbrains/mps/openapi/language/SAbstractConcept;)V" />
       <node id="4274681253356169761" at="454,0,465,0" concept="1" trace="CustomOverloadedOperationsTypesProvider_c_0#(Lorg/jetbrains/mps/openapi/language/SAbstractConcept;)V" />
       <scope id="4274681253355138407" at="395,99,396,46" />
-      <scope id="4274681253355138417" at="398,132,399,301" />
+      <scope id="4274681253355138417" at="398,132,399,297" />
       <scope id="4274681253355138405" at="402,71,403,59" />
       <scope id="4274681253355138432" at="430,99,431,46" />
-      <scope id="4274681253355138442" at="433,132,434,301" />
+      <scope id="4274681253355138442" at="433,132,434,297" />
       <scope id="4274681253355138430" at="437,71,438,59" />
       <scope id="4274681253356169763" at="465,99,466,43" />
-      <scope id="4274681253356169774" at="468,132,469,301" />
+      <scope id="4274681253356169774" at="468,132,469,297" />
       <scope id="4274681253356169761" at="472,71,473,59" />
       <scope id="4274681253355138411" at="405,57,407,28">
         <var name="n0" id="4274681253355138411" />
@@ -1436,26 +1424,23 @@
       <node id="4274681253355977858" at="21,50,22,38" concept="7" />
       <node id="4274681253355977858" at="24,68,25,102" concept="7" />
       <node id="4274681253355977858" at="27,27,28,17" concept="7" />
-      <node id="4274681253355977858" at="30,39,31,16" concept="7" />
-      <node id="4274681253355977945" at="33,58,34,73" concept="6" />
-      <node id="4274681253355977945" at="34,73,35,26" concept="7" />
-      <node id="4274681253355977858" at="39,0,40,0" concept="9" trace="HoursDeltaType$nr" />
-      <node id="4274681253355977858" at="40,0,41,0" concept="9" trace="TimeDeltaType$tq" />
+      <node id="4274681253355977945" at="30,58,31,73" concept="6" />
+      <node id="4274681253355977945" at="31,73,32,26" concept="7" />
+      <node id="4274681253355977858" at="36,0,37,0" concept="9" trace="HoursDeltaType$nr" />
+      <node id="4274681253355977858" at="37,0,38,0" concept="9" trace="TimeDeltaType$tq" />
       <node id="4274681253355977858" at="16,0,18,0" concept="1" trace="supertypeof_HoursType_SubtypingRule#()V" />
       <node id="4274681253355977858" at="18,0,21,0" concept="5" trace="getSubOrSuperType#(Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/typesystem/inference/TypeCheckingContext;Ljetbrains/mps/lang/typesystem/runtime/IsApplicableStatus;)Lorg/jetbrains/mps/openapi/model/SNode;" />
       <node id="4274681253355977858" at="21,0,24,0" concept="5" trace="getApplicableConcept#()Lorg/jetbrains/mps/openapi/language/SAbstractConcept;" />
       <node id="4274681253355977858" at="24,0,27,0" concept="5" trace="isApplicableAndPattern#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljetbrains/mps/lang/typesystem/runtime/IsApplicableStatus;" />
       <node id="4274681253355977858" at="27,0,30,0" concept="5" trace="isWeak#()Z" />
-      <node id="4274681253355977858" at="30,0,33,0" concept="5" trace="surelyKeepsConcept#()Z" />
-      <node id="4274681253355977945" at="33,0,37,0" concept="10" trace="createTimeDeltaType_lsft5x_a0a1#()Lorg/jetbrains/mps/openapi/model/SNode;" />
+      <node id="4274681253355977945" at="30,0,34,0" concept="10" trace="createTimeDeltaType_lsft5x_a0a1#()Lorg/jetbrains/mps/openapi/model/SNode;" />
       <scope id="4274681253355977858" at="16,48,16,48" />
       <scope id="4274681253355977859" at="18,124,19,45" />
       <scope id="4274681253355977858" at="21,50,22,38" />
       <scope id="4274681253355977858" at="24,68,25,102" />
       <scope id="4274681253355977858" at="27,27,28,17" />
-      <scope id="4274681253355977858" at="30,39,31,16" />
       <scope id="4274681253355977858" at="16,0,18,0" />
-      <scope id="4274681253355977945" at="33,58,35,26">
+      <scope id="4274681253355977945" at="30,58,32,26">
         <var name="n0" id="4274681253355977945" />
       </scope>
       <scope id="4274681253355977858" at="18,0,21,0">
@@ -1468,10 +1453,9 @@
         <var name="argument" id="4274681253355977858" />
       </scope>
       <scope id="4274681253355977858" at="27,0,30,0" />
-      <scope id="4274681253355977858" at="30,0,33,0" />
-      <scope id="4274681253355977945" at="33,0,37,0" />
-      <unit id="4274681253355977858" at="38,0,42,0" name="org.iets3.core.expr.datetime.typesystem.supertypeof_HoursType_SubtypingRule$CONCEPTS" />
-      <unit id="4274681253355977858" at="15,0,43,0" name="org.iets3.core.expr.datetime.typesystem.supertypeof_HoursType_SubtypingRule" />
+      <scope id="4274681253355977945" at="30,0,34,0" />
+      <unit id="4274681253355977858" at="35,0,39,0" name="org.iets3.core.expr.datetime.typesystem.supertypeof_HoursType_SubtypingRule$CONCEPTS" />
+      <unit id="4274681253355977858" at="15,0,40,0" name="org.iets3.core.expr.datetime.typesystem.supertypeof_HoursType_SubtypingRule" />
     </file>
   </root>
   <root nodeRef="r:8fb8c021-a1ab-41a1-a284-a1a372e0faad(org.iets3.core.expr.datetime.typesystem)/4274681253355978585">
@@ -1488,26 +1472,23 @@
       <node id="4274681253355978585" at="21,50,22,40" concept="7" />
       <node id="4274681253355978585" at="24,68,25,102" concept="7" />
       <node id="4274681253355978585" at="27,27,28,17" concept="7" />
-      <node id="4274681253355978585" at="30,39,31,16" concept="7" />
-      <node id="4274681253355978648" at="33,58,34,73" concept="6" />
-      <node id="4274681253355978648" at="34,73,35,26" concept="7" />
-      <node id="4274681253355978585" at="39,0,40,0" concept="9" trace="MinutesDeltaType$tT" />
-      <node id="4274681253355978585" at="40,0,41,0" concept="9" trace="TimeDeltaType$tq" />
+      <node id="4274681253355978648" at="30,58,31,73" concept="6" />
+      <node id="4274681253355978648" at="31,73,32,26" concept="7" />
+      <node id="4274681253355978585" at="36,0,37,0" concept="9" trace="MinutesDeltaType$tT" />
+      <node id="4274681253355978585" at="37,0,38,0" concept="9" trace="TimeDeltaType$tq" />
       <node id="4274681253355978585" at="16,0,18,0" concept="1" trace="supertypeof_MinutesType_SubtypingRule#()V" />
       <node id="4274681253355978585" at="18,0,21,0" concept="5" trace="getSubOrSuperType#(Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/typesystem/inference/TypeCheckingContext;Ljetbrains/mps/lang/typesystem/runtime/IsApplicableStatus;)Lorg/jetbrains/mps/openapi/model/SNode;" />
       <node id="4274681253355978585" at="21,0,24,0" concept="5" trace="getApplicableConcept#()Lorg/jetbrains/mps/openapi/language/SAbstractConcept;" />
       <node id="4274681253355978585" at="24,0,27,0" concept="5" trace="isApplicableAndPattern#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljetbrains/mps/lang/typesystem/runtime/IsApplicableStatus;" />
       <node id="4274681253355978585" at="27,0,30,0" concept="5" trace="isWeak#()Z" />
-      <node id="4274681253355978585" at="30,0,33,0" concept="5" trace="surelyKeepsConcept#()Z" />
-      <node id="4274681253355978648" at="33,0,37,0" concept="10" trace="createTimeDeltaType_an35pp_a0a1#()Lorg/jetbrains/mps/openapi/model/SNode;" />
+      <node id="4274681253355978648" at="30,0,34,0" concept="10" trace="createTimeDeltaType_an35pp_a0a1#()Lorg/jetbrains/mps/openapi/model/SNode;" />
       <scope id="4274681253355978585" at="16,50,16,50" />
       <scope id="4274681253355978586" at="18,126,19,45" />
       <scope id="4274681253355978585" at="21,50,22,40" />
       <scope id="4274681253355978585" at="24,68,25,102" />
       <scope id="4274681253355978585" at="27,27,28,17" />
-      <scope id="4274681253355978585" at="30,39,31,16" />
       <scope id="4274681253355978585" at="16,0,18,0" />
-      <scope id="4274681253355978648" at="33,58,35,26">
+      <scope id="4274681253355978648" at="30,58,32,26">
         <var name="n0" id="4274681253355978648" />
       </scope>
       <scope id="4274681253355978585" at="18,0,21,0">
@@ -1520,10 +1501,9 @@
         <var name="argument" id="4274681253355978585" />
       </scope>
       <scope id="4274681253355978585" at="27,0,30,0" />
-      <scope id="4274681253355978585" at="30,0,33,0" />
-      <scope id="4274681253355978648" at="33,0,37,0" />
-      <unit id="4274681253355978585" at="38,0,42,0" name="org.iets3.core.expr.datetime.typesystem.supertypeof_MinutesType_SubtypingRule$CONCEPTS" />
-      <unit id="4274681253355978585" at="15,0,43,0" name="org.iets3.core.expr.datetime.typesystem.supertypeof_MinutesType_SubtypingRule" />
+      <scope id="4274681253355978648" at="30,0,34,0" />
+      <unit id="4274681253355978585" at="35,0,39,0" name="org.iets3.core.expr.datetime.typesystem.supertypeof_MinutesType_SubtypingRule$CONCEPTS" />
+      <unit id="4274681253355978585" at="15,0,40,0" name="org.iets3.core.expr.datetime.typesystem.supertypeof_MinutesType_SubtypingRule" />
     </file>
   </root>
   <root nodeRef="r:8fb8c021-a1ab-41a1-a284-a1a372e0faad(org.iets3.core.expr.datetime.typesystem)/4274681253355978974">
@@ -1540,26 +1520,23 @@
       <node id="4274681253355978974" at="21,50,22,40" concept="7" />
       <node id="4274681253355978974" at="24,68,25,102" concept="7" />
       <node id="4274681253355978974" at="27,27,28,17" concept="7" />
-      <node id="4274681253355978974" at="30,39,31,16" concept="7" />
-      <node id="4274681253355979045" at="33,58,34,73" concept="6" />
-      <node id="4274681253355979045" at="34,73,35,26" concept="7" />
-      <node id="4274681253355978974" at="39,0,40,0" concept="9" trace="SecondsDeltaType$uo" />
-      <node id="4274681253355978974" at="40,0,41,0" concept="9" trace="TimeDeltaType$tq" />
+      <node id="4274681253355979045" at="30,58,31,73" concept="6" />
+      <node id="4274681253355979045" at="31,73,32,26" concept="7" />
+      <node id="4274681253355978974" at="36,0,37,0" concept="9" trace="SecondsDeltaType$uo" />
+      <node id="4274681253355978974" at="37,0,38,0" concept="9" trace="TimeDeltaType$tq" />
       <node id="4274681253355978974" at="16,0,18,0" concept="1" trace="supertypeof_SecondsType_SubtypingRule#()V" />
       <node id="4274681253355978974" at="18,0,21,0" concept="5" trace="getSubOrSuperType#(Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/typesystem/inference/TypeCheckingContext;Ljetbrains/mps/lang/typesystem/runtime/IsApplicableStatus;)Lorg/jetbrains/mps/openapi/model/SNode;" />
       <node id="4274681253355978974" at="21,0,24,0" concept="5" trace="getApplicableConcept#()Lorg/jetbrains/mps/openapi/language/SAbstractConcept;" />
       <node id="4274681253355978974" at="24,0,27,0" concept="5" trace="isApplicableAndPattern#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljetbrains/mps/lang/typesystem/runtime/IsApplicableStatus;" />
       <node id="4274681253355978974" at="27,0,30,0" concept="5" trace="isWeak#()Z" />
-      <node id="4274681253355978974" at="30,0,33,0" concept="5" trace="surelyKeepsConcept#()Z" />
-      <node id="4274681253355979045" at="33,0,37,0" concept="10" trace="createTimeDeltaType_wnbgxp_a0a1#()Lorg/jetbrains/mps/openapi/model/SNode;" />
+      <node id="4274681253355979045" at="30,0,34,0" concept="10" trace="createTimeDeltaType_wnbgxp_a0a1#()Lorg/jetbrains/mps/openapi/model/SNode;" />
       <scope id="4274681253355978974" at="16,50,16,50" />
       <scope id="4274681253355978975" at="18,126,19,45" />
       <scope id="4274681253355978974" at="21,50,22,40" />
       <scope id="4274681253355978974" at="24,68,25,102" />
       <scope id="4274681253355978974" at="27,27,28,17" />
-      <scope id="4274681253355978974" at="30,39,31,16" />
       <scope id="4274681253355978974" at="16,0,18,0" />
-      <scope id="4274681253355979045" at="33,58,35,26">
+      <scope id="4274681253355979045" at="30,58,32,26">
         <var name="n0" id="4274681253355979045" />
       </scope>
       <scope id="4274681253355978974" at="18,0,21,0">
@@ -1572,10 +1549,9 @@
         <var name="argument" id="4274681253355978974" />
       </scope>
       <scope id="4274681253355978974" at="27,0,30,0" />
-      <scope id="4274681253355978974" at="30,0,33,0" />
-      <scope id="4274681253355979045" at="33,0,37,0" />
-      <unit id="4274681253355978974" at="38,0,42,0" name="org.iets3.core.expr.datetime.typesystem.supertypeof_SecondsType_SubtypingRule$CONCEPTS" />
-      <unit id="4274681253355978974" at="15,0,43,0" name="org.iets3.core.expr.datetime.typesystem.supertypeof_SecondsType_SubtypingRule" />
+      <scope id="4274681253355979045" at="30,0,34,0" />
+      <unit id="4274681253355978974" at="35,0,39,0" name="org.iets3.core.expr.datetime.typesystem.supertypeof_SecondsType_SubtypingRule$CONCEPTS" />
+      <unit id="4274681253355978974" at="15,0,40,0" name="org.iets3.core.expr.datetime.typesystem.supertypeof_SecondsType_SubtypingRule" />
     </file>
   </root>
   <root nodeRef="r:8fb8c021-a1ab-41a1-a284-a1a372e0faad(org.iets3.core.expr.datetime.typesystem)/4274681253356205957">
@@ -1597,7 +1573,7 @@
       <node id="4274681253356207114" at="501,118,502,57" concept="7" />
       <node id="4274681253356207125" at="503,7,504,0" concept="8" />
       <node id="4274681253356207126" at="504,0,505,48" concept="7" />
-      <node id="4274681253356207135" at="507,132,508,301" concept="7" />
+      <node id="4274681253356207135" at="507,132,508,297" concept="7" />
       <node id="4274681253356207109" at="511,71,512,59" concept="2" />
       <node id="4274681253356207147" at="514,62,515,75" concept="6" />
       <node id="4274681253356207147" at="515,75,516,28" concept="7" />
@@ -1615,7 +1591,7 @@
       <node id="4274681253356207149" at="535,34,536,109" concept="2" />
       <node id="4274681253356207149" at="536,109,537,48" concept="2" />
       <node id="4274681253356207152" at="539,99,540,55" concept="7" />
-      <node id="4274681253356207162" at="542,132,543,301" concept="7" />
+      <node id="4274681253356207162" at="542,132,543,297" concept="7" />
       <node id="4274681253356207149" at="546,71,547,59" concept="2" />
       <node id="4274681253356207174" at="549,62,550,75" concept="6" />
       <node id="4274681253356207174" at="550,75,551,28" concept="7" />
@@ -1631,7 +1607,7 @@
       <node id="4274681253356207176" at="566,34,567,109" concept="2" />
       <node id="4274681253356207176" at="567,109,568,48" concept="2" />
       <node id="4274681253356207182" at="570,99,571,29" concept="7" />
-      <node id="4274681253356207188" at="573,132,574,155" concept="7" />
+      <node id="4274681253356207188" at="573,132,574,153" concept="7" />
       <node id="4274681253356207176" at="577,71,578,59" concept="2" />
       <node id="4274681253356207184" at="580,62,581,75" concept="6" />
       <node id="4274681253356207184" at="581,75,582,28" concept="7" />
@@ -1658,13 +1634,13 @@
       <node id="4274681253356207149" at="528,0,539,0" concept="1" trace="CustomOverloadedOperationsTypesProvider_b_1#(Lorg/jetbrains/mps/openapi/language/SAbstractConcept;)V" />
       <node id="4274681253356207176" at="559,0,570,0" concept="1" trace="CustomOverloadedOperationsTypesProvider_c_1#(Lorg/jetbrains/mps/openapi/language/SAbstractConcept;)V" />
       <scope id="4274681253356207113" at="501,118,502,57" />
-      <scope id="4274681253356207134" at="507,132,508,301" />
+      <scope id="4274681253356207134" at="507,132,508,297" />
       <scope id="4274681253356207109" at="511,71,512,59" />
       <scope id="4274681253356207151" at="539,99,540,55" />
-      <scope id="4274681253356207161" at="542,132,543,301" />
+      <scope id="4274681253356207161" at="542,132,543,297" />
       <scope id="4274681253356207149" at="546,71,547,59" />
       <scope id="4274681253356207181" at="570,99,571,29" />
-      <scope id="4274681253356207187" at="573,132,574,155" />
+      <scope id="4274681253356207187" at="573,132,574,153" />
       <scope id="4274681253356207176" at="577,71,578,59" />
       <scope id="4274681253356207147" at="514,62,516,28">
         <var name="n0" id="4274681253356207147" />
@@ -2526,7 +2502,7 @@
       <node id="7205027067670329238" at="632,34,633,109" concept="2" />
       <node id="7205027067670329238" at="633,109,634,48" concept="2" />
       <node id="7205027067670332637" at="636,99,637,29" concept="7" />
-      <node id="7205027067670329251" at="639,132,640,301" concept="7" />
+      <node id="7205027067670329251" at="639,132,640,297" concept="7" />
       <node id="7205027067670329238" at="643,71,644,59" concept="2" />
       <node id="7205027067670329244" at="646,71,647,83" concept="6" />
       <node id="7205027067670329244" at="647,83,648,28" concept="7" />
@@ -2542,7 +2518,7 @@
       <node id="7205027067670332960" at="663,34,664,109" concept="2" />
       <node id="7205027067670332960" at="664,109,665,48" concept="2" />
       <node id="7205027067670332963" at="667,99,668,29" concept="7" />
-      <node id="7205027067670332972" at="670,132,671,301" concept="7" />
+      <node id="7205027067670332972" at="670,132,671,297" concept="7" />
       <node id="7205027067670332960" at="674,71,675,59" concept="2" />
       <node id="7205027067670332965" at="677,71,678,83" concept="6" />
       <node id="7205027067670332965" at="678,83,679,28" concept="7" />
@@ -2561,10 +2537,10 @@
       <node id="7205027067670329238" at="625,0,636,0" concept="1" trace="CustomOverloadedOperationsTypesProvider_a_2#(Lorg/jetbrains/mps/openapi/language/SAbstractConcept;)V" />
       <node id="7205027067670332960" at="656,0,667,0" concept="1" trace="CustomOverloadedOperationsTypesProvider_b_2#(Lorg/jetbrains/mps/openapi/language/SAbstractConcept;)V" />
       <scope id="7205027067670329240" at="636,99,637,29" />
-      <scope id="7205027067670329250" at="639,132,640,301" />
+      <scope id="7205027067670329250" at="639,132,640,297" />
       <scope id="7205027067670329238" at="643,71,644,59" />
       <scope id="7205027067670332962" at="667,99,668,29" />
-      <scope id="7205027067670332971" at="670,132,671,301" />
+      <scope id="7205027067670332971" at="670,132,671,297" />
       <scope id="7205027067670332960" at="674,71,675,59" />
       <scope id="7205027067670329244" at="646,71,648,28">
         <var name="n0" id="7205027067670329244" />
@@ -2746,7 +2722,7 @@
       <node id="8266215269006636837" at="694,34,695,109" concept="2" />
       <node id="8266215269006636837" at="695,109,696,48" concept="2" />
       <node id="8266215269006636840" at="698,99,699,43" concept="7" />
-      <node id="8266215269006636850" at="701,132,702,301" concept="7" />
+      <node id="8266215269006636850" at="701,132,702,297" concept="7" />
       <node id="8266215269006636837" at="705,71,706,59" concept="2" />
       <node id="8266215269006636843" at="708,58,709,70" concept="6" />
       <node id="8266215269006636843" at="709,70,710,28" concept="7" />
@@ -2762,7 +2738,7 @@
       <node id="8266215269006640242" at="716,0,720,0" concept="10" trace="createDateType_3ist9o_a0a1n#()Lorg/jetbrains/mps/openapi/model/SNode;" />
       <node id="8266215269006636837" at="687,0,698,0" concept="1" trace="CustomOverloadedOperationsTypesProvider_a_3#(Lorg/jetbrains/mps/openapi/language/SAbstractConcept;)V" />
       <scope id="8266215269006636839" at="698,99,699,43" />
-      <scope id="8266215269006636849" at="701,132,702,301" />
+      <scope id="8266215269006636849" at="701,132,702,297" />
       <scope id="8266215269006636837" at="705,71,706,59" />
       <scope id="8266215269006636843" at="708,58,710,28">
         <var name="n0" id="8266215269006636843" />
@@ -2811,26 +2787,23 @@
       <node id="8266215269006664124" at="21,50,22,37" concept="7" />
       <node id="8266215269006664124" at="24,68,25,102" concept="7" />
       <node id="8266215269006664124" at="27,27,28,17" concept="7" />
-      <node id="8266215269006664124" at="30,39,31,16" concept="7" />
-      <node id="8266215269006664228" at="33,58,34,73" concept="6" />
-      <node id="8266215269006664228" at="34,73,35,26" concept="7" />
-      <node id="8266215269006664124" at="39,0,40,0" concept="9" trace="DaysDeltaType$Cb" />
-      <node id="8266215269006664124" at="40,0,41,0" concept="9" trace="DateDeltaType$BG" />
+      <node id="8266215269006664228" at="30,58,31,73" concept="6" />
+      <node id="8266215269006664228" at="31,73,32,26" concept="7" />
+      <node id="8266215269006664124" at="36,0,37,0" concept="9" trace="DaysDeltaType$Cb" />
+      <node id="8266215269006664124" at="37,0,38,0" concept="9" trace="DateDeltaType$BG" />
       <node id="8266215269006664124" at="16,0,18,0" concept="1" trace="supertypeof_DaysType_SubtypingRule#()V" />
       <node id="8266215269006664124" at="18,0,21,0" concept="5" trace="getSubOrSuperType#(Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/typesystem/inference/TypeCheckingContext;Ljetbrains/mps/lang/typesystem/runtime/IsApplicableStatus;)Lorg/jetbrains/mps/openapi/model/SNode;" />
       <node id="8266215269006664124" at="21,0,24,0" concept="5" trace="getApplicableConcept#()Lorg/jetbrains/mps/openapi/language/SAbstractConcept;" />
       <node id="8266215269006664124" at="24,0,27,0" concept="5" trace="isApplicableAndPattern#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljetbrains/mps/lang/typesystem/runtime/IsApplicableStatus;" />
       <node id="8266215269006664124" at="27,0,30,0" concept="5" trace="isWeak#()Z" />
-      <node id="8266215269006664124" at="30,0,33,0" concept="5" trace="surelyKeepsConcept#()Z" />
-      <node id="8266215269006664228" at="33,0,37,0" concept="10" trace="createDateDeltaType_6lisi4_a0a1#()Lorg/jetbrains/mps/openapi/model/SNode;" />
+      <node id="8266215269006664228" at="30,0,34,0" concept="10" trace="createDateDeltaType_6lisi4_a0a1#()Lorg/jetbrains/mps/openapi/model/SNode;" />
       <scope id="8266215269006664124" at="16,47,16,47" />
       <scope id="8266215269006664125" at="18,113,19,45" />
       <scope id="8266215269006664124" at="21,50,22,37" />
       <scope id="8266215269006664124" at="24,68,25,102" />
       <scope id="8266215269006664124" at="27,27,28,17" />
-      <scope id="8266215269006664124" at="30,39,31,16" />
       <scope id="8266215269006664124" at="16,0,18,0" />
-      <scope id="8266215269006664228" at="33,58,35,26">
+      <scope id="8266215269006664228" at="30,58,32,26">
         <var name="n0" id="8266215269006664228" />
       </scope>
       <scope id="8266215269006664124" at="18,0,21,0">
@@ -2843,10 +2816,9 @@
         <var name="argument" id="8266215269006664124" />
       </scope>
       <scope id="8266215269006664124" at="27,0,30,0" />
-      <scope id="8266215269006664124" at="30,0,33,0" />
-      <scope id="8266215269006664228" at="33,0,37,0" />
-      <unit id="8266215269006664124" at="38,0,42,0" name="org.iets3.core.expr.datetime.typesystem.supertypeof_DaysType_SubtypingRule$CONCEPTS" />
-      <unit id="8266215269006664124" at="15,0,43,0" name="org.iets3.core.expr.datetime.typesystem.supertypeof_DaysType_SubtypingRule" />
+      <scope id="8266215269006664228" at="30,0,34,0" />
+      <unit id="8266215269006664124" at="35,0,39,0" name="org.iets3.core.expr.datetime.typesystem.supertypeof_DaysType_SubtypingRule$CONCEPTS" />
+      <unit id="8266215269006664124" at="15,0,40,0" name="org.iets3.core.expr.datetime.typesystem.supertypeof_DaysType_SubtypingRule" />
     </file>
   </root>
   <root nodeRef="r:8fb8c021-a1ab-41a1-a284-a1a372e0faad(org.iets3.core.expr.datetime.typesystem)/8266215269006754134">
@@ -2935,7 +2907,7 @@
       <node id="1101779037717258499" at="734,118,735,57" concept="7" />
       <node id="1101779037717258790" at="736,7,737,0" concept="8" />
       <node id="1101779037717259102" at="737,0,738,48" concept="7" />
-      <node id="8266215269006885849" at="740,132,741,301" concept="7" />
+      <node id="8266215269006885849" at="740,132,741,297" concept="7" />
       <node id="8266215269006885835" at="744,71,745,59" concept="2" />
       <node id="8266215269006887025" at="747,63,748,75" concept="6" />
       <node id="8266215269006887025" at="748,75,749,28" concept="7" />
@@ -2953,7 +2925,7 @@
       <node id="8266215269007896648" at="768,34,769,109" concept="2" />
       <node id="8266215269007896648" at="769,109,770,48" concept="2" />
       <node id="8266215269007896651" at="772,99,773,55" concept="7" />
-      <node id="8266215269007896661" at="775,132,776,301" concept="7" />
+      <node id="8266215269007896661" at="775,132,776,297" concept="7" />
       <node id="8266215269007896648" at="779,71,780,59" concept="2" />
       <node id="8266215269007896681" at="782,63,783,75" concept="6" />
       <node id="8266215269007896681" at="783,75,784,28" concept="7" />
@@ -2969,7 +2941,7 @@
       <node id="9073836608781643401" at="799,34,800,109" concept="2" />
       <node id="9073836608781643401" at="800,109,801,48" concept="2" />
       <node id="9073836608781645636" at="803,99,804,29" concept="7" />
-      <node id="9073836608781644682" at="806,132,807,155" concept="7" />
+      <node id="9073836608781644682" at="806,132,807,153" concept="7" />
       <node id="9073836608781643401" at="810,71,811,59" concept="2" />
       <node id="9073836608781644569" at="813,63,814,75" concept="6" />
       <node id="9073836608781644569" at="814,75,815,28" concept="7" />
@@ -2996,13 +2968,13 @@
       <node id="8266215269007896648" at="761,0,772,0" concept="1" trace="CustomOverloadedOperationsTypesProvider_b_3#(Lorg/jetbrains/mps/openapi/language/SAbstractConcept;)V" />
       <node id="9073836608781643401" at="792,0,803,0" concept="1" trace="CustomOverloadedOperationsTypesProvider_c_2#(Lorg/jetbrains/mps/openapi/language/SAbstractConcept;)V" />
       <scope id="1101779037717250880" at="734,118,735,57" />
-      <scope id="8266215269006885848" at="740,132,741,301" />
+      <scope id="8266215269006885848" at="740,132,741,297" />
       <scope id="8266215269006885835" at="744,71,745,59" />
       <scope id="8266215269007896650" at="772,99,773,55" />
-      <scope id="8266215269007896660" at="775,132,776,301" />
+      <scope id="8266215269007896660" at="775,132,776,297" />
       <scope id="8266215269007896648" at="779,71,780,59" />
       <scope id="9073836608781643426" at="803,99,804,29" />
-      <scope id="9073836608781644681" at="806,132,807,155" />
+      <scope id="9073836608781644681" at="806,132,807,153" />
       <scope id="9073836608781643401" at="810,71,811,59" />
       <scope id="8266215269006887025" at="747,63,749,28">
         <var name="n0" id="8266215269006887025" />
@@ -3200,26 +3172,23 @@
       <node id="8266215269008723601" at="21,50,22,38" concept="7" />
       <node id="8266215269008723601" at="24,68,25,102" concept="7" />
       <node id="8266215269008723601" at="27,27,28,17" concept="7" />
-      <node id="8266215269008723601" at="30,39,31,16" concept="7" />
-      <node id="8266215269008723604" at="33,58,34,73" concept="6" />
-      <node id="8266215269008723604" at="34,73,35,26" concept="7" />
-      <node id="8266215269008723601" at="39,0,40,0" concept="9" trace="YearsDeltaType$oy" />
-      <node id="8266215269008723601" at="40,0,41,0" concept="9" trace="DateDeltaType$BG" />
+      <node id="8266215269008723604" at="30,58,31,73" concept="6" />
+      <node id="8266215269008723604" at="31,73,32,26" concept="7" />
+      <node id="8266215269008723601" at="36,0,37,0" concept="9" trace="YearsDeltaType$oy" />
+      <node id="8266215269008723601" at="37,0,38,0" concept="9" trace="DateDeltaType$BG" />
       <node id="8266215269008723601" at="16,0,18,0" concept="1" trace="supertypeof_YearsType_SubtypingRule#()V" />
       <node id="8266215269008723601" at="18,0,21,0" concept="5" trace="getSubOrSuperType#(Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/typesystem/inference/TypeCheckingContext;Ljetbrains/mps/lang/typesystem/runtime/IsApplicableStatus;)Lorg/jetbrains/mps/openapi/model/SNode;" />
       <node id="8266215269008723601" at="21,0,24,0" concept="5" trace="getApplicableConcept#()Lorg/jetbrains/mps/openapi/language/SAbstractConcept;" />
       <node id="8266215269008723601" at="24,0,27,0" concept="5" trace="isApplicableAndPattern#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljetbrains/mps/lang/typesystem/runtime/IsApplicableStatus;" />
       <node id="8266215269008723601" at="27,0,30,0" concept="5" trace="isWeak#()Z" />
-      <node id="8266215269008723601" at="30,0,33,0" concept="5" trace="surelyKeepsConcept#()Z" />
-      <node id="8266215269008723604" at="33,0,37,0" concept="10" trace="createDateDeltaType_aphm94_a0a1#()Lorg/jetbrains/mps/openapi/model/SNode;" />
+      <node id="8266215269008723604" at="30,0,34,0" concept="10" trace="createDateDeltaType_aphm94_a0a1#()Lorg/jetbrains/mps/openapi/model/SNode;" />
       <scope id="8266215269008723601" at="16,48,16,48" />
       <scope id="8266215269008723602" at="18,124,19,45" />
       <scope id="8266215269008723601" at="21,50,22,38" />
       <scope id="8266215269008723601" at="24,68,25,102" />
       <scope id="8266215269008723601" at="27,27,28,17" />
-      <scope id="8266215269008723601" at="30,39,31,16" />
       <scope id="8266215269008723601" at="16,0,18,0" />
-      <scope id="8266215269008723604" at="33,58,35,26">
+      <scope id="8266215269008723604" at="30,58,32,26">
         <var name="n0" id="8266215269008723604" />
       </scope>
       <scope id="8266215269008723601" at="18,0,21,0">
@@ -3232,10 +3201,9 @@
         <var name="argument" id="8266215269008723601" />
       </scope>
       <scope id="8266215269008723601" at="27,0,30,0" />
-      <scope id="8266215269008723601" at="30,0,33,0" />
-      <scope id="8266215269008723604" at="33,0,37,0" />
-      <unit id="8266215269008723601" at="38,0,42,0" name="org.iets3.core.expr.datetime.typesystem.supertypeof_YearsType_SubtypingRule$CONCEPTS" />
-      <unit id="8266215269008723601" at="15,0,43,0" name="org.iets3.core.expr.datetime.typesystem.supertypeof_YearsType_SubtypingRule" />
+      <scope id="8266215269008723604" at="30,0,34,0" />
+      <unit id="8266215269008723601" at="35,0,39,0" name="org.iets3.core.expr.datetime.typesystem.supertypeof_YearsType_SubtypingRule$CONCEPTS" />
+      <unit id="8266215269008723601" at="15,0,40,0" name="org.iets3.core.expr.datetime.typesystem.supertypeof_YearsType_SubtypingRule" />
     </file>
   </root>
   <root nodeRef="r:8fb8c021-a1ab-41a1-a284-a1a372e0faad(org.iets3.core.expr.datetime.typesystem)/8266215269008723764">
@@ -3307,26 +3275,23 @@
       <node id="8266215269008981525" at="21,50,22,39" concept="7" />
       <node id="8266215269008981525" at="24,68,25,102" concept="7" />
       <node id="8266215269008981525" at="27,27,28,17" concept="7" />
-      <node id="8266215269008981525" at="30,39,31,16" concept="7" />
-      <node id="8266215269008981528" at="33,58,34,73" concept="6" />
-      <node id="8266215269008981528" at="34,73,35,26" concept="7" />
-      <node id="8266215269008981525" at="39,0,40,0" concept="9" trace="MonthsDeltaType$1K" />
-      <node id="8266215269008981525" at="40,0,41,0" concept="9" trace="DateDeltaType$BG" />
+      <node id="8266215269008981528" at="30,58,31,73" concept="6" />
+      <node id="8266215269008981528" at="31,73,32,26" concept="7" />
+      <node id="8266215269008981525" at="36,0,37,0" concept="9" trace="MonthsDeltaType$1K" />
+      <node id="8266215269008981525" at="37,0,38,0" concept="9" trace="DateDeltaType$BG" />
       <node id="8266215269008981525" at="16,0,18,0" concept="1" trace="supertypeof_MonthsType_SubtypingRule#()V" />
       <node id="8266215269008981525" at="18,0,21,0" concept="5" trace="getSubOrSuperType#(Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/typesystem/inference/TypeCheckingContext;Ljetbrains/mps/lang/typesystem/runtime/IsApplicableStatus;)Lorg/jetbrains/mps/openapi/model/SNode;" />
       <node id="8266215269008981525" at="21,0,24,0" concept="5" trace="getApplicableConcept#()Lorg/jetbrains/mps/openapi/language/SAbstractConcept;" />
       <node id="8266215269008981525" at="24,0,27,0" concept="5" trace="isApplicableAndPattern#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljetbrains/mps/lang/typesystem/runtime/IsApplicableStatus;" />
       <node id="8266215269008981525" at="27,0,30,0" concept="5" trace="isWeak#()Z" />
-      <node id="8266215269008981525" at="30,0,33,0" concept="5" trace="surelyKeepsConcept#()Z" />
-      <node id="8266215269008981528" at="33,0,37,0" concept="10" trace="createDateDeltaType_u5f3ju_a0a1#()Lorg/jetbrains/mps/openapi/model/SNode;" />
+      <node id="8266215269008981528" at="30,0,34,0" concept="10" trace="createDateDeltaType_u5f3ju_a0a1#()Lorg/jetbrains/mps/openapi/model/SNode;" />
       <scope id="8266215269008981525" at="16,49,16,49" />
       <scope id="8266215269008981526" at="18,125,19,45" />
       <scope id="8266215269008981525" at="21,50,22,39" />
       <scope id="8266215269008981525" at="24,68,25,102" />
       <scope id="8266215269008981525" at="27,27,28,17" />
-      <scope id="8266215269008981525" at="30,39,31,16" />
       <scope id="8266215269008981525" at="16,0,18,0" />
-      <scope id="8266215269008981528" at="33,58,35,26">
+      <scope id="8266215269008981528" at="30,58,32,26">
         <var name="n0" id="8266215269008981528" />
       </scope>
       <scope id="8266215269008981525" at="18,0,21,0">
@@ -3339,10 +3304,9 @@
         <var name="argument" id="8266215269008981525" />
       </scope>
       <scope id="8266215269008981525" at="27,0,30,0" />
-      <scope id="8266215269008981525" at="30,0,33,0" />
-      <scope id="8266215269008981528" at="33,0,37,0" />
-      <unit id="8266215269008981525" at="38,0,42,0" name="org.iets3.core.expr.datetime.typesystem.supertypeof_MonthsType_SubtypingRule$CONCEPTS" />
-      <unit id="8266215269008981525" at="15,0,43,0" name="org.iets3.core.expr.datetime.typesystem.supertypeof_MonthsType_SubtypingRule" />
+      <scope id="8266215269008981528" at="30,0,34,0" />
+      <unit id="8266215269008981525" at="35,0,39,0" name="org.iets3.core.expr.datetime.typesystem.supertypeof_MonthsType_SubtypingRule$CONCEPTS" />
+      <unit id="8266215269008981525" at="15,0,40,0" name="org.iets3.core.expr.datetime.typesystem.supertypeof_MonthsType_SubtypingRule" />
     </file>
   </root>
   <root nodeRef="r:8fb8c021-a1ab-41a1-a284-a1a372e0faad(org.iets3.core.expr.datetime.typesystem)/8266215269008981674">
@@ -3469,26 +3433,23 @@
       <node id="8266215269009420466" at="21,50,22,38" concept="7" />
       <node id="8266215269009420466" at="24,68,25,102" concept="7" />
       <node id="8266215269009420466" at="27,27,28,17" concept="7" />
-      <node id="8266215269009420466" at="30,39,31,16" concept="7" />
-      <node id="8266215269009420537" at="33,58,34,73" concept="6" />
-      <node id="8266215269009420537" at="34,73,35,26" concept="7" />
-      <node id="8266215269009420466" at="39,0,40,0" concept="9" trace="WeeksDeltaType$fj" />
-      <node id="8266215269009420466" at="40,0,41,0" concept="9" trace="DateDeltaType$BG" />
+      <node id="8266215269009420537" at="30,58,31,73" concept="6" />
+      <node id="8266215269009420537" at="31,73,32,26" concept="7" />
+      <node id="8266215269009420466" at="36,0,37,0" concept="9" trace="WeeksDeltaType$fj" />
+      <node id="8266215269009420466" at="37,0,38,0" concept="9" trace="DateDeltaType$BG" />
       <node id="8266215269009420466" at="16,0,18,0" concept="1" trace="supertypeof_WeeksDeltaType_SubtypingRule#()V" />
       <node id="8266215269009420466" at="18,0,21,0" concept="5" trace="getSubOrSuperType#(Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/typesystem/inference/TypeCheckingContext;Ljetbrains/mps/lang/typesystem/runtime/IsApplicableStatus;)Lorg/jetbrains/mps/openapi/model/SNode;" />
       <node id="8266215269009420466" at="21,0,24,0" concept="5" trace="getApplicableConcept#()Lorg/jetbrains/mps/openapi/language/SAbstractConcept;" />
       <node id="8266215269009420466" at="24,0,27,0" concept="5" trace="isApplicableAndPattern#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljetbrains/mps/lang/typesystem/runtime/IsApplicableStatus;" />
       <node id="8266215269009420466" at="27,0,30,0" concept="5" trace="isWeak#()Z" />
-      <node id="8266215269009420466" at="30,0,33,0" concept="5" trace="surelyKeepsConcept#()Z" />
-      <node id="8266215269009420537" at="33,0,37,0" concept="10" trace="createDateDeltaType_r4v58d_a0a1#()Lorg/jetbrains/mps/openapi/model/SNode;" />
+      <node id="8266215269009420537" at="30,0,34,0" concept="10" trace="createDateDeltaType_r4v58d_a0a1#()Lorg/jetbrains/mps/openapi/model/SNode;" />
       <scope id="8266215269009420466" at="16,53,16,53" />
       <scope id="8266215269009420467" at="18,124,19,45" />
       <scope id="8266215269009420466" at="21,50,22,38" />
       <scope id="8266215269009420466" at="24,68,25,102" />
       <scope id="8266215269009420466" at="27,27,28,17" />
-      <scope id="8266215269009420466" at="30,39,31,16" />
       <scope id="8266215269009420466" at="16,0,18,0" />
-      <scope id="8266215269009420537" at="33,58,35,26">
+      <scope id="8266215269009420537" at="30,58,32,26">
         <var name="n0" id="8266215269009420537" />
       </scope>
       <scope id="8266215269009420466" at="18,0,21,0">
@@ -3501,10 +3462,9 @@
         <var name="argument" id="8266215269009420466" />
       </scope>
       <scope id="8266215269009420466" at="27,0,30,0" />
-      <scope id="8266215269009420466" at="30,0,33,0" />
-      <scope id="8266215269009420537" at="33,0,37,0" />
-      <unit id="8266215269009420466" at="38,0,42,0" name="org.iets3.core.expr.datetime.typesystem.supertypeof_WeeksDeltaType_SubtypingRule$CONCEPTS" />
-      <unit id="8266215269009420466" at="15,0,43,0" name="org.iets3.core.expr.datetime.typesystem.supertypeof_WeeksDeltaType_SubtypingRule" />
+      <scope id="8266215269009420537" at="30,0,34,0" />
+      <unit id="8266215269009420466" at="35,0,39,0" name="org.iets3.core.expr.datetime.typesystem.supertypeof_WeeksDeltaType_SubtypingRule$CONCEPTS" />
+      <unit id="8266215269009420466" at="15,0,40,0" name="org.iets3.core.expr.datetime.typesystem.supertypeof_WeeksDeltaType_SubtypingRule" />
     </file>
   </root>
   <root nodeRef="r:8fb8c021-a1ab-41a1-a284-a1a372e0faad(org.iets3.core.expr.datetime.typesystem)/8266215269009891875">
@@ -4038,26 +3998,23 @@
       <node id="8435714728549789041" at="21,50,22,46" concept="7" />
       <node id="8435714728549789041" at="24,68,25,102" concept="7" />
       <node id="8435714728549789041" at="27,27,28,17" concept="7" />
-      <node id="8435714728549789041" at="30,39,31,16" concept="7" />
-      <node id="8435714728549789160" at="33,55,34,70" concept="6" />
-      <node id="8435714728549789160" at="34,70,35,26" concept="7" />
-      <node id="8435714728549789041" at="39,0,40,0" concept="9" trace="ArbitraryDateRangeType$S0" />
-      <node id="8435714728549789041" at="40,0,41,0" concept="9" trace="PeriodType$Sv" />
+      <node id="8435714728549789160" at="30,55,31,70" concept="6" />
+      <node id="8435714728549789160" at="31,70,32,26" concept="7" />
+      <node id="8435714728549789041" at="36,0,37,0" concept="9" trace="ArbitraryDateRangeType$S0" />
+      <node id="8435714728549789041" at="37,0,38,0" concept="9" trace="PeriodType$Sv" />
       <node id="8435714728549789041" at="16,0,18,0" concept="1" trace="supertypeOf_ArbitaryDateRangeType_SubtypingRule#()V" />
       <node id="8435714728549789041" at="18,0,21,0" concept="5" trace="getSubOrSuperType#(Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/typesystem/inference/TypeCheckingContext;Ljetbrains/mps/lang/typesystem/runtime/IsApplicableStatus;)Lorg/jetbrains/mps/openapi/model/SNode;" />
       <node id="8435714728549789041" at="21,0,24,0" concept="5" trace="getApplicableConcept#()Lorg/jetbrains/mps/openapi/language/SAbstractConcept;" />
       <node id="8435714728549789041" at="24,0,27,0" concept="5" trace="isApplicableAndPattern#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljetbrains/mps/lang/typesystem/runtime/IsApplicableStatus;" />
       <node id="8435714728549789041" at="27,0,30,0" concept="5" trace="isWeak#()Z" />
-      <node id="8435714728549789041" at="30,0,33,0" concept="5" trace="surelyKeepsConcept#()Z" />
-      <node id="8435714728549789160" at="33,0,37,0" concept="10" trace="createPeriodType_k4rbfj_a0a1#()Lorg/jetbrains/mps/openapi/model/SNode;" />
+      <node id="8435714728549789160" at="30,0,34,0" concept="10" trace="createPeriodType_k4rbfj_a0a1#()Lorg/jetbrains/mps/openapi/model/SNode;" />
       <scope id="8435714728549789041" at="16,60,16,60" />
       <scope id="8435714728549789042" at="18,132,19,42" />
       <scope id="8435714728549789041" at="21,50,22,46" />
       <scope id="8435714728549789041" at="24,68,25,102" />
       <scope id="8435714728549789041" at="27,27,28,17" />
-      <scope id="8435714728549789041" at="30,39,31,16" />
       <scope id="8435714728549789041" at="16,0,18,0" />
-      <scope id="8435714728549789160" at="33,55,35,26">
+      <scope id="8435714728549789160" at="30,55,32,26">
         <var name="n0" id="8435714728549789160" />
       </scope>
       <scope id="8435714728549789041" at="18,0,21,0">
@@ -4070,10 +4027,9 @@
         <var name="argument" id="8435714728549789041" />
       </scope>
       <scope id="8435714728549789041" at="27,0,30,0" />
-      <scope id="8435714728549789041" at="30,0,33,0" />
-      <scope id="8435714728549789160" at="33,0,37,0" />
-      <unit id="8435714728549789041" at="38,0,42,0" name="org.iets3.core.expr.datetime.typesystem.supertypeOf_ArbitaryDateRangeType_SubtypingRule$CONCEPTS" />
-      <unit id="8435714728549789041" at="15,0,43,0" name="org.iets3.core.expr.datetime.typesystem.supertypeOf_ArbitaryDateRangeType_SubtypingRule" />
+      <scope id="8435714728549789160" at="30,0,34,0" />
+      <unit id="8435714728549789041" at="35,0,39,0" name="org.iets3.core.expr.datetime.typesystem.supertypeOf_ArbitaryDateRangeType_SubtypingRule$CONCEPTS" />
+      <unit id="8435714728549789041" at="15,0,40,0" name="org.iets3.core.expr.datetime.typesystem.supertypeOf_ArbitaryDateRangeType_SubtypingRule" />
     </file>
   </root>
   <root nodeRef="r:8fb8c021-a1ab-41a1-a284-a1a372e0faad(org.iets3.core.expr.datetime.typesystem)/8435714728549789491">
@@ -4090,26 +4046,23 @@
       <node id="8435714728549789491" at="21,50,22,45" concept="7" />
       <node id="8435714728549789491" at="24,68,25,102" concept="7" />
       <node id="8435714728549789491" at="27,27,28,17" concept="7" />
-      <node id="8435714728549789491" at="30,39,31,16" concept="7" />
-      <node id="8435714728549789562" at="33,55,34,70" concept="6" />
-      <node id="8435714728549789562" at="34,70,35,26" concept="7" />
-      <node id="8435714728549789491" at="39,0,40,0" concept="9" trace="DiscreteDateRangeType$Ih" />
-      <node id="8435714728549789491" at="40,0,41,0" concept="9" trace="PeriodType$Sv" />
+      <node id="8435714728549789562" at="30,55,31,70" concept="6" />
+      <node id="8435714728549789562" at="31,70,32,26" concept="7" />
+      <node id="8435714728549789491" at="36,0,37,0" concept="9" trace="DiscreteDateRangeType$Ih" />
+      <node id="8435714728549789491" at="37,0,38,0" concept="9" trace="PeriodType$Sv" />
       <node id="8435714728549789491" at="16,0,18,0" concept="1" trace="supertypeOf_DiscreteDateRangeType_SubtypingRule#()V" />
       <node id="8435714728549789491" at="18,0,21,0" concept="5" trace="getSubOrSuperType#(Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/typesystem/inference/TypeCheckingContext;Ljetbrains/mps/lang/typesystem/runtime/IsApplicableStatus;)Lorg/jetbrains/mps/openapi/model/SNode;" />
       <node id="8435714728549789491" at="21,0,24,0" concept="5" trace="getApplicableConcept#()Lorg/jetbrains/mps/openapi/language/SAbstractConcept;" />
       <node id="8435714728549789491" at="24,0,27,0" concept="5" trace="isApplicableAndPattern#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljetbrains/mps/lang/typesystem/runtime/IsApplicableStatus;" />
       <node id="8435714728549789491" at="27,0,30,0" concept="5" trace="isWeak#()Z" />
-      <node id="8435714728549789491" at="30,0,33,0" concept="5" trace="surelyKeepsConcept#()Z" />
-      <node id="8435714728549789562" at="33,0,37,0" concept="10" trace="createPeriodType_54bsa0_a0a1#()Lorg/jetbrains/mps/openapi/model/SNode;" />
+      <node id="8435714728549789562" at="30,0,34,0" concept="10" trace="createPeriodType_54bsa0_a0a1#()Lorg/jetbrains/mps/openapi/model/SNode;" />
       <scope id="8435714728549789491" at="16,60,16,60" />
       <scope id="8435714728549789492" at="18,131,19,42" />
       <scope id="8435714728549789491" at="21,50,22,45" />
       <scope id="8435714728549789491" at="24,68,25,102" />
       <scope id="8435714728549789491" at="27,27,28,17" />
-      <scope id="8435714728549789491" at="30,39,31,16" />
       <scope id="8435714728549789491" at="16,0,18,0" />
-      <scope id="8435714728549789562" at="33,55,35,26">
+      <scope id="8435714728549789562" at="30,55,32,26">
         <var name="n0" id="8435714728549789562" />
       </scope>
       <scope id="8435714728549789491" at="18,0,21,0">
@@ -4122,10 +4075,9 @@
         <var name="argument" id="8435714728549789491" />
       </scope>
       <scope id="8435714728549789491" at="27,0,30,0" />
-      <scope id="8435714728549789491" at="30,0,33,0" />
-      <scope id="8435714728549789562" at="33,0,37,0" />
-      <unit id="8435714728549789491" at="38,0,42,0" name="org.iets3.core.expr.datetime.typesystem.supertypeOf_DiscreteDateRangeType_SubtypingRule$CONCEPTS" />
-      <unit id="8435714728549789491" at="15,0,43,0" name="org.iets3.core.expr.datetime.typesystem.supertypeOf_DiscreteDateRangeType_SubtypingRule" />
+      <scope id="8435714728549789562" at="30,0,34,0" />
+      <unit id="8435714728549789491" at="35,0,39,0" name="org.iets3.core.expr.datetime.typesystem.supertypeOf_DiscreteDateRangeType_SubtypingRule$CONCEPTS" />
+      <unit id="8435714728549789491" at="15,0,40,0" name="org.iets3.core.expr.datetime.typesystem.supertypeOf_DiscreteDateRangeType_SubtypingRule" />
     </file>
   </root>
   <root nodeRef="r:8fb8c021-a1ab-41a1-a284-a1a372e0faad(org.iets3.core.expr.datetime.typesystem)/8988735099053162003">

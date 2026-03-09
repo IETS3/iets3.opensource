@@ -29,7 +29,7 @@ public class supertypeOf_TaggedType_SubtypingRule extends SubtypingRule_Runtime 
     List<SNode> result = new ArrayList<SNode>();
     StructuralNodeSet<?> supers = TypeChecker.getInstance().getSubtypingManager().collectImmediateSupertypes(SLinkOperations.getTarget(taggedType, LINKS.baseType$z6Mz));
     for (SNode type : SetSequence.fromSet(supers)) {
-      ListSequence.fromList(result).addElement(createTaggedType_ffhe12_a0a0a2a1(SLinkOperations.getChildren(taggedType, LINKS.tags$Lx_i), SNodeOperations.cast(type, CONCEPTS.Type$WK)));
+      ListSequence.fromList(result).addElement(createTaggedType_ffhe12_a0a0a2a1(SLinkOperations.getChildren(taggedType, LINKS.tags$Lx_i), SNodeOperations.as(type, CONCEPTS.Type$WK)));
     }
     return result;
   }

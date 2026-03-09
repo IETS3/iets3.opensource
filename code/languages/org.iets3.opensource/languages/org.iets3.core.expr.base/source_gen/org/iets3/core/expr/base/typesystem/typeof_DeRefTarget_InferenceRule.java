@@ -26,7 +26,7 @@ public class typeof_DeRefTarget_InferenceRule extends AbstractInferenceRule_Runt
         {
           SNode _nodeToCheck_1029348928467 = drt;
           EquationInfo _info_12389875345 = new EquationInfo(_nodeToCheck_1029348928467, null, "r:80cf2246-750c-4158-9056-a619ebcf894c(org.iets3.core.expr.base.typesystem)", "7782108600712072010", 0, null);
-          typeCheckingContext.createEquation((SNode) typeCheckingContext.typeOf(_nodeToCheck_1029348928467, "r:80cf2246-750c-4158-9056-a619ebcf894c(org.iets3.core.expr.base.typesystem)", "7782108600712072022", true), (SNode) SLinkOperations.getTarget(SNodeOperations.cast(typeCheckingContext.getExpandedNode(ctxType), CONCEPTS.ReferenceType$sW), LINKS.baseType$M6Aa), _info_12389875345);
+          typeCheckingContext.createEquation((SNode) typeCheckingContext.typeOf(_nodeToCheck_1029348928467, "r:80cf2246-750c-4158-9056-a619ebcf894c(org.iets3.core.expr.base.typesystem)", "7782108600712072022", true), (SNode) SLinkOperations.getTarget(SNodeOperations.as(typeCheckingContext.getExpandedNode(ctxType), CONCEPTS.ReferenceType$sW), LINKS.baseType$M6Aa), _info_12389875345);
         }
       }, "r:80cf2246-750c-4158-9056-a619ebcf894c(org.iets3.core.expr.base.typesystem)", "7782108600712072008", false, false);
     }

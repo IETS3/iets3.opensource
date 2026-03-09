@@ -22,7 +22,8 @@ import org.jetbrains.mps.openapi.language.SProperty;
 public class QuantityCompatibilityChecker {
   public static String check(SNode expr, SNode unitRefSub, SNode unitRefSup) {
     SNode convertToTarget = createConvertToTarget_ccx41k_a0a0a(unitRefSup);
-    SNode dotExpression = createDotExpression_ccx41k_a0b0a(expr, convertToTarget);
+    // Note: Although it seems this DotExpr is not used lateron, it is important nevertheless that expr&target are combined as a DotExpr here.
+    SNode dotExpression = createDotExpression_ccx41k_a0c0a(expr, convertToTarget);
 
     String subName = SNodeOperations.present(unitRefSub);
     String supName = SNodeOperations.present(unitRefSup);
@@ -53,7 +54,7 @@ public class QuantityCompatibilityChecker {
     n0.forChild(LINKS.targetUnit$_yUk).initNode(p0, CONCEPTS.UnitReference$Zo, true);
     return n0.getResult();
   }
-  private static SNode createDotExpression_ccx41k_a0b0a(SNode p0, SNode p1) {
+  private static SNode createDotExpression_ccx41k_a0c0a(SNode p0, SNode p1) {
     SNodeBuilder n0 = new SNodeBuilder().init(CONCEPTS.DotExpression$jp);
     n0.forChild(LINKS.expr$CW3E).initNode(p0, CONCEPTS.Expression$D_, true);
     n0.forChild(LINKS.target$u23F).initNode(p1, CONCEPTS.IDotTarget$jS, true);

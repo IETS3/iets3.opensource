@@ -28,7 +28,7 @@ public class supertypeOf_OptionType_SubtypingRule extends SubtypingRule_Runtime 
     List<SNode> res = new ArrayList<SNode>();
     StructuralNodeSet<?> supers = TypeChecker.getInstance().getSubtypingManager().collectImmediateSupertypes(SLinkOperations.getTarget(ot, LINKS.baseType$Cv_a));
     for (SNode t : SetSequence.fromSet(supers)) {
-      ListSequence.fromList(res).addElement(createOptionType_uy1p63_a0a0a2a1(SNodeOperations.cast(t, CONCEPTS.Type$WK)));
+      ListSequence.fromList(res).addElement(createOptionType_uy1p63_a0a0a2a1(SNodeOperations.as(t, CONCEPTS.Type$WK)));
     }
     return res;
   }
@@ -40,9 +40,6 @@ public class supertypeOf_OptionType_SubtypingRule extends SubtypingRule_Runtime 
   }
   public boolean isWeak() {
     return false;
-  }
-  public boolean surelyKeepsConcept() {
-    return true;
   }
   private static SNode createOptionType_uy1p63_a0a0a2a1(SNode p0) {
     SNodeBuilder n0 = new SNodeBuilder().init(CONCEPTS.OptionType$eU);

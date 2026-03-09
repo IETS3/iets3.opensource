@@ -24,7 +24,7 @@ public class check_AssignmentExpr_NonTypesystemRule extends AbstractNonTypesyste
   }
   public void applyRule(final SNode ae, final TypeCheckingContext typeCheckingContext, IsApplicableStatus status) {
     if (SNodeOperations.isInstanceOf(SLinkOperations.getTarget(ae, LINKS.left$zxUa), CONCEPTS.ICanBeLValue$lB)) {
-      if (!((boolean) ICanBeLValue__BehaviorDescriptor.isLValue_idaPhVmWYjn5.invoke(SNodeOperations.cast(SLinkOperations.getTarget(ae, LINKS.left$zxUa), CONCEPTS.ICanBeLValue$lB)))) {
+      if (!((boolean) ICanBeLValue__BehaviorDescriptor.isLValue_idaPhVmWYjn5.invoke(SNodeOperations.as(SLinkOperations.getTarget(ae, LINKS.left$zxUa), CONCEPTS.ICanBeLValue$lB)))) {
         {
           final MessageTarget errorTarget = new NodeMessageTarget();
           IErrorReporter _reporter_2309309498 = typeCheckingContext.reportTypeError(ae, "not an lvalue", "r:a71eb8ca-1a88-4b3c-85ef-63f23e5a12e0(org.iets3.core.expr.mutable.typesystem)", "195141004745727372", null, errorTarget);

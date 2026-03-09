@@ -24,7 +24,7 @@ public class typeof_Connector_InferenceRule extends AbstractInferenceRule_Runtim
   }
   public void applyRule(final SNode c, final TypeCheckingContext typeCheckingContext, IsApplicableStatus status) {
     if (SNodeOperations.isInstanceOf(SLinkOperations.getTarget(c, LINKS.right$rU2p), CONCEPTS.OutsideEndpoint$pO)) {
-      if (SNodeOperations.isInstanceOf(SLinkOperations.getTarget(SLinkOperations.getTarget(c, LINKS.right$rU2p), LINKS.port$zHo1), CONCEPTS.OutPort$FI) && SLinkOperations.getTarget(SNodeOperations.cast(SLinkOperations.getTarget(SLinkOperations.getTarget(c, LINKS.right$rU2p), LINKS.port$zHo1), CONCEPTS.OutPort$FI), LINKS.value$cAQw) != null) {
+      if (SNodeOperations.isInstanceOf(SLinkOperations.getTarget(SLinkOperations.getTarget(c, LINKS.right$rU2p), LINKS.port$zHo1), CONCEPTS.OutPort$FI) && SLinkOperations.getTarget(SNodeOperations.as(SLinkOperations.getTarget(SLinkOperations.getTarget(c, LINKS.right$rU2p), LINKS.port$zHo1), CONCEPTS.OutPort$FI), LINKS.value$cAQw) != null) {
         {
           final MessageTarget errorTarget = new NodeMessageTarget();
           IErrorReporter _reporter_2309309498 = typeCheckingContext.reportTypeError(c, "The port has already a value defined. Cannot connect to it", "r:b23afcd1-7574-4ab9-9fb9-51aff88fd512(org.iets3.core.expr.dataflow.typesystem)", "2870058499327950862", null, errorTarget);

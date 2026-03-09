@@ -218,10 +218,6 @@ public class TypesystemDescriptor extends BaseHelginsDescriptor {
       this.myNonTypesystemRules.add(nonTypesystemRule);
     }
     {
-      NonTypesystemRule_Runtime nonTypesystemRule = new check_instanceParam_NonTypesystemRule();
-      this.myNonTypesystemRules.add(nonTypesystemRule);
-    }
-    {
       SubtypingRule_Runtime subtypingRule = new supertypeof_EnumRefType_SubtypingRule();
       this.mySubtypingRules.add(subtypingRule);
     }
@@ -248,8 +244,8 @@ public class TypesystemDescriptor extends BaseHelginsDescriptor {
       return SConceptOperations.createNewNode(MetaAdapterFactory.getConcept(0x6b277d9ad52d416fL, 0xa2091919bd737f50L, 0x670d5e92f854a617L, "org.iets3.core.expr.simpleTypes.structure.BooleanType"));
     }
     public boolean isApplicable(SubtypingManager subtypingManager, SNode operation, SNode leftOperandType, SNode rightOperandType) {
-      SNode e1 = SLinkOperations.getTarget(SNodeOperations.cast(leftOperandType, CONCEPTS.EnumRefType$3c), LINKS.enum$PnEF);
-      SNode e2 = SLinkOperations.getTarget(SNodeOperations.cast(rightOperandType, CONCEPTS.EnumRefType$3c), LINKS.enum$PnEF);
+      SNode e1 = SLinkOperations.getTarget(SNodeOperations.as(leftOperandType, CONCEPTS.EnumRefType$3c), LINKS.enum$PnEF);
+      SNode e2 = SLinkOperations.getTarget(SNodeOperations.as(rightOperandType, CONCEPTS.EnumRefType$3c), LINKS.enum$PnEF);
       return e1 == e2;
     }
     @Override

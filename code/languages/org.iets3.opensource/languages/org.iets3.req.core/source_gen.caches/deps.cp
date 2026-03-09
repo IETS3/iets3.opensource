@@ -4,6 +4,7 @@
   <uses language="l:9d69e719-78c8-4286-90db-fb19c107d049:com.mbeddr.mpsutil.grammarcells" />
   <uses language="l:b92f861d-0184-446d-b88b-6dcf0e070241:com.mbeddr.mpsutil.intentions" />
   <uses language="l:62a3babb-5d40-4920-897f-d4144dc99c9d:com.mbeddr.mpsutil.userstyles" />
+  <uses language="l:f89904fb-9486-43a1-865e-5ad0375a8a88:de.itemis.mps.editor.bool" />
   <uses language="l:1919c723-b60b-4592-9318-9ce96d91da44:de.itemis.mps.editor.celllayout" />
   <uses language="l:654422bf-e75f-44dc-936d-188890a746ce:de.slisson.mps.reflection" />
   <uses language="l:52733268-be24-4f5f-ab84-a73b7c0c03b0:de.slisson.mps.richtext.customcell" />
@@ -54,12 +55,17 @@
   <uses module="d4280a54-f6df-4383-aa41-d1b2bffa7eb1(com.mbeddr.core.base)" kind="dp" />
   <uses module="2374bc90-7e37-41f1-a9c4-c2e35194c36a(com.mbeddr.doc)" kind="dp" />
   <uses module="63e0e566-5131-447e-90e3-12ea330e1a00(com.mbeddr.mpsutil.blutil)" kind="dp" />
+  <uses module="5fef253e-34b0-443d-8035-9a2928b716d3(com.mbeddr.mpsutil.editor.displayControl)" kind="dp" />
   <uses module="94b17d5e-87d9-4868-8101-157e83e33243(com.mbeddr.mpsutil.editor.querylist.runtime)" kind="rt+dp" />
   <uses module="d3a0fd26-445a-466c-900e-10444ddfed52(com.mbeddr.mpsutil.filepicker)" kind="dp" />
   <uses module="7ac49bcb-77fb-4f0f-9036-e31b86b854b2(com.mbeddr.mpsutil.grammarcells.runtime)" kind="rt+dp" />
+  <uses module="47f075a6-558e-4640-a606-7ce0236c8023(com.mbeddr.mpsutil.interpreter)" kind="dp" />
+  <uses module="735f86bc-17fb-4d1c-a664-82c2b8e8a34e(com.mbeddr.mpsutil.interpreter.rt)" kind="dp" />
   <uses module="d09a16fb-1d68-4a92-a5a4-20b4b2f86a62(com.mbeddr.mpsutil.jung)" kind="dp" />
   <uses module="b4d28e19-7d2d-47e9-943e-3a41f97a0e52(com.mbeddr.mpsutil.plantuml.node)" kind="dp" />
+  <uses module="726886d1-ef90-4249-a08f-1e3ec23a7113(com.mbeddr.mpsutil.traceExplorer)" kind="dp" />
   <uses module="664f2630-ebf5-429d-b331-94ccdf5410f6(com.mbeddr.mpsutil.userstyles.runtime)" kind="rt+dp" />
+  <uses module="278dc825-2faf-4320-b29f-78b1e6994ed4(de.itemis.mps.editor.bool.runtime)" kind="rt+dp" />
   <uses module="848ef45d-e560-4e35-853c-f35a64cc135c(de.itemis.mps.editor.celllayout.runtime)" kind="rt+dp" />
   <uses module="24c96a96-b7a1-4f30-82da-0f8e279a2661(de.itemis.mps.editor.celllayout.styles)" kind="dp" />
   <uses module="5c13c612-0f7b-4f0a-ab8b-565186b418de(de.itemis.mps.mouselistener.runtime)" kind="dp" />
@@ -85,6 +91,7 @@
   <uses module="d936855b-48da-4812-a8a0-2bfddd633ac4(jetbrains.mps.lang.behavior.runtime)" kind="rt+dp" />
   <uses module="8e98f4e2-decf-4e97-bf80-9109e8b759ee(jetbrains.mps.lang.constraints.rules.runtime)" kind="rt+dp" />
   <uses module="ceab5195-25ea-4f22-9b92-103b95ca8c0c(jetbrains.mps.lang.core)" kind="dp" />
+  <uses module="0647eca7-da98-422a-8a8b-6ebc0bd014ea(jetbrains.mps.lang.editor#1129914002149)" kind="dp" />
   <uses module="af52e9df-2136-4ef8-81b2-bec0babe5e4c(jetbrains.mps.lang.editor.tooltips.runtime)" kind="rt+dp" />
   <uses module="9e9ef4e2-decf-4e97-bf80-9109e8b759bb(jetbrains.mps.lang.feedback.api)" kind="dp" />
   <uses module="9e98f4e2-decf-4e97-bf80-9109e8b759aa(jetbrains.mps.lang.feedback.context)" kind="dp" />
@@ -98,7 +105,9 @@
   <uses module="9ded098b-ad6a-4657-bfd9-48636cfe8bc3(jetbrains.mps.lang.traceable)" kind="dp" />
   <uses module="9a4afe51-f114-4595-b5df-048ce3c596be(jetbrains.mps.runtime)" kind="rt+dp" />
   <uses module="b0f8641f-bd77-4421-8425-30d9088a82f7(org.apache.commons)" kind="dp" />
+  <uses module="db8bd035-3f51-41d8-8fed-954c202d18be(org.iets3.analysis.base)" kind="dp" />
   <uses module="7b68d745-a7b8-48b9-bd9c-05c0f8725a35(org.iets3.core.base)" kind="dp" />
+  <uses module="cfaa4966-b7d5-4b69-b66a-309a6e1a7290(org.iets3.core.expr.base)" kind="dp" />
   <uses module="f95247f1-a285-4e98-864f-7f4b1723a807(org.iets3.core.users)" kind="dp" />
   <uses module="8e4e17de-bc10-4a34-a376-a243fbde540e(org.iets3.glossary)" kind="dp" />
   <uses module="a3c6f642-41b7-44cb-951b-463b8427a245(org.iets3.req.core)" kind="dp" />
