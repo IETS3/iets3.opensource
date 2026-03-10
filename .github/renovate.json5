@@ -3,12 +3,16 @@
   "extends": [
     "config:recommended"
   ],
+  // Renovate master and recent maintenance branches. When updating the maintenance branch pattern, update the rule
+  // disabling approvals for the earliest maintenance branch.
+  "baseBranches": ["master", "/^maintenance/mps202[4-9][0-9]/"],
+  
   "packageRules": [
     // Rules are evaluated top to bottom, all matching rules are applied
 
     {
       "matchPackageNames": [
-        "com.jetbrains:mps",
+        "com.jetbrains.mps:mps-prerelease",
         "org.mpsqa:all-in-one",
         "com.mbeddr:platform"
       ],
@@ -25,7 +29,7 @@
       // Disable major and minor updates of MPS libraries and MPS (e.g. 2024.1 -> 2024.3). Leave patch updates enabled
       // thanks to the previous rule.
       "matchPackageNames": [
-        "com.jetbrains:mps",
+        "com.jetbrains:mps-prerelease",
         "org.mpsqa:all-in-one",
         "com.mbeddr:platform"
       ],
