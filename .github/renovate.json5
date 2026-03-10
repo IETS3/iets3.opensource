@@ -5,6 +5,7 @@
   ],
   // enable dashboards for orchestration
   "dependencyDashboard": true,
+  "dependencyDashboardApproval": true,
   // Renovate master and recent maintenance branches. When updating the maintenance branch pattern, update the rule
   // disabling approvals for the earliest maintenance branch.
   "baseBranches": ["master", "/^maintenance/mps202[4-9][0-9]/"],
