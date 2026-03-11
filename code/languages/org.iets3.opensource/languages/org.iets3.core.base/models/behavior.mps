@@ -5,7 +5,7 @@
     <use id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior" version="2" />
     <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="12" />
     <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="19" />
-    <use id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc" version="-1" />
+    <use id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc" version="3" />
     <use id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections" version="2" />
     <use id="fd392034-7849-419d-9071-12563d152375" name="jetbrains.mps.baseLanguage.closures" version="0" />
     <use id="774bf8a0-62e5-41e1-af63-f4812e60e48b" name="jetbrains.mps.baseLanguage.checkedDots" version="0" />
@@ -255,24 +255,19 @@
         <property id="5858074156537516431" name="text" index="x79VB" />
       </concept>
       <concept id="5349172909345501395" name="jetbrains.mps.baseLanguage.javadoc.structure.BaseDocComment" flags="ng" index="P$AiS">
-        <child id="8465538089690331502" name="body" index="TZ5H$" />
         <child id="5383422241790532083" name="tags" index="3nqlJM" />
       </concept>
       <concept id="5349172909345532724" name="jetbrains.mps.baseLanguage.javadoc.structure.MethodDocComment" flags="ng" index="P$JXv" />
-      <concept id="8465538089690331500" name="jetbrains.mps.baseLanguage.javadoc.structure.CommentLine" flags="ng" index="TZ5HA">
-        <child id="8970989240999019149" name="part" index="1dT_Ay" />
-      </concept>
-      <concept id="8465538089690331492" name="jetbrains.mps.baseLanguage.javadoc.structure.DeprecatedBlockDocTag" flags="ng" index="TZ5HI">
-        <child id="2667874559098216723" name="text" index="3HnX3l" />
-      </concept>
+      <concept id="8465538089690331492" name="jetbrains.mps.baseLanguage.javadoc.structure.DeprecatedBlockDocTag" flags="ng" index="TZ5HI" />
       <concept id="2217234381367190443" name="jetbrains.mps.baseLanguage.javadoc.structure.SeeBlockDocTag" flags="ng" index="VUp57">
+        <property id="2217234381367190444" name="text" index="VUp50" />
         <child id="2217234381367190458" name="reference" index="VUp5m" />
       </concept>
       <concept id="2217234381367530195" name="jetbrains.mps.baseLanguage.javadoc.structure.MethodDocReference" flags="ng" index="VXe0Z">
         <reference id="2217234381367530196" name="methodDeclaration" index="VXe0S" />
       </concept>
-      <concept id="8970989240999019143" name="jetbrains.mps.baseLanguage.javadoc.structure.TextCommentLinePart" flags="ng" index="1dT_AC">
-        <property id="8970989240999019144" name="text" index="1dT_AB" />
+      <concept id="5085607816302529296" name="jetbrains.mps.baseLanguage.javadoc.structure.IHoldCommentLines" flags="ngI" index="1VezTd">
+        <child id="5085607816302529587" name="commentBody" index="1Vez_I" />
       </concept>
     </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
@@ -1387,7 +1382,11 @@
       </node>
       <node concept="P$JXv" id="7wEqFvbObn3" role="lGtFl">
         <node concept="TZ5HI" id="7wEqFvbObn4" role="3nqlJM">
-          <node concept="TZ5HA" id="7wEqFvbObn5" role="3HnX3l" />
+          <node concept="1PaTwC" id="3MzwgoR0SbP" role="1Vez_I">
+            <node concept="3oM_SD" id="3MzwgoR0SbQ" role="1PaTwD">
+              <property role="3oM_SC" value="" />
+            </node>
+          </node>
         </node>
       </node>
     </node>
@@ -1952,11 +1951,66 @@
         </node>
       </node>
       <node concept="P$JXv" id="4SwD0JT7qer" role="lGtFl">
-        <node concept="TZ5HA" id="4SwD0JT7qes" role="TZ5H$">
-          <node concept="1dT_AC" id="4SwD0JT7qet" role="1dT_Ay" />
-        </node>
         <node concept="x79VA" id="4SwD0JT7qeu" role="3nqlJM">
-          <property role="x79VB" value="true if the concept should allow the usage of special chars in its name property. else false" />
+          <property role="x79VB" value="" />
+          <node concept="1PaTwC" id="3MzwgoR0SbT" role="1Vez_I">
+            <node concept="3oM_SD" id="3MzwgoR0SbU" role="1PaTwD">
+              <property role="3oM_SC" value="true" />
+            </node>
+            <node concept="3oM_SD" id="3MzwgoR0SbV" role="1PaTwD">
+              <property role="3oM_SC" value="if" />
+            </node>
+            <node concept="3oM_SD" id="3MzwgoR0SbW" role="1PaTwD">
+              <property role="3oM_SC" value="the" />
+            </node>
+            <node concept="3oM_SD" id="3MzwgoR0SbX" role="1PaTwD">
+              <property role="3oM_SC" value="concept" />
+            </node>
+            <node concept="3oM_SD" id="3MzwgoR0SbY" role="1PaTwD">
+              <property role="3oM_SC" value="should" />
+            </node>
+            <node concept="3oM_SD" id="3MzwgoR0SbZ" role="1PaTwD">
+              <property role="3oM_SC" value="allow" />
+            </node>
+            <node concept="3oM_SD" id="3MzwgoR0Sc0" role="1PaTwD">
+              <property role="3oM_SC" value="the" />
+            </node>
+            <node concept="3oM_SD" id="3MzwgoR0Sc1" role="1PaTwD">
+              <property role="3oM_SC" value="usage" />
+            </node>
+            <node concept="3oM_SD" id="3MzwgoR0Sc2" role="1PaTwD">
+              <property role="3oM_SC" value="of" />
+            </node>
+            <node concept="3oM_SD" id="3MzwgoR0Sc3" role="1PaTwD">
+              <property role="3oM_SC" value="special" />
+            </node>
+            <node concept="3oM_SD" id="3MzwgoR0Sc4" role="1PaTwD">
+              <property role="3oM_SC" value="chars" />
+            </node>
+            <node concept="3oM_SD" id="3MzwgoR0Sc5" role="1PaTwD">
+              <property role="3oM_SC" value="in" />
+            </node>
+            <node concept="3oM_SD" id="3MzwgoR0Sc6" role="1PaTwD">
+              <property role="3oM_SC" value="its" />
+            </node>
+            <node concept="3oM_SD" id="3MzwgoR0Sc7" role="1PaTwD">
+              <property role="3oM_SC" value="name" />
+            </node>
+            <node concept="3oM_SD" id="3MzwgoR0Sc8" role="1PaTwD">
+              <property role="3oM_SC" value="property." />
+            </node>
+            <node concept="3oM_SD" id="3MzwgoR0Sc9" role="1PaTwD">
+              <property role="3oM_SC" value="else" />
+            </node>
+            <node concept="3oM_SD" id="3MzwgoR0Sca" role="1PaTwD">
+              <property role="3oM_SC" value="false" />
+            </node>
+          </node>
+        </node>
+        <node concept="1PaTwC" id="3MzwgoR0SbR" role="1Vez_I">
+          <node concept="3oM_SD" id="3MzwgoR0SbS" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
         </node>
       </node>
     </node>
@@ -2037,18 +2091,60 @@
         <ref role="2AI5Lk" to="mhfm:~ApiStatus$Internal" resolve="ApiStatus.Internal" />
       </node>
       <node concept="P$JXv" id="5TO$xcFuNUc" role="lGtFl">
-        <node concept="TZ5HA" id="5TO$xcFuNUd" role="TZ5H$">
-          <node concept="1dT_AC" id="5TO$xcFuNUe" role="1dT_Ay">
-            <property role="1dT_AB" value="Scheduled to be closed API. Use overrideDefaultAllowUmlaute() instead " />
-          </node>
-        </node>
         <node concept="VUp57" id="4y0DErjELny" role="3nqlJM">
+          <property role="VUp50" value="" />
           <node concept="VXe0Z" id="4y0DErjEMAo" role="VUp5m">
             <ref role="VXe0S" node="5YygIlbjlOQ" resolve="overrideDefaultAllowUmlaute" />
           </node>
+          <node concept="1PaTwC" id="2CPUzzpzx72" role="1Vez_I">
+            <node concept="3oM_SD" id="2CPUzzpzx73" role="1PaTwD" />
+          </node>
         </node>
         <node concept="x79VA" id="2VdPjasmnlP" role="3nqlJM">
-          <property role="x79VB" value="false by default via EP" />
+          <property role="x79VB" value="" />
+          <node concept="1PaTwC" id="2CPUzzpzx74" role="1Vez_I">
+            <node concept="3oM_SD" id="2CPUzzpzx75" role="1PaTwD">
+              <property role="3oM_SC" value="false" />
+            </node>
+            <node concept="3oM_SD" id="2CPUzzpzx76" role="1PaTwD">
+              <property role="3oM_SC" value="by" />
+            </node>
+            <node concept="3oM_SD" id="2CPUzzpzx77" role="1PaTwD">
+              <property role="3oM_SC" value="default" />
+            </node>
+            <node concept="3oM_SD" id="2CPUzzpzx78" role="1PaTwD">
+              <property role="3oM_SC" value="via" />
+            </node>
+            <node concept="3oM_SD" id="2CPUzzpzx79" role="1PaTwD">
+              <property role="3oM_SC" value="EP" />
+            </node>
+          </node>
+        </node>
+        <node concept="1PaTwC" id="2CPUzzpzx6T" role="1Vez_I">
+          <node concept="3oM_SD" id="2CPUzzpzx6U" role="1PaTwD">
+            <property role="3oM_SC" value="Scheduled" />
+          </node>
+          <node concept="3oM_SD" id="2CPUzzpzx6V" role="1PaTwD">
+            <property role="3oM_SC" value="to" />
+          </node>
+          <node concept="3oM_SD" id="2CPUzzpzx6W" role="1PaTwD">
+            <property role="3oM_SC" value="be" />
+          </node>
+          <node concept="3oM_SD" id="2CPUzzpzx6X" role="1PaTwD">
+            <property role="3oM_SC" value="closed" />
+          </node>
+          <node concept="3oM_SD" id="2CPUzzpzx6Y" role="1PaTwD">
+            <property role="3oM_SC" value="API." />
+          </node>
+          <node concept="3oM_SD" id="2CPUzzpzx6Z" role="1PaTwD">
+            <property role="3oM_SC" value="Use" />
+          </node>
+          <node concept="3oM_SD" id="2CPUzzpzx70" role="1PaTwD">
+            <property role="3oM_SC" value="overrideDefaultAllowUmlaute()" />
+          </node>
+          <node concept="3oM_SD" id="2CPUzzpzx71" role="1PaTwD">
+            <property role="3oM_SC" value="instead" />
+          </node>
         </node>
       </node>
     </node>
@@ -2077,18 +2173,60 @@
         <ref role="2AI5Lk" to="mhfm:~ApiStatus$Internal" resolve="ApiStatus.Internal" />
       </node>
       <node concept="P$JXv" id="5TO$xcFuQYd" role="lGtFl">
-        <node concept="TZ5HA" id="5TO$xcFuQYe" role="TZ5H$">
-          <node concept="1dT_AC" id="5TO$xcFuQYf" role="1dT_Ay">
-            <property role="1dT_AB" value="Scheduled to be closed API. Use overrideDefaultAllowUmlaute() instead" />
-          </node>
-        </node>
         <node concept="VUp57" id="4y0DErjENqR" role="3nqlJM">
+          <property role="VUp50" value="" />
           <node concept="VXe0Z" id="4y0DErjENqT" role="VUp5m">
             <ref role="VXe0S" node="5D8v3P4jYKp" resolve="overrideDefaultAllowUmlaute" />
           </node>
+          <node concept="1PaTwC" id="2CPUzzpzx7j" role="1Vez_I">
+            <node concept="3oM_SD" id="2CPUzzpzx7k" role="1PaTwD" />
+          </node>
         </node>
         <node concept="x79VA" id="2VdPjasmp45" role="3nqlJM">
-          <property role="x79VB" value="false by default via EP" />
+          <property role="x79VB" value="" />
+          <node concept="1PaTwC" id="2CPUzzpzx7l" role="1Vez_I">
+            <node concept="3oM_SD" id="2CPUzzpzx7m" role="1PaTwD">
+              <property role="3oM_SC" value="false" />
+            </node>
+            <node concept="3oM_SD" id="2CPUzzpzx7n" role="1PaTwD">
+              <property role="3oM_SC" value="by" />
+            </node>
+            <node concept="3oM_SD" id="2CPUzzpzx7o" role="1PaTwD">
+              <property role="3oM_SC" value="default" />
+            </node>
+            <node concept="3oM_SD" id="2CPUzzpzx7p" role="1PaTwD">
+              <property role="3oM_SC" value="via" />
+            </node>
+            <node concept="3oM_SD" id="2CPUzzpzx7q" role="1PaTwD">
+              <property role="3oM_SC" value="EP" />
+            </node>
+          </node>
+        </node>
+        <node concept="1PaTwC" id="2CPUzzpzx7a" role="1Vez_I">
+          <node concept="3oM_SD" id="2CPUzzpzx7b" role="1PaTwD">
+            <property role="3oM_SC" value="Scheduled" />
+          </node>
+          <node concept="3oM_SD" id="2CPUzzpzx7c" role="1PaTwD">
+            <property role="3oM_SC" value="to" />
+          </node>
+          <node concept="3oM_SD" id="2CPUzzpzx7d" role="1PaTwD">
+            <property role="3oM_SC" value="be" />
+          </node>
+          <node concept="3oM_SD" id="2CPUzzpzx7e" role="1PaTwD">
+            <property role="3oM_SC" value="closed" />
+          </node>
+          <node concept="3oM_SD" id="2CPUzzpzx7f" role="1PaTwD">
+            <property role="3oM_SC" value="API." />
+          </node>
+          <node concept="3oM_SD" id="2CPUzzpzx7g" role="1PaTwD">
+            <property role="3oM_SC" value="Use" />
+          </node>
+          <node concept="3oM_SD" id="2CPUzzpzx7h" role="1PaTwD">
+            <property role="3oM_SC" value="overrideDefaultAllowUmlaute()" />
+          </node>
+          <node concept="3oM_SD" id="2CPUzzpzx7i" role="1PaTwD">
+            <property role="3oM_SC" value="instead" />
+          </node>
         </node>
       </node>
     </node>
@@ -2117,18 +2255,60 @@
         <ref role="2AI5Lk" to="mhfm:~ApiStatus$NonExtendable" resolve="ApiStatus.NonExtendable" />
       </node>
       <node concept="P$JXv" id="5TO$xcFx9SI" role="lGtFl">
-        <node concept="TZ5HA" id="5TO$xcFx9SJ" role="TZ5H$">
-          <node concept="1dT_AC" id="5TO$xcFx9SK" role="1dT_Ay">
-            <property role="1dT_AB" value="Scheduled to be closed API. Use overrideDefaultAllowApostrophe() instead" />
-          </node>
-        </node>
         <node concept="VUp57" id="4y0DErjENqW" role="3nqlJM">
+          <property role="VUp50" value="" />
           <node concept="VXe0Z" id="4y0DErjENqY" role="VUp5m">
             <ref role="VXe0S" node="5TO$xcFx5xN" resolve="overrideDefaultAllowApostrophe" />
           </node>
+          <node concept="1PaTwC" id="2CPUzzpzx7$" role="1Vez_I">
+            <node concept="3oM_SD" id="2CPUzzpzx7_" role="1PaTwD" />
+          </node>
         </node>
         <node concept="x79VA" id="2VdPjasmtmG" role="3nqlJM">
-          <property role="x79VB" value="true by default via EP" />
+          <property role="x79VB" value="" />
+          <node concept="1PaTwC" id="2CPUzzpzx7A" role="1Vez_I">
+            <node concept="3oM_SD" id="2CPUzzpzx7B" role="1PaTwD">
+              <property role="3oM_SC" value="true" />
+            </node>
+            <node concept="3oM_SD" id="2CPUzzpzx7C" role="1PaTwD">
+              <property role="3oM_SC" value="by" />
+            </node>
+            <node concept="3oM_SD" id="2CPUzzpzx7D" role="1PaTwD">
+              <property role="3oM_SC" value="default" />
+            </node>
+            <node concept="3oM_SD" id="2CPUzzpzx7E" role="1PaTwD">
+              <property role="3oM_SC" value="via" />
+            </node>
+            <node concept="3oM_SD" id="2CPUzzpzx7F" role="1PaTwD">
+              <property role="3oM_SC" value="EP" />
+            </node>
+          </node>
+        </node>
+        <node concept="1PaTwC" id="2CPUzzpzx7r" role="1Vez_I">
+          <node concept="3oM_SD" id="2CPUzzpzx7s" role="1PaTwD">
+            <property role="3oM_SC" value="Scheduled" />
+          </node>
+          <node concept="3oM_SD" id="2CPUzzpzx7t" role="1PaTwD">
+            <property role="3oM_SC" value="to" />
+          </node>
+          <node concept="3oM_SD" id="2CPUzzpzx7u" role="1PaTwD">
+            <property role="3oM_SC" value="be" />
+          </node>
+          <node concept="3oM_SD" id="2CPUzzpzx7v" role="1PaTwD">
+            <property role="3oM_SC" value="closed" />
+          </node>
+          <node concept="3oM_SD" id="2CPUzzpzx7w" role="1PaTwD">
+            <property role="3oM_SC" value="API." />
+          </node>
+          <node concept="3oM_SD" id="2CPUzzpzx7x" role="1PaTwD">
+            <property role="3oM_SC" value="Use" />
+          </node>
+          <node concept="3oM_SD" id="2CPUzzpzx7y" role="1PaTwD">
+            <property role="3oM_SC" value="overrideDefaultAllowApostrophe()" />
+          </node>
+          <node concept="3oM_SD" id="2CPUzzpzx7z" role="1PaTwD">
+            <property role="3oM_SC" value="instead" />
+          </node>
         </node>
       </node>
     </node>
@@ -2597,11 +2777,39 @@
       <node concept="3Tqbb2" id="3fhiqmjJy6$" role="3clF45" />
       <node concept="3clFbS" id="3QX5db_zS9K" role="3clF47" />
       <node concept="P$JXv" id="3QX5db_$9Ub" role="lGtFl">
-        <node concept="TZ5HA" id="3QX5db_$9Uc" role="TZ5H$">
-          <node concept="1dT_AC" id="3QX5db_$9Ud" role="1dT_Ay" />
-        </node>
         <node concept="x79VA" id="3QX5db_$9Ue" role="3nqlJM">
-          <property role="x79VB" value="the node which is referenced by the type" />
+          <property role="x79VB" value="" />
+          <node concept="1PaTwC" id="3MzwgoR0Scd" role="1Vez_I">
+            <node concept="3oM_SD" id="3MzwgoR0Sce" role="1PaTwD">
+              <property role="3oM_SC" value="the" />
+            </node>
+            <node concept="3oM_SD" id="3MzwgoR0Scf" role="1PaTwD">
+              <property role="3oM_SC" value="node" />
+            </node>
+            <node concept="3oM_SD" id="3MzwgoR0Scg" role="1PaTwD">
+              <property role="3oM_SC" value="which" />
+            </node>
+            <node concept="3oM_SD" id="3MzwgoR0Sch" role="1PaTwD">
+              <property role="3oM_SC" value="is" />
+            </node>
+            <node concept="3oM_SD" id="3MzwgoR0Sci" role="1PaTwD">
+              <property role="3oM_SC" value="referenced" />
+            </node>
+            <node concept="3oM_SD" id="3MzwgoR0Scj" role="1PaTwD">
+              <property role="3oM_SC" value="by" />
+            </node>
+            <node concept="3oM_SD" id="3MzwgoR0Sck" role="1PaTwD">
+              <property role="3oM_SC" value="the" />
+            </node>
+            <node concept="3oM_SD" id="3MzwgoR0Scl" role="1PaTwD">
+              <property role="3oM_SC" value="type" />
+            </node>
+          </node>
+        </node>
+        <node concept="1PaTwC" id="3MzwgoR0Scb" role="1Vez_I">
+          <node concept="3oM_SD" id="3MzwgoR0Scc" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
         </node>
       </node>
     </node>
