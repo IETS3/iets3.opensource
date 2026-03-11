@@ -15,7 +15,6 @@
 
     {
       "matchPackageNames": [
-        "com.jetbrains.mps:mps-prerelease", // Master branch
         "com.jetbrains:mps",                // Maintenance branches
         "org.mpsqa:all-in-one",
         "com.mbeddr:platform"
