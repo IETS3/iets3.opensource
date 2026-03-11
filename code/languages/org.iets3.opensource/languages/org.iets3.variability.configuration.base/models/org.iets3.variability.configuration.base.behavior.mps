@@ -2,20 +2,20 @@
 <model ref="r:dedd19c9-9ff3-4f30-aa73-ce61203b2296(org.iets3.variability.configuration.base.behavior)">
   <persistence version="9" />
   <languages>
-    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="19" />
-    <use id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior" version="2" />
-    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="12" />
-    <use id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections" version="2" />
-    <use id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc" version="3" />
-    <use id="fd392034-7849-419d-9071-12563d152375" name="jetbrains.mps.baseLanguage.closures" version="0" />
-    <use id="c7fb639f-be78-4307-89b0-b5959c3fa8c8" name="jetbrains.mps.lang.text" version="0" />
-    <use id="774bf8a0-62e5-41e1-af63-f4812e60e48b" name="jetbrains.mps.baseLanguage.checkedDots" version="0" />
-    <use id="63e0e566-5131-447e-90e3-12ea330e1a00" name="com.mbeddr.mpsutil.blutil" version="3" />
-    <use id="760a0a8c-eabb-4521-8bfd-65db761a9ba3" name="jetbrains.mps.baseLanguage.logging" version="0" />
-    <use id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core" version="2" />
-    <use id="3a13115c-633c-4c5c-bbcc-75c4219e9555" name="jetbrains.mps.lang.quotation" version="5" />
-    <use id="817e4e70-961e-4a95-98a1-15e9f32231f1" name="jetbrains.mps.ide.httpsupport" version="0" />
-    <use id="63650c59-16c8-498a-99c8-005c7ee9515d" name="jetbrains.mps.lang.access" version="0" />
+    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="-1" />
+    <use id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior" version="-1" />
+    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="-1" />
+    <use id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections" version="-1" />
+    <use id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc" version="-1" />
+    <use id="fd392034-7849-419d-9071-12563d152375" name="jetbrains.mps.baseLanguage.closures" version="-1" />
+    <use id="c7fb639f-be78-4307-89b0-b5959c3fa8c8" name="jetbrains.mps.lang.text" version="-1" />
+    <use id="774bf8a0-62e5-41e1-af63-f4812e60e48b" name="jetbrains.mps.baseLanguage.checkedDots" version="-1" />
+    <use id="63e0e566-5131-447e-90e3-12ea330e1a00" name="com.mbeddr.mpsutil.blutil" version="-1" />
+    <use id="760a0a8c-eabb-4521-8bfd-65db761a9ba3" name="jetbrains.mps.baseLanguage.logging" version="-1" />
+    <use id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core" version="-1" />
+    <use id="3a13115c-633c-4c5c-bbcc-75c4219e9555" name="jetbrains.mps.lang.quotation" version="-1" />
+    <use id="817e4e70-961e-4a95-98a1-15e9f32231f1" name="jetbrains.mps.ide.httpsupport" version="-1" />
+    <use id="63650c59-16c8-498a-99c8-005c7ee9515d" name="jetbrains.mps.lang.access" version="-1" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -5098,14 +5098,11 @@
             </node>
             <node concept="3cpWs3" id="5ALUC7NR5So" role="3uHU7B">
               <node concept="3cpWs3" id="5ALUC7NR5DM" role="3uHU7B">
-                <node concept="2OqwBi" id="5ALUC7NR4Kf" role="3uHU7B">
-                  <node concept="13iPFW" id="5ALUC7NR4vA" role="2Oq$k0" />
-                  <node concept="3TrcHB" id="5ALUC7NR5iZ" role="2OqNvi">
-                    <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
-                  </node>
-                </node>
                 <node concept="Xl_RD" id="5ALUC7NR5E7" role="3uHU7w">
                   <property role="Xl_RC" value=" (" />
+                </node>
+                <node concept="BsUDl" id="3Qgc3xLEinR" role="3uHU7B">
+                  <ref role="37wK5l" node="3Qgc3xLE1Kc" resolve="getEnrichedName" />
                 </node>
               </node>
               <node concept="2OqwBi" id="5ALUC7NR7Nb" role="3uHU7w">
@@ -5124,6 +5121,44 @@
         </node>
       </node>
       <node concept="17QB3L" id="5ALUC7NQRdN" role="3clF45" />
+    </node>
+    <node concept="13i0hz" id="3Qgc3xLE1Kc" role="13h7CS">
+      <property role="TrG5h" value="getEnrichedName" />
+      <node concept="3Tm1VV" id="3Qgc3xLE1Kd" role="1B3o_S" />
+      <node concept="17QB3L" id="3Qgc3xLEgRd" role="3clF45" />
+      <node concept="3clFbS" id="3Qgc3xLE1Kf" role="3clF47">
+        <node concept="3clFbF" id="3Qgc3xLEgTw" role="3cqZAp">
+          <node concept="2OqwBi" id="3Qgc3xLEh42" role="3clFbG">
+            <node concept="2YIFZM" id="3Qgc3xLEgUI" role="2Oq$k0">
+              <ref role="37wK5l" to="ch50:4qv99IrBnzk" resolve="instance" />
+              <ref role="1Pybhc" to="ch50:1e_Qt5_v$e" resolve="EnrichedConfigNames" />
+            </node>
+            <node concept="liA8E" id="3Qgc3xLEhaH" role="2OqNvi">
+              <ref role="37wK5l" to="ch50:1e_Qt5zF48" resolve="getEnrichedName" />
+              <node concept="13iPFW" id="3Qgc3xLEhbD" role="37wK5m" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="13i0hz" id="6vXjBknaZwN" role="13h7CS">
+      <property role="TrG5h" value="hasActualEnrichedName" />
+      <node concept="3Tm1VV" id="6vXjBknaZwO" role="1B3o_S" />
+      <node concept="10P_77" id="6vXjBknbhdl" role="3clF45" />
+      <node concept="3clFbS" id="6vXjBknaZwQ" role="3clF47">
+        <node concept="3clFbF" id="6vXjBknbrZ$" role="3cqZAp">
+          <node concept="2OqwBi" id="6vXjBknbwqA" role="3clFbG">
+            <node concept="2YIFZM" id="6vXjBknbs0k" role="2Oq$k0">
+              <ref role="37wK5l" to="ch50:4qv99IrBnzk" resolve="instance" />
+              <ref role="1Pybhc" to="ch50:1e_Qt5_v$e" resolve="EnrichedConfigNames" />
+            </node>
+            <node concept="liA8E" id="6vXjBknbBki" role="2OqNvi">
+              <ref role="37wK5l" to="ch50:6vXjBknacek" resolve="hasActualEnrichedName" />
+              <node concept="13iPFW" id="6vXjBknbBlk" role="37wK5m" />
+            </node>
+          </node>
+        </node>
+      </node>
     </node>
     <node concept="13i0hz" id="25nFwuOEflF" role="13h7CS">
       <property role="TrG5h" value="getHash" />
