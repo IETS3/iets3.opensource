@@ -17435,11 +17435,6 @@
           </node>
         </node>
       </node>
-      <node concept="1SiIV0" id="2lSsyuKzNbE" role="3bR37C">
-        <node concept="3bR9La" id="2lSsyuKzNbF" role="1SiIV1">
-          <ref role="3bR37D" to="ffeo:ymnOULAU1u" resolve="jetbrains.mps.lang.test.runtime" />
-        </node>
-      </node>
       <node concept="1SiIV0" id="2lSsyuKzNkh" role="3bR37C">
         <node concept="3bR9La" id="2lSsyuKzNki" role="1SiIV1">
           <ref role="3bR37D" node="4O1MtdoYzuV" resolve="test.org.iets3.variability.configuration.base.ext" />
