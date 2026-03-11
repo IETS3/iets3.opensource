@@ -16,6 +16,7 @@
     <dependency reexport="false">6b277d9a-d52d-416f-a209-1919bd737f50(org.iets3.core.expr.simpleTypes)</dependency>
     <dependency reexport="false">c6420b75-4569-420d-aaf7-9bc590ad7b2a(de.itemis.mps.comparator)</dependency>
     <dependency reexport="false">c1fcd3e0-0603-4035-834f-14c6337eec24(test.org.iets3.common.base)</dependency>
+    <dependency reexport="false">964a5657-7374-4fbd-970e-fec8637b6a01(test.org.iets3.variability.configuration.base.ext)</dependency>
     <dependency reexport="false">ecfb9949-7433-4db5-85de-0f84d172e4ce(de.q60.mps.collections.libs)</dependency>
   </dependencies>
   <languageVersions>
@@ -107,6 +108,7 @@
     <module reference="165f1d05-2506-4544-895e-1424f54166ec(org.iets3.variability.featuremodel.base)" version="36" />
     <module reference="c1fcd3e0-0603-4035-834f-14c6337eec24(test.org.iets3.common.base)" version="0" />
     <module reference="69c0c18f-9200-46ca-96d1-e564692dce0c(test.org.iets3.variability.configuration.base)" version="0" />
+    <module reference="964a5657-7374-4fbd-970e-fec8637b6a01(test.org.iets3.variability.configuration.base.ext)" version="0" />
   </dependencyVersions>
 </solution>
 

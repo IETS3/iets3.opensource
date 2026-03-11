@@ -11,14 +11,15 @@ import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
 import org.iets3.variability.base.behavior.IVariabilityContainer__BehaviorDescriptor;
 import jetbrains.mps.internal.collections.runtime.Sequence;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.IAttributeDescriptor;
-import java.util.Objects;
+import org.iets3.variability.configuration.base.plugin.EnrichedConfigNames;
+import org.iets3.variability.configuration.base.behavior.FeatureModelConfiguration__BehaviorDescriptor;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations;
+import java.util.Objects;
 import jetbrains.mps.errors.messageTargets.MessageTarget;
 import jetbrains.mps.errors.messageTargets.NodeMessageTarget;
 import jetbrains.mps.errors.IErrorReporter;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
 import jetbrains.mps.internal.collections.runtime.ListSequence;
-import org.iets3.variability.configuration.base.behavior.FeatureModelConfiguration__BehaviorDescriptor;
 import jetbrains.mps.errors.BaseQuickFixProvider;
 import java.util.List;
 import org.apache.commons.lang3.tuple.Pair;
@@ -41,7 +42,12 @@ public class check_FeatureModelConfiguration_NonTypesystemRule extends AbstractN
       // In order to avoid many false positives of this checking rule in the tests, we filter these out. 
       Iterable<SNode> allConfigs = SNodeOperations.ofConcept(IVariabilityContainer__BehaviorDescriptor.getContents_id22kx7U4Ix5a.invoke(container), CONCEPTS.FeatureModelConfiguration$nE);
       Iterable<SNode> configsWithoutTestAnnotation = Sequence.fromIterable(allConfigs).where((it) -> (new IAttributeDescriptor.NodeAttribute(CONCEPTS.TestNodeAnnotation$27).get(it) == null));
-      if (Sequence.fromIterable(configsWithoutTestAnnotation).any((it) -> !(Objects.equals(it, fmc)) && Objects.equals(SPropertyOperations.getString(it, PROPS.name$MnvL), SPropertyOperations.getString(fmc, PROPS.name$MnvL)))) {
+      final boolean useEnriched = EnrichedConfigNames.instance().useEnrichedNameForUniquenessCheck();
+      if (Sequence.fromIterable(configsWithoutTestAnnotation).any((it) -> {
+        String n1 = (useEnriched ? FeatureModelConfiguration__BehaviorDescriptor.getEnrichedName_id3Qgc3xLE1Kc.invoke(it) : SPropertyOperations.getString(it, PROPS.name$MnvL));
+        String n2 = (useEnriched ? FeatureModelConfiguration__BehaviorDescriptor.getEnrichedName_id3Qgc3xLE1Kc.invoke(fmc) : SPropertyOperations.getString(fmc, PROPS.name$MnvL));
+        return !(Objects.equals(it, fmc)) && Objects.equals(n1, n2);
+      })) {
         {
           final MessageTarget errorTarget = new NodeMessageTarget();
           IErrorReporter _reporter_2309309498 = typeCheckingContext.reportTypeError(fmc, "Configuration with duplicate name exists in current container", "r:791971f5-b094-4342-a75c-0ce6c1b43e9d(org.iets3.variability.configuration.base.typesystem)", "9159423170666523437", null, errorTarget);

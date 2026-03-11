@@ -8,6 +8,6 @@ import jetbrains.mps.smodel.structure.ExtensionPoint;
 
 public class ExtensionDescriptor extends DefaultExtensionDescriptor {
   public ExtensionDescriptor() {
-    super(Arrays.asList(new ExtensionPoint("org.iets3.variability.configuration.base.configurationSolverExtPoint")), Arrays.asList(new ConfigurationSolverBaseExtension(), new FeatureModelNixHandlerExtension()));
+    super(Arrays.asList(new ExtensionPoint("org.iets3.variability.configuration.base.configurationSolverExtPoint"), new ExtensionPoint("org.iets3.variability.configuration.base.enrichedConfigNameLogicExtPoint")), Arrays.asList(new ConfigurationSolverBaseExtension(), new DefaultEnrichedConfigNameLogicExtension(), new FeatureModelNixHandlerExtension()));
   }
 }

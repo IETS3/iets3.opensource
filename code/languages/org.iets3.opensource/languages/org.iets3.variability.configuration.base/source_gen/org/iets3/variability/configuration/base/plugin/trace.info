@@ -84,6 +84,76 @@
       <unit id="198568764466570174" at="25,0,76,0" name="org.iets3.variability.configuration.base.plugin.ConfigFixedValues" />
     </file>
   </root>
+  <root nodeRef="r:83d54567-d361-47ca-a949-7374ea89921d(org.iets3.variability.configuration.base.plugin)/22121517987702564">
+    <file name="IEnrichedConfigNameLogic.java">
+      <node id="7493231619824384435" at="11,0,12,0" concept="13" trace="DEFAULT_PRIORITY" />
+      <node id="7493231619821061012" at="17,0,18,0" concept="8" trace="hasActualEnrichedName#(Lorg/jetbrains/mps/openapi/model/SNode;)Z" />
+      <node id="22121517987836168" at="22,0,23,0" concept="8" trace="getEnrichedName#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljava/lang/String;" />
+      <node id="4436098651941771740" at="34,0,35,0" concept="8" trace="getDisplayStrategy#(Lorg/jetbrains/mps/openapi/model/SNode;)Lorg/iets3/variability/configuration/base/plugin/IEnrichedConfigNameLogic/DisplayStrategy;" />
+      <node id="22121517988052532" at="40,0,41,0" concept="8" trace="useEnrichedNameForUniquenessCheck#()Z" />
+      <node id="22121517988066472" at="45,0,46,0" concept="8" trace="priority#()I" />
+      <scope id="7493231619821061012" at="17,0,18,0">
+        <var name="config" id="7493231619821062079" />
+      </scope>
+      <scope id="22121517987836168" at="22,0,23,0">
+        <var name="config" id="22121517988040079" />
+      </scope>
+      <scope id="4436098651941771740" at="34,0,35,0">
+        <var name="fm" id="4436098651941789772" />
+      </scope>
+      <scope id="22121517988052532" at="40,0,41,0" />
+      <scope id="22121517988066472" at="45,0,46,0" />
+      <unit id="5088826354699946460" at="24,0,29,0" name="org.iets3.variability.configuration.base.plugin.IEnrichedConfigNameLogic$DisplayStrategy" />
+      <unit id="22121517987702564" at="10,0,47,0" name="org.iets3.variability.configuration.base.plugin.IEnrichedConfigNameLogic" />
+    </file>
+  </root>
+  <root nodeRef="r:83d54567-d361-47ca-a949-7374ea89921d(org.iets3.variability.configuration.base.plugin)/22121517987728218">
+    <file name="DefaultEnrichedConfigNameLogic.java">
+      <node id="7493231619821067981" at="13,54,14,17" concept="10" />
+      <node id="22121517988078011" at="18,47,19,66" concept="10" />
+      <node id="7493231619823911461" at="23,80,24,64" concept="10" />
+      <node id="22121517988078024" at="28,54,29,17" concept="10" />
+      <node id="22121517988078035" at="33,25,34,28" concept="10" />
+      <node id="22121517987728218" at="38,0,39,0" concept="13" trace="name$MnvL" />
+      <node id="7493231619821067969" at="12,0,16,0" concept="8" trace="hasActualEnrichedName#(Lorg/jetbrains/mps/openapi/model/SNode;)Z" />
+      <node id="22121517988077999" at="17,0,21,0" concept="8" trace="getEnrichedName#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljava/lang/String;" />
+      <node id="4436098651941774330" at="22,0,26,0" concept="8" trace="getDisplayStrategy#(Lorg/jetbrains/mps/openapi/model/SNode;)Lorg/iets3/variability/configuration/base/plugin/IEnrichedConfigNameLogic/DisplayStrategy;" />
+      <node id="22121517988078012" at="27,0,31,0" concept="8" trace="useEnrichedNameForUniquenessCheck#()Z" />
+      <node id="22121517988078025" at="32,0,36,0" concept="8" trace="priority#()I" />
+      <scope id="7493231619821067978" at="13,54,14,17" />
+      <scope id="22121517988078008" at="18,47,19,66" />
+      <scope id="4436098651941774339" at="23,80,24,64" />
+      <scope id="22121517988078021" at="28,54,29,17" />
+      <scope id="22121517988078032" at="33,25,34,28" />
+      <scope id="7493231619821067969" at="12,0,16,0">
+        <var name="config" id="7493231619821067970" />
+      </scope>
+      <scope id="22121517988077999" at="17,0,21,0">
+        <var name="config" id="22121517988078003" />
+      </scope>
+      <scope id="4436098651941774330" at="22,0,26,0">
+        <var name="fm" id="4436098651941792393" />
+      </scope>
+      <scope id="22121517988078012" at="27,0,31,0" />
+      <scope id="22121517988078025" at="32,0,36,0" />
+      <unit id="22121517987728218" at="37,0,40,0" name="org.iets3.variability.configuration.base.plugin.DefaultEnrichedConfigNameLogic$PROPS" />
+      <unit id="22121517987728218" at="10,0,41,0" name="org.iets3.variability.configuration.base.plugin.DefaultEnrichedConfigNameLogic" />
+    </file>
+  </root>
+  <root nodeRef="r:83d54567-d361-47ca-a949-7374ea89921d(org.iets3.variability.configuration.base.plugin)/22121517988313358">
+    <file name="EnrichedConfigNames.java">
+      <node id="5088826354701365497" at="10,53,11,234" concept="9" />
+      <node id="22121517988347474" at="11,234,12,0" concept="12" />
+      <node id="3668754885656548149" at="12,0,13,47" concept="11" />
+      <node id="5088826354701366832" at="13,47,14,68" concept="10" />
+      <node id="5088826354701269204" at="10,0,16,0" concept="14" trace="instance#()Lorg/iets3/variability/configuration/base/plugin/IEnrichedConfigNameLogic;" />
+      <scope id="5088826354701269207" at="10,53,14,68">
+        <var name="ep" id="5088826354701365498" />
+      </scope>
+      <scope id="5088826354701269204" at="10,0,16,0" />
+      <unit id="22121517988313358" at="8,0,17,0" name="org.iets3.variability.configuration.base.plugin.EnrichedConfigNames" />
+    </file>
+  </root>
   <root nodeRef="r:83d54567-d361-47ca-a949-7374ea89921d(org.iets3.variability.configuration.base.plugin)/2221974065919732462">
     <file name="IConfigurationSolver.java">
       <node id="2221974065919832884" at="24,0,25,0" concept="8" trace="runSolver#(Lorg/jetbrains/mps/openapi/model/SNode;)Lorg/iets3/core/base/behavior/IResult;" />
@@ -1561,6 +1631,19 @@
       <unit id="9038024733918075975" at="181,0,188,0" name="org.iets3.variability.configuration.base.plugin.FeatureModelConfigurationScoping$CONCEPTS" />
       <unit id="9038024733918075975" at="168,0,180,0" name="org.iets3.variability.configuration.base.plugin.FeatureModelConfigurationScoping$LINKS" />
       <unit id="9038024733918075975" at="25,0,193,0" name="org.iets3.variability.configuration.base.plugin.FeatureModelConfigurationScoping" />
+    </file>
+  </root>
+  <root nodeRef="r:83d54567-d361-47ca-a949-7374ea89921d(org.iets3.variability.configuration.base.plugin)/9110823567833768268">
+    <file name="DefaultEnrichedConfigNameLogicExtension.java">
+      <node id="9110823567833768268" at="8,52,9,86" concept="15" />
+      <node id="9110823567833768277" at="13,41,14,48" concept="10" />
+      <node id="9110823567833768268" at="8,0,11,0" concept="3" trace="DefaultEnrichedConfigNameLogicExtension#()V" />
+      <node id="9110823567833768274" at="13,0,16,0" concept="0" trace="get#()Lorg/iets3/variability/configuration/base/plugin/IEnrichedConfigNameLogic;" />
+      <scope id="9110823567833768268" at="8,52,9,86" />
+      <scope id="9110823567833768276" at="13,41,14,48" />
+      <scope id="9110823567833768268" at="8,0,11,0" />
+      <scope id="9110823567833768274" at="13,0,16,0" />
+      <unit id="9110823567833768268" at="7,0,17,0" name="org.iets3.variability.configuration.base.plugin.DefaultEnrichedConfigNameLogicExtension" />
     </file>
   </root>
   <root nodeRef="r:83d54567-d361-47ca-a949-7374ea89921d(org.iets3.variability.configuration.base.plugin)/9139882422782036342">

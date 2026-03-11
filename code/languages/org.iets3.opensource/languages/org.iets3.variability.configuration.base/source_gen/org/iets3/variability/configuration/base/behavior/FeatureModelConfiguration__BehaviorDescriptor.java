@@ -21,6 +21,7 @@ import java.util.Arrays;
 import org.jetbrains.annotations.NotNull;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
+import org.iets3.variability.configuration.base.plugin.EnrichedConfigNames;
 import de.itemis.mps.utils.serializer.xml.serializer.NodeSerializer;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
 import jetbrains.mps.internal.collections.runtime.Sequence;
@@ -48,9 +49,9 @@ import org.iets3.variability.configuration.base.plugin.FeatureModelConfiguration
 import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
-import org.jetbrains.mps.openapi.language.SProperty;
 import org.jetbrains.mps.openapi.language.SReferenceLink;
 import org.jetbrains.mps.openapi.language.SContainmentLink;
+import org.jetbrains.mps.openapi.language.SProperty;
 import org.jetbrains.mps.openapi.language.SConcept;
 import org.jetbrains.mps.openapi.language.SInterfaceConcept;
 
@@ -59,6 +60,8 @@ public final class FeatureModelConfiguration__BehaviorDescriptor extends BaseBHD
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getConcept(0x71226ee2bbc445d2L, 0xa41d20b97237156cL, 0x5cf5c0d0479ec915L, "org.iets3.variability.configuration.base.structure.FeatureModelConfiguration");
 
   public static final SMethod<String> getPresentation_idhEwIMiw = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("getPresentation").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(1213877396640L).languageId(0x9b92103b95ca8c0cL, 0xceab519525ea4f22L).build2();
+  public static final SMethod<String> getEnrichedName_id3Qgc3xLE1Kc = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("getEnrichedName").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(4436098651943083020L).languageId(0xa41d20b97237156cL, 0x71226ee2bbc445d2L).build2();
+  public static final SMethod<Boolean> hasActualEnrichedName_id6vXjBknaZwN = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("hasActualEnrichedName").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(7493231619821271091L).languageId(0xa41d20b97237156cL, 0x71226ee2bbc445d2L).build2();
   public static final SMethod<Integer> getHash_idhXRDtvlc8I = new SMethodBuilder<Integer>(new SJavaCompoundTypeImpl(Integer.TYPE)).name("getHash").modifiers(8, AccessPrivileges.PROTECTED).concept(CONCEPT).baseMethodId(323659489961361966L).languageId(0xbd9c05c0f8725a35L, 0x7b68d745a7b848b9L).build2(SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""));
   public static final SMethod<SNode> getFeatureModel_id7PHwTKCuj99 = new SMethodBuilder<SNode>(new SJavaCompoundTypeImpl((Class<SNode>) ((Class) Object.class))).name("getFeatureModel").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(9038024733919621705L).languageId(0xa41d20b97237156cL, 0x71226ee2bbc445d2L).build2();
   public static final SMethod<Iterable<SNode>> getValidUsedConfigs_id3j7vM_E99Ji = new SMethodBuilder<Iterable<SNode>>(new SJavaCompoundTypeImpl((Class<Iterable<SNode>>) ((Class) Object.class))).name("getValidUsedConfigs").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(3803148226188843986L).languageId(0xa41d20b97237156cL, 0x71226ee2bbc445d2L).build2();
@@ -108,13 +111,19 @@ public final class FeatureModelConfiguration__BehaviorDescriptor extends BaseBHD
   public static final SMethod<Boolean> canAddUsingSection_id1VDhrxMZEaT = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("canAddUsingSection").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(2227388149217010361L).languageId(0xa41d20b97237156cL, 0x71226ee2bbc445d2L).build2();
   public static final SMethod<Boolean> highlightWarning_id4358bbCIl2g = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("highlightWarning").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(4667172541620113552L).languageId(0xbd9c05c0f8725a35L, 0x7b68d745a7b848b9L).build2();
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(getPresentation_idhEwIMiw, getHash_idhXRDtvlc8I, getFeatureModel_id7PHwTKCuj99, getValidUsedConfigs_id3j7vM_E99Ji, getMissingUsedConfigs_id3j7vM_E9Zts, getActualParam_id2Kcps_m3SsC, createSolverTask_id4pkidg67Lgb, showSubResults_id4MH81Y0VldB, runSolver_id7QODtLw3SMH, runSolverAsync_id3NwcubmnBQ5, runManuallyAsync_id7QODtLvTFnz, unassignedAttributes_id1iVIHkN4kr5, showError_id5UDdUfokAGW, removeError_id5UDdUfokHMF, isAbstractConfig_id4onczE5Z3D9, extendedFeatureModelConfigs_id39DASUxOGLo, inlineConfigsFromExtendedFeatureModel_id6PjKOfb6AWY, inlineConfigsFromExtendedFeatureModelInGenerator_id3A1Wl6Mi48l, removeInheritance_id6PjKOfbeSBr, conflictingConfigs_id39DASUy8gYy, applyInheritance_id5Bs7u1ZJmo8, updateAdaptHash_id2XyYtG$Jnmi, shouldAdaptToFM_id2XyYtG$KzQT, shouldAdaptToExtendedFMC_id1v5X_U3jjTR, transientHashCode_id4rT4o_wvzyt, shouldAdaptAllExtendedConfigs_id1v5X_U3jBfx, IgnoredPropertyNames_id1v5X_U3eBVx, alwaysMandatoryConfigs_id1DDXesDGKFr, inlineConfigsFromExtendedFeatureModels_id2DsxaE9VQNX, constraints_id1GuOf_A$Bqq, runManually_id3R3AIvumrTm, getSolvableName_idWieAE6TWOo, setComplete_id2pcB_fS8I0N, solverResultsAsync_id2tL1yL1z_3M, freeFeatureAttributesAssignmentsWithDefaultValues_id1fXOrOGIb0e, isConcrete_id3fjVuHBlYzw, toStringTree_id6rrFu8Upw20, toStringTree_id6rrFu8UpVBO, hashCodeOf_id30ZRnWjrKuf, computeHashOfSolverRelevantData_id2SUMz4mKzNq, hashOfSolverRelevantData_id2SUMz4mMQjh, hashCodeOfFMIncludes_id4JQgrqutDCZ, featureModelsOfTransientIncludes_id4rT4o_xpj5A, directDependencies_id6Gx9iNnB7_2, missingProjectError_id4wse97wAG_V, skipSolverRunInfo_id7WsNHxjlUA1, usedConfigsExtended_id1VDhrxM$80W, canAddUsingSection_id1VDhrxMZEaT, highlightWarning_id4358bbCIl2g);
+  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(getPresentation_idhEwIMiw, getEnrichedName_id3Qgc3xLE1Kc, hasActualEnrichedName_id6vXjBknaZwN, getHash_idhXRDtvlc8I, getFeatureModel_id7PHwTKCuj99, getValidUsedConfigs_id3j7vM_E99Ji, getMissingUsedConfigs_id3j7vM_E9Zts, getActualParam_id2Kcps_m3SsC, createSolverTask_id4pkidg67Lgb, showSubResults_id4MH81Y0VldB, runSolver_id7QODtLw3SMH, runSolverAsync_id3NwcubmnBQ5, runManuallyAsync_id7QODtLvTFnz, unassignedAttributes_id1iVIHkN4kr5, showError_id5UDdUfokAGW, removeError_id5UDdUfokHMF, isAbstractConfig_id4onczE5Z3D9, extendedFeatureModelConfigs_id39DASUxOGLo, inlineConfigsFromExtendedFeatureModel_id6PjKOfb6AWY, inlineConfigsFromExtendedFeatureModelInGenerator_id3A1Wl6Mi48l, removeInheritance_id6PjKOfbeSBr, conflictingConfigs_id39DASUy8gYy, applyInheritance_id5Bs7u1ZJmo8, updateAdaptHash_id2XyYtG$Jnmi, shouldAdaptToFM_id2XyYtG$KzQT, shouldAdaptToExtendedFMC_id1v5X_U3jjTR, transientHashCode_id4rT4o_wvzyt, shouldAdaptAllExtendedConfigs_id1v5X_U3jBfx, IgnoredPropertyNames_id1v5X_U3eBVx, alwaysMandatoryConfigs_id1DDXesDGKFr, inlineConfigsFromExtendedFeatureModels_id2DsxaE9VQNX, constraints_id1GuOf_A$Bqq, runManually_id3R3AIvumrTm, getSolvableName_idWieAE6TWOo, setComplete_id2pcB_fS8I0N, solverResultsAsync_id2tL1yL1z_3M, freeFeatureAttributesAssignmentsWithDefaultValues_id1fXOrOGIb0e, isConcrete_id3fjVuHBlYzw, toStringTree_id6rrFu8Upw20, toStringTree_id6rrFu8UpVBO, hashCodeOf_id30ZRnWjrKuf, computeHashOfSolverRelevantData_id2SUMz4mKzNq, hashOfSolverRelevantData_id2SUMz4mMQjh, hashCodeOfFMIncludes_id4JQgrqutDCZ, featureModelsOfTransientIncludes_id4rT4o_xpj5A, directDependencies_id6Gx9iNnB7_2, missingProjectError_id4wse97wAG_V, skipSolverRunInfo_id7WsNHxjlUA1, usedConfigsExtended_id1VDhrxM$80W, canAddUsingSection_id1VDhrxMZEaT, highlightWarning_id4358bbCIl2g);
 
   private static void ___init___(@NotNull SNode __thisNode__) {
   }
 
   /*package*/ static String getPresentation_idhEwIMiw(@NotNull SNode __thisNode__) {
-    return SPropertyOperations.getString(__thisNode__, PROPS.name$MnvL) + " (" + SPropertyOperations.getString(SLinkOperations.getTarget(__thisNode__, LINKS.targetFeature$16lA), PROPS.name$MnvL) + ")";
+    return FeatureModelConfiguration__BehaviorDescriptor.getEnrichedName_id3Qgc3xLE1Kc.invoke(__thisNode__) + " (" + SPropertyOperations.getString(SLinkOperations.getTarget(__thisNode__, LINKS.targetFeature$16lA), PROPS.name$MnvL) + ")";
+  }
+  /*package*/ static String getEnrichedName_id3Qgc3xLE1Kc(@NotNull SNode __thisNode__) {
+    return EnrichedConfigNames.instance().getEnrichedName(__thisNode__);
+  }
+  /*package*/ static boolean hasActualEnrichedName_id6vXjBknaZwN(@NotNull SNode __thisNode__) {
+    return EnrichedConfigNames.instance().hasActualEnrichedName(__thisNode__);
   }
   /*package*/ static int getHash_idhXRDtvlc8I(@NotNull SNode __thisNode__, SNode n) {
     NodeSerializer s = new NodeSerializer(n, true, "__", true);
@@ -388,111 +397,115 @@ public final class FeatureModelConfiguration__BehaviorDescriptor extends BaseBHD
       case 0:
         return (T) ((String) getPresentation_idhEwIMiw(node));
       case 1:
-        return (T) ((Integer) getHash_idhXRDtvlc8I(node, (SNode) parameters[0]));
+        return (T) ((String) getEnrichedName_id3Qgc3xLE1Kc(node));
       case 2:
-        return (T) ((SNode) getFeatureModel_id7PHwTKCuj99(node));
+        return (T) ((Boolean) hasActualEnrichedName_id6vXjBknaZwN(node));
       case 3:
-        return (T) ((Iterable<SNode>) getValidUsedConfigs_id3j7vM_E99Ji(node));
+        return (T) ((Integer) getHash_idhXRDtvlc8I(node, (SNode) parameters[0]));
       case 4:
-        return (T) ((Iterable<SNode>) getMissingUsedConfigs_id3j7vM_E9Zts(node));
+        return (T) ((SNode) getFeatureModel_id7PHwTKCuj99(node));
       case 5:
-        return (T) ((SNode) getActualParam_id2Kcps_m3SsC(node, (SNode) parameters[0]));
+        return (T) ((Iterable<SNode>) getValidUsedConfigs_id3j7vM_E99Ji(node));
       case 6:
-        return (T) ((SNode) createSolverTask_id4pkidg67Lgb(node));
+        return (T) ((Iterable<SNode>) getMissingUsedConfigs_id3j7vM_E9Zts(node));
       case 7:
-        return (T) ((Boolean) showSubResults_id4MH81Y0VldB(node));
+        return (T) ((SNode) getActualParam_id2Kcps_m3SsC(node, (SNode) parameters[0]));
       case 8:
-        return (T) ((IResult) runSolver_id7QODtLw3SMH(node));
+        return (T) ((SNode) createSolverTask_id4pkidg67Lgb(node));
       case 9:
-        return (T) ((CompletableFuture<List<IResult>>) runSolverAsync_id3NwcubmnBQ5(node));
+        return (T) ((Boolean) showSubResults_id4MH81Y0VldB(node));
       case 10:
-        return (T) ((CompletableFuture<List<IResult>>) runManuallyAsync_id7QODtLvTFnz(node));
+        return (T) ((IResult) runSolver_id7QODtLw3SMH(node));
       case 11:
-        return (T) ((Iterable<SNode>) unassignedAttributes_id1iVIHkN4kr5(node));
+        return (T) ((CompletableFuture<List<IResult>>) runSolverAsync_id3NwcubmnBQ5(node));
       case 12:
+        return (T) ((CompletableFuture<List<IResult>>) runManuallyAsync_id7QODtLvTFnz(node));
+      case 13:
+        return (T) ((Iterable<SNode>) unassignedAttributes_id1iVIHkN4kr5(node));
+      case 14:
         showError_id5UDdUfokAGW(node, (String) parameters[0]);
         return null;
-      case 13:
+      case 15:
         removeError_id5UDdUfokHMF(node);
         return null;
-      case 14:
-        return (T) ((Boolean) isAbstractConfig_id4onczE5Z3D9(node));
-      case 15:
-        return (T) ((Iterable<SNode>) extendedFeatureModelConfigs_id39DASUxOGLo(node));
       case 16:
+        return (T) ((Boolean) isAbstractConfig_id4onczE5Z3D9(node));
+      case 17:
+        return (T) ((Iterable<SNode>) extendedFeatureModelConfigs_id39DASUxOGLo(node));
+      case 18:
         inlineConfigsFromExtendedFeatureModel_id6PjKOfb6AWY(node);
         return null;
-      case 17:
+      case 19:
         inlineConfigsFromExtendedFeatureModelInGenerator_id3A1Wl6Mi48l(node);
         return null;
-      case 18:
+      case 20:
         removeInheritance_id6PjKOfbeSBr(node);
         return null;
-      case 19:
+      case 21:
         return (T) ((Iterable<Pair<SNode, SNode>>) conflictingConfigs_id39DASUy8gYy(node));
-      case 20:
+      case 22:
         applyInheritance_id5Bs7u1ZJmo8(node, ((boolean) (Boolean) parameters[0]));
         return null;
-      case 21:
+      case 23:
         updateAdaptHash_id2XyYtG$Jnmi(node);
         return null;
-      case 22:
-        return (T) ((Boolean) shouldAdaptToFM_id2XyYtG$KzQT(node));
-      case 23:
-        return (T) ((Boolean) shouldAdaptToExtendedFMC_id1v5X_U3jjTR(node));
       case 24:
-        return (T) ((Integer) transientHashCode_id4rT4o_wvzyt(node));
+        return (T) ((Boolean) shouldAdaptToFM_id2XyYtG$KzQT(node));
       case 25:
-        return (T) ((Iterable<SNode>) shouldAdaptAllExtendedConfigs_id1v5X_U3jBfx(node));
+        return (T) ((Boolean) shouldAdaptToExtendedFMC_id1v5X_U3jjTR(node));
       case 26:
-        return (T) ((Iterable<String>) IgnoredPropertyNames_id1v5X_U3eBVx(node));
+        return (T) ((Integer) transientHashCode_id4rT4o_wvzyt(node));
       case 27:
-        return (T) ((List<SNode>) alwaysMandatoryConfigs_id1DDXesDGKFr(node));
+        return (T) ((Iterable<SNode>) shouldAdaptAllExtendedConfigs_id1v5X_U3jBfx(node));
       case 28:
+        return (T) ((Iterable<String>) IgnoredPropertyNames_id1v5X_U3eBVx(node));
+      case 29:
+        return (T) ((List<SNode>) alwaysMandatoryConfigs_id1DDXesDGKFr(node));
+      case 30:
         inlineConfigsFromExtendedFeatureModels_id2DsxaE9VQNX(node);
         return null;
-      case 29:
+      case 31:
         return (T) ((Iterable<SNode>) constraints_id1GuOf_A$Bqq(node));
-      case 30:
+      case 32:
         runManually_id3R3AIvumrTm(node, (EditorContext) parameters[0]);
         return null;
-      case 31:
+      case 33:
         return (T) ((String) getSolvableName_idWieAE6TWOo(node));
-      case 32:
+      case 34:
         setComplete_id2pcB_fS8I0N(node);
         return null;
-      case 33:
-        return (T) ((CompletableFuture<List<IResult>>) solverResultsAsync_id2tL1yL1z_3M(node));
-      case 34:
-        return (T) ((Iterable<SNode>) freeFeatureAttributesAssignmentsWithDefaultValues_id1fXOrOGIb0e(node));
       case 35:
-        return (T) ((Boolean) isConcrete_id3fjVuHBlYzw(node));
+        return (T) ((CompletableFuture<List<IResult>>) solverResultsAsync_id2tL1yL1z_3M(node));
       case 36:
-        return (T) ((String) toStringTree_id6rrFu8Upw20(node));
+        return (T) ((Iterable<SNode>) freeFeatureAttributesAssignmentsWithDefaultValues_id1fXOrOGIb0e(node));
       case 37:
+        return (T) ((Boolean) isConcrete_id3fjVuHBlYzw(node));
+      case 38:
+        return (T) ((String) toStringTree_id6rrFu8Upw20(node));
+      case 39:
         toStringTree_id6rrFu8UpVBO(node, (SNode) parameters[0], (StringBuilder) parameters[1], ((int) (Integer) parameters[2]));
         return null;
-      case 38:
-        return (T) ((Integer) hashCodeOf_id30ZRnWjrKuf(node, (List<SNode>) parameters[0]));
-      case 39:
-        return (T) ((Integer) computeHashOfSolverRelevantData_id2SUMz4mKzNq(node));
       case 40:
-        return (T) ((Integer) hashOfSolverRelevantData_id2SUMz4mMQjh(node));
+        return (T) ((Integer) hashCodeOf_id30ZRnWjrKuf(node, (List<SNode>) parameters[0]));
       case 41:
-        return (T) ((Supplier<Integer>) hashCodeOfFMIncludes_id4JQgrqutDCZ(node));
+        return (T) ((Integer) computeHashOfSolverRelevantData_id2SUMz4mKzNq(node));
       case 42:
-        return (T) ((Iterable<SNode>) featureModelsOfTransientIncludes_id4rT4o_xpj5A(node, (SNode) parameters[0]));
+        return (T) ((Integer) hashOfSolverRelevantData_id2SUMz4mMQjh(node));
       case 43:
-        return (T) ((Iterable<SNode>) directDependencies_id6Gx9iNnB7_2(node));
+        return (T) ((Supplier<Integer>) hashCodeOfFMIncludes_id4JQgrqutDCZ(node));
       case 44:
-        return (T) ((CompletableFuture<List<IResult>>) missingProjectError_id4wse97wAG_V(node));
+        return (T) ((Iterable<SNode>) featureModelsOfTransientIncludes_id4rT4o_xpj5A(node, (SNode) parameters[0]));
       case 45:
-        return (T) ((CompletableFuture<List<IResult>>) skipSolverRunInfo_id7WsNHxjlUA1(node, (String) parameters[0], (String) parameters[1]));
+        return (T) ((Iterable<SNode>) directDependencies_id6Gx9iNnB7_2(node));
       case 46:
-        return (T) ((Iterable<SNode>) usedConfigsExtended_id1VDhrxM$80W(node));
+        return (T) ((CompletableFuture<List<IResult>>) missingProjectError_id4wse97wAG_V(node));
       case 47:
-        return (T) ((Boolean) canAddUsingSection_id1VDhrxMZEaT(node));
+        return (T) ((CompletableFuture<List<IResult>>) skipSolverRunInfo_id7WsNHxjlUA1(node, (String) parameters[0], (String) parameters[1]));
       case 48:
+        return (T) ((Iterable<SNode>) usedConfigsExtended_id1VDhrxM$80W(node));
+      case 49:
+        return (T) ((Boolean) canAddUsingSection_id1VDhrxMZEaT(node));
+      case 50:
         return (T) ((Boolean) highlightWarning_id4358bbCIl2g(node));
       default:
         throw new BHMethodNotFoundException(this, method);
@@ -523,17 +536,6 @@ public final class FeatureModelConfiguration__BehaviorDescriptor extends BaseBHD
     return CONCEPT;
   }
 
-  private static final class PROPS {
-    /*package*/ static final SProperty name$MnvL = MetaAdapterFactory.getProperty(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L, 0x110396ec041L, "name");
-    /*package*/ static final SProperty solverErrorMessage$DYqd = MetaAdapterFactory.getProperty(0x71226ee2bbc445d2L, 0xa41d20b97237156cL, 0x5cf5c0d0479ec915L, 0x5ea937a3d8527c5fL, "solverErrorMessage");
-    /*package*/ static final SProperty hasSolverError$yxrG = MetaAdapterFactory.getProperty(0x71226ee2bbc445d2L, 0xa41d20b97237156cL, 0x5cf5c0d0479ec915L, 0x4789dda0139da333L, "hasSolverError");
-    /*package*/ static final SProperty abstract$Wu4W = MetaAdapterFactory.getProperty(0x71226ee2bbc445d2L, 0xa41d20b97237156cL, 0x5cf5c0d0479ec915L, 0x4617323a85e85324L, "abstract");
-    /*package*/ static final SProperty complete$4SB6 = MetaAdapterFactory.getProperty(0x71226ee2bbc445d2L, 0xa41d20b97237156cL, 0x5cf5c0d0479ec915L, 0x427f472315a4eeb9L, "complete");
-    /*package*/ static final SProperty __adaptHash$54Is = MetaAdapterFactory.getProperty(0x71226ee2bbc445d2L, 0xa41d20b97237156cL, 0x5cf5c0d0479ec915L, 0x2f62f9db24bdbfcfL, "__adaptHash");
-    /*package*/ static final SProperty __updateHash$vTMx = MetaAdapterFactory.getProperty(0x165f1d0525064544L, 0x895e1424f54166ecL, 0x2f62f9db248ccc64L, 0x2f62f9db248cd035L, "__updateHash");
-    /*package*/ static final SProperty inherited$oyCC = MetaAdapterFactory.getProperty(0x71226ee2bbc445d2L, 0xa41d20b97237156cL, 0x302aa0c2ddc5ae16L, 0x61c4008b744eccaaL, "inherited");
-  }
-
   private static final class LINKS {
     /*package*/ static final SReferenceLink targetFeature$16lA = MetaAdapterFactory.getReferenceLink(0x71226ee2bbc445d2L, 0xa41d20b97237156cL, 0x302aa0c2ddab8940L, 0x5cf5c0d0479ec91eL, "targetFeature");
     /*package*/ static final SReferenceLink param$pwLK = MetaAdapterFactory.getReferenceLink(0x71226ee2bbc445d2L, 0xa41d20b97237156cL, 0x7d6d839c2865b139L, 0x7d6d839c2866af76L, "param");
@@ -549,6 +551,17 @@ public final class FeatureModelConfiguration__BehaviorDescriptor extends BaseBHD
     /*package*/ static final SContainmentLink subfeatureConfigurations$l9wi = MetaAdapterFactory.getContainmentLink(0x71226ee2bbc445d2L, 0xa41d20b97237156cL, 0x5cf5c0d0479f4bfcL, 0x5cf5c0d0479ec91aL, "subfeatureConfigurations");
     /*package*/ static final SReferenceLink fm$EY24 = MetaAdapterFactory.getReferenceLink(0x165f1d0525064544L, 0x895e1424f54166ecL, 0x375cadc475172168L, 0x375cadc475172169L, "fm");
     /*package*/ static final SReferenceLink config$VWuN = MetaAdapterFactory.getReferenceLink(0x71226ee2bbc445d2L, 0xa41d20b97237156cL, 0x5cf5c0d0479eed6aL, 0x5cf5c0d0479eed6bL, "config");
+  }
+
+  private static final class PROPS {
+    /*package*/ static final SProperty name$MnvL = MetaAdapterFactory.getProperty(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L, 0x110396ec041L, "name");
+    /*package*/ static final SProperty solverErrorMessage$DYqd = MetaAdapterFactory.getProperty(0x71226ee2bbc445d2L, 0xa41d20b97237156cL, 0x5cf5c0d0479ec915L, 0x5ea937a3d8527c5fL, "solverErrorMessage");
+    /*package*/ static final SProperty hasSolverError$yxrG = MetaAdapterFactory.getProperty(0x71226ee2bbc445d2L, 0xa41d20b97237156cL, 0x5cf5c0d0479ec915L, 0x4789dda0139da333L, "hasSolverError");
+    /*package*/ static final SProperty abstract$Wu4W = MetaAdapterFactory.getProperty(0x71226ee2bbc445d2L, 0xa41d20b97237156cL, 0x5cf5c0d0479ec915L, 0x4617323a85e85324L, "abstract");
+    /*package*/ static final SProperty complete$4SB6 = MetaAdapterFactory.getProperty(0x71226ee2bbc445d2L, 0xa41d20b97237156cL, 0x5cf5c0d0479ec915L, 0x427f472315a4eeb9L, "complete");
+    /*package*/ static final SProperty __adaptHash$54Is = MetaAdapterFactory.getProperty(0x71226ee2bbc445d2L, 0xa41d20b97237156cL, 0x5cf5c0d0479ec915L, 0x2f62f9db24bdbfcfL, "__adaptHash");
+    /*package*/ static final SProperty __updateHash$vTMx = MetaAdapterFactory.getProperty(0x165f1d0525064544L, 0x895e1424f54166ecL, 0x2f62f9db248ccc64L, 0x2f62f9db248cd035L, "__updateHash");
+    /*package*/ static final SProperty inherited$oyCC = MetaAdapterFactory.getProperty(0x71226ee2bbc445d2L, 0xa41d20b97237156cL, 0x302aa0c2ddc5ae16L, 0x61c4008b744eccaaL, "inherited");
   }
 
   private static final class CONCEPTS {

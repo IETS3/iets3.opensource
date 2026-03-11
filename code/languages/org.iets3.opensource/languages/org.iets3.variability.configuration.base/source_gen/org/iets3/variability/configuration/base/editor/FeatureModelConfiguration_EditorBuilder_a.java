@@ -15,6 +15,10 @@ import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
 import java.util.List;
 import com.mbeddr.mpsutil.grammarcells.runtime.SideTransformationHolderCell;
 import jetbrains.mps.nodeEditor.cellLayout.CellLayout_Horizontal;
+import java.util.Objects;
+import org.iets3.variability.configuration.base.plugin.EnrichedConfigNames;
+import org.iets3.variability.configuration.base.behavior.FeatureModelConfiguration__BehaviorDescriptor;
+import org.iets3.variability.configuration.base.plugin.IEnrichedConfigNameLogic;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
 import jetbrains.mps.baseLanguage.closures.runtime._FunctionTypes;
 import jetbrains.mps.openapi.editor.style.Style;
@@ -47,7 +51,6 @@ import jetbrains.mps.openapi.editor.menus.transformation.SPropertyInfo;
 import jetbrains.mps.nodeEditor.cells.SPropertyAccessor;
 import jetbrains.mps.nodeEditor.cellMenu.SPropertySubstituteInfo;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.IAttributeDescriptor;
-import java.util.Objects;
 import jetbrains.mps.lang.core.behavior.PropertyAttribute__BehaviorDescriptor;
 import jetbrains.mps.nodeEditor.EditorManager;
 import jetbrains.mps.openapi.editor.update.AttributeKind;
@@ -151,15 +154,21 @@ import org.jetbrains.mps.openapi.language.SConcept;
     editorCell.addEditorCell(createCustomFactory_1());
     editorCell.addEditorCell(createReadOnlyModelAccessor_0());
     editorCell.addEditorCell(createProperty_0());
+    if (nodeCondition_as05hg_a3a0a()) {
+      editorCell.addEditorCell(createReadOnlyModelAccessor_1());
+    }
     editorCell.addEditorCell(createCollection_2());
     editorCell.addEditorCell(createAlternation_1());
-    if (nodeCondition_as05hg_a5a0a()) {
+    if (nodeCondition_as05hg_a6a0a()) {
       editorCell.addEditorCell(createCollection_4());
     }
     editorCell.addEditorCell(createCustomFactory_9());
     return editorCell;
   }
-  private boolean nodeCondition_as05hg_a5a0a() {
+  private boolean nodeCondition_as05hg_a3a0a() {
+    return Objects.equals(EnrichedConfigNames.instance().getDisplayStrategy(FeatureModelConfiguration__BehaviorDescriptor.getFeatureModel_id7PHwTKCuj99.invoke(myNode)), IEnrichedConfigNameLogic.DisplayStrategy.SHOW_IN_EDITOR) && (boolean) FeatureModelConfiguration__BehaviorDescriptor.hasActualEnrichedName_id6vXjBknaZwN.invoke(myNode);
+  }
+  private boolean nodeCondition_as05hg_a6a0a() {
     return SNodeOperations.isInstanceOf(SLinkOperations.getTarget(myNode, LINKS.content$Wdfq), CONCEPTS.InlineFeatureConfigurationContent$P5) && ListSequence.fromList(SLinkOperations.getChildren(SNodeOperations.cast(SLinkOperations.getTarget(myNode, LINKS.content$Wdfq), CONCEPTS.InlineFeatureConfigurationContent$P5), LINKS.attributeAssignments$seL5)).isNotEmpty();
   }
   private EditorCell createCustomFactory_0(final EditorContext editorContext, final SNode node) {
@@ -333,9 +342,25 @@ import org.jetbrains.mps.openapi.language.SConcept;
       getCellFactory().popCellContext();
     }
   }
+  private EditorCell createReadOnlyModelAccessor_1() {
+    EditorCell_Property editorCell = EditorCell_Property.create(getEditorContext(), new ModelAccessor.ReadOnly() {
+      public String getText() {
+        return "(" + FeatureModelConfiguration__BehaviorDescriptor.getEnrichedName_id3Qgc3xLE1Kc.invoke(myNode) + ")";
+      }
+    }, myNode);
+    editorCell.setAction(CellActionType.DELETE, EmptyCellAction.getInstance());
+    editorCell.setAction(CellActionType.BACKSPACE, EmptyCellAction.getInstance());
+    editorCell.setCellId("ReadOnlyModelAccessor_as05hg_d0a0");
+    Style style = new StyleImpl();
+    style.set(StyleAttributes.TEXT_COLOR, getStyleRegistry().getSimpleColor(MPSColors.gray));
+    style.set(StyleAttributes.FONT_STYLE, MPSFonts.ITALIC);
+    style.set(StyleAttributes.EDITABLE, false);
+    editorCell.getStyle().putAll(style);
+    return editorCell;
+  }
   private EditorCell createCollection_2() {
     EditorCell_Collection editorCell = new EditorCell_Collection(getEditorContext(), myNode, new CellLayout_Horizontal());
-    editorCell.setCellId("Collection_as05hg_d0a0");
+    editorCell.setCellId("Collection_as05hg_e0a0");
     Style style = new StyleImpl();
     style.set(StyleAttributes.SELECTABLE, false);
     editorCell.getStyle().putAll(style);
@@ -345,7 +370,7 @@ import org.jetbrains.mps.openapi.language.SConcept;
   }
   private EditorCell createConstant_1() {
     EditorCell_Constant editorCell = new EditorCell_Constant(getEditorContext(), myNode, "for");
-    editorCell.setCellId("Constant_as05hg_a3a0a");
+    editorCell.setCellId("Constant_as05hg_a4a0a");
     editorCell.setDefaultText("");
     return editorCell;
   }
@@ -375,7 +400,7 @@ import org.jetbrains.mps.openapi.language.SConcept;
       editorCell.setReferenceCell(true);
       editorCell.setSRole(LINKS.targetFeature$16lA);
     }
-    editorCell.setSubstituteInfo(new CompositeSubstituteInfo(getEditorContext(), new ReferenceCellContext(getNode(), getNode(), referenceLink), new SubstituteInfoPartExt[]{new FeatureModelConfiguration_targetFeature_cellMenu_as05hg_a0b3a0a(), new SChildSubstituteInfoPartEx(editorCell)}));
+    editorCell.setSubstituteInfo(new CompositeSubstituteInfo(getEditorContext(), new ReferenceCellContext(getNode(), getNode(), referenceLink), new SubstituteInfoPartExt[]{new FeatureModelConfiguration_targetFeature_cellMenu_as05hg_a0b4a0a(), new SChildSubstituteInfoPartEx(editorCell)}));
     Iterable<SNode> referenceAttributes = SNodeOperations.ofConcept(new IAttributeDescriptor.AllAttributes().list(myNode), CONCEPTS.LinkAttribute$v_);
     Iterable<SNode> currentReferenceAttributes = Sequence.fromIterable(referenceAttributes).where((it) -> Objects.equals(LinkAttribute__BehaviorDescriptor.getLink_id1avfQ4BEFo6.invoke(it), referenceLink));
     if (Sequence.fromIterable(currentReferenceAttributes).isNotEmpty()) {
@@ -427,23 +452,23 @@ import org.jetbrains.mps.openapi.language.SConcept;
       }
     }
   }
-  public static class FeatureModelConfiguration_targetFeature_cellMenu_as05hg_a0b3a0a extends PrimaryReferentMenuCellMenuPart {
-    public FeatureModelConfiguration_targetFeature_cellMenu_as05hg_a0b3a0a() {
+  public static class FeatureModelConfiguration_targetFeature_cellMenu_as05hg_a0b4a0a extends PrimaryReferentMenuCellMenuPart {
+    public FeatureModelConfiguration_targetFeature_cellMenu_as05hg_a0b4a0a() {
     }
     @NotNull
     @Override
     protected IReferentPresentationProvider getMatchingTextProvider() {
-      return PresentationProviders.PRESENTATION_as05hg_a0a1d0a0;
+      return PresentationProviders.PRESENTATION_as05hg_a0a1e0a0;
     }
     @NotNull
     @Override
     protected IReferentPresentationProvider getVisibleMatchingTextProvider() {
-      return PresentationProviders.PRESENTATION_as05hg_a0a1d0a0;
+      return PresentationProviders.PRESENTATION_as05hg_a0a1e0a0;
     }
   }
   private EditorCell createAlternation_1() {
     boolean alternationCondition = true;
-    alternationCondition = nodeCondition_as05hg_a4a0a();
+    alternationCondition = nodeCondition_as05hg_a5a0a();
     EditorCell editorCell = null;
     if (alternationCondition) {
       editorCell = createCustomFactory_5();
@@ -452,7 +477,7 @@ import org.jetbrains.mps.openapi.language.SConcept;
     }
     return editorCell;
   }
-  private boolean nodeCondition_as05hg_a4a0a() {
+  private boolean nodeCondition_as05hg_a5a0a() {
     return Sequence.fromIterable(AttributeOperations.getChildNodesAndAttributes(myNode, LINKS.extendedFMC$tFbw)).isNotEmpty();
   }
   private EditorCell createCustomFactory_4(final EditorContext editorContext, final SNode node) {
@@ -514,14 +539,14 @@ import org.jetbrains.mps.openapi.language.SConcept;
   }
   private EditorCell createCollection_3() {
     EditorCell_Collection editorCell = new EditorCell_Collection(getEditorContext(), myNode, new CellLayout_Horizontal());
-    editorCell.setCellId("Collection_as05hg_a0a4a0a");
+    editorCell.setCellId("Collection_as05hg_a0a5a0a");
     editorCell.addEditorCell(createConstant_2());
     editorCell.addEditorCell(createRefNode_0());
     return editorCell;
   }
   private EditorCell createConstant_2() {
     EditorCell_Constant editorCell = new EditorCell_Constant(getEditorContext(), myNode, "extends");
-    editorCell.setCellId("Constant_as05hg_a0a0e0a0");
+    editorCell.setCellId("Constant_as05hg_a0a0f0a0");
     Style style = new StyleImpl();
     style.set(StyleAttributes.TEXT_COLOR, getStyleRegistry().getSimpleColor(MPSColors.blue));
     editorCell.getStyle().putAll(style);
@@ -529,14 +554,14 @@ import org.jetbrains.mps.openapi.language.SConcept;
     return editorCell;
   }
   private EditorCell createRefNode_0() {
-    SingleRoleCellProvider provider = new extendedFMCSingleRoleHandler_as05hg_b0a0e0a0(myNode, LINKS.extendedFMC$tFbw, getEditorContext());
+    SingleRoleCellProvider provider = new extendedFMCSingleRoleHandler_as05hg_b0a0f0a0(myNode, LINKS.extendedFMC$tFbw, getEditorContext());
     return provider.createCell();
   }
-  private static class extendedFMCSingleRoleHandler_as05hg_b0a0e0a0 extends SingleRoleCellProvider {
+  private static class extendedFMCSingleRoleHandler_as05hg_b0a0f0a0 extends SingleRoleCellProvider {
     @NotNull
     private SNode myNode;
 
-    public extendedFMCSingleRoleHandler_as05hg_b0a0e0a0(SNode ownerNode, SContainmentLink containmentLink, EditorContext context) {
+    public extendedFMCSingleRoleHandler_as05hg_b0a0f0a0(SNode ownerNode, SContainmentLink containmentLink, EditorContext context) {
       super(containmentLink, context);
       myNode = ownerNode;
     }
@@ -587,13 +612,13 @@ import org.jetbrains.mps.openapi.language.SConcept;
     SideTransformationHolderCell editorCell = new SideTransformationHolderCell(getEditorContext(), myNode, null, "grammar.optional for FeatureModelConfiguration.extendedFMC") {
       @Override
       public List<MenuPart<TransformationMenuItem, TransformationMenuContext>> createMenuParts() {
-        return ListSequence.fromListAndArray(new ArrayList<MenuPart<TransformationMenuItem, TransformationMenuContext>>(), new GenericMenuPart_a0a4a0a());
+        return ListSequence.fromListAndArray(new ArrayList<MenuPart<TransformationMenuItem, TransformationMenuContext>>(), new GenericMenuPart_a0a5a0a());
       }
     };
-    editorCell.setCellId("SideTransformationSectionCell_as05hg_a4a0a");
+    editorCell.setCellId("SideTransformationSectionCell_as05hg_a5a0a");
     return editorCell;
   }
-  private class GenericMenuPart_a0a4a0a implements MenuPart<TransformationMenuItem, TransformationMenuContext> {
+  private class GenericMenuPart_a0a5a0a implements MenuPart<TransformationMenuItem, TransformationMenuContext> {
 
     @NotNull
     @Override
@@ -643,7 +668,7 @@ import org.jetbrains.mps.openapi.language.SConcept;
   }
   private EditorCell createCollection_4() {
     EditorCell_Collection editorCell = new EditorCell_Collection(getEditorContext(), myNode, new CellLayout_Horizontal());
-    editorCell.setCellId("Collection_as05hg_f0a0");
+    editorCell.setCellId("Collection_as05hg_g0a0");
     Style style = new StyleImpl();
     style.set(StyleAttributes.SELECTABLE, false);
     editorCell.getStyle().putAll(style);
@@ -651,11 +676,11 @@ import org.jetbrains.mps.openapi.language.SConcept;
     return editorCell;
   }
   private EditorCell createJComponent_0() {
-    EditorCell editorCell = EditorCell_Component.createComponentCell(getEditorContext(), myNode, _QueryFunction_JComponent_as05hg_a0f0a0(), "JComponent_as05hg_a5a0a");
-    editorCell.setCellId("JComponent_as05hg_a5a0a_0");
+    EditorCell editorCell = EditorCell_Component.createComponentCell(getEditorContext(), myNode, _QueryFunction_JComponent_as05hg_a0g0a0(), "JComponent_as05hg_a6a0a");
+    editorCell.setCellId("JComponent_as05hg_a6a0a_0");
     return editorCell;
   }
-  private JComponent _QueryFunction_JComponent_as05hg_a0f0a0() {
+  private JComponent _QueryFunction_JComponent_as05hg_a0g0a0() {
     int numAttributes = ListSequence.fromList(SLinkOperations.getChildren(SNodeOperations.cast(SLinkOperations.getTarget(myNode, LINKS.content$Wdfq), CONCEPTS.InlineFeatureConfigurationContent$P5), LINKS.attributeAssignments$seL5)).count();
     JButton button = new JButton(numAttributes + " Attributes");
     button.setForeground(JBColor.gray);
@@ -693,7 +718,7 @@ import org.jetbrains.mps.openapi.language.SConcept;
   }
   private EditorCell createAlternation_2() {
     boolean alternationCondition = true;
-    alternationCondition = nodeCondition_as05hg_a0g0a0();
+    alternationCondition = nodeCondition_as05hg_a0h0a0();
     EditorCell editorCell = null;
     if (alternationCondition) {
       editorCell = createCustomFactory_11();
@@ -702,7 +727,7 @@ import org.jetbrains.mps.openapi.language.SConcept;
     }
     return editorCell;
   }
-  private boolean nodeCondition_as05hg_a0g0a0() {
+  private boolean nodeCondition_as05hg_a0h0a0() {
     IFlagModelAccess access = new InvertedFlagModelAccess(new DefaultFlagModelAccess(PROPS.complete$4SB6));
     if (!(access.read(myNode))) {
       return false;
@@ -749,13 +774,13 @@ import org.jetbrains.mps.openapi.language.SConcept;
     SideTransformationHolderCell editorCell = new SideTransformationHolderCell(getEditorContext(), myNode, null, "flag 'R'") {
       @Override
       public List<MenuPart<TransformationMenuItem, TransformationMenuContext>> createMenuParts() {
-        return ListSequence.fromListAndArray(new ArrayList<MenuPart<TransformationMenuItem, TransformationMenuContext>>(), new GenericMenuPart_a0a0g0a0());
+        return ListSequence.fromListAndArray(new ArrayList<MenuPart<TransformationMenuItem, TransformationMenuContext>>(), new GenericMenuPart_a0a0h0a0());
       }
     };
-    editorCell.setCellId("SideTransformationSectionCell_as05hg_a0g0a0");
+    editorCell.setCellId("SideTransformationSectionCell_as05hg_a0h0a0");
     return editorCell;
   }
-  private class GenericMenuPart_a0a0g0a0 implements MenuPart<TransformationMenuItem, TransformationMenuContext> {
+  private class GenericMenuPart_a0a0h0a0 implements MenuPart<TransformationMenuItem, TransformationMenuContext> {
 
     @NotNull
     @Override
