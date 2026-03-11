@@ -1248,7 +1248,7 @@
                       <property role="2gteSD" value="1" />
                     </node>
                     <node concept="2gteS_" id="4Ifs9khUKbk" role="2gteVg">
-                      <property role="2gteVv" value="0" />
+                      <property role="2gteVv" value="inf" />
                     </node>
                   </node>
                   <node concept="CIsGf" id="4Ifs9khUKbl" role="2c7tTI">
@@ -1337,6 +1337,20 @@
     <node concept="1qefOq" id="4Ifs9khTTef" role="1SKRRt">
       <node concept="_iOnV" id="4Ifs9khU2E5" role="1qenE9">
         <property role="TrG5h" value="ConvertingWeight" />
+        <node concept="TRoc0" id="76EiapQSJDN" role="_iOnC">
+          <node concept="27LzZq" id="76EiapQSJDO" role="27P04L">
+            <node concept="30bXRB" id="76EiapQSJDP" role="27K$mF">
+              <property role="30bXRw" value="-3" />
+            </node>
+          </node>
+          <node concept="CIsvn" id="76EiapQSJDQ" role="2vOZTa">
+            <ref role="CIi3I" to="8ps7:3xM68GMigWt" resolve="kg" />
+          </node>
+          <node concept="CIsvn" id="76EiapQSJDR" role="2vOYbH">
+            <ref role="CIi3I" to="8ps7:6EvkZrOLErr" resolve="g" />
+          </node>
+        </node>
+        <node concept="_ixoA" id="76EiapQSJDS" role="_iOnC" />
         <node concept="2zPypq" id="4Ifs9khUfYX" role="_iOnC">
           <property role="TrG5h" value="a" />
           <node concept="1QScDb" id="4Ifs9khVeoP" role="2lDidJ">
@@ -1383,7 +1397,7 @@
           <property role="TrG5h" value="b" />
           <node concept="1QScDb" id="4Ifs9khVoUC" role="2lDidJ">
             <node concept="3EXbTZ" id="4Ifs9khVoUD" role="1QScD9">
-              <ref role="3EXiBM" to="8ps7:14aBVbNETxk" />
+              <ref role="3EXiBM" node="76EiapQSJDO" />
               <node concept="CIsvn" id="4Ifs9khVoUE" role="2qyG0l">
                 <ref role="CIi3I" to="8ps7:6EvkZrOLErr" resolve="g" />
               </node>
@@ -2953,6 +2967,20 @@
       <node concept="3dYjL0" id="69HsIy5GEuV" role="_fkp5" />
     </node>
     <node concept="_ixoA" id="1eut2uU7YrA" role="_iOnB" />
+    <node concept="TRoc0" id="76EiapQJmPu" role="_iOnB">
+      <node concept="27LzZq" id="76EiapQJmPv" role="27P04L">
+        <node concept="30bXRB" id="76EiapQJmPw" role="27K$mF">
+          <property role="30bXRw" value="-3" />
+        </node>
+      </node>
+      <node concept="CIsvn" id="76EiapQJmPx" role="2vOZTa">
+        <ref role="CIi3I" to="8ps7:3xM68GMigWt" resolve="kg" />
+      </node>
+      <node concept="CIsvn" id="76EiapQJmPy" role="2vOYbH">
+        <ref role="CIi3I" to="8ps7:6EvkZrOLErr" resolve="g" />
+      </node>
+    </node>
+    <node concept="_ixoA" id="76EiapQJ4QC" role="_iOnB" />
     <node concept="_fkuM" id="69HsIy5GLS_" role="_iOnB">
       <property role="TrG5h" value="scalingWeight" />
       <node concept="_fkuZ" id="69HsIy5GLSA" role="_fkp5">
@@ -2983,7 +3011,7 @@
         <node concept="_fku$" id="69HsIy5GLSK" role="_fkur" />
         <node concept="1QScDb" id="69HsIy5GLSL" role="_fkuY">
           <node concept="3EXbTZ" id="3eEp8ADckAm" role="1QScD9">
-            <ref role="3EXiBM" to="8ps7:14aBVbNETxk" />
+            <ref role="3EXiBM" node="76EiapQJmPv" />
             <node concept="CIsvn" id="3eEp8ADckAo" role="2qyG0l">
               <ref role="CIi3I" to="8ps7:6EvkZrOLErr" resolve="g" />
             </node>
