@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<debug-info version="2">
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123140:jetbrains.mps.baseLanguage.structure.ConstructorDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123155:jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123165:jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242864:jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1070462154015:jetbrains.mps.baseLanguage.structure.StaticFieldDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1070475587102:jetbrains.mps.baseLanguage.structure.SuperConstructorInvocation" />
+  <root nodeRef="r:94cc06e5-4417-4eb3-a9d5-bee4d5ee8b59(test.org.iets3.variability.configuration.base.using@tests)/4261049202327027441">
+    <file name="AddNewUsingToFM_Test.java">
+      <node id="4261049202327027441" at="23,33,24,60" concept="5" />
+      <node id="4532654202486404447" at="28,86,29,77" concept="1" />
+      <node id="4261049202327027441" at="34,52,35,19" concept="5" />
+      <node id="4261049202327027441" at="39,36,40,69" concept="1" />
+      <node id="4532654202486404447" at="43,88,44,22" concept="1" />
+      <node id="4532654202486404447" at="45,30,46,63" concept="3" />
+      <node id="4532654202486404447" at="46,63,47,308" concept="1" />
+      <node id="4261049202327027441" at="20,0,22,0" concept="4" trace="ourParametersCacheExtension" />
+      <node id="4261049202327027441" at="23,0,26,0" concept="0" trace="AddNewUsingToFM_Test#()V" />
+      <node id="4261049202327027441" at="34,0,37,0" concept="0" trace="TestBody#(Ljetbrains/mps/lang/test/runtime/TransformationTest;)V" />
+      <node id="4532654202486404447" at="27,0,31,0" concept="2" trace="test_Nodemissing_with_paramCheck4532654202486404447#()V" />
+      <node id="4261049202327027441" at="38,0,42,0" concept="2" trace="initTestNodes#()V" />
+      <node id="4532654202486404447" at="44,22,48,9" concept="1" />
+      <node id="4532654202486404447" at="43,0,50,0" concept="2" trace="test_Nodemissing_with_paramCheck4532654202486404447#()V" />
+      <scope id="4261049202327027441" at="23,33,24,60" />
+      <scope id="4532654202486404447" at="28,86,29,77" />
+      <scope id="4261049202327027441" at="34,52,35,19" />
+      <scope id="4261049202327027441" at="39,36,40,69" />
+      <scope id="4532654202486404447" at="45,30,47,308">
+        <var name="nodeToCheck" id="4532654202486404447" />
+      </scope>
+      <scope id="4261049202327027441" at="23,0,26,0" />
+      <scope id="4261049202327027441" at="34,0,37,0">
+        <var name="owner" id="4261049202327027441" />
+      </scope>
+      <scope id="4532654202486404447" at="27,0,31,0" />
+      <scope id="4261049202327027441" at="38,0,42,0" />
+      <scope id="4532654202486404447" at="43,88,48,9" />
+      <scope id="4532654202486404447" at="43,0,50,0" />
+      <unit id="4261049202327027441" at="32,0,52,0" name="test.org.iets3.variability.configuration.base.using.AddNewUsingToFM_Test$TestBody" />
+      <unit id="4261049202327027441" at="18,0,53,0" name="test.org.iets3.variability.configuration.base.using.AddNewUsingToFM_Test" />
+    </file>
+  </root>
+  <root nodeRef="r:94cc06e5-4417-4eb3-a9d5-bee4d5ee8b59(test.org.iets3.variability.configuration.base.using@tests)/4532654202487559495">
+    <file name="DoubledUsinginConf_Test.java">
+      <node id="4532654202487559495" at="23,36,24,60" concept="5" />
+      <node id="4532654202487578175" at="28,90,29,81" concept="1" />
+      <node id="4532654202487578168" at="32,90,33,81" concept="1" />
+      <node id="4532654202487559495" at="38,52,39,19" concept="5" />
+      <node id="4532654202487559495" at="43,36,44,46" concept="1" />
+      <node id="4532654202487578175" at="47,92,48,22" concept="1" />
+      <node id="4532654202487578175" at="49,30,50,63" concept="3" />
+      <node id="4532654202487578175" at="50,63,51,306" concept="1" />
+      <node id="4532654202487578168" at="54,92,55,22" concept="1" />
+      <node id="4532654202487578168" at="56,30,57,63" concept="3" />
+      <node id="4532654202487578168" at="57,63,58,306" concept="1" />
+      <node id="4532654202487559495" at="20,0,22,0" concept="4" trace="ourParametersCacheExtension" />
+      <node id="4532654202487559495" at="23,0,26,0" concept="0" trace="DoubledUsinginConf_Test#()V" />
+      <node id="4532654202487559495" at="38,0,41,0" concept="0" trace="TestBody#(Ljetbrains/mps/lang/test/runtime/TransformationTest;)V" />
+      <node id="4532654202487578175" at="27,0,31,0" concept="2" trace="test_NodeDuplicateSpecificationCheck4532654202487578175#()V" />
+      <node id="4532654202487578168" at="31,0,35,0" concept="2" trace="test_NodeDuplicateSpecificationCheck4532654202487578168#()V" />
+      <node id="4532654202487559495" at="42,0,46,0" concept="2" trace="initTestNodes#()V" />
+      <node id="4532654202487578175" at="48,22,52,9" concept="1" />
+      <node id="4532654202487578168" at="55,22,59,9" concept="1" />
+      <node id="4532654202487578175" at="47,0,54,0" concept="2" trace="test_NodeDuplicateSpecificationCheck4532654202487578175#()V" />
+      <node id="4532654202487578168" at="54,0,61,0" concept="2" trace="test_NodeDuplicateSpecificationCheck4532654202487578168#()V" />
+      <scope id="4532654202487559495" at="23,36,24,60" />
+      <scope id="4532654202487578175" at="28,90,29,81" />
+      <scope id="4532654202487578168" at="32,90,33,81" />
+      <scope id="4532654202487559495" at="38,52,39,19" />
+      <scope id="4532654202487559495" at="43,36,44,46" />
+      <scope id="4532654202487578175" at="49,30,51,306">
+        <var name="nodeToCheck" id="4532654202487578175" />
+      </scope>
+      <scope id="4532654202487578168" at="56,30,58,306">
+        <var name="nodeToCheck" id="4532654202487578168" />
+      </scope>
+      <scope id="4532654202487559495" at="23,0,26,0" />
+      <scope id="4532654202487559495" at="38,0,41,0">
+        <var name="owner" id="4532654202487559495" />
+      </scope>
+      <scope id="4532654202487578175" at="27,0,31,0" />
+      <scope id="4532654202487578168" at="31,0,35,0" />
+      <scope id="4532654202487559495" at="42,0,46,0" />
+      <scope id="4532654202487578175" at="47,92,52,9" />
+      <scope id="4532654202487578168" at="54,92,59,9" />
+      <scope id="4532654202487578175" at="47,0,54,0" />
+      <scope id="4532654202487578168" at="54,0,61,0" />
+      <unit id="4532654202487559495" at="36,0,63,0" name="test.org.iets3.variability.configuration.base.using.DoubledUsinginConf_Test$TestBody" />
+      <unit id="4532654202487559495" at="18,0,64,0" name="test.org.iets3.variability.configuration.base.using.DoubledUsinginConf_Test" />
+    </file>
+  </root>
+</debug-info>
+

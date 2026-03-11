@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<debug-info version="2">
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123140:jetbrains.mps.baseLanguage.structure.ConstructorDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123155:jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123165:jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242864:jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1070462154015:jetbrains.mps.baseLanguage.structure.StaticFieldDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1070475587102:jetbrains.mps.baseLanguage.structure.SuperConstructorInvocation" />
+  <root nodeRef="r:adba4f76-937e-4c66-9362-c6346a3689f8(test.components.functional.mpinterface@tests)/2946542952740279410">
+    <file name="BehaviourMethodsTest_Test.java">
+      <node id="2946542952740279410" at="23,38,24,60" concept="5" />
+      <node id="2946542952740279617" at="28,68,29,59" concept="1" />
+      <node id="2946542952740303964" at="32,71,33,62" concept="1" />
+      <node id="2946542952740279410" at="38,52,39,19" concept="5" />
+      <node id="2946542952740279410" at="43,36,44,46" concept="1" />
+      <node id="2946542952740279617" at="47,70,48,22" concept="1" />
+      <node id="2946542952740281517" at="49,30,50,144" concept="3" />
+      <node id="2946542952740295089" at="50,144,51,83" concept="1" />
+      <node id="2946542952740303964" at="54,73,55,22" concept="1" />
+      <node id="2946542952740303967" at="56,30,57,143" concept="3" />
+      <node id="2946542952740303974" at="57,143,58,83" concept="1" />
+      <node id="2946542952740279410" at="20,0,22,0" concept="4" trace="ourParametersCacheExtension" />
+      <node id="2946542952740279410" at="23,0,26,0" concept="0" trace="BehaviourMethodsTest_Test#()V" />
+      <node id="2946542952740279410" at="38,0,41,0" concept="0" trace="TestBody#(Ljetbrains/mps/lang/test/runtime/TransformationTest;)V" />
+      <node id="2946542952740279617" at="27,0,31,0" concept="2" trace="test_testAllArgumentsMethodOnSend#()V" />
+      <node id="2946542952740303964" at="31,0,35,0" concept="2" trace="test_testAllArgumentsMethodOnRequest#()V" />
+      <node id="2946542952740279410" at="42,0,46,0" concept="2" trace="initTestNodes#()V" />
+      <node id="2946542952740279617" at="48,22,52,9" concept="1" />
+      <node id="2946542952740303964" at="55,22,59,9" concept="1" />
+      <node id="2946542952740279617" at="47,0,54,0" concept="2" trace="test_testAllArgumentsMethodOnSend#()V" />
+      <node id="2946542952740303964" at="54,0,61,0" concept="2" trace="test_testAllArgumentsMethodOnRequest#()V" />
+      <scope id="2946542952740279410" at="23,38,24,60" />
+      <scope id="2946542952740279617" at="28,68,29,59" />
+      <scope id="2946542952740303964" at="32,71,33,62" />
+      <scope id="2946542952740279410" at="38,52,39,19" />
+      <scope id="2946542952740279410" at="43,36,44,46" />
+      <scope id="2946542952740279617" at="49,30,51,83">
+        <var name="allMessageArguments" id="2946542952740281518" />
+      </scope>
+      <scope id="2946542952740303964" at="56,30,58,83">
+        <var name="allMessageArguments" id="2946542952740303968" />
+      </scope>
+      <scope id="2946542952740279410" at="23,0,26,0" />
+      <scope id="2946542952740279410" at="38,0,41,0">
+        <var name="owner" id="2946542952740279410" />
+      </scope>
+      <scope id="2946542952740279617" at="27,0,31,0" />
+      <scope id="2946542952740303964" at="31,0,35,0" />
+      <scope id="2946542952740279410" at="42,0,46,0" />
+      <scope id="2946542952740279617" at="47,70,52,9" />
+      <scope id="2946542952740303964" at="54,73,59,9" />
+      <scope id="2946542952740279617" at="47,0,54,0" />
+      <scope id="2946542952740303964" at="54,0,61,0" />
+      <unit id="2946542952740279410" at="36,0,63,0" name="test.components.functional.mpinterface.BehaviourMethodsTest_Test$TestBody" />
+      <unit id="2946542952740279410" at="18,0,64,0" name="test.components.functional.mpinterface.BehaviourMethodsTest_Test" />
+    </file>
+  </root>
+  <root nodeRef="r:adba4f76-937e-4c66-9362-c6346a3689f8(test.components.functional.mpinterface@tests)/7872749981076564577">
+    <file name="TestPortType_Test.java">
+      <node id="7872749981076564577" at="25,30,26,60" concept="5" />
+      <node id="7747466534775636141" at="30,98,31,89" concept="1" />
+      <node id="2130063626692395868" at="34,82,35,73" concept="1" />
+      <node id="4501094019592573630" at="38,94,39,85" concept="1" />
+      <node id="4501094019592573632" at="42,72,43,63" concept="1" />
+      <node id="3864571482955251822" at="46,78,47,69" concept="1" />
+      <node id="5687268814026880728" at="50,73,51,64" concept="1" />
+      <node id="4067397965913075106" at="54,77,55,68" concept="1" />
+      <node id="7872749981076564577" at="60,52,61,19" concept="5" />
+      <node id="7872749981076564577" at="65,36,66,46" concept="1" />
+      <node id="7747466534775636141" at="69,100,70,22" concept="1" />
+      <node id="7747466534775636141" at="71,30,72,63" concept="3" />
+      <node id="7747466534775636141" at="72,63,73,297" concept="1" />
+      <node id="2130063626692395868" at="76,84,77,22" concept="1" />
+      <node id="2130063626692395868" at="78,30,79,63" concept="3" />
+      <node id="2130063626692395868" at="79,63,80,297" concept="1" />
+      <node id="4501094019592573630" at="83,96,84,22" concept="1" />
+      <node id="4501094019592573630" at="85,30,86,63" concept="3" />
+      <node id="4501094019592573630" at="86,63,87,291" concept="1" />
+      <node id="4501094019592573632" at="90,74,91,22" concept="1" />
+      <node id="4501094019592573632" at="92,30,93,63" concept="3" />
+      <node id="4501094019592573632" at="93,63,94,290" concept="1" />
+      <node id="3864571482955251822" at="97,80,98,22" concept="1" />
+      <node id="3864571482955251822" at="99,30,100,63" concept="3" />
+      <node id="3864571482955251822" at="100,63,101,176" concept="1" />
+      <node id="5687268814026880728" at="104,75,105,22" concept="1" />
+      <node id="5687268814026880728" at="106,30,107,63" concept="3" />
+      <node id="5687268814026880728" at="107,63,108,161" concept="1" />
+      <node id="4067397965913075106" at="111,79,112,22" concept="1" />
+      <node id="4067397965913075106" at="113,30,114,63" concept="3" />
+      <node id="4067397965913075106" at="114,63,115,1740" concept="1" />
+      <node id="7872749981076564577" at="22,0,24,0" concept="4" trace="ourParametersCacheExtension" />
+      <node id="7872749981076564577" at="25,0,28,0" concept="0" trace="TestPortType_Test#()V" />
+      <node id="7872749981076564577" at="60,0,63,0" concept="0" trace="TestBody#(Ljetbrains/mps/lang/test/runtime/TransformationTest;)V" />
+      <node id="7747466534775636141" at="29,0,33,0" concept="2" trace="test_NodeThisPortRequiresToBeConfiguredCheck7747466534775636141#()V" />
+      <node id="2130063626692395868" at="33,0,37,0" concept="2" trace="test_NodeIsNotSubtypeOfCheck2130063626692395868#()V" />
+      <node id="4501094019592573630" at="37,0,41,0" concept="2" trace="test_NodeNoValueFoundForNonoptionalCheck4501094019592573630#()V" />
+      <node id="4501094019592573632" at="41,0,45,0" concept="2" trace="test_NodePortCheck4501094019592573632#()V" />
+      <node id="3864571482955251822" at="45,0,49,0" concept="2" trace="test_NodeTypeSystemCheck3864571482955251822#()V" />
+      <node id="5687268814026880728" at="49,0,53,0" concept="2" trace="test_NodeErrorCheck5687268814026880728#()V" />
+      <node id="4067397965913075106" at="53,0,57,0" concept="2" trace="test_ErrorMessagesCheck4067397965913075106#()V" />
+      <node id="7872749981076564577" at="64,0,68,0" concept="2" trace="initTestNodes#()V" />
+      <node id="7747466534775636141" at="70,22,74,9" concept="1" />
+      <node id="2130063626692395868" at="77,22,81,9" concept="1" />
+      <node id="4501094019592573630" at="84,22,88,9" concept="1" />
+      <node id="4501094019592573632" at="91,22,95,9" concept="1" />
+      <node id="3864571482955251822" at="98,22,102,9" concept="1" />
+      <node id="5687268814026880728" at="105,22,109,9" concept="1" />
+      <node id="4067397965913075106" at="112,22,116,9" concept="1" />
+      <node id="7747466534775636141" at="69,0,76,0" concept="2" trace="test_NodeThisPortRequiresToBeConfiguredCheck7747466534775636141#()V" />
+      <node id="2130063626692395868" at="76,0,83,0" concept="2" trace="test_NodeIsNotSubtypeOfCheck2130063626692395868#()V" />
+      <node id="4501094019592573630" at="83,0,90,0" concept="2" trace="test_NodeNoValueFoundForNonoptionalCheck4501094019592573630#()V" />
+      <node id="4501094019592573632" at="90,0,97,0" concept="2" trace="test_NodePortCheck4501094019592573632#()V" />
+      <node id="3864571482955251822" at="97,0,104,0" concept="2" trace="test_NodeTypeSystemCheck3864571482955251822#()V" />
+      <node id="5687268814026880728" at="104,0,111,0" concept="2" trace="test_NodeErrorCheck5687268814026880728#()V" />
+      <node id="4067397965913075106" at="111,0,118,0" concept="2" trace="test_ErrorMessagesCheck4067397965913075106#()V" />
+      <scope id="7872749981076564577" at="25,30,26,60" />
+      <scope id="7747466534775636141" at="30,98,31,89" />
+      <scope id="2130063626692395868" at="34,82,35,73" />
+      <scope id="4501094019592573630" at="38,94,39,85" />
+      <scope id="4501094019592573632" at="42,72,43,63" />
+      <scope id="3864571482955251822" at="46,78,47,69" />
+      <scope id="5687268814026880728" at="50,73,51,64" />
+      <scope id="4067397965913075106" at="54,77,55,68" />
+      <scope id="7872749981076564577" at="60,52,61,19" />
+      <scope id="7872749981076564577" at="65,36,66,46" />
+      <scope id="7747466534775636141" at="71,30,73,297">
+        <var name="nodeToCheck" id="7747466534775636141" />
+      </scope>
+      <scope id="2130063626692395868" at="78,30,80,297">
+        <var name="nodeToCheck" id="2130063626692395868" />
+      </scope>
+      <scope id="4501094019592573630" at="85,30,87,291">
+        <var name="nodeToCheck" id="4501094019592573630" />
+      </scope>
+      <scope id="4501094019592573632" at="92,30,94,290">
+        <var name="nodeToCheck" id="4501094019592573632" />
+      </scope>
+      <scope id="3864571482955251822" at="99,30,101,176">
+        <var name="nodeToCheck" id="3864571482955251822" />
+      </scope>
+      <scope id="5687268814026880728" at="106,30,108,161">
+        <var name="nodeToCheck" id="5687268814026880728" />
+      </scope>
+      <scope id="4067397965913075106" at="113,30,115,1740">
+        <var name="nodeToCheck" id="4067397965913075106" />
+      </scope>
+      <scope id="7872749981076564577" at="25,0,28,0" />
+      <scope id="7872749981076564577" at="60,0,63,0">
+        <var name="owner" id="7872749981076564577" />
+      </scope>
+      <scope id="7747466534775636141" at="29,0,33,0" />
+      <scope id="2130063626692395868" at="33,0,37,0" />
+      <scope id="4501094019592573630" at="37,0,41,0" />
+      <scope id="4501094019592573632" at="41,0,45,0" />
+      <scope id="3864571482955251822" at="45,0,49,0" />
+      <scope id="5687268814026880728" at="49,0,53,0" />
+      <scope id="4067397965913075106" at="53,0,57,0" />
+      <scope id="7872749981076564577" at="64,0,68,0" />
+      <scope id="7747466534775636141" at="69,100,74,9" />
+      <scope id="2130063626692395868" at="76,84,81,9" />
+      <scope id="4501094019592573630" at="83,96,88,9" />
+      <scope id="4501094019592573632" at="90,74,95,9" />
+      <scope id="3864571482955251822" at="97,80,102,9" />
+      <scope id="5687268814026880728" at="104,75,109,9" />
+      <scope id="4067397965913075106" at="111,79,116,9" />
+      <scope id="7747466534775636141" at="69,0,76,0" />
+      <scope id="2130063626692395868" at="76,0,83,0" />
+      <scope id="4501094019592573630" at="83,0,90,0" />
+      <scope id="4501094019592573632" at="90,0,97,0" />
+      <scope id="3864571482955251822" at="97,0,104,0" />
+      <scope id="5687268814026880728" at="104,0,111,0" />
+      <scope id="4067397965913075106" at="111,0,118,0" />
+      <unit id="7872749981076564577" at="58,0,120,0" name="test.components.functional.mpinterface.TestPortType_Test$TestBody" />
+      <unit id="7872749981076564577" at="20,0,121,0" name="test.components.functional.mpinterface.TestPortType_Test" />
+    </file>
+  </root>
+  <root nodeRef="r:adba4f76-937e-4c66-9362-c6346a3689f8(test.components.functional.mpinterface@tests)/9206431307858368416">
+    <file name="FlavorsValidationTest_Test.java">
+      <node id="9206431307858368416" at="23,39,24,60" concept="5" />
+      <node id="8562194838837224201" at="28,90,29,81" concept="1" />
+      <node id="9206431307858368416" at="34,52,35,19" concept="5" />
+      <node id="9206431307858368416" at="39,36,40,46" concept="1" />
+      <node id="8562194838837224201" at="43,92,44,22" concept="1" />
+      <node id="8562194838837224201" at="45,30,46,63" concept="3" />
+      <node id="8562194838837224201" at="46,63,47,297" concept="1" />
+      <node id="9206431307858368416" at="20,0,22,0" concept="4" trace="ourParametersCacheExtension" />
+      <node id="9206431307858368416" at="23,0,26,0" concept="0" trace="FlavorsValidationTest_Test#()V" />
+      <node id="9206431307858368416" at="34,0,37,0" concept="0" trace="TestBody#(Ljetbrains/mps/lang/test/runtime/TransformationTest;)V" />
+      <node id="8562194838837224201" at="27,0,31,0" concept="2" trace="test_NodeOperationNotAllowedForCheck8562194838837224201#()V" />
+      <node id="9206431307858368416" at="38,0,42,0" concept="2" trace="initTestNodes#()V" />
+      <node id="8562194838837224201" at="44,22,48,9" concept="1" />
+      <node id="8562194838837224201" at="43,0,50,0" concept="2" trace="test_NodeOperationNotAllowedForCheck8562194838837224201#()V" />
+      <scope id="9206431307858368416" at="23,39,24,60" />
+      <scope id="8562194838837224201" at="28,90,29,81" />
+      <scope id="9206431307858368416" at="34,52,35,19" />
+      <scope id="9206431307858368416" at="39,36,40,46" />
+      <scope id="8562194838837224201" at="45,30,47,297">
+        <var name="nodeToCheck" id="8562194838837224201" />
+      </scope>
+      <scope id="9206431307858368416" at="23,0,26,0" />
+      <scope id="9206431307858368416" at="34,0,37,0">
+        <var name="owner" id="9206431307858368416" />
+      </scope>
+      <scope id="8562194838837224201" at="27,0,31,0" />
+      <scope id="9206431307858368416" at="38,0,42,0" />
+      <scope id="8562194838837224201" at="43,92,48,9" />
+      <scope id="8562194838837224201" at="43,0,50,0" />
+      <unit id="9206431307858368416" at="32,0,52,0" name="test.components.functional.mpinterface.FlavorsValidationTest_Test$TestBody" />
+      <unit id="9206431307858368416" at="18,0,53,0" name="test.components.functional.mpinterface.FlavorsValidationTest_Test" />
+    </file>
+  </root>
+  <root nodeRef="r:adba4f76-937e-4c66-9362-c6346a3689f8(test.components.functional.mpinterface@tests)/9206431307858368429">
+    <file name="ValidModel_Test.java">
+      <node id="9206431307858368429" at="23,28,24,60" concept="5" />
+      <node id="9206431307858372232" at="28,77,29,68" concept="1" />
+      <node id="9206431307858368429" at="34,52,35,19" concept="5" />
+      <node id="9206431307858368429" at="39,36,40,46" concept="1" />
+      <node id="9206431307858372232" at="43,79,44,22" concept="1" />
+      <node id="9206431307858372232" at="45,30,46,63" concept="3" />
+      <node id="9206431307858372232" at="46,63,47,171" concept="1" />
+      <node id="9206431307858368429" at="20,0,22,0" concept="4" trace="ourParametersCacheExtension" />
+      <node id="9206431307858368429" at="23,0,26,0" concept="0" trace="ValidModel_Test#()V" />
+      <node id="9206431307858368429" at="34,0,37,0" concept="0" trace="TestBody#(Ljetbrains/mps/lang/test/runtime/TransformationTest;)V" />
+      <node id="9206431307858372232" at="27,0,31,0" concept="2" trace="test_ErrorMessagesCheck9206431307858372232#()V" />
+      <node id="9206431307858368429" at="38,0,42,0" concept="2" trace="initTestNodes#()V" />
+      <node id="9206431307858372232" at="44,22,48,9" concept="1" />
+      <node id="9206431307858372232" at="43,0,50,0" concept="2" trace="test_ErrorMessagesCheck9206431307858372232#()V" />
+      <scope id="9206431307858368429" at="23,28,24,60" />
+      <scope id="9206431307858372232" at="28,77,29,68" />
+      <scope id="9206431307858368429" at="34,52,35,19" />
+      <scope id="9206431307858368429" at="39,36,40,46" />
+      <scope id="9206431307858372232" at="45,30,47,171">
+        <var name="nodeToCheck" id="9206431307858372232" />
+      </scope>
+      <scope id="9206431307858368429" at="23,0,26,0" />
+      <scope id="9206431307858368429" at="34,0,37,0">
+        <var name="owner" id="9206431307858368429" />
+      </scope>
+      <scope id="9206431307858372232" at="27,0,31,0" />
+      <scope id="9206431307858368429" at="38,0,42,0" />
+      <scope id="9206431307858372232" at="43,79,48,9" />
+      <scope id="9206431307858372232" at="43,0,50,0" />
+      <unit id="9206431307858368429" at="32,0,52,0" name="test.components.functional.mpinterface.ValidModel_Test$TestBody" />
+      <unit id="9206431307858368429" at="18,0,53,0" name="test.components.functional.mpinterface.ValidModel_Test" />
+    </file>
+  </root>
+</debug-info>
+

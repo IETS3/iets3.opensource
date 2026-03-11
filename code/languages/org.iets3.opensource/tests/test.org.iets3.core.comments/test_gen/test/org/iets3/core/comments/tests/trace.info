@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<debug-info version="2">
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123140:jetbrains.mps.baseLanguage.structure.ConstructorDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123155:jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123165:jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1070462154015:jetbrains.mps.baseLanguage.structure.StaticFieldDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1070475587102:jetbrains.mps.baseLanguage.structure.SuperConstructorInvocation" />
+  <root nodeRef="r:c2c929a6-234a-4896-9321-c345e30b439e(test.org.iets3.core.comments.tests@tests)/6134088534208028820">
+    <file name="CommentsOnComponents_Test.java">
+      <node id="6134088534208028820" at="19,38,20,60" concept="4" />
+      <node id="6134088534208028820" at="24,60,25,36" concept="1" />
+      <node id="6134088534208028820" at="30,52,31,19" concept="4" />
+      <node id="6134088534208028820" at="35,51,36,72" concept="1" />
+      <node id="6134088534208028953" at="36,72,37,23" concept="1" />
+      <node id="6134088534208028820" at="16,0,18,0" concept="3" trace="ourParametersCacheExtension" />
+      <node id="6134088534208028820" at="19,0,22,0" concept="0" trace="CommentsOnComponents_Test#()V" />
+      <node id="6134088534208028820" at="30,0,33,0" concept="0" trace="TestBody#(Ljetbrains/mps/lang/test/runtime/TransformationTest;)V" />
+      <node id="6134088534208028820" at="23,0,27,0" concept="2" trace="test_CommentsOnComponents#()V" />
+      <node id="6134088534208028820" at="34,0,39,0" concept="2" trace="testMethodImpl#()V" />
+      <scope id="6134088534208028820" at="19,38,20,60" />
+      <scope id="6134088534208028820" at="24,60,25,36" />
+      <scope id="6134088534208028820" at="30,52,31,19" />
+      <scope id="6134088534208028820" at="35,51,37,23" />
+      <scope id="6134088534208028820" at="19,0,22,0" />
+      <scope id="6134088534208028820" at="30,0,33,0">
+        <var name="owner" id="6134088534208028820" />
+      </scope>
+      <scope id="6134088534208028820" at="23,0,27,0" />
+      <scope id="6134088534208028820" at="34,0,39,0" />
+      <unit id="6134088534208028820" at="28,0,40,0" name="test.org.iets3.core.comments.tests.CommentsOnComponents_Test$TestBody" />
+      <unit id="6134088534208028820" at="14,0,41,0" name="test.org.iets3.core.comments.tests.CommentsOnComponents_Test" />
+    </file>
+  </root>
+  <root nodeRef="r:c2c929a6-234a-4896-9321-c345e30b439e(test.org.iets3.core.comments.tests@tests)/6134088534208050799">
+    <file name="CommentsOnInstance_Test.java">
+      <node id="6134088534208050799" at="19,36,20,60" concept="4" />
+      <node id="6134088534208050799" at="24,58,25,36" concept="1" />
+      <node id="6134088534208050799" at="30,52,31,19" concept="4" />
+      <node id="6134088534208050799" at="35,51,36,72" concept="1" />
+      <node id="6134088534208050817" at="36,72,37,23" concept="1" />
+      <node id="6134088534208050799" at="16,0,18,0" concept="3" trace="ourParametersCacheExtension" />
+      <node id="6134088534208050799" at="19,0,22,0" concept="0" trace="CommentsOnInstance_Test#()V" />
+      <node id="6134088534208050799" at="30,0,33,0" concept="0" trace="TestBody#(Ljetbrains/mps/lang/test/runtime/TransformationTest;)V" />
+      <node id="6134088534208050799" at="23,0,27,0" concept="2" trace="test_CommentsOnInstance#()V" />
+      <node id="6134088534208050799" at="34,0,39,0" concept="2" trace="testMethodImpl#()V" />
+      <scope id="6134088534208050799" at="19,36,20,60" />
+      <scope id="6134088534208050799" at="24,58,25,36" />
+      <scope id="6134088534208050799" at="30,52,31,19" />
+      <scope id="6134088534208050799" at="35,51,37,23" />
+      <scope id="6134088534208050799" at="19,0,22,0" />
+      <scope id="6134088534208050799" at="30,0,33,0">
+        <var name="owner" id="6134088534208050799" />
+      </scope>
+      <scope id="6134088534208050799" at="23,0,27,0" />
+      <scope id="6134088534208050799" at="34,0,39,0" />
+      <unit id="6134088534208050799" at="28,0,40,0" name="test.org.iets3.core.comments.tests.CommentsOnInstance_Test$TestBody" />
+      <unit id="6134088534208050799" at="14,0,41,0" name="test.org.iets3.core.comments.tests.CommentsOnInstance_Test" />
+    </file>
+  </root>
+  <root nodeRef="r:c2c929a6-234a-4896-9321-c345e30b439e(test.org.iets3.core.comments.tests@tests)/6134088534208310357">
+    <file name="CommentsOnSubstructure_Test.java">
+      <node id="6134088534208310357" at="19,40,20,60" concept="4" />
+      <node id="6134088534208310357" at="24,62,25,36" concept="1" />
+      <node id="6134088534208310357" at="30,52,31,19" concept="4" />
+      <node id="6134088534208310357" at="35,51,36,72" concept="1" />
+      <node id="6134088534208310364" at="36,72,37,23" concept="1" />
+      <node id="6134088534208310357" at="16,0,18,0" concept="3" trace="ourParametersCacheExtension" />
+      <node id="6134088534208310357" at="19,0,22,0" concept="0" trace="CommentsOnSubstructure_Test#()V" />
+      <node id="6134088534208310357" at="30,0,33,0" concept="0" trace="TestBody#(Ljetbrains/mps/lang/test/runtime/TransformationTest;)V" />
+      <node id="6134088534208310357" at="23,0,27,0" concept="2" trace="test_CommentsOnSubstructure#()V" />
+      <node id="6134088534208310357" at="34,0,39,0" concept="2" trace="testMethodImpl#()V" />
+      <scope id="6134088534208310357" at="19,40,20,60" />
+      <scope id="6134088534208310357" at="24,62,25,36" />
+      <scope id="6134088534208310357" at="30,52,31,19" />
+      <scope id="6134088534208310357" at="35,51,37,23" />
+      <scope id="6134088534208310357" at="19,0,22,0" />
+      <scope id="6134088534208310357" at="30,0,33,0">
+        <var name="owner" id="6134088534208310357" />
+      </scope>
+      <scope id="6134088534208310357" at="23,0,27,0" />
+      <scope id="6134088534208310357" at="34,0,39,0" />
+      <unit id="6134088534208310357" at="28,0,40,0" name="test.org.iets3.core.comments.tests.CommentsOnSubstructure_Test$TestBody" />
+      <unit id="6134088534208310357" at="14,0,41,0" name="test.org.iets3.core.comments.tests.CommentsOnSubstructure_Test" />
+    </file>
+  </root>
+</debug-info>
+
