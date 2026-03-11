@@ -1,0 +1,755 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<debug-info version="2">
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123140:jetbrains.mps.baseLanguage.structure.ConstructorDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123155:jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123165:jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242864:jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1070462154015:jetbrains.mps.baseLanguage.structure.StaticFieldDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1070475587102:jetbrains.mps.baseLanguage.structure.SuperConstructorInvocation" />
+  <root nodeRef="r:97f27032-f638-4fda-b6f6-aafb3ccea323(test.in.expr.os.enums@tests)/2996389194814646024">
+    <file name="enum_sort_Test.java">
+      <node id="2996389194814646024" at="25,27,26,75" concept="5" />
+      <node id="6408647657448885960" at="30,81,31,72" concept="1" />
+      <node id="6408647657449347116" at="34,81,35,72" concept="1" />
+      <node id="1777261460002348926" at="38,81,39,72" concept="1" />
+      <node id="1777261460002884130" at="42,81,43,72" concept="1" />
+      <node id="2996389194814646856" at="46,73,47,64" concept="1" />
+      <node id="3568410465300069918" at="50,73,51,64" concept="1" />
+      <node id="3568410465300069935" at="54,73,55,64" concept="1" />
+      <node id="1878529043118673379" at="58,73,59,64" concept="1" />
+      <node id="1878529043118673374" at="62,73,63,64" concept="1" />
+      <node id="1878529043118673369" at="66,73,67,64" concept="1" />
+      <node id="582633689044676034" at="70,70,71,61" concept="1" />
+      <node id="1878529043118667564" at="74,71,75,62" concept="1" />
+      <node id="582633689044678331" at="78,70,79,61" concept="1" />
+      <node id="582633689044680249" at="82,70,83,61" concept="1" />
+      <node id="582633689044689898" at="86,70,87,61" concept="1" />
+      <node id="6408647657448885960" at="96,44,97,112" concept="3" />
+      <node id="6408647657448885960" at="97,112,98,39" concept="1" />
+      <node id="6408647657449347116" at="105,44,106,112" concept="3" />
+      <node id="6408647657449347116" at="106,112,107,39" concept="1" />
+      <node id="1777261460002348926" at="114,44,115,112" concept="3" />
+      <node id="1777261460002348926" at="115,112,116,39" concept="1" />
+      <node id="1777261460002884130" at="123,44,124,112" concept="3" />
+      <node id="1777261460002884130" at="124,112,125,39" concept="1" />
+      <node id="2996389194814646856" at="132,44,133,112" concept="3" />
+      <node id="2996389194814646856" at="133,112,134,39" concept="1" />
+      <node id="3568410465300069918" at="141,44,142,112" concept="3" />
+      <node id="3568410465300069918" at="142,112,143,39" concept="1" />
+      <node id="3568410465300069935" at="150,44,151,112" concept="3" />
+      <node id="3568410465300069935" at="151,112,152,39" concept="1" />
+      <node id="1878529043118673379" at="159,44,160,112" concept="3" />
+      <node id="1878529043118673379" at="160,112,161,39" concept="1" />
+      <node id="1878529043118673374" at="168,44,169,112" concept="3" />
+      <node id="1878529043118673374" at="169,112,170,39" concept="1" />
+      <node id="1878529043118673369" at="177,44,178,112" concept="3" />
+      <node id="1878529043118673369" at="178,112,179,39" concept="1" />
+      <node id="582633689044676034" at="186,44,187,111" concept="3" />
+      <node id="582633689044676034" at="187,111,188,39" concept="1" />
+      <node id="1878529043118667564" at="195,44,196,112" concept="3" />
+      <node id="1878529043118667564" at="196,112,197,39" concept="1" />
+      <node id="582633689044678331" at="204,44,205,111" concept="3" />
+      <node id="582633689044678331" at="205,111,206,39" concept="1" />
+      <node id="582633689044680249" at="213,44,214,111" concept="3" />
+      <node id="582633689044680249" at="214,111,215,39" concept="1" />
+      <node id="582633689044689898" at="222,44,223,111" concept="3" />
+      <node id="582633689044689898" at="223,111,224,39" concept="1" />
+      <node id="2996389194814646024" at="229,50,230,19" concept="5" />
+      <node id="2996389194814646024" at="235,0,236,0" concept="4" trace="AbstractTestItem$9u" />
+      <node id="2996389194814646024" at="22,0,24,0" concept="4" trace="ourParametersCacheExtension" />
+      <node id="2996389194814646024" at="25,0,28,0" concept="0" trace="enum_sort_Test#()V" />
+      <node id="2996389194814646024" at="229,0,232,0" concept="0" trace="TestBody#(Ljetbrains/mps/lang/test/runtime/TransformationTest;)V" />
+      <node id="6408647657448885960" at="29,0,33,0" concept="2" trace="testEnumWitoutValues_item0_6408647657448885960#()V" />
+      <node id="6408647657449347116" at="33,0,37,0" concept="2" trace="testEnumWitoutValues_item1_6408647657449347116#()V" />
+      <node id="1777261460002348926" at="37,0,41,0" concept="2" trace="testEnumWitoutValues_item2_1777261460002348926#()V" />
+      <node id="1777261460002884130" at="41,0,45,0" concept="2" trace="testEnumWitoutValues_item3_1777261460002884130#()V" />
+      <node id="2996389194814646856" at="45,0,49,0" concept="2" trace="sort_records_item0_2996389194814646856#()V" />
+      <node id="3568410465300069918" at="49,0,53,0" concept="2" trace="sort_records_item1_3568410465300069918#()V" />
+      <node id="3568410465300069935" at="53,0,57,0" concept="2" trace="sort_records_item2_3568410465300069935#()V" />
+      <node id="1878529043118673379" at="57,0,61,0" concept="2" trace="sort_records_item3_1878529043118673379#()V" />
+      <node id="1878529043118673374" at="61,0,65,0" concept="2" trace="sort_records_item4_1878529043118673374#()V" />
+      <node id="1878529043118673369" at="65,0,69,0" concept="2" trace="sort_records_item5_1878529043118673369#()V" />
+      <node id="582633689044676034" at="69,0,73,0" concept="2" trace="sort_lists_item0_582633689044676034#()V" />
+      <node id="1878529043118667564" at="73,0,77,0" concept="2" trace="sort_lists_item1_1878529043118667564#()V" />
+      <node id="582633689044678331" at="77,0,81,0" concept="2" trace="sort_lists_item2_582633689044678331#()V" />
+      <node id="582633689044680249" at="81,0,85,0" concept="2" trace="sort_lists_item3_582633689044680249#()V" />
+      <node id="582633689044689898" at="85,0,89,0" concept="2" trace="sort_lists_item4_582633689044689898#()V" />
+      <node id="6408647657448885960" at="95,0,100,0" concept="2" trace="run#()V" />
+      <node id="6408647657449347116" at="104,0,109,0" concept="2" trace="run#()V" />
+      <node id="1777261460002348926" at="113,0,118,0" concept="2" trace="run#()V" />
+      <node id="1777261460002884130" at="122,0,127,0" concept="2" trace="run#()V" />
+      <node id="2996389194814646856" at="131,0,136,0" concept="2" trace="run#()V" />
+      <node id="3568410465300069918" at="140,0,145,0" concept="2" trace="run#()V" />
+      <node id="3568410465300069935" at="149,0,154,0" concept="2" trace="run#()V" />
+      <node id="1878529043118673379" at="158,0,163,0" concept="2" trace="run#()V" />
+      <node id="1878529043118673374" at="167,0,172,0" concept="2" trace="run#()V" />
+      <node id="1878529043118673369" at="176,0,181,0" concept="2" trace="run#()V" />
+      <node id="582633689044676034" at="185,0,190,0" concept="2" trace="run#()V" />
+      <node id="1878529043118667564" at="194,0,199,0" concept="2" trace="run#()V" />
+      <node id="582633689044678331" at="203,0,208,0" concept="2" trace="run#()V" />
+      <node id="582633689044680249" at="212,0,217,0" concept="2" trace="run#()V" />
+      <node id="582633689044689898" at="221,0,226,0" concept="2" trace="run#()V" />
+      <node id="6408647657448885960" at="93,83,100,9" concept="1" />
+      <node id="6408647657449347116" at="102,83,109,9" concept="1" />
+      <node id="1777261460002348926" at="111,83,118,9" concept="1" />
+      <node id="1777261460002884130" at="120,83,127,9" concept="1" />
+      <node id="2996389194814646856" at="129,75,136,9" concept="1" />
+      <node id="3568410465300069918" at="138,75,145,9" concept="1" />
+      <node id="3568410465300069935" at="147,75,154,9" concept="1" />
+      <node id="1878529043118673379" at="156,75,163,9" concept="1" />
+      <node id="1878529043118673374" at="165,75,172,9" concept="1" />
+      <node id="1878529043118673369" at="174,75,181,9" concept="1" />
+      <node id="582633689044676034" at="183,72,190,9" concept="1" />
+      <node id="1878529043118667564" at="192,73,199,9" concept="1" />
+      <node id="582633689044678331" at="201,72,208,9" concept="1" />
+      <node id="582633689044680249" at="210,72,217,9" concept="1" />
+      <node id="582633689044689898" at="219,72,226,9" concept="1" />
+      <node id="6408647657448885960" at="93,0,102,0" concept="2" trace="testEnumWitoutValues_item0_6408647657448885960#()V" />
+      <node id="6408647657449347116" at="102,0,111,0" concept="2" trace="testEnumWitoutValues_item1_6408647657449347116#()V" />
+      <node id="1777261460002348926" at="111,0,120,0" concept="2" trace="testEnumWitoutValues_item2_1777261460002348926#()V" />
+      <node id="1777261460002884130" at="120,0,129,0" concept="2" trace="testEnumWitoutValues_item3_1777261460002884130#()V" />
+      <node id="2996389194814646856" at="129,0,138,0" concept="2" trace="sort_records_item0_2996389194814646856#()V" />
+      <node id="3568410465300069918" at="138,0,147,0" concept="2" trace="sort_records_item1_3568410465300069918#()V" />
+      <node id="3568410465300069935" at="147,0,156,0" concept="2" trace="sort_records_item2_3568410465300069935#()V" />
+      <node id="1878529043118673379" at="156,0,165,0" concept="2" trace="sort_records_item3_1878529043118673379#()V" />
+      <node id="1878529043118673374" at="165,0,174,0" concept="2" trace="sort_records_item4_1878529043118673374#()V" />
+      <node id="1878529043118673369" at="174,0,183,0" concept="2" trace="sort_records_item5_1878529043118673369#()V" />
+      <node id="582633689044676034" at="183,0,192,0" concept="2" trace="sort_lists_item0_582633689044676034#()V" />
+      <node id="1878529043118667564" at="192,0,201,0" concept="2" trace="sort_lists_item1_1878529043118667564#()V" />
+      <node id="582633689044678331" at="201,0,210,0" concept="2" trace="sort_lists_item2_582633689044678331#()V" />
+      <node id="582633689044680249" at="210,0,219,0" concept="2" trace="sort_lists_item3_582633689044680249#()V" />
+      <node id="582633689044689898" at="219,0,228,0" concept="2" trace="sort_lists_item4_582633689044689898#()V" />
+      <scope id="2996389194814646024" at="25,27,26,75" />
+      <scope id="6408647657448885960" at="30,81,31,72" />
+      <scope id="6408647657449347116" at="34,81,35,72" />
+      <scope id="1777261460002348926" at="38,81,39,72" />
+      <scope id="1777261460002884130" at="42,81,43,72" />
+      <scope id="2996389194814646856" at="46,73,47,64" />
+      <scope id="3568410465300069918" at="50,73,51,64" />
+      <scope id="3568410465300069935" at="54,73,55,64" />
+      <scope id="1878529043118673379" at="58,73,59,64" />
+      <scope id="1878529043118673374" at="62,73,63,64" />
+      <scope id="1878529043118673369" at="66,73,67,64" />
+      <scope id="582633689044676034" at="70,70,71,61" />
+      <scope id="1878529043118667564" at="74,71,75,62" />
+      <scope id="582633689044678331" at="78,70,79,61" />
+      <scope id="582633689044680249" at="82,70,83,61" />
+      <scope id="582633689044689898" at="86,70,87,61" />
+      <scope id="2996389194814646024" at="229,50,230,19" />
+      <scope id="6408647657448885960" at="96,44,98,39">
+        <var name="ti" id="6408647657448885960" />
+      </scope>
+      <scope id="6408647657449347116" at="105,44,107,39">
+        <var name="ti" id="6408647657449347116" />
+      </scope>
+      <scope id="1777261460002348926" at="114,44,116,39">
+        <var name="ti" id="1777261460002348926" />
+      </scope>
+      <scope id="1777261460002884130" at="123,44,125,39">
+        <var name="ti" id="1777261460002884130" />
+      </scope>
+      <scope id="2996389194814646856" at="132,44,134,39">
+        <var name="ti" id="2996389194814646856" />
+      </scope>
+      <scope id="3568410465300069918" at="141,44,143,39">
+        <var name="ti" id="3568410465300069918" />
+      </scope>
+      <scope id="3568410465300069935" at="150,44,152,39">
+        <var name="ti" id="3568410465300069935" />
+      </scope>
+      <scope id="1878529043118673379" at="159,44,161,39">
+        <var name="ti" id="1878529043118673379" />
+      </scope>
+      <scope id="1878529043118673374" at="168,44,170,39">
+        <var name="ti" id="1878529043118673374" />
+      </scope>
+      <scope id="1878529043118673369" at="177,44,179,39">
+        <var name="ti" id="1878529043118673369" />
+      </scope>
+      <scope id="582633689044676034" at="186,44,188,39">
+        <var name="ti" id="582633689044676034" />
+      </scope>
+      <scope id="1878529043118667564" at="195,44,197,39">
+        <var name="ti" id="1878529043118667564" />
+      </scope>
+      <scope id="582633689044678331" at="204,44,206,39">
+        <var name="ti" id="582633689044678331" />
+      </scope>
+      <scope id="582633689044680249" at="213,44,215,39">
+        <var name="ti" id="582633689044680249" />
+      </scope>
+      <scope id="582633689044689898" at="222,44,224,39">
+        <var name="ti" id="582633689044689898" />
+      </scope>
+      <scope id="2996389194814646024" at="25,0,28,0" />
+      <scope id="2996389194814646024" at="229,0,232,0">
+        <var name="owner" id="2996389194814646024" />
+      </scope>
+      <scope id="6408647657448885960" at="29,0,33,0" />
+      <scope id="6408647657449347116" at="33,0,37,0" />
+      <scope id="1777261460002348926" at="37,0,41,0" />
+      <scope id="1777261460002884130" at="41,0,45,0" />
+      <scope id="2996389194814646856" at="45,0,49,0" />
+      <scope id="3568410465300069918" at="49,0,53,0" />
+      <scope id="3568410465300069935" at="53,0,57,0" />
+      <scope id="1878529043118673379" at="57,0,61,0" />
+      <scope id="1878529043118673374" at="61,0,65,0" />
+      <scope id="1878529043118673369" at="65,0,69,0" />
+      <scope id="582633689044676034" at="69,0,73,0" />
+      <scope id="1878529043118667564" at="73,0,77,0" />
+      <scope id="582633689044678331" at="77,0,81,0" />
+      <scope id="582633689044680249" at="81,0,85,0" />
+      <scope id="582633689044689898" at="85,0,89,0" />
+      <scope id="6408647657448885960" at="95,0,100,0" />
+      <scope id="6408647657449347116" at="104,0,109,0" />
+      <scope id="1777261460002348926" at="113,0,118,0" />
+      <scope id="1777261460002884130" at="122,0,127,0" />
+      <scope id="2996389194814646856" at="131,0,136,0" />
+      <scope id="3568410465300069918" at="140,0,145,0" />
+      <scope id="3568410465300069935" at="149,0,154,0" />
+      <scope id="1878529043118673379" at="158,0,163,0" />
+      <scope id="1878529043118673374" at="167,0,172,0" />
+      <scope id="1878529043118673369" at="176,0,181,0" />
+      <scope id="582633689044676034" at="185,0,190,0" />
+      <scope id="1878529043118667564" at="194,0,199,0" />
+      <scope id="582633689044678331" at="203,0,208,0" />
+      <scope id="582633689044680249" at="212,0,217,0" />
+      <scope id="582633689044689898" at="221,0,226,0" />
+      <scope id="6408647657448885960" at="93,83,100,9" />
+      <scope id="6408647657449347116" at="102,83,109,9" />
+      <scope id="1777261460002348926" at="111,83,118,9" />
+      <scope id="1777261460002884130" at="120,83,127,9" />
+      <scope id="2996389194814646856" at="129,75,136,9" />
+      <scope id="3568410465300069918" at="138,75,145,9" />
+      <scope id="3568410465300069935" at="147,75,154,9" />
+      <scope id="1878529043118673379" at="156,75,163,9" />
+      <scope id="1878529043118673374" at="165,75,172,9" />
+      <scope id="1878529043118673369" at="174,75,181,9" />
+      <scope id="582633689044676034" at="183,72,190,9" />
+      <scope id="1878529043118667564" at="192,73,199,9" />
+      <scope id="582633689044678331" at="201,72,208,9" />
+      <scope id="582633689044680249" at="210,72,217,9" />
+      <scope id="582633689044689898" at="219,72,226,9" />
+      <scope id="6408647657448885960" at="93,0,102,0" />
+      <scope id="6408647657449347116" at="102,0,111,0" />
+      <scope id="1777261460002348926" at="111,0,120,0" />
+      <scope id="1777261460002884130" at="120,0,129,0" />
+      <scope id="2996389194814646856" at="129,0,138,0" />
+      <scope id="3568410465300069918" at="138,0,147,0" />
+      <scope id="3568410465300069935" at="147,0,156,0" />
+      <scope id="1878529043118673379" at="156,0,165,0" />
+      <scope id="1878529043118673374" at="165,0,174,0" />
+      <scope id="1878529043118673369" at="174,0,183,0" />
+      <scope id="582633689044676034" at="183,0,192,0" />
+      <scope id="1878529043118667564" at="192,0,201,0" />
+      <scope id="582633689044678331" at="201,0,210,0" />
+      <scope id="582633689044680249" at="210,0,219,0" />
+      <scope id="582633689044689898" at="219,0,228,0" />
+      <unit id="2996389194814646024" at="234,0,237,0" name="test.in.expr.os.enums.enum_sort_Test$CONCEPTS" />
+      <unit id="6408647657448885960" at="94,27,100,7" name="test.in.expr.os.enums.enum_sort_Test$TestBody$1" />
+      <unit id="6408647657449347116" at="103,27,109,7" name="test.in.expr.os.enums.enum_sort_Test$TestBody$2" />
+      <unit id="1777261460002348926" at="112,27,118,7" name="test.in.expr.os.enums.enum_sort_Test$TestBody$3" />
+      <unit id="1777261460002884130" at="121,27,127,7" name="test.in.expr.os.enums.enum_sort_Test$TestBody$4" />
+      <unit id="2996389194814646856" at="130,27,136,7" name="test.in.expr.os.enums.enum_sort_Test$TestBody$5" />
+      <unit id="3568410465300069918" at="139,27,145,7" name="test.in.expr.os.enums.enum_sort_Test$TestBody$6" />
+      <unit id="3568410465300069935" at="148,27,154,7" name="test.in.expr.os.enums.enum_sort_Test$TestBody$7" />
+      <unit id="1878529043118673379" at="157,27,163,7" name="test.in.expr.os.enums.enum_sort_Test$TestBody$8" />
+      <unit id="1878529043118673374" at="166,27,172,7" name="test.in.expr.os.enums.enum_sort_Test$TestBody$9" />
+      <unit id="1878529043118673369" at="175,27,181,7" name="test.in.expr.os.enums.enum_sort_Test$TestBody$10" />
+      <unit id="582633689044676034" at="184,27,190,7" name="test.in.expr.os.enums.enum_sort_Test$TestBody$11" />
+      <unit id="1878529043118667564" at="193,27,199,7" name="test.in.expr.os.enums.enum_sort_Test$TestBody$12" />
+      <unit id="582633689044678331" at="202,27,208,7" name="test.in.expr.os.enums.enum_sort_Test$TestBody$13" />
+      <unit id="582633689044680249" at="211,27,217,7" name="test.in.expr.os.enums.enum_sort_Test$TestBody$14" />
+      <unit id="582633689044689898" at="220,27,226,7" name="test.in.expr.os.enums.enum_sort_Test$TestBody$15" />
+      <unit id="2996389194814646024" at="91,0,233,0" name="test.in.expr.os.enums.enum_sort_Test$TestBody" />
+      <unit id="2996389194814646024" at="19,0,238,0" name="test.in.expr.os.enums.enum_sort_Test" />
+    </file>
+  </root>
+  <root nodeRef="r:97f27032-f638-4fda-b6f6-aafb3ccea323(test.in.expr.os.enums@tests)/5663752477420891195">
+    <file name="EnumsWithValuesOfSortableTypes_Test.java">
+      <node id="5663752477420891195" at="25,48,26,96" concept="5" />
+      <node id="8432595092503075921" at="30,96,31,87" concept="1" />
+      <node id="5663752477437990412" at="34,96,35,87" concept="1" />
+      <node id="5663752477438081863" at="38,96,39,87" concept="1" />
+      <node id="5663752477438840735" at="42,96,43,87" concept="1" />
+      <node id="5663752477438877630" at="46,96,47,87" concept="1" />
+      <node id="5663752477438884990" at="50,96,51,87" concept="1" />
+      <node id="5663752477438884984" at="54,96,55,87" concept="1" />
+      <node id="5663752477438884978" at="58,96,59,87" concept="1" />
+      <node id="5663752477438884972" at="62,96,63,87" concept="1" />
+      <node id="5663752477438884966" at="66,96,67,87" concept="1" />
+      <node id="8432595092503075921" at="76,44,77,112" concept="3" />
+      <node id="8432595092503075921" at="77,112,78,39" concept="1" />
+      <node id="5663752477437990412" at="85,44,86,112" concept="3" />
+      <node id="5663752477437990412" at="86,112,87,39" concept="1" />
+      <node id="5663752477438081863" at="94,44,95,112" concept="3" />
+      <node id="5663752477438081863" at="95,112,96,39" concept="1" />
+      <node id="5663752477438840735" at="103,44,104,112" concept="3" />
+      <node id="5663752477438840735" at="104,112,105,39" concept="1" />
+      <node id="5663752477438877630" at="112,44,113,112" concept="3" />
+      <node id="5663752477438877630" at="113,112,114,39" concept="1" />
+      <node id="5663752477438884990" at="121,44,122,112" concept="3" />
+      <node id="5663752477438884990" at="122,112,123,39" concept="1" />
+      <node id="5663752477438884984" at="130,44,131,112" concept="3" />
+      <node id="5663752477438884984" at="131,112,132,39" concept="1" />
+      <node id="5663752477438884978" at="139,44,140,112" concept="3" />
+      <node id="5663752477438884978" at="140,112,141,39" concept="1" />
+      <node id="5663752477438884972" at="148,44,149,112" concept="3" />
+      <node id="5663752477438884972" at="149,112,150,39" concept="1" />
+      <node id="5663752477438884966" at="157,44,158,112" concept="3" />
+      <node id="5663752477438884966" at="158,112,159,39" concept="1" />
+      <node id="5663752477420891195" at="164,50,165,19" concept="5" />
+      <node id="5663752477420891195" at="170,0,171,0" concept="4" trace="AbstractTestItem$9u" />
+      <node id="5663752477420891195" at="22,0,24,0" concept="4" trace="ourParametersCacheExtension" />
+      <node id="5663752477420891195" at="25,0,28,0" concept="0" trace="EnumsWithValuesOfSortableTypes_Test#()V" />
+      <node id="5663752477420891195" at="164,0,167,0" concept="0" trace="TestBody#(Ljetbrains/mps/lang/test/runtime/TransformationTest;)V" />
+      <node id="8432595092503075921" at="29,0,33,0" concept="2" trace="SortRecordsHavingSortableEnumValues_item0_8432595092503075921#()V" />
+      <node id="5663752477437990412" at="33,0,37,0" concept="2" trace="SortRecordsHavingSortableEnumValues_item1_5663752477437990412#()V" />
+      <node id="5663752477438081863" at="37,0,41,0" concept="2" trace="SortRecordsHavingSortableEnumValues_item2_5663752477438081863#()V" />
+      <node id="5663752477438840735" at="41,0,45,0" concept="2" trace="SortRecordsHavingSortableEnumValues_item3_5663752477438840735#()V" />
+      <node id="5663752477438877630" at="45,0,49,0" concept="2" trace="SortRecordsHavingSortableEnumValues_item4_5663752477438877630#()V" />
+      <node id="5663752477438884990" at="49,0,53,0" concept="2" trace="SortRecordsHavingSortableEnumValues_item5_5663752477438884990#()V" />
+      <node id="5663752477438884984" at="53,0,57,0" concept="2" trace="SortRecordsHavingSortableEnumValues_item6_5663752477438884984#()V" />
+      <node id="5663752477438884978" at="57,0,61,0" concept="2" trace="SortRecordsHavingSortableEnumValues_item7_5663752477438884978#()V" />
+      <node id="5663752477438884972" at="61,0,65,0" concept="2" trace="SortRecordsHavingSortableEnumValues_item8_5663752477438884972#()V" />
+      <node id="5663752477438884966" at="65,0,69,0" concept="2" trace="SortRecordsHavingSortableEnumValues_item9_5663752477438884966#()V" />
+      <node id="8432595092503075921" at="75,0,80,0" concept="2" trace="run#()V" />
+      <node id="5663752477437990412" at="84,0,89,0" concept="2" trace="run#()V" />
+      <node id="5663752477438081863" at="93,0,98,0" concept="2" trace="run#()V" />
+      <node id="5663752477438840735" at="102,0,107,0" concept="2" trace="run#()V" />
+      <node id="5663752477438877630" at="111,0,116,0" concept="2" trace="run#()V" />
+      <node id="5663752477438884990" at="120,0,125,0" concept="2" trace="run#()V" />
+      <node id="5663752477438884984" at="129,0,134,0" concept="2" trace="run#()V" />
+      <node id="5663752477438884978" at="138,0,143,0" concept="2" trace="run#()V" />
+      <node id="5663752477438884972" at="147,0,152,0" concept="2" trace="run#()V" />
+      <node id="5663752477438884966" at="156,0,161,0" concept="2" trace="run#()V" />
+      <node id="8432595092503075921" at="73,98,80,9" concept="1" />
+      <node id="5663752477437990412" at="82,98,89,9" concept="1" />
+      <node id="5663752477438081863" at="91,98,98,9" concept="1" />
+      <node id="5663752477438840735" at="100,98,107,9" concept="1" />
+      <node id="5663752477438877630" at="109,98,116,9" concept="1" />
+      <node id="5663752477438884990" at="118,98,125,9" concept="1" />
+      <node id="5663752477438884984" at="127,98,134,9" concept="1" />
+      <node id="5663752477438884978" at="136,98,143,9" concept="1" />
+      <node id="5663752477438884972" at="145,98,152,9" concept="1" />
+      <node id="5663752477438884966" at="154,98,161,9" concept="1" />
+      <node id="8432595092503075921" at="73,0,82,0" concept="2" trace="SortRecordsHavingSortableEnumValues_item0_8432595092503075921#()V" />
+      <node id="5663752477437990412" at="82,0,91,0" concept="2" trace="SortRecordsHavingSortableEnumValues_item1_5663752477437990412#()V" />
+      <node id="5663752477438081863" at="91,0,100,0" concept="2" trace="SortRecordsHavingSortableEnumValues_item2_5663752477438081863#()V" />
+      <node id="5663752477438840735" at="100,0,109,0" concept="2" trace="SortRecordsHavingSortableEnumValues_item3_5663752477438840735#()V" />
+      <node id="5663752477438877630" at="109,0,118,0" concept="2" trace="SortRecordsHavingSortableEnumValues_item4_5663752477438877630#()V" />
+      <node id="5663752477438884990" at="118,0,127,0" concept="2" trace="SortRecordsHavingSortableEnumValues_item5_5663752477438884990#()V" />
+      <node id="5663752477438884984" at="127,0,136,0" concept="2" trace="SortRecordsHavingSortableEnumValues_item6_5663752477438884984#()V" />
+      <node id="5663752477438884978" at="136,0,145,0" concept="2" trace="SortRecordsHavingSortableEnumValues_item7_5663752477438884978#()V" />
+      <node id="5663752477438884972" at="145,0,154,0" concept="2" trace="SortRecordsHavingSortableEnumValues_item8_5663752477438884972#()V" />
+      <node id="5663752477438884966" at="154,0,163,0" concept="2" trace="SortRecordsHavingSortableEnumValues_item9_5663752477438884966#()V" />
+      <scope id="5663752477420891195" at="25,48,26,96" />
+      <scope id="8432595092503075921" at="30,96,31,87" />
+      <scope id="5663752477437990412" at="34,96,35,87" />
+      <scope id="5663752477438081863" at="38,96,39,87" />
+      <scope id="5663752477438840735" at="42,96,43,87" />
+      <scope id="5663752477438877630" at="46,96,47,87" />
+      <scope id="5663752477438884990" at="50,96,51,87" />
+      <scope id="5663752477438884984" at="54,96,55,87" />
+      <scope id="5663752477438884978" at="58,96,59,87" />
+      <scope id="5663752477438884972" at="62,96,63,87" />
+      <scope id="5663752477438884966" at="66,96,67,87" />
+      <scope id="5663752477420891195" at="164,50,165,19" />
+      <scope id="8432595092503075921" at="76,44,78,39">
+        <var name="ti" id="8432595092503075921" />
+      </scope>
+      <scope id="5663752477437990412" at="85,44,87,39">
+        <var name="ti" id="5663752477437990412" />
+      </scope>
+      <scope id="5663752477438081863" at="94,44,96,39">
+        <var name="ti" id="5663752477438081863" />
+      </scope>
+      <scope id="5663752477438840735" at="103,44,105,39">
+        <var name="ti" id="5663752477438840735" />
+      </scope>
+      <scope id="5663752477438877630" at="112,44,114,39">
+        <var name="ti" id="5663752477438877630" />
+      </scope>
+      <scope id="5663752477438884990" at="121,44,123,39">
+        <var name="ti" id="5663752477438884990" />
+      </scope>
+      <scope id="5663752477438884984" at="130,44,132,39">
+        <var name="ti" id="5663752477438884984" />
+      </scope>
+      <scope id="5663752477438884978" at="139,44,141,39">
+        <var name="ti" id="5663752477438884978" />
+      </scope>
+      <scope id="5663752477438884972" at="148,44,150,39">
+        <var name="ti" id="5663752477438884972" />
+      </scope>
+      <scope id="5663752477438884966" at="157,44,159,39">
+        <var name="ti" id="5663752477438884966" />
+      </scope>
+      <scope id="5663752477420891195" at="25,0,28,0" />
+      <scope id="5663752477420891195" at="164,0,167,0">
+        <var name="owner" id="5663752477420891195" />
+      </scope>
+      <scope id="8432595092503075921" at="29,0,33,0" />
+      <scope id="5663752477437990412" at="33,0,37,0" />
+      <scope id="5663752477438081863" at="37,0,41,0" />
+      <scope id="5663752477438840735" at="41,0,45,0" />
+      <scope id="5663752477438877630" at="45,0,49,0" />
+      <scope id="5663752477438884990" at="49,0,53,0" />
+      <scope id="5663752477438884984" at="53,0,57,0" />
+      <scope id="5663752477438884978" at="57,0,61,0" />
+      <scope id="5663752477438884972" at="61,0,65,0" />
+      <scope id="5663752477438884966" at="65,0,69,0" />
+      <scope id="8432595092503075921" at="75,0,80,0" />
+      <scope id="5663752477437990412" at="84,0,89,0" />
+      <scope id="5663752477438081863" at="93,0,98,0" />
+      <scope id="5663752477438840735" at="102,0,107,0" />
+      <scope id="5663752477438877630" at="111,0,116,0" />
+      <scope id="5663752477438884990" at="120,0,125,0" />
+      <scope id="5663752477438884984" at="129,0,134,0" />
+      <scope id="5663752477438884978" at="138,0,143,0" />
+      <scope id="5663752477438884972" at="147,0,152,0" />
+      <scope id="5663752477438884966" at="156,0,161,0" />
+      <scope id="8432595092503075921" at="73,98,80,9" />
+      <scope id="5663752477437990412" at="82,98,89,9" />
+      <scope id="5663752477438081863" at="91,98,98,9" />
+      <scope id="5663752477438840735" at="100,98,107,9" />
+      <scope id="5663752477438877630" at="109,98,116,9" />
+      <scope id="5663752477438884990" at="118,98,125,9" />
+      <scope id="5663752477438884984" at="127,98,134,9" />
+      <scope id="5663752477438884978" at="136,98,143,9" />
+      <scope id="5663752477438884972" at="145,98,152,9" />
+      <scope id="5663752477438884966" at="154,98,161,9" />
+      <scope id="8432595092503075921" at="73,0,82,0" />
+      <scope id="5663752477437990412" at="82,0,91,0" />
+      <scope id="5663752477438081863" at="91,0,100,0" />
+      <scope id="5663752477438840735" at="100,0,109,0" />
+      <scope id="5663752477438877630" at="109,0,118,0" />
+      <scope id="5663752477438884990" at="118,0,127,0" />
+      <scope id="5663752477438884984" at="127,0,136,0" />
+      <scope id="5663752477438884978" at="136,0,145,0" />
+      <scope id="5663752477438884972" at="145,0,154,0" />
+      <scope id="5663752477438884966" at="154,0,163,0" />
+      <unit id="5663752477420891195" at="169,0,172,0" name="test.in.expr.os.enums.EnumsWithValuesOfSortableTypes_Test$CONCEPTS" />
+      <unit id="8432595092503075921" at="74,27,80,7" name="test.in.expr.os.enums.EnumsWithValuesOfSortableTypes_Test$TestBody$1" />
+      <unit id="5663752477437990412" at="83,27,89,7" name="test.in.expr.os.enums.EnumsWithValuesOfSortableTypes_Test$TestBody$2" />
+      <unit id="5663752477438081863" at="92,27,98,7" name="test.in.expr.os.enums.EnumsWithValuesOfSortableTypes_Test$TestBody$3" />
+      <unit id="5663752477438840735" at="101,27,107,7" name="test.in.expr.os.enums.EnumsWithValuesOfSortableTypes_Test$TestBody$4" />
+      <unit id="5663752477438877630" at="110,27,116,7" name="test.in.expr.os.enums.EnumsWithValuesOfSortableTypes_Test$TestBody$5" />
+      <unit id="5663752477438884990" at="119,27,125,7" name="test.in.expr.os.enums.EnumsWithValuesOfSortableTypes_Test$TestBody$6" />
+      <unit id="5663752477438884984" at="128,27,134,7" name="test.in.expr.os.enums.EnumsWithValuesOfSortableTypes_Test$TestBody$7" />
+      <unit id="5663752477438884978" at="137,27,143,7" name="test.in.expr.os.enums.EnumsWithValuesOfSortableTypes_Test$TestBody$8" />
+      <unit id="5663752477438884972" at="146,27,152,7" name="test.in.expr.os.enums.EnumsWithValuesOfSortableTypes_Test$TestBody$9" />
+      <unit id="5663752477438884966" at="155,27,161,7" name="test.in.expr.os.enums.EnumsWithValuesOfSortableTypes_Test$TestBody$10" />
+      <unit id="5663752477420891195" at="71,0,168,0" name="test.in.expr.os.enums.EnumsWithValuesOfSortableTypes_Test$TestBody" />
+      <unit id="5663752477420891195" at="19,0,173,0" name="test.in.expr.os.enums.EnumsWithValuesOfSortableTypes_Test" />
+    </file>
+  </root>
+  <root nodeRef="r:97f27032-f638-4fda-b6f6-aafb3ccea323(test.in.expr.os.enums@tests)/7061117989422955664">
+    <file name="enums_Test.java">
+      <node id="7061117989422955664" at="25,23,26,71" concept="5" />
+      <node id="7061117989423813565" at="30,70,31,61" concept="1" />
+      <node id="8006404979732444652" at="34,68,35,59" concept="1" />
+      <node id="8006404979732446046" at="38,68,39,59" concept="1" />
+      <node id="8006404979732446190" at="42,68,43,59" concept="1" />
+      <node id="8006404979732446355" at="46,68,47,59" concept="1" />
+      <node id="8006404979732446543" at="50,68,51,59" concept="1" />
+      <node id="6859926652484161181" at="54,72,55,63" concept="1" />
+      <node id="6859926652486642305" at="58,72,59,63" concept="1" />
+      <node id="217046401488934820" at="62,75,63,66" concept="1" />
+      <node id="217046401488938551" at="66,75,67,66" concept="1" />
+      <node id="217046401488938573" at="70,75,71,66" concept="1" />
+      <node id="4577412849441838507" at="74,71,75,62" concept="1" />
+      <node id="4577412849441887710" at="78,71,79,62" concept="1" />
+      <node id="4577412849442214412" at="82,71,83,62" concept="1" />
+      <node id="2945473592443637603" at="86,74,87,65" concept="1" />
+      <node id="2945473592443638627" at="90,74,91,65" concept="1" />
+      <node id="2945473592443640792" at="94,74,95,65" concept="1" />
+      <node id="2945473592443642093" at="98,74,99,65" concept="1" />
+      <node id="7061117989423813565" at="108,44,109,112" concept="3" />
+      <node id="7061117989423813565" at="109,112,110,39" concept="1" />
+      <node id="8006404979732444652" at="117,44,118,112" concept="3" />
+      <node id="8006404979732444652" at="118,112,119,39" concept="1" />
+      <node id="8006404979732446046" at="126,44,127,112" concept="3" />
+      <node id="8006404979732446046" at="127,112,128,39" concept="1" />
+      <node id="8006404979732446190" at="135,44,136,112" concept="3" />
+      <node id="8006404979732446190" at="136,112,137,39" concept="1" />
+      <node id="8006404979732446355" at="144,44,145,112" concept="3" />
+      <node id="8006404979732446355" at="145,112,146,39" concept="1" />
+      <node id="8006404979732446543" at="153,44,154,112" concept="3" />
+      <node id="8006404979732446543" at="154,112,155,39" concept="1" />
+      <node id="6859926652484161181" at="162,44,163,112" concept="3" />
+      <node id="6859926652484161181" at="163,112,164,39" concept="1" />
+      <node id="6859926652486642305" at="171,44,172,112" concept="3" />
+      <node id="6859926652486642305" at="172,112,173,39" concept="1" />
+      <node id="217046401488934820" at="180,44,181,111" concept="3" />
+      <node id="217046401488934820" at="181,111,182,39" concept="1" />
+      <node id="217046401488938551" at="189,44,190,111" concept="3" />
+      <node id="217046401488938551" at="190,111,191,39" concept="1" />
+      <node id="217046401488938573" at="198,44,199,111" concept="3" />
+      <node id="217046401488938573" at="199,111,200,39" concept="1" />
+      <node id="4577412849441838507" at="207,44,208,112" concept="3" />
+      <node id="4577412849441838507" at="208,112,209,39" concept="1" />
+      <node id="4577412849441887710" at="216,44,217,112" concept="3" />
+      <node id="4577412849441887710" at="217,112,218,39" concept="1" />
+      <node id="4577412849442214412" at="225,44,226,112" concept="3" />
+      <node id="4577412849442214412" at="226,112,227,39" concept="1" />
+      <node id="2945473592443637603" at="234,44,235,112" concept="3" />
+      <node id="2945473592443637603" at="235,112,236,39" concept="1" />
+      <node id="2945473592443638627" at="243,44,244,112" concept="3" />
+      <node id="2945473592443638627" at="244,112,245,39" concept="1" />
+      <node id="2945473592443640792" at="252,44,253,112" concept="3" />
+      <node id="2945473592443640792" at="253,112,254,39" concept="1" />
+      <node id="2945473592443642093" at="261,44,262,112" concept="3" />
+      <node id="2945473592443642093" at="262,112,263,39" concept="1" />
+      <node id="7061117989422955664" at="268,50,269,19" concept="5" />
+      <node id="7061117989422955664" at="274,0,275,0" concept="4" trace="AbstractTestItem$9u" />
+      <node id="7061117989422955664" at="22,0,24,0" concept="4" trace="ourParametersCacheExtension" />
+      <node id="7061117989422955664" at="25,0,28,0" concept="0" trace="enums_Test#()V" />
+      <node id="7061117989422955664" at="268,0,271,0" concept="0" trace="TestBody#(Ljetbrains/mps/lang/test/runtime/TransformationTest;)V" />
+      <node id="7061117989423813565" at="29,0,33,0" concept="2" trace="TestEnums_item0_7061117989423813565#()V" />
+      <node id="8006404979732444652" at="33,0,37,0" concept="2" trace="IsOneOf_item0_8006404979732444652#()V" />
+      <node id="8006404979732446046" at="37,0,41,0" concept="2" trace="IsOneOf_item1_8006404979732446046#()V" />
+      <node id="8006404979732446190" at="41,0,45,0" concept="2" trace="IsOneOf_item2_8006404979732446190#()V" />
+      <node id="8006404979732446355" at="45,0,49,0" concept="2" trace="IsOneOf_item3_8006404979732446355#()V" />
+      <node id="8006404979732446543" at="49,0,53,0" concept="2" trace="IsOneOf_item4_8006404979732446543#()V" />
+      <node id="6859926652484161181" at="53,0,57,0" concept="2" trace="TestOptions_item0_6859926652484161181#()V" />
+      <node id="6859926652486642305" at="57,0,61,0" concept="2" trace="TestOptions_item1_6859926652486642305#()V" />
+      <node id="217046401488934820" at="61,0,65,0" concept="2" trace="ListIndexByEnum_item0_217046401488934820#()V" />
+      <node id="217046401488938551" at="65,0,69,0" concept="2" trace="ListIndexByEnum_item1_217046401488938551#()V" />
+      <node id="217046401488938573" at="69,0,73,0" concept="2" trace="ListIndexByEnum_item2_217046401488938573#()V" />
+      <node id="4577412849441838507" at="73,0,77,0" concept="2" trace="ValuedEnum_item0_4577412849441838507#()V" />
+      <node id="4577412849441887710" at="77,0,81,0" concept="2" trace="ValuedEnum_item1_4577412849441887710#()V" />
+      <node id="4577412849442214412" at="81,0,85,0" concept="2" trace="ValuedEnum_item2_4577412849442214412#()V" />
+      <node id="2945473592443637603" at="85,0,89,0" concept="2" trace="TestColorList_item0_2945473592443637603#()V" />
+      <node id="2945473592443638627" at="89,0,93,0" concept="2" trace="TestColorList_item1_2945473592443638627#()V" />
+      <node id="2945473592443640792" at="93,0,97,0" concept="2" trace="TestColorList_item2_2945473592443640792#()V" />
+      <node id="2945473592443642093" at="97,0,101,0" concept="2" trace="TestColorList_item3_2945473592443642093#()V" />
+      <node id="7061117989423813565" at="107,0,112,0" concept="2" trace="run#()V" />
+      <node id="8006404979732444652" at="116,0,121,0" concept="2" trace="run#()V" />
+      <node id="8006404979732446046" at="125,0,130,0" concept="2" trace="run#()V" />
+      <node id="8006404979732446190" at="134,0,139,0" concept="2" trace="run#()V" />
+      <node id="8006404979732446355" at="143,0,148,0" concept="2" trace="run#()V" />
+      <node id="8006404979732446543" at="152,0,157,0" concept="2" trace="run#()V" />
+      <node id="6859926652484161181" at="161,0,166,0" concept="2" trace="run#()V" />
+      <node id="6859926652486642305" at="170,0,175,0" concept="2" trace="run#()V" />
+      <node id="217046401488934820" at="179,0,184,0" concept="2" trace="run#()V" />
+      <node id="217046401488938551" at="188,0,193,0" concept="2" trace="run#()V" />
+      <node id="217046401488938573" at="197,0,202,0" concept="2" trace="run#()V" />
+      <node id="4577412849441838507" at="206,0,211,0" concept="2" trace="run#()V" />
+      <node id="4577412849441887710" at="215,0,220,0" concept="2" trace="run#()V" />
+      <node id="4577412849442214412" at="224,0,229,0" concept="2" trace="run#()V" />
+      <node id="2945473592443637603" at="233,0,238,0" concept="2" trace="run#()V" />
+      <node id="2945473592443638627" at="242,0,247,0" concept="2" trace="run#()V" />
+      <node id="2945473592443640792" at="251,0,256,0" concept="2" trace="run#()V" />
+      <node id="2945473592443642093" at="260,0,265,0" concept="2" trace="run#()V" />
+      <node id="7061117989423813565" at="105,72,112,9" concept="1" />
+      <node id="8006404979732444652" at="114,70,121,9" concept="1" />
+      <node id="8006404979732446046" at="123,70,130,9" concept="1" />
+      <node id="8006404979732446190" at="132,70,139,9" concept="1" />
+      <node id="8006404979732446355" at="141,70,148,9" concept="1" />
+      <node id="8006404979732446543" at="150,70,157,9" concept="1" />
+      <node id="6859926652484161181" at="159,74,166,9" concept="1" />
+      <node id="6859926652486642305" at="168,74,175,9" concept="1" />
+      <node id="217046401488934820" at="177,77,184,9" concept="1" />
+      <node id="217046401488938551" at="186,77,193,9" concept="1" />
+      <node id="217046401488938573" at="195,77,202,9" concept="1" />
+      <node id="4577412849441838507" at="204,73,211,9" concept="1" />
+      <node id="4577412849441887710" at="213,73,220,9" concept="1" />
+      <node id="4577412849442214412" at="222,73,229,9" concept="1" />
+      <node id="2945473592443637603" at="231,76,238,9" concept="1" />
+      <node id="2945473592443638627" at="240,76,247,9" concept="1" />
+      <node id="2945473592443640792" at="249,76,256,9" concept="1" />
+      <node id="2945473592443642093" at="258,76,265,9" concept="1" />
+      <node id="7061117989423813565" at="105,0,114,0" concept="2" trace="TestEnums_item0_7061117989423813565#()V" />
+      <node id="8006404979732444652" at="114,0,123,0" concept="2" trace="IsOneOf_item0_8006404979732444652#()V" />
+      <node id="8006404979732446046" at="123,0,132,0" concept="2" trace="IsOneOf_item1_8006404979732446046#()V" />
+      <node id="8006404979732446190" at="132,0,141,0" concept="2" trace="IsOneOf_item2_8006404979732446190#()V" />
+      <node id="8006404979732446355" at="141,0,150,0" concept="2" trace="IsOneOf_item3_8006404979732446355#()V" />
+      <node id="8006404979732446543" at="150,0,159,0" concept="2" trace="IsOneOf_item4_8006404979732446543#()V" />
+      <node id="6859926652484161181" at="159,0,168,0" concept="2" trace="TestOptions_item0_6859926652484161181#()V" />
+      <node id="6859926652486642305" at="168,0,177,0" concept="2" trace="TestOptions_item1_6859926652486642305#()V" />
+      <node id="217046401488934820" at="177,0,186,0" concept="2" trace="ListIndexByEnum_item0_217046401488934820#()V" />
+      <node id="217046401488938551" at="186,0,195,0" concept="2" trace="ListIndexByEnum_item1_217046401488938551#()V" />
+      <node id="217046401488938573" at="195,0,204,0" concept="2" trace="ListIndexByEnum_item2_217046401488938573#()V" />
+      <node id="4577412849441838507" at="204,0,213,0" concept="2" trace="ValuedEnum_item0_4577412849441838507#()V" />
+      <node id="4577412849441887710" at="213,0,222,0" concept="2" trace="ValuedEnum_item1_4577412849441887710#()V" />
+      <node id="4577412849442214412" at="222,0,231,0" concept="2" trace="ValuedEnum_item2_4577412849442214412#()V" />
+      <node id="2945473592443637603" at="231,0,240,0" concept="2" trace="TestColorList_item0_2945473592443637603#()V" />
+      <node id="2945473592443638627" at="240,0,249,0" concept="2" trace="TestColorList_item1_2945473592443638627#()V" />
+      <node id="2945473592443640792" at="249,0,258,0" concept="2" trace="TestColorList_item2_2945473592443640792#()V" />
+      <node id="2945473592443642093" at="258,0,267,0" concept="2" trace="TestColorList_item3_2945473592443642093#()V" />
+      <scope id="7061117989422955664" at="25,23,26,71" />
+      <scope id="7061117989423813565" at="30,70,31,61" />
+      <scope id="8006404979732444652" at="34,68,35,59" />
+      <scope id="8006404979732446046" at="38,68,39,59" />
+      <scope id="8006404979732446190" at="42,68,43,59" />
+      <scope id="8006404979732446355" at="46,68,47,59" />
+      <scope id="8006404979732446543" at="50,68,51,59" />
+      <scope id="6859926652484161181" at="54,72,55,63" />
+      <scope id="6859926652486642305" at="58,72,59,63" />
+      <scope id="217046401488934820" at="62,75,63,66" />
+      <scope id="217046401488938551" at="66,75,67,66" />
+      <scope id="217046401488938573" at="70,75,71,66" />
+      <scope id="4577412849441838507" at="74,71,75,62" />
+      <scope id="4577412849441887710" at="78,71,79,62" />
+      <scope id="4577412849442214412" at="82,71,83,62" />
+      <scope id="2945473592443637603" at="86,74,87,65" />
+      <scope id="2945473592443638627" at="90,74,91,65" />
+      <scope id="2945473592443640792" at="94,74,95,65" />
+      <scope id="2945473592443642093" at="98,74,99,65" />
+      <scope id="7061117989422955664" at="268,50,269,19" />
+      <scope id="7061117989423813565" at="108,44,110,39">
+        <var name="ti" id="7061117989423813565" />
+      </scope>
+      <scope id="8006404979732444652" at="117,44,119,39">
+        <var name="ti" id="8006404979732444652" />
+      </scope>
+      <scope id="8006404979732446046" at="126,44,128,39">
+        <var name="ti" id="8006404979732446046" />
+      </scope>
+      <scope id="8006404979732446190" at="135,44,137,39">
+        <var name="ti" id="8006404979732446190" />
+      </scope>
+      <scope id="8006404979732446355" at="144,44,146,39">
+        <var name="ti" id="8006404979732446355" />
+      </scope>
+      <scope id="8006404979732446543" at="153,44,155,39">
+        <var name="ti" id="8006404979732446543" />
+      </scope>
+      <scope id="6859926652484161181" at="162,44,164,39">
+        <var name="ti" id="6859926652484161181" />
+      </scope>
+      <scope id="6859926652486642305" at="171,44,173,39">
+        <var name="ti" id="6859926652486642305" />
+      </scope>
+      <scope id="217046401488934820" at="180,44,182,39">
+        <var name="ti" id="217046401488934820" />
+      </scope>
+      <scope id="217046401488938551" at="189,44,191,39">
+        <var name="ti" id="217046401488938551" />
+      </scope>
+      <scope id="217046401488938573" at="198,44,200,39">
+        <var name="ti" id="217046401488938573" />
+      </scope>
+      <scope id="4577412849441838507" at="207,44,209,39">
+        <var name="ti" id="4577412849441838507" />
+      </scope>
+      <scope id="4577412849441887710" at="216,44,218,39">
+        <var name="ti" id="4577412849441887710" />
+      </scope>
+      <scope id="4577412849442214412" at="225,44,227,39">
+        <var name="ti" id="4577412849442214412" />
+      </scope>
+      <scope id="2945473592443637603" at="234,44,236,39">
+        <var name="ti" id="2945473592443637603" />
+      </scope>
+      <scope id="2945473592443638627" at="243,44,245,39">
+        <var name="ti" id="2945473592443638627" />
+      </scope>
+      <scope id="2945473592443640792" at="252,44,254,39">
+        <var name="ti" id="2945473592443640792" />
+      </scope>
+      <scope id="2945473592443642093" at="261,44,263,39">
+        <var name="ti" id="2945473592443642093" />
+      </scope>
+      <scope id="7061117989422955664" at="25,0,28,0" />
+      <scope id="7061117989422955664" at="268,0,271,0">
+        <var name="owner" id="7061117989422955664" />
+      </scope>
+      <scope id="7061117989423813565" at="29,0,33,0" />
+      <scope id="8006404979732444652" at="33,0,37,0" />
+      <scope id="8006404979732446046" at="37,0,41,0" />
+      <scope id="8006404979732446190" at="41,0,45,0" />
+      <scope id="8006404979732446355" at="45,0,49,0" />
+      <scope id="8006404979732446543" at="49,0,53,0" />
+      <scope id="6859926652484161181" at="53,0,57,0" />
+      <scope id="6859926652486642305" at="57,0,61,0" />
+      <scope id="217046401488934820" at="61,0,65,0" />
+      <scope id="217046401488938551" at="65,0,69,0" />
+      <scope id="217046401488938573" at="69,0,73,0" />
+      <scope id="4577412849441838507" at="73,0,77,0" />
+      <scope id="4577412849441887710" at="77,0,81,0" />
+      <scope id="4577412849442214412" at="81,0,85,0" />
+      <scope id="2945473592443637603" at="85,0,89,0" />
+      <scope id="2945473592443638627" at="89,0,93,0" />
+      <scope id="2945473592443640792" at="93,0,97,0" />
+      <scope id="2945473592443642093" at="97,0,101,0" />
+      <scope id="7061117989423813565" at="107,0,112,0" />
+      <scope id="8006404979732444652" at="116,0,121,0" />
+      <scope id="8006404979732446046" at="125,0,130,0" />
+      <scope id="8006404979732446190" at="134,0,139,0" />
+      <scope id="8006404979732446355" at="143,0,148,0" />
+      <scope id="8006404979732446543" at="152,0,157,0" />
+      <scope id="6859926652484161181" at="161,0,166,0" />
+      <scope id="6859926652486642305" at="170,0,175,0" />
+      <scope id="217046401488934820" at="179,0,184,0" />
+      <scope id="217046401488938551" at="188,0,193,0" />
+      <scope id="217046401488938573" at="197,0,202,0" />
+      <scope id="4577412849441838507" at="206,0,211,0" />
+      <scope id="4577412849441887710" at="215,0,220,0" />
+      <scope id="4577412849442214412" at="224,0,229,0" />
+      <scope id="2945473592443637603" at="233,0,238,0" />
+      <scope id="2945473592443638627" at="242,0,247,0" />
+      <scope id="2945473592443640792" at="251,0,256,0" />
+      <scope id="2945473592443642093" at="260,0,265,0" />
+      <scope id="7061117989423813565" at="105,72,112,9" />
+      <scope id="8006404979732444652" at="114,70,121,9" />
+      <scope id="8006404979732446046" at="123,70,130,9" />
+      <scope id="8006404979732446190" at="132,70,139,9" />
+      <scope id="8006404979732446355" at="141,70,148,9" />
+      <scope id="8006404979732446543" at="150,70,157,9" />
+      <scope id="6859926652484161181" at="159,74,166,9" />
+      <scope id="6859926652486642305" at="168,74,175,9" />
+      <scope id="217046401488934820" at="177,77,184,9" />
+      <scope id="217046401488938551" at="186,77,193,9" />
+      <scope id="217046401488938573" at="195,77,202,9" />
+      <scope id="4577412849441838507" at="204,73,211,9" />
+      <scope id="4577412849441887710" at="213,73,220,9" />
+      <scope id="4577412849442214412" at="222,73,229,9" />
+      <scope id="2945473592443637603" at="231,76,238,9" />
+      <scope id="2945473592443638627" at="240,76,247,9" />
+      <scope id="2945473592443640792" at="249,76,256,9" />
+      <scope id="2945473592443642093" at="258,76,265,9" />
+      <scope id="7061117989423813565" at="105,0,114,0" />
+      <scope id="8006404979732444652" at="114,0,123,0" />
+      <scope id="8006404979732446046" at="123,0,132,0" />
+      <scope id="8006404979732446190" at="132,0,141,0" />
+      <scope id="8006404979732446355" at="141,0,150,0" />
+      <scope id="8006404979732446543" at="150,0,159,0" />
+      <scope id="6859926652484161181" at="159,0,168,0" />
+      <scope id="6859926652486642305" at="168,0,177,0" />
+      <scope id="217046401488934820" at="177,0,186,0" />
+      <scope id="217046401488938551" at="186,0,195,0" />
+      <scope id="217046401488938573" at="195,0,204,0" />
+      <scope id="4577412849441838507" at="204,0,213,0" />
+      <scope id="4577412849441887710" at="213,0,222,0" />
+      <scope id="4577412849442214412" at="222,0,231,0" />
+      <scope id="2945473592443637603" at="231,0,240,0" />
+      <scope id="2945473592443638627" at="240,0,249,0" />
+      <scope id="2945473592443640792" at="249,0,258,0" />
+      <scope id="2945473592443642093" at="258,0,267,0" />
+      <unit id="7061117989422955664" at="273,0,276,0" name="test.in.expr.os.enums.enums_Test$CONCEPTS" />
+      <unit id="7061117989423813565" at="106,27,112,7" name="test.in.expr.os.enums.enums_Test$TestBody$1" />
+      <unit id="8006404979732444652" at="115,27,121,7" name="test.in.expr.os.enums.enums_Test$TestBody$2" />
+      <unit id="8006404979732446046" at="124,27,130,7" name="test.in.expr.os.enums.enums_Test$TestBody$3" />
+      <unit id="8006404979732446190" at="133,27,139,7" name="test.in.expr.os.enums.enums_Test$TestBody$4" />
+      <unit id="8006404979732446355" at="142,27,148,7" name="test.in.expr.os.enums.enums_Test$TestBody$5" />
+      <unit id="8006404979732446543" at="151,27,157,7" name="test.in.expr.os.enums.enums_Test$TestBody$6" />
+      <unit id="6859926652484161181" at="160,27,166,7" name="test.in.expr.os.enums.enums_Test$TestBody$7" />
+      <unit id="6859926652486642305" at="169,27,175,7" name="test.in.expr.os.enums.enums_Test$TestBody$8" />
+      <unit id="217046401488934820" at="178,27,184,7" name="test.in.expr.os.enums.enums_Test$TestBody$9" />
+      <unit id="217046401488938551" at="187,27,193,7" name="test.in.expr.os.enums.enums_Test$TestBody$10" />
+      <unit id="217046401488938573" at="196,27,202,7" name="test.in.expr.os.enums.enums_Test$TestBody$11" />
+      <unit id="4577412849441838507" at="205,27,211,7" name="test.in.expr.os.enums.enums_Test$TestBody$12" />
+      <unit id="4577412849441887710" at="214,27,220,7" name="test.in.expr.os.enums.enums_Test$TestBody$13" />
+      <unit id="4577412849442214412" at="223,27,229,7" name="test.in.expr.os.enums.enums_Test$TestBody$14" />
+      <unit id="2945473592443637603" at="232,27,238,7" name="test.in.expr.os.enums.enums_Test$TestBody$15" />
+      <unit id="2945473592443638627" at="241,27,247,7" name="test.in.expr.os.enums.enums_Test$TestBody$16" />
+      <unit id="2945473592443640792" at="250,27,256,7" name="test.in.expr.os.enums.enums_Test$TestBody$17" />
+      <unit id="2945473592443642093" at="259,27,265,7" name="test.in.expr.os.enums.enums_Test$TestBody$18" />
+      <unit id="7061117989422955664" at="103,0,272,0" name="test.in.expr.os.enums.enums_Test$TestBody" />
+      <unit id="7061117989422955664" at="19,0,277,0" name="test.in.expr.os.enums.enums_Test" />
+    </file>
+  </root>
+</debug-info>
+

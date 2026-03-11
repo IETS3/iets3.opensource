@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<debug-info version="2">
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123140:jetbrains.mps.baseLanguage.structure.ConstructorDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123155:jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123165:jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242864:jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1070462154015:jetbrains.mps.baseLanguage.structure.StaticFieldDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1070475587102:jetbrains.mps.baseLanguage.structure.SuperConstructorInvocation" />
+  <root nodeRef="r:948ca463-bc1f-4c44-9a83-20450008aee6(test.ts.expr.os.base@tests)/5942228361806334525">
+    <file name="DerivePrecisionFromRange_Test.java">
+      <node id="5942228361806334525" at="25,42,26,60" concept="5" />
+      <node id="5942228361806353887" at="30,50,31,41" concept="1" />
+      <node id="5942228361806354328" at="34,48,35,39" concept="1" />
+      <node id="5942228361806346007" at="38,92,39,83" concept="1" />
+      <node id="5942228361806346452" at="42,92,43,83" concept="1" />
+      <node id="5942228361806346927" at="46,92,47,83" concept="1" />
+      <node id="5942228361806347432" at="50,92,51,83" concept="1" />
+      <node id="3401785396310309328" at="54,92,55,83" concept="1" />
+      <node id="5942228361806334525" at="60,52,61,19" concept="5" />
+      <node id="5942228361806334525" at="65,36,66,437" concept="1" />
+      <node id="5942228361806353887" at="69,52,70,22" concept="1" />
+      <node id="5942228361806354786" at="71,30,72,173" concept="1" />
+      <node id="5942228361806358616" at="72,173,73,174" concept="1" />
+      <node id="5942228361806362046" at="73,174,74,173" concept="1" />
+      <node id="5942228361806363804" at="74,173,75,174" concept="1" />
+      <node id="5942228361806364385" at="75,174,76,174" concept="1" />
+      <node id="5942228361806364941" at="76,174,77,173" concept="1" />
+      <node id="5942228361806365978" at="77,173,78,174" concept="1" />
+      <node id="5942228361806366874" at="78,174,79,173" concept="1" />
+      <node id="5942228361806371467" at="79,173,80,174" concept="1" />
+      <node id="5942228361806354328" at="83,50,84,22" concept="1" />
+      <node id="5942228361806367496" at="85,30,86,173" concept="1" />
+      <node id="5942228361806368253" at="86,173,87,174" concept="1" />
+      <node id="5942228361806368792" at="87,174,88,174" concept="1" />
+      <node id="5942228361806369699" at="88,174,89,174" concept="1" />
+      <node id="5942228361806370434" at="89,174,90,174" concept="1" />
+      <node id="5942228361806371213" at="90,174,91,174" concept="1" />
+      <node id="5942228361806374731" at="91,174,92,174" concept="1" />
+      <node id="5942228361806375303" at="92,174,93,174" concept="1" />
+      <node id="5942228361806376124" at="93,174,94,175" concept="1" />
+      <node id="5942228361806346007" at="97,94,98,22" concept="1" />
+      <node id="5942228361806346007" at="99,30,100,63" concept="3" />
+      <node id="5942228361806346007" at="100,63,101,297" concept="1" />
+      <node id="5942228361806346452" at="104,94,105,22" concept="1" />
+      <node id="5942228361806346452" at="106,30,107,63" concept="3" />
+      <node id="5942228361806346452" at="107,63,108,297" concept="1" />
+      <node id="5942228361806346927" at="111,94,112,22" concept="1" />
+      <node id="5942228361806346927" at="113,30,114,63" concept="3" />
+      <node id="5942228361806346927" at="114,63,115,297" concept="1" />
+      <node id="5942228361806347432" at="118,94,119,22" concept="1" />
+      <node id="5942228361806347432" at="120,30,121,63" concept="3" />
+      <node id="5942228361806347432" at="121,63,122,297" concept="1" />
+      <node id="3401785396310309328" at="125,94,126,22" concept="1" />
+      <node id="3401785396310309328" at="127,30,128,63" concept="3" />
+      <node id="3401785396310309328" at="128,63,129,297" concept="1" />
+      <node id="5942228361806334525" at="22,0,24,0" concept="4" trace="ourParametersCacheExtension" />
+      <node id="5942228361806334525" at="25,0,28,0" concept="0" trace="DerivePrecisionFromRange_Test#()V" />
+      <node id="5942228361806334525" at="60,0,63,0" concept="0" trace="TestBody#(Ljetbrains/mps/lang/test/runtime/TransformationTest;)V" />
+      <node id="5942228361806353887" at="29,0,33,0" concept="2" trace="test_noInfinity#()V" />
+      <node id="5942228361806354328" at="33,0,37,0" concept="2" trace="test_infinity#()V" />
+      <node id="5942228361806346007" at="37,0,41,0" concept="2" trace="test_NodePrecisionCannotBeDerivedCheck5942228361806346007#()V" />
+      <node id="5942228361806346452" at="41,0,45,0" concept="2" trace="test_NodePrecisionCannotBeDerivedCheck5942228361806346452#()V" />
+      <node id="5942228361806346927" at="45,0,49,0" concept="2" trace="test_NodePrecisionCannotBeDerivedCheck5942228361806346927#()V" />
+      <node id="5942228361806347432" at="49,0,53,0" concept="2" trace="test_NodePrecisionCannotBeDerivedCheck5942228361806347432#()V" />
+      <node id="3401785396310309328" at="53,0,57,0" concept="2" trace="test_NodePrecisionCannotBeDerivedCheck3401785396310309328#()V" />
+      <node id="5942228361806334525" at="64,0,68,0" concept="2" trace="initTestNodes#()V" />
+      <node id="5942228361806346007" at="98,22,102,9" concept="1" />
+      <node id="5942228361806346452" at="105,22,109,9" concept="1" />
+      <node id="5942228361806346927" at="112,22,116,9" concept="1" />
+      <node id="5942228361806347432" at="119,22,123,9" concept="1" />
+      <node id="3401785396310309328" at="126,22,130,9" concept="1" />
+      <node id="5942228361806346007" at="97,0,104,0" concept="2" trace="test_NodePrecisionCannotBeDerivedCheck5942228361806346007#()V" />
+      <node id="5942228361806346452" at="104,0,111,0" concept="2" trace="test_NodePrecisionCannotBeDerivedCheck5942228361806346452#()V" />
+      <node id="5942228361806346927" at="111,0,118,0" concept="2" trace="test_NodePrecisionCannotBeDerivedCheck5942228361806346927#()V" />
+      <node id="5942228361806347432" at="118,0,125,0" concept="2" trace="test_NodePrecisionCannotBeDerivedCheck5942228361806347432#()V" />
+      <node id="3401785396310309328" at="125,0,132,0" concept="2" trace="test_NodePrecisionCannotBeDerivedCheck3401785396310309328#()V" />
+      <node id="5942228361806353887" at="70,22,81,9" concept="1" />
+      <node id="5942228361806354328" at="84,22,95,9" concept="1" />
+      <node id="5942228361806353887" at="69,0,83,0" concept="2" trace="test_noInfinity#()V" />
+      <node id="5942228361806354328" at="83,0,97,0" concept="2" trace="test_infinity#()V" />
+      <scope id="5942228361806334525" at="25,42,26,60" />
+      <scope id="5942228361806353887" at="30,50,31,41" />
+      <scope id="5942228361806354328" at="34,48,35,39" />
+      <scope id="5942228361806346007" at="38,92,39,83" />
+      <scope id="5942228361806346452" at="42,92,43,83" />
+      <scope id="5942228361806346927" at="46,92,47,83" />
+      <scope id="5942228361806347432" at="50,92,51,83" />
+      <scope id="3401785396310309328" at="54,92,55,83" />
+      <scope id="5942228361806334525" at="60,52,61,19" />
+      <scope id="5942228361806334525" at="65,36,66,437" />
+      <scope id="5942228361806346007" at="99,30,101,297">
+        <var name="nodeToCheck" id="5942228361806346007" />
+      </scope>
+      <scope id="5942228361806346452" at="106,30,108,297">
+        <var name="nodeToCheck" id="5942228361806346452" />
+      </scope>
+      <scope id="5942228361806346927" at="113,30,115,297">
+        <var name="nodeToCheck" id="5942228361806346927" />
+      </scope>
+      <scope id="5942228361806347432" at="120,30,122,297">
+        <var name="nodeToCheck" id="5942228361806347432" />
+      </scope>
+      <scope id="3401785396310309328" at="127,30,129,297">
+        <var name="nodeToCheck" id="3401785396310309328" />
+      </scope>
+      <scope id="5942228361806334525" at="25,0,28,0" />
+      <scope id="5942228361806334525" at="60,0,63,0">
+        <var name="owner" id="5942228361806334525" />
+      </scope>
+      <scope id="5942228361806353887" at="29,0,33,0" />
+      <scope id="5942228361806354328" at="33,0,37,0" />
+      <scope id="5942228361806346007" at="37,0,41,0" />
+      <scope id="5942228361806346452" at="41,0,45,0" />
+      <scope id="5942228361806346927" at="45,0,49,0" />
+      <scope id="5942228361806347432" at="49,0,53,0" />
+      <scope id="3401785396310309328" at="53,0,57,0" />
+      <scope id="5942228361806334525" at="64,0,68,0" />
+      <scope id="5942228361806346007" at="97,94,102,9" />
+      <scope id="5942228361806346452" at="104,94,109,9" />
+      <scope id="5942228361806346927" at="111,94,116,9" />
+      <scope id="5942228361806347432" at="118,94,123,9" />
+      <scope id="3401785396310309328" at="125,94,130,9" />
+      <scope id="5942228361806346007" at="97,0,104,0" />
+      <scope id="5942228361806346452" at="104,0,111,0" />
+      <scope id="5942228361806346927" at="111,0,118,0" />
+      <scope id="5942228361806347432" at="118,0,125,0" />
+      <scope id="3401785396310309328" at="125,0,132,0" />
+      <scope id="5942228361806353887" at="71,30,80,174" />
+      <scope id="5942228361806354328" at="85,30,94,175" />
+      <scope id="5942228361806353887" at="69,52,81,9" />
+      <scope id="5942228361806354328" at="83,50,95,9" />
+      <scope id="5942228361806353887" at="69,0,83,0" />
+      <scope id="5942228361806354328" at="83,0,97,0" />
+      <unit id="5942228361806334525" at="58,0,134,0" name="test.ts.expr.os.base.DerivePrecisionFromRange_Test$TestBody" />
+      <unit id="5942228361806334525" at="20,0,135,0" name="test.ts.expr.os.base.DerivePrecisionFromRange_Test" />
+    </file>
+  </root>
+  <root nodeRef="r:948ca463-bc1f-4c44-9a83-20450008aee6(test.ts.expr.os.base@tests)/7374787944069613634">
+    <file name="IfElseSection_types_Test.java">
+      <node id="7374787944069613634" at="20,37,21,60" concept="5" />
+      <node id="1011545884830609912" at="25,72,26,63" concept="1" />
+      <node id="1011545884830606005" at="29,72,30,63" concept="1" />
+      <node id="1011545884830608076" at="33,72,34,63" concept="1" />
+      <node id="1011545884830609305" at="37,72,38,63" concept="1" />
+      <node id="7374787944069613634" at="43,52,44,19" concept="5" />
+      <node id="7374787944069613634" at="48,36,49,46" concept="1" />
+      <node id="1011545884830609912" at="52,74,53,22" concept="1" />
+      <node id="1011545884830609912" at="53,22,54,153" concept="1" />
+      <node id="1011545884830606005" at="56,74,57,22" concept="1" />
+      <node id="1011545884830606005" at="57,22,58,153" concept="1" />
+      <node id="1011545884830608076" at="60,74,61,22" concept="1" />
+      <node id="1011545884830608076" at="61,22,62,153" concept="1" />
+      <node id="1011545884830609305" at="64,74,65,22" concept="1" />
+      <node id="1011545884830609305" at="65,22,66,153" concept="1" />
+      <node id="7374787944069613634" at="17,0,19,0" concept="4" trace="ourParametersCacheExtension" />
+      <node id="7374787944069613634" at="20,0,23,0" concept="0" trace="IfElseSection_types_Test#()V" />
+      <node id="7374787944069613634" at="43,0,46,0" concept="0" trace="TestBody#(Ljetbrains/mps/lang/test/runtime/TransformationTest;)V" />
+      <node id="1011545884830609912" at="24,0,28,0" concept="2" trace="test_NodeTypeCheck1011545884830609912#()V" />
+      <node id="1011545884830606005" at="28,0,32,0" concept="2" trace="test_NodeTypeCheck1011545884830606005#()V" />
+      <node id="1011545884830608076" at="32,0,36,0" concept="2" trace="test_NodeTypeCheck1011545884830608076#()V" />
+      <node id="1011545884830609305" at="36,0,40,0" concept="2" trace="test_NodeTypeCheck1011545884830609305#()V" />
+      <node id="7374787944069613634" at="47,0,51,0" concept="2" trace="initTestNodes#()V" />
+      <node id="1011545884830609912" at="52,0,56,0" concept="2" trace="test_NodeTypeCheck1011545884830609912#()V" />
+      <node id="1011545884830606005" at="56,0,60,0" concept="2" trace="test_NodeTypeCheck1011545884830606005#()V" />
+      <node id="1011545884830608076" at="60,0,64,0" concept="2" trace="test_NodeTypeCheck1011545884830608076#()V" />
+      <node id="1011545884830609305" at="64,0,68,0" concept="2" trace="test_NodeTypeCheck1011545884830609305#()V" />
+      <scope id="7374787944069613634" at="20,37,21,60" />
+      <scope id="1011545884830609912" at="25,72,26,63" />
+      <scope id="1011545884830606005" at="29,72,30,63" />
+      <scope id="1011545884830608076" at="33,72,34,63" />
+      <scope id="1011545884830609305" at="37,72,38,63" />
+      <scope id="7374787944069613634" at="43,52,44,19" />
+      <scope id="7374787944069613634" at="48,36,49,46" />
+      <scope id="1011545884830609912" at="52,74,54,153" />
+      <scope id="1011545884830606005" at="56,74,58,153" />
+      <scope id="1011545884830608076" at="60,74,62,153" />
+      <scope id="1011545884830609305" at="64,74,66,153" />
+      <scope id="7374787944069613634" at="20,0,23,0" />
+      <scope id="7374787944069613634" at="43,0,46,0">
+        <var name="owner" id="7374787944069613634" />
+      </scope>
+      <scope id="1011545884830609912" at="24,0,28,0" />
+      <scope id="1011545884830606005" at="28,0,32,0" />
+      <scope id="1011545884830608076" at="32,0,36,0" />
+      <scope id="1011545884830609305" at="36,0,40,0" />
+      <scope id="7374787944069613634" at="47,0,51,0" />
+      <scope id="1011545884830609912" at="52,0,56,0" />
+      <scope id="1011545884830606005" at="56,0,60,0" />
+      <scope id="1011545884830608076" at="60,0,64,0" />
+      <scope id="1011545884830609305" at="64,0,68,0" />
+      <unit id="7374787944069613634" at="41,0,70,0" name="test.ts.expr.os.base.IfElseSection_types_Test$TestBody" />
+      <unit id="7374787944069613634" at="15,0,71,0" name="test.ts.expr.os.base.IfElseSection_types_Test" />
+    </file>
+  </root>
+</debug-info>
+

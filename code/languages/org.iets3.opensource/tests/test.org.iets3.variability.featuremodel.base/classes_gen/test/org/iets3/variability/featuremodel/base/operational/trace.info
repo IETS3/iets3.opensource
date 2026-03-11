@@ -1,0 +1,286 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<debug-info version="2">
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1160998861373:jetbrains.mps.baseLanguage.structure.AssertStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123140:jetbrains.mps.baseLanguage.structure.ConstructorDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123155:jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1144226303539:jetbrains.mps.baseLanguage.structure.ForeachStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123159:jetbrains.mps.baseLanguage.structure.IfStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123165:jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242864:jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123157:jetbrains.mps.baseLanguage.structure.Statement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1070462154015:jetbrains.mps.baseLanguage.structure.StaticFieldDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1070475587102:jetbrains.mps.baseLanguage.structure.SuperConstructorInvocation" />
+  <root nodeRef="r:ef1e0c82-d97e-4786-8365-dae0619d720e(test.org.iets3.variability.featuremodel.base.operational@tests)/3537710743860700144">
+    <file name="FeatureTreeNodeExpressionUtil_Test.java">
+      <node id="3537710743860700144" at="26,47,27,60" concept="9" />
+      <node id="3537710743860702704" at="31,54,32,45" concept="2" />
+      <node id="3537710743861824864" at="35,57,36,48" concept="2" />
+      <node id="3537710743860702773" at="39,58,40,49" concept="2" />
+      <node id="3537710743860700144" at="45,52,46,19" concept="9" />
+      <node id="3537710743860700144" at="50,36,51,46" concept="2" />
+      <node id="3537710743860702704" at="54,56,55,22" concept="2" />
+      <node id="3537710743861177974" at="56,30,57,241" concept="6" />
+      <node id="3537710743861179017" at="57,241,58,0" concept="7" />
+      <node id="3537710743861183312" at="58,0,59,58" concept="0" />
+      <node id="3537710743861199219" at="59,58,60,82" concept="0" />
+      <node id="3537710743861824864" at="63,59,64,22" concept="2" />
+      <node id="3537710743861824867" at="65,30,66,241" concept="6" />
+      <node id="3537710743861824883" at="66,241,67,0" concept="7" />
+      <node id="3537710743861824884" at="67,0,68,58" concept="0" />
+      <node id="3537710743861824890" at="68,58,69,82" concept="0" />
+      <node id="3537710743861824896" at="69,82,70,0" concept="7" />
+      <node id="3537710743860702773" at="73,60,74,22" concept="2" />
+      <node id="3537710743861220859" at="75,30,76,243" concept="6" />
+      <node id="3537710743861220875" at="76,243,77,0" concept="7" />
+      <node id="3537710743861220876" at="77,0,78,58" concept="0" />
+      <node id="3537710743861220882" at="78,58,79,82" concept="0" />
+      <node id="3537710743860702812" at="79,82,80,0" concept="7" />
+      <node id="3537710743860700144" at="87,0,88,0" concept="8" trace="constraints$SJXp" />
+      <node id="3537710743860700144" at="23,0,25,0" concept="8" trace="ourParametersCacheExtension" />
+      <node id="3537710743860700144" at="26,0,29,0" concept="1" trace="FeatureTreeNodeExpressionUtil_Test#()V" />
+      <node id="3537710743860700144" at="45,0,48,0" concept="1" trace="TestBody#(Ljetbrains/mps/lang/test/runtime/TransformationTest;)V" />
+      <node id="3537710743860702704" at="30,0,34,0" concept="5" trace="test_testFeatureRef#()V" />
+      <node id="3537710743861824864" at="34,0,38,0" concept="5" trace="test_testDotExpression#()V" />
+      <node id="3537710743860702773" at="38,0,42,0" concept="5" trace="test_testDotExpression2#()V" />
+      <node id="3537710743860700144" at="49,0,53,0" concept="5" trace="initTestNodes#()V" />
+      <node id="3537710743860702704" at="55,22,61,9" concept="2" />
+      <node id="3537710743861824864" at="64,22,71,9" concept="2" />
+      <node id="3537710743860702773" at="74,22,81,9" concept="2" />
+      <node id="3537710743860702704" at="54,0,63,0" concept="5" trace="test_testFeatureRef#()V" />
+      <node id="3537710743861824864" at="63,0,73,0" concept="5" trace="test_testDotExpression#()V" />
+      <node id="3537710743860702773" at="73,0,83,0" concept="5" trace="test_testDotExpression2#()V" />
+      <scope id="3537710743860700144" at="26,47,27,60" />
+      <scope id="3537710743860702704" at="31,54,32,45" />
+      <scope id="3537710743861824864" at="35,57,36,48" />
+      <scope id="3537710743860702773" at="39,58,40,49" />
+      <scope id="3537710743860700144" at="45,52,46,19" />
+      <scope id="3537710743860700144" at="50,36,51,46" />
+      <scope id="3537710743860700144" at="26,0,29,0" />
+      <scope id="3537710743860700144" at="45,0,48,0">
+        <var name="owner" id="3537710743860700144" />
+      </scope>
+      <scope id="3537710743860702704" at="30,0,34,0" />
+      <scope id="3537710743861824864" at="34,0,38,0" />
+      <scope id="3537710743860702773" at="38,0,42,0" />
+      <scope id="3537710743860700144" at="49,0,53,0" />
+      <scope id="3537710743860702704" at="56,30,60,82">
+        <var name="result" id="3537710743861177975" />
+      </scope>
+      <scope id="3537710743861824864" at="65,30,70,0">
+        <var name="result" id="3537710743861824868" />
+      </scope>
+      <scope id="3537710743860702773" at="75,30,80,0">
+        <var name="result" id="3537710743861220860" />
+      </scope>
+      <scope id="3537710743860702704" at="54,56,61,9" />
+      <scope id="3537710743861824864" at="63,59,71,9" />
+      <scope id="3537710743860702773" at="73,60,81,9" />
+      <scope id="3537710743860702704" at="54,0,63,0" />
+      <scope id="3537710743861824864" at="63,0,73,0" />
+      <scope id="3537710743860702773" at="73,0,83,0" />
+      <unit id="3537710743860700144" at="86,0,89,0" name="test.org.iets3.variability.featuremodel.base.operational.FeatureTreeNodeExpressionUtil_Test$LINKS" />
+      <unit id="3537710743860700144" at="43,0,85,0" name="test.org.iets3.variability.featuremodel.base.operational.FeatureTreeNodeExpressionUtil_Test$TestBody" />
+      <unit id="3537710743860700144" at="21,0,90,0" name="test.org.iets3.variability.featuremodel.base.operational.FeatureTreeNodeExpressionUtil_Test" />
+    </file>
+  </root>
+  <root nodeRef="r:ef1e0c82-d97e-4786-8365-dae0619d720e(test.org.iets3.variability.featuremodel.base.operational@tests)/5950371775740155069">
+    <file name="FeatureModelTraversal_Test.java">
+      <node id="5950371775740155069" at="28,0,29,0" concept="8" trace="LOG" />
+      <node id="5950371775740155069" at="32,39,33,60" concept="9" />
+      <node id="3094552270268388328" at="37,59,38,50" concept="2" />
+      <node id="5950371775740155153" at="41,56,42,47" concept="2" />
+      <node id="3537710743858894370" at="45,67,46,58" concept="2" />
+      <node id="3537710743858967173" at="49,61,50,52" concept="2" />
+      <node id="3537710743859012668" at="53,64,54,55" concept="2" />
+      <node id="5950371775740155069" at="59,52,60,19" concept="9" />
+      <node id="5950371775740155069" at="64,36,65,46" concept="2" />
+      <node id="3094552270268388328" at="68,61,69,22" concept="2" />
+      <node id="3914862565092748399" at="72,35,73,69" concept="2" />
+      <node id="3094552270268395568" at="75,11,76,0" concept="7" />
+      <node id="3094552270268407530" at="76,0,77,103" concept="2" />
+      <node id="3094552270268403320" at="77,103,78,109" concept="6" />
+      <node id="3094552270268430408" at="78,109,79,0" concept="7" />
+      <node id="3094552270268691311" at="79,0,80,127" concept="0" />
+      <node id="3094552270268760810" at="80,127,81,127" concept="0" />
+      <node id="5950371775740155153" at="84,58,85,22" concept="2" />
+      <node id="3914862565092831489" at="88,35,89,69" concept="2" />
+      <node id="5950371775744927898" at="91,11,92,0" concept="7" />
+      <node id="5950371775744662658" at="92,0,93,103" concept="2" />
+      <node id="5950371775744819927" at="94,60,95,125" concept="2" />
+      <node id="5950371775744823089" at="95,125,96,133" concept="2" />
+      <node id="3537710743858894370" at="100,69,101,22" concept="2" />
+      <node id="3537710743858950007" at="102,30,103,244" concept="0" />
+      <node id="3537710743858967173" at="106,63,107,22" concept="2" />
+      <node id="3537710743858967176" at="108,30,109,192" concept="0" />
+      <node id="3537710743859012668" at="112,66,113,22" concept="2" />
+      <node id="3537710743859012671" at="114,30,115,196" concept="0" />
+      <node id="5950371775740155069" at="122,0,123,0" concept="8" trace="root$XEj1" />
+      <node id="5950371775740155069" at="123,0,124,0" concept="8" trace="feature$3d5y" />
+      <node id="5950371775740155069" at="29,0,31,0" concept="8" trace="ourParametersCacheExtension" />
+      <node id="5950371775740155069" at="32,0,35,0" concept="1" trace="FeatureModelTraversal_Test#()V" />
+      <node id="5950371775740155069" at="59,0,62,0" concept="1" trace="TestBody#(Ljetbrains/mps/lang/test/runtime/TransformationTest;)V" />
+      <node id="3914862565092748399" at="71,168,74,11" concept="4" />
+      <node id="3914862565092831489" at="87,168,90,11" concept="4" />
+      <node id="3537710743858894370" at="101,22,104,9" concept="2" />
+      <node id="3537710743858967173" at="107,22,110,9" concept="2" />
+      <node id="3537710743859012668" at="113,22,116,9" concept="2" />
+      <node id="3094552270268388328" at="36,0,40,0" concept="5" trace="test_prunePathFeatureRef#()V" />
+      <node id="5950371775740155153" at="40,0,44,0" concept="5" trace="test_testFindAllPaths#()V" />
+      <node id="3537710743858894370" at="44,0,48,0" concept="5" trace="test_isOnPathFeatureRefExprOfFMI#()V" />
+      <node id="3537710743858967173" at="48,0,52,0" concept="5" trace="test_isOnPathDotExpression#()V" />
+      <node id="3537710743859012668" at="52,0,56,0" concept="5" trace="test_isNotOnPathDotExpression#()V" />
+      <node id="5950371775740155069" at="63,0,67,0" concept="5" trace="initTestNodes#()V" />
+      <node id="5950371775744805174" at="93,103,97,9" concept="3" />
+      <node id="3094552270268389526" at="70,30,75,11" concept="6" />
+      <node id="5950371775740198814" at="86,30,91,11" concept="6" />
+      <node id="3537710743858894370" at="100,0,106,0" concept="5" trace="test_isOnPathFeatureRefExprOfFMI#()V" />
+      <node id="3537710743858967173" at="106,0,112,0" concept="5" trace="test_isOnPathDotExpression#()V" />
+      <node id="3537710743859012668" at="112,0,118,0" concept="5" trace="test_isNotOnPathDotExpression#()V" />
+      <node id="3094552270268388328" at="69,22,82,9" concept="2" />
+      <node id="5950371775740155153" at="85,22,98,9" concept="2" />
+      <node id="3094552270268388328" at="68,0,84,0" concept="5" trace="test_prunePathFeatureRef#()V" />
+      <node id="5950371775740155153" at="84,0,100,0" concept="5" trace="test_testFindAllPaths#()V" />
+      <scope id="5950371775740155069" at="32,39,33,60" />
+      <scope id="3094552270268388328" at="37,59,38,50" />
+      <scope id="5950371775740155153" at="41,56,42,47" />
+      <scope id="3537710743858894370" at="45,67,46,58" />
+      <scope id="3537710743858967173" at="49,61,50,52" />
+      <scope id="3537710743859012668" at="53,64,54,55" />
+      <scope id="5950371775740155069" at="59,52,60,19" />
+      <scope id="5950371775740155069" at="64,36,65,46" />
+      <scope id="3914862565092748399" at="72,35,73,69" />
+      <scope id="3914862565092831489" at="88,35,89,69" />
+      <scope id="3537710743858894370" at="102,30,103,244" />
+      <scope id="3537710743858967173" at="108,30,109,192" />
+      <scope id="3537710743859012668" at="114,30,115,196" />
+      <scope id="5950371775744805180" at="94,60,96,133" />
+      <scope id="5950371775740155069" at="32,0,35,0" />
+      <scope id="5950371775740155069" at="59,0,62,0">
+        <var name="owner" id="5950371775740155069" />
+      </scope>
+      <scope id="3094552270268389539" at="71,168,74,11" />
+      <scope id="5950371775740198824" at="87,168,90,11" />
+      <scope id="3094552270268388328" at="36,0,40,0" />
+      <scope id="5950371775740155153" at="40,0,44,0" />
+      <scope id="3537710743858894370" at="44,0,48,0" />
+      <scope id="3537710743858967173" at="48,0,52,0" />
+      <scope id="3537710743859012668" at="52,0,56,0" />
+      <scope id="5950371775740155069" at="63,0,67,0" />
+      <scope id="5950371775744805174" at="93,103,97,9">
+        <var name="p" id="5950371775744805176" />
+      </scope>
+      <scope id="3537710743858894370" at="100,69,104,9" />
+      <scope id="3537710743858967173" at="106,63,110,9" />
+      <scope id="3537710743859012668" at="112,66,116,9" />
+      <scope id="3537710743858894370" at="100,0,106,0" />
+      <scope id="3537710743858967173" at="106,0,112,0" />
+      <scope id="3537710743859012668" at="112,0,118,0" />
+      <scope id="3094552270268388328" at="70,30,81,127">
+        <var name="paths" id="3094552270268389527" />
+        <var name="prunedPaths" id="3094552270268403321" />
+      </scope>
+      <scope id="5950371775740155153" at="86,30,97,9">
+        <var name="paths" id="5950371775740198815" />
+      </scope>
+      <scope id="3094552270268388328" at="68,61,82,9" />
+      <scope id="5950371775740155153" at="84,58,98,9" />
+      <scope id="3094552270268388328" at="68,0,84,0" />
+      <scope id="5950371775740155153" at="84,0,100,0" />
+      <unit id="5950371775740155069" at="121,0,125,0" name="test.org.iets3.variability.featuremodel.base.operational.FeatureModelTraversal_Test$LINKS" />
+      <unit id="5950371775740155069" at="57,0,120,0" name="test.org.iets3.variability.featuremodel.base.operational.FeatureModelTraversal_Test$TestBody" />
+      <unit id="5950371775740155069" at="26,0,126,0" name="test.org.iets3.variability.featuremodel.base.operational.FeatureModelTraversal_Test" />
+    </file>
+  </root>
+  <root nodeRef="r:ef1e0c82-d97e-4786-8365-dae0619d720e(test.org.iets3.variability.featuremodel.base.operational@tests)/819229749071659673">
+    <file name="ScopeTest_Test.java">
+      <node id="819229749071659673" at="26,27,27,60" concept="9" />
+      <node id="819229749074501680" at="31,89,32,80" concept="2" />
+      <node id="8312801414913783883" at="35,90,36,81" concept="2" />
+      <node id="819229749071660011" at="39,89,40,80" concept="2" />
+      <node id="8312801414913783917" at="43,90,44,81" concept="2" />
+      <node id="819229749074566993" at="47,89,48,80" concept="2" />
+      <node id="819229749071659673" at="53,52,54,19" concept="9" />
+      <node id="819229749071659673" at="58,36,59,45" concept="2" />
+      <node id="819229749074501680" at="62,91,63,22" concept="2" />
+      <node id="819229749074501680" at="64,30,65,66" concept="6" />
+      <node id="819229749074501680" at="65,66,66,460" concept="2" />
+      <node id="8312801414913783883" at="69,92,70,22" concept="2" />
+      <node id="8312801414913783883" at="71,30,72,67" concept="6" />
+      <node id="8312801414913783883" at="72,67,73,393" concept="2" />
+      <node id="819229749071660011" at="76,91,77,22" concept="2" />
+      <node id="819229749071660011" at="78,30,79,66" concept="6" />
+      <node id="819229749071660011" at="79,66,80,728" concept="2" />
+      <node id="8312801414913783917" at="83,92,84,22" concept="2" />
+      <node id="8312801414913783917" at="85,30,86,67" concept="6" />
+      <node id="8312801414913783917" at="86,67,87,393" concept="2" />
+      <node id="819229749074566993" at="90,91,91,22" concept="2" />
+      <node id="819229749074566993" at="92,30,93,66" concept="6" />
+      <node id="819229749074566993" at="93,66,94,393" concept="2" />
+      <node id="819229749071659673" at="23,0,25,0" concept="8" trace="ourParametersCacheExtension" />
+      <node id="819229749071659673" at="26,0,29,0" concept="1" trace="ScopeTest_Test#()V" />
+      <node id="819229749071659673" at="53,0,56,0" concept="1" trace="TestBody#(Ljetbrains/mps/lang/test/runtime/TransformationTest;)V" />
+      <node id="819229749074501680" at="30,0,34,0" concept="5" trace="test_ScopeOf_FeatureRefExpr_feature_819229749074501664#()V" />
+      <node id="8312801414913783883" at="34,0,38,0" concept="5" trace="test_ScopeOf_FeatureRefExpr_feature_8312801414913783868#()V" />
+      <node id="819229749071660011" at="38,0,42,0" concept="5" trace="test_ScopeOf_FeatureRefExpr_feature_819229749071659993#()V" />
+      <node id="8312801414913783917" at="42,0,46,0" concept="5" trace="test_ScopeOf_FeatureRefExpr_feature_8312801414913783902#()V" />
+      <node id="819229749074566993" at="46,0,50,0" concept="5" trace="test_ScopeOf_FeatureRefExpr_feature_819229749074501948#()V" />
+      <node id="819229749071659673" at="57,0,61,0" concept="5" trace="initTestNodes#()V" />
+      <node id="819229749074501680" at="63,22,67,9" concept="2" />
+      <node id="8312801414913783883" at="70,22,74,9" concept="2" />
+      <node id="819229749071660011" at="77,22,81,9" concept="2" />
+      <node id="8312801414913783917" at="84,22,88,9" concept="2" />
+      <node id="819229749074566993" at="91,22,95,9" concept="2" />
+      <node id="819229749074501680" at="62,0,69,0" concept="5" trace="test_ScopeOf_FeatureRefExpr_feature_819229749074501664#()V" />
+      <node id="8312801414913783883" at="69,0,76,0" concept="5" trace="test_ScopeOf_FeatureRefExpr_feature_8312801414913783868#()V" />
+      <node id="819229749071660011" at="76,0,83,0" concept="5" trace="test_ScopeOf_FeatureRefExpr_feature_819229749071659993#()V" />
+      <node id="8312801414913783917" at="83,0,90,0" concept="5" trace="test_ScopeOf_FeatureRefExpr_feature_8312801414913783902#()V" />
+      <node id="819229749074566993" at="90,0,97,0" concept="5" trace="test_ScopeOf_FeatureRefExpr_feature_819229749074501948#()V" />
+      <scope id="819229749071659673" at="26,27,27,60" />
+      <scope id="819229749074501680" at="31,89,32,80" />
+      <scope id="8312801414913783883" at="35,90,36,81" />
+      <scope id="819229749071660011" at="39,89,40,80" />
+      <scope id="8312801414913783917" at="43,90,44,81" />
+      <scope id="819229749074566993" at="47,89,48,80" />
+      <scope id="819229749071659673" at="53,52,54,19" />
+      <scope id="819229749071659673" at="58,36,59,45" />
+      <scope id="819229749074501680" at="64,30,66,460">
+        <var name="nodeToCheck" id="819229749074501680" />
+      </scope>
+      <scope id="8312801414913783883" at="71,30,73,393">
+        <var name="nodeToCheck" id="8312801414913783883" />
+      </scope>
+      <scope id="819229749071660011" at="78,30,80,728">
+        <var name="nodeToCheck" id="819229749071660011" />
+      </scope>
+      <scope id="8312801414913783917" at="85,30,87,393">
+        <var name="nodeToCheck" id="8312801414913783917" />
+      </scope>
+      <scope id="819229749074566993" at="92,30,94,393">
+        <var name="nodeToCheck" id="819229749074566993" />
+      </scope>
+      <scope id="819229749071659673" at="26,0,29,0" />
+      <scope id="819229749071659673" at="53,0,56,0">
+        <var name="owner" id="819229749071659673" />
+      </scope>
+      <scope id="819229749074501680" at="30,0,34,0" />
+      <scope id="8312801414913783883" at="34,0,38,0" />
+      <scope id="819229749071660011" at="38,0,42,0" />
+      <scope id="8312801414913783917" at="42,0,46,0" />
+      <scope id="819229749074566993" at="46,0,50,0" />
+      <scope id="819229749071659673" at="57,0,61,0" />
+      <scope id="819229749074501680" at="62,91,67,9" />
+      <scope id="8312801414913783883" at="69,92,74,9" />
+      <scope id="819229749071660011" at="76,91,81,9" />
+      <scope id="8312801414913783917" at="83,92,88,9" />
+      <scope id="819229749074566993" at="90,91,95,9" />
+      <scope id="819229749074501680" at="62,0,69,0" />
+      <scope id="8312801414913783883" at="69,0,76,0" />
+      <scope id="819229749071660011" at="76,0,83,0" />
+      <scope id="8312801414913783917" at="83,0,90,0" />
+      <scope id="819229749074566993" at="90,0,97,0" />
+      <unit id="819229749071659673" at="51,0,99,0" name="test.org.iets3.variability.featuremodel.base.operational.ScopeTest_Test$TestBody" />
+      <unit id="819229749071659673" at="21,0,100,0" name="test.org.iets3.variability.featuremodel.base.operational.ScopeTest_Test" />
+    </file>
+  </root>
+</debug-info>
+

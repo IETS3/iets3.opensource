@@ -1,0 +1,715 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<debug-info version="2">
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1160998861373:jetbrains.mps.baseLanguage.structure.AssertStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1082485599095:jetbrains.mps.baseLanguage.structure.BlockStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123140:jetbrains.mps.baseLanguage.structure.ConstructorDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123155:jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123159:jetbrains.mps.baseLanguage.structure.IfStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123165:jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242864:jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242878:jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123157:jetbrains.mps.baseLanguage.structure.Statement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1070462154015:jetbrains.mps.baseLanguage.structure.StaticFieldDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1081236700938:jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1070475587102:jetbrains.mps.baseLanguage.structure.SuperConstructorInvocation" />
+  <root nodeRef="r:c12bfe64-ecaf-4d6a-9f0c-0f5bfaf43528(test.org.iets3.variability.configuration.base.editor@tests)/2227388149209083505">
+    <file name="UsingInheritance_Test.java">
+      <node id="2227388149209083505" at="31,34,32,60" concept="11" />
+      <node id="2227388149220568535" at="36,62,37,53" concept="3" />
+      <node id="2227388149223736055" at="40,59,41,50" concept="3" />
+      <node id="2227388149258831390" at="44,77,45,68" concept="3" />
+      <node id="4347876035975437539" at="48,79,49,70" concept="3" />
+      <node id="2227388149258864850" at="52,94,53,85" concept="3" />
+      <node id="2227388149209136912" at="56,94,57,85" concept="3" />
+      <node id="2227388149209249061" at="60,94,61,85" concept="3" />
+      <node id="2227388149209456516" at="64,77,65,68" concept="3" />
+      <node id="2227388149209083505" at="70,52,71,19" concept="11" />
+      <node id="2227388149209083505" at="75,36,76,69" concept="3" />
+      <node id="2227388149220568535" at="79,64,80,22" concept="3" />
+      <node id="2227388149220568535" at="80,22,81,172" concept="3" />
+      <node id="2227388149223736055" at="83,61,84,22" concept="3" />
+      <node id="2227388149223736055" at="84,22,85,172" concept="3" />
+      <node id="2227388149258831390" at="87,79,88,22" concept="3" />
+      <node id="2227388149258831390" at="88,22,89,172" concept="3" />
+      <node id="4347876035975437539" at="91,81,92,22" concept="3" />
+      <node id="4347876035975437539" at="92,22,93,173" concept="3" />
+      <node id="2227388149258864850" at="95,96,96,22" concept="3" />
+      <node id="2227388149258864850" at="97,30,98,67" concept="6" />
+      <node id="2227388149258864850" at="98,67,99,326" concept="3" />
+      <node id="2227388149209136912" at="102,96,103,22" concept="3" />
+      <node id="2227388149209136912" at="104,30,105,67" concept="6" />
+      <node id="2227388149209136912" at="105,67,106,530" concept="3" />
+      <node id="2227388149209249061" at="109,96,110,22" concept="3" />
+      <node id="2227388149209249061" at="111,30,112,67" concept="6" />
+      <node id="2227388149209249061" at="112,67,113,326" concept="3" />
+      <node id="2227388149209456516" at="116,79,117,22" concept="3" />
+      <node id="2227388149209456516" at="118,30,119,63" concept="6" />
+      <node id="2227388149209456516" at="119,63,120,170" concept="3" />
+      <node id="2227388149209083505" at="28,0,30,0" concept="9" trace="ourParametersCacheExtension" />
+      <node id="2227388149209083505" at="31,0,34,0" concept="2" trace="UsingInheritance_Test#()V" />
+      <node id="2227388149209083505" at="70,0,73,0" concept="2" trace="TestBody#(Ljetbrains/mps/lang/test/runtime/TransformationTest;)V" />
+      <node id="2227388149220568535" at="35,0,39,0" concept="5" trace="test_cannotHaveUsingSection#()V" />
+      <node id="2227388149223736055" at="39,0,43,0" concept="5" trace="test_canHaveUsingSection#()V" />
+      <node id="2227388149258831390" at="43,0,47,0" concept="5" trace="test_canHaveUsingSectionHasDeepInheritance#()V" />
+      <node id="4347876035975437539" at="47,0,51,0" concept="5" trace="test_cannotAddUsingSectionAsIsAlreadyPresent#()V" />
+      <node id="2227388149258864850" at="51,0,55,0" concept="5" trace="test_ScopeOf_FMConfigActualParam_config_2227388149258864607#()V" />
+      <node id="2227388149209136912" at="55,0,59,0" concept="5" trace="test_ScopeOf_FMConfigActualParam_config_2227388149209083810#()V" />
+      <node id="2227388149209249061" at="59,0,63,0" concept="5" trace="test_ScopeOf_FMConfigActualParam_config_2227388149209248804#()V" />
+      <node id="2227388149209456516" at="63,0,67,0" concept="5" trace="test_ErrorMessagesCheck2227388149209456516#()V" />
+      <node id="2227388149209083505" at="74,0,78,0" concept="5" trace="initTestNodes#()V" />
+      <node id="2227388149220568535" at="79,0,83,0" concept="5" trace="test_cannotHaveUsingSection#()V" />
+      <node id="2227388149223736055" at="83,0,87,0" concept="5" trace="test_canHaveUsingSection#()V" />
+      <node id="2227388149258831390" at="87,0,91,0" concept="5" trace="test_canHaveUsingSectionHasDeepInheritance#()V" />
+      <node id="4347876035975437539" at="91,0,95,0" concept="5" trace="test_cannotAddUsingSectionAsIsAlreadyPresent#()V" />
+      <node id="2227388149258864850" at="96,22,100,9" concept="3" />
+      <node id="2227388149209136912" at="103,22,107,9" concept="3" />
+      <node id="2227388149209249061" at="110,22,114,9" concept="3" />
+      <node id="2227388149209456516" at="117,22,121,9" concept="3" />
+      <node id="2227388149258864850" at="95,0,102,0" concept="5" trace="test_ScopeOf_FMConfigActualParam_config_2227388149258864607#()V" />
+      <node id="2227388149209136912" at="102,0,109,0" concept="5" trace="test_ScopeOf_FMConfigActualParam_config_2227388149209083810#()V" />
+      <node id="2227388149209249061" at="109,0,116,0" concept="5" trace="test_ScopeOf_FMConfigActualParam_config_2227388149209248804#()V" />
+      <node id="2227388149209456516" at="116,0,123,0" concept="5" trace="test_ErrorMessagesCheck2227388149209456516#()V" />
+      <scope id="2227388149209083505" at="31,34,32,60" />
+      <scope id="2227388149220568535" at="36,62,37,53" />
+      <scope id="2227388149223736055" at="40,59,41,50" />
+      <scope id="2227388149258831390" at="44,77,45,68" />
+      <scope id="4347876035975437539" at="48,79,49,70" />
+      <scope id="2227388149258864850" at="52,94,53,85" />
+      <scope id="2227388149209136912" at="56,94,57,85" />
+      <scope id="2227388149209249061" at="60,94,61,85" />
+      <scope id="2227388149209456516" at="64,77,65,68" />
+      <scope id="2227388149209083505" at="70,52,71,19" />
+      <scope id="2227388149209083505" at="75,36,76,69" />
+      <scope id="2227388149220568535" at="79,64,81,172" />
+      <scope id="2227388149223736055" at="83,61,85,172" />
+      <scope id="2227388149258831390" at="87,79,89,172" />
+      <scope id="4347876035975437539" at="91,81,93,173" />
+      <scope id="2227388149258864850" at="97,30,99,326">
+        <var name="nodeToCheck" id="2227388149258864850" />
+      </scope>
+      <scope id="2227388149209136912" at="104,30,106,530">
+        <var name="nodeToCheck" id="2227388149209136912" />
+      </scope>
+      <scope id="2227388149209249061" at="111,30,113,326">
+        <var name="nodeToCheck" id="2227388149209249061" />
+      </scope>
+      <scope id="2227388149209456516" at="118,30,120,170">
+        <var name="nodeToCheck" id="2227388149209456516" />
+      </scope>
+      <scope id="2227388149209083505" at="31,0,34,0" />
+      <scope id="2227388149209083505" at="70,0,73,0">
+        <var name="owner" id="2227388149209083505" />
+      </scope>
+      <scope id="2227388149220568535" at="35,0,39,0" />
+      <scope id="2227388149223736055" at="39,0,43,0" />
+      <scope id="2227388149258831390" at="43,0,47,0" />
+      <scope id="4347876035975437539" at="47,0,51,0" />
+      <scope id="2227388149258864850" at="51,0,55,0" />
+      <scope id="2227388149209136912" at="55,0,59,0" />
+      <scope id="2227388149209249061" at="59,0,63,0" />
+      <scope id="2227388149209456516" at="63,0,67,0" />
+      <scope id="2227388149209083505" at="74,0,78,0" />
+      <scope id="2227388149220568535" at="79,0,83,0" />
+      <scope id="2227388149223736055" at="83,0,87,0" />
+      <scope id="2227388149258831390" at="87,0,91,0" />
+      <scope id="4347876035975437539" at="91,0,95,0" />
+      <scope id="2227388149258864850" at="95,96,100,9" />
+      <scope id="2227388149209136912" at="102,96,107,9" />
+      <scope id="2227388149209249061" at="109,96,114,9" />
+      <scope id="2227388149209456516" at="116,79,121,9" />
+      <scope id="2227388149258864850" at="95,0,102,0" />
+      <scope id="2227388149209136912" at="102,0,109,0" />
+      <scope id="2227388149209249061" at="109,0,116,0" />
+      <scope id="2227388149209456516" at="116,0,123,0" />
+      <unit id="2227388149209083505" at="68,0,125,0" name="test.org.iets3.variability.configuration.base.editor.UsingInheritance_Test$TestBody" />
+      <unit id="2227388149209083505" at="26,0,126,0" name="test.org.iets3.variability.configuration.base.editor.UsingInheritance_Test" />
+    </file>
+  </root>
+  <root nodeRef="r:c12bfe64-ecaf-4d6a-9f0c-0f5bfaf43528(test.org.iets3.variability.configuration.base.editor@tests)/2539572119535263079">
+    <file name="replaceWithExistingExternalConfig_Test.java">
+      <node id="2539572119535263079" at="31,51,32,60" concept="11" />
+      <node id="2539572119539187526" at="36,69,37,60" concept="3" />
+      <node id="2539572119535275352" at="40,90,41,81" concept="3" />
+      <node id="4482064881140218174" at="44,78,45,69" concept="3" />
+      <node id="6212513894619597462" at="48,91,49,82" concept="3" />
+      <node id="6212513894619648568" at="52,81,53,72" concept="3" />
+      <node id="7895603667742679442" at="56,103,57,94" concept="3" />
+      <node id="7895603667781300934" at="60,103,61,94" concept="3" />
+      <node id="2539572119535263079" at="66,52,67,19" concept="11" />
+      <node id="2539572119535263079" at="71,36,72,46" concept="3" />
+      <node id="2539572119539187526" at="75,71,76,22" concept="3" />
+      <node id="2539572119539187568" at="77,30,78,101" concept="6" />
+      <node id="2539572119539187574" at="78,101,79,108" concept="3" />
+      <node id="2539572119539187579" at="79,108,80,0" concept="8" />
+      <node id="2539572119539187586" at="80,0,81,130" concept="3" />
+      <node id="2539572119535275352" at="84,92,85,22" concept="3" />
+      <node id="2539572119535275911" at="86,30,87,102" concept="6" />
+      <node id="2539572119535276729" at="87,102,88,108" concept="3" />
+      <node id="2539572119539151245" at="88,108,89,0" concept="8" />
+      <node id="2539572119535353124" at="89,0,90,76" concept="6" />
+      <node id="2539572119535354748" at="90,76,91,69" concept="3" />
+      <node id="4482064881140218174" at="94,80,95,22" concept="3" />
+      <node id="4482064881140218177" at="96,30,97,102" concept="6" />
+      <node id="4482064881140218183" at="97,102,98,108" concept="3" />
+      <node id="4482064881140218188" at="98,108,99,0" concept="8" />
+      <node id="4482064881140218189" at="99,0,100,158" concept="3" />
+      <node id="6212513894619597462" at="103,93,104,22" concept="3" />
+      <node id="6212513894619597687" at="105,30,106,102" concept="6" />
+      <node id="6212513894619597693" at="106,102,107,108" concept="3" />
+      <node id="6212513894619648568" at="110,83,111,22" concept="3" />
+      <node id="6212513894619648571" at="112,30,113,102" concept="6" />
+      <node id="6212513894619648577" at="113,102,114,108" concept="3" />
+      <node id="6212513894619648582" at="114,108,115,0" concept="8" />
+      <node id="6212513894619648583" at="115,0,116,158" concept="3" />
+      <node id="7895603667742679442" at="119,105,120,22" concept="3" />
+      <node id="7895603667742679442" at="121,30,122,67" concept="6" />
+      <node id="7895603667742679442" at="122,67,123,462" concept="3" />
+      <node id="7895603667781300934" at="126,105,127,22" concept="3" />
+      <node id="7895603667781300934" at="128,30,129,67" concept="6" />
+      <node id="7895603667781300934" at="129,67,130,394" concept="3" />
+      <node id="2539572119535263079" at="28,0,30,0" concept="9" trace="ourParametersCacheExtension" />
+      <node id="2539572119535263079" at="31,0,34,0" concept="2" trace="replaceWithExistingExternalConfig_Test#()V" />
+      <node id="2539572119535263079" at="66,0,69,0" concept="2" trace="TestBody#(Ljetbrains/mps/lang/test/runtime/TransformationTest;)V" />
+      <node id="2539572119539187526" at="35,0,39,0" concept="5" trace="test_unrestrictedByInheritedConfig#()V" />
+      <node id="2539572119535275352" at="39,0,43,0" concept="5" trace="test_restrictedFeatureModelInlcudesDueToInheritedConfig#()V" />
+      <node id="4482064881140218174" at="43,0,47,0" concept="5" trace="test_unrestrictedByUnspecifiedNoInheritance#()V" />
+      <node id="6212513894619597462" at="47,0,51,0" concept="5" trace="test_restrictedToEmptinessByInlineConfigOfExtendedConfig#()V" />
+      <node id="6212513894619648568" at="51,0,55,0" concept="5" trace="test_unrestrictedByUnspecifiedInExtendedConfig#()V" />
+      <node id="7895603667742679442" at="55,0,59,0" concept="5" trace="test_ScopeOf_FeatureModelConfigurationRef_config_2539572119535275055#()V" />
+      <node id="7895603667781300934" at="59,0,63,0" concept="5" trace="test_ScopeOf_FeatureModelConfigurationRef_config_2539572119535275225#()V" />
+      <node id="2539572119535263079" at="70,0,74,0" concept="5" trace="initTestNodes#()V" />
+      <node id="6212513894619597462" at="104,22,108,9" concept="3" />
+      <node id="7895603667742679442" at="120,22,124,9" concept="3" />
+      <node id="7895603667781300934" at="127,22,131,9" concept="3" />
+      <node id="2539572119539187526" at="76,22,82,9" concept="3" />
+      <node id="4482064881140218174" at="95,22,101,9" concept="3" />
+      <node id="6212513894619648568" at="111,22,117,9" concept="3" />
+      <node id="2539572119535275352" at="85,22,92,9" concept="3" />
+      <node id="6212513894619597462" at="103,0,110,0" concept="5" trace="test_restrictedToEmptinessByInlineConfigOfExtendedConfig#()V" />
+      <node id="7895603667742679442" at="119,0,126,0" concept="5" trace="test_ScopeOf_FeatureModelConfigurationRef_config_2539572119535275055#()V" />
+      <node id="7895603667781300934" at="126,0,133,0" concept="5" trace="test_ScopeOf_FeatureModelConfigurationRef_config_2539572119535275225#()V" />
+      <node id="2539572119539187526" at="75,0,84,0" concept="5" trace="test_unrestrictedByInheritedConfig#()V" />
+      <node id="4482064881140218174" at="94,0,103,0" concept="5" trace="test_unrestrictedByUnspecifiedNoInheritance#()V" />
+      <node id="6212513894619648568" at="110,0,119,0" concept="5" trace="test_unrestrictedByUnspecifiedInExtendedConfig#()V" />
+      <node id="2539572119535275352" at="84,0,94,0" concept="5" trace="test_restrictedFeatureModelInlcudesDueToInheritedConfig#()V" />
+      <scope id="2539572119535263079" at="31,51,32,60" />
+      <scope id="2539572119539187526" at="36,69,37,60" />
+      <scope id="2539572119535275352" at="40,90,41,81" />
+      <scope id="4482064881140218174" at="44,78,45,69" />
+      <scope id="6212513894619597462" at="48,91,49,82" />
+      <scope id="6212513894619648568" at="52,81,53,72" />
+      <scope id="7895603667742679442" at="56,103,57,94" />
+      <scope id="7895603667781300934" at="60,103,61,94" />
+      <scope id="2539572119535263079" at="66,52,67,19" />
+      <scope id="2539572119535263079" at="71,36,72,46" />
+      <scope id="6212513894619597462" at="105,30,107,108">
+        <var name="candidates" id="6212513894619597688" />
+      </scope>
+      <scope id="7895603667742679442" at="121,30,123,462">
+        <var name="nodeToCheck" id="7895603667742679442" />
+      </scope>
+      <scope id="7895603667781300934" at="128,30,130,394">
+        <var name="nodeToCheck" id="7895603667781300934" />
+      </scope>
+      <scope id="2539572119535263079" at="31,0,34,0" />
+      <scope id="2539572119535263079" at="66,0,69,0">
+        <var name="owner" id="2539572119535263079" />
+      </scope>
+      <scope id="2539572119539187526" at="35,0,39,0" />
+      <scope id="2539572119535275352" at="39,0,43,0" />
+      <scope id="4482064881140218174" at="43,0,47,0" />
+      <scope id="6212513894619597462" at="47,0,51,0" />
+      <scope id="6212513894619648568" at="51,0,55,0" />
+      <scope id="7895603667742679442" at="55,0,59,0" />
+      <scope id="7895603667781300934" at="59,0,63,0" />
+      <scope id="2539572119535263079" at="70,0,74,0" />
+      <scope id="2539572119539187526" at="77,30,81,130">
+        <var name="candidates" id="2539572119539187569" />
+      </scope>
+      <scope id="4482064881140218174" at="96,30,100,158">
+        <var name="candidates" id="4482064881140218178" />
+      </scope>
+      <scope id="6212513894619648568" at="112,30,116,158">
+        <var name="candidates" id="6212513894619648572" />
+      </scope>
+      <scope id="2539572119535275352" at="86,30,91,69">
+        <var name="candidates" id="2539572119535275912" />
+        <var name="fmcObserved" id="2539572119535353125" />
+      </scope>
+      <scope id="6212513894619597462" at="103,93,108,9" />
+      <scope id="7895603667742679442" at="119,105,124,9" />
+      <scope id="7895603667781300934" at="126,105,131,9" />
+      <scope id="2539572119539187526" at="75,71,82,9" />
+      <scope id="4482064881140218174" at="94,80,101,9" />
+      <scope id="6212513894619597462" at="103,0,110,0" />
+      <scope id="6212513894619648568" at="110,83,117,9" />
+      <scope id="7895603667742679442" at="119,0,126,0" />
+      <scope id="7895603667781300934" at="126,0,133,0" />
+      <scope id="2539572119535275352" at="84,92,92,9" />
+      <scope id="2539572119539187526" at="75,0,84,0" />
+      <scope id="4482064881140218174" at="94,0,103,0" />
+      <scope id="6212513894619648568" at="110,0,119,0" />
+      <scope id="2539572119535275352" at="84,0,94,0" />
+      <unit id="2539572119535263079" at="64,0,135,0" name="test.org.iets3.variability.configuration.base.editor.replaceWithExistingExternalConfig_Test$TestBody" />
+      <unit id="2539572119535263079" at="26,0,136,0" name="test.org.iets3.variability.configuration.base.editor.replaceWithExistingExternalConfig_Test" />
+    </file>
+  </root>
+  <root nodeRef="r:c12bfe64-ecaf-4d6a-9f0c-0f5bfaf43528(test.org.iets3.variability.configuration.base.editor@tests)/2757913346368727697">
+    <file name="replaceWithUnspecifiedConfig_Test.java">
+      <node id="2757913346368727697" at="26,46,27,60" concept="11" />
+      <node id="2539572119527229484" at="31,85,32,76" concept="3" />
+      <node id="6963470238545368072" at="35,56,36,47" concept="3" />
+      <node id="2757913346368727697" at="41,52,42,19" concept="11" />
+      <node id="2757913346368727697" at="46,36,47,46" concept="3" />
+      <node id="2539572119527229484" at="50,87,51,22" concept="3" />
+      <node id="2539572119527229945" at="52,30,53,78" concept="3" />
+      <node id="2539572119527246925" at="53,78,54,157" concept="0" />
+      <node id="6963470238545368072" at="57,58,58,22" concept="3" />
+      <node id="6963470238545370030" at="59,30,60,106" concept="0" />
+      <node id="2757913346368727697" at="67,0,68,0" concept="9" trace="content$Wdfq" />
+      <node id="2757913346368727697" at="71,0,72,0" concept="9" trace="FeatureModelConfigurationBase$y8" />
+      <node id="2757913346368727697" at="23,0,25,0" concept="9" trace="ourParametersCacheExtension" />
+      <node id="2757913346368727697" at="26,0,29,0" concept="2" trace="replaceWithUnspecifiedConfig_Test#()V" />
+      <node id="2757913346368727697" at="41,0,44,0" concept="2" trace="TestBody#(Ljetbrains/mps/lang/test/runtime/TransformationTest;)V" />
+      <node id="6963470238545368072" at="58,22,61,9" concept="3" />
+      <node id="2539572119527229484" at="30,0,34,0" concept="5" trace="test_mustBeReplacedByFeatureModelConfigurationBase#()V" />
+      <node id="6963470238545368072" at="34,0,38,0" concept="5" trace="test_mustBeApplicable#()V" />
+      <node id="2757913346368727697" at="45,0,49,0" concept="5" trace="initTestNodes#()V" />
+      <node id="2539572119527229484" at="51,22,55,9" concept="3" />
+      <node id="6963470238545368072" at="57,0,63,0" concept="5" trace="test_mustBeApplicable#()V" />
+      <node id="2539572119527229484" at="50,0,57,0" concept="5" trace="test_mustBeReplacedByFeatureModelConfigurationBase#()V" />
+      <scope id="2757913346368727697" at="26,46,27,60" />
+      <scope id="2539572119527229484" at="31,85,32,76" />
+      <scope id="6963470238545368072" at="35,56,36,47" />
+      <scope id="2757913346368727697" at="41,52,42,19" />
+      <scope id="2757913346368727697" at="46,36,47,46" />
+      <scope id="6963470238545368072" at="59,30,60,106" />
+      <scope id="2539572119527229484" at="52,30,54,157" />
+      <scope id="2757913346368727697" at="26,0,29,0" />
+      <scope id="2757913346368727697" at="41,0,44,0">
+        <var name="owner" id="2757913346368727697" />
+      </scope>
+      <scope id="2539572119527229484" at="30,0,34,0" />
+      <scope id="6963470238545368072" at="34,0,38,0" />
+      <scope id="2757913346368727697" at="45,0,49,0" />
+      <scope id="6963470238545368072" at="57,58,61,9" />
+      <scope id="2539572119527229484" at="50,87,55,9" />
+      <scope id="6963470238545368072" at="57,0,63,0" />
+      <scope id="2539572119527229484" at="50,0,57,0" />
+      <unit id="2757913346368727697" at="66,0,69,0" name="test.org.iets3.variability.configuration.base.editor.replaceWithUnspecifiedConfig_Test$LINKS" />
+      <unit id="2757913346368727697" at="70,0,73,0" name="test.org.iets3.variability.configuration.base.editor.replaceWithUnspecifiedConfig_Test$CONCEPTS" />
+      <unit id="2757913346368727697" at="39,0,65,0" name="test.org.iets3.variability.configuration.base.editor.replaceWithUnspecifiedConfig_Test$TestBody" />
+      <unit id="2757913346368727697" at="21,0,74,0" name="test.org.iets3.variability.configuration.base.editor.replaceWithUnspecifiedConfig_Test" />
+    </file>
+  </root>
+  <root nodeRef="r:c12bfe64-ecaf-4d6a-9f0c-0f5bfaf43528(test.org.iets3.variability.configuration.base.editor@tests)/4259522020689247092">
+    <file name="replaceWithUnspecifiedIfInlined_Test.java">
+      <node id="4259522020689247092" at="20,49,21,60" concept="11" />
+      <node id="4259522020695664468" at="25,67,26,58" concept="3" />
+      <node id="4259522020689247092" at="31,52,32,19" concept="11" />
+      <node id="4259522020689247092" at="36,36,37,46" concept="3" />
+      <node id="4259522020695664468" at="40,69,41,22" concept="3" />
+      <node id="4259522020695670214" at="42,30,43,0" concept="8" />
+      <node id="4259522020695670728" at="43,0,44,106" concept="0" />
+      <node id="4259522020689247092" at="17,0,19,0" concept="9" trace="ourParametersCacheExtension" />
+      <node id="4259522020689247092" at="20,0,23,0" concept="2" trace="replaceWithUnspecifiedIfInlined_Test#()V" />
+      <node id="4259522020689247092" at="31,0,34,0" concept="2" trace="TestBody#(Ljetbrains/mps/lang/test/runtime/TransformationTest;)V" />
+      <node id="4259522020695664468" at="24,0,28,0" concept="5" trace="test_unspecifiedMustBeApplicable#()V" />
+      <node id="4259522020689247092" at="35,0,39,0" concept="5" trace="initTestNodes#()V" />
+      <node id="4259522020695664468" at="41,22,45,9" concept="3" />
+      <node id="4259522020695664468" at="40,0,47,0" concept="5" trace="test_unspecifiedMustBeApplicable#()V" />
+      <scope id="4259522020689247092" at="20,49,21,60" />
+      <scope id="4259522020695664468" at="25,67,26,58" />
+      <scope id="4259522020689247092" at="31,52,32,19" />
+      <scope id="4259522020689247092" at="36,36,37,46" />
+      <scope id="4259522020695664468" at="42,30,44,106" />
+      <scope id="4259522020689247092" at="20,0,23,0" />
+      <scope id="4259522020689247092" at="31,0,34,0">
+        <var name="owner" id="4259522020689247092" />
+      </scope>
+      <scope id="4259522020695664468" at="24,0,28,0" />
+      <scope id="4259522020689247092" at="35,0,39,0" />
+      <scope id="4259522020695664468" at="40,69,45,9" />
+      <scope id="4259522020695664468" at="40,0,47,0" />
+      <unit id="4259522020689247092" at="29,0,49,0" name="test.org.iets3.variability.configuration.base.editor.replaceWithUnspecifiedIfInlined_Test$TestBody" />
+      <unit id="4259522020689247092" at="15,0,50,0" name="test.org.iets3.variability.configuration.base.editor.replaceWithUnspecifiedIfInlined_Test" />
+    </file>
+  </root>
+  <root nodeRef="r:c12bfe64-ecaf-4d6a-9f0c-0f5bfaf43528(test.org.iets3.variability.configuration.base.editor@tests)/4259522020752850577">
+    <file name="RolloutConfigWithReference_Test.java">
+      <node id="4259522020752850577" at="42,44,43,60" concept="11" />
+      <node id="4259522020752850829" at="47,64,48,55" concept="3" />
+      <node id="4259522020759064630" at="51,54,52,45" concept="3" />
+      <node id="2852000438550324397" at="55,56,56,47" concept="3" />
+      <node id="4259522020752850577" at="61,52,62,19" concept="11" />
+      <node id="4259522020752850577" at="66,36,67,92" concept="3" />
+      <node id="4259522020752850829" at="70,66,71,22" concept="3" />
+      <node id="4259522020752852294" at="72,30,73,75" concept="6" />
+      <node id="4259522020759061297" at="73,75,74,0" concept="8" />
+      <node id="7418061652485110704" at="75,9,76,75" concept="6" />
+      <node id="7418061652485110704" at="76,75,77,48" concept="6" />
+      <node id="7418061652485110704" at="78,183,79,70" concept="6" />
+      <node id="7418061652485110704" at="79,70,80,43" concept="3" />
+      <node id="7418061652485110704" at="80,43,81,46" concept="3" />
+      <node id="7418061652485110704" at="81,46,82,36" concept="3" />
+      <node id="7418061652485110704" at="82,36,83,139" concept="3" />
+      <node id="7418061652485110704" at="83,139,84,148" concept="3" />
+      <node id="7418061652485110704" at="84,148,85,154" concept="3" />
+      <node id="7418061652485110704" at="85,154,86,27" concept="7" />
+      <node id="7418061652485110704" at="90,15,91,136" concept="6" />
+      <node id="7418061652485110704" at="91,136,92,214" concept="6" />
+      <node id="7418061652485110704" at="92,214,93,134" concept="3" />
+      <node id="7418061652485110704" at="95,13,96,71" concept="3" />
+      <node id="4259522020752867602" at="98,9,99,0" concept="8" />
+      <node id="4259522020759064630" at="102,56,103,22" concept="3" />
+      <node id="4259522020759064818" at="104,30,105,76" concept="6" />
+      <node id="4259522020759064825" at="105,76,106,0" concept="8" />
+      <node id="4259522020759064826" at="107,9,108,76" concept="6" />
+      <node id="4259522020759064826" at="108,76,109,48" concept="6" />
+      <node id="4259522020759064826" at="110,183,111,70" concept="6" />
+      <node id="4259522020759064826" at="111,70,112,43" concept="3" />
+      <node id="4259522020759064826" at="112,43,113,46" concept="3" />
+      <node id="4259522020759064826" at="113,46,114,36" concept="3" />
+      <node id="4259522020759064826" at="114,36,115,139" concept="3" />
+      <node id="4259522020759064826" at="115,139,116,148" concept="3" />
+      <node id="4259522020759064826" at="116,148,117,154" concept="3" />
+      <node id="4259522020759064826" at="117,154,118,27" concept="7" />
+      <node id="4259522020759064826" at="122,15,123,136" concept="6" />
+      <node id="4259522020759064826" at="123,136,124,214" concept="6" />
+      <node id="4259522020759064826" at="124,214,125,134" concept="3" />
+      <node id="4259522020759064826" at="127,13,128,71" concept="3" />
+      <node id="2852000438550324397" at="133,58,134,22" concept="3" />
+      <node id="2852000438550324716" at="135,30,136,76" concept="6" />
+      <node id="2852000438550324723" at="136,76,137,0" concept="8" />
+      <node id="2852000438550324724" at="138,9,139,76" concept="6" />
+      <node id="2852000438550324724" at="139,76,140,48" concept="6" />
+      <node id="2852000438550324724" at="141,183,142,70" concept="6" />
+      <node id="2852000438550324724" at="142,70,143,43" concept="3" />
+      <node id="2852000438550324724" at="143,43,144,46" concept="3" />
+      <node id="2852000438550324724" at="144,46,145,36" concept="3" />
+      <node id="2852000438550324724" at="145,36,146,139" concept="3" />
+      <node id="2852000438550324724" at="146,139,147,148" concept="3" />
+      <node id="2852000438550324724" at="147,148,148,154" concept="3" />
+      <node id="2852000438550324724" at="148,154,149,27" concept="7" />
+      <node id="2852000438550324724" at="153,15,154,136" concept="6" />
+      <node id="2852000438550324724" at="154,136,155,214" concept="6" />
+      <node id="2852000438550324724" at="155,214,156,134" concept="3" />
+      <node id="2852000438550324724" at="158,13,159,71" concept="3" />
+      <node id="4259522020759061572" at="165,44,166,66" concept="6" />
+      <node id="4259522020759061589" at="166,66,167,69" concept="3" />
+      <node id="4259522020759061596" at="167,69,168,0" concept="8" />
+      <node id="4259522020759061597" at="168,0,169,17" concept="7" />
+      <node id="4259522020759061575" at="171,74,172,87" concept="6" />
+      <node id="4259522020759061575" at="172,87,173,60" concept="3" />
+      <node id="4259522020759061575" at="173,60,174,49" concept="3" />
+      <node id="4259522020759061575" at="174,49,175,44" concept="3" />
+      <node id="4259522020759061575" at="175,44,176,63" concept="3" />
+      <node id="4259522020759061575" at="176,63,177,28" concept="7" />
+      <node id="4259522020752850577" at="182,0,183,0" concept="9" trace="targetFeature$16lA" />
+      <node id="4259522020752850577" at="183,0,184,0" concept="9" trace="content$Wdfq" />
+      <node id="4259522020752850577" at="187,0,188,0" concept="9" trace="FeatureModelConfiguration$nE" />
+      <node id="4259522020752850577" at="191,0,192,0" concept="9" trace="name$MnvL" />
+      <node id="4259522020752850577" at="192,0,193,0" concept="9" trace="initiallyChecked$Ubl$" />
+      <node id="4259522020752850577" at="39,0,41,0" concept="9" trace="ourParametersCacheExtension" />
+      <node id="4259522020752850577" at="42,0,45,0" concept="2" trace="RolloutConfigWithReference_Test#()V" />
+      <node id="4259522020752850577" at="61,0,64,0" concept="2" trace="TestBody#(Ljetbrains/mps/lang/test/runtime/TransformationTest;)V" />
+      <node id="4259522020752850829" at="46,0,50,0" concept="5" trace="test_testRolloutWithReference#()V" />
+      <node id="4259522020759064630" at="50,0,54,0" concept="5" trace="test_rollOutInlined#()V" />
+      <node id="2852000438550324397" at="54,0,58,0" concept="5" trace="test_testRolloutMixed#()V" />
+      <node id="4259522020752850577" at="65,0,69,0" concept="5" trace="initTestNodes#()V" />
+      <node id="7418061652485110704" at="89,81,94,15" concept="1" />
+      <node id="4259522020759064826" at="121,81,126,15" concept="1" />
+      <node id="2852000438550324724" at="152,81,157,15" concept="1" />
+      <node id="4259522020759061601" at="165,0,171,0" concept="5" trace="rolloutByCode#(Lorg/jetbrains/mps/openapi/model/SNode;)Lorg/jetbrains/mps/openapi/model/SNode;" />
+      <node id="7418061652485110704" at="88,47,95,13" concept="4" />
+      <node id="4259522020759064826" at="120,47,127,13" concept="4" />
+      <node id="2852000438550324724" at="151,47,158,13" concept="4" />
+      <node id="4259522020759061575" at="171,0,179,0" concept="10" trace="createFeatureModelConfiguration_8dl6dr_a0a0j8#()Lorg/jetbrains/mps/openapi/model/SNode;" />
+      <node id="7418061652485110704" at="77,48,87,23" concept="6" />
+      <node id="7418061652485110704" at="87,23,97,11" concept="4" />
+      <node id="4259522020759064826" at="109,48,119,23" concept="6" />
+      <node id="4259522020759064826" at="119,23,129,11" concept="4" />
+      <node id="2852000438550324724" at="140,48,150,23" concept="6" />
+      <node id="2852000438550324724" at="150,23,160,11" concept="4" />
+      <node id="7418061652485110704" at="74,0,98,9" concept="1" />
+      <node id="4259522020759064826" at="106,0,130,9" concept="1" />
+      <node id="2852000438550324724" at="137,0,161,9" concept="1" />
+      <node id="4259522020759064630" at="103,22,131,9" concept="3" />
+      <node id="2852000438550324397" at="134,22,162,9" concept="3" />
+      <node id="4259522020752850829" at="71,22,100,9" concept="3" />
+      <node id="4259522020759064630" at="102,0,133,0" concept="5" trace="test_rollOutInlined#()V" />
+      <node id="2852000438550324397" at="133,0,164,0" concept="5" trace="test_testRolloutMixed#()V" />
+      <node id="4259522020752850829" at="70,0,102,0" concept="5" trace="test_testRolloutWithReference#()V" />
+      <scope id="4259522020752850577" at="42,44,43,60" />
+      <scope id="4259522020752850829" at="47,64,48,55" />
+      <scope id="4259522020759064630" at="51,54,52,45" />
+      <scope id="2852000438550324397" at="55,56,56,47" />
+      <scope id="4259522020752850577" at="61,52,62,19" />
+      <scope id="4259522020752850577" at="66,36,67,92" />
+      <scope id="4259522020752850577" at="42,0,45,0" />
+      <scope id="4259522020752850577" at="61,0,64,0">
+        <var name="owner" id="4259522020752850577" />
+      </scope>
+      <scope id="7418061652485110704" at="90,15,93,134">
+        <var name="input_c0a0b0f8" id="7418061652485110704" />
+        <var name="repository" id="7418061652485110704" />
+      </scope>
+      <scope id="4259522020759064826" at="122,15,125,134">
+        <var name="input_c0a0b0g8" id="4259522020759064826" />
+        <var name="repository" id="4259522020759064826" />
+      </scope>
+      <scope id="2852000438550324724" at="153,15,156,134">
+        <var name="input_c0a0b0h8" id="2852000438550324724" />
+        <var name="repository" id="2852000438550324724" />
+      </scope>
+      <scope id="4259522020752850829" at="46,0,50,0" />
+      <scope id="4259522020759064630" at="50,0,54,0" />
+      <scope id="2852000438550324397" at="54,0,58,0" />
+      <scope id="4259522020752850577" at="65,0,69,0" />
+      <scope id="4259522020759061601" at="165,44,169,17">
+        <var name="fmc" id="4259522020759061573" />
+      </scope>
+      <scope id="7418061652485110704" at="89,81,94,15" />
+      <scope id="4259522020759064826" at="121,81,126,15" />
+      <scope id="2852000438550324724" at="152,81,157,15" />
+      <scope id="4259522020759061601" at="165,0,171,0">
+        <var name="feat" id="4259522020759062699" />
+      </scope>
+      <scope id="4259522020759061575" at="171,74,177,28">
+        <var name="n0" id="4259522020759061575" />
+      </scope>
+      <scope id="7418061652485110704" at="78,183,86,27">
+        <var name="options" id="7418061652485110704" />
+      </scope>
+      <scope id="7418061652485110704" at="88,47,96,71" />
+      <scope id="4259522020759064826" at="110,183,118,27">
+        <var name="options" id="4259522020759064826" />
+      </scope>
+      <scope id="4259522020759064826" at="120,47,128,71" />
+      <scope id="2852000438550324724" at="141,183,149,27">
+        <var name="options" id="2852000438550324724" />
+      </scope>
+      <scope id="2852000438550324724" at="151,47,159,71" />
+      <scope id="4259522020759061575" at="171,0,179,0" />
+      <scope id="7418061652485110704" at="75,9,97,11">
+        <var name="actualNode_c0a0b0f8" id="7418061652485110704" />
+        <var name="expectedNode_c0a0b0f8" id="7418061652485110704" />
+        <var name="result_c0a0b0f8" id="7418061652485110704" />
+      </scope>
+      <scope id="4259522020759064826" at="107,9,129,11">
+        <var name="actualNode_c0a0b0g8" id="4259522020759064826" />
+        <var name="expectedNode_c0a0b0g8" id="4259522020759064826" />
+        <var name="result_c0a0b0g8" id="4259522020759064826" />
+      </scope>
+      <scope id="2852000438550324724" at="138,9,160,11">
+        <var name="actualNode_c0a0b0h8" id="2852000438550324724" />
+        <var name="expectedNode_c0a0b0h8" id="2852000438550324724" />
+        <var name="result_c0a0b0h8" id="2852000438550324724" />
+      </scope>
+      <scope id="4259522020759064630" at="104,30,130,9">
+        <var name="fmc" id="4259522020759064819" />
+      </scope>
+      <scope id="2852000438550324397" at="135,30,161,9">
+        <var name="fmc" id="2852000438550324717" />
+      </scope>
+      <scope id="4259522020752850829" at="72,30,99,0">
+        <var name="fmc" id="4259522020752852295" />
+      </scope>
+      <scope id="4259522020759064630" at="102,56,131,9" />
+      <scope id="2852000438550324397" at="133,58,162,9" />
+      <scope id="4259522020752850829" at="70,66,100,9" />
+      <scope id="4259522020759064630" at="102,0,133,0" />
+      <scope id="2852000438550324397" at="133,0,164,0" />
+      <scope id="4259522020752850829" at="70,0,102,0" />
+      <unit id="4259522020752850577" at="186,0,189,0" name="test.org.iets3.variability.configuration.base.editor.RolloutConfigWithReference_Test$CONCEPTS" />
+      <unit id="4259522020752850577" at="181,0,185,0" name="test.org.iets3.variability.configuration.base.editor.RolloutConfigWithReference_Test$LINKS" />
+      <unit id="4259522020752850577" at="190,0,194,0" name="test.org.iets3.variability.configuration.base.editor.RolloutConfigWithReference_Test$PROPS" />
+      <unit id="4259522020752850577" at="59,0,180,0" name="test.org.iets3.variability.configuration.base.editor.RolloutConfigWithReference_Test$TestBody" />
+      <unit id="4259522020752850577" at="37,0,195,0" name="test.org.iets3.variability.configuration.base.editor.RolloutConfigWithReference_Test" />
+    </file>
+  </root>
+  <root nodeRef="r:c12bfe64-ecaf-4d6a-9f0c-0f5bfaf43528(test.org.iets3.variability.configuration.base.editor@tests)/4347876035995108438">
+    <file name="UsingInheritanceTwice_Test.java">
+      <node id="4347876035995108438" at="28,39,29,60" concept="11" />
+      <node id="4347876035995110066" at="33,80,34,71" concept="3" />
+      <node id="4347876035995228546" at="37,76,38,67" concept="3" />
+      <node id="4347876035995187111" at="41,94,42,85" concept="3" />
+      <node id="4347876035995228255" at="45,94,46,85" concept="3" />
+      <node id="4347876035995108438" at="51,52,52,19" concept="11" />
+      <node id="4347876035995108438" at="56,36,57,46" concept="3" />
+      <node id="4347876035995110066" at="60,82,61,22" concept="3" />
+      <node id="4347876035995110066" at="61,22,62,171" concept="3" />
+      <node id="4347876035995228546" at="64,78,65,22" concept="3" />
+      <node id="4347876035995228546" at="65,22,66,173" concept="3" />
+      <node id="4347876035995187111" at="68,96,69,22" concept="3" />
+      <node id="4347876035995187111" at="70,30,71,67" concept="6" />
+      <node id="4347876035995187111" at="71,67,72,530" concept="3" />
+      <node id="4347876035995228255" at="75,96,76,22" concept="3" />
+      <node id="4347876035995228255" at="77,30,78,67" concept="6" />
+      <node id="4347876035995228255" at="78,67,79,326" concept="3" />
+      <node id="4347876035995108438" at="25,0,27,0" concept="9" trace="ourParametersCacheExtension" />
+      <node id="4347876035995108438" at="28,0,31,0" concept="2" trace="UsingInheritanceTwice_Test#()V" />
+      <node id="4347876035995108438" at="51,0,54,0" concept="2" trace="TestBody#(Ljetbrains/mps/lang/test/runtime/TransformationTest;)V" />
+      <node id="4347876035995110066" at="32,0,36,0" concept="5" trace="test_canHaveUsingSectionAsOneUsingUnspecified#()V" />
+      <node id="4347876035995228546" at="36,0,40,0" concept="5" trace="test_canNotHaveUsingSectionAsAllSpecified#()V" />
+      <node id="4347876035995187111" at="40,0,44,0" concept="5" trace="test_ScopeOf_FMConfigActualParam_config_4347876035982051847#()V" />
+      <node id="4347876035995228255" at="44,0,48,0" concept="5" trace="test_ScopeOf_FMConfigActualParam_config_4347876035991963485#()V" />
+      <node id="4347876035995108438" at="55,0,59,0" concept="5" trace="initTestNodes#()V" />
+      <node id="4347876035995110066" at="60,0,64,0" concept="5" trace="test_canHaveUsingSectionAsOneUsingUnspecified#()V" />
+      <node id="4347876035995228546" at="64,0,68,0" concept="5" trace="test_canNotHaveUsingSectionAsAllSpecified#()V" />
+      <node id="4347876035995187111" at="69,22,73,9" concept="3" />
+      <node id="4347876035995228255" at="76,22,80,9" concept="3" />
+      <node id="4347876035995187111" at="68,0,75,0" concept="5" trace="test_ScopeOf_FMConfigActualParam_config_4347876035982051847#()V" />
+      <node id="4347876035995228255" at="75,0,82,0" concept="5" trace="test_ScopeOf_FMConfigActualParam_config_4347876035991963485#()V" />
+      <scope id="4347876035995108438" at="28,39,29,60" />
+      <scope id="4347876035995110066" at="33,80,34,71" />
+      <scope id="4347876035995228546" at="37,76,38,67" />
+      <scope id="4347876035995187111" at="41,94,42,85" />
+      <scope id="4347876035995228255" at="45,94,46,85" />
+      <scope id="4347876035995108438" at="51,52,52,19" />
+      <scope id="4347876035995108438" at="56,36,57,46" />
+      <scope id="4347876035995110066" at="60,82,62,171" />
+      <scope id="4347876035995228546" at="64,78,66,173" />
+      <scope id="4347876035995187111" at="70,30,72,530">
+        <var name="nodeToCheck" id="4347876035995187111" />
+      </scope>
+      <scope id="4347876035995228255" at="77,30,79,326">
+        <var name="nodeToCheck" id="4347876035995228255" />
+      </scope>
+      <scope id="4347876035995108438" at="28,0,31,0" />
+      <scope id="4347876035995108438" at="51,0,54,0">
+        <var name="owner" id="4347876035995108438" />
+      </scope>
+      <scope id="4347876035995110066" at="32,0,36,0" />
+      <scope id="4347876035995228546" at="36,0,40,0" />
+      <scope id="4347876035995187111" at="40,0,44,0" />
+      <scope id="4347876035995228255" at="44,0,48,0" />
+      <scope id="4347876035995108438" at="55,0,59,0" />
+      <scope id="4347876035995110066" at="60,0,64,0" />
+      <scope id="4347876035995228546" at="64,0,68,0" />
+      <scope id="4347876035995187111" at="68,96,73,9" />
+      <scope id="4347876035995228255" at="75,96,80,9" />
+      <scope id="4347876035995187111" at="68,0,75,0" />
+      <scope id="4347876035995228255" at="75,0,82,0" />
+      <unit id="4347876035995108438" at="49,0,84,0" name="test.org.iets3.variability.configuration.base.editor.UsingInheritanceTwice_Test$TestBody" />
+      <unit id="4347876035995108438" at="23,0,85,0" name="test.org.iets3.variability.configuration.base.editor.UsingInheritanceTwice_Test" />
+    </file>
+  </root>
+  <root nodeRef="r:c12bfe64-ecaf-4d6a-9f0c-0f5bfaf43528(test.org.iets3.variability.configuration.base.editor@tests)/695266776908495673">
+    <file name="SetManualAssignmentCause_Test.java">
+      <node id="695266776908495673" at="19,42,20,60" concept="11" />
+      <node id="695266776908495673" at="24,64,25,36" concept="3" />
+      <node id="695266776908495673" at="30,52,31,19" concept="11" />
+      <node id="695266776908495673" at="35,51,36,71" concept="3" />
+      <node id="1471228928498846012" at="36,71,37,131" concept="3" />
+      <node id="695266776908495673" at="16,0,18,0" concept="9" trace="ourParametersCacheExtension" />
+      <node id="695266776908495673" at="19,0,22,0" concept="2" trace="SetManualAssignmentCause_Test#()V" />
+      <node id="695266776908495673" at="30,0,33,0" concept="2" trace="TestBody#(Ljetbrains/mps/lang/test/runtime/TransformationTest;)V" />
+      <node id="695266776908495673" at="23,0,27,0" concept="5" trace="test_SetManualAssignmentCause#()V" />
+      <node id="695266776908495673" at="34,0,39,0" concept="5" trace="testMethodImpl#()V" />
+      <scope id="695266776908495673" at="19,42,20,60" />
+      <scope id="695266776908495673" at="24,64,25,36" />
+      <scope id="695266776908495673" at="30,52,31,19" />
+      <scope id="695266776908495673" at="35,51,37,131" />
+      <scope id="695266776908495673" at="19,0,22,0" />
+      <scope id="695266776908495673" at="30,0,33,0">
+        <var name="owner" id="695266776908495673" />
+      </scope>
+      <scope id="695266776908495673" at="23,0,27,0" />
+      <scope id="695266776908495673" at="34,0,39,0" />
+      <unit id="695266776908495673" at="28,0,40,0" name="test.org.iets3.variability.configuration.base.editor.SetManualAssignmentCause_Test$TestBody" />
+      <unit id="695266776908495673" at="14,0,41,0" name="test.org.iets3.variability.configuration.base.editor.SetManualAssignmentCause_Test" />
+    </file>
+  </root>
+  <root nodeRef="r:c12bfe64-ecaf-4d6a-9f0c-0f5bfaf43528(test.org.iets3.variability.configuration.base.editor@tests)/6963470238545388048">
+    <file name="replaceWithUnsepcifiedConfigPreventedByInheritance2_Test.java">
+      <node id="6963470238545388048" at="21,69,22,60" concept="11" />
+      <node id="6963470238545389782" at="26,59,27,50" concept="3" />
+      <node id="6963470238545388048" at="32,52,33,19" concept="11" />
+      <node id="6963470238545388048" at="37,36,38,46" concept="3" />
+      <node id="6963470238545389782" at="41,61,42,22" concept="3" />
+      <node id="6963470238545389782" at="42,22,43,141" concept="3" />
+      <node id="6963470238545388048" at="18,0,20,0" concept="9" trace="ourParametersCacheExtension" />
+      <node id="6963470238545388048" at="21,0,24,0" concept="2" trace="replaceWithUnsepcifiedConfigPreventedByInheritance2_Test#()V" />
+      <node id="6963470238545388048" at="32,0,35,0" concept="2" trace="TestBody#(Ljetbrains/mps/lang/test/runtime/TransformationTest;)V" />
+      <node id="6963470238545389782" at="25,0,29,0" concept="5" trace="test_mustNotBeApplicable#()V" />
+      <node id="6963470238545388048" at="36,0,40,0" concept="5" trace="initTestNodes#()V" />
+      <node id="6963470238545389782" at="41,0,45,0" concept="5" trace="test_mustNotBeApplicable#()V" />
+      <scope id="6963470238545388048" at="21,69,22,60" />
+      <scope id="6963470238545389782" at="26,59,27,50" />
+      <scope id="6963470238545388048" at="32,52,33,19" />
+      <scope id="6963470238545388048" at="37,36,38,46" />
+      <scope id="6963470238545389782" at="41,61,43,141" />
+      <scope id="6963470238545388048" at="21,0,24,0" />
+      <scope id="6963470238545388048" at="32,0,35,0">
+        <var name="owner" id="6963470238545388048" />
+      </scope>
+      <scope id="6963470238545389782" at="25,0,29,0" />
+      <scope id="6963470238545388048" at="36,0,40,0" />
+      <scope id="6963470238545389782" at="41,0,45,0" />
+      <unit id="6963470238545388048" at="30,0,47,0" name="test.org.iets3.variability.configuration.base.editor.replaceWithUnsepcifiedConfigPreventedByInheritance2_Test$TestBody" />
+      <unit id="6963470238545388048" at="16,0,48,0" name="test.org.iets3.variability.configuration.base.editor.replaceWithUnsepcifiedConfigPreventedByInheritance2_Test" />
+    </file>
+  </root>
+  <root nodeRef="r:c12bfe64-ecaf-4d6a-9f0c-0f5bfaf43528(test.org.iets3.variability.configuration.base.editor@tests)/6963470238545718810">
+    <file name="inlineConfigurationPreventedByInheritance_Test.java">
+      <node id="6963470238545718810" at="21,59,22,60" concept="11" />
+      <node id="6963470238545719065" at="26,59,27,50" concept="3" />
+      <node id="6963470238545718810" at="32,52,33,19" concept="11" />
+      <node id="6963470238545718810" at="37,36,38,46" concept="3" />
+      <node id="6963470238545719065" at="41,61,42,22" concept="3" />
+      <node id="6963470238545719065" at="42,22,43,142" concept="3" />
+      <node id="6963470238545718810" at="18,0,20,0" concept="9" trace="ourParametersCacheExtension" />
+      <node id="6963470238545718810" at="21,0,24,0" concept="2" trace="inlineConfigurationPreventedByInheritance_Test#()V" />
+      <node id="6963470238545718810" at="32,0,35,0" concept="2" trace="TestBody#(Ljetbrains/mps/lang/test/runtime/TransformationTest;)V" />
+      <node id="6963470238545719065" at="25,0,29,0" concept="5" trace="test_mustNotBeApplicable#()V" />
+      <node id="6963470238545718810" at="36,0,40,0" concept="5" trace="initTestNodes#()V" />
+      <node id="6963470238545719065" at="41,0,45,0" concept="5" trace="test_mustNotBeApplicable#()V" />
+      <scope id="6963470238545718810" at="21,59,22,60" />
+      <scope id="6963470238545719065" at="26,59,27,50" />
+      <scope id="6963470238545718810" at="32,52,33,19" />
+      <scope id="6963470238545718810" at="37,36,38,46" />
+      <scope id="6963470238545719065" at="41,61,43,142" />
+      <scope id="6963470238545718810" at="21,0,24,0" />
+      <scope id="6963470238545718810" at="32,0,35,0">
+        <var name="owner" id="6963470238545718810" />
+      </scope>
+      <scope id="6963470238545719065" at="25,0,29,0" />
+      <scope id="6963470238545718810" at="36,0,40,0" />
+      <scope id="6963470238545719065" at="41,0,45,0" />
+      <unit id="6963470238545718810" at="30,0,47,0" name="test.org.iets3.variability.configuration.base.editor.inlineConfigurationPreventedByInheritance_Test$TestBody" />
+      <unit id="6963470238545718810" at="16,0,48,0" name="test.org.iets3.variability.configuration.base.editor.inlineConfigurationPreventedByInheritance_Test" />
+    </file>
+  </root>
+  <root nodeRef="r:c12bfe64-ecaf-4d6a-9f0c-0f5bfaf43528(test.org.iets3.variability.configuration.base.editor@tests)/6963470238553650283">
+    <file name="inlineConfigurationPreventedByInheritance2_Test.java">
+      <node id="6963470238553650283" at="21,60,22,60" concept="11" />
+      <node id="6963470238553650528" at="26,59,27,50" concept="3" />
+      <node id="6963470238553650283" at="32,52,33,19" concept="11" />
+      <node id="6963470238553650283" at="37,36,38,46" concept="3" />
+      <node id="6963470238553650528" at="41,61,42,22" concept="3" />
+      <node id="6963470238553650528" at="42,22,43,142" concept="3" />
+      <node id="6963470238553650283" at="18,0,20,0" concept="9" trace="ourParametersCacheExtension" />
+      <node id="6963470238553650283" at="21,0,24,0" concept="2" trace="inlineConfigurationPreventedByInheritance2_Test#()V" />
+      <node id="6963470238553650283" at="32,0,35,0" concept="2" trace="TestBody#(Ljetbrains/mps/lang/test/runtime/TransformationTest;)V" />
+      <node id="6963470238553650528" at="25,0,29,0" concept="5" trace="test_mustNotBeApplicable#()V" />
+      <node id="6963470238553650283" at="36,0,40,0" concept="5" trace="initTestNodes#()V" />
+      <node id="6963470238553650528" at="41,0,45,0" concept="5" trace="test_mustNotBeApplicable#()V" />
+      <scope id="6963470238553650283" at="21,60,22,60" />
+      <scope id="6963470238553650528" at="26,59,27,50" />
+      <scope id="6963470238553650283" at="32,52,33,19" />
+      <scope id="6963470238553650283" at="37,36,38,46" />
+      <scope id="6963470238553650528" at="41,61,43,142" />
+      <scope id="6963470238553650283" at="21,0,24,0" />
+      <scope id="6963470238553650283" at="32,0,35,0">
+        <var name="owner" id="6963470238553650283" />
+      </scope>
+      <scope id="6963470238553650528" at="25,0,29,0" />
+      <scope id="6963470238553650283" at="36,0,40,0" />
+      <scope id="6963470238553650528" at="41,0,45,0" />
+      <unit id="6963470238553650283" at="30,0,47,0" name="test.org.iets3.variability.configuration.base.editor.inlineConfigurationPreventedByInheritance2_Test$TestBody" />
+      <unit id="6963470238553650283" at="16,0,48,0" name="test.org.iets3.variability.configuration.base.editor.inlineConfigurationPreventedByInheritance2_Test" />
+    </file>
+  </root>
+</debug-info>
+

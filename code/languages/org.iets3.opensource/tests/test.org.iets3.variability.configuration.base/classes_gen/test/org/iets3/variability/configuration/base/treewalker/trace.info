@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<debug-info version="2">
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123140:jetbrains.mps.baseLanguage.structure.ConstructorDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123155:jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123165:jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242864:jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123157:jetbrains.mps.baseLanguage.structure.Statement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1070462154015:jetbrains.mps.baseLanguage.structure.StaticFieldDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1070475587102:jetbrains.mps.baseLanguage.structure.SuperConstructorInvocation" />
+  <root nodeRef="r:4d8894de-80d7-42a6-8902-246e1bc3c3f1(test.org.iets3.variability.configuration.base.treewalker@tests)/7747328487425150063">
+    <file name="WalkOnVariationModels_Test.java">
+      <node id="7747328487425150063" at="28,39,29,60" concept="6" />
+      <node id="7747328487425150320" at="33,59,34,50" concept="1" />
+      <node id="7747328487425294544" at="37,79,38,70" concept="1" />
+      <node id="7747328487425150063" at="43,52,44,19" concept="6" />
+      <node id="7747328487425150063" at="48,36,49,46" concept="1" />
+      <node id="7747328487425150320" at="52,61,53,22" concept="1" />
+      <node id="7747328487425161511" at="54,30,55,251" concept="3" />
+      <node id="7747328487425163896" at="55,251,56,0" concept="4" />
+      <node id="7747328487425256217" at="56,0,57,112" concept="1" />
+      <node id="7747328487425294338" at="57,112,58,0" concept="4" />
+      <node id="7747328487425294544" at="61,81,62,22" concept="1" />
+      <node id="7747328487425294547" at="63,30,64,251" concept="3" />
+      <node id="7747328487425294565" at="64,251,65,0" concept="4" />
+      <node id="7747328487425303802" at="65,0,66,115" concept="1" />
+      <node id="7747328487425150063" at="73,0,74,0" concept="5" trace="FeatureConfiguration$x2" />
+      <node id="7747328487425150063" at="74,0,75,0" concept="5" trace="FeatureModelConfigurationRef$kq" />
+      <node id="7747328487425150063" at="78,0,79,0" concept="5" trace="config$VWuN" />
+      <node id="7747328487425150063" at="25,0,27,0" concept="5" trace="ourParametersCacheExtension" />
+      <node id="7747328487425150063" at="28,0,31,0" concept="0" trace="WalkOnVariationModels_Test#()V" />
+      <node id="7747328487425150063" at="43,0,46,0" concept="0" trace="TestBody#(Ljetbrains/mps/lang/test/runtime/TransformationTest;)V" />
+      <node id="7747328487425150320" at="32,0,36,0" concept="2" trace="test_walkerFindsAllNodes#()V" />
+      <node id="7747328487425294544" at="36,0,40,0" concept="2" trace="test_walkerReturnConfigurationFeatureForRoot#()V" />
+      <node id="7747328487425150063" at="47,0,51,0" concept="2" trace="initTestNodes#()V" />
+      <node id="7747328487425294544" at="62,22,67,9" concept="1" />
+      <node id="7747328487425150320" at="53,22,59,9" concept="1" />
+      <node id="7747328487425294544" at="61,0,69,0" concept="2" trace="test_walkerReturnConfigurationFeatureForRoot#()V" />
+      <node id="7747328487425150320" at="52,0,61,0" concept="2" trace="test_walkerFindsAllNodes#()V" />
+      <scope id="7747328487425150063" at="28,39,29,60" />
+      <scope id="7747328487425150320" at="33,59,34,50" />
+      <scope id="7747328487425294544" at="37,79,38,70" />
+      <scope id="7747328487425150063" at="43,52,44,19" />
+      <scope id="7747328487425150063" at="48,36,49,46" />
+      <scope id="7747328487425150063" at="28,0,31,0" />
+      <scope id="7747328487425150063" at="43,0,46,0">
+        <var name="owner" id="7747328487425150063" />
+      </scope>
+      <scope id="7747328487425294544" at="63,30,66,115">
+        <var name="configurations" id="7747328487425294548" />
+      </scope>
+      <scope id="7747328487425150320" at="32,0,36,0" />
+      <scope id="7747328487425294544" at="36,0,40,0" />
+      <scope id="7747328487425150063" at="47,0,51,0" />
+      <scope id="7747328487425150320" at="54,30,58,0">
+        <var name="configurations" id="7747328487425161514" />
+      </scope>
+      <scope id="7747328487425294544" at="61,81,67,9" />
+      <scope id="7747328487425150320" at="52,61,59,9" />
+      <scope id="7747328487425294544" at="61,0,69,0" />
+      <scope id="7747328487425150320" at="52,0,61,0" />
+      <unit id="7747328487425150063" at="77,0,80,0" name="test.org.iets3.variability.configuration.base.treewalker.WalkOnVariationModels_Test$LINKS" />
+      <unit id="7747328487425150063" at="72,0,76,0" name="test.org.iets3.variability.configuration.base.treewalker.WalkOnVariationModels_Test$CONCEPTS" />
+      <unit id="7747328487425150063" at="41,0,71,0" name="test.org.iets3.variability.configuration.base.treewalker.WalkOnVariationModels_Test$TestBody" />
+      <unit id="7747328487425150063" at="23,0,81,0" name="test.org.iets3.variability.configuration.base.treewalker.WalkOnVariationModels_Test" />
+    </file>
+  </root>
+</debug-info>
+

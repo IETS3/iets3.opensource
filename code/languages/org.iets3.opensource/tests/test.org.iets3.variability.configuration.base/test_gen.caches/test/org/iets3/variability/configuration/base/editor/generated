@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<product version="3" modelHash="bp70f3jbgujjesp48rrjkuxyimpw38q">
+  <files names="RolloutConfigWithReference_Test.java:SetManualAssignmentCause_Test.java:UsingInheritanceTwice_Test.java:UsingInheritance_Test.java:inlineConfigurationPreventedByInheritance2_Test.java:inlineConfigurationPreventedByInheritance_Test.java:replaceWithExistingExternalConfig_Test.java:replaceWithUnsepcifiedConfigPreventedByInheritance2_Test.java:replaceWithUnspecifiedConfig_Test.java:replaceWithUnspecifiedIfInlined_Test.java" />
+</product>
+

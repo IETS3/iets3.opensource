@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<debug-info version="2">
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123140:jetbrains.mps.baseLanguage.structure.ConstructorDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123155:jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123165:jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242864:jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123157:jetbrains.mps.baseLanguage.structure.Statement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1070462154015:jetbrains.mps.baseLanguage.structure.StaticFieldDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1070475587102:jetbrains.mps.baseLanguage.structure.SuperConstructorInvocation" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1164991038168:jetbrains.mps.baseLanguage.structure.ThrowStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/5351203823916750322:jetbrains.mps.baseLanguage.structure.TryUniversalStatement" />
+  <root nodeRef="r:548037fc-8928-4e47-be57-455956a745c9(test.org.iets3.analysis.base.highlighter@tests)/8923074921376735335">
+    <file name="TestSolverChecker_Test.java">
+      <node id="8923074921376735335" at="34,35,35,60" concept="6" />
+      <node id="8923074921376735335" at="39,57,40,36" concept="1" />
+      <node id="8923074921376735335" at="45,52,46,19" concept="6" />
+      <node id="8923074921376735335" at="50,51,51,53" concept="1" />
+      <node id="8923074921376739282" at="51,53,52,151" concept="3" />
+      <node id="8923074921376752916" at="52,151,53,37" concept="3" />
+      <node id="8923074921376752922" at="54,11,55,75" concept="3" />
+      <node id="8923074921376752931" at="55,75,56,82" concept="1" />
+      <node id="8923074921376752936" at="56,82,57,42" concept="3" />
+      <node id="8923074921376752943" at="57,42,58,59" concept="3" />
+      <node id="8923074921376752951" at="58,59,59,0" concept="4" />
+      <node id="8923074921376883847" at="59,0,60,138" concept="3" />
+      <node id="8923074921376901646" at="60,138,61,71" concept="3" />
+      <node id="8923074921376954578" at="61,71,62,0" concept="4" />
+      <node id="8923074921376962886" at="62,0,63,84" concept="1" />
+      <node id="8923074921377013210" at="63,84,64,61" concept="3" />
+      <node id="8923074921377084170" at="64,61,65,67" concept="1" />
+      <node id="7605970775850530660" at="65,67,66,64" concept="3" />
+      <node id="7605970775850630098" at="66,64,67,68" concept="1" />
+      <node id="7605970775850517479" at="67,68,68,51" concept="3" />
+      <node id="7605970775850645326" at="68,51,69,57" concept="1" />
+      <node id="7605970775850654887" at="69,57,70,0" concept="4" />
+      <node id="7605970775850688352" at="70,0,71,100" concept="1" />
+      <node id="7605970775850704296" at="71,100,72,119" concept="1" />
+      <node id="8923074921376753032" at="73,38,74,38" concept="7" />
+      <node id="8923074921376753041" at="75,36,76,38" concept="7" />
+      <node id="8923074921376753050" at="77,40,78,38" concept="7" />
+      <node id="8923074921376752488" at="80,7,81,0" concept="4" />
+      <node id="8923074921376740137" at="81,0,82,0" concept="4" />
+      <node id="8923074921376735335" at="31,0,33,0" concept="5" trace="ourParametersCacheExtension" />
+      <node id="8923074921376735335" at="34,0,37,0" concept="0" trace="TestSolverChecker_Test#()V" />
+      <node id="8923074921376735335" at="45,0,48,0" concept="0" trace="TestBody#(Ljetbrains/mps/lang/test/runtime/TransformationTest;)V" />
+      <node id="8923074921376735335" at="38,0,42,0" concept="2" trace="test_TestSolverChecker#()V" />
+      <node id="8923074921376752920" at="53,37,80,7" concept="8" />
+      <node id="8923074921376735335" at="49,0,84,0" concept="2" trace="testMethodImpl#()V" />
+      <scope id="8923074921376753058" at="79,17,79,17" />
+      <scope id="8923074921376735335" at="34,35,35,60" />
+      <scope id="8923074921376735335" at="39,57,40,36" />
+      <scope id="8923074921376735335" at="45,52,46,19" />
+      <scope id="8923074921376753031" at="73,38,74,38" />
+      <scope id="8923074921376753040" at="75,36,76,38" />
+      <scope id="8923074921376753049" at="77,40,78,38" />
+      <scope id="8923074921376753030" at="73,7,75,7">
+        <var name="e" id="8923074921376753036" />
+      </scope>
+      <scope id="8923074921376753039" at="75,7,77,7">
+        <var name="e" id="8923074921376753045" />
+      </scope>
+      <scope id="8923074921376753048" at="77,7,79,7">
+        <var name="e" id="8923074921376753054" />
+      </scope>
+      <scope id="8923074921376735335" at="34,0,37,0" />
+      <scope id="8923074921376735335" at="45,0,48,0">
+        <var name="owner" id="8923074921376735335" />
+      </scope>
+      <scope id="8923074921376735335" at="38,0,42,0" />
+      <scope id="8923074921376752921" at="54,11,72,119">
+        <var name="errMsg" id="8923074921376752944" />
+        <var name="iresult" id="8923074921376752937" />
+        <var name="iresults" id="8923074921376752923" />
+        <var name="message" id="8923074921377013211" />
+        <var name="messageType" id="7605970775850530661" />
+        <var name="myMessages" id="8923074921376901647" />
+        <var name="status" id="7605970775850517480" />
+        <var name="updateResult" id="8923074921376883848" />
+      </scope>
+      <scope id="8923074921376735335" at="50,51,82,0">
+        <var name="highlighter" id="8923074921376752917" />
+        <var name="runManuallyAsync" id="8923074921376739283" />
+      </scope>
+      <scope id="8923074921376735335" at="49,0,84,0" />
+      <unit id="8923074921376735335" at="43,0,85,0" name="test.org.iets3.analysis.base.highlighter.TestSolverChecker_Test$TestBody" />
+      <unit id="8923074921376735335" at="29,0,86,0" name="test.org.iets3.analysis.base.highlighter.TestSolverChecker_Test" />
+    </file>
+  </root>
+</debug-info>
+

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<debug-info version="2">
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123140:jetbrains.mps.baseLanguage.structure.ConstructorDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123155:jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123165:jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242864:jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123157:jetbrains.mps.baseLanguage.structure.Statement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1070462154015:jetbrains.mps.baseLanguage.structure.StaticFieldDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1070475587102:jetbrains.mps.baseLanguage.structure.SuperConstructorInvocation" />
+  <root nodeRef="r:81693c6e-9875-404a-9f48-6a4922ba01cd(test.org.iets3.variability.featuremodel.base.treewalker@tests)/7747328487425150063">
+    <file name="WalkOnVariationModels_Test.java">
+      <node id="7747328487425150063" at="28,39,29,60" concept="6" />
+      <node id="5546397519187196903" at="33,75,34,66" concept="1" />
+      <node id="7747328487425150063" at="39,52,40,19" concept="6" />
+      <node id="7747328487425150063" at="44,36,45,46" concept="1" />
+      <node id="5546397519187196903" at="48,77,49,22" concept="1" />
+      <node id="5546397519187196991" at="50,30,51,212" concept="3" />
+      <node id="5546397519187202207" at="51,212,52,0" concept="4" />
+      <node id="5546397519187202533" at="52,0,53,107" concept="1" />
+      <node id="7747328487425150063" at="60,0,61,0" concept="5" trace="Feature$D7" />
+      <node id="7747328487425150063" at="61,0,62,0" concept="5" trace="FeatureModelInclude$Iq" />
+      <node id="7747328487425150063" at="65,0,66,0" concept="5" trace="fm$EY24" />
+      <node id="7747328487425150063" at="25,0,27,0" concept="5" trace="ourParametersCacheExtension" />
+      <node id="7747328487425150063" at="28,0,31,0" concept="0" trace="WalkOnVariationModels_Test#()V" />
+      <node id="7747328487425150063" at="39,0,42,0" concept="0" trace="TestBody#(Ljetbrains/mps/lang/test/runtime/TransformationTest;)V" />
+      <node id="5546397519187196903" at="32,0,36,0" concept="2" trace="test_walkerFindsAllFeatureInFeatureModel#()V" />
+      <node id="7747328487425150063" at="43,0,47,0" concept="2" trace="initTestNodes#()V" />
+      <node id="5546397519187196903" at="49,22,54,9" concept="1" />
+      <node id="5546397519187196903" at="48,0,56,0" concept="2" trace="test_walkerFindsAllFeatureInFeatureModel#()V" />
+      <scope id="7747328487425150063" at="28,39,29,60" />
+      <scope id="5546397519187196903" at="33,75,34,66" />
+      <scope id="7747328487425150063" at="39,52,40,19" />
+      <scope id="7747328487425150063" at="44,36,45,46" />
+      <scope id="7747328487425150063" at="28,0,31,0" />
+      <scope id="7747328487425150063" at="39,0,42,0">
+        <var name="owner" id="7747328487425150063" />
+      </scope>
+      <scope id="5546397519187196903" at="50,30,53,107">
+        <var name="features" id="5546397519187196994" />
+      </scope>
+      <scope id="5546397519187196903" at="32,0,36,0" />
+      <scope id="7747328487425150063" at="43,0,47,0" />
+      <scope id="5546397519187196903" at="48,77,54,9" />
+      <scope id="5546397519187196903" at="48,0,56,0" />
+      <unit id="7747328487425150063" at="64,0,67,0" name="test.org.iets3.variability.featuremodel.base.treewalker.WalkOnVariationModels_Test$LINKS" />
+      <unit id="7747328487425150063" at="59,0,63,0" name="test.org.iets3.variability.featuremodel.base.treewalker.WalkOnVariationModels_Test$CONCEPTS" />
+      <unit id="7747328487425150063" at="37,0,58,0" name="test.org.iets3.variability.featuremodel.base.treewalker.WalkOnVariationModels_Test$TestBody" />
+      <unit id="7747328487425150063" at="23,0,68,0" name="test.org.iets3.variability.featuremodel.base.treewalker.WalkOnVariationModels_Test" />
+    </file>
+  </root>
+</debug-info>
+
