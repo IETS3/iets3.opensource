@@ -11,7 +11,7 @@
     <use id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections" version="2" />
     <use id="a247e09e-2435-45ba-b8d2-07e93feba96a" name="jetbrains.mps.baseLanguage.tuples" version="0" />
     <use id="fd392034-7849-419d-9071-12563d152375" name="jetbrains.mps.baseLanguage.closures" version="0" />
-    <use id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc" version="2" />
+    <use id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc" version="3" />
     <use id="3a13115c-633c-4c5c-bbcc-75c4219e9555" name="jetbrains.mps.lang.quotation" version="5" />
     <devkit ref="2677cb18-f558-4e33-bc38-a5139cee06dc(jetbrains.mps.devkit.language-design)" />
   </languages>
@@ -165,7 +165,6 @@
         <reference id="6832197706140518108" name="param" index="zr_51" />
       </concept>
       <concept id="5349172909345501395" name="jetbrains.mps.baseLanguage.javadoc.structure.BaseDocComment" flags="ng" index="P$AiS">
-        <child id="8465538089690331502" name="body" index="TZ5H$" />
         <child id="5383422241790532083" name="tags" index="3nqlJM" />
       </concept>
       <concept id="5349172909345532724" name="jetbrains.mps.baseLanguage.javadoc.structure.MethodDocComment" flags="ng" index="P$JXv" />
@@ -173,11 +172,8 @@
         <property id="8465538089690881934" name="text" index="TUZQ4" />
         <child id="6832197706140518123" name="parameter" index="zr_5Q" />
       </concept>
-      <concept id="8465538089690331500" name="jetbrains.mps.baseLanguage.javadoc.structure.CommentLine" flags="ng" index="TZ5HA">
-        <child id="8970989240999019149" name="part" index="1dT_Ay" />
-      </concept>
-      <concept id="8970989240999019143" name="jetbrains.mps.baseLanguage.javadoc.structure.TextCommentLinePart" flags="ng" index="1dT_AC">
-        <property id="8970989240999019144" name="text" index="1dT_AB" />
+      <concept id="5085607816302529296" name="jetbrains.mps.baseLanguage.javadoc.structure.IHoldCommentLines" flags="ngI" index="1VezTd">
+        <child id="5085607816302529587" name="commentBody" index="1Vez_I" />
       </concept>
     </language>
     <language id="c7d5b9dd-a05f-4be2-bc73-f2e16994cc67" name="jetbrains.mps.baseLanguage.lightweightdsl">
@@ -631,19 +627,101 @@
         </node>
       </node>
       <node concept="P$JXv" id="7Klpc$B3WlR" role="lGtFl">
-        <node concept="TZ5HA" id="7Klpc$B3WlS" role="TZ5H$">
-          <node concept="1dT_AC" id="7Klpc$B3WlT" role="1dT_Ay">
-            <property role="1dT_AB" value="Tries to derive a concrete instance of a BusType from athe name of a &quot;buskind component&quot;. " />
-          </node>
-        </node>
         <node concept="TUZQ0" id="7Klpc$B3WlU" role="3nqlJM">
-          <property role="TUZQ4" value="component with a buskind" />
+          <property role="TUZQ4" value="" />
           <node concept="zr_55" id="7Klpc$B3WlW" role="zr_5Q">
             <ref role="zr_51" node="pRGWLGFuw" resolve="busComp" />
           </node>
+          <node concept="1PaTwC" id="3MzwgoR0S1V" role="1Vez_I">
+            <node concept="3oM_SD" id="3MzwgoR0S1W" role="1PaTwD">
+              <property role="3oM_SC" value="component" />
+            </node>
+            <node concept="3oM_SD" id="3MzwgoR0S1X" role="1PaTwD">
+              <property role="3oM_SC" value="with" />
+            </node>
+            <node concept="3oM_SD" id="3MzwgoR0S1Y" role="1PaTwD">
+              <property role="3oM_SC" value="a" />
+            </node>
+            <node concept="3oM_SD" id="3MzwgoR0S1Z" role="1PaTwD">
+              <property role="3oM_SC" value="buskind" />
+            </node>
+          </node>
         </node>
         <node concept="x79VA" id="7Klpc$B3WlX" role="3nqlJM">
-          <property role="x79VB" value="derived instance of a AbstractBusType etherwise null" />
+          <property role="x79VB" value="" />
+          <node concept="1PaTwC" id="3MzwgoR0S20" role="1Vez_I">
+            <node concept="3oM_SD" id="3MzwgoR0S21" role="1PaTwD">
+              <property role="3oM_SC" value="derived" />
+            </node>
+            <node concept="3oM_SD" id="3MzwgoR0S22" role="1PaTwD">
+              <property role="3oM_SC" value="instance" />
+            </node>
+            <node concept="3oM_SD" id="3MzwgoR0S23" role="1PaTwD">
+              <property role="3oM_SC" value="of" />
+            </node>
+            <node concept="3oM_SD" id="3MzwgoR0S24" role="1PaTwD">
+              <property role="3oM_SC" value="a" />
+            </node>
+            <node concept="3oM_SD" id="3MzwgoR0S25" role="1PaTwD">
+              <property role="3oM_SC" value="AbstractBusType" />
+            </node>
+            <node concept="3oM_SD" id="3MzwgoR0S26" role="1PaTwD">
+              <property role="3oM_SC" value="etherwise" />
+            </node>
+            <node concept="3oM_SD" id="3MzwgoR0S27" role="1PaTwD">
+              <property role="3oM_SC" value="null" />
+            </node>
+          </node>
+        </node>
+        <node concept="1PaTwC" id="3MzwgoR0S1E" role="1Vez_I">
+          <node concept="3oM_SD" id="3MzwgoR0S1F" role="1PaTwD">
+            <property role="3oM_SC" value="Tries" />
+          </node>
+          <node concept="3oM_SD" id="3MzwgoR0S1G" role="1PaTwD">
+            <property role="3oM_SC" value="to" />
+          </node>
+          <node concept="3oM_SD" id="3MzwgoR0S1H" role="1PaTwD">
+            <property role="3oM_SC" value="derive" />
+          </node>
+          <node concept="3oM_SD" id="3MzwgoR0S1I" role="1PaTwD">
+            <property role="3oM_SC" value="a" />
+          </node>
+          <node concept="3oM_SD" id="3MzwgoR0S1J" role="1PaTwD">
+            <property role="3oM_SC" value="concrete" />
+          </node>
+          <node concept="3oM_SD" id="3MzwgoR0S1K" role="1PaTwD">
+            <property role="3oM_SC" value="instance" />
+          </node>
+          <node concept="3oM_SD" id="3MzwgoR0S1L" role="1PaTwD">
+            <property role="3oM_SC" value="of" />
+          </node>
+          <node concept="3oM_SD" id="3MzwgoR0S1M" role="1PaTwD">
+            <property role="3oM_SC" value="a" />
+          </node>
+          <node concept="3oM_SD" id="3MzwgoR0S1N" role="1PaTwD">
+            <property role="3oM_SC" value="BusType" />
+          </node>
+          <node concept="3oM_SD" id="3MzwgoR0S1O" role="1PaTwD">
+            <property role="3oM_SC" value="from" />
+          </node>
+          <node concept="3oM_SD" id="3MzwgoR0S1P" role="1PaTwD">
+            <property role="3oM_SC" value="athe" />
+          </node>
+          <node concept="3oM_SD" id="3MzwgoR0S1Q" role="1PaTwD">
+            <property role="3oM_SC" value="name" />
+          </node>
+          <node concept="3oM_SD" id="3MzwgoR0S1R" role="1PaTwD">
+            <property role="3oM_SC" value="of" />
+          </node>
+          <node concept="3oM_SD" id="3MzwgoR0S1S" role="1PaTwD">
+            <property role="3oM_SC" value="a" />
+          </node>
+          <node concept="3oM_SD" id="3MzwgoR0S1T" role="1PaTwD">
+            <property role="3oM_SC" value="&quot;buskind" />
+          </node>
+          <node concept="3oM_SD" id="3MzwgoR0S1U" role="1PaTwD">
+            <property role="3oM_SC" value="component&quot;." />
+          </node>
         </node>
       </node>
     </node>
@@ -880,15 +958,59 @@
         </node>
       </node>
       <node concept="P$JXv" id="7Klpc$B44kA" role="lGtFl">
-        <node concept="TZ5HA" id="7Klpc$B44kB" role="TZ5H$">
-          <node concept="1dT_AC" id="7Klpc$B44kC" role="1dT_Ay">
-            <property role="1dT_AB" value="replaces a deprecated buskind with a derived bustype if possible" />
-          </node>
-        </node>
         <node concept="TUZQ0" id="7Klpc$B44kD" role="3nqlJM">
-          <property role="TUZQ4" value="the component attached with buskind" />
+          <property role="TUZQ4" value="" />
           <node concept="zr_55" id="heuIhhd70L" role="zr_5Q">
             <ref role="zr_51" node="heuIhhb$Hu" resolve="cmp" />
+          </node>
+          <node concept="1PaTwC" id="3MzwgoR0S2j" role="1Vez_I">
+            <node concept="3oM_SD" id="3MzwgoR0S2k" role="1PaTwD">
+              <property role="3oM_SC" value="the" />
+            </node>
+            <node concept="3oM_SD" id="3MzwgoR0S2l" role="1PaTwD">
+              <property role="3oM_SC" value="component" />
+            </node>
+            <node concept="3oM_SD" id="3MzwgoR0S2m" role="1PaTwD">
+              <property role="3oM_SC" value="attached" />
+            </node>
+            <node concept="3oM_SD" id="3MzwgoR0S2n" role="1PaTwD">
+              <property role="3oM_SC" value="with" />
+            </node>
+            <node concept="3oM_SD" id="3MzwgoR0S2o" role="1PaTwD">
+              <property role="3oM_SC" value="buskind" />
+            </node>
+          </node>
+        </node>
+        <node concept="1PaTwC" id="3MzwgoR0S28" role="1Vez_I">
+          <node concept="3oM_SD" id="3MzwgoR0S29" role="1PaTwD">
+            <property role="3oM_SC" value="replaces" />
+          </node>
+          <node concept="3oM_SD" id="3MzwgoR0S2a" role="1PaTwD">
+            <property role="3oM_SC" value="a" />
+          </node>
+          <node concept="3oM_SD" id="3MzwgoR0S2b" role="1PaTwD">
+            <property role="3oM_SC" value="deprecated" />
+          </node>
+          <node concept="3oM_SD" id="3MzwgoR0S2c" role="1PaTwD">
+            <property role="3oM_SC" value="buskind" />
+          </node>
+          <node concept="3oM_SD" id="3MzwgoR0S2d" role="1PaTwD">
+            <property role="3oM_SC" value="with" />
+          </node>
+          <node concept="3oM_SD" id="3MzwgoR0S2e" role="1PaTwD">
+            <property role="3oM_SC" value="a" />
+          </node>
+          <node concept="3oM_SD" id="3MzwgoR0S2f" role="1PaTwD">
+            <property role="3oM_SC" value="derived" />
+          </node>
+          <node concept="3oM_SD" id="3MzwgoR0S2g" role="1PaTwD">
+            <property role="3oM_SC" value="bustype" />
+          </node>
+          <node concept="3oM_SD" id="3MzwgoR0S2h" role="1PaTwD">
+            <property role="3oM_SC" value="if" />
+          </node>
+          <node concept="3oM_SD" id="3MzwgoR0S2i" role="1PaTwD">
+            <property role="3oM_SC" value="possible" />
           </node>
         </node>
       </node>
@@ -1128,21 +1250,106 @@
         </node>
       </node>
       <node concept="P$JXv" id="9W$Ahj4K2N" role="lGtFl">
-        <node concept="TZ5HA" id="9W$Ahj4K2O" role="TZ5H$">
-          <node concept="1dT_AC" id="9W$Ahj4K2P" role="1dT_Ay">
-            <property role="1dT_AB" value="replaces a deprecated buskind with an instance of the given bustype-concept and fixed all references" />
-          </node>
-        </node>
         <node concept="TUZQ0" id="9W$Ahj4K2Q" role="3nqlJM">
-          <property role="TUZQ4" value="the component attached with buskind" />
+          <property role="TUZQ4" value="" />
           <node concept="zr_55" id="9W$Ahj4K2R" role="zr_5Q">
             <ref role="zr_51" node="9W$Ahj4K2L" resolve="cmp" />
           </node>
+          <node concept="1PaTwC" id="3MzwgoR0S2D" role="1Vez_I">
+            <node concept="3oM_SD" id="3MzwgoR0S2E" role="1PaTwD">
+              <property role="3oM_SC" value="the" />
+            </node>
+            <node concept="3oM_SD" id="3MzwgoR0S2F" role="1PaTwD">
+              <property role="3oM_SC" value="component" />
+            </node>
+            <node concept="3oM_SD" id="3MzwgoR0S2G" role="1PaTwD">
+              <property role="3oM_SC" value="attached" />
+            </node>
+            <node concept="3oM_SD" id="3MzwgoR0S2H" role="1PaTwD">
+              <property role="3oM_SC" value="with" />
+            </node>
+            <node concept="3oM_SD" id="3MzwgoR0S2I" role="1PaTwD">
+              <property role="3oM_SC" value="buskind" />
+            </node>
+          </node>
         </node>
         <node concept="TUZQ0" id="9W$Ahj4N2w" role="3nqlJM">
-          <property role="TUZQ4" value="the new bustype concept that should be used. " />
+          <property role="TUZQ4" value="" />
           <node concept="zr_55" id="9W$Ahj4N3m" role="zr_5Q">
             <ref role="zr_51" node="9W$Ahj4L_b" resolve="newBusTypeCpt" />
+          </node>
+          <node concept="1PaTwC" id="3MzwgoR0S2J" role="1Vez_I">
+            <node concept="3oM_SD" id="3MzwgoR0S2K" role="1PaTwD">
+              <property role="3oM_SC" value="the" />
+            </node>
+            <node concept="3oM_SD" id="3MzwgoR0S2L" role="1PaTwD">
+              <property role="3oM_SC" value="new" />
+            </node>
+            <node concept="3oM_SD" id="3MzwgoR0S2M" role="1PaTwD">
+              <property role="3oM_SC" value="bustype" />
+            </node>
+            <node concept="3oM_SD" id="3MzwgoR0S2N" role="1PaTwD">
+              <property role="3oM_SC" value="concept" />
+            </node>
+            <node concept="3oM_SD" id="3MzwgoR0S2O" role="1PaTwD">
+              <property role="3oM_SC" value="that" />
+            </node>
+            <node concept="3oM_SD" id="3MzwgoR0S2P" role="1PaTwD">
+              <property role="3oM_SC" value="should" />
+            </node>
+            <node concept="3oM_SD" id="3MzwgoR0S2Q" role="1PaTwD">
+              <property role="3oM_SC" value="be" />
+            </node>
+            <node concept="3oM_SD" id="3MzwgoR0S2R" role="1PaTwD">
+              <property role="3oM_SC" value="used." />
+            </node>
+          </node>
+        </node>
+        <node concept="1PaTwC" id="3MzwgoR0S2p" role="1Vez_I">
+          <node concept="3oM_SD" id="3MzwgoR0S2q" role="1PaTwD">
+            <property role="3oM_SC" value="replaces" />
+          </node>
+          <node concept="3oM_SD" id="3MzwgoR0S2r" role="1PaTwD">
+            <property role="3oM_SC" value="a" />
+          </node>
+          <node concept="3oM_SD" id="3MzwgoR0S2s" role="1PaTwD">
+            <property role="3oM_SC" value="deprecated" />
+          </node>
+          <node concept="3oM_SD" id="3MzwgoR0S2t" role="1PaTwD">
+            <property role="3oM_SC" value="buskind" />
+          </node>
+          <node concept="3oM_SD" id="3MzwgoR0S2u" role="1PaTwD">
+            <property role="3oM_SC" value="with" />
+          </node>
+          <node concept="3oM_SD" id="3MzwgoR0S2v" role="1PaTwD">
+            <property role="3oM_SC" value="an" />
+          </node>
+          <node concept="3oM_SD" id="3MzwgoR0S2w" role="1PaTwD">
+            <property role="3oM_SC" value="instance" />
+          </node>
+          <node concept="3oM_SD" id="3MzwgoR0S2x" role="1PaTwD">
+            <property role="3oM_SC" value="of" />
+          </node>
+          <node concept="3oM_SD" id="3MzwgoR0S2y" role="1PaTwD">
+            <property role="3oM_SC" value="the" />
+          </node>
+          <node concept="3oM_SD" id="3MzwgoR0S2z" role="1PaTwD">
+            <property role="3oM_SC" value="given" />
+          </node>
+          <node concept="3oM_SD" id="3MzwgoR0S2$" role="1PaTwD">
+            <property role="3oM_SC" value="bustype-concept" />
+          </node>
+          <node concept="3oM_SD" id="3MzwgoR0S2_" role="1PaTwD">
+            <property role="3oM_SC" value="and" />
+          </node>
+          <node concept="3oM_SD" id="3MzwgoR0S2A" role="1PaTwD">
+            <property role="3oM_SC" value="fixed" />
+          </node>
+          <node concept="3oM_SD" id="3MzwgoR0S2B" role="1PaTwD">
+            <property role="3oM_SC" value="all" />
+          </node>
+          <node concept="3oM_SD" id="3MzwgoR0S2C" role="1PaTwD">
+            <property role="3oM_SC" value="references" />
           </node>
         </node>
       </node>
@@ -1408,23 +1615,73 @@
         <ref role="ehGHo" to="49km:4lFnCmbDF7U" resolve="BusInstance" />
       </node>
       <node concept="P$JXv" id="48N1AuV6k56" role="lGtFl">
-        <node concept="TZ5HA" id="48N1AuV6k57" role="TZ5H$">
-          <node concept="1dT_AC" id="48N1AuV6k58" role="1dT_Ay" />
-        </node>
         <node concept="TUZQ0" id="48N1AuV6k59" role="3nqlJM">
-          <property role="TUZQ4" value="instance referencing old buskind component" />
+          <property role="TUZQ4" value="" />
           <node concept="zr_55" id="48N1AuV6k5b" role="zr_5Q">
             <ref role="zr_51" node="9W$Ahj9bEe" resolve="cmpInstance" />
           </node>
+          <node concept="1PaTwC" id="3MzwgoR0S2U" role="1Vez_I">
+            <node concept="3oM_SD" id="3MzwgoR0S2V" role="1PaTwD">
+              <property role="3oM_SC" value="instance" />
+            </node>
+            <node concept="3oM_SD" id="3MzwgoR0S2W" role="1PaTwD">
+              <property role="3oM_SC" value="referencing" />
+            </node>
+            <node concept="3oM_SD" id="3MzwgoR0S2X" role="1PaTwD">
+              <property role="3oM_SC" value="old" />
+            </node>
+            <node concept="3oM_SD" id="3MzwgoR0S2Y" role="1PaTwD">
+              <property role="3oM_SC" value="buskind" />
+            </node>
+            <node concept="3oM_SD" id="3MzwgoR0S2Z" role="1PaTwD">
+              <property role="3oM_SC" value="component" />
+            </node>
+          </node>
         </node>
         <node concept="TUZQ0" id="48N1AuV6k5c" role="3nqlJM">
-          <property role="TUZQ4" value="the bustype which should be used" />
+          <property role="TUZQ4" value="" />
           <node concept="zr_55" id="48N1AuV6k5e" role="zr_5Q">
             <ref role="zr_51" node="9W$Ahj9fh4" resolve="newBusTypeCpt" />
           </node>
+          <node concept="1PaTwC" id="3MzwgoR0S30" role="1Vez_I">
+            <node concept="3oM_SD" id="3MzwgoR0S31" role="1PaTwD">
+              <property role="3oM_SC" value="the" />
+            </node>
+            <node concept="3oM_SD" id="3MzwgoR0S32" role="1PaTwD">
+              <property role="3oM_SC" value="bustype" />
+            </node>
+            <node concept="3oM_SD" id="3MzwgoR0S33" role="1PaTwD">
+              <property role="3oM_SC" value="which" />
+            </node>
+            <node concept="3oM_SD" id="3MzwgoR0S34" role="1PaTwD">
+              <property role="3oM_SC" value="should" />
+            </node>
+            <node concept="3oM_SD" id="3MzwgoR0S35" role="1PaTwD">
+              <property role="3oM_SC" value="be" />
+            </node>
+            <node concept="3oM_SD" id="3MzwgoR0S36" role="1PaTwD">
+              <property role="3oM_SC" value="used" />
+            </node>
+          </node>
         </node>
         <node concept="x79VA" id="48N1AuV6k5f" role="3nqlJM">
-          <property role="x79VB" value="newly created businstance" />
+          <property role="x79VB" value="" />
+          <node concept="1PaTwC" id="3MzwgoR0S37" role="1Vez_I">
+            <node concept="3oM_SD" id="3MzwgoR0S38" role="1PaTwD">
+              <property role="3oM_SC" value="newly" />
+            </node>
+            <node concept="3oM_SD" id="3MzwgoR0S39" role="1PaTwD">
+              <property role="3oM_SC" value="created" />
+            </node>
+            <node concept="3oM_SD" id="3MzwgoR0S3a" role="1PaTwD">
+              <property role="3oM_SC" value="businstance" />
+            </node>
+          </node>
+        </node>
+        <node concept="1PaTwC" id="3MzwgoR0S2S" role="1Vez_I">
+          <node concept="3oM_SD" id="3MzwgoR0S2T" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
         </node>
       </node>
     </node>
