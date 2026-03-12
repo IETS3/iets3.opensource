@@ -24,7 +24,7 @@ cpSuite = { group = "io.takari.junit", name = "takari-cpsuite", version = "1.2.7
 [bundles]
 
 [plugins]
-cyclonedxBom = { id = "org.cyclonedx.bom", version = "2.2.0" }
+cyclonedxBom = { id = "org.cyclonedx.bom", version = "3.2.1" }
 downloadJbr = { id = "download-jbr", version = "1.29.3.+" }
 githubRelease = { id = "com.github.breadmoirai.github-release", version = "2.4.1" }
 mpsCommon = { id = "de.itemis.mps.gradle.common", version = "1.29.+" }
