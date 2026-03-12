@@ -6,7 +6,6 @@ mpsQaVersion = "2024.1.1250.163d026"
 # example: mbeddrVersion="feature-my_new_feature.2023.2.+"
 mbeddrVersion = "2024.1.26382.9485a03"
 
-gradle = "8.13"
 jbr = "17.0.11-b1207.30"
 
 [libraries]
@@ -28,6 +27,5 @@ cpSuite = { group = "io.takari.junit", name = "takari-cpsuite", version = "1.2.7
 cyclonedxBom = { id = "org.cyclonedx.bom", version = "2.2.0" }
 downloadJbr = { id = "download-jbr", version = "1.29.3.+" }
 githubRelease = { id = "com.github.breadmoirai.github-release", version = "2.4.1" }
-modelcheck = { id = "modelcheck", version = "1.29.3.+" }
 mpsCommon = { id = "de.itemis.mps.gradle.common", version = "1.29.+" }
 mpsLauncher = { id = "de.itemis.mps.gradle.launcher", version = "2.5.2.+" }
