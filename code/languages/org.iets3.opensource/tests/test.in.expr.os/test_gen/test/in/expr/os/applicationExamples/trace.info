@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<debug-info version="2">
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123140:jetbrains.mps.baseLanguage.structure.ConstructorDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123155:jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123165:jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242864:jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1070462154015:jetbrains.mps.baseLanguage.structure.StaticFieldDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1070475587102:jetbrains.mps.baseLanguage.structure.SuperConstructorInvocation" />
+  <root nodeRef="r:206e2f16-1e9d-4dba-a48f-a14d1e82c7a3(test.in.expr.os.applicationExamples@tests)/6527211908667104441">
+    <file name="temperature_Test.java">
+      <node id="6527211908667104441" at="25,29,26,77" concept="5" />
+      <node id="6527211908667126376" at="30,75,31,66" concept="1" />
+      <node id="6527211908667503678" at="34,75,35,66" concept="1" />
+      <node id="6527211908667126376" at="44,44,45,112" concept="3" />
+      <node id="6527211908667126376" at="45,112,46,39" concept="1" />
+      <node id="6527211908667503678" at="53,44,54,112" concept="3" />
+      <node id="6527211908667503678" at="54,112,55,39" concept="1" />
+      <node id="6527211908667104441" at="60,50,61,19" concept="5" />
+      <node id="6527211908667104441" at="66,0,67,0" concept="4" trace="AbstractTestItem$9u" />
+      <node id="6527211908667104441" at="22,0,24,0" concept="4" trace="ourParametersCacheExtension" />
+      <node id="6527211908667104441" at="25,0,28,0" concept="0" trace="temperature_Test#()V" />
+      <node id="6527211908667104441" at="60,0,63,0" concept="0" trace="TestBody#(Ljetbrains/mps/lang/test/runtime/TransformationTest;)V" />
+      <node id="6527211908667126376" at="29,0,33,0" concept="2" trace="TempConversion_item0_6527211908667126376#()V" />
+      <node id="6527211908667503678" at="33,0,37,0" concept="2" trace="TempConversion_item2_6527211908667503678#()V" />
+      <node id="6527211908667126376" at="43,0,48,0" concept="2" trace="run#()V" />
+      <node id="6527211908667503678" at="52,0,57,0" concept="2" trace="run#()V" />
+      <node id="6527211908667126376" at="41,77,48,9" concept="1" />
+      <node id="6527211908667503678" at="50,77,57,9" concept="1" />
+      <node id="6527211908667126376" at="41,0,50,0" concept="2" trace="TempConversion_item0_6527211908667126376#()V" />
+      <node id="6527211908667503678" at="50,0,59,0" concept="2" trace="TempConversion_item2_6527211908667503678#()V" />
+      <scope id="6527211908667104441" at="25,29,26,77" />
+      <scope id="6527211908667126376" at="30,75,31,66" />
+      <scope id="6527211908667503678" at="34,75,35,66" />
+      <scope id="6527211908667104441" at="60,50,61,19" />
+      <scope id="6527211908667126376" at="44,44,46,39">
+        <var name="ti" id="6527211908667126376" />
+      </scope>
+      <scope id="6527211908667503678" at="53,44,55,39">
+        <var name="ti" id="6527211908667503678" />
+      </scope>
+      <scope id="6527211908667104441" at="25,0,28,0" />
+      <scope id="6527211908667104441" at="60,0,63,0">
+        <var name="owner" id="6527211908667104441" />
+      </scope>
+      <scope id="6527211908667126376" at="29,0,33,0" />
+      <scope id="6527211908667503678" at="33,0,37,0" />
+      <scope id="6527211908667126376" at="43,0,48,0" />
+      <scope id="6527211908667503678" at="52,0,57,0" />
+      <scope id="6527211908667126376" at="41,77,48,9" />
+      <scope id="6527211908667503678" at="50,77,57,9" />
+      <scope id="6527211908667126376" at="41,0,50,0" />
+      <scope id="6527211908667503678" at="50,0,59,0" />
+      <unit id="6527211908667104441" at="65,0,68,0" name="test.in.expr.os.applicationExamples.temperature_Test$CONCEPTS" />
+      <unit id="6527211908667126376" at="42,27,48,7" name="test.in.expr.os.applicationExamples.temperature_Test$TestBody$1" />
+      <unit id="6527211908667503678" at="51,27,57,7" name="test.in.expr.os.applicationExamples.temperature_Test$TestBody$2" />
+      <unit id="6527211908667104441" at="39,0,64,0" name="test.in.expr.os.applicationExamples.temperature_Test$TestBody" />
+      <unit id="6527211908667104441" at="19,0,69,0" name="test.in.expr.os.applicationExamples.temperature_Test" />
+    </file>
+  </root>
+</debug-info>
+
