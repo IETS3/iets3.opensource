@@ -11,7 +11,7 @@ jbr = "17.0.11-b1207.30"
 
 [libraries]
 mps = { group = "com.jetbrains", name = "mps", version.ref = "mpsVersion" }
-remigrate = { group = "de.itemis.mps.build-backends", name = "remigrate", version = "0.2.0" }
+remigrate = { group = "de.itemis.mps.build-backends", name = "remigrate", version = "1.0.1.171.f987265" }
 mpsQaAllInOne = { group = "org.mpsqa", name = "all-in-one", version.ref = "mpsQaVersion" }
 mbeddrPlatform = { group = "com.mbeddr", name = "platform", version.ref = "mbeddrVersion" }
 antJunit = { group = "org.apache.ant", name = "ant-junit", version = "1.10.15" }
