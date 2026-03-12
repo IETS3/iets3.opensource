@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<debug-info version="2">
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123140:jetbrains.mps.baseLanguage.structure.ConstructorDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123155:jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123165:jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242864:jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1070462154015:jetbrains.mps.baseLanguage.structure.StaticFieldDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1070475587102:jetbrains.mps.baseLanguage.structure.SuperConstructorInvocation" />
+  <root nodeRef="r:33b60bf0-25cf-44bd-90bc-57d34353c063(test.org.iets3.protocol.transport.ts@tests)/5400341048564536055">
+    <file name="ts_ProtocoledComponentMappingAttr_Test.java">
+      <node id="5400341048564536055" at="23,51,24,60" concept="5" />
+      <node id="7666608672630105036" at="28,92,29,83" concept="1" />
+      <node id="7666608672630105038" at="32,79,33,70" concept="1" />
+      <node id="7666608672630105040" at="36,89,37,80" concept="1" />
+      <node id="5400341048564536055" at="42,52,43,19" concept="5" />
+      <node id="5400341048564536055" at="47,36,48,46" concept="1" />
+      <node id="7666608672630105036" at="51,94,52,22" concept="1" />
+      <node id="7666608672630105036" at="53,30,54,63" concept="3" />
+      <node id="7666608672630105036" at="54,63,55,294" concept="1" />
+      <node id="7666608672630105038" at="58,81,59,22" concept="1" />
+      <node id="7666608672630105038" at="60,30,61,63" concept="3" />
+      <node id="7666608672630105038" at="61,63,62,292" concept="1" />
+      <node id="7666608672630105040" at="65,91,66,22" concept="1" />
+      <node id="7666608672630105040" at="67,30,68,63" concept="3" />
+      <node id="7666608672630105040" at="68,63,69,294" concept="1" />
+      <node id="5400341048564536055" at="20,0,22,0" concept="4" trace="ourParametersCacheExtension" />
+      <node id="5400341048564536055" at="23,0,26,0" concept="0" trace="ts_ProtocoledComponentMappingAttr_Test#()V" />
+      <node id="5400341048564536055" at="42,0,45,0" concept="0" trace="TestBody#(Ljetbrains/mps/lang/test/runtime/TransformationTest;)V" />
+      <node id="7666608672630105036" at="27,0,31,0" concept="2" trace="test_NodeProtocolHasToBeSpecifiedCheck7666608672630105036#()V" />
+      <node id="7666608672630105038" at="31,0,35,0" concept="2" trace="test_NodeUnknownRuleCheck7666608672630105038#()V" />
+      <node id="7666608672630105040" at="35,0,39,0" concept="2" trace="test_NodeAtLeastPortIsRequiredCheck7666608672630105040#()V" />
+      <node id="5400341048564536055" at="46,0,50,0" concept="2" trace="initTestNodes#()V" />
+      <node id="7666608672630105036" at="52,22,56,9" concept="1" />
+      <node id="7666608672630105038" at="59,22,63,9" concept="1" />
+      <node id="7666608672630105040" at="66,22,70,9" concept="1" />
+      <node id="7666608672630105036" at="51,0,58,0" concept="2" trace="test_NodeProtocolHasToBeSpecifiedCheck7666608672630105036#()V" />
+      <node id="7666608672630105038" at="58,0,65,0" concept="2" trace="test_NodeUnknownRuleCheck7666608672630105038#()V" />
+      <node id="7666608672630105040" at="65,0,72,0" concept="2" trace="test_NodeAtLeastPortIsRequiredCheck7666608672630105040#()V" />
+      <scope id="5400341048564536055" at="23,51,24,60" />
+      <scope id="7666608672630105036" at="28,92,29,83" />
+      <scope id="7666608672630105038" at="32,79,33,70" />
+      <scope id="7666608672630105040" at="36,89,37,80" />
+      <scope id="5400341048564536055" at="42,52,43,19" />
+      <scope id="5400341048564536055" at="47,36,48,46" />
+      <scope id="7666608672630105036" at="53,30,55,294">
+        <var name="nodeToCheck" id="7666608672630105036" />
+      </scope>
+      <scope id="7666608672630105038" at="60,30,62,292">
+        <var name="nodeToCheck" id="7666608672630105038" />
+      </scope>
+      <scope id="7666608672630105040" at="67,30,69,294">
+        <var name="nodeToCheck" id="7666608672630105040" />
+      </scope>
+      <scope id="5400341048564536055" at="23,0,26,0" />
+      <scope id="5400341048564536055" at="42,0,45,0">
+        <var name="owner" id="5400341048564536055" />
+      </scope>
+      <scope id="7666608672630105036" at="27,0,31,0" />
+      <scope id="7666608672630105038" at="31,0,35,0" />
+      <scope id="7666608672630105040" at="35,0,39,0" />
+      <scope id="5400341048564536055" at="46,0,50,0" />
+      <scope id="7666608672630105036" at="51,94,56,9" />
+      <scope id="7666608672630105038" at="58,81,63,9" />
+      <scope id="7666608672630105040" at="65,91,70,9" />
+      <scope id="7666608672630105036" at="51,0,58,0" />
+      <scope id="7666608672630105038" at="58,0,65,0" />
+      <scope id="7666608672630105040" at="65,0,72,0" />
+      <unit id="5400341048564536055" at="40,0,74,0" name="test.org.iets3.protocol.transport.ts.ts_ProtocoledComponentMappingAttr_Test$TestBody" />
+      <unit id="5400341048564536055" at="18,0,75,0" name="test.org.iets3.protocol.transport.ts.ts_ProtocoledComponentMappingAttr_Test" />
+    </file>
+  </root>
+  <root nodeRef="r:33b60bf0-25cf-44bd-90bc-57d34353c063(test.org.iets3.protocol.transport.ts@tests)/5400341048564713060">
+    <file name="ts_ProtocolMapSection_Test.java">
+      <node id="5400341048564713060" at="23,39,24,60" concept="5" />
+      <node id="5964567181243358316" at="28,77,29,68" concept="1" />
+      <node id="5400341048564713060" at="34,52,35,19" concept="5" />
+      <node id="5400341048564713060" at="39,36,40,46" concept="1" />
+      <node id="5964567181243358316" at="43,79,44,22" concept="1" />
+      <node id="5964567181243358316" at="45,30,46,63" concept="3" />
+      <node id="5964567181243358316" at="46,63,47,171" concept="1" />
+      <node id="5400341048564713060" at="20,0,22,0" concept="4" trace="ourParametersCacheExtension" />
+      <node id="5400341048564713060" at="23,0,26,0" concept="0" trace="ts_ProtocolMapSection_Test#()V" />
+      <node id="5400341048564713060" at="34,0,37,0" concept="0" trace="TestBody#(Ljetbrains/mps/lang/test/runtime/TransformationTest;)V" />
+      <node id="5964567181243358316" at="27,0,31,0" concept="2" trace="test_ErrorMessagesCheck5964567181243358316#()V" />
+      <node id="5400341048564713060" at="38,0,42,0" concept="2" trace="initTestNodes#()V" />
+      <node id="5964567181243358316" at="44,22,48,9" concept="1" />
+      <node id="5964567181243358316" at="43,0,50,0" concept="2" trace="test_ErrorMessagesCheck5964567181243358316#()V" />
+      <scope id="5400341048564713060" at="23,39,24,60" />
+      <scope id="5964567181243358316" at="28,77,29,68" />
+      <scope id="5400341048564713060" at="34,52,35,19" />
+      <scope id="5400341048564713060" at="39,36,40,46" />
+      <scope id="5964567181243358316" at="45,30,47,171">
+        <var name="nodeToCheck" id="5964567181243358316" />
+      </scope>
+      <scope id="5400341048564713060" at="23,0,26,0" />
+      <scope id="5400341048564713060" at="34,0,37,0">
+        <var name="owner" id="5400341048564713060" />
+      </scope>
+      <scope id="5964567181243358316" at="27,0,31,0" />
+      <scope id="5400341048564713060" at="38,0,42,0" />
+      <scope id="5964567181243358316" at="43,79,48,9" />
+      <scope id="5964567181243358316" at="43,0,50,0" />
+      <unit id="5400341048564713060" at="32,0,52,0" name="test.org.iets3.protocol.transport.ts.ts_ProtocolMapSection_Test$TestBody" />
+      <unit id="5400341048564713060" at="18,0,53,0" name="test.org.iets3.protocol.transport.ts.ts_ProtocolMapSection_Test" />
+    </file>
+  </root>
+</debug-info>
+
