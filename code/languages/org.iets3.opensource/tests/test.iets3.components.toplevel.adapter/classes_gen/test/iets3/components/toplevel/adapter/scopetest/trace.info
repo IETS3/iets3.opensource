@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<debug-info version="2">
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123140:jetbrains.mps.baseLanguage.structure.ConstructorDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123155:jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123165:jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242864:jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1070462154015:jetbrains.mps.baseLanguage.structure.StaticFieldDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1070475587102:jetbrains.mps.baseLanguage.structure.SuperConstructorInvocation" />
+  <root nodeRef="r:7685ee1c-0ef8-4e99-b548-dcf319d9ae19(test.iets3.components.toplevel.adapter.scopetest@tests)/6059649911298829084">
+    <file name="ScopeForCommentedAdapters_Test.java">
+      <node id="6059649911298829084" at="26,43,27,60" concept="5" />
+      <node id="6059649911298876688" at="31,83,32,74" concept="1" />
+      <node id="6059649911298876459" at="35,83,36,74" concept="1" />
+      <node id="6059649911298829084" at="41,52,42,19" concept="5" />
+      <node id="6059649911298829084" at="46,36,47,46" concept="1" />
+      <node id="6059649911298876688" at="50,85,51,22" concept="1" />
+      <node id="6059649911298876688" at="52,30,53,67" concept="3" />
+      <node id="6059649911298876688" at="53,67,54,392" concept="1" />
+      <node id="6059649911298876459" at="57,85,58,22" concept="1" />
+      <node id="6059649911298876459" at="59,30,60,67" concept="3" />
+      <node id="6059649911298876459" at="60,67,61,391" concept="1" />
+      <node id="6059649911298829084" at="23,0,25,0" concept="4" trace="ourParametersCacheExtension" />
+      <node id="6059649911298829084" at="26,0,29,0" concept="0" trace="ScopeForCommentedAdapters_Test#()V" />
+      <node id="6059649911298829084" at="41,0,44,0" concept="0" trace="TestBody#(Ljetbrains/mps/lang/test/runtime/TransformationTest;)V" />
+      <node id="6059649911298876688" at="30,0,34,0" concept="2" trace="test_ScopeOf_DocWordRef_node_6059649911298876602#()V" />
+      <node id="6059649911298876459" at="34,0,38,0" concept="2" trace="test_ScopeOf_DocWordRef_node_6059649911298876207#()V" />
+      <node id="6059649911298829084" at="45,0,49,0" concept="2" trace="initTestNodes#()V" />
+      <node id="6059649911298876688" at="51,22,55,9" concept="1" />
+      <node id="6059649911298876459" at="58,22,62,9" concept="1" />
+      <node id="6059649911298876688" at="50,0,57,0" concept="2" trace="test_ScopeOf_DocWordRef_node_6059649911298876602#()V" />
+      <node id="6059649911298876459" at="57,0,64,0" concept="2" trace="test_ScopeOf_DocWordRef_node_6059649911298876207#()V" />
+      <scope id="6059649911298829084" at="26,43,27,60" />
+      <scope id="6059649911298876688" at="31,83,32,74" />
+      <scope id="6059649911298876459" at="35,83,36,74" />
+      <scope id="6059649911298829084" at="41,52,42,19" />
+      <scope id="6059649911298829084" at="46,36,47,46" />
+      <scope id="6059649911298876688" at="52,30,54,392">
+        <var name="nodeToCheck" id="6059649911298876688" />
+      </scope>
+      <scope id="6059649911298876459" at="59,30,61,391">
+        <var name="nodeToCheck" id="6059649911298876459" />
+      </scope>
+      <scope id="6059649911298829084" at="26,0,29,0" />
+      <scope id="6059649911298829084" at="41,0,44,0">
+        <var name="owner" id="6059649911298829084" />
+      </scope>
+      <scope id="6059649911298876688" at="30,0,34,0" />
+      <scope id="6059649911298876459" at="34,0,38,0" />
+      <scope id="6059649911298829084" at="45,0,49,0" />
+      <scope id="6059649911298876688" at="50,85,55,9" />
+      <scope id="6059649911298876459" at="57,85,62,9" />
+      <scope id="6059649911298876688" at="50,0,57,0" />
+      <scope id="6059649911298876459" at="57,0,64,0" />
+      <unit id="6059649911298829084" at="39,0,66,0" name="test.iets3.components.toplevel.adapter.scopetest.ScopeForCommentedAdapters_Test$TestBody" />
+      <unit id="6059649911298829084" at="21,0,67,0" name="test.iets3.components.toplevel.adapter.scopetest.ScopeForCommentedAdapters_Test" />
+    </file>
+  </root>
+</debug-info>
+

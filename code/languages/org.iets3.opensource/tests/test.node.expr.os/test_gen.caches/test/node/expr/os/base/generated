@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<product version="3" modelHash="-agzal6pa5m66gmewrb0zaf29s0bilok">
+  <files names="TestDefaultCoverageAnalyzer_Concepts_Test.java:TestDefaultCoverageAnalyzer_Nodes_Test.java:TestDefaultCoverageAnalyzer_Statistics_Test.java:TestDefaultCoverageAnalyzer_Test.java:TestDefaultCoverageAnalyzer_Value_Test.java:TestDefaultCoverageAnalyzer_ignoredConcept_Test.java:TestDefaultCoverageAnalyzer_measuredConcept_Test.java:TestIDefaultCoverageAnalyzer_Test.java" />
+</product>
+
