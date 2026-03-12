@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<debug-info version="2">
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123140:jetbrains.mps.baseLanguage.structure.ConstructorDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123155:jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068390468200:jetbrains.mps.baseLanguage.structure.FieldDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1144226303539:jetbrains.mps.baseLanguage.structure.ForeachStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123159:jetbrains.mps.baseLanguage.structure.IfStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123165:jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242864:jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242878:jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1070462154015:jetbrains.mps.baseLanguage.structure.StaticFieldDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1081236700938:jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1163670490218:jetbrains.mps.baseLanguage.structure.SwitchStatement" />
+  <root nodeRef="r:91b05dce-7884-4f58-b31f-cc577eb13b6a(test.in.expr.os.datatable@tests)/231307155597941680">
+    <file name="Generated_DataTable_Test.java">
+      <node id="231307155598052422" at="20,0,21,0" concept="2" trace="val1" />
+      <node id="231307155598052424" at="21,0,22,0" concept="2" trace="val2" />
+      <node id="231307155598052422" at="22,63,23,23" concept="1" />
+      <node id="231307155598052424" at="23,23,24,23" concept="1" />
+      <node id="231307155598052422" at="28,15,29,27" concept="7" />
+      <node id="231307155598052424" at="30,15,31,27" concept="7" />
+      <node id="231307155597941680" at="32,7,33,18" concept="7" />
+      <node id="231307155597941680" at="37,29,38,22" concept="7" />
+      <node id="231307155597941680" at="40,7,41,19" concept="7" />
+      <node id="231307155598052427" at="45,0,46,0" concept="8" trace="keyA" />
+      <node id="231307155598052432" at="46,0,47,0" concept="8" trace="keyB" />
+      <node id="231307155598118301" at="47,0,48,0" concept="8" trace="keyC" />
+      <node id="231307155597941680" at="48,0,49,0" concept="8" trace="entries" />
+      <node id="231307155598052427" at="49,12,50,54" concept="1" />
+      <node id="231307155598052432" at="50,54,51,54" concept="1" />
+      <node id="231307155598118301" at="51,54,52,54" concept="1" />
+      <node id="231307155597941680" at="55,73,56,31" concept="6" />
+      <node id="231307155597941680" at="57,42,58,19" concept="7" />
+      <node id="231307155597941680" at="60,45,61,19" concept="7" />
+      <node id="231307155597941680" at="63,7,64,18" concept="7" />
+      <node id="8847603084240390820" at="68,0,69,0" concept="2" trace="val1" />
+      <node id="8847603084240390822" at="69,0,70,0" concept="2" trace="val2" />
+      <node id="8847603084240390820" at="70,62,71,23" concept="1" />
+      <node id="8847603084240390822" at="71,23,72,23" concept="1" />
+      <node id="8847603084240390820" at="76,15,77,27" concept="7" />
+      <node id="8847603084240390822" at="78,15,79,27" concept="7" />
+      <node id="231307155597941680" at="80,7,81,18" concept="7" />
+      <node id="231307155597941680" at="85,29,86,22" concept="7" />
+      <node id="231307155597941680" at="88,7,89,19" concept="7" />
+      <node id="8847603084240390825" at="93,0,94,0" concept="8" trace="keyA" />
+      <node id="8847603084240390830" at="94,0,95,0" concept="8" trace="keyB" />
+      <node id="3186273868907568263" at="95,0,96,0" concept="8" trace="keyC" />
+      <node id="231307155597941680" at="96,0,97,0" concept="8" trace="entries" />
+      <node id="8847603084240390825" at="97,12,98,54" concept="1" />
+      <node id="8847603084240390830" at="98,54,99,54" concept="1" />
+      <node id="3186273868907568263" at="99,54,100,54" concept="1" />
+      <node id="231307155597941680" at="103,72,104,31" concept="6" />
+      <node id="231307155597941680" at="105,42,106,19" concept="7" />
+      <node id="231307155597941680" at="108,45,109,19" concept="7" />
+      <node id="231307155597941680" at="111,7,112,18" concept="7" />
+      <node id="231307155598628399" at="115,0,116,0" concept="8" trace="exampleA_" />
+      <node id="231307155598629098" at="116,0,117,0" concept="8" trace="aNumber_" />
+      <node id="231307155598809211" at="118,65,119,200" concept="1" />
+      <node id="231307155599007282" at="122,65,123,218" concept="1" />
+      <node id="231307155599003314" at="126,65,127,218" concept="1" />
+      <node id="231307155598913247" at="130,65,131,214" concept="1" />
+      <node id="512624657163920622" at="134,65,135,252" concept="1" />
+      <node id="3324695263691891485" at="138,66,139,282" concept="1" />
+      <node id="8847603084240392222" at="142,66,143,280" concept="1" />
+      <node id="4073179274523397868" at="146,66,147,268" concept="1" />
+      <node id="4073179274524122846" at="150,66,151,220" concept="1" />
+      <node id="4073179274524125383" at="154,66,155,328" concept="1" />
+      <node id="3186273868907828284" at="158,67,159,230" concept="1" />
+      <node id="3186273868909043964" at="162,67,163,212" concept="1" />
+      <node id="8988735099053128331" at="166,0,167,0" concept="2" trace="val1" />
+      <node id="8988735099053128333" at="167,0,168,0" concept="2" trace="val2" />
+      <node id="8988735099053128331" at="168,67,169,23" concept="1" />
+      <node id="8988735099053128333" at="169,23,170,23" concept="1" />
+      <node id="231307155597941680" at="174,29,175,22" concept="7" />
+      <node id="231307155597941680" at="177,7,178,19" concept="7" />
+      <node id="8988735099053128336" at="182,0,183,0" concept="8" trace="keyA" />
+      <node id="8988735099053128341" at="183,0,184,0" concept="8" trace="keyB" />
+      <node id="8988735099053133250" at="186,76,187,158" concept="1" />
+      <node id="8988735099053133542" at="190,76,191,158" concept="1" />
+      <node id="231307155597941680" at="36,50,39,9" concept="4" />
+      <node id="231307155597941680" at="56,31,59,9" concept="4" />
+      <node id="231307155597941680" at="59,9,62,9" concept="4" />
+      <node id="231307155597941680" at="84,49,87,9" concept="4" />
+      <node id="231307155597941680" at="104,31,107,9" concept="4" />
+      <node id="231307155597941680" at="107,9,110,9" concept="4" />
+      <node id="231307155597941680" at="173,54,176,9" concept="4" />
+      <node id="231307155597941680" at="22,0,26,0" concept="0" trace="ExampleTable_Table_Entry#(Ljava/lang/Number;Ljava/lang/Number;)V" />
+      <node id="231307155597941680" at="70,0,74,0" concept="0" trace="WithDefault_Table_Entry#(Ljava/lang/Number;Ljava/lang/Number;)V" />
+      <node id="231307155598809211" at="117,0,121,0" concept="5" trace="tests_item0_231307155598809211#()V" />
+      <node id="231307155599007282" at="121,0,125,0" concept="5" trace="tests_item1_231307155599007282#()V" />
+      <node id="231307155599003314" at="125,0,129,0" concept="5" trace="tests_item2_231307155599003314#()V" />
+      <node id="231307155598913247" at="129,0,133,0" concept="5" trace="tests_item3_231307155598913247#()V" />
+      <node id="512624657163920622" at="133,0,137,0" concept="5" trace="tests_item4_512624657163920622#()V" />
+      <node id="3324695263691891485" at="137,0,141,0" concept="5" trace="tests_item5_3324695263691891485#()V" />
+      <node id="8847603084240392222" at="141,0,145,0" concept="5" trace="tests_item6_8847603084240392222#()V" />
+      <node id="4073179274523397868" at="145,0,149,0" concept="5" trace="tests_item7_4073179274523397868#()V" />
+      <node id="4073179274524122846" at="149,0,153,0" concept="5" trace="tests_item8_4073179274524122846#()V" />
+      <node id="4073179274524125383" at="153,0,157,0" concept="5" trace="tests_item9_4073179274524125383#()V" />
+      <node id="3186273868907828284" at="157,0,161,0" concept="5" trace="tests_item10_3186273868907828284#()V" />
+      <node id="3186273868909043964" at="161,0,165,0" concept="5" trace="tests_item11_3186273868909043964#()V" />
+      <node id="231307155597941680" at="168,0,172,0" concept="0" trace="TableWithEmpties_Table_Entry#(Ljava/lang/Number;Ljava/lang/Number;)V" />
+      <node id="8988735099053133250" at="185,0,189,0" concept="5" trace="TestWithEmpties_item0_8988735099053133250#()V" />
+      <node id="8988735099053133542" at="189,0,193,0" concept="5" trace="TestWithEmpties_item1_8988735099053133542#()V" />
+      <node id="231307155597941680" at="35,60,40,7" concept="3" />
+      <node id="231307155597941680" at="83,59,88,7" concept="3" />
+      <node id="231307155597941680" at="172,64,177,7" concept="3" />
+      <node id="231307155597941680" at="26,37,32,7" concept="10" />
+      <node id="231307155597941680" at="74,37,80,7" concept="10" />
+      <node id="231307155597941680" at="35,0,43,0" concept="5" trace="is#(null)Z" />
+      <node id="231307155597941680" at="83,0,91,0" concept="5" trace="is#(null)Z" />
+      <node id="231307155597941680" at="172,0,180,0" concept="5" trace="is#(null)Z" />
+      <node id="231307155597941680" at="26,0,35,0" concept="5" trace="get#(I)Ljava/lang/Object;" />
+      <node id="231307155597941680" at="54,74,63,7" concept="3" />
+      <node id="231307155597941680" at="74,0,83,0" concept="5" trace="get#(I)Ljava/lang/Object;" />
+      <node id="231307155597941680" at="102,73,111,7" concept="3" />
+      <node id="231307155597941680" at="54,0,66,0" concept="9" trace="lookup#(ILjava/lang/Object;)Ltest/in/expr/os/datatable/Generated_DataTable_Test/ExampleTable_Table_Entry;" />
+      <node id="231307155597941680" at="102,0,114,0" concept="9" trace="lookup#(ILjava/lang/Object;)Ltest/in/expr/os/datatable/Generated_DataTable_Test/WithDefault_Table_Entry;" />
+      <scope id="231307155598052422" at="28,15,29,27" />
+      <scope id="231307155598052424" at="30,15,31,27" />
+      <scope id="231307155597941680" at="37,29,38,22" />
+      <scope id="231307155597941680" at="57,42,58,19" />
+      <scope id="231307155597941680" at="60,45,61,19" />
+      <scope id="8847603084240390820" at="76,15,77,27" />
+      <scope id="8847603084240390822" at="78,15,79,27" />
+      <scope id="231307155597941680" at="85,29,86,22" />
+      <scope id="231307155597941680" at="105,42,106,19" />
+      <scope id="231307155597941680" at="108,45,109,19" />
+      <scope id="231307155598809211" at="118,65,119,200" />
+      <scope id="231307155599007282" at="122,65,123,218" />
+      <scope id="231307155599003314" at="126,65,127,218" />
+      <scope id="231307155598913247" at="130,65,131,214" />
+      <scope id="512624657163920622" at="134,65,135,252" />
+      <scope id="3324695263691891485" at="138,66,139,282" />
+      <scope id="8847603084240392222" at="142,66,143,280" />
+      <scope id="4073179274523397868" at="146,66,147,268" />
+      <scope id="4073179274524122846" at="150,66,151,220" />
+      <scope id="4073179274524125383" at="154,66,155,328" />
+      <scope id="3186273868907828284" at="158,67,159,230" />
+      <scope id="3186273868909043964" at="162,67,163,212" />
+      <scope id="231307155597941680" at="174,29,175,22" />
+      <scope id="8988735099053133250" at="186,76,187,158" />
+      <scope id="8988735099053133542" at="190,76,191,158" />
+      <scope id="231307155597941680" at="22,63,24,23" />
+      <scope id="231307155597941680" at="70,62,72,23" />
+      <scope id="231307155597941680" at="168,67,170,23" />
+      <scope id="231307155597941680" at="36,50,39,9" />
+      <scope id="231307155597941680" at="49,12,52,54" />
+      <scope id="231307155597941680" at="84,49,87,9" />
+      <scope id="231307155597941680" at="97,12,100,54" />
+      <scope id="231307155597941680" at="173,54,176,9" />
+      <scope id="231307155597941680" at="22,0,26,0">
+        <var name="val1" id="231307155598052422" />
+        <var name="val2" id="231307155598052424" />
+      </scope>
+      <scope id="231307155597941680" at="70,0,74,0">
+        <var name="val1" id="8847603084240390820" />
+        <var name="val2" id="8847603084240390822" />
+      </scope>
+      <scope id="231307155598809211" at="117,0,121,0" />
+      <scope id="231307155599007282" at="121,0,125,0" />
+      <scope id="231307155599003314" at="125,0,129,0" />
+      <scope id="231307155598913247" at="129,0,133,0" />
+      <scope id="512624657163920622" at="133,0,137,0" />
+      <scope id="3324695263691891485" at="137,0,141,0" />
+      <scope id="8847603084240392222" at="141,0,145,0" />
+      <scope id="4073179274523397868" at="145,0,149,0" />
+      <scope id="4073179274524122846" at="149,0,153,0" />
+      <scope id="4073179274524125383" at="153,0,157,0" />
+      <scope id="3186273868907828284" at="157,0,161,0" />
+      <scope id="3186273868909043964" at="161,0,165,0" />
+      <scope id="231307155597941680" at="168,0,172,0">
+        <var name="val1" id="8988735099053128331" />
+        <var name="val2" id="8988735099053128333" />
+      </scope>
+      <scope id="8988735099053133250" at="185,0,189,0" />
+      <scope id="8988735099053133542" at="189,0,193,0" />
+      <scope id="231307155597941680" at="35,60,40,7">
+        <var name="e" id="231307155597941680" />
+      </scope>
+      <scope id="231307155597941680" at="83,59,88,7">
+        <var name="e" id="231307155597941680" />
+      </scope>
+      <scope id="231307155597941680" at="172,64,177,7">
+        <var name="e" id="231307155597941680" />
+      </scope>
+      <scope id="231307155597941680" at="35,60,41,19" />
+      <scope id="231307155597941680" at="83,59,89,19" />
+      <scope id="231307155597941680" at="172,64,178,19" />
+      <scope id="231307155597941680" at="26,37,33,18" />
+      <scope id="231307155597941680" at="55,73,62,9">
+        <var name="vv" id="231307155597941680" />
+      </scope>
+      <scope id="231307155597941680" at="74,37,81,18" />
+      <scope id="231307155597941680" at="103,72,110,9">
+        <var name="vv" id="231307155597941680" />
+      </scope>
+      <scope id="231307155597941680" at="35,0,43,0">
+        <var name="entries" id="231307155597941680" />
+      </scope>
+      <scope id="231307155597941680" at="83,0,91,0">
+        <var name="entries" id="231307155597941680" />
+      </scope>
+      <scope id="231307155597941680" at="172,0,180,0">
+        <var name="entries" id="231307155597941680" />
+      </scope>
+      <scope id="231307155597941680" at="26,0,35,0">
+        <var name="colIndex" id="231307155597941680" />
+      </scope>
+      <scope id="231307155597941680" at="54,74,63,7">
+        <var name="e" id="231307155597941680" />
+      </scope>
+      <scope id="231307155597941680" at="74,0,83,0">
+        <var name="colIndex" id="231307155597941680" />
+      </scope>
+      <scope id="231307155597941680" at="102,73,111,7">
+        <var name="e" id="231307155597941680" />
+      </scope>
+      <scope id="231307155597941680" at="54,74,64,18" />
+      <scope id="231307155597941680" at="102,73,112,18" />
+      <scope id="231307155597941680" at="54,0,66,0">
+        <var name="col" id="231307155597941680" />
+        <var name="value" id="231307155597941680" />
+      </scope>
+      <scope id="231307155597941680" at="102,0,114,0">
+        <var name="col" id="231307155597941680" />
+        <var name="value" id="231307155597941680" />
+      </scope>
+      <unit id="231307155597941680" at="181,0,185,0" name="test.in.expr.os.datatable.Generated_DataTable_Test$TableWithEmpties_Table" />
+      <unit id="231307155597941680" at="165,0,181,0" name="test.in.expr.os.datatable.Generated_DataTable_Test$TableWithEmpties_Table_Entry" />
+      <unit id="231307155597941680" at="44,0,67,0" name="test.in.expr.os.datatable.Generated_DataTable_Test$ExampleTable_Table" />
+      <unit id="231307155597941680" at="92,0,115,0" name="test.in.expr.os.datatable.Generated_DataTable_Test$WithDefault_Table" />
+      <unit id="231307155597941680" at="19,0,44,0" name="test.in.expr.os.datatable.Generated_DataTable_Test$ExampleTable_Table_Entry" />
+      <unit id="231307155597941680" at="67,0,92,0" name="test.in.expr.os.datatable.Generated_DataTable_Test$WithDefault_Table_Entry" />
+      <unit id="231307155597941680" at="17,0,198,0" name="test.in.expr.os.datatable.Generated_DataTable_Test" />
+    </file>
+  </root>
+</debug-info>
+

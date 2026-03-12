@@ -1,0 +1,334 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<debug-info version="2">
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123140:jetbrains.mps.baseLanguage.structure.ConstructorDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123155:jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123165:jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/6329021646629104954:jetbrains.mps.baseLanguage.structure.SingleLineComment" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123157:jetbrains.mps.baseLanguage.structure.Statement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1070462154015:jetbrains.mps.baseLanguage.structure.StaticFieldDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1081236700938:jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1070475587102:jetbrains.mps.baseLanguage.structure.SuperConstructorInvocation" />
+  <root nodeRef="r:01d36390-adf4-48cb-a3e7-d99f41d89a60(test.org.iets3.variability.configuration.base.enrichedNames@tests)/5548938125461453863">
+    <file name="EnrichedNamesUsing_Test.java">
+      <node id="5548938125461453863" at="27,36,28,60" concept="7" />
+      <node id="5548938125461453864" at="32,57,33,48" concept="1" />
+      <node id="5548938125461453872" at="36,54,37,45" concept="1" />
+      <node id="5548938125461453926" at="41,36,42,37" concept="1" />
+      <node id="5548938125461453930" at="46,35,47,38" concept="1" />
+      <node id="5548938125461453863" at="52,52,53,19" concept="7" />
+      <node id="5548938125461453863" at="57,36,58,46" concept="1" />
+      <node id="5548938125461453864" at="61,59,62,22" concept="1" />
+      <node id="5548938125461453864" at="62,22,63,181" concept="1" />
+      <node id="5548938125461453872" at="65,56,66,22" concept="1" />
+      <node id="5548938125461453875" at="67,30,68,96" concept="3" />
+      <node id="5548938125461453893" at="68,96,69,200" concept="1" />
+      <node id="5548938125461453863" at="76,0,77,0" concept="5" trace="config$SCsb" />
+      <node id="5548938125461453863" at="24,0,26,0" concept="5" trace="ourParametersCacheExtension" />
+      <node id="5548938125461453863" at="27,0,30,0" concept="0" trace="EnrichedNamesUsing_Test#()V" />
+      <node id="5548938125461453863" at="52,0,55,0" concept="0" trace="TestBody#(Ljetbrains/mps/lang/test/runtime/TransformationTest;)V" />
+      <node id="5548938125461453864" at="31,0,35,0" concept="2" trace="test_checkEnrichedName#()V" />
+      <node id="5548938125461453872" at="35,0,39,0" concept="2" trace="test_checkReference#()V" />
+      <node id="5548938125461453863" at="40,0,44,0" concept="6" trace="beforeTests#()V" />
+      <node id="5548938125461453863" at="45,0,49,0" concept="6" trace="afterTests#()V" />
+      <node id="5548938125461453863" at="56,0,60,0" concept="2" trace="initTestNodes#()V" />
+      <node id="5548938125461453864" at="61,0,65,0" concept="2" trace="test_checkEnrichedName#()V" />
+      <node id="5548938125461453872" at="66,22,70,9" concept="1" />
+      <node id="5548938125461453872" at="65,0,72,0" concept="2" trace="test_checkReference#()V" />
+      <scope id="5548938125461453863" at="27,36,28,60" />
+      <scope id="5548938125461453864" at="32,57,33,48" />
+      <scope id="5548938125461453872" at="36,54,37,45" />
+      <scope id="5548938125461453863" at="41,36,42,37" />
+      <scope id="5548938125461453863" at="46,35,47,38" />
+      <scope id="5548938125461453863" at="52,52,53,19" />
+      <scope id="5548938125461453863" at="57,36,58,46" />
+      <scope id="5548938125461453864" at="61,59,63,181" />
+      <scope id="5548938125461453872" at="67,30,69,200" />
+      <scope id="5548938125461453863" at="27,0,30,0" />
+      <scope id="5548938125461453863" at="52,0,55,0">
+        <var name="owner" id="5548938125461453863" />
+      </scope>
+      <scope id="5548938125461453864" at="31,0,35,0" />
+      <scope id="5548938125461453872" at="35,0,39,0" />
+      <scope id="5548938125461453863" at="40,0,44,0" />
+      <scope id="5548938125461453863" at="45,0,49,0" />
+      <scope id="5548938125461453863" at="56,0,60,0" />
+      <scope id="5548938125461453864" at="61,0,65,0" />
+      <scope id="5548938125461453872" at="65,56,70,9" />
+      <scope id="5548938125461453872" at="65,0,72,0" />
+      <unit id="5548938125461453863" at="75,0,78,0" name="test.org.iets3.variability.configuration.base.enrichedNames.EnrichedNamesUsing_Test$LINKS" />
+      <unit id="5548938125461453863" at="50,0,74,0" name="test.org.iets3.variability.configuration.base.enrichedNames.EnrichedNamesUsing_Test$TestBody" />
+      <unit id="5548938125461453863" at="22,0,79,0" name="test.org.iets3.variability.configuration.base.enrichedNames.EnrichedNamesUsing_Test" />
+    </file>
+  </root>
+  <root nodeRef="r:01d36390-adf4-48cb-a3e7-d99f41d89a60(test.org.iets3.variability.configuration.base.enrichedNames@tests)/7493231619825592644">
+    <file name="EnrichedNamesExtensionAPI_Test.java">
+      <node id="7493231619825592644" at="27,43,28,60" concept="7" />
+      <node id="7493231619825693467" at="32,57,33,48" concept="1" />
+      <node id="7493231619827026282" at="36,54,37,45" concept="1" />
+      <node id="7493231619825592644" at="42,52,43,19" concept="7" />
+      <node id="7493231619825592644" at="47,36,48,46" concept="1" />
+      <node id="7493231619825693467" at="51,59,52,22" concept="1" />
+      <node id="7493231619825759678" at="53,30,54,156" concept="1" />
+      <node id="7493231619825756963" at="54,156,55,218" concept="1" />
+      <node id="7493231619825769553" at="55,218,56,0" concept="4" />
+      <node id="7493231619825769060" at="56,0,57,110" concept="1" />
+      <node id="7493231619825782282" at="57,110,58,182" concept="1" />
+      <node id="7493231619827907923" at="58,182,59,246" concept="1" />
+      <node id="7493231619827026282" at="62,56,63,22" concept="1" />
+      <node id="7493231619827028116" at="64,65,65,155" concept="1" />
+      <node id="7493231619827026289" at="65,155,66,226" concept="1" />
+      <node id="7493231619832335768" at="66,226,67,154" concept="1" />
+      <node id="7493231619827026296" at="67,154,68,0" concept="4" />
+      <node id="7493231619827890662" at="68,0,69,109" concept="1" />
+      <node id="7493231619827026302" at="69,109,70,190" concept="1" />
+      <node id="7493231619827910690" at="70,190,71,249" concept="1" />
+      <node id="7493231619825592644" at="78,0,79,0" concept="5" trace="name$MnvL" />
+      <node id="7493231619825592644" at="24,0,26,0" concept="5" trace="ourParametersCacheExtension" />
+      <node id="7493231619825592644" at="27,0,30,0" concept="0" trace="EnrichedNamesExtensionAPI_Test#()V" />
+      <node id="7493231619825592644" at="42,0,45,0" concept="0" trace="TestBody#(Ljetbrains/mps/lang/test/runtime/TransformationTest;)V" />
+      <node id="7493231619825693467" at="31,0,35,0" concept="2" trace="test_withoutEnrichment#()V" />
+      <node id="7493231619827026282" at="35,0,39,0" concept="2" trace="test_withEnrichment#()V" />
+      <node id="7493231619825592644" at="46,0,50,0" concept="2" trace="initTestNodes#()V" />
+      <node id="7493231619825693467" at="52,22,60,9" concept="1" />
+      <node id="7493231619827026282" at="63,22,72,10" concept="1" />
+      <node id="7493231619825693467" at="51,0,62,0" concept="2" trace="test_withoutEnrichment#()V" />
+      <node id="7493231619827026282" at="62,0,74,0" concept="2" trace="test_withEnrichment#()V" />
+      <scope id="7493231619825592644" at="27,43,28,60" />
+      <scope id="7493231619825693467" at="32,57,33,48" />
+      <scope id="7493231619827026282" at="36,54,37,45" />
+      <scope id="7493231619825592644" at="42,52,43,19" />
+      <scope id="7493231619825592644" at="47,36,48,46" />
+      <scope id="7493231619825592644" at="27,0,30,0" />
+      <scope id="7493231619825592644" at="42,0,45,0">
+        <var name="owner" id="7493231619825592644" />
+      </scope>
+      <scope id="7493231619825693467" at="31,0,35,0" />
+      <scope id="7493231619827026282" at="35,0,39,0" />
+      <scope id="7493231619825592644" at="46,0,50,0" />
+      <scope id="7493231619825693467" at="53,30,59,246" />
+      <scope id="7493231619828227647" at="64,65,71,249" />
+      <scope id="7493231619825693467" at="51,59,60,9" />
+      <scope id="7493231619827026282" at="62,56,72,10" />
+      <scope id="7493231619825693467" at="51,0,62,0" />
+      <scope id="7493231619827026282" at="62,0,74,0" />
+      <unit id="7493231619825592644" at="77,0,80,0" name="test.org.iets3.variability.configuration.base.enrichedNames.EnrichedNamesExtensionAPI_Test$PROPS" />
+      <unit id="7493231619825592644" at="40,0,76,0" name="test.org.iets3.variability.configuration.base.enrichedNames.EnrichedNamesExtensionAPI_Test$TestBody" />
+      <unit id="7493231619825592644" at="22,0,81,0" name="test.org.iets3.variability.configuration.base.enrichedNames.EnrichedNamesExtensionAPI_Test" />
+    </file>
+  </root>
+  <root nodeRef="r:01d36390-adf4-48cb-a3e7-d99f41d89a60(test.org.iets3.variability.configuration.base.enrichedNames@tests)/7493231619827921770">
+    <file name="UniquenessWithEnrichedNames_Test.java">
+      <node id="7493231619827921770" at="28,45,29,60" concept="7" />
+      <node id="7493231619829858363" at="33,78,34,69" concept="1" />
+      <node id="7493231619831299992" at="37,76,38,67" concept="1" />
+      <node id="7493231619831980456" at="42,36,43,50" concept="3" />
+      <node id="7493231619828277450" at="43,50,44,41" concept="1" />
+      <node id="7493231619828277702" at="48,35,49,38" concept="1" />
+      <node id="7493231619827921770" at="54,52,55,19" concept="7" />
+      <node id="7493231619827921770" at="59,36,60,92" concept="1" />
+      <node id="7493231619829858363" at="63,80,64,22" concept="1" />
+      <node id="7493231619829858363" at="64,22,65,222" concept="1" />
+      <node id="7493231619831299992" at="67,78,68,22" concept="1" />
+      <node id="7493231619831565963" at="69,30,70,206" concept="1" />
+      <node id="7493231619832130470" at="70,206,71,206" concept="1" />
+      <node id="7493231619827921770" at="78,0,79,0" concept="5" trace="contents$7Ohx" />
+      <node id="7493231619827921770" at="82,0,83,0" concept="5" trace="FeatureModelConfiguration$nE" />
+      <node id="7493231619827921770" at="25,0,27,0" concept="5" trace="ourParametersCacheExtension" />
+      <node id="7493231619827921770" at="28,0,31,0" concept="0" trace="UniquenessWithEnrichedNames_Test#()V" />
+      <node id="7493231619827921770" at="54,0,57,0" concept="0" trace="TestBody#(Ljetbrains/mps/lang/test/runtime/TransformationTest;)V" />
+      <node id="7493231619829858363" at="32,0,36,0" concept="2" trace="test_shouldntHaveDuplicateWithEnrichedNames#()V" />
+      <node id="7493231619831299992" at="36,0,40,0" concept="2" trace="test_shouldhaveDuplicateWithEnrichedNames#()V" />
+      <node id="7493231619827921770" at="47,0,51,0" concept="6" trace="afterTests#()V" />
+      <node id="7493231619827921770" at="58,0,62,0" concept="2" trace="initTestNodes#()V" />
+      <node id="7493231619829858363" at="63,0,67,0" concept="2" trace="test_shouldntHaveDuplicateWithEnrichedNames#()V" />
+      <node id="7493231619831299992" at="68,22,72,9" concept="1" />
+      <node id="7493231619827921770" at="41,0,46,0" concept="6" trace="beforeTests#()V" />
+      <node id="7493231619831299992" at="67,0,74,0" concept="2" trace="test_shouldhaveDuplicateWithEnrichedNames#()V" />
+      <scope id="7493231619827921770" at="28,45,29,60" />
+      <scope id="7493231619829858363" at="33,78,34,69" />
+      <scope id="7493231619831299992" at="37,76,38,67" />
+      <scope id="7493231619827921770" at="48,35,49,38" />
+      <scope id="7493231619827921770" at="54,52,55,19" />
+      <scope id="7493231619827921770" at="59,36,60,92" />
+      <scope id="7493231619827921770" at="42,36,44,41" />
+      <scope id="7493231619829858363" at="63,80,65,222" />
+      <scope id="7493231619831299992" at="69,30,71,206" />
+      <scope id="7493231619827921770" at="28,0,31,0" />
+      <scope id="7493231619827921770" at="54,0,57,0">
+        <var name="owner" id="7493231619827921770" />
+      </scope>
+      <scope id="7493231619829858363" at="32,0,36,0" />
+      <scope id="7493231619831299992" at="36,0,40,0" />
+      <scope id="7493231619827921770" at="47,0,51,0" />
+      <scope id="7493231619827921770" at="58,0,62,0" />
+      <scope id="7493231619829858363" at="63,0,67,0" />
+      <scope id="7493231619827921770" at="41,0,46,0" />
+      <scope id="7493231619831299992" at="67,78,72,9" />
+      <scope id="7493231619831299992" at="67,0,74,0" />
+      <unit id="7493231619827921770" at="77,0,80,0" name="test.org.iets3.variability.configuration.base.enrichedNames.UniquenessWithEnrichedNames_Test$LINKS" />
+      <unit id="7493231619827921770" at="81,0,84,0" name="test.org.iets3.variability.configuration.base.enrichedNames.UniquenessWithEnrichedNames_Test$CONCEPTS" />
+      <unit id="7493231619827921770" at="52,0,76,0" name="test.org.iets3.variability.configuration.base.enrichedNames.UniquenessWithEnrichedNames_Test$TestBody" />
+      <unit id="7493231619827921770" at="23,0,85,0" name="test.org.iets3.variability.configuration.base.enrichedNames.UniquenessWithEnrichedNames_Test" />
+    </file>
+  </root>
+  <root nodeRef="r:01d36390-adf4-48cb-a3e7-d99f41d89a60(test.org.iets3.variability.configuration.base.enrichedNames@tests)/7493231619828647832">
+    <file name="EnrichedNamesReferences_Test.java">
+      <node id="7493231619828647832" at="27,41,28,60" concept="7" />
+      <node id="7493231619828647833" at="32,57,33,48" concept="1" />
+      <node id="7493231619828892057" at="36,54,37,45" concept="1" />
+      <node id="7493231619828654366" at="41,36,42,37" concept="1" />
+      <node id="7493231619828654647" at="46,35,47,38" concept="1" />
+      <node id="7493231619828647832" at="52,52,53,19" concept="7" />
+      <node id="7493231619828647832" at="57,36,58,46" concept="1" />
+      <node id="7493231619828647833" at="61,59,62,22" concept="1" />
+      <node id="7493231619828647833" at="62,22,63,173" concept="1" />
+      <node id="7493231619828892057" at="65,56,66,22" concept="1" />
+      <node id="7493231619828981257" at="67,30,68,96" concept="3" />
+      <node id="7493231619828959012" at="68,96,69,193" concept="1" />
+      <node id="7493231619828647832" at="76,0,77,0" concept="5" trace="config$VWuN" />
+      <node id="7493231619828647832" at="24,0,26,0" concept="5" trace="ourParametersCacheExtension" />
+      <node id="7493231619828647832" at="27,0,30,0" concept="0" trace="EnrichedNamesReferences_Test#()V" />
+      <node id="7493231619828647832" at="52,0,55,0" concept="0" trace="TestBody#(Ljetbrains/mps/lang/test/runtime/TransformationTest;)V" />
+      <node id="7493231619828647833" at="31,0,35,0" concept="2" trace="test_checkEnrichedName#()V" />
+      <node id="7493231619828892057" at="35,0,39,0" concept="2" trace="test_checkReference#()V" />
+      <node id="7493231619828647832" at="40,0,44,0" concept="6" trace="beforeTests#()V" />
+      <node id="7493231619828647832" at="45,0,49,0" concept="6" trace="afterTests#()V" />
+      <node id="7493231619828647832" at="56,0,60,0" concept="2" trace="initTestNodes#()V" />
+      <node id="7493231619828647833" at="61,0,65,0" concept="2" trace="test_checkEnrichedName#()V" />
+      <node id="7493231619828892057" at="66,22,70,9" concept="1" />
+      <node id="7493231619828892057" at="65,0,72,0" concept="2" trace="test_checkReference#()V" />
+      <scope id="7493231619828647832" at="27,41,28,60" />
+      <scope id="7493231619828647833" at="32,57,33,48" />
+      <scope id="7493231619828892057" at="36,54,37,45" />
+      <scope id="7493231619828647832" at="41,36,42,37" />
+      <scope id="7493231619828647832" at="46,35,47,38" />
+      <scope id="7493231619828647832" at="52,52,53,19" />
+      <scope id="7493231619828647832" at="57,36,58,46" />
+      <scope id="7493231619828647833" at="61,59,63,173" />
+      <scope id="7493231619828892057" at="67,30,69,193" />
+      <scope id="7493231619828647832" at="27,0,30,0" />
+      <scope id="7493231619828647832" at="52,0,55,0">
+        <var name="owner" id="7493231619828647832" />
+      </scope>
+      <scope id="7493231619828647833" at="31,0,35,0" />
+      <scope id="7493231619828892057" at="35,0,39,0" />
+      <scope id="7493231619828647832" at="40,0,44,0" />
+      <scope id="7493231619828647832" at="45,0,49,0" />
+      <scope id="7493231619828647832" at="56,0,60,0" />
+      <scope id="7493231619828647833" at="61,0,65,0" />
+      <scope id="7493231619828892057" at="65,56,70,9" />
+      <scope id="7493231619828892057" at="65,0,72,0" />
+      <unit id="7493231619828647832" at="75,0,78,0" name="test.org.iets3.variability.configuration.base.enrichedNames.EnrichedNamesReferences_Test$LINKS" />
+      <unit id="7493231619828647832" at="50,0,74,0" name="test.org.iets3.variability.configuration.base.enrichedNames.EnrichedNamesReferences_Test$TestBody" />
+      <unit id="7493231619828647832" at="22,0,79,0" name="test.org.iets3.variability.configuration.base.enrichedNames.EnrichedNamesReferences_Test" />
+    </file>
+  </root>
+  <root nodeRef="r:01d36390-adf4-48cb-a3e7-d99f41d89a60(test.org.iets3.variability.configuration.base.enrichedNames@tests)/7493231619828986210">
+    <file name="EnrichedNamesExtends_Test.java">
+      <node id="7493231619828986210" at="27,38,28,60" concept="7" />
+      <node id="7493231619828986211" at="32,57,33,48" concept="1" />
+      <node id="7493231619828986219" at="36,54,37,45" concept="1" />
+      <node id="7493231619828986278" at="41,36,42,37" concept="1" />
+      <node id="7493231619828986282" at="46,35,47,38" concept="1" />
+      <node id="7493231619828986210" at="52,52,53,19" concept="7" />
+      <node id="7493231619828986210" at="57,36,58,46" concept="1" />
+      <node id="7493231619828986211" at="61,59,62,22" concept="1" />
+      <node id="7493231619828986211" at="62,22,63,181" concept="1" />
+      <node id="7493231619828986219" at="65,56,66,22" concept="1" />
+      <node id="7493231619828986222" at="67,30,68,96" concept="3" />
+      <node id="7493231619828986240" at="68,96,69,202" concept="1" />
+      <node id="7493231619828986210" at="76,0,77,0" concept="5" trace="config$ID3f" />
+      <node id="7493231619828986210" at="24,0,26,0" concept="5" trace="ourParametersCacheExtension" />
+      <node id="7493231619828986210" at="27,0,30,0" concept="0" trace="EnrichedNamesExtends_Test#()V" />
+      <node id="7493231619828986210" at="52,0,55,0" concept="0" trace="TestBody#(Ljetbrains/mps/lang/test/runtime/TransformationTest;)V" />
+      <node id="7493231619828986211" at="31,0,35,0" concept="2" trace="test_checkEnrichedName#()V" />
+      <node id="7493231619828986219" at="35,0,39,0" concept="2" trace="test_checkReference#()V" />
+      <node id="7493231619828986210" at="40,0,44,0" concept="6" trace="beforeTests#()V" />
+      <node id="7493231619828986210" at="45,0,49,0" concept="6" trace="afterTests#()V" />
+      <node id="7493231619828986210" at="56,0,60,0" concept="2" trace="initTestNodes#()V" />
+      <node id="7493231619828986211" at="61,0,65,0" concept="2" trace="test_checkEnrichedName#()V" />
+      <node id="7493231619828986219" at="66,22,70,9" concept="1" />
+      <node id="7493231619828986219" at="65,0,72,0" concept="2" trace="test_checkReference#()V" />
+      <scope id="7493231619828986210" at="27,38,28,60" />
+      <scope id="7493231619828986211" at="32,57,33,48" />
+      <scope id="7493231619828986219" at="36,54,37,45" />
+      <scope id="7493231619828986210" at="41,36,42,37" />
+      <scope id="7493231619828986210" at="46,35,47,38" />
+      <scope id="7493231619828986210" at="52,52,53,19" />
+      <scope id="7493231619828986210" at="57,36,58,46" />
+      <scope id="7493231619828986211" at="61,59,63,181" />
+      <scope id="7493231619828986219" at="67,30,69,202" />
+      <scope id="7493231619828986210" at="27,0,30,0" />
+      <scope id="7493231619828986210" at="52,0,55,0">
+        <var name="owner" id="7493231619828986210" />
+      </scope>
+      <scope id="7493231619828986211" at="31,0,35,0" />
+      <scope id="7493231619828986219" at="35,0,39,0" />
+      <scope id="7493231619828986210" at="40,0,44,0" />
+      <scope id="7493231619828986210" at="45,0,49,0" />
+      <scope id="7493231619828986210" at="56,0,60,0" />
+      <scope id="7493231619828986211" at="61,0,65,0" />
+      <scope id="7493231619828986219" at="65,56,70,9" />
+      <scope id="7493231619828986219" at="65,0,72,0" />
+      <unit id="7493231619828986210" at="75,0,78,0" name="test.org.iets3.variability.configuration.base.enrichedNames.EnrichedNamesExtends_Test$LINKS" />
+      <unit id="7493231619828986210" at="50,0,74,0" name="test.org.iets3.variability.configuration.base.enrichedNames.EnrichedNamesExtends_Test$TestBody" />
+      <unit id="7493231619828986210" at="22,0,79,0" name="test.org.iets3.variability.configuration.base.enrichedNames.EnrichedNamesExtends_Test" />
+    </file>
+  </root>
+  <root nodeRef="r:01d36390-adf4-48cb-a3e7-d99f41d89a60(test.org.iets3.variability.configuration.base.enrichedNames@tests)/7493231619831968823">
+    <file name="UniquenessWithNormalNames_Test.java">
+      <node id="7493231619831968823" at="28,43,29,60" concept="7" />
+      <node id="7493231619831968824" at="33,74,34,65" concept="1" />
+      <node id="7493231619832089787" at="37,76,38,67" concept="1" />
+      <node id="7493231619831980880" at="42,36,43,71" concept="3" />
+      <node id="7493231619831968896" at="43,71,44,42" concept="1" />
+      <node id="7493231619831968901" at="48,35,49,38" concept="1" />
+      <node id="7493231619831968823" at="54,52,55,19" concept="7" />
+      <node id="7493231619831968823" at="59,36,60,92" concept="1" />
+      <node id="7493231619831968824" at="63,76,64,22" concept="1" />
+      <node id="7493231619831968827" at="65,30,66,206" concept="1" />
+      <node id="7493231619831968839" at="66,206,67,206" concept="1" />
+      <node id="7493231619832089787" at="70,78,71,22" concept="1" />
+      <node id="7493231619832089787" at="71,22,72,222" concept="1" />
+      <node id="7493231619831968823" at="78,0,79,0" concept="5" trace="contents$7Ohx" />
+      <node id="7493231619831968823" at="82,0,83,0" concept="5" trace="FeatureModelConfiguration$nE" />
+      <node id="7493231619831968823" at="25,0,27,0" concept="5" trace="ourParametersCacheExtension" />
+      <node id="7493231619831968823" at="28,0,31,0" concept="0" trace="UniquenessWithNormalNames_Test#()V" />
+      <node id="7493231619831968823" at="54,0,57,0" concept="0" trace="TestBody#(Ljetbrains/mps/lang/test/runtime/TransformationTest;)V" />
+      <node id="7493231619831968824" at="32,0,36,0" concept="2" trace="test_shouldHaveDuplicateWithNormalNames#()V" />
+      <node id="7493231619832089787" at="36,0,40,0" concept="2" trace="test_shouldntHaveDuplicateWithNormalNames#()V" />
+      <node id="7493231619831968823" at="47,0,51,0" concept="6" trace="afterTests#()V" />
+      <node id="7493231619831968823" at="58,0,62,0" concept="2" trace="initTestNodes#()V" />
+      <node id="7493231619831968824" at="64,22,68,9" concept="1" />
+      <node id="7493231619832089787" at="70,0,74,0" concept="2" trace="test_shouldntHaveDuplicateWithNormalNames#()V" />
+      <node id="7493231619831968823" at="41,0,46,0" concept="6" trace="beforeTests#()V" />
+      <node id="7493231619831968824" at="63,0,70,0" concept="2" trace="test_shouldHaveDuplicateWithNormalNames#()V" />
+      <scope id="7493231619831968823" at="28,43,29,60" />
+      <scope id="7493231619831968824" at="33,74,34,65" />
+      <scope id="7493231619832089787" at="37,76,38,67" />
+      <scope id="7493231619831968823" at="48,35,49,38" />
+      <scope id="7493231619831968823" at="54,52,55,19" />
+      <scope id="7493231619831968823" at="59,36,60,92" />
+      <scope id="7493231619831968823" at="42,36,44,42" />
+      <scope id="7493231619831968824" at="65,30,67,206" />
+      <scope id="7493231619832089787" at="70,78,72,222" />
+      <scope id="7493231619831968823" at="28,0,31,0" />
+      <scope id="7493231619831968823" at="54,0,57,0">
+        <var name="owner" id="7493231619831968823" />
+      </scope>
+      <scope id="7493231619831968824" at="32,0,36,0" />
+      <scope id="7493231619832089787" at="36,0,40,0" />
+      <scope id="7493231619831968823" at="47,0,51,0" />
+      <scope id="7493231619831968823" at="58,0,62,0" />
+      <scope id="7493231619832089787" at="70,0,74,0" />
+      <scope id="7493231619831968823" at="41,0,46,0" />
+      <scope id="7493231619831968824" at="63,76,68,9" />
+      <scope id="7493231619831968824" at="63,0,70,0" />
+      <unit id="7493231619831968823" at="77,0,80,0" name="test.org.iets3.variability.configuration.base.enrichedNames.UniquenessWithNormalNames_Test$LINKS" />
+      <unit id="7493231619831968823" at="81,0,84,0" name="test.org.iets3.variability.configuration.base.enrichedNames.UniquenessWithNormalNames_Test$CONCEPTS" />
+      <unit id="7493231619831968823" at="52,0,76,0" name="test.org.iets3.variability.configuration.base.enrichedNames.UniquenessWithNormalNames_Test$TestBody" />
+      <unit id="7493231619831968823" at="23,0,85,0" name="test.org.iets3.variability.configuration.base.enrichedNames.UniquenessWithNormalNames_Test" />
+    </file>
+  </root>
+</debug-info>
+

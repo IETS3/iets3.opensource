@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<debug-info version="2">
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123140:jetbrains.mps.baseLanguage.structure.ConstructorDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123155:jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123165:jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242864:jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1070462154015:jetbrains.mps.baseLanguage.structure.StaticFieldDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1070475587102:jetbrains.mps.baseLanguage.structure.SuperConstructorInvocation" />
+  <root nodeRef="r:753612d9-86b2-4e53-9c71-5df913fa6527(test.ts.components.hardware@tests)/4917103062946846829">
+    <file name="HardwarePorts_Test.java">
+      <node id="4917103062946846829" at="31,31,32,60" concept="5" />
+      <node id="5425008608914873152" at="36,72,37,63" concept="1" />
+      <node id="4917103062948994044" at="40,77,41,68" concept="1" />
+      <node id="4917103062948994038" at="44,77,45,68" concept="1" />
+      <node id="4917103062946848529" at="48,91,49,82" concept="1" />
+      <node id="4917103062946849714" at="52,91,53,82" concept="1" />
+      <node id="4917103062946997615" at="56,91,57,82" concept="1" />
+      <node id="4917103062947480446" at="60,91,61,82" concept="1" />
+      <node id="4917103062947687641" at="64,91,65,82" concept="1" />
+      <node id="4917103062948358351" at="68,77,69,68" concept="1" />
+      <node id="4917103062948282677" at="72,91,73,82" concept="1" />
+      <node id="4917103062948995327" at="76,77,77,68" concept="1" />
+      <node id="2218184345257786571" at="80,92,81,83" concept="1" />
+      <node id="5425008608914873458" at="84,91,85,82" concept="1" />
+      <node id="4917103062946846829" at="90,52,91,19" concept="5" />
+      <node id="4917103062946846829" at="95,36,96,46" concept="1" />
+      <node id="5425008608914873152" at="99,74,100,22" concept="1" />
+      <node id="5425008608914873152" at="101,30,102,63" concept="3" />
+      <node id="5425008608914873152" at="102,63,103,290" concept="1" />
+      <node id="4917103062948994044" at="106,79,107,22" concept="1" />
+      <node id="4917103062948994044" at="108,30,109,63" concept="3" />
+      <node id="4917103062948994044" at="109,63,110,171" concept="1" />
+      <node id="4917103062948994038" at="113,79,114,22" concept="1" />
+      <node id="4917103062948994038" at="115,30,116,63" concept="3" />
+      <node id="4917103062948994038" at="116,63,117,171" concept="1" />
+      <node id="4917103062946848529" at="120,93,121,22" concept="1" />
+      <node id="4917103062946848529" at="122,30,123,63" concept="3" />
+      <node id="4917103062946848529" at="123,63,124,295" concept="1" />
+      <node id="4917103062946849714" at="127,93,128,22" concept="1" />
+      <node id="4917103062946849714" at="129,30,130,63" concept="3" />
+      <node id="4917103062946849714" at="130,63,131,295" concept="1" />
+      <node id="4917103062946997615" at="134,93,135,22" concept="1" />
+      <node id="4917103062946997615" at="136,30,137,63" concept="3" />
+      <node id="4917103062946997615" at="137,63,138,295" concept="1" />
+      <node id="4917103062947480446" at="141,93,142,22" concept="1" />
+      <node id="4917103062947480446" at="143,30,144,63" concept="3" />
+      <node id="4917103062947480446" at="144,63,145,295" concept="1" />
+      <node id="4917103062947687641" at="148,93,149,22" concept="1" />
+      <node id="4917103062947687641" at="150,30,151,63" concept="3" />
+      <node id="4917103062947687641" at="151,63,152,295" concept="1" />
+      <node id="4917103062948358351" at="155,79,156,22" concept="1" />
+      <node id="4917103062948358351" at="157,30,158,63" concept="3" />
+      <node id="4917103062948358351" at="158,63,159,171" concept="1" />
+      <node id="4917103062948282677" at="162,93,163,22" concept="1" />
+      <node id="4917103062948282677" at="164,30,165,63" concept="3" />
+      <node id="4917103062948282677" at="165,63,166,295" concept="1" />
+      <node id="4917103062948995327" at="169,79,170,22" concept="1" />
+      <node id="4917103062948995327" at="171,30,172,63" concept="3" />
+      <node id="4917103062948995327" at="172,63,173,171" concept="1" />
+      <node id="2218184345257786571" at="176,94,177,22" concept="1" />
+      <node id="2218184345257786571" at="178,30,179,67" concept="3" />
+      <node id="2218184345257786571" at="179,67,180,398" concept="1" />
+      <node id="5425008608914873458" at="183,93,184,22" concept="1" />
+      <node id="5425008608914873458" at="185,30,186,63" concept="3" />
+      <node id="5425008608914873458" at="186,63,187,295" concept="1" />
+      <node id="4917103062946846829" at="28,0,30,0" concept="4" trace="ourParametersCacheExtension" />
+      <node id="4917103062946846829" at="31,0,34,0" concept="0" trace="HardwarePorts_Test#()V" />
+      <node id="4917103062946846829" at="90,0,93,0" concept="0" trace="TestBody#(Ljetbrains/mps/lang/test/runtime/TransformationTest;)V" />
+      <node id="5425008608914873152" at="35,0,39,0" concept="2" trace="test_NodePortCheck5425008608914873152#()V" />
+      <node id="4917103062948994044" at="39,0,43,0" concept="2" trace="test_ErrorMessagesCheck4917103062948994044#()V" />
+      <node id="4917103062948994038" at="43,0,47,0" concept="2" trace="test_ErrorMessagesCheck4917103062948994038#()V" />
+      <node id="4917103062946848529" at="47,0,51,0" concept="2" trace="test_NodePortIsConnectedMultipleCheck4917103062946848529#()V" />
+      <node id="4917103062946849714" at="51,0,55,0" concept="2" trace="test_NodePortIsConnectedMultipleCheck4917103062946849714#()V" />
+      <node id="4917103062946997615" at="55,0,59,0" concept="2" trace="test_NodePortIsConnectedMultipleCheck4917103062946997615#()V" />
+      <node id="4917103062947480446" at="59,0,63,0" concept="2" trace="test_NodePortIsConnectedMultipleCheck4917103062947480446#()V" />
+      <node id="4917103062947687641" at="63,0,67,0" concept="2" trace="test_NodePortIsConnectedMultipleCheck4917103062947687641#()V" />
+      <node id="4917103062948358351" at="67,0,71,0" concept="2" trace="test_ErrorMessagesCheck4917103062948358351#()V" />
+      <node id="4917103062948282677" at="71,0,75,0" concept="2" trace="test_NodePortIsConnectedMultipleCheck4917103062948282677#()V" />
+      <node id="4917103062948995327" at="75,0,79,0" concept="2" trace="test_ErrorMessagesCheck4917103062948995327#()V" />
+      <node id="2218184345257786571" at="79,0,83,0" concept="2" trace="test_ScopeOf_WireConnector_sourcePort_2218184345257713954#()V" />
+      <node id="5425008608914873458" at="83,0,87,0" concept="2" trace="test_NodePortIsConnectedMultipleCheck5425008608914873458#()V" />
+      <node id="4917103062946846829" at="94,0,98,0" concept="2" trace="initTestNodes#()V" />
+      <node id="5425008608914873152" at="100,22,104,9" concept="1" />
+      <node id="4917103062948994044" at="107,22,111,9" concept="1" />
+      <node id="4917103062948994038" at="114,22,118,9" concept="1" />
+      <node id="4917103062946848529" at="121,22,125,9" concept="1" />
+      <node id="4917103062946849714" at="128,22,132,9" concept="1" />
+      <node id="4917103062946997615" at="135,22,139,9" concept="1" />
+      <node id="4917103062947480446" at="142,22,146,9" concept="1" />
+      <node id="4917103062947687641" at="149,22,153,9" concept="1" />
+      <node id="4917103062948358351" at="156,22,160,9" concept="1" />
+      <node id="4917103062948282677" at="163,22,167,9" concept="1" />
+      <node id="4917103062948995327" at="170,22,174,9" concept="1" />
+      <node id="2218184345257786571" at="177,22,181,9" concept="1" />
+      <node id="5425008608914873458" at="184,22,188,9" concept="1" />
+      <node id="5425008608914873152" at="99,0,106,0" concept="2" trace="test_NodePortCheck5425008608914873152#()V" />
+      <node id="4917103062948994044" at="106,0,113,0" concept="2" trace="test_ErrorMessagesCheck4917103062948994044#()V" />
+      <node id="4917103062948994038" at="113,0,120,0" concept="2" trace="test_ErrorMessagesCheck4917103062948994038#()V" />
+      <node id="4917103062946848529" at="120,0,127,0" concept="2" trace="test_NodePortIsConnectedMultipleCheck4917103062946848529#()V" />
+      <node id="4917103062946849714" at="127,0,134,0" concept="2" trace="test_NodePortIsConnectedMultipleCheck4917103062946849714#()V" />
+      <node id="4917103062946997615" at="134,0,141,0" concept="2" trace="test_NodePortIsConnectedMultipleCheck4917103062946997615#()V" />
+      <node id="4917103062947480446" at="141,0,148,0" concept="2" trace="test_NodePortIsConnectedMultipleCheck4917103062947480446#()V" />
+      <node id="4917103062947687641" at="148,0,155,0" concept="2" trace="test_NodePortIsConnectedMultipleCheck4917103062947687641#()V" />
+      <node id="4917103062948358351" at="155,0,162,0" concept="2" trace="test_ErrorMessagesCheck4917103062948358351#()V" />
+      <node id="4917103062948282677" at="162,0,169,0" concept="2" trace="test_NodePortIsConnectedMultipleCheck4917103062948282677#()V" />
+      <node id="4917103062948995327" at="169,0,176,0" concept="2" trace="test_ErrorMessagesCheck4917103062948995327#()V" />
+      <node id="2218184345257786571" at="176,0,183,0" concept="2" trace="test_ScopeOf_WireConnector_sourcePort_2218184345257713954#()V" />
+      <node id="5425008608914873458" at="183,0,190,0" concept="2" trace="test_NodePortIsConnectedMultipleCheck5425008608914873458#()V" />
+      <scope id="4917103062946846829" at="31,31,32,60" />
+      <scope id="5425008608914873152" at="36,72,37,63" />
+      <scope id="4917103062948994044" at="40,77,41,68" />
+      <scope id="4917103062948994038" at="44,77,45,68" />
+      <scope id="4917103062946848529" at="48,91,49,82" />
+      <scope id="4917103062946849714" at="52,91,53,82" />
+      <scope id="4917103062946997615" at="56,91,57,82" />
+      <scope id="4917103062947480446" at="60,91,61,82" />
+      <scope id="4917103062947687641" at="64,91,65,82" />
+      <scope id="4917103062948358351" at="68,77,69,68" />
+      <scope id="4917103062948282677" at="72,91,73,82" />
+      <scope id="4917103062948995327" at="76,77,77,68" />
+      <scope id="2218184345257786571" at="80,92,81,83" />
+      <scope id="5425008608914873458" at="84,91,85,82" />
+      <scope id="4917103062946846829" at="90,52,91,19" />
+      <scope id="4917103062946846829" at="95,36,96,46" />
+      <scope id="5425008608914873152" at="101,30,103,290">
+        <var name="nodeToCheck" id="5425008608914873152" />
+      </scope>
+      <scope id="4917103062948994044" at="108,30,110,171">
+        <var name="nodeToCheck" id="4917103062948994044" />
+      </scope>
+      <scope id="4917103062948994038" at="115,30,117,171">
+        <var name="nodeToCheck" id="4917103062948994038" />
+      </scope>
+      <scope id="4917103062946848529" at="122,30,124,295">
+        <var name="nodeToCheck" id="4917103062946848529" />
+      </scope>
+      <scope id="4917103062946849714" at="129,30,131,295">
+        <var name="nodeToCheck" id="4917103062946849714" />
+      </scope>
+      <scope id="4917103062946997615" at="136,30,138,295">
+        <var name="nodeToCheck" id="4917103062946997615" />
+      </scope>
+      <scope id="4917103062947480446" at="143,30,145,295">
+        <var name="nodeToCheck" id="4917103062947480446" />
+      </scope>
+      <scope id="4917103062947687641" at="150,30,152,295">
+        <var name="nodeToCheck" id="4917103062947687641" />
+      </scope>
+      <scope id="4917103062948358351" at="157,30,159,171">
+        <var name="nodeToCheck" id="4917103062948358351" />
+      </scope>
+      <scope id="4917103062948282677" at="164,30,166,295">
+        <var name="nodeToCheck" id="4917103062948282677" />
+      </scope>
+      <scope id="4917103062948995327" at="171,30,173,171">
+        <var name="nodeToCheck" id="4917103062948995327" />
+      </scope>
+      <scope id="2218184345257786571" at="178,30,180,398">
+        <var name="nodeToCheck" id="2218184345257786571" />
+      </scope>
+      <scope id="5425008608914873458" at="185,30,187,295">
+        <var name="nodeToCheck" id="5425008608914873458" />
+      </scope>
+      <scope id="4917103062946846829" at="31,0,34,0" />
+      <scope id="4917103062946846829" at="90,0,93,0">
+        <var name="owner" id="4917103062946846829" />
+      </scope>
+      <scope id="5425008608914873152" at="35,0,39,0" />
+      <scope id="4917103062948994044" at="39,0,43,0" />
+      <scope id="4917103062948994038" at="43,0,47,0" />
+      <scope id="4917103062946848529" at="47,0,51,0" />
+      <scope id="4917103062946849714" at="51,0,55,0" />
+      <scope id="4917103062946997615" at="55,0,59,0" />
+      <scope id="4917103062947480446" at="59,0,63,0" />
+      <scope id="4917103062947687641" at="63,0,67,0" />
+      <scope id="4917103062948358351" at="67,0,71,0" />
+      <scope id="4917103062948282677" at="71,0,75,0" />
+      <scope id="4917103062948995327" at="75,0,79,0" />
+      <scope id="2218184345257786571" at="79,0,83,0" />
+      <scope id="5425008608914873458" at="83,0,87,0" />
+      <scope id="4917103062946846829" at="94,0,98,0" />
+      <scope id="5425008608914873152" at="99,74,104,9" />
+      <scope id="4917103062948994044" at="106,79,111,9" />
+      <scope id="4917103062948994038" at="113,79,118,9" />
+      <scope id="4917103062946848529" at="120,93,125,9" />
+      <scope id="4917103062946849714" at="127,93,132,9" />
+      <scope id="4917103062946997615" at="134,93,139,9" />
+      <scope id="4917103062947480446" at="141,93,146,9" />
+      <scope id="4917103062947687641" at="148,93,153,9" />
+      <scope id="4917103062948358351" at="155,79,160,9" />
+      <scope id="4917103062948282677" at="162,93,167,9" />
+      <scope id="4917103062948995327" at="169,79,174,9" />
+      <scope id="2218184345257786571" at="176,94,181,9" />
+      <scope id="5425008608914873458" at="183,93,188,9" />
+      <scope id="5425008608914873152" at="99,0,106,0" />
+      <scope id="4917103062948994044" at="106,0,113,0" />
+      <scope id="4917103062948994038" at="113,0,120,0" />
+      <scope id="4917103062946848529" at="120,0,127,0" />
+      <scope id="4917103062946849714" at="127,0,134,0" />
+      <scope id="4917103062946997615" at="134,0,141,0" />
+      <scope id="4917103062947480446" at="141,0,148,0" />
+      <scope id="4917103062947687641" at="148,0,155,0" />
+      <scope id="4917103062948358351" at="155,0,162,0" />
+      <scope id="4917103062948282677" at="162,0,169,0" />
+      <scope id="4917103062948995327" at="169,0,176,0" />
+      <scope id="2218184345257786571" at="176,0,183,0" />
+      <scope id="5425008608914873458" at="183,0,190,0" />
+      <unit id="4917103062946846829" at="88,0,192,0" name="test.ts.components.hardware.HardwarePorts_Test$TestBody" />
+      <unit id="4917103062946846829" at="26,0,193,0" name="test.ts.components.hardware.HardwarePorts_Test" />
+    </file>
+  </root>
+  <root nodeRef="r:753612d9-86b2-4e53-9c71-5df913fa6527(test.ts.components.hardware@tests)/6311532682177714633">
+    <file name="HwPortTypes_Test.java">
+      <node id="6311532682177714633" at="20,29,21,60" concept="5" />
+      <node id="6311532682177714666" at="25,72,26,63" concept="1" />
+      <node id="6311532682177715980" at="29,72,30,63" concept="1" />
+      <node id="6311532682177714633" at="35,52,36,19" concept="5" />
+      <node id="6311532682177714633" at="40,36,41,69" concept="1" />
+      <node id="6311532682177714666" at="44,74,45,22" concept="1" />
+      <node id="6311532682177714666" at="45,22,46,153" concept="1" />
+      <node id="6311532682177715980" at="48,74,49,22" concept="1" />
+      <node id="6311532682177715980" at="49,22,50,153" concept="1" />
+      <node id="6311532682177714633" at="17,0,19,0" concept="4" trace="ourParametersCacheExtension" />
+      <node id="6311532682177714633" at="20,0,23,0" concept="0" trace="HwPortTypes_Test#()V" />
+      <node id="6311532682177714633" at="35,0,38,0" concept="0" trace="TestBody#(Ljetbrains/mps/lang/test/runtime/TransformationTest;)V" />
+      <node id="6311532682177714666" at="24,0,28,0" concept="2" trace="test_NodeTypeCheck6311532682177714666#()V" />
+      <node id="6311532682177715980" at="28,0,32,0" concept="2" trace="test_NodeTypeCheck6311532682177715980#()V" />
+      <node id="6311532682177714633" at="39,0,43,0" concept="2" trace="initTestNodes#()V" />
+      <node id="6311532682177714666" at="44,0,48,0" concept="2" trace="test_NodeTypeCheck6311532682177714666#()V" />
+      <node id="6311532682177715980" at="48,0,52,0" concept="2" trace="test_NodeTypeCheck6311532682177715980#()V" />
+      <scope id="6311532682177714633" at="20,29,21,60" />
+      <scope id="6311532682177714666" at="25,72,26,63" />
+      <scope id="6311532682177715980" at="29,72,30,63" />
+      <scope id="6311532682177714633" at="35,52,36,19" />
+      <scope id="6311532682177714633" at="40,36,41,69" />
+      <scope id="6311532682177714666" at="44,74,46,153" />
+      <scope id="6311532682177715980" at="48,74,50,153" />
+      <scope id="6311532682177714633" at="20,0,23,0" />
+      <scope id="6311532682177714633" at="35,0,38,0">
+        <var name="owner" id="6311532682177714633" />
+      </scope>
+      <scope id="6311532682177714666" at="24,0,28,0" />
+      <scope id="6311532682177715980" at="28,0,32,0" />
+      <scope id="6311532682177714633" at="39,0,43,0" />
+      <scope id="6311532682177714666" at="44,0,48,0" />
+      <scope id="6311532682177715980" at="48,0,52,0" />
+      <unit id="6311532682177714633" at="33,0,54,0" name="test.ts.components.hardware.HwPortTypes_Test$TestBody" />
+      <unit id="6311532682177714633" at="15,0,55,0" name="test.ts.components.hardware.HwPortTypes_Test" />
+    </file>
+  </root>
+</debug-info>
+
