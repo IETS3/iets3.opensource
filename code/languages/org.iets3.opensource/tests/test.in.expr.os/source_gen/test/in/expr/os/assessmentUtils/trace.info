@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<debug-info version="2">
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1160998861373:jetbrains.mps.baseLanguage.structure.AssertStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123140:jetbrains.mps.baseLanguage.structure.ConstructorDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123155:jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068390468200:jetbrains.mps.baseLanguage.structure.FieldDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123165:jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242864:jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242878:jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/6329021646629104954:jetbrains.mps.baseLanguage.structure.SingleLineComment" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123157:jetbrains.mps.baseLanguage.structure.Statement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1070462154015:jetbrains.mps.baseLanguage.structure.StaticFieldDeclaration" />
+  <root nodeRef="r:c3404ca7-2556-4517-b7d5-ec378ad78058(test.in.expr.os.assessmentUtils)/3338854161630804237">
+    <file name="AssessmentAnalyzer.java">
+      <node id="4259196335519304855" at="21,0,22,0" concept="3" trace="assessment" />
+      <node id="4259196335519387098" at="23,92,24,69" concept="2" />
+      <node id="4259196335519410951" at="37,92,38,100" concept="5" />
+      <node id="4259196335519417103" at="38,100,39,70" concept="0" />
+      <node id="4259196335519448181" at="39,70,40,62" concept="6" />
+      <node id="398097391104645156" at="43,31,44,183" concept="5" />
+      <node id="4259196335530328166" at="44,183,45,96" concept="5" />
+      <node id="4259196335571935226" at="45,96,46,220" concept="7" />
+      <node id="4259196335517961536" at="46,220,47,75" concept="2" />
+      <node id="4259196335517961540" at="47,75,48,90" concept="5" />
+      <node id="4259196335530337835" at="48,90,49,0" concept="8" />
+      <node id="4259196335530317859" at="49,0,50,212" concept="2" />
+      <node id="398097391112978729" at="50,212,51,98" concept="7" />
+      <node id="398097391113251626" at="51,98,52,242" concept="2" />
+      <node id="3338854161630804237" at="56,0,57,0" concept="9" trace="Assessment$UY" />
+      <node id="3338854161630804237" at="57,0,58,0" concept="9" trace="InterpreterCoverageAssSummary$Y$" />
+      <node id="3338854161630804237" at="61,0,62,0" concept="9" trace="summaries$lFRN" />
+      <node id="3338854161630804237" at="65,0,66,0" concept="9" trace="coverageThreshold$o6vR" />
+      <node id="3338854161630804237" at="66,0,67,0" concept="9" trace="coverageRatio$JMZp" />
+      <node id="4259196335519384688" at="23,0,26,0" concept="1" trace="AssessmentAnalyzer#(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Lorg/jetbrains/mps/openapi/module/SRepository;)V" />
+      <node id="4259196335519427985" at="37,0,42,0" concept="4" trace="deserialize#(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Lorg/jetbrains/mps/openapi/module/SRepository;)Lorg/jetbrains/mps/openapi/model/SNode;" />
+      <node id="4259196335519304661" at="43,0,54,0" concept="4" trace="checkCoverage#()V" />
+      <scope id="4259196335519384692" at="23,92,24,69" />
+      <scope id="4259196335519384688" at="23,0,26,0">
+        <var name="mdlID" id="4259196335511816609" />
+        <var name="mdlName" id="4259196335511711173" />
+        <var name="nodeId" id="4259196335511711169" />
+        <var name="repo" id="4259196335519395938" />
+      </scope>
+      <scope id="4259196335519427988" at="37,92,40,62">
+        <var name="node" id="4259196335519410952" />
+      </scope>
+      <scope id="4259196335519427985" at="37,0,42,0">
+        <var name="mdlID" id="4259196335519434395" />
+        <var name="mdlName" id="4259196335519434393" />
+        <var name="nodeId" id="4259196335519434391" />
+        <var name="repo" id="4259196335519434397" />
+      </scope>
+      <scope id="4259196335519304664" at="43,31,52,242">
+        <var name="coverageRatio" id="4259196335517961541" />
+        <var name="minThresholdOld" id="4259196335530328167" />
+        <var name="summary" id="398097391104645157" />
+      </scope>
+      <scope id="4259196335519304661" at="43,0,54,0" />
+      <unit id="3338854161630804237" at="60,0,63,0" name="test.in.expr.os.assessmentUtils.AssessmentAnalyzer$LINKS" />
+      <unit id="3338854161630804237" at="55,0,59,0" name="test.in.expr.os.assessmentUtils.AssessmentAnalyzer$CONCEPTS" />
+      <unit id="3338854161630804237" at="64,0,68,0" name="test.in.expr.os.assessmentUtils.AssessmentAnalyzer$PROPS" />
+      <unit id="3338854161630804237" at="20,0,69,0" name="test.in.expr.os.assessmentUtils.AssessmentAnalyzer" />
+    </file>
+  </root>
+</debug-info>
+
