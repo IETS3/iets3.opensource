@@ -9,6 +9,7 @@ mbeddrVersion = "9999.9.26390.7f24448"
 jbr = "21.0.6-b895.109"
 
 [libraries]
+
 mps = { group = "com.jetbrains.mps", name = "mps-prerelease", version.ref = "mpsVersion" }
 remigrate = { group = "de.itemis.mps.build-backends", name = "remigrate", version = "1.0.1.+" }
 mpsQaAllInOne = { group = "org.mpsqa", name = "all-in-one", version.ref = "mpsQaVersion" }
