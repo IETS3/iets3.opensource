@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<debug-info version="2">
+  <concept fqn="c:c7d5b9dd-a05f-4be2-bc73-f2e16994cc67/3751132065236767060:jetbrains.mps.baseLanguage.lightweightdsl.structure.MethodInstance" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123140:jetbrains.mps.baseLanguage.structure.ConstructorDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123155:jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123165:jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242864:jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242878:jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/6329021646629104954:jetbrains.mps.baseLanguage.structure.SingleLineComment" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1070462154015:jetbrains.mps.baseLanguage.structure.StaticFieldDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1081236700938:jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1070475587102:jetbrains.mps.baseLanguage.structure.SuperConstructorInvocation" />
+  <root>
+    <file name="ExtensionDescriptor.java">
+      <unit at="8,0,13,0" name="test.ts.expr.os.plugin.ExtensionDescriptor" />
+    </file>
+  </root>
+  <root nodeRef="r:df6d55ea-0ac0-4364-9581-8cb45ef224d6(test.ts.expr.os.plugin)/1085994689352005865">
+    <file name="TestStringConstraintsPrimitiveTypeMapper_extension.java">
+      <node id="1085994689352005865" at="9,63,10,58" concept="9" />
+      <node id="1685849590360819292" at="14,36,15,58" concept="5" />
+      <node id="1085994689352005865" at="9,0,12,0" concept="1" trace="TestStringConstraintsPrimitiveTypeMapper_extension#()V" />
+      <node id="6698472021569083642" at="14,0,17,0" concept="0" trace="get#()Lorg/iets3/core/expr/base/plugin/PrimitiveTypeMapper;" />
+      <scope id="1085994689352005865" at="9,63,10,58" />
+      <scope id="6698472021569083644" at="14,36,15,58" />
+      <scope id="1085994689352005865" at="9,0,12,0" />
+      <scope id="6698472021569083642" at="14,0,17,0" />
+      <unit id="1085994689352005865" at="8,0,18,0" name="test.ts.expr.os.plugin.TestStringConstraintsPrimitiveTypeMapper_extension" />
+    </file>
+  </root>
+  <root nodeRef="r:df6d55ea-0ac0-4364-9581-8cb45ef224d6(test.ts.expr.os.plugin)/3668754885656551042">
+    <file name="NewBehaviorUnitLangConfig.java">
+      <node id="3668754885656569585" at="9,0,10,0" concept="7" trace="PRIORITY" />
+      <node id="2900540627570025638" at="10,0,11,0" concept="7" trace="CONVERSION_SPECIFIER_SELECTION" />
+      <node id="3668754885656573586" at="13,33,14,55" concept="6" />
+      <node id="3668754885656571163" at="14,55,15,20" concept="5" />
+      <node id="3668754885656552521" at="18,89,19,42" concept="5" />
+      <node id="3668754885656551399" at="17,0,21,0" concept="3" trace="getConversionSpecifierSelection#()Lorg/iets3/core/expr/typetags/units/plugin/IUnitLangConfig/ConversionSpecifierSelection;" />
+      <node id="3668754885656551251" at="12,0,17,0" concept="3" trace="getPriorityLevel#()I" />
+      <scope id="3668754885656551403" at="18,89,19,42" />
+      <scope id="3668754885656551255" at="13,33,15,20" />
+      <scope id="3668754885656551399" at="17,0,21,0" />
+      <scope id="3668754885656551251" at="12,0,17,0" />
+      <unit id="3668754885656551042" at="7,0,22,0" name="test.ts.expr.os.plugin.NewBehaviorUnitLangConfig" />
+    </file>
+  </root>
+  <root nodeRef="r:df6d55ea-0ac0-4364-9581-8cb45ef224d6(test.ts.expr.os.plugin)/3910975805742593968">
+    <file name="TestStringConstraintsPrimitiveTypeMapper.java">
+      <node id="1685849590362074485" at="10,0,11,0" concept="7" trace="priorityDelta" />
+      <node id="1685849590362104347" at="12,31,13,22" concept="2" />
+      <node id="1685849590362119064" at="13,22,14,26" concept="2" />
+      <node id="1685849590363677634" at="14,26,15,87" concept="4" />
+      <node id="1685849590363659700" at="15,87,16,97" concept="2" />
+      <node id="1685849590363687772" at="16,97,17,28" concept="2" />
+      <node id="1685849590362091195" at="20,32,21,23" concept="2" />
+      <node id="1685849590362116747" at="21,23,22,26" concept="2" />
+      <node id="1685849590363674577" at="22,26,23,88" concept="4" />
+      <node id="1685849590363640066" at="23,88,24,97" concept="2" />
+      <node id="1685849590363682013" at="24,97,25,28" concept="2" />
+      <node id="1685849590360898749" at="29,33,30,52" concept="5" />
+      <node id="3790525273728691945" at="34,41,35,17" concept="5" />
+      <node id="1685849590360898740" at="28,0,32,0" concept="3" trace="getPriorityLevel#()I" />
+      <node id="3790525273728678974" at="33,0,37,0" concept="3" trace="useStringConstraints#()Z" />
+      <node id="1685849590362104345" at="12,0,19,0" concept="8" trace="enable#()V" />
+      <node id="1685849590362085025" at="20,0,27,0" concept="8" trace="disable#()V" />
+      <scope id="1685849590360898746" at="29,33,30,52" />
+      <scope id="3790525273728678981" at="34,41,35,17" />
+      <scope id="1685849590360898740" at="28,0,32,0" />
+      <scope id="3790525273728678974" at="33,0,37,0" />
+      <scope id="1685849590362104346" at="12,31,17,28">
+        <var name="msg" id="1685849590363677635" />
+      </scope>
+      <scope id="1685849590362085028" at="20,32,25,28">
+        <var name="msg" id="1685849590363674578" />
+      </scope>
+      <scope id="1685849590362104345" at="12,0,19,0" />
+      <scope id="1685849590362085025" at="20,0,27,0" />
+      <unit id="3910975805742593968" at="9,0,39,0" name="test.ts.expr.os.plugin.TestStringConstraintsPrimitiveTypeMapper" />
+    </file>
+  </root>
+  <root nodeRef="r:df6d55ea-0ac0-4364-9581-8cb45ef224d6(test.ts.expr.os.plugin)/5088826354700425515">
+    <file name="UnitLangConfigExtensionNewBehaviors.java">
+      <node id="5088826354700425515" at="9,48,10,63" concept="9" />
+      <node id="3668754885656574681" at="14,32,15,43" concept="5" />
+      <node id="5088826354700425515" at="9,0,12,0" concept="1" trace="UnitLangConfigExtensionNewBehaviors#()V" />
+      <node id="5088826354700425521" at="14,0,17,0" concept="0" trace="get#()Lorg/iets3/core/expr/typetags/units/plugin/IUnitLangConfig;" />
+      <scope id="5088826354700425515" at="9,48,10,63" />
+      <scope id="5088826354700425525" at="14,32,15,43" />
+      <scope id="5088826354700425515" at="9,0,12,0" />
+      <scope id="5088826354700425521" at="14,0,17,0" />
+      <unit id="5088826354700425515" at="8,0,18,0" name="test.ts.expr.os.plugin.UnitLangConfigExtensionNewBehaviors" />
+    </file>
+  </root>
+  <root nodeRef="r:df6d55ea-0ac0-4364-9581-8cb45ef224d6(test.ts.expr.os.plugin)/9110823567833768231">
+    <file name="NewBehaviorPhysUnitLangConfig.java">
+      <node id="9110823567833768236" at="12,0,13,0" concept="7" trace="PRIORITY" />
+      <node id="9110823567833768240" at="13,0,14,0" concept="7" trace="CONVERSION_SPECIFIER_SELECTION" />
+      <node id="8974592143659710512" at="14,0,15,0" concept="7" trace="MINIMIZATION_STRATEGY" />
+      <node id="9110823567833768249" at="17,33,18,55" concept="6" />
+      <node id="9110823567833768258" at="18,55,19,20" concept="5" />
+      <node id="9110823567833768265" at="23,89,24,42" concept="5" />
+      <node id="8974592143659715474" at="28,73,29,33" concept="5" />
+      <node id="9110823567833771527" at="33,40,34,22" concept="5" />
+      <node id="5416459066320391195" at="38,41,39,23" concept="5" />
+      <node id="12730654244075532" at="43,53,44,34" concept="5" />
+      <node id="4042938304129103427" at="48,48,49,16" concept="5" />
+      <node id="12730654244614227" at="53,52,54,49" concept="5" />
+      <node id="9110823567833768261" at="22,0,26,0" concept="3" trace="getConversionSpecifierSelection#()Lorg/iets3/core/expr/typetags/physunits/plugin/IUnitLangConfig/ConversionSpecifierSelection;" />
+      <node id="8974592143659709208" at="27,0,31,0" concept="3" trace="getMinimizationStrategy#()Lorg/iets3/core/expr/typetags/physunits/plugin/IUnitLangConfig/MinimizationStrategy;" />
+      <node id="9110823567833770706" at="32,0,36,0" concept="3" trace="getQuantitySpecifier#()Ljava/lang/String;" />
+      <node id="5416459066320391188" at="37,0,41,0" concept="3" trace="getDimensionSpecifier#()Ljava/lang/String;" />
+      <node id="12730654244075525" at="42,0,46,0" concept="3" trace="getUnspecifiedQuantifierSpecifier#()Ljava/lang/String;" />
+      <node id="4042938304129103420" at="47,0,51,0" concept="3" trace="implicitConversionIsEnabled#()Z" />
+      <node id="12730654244630168" at="52,0,56,0" concept="3" trace="getExponentComparator#()Ljava/util/Comparator;" />
+      <node id="9110823567833768245" at="16,0,21,0" concept="3" trace="getPriorityLevel#()I" />
+      <scope id="9110823567833768264" at="23,89,24,42" />
+      <scope id="8974592143659709212" at="28,73,29,33" />
+      <scope id="9110823567833770710" at="33,40,34,22" />
+      <scope id="5416459066320391192" at="38,41,39,23" />
+      <scope id="12730654244075529" at="43,53,44,34" />
+      <scope id="4042938304129103424" at="48,48,49,16" />
+      <scope id="12730654244630172" at="53,52,54,49" />
+      <scope id="9110823567833768248" at="17,33,19,20" />
+      <scope id="9110823567833768261" at="22,0,26,0" />
+      <scope id="8974592143659709208" at="27,0,31,0" />
+      <scope id="9110823567833770706" at="32,0,36,0" />
+      <scope id="5416459066320391188" at="37,0,41,0" />
+      <scope id="12730654244075525" at="42,0,46,0" />
+      <scope id="4042938304129103420" at="47,0,51,0" />
+      <scope id="12730654244630168" at="52,0,56,0" />
+      <scope id="9110823567833768245" at="16,0,21,0" />
+      <unit id="9110823567833768231" at="10,0,57,0" name="test.ts.expr.os.plugin.NewBehaviorPhysUnitLangConfig" />
+    </file>
+  </root>
+  <root nodeRef="r:df6d55ea-0ac0-4364-9581-8cb45ef224d6(test.ts.expr.os.plugin)/9110823567833768268">
+    <file name="PhysUnitLangConfigExtensionNewBehaviors.java">
+      <node id="9110823567833768268" at="9,52,10,71" concept="9" />
+      <node id="9110823567833768277" at="14,32,15,47" concept="5" />
+      <node id="9110823567833768268" at="9,0,12,0" concept="1" trace="PhysUnitLangConfigExtensionNewBehaviors#()V" />
+      <node id="9110823567833768274" at="14,0,17,0" concept="0" trace="get#()Lorg/iets3/core/expr/typetags/physunits/plugin/IUnitLangConfig;" />
+      <scope id="9110823567833768268" at="9,52,10,71" />
+      <scope id="9110823567833768276" at="14,32,15,47" />
+      <scope id="9110823567833768268" at="9,0,12,0" />
+      <scope id="9110823567833768274" at="14,0,17,0" />
+      <unit id="9110823567833768268" at="8,0,18,0" name="test.ts.expr.os.plugin.PhysUnitLangConfigExtensionNewBehaviors" />
+    </file>
+  </root>
+</debug-info>
+
