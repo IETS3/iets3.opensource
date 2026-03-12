@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<debug-info version="2">
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123140:jetbrains.mps.baseLanguage.structure.ConstructorDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123155:jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123165:jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242864:jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1070462154015:jetbrains.mps.baseLanguage.structure.StaticFieldDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1070475587102:jetbrains.mps.baseLanguage.structure.SuperConstructorInvocation" />
+  <root nodeRef="r:7000e446-4636-4400-bde5-dcddec099d93(test.in.expr.os.ignoredTests@tests)/4770332828446569245">
+    <file name="ignoredTests_Test.java">
+      <node id="4770332828446569245" at="26,30,27,78" concept="5" />
+      <node id="4770332828446589487" at="32,68,33,59" concept="1" />
+      <node id="4770332828447015491" at="37,68,38,59" concept="1" />
+      <node id="4770332828446589487" at="47,44,48,112" concept="3" />
+      <node id="4770332828446589487" at="48,112,49,39" concept="1" />
+      <node id="4770332828447015491" at="56,44,57,112" concept="3" />
+      <node id="4770332828447015491" at="57,112,58,39" concept="1" />
+      <node id="4770332828446569245" at="63,50,64,19" concept="5" />
+      <node id="4770332828446569245" at="69,0,70,0" concept="4" trace="AbstractTestItem$9u" />
+      <node id="4770332828446569245" at="23,0,25,0" concept="4" trace="ourParametersCacheExtension" />
+      <node id="4770332828446569245" at="26,0,29,0" concept="0" trace="ignoredTests_Test#()V" />
+      <node id="4770332828446569245" at="63,0,66,0" concept="0" trace="TestBody#(Ljetbrains/mps/lang/test/runtime/TransformationTest;)V" />
+      <node id="4770332828446589487" at="30,0,35,0" concept="2" trace="Testing_item0_4770332828446589487#()V" />
+      <node id="4770332828447015491" at="35,0,40,0" concept="2" trace="Testing_item1_4770332828447015491#()V" />
+      <node id="4770332828446589487" at="46,0,51,0" concept="2" trace="run#()V" />
+      <node id="4770332828447015491" at="55,0,60,0" concept="2" trace="run#()V" />
+      <node id="4770332828446589487" at="44,70,51,9" concept="1" />
+      <node id="4770332828447015491" at="53,70,60,9" concept="1" />
+      <node id="4770332828446589487" at="44,0,53,0" concept="2" trace="Testing_item0_4770332828446589487#()V" />
+      <node id="4770332828447015491" at="53,0,62,0" concept="2" trace="Testing_item1_4770332828447015491#()V" />
+      <scope id="4770332828446569245" at="26,30,27,78" />
+      <scope id="4770332828446589487" at="32,68,33,59" />
+      <scope id="4770332828447015491" at="37,68,38,59" />
+      <scope id="4770332828446569245" at="63,50,64,19" />
+      <scope id="4770332828446589487" at="47,44,49,39">
+        <var name="ti" id="4770332828446589487" />
+      </scope>
+      <scope id="4770332828447015491" at="56,44,58,39">
+        <var name="ti" id="4770332828447015491" />
+      </scope>
+      <scope id="4770332828446569245" at="26,0,29,0" />
+      <scope id="4770332828446569245" at="63,0,66,0">
+        <var name="owner" id="4770332828446569245" />
+      </scope>
+      <scope id="4770332828446589487" at="30,0,35,0" />
+      <scope id="4770332828447015491" at="35,0,40,0" />
+      <scope id="4770332828446589487" at="46,0,51,0" />
+      <scope id="4770332828447015491" at="55,0,60,0" />
+      <scope id="4770332828446589487" at="44,70,51,9" />
+      <scope id="4770332828447015491" at="53,70,60,9" />
+      <scope id="4770332828446589487" at="44,0,53,0" />
+      <scope id="4770332828447015491" at="53,0,62,0" />
+      <unit id="4770332828446569245" at="68,0,71,0" name="test.in.expr.os.ignoredTests.ignoredTests_Test$CONCEPTS" />
+      <unit id="4770332828446589487" at="45,27,51,7" name="test.in.expr.os.ignoredTests.ignoredTests_Test$TestBody$1" />
+      <unit id="4770332828447015491" at="54,27,60,7" name="test.in.expr.os.ignoredTests.ignoredTests_Test$TestBody$2" />
+      <unit id="4770332828446569245" at="42,0,67,0" name="test.in.expr.os.ignoredTests.ignoredTests_Test$TestBody" />
+      <unit id="4770332828446569245" at="20,0,72,0" name="test.in.expr.os.ignoredTests.ignoredTests_Test" />
+    </file>
+  </root>
+</debug-info>
+
