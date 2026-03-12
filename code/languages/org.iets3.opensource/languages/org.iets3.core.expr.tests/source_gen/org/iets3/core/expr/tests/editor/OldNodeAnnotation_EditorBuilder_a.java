@@ -55,8 +55,8 @@ import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
     style.set(StyleAttributes.BASE_LINE_CELL, true);
     style.set(StyleAttributes.SELECTABLE, false);
     editorCell.getStyle().putAll(style);
+    editorCell.addEditorCell(createFrameCell_0());
     editorCell.addEditorCell(createFrameCell_1());
-    editorCell.addEditorCell(createFrameCell_3());
     return editorCell;
   }
   private EditorCell createCollection_1() {
@@ -70,8 +70,8 @@ import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
     EditorCell editorCell = getUpdateSession().getAttributedCell(AttributeKind.NODE, myNode);
     return editorCell;
   }
-  private EditorCell createFrameCell_0(final EditorContext editorContext, final SNode node) {
-    FrameCell editorCell = new FrameCell(editorContext, node);
+  private EditorCell createFrameCell_0() {
+    FrameCell editorCell = new FrameCell(getEditorContext(), getNode());
     editorCell.setCellId("FrameCell_ex0epm_a0");
     Style style = new StyleImpl();
     style.set(StyleAttributes.getInstance().<Integer>getAttribute("com.mbeddr.mpsutil.framecell", "frame-padding"), _StyleParameter_QueryFunction_ex0epm_a0a0());
@@ -81,9 +81,6 @@ import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
     editorCell.getStyle().putAll(style);
     editorCell.addEditorCell(createCollection_1());
     return editorCell;
-  }
-  private EditorCell createFrameCell_1() {
-    return createFrameCell_0(getEditorContext(), myNode);
   }
   private int _StyleParameter_QueryFunction_ex0epm_a0a0() {
     return 0;
@@ -158,8 +155,8 @@ import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
       return "<no oldNode>";
     }
   }
-  private EditorCell createFrameCell_2(final EditorContext editorContext, final SNode node) {
-    FrameCell editorCell = new FrameCell(editorContext, node);
+  private EditorCell createFrameCell_1() {
+    FrameCell editorCell = new FrameCell(getEditorContext(), getNode());
     editorCell.setCellId("FrameCell_ex0epm_b0");
     Style style = new StyleImpl();
     style.set(StyleAttributes.getInstance().<Integer>getAttribute("com.mbeddr.mpsutil.framecell", "frame-padding"), _StyleParameter_QueryFunction_ex0epm_a0b0());
@@ -169,9 +166,6 @@ import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
     editorCell.getStyle().putAll(style);
     editorCell.addEditorCell(createCollection_2());
     return editorCell;
-  }
-  private EditorCell createFrameCell_3() {
-    return createFrameCell_2(getEditorContext(), myNode);
   }
   private int _StyleParameter_QueryFunction_ex0epm_a0b0() {
     return 0;

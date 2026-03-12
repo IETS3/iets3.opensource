@@ -53,11 +53,6 @@ dependencies {
     cpSuite(libs.cpSuite.get().toString() + "@jar") { isTransitive = false }
 }
 
-tasks.wrapper {
-    gradleVersion = libs.versions.gradle.get()
-    distributionType = Wrapper.DistributionType.ALL
-}
-
 downloadJbr {
     jbrVersion = libs.versions.jbr.get()
 }
@@ -73,8 +68,8 @@ version = calculateVersion().also {
 }
 
 fun calculateVersion(): String {
-    val major = libs.versions.mpsVersion.get().substring(0, 4)
-    val minor = libs.versions.mpsVersion.get().substring(5, 6)
+    val major = "9999"
+    val minor = "9"
     if (!ciBuild) return "$major.$minor-SNAPSHOT"
 
     val buildNumber =
@@ -511,41 +506,34 @@ publishing {
 defaultTasks.add(tasks.assemble.name)
 
 githubRelease {
-    owner("IETS3")
-    repo("iets3.opensource")
+    owner = "IETS3"
+    repo = "iets3.opensource"
     token(rootProject.findProperty("github.token").toString())
-    tagName("nightly-$version")
-    targetCommitish(GitBasedVersioning.getGitCommitHash())
+    tagName = "nightly-$version"
+    targetCommitish = GitBasedVersioning.getGitCommitHash()
     val currentDate = LocalDate.now().format(DateTimeFormatter.ofLocalizedDate(FormatStyle.FULL))
     val dependencyList =
         languageLibs.resolvedConfiguration.lenientConfiguration.allModuleDependencies.joinToString("\n") {
             "- `${it.moduleGroup}:${it.moduleName}` : `${it.moduleVersion}`"
         }
-    body {
-        """
+    body = """
             Automated Nightly build from ${currentDate}.
             //
             //Includes dependencies:
             //${dependencyList}
         """.trimIndent()
-    }
-    prerelease(true)
+    prerelease = true
     releaseAssets(packageDistroWithDependencies.get().outputs.files.map { it.path })
-    dryRun(false)
+    dryRun = false
 }
 tasks.githubRelease {
     dependsOn(packageDistroWithDependencies)
 }
 
-tasks.cyclonedxBom {
-    // SBOM destination directory
-    destination.set(reportsDir.asFile)
-    // The file name for the generated SBOMs (before the file format suffix)
-    outputName.set("sbom")
-    // The file format generated, can be xml, json or all for generating both
-    outputFormat.set("json")
-    // Don't include license texts in generated SBOMs
+tasks.cyclonedxDirectBom {
+    jsonOutput.set(reportsDir.file("sbom.json"))
+    // will not generate .xml
+    xmlOutput.unsetConvention()
     includeLicenseText.set(false)
-    // Included bundled runtime dependencies
-    includeConfigs.set(bundledDependencies.map { it.name } + languageLibs.name + mps.name)
+    includeConfigs.set(bundledDependencies.map { it.name }.union(listOf(languageLibs.name, mps.name)))
 }

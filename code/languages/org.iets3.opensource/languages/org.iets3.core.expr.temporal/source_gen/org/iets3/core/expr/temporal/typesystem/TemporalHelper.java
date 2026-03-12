@@ -16,7 +16,7 @@ import org.jetbrains.mps.openapi.language.SContainmentLink;
 public class TemporalHelper {
 
   /**
-   * Unwraps a node, like ConstantRef, recursively until a DateLiteral is reached or unwrapping is not 
+   * Unwraps a node, like ConstantRef, recursively until a DateLiteral is reached or unwrapping is not
    * possible anymore, e.g. an unhandled concept is used for wrapping
    * 
    * @param wrapper the node that should be unwrapper to retrieve the DateLiteral

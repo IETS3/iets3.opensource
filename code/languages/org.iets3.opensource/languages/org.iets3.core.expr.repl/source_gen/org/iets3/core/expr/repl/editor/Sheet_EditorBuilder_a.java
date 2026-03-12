@@ -100,9 +100,9 @@ import org.jetbrains.mps.openapi.language.SConcept;
     editorCell.addEditorCell(createConstant_0());
     editorCell.addEditorCell(createProperty_0());
     editorCell.addEditorCell(createConstant_1());
-    editorCell.addEditorCell(createCheckbox_1());
+    editorCell.addEditorCell(createCheckbox_0());
     editorCell.addEditorCell(createConstant_2());
-    editorCell.addEditorCell(createCheckbox_3());
+    editorCell.addEditorCell(createCheckbox_1());
     return editorCell;
   }
   private EditorCell createConstant_0() {
@@ -138,12 +138,12 @@ import org.jetbrains.mps.openapi.language.SConcept;
     editorCell.setDefaultText("");
     return editorCell;
   }
-  private EditorCell createCheckbox_0(EditorContext editorContext, SNode node) {
+  private EditorCell createCheckbox_0() {
     SProperty property = PROPS.showValues$D0Lg;
-    CellProviderWithRole provider = new CheckboxCellProvider(node, property, editorContext);
+    CellProviderWithRole provider = new CheckboxCellProvider(getNode(), property, getEditorContext());
     provider.setNoTargetText("<no showValues>");
     EditorCell_Checkbox editorCell;
-    editorCell = ((EditorCell_Checkbox) provider.createEditorCell(editorContext));
+    editorCell = ((EditorCell_Checkbox) provider.createEditorCell(getEditorContext()));
     editorCell.setCellId("property_showValues");
     editorCell.setSubstituteInfo(provider.createDefaultSubstituteInfo());
     SNode attributeConcept = provider.getRoleAttribute();
@@ -152,21 +152,18 @@ import org.jetbrains.mps.openapi.language.SConcept;
     } else
     return editorCell;
   }
-  private EditorCell createCheckbox_1() {
-    return createCheckbox_0(getEditorContext(), myNode);
-  }
   private EditorCell createConstant_2() {
     EditorCell_Constant editorCell = new EditorCell_Constant(getEditorContext(), myNode, "booleans are checks:");
     editorCell.setCellId("Constant_1fw85i_e0a");
     editorCell.setDefaultText("");
     return editorCell;
   }
-  private EditorCell createCheckbox_2(EditorContext editorContext, SNode node) {
+  private EditorCell createCheckbox_1() {
     SProperty property = PROPS.booleansAreChecks$nzwx;
-    CellProviderWithRole provider = new CheckboxCellProvider(node, property, editorContext);
+    CellProviderWithRole provider = new CheckboxCellProvider(getNode(), property, getEditorContext());
     provider.setNoTargetText("<no booleansAreChecks>");
     EditorCell_Checkbox editorCell;
-    editorCell = ((EditorCell_Checkbox) provider.createEditorCell(editorContext));
+    editorCell = ((EditorCell_Checkbox) provider.createEditorCell(getEditorContext()));
     editorCell.setCellId("property_booleansAreChecks");
     editorCell.setSubstituteInfo(provider.createDefaultSubstituteInfo());
     SNode attributeConcept = provider.getRoleAttribute();
@@ -174,9 +171,6 @@ import org.jetbrains.mps.openapi.language.SConcept;
       return getUpdateSession().updateAttributeCell(provider.getRoleAttributeKind(), editorCell, attributeConcept);
     } else
     return editorCell;
-  }
-  private EditorCell createCheckbox_3() {
-    return createCheckbox_2(getEditorContext(), myNode);
   }
   private EditorCell createCollection_2() {
     EditorCell_Collection editorCell = new EditorCell_Collection(getEditorContext(), myNode, new CellLayout_Indent());
@@ -329,11 +323,11 @@ import org.jetbrains.mps.openapi.language.SConcept;
             public void postprocess(ITableGrid grid, SNode node, EditorContext editorContext, SubstituteInfoFactory substituteInfoFactory) {
               for (int x = 0; x < grid.getSizeX(); x++) {
                 for (int y = 0; y < grid.getSizeY(); y++) {
-                  EditorCellGridLeaf element = as_dlrz2w_a0a0a0a0a0a0d0a0p0a0b0a0a0c0bb(grid.getCell(x, y), EditorCellGridLeaf.class);
+                  EditorCellGridLeaf element = as_dlrz2w_a0a0a0a0a0a0d0a0p0a0b0a0a0c0z(grid.getCell(x, y), EditorCellGridLeaf.class);
                   if (element == null) {
                     continue;
                   }
-                  RowEndCell endCell = as_dlrz2w_a0a2a0a0a0a0d0a0p0a0b0a0a0c0bb(element.getEditorCell(), RowEndCell.class);
+                  RowEndCell endCell = as_dlrz2w_a0a2a0a0a0a0d0a0p0a0b0a0a0c0z(element.getEditorCell(), RowEndCell.class);
                   if (endCell == null) {
                     continue;
                   }
@@ -374,7 +368,7 @@ import org.jetbrains.mps.openapi.language.SConcept;
 
   }
   private EditorCell createTable_1() {
-    return createTable_0(getEditorContext(), myNode);
+    return createTable_0(getEditorContext(), getNode());
   }
   public Grid createGridQuery_1fw85i_a0b1a(final EditorContext editorContext, final SNode node) {
     EditorCell editorCell = null;
@@ -430,10 +424,10 @@ import org.jetbrains.mps.openapi.language.SConcept;
     editorCell.setDefaultText("");
     return editorCell;
   }
-  private static <T> T as_dlrz2w_a0a0a0a0a0a0d0a0p0a0b0a0a0c0bb(Object o, Class<T> type) {
+  private static <T> T as_dlrz2w_a0a0a0a0a0a0d0a0p0a0b0a0a0c0z(Object o, Class<T> type) {
     return (type.isInstance(o) ? (T) o : null);
   }
-  private static <T> T as_dlrz2w_a0a2a0a0a0a0d0a0p0a0b0a0a0c0bb(Object o, Class<T> type) {
+  private static <T> T as_dlrz2w_a0a2a0a0a0a0d0a0p0a0b0a0a0c0z(Object o, Class<T> type) {
     return (type.isInstance(o) ? (T) o : null);
   }
 

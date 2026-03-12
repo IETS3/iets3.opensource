@@ -9,7 +9,7 @@ import java.math.BigDecimal;
 
 /**
  * 
- * @deprecated Use {@link org.iets3.core.expr.base.shared.runtime.SharedMinMaxHelper }
+ * @deprecated Use {@link org.iets3.core.expr.base.shared.runtime.SharedMinMaxHelper} 
  */
 @Deprecated(forRemoval = true)
 public class MinMaxHelper {

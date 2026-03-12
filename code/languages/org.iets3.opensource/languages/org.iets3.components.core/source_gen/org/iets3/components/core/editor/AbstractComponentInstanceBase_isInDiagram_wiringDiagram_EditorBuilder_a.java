@@ -115,7 +115,7 @@ import org.jetbrains.mps.openapi.language.SInterfaceConcept;
   }
 
   /*package*/ EditorCell createCell() {
-    return createDiagramNode_1();
+    return _cell_factory_method_();
   }
 
   private EditorCell createDiagramNode_0(final EditorContext editorContext, final SNode node) {
@@ -293,8 +293,8 @@ import org.jetbrains.mps.openapi.language.SInterfaceConcept;
 
     return editorCell.value;
   }
-  private EditorCell createDiagramNode_1() {
-    return createDiagramNode_0(getEditorContext(), myNode);
+  private EditorCell _cell_factory_method_() {
+    return createDiagramNode_0(getEditorContext(), getNode());
   }
   private EditorCell createCollection_0() {
     EditorCell_Collection editorCell = new EditorCell_Collection(getEditorContext(), myNode, new CellLayout_Indent());
@@ -735,7 +735,7 @@ import org.jetbrains.mps.openapi.language.SInterfaceConcept;
     return editorCell.value;
   }
   private EditorCell createDiagram_1() {
-    return createDiagram_0(getEditorContext(), myNode);
+    return createDiagram_0(getEditorContext(), getNode());
   }
   private EditorCell createComponent_2() {
     EditorCell editorCell = getCellFactory().createEditorComponentCell(myNode, "org.iets3.components.core.editor.ComponentInstanceBase_Diagram_Footer");
@@ -751,7 +751,7 @@ import org.jetbrains.mps.openapi.language.SInterfaceConcept;
     }
 
     /*package*/ EditorCell createCell() {
-      return createQueryList_1();
+      return createQueryList_0();
     }
 
     @NotNull
@@ -760,21 +760,18 @@ import org.jetbrains.mps.openapi.language.SInterfaceConcept;
       return myNode;
     }
 
-    private EditorCell createQueryList_0(final EditorContext editorContext, final SNode node) {
+    private EditorCell createQueryList_0() {
 
-      QueryListHandler handler = new QueryListHandler_7coxxm_a0a0a(editorContext, node, true);
+      QueryListHandler handler = new QueryListHandler_7coxxm_a0a0a(getEditorContext(), getNode(), true);
       EditorCell_QueryList editorCell = handler.createCells(new CellLayout_Horizontal());
       editorCell.setTargeConcept(CONCEPTS.BaseConcept$gP);
-      editorCell.setOwner(SNodeOperations.getConcept(node));
+      editorCell.setOwner(SNodeOperations.getConcept(getNode()));
       editorCell.setCellId("QueryList_7coxxm_a0a0a");
       Style style = new StyleImpl();
       style.set(StyleAttributes.READ_ONLY, true);
       editorCell.getStyle().putAll(style);
       return editorCell;
 
-    }
-    private EditorCell createQueryList_1() {
-      return createQueryList_0(getEditorContext(), myNode);
     }
     private static class QueryListHandler_7coxxm_a0a0a extends QueryListHandler {
       /**
@@ -876,7 +873,7 @@ import org.jetbrains.mps.openapi.language.SInterfaceConcept;
     }
 
     /*package*/ EditorCell createCell() {
-      return createQueryList_3();
+      return createQueryList_1();
     }
 
     @NotNull
@@ -885,21 +882,18 @@ import org.jetbrains.mps.openapi.language.SInterfaceConcept;
       return myNode;
     }
 
-    private EditorCell createQueryList_2(final EditorContext editorContext, final SNode node) {
+    private EditorCell createQueryList_1() {
 
-      QueryListHandler handler = new QueryListHandler_7coxxm_a0a1a(editorContext, node, true);
+      QueryListHandler handler = new QueryListHandler_7coxxm_a0a1a(getEditorContext(), getNode(), true);
       EditorCell_QueryList editorCell = handler.createCells(new CellLayout_Horizontal());
       editorCell.setTargeConcept(CONCEPTS.BaseConcept$gP);
-      editorCell.setOwner(SNodeOperations.getConcept(node));
+      editorCell.setOwner(SNodeOperations.getConcept(getNode()));
       editorCell.setCellId("QueryList_7coxxm_a0a1a");
       Style style = new StyleImpl();
       style.set(StyleAttributes.READ_ONLY, true);
       editorCell.getStyle().putAll(style);
       return editorCell;
 
-    }
-    private EditorCell createQueryList_3() {
-      return createQueryList_2(getEditorContext(), myNode);
     }
     private static class QueryListHandler_7coxxm_a0a1a extends QueryListHandler {
       /**
@@ -1001,7 +995,7 @@ import org.jetbrains.mps.openapi.language.SInterfaceConcept;
     }
 
     /*package*/ EditorCell createCell() {
-      return createQueryList_5();
+      return createQueryList_2();
     }
 
     @NotNull
@@ -1010,21 +1004,18 @@ import org.jetbrains.mps.openapi.language.SInterfaceConcept;
       return myNode;
     }
 
-    private EditorCell createQueryList_4(final EditorContext editorContext, final SNode node) {
+    private EditorCell createQueryList_2() {
 
-      QueryListHandler handler = new QueryListHandler_7coxxm_a0a2a(editorContext, node, true);
+      QueryListHandler handler = new QueryListHandler_7coxxm_a0a2a(getEditorContext(), getNode(), true);
       EditorCell_QueryList editorCell = handler.createCells(new CellLayout_Horizontal());
       editorCell.setTargeConcept(CONCEPTS.BaseConcept$gP);
-      editorCell.setOwner(SNodeOperations.getConcept(node));
+      editorCell.setOwner(SNodeOperations.getConcept(getNode()));
       editorCell.setCellId("QueryList_7coxxm_a0a2a");
       Style style = new StyleImpl();
       style.set(StyleAttributes.READ_ONLY, true);
       editorCell.getStyle().putAll(style);
       return editorCell;
 
-    }
-    private EditorCell createQueryList_5() {
-      return createQueryList_4(getEditorContext(), myNode);
     }
     private static class QueryListHandler_7coxxm_a0a2a extends QueryListHandler {
       /**
@@ -1126,7 +1117,7 @@ import org.jetbrains.mps.openapi.language.SInterfaceConcept;
     }
 
     /*package*/ EditorCell createCell() {
-      return createQueryList_7();
+      return createQueryList_3();
     }
 
     @NotNull
@@ -1135,21 +1126,18 @@ import org.jetbrains.mps.openapi.language.SInterfaceConcept;
       return myNode;
     }
 
-    private EditorCell createQueryList_6(final EditorContext editorContext, final SNode node) {
+    private EditorCell createQueryList_3() {
 
-      QueryListHandler handler = new QueryListHandler_7coxxm_a0a3a(editorContext, node, true);
+      QueryListHandler handler = new QueryListHandler_7coxxm_a0a3a(getEditorContext(), getNode(), true);
       EditorCell_QueryList editorCell = handler.createCells(new CellLayout_Horizontal());
       editorCell.setTargeConcept(CONCEPTS.BaseConcept$gP);
-      editorCell.setOwner(SNodeOperations.getConcept(node));
+      editorCell.setOwner(SNodeOperations.getConcept(getNode()));
       editorCell.setCellId("QueryList_7coxxm_a0a3a");
       Style style = new StyleImpl();
       style.set(StyleAttributes.READ_ONLY, true);
       editorCell.getStyle().putAll(style);
       return editorCell;
 
-    }
-    private EditorCell createQueryList_7() {
-      return createQueryList_6(getEditorContext(), myNode);
     }
     private static class QueryListHandler_7coxxm_a0a3a extends QueryListHandler {
       /**

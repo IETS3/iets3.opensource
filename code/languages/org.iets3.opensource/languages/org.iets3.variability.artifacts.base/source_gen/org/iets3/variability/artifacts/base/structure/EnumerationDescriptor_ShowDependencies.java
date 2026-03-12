@@ -20,7 +20,7 @@ public class EnumerationDescriptor_ShowDependencies extends EnumerationDescripto
   private final EnumerationDescriptor.MemberDescriptor myMember_NEVER_0 = new EnumerationDescriptor.MemberDescriptor("NEVER", "NEVER", 0x222a6ad383de2fb4L, "r:0c5a6638-4b9e-40d6-919f-daab30de5e02(org.iets3.variability.artifacts.base.structure)/2461897602994417588");
 
   private final EnumerationLiteralsIndex myIndex = EnumerationLiteralsIndex.build(0xf08835038eaa4bc8L, 0x8846eb63220ab1ddL, 0x222a6ad383de2fafL, 0x222a6ad383de2fb0L, 0x222a6ad383de2fb1L, 0x222a6ad383de2fb4L);
-  private final List<EnumerationDescriptor.MemberDescriptor> myMembers = new EnumerationDescriptorBase.MembersList(myIndex, myMember_IF_ANY_0, myMember_ALWAYS_0, myMember_NEVER_0);
+  private final List<EnumerationDescriptor.MemberDescriptor> myMembers = new EnumerationDescriptorBase.MembersList0(myIndex, myMember_IF_ANY_0, myMember_ALWAYS_0, myMember_NEVER_0);
 
   @Nullable
   @Override
