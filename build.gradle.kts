@@ -299,7 +299,7 @@ val checkmodels by tasks.registering(MpsCheck::class) {
 }
 
 val packageLanguages by tasks.registering(Zip::class) {
-    dependsOn(buildLanguages, tasks.cyclonedxBom)
+    dependsOn(buildLanguages, tasks.cyclonedxDirectBom)
     from(artifactsDir) {
         include("org.iets3.opensource/**")
     }
