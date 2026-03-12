@@ -28,6 +28,6 @@ cpSuite = { group = "io.takari.junit", name = "takari-cpsuite", version = "1.2.7
 cyclonedxBom = { id = "org.cyclonedx.bom", version = "2.2.0" }
 downloadJbr = { id = "download-jbr", version = "1.29.3.+" }
 githubRelease = { id = "com.github.breadmoirai.github-release", version = "2.4.1" }
-modelcheck = { id = "modelcheck", version = "1.29.3.+" }
+modelcheck = { id = "modelcheck", version = "2.0.328.+" }
 mpsCommon = { id = "de.itemis.mps.gradle.common", version = "1.29.+" }
 mpsLauncher = { id = "de.itemis.mps.gradle.launcher", version = "2.5.2.+" }
