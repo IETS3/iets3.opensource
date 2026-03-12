@@ -486,36 +486,36 @@
   </root>
   <root nodeRef="r:211c2313-6a94-46b9-b5b0-2442332ff5ac(org.iets3.variability.artifacts.base.behavior)/1338942654013160969">
     <file name="NodeHashUtil.java">
-      <node id="9034849254685724205" at="17,41,18,30" concept="10" />
-      <node id="1338942654013161152" at="18,30,19,39" concept="10" />
-      <node id="6325302725157274237" at="19,39,20,30" concept="10" />
-      <node id="6325302725156331181" at="21,19,22,37" concept="11" />
-      <node id="6325302725156353901" at="23,5,24,0" concept="13" />
-      <node id="6325302725157357862" at="24,0,25,92" concept="12" />
-      <node id="6325302725157319205" at="25,92,26,17" concept="10" />
-      <node id="6325302725157321713" at="27,40,28,44" concept="4" />
-      <node id="6325302725157261545" at="29,5,30,0" concept="13" />
-      <node id="6325302725158407467" at="30,0,31,38" concept="12" />
-      <node id="6325302725154539646" at="31,38,32,40" concept="10" />
-      <node id="9034849254685714664" at="32,40,33,30" concept="10" />
-      <node id="5247823728152101819" at="33,30,34,37" concept="10" />
-      <node id="6325302725158011925" at="35,20,36,34" concept="11" />
-      <node id="9034849254685745940" at="37,28,38,17" concept="11" />
-      <node id="6325302725158040024" at="39,5,40,0" concept="13" />
-      <node id="6325302725158042265" at="40,0,41,90" concept="12" />
-      <node id="9034849254685670060" at="41,90,42,36" concept="11" />
-      <node id="1338942654013161171" at="20,30,23,5" concept="8" />
-      <node id="6325302725157276741" at="26,17,29,5" concept="6" />
-      <node id="6325302725157998556" at="34,37,39,5" concept="8" />
-      <node id="1338942654013170264" at="17,0,44,0" concept="15" trace="shortId#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljava/lang/String;" />
-      <scope id="1338942654013161172" at="21,19,22,37" />
-      <scope id="6325302725157276743" at="27,40,28,44" />
-      <scope id="6325302725157998558" at="35,20,36,34" />
-      <scope id="9034849254685704971" at="37,28,38,17" />
-      <scope id="6325302725157276741" at="26,17,29,5">
+      <node id="9034849254685724205" at="19,41,20,30" concept="10" />
+      <node id="1338942654013161152" at="20,30,21,39" concept="10" />
+      <node id="6325302725157274237" at="21,39,22,30" concept="10" />
+      <node id="6325302725156331181" at="23,19,24,37" concept="11" />
+      <node id="6325302725156353901" at="25,5,26,0" concept="13" />
+      <node id="6325302725157357862" at="26,0,27,92" concept="12" />
+      <node id="6325302725157319205" at="27,92,28,17" concept="10" />
+      <node id="6325302725157321713" at="29,40,30,44" concept="4" />
+      <node id="6325302725157261545" at="31,5,32,0" concept="13" />
+      <node id="6325302725158407467" at="32,0,33,38" concept="12" />
+      <node id="6325302725154539646" at="33,38,34,40" concept="10" />
+      <node id="9034849254685714664" at="34,40,35,30" concept="10" />
+      <node id="5247823728152101819" at="35,30,36,37" concept="10" />
+      <node id="6325302725158011925" at="37,20,38,34" concept="11" />
+      <node id="9034849254685745940" at="39,28,40,17" concept="11" />
+      <node id="6325302725158040024" at="41,5,42,0" concept="13" />
+      <node id="6325302725158042265" at="42,0,43,90" concept="12" />
+      <node id="9034849254685670060" at="43,90,44,36" concept="11" />
+      <node id="1338942654013161171" at="22,30,25,5" concept="8" />
+      <node id="6325302725157276741" at="28,17,31,5" concept="6" />
+      <node id="6325302725157998556" at="36,37,41,5" concept="8" />
+      <node id="1338942654013170264" at="19,0,46,0" concept="15" trace="shortId#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljava/lang/String;" />
+      <scope id="1338942654013161172" at="23,19,24,37" />
+      <scope id="6325302725157276743" at="29,40,30,44" />
+      <scope id="6325302725157998558" at="37,20,38,34" />
+      <scope id="9034849254685704971" at="39,28,40,17" />
+      <scope id="6325302725157276741" at="28,17,31,5">
         <var name="i" id="6325302725157276744" />
       </scope>
-      <scope id="1338942654013161151" at="17,41,42,36">
+      <scope id="1338942654013161151" at="19,41,44,36">
         <var name="delta" id="5247823728152101822" />
         <var name="h" id="6325302725157319208" />
         <var name="hex" id="6325302725154539647" />
@@ -524,10 +524,10 @@
         <var name="longId" id="1338942654013161153" />
         <var name="requiredLen" id="9034849254685724208" />
       </scope>
-      <scope id="1338942654013170264" at="17,0,44,0">
+      <scope id="1338942654013170264" at="19,0,46,0">
         <var name="n" id="1338942654013161204" />
       </scope>
-      <unit id="1338942654013160969" at="7,0,46,0" name="org.iets3.variability.artifacts.base.behavior.NodeHashUtil" />
+      <unit id="1338942654013160969" at="7,0,48,0" name="org.iets3.variability.artifacts.base.behavior.NodeHashUtil" />
     </file>
   </root>
   <root nodeRef="r:211c2313-6a94-46b9-b5b0-2442332ff5ac(org.iets3.variability.artifacts.base.behavior)/1469778193412464721">

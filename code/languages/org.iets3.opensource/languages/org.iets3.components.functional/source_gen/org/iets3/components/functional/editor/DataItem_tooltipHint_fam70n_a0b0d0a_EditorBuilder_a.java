@@ -54,28 +54,25 @@ import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
     try {
       getCellFactory().pushCellContext();
       getCellFactory().removeCellContextHints(new String[]{"org.iets3.components.functional.editor.GeneratedHints.tooltipHint_fam70n_a0b0d0a"});
-      editorCell.addEditorCell(createQueryList_1());
+      editorCell.addEditorCell(createQueryList_0());
       setInnerCellsContext(editorCell);
     } finally {
       getCellFactory().popCellContext();
     }
     return editorCell;
   }
-  private EditorCell createQueryList_0(final EditorContext editorContext, final SNode node) {
+  private EditorCell createQueryList_0() {
 
-    QueryListHandler handler = new QueryListHandler_9ulae4_a0(editorContext, node, true);
+    QueryListHandler handler = new QueryListHandler_9ulae4_a0(getEditorContext(), getNode(), true);
     EditorCell_QueryList editorCell = handler.createCells(new CellLayout_Horizontal());
     editorCell.setTargeConcept(CONCEPTS.IAttribute$bB);
-    editorCell.setOwner(SNodeOperations.getConcept(node));
+    editorCell.setOwner(SNodeOperations.getConcept(getNode()));
     editorCell.setCellId("QueryList_9ulae4_a0");
     Style style = new StyleImpl();
     style.set(StyleAttributes.READ_ONLY, true);
     editorCell.getStyle().putAll(style);
     return editorCell;
 
-  }
-  private EditorCell createQueryList_1() {
-    return createQueryList_0(getEditorContext(), myNode);
   }
   private static class QueryListHandler_9ulae4_a0 extends QueryListHandler {
     /**
@@ -152,7 +149,7 @@ import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
       getCellFactory().pushCellContext();
       try {
         getCellFactory().setNodeLocation(new SNodeLocation.FromNode(node));
-        cell = createCellDuplicatesSafe(() -> context.getEditorComponent().getUpdater().getCurrentUpdateSession().updateReferencedNodeCell(() -> context.getEditorComponent().getUpdater().getCurrentUpdateSession().updateChildNodeCell(node), node, new DummyReferenceLink("querylist4913172852643162183")));
+        cell = createCellDuplicatesSafe(() -> context.getEditorComponent().getUpdater().getCurrentUpdateSession().updateReferencedNodeCell(() -> context.getEditorComponent().getUpdater().getCurrentUpdateSession().updateChildNodeCell(node), node, new DummyReferenceLink("querylist3202247853236217112")));
       } finally {
         getCellFactory().popCellContext();
       }

@@ -227,7 +227,7 @@ public class IConvertUnitHelper {
    *       binaryExpr.left not being an Expression node. Calling renderReadable() on the resulting
    *       expression will throw an exception.
    * 
-   * TODO: Check if this can be solved without producing temporary invalid expressions. 
+   * TODO: Check if this can be solved without producing temporary invalid expressions.
    */
   private static void replaceValExprWithBaseType(final SNode specifierExprCopy, final SNode parentConversionRule, final SNode baseType) {
     ListSequence.fromList(SNodeOperations.getNodeDescendants(specifierExprCopy, CONCEPTS.ValExpression$hl, false, new SAbstractConcept[]{})).visitAll((it) -> {
