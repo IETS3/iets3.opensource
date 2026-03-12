@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<debug-info version="2">
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123140:jetbrains.mps.baseLanguage.structure.ConstructorDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123155:jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123165:jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242864:jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1070462154015:jetbrains.mps.baseLanguage.structure.StaticFieldDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1070475587102:jetbrains.mps.baseLanguage.structure.SuperConstructorInvocation" />
+  <root nodeRef="r:84ac0cd9-88f1-4c99-aa31-54b135e30d21(test.org.iets3.protocol.transport.checks@tests)/2109381463408751194">
+    <file name="AdditionalChecks_Test.java">
+      <node id="2109381463408751194" at="23,34,24,60" concept="5" />
+      <node id="2109381463408755303" at="28,86,29,77" concept="1" />
+      <node id="2109381463408755305" at="32,87,33,78" concept="1" />
+      <node id="2109381463408751194" at="38,52,39,19" concept="5" />
+      <node id="2109381463408751194" at="43,36,44,46" concept="1" />
+      <node id="2109381463408755303" at="47,88,48,22" concept="1" />
+      <node id="2109381463408755303" at="49,30,50,63" concept="3" />
+      <node id="2109381463408755303" at="50,63,51,294" concept="1" />
+      <node id="2109381463408755305" at="54,89,55,22" concept="1" />
+      <node id="2109381463408755305" at="56,30,57,63" concept="3" />
+      <node id="2109381463408755305" at="57,63,58,294" concept="1" />
+      <node id="2109381463408751194" at="20,0,22,0" concept="4" trace="ourParametersCacheExtension" />
+      <node id="2109381463408751194" at="23,0,26,0" concept="0" trace="AdditionalChecks_Test#()V" />
+      <node id="2109381463408751194" at="38,0,41,0" concept="0" trace="TestBody#(Ljetbrains/mps/lang/test/runtime/TransformationTest;)V" />
+      <node id="2109381463408755303" at="27,0,31,0" concept="2" trace="test_NodeProtocolNotDefinedCheck2109381463408755303#()V" />
+      <node id="2109381463408755305" at="31,0,35,0" concept="2" trace="test_NodeMapTargetNotDefinedCheck2109381463408755305#()V" />
+      <node id="2109381463408751194" at="42,0,46,0" concept="2" trace="initTestNodes#()V" />
+      <node id="2109381463408755303" at="48,22,52,9" concept="1" />
+      <node id="2109381463408755305" at="55,22,59,9" concept="1" />
+      <node id="2109381463408755303" at="47,0,54,0" concept="2" trace="test_NodeProtocolNotDefinedCheck2109381463408755303#()V" />
+      <node id="2109381463408755305" at="54,0,61,0" concept="2" trace="test_NodeMapTargetNotDefinedCheck2109381463408755305#()V" />
+      <scope id="2109381463408751194" at="23,34,24,60" />
+      <scope id="2109381463408755303" at="28,86,29,77" />
+      <scope id="2109381463408755305" at="32,87,33,78" />
+      <scope id="2109381463408751194" at="38,52,39,19" />
+      <scope id="2109381463408751194" at="43,36,44,46" />
+      <scope id="2109381463408755303" at="49,30,51,294">
+        <var name="nodeToCheck" id="2109381463408755303" />
+      </scope>
+      <scope id="2109381463408755305" at="56,30,58,294">
+        <var name="nodeToCheck" id="2109381463408755305" />
+      </scope>
+      <scope id="2109381463408751194" at="23,0,26,0" />
+      <scope id="2109381463408751194" at="38,0,41,0">
+        <var name="owner" id="2109381463408751194" />
+      </scope>
+      <scope id="2109381463408755303" at="27,0,31,0" />
+      <scope id="2109381463408755305" at="31,0,35,0" />
+      <scope id="2109381463408751194" at="42,0,46,0" />
+      <scope id="2109381463408755303" at="47,88,52,9" />
+      <scope id="2109381463408755305" at="54,89,59,9" />
+      <scope id="2109381463408755303" at="47,0,54,0" />
+      <scope id="2109381463408755305" at="54,0,61,0" />
+      <unit id="2109381463408751194" at="36,0,63,0" name="test.org.iets3.protocol.transport.checks.AdditionalChecks_Test$TestBody" />
+      <unit id="2109381463408751194" at="18,0,64,0" name="test.org.iets3.protocol.transport.checks.AdditionalChecks_Test" />
+    </file>
+  </root>
+</debug-info>
+

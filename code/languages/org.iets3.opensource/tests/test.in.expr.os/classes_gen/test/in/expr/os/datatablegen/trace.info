@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<debug-info version="2">
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123140:jetbrains.mps.baseLanguage.structure.ConstructorDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123155:jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123165:jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242864:jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1070462154015:jetbrains.mps.baseLanguage.structure.StaticFieldDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1070475587102:jetbrains.mps.baseLanguage.structure.SuperConstructorInvocation" />
+  <root nodeRef="r:12a7a296-b11b-4305-8259-d25f523b38d0(test.in.expr.os.datatablegen@tests)/2460310434924199218">
+    <file name="TestsForDataTableGenerator_Test.java">
+      <node id="2460310434924199218" at="25,44,26,92" concept="5" />
+      <node id="7503962471789840464" at="30,66,31,57" concept="1" />
+      <node id="7503962471791916850" at="34,66,35,57" concept="1" />
+      <node id="7503962471791947803" at="38,66,39,57" concept="1" />
+      <node id="7503962471791497471" at="42,66,43,57" concept="1" />
+      <node id="7503962471789840464" at="52,44,53,112" concept="3" />
+      <node id="7503962471789840464" at="53,112,54,39" concept="1" />
+      <node id="7503962471791916850" at="61,44,62,112" concept="3" />
+      <node id="7503962471791916850" at="62,112,63,39" concept="1" />
+      <node id="7503962471791947803" at="70,44,71,112" concept="3" />
+      <node id="7503962471791947803" at="71,112,72,39" concept="1" />
+      <node id="7503962471791497471" at="79,44,80,112" concept="3" />
+      <node id="7503962471791497471" at="80,112,81,39" concept="1" />
+      <node id="2460310434924199218" at="86,50,87,19" concept="5" />
+      <node id="2460310434924199218" at="92,0,93,0" concept="4" trace="AbstractTestItem$9u" />
+      <node id="2460310434924199218" at="22,0,24,0" concept="4" trace="ourParametersCacheExtension" />
+      <node id="2460310434924199218" at="25,0,28,0" concept="0" trace="TestsForDataTableGenerator_Test#()V" />
+      <node id="2460310434924199218" at="86,0,89,0" concept="0" trace="TestBody#(Ljetbrains/mps/lang/test/runtime/TransformationTest;)V" />
+      <node id="7503962471789840464" at="29,0,33,0" concept="2" trace="Tests_item0_7503962471789840464#()V" />
+      <node id="7503962471791916850" at="33,0,37,0" concept="2" trace="Tests_item1_7503962471791916850#()V" />
+      <node id="7503962471791947803" at="37,0,41,0" concept="2" trace="Tests_item2_7503962471791947803#()V" />
+      <node id="7503962471791497471" at="41,0,45,0" concept="2" trace="Tests_item3_7503962471791497471#()V" />
+      <node id="7503962471789840464" at="51,0,56,0" concept="2" trace="run#()V" />
+      <node id="7503962471791916850" at="60,0,65,0" concept="2" trace="run#()V" />
+      <node id="7503962471791947803" at="69,0,74,0" concept="2" trace="run#()V" />
+      <node id="7503962471791497471" at="78,0,83,0" concept="2" trace="run#()V" />
+      <node id="7503962471789840464" at="49,68,56,9" concept="1" />
+      <node id="7503962471791916850" at="58,68,65,9" concept="1" />
+      <node id="7503962471791947803" at="67,68,74,9" concept="1" />
+      <node id="7503962471791497471" at="76,68,83,9" concept="1" />
+      <node id="7503962471789840464" at="49,0,58,0" concept="2" trace="Tests_item0_7503962471789840464#()V" />
+      <node id="7503962471791916850" at="58,0,67,0" concept="2" trace="Tests_item1_7503962471791916850#()V" />
+      <node id="7503962471791947803" at="67,0,76,0" concept="2" trace="Tests_item2_7503962471791947803#()V" />
+      <node id="7503962471791497471" at="76,0,85,0" concept="2" trace="Tests_item3_7503962471791497471#()V" />
+      <scope id="2460310434924199218" at="25,44,26,92" />
+      <scope id="7503962471789840464" at="30,66,31,57" />
+      <scope id="7503962471791916850" at="34,66,35,57" />
+      <scope id="7503962471791947803" at="38,66,39,57" />
+      <scope id="7503962471791497471" at="42,66,43,57" />
+      <scope id="2460310434924199218" at="86,50,87,19" />
+      <scope id="7503962471789840464" at="52,44,54,39">
+        <var name="ti" id="7503962471789840464" />
+      </scope>
+      <scope id="7503962471791916850" at="61,44,63,39">
+        <var name="ti" id="7503962471791916850" />
+      </scope>
+      <scope id="7503962471791947803" at="70,44,72,39">
+        <var name="ti" id="7503962471791947803" />
+      </scope>
+      <scope id="7503962471791497471" at="79,44,81,39">
+        <var name="ti" id="7503962471791497471" />
+      </scope>
+      <scope id="2460310434924199218" at="25,0,28,0" />
+      <scope id="2460310434924199218" at="86,0,89,0">
+        <var name="owner" id="2460310434924199218" />
+      </scope>
+      <scope id="7503962471789840464" at="29,0,33,0" />
+      <scope id="7503962471791916850" at="33,0,37,0" />
+      <scope id="7503962471791947803" at="37,0,41,0" />
+      <scope id="7503962471791497471" at="41,0,45,0" />
+      <scope id="7503962471789840464" at="51,0,56,0" />
+      <scope id="7503962471791916850" at="60,0,65,0" />
+      <scope id="7503962471791947803" at="69,0,74,0" />
+      <scope id="7503962471791497471" at="78,0,83,0" />
+      <scope id="7503962471789840464" at="49,68,56,9" />
+      <scope id="7503962471791916850" at="58,68,65,9" />
+      <scope id="7503962471791947803" at="67,68,74,9" />
+      <scope id="7503962471791497471" at="76,68,83,9" />
+      <scope id="7503962471789840464" at="49,0,58,0" />
+      <scope id="7503962471791916850" at="58,0,67,0" />
+      <scope id="7503962471791947803" at="67,0,76,0" />
+      <scope id="7503962471791497471" at="76,0,85,0" />
+      <unit id="2460310434924199218" at="91,0,94,0" name="test.in.expr.os.datatablegen.TestsForDataTableGenerator_Test$CONCEPTS" />
+      <unit id="7503962471789840464" at="50,27,56,7" name="test.in.expr.os.datatablegen.TestsForDataTableGenerator_Test$TestBody$1" />
+      <unit id="7503962471791916850" at="59,27,65,7" name="test.in.expr.os.datatablegen.TestsForDataTableGenerator_Test$TestBody$2" />
+      <unit id="7503962471791947803" at="68,27,74,7" name="test.in.expr.os.datatablegen.TestsForDataTableGenerator_Test$TestBody$3" />
+      <unit id="7503962471791497471" at="77,27,83,7" name="test.in.expr.os.datatablegen.TestsForDataTableGenerator_Test$TestBody$4" />
+      <unit id="2460310434924199218" at="47,0,90,0" name="test.in.expr.os.datatablegen.TestsForDataTableGenerator_Test$TestBody" />
+      <unit id="2460310434924199218" at="19,0,95,0" name="test.in.expr.os.datatablegen.TestsForDataTableGenerator_Test" />
+    </file>
+  </root>
+</debug-info>
+

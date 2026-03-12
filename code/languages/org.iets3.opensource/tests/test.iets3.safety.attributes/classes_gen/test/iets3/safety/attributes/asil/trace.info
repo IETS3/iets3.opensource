@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<debug-info version="2">
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123140:jetbrains.mps.baseLanguage.structure.ConstructorDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123155:jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123165:jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/6329021646629104954:jetbrains.mps.baseLanguage.structure.SingleLineComment" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123157:jetbrains.mps.baseLanguage.structure.Statement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1070462154015:jetbrains.mps.baseLanguage.structure.StaticFieldDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1070475587102:jetbrains.mps.baseLanguage.structure.SuperConstructorInvocation" />
+  <root nodeRef="r:e31619ad-ef5f-4cfa-902d-59a48bc9bc13(test.iets3.safety.attributes.asil@tests)/3611035022504972957">
+    <file name="asilPresentation_Test.java">
+      <node id="3611035022504972957" at="21,34,22,60" concept="6" />
+      <node id="3611035022504973218" at="26,54,27,45" concept="1" />
+      <node id="3611035022505020588" at="30,54,31,45" concept="1" />
+      <node id="3611035022505020886" at="34,54,35,45" concept="1" />
+      <node id="3611035022505021192" at="38,54,39,45" concept="1" />
+      <node id="3611035022505021506" at="42,55,43,46" concept="1" />
+      <node id="3611035022504972957" at="48,52,49,19" concept="6" />
+      <node id="3611035022504972957" at="53,36,54,138" concept="1" />
+      <node id="3611035022504973218" at="57,56,58,22" concept="1" />
+      <node id="3611035022505038826" at="59,30,60,70" concept="3" />
+      <node id="3611035022504973834" at="60,70,61,128" concept="1" />
+      <node id="3611035022505020588" at="64,56,65,22" concept="1" />
+      <node id="3611035022505020588" at="65,22,66,150" concept="1" />
+      <node id="3611035022505020886" at="68,56,69,22" concept="1" />
+      <node id="3611035022505020886" at="69,22,70,150" concept="1" />
+      <node id="3611035022505021192" at="72,56,73,22" concept="1" />
+      <node id="3611035022505021192" at="73,22,74,150" concept="1" />
+      <node id="3611035022505021506" at="76,57,77,22" concept="1" />
+      <node id="3611035022505021506" at="77,22,78,152" concept="1" />
+      <node id="3611035022504972957" at="18,0,20,0" concept="5" trace="ourParametersCacheExtension" />
+      <node id="3611035022504972957" at="21,0,24,0" concept="0" trace="asilPresentation_Test#()V" />
+      <node id="3611035022504972957" at="48,0,51,0" concept="0" trace="TestBody#(Ljetbrains/mps/lang/test/runtime/TransformationTest;)V" />
+      <node id="3611035022504973218" at="25,0,29,0" concept="2" trace="test_A_Presentation#()V" />
+      <node id="3611035022505020588" at="29,0,33,0" concept="2" trace="test_B_Presentation#()V" />
+      <node id="3611035022505020886" at="33,0,37,0" concept="2" trace="test_C_Presentation#()V" />
+      <node id="3611035022505021192" at="37,0,41,0" concept="2" trace="test_D_Presentation#()V" />
+      <node id="3611035022505021506" at="41,0,45,0" concept="2" trace="test_QM_Presentation#()V" />
+      <node id="3611035022504972957" at="52,0,56,0" concept="2" trace="initTestNodes#()V" />
+      <node id="3611035022504973218" at="58,22,62,9" concept="1" />
+      <node id="3611035022505020588" at="64,0,68,0" concept="2" trace="test_B_Presentation#()V" />
+      <node id="3611035022505020886" at="68,0,72,0" concept="2" trace="test_C_Presentation#()V" />
+      <node id="3611035022505021192" at="72,0,76,0" concept="2" trace="test_D_Presentation#()V" />
+      <node id="3611035022505021506" at="76,0,80,0" concept="2" trace="test_QM_Presentation#()V" />
+      <node id="3611035022504973218" at="57,0,64,0" concept="2" trace="test_A_Presentation#()V" />
+      <scope id="3611035022504972957" at="21,34,22,60" />
+      <scope id="3611035022504973218" at="26,54,27,45" />
+      <scope id="3611035022505020588" at="30,54,31,45" />
+      <scope id="3611035022505020886" at="34,54,35,45" />
+      <scope id="3611035022505021192" at="38,54,39,45" />
+      <scope id="3611035022505021506" at="42,55,43,46" />
+      <scope id="3611035022504972957" at="48,52,49,19" />
+      <scope id="3611035022504972957" at="53,36,54,138" />
+      <scope id="3611035022504973218" at="59,30,61,128" />
+      <scope id="3611035022505020588" at="64,56,66,150" />
+      <scope id="3611035022505020886" at="68,56,70,150" />
+      <scope id="3611035022505021192" at="72,56,74,150" />
+      <scope id="3611035022505021506" at="76,57,78,152" />
+      <scope id="3611035022504972957" at="21,0,24,0" />
+      <scope id="3611035022504972957" at="48,0,51,0">
+        <var name="owner" id="3611035022504972957" />
+      </scope>
+      <scope id="3611035022504973218" at="25,0,29,0" />
+      <scope id="3611035022505020588" at="29,0,33,0" />
+      <scope id="3611035022505020886" at="33,0,37,0" />
+      <scope id="3611035022505021192" at="37,0,41,0" />
+      <scope id="3611035022505021506" at="41,0,45,0" />
+      <scope id="3611035022504972957" at="52,0,56,0" />
+      <scope id="3611035022505020588" at="64,0,68,0" />
+      <scope id="3611035022505020886" at="68,0,72,0" />
+      <scope id="3611035022505021192" at="72,0,76,0" />
+      <scope id="3611035022505021506" at="76,0,80,0" />
+      <scope id="3611035022504973218" at="57,56,62,9" />
+      <scope id="3611035022504973218" at="57,0,64,0" />
+      <unit id="3611035022504972957" at="46,0,82,0" name="test.iets3.safety.attributes.asil.asilPresentation_Test$TestBody" />
+      <unit id="3611035022504972957" at="16,0,83,0" name="test.iets3.safety.attributes.asil.asilPresentation_Test" />
+    </file>
+  </root>
+  <root nodeRef="r:e31619ad-ef5f-4cfa-902d-59a48bc9bc13(test.iets3.safety.attributes.asil@tests)/8820472878857710021">
+    <file name="asilCalculation_Test.java">
+      <node id="8820472878857710021" at="24,33,25,60" concept="6" />
+      <node id="8820472878857710055" at="29,57,30,48" concept="1" />
+      <node id="9042799268974919725" at="33,57,34,48" concept="1" />
+      <node id="9042799268975289754" at="37,57,38,48" concept="1" />
+      <node id="8820472878857710021" at="43,52,44,19" concept="6" />
+      <node id="8820472878857710021" at="48,36,49,485" concept="1" />
+      <node id="8820472878857710055" at="52,59,53,22" concept="1" />
+      <node id="9042799268974459537" at="54,30,55,19" concept="3" />
+      <node id="511539888736485223" at="55,19,56,0" concept="4" />
+      <node id="9042799268974462161" at="56,0,57,380" concept="1" />
+      <node id="9042799268974462447" at="57,380,58,381" concept="1" />
+      <node id="9042799268974462581" at="58,381,59,380" concept="1" />
+      <node id="9042799268975324719" at="59,380,60,380" concept="1" />
+      <node id="9042799268974919725" at="63,59,64,22" concept="1" />
+      <node id="9042799268974919954" at="65,30,66,380" concept="1" />
+      <node id="9042799268975241101" at="66,380,67,381" concept="1" />
+      <node id="9042799268975245683" at="67,381,68,381" concept="1" />
+      <node id="9042799268975278216" at="68,381,69,380" concept="1" />
+      <node id="9042799268975278849" at="69,380,70,381" concept="1" />
+      <node id="9042799268975279119" at="70,381,71,380" concept="1" />
+      <node id="9042799268975325042" at="71,380,72,380" concept="1" />
+      <node id="9042799268975289754" at="75,59,76,22" concept="1" />
+      <node id="9042799268975290029" at="77,30,78,380" concept="1" />
+      <node id="9042799268975290180" at="78,380,79,381" concept="1" />
+      <node id="9042799268975290340" at="79,381,80,381" concept="1" />
+      <node id="9042799268975300385" at="80,381,81,380" concept="1" />
+      <node id="9042799268975301004" at="81,380,82,381" concept="1" />
+      <node id="9042799268975301268" at="82,381,83,381" concept="1" />
+      <node id="9042799268975311650" at="83,381,84,380" concept="1" />
+      <node id="9042799268975312389" at="84,380,85,381" concept="1" />
+      <node id="9042799268975312797" at="85,381,86,381" concept="1" />
+      <node id="9042799268975325517" at="86,381,87,380" concept="1" />
+      <node id="8820472878857710021" at="21,0,23,0" concept="5" trace="ourParametersCacheExtension" />
+      <node id="8820472878857710021" at="24,0,27,0" concept="0" trace="asilCalculation_Test#()V" />
+      <node id="8820472878857710021" at="43,0,46,0" concept="0" trace="TestBody#(Ljetbrains/mps/lang/test/runtime/TransformationTest;)V" />
+      <node id="8820472878857710055" at="28,0,32,0" concept="2" trace="test_S1AsilCalculation#()V" />
+      <node id="9042799268974919725" at="32,0,36,0" concept="2" trace="test_S2AsilCalculation#()V" />
+      <node id="9042799268975289754" at="36,0,40,0" concept="2" trace="test_S3AsilCalculation#()V" />
+      <node id="8820472878857710021" at="47,0,51,0" concept="2" trace="initTestNodes#()V" />
+      <node id="8820472878857710055" at="53,22,61,9" concept="1" />
+      <node id="9042799268974919725" at="64,22,73,9" concept="1" />
+      <node id="8820472878857710055" at="52,0,63,0" concept="2" trace="test_S1AsilCalculation#()V" />
+      <node id="9042799268974919725" at="63,0,75,0" concept="2" trace="test_S2AsilCalculation#()V" />
+      <node id="9042799268975289754" at="76,22,88,9" concept="1" />
+      <node id="9042799268975289754" at="75,0,90,0" concept="2" trace="test_S3AsilCalculation#()V" />
+      <scope id="8820472878857710021" at="24,33,25,60" />
+      <scope id="8820472878857710055" at="29,57,30,48" />
+      <scope id="9042799268974919725" at="33,57,34,48" />
+      <scope id="9042799268975289754" at="37,57,38,48" />
+      <scope id="8820472878857710021" at="43,52,44,19" />
+      <scope id="8820472878857710021" at="48,36,49,485" />
+      <scope id="8820472878857710021" at="24,0,27,0" />
+      <scope id="8820472878857710021" at="43,0,46,0">
+        <var name="owner" id="8820472878857710021" />
+      </scope>
+      <scope id="8820472878857710055" at="28,0,32,0" />
+      <scope id="9042799268974919725" at="32,0,36,0" />
+      <scope id="9042799268975289754" at="36,0,40,0" />
+      <scope id="8820472878857710021" at="47,0,51,0" />
+      <scope id="8820472878857710055" at="54,30,60,380" />
+      <scope id="9042799268974919725" at="65,30,72,380" />
+      <scope id="8820472878857710055" at="52,59,61,9" />
+      <scope id="9042799268974919725" at="63,59,73,9" />
+      <scope id="9042799268975289754" at="77,30,87,380" />
+      <scope id="8820472878857710055" at="52,0,63,0" />
+      <scope id="9042799268974919725" at="63,0,75,0" />
+      <scope id="9042799268975289754" at="75,59,88,9" />
+      <scope id="9042799268975289754" at="75,0,90,0" />
+      <unit id="8820472878857710021" at="41,0,92,0" name="test.iets3.safety.attributes.asil.asilCalculation_Test$TestBody" />
+      <unit id="8820472878857710021" at="19,0,93,0" name="test.iets3.safety.attributes.asil.asilCalculation_Test" />
+    </file>
+  </root>
+</debug-info>
+
