@@ -7,6 +7,6 @@ on:
 
 jobs:
   create-pr:
-    uses: specificlanguages/cascading-merge/.github/workflows/workflow.yml@v1
+    uses: specificlanguages/cascading-merge/.github/workflows/workflow.yml@v2
     with:
       exclude_branch_prefix: maintenance/mps3
