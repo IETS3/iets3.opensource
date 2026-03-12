@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<debug-info version="2">
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1082485599095:jetbrains.mps.baseLanguage.structure.BlockStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123140:jetbrains.mps.baseLanguage.structure.ConstructorDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123155:jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123165:jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242864:jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242878:jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1070462154015:jetbrains.mps.baseLanguage.structure.StaticFieldDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1081236700938:jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" />
+  <root>
+    <file name="TypesystemDescriptor.java">
+      <unit at="9,0,25,0" name="test.ts.expr.os.nix.typesystem.TypesystemDescriptor" />
+    </file>
+  </root>
+  <root nodeRef="r:ca8aadc0-6e3c-46b0-b047-1d58cf243066(test.ts.expr.os.nix.typesystem)/7742862120171946935">
+    <file name="TypesystemDescriptor.java">
+      <node id="7742862120171946935" at="19,5,20,101" concept="4" />
+      <node id="7742862120171946935" at="20,101,21,61" concept="2" />
+      <node id="7742862120171946935" at="18,5,22,5" concept="0" />
+      <scope id="7742862120171946935" at="19,5,21,61">
+        <var name="eliminationRule" id="7742862120171946935" />
+      </scope>
+    </file>
+    <file name="replaceNix_InequationReplacementRule.java">
+      <node id="7742862120171946935" at="20,207,21,35" concept="4" />
+      <node id="7742862120171946935" at="21,35,22,27" concept="5" />
+      <node id="7742862120171946935" at="24,27,25,16" concept="5" />
+      <node id="7742862120171946935" at="27,71,28,105" concept="5" />
+      <node id="7742862120171946935" at="30,73,31,107" concept="5" />
+      <node id="7742862120171946935" at="34,57,35,31" concept="5" />
+      <node id="7742862120171946935" at="37,59,38,28" concept="5" />
+      <node id="7742862120171946935" at="42,0,43,0" concept="6" trace="NixType$wf" />
+      <node id="7742862120171946935" at="43,0,44,0" concept="6" trace="Type$WK" />
+      <node id="7742862120171946935" at="16,0,18,0" concept="1" trace="replaceNix_InequationReplacementRule#()V" />
+      <node id="7742862120171946935" at="18,0,20,0" concept="3" trace="processInequation#(Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/typesystem/inference/EquationInfo;Ljetbrains/mps/typesystem/inference/TypeCheckingContext;Ljetbrains/mps/lang/typesystem/runtime/IsApplicable2Status;ZZ)V" />
+      <node id="7742862120171946935" at="24,0,27,0" concept="3" trace="isWeak#()Z" />
+      <node id="7742862120171946935" at="27,0,30,0" concept="3" trace="isApplicableSubtypeAndPattern#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljetbrains/mps/lang/typesystem/runtime/IsApplicableStatus;" />
+      <node id="7742862120171946935" at="30,0,33,0" concept="3" trace="isApplicableSupertypeAndPattern#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljetbrains/mps/lang/typesystem/runtime/IsApplicableStatus;" />
+      <node id="7742862120171946935" at="34,0,37,0" concept="3" trace="getApplicableSubtypeConcept#()Lorg/jetbrains/mps/openapi/language/SAbstractConcept;" />
+      <node id="7742862120171946935" at="37,0,40,0" concept="3" trace="getApplicableSupertypeConcept#()Lorg/jetbrains/mps/openapi/language/SAbstractConcept;" />
+      <node id="7742862120171946935" at="20,0,24,0" concept="3" trace="checkInequation#(Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/typesystem/inference/EquationInfo;Ljetbrains/mps/lang/typesystem/runtime/IsApplicable2Status;ZZ)Z" />
+      <scope id="7742862120171946935" at="16,49,16,49" />
+      <scope id="7742862120171946937" at="18,253,18,253" />
+      <scope id="7742862120171946935" at="24,27,25,16" />
+      <scope id="7742862120171946935" at="27,71,28,105" />
+      <scope id="7742862120171946935" at="30,73,31,107" />
+      <scope id="7742862120171946935" at="34,57,35,31" />
+      <scope id="7742862120171946935" at="37,59,38,28" />
+      <scope id="7742862120171946935" at="16,0,18,0" />
+      <scope id="7742862120171946935" at="18,0,20,0">
+        <var name="equationInfo" id="7742862120171946935" />
+        <var name="inequalityIsLessThan" id="7742862120171946935" />
+        <var name="inequalityIsWeak" id="7742862120171946935" />
+        <var name="status" id="7742862120171946935" />
+        <var name="subtype" id="7742862120171946935" />
+        <var name="supertype" id="7742862120171946935" />
+        <var name="typeCheckingContext" id="7742862120171946935" />
+      </scope>
+      <scope id="7742862120171946935" at="20,207,22,27">
+        <var name="result_14532009" id="7742862120171946935" />
+      </scope>
+      <scope id="7742862120171946935" at="24,0,27,0" />
+      <scope id="7742862120171946935" at="27,0,30,0">
+        <var name="node" id="7742862120171946935" />
+      </scope>
+      <scope id="7742862120171946935" at="30,0,33,0">
+        <var name="node" id="7742862120171946935" />
+      </scope>
+      <scope id="7742862120171946935" at="34,0,37,0" />
+      <scope id="7742862120171946935" at="37,0,40,0" />
+      <scope id="7742862120171946935" at="20,0,24,0">
+        <var name="equationInfo" id="7742862120171946935" />
+        <var name="inequalityIsLessThan" id="7742862120171946935" />
+        <var name="inequalityIsWeak" id="7742862120171946935" />
+        <var name="status" id="7742862120171946935" />
+        <var name="subtype" id="7742862120171946935" />
+        <var name="supertype" id="7742862120171946935" />
+      </scope>
+      <unit id="7742862120171946935" at="41,0,45,0" name="test.ts.expr.os.nix.typesystem.replaceNix_InequationReplacementRule$CONCEPTS" />
+      <unit id="7742862120171946935" at="15,0,46,0" name="test.ts.expr.os.nix.typesystem.replaceNix_InequationReplacementRule" />
+    </file>
+  </root>
+  <root nodeRef="r:ca8aadc0-6e3c-46b0-b047-1d58cf243066(test.ts.expr.os.nix.typesystem)/8823320991986393441">
+    <file name="TypesystemDescriptor.java">
+      <node id="8823320991986393441" at="11,5,12,82" concept="4" />
+      <node id="8823320991986393441" at="12,82,13,47" concept="2" />
+      <node id="8823320991986393441" at="10,33,14,5" concept="0" />
+      <scope id="8823320991986393441" at="11,5,13,47">
+        <var name="inferenceRule" id="8823320991986393441" />
+      </scope>
+    </file>
+    <file name="typeof_NixLiteral_InferenceRule.java">
+      <node id="8823320991986394558" at="20,5,21,52" concept="4" />
+      <node id="8823320991986394558" at="21,52,22,196" concept="4" />
+      <node id="8823320991986394558" at="22,196,23,269" concept="2" />
+      <node id="8823320991986393441" at="26,50,27,34" concept="5" />
+      <node id="8823320991986393441" at="29,68,30,102" concept="5" />
+      <node id="8823320991986393441" at="32,30,33,17" concept="5" />
+      <node id="8823320991986394566" at="35,57,36,67" concept="4" />
+      <node id="8823320991986394566" at="36,67,37,26" concept="5" />
+      <node id="8823320991986393441" at="41,0,42,0" concept="6" trace="NixLiteral$mM" />
+      <node id="8823320991986393441" at="42,0,43,0" concept="6" trace="NixType$wf" />
+      <node id="8823320991986393441" at="17,0,19,0" concept="1" trace="typeof_NixLiteral_InferenceRule#()V" />
+      <node id="8823320991986393441" at="26,0,29,0" concept="3" trace="getApplicableConcept#()Lorg/jetbrains/mps/openapi/language/SAbstractConcept;" />
+      <node id="8823320991986393441" at="29,0,32,0" concept="3" trace="isApplicableAndPattern#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljetbrains/mps/lang/typesystem/runtime/IsApplicableStatus;" />
+      <node id="8823320991986393441" at="32,0,35,0" concept="3" trace="overrides#()Z" />
+      <node id="8823320991986394566" at="35,0,39,0" concept="7" trace="createNixType_tx9apn_a1a0c0a0b#()Lorg/jetbrains/mps/openapi/model/SNode;" />
+      <node id="8823320991986394558" at="19,123,24,5" concept="0" />
+      <node id="8823320991986393441" at="19,0,26,0" concept="3" trace="applyRule#(Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/typesystem/inference/TypeCheckingContext;Ljetbrains/mps/lang/typesystem/runtime/IsApplicableStatus;)V" />
+      <scope id="8823320991986393441" at="17,44,17,44" />
+      <scope id="8823320991986393441" at="26,50,27,34" />
+      <scope id="8823320991986393441" at="29,68,30,102" />
+      <scope id="8823320991986393441" at="32,30,33,17" />
+      <scope id="8823320991986393441" at="17,0,19,0" />
+      <scope id="8823320991986394566" at="35,57,37,26">
+        <var name="n0" id="8823320991986394566" />
+      </scope>
+      <scope id="8823320991986394558" at="20,5,23,269">
+        <var name="_info_12389875345" id="8823320991986394558" />
+        <var name="_nodeToCheck_1029348928467" id="8823320991986394558" />
+      </scope>
+      <scope id="8823320991986393441" at="26,0,29,0" />
+      <scope id="8823320991986393441" at="29,0,32,0">
+        <var name="argument" id="8823320991986393441" />
+      </scope>
+      <scope id="8823320991986393441" at="32,0,35,0" />
+      <scope id="8823320991986394566" at="35,0,39,0" />
+      <scope id="8823320991986393442" at="19,123,24,5" />
+      <scope id="8823320991986393441" at="19,0,26,0">
+        <var name="nixLiteral" id="8823320991986393441" />
+        <var name="status" id="8823320991986393441" />
+        <var name="typeCheckingContext" id="8823320991986393441" />
+      </scope>
+      <unit id="8823320991986393441" at="40,0,44,0" name="test.ts.expr.os.nix.typesystem.typeof_NixLiteral_InferenceRule$CONCEPTS" />
+      <unit id="8823320991986393441" at="16,0,45,0" name="test.ts.expr.os.nix.typesystem.typeof_NixLiteral_InferenceRule" />
+    </file>
+  </root>
+  <root nodeRef="r:ca8aadc0-6e3c-46b0-b047-1d58cf243066(test.ts.expr.os.nix.typesystem)/8823320991986432212">
+    <file name="TypesystemDescriptor.java">
+      <node id="8823320991986432212" at="15,5,16,79" concept="4" />
+      <node id="8823320991986432212" at="16,79,17,47" concept="2" />
+      <node id="8823320991986432212" at="14,5,18,5" concept="0" />
+      <scope id="8823320991986432212" at="15,5,17,47">
+        <var name="inferenceRule" id="8823320991986432212" />
+      </scope>
+    </file>
+    <file name="typeof_NixType_InferenceRule.java">
+      <node id="8823320991986433192" at="19,5,20,49" concept="4" />
+      <node id="8823320991986433192" at="20,49,21,196" concept="4" />
+      <node id="8823320991986433192" at="21,196,22,244" concept="2" />
+      <node id="8823320991986432212" at="25,50,26,31" concept="5" />
+      <node id="8823320991986432212" at="28,68,29,102" concept="5" />
+      <node id="8823320991986432212" at="31,30,32,17" concept="5" />
+      <node id="8823320991986432212" at="36,0,37,0" concept="6" trace="NixType$wf" />
+      <node id="8823320991986432212" at="16,0,18,0" concept="1" trace="typeof_NixType_InferenceRule#()V" />
+      <node id="8823320991986432212" at="25,0,28,0" concept="3" trace="getApplicableConcept#()Lorg/jetbrains/mps/openapi/language/SAbstractConcept;" />
+      <node id="8823320991986432212" at="28,0,31,0" concept="3" trace="isApplicableAndPattern#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljetbrains/mps/lang/typesystem/runtime/IsApplicableStatus;" />
+      <node id="8823320991986432212" at="31,0,34,0" concept="3" trace="overrides#()Z" />
+      <node id="8823320991986433192" at="18,120,23,5" concept="0" />
+      <node id="8823320991986432212" at="18,0,25,0" concept="3" trace="applyRule#(Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/typesystem/inference/TypeCheckingContext;Ljetbrains/mps/lang/typesystem/runtime/IsApplicableStatus;)V" />
+      <scope id="8823320991986432212" at="16,41,16,41" />
+      <scope id="8823320991986432212" at="25,50,26,31" />
+      <scope id="8823320991986432212" at="28,68,29,102" />
+      <scope id="8823320991986432212" at="31,30,32,17" />
+      <scope id="8823320991986432212" at="16,0,18,0" />
+      <scope id="8823320991986433192" at="19,5,22,244">
+        <var name="_info_12389875345" id="8823320991986433192" />
+        <var name="_nodeToCheck_1029348928467" id="8823320991986433192" />
+      </scope>
+      <scope id="8823320991986432212" at="25,0,28,0" />
+      <scope id="8823320991986432212" at="28,0,31,0">
+        <var name="argument" id="8823320991986432212" />
+      </scope>
+      <scope id="8823320991986432212" at="31,0,34,0" />
+      <scope id="8823320991986432213" at="18,120,23,5" />
+      <scope id="8823320991986432212" at="18,0,25,0">
+        <var name="nixType" id="8823320991986432212" />
+        <var name="status" id="8823320991986432212" />
+        <var name="typeCheckingContext" id="8823320991986432212" />
+      </scope>
+      <unit id="8823320991986432212" at="35,0,38,0" name="test.ts.expr.os.nix.typesystem.typeof_NixType_InferenceRule$CONCEPTS" />
+      <unit id="8823320991986432212" at="15,0,39,0" name="test.ts.expr.os.nix.typesystem.typeof_NixType_InferenceRule" />
+    </file>
+  </root>
+</debug-info>
+
