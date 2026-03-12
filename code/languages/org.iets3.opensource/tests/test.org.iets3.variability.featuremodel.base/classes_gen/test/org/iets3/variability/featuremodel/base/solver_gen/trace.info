@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<debug-info version="2">
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123140:jetbrains.mps.baseLanguage.structure.ConstructorDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123155:jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123165:jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242864:jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1070462154015:jetbrains.mps.baseLanguage.structure.StaticFieldDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1081236700938:jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1070475587102:jetbrains.mps.baseLanguage.structure.SuperConstructorInvocation" />
+  <root nodeRef="r:da577eb2-7b26-4dbd-b16d-040245d92b51(test.org.iets3.variability.featuremodel.base.solver_gen@tests)/8750105304767845035">
+    <file name="FeatureModelSolverTaskFactoryExtension_Test.java">
+      <node id="8750105304767845035" at="27,56,28,60" concept="6" />
+      <node id="8750105304767897564" at="32,59,33,50" concept="1" />
+      <node id="8750105304767914278" at="37,36,38,64" concept="1" />
+      <node id="8750105304768005777" at="42,35,43,48" concept="1" />
+      <node id="8750105304767845035" at="48,52,49,19" concept="6" />
+      <node id="8750105304767845035" at="53,36,54,46" concept="1" />
+      <node id="8750105304767897564" at="57,61,58,22" concept="1" />
+      <node id="8750105304767910922" at="59,30,60,110" concept="3" />
+      <node id="6000834571627811012" at="60,110,61,65" concept="1" />
+      <node id="6000834571627810969" at="65,60,66,74" concept="1" />
+      <node id="6000834571627810974" at="66,74,67,88" concept="1" />
+      <node id="6000834571627810981" at="67,88,68,62" concept="3" />
+      <node id="6000834571627810989" at="68,62,69,71" concept="1" />
+      <node id="8750105304767845035" at="24,0,26,0" concept="4" trace="ourParametersCacheExtension" />
+      <node id="8750105304767845035" at="27,0,30,0" concept="0" trace="FeatureModelSolverTaskFactoryExtension_Test#()V" />
+      <node id="8750105304767845035" at="48,0,51,0" concept="0" trace="TestBody#(Ljetbrains/mps/lang/test/runtime/TransformationTest;)V" />
+      <node id="8750105304767897564" at="31,0,35,0" concept="2" trace="test_DummSolverTaskForFM#()V" />
+      <node id="8750105304767845035" at="36,0,40,0" concept="5" trace="beforeTests#()V" />
+      <node id="8750105304767845035" at="41,0,45,0" concept="5" trace="afterTests#()V" />
+      <node id="8750105304767845035" at="52,0,56,0" concept="2" trace="initTestNodes#()V" />
+      <node id="8750105304767897564" at="58,22,62,9" concept="1" />
+      <node id="6000834571627811004" at="65,0,71,0" concept="2" trace="assertions#(Lorg/iets3/core/base/behavior/IResult;Lorg/jetbrains/mps/openapi/model/SNode;)V" />
+      <node id="8750105304767897564" at="57,0,64,0" concept="2" trace="test_DummSolverTaskForFM#()V" />
+      <scope id="8750105304767845035" at="27,56,28,60" />
+      <scope id="8750105304767897564" at="32,59,33,50" />
+      <scope id="8750105304767845035" at="37,36,38,64" />
+      <scope id="8750105304767845035" at="42,35,43,48" />
+      <scope id="8750105304767845035" at="48,52,49,19" />
+      <scope id="8750105304767845035" at="53,36,54,46" />
+      <scope id="8750105304767897564" at="59,30,61,65">
+        <var name="result" id="8750105304767910923" />
+      </scope>
+      <scope id="8750105304767845035" at="27,0,30,0" />
+      <scope id="8750105304767845035" at="48,0,51,0">
+        <var name="owner" id="8750105304767845035" />
+      </scope>
+      <scope id="8750105304767897564" at="31,0,35,0" />
+      <scope id="8750105304767845035" at="36,0,40,0" />
+      <scope id="8750105304767845035" at="41,0,45,0" />
+      <scope id="8750105304767845035" at="52,0,56,0" />
+      <scope id="6000834571627811004" at="65,60,69,71">
+        <var name="errorMessage" id="6000834571627810982" />
+      </scope>
+      <scope id="8750105304767897564" at="57,61,62,9" />
+      <scope id="6000834571627811004" at="65,0,71,0">
+        <var name="result" id="6000834571627810994" />
+        <var name="solvable" id="6000834571627810996" />
+      </scope>
+      <scope id="8750105304767897564" at="57,0,64,0" />
+      <unit id="8750105304767845035" at="46,0,72,0" name="test.org.iets3.variability.featuremodel.base.solver_gen.FeatureModelSolverTaskFactoryExtension_Test$TestBody" />
+      <unit id="8750105304767845035" at="22,0,73,0" name="test.org.iets3.variability.featuremodel.base.solver_gen.FeatureModelSolverTaskFactoryExtension_Test" />
+    </file>
+  </root>
+</debug-info>
+

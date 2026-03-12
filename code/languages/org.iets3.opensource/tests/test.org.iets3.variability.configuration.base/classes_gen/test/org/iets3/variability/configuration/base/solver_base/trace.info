@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<debug-info version="2">
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123140:jetbrains.mps.baseLanguage.structure.ConstructorDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123155:jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123165:jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242864:jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123157:jetbrains.mps.baseLanguage.structure.Statement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1070462154015:jetbrains.mps.baseLanguage.structure.StaticFieldDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1081236700938:jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1070475587102:jetbrains.mps.baseLanguage.structure.SuperConstructorInvocation" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/5351203823916750322:jetbrains.mps.baseLanguage.structure.TryUniversalStatement" />
+  <root nodeRef="r:e1114bf0-60d6-43ea-9d50-e7f4a71ca6c3(test.org.iets3.variability.configuration.base.solver_base@tests)/5714859726080600011">
+    <file name="ConfigurationSolverBaseExtension_Test.java">
+      <node id="5714859726080600011" at="28,50,29,60" concept="7" />
+      <node id="5714859726080677770" at="33,57,34,48" concept="1" />
+      <node id="5714859726083867490" at="37,78,38,69" concept="1" />
+      <node id="5714859726080600011" at="43,52,44,19" concept="7" />
+      <node id="5714859726080600011" at="48,36,49,46" concept="1" />
+      <node id="5714859726080677770" at="52,59,53,22" concept="1" />
+      <node id="5714859726080715435" at="54,30,55,68" concept="1" />
+      <node id="5714859726080714893" at="55,68,56,0" concept="4" />
+      <node id="5714859726080699330" at="57,13,58,416" concept="3" />
+      <node id="5714859726081392461" at="58,416,59,78" concept="1" />
+      <node id="5714859726080739695" at="59,78,60,66" concept="3" />
+      <node id="5714859726081427078" at="60,66,61,76" concept="1" />
+      <node id="5714859726080699342" at="61,76,62,347" concept="1" />
+      <node id="5714859726080716380" at="63,19,64,54" concept="1" />
+      <node id="5714859726083867490" at="68,80,69,22" concept="1" />
+      <node id="5714859726083867670" at="70,30,71,68" concept="1" />
+      <node id="5714859726083872225" at="71,68,72,60" concept="1" />
+      <node id="5714859726083867673" at="72,60,73,0" concept="4" />
+      <node id="5714859726083867697" at="74,13,75,416" concept="3" />
+      <node id="5714859726083867703" at="75,416,76,78" concept="1" />
+      <node id="5714859726083867708" at="76,78,77,66" concept="3" />
+      <node id="5714859726083867716" at="77,66,78,76" concept="1" />
+      <node id="5714859726083867721" at="78,76,79,347" concept="1" />
+      <node id="5714859726083873903" at="80,19,81,46" concept="1" />
+      <node id="5714859726083867730" at="81,46,82,54" concept="1" />
+      <node id="5714859726080600011" at="90,0,91,0" concept="5" trace="selectionState$zbc1" />
+      <node id="5714859726080600011" at="25,0,27,0" concept="5" trace="ourParametersCacheExtension" />
+      <node id="5714859726080600011" at="28,0,31,0" concept="0" trace="ConfigurationSolverBaseExtension_Test#()V" />
+      <node id="5714859726080600011" at="43,0,46,0" concept="0" trace="TestBody#(Ljetbrains/mps/lang/test/runtime/TransformationTest;)V" />
+      <node id="5714859726080677770" at="32,0,36,0" concept="2" trace="test_solverDeactivated#()V" />
+      <node id="5714859726083867490" at="36,0,40,0" concept="2" trace="test_disabledSettingValuesSolverDeactivated#()V" />
+      <node id="5714859726080600011" at="47,0,51,0" concept="2" trace="initTestNodes#()V" />
+      <node id="5714859726080715534" at="56,0,65,9" concept="8" />
+      <node id="5714859726083867674" at="73,0,83,9" concept="8" />
+      <node id="5714859726080677770" at="53,22,66,9" concept="1" />
+      <node id="5714859726083867490" at="69,22,84,9" concept="1" />
+      <node id="5714859726080677770" at="52,0,68,0" concept="2" trace="test_solverDeactivated#()V" />
+      <node id="5714859726083867490" at="68,0,86,0" concept="2" trace="test_disabledSettingValuesSolverDeactivated#()V" />
+      <scope id="5714859726080600011" at="28,50,29,60" />
+      <scope id="5714859726080677770" at="33,57,34,48" />
+      <scope id="5714859726083867490" at="37,78,38,69" />
+      <scope id="5714859726080600011" at="43,52,44,19" />
+      <scope id="5714859726080600011" at="48,36,49,46" />
+      <scope id="5714859726080715537" at="63,19,64,54" />
+      <scope id="5714859726083867729" at="80,19,82,54" />
+      <scope id="5714859726080600011" at="28,0,31,0" />
+      <scope id="5714859726080600011" at="43,0,46,0">
+        <var name="owner" id="5714859726080600011" />
+      </scope>
+      <scope id="5714859726080677770" at="32,0,36,0" />
+      <scope id="5714859726083867490" at="36,0,40,0" />
+      <scope id="5714859726080600011" at="47,0,51,0" />
+      <scope id="5714859726080715535" at="57,13,62,347">
+        <var name="errorMessage" id="5714859726080739696" />
+        <var name="result" id="5714859726080699331" />
+      </scope>
+      <scope id="5714859726083867675" at="74,13,79,347">
+        <var name="errorMessage" id="5714859726083867709" />
+        <var name="result" id="5714859726083867698" />
+      </scope>
+      <scope id="5714859726080677770" at="54,30,65,9" />
+      <scope id="5714859726083867490" at="70,30,83,9" />
+      <scope id="5714859726080677770" at="52,59,66,9" />
+      <scope id="5714859726080677770" at="52,0,68,0" />
+      <scope id="5714859726083867490" at="68,80,84,9" />
+      <scope id="5714859726083867490" at="68,0,86,0" />
+      <unit id="5714859726080600011" at="89,0,92,0" name="test.org.iets3.variability.configuration.base.solver_base.ConfigurationSolverBaseExtension_Test$PROPS" />
+      <unit id="5714859726080600011" at="41,0,88,0" name="test.org.iets3.variability.configuration.base.solver_base.ConfigurationSolverBaseExtension_Test$TestBody" />
+      <unit id="5714859726080600011" at="23,0,93,0" name="test.org.iets3.variability.configuration.base.solver_base.ConfigurationSolverBaseExtension_Test" />
+    </file>
+  </root>
+  <root nodeRef="r:e1114bf0-60d6-43ea-9d50-e7f4a71ca6c3(test.org.iets3.variability.configuration.base.solver_base@tests)/8750105304767845035">
+    <file name="ConfigurationSolverTaskFactoryExtension_Test.java">
+      <node id="8750105304767845035" at="27,57,28,60" concept="7" />
+      <node id="3966824520575574480" at="32,70,33,61" concept="1" />
+      <node id="8750105304767914278" at="37,36,38,64" concept="1" />
+      <node id="8750105304768005777" at="42,35,43,48" concept="1" />
+      <node id="8750105304767845035" at="48,52,49,19" concept="7" />
+      <node id="8750105304767845035" at="53,36,54,46" concept="1" />
+      <node id="3966824520575574480" at="57,72,58,22" concept="1" />
+      <node id="3966824520575574484" at="59,30,60,112" concept="3" />
+      <node id="6000834571627826058" at="60,112,61,67" concept="1" />
+      <node id="6000834571627810969" at="65,60,66,74" concept="1" />
+      <node id="6000834571627810974" at="66,74,67,88" concept="1" />
+      <node id="6000834571627810981" at="67,88,68,62" concept="3" />
+      <node id="6000834571627810989" at="68,62,69,71" concept="1" />
+      <node id="8750105304767845035" at="24,0,26,0" concept="5" trace="ourParametersCacheExtension" />
+      <node id="8750105304767845035" at="27,0,30,0" concept="0" trace="ConfigurationSolverTaskFactoryExtension_Test#()V" />
+      <node id="8750105304767845035" at="48,0,51,0" concept="0" trace="TestBody#(Ljetbrains/mps/lang/test/runtime/TransformationTest;)V" />
+      <node id="3966824520575574480" at="31,0,35,0" concept="2" trace="test_DummSolverTaskForConfiguration#()V" />
+      <node id="8750105304767845035" at="36,0,40,0" concept="6" trace="beforeTests#()V" />
+      <node id="8750105304767845035" at="41,0,45,0" concept="6" trace="afterTests#()V" />
+      <node id="8750105304767845035" at="52,0,56,0" concept="2" trace="initTestNodes#()V" />
+      <node id="3966824520575574480" at="58,22,62,9" concept="1" />
+      <node id="6000834571627811004" at="65,0,71,0" concept="2" trace="assertions#(Lorg/iets3/core/base/behavior/IResult;Lorg/jetbrains/mps/openapi/model/SNode;)V" />
+      <node id="3966824520575574480" at="57,0,64,0" concept="2" trace="test_DummSolverTaskForConfiguration#()V" />
+      <scope id="8750105304767845035" at="27,57,28,60" />
+      <scope id="3966824520575574480" at="32,70,33,61" />
+      <scope id="8750105304767845035" at="37,36,38,64" />
+      <scope id="8750105304767845035" at="42,35,43,48" />
+      <scope id="8750105304767845035" at="48,52,49,19" />
+      <scope id="8750105304767845035" at="53,36,54,46" />
+      <scope id="3966824520575574480" at="59,30,61,67">
+        <var name="result" id="3966824520575574485" />
+      </scope>
+      <scope id="8750105304767845035" at="27,0,30,0" />
+      <scope id="8750105304767845035" at="48,0,51,0">
+        <var name="owner" id="8750105304767845035" />
+      </scope>
+      <scope id="3966824520575574480" at="31,0,35,0" />
+      <scope id="8750105304767845035" at="36,0,40,0" />
+      <scope id="8750105304767845035" at="41,0,45,0" />
+      <scope id="8750105304767845035" at="52,0,56,0" />
+      <scope id="6000834571627811004" at="65,60,69,71">
+        <var name="errorMessage" id="6000834571627810982" />
+      </scope>
+      <scope id="3966824520575574480" at="57,72,62,9" />
+      <scope id="6000834571627811004" at="65,0,71,0">
+        <var name="result" id="6000834571627810994" />
+        <var name="solvable" id="6000834571627810996" />
+      </scope>
+      <scope id="3966824520575574480" at="57,0,64,0" />
+      <unit id="8750105304767845035" at="46,0,72,0" name="test.org.iets3.variability.configuration.base.solver_base.ConfigurationSolverTaskFactoryExtension_Test$TestBody" />
+      <unit id="8750105304767845035" at="22,0,73,0" name="test.org.iets3.variability.configuration.base.solver_base.ConfigurationSolverTaskFactoryExtension_Test" />
+    </file>
+  </root>
+</debug-info>
+

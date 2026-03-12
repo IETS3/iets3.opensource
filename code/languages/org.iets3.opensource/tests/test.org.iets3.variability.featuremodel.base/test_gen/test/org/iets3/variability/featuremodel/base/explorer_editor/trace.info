@@ -1,0 +1,301 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<debug-info version="2">
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123140:jetbrains.mps.baseLanguage.structure.ConstructorDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123155:jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123165:jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1070462154015:jetbrains.mps.baseLanguage.structure.StaticFieldDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1070475587102:jetbrains.mps.baseLanguage.structure.SuperConstructorInvocation" />
+  <root nodeRef="r:d2bd6af7-6678-4c64-aff7-d5716225d331(test.org.iets3.variability.featuremodel.base.explorer_editor@tests)/2345005976969363169">
+    <file name="Node_FeatureShape_Test.java">
+      <node id="2345005976969363169" at="21,35,22,60" concept="4" />
+      <node id="2345005976969363278" at="26,48,27,39" concept="1" />
+      <node id="2345005976969378560" at="30,48,31,39" concept="1" />
+      <node id="2345005976969363169" at="36,52,37,19" concept="4" />
+      <node id="2345005976969363169" at="41,36,42,46" concept="1" />
+      <node id="2345005976969363278" at="45,50,46,22" concept="1" />
+      <node id="2345005976969363704" at="47,30,48,108" concept="1" />
+      <node id="2345005976969378850" at="48,108,49,116" concept="1" />
+      <node id="2345005976969371052" at="49,116,50,117" concept="1" />
+      <node id="2345005976969367890" at="50,117,51,104" concept="1" />
+      <node id="2345005976969371130" at="51,104,52,106" concept="1" />
+      <node id="2345005976969378560" at="55,50,56,22" concept="1" />
+      <node id="2345005976969380781" at="57,30,58,107" concept="1" />
+      <node id="2345005976969380353" at="58,107,59,116" concept="1" />
+      <node id="2345005976969380835" at="59,116,60,118" concept="1" />
+      <node id="2345005976969363169" at="18,0,20,0" concept="3" trace="ourParametersCacheExtension" />
+      <node id="2345005976969363169" at="21,0,24,0" concept="0" trace="Node_FeatureShape_Test#()V" />
+      <node id="2345005976969363169" at="36,0,39,0" concept="0" trace="TestBody#(Ljetbrains/mps/lang/test/runtime/TransformationTest;)V" />
+      <node id="2345005976969363278" at="25,0,29,0" concept="2" trace="test_EdgeType#()V" />
+      <node id="2345005976969378560" at="29,0,33,0" concept="2" trace="test_NodeType#()V" />
+      <node id="2345005976969363169" at="40,0,44,0" concept="2" trace="initTestNodes#()V" />
+      <node id="2345005976969378560" at="56,22,61,9" concept="1" />
+      <node id="2345005976969363278" at="46,22,53,9" concept="1" />
+      <node id="2345005976969378560" at="55,0,63,0" concept="2" trace="test_NodeType#()V" />
+      <node id="2345005976969363278" at="45,0,55,0" concept="2" trace="test_EdgeType#()V" />
+      <scope id="2345005976969363169" at="21,35,22,60" />
+      <scope id="2345005976969363278" at="26,48,27,39" />
+      <scope id="2345005976969378560" at="30,48,31,39" />
+      <scope id="2345005976969363169" at="36,52,37,19" />
+      <scope id="2345005976969363169" at="41,36,42,46" />
+      <scope id="2345005976969363169" at="21,0,24,0" />
+      <scope id="2345005976969363169" at="36,0,39,0">
+        <var name="owner" id="2345005976969363169" />
+      </scope>
+      <scope id="2345005976969378560" at="57,30,60,118" />
+      <scope id="2345005976969363278" at="25,0,29,0" />
+      <scope id="2345005976969378560" at="29,0,33,0" />
+      <scope id="2345005976969363169" at="40,0,44,0" />
+      <scope id="2345005976969363278" at="47,30,52,106" />
+      <scope id="2345005976969378560" at="55,50,61,9" />
+      <scope id="2345005976969363278" at="45,50,53,9" />
+      <scope id="2345005976969378560" at="55,0,63,0" />
+      <scope id="2345005976969363278" at="45,0,55,0" />
+      <unit id="2345005976969363169" at="34,0,65,0" name="test.org.iets3.variability.featuremodel.base.explorer_editor.Node_FeatureShape_Test$TestBody" />
+      <unit id="2345005976969363169" at="16,0,66,0" name="test.org.iets3.variability.featuremodel.base.explorer_editor.Node_FeatureShape_Test" />
+    </file>
+  </root>
+  <root nodeRef="r:d2bd6af7-6678-4c64-aff7-d5716225d331(test.org.iets3.variability.featuremodel.base.explorer_editor@tests)/396675376928401947">
+    <file name="Edit_IntentionTreeLayoutToExplorer_Test.java">
+      <node id="396675376928401947" at="20,52,21,60" concept="4" />
+      <node id="396675376928401947" at="25,74,26,36" concept="1" />
+      <node id="396675376928401947" at="31,52,32,19" concept="4" />
+      <node id="396675376928401947" at="36,51,37,70" concept="1" />
+      <node id="8463347447850889228" at="37,70,38,149" concept="1" />
+      <node id="8463347447850889905" at="38,149,39,149" concept="1" />
+      <node id="8463347447850890360" at="39,149,40,152" concept="1" />
+      <node id="396675376928402409" at="40,152,41,124" concept="1" />
+      <node id="396675376928401947" at="17,0,19,0" concept="3" trace="ourParametersCacheExtension" />
+      <node id="396675376928401947" at="20,0,23,0" concept="0" trace="Edit_IntentionTreeLayoutToExplorer_Test#()V" />
+      <node id="396675376928401947" at="31,0,34,0" concept="0" trace="TestBody#(Ljetbrains/mps/lang/test/runtime/TransformationTest;)V" />
+      <node id="396675376928401947" at="24,0,28,0" concept="2" trace="test_Edit_IntentionTreeLayoutToExplorer#()V" />
+      <node id="396675376928401947" at="35,0,43,0" concept="2" trace="testMethodImpl#()V" />
+      <scope id="396675376928401947" at="20,52,21,60" />
+      <scope id="396675376928401947" at="25,74,26,36" />
+      <scope id="396675376928401947" at="31,52,32,19" />
+      <scope id="396675376928401947" at="20,0,23,0" />
+      <scope id="396675376928401947" at="31,0,34,0">
+        <var name="owner" id="396675376928401947" />
+      </scope>
+      <scope id="396675376928401947" at="24,0,28,0" />
+      <scope id="396675376928401947" at="36,51,41,124" />
+      <scope id="396675376928401947" at="35,0,43,0" />
+      <unit id="396675376928401947" at="29,0,44,0" name="test.org.iets3.variability.featuremodel.base.explorer_editor.Edit_IntentionTreeLayoutToExplorer_Test$TestBody" />
+      <unit id="396675376928401947" at="15,0,45,0" name="test.org.iets3.variability.featuremodel.base.explorer_editor.Edit_IntentionTreeLayoutToExplorer_Test" />
+    </file>
+  </root>
+  <root nodeRef="r:d2bd6af7-6678-4c64-aff7-d5716225d331(test.org.iets3.variability.featuremodel.base.explorer_editor@tests)/396675376928407947">
+    <file name="Edit_MoveNodeDownUsingAltDown_Test.java">
+      <node id="396675376928407947" at="21,47,22,60" concept="4" />
+      <node id="396675376928407947" at="26,69,27,36" concept="1" />
+      <node id="396675376928407947" at="32,52,33,19" concept="4" />
+      <node id="396675376928407947" at="37,51,38,72" concept="1" />
+      <node id="396675376928408435" at="38,72,39,84" concept="1" />
+      <node id="396675376928407947" at="18,0,20,0" concept="3" trace="ourParametersCacheExtension" />
+      <node id="396675376928407947" at="21,0,24,0" concept="0" trace="Edit_MoveNodeDownUsingAltDown_Test#()V" />
+      <node id="396675376928407947" at="32,0,35,0" concept="0" trace="TestBody#(Ljetbrains/mps/lang/test/runtime/TransformationTest;)V" />
+      <node id="396675376928407947" at="25,0,29,0" concept="2" trace="test_Edit_MoveNodeDownUsingAltDown#()V" />
+      <node id="396675376928407947" at="36,0,41,0" concept="2" trace="testMethodImpl#()V" />
+      <scope id="396675376928407947" at="21,47,22,60" />
+      <scope id="396675376928407947" at="26,69,27,36" />
+      <scope id="396675376928407947" at="32,52,33,19" />
+      <scope id="396675376928407947" at="37,51,39,84" />
+      <scope id="396675376928407947" at="21,0,24,0" />
+      <scope id="396675376928407947" at="32,0,35,0">
+        <var name="owner" id="396675376928407947" />
+      </scope>
+      <scope id="396675376928407947" at="25,0,29,0" />
+      <scope id="396675376928407947" at="36,0,41,0" />
+      <unit id="396675376928407947" at="30,0,42,0" name="test.org.iets3.variability.featuremodel.base.explorer_editor.Edit_MoveNodeDownUsingAltDown_Test$TestBody" />
+      <unit id="396675376928407947" at="16,0,43,0" name="test.org.iets3.variability.featuremodel.base.explorer_editor.Edit_MoveNodeDownUsingAltDown_Test" />
+    </file>
+  </root>
+  <root nodeRef="r:d2bd6af7-6678-4c64-aff7-d5716225d331(test.org.iets3.variability.featuremodel.base.explorer_editor@tests)/396675376928410945">
+    <file name="Edit_MoveNodeUpUsingAltUp_Test.java">
+      <node id="396675376928410945" at="21,43,22,60" concept="4" />
+      <node id="396675376928410945" at="26,65,27,36" concept="1" />
+      <node id="396675376928410945" at="32,52,33,19" concept="4" />
+      <node id="396675376928410945" at="37,51,38,72" concept="1" />
+      <node id="396675376928410957" at="38,72,39,82" concept="1" />
+      <node id="396675376928410945" at="18,0,20,0" concept="3" trace="ourParametersCacheExtension" />
+      <node id="396675376928410945" at="21,0,24,0" concept="0" trace="Edit_MoveNodeUpUsingAltUp_Test#()V" />
+      <node id="396675376928410945" at="32,0,35,0" concept="0" trace="TestBody#(Ljetbrains/mps/lang/test/runtime/TransformationTest;)V" />
+      <node id="396675376928410945" at="25,0,29,0" concept="2" trace="test_Edit_MoveNodeUpUsingAltUp#()V" />
+      <node id="396675376928410945" at="36,0,41,0" concept="2" trace="testMethodImpl#()V" />
+      <scope id="396675376928410945" at="21,43,22,60" />
+      <scope id="396675376928410945" at="26,65,27,36" />
+      <scope id="396675376928410945" at="32,52,33,19" />
+      <scope id="396675376928410945" at="37,51,39,82" />
+      <scope id="396675376928410945" at="21,0,24,0" />
+      <scope id="396675376928410945" at="32,0,35,0">
+        <var name="owner" id="396675376928410945" />
+      </scope>
+      <scope id="396675376928410945" at="25,0,29,0" />
+      <scope id="396675376928410945" at="36,0,41,0" />
+      <unit id="396675376928410945" at="30,0,42,0" name="test.org.iets3.variability.featuremodel.base.explorer_editor.Edit_MoveNodeUpUsingAltUp_Test$TestBody" />
+      <unit id="396675376928410945" at="16,0,43,0" name="test.org.iets3.variability.featuremodel.base.explorer_editor.Edit_MoveNodeUpUsingAltUp_Test" />
+    </file>
+  </root>
+  <root nodeRef="r:d2bd6af7-6678-4c64-aff7-d5716225d331(test.org.iets3.variability.featuremodel.base.explorer_editor@tests)/6453031625328826597">
+    <file name="Edit_IndentUsingTabKey_Test.java">
+      <node id="6453031625328826597" at="21,40,22,60" concept="4" />
+      <node id="6453031625328826597" at="26,62,27,36" concept="1" />
+      <node id="6453031625328826597" at="32,52,33,19" concept="4" />
+      <node id="6453031625328826597" at="37,51,38,72" concept="1" />
+      <node id="9090092149027933578" at="38,72,39,80" concept="1" />
+      <node id="6453031625328826597" at="18,0,20,0" concept="3" trace="ourParametersCacheExtension" />
+      <node id="6453031625328826597" at="21,0,24,0" concept="0" trace="Edit_IndentUsingTabKey_Test#()V" />
+      <node id="6453031625328826597" at="32,0,35,0" concept="0" trace="TestBody#(Ljetbrains/mps/lang/test/runtime/TransformationTest;)V" />
+      <node id="6453031625328826597" at="25,0,29,0" concept="2" trace="test_Edit_IndentUsingTabKey#()V" />
+      <node id="6453031625328826597" at="36,0,41,0" concept="2" trace="testMethodImpl#()V" />
+      <scope id="6453031625328826597" at="21,40,22,60" />
+      <scope id="6453031625328826597" at="26,62,27,36" />
+      <scope id="6453031625328826597" at="32,52,33,19" />
+      <scope id="6453031625328826597" at="37,51,39,80" />
+      <scope id="6453031625328826597" at="21,0,24,0" />
+      <scope id="6453031625328826597" at="32,0,35,0">
+        <var name="owner" id="6453031625328826597" />
+      </scope>
+      <scope id="6453031625328826597" at="25,0,29,0" />
+      <scope id="6453031625328826597" at="36,0,41,0" />
+      <unit id="6453031625328826597" at="30,0,42,0" name="test.org.iets3.variability.featuremodel.base.explorer_editor.Edit_IndentUsingTabKey_Test$TestBody" />
+      <unit id="6453031625328826597" at="16,0,43,0" name="test.org.iets3.variability.featuremodel.base.explorer_editor.Edit_IndentUsingTabKey_Test" />
+    </file>
+  </root>
+  <root nodeRef="r:d2bd6af7-6678-4c64-aff7-d5716225d331(test.org.iets3.variability.featuremodel.base.explorer_editor@tests)/6453031625336666048">
+    <file name="Edit_UnindentUsingShiftTabKey_Test.java">
+      <node id="6453031625336666048" at="21,47,22,60" concept="4" />
+      <node id="6453031625336666048" at="26,69,27,36" concept="1" />
+      <node id="6453031625336666048" at="32,52,33,19" concept="4" />
+      <node id="6453031625336666048" at="37,51,38,72" concept="1" />
+      <node id="6453031625336666060" at="38,72,39,85" concept="1" />
+      <node id="6453031625336666048" at="18,0,20,0" concept="3" trace="ourParametersCacheExtension" />
+      <node id="6453031625336666048" at="21,0,24,0" concept="0" trace="Edit_UnindentUsingShiftTabKey_Test#()V" />
+      <node id="6453031625336666048" at="32,0,35,0" concept="0" trace="TestBody#(Ljetbrains/mps/lang/test/runtime/TransformationTest;)V" />
+      <node id="6453031625336666048" at="25,0,29,0" concept="2" trace="test_Edit_UnindentUsingShiftTabKey#()V" />
+      <node id="6453031625336666048" at="36,0,41,0" concept="2" trace="testMethodImpl#()V" />
+      <scope id="6453031625336666048" at="21,47,22,60" />
+      <scope id="6453031625336666048" at="26,69,27,36" />
+      <scope id="6453031625336666048" at="32,52,33,19" />
+      <scope id="6453031625336666048" at="37,51,39,85" />
+      <scope id="6453031625336666048" at="21,0,24,0" />
+      <scope id="6453031625336666048" at="32,0,35,0">
+        <var name="owner" id="6453031625336666048" />
+      </scope>
+      <scope id="6453031625336666048" at="25,0,29,0" />
+      <scope id="6453031625336666048" at="36,0,41,0" />
+      <unit id="6453031625336666048" at="30,0,42,0" name="test.org.iets3.variability.featuremodel.base.explorer_editor.Edit_UnindentUsingShiftTabKey_Test$TestBody" />
+      <unit id="6453031625336666048" at="16,0,43,0" name="test.org.iets3.variability.featuremodel.base.explorer_editor.Edit_UnindentUsingShiftTabKey_Test" />
+    </file>
+  </root>
+  <root nodeRef="r:d2bd6af7-6678-4c64-aff7-d5716225d331(test.org.iets3.variability.featuremodel.base.explorer_editor@tests)/6960125930948432425">
+    <file name="Edit_TransformToInclude_Test.java">
+      <node id="6960125930948432425" at="19,41,20,60" concept="4" />
+      <node id="6960125930948432425" at="24,63,25,36" concept="1" />
+      <node id="6960125930948432425" at="30,52,31,19" concept="4" />
+      <node id="6960125930948432425" at="35,51,36,72" concept="1" />
+      <node id="6960125930948445750" at="36,72,37,22" concept="1" />
+      <node id="6960125930948432425" at="16,0,18,0" concept="3" trace="ourParametersCacheExtension" />
+      <node id="6960125930948432425" at="19,0,22,0" concept="0" trace="Edit_TransformToInclude_Test#()V" />
+      <node id="6960125930948432425" at="30,0,33,0" concept="0" trace="TestBody#(Ljetbrains/mps/lang/test/runtime/TransformationTest;)V" />
+      <node id="6960125930948432425" at="23,0,27,0" concept="2" trace="test_Edit_TransformToInclude#()V" />
+      <node id="6960125930948432425" at="34,0,39,0" concept="2" trace="testMethodImpl#()V" />
+      <scope id="6960125930948432425" at="19,41,20,60" />
+      <scope id="6960125930948432425" at="24,63,25,36" />
+      <scope id="6960125930948432425" at="30,52,31,19" />
+      <scope id="6960125930948432425" at="35,51,37,22" />
+      <scope id="6960125930948432425" at="19,0,22,0" />
+      <scope id="6960125930948432425" at="30,0,33,0">
+        <var name="owner" id="6960125930948432425" />
+      </scope>
+      <scope id="6960125930948432425" at="23,0,27,0" />
+      <scope id="6960125930948432425" at="34,0,39,0" />
+      <unit id="6960125930948432425" at="28,0,40,0" name="test.org.iets3.variability.featuremodel.base.explorer_editor.Edit_TransformToInclude_Test$TestBody" />
+      <unit id="6960125930948432425" at="14,0,41,0" name="test.org.iets3.variability.featuremodel.base.explorer_editor.Edit_TransformToInclude_Test" />
+    </file>
+  </root>
+  <root nodeRef="r:d2bd6af7-6678-4c64-aff7-d5716225d331(test.org.iets3.variability.featuremodel.base.explorer_editor@tests)/8463347447850894610">
+    <file name="Edit_IntentionTreeLayoutToVertical_Test.java">
+      <node id="8463347447850894610" at="20,52,21,60" concept="4" />
+      <node id="8463347447850894610" at="25,74,26,36" concept="1" />
+      <node id="8463347447850894610" at="31,52,32,19" concept="4" />
+      <node id="8463347447850894610" at="36,51,37,72" concept="1" />
+      <node id="8463347447850894618" at="37,72,38,149" concept="1" />
+      <node id="8463347447850894620" at="38,149,39,149" concept="1" />
+      <node id="8463347447850894622" at="39,149,40,152" concept="1" />
+      <node id="8463347447850894624" at="40,152,41,124" concept="1" />
+      <node id="8463347447850894610" at="17,0,19,0" concept="3" trace="ourParametersCacheExtension" />
+      <node id="8463347447850894610" at="20,0,23,0" concept="0" trace="Edit_IntentionTreeLayoutToVertical_Test#()V" />
+      <node id="8463347447850894610" at="31,0,34,0" concept="0" trace="TestBody#(Ljetbrains/mps/lang/test/runtime/TransformationTest;)V" />
+      <node id="8463347447850894610" at="24,0,28,0" concept="2" trace="test_Edit_IntentionTreeLayoutToVertical#()V" />
+      <node id="8463347447850894610" at="35,0,43,0" concept="2" trace="testMethodImpl#()V" />
+      <scope id="8463347447850894610" at="20,52,21,60" />
+      <scope id="8463347447850894610" at="25,74,26,36" />
+      <scope id="8463347447850894610" at="31,52,32,19" />
+      <scope id="8463347447850894610" at="20,0,23,0" />
+      <scope id="8463347447850894610" at="31,0,34,0">
+        <var name="owner" id="8463347447850894610" />
+      </scope>
+      <scope id="8463347447850894610" at="24,0,28,0" />
+      <scope id="8463347447850894610" at="36,51,41,124" />
+      <scope id="8463347447850894610" at="35,0,43,0" />
+      <unit id="8463347447850894610" at="29,0,44,0" name="test.org.iets3.variability.featuremodel.base.explorer_editor.Edit_IntentionTreeLayoutToVertical_Test$TestBody" />
+      <unit id="8463347447850894610" at="15,0,45,0" name="test.org.iets3.variability.featuremodel.base.explorer_editor.Edit_IntentionTreeLayoutToVertical_Test" />
+    </file>
+  </root>
+  <root nodeRef="r:d2bd6af7-6678-4c64-aff7-d5716225d331(test.org.iets3.variability.featuremodel.base.explorer_editor@tests)/8463347447850894634">
+    <file name="Edit_IntentionTreeLayoutToHorizontal_Test.java">
+      <node id="8463347447850894634" at="20,54,21,60" concept="4" />
+      <node id="8463347447850894634" at="25,76,26,36" concept="1" />
+      <node id="8463347447850894634" at="31,52,32,19" concept="4" />
+      <node id="8463347447850894634" at="36,51,37,72" concept="1" />
+      <node id="8463347447850894642" at="37,72,38,149" concept="1" />
+      <node id="8463347447850894644" at="38,149,39,151" concept="1" />
+      <node id="8463347447850894646" at="39,151,40,150" concept="1" />
+      <node id="8463347447850894648" at="40,150,41,126" concept="1" />
+      <node id="8463347447850894634" at="17,0,19,0" concept="3" trace="ourParametersCacheExtension" />
+      <node id="8463347447850894634" at="20,0,23,0" concept="0" trace="Edit_IntentionTreeLayoutToHorizontal_Test#()V" />
+      <node id="8463347447850894634" at="31,0,34,0" concept="0" trace="TestBody#(Ljetbrains/mps/lang/test/runtime/TransformationTest;)V" />
+      <node id="8463347447850894634" at="24,0,28,0" concept="2" trace="test_Edit_IntentionTreeLayoutToHorizontal#()V" />
+      <node id="8463347447850894634" at="35,0,43,0" concept="2" trace="testMethodImpl#()V" />
+      <scope id="8463347447850894634" at="20,54,21,60" />
+      <scope id="8463347447850894634" at="25,76,26,36" />
+      <scope id="8463347447850894634" at="31,52,32,19" />
+      <scope id="8463347447850894634" at="20,0,23,0" />
+      <scope id="8463347447850894634" at="31,0,34,0">
+        <var name="owner" id="8463347447850894634" />
+      </scope>
+      <scope id="8463347447850894634" at="24,0,28,0" />
+      <scope id="8463347447850894634" at="36,51,41,126" />
+      <scope id="8463347447850894634" at="35,0,43,0" />
+      <unit id="8463347447850894634" at="29,0,44,0" name="test.org.iets3.variability.featuremodel.base.explorer_editor.Edit_IntentionTreeLayoutToHorizontal_Test$TestBody" />
+      <unit id="8463347447850894634" at="15,0,45,0" name="test.org.iets3.variability.featuremodel.base.explorer_editor.Edit_IntentionTreeLayoutToHorizontal_Test" />
+    </file>
+  </root>
+  <root nodeRef="r:d2bd6af7-6678-4c64-aff7-d5716225d331(test.org.iets3.variability.featuremodel.base.explorer_editor@tests)/9090092149027911856">
+    <file name="Edit_DoNothing_UponTab_Test.java">
+      <node id="9090092149027911856" at="21,40,22,60" concept="4" />
+      <node id="9090092149027911856" at="26,62,27,36" concept="1" />
+      <node id="9090092149027911856" at="32,52,33,19" concept="4" />
+      <node id="9090092149027911856" at="37,51,38,72" concept="1" />
+      <node id="9090092149027915991" at="38,72,39,80" concept="1" />
+      <node id="9090092149027911856" at="18,0,20,0" concept="3" trace="ourParametersCacheExtension" />
+      <node id="9090092149027911856" at="21,0,24,0" concept="0" trace="Edit_DoNothing_UponTab_Test#()V" />
+      <node id="9090092149027911856" at="32,0,35,0" concept="0" trace="TestBody#(Ljetbrains/mps/lang/test/runtime/TransformationTest;)V" />
+      <node id="9090092149027911856" at="25,0,29,0" concept="2" trace="test_Edit_DoNothing_UponTab#()V" />
+      <node id="9090092149027911856" at="36,0,41,0" concept="2" trace="testMethodImpl#()V" />
+      <scope id="9090092149027911856" at="21,40,22,60" />
+      <scope id="9090092149027911856" at="26,62,27,36" />
+      <scope id="9090092149027911856" at="32,52,33,19" />
+      <scope id="9090092149027911856" at="37,51,39,80" />
+      <scope id="9090092149027911856" at="21,0,24,0" />
+      <scope id="9090092149027911856" at="32,0,35,0">
+        <var name="owner" id="9090092149027911856" />
+      </scope>
+      <scope id="9090092149027911856" at="25,0,29,0" />
+      <scope id="9090092149027911856" at="36,0,41,0" />
+      <unit id="9090092149027911856" at="30,0,42,0" name="test.org.iets3.variability.featuremodel.base.explorer_editor.Edit_DoNothing_UponTab_Test$TestBody" />
+      <unit id="9090092149027911856" at="16,0,43,0" name="test.org.iets3.variability.featuremodel.base.explorer_editor.Edit_DoNothing_UponTab_Test" />
+    </file>
+  </root>
+</debug-info>
+
