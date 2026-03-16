@@ -70,7 +70,7 @@ public final class RunKernelFGeneratedTests__BehaviorDescriptor extends BaseBHDe
     builder.addWithTag(gentestsLayoutNode, gentestsRtSolutionName);
   }
   /*package*/ static String findGentestsRt_id6Fs_Z9I$_5v(@NotNull SNode __thisNode__, TemplateQueryContext genContext) {
-    // s. javadoc of '''DotExpression'''  for token explanation
+    // s. javadoc of '''new  FetchDependenciesProcessor().alternativeProcess()'''  for token explanation
     DependenciesHelper helper = DependenciesHelper.get(genContext, SNodeOperations.cast(SNodeOperations.getContainingRoot(__thisNode__), CONCEPTS.BuildProject$ae), "build.mps");
     String artifact = RunKernelFGeneratedTests__BehaviorDescriptor.getGentestsRtSolutionName_id6Fs_Z9I$Bez.invokeSpecial(__thisNode__);
 
