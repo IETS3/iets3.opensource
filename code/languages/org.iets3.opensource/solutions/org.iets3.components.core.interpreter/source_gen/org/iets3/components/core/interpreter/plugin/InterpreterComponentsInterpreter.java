@@ -51,7 +51,7 @@ public class InterpreterComponentsInterpreter extends InterpreterBase {
         }
       }
       public EvaluatorInfo getInfo() {
-        return new EvaluatorInfo("ParamRef", "http://127.0.0.1:63320/node?ref=8d825b77-7c8a-49c1-9a85-7d82d70df168%2Fi%3A10000001%28org.iets3.components.core.interpreter%40transient140%2Forg.iets3.components.core.interpreter.plugin%400%29%2F5228096169281078964");
+        return new EvaluatorInfo("ParamRef", "http://127.0.0.1:63320/node?ref=d2964e05-3f59-46fa-a051-2ed3f34b7dda%2Fi%3A10000001%28org.iets3.components.core.interpreter%40transient141%2Forg.iets3.components.core.interpreter.plugin%400%29%2F5228096169281078964");
       }
 
       @Override

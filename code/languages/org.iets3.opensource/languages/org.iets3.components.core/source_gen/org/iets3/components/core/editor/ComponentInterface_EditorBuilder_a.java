@@ -70,7 +70,7 @@ import org.jetbrains.mps.openapi.language.SInterfaceConcept;
     editorCell.addEditorCell(createCustom_1());
     editorCell.addEditorCell(createCollection_2());
     editorCell.addEditorCell(createCustom_2());
-    editorCell.addEditorCell(createHorizontalLineCell_15());
+    editorCell.addEditorCell(createHorizontalLineCell_7());
     editorCell.addEditorCell(createCustom_3());
     return editorCell;
   }
@@ -83,22 +83,19 @@ import org.jetbrains.mps.openapi.language.SInterfaceConcept;
   private EditorCell createCollection_1() {
     EditorCell_Collection editorCell = new EditorCell_Collection(getEditorContext(), myNode, new CellLayout_Indent());
     editorCell.setCellId("Collection_ko319k_b0");
-    editorCell.addEditorCell(createHorizontalLineCell_1());
+    editorCell.addEditorCell(createHorizontalLineCell_0());
     editorCell.addEditorCell(createConstant_0());
-    editorCell.addEditorCell(createHorizontalLineCell_3());
+    editorCell.addEditorCell(createHorizontalLineCell_1());
     return editorCell;
   }
-  private EditorCell createHorizontalLineCell_0(EditorContext editorContext, SNode node) {
-    HorizontalLineCell editorCell = new HorizontalLineCell(editorContext, node);
+  private EditorCell createHorizontalLineCell_0() {
+    HorizontalLineCell editorCell = new HorizontalLineCell(getEditorContext(), getNode());
     editorCell.setCellId("HorizontalLineCell_ko319k_a1a");
     Style style = new StyleImpl();
     style.set(StyleAttributes.getInstance().<Color>getAttribute("de.itemis.mps.editor.celllayout.styles", "_horizontal-line-color"), getStyleRegistry().getSimpleColor(MPSColors.gray));
     style.set(StyleAttributes.getInstance().<Integer>getAttribute("de.itemis.mps.editor.celllayout.styles", "_horizontal-line-width"), 2);
     editorCell.getStyle().putAll(style);
     return editorCell;
-  }
-  private EditorCell createHorizontalLineCell_1() {
-    return createHorizontalLineCell_0(getEditorContext(), myNode);
   }
   private EditorCell createConstant_0() {
     EditorCell_Constant editorCell = new EditorCell_Constant(getEditorContext(), myNode, "component interface");
@@ -109,17 +106,14 @@ import org.jetbrains.mps.openapi.language.SInterfaceConcept;
     editorCell.setDefaultText("");
     return editorCell;
   }
-  private EditorCell createHorizontalLineCell_2(EditorContext editorContext, SNode node) {
-    HorizontalLineCell editorCell = new HorizontalLineCell(editorContext, node);
+  private EditorCell createHorizontalLineCell_1() {
+    HorizontalLineCell editorCell = new HorizontalLineCell(getEditorContext(), getNode());
     editorCell.setCellId("HorizontalLineCell_ko319k_c1a");
     Style style = new StyleImpl();
     style.set(StyleAttributes.getInstance().<Color>getAttribute("de.itemis.mps.editor.celllayout.styles", "_horizontal-line-color"), getStyleRegistry().getSimpleColor(MPSColors.gray));
     style.set(StyleAttributes.getInstance().<Integer>getAttribute("de.itemis.mps.editor.celllayout.styles", "_horizontal-line-width"), 2);
     editorCell.getStyle().putAll(style);
     return editorCell;
-  }
-  private EditorCell createHorizontalLineCell_3() {
-    return createHorizontalLineCell_2(getEditorContext(), myNode);
   }
   private EditorCell createCustom_1() {
     AbstractCellProvider provider = ((_FunctionTypes._return_P0_E0<VerticalWhitespaceCell>) () -> new VerticalWhitespaceCell(myNode, 10)).invoke();
@@ -146,22 +140,19 @@ import org.jetbrains.mps.openapi.language.SInterfaceConcept;
   private EditorCell createCollection_4() {
     EditorCell_Collection editorCell = new EditorCell_Collection(getEditorContext(), myNode, new CellLayout_Indent());
     editorCell.setCellId("Collection_ko319k_a0d0");
-    editorCell.addEditorCell(createHorizontalLineCell_5());
+    editorCell.addEditorCell(createHorizontalLineCell_2());
     editorCell.addEditorCell(createConstant_1());
-    editorCell.addEditorCell(createHorizontalLineCell_7());
+    editorCell.addEditorCell(createHorizontalLineCell_3());
     return editorCell;
   }
-  private EditorCell createHorizontalLineCell_4(EditorContext editorContext, SNode node) {
-    HorizontalLineCell editorCell = new HorizontalLineCell(editorContext, node);
+  private EditorCell createHorizontalLineCell_2() {
+    HorizontalLineCell editorCell = new HorizontalLineCell(getEditorContext(), getNode());
     editorCell.setCellId("HorizontalLineCell_ko319k_a0a3a");
     Style style = new StyleImpl();
     style.set(StyleAttributes.getInstance().<Color>getAttribute("de.itemis.mps.editor.celllayout.styles", "_horizontal-line-color"), getStyleRegistry().getSimpleColor(MPSColors.gray));
     style.set(StyleAttributes.getInstance().<Integer>getAttribute("de.itemis.mps.editor.celllayout.styles", "_horizontal-line-width"), 2);
     editorCell.getStyle().putAll(style);
     return editorCell;
-  }
-  private EditorCell createHorizontalLineCell_5() {
-    return createHorizontalLineCell_4(getEditorContext(), myNode);
   }
   private EditorCell createConstant_1() {
     EditorCell_Constant editorCell = new EditorCell_Constant(getEditorContext(), myNode, "parameter");
@@ -172,17 +163,14 @@ import org.jetbrains.mps.openapi.language.SInterfaceConcept;
     editorCell.setDefaultText("");
     return editorCell;
   }
-  private EditorCell createHorizontalLineCell_6(EditorContext editorContext, SNode node) {
-    HorizontalLineCell editorCell = new HorizontalLineCell(editorContext, node);
+  private EditorCell createHorizontalLineCell_3() {
+    HorizontalLineCell editorCell = new HorizontalLineCell(getEditorContext(), getNode());
     editorCell.setCellId("HorizontalLineCell_ko319k_c0a3a");
     Style style = new StyleImpl();
     style.set(StyleAttributes.getInstance().<Color>getAttribute("de.itemis.mps.editor.celllayout.styles", "_horizontal-line-color"), getStyleRegistry().getSimpleColor(MPSColors.gray));
     style.set(StyleAttributes.getInstance().<Integer>getAttribute("de.itemis.mps.editor.celllayout.styles", "_horizontal-line-width"), 2);
     editorCell.getStyle().putAll(style);
     return editorCell;
-  }
-  private EditorCell createHorizontalLineCell_7() {
-    return createHorizontalLineCell_6(getEditorContext(), myNode);
   }
   private EditorCell createRefNodeList_0() {
     AbstractCellListHandler handler = new contentListHandler_ko319k_b0d0(myNode, getEditorContext());
@@ -280,7 +268,7 @@ import org.jetbrains.mps.openapi.language.SInterfaceConcept;
     style.set(StyleAttributes.SELECTABLE, false);
     editorCell.getStyle().putAll(style);
     editorCell.addEditorCell(createCollection_6());
-    editorCell.addEditorCell(createHorizontalLineCell_11());
+    editorCell.addEditorCell(createHorizontalLineCell_5());
     editorCell.addEditorCell(createCollection_8());
     return editorCell;
   }
@@ -294,21 +282,18 @@ import org.jetbrains.mps.openapi.language.SInterfaceConcept;
   private EditorCell createCollection_7() {
     EditorCell_Collection editorCell = new EditorCell_Collection(getEditorContext(), myNode, new CellLayout_Indent());
     editorCell.setCellId("Collection_ko319k_a0b3a");
-    editorCell.addEditorCell(createHorizontalLineCell_9());
+    editorCell.addEditorCell(createHorizontalLineCell_4());
     editorCell.addEditorCell(createConstant_3());
     return editorCell;
   }
-  private EditorCell createHorizontalLineCell_8(EditorContext editorContext, SNode node) {
-    HorizontalLineCell editorCell = new HorizontalLineCell(editorContext, node);
+  private EditorCell createHorizontalLineCell_4() {
+    HorizontalLineCell editorCell = new HorizontalLineCell(getEditorContext(), getNode());
     editorCell.setCellId("HorizontalLineCell_ko319k_a0a1d0");
     Style style = new StyleImpl();
     style.set(StyleAttributes.getInstance().<Color>getAttribute("de.itemis.mps.editor.celllayout.styles", "_horizontal-line-color"), getStyleRegistry().getSimpleColor(MPSColors.gray));
     style.set(StyleAttributes.getInstance().<Integer>getAttribute("de.itemis.mps.editor.celllayout.styles", "_horizontal-line-width"), 2);
     editorCell.getStyle().putAll(style);
     return editorCell;
-  }
-  private EditorCell createHorizontalLineCell_9() {
-    return createHorizontalLineCell_8(getEditorContext(), myNode);
   }
   private EditorCell createConstant_3() {
     EditorCell_Constant editorCell = new EditorCell_Constant(getEditorContext(), myNode, "governing ports");
@@ -408,17 +393,14 @@ import org.jetbrains.mps.openapi.language.SInterfaceConcept;
       return editorCell;
     }
   }
-  private EditorCell createHorizontalLineCell_10(EditorContext editorContext, SNode node) {
-    HorizontalLineCell editorCell = new HorizontalLineCell(editorContext, node);
+  private EditorCell createHorizontalLineCell_5() {
+    HorizontalLineCell editorCell = new HorizontalLineCell(getEditorContext(), getNode());
     editorCell.setCellId("HorizontalLineCell_ko319k_b1d0");
     Style style = new StyleImpl();
     style.set(StyleAttributes.getInstance().<Color>getAttribute("de.itemis.mps.editor.celllayout.styles", "_horizontal-line-color"), getStyleRegistry().getSimpleColor(MPSColors.gray));
     style.set(StyleAttributes.getInstance().<Integer>getAttribute("de.itemis.mps.editor.celllayout.styles", "_horizontal-line-width"), 2);
     editorCell.getStyle().putAll(style);
     return editorCell;
-  }
-  private EditorCell createHorizontalLineCell_11() {
-    return createHorizontalLineCell_10(getEditorContext(), myNode);
   }
   private EditorCell createCollection_8() {
     EditorCell_Collection editorCell = new EditorCell_Collection(getEditorContext(), myNode, new CellLayout_Vertical());
@@ -431,7 +413,7 @@ import org.jetbrains.mps.openapi.language.SInterfaceConcept;
     EditorCell_Collection editorCell = new EditorCell_Collection(getEditorContext(), myNode, new CellLayout_Indent());
     editorCell.setCellId("Collection_ko319k_a2b3a");
     editorCell.addEditorCell(createConstant_5());
-    editorCell.addEditorCell(createHorizontalLineCell_13());
+    editorCell.addEditorCell(createHorizontalLineCell_6());
     return editorCell;
   }
   private EditorCell createConstant_5() {
@@ -443,17 +425,14 @@ import org.jetbrains.mps.openapi.language.SInterfaceConcept;
     editorCell.setDefaultText("");
     return editorCell;
   }
-  private EditorCell createHorizontalLineCell_12(EditorContext editorContext, SNode node) {
-    HorizontalLineCell editorCell = new HorizontalLineCell(editorContext, node);
+  private EditorCell createHorizontalLineCell_6() {
+    HorizontalLineCell editorCell = new HorizontalLineCell(getEditorContext(), getNode());
     editorCell.setCellId("HorizontalLineCell_ko319k_b0c1d0");
     Style style = new StyleImpl();
     style.set(StyleAttributes.getInstance().<Color>getAttribute("de.itemis.mps.editor.celllayout.styles", "_horizontal-line-color"), getStyleRegistry().getSimpleColor(MPSColors.gray));
     style.set(StyleAttributes.getInstance().<Integer>getAttribute("de.itemis.mps.editor.celllayout.styles", "_horizontal-line-width"), 2);
     editorCell.getStyle().putAll(style);
     return editorCell;
-  }
-  private EditorCell createHorizontalLineCell_13() {
-    return createHorizontalLineCell_12(getEditorContext(), myNode);
   }
   private EditorCell createRefNodeList_2() {
     AbstractCellListHandler handler = new subordinatePortsListHandler_ko319k_b2b3a(myNode, getEditorContext());
@@ -565,17 +544,14 @@ import org.jetbrains.mps.openapi.language.SInterfaceConcept;
     editorCell.setCellId("Custom_ko319k_e0");
     return editorCell;
   }
-  private EditorCell createHorizontalLineCell_14(EditorContext editorContext, SNode node) {
-    HorizontalLineCell editorCell = new HorizontalLineCell(editorContext, node);
+  private EditorCell createHorizontalLineCell_7() {
+    HorizontalLineCell editorCell = new HorizontalLineCell(getEditorContext(), getNode());
     editorCell.setCellId("HorizontalLineCell_ko319k_f0");
     Style style = new StyleImpl();
     style.set(StyleAttributes.getInstance().<Color>getAttribute("de.itemis.mps.editor.celllayout.styles", "_horizontal-line-color"), getStyleRegistry().getSimpleColor(MPSColors.gray));
     style.set(StyleAttributes.getInstance().<Integer>getAttribute("de.itemis.mps.editor.celllayout.styles", "_horizontal-line-width"), 2);
     editorCell.getStyle().putAll(style);
     return editorCell;
-  }
-  private EditorCell createHorizontalLineCell_15() {
-    return createHorizontalLineCell_14(getEditorContext(), myNode);
   }
   private EditorCell createCustom_3() {
     AbstractCellProvider provider = ((_FunctionTypes._return_P0_E0<VerticalWhitespaceCell>) () -> new VerticalWhitespaceCell(myNode, 10)).invoke();

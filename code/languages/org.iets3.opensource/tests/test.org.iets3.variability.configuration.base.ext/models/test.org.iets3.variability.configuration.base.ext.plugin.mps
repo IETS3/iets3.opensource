@@ -8,7 +8,7 @@
     <use id="c0080a47-7e37-4558-bee9-9ae18e690549" name="jetbrains.mps.lang.extension" version="2" />
     <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="12" />
     <use id="fd392034-7849-419d-9071-12563d152375" name="jetbrains.mps.baseLanguage.closures" version="0" />
-    <use id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc" version="2" />
+    <use id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc" version="3" />
   </languages>
   <imports>
     <import index="ch50" ref="r:83d54567-d361-47ca-a949-7374ea89921d(org.iets3.variability.configuration.base.plugin)" />
@@ -161,16 +161,10 @@
       <concept id="1225797177491" name="jetbrains.mps.baseLanguage.closures.structure.InvokeFunctionOperation" flags="nn" index="1Bd96e" />
     </language>
     <language id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc">
-      <concept id="5349172909345501395" name="jetbrains.mps.baseLanguage.javadoc.structure.BaseDocComment" flags="ng" index="P$AiS">
-        <child id="8465538089690331502" name="body" index="TZ5H$" />
-      </concept>
-      <concept id="8465538089690331500" name="jetbrains.mps.baseLanguage.javadoc.structure.CommentLine" flags="ng" index="TZ5HA">
-        <child id="8970989240999019149" name="part" index="1dT_Ay" />
-      </concept>
-      <concept id="8970989240999019143" name="jetbrains.mps.baseLanguage.javadoc.structure.TextCommentLinePart" flags="ng" index="1dT_AC">
-        <property id="8970989240999019144" name="text" index="1dT_AB" />
-      </concept>
       <concept id="2068944020170241612" name="jetbrains.mps.baseLanguage.javadoc.structure.ClassifierDocComment" flags="ng" index="3UR2Jj" />
+      <concept id="5085607816302529296" name="jetbrains.mps.baseLanguage.javadoc.structure.IHoldCommentLines" flags="ngI" index="1VezTd">
+        <child id="5085607816302529587" name="commentBody" index="1Vez_I" />
+      </concept>
     </language>
     <language id="c7d5b9dd-a05f-4be2-bc73-f2e16994cc67" name="jetbrains.mps.baseLanguage.lightweightdsl">
       <concept id="3751132065236767083" name="jetbrains.mps.baseLanguage.lightweightdsl.structure.DependentTypeInstance" flags="ig" index="q3mfm">
@@ -786,19 +780,91 @@
       </node>
     </node>
     <node concept="3UR2Jj" id="4O1MtdoMvrC" role="lGtFl">
-      <node concept="TZ5HA" id="4O1MtdoMvrD" role="TZ5H$">
-        <node concept="1dT_AC" id="4O1MtdoMvrE" role="1dT_Ay">
-          <property role="1dT_AB" value="Extension for EP &quot;enrichedConfigNameLogicExtPoint&quot;, used for testing." />
+      <node concept="1PaTwC" id="3sJu$m0AiHV" role="1Vez_I">
+        <node concept="3oM_SD" id="3sJu$m0AiHW" role="1PaTwD">
+          <property role="3oM_SC" value="Extension" />
+        </node>
+        <node concept="3oM_SD" id="3sJu$m0AiHX" role="1PaTwD">
+          <property role="3oM_SC" value="for" />
+        </node>
+        <node concept="3oM_SD" id="3sJu$m0AiHY" role="1PaTwD">
+          <property role="3oM_SC" value="EP" />
+        </node>
+        <node concept="3oM_SD" id="3sJu$m0AiHZ" role="1PaTwD">
+          <property role="3oM_SC" value="&quot;enrichedConfigNameLogicExtPoint&quot;," />
+        </node>
+        <node concept="3oM_SD" id="3sJu$m0AiI0" role="1PaTwD">
+          <property role="3oM_SC" value="used" />
+        </node>
+        <node concept="3oM_SD" id="3sJu$m0AiI1" role="1PaTwD">
+          <property role="3oM_SC" value="for" />
+        </node>
+        <node concept="3oM_SD" id="3sJu$m0AiI2" role="1PaTwD">
+          <property role="3oM_SC" value="testing." />
         </node>
       </node>
-      <node concept="TZ5HA" id="4O1MtdoMxVJ" role="TZ5H$">
-        <node concept="1dT_AC" id="4O1MtdoMxVK" role="1dT_Ay">
-          <property role="1dT_AB" value="" />
+      <node concept="1PaTwC" id="3sJu$m0AiI3" role="1Vez_I">
+        <node concept="3oM_SD" id="3sJu$m0AiI4" role="1PaTwD">
+          <property role="3oM_SC" value="" />
         </node>
       </node>
-      <node concept="TZ5HA" id="4O1MtdoMyQt" role="TZ5H$">
-        <node concept="1dT_AC" id="4O1MtdoMyQu" role="1dT_Ay">
-          <property role="1dT_AB" value="Using a typical pattern, the priority of the extension can be changed by tests in order to activate it." />
+      <node concept="1PaTwC" id="3sJu$m0AiI5" role="1Vez_I">
+        <node concept="3oM_SD" id="3sJu$m0AiI6" role="1PaTwD">
+          <property role="3oM_SC" value="Using" />
+        </node>
+        <node concept="3oM_SD" id="3sJu$m0AiI7" role="1PaTwD">
+          <property role="3oM_SC" value="a" />
+        </node>
+        <node concept="3oM_SD" id="3sJu$m0AiI8" role="1PaTwD">
+          <property role="3oM_SC" value="typical" />
+        </node>
+        <node concept="3oM_SD" id="3sJu$m0AiI9" role="1PaTwD">
+          <property role="3oM_SC" value="pattern," />
+        </node>
+        <node concept="3oM_SD" id="3sJu$m0AiIa" role="1PaTwD">
+          <property role="3oM_SC" value="the" />
+        </node>
+        <node concept="3oM_SD" id="3sJu$m0AiIb" role="1PaTwD">
+          <property role="3oM_SC" value="priority" />
+        </node>
+        <node concept="3oM_SD" id="3sJu$m0AiIc" role="1PaTwD">
+          <property role="3oM_SC" value="of" />
+        </node>
+        <node concept="3oM_SD" id="3sJu$m0AiId" role="1PaTwD">
+          <property role="3oM_SC" value="the" />
+        </node>
+        <node concept="3oM_SD" id="3sJu$m0AiIe" role="1PaTwD">
+          <property role="3oM_SC" value="extension" />
+        </node>
+        <node concept="3oM_SD" id="3sJu$m0AiIf" role="1PaTwD">
+          <property role="3oM_SC" value="can" />
+        </node>
+        <node concept="3oM_SD" id="3sJu$m0AiIg" role="1PaTwD">
+          <property role="3oM_SC" value="be" />
+        </node>
+        <node concept="3oM_SD" id="3sJu$m0AiIh" role="1PaTwD">
+          <property role="3oM_SC" value="changed" />
+        </node>
+        <node concept="3oM_SD" id="3sJu$m0AiIi" role="1PaTwD">
+          <property role="3oM_SC" value="by" />
+        </node>
+        <node concept="3oM_SD" id="3sJu$m0AiIj" role="1PaTwD">
+          <property role="3oM_SC" value="tests" />
+        </node>
+        <node concept="3oM_SD" id="3sJu$m0AiIk" role="1PaTwD">
+          <property role="3oM_SC" value="in" />
+        </node>
+        <node concept="3oM_SD" id="3sJu$m0AiIl" role="1PaTwD">
+          <property role="3oM_SC" value="order" />
+        </node>
+        <node concept="3oM_SD" id="3sJu$m0AiIm" role="1PaTwD">
+          <property role="3oM_SC" value="to" />
+        </node>
+        <node concept="3oM_SD" id="3sJu$m0AiIn" role="1PaTwD">
+          <property role="3oM_SC" value="activate" />
+        </node>
+        <node concept="3oM_SD" id="3sJu$m0AiIo" role="1PaTwD">
+          <property role="3oM_SC" value="it." />
         </node>
       </node>
     </node>
