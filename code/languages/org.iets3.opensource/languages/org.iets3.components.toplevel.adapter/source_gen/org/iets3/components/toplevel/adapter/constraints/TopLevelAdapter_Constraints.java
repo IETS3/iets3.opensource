@@ -39,7 +39,7 @@ public class TopLevelAdapter_Constraints extends BaseConstraintsDescriptor {
         boolean result = staticCanBeAnAncestor(context.getNode(), context.getChildNode(), context.getChildConcept(), context.getParentNode(), context.getLink());
 
         if (!(result) && checkingNodeContext != null) {
-          checkingNodeContext.setBreakingNode(canBeRootBreakingPoint);
+          checkingNodeContext.setBreakingNode(canBeAncestorBreakingPoint);
         }
 
         return result;
@@ -80,7 +80,7 @@ public class TopLevelAdapter_Constraints extends BaseConstraintsDescriptor {
 
     return true;
   }
-  private static final SNodePointer canBeRootBreakingPoint = new SNodePointer("r:c466b729-89e8-4bce-ab91-47c23bf24499(org.iets3.components.toplevel.adapter.constraints)", "109109758767193821");
+  private static final SNodePointer canBeAncestorBreakingPoint = new SNodePointer("r:c466b729-89e8-4bce-ab91-47c23bf24499(org.iets3.components.toplevel.adapter.constraints)", "109109758767193821");
 
   private static final class CONCEPTS {
     /*package*/ static final SConcept TopLevelAdapter$F9 = MetaAdapterFactory.getConcept(0x1eafb1add78245f3L, 0x97a2dcc9e9e9e152L, 0x16c414fc811ecdd1L, "org.iets3.components.toplevel.adapter.structure.TopLevelAdapter");

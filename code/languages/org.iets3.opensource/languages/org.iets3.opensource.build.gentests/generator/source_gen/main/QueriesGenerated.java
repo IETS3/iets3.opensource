@@ -12,10 +12,10 @@ import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
 import jetbrains.mps.build.util.DependenciesHelper;
 import jetbrains.mps.build.behavior.BuildLayout_PathElement__BehaviorDescriptor;
 import jetbrains.mps.build.util.MacroHelper;
+import jetbrains.mps.build.util.Context;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
 import jetbrains.mps.build.behavior.BuildString__BehaviorDescriptor;
 import jetbrains.mps.build.behavior.BuildSourcePath__BehaviorDescriptor;
-import jetbrains.mps.build.util.Context;
 import jetbrains.mps.build.mps.behavior.BuildMps_AbstractModule__BehaviorDescriptor;
 import jetbrains.mps.build.mps.runner.behavior.BuildSolutionRunnerAspect__BehaviorDescriptor;
 import jetbrains.mps.generator.template.ReferenceMacroContext;
@@ -108,7 +108,7 @@ public class QueriesGenerated extends QueryProviderBase {
   }
   public static Object propertyMacro_GetValue_0_13(final PropertyMacroContext _context) {
     SNode project = SNodeOperations.cast(SNodeOperations.getContainingRoot(_context.getNode()), CONCEPTS.BuildProject$ae);
-    MacroHelper macroHelper = new MacroHelper.MacroContext(project, _context).getMacros(project);
+    MacroHelper macroHelper = Context.defaultContext(_context).getMacros(project);
     if ((SLinkOperations.getTarget(SLinkOperations.getTarget(SLinkOperations.getTarget(_context.getNode(), LINKS.testModules$dtVN), LINKS.options$gctq), LINKS.haltonfailure$573F) == null)) {
       return "false";
     }
@@ -277,7 +277,7 @@ public class QueriesGenerated extends QueryProviderBase {
       return "-Xss2048k -Xmx1024m";
     }
     SNode project = SNodeOperations.cast(SNodeOperations.getContainingRoot(_context.getNode()), CONCEPTS.BuildProject$ae);
-    MacroHelper macroHelper = new MacroHelper.MacroContext(project, _context).getMacros(project);
+    MacroHelper macroHelper = Context.defaultContext(_context).getMacros(project);
     return (String) BuildString__BehaviorDescriptor.getText_id3NagsOfTioI.invoke(SLinkOperations.getTarget(options, LINKS.jvmArgs$IZpF), macroHelper);
   }
   public static Object varMacro_Value_0_1(final TemplateVarContext _context) {
@@ -288,7 +288,7 @@ public class QueriesGenerated extends QueryProviderBase {
       return "-Xss2048k -Xmx1024m";
     }
     SNode project = SNodeOperations.cast(SNodeOperations.getContainingRoot(_context.getNode()), CONCEPTS.BuildProject$ae);
-    MacroHelper macroHelper = new MacroHelper.MacroContext(project, _context).getMacros(project);
+    MacroHelper macroHelper = Context.defaultContext(_context).getMacros(project);
     return (String) BuildString__BehaviorDescriptor.getText_id3NagsOfTioI.invoke(SLinkOperations.getTarget(_context.getNode(), LINKS.jvmArgs$3WlJ), macroHelper);
   }
   public static Object varMacro_Value_2_1(final TemplateVarContext _context) {
