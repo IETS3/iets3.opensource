@@ -30,3 +30,4 @@ downloadJbr = { id = "download-jbr", version = "1.30.0.+" }
 githubRelease = { id = "com.github.breadmoirai.github-release", version = "2.5.2" }
 mpsCommon = { id = "de.itemis.mps.gradle.common", version = "1.30.+" }
 mpsLauncher = { id = "de.itemis.mps.gradle.launcher", version = "2.8.0.+" }
+
