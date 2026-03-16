@@ -14,7 +14,7 @@ import org.jetbrains.mps.openapi.language.SContainmentLink;
 public final class pasteFunction_PasteWrapper_1 implements PasteWrapper {
   @Override
   public SAbstractConcept getSourceConcept() {
-    return CONCEPTS.CompFunctionAdapter$XP;
+    return CONCEPTS.CompFunctionAdapter_old$L8;
   }
   @Override
   public SAbstractConcept getTargetConcept() {
@@ -22,15 +22,15 @@ public final class pasteFunction_PasteWrapper_1 implements PasteWrapper {
   }
   @Override
   public SNode wrap(SNode sourceNode) {
-    return ((SNode) SLinkOperations.getTarget(sourceNode, LINKS.functionLike$1qr0));
+    return SLinkOperations.getTarget(sourceNode, LINKS.fun$NLoa);
   }
 
   private static final class CONCEPTS {
-    /*package*/ static final SConcept CompFunctionAdapter$XP = MetaAdapterFactory.getConcept(0xf0fd486f857743e9L, 0xb6713d118449c6e7L, 0x3493a42992c5b1c5L, "org.iets3.components.core.structure.CompFunctionAdapter");
+    /*package*/ static final SConcept CompFunctionAdapter_old$L8 = MetaAdapterFactory.getConcept(0xf0fd486f857743e9L, 0xb6713d118449c6e7L, 0x2c1847a3cf9155bdL, "org.iets3.components.core.structure.CompFunctionAdapter_old");
     /*package*/ static final SInterfaceConcept IToplevelExprContent$AI = MetaAdapterFactory.getInterfaceConcept(0x71934284d7d145eeL, 0xa0548c072591085fL, 0x27b717d14a8b21f9L, "org.iets3.core.expr.toplevel.structure.IToplevelExprContent");
   }
 
   private static final class LINKS {
-    /*package*/ static final SContainmentLink functionLike$1qr0 = MetaAdapterFactory.getContainmentLink(0x71934284d7d145eeL, 0xa0548c072591085fL, 0x4aa68aac0c23aa4L, 0x4aa68aac0c267f3L, "functionLike");
+    /*package*/ static final SContainmentLink fun$NLoa = MetaAdapterFactory.getContainmentLink(0x71934284d7d145eeL, 0xa0548c072591085fL, 0x5b6b0ca1fa4e6b6L, 0x5b6b0ca1f838e57L, "fun");
   }
 }
