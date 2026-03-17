@@ -342,8 +342,7 @@
   <target name="run.org.iets3.opensource.interpreterExecutor" depends="assemble">
     <echo message="Running code from org.iets3.opensource.interpreterExecutor solution in MPS" />
     <mkdir dir="${iets3.interpreterExecutor.genPath}" />
-    <property name="build.jna.library.path" location="${artifacts.mps}/lib/jna" />
-    <runMPS solution="26c41006-651b-45a4-aced-69694c3d5234(org.iets3.opensource.interpreterExecutor)" startClass="org.iets3.opensource.interpreterExecutor.MainClass" startMethod="mpsMain">
+    <runMPS solution="26c41006-651b-45a4-aced-69694c3d5234(org.iets3.opensource.interpreterExecutor)" startClass="org.iets3.opensource.interpreterExecutor.MainClass" startMethod="mpsMain" jnaLibraryPath="lib/jna/amd64">
       <plugin path="${artifacts.com.mbeddr.platform}/MPS.Kotlin" id="MPS.Kotlin" />
       <plugin path="${artifacts.com.mbeddr.platform}/MPS.ThirdParty" id="MPS.ThirdParty" />
       <plugin path="${artifacts.com.mbeddr.platform}/com.mbeddr.mpsutil.common" id="com.mbeddr.mpsutil.common" />
@@ -710,7 +709,6 @@
       <jvmargs>
         <arg value="-Didea.config.path=${build.mps.config.path}" />
         <arg value="-Didea.system.path=${build.mps.system.path}" />
-        <arg value="-Djna.boot.library.path=${build.jna.library.path}" />
         <arg value="-ea" />
         <arg value="-Xss2048k" />
         <arg value="-Xmx4096m" />
