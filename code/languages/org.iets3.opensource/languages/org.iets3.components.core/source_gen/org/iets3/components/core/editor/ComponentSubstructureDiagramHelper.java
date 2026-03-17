@@ -21,7 +21,7 @@ import org.jetbrains.mps.openapi.language.SInterfaceConcept;
 public class ComponentSubstructureDiagramHelper {
 
   /**
-   * Creates Import- or ExportConnector. Either <code>outerPort</code> or <code>innerPortName</code> should not be null.
+   * Creates Import- or ExportConnector. Either  <code>outerPort</code> or <code>innerPortName</code>  should not be null.
    * 
    * @param outerPort 
    * @param compInstanceBase 

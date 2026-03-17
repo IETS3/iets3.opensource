@@ -32,9 +32,6 @@ public class supertype_FWC_SubtypingRule extends SubtypingRule_Runtime implement
   public boolean isWeak() {
     return false;
   }
-  public boolean surelyKeepsConcept() {
-    return true;
-  }
 
   private static final class LINKS {
     /*package*/ static final SContainmentLink baseType$5NOJ = MetaAdapterFactory.getContainmentLink(0x2f7e2e356e744c43L, 0x9fa52465d68f5996L, 0x68d69d36ba495885L, 0x68d69d36ba495886L, "baseType");
