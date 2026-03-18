@@ -68,6 +68,26 @@ import org.jetbrains.mps.openapi.language.SConcept;
   private EditorCell createCustomFactory_0(final EditorContext editorContext, final SNode node) {
 
 
+    final EditorCell cell = createCustomFactory_3();
+    EditorCell editorCell = ((_FunctionTypes._return_P0_E0<EditorCell>) () -> cell).invoke();
+    return editorCell;
+  }
+  private EditorCell createCustomFactory_1() {
+    return createCustomFactory_0(getEditorContext(), myNode);
+  }
+  private EditorCell createCustomFactory_2(final EditorContext editorContext, final SNode node) {
+
+
+    final EditorCell cell = createCustomFactory_5();
+    EditorCell editorCell = ((_FunctionTypes._return_P0_E0<EditorCell>) () -> cell).invoke();
+    return editorCell;
+  }
+  private EditorCell createCustomFactory_3() {
+    return createCustomFactory_2(getEditorContext(), myNode);
+  }
+  private EditorCell createCustomFactory_4(final EditorContext editorContext, final SNode node) {
+
+
     final EditorCell cell = createSplittableCell_0();
     EditorCell editorCell = ((_FunctionTypes._return_P0_E0<EditorCell>) () -> {
       if (PTF.areHexadecimalNumbersSupported(myNode)) {
@@ -82,8 +102,8 @@ import org.jetbrains.mps.openapi.language.SConcept;
     }).invoke();
     return editorCell;
   }
-  private EditorCell createCustomFactory_1() {
-    return createCustomFactory_0(getEditorContext(), myNode);
+  private EditorCell createCustomFactory_5() {
+    return createCustomFactory_4(getEditorContext(), myNode);
   }
   private EditorCell createSplittableCell_0() {
     // (*): lines added to the factory method from reduce_CellModel_Property (originally used for SplittableCell: reduce_CellModel_WithRole)
@@ -104,7 +124,7 @@ import org.jetbrains.mps.openapi.language.SConcept;
       style.set(StyleAttributes.AUTO_DELETABLE, true);
       style.set(StyleAttributes.DEFAULT_CARET_POSITION, CaretPosition.LAST);
       editorCell.getStyle().putAll(style);
-      editorCell.setSubstituteInfo(new CompositeSubstituteInfo(getEditorContext(), provider.getCellContext(), new SubstituteInfoPartExt[]{new ReplaceWith_Expression_cellMenu_5vqr8z_a0a0a(), new SChildSubstituteInfoPartEx(editorCell)}));
+      editorCell.setSubstituteInfo(new CompositeSubstituteInfo(getEditorContext(), provider.getCellContext(), new SubstituteInfoPartExt[]{new ReplaceWith_Expression_cellMenu_5vqr8z_a0a0a0a(), new SChildSubstituteInfoPartEx(editorCell)}));
 
       // (*) store cell context for the new cell
       setCellContext(editorCell);
@@ -121,8 +141,8 @@ import org.jetbrains.mps.openapi.language.SConcept;
       getCellFactory().popCellContext();
     }
   }
-  public static class ReplaceWith_Expression_cellMenu_5vqr8z_a0a0a extends AbstractCellMenuPart_ReplaceNode_CustomNodeConcept {
-    public ReplaceWith_Expression_cellMenu_5vqr8z_a0a0a() {
+  public static class ReplaceWith_Expression_cellMenu_5vqr8z_a0a0a0a extends AbstractCellMenuPart_ReplaceNode_CustomNodeConcept {
+    public ReplaceWith_Expression_cellMenu_5vqr8z_a0a0a0a() {
     }
     public SAbstractConcept getReplacementConcept() {
       return CONCEPTS.Expression$D_;

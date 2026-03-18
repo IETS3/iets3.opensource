@@ -52,7 +52,7 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           cpb.deprecateAggregation(0x449e19d04e9c91dbL, "expr_old");
           cpb.shortDesc("absolute value");
           cpb.rawPresentation("abs");
-          cpb.icon(IconContainer.RESOURCE_a0a4a0a0b0gb);
+          cpb.icon(IconContainer.RESOURCE_0);
           props_AbsExpression = cpb.create();
         }
         return props_AbsExpression;
@@ -132,7 +132,7 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
           cpb.shortDesc("a fraction consisting of a numerator(above) and denominator(below)");
           cpb.rawPresentation("frac");
-          cpb.icon(IconContainer.RESOURCE_a0a3a0a01b0gb);
+          cpb.icon(IconContainer.RESOURCE_1);
           props_FractionExpression = cpb.create();
         }
         return props_FractionExpression;
@@ -150,7 +150,7 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           cpb.deprecateAggregation(0x449e19d04e9c9964L, "expr_old");
           cpb.shortDesc("logarithm");
           cpb.rawPresentation("log");
-          cpb.icon(IconContainer.RESOURCE_a0a4a0a21b0gb);
+          cpb.icon(IconContainer.RESOURCE_2);
           props_LogExpression = cpb.create();
         }
         return props_LogExpression;
@@ -174,7 +174,7 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
           cpb.shortDesc("a number denoting the ratio of a circle's circumference to its diameter");
           cpb.rawPresentation("pi");
-          cpb.icon(IconContainer.RESOURCE_a0a3a0a51b0gb);
+          cpb.icon(IconContainer.RESOURCE_3);
           props_PiExpression = cpb.create();
         }
         return props_PiExpression;
@@ -192,7 +192,7 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           cpb.deprecateAggregation(0x449e19d04e9cdee2L, "expr_old");
           cpb.shortDesc("power");
           cpb.rawPresentation("pow");
-          cpb.icon(IconContainer.RESOURCE_a0a4a0a71b0gb);
+          cpb.icon(IconContainer.RESOURCE_4);
           props_PowerExpression = cpb.create();
         }
         return props_PowerExpression;
@@ -201,7 +201,7 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
           cpb.shortDesc("product");
           cpb.presentationByName();
-          cpb.icon(IconContainer.RESOURCE_a0a3a0a81b0gb);
+          cpb.icon(IconContainer.RESOURCE_5);
           props_ProductLoopExpression = cpb.create();
         }
         return props_ProductLoopExpression;
@@ -243,7 +243,7 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           cpb.deprecateAggregation(0x449e19d04e9c9e3cL, "expr_old");
           cpb.shortDesc("square root");
           cpb.rawPresentation("sqrt");
-          cpb.icon(IconContainer.RESOURCE_a0a4a0a32b0gb);
+          cpb.icon(IconContainer.RESOURCE_6);
           props_SqrtExpression = cpb.create();
         }
         return props_SqrtExpression;
@@ -252,7 +252,7 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
           cpb.shortDesc("sum");
           cpb.presentationByName();
-          cpb.icon(IconContainer.RESOURCE_a0a3a0a42b0gb);
+          cpb.icon(IconContainer.RESOURCE_7);
           props_SumExpression = cpb.create();
         }
         return props_SumExpression;

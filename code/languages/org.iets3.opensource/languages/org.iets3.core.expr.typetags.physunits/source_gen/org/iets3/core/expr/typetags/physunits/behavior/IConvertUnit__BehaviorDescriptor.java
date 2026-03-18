@@ -15,7 +15,6 @@ import java.util.Arrays;
 import org.jetbrains.annotations.NotNull;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
 import java.util.ArrayList;
-import jetbrains.mps.classloading.ClassLoaderManager;
 import jetbrains.mps.typesystem.inference.TypeCheckingContext;
 import jetbrains.mps.newTypesystem.context.IncrementalTypecheckingContext;
 import jetbrains.mps.typesystem.inference.TypeChecker;
@@ -61,8 +60,7 @@ public final class IConvertUnit__BehaviorDescriptor extends BaseBHDescriptor {
     SNode expression = IConvertUnit__BehaviorDescriptor.getExpression_id7SygLIkQnGn.invoke(__thisNode__);
     if (expression != null && IConvertUnit__BehaviorDescriptor.getTargetUnit_id7SygLIkQpOA.invoke(__thisNode__) != null) {
       // deprecated getInstance is necessary to ensure compatibility with the command-line generator execution (MpsEnvironment)
-      ClassLoaderManager classLoaderManager = ClassLoaderManager.getInstance();
-      TypeCheckingContext typeChecking = new IncrementalTypecheckingContext(expression, TypeChecker.getInstance().getTypeCheckerHelper(), classLoaderManager);
+      TypeCheckingContext typeChecking = new IncrementalTypecheckingContext(expression, TypeChecker.getInstance().getTypeCheckerHelper(), null);
       typeChecking.checkIfNotChecked(expression, false);
       SNode sourceType = typeChecking.typeOf(expression);
       typeChecking.dispose();
