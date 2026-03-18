@@ -20,7 +20,7 @@ public class EnumerationDescriptor_ControllabilityEnum extends EnumerationDescri
   private final EnumerationDescriptor.MemberDescriptor myMember__3_0 = new EnumerationDescriptor.MemberDescriptor("_3", "C3", 0x710b4f5487c7a16fL, "r:b53239c7-3de8-44c4-9520-b85ab78eddfd(org.iets3.safety.attributes.structure)/5939066662398655636");
 
   private final EnumerationLiteralsIndex myIndex = EnumerationLiteralsIndex.build(0x3d5cb9202b5f4dcbL, 0x834968b4bf077e63L, 0x710b4f5487c7a161L, 0x710b4f5487c7a163L, 0x710b4f5487c7a168L, 0x710b4f5487c7a16fL);
-  private final List<EnumerationDescriptor.MemberDescriptor> myMembers = new EnumerationDescriptorBase.MembersList(myIndex, myMember__1_0, myMember__2_0, myMember__3_0);
+  private final List<EnumerationDescriptor.MemberDescriptor> myMembers = new EnumerationDescriptorBase.MembersList0(myIndex, myMember__1_0, myMember__2_0, myMember__3_0);
 
   @Nullable
   @Override

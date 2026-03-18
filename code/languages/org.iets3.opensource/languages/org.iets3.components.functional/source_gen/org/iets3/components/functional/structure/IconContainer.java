@@ -13,9 +13,9 @@ public class IconContainer {
   protected static IconResource RESOURCE_3 = new IconResource("/icons/dataPort.png", null, IconContainer.class);
   protected static IconResource RESOURCE_4 = new IconResource("/icons/producesPort.png", null, IconContainer.class);
   protected static IconResource RESOURCE_5 = new IconResource("/icons/providesPort.png", null, IconContainer.class);
-  protected static IconResource RESOURCE_6 = new IconResource("TextIcon_2.png", null, IconContainer.class);
-  protected static IconResource RESOURCE_7 = new IconResource("TextIcon_3.png", null, IconContainer.class);
-  protected static IconResource RESOURCE_8 = new IconResource("TextIcon_1.png", null, IconContainer.class);
+  protected static IconResource RESOURCE_6 = new IconResource("TextIcon_2.png", "TextIconNewUI_2.png", IconContainer.class);
+  protected static IconResource RESOURCE_7 = new IconResource("TextIcon_3.png", "TextIconNewUI_3.png", IconContainer.class);
+  protected static IconResource RESOURCE_8 = new IconResource("TextIcon_1.png", "TextIconNewUI_1.png", IconContainer.class);
   protected static IconResource RESOURCE_9 = new IconResource("/icons/service.png", null, IconContainer.class);
   protected static IconResource RESOURCE_10 = new IconResource("/icons/servicePort.png", null, IconContainer.class);
   protected static IconResource RESOURCE_11 = new IconResource("/icons/usesPort.png", null, IconContainer.class);

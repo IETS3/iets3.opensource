@@ -18,8 +18,6 @@ import java.util.Arrays;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.mps.openapi.model.SNode;
 import org.jetbrains.mps.openapi.persistence.PersistenceFacade;
-import jetbrains.mps.build.util.UnpackHelper;
-import java.lang.reflect.Field;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
 import jetbrains.mps.lang.core.behavior.ScopeProvider__BehaviorDescriptor;
 import jetbrains.mps.lang.core.behavior.BaseConcept__BehaviorDescriptor;
@@ -48,32 +46,12 @@ public final class RunKernelFGeneratedTests__BehaviorDescriptor extends BaseBHDe
   }
   /*package*/ static void fetchDependencies_id57YmpYyL8F1(@NotNull SNode __thisNode__, VisibleArtifacts artifacts, RequiredDependenciesBuilder builder) {
 
-    // as genContext is a better way to report problems in the generation, we try to retrieve it from internal API
-    // and fall back to logging if this fails 
-    TemplateQueryContext genContext = null;
-    {
-      // workaround via reflection, cause API changed with mps 20.3.0
-      UnpackHelper uph = null;
-      try {
-        Field field = builder.getClass().getDeclaredField("helper");
-        field.setAccessible(true);
-        uph = as_25wnuw_a0a2a2a4a21(field.get(builder), UnpackHelper.class);
-        genContext = uph.getGenContext();
-      } catch (Throwable t) {
-        if (LOG.isWarningLevel()) {
-          LOG.warning("Failed to extract genContext from RequiredDependenciesBuilder, using fallback to log", t);
-        }
-      }
-    }
     final String gentestsRtSolutionName = RunKernelFGeneratedTests__BehaviorDescriptor.getGentestsRtSolutionName_id6Fs_Z9I$Bez.invokeSpecial(__thisNode__);
     SNode project = artifacts.getProject();
 
     // find gentests.rt
     SNode gentestsRtSolution = SNodeOperations.as(ScopeProvider__BehaviorDescriptor.getScope_id52_Geb4QFgX.invoke(project, CONCEPTS.BuildMps_Solution$R7, LINKS.parts$mGDj, ((int) 0)).resolve(project, gentestsRtSolutionName), CONCEPTS.BuildMps_Solution$R7);
     if ((gentestsRtSolution == null)) {
-      if (genContext != null) {
-        genContext.showErrorMessage(__thisNode__, "Cannot find solution " + gentestsRtSolutionName + " in scope");
-      }
       if (LOG.isErrorLevel()) {
         LOG.error("Cannot find solution " + gentestsRtSolutionName + " in scope (this: " + BaseConcept__BehaviorDescriptor.getPresentation_idhEwIMiw.invoke(__thisNode__) + ", concept: " + SNodeOperations.getConcept(__thisNode__) + ")");
       }
@@ -82,9 +60,6 @@ public final class RunKernelFGeneratedTests__BehaviorDescriptor extends BaseBHDe
 
     SNode gentestsLayoutNode = SNodeOperations.as(artifacts.findArtifact(gentestsRtSolution), CONCEPTS.BuildLayout_Node$Rb);
     if ((gentestsLayoutNode == null)) {
-      if (genContext != null) {
-        genContext.showErrorMessage(null, "Cannot find artifact for solution " + gentestsRtSolutionName);
-      }
       if (LOG.isErrorLevel()) {
         LOG.error("Cannot find artifact for solution " + gentestsRtSolutionName);
       }
@@ -95,7 +70,7 @@ public final class RunKernelFGeneratedTests__BehaviorDescriptor extends BaseBHDe
     builder.addWithTag(gentestsLayoutNode, gentestsRtSolutionName);
   }
   /*package*/ static String findGentestsRt_id6Fs_Z9I$_5v(@NotNull SNode __thisNode__, TemplateQueryContext genContext) {
-    // s. javadoc of DotExpression  for token explanation
+    // s. javadoc of '''DotExpression'''  for token explanation
     DependenciesHelper helper = DependenciesHelper.get(genContext, SNodeOperations.cast(SNodeOperations.getContainingRoot(__thisNode__), CONCEPTS.BuildProject$ae), "build.mps");
     String artifact = RunKernelFGeneratedTests__BehaviorDescriptor.getGentestsRtSolutionName_id6Fs_Z9I$Bez.invokeSpecial(__thisNode__);
 
@@ -156,9 +131,6 @@ public final class RunKernelFGeneratedTests__BehaviorDescriptor extends BaseBHDe
   @Override
   public SAbstractConcept getConcept() {
     return CONCEPT;
-  }
-  private static <T> T as_25wnuw_a0a2a2a4a21(Object o, Class<T> type) {
-    return (type.isInstance(o) ? (T) o : null);
   }
 
   private static final class CONCEPTS {
