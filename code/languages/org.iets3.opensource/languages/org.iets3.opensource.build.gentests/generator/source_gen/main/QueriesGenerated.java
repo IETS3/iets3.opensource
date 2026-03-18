@@ -172,6 +172,9 @@ public class QueriesGenerated extends QueryProviderBase {
     return (String) BuildSolutionRunnerAspect__BehaviorDescriptor.getMethodName_id1aYLt$9dX0a.invoke(_context.getNode());
   }
   public static Object propertyMacro_GetValue_2_13(final PropertyMacroContext _context) {
+    return "lib/jna/" + System.getProperty("os.arch");
+  }
+  public static Object propertyMacro_GetValue_2_14(final PropertyMacroContext _context) {
     return "run." + SPropertyOperations.getString(SLinkOperations.getTarget(_context.getNode(), LINKS.solution$MOiH), PROPS.name$MnvL);
   }
   public static Object referenceMacro_GetReferent_0_0(final ReferenceMacroContext _context) {
@@ -228,7 +231,7 @@ public class QueriesGenerated extends QueryProviderBase {
 
     ModulePlugins plugins = new ModulePlugins(SNodeOperations.cast(SNodeOperations.getContainingRoot(_context.getNode()), CONCEPTS.BuildProject$ae));
     plugins.collect(allModules, new ArrayList<SNode>());
-    return ListSequence.fromList(plugins.getPlugins(_context)).select((it) -> createGeneratorInternal_String_x583g4_a0a0a0i0sb(SPropertyOperations.getString(it, PROPS.path$4PFd)));
+    return ListSequence.fromList(plugins.getPlugins(_context)).select((it) -> createGeneratorInternal_String_x583g4_a0a0a0i0tb(SPropertyOperations.getString(it, PROPS.path$4PFd)));
   }
   public static Iterable<SNode> sourceNodesQuery_0_3(final SourceSubstituteMacroNodesContext _context) {
     List<SNode> rv = ListSequence.fromList(new ArrayList<>());
@@ -386,6 +389,7 @@ public class QueriesGenerated extends QueryProviderBase {
     pvqMethods.put("6102524510012313448", new PVQ(i++, MetaAdapterFactory.getProperty(0x479c7a8c02f943b5L, 0x9139d910cb22f298L, 0x5c842a42c54cfd1fL, 0x5c842a42c54cfd20L, "text"), "moduleRef"));
     pvqMethods.put("6102524510012566132", new PVQ(i++, MetaAdapterFactory.getProperty(0x479c7a8c02f943b5L, 0x9139d910cb22f298L, 0x5c842a42c54cfd1fL, 0x5c842a42c54cfd20L, "text"), "solution.MainClass"));
     pvqMethods.put("7415565752189735700", new PVQ(i++, MetaAdapterFactory.getProperty(0x479c7a8c02f943b5L, 0x9139d910cb22f298L, 0x5c842a42c54cfd1fL, 0x5c842a42c54cfd20L, "text"), "mpsmain"));
+    pvqMethods.put("2500170844241020028", new PVQ(i++, MetaAdapterFactory.getProperty(0x479c7a8c02f943b5L, 0x9139d910cb22f298L, 0x5c842a42c54cfd1fL, 0x5c842a42c54cfd20L, "text"), "lib/jna/$os.arch"));
     pvqMethods.put("4173297143639165099", new PVQ(i++, MetaAdapterFactory.getProperty(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L, 0x110396ec041L, "name"), "run"));
   }
   @NotNull
@@ -471,6 +475,8 @@ public class QueriesGenerated extends QueryProviderBase {
           return QueriesGenerated.propertyMacro_GetValue_2_12(ctx);
         case 33:
           return QueriesGenerated.propertyMacro_GetValue_2_13(ctx);
+        case 34:
+          return QueriesGenerated.propertyMacro_GetValue_2_14(ctx);
         default:
           throw new GenerationFailureException(String.format("Inconsistent QueriesGenerated: there's no method for query %s (key: #%d)", ctx.getTemplateReference(), methodKey));
       }
@@ -580,7 +586,7 @@ public class QueriesGenerated extends QueryProviderBase {
       }
     }
   }
-  private static SNode createGeneratorInternal_String_x583g4_a0a0a0i0sb(String p0) {
+  private static SNode createGeneratorInternal_String_x583g4_a0a0a0i0tb(String p0) {
     SNodeBuilder n0 = new SNodeBuilder().init(CONCEPTS.GeneratorInternal_String$CC);
     n0.setProperty(PROPS.path$oN2q, p0);
     return n0.getResult();

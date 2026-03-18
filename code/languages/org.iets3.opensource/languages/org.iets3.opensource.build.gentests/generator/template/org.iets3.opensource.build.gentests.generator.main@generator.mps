@@ -2695,24 +2695,6 @@
                 </node>
               </node>
             </node>
-            <node concept="2Vbh7Z" id="6DrRQvKqVFa" role="2VaTZU">
-              <node concept="2pNNFK" id="6DrRQvKqZPC" role="2Vbh7K">
-                <property role="2pNNFO" value="property" />
-                <property role="qg3DV" value="true" />
-                <node concept="2pNUuL" id="6DrRQvKqZSW" role="2pNNFR">
-                  <property role="2pNUuO" value="name" />
-                  <node concept="2pMdtt" id="6DrRQvKqZSX" role="2pMdts">
-                    <property role="2pMdty" value="build.jna.library.path" />
-                  </node>
-                </node>
-                <node concept="2pNUuL" id="6DrRQvKqZWh" role="2pNNFR">
-                  <property role="2pNUuO" value="location" />
-                  <node concept="2pMdtt" id="6DrRQvKqZWi" role="2pMdts">
-                    <property role="2pMdty" value="${artifacts.mps}/lib/jna" />
-                  </node>
-                </node>
-              </node>
-            </node>
             <node concept="2VaTY3" id="5eJiSDhB5oI" role="2VaTZU" />
             <node concept="2Vbh7Z" id="3BExUgsKUkr" role="2VaTZU">
               <node concept="2pNNFK" id="3BExUgsKUuU" role="2Vbh7K">
@@ -3262,16 +3244,6 @@
                       </node>
                     </node>
                   </node>
-                  <node concept="2pNNFK" id="6OON6YVXP4c" role="3o6s8t">
-                    <property role="qg3DV" value="true" />
-                    <property role="2pNNFO" value="arg" />
-                    <node concept="2pNUuL" id="6OON6YVXP4d" role="2pNNFR">
-                      <property role="2pNUuO" value="value" />
-                      <node concept="2pMdtt" id="6OON6YVXP4e" role="2pMdts">
-                        <property role="2pMdty" value="-Djna.boot.library.path=${build.jna.library.path}" />
-                      </node>
-                    </node>
-                  </node>
                   <node concept="2pNNFK" id="oY$DTc6Q1K" role="3o6s8t">
                     <property role="2pNNFO" value="arg" />
                     <property role="qg3DV" value="true" />
@@ -3767,6 +3739,34 @@
                               <node concept="30H73N" id="1aYLt$9exOt" role="2Oq$k0" />
                               <node concept="2qgKlT" id="1aYLt$9eybo" role="2OqNvi">
                                 <ref role="37wK5l" to="tos2:1aYLt$9dX0a" resolve="getMethodName" />
+                              </node>
+                            </node>
+                          </node>
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                </node>
+                <node concept="2pNUuL" id="2aMp2bCtV1a" role="2pNNFR">
+                  <property role="2pNUuO" value="jnaLibraryPath" />
+                  <node concept="2pMdtt" id="2aMp2bCtV1b" role="2pMdts">
+                    <property role="2pMdty" value="lib/jna/$os.arch" />
+                    <node concept="17Uvod" id="2aMp2bCL$hW" role="lGtFl">
+                      <property role="2qtEX9" value="text" />
+                      <property role="P4ACc" value="479c7a8c-02f9-43b5-9139-d910cb22f298/6666499814681541919/6666499814681541920" />
+                      <node concept="3zFVjK" id="2aMp2bCL$hX" role="3zH0cK">
+                        <node concept="3clFbS" id="2aMp2bCL$hY" role="2VODD2">
+                          <node concept="3clFbF" id="2aMp2bCL_4e" role="3cqZAp">
+                            <node concept="3cpWs3" id="2aMp2bCLRKS" role="3clFbG">
+                              <node concept="Xl_RD" id="2aMp2bCLTgf" role="3uHU7B">
+                                <property role="Xl_RC" value="lib/jna/" />
+                              </node>
+                              <node concept="2YIFZM" id="2aMp2bCLSC4" role="3uHU7w">
+                                <ref role="37wK5l" to="wyt6:~System.getProperty(java.lang.String)" resolve="getProperty" />
+                                <ref role="1Pybhc" to="wyt6:~System" resolve="System" />
+                                <node concept="Xl_RD" id="2aMp2bCLSSs" role="37wK5m">
+                                  <property role="Xl_RC" value="os.arch" />
+                                </node>
                               </node>
                             </node>
                           </node>
