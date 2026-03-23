@@ -56,7 +56,7 @@ public class InterpreterLookupInterpreter extends InterpreterBase {
         }
       }
       public EvaluatorInfo getInfo() {
-        return new EvaluatorInfo("LookupTableRef", "http://127.0.0.1:63320/node?ref=1b8eaefc-2d30-49ff-b15e-1a83d0bc3ff9%2Fi%3A10000001%28org.iets3.core.expr.lookup.interpreter%40transient123%2Forg.iets3.core.expr.lookup.interpreter.plugin%400%29%2F5860825012169154230");
+        return new EvaluatorInfo("LookupTableRef", "http://127.0.0.1:63320/node?ref=6ec895f7-137f-4d74-b261-57427aff568b%2Fi%3A10000001%28org.iets3.core.expr.lookup.interpreter%40transient123%2Forg.iets3.core.expr.lookup.interpreter.plugin%400%29%2F5860825012169154230");
       }
 
       @Override
@@ -107,7 +107,7 @@ public class InterpreterLookupInterpreter extends InterpreterBase {
         }
       }
       public EvaluatorInfo getInfo() {
-        return new EvaluatorInfo("LookupTable", "http://127.0.0.1:63320/node?ref=1b8eaefc-2d30-49ff-b15e-1a83d0bc3ff9%2Fi%3A10000001%28org.iets3.core.expr.lookup.interpreter%40transient123%2Forg.iets3.core.expr.lookup.interpreter.plugin%400%29%2F5860825012169163834");
+        return new EvaluatorInfo("LookupTable", "http://127.0.0.1:63320/node?ref=6ec895f7-137f-4d74-b261-57427aff568b%2Fi%3A10000001%28org.iets3.core.expr.lookup.interpreter%40transient123%2Forg.iets3.core.expr.lookup.interpreter.plugin%400%29%2F5860825012169163834");
       }
 
       @Override
@@ -140,7 +140,7 @@ public class InterpreterLookupInterpreter extends InterpreterBase {
         }
       }
       public EvaluatorInfo getInfo() {
-        return new EvaluatorInfo("LookupTarget", "http://127.0.0.1:63320/node?ref=1b8eaefc-2d30-49ff-b15e-1a83d0bc3ff9%2Fi%3A10000001%28org.iets3.core.expr.lookup.interpreter%40transient123%2Forg.iets3.core.expr.lookup.interpreter.plugin%400%29%2F5860825012169343420");
+        return new EvaluatorInfo("LookupTarget", "http://127.0.0.1:63320/node?ref=6ec895f7-137f-4d74-b261-57427aff568b%2Fi%3A10000001%28org.iets3.core.expr.lookup.interpreter%40transient123%2Forg.iets3.core.expr.lookup.interpreter.plugin%400%29%2F5860825012169343420");
       }
 
       @Override
