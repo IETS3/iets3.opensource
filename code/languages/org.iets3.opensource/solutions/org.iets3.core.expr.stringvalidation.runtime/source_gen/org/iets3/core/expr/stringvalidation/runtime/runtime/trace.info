@@ -1,0 +1,1221 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<debug-info version="2">
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1082485599095:jetbrains.mps.baseLanguage.structure.BlockStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123140:jetbrains.mps.baseLanguage.structure.ConstructorDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1177666668936:jetbrains.mps.baseLanguage.structure.DoWhileStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123155:jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068390468200:jetbrains.mps.baseLanguage.structure.FieldDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1144231330558:jetbrains.mps.baseLanguage.structure.ForStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1144226303539:jetbrains.mps.baseLanguage.structure.ForeachStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123159:jetbrains.mps.baseLanguage.structure.IfStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123165:jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242864:jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242878:jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1070462154015:jetbrains.mps.baseLanguage.structure.StaticFieldDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1081236700938:jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1070475587102:jetbrains.mps.baseLanguage.structure.SuperConstructorInvocation" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1164991038168:jetbrains.mps.baseLanguage.structure.ThrowStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/5351203823916750322:jetbrains.mps.baseLanguage.structure.TryUniversalStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1076505808687:jetbrains.mps.baseLanguage.structure.WhileStatement" />
+  <root nodeRef="r:92c59e9f-983f-4c1f-bcfc-4dc3733c05db(org.iets3.core.expr.stringvalidation.runtime.runtime)/1033047864006164342">
+    <file name="LL.java">
+      <node id="1033047864006179207" at="11,0,12,0" concept="4" trace="list" />
+      <node id="1033047864006178957" at="13,26,14,53" concept="3" />
+      <node id="1033047864006178624" at="15,24,16,48" concept="3" />
+      <node id="1033047864006178620" at="14,53,17,5" concept="6" />
+      <node id="1033047864006178143" at="13,0,19,0" concept="1" trace="LL#(null)V" />
+      <scope id="1033047864006178623" at="15,24,16,48" />
+      <scope id="1033047864006178620" at="14,53,17,5">
+        <var name="t" id="1033047864006178621" />
+      </scope>
+      <scope id="1033047864006178147" at="13,26,17,5" />
+      <scope id="1033047864006178143" at="13,0,19,0">
+        <var name="values" id="1033047864006178339" />
+      </scope>
+      <unit id="1033047864006164342" at="9,0,21,0" name="org.iets3.core.expr.stringvalidation.runtime.runtime.LL" />
+    </file>
+  </root>
+  <root nodeRef="r:92c59e9f-983f-4c1f-bcfc-4dc3733c05db(org.iets3.core.expr.stringvalidation.runtime.runtime)/1033047864018955290">
+    <file name="XIfExistsOccurenceConstraint.java">
+      <unit id="1033047864018955290" at="6,0,8,0" name="org.iets3.core.expr.stringvalidation.runtime.runtime.XIfExistsOccurenceConstraint" />
+    </file>
+  </root>
+  <root nodeRef="r:92c59e9f-983f-4c1f-bcfc-4dc3733c05db(org.iets3.core.expr.stringvalidation.runtime.runtime)/3191633378141808596">
+    <file name="SuccessAndFoundString.java">
+      <node id="3191633378141808816" at="8,0,9,0" concept="4" trace="found" />
+      <node id="3191633378141809205" at="9,0,10,0" concept="4" trace="success" />
+      <node id="3191633378141808820" at="11,63,12,23" concept="3" />
+      <node id="3191633378141809209" at="12,23,13,27" concept="3" />
+      <node id="3191633378141840521" at="16,61,17,28" concept="3" />
+      <node id="3191633378141840527" at="17,28,18,27" concept="3" />
+      <node id="3191633378141817442" at="21,23,22,31" concept="10" />
+      <node id="3191633378142419000" at="25,28,26,43" concept="10" />
+      <node id="3191633378141817104" at="21,0,24,0" concept="8" trace="length#()I" />
+      <node id="3191633378142415082" at="25,0,28,0" concept="8" trace="toString#()Ljava/lang/String;" />
+      <node id="3191633378141808691" at="11,0,15,0" concept="1" trace="SuccessAndFoundString#(ZLjava/lang/String;)V" />
+      <node id="3191633378141840517" at="16,0,20,0" concept="1" trace="SuccessAndFoundString#(ZC)V" />
+      <scope id="3191633378141817108" at="21,23,22,31" />
+      <scope id="3191633378142415086" at="25,28,26,43" />
+      <scope id="3191633378141808695" at="11,63,13,27" />
+      <scope id="3191633378141840520" at="16,61,18,27" />
+      <scope id="3191633378141817104" at="21,0,24,0" />
+      <scope id="3191633378142415082" at="25,0,28,0" />
+      <scope id="3191633378141808691" at="11,0,15,0">
+        <var name="found" id="3191633378141808751" />
+        <var name="success" id="3191633378141808720" />
+      </scope>
+      <scope id="3191633378141840517" at="16,0,20,0">
+        <var name="found" id="3191633378141840535" />
+        <var name="success" id="3191633378141840533" />
+      </scope>
+      <unit id="3191633378141808596" at="6,0,29,0" name="org.iets3.core.expr.stringvalidation.runtime.runtime.SuccessAndFoundString" />
+    </file>
+  </root>
+  <root nodeRef="r:92c59e9f-983f-4c1f-bcfc-4dc3733c05db(org.iets3.core.expr.stringvalidation.runtime.runtime)/465133041721290860">
+    <file name="XAtPositionCheck.java">
+      <node id="465133041721291087" at="8,0,9,0" concept="4" trace="pos" />
+      <node id="465133041721291880" at="10,76,11,16" concept="13" />
+      <node id="465133041721291091" at="11,16,12,19" concept="3" />
+      <node id="465133041721291012" at="10,0,14,0" concept="1" trace="XAtPositionCheck#(Lorg/iets3/core/expr/stringvalidation/runtime/runtime/XCheckKind;Lorg/iets3/core/expr/stringvalidation/runtime/runtime/XAbstractPositionIndicator;)V" />
+      <scope id="465133041721291016" at="10,76,12,19" />
+      <scope id="465133041721291012" at="10,0,14,0">
+        <var name="kind" id="465133041721291669" />
+        <var name="pos" id="465133041721291041" />
+      </scope>
+      <unit id="465133041721290860" at="6,0,17,0" name="org.iets3.core.expr.stringvalidation.runtime.runtime.XAtPositionCheck" />
+    </file>
+  </root>
+  <root nodeRef="r:92c59e9f-983f-4c1f-bcfc-4dc3733c05db(org.iets3.core.expr.stringvalidation.runtime.runtime)/465133041722041953">
+    <file name="XCannotRepeatCheck.java">
+      <node id="465133041722042123" at="8,46,9,16" concept="13" />
+      <node id="465133041722042036" at="8,0,11,0" concept="1" trace="XCannotRepeatCheck#(Lorg/iets3/core/expr/stringvalidation/runtime/runtime/XCheckKind;)V" />
+      <scope id="465133041722042040" at="8,46,9,16" />
+      <scope id="465133041722042036" at="8,0,11,0">
+        <var name="kind" id="465133041722042064" />
+      </scope>
+      <unit id="465133041722041953" at="6,0,13,0" name="org.iets3.core.expr.stringvalidation.runtime.runtime.XCannotRepeatCheck" />
+    </file>
+  </root>
+  <root nodeRef="r:92c59e9f-983f-4c1f-bcfc-4dc3733c05db(org.iets3.core.expr.stringvalidation.runtime.runtime)/465133041722329405">
+    <file name="XPredecessorCheck.java">
+      <node id="465133041722329546" at="8,0,9,0" concept="4" trace="match" />
+      <node id="465133041722330001" at="10,67,11,16" concept="13" />
+      <node id="465133041722329550" at="11,16,12,23" concept="3" />
+      <node id="465133041722329446" at="10,0,14,0" concept="1" trace="XPredecessorCheck#(Lorg/iets3/core/expr/stringvalidation/runtime/runtime/XCheckKind;Lorg/iets3/core/expr/stringvalidation/runtime/runtime/XAbstractMatch;)V" />
+      <scope id="465133041722329450" at="10,67,12,23" />
+      <scope id="465133041722329446" at="10,0,14,0">
+        <var name="kind" id="465133041722329475" />
+        <var name="match" id="465133041722329496" />
+      </scope>
+      <unit id="465133041722329405" at="6,0,16,0" name="org.iets3.core.expr.stringvalidation.runtime.runtime.XPredecessorCheck" />
+    </file>
+  </root>
+  <root nodeRef="r:92c59e9f-983f-4c1f-bcfc-4dc3733c05db(org.iets3.core.expr.stringvalidation.runtime.runtime)/465133041724698728">
+    <file name="XSuccessorCheck.java">
+      <node id="465133041724698730" at="8,0,9,0" concept="4" trace="match" />
+      <node id="465133041724698738" at="10,65,11,16" concept="13" />
+      <node id="465133041724698740" at="11,16,12,23" concept="3" />
+      <node id="465133041724698734" at="10,0,14,0" concept="1" trace="XSuccessorCheck#(Lorg/iets3/core/expr/stringvalidation/runtime/runtime/XCheckKind;Lorg/iets3/core/expr/stringvalidation/runtime/runtime/XAbstractMatch;)V" />
+      <scope id="465133041724698737" at="10,65,12,23" />
+      <scope id="465133041724698734" at="10,0,14,0">
+        <var name="kind" id="465133041724698746" />
+        <var name="match" id="465133041724698748" />
+      </scope>
+      <unit id="465133041724698728" at="6,0,16,0" name="org.iets3.core.expr.stringvalidation.runtime.runtime.XSuccessorCheck" />
+    </file>
+  </root>
+  <root nodeRef="r:92c59e9f-983f-4c1f-bcfc-4dc3733c05db(org.iets3.core.expr.stringvalidation.runtime.runtime)/465133041725506554">
+    <file name="XFailCheck.java">
+      <node id="465133041725507584" at="8,38,9,16" concept="13" />
+      <node id="465133041725507497" at="8,0,11,0" concept="1" trace="XFailCheck#(Lorg/iets3/core/expr/stringvalidation/runtime/runtime/XCheckKind;)V" />
+      <scope id="465133041725507501" at="8,38,9,16" />
+      <scope id="465133041725507497" at="8,0,11,0">
+        <var name="kind" id="465133041725507525" />
+      </scope>
+      <unit id="465133041725506554" at="6,0,13,0" name="org.iets3.core.expr.stringvalidation.runtime.runtime.XFailCheck" />
+    </file>
+  </root>
+  <root nodeRef="r:92c59e9f-983f-4c1f-bcfc-4dc3733c05db(org.iets3.core.expr.stringvalidation.runtime.runtime)/465133041725824061">
+    <file name="XPositionBasedValidationClause.java">
+      <node id="465133041725824207" at="8,0,9,0" concept="4" trace="pos" />
+      <node id="465133041725824213" at="9,0,10,0" concept="4" trace="kind" />
+      <node id="465133041725824216" at="10,0,11,0" concept="4" trace="match" />
+      <node id="465133041725824224" at="12,112,13,19" concept="3" />
+      <node id="465133041725824236" at="13,19,14,21" concept="3" />
+      <node id="465133041725824242" at="14,21,15,23" concept="3" />
+      <node id="465133041725824220" at="12,0,17,0" concept="1" trace="XPositionBasedValidationClause#(Lorg/iets3/core/expr/stringvalidation/runtime/runtime/XAbstractPositionIndicator;Lorg/iets3/core/expr/stringvalidation/runtime/runtime/XCheckKind;Lorg/iets3/core/expr/stringvalidation/runtime/runtime/XAbstractMatch;)V" />
+      <scope id="465133041725824223" at="12,112,15,23" />
+      <scope id="465133041725824220" at="12,0,17,0">
+        <var name="kind" id="465133041725824252" />
+        <var name="match" id="465133041725824254" />
+        <var name="pos" id="465133041725824248" />
+      </scope>
+      <unit id="465133041725824061" at="6,0,20,0" name="org.iets3.core.expr.stringvalidation.runtime.runtime.XPositionBasedValidationClause" />
+    </file>
+  </root>
+  <root nodeRef="r:92c59e9f-983f-4c1f-bcfc-4dc3733c05db(org.iets3.core.expr.stringvalidation.runtime.runtime)/465133041727122698">
+    <file name="XAllSameCharMatcher.java">
+      <node id="465133041727122880" at="8,0,9,0" concept="4" trace="match" />
+      <node id="465133041727122884" at="10,52,11,23" concept="3" />
+      <node id="465133041727122779" at="10,0,13,0" concept="1" trace="XAllSameCharMatcher#(Lorg/iets3/core/expr/stringvalidation/runtime/runtime/XAbstractMatch;)V" />
+      <scope id="465133041727122783" at="10,52,11,23" />
+      <scope id="465133041727122779" at="10,0,13,0">
+        <var name="match" id="465133041727122847" />
+      </scope>
+      <unit id="465133041727122698" at="6,0,15,0" name="org.iets3.core.expr.stringvalidation.runtime.runtime.XAllSameCharMatcher" />
+    </file>
+  </root>
+  <root nodeRef="r:92c59e9f-983f-4c1f-bcfc-4dc3733c05db(org.iets3.core.expr.stringvalidation.runtime.runtime)/465133041727888076">
+    <file name="XDigitMatch.java">
+      <unit id="465133041727888076" at="6,0,8,0" name="org.iets3.core.expr.stringvalidation.runtime.runtime.XDigitMatch" />
+    </file>
+  </root>
+  <root nodeRef="r:92c59e9f-983f-4c1f-bcfc-4dc3733c05db(org.iets3.core.expr.stringvalidation.runtime.runtime)/465133041728366386">
+    <file name="XLetterMatch.java">
+      <unit id="465133041728366386" at="6,0,8,0" name="org.iets3.core.expr.stringvalidation.runtime.runtime.XLetterMatch" />
+    </file>
+  </root>
+  <root nodeRef="r:92c59e9f-983f-4c1f-bcfc-4dc3733c05db(org.iets3.core.expr.stringvalidation.runtime.runtime)/465133041728945284">
+    <file name="XOneOfMatch.java">
+      <node id="465133041728945464" at="9,0,10,0" concept="4" trace="matches" />
+      <node id="465133041728945469" at="11,52,12,27" concept="3" />
+      <node id="465133041728945359" at="11,0,14,0" concept="1" trace="XOneOfMatch#(Ljava/util/List;)V" />
+      <scope id="465133041728945363" at="11,52,12,27" />
+      <scope id="465133041728945359" at="11,0,14,0">
+        <var name="matches" id="465133041728945388" />
+      </scope>
+      <unit id="465133041728945284" at="7,0,16,0" name="org.iets3.core.expr.stringvalidation.runtime.runtime.XOneOfMatch" />
+    </file>
+  </root>
+  <root nodeRef="r:92c59e9f-983f-4c1f-bcfc-4dc3733c05db(org.iets3.core.expr.stringvalidation.runtime.runtime)/465133041729832660">
+    <file name="XSequenceMatch.java">
+      <node id="465133041729832883" at="8,0,9,0" concept="4" trace="howOften" />
+      <node id="465133041729833843" at="9,0,10,0" concept="4" trace="match" />
+      <node id="465133041729832887" at="11,61,12,29" concept="3" />
+      <node id="465133041729833847" at="12,29,13,23" concept="3" />
+      <node id="465133041729832751" at="11,0,15,0" concept="1" trace="XSequenceMatch#(Lorg/iets3/core/expr/stringvalidation/runtime/runtime/XAbstractMatch;I)V" />
+      <scope id="465133041729832755" at="11,61,13,23" />
+      <scope id="465133041729832751" at="11,0,15,0">
+        <var name="howOften" id="465133041729832811" />
+        <var name="match" id="465133041729832780" />
+      </scope>
+      <unit id="465133041729832660" at="6,0,17,0" name="org.iets3.core.expr.stringvalidation.runtime.runtime.XSequenceMatch" />
+    </file>
+  </root>
+  <root nodeRef="r:92c59e9f-983f-4c1f-bcfc-4dc3733c05db(org.iets3.core.expr.stringvalidation.runtime.runtime)/465133041731776925">
+    <file name="XSpecificSequenceElementaryMatch.java">
+      <node id="465133041731777080" at="8,0,9,0" concept="4" trace="value" />
+      <node id="465133041731777084" at="10,57,11,23" concept="3" />
+      <node id="465133041731777018" at="10,0,13,0" concept="1" trace="XSpecificSequenceElementaryMatch#(Ljava/lang/String;)V" />
+      <scope id="465133041731777022" at="10,57,11,23" />
+      <scope id="465133041731777018" at="10,0,13,0">
+        <var name="value" id="465133041731777047" />
+      </scope>
+      <unit id="465133041731776925" at="6,0,15,0" name="org.iets3.core.expr.stringvalidation.runtime.runtime.XSpecificSequenceElementaryMatch" />
+    </file>
+  </root>
+  <root nodeRef="r:92c59e9f-983f-4c1f-bcfc-4dc3733c05db(org.iets3.core.expr.stringvalidation.runtime.runtime)/465133041732450881">
+    <file name="XNumberMatch.java">
+      <unit id="465133041732450881" at="6,0,8,0" name="org.iets3.core.expr.stringvalidation.runtime.runtime.XNumberMatch" />
+    </file>
+  </root>
+  <root nodeRef="r:92c59e9f-983f-4c1f-bcfc-4dc3733c05db(org.iets3.core.expr.stringvalidation.runtime.runtime)/465133041732741031">
+    <file name="XNotLetterOrDigitMatch.java">
+      <unit id="465133041732741031" at="6,0,8,0" name="org.iets3.core.expr.stringvalidation.runtime.runtime.XNotLetterOrDigitMatch" />
+    </file>
+  </root>
+  <root nodeRef="r:92c59e9f-983f-4c1f-bcfc-4dc3733c05db(org.iets3.core.expr.stringvalidation.runtime.runtime)/5001505504946008260">
+    <file name="OccurenceMatchFind.java">
+      <node id="5001505504946008425" at="8,0,9,0" concept="4" trace="position" />
+      <node id="5001505504946008729" at="9,0,10,0" concept="4" trace="whatWasFound" />
+      <node id="7791028896441662861" at="10,0,11,0" concept="4" trace="textAfterFinding" />
+      <node id="7791028896463182513" at="11,0,12,0" concept="4" trace="foundIn" />
+      <node id="5001505504946008429" at="13,107,14,29" concept="3" />
+      <node id="5001505504946008733" at="14,29,15,39" concept="3" />
+      <node id="7791028896441662865" at="15,39,16,45" concept="3" />
+      <node id="7791028896463182517" at="16,45,17,27" concept="3" />
+      <node id="7791028896440835604" at="20,28,21,66" concept="10" />
+      <node id="3191633378113838030" at="24,23,25,38" concept="10" />
+      <node id="3191633378113846121" at="28,23,29,35" concept="10" />
+      <node id="7791028896440835087" at="20,0,23,0" concept="8" trace="toString#()Ljava/lang/String;" />
+      <node id="3191633378113836755" at="24,0,27,0" concept="8" trace="length#()I" />
+      <node id="3191633378113844096" at="28,0,31,0" concept="8" trace="endPos#()I" />
+      <node id="5001505504946008313" at="13,0,19,0" concept="1" trace="OccurenceMatchFind#(Ljava/lang/String;Ljava/lang/String;ILjava/lang/String;)V" />
+      <scope id="7791028896440835091" at="20,28,21,66" />
+      <scope id="3191633378113836759" at="24,23,25,38" />
+      <scope id="3191633378113844099" at="28,23,29,35" />
+      <scope id="7791028896440835087" at="20,0,23,0" />
+      <scope id="3191633378113836755" at="24,0,27,0" />
+      <scope id="3191633378113844096" at="28,0,31,0" />
+      <scope id="5001505504946008317" at="13,107,17,27" />
+      <scope id="5001505504946008313" at="13,0,19,0">
+        <var name="foundIn" id="7791028896463182328" />
+        <var name="position" id="5001505504946008373" />
+        <var name="textAfterFinding" id="7791028896441662419" />
+        <var name="whatWasMatched" id="5001505504946008342" />
+      </scope>
+      <unit id="5001505504946008260" at="6,0,34,0" name="org.iets3.core.expr.stringvalidation.runtime.runtime.OccurenceMatchFind" />
+    </file>
+  </root>
+  <root nodeRef="r:92c59e9f-983f-4c1f-bcfc-4dc3733c05db(org.iets3.core.expr.stringvalidation.runtime.runtime)/5001505504946013949">
+    <file name="Runtime.java">
+      <node id="5001505504946021038" at="16,102,17,99" concept="9" />
+      <node id="5001505504946020964" at="17,99,18,23" concept="9" />
+      <node id="5001505504946021352" at="19,8,20,62" concept="3" />
+      <node id="5001505504946035783" at="21,27,22,144" concept="3" />
+      <node id="5001505504946066592" at="24,29,25,20" concept="10" />
+      <node id="7791028896441598069" at="28,84,29,99" concept="9" />
+      <node id="7791028896441650621" at="30,50,31,35" concept="9" />
+      <node id="7791028896441598094" at="32,61,33,125" concept="3" />
+      <node id="7791028896441598108" at="35,5,36,20" concept="10" />
+      <node id="7791028896464498330" at="39,75,40,99" concept="9" />
+      <node id="7791028896464498339" at="41,50,42,35" concept="9" />
+      <node id="7791028896464498348" at="43,34,44,125" concept="3" />
+      <node id="7791028896464498382" at="46,5,47,20" concept="10" />
+      <node id="7791028896464506109" at="50,74,51,99" concept="9" />
+      <node id="7791028896464506118" at="52,50,53,35" concept="9" />
+      <node id="7791028896464506127" at="54,33,55,125" concept="3" />
+      <node id="7791028896464506156" at="57,5,58,20" concept="10" />
+      <node id="3709229751378892766" at="61,75,62,99" concept="9" />
+      <node id="3709229751378908102" at="62,99,63,40" concept="9" />
+      <node id="3709229751378908107" at="63,40,64,37" concept="9" />
+      <node id="3709229751378892784" at="65,22,66,143" concept="3" />
+      <node id="3709229751378892813" at="67,5,68,20" concept="10" />
+      <node id="7933534378422702488" at="72,23,73,44" concept="10" />
+      <node id="7933534378422704015" at="75,57,76,44" concept="10" />
+      <node id="7933534378422710278" at="78,44,79,44" concept="10" />
+      <node id="7791028896464476968" at="80,5,81,45" concept="9" />
+      <node id="7791028896464478234" at="81,45,82,41" concept="10" />
+      <node id="3191633378144354213" at="85,85,86,47" concept="9" />
+      <node id="3191633378144354220" at="86,47,87,38" concept="10" />
+      <node id="7791028896463066217" at="91,51,92,41" concept="10" />
+      <node id="7791028896463167328" at="94,51,95,35" concept="10" />
+      <node id="7791028896463170546" at="97,50,98,90" concept="10" />
+      <node id="7791028896463079050" at="99,5,100,17" concept="10" />
+      <node id="465133041721651418" at="104,55,105,77" concept="10" />
+      <node id="465133041721651426" at="107,55,108,35" concept="10" />
+      <node id="465133041721690516" at="110,54,111,90" concept="10" />
+      <node id="465133041721651456" at="112,5,113,17" concept="10" />
+      <node id="7791028896464438547" at="117,51,118,21" concept="10" />
+      <node id="7791028896464438563" at="120,51,121,15" concept="10" />
+      <node id="7791028896464438575" at="123,50,124,36" concept="10" />
+      <node id="7791028896464464523" at="125,5,126,14" concept="10" />
+      <node id="6353331678944423559" at="130,55,131,57" concept="10" />
+      <node id="6353331678944403811" at="133,54,134,36" concept="10" />
+      <node id="6353331678944431398" at="135,5,136,13" concept="10" />
+      <node id="3191633378113761176" at="139,131,140,100" concept="9" />
+      <node id="3191633378113800907" at="140,100,141,42" concept="9" />
+      <node id="3191633378113868797" at="142,71,143,88" concept="9" />
+      <node id="3191633378113809074" at="144,32,145,68" concept="3" />
+      <node id="3191633378113881576" at="147,97,148,70" concept="3" />
+      <node id="3191633378113813017" at="150,7,151,35" concept="3" />
+      <node id="3191633378114019168" at="152,5,153,94" concept="9" />
+      <node id="3191633378114004551" at="154,64,155,115" concept="9" />
+      <node id="3191633378113992298" at="155,115,156,71" concept="9" />
+      <node id="3191633378114000101" at="156,71,157,104" concept="9" />
+      <node id="3191633378114059751" at="157,104,158,116" concept="3" />
+      <node id="3191633378114042652" at="160,54,161,154" concept="3" />
+      <node id="3191633378113764894" at="162,5,163,15" concept="10" />
+      <node id="3191633378141520790" at="166,47,167,31" concept="9" />
+      <node id="3191633378141523399" at="167,31,168,102" concept="10" />
+      <node id="5001505504946029383" at="20,62,23,7" concept="7" />
+      <node id="7791028896441707332" at="31,35,34,7" concept="7" />
+      <node id="7791028896464498346" at="42,35,45,7" concept="7" />
+      <node id="7791028896464506125" at="53,35,56,7" concept="7" />
+      <node id="3709229751378908117" at="64,37,67,5" concept="16" />
+      <node id="7933534378422696692" at="71,82,74,5" concept="7" />
+      <node id="7933534378422704013" at="74,5,77,5" concept="7" />
+      <node id="7933534378422710276" at="77,5,80,5" concept="7" />
+      <node id="7791028896463064353" at="90,119,93,5" concept="7" />
+      <node id="7791028896463167322" at="93,5,96,5" concept="7" />
+      <node id="7791028896463170540" at="96,5,99,5" concept="7" />
+      <node id="465133041721651413" at="103,111,106,5" concept="7" />
+      <node id="465133041721651424" at="106,5,109,5" concept="7" />
+      <node id="465133041721690514" at="109,5,112,5" concept="7" />
+      <node id="7791028896464438541" at="116,104,119,5" concept="7" />
+      <node id="7791028896464438557" at="119,5,122,5" concept="7" />
+      <node id="7791028896464438569" at="122,5,125,5" concept="7" />
+      <node id="6353331678944413896" at="129,96,132,5" concept="7" />
+      <node id="6353331678944435218" at="132,5,135,5" concept="7" />
+      <node id="3191633378113821626" at="146,14,149,9" concept="7" />
+      <node id="3191633378114094818" at="159,5,162,5" concept="7" />
+      <node id="3191633378144354209" at="85,0,89,0" concept="12" trace="getStringAtRange#(Ljava/lang/String;II)Lorg/iets3/core/expr/stringvalidation/runtime/runtime/PositionFind;" />
+      <node id="3191633378113820947" at="146,12,150,7" concept="0" />
+      <node id="3191633378141511669" at="166,0,170,0" concept="12" trace="allSameChar#(Ljava/lang/String;)Z" />
+      <node id="5001505504946021302" at="18,23,24,29" concept="2" />
+      <node id="7791028896441631074" at="29,99,35,5" concept="5" />
+      <node id="7791028896464498337" at="40,99,46,5" concept="5" />
+      <node id="7791028896464506116" at="51,99,57,5" concept="5" />
+      <node id="3191633378113893986" at="153,94,159,5" concept="7" />
+      <node id="3191633378113802653" at="143,88,150,7" concept="7" />
+      <node id="3709229751378892761" at="61,0,70,0" concept="12" trace="findAllNumbers#(Ljava/lang/String;)Ljava/util/List;" />
+      <node id="6353331678944403793" at="129,0,138,0" concept="12" trace="getNumericPosition#(Ljava/lang/String;Lorg/iets3/core/expr/stringvalidation/runtime/runtime/XAbstractPositionIndicator;)I" />
+      <node id="7791028896441598064" at="28,0,38,0" concept="12" trace="findAllNotLetterOrDigit#(Ljava/lang/String;)Ljava/util/List;" />
+      <node id="7791028896464498325" at="39,0,49,0" concept="12" trace="findAllLetters#(Ljava/lang/String;)Ljava/util/List;" />
+      <node id="7791028896464506104" at="50,0,60,0" concept="12" trace="findAllDigits#(Ljava/lang/String;)Ljava/util/List;" />
+      <node id="5001505504946062974" at="16,0,27,0" concept="12" trace="findAllSubstringMatches#(Ljava/lang/String;Ljava/lang/String;)Ljava/util/List;" />
+      <node id="3191633378113767197" at="141,42,152,5" concept="5" />
+      <node id="7791028896463088522" at="90,0,102,0" concept="12" trace="isFindingAtPosition#(Lorg/iets3/core/expr/stringvalidation/runtime/runtime/OccurenceMatchFind;Lorg/iets3/core/expr/stringvalidation/runtime/runtime/PositionIndicatorEnum;I)Z" />
+      <node id="465133041721651411" at="103,0,115,0" concept="12" trace="isFindingAtPosition#(Lorg/iets3/core/expr/stringvalidation/runtime/runtime/OccurenceMatchFind;Lorg/iets3/core/expr/stringvalidation/runtime/runtime/XAbstractPositionIndicator;)Z" />
+      <node id="7791028896464438539" at="116,0,128,0" concept="12" trace="getNumericPosition#(Ljava/lang/String;Lorg/iets3/core/expr/stringvalidation/runtime/runtime/PositionIndicatorEnum;I)I" />
+      <node id="7791028896464471285" at="71,0,84,0" concept="12" trace="getStringAtPosition#(Ljava/lang/String;I)Lorg/iets3/core/expr/stringvalidation/runtime/runtime/PositionFind;" />
+      <node id="3191633378114139937" at="139,0,165,0" concept="12" trace="joinAdjacentFindings#(Ljava/lang/String;Ljava/util/List;I)Ljava/util/List;" />
+      <scope id="5001505504946029385" at="21,27,22,144" />
+      <scope id="7791028896441707334" at="32,61,33,125" />
+      <scope id="7791028896464498347" at="43,34,44,125" />
+      <scope id="7791028896464506126" at="54,33,55,125" />
+      <scope id="3709229751378908113" at="65,22,66,143" />
+      <scope id="7933534378422696694" at="72,23,73,44" />
+      <scope id="7933534378422704014" at="75,57,76,44" />
+      <scope id="7933534378422710277" at="78,44,79,44" />
+      <scope id="7791028896463064355" at="91,51,92,41" />
+      <scope id="7791028896463167327" at="94,51,95,35" />
+      <scope id="7791028896463170545" at="97,50,98,90" />
+      <scope id="465133041721651417" at="104,55,105,77" />
+      <scope id="465133041721651425" at="107,55,108,35" />
+      <scope id="465133041721690515" at="110,54,111,90" />
+      <scope id="7791028896464438546" at="117,51,118,21" />
+      <scope id="7791028896464438562" at="120,51,121,15" />
+      <scope id="7791028896464438574" at="123,50,124,36" />
+      <scope id="6353331678944413898" at="130,55,131,57" />
+      <scope id="6353331678944435219" at="133,54,134,36" />
+      <scope id="3191633378113802655" at="144,32,145,68" />
+      <scope id="3191633378113821628" at="147,97,148,70" />
+      <scope id="3191633378114094820" at="160,54,161,154" />
+      <scope id="3191633378144354212" at="85,85,87,38">
+        <var name="s" id="3191633378144354214" />
+      </scope>
+      <scope id="3191633378141511673" at="166,47,168,102">
+        <var name="c" id="3191633378141520791" />
+      </scope>
+      <scope id="3191633378113820948" at="146,14,149,9" />
+      <scope id="5001505504946021306" at="19,8,23,7" />
+      <scope id="7791028896441631076" at="30,50,34,7">
+        <var name="c" id="7791028896441650624" />
+      </scope>
+      <scope id="7791028896464498338" at="41,50,45,7">
+        <var name="c" id="7791028896464498340" />
+      </scope>
+      <scope id="7791028896464506117" at="52,50,56,7">
+        <var name="c" id="7791028896464506119" />
+      </scope>
+      <scope id="3191633378144354209" at="85,0,89,0">
+        <var name="candidate" id="3191633378144354225" />
+        <var name="end" id="3191633378144358960" />
+        <var name="start" id="3191633378144354227" />
+      </scope>
+      <scope id="3191633378113893988" at="154,64,158,116">
+        <var name="firstPos" id="3191633378113992299" />
+        <var name="textAfterwards" id="3191633378114000102" />
+        <var name="totalText" id="3191633378114004552" />
+      </scope>
+      <scope id="3191633378141511669" at="166,0,170,0">
+        <var name="s" id="3191633378141513928" />
+      </scope>
+      <scope id="7791028896441631074" at="29,99,35,5">
+        <var name="i" id="7791028896441631077" />
+      </scope>
+      <scope id="7791028896464498337" at="40,99,46,5">
+        <var name="i" id="7791028896464498372" />
+      </scope>
+      <scope id="7791028896464506116" at="51,99,57,5">
+        <var name="i" id="7791028896464506146" />
+      </scope>
+      <scope id="3709229751378892765" at="61,75,68,20">
+        <var name="findings" id="3709229751378892767" />
+        <var name="m" id="3709229751378908106" />
+        <var name="p" id="3709229751378908101" />
+      </scope>
+      <scope id="6353331678944403794" at="129,96,136,13" />
+      <scope id="7791028896441598068" at="28,84,36,20">
+        <var name="findings" id="7791028896441598070" />
+      </scope>
+      <scope id="7791028896464498329" at="39,75,47,20">
+        <var name="findings" id="7791028896464498331" />
+      </scope>
+      <scope id="7791028896464506108" at="50,74,58,20">
+        <var name="findings" id="7791028896464506110" />
+      </scope>
+      <scope id="5001505504946062978" at="16,102,25,20">
+        <var name="findings" id="5001505504946021044" />
+        <var name="lastMatch" id="5001505504946020967" />
+      </scope>
+      <scope id="3709229751378892761" at="61,0,70,0">
+        <var name="candidate" id="3709229751378892815" />
+      </scope>
+      <scope id="6353331678944403793" at="129,0,138,0">
+        <var name="candidate" id="6353331678944403822" />
+        <var name="indicator" id="6353331678944403824" />
+      </scope>
+      <scope id="3191633378113767199" at="142,71,151,35">
+        <var name="currentFinding" id="3191633378113868798" />
+      </scope>
+      <scope id="7791028896441598064" at="28,0,38,0">
+        <var name="candidate" id="7791028896441598110" />
+      </scope>
+      <scope id="7791028896464498325" at="39,0,49,0">
+        <var name="candidate" id="7791028896464498384" />
+      </scope>
+      <scope id="7791028896464506104" at="50,0,60,0">
+        <var name="candidate" id="7791028896464506158" />
+      </scope>
+      <scope id="7791028896463058491" at="90,119,100,17" />
+      <scope id="465133041721651412" at="103,111,113,17" />
+      <scope id="7791028896464438540" at="116,104,126,14" />
+      <scope id="5001505504946062974" at="16,0,27,0">
+        <var name="candidate" id="5001505504946063108" />
+        <var name="toBeFound" id="5001505504946063145" />
+      </scope>
+      <scope id="7791028896464471289" at="71,82,82,41">
+        <var name="s" id="7791028896464476969" />
+      </scope>
+      <scope id="3191633378113767197" at="141,42,152,5">
+        <var name="i" id="3191633378113767200" />
+      </scope>
+      <scope id="7791028896463088522" at="90,0,102,0">
+        <var name="finding" id="7791028896463058811" />
+        <var name="indicator" id="7791028896463058943" />
+        <var name="payload" id="6353331678942483628" />
+      </scope>
+      <scope id="465133041721651411" at="103,0,115,0">
+        <var name="finding" id="465133041721651458" />
+        <var name="indicator" id="465133041721651460" />
+      </scope>
+      <scope id="7791028896464438539" at="116,0,128,0">
+        <var name="candidate" id="7791028896464438593" />
+        <var name="indicator" id="6353331678942600842" />
+        <var name="payload" id="6353331678942600844" />
+      </scope>
+      <scope id="7791028896464471285" at="71,0,84,0">
+        <var name="candidate" id="7791028896464471832" />
+        <var name="position" id="7791028896464471971" />
+      </scope>
+      <scope id="3191633378113757276" at="139,131,163,15">
+        <var name="aSequence" id="3191633378113761179" />
+        <var name="lastFinding" id="3191633378113800908" />
+        <var name="res" id="3191633378114019171" />
+      </scope>
+      <scope id="3191633378114139937" at="139,0,165,0">
+        <var name="candidate" id="3191633378113941437" />
+        <var name="findings" id="3191633378113759944" />
+        <var name="minLength" id="3191633378114124563" />
+      </scope>
+      <unit id="5001505504946013949" at="14,0,172,0" name="org.iets3.core.expr.stringvalidation.runtime.runtime.Runtime" />
+    </file>
+  </root>
+  <root nodeRef="r:92c59e9f-983f-4c1f-bcfc-4dc3733c05db(org.iets3.core.expr.stringvalidation.runtime.runtime)/5001505504946072421">
+    <file name="Constants.java">
+      <node id="5001505504946072482" at="8,0,9,0" concept="11" trace="CANDIDATE_STRING" />
+      <node id="5001505504946072697" at="9,0,10,0" concept="11" trace="OCCURENCE_BASED_FINDING" />
+      <node id="7791028896464521106" at="10,0,11,0" concept="11" trace="USE_MATCH_AS_FINDER" />
+      <node id="7791028896464534843" at="11,0,12,0" concept="11" trace="POSITION_BASED_FIND" />
+      <unit id="5001505504946072421" at="6,0,14,0" name="org.iets3.core.expr.stringvalidation.runtime.runtime.Constants" />
+    </file>
+  </root>
+  <root nodeRef="r:92c59e9f-983f-4c1f-bcfc-4dc3733c05db(org.iets3.core.expr.stringvalidation.runtime.runtime)/6353331678942467471">
+    <file name="PositionIndicatorEnum.java">
+      <unit id="6353331678942467471" at="6,0,11,0" name="org.iets3.core.expr.stringvalidation.runtime.runtime.PositionIndicatorEnum" />
+    </file>
+  </root>
+  <root nodeRef="r:92c59e9f-983f-4c1f-bcfc-4dc3733c05db(org.iets3.core.expr.stringvalidation.runtime.runtime)/6353331678943484956">
+    <file name="XExecutor.java">
+      <node id="6353331678944033091" at="20,0,21,0" concept="4" trace="data" />
+      <node id="6353331678944113103" at="21,19,22,13" concept="3" />
+      <node id="6353331678944085061" at="24,47,25,50" concept="3" />
+      <node id="6353331678944185404" at="27,38,28,54" concept="9" />
+      <node id="6353331678944169660" at="29,20,30,74" concept="9" />
+      <node id="6353331678944264782" at="30,74,31,51" concept="9" />
+      <node id="6353331678944277239" at="32,24,33,19" concept="10" />
+      <node id="6353331678944237552" at="34,9,35,12" concept="3" />
+      <node id="6353331678944255270" at="36,20,37,22" concept="10" />
+      <node id="6353331678944108831" at="41,24,42,97" concept="3" />
+      <node id="6353331678944118017" at="44,23,45,91" concept="3" />
+      <node id="6353331678944076737" at="47,39,48,48" concept="10" />
+      <node id="6353331678943486137" at="52,0,53,0" concept="4" trace="expr" />
+      <node id="6353331678944291278" at="53,0,54,0" concept="4" trace="xenv" />
+      <node id="6003712360672327025" at="57,69,58,47" concept="10" />
+      <node id="6353331678943486141" at="61,52,62,21" concept="3" />
+      <node id="465133041727344227" at="66,47,67,68" concept="9" />
+      <node id="3191633378141488035" at="68,77,69,101" concept="9" />
+      <node id="3191633378141549559" at="69,101,70,99" concept="10" />
+      <node id="3191633378142322717" at="71,14,72,90" concept="9" />
+      <node id="3191633378141740730" at="73,31,74,23" concept="10" />
+      <node id="3191633378141715133" at="75,9,76,98" concept="10" />
+      <node id="7791028896464520195" at="79,77,80,76" concept="9" />
+      <node id="7791028896464520203" at="80,76,81,48" concept="10" />
+      <node id="7791028896464542598" at="82,14,83,91" concept="9" />
+      <node id="7933534378422011755" at="84,50,85,54" concept="10" />
+      <node id="3191633378141813544" at="86,16,87,51" concept="9" />
+      <node id="7791028896464546611" at="87,51,88,75" concept="10" />
+      <node id="7791028896464497771" at="92,77,93,76" concept="9" />
+      <node id="7791028896464497779" at="93,76,94,49" concept="10" />
+      <node id="7791028896464542009" at="95,14,96,89" concept="9" />
+      <node id="5216254839084887187" at="97,50,98,56" concept="10" />
+      <node id="3191633378141832223" at="99,16,100,51" concept="9" />
+      <node id="7791028896464547024" at="100,51,101,71" concept="10" />
+      <node id="3709229751378880475" at="105,77,106,76" concept="9" />
+      <node id="3709229751378880483" at="106,76,107,49" concept="10" />
+      <node id="3709229751378880493" at="108,14,109,91" concept="9" />
+      <node id="7933534378422305830" at="110,50,111,56" concept="10" />
+      <node id="7933534378422305842" at="112,16,113,51" concept="9" />
+      <node id="3709229751378880511" at="113,51,114,75" concept="10" />
+      <node id="7791028896441683168" at="118,77,119,76" concept="9" />
+      <node id="7791028896441683176" at="119,76,120,58" concept="10" />
+      <node id="7791028896464542246" at="121,14,122,91" concept="9" />
+      <node id="7933534378422468812" at="123,50,124,56" concept="10" />
+      <node id="7933534378422468824" at="125,16,126,51" concept="9" />
+      <node id="7791028896464547615" at="126,51,127,99" concept="10" />
+      <node id="465133041729993432" at="130,49,131,57" concept="9" />
+      <node id="7791028896465008552" at="132,77,133,76" concept="9" />
+      <node id="3191633378113735879" at="133,76,134,106" concept="9" />
+      <node id="7791028896465008560" at="134,106,135,92" concept="10" />
+      <node id="465133041730261185" at="137,13,138,22" concept="3" />
+      <node id="3191633378141735548" at="138,22,139,93" concept="9" />
+      <node id="3191633378141740761" at="139,93,140,55" concept="9" />
+      <node id="3191633378141785200" at="140,55,141,26" concept="9" />
+      <node id="465133041731016186" at="142,55,143,92" concept="9" />
+      <node id="465133041730940561" at="143,92,144,57" concept="3" />
+      <node id="3191633378141869123" at="144,57,145,98" concept="9" />
+      <node id="3191633378141795097" at="146,40,147,32" concept="10" />
+      <node id="3191633378141799035" at="148,13,149,52" concept="3" />
+      <node id="3191633378142841171" at="150,11,151,66" concept="9" />
+      <node id="3191633378141798518" at="151,66,152,60" concept="10" />
+      <node id="465133041731394000" at="153,19,154,21" concept="3" />
+      <node id="465133041731908580" at="157,67,158,92" concept="9" />
+      <node id="5001505504946018013" at="159,77,160,76" concept="9" />
+      <node id="7791028896444810374" at="160,76,161,102" concept="9" />
+      <node id="5001505504946071916" at="161,102,162,24" concept="10" />
+      <node id="7791028896464542444" at="163,14,164,91" concept="9" />
+      <node id="7791028896464555338" at="164,91,165,104" concept="10" />
+      <node id="465133041729364020" at="167,46,168,53" concept="9" />
+      <node id="7791028896464565257" at="169,77,170,76" concept="9" />
+      <node id="7791028896464567893" at="170,76,171,98" concept="9" />
+      <node id="7791028896464570237" at="172,76,173,116" concept="3" />
+      <node id="7791028896464565265" at="174,9,175,19" concept="10" />
+      <node id="7791028896464578034" at="176,14,177,91" concept="9" />
+      <node id="3191633378141855128" at="178,76,179,79" concept="9" />
+      <node id="7791028896464583321" at="180,31,181,26" concept="10" />
+      <node id="7791028896464581648" at="183,9,184,54" concept="10" />
+      <node id="465133041734752117" at="186,12,187,94" concept="14" />
+      <node id="465133041723249452" at="192,28,193,29" concept="9" />
+      <node id="465133041723302922" at="194,27,195,20" concept="10" />
+      <node id="465133041723334190" at="197,29,198,47" concept="10" />
+      <node id="465133041723480277" at="200,5,201,13" concept="10" />
+      <node id="465133041721437223" at="205,44,206,63" concept="9" />
+      <node id="5001505504946107196" at="206,63,207,105" concept="9" />
+      <node id="465133041721702227" at="207,105,208,54" concept="9" />
+      <node id="5001505504946117941" at="210,59,211,76" concept="10" />
+      <node id="7791028896441743678" at="215,56,216,78" concept="10" />
+      <node id="5001505504946126407" at="218,7,219,30" concept="10" />
+      <node id="465133041722153910" at="220,53,221,69" concept="9" />
+      <node id="465133041722107484" at="221,69,222,105" concept="9" />
+      <node id="7791028896441740559" at="224,72,225,87" concept="10" />
+      <node id="7791028896441772720" at="229,75,230,87" concept="10" />
+      <node id="7791028896441740581" at="232,7,233,30" concept="10" />
+      <node id="465133041722415634" at="234,52,235,64" concept="9" />
+      <node id="3191633378144955853" at="235,64,236,105" concept="9" />
+      <node id="3191633378144978152" at="236,105,237,76" concept="9" />
+      <node id="3191633378144965761" at="237,76,238,33" concept="9" />
+      <node id="3191633378144973160" at="239,21,240,32" concept="10" />
+      <node id="465133041722573634" at="242,11,243,20" concept="3" />
+      <node id="465133041722621894" at="243,20,244,55" concept="3" />
+      <node id="3191633378145102586" at="244,55,245,87" concept="9" />
+      <node id="465133041722730214" at="245,87,246,61" concept="3" />
+      <node id="3191633378145089502" at="246,61,247,106" concept="9" />
+      <node id="4809115475674035791" at="247,106,248,98" concept="9" />
+      <node id="3191633378145092597" at="249,35,250,34" concept="10" />
+      <node id="3191633378145092786" at="251,16,252,93" concept="10" />
+      <node id="465133041722889867" at="254,17,255,19" concept="3" />
+      <node id="465133041724813385" at="257,50,258,60" concept="9" />
+      <node id="5216254839084039329" at="258,60,259,105" concept="9" />
+      <node id="5216254839084039338" at="259,105,260,76" concept="9" />
+      <node id="5216254839084039347" at="260,76,261,33" concept="9" />
+      <node id="5216254839084039355" at="262,42,263,32" concept="10" />
+      <node id="465133041725046637" at="265,11,266,20" concept="3" />
+      <node id="465133041725046652" at="266,20,267,55" concept="3" />
+      <node id="5216254839084039378" at="267,55,268,85" concept="9" />
+      <node id="465133041725144348" at="268,85,269,59" concept="3" />
+      <node id="5216254839084039396" at="269,59,270,106" concept="9" />
+      <node id="4809115475674307405" at="270,106,271,98" concept="9" />
+      <node id="5216254839084039408" at="272,22,273,34" concept="10" />
+      <node id="5216254839084039416" at="274,16,275,91" concept="10" />
+      <node id="465133041725284571" at="277,17,278,19" concept="3" />
+      <node id="7791028896441864726" at="280,45,281,105" concept="9" />
+      <node id="7791028896441864378" at="281,105,282,72" concept="10" />
+      <node id="465133041734647371" at="283,12,284,94" concept="14" />
+      <node id="6353331678943965108" at="288,68,289,73" concept="9" />
+      <node id="6353331678944476921" at="290,56,291,84" concept="9" />
+      <node id="3191633378144335709" at="291,84,292,76" concept="9" />
+      <node id="3191633378144335718" at="292,76,293,80" concept="9" />
+      <node id="3191633378144342877" at="293,80,294,76" concept="9" />
+      <node id="3191633378144335726" at="295,48,296,78" concept="9" />
+      <node id="6353331678944551172" at="296,78,297,62" concept="3" />
+      <node id="3191633378144335738" at="297,62,298,76" concept="9" />
+      <node id="3191633378144335747" at="298,76,299,96" concept="9" />
+      <node id="6353331678944968484" at="300,51,301,132" concept="3" />
+      <node id="6353331678945041927" at="302,58,303,144" concept="3" />
+      <node id="6353331678945576321" at="306,67,307,96" concept="9" />
+      <node id="6353331678945607666" at="307,96,308,52" concept="3" />
+      <node id="6353331678945804081" at="308,52,309,59" concept="9" />
+      <node id="5001505504946015125" at="309,59,310,94" concept="9" />
+      <node id="6353331678946063380" at="311,70,312,59" concept="3" />
+      <node id="5001505504946095269" at="313,144,314,55" concept="9" />
+      <node id="6353331678946446740" at="315,46,316,71" concept="3" />
+      <node id="6353331678946603119" at="319,7,320,114" concept="9" />
+      <node id="3709229751378463322" at="321,29,322,92" concept="9" />
+      <node id="6353331678946745504" at="323,81,324,154" concept="3" />
+      <node id="6353331678946946080" at="325,87,326,154" concept="3" />
+      <node id="465133041726096835" at="329,66,330,90" concept="9" />
+      <node id="7791028896464467534" at="330,90,331,76" concept="9" />
+      <node id="465133041725998628" at="331,76,332,68" concept="9" />
+      <node id="7791028896464597839" at="332,68,333,78" concept="9" />
+      <node id="465133041726307521" at="333,78,334,60" concept="3" />
+      <node id="7791028896464490029" at="334,60,335,72" concept="9" />
+      <node id="7791028896464585747" at="335,72,336,92" concept="9" />
+      <node id="465133041726819497" at="337,49,338,128" concept="3" />
+      <node id="465133041726819517" at="339,56,340,140" concept="3" />
+      <node id="465133041734389075" at="342,12,343,96" concept="14" />
+      <node id="6353331678943899814" at="344,5,345,18" concept="10" />
+      <node id="6353331678944305733" at="349,29,350,57" concept="3" />
+      <node id="6353331678943506089" at="350,57,351,70" concept="9" />
+      <node id="6353331678943522283" at="352,82,353,87" concept="3" />
+      <node id="6353331678943542982" at="354,5,355,15" concept="10" />
+      <node id="7933534378422224140" at="361,52,362,40" concept="10" />
+      <node id="465133041727681466" at="186,10,188,5" concept="0" />
+      <node id="3191633378145092665" at="251,14,253,9" concept="0" />
+      <node id="5216254839084039414" at="274,14,276,9" concept="0" />
+      <node id="465133041721388603" at="283,10,285,5" concept="0" />
+      <node id="6353331678947935290" at="342,10,344,5" concept="0" />
+      <node id="6353331678944057344" at="21,0,24,0" concept="1" trace="XEnv#()V" />
+      <node id="6353331678944069770" at="24,0,27,0" concept="8" trace="put#(Ljava/lang/Object;Ljava/lang/Object;)V" />
+      <node id="6353331678944269048" at="31,51,34,9" concept="7" />
+      <node id="6353331678944246974" at="35,12,38,9" concept="7" />
+      <node id="6353331678944099789" at="41,0,44,0" concept="8" trace="push#()V" />
+      <node id="6353331678944114287" at="44,0,47,0" concept="8" trace="pop#()V" />
+      <node id="6353331678944074569" at="47,0,50,0" concept="8" trace="curr#()Ljava/util/Map;" />
+      <node id="6003712360671364533" at="57,0,60,0" concept="8" trace="makeValidationError#(Ljava/lang/Object;Ljava/lang/String;)Ljava/lang/String;" />
+      <node id="6353331678943485038" at="61,0,64,0" concept="1" trace="XExecutor#(Lorg/iets3/core/expr/stringvalidation/runtime/runtime/XValidateStringExpression;)V" />
+      <node id="3191633378141740613" at="72,90,75,9" concept="7" />
+      <node id="7933534378421983466" at="86,14,89,9" concept="0" />
+      <node id="5216254839084885805" at="99,14,102,9" concept="0" />
+      <node id="7933534378422305840" at="112,14,115,9" concept="0" />
+      <node id="7933534378422468822" at="125,14,128,9" concept="0" />
+      <node id="3191633378141793264" at="145,98,148,13" concept="7" />
+      <node id="7791028896464529929" at="163,12,166,7" concept="0" />
+      <node id="7791028896464568312" at="171,98,174,9" concept="6" />
+      <node id="7791028896464582019" at="179,79,182,11" concept="7" />
+      <node id="465133041723206682" at="193,29,196,7" concept="7" />
+      <node id="465133041723334188" at="196,7,199,7" concept="7" />
+      <node id="7791028896463088248" at="209,56,212,9" concept="7" />
+      <node id="7791028896441743676" at="214,58,217,9" concept="7" />
+      <node id="7791028896441740557" at="223,58,226,9" concept="7" />
+      <node id="7791028896441772718" at="228,60,231,9" concept="7" />
+      <node id="3191633378144966426" at="238,33,241,7" concept="7" />
+      <node id="5216254839084039353" at="261,33,264,7" concept="7" />
+      <node id="5001505504946095474" at="314,55,317,11" concept="7" />
+      <node id="5001505504945988523" at="351,70,354,5" concept="6" />
+      <node id="7933534378422224140" at="361,0,364,0" concept="12" trace="isEmptyString#(Ljava/lang/String;)Z" />
+      <node id="5001505504946107331" at="208,54,213,7" concept="7" />
+      <node id="7791028896441743674" at="213,7,218,7" concept="7" />
+      <node id="7791028896441740555" at="222,105,227,7" concept="7" />
+      <node id="7791028896441772716" at="227,7,232,7" concept="7" />
+      <node id="3191633378145090335" at="248,98,253,9" concept="7" />
+      <node id="5216254839084039406" at="271,98,276,9" concept="7" />
+      <node id="3191633378144335759" at="299,96,304,9" concept="7" />
+      <node id="3709229751378475820" at="322,92,327,9" concept="7" />
+      <node id="465133041726819495" at="336,92,341,7" concept="7" />
+      <node id="3191633378141488069" at="71,12,77,7" concept="0" />
+      <node id="7933534378421854476" at="83,91,89,9" concept="7" />
+      <node id="5216254839084882294" at="96,89,102,9" concept="7" />
+      <node id="7933534378422305828" at="109,91,115,9" concept="7" />
+      <node id="7933534378422468810" at="122,91,128,9" concept="7" />
+      <node id="7791028896464578321" at="177,91,183,9" concept="6" />
+      <node id="5001505504946061259" at="312,59,318,9" concept="6" />
+      <node id="7791028896464533866" at="82,12,90,7" concept="0" />
+      <node id="7791028896464533039" at="95,12,103,7" concept="0" />
+      <node id="3709229751378880491" at="108,12,116,7" concept="0" />
+      <node id="7791028896464531970" at="121,12,129,7" concept="0" />
+      <node id="7791028896464526486" at="158,92,166,7" concept="7" />
+      <node id="3709229751378426536" at="320,114,328,7" concept="7" />
+      <node id="6353331678943486369" at="349,0,357,0" concept="8" trace="run#()Ljava/util/List;" />
+      <node id="3191633378141741934" at="141,26,150,11" concept="5" />
+      <node id="7791028896464565273" at="176,12,185,7" concept="0" />
+      <node id="465133041723161900" at="191,47,200,5" concept="7" />
+      <node id="5001505504946091325" at="310,94,319,7" concept="6" />
+      <node id="3191633378141488025" at="67,68,77,7" concept="7" />
+      <node id="6353331678944177293" at="28,54,39,7" concept="16" />
+      <node id="3191633378144367022" at="294,76,305,7" concept="5" />
+      <node id="7791028896464533859" at="78,46,90,7" concept="7" />
+      <node id="7791028896464533032" at="91,47,103,7" concept="7" />
+      <node id="3709229751378880473" at="104,47,116,7" concept="7" />
+      <node id="7791028896464531963" at="117,57,129,7" concept="7" />
+      <node id="465133041723039237" at="191,0,203,0" concept="8" trace="singleMatchOrFirst#(Ljava/lang/Object;)Ljava/lang/Object;" />
+      <node id="6353331678944093721" at="27,0,41,0" concept="8" trace="gettun#(Ljava/lang/Object;)Ljava/lang/Object;" />
+      <node id="3191633378144921542" at="241,7,256,7" concept="15" />
+      <node id="5216254839084039361" at="264,7,279,7" concept="15" />
+      <node id="7791028896464565255" at="168,53,185,7" concept="7" />
+      <node id="3191633378141767234" at="136,14,155,9" concept="15" />
+      <node id="7791028896465008568" at="136,12,156,7" concept="0" />
+      <node id="7791028896465008550" at="131,57,156,7" concept="7" />
+      <node id="6353331678943887181" at="289,73,344,5" concept="7" />
+      <node id="6353331678943531529" at="288,0,347,0" concept="8" trace="runClause#(Lorg/iets3/core/expr/stringvalidation/runtime/runtime/XAbstractValidationClause;)Ljava/util/List;" />
+      <node id="465133041721378195" at="204,77,285,5" concept="7" />
+      <node id="6353331678946258504" at="204,0,287,0" concept="8" trace="runOccurenceBasedCheck#(Lorg/iets3/core/expr/stringvalidation/runtime/runtime/XAbstractOccurenceBasedCheck;)Ljava/lang/Object;" />
+      <node id="465133041727205090" at="65,49,188,5" concept="7" />
+      <node id="6353331678944803021" at="65,0,190,0" concept="8" trace="runMatch#(Lorg/iets3/core/expr/stringvalidation/runtime/runtime/XAbstractMatch;)Ljava/lang/Object;" />
+      <scope id="6353331678944057348" at="21,19,22,13" />
+      <scope id="6353331678944069773" at="24,47,25,50" />
+      <scope id="6353331678944269050" at="32,24,33,19" />
+      <scope id="6353331678944246976" at="36,20,37,22" />
+      <scope id="6353331678944099790" at="41,24,42,97" />
+      <scope id="6353331678944114288" at="44,23,45,91" />
+      <scope id="6353331678944074573" at="47,39,48,48" />
+      <scope id="6003712360671364537" at="57,69,58,47" />
+      <scope id="6353331678943485042" at="61,52,62,21" />
+      <scope id="3191633378141740615" at="73,31,74,23" />
+      <scope id="7933534378421854478" at="84,50,85,54" />
+      <scope id="5216254839084882296" at="97,50,98,56" />
+      <scope id="7933534378422305829" at="110,50,111,56" />
+      <scope id="7933534378422468811" at="123,50,124,56" />
+      <scope id="3191633378141793266" at="146,40,147,32" />
+      <scope id="3191633378141768942" at="153,19,154,21" />
+      <scope id="7791028896464568318" at="172,76,173,116" />
+      <scope id="7791028896464582021" at="180,31,181,26" />
+      <scope id="465133041727681467" at="186,12,187,94" />
+      <scope id="465133041723206684" at="194,27,195,20" />
+      <scope id="465133041723334189" at="197,29,198,47" />
+      <scope id="7791028896463088250" at="210,59,211,76" />
+      <scope id="7791028896441743677" at="215,56,216,78" />
+      <scope id="7791028896441740558" at="224,72,225,87" />
+      <scope id="7791028896441772719" at="229,75,230,87" />
+      <scope id="3191633378144966428" at="239,21,240,32" />
+      <scope id="3191633378145090337" at="249,35,250,34" />
+      <scope id="3191633378145092666" at="251,16,252,93" />
+      <scope id="3191633378144931360" at="254,17,255,19" />
+      <scope id="5216254839084039354" at="262,42,263,32" />
+      <scope id="5216254839084039407" at="272,22,273,34" />
+      <scope id="5216254839084039415" at="274,16,275,91" />
+      <scope id="5216254839084039428" at="277,17,278,19" />
+      <scope id="465133041721388604" at="283,12,284,94" />
+      <scope id="3191633378144335760" at="300,51,301,132" />
+      <scope id="3191633378144335782" at="302,58,303,144" />
+      <scope id="5001505504946095476" at="315,46,316,71" />
+      <scope id="3709229751378475822" at="323,81,324,154" />
+      <scope id="3709229751378511743" at="325,87,326,154" />
+      <scope id="465133041726819496" at="337,49,338,128" />
+      <scope id="465133041726819516" at="339,56,340,140" />
+      <scope id="6353331678947935291" at="342,12,343,96" />
+      <scope id="5001505504945988529" at="352,82,353,87" />
+      <scope id="7933534378422224140" at="361,52,362,40" />
+      <scope id="3191633378141488026" at="68,77,70,99">
+        <var name="findings" id="3191633378141488036" />
+      </scope>
+      <scope id="7791028896464533860" at="79,77,81,48">
+        <var name="theString" id="7791028896464520196" />
+      </scope>
+      <scope id="7933534378421983467" at="86,16,88,75">
+        <var name="c0" id="3191633378141813545" />
+      </scope>
+      <scope id="7791028896464533033" at="92,77,94,49">
+        <var name="theString" id="7791028896464497772" />
+      </scope>
+      <scope id="5216254839084885806" at="99,16,101,71">
+        <var name="c0" id="3191633378141832224" />
+      </scope>
+      <scope id="3709229751378880474" at="105,77,107,49">
+        <var name="theString" id="3709229751378880476" />
+      </scope>
+      <scope id="7933534378422305841" at="112,16,114,75">
+        <var name="c0" id="7933534378422305843" />
+      </scope>
+      <scope id="7791028896464531964" at="118,77,120,58">
+        <var name="theString" id="7791028896441683169" />
+      </scope>
+      <scope id="7933534378422468823" at="125,16,127,99">
+        <var name="c0" id="7933534378422468825" />
+      </scope>
+      <scope id="7791028896464529930" at="163,14,165,104">
+        <var name="finding" id="7791028896464542445" />
+      </scope>
+      <scope id="465133041725536421" at="280,45,282,72">
+        <var name="finding" id="7791028896441864729" />
+      </scope>
+      <scope id="6353331678944057344" at="21,0,24,0" />
+      <scope id="6353331678944069770" at="24,0,27,0">
+        <var name="key" id="6353331678944070221" />
+        <var name="value" id="6353331678944071420" />
+      </scope>
+      <scope id="6353331678944099789" at="41,0,44,0" />
+      <scope id="6353331678944114287" at="44,0,47,0" />
+      <scope id="6353331678944074569" at="47,0,50,0" />
+      <scope id="6003712360671364533" at="57,0,60,0">
+        <var name="finding" id="6003712360671417989" />
+        <var name="message" id="6003712360671432717" />
+      </scope>
+      <scope id="6353331678943485038" at="61,0,64,0">
+        <var name="expr" id="6353331678943485122" />
+      </scope>
+      <scope id="7791028896465008551" at="132,77,135,92">
+        <var name="candidate" id="7791028896465008553" />
+        <var name="separateFindings" id="3191633378113735880" />
+      </scope>
+      <scope id="7791028896464526488" at="159,77,162,24">
+        <var name="findings" id="7791028896444810375" />
+        <var name="theString" id="5001505504946018014" />
+      </scope>
+      <scope id="7791028896464568312" at="171,98,174,9">
+        <var name="m" id="7791028896464568314" />
+      </scope>
+      <scope id="5001505504946107333" at="209,56,212,9" />
+      <scope id="7791028896441743675" at="214,58,217,9" />
+      <scope id="7791028896441740556" at="223,58,226,9" />
+      <scope id="7791028896441772717" at="228,60,231,9" />
+      <scope id="5001505504945988523" at="351,70,354,5">
+        <var name="clause" id="5001505504945988525" />
+      </scope>
+      <scope id="7933534378422224140" at="361,0,364,0">
+        <var name="str" id="7933534378422224140" />
+      </scope>
+      <scope id="7791028896464578327" at="178,76,182,11">
+        <var name="option" id="3191633378141855129" />
+      </scope>
+      <scope id="5001505504946061265" at="313,144,317,11">
+        <var name="error" id="5001505504946095270" />
+      </scope>
+      <scope id="3191633378141488070" at="71,14,76,98">
+        <var name="inner" id="3191633378142322718" />
+      </scope>
+      <scope id="7791028896464565256" at="169,77,175,19">
+        <var name="all" id="7791028896464567899" />
+        <var name="theString" id="7791028896464565258" />
+      </scope>
+      <scope id="7791028896464578321" at="177,91,183,9">
+        <var name="m" id="7791028896464578323" />
+      </scope>
+      <scope id="5001505504946061259" at="312,59,318,9">
+        <var name="check" id="5001505504946061261" />
+      </scope>
+      <scope id="3709229751378426538" at="321,29,327,9">
+        <var name="moreFoundThanGiven" id="3709229751378463325" />
+      </scope>
+      <scope id="6353331678943486373" at="349,29,355,15">
+        <var name="res" id="6353331678943506092" />
+      </scope>
+      <scope id="7791028896464533867" at="82,14,89,9">
+        <var name="finding" id="7791028896464542599" />
+      </scope>
+      <scope id="7791028896464533040" at="95,14,102,9">
+        <var name="finding" id="7791028896464542010" />
+      </scope>
+      <scope id="3709229751378880492" at="108,14,115,9">
+        <var name="finding" id="3709229751378880494" />
+      </scope>
+      <scope id="7791028896464531971" at="121,14,128,9">
+        <var name="finding" id="7791028896464542247" />
+      </scope>
+      <scope id="3191633378141741936" at="142,55,149,52">
+        <var name="innermatch" id="3191633378141869124" />
+        <var name="pbf" id="465133041731016187" />
+      </scope>
+      <scope id="465133041723161902" at="192,28,199,7">
+        <var name="list" id="465133041723249453" />
+      </scope>
+      <scope id="5001505504946091331" at="311,70,318,9" />
+      <scope id="7791028896464565274" at="176,14,184,54">
+        <var name="finding" id="7791028896464578037" />
+      </scope>
+      <scope id="6353331678943486369" at="349,0,357,0" />
+      <scope id="6353331678944177295" at="29,20,38,9">
+        <var name="c" id="6353331678944169663" />
+        <var name="v" id="6353331678944264783" />
+      </scope>
+      <scope id="3191633378141741934" at="141,26,150,11">
+        <var name="i" id="3191633378141741937" />
+      </scope>
+      <scope id="465133041731814668" at="157,67,166,7">
+        <var name="specSeq" id="465133041731908581" />
+      </scope>
+      <scope id="3191633378144367024" at="295,48,304,9">
+        <var name="didTheMatchMatch" id="3191633378144335748" />
+        <var name="positionFind" id="3191633378144335727" />
+        <var name="positiveMatch" id="3191633378144335739" />
+      </scope>
+      <scope id="5001505504946091325" at="310,94,319,7">
+        <var name="found" id="5001505504946091327" />
+      </scope>
+      <scope id="465133041723039241" at="191,47,201,13" />
+      <scope id="465133041727205092" at="66,47,77,7">
+        <var name="allSameChar" id="465133041727344228" />
+      </scope>
+      <scope id="3191633378144921543" at="242,11,253,9">
+        <var name="predecessor" id="3191633378145102587" />
+        <var name="r" id="3191633378145089503" />
+        <var name="success" id="4809115475674035794" />
+      </scope>
+      <scope id="5216254839084039362" at="265,11,276,9">
+        <var name="r" id="5216254839084039397" />
+        <var name="success" id="4809115475674307406" />
+        <var name="successor" id="5216254839084039379" />
+      </scope>
+      <scope id="3191633378144367022" at="294,76,305,7">
+        <var name="i" id="3191633378144367025" />
+      </scope>
+      <scope id="6353331678944093722" at="27,38,39,7">
+        <var name="i" id="6353331678944185407" />
+      </scope>
+      <scope id="465133041727947230" at="78,46,90,7" />
+      <scope id="465133041728386884" at="91,47,103,7" />
+      <scope id="465133041732485850" at="104,47,116,7" />
+      <scope id="465133041732769559" at="117,57,129,7" />
+      <scope id="465133041723039237" at="191,0,203,0">
+        <var name="o" id="465133041723071086" />
+      </scope>
+      <scope id="465133041725855926" at="329,66,341,7">
+        <var name="candidate" id="7791028896464467535" />
+        <var name="didTheMatchMatch" id="7791028896464585748" />
+        <var name="pos" id="465133041725998629" />
+        <var name="posBased" id="465133041726096836" />
+        <var name="positionFind" id="7791028896464597840" />
+        <var name="positiveMatch" id="7791028896464490030" />
+      </scope>
+      <scope id="465133041722062685" at="220,53,233,30">
+        <var name="cannotRepeat" id="465133041722153911" />
+        <var name="finding" id="465133041722107485" />
+      </scope>
+      <scope id="6353331678944093721" at="27,0,41,0">
+        <var name="key" id="6353331678944093731" />
+      </scope>
+      <scope id="465133041721378197" at="205,44,219,30">
+        <var name="atPosCheck" id="465133041721437224" />
+        <var name="finding" id="5001505504946107197" />
+        <var name="pos" id="465133041721702228" />
+      </scope>
+      <scope id="3191633378141767236" at="137,13,152,60">
+        <var name="finding" id="3191633378141735549" />
+        <var name="nextPos" id="3191633378141785203" />
+        <var name="substring" id="3191633378142841172" />
+        <var name="substringAtPos" id="3191633378141740764" />
+      </scope>
+      <scope id="6353331678943887183" at="290,56,305,7">
+        <var name="candidate" id="3191633378144335710" />
+        <var name="posEnd" id="3191633378144342878" />
+        <var name="posStart" id="3191633378144335719" />
+        <var name="rangeBased" id="6353331678944476922" />
+      </scope>
+      <scope id="465133041729127301" at="167,46,185,7">
+        <var name="oneOfMatch" id="465133041729364021" />
+      </scope>
+      <scope id="7791028896465008569" at="136,14,155,9" />
+      <scope id="465133041722368309" at="234,52,256,7">
+        <var name="candidate" id="3191633378144978153" />
+        <var name="finding" id="3191633378144955854" />
+        <var name="pos" id="3191633378144965762" />
+        <var name="predCheck" id="465133041722415635" />
+      </scope>
+      <scope id="465133041724745373" at="257,50,279,7">
+        <var name="candidate" id="5216254839084039339" />
+        <var name="finding" id="5216254839084039330" />
+        <var name="pos" id="5216254839084039348" />
+        <var name="succCheck" id="465133041724813386" />
+      </scope>
+      <scope id="6353331678945524357" at="306,67,328,7">
+        <var name="founds" id="5001505504946015126" />
+        <var name="maxCount" id="6353331678946603120" />
+        <var name="occurenceBased" id="6353331678945576322" />
+        <var name="theThingToFind" id="6353331678945804082" />
+      </scope>
+      <scope id="465133041729868902" at="130,49,156,7">
+        <var name="seqMatch" id="465133041729993433" />
+      </scope>
+      <scope id="6353331678943531533" at="288,68,345,18">
+        <var name="errors" id="6353331678943965111" />
+      </scope>
+      <scope id="6353331678943531529" at="288,0,347,0">
+        <var name="clause" id="6353331678943532432" />
+      </scope>
+      <scope id="6353331678946258508" at="204,77,285,5" />
+      <scope id="6353331678946258504" at="204,0,287,0">
+        <var name="check" id="6353331678946278543" />
+      </scope>
+      <scope id="6353331678944803025" at="65,49,188,5" />
+      <scope id="6353331678944803021" at="65,0,190,0">
+        <var name="match" id="6353331678944813755" />
+      </scope>
+      <unit id="6353331678944026869" at="19,0,51,0" name="org.iets3.core.expr.stringvalidation.runtime.runtime.XExecutor$XEnv" />
+      <unit id="6353331678943484956" at="15,0,365,0" name="org.iets3.core.expr.stringvalidation.runtime.runtime.XExecutor" />
+    </file>
+  </root>
+  <root nodeRef="r:92c59e9f-983f-4c1f-bcfc-4dc3733c05db(org.iets3.core.expr.stringvalidation.runtime.runtime)/6353331678943485067">
+    <file name="XValidateStringExpression.java">
+      <node id="6353331678943485356" at="9,0,10,0" concept="4" trace="clauses" />
+      <node id="6353331678943485827" at="10,0,11,0" concept="4" trace="candidate" />
+      <node id="6353331678943485361" at="12,95,13,27" concept="3" />
+      <node id="6353331678943485831" at="13,27,14,31" concept="3" />
+      <node id="6353331678943485182" at="12,0,16,0" concept="1" trace="XValidateStringExpression#(Ljava/lang/String;Ljava/util/List;)V" />
+      <scope id="6353331678943485186" at="12,95,14,31" />
+      <scope id="6353331678943485182" at="12,0,16,0">
+        <var name="candidate" id="6353331678943485211" />
+        <var name="clauses" id="6353331678943485252" />
+      </scope>
+      <unit id="6353331678943485067" at="7,0,18,0" name="org.iets3.core.expr.stringvalidation.runtime.runtime.XValidateStringExpression" />
+    </file>
+  </root>
+  <root nodeRef="r:92c59e9f-983f-4c1f-bcfc-4dc3733c05db(org.iets3.core.expr.stringvalidation.runtime.runtime)/6353331678943485277">
+    <file name="XAbstractValidationClause.java">
+      <unit id="6353331678943485277" at="6,0,11,0" name="org.iets3.core.expr.stringvalidation.runtime.runtime.XAbstractValidationClause" />
+    </file>
+  </root>
+  <root nodeRef="r:92c59e9f-983f-4c1f-bcfc-4dc3733c05db(org.iets3.core.expr.stringvalidation.runtime.runtime)/6353331678943823728">
+    <file name="XRangeBasedValidationClause.java">
+      <node id="6353331678943824190" at="8,0,9,0" concept="4" trace="posStart" />
+      <node id="6353331678943824305" at="9,0,10,0" concept="4" trace="posEnd" />
+      <node id="6353331678943824402" at="10,0,11,0" concept="4" trace="kind" />
+      <node id="6353331678943824567" at="11,0,12,0" concept="4" trace="match" />
+      <node id="6353331678943824194" at="13,149,14,29" concept="3" />
+      <node id="6353331678943824309" at="14,29,15,25" concept="3" />
+      <node id="6353331678943824406" at="15,25,16,21" concept="3" />
+      <node id="6353331678943824571" at="16,21,17,23" concept="3" />
+      <node id="6353331678943823791" at="13,0,19,0" concept="1" trace="XRangeBasedValidationClause#(Lorg/iets3/core/expr/stringvalidation/runtime/runtime/XAbstractPositionIndicator;Lorg/iets3/core/expr/stringvalidation/runtime/runtime/XAbstractPositionIndicator;Lorg/iets3/core/expr/stringvalidation/runtime/runtime/XCheckKind;Lorg/iets3/core/expr/stringvalidation/runtime/runtime/XAbstractMatch;)V" />
+      <scope id="6353331678943823795" at="13,149,17,23" />
+      <scope id="6353331678943823791" at="13,0,19,0">
+        <var name="kind" id="6353331678943823899" />
+        <var name="match" id="6353331678943824136" />
+        <var name="posEnd" id="6353331678943823964" />
+        <var name="posStart" id="6353331678943823878" />
+      </scope>
+      <unit id="6353331678943823728" at="6,0,21,0" name="org.iets3.core.expr.stringvalidation.runtime.runtime.XRangeBasedValidationClause" />
+    </file>
+  </root>
+  <root nodeRef="r:92c59e9f-983f-4c1f-bcfc-4dc3733c05db(org.iets3.core.expr.stringvalidation.runtime.runtime)/6353331678943823819">
+    <file name="XAbstractPositionIndicator.java">
+      <unit id="6353331678943823819" at="6,0,8,0" name="org.iets3.core.expr.stringvalidation.runtime.runtime.XAbstractPositionIndicator" />
+    </file>
+  </root>
+  <root nodeRef="r:92c59e9f-983f-4c1f-bcfc-4dc3733c05db(org.iets3.core.expr.stringvalidation.runtime.runtime)/6353331678943823999">
+    <file name="XCheckKind.java">
+      <unit id="6353331678943823999" at="6,0,8,0" name="org.iets3.core.expr.stringvalidation.runtime.runtime.XCheckKind" />
+    </file>
+  </root>
+  <root nodeRef="r:92c59e9f-983f-4c1f-bcfc-4dc3733c05db(org.iets3.core.expr.stringvalidation.runtime.runtime)/6353331678943824055">
+    <file name="XAbstractMatch.java">
+      <unit id="6353331678943824055" at="6,0,8,0" name="org.iets3.core.expr.stringvalidation.runtime.runtime.XAbstractMatch" />
+    </file>
+  </root>
+  <root nodeRef="r:92c59e9f-983f-4c1f-bcfc-4dc3733c05db(org.iets3.core.expr.stringvalidation.runtime.runtime)/6353331678943831651">
+    <file name="XPositionIndicatorFirst.java">
+      <node id="465133041721912421" at="8,28,9,19" concept="10" />
+      <node id="465133041721912027" at="8,0,11,0" concept="8" trace="toString#()Ljava/lang/String;" />
+      <scope id="465133041721912031" at="8,28,9,19" />
+      <scope id="465133041721912027" at="8,0,11,0" />
+      <unit id="6353331678943831651" at="6,0,13,0" name="org.iets3.core.expr.stringvalidation.runtime.runtime.XPositionIndicatorFirst" />
+    </file>
+  </root>
+  <root nodeRef="r:92c59e9f-983f-4c1f-bcfc-4dc3733c05db(org.iets3.core.expr.stringvalidation.runtime.runtime)/6353331678943831708">
+    <file name="XPositionIndicatorLast.java">
+      <node id="465133041721913176" at="8,28,9,18" concept="10" />
+      <node id="465133041721913172" at="8,0,11,0" concept="8" trace="toString#()Ljava/lang/String;" />
+      <scope id="465133041721913175" at="8,28,9,18" />
+      <scope id="465133041721913172" at="8,0,11,0" />
+      <unit id="6353331678943831708" at="6,0,14,0" name="org.iets3.core.expr.stringvalidation.runtime.runtime.XPositionIndicatorLast" />
+    </file>
+  </root>
+  <root nodeRef="r:92c59e9f-983f-4c1f-bcfc-4dc3733c05db(org.iets3.core.expr.stringvalidation.runtime.runtime)/6353331678943831740">
+    <file name="XPositionIndicatorIndex.java">
+      <node id="6353331678943831850" at="8,0,9,0" concept="4" trace="index" />
+      <node id="6353331678943831854" at="10,45,11,23" concept="3" />
+      <node id="465133041721914028" at="14,28,15,22" concept="10" />
+      <node id="6353331678943831799" at="10,0,13,0" concept="1" trace="XPositionIndicatorIndex#(I)V" />
+      <node id="465133041721914024" at="14,0,17,0" concept="8" trace="toString#()Ljava/lang/String;" />
+      <scope id="6353331678943831803" at="10,45,11,23" />
+      <scope id="465133041721914027" at="14,28,15,22" />
+      <scope id="6353331678943831799" at="10,0,13,0">
+        <var name="index" id="6353331678943831827" />
+      </scope>
+      <scope id="465133041721914024" at="14,0,17,0" />
+      <unit id="6353331678943831740" at="6,0,20,0" name="org.iets3.core.expr.stringvalidation.runtime.runtime.XPositionIndicatorIndex" />
+    </file>
+  </root>
+  <root nodeRef="r:92c59e9f-983f-4c1f-bcfc-4dc3733c05db(org.iets3.core.expr.stringvalidation.runtime.runtime)/6353331678943844358">
+    <file name="XMustBeCheckKind.java">
+      <unit id="6353331678943844358" at="6,0,8,0" name="org.iets3.core.expr.stringvalidation.runtime.runtime.XMustBeCheckKind" />
+    </file>
+  </root>
+  <root nodeRef="r:92c59e9f-983f-4c1f-bcfc-4dc3733c05db(org.iets3.core.expr.stringvalidation.runtime.runtime)/6353331678943844425">
+    <file name="XCannotBeCheckKind.java">
+      <unit id="6353331678943844425" at="6,0,8,0" name="org.iets3.core.expr.stringvalidation.runtime.runtime.XCannotBeCheckKind" />
+    </file>
+  </root>
+  <root nodeRef="r:92c59e9f-983f-4c1f-bcfc-4dc3733c05db(org.iets3.core.expr.stringvalidation.runtime.runtime)/6353331678945406651">
+    <file name="XOccurenceBasedValidationClause.java">
+      <node id="6353331678945420260" at="9,0,10,0" concept="4" trace="occurence" />
+      <node id="6353331678945420374" at="10,0,11,0" concept="4" trace="match" />
+      <node id="6353331678945420513" at="11,0,12,0" concept="4" trace="checks" />
+      <node id="6353331678945420264" at="13,147,14,31" concept="3" />
+      <node id="6353331678945420378" at="14,31,15,23" concept="3" />
+      <node id="6353331678945420518" at="15,23,16,25" concept="3" />
+      <node id="6353331678945417663" at="13,0,18,0" concept="1" trace="XOccurenceBasedValidationClause#(Lorg/iets3/core/expr/stringvalidation/runtime/runtime/XAbstractOccurenceConstraint;Lorg/iets3/core/expr/stringvalidation/runtime/runtime/XAbstractMatch;Ljava/util/List;)V" />
+      <scope id="6353331678945417667" at="13,147,16,25" />
+      <scope id="6353331678945417663" at="13,0,18,0">
+        <var name="checks" id="6353331678945420187" />
+        <var name="match" id="6353331678945417743" />
+        <var name="occurence" id="6353331678945417692" />
+      </scope>
+      <unit id="6353331678945406651" at="7,0,20,0" name="org.iets3.core.expr.stringvalidation.runtime.runtime.XOccurenceBasedValidationClause" />
+    </file>
+  </root>
+  <root nodeRef="r:92c59e9f-983f-4c1f-bcfc-4dc3733c05db(org.iets3.core.expr.stringvalidation.runtime.runtime)/6353331678945417486">
+    <file name="XAbstractOccurenceConstraint.java">
+      <unit id="6353331678945417486" at="6,0,8,0" name="org.iets3.core.expr.stringvalidation.runtime.runtime.XAbstractOccurenceConstraint" />
+    </file>
+  </root>
+  <root nodeRef="r:92c59e9f-983f-4c1f-bcfc-4dc3733c05db(org.iets3.core.expr.stringvalidation.runtime.runtime)/6353331678945417584">
+    <file name="XAbstractOccurenceBasedCheck.java">
+      <node id="6353331678946681194" at="8,0,9,0" concept="4" trace="kind" />
+      <node id="6353331678946681198" at="10,56,11,21" concept="3" />
+      <node id="6353331678946681110" at="10,0,13,0" concept="1" trace="XAbstractOccurenceBasedCheck#(Lorg/iets3/core/expr/stringvalidation/runtime/runtime/XCheckKind;)V" />
+      <scope id="6353331678946681114" at="10,56,11,21" />
+      <scope id="6353331678946681110" at="10,0,13,0">
+        <var name="kind" id="6353331678946681161" />
+      </scope>
+      <unit id="6353331678945417584" at="6,0,16,0" name="org.iets3.core.expr.stringvalidation.runtime.runtime.XAbstractOccurenceBasedCheck" />
+    </file>
+  </root>
+  <root nodeRef="r:92c59e9f-983f-4c1f-bcfc-4dc3733c05db(org.iets3.core.expr.stringvalidation.runtime.runtime)/6353331678946521634">
+    <file name="XMaxCountCheck.java">
+      <node id="6353331678946521773" at="8,0,9,0" concept="4" trace="value" />
+      <node id="6353331678946682551" at="10,53,11,16" concept="13" />
+      <node id="6353331678946521777" at="11,16,12,23" concept="3" />
+      <node id="6353331678946521720" at="10,0,14,0" concept="1" trace="XMaxCountCheck#(Lorg/iets3/core/expr/stringvalidation/runtime/runtime/XCheckKind;I)V" />
+      <scope id="6353331678946521724" at="10,53,12,23" />
+      <scope id="6353331678946521720" at="10,0,14,0">
+        <var name="kind" id="6353331678946681752" />
+        <var name="value" id="6353331678946521750" />
+      </scope>
+      <unit id="6353331678946521634" at="6,0,17,0" name="org.iets3.core.expr.stringvalidation.runtime.runtime.XMaxCountCheck" />
+    </file>
+  </root>
+  <root nodeRef="r:92c59e9f-983f-4c1f-bcfc-4dc3733c05db(org.iets3.core.expr.stringvalidation.runtime.runtime)/7791028896464425529">
+    <file name="PositionFind.java">
+      <node id="7791028896464425531" at="8,0,9,0" concept="4" trace="position" />
+      <node id="7791028896464425540" at="10,0,11,0" concept="4" trace="whatWasFound" />
+      <node id="7791028896464425548" at="12,58,13,29" concept="3" />
+      <node id="7791028896464425566" at="13,29,14,37" concept="3" />
+      <node id="7791028896464425585" at="17,28,18,26" concept="10" />
+      <node id="3191633378113739170" at="21,23,22,38" concept="10" />
+      <node id="7791028896464425581" at="17,0,20,0" concept="8" trace="toString#()Ljava/lang/String;" />
+      <node id="3191633378113737761" at="21,0,24,0" concept="8" trace="length#()I" />
+      <node id="7791028896464425544" at="12,0,16,0" concept="1" trace="PositionFind#(ILjava/lang/String;)V" />
+      <scope id="7791028896464425584" at="17,28,18,26" />
+      <scope id="3191633378113737765" at="21,23,22,38" />
+      <scope id="7791028896464425547" at="12,58,14,37" />
+      <scope id="7791028896464425581" at="17,0,20,0" />
+      <scope id="3191633378113737761" at="21,0,24,0" />
+      <scope id="7791028896464425544" at="12,0,16,0">
+        <var name="position" id="7791028896464425576" />
+        <var name="whatWasFound" id="7791028896464425574" />
+      </scope>
+      <unit id="7791028896464425529" at="6,0,26,0" name="org.iets3.core.expr.stringvalidation.runtime.runtime.PositionFind" />
+    </file>
+  </root>
+</debug-info>
+

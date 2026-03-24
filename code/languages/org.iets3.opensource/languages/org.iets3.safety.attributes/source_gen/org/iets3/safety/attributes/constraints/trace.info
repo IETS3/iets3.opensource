@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<debug-info version="2">
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123140:jetbrains.mps.baseLanguage.structure.ConstructorDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123155:jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123159:jetbrains.mps.baseLanguage.structure.IfStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123165:jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242864:jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242878:jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1070462154015:jetbrains.mps.baseLanguage.structure.StaticFieldDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1070475587102:jetbrains.mps.baseLanguage.structure.SuperConstructorInvocation" />
+  <root>
+    <file name="ConstraintsAspectDescriptor.java">
+      <unit at="13,0,29,0" name="org.iets3.safety.attributes.constraints.ConstraintsAspectDescriptor" />
+    </file>
+  </root>
+  <root nodeRef="r:e1ba5a3d-3b93-4700-bce3-314833263e3c(org.iets3.safety.attributes.constraints)/4383428175923027116">
+    <file name="ASILLevelValue_Constraints.java">
+      <node id="4383428175923027116" at="22,39,23,38" concept="7" />
+      <node id="4383428175923234659" at="27,60,28,61" concept="7" />
+      <node id="4383428175923243656" at="32,78,33,194" concept="5" />
+      <node id="4383428175923254894" at="34,7,35,141" concept="5" />
+      <node id="4383428175923027116" at="39,84,40,119" concept="4" />
+      <node id="4383428175923234659" at="40,119,41,63" concept="1" />
+      <node id="4383428175923027116" at="41,63,42,22" concept="5" />
+      <node id="4383428175923027116" at="46,0,47,0" concept="6" trace="ASILLevelValue$fW" />
+      <node id="4383428175923027116" at="50,0,51,0" concept="6" trace="value$wS9f" />
+      <node id="4383428175923027116" at="54,0,55,0" concept="6" trace="constraints$dKxH" />
+      <node id="4383428175923027116" at="22,0,25,0" concept="0" trace="ASILLevelValue_Constraints#()V" />
+      <node id="4383428175923234659" at="27,0,30,0" concept="0" trace="Value_Property#(Ljetbrains/mps/smodel/runtime/ConstraintsDescriptor;)V" />
+      <node id="4383428175923235755" at="31,40,34,7" concept="2" />
+      <node id="4383428175923027116" at="38,0,44,0" concept="3" trace="getSpecifiedProperties#()Ljava/util/Map;" />
+      <node id="4383428175923234659" at="30,0,37,0" concept="3" trace="getValue#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljava/lang/Object;" />
+      <scope id="4383428175923027116" at="22,39,23,38" />
+      <scope id="4383428175923234659" at="27,60,28,61" />
+      <scope id="4383428175923235757" at="32,78,33,194" />
+      <scope id="4383428175923027116" at="22,0,25,0" />
+      <scope id="4383428175923234659" at="27,0,30,0">
+        <var name="container" id="4383428175923234659" />
+      </scope>
+      <scope id="4383428175923027116" at="39,84,42,22">
+        <var name="properties" id="4383428175923027116" />
+      </scope>
+      <scope id="4383428175923234663" at="31,40,35,141" />
+      <scope id="4383428175923027116" at="38,0,44,0" />
+      <scope id="4383428175923234659" at="30,0,37,0">
+        <var name="node" id="4383428175923234659" />
+      </scope>
+      <unit id="4383428175923027116" at="45,0,48,0" name="org.iets3.safety.attributes.constraints.ASILLevelValue_Constraints$CONCEPTS" />
+      <unit id="4383428175923027116" at="49,0,52,0" name="org.iets3.safety.attributes.constraints.ASILLevelValue_Constraints$PROPS" />
+      <unit id="4383428175923027116" at="53,0,56,0" name="org.iets3.safety.attributes.constraints.ASILLevelValue_Constraints$LINKS" />
+      <unit id="4383428175923234659" at="26,0,38,0" name="org.iets3.safety.attributes.constraints.ASILLevelValue_Constraints$Value_Property" />
+      <unit id="4383428175923027116" at="21,0,57,0" name="org.iets3.safety.attributes.constraints.ASILLevelValue_Constraints" />
+    </file>
+  </root>
+</debug-info>
+

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<debug-info version="2">
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123165:jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242878:jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+  <root nodeRef="r:197c9a7f-bef3-4d38-a48a-51524151fecf(org.iets3.core.base.plugin)/401176299902041971">
+    <file name="CheckingWasBlockedResult.java">
+      <node id="401176299902047936" at="10,25,11,16" concept="1" />
+      <node id="401176299902043933" at="14,35,15,34" concept="1" />
+      <node id="401176299902042166" at="18,53,19,16" concept="1" />
+      <node id="401176299902042142" at="9,0,13,0" concept="0" trace="isOk#()Z" />
+      <node id="401176299902042151" at="13,0,17,0" concept="0" trace="getErrorMessage#()Ljava/lang/String;" />
+      <node id="401176299902042158" at="17,0,21,0" concept="0" trace="getDescription#()Lorg/iets3/core/base/behavior/AbstractResultDescription;" />
+      <scope id="401176299902042147" at="10,25,11,16" />
+      <scope id="401176299902042156" at="14,35,15,34" />
+      <scope id="401176299902042163" at="18,53,19,16" />
+      <scope id="401176299902042142" at="9,0,13,0" />
+      <scope id="401176299902042151" at="13,0,17,0" />
+      <scope id="401176299902042158" at="17,0,21,0" />
+      <unit id="401176299902041971" at="8,0,22,0" name="org.iets3.core.base.plugin.CheckingWasBlockedResult" />
+    </file>
+  </root>
+</debug-info>
+

@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<product version="3" modelHash="bszgw911902knwf0qalhwqodp625q7">
+  <files names="IntentionsDescriptor.java:SelectionIntentionsDescriptor.java:addChildren_Intention.java:addConstraintForDataItem_Intention.java:addConstraintForPortType_Intention.java:addContractData_Intention.java:addContract_Intention.java:addSuperItem.java:deriveNewDataItem_Intention.java:toggleInit_Intention.java" />
+</product>
+

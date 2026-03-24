@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<debug-info version="2">
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123155:jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123165:jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1070462154015:jetbrains.mps.baseLanguage.structure.StaticFieldDeclaration" />
+  <root>
+    <file name="ActionAspectDescriptorImpl.java">
+      <unit at="12,0,28,0" name="org.iets3.variability.artifacts.base.actions.ActionAspectDescriptorImpl" />
+    </file>
+  </root>
+  <root nodeRef="r:808762ce-2531-4e02-a4f2-cf8959f89a1e(org.iets3.variability.artifacts.base.actions)/2497890189699054814">
+    <file name="IVAA_Factory.java">
+      <node id="5727957801049146195" at="14,102,15,71" concept="0" />
+      <node id="2497890189699054814" at="20,0,21,0" concept="2" trace="isRunning$8CV2" />
+      <node id="2497890189699054815" at="14,0,17,0" concept="1" trace="setup#(Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;ILorg/jetbrains/mps/openapi/model/SModel;)V" />
+      <scope id="2497890189699054815" at="14,102,15,71" />
+      <scope id="2497890189699054815" at="14,0,17,0">
+        <var name="enclosingNode" id="2497890189699054815" />
+        <var name="index" id="2497890189699054815" />
+        <var name="model" id="2497890189699054815" />
+        <var name="newNode" id="2497890189699054815" />
+        <var name="sampleNode" id="2497890189699054815" />
+      </scope>
+      <unit id="2497890189699054814" at="19,0,22,0" name="org.iets3.variability.artifacts.base.actions.IVAA_Factory$PROPS" />
+      <unit id="2497890189699054815" at="13,0,18,0" name="org.iets3.variability.artifacts.base.actions.IVAA_Factory$NodeFactory_2497890189699054815" />
+      <unit id="2497890189699054814" at="12,0,23,0" name="org.iets3.variability.artifacts.base.actions.IVAA_Factory" />
+    </file>
+  </root>
+</debug-info>
+

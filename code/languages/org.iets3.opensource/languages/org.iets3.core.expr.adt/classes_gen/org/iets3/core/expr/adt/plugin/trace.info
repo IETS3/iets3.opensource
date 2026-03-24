@@ -1,0 +1,389 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<debug-info version="2">
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1082485599095:jetbrains.mps.baseLanguage.structure.BlockStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123140:jetbrains.mps.baseLanguage.structure.ConstructorDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1082113931046:jetbrains.mps.baseLanguage.structure.ContinueStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123155:jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068390468200:jetbrains.mps.baseLanguage.structure.FieldDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1144231330558:jetbrains.mps.baseLanguage.structure.ForStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1144226303539:jetbrains.mps.baseLanguage.structure.ForeachStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123159:jetbrains.mps.baseLanguage.structure.IfStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123165:jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242864:jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242878:jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/6329021646629104954:jetbrains.mps.baseLanguage.structure.SingleLineComment" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123157:jetbrains.mps.baseLanguage.structure.Statement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1070462154015:jetbrains.mps.baseLanguage.structure.StaticFieldDeclaration" />
+  <root nodeRef="r:e9498bee-5ae0-4240-ad75-8805ba02927e(org.iets3.core.expr.adt.plugin)/2460310434913292534">
+    <file name="QuoteValue.java">
+      <node id="2460310434913293398" at="10,33,11,18" concept="3" />
+      <node id="2460310434914020747" at="14,23,15,23" concept="10" />
+      <node id="2460310434914375017" at="18,28,19,106" concept="10" />
+      <node id="2460310434913293394" at="22,0,23,0" concept="4" trace="myTerm" />
+      <node id="2460310434913292949" at="10,0,13,0" concept="1" trace="QuoteValue#(Lorg/jetbrains/mps/openapi/model/SNode;)V" />
+      <node id="2460310434914018934" at="14,0,17,0" concept="8" trace="term#()Lorg/jetbrains/mps/openapi/model/SNode;" />
+      <node id="2460310434914374107" at="17,0,21,0" concept="8" trace="toString#()Ljava/lang/String;" />
+      <scope id="2460310434913292953" at="10,33,11,18" />
+      <scope id="2460310434914018938" at="14,23,15,23" />
+      <scope id="2460310434914374111" at="18,28,19,106" />
+      <scope id="2460310434913292949" at="10,0,13,0">
+        <var name="term" id="2460310434913293354" />
+      </scope>
+      <scope id="2460310434914018934" at="14,0,17,0" />
+      <scope id="2460310434914374107" at="17,0,21,0" />
+      <unit id="2460310434913292534" at="8,0,24,0" name="org.iets3.core.expr.adt.plugin.QuoteValue" />
+    </file>
+  </root>
+  <root nodeRef="r:e9498bee-5ae0-4240-ad75-8805ba02927e(org.iets3.core.expr.adt.plugin)/5955298286239861872">
+    <file name="AlgebraicValue.java">
+      <node id="5955298286239862833" at="16,0,17,0" concept="4" trace="cons" />
+      <node id="5955298286239865165" at="17,0,18,0" concept="4" trace="args" />
+      <node id="8255774724000160862" at="18,0,19,0" concept="4" trace="source" />
+      <node id="2460310434922240262" at="19,0,20,0" concept="4" trace="myParent" />
+      <node id="5955298286239862837" at="21,55,22,23" concept="3" />
+      <node id="8255774724000160866" at="22,23,23,17" concept="3" />
+      <node id="2460310434922272281" at="26,49,27,22" concept="3" />
+      <node id="2460310434922286586" at="30,27,31,33" concept="10" />
+      <node id="2460310434922253925" at="35,40,36,45" concept="3" />
+      <node id="5955298286239866187" at="37,5,38,48" concept="3" />
+      <node id="8255774724003003946" at="42,28,43,134" concept="10" />
+      <node id="8255774724000196146" at="46,24,47,88" concept="10" />
+      <node id="8255774724002113782" at="49,25,50,18" concept="10" />
+      <node id="5955298286239893271" at="55,45,56,19" concept="10" />
+      <node id="5955298286239898479" at="57,5,58,47" concept="9" />
+      <node id="5955298286239907698" at="59,31,60,19" concept="10" />
+      <node id="5955298286239956120" at="62,93,63,19" concept="10" />
+      <node id="5955298286240022036" at="66,115,67,21" concept="10" />
+      <node id="5955298286239910939" at="69,5,70,16" concept="10" />
+      <node id="5955298286248978126" at="73,46,74,73" concept="10" />
+      <node id="5955298286259953312" at="76,39,77,21" concept="10" />
+      <node id="2460310434922357636" at="80,80,81,65" concept="9" />
+      <node id="2460310434922374003" at="82,19,83,60" concept="3" />
+      <node id="2460310434922364390" at="83,60,84,69" concept="3" />
+      <node id="2460310434922311972" at="89,27,90,44" concept="3" />
+      <node id="2460310434922643506" at="91,5,92,20" concept="10" />
+      <node id="2460310434923190145" at="95,32,96,71" concept="9" />
+      <node id="2460310434923198482" at="98,40,99,51" concept="3" />
+      <node id="2460310434923221215" at="100,14,101,25" concept="3" />
+      <node id="2460310434923184959" at="103,5,104,18" concept="10" />
+      <node id="2460310434923280327" at="107,21,108,14" concept="9" />
+      <node id="2460310434923283390" at="110,40,111,44" concept="3" />
+      <node id="2460310434923311668" at="113,5,114,13" concept="10" />
+      <node id="2460310434933973224" at="117,34,118,20" concept="10" />
+      <node id="5955298286239861872" at="122,0,123,0" concept="13" trace="name$MnvL" />
+      <node id="2460310434923220346" at="100,12,102,7" concept="0" />
+      <node id="2460310434922263421" at="26,0,29,0" concept="8" trace="setParent#(Lorg/iets3/core/expr/adt/plugin/AlgebraicValue;)V" />
+      <node id="2460310434922278038" at="30,0,33,0" concept="8" trace="isRoot#()Z" />
+      <node id="2460310434922251798" at="34,34,37,5" concept="7" />
+      <node id="8255774724000166139" at="46,0,49,0" concept="8" trace="path#()Ljava/lang/String;" />
+      <node id="8255774724002113778" at="49,0,52,0" concept="8" trace="source#()Lorg/jetbrains/mps/openapi/model/SNode;" />
+      <node id="5955298286239891302" at="54,39,57,5" concept="7" />
+      <node id="5955298286239902145" at="58,47,61,5" concept="7" />
+      <node id="5955298286239913649" at="61,5,64,5" concept="7" />
+      <node id="5955298286239989766" at="65,70,68,7" concept="7" />
+      <node id="5955298286248968106" at="73,0,76,0" concept="8" trace="children#()Ljava/lang/Iterable;" />
+      <node id="5955298286259953307" at="76,0,79,0" concept="8" trace="arguments#()Ljava/lang/Iterable;" />
+      <node id="2460310434922310598" at="88,62,91,5" concept="7" />
+      <node id="2460310434923238692" at="109,32,112,7" concept="7" />
+      <node id="2460310434933955494" at="117,0,120,0" concept="8" trace="parent#()Lorg/iets3/core/expr/adt/plugin/AlgebraicValue;" />
+      <node id="5955298286239862299" at="21,0,25,0" concept="1" trace="AlgebraicValue#(Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;)V" />
+      <node id="8255774724003003939" at="41,0,45,0" concept="8" trace="toString#()Ljava/lang/String;" />
+      <node id="2460310434922359348" at="81,65,85,5" concept="7" />
+      <node id="5955298286239962175" at="64,5,69,5" concept="5" />
+      <node id="2460310434923196294" at="97,32,102,7" concept="7" />
+      <node id="2460310434923238686" at="108,14,113,5" concept="6" />
+      <node id="5955298286239864374" at="34,0,40,0" concept="8" trace="addArg#(Ljava/lang/Object;)V" />
+      <node id="2460310434922296194" at="88,0,94,0" concept="8" trace="replaceWith#(Lorg/iets3/core/expr/adt/plugin/AlgebraicValue;)Lorg/iets3/core/expr/adt/plugin/AlgebraicValue;" />
+      <node id="2460310434922322940" at="80,0,87,0" concept="8" trace="replaceChild#(Lorg/iets3/core/expr/adt/plugin/AlgebraicValue;Lorg/iets3/core/expr/adt/plugin/AlgebraicValue;)V" />
+      <node id="2460310434923191243" at="96,71,103,5" concept="6" />
+      <node id="2460310434923238671" at="107,0,116,0" concept="8" trace="size#()I" />
+      <node id="2460310434923167724" at="95,0,106,0" concept="8" trace="copy#()Lorg/iets3/core/expr/adt/plugin/AlgebraicValue;" />
+      <node id="5955298286239890014" at="53,0,72,0" concept="8" trace="equals#(Ljava/lang/Object;)Z" />
+      <scope id="2460310434922263424" at="26,49,27,22" />
+      <scope id="2460310434922278042" at="30,27,31,33" />
+      <scope id="2460310434922251800" at="35,40,36,45" />
+      <scope id="8255774724003003943" at="42,28,43,134" />
+      <scope id="8255774724000166143" at="46,24,47,88" />
+      <scope id="8255774724002113781" at="49,25,50,18" />
+      <scope id="5955298286239891304" at="55,45,56,19" />
+      <scope id="5955298286239902147" at="59,31,60,19" />
+      <scope id="5955298286239913651" at="62,93,63,19" />
+      <scope id="5955298286239989768" at="66,115,67,21" />
+      <scope id="5955298286248968110" at="73,46,74,73" />
+      <scope id="5955298286259953311" at="76,39,77,21" />
+      <scope id="2460310434922310600" at="89,27,90,44" />
+      <scope id="2460310434923196296" at="98,40,99,51" />
+      <scope id="2460310434923220347" at="100,14,101,25" />
+      <scope id="2460310434923238696" at="110,40,111,44" />
+      <scope id="2460310434933955498" at="117,34,118,20" />
+      <scope id="5955298286239862303" at="21,55,23,17" />
+      <scope id="2460310434922359350" at="82,19,84,69" />
+      <scope id="2460310434922263421" at="26,0,29,0">
+        <var name="parent" id="2460310434922269309" />
+      </scope>
+      <scope id="2460310434922278038" at="30,0,33,0" />
+      <scope id="8255774724000166139" at="46,0,49,0" />
+      <scope id="8255774724002113778" at="49,0,52,0" />
+      <scope id="5955298286239962177" at="65,70,68,7" />
+      <scope id="5955298286248968106" at="73,0,76,0" />
+      <scope id="5955298286259953307" at="76,0,79,0" />
+      <scope id="2460310434923238691" at="109,32,112,7" />
+      <scope id="2460310434933955494" at="117,0,120,0" />
+      <scope id="5955298286239862299" at="21,0,25,0">
+        <var name="constructor" id="5955298286239862698" />
+        <var name="src" id="8255774723999934379" />
+      </scope>
+      <scope id="5955298286239864378" at="34,34,38,48" />
+      <scope id="8255774724003003939" at="41,0,45,0" />
+      <scope id="2460310434922296198" at="88,62,92,20" />
+      <scope id="5955298286239962175" at="64,5,69,5">
+        <var name="i" id="5955298286239962178" />
+      </scope>
+      <scope id="2460310434922322944" at="80,80,85,5">
+        <var name="pos" id="2460310434922357637" />
+      </scope>
+      <scope id="2460310434923191249" at="97,32,102,7" />
+      <scope id="2460310434923238686" at="108,14,113,5">
+        <var name="a" id="2460310434923238687" />
+      </scope>
+      <scope id="5955298286239864374" at="34,0,40,0">
+        <var name="arg" id="5955298286239865016" />
+      </scope>
+      <scope id="2460310434922296194" at="88,0,94,0">
+        <var name="newValue" id="2460310434922307695" />
+      </scope>
+      <scope id="2460310434922322940" at="80,0,87,0">
+        <var name="newChilld" id="2460310434922340091" />
+        <var name="oldChild" id="2460310434922337366" />
+      </scope>
+      <scope id="2460310434923191243" at="96,71,103,5">
+        <var name="a" id="2460310434923191245" />
+      </scope>
+      <scope id="2460310434923238674" at="107,21,114,13">
+        <var name="s" id="2460310434923280330" />
+      </scope>
+      <scope id="2460310434923167728" at="95,32,104,18">
+        <var name="copied" id="2460310434923190146" />
+      </scope>
+      <scope id="2460310434923238671" at="107,0,116,0" />
+      <scope id="2460310434923167724" at="95,0,106,0" />
+      <scope id="5955298286239890020" at="54,39,70,16">
+        <var name="av" id="5955298286239898480" />
+      </scope>
+      <scope id="5955298286239890014" at="53,0,72,0">
+        <var name="other" id="5955298286239890018" />
+      </scope>
+      <unit id="5955298286239861872" at="121,0,124,0" name="org.iets3.core.expr.adt.plugin.AlgebraicValue$PROPS" />
+      <unit id="5955298286239861872" at="14,0,125,0" name="org.iets3.core.expr.adt.plugin.AlgebraicValue" />
+    </file>
+  </root>
+  <root nodeRef="r:e9498bee-5ae0-4240-ad75-8805ba02927e(org.iets3.core.expr.adt.plugin)/5955298286241460947">
+    <file name="CaseMatchResult.java">
+      <node id="5955298286242135721" at="8,0,9,0" concept="8" trace="isSuccess#()Z" />
+      <scope id="5955298286242135721" at="8,0,9,0" />
+      <unit id="5955298286241460947" at="6,0,11,0" name="org.iets3.core.expr.adt.plugin.CaseMatchResult" />
+    </file>
+  </root>
+  <root nodeRef="r:e9498bee-5ae0-4240-ad75-8805ba02927e(org.iets3.core.expr.adt.plugin)/5955298286241460994">
+    <file name="FailedMatchResult.java">
+      <node id="5955298286242136099" at="12,30,13,17" concept="10" />
+      <node id="5955298286241950952" at="9,0,11,0" concept="1" trace="FailedMatchResult#(Lorg/jetbrains/mps/openapi/model/SNode;Ljava/lang/String;)V" />
+      <node id="5955298286242135774" at="11,0,15,0" concept="8" trace="isSuccess#()Z" />
+      <scope id="5955298286241950956" at="9,65,9,65" />
+      <scope id="5955298286242135778" at="12,30,13,17" />
+      <scope id="5955298286241950952" at="9,0,11,0">
+        <var name="failedWhere" id="5955298286241951350" />
+        <var name="failedWhy" id="5955298286241951409" />
+      </scope>
+      <scope id="5955298286242135774" at="11,0,15,0" />
+      <unit id="5955298286241460994" at="7,0,17,0" name="org.iets3.core.expr.adt.plugin.FailedMatchResult" />
+    </file>
+  </root>
+  <root nodeRef="r:e9498bee-5ae0-4240-ad75-8805ba02927e(org.iets3.core.expr.adt.plugin)/5955298286241461058">
+    <file name="SuccessMatchResult.java">
+      <node id="5955298286241866995" at="12,0,13,0" concept="4" trace="bindings" />
+      <node id="5955298286242139350" at="15,30,16,16" concept="10" />
+      <node id="5955298286242327149" at="20,53,21,65" concept="9" />
+      <node id="5955298286242327458" at="21,65,22,62" concept="3" />
+      <node id="5955298286242139020" at="14,0,18,0" concept="8" trace="isSuccess#()Z" />
+      <node id="5955298286242324087" at="19,62,23,5" concept="7" />
+      <node id="5955298286242181226" at="19,0,25,0" concept="8" trace="copyBindingsFrom#(Lorg/iets3/core/expr/adt/plugin/CaseMatchResult;)V" />
+      <scope id="5955298286242139024" at="15,30,16,16" />
+      <scope id="5955298286242324089" at="20,53,22,62">
+        <var name="smr" id="5955298286242327150" />
+      </scope>
+      <scope id="5955298286242139020" at="14,0,18,0" />
+      <scope id="5955298286242181230" at="19,62,23,5" />
+      <scope id="5955298286242181226" at="19,0,25,0">
+        <var name="otherSuccess" id="5955298286242181959" />
+      </scope>
+      <unit id="5955298286241461058" at="10,0,28,0" name="org.iets3.core.expr.adt.plugin.SuccessMatchResult" />
+    </file>
+  </root>
+  <root nodeRef="r:e9498bee-5ae0-4240-ad75-8805ba02927e(org.iets3.core.expr.adt.plugin)/5955298286241867184">
+    <file name="MatchingEngine.java">
+      <node id="5955298286241868487" at="28,0,29,0" concept="4" trace="myPattern" />
+      <node id="5955298286241868627" at="29,0,30,0" concept="4" trace="candidate" />
+      <node id="5955298286241868491" at="31,53,32,24" concept="3" />
+      <node id="5955298286241868631" at="32,24,33,21" concept="3" />
+      <node id="5955298286242160400" at="36,76,37,58" concept="9" />
+      <node id="2460310434941759270" at="37,58,38,32" concept="11" />
+      <node id="5955298286250532326" at="39,141,40,59" concept="3" />
+      <node id="5955298286250546121" at="40,59,41,21" concept="10" />
+      <node id="5955298286250445555" at="43,80,44,75" concept="10" />
+      <node id="5955298286241971043" at="46,49,47,79" concept="10" />
+      <node id="5955298286241968738" at="48,5,49,79" concept="9" />
+      <node id="5955298286241975477" at="49,79,50,52" concept="9" />
+      <node id="5955298286241989123" at="51,163,52,74" concept="10" />
+      <node id="2460310434940065396" at="53,5,54,134" concept="9" />
+      <node id="5955298286242052087" at="55,174,56,77" concept="10" />
+      <node id="2460310434941961214" at="57,5,58,0" concept="12" />
+      <node id="2460310434941971062" at="58,0,59,66" concept="11" />
+      <node id="2460310434941866050" at="59,66,60,205" concept="9" />
+      <node id="2460310434941948782" at="61,148,62,134" concept="3" />
+      <node id="2460310434941975889" at="63,5,64,0" concept="12" />
+      <node id="2460310434945972793" at="64,0,65,34" concept="9" />
+      <node id="2460310434946566735" at="65,34,66,38" concept="9" />
+      <node id="5955298286242105461" at="67,71,68,68" concept="9" />
+      <node id="2460310434940213745" at="68,68,69,31" concept="9" />
+      <node id="2460310434940218309" at="70,102,71,116" concept="3" />
+      <node id="5955298286242115068" at="72,7,73,127" concept="9" />
+      <node id="2460310434941242658" at="73,127,74,205" concept="9" />
+      <node id="5955298286242122840" at="75,72,76,29" concept="11" />
+      <node id="5955298286242134061" at="77,83,78,72" concept="9" />
+      <node id="5955298286242144258" at="78,72,79,68" concept="9" />
+      <node id="2460310434946573661" at="80,21,81,35" concept="3" />
+      <node id="2460310434942509928" at="82,33,83,21" concept="2" />
+      <node id="2460310434945987892" at="84,18,85,33" concept="3" />
+      <node id="2460310434942918425" at="88,33,89,21" concept="10" />
+      <node id="5955298286242175966" at="91,9,92,36" concept="3" />
+      <node id="5955298286242284872" at="93,14,94,72" concept="9" />
+      <node id="5955298286242297162" at="95,58,96,84" concept="10" />
+      <node id="5955298286250518208" at="98,7,99,54" concept="3" />
+      <node id="2460310434945995714" at="101,48,102,72" concept="10" />
+      <node id="5955298286241870898" at="103,5,104,19" concept="10" />
+      <node id="2460310434941089739" at="107,104,108,22" concept="9" />
+      <node id="2460310434941090064" at="109,97,110,92" concept="3" />
+      <node id="2460310434941100289" at="112,69,113,64" concept="3" />
+      <node id="2460310434941124765" at="115,23,116,46" concept="9" />
+      <node id="2460310434941178651" at="118,55,119,31" concept="11" />
+      <node id="2460310434941272516" at="120,31,121,74" concept="3" />
+      <node id="2460310434941936650" at="122,18,123,61" concept="3" />
+      <node id="2460310434941179600" at="125,73,126,36" concept="11" />
+      <node id="2460310434941120956" at="126,36,127,102" concept="3" />
+      <node id="5955298286250518152" at="129,14,130,49" concept="3" />
+      <node id="5955298286241867184" at="136,0,137,0" concept="13" trace="NameExpr$kW" />
+      <node id="5955298286241867184" at="137,0,138,0" concept="13" trace="WildcardExpr$bs" />
+      <node id="5955298286241867184" at="138,0,139,0" concept="13" trace="AlgebraicTerm$x9" />
+      <node id="5955298286241867184" at="139,0,140,0" concept="13" trace="INamedSlot$o3" />
+      <node id="5955298286241867184" at="140,0,141,0" concept="13" trace="ListType$i0" />
+      <node id="5955298286241867184" at="141,0,142,0" concept="13" trace="IWildcard$9Q" />
+      <node id="5955298286241867184" at="142,0,143,0" concept="13" trace="NameAnnotation$Uh" />
+      <node id="5955298286241867184" at="146,0,147,0" concept="13" trace="type$Krjw" />
+      <node id="5955298286241867184" at="147,0,148,0" concept="13" trace="constructor$F6Xq" />
+      <node id="5955298286241867184" at="148,0,149,0" concept="13" trace="args$Vmrw" />
+      <node id="5955298286241867184" at="149,0,150,0" concept="13" trace="args$DHHT" />
+      <node id="2460310434946121602" at="84,16,86,11" concept="0" />
+      <node id="2460310434941935898" at="122,16,124,11" concept="0" />
+      <node id="2460310434941264721" at="129,12,131,7" concept="0" />
+      <node id="5955298286250445553" at="42,5,45,5" concept="7" />
+      <node id="5955298286241971041" at="45,5,48,5" concept="7" />
+      <node id="5955298286241979445" at="50,52,53,5" concept="7" />
+      <node id="2460310434940120027" at="54,134,57,5" concept="7" />
+      <node id="2460310434941882001" at="60,205,63,5" concept="7" />
+      <node id="2460310434940174282" at="69,31,72,7" concept="7" />
+      <node id="2460310434946100247" at="87,16,90,11" concept="7" />
+      <node id="5955298286242288650" at="94,72,97,9" concept="7" />
+      <node id="2460310434945964533" at="100,5,103,5" concept="7" />
+      <node id="5955298286250518150" at="108,22,111,5" concept="7" />
+      <node id="5955298286250518169" at="111,5,114,5" concept="7" />
+      <node id="5955298286241867610" at="31,0,35,0" concept="1" trace="MatchingEngine#(Lorg/jetbrains/mps/openapi/model/SNode;Ljava/lang/Object;)V" />
+      <node id="5955298286250505265" at="38,32,42,5" concept="7" />
+      <node id="2460310434946099928" at="87,14,91,9" concept="0" />
+      <node id="2460310434946112248" at="81,35,86,11" concept="7" />
+      <node id="5955298286242214091" at="93,12,98,7" concept="0" />
+      <node id="2460310434941932205" at="119,31,124,11" concept="7" />
+      <node id="2460310434941105500" at="117,19,128,9" concept="7" />
+      <node id="2460310434946090307" at="79,68,91,9" concept="7" />
+      <node id="2460310434941263450" at="116,46,131,7" concept="7" />
+      <node id="2460310434941101928" at="114,5,132,5" concept="7" />
+      <node id="5955298286242119109" at="74,205,98,7" concept="7" />
+      <node id="5955298286250518201" at="107,0,134,0" concept="8" trace="handleBindings#(ZLorg/jetbrains/mps/openapi/model/SNode;Ljava/lang/Object;Lorg/iets3/core/expr/adt/plugin/SuccessMatchResult;)V" />
+      <node id="5955298286242071421" at="66,38,100,5" concept="5" />
+      <node id="5955298286241869717" at="36,0,106,0" concept="8" trace="match#(Lcom/mbeddr/mpsutil/interpreter/rt/IInterpreter;Lcom/mbeddr/mpsutil/interpreter/rt/IContext;)Lorg/iets3/core/expr/adt/plugin/CaseMatchResult;" />
+      <scope id="5955298286250445554" at="43,80,44,75" />
+      <scope id="5955298286241971042" at="46,49,47,79" />
+      <scope id="5955298286241979447" at="51,163,52,74" />
+      <scope id="2460310434940120029" at="55,174,56,77" />
+      <scope id="2460310434941882003" at="61,148,62,134" />
+      <scope id="2460310434940174284" at="70,102,71,116" />
+      <scope id="5955298286242119111" at="75,72,76,29" />
+      <scope id="2460310434946112250" at="82,33,83,21" />
+      <scope id="2460310434946121603" at="84,18,85,33" />
+      <scope id="2460310434946100249" at="88,33,89,21" />
+      <scope id="5955298286242288652" at="95,58,96,84" />
+      <scope id="2460310434945964535" at="101,48,102,72" />
+      <scope id="5955298286250518151" at="109,97,110,92" />
+      <scope id="5955298286250518170" at="112,69,113,64" />
+      <scope id="2460310434941932207" at="120,31,121,74" />
+      <scope id="2460310434941935899" at="122,18,123,61" />
+      <scope id="2460310434941264722" at="129,14,130,49" />
+      <scope id="5955298286241867614" at="31,53,33,21" />
+      <scope id="5955298286250505267" at="39,141,41,21" />
+      <scope id="2460310434941113535" at="125,73,127,102" />
+      <scope id="2460310434946099929" at="87,16,90,11" />
+      <scope id="5955298286241867610" at="31,0,35,0">
+        <var name="cand" id="5955298286241868047" />
+        <var name="pattern" id="5955298286241868010" />
+      </scope>
+      <scope id="5955298286242214092" at="93,14,97,9">
+        <var name="evaluatedPattern" id="5955298286242284873" />
+      </scope>
+      <scope id="2460310434946090309" at="80,21,86,11" />
+      <scope id="2460310434941105502" at="118,55,124,11" />
+      <scope id="2460310434941263452" at="117,19,128,9" />
+      <scope id="5955298286242123104" at="77,83,92,36">
+        <var name="childEngine" id="5955298286242134062" />
+        <var name="r" id="5955298286242144259" />
+      </scope>
+      <scope id="2460310434941101930" at="115,23,131,7">
+        <var name="b" id="2460310434941124766" />
+      </scope>
+      <scope id="5955298286250518149" at="107,104,132,5">
+        <var name="slot" id="2460310434941089742" />
+      </scope>
+      <scope id="5955298286250518201" at="107,0,134,0">
+        <var name="isList" id="2460310434941255334" />
+        <var name="patArg" id="5955298286250518185" />
+        <var name="success" id="5955298286250518189" />
+        <var name="valArg" id="5955298286250518187" />
+      </scope>
+      <scope id="5955298286242071423" at="67,71,99,54">
+        <var name="isList" id="2460310434941242659" />
+        <var name="patArg" id="5955298286242115069" />
+        <var name="relevantArgIndex" id="2460310434940213748" />
+        <var name="valArg" id="5955298286242105462" />
+      </scope>
+      <scope id="5955298286242071421" at="66,38,100,5">
+        <var name="i" id="5955298286242071424" />
+      </scope>
+      <scope id="5955298286241869721" at="36,76,104,19">
+        <var name="lastIsMulti" id="2460310434941866051" />
+        <var name="matchedAMulti" id="2460310434945972794" />
+        <var name="pattern" id="5955298286241968739" />
+        <var name="patternConstructor" id="2460310434940065397" />
+        <var name="success" id="5955298286242160401" />
+        <var name="triedToMatchMulti" id="2460310434946566738" />
+        <var name="val" id="5955298286241975478" />
+      </scope>
+      <scope id="5955298286241869717" at="36,0,106,0">
+        <var name="context" id="5955298286242247216" />
+        <var name="interpreter" id="5955298286242240350" />
+      </scope>
+      <unit id="5955298286241867184" at="145,0,151,0" name="org.iets3.core.expr.adt.plugin.MatchingEngine$LINKS" />
+      <unit id="5955298286241867184" at="135,0,144,0" name="org.iets3.core.expr.adt.plugin.MatchingEngine$CONCEPTS" />
+      <unit id="5955298286241867184" at="26,0,152,0" name="org.iets3.core.expr.adt.plugin.MatchingEngine" />
+    </file>
+  </root>
+</debug-info>
+

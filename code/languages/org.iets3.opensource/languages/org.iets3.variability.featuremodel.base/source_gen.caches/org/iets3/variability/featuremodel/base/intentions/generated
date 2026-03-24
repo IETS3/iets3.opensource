@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<product version="3" modelHash="af7ilbhm9tqlkxkx895ertqyd7ptq0o">
+  <files names="AddConstraintGroup_Intention.java:AddUsingSection_Intention.java:AliasHelper.java:ExtractFeatureModelHelper.java:IntentionsDescriptor.java:PathSubstitutionUtil.java:RemoveConstraintGroup_Intention.java:TreeLayoutExplorer_Intention.java:TreeLayoutHorizontal_Intention.java:TreeLayoutVertical_Intention.java:addAttribute_Intention.java:addConstraint_Intention.java:changeFeature_Intention.java:changeSubFeatureRelation_Intention.java:enforceSubfeatureDecision_Intention.java:extractFeatureModel_Intention.java:markAsMandatoryOptional_Intention.java:newSubFeature_Intention.java:shortenConstraint_Intention.java:stateInitalization_Intention.java:substituteRefByFullPath_Intention.java:substituteSubFeatureDotTargetByFullPath_Intention.java" />
+</product>
+

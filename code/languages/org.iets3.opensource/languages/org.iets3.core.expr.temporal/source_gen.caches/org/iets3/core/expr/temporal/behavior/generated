@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<product version="3" modelHash="dbs2vlvlam0jw5ogth8wb225qohvplq">
+  <files names="AbstractTemporalOp__BehaviorDescriptor.java:AfterOp__BehaviorDescriptor.java:AlwaysExpression__BehaviorDescriptor.java:BeforeOp__BehaviorDescriptor.java:BehaviorAspectDescriptor.java:BetweenOp__BehaviorDescriptor.java:DefaultSliceValueExpr__BehaviorDescriptor.java:FullOverlapExpr__BehaviorDescriptor.java:IHaveOptionalPartsInTemporalContext__BehaviorDescriptor.java:IProvideTemporalContext__BehaviorDescriptor.java:MapSlicesOp__BehaviorDescriptor.java:ReduceOp__BehaviorDescriptor.java:SpreadValuesOp__BehaviorDescriptor.java:TemporalLiteral__BehaviorDescriptor.java:TemporalType__BehaviorDescriptor.java:ValueAtOp__BehaviorDescriptor.java" />
+</product>
+

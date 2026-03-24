@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<product version="3" modelHash="-6b5lkwc15s4ja8ol9w2ikwlaymq0mjb">
+  <files names="DeleteRepl_Intention.java:IntentionsDescriptor.java:REPLOpenHelper.java:ToggleShowTitle_Intention.java:addArg_Intention.java:addConstraint_Intention.java:addLabel_Intention.java:addNewEntry_Intention.java:addStyle_Intention.java:buildSheetInExpr_Intention.java:buildSheetInTest_Intention.java:extractIntoFunction_Intention.java:extractIntoValue_Intention.java:openThisInREPL_Intention.java:reevaluateREPL_Intention.java:setName_Intention.java:showTemplateMode_Intention.java:toggleLocked_Intention.java:toggleResult_Intention.java:toggleValues_Intention.java" />
+</product>
+

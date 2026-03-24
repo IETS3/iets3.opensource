@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<debug-info version="2">
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1082485599095:jetbrains.mps.baseLanguage.structure.BlockStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123155:jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123159:jetbrains.mps.baseLanguage.structure.IfStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123165:jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242864:jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242878:jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1070462154015:jetbrains.mps.baseLanguage.structure.StaticFieldDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1081236700938:jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" />
+  <root>
+    <file name="ActionAspectDescriptorImpl.java">
+      <unit at="12,0,30,0" name="org.iets3.core.expr.mutable.actions.ActionAspectDescriptorImpl" />
+    </file>
+  </root>
+  <root nodeRef="r:cbe127b3-2707-43f3-8b13-95e2b0299c58(org.iets3.core.expr.mutable.actions)/1483061781794175726">
+    <file name="MutableFactories.java">
+      <node id="1483061781794175746" at="19,7,20,41" concept="4" />
+      <node id="1483061781794175861" at="21,82,22,189" concept="1" />
+      <node id="1483061781797548959" at="29,7,30,48" concept="4" />
+      <node id="1483061781797549074" at="31,83,32,118" concept="1" />
+      <node id="1483061781797560638" at="36,75,37,77" concept="4" />
+      <node id="1483061781797560638" at="38,7,39,106" concept="4" />
+      <node id="1483061781797560638" at="40,7,41,28" concept="5" />
+      <node id="1483061781794175726" at="46,0,47,0" concept="6" trace="InteractorTarget$_M" />
+      <node id="1483061781794175726" at="47,0,48,0" concept="6" trace="Expression$D_" />
+      <node id="1483061781794175726" at="48,0,49,0" concept="6" trace="BlockExpression$cH" />
+      <node id="1483061781794175726" at="52,0,53,0" concept="6" trace="contextArgs$rYw" />
+      <node id="1483061781794175726" at="53,0,54,0" concept="6" trace="body$OzSD" />
+      <node id="1483061781794175726" at="54,0,55,0" concept="6" trace="expressions$2$5d" />
+      <node id="1483061781794175746" at="20,41,23,9" concept="2" />
+      <node id="1483061781797548959" at="30,48,33,9" concept="2" />
+      <node id="1483061781797560638" at="37,77,40,7" concept="0" />
+      <node id="1483061781794175746" at="18,102,24,7" concept="0" />
+      <node id="1483061781797548959" at="28,102,34,7" concept="0" />
+      <node id="1483061781797560638" at="36,0,43,0" concept="7" trace="createBlockExpression_x146ld_a0a0a0a0b#(Lorg/jetbrains/mps/openapi/model/SNode;)Lorg/jetbrains/mps/openapi/model/SNode;" />
+      <node id="1483061781794175727" at="18,0,26,0" concept="3" trace="setup#(Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;ILorg/jetbrains/mps/openapi/model/SModel;)V" />
+      <node id="1483061781797548802" at="28,0,36,0" concept="3" trace="setup#(Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;ILorg/jetbrains/mps/openapi/model/SModel;)V" />
+      <scope id="1483061781794175748" at="21,82,22,189" />
+      <scope id="1483061781797548961" at="31,83,32,118" />
+      <scope id="1483061781797560638" at="38,7,39,106">
+        <var name="n1" id="1483061781797560638" />
+      </scope>
+      <scope id="1483061781794175746" at="19,7,23,9">
+        <var name="oldNode" id="1483061781794175746" />
+      </scope>
+      <scope id="1483061781797548959" at="29,7,33,9">
+        <var name="expressionNode" id="1483061781797548959" />
+      </scope>
+      <scope id="1483061781797560638" at="36,75,41,28">
+        <var name="n0" id="1483061781797560638" />
+      </scope>
+      <scope id="1483061781794175727" at="18,102,24,7" />
+      <scope id="1483061781797548802" at="28,102,34,7" />
+      <scope id="1483061781797560638" at="36,0,43,0">
+        <var name="p0" id="1483061781797560638" />
+      </scope>
+      <scope id="1483061781794175727" at="18,0,26,0">
+        <var name="enclosingNode" id="1483061781794175727" />
+        <var name="index" id="1483061781794175727" />
+        <var name="model" id="1483061781794175727" />
+        <var name="newNode" id="1483061781794175727" />
+        <var name="sampleNode" id="1483061781794175727" />
+      </scope>
+      <scope id="1483061781797548802" at="28,0,36,0">
+        <var name="enclosingNode" id="1483061781797548802" />
+        <var name="index" id="1483061781797548802" />
+        <var name="model" id="1483061781797548802" />
+        <var name="newNode" id="1483061781797548802" />
+        <var name="sampleNode" id="1483061781797548802" />
+      </scope>
+      <unit id="1483061781794175726" at="45,0,50,0" name="org.iets3.core.expr.mutable.actions.MutableFactories$CONCEPTS" />
+      <unit id="1483061781794175726" at="51,0,56,0" name="org.iets3.core.expr.mutable.actions.MutableFactories$LINKS" />
+      <unit id="1483061781794175727" at="17,0,27,0" name="org.iets3.core.expr.mutable.actions.MutableFactories$NodeFactory_1483061781794175727" />
+      <unit id="1483061781797548802" at="27,0,44,0" name="org.iets3.core.expr.mutable.actions.MutableFactories$NodeFactory_1483061781797548802" />
+      <unit id="1483061781794175726" at="16,0,57,0" name="org.iets3.core.expr.mutable.actions.MutableFactories" />
+    </file>
+  </root>
+</debug-info>
+

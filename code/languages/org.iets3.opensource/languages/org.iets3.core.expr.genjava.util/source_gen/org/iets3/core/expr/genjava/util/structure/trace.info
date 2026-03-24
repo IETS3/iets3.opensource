@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<debug-info version="2">
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123155:jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068390468200:jetbrains.mps.baseLanguage.structure.FieldDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123159:jetbrains.mps.baseLanguage.structure.IfStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242864:jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242878:jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/6329021646629104954:jetbrains.mps.baseLanguage.structure.SingleLineComment" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1070462154015:jetbrains.mps.baseLanguage.structure.StaticFieldDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1081236700938:jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" />
+  <root>
+    <file name="ConceptPresentationAspectImpl.java">
+      <unit at="11,0,57,0" name="org.iets3.core.expr.genjava.util.structure.ConceptPresentationAspectImpl" />
+    </file>
+    <file name="LanguageConceptSwitch.java">
+      <unit at="10,0,34,0" name="org.iets3.core.expr.genjava.util.structure.LanguageConceptSwitch" />
+    </file>
+    <file name="StructureAspectDescriptor.java">
+      <unit at="15,0,104,0" name="org.iets3.core.expr.genjava.util.structure.StructureAspectDescriptor" />
+    </file>
+  </root>
+  <root nodeRef="r:2963f1d9-ee74-48d9-8a07-471e05081e4f(org.iets3.core.expr.genjava.util.structure)/3084582384762284982">
+    <file name="ConceptPresentationAspectImpl.java">
+      <node id="3084582384762284982" at="12,0,13,0" concept="1" trace="props_KFMaybeNot" />
+      <node id="3084582384762284982" at="23,39,24,137" concept="3" />
+      <node id="3084582384762285785" at="24,137,25,68" concept="0" />
+      <node id="3084582384762284982" at="25,68,26,42" concept="0" />
+      <node id="3084582384762284982" at="26,42,27,42" concept="0" />
+      <node id="3084582384762284982" at="28,9,29,32" concept="4" />
+      <node id="3084582384762284982" at="22,44,28,9" concept="2" />
+      <scope id="3084582384762284982" at="23,39,27,42">
+        <var name="cpb" id="3084582384762284982" />
+      </scope>
+      <scope id="3084582384762284982" at="22,44,29,32" />
+    </file>
+    <file name="LanguageConceptSwitch.java">
+      <node id="3084582384762284982" at="12,0,13,0" concept="6" trace="KFMaybeNot" />
+      <node id="3084582384762284982" at="18,116,19,49" concept="0" />
+    </file>
+    <file name="StructureAspectDescriptor.java">
+      <node id="3084582384762284982" at="16,0,17,0" concept="1" trace="myConceptKFMaybeNot" />
+      <node id="3084582384762284982" at="42,44,43,35" concept="4" />
+      <node id="3084582384762284982" at="60,68,61,177" concept="3" />
+      <node id="3084582384762284982" at="61,177,62,34" concept="0" />
+      <node id="3084582384762284982" at="62,34,63,61" concept="5" />
+      <node id="3084582384762284982" at="63,61,64,76" concept="0" />
+      <node id="3084582384762284982" at="64,76,65,76" concept="0" />
+      <node id="3084582384762284982" at="65,76,66,119" concept="0" />
+      <node id="3084582384762284982" at="66,119,67,17" concept="0" />
+      <node id="3084582384762285383" at="67,17,68,113" concept="0" />
+      <node id="3084582384762285785" at="68,113,69,201" concept="0" />
+      <node id="3084582384762284982" at="69,201,70,24" concept="0" />
+      <node id="3084582384762284982" at="70,24,71,22" concept="4" />
+      <node id="3084582384762284982" at="60,0,73,0" concept="7" trace="createDescriptorForKFMaybeNot#()Ljetbrains/mps/smodel/runtime/ConceptDescriptor;" />
+      <scope id="3084582384762284982" at="42,44,43,35" />
+      <scope id="3084582384762284982" at="60,68,71,22">
+        <var name="b" id="3084582384762284982" />
+      </scope>
+      <scope id="3084582384762284982" at="60,0,73,0" />
+    </file>
+  </root>
+  <root nodeRef="r:2963f1d9-ee74-48d9-8a07-471e05081e4f(org.iets3.core.expr.genjava.util.structure)/6620322410581516028">
+    <file name="ConceptPresentationAspectImpl.java">
+      <node id="6620322410581516028" at="14,0,15,0" concept="1" trace="props_KFMultiConditional" />
+      <node id="6620322410581516028" at="39,47,40,76" concept="3" />
+      <node id="6620322410581516028" at="40,76,41,73" concept="0" />
+      <node id="6620322410581516028" at="41,73,42,50" concept="0" />
+      <node id="6620322410581516028" at="43,9,44,40" concept="4" />
+      <node id="6620322410581516028" at="38,52,43,9" concept="2" />
+      <scope id="6620322410581516028" at="39,47,42,50">
+        <var name="cpb" id="6620322410581516028" />
+      </scope>
+      <scope id="6620322410581516028" at="38,52,44,40" />
+    </file>
+    <file name="LanguageConceptSwitch.java">
+      <node id="6620322410581516028" at="14,0,15,0" concept="6" trace="KFMultiConditional" />
+      <node id="6620322410581516028" at="20,49,21,57" concept="0" />
+    </file>
+    <file name="StructureAspectDescriptor.java">
+      <node id="6620322410581516028" at="18,0,19,0" concept="1" trace="myConceptKFMultiConditional" />
+      <node id="6620322410581516028" at="46,52,47,43" concept="4" />
+      <node id="6620322410581516028" at="83,76,84,185" concept="3" />
+      <node id="6620322410581516028" at="84,185,85,33" concept="0" />
+      <node id="6620322410581516028" at="85,33,86,61" concept="5" />
+      <node id="6620322410581516028" at="86,61,87,76" concept="0" />
+      <node id="6620322410581516028" at="87,76,88,119" concept="0" />
+      <node id="6620322410581516028" at="88,119,89,17" concept="0" />
+      <node id="6620322410583109545" at="89,17,90,200" concept="0" />
+      <node id="6620322410581516028" at="90,200,91,22" concept="4" />
+      <node id="6620322410581516028" at="83,0,93,0" concept="7" trace="createDescriptorForKFMultiConditional#()Ljetbrains/mps/smodel/runtime/ConceptDescriptor;" />
+      <scope id="6620322410581516028" at="46,52,47,43" />
+      <scope id="6620322410581516028" at="83,76,91,22">
+        <var name="b" id="6620322410581516028" />
+      </scope>
+      <scope id="6620322410581516028" at="83,0,93,0" />
+    </file>
+  </root>
+  <root nodeRef="r:2963f1d9-ee74-48d9-8a07-471e05081e4f(org.iets3.core.expr.genjava.util.structure)/6620322410583109646">
+    <file name="ConceptPresentationAspectImpl.java">
+      <node id="6620322410583109646" at="15,0,16,0" concept="1" trace="props_KFMultiOr" />
+      <node id="6620322410583109646" at="46,38,47,76" concept="3" />
+      <node id="6620322410583109646" at="47,76,48,30" concept="0" />
+      <node id="6620322410583109646" at="48,30,49,36" concept="0" />
+      <node id="6620322410583109646" at="49,36,50,41" concept="0" />
+      <node id="6620322410583109646" at="51,9,52,31" concept="4" />
+      <node id="6620322410583109646" at="45,43,51,9" concept="2" />
+      <scope id="6620322410583109646" at="46,38,50,41">
+        <var name="cpb" id="6620322410583109646" />
+      </scope>
+      <scope id="6620322410583109646" at="45,43,52,31" />
+    </file>
+    <file name="LanguageConceptSwitch.java">
+      <node id="6620322410583109646" at="15,0,16,0" concept="6" trace="KFMultiOr" />
+      <node id="6620322410583109646" at="21,57,22,48" concept="0" />
+    </file>
+    <file name="StructureAspectDescriptor.java">
+      <node id="6620322410583109646" at="19,0,20,0" concept="1" trace="myConceptKFMultiOr" />
+      <node id="6620322410583109646" at="48,43,49,34" concept="4" />
+      <node id="6620322410583109646" at="93,67,94,176" concept="3" />
+      <node id="6620322410583109646" at="94,176,95,34" concept="0" />
+      <node id="6620322410583109646" at="95,34,96,77" concept="5" />
+      <node id="6620322410583109646" at="96,77,97,76" concept="0" />
+      <node id="6620322410583109646" at="97,76,98,119" concept="0" />
+      <node id="6620322410583109646" at="98,119,99,17" concept="0" />
+      <node id="6620322410583109646" at="99,17,100,18" concept="0" />
+      <node id="6620322410583109646" at="100,18,101,22" concept="4" />
+      <node id="6620322410583109646" at="93,0,103,0" concept="7" trace="createDescriptorForKFMultiOr#()Ljetbrains/mps/smodel/runtime/ConceptDescriptor;" />
+      <scope id="6620322410583109646" at="48,43,49,34" />
+      <scope id="6620322410583109646" at="93,67,101,22">
+        <var name="b" id="6620322410583109646" />
+      </scope>
+      <scope id="6620322410583109646" at="93,0,103,0" />
+    </file>
+  </root>
+  <root nodeRef="r:2963f1d9-ee74-48d9-8a07-471e05081e4f(org.iets3.core.expr.genjava.util.structure)/6620322410583109647">
+    <file name="ConceptPresentationAspectImpl.java">
+      <node id="6620322410583109647" at="13,0,14,0" concept="1" trace="props_KFMultiAnd" />
+      <node id="6620322410583109647" at="31,39,32,76" concept="3" />
+      <node id="6620322410583109647" at="32,76,33,31" concept="0" />
+      <node id="6620322410583109647" at="33,31,34,37" concept="0" />
+      <node id="6620322410583109647" at="34,37,35,42" concept="0" />
+      <node id="6620322410583109647" at="36,9,37,32" concept="4" />
+      <node id="6620322410583109647" at="30,44,36,9" concept="2" />
+      <scope id="6620322410583109647" at="31,39,35,42">
+        <var name="cpb" id="6620322410583109647" />
+      </scope>
+      <scope id="6620322410583109647" at="30,44,37,32" />
+    </file>
+    <file name="LanguageConceptSwitch.java">
+      <node id="6620322410583109647" at="13,0,14,0" concept="6" trace="KFMultiAnd" />
+      <node id="6620322410583109647" at="19,49,20,49" concept="0" />
+    </file>
+    <file name="StructureAspectDescriptor.java">
+      <node id="6620322410583109647" at="17,0,18,0" concept="1" trace="myConceptKFMultiAnd" />
+      <node id="6620322410583109647" at="44,44,45,35" concept="4" />
+      <node id="6620322410583109647" at="73,68,74,177" concept="3" />
+      <node id="6620322410583109647" at="74,177,75,34" concept="0" />
+      <node id="6620322410583109647" at="75,34,76,77" concept="5" />
+      <node id="6620322410583109647" at="76,77,77,76" concept="0" />
+      <node id="6620322410583109647" at="77,76,78,119" concept="0" />
+      <node id="6620322410583109647" at="78,119,79,17" concept="0" />
+      <node id="6620322410583109647" at="79,17,80,19" concept="0" />
+      <node id="6620322410583109647" at="80,19,81,22" concept="4" />
+      <node id="6620322410583109647" at="73,0,83,0" concept="7" trace="createDescriptorForKFMultiAnd#()Ljetbrains/mps/smodel/runtime/ConceptDescriptor;" />
+      <scope id="6620322410583109647" at="44,44,45,35" />
+      <scope id="6620322410583109647" at="73,68,81,22">
+        <var name="b" id="6620322410583109647" />
+      </scope>
+      <scope id="6620322410583109647" at="73,0,83,0" />
+    </file>
+  </root>
+</debug-info>
+

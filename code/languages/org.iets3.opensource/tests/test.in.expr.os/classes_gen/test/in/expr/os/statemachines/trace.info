@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<debug-info version="2">
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123140:jetbrains.mps.baseLanguage.structure.ConstructorDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123155:jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123165:jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242864:jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1070462154015:jetbrains.mps.baseLanguage.structure.StaticFieldDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1070475587102:jetbrains.mps.baseLanguage.structure.SuperConstructorInvocation" />
+  <root nodeRef="r:5222e7e4-8d0d-44ac-82e7-aa8c05425f8d(test.in.expr.os.statemachines@tests)/184873224793234727">
+    <file name="SquashEntryActionsIntention_minimalExample_Test.java">
+      <node id="184873224793234727" at="19,60,20,60" concept="5" />
+      <node id="184873224793234727" at="24,82,25,36" concept="1" />
+      <node id="184873224793234727" at="30,52,31,19" concept="5" />
+      <node id="184873224793234727" at="35,51,36,70" concept="1" />
+      <node id="184873224793235964" at="36,70,37,118" concept="1" />
+      <node id="184873224793234727" at="16,0,18,0" concept="4" trace="ourParametersCacheExtension" />
+      <node id="184873224793234727" at="19,0,22,0" concept="0" trace="SquashEntryActionsIntention_minimalExample_Test#()V" />
+      <node id="184873224793234727" at="30,0,33,0" concept="0" trace="TestBody#(Ljetbrains/mps/lang/test/runtime/TransformationTest;)V" />
+      <node id="184873224793234727" at="23,0,27,0" concept="2" trace="test_SquashEntryActionsIntention_minimalExample#()V" />
+      <node id="184873224793234727" at="34,0,39,0" concept="2" trace="testMethodImpl#()V" />
+      <scope id="184873224793234727" at="19,60,20,60" />
+      <scope id="184873224793234727" at="24,82,25,36" />
+      <scope id="184873224793234727" at="30,52,31,19" />
+      <scope id="184873224793234727" at="35,51,37,118" />
+      <scope id="184873224793234727" at="19,0,22,0" />
+      <scope id="184873224793234727" at="30,0,33,0">
+        <var name="owner" id="184873224793234727" />
+      </scope>
+      <scope id="184873224793234727" at="23,0,27,0" />
+      <scope id="184873224793234727" at="34,0,39,0" />
+      <unit id="184873224793234727" at="28,0,40,0" name="test.in.expr.os.statemachines.SquashEntryActionsIntention_minimalExample_Test$TestBody" />
+      <unit id="184873224793234727" at="14,0,41,0" name="test.in.expr.os.statemachines.SquashEntryActionsIntention_minimalExample_Test" />
+    </file>
+  </root>
+  <root nodeRef="r:5222e7e4-8d0d-44ac-82e7-aa8c05425f8d(test.in.expr.os.statemachines@tests)/184873224794730287">
+    <file name="SquashEntryActionsIntention_Test.java">
+      <node id="184873224794730287" at="19,45,20,60" concept="5" />
+      <node id="184873224794730287" at="24,67,25,36" concept="1" />
+      <node id="184873224794730287" at="30,52,31,19" concept="5" />
+      <node id="184873224794730287" at="35,51,36,70" concept="1" />
+      <node id="184873224794730303" at="36,70,37,118" concept="1" />
+      <node id="184873224794730287" at="16,0,18,0" concept="4" trace="ourParametersCacheExtension" />
+      <node id="184873224794730287" at="19,0,22,0" concept="0" trace="SquashEntryActionsIntention_Test#()V" />
+      <node id="184873224794730287" at="30,0,33,0" concept="0" trace="TestBody#(Ljetbrains/mps/lang/test/runtime/TransformationTest;)V" />
+      <node id="184873224794730287" at="23,0,27,0" concept="2" trace="test_SquashEntryActionsIntention#()V" />
+      <node id="184873224794730287" at="34,0,39,0" concept="2" trace="testMethodImpl#()V" />
+      <scope id="184873224794730287" at="19,45,20,60" />
+      <scope id="184873224794730287" at="24,67,25,36" />
+      <scope id="184873224794730287" at="30,52,31,19" />
+      <scope id="184873224794730287" at="35,51,37,118" />
+      <scope id="184873224794730287" at="19,0,22,0" />
+      <scope id="184873224794730287" at="30,0,33,0">
+        <var name="owner" id="184873224794730287" />
+      </scope>
+      <scope id="184873224794730287" at="23,0,27,0" />
+      <scope id="184873224794730287" at="34,0,39,0" />
+      <unit id="184873224794730287" at="28,0,40,0" name="test.in.expr.os.statemachines.SquashEntryActionsIntention_Test$TestBody" />
+      <unit id="184873224794730287" at="14,0,41,0" name="test.in.expr.os.statemachines.SquashEntryActionsIntention_Test" />
+    </file>
+  </root>
+  <root nodeRef="r:5222e7e4-8d0d-44ac-82e7-aa8c05425f8d(test.in.expr.os.statemachines@tests)/184873224794737397">
+    <file name="SquashEntryActionsIntention_notApplicable_Test.java">
+      <node id="184873224794737397" at="20,59,21,60" concept="5" />
+      <node id="184873224794737397" at="25,81,26,36" concept="1" />
+      <node id="184873224794737397" at="31,52,32,19" concept="5" />
+      <node id="184873224794737397" at="36,51,37,52" concept="1" />
+      <node id="184873224795739108" at="37,52,38,144" concept="1" />
+      <node id="184873224794737397" at="17,0,19,0" concept="4" trace="ourParametersCacheExtension" />
+      <node id="184873224794737397" at="20,0,23,0" concept="0" trace="SquashEntryActionsIntention_notApplicable_Test#()V" />
+      <node id="184873224794737397" at="31,0,34,0" concept="0" trace="TestBody#(Ljetbrains/mps/lang/test/runtime/TransformationTest;)V" />
+      <node id="184873224794737397" at="24,0,28,0" concept="2" trace="test_SquashEntryActionsIntention_notApplicable#()V" />
+      <node id="184873224794737397" at="35,0,40,0" concept="2" trace="testMethodImpl#()V" />
+      <scope id="184873224794737397" at="20,59,21,60" />
+      <scope id="184873224794737397" at="25,81,26,36" />
+      <scope id="184873224794737397" at="31,52,32,19" />
+      <scope id="184873224794737397" at="36,51,38,144" />
+      <scope id="184873224794737397" at="20,0,23,0" />
+      <scope id="184873224794737397" at="31,0,34,0">
+        <var name="owner" id="184873224794737397" />
+      </scope>
+      <scope id="184873224794737397" at="24,0,28,0" />
+      <scope id="184873224794737397" at="35,0,40,0" />
+      <unit id="184873224794737397" at="29,0,41,0" name="test.in.expr.os.statemachines.SquashEntryActionsIntention_notApplicable_Test$TestBody" />
+      <unit id="184873224794737397" at="15,0,42,0" name="test.in.expr.os.statemachines.SquashEntryActionsIntention_notApplicable_Test" />
+    </file>
+  </root>
+  <root nodeRef="r:5222e7e4-8d0d-44ac-82e7-aa8c05425f8d(test.in.expr.os.statemachines@tests)/184873224795738814">
+    <file name="SquashExitActionsIntention_notApplicable_Test.java">
+      <node id="184873224795738814" at="20,58,21,60" concept="5" />
+      <node id="184873224795738814" at="25,80,26,36" concept="1" />
+      <node id="184873224795738814" at="31,52,32,19" concept="5" />
+      <node id="184873224795738814" at="36,51,37,52" concept="1" />
+      <node id="184873224795739091" at="37,52,38,143" concept="1" />
+      <node id="184873224795738814" at="17,0,19,0" concept="4" trace="ourParametersCacheExtension" />
+      <node id="184873224795738814" at="20,0,23,0" concept="0" trace="SquashExitActionsIntention_notApplicable_Test#()V" />
+      <node id="184873224795738814" at="31,0,34,0" concept="0" trace="TestBody#(Ljetbrains/mps/lang/test/runtime/TransformationTest;)V" />
+      <node id="184873224795738814" at="24,0,28,0" concept="2" trace="test_SquashExitActionsIntention_notApplicable#()V" />
+      <node id="184873224795738814" at="35,0,40,0" concept="2" trace="testMethodImpl#()V" />
+      <scope id="184873224795738814" at="20,58,21,60" />
+      <scope id="184873224795738814" at="25,80,26,36" />
+      <scope id="184873224795738814" at="31,52,32,19" />
+      <scope id="184873224795738814" at="36,51,38,143" />
+      <scope id="184873224795738814" at="20,0,23,0" />
+      <scope id="184873224795738814" at="31,0,34,0">
+        <var name="owner" id="184873224795738814" />
+      </scope>
+      <scope id="184873224795738814" at="24,0,28,0" />
+      <scope id="184873224795738814" at="35,0,40,0" />
+      <unit id="184873224795738814" at="29,0,41,0" name="test.in.expr.os.statemachines.SquashExitActionsIntention_notApplicable_Test$TestBody" />
+      <unit id="184873224795738814" at="15,0,42,0" name="test.in.expr.os.statemachines.SquashExitActionsIntention_notApplicable_Test" />
+    </file>
+  </root>
+  <root nodeRef="r:5222e7e4-8d0d-44ac-82e7-aa8c05425f8d(test.in.expr.os.statemachines@tests)/184873224796008153">
+    <file name="SquashExitActionsIntention_minimalExample_Test.java">
+      <node id="184873224796008153" at="19,59,20,60" concept="5" />
+      <node id="184873224796008153" at="24,81,25,36" concept="1" />
+      <node id="184873224796008153" at="30,52,31,19" concept="5" />
+      <node id="184873224796008153" at="35,51,36,70" concept="1" />
+      <node id="184873224796011213" at="36,70,37,117" concept="1" />
+      <node id="184873224796008153" at="16,0,18,0" concept="4" trace="ourParametersCacheExtension" />
+      <node id="184873224796008153" at="19,0,22,0" concept="0" trace="SquashExitActionsIntention_minimalExample_Test#()V" />
+      <node id="184873224796008153" at="30,0,33,0" concept="0" trace="TestBody#(Ljetbrains/mps/lang/test/runtime/TransformationTest;)V" />
+      <node id="184873224796008153" at="23,0,27,0" concept="2" trace="test_SquashExitActionsIntention_minimalExample#()V" />
+      <node id="184873224796008153" at="34,0,39,0" concept="2" trace="testMethodImpl#()V" />
+      <scope id="184873224796008153" at="19,59,20,60" />
+      <scope id="184873224796008153" at="24,81,25,36" />
+      <scope id="184873224796008153" at="30,52,31,19" />
+      <scope id="184873224796008153" at="35,51,37,117" />
+      <scope id="184873224796008153" at="19,0,22,0" />
+      <scope id="184873224796008153" at="30,0,33,0">
+        <var name="owner" id="184873224796008153" />
+      </scope>
+      <scope id="184873224796008153" at="23,0,27,0" />
+      <scope id="184873224796008153" at="34,0,39,0" />
+      <unit id="184873224796008153" at="28,0,40,0" name="test.in.expr.os.statemachines.SquashExitActionsIntention_minimalExample_Test$TestBody" />
+      <unit id="184873224796008153" at="14,0,41,0" name="test.in.expr.os.statemachines.SquashExitActionsIntention_minimalExample_Test" />
+    </file>
+  </root>
+  <root nodeRef="r:5222e7e4-8d0d-44ac-82e7-aa8c05425f8d(test.in.expr.os.statemachines@tests)/184873224796011999">
+    <file name="SquashExitActionsIntention_Test.java">
+      <node id="184873224796011999" at="19,44,20,60" concept="5" />
+      <node id="184873224796011999" at="24,66,25,36" concept="1" />
+      <node id="184873224796011999" at="30,52,31,19" concept="5" />
+      <node id="184873224796011999" at="35,51,36,70" concept="1" />
+      <node id="184873224796018509" at="36,70,37,117" concept="1" />
+      <node id="184873224796011999" at="16,0,18,0" concept="4" trace="ourParametersCacheExtension" />
+      <node id="184873224796011999" at="19,0,22,0" concept="0" trace="SquashExitActionsIntention_Test#()V" />
+      <node id="184873224796011999" at="30,0,33,0" concept="0" trace="TestBody#(Ljetbrains/mps/lang/test/runtime/TransformationTest;)V" />
+      <node id="184873224796011999" at="23,0,27,0" concept="2" trace="test_SquashExitActionsIntention#()V" />
+      <node id="184873224796011999" at="34,0,39,0" concept="2" trace="testMethodImpl#()V" />
+      <scope id="184873224796011999" at="19,44,20,60" />
+      <scope id="184873224796011999" at="24,66,25,36" />
+      <scope id="184873224796011999" at="30,52,31,19" />
+      <scope id="184873224796011999" at="35,51,37,117" />
+      <scope id="184873224796011999" at="19,0,22,0" />
+      <scope id="184873224796011999" at="30,0,33,0">
+        <var name="owner" id="184873224796011999" />
+      </scope>
+      <scope id="184873224796011999" at="23,0,27,0" />
+      <scope id="184873224796011999" at="34,0,39,0" />
+      <unit id="184873224796011999" at="28,0,40,0" name="test.in.expr.os.statemachines.SquashExitActionsIntention_Test$TestBody" />
+      <unit id="184873224796011999" at="14,0,41,0" name="test.in.expr.os.statemachines.SquashExitActionsIntention_Test" />
+    </file>
+  </root>
+  <root nodeRef="r:5222e7e4-8d0d-44ac-82e7-aa8c05425f8d(test.in.expr.os.statemachines@tests)/3875326186662332352">
+    <file name="StatemachineConstraints_Test.java">
+      <node id="3875326186662332352" at="23,41,24,60" concept="5" />
+      <node id="3875326186662332374" at="28,77,29,68" concept="1" />
+      <node id="3875326186662332352" at="34,52,35,19" concept="5" />
+      <node id="3875326186662332352" at="39,36,40,46" concept="1" />
+      <node id="3875326186662332374" at="43,79,44,22" concept="1" />
+      <node id="3875326186662332374" at="45,30,46,63" concept="3" />
+      <node id="3875326186662332374" at="46,63,47,170" concept="1" />
+      <node id="3875326186662332352" at="20,0,22,0" concept="4" trace="ourParametersCacheExtension" />
+      <node id="3875326186662332352" at="23,0,26,0" concept="0" trace="StatemachineConstraints_Test#()V" />
+      <node id="3875326186662332352" at="34,0,37,0" concept="0" trace="TestBody#(Ljetbrains/mps/lang/test/runtime/TransformationTest;)V" />
+      <node id="3875326186662332374" at="27,0,31,0" concept="2" trace="test_ErrorMessagesCheck3875326186662332374#()V" />
+      <node id="3875326186662332352" at="38,0,42,0" concept="2" trace="initTestNodes#()V" />
+      <node id="3875326186662332374" at="44,22,48,9" concept="1" />
+      <node id="3875326186662332374" at="43,0,50,0" concept="2" trace="test_ErrorMessagesCheck3875326186662332374#()V" />
+      <scope id="3875326186662332352" at="23,41,24,60" />
+      <scope id="3875326186662332374" at="28,77,29,68" />
+      <scope id="3875326186662332352" at="34,52,35,19" />
+      <scope id="3875326186662332352" at="39,36,40,46" />
+      <scope id="3875326186662332374" at="45,30,47,170">
+        <var name="nodeToCheck" id="3875326186662332374" />
+      </scope>
+      <scope id="3875326186662332352" at="23,0,26,0" />
+      <scope id="3875326186662332352" at="34,0,37,0">
+        <var name="owner" id="3875326186662332352" />
+      </scope>
+      <scope id="3875326186662332374" at="27,0,31,0" />
+      <scope id="3875326186662332352" at="38,0,42,0" />
+      <scope id="3875326186662332374" at="43,79,48,9" />
+      <scope id="3875326186662332374" at="43,0,50,0" />
+      <unit id="3875326186662332352" at="32,0,52,0" name="test.in.expr.os.statemachines.StatemachineConstraints_Test$TestBody" />
+      <unit id="3875326186662332352" at="18,0,53,0" name="test.in.expr.os.statemachines.StatemachineConstraints_Test" />
+    </file>
+  </root>
+</debug-info>
+

@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<debug-info version="2">
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1082485599095:jetbrains.mps.baseLanguage.structure.BlockStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123140:jetbrains.mps.baseLanguage.structure.ConstructorDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123155:jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068390468200:jetbrains.mps.baseLanguage.structure.FieldDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123159:jetbrains.mps.baseLanguage.structure.IfStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123165:jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242864:jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242878:jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123157:jetbrains.mps.baseLanguage.structure.Statement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1070462154015:jetbrains.mps.baseLanguage.structure.StaticFieldDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1070475587102:jetbrains.mps.baseLanguage.structure.SuperConstructorInvocation" />
+  <root>
+    <file name="IntentionsDescriptor.java">
+      <unit at="18,0,56,0" name="org.iets3.protocol.transport.intentions.IntentionsDescriptor" />
+    </file>
+  </root>
+  <root nodeRef="r:c9d3b67e-62f4-430e-a5b8-04459662b42c(org.iets3.protocol.transport.intentions)/5400341048568104065">
+    <file name="DeriveProtocol.java">
+      <node id="5400341048568104394" at="21,0,22,0" concept="3" trace="protocolAttr" />
+      <node id="5400341048568104481" at="23,47,24,39" concept="2" />
+      <node id="5400341048565622904" at="27,74,28,105" concept="6" />
+      <node id="5400341048565911933" at="29,131,30,140" concept="6" />
+      <node id="5400341048565714815" at="31,45,32,87" concept="2" />
+      <node id="5400341048567490682" at="33,14,34,166" concept="2" />
+      <node id="5400341048568186384" at="36,7,37,36" concept="7" />
+      <node id="5400341048568526547" at="40,77,41,440" concept="6" />
+      <node id="5400341048568537526" at="41,440,42,88" concept="7" />
+      <node id="5400341048568194356" at="45,89,46,111" concept="7" />
+      <node id="5400341048568254612" at="49,86,50,142" concept="7" />
+      <node id="5400341048568104065" at="54,0,55,0" concept="9" trace="protocol$Prfs" />
+      <node id="5400341048565889306" at="33,12,35,7" concept="0" />
+      <node id="5400341048568104159" at="23,0,26,0" concept="1" trace="DeriveProtocol#(Lorg/jetbrains/mps/openapi/model/SNode;)V" />
+      <node id="5400341048568192245" at="45,0,48,0" concept="5" trace="initializeCandidateProtocols#(Ljava/lang/Iterable;)Ljava/lang/Iterable;" />
+      <node id="5400341048568253445" at="49,0,52,0" concept="5" trace="transportProtocolConcepts#(Ljava/lang/Iterable;)Ljava/lang/Iterable;" />
+      <node id="5400341048568439153" at="40,0,44,0" concept="5" trace="firstMatchingHardware#(Ljava/lang/Iterable;)Lorg/jetbrains/mps/openapi/model/SNode;" />
+      <node id="5400341048565690772" at="30,140,35,7" concept="4" />
+      <node id="5400341048562173181" at="28,105,36,7" concept="2" />
+      <node id="5400341048568173345" at="27,0,39,0" concept="5" trace="candidateProtocols#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljava/lang/Iterable;" />
+      <scope id="5400341048568104163" at="23,47,24,39" />
+      <scope id="5400341048565690774" at="31,45,32,87" />
+      <scope id="5400341048565889307" at="33,14,34,166" />
+      <scope id="5400341048568192248" at="45,89,46,111" />
+      <scope id="5400341048568253448" at="49,86,50,142" />
+      <scope id="5400341048568439156" at="40,77,42,88">
+        <var name="concept" id="5400341048568526548" />
+      </scope>
+      <scope id="5400341048568104159" at="23,0,26,0">
+        <var name="mappingSection" id="5400341048568104210" />
+      </scope>
+      <scope id="5400341048568192245" at="45,0,48,0">
+        <var name="protocolMaps" id="5400341048568214017" />
+      </scope>
+      <scope id="5400341048568253445" at="49,0,52,0">
+        <var name="protocolMaps" id="5400341048568255111" />
+      </scope>
+      <scope id="5400341048568439153" at="40,0,44,0">
+        <var name="candidateProtocols" id="5400341048568451369" />
+      </scope>
+      <scope id="5400341048562183511" at="29,131,35,7">
+        <var name="protocolMapForElement" id="5400341048565911934" />
+      </scope>
+      <scope id="5400341048568173348" at="27,74,37,36">
+        <var name="candidateProtocols" id="5400341048565622907" />
+      </scope>
+      <scope id="5400341048568173345" at="27,0,39,0">
+        <var name="protocolAttr" id="5400341048568178643" />
+      </scope>
+      <unit id="5400341048568104065" at="53,0,56,0" name="org.iets3.protocol.transport.intentions.DeriveProtocol$LINKS" />
+      <unit id="5400341048568104065" at="19,0,57,0" name="org.iets3.protocol.transport.intentions.DeriveProtocol" />
+    </file>
+  </root>
+  <root nodeRef="r:c9d3b67e-62f4-430e-a5b8-04459662b42c(org.iets3.protocol.transport.intentions)/5400341048569099893">
+    <file name="DeriveProtocolErrorHandler.java">
+      <node id="5400341048569100033" at="18,0,19,0" concept="3" trace="errorText" />
+      <node id="5400341048569120824" at="21,28,22,26" concept="2" />
+      <node id="5400341048569393849" at="23,5,24,307" concept="2" />
+      <node id="5400341048569144649" at="24,307,25,57" concept="2" />
+      <node id="5400341048569399637" at="25,57,26,62" concept="2" />
+      <node id="5400341048570043823" at="30,28,31,26" concept="2" />
+      <node id="5400341048570202743" at="32,5,33,307" concept="2" />
+      <node id="5400341048570219151" at="33,307,34,65" concept="2" />
+      <node id="5400341048570219142" at="34,65,35,64" concept="2" />
+      <node id="5400341048570218370" at="35,64,36,0" concept="8" />
+      <node id="5400341048570055497" at="39,28,40,26" concept="2" />
+      <node id="5400341048570320048" at="41,5,42,307" concept="2" />
+      <node id="5400341048570337235" at="42,307,43,162" concept="2" />
+      <node id="5400341048570337240" at="43,162,44,98" concept="2" />
+      <node id="5400341048569111761" at="47,36,48,86" concept="2" />
+      <node id="5400341048569238521" at="51,36,52,29" concept="7" />
+      <node id="598819418538373388" at="55,34,56,136" concept="2" />
+      <node id="5400341048569099893" at="60,0,61,0" concept="9" trace="mappingSource$IdG3" />
+      <node id="5400341048569099893" at="61,0,62,0" concept="9" trace="mappingTarget$zDSl" />
+      <node id="5400341048569107046" at="20,87,23,5" concept="4" />
+      <node id="5400341048570043821" at="29,87,32,5" concept="4" />
+      <node id="5400341048570055495" at="38,131,41,5" concept="4" />
+      <node id="5400341048569111148" at="47,0,50,0" concept="5" trace="initStringBuilder#()V" />
+      <node id="5400341048569237497" at="51,0,54,0" concept="5" trace="hasErrorsToShow#()Z" />
+      <node id="5400341048569273610" at="55,0,58,0" concept="5" trace="showErrorMessage#()V" />
+      <node id="5400341048569100230" at="20,0,28,0" concept="5" trace="appendMissingMapError#(Lorg/jetbrains/mps/openapi/model/SNode;Ljava/lang/Iterable;)V" />
+      <node id="5400341048570055493" at="38,0,46,0" concept="5" trace="appendNotSuitableHardwareError#(Lorg/jetbrains/mps/openapi/model/SNode;Ljava/lang/Iterable;Ljava/lang/Iterable;)V" />
+      <node id="5400341048570043819" at="29,0,38,0" concept="5" trace="appendNonCommonMapsError#(Lorg/jetbrains/mps/openapi/model/SNode;Ljava/lang/Iterable;)V" />
+      <scope id="5400341048569107048" at="21,28,22,26" />
+      <scope id="5400341048570043822" at="30,28,31,26" />
+      <scope id="5400341048570055496" at="39,28,40,26" />
+      <scope id="5400341048569111151" at="47,36,48,86" />
+      <scope id="5400341048569237500" at="51,36,52,29" />
+      <scope id="5400341048569273613" at="55,34,56,136" />
+      <scope id="5400341048569111148" at="47,0,50,0" />
+      <scope id="5400341048569237497" at="51,0,54,0" />
+      <scope id="5400341048569273610" at="55,0,58,0" />
+      <scope id="5400341048569100233" at="20,87,26,62" />
+      <scope id="5400341048570055494" at="38,131,44,98" />
+      <scope id="5400341048570043820" at="29,87,36,0" />
+      <scope id="5400341048569100230" at="20,0,28,0">
+        <var name="mapping" id="5400341048569102491" />
+        <var name="notMappedElements" id="5400341048569102523" />
+      </scope>
+      <scope id="5400341048570055493" at="38,0,46,0">
+        <var name="candidateProtocols" id="5400341048570340246" />
+        <var name="connectorType" id="5400341048570055527" />
+        <var name="mapping" id="5400341048570055525" />
+      </scope>
+      <scope id="5400341048570043819" at="29,0,38,0">
+        <var name="mappedElements" id="5400341048570043853" />
+        <var name="mapping" id="5400341048570043851" />
+      </scope>
+      <unit id="5400341048569099893" at="59,0,63,0" name="org.iets3.protocol.transport.intentions.DeriveProtocolErrorHandler$LINKS" />
+      <unit id="5400341048569099893" at="16,0,64,0" name="org.iets3.protocol.transport.intentions.DeriveProtocolErrorHandler" />
+    </file>
+  </root>
+  <root nodeRef="r:c9d3b67e-62f4-430e-a5b8-04459662b42c(org.iets3.protocol.transport.intentions)/7150030894251205322">
+    <file name="DeriveProtocol_Intention.java">
+      <node id="7150030894251205322" at="27,0,28,0" concept="3" trace="myCachedExecutable" />
+      <node id="7150030894251205322" at="29,37,30,154" concept="10" />
+      <node id="7150030894251205322" at="34,35,35,28" concept="7" />
+      <node id="7150030894251205322" at="39,35,40,17" concept="7" />
+      <node id="7150030894251205322" at="44,37,45,105" concept="2" />
+      <node id="7150030894251205322" at="46,5,47,30" concept="7" />
+      <node id="7150030894251205891" at="54,87,55,40" concept="7" />
+      <node id="5400341048569161276" at="59,78,60,87" concept="6" />
+      <node id="5400341048569203611" at="60,87,61,0" concept="8" />
+      <node id="4049536540986784901" at="61,0,62,186" concept="6" />
+      <node id="4049536540986825258" at="63,117,64,191" concept="6" />
+      <node id="4049536540986872548" at="65,37,66,129" concept="2" />
+      <node id="5400341048570316323" at="67,9,68,0" concept="8" />
+      <node id="5400341048568391776" at="68,0,69,73" concept="6" />
+      <node id="5400341048567750397" at="70,85,71,151" concept="6" />
+      <node id="5400341048568367796" at="72,77,73,100" concept="6" />
+      <node id="5400341048568576143" at="74,73,75,95" concept="6" />
+      <node id="5400341048570288529" at="76,44,77,189" concept="2" />
+      <node id="5400341048566174685" at="78,22,79,94" concept="2" />
+      <node id="5400341048570177831" at="81,20,82,148" concept="2" />
+      <node id="5400341048569172463" at="84,18,85,85" concept="2" />
+      <node id="5400341048569262656" at="88,9,89,0" concept="8" />
+      <node id="5400341048569305079" at="90,43,91,40" concept="2" />
+      <node id="7150030894251205322" at="96,86,97,18" concept="7" />
+      <node id="7150030894251205322" at="103,48,104,43" concept="7" />
+      <node id="7150030894251205322" at="110,0,111,0" concept="9" trace="MappingContainer$hD" />
+      <node id="7150030894251205322" at="111,0,112,0" concept="9" trace="ProtocoledComponentMappingAttr$I6" />
+      <node id="7150030894251205322" at="115,0,116,0" concept="9" trace="mappings$f1X7" />
+      <node id="7150030894251205322" at="116,0,117,0" concept="9" trace="attributes$zPmM" />
+      <node id="7150030894251205322" at="117,0,118,0" concept="9" trace="protocol$J5FJ" />
+      <node id="7150030894251205322" at="50,0,52,0" concept="1" trace="IntentionImplementation#()V" />
+      <node id="5400341048570297734" at="78,20,80,15" concept="0" />
+      <node id="5400341048570173363" at="81,18,83,13" concept="0" />
+      <node id="5400341048569080065" at="84,16,86,11" concept="0" />
+      <node id="7150030894251205322" at="29,0,32,0" concept="1" trace="DeriveProtocol_Intention#()V" />
+      <node id="7150030894251205322" at="43,99,46,5" concept="4" />
+      <node id="4049536540986827240" at="64,191,67,9" concept="4" />
+      <node id="5400341048569264222" at="89,0,92,7" concept="4" />
+      <node id="7150030894251205322" at="33,0,37,0" concept="5" trace="getPresentation#()Ljava/lang/String;" />
+      <node id="7150030894251205322" at="38,0,42,0" concept="5" trace="isSurroundWith#()Z" />
+      <node id="7150030894251205322" at="53,0,57,0" concept="5" trace="getDescription#(Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/openapi/editor/EditorContext;)Ljava/lang/String;" />
+      <node id="7150030894251205322" at="95,0,99,0" concept="5" trace="isApplicable#(Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/openapi/editor/EditorContext;)Z" />
+      <node id="7150030894251205322" at="102,0,106,0" concept="5" trace="getDescriptor#()Ljetbrains/mps/openapi/intentions/IntentionDescriptor;" />
+      <node id="5400341048570255042" at="75,95,80,15" concept="4" />
+      <node id="7150030894251205322" at="43,0,49,0" concept="5" trace="instances#(Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/openapi/editor/EditorContext;)Ljava/util/Collection;" />
+      <node id="5400341048565963616" at="73,100,83,13" concept="4" />
+      <node id="5400341048560661309" at="71,151,86,11" concept="4" />
+      <node id="5400341048562098946" at="69,73,87,9" concept="4" />
+      <node id="4049536540986786370" at="62,186,88,9" concept="2" />
+      <node id="7150030894251205322" at="58,0,94,0" concept="5" trace="execute#(Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/openapi/editor/EditorContext;)V" />
+      <scope id="7150030894251205322" at="50,38,50,38" />
+      <scope id="7150030894251205322" at="29,37,30,154" />
+      <scope id="7150030894251205322" at="34,35,35,28" />
+      <scope id="7150030894251205322" at="39,35,40,17" />
+      <scope id="7150030894251205322" at="44,37,45,105" />
+      <scope id="7150030894251205324" at="54,87,55,40" />
+      <scope id="4049536540986827242" at="65,37,66,129" />
+      <scope id="5400341048570255044" at="76,44,77,189" />
+      <scope id="5400341048570297735" at="78,22,79,94" />
+      <scope id="5400341048570173364" at="81,20,82,148" />
+      <scope id="5400341048569080066" at="84,18,85,85" />
+      <scope id="5400341048569264224" at="90,43,91,40" />
+      <scope id="7150030894251205322" at="96,86,97,18" />
+      <scope id="7150030894251205322" at="103,48,104,43" />
+      <scope id="7150030894251205322" at="50,0,52,0" />
+      <scope id="7150030894251205322" at="29,0,32,0" />
+      <scope id="7150030894251205322" at="33,0,37,0" />
+      <scope id="7150030894251205322" at="38,0,42,0" />
+      <scope id="7150030894251205322" at="43,99,47,30" />
+      <scope id="7150030894251205322" at="53,0,57,0">
+        <var name="editorContext" id="7150030894251205322" />
+        <var name="node" id="7150030894251205322" />
+      </scope>
+      <scope id="7150030894251205322" at="95,0,99,0">
+        <var name="editorContext" id="7150030894251205322" />
+        <var name="node" id="7150030894251205322" />
+      </scope>
+      <scope id="7150030894251205322" at="102,0,106,0" />
+      <scope id="7150030894251205322" at="43,0,49,0">
+        <var name="context" id="7150030894251205322" />
+        <var name="node" id="7150030894251205322" />
+      </scope>
+      <scope id="5400341048565963618" at="74,73,80,15">
+        <var name="derivedProtocol" id="5400341048568576144" />
+      </scope>
+      <scope id="5400341048560661311" at="72,77,83,13">
+        <var name="candidateProtocols" id="5400341048568367797" />
+      </scope>
+      <scope id="5400341048562098948" at="70,85,86,11">
+        <var name="notMappedProtocoledElements" id="5400341048567750398" />
+      </scope>
+      <scope id="4049536540986805922" at="63,117,87,9">
+        <var name="deriveProtocol" id="5400341048568391777" />
+        <var name="protocolAttr" id="4049536540986825259" />
+      </scope>
+      <scope id="7150030894251205326" at="59,78,92,7">
+        <var name="errorHandler" id="5400341048569161277" />
+        <var name="mappingSection" id="4049536540986784902" />
+      </scope>
+      <scope id="7150030894251205322" at="58,0,94,0">
+        <var name="editorContext" id="7150030894251205322" />
+        <var name="node" id="7150030894251205322" />
+      </scope>
+      <unit id="7150030894251205322" at="109,0,113,0" name="org.iets3.protocol.transport.intentions.DeriveProtocol_Intention$CONCEPTS" />
+      <unit id="7150030894251205322" at="114,0,119,0" name="org.iets3.protocol.transport.intentions.DeriveProtocol_Intention$LINKS" />
+      <unit id="7150030894251205322" at="49,0,108,0" name="org.iets3.protocol.transport.intentions.DeriveProtocol_Intention$IntentionImplementation" />
+      <unit id="7150030894251205322" at="26,0,120,0" name="org.iets3.protocol.transport.intentions.DeriveProtocol_Intention" />
+    </file>
+    <file name="IntentionsDescriptor.java">
+      <node id="7150030894251205322" at="37,47,38,57" concept="2" />
+      <node id="7150030894251205322" at="50,52,51,43" concept="2" />
+    </file>
+  </root>
+</debug-info>
+

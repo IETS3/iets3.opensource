@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<debug-info version="2">
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123155:jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123159:jetbrains.mps.baseLanguage.structure.IfStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123165:jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242864:jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242878:jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123157:jetbrains.mps.baseLanguage.structure.Statement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1070462154015:jetbrains.mps.baseLanguage.structure.StaticFieldDeclaration" />
+  <root>
+    <file name="ActionAspectDescriptorImpl.java">
+      <unit at="12,0,28,0" name="org.iets3.variability.featuremodel.base.actions.ActionAspectDescriptorImpl" />
+    </file>
+  </root>
+  <root nodeRef="r:ce0f6ad7-53ef-4e26-906e-24db29840b9b(org.iets3.variability.featuremodel.base.actions)/2340588654203481069">
+    <file name="FeaturemodelNodeFactories.java">
+      <node id="843181367903676461" at="25,26,26,90" concept="0" />
+      <node id="843181367903688226" at="26,90,27,15" concept="4" />
+      <node id="2497890189698769282" at="28,7,29,0" concept="5" />
+      <node id="6214772678437630852" at="29,0,30,195" concept="3" />
+      <node id="3013902100353759783" at="31,74,32,98" concept="3" />
+      <node id="3013902100354315254" at="32,98,33,111" concept="3" />
+      <node id="3013902100354316284" at="33,111,34,123" concept="0" />
+      <node id="2497890189698762879" at="35,7,36,0" concept="5" />
+      <node id="1713046119072911584" at="36,0,37,104" concept="0" />
+      <node id="6219983863592271211" at="37,104,38,76" concept="0" />
+      <node id="2497890189698760646" at="38,76,39,0" concept="5" />
+      <node id="2340588654203481069" at="44,0,45,0" concept="6" trace="root$XEj1" />
+      <node id="2340588654203481069" at="48,0,49,0" concept="6" trace="Feature$D7" />
+      <node id="2340588654203481069" at="49,0,50,0" concept="6" trace="AbstractFeature$T" />
+      <node id="2340588654203481069" at="53,0,54,0" concept="6" trace="solverTaskRunning$ceHc" />
+      <node id="843181367903671179" at="24,102,28,7" concept="1" />
+      <node id="3013902100353718374" at="30,195,35,7" concept="1" />
+      <node id="2340588654203481070" at="24,0,41,0" concept="2" trace="setup#(Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;ILorg/jetbrains/mps/openapi/model/SModel;)V" />
+      <scope id="843181367903671181" at="25,26,27,15" />
+      <scope id="3013902100353718376" at="31,74,34,123">
+        <var name="newInstance" id="3013902100354315255" />
+        <var name="singleConcept" id="3013902100353759784" />
+      </scope>
+      <scope id="2340588654203481070" at="24,102,39,0">
+        <var name="canReplaceNodeWithConcept" id="6214772678437630853" />
+      </scope>
+      <scope id="2340588654203481070" at="24,0,41,0">
+        <var name="enclosingNode" id="2340588654203481070" />
+        <var name="index" id="2340588654203481070" />
+        <var name="model" id="2340588654203481070" />
+        <var name="newNode" id="2340588654203481070" />
+        <var name="sampleNode" id="2340588654203481070" />
+      </scope>
+      <unit id="2340588654203481069" at="43,0,46,0" name="org.iets3.variability.featuremodel.base.actions.FeaturemodelNodeFactories$LINKS" />
+      <unit id="2340588654203481069" at="52,0,55,0" name="org.iets3.variability.featuremodel.base.actions.FeaturemodelNodeFactories$PROPS" />
+      <unit id="2340588654203481069" at="47,0,51,0" name="org.iets3.variability.featuremodel.base.actions.FeaturemodelNodeFactories$CONCEPTS" />
+      <unit id="2340588654203481070" at="23,0,42,0" name="org.iets3.variability.featuremodel.base.actions.FeaturemodelNodeFactories$NodeFactory_2340588654203481070" />
+      <unit id="2340588654203481069" at="22,0,56,0" name="org.iets3.variability.featuremodel.base.actions.FeaturemodelNodeFactories" />
+    </file>
+  </root>
+</debug-info>
+

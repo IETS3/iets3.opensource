@@ -1,0 +1,735 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<debug-info version="2">
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1082485599095:jetbrains.mps.baseLanguage.structure.BlockStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123140:jetbrains.mps.baseLanguage.structure.ConstructorDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1177666668936:jetbrains.mps.baseLanguage.structure.DoWhileStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123155:jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068390468200:jetbrains.mps.baseLanguage.structure.FieldDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1144226303539:jetbrains.mps.baseLanguage.structure.ForeachStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123159:jetbrains.mps.baseLanguage.structure.IfStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123165:jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242864:jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242878:jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/6329021646629104954:jetbrains.mps.baseLanguage.structure.SingleLineComment" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123157:jetbrains.mps.baseLanguage.structure.Statement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1070462154015:jetbrains.mps.baseLanguage.structure.StaticFieldDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1081236700938:jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1070475587102:jetbrains.mps.baseLanguage.structure.SuperConstructorInvocation" />
+  <root nodeRef="r:a422c200-da78-48d9-9f02-9df13386c2cc(org.iets3.core.mapping.plugin)/4795963430747274583">
+    <file name="HardwareComponentsTree.java">
+      <node id="4795963430747523513" at="9,36,10,29" concept="10" />
+      <node id="4795963430747508512" at="13,56,14,27" concept="3" />
+      <node id="4795963430747508757" at="17,45,18,63" concept="3" />
+      <node id="4795963430747523117" at="9,0,12,0" concept="1" trace="HardwareComponentsTree#()V" />
+      <node id="4795963430747505437" at="13,0,16,0" concept="1" trace="HardwareComponentsTree#(Lorg/jetbrains/mps/openapi/model/SNode;)V" />
+      <node id="4795963430747508070" at="17,0,20,0" concept="7" trace="initTree#(Lorg/jetbrains/mps/openapi/model/SNode;)V" />
+      <scope id="4795963430747523121" at="9,36,10,29" />
+      <scope id="4795963430747505441" at="13,56,14,27" />
+      <scope id="4795963430747508073" at="17,45,18,63" />
+      <scope id="4795963430747523117" at="9,0,12,0" />
+      <scope id="4795963430747505437" at="13,0,16,0">
+        <var name="rootInstance" id="4795963430747506025" />
+      </scope>
+      <scope id="4795963430747508070" at="17,0,20,0">
+        <var name="rootInstance" id="4795963430747513017" />
+      </scope>
+      <unit id="4795963430747274583" at="7,0,21,0" name="org.iets3.core.mapping.plugin.HardwareComponentsTree" />
+    </file>
+  </root>
+  <root nodeRef="r:a422c200-da78-48d9-9f02-9df13386c2cc(org.iets3.core.mapping.plugin)/4795963430747274603">
+    <file name="FunctionalComponentsTree.java">
+      <node id="4795963430747521827" at="12,38,13,29" concept="10" />
+      <node id="4795963430747494149" at="16,62,17,31" concept="3" />
+      <node id="4795963430747494394" at="20,49,21,69" concept="3" />
+      <node id="4795963430748445022" at="24,38,25,32" concept="9" />
+      <node id="4795963430750921145" at="29,33,30,56" concept="9" />
+      <node id="4795963430749872970" at="31,5,32,58" concept="9" />
+      <node id="7632301560700848362" at="35,33,36,55" concept="9" />
+      <node id="7632301560700848367" at="37,5,38,58" concept="9" />
+      <node id="4795963430750234514" at="42,68,43,87" concept="8" />
+      <node id="4795963430750247018" at="46,39,47,79" concept="3" />
+      <node id="5950967181946864180" at="48,11,49,105" concept="3" />
+      <node id="5950967181946879875" at="51,7,52,26" concept="9" />
+      <node id="4795963430747520719" at="12,0,15,0" concept="1" trace="FunctionalComponentsTree#()V" />
+      <node id="4795963430747486191" at="16,0,19,0" concept="1" trace="FunctionalComponentsTree#(Lorg/jetbrains/mps/openapi/model/SNode;)V" />
+      <node id="4795963430747489456" at="20,0,23,0" concept="7" trace="initTree#(Lorg/jetbrains/mps/openapi/model/SNode;)V" />
+      <node id="4795963430748443927" at="24,0,27,0" concept="7" trace="isMappingComplete#()Z" />
+      <node id="4795963430749871337" at="28,45,31,5" concept="6" />
+      <node id="7632301560700848360" at="34,70,37,5" concept="6" />
+      <node id="4795963430750791593" at="45,74,48,11" concept="6" />
+      <node id="4795963430749862973" at="28,0,34,0" concept="7" trace="computeMissingPaths#()Ljava/util/List;" />
+      <node id="7632301560700848358" at="34,0,40,0" concept="7" trace="computeMissingPaths#(Lorg/iets3/core/mapping/plugin/AbstractTreeNode;)Ljava/util/List;" />
+      <node id="5950967181946812318" at="44,29,50,11" concept="3" />
+      <node id="5950967181946853763" at="43,87,51,7" concept="6" />
+      <node id="5950967181946352905" at="42,0,54,0" concept="13" trace="missingPaths#(Lorg/iets3/core/mapping/plugin/AbstractTreeNode;)Ljava/util/List;" />
+      <scope id="4795963430747520723" at="12,38,13,29" />
+      <scope id="4795963430747486195" at="16,62,17,31" />
+      <scope id="4795963430747489459" at="20,49,21,69" />
+      <scope id="4795963430748443930" at="24,38,25,32" />
+      <scope id="4795963430749871339" at="29,33,30,56" />
+      <scope id="7632301560700848361" at="35,33,36,55" />
+      <scope id="4795963430750791595" at="46,39,47,79" />
+      <scope id="4795963430747520719" at="12,0,15,0" />
+      <scope id="4795963430747486191" at="16,0,19,0">
+        <var name="mappingContainer" id="4795963430747487274" />
+      </scope>
+      <scope id="4795963430747489456" at="20,0,23,0">
+        <var name="mappingContainer" id="4795963430747497867" />
+      </scope>
+      <scope id="4795963430748443927" at="24,0,27,0" />
+      <scope id="4795963430749862976" at="28,45,32,58" />
+      <scope id="7632301560700848359" at="34,70,38,58" />
+      <scope id="5950967181946812325" at="45,74,49,105" />
+      <scope id="4795963430749862973" at="28,0,34,0" />
+      <scope id="7632301560700848358" at="34,0,40,0">
+        <var name="treeNode" id="7632301560700849493" />
+      </scope>
+      <scope id="5950967181946853765" at="44,29,50,11" />
+      <scope id="5950967181946352908" at="42,68,52,26">
+        <var name="missingPaths" id="4795963430750234515" />
+      </scope>
+      <scope id="5950967181946352905" at="42,0,54,0">
+        <var name="node" id="5950967181946727128" />
+      </scope>
+      <unit id="4795963430750402754" at="41,0,55,0" name="org.iets3.core.mapping.plugin.FunctionalComponentsTree$CompletenessHelper" />
+      <unit id="4795963430747274603" at="10,0,56,0" name="org.iets3.core.mapping.plugin.FunctionalComponentsTree" />
+    </file>
+  </root>
+  <root nodeRef="r:a422c200-da78-48d9-9f02-9df13386c2cc(org.iets3.core.mapping.plugin)/4795963430747352734">
+    <file name="ComponentInstanceTree.java">
+      <node id="4795963430747556915" at="9,35,10,29" concept="10" />
+      <node id="4795963430747562819" at="13,55,14,64" concept="3" />
+      <node id="4795963430747556683" at="9,0,12,0" concept="1" trace="ComponentInstanceTree#()V" />
+      <node id="4795963430747561734" at="13,0,16,0" concept="1" trace="ComponentInstanceTree#(Lorg/jetbrains/mps/openapi/model/SNode;)V" />
+      <scope id="4795963430747556687" at="9,35,10,29" />
+      <scope id="4795963430747561738" at="13,55,14,64" />
+      <scope id="4795963430747556683" at="9,0,12,0" />
+      <scope id="4795963430747561734" at="13,0,16,0">
+        <var name="rootInstance" id="4795963430747562142" />
+      </scope>
+      <unit id="4795963430747352734" at="7,0,17,0" name="org.iets3.core.mapping.plugin.ComponentInstanceTree" />
+    </file>
+  </root>
+  <root nodeRef="r:a422c200-da78-48d9-9f02-9df13386c2cc(org.iets3.core.mapping.plugin)/4795963430749094976">
+    <file name="MappingContainerTreeRoot.java">
+      <node id="890279513774697019" at="11,0,12,0" concept="4" trace="mapContainer" />
+      <node id="890279513774711901" at="12,46,13,23" concept="3" />
+      <node id="8715172917556001312" at="16,42,17,20" concept="8" />
+      <node id="8715172917556001817" at="18,8,19,41" concept="3" />
+      <node id="5950967181943739656" at="23,61,24,28" concept="8" />
+      <node id="8715172917556009154" at="27,37,28,31" concept="3" />
+      <node id="5950967181943741727" at="28,31,29,25" concept="3" />
+      <node id="5950967181943791251" at="31,84,32,64" concept="8" />
+      <node id="5950967181943795284" at="33,29,34,40" concept="3" />
+      <node id="6790318482768868065" at="39,12,40,60" concept="10" />
+      <node id="6790318482768913561" at="40,60,41,24" concept="3" />
+      <node id="8715172917556025923" at="42,5,43,19" concept="9" />
+      <node id="6790318482769046984" at="46,57,47,25" concept="3" />
+      <node id="6790318482768915290" at="48,24,49,13" concept="9" />
+      <node id="6790318482768915301" at="51,66,52,70" concept="8" />
+      <node id="6790318482769043384" at="52,70,53,29" concept="3" />
+      <node id="6790318482768915310" at="53,29,54,27" concept="3" />
+      <node id="3771814409522134190" at="60,29,61,18" concept="3" />
+      <node id="3771814409522135339" at="61,18,62,16" concept="3" />
+      <node id="3771814409524005775" at="66,28,67,39" concept="10" />
+      <node id="2327651245780903059" at="67,39,68,143" concept="8" />
+      <node id="3015266334597730901" at="69,64,70,64" concept="8" />
+      <node id="3015266334597730918" at="70,64,71,44" concept="3" />
+      <node id="3771814409522152171" at="75,0,76,0" concept="7" trace="getMappingPaths#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljava/util/List;" />
+      <node id="4795963430748526925" at="78,27,79,24" concept="9" />
+      <node id="6790318482768915304" at="82,74,83,47" concept="9" />
+      <node id="3015266334597730904" at="85,71,86,47" concept="9" />
+      <node id="890279513774710021" at="12,0,15,0" concept="1" trace="MappingContainerTreeRoot#(Lorg/jetbrains/mps/openapi/model/SNode;)V" />
+      <node id="8715172917555999208" at="17,20,20,22" concept="2" />
+      <node id="5950967181943794069" at="32,64,35,13" concept="6" />
+      <node id="6790318482768867508" at="39,10,42,5" concept="0" />
+      <node id="6790318482768915304" at="82,0,85,0" concept="13" trace="as_uoiq6x_a0a0a0a0a0a1a7#(Ljava/lang/Object;Ljava/lang/Class;)null" />
+      <node id="3015266334597730904" at="85,0,88,0" concept="13" trace="as_uoiq6x_a0a0a0a0c0n#(Ljava/lang/Object;Ljava/lang/Class;)null" />
+      <node id="3771814409522123471" at="60,0,64,0" concept="7" trace="markTree#()V" />
+      <node id="3015266334597730893" at="68,143,72,7" concept="3" />
+      <node id="4795963430748525589" at="77,0,81,0" concept="7" trace="getValue#()Lorg/jetbrains/mps/openapi/model/SNode;" />
+      <node id="6790318482768915293" at="50,12,55,9" concept="3" />
+      <node id="8715172917555707325" at="16,0,22,0" concept="7" trace="computeMapCompletness#()V" />
+      <node id="8715172917556011183" at="30,16,36,11" concept="5" />
+      <node id="6790318482768915291" at="50,10,56,5" concept="0" />
+      <node id="8715172917556010479" at="30,14,37,9" concept="0" />
+      <node id="3015266334597726031" at="66,0,74,0" concept="7" trace="markNodes#()V" />
+      <node id="6790318482768915285" at="47,25,56,5" concept="6" />
+      <node id="8715172917556008860" at="26,29,37,9" concept="6" />
+      <node id="6790318482768915279" at="46,0,58,0" concept="7" trace="mapSubtrees#(Lorg/iets3/core/mapping/plugin/AbstractTreeNode;)V" />
+      <node id="8715172917556005341" at="25,29,38,7" concept="6" />
+      <node id="8715172917556003573" at="24,28,42,5" concept="6" />
+      <node id="8715172917555997278" at="23,0,45,0" concept="7" trace="computeMappedNodes#(Lorg/iets3/core/mapping/plugin/AbstractTreeNode;)Z" />
+      <scope id="890279513774710025" at="12,46,13,23" />
+      <scope id="8715172917555999210" at="18,8,19,41" />
+      <scope id="5950967181943794071" at="33,29,34,40" />
+      <scope id="6790318482768915289" at="48,24,49,13" />
+      <scope id="3771814409522152171" at="75,0,76,0">
+        <var name="mapSec" id="3771814409522161737" />
+      </scope>
+      <scope id="4795963430748525594" at="78,27,79,24" />
+      <scope id="6790318482768915304" at="82,74,83,47" />
+      <scope id="3015266334597730904" at="85,71,86,47" />
+      <scope id="8715172917556008868" at="27,37,29,25" />
+      <scope id="6790318482768867509" at="39,12,41,24" />
+      <scope id="3771814409522123474" at="60,29,62,16" />
+      <scope id="3015266334597730900" at="69,64,71,44">
+        <var name="node" id="3015266334597730902" />
+      </scope>
+      <scope id="890279513774710021" at="12,0,15,0">
+        <var name="map" id="890279513774710154" />
+      </scope>
+      <scope id="6790318482768915300" at="51,66,54,27">
+        <var name="child" id="6790318482768915302" />
+      </scope>
+      <scope id="6790318482768915304" at="82,0,85,0">
+        <var name="o" id="6790318482768915304" />
+        <var name="type" id="6790318482768915304" />
+      </scope>
+      <scope id="3015266334597730904" at="85,0,88,0">
+        <var name="o" id="3015266334597730904" />
+        <var name="type" id="3015266334597730904" />
+      </scope>
+      <scope id="8715172917555707328" at="16,42,20,22">
+        <var name="changed" id="8715172917556001315" />
+      </scope>
+      <scope id="8715172917556011186" at="31,84,35,13">
+        <var name="childrenChanged" id="5950967181943791252" />
+      </scope>
+      <scope id="3771814409522123471" at="60,0,64,0" />
+      <scope id="4795963430748525589" at="77,0,81,0" />
+      <scope id="6790318482768915292" at="50,12,55,9" />
+      <scope id="8715172917555707325" at="16,0,22,0" />
+      <scope id="8715172917556010480" at="30,16,36,11" />
+      <scope id="8715172917556011183" at="30,16,36,11">
+        <var name="child" id="8715172917556011184" />
+      </scope>
+      <scope id="3015266334597726034" at="66,28,72,7">
+        <var name="mappingPaths" id="2327651245780903060" />
+      </scope>
+      <scope id="3015266334597726031" at="66,0,74,0" />
+      <scope id="6790318482768915281" at="46,57,56,5" />
+      <scope id="8715172917556005343" at="26,29,37,9" />
+      <scope id="6790318482768915279" at="46,0,58,0">
+        <var name="node" id="6790318482768915317" />
+      </scope>
+      <scope id="8715172917556003575" at="25,29,38,7" />
+      <scope id="8715172917555997281" at="23,61,43,19">
+        <var name="changed" id="5950967181943739659" />
+      </scope>
+      <scope id="8715172917555997278" at="23,0,45,0">
+        <var name="node" id="8715172917555998235" />
+      </scope>
+      <unit id="4795963430749094976" at="10,0,89,0" name="org.iets3.core.mapping.plugin.MappingContainerTreeRoot" />
+    </file>
+  </root>
+  <root nodeRef="r:a422c200-da78-48d9-9f02-9df13386c2cc(org.iets3.core.mapping.plugin)/5950967181932736862">
+    <file name="AbstractTreeNode.java">
+      <node id="5950967181932741762" at="11,0,12,0" concept="4" trace="treeNodes" />
+      <node id="3912657810413810481" at="12,0,13,0" concept="4" trace="parent" />
+      <node id="5950967181933154775" at="13,0,14,0" concept="4" trace="isMapped" />
+      <node id="3912657810413204012" at="14,0,15,0" concept="4" trace="path" />
+      <node id="3912657810413841102" at="16,50,17,25" concept="3" />
+      <node id="3912657810413891138" at="20,39,21,23" concept="9" />
+      <node id="6790318482769496948" at="24,27,25,31" concept="10" />
+      <node id="6790318482769488419" at="25,31,26,31" concept="9" />
+      <node id="3912657810414441515" at="29,27,30,21" concept="9" />
+      <node id="3912657810414148904" at="32,38,33,28" concept="9" />
+      <node id="5950967181933213573" at="36,41,37,27" concept="3" />
+      <node id="5950967181933216768" at="39,29,40,25" concept="9" />
+      <node id="5950967181933069014" at="43,47,44,21" concept="9" />
+      <node id="5950967181933377077" at="47,41,48,71" concept="9" />
+      <node id="5950967181933391540" at="50,32,51,54" concept="9" />
+      <node id="5950967181944068111" at="54,0,55,0" concept="7" trace="getValue#()Lorg/jetbrains/mps/openapi/model/SNode;" />
+      <node id="4795963430746940354" at="58,24,59,13" concept="9" />
+      <node id="4795963430746940365" at="61,66,62,71" concept="8" />
+      <node id="4795963430746940371" at="62,71,63,28" concept="10" />
+      <node id="4795963430746940373" at="63,28,64,75" concept="3" />
+      <node id="4795963430746940388" at="64,75,65,30" concept="3" />
+      <node id="4795963430746940368" at="70,75,71,47" concept="9" />
+      <node id="3912657810413836093" at="16,0,19,0" concept="7" trace="setParent#(Lorg/iets3/core/mapping/plugin/AbstractTreeNode;)V" />
+      <node id="3912657810413801571" at="20,0,23,0" concept="7" trace="getParent#()Lorg/iets3/core/mapping/plugin/AbstractTreeNode;" />
+      <node id="3912657810413695346" at="29,0,32,0" concept="7" trace="getPath#()Ljava/lang/String;" />
+      <node id="3912657810414148902" at="32,0,35,0" concept="7" trace="setPath#(Ljava/lang/String;)Ljava/lang/String;" />
+      <node id="5950967181933168224" at="36,0,39,0" concept="7" trace="setMapped#(Z)V" />
+      <node id="5950967181933216766" at="39,0,42,0" concept="7" trace="isMapped#()Z" />
+      <node id="5950967181933069012" at="43,0,46,0" concept="7" trace="getChildren#()Ljava/util/List;" />
+      <node id="5950967181933373898" at="47,0,50,0" concept="7" trace="isSubTreeMapped#()Z" />
+      <node id="5950967181933375953" at="50,0,53,0" concept="7" trace="isLeaf#()Z" />
+      <node id="4795963430746940368" at="70,0,73,0" concept="13" trace="as_1maikx_a0a0a0a0a0a0a52#(Ljava/lang/Object;Ljava/lang/Class;)null" />
+      <node id="6790318482769484772" at="24,0,28,0" concept="7" trace="isRoot#()Z" />
+      <node id="4795963430746940357" at="60,12,66,9" concept="3" />
+      <node id="4795963430746940355" at="60,10,67,5" concept="0" />
+      <node id="4795963430746940349" at="57,31,67,5" concept="6" />
+      <node id="4795963430746940346" at="57,0,69,0" concept="7" trace="calculatePath#()V" />
+      <scope id="3912657810413836096" at="16,50,17,25" />
+      <scope id="3912657810413801574" at="20,39,21,23" />
+      <scope id="3912657810413695349" at="29,27,30,21" />
+      <scope id="3912657810414148903" at="32,38,33,28" />
+      <scope id="5950967181933168227" at="36,41,37,27" />
+      <scope id="5950967181933216767" at="39,29,40,25" />
+      <scope id="5950967181933069013" at="43,47,44,21" />
+      <scope id="5950967181933373901" at="47,41,48,71" />
+      <scope id="5950967181933375956" at="50,32,51,54" />
+      <scope id="5950967181944068111" at="54,0,55,0" />
+      <scope id="4795963430746940353" at="58,24,59,13" />
+      <scope id="4795963430746940368" at="70,75,71,47" />
+      <scope id="6790318482769484775" at="24,27,26,31" />
+      <scope id="3912657810413836093" at="16,0,19,0">
+        <var name="parent" id="3912657810413839195" />
+      </scope>
+      <scope id="3912657810413801571" at="20,0,23,0" />
+      <scope id="3912657810413695346" at="29,0,32,0" />
+      <scope id="3912657810414148902" at="32,0,35,0">
+        <var name="path" id="3912657810414158369" />
+      </scope>
+      <scope id="5950967181933168224" at="36,0,39,0">
+        <var name="mapped" id="5950967181933169408" />
+      </scope>
+      <scope id="5950967181933216766" at="39,0,42,0" />
+      <scope id="5950967181933069012" at="43,0,46,0" />
+      <scope id="5950967181933373898" at="47,0,50,0" />
+      <scope id="5950967181933375953" at="50,0,53,0" />
+      <scope id="4795963430746940368" at="70,0,73,0">
+        <var name="o" id="4795963430746940368" />
+        <var name="type" id="4795963430746940368" />
+      </scope>
+      <scope id="6790318482769484772" at="24,0,28,0" />
+      <scope id="4795963430746940364" at="61,66,65,30">
+        <var name="child" id="4795963430746940366" />
+      </scope>
+      <scope id="4795963430746940356" at="60,12,66,9" />
+      <scope id="4795963430746940348" at="57,31,67,5" />
+      <scope id="4795963430746940346" at="57,0,69,0" />
+      <unit id="5950967181932736862" at="10,0,74,0" name="org.iets3.core.mapping.plugin.AbstractTreeNode" />
+    </file>
+  </root>
+  <root nodeRef="r:a422c200-da78-48d9-9f02-9df13386c2cc(org.iets3.core.mapping.plugin)/5950967181933265654">
+    <file name="FunctionalTreeRoot.java">
+      <node id="4795963430749272060" at="13,53,14,28" concept="14" />
+      <node id="890279513775299539" at="16,70,17,75" concept="8" />
+      <node id="890279513775299545" at="17,75,18,28" concept="3" />
+      <node id="4795963430750075274" at="18,28,19,24" concept="3" />
+      <node id="4795963430749839796" at="19,24,20,37" concept="3" />
+      <node id="890279513775299558" at="20,37,21,20" concept="9" />
+      <node id="3771814409522457288" at="25,56,26,102" concept="9" />
+      <node id="3912657810414347091" at="30,230,31,80" concept="8" />
+      <node id="4795963430751097596" at="31,80,32,44" concept="3" />
+      <node id="5950967181933317524" at="32,44,33,77" concept="3" />
+      <node id="4795963430749267478" at="13,0,16,0" concept="1" trace="FunctionalTreeRoot#(Lorg/jetbrains/mps/openapi/model/SNode;)V" />
+      <node id="3771814409522211378" at="24,0,28,0" concept="7" trace="getMappingPaths#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljava/util/List;" />
+      <node id="5950967181933302743" at="29,33,34,5" concept="5" />
+      <node id="890279513775299529" at="16,0,23,0" concept="13" trace="fromMapping#(Lorg/jetbrains/mps/openapi/model/SNode;)Lorg/iets3/core/mapping/plugin/AbstractTreeRoot;" />
+      <node id="5950967181933302740" at="28,0,36,0" concept="7" trace="initChildren#()V" />
+      <scope id="4795963430749267482" at="13,53,14,28" />
+      <scope id="3771814409522211385" at="25,56,26,102" />
+      <scope id="4795963430749267478" at="13,0,16,0">
+        <var name="mappingContainer" id="4795963430749268925" />
+      </scope>
+      <scope id="5950967181933302752" at="30,230,33,77">
+        <var name="fromComponentInstance" id="3912657810414347092" />
+      </scope>
+      <scope id="3771814409522211378" at="24,0,28,0">
+        <var name="mapSec" id="3771814409522211383" />
+      </scope>
+      <scope id="890279513775299538" at="16,70,21,20">
+        <var name="treeRoot" id="890279513775299540" />
+      </scope>
+      <scope id="5950967181933302742" at="29,33,34,5" />
+      <scope id="5950967181933302743" at="29,33,34,5">
+        <var name="instance" id="5950967181933302744" />
+      </scope>
+      <scope id="890279513775299529" at="16,0,23,0">
+        <var name="mappingContainer" id="890279513775299531" />
+      </scope>
+      <scope id="5950967181933302740" at="28,0,36,0" />
+      <unit id="5950967181933265654" at="12,0,38,0" name="org.iets3.core.mapping.plugin.FunctionalTreeRoot" />
+    </file>
+  </root>
+  <root nodeRef="r:a422c200-da78-48d9-9f02-9df13386c2cc(org.iets3.core.mapping.plugin)/5950967181933304487">
+    <file name="TreeNode.java">
+      <node id="5950967181933304488" at="22,0,23,0" concept="4" trace="instance" />
+      <node id="3015266334597367659" at="24,29,25,25" concept="9" />
+      <node id="5950967181933304498" at="28,35,29,29" concept="3" />
+      <node id="5950967181933304506" at="32,64,33,47" concept="8" />
+      <node id="5950967181933304512" at="33,47,34,28" concept="3" />
+      <node id="5950967181933899723" at="34,28,35,0" concept="11" />
+      <node id="5950967181933304517" at="35,0,36,20" concept="9" />
+      <node id="5950967181934267189" at="40,278,41,60" concept="8" />
+      <node id="3015266334597570566" at="41,60,42,33" concept="10" />
+      <node id="3015266334597381644" at="42,33,43,74" concept="3" />
+      <node id="3912657810413861342" at="43,74,44,22" concept="3" />
+      <node id="5950967181944447026" at="48,78,49,28" concept="3" />
+      <node id="3015266334597754853" at="50,24,51,13" concept="9" />
+      <node id="3015266334597754864" at="53,66,54,71" concept="8" />
+      <node id="3015266334598692766" at="54,71,55,33" concept="3" />
+      <node id="3015266334597802518" at="55,33,56,37" concept="3" />
+      <node id="4795963430748606046" at="60,40,61,82" concept="8" />
+      <node id="4795963430748606057" at="62,24,63,52" concept="3" />
+      <node id="4795963430748606074" at="65,66,66,71" concept="8" />
+      <node id="4795963430748615541" at="66,71,67,94" concept="3" />
+      <node id="4795963430748753609" at="69,5,70,0" concept="11" />
+      <node id="4795963430748753976" at="70,0,71,17" concept="9" />
+      <node id="2210341998892763498" at="73,40,74,82" concept="8" />
+      <node id="2210341998892763510" at="74,82,75,50" concept="3" />
+      <node id="2210341998892763525" at="77,66,78,69" concept="8" />
+      <node id="2210341998892763531" at="78,69,79,94" concept="3" />
+      <node id="2210341998892763540" at="81,5,82,0" concept="11" />
+      <node id="2210341998892763541" at="82,0,83,17" concept="9" />
+      <node id="3015266334598684586" at="86,70,87,27" concept="3" />
+      <node id="3912657810413827099" at="91,40,92,26" concept="3" />
+      <node id="3912657810413847772" at="92,26,93,64" concept="3" />
+      <node id="5950967181939727588" at="98,23,99,19" concept="9" />
+      <node id="5950967181939727596" at="101,23,102,18" concept="9" />
+      <node id="5950967181939727604" at="104,40,105,19" concept="9" />
+      <node id="5950967181940187291" at="106,5,107,176" concept="9" />
+      <node id="5950967181944085837" at="111,27,112,20" concept="9" />
+      <node id="3015266334597754867" at="114,75,115,47" concept="9" />
+      <node id="4795963430748606077" at="117,75,118,47" concept="9" />
+      <node id="2210341998892763528" at="120,73,121,47" concept="9" />
+      <node id="5950967181940187299" at="123,69,124,47" concept="9" />
+      <node id="5950967181940328661" at="126,71,127,47" concept="9" />
+      <node id="5950967181933304487" at="131,0,132,0" concept="12" trace="name$MnvL" />
+      <node id="5950967181933304487" at="135,0,136,0" concept="12" trace="component$xlLY" />
+      <node id="5950967181933304487" at="136,0,137,0" concept="12" trace="ref$KPLr" />
+      <node id="5950967181933304487" at="140,0,141,0" concept="12" trace="ComponentInstance$7c" />
+      <node id="3015266334597358991" at="24,0,27,0" concept="7" trace="getInstace#()Lorg/jetbrains/mps/openapi/model/SNode;" />
+      <node id="5950967181933304492" at="28,0,31,0" concept="1" trace="TreeNode#(Lorg/jetbrains/mps/openapi/model/SNode;)V" />
+      <node id="3015266334598684584" at="85,69,88,5" concept="6" />
+      <node id="5950967181939727582" at="97,38,100,5" concept="6" />
+      <node id="5950967181939727590" at="100,5,103,5" concept="6" />
+      <node id="5950967181939727598" at="103,5,106,5" concept="6" />
+      <node id="3015266334597754867" at="114,0,117,0" concept="13" trace="as_bzu3qo_a0a0a0a0a0a1a01#(Ljava/lang/Object;Ljava/lang/Class;)null" />
+      <node id="4795963430748606077" at="117,0,120,0" concept="13" trace="as_bzu3qo_a0a0a0a0a0a1a11#(Ljava/lang/Object;Ljava/lang/Class;)null" />
+      <node id="2210341998892763528" at="120,0,123,0" concept="13" trace="as_bzu3qo_a0a0a0a0a0c0m#(Ljava/lang/Object;Ljava/lang/Class;)null" />
+      <node id="5950967181940187299" at="123,0,126,0" concept="13" trace="as_bzu3qo_a0a0a0d0r#(Ljava/lang/Object;Ljava/lang/Class;)null" />
+      <node id="5950967181940328661" at="126,0,129,0" concept="13" trace="as_bzu3qo_a0a0a0a3a71#(Ljava/lang/Object;Ljava/lang/Class;)null" />
+      <node id="4795963430748606066" at="64,12,68,9" concept="3" />
+      <node id="2210341998892763517" at="76,27,80,9" concept="3" />
+      <node id="3912657810413822222" at="91,0,95,0" concept="7" trace="addChild#(Lorg/iets3/core/mapping/plugin/TreeNode;)V" />
+      <node id="5950967181944079212" at="110,0,114,0" concept="7" trace="getValue#()Lorg/jetbrains/mps/openapi/model/SNode;" />
+      <node id="3015266334597754856" at="52,12,57,9" concept="3" />
+      <node id="4795963430748606064" at="64,10,69,5" concept="0" />
+      <node id="3015266334598684581" at="85,0,90,0" concept="13" trace="mark#(Lorg/iets3/core/mapping/plugin/TreeNode;Ljava/util/List;)V" />
+      <node id="5950967181933304504" at="32,0,38,0" concept="13" trace="fromComponentInstance#(Lorg/jetbrains/mps/openapi/model/SNode;)Lorg/iets3/core/mapping/plugin/TreeNode;" />
+      <node id="5950967181933304525" at="39,31,45,5" concept="5" />
+      <node id="3015266334597754854" at="52,10,58,5" concept="0" />
+      <node id="2210341998892763505" at="75,50,81,5" concept="6" />
+      <node id="5950967181933304523" at="39,0,47,0" concept="7" trace="initTreeNode#()V" />
+      <node id="4795963430748606052" at="61,82,69,5" concept="6" />
+      <node id="3015266334597754848" at="49,28,58,5" concept="6" />
+      <node id="3015266334597748294" at="48,0,60,0" concept="13" trace="markNode#(Lorg/iets3/core/mapping/plugin/TreeNode;Ljava/util/List;)V" />
+      <node id="2210341998892763496" at="73,0,85,0" concept="7" trace="collectNodes#()Ljava/util/List;" />
+      <node id="4795963430748606043" at="60,0,73,0" concept="7" trace="collectLeafs#()Ljava/util/List;" />
+      <node id="5950967181939722230" at="96,0,109,0" concept="7" trace="equals#(Ljava/lang/Object;)Z" />
+      <scope id="3015266334597358994" at="24,29,25,25" />
+      <scope id="5950967181933304497" at="28,35,29,29" />
+      <scope id="3015266334597754852" at="50,24,51,13" />
+      <scope id="4795963430748606056" at="62,24,63,52" />
+      <scope id="3015266334598684585" at="86,70,87,27" />
+      <scope id="5950967181939727587" at="98,23,99,19" />
+      <scope id="5950967181939727595" at="101,23,102,18" />
+      <scope id="5950967181939727603" at="104,40,105,19" />
+      <scope id="5950967181944079216" at="111,27,112,20" />
+      <scope id="3015266334597754867" at="114,75,115,47" />
+      <scope id="4795963430748606077" at="117,75,118,47" />
+      <scope id="2210341998892763528" at="120,73,121,47" />
+      <scope id="5950967181940187299" at="123,69,124,47" />
+      <scope id="5950967181940328661" at="126,71,127,47" />
+      <scope id="4795963430748606073" at="65,66,67,94">
+        <var name="child" id="4795963430748606075" />
+      </scope>
+      <scope id="2210341998892763524" at="77,66,79,94">
+        <var name="child" id="2210341998892763526" />
+      </scope>
+      <scope id="3912657810413822225" at="91,40,93,64" />
+      <scope id="3015266334597358991" at="24,0,27,0" />
+      <scope id="5950967181933304492" at="28,0,31,0">
+        <var name="instance" id="5950967181933304493" />
+      </scope>
+      <scope id="3015266334597754863" at="53,66,56,37">
+        <var name="child" id="3015266334597754865" />
+      </scope>
+      <scope id="3015266334598684583" at="85,69,88,5" />
+      <scope id="3015266334597754867" at="114,0,117,0">
+        <var name="o" id="3015266334597754867" />
+        <var name="type" id="3015266334597754867" />
+      </scope>
+      <scope id="4795963430748606077" at="117,0,120,0">
+        <var name="o" id="4795963430748606077" />
+        <var name="type" id="4795963430748606077" />
+      </scope>
+      <scope id="2210341998892763528" at="120,0,123,0">
+        <var name="o" id="2210341998892763528" />
+        <var name="type" id="2210341998892763528" />
+      </scope>
+      <scope id="5950967181940187299" at="123,0,126,0">
+        <var name="o" id="5950967181940187299" />
+        <var name="type" id="5950967181940187299" />
+      </scope>
+      <scope id="5950967181940328661" at="126,0,129,0">
+        <var name="o" id="5950967181940328661" />
+        <var name="type" id="5950967181940328661" />
+      </scope>
+      <scope id="5950967181933304505" at="32,64,36,20">
+        <var name="treeNode" id="5950967181933304507" />
+      </scope>
+      <scope id="5950967181933304534" at="40,278,44,22">
+        <var name="child" id="5950967181934267190" />
+      </scope>
+      <scope id="4795963430748606065" at="64,12,68,9" />
+      <scope id="2210341998892763509" at="76,27,80,9" />
+      <scope id="3912657810413822222" at="91,0,95,0">
+        <var name="child" id="3912657810413825186" />
+      </scope>
+      <scope id="5950967181944079212" at="110,0,114,0" />
+      <scope id="3015266334597754855" at="52,12,57,9" />
+      <scope id="3015266334598684581" at="85,0,90,0">
+        <var name="mappedNodes" id="3015266334598684601" />
+        <var name="node" id="3015266334598684599" />
+      </scope>
+      <scope id="5950967181933304504" at="32,0,38,0">
+        <var name="instance" id="5950967181933304520" />
+      </scope>
+      <scope id="5950967181933304524" at="39,31,45,5" />
+      <scope id="5950967181933304525" at="39,31,45,5">
+        <var name="inst" id="5950967181933304526" />
+      </scope>
+      <scope id="5950967181933304523" at="39,0,47,0" />
+      <scope id="3015266334597748297" at="48,78,58,5" />
+      <scope id="2210341998892763497" at="73,40,83,17">
+        <var name="leafs" id="2210341998892763499" />
+      </scope>
+      <scope id="5950967181939722236" at="97,38,107,176" />
+      <scope id="4795963430748606045" at="60,40,71,17">
+        <var name="leafs" id="4795963430748606047" />
+      </scope>
+      <scope id="3015266334597748294" at="48,0,60,0">
+        <var name="mappedNodes" id="3015266334597754434" />
+        <var name="node" id="3015266334597756508" />
+      </scope>
+      <scope id="2210341998892763496" at="73,0,85,0" />
+      <scope id="4795963430748606043" at="60,0,73,0" />
+      <scope id="5950967181939722230" at="96,0,109,0">
+        <var name="node" id="5950967181939722234" />
+      </scope>
+      <unit id="5950967181933304487" at="130,0,133,0" name="org.iets3.core.mapping.plugin.TreeNode$PROPS" />
+      <unit id="5950967181933304487" at="139,0,142,0" name="org.iets3.core.mapping.plugin.TreeNode$CONCEPTS" />
+      <unit id="5950967181933304487" at="134,0,138,0" name="org.iets3.core.mapping.plugin.TreeNode$LINKS" />
+      <unit id="5950967181933304487" at="21,0,143,0" name="org.iets3.core.mapping.plugin.TreeNode" />
+    </file>
+  </root>
+  <root nodeRef="r:a422c200-da78-48d9-9f02-9df13386c2cc(org.iets3.core.mapping.plugin)/5954983481024333729">
+    <file name="InstanceTreeRoot.java">
+      <node id="5954983481024372625" at="9,0,10,0" concept="4" trace="instace" />
+      <node id="4795963430748518257" at="11,44,12,28" concept="3" />
+      <node id="5954983481024619067" at="15,30,16,24" concept="9" />
+      <node id="5954983481024622302" at="18,43,19,28" concept="3" />
+      <node id="5954983481024333742" at="22,63,23,59" concept="8" />
+      <node id="5954983481024333748" at="23,59,24,24" concept="3" />
+      <node id="8756525752315191811" at="24,24,25,23" concept="3" />
+      <node id="8381467909550586812" at="25,23,26,0" concept="11" />
+      <node id="5954983481024333752" at="26,0,27,16" concept="9" />
+      <node id="7855553153652018561" at="31,33,32,63" concept="8" />
+      <node id="8756525752314852992" at="32,63,33,23" concept="3" />
+      <node id="7855553153652007864" at="33,23,34,56" concept="3" />
+      <node id="4795963430748538371" at="38,27,39,19" concept="9" />
+      <node id="5954983481024358375" at="11,0,14,0" concept="1" trace="InstanceTreeRoot#(Lorg/jetbrains/mps/openapi/model/SNode;)V" />
+      <node id="5954983481024616577" at="15,0,18,0" concept="7" trace="getInstance#()Lorg/jetbrains/mps/openapi/model/SNode;" />
+      <node id="5954983481024622300" at="18,0,21,0" concept="7" trace="setInstance#(Lorg/jetbrains/mps/openapi/model/SNode;)V" />
+      <node id="4795963430748537252" at="37,0,41,0" concept="7" trace="getValue#()Lorg/jetbrains/mps/openapi/model/SNode;" />
+      <node id="5954983481024333771" at="30,0,36,0" concept="7" trace="initChildren#()V" />
+      <node id="5954983481024333740" at="22,0,29,0" concept="13" trace="fromInstance#(Lorg/jetbrains/mps/openapi/model/SNode;)Lorg/iets3/core/mapping/plugin/AbstractTreeRoot;" />
+      <scope id="5954983481024358380" at="11,44,12,28" />
+      <scope id="5954983481024616580" at="15,30,16,24" />
+      <scope id="5954983481024622301" at="18,43,19,28" />
+      <scope id="4795963430748537257" at="38,27,39,19" />
+      <scope id="5954983481024358375" at="11,0,14,0">
+        <var name="instance" id="4795963430748516055" />
+      </scope>
+      <scope id="5954983481024616577" at="15,0,18,0" />
+      <scope id="5954983481024622300" at="18,0,21,0">
+        <var name="instance" id="5954983481024626354" />
+      </scope>
+      <scope id="5954983481024333772" at="31,33,34,56">
+        <var name="tn" id="7855553153652018562" />
+      </scope>
+      <scope id="4795963430748537252" at="37,0,41,0" />
+      <scope id="5954983481024333741" at="22,63,27,16">
+        <var name="tree" id="5954983481024333743" />
+      </scope>
+      <scope id="5954983481024333771" at="30,0,36,0" />
+      <scope id="5954983481024333740" at="22,0,29,0">
+        <var name="instance" id="5954983481024333755" />
+      </scope>
+      <unit id="5954983481024333729" at="8,0,43,0" name="org.iets3.core.mapping.plugin.InstanceTreeRoot" />
+    </file>
+  </root>
+  <root nodeRef="r:a422c200-da78-48d9-9f02-9df13386c2cc(org.iets3.core.mapping.plugin)/8715172917555665012">
+    <file name="Tree.java">
+      <node id="8715172917555665663" at="9,0,10,0" concept="4" trace="treeRoot" />
+      <node id="890279513775821364" at="11,37,12,25" concept="9" />
+      <node id="4795963430748461264" at="15,36,16,37" concept="9" />
+      <node id="2210341998892716875" at="18,39,19,40" concept="9" />
+      <node id="8715172917555694054" at="22,79,23,79" concept="8" />
+      <node id="8715172917555694571" at="23,79,24,16" concept="9" />
+      <node id="890279513775461266" at="27,77,28,75" concept="8" />
+      <node id="890279513775461277" at="28,75,29,16" concept="9" />
+      <node id="5954983481023201800" at="32,68,33,73" concept="8" />
+      <node id="5954983481023201810" at="33,73,34,16" concept="9" />
+      <node id="890279513775819637" at="11,0,14,0" concept="7" trace="getRoot#()Lorg/iets3/core/mapping/plugin/AbstractTreeRoot;" />
+      <node id="4795963430748458563" at="15,0,18,0" concept="7" trace="getLeafs#()Ljava/util/List;" />
+      <node id="2210341998892716873" at="18,0,21,0" concept="7" trace="getAllNodes#()Ljava/util/List;" />
+      <node id="8715172917555683933" at="22,0,26,0" concept="13" trace="initFunctionTree#(Lorg/jetbrains/mps/openapi/model/SNode;)Lorg/iets3/core/mapping/plugin/FunctionalComponentsTree;" />
+      <node id="890279513775461264" at="27,0,31,0" concept="13" trace="initHardwareTree#(Lorg/jetbrains/mps/openapi/model/SNode;)Lorg/iets3/core/mapping/plugin/HardwareComponentsTree;" />
+      <node id="5954983481023201798" at="32,0,36,0" concept="13" trace="initComponentInstanceTree#(Lorg/jetbrains/mps/openapi/model/SNode;)Lorg/iets3/core/mapping/plugin/Tree;" />
+      <scope id="890279513775819640" at="11,37,12,25" />
+      <scope id="4795963430748458566" at="15,36,16,37" />
+      <scope id="2210341998892716874" at="18,39,19,40" />
+      <scope id="8715172917555683936" at="22,79,24,16">
+        <var name="tree" id="8715172917555694055" />
+      </scope>
+      <scope id="890279513775461265" at="27,77,29,16">
+        <var name="tree" id="890279513775461267" />
+      </scope>
+      <scope id="5954983481023201799" at="32,68,34,16">
+        <var name="tree" id="5954983481023201801" />
+      </scope>
+      <scope id="890279513775819637" at="11,0,14,0" />
+      <scope id="4795963430748458563" at="15,0,18,0" />
+      <scope id="2210341998892716873" at="18,0,21,0" />
+      <scope id="8715172917555683933" at="22,0,26,0">
+        <var name="rootInstance" id="8715172917555684858" />
+      </scope>
+      <scope id="890279513775461264" at="27,0,31,0">
+        <var name="rootInstance" id="8794177519996436079" />
+      </scope>
+      <scope id="5954983481023201798" at="32,0,36,0">
+        <var name="rootInstance" id="5954983481023256700" />
+      </scope>
+      <unit id="8715172917555665012" at="8,0,38,0" name="org.iets3.core.mapping.plugin.Tree" />
+    </file>
+  </root>
+  <root nodeRef="r:a422c200-da78-48d9-9f02-9df13386c2cc(org.iets3.core.mapping.plugin)/890279513774667592">
+    <file name="AbstractTreeRoot.java">
+      <node id="890279513774799919" at="14,0,15,0" concept="7" trace="initChildren#()V" />
+      <node id="890279513775193967" at="16,36,17,26" concept="9" />
+      <node id="2210341998892721830" at="19,39,20,26" concept="9" />
+      <node id="2210341998892730008" at="23,41,24,82" concept="8" />
+      <node id="2210341998892730023" at="25,64,26,64" concept="8" />
+      <node id="2210341998892730029" at="26,64,27,91" concept="3" />
+      <node id="2210341998892730038" at="28,7,29,0" concept="11" />
+      <node id="2210341998892730039" at="29,0,30,17" concept="9" />
+      <node id="4795963430748588961" at="33,41,34,82" concept="8" />
+      <node id="890279513775163158" at="35,64,36,64" concept="8" />
+      <node id="4795963430748768245" at="36,64,37,91" concept="3" />
+      <node id="4795963430748846165" at="38,7,39,0" concept="11" />
+      <node id="4795963430748846438" at="39,0,40,17" concept="9" />
+      <node id="8381467909550585639" at="44,64,45,64" concept="8" />
+      <node id="8381467909550585645" at="45,64,46,25" concept="10" />
+      <node id="8381467909550585647" at="46,25,47,86" concept="3" />
+      <node id="8381467909550585656" at="47,86,48,27" concept="3" />
+      <node id="2210341998892730026" at="54,71,55,47" concept="9" />
+      <node id="890279513775163161" at="57,71,58,47" concept="9" />
+      <node id="8381467909550585642" at="60,71,61,47" concept="9" />
+      <node id="890279513774667592" at="65,0,66,0" concept="12" trace="name$MnvL" />
+      <node id="890279513775307279" at="52,0,54,0" concept="7" trace="getValue#()Lorg/jetbrains/mps/openapi/model/SNode;" />
+      <node id="890279513775184900" at="16,0,19,0" concept="7" trace="getLeafs#()Ljava/util/List;" />
+      <node id="2210341998892721828" at="19,0,22,0" concept="7" trace="getAllNodes#()Ljava/util/List;" />
+      <node id="2210341998892730026" at="54,0,57,0" concept="13" trace="as_1mbsox_a0a0a0a0b0f#(Ljava/lang/Object;Ljava/lang/Class;)null" />
+      <node id="890279513775163161" at="57,0,60,0" concept="13" trace="as_1mbsox_a0a0a0a0b0h#(Ljava/lang/Object;Ljava/lang/Class;)null" />
+      <node id="8381467909550585642" at="60,0,63,0" concept="13" trace="as_1mbsox_a0a0a0a0a0j#(Ljava/lang/Object;Ljava/lang/Class;)null" />
+      <node id="2210341998892730015" at="24,82,28,7" concept="3" />
+      <node id="890279513775163150" at="34,82,38,7" concept="3" />
+      <node id="8381467909550585631" at="43,32,49,7" concept="3" />
+      <node id="8381467909550585629" at="43,0,51,0" concept="7" trace="createPaths#()V" />
+      <node id="2210341998892730006" at="23,0,32,0" concept="7" trace="collectNodes#()Ljava/util/List;" />
+      <node id="890279513775163148" at="33,0,42,0" concept="7" trace="collectLeafs#()Ljava/util/List;" />
+      <scope id="890279513774799919" at="14,0,15,0" />
+      <scope id="890279513775184903" at="16,36,17,26" />
+      <scope id="2210341998892721829" at="19,39,20,26" />
+      <scope id="2210341998892730026" at="54,71,55,47" />
+      <scope id="890279513775163161" at="57,71,58,47" />
+      <scope id="8381467909550585642" at="60,71,61,47" />
+      <scope id="2210341998892730022" at="25,64,27,91">
+        <var name="node" id="2210341998892730024" />
+      </scope>
+      <scope id="890279513775163157" at="35,64,37,91">
+        <var name="node" id="890279513775163159" />
+      </scope>
+      <scope id="890279513775307279" at="52,0,54,0" />
+      <scope id="890279513775184900" at="16,0,19,0" />
+      <scope id="2210341998892721828" at="19,0,22,0" />
+      <scope id="2210341998892730026" at="54,0,57,0">
+        <var name="o" id="2210341998892730026" />
+        <var name="type" id="2210341998892730026" />
+      </scope>
+      <scope id="890279513775163161" at="57,0,60,0">
+        <var name="o" id="890279513775163161" />
+        <var name="type" id="890279513775163161" />
+      </scope>
+      <scope id="8381467909550585642" at="60,0,63,0">
+        <var name="o" id="8381467909550585642" />
+        <var name="type" id="8381467909550585642" />
+      </scope>
+      <scope id="8381467909550585638" at="44,64,48,27">
+        <var name="node" id="8381467909550585640" />
+      </scope>
+      <scope id="8381467909550585630" at="43,32,49,7" />
+      <scope id="2210341998892730007" at="23,41,30,17">
+        <var name="leafs" id="2210341998892730009" />
+      </scope>
+      <scope id="890279513775163149" at="33,41,40,17">
+        <var name="leafs" id="4795963430748588962" />
+      </scope>
+      <scope id="8381467909550585629" at="43,0,51,0" />
+      <scope id="2210341998892730006" at="23,0,32,0" />
+      <scope id="890279513775163148" at="33,0,42,0" />
+      <unit id="890279513774667592" at="64,0,67,0" name="org.iets3.core.mapping.plugin.AbstractTreeRoot$PROPS" />
+      <unit id="890279513774667592" at="13,0,68,0" name="org.iets3.core.mapping.plugin.AbstractTreeRoot" />
+    </file>
+  </root>
+  <root nodeRef="r:a422c200-da78-48d9-9f02-9df13386c2cc(org.iets3.core.mapping.plugin)/890279513775307147">
+    <file name="HardwareTreeRoot.java">
+      <node id="4795963430749261067" at="13,51,14,28" concept="14" />
+      <node id="890279513775307160" at="17,70,18,71" concept="8" />
+      <node id="890279513775307166" at="18,71,19,28" concept="3" />
+      <node id="4795963430749313669" at="19,28,20,24" concept="3" />
+      <node id="4795963430749827665" at="20,24,21,37" concept="3" />
+      <node id="890279513775307179" at="21,37,22,20" concept="9" />
+      <node id="3771814409522451165" at="26,56,27,102" concept="9" />
+      <node id="890279513775307201" at="32,231,33,80" concept="8" />
+      <node id="1477637754502794172" at="33,80,34,44" concept="3" />
+      <node id="890279513775307206" at="34,44,35,77" concept="3" />
+      <node id="4795963430748510529" at="13,0,16,0" concept="1" trace="HardwareTreeRoot#(Lorg/jetbrains/mps/openapi/model/SNode;)V" />
+      <node id="3771814409522173294" at="25,0,29,0" concept="7" trace="getMappingPaths#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljava/util/List;" />
+      <node id="890279513775307191" at="31,33,36,5" concept="5" />
+      <node id="890279513775307158" at="17,0,24,0" concept="13" trace="fromMapping#(Lorg/jetbrains/mps/openapi/model/SNode;)Lorg/iets3/core/mapping/plugin/AbstractTreeRoot;" />
+      <node id="890279513775307189" at="30,0,38,0" concept="7" trace="initChildren#()V" />
+      <scope id="4795963430748510534" at="13,51,14,28" />
+      <scope id="3771814409522173301" at="26,56,27,102" />
+      <scope id="4795963430748510529" at="13,0,16,0">
+        <var name="mappingContainer" id="4795963430748510530" />
+      </scope>
+      <scope id="890279513775307200" at="32,231,35,77">
+        <var name="fromComponentInstance" id="890279513775307202" />
+      </scope>
+      <scope id="3771814409522173294" at="25,0,29,0">
+        <var name="mapSec" id="3771814409522173299" />
+      </scope>
+      <scope id="890279513775307159" at="17,70,22,20">
+        <var name="treeRoot" id="890279513775307161" />
+      </scope>
+      <scope id="890279513775307190" at="31,33,36,5" />
+      <scope id="890279513775307191" at="31,33,36,5">
+        <var name="instance" id="890279513775307199" />
+      </scope>
+      <scope id="890279513775307158" at="17,0,24,0">
+        <var name="mappingContainer" id="890279513775307182" />
+      </scope>
+      <scope id="890279513775307189" at="30,0,38,0" />
+      <unit id="890279513775307147" at="12,0,39,0" name="org.iets3.core.mapping.plugin.HardwareTreeRoot" />
+    </file>
+  </root>
+</debug-info>
+

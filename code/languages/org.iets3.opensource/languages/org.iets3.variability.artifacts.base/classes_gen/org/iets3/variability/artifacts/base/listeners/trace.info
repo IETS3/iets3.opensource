@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<debug-info version="2">
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1082485599095:jetbrains.mps.baseLanguage.structure.BlockStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123155:jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123159:jetbrains.mps.baseLanguage.structure.IfStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123165:jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242864:jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+  <root>
+    <file name="ModelListenersDescriptor.java">
+      <unit at="58,0,61,0" name="org.iets3.variability.artifacts.base.listeners.ModelListenersDescriptor$LINKS" />
+      <unit at="53,0,57,0" name="org.iets3.variability.artifacts.base.listeners.ModelListenersDescriptor$CONCEPTS" />
+      <unit at="20,0,62,0" name="org.iets3.variability.artifacts.base.listeners.ModelListenersDescriptor" />
+    </file>
+  </root>
+  <root nodeRef="r:c85318cd-d516-4a7b-9db8-1b90f03a6028(org.iets3.variability.artifacts.base.listeners)/8894818308998107971">
+    <file name="ModelListenersDescriptor.java">
+      <node id="8894818308998120402" at="30,9,31,65" concept="4" />
+      <node id="8894818308998123290" at="32,90,33,50" concept="1" />
+      <node id="8894818308998124415" at="41,9,42,65" concept="4" />
+      <node id="8894818308998124418" at="43,90,44,51" concept="1" />
+      <node id="8894818308998120402" at="31,65,34,11" concept="2" />
+      <node id="8894818308998124415" at="42,65,45,11" concept="2" />
+      <node id="8894818308998120402" at="29,99,35,9" concept="0" />
+      <node id="8894818308998124415" at="40,97,46,9" concept="0" />
+      <node id="8894818308998107972" at="28,0,37,0" concept="3" trace="referenceRemoved#(Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/language/SReferenceLink;)V" />
+      <node id="8894818308998124146" at="39,0,48,0" concept="3" trace="referenceAdded#(Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/language/SReferenceLink;)V" />
+      <node id="8894818308998107972" at="26,0,37,7" concept="1" />
+      <node id="8894818308998124146" at="37,7,48,7" concept="1" />
+      <scope id="8894818308998120404" at="32,90,33,50" />
+      <scope id="8894818308998124417" at="43,90,44,51" />
+      <scope id="8894818308998120402" at="30,9,34,11">
+        <var name="ivaa" id="8894818308998120402" />
+      </scope>
+      <scope id="8894818308998124415" at="41,9,45,11">
+        <var name="ivaa" id="8894818308998124415" />
+      </scope>
+      <scope id="8894818308998107972" at="29,99,35,9" />
+      <scope id="8894818308998124146" at="40,97,46,9" />
+      <scope id="8894818308998107972" at="28,0,37,0">
+        <var name="instance" id="8894818308998107972" />
+        <var name="role" id="8894818308998107972" />
+        <var name="target" id="8894818308998107972" />
+      </scope>
+      <scope id="8894818308998124146" at="39,0,48,0">
+        <var name="instance" id="8894818308998124146" />
+        <var name="role" id="8894818308998124146" />
+        <var name="target" id="8894818308998124146" />
+      </scope>
+      <unit id="8894818308998107972" at="27,52,37,5" name="org.iets3.variability.artifacts.base.listeners.ModelListenersDescriptor$1" />
+      <unit id="8894818308998124146" at="38,52,48,5" name="org.iets3.variability.artifacts.base.listeners.ModelListenersDescriptor$2" />
+    </file>
+  </root>
+</debug-info>
+

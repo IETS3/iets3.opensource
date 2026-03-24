@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<debug-info version="2">
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123140:jetbrains.mps.baseLanguage.structure.ConstructorDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123155:jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068390468200:jetbrains.mps.baseLanguage.structure.FieldDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1144226303539:jetbrains.mps.baseLanguage.structure.ForeachStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123159:jetbrains.mps.baseLanguage.structure.IfStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123165:jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242864:jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242878:jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123157:jetbrains.mps.baseLanguage.structure.Statement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1070462154015:jetbrains.mps.baseLanguage.structure.StaticFieldDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1081236700938:jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1070475587102:jetbrains.mps.baseLanguage.structure.SuperConstructorInvocation" />
+  <root nodeRef="r:1f2c1459-9e84-4a21-8c09-b46a4f624a10(org.iets3.core.expr.tests.plugin)/3281846772294967981">
+    <file name="MutationRegistry.java">
+      <node id="9167150562512948284" at="15,0,16,0" concept="9" trace="mutators" />
+      <node id="9167150562512946986" at="18,27,19,65" concept="1" />
+      <node id="9167150562512958962" at="21,63,22,56" concept="1" />
+      <node id="9167150562512967692" at="23,33,24,69" concept="1" />
+      <node id="9167150562512954213" at="28,5,29,20" concept="7" />
+      <node id="9167150562512965531" at="22,56,25,11" concept="4" />
+      <node id="9167150562512956800" at="20,152,26,9" concept="3" />
+      <node id="9167150562512937425" at="19,65,27,7" concept="3" />
+      <node id="9167150562512939111" at="17,45,28,5" concept="4" />
+      <node id="3281846772294968773" at="17,0,31,0" concept="10" trace="getMutators#()Ljava/util/List;" />
+      <scope id="9167150562512965533" at="23,33,24,69" />
+      <scope id="9167150562512956806" at="21,63,25,11" />
+      <scope id="9167150562512937431" at="20,152,26,9" />
+      <scope id="9167150562512956800" at="20,152,26,9">
+        <var name="m" id="9167150562512956802" />
+      </scope>
+      <scope id="9167150562512937425" at="19,65,27,7">
+        <var name="f" id="9167150562512937427" />
+      </scope>
+      <scope id="9167150562512939113" at="18,27,27,7" />
+      <scope id="3281846772294968737" at="17,45,29,20" />
+      <scope id="3281846772294968773" at="17,0,31,0" />
+      <unit id="3281846772294967981" at="13,0,34,0" name="org.iets3.core.expr.tests.plugin.MutationRegistry" />
+    </file>
+  </root>
+  <root nodeRef="r:1f2c1459-9e84-4a21-8c09-b46a4f624a10(org.iets3.core.expr.tests.plugin)/6294660000051236478">
+    <file name="ContextActionsDescriptor.java">
+      <node id="6294660000051236478" at="22,0,23,0" concept="9" trace="INSTANCE" />
+      <node id="6294660000051236478" at="25,56,26,101" concept="6" />
+      <node id="6294660000051236478" at="26,101,27,0" concept="8" />
+      <node id="6155355352096189107" at="30,75,31,33" concept="7" />
+      <node id="6155355352096189107" at="34,83,35,83" concept="7" />
+      <node id="1782300720840942413" at="39,53,40,296" concept="7" />
+      <node id="6294660000051236478" at="42,7,43,0" concept="8" />
+      <node id="6294660000051236478" at="43,0,44,18" concept="7" />
+      <node id="6294660000051236478" at="48,49,49,16" concept="7" />
+      <node id="8009069486209984731" at="52,36,53,48" concept="7" />
+      <node id="8009069486209984731" at="54,5,55,17" concept="7" />
+      <node id="6294660000051236478" at="59,0,60,0" concept="9" trace="IToplevelExprContent$AI" />
+      <node id="6294660000051236478" at="60,0,61,0" concept="9" trace="IEmpty$6_" />
+      <node id="8009069486209984731" at="51,81,54,5" concept="4" />
+      <node id="6155355352096189107" at="29,0,33,0" concept="5" trace="getFolder#(Lcom/mbeddr/mpsutil/contextactions/runtime/ISubstituteAction;Lcom/mbeddr/mpsutil/contextactions/runtime/IContext;)Ljava/lang/String;" />
+      <node id="6155355352096189107" at="33,0,37,0" concept="5" trace="includeAction#(Lcom/mbeddr/mpsutil/contextactions/runtime/ISubstituteAction;Lcom/mbeddr/mpsutil/contextactions/runtime/IContext;)Z" />
+      <node id="1782300720840942413" at="38,0,42,0" concept="5" trace="isApplicable#(Lcom/mbeddr/mpsutil/contextactions/runtime/IContext;)Z" />
+      <node id="6294660000051236478" at="47,0,51,0" concept="5" trace="isApplicable#(Lcom/mbeddr/mpsutil/contextactions/runtime/IContext;)Z" />
+      <node id="8009069486209984731" at="51,0,57,0" concept="10" trace="check_gkynum_a0a1a0a0a0a0c0d#(Ljava/lang/String;)Z" />
+      <node id="1782300720840942413" at="27,0,42,7" concept="1" />
+      <node id="6294660000051236478" at="24,0,46,0" concept="5" trace="getActionSources#()Ljava/util/List;" />
+      <scope id="6155355352096189107" at="30,75,31,33" />
+      <scope id="6155355352096189107" at="34,83,35,83" />
+      <scope id="1782300720840942413" at="39,53,40,296" />
+      <scope id="6294660000051236478" at="48,49,49,16" />
+      <scope id="8009069486209984731" at="52,36,53,48" />
+      <scope id="6155355352096189107" at="29,0,33,0">
+        <var name="action" id="6155355352096189107" />
+        <var name="context" id="6155355352096189107" />
+      </scope>
+      <scope id="6155355352096189107" at="33,0,37,0">
+        <var name="action" id="6155355352096189107" />
+        <var name="context" id="6155355352096189107" />
+      </scope>
+      <scope id="1782300720840942413" at="38,0,42,0">
+        <var name="context" id="1782300720840942413" />
+      </scope>
+      <scope id="6294660000051236478" at="47,0,51,0">
+        <var name="context" id="6294660000051236478" />
+      </scope>
+      <scope id="8009069486209984731" at="51,81,55,17" />
+      <scope id="8009069486209984731" at="51,0,57,0">
+        <var name="checkedDotOperand" id="8009069486209984731" />
+      </scope>
+      <scope id="6294660000051236478" at="25,56,44,18">
+        <var name="result" id="6294660000051236478" />
+      </scope>
+      <scope id="6294660000051236478" at="24,0,46,0" />
+      <unit id="6294660000051236478" at="58,0,62,0" name="org.iets3.core.expr.tests.plugin.ContextActionsDescriptor$CONCEPTS" />
+      <unit id="6155355352096189107" at="28,73,37,5" name="org.iets3.core.expr.tests.plugin.ContextActionsDescriptor$1$1" />
+      <unit id="1782300720840942413" at="28,49,42,5" name="org.iets3.core.expr.tests.plugin.ContextActionsDescriptor$1" />
+      <unit id="6294660000051236478" at="20,0,63,0" name="org.iets3.core.expr.tests.plugin.ContextActionsDescriptor" />
+    </file>
+  </root>
+  <root nodeRef="r:1f2c1459-9e84-4a21-8c09-b46a4f624a10(org.iets3.core.expr.tests.plugin)/6723982381144585723">
+    <file name="ConstraintFailed.java">
+      <node id="6723982381148466601" at="9,0,10,0" concept="2" trace="msg" />
+      <node id="4089451559968677835" at="10,0,11,0" concept="2" trace="causingValue" />
+      <node id="6723982381148467484" at="12,66,13,19" concept="1" />
+      <node id="4089451559968679691" at="13,19,14,37" concept="1" />
+      <node id="3200439983760971194" at="17,36,18,20" concept="7" />
+      <node id="6723982381148470616" at="22,28,23,50" concept="7" />
+      <node id="4089451559968685539" at="26,32,27,29" concept="7" />
+      <node id="3200439983760967993" at="17,0,20,0" concept="5" trace="getMessage#()Lorg/iets3/core/expr/base/plugin/MessageValue;" />
+      <node id="4089451559968683383" at="26,0,29,0" concept="5" trace="causingValue#()Ljava/lang/Object;" />
+      <node id="6723982381148467038" at="12,0,16,0" concept="0" trace="ConstraintFailed#(Lorg/iets3/core/expr/base/plugin/MessageValue;Ljava/lang/Object;)V" />
+      <node id="6723982381148470609" at="21,0,25,0" concept="5" trace="toString#()Ljava/lang/String;" />
+      <scope id="3200439983760967997" at="17,36,18,20" />
+      <scope id="6723982381148470613" at="22,28,23,50" />
+      <scope id="4089451559968683387" at="26,32,27,29" />
+      <scope id="6723982381148467041" at="12,66,14,37" />
+      <scope id="3200439983760967993" at="17,0,20,0" />
+      <scope id="4089451559968683383" at="26,0,29,0" />
+      <scope id="6723982381148467038" at="12,0,16,0">
+        <var name="causingValue" id="4089451559968678778" />
+        <var name="msg" id="6723982381148467258" />
+      </scope>
+      <scope id="6723982381148470609" at="21,0,25,0" />
+      <unit id="6723982381144585723" at="7,0,31,0" name="org.iets3.core.expr.tests.plugin.ConstraintFailed" />
+    </file>
+  </root>
+  <root nodeRef="r:1f2c1459-9e84-4a21-8c09-b46a4f624a10(org.iets3.core.expr.tests.plugin)/6723982381145463772">
+    <file name="IsValidRecord.java">
+      <node id="6723982381145517700" at="20,0,21,0" concept="2" trace="ctx" />
+      <node id="6723982381145517703" at="21,0,22,0" concept="2" trace="coverage" />
+      <node id="6723982381145522491" at="23,92,24,19" concept="1" />
+      <node id="6723982381145532755" at="24,19,25,29" concept="1" />
+      <node id="6723982381145902219" at="30,24,31,41" concept="1" />
+      <node id="6723982381145905076" at="31,41,32,19" concept="7" />
+      <node id="6723982381145920136" at="33,5,34,0" concept="8" />
+      <node id="6723982381145927857" at="35,42,36,68" concept="1" />
+      <node id="6723982381145930013" at="36,68,37,19" concept="7" />
+      <node id="6723982381145936848" at="38,5,39,0" concept="8" />
+      <node id="6723982381145940837" at="39,0,40,52" concept="6" />
+      <node id="6723982381145979325" at="40,52,41,62" concept="6" />
+      <node id="6723982381145984043" at="42,36,43,89" concept="1" />
+      <node id="6723982381146018648" at="43,89,44,19" concept="7" />
+      <node id="6723982381145994238" at="45,5,46,0" concept="8" />
+      <node id="6723982381146001528" at="46,0,47,82" concept="6" />
+      <node id="6723982381146018761" at="48,66,49,146" concept="1" />
+      <node id="6723982381146023055" at="49,146,50,19" concept="7" />
+      <node id="6723982381145930122" at="51,5,52,0" concept="8" />
+      <node id="6723982381145550077" at="52,0,53,142" concept="6" />
+      <node id="6723982381145775614" at="53,142,54,0" concept="8" />
+      <node id="6723982381145558789" at="55,27,56,56" concept="1" />
+      <node id="6723982381145806799" at="56,56,57,19" concept="7" />
+      <node id="6723982381145563024" at="58,5,59,0" concept="8" />
+      <node id="6723982381145563809" at="59,0,60,16" concept="7" />
+      <node id="6723982381145465346" at="64,51,65,45" concept="1" />
+      <node id="6723982381145463772" at="69,0,70,0" concept="9" trace="Type$WK" />
+      <node id="6723982381145480185" at="23,0,27,0" concept="0" trace="IsValidRecord#(Lcom/mbeddr/mpsutil/interpreter/rt/IContext;Lcom/mbeddr/mpsutil/interpreter/rt/ICoverageAnalyzer;Z)V" />
+      <node id="6723982381145896241" at="29,68,33,5" concept="4" />
+      <node id="6723982381145922120" at="34,0,38,5" concept="4" />
+      <node id="6723982381145974153" at="41,62,45,5" concept="4" />
+      <node id="6723982381146012165" at="47,82,51,5" concept="4" />
+      <node id="6723982381145780388" at="54,0,58,5" concept="4" />
+      <node id="6723982381145463938" at="63,0,67,0" concept="5" trace="describeTo#(Lorg/hamcrest/Description;)V" />
+      <node id="6723982381145885232" at="28,0,62,0" concept="5" trace="matches#(Ljava/lang/Object;Lorg/hamcrest/Description;)Z" />
+      <scope id="6723982381145463952" at="64,51,65,45" />
+      <scope id="6723982381145480188" at="23,92,25,29" />
+      <scope id="6723982381145896243" at="30,24,32,19" />
+      <scope id="6723982381145922122" at="35,42,37,19" />
+      <scope id="6723982381145974155" at="42,36,44,19" />
+      <scope id="6723982381146012167" at="48,66,50,19" />
+      <scope id="6723982381145780390" at="55,27,57,19" />
+      <scope id="6723982381145480185" at="23,0,27,0">
+        <var name="coverage" id="5285810042921528761" />
+        <var name="ctx" id="8219602584770821008" />
+        <var name="expectedValidity" id="6723982381145735106" />
+      </scope>
+      <scope id="6723982381145463938" at="63,0,67,0">
+        <var name="description" id="6723982381145463942" />
+      </scope>
+      <scope id="6723982381145885240" at="29,68,60,16">
+        <var name="recordDeclaration" id="6723982381145979326" />
+        <var name="recordValue" id="6723982381145940838" />
+        <var name="type" id="6723982381146001531" />
+        <var name="validValue" id="6723982381145550078" />
+      </scope>
+      <scope id="6723982381145885232" at="28,0,62,0">
+        <var name="description" id="6723982381145885238" />
+        <var name="value" id="6723982381145885236" />
+      </scope>
+      <unit id="6723982381145463772" at="68,0,71,0" name="org.iets3.core.expr.tests.plugin.IsValidRecord$CONCEPTS" />
+      <unit id="6723982381145463772" at="19,0,72,0" name="org.iets3.core.expr.tests.plugin.IsValidRecord" />
+    </file>
+  </root>
+  <root nodeRef="r:1f2c1459-9e84-4a21-8c09-b46a4f624a10(org.iets3.core.expr.tests.plugin)/6723982381145817196">
+    <file name="Matchers.java">
+      <node id="6723982381151202742" at="11,107,12,55" concept="7" />
+      <node id="6723982381145817614" at="8,0,10,0" concept="0" trace="Matchers#()V" />
+      <node id="6723982381151202740" at="11,0,14,0" concept="10" trace="isInvalidWithErrorMessage#(Lorg/hamcrest/Matcher;)Lorg/hamcrest/Matcher;" />
+      <scope id="6723982381145817617" at="8,22,8,22" />
+      <scope id="6723982381151202741" at="11,107,12,55" />
+      <scope id="6723982381145817614" at="8,0,10,0" />
+      <scope id="6723982381151202740" at="11,0,14,0">
+        <var name="errorMessage" id="6723982381151203560" />
+      </scope>
+      <unit id="6723982381145817196" at="7,0,15,0" name="org.iets3.core.expr.tests.plugin.Matchers" />
+    </file>
+  </root>
+  <root nodeRef="r:1f2c1459-9e84-4a21-8c09-b46a4f624a10(org.iets3.core.expr.tests.plugin)/6723982381148766600">
+    <file name="IsInvalid.java">
+      <node id="6723982381148776866" at="12,25,13,41" concept="1" />
+      <node id="6723982381148778936" at="13,41,14,19" concept="7" />
+      <node id="6723982381148779880" at="15,5,16,0" concept="8" />
+      <node id="6723982381148791007" at="17,48,18,57" concept="1" />
+      <node id="6723982381148803469" at="18,57,19,19" concept="7" />
+      <node id="6723982381148800270" at="20,5,21,0" concept="8" />
+      <node id="6723982381148768184" at="21,0,22,16" concept="7" />
+      <node id="6723982381148806379" at="25,51,26,49" concept="1" />
+      <node id="6723982381148771443" at="11,69,15,5" concept="4" />
+      <node id="6723982381148781033" at="16,0,20,5" concept="4" />
+      <node id="6723982381148767103" at="24,0,28,0" concept="5" trace="describeTo#(Lorg/hamcrest/Description;)V" />
+      <node id="6723982381148767091" at="10,0,24,0" concept="5" trace="matches#(Ljava/lang/Object;Lorg/hamcrest/Description;)Z" />
+      <scope id="6723982381148767117" at="25,51,26,49" />
+      <scope id="6723982381148771445" at="12,25,14,19" />
+      <scope id="6723982381148781035" at="17,48,19,19" />
+      <scope id="6723982381148767103" at="24,0,28,0">
+        <var name="description" id="6723982381148767107" />
+      </scope>
+      <scope id="6723982381148767099" at="11,69,22,16" />
+      <scope id="6723982381148767091" at="10,0,24,0">
+        <var name="description" id="6723982381148767097" />
+        <var name="object" id="6723982381148767095" />
+      </scope>
+      <unit id="6723982381148766600" at="8,0,29,0" name="org.iets3.core.expr.tests.plugin.IsInvalid" />
+    </file>
+  </root>
+  <root nodeRef="r:1f2c1459-9e84-4a21-8c09-b46a4f624a10(org.iets3.core.expr.tests.plugin)/6723982381151239690">
+    <file name="IsInvalidWithErrorMessage.java">
+      <node id="6723982381151242812" at="10,72,11,80" concept="11" />
+      <node id="6723982381151250300" at="15,60,16,33" concept="7" />
+      <node id="6723982381151242806" at="10,0,13,0" concept="0" trace="IsInvalidWithErrorMessage#(Lorg/hamcrest/Matcher;)V" />
+      <node id="6723982381151248838" at="14,0,18,0" concept="5" trace="featureValueOf#(Lorg/iets3/core/expr/tests/plugin/ConstraintFailed;)Ljava/lang/String;" />
+      <scope id="6723982381151242810" at="10,72,11,80" />
+      <scope id="6723982381151248846" at="15,60,16,33" />
+      <scope id="6723982381151242806" at="10,0,13,0">
+        <var name="subMatcher" id="6723982381151242813" />
+      </scope>
+      <scope id="6723982381151248838" at="14,0,18,0">
+        <var name="failed" id="6723982381151248842" />
+      </scope>
+      <unit id="6723982381151239690" at="8,0,19,0" name="org.iets3.core.expr.tests.plugin.IsInvalidWithErrorMessage" />
+    </file>
+  </root>
+</debug-info>
+

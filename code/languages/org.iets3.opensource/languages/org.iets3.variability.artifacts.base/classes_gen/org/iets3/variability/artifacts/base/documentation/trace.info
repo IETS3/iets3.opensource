@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<debug-info version="2">
+  <root>
+    <file name="DocumentationDescriptor.java">
+      <unit at="22,0,48,0" name="org.iets3.variability.artifacts.base.documentation.DocumentationDescriptor" />
+    </file>
+  </root>
+</debug-info>
+

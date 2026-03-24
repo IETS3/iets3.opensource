@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<product version="3" modelHash="-vytwn2y4r2b8qtm2ywdci7cs4129zl">
+  <files names="IntentionsDescriptor.java:SplitStringIntoConcatenation_Intention.java:addPrec_Intention.java:addRange_Intention.java:changeIntoAlt_Intention.java:changeIntoIf_Intention.java:makeLimitFromCast_Intention.java:toggleExcludeMax_Intention.java:toggleExcludeMin_Intention.java:toggleNumberHexValue_Intention.java:toggleNumberRangeHexMaxValue_Intention.java:toggleNumberRangeHexMinValue_Intention.java:wrapWithPrecisionConversion_Intention.java" />
+</product>
+

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<debug-info version="2">
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123140:jetbrains.mps.baseLanguage.structure.ConstructorDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123155:jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123165:jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242864:jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242878:jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1070462154015:jetbrains.mps.baseLanguage.structure.StaticFieldDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1070475587102:jetbrains.mps.baseLanguage.structure.SuperConstructorInvocation" />
+  <root>
+    <file name="ConstraintsAspectDescriptor.java">
+      <unit at="13,0,29,0" name="org.iets3.components.req.constraints.ConstraintsAspectDescriptor" />
+    </file>
+  </root>
+  <root nodeRef="r:4f316eec-6fb7-47d8-b0d7-03d93d7f7f75(org.iets3.components.req.constraints)/229512757699527943">
+    <file name="ComponentsParagraph_Constraints.java">
+      <node id="229512757699527943" at="18,44,19,43" concept="6" />
+      <node id="229512757699527944" at="23,59,24,60" concept="6" />
+      <node id="229512757699527988" at="27,40,28,103" concept="4" />
+      <node id="229512757699527943" at="32,84,33,119" concept="3" />
+      <node id="229512757699527944" at="33,119,34,61" concept="1" />
+      <node id="229512757699527943" at="34,61,35,22" concept="4" />
+      <node id="229512757699527943" at="39,0,40,0" concept="5" trace="ComponentsParagraph$HZ" />
+      <node id="229512757699527943" at="43,0,44,0" concept="5" trace="name$MnvL" />
+      <node id="229512757699527943" at="18,0,21,0" concept="0" trace="ComponentsParagraph_Constraints#()V" />
+      <node id="229512757699527944" at="23,0,26,0" concept="0" trace="Name_Property#(Ljetbrains/mps/smodel/runtime/ConstraintsDescriptor;)V" />
+      <node id="229512757699527944" at="26,0,30,0" concept="2" trace="getValue#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljava/lang/Object;" />
+      <node id="229512757699527943" at="31,0,37,0" concept="2" trace="getSpecifiedProperties#()Ljava/util/Map;" />
+      <scope id="229512757699527943" at="18,44,19,43" />
+      <scope id="229512757699527944" at="23,59,24,60" />
+      <scope id="229512757699527947" at="27,40,28,103" />
+      <scope id="229512757699527943" at="18,0,21,0" />
+      <scope id="229512757699527944" at="23,0,26,0">
+        <var name="container" id="229512757699527944" />
+      </scope>
+      <scope id="229512757699527943" at="32,84,35,22">
+        <var name="properties" id="229512757699527943" />
+      </scope>
+      <scope id="229512757699527944" at="26,0,30,0">
+        <var name="node" id="229512757699527944" />
+      </scope>
+      <scope id="229512757699527943" at="31,0,37,0" />
+      <unit id="229512757699527943" at="38,0,41,0" name="org.iets3.components.req.constraints.ComponentsParagraph_Constraints$CONCEPTS" />
+      <unit id="229512757699527943" at="42,0,45,0" name="org.iets3.components.req.constraints.ComponentsParagraph_Constraints$PROPS" />
+      <unit id="229512757699527944" at="22,0,31,0" name="org.iets3.components.req.constraints.ComponentsParagraph_Constraints$Name_Property" />
+      <unit id="229512757699527943" at="17,0,46,0" name="org.iets3.components.req.constraints.ComponentsParagraph_Constraints" />
+    </file>
+  </root>
+</debug-info>
+

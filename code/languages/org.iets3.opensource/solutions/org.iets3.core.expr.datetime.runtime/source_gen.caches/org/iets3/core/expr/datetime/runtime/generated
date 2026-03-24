@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<product version="3" modelHash="-e254kbe13x75briybvio0943g2kl27w">
+  <files names="AbstractDateRangeValue.java:ArbitraryDateRangeValue.java:DateDeltaValue.java:DiscreteDateRangeValue.java:EarlyLateHelper.java:EmptyDateRangeValue.java:FromUptoHelper.java:TimeDeltaValue.java" />
+</product>
+

@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<product version="3" modelHash="-wvi4jkdym244wtun53srhedrxygp4m">
+  <files names="MigrationDescriptor.java:WrireConnector.java:migrateBusWirings.java:migrateBuskinds.java:migrateEmptyComponentInterfaceContentInPorts.java" />
+</product>
+

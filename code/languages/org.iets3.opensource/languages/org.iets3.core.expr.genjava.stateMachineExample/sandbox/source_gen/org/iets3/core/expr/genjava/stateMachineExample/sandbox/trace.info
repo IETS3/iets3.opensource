@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<debug-info version="2">
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123140:jetbrains.mps.baseLanguage.structure.ConstructorDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123155:jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123159:jetbrains.mps.baseLanguage.structure.IfStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123165:jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242864:jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242878:jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123157:jetbrains.mps.baseLanguage.structure.Statement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1070475587102:jetbrains.mps.baseLanguage.structure.SuperConstructorInvocation" />
+  <root nodeRef="r:72b3f792-9b46-4341-bb35-600d4f3f88b6(org.iets3.core.expr.genjava.stateMachineExample.sandbox)/5544528087567835672">
+    <file name="Lamp.java">
+      <node id="5544528087567835672" at="15,17,16,23" concept="7" />
+      <node id="5544528087567835672" at="16,23,17,55" concept="1" />
+      <node id="5544528087567835672" at="17,55,18,0" concept="6" />
+      <node id="5544528087567835686" at="18,0,19,55" concept="1" />
+      <node id="5544528087567835672" at="19,55,20,0" concept="6" />
+      <node id="5544528087567835674" at="20,0,21,141" concept="1" />
+      <node id="5544528087567835798" at="21,141,22,140" concept="1" />
+      <node id="5544528087567835674" at="26,50,27,19" concept="7" />
+      <node id="5544528087567835674" at="30,60,31,42" concept="4" />
+      <node id="5544528087567835694" at="31,42,32,75" concept="4" />
+      <node id="5544528087567835674" at="32,75,33,0" concept="6" />
+      <node id="5544528087567835718" at="34,63,35,37" concept="1" />
+      <node id="5544528087567835674" at="36,7,37,0" concept="6" />
+      <node id="5544528087567835674" at="38,33,39,27" concept="5" />
+      <node id="5544528087567835674" at="40,7,41,0" concept="6" />
+      <node id="5544528087567835674" at="41,0,42,18" concept="5" />
+      <node id="5544528087567835798" at="46,49,47,19" concept="7" />
+      <node id="5544528087567835798" at="50,60,51,42" concept="4" />
+      <node id="5544528087567835694" at="51,42,52,75" concept="4" />
+      <node id="5544528087567835798" at="52,75,53,0" concept="6" />
+      <node id="5544528087567835798" at="53,0,54,0" concept="6" />
+      <node id="5544528087567835798" at="55,33,56,27" concept="5" />
+      <node id="5544528087567835798" at="57,7,58,0" concept="6" />
+      <node id="5544528087567835798" at="58,0,59,18" concept="5" />
+      <node id="5544528087567835674" at="26,0,29,0" concept="0" trace="TransitionPressButtonOFF#(Lorg/iets3/core/expr/genjava/stateMachineExample/runtime/State;)V" />
+      <node id="5544528087567835718" at="33,0,36,7" concept="2" />
+      <node id="5544528087567835674" at="37,0,40,7" concept="2" />
+      <node id="5544528087567835798" at="46,0,49,0" concept="0" trace="TransitionPressButtonON#(Lorg/iets3/core/expr/genjava/stateMachineExample/runtime/State;)V" />
+      <node id="5544528087567835798" at="54,0,57,7" concept="2" />
+      <node id="5544528087567835672" at="15,0,24,0" concept="0" trace="Lamp#()V" />
+      <node id="5544528087567835798" at="49,0,61,0" concept="3" trace="fireEvent#(Ljava/util/Map;)Lorg/iets3/core/expr/genjava/stateMachineExample/runtime/State;" />
+      <node id="5544528087567835674" at="29,0,44,0" concept="3" trace="fireEvent#(Ljava/util/Map;)Lorg/iets3/core/expr/genjava/stateMachineExample/runtime/State;" />
+      <scope id="5544528087567835674" at="26,50,27,19" />
+      <scope id="5544528087567835718" at="34,63,35,37" />
+      <scope id="5544528087567835674" at="38,33,39,27" />
+      <scope id="5544528087567835798" at="46,49,47,19" />
+      <scope id="5544528087567835798" at="55,33,56,27" />
+      <scope id="5544528087567835674" at="26,0,29,0">
+        <var name="state" id="5544528087567835674" />
+      </scope>
+      <scope id="5544528087567835798" at="46,0,49,0">
+        <var name="state" id="5544528087567835798" />
+      </scope>
+      <scope id="5544528087567835672" at="15,17,22,140" />
+      <scope id="5544528087567835672" at="15,0,24,0" />
+      <scope id="5544528087567835798" at="50,60,59,18">
+        <var name="conditionsFullfilled" id="5544528087567835798" />
+        <var name="time" id="5544528087567835694" />
+      </scope>
+      <scope id="5544528087567835674" at="30,60,42,18">
+        <var name="conditionsFullfilled" id="5544528087567835674" />
+        <var name="time" id="5544528087567835694" />
+      </scope>
+      <scope id="5544528087567835798" at="49,0,61,0">
+        <var name="parameters" id="5544528087567835798" />
+      </scope>
+      <scope id="5544528087567835674" at="29,0,44,0">
+        <var name="parameters" id="5544528087567835674" />
+      </scope>
+      <unit id="5544528087567835798" at="45,0,62,0" name="org.iets3.core.expr.genjava.stateMachineExample.sandbox.Lamp$TransitionPressButtonON" />
+      <unit id="5544528087567835674" at="25,0,45,0" name="org.iets3.core.expr.genjava.stateMachineExample.sandbox.Lamp$TransitionPressButtonOFF" />
+      <unit id="5544528087567835672" at="13,0,64,0" name="org.iets3.core.expr.genjava.stateMachineExample.sandbox.Lamp" />
+    </file>
+  </root>
+</debug-info>
+

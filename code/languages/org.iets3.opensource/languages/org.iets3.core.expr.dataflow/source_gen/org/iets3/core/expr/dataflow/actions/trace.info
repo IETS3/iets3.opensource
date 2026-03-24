@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<debug-info version="2">
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1082485599095:jetbrains.mps.baseLanguage.structure.BlockStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123155:jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123159:jetbrains.mps.baseLanguage.structure.IfStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123165:jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242864:jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1070462154015:jetbrains.mps.baseLanguage.structure.StaticFieldDeclaration" />
+  <root>
+    <file name="ActionAspectDescriptorImpl.java">
+      <unit at="12,0,28,0" name="org.iets3.core.expr.dataflow.actions.ActionAspectDescriptorImpl" />
+    </file>
+  </root>
+  <root nodeRef="r:7b8bfa9a-6e7f-413e-9656-3d3434186d56(org.iets3.core.expr.dataflow.actions)/1483061781794002325">
+    <file name="DataflowFactories.java">
+      <node id="1483061781794002345" at="21,7,22,41" concept="4" />
+      <node id="1483061781794757675" at="23,71,24,120" concept="1" />
+      <node id="1483061781794002487" at="24,120,25,183" concept="1" />
+      <node id="1483061781794034234" at="25,183,26,185" concept="1" />
+      <node id="1483061781794041262" at="26,185,27,181" concept="1" />
+      <node id="1483061781794048286" at="27,181,28,124" concept="1" />
+      <node id="1483061781794780121" at="31,7,32,43" concept="4" />
+      <node id="1483061781794782448" at="33,81,34,122" concept="1" />
+      <node id="1483061781794002325" at="41,0,42,0" concept="5" trace="Block$MM" />
+      <node id="1483061781794002325" at="42,0,43,0" concept="5" trace="INamedConcept$Kd" />
+      <node id="1483061781794002325" at="46,0,47,0" concept="5" trace="name$MnvL" />
+      <node id="1483061781794002325" at="47,0,48,0" concept="5" trace="symbol$mCLh" />
+      <node id="1483061781794002325" at="51,0,52,0" concept="5" trace="inports$dl2o" />
+      <node id="1483061781794002325" at="52,0,53,0" concept="5" trace="outports$xLwx" />
+      <node id="1483061781794002325" at="53,0,54,0" concept="5" trace="params$7rRh" />
+      <node id="1483061781794780121" at="32,43,35,9" concept="2" />
+      <node id="1483061781794780121" at="30,7,36,7" concept="0" />
+      <node id="1483061781794002345" at="22,41,29,9" concept="2" />
+      <node id="1483061781794002345" at="20,102,30,7" concept="0" />
+      <node id="1483061781794002326" at="20,0,38,0" concept="3" trace="setup#(Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;ILorg/jetbrains/mps/openapi/model/SModel;)V" />
+      <scope id="1483061781794780125" at="33,81,34,122" />
+      <scope id="1483061781794780121" at="31,7,35,9">
+        <var name="namedNode" id="1483061781794780121" />
+      </scope>
+      <scope id="1483061781794002347" at="23,71,28,124" />
+      <scope id="1483061781794002345" at="21,7,29,9">
+        <var name="oldNode" id="1483061781794002345" />
+      </scope>
+      <scope id="1483061781794002326" at="20,102,36,7" />
+      <scope id="1483061781794002326" at="20,0,38,0">
+        <var name="enclosingNode" id="1483061781794002326" />
+        <var name="index" id="1483061781794002326" />
+        <var name="model" id="1483061781794002326" />
+        <var name="newNode" id="1483061781794002326" />
+        <var name="sampleNode" id="1483061781794002326" />
+      </scope>
+      <unit id="1483061781794002325" at="40,0,44,0" name="org.iets3.core.expr.dataflow.actions.DataflowFactories$CONCEPTS" />
+      <unit id="1483061781794002325" at="45,0,49,0" name="org.iets3.core.expr.dataflow.actions.DataflowFactories$PROPS" />
+      <unit id="1483061781794002325" at="50,0,55,0" name="org.iets3.core.expr.dataflow.actions.DataflowFactories$LINKS" />
+      <unit id="1483061781794002326" at="19,0,39,0" name="org.iets3.core.expr.dataflow.actions.DataflowFactories$NodeFactory_1483061781794002326" />
+      <unit id="1483061781794002325" at="18,0,56,0" name="org.iets3.core.expr.dataflow.actions.DataflowFactories" />
+    </file>
+  </root>
+</debug-info>
+

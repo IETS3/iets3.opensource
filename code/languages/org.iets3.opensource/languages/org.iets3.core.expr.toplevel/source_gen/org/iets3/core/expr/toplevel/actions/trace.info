@@ -1,0 +1,329 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<debug-info version="2">
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1082485599095:jetbrains.mps.baseLanguage.structure.BlockStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123155:jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123159:jetbrains.mps.baseLanguage.structure.IfStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123165:jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242864:jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242878:jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1070462154015:jetbrains.mps.baseLanguage.structure.StaticFieldDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1081236700938:jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" />
+  <root>
+    <file name="ActionAspectDescriptorImpl.java">
+      <unit at="16,0,44,0" name="org.iets3.core.expr.toplevel.actions.ActionAspectDescriptorImpl" />
+    </file>
+  </root>
+  <root nodeRef="r:b0694f49-d8b2-4a83-94ca-c8feb9dd7011(org.iets3.core.expr.toplevel.actions)/1035519324648052999">
+    <file name="pasteLocalAsGlobalVal_PasteWrapper_0.java">
+      <node id="1035519324648053000" at="20,46,21,37" concept="5" />
+      <node id="1035519324648053000" at="24,46,25,44" concept="5" />
+      <node id="1035519324648059264" at="28,39,29,193" concept="4" />
+      <node id="1035519324648060039" at="29,193,30,112" concept="1" />
+      <node id="1035519324648069217" at="30,112,31,133" concept="1" />
+      <node id="1035519324648080461" at="31,133,32,133" concept="1" />
+      <node id="1035519324648053760" at="32,133,33,14" concept="5" />
+      <node id="1035519324648053000" at="37,0,38,0" concept="6" trace="ValExpression$fC" />
+      <node id="1035519324648053000" at="38,0,39,0" concept="6" trace="IToplevelExprContent$AI" />
+      <node id="1035519324648053000" at="42,0,43,0" concept="6" trace="name$MnvL" />
+      <node id="1035519324648053000" at="46,0,47,0" concept="6" trace="expr$CW3E" />
+      <node id="1035519324648053000" at="47,0,48,0" concept="6" trace="type$1eya" />
+      <node id="1035519324648053000" at="19,0,23,0" concept="3" trace="getSourceConcept#()Lorg/jetbrains/mps/openapi/language/SAbstractConcept;" />
+      <node id="1035519324648053000" at="23,0,27,0" concept="3" trace="getTargetConcept#()Lorg/jetbrains/mps/openapi/language/SAbstractConcept;" />
+      <node id="1035519324648053000" at="27,0,35,0" concept="3" trace="wrap#(Lorg/jetbrains/mps/openapi/model/SNode;)Lorg/jetbrains/mps/openapi/model/SNode;" />
+      <scope id="1035519324648053000" at="20,46,21,37" />
+      <scope id="1035519324648053000" at="24,46,25,44" />
+      <scope id="1035519324648053000" at="19,0,23,0" />
+      <scope id="1035519324648053000" at="23,0,27,0" />
+      <scope id="1035519324648053002" at="28,39,33,14">
+        <var name="cc" id="1035519324648059265" />
+      </scope>
+      <scope id="1035519324648053000" at="27,0,35,0">
+        <var name="sourceNode" id="1035519324648053000" />
+      </scope>
+      <unit id="1035519324648053000" at="41,0,44,0" name="org.iets3.core.expr.toplevel.actions.pasteLocalAsGlobalVal_PasteWrapper_0$PROPS" />
+      <unit id="1035519324648053000" at="36,0,40,0" name="org.iets3.core.expr.toplevel.actions.pasteLocalAsGlobalVal_PasteWrapper_0$CONCEPTS" />
+      <unit id="1035519324648053000" at="45,0,49,0" name="org.iets3.core.expr.toplevel.actions.pasteLocalAsGlobalVal_PasteWrapper_0$LINKS" />
+      <unit id="1035519324648053000" at="18,0,50,0" name="org.iets3.core.expr.toplevel.actions.pasteLocalAsGlobalVal_PasteWrapper_0" />
+    </file>
+  </root>
+  <root nodeRef="r:b0694f49-d8b2-4a83-94ca-c8feb9dd7011(org.iets3.core.expr.toplevel.actions)/1483061781793493912">
+    <file name="ExpressionTopLevelFactories.java">
+      <node id="1483061781793493916" at="18,7,19,41" concept="4" />
+      <node id="1483061781793513789" at="20,84,21,183" concept="1" />
+      <node id="1483061781793550536" at="21,183,22,199" concept="1" />
+      <node id="1483061781793601348" at="22,199,23,123" concept="1" />
+      <node id="1483061781793493912" at="30,0,31,0" concept="6" trace="IRecordDeclaration$Cv" />
+      <node id="1483061781793493912" at="34,0,35,0" concept="6" trace="members$mJj1" />
+      <node id="1483061781793493912" at="35,0,36,0" concept="6" trace="comparisonOrder$fACp" />
+      <node id="1483061781793493912" at="36,0,37,0" concept="6" trace="contract$U1k2" />
+      <node id="1483061781793493916" at="19,41,24,9" concept="2" />
+      <node id="1483061781793493916" at="17,102,25,7" concept="0" />
+      <node id="1483061781793493913" at="17,0,27,0" concept="3" trace="setup#(Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;ILorg/jetbrains/mps/openapi/model/SModel;)V" />
+      <scope id="1483061781793493918" at="20,84,23,123" />
+      <scope id="1483061781793493916" at="18,7,24,9">
+        <var name="oldNode" id="1483061781793493916" />
+      </scope>
+      <scope id="1483061781793493913" at="17,102,25,7" />
+      <scope id="1483061781793493913" at="17,0,27,0">
+        <var name="enclosingNode" id="1483061781793493913" />
+        <var name="index" id="1483061781793493913" />
+        <var name="model" id="1483061781793493913" />
+        <var name="newNode" id="1483061781793493913" />
+        <var name="sampleNode" id="1483061781793493913" />
+      </scope>
+      <unit id="1483061781793493912" at="29,0,32,0" name="org.iets3.core.expr.toplevel.actions.ExpressionTopLevelFactories$CONCEPTS" />
+      <unit id="1483061781793493912" at="33,0,38,0" name="org.iets3.core.expr.toplevel.actions.ExpressionTopLevelFactories$LINKS" />
+      <unit id="1483061781793493913" at="16,0,28,0" name="org.iets3.core.expr.toplevel.actions.ExpressionTopLevelFactories$NodeFactory_1483061781793493913" />
+      <unit id="1483061781793493912" at="15,0,39,0" name="org.iets3.core.expr.toplevel.actions.ExpressionTopLevelFactories" />
+    </file>
+  </root>
+  <root nodeRef="r:b0694f49-d8b2-4a83-94ca-c8feb9dd7011(org.iets3.core.expr.toplevel.actions)/1483061781801055906">
+    <file name="ExpressionTopLevelPasting_PasteWrapper_0.java">
+      <node id="1483061781801055907" at="16,46,17,37" concept="5" />
+      <node id="1483061781801055907" at="20,46,21,44" concept="5" />
+      <node id="1483061781801056232" at="24,39,25,51" concept="5" />
+      <node id="1483061781801056230" at="27,62,28,68" concept="4" />
+      <node id="1483061781801056230" at="28,68,29,76" concept="1" />
+      <node id="1483061781801056230" at="29,76,30,26" concept="5" />
+      <node id="1483061781801055907" at="34,0,35,0" concept="6" trace="DotExpression$jp" />
+      <node id="1483061781801055907" at="35,0,36,0" concept="6" trace="IToplevelExprContent$AI" />
+      <node id="1483061781801055907" at="36,0,37,0" concept="6" trace="Constant$5s" />
+      <node id="1483061781801055907" at="37,0,38,0" concept="6" trace="Expression$D_" />
+      <node id="1483061781801055907" at="41,0,42,0" concept="6" trace="expr$CW3E" />
+      <node id="1483061781801055907" at="15,0,19,0" concept="3" trace="getSourceConcept#()Lorg/jetbrains/mps/openapi/language/SAbstractConcept;" />
+      <node id="1483061781801055907" at="19,0,23,0" concept="3" trace="getTargetConcept#()Lorg/jetbrains/mps/openapi/language/SAbstractConcept;" />
+      <node id="1483061781801055907" at="23,0,27,0" concept="3" trace="wrap#(Lorg/jetbrains/mps/openapi/model/SNode;)Lorg/jetbrains/mps/openapi/model/SNode;" />
+      <node id="1483061781801056230" at="27,0,32,0" concept="7" trace="createConstant_yowr44_a0a0a#(Lorg/jetbrains/mps/openapi/model/SNode;)Lorg/jetbrains/mps/openapi/model/SNode;" />
+      <scope id="1483061781801055907" at="16,46,17,37" />
+      <scope id="1483061781801055907" at="20,46,21,44" />
+      <scope id="1483061781801055909" at="24,39,25,51" />
+      <scope id="1483061781801056230" at="27,62,30,26">
+        <var name="n0" id="1483061781801056230" />
+      </scope>
+      <scope id="1483061781801055907" at="15,0,19,0" />
+      <scope id="1483061781801055907" at="19,0,23,0" />
+      <scope id="1483061781801055907" at="23,0,27,0">
+        <var name="sourceNode" id="1483061781801055907" />
+      </scope>
+      <scope id="1483061781801056230" at="27,0,32,0">
+        <var name="p0" id="1483061781801056230" />
+      </scope>
+      <unit id="1483061781801055907" at="40,0,43,0" name="org.iets3.core.expr.toplevel.actions.ExpressionTopLevelPasting_PasteWrapper_0$LINKS" />
+      <unit id="1483061781801055907" at="33,0,39,0" name="org.iets3.core.expr.toplevel.actions.ExpressionTopLevelPasting_PasteWrapper_0$CONCEPTS" />
+      <unit id="1483061781801055907" at="14,0,44,0" name="org.iets3.core.expr.toplevel.actions.ExpressionTopLevelPasting_PasteWrapper_0" />
+    </file>
+    <file name="ExpressionTopLevelPasting_PasteWrapper_1.java">
+      <node id="8702897751516124717" at="20,46,21,32" concept="5" />
+      <node id="8702897751516124717" at="24,46,25,34" concept="5" />
+      <node id="8702897751521399068" at="28,39,29,124" concept="4" />
+      <node id="8702897751516125325" at="29,124,30,256" concept="5" />
+      <node id="8702897751516125321" at="32,66,33,72" concept="4" />
+      <node id="8702897751516125321" at="33,72,34,51" concept="1" />
+      <node id="8702897751516125321" at="34,51,35,26" concept="5" />
+      <node id="8702897751516124717" at="39,0,40,0" concept="6" trace="Function$iC" />
+      <node id="8702897751516124717" at="40,0,41,0" concept="6" trace="Expression$D_" />
+      <node id="8702897751516124717" at="41,0,42,0" concept="6" trace="OriginalNodeInfo$gV" />
+      <node id="8702897751516124717" at="42,0,43,0" concept="6" trace="FunctionCall$bZ" />
+      <node id="8702897751516124717" at="46,0,47,0" concept="6" trace="function$xJRS" />
+      <node id="8702897751516124717" at="19,0,23,0" concept="3" trace="getSourceConcept#()Lorg/jetbrains/mps/openapi/language/SAbstractConcept;" />
+      <node id="8702897751516124717" at="23,0,27,0" concept="3" trace="getTargetConcept#()Lorg/jetbrains/mps/openapi/language/SAbstractConcept;" />
+      <node id="8702897751516124717" at="27,0,32,0" concept="3" trace="wrap#(Lorg/jetbrains/mps/openapi/model/SNode;)Lorg/jetbrains/mps/openapi/model/SNode;" />
+      <node id="8702897751516125321" at="32,0,37,0" concept="7" trace="createFunctionCall_yowr44_a1a0b#(Lorg/jetbrains/mps/openapi/model/SNode;)Lorg/jetbrains/mps/openapi/model/SNode;" />
+      <scope id="8702897751516124717" at="20,46,21,32" />
+      <scope id="8702897751516124717" at="24,46,25,34" />
+      <scope id="8702897751516124719" at="28,39,30,256">
+        <var name="repository" id="8702897751521399069" />
+      </scope>
+      <scope id="8702897751516125321" at="32,66,35,26">
+        <var name="n0" id="8702897751516125321" />
+      </scope>
+      <scope id="8702897751516124717" at="19,0,23,0" />
+      <scope id="8702897751516124717" at="23,0,27,0" />
+      <scope id="8702897751516124717" at="27,0,32,0">
+        <var name="sourceNode" id="8702897751516124717" />
+      </scope>
+      <scope id="8702897751516125321" at="32,0,37,0">
+        <var name="p0" id="8702897751516125321" />
+      </scope>
+      <unit id="8702897751516124717" at="45,0,48,0" name="org.iets3.core.expr.toplevel.actions.ExpressionTopLevelPasting_PasteWrapper_1$LINKS" />
+      <unit id="8702897751516124717" at="38,0,44,0" name="org.iets3.core.expr.toplevel.actions.ExpressionTopLevelPasting_PasteWrapper_1$CONCEPTS" />
+      <unit id="8702897751516124717" at="18,0,49,0" name="org.iets3.core.expr.toplevel.actions.ExpressionTopLevelPasting_PasteWrapper_1" />
+    </file>
+    <file name="ExpressionTopLevelPasting_PasteWrapper_2.java">
+      <node id="8702897751523074705" at="20,46,21,32" concept="5" />
+      <node id="8702897751523074705" at="24,46,25,34" concept="5" />
+      <node id="8702897751523074708" at="28,39,29,124" concept="4" />
+      <node id="8702897751523074717" at="29,124,30,255" concept="5" />
+      <node id="8702897751523074718" at="32,65,33,71" concept="4" />
+      <node id="8702897751523074718" at="33,71,34,51" concept="1" />
+      <node id="8702897751523074718" at="34,51,35,26" concept="5" />
+      <node id="8702897751523074705" at="39,0,40,0" concept="6" trace="Constant$5s" />
+      <node id="8702897751523074705" at="40,0,41,0" concept="6" trace="Expression$D_" />
+      <node id="8702897751523074705" at="41,0,42,0" concept="6" trace="OriginalNodeInfo$gV" />
+      <node id="8702897751523074705" at="42,0,43,0" concept="6" trace="ConstantRef$5J" />
+      <node id="8702897751523074705" at="46,0,47,0" concept="6" trace="constant$YVF7" />
+      <node id="8702897751523074705" at="19,0,23,0" concept="3" trace="getSourceConcept#()Lorg/jetbrains/mps/openapi/language/SAbstractConcept;" />
+      <node id="8702897751523074705" at="23,0,27,0" concept="3" trace="getTargetConcept#()Lorg/jetbrains/mps/openapi/language/SAbstractConcept;" />
+      <node id="8702897751523074705" at="27,0,32,0" concept="3" trace="wrap#(Lorg/jetbrains/mps/openapi/model/SNode;)Lorg/jetbrains/mps/openapi/model/SNode;" />
+      <node id="8702897751523074718" at="32,0,37,0" concept="7" trace="createConstantRef_yowr44_a1a0c#(Lorg/jetbrains/mps/openapi/model/SNode;)Lorg/jetbrains/mps/openapi/model/SNode;" />
+      <scope id="8702897751523074705" at="20,46,21,32" />
+      <scope id="8702897751523074705" at="24,46,25,34" />
+      <scope id="8702897751523074707" at="28,39,30,255">
+        <var name="repository" id="8702897751523074709" />
+      </scope>
+      <scope id="8702897751523074718" at="32,65,35,26">
+        <var name="n0" id="8702897751523074718" />
+      </scope>
+      <scope id="8702897751523074705" at="19,0,23,0" />
+      <scope id="8702897751523074705" at="23,0,27,0" />
+      <scope id="8702897751523074705" at="27,0,32,0">
+        <var name="sourceNode" id="8702897751523074705" />
+      </scope>
+      <scope id="8702897751523074718" at="32,0,37,0">
+        <var name="p0" id="8702897751523074718" />
+      </scope>
+      <unit id="8702897751523074705" at="45,0,48,0" name="org.iets3.core.expr.toplevel.actions.ExpressionTopLevelPasting_PasteWrapper_2$LINKS" />
+      <unit id="8702897751523074705" at="38,0,44,0" name="org.iets3.core.expr.toplevel.actions.ExpressionTopLevelPasting_PasteWrapper_2$CONCEPTS" />
+      <unit id="8702897751523074705" at="18,0,49,0" name="org.iets3.core.expr.toplevel.actions.ExpressionTopLevelPasting_PasteWrapper_2" />
+    </file>
+    <file name="ExpressionTopLevelPasting_PasteWrapper_3.java">
+      <node id="8702897751523667569" at="20,46,21,35" concept="5" />
+      <node id="8702897751523667569" at="24,46,25,34" concept="5" />
+      <node id="8702897751523667572" at="28,39,29,124" concept="4" />
+      <node id="8702897751523667581" at="29,124,30,261" concept="5" />
+      <node id="8702897751523667582" at="32,68,33,74" concept="4" />
+      <node id="8702897751523667582" at="33,74,34,50" concept="1" />
+      <node id="8702897751523667582" at="34,50,35,26" concept="5" />
+      <node id="8702897751523667569" at="39,0,40,0" concept="6" trace="EnumLiteral$S9" />
+      <node id="8702897751523667569" at="40,0,41,0" concept="6" trace="Expression$D_" />
+      <node id="8702897751523667569" at="41,0,42,0" concept="6" trace="OriginalNodeInfo$gV" />
+      <node id="8702897751523667569" at="42,0,43,0" concept="6" trace="EnumLiteralRef$$8" />
+      <node id="8702897751523667569" at="46,0,47,0" concept="6" trace="literal$llO8" />
+      <node id="8702897751523667569" at="19,0,23,0" concept="3" trace="getSourceConcept#()Lorg/jetbrains/mps/openapi/language/SAbstractConcept;" />
+      <node id="8702897751523667569" at="23,0,27,0" concept="3" trace="getTargetConcept#()Lorg/jetbrains/mps/openapi/language/SAbstractConcept;" />
+      <node id="8702897751523667569" at="27,0,32,0" concept="3" trace="wrap#(Lorg/jetbrains/mps/openapi/model/SNode;)Lorg/jetbrains/mps/openapi/model/SNode;" />
+      <node id="8702897751523667582" at="32,0,37,0" concept="7" trace="createEnumLiteralRef_yowr44_a1a0d#(Lorg/jetbrains/mps/openapi/model/SNode;)Lorg/jetbrains/mps/openapi/model/SNode;" />
+      <scope id="8702897751523667569" at="20,46,21,35" />
+      <scope id="8702897751523667569" at="24,46,25,34" />
+      <scope id="8702897751523667571" at="28,39,30,261">
+        <var name="repository" id="8702897751523667573" />
+      </scope>
+      <scope id="8702897751523667582" at="32,68,35,26">
+        <var name="n0" id="8702897751523667582" />
+      </scope>
+      <scope id="8702897751523667569" at="19,0,23,0" />
+      <scope id="8702897751523667569" at="23,0,27,0" />
+      <scope id="8702897751523667569" at="27,0,32,0">
+        <var name="sourceNode" id="8702897751523667569" />
+      </scope>
+      <scope id="8702897751523667582" at="32,0,37,0">
+        <var name="p0" id="8702897751523667582" />
+      </scope>
+      <unit id="8702897751523667569" at="45,0,48,0" name="org.iets3.core.expr.toplevel.actions.ExpressionTopLevelPasting_PasteWrapper_3$LINKS" />
+      <unit id="8702897751523667569" at="38,0,44,0" name="org.iets3.core.expr.toplevel.actions.ExpressionTopLevelPasting_PasteWrapper_3$CONCEPTS" />
+      <unit id="8702897751523667569" at="18,0,49,0" name="org.iets3.core.expr.toplevel.actions.ExpressionTopLevelPasting_PasteWrapper_3" />
+    </file>
+  </root>
+  <root nodeRef="r:b0694f49-d8b2-4a83-94ca-c8feb9dd7011(org.iets3.core.expr.toplevel.actions)/8702897751516114654">
+    <file name="ExpressionTopLevelCopyPaste_CopyPreProcessor_0.java">
+      <node id="8702897751516114655" at="16,50,17,32" concept="5" />
+      <node id="8702897751516114662" at="20,58,21,245" concept="1" />
+      <node id="8702897751516114655" at="25,0,26,0" concept="6" trace="Function$iC" />
+      <node id="8702897751516114655" at="26,0,27,0" concept="6" trace="OriginalNodeInfo$gV" />
+      <node id="8702897751516114655" at="15,0,19,0" concept="3" trace="getApplicableConcept#()Lorg/jetbrains/mps/openapi/language/SAbstractConcept;" />
+      <node id="8702897751516114655" at="19,0,23,0" concept="3" trace="preProcessNode#(Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;)V" />
+      <scope id="8702897751516114655" at="16,50,17,32" />
+      <scope id="8702897751516114657" at="20,58,21,245" />
+      <scope id="8702897751516114655" at="15,0,19,0" />
+      <scope id="8702897751516114655" at="19,0,23,0">
+        <var name="copy" id="8702897751516114655" />
+        <var name="original" id="8702897751516114655" />
+      </scope>
+      <unit id="8702897751516114655" at="24,0,28,0" name="org.iets3.core.expr.toplevel.actions.ExpressionTopLevelCopyPaste_CopyPreProcessor_0$CONCEPTS" />
+      <unit id="8702897751516114655" at="14,0,29,0" name="org.iets3.core.expr.toplevel.actions.ExpressionTopLevelCopyPaste_CopyPreProcessor_0" />
+    </file>
+    <file name="ExpressionTopLevelCopyPaste_CopyPreProcessor_1.java">
+      <node id="8702897751523071713" at="16,50,17,32" concept="5" />
+      <node id="8702897751523071716" at="20,58,21,245" concept="1" />
+      <node id="8702897751523071713" at="25,0,26,0" concept="6" trace="Constant$5s" />
+      <node id="8702897751523071713" at="26,0,27,0" concept="6" trace="OriginalNodeInfo$gV" />
+      <node id="8702897751523071713" at="15,0,19,0" concept="3" trace="getApplicableConcept#()Lorg/jetbrains/mps/openapi/language/SAbstractConcept;" />
+      <node id="8702897751523071713" at="19,0,23,0" concept="3" trace="preProcessNode#(Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;)V" />
+      <scope id="8702897751523071713" at="16,50,17,32" />
+      <scope id="8702897751523071715" at="20,58,21,245" />
+      <scope id="8702897751523071713" at="15,0,19,0" />
+      <scope id="8702897751523071713" at="19,0,23,0">
+        <var name="copy" id="8702897751523071713" />
+        <var name="original" id="8702897751523071713" />
+      </scope>
+      <unit id="8702897751523071713" at="24,0,28,0" name="org.iets3.core.expr.toplevel.actions.ExpressionTopLevelCopyPaste_CopyPreProcessor_1$CONCEPTS" />
+      <unit id="8702897751523071713" at="14,0,29,0" name="org.iets3.core.expr.toplevel.actions.ExpressionTopLevelCopyPaste_CopyPreProcessor_1" />
+    </file>
+    <file name="ExpressionTopLevelCopyPaste_CopyPreProcessor_2.java">
+      <node id="8702897751523664448" at="16,50,17,35" concept="5" />
+      <node id="8702897751523664451" at="20,58,21,245" concept="1" />
+      <node id="8702897751523664448" at="25,0,26,0" concept="6" trace="EnumLiteral$S9" />
+      <node id="8702897751523664448" at="26,0,27,0" concept="6" trace="OriginalNodeInfo$gV" />
+      <node id="8702897751523664448" at="15,0,19,0" concept="3" trace="getApplicableConcept#()Lorg/jetbrains/mps/openapi/language/SAbstractConcept;" />
+      <node id="8702897751523664448" at="19,0,23,0" concept="3" trace="preProcessNode#(Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;)V" />
+      <scope id="8702897751523664448" at="16,50,17,35" />
+      <scope id="8702897751523664450" at="20,58,21,245" />
+      <scope id="8702897751523664448" at="15,0,19,0" />
+      <scope id="8702897751523664448" at="19,0,23,0">
+        <var name="copy" id="8702897751523664448" />
+        <var name="original" id="8702897751523664448" />
+      </scope>
+      <unit id="8702897751523664448" at="24,0,28,0" name="org.iets3.core.expr.toplevel.actions.ExpressionTopLevelCopyPaste_CopyPreProcessor_2$CONCEPTS" />
+      <unit id="8702897751523664448" at="14,0,29,0" name="org.iets3.core.expr.toplevel.actions.ExpressionTopLevelCopyPaste_CopyPreProcessor_2" />
+    </file>
+    <file name="ExpressionTopLevelCopyPaste_PastePostProcessor_0.java">
+      <node id="8702897751521732611" at="15,50,16,32" concept="5" />
+      <node id="8702897751521732617" at="19,49,20,117" concept="1" />
+      <node id="8702897751521732611" at="24,0,25,0" concept="6" trace="Function$iC" />
+      <node id="8702897751521732611" at="25,0,26,0" concept="6" trace="OriginalNodeInfo$gV" />
+      <node id="8702897751521732611" at="14,0,18,0" concept="3" trace="getApplicableConcept#()Lorg/jetbrains/mps/openapi/language/SAbstractConcept;" />
+      <node id="8702897751521732611" at="18,0,22,0" concept="3" trace="postProcessNode#(Lorg/jetbrains/mps/openapi/model/SNode;)V" />
+      <scope id="8702897751521732611" at="15,50,16,32" />
+      <scope id="8702897751521732613" at="19,49,20,117" />
+      <scope id="8702897751521732611" at="14,0,18,0" />
+      <scope id="8702897751521732611" at="18,0,22,0">
+        <var name="pastedNode" id="8702897751521732611" />
+      </scope>
+      <unit id="8702897751521732611" at="23,0,27,0" name="org.iets3.core.expr.toplevel.actions.ExpressionTopLevelCopyPaste_PastePostProcessor_0$CONCEPTS" />
+      <unit id="8702897751521732611" at="13,0,28,0" name="org.iets3.core.expr.toplevel.actions.ExpressionTopLevelCopyPaste_PastePostProcessor_0" />
+    </file>
+    <file name="ExpressionTopLevelCopyPaste_PastePostProcessor_1.java">
+      <node id="8702897751523071077" at="15,50,16,32" concept="5" />
+      <node id="8702897751523071082" at="19,49,20,117" concept="1" />
+      <node id="8702897751523071077" at="24,0,25,0" concept="6" trace="Constant$5s" />
+      <node id="8702897751523071077" at="25,0,26,0" concept="6" trace="OriginalNodeInfo$gV" />
+      <node id="8702897751523071077" at="14,0,18,0" concept="3" trace="getApplicableConcept#()Lorg/jetbrains/mps/openapi/language/SAbstractConcept;" />
+      <node id="8702897751523071077" at="18,0,22,0" concept="3" trace="postProcessNode#(Lorg/jetbrains/mps/openapi/model/SNode;)V" />
+      <scope id="8702897751523071077" at="15,50,16,32" />
+      <scope id="8702897751523071079" at="19,49,20,117" />
+      <scope id="8702897751523071077" at="14,0,18,0" />
+      <scope id="8702897751523071077" at="18,0,22,0">
+        <var name="pastedNode" id="8702897751523071077" />
+      </scope>
+      <unit id="8702897751523071077" at="23,0,27,0" name="org.iets3.core.expr.toplevel.actions.ExpressionTopLevelCopyPaste_PastePostProcessor_1$CONCEPTS" />
+      <unit id="8702897751523071077" at="13,0,28,0" name="org.iets3.core.expr.toplevel.actions.ExpressionTopLevelCopyPaste_PastePostProcessor_1" />
+    </file>
+    <file name="ExpressionTopLevelCopyPaste_PastePostProcessor_2.java">
+      <node id="8702897751523663575" at="15,50,16,35" concept="5" />
+      <node id="8702897751523663578" at="19,49,20,117" concept="1" />
+      <node id="8702897751523663575" at="24,0,25,0" concept="6" trace="EnumLiteral$S9" />
+      <node id="8702897751523663575" at="25,0,26,0" concept="6" trace="OriginalNodeInfo$gV" />
+      <node id="8702897751523663575" at="14,0,18,0" concept="3" trace="getApplicableConcept#()Lorg/jetbrains/mps/openapi/language/SAbstractConcept;" />
+      <node id="8702897751523663575" at="18,0,22,0" concept="3" trace="postProcessNode#(Lorg/jetbrains/mps/openapi/model/SNode;)V" />
+      <scope id="8702897751523663575" at="15,50,16,35" />
+      <scope id="8702897751523663577" at="19,49,20,117" />
+      <scope id="8702897751523663575" at="14,0,18,0" />
+      <scope id="8702897751523663575" at="18,0,22,0">
+        <var name="pastedNode" id="8702897751523663575" />
+      </scope>
+      <unit id="8702897751523663575" at="23,0,27,0" name="org.iets3.core.expr.toplevel.actions.ExpressionTopLevelCopyPaste_PastePostProcessor_2$CONCEPTS" />
+      <unit id="8702897751523663575" at="13,0,28,0" name="org.iets3.core.expr.toplevel.actions.ExpressionTopLevelCopyPaste_PastePostProcessor_2" />
+    </file>
+  </root>
+</debug-info>
+

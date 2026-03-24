@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<debug-info version="2">
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1082485599095:jetbrains.mps.baseLanguage.structure.BlockStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123140:jetbrains.mps.baseLanguage.structure.ConstructorDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123155:jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068390468200:jetbrains.mps.baseLanguage.structure.FieldDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1144226303539:jetbrains.mps.baseLanguage.structure.ForeachStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123159:jetbrains.mps.baseLanguage.structure.IfStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123165:jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242864:jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242878:jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/6329021646629104954:jetbrains.mps.baseLanguage.structure.SingleLineComment" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123157:jetbrains.mps.baseLanguage.structure.Statement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1070462154015:jetbrains.mps.baseLanguage.structure.StaticFieldDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1070475587102:jetbrains.mps.baseLanguage.structure.SuperConstructorInvocation" />
+  <root nodeRef="r:d0f35d8c-7232-4f92-a41a-f9c8dccad262(org.iets3.contextfilter.plugin.plugin)/2214704943411059972">
+    <file name="ContextFilterKeymap_KeymapChanges.java">
+      <node id="2214704943411059974" at="8,46,9,97" concept="2" />
+      <node id="2214704943411059972" at="12,29,13,22" concept="8" />
+      <node id="2214704943411059972" at="8,0,11,0" concept="1" trace="ContextFilterKeymap_KeymapChanges#()V" />
+      <node id="2214704943411059972" at="11,0,15,0" concept="6" trace="getScheme#()Ljava/lang/String;" />
+      <scope id="2214704943411059972" at="8,46,9,97" />
+      <scope id="2214704943411059972" at="12,29,13,22" />
+      <scope id="2214704943411059972" at="8,0,11,0" />
+      <scope id="2214704943411059972" at="11,0,15,0" />
+      <unit id="2214704943411059972" at="7,0,17,0" name="org.iets3.contextfilter.plugin.plugin.ContextFilterKeymap_KeymapChanges" />
+    </file>
+    <file name="Plugin_ApplicationPlugin.java">
+      <node id="2214704943411059972" at="34,92,35,83" concept="2" />
+    </file>
+  </root>
+  <root nodeRef="r:d0f35d8c-7232-4f92-a41a-f9c8dccad262(org.iets3.contextfilter.plugin.plugin)/2214704943411059980">
+    <file name="GoToDeclarationWithContext_Action.java">
+      <node id="2214704943411059980" at="29,0,30,0" concept="11" trace="ICON" />
+      <node id="2214704943411059980" at="31,46,32,53" concept="12" />
+      <node id="2214704943411059980" at="32,53,33,35" concept="2" />
+      <node id="2214704943411059980" at="33,35,34,57" concept="2" />
+      <node id="2214704943411059980" at="37,32,38,16" concept="8" />
+      <node id="2214704943411075157" at="41,87,42,113" concept="7" />
+      <node id="2214704943411079911" at="43,26,44,19" concept="8" />
+      <node id="2214704943411080317" at="45,5,46,0" concept="10" />
+      <node id="2214704943411086905" at="47,88,48,18" concept="8" />
+      <node id="2214704943411140787" at="50,210,51,18" concept="8" />
+      <node id="2214704943411088221" at="52,5,53,17" concept="8" />
+      <node id="2214704943411059980" at="56,89,57,85" concept="2" />
+      <node id="2214704943411059980" at="61,53,62,19" concept="8" />
+      <node id="2214704943411074524" at="64,5,65,66" concept="7" />
+      <node id="2214704943411074524" at="65,66,66,50" concept="2" />
+      <node id="2214704943411074525" at="67,22,68,21" concept="8" />
+      <node id="2214704943411074608" at="71,5,72,66" concept="7" />
+      <node id="2214704943411074608" at="72,66,73,53" concept="2" />
+      <node id="2214704943411074609" at="74,22,75,21" concept="8" />
+      <node id="2214704943411059980" at="77,5,78,16" concept="8" />
+      <node id="2214704943411142623" at="81,96,82,113" concept="7" />
+      <node id="2214704943411144237" at="82,113,83,84" concept="7" />
+      <node id="2214704943411192124" at="84,26,85,109" concept="7" />
+      <node id="2214704943411200849" at="86,29,87,118" concept="7" />
+      <node id="308517289741141537" at="87,118,88,0" concept="10" />
+      <node id="308517289741139500" at="88,0,89,71" concept="9" />
+      <node id="2214704943411205931" at="90,107,91,107" concept="2" />
+      <node id="308517289741141115" at="92,9,93,0" concept="10" />
+      <node id="308517289741140408" at="93,0,94,106" concept="9" />
+      <node id="308517289739344759" at="95,31,96,108" concept="2" />
+      <node id="2214704943411208019" at="98,7,99,161" concept="2" />
+      <node id="2214704943411174955" at="102,122,103,17" concept="8" />
+      <node id="2214704943411182516" at="105,7,106,48" concept="9" />
+      <node id="2214704943411059980" at="111,0,112,0" concept="11" trace="IContextFilterOwner$ly" />
+      <node id="2214704943411059980" at="112,0,113,0" concept="11" trace="ContextFilterFrame$9u" />
+      <node id="2214704943411078711" at="42,113,45,5" concept="5" />
+      <node id="2214704943411080761" at="46,0,49,5" concept="5" />
+      <node id="2214704943411122523" at="49,5,52,5" concept="5" />
+      <node id="2214704943411059980" at="60,95,63,5" concept="5" />
+      <node id="2214704943411074525" at="66,50,69,7" concept="5" />
+      <node id="2214704943411074609" at="73,53,76,7" concept="5" />
+      <node id="308517289739334366" at="89,71,92,9" concept="5" />
+      <node id="308517289739336556" at="94,106,97,9" concept="5" />
+      <node id="2214704943411172377" at="101,102,104,9" concept="5" />
+      <node id="2214704943411059980" at="36,0,40,0" concept="6" trace="isDumbAware#()Z" />
+      <node id="2214704943411059980" at="55,0,59,0" concept="6" trace="doUpdate#(Lcom/intellij/openapi/actionSystem/AnActionEvent;Ljava/util/Map;)V" />
+      <node id="2214704943411059980" at="31,0,36,0" concept="1" trace="GoToDeclarationWithContext_Action#()V" />
+      <node id="2214704943411177155" at="100,12,105,7" concept="4" />
+      <node id="2214704943411074524" at="63,5,70,5" concept="0" />
+      <node id="2214704943411074608" at="70,5,77,5" concept="0" />
+      <node id="2214704943411150503" at="100,10,107,5" concept="0" />
+      <node id="2214704943411193812" at="85,109,98,7" concept="5" />
+      <node id="2214704943411059980" at="40,0,55,0" concept="6" trace="isApplicable#(Lcom/intellij/openapi/actionSystem/AnActionEvent;Ljava/util/Map;)Z" />
+      <node id="2214704943411059980" at="59,0,80,0" concept="6" trace="collectActionData#(Lcom/intellij/openapi/actionSystem/AnActionEvent;Ljava/util/Map;)Z" />
+      <node id="2214704943411149020" at="83,84,107,5" concept="5" />
+      <node id="2214704943411059980" at="80,0,109,0" concept="6" trace="doExecute#(Lcom/intellij/openapi/actionSystem/AnActionEvent;Ljava/util/Map;)V" />
+      <scope id="2214704943411059980" at="37,32,38,16" />
+      <scope id="2214704943411078713" at="43,26,44,19" />
+      <scope id="2214704943411080763" at="47,88,48,18" />
+      <scope id="2214704943411122525" at="50,210,51,18" />
+      <scope id="2214704943411059980" at="56,89,57,85" />
+      <scope id="2214704943411059980" at="61,53,62,19" />
+      <scope id="2214704943411074525" at="67,22,68,21" />
+      <scope id="2214704943411074609" at="74,22,75,21" />
+      <scope id="308517289739334368" at="90,107,91,107" />
+      <scope id="308517289739336558" at="95,31,96,108" />
+      <scope id="2214704943411172379" at="102,122,103,17" />
+      <scope id="2214704943411059980" at="31,46,34,57" />
+      <scope id="2214704943411177161" at="101,102,104,9" />
+      <scope id="2214704943411059980" at="36,0,40,0" />
+      <scope id="2214704943411059980" at="55,0,59,0">
+        <var name="_params" id="2214704943411059980" />
+        <var name="event" id="2214704943411059980" />
+      </scope>
+      <scope id="2214704943411059980" at="31,0,36,0" />
+      <scope id="2214704943411074524" at="64,5,69,7">
+        <var name="p" id="2214704943411074524" />
+      </scope>
+      <scope id="2214704943411074608" at="71,5,76,7">
+        <var name="p" id="2214704943411074608" />
+      </scope>
+      <scope id="2214704943411177155" at="100,12,105,7">
+        <var name="anc" id="2214704943411177157" />
+      </scope>
+      <scope id="2214704943411150504" at="100,12,106,48" />
+      <scope id="2214704943411193814" at="86,29,97,9">
+        <var name="source" id="2214704943411200852" />
+      </scope>
+      <scope id="2214704943411074624" at="41,87,53,17">
+        <var name="wrtNode" id="2214704943411075160" />
+      </scope>
+      <scope id="2214704943411059980" at="40,0,55,0">
+        <var name="_params" id="2214704943411059980" />
+        <var name="event" id="2214704943411059980" />
+      </scope>
+      <scope id="2214704943411149022" at="84,26,99,161">
+        <var name="target" id="2214704943411192127" />
+      </scope>
+      <scope id="2214704943411059980" at="60,95,78,16" />
+      <scope id="2214704943411059980" at="59,0,80,0">
+        <var name="_params" id="2214704943411059980" />
+        <var name="event" id="2214704943411059980" />
+      </scope>
+      <scope id="2214704943411059980" at="81,96,107,5">
+        <var name="node" id="2214704943411144238" />
+        <var name="wrtNode" id="2214704943411142624" />
+      </scope>
+      <scope id="2214704943411059980" at="80,0,109,0">
+        <var name="_params" id="2214704943411059980" />
+        <var name="event" id="2214704943411059980" />
+      </scope>
+      <unit id="2214704943411059980" at="110,0,114,0" name="org.iets3.contextfilter.plugin.plugin.GoToDeclarationWithContext_Action$CONCEPTS" />
+      <unit id="2214704943411059980" at="28,0,115,0" name="org.iets3.contextfilter.plugin.plugin.GoToDeclarationWithContext_Action" />
+    </file>
+    <file name="Plugin_ApplicationPlugin.java">
+      <node id="2214704943411059980" at="25,29,26,55" concept="2" />
+    </file>
+  </root>
+  <root nodeRef="r:d0f35d8c-7232-4f92-a41a-f9c8dccad262(org.iets3.contextfilter.plugin.plugin)/2214704943411059997">
+    <file name="Plugin_ApplicationPlugin.java">
+      <node id="2214704943411059997" at="14,0,15,0" concept="3" trace="myId" />
+      <node id="2214704943411059997" at="20,27,21,16" concept="8" />
+      <node id="2214704943411059997" at="24,30,25,29" concept="9" />
+      <node id="2214704943411059997" at="26,55,27,13" concept="9" />
+      <node id="2214704943411059997" at="33,48,34,92" concept="7" />
+      <node id="2214704943411059997" at="37,70,38,15" concept="8" />
+      <node id="2214704943411059997" at="16,0,18,0" concept="1" trace="Plugin_ApplicationPlugin#()V" />
+      <node id="2214704943411059997" at="30,0,33,0" concept="6" trace="adjustRegularGroups#()V" />
+      <node id="2214704943411059997" at="19,0,23,0" concept="6" trace="getId#()Lcom/intellij/openapi/extensions/PluginId;" />
+      <node id="2214704943411059997" at="24,0,30,0" concept="6" trace="createGroups#()V" />
+      <node id="2214704943411059997" at="33,0,40,0" concept="6" trace="initKeymaps#()Ljava/util/List;" />
+      <scope id="2214704943411059997" at="16,37,16,37" />
+      <scope id="2214704943411059997" at="20,27,21,16" />
+      <scope id="2214704943411059997" at="30,37,31,104" />
+      <scope id="2214704943411059997" at="16,0,18,0" />
+      <scope id="2214704943411059997" at="30,0,33,0" />
+      <scope id="2214704943411059997" at="19,0,23,0" />
+      <scope id="2214704943411059997" at="24,30,28,60" />
+      <scope id="2214704943411059997" at="33,48,38,15">
+        <var name="res" id="2214704943411059997" />
+      </scope>
+      <scope id="2214704943411059997" at="24,0,30,0" />
+      <scope id="2214704943411059997" at="33,0,40,0" />
+      <unit id="2214704943411059997" at="13,0,41,0" name="org.iets3.contextfilter.plugin.plugin.Plugin_ApplicationPlugin" />
+    </file>
+  </root>
+  <root nodeRef="r:d0f35d8c-7232-4f92-a41a-f9c8dccad262(org.iets3.contextfilter.plugin.plugin)/2214704943411059998">
+    <file name="MacOSX_KeymapChanges.java">
+      <node id="2214704943411060000" at="8,33,9,101" concept="2" />
+      <node id="2214704943411059998" at="12,29,13,22" concept="8" />
+      <node id="2214704943411059998" at="8,0,11,0" concept="1" trace="MacOSX_KeymapChanges#()V" />
+      <node id="2214704943411059998" at="11,0,15,0" concept="6" trace="getScheme#()Ljava/lang/String;" />
+      <scope id="2214704943411059998" at="8,33,9,101" />
+      <scope id="2214704943411059998" at="12,29,13,22" />
+      <scope id="2214704943411059998" at="8,0,11,0" />
+      <scope id="2214704943411059998" at="11,0,15,0" />
+      <unit id="2214704943411059998" at="7,0,17,0" name="org.iets3.contextfilter.plugin.plugin.MacOSX_KeymapChanges" />
+    </file>
+    <file name="Plugin_ApplicationPlugin.java">
+      <node id="2214704943411059998" at="36,73,37,70" concept="2" />
+    </file>
+  </root>
+  <root nodeRef="r:d0f35d8c-7232-4f92-a41a-f9c8dccad262(org.iets3.contextfilter.plugin.plugin)/2214704943411060020">
+    <file name="MacOSX105_KeymapChanges.java">
+      <node id="2214704943411060022" at="8,36,9,101" concept="2" />
+      <node id="2214704943411060020" at="12,29,13,28" concept="8" />
+      <node id="2214704943411060020" at="8,0,11,0" concept="1" trace="MacOSX105_KeymapChanges#()V" />
+      <node id="2214704943411060020" at="11,0,15,0" concept="6" trace="getScheme#()Ljava/lang/String;" />
+      <scope id="2214704943411060020" at="8,36,9,101" />
+      <scope id="2214704943411060020" at="12,29,13,28" />
+      <scope id="2214704943411060020" at="8,0,11,0" />
+      <scope id="2214704943411060020" at="11,0,15,0" />
+      <unit id="2214704943411060020" at="7,0,17,0" name="org.iets3.contextfilter.plugin.plugin.MacOSX105_KeymapChanges" />
+    </file>
+    <file name="Plugin_ApplicationPlugin.java">
+      <node id="2214704943411060020" at="35,83,36,73" concept="2" />
+    </file>
+  </root>
+  <root nodeRef="r:d0f35d8c-7232-4f92-a41a-f9c8dccad262(org.iets3.contextfilter.plugin.plugin)/2214704943411060032">
+    <file name="GoToEditorPopupAddition_ActionGroup.java">
+      <node id="2214704943411060032" at="10,0,11,0" concept="11" trace="ID" />
+      <node id="2214704943411060032" at="12,81,13,36" concept="12" />
+      <node id="2214704943411060032" at="13,36,14,25" concept="2" />
+      <node id="2214704943411060032" at="14,25,15,20" concept="2" />
+      <node id="2214704943411060032" at="15,20,16,29" concept="2" />
+      <node id="2214704943411060046" at="16,29,17,130" concept="2" />
+      <node id="2214704943411060032" at="12,0,19,0" concept="1" trace="GoToEditorPopupAddition_ActionGroup#(Ljetbrains/mps/workbench/action/ApplicationPlugin;)V" />
+      <scope id="2214704943411060032" at="12,81,17,130" />
+      <scope id="2214704943411060032" at="12,0,19,0">
+        <var name="plugin" id="2214704943411060032" />
+      </scope>
+      <unit id="2214704943411060032" at="9,0,20,0" name="org.iets3.contextfilter.plugin.plugin.GoToEditorPopupAddition_ActionGroup" />
+    </file>
+    <file name="Plugin_ApplicationPlugin.java">
+      <node id="2214704943411060032" at="27,13,28,60" concept="2" />
+      <node id="6968469986829386729" at="30,37,31,104" concept="2" />
+    </file>
+  </root>
+</debug-info>
+

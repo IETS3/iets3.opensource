@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<product version="3" modelHash="-c437ae9rpwqwpn30d9fw7ftzqarv9zy">
+  <files names="TypesystemDescriptor.java:check_AbstractTransition_NonTypesystemRule.java:check_Action_NonTypesystemRule.java:check_AutomaticTransition_NonTypesystemRule.java:check_State_NonTypesystemRule.java:typeof_EventArgRef_InferenceRule.java:typeof_Guard_InferenceRule.java:typeof_IsInStateTarget_InferenceRule.java:typeof_ParamRef_InferenceRule.java:typeof_PokeTarget_InferenceRule.java:typeof_QueryTarget_InferenceRule.java:typeof_StartExpr_InferenceRule.java:typeof_StatemachineQuery_InferenceRule.java:typeof_StatemachineVar_InferenceRule.java:typeof_TimeInStateExpr_InferenceRule.java:typeof_TimeSinceLastTriggeredTransition_InferenceRule.java:typeof_TriggerTarget_InferenceRule.java:typeof_VarRef_InferenceRule.java:typeof_VariableTarget_InferenceRule.java" />
+</product>
+

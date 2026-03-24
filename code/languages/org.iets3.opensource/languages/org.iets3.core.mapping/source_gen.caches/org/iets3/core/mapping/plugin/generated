@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<product version="3" modelHash="-euo76macl9a5m6xuw72l880xvnng8dx">
+  <files names="AbstractTreeNode.java:AbstractTreeRoot.java:ComponentInstanceTree.java:FunctionalComponentsTree.java:FunctionalTreeRoot.java:HardwareComponentsTree.java:HardwareTreeRoot.java:InstanceTreeRoot.java:MappingContainerTreeRoot.java:Tree.java:TreeNode.java" />
+</product>
+

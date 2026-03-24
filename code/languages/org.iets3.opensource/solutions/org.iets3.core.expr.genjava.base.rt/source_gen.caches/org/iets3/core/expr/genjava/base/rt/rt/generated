@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<product version="3" modelHash="-cdpnkp2p7trr1fv5dzyht6ejx736dsz">
+  <files names="AH.java:AlternativesException.java:ContractViolatedException.java:FailException.java:GlobalContext.java:KernelFErrorException.java:MessageLog.java:NoopMessageLog.java:ParameterSetWrapper.java:ValidValue.java" />
+</product>
+

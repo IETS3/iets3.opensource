@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<product version="3" modelHash="8uaoztfxynrto294ebhteoq4lgaa47l">
+  <files names="TypesystemDescriptor.java:typeof_CoercionIt_InferenceRule.java:typeof_GroupTarget_InferenceRule.java:typeof_MessageArgRef_InferenceRule.java:typeof_MessageArg_InferenceRule.java:typeof_MessageNamespaceRef_InferenceRule.java:typeof_MessageTarget_InferenceRule.java:typeof_MessageValueDataOp_InferenceRule.java:typeof_MessageValueLocationOp_InferenceRule.java:typeof_MessageValueTextOp_InferenceRule.java:typeof_Message_InferenceRule.java:typeof_TypeCoercion_InferenceRule.java" />
+</product>
+

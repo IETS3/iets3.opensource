@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<debug-info version="2">
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123155:jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1144226303539:jetbrains.mps.baseLanguage.structure.ForeachStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123159:jetbrains.mps.baseLanguage.structure.IfStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123165:jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242864:jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242878:jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1070462154015:jetbrains.mps.baseLanguage.structure.StaticFieldDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1081236700938:jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" />
+  <root>
+    <file name="ActionAspectDescriptorImpl.java">
+      <unit at="12,0,28,0" name="org.iets3.core.expr.temporal.actions.ActionAspectDescriptorImpl" />
+    </file>
+  </root>
+  <root nodeRef="r:c7b29119-18ca-4a69-a39f-e159f8c2ea62(org.iets3.core.expr.temporal.actions)/6138119342544975072">
+    <file name="init_in_none_temporal_context.java">
+      <node id="6138119342545012553" at="21,165,22,39" concept="4" />
+      <node id="6138119342545024017" at="22,39,23,117" concept="0" />
+      <node id="6138119342545041067" at="27,73,28,49" concept="5" />
+      <node id="6138119342544975072" at="33,0,34,0" concept="6" trace="IProvideTemporalContext$Xq" />
+      <node id="6138119342545041067" at="27,0,30,0" concept="7" trace="as_dzal2v_a2a1a0a0a0a#(Ljava/lang/Object;Ljava/lang/Class;)null" />
+      <node id="6138119342545003617" at="20,119,24,9" concept="1" />
+      <node id="6138119342544975171" at="19,102,25,7" concept="2" />
+      <node id="6138119342544975157" at="19,0,27,0" concept="3" trace="setup#(Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;ILorg/jetbrains/mps/openapi/model/SModel;)V" />
+      <scope id="6138119342545041067" at="27,73,28,49" />
+      <scope id="6138119342545003620" at="21,165,23,117">
+        <var name="link" id="6138119342545012554" />
+      </scope>
+      <scope id="6138119342545041067" at="27,0,30,0">
+        <var name="o" id="6138119342545041067" />
+        <var name="type" id="6138119342545041067" />
+      </scope>
+      <scope id="6138119342544975173" at="20,119,24,9" />
+      <scope id="6138119342545003617" at="20,119,24,9">
+        <var name="part" id="6138119342545003618" />
+      </scope>
+      <scope id="6138119342544975157" at="19,102,25,7" />
+      <scope id="6138119342544975157" at="19,0,27,0">
+        <var name="enclosingNode" id="6138119342544975157" />
+        <var name="index" id="6138119342544975157" />
+        <var name="model" id="6138119342544975157" />
+        <var name="newNode" id="6138119342544975157" />
+        <var name="sampleNode" id="6138119342544975157" />
+      </scope>
+      <unit id="6138119342544975072" at="32,0,35,0" name="org.iets3.core.expr.temporal.actions.init_in_none_temporal_context$CONCEPTS" />
+      <unit id="6138119342544975157" at="18,0,31,0" name="org.iets3.core.expr.temporal.actions.init_in_none_temporal_context$NodeFactory_6138119342544975157" />
+      <unit id="6138119342544975072" at="17,0,36,0" name="org.iets3.core.expr.temporal.actions.init_in_none_temporal_context" />
+    </file>
+  </root>
+</debug-info>
+

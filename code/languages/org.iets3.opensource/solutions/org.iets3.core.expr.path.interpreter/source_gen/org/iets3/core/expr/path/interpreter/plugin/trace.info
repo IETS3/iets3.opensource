@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<debug-info version="2">
+  <concept fqn="c:c7d5b9dd-a05f-4be2-bc73-f2e16994cc67/3751132065236767060:jetbrains.mps.baseLanguage.lightweightdsl.structure.MethodInstance" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1082485599095:jetbrains.mps.baseLanguage.structure.BlockStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123140:jetbrains.mps.baseLanguage.structure.ConstructorDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123155:jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123159:jetbrains.mps.baseLanguage.structure.IfStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123165:jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242864:jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242878:jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123157:jetbrains.mps.baseLanguage.structure.Statement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1070462154015:jetbrains.mps.baseLanguage.structure.StaticFieldDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1070475587102:jetbrains.mps.baseLanguage.structure.SuperConstructorInvocation" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1164991038168:jetbrains.mps.baseLanguage.structure.ThrowStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/5351203823916750322:jetbrains.mps.baseLanguage.structure.TryUniversalStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1076505808687:jetbrains.mps.baseLanguage.structure.WhileStatement" />
+  <root>
+    <file name="ExtensionDescriptor.java">
+      <unit at="8,0,13,0" name="org.iets3.core.expr.path.interpreter.plugin.ExtensionDescriptor" />
+    </file>
+  </root>
+  <root nodeRef="r:2e472b3c-7ae8-4bc6-9b99-e3ae831d74bf(org.iets3.core.expr.path.interpreter.plugin)/3182453369942597744">
+    <file name="ExprPathInterpreterPCollections_extension.java">
+      <node id="3182453369942597744" at="10,54,11,70" concept="10" />
+      <node id="3182453369942597744" at="14,26,15,55" concept="3" />
+      <node id="3182453369942597744" at="17,28,18,55" concept="3" />
+      <node id="3182453369942597744" at="21,29,22,60" concept="7" />
+      <node id="3182453369942597744" at="10,0,13,0" concept="2" trace="ExprPathInterpreterPCollections_extension#()V" />
+      <node id="3182453369942597744" at="14,0,17,0" concept="0" trace="activate#()V" />
+      <node id="3182453369942597744" at="17,0,20,0" concept="0" trace="deactivate#()V" />
+      <node id="3182453369942597744" at="21,0,24,0" concept="0" trace="get#()Lcom/mbeddr/mpsutil/interpreter/rt/IInterpreter;" />
+      <scope id="3182453369942597744" at="10,54,11,70" />
+      <scope id="3182453369942597744" at="14,26,15,55" />
+      <scope id="3182453369942597744" at="17,28,18,55" />
+      <scope id="3182453369942597744" at="21,29,22,60" />
+      <scope id="3182453369942597744" at="10,0,13,0" />
+      <scope id="3182453369942597744" at="14,0,17,0" />
+      <scope id="3182453369942597744" at="17,0,20,0" />
+      <scope id="3182453369942597744" at="21,0,24,0" />
+      <unit id="3182453369942597744" at="9,0,25,0" name="org.iets3.core.expr.path.interpreter.plugin.ExprPathInterpreterPCollections_extension" />
+    </file>
+    <file name="InterpreterExprPathInterpreterPCollections.java">
+      <node id="3182453369942597744" at="35,55,36,11" concept="3" />
+      <node id="3182453369942597744" at="40,31,41,24" concept="7" />
+      <node id="3182453369942597745" at="47,13,48,42" concept="3" />
+      <node id="3182453369942597745" at="48,42,49,48" concept="3" />
+      <node id="3182453369942597745" at="49,48,50,68" concept="3" />
+      <node id="1307222191624947316" at="50,68,51,97" concept="3" />
+      <node id="3182453369942597749" at="51,97,52,102" concept="6" />
+      <node id="3182453369942597761" at="52,102,53,95" concept="6" />
+      <node id="1307222191624950390" at="54,57,55,77" concept="3" />
+      <node id="3182453369942597771" at="55,77,56,67" concept="6" />
+      <node id="6400069481671766776" at="56,67,57,102" concept="6" />
+      <node id="6400069481671761696" at="57,102,58,92" concept="3" />
+      <node id="3182453369942597778" at="58,92,59,26" concept="7" />
+      <node id="1307222191624952237" at="61,56,62,79" concept="3" />
+      <node id="3182453369942597796" at="63,54,64,61" concept="6" />
+      <node id="3182453369942597805" at="64,61,65,43" concept="6" />
+      <node id="3182453369943488711" at="65,43,66,55" concept="6" />
+      <node id="3182453369943494354" at="67,36,68,37" concept="6" />
+      <node id="3182453369943502470" at="69,43,70,49" concept="6" />
+      <node id="3182453369943506958" at="70,49,71,61" concept="6" />
+      <node id="3182453369943512935" at="72,41,73,46" concept="6" />
+      <node id="3182453369942597820" at="73,46,74,122" concept="6" />
+      <node id="3182453369943515774" at="75,36,76,40" concept="3" />
+      <node id="3182453369942597852" at="79,24,80,116" concept="6" />
+      <node id="3182453369943497148" at="82,52,83,40" concept="3" />
+      <node id="3182453369943494741" at="86,17,87,0" concept="8" />
+      <node id="3182453369942597875" at="88,15,89,25" concept="7" />
+      <node id="3182453369942597884" at="91,11,92,55" concept="7" />
+      <node id="3182453369942597745" at="93,47,94,30" concept="7" />
+      <node id="3182453369942597745" at="95,49,96,19" concept="11" />
+      <node id="3182453369942597745" at="97,39,98,82" concept="11" />
+      <node id="3182453369942597745" at="101,38,102,263" concept="7" />
+      <node id="3182453369942597745" at="106,32,107,29" concept="7" />
+      <node id="3182453369942597745" at="111,42,112,20" concept="7" />
+      <node id="3182453369942597744" at="127,0,128,0" concept="9" trace="PathElement$sr" />
+      <node id="3182453369942597744" at="131,0,132,0" concept="9" trace="member$d1yc" />
+      <node id="3182453369942597744" at="118,0,120,0" concept="5" trace="populateTypeMappers#(Ljava/util/List;)V" />
+      <node id="3182453369942597744" at="123,0,125,0" concept="5" trace="populateRelationships#(Ljava/util/List;)V" />
+      <node id="3182453369942597744" at="35,0,38,0" concept="2" trace="InterpreterExprPathInterpreterPCollections#()V" />
+      <node id="3182453369942597832" at="74,122,77,21" concept="4" />
+      <node id="8721870733845644606" at="81,34,84,21" concept="4" />
+      <node id="3182453369942597745" at="101,0,104,0" concept="5" trace="getInfo#()Lcom/mbeddr/mpsutil/interpreter/rt/EvaluatorInfo;" />
+      <node id="3182453369942597744" at="39,0,43,0" concept="5" trace="getCategory#()Ljava/lang/String;" />
+      <node id="3182453369942597745" at="105,0,109,0" concept="5" trace="toString#()Ljava/lang/String;" />
+      <node id="3182453369942597745" at="110,0,114,0" concept="5" trace="canLookupBeCached#()Z" />
+      <node id="3182453369942597864" at="80,116,85,19" concept="4" />
+      <node id="3182453369942597767" at="53,95,60,11" concept="4" />
+      <node id="3182453369943509175" at="71,61,78,19" concept="13" />
+      <node id="3182453369942597850" at="79,22,86,17" concept="1" />
+      <node id="3182453369942597815" at="68,37,86,17" concept="4" />
+      <node id="3182453369943492340" at="66,55,88,15" concept="13" />
+      <node id="3182453369942597794" at="62,79,90,13" concept="4" />
+      <node id="3182453369942597792" at="60,11,91,11" concept="4" />
+      <node id="3182453369942597745" at="46,121,99,9" concept="12" />
+      <node id="3182453369942597745" at="46,0,101,0" concept="5" trace="evaluateEvaluator#(Lorg/jetbrains/mps/openapi/model/SNode;Lcom/mbeddr/mpsutil/interpreter/rt/IContext;Lcom/mbeddr/mpsutil/interpreter/rt/ICoverageAnalyzer;Lcom/mbeddr/mpsutil/interpreter/rt/ComputationTrace;)Ljava/lang/Object;" />
+      <node id="3182453369942597745" at="44,76,114,7" concept="3" />
+      <node id="3182453369942597744" at="44,0,116,0" concept="5" trace="populateEvaluators#(Ljava/util/List;)V" />
+      <scope id="3182453369942597744" at="118,79,118,79" />
+      <scope id="3182453369942597744" at="123,85,123,85" />
+      <scope id="3182453369942597744" at="35,55,36,11" />
+      <scope id="3182453369942597744" at="40,31,41,24" />
+      <scope id="3182453369942597833" at="75,36,76,40" />
+      <scope id="8721870733845644608" at="82,52,83,40" />
+      <scope id="3182453369942597745" at="93,47,94,30" />
+      <scope id="3182453369942597745" at="95,49,96,19" />
+      <scope id="3182453369942597745" at="97,39,98,82" />
+      <scope id="3182453369942597745" at="101,38,102,263" />
+      <scope id="3182453369942597745" at="106,32,107,29" />
+      <scope id="3182453369942597745" at="111,42,112,20" />
+      <scope id="3182453369942597745" at="93,9,95,9">
+        <var name="stop" id="3182453369942597745" />
+      </scope>
+      <scope id="3182453369942597745" at="95,9,97,9">
+        <var name="ex" id="3182453369942597745" />
+      </scope>
+      <scope id="3182453369942597745" at="97,9,99,9">
+        <var name="ex" id="3182453369942597745" />
+      </scope>
+      <scope id="3182453369942597744" at="118,0,120,0">
+        <var name="typeMappers" id="3182453369942597744" />
+      </scope>
+      <scope id="3182453369942597744" at="123,0,125,0">
+        <var name="relationships" id="3182453369942597744" />
+      </scope>
+      <scope id="3182453369942597744" at="35,0,38,0" />
+      <scope id="3182453369942597865" at="81,34,84,21" />
+      <scope id="3182453369942597745" at="101,0,104,0" />
+      <scope id="3182453369942597744" at="39,0,43,0" />
+      <scope id="3182453369942597745" at="105,0,109,0" />
+      <scope id="3182453369942597745" at="110,0,114,0" />
+      <scope id="3182453369942597768" at="54,57,59,26">
+        <var name="enVal" id="3182453369942597772" />
+        <var name="result" id="6400069481671766777" />
+      </scope>
+      <scope id="3182453369943509177" at="72,41,77,21">
+        <var name="inner" id="3182453369943512936" />
+        <var name="v" id="3182453369942597821" />
+      </scope>
+      <scope id="3182453369942597851" at="79,24,85,19">
+        <var name="v" id="3182453369942597853" />
+      </scope>
+      <scope id="3182453369942597816" at="69,43,78,19">
+        <var name="iit" id="3182453369943506959" />
+        <var name="innerVec" id="3182453369943502471" />
+      </scope>
+      <scope id="3182453369943492342" at="67,36,87,0">
+        <var name="e" id="3182453369943494355" />
+      </scope>
+      <scope id="3182453369942597795" at="63,54,89,25">
+        <var name="ctxList" id="3182453369942597797" />
+        <var name="it" id="3182453369943488712" />
+        <var name="res" id="3182453369942597806" />
+      </scope>
+      <scope id="3182453369942597793" at="61,56,90,13" />
+      <scope id="3182453369942597745" at="47,13,92,55">
+        <var name="ctxExpr" id="3182453369942597750" />
+        <var name="evaluatedContext" id="3182453369942597762" />
+      </scope>
+      <scope id="3182453369942597745" at="46,121,99,9" />
+      <scope id="3182453369942597745" at="46,0,101,0">
+        <var name="context" id="3182453369942597745" />
+        <var name="coverage" id="3182453369942597745" />
+        <var name="node" id="3182453369942597745" />
+        <var name="trace" id="3182453369942597745" />
+      </scope>
+      <scope id="3182453369942597744" at="44,76,114,7" />
+      <scope id="3182453369942597744" at="44,0,116,0">
+        <var name="evaluators" id="3182453369942597744" />
+      </scope>
+      <unit id="3182453369942597744" at="126,0,129,0" name="org.iets3.core.expr.path.interpreter.plugin.InterpreterExprPathInterpreterPCollections$CONCEPTS" />
+      <unit id="3182453369942597744" at="130,0,133,0" name="org.iets3.core.expr.path.interpreter.plugin.InterpreterExprPathInterpreterPCollections$LINKS" />
+      <unit id="3182453369942597745" at="45,74,114,5" name="org.iets3.core.expr.path.interpreter.plugin.InterpreterExprPathInterpreterPCollections$1" />
+      <unit id="3182453369942597744" at="34,0,134,0" name="org.iets3.core.expr.path.interpreter.plugin.InterpreterExprPathInterpreterPCollections" />
+    </file>
+  </root>
+</debug-info>
+

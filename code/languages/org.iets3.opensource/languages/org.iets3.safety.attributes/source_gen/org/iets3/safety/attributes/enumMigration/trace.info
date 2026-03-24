@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<debug-info version="2">
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242878:jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1070462154015:jetbrains.mps.baseLanguage.structure.StaticFieldDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1081236700938:jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1163670490218:jetbrains.mps.baseLanguage.structure.SwitchStatement" />
+  <root nodeRef="r:407f659f-f4de-45ed-9563-6c4542554197(org.iets3.safety.attributes.enumMigration)/5939066662398655336">
+    <file name="ASILLevelEnum_MigrationUtils.java">
+      <node id="5939066662398655346" at="13,13,14,19" concept="0" />
+      <node id="5939066662398655349" at="15,13,16,19" concept="0" />
+      <node id="5939066662398655352" at="17,13,18,19" concept="0" />
+      <node id="5939066662398655355" at="19,13,20,20" concept="0" />
+      <node id="5939066662398655358" at="21,13,22,19" concept="0" />
+      <node id="5939066662398655365" at="23,14,24,20" concept="0" />
+      <node id="5939066662398655377" at="29,15,30,221" concept="0" />
+      <node id="5939066662398655384" at="31,15,32,221" concept="0" />
+      <node id="5939066662398655391" at="33,15,34,221" concept="0" />
+      <node id="5939066662398655398" at="35,16,36,222" concept="0" />
+      <node id="5939066662398655405" at="37,15,38,220" concept="0" />
+      <node id="5939066662398655414" at="39,14,40,20" concept="0" />
+      <node id="5939066662398655424" at="45,13,46,17" concept="0" />
+      <node id="5939066662398655427" at="47,13,48,17" concept="0" />
+      <node id="5939066662398655430" at="49,13,50,17" concept="0" />
+      <node id="5939066662398655433" at="51,13,52,18" concept="0" />
+      <node id="5939066662398655436" at="53,13,54,17" concept="0" />
+      <node id="5939066662398655443" at="55,14,56,17" concept="0" />
+      <node id="5939066662398655455" at="61,13,62,221" concept="0" />
+      <node id="5939066662398655462" at="63,13,64,221" concept="0" />
+      <node id="5939066662398655469" at="65,13,66,221" concept="0" />
+      <node id="5939066662398655476" at="67,14,68,222" concept="0" />
+      <node id="5939066662398655483" at="69,13,70,220" concept="0" />
+      <node id="5939066662398655492" at="71,14,72,20" concept="0" />
+      <node id="5939066662398655336" at="75,0,76,0" concept="1" trace="enumSwitchIndex" />
+      <node id="5939066662398655336" at="76,0,77,0" concept="1" trace="enumSwitchIndex1" />
+      <node id="5939066662398655365" at="11,61,25,5" concept="3" />
+      <node id="5939066662398655411" at="27,59,41,5" concept="3" />
+      <node id="5939066662398655443" at="43,59,57,5" concept="3" />
+      <node id="5939066662398655489" at="59,58,73,5" concept="3" />
+      <node id="5939066662398655359" at="11,0,27,0" concept="2" trace="name#(Lorg/jetbrains/mps/openapi/language/SEnumerationLiteral;)Ljava/lang/String;" />
+      <node id="5939066662398655369" at="27,0,43,0" concept="2" trace="fromName#(Ljava/lang/String;)Lorg/jetbrains/mps/openapi/language/SEnumerationLiteral;" />
+      <node id="5939066662398655437" at="43,0,59,0" concept="2" trace="value#(Lorg/jetbrains/mps/openapi/language/SEnumerationLiteral;)I" />
+      <node id="5939066662398655446" at="59,0,75,0" concept="2" trace="fromValue#(I)Lorg/jetbrains/mps/openapi/language/SEnumerationLiteral;" />
+      <scope id="5939066662398655346" at="13,13,14,19" />
+      <scope id="5939066662398655349" at="15,13,16,19" />
+      <scope id="5939066662398655352" at="17,13,18,19" />
+      <scope id="5939066662398655355" at="19,13,20,20" />
+      <scope id="5939066662398655358" at="21,13,22,19" />
+      <scope id="5939066662398655365" at="23,14,24,20" />
+      <scope id="5939066662398655376" at="29,15,30,221" />
+      <scope id="5939066662398655383" at="31,15,32,221" />
+      <scope id="5939066662398655390" at="33,15,34,221" />
+      <scope id="5939066662398655397" at="35,16,36,222" />
+      <scope id="5939066662398655404" at="37,15,38,220" />
+      <scope id="5939066662398655413" at="39,14,40,20" />
+      <scope id="5939066662398655424" at="45,13,46,17" />
+      <scope id="5939066662398655427" at="47,13,48,17" />
+      <scope id="5939066662398655430" at="49,13,50,17" />
+      <scope id="5939066662398655433" at="51,13,52,18" />
+      <scope id="5939066662398655436" at="53,13,54,17" />
+      <scope id="5939066662398655443" at="55,14,56,17" />
+      <scope id="5939066662398655454" at="61,13,62,221" />
+      <scope id="5939066662398655461" at="63,13,64,221" />
+      <scope id="5939066662398655468" at="65,13,66,221" />
+      <scope id="5939066662398655475" at="67,14,68,222" />
+      <scope id="5939066662398655482" at="69,13,70,220" />
+      <scope id="5939066662398655491" at="71,14,72,20" />
+      <scope id="5939066662398655363" at="11,61,25,5" />
+      <scope id="5939066662398655410" at="27,59,41,5" />
+      <scope id="5939066662398655441" at="43,59,57,5" />
+      <scope id="5939066662398655488" at="59,58,73,5" />
+      <scope id="5939066662398655359" at="11,0,27,0">
+        <var name="enummember" id="5939066662398655360" />
+      </scope>
+      <scope id="5939066662398655369" at="27,0,43,0">
+        <var name="name" id="5939066662398655370" />
+      </scope>
+      <scope id="5939066662398655437" at="43,0,59,0">
+        <var name="enummember" id="5939066662398655438" />
+      </scope>
+      <scope id="5939066662398655446" at="59,0,75,0">
+        <var name="value" id="5939066662398655447" />
+      </scope>
+      <unit id="5939066662398655336" at="10,0,78,0" name="org.iets3.safety.attributes.enumMigration.ASILLevelEnum_MigrationUtils" />
+    </file>
+  </root>
+  <root nodeRef="r:407f659f-f4de-45ed-9563-6c4542554197(org.iets3.safety.attributes.enumMigration)/5939066662398655499">
+    <file name="SeverityEnum_MigrationUtils.java">
+      <node id="5939066662398655507" at="13,13,14,19" concept="0" />
+      <node id="5939066662398655510" at="15,13,16,19" concept="0" />
+      <node id="5939066662398655513" at="17,13,18,19" concept="0" />
+      <node id="5939066662398655520" at="19,14,20,20" concept="0" />
+      <node id="5939066662398655532" at="25,15,26,220" concept="0" />
+      <node id="5939066662398655539" at="27,15,28,220" concept="0" />
+      <node id="5939066662398655546" at="29,15,30,220" concept="0" />
+      <node id="5939066662398655555" at="31,14,32,20" concept="0" />
+      <node id="5939066662398655499" at="35,0,36,0" concept="1" trace="enumSwitchIndex" />
+      <node id="5939066662398655520" at="11,61,21,5" concept="3" />
+      <node id="5939066662398655552" at="23,59,33,5" concept="3" />
+      <node id="5939066662398655514" at="11,0,23,0" concept="2" trace="name#(Lorg/jetbrains/mps/openapi/language/SEnumerationLiteral;)Ljava/lang/String;" />
+      <node id="5939066662398655524" at="23,0,35,0" concept="2" trace="fromName#(Ljava/lang/String;)Lorg/jetbrains/mps/openapi/language/SEnumerationLiteral;" />
+      <scope id="5939066662398655507" at="13,13,14,19" />
+      <scope id="5939066662398655510" at="15,13,16,19" />
+      <scope id="5939066662398655513" at="17,13,18,19" />
+      <scope id="5939066662398655520" at="19,14,20,20" />
+      <scope id="5939066662398655531" at="25,15,26,220" />
+      <scope id="5939066662398655538" at="27,15,28,220" />
+      <scope id="5939066662398655545" at="29,15,30,220" />
+      <scope id="5939066662398655554" at="31,14,32,20" />
+      <scope id="5939066662398655518" at="11,61,21,5" />
+      <scope id="5939066662398655551" at="23,59,33,5" />
+      <scope id="5939066662398655514" at="11,0,23,0">
+        <var name="enummember" id="5939066662398655515" />
+      </scope>
+      <scope id="5939066662398655524" at="23,0,35,0">
+        <var name="name" id="5939066662398655525" />
+      </scope>
+      <unit id="5939066662398655499" at="10,0,37,0" name="org.iets3.safety.attributes.enumMigration.SeverityEnum_MigrationUtils" />
+    </file>
+  </root>
+  <root nodeRef="r:407f659f-f4de-45ed-9563-6c4542554197(org.iets3.safety.attributes.enumMigration)/5939066662398655563">
+    <file name="ExposureEnum_MigrationUtils.java">
+      <node id="5939066662398655572" at="13,13,14,19" concept="0" />
+      <node id="5939066662398655575" at="15,13,16,19" concept="0" />
+      <node id="5939066662398655578" at="17,13,18,19" concept="0" />
+      <node id="5939066662398655581" at="19,13,20,19" concept="0" />
+      <node id="5939066662398655588" at="21,14,22,20" concept="0" />
+      <node id="5939066662398655600" at="27,15,28,220" concept="0" />
+      <node id="5939066662398655607" at="29,15,30,220" concept="0" />
+      <node id="5939066662398655614" at="31,15,32,220" concept="0" />
+      <node id="5939066662398655621" at="33,15,34,220" concept="0" />
+      <node id="5939066662398655630" at="35,14,36,20" concept="0" />
+      <node id="5939066662398655563" at="39,0,40,0" concept="1" trace="enumSwitchIndex" />
+      <node id="5939066662398655588" at="11,61,23,5" concept="3" />
+      <node id="5939066662398655627" at="25,59,37,5" concept="3" />
+      <node id="5939066662398655582" at="11,0,25,0" concept="2" trace="name#(Lorg/jetbrains/mps/openapi/language/SEnumerationLiteral;)Ljava/lang/String;" />
+      <node id="5939066662398655592" at="25,0,39,0" concept="2" trace="fromName#(Ljava/lang/String;)Lorg/jetbrains/mps/openapi/language/SEnumerationLiteral;" />
+      <scope id="5939066662398655572" at="13,13,14,19" />
+      <scope id="5939066662398655575" at="15,13,16,19" />
+      <scope id="5939066662398655578" at="17,13,18,19" />
+      <scope id="5939066662398655581" at="19,13,20,19" />
+      <scope id="5939066662398655588" at="21,14,22,20" />
+      <scope id="5939066662398655599" at="27,15,28,220" />
+      <scope id="5939066662398655606" at="29,15,30,220" />
+      <scope id="5939066662398655613" at="31,15,32,220" />
+      <scope id="5939066662398655620" at="33,15,34,220" />
+      <scope id="5939066662398655629" at="35,14,36,20" />
+      <scope id="5939066662398655586" at="11,61,23,5" />
+      <scope id="5939066662398655626" at="25,59,37,5" />
+      <scope id="5939066662398655582" at="11,0,25,0">
+        <var name="enummember" id="5939066662398655583" />
+      </scope>
+      <scope id="5939066662398655592" at="25,0,39,0">
+        <var name="name" id="5939066662398655593" />
+      </scope>
+      <unit id="5939066662398655563" at="10,0,41,0" name="org.iets3.safety.attributes.enumMigration.ExposureEnum_MigrationUtils" />
+    </file>
+  </root>
+  <root nodeRef="r:407f659f-f4de-45ed-9563-6c4542554197(org.iets3.safety.attributes.enumMigration)/5939066662398655637">
+    <file name="ControllabilityEnum_MigrationUtils.java">
+      <node id="5939066662398655645" at="13,13,14,19" concept="0" />
+      <node id="5939066662398655648" at="15,13,16,19" concept="0" />
+      <node id="5939066662398655651" at="17,13,18,19" concept="0" />
+      <node id="5939066662398655658" at="19,14,20,20" concept="0" />
+      <node id="5939066662398655670" at="25,15,26,227" concept="0" />
+      <node id="5939066662398655677" at="27,15,28,227" concept="0" />
+      <node id="5939066662398655684" at="29,15,30,227" concept="0" />
+      <node id="5939066662398655693" at="31,14,32,20" concept="0" />
+      <node id="5939066662398655637" at="35,0,36,0" concept="1" trace="enumSwitchIndex" />
+      <node id="5939066662398655658" at="11,61,21,5" concept="3" />
+      <node id="5939066662398655690" at="23,59,33,5" concept="3" />
+      <node id="5939066662398655652" at="11,0,23,0" concept="2" trace="name#(Lorg/jetbrains/mps/openapi/language/SEnumerationLiteral;)Ljava/lang/String;" />
+      <node id="5939066662398655662" at="23,0,35,0" concept="2" trace="fromName#(Ljava/lang/String;)Lorg/jetbrains/mps/openapi/language/SEnumerationLiteral;" />
+      <scope id="5939066662398655645" at="13,13,14,19" />
+      <scope id="5939066662398655648" at="15,13,16,19" />
+      <scope id="5939066662398655651" at="17,13,18,19" />
+      <scope id="5939066662398655658" at="19,14,20,20" />
+      <scope id="5939066662398655669" at="25,15,26,227" />
+      <scope id="5939066662398655676" at="27,15,28,227" />
+      <scope id="5939066662398655683" at="29,15,30,227" />
+      <scope id="5939066662398655692" at="31,14,32,20" />
+      <scope id="5939066662398655656" at="11,61,21,5" />
+      <scope id="5939066662398655689" at="23,59,33,5" />
+      <scope id="5939066662398655652" at="11,0,23,0">
+        <var name="enummember" id="5939066662398655653" />
+      </scope>
+      <scope id="5939066662398655662" at="23,0,35,0">
+        <var name="name" id="5939066662398655663" />
+      </scope>
+      <unit id="5939066662398655637" at="10,0,37,0" name="org.iets3.safety.attributes.enumMigration.ControllabilityEnum_MigrationUtils" />
+    </file>
+  </root>
+</debug-info>
+

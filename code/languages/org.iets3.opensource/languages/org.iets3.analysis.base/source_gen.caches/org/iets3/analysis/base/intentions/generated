@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<product version="3" modelHash="3o9i2p0alh8imq9600nj0et86cqyh03">
+  <files names="IntentionsDescriptor.java:SetSolverTimeout_Intention.java:UseDefaultSolverTimeout_Intention.java:addSolveControlCheck_Intention.java:addSolveControlIgnore_Intention.java:removeSolveControlCheck_Intention.java" />
+</product>
+

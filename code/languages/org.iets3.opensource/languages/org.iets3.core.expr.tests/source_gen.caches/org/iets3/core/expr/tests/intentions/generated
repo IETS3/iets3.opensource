@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<product version="3" modelHash="-d4b42vdn9trkhanem16z6aydr6ghvia">
+  <files names="ChangeToConfail_Intention.java:Expression_SuppressErrors_Intention.java:IntentionsDescriptor.java:ResultCopyHelper.java:addErrorMessae_Intention.java:addMutator_Intention.java:addSetup_Intention.java:addToIgnoredConceptsForInterpreterCoverage_Intention.java:addToIgnoredConceptsForStructuralCoverage_Intention.java:addVector_Intention.java:cleanDanglingResults_Intention.java:clear_Intention.java:deleteMutationModels_Intention.java:evaluateTestItem_Intention.java:evaluateTestItemsInContainer_Intention.java:markPreFailureAsInvalid_Intention.java:mutate_Intention.java:removeInvalidInputs_Intention.java:runProducer_Intention.java:toggleIgnored_Intention.java:useActualsAsExpectedAll_Intention.java:useActualsAsExpectedEmpty_Intention.java" />
+</product>
+

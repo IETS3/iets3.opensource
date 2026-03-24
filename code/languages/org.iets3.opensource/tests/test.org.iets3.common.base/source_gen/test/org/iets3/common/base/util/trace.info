@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<debug-info version="2">
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123155:jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242864:jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242878:jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123157:jetbrains.mps.baseLanguage.structure.Statement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1070462154015:jetbrains.mps.baseLanguage.structure.StaticFieldDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1081236700938:jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" />
+  <root nodeRef="r:47440061-d7b2-45b0-8507-64028fc49a72(test.org.iets3.common.base.util)/3612940571170611266">
+    <file name="CommonTestUtil.java">
+      <node id="3612940571170611271" at="15,66,16,73" concept="1" />
+      <node id="3612940571170611278" at="16,73,17,108" concept="0" />
+      <node id="3612940571170611288" at="17,108,18,94" concept="0" />
+      <node id="3612940571170611298" at="18,94,19,115" concept="0" />
+      <node id="3612940571170611308" at="19,115,20,114" concept="0" />
+      <node id="3612940571170611318" at="20,114,21,111" concept="0" />
+      <node id="3612940571170611328" at="21,111,22,117" concept="0" />
+      <node id="3612940571170611338" at="22,117,23,121" concept="0" />
+      <node id="3612940571170611348" at="23,121,24,93" concept="0" />
+      <node id="3612940571170611356" at="24,93,25,0" concept="3" />
+      <node id="3612940571170611357" at="25,0,26,23" concept="2" />
+      <node id="3612940571170611266" at="30,0,31,0" concept="4" trace="IDetectNeedToRunManually$no" />
+      <node id="3612940571170611266" at="31,0,32,0" concept="4" trace="SolveControl$Vn" />
+      <node id="3612940571170611266" at="32,0,33,0" concept="4" trace="FeatureModelConfiguration$nE" />
+      <node id="3612940571170611266" at="33,0,34,0" concept="4" trace="BaseConcept$gP" />
+      <node id="3612940571170611266" at="37,0,38,0" concept="4" trace="__hash$uJSm" />
+      <node id="3612940571170611266" at="38,0,39,0" concept="4" trace="mode$kQof" />
+      <node id="3612940571170611266" at="39,0,40,0" concept="4" trace="__updateHash$vTMx" />
+      <node id="3612940571170611266" at="40,0,41,0" concept="4" trace="__adaptHash$54Is" />
+      <node id="3612940571170611266" at="41,0,42,0" concept="4" trace="complete$4SB6" />
+      <node id="3612940571170611266" at="42,0,43,0" concept="4" trace="hasSolverError$yxrG" />
+      <node id="3612940571170611266" at="43,0,44,0" concept="4" trace="solverErrorMessage$DYqd" />
+      <node id="3612940571170611266" at="44,0,45,0" concept="4" trace="virtualPackage$EkXl" />
+      <node id="3612940571170611269" at="15,0,28,0" concept="5" trace="commonPropertiesToIgnore#()Ljava/util/List;" />
+      <scope id="3612940571170611270" at="15,66,26,23">
+        <var name="toBeIgnored" id="3612940571170611272" />
+      </scope>
+      <scope id="3612940571170611269" at="15,0,28,0" />
+      <unit id="3612940571170611266" at="29,0,35,0" name="test.org.iets3.common.base.util.CommonTestUtil$CONCEPTS" />
+      <unit id="3612940571170611266" at="36,0,46,0" name="test.org.iets3.common.base.util.CommonTestUtil$PROPS" />
+      <unit id="3612940571170611266" at="13,0,47,0" name="test.org.iets3.common.base.util.CommonTestUtil" />
+    </file>
+  </root>
+</debug-info>
+

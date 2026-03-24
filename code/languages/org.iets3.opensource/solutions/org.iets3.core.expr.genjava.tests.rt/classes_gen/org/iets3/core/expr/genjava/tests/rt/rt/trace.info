@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<debug-info version="2">
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1082485599095:jetbrains.mps.baseLanguage.structure.BlockStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123155:jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123159:jetbrains.mps.baseLanguage.structure.IfStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242864:jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242878:jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1081236700938:jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" />
+  <root nodeRef="r:b7227cbc-baff-4db9-b647-35204726ce23(org.iets3.core.expr.genjava.tests.rt.rt)/8286534136182087239">
+    <file name="RealEqualsTestOp.java">
+      <node id="4988624180052598351" at="11,37,12,18" concept="4" />
+      <node id="4988624180052598362" at="13,44,14,19" concept="4" />
+      <node id="4988624180052598373" at="15,44,16,19" concept="4" />
+      <node id="4988624180052951233" at="18,67,19,44" concept="3" />
+      <node id="4988624180052952849" at="19,44,20,44" concept="3" />
+      <node id="4988624180052945325" at="20,44,21,56" concept="1" />
+      <node id="4988624180052949360" at="21,56,22,56" concept="1" />
+      <node id="4988624180052950768" at="22,56,23,39" concept="4" />
+      <node id="4988624180052598384" at="24,7,25,29" concept="4" />
+      <node id="4988624180052918420" at="17,12,24,7" concept="2" />
+      <node id="4988624180052598382" at="17,10,26,5" concept="0" />
+      <node id="4988624180052598349" at="10,71,26,5" concept="2" />
+      <node id="8286534136182140450" at="10,0,28,0" concept="5" trace="matches#(Ljava/lang/Object;Ljava/lang/Object;I)Z" />
+      <scope id="4988624180052598350" at="11,37,12,18" />
+      <scope id="4988624180052598361" at="13,44,14,19" />
+      <scope id="4988624180052598372" at="15,44,16,19" />
+      <scope id="4988624180052918422" at="18,67,23,39">
+        <var name="bda" id="4988624180052951234" />
+        <var name="bde" id="4988624180052952850" />
+      </scope>
+      <scope id="4988624180052598383" at="17,12,25,29" />
+      <scope id="8286534136182091890" at="10,71,26,5" />
+      <scope id="8286534136182140450" at="10,0,28,0">
+        <var name="act" id="8286534136182091886" />
+        <var name="decimals" id="8286534136182100802" />
+        <var name="exp" id="8286534136182091888" />
+      </scope>
+      <unit id="8286534136182087239" at="8,0,29,0" name="org.iets3.core.expr.genjava.tests.rt.rt.RealEqualsTestOp" />
+    </file>
+  </root>
+  <root nodeRef="r:b7227cbc-baff-4db9-b647-35204726ce23(org.iets3.core.expr.genjava.tests.rt.rt)/8286534136182108561">
+    <file name="EqualsTestOp.java">
+      <node id="8286534136182120198" at="11,37,12,18" concept="4" />
+      <node id="8286534136182120209" at="13,44,14,19" concept="4" />
+      <node id="8286534136182120220" at="15,44,16,19" concept="4" />
+      <node id="8286534136182120233" at="18,67,19,44" concept="3" />
+      <node id="8286534136182120240" at="19,44,20,44" concept="3" />
+      <node id="8286534136182120247" at="20,44,21,39" concept="4" />
+      <node id="8286534136182120263" at="23,67,24,44" concept="3" />
+      <node id="8286534136182120270" at="24,44,25,44" concept="3" />
+      <node id="8286534136182120277" at="25,44,26,39" concept="4" />
+      <node id="8286534136182120293" at="28,67,29,44" concept="3" />
+      <node id="8286534136182120300" at="29,44,30,60" concept="3" />
+      <node id="8286534136182120309" at="30,60,31,39" concept="4" />
+      <node id="8286534136182120325" at="33,67,34,60" concept="3" />
+      <node id="8286534136182120334" at="34,60,35,44" concept="3" />
+      <node id="8286534136182120341" at="35,44,36,39" concept="4" />
+      <node id="8286534136182120355" at="37,7,38,29" concept="4" />
+      <node id="8286534136182120231" at="17,12,22,7" concept="2" />
+      <node id="8286534136182120261" at="22,7,27,7" concept="2" />
+      <node id="8286534136182120291" at="27,7,32,7" concept="2" />
+      <node id="8286534136182120323" at="32,7,37,7" concept="2" />
+      <node id="8286534136182120229" at="17,10,39,5" concept="0" />
+      <node id="8286534136182120196" at="10,57,39,5" concept="2" />
+      <node id="8286534136182120185" at="10,0,41,0" concept="5" trace="matches#(Ljava/lang/Object;Ljava/lang/Object;)Z" />
+      <scope id="8286534136182120197" at="11,37,12,18" />
+      <scope id="8286534136182120208" at="13,44,14,19" />
+      <scope id="8286534136182120219" at="15,44,16,19" />
+      <scope id="8286534136182120232" at="18,67,21,39">
+        <var name="bda" id="8286534136182120234" />
+        <var name="bde" id="8286534136182120241" />
+      </scope>
+      <scope id="8286534136182120262" at="23,67,26,39">
+        <var name="bda" id="8286534136182120264" />
+        <var name="bde" id="8286534136182120271" />
+      </scope>
+      <scope id="8286534136182120292" at="28,67,31,39">
+        <var name="bda" id="8286534136182120294" />
+        <var name="bde" id="8286534136182120301" />
+      </scope>
+      <scope id="8286534136182120324" at="33,67,36,39">
+        <var name="bda" id="8286534136182120326" />
+        <var name="bde" id="8286534136182120335" />
+      </scope>
+      <scope id="8286534136182120230" at="17,12,38,29" />
+      <scope id="8286534136182120195" at="10,57,39,5" />
+      <scope id="8286534136182120185" at="10,0,41,0">
+        <var name="act" id="8286534136182120189" />
+        <var name="exp" id="8286534136182120191" />
+      </scope>
+      <unit id="8286534136182108561" at="8,0,43,0" name="org.iets3.core.expr.genjava.tests.rt.rt.EqualsTestOp" />
+    </file>
+  </root>
+</debug-info>
+

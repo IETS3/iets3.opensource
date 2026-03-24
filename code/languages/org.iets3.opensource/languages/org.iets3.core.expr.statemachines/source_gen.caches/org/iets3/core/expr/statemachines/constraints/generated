@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<product version="3" modelHash="2mwo1qcsi57kbhg8zqtfs8xweb5u3c8">
+  <files names="AbstractTransition_Constraints.java:ConstraintsAspectDescriptor.java:EmptySMC_Constraints.java:EventArgRef_Constraints.java:EventTrigger_Constraints.java:IsInStateTarget_Constraints.java:ParamRef_Constraints.java:QueryTarget_Constraints.java:SMFunAdapter_Constraints.java:SMTarget_Constraints.java:StateTarget_Constraints.java:TimeInStateExpr_Constraints.java:TimeSinceLastTriggeredTransition_Constraints.java:TriggerTarget_Constraints.java:TriggeredTransition_Constraints.java:VarRef_Constraints.java:VariableTarget_Constraints.java" />
+</product>
+

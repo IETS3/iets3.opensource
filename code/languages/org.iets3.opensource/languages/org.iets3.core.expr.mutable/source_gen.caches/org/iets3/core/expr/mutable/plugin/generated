@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<product version="3" modelHash="-1cwefxohlfdesxhqaqdjok2sxpmgkct">
+  <files names="AbstractClock.java:ArtificialClock.java:BoxValue.java:ContentHasChangedException.java:ContextCollector.java:ContextValue.java:GlobalClockContainer.java:IBoxValue.java:IDArg.java:IDCommand.java:IDElement.java:IDValue.java:ITransactionalValue.java:InteractionDescriptor.java:InteractorValue.java:InterceptorFailedException.java:InterceptorHelper.java:InterceptorState.java:InterceptorStateManager.java:InvalidCommandException.java:LiveValue.java:LiveValueSnapshot.java:NoActiveTransactionException.java:RateLimitInterceptorState.java:SystemClock.java:TranactionContext.java:Transaction.java" />
+</product>
+

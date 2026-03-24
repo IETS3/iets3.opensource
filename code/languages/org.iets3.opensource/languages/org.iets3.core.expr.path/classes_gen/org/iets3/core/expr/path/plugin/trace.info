@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<debug-info version="2">
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123165:jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" />
+  <root nodeRef="r:14d19f45-b1ff-401e-875c-62c48d110e0a(org.iets3.core.expr.path.plugin)/7814222126794852254">
+    <file name="IRecordValue.java">
+      <node id="7814222126798985817" at="9,0,10,0" concept="0" trace="getValueForPath#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljava/lang/Object;" />
+      <scope id="7814222126798985817" at="9,0,10,0">
+        <var name="member" id="7814222126798987007" />
+      </scope>
+      <unit id="7814222126794852254" at="7,0,12,0" name="org.iets3.core.expr.path.plugin.IRecordValue" />
+    </file>
+  </root>
+</debug-info>
+

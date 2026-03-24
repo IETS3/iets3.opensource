@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<product version="3" modelHash="bdtdq22mvyhgdeoffac37sl4p6qin2f">
+  <files names="AbstractStringDotTarget_Constraints.java:ConstraintsAspectDescriptor.java:InterpolExprWord_Constraints.java:NumberLiteral_Constraints.java:NumberPrecSpec_Constraints.java:NumberRangeSpec_Constraints.java:OtherwiseLiteral_Constraints.java:StringLiteral_Constraints.java:StringTypeWithConstraint_Constraints.java:StringType_Constraints.java:ToleranceExpr_Constraints.java" />
+</product>
+

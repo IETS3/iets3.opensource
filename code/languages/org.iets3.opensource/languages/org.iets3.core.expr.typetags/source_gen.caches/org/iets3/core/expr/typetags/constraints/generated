@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<product version="3" modelHash="-59mqh8x0sw264k0jh4s5lqgzopejxv5">
+  <files names="AtLeastTag_Constraints.java:AtMostTag_Constraints.java:ConstraintsAspectDescriptor.java:ITag_Constraints.java:TagNegation_Constraints.java:TaggedExpression_Constraints.java" />
+</product>
+

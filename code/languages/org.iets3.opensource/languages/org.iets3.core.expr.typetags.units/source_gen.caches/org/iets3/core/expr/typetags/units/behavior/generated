@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<product version="3" modelHash="99nexps0jb7rqf1un4vaxhq8b8oa0jj">
+  <files names="BehaviorAspectDescriptor.java:ConversionRule__BehaviorDescriptor.java:ConversionSpecifier__BehaviorDescriptor.java:ConvertExpression__BehaviorDescriptor.java:ConvertToTarget__BehaviorDescriptor.java:Exponent__BehaviorDescriptor.java:ExpressionChecker.java:FractionalExponent__BehaviorDescriptor.java:IConvertUnit__BehaviorDescriptor.java:ISpecification__BehaviorDescriptor.java:IUnitDeclarationsProvider__BehaviorDescriptor.java:IUnit__BehaviorDescriptor.java:IntegerExponent__BehaviorDescriptor.java:Quantity__BehaviorDescriptor.java:ScopingHelper.java:StripUnitExpression__BehaviorDescriptor.java:UnitCombinators.java:UnitConversionUtil.java:UnitReference__BehaviorDescriptor.java:UnitSpecification__BehaviorDescriptor.java:UnitSubsumption.java:UnitWrapper.java:Unit__BehaviorDescriptor.java:ValExpression__BehaviorDescriptor.java" />
+</product>
+

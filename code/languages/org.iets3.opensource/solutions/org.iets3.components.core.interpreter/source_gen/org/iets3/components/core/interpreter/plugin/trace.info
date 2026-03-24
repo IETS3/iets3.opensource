@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<debug-info version="2">
+  <concept fqn="c:c7d5b9dd-a05f-4be2-bc73-f2e16994cc67/3751132065236767060:jetbrains.mps.baseLanguage.lightweightdsl.structure.MethodInstance" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123140:jetbrains.mps.baseLanguage.structure.ConstructorDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123155:jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123165:jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242878:jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1070462154015:jetbrains.mps.baseLanguage.structure.StaticFieldDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1070475587102:jetbrains.mps.baseLanguage.structure.SuperConstructorInvocation" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1164991038168:jetbrains.mps.baseLanguage.structure.ThrowStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/5351203823916750322:jetbrains.mps.baseLanguage.structure.TryUniversalStatement" />
+  <root>
+    <file name="ExtensionDescriptor.java">
+      <unit at="8,0,13,0" name="org.iets3.components.core.interpreter.plugin.ExtensionDescriptor" />
+    </file>
+  </root>
+  <root nodeRef="r:3cecc670-c5e6-4794-af17-a5638180af01(org.iets3.components.core.interpreter.plugin)/5228096169281078735">
+    <file name="ComponentsInterpreter_extension.java">
+      <node id="5228096169281078735" at="10,44,11,70" concept="6" />
+      <node id="5228096169281078735" at="14,26,15,55" concept="2" />
+      <node id="5228096169281078735" at="17,28,18,55" concept="2" />
+      <node id="5228096169281078735" at="21,29,22,50" concept="4" />
+      <node id="5228096169281078735" at="10,0,13,0" concept="1" trace="ComponentsInterpreter_extension#()V" />
+      <node id="5228096169281078735" at="14,0,17,0" concept="0" trace="activate#()V" />
+      <node id="5228096169281078735" at="17,0,20,0" concept="0" trace="deactivate#()V" />
+      <node id="5228096169281078735" at="21,0,24,0" concept="0" trace="get#()Lcom/mbeddr/mpsutil/interpreter/rt/IInterpreter;" />
+      <scope id="5228096169281078735" at="10,44,11,70" />
+      <scope id="5228096169281078735" at="14,26,15,55" />
+      <scope id="5228096169281078735" at="17,28,18,55" />
+      <scope id="5228096169281078735" at="21,29,22,50" />
+      <scope id="5228096169281078735" at="10,0,13,0" />
+      <scope id="5228096169281078735" at="14,0,17,0" />
+      <scope id="5228096169281078735" at="17,0,20,0" />
+      <scope id="5228096169281078735" at="21,0,24,0" />
+      <unit id="5228096169281078735" at="9,0,25,0" name="org.iets3.components.core.interpreter.plugin.ComponentsInterpreter_extension" />
+    </file>
+    <file name="InterpreterComponentsInterpreter.java">
+      <node id="5228096169281078735" at="28,45,29,11" concept="2" />
+      <node id="5228096169281078735" at="33,31,34,24" concept="4" />
+      <node id="5228096169281078964" at="40,13,41,42" concept="2" />
+      <node id="5228096169281078964" at="41,42,42,48" concept="2" />
+      <node id="5228096169281078964" at="42,48,43,68" concept="2" />
+      <node id="5228096169281078964" at="43,68,44,118" concept="4" />
+      <node id="5228096169281078964" at="45,47,46,30" concept="4" />
+      <node id="5228096169281078964" at="47,49,48,19" concept="7" />
+      <node id="5228096169281078964" at="49,39,50,79" concept="7" />
+      <node id="5228096169281078964" at="53,38,54,263" concept="4" />
+      <node id="5228096169281078964" at="58,32,59,26" concept="4" />
+      <node id="5228096169281078964" at="63,42,64,20" concept="4" />
+      <node id="5228096169281078735" at="79,0,80,0" concept="5" trace="param$OsyV" />
+      <node id="5228096169281078735" at="83,0,84,0" concept="5" trace="ParamRef$Pq" />
+      <node id="5228096169281078735" at="70,0,72,0" concept="3" trace="populateTypeMappers#(Ljava/util/List;)V" />
+      <node id="5228096169281078735" at="75,0,77,0" concept="3" trace="populateRelationships#(Ljava/util/List;)V" />
+      <node id="5228096169281078735" at="28,0,31,0" concept="1" trace="InterpreterComponentsInterpreter#()V" />
+      <node id="5228096169281078964" at="53,0,56,0" concept="3" trace="getInfo#()Lcom/mbeddr/mpsutil/interpreter/rt/EvaluatorInfo;" />
+      <node id="5228096169281078735" at="32,0,36,0" concept="3" trace="getCategory#()Ljava/lang/String;" />
+      <node id="5228096169281078964" at="57,0,61,0" concept="3" trace="toString#()Ljava/lang/String;" />
+      <node id="5228096169281078964" at="62,0,66,0" concept="3" trace="canLookupBeCached#()Z" />
+      <node id="5228096169281078964" at="39,121,51,9" concept="8" />
+      <node id="5228096169281078964" at="39,0,53,0" concept="3" trace="evaluateEvaluator#(Lorg/jetbrains/mps/openapi/model/SNode;Lcom/mbeddr/mpsutil/interpreter/rt/IContext;Lcom/mbeddr/mpsutil/interpreter/rt/ICoverageAnalyzer;Lcom/mbeddr/mpsutil/interpreter/rt/ComputationTrace;)Ljava/lang/Object;" />
+      <node id="5228096169281078964" at="37,76,66,7" concept="2" />
+      <node id="5228096169281078735" at="37,0,68,0" concept="3" trace="populateEvaluators#(Ljava/util/List;)V" />
+      <scope id="5228096169281078735" at="70,79,70,79" />
+      <scope id="5228096169281078735" at="75,85,75,85" />
+      <scope id="5228096169281078735" at="28,45,29,11" />
+      <scope id="5228096169281078735" at="33,31,34,24" />
+      <scope id="5228096169281078964" at="45,47,46,30" />
+      <scope id="5228096169281078964" at="47,49,48,19" />
+      <scope id="5228096169281078964" at="49,39,50,79" />
+      <scope id="5228096169281078964" at="53,38,54,263" />
+      <scope id="5228096169281078964" at="58,32,59,26" />
+      <scope id="5228096169281078964" at="63,42,64,20" />
+      <scope id="5228096169281078964" at="45,9,47,9">
+        <var name="stop" id="5228096169281078964" />
+      </scope>
+      <scope id="5228096169281078964" at="47,9,49,9">
+        <var name="ex" id="5228096169281078964" />
+      </scope>
+      <scope id="5228096169281078964" at="49,9,51,9">
+        <var name="ex" id="5228096169281078964" />
+      </scope>
+      <scope id="5228096169281078735" at="70,0,72,0">
+        <var name="typeMappers" id="5228096169281078735" />
+      </scope>
+      <scope id="5228096169281078735" at="75,0,77,0">
+        <var name="relationships" id="5228096169281078735" />
+      </scope>
+      <scope id="5228096169281078735" at="28,0,31,0" />
+      <scope id="5228096169281078964" at="53,0,56,0" />
+      <scope id="5228096169281078735" at="32,0,36,0" />
+      <scope id="5228096169281078964" at="40,13,44,118" />
+      <scope id="5228096169281078964" at="57,0,61,0" />
+      <scope id="5228096169281078964" at="62,0,66,0" />
+      <scope id="5228096169281078964" at="39,121,51,9" />
+      <scope id="5228096169281078964" at="39,0,53,0">
+        <var name="context" id="5228096169281078964" />
+        <var name="coverage" id="5228096169281078964" />
+        <var name="node" id="5228096169281078964" />
+        <var name="trace" id="5228096169281078964" />
+      </scope>
+      <scope id="5228096169281078735" at="37,76,66,7" />
+      <scope id="5228096169281078735" at="37,0,68,0">
+        <var name="evaluators" id="5228096169281078735" />
+      </scope>
+      <unit id="5228096169281078735" at="78,0,81,0" name="org.iets3.components.core.interpreter.plugin.InterpreterComponentsInterpreter$LINKS" />
+      <unit id="5228096169281078735" at="82,0,85,0" name="org.iets3.components.core.interpreter.plugin.InterpreterComponentsInterpreter$CONCEPTS" />
+      <unit id="5228096169281078964" at="38,74,66,5" name="org.iets3.components.core.interpreter.plugin.InterpreterComponentsInterpreter$1" />
+      <unit id="5228096169281078735" at="27,0,86,0" name="org.iets3.components.core.interpreter.plugin.InterpreterComponentsInterpreter" />
+    </file>
+  </root>
+</debug-info>
+

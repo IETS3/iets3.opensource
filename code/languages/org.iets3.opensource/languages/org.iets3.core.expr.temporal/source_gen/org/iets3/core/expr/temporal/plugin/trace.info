@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<debug-info version="2">
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1082485599095:jetbrains.mps.baseLanguage.structure.BlockStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123140:jetbrains.mps.baseLanguage.structure.ConstructorDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123155:jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1144226303539:jetbrains.mps.baseLanguage.structure.ForeachStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123159:jetbrains.mps.baseLanguage.structure.IfStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242864:jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242878:jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1070462154015:jetbrains.mps.baseLanguage.structure.StaticFieldDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1081236700938:jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1070475587102:jetbrains.mps.baseLanguage.structure.SuperConstructorInvocation" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1164991038168:jetbrains.mps.baseLanguage.structure.ThrowStatement" />
+  <root nodeRef="r:e44c17a0-d569-437a-a7a1-7c26f734db5f(org.iets3.core.expr.temporal.plugin)/7614641489631020587">
+    <file name="TemporalOpsInterpreter.java">
+      <node id="7638810057884007473" at="23,204,24,80" concept="5" />
+      <node id="7638810057884020724" at="25,41,26,18" concept="6" />
+      <node id="7638810057884008359" at="27,5,28,81" concept="5" />
+      <node id="7638810057884023088" at="29,38,30,108" concept="6" />
+      <node id="7638810057884344727" at="31,12,32,89" concept="6" />
+      <node id="3885635233750777342" at="36,250,37,80" concept="5" />
+      <node id="3885635233750777349" at="37,80,38,96" concept="2" />
+      <node id="3885635233750777356" at="38,96,39,97" concept="2" />
+      <node id="3885635233750777363" at="39,97,40,44" concept="5" />
+      <node id="8266215269022763862" at="41,114,42,46" concept="5" />
+      <node id="8266215269022790606" at="42,46,43,48" concept="5" />
+      <node id="3955961678040728297" at="44,30,45,105" concept="5" />
+      <node id="3955961678040731356" at="46,26,47,26" concept="2" />
+      <node id="8266215269022840607" at="48,16,49,129" concept="10" />
+      <node id="3955961678040745707" at="52,31,53,105" concept="5" />
+      <node id="3955961678040745718" at="54,26,55,27" concept="2" />
+      <node id="8266215269023056766" at="56,16,57,131" concept="10" />
+      <node id="3885635233750777383" at="59,7,60,62" concept="2" />
+      <node id="3885635233750777405" at="61,5,62,39" concept="6" />
+      <node id="4880743667104680876" at="66,242,67,80" concept="5" />
+      <node id="4880743667104680883" at="67,80,68,96" concept="2" />
+      <node id="4880743667104680897" at="68,96,69,44" concept="5" />
+      <node id="3955961678040774360" at="70,114,71,49" concept="5" />
+      <node id="3955961678040795905" at="72,33,73,105" concept="5" />
+      <node id="3955961678040795916" at="74,26,75,29" concept="2" />
+      <node id="3955961678040795925" at="76,16,77,129" concept="10" />
+      <node id="4880743667104680917" at="79,7,80,65" concept="2" />
+      <node id="4880743667104680939" at="81,5,82,15" concept="6" />
+      <node id="7614641489631020587" at="86,0,87,0" concept="7" trace="DefaultSliceValueExpr$PH" />
+      <node id="7638810057884018965" at="31,10,33,5" concept="0" />
+      <node id="3955961678040732158" at="48,14,50,9" concept="0" />
+      <node id="3955961678040745725" at="56,14,58,9" concept="0" />
+      <node id="3955961678040795923" at="76,14,78,9" concept="0" />
+      <node id="1053551810802681421" at="24,80,27,5" concept="4" />
+      <node id="7638810057884011110" at="28,81,33,5" concept="4" />
+      <node id="3955961678040729619" at="45,105,50,9" concept="4" />
+      <node id="3955961678040745716" at="53,105,58,9" concept="4" />
+      <node id="3955961678040795914" at="73,105,78,9" concept="4" />
+      <node id="8266215269022835958" at="43,48,51,7" concept="4" />
+      <node id="8266215269022861070" at="51,7,59,7" concept="4" />
+      <node id="3955961678040795903" at="71,49,79,7" concept="4" />
+      <node id="3955961678041449207" at="23,0,35,0" concept="8" trace="perform#(Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/baseLanguage/closures/runtime/_FunctionTypes/_return_P2_E0;Lcom/mbeddr/mpsutil/interpreter/rt/IContext;Lcom/mbeddr/mpsutil/interpreter/rt/ICoverageAnalyzer;Lcom/mbeddr/mpsutil/interpreter/rt/ComputationTrace;)Ljava/lang/Object;" />
+      <node id="4880743667104680902" at="69,44,81,5" concept="3" />
+      <node id="4880743667104680826" at="66,0,84,0" concept="8" trace="doWithOneTemporal#(Lorg/jetbrains/mps/openapi/model/SNode;Lorg/iets3/core/expr/temporal/runtime/TemporalValue;Lorg/jetbrains/mps/openapi/model/SNode;Ljava/lang/Object;Ljetbrains/mps/baseLanguage/closures/runtime/_FunctionTypes/_return_P2_E0;Lcom/mbeddr/mpsutil/interpreter/rt/IContext;Lcom/mbeddr/mpsutil/interpreter/rt/ComputationTrace;)Lorg/iets3/core/expr/temporal/runtime/TemporalValue;" />
+      <node id="3885635233750777368" at="40,44,61,5" concept="3" />
+      <node id="3885635233750777289" at="36,0,64,0" concept="8" trace="doWithTwoTemporals#(Lorg/jetbrains/mps/openapi/model/SNode;Lorg/iets3/core/expr/temporal/runtime/TemporalValue;Lorg/jetbrains/mps/openapi/model/SNode;Lorg/iets3/core/expr/temporal/runtime/TemporalValue;Ljetbrains/mps/baseLanguage/closures/runtime/_FunctionTypes/_return_P2_E0;Lcom/mbeddr/mpsutil/interpreter/rt/IContext;Lcom/mbeddr/mpsutil/interpreter/rt/ComputationTrace;)Lorg/iets3/core/expr/temporal/runtime/TemporalValue;" />
+      <scope id="1053551810802681423" at="25,41,26,18" />
+      <scope id="7638810057884011112" at="29,38,30,108" />
+      <scope id="7638810057884018966" at="31,12,32,89" />
+      <scope id="3955961678040729621" at="46,26,47,26" />
+      <scope id="3955961678040732159" at="48,16,49,129" />
+      <scope id="3955961678040745717" at="54,26,55,27" />
+      <scope id="3955961678040745726" at="56,16,57,131" />
+      <scope id="3955961678040795915" at="74,26,75,29" />
+      <scope id="3955961678040795924" at="76,16,77,129" />
+      <scope id="8266215269022835960" at="44,30,50,9">
+        <var name="def" id="3955961678040728298" />
+      </scope>
+      <scope id="8266215269022861071" at="52,31,58,9">
+        <var name="def" id="3955961678040745708" />
+      </scope>
+      <scope id="3955961678040795904" at="72,33,78,9">
+        <var name="def" id="3955961678040795906" />
+      </scope>
+      <scope id="3955961678041449211" at="23,204,33,5">
+        <var name="lv" id="7638810057884007474" />
+        <var name="rv" id="7638810057884008360" />
+      </scope>
+      <scope id="4880743667104680916" at="70,114,80,65">
+        <var name="leftSliceVal" id="3955961678040774361" />
+      </scope>
+      <scope id="3955961678041449207" at="23,0,35,0">
+        <var name="binop" id="3955961678041450976" />
+        <var name="cov" id="7638810057890044545" />
+        <var name="ctx" id="3955961678041450981" />
+        <var name="left" id="3955961678041450972" />
+        <var name="right" id="3955961678041450974" />
+        <var name="trace" id="3955961678041450983" />
+      </scope>
+      <scope id="4880743667104680902" at="69,44,81,5">
+        <var name="i" id="4880743667104680903" />
+      </scope>
+      <scope id="4880743667104680827" at="66,242,82,15">
+        <var name="allIntervals" id="4880743667104680877" />
+        <var name="res" id="4880743667104680898" />
+      </scope>
+      <scope id="4880743667104680826" at="66,0,84,0">
+        <var name="binop" id="4880743667104680947" />
+        <var name="ctx" id="4880743667104680952" />
+        <var name="left" id="4880743667104680943" />
+        <var name="leftValue" id="7638810057884212801" />
+        <var name="right" id="4880743667104680945" />
+        <var name="rightValue" id="7638810057884215616" />
+        <var name="trace" id="8266215269022982290" />
+      </scope>
+      <scope id="3885635233750777382" at="41,114,60,62">
+        <var name="leftSlice" id="8266215269022763863" />
+        <var name="rightSlice" id="8266215269022790607" />
+      </scope>
+      <scope id="3885635233750777368" at="40,44,61,5">
+        <var name="i" id="3885635233750777369" />
+      </scope>
+      <scope id="3885635233750777293" at="36,250,62,39">
+        <var name="allIntervals" id="3885635233750777343" />
+        <var name="res" id="3885635233750777364" />
+      </scope>
+      <scope id="3885635233750777289" at="36,0,64,0">
+        <var name="binop" id="3885635233750777411" />
+        <var name="ctx" id="3885635233750777416" />
+        <var name="left" id="7638810057884163335" />
+        <var name="leftValue" id="3885635233750777407" />
+        <var name="right" id="7638810057884186556" />
+        <var name="rightValue" id="3885635233750777409" />
+        <var name="trace" id="8266215269022968603" />
+      </scope>
+      <unit id="7614641489631020587" at="85,0,88,0" name="org.iets3.core.expr.temporal.plugin.TemporalOpsInterpreter$CONCEPTS" />
+      <unit id="7614641489631020587" at="22,0,89,0" name="org.iets3.core.expr.temporal.plugin.TemporalOpsInterpreter" />
+    </file>
+  </root>
+  <root nodeRef="r:e44c17a0-d569-437a-a7a1-7c26f734db5f(org.iets3.core.expr.temporal.plugin)/8266215269022832694">
+    <file name="InvalidSlicingExcptionInterpreter.java">
+      <node id="8266215269022955939" at="13,137,14,51" concept="9" />
+      <node id="8266215269022955923" at="13,0,16,0" concept="1" trace="InvalidSlicingExcptionInterpreter#(Lorg/jetbrains/mps/openapi/model/SNode;Lorg/iets3/core/expr/base/plugin/MessageValue;Ljava/lang/String;Lcom/mbeddr/mpsutil/interpreter/rt/IContext;Lcom/mbeddr/mpsutil/interpreter/rt/ComputationTrace;)V" />
+      <scope id="8266215269022955938" at="13,137,14,51" />
+      <scope id="8266215269022955923" at="13,0,16,0">
+        <var name="context" id="8266215269022955932" />
+        <var name="msg" id="8266215269022955926" />
+        <var name="nodeWithError" id="8266215269022955924" />
+        <var name="trace" id="8266215269022955934" />
+        <var name="uri" id="8266215269022955930" />
+      </scope>
+      <unit id="8266215269022832694" at="11,0,19,0" name="org.iets3.core.expr.temporal.plugin.InvalidSlicingExcptionInterpreter" />
+    </file>
+  </root>
+</debug-info>
+

@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<product version="3" modelHash="-bpowlrkfwfnumkz92kyinsqrnbrarp0">
+  <files names="IntentionsDescriptor.java:addBrackets_Intention.java:negateConditionForAll_Intention.java:negateConditionForAny_Intention.java:toggleCollectionSizeHexMaxValue_Intention.java:toggleCollectionSizeHexMinValue_Intention.java" />
+</product>
+

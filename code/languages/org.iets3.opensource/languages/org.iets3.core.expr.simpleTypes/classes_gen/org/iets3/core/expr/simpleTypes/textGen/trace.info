@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<debug-info version="2">
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123155:jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123165:jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242864:jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242878:jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1070462154015:jetbrains.mps.baseLanguage.structure.StaticFieldDeclaration" />
+  <root>
+    <file name="TextGenAspectDescriptor.java">
+      <unit at="12,0,33,0" name="org.iets3.core.expr.simpleTypes.textGen.TextGenAspectDescriptor" />
+    </file>
+  </root>
+  <root nodeRef="r:5a907ecf-5c13-4e1c-a814-7c47f3534a42(org.iets3.core.expr.simpleTypes.textGen)/5151426049052775530">
+    <file name="BooleanLiteral_TextGen.java">
+      <node id="5151426049052775530" at="13,54,14,55" concept="2" />
+      <node id="5151426049052775912" at="14,55,15,99" concept="0" />
+      <node id="5151426049052775530" at="12,0,17,0" concept="1" trace="generateText#(Ljetbrains/mps/text/rt/TextGenContext;)V" />
+      <scope id="5151426049052775530" at="13,54,15,99">
+        <var name="tgs" id="5151426049052775530" />
+      </scope>
+      <scope id="5151426049052775530" at="12,0,17,0">
+        <var name="ctx" id="5151426049052775530" />
+      </scope>
+      <unit id="5151426049052775530" at="11,0,18,0" name="org.iets3.core.expr.simpleTypes.textGen.BooleanLiteral_TextGen" />
+    </file>
+    <file name="TextGenAspectDescriptor.java">
+      <node id="5151426049052775530" at="22,48,23,44" concept="3" />
+      <scope id="5151426049052775530" at="22,48,23,44" />
+    </file>
+  </root>
+  <root nodeRef="r:5a907ecf-5c13-4e1c-a814-7c47f3534a42(org.iets3.core.expr.simpleTypes.textGen)/5151426049052777757">
+    <file name="NumberLiteral_TextGen.java">
+      <node id="5151426049052777757" at="12,54,13,55" concept="2" />
+      <node id="5151426049052777823" at="13,55,14,121" concept="0" />
+      <node id="5151426049052777757" at="11,0,16,0" concept="1" trace="generateText#(Ljetbrains/mps/text/rt/TextGenContext;)V" />
+      <scope id="5151426049052777757" at="12,54,14,121">
+        <var name="tgs" id="5151426049052777757" />
+      </scope>
+      <scope id="5151426049052777757" at="11,0,16,0">
+        <var name="ctx" id="5151426049052777757" />
+      </scope>
+      <unit id="5151426049052777757" at="10,0,17,0" name="org.iets3.core.expr.simpleTypes.textGen.NumberLiteral_TextGen" />
+    </file>
+    <file name="TextGenAspectDescriptor.java">
+      <node id="5151426049052777757" at="24,47,25,43" concept="3" />
+      <scope id="5151426049052777757" at="24,47,25,43" />
+    </file>
+  </root>
+  <root nodeRef="r:5a907ecf-5c13-4e1c-a814-7c47f3534a42(org.iets3.core.expr.simpleTypes.textGen)/5151426049052778480">
+    <file name="StringLiteral_TextGen.java">
+      <node id="5151426049052778480" at="14,54,15,55" concept="2" />
+      <node id="5151426049052778529" at="15,55,16,21" concept="0" />
+      <node id="5151426049052778554" at="16,21,17,87" concept="0" />
+      <node id="5151426049052779209" at="17,87,18,21" concept="0" />
+      <node id="5151426049052778480" at="22,0,23,0" concept="4" trace="value$zwlK" />
+      <node id="5151426049052778480" at="13,0,20,0" concept="1" trace="generateText#(Ljetbrains/mps/text/rt/TextGenContext;)V" />
+      <scope id="5151426049052778480" at="14,54,18,21">
+        <var name="tgs" id="5151426049052778480" />
+      </scope>
+      <scope id="5151426049052778480" at="13,0,20,0">
+        <var name="ctx" id="5151426049052778480" />
+      </scope>
+      <unit id="5151426049052778480" at="21,0,24,0" name="org.iets3.core.expr.simpleTypes.textGen.StringLiteral_TextGen$PROPS" />
+      <unit id="5151426049052778480" at="12,0,25,0" name="org.iets3.core.expr.simpleTypes.textGen.StringLiteral_TextGen" />
+    </file>
+    <file name="TextGenAspectDescriptor.java">
+      <node id="5151426049052778480" at="26,47,27,43" concept="3" />
+      <scope id="5151426049052778480" at="26,47,27,43" />
+    </file>
+  </root>
+</debug-info>
+

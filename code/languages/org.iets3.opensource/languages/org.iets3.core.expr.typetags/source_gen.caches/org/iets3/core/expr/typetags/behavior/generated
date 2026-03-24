@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<product version="3" modelHash="9dupql4h3w5w2vndya58z1mpuf51p7k">
+  <files names="AbstractTaggedType__BehaviorDescriptor.java:AtLeastTag__BehaviorDescriptor.java:AtMostTag__BehaviorDescriptor.java:BaseTaggedTypeHelper.java:BehaviorAspectDescriptor.java:EmptyTag__BehaviorDescriptor.java:ITagModifier__BehaviorDescriptor.java:ITag__BehaviorDescriptor.java:NAryTag__BehaviorDescriptor.java:TagHandlingCapability.java:TagNegation__BehaviorDescriptor.java:TaggedExpression__BehaviorDescriptor.java:TaggedType__BehaviorDescriptor.java:UnaryTag__BehaviorDescriptor.java" />
+</product>
+

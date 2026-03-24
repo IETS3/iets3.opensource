@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<debug-info version="2">
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123155:jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123159:jetbrains.mps.baseLanguage.structure.IfStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123165:jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242864:jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242878:jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/6329021646629104954:jetbrains.mps.baseLanguage.structure.SingleLineComment" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123157:jetbrains.mps.baseLanguage.structure.Statement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1070462154015:jetbrains.mps.baseLanguage.structure.StaticFieldDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1081236700938:jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" />
+  <root nodeRef="r:6083e844-2d05-4e00-99f4-20a170e2f807(org.iets3.core.trace.plugin)/8291775917712402642">
+    <file name="GenericTraceHelper.java">
+      <node id="1977415354603520241" at="25,132,26,62" concept="3" />
+      <node id="1977415354603791179" at="27,30,28,28" concept="5" />
+      <node id="1977415354603539349" at="28,28,29,207" concept="0" />
+      <node id="1977415354603791520" at="31,23,32,29" concept="5" />
+      <node id="1977415354603615639" at="32,29,33,216" concept="0" />
+      <node id="1977415354603791878" at="35,21,36,30" concept="5" />
+      <node id="401152637005261371" at="39,43,40,97" concept="4" />
+      <node id="5450493229221494614" at="44,5,45,56" concept="4" />
+      <node id="1977415354602632795" at="48,77,49,59" concept="4" />
+      <node id="1977415354602633989" at="52,88,53,59" concept="4" />
+      <node id="1977415354604189357" at="56,82,57,57" concept="4" />
+      <node id="1977415354604218311" at="60,102,61,57" concept="4" />
+      <node id="1977415354604190181" at="64,86,65,59" concept="4" />
+      <node id="1977415354604226279" at="68,106,69,59" concept="4" />
+      <node id="1977415354604479403" at="72,118,73,57" concept="4" />
+      <node id="1977415354604482398" at="76,98,77,57" concept="4" />
+      <node id="1977415354602690168" at="80,66,81,124" concept="4" />
+      <node id="7597077624273430006" at="85,119,86,116" concept="3" />
+      <node id="7597077624273155280" at="87,25,88,156" concept="0" />
+      <node id="7597077624272830732" at="89,5,90,22" concept="4" />
+      <node id="7597077624269388392" at="94,244,95,148" concept="3" />
+      <node id="7597077624269388398" at="95,148,96,51" concept="4" />
+      <node id="7597077624272289070" at="100,109,101,240" concept="3" />
+      <node id="7597077624271532762" at="101,240,102,154" concept="3" />
+      <node id="7597077624270868923" at="102,154,103,0" concept="6" />
+      <node id="7597077624270833349" at="103,0,104,26" concept="4" />
+      <node id="8291775917712402642" at="108,0,109,0" concept="7" trace="traceKind$_UHM" />
+      <node id="8291775917712402642" at="109,0,110,0" concept="7" trace="traceTarget$A1Zh" />
+      <node id="8291775917712402642" at="110,0,111,0" concept="7" trace="traceTarget$Q_qM" />
+      <node id="8291775917712402642" at="114,0,115,0" concept="7" trace="ITrace$ef" />
+      <node id="1977415354603720717" at="39,0,42,0" concept="2" trace="invoke#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljava/lang/Boolean;" />
+      <node id="1547623209398210525" at="48,0,51,0" concept="8" trace="findDefaultTraces#(Ljava/lang/Iterable;)Ljava/util/List;" />
+      <node id="1977415354600099579" at="52,0,55,0" concept="8" trace="findTracesOfKind#(Ljava/lang/Iterable;Lorg/jetbrains/mps/openapi/model/SNode;)Ljava/util/List;" />
+      <node id="1977415354604189329" at="56,0,59,0" concept="8" trace="findTracesTo#(Ljava/lang/Iterable;Lorg/jetbrains/mps/openapi/model/SNode;)Ljava/util/List;" />
+      <node id="1977415354604218275" at="60,0,63,0" concept="8" trace="findTracesToWithKind#(Ljava/lang/Iterable;Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;)Ljava/util/List;" />
+      <node id="1977415354604190153" at="64,0,67,0" concept="8" trace="findTracesFrom#(Ljava/lang/Iterable;Lorg/jetbrains/mps/openapi/model/SNode;)Ljava/util/List;" />
+      <node id="1977415354604226255" at="68,0,71,0" concept="8" trace="findTracesFromWithKind#(Ljava/lang/Iterable;Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;)Ljava/util/List;" />
+      <node id="1977415354604479395" at="72,0,75,0" concept="8" trace="findTracesFromToWithKind#(Ljava/lang/Iterable;Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;)Ljava/util/List;" />
+      <node id="1977415354604482388" at="76,0,79,0" concept="8" trace="findTracesFromTo#(Ljava/lang/Iterable;Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;)Ljava/util/List;" />
+      <node id="1977415354602689204" at="80,0,83,0" concept="8" trace="findElements#(Ljava/lang/Iterable;)Ljava/lang/Iterable;" />
+      <node id="7597077624272870027" at="86,116,89,5" concept="1" />
+      <node id="1977415354603513173" at="26,62,30,5" concept="1" />
+      <node id="1977415354603553566" at="30,5,34,5" concept="1" />
+      <node id="7597077624269845968" at="93,116,97,7" concept="4" />
+      <node id="1977415354603720708" at="37,72,42,24" concept="4" />
+      <node id="7597077624269840427" at="93,0,99,0" concept="8" trace="getAllUntracedElements#(Ljava/lang/Iterable;Lorg/jetbrains/mps/openapi/model/SNode;)Ljava/lang/Iterable;" />
+      <node id="7597077624270833347" at="100,0,106,0" concept="8" trace="getElementsWithoutTracekind#(Ljava/lang/Iterable;Lorg/jetbrains/mps/openapi/model/SNode;)Ljava/lang/Iterable;" />
+      <node id="1977415354603677392" at="36,30,43,9" concept="0" />
+      <node id="7597077624272817598" at="85,0,92,0" concept="8" trace="getUntracedElements#(Ljava/lang/Iterable;Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;)Ljava/lang/Iterable;" />
+      <node id="1977415354603618072" at="34,5,44,5" concept="1" />
+      <node id="5450493229221494582" at="25,0,47,0" concept="8" trace="findTraceResult#(Ljava/lang/Iterable;Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;)Ljava/util/List;" />
+      <scope id="1977415354603720718" at="39,43,40,97" />
+      <scope id="1547623209398210528" at="48,77,49,59" />
+      <scope id="1977415354600099582" at="52,88,53,59" />
+      <scope id="1977415354604189334" at="56,82,57,57" />
+      <scope id="1977415354604218280" at="60,102,61,57" />
+      <scope id="1977415354604190158" at="64,86,65,59" />
+      <scope id="1977415354604226260" at="68,106,69,59" />
+      <scope id="1977415354604479402" at="72,118,73,57" />
+      <scope id="1977415354604482397" at="76,98,77,57" />
+      <scope id="1977415354602689207" at="80,66,81,124" />
+      <scope id="7597077624272870029" at="87,25,88,156" />
+      <scope id="1977415354603513175" at="27,30,29,207" />
+      <scope id="1977415354603553568" at="31,23,33,216" />
+      <scope id="7597077624269388391" at="94,244,96,51">
+        <var name="results" id="7597077624269388393" />
+      </scope>
+      <scope id="1977415354603720717" at="39,0,42,0">
+        <var name="it" id="1977415354603720717" />
+      </scope>
+      <scope id="1547623209398210525" at="48,0,51,0">
+        <var name="elemsInScope" id="3398303381473578385" />
+      </scope>
+      <scope id="1977415354600099579" at="52,0,55,0">
+        <var name="elemsInScope" id="1977415354600099580" />
+        <var name="kind" id="1977415354600112373" />
+      </scope>
+      <scope id="1977415354604189329" at="56,0,59,0">
+        <var name="elemsInScope" id="1977415354604189330" />
+        <var name="to" id="1977415354604189332" />
+      </scope>
+      <scope id="1977415354604218275" at="60,0,63,0">
+        <var name="elemsInScope" id="1977415354604218276" />
+        <var name="kind" id="1977415354604221506" />
+        <var name="to" id="1977415354604218278" />
+      </scope>
+      <scope id="1977415354604190153" at="64,0,67,0">
+        <var name="elemsInScope" id="1977415354604190154" />
+        <var name="from" id="1977415354604190156" />
+      </scope>
+      <scope id="1977415354604226255" at="68,0,71,0">
+        <var name="elemsInScope" id="1977415354604226256" />
+        <var name="from" id="1977415354604226258" />
+        <var name="kind" id="1977415354604228898" />
+      </scope>
+      <scope id="1977415354604479395" at="72,0,75,0">
+        <var name="elemsInScope" id="1977415354604479396" />
+        <var name="from" id="1977415354604479398" />
+        <var name="kind" id="1977415354604479400" />
+        <var name="to" id="1977415354604481690" />
+      </scope>
+      <scope id="1977415354604482388" at="76,0,79,0">
+        <var name="elemsInScope" id="1977415354604482389" />
+        <var name="from" id="1977415354604482391" />
+        <var name="to" id="1977415354604482393" />
+      </scope>
+      <scope id="1977415354602689204" at="80,0,83,0">
+        <var name="s" id="1977415354602690107" />
+      </scope>
+      <scope id="7597077624269840430" at="93,116,97,7" />
+      <scope id="7597077624270833348" at="100,109,104,26">
+        <var name="filteredTraces" id="7597077624272289071" />
+        <var name="tracedElements" id="7597077624271532763" />
+      </scope>
+      <scope id="1977415354603720707" at="37,72,42,24" />
+      <scope id="7597077624272817599" at="85,119,90,22">
+        <var name="resultList" id="7597077624273430007" />
+      </scope>
+      <scope id="7597077624269840427" at="93,0,99,0">
+        <var name="conceptOfElement" id="7597077624269843726" />
+        <var name="elemsInScope" id="7597077624269844328" />
+      </scope>
+      <scope id="7597077624270833347" at="100,0,106,0">
+        <var name="elemsInScope" id="7597077624270833387" />
+        <var name="kind" id="7597077624271220132" />
+      </scope>
+      <scope id="7597077624272817598" at="85,0,92,0">
+        <var name="conceptOfElement" id="7597077624272817641" />
+        <var name="elemsInScope" id="7597077624272817638" />
+        <var name="kind" id="7597077624272830839" />
+      </scope>
+      <scope id="1977415354603618074" at="35,21,43,9" />
+      <scope id="5450493229221494592" at="25,132,45,56">
+        <var name="foundITraces" id="1977415354603520242" />
+      </scope>
+      <scope id="5450493229221494582" at="25,0,47,0">
+        <var name="elemsInScope" id="5450493229221494584" />
+        <var name="from" id="5450493229221494588" />
+        <var name="to" id="5450493229221494590" />
+        <var name="traceKind" id="5450493229221494586" />
+      </scope>
+      <unit id="8291775917712402642" at="113,0,116,0" name="org.iets3.core.trace.plugin.GenericTraceHelper$CONCEPTS" />
+      <unit id="1977415354603720717" at="38,153,42,9" name="org.iets3.core.trace.plugin.GenericTraceHelper$1" />
+      <unit id="8291775917712402642" at="107,0,112,0" name="org.iets3.core.trace.plugin.GenericTraceHelper$LINKS" />
+      <unit id="8291775917712402642" at="23,0,117,0" name="org.iets3.core.trace.plugin.GenericTraceHelper" />
+    </file>
+  </root>
+</debug-info>
+
