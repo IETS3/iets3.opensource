@@ -10543,30 +10543,6 @@
         </node>
       </node>
     </node>
-    <node concept="3clFb_" id="5mu4l81RBWW" role="jymVt">
-      <property role="TrG5h" value="setInstance" />
-      <node concept="37vLTG" id="5mu4l81RS8k" role="3clF46">
-        <property role="TrG5h" value="b" />
-        <node concept="10P_77" id="5mu4l81RXQO" role="1tU5fm" />
-      </node>
-      <node concept="3cqZAl" id="5mu4l81RBWY" role="3clF45" />
-      <node concept="3Tm1VV" id="5mu4l81RBWZ" role="1B3o_S" />
-      <node concept="3clFbS" id="5mu4l81RBX0" role="3clF47">
-        <node concept="3clFbF" id="5mu4l81RYCU" role="3cqZAp">
-          <node concept="37vLTI" id="5mu4l81SoTo" role="3clFbG">
-            <node concept="37vLTw" id="5mu4l81Stj1" role="37vLTx">
-              <ref role="3cqZAo" node="5mu4l81RS8k" resolve="b" />
-            </node>
-            <node concept="2OqwBi" id="5mu4l81S4FG" role="37vLTJ">
-              <node concept="Xjq3P" id="5mu4l81RYCT" role="2Oq$k0" />
-              <node concept="2OwXpG" id="5mu4l81S8Gs" role="2OqNvi">
-                <ref role="2Oxat5" node="7LcJ$BbTtUp" resolve="isInstance" />
-              </node>
-            </node>
-          </node>
-        </node>
-      </node>
-    </node>
     <node concept="2tJIrI" id="3RmCGNPRMl9" role="jymVt" />
     <node concept="3clFb_" id="3RmCGNPS1xD" role="jymVt">
       <property role="TrG5h" value="deleteOriginal" />
@@ -21609,9 +21585,6 @@
         </node>
         <node concept="x79VA" id="2BZZUn12sfW" role="3nqlJM">
           <property role="x79VB" value="ArtifactPath" />
-        </node>
-        <node concept="TZ5HI" id="1dm_BztJgP5" role="3nqlJM">
-          <node concept="TZ5HA" id="1dm_BztJgP6" role="3HnX3l" />
         </node>
       </node>
       <node concept="2AHcQZ" id="1dm_BztJgP7" role="2AJF6D">
