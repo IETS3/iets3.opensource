@@ -179,7 +179,7 @@
       <node id="3989254429233126635" at="49,0,50,22" concept="6" />
       <node id="3989254429233126635" at="58,130,59,161" concept="5" />
       <node id="3989254429233126635" at="59,161,60,0" concept="8" />
-      <node id="3989254429233126635" at="61,55,62,70" concept="2" />
+      <node id="3989254429233126635" at="61,55,62,74" concept="2" />
       <node id="3989254429233126635" at="63,9,64,0" concept="8" />
       <node id="3989254429233126635" at="64,0,65,22" concept="6" />
       <node id="3989254429233126642" at="70,59,71,60" concept="11" />
@@ -197,7 +197,7 @@
       <node id="2003922559627587698" at="109,181,110,19" concept="6" />
       <node id="2003922559627587802" at="111,5,112,16" concept="6" />
       <node id="3989254429233126635" at="114,0,115,0" concept="9" trace="canBeParentBreakingPoint" />
-      <node id="3989254429233126635" at="115,0,116,0" concept="9" trace="canBeRootBreakingPoint" />
+      <node id="3989254429233126635" at="115,0,116,0" concept="9" trace="canBeAncestorBreakingPoint" />
       <node id="3989254429233126635" at="118,0,119,0" concept="9" trace="FeatureModel$X0" />
       <node id="3989254429233126635" at="119,0,120,0" concept="9" trace="ConstraintGroupAnnotation$IO" />
       <node id="3989254429233126635" at="120,0,121,0" concept="9" trace="HasValueOp$Du" />
@@ -230,7 +230,7 @@
       <node id="3989254429233126635" at="84,0,102,0" concept="4" trace="getSpecifiedReferences#()Ljava/util/Map;" />
       <scope id="3989254429233126635" at="35,37,36,36" />
       <scope id="3989254429233126635" at="46,55,47,72" />
-      <scope id="3989254429233126635" at="61,55,62,70" />
+      <scope id="3989254429233126635" at="61,55,62,74" />
       <scope id="3989254429233126642" at="70,59,71,60" />
       <scope id="3989254429233126645" at="74,40,75,110" />
       <scope id="7863545206567639526" at="88,116,89,20" />
@@ -602,11 +602,11 @@
       <node id="8884899274646892711" at="19,45,20,44" concept="11" />
       <node id="8884899274646892711" at="27,130,28,161" concept="5" />
       <node id="8884899274646892711" at="28,161,29,0" concept="8" />
-      <node id="8884899274646892711" at="30,55,31,70" concept="2" />
+      <node id="8884899274646892711" at="30,55,31,74" concept="2" />
       <node id="8884899274646892711" at="32,9,33,0" concept="8" />
       <node id="8884899274646892711" at="33,0,34,22" concept="6" />
       <node id="6763486487108628372" at="38,149,39,77" concept="6" />
-      <node id="8884899274646892711" at="41,0,42,0" concept="9" trace="canBeRootBreakingPoint" />
+      <node id="8884899274646892711" at="41,0,42,0" concept="9" trace="canBeAncestorBreakingPoint" />
       <node id="8884899274646892711" at="44,0,45,0" concept="9" trace="ExpressionConstraint$Nn" />
       <node id="8884899274646892711" at="19,0,22,0" concept="1" trace="ExpressionConstraint_Constraints#()V" />
       <node id="8884899274646892711" at="29,0,32,9" concept="3" />
@@ -615,7 +615,7 @@
       <node id="8884899274646892711" at="24,109,36,6" concept="6" />
       <node id="8884899274646892711" at="23,0,38,0" concept="4" trace="calculateCanBeAncestorConstraint#()Ljetbrains/mps/smodel/runtime/ConstraintFunction;" />
       <scope id="8884899274646892711" at="19,45,20,44" />
-      <scope id="8884899274646892711" at="30,55,31,70" />
+      <scope id="8884899274646892711" at="30,55,31,74" />
       <scope id="8884899274646892713" at="38,149,39,77" />
       <scope id="8884899274646892711" at="19,0,22,0" />
       <scope id="8884899274646892711" at="38,0,41,0">

@@ -59,7 +59,7 @@ public class FeatureModel_Constraints extends BaseConstraintsDescriptor {
         boolean result = staticCanBeAnAncestor(context.getNode(), context.getChildNode(), context.getChildConcept(), context.getParentNode(), context.getLink());
 
         if (!(result) && checkingNodeContext != null) {
-          checkingNodeContext.setBreakingNode(canBeRootBreakingPoint);
+          checkingNodeContext.setBreakingNode(canBeAncestorBreakingPoint);
         }
 
         return result;
@@ -112,7 +112,7 @@ public class FeatureModel_Constraints extends BaseConstraintsDescriptor {
     return true;
   }
   private static final SNodePointer canBeParentBreakingPoint = new SNodePointer("r:e8b70ecd-f70e-4568-8a91-fec86577fca7(org.iets3.variability.featuremodel.base.constraints)", "6214772678431674988");
-  private static final SNodePointer canBeRootBreakingPoint = new SNodePointer("r:e8b70ecd-f70e-4568-8a91-fec86577fca7(org.iets3.variability.featuremodel.base.constraints)", "2003922559627585380");
+  private static final SNodePointer canBeAncestorBreakingPoint = new SNodePointer("r:e8b70ecd-f70e-4568-8a91-fec86577fca7(org.iets3.variability.featuremodel.base.constraints)", "2003922559627585380");
 
   private static final class CONCEPTS {
     /*package*/ static final SConcept FeatureModel$X0 = MetaAdapterFactory.getConcept(0x165f1d0525064544L, 0x895e1424f54166ecL, 0x375cadc47516a211L, "org.iets3.variability.featuremodel.base.structure.FeatureModel");

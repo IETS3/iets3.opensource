@@ -22,7 +22,6 @@ import jetbrains.mps.lang.smodel.generator.smodelAdapter.SConceptOperations;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import java.util.ArrayList;
 import jetbrains.mps.internal.collections.runtime.Sequence;
-import jetbrains.mps.classloading.ClassLoaderManager;
 import jetbrains.mps.typesystem.inference.TypeCheckingContext;
 import jetbrains.mps.newTypesystem.context.IncrementalTypecheckingContext;
 import jetbrains.mps.typesystem.inference.TypeChecker;
@@ -322,8 +321,7 @@ public class UnitConversionUtil {
   public static SNode createConversionSpecifierForPrefixedUnitReferences(SNode convertUnit, UnitMap sourceUnitMap, UnitMap targetUnitMap) {
     SNode expression = IConvertUnit__BehaviorDescriptor.getExpression_id7SygLIkQnGn.invoke(convertUnit);
     // deprecated getInstance is necessary to ensure compatibility with the command-line generator execution (MpsEnvironment)
-    ClassLoaderManager classLoaderManager = ClassLoaderManager.getInstance();
-    TypeCheckingContext typeChecking = new IncrementalTypecheckingContext(expression, TypeChecker.getInstance().getTypeCheckerHelper(), classLoaderManager);
+    TypeCheckingContext typeChecking = new IncrementalTypecheckingContext(expression, TypeChecker.getInstance().getTypeCheckerHelper(), null);
     typeChecking.checkIfNotChecked(expression, false);
     SNode sourceType = typeChecking.typeOf(expression);
     typeChecking.dispose();
@@ -346,8 +344,8 @@ public class UnitConversionUtil {
           int targetFactor = (targetPrefix != null ? (int) targetPrefix.factor() : 0);
 
           int base = GlobalUnitPrefixManager.getManager(SLinkOperations.getTarget(sourceExpression, LINKS.unit$nTeG), SLinkOperations.getTarget(targetUnitReference, LINKS.unit$nTeG)).getBase();
-          SNode powerExpr = createPowerExpression_5ohk72_a0k0c0i0sb(String.valueOf(base), String.valueOf(sourceFactor) + ".0", String.valueOf(targetFactor) + ".0");
-          return createConversionSpecifier_5ohk72_a11a2a8a44(powerExpr);
+          SNode powerExpr = createPowerExpression_5ohk72_a0k0c0h0sb(String.valueOf(base), String.valueOf(sourceFactor) + ".0", String.valueOf(targetFactor) + ".0");
+          return createConversionSpecifier_5ohk72_a11a2a7a44(powerExpr);
         }
       }
     }
@@ -407,7 +405,7 @@ public class UnitConversionUtil {
     n0.forChild(LINKS.exponent$xhDu).initNode(p1, CONCEPTS.Exponent$bg, true);
     return n0.getResult();
   }
-  private static SNode createPowerExpression_5ohk72_a0k0c0i0sb(String p0, String p1, String p2) {
+  private static SNode createPowerExpression_5ohk72_a0k0c0h0sb(String p0, String p1, String p2) {
     SNodeBuilder n0 = new SNodeBuilder().init(CONCEPTS.PowerExpression$l7);
     {
       SNodeBuilder n1 = n0.forChild(LINKS.expr$CW3E).init(CONCEPTS.NumberLiteral$wE);
@@ -426,7 +424,7 @@ public class UnitConversionUtil {
     }
     return n0.getResult();
   }
-  private static SNode createConversionSpecifier_5ohk72_a11a2a8a44(SNode p0) {
+  private static SNode createConversionSpecifier_5ohk72_a11a2a7a44(SNode p0) {
     SNodeBuilder n0 = new SNodeBuilder().init(CONCEPTS.ConversionSpecifier$X$);
     n0.forChild(LINKS.type$poAd).init(CONCEPTS.IntegerType$m0);
     {

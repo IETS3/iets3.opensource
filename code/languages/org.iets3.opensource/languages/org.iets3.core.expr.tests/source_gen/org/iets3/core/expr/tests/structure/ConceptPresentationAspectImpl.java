@@ -520,7 +520,7 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
           cpb.shortDesc("a collection of test items (assertions)");
           cpb.presentationByName();
-          cpb.icon(IconContainer.RESOURCE_a0a3a0a55b0oc);
+          cpb.icon(IconContainer.RESOURCE_0);
           props_TestCase = cpb.create();
         }
         return props_TestCase;
@@ -567,7 +567,7 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           cpb.deprecateProperty(0x7a477bfec2b18bacL, "executeAutomatically");
           cpb.shortDesc("a test suite");
           cpb.presentationByName();
-          cpb.icon(IconContainer.RESOURCE_a0a4a0a16b0oc);
+          cpb.icon(IconContainer.RESOURCE_1);
           props_TestSuite = cpb.create();
         }
         return props_TestSuite;
