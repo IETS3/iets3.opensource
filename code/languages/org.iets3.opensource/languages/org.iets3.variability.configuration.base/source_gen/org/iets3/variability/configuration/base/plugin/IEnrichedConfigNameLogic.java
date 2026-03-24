@@ -12,7 +12,7 @@ public interface IEnrichedConfigNameLogic {
 
   /**
    * Checks if the enriched name is actually different from the configuration's manual name.
-   * It is recommended to avoid string comparisons, if possible. 
+   * It is recommended to avoid string comparisons, if possible.
    */
   boolean hasActualEnrichedName(SNode config);
 

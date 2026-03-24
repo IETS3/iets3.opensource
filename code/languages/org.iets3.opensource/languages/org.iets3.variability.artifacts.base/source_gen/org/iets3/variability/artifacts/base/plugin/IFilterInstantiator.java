@@ -20,8 +20,8 @@ import java.util.Collections;
 public interface IFilterInstantiator {
 
   /**
-   * Do the actual filtering and instantiation (if supported). 
-   * The artifact nodes to be filtered, the variant configuration and other options are provided 
+   * Do the actual filtering and instantiation (if supported).
+   * The artifact nodes to be filtered, the variant configuration and other options are provided
    * by a FilterParams instance, which can be constructed via a builder pattern.
    * 
    * @param filterParams the parameters for this filter action
