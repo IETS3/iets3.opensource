@@ -78,7 +78,7 @@ public class InterpreterExprProcessInterpreter extends InterpreterBase {
         }
       }
       public EvaluatorInfo getInfo() {
-        return new EvaluatorInfo("WhoIsNextExpr", "http://127.0.0.1:63320/node?ref=a4c8ef98-4c25-46e7-a85e-c069f0f6f2dc%2Fi%3A10000001%28org.iets3.core.expr.process.interpreter%40transient127%2Forg.iets3.core.expr.process.interpreter.plugin%400%29%2F6076143548507141005");
+        return new EvaluatorInfo("WhoIsNextExpr", "http://127.0.0.1:63320/node?ref=69a5699e-25b7-4662-a730-25331dee209d%2Fi%3A10000001%28org.iets3.core.expr.process.interpreter%40transient125%2Forg.iets3.core.expr.process.interpreter.plugin%400%29%2F6076143548507141005");
       }
 
       @Override
@@ -107,7 +107,7 @@ public class InterpreterExprProcessInterpreter extends InterpreterBase {
         }
       }
       public EvaluatorInfo getInfo() {
-        return new EvaluatorInfo("PartyLiteral", "http://127.0.0.1:63320/node?ref=a4c8ef98-4c25-46e7-a85e-c069f0f6f2dc%2Fi%3A10000001%28org.iets3.core.expr.process.interpreter%40transient127%2Forg.iets3.core.expr.process.interpreter.plugin%400%29%2F1136100386042332336");
+        return new EvaluatorInfo("PartyLiteral", "http://127.0.0.1:63320/node?ref=69a5699e-25b7-4662-a730-25331dee209d%2Fi%3A10000001%28org.iets3.core.expr.process.interpreter%40transient125%2Forg.iets3.core.expr.process.interpreter.plugin%400%29%2F1136100386042332336");
       }
 
       @Override
@@ -139,7 +139,7 @@ public class InterpreterExprProcessInterpreter extends InterpreterBase {
         }
       }
       public EvaluatorInfo getInfo() {
-        return new EvaluatorInfo("EqualsExpression", "http://127.0.0.1:63320/node?ref=a4c8ef98-4c25-46e7-a85e-c069f0f6f2dc%2Fi%3A10000001%28org.iets3.core.expr.process.interpreter%40transient127%2Forg.iets3.core.expr.process.interpreter.plugin%400%29%2F4378712714625381740");
+        return new EvaluatorInfo("EqualsExpression", "http://127.0.0.1:63320/node?ref=69a5699e-25b7-4662-a730-25331dee209d%2Fi%3A10000001%28org.iets3.core.expr.process.interpreter%40transient125%2Forg.iets3.core.expr.process.interpreter.plugin%400%29%2F4378712714625381740");
       }
 
       @Override
@@ -171,7 +171,7 @@ public class InterpreterExprProcessInterpreter extends InterpreterBase {
         }
       }
       public EvaluatorInfo getInfo() {
-        return new EvaluatorInfo("NotEqualsExpression", "http://127.0.0.1:63320/node?ref=a4c8ef98-4c25-46e7-a85e-c069f0f6f2dc%2Fi%3A10000001%28org.iets3.core.expr.process.interpreter%40transient127%2Forg.iets3.core.expr.process.interpreter.plugin%400%29%2F4378712714625413892");
+        return new EvaluatorInfo("NotEqualsExpression", "http://127.0.0.1:63320/node?ref=69a5699e-25b7-4662-a730-25331dee209d%2Fi%3A10000001%28org.iets3.core.expr.process.interpreter%40transient125%2Forg.iets3.core.expr.process.interpreter.plugin%400%29%2F4378712714625413892");
       }
 
       @Override
@@ -200,7 +200,7 @@ public class InterpreterExprProcessInterpreter extends InterpreterBase {
         }
       }
       public EvaluatorInfo getInfo() {
-        return new EvaluatorInfo("RunProcess", "http://127.0.0.1:63320/node?ref=a4c8ef98-4c25-46e7-a85e-c069f0f6f2dc%2Fi%3A10000001%28org.iets3.core.expr.process.interpreter%40transient127%2Forg.iets3.core.expr.process.interpreter.plugin%400%29%2F9163496876328068521");
+        return new EvaluatorInfo("RunProcess", "http://127.0.0.1:63320/node?ref=69a5699e-25b7-4662-a730-25331dee209d%2Fi%3A10000001%28org.iets3.core.expr.process.interpreter%40transient125%2Forg.iets3.core.expr.process.interpreter.plugin%400%29%2F9163496876328068521");
       }
 
       @Override

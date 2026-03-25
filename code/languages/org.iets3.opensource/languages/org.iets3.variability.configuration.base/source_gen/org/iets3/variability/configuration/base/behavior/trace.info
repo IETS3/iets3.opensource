@@ -5254,9 +5254,8 @@
       <node id="3016709118214565288" at="253,68,254,0" concept="12" />
       <node id="8737753560264785474" at="255,197,256,197" concept="4" />
       <node id="8737753560264785484" at="256,197,257,101" concept="4" />
-      <node id="8737753560264785490" at="257,101,258,15" concept="10" />
-      <node id="8737753560264785504" at="260,151,261,96" concept="4" />
-      <node id="8737753560264785517" at="262,7,263,100" concept="4" />
+      <node id="8737753560264785504" at="259,153,260,98" concept="4" />
+      <node id="8737753560264785517" at="261,9,262,102" concept="4" />
       <node id="8737753560264592572" at="268,163,269,304" concept="10" />
       <node id="8737753560270167763" at="272,72,273,231" concept="10" />
       <node id="8737753560270230038" at="276,75,277,237" concept="10" />
@@ -5309,7 +5308,7 @@
       <node id="5343842209080671207" at="207,9,210,9" concept="7" />
       <node id="8848546765732410318" at="217,130,220,7" concept="7" />
       <node id="8737753560264881736" at="227,94,230,5" concept="7" />
-      <node id="8737753560264785502" at="259,7,262,7" concept="7" />
+      <node id="8737753560264785502" at="258,14,261,9" concept="7" />
       <node id="8737753560264592569" at="268,0,271,0" concept="14" trace="matchingSubfeatureConfigOfExtendedConfig#(Ljava/lang/Iterable;Lorg/jetbrains/mps/openapi/model/SNode;)Ljava/util/Optional;" />
       <node id="8737753560270167760" at="272,0,275,0" concept="14" trace="bothSelected#(Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;)Z" />
       <node id="8737753560270230035" at="276,0,279,0" concept="14" trace="bothDisSelected#(Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;)Z" />
@@ -5328,7 +5327,7 @@
       <node id="8848546765726241627" at="317,0,321,0" concept="14" trace="createInlineFeatureConfigurationContent_w45mms_a0a0a0a0f0r#()Lorg/jetbrains/mps/openapi/model/SNode;" />
       <node id="588069925734735745" at="45,53,50,9" concept="7" />
       <node id="1404837192717772634" at="128,90,133,9" concept="7" />
-      <node id="8737753560264785472" at="254,0,259,7" concept="7" />
+      <node id="815021483314489148" at="258,12,263,7" concept="1" />
       <node id="8737753560270339230" at="290,0,295,5" concept="6" />
       <node id="7546762587690761307" at="304,53,309,7" concept="6" />
       <node id="1649980136394251097" at="182,64,188,5" concept="1" />
@@ -5342,6 +5341,7 @@
       <node id="588069925725665700" at="42,102,51,7" concept="6" />
       <node id="1649980136394222215" at="182,0,191,0" concept="14" trace="isEmptyInlineContent#(Lorg/jetbrains/mps/openapi/model/SNode;)Z" />
       <node id="5343842209080671174" at="202,49,211,7" concept="7" />
+      <node id="8737753560264785472" at="254,0,263,7" concept="7" />
       <node id="8737753560258916154" at="62,0,72,0" concept="14" trace="attributesOkToApplyInheritance#(Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;)Z" />
       <node id="8541409672723224784" at="127,87,137,7" concept="7" />
       <node id="8737753560264750704" at="216,0,226,0" concept="14" trace="isDetachable#(Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;)Z" />
@@ -5377,7 +5377,7 @@
       <scope id="5343842209080671208" at="208,102,209,22" />
       <scope id="8848546765732410320" at="218,120,219,21" />
       <scope id="8737753560264881737" at="228,244,229,13" />
-      <scope id="8737753560264785503" at="260,151,261,96" />
+      <scope id="8737753560264785503" at="259,153,260,98" />
       <scope id="8737753560264592571" at="268,163,269,304" />
       <scope id="8737753560270167762" at="272,72,273,231" />
       <scope id="8737753560270230037" at="276,75,277,237" />
@@ -5392,6 +5392,7 @@
       <scope id="8737753560264881776" at="235,244,237,13" />
       <scope id="8737753560264881800" at="240,117,242,13" />
       <scope id="8737753560264881813" at="244,120,246,13" />
+      <scope id="8737753560264785473" at="255,197,257,101" />
       <scope id="8541409672731146106" at="313,81,315,26">
         <var name="n0" id="8541409672731146106" />
       </scope>
@@ -5412,7 +5413,6 @@
       <scope id="1649980136397368448" at="178,0,181,0">
         <var name="subConfig" id="1649980136397368144" />
       </scope>
-      <scope id="8737753560264785473" at="255,197,258,15" />
       <scope id="8737753560264592569" at="268,0,271,0">
         <var name="subfeatureConfigsOfextendedConfig" id="8737753560264592589" />
         <var name="subfeatureConfiguration" id="8737753560264592592" />
@@ -5433,6 +5433,7 @@
       <scope id="1649980136394251097" at="183,5,187,7">
         <var name="ifcc" id="1649980136394251097" />
       </scope>
+      <scope id="815021483314489149" at="258,14,262,102" />
       <scope id="8541409672731146106" at="313,0,317,0" />
       <scope id="8848546765726241627" at="317,0,321,0" />
       <scope id="8737753560258916166" at="63,283,68,7">
@@ -5505,7 +5506,7 @@
       <scope id="8133409598996247227" at="41,0,53,5">
         <var name="extendedFeatureModelConfig" id="8133409598996247229" />
       </scope>
-      <scope id="8737753560264785458" at="251,341,263,100">
+      <scope id="8737753560264785458" at="251,341,263,7">
         <var name="extendedFeatureAttributeAssignment" id="8737753560264785460" />
         <var name="inheritingFeatureAttributeAssignment" id="8737753560264785466" />
       </scope>

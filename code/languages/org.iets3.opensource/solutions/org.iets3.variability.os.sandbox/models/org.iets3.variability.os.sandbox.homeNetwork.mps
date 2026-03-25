@@ -21,6 +21,7 @@
       <concept id="6698472021570799893" name="org.iets3.variability.configuration.base.structure.FeatureModelConfiguration" flags="ng" index="rqKB5">
         <property id="6821044287477808223" name="solverErrorMessage" index="26YOJW" />
         <property id="3414566187109826511" name="__adaptHash" index="bROok" />
+        <property id="5050560734055387940" name="abstract" index="33ZQ4u" />
         <property id="4791626744562666548" name="initiallyChecked" index="1n_0Gn" />
         <property id="4791626744558055097" name="complete" index="1nQUAq" />
       </concept>
@@ -36,22 +37,13 @@
         <child id="3470763221648007850" name="value" index="3HYO9C" />
       </concept>
     </language>
-    <language id="cfaa4966-b7d5-4b69-b66a-309a6e1a7290" name="org.iets3.core.expr.base">
-      <concept id="4261931054731905240" name="org.iets3.core.expr.base.structure.IContainExpressionParam" flags="ngI" index="2lDidI">
-        <child id="4261931054731905241" name="expr" index="2lDidJ" />
-      </concept>
-      <concept id="5115872837156723899" name="org.iets3.core.expr.base.structure.LogicalOrExpression" flags="ng" index="30deu6" />
-      <concept id="5115872837156576277" name="org.iets3.core.expr.base.structure.BinaryExpression" flags="ng" index="30dEsC">
-        <child id="5115872837156576280" name="right" index="30dEs_" />
-        <child id="5115872837156576278" name="left" index="30dEsF" />
-      </concept>
-      <concept id="1514143479005139333" name="org.iets3.core.expr.base.structure.LogicalImpliesExpression" flags="ng" index="3o403X" />
-      <concept id="9002563722476995145" name="org.iets3.core.expr.base.structure.DotExpression" flags="ng" index="1QScDb">
-        <child id="9002563722476995147" name="target" index="1QScD9" />
-      </concept>
-    </language>
     <language id="6b277d9a-d52d-416f-a209-1919bd737f50" name="org.iets3.core.expr.simpleTypes">
-      <concept id="8219602584782245544" name="org.iets3.core.expr.simpleTypes.structure.NumberType" flags="ng" index="mLuIC" />
+      <concept id="7425695345928358745" name="org.iets3.core.expr.simpleTypes.structure.TrueLiteral" flags="ng" index="2vmpnb" />
+      <concept id="7425695345928349207" name="org.iets3.core.expr.simpleTypes.structure.BooleanType" flags="ng" index="2vmvy5" />
+      <concept id="5115872837157252552" name="org.iets3.core.expr.simpleTypes.structure.StringLiteral" flags="ng" index="30bdrP">
+        <property id="5115872837157252555" name="value" index="30bdrQ" />
+      </concept>
+      <concept id="5115872837157252551" name="org.iets3.core.expr.simpleTypes.structure.StringType" flags="ng" index="30bdrU" />
       <concept id="5115872837157054170" name="org.iets3.core.expr.simpleTypes.structure.NumberLiteral" flags="ng" index="30bXRB">
         <property id="5115872837157054173" name="value" index="30bXRw" />
       </concept>
@@ -60,9 +52,6 @@
       <concept id="7061117989422575313" name="org.iets3.core.expr.toplevel.structure.EnumLiteral" flags="ng" index="5mgYR" />
       <concept id="7061117989422575278" name="org.iets3.core.expr.toplevel.structure.EnumDeclaration" flags="ng" index="5mgZ8">
         <child id="7061117989422575348" name="literals" index="5mgYi" />
-      </concept>
-      <concept id="7061117989422575803" name="org.iets3.core.expr.toplevel.structure.EnumType" flags="ng" index="5mh7t">
-        <reference id="7061117989422575859" name="enum" index="5mh6l" />
       </concept>
       <concept id="7061117989422577349" name="org.iets3.core.expr.toplevel.structure.EnumLiteralRef" flags="ng" index="5mhuz">
         <reference id="7061117989422577417" name="literal" index="5mhpJ" />
@@ -85,15 +74,6 @@
       </concept>
     </language>
     <language id="165f1d05-2506-4544-895e-1424f54166ec" name="org.iets3.variability.featuremodel.base">
-      <concept id="8997672845438204620" name="org.iets3.variability.featuremodel.base.structure.SubFeatureDotTarget" flags="ng" index="21mTOb">
-        <reference id="8997672845438204633" name="feature" index="21mTOu" />
-      </concept>
-      <concept id="8997672845437948654" name="org.iets3.variability.featuremodel.base.structure.FeatureRefExpr" flags="ng" index="21nZkD">
-        <reference id="8997672845437948664" name="feature" index="21nZkZ" />
-      </concept>
-      <concept id="8997672845437758029" name="org.iets3.variability.featuremodel.base.structure.ExpressionConstraint" flags="ng" index="21CcQa">
-        <child id="8997672845437758030" name="expr" index="21CcQ9" />
-      </concept>
       <concept id="8997672845436117511" name="org.iets3.variability.featuremodel.base.structure.FeatureAttribute" flags="ng" index="21IWn0">
         <child id="8997672845436636231" name="type" index="21GYI0" />
       </concept>
@@ -101,20 +81,11 @@
         <property id="3414566187106619445" name="__updateHash" index="bVyBI" />
       </concept>
       <concept id="3989254429233029895" name="org.iets3.variability.featuremodel.base.structure.Feature" flags="ng" index="12iwV3">
-        <property id="3989254429233130872" name="subFeatureRelationship" index="12h82W" />
         <child id="8997672845436698678" name="attributes" index="21GevL" />
         <child id="3989254429233029898" name="subFeatures" index="12iwVe" />
       </concept>
       <concept id="3989254429233029649" name="org.iets3.variability.featuremodel.base.structure.FeatureModel" flags="ng" index="12iwZl">
         <child id="3989254429233029900" name="root" index="12iwV8" />
-      </concept>
-      <concept id="3989254429233062247" name="org.iets3.variability.featuremodel.base.structure.FeatureTreeNode" flags="ng" index="12iSMz">
-        <property id="8359925522650749690" name="defaultState" index="ylr42" />
-        <property id="3989254429233130870" name="isMandatory" index="12h82M" />
-        <child id="8997672845437758023" name="constraints" index="21CcQ0" />
-      </concept>
-      <concept id="3989254429233062248" name="org.iets3.variability.featuremodel.base.structure.FeatureModelInclude" flags="ng" index="12iSMG">
-        <reference id="3989254429233062249" name="fm" index="12iSMH" />
       </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
@@ -124,132 +95,62 @@
     </language>
   </registry>
   <node concept="12icEM" id="7oSKjSJ25cu">
-    <property role="TrG5h" value="HomeNetworkFeatures" />
-    <node concept="12iwZl" id="19VDUSODbI5" role="12i2BX">
-      <property role="bVyBI" value="-2114197766" />
-      <property role="0Rz4W" value="881601232" />
-      <node concept="12iwV3" id="19VDUSODbI7" role="12iwV8">
-        <property role="TrG5h" value="HomeNetwork" />
-        <node concept="12iwV3" id="19VDUSODbIe" role="12iwVe">
-          <property role="TrG5h" value="Router" />
-          <property role="12h82W" value="3tsFshP62P5/xor" />
-          <node concept="12iwV3" id="19VDUSODkE4" role="12iwVe">
-            <property role="TrG5h" value="DSL" />
-          </node>
-          <node concept="12iwV3" id="19VDUSODkEj" role="12iwVe">
-            <property role="TrG5h" value="Cable" />
-          </node>
-          <node concept="12iwV3" id="19VDUSODkEK" role="12iwVe">
-            <property role="TrG5h" value="LTE" />
-          </node>
-        </node>
-        <node concept="12iwV3" id="19VDUSODkEo" role="12iwVe">
-          <property role="TrG5h" value="NAS" />
-          <node concept="12iwV3" id="19VDUSOD$OH" role="12iwVe">
-            <property role="TrG5h" value="RAID5" />
-          </node>
-          <node concept="21IWn0" id="19VDUSOD$OB" role="21GevL">
-            <property role="TrG5h" value="capacityGB" />
-            <node concept="mLuIC" id="19VDUSOD$OD" role="21GYI0" />
-          </node>
-        </node>
-        <node concept="12iwV3" id="19VDUSODkEu" role="12iwVe">
-          <property role="TrG5h" value="Wireless" />
-          <property role="12h82W" value="3tsFshP62P8/or" />
-          <property role="12h82M" value="true" />
-          <node concept="12iwV3" id="19VDUSODkE_" role="12iwVe">
-            <property role="TrG5h" value="ViaRouter" />
-          </node>
-          <node concept="12iwV3" id="19VDUSODkEB" role="12iwVe">
-            <property role="TrG5h" value="AccessPoint" />
-          </node>
-        </node>
-        <node concept="21CcQa" id="19VDUSODkEP" role="21CcQ0">
-          <node concept="3o403X" id="19VDUSOD$PT" role="21CcQ9">
-            <node concept="21nZkD" id="19VDUSODkEU" role="30dEsF">
-              <ref role="21nZkZ" node="19VDUSODkE_" resolve="ViaRouter" />
-            </node>
-            <node concept="21nZkD" id="19VDUSODkFn" role="30dEs_">
-              <ref role="21nZkZ" node="19VDUSODbIe" resolve="Router" />
-            </node>
-          </node>
-        </node>
-        <node concept="21CcQa" id="4eA6KATjsZ4" role="21CcQ0">
-          <node concept="3o403X" id="4eA6KATjt7u" role="21CcQ9">
-            <node concept="30deu6" id="4eA6KATjt7v" role="30dEsF">
-              <node concept="1QScDb" id="4eA6KATjt7w" role="30dEsF">
-                <node concept="21mTOb" id="4eA6KATjt1w" role="1QScD9">
-                  <ref role="21mTOu" node="4eA6KATjrrF" resolve="V110" />
-                </node>
-                <node concept="21nZkD" id="4eA6KATjsZj" role="2lDidJ">
-                  <ref role="21nZkZ" node="4eA6KATjrsa" resolve="power" />
-                </node>
-              </node>
-              <node concept="1QScDb" id="4eA6KATjt7x" role="30dEs_">
-                <node concept="21mTOb" id="4eA6KATjt6n" role="1QScD9">
-                  <ref role="21mTOu" node="4eA6KATjrs3" resolve="V115" />
-                </node>
-                <node concept="21nZkD" id="4eA6KATjt40" role="2lDidJ">
-                  <ref role="21nZkZ" node="4eA6KATjrsa" resolve="power" />
-                </node>
-              </node>
-            </node>
-            <node concept="1QScDb" id="4eA6KATjt9n" role="30dEs_">
-              <node concept="21mTOb" id="4eA6KATjtb6" role="1QScD9">
-                <ref role="21mTOu" node="19VDUSODkEj" resolve="Cable" />
-              </node>
-              <node concept="21nZkD" id="4eA6KATjt8x" role="2lDidJ">
-                <ref role="21nZkZ" node="19VDUSODbIe" resolve="Router" />
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="12iSMG" id="4eA6KATjrsa" role="12iwVe">
-          <property role="TrG5h" value="power" />
-          <ref role="12iSMH" node="4eA6KATjrpg" resolve="Power" />
-        </node>
-      </node>
-    </node>
-    <node concept="12i7jc" id="3FUl$NDSaQR" role="12i2BX" />
-    <node concept="12i7jc" id="7oSKjSJ2k0P" role="12i2BX" />
-    <node concept="12iwZl" id="4eA6KATjrpg" role="12i2BX">
-      <property role="bVyBI" value="63178535" />
-      <property role="0Rz4W" value="312773256" />
-      <node concept="12iwV3" id="4eA6KATjrph" role="12iwV8">
-        <property role="TrG5h" value="Power" />
-        <property role="12h82W" value="3tsFshP62P5/xor" />
-        <node concept="12iwV3" id="4eA6KATjrrr" role="12iwVe">
-          <property role="TrG5h" value="V220" />
-          <property role="ylr42" value="7g4qZxmjSBV/checked" />
-        </node>
-        <node concept="12iwV3" id="4eA6KATjrrw" role="12iwVe">
-          <property role="TrG5h" value="V230" />
-        </node>
-        <node concept="12iwV3" id="4eA6KATjrrB" role="12iwVe">
-          <property role="TrG5h" value="V240" />
-        </node>
-        <node concept="12iwV3" id="4eA6KATjrrF" role="12iwVe">
-          <property role="TrG5h" value="V110" />
-        </node>
-        <node concept="12iwV3" id="4eA6KATjrrQ" role="12iwVe">
-          <property role="TrG5h" value="V120" />
-        </node>
-        <node concept="12iwV3" id="4eA6KATjrs3" role="12iwVe">
-          <property role="TrG5h" value="V115" />
-        </node>
-        <node concept="21IWn0" id="3GmPeQeJhmh" role="21GevL">
-          <property role="TrG5h" value="curr" />
-          <node concept="5mh7t" id="3GmPeQeJhs1" role="21GYI0">
-            <ref role="5mh6l" node="3GmPeQeJfjz" resolve="Current" />
-          </node>
-        </node>
-      </node>
-    </node>
-    <node concept="12i7jc" id="4eA6KATjrqm" role="12i2BX" />
-    <node concept="12i7jc" id="7oSKjSJ25cw" role="12i2BX" />
+    <property role="TrG5h" value="AttrPlay" />
     <node concept="3GEVxB" id="7oSKjSJ2gjC" role="38kjvB">
       <ref role="3GEb4d" node="3GmPeQeJfdN" resolve="DataTypes" />
     </node>
+    <node concept="12iwZl" id="HfyrycQDkR" role="12i2BX">
+      <property role="bVyBI" value="207077578" />
+      <node concept="12iwV3" id="HfyrycQDkS" role="12iwV8">
+        <property role="TrG5h" value="K" />
+        <node concept="12iwV3" id="HfyrycQDkU" role="12iwVe">
+          <property role="TrG5h" value="A" />
+          <node concept="21IWn0" id="HfyrycQDoA" role="21GevL">
+            <property role="TrG5h" value="b" />
+            <node concept="2vmvy5" id="HfyrycQDo$" role="21GYI0" />
+          </node>
+          <node concept="21IWn0" id="HfyrycQDtV" role="21GevL">
+            <property role="TrG5h" value="c" />
+            <node concept="30bdrU" id="HfyrycQDtT" role="21GYI0" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="12i7jc" id="HfyrycQDyN" role="12i2BX" />
+    <node concept="12i7jc" id="HfyrycQD$q" role="12i2BX" />
+    <node concept="rqKB5" id="HfyrycQDA2" role="12i2BX">
+      <property role="26YOJW" value="" />
+      <property role="bVyBI" value="1950068099" />
+      <property role="bROok" value="207077578" />
+      <property role="1n_0Gn" value="true" />
+      <property role="0Rz4W" value="-999528529" />
+      <property role="TrG5h" value="C1" />
+      <property role="33ZQ4u" value="true" />
+      <property role="1nQUAq" value="true" />
+      <ref role="rqKBe" node="HfyrycQDkS" resolve="K" />
+      <node concept="rqCGG" id="HfyrycQDA5" role="rqCGo">
+        <node concept="rqKBd" id="HfyrycQDA6" role="rqKBa">
+          <property role="3BMj5M" value="5QKr2dW9gDW/userTrue" />
+          <ref role="rqKBe" node="HfyrycQDkU" resolve="A" />
+          <node concept="rqCGG" id="HfyrycQDA7" role="rqCGo">
+            <node concept="3HVKVk" id="HfyrycQDA8" role="3HVKVh">
+              <property role="2fdZ4z" value="zJQZm6SRYR/manual" />
+              <ref role="3HS9Pa" node="HfyrycQDoA" resolve="b" />
+              <node concept="2vmpnb" id="HfyrycQDFq" role="3HYO9C" />
+            </node>
+            <node concept="3HVKVk" id="HfyrycQDA9" role="3HVKVh">
+              <property role="2fdZ4z" value="zJQZm6SRYR/manual" />
+              <ref role="3HS9Pa" node="HfyrycQDtV" resolve="c" />
+              <node concept="30bdrP" id="HfyrycQDHt" role="3HYO9C">
+                <property role="30bdrQ" value="rr" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="12i7jc" id="HfyrycQDT3" role="12i2BX" />
+    <node concept="12i7jc" id="HfyrycQDVc" role="12i2BX" />
   </node>
   <node concept="_iOnU" id="3GmPeQeJfdN">
     <property role="TrG5h" value="DataTypes" />

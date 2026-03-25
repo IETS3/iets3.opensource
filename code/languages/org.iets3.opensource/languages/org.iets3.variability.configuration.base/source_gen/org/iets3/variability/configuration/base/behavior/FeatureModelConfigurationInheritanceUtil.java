@@ -255,12 +255,12 @@ public class FeatureModelConfigurationInheritanceUtil {
       if ((SLinkOperations.getTarget(extendedFeatureAttributeAssignment, LINKS.value$kgDc) != null) && (SLinkOperations.getTarget(inheritingFeatureAttributeAssignment, LINKS.value$kgDc) == null)) {
         SLinkOperations.setTarget(inheritingFeatureAttributeAssignment, LINKS.value$kgDc, SNodeOperations.copyNode(SLinkOperations.getTarget(extendedFeatureAttributeAssignment, LINKS.value$kgDc)));
         SPropertyOperations.assign(inheritingFeatureAttributeAssignment, PROPS.inherited$oyCC, true);
-        return;
+      } else {
+        if ((extendedFeatureAttributeAssignment == null) && SPropertyOperations.getBoolean(inheritingFeatureAttributeAssignment, PROPS.inherited$oyCC)) {
+          SLinkOperations.setTarget(inheritingFeatureAttributeAssignment, LINKS.value$kgDc, null);
+        }
+        SPropertyOperations.assign(inheritingFeatureAttributeAssignment, PROPS.inherited$oyCC, false);
       }
-      if ((extendedFeatureAttributeAssignment == null) && SPropertyOperations.getBoolean(inheritingFeatureAttributeAssignment, PROPS.inherited$oyCC)) {
-        SLinkOperations.setTarget(inheritingFeatureAttributeAssignment, LINKS.value$kgDc, null);
-      }
-      SPropertyOperations.assign(inheritingFeatureAttributeAssignment, PROPS.inherited$oyCC, false);
     }
   }
 
