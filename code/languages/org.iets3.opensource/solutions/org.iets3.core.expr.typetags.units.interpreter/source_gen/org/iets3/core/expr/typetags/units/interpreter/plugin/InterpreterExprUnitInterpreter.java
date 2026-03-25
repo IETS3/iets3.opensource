@@ -70,7 +70,7 @@ public class InterpreterExprUnitInterpreter extends InterpreterBase {
         }
       }
       public EvaluatorInfo getInfo() {
-        return new EvaluatorInfo("IConvertUnit", "http://127.0.0.1:63320/node?ref=642a4792-1257-4366-9ba6-77292ff2f1af%2Fi%3A10000001%28org.iets3.core.expr.typetags.units.interpreter%40transient149%2Forg.iets3.core.expr.typetags.units.interpreter.plugin%400%29%2F4063324562830258787");
+        return new EvaluatorInfo("IConvertUnit", "http://127.0.0.1:63320/node?ref=d2e8f069-f2f7-4afc-841f-443cfd7448c4%2Fi%3A10000001%28org.iets3.core.expr.typetags.units.interpreter%40transient149%2Forg.iets3.core.expr.typetags.units.interpreter.plugin%400%29%2F4063324562830258787");
       }
 
       @Override
@@ -99,7 +99,7 @@ public class InterpreterExprUnitInterpreter extends InterpreterBase {
         }
       }
       public EvaluatorInfo getInfo() {
-        return new EvaluatorInfo("ValExpression", "http://127.0.0.1:63320/node?ref=642a4792-1257-4366-9ba6-77292ff2f1af%2Fi%3A10000001%28org.iets3.core.expr.typetags.units.interpreter%40transient149%2Forg.iets3.core.expr.typetags.units.interpreter.plugin%400%29%2F4063324562830308195");
+        return new EvaluatorInfo("ValExpression", "http://127.0.0.1:63320/node?ref=d2e8f069-f2f7-4afc-841f-443cfd7448c4%2Fi%3A10000001%28org.iets3.core.expr.typetags.units.interpreter%40transient149%2Forg.iets3.core.expr.typetags.units.interpreter.plugin%400%29%2F4063324562830308195");
       }
 
       @Override
@@ -128,7 +128,7 @@ public class InterpreterExprUnitInterpreter extends InterpreterBase {
         }
       }
       public EvaluatorInfo getInfo() {
-        return new EvaluatorInfo("TaggedExpression", "http://127.0.0.1:63320/node?ref=642a4792-1257-4366-9ba6-77292ff2f1af%2Fi%3A10000001%28org.iets3.core.expr.typetags.units.interpreter%40transient149%2Forg.iets3.core.expr.typetags.units.interpreter.plugin%400%29%2F4063324562830525726");
+        return new EvaluatorInfo("TaggedExpression", "http://127.0.0.1:63320/node?ref=d2e8f069-f2f7-4afc-841f-443cfd7448c4%2Fi%3A10000001%28org.iets3.core.expr.typetags.units.interpreter%40transient149%2Forg.iets3.core.expr.typetags.units.interpreter.plugin%400%29%2F4063324562830525726");
       }
 
       @Override
