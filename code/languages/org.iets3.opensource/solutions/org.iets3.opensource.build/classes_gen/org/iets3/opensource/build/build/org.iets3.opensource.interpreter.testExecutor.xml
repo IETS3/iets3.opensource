@@ -70,7 +70,7 @@
         <id>org.iets3.opensource.interpreterExecutor</id>
         <name>org.iets3.opensource.interpreterExecutor</name>
         <version>${org.iets3.opensource.version}</version>
-        <depends>com.intellij.modules.platform</depends>
+        <depends>com.intellij.modules.mps</depends>
         <depends>org.iets3.core.junit.interpreter.run.configuration</depends>
         <depends>org.iets3.build.os</depends>
         <depends>jetbrains.mps.debugger.api</depends>
