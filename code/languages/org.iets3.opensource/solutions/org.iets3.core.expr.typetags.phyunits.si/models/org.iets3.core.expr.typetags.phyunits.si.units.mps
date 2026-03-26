@@ -55,6 +55,7 @@
       </concept>
       <concept id="1069230850837260491" name="org.iets3.core.expr.typetags.physunits.structure.ConversionRule" flags="ng" index="TRoc0">
         <property id="4042938304130002450" name="isImplicit" index="2yp$z_" />
+        <property id="4042938304133469412" name="implicitPriority" index="2yEn8j" />
         <child id="1741902046312299423" name="specifiers" index="27P04L" />
         <child id="7682951809459859739" name="targetUnit" index="2vOYbH" />
         <child id="7682951809459858876" name="sourceUnit" index="2vOZTa" />
@@ -5710,6 +5711,7 @@
     <node concept="_ixoA" id="4UAQJ87RczQ" role="_iOnB" />
     <node concept="TRoc0" id="4UAQJ87TI9k" role="_iOnB">
       <property role="2yp$z_" value="true" />
+      <property role="2yEn8j" value="1" />
       <node concept="27LzZq" id="4UAQJ87TI9m" role="27P04L">
         <node concept="30dDTi" id="4UAQJ87UhMf" role="27K$mF">
           <node concept="2m5Cep" id="4UAQJ87UhMg" role="30dEsF" />
@@ -5751,6 +5753,7 @@
     <node concept="_ixoA" id="4UAQJ87U$8$" role="_iOnB" />
     <node concept="TRoc0" id="4UAQJ87VY8P" role="_iOnB">
       <property role="2yp$z_" value="true" />
+      <property role="2yEn8j" value="3" />
       <node concept="27LzZq" id="4UAQJ87VY8R" role="27P04L">
         <node concept="30dDTi" id="4UAQJ87WxMe" role="27K$mF">
           <node concept="30dDTi" id="4UAQJ87WxMf" role="30dEsF">
@@ -5792,6 +5795,7 @@
     <node concept="_ixoA" id="4UAQJ87WOav" role="_iOnB" />
     <node concept="TRoc0" id="4UAQJ87Yeax" role="_iOnB">
       <property role="2yp$z_" value="true" />
+      <property role="2yEn8j" value="2" />
       <node concept="27LzZq" id="4UAQJ87Yeaz" role="27P04L">
         <node concept="30dDTi" id="4UAQJ87YLOo" role="27K$mF">
           <node concept="2m5Cep" id="4UAQJ87YLOp" role="30dEsF" />
@@ -5838,6 +5842,7 @@
     <node concept="_ixoA" id="4UAQJ87ZTTE" role="_iOnB" />
     <node concept="TRoc0" id="4UAQJ880cgt" role="_iOnB">
       <property role="2yp$z_" value="true" />
+      <property role="2yEn8j" value="4" />
       <node concept="27LzZq" id="4UAQJ880cgv" role="27P04L">
         <node concept="30dDTi" id="4UAQJ8811V4" role="27K$mF">
           <node concept="30dDTi" id="4UAQJ8811V5" role="30dEsF">

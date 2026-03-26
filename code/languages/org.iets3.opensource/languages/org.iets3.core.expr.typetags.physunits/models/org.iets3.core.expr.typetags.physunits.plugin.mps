@@ -24,10 +24,13 @@
     <import index="km5y" ref="r:78e88ebb-2d27-4b89-867f-623c50619338(org.iets3.core.expr.simpleTypes.interpreter.plugin)" />
     <import index="33ny" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.util(JDK/)" />
     <import index="x0pf" ref="r:d4f1532d-fc5c-419f-84ee-daef42867c8e(org.iets3.core.expr.typetags.physunits.typesystem)" />
+    <import index="vs0r" ref="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" />
+    <import index="guwi" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.io(JDK/)" />
+    <import index="hwgx" ref="r:fd2980c8-676c-4b19-b524-18c70e02f8b7(com.mbeddr.core.base.behavior)" />
+    <import index="lui2" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.module(MPS.OpenAPI/)" />
     <import index="tpd4" ref="r:00000000-0000-4000-0000-011c895902b4(jetbrains.mps.lang.typesystem.structure)" implicit="true" />
     <import index="tpcu" ref="r:00000000-0000-4000-0000-011c89590282(jetbrains.mps.lang.core.behavior)" implicit="true" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
-    <import index="vs0r" ref="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" implicit="true" />
     <import index="mhbf" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.model(MPS.OpenAPI/)" implicit="true" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
   </imports>
@@ -162,6 +165,7 @@
         <reference id="1068499141037" name="baseMethodDeclaration" index="37wK5l" />
         <child id="1068499141038" name="actualArgument" index="37wK5m" />
       </concept>
+      <concept id="1212685548494" name="jetbrains.mps.baseLanguage.structure.ClassCreator" flags="nn" index="1pGfFk" />
       <concept id="1107461130800" name="jetbrains.mps.baseLanguage.structure.Classifier" flags="ng" index="3pOWGL">
         <child id="5375687026011219971" name="member" index="jymVt" unordered="true" />
       </concept>
@@ -262,10 +266,19 @@
       </concept>
     </language>
     <language id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc">
+      <concept id="6832197706140518104" name="jetbrains.mps.baseLanguage.javadoc.structure.DocMethodParameterReference" flags="ng" index="zr_55" />
+      <concept id="6832197706140518103" name="jetbrains.mps.baseLanguage.javadoc.structure.BaseParameterReference" flags="ng" index="zr_5a">
+        <reference id="6832197706140518108" name="param" index="zr_51" />
+      </concept>
       <concept id="5349172909345501395" name="jetbrains.mps.baseLanguage.javadoc.structure.BaseDocComment" flags="ng" index="P$AiS">
         <child id="8465538089690331502" name="body" index="TZ5H$" />
+        <child id="5383422241790532083" name="tags" index="3nqlJM" />
       </concept>
       <concept id="5349172909345532724" name="jetbrains.mps.baseLanguage.javadoc.structure.MethodDocComment" flags="ng" index="P$JXv" />
+      <concept id="8465538089690881930" name="jetbrains.mps.baseLanguage.javadoc.structure.ParameterBlockDocTag" flags="ng" index="TUZQ0">
+        <property id="8465538089690881934" name="text" index="TUZQ4" />
+        <child id="6832197706140518123" name="parameter" index="zr_5Q" />
+      </concept>
       <concept id="8465538089690331500" name="jetbrains.mps.baseLanguage.javadoc.structure.CommentLine" flags="ng" index="TZ5HA">
         <child id="8970989240999019149" name="part" index="1dT_Ay" />
       </concept>
@@ -1085,6 +1098,171 @@
         <node concept="TZ5HA" id="5zjZVctiTYG" role="TZ5H$">
           <node concept="1dT_AC" id="5zjZVctiTYH" role="1dT_Ay">
             <property role="1dT_AB" value="Introduced to support the new, stricter unit compatibility check without forcing activation of the implicit conversions." />
+          </node>
+        </node>
+        <node concept="TZ5HA" id="Tizm$h5kOH" role="TZ5H$">
+          <node concept="1dT_AC" id="Tizm$h5kOI" role="1dT_Ay">
+            <property role="1dT_AB" value="" />
+          </node>
+        </node>
+        <node concept="TZ5HA" id="Tizm$h5kUN" role="TZ5H$">
+          <node concept="1dT_AC" id="Tizm$h5kUO" role="1dT_Ay">
+            <property role="1dT_AB" value="Note: This is probably not helpful, as an expression like &quot;10 min + 1 h&quot; cannot be evaluated without an implicit" />
+          </node>
+        </node>
+        <node concept="TZ5HA" id="Tizm$h5ld5" role="TZ5H$">
+          <node concept="1dT_AC" id="Tizm$h5ld6" role="1dT_Ay">
+            <property role="1dT_AB" value="      conversion rule. By switching off any errors such expressions can be modeled, but not processed in any way." />
+          </node>
+        </node>
+        <node concept="TZ5HA" id="Tizm$h5ljb" role="TZ5H$">
+          <node concept="1dT_AC" id="Tizm$h5ljc" role="1dT_Ay">
+            <property role="1dT_AB" value="      It is also impossible to compute a proper type for this, as the number range of the type can only be" />
+          </node>
+        </node>
+        <node concept="TZ5HA" id="Tizm$h5lvl" role="TZ5H$">
+          <node concept="1dT_AC" id="Tizm$h5lvm" role="1dT_Ay">
+            <property role="1dT_AB" value="      computed if implicit conversions are available (the type &quot;number[11|11]&lt;min&gt;&quot; is obviously wrong)." />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="2tJIrI" id="4AJD9T1gFQN" role="jymVt" />
+    <node concept="3clFb_" id="4AJD9T1gQEW" role="jymVt">
+      <property role="TrG5h" value="getUnitStandardizer" />
+      <node concept="3clFbS" id="4AJD9T1gQEZ" role="3clF47">
+        <node concept="3SKdUt" id="4AJD9T1hyH5" role="3cqZAp">
+          <node concept="1PaTwC" id="4AJD9T1hyH6" role="1aUNEU">
+            <node concept="3oM_SD" id="4AJD9T1hyH7" role="1PaTwD">
+              <property role="3oM_SC" value="The" />
+            </node>
+            <node concept="3oM_SD" id="4AJD9T1hyN4" role="1PaTwD">
+              <property role="3oM_SC" value="SIUnitStandardizer" />
+            </node>
+            <node concept="3oM_SD" id="4AJD9T1hyNA" role="1PaTwD">
+              <property role="3oM_SC" value="computes" />
+            </node>
+            <node concept="3oM_SD" id="4AJD9T1hyNR" role="1PaTwD">
+              <property role="3oM_SC" value="the" />
+            </node>
+            <node concept="3oM_SD" id="4AJD9T1hyO8" role="1PaTwD">
+              <property role="3oM_SC" value="common" />
+            </node>
+            <node concept="3oM_SD" id="4AJD9T1hyOp" role="1PaTwD">
+              <property role="3oM_SC" value="SI-base-unit" />
+            </node>
+            <node concept="3oM_SD" id="4AJD9T1hyOE" role="1PaTwD">
+              <property role="3oM_SC" value="for" />
+            </node>
+            <node concept="3oM_SD" id="4AJD9T1hyOV" role="1PaTwD">
+              <property role="3oM_SC" value="mixed" />
+            </node>
+            <node concept="3oM_SD" id="4AJD9T1hyPc" role="1PaTwD">
+              <property role="3oM_SC" value="expressions." />
+            </node>
+          </node>
+        </node>
+        <node concept="3SKdUt" id="4AJD9T1hz7_" role="3cqZAp">
+          <node concept="1PaTwC" id="4AJD9T1hz7A" role="1aUNEU">
+            <node concept="3oM_SD" id="4AJD9T1hz7B" role="1PaTwD">
+              <property role="3oM_SC" value="E.g." />
+            </node>
+            <node concept="3oM_SD" id="4AJD9T1hzfm" role="1PaTwD">
+              <property role="3oM_SC" value="&quot;10" />
+            </node>
+            <node concept="3oM_SD" id="4AJD9T1hzfn" role="1PaTwD">
+              <property role="3oM_SC" value="min" />
+            </node>
+            <node concept="3oM_SD" id="4AJD9T1hzfC" role="1PaTwD">
+              <property role="3oM_SC" value="+" />
+            </node>
+            <node concept="3oM_SD" id="4AJD9T1hzfD" role="1PaTwD">
+              <property role="3oM_SC" value="1" />
+            </node>
+            <node concept="3oM_SD" id="4AJD9T1hzga" role="1PaTwD">
+              <property role="3oM_SC" value="h&quot;" />
+            </node>
+            <node concept="3oM_SD" id="4AJD9T1hzgV" role="1PaTwD">
+              <property role="3oM_SC" value="will" />
+            </node>
+            <node concept="3oM_SD" id="4AJD9T1hzgW" role="1PaTwD">
+              <property role="3oM_SC" value="be" />
+            </node>
+            <node concept="3oM_SD" id="4AJD9T1hzhL" role="1PaTwD">
+              <property role="3oM_SC" value="interpreted" />
+            </node>
+            <node concept="3oM_SD" id="4AJD9T1hzi2" role="1PaTwD">
+              <property role="3oM_SC" value="as" />
+            </node>
+            <node concept="3oM_SD" id="4AJD9T1hzij" role="1PaTwD">
+              <property role="3oM_SC" value="&quot;60" />
+            </node>
+            <node concept="3oM_SD" id="4AJD9T1hzj4" role="1PaTwD">
+              <property role="3oM_SC" value="s" />
+            </node>
+            <node concept="3oM_SD" id="4AJD9T1hzj_" role="1PaTwD">
+              <property role="3oM_SC" value="+" />
+            </node>
+            <node concept="3oM_SD" id="4AJD9T1hzjA" role="1PaTwD">
+              <property role="3oM_SC" value="3600" />
+            </node>
+            <node concept="3oM_SD" id="4AJD9T1hzk7" role="1PaTwD">
+              <property role="3oM_SC" value="s&quot;," />
+            </node>
+            <node concept="3oM_SD" id="4AJD9T1hzkC" role="1PaTwD">
+              <property role="3oM_SC" value="as" />
+            </node>
+            <node concept="3oM_SD" id="4AJD9T1hzkT" role="1PaTwD">
+              <property role="3oM_SC" value="seconds" />
+            </node>
+            <node concept="3oM_SD" id="4AJD9T1hzla" role="1PaTwD">
+              <property role="3oM_SC" value="are" />
+            </node>
+            <node concept="3oM_SD" id="4AJD9T1hzlr" role="1PaTwD">
+              <property role="3oM_SC" value="the" />
+            </node>
+            <node concept="3oM_SD" id="4AJD9T1hzls" role="1PaTwD">
+              <property role="3oM_SC" value="SI-base-unit" />
+            </node>
+            <node concept="3oM_SD" id="4AJD9T1hzmd" role="1PaTwD">
+              <property role="3oM_SC" value="for" />
+            </node>
+            <node concept="3oM_SD" id="4AJD9T1hzme" role="1PaTwD">
+              <property role="3oM_SC" value="time." />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="4AJD9T1gZLf" role="3cqZAp">
+          <node concept="2ShNRf" id="4AJD9T1gZLd" role="3clFbG">
+            <node concept="1pGfFk" id="4AJD9T1h1O6" role="2ShVmc">
+              <property role="373rjd" value="true" />
+              <ref role="37wK5l" to="x0pf:76EiapRkXeb" resolve="SIUnitStandardizer" />
+              <node concept="37vLTw" id="4AJD9T1h1Zv" role="37wK5m">
+                <ref role="3cqZAo" node="4AJD9T1gZsA" resolve="context" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3Tm1VV" id="4AJD9T1gQF0" role="1B3o_S" />
+      <node concept="3uibUv" id="4AJD9T1gQEx" role="3clF45">
+        <ref role="3uigEE" to="rppw:76EiapQZFKA" resolve="IUnitStandardizer" />
+      </node>
+      <node concept="2JFqV2" id="4AJD9T1gGn5" role="2frcjj" />
+      <node concept="37vLTG" id="4AJD9T1gZsA" role="3clF46">
+        <property role="TrG5h" value="context" />
+        <node concept="3Tqbb2" id="4AJD9T1gZs_" role="1tU5fm" />
+      </node>
+      <node concept="P$JXv" id="4AJD9T1h2wq" role="lGtFl">
+        <node concept="TZ5HA" id="4AJD9T1h2wr" role="TZ5H$">
+          <node concept="1dT_AC" id="4AJD9T1h2ws" role="1dT_Ay">
+            <property role="1dT_AB" value="Provide strategy object which is used for standardizing units, if necessary." />
+          </node>
+        </node>
+        <node concept="TUZQ0" id="4AJD9T1h2wt" role="3nqlJM">
+          <property role="TUZQ4" value="the node which defines the scope for retrieving implicit conversion rules" />
+          <node concept="zr_55" id="4AJD9T1h2wv" role="zr_5Q">
+            <ref role="zr_51" node="4AJD9T1gZsA" resolve="context" />
           </node>
         </node>
       </node>

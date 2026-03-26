@@ -24,6 +24,9 @@
         <reference id="1075010451642646892" name="defaultMember" index="1H5jkz" />
         <child id="3348158742936976577" name="members" index="25R1y" />
       </concept>
+      <concept id="7862711839422615209" name="jetbrains.mps.lang.structure.structure.DocumentedNodeAnnotation" flags="ng" index="t5JxF">
+        <property id="7862711839422615217" name="text" index="t5JxN" />
+      </concept>
       <concept id="6054523464627964745" name="jetbrains.mps.lang.structure.structure.AttributeInfo_AttributedConcept" flags="ng" index="trNpa">
         <reference id="6054523464627965081" name="concept" index="trN6q" />
       </concept>
@@ -1069,6 +1072,21 @@
     <property role="TrG5h" value="IRepresentUnit" />
     <node concept="PrWs8" id="QWlYnXZPqT" role="PrDN$">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="6Topthyp48R">
+    <property role="EcuMT" value="7951217104980820535" />
+    <property role="TrG5h" value="TypeAsExpression" />
+    <ref role="1TJDcQ" to="hm2y:6sdnDbSla17" resolve="Expression" />
+    <node concept="1TJgyj" id="6Topthyp48S" role="1TKVEi">
+      <property role="IQ2ns" value="7951217104980820536" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="wrappedType" />
+      <property role="20lbJX" value="fLJekj4/_1" />
+      <ref role="20lvS9" to="hm2y:6sdnDbSlaok" resolve="Type" />
+    </node>
+    <node concept="t5JxF" id="6Topthy_KkU" role="lGtFl">
+      <property role="t5JxN" value="A type wrapped as an expression. This is used by the typesystem computations only." />
     </node>
   </node>
 </model>
