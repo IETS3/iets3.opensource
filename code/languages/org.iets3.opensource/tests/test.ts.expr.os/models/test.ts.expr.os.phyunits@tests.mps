@@ -5390,11 +5390,7 @@
             </node>
             <node concept="2vmpnb" id="6TopthzUq2T" role="30dEsF" />
             <node concept="7CXmI" id="6TopthzUq2U" role="lGtFl">
-              <node concept="1TM$A" id="6TopthzUq2V" role="7EUXB">
-                <node concept="2PYRI3" id="6Topth$0tnH" role="3lydEf">
-                  <ref role="39XzEq" to="t4jv:TrLxV$GKEm" />
-                </node>
-              </node>
+              <node concept="1TM$A" id="6TopthzUq2V" role="7EUXB" />
             </node>
           </node>
         </node>
