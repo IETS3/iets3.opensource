@@ -10,7 +10,7 @@ import java.util.HashMap;
 
 public class TestExecutorConfigForCommandLine implements ICustomRunnerConfig {
 
-  private static String myReportsFilenamePrefix = "InterpreterTestSuite";
+  private String myReportsFilenamePrefix = "InterpreterTestSuite";
   private static final String outputPathMacro = "iets3.interpreterExecutor.genPath";
   private static final IInterpreterRunListener listener = new NullRunListener();
   private static final IInterpreterTestReporter reporter = new InterpreterTestReporter();
@@ -48,5 +48,12 @@ public class TestExecutorConfigForCommandLine implements ICustomRunnerConfig {
   @Override
   public void clear() {
     MapSequence.fromMap(myMap).clear();
+  }
+
+  public void setMyReportsFilenamePrefix(String input) {
+    this.myReportsFilenamePrefix = input;
+  }
+  public String getMyReportsFilenamePrefix() {
+    return myReportsFilenamePrefix;
   }
 }
