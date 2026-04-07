@@ -26,8 +26,12 @@
         <property id="5050560734055387940" name="abstract" index="33ZQ4u" />
         <property id="4791626744562666548" name="initiallyChecked" index="1n_0Gn" />
         <property id="4791626744558055097" name="complete" index="1nQUAq" />
+        <child id="5050560734061908085" name="extendedFMC" index="30ne9f" />
       </concept>
       <concept id="6698472021570799901" name="org.iets3.variability.configuration.base.structure.FeatureConfiguration" flags="ng" index="rqKBd" />
+      <concept id="5050560734061908022" name="org.iets3.variability.configuration.base.structure.ExtendedFeatureModelConfigurationRef" flags="ng" index="30ne8c">
+        <reference id="5050560734061908041" name="config" index="30ne9N" />
+      </concept>
       <concept id="3470763221645494592" name="org.iets3.variability.configuration.base.structure.AbstractFeatureConfiguration" flags="ng" index="3HwiA2">
         <property id="5939066662398655707" name="selectionState" index="3BMj5M" />
         <reference id="6698472021570799902" name="targetFeature" index="rqKBe" />
@@ -35,6 +39,7 @@
       </concept>
       <concept id="3470763221647207958" name="org.iets3.variability.configuration.base.structure.FeatureAttributeAssignment" flags="ng" index="3HVKVk">
         <property id="643975119329831638" name="assignmentCause" index="2fdZ4z" />
+        <property id="7044756316066073770" name="inherited" index="lyGKx" />
         <reference id="3470763221647506824" name="attribute" index="3HS9Pa" />
         <child id="3470763221648007850" name="value" index="3HYO9C" />
       </concept>
@@ -122,17 +127,16 @@
     <node concept="12i7jc" id="36USfKuxwcs" role="12i2BX" />
     <node concept="rqKB5" id="36USfKuxwct" role="12i2BX">
       <property role="26YOJW" value="" />
-      <property role="bVyBI" value="1950068099" />
+      <property role="bVyBI" value="1574779569" />
       <property role="bROok" value="207077578" />
       <property role="1n_0Gn" value="true" />
-      <property role="0Rz4W" value="-999528529" />
+      <property role="0Rz4W" value="-851597167" />
       <property role="TrG5h" value="C1" />
       <property role="33ZQ4u" value="true" />
       <property role="1nQUAq" value="true" />
       <ref role="rqKBe" node="36USfKuxwcw" resolve="K" />
       <node concept="rqCGG" id="36USfKuxwcx" role="rqCGo">
         <node concept="rqKBd" id="36USfKuxwcz" role="rqKBa">
-          <property role="3BMj5M" value="5QKr2dW9gDW/userTrue" />
           <ref role="rqKBe" node="36USfKuxwcy" resolve="A" />
           <node concept="rqCGG" id="36USfKuxwcA" role="rqCGo">
             <node concept="3HVKVk" id="36USfKuxwcD" role="3HVKVh">
@@ -152,6 +156,40 @@
       </node>
     </node>
     <node concept="12i7jc" id="36USfKuxwcu" role="12i2BX" />
+    <node concept="rqKB5" id="36USfKuZSVH" role="12i2BX">
+      <property role="26YOJW" value="" />
+      <property role="bVyBI" value="918429133" />
+      <property role="bROok" value="1574779569" />
+      <property role="1n_0Gn" value="true" />
+      <property role="0Rz4W" value="1891279496" />
+      <property role="TrG5h" value="ff" />
+      <property role="1nQUAq" value="true" />
+      <ref role="rqKBe" node="36USfKuxwcw" resolve="K" />
+      <node concept="rqCGG" id="36USfKuZSVK" role="rqCGo">
+        <node concept="rqKBd" id="36USfKuZSVL" role="rqKBa">
+          <ref role="rqKBe" node="36USfKuxwcy" resolve="A" />
+          <node concept="rqCGG" id="36USfKuZSVM" role="rqCGo">
+            <node concept="3HVKVk" id="36USfKuZSVN" role="3HVKVh">
+              <property role="2fdZ4z" value="zJQZm6SRYR/manual" />
+              <property role="lyGKx" value="true" />
+              <ref role="3HS9Pa" node="36USfKuxwc$" resolve="b" />
+              <node concept="2vmpnb" id="36USfKuZUOW" role="3HYO9C" />
+            </node>
+            <node concept="3HVKVk" id="36USfKuZSVO" role="3HVKVh">
+              <property role="2fdZ4z" value="zJQZm6SRYR/manual" />
+              <property role="lyGKx" value="true" />
+              <ref role="3HS9Pa" node="36USfKuxwc_" resolve="c" />
+              <node concept="30bdrP" id="36USfKuZUOX" role="3HYO9C">
+                <property role="30bdrQ" value="rr" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="30ne8c" id="36USfKuZUMi" role="30ne9f">
+        <ref role="30ne9N" node="36USfKuxwct" resolve="C1" />
+      </node>
+    </node>
     <node concept="12i7jc" id="36USfKuxwcv" role="12i2BX" />
   </node>
   <node concept="_iOnU" id="36USfKuxwcH">

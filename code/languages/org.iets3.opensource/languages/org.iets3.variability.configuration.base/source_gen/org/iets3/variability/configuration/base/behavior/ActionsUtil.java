@@ -40,7 +40,6 @@ public class ActionsUtil {
       }
     }
   }
-
   private static SNode createFeatureModelConfigurationBase_r16tdr_a0a0a0a1() {
     SNodeBuilder n0 = new SNodeBuilder().init(CONCEPTS.FeatureModelConfigurationBase$y8);
     return n0.getResult();

@@ -258,8 +258,8 @@ public class FeatureModelConfigurationInheritanceUtil {
       } else {
         if ((extendedFeatureAttributeAssignment == null) && SPropertyOperations.getBoolean(inheritingFeatureAttributeAssignment, PROPS.inherited$oyCC)) {
           SLinkOperations.setTarget(inheritingFeatureAttributeAssignment, LINKS.value$kgDc, null);
+          SPropertyOperations.assign(inheritingFeatureAttributeAssignment, PROPS.inherited$oyCC, false);
         }
-        SPropertyOperations.assign(inheritingFeatureAttributeAssignment, PROPS.inherited$oyCC, false);
       }
     }
   }

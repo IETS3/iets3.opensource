@@ -5107,20 +5107,20 @@
       <node id="1487763945534546252" at="31,71,32,68" concept="4" />
       <node id="1487763945534518611" at="36,5,37,32" concept="9" />
       <node id="1487763945534518614" at="38,94,39,157" concept="4" />
-      <node id="7772191056242220490" at="44,78,45,89" concept="9" />
-      <node id="7772191056242220490" at="45,89,46,26" concept="10" />
-      <node id="7772191056242220495" at="48,78,49,93" concept="9" />
-      <node id="7772191056242220495" at="49,93,50,26" concept="10" />
-      <node id="7772191056242169614" at="54,0,55,0" concept="13" trace="FeatureModelInclude$Iq" />
-      <node id="7772191056242169614" at="55,0,56,0" concept="13" trace="InlineFeatureConfigurationContent$P5" />
-      <node id="7772191056242169614" at="56,0,57,0" concept="13" trace="FeatureModelConfigurationBase$y8" />
-      <node id="7772191056242169614" at="60,0,61,0" concept="13" trace="cardinality$EsDt" />
-      <node id="7772191056242169614" at="61,0,62,0" concept="13" trace="subfeatureConfigurations$l9wi" />
+      <node id="7772191056242220490" at="43,78,44,89" concept="9" />
+      <node id="7772191056242220490" at="44,89,45,26" concept="10" />
+      <node id="7772191056242220495" at="47,78,48,93" concept="9" />
+      <node id="7772191056242220495" at="48,93,49,26" concept="10" />
+      <node id="7772191056242169614" at="53,0,54,0" concept="13" trace="FeatureModelInclude$Iq" />
+      <node id="7772191056242169614" at="54,0,55,0" concept="13" trace="InlineFeatureConfigurationContent$P5" />
+      <node id="7772191056242169614" at="55,0,56,0" concept="13" trace="FeatureModelConfigurationBase$y8" />
+      <node id="7772191056242169614" at="59,0,60,0" concept="13" trace="cardinality$EsDt" />
+      <node id="7772191056242169614" at="60,0,61,0" concept="13" trace="subfeatureConfigurations$l9wi" />
       <node id="1487763945523271440" at="22,79,25,9" concept="7" />
       <node id="1487763945534432431" at="31,0,34,0" concept="14" trace="addSubConfigurations#(Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;)V" />
       <node id="1487763945534518611" at="37,32,40,7" concept="7" />
-      <node id="7772191056242220490" at="44,0,48,0" concept="14" trace="createFeatureModelConfigurationBase_r16tdr_a0a0a0a1#()Lorg/jetbrains/mps/openapi/model/SNode;" />
-      <node id="7772191056242220495" at="48,0,52,0" concept="14" trace="createInlineFeatureConfigurationContent_r16tdr_a1a1#()Lorg/jetbrains/mps/openapi/model/SNode;" />
+      <node id="7772191056242220490" at="43,0,47,0" concept="14" trace="createFeatureModelConfigurationBase_r16tdr_a0a0a0a1#()Lorg/jetbrains/mps/openapi/model/SNode;" />
+      <node id="7772191056242220495" at="47,0,51,0" concept="14" trace="createInlineFeatureConfigurationContent_r16tdr_a1a1#()Lorg/jetbrains/mps/openapi/model/SNode;" />
       <node id="7772191056242220486" at="21,28,26,7" concept="7" />
       <node id="1487763945534518611" at="35,83,41,5" concept="1" />
       <node id="7772191056242220486" at="19,46,27,5" concept="1" />
@@ -5129,10 +5129,10 @@
       <scope id="1487763945523271442" at="23,77,24,71" />
       <scope id="1487763945534432439" at="31,71,32,68" />
       <scope id="1487763945534518613" at="38,94,39,157" />
-      <scope id="7772191056242220490" at="44,78,46,26">
+      <scope id="7772191056242220490" at="43,78,45,26">
         <var name="n0" id="7772191056242220490" />
       </scope>
-      <scope id="7772191056242220495" at="48,78,50,26">
+      <scope id="7772191056242220495" at="47,78,49,26">
         <var name="n0" id="7772191056242220495" />
       </scope>
       <scope id="7772191056242220488" at="22,79,25,9" />
@@ -5143,8 +5143,8 @@
       <scope id="1487763945534518611" at="36,5,40,7">
         <var name="ifcc" id="1487763945534518611" />
       </scope>
-      <scope id="7772191056242220490" at="44,0,48,0" />
-      <scope id="7772191056242220495" at="48,0,52,0" />
+      <scope id="7772191056242220490" at="43,0,47,0" />
+      <scope id="7772191056242220495" at="47,0,51,0" />
       <scope id="7772191056242220486" at="20,5,26,7">
         <var name="fmi" id="7772191056242220486" />
       </scope>
@@ -5157,9 +5157,9 @@
       <scope id="7772191056242220479" at="19,0,30,0">
         <var name="ftn" id="7772191056242220481" />
       </scope>
-      <unit id="7772191056242169614" at="59,0,63,0" name="org.iets3.variability.configuration.base.behavior.ActionsUtil$LINKS" />
-      <unit id="7772191056242169614" at="53,0,58,0" name="org.iets3.variability.configuration.base.behavior.ActionsUtil$CONCEPTS" />
-      <unit id="7772191056242169614" at="17,0,64,0" name="org.iets3.variability.configuration.base.behavior.ActionsUtil" />
+      <unit id="7772191056242169614" at="58,0,62,0" name="org.iets3.variability.configuration.base.behavior.ActionsUtil$LINKS" />
+      <unit id="7772191056242169614" at="52,0,57,0" name="org.iets3.variability.configuration.base.behavior.ActionsUtil$CONCEPTS" />
+      <unit id="7772191056242169614" at="17,0,63,0" name="org.iets3.variability.configuration.base.behavior.ActionsUtil" />
     </file>
   </root>
   <root nodeRef="r:dedd19c9-9ff3-4f30-aa73-ce61203b2296(org.iets3.variability.configuration.base.behavior)/8737753560258549184">
@@ -5255,7 +5255,7 @@
       <node id="8737753560264785474" at="255,197,256,197" concept="4" />
       <node id="8737753560264785484" at="256,197,257,101" concept="4" />
       <node id="8737753560264785504" at="259,153,260,98" concept="4" />
-      <node id="8737753560264785517" at="261,9,262,102" concept="4" />
+      <node id="8737753560264785517" at="260,98,261,104" concept="4" />
       <node id="8737753560264592572" at="268,163,269,304" concept="10" />
       <node id="8737753560270167763" at="272,72,273,231" concept="10" />
       <node id="8737753560270230038" at="276,75,277,237" concept="10" />
@@ -5308,7 +5308,6 @@
       <node id="5343842209080671207" at="207,9,210,9" concept="7" />
       <node id="8848546765732410318" at="217,130,220,7" concept="7" />
       <node id="8737753560264881736" at="227,94,230,5" concept="7" />
-      <node id="8737753560264785502" at="258,14,261,9" concept="7" />
       <node id="8737753560264592569" at="268,0,271,0" concept="14" trace="matchingSubfeatureConfigOfExtendedConfig#(Ljava/lang/Iterable;Lorg/jetbrains/mps/openapi/model/SNode;)Ljava/util/Optional;" />
       <node id="8737753560270167760" at="272,0,275,0" concept="14" trace="bothSelected#(Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;)Z" />
       <node id="8737753560270230035" at="276,0,279,0" concept="14" trace="bothDisSelected#(Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;)Z" />
@@ -5323,6 +5322,7 @@
       <node id="8737753560264881775" at="234,5,238,5" concept="7" />
       <node id="8737753560264881799" at="239,0,243,5" concept="7" />
       <node id="8737753560264881812" at="243,5,247,5" concept="7" />
+      <node id="8737753560264785502" at="258,14,262,9" concept="7" />
       <node id="8541409672731146106" at="313,0,317,0" concept="14" trace="createFeatureModelConfigurationBase_w45mms_a0a2a0a2a71#()Lorg/jetbrains/mps/openapi/model/SNode;" />
       <node id="8848546765726241627" at="317,0,321,0" concept="14" trace="createInlineFeatureConfigurationContent_w45mms_a0a0a0a0f0r#()Lorg/jetbrains/mps/openapi/model/SNode;" />
       <node id="588069925734735745" at="45,53,50,9" concept="7" />
@@ -5377,7 +5377,6 @@
       <scope id="5343842209080671208" at="208,102,209,22" />
       <scope id="8848546765732410320" at="218,120,219,21" />
       <scope id="8737753560264881737" at="228,244,229,13" />
-      <scope id="8737753560264785503" at="259,153,260,98" />
       <scope id="8737753560264592571" at="268,163,269,304" />
       <scope id="8737753560270167762" at="272,72,273,231" />
       <scope id="8737753560270230037" at="276,75,277,237" />
@@ -5393,6 +5392,7 @@
       <scope id="8737753560264881800" at="240,117,242,13" />
       <scope id="8737753560264881813" at="244,120,246,13" />
       <scope id="8737753560264785473" at="255,197,257,101" />
+      <scope id="8737753560264785503" at="259,153,261,104" />
       <scope id="8541409672731146106" at="313,81,315,26">
         <var name="n0" id="8541409672731146106" />
       </scope>
@@ -5433,7 +5433,7 @@
       <scope id="1649980136394251097" at="183,5,187,7">
         <var name="ifcc" id="1649980136394251097" />
       </scope>
-      <scope id="815021483314489149" at="258,14,262,102" />
+      <scope id="815021483314489149" at="258,14,262,9" />
       <scope id="8541409672731146106" at="313,0,317,0" />
       <scope id="8848546765726241627" at="317,0,321,0" />
       <scope id="8737753560258916166" at="63,283,68,7">
