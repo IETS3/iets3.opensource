@@ -12,7 +12,6 @@
     <use id="774bf8a0-62e5-41e1-af63-f4812e60e48b" name="jetbrains.mps.baseLanguage.checkedDots" version="0" />
     <use id="63e0e566-5131-447e-90e3-12ea330e1a00" name="com.mbeddr.mpsutil.blutil" version="3" />
     <use id="760a0a8c-eabb-4521-8bfd-65db761a9ba3" name="jetbrains.mps.baseLanguage.logging" version="0" />
-    <use id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core" version="2" />
     <use id="3a13115c-633c-4c5c-bbcc-75c4219e9555" name="jetbrains.mps.lang.quotation" version="5" />
     <use id="817e4e70-961e-4a95-98a1-15e9f32231f1" name="jetbrains.mps.ide.httpsupport" version="0" />
     <use id="63650c59-16c8-498a-99c8-005c7ee9515d" name="jetbrains.mps.lang.access" version="0" />
@@ -62,7 +61,6 @@
     <import index="alof" ref="742f6602-5a2f-4313-aa6e-ae1cd4ffdc61/java:jetbrains.mps.ide.project(MPS.Platform/)" />
     <import index="kvq8" ref="r:2e938759-cfd0-47cd-9046-896d85204f59(de.slisson.mps.hacks.editor)" />
     <import index="exr9" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.nodeEditor(MPS.Editor/)" />
-    <import index="sfex" ref="39983771-4e9b-401b-a1a9-1da6c777c843/java:org.apache.commons.text(MPS.ThirdParty/)" />
   </imports>
   <registry>
     <language id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior">
@@ -9217,150 +9215,6 @@
         </node>
       </node>
       <node concept="3Tm1VV" id="1i_AmObdZl$" role="1B3o_S" />
-    </node>
-    <node concept="2YIFZL" id="36USfKuxSQU" role="jymVt">
-      <property role="TrG5h" value="visulaizeAsTree" />
-      <node concept="3clFbS" id="36USfKuxSR0" role="3clF47">
-        <node concept="3cpWs8" id="36USfKuCIg1" role="3cqZAp">
-          <node concept="3cpWsn" id="36USfKuCIg2" role="3cpWs9">
-            <property role="TrG5h" value="builder" />
-            <node concept="3uibUv" id="36USfKuCHa6" role="1tU5fm">
-              <ref role="3uigEE" to="sfex:~TextStringBuilder" resolve="TextStringBuilder" />
-            </node>
-            <node concept="2ShNRf" id="36USfKuCIg3" role="33vP2m">
-              <node concept="1pGfFk" id="36USfKuCIg4" role="2ShVmc">
-                <ref role="37wK5l" to="sfex:~TextStringBuilder.&lt;init&gt;()" resolve="TextStringBuilder" />
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="3clFbF" id="36USfKuy2_Q" role="3cqZAp">
-          <node concept="2YIFZM" id="36USfKuy4g3" role="3clFbG">
-            <ref role="37wK5l" node="36USfKuxTDQ" resolve="visulaizeAsTreeHlp" />
-            <ref role="1Pybhc" node="6JsnDoTM5se" resolve="ActionsUtil" />
-            <node concept="37vLTw" id="36USfKuy5c8" role="37wK5m">
-              <ref role="3cqZAo" node="36USfKuxSQW" resolve="action" />
-            </node>
-            <node concept="37vLTw" id="36USfKuCIg5" role="37wK5m">
-              <ref role="3cqZAo" node="36USfKuCIg2" resolve="builder" />
-            </node>
-            <node concept="Xl_RD" id="36USfKuy8y7" role="37wK5m">
-              <property role="Xl_RC" value="-" />
-            </node>
-          </node>
-        </node>
-        <node concept="3clFbF" id="36USfKuybRB" role="3cqZAp">
-          <node concept="2OqwBi" id="36USfKuye1R" role="3clFbG">
-            <node concept="37vLTw" id="36USfKuybR_" role="2Oq$k0">
-              <ref role="3cqZAo" node="36USfKuCIg2" resolve="builder" />
-            </node>
-            <node concept="liA8E" id="36USfKuygIQ" role="2OqNvi">
-              <ref role="37wK5l" to="sfex:~TextStringBuilder.toString()" resolve="toString" />
-            </node>
-          </node>
-        </node>
-      </node>
-      <node concept="17QB3L" id="36USfKuxSQY" role="3clF45" />
-      <node concept="37vLTG" id="36USfKuxSQW" role="3clF46">
-        <property role="TrG5h" value="action" />
-        <node concept="3uibUv" id="36USfKuxSQX" role="1tU5fm">
-          <ref role="3uigEE" node="6xp4a6YMTNc" resolve="Action" />
-        </node>
-      </node>
-      <node concept="3Tm1VV" id="36USfKuxSQZ" role="1B3o_S" />
-    </node>
-    <node concept="2tJIrI" id="36USfKuxW1e" role="jymVt" />
-    <node concept="2YIFZL" id="36USfKuxTDQ" role="jymVt">
-      <property role="TrG5h" value="visulaizeAsTreeHlp" />
-      <node concept="3clFbS" id="36USfKuxTDR" role="3clF47">
-        <node concept="3clFbF" id="36USfKuykY9" role="3cqZAp">
-          <node concept="2OqwBi" id="36USfKuy_Ng" role="3clFbG">
-            <node concept="2OqwBi" id="36USfKuz5ux" role="2Oq$k0">
-              <node concept="2OqwBi" id="36USfKuytpX" role="2Oq$k0">
-                <node concept="2OqwBi" id="36USfKuymV$" role="2Oq$k0">
-                  <node concept="37vLTw" id="36USfKuykY8" role="2Oq$k0">
-                    <ref role="3cqZAo" node="36USfKuxXBZ" resolve="sb" />
-                  </node>
-                  <node concept="liA8E" id="36USfKuypjt" role="2OqNvi">
-                    <ref role="37wK5l" to="sfex:~TextStringBuilder.append(java.lang.String)" resolve="append" />
-                    <node concept="37vLTw" id="36USfKuyqdt" role="37wK5m">
-                      <ref role="3cqZAo" node="36USfKuy0Nt" resolve="indent" />
-                    </node>
-                  </node>
-                </node>
-                <node concept="liA8E" id="36USfKuyvFL" role="2OqNvi">
-                  <ref role="37wK5l" to="sfex:~TextStringBuilder.append(java.lang.String)" resolve="append" />
-                  <node concept="Xl_RD" id="36USfKuyx9d" role="37wK5m">
-                    <property role="Xl_RC" value="&gt;" />
-                  </node>
-                </node>
-              </node>
-              <node concept="liA8E" id="36USfKuz8BQ" role="2OqNvi">
-                <ref role="37wK5l" to="sfex:~TextStringBuilder.append(java.lang.Object)" resolve="append" />
-                <node concept="37vLTw" id="36USfKuza0p" role="37wK5m">
-                  <ref role="3cqZAo" node="36USfKuxTDT" resolve="action" />
-                </node>
-              </node>
-            </node>
-            <node concept="liA8E" id="36USfKuCQ58" role="2OqNvi">
-              <ref role="37wK5l" to="sfex:~TextStringBuilder.appendNewLine()" resolve="appendNewLine" />
-            </node>
-          </node>
-        </node>
-        <node concept="2Gpval" id="36USfKuyXQZ" role="3cqZAp">
-          <node concept="2GrKxI" id="36USfKuyXR1" role="2Gsz3X">
-            <property role="TrG5h" value="child" />
-          </node>
-          <node concept="2OqwBi" id="36USfKuz1TZ" role="2GsD0m">
-            <node concept="37vLTw" id="36USfKuz0yr" role="2Oq$k0">
-              <ref role="3cqZAo" node="36USfKuxTDT" resolve="action" />
-            </node>
-            <node concept="liA8E" id="36USfKuz3mY" role="2OqNvi">
-              <ref role="37wK5l" node="5T1_28vefBq" resolve="getChildren" />
-            </node>
-          </node>
-          <node concept="3clFbS" id="36USfKuyXR5" role="2LFqv$">
-            <node concept="3clFbF" id="36USfKuzh4n" role="3cqZAp">
-              <node concept="2YIFZM" id="36USfKuzvJq" role="3clFbG">
-                <ref role="37wK5l" node="36USfKuxTDQ" resolve="visulaizeAsTreeHlp" />
-                <ref role="1Pybhc" node="6JsnDoTM5se" resolve="ActionsUtil" />
-                <node concept="2GrUjf" id="36USfKuzvJr" role="37wK5m">
-                  <ref role="2Gs0qQ" node="36USfKuyXR1" resolve="child" />
-                </node>
-                <node concept="37vLTw" id="36USfKuzvJs" role="37wK5m">
-                  <ref role="3cqZAo" node="36USfKuxXBZ" resolve="sb" />
-                </node>
-                <node concept="3cpWs3" id="36USfKuzvJt" role="37wK5m">
-                  <node concept="Xl_RD" id="36USfKuzvJu" role="3uHU7w">
-                    <property role="Xl_RC" value="-" />
-                  </node>
-                  <node concept="37vLTw" id="36USfKuzvJv" role="3uHU7B">
-                    <ref role="3cqZAo" node="36USfKuy0Nt" resolve="indent" />
-                  </node>
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
-      </node>
-      <node concept="3cqZAl" id="36USfKuyk5K" role="3clF45" />
-      <node concept="37vLTG" id="36USfKuxTDT" role="3clF46">
-        <property role="TrG5h" value="action" />
-        <node concept="3uibUv" id="36USfKuxTDU" role="1tU5fm">
-          <ref role="3uigEE" node="6xp4a6YMTNc" resolve="Action" />
-        </node>
-      </node>
-      <node concept="37vLTG" id="36USfKuxXBZ" role="3clF46">
-        <property role="TrG5h" value="sb" />
-        <node concept="3uibUv" id="36USfKuxYsp" role="1tU5fm">
-          <ref role="3uigEE" to="sfex:~TextStringBuilder" resolve="TextStringBuilder" />
-        </node>
-      </node>
-      <node concept="37vLTG" id="36USfKuy0Nt" role="3clF46">
-        <property role="TrG5h" value="indent" />
-        <node concept="17QB3L" id="36USfKuy0Tw" role="1tU5fm" />
-      </node>
-      <node concept="3Tm6S6" id="36USfKuxWPK" role="1B3o_S" />
     </node>
   </node>
   <node concept="312cEu" id="6xp4a6YOR$0">
