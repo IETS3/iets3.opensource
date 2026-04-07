@@ -6830,7 +6830,7 @@
             <ref role="37wK5l" node="5Bs7u20xFZd" resolve="applyInheritanceAndCheck" />
             <ref role="1Pybhc" node="5Bs7u20xE9z" resolve="InheritanceTestUtil" />
             <node concept="3xONca" id="Hfyryd58pn" role="37wK5m">
-              <ref role="3xOPvv" node="Hfyryd78To" resolve="given4" />
+              <ref role="3xOPvv" node="Hfyryd78To" resolve="given" />
             </node>
             <node concept="3xONca" id="Hfyryd58po" role="37wK5m">
               <ref role="3xOPvv" node="HfyrydevBl" resolve="expected" />
