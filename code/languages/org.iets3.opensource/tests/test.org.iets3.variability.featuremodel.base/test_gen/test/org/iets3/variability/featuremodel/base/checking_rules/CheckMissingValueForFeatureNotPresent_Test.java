@@ -32,6 +32,14 @@ public class CheckMissingValueForFeatureNotPresent_Test extends BaseTransformati
   public void test_NodeAttributeUsedInConstraintCheck4782337335703131027() throws Throwable {
     new TestBody(this).test_NodeAttributeUsedInConstraintCheck4782337335703131027();
   }
+  @Test
+  public void test_NodeAttributeUsedButWithoutCheck4489740985379665114() throws Throwable {
+    new TestBody(this).test_NodeAttributeUsedButWithoutCheck4489740985379665114();
+  }
+  @Test
+  public void test_NodeAttributeUsedButWithoutCheck4489740985379705785() throws Throwable {
+    new TestBody(this).test_NodeAttributeUsedButWithoutCheck4489740985379705785();
+  }
 
   /*package*/ static class TestBody extends BaseTestBody {
 
@@ -56,6 +64,20 @@ public class CheckMissingValueForFeatureNotPresent_Test extends BaseTransformati
       runWithinCommand(() -> {
         SNode nodeToCheck = getNodeById("4782337335701629149");
         new CheckExpectedMessageRunnable.CheckExpectedRuleMessageRunnable(nodeToCheck, MessageStatus.WARNING, new SNodePointer("r:ea20ecfb-5cc1-4867-966a-b2976cfc5ae3(org.iets3.variability.featuremodel.base.typesystem)", "7478266977560638158"), "", myProject.getRepository(), myProject.getPlatform()).run();
+      });
+    }
+    public void test_NodeAttributeUsedButWithoutCheck4489740985379665114() throws Exception {
+      initTestNodes();
+      runWithinCommand(() -> {
+        SNode nodeToCheck = getNodeById("4489740985379656949");
+        new CheckExpectedMessageRunnable.CheckExpectedRuleMessageRunnable(nodeToCheck, MessageStatus.WARNING, new SNodePointer("r:ea20ecfb-5cc1-4867-966a-b2976cfc5ae3(org.iets3.variability.featuremodel.base.typesystem)", "4489740985360550969"), "", myProject.getRepository(), myProject.getPlatform()).run();
+      });
+    }
+    public void test_NodeAttributeUsedButWithoutCheck4489740985379705785() throws Exception {
+      initTestNodes();
+      runWithinCommand(() -> {
+        SNode nodeToCheck = getNodeById("4489740985379700092");
+        new CheckExpectedMessageRunnable.CheckExpectedRuleMessageRunnable(nodeToCheck, MessageStatus.WARNING, new SNodePointer("r:ea20ecfb-5cc1-4867-966a-b2976cfc5ae3(org.iets3.variability.featuremodel.base.typesystem)", "4489740985360550969"), "", myProject.getRepository(), myProject.getPlatform()).run();
       });
     }
 
