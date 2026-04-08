@@ -3362,5 +3362,45 @@
       <ref role="1YaFvo" to="s6b7:7Nu9WvXpu87" resolve="FeatureAttribute" />
     </node>
   </node>
+  <node concept="18kY7G" id="3TeKUdR4SNS">
+    <property role="TrG5h" value="check_FeatureAttributeDotTarget" />
+    <property role="3GE5qa" value="constraints" />
+    <node concept="3clFbS" id="3TeKUdR4SNT" role="18ibNy">
+      <node concept="3clFbJ" id="3TeKUdR4Txw" role="3cqZAp">
+        <node concept="2OqwBi" id="3TeKUdR4Zrn" role="3clFbw">
+          <node concept="2OqwBi" id="3TeKUdR4XlJ" role="2Oq$k0">
+            <node concept="2OqwBi" id="3TeKUdR4V7A" role="2Oq$k0">
+              <node concept="1YBJjd" id="3TeKUdR4Ue8" role="2Oq$k0">
+                <ref role="1YBMHb" node="3TeKUdR4SNV" resolve="featureAttributeDotTarget" />
+              </node>
+              <node concept="3TrEf2" id="3TeKUdR4W5U" role="2OqNvi">
+                <ref role="3Tt5mk" to="s6b7:7Nu9WvX_CEF" resolve="attribute" />
+              </node>
+            </node>
+            <node concept="2qgKlT" id="3TeKUdR4Yqe" role="2OqNvi">
+              <ref role="37wK5l" to="zccc:RJ4G$UUrsi" resolve="notPresentValueForSolver" />
+            </node>
+          </node>
+          <node concept="liA8E" id="3TeKUdR53dc" role="2OqNvi">
+            <ref role="37wK5l" to="33ny:~Optional.isEmpty()" resolve="isEmpty" />
+          </node>
+        </node>
+        <node concept="3clFbS" id="3TeKUdR4Txy" role="3clFbx">
+          <node concept="a7r0C" id="3TeKUdR549f" role="3cqZAp">
+            <node concept="1YBJjd" id="3TeKUdR56VN" role="1urrMF">
+              <ref role="1YBMHb" node="3TeKUdR4SNV" resolve="featureAttributeDotTarget" />
+            </node>
+            <node concept="Xl_RD" id="3TeKUdR58I8" role="a7wSD">
+              <property role="Xl_RC" value="Attribute used, but without NotPresent-Value! Set it!" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1YaCAy" id="3TeKUdR4SNV" role="1YuTPh">
+      <property role="TrG5h" value="featureAttributeDotTarget" />
+      <ref role="1YaFvo" to="s6b7:7Nu9WvX_CEE" resolve="FeatureAttributeDotTarget" />
+    </node>
+  </node>
 </model>
 
