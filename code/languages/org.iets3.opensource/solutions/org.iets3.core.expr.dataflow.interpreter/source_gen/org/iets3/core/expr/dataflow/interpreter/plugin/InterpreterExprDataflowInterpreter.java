@@ -60,7 +60,7 @@ public class InterpreterExprDataflowInterpreter extends InterpreterBase {
         }
       }
       public EvaluatorInfo getInfo() {
-        return new EvaluatorInfo("CompositeBlock", "http://127.0.0.1:63320/node?ref=f8935fe4-01d1-4c0b-b0b4-bc0656ba470b%2Fi%3A10000001%28org.iets3.core.expr.dataflow.interpreter%40transient128%2Forg.iets3.core.expr.dataflow.interpreter.plugin%400%29%2F2870058499331264152");
+        return new EvaluatorInfo("CompositeBlock", "http://127.0.0.1:63320/node?ref=r%3Ade9dfbe2-082a-4d91-9d01-4408acf010f1%28org.iets3.core.expr.dataflow.interpreter.plugin%29%2F2870058499331264152");
       }
 
       @Override
@@ -93,7 +93,7 @@ public class InterpreterExprDataflowInterpreter extends InterpreterBase {
         }
       }
       public EvaluatorInfo getInfo() {
-        return new EvaluatorInfo("ExprBlock", "http://127.0.0.1:63320/node?ref=f8935fe4-01d1-4c0b-b0b4-bc0656ba470b%2Fi%3A10000001%28org.iets3.core.expr.dataflow.interpreter%40transient128%2Forg.iets3.core.expr.dataflow.interpreter.plugin%400%29%2F2870058499329319858");
+        return new EvaluatorInfo("ExprBlock", "http://127.0.0.1:63320/node?ref=r%3Ade9dfbe2-082a-4d91-9d01-4408acf010f1%28org.iets3.core.expr.dataflow.interpreter.plugin%29%2F2870058499329319858");
       }
 
       @Override
@@ -133,7 +133,7 @@ public class InterpreterExprDataflowInterpreter extends InterpreterBase {
         }
       }
       public EvaluatorInfo getInfo() {
-        return new EvaluatorInfo("BlockCallExpr", "http://127.0.0.1:63320/node?ref=f8935fe4-01d1-4c0b-b0b4-bc0656ba470b%2Fi%3A10000001%28org.iets3.core.expr.dataflow.interpreter%40transient128%2Forg.iets3.core.expr.dataflow.interpreter.plugin%400%29%2F2870058499329436103");
+        return new EvaluatorInfo("BlockCallExpr", "http://127.0.0.1:63320/node?ref=r%3Ade9dfbe2-082a-4d91-9d01-4408acf010f1%28org.iets3.core.expr.dataflow.interpreter.plugin%29%2F2870058499329436103");
       }
 
       @Override
@@ -162,7 +162,7 @@ public class InterpreterExprDataflowInterpreter extends InterpreterBase {
         }
       }
       public EvaluatorInfo getInfo() {
-        return new EvaluatorInfo("ParamRef", "http://127.0.0.1:63320/node?ref=f8935fe4-01d1-4c0b-b0b4-bc0656ba470b%2Fi%3A10000001%28org.iets3.core.expr.dataflow.interpreter%40transient128%2Forg.iets3.core.expr.dataflow.interpreter.plugin%400%29%2F2870058499329432503");
+        return new EvaluatorInfo("ParamRef", "http://127.0.0.1:63320/node?ref=r%3Ade9dfbe2-082a-4d91-9d01-4408acf010f1%28org.iets3.core.expr.dataflow.interpreter.plugin%29%2F2870058499329432503");
       }
 
       @Override
@@ -191,7 +191,7 @@ public class InterpreterExprDataflowInterpreter extends InterpreterBase {
         }
       }
       public EvaluatorInfo getInfo() {
-        return new EvaluatorInfo("InportRef", "http://127.0.0.1:63320/node?ref=f8935fe4-01d1-4c0b-b0b4-bc0656ba470b%2Fi%3A10000001%28org.iets3.core.expr.dataflow.interpreter%40transient128%2Forg.iets3.core.expr.dataflow.interpreter.plugin%400%29%2F2870058499329429584");
+        return new EvaluatorInfo("InportRef", "http://127.0.0.1:63320/node?ref=r%3Ade9dfbe2-082a-4d91-9d01-4408acf010f1%28org.iets3.core.expr.dataflow.interpreter.plugin%29%2F2870058499329429584");
       }
 
       @Override
