@@ -696,6 +696,7 @@
       <library file="${artifacts.org.iets3.opensource}/org.iets3.core.os/languages/iets3.core.os/org.iets3.core.expr.testExecution.jar" />
       <library file="${artifacts.org.iets3.opensource}/org.iets3.core.os/languages/iets3.core.os/org.iets3.core.expr.tests.jar" />
       <library file="${artifacts.org.iets3.opensource}/org.iets3.core.os/languages/iets3.core.os/org.iets3.core.expr.toplevel.jar" />
+      <library file="${artifacts.org.iets3.opensource}/org.iets3.core.os/languages/iets3.core.os/org.iets3.internal.modelaccessor.jar" />
       <library file="${iets3.lang.opensource}/tests/test.in.expr.os" />
       <library file="${iets3.lang.opensource}/tests/test.ts.expr.os" />
       <library file="${build.layout}/org.iets3.opensource.interpreterExecutor/languages/iets3.opensource.interpreterExecutor/org.iets3.opensource.interpreterExecutor.jar" />

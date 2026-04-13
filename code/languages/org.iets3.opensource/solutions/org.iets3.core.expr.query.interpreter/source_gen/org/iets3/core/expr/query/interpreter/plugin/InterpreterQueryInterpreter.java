@@ -137,7 +137,7 @@ public class InterpreterQueryInterpreter extends InterpreterBase {
         }
       }
       public EvaluatorInfo getInfo() {
-        return new EvaluatorInfo("QueryExpr", "http://127.0.0.1:63320/node?ref=eeefc2f1-94ff-446d-9e83-c16a65906a4a%2Fi%3A10000001%28org.iets3.core.expr.query.interpreter%40transient60%2Forg.iets3.core.expr.query.interpreter.plugin%400%29%2F6749162445851522994");
+        return new EvaluatorInfo("QueryExpr", "http://127.0.0.1:63320/node?ref=r%3A18f3547a-68a5-47f3-9c76-69174048a29d%28org.iets3.core.expr.query.interpreter.plugin%29%2F6749162445851522994");
       }
 
       @Override

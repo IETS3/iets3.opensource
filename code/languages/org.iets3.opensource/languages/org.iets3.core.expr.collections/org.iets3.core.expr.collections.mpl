@@ -13,7 +13,6 @@
   <accessoryModels />
   <dependencies>
     <dependency reexport="false">6354ebe7-c22a-4a0f-ac54-50b52ab9b065(JDK)</dependency>
-    <dependency reexport="false">7b68d745-a7b8-48b9-bd9c-05c0f8725a35(org.iets3.core.base)</dependency>
     <dependency reexport="false">6ed54515-acc8-4d1e-a16c-9fd6cfe951ea(MPS.Core)</dependency>
     <dependency reexport="false">cfaa4966-b7d5-4b69-b66a-309a6e1a7290(org.iets3.core.expr.base)</dependency>
     <dependency reexport="false">47f075a6-558e-4640-a606-7ce0236c8023(com.mbeddr.mpsutil.interpreter)</dependency>
@@ -86,6 +85,7 @@
     <language slang="l:cfaa4966-b7d5-4b69-b66a-309a6e1a7290:org.iets3.core.expr.base" version="22" />
     <language slang="l:9464fa06-5ab9-409b-9274-64ab29588457:org.iets3.core.expr.lambda" version="6" />
     <language slang="l:6b277d9a-d52d-416f-a209-1919bd737f50:org.iets3.core.expr.simpleTypes" version="11" />
+    <language slang="l:a541f0ab-35e1-4095-90fe-2e552a0cc7c5:org.iets3.internal.modelaccessor" version="0" />
   </languageVersions>
   <dependencyVersions>
     <module reference="3f233e7f-b8a6-46d2-a57f-795d56775243(Annotations)" version="0" />
