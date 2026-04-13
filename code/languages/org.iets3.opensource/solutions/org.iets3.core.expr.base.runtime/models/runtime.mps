@@ -272,10 +272,6 @@
       </concept>
     </language>
     <language id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc">
-      <concept id="2546654756694997551" name="jetbrains.mps.baseLanguage.javadoc.structure.LinkInlineDocTag" flags="ng" index="92FcH">
-        <child id="2546654756694997556" name="reference" index="92FcQ" />
-        <child id="3106559687488913694" name="line" index="2XjZqd" />
-      </concept>
       <concept id="5858074156537516430" name="jetbrains.mps.baseLanguage.javadoc.structure.ReturnBlockDocTag" flags="ng" index="x79VA">
         <property id="5858074156537516431" name="text" index="x79VB" />
       </concept>
@@ -283,28 +279,15 @@
         <child id="6971016359099801474" name="commentBody" index="2JaDBN" />
       </concept>
       <concept id="5349172909345501395" name="jetbrains.mps.baseLanguage.javadoc.structure.BaseDocComment" flags="ng" index="P$AiS">
-        <child id="8465538089690331502" name="body" index="TZ5H$" />
         <child id="5383422241790532083" name="tags" index="3nqlJM" />
       </concept>
       <concept id="5349172909345532724" name="jetbrains.mps.baseLanguage.javadoc.structure.MethodDocComment" flags="ng" index="P$JXv" />
-      <concept id="8465538089690331500" name="jetbrains.mps.baseLanguage.javadoc.structure.CommentLine" flags="ng" index="TZ5HA">
-        <child id="8970989240999019149" name="part" index="1dT_Ay" />
-      </concept>
       <concept id="8465538089690331492" name="jetbrains.mps.baseLanguage.javadoc.structure.DeprecatedBlockDocTag" flags="ng" index="TZ5HI" />
-      <concept id="2217234381367049075" name="jetbrains.mps.baseLanguage.javadoc.structure.CodeInlineDocTag" flags="ng" index="VVOAv">
-        <child id="3106559687488741665" name="line" index="2Xj1qM" />
-      </concept>
       <concept id="2217234381367530212" name="jetbrains.mps.baseLanguage.javadoc.structure.ClassifierDocReference" flags="ng" index="VXe08">
         <reference id="2217234381367530213" name="classifier" index="VXe09" />
       </concept>
       <concept id="2217234381367530195" name="jetbrains.mps.baseLanguage.javadoc.structure.MethodDocReference" flags="ng" index="VXe0Z">
         <reference id="2217234381367530196" name="methodDeclaration" index="VXe0S" />
-      </concept>
-      <concept id="8970989240999019145" name="jetbrains.mps.baseLanguage.javadoc.structure.InlineTagCommentLinePart" flags="ng" index="1dT_AA">
-        <child id="6962838954693749192" name="tag" index="qph3F" />
-      </concept>
-      <concept id="8970989240999019143" name="jetbrains.mps.baseLanguage.javadoc.structure.TextCommentLinePart" flags="ng" index="1dT_AC">
-        <property id="8970989240999019144" name="text" index="1dT_AB" />
       </concept>
       <concept id="2068944020170241612" name="jetbrains.mps.baseLanguage.javadoc.structure.ClassifierDocComment" flags="ng" index="3UR2Jj" />
       <concept id="5085607816302529296" name="jetbrains.mps.baseLanguage.javadoc.structure.IHoldCommentLines" flags="ngI" index="1VezTd">
@@ -313,6 +296,7 @@
       <concept id="5085607816306582224" name="jetbrains.mps.baseLanguage.javadoc.structure.InlineTagCommentTextElement" flags="ng" index="1Vtdud">
         <child id="5085607816306582225" name="tag" index="1Vtduc" />
       </concept>
+      <concept id="5085607816306633585" name="jetbrains.mps.baseLanguage.javadoc.structure.CodeInlineDocTagTE" flags="ng" index="1VuTSG" />
       <concept id="5085607816306647746" name="jetbrains.mps.baseLanguage.javadoc.structure.LinkInlineDocTagTE" flags="ng" index="1VuXuv">
         <child id="5085607816306647747" name="reference" index="1VuXuu" />
       </concept>
@@ -557,32 +541,72 @@
         </node>
       </node>
       <node concept="P$JXv" id="1LXhaCi_CD8" role="lGtFl">
-        <node concept="TZ5HA" id="1LXhaCi_CD9" role="TZ5H$">
-          <node concept="1dT_AC" id="1LXhaCi_CDa" role="1dT_Ay">
-            <property role="1dT_AB" value="Replace the mapper with " />
+        <node concept="1PaTwC" id="1a3ruke_ven" role="1Vez_I">
+          <node concept="3oM_SD" id="1a3ruke_veo" role="1PaTwD">
+            <property role="3oM_SC" value="Replace" />
           </node>
-          <node concept="1dT_AA" id="1LXhaCi_Dly" role="1dT_Ay">
-            <node concept="VVOAv" id="1LXhaCi_DlO" role="qph3F">
-              <node concept="TZ5HA" id="1LXhaCi_DlQ" role="2Xj1qM">
-                <node concept="1dT_AC" id="1LXhaCi_DlS" role="1dT_Ay">
-                  <property role="1dT_AB" value="newMapper" />
+          <node concept="3oM_SD" id="1a3ruke_vep" role="1PaTwD">
+            <property role="3oM_SC" value="the" />
+          </node>
+          <node concept="3oM_SD" id="1a3ruke_veq" role="1PaTwD">
+            <property role="3oM_SC" value="mapper" />
+          </node>
+          <node concept="3oM_SD" id="1a3ruke_ver" role="1PaTwD">
+            <property role="3oM_SC" value="with" />
+          </node>
+          <node concept="1Vtdud" id="1a3ruke_ves" role="1PaTwD">
+            <node concept="1VuTSG" id="1a3ruke_vet" role="1Vtduc">
+              <node concept="1PaTwC" id="1a3ruke_vew" role="2JaDBN">
+                <node concept="3oM_SD" id="1a3ruke_vex" role="1PaTwD">
+                  <property role="3oM_SC" value="newMapper" />
                 </node>
               </node>
             </node>
           </node>
-          <node concept="1dT_AC" id="1LXhaCi_Dlx" role="1dT_Ay">
-            <property role="1dT_AB" value=". For use in tests only. To clean up, call " />
+          <node concept="3oM_SD" id="1a3ruke_vey" role="1PaTwD">
+            <property role="3oM_SC" value="." />
           </node>
-          <node concept="1dT_AA" id="1LXhaCi_Dmq" role="1dT_Ay">
-            <node concept="92FcH" id="1LXhaCi_Dms" role="qph3F">
-              <node concept="TZ5HA" id="1LXhaCi_Dmu" role="2XjZqd" />
-              <node concept="VXe0Z" id="1LXhaCi_DDL" role="92FcQ">
+          <node concept="3oM_SD" id="1a3ruke_vez" role="1PaTwD">
+            <property role="3oM_SC" value="For" />
+          </node>
+          <node concept="3oM_SD" id="1a3ruke_ve$" role="1PaTwD">
+            <property role="3oM_SC" value="use" />
+          </node>
+          <node concept="3oM_SD" id="1a3ruke_ve_" role="1PaTwD">
+            <property role="3oM_SC" value="in" />
+          </node>
+          <node concept="3oM_SD" id="1a3ruke_veA" role="1PaTwD">
+            <property role="3oM_SC" value="tests" />
+          </node>
+          <node concept="3oM_SD" id="1a3ruke_veB" role="1PaTwD">
+            <property role="3oM_SC" value="only." />
+          </node>
+          <node concept="3oM_SD" id="1a3ruke_veC" role="1PaTwD">
+            <property role="3oM_SC" value="To" />
+          </node>
+          <node concept="3oM_SD" id="1a3ruke_veD" role="1PaTwD">
+            <property role="3oM_SC" value="clean" />
+          </node>
+          <node concept="3oM_SD" id="1a3ruke_veE" role="1PaTwD">
+            <property role="3oM_SC" value="up," />
+          </node>
+          <node concept="3oM_SD" id="1a3ruke_veF" role="1PaTwD">
+            <property role="3oM_SC" value="call" />
+          </node>
+          <node concept="1Vtdud" id="1a3ruke_veG" role="1PaTwD">
+            <node concept="1VuXuv" id="1a3ruke_veH" role="1Vtduc">
+              <node concept="VXe0Z" id="1LXhaCi_DDL" role="1VuXuu">
                 <ref role="VXe0S" node="3scC7xmH7fx" resolve="invalidateCache" />
+              </node>
+              <node concept="1PaTwC" id="1a3ruke_veK" role="2JaDBN">
+                <node concept="3oM_SD" id="1a3ruke_veL" role="1PaTwD">
+                  <property role="3oM_SC" value="" />
+                </node>
               </node>
             </node>
           </node>
-          <node concept="1dT_AC" id="1LXhaCi_Dmp" role="1dT_Ay">
-            <property role="1dT_AB" value="." />
+          <node concept="3oM_SD" id="1a3ruke_veM" role="1PaTwD">
+            <property role="3oM_SC" value="." />
           </node>
         </node>
       </node>
