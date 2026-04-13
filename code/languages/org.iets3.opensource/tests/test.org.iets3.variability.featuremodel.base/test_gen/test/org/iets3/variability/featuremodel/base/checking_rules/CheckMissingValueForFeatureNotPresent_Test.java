@@ -40,6 +40,10 @@ public class CheckMissingValueForFeatureNotPresent_Test extends BaseTransformati
   public void test_NodeAttributeUsedButWithoutCheck4489740985379705785() throws Throwable {
     new TestBody(this).test_NodeAttributeUsedButWithoutCheck4489740985379705785();
   }
+  @Test
+  public void test_NodeAttributeUsedButWithoutCheck549778908785278071() throws Throwable {
+    new TestBody(this).test_NodeAttributeUsedButWithoutCheck549778908785278071();
+  }
 
   /*package*/ static class TestBody extends BaseTestBody {
 
@@ -78,6 +82,13 @@ public class CheckMissingValueForFeatureNotPresent_Test extends BaseTransformati
       runWithinCommand(() -> {
         SNode nodeToCheck = getNodeById("4489740985379700092");
         new CheckExpectedMessageRunnable.CheckExpectedRuleMessageRunnable(nodeToCheck, MessageStatus.WARNING, new SNodePointer("r:ea20ecfb-5cc1-4867-966a-b2976cfc5ae3(org.iets3.variability.featuremodel.base.typesystem)", "4489740985360550969"), "", myProject.getRepository(), myProject.getPlatform()).run();
+      });
+    }
+    public void test_NodeAttributeUsedButWithoutCheck549778908785278071() throws Exception {
+      initTestNodes();
+      runWithinCommand(() -> {
+        SNode nodeToCheck = getNodeById("4489740985333136741");
+        new CheckExpectedMessageRunnable.CheckExpectedRuleMessageRunnable(nodeToCheck, MessageStatus.WARNING, new SNodePointer("r:ea20ecfb-5cc1-4867-966a-b2976cfc5ae3(org.iets3.variability.featuremodel.base.typesystem)", "4489740985379865167"), "", myProject.getRepository(), myProject.getPlatform()).run();
       });
     }
 
