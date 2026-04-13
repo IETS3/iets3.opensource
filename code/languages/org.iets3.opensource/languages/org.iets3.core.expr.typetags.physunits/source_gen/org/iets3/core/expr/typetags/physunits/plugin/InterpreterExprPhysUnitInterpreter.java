@@ -82,7 +82,7 @@ public class InterpreterExprPhysUnitInterpreter extends InterpreterBase {
         }
       }
       public EvaluatorInfo getInfo() {
-        return new EvaluatorInfo("IConvertUnit", "http://127.0.0.1:63320/node?ref=8cf2f336-c754-4ffd-ae60-ad8c97df526e%2Fi%3A10000029%28org.iets3.core.expr.typetags.physunits%40transient94%2Forg.iets3.core.expr.typetags.physunits.plugin%400%29%2F4063324562830258787");
+        return new EvaluatorInfo("IConvertUnit", "http://127.0.0.1:63320/node?ref=r%3A6e69e40f-b186-4866-917f-dbdef5b3c590%28org.iets3.core.expr.typetags.physunits.plugin%29%2F4063324562830258787");
       }
 
       @Override
@@ -111,7 +111,7 @@ public class InterpreterExprPhysUnitInterpreter extends InterpreterBase {
         }
       }
       public EvaluatorInfo getInfo() {
-        return new EvaluatorInfo("ValExpression", "http://127.0.0.1:63320/node?ref=8cf2f336-c754-4ffd-ae60-ad8c97df526e%2Fi%3A10000029%28org.iets3.core.expr.typetags.physunits%40transient94%2Forg.iets3.core.expr.typetags.physunits.plugin%400%29%2F4063324562830308195");
+        return new EvaluatorInfo("ValExpression", "http://127.0.0.1:63320/node?ref=r%3A6e69e40f-b186-4866-917f-dbdef5b3c590%28org.iets3.core.expr.typetags.physunits.plugin%29%2F4063324562830308195");
       }
 
       @Override
@@ -140,7 +140,7 @@ public class InterpreterExprPhysUnitInterpreter extends InterpreterBase {
         }
       }
       public EvaluatorInfo getInfo() {
-        return new EvaluatorInfo("NoConvertExpression", "http://127.0.0.1:63320/node?ref=8cf2f336-c754-4ffd-ae60-ad8c97df526e%2Fi%3A10000029%28org.iets3.core.expr.typetags.physunits%40transient94%2Forg.iets3.core.expr.typetags.physunits.plugin%400%29%2F1227969439340862130");
+        return new EvaluatorInfo("NoConvertExpression", "http://127.0.0.1:63320/node?ref=r%3A6e69e40f-b186-4866-917f-dbdef5b3c590%28org.iets3.core.expr.typetags.physunits.plugin%29%2F1227969439340862130");
       }
 
       @Override
@@ -197,7 +197,7 @@ public class InterpreterExprPhysUnitInterpreter extends InterpreterBase {
         }
       }
       public EvaluatorInfo getInfo() {
-        return new EvaluatorInfo("TaggedExpression", "http://127.0.0.1:63320/node?ref=8cf2f336-c754-4ffd-ae60-ad8c97df526e%2Fi%3A10000029%28org.iets3.core.expr.typetags.physunits%40transient94%2Forg.iets3.core.expr.typetags.physunits.plugin%400%29%2F4063324562830525726");
+        return new EvaluatorInfo("TaggedExpression", "http://127.0.0.1:63320/node?ref=r%3A6e69e40f-b186-4866-917f-dbdef5b3c590%28org.iets3.core.expr.typetags.physunits.plugin%29%2F4063324562830525726");
       }
 
       @Override

@@ -62,7 +62,18 @@ public final class ICheckableTabularVarPoint__BehaviorDescriptor extends BaseBHD
     return "TabularVarPoint";
   }
   /*package*/ static boolean solvedInTypeSystem_id1LoQHJHiiZd(@NotNull SNode __thisNode__) {
-    return true;
+    /*
+      We are not executing the solver automatically via checking rule anymore. There are various problems
+      which have to be solved first before we activate it again. 
+      
+      * In the editor: If several tabular VPs are in the same root node, executing the solver check for one of the tabular VPs might remove the error markers attached to other tabular VPs in previous checks. Moreover, problems due to solver exceptions (in corner cases) will hassle the user, without a possibility to avoid it.
+      * During model check: As the solver check for tabular VPs is executed asynchronously, the results are not integrated in the overall model check results. Moreover, the checking of tabular VPs might still run minutes after the model check seems to have finished.
+      
+      See ticket https://github.com/IETS3/iets3.opensource/issues/1731 for details.
+
+    */
+
+    return false;
   }
   /*package*/ static Iterable<SNode> contentForSolverTask_id1ssmHrAa6oD(@NotNull SNode __thisNode__) {
     return Sequence.fromIterable(SLinkOperations.collect(ITabularVarPoint__BehaviorDescriptor.items_idWVQivijUir.invoke(__thisNode__), LINKS.featureExpr$cJRc)).where((it) -> {
