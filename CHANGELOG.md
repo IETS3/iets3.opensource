@@ -5,6 +5,13 @@ All notable changes to this project are documented in this file.
 Format of the log is _loosely_ based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 The project does _not_ follow Semantic Versioning and the changes are documented in reverse chronological order, grouped by calendar month.
 
+## April 2026
+
+### Fixed
+
+- Variability: Restored workaround for using for-all-variants checking rules outside the IDE (e.g., on a build server). Due to MPS-34340, the for-all-variants checking cannot be done outside the IDE if the model under check has more than one root nodes.
+
+
 ## March 2026
 
 ### Fixed
