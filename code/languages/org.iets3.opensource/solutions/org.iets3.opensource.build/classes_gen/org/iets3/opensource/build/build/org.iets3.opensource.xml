@@ -88,7 +88,7 @@
         <id>org.iets3.core.assessment</id>
         <name>org.iets3.core.assessment</name>
         <version>${version}</version>
-        <depends>com.intellij.modules.platform</depends>
+        <depends>com.intellij.modules.mps</depends>
         <depends>com.mbeddr.platform</depends>
         <depends>org.iets3.trace</depends>
         
@@ -198,7 +198,7 @@
         <id>org.iets3.build.os</id>
         <name>org.iets3.build.os</name>
         <version>${version}</version>
-        <depends>com.intellij.modules.platform</depends>
+        <depends>com.intellij.modules.mps</depends>
         <depends>jetbrains.mps.core</depends>
         <depends>jetbrains.mps.build</depends>
         <depends>com.mbeddr.platform</depends>
@@ -481,7 +481,7 @@
         <id>org.iets3.comp.os</id>
         <name>org.iets3.comp.os</name>
         <version>${version}</version>
-        <depends>com.intellij.modules.platform</depends>
+        <depends>com.intellij.modules.mps</depends>
         <depends>jetbrains.mps.core</depends>
         <depends>org.iets3.core.os</depends>
         <depends>org.iets3.req.os</depends>
@@ -1142,7 +1142,7 @@
         <name>org.iets3.contextfilter</name>
         <description> </description>
         <version>${version}</version>
-        <depends>com.intellij.modules.platform</depends>
+        <depends>com.intellij.modules.mps</depends>
         <depends>de.itemis.mps.editor.widgets</depends>
         <depends>com.mbeddr.mpsutil.modellisteners</depends>
         <depends>com.mbeddr.mpsutil.editorsupport</depends>
@@ -1331,7 +1331,7 @@
         <id>org.iets3.core.expr.genjava</id>
         <name>org.iets3.core.expr.genjava</name>
         <version>${version}</version>
-        <depends>com.intellij.modules.platform</depends>
+        <depends>com.intellij.modules.mps</depends>
         <depends>com.mbeddr.platform</depends>
         <depends>org.iets3.core.os</depends>
         
@@ -3674,7 +3674,7 @@
         <id>org.iets3.core.expr.devkits</id>
         <name>org.iets3.core.expr.devkits</name>
         <version>${version}</version>
-        <depends>com.intellij.modules.platform</depends>
+        <depends>com.intellij.modules.mps</depends>
         
         <extensions defaultExtensionNs="com.intellij">
           <mps.LanguageLibrary dir="/languages" />
@@ -3721,7 +3721,7 @@
         <id>org.iets3.core.expr.repl</id>
         <name>org.iets3.core.expr.repl</name>
         <version>${version}</version>
-        <depends>com.intellij.modules.platform</depends>
+        <depends>com.intellij.modules.mps</depends>
         <depends>org.iets3.core.os</depends>
         
         <extensions defaultExtensionNs="com.intellij">
@@ -4076,7 +4076,7 @@
         <id>org.iets3.core.expr.tracing</id>
         <name>org.iets3.core.expr.tracing</name>
         <version>${version}</version>
-        <depends>com.intellij.modules.platform</depends>
+        <depends>com.intellij.modules.mps</depends>
         <depends>org.iets3.core.os</depends>
         
         <extensions defaultExtensionNs="com.intellij">
@@ -4274,7 +4274,7 @@
         <id>org.iets3.hardware</id>
         <name>org.iets3.hardware</name>
         <version>${version}</version>
-        <depends>com.intellij.modules.platform</depends>
+        <depends>com.intellij.modules.mps</depends>
         <depends>jetbrains.mps.core</depends>
         <depends>jetbrains.mps.ide.make</depends>
         <depends>org.iets3.comp.os</depends>
@@ -4448,7 +4448,7 @@
         <id>org.iets3.core.junit.interpreter.run.configuration</id>
         <name>org.iets3.core.junit.interpreter.run.configuration</name>
         <version>${version}</version>
-        <depends>com.intellij.modules.platform</depends>
+        <depends>com.intellij.modules.mps</depends>
         <depends>jetbrains.mps.execution.configurations</depends>
         <depends>org.iets3.core.os</depends>
         
@@ -4559,7 +4559,7 @@
         <id>org.iets3.core.mapping</id>
         <name>org.iets3.core.mapping</name>
         <version>${version}</version>
-        <depends>com.intellij.modules.platform</depends>
+        <depends>com.intellij.modules.mps</depends>
         <depends>org.iets3.comp.os</depends>
         <depends>org.iets3.hardware</depends>
         <depends>de.itemis.mps.grammarcells</depends>
@@ -4712,7 +4712,7 @@
         <id>org.iets3.core.os</id>
         <name>org.iets3.core.os</name>
         <version>${version}</version>
-        <depends>com.intellij.modules.platform</depends>
+        <depends>com.intellij.modules.mps</depends>
         <depends>jetbrains.mps.core</depends>
         <depends>jetbrains.mps.testing</depends>
         <depends>com.mbeddr.platform</depends>
@@ -11846,7 +11846,7 @@
         <id>org.iets3.protocol</id>
         <name>org.iets3.protocol</name>
         <version>${version}</version>
-        <depends>com.intellij.modules.platform</depends>
+        <depends>com.intellij.modules.mps</depends>
         <depends>org.iets3.comp.os</depends>
         <depends>org.iets3.core.mapping</depends>
         <depends>de.itemis.mps.grammarcells</depends>
@@ -11999,7 +11999,7 @@
         <id>org.iets3.req.os</id>
         <name>org.iets3.req.os</name>
         <version>${version}</version>
-        <depends>com.intellij.modules.platform</depends>
+        <depends>com.intellij.modules.mps</depends>
         <depends>jetbrains.mps.editor.contextActions</depends>
         <depends>jetbrains.mps.core</depends>
         <depends>com.mbeddr.platform</depends>
@@ -12357,7 +12357,7 @@
         <id>org.iets3.safety.os</id>
         <name>org.iets3.safety.os</name>
         <version>${version}</version>
-        <depends>com.intellij.modules.platform</depends>
+        <depends>com.intellij.modules.mps</depends>
         <depends>org.iets3.core.os</depends>
         
         <extensions defaultExtensionNs="com.intellij">
@@ -12493,7 +12493,7 @@
         <id>org.iets3.trace</id>
         <name>org.iets3.trace</name>
         <version>${version}</version>
-        <depends>com.intellij.modules.platform</depends>
+        <depends>com.intellij.modules.mps</depends>
         <depends>jetbrains.mps.core</depends>
         <depends>org.iets3.core.os</depends>
         
@@ -12635,7 +12635,7 @@
         <id>org.iets3.variability.os</id>
         <name>org.iets3.variability.os</name>
         <version>${version}</version>
-        <depends>com.intellij.modules.platform</depends>
+        <depends>com.intellij.modules.mps</depends>
         <depends>org.iets3.core.os</depends>
         <depends>com.mbeddr.mpsutil.editor.displayControl</depends>
         <depends>com.mbeddr.mpsutil.logicalChild</depends>
