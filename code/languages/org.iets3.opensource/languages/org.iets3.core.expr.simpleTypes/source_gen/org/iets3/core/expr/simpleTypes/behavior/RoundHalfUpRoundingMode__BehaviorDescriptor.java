@@ -8,26 +8,22 @@ import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import java.math.BigDecimal;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import java.util.List;
 import java.util.Arrays;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.mps.openapi.model.SNode;
 import java.math.RoundingMode;
-import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 
 public final class RoundHalfUpRoundingMode__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getConcept(0x6b277d9ad52d416fL, 0xa2091919bd737f50L, 0x23082b9b35a5bcb8L, "org.iets3.core.expr.simpleTypes.structure.RoundHalfUpRoundingMode");
 
-  public static final SMethod<BigDecimal> process_id7DTWJ$8l$8B = new SMethodBuilder<BigDecimal>(new SJavaCompoundTypeImpl(BigDecimal.class)).name("process").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(8825352096209846823L).languageId(0xa2091919bd737f50L, 0x6b277d9ad52d416fL).build2(SMethodBuilder.createJavaParameter(BigDecimal.class, ""));
+  public static final SMethod<BigDecimal> process_id7DTWJ$8l$8B = new SMethodBuilder<>(BigDecimal.class).name("process").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(8825352096209846823L).languageId(0xa2091919bd737f50L, 0x6b277d9ad52d416fL).build2(SMethodBuilder.createJavaParameter(BigDecimal.class, "value"));
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(process_id7DTWJ$8l$8B);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(process_id7DTWJ$8l$8B);
 
-  private static void ___init___(@NotNull SNode __thisNode__) {
-  }
 
   /*package*/ static BigDecimal process_id7DTWJ$8l$8B(@NotNull SNode __thisNode__, BigDecimal value) {
     return value.setScale(((int) RoundingMode__BehaviorDescriptor.targetPrecision_id7DTWJ$8lDMY.invoke(__thisNode__)), RoundingMode.HALF_UP);
@@ -36,10 +32,6 @@ public final class RoundHalfUpRoundingMode__BehaviorDescriptor extends BaseBHDes
   /*package*/ RoundHalfUpRoundingMode__BehaviorDescriptor() {
   }
 
-  @Override
-  protected void initNode(@NotNull SNode node, @NotNull SConstructor constructor, @Nullable Object[] parameters) {
-    ___init___(node);
-  }
 
   @Override
   protected <T> T invokeSpecial0(@NotNull SNode node, @NotNull SMethod<T> method, @Nullable Object[] parameters) {

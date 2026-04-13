@@ -8,7 +8,6 @@ import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import org.jetbrains.mps.openapi.model.SNode;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import java.util.List;
 import java.util.Arrays;
@@ -26,7 +25,6 @@ import jetbrains.mps.baseLanguage.closures.runtime._FunctionTypes;
 import java.util.Objects;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations;
 import jetbrains.mps.typechecking.TypecheckingFacade;
-import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 import org.jetbrains.mps.openapi.language.SInterfaceConcept;
@@ -38,19 +36,17 @@ import org.jetbrains.mps.openapi.language.SProperty;
 public final class IConvertUnit__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getInterfaceConcept(0x7ee265bd59864709L, 0x86ed2c6daa33cd8cL, 0x7e22431b94d76bbaL, "org.iets3.core.expr.typetags.physunits.structure.IConvertUnit");
 
-  public static final SMethod<SNode> getExpression_id7SygLIkQnGn = new SMethodBuilder<SNode>(new SJavaCompoundTypeImpl((Class<SNode>) ((Class) Object.class))).name("getExpression").modifiers(12, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(9088900783727541015L).languageId(0x86ed2c6daa33cd8cL, 0x7ee265bd59864709L).build2();
-  public static final SMethod<SNode> getTargetUnit_id7SygLIkQpOA = new SMethodBuilder<SNode>(new SJavaCompoundTypeImpl((Class<SNode>) ((Class) Object.class))).name("getTargetUnit").modifiers(12, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(9088900783727549734L).languageId(0x86ed2c6daa33cd8cL, 0x7ee265bd59864709L).build2();
-  public static final SMethod<SNode> getTargetUnitReference_id1BdB9zGarhv = new SMethodBuilder<SNode>(new SJavaCompoundTypeImpl((Class<SNode>) ((Class) Object.class))).name("getTargetUnitReference").modifiers(12, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(1859314401785001055L).languageId(0x86ed2c6daa33cd8cL, 0x7ee265bd59864709L).build2();
-  public static final SMethod<Void> setConversionSpecifier_id7SygLIkQzuc = new SMethodBuilder<Void>(new SJavaCompoundTypeImpl(Void.class)).name("setConversionSpecifier").modifiers(12, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(9088900783727589260L).languageId(0x86ed2c6daa33cd8cL, 0x7ee265bd59864709L).build2(SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""));
-  public static final SMethod<SNode> getConversionSpecifier_id7SygLIkR36w = new SMethodBuilder<SNode>(new SJavaCompoundTypeImpl((Class<SNode>) ((Class) Object.class))).name("getConversionSpecifier").modifiers(12, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(9088900783727718816L).languageId(0x86ed2c6daa33cd8cL, 0x7ee265bd59864709L).build2();
-  public static final SMethod<SNode> getContext_id7NHcideTk7h = new SMethodBuilder<SNode>(new SJavaCompoundTypeImpl((Class<SNode>) ((Class) Object.class))).name("getContext").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(9001905257900753361L).languageId(0x86ed2c6daa33cd8cL, 0x7ee265bd59864709L).build2();
-  public static final SMethod<List<SNode>> getApplicableConversionSpecifiers_id3_TFq$0_vSx = new SMethodBuilder<List<SNode>>(new SJavaCompoundTypeImpl((Class<List<SNode>>) ((Class) Object.class))).name("getApplicableConversionSpecifiers").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(4141532273714789921L).languageId(0x86ed2c6daa33cd8cL, 0x7ee265bd59864709L).build2(SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""));
-  public static final SMethod<SNode> getImplicitConversionSpecifier_id2x0M_l2hX_w = new SMethodBuilder<SNode>(new SJavaCompoundTypeImpl((Class<SNode>) ((Class) Object.class))).name("getImplicitConversionSpecifier").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(2900540627559635296L).languageId(0x86ed2c6daa33cd8cL, 0x7ee265bd59864709L).build2(SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""));
+  public static final SMethod<SNode> getExpression_id7SygLIkQnGn = new SMethodBuilder<>(SNode.class).name("getExpression").modifiers(12, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(9088900783727541015L).languageId(0x86ed2c6daa33cd8cL, 0x7ee265bd59864709L).build2();
+  public static final SMethod<SNode> getTargetUnit_id7SygLIkQpOA = new SMethodBuilder<>(SNode.class).name("getTargetUnit").modifiers(12, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(9088900783727549734L).languageId(0x86ed2c6daa33cd8cL, 0x7ee265bd59864709L).build2();
+  public static final SMethod<SNode> getTargetUnitReference_id1BdB9zGarhv = new SMethodBuilder<>(SNode.class).name("getTargetUnitReference").modifiers(12, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(1859314401785001055L).languageId(0x86ed2c6daa33cd8cL, 0x7ee265bd59864709L).build2();
+  public static final SMethod<Void> setConversionSpecifier_id7SygLIkQzuc = new SMethodBuilder<>(Void.TYPE).name("setConversionSpecifier").modifiers(12, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(9088900783727589260L).languageId(0x86ed2c6daa33cd8cL, 0x7ee265bd59864709L).build2(SMethodBuilder.createJavaParameter(SNode.class, "conversionSpecifier"));
+  public static final SMethod<SNode> getConversionSpecifier_id7SygLIkR36w = new SMethodBuilder<>(SNode.class).name("getConversionSpecifier").modifiers(12, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(9088900783727718816L).languageId(0x86ed2c6daa33cd8cL, 0x7ee265bd59864709L).build2();
+  public static final SMethod<SNode> getContext_id7NHcideTk7h = new SMethodBuilder<>(SNode.class).name("getContext").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(9001905257900753361L).languageId(0x86ed2c6daa33cd8cL, 0x7ee265bd59864709L).build2();
+  public static final SMethod<List<SNode>> getApplicableConversionSpecifiers_id3_TFq$0_vSx = new SMethodBuilder<>((Class<List<SNode>>) ((Class) Object.class)).name("getApplicableConversionSpecifiers").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(4141532273714789921L).languageId(0x86ed2c6daa33cd8cL, 0x7ee265bd59864709L).build2(SMethodBuilder.createJavaParameter(SNode.class, "scope"));
+  public static final SMethod<SNode> getImplicitConversionSpecifier_id2x0M_l2hX_w = new SMethodBuilder<>(SNode.class).name("getImplicitConversionSpecifier").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(2900540627559635296L).languageId(0x86ed2c6daa33cd8cL, 0x7ee265bd59864709L).build2(SMethodBuilder.createJavaParameter(SNode.class, "scope"));
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(getExpression_id7SygLIkQnGn, getTargetUnit_id7SygLIkQpOA, getTargetUnitReference_id1BdB9zGarhv, setConversionSpecifier_id7SygLIkQzuc, getConversionSpecifier_id7SygLIkR36w, getContext_id7NHcideTk7h, getApplicableConversionSpecifiers_id3_TFq$0_vSx, getImplicitConversionSpecifier_id2x0M_l2hX_w);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(getExpression_id7SygLIkQnGn, getTargetUnit_id7SygLIkQpOA, getTargetUnitReference_id1BdB9zGarhv, setConversionSpecifier_id7SygLIkQzuc, getConversionSpecifier_id7SygLIkR36w, getContext_id7NHcideTk7h, getApplicableConversionSpecifiers_id3_TFq$0_vSx, getImplicitConversionSpecifier_id2x0M_l2hX_w);
 
-  private static void ___init___(@NotNull SNode __thisNode__) {
-  }
 
   /*package*/ static SNode getContext_id7NHcideTk7h(@NotNull SNode __thisNode__) {
     return SNodeOperations.getNodeAncestor(__thisNode__, CONCEPTS.IVisibleElementProvider$$O, false, false);
@@ -117,10 +113,6 @@ public final class IConvertUnit__BehaviorDescriptor extends BaseBHDescriptor {
   /*package*/ IConvertUnit__BehaviorDescriptor() {
   }
 
-  @Override
-  protected void initNode(@NotNull SNode node, @NotNull SConstructor constructor, @Nullable Object[] parameters) {
-    ___init___(node);
-  }
 
   @Override
   protected <T> T invokeSpecial0(@NotNull SNode node, @NotNull SMethod<T> method, @Nullable Object[] parameters) {

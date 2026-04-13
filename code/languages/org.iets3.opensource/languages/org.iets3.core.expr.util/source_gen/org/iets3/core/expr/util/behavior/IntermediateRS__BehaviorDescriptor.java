@@ -8,7 +8,6 @@ import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import org.jetbrains.mps.openapi.model.SNode;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import java.util.List;
 import java.util.Arrays;
@@ -16,7 +15,6 @@ import org.jetbrains.annotations.NotNull;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
 import org.iets3.core.expr.base.behavior.Expression__BehaviorDescriptor;
-import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 import jetbrains.mps.smodel.builder.SNodeBuilder;
@@ -26,13 +24,11 @@ import org.jetbrains.mps.openapi.language.SConcept;
 public final class IntermediateRS__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getConcept(0x8bb1251eeae547abL, 0x984333adfae8edaaL, 0x17752c05dc5cb1d3L, "org.iets3.core.expr.util.structure.IntermediateRS");
 
-  public static final SMethod<SNode> createExpression_id1tPb0nsnb6P = new SMethodBuilder<SNode>(new SJavaCompoundTypeImpl((Class<SNode>) ((Class) Object.class))).name("createExpresion").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(1690305638831010229L).languageId(0x984333adfae8edaaL, 0x8bb1251eeae547abL).build2(SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""));
-  public static final SMethod<String> renderReadable_idHywGhj7Wee = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("renderReadable").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(820361861854643086L).languageId(0x984333adfae8edaaL, 0x8bb1251eeae547abL).build2();
+  public static final SMethod<SNode> createExpression_id1tPb0nsnb6P = new SMethodBuilder<>(SNode.class).name("createExpresion").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(1690305638831010229L).languageId(0x984333adfae8edaaL, 0x8bb1251eeae547abL).build2(SMethodBuilder.createJavaParameter(SNode.class, "subject"));
+  public static final SMethod<String> renderReadable_idHywGhj7Wee = new SMethodBuilder<>(String.class).name("renderReadable").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(820361861854643086L).languageId(0x984333adfae8edaaL, 0x8bb1251eeae547abL).build2();
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(createExpression_id1tPb0nsnb6P, renderReadable_idHywGhj7Wee);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(createExpression_id1tPb0nsnb6P, renderReadable_idHywGhj7Wee);
 
-  private static void ___init___(@NotNull SNode __thisNode__) {
-  }
 
   /*package*/ static SNode createExpression_id1tPb0nsnb6P(@NotNull SNode __thisNode__, SNode subject) {
     return createLogicalAndExpression_3owe7v_a0a0(SNodeOperations.copyNode(subject), SNodeOperations.copyNode(SLinkOperations.getTarget(__thisNode__, LINKS.lower$2reJ)), SNodeOperations.copyNode(subject), SNodeOperations.copyNode(SLinkOperations.getTarget(__thisNode__, LINKS.upper$2rGL)));
@@ -44,10 +40,6 @@ public final class IntermediateRS__BehaviorDescriptor extends BaseBHDescriptor {
   /*package*/ IntermediateRS__BehaviorDescriptor() {
   }
 
-  @Override
-  protected void initNode(@NotNull SNode node, @NotNull SConstructor constructor, @Nullable Object[] parameters) {
-    ___init___(node);
-  }
 
   @Override
   protected <T> T invokeSpecial0(@NotNull SNode node, @NotNull SMethod<T> method, @Nullable Object[] parameters) {

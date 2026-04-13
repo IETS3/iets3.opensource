@@ -14,7 +14,6 @@ import org.jetbrains.mps.openapi.model.SNode;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
 import java.util.List;
-import java.util.ArrayList;
 import jetbrains.mps.internal.collections.runtime.ListSequence;
 import jetbrains.mps.internal.collections.runtime.SetSequence;
 import jetbrains.mps.internal.collections.runtime.IMapping;
@@ -122,7 +121,7 @@ public class UnitMap {
    */
   public static Tuples._3<Boolean, List<SNode>, List<SNode>> computeMatch(UnitMap left, UnitMap right) {
     if (left == null && right == null) {
-      return MultiTuple.<Boolean,List<SNode>,List<SNode>>from(true, new ArrayList<SNode>(), new ArrayList<SNode>());
+      return MultiTuple.<Boolean,List<SNode>,List<SNode>>from(true, List.<SNode>of(), List.<SNode>of());
     }
 
     // remove units with zero exponents

@@ -8,29 +8,25 @@ import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import org.jetbrains.mps.openapi.model.SNode;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import java.util.Optional;
 import java.util.List;
 import java.util.Arrays;
 import org.jetbrains.annotations.NotNull;
-import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 
 public final class IArtifactRef__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getInterfaceConcept(0xf08835038eaa4bc8L, 0x8846eb63220ab1ddL, 0x29ffffa5c1081abeL, "org.iets3.variability.artifacts.base.structure.IArtifactRef");
 
-  public static final SMethod<SNode> node_id2BZZUn12rri = new SMethodBuilder<SNode>(new SJavaCompoundTypeImpl((Class<SNode>) ((Class) Object.class))).name("node").modifiers(12, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(3026418561989588690L).languageId(0x8846eb63220ab1ddL, 0xf08835038eaa4bc8L).build2();
-  public static final SMethod<Optional<ArtifactPath>> localPath_id2BZZUn12r$J = new SMethodBuilder<Optional<ArtifactPath>>(new SJavaCompoundTypeImpl(Optional.class)).name("localPath").modifiers(12, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(3026418561989589295L).languageId(0x8846eb63220ab1ddL, 0xf08835038eaa4bc8L).build2(SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""));
-  public static final SMethod<Void> setGenIdOfSkeletonNode_id2BZZUn1TtlC = new SMethodBuilder<Void>(new SJavaCompoundTypeImpl(Void.class)).name("setGenIdOfSkeletonNode").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(3026418562004014440L).languageId(0x8846eb63220ab1ddL, 0xf08835038eaa4bc8L).build2(SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""));
-  public static final SMethod<SNode> skeletonNodeGenId_id2BZZUn1Tva7 = new SMethodBuilder<SNode>(new SJavaCompoundTypeImpl((Class<SNode>) ((Class) Object.class))).name("skeletonNodeGenId").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(3026418562004021895L).languageId(0x8846eb63220ab1ddL, 0xf08835038eaa4bc8L).build2();
-  public static final SMethod<Optional<ArtifactPath>> artifactPathFor_id3I5v8np5wnz = new SMethodBuilder<Optional<ArtifactPath>>(new SJavaCompoundTypeImpl(Optional.class)).name("artifactPathFor").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(4288971134454859235L).languageId(0x8846eb63220ab1ddL, 0xf08835038eaa4bc8L).build2(SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""), SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""));
+  public static final SMethod<SNode> node_id2BZZUn12rri = new SMethodBuilder<>(SNode.class).name("node").modifiers(12, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(3026418561989588690L).languageId(0x8846eb63220ab1ddL, 0xf08835038eaa4bc8L).build2();
+  public static final SMethod<Optional<ArtifactPath>> localPath_id2BZZUn12r$J = new SMethodBuilder<>((Class<Optional<ArtifactPath>>) ((Class) Object.class)).name("localPath").modifiers(12, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(3026418561989589295L).languageId(0x8846eb63220ab1ddL, 0xf08835038eaa4bc8L).build2(SMethodBuilder.createJavaParameter(SNode.class, "ivaaContext"));
+  public static final SMethod<Void> setGenIdOfSkeletonNode_id2BZZUn1TtlC = new SMethodBuilder<>(Void.TYPE).name("setGenIdOfSkeletonNode").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(3026418562004014440L).languageId(0x8846eb63220ab1ddL, 0xf08835038eaa4bc8L).build2(SMethodBuilder.createJavaParameter(SNode.class, "genId"));
+  public static final SMethod<SNode> skeletonNodeGenId_id2BZZUn1Tva7 = new SMethodBuilder<>(SNode.class).name("skeletonNodeGenId").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(3026418562004021895L).languageId(0x8846eb63220ab1ddL, 0xf08835038eaa4bc8L).build2();
+  public static final SMethod<Optional<ArtifactPath>> artifactPathFor_id3I5v8np5wnz = new SMethodBuilder<>((Class<Optional<ArtifactPath>>) ((Class) Object.class)).name("artifactPathFor").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(4288971134454859235L).languageId(0x8846eb63220ab1ddL, 0xf08835038eaa4bc8L).build2(SMethodBuilder.createJavaParameter(SNode.class, "nodeForPivot"), SMethodBuilder.createJavaParameter(SNode.class, "ivaaContext"));
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(node_id2BZZUn12rri, localPath_id2BZZUn12r$J, setGenIdOfSkeletonNode_id2BZZUn1TtlC, skeletonNodeGenId_id2BZZUn1Tva7, artifactPathFor_id3I5v8np5wnz);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(node_id2BZZUn12rri, localPath_id2BZZUn12r$J, setGenIdOfSkeletonNode_id2BZZUn1TtlC, skeletonNodeGenId_id2BZZUn1Tva7, artifactPathFor_id3I5v8np5wnz);
 
-  private static void ___init___(@NotNull SNode __thisNode__) {
-  }
 
   /*package*/ static void setGenIdOfSkeletonNode_id2BZZUn1TtlC(@NotNull SNode __thisNode__, SNode genId) {
     __thisNode__.putUserObject("IArtifactRef_genId", genId);
@@ -45,10 +41,6 @@ public final class IArtifactRef__BehaviorDescriptor extends BaseBHDescriptor {
   /*package*/ IArtifactRef__BehaviorDescriptor() {
   }
 
-  @Override
-  protected void initNode(@NotNull SNode node, @NotNull SConstructor constructor, @Nullable Object[] parameters) {
-    ___init___(node);
-  }
 
   @Override
   protected <T> T invokeSpecial0(@NotNull SNode node, @NotNull SMethod<T> method, @Nullable Object[] parameters) {

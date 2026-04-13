@@ -7,7 +7,6 @@ import org.jetbrains.mps.openapi.language.SAbstractConcept;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import org.iets3.core.expr.base.plugin.EffectDescriptor;
 import org.jetbrains.mps.openapi.model.SNode;
@@ -20,7 +19,6 @@ import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
 import jetbrains.mps.internal.collections.runtime.ListSequence;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations;
 import de.slisson.mps.richtext.behavior.IWord__BehaviorDescriptor;
-import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 import jetbrains.mps.smodel.builder.SNodeBuilder;
@@ -31,15 +29,13 @@ import org.jetbrains.mps.openapi.language.SProperty;
 public final class StringInterpolationExpr__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getConcept(0x6b277d9ad52d416fL, 0xa2091919bd737f50L, 0x73194702f119244aL, "org.iets3.core.expr.simpleTypes.structure.StringInterpolationExpr");
 
-  public static final SMethod<String> renderReadable_id4Y0vh0cfqjE = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("renderReadable").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5728716233893586154L).languageId(0xb66a309a6e1a7290L, 0xcfaa4966b7d54b69L).build2();
-  public static final SMethod<EffectDescriptor> effectDescriptor_id6GySMNjjWfO = new SMethodBuilder<EffectDescriptor>(new SJavaCompoundTypeImpl(EffectDescriptor.class)).name("effectDescriptor").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(7719982492929737716L).languageId(0xb66a309a6e1a7290L, 0xcfaa4966b7d54b69L).build2();
-  /*package*/ static final SMethod<String> removeSpacesAtTheEnd_id39iG6BGaNdc = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("removeSpacesAtTheEnd").modifiers(1, AccessPrivileges.PRIVATE).concept(CONCEPT).baseMethodId(3626154618966979404L).languageId(0xa2091919bd737f50L, 0x6b277d9ad52d416fL).build2(SMethodBuilder.createJavaParameter(String.class, ""));
-  public static final SMethod<SNode> createReducedExpression_id71dSyJVoY1g = new SMethodBuilder<SNode>(new SJavaCompoundTypeImpl((Class<SNode>) ((Class) Object.class))).name("createReducedExpression").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(8092372783983747152L).languageId(0xb66a309a6e1a7290L, 0xcfaa4966b7d54b69L).build2();
+  public static final SMethod<String> renderReadable_id4Y0vh0cfqjE = new SMethodBuilder<>(String.class).name("renderReadable").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5728716233893586154L).languageId(0xb66a309a6e1a7290L, 0xcfaa4966b7d54b69L).build2();
+  public static final SMethod<EffectDescriptor> effectDescriptor_id6GySMNjjWfO = new SMethodBuilder<>(EffectDescriptor.class).name("effectDescriptor").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(7719982492929737716L).languageId(0xb66a309a6e1a7290L, 0xcfaa4966b7d54b69L).build2();
+  /*package*/ static final SMethod<String> removeSpacesAtTheEnd_id39iG6BGaNdc = new SMethodBuilder<>(String.class).name("removeSpacesAtTheEnd").modifiers(1, AccessPrivileges.PRIVATE).concept(CONCEPT).baseMethodId(3626154618966979404L).languageId(0xa2091919bd737f50L, 0x6b277d9ad52d416fL).build2(SMethodBuilder.createJavaParameter(String.class, "in"));
+  public static final SMethod<SNode> createReducedExpression_id71dSyJVoY1g = new SMethodBuilder<>(SNode.class).name("createReducedExpression").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(8092372783983747152L).languageId(0xb66a309a6e1a7290L, 0xcfaa4966b7d54b69L).build2();
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(renderReadable_id4Y0vh0cfqjE, effectDescriptor_id6GySMNjjWfO, removeSpacesAtTheEnd_id39iG6BGaNdc, createReducedExpression_id71dSyJVoY1g);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(renderReadable_id4Y0vh0cfqjE, effectDescriptor_id6GySMNjjWfO, removeSpacesAtTheEnd_id39iG6BGaNdc, createReducedExpression_id71dSyJVoY1g);
 
-  private static void ___init___(@NotNull SNode __thisNode__) {
-  }
 
   /*package*/ static String renderReadable_id4Y0vh0cfqjE(@NotNull SNode __thisNode__) {
     return "'''" + Text__BehaviorDescriptor.asTextString_id3Q5enzfMT4l.invoke(SLinkOperations.getTarget(__thisNode__, LINKS.text$btRI)) + "'''";
@@ -91,10 +87,6 @@ public final class StringInterpolationExpr__BehaviorDescriptor extends BaseBHDes
   /*package*/ StringInterpolationExpr__BehaviorDescriptor() {
   }
 
-  @Override
-  protected void initNode(@NotNull SNode node, @NotNull SConstructor constructor, @Nullable Object[] parameters) {
-    ___init___(node);
-  }
 
   @Override
   protected <T> T invokeSpecial0(@NotNull SNode node, @NotNull SMethod<T> method, @Nullable Object[] parameters) {

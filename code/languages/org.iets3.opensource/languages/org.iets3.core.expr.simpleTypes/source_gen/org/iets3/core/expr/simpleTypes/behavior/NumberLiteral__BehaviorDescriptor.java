@@ -7,7 +7,6 @@ import org.jetbrains.mps.openapi.language.SAbstractConcept;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import java.math.BigDecimal;
 import org.jetbrains.mps.openapi.model.SNode;
@@ -18,8 +17,8 @@ import org.iets3.core.expr.base.runtime.runtime.PTF;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations;
 import org.iets3.core.expr.base.behavior.Expression__BehaviorDescriptor;
 import org.iets3.core.expr.base.behavior.ISupportHexValues__BehaviorDescriptor;
+import java.util.Objects;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
-import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 import java.util.regex.Pattern;
@@ -29,24 +28,22 @@ import org.jetbrains.mps.openapi.language.SConcept;
 public final class NumberLiteral__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getConcept(0x6b277d9ad52d416fL, 0xa2091919bd737f50L, 0x46ff3b3d86d0e6daL, "org.iets3.core.expr.simpleTypes.structure.NumberLiteral");
 
-  public static final SMethod<Boolean> isZero_id4rZeNQ6OfoS = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("isZero").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5115872837157058104L).languageId(0xa2091919bd737f50L, 0x6b277d9ad52d416fL).build2(SMethodBuilder.createJavaParameter(String.class, ""));
-  public static final SMethod<Boolean> isInteger_id4rZeNQ6Og4r = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("isInteger").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5115872837157060891L).languageId(0xa2091919bd737f50L, 0x6b277d9ad52d416fL).build2(SMethodBuilder.createJavaParameter(String.class, ""));
-  public static final SMethod<Boolean> isReal_id4rZeNQ6Og7j = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("isReal").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5115872837157061075L).languageId(0xa2091919bd737f50L, 0x6b277d9ad52d416fL).build2(SMethodBuilder.createJavaParameter(String.class, ""));
-  public static final SMethod<Boolean> isValidNumber_id5Ys_ngSnFbJ = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("isValidNumber").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(6889545856364491503L).languageId(0xa2091919bd737f50L, 0x6b277d9ad52d416fL).build2(SMethodBuilder.createJavaParameter(String.class, ""));
-  public static final SMethod<Boolean> canBeInt_iduGVYUijgRw = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("canBeInt").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(553080662195506656L).languageId(0xa2091919bd737f50L, 0x6b277d9ad52d416fL).build2();
-  public static final SMethod<String> getPresentation_idhEwIMiw = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("getPresentation").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(1213877396640L).languageId(0x9b92103b95ca8c0cL, 0xceab519525ea4f22L).build2();
-  public static final SMethod<BigDecimal> toBigDecimal_id6v8$kf$4zsT = new SMethodBuilder<BigDecimal>(new SJavaCompoundTypeImpl(BigDecimal.class)).name("toBigDecimal").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(7478386902023943993L).languageId(0xa2091919bd737f50L, 0x6b277d9ad52d416fL).build2();
-  public static final SMethod<Integer> numberOfDecimals_id3p6$WoEl3wd = new SMethodBuilder<Integer>(new SJavaCompoundTypeImpl(Integer.TYPE)).name("numberOfDecimals").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(3910975805740824589L).languageId(0xa2091919bd737f50L, 0x6b277d9ad52d416fL).build2();
-  public static final SMethod<String> renderReadable_id4Y0vh0cfqjE = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("renderReadable").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5728716233893586154L).languageId(0xb66a309a6e1a7290L, 0xcfaa4966b7d54b69L).build2();
-  public static final SMethod<Boolean> isSameAs_id7GwCuf2r4g6 = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("isSameAs").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(8872269265511400454L).languageId(0xb66a309a6e1a7290L, 0xcfaa4966b7d54b69L).build2(SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""));
-  public static final SMethod<String> getStringValue_id2q1ydqQjSPO = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("getStringValue").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(2774649301199981940L).languageId(0xb66a309a6e1a7290L, 0xcfaa4966b7d54b69L).build2();
-  public static final SMethod<String> valueWithDotInsteadOfComma_id2oUyrt$QPvb = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("valueWithDotInsteadOfComma").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(2754665542854596555L).languageId(0xa2091919bd737f50L, 0x6b277d9ad52d416fL).build2();
-  public static final SMethod<SNode> set_id2oUyrt$Tg3c = new SMethodBuilder<SNode>(new SJavaCompoundTypeImpl((Class<SNode>) ((Class) Object.class))).name("set").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(2754665542855229644L).languageId(0xa2091919bd737f50L, 0x6b277d9ad52d416fL).build2(SMethodBuilder.createJavaParameter(String.class, ""));
+  public static final SMethod<Boolean> isZero_id4rZeNQ6OfoS = new SMethodBuilder<>(Boolean.TYPE).name("isZero").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5115872837157058104L).languageId(0xa2091919bd737f50L, 0x6b277d9ad52d416fL).build2(SMethodBuilder.createJavaParameter(String.class, "val"));
+  public static final SMethod<Boolean> isInteger_id4rZeNQ6Og4r = new SMethodBuilder<>(Boolean.TYPE).name("isInteger").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5115872837157060891L).languageId(0xa2091919bd737f50L, 0x6b277d9ad52d416fL).build2(SMethodBuilder.createJavaParameter(String.class, "val"));
+  public static final SMethod<Boolean> isReal_id4rZeNQ6Og7j = new SMethodBuilder<>(Boolean.TYPE).name("isReal").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5115872837157061075L).languageId(0xa2091919bd737f50L, 0x6b277d9ad52d416fL).build2(SMethodBuilder.createJavaParameter(String.class, "val"));
+  public static final SMethod<Boolean> isValidNumber_id5Ys_ngSnFbJ = new SMethodBuilder<>(Boolean.TYPE).name("isValidNumber").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(6889545856364491503L).languageId(0xa2091919bd737f50L, 0x6b277d9ad52d416fL).build2(SMethodBuilder.createJavaParameter(String.class, "val"));
+  public static final SMethod<Boolean> canBeInt_iduGVYUijgRw = new SMethodBuilder<>(Boolean.TYPE).name("canBeInt").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(553080662195506656L).languageId(0xa2091919bd737f50L, 0x6b277d9ad52d416fL).build2();
+  public static final SMethod<String> getPresentation_idhEwIMiw = new SMethodBuilder<>(String.class).name("getPresentation").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(1213877396640L).languageId(0x9b92103b95ca8c0cL, 0xceab519525ea4f22L).build2();
+  public static final SMethod<BigDecimal> toBigDecimal_id6v8$kf$4zsT = new SMethodBuilder<>(BigDecimal.class).name("toBigDecimal").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(7478386902023943993L).languageId(0xa2091919bd737f50L, 0x6b277d9ad52d416fL).build2();
+  public static final SMethod<Integer> numberOfDecimals_id3p6$WoEl3wd = new SMethodBuilder<>(Integer.TYPE).name("numberOfDecimals").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(3910975805740824589L).languageId(0xa2091919bd737f50L, 0x6b277d9ad52d416fL).build2();
+  public static final SMethod<String> renderReadable_id4Y0vh0cfqjE = new SMethodBuilder<>(String.class).name("renderReadable").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5728716233893586154L).languageId(0xb66a309a6e1a7290L, 0xcfaa4966b7d54b69L).build2();
+  public static final SMethod<Boolean> isSameAs_id7GwCuf2r4g6 = new SMethodBuilder<>(Boolean.TYPE).name("isSameAs").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(8872269265511400454L).languageId(0xb66a309a6e1a7290L, 0xcfaa4966b7d54b69L).build2(SMethodBuilder.createJavaParameter(SNode.class, "other"));
+  public static final SMethod<String> getStringValue_id2q1ydqQjSPO = new SMethodBuilder<>(String.class).name("getStringValue").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(2774649301199981940L).languageId(0xb66a309a6e1a7290L, 0xcfaa4966b7d54b69L).build2();
+  public static final SMethod<String> valueWithDotInsteadOfComma_id2oUyrt$QPvb = new SMethodBuilder<>(String.class).name("valueWithDotInsteadOfComma").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(2754665542854596555L).languageId(0xa2091919bd737f50L, 0x6b277d9ad52d416fL).build2();
+  public static final SMethod<SNode> set_id2oUyrt$Tg3c = new SMethodBuilder<>(SNode.class).name("set").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(2754665542855229644L).languageId(0xa2091919bd737f50L, 0x6b277d9ad52d416fL).build2(SMethodBuilder.createJavaParameter(String.class, "value"));
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(isZero_id4rZeNQ6OfoS, isInteger_id4rZeNQ6Og4r, isReal_id4rZeNQ6Og7j, isValidNumber_id5Ys_ngSnFbJ, canBeInt_iduGVYUijgRw, getPresentation_idhEwIMiw, toBigDecimal_id6v8$kf$4zsT, numberOfDecimals_id3p6$WoEl3wd, renderReadable_id4Y0vh0cfqjE, isSameAs_id7GwCuf2r4g6, getStringValue_id2q1ydqQjSPO, valueWithDotInsteadOfComma_id2oUyrt$QPvb, set_id2oUyrt$Tg3c);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(isZero_id4rZeNQ6OfoS, isInteger_id4rZeNQ6Og4r, isReal_id4rZeNQ6Og7j, isValidNumber_id5Ys_ngSnFbJ, canBeInt_iduGVYUijgRw, getPresentation_idhEwIMiw, toBigDecimal_id6v8$kf$4zsT, numberOfDecimals_id3p6$WoEl3wd, renderReadable_id4Y0vh0cfqjE, isSameAs_id7GwCuf2r4g6, getStringValue_id2q1ydqQjSPO, valueWithDotInsteadOfComma_id2oUyrt$QPvb, set_id2oUyrt$Tg3c);
 
-  private static void ___init___(@NotNull SNode __thisNode__) {
-  }
 
   /*package*/ static boolean isZero_id4rZeNQ6OfoS(@NotNull SNode __thisNode__, String val) {
     return val != null && REGEXP.matcher(val).matches();
@@ -89,7 +86,7 @@ public final class NumberLiteral__BehaviorDescriptor extends BaseBHDescriptor {
     if (other == null) {
       return false;
     }
-    if (SNodeOperations.getConcept(__thisNode__) != SNodeOperations.getConcept(other)) {
+    if (!(Objects.equals(SNodeOperations.getConcept(__thisNode__), SNodeOperations.getConcept(other)))) {
       return false;
     }
     return SPropertyOperations.getString(__thisNode__, PROPS.value$iWTK).equals(SPropertyOperations.getString(SNodeOperations.cast(other, CONCEPTS.NumberLiteral$wE), PROPS.value$iWTK));
@@ -115,10 +112,6 @@ public final class NumberLiteral__BehaviorDescriptor extends BaseBHDescriptor {
   /*package*/ NumberLiteral__BehaviorDescriptor() {
   }
 
-  @Override
-  protected void initNode(@NotNull SNode node, @NotNull SConstructor constructor, @Nullable Object[] parameters) {
-    ___init___(node);
-  }
 
   @Override
   protected <T> T invokeSpecial0(@NotNull SNode node, @NotNull SMethod<T> method, @Nullable Object[] parameters) {

@@ -7,7 +7,6 @@ import org.jetbrains.mps.openapi.language.SAbstractConcept;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import org.jetbrains.mps.openapi.model.SNode;
 import java.util.List;
@@ -20,7 +19,6 @@ import org.iets3.variability.featuremodel.base.behavior.Cardinality__BehaviorDes
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations;
 import org.apache.commons.lang3.Validate;
 import jetbrains.mps.internal.collections.runtime.ListSequence;
-import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 import org.jetbrains.mps.openapi.language.SContainmentLink;
@@ -30,17 +28,15 @@ import org.jetbrains.mps.openapi.language.SProperty;
 public final class FeatureWithCardinalityConfiguration__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getConcept(0x71226ee2bbc445d2L, 0xa41d20b97237156cL, 0x55c09a0155d9c97cL, "org.iets3.variability.configuration.base.structure.FeatureWithCardinalityConfiguration");
 
-  public static final SMethod<Integer> numberOfSelectedInstances_id5n0Aw5lQu7i = new SMethodBuilder<Integer>(new SJavaCompoundTypeImpl(Integer.TYPE)).name("numberOfSelectedInstances").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(6179108019278307794L).languageId(0xa41d20b97237156cL, 0x71226ee2bbc445d2L).build2();
-  public static final SMethod<Boolean> hasSubFeatureConfigurationWithFeatureSelectionStateIsFalse_idIEflsfnwme = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("hasSubFeatureConfigurationWithFeatureSelectionStateIsFalse").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(840551724587287950L).languageId(0xa41d20b97237156cL, 0x71226ee2bbc445d2L).build2();
-  public static final SMethod<Integer> instanceFromCardinalityDivergence_id36ATK7pwIhz = new SMethodBuilder<Integer>(new SJavaCompoundTypeImpl(Integer.TYPE)).name("instanceFromCardinalityDivergence").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(3577800949122655331L).languageId(0xa41d20b97237156cL, 0x71226ee2bbc445d2L).build2();
-  public static final SMethod<Boolean> boundIsInfiniteOrNotPresent_id36ATK7pwJax = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("boundIsInfiniteOrNotPresent").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(3577800949122658977L).languageId(0xa41d20b97237156cL, 0x71226ee2bbc445d2L).build2(SMethodBuilder.createJavaParameter(Integer.TYPE, ""));
-  public static final SMethod<Boolean> cardinalityMissingButSelectedItems_id36ATK7qizQs = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("cardinalityMissingButSelectedItems").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(3577800949135719836L).languageId(0xa41d20b97237156cL, 0x71226ee2bbc445d2L).build2();
-  /*package*/ static final SMethod<Iterable<SNode>> filterSubFeatureConfigurations_id7AJd34LwU$a = new SMethodBuilder<Iterable<SNode>>(new SJavaCompoundTypeImpl((Class<Iterable<SNode>>) ((Class) Object.class))).name("filterSubFeatureConfigurations").modifiers(0, AccessPrivileges.PRIVATE).concept(CONCEPT).baseMethodId(8768284385402398986L).languageId(0xa41d20b97237156cL, 0x71226ee2bbc445d2L).build2(SMethodBuilder.createVarArgPrm(String.class, ""));
+  public static final SMethod<Integer> numberOfSelectedInstances_id5n0Aw5lQu7i = new SMethodBuilder<>(Integer.TYPE).name("numberOfSelectedInstances").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(6179108019278307794L).languageId(0xa41d20b97237156cL, 0x71226ee2bbc445d2L).build2();
+  public static final SMethod<Boolean> hasSubFeatureConfigurationWithFeatureSelectionStateIsFalse_idIEflsfnwme = new SMethodBuilder<>(Boolean.TYPE).name("hasSubFeatureConfigurationWithFeatureSelectionStateIsFalse").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(840551724587287950L).languageId(0xa41d20b97237156cL, 0x71226ee2bbc445d2L).build2();
+  public static final SMethod<Integer> instanceFromCardinalityDivergence_id36ATK7pwIhz = new SMethodBuilder<>(Integer.TYPE).name("instanceFromCardinalityDivergence").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(3577800949122655331L).languageId(0xa41d20b97237156cL, 0x71226ee2bbc445d2L).build2();
+  public static final SMethod<Boolean> boundIsInfiniteOrNotPresent_id36ATK7pwJax = new SMethodBuilder<>(Boolean.TYPE).name("boundIsInfiniteOrNotPresent").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(3577800949122658977L).languageId(0xa41d20b97237156cL, 0x71226ee2bbc445d2L).build2(SMethodBuilder.createJavaParameter(Integer.TYPE, "cardinalityUpperBound"));
+  public static final SMethod<Boolean> cardinalityMissingButSelectedItems_id36ATK7qizQs = new SMethodBuilder<>(Boolean.TYPE).name("cardinalityMissingButSelectedItems").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(3577800949135719836L).languageId(0xa41d20b97237156cL, 0x71226ee2bbc445d2L).build2();
+  /*package*/ static final SMethod<Iterable<SNode>> filterSubFeatureConfigurations_id7AJd34LwU$a = new SMethodBuilder<>((Class<Iterable<SNode>>) ((Class) Object.class)).name("filterSubFeatureConfigurations").modifiers(0, AccessPrivileges.PRIVATE).concept(CONCEPT).baseMethodId(8768284385402398986L).languageId(0xa41d20b97237156cL, 0x71226ee2bbc445d2L).build2(SMethodBuilder.createVarArgPrm(String.class, "consideredSelectionStates"));
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(numberOfSelectedInstances_id5n0Aw5lQu7i, hasSubFeatureConfigurationWithFeatureSelectionStateIsFalse_idIEflsfnwme, instanceFromCardinalityDivergence_id36ATK7pwIhz, boundIsInfiniteOrNotPresent_id36ATK7pwJax, cardinalityMissingButSelectedItems_id36ATK7qizQs, filterSubFeatureConfigurations_id7AJd34LwU$a);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(numberOfSelectedInstances_id5n0Aw5lQu7i, hasSubFeatureConfigurationWithFeatureSelectionStateIsFalse_idIEflsfnwme, instanceFromCardinalityDivergence_id36ATK7pwIhz, boundIsInfiniteOrNotPresent_id36ATK7pwJax, cardinalityMissingButSelectedItems_id36ATK7qizQs, filterSubFeatureConfigurations_id7AJd34LwU$a);
 
-  private static void ___init___(@NotNull SNode __thisNode__) {
-  }
 
   /*package*/ static int numberOfSelectedInstances_id5n0Aw5lQu7i(@NotNull SNode __thisNode__) {
     return Sequence.fromIterable(AbstractFeatureConfigurationContent__BehaviorDescriptor.effectiveChildConfigItems_id6jHrUgdscqV.invoke(SLinkOperations.getTarget(__thisNode__, LINKS.content$Wdfq))).count();
@@ -78,10 +74,6 @@ public final class FeatureWithCardinalityConfiguration__BehaviorDescriptor exten
   /*package*/ FeatureWithCardinalityConfiguration__BehaviorDescriptor() {
   }
 
-  @Override
-  protected void initNode(@NotNull SNode node, @NotNull SConstructor constructor, @Nullable Object[] parameters) {
-    ___init___(node);
-  }
 
   @Override
   protected <T> T invokeSpecial0(@NotNull SNode node, @NotNull SMethod<T> method, @Nullable Object[] parameters) {

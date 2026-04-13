@@ -8,7 +8,6 @@ import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import org.jetbrains.mps.openapi.model.SNode;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import jetbrains.mps.baseLanguage.tuples.runtime.Tuples;
 import java.util.List;
@@ -18,7 +17,6 @@ import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
 import jetbrains.mps.baseLanguage.tuples.runtime.MultiTuple;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations;
 import java.util.Objects;
-import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 import org.jetbrains.mps.openapi.language.SReferenceLink;
@@ -28,15 +26,13 @@ import org.jetbrains.mps.openapi.language.SProperty;
 public final class DelegateConnector__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getConcept(0xf0fd486f857743e9L, 0xb6713d118449c6e7L, 0x18be1a5e93218f96L, "org.iets3.components.core.structure.DelegateConnector");
 
-  public static final SMethod<SNode> getOuterPort_id7nsgDAXALqd = new SMethodBuilder<SNode>(new SJavaCompoundTypeImpl((Class<SNode>) ((Class) Object.class))).name("getOuterPort").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(8492736225392400013L).languageId(0xb6713d118449c6e7L, 0xf0fd486f857743e9L).build2();
-  public static final SMethod<Tuples._2<SNode, SNode>> getPorts_idmIQkxg5ZT6 = new SMethodBuilder<Tuples._2<SNode, SNode>>(new SJavaCompoundTypeImpl((Class<Tuples._2<SNode, SNode>>) ((Class) Object.class))).name("getPorts").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(409503520741916230L).languageId(0xb6713d118449c6e7L, 0xf0fd486f857743e9L).build2();
-  public static final SMethod<String> treeViewLabel_id7Atos1ybm9U = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("treeViewLabel").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(8763267928841609850L).languageId(0xb6713d118449c6e7L, 0xf0fd486f857743e9L).build2();
-  public static final SMethod<SNode> getInstanceForPort_id4VHfdEqkeO4 = new SMethodBuilder<SNode>(new SJavaCompoundTypeImpl((Class<SNode>) ((Class) Object.class))).name("getInstanceForPort").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5687268814028336388L).languageId(0xb6713d118449c6e7L, 0xf0fd486f857743e9L).build2(SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""));
+  public static final SMethod<SNode> getOuterPort_id7nsgDAXALqd = new SMethodBuilder<>(SNode.class).name("getOuterPort").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(8492736225392400013L).languageId(0xb6713d118449c6e7L, 0xf0fd486f857743e9L).build2();
+  public static final SMethod<Tuples._2<SNode, SNode>> getPorts_idmIQkxg5ZT6 = new SMethodBuilder<>((Class<Tuples._2<SNode, SNode>>) ((Class) Object.class)).name("getPorts").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(409503520741916230L).languageId(0xb6713d118449c6e7L, 0xf0fd486f857743e9L).build2();
+  public static final SMethod<String> treeViewLabel_id7Atos1ybm9U = new SMethodBuilder<>(String.class).name("treeViewLabel").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(8763267928841609850L).languageId(0xb6713d118449c6e7L, 0xf0fd486f857743e9L).build2();
+  public static final SMethod<SNode> getInstanceForPort_id4VHfdEqkeO4 = new SMethodBuilder<>(SNode.class).name("getInstanceForPort").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5687268814028336388L).languageId(0xb6713d118449c6e7L, 0xf0fd486f857743e9L).build2(SMethodBuilder.createJavaParameter(SNode.class, "port"));
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(getOuterPort_id7nsgDAXALqd, getPorts_idmIQkxg5ZT6, treeViewLabel_id7Atos1ybm9U, getInstanceForPort_id4VHfdEqkeO4);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(getOuterPort_id7nsgDAXALqd, getPorts_idmIQkxg5ZT6, treeViewLabel_id7Atos1ybm9U, getInstanceForPort_id4VHfdEqkeO4);
 
-  private static void ___init___(@NotNull SNode __thisNode__) {
-  }
 
   /*package*/ static SNode getOuterPort_id7nsgDAXALqd(@NotNull SNode __thisNode__) {
     return SLinkOperations.getTarget(__thisNode__, LINKS.outerPort$lnWS);
@@ -54,10 +50,6 @@ public final class DelegateConnector__BehaviorDescriptor extends BaseBHDescripto
   /*package*/ DelegateConnector__BehaviorDescriptor() {
   }
 
-  @Override
-  protected void initNode(@NotNull SNode node, @NotNull SConstructor constructor, @Nullable Object[] parameters) {
-    ___init___(node);
-  }
 
   @Override
   protected <T> T invokeSpecial0(@NotNull SNode node, @NotNull SMethod<T> method, @Nullable Object[] parameters) {

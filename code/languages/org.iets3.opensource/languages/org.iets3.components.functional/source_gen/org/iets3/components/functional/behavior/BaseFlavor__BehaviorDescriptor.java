@@ -8,7 +8,6 @@ import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import org.jetbrains.mps.openapi.language.SConcept;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import java.util.List;
 import java.util.Arrays;
@@ -16,19 +15,16 @@ import org.jetbrains.annotations.NotNull;
 import org.jetbrains.mps.openapi.model.SNode;
 import jetbrains.mps.internal.collections.runtime.ListSequence;
 import java.util.ArrayList;
-import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 
 public final class BaseFlavor__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getConcept(0x257976063fb647b8L, 0xbc3cb4384df7da44L, 0x20b7bd816076fa83L, "org.iets3.components.functional.structure.BaseFlavor");
 
-  public static final SMethod<Iterable<SConcept>> allowedContent_id22RJo5wuUIj = new SMethodBuilder<Iterable<SConcept>>(new SJavaCompoundTypeImpl((Class<Iterable<SConcept>>) ((Class) Object.class))).name("restrict").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(2357561293318892435L).languageId(0xbc3cb4384df7da44L, 0x257976063fb647b8L).build2();
+  public static final SMethod<Iterable<SConcept>> allowedContent_id22RJo5wuUIj = new SMethodBuilder<>((Class<Iterable<SConcept>>) ((Class) Object.class)).name("restrict").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(2357561293318892435L).languageId(0xbc3cb4384df7da44L, 0x257976063fb647b8L).build2();
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(allowedContent_id22RJo5wuUIj);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(allowedContent_id22RJo5wuUIj);
 
-  private static void ___init___(@NotNull SNode __thisNode__) {
-  }
 
   /*package*/ static Iterable<SConcept> allowedContent_id22RJo5wuUIj(@NotNull SNode __thisNode__) {
     return ListSequence.fromListAndArray(new ArrayList<SConcept>(), CONCEPTS.SendMessage$l5, CONCEPTS.ReceiveMessage$_i);
@@ -37,10 +33,6 @@ public final class BaseFlavor__BehaviorDescriptor extends BaseBHDescriptor {
   /*package*/ BaseFlavor__BehaviorDescriptor() {
   }
 
-  @Override
-  protected void initNode(@NotNull SNode node, @NotNull SConstructor constructor, @Nullable Object[] parameters) {
-    ___init___(node);
-  }
 
   @Override
   protected <T> T invokeSpecial0(@NotNull SNode node, @NotNull SMethod<T> method, @Nullable Object[] parameters) {

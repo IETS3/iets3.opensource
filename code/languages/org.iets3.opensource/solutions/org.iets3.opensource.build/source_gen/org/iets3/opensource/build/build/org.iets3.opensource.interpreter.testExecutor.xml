@@ -236,11 +236,6 @@
       <plugin path="${artifacts.org.iets3.opensource}/org.iets3.build.os" id="org.iets3.build.os" />
       <plugin path="${artifacts.org.iets3.opensource}/org.iets3.core.junit.interpretertest.runner" id="org.iets3.core.junit.interpreter.run.configuration" />
       <plugin path="${artifacts.org.iets3.opensource}/org.iets3.core.os" id="org.iets3.core.os" />
-      <library file="${artifacts.mps}/languages/editor/jetbrains.mps.ide.editor.jar" />
-      <library file="${artifacts.mps}/languages/plaf/jetbrains.mps.ide.refactoring.platform.jar" />
-      <library file="${artifacts.mps}/languages/plaf/jetbrains.mps.ide.ui.jar" />
-      <library file="${artifacts.mps}/languages/workbench-stub.jar" />
-      <library file="${artifacts.mps}/languages/workbench/jetbrains.mps.ide.jar" />
       <chunk>
         <module file="${iets3.lang.opensource}/solutions/org.iets3.opensource.interpreterExecutor/org.iets3.opensource.interpreterExecutor.msd" />
       </chunk>
@@ -695,6 +690,7 @@
       <library file="${artifacts.org.iets3.opensource}/org.iets3.core.os/languages/iets3.core.os/org.iets3.core.expr.testExecution.jar" />
       <library file="${artifacts.org.iets3.opensource}/org.iets3.core.os/languages/iets3.core.os/org.iets3.core.expr.tests.jar" />
       <library file="${artifacts.org.iets3.opensource}/org.iets3.core.os/languages/iets3.core.os/org.iets3.core.expr.toplevel.jar" />
+      <library file="${artifacts.org.iets3.opensource}/org.iets3.core.os/languages/iets3.core.os/org.iets3.internal.modelaccessor.jar" />
       <library file="${iets3.lang.opensource}/tests/test.in.expr.os" />
       <library file="${iets3.lang.opensource}/tests/test.ts.expr.os" />
       <library file="${build.layout}/org.iets3.opensource.interpreterExecutor/languages/iets3.opensource.interpreterExecutor/org.iets3.opensource.interpreterExecutor.jar" />

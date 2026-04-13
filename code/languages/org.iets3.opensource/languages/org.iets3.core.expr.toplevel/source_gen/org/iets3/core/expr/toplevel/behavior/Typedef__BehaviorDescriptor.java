@@ -8,7 +8,6 @@ import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import org.iets3.core.expr.base.behavior.ConstraintAndError;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import org.jetbrains.mps.openapi.model.SNode;
 import java.util.Set;
@@ -32,7 +31,6 @@ import com.mbeddr.core.base.behavior.IVisibleElementProvider__BehaviorDescriptor
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SConceptOperations;
 import jetbrains.mps.scope.ListScope;
 import org.iets3.analysis.base.plugin.STF;
-import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 import org.jetbrains.mps.openapi.language.SContainmentLink;
@@ -44,20 +42,18 @@ import org.jetbrains.mps.openapi.language.SInterfaceConcept;
 public final class Typedef__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getConcept(0x71934284d7d145eeL, 0xa0548c072591085fL, 0x6b6d642f1741de68L, "org.iets3.core.expr.toplevel.structure.Typedef");
 
-  public static final SMethod<Iterable<ConstraintAndError>> applicableConstraints_id2S3ZC$oz3DX = new SMethodBuilder<Iterable<ConstraintAndError>>(new SJavaCompoundTypeImpl((Class<Iterable<ConstraintAndError>>) ((Class) Object.class))).name("applicableConstraints").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(3315773615450634877L).languageId(0xa0548c072591085fL, 0x71934284d7d145eeL).build2();
-  public static final SMethod<Boolean> canHavePlainConstraint_idKaZMgylLn7 = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("canHavePlainConstraint").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(867786408882279879L).languageId(0xb66a309a6e1a7290L, 0xcfaa4966b7d54b69L).build2();
-  public static final SMethod<Iterable<SNode>> getDependenciesRelevantForCycleDetection_id59HbAIOYveX = new SMethodBuilder<Iterable<SNode>>(new SJavaCompoundTypeImpl((Class<Iterable<SNode>>) ((Class) Object.class))).name("getDependenciesRelevantForCycleDetection").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5939454523704210365L).languageId(0xaa41d1b2bffa7eb1L, 0xd4280a54f6df4383L).build2();
-  public static final SMethod<Set<SNode>> traceBackElementInCycle_id17fjvcLF7UR = new SMethodBuilder<Set<SNode>>(new SJavaCompoundTypeImpl((Class<Set<SNode>>) ((Class) Object.class))).name("traceBackElementInCycle").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(1283330125729660599L).languageId(0xaa41d1b2bffa7eb1L, 0xd4280a54f6df4383L).build2(SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""));
-  public static final SMethod<Iterable<SNode>> visibleMembers_id6NHlpK$oaBU = new SMethodBuilder<Iterable<SNode>>(new SJavaCompoundTypeImpl((Class<Iterable<SNode>>) ((Class) Object.class))).name("visibleMembers").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(7849023854690216442L).languageId(0xa0548c072591085fL, 0x71934284d7d145eeL).build2();
-  public static final SMethod<Iterable<SNode>> visibleContentsOfType_id6clJcrJXo2_ = new SMethodBuilder<Iterable<SNode>>(new SJavaCompoundTypeImpl((Class<Iterable<SNode>>) ((Class) Object.class))).name("visibleContentsOfType").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(7139820346881179813L).languageId(0xaa41d1b2bffa7eb1L, 0xd4280a54f6df4383L).build2(SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""));
-  public static final SMethod<Scope> visibleContentsOfType_id79$zShlSHxZ = new SMethodBuilder<Scope>(new SJavaCompoundTypeImpl(Scope.class)).name("visibleContentsOfType").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(8242871016534235263L).languageId(0xaa41d1b2bffa7eb1L, 0xd4280a54f6df4383L).build2(SMethodBuilder.createJavaParameter((Class<SAbstractConcept>) ((Class) Object.class), ""));
-  public static final SMethod<SNode> createSolverTask_id4pkidg67Lgb = new SMethodBuilder<SNode>(new SJavaCompoundTypeImpl((Class<SNode>) ((Class) Object.class))).name("createSolverTask").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5067755556171617291L).languageId(0x8fed954c202d18beL, 0xdb8bd0353f5141d8L).build2();
-  public static final SMethod<Boolean> solvedInTypeSystem_id1LoQHJHiiZd = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("solvedInTypeSystem").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(2042623069126209485L).languageId(0x8fed954c202d18beL, 0xdb8bd0353f5141d8L).build2();
+  public static final SMethod<Iterable<ConstraintAndError>> applicableConstraints_id2S3ZC$oz3DX = new SMethodBuilder<>((Class<Iterable<ConstraintAndError>>) ((Class) Object.class)).name("applicableConstraints").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(3315773615450634877L).languageId(0xa0548c072591085fL, 0x71934284d7d145eeL).build2();
+  public static final SMethod<Boolean> canHavePlainConstraint_idKaZMgylLn7 = new SMethodBuilder<>(Boolean.TYPE).name("canHavePlainConstraint").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(867786408882279879L).languageId(0xb66a309a6e1a7290L, 0xcfaa4966b7d54b69L).build2();
+  public static final SMethod<Iterable<SNode>> getDependenciesRelevantForCycleDetection_id59HbAIOYveX = new SMethodBuilder<>((Class<Iterable<SNode>>) ((Class) Object.class)).name("getDependenciesRelevantForCycleDetection").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5939454523704210365L).languageId(0xaa41d1b2bffa7eb1L, 0xd4280a54f6df4383L).build2();
+  public static final SMethod<Set<SNode>> traceBackElementInCycle_id17fjvcLF7UR = new SMethodBuilder<>((Class<Set<SNode>>) ((Class) Object.class)).name("traceBackElementInCycle").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(1283330125729660599L).languageId(0xaa41d1b2bffa7eb1L, 0xd4280a54f6df4383L).build2(SMethodBuilder.createJavaParameter(SNode.class, "dependency"));
+  public static final SMethod<Iterable<SNode>> visibleMembers_id6NHlpK$oaBU = new SMethodBuilder<>((Class<Iterable<SNode>>) ((Class) Object.class)).name("visibleMembers").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(7849023854690216442L).languageId(0xa0548c072591085fL, 0x71934284d7d145eeL).build2();
+  public static final SMethod<Iterable<SNode>> visibleContentsOfType_id6clJcrJXo2_ = new SMethodBuilder<>((Class<Iterable<SNode>>) ((Class) Object.class)).name("visibleContentsOfType").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(7139820346881179813L).languageId(0xaa41d1b2bffa7eb1L, 0xd4280a54f6df4383L).build2(SMethodBuilder.createJavaParameter(SNode.class, "targetConcept"));
+  public static final SMethod<Scope> visibleContentsOfType_id79$zShlSHxZ = new SMethodBuilder<>(Scope.class).name("visibleContentsOfType").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(8242871016534235263L).languageId(0xaa41d1b2bffa7eb1L, 0xd4280a54f6df4383L).build2(SMethodBuilder.createJavaParameter(SAbstractConcept.class, "targetConcept"));
+  public static final SMethod<SNode> createSolverTask_id4pkidg67Lgb = new SMethodBuilder<>(SNode.class).name("createSolverTask").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5067755556171617291L).languageId(0x8fed954c202d18beL, 0xdb8bd0353f5141d8L).build2();
+  public static final SMethod<Boolean> solvedInTypeSystem_id1LoQHJHiiZd = new SMethodBuilder<>(Boolean.TYPE).name("solvedInTypeSystem").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(2042623069126209485L).languageId(0x8fed954c202d18beL, 0xdb8bd0353f5141d8L).build2();
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(applicableConstraints_id2S3ZC$oz3DX, canHavePlainConstraint_idKaZMgylLn7, getDependenciesRelevantForCycleDetection_id59HbAIOYveX, traceBackElementInCycle_id17fjvcLF7UR, visibleMembers_id6NHlpK$oaBU, visibleContentsOfType_id6clJcrJXo2_, visibleContentsOfType_id79$zShlSHxZ, createSolverTask_id4pkidg67Lgb, solvedInTypeSystem_id1LoQHJHiiZd);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(applicableConstraints_id2S3ZC$oz3DX, canHavePlainConstraint_idKaZMgylLn7, getDependenciesRelevantForCycleDetection_id59HbAIOYveX, traceBackElementInCycle_id17fjvcLF7UR, visibleMembers_id6NHlpK$oaBU, visibleContentsOfType_id6clJcrJXo2_, visibleContentsOfType_id79$zShlSHxZ, createSolverTask_id4pkidg67Lgb, solvedInTypeSystem_id1LoQHJHiiZd);
 
-  private static void ___init___(@NotNull SNode __thisNode__) {
-  }
 
   /*package*/ static Iterable<ConstraintAndError> applicableConstraints_id2S3ZC$oz3DX(@NotNull SNode __thisNode__) {
     Iterable<ConstraintAndError> local = Sequence.fromIterable(IContracted__BehaviorDescriptor.plainConstraints_idKaZMgylLvI.invoke(__thisNode__)).select((it) -> new DefaultConstraintAndError(SLinkOperations.getTarget(it, LINKS.expr$CW3E), SLinkOperations.getTarget(it, LINKS.err$phDR), it, Expression__BehaviorDescriptor.renderReadable_id4Y0vh0cfqjE.invoke(SLinkOperations.getTarget(it, LINKS.expr$CW3E)), SPropertyOperations.getBoolean(it, PROPS.warning$kIYM)));
@@ -108,10 +104,6 @@ public final class Typedef__BehaviorDescriptor extends BaseBHDescriptor {
   /*package*/ Typedef__BehaviorDescriptor() {
   }
 
-  @Override
-  protected void initNode(@NotNull SNode node, @NotNull SConstructor constructor, @Nullable Object[] parameters) {
-    ___init___(node);
-  }
 
   @Override
   protected <T> T invokeSpecial0(@NotNull SNode node, @NotNull SMethod<T> method, @Nullable Object[] parameters) {
