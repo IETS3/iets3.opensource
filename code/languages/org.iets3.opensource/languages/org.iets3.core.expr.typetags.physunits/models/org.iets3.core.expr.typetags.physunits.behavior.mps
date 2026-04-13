@@ -284,6 +284,7 @@
       <concept id="1204053956946" name="jetbrains.mps.baseLanguage.structure.IMethodCall" flags="ngI" index="1ndlxa">
         <reference id="1068499141037" name="baseMethodDeclaration" index="37wK5l" />
         <child id="1068499141038" name="actualArgument" index="37wK5m" />
+        <child id="4972241301747169160" name="typeArgument" index="3PaCim" />
       </concept>
       <concept id="1212685548494" name="jetbrains.mps.baseLanguage.structure.ClassCreator" flags="nn" index="1pGfFk" />
       <concept id="1107461130800" name="jetbrains.mps.baseLanguage.structure.Classifier" flags="ng" index="3pOWGL">
@@ -30576,18 +30577,18 @@
                 <node concept="3clFbT" id="5sKgdctTTw0" role="1Lso8e">
                   <property role="3clFbU" value="true" />
                 </node>
-                <node concept="2ShNRf" id="2q7IUAQQczy" role="1Lso8e">
-                  <node concept="2T8Vx0" id="2q7IUAQQk_O" role="2ShVmc">
-                    <node concept="2I9FWS" id="2q7IUAQQk_Q" role="2T96Bj">
-                      <ref role="2I9WkF" to="i3ya:QWlYnXZC0O" resolve="IRepresentUnit" />
-                    </node>
+                <node concept="2YIFZM" id="4GPwNDs9ccl" role="1Lso8e">
+                  <ref role="37wK5l" to="33ny:~List.of()" resolve="of" />
+                  <ref role="1Pybhc" to="33ny:~List" resolve="List" />
+                  <node concept="3Tqbb2" id="4GPwNDs9l8u" role="3PaCim">
+                    <ref role="ehGHo" to="i3ya:QWlYnXZC0O" resolve="IRepresentUnit" />
                   </node>
                 </node>
-                <node concept="2ShNRf" id="2q7IUAQQz3i" role="1Lso8e">
-                  <node concept="2T8Vx0" id="2q7IUAQQz3j" role="2ShVmc">
-                    <node concept="2I9FWS" id="2q7IUAQQz3k" role="2T96Bj">
-                      <ref role="2I9WkF" to="i3ya:QWlYnXZC0O" resolve="IRepresentUnit" />
-                    </node>
+                <node concept="2YIFZM" id="4GPwNDs9gBk" role="1Lso8e">
+                  <ref role="37wK5l" to="33ny:~List.of()" resolve="of" />
+                  <ref role="1Pybhc" to="33ny:~List" resolve="List" />
+                  <node concept="3Tqbb2" id="4GPwNDs9r9p" role="3PaCim">
+                    <ref role="ehGHo" to="i3ya:QWlYnXZC0O" resolve="IRepresentUnit" />
                   </node>
                 </node>
               </node>

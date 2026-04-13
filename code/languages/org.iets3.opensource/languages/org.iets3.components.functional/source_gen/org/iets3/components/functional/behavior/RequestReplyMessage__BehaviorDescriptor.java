@@ -7,7 +7,6 @@ import org.jetbrains.mps.openapi.language.SAbstractConcept;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import org.jetbrains.mps.openapi.model.SNode;
 import java.util.List;
@@ -16,7 +15,6 @@ import org.jetbrains.annotations.NotNull;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
 import jetbrains.mps.internal.collections.runtime.ListSequence;
-import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 import org.jetbrains.mps.openapi.language.SContainmentLink;
@@ -25,13 +23,11 @@ import org.jetbrains.mps.openapi.language.SConcept;
 public final class RequestReplyMessage__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getConcept(0x257976063fb647b8L, 0xbc3cb4384df7da44L, 0x44bbb679e73c69e0L, "org.iets3.components.functional.structure.RequestReplyMessage");
 
-  public static final SMethod<Boolean> isInitiatedBy_id21DyaFUqGPq = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("isInitiatedBy").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(2335548149695434074L).languageId(0xbc3cb4384df7da44L, 0x257976063fb647b8L).build2(SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""));
-  public static final SMethod<Iterable<SNode>> allMessageArguments_id2z$ejgXvKUY = new SMethodBuilder<Iterable<SNode>>(new SJavaCompoundTypeImpl((Class<Iterable<SNode>>) ((Class) Object.class))).name("allMessageArguments").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(2946542952739966654L).languageId(0xbc3cb4384df7da44L, 0x257976063fb647b8L).build2();
+  public static final SMethod<Boolean> isInitiatedBy_id21DyaFUqGPq = new SMethodBuilder<>(Boolean.TYPE).name("isInitiatedBy").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(2335548149695434074L).languageId(0xbc3cb4384df7da44L, 0x257976063fb647b8L).build2(SMethodBuilder.createJavaParameter(SNode.class, "port"));
+  public static final SMethod<Iterable<SNode>> allMessageArguments_id2z$ejgXvKUY = new SMethodBuilder<>((Class<Iterable<SNode>>) ((Class) Object.class)).name("allMessageArguments").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(2946542952739966654L).languageId(0xbc3cb4384df7da44L, 0x257976063fb647b8L).build2();
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(isInitiatedBy_id21DyaFUqGPq, allMessageArguments_id2z$ejgXvKUY);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(isInitiatedBy_id21DyaFUqGPq, allMessageArguments_id2z$ejgXvKUY);
 
-  private static void ___init___(@NotNull SNode __thisNode__) {
-  }
 
   /*package*/ static boolean isInitiatedBy_id21DyaFUqGPq(@NotNull SNode __thisNode__, SNode port) {
     return SNodeOperations.isInstanceOf(SLinkOperations.getTarget(port, LINKS.category$WD4l), CONCEPTS.AcceptsMPPortCategory$Tj);
@@ -44,10 +40,6 @@ public final class RequestReplyMessage__BehaviorDescriptor extends BaseBHDescrip
   /*package*/ RequestReplyMessage__BehaviorDescriptor() {
   }
 
-  @Override
-  protected void initNode(@NotNull SNode node, @NotNull SConstructor constructor, @Nullable Object[] parameters) {
-    ___init___(node);
-  }
 
   @Override
   protected <T> T invokeSpecial0(@NotNull SNode node, @NotNull SMethod<T> method, @Nullable Object[] parameters) {

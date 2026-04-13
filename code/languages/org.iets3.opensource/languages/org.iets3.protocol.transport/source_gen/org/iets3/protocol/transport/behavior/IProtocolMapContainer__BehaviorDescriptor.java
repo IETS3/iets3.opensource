@@ -8,7 +8,6 @@ import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import org.jetbrains.mps.openapi.model.SNode;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import java.util.List;
 import java.util.Arrays;
@@ -18,7 +17,6 @@ import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
 import jetbrains.mps.baseLanguage.closures.runtime._FunctionTypes;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SConceptOperations;
-import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 import org.jetbrains.mps.openapi.language.SContainmentLink;
@@ -27,13 +25,11 @@ import org.jetbrains.mps.openapi.language.SConcept;
 public final class IProtocolMapContainer__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getInterfaceConcept(0xa50d629093d242afL, 0x9ae0b2fefc6ee754L, 0x4ab9fde72ca2c7f8L, "org.iets3.protocol.transport.structure.IProtocolMapContainer");
 
-  public static final SMethod<Iterable<SNode>> includedProtocolMaps_id4ETZusGCO9f = new SMethodBuilder<Iterable<SNode>>(new SJavaCompoundTypeImpl((Class<Iterable<SNode>>) ((Class) Object.class))).name("includedProtocolMaps").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5384613998826308175L).languageId(0x9ae0b2fefc6ee754L, 0xa50d629093d242afL).build2();
-  public static final SMethod<Iterable<SNode>> includedProtocolMapsByProtocol_id4ETZusGCT6G = new SMethodBuilder<Iterable<SNode>>(new SJavaCompoundTypeImpl((Class<Iterable<SNode>>) ((Class) Object.class))).name("includedProtocolMapsByProtocol").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5384613998826328492L).languageId(0x9ae0b2fefc6ee754L, 0xa50d629093d242afL).build2(SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""));
+  public static final SMethod<Iterable<SNode>> includedProtocolMaps_id4ETZusGCO9f = new SMethodBuilder<>((Class<Iterable<SNode>>) ((Class) Object.class)).name("includedProtocolMaps").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5384613998826308175L).languageId(0x9ae0b2fefc6ee754L, 0xa50d629093d242afL).build2();
+  public static final SMethod<Iterable<SNode>> includedProtocolMapsByProtocol_id4ETZusGCT6G = new SMethodBuilder<>((Class<Iterable<SNode>>) ((Class) Object.class)).name("includedProtocolMapsByProtocol").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5384613998826328492L).languageId(0x9ae0b2fefc6ee754L, 0xa50d629093d242afL).build2(SMethodBuilder.createJavaParameter(SNode.class, "protocol"));
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(includedProtocolMaps_id4ETZusGCO9f, includedProtocolMapsByProtocol_id4ETZusGCT6G);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(includedProtocolMaps_id4ETZusGCO9f, includedProtocolMapsByProtocol_id4ETZusGCT6G);
 
-  private static void ___init___(@NotNull SNode __thisNode__) {
-  }
 
   /*package*/ static Iterable<SNode> includedProtocolMaps_id4ETZusGCO9f(@NotNull SNode __thisNode__) {
     return Sequence.fromIterable(SLinkOperations.collect(SNodeOperations.ofConcept(SLinkOperations.getChildren(__thisNode__, LINKS.content$tnjl), CONCEPTS.IncludeProtocol$L_), LINKS.ref$pS4B)).translate((it) -> (Iterable<SNode>) IProtocolMapRef__BehaviorDescriptor.protocolMaps_id2HsTbibjFCb.invoke(it));
@@ -51,10 +47,6 @@ public final class IProtocolMapContainer__BehaviorDescriptor extends BaseBHDescr
   /*package*/ IProtocolMapContainer__BehaviorDescriptor() {
   }
 
-  @Override
-  protected void initNode(@NotNull SNode node, @NotNull SConstructor constructor, @Nullable Object[] parameters) {
-    ___init___(node);
-  }
 
   @Override
   protected <T> T invokeSpecial0(@NotNull SNode node, @NotNull SMethod<T> method, @Nullable Object[] parameters) {

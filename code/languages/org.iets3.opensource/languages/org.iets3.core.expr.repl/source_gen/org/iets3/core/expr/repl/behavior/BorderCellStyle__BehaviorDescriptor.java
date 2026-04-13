@@ -20,7 +20,7 @@ public final class BorderCellStyle__BehaviorDescriptor extends BaseBHDescriptor 
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getConcept(0x18001c9433a74f68L, 0xa7c1ffddc4b39be1L, 0x529f594e6bd98e80L, "org.iets3.core.expr.repl.structure.BorderCellStyle");
 
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList();
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList();
 
   private static void ___init___(@NotNull SNode __thisNode__) {
     SPropertyOperations.assign(__thisNode__, PROPS.width$7oX_, 2);

@@ -8,7 +8,6 @@ import org.jetbrains.mps.openapi.language.SAbstractConcept;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import jetbrains.mps.build.util.VisibleArtifacts;
 import jetbrains.mps.build.util.RequiredDependenciesBuilder;
@@ -22,7 +21,6 @@ import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
 import jetbrains.mps.lang.core.behavior.ScopeProvider__BehaviorDescriptor;
 import jetbrains.mps.lang.core.behavior.BaseConcept__BehaviorDescriptor;
 import jetbrains.mps.build.util.DependenciesHelper;
-import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 import org.jetbrains.mps.openapi.language.SConcept;
@@ -32,14 +30,12 @@ public final class RunKernelFGeneratedTests__BehaviorDescriptor extends BaseBHDe
   private static final Logger LOG = Logger.getLogger(RunKernelFGeneratedTests__BehaviorDescriptor.class);
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getConcept(0x9d000fbdbdca4a46L, 0xb39bc5ba9e79b38cL, 0x3fe7b889a03324fbL, "org.iets3.opensource.build.gentests.structure.RunKernelFGeneratedTests");
 
-  /*package*/ static final SMethod<String> getGentestsRtSolutionName_id6Fs_Z9I$Bez = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("getGentestsRtSolutionName").modifiers(0, AccessPrivileges.PRIVATE).concept(CONCEPT).baseMethodId(7700196530389676963L).languageId(0xb39bc5ba9e79b38cL, 0x9d000fbdbdca4a46L).build2();
-  public static final SMethod<Void> fetchDependencies_id57YmpYyL8F1 = new SMethodBuilder<Void>(new SJavaCompoundTypeImpl(Void.class)).name("fetchDependencies").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5908258303322131137L).languageId(0xb99171f8c50ce5d2L, 0x798100da4f0a421aL).build2(SMethodBuilder.createJavaParameter(VisibleArtifacts.class, ""), SMethodBuilder.createJavaParameter(RequiredDependenciesBuilder.class, ""));
-  public static final SMethod<String> findGentestsRt_id6Fs_Z9I$_5v = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("findGentestsRt").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(7700196530389668191L).languageId(0xb39bc5ba9e79b38cL, 0x9d000fbdbdca4a46L).build2(SMethodBuilder.createJavaParameter(TemplateQueryContext.class, ""));
+  /*package*/ static final SMethod<String> getGentestsRtSolutionName_id6Fs_Z9I$Bez = new SMethodBuilder<>(String.class).name("getGentestsRtSolutionName").modifiers(0, AccessPrivileges.PRIVATE).concept(CONCEPT).baseMethodId(7700196530389676963L).languageId(0xb39bc5ba9e79b38cL, 0x9d000fbdbdca4a46L).build2();
+  public static final SMethod<Void> fetchDependencies_id57YmpYyL8F1 = new SMethodBuilder<>(Void.TYPE).name("fetchDependencies").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5908258303322131137L).languageId(0xb99171f8c50ce5d2L, 0x798100da4f0a421aL).build2(SMethodBuilder.createJavaParameter(VisibleArtifacts.class, "artifacts"), SMethodBuilder.createJavaParameter(RequiredDependenciesBuilder.class, "builder"));
+  public static final SMethod<String> findGentestsRt_id6Fs_Z9I$_5v = new SMethodBuilder<>(String.class).name("findGentestsRt").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(7700196530389668191L).languageId(0xb39bc5ba9e79b38cL, 0x9d000fbdbdca4a46L).build2(SMethodBuilder.createJavaParameter(TemplateQueryContext.class, "genContext"));
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(getGentestsRtSolutionName_id6Fs_Z9I$Bez, fetchDependencies_id57YmpYyL8F1, findGentestsRt_id6Fs_Z9I$_5v);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(getGentestsRtSolutionName_id6Fs_Z9I$Bez, fetchDependencies_id57YmpYyL8F1, findGentestsRt_id6Fs_Z9I$_5v);
 
-  private static void ___init___(@NotNull SNode __thisNode__) {
-  }
 
   /*package*/ static String getGentestsRtSolutionName_id6Fs_Z9I$Bez(@NotNull SNode __thisNode__) {
     return PersistenceFacade.getInstance().createModuleReference("e70ad515-8ff0-4a50-8cb4-41406f14e348(org.iets3.opensource.build.gentests.rt)").getModuleName();
@@ -85,10 +81,6 @@ public final class RunKernelFGeneratedTests__BehaviorDescriptor extends BaseBHDe
   /*package*/ RunKernelFGeneratedTests__BehaviorDescriptor() {
   }
 
-  @Override
-  protected void initNode(@NotNull SNode node, @NotNull SConstructor constructor, @Nullable Object[] parameters) {
-    ___init___(node);
-  }
 
   @Override
   protected <T> T invokeSpecial0(@NotNull SNode node, @NotNull SMethod<T> method, @Nullable Object[] parameters) {

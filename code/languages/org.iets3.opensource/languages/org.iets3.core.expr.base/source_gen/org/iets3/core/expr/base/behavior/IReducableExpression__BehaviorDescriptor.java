@@ -8,7 +8,6 @@ import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import org.jetbrains.mps.openapi.model.SNode;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import java.util.List;
 import java.util.Arrays;
@@ -16,7 +15,6 @@ import org.jetbrains.annotations.NotNull;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
 import jetbrains.mps.internal.collections.runtime.ListSequence;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
-import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 import jetbrains.mps.smodel.builder.SNodeBuilder;
@@ -28,15 +26,13 @@ import org.jetbrains.mps.openapi.language.SProperty;
 public final class IReducableExpression__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getInterfaceConcept(0xcfaa4966b7d54b69L, 0xb66a309a6e1a7290L, 0x704de22bfb63e034L, "org.iets3.core.expr.base.structure.IReducableExpression");
 
-  public static final SMethod<SNode> createReducedExpression_id71dSyJVoY1g = new SMethodBuilder<SNode>(new SJavaCompoundTypeImpl((Class<SNode>) ((Class) Object.class))).name("createReducedExpression").modifiers(12, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(8092372783983747152L).languageId(0xb66a309a6e1a7290L, 0xcfaa4966b7d54b69L).build2();
-  public static final SMethod<SNode> trace_id71dSyJVs3bA = new SMethodBuilder<SNode>(new SJavaCompoundTypeImpl((Class<SNode>) ((Class) Object.class))).name("trace").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(8092372783984554726L).languageId(0xb66a309a6e1a7290L, 0xcfaa4966b7d54b69L).build2(SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""), SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""), SMethodBuilder.createJavaParameter(String.class, ""));
-  public static final SMethod<SNode> traceAndCopy_id71dSyJVs3Md = new SMethodBuilder<SNode>(new SJavaCompoundTypeImpl((Class<SNode>) ((Class) Object.class))).name("traceAndCopy").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(8092372783984557197L).languageId(0xb66a309a6e1a7290L, 0xcfaa4966b7d54b69L).build2(SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""), SMethodBuilder.createJavaParameter(String.class, ""));
-  public static final SMethod<SNode> createReducedVersionWithoutTraces_id6kR0qIbx$Vr = new SMethodBuilder<SNode>(new SJavaCompoundTypeImpl((Class<SNode>) ((Class) Object.class))).name("createReducedVersionWithoutTraces").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(7293299957841678043L).languageId(0xb66a309a6e1a7290L, 0xcfaa4966b7d54b69L).build2();
+  public static final SMethod<SNode> createReducedExpression_id71dSyJVoY1g = new SMethodBuilder<>(SNode.class).name("createReducedExpression").modifiers(12, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(8092372783983747152L).languageId(0xb66a309a6e1a7290L, 0xcfaa4966b7d54b69L).build2();
+  public static final SMethod<SNode> trace_id71dSyJVs3bA = new SMethodBuilder<>(SNode.class).name("trace").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(8092372783984554726L).languageId(0xb66a309a6e1a7290L, 0xcfaa4966b7d54b69L).build2(SMethodBuilder.createJavaParameter(SNode.class, "traced"), SMethodBuilder.createJavaParameter(SNode.class, "target"), SMethodBuilder.createJavaParameter(String.class, "label"));
+  public static final SMethod<SNode> traceAndCopy_id71dSyJVs3Md = new SMethodBuilder<>(SNode.class).name("traceAndCopy").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(8092372783984557197L).languageId(0xb66a309a6e1a7290L, 0xcfaa4966b7d54b69L).build2(SMethodBuilder.createJavaParameter(SNode.class, "traced"), SMethodBuilder.createJavaParameter(String.class, "label"));
+  public static final SMethod<SNode> createReducedVersionWithoutTraces_id6kR0qIbx$Vr = new SMethodBuilder<>(SNode.class).name("createReducedVersionWithoutTraces").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(7293299957841678043L).languageId(0xb66a309a6e1a7290L, 0xcfaa4966b7d54b69L).build2();
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(createReducedExpression_id71dSyJVoY1g, trace_id71dSyJVs3bA, traceAndCopy_id71dSyJVs3Md, createReducedVersionWithoutTraces_id6kR0qIbx$Vr);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(createReducedExpression_id71dSyJVoY1g, trace_id71dSyJVs3bA, traceAndCopy_id71dSyJVs3Md, createReducedVersionWithoutTraces_id6kR0qIbx$Vr);
 
-  private static void ___init___(@NotNull SNode __thisNode__) {
-  }
 
   /*package*/ static SNode trace_id71dSyJVs3bA(@NotNull SNode __thisNode__, SNode traced, SNode target, String label) {
     if (SNodeOperations.isInstanceOf(traced, CONCEPTS.TracerExpression$6g) || ListSequence.fromList(SNodeOperations.getNodeDescendants(traced, CONCEPTS.TracerExpression$6g, false, new SAbstractConcept[]{})).isNotEmpty()) {
@@ -62,10 +58,6 @@ public final class IReducableExpression__BehaviorDescriptor extends BaseBHDescri
   /*package*/ IReducableExpression__BehaviorDescriptor() {
   }
 
-  @Override
-  protected void initNode(@NotNull SNode node, @NotNull SConstructor constructor, @Nullable Object[] parameters) {
-    ___init___(node);
-  }
 
   @Override
   protected <T> T invokeSpecial0(@NotNull SNode node, @NotNull SMethod<T> method, @Nullable Object[] parameters) {

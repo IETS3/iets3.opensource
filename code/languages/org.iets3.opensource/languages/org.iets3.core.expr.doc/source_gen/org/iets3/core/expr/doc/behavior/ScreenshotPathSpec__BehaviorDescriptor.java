@@ -7,7 +7,6 @@ import org.jetbrains.mps.openapi.language.SAbstractConcept;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import org.jetbrains.mps.openapi.model.SNode;
 import java.util.List;
@@ -18,7 +17,6 @@ import com.mbeddr.mpsutil.filepicker.behavior.AbstractPicker__BehaviorDescriptor
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
 import jetbrains.mps.lang.core.behavior.BaseConcept__BehaviorDescriptor;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
-import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 import org.jetbrains.mps.openapi.language.SProperty;
@@ -27,13 +25,11 @@ import org.jetbrains.mps.openapi.language.SContainmentLink;
 public final class ScreenshotPathSpec__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getConcept(0x32190be623f74e17L, 0xaad4fb739bb3569fL, 0x171e34aef369f521L, "org.iets3.core.expr.doc.structure.ScreenshotPathSpec");
 
-  public static final SMethod<String> makeFullyQualifiedName_id1sudaVNqDDl = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("makeFullyQualifiedName").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(1665826838186465877L).languageId(0xaad4fb739bb3569fL, 0x32190be623f74e17L).build2(SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""));
-  public static final SMethod<String> makeFullyQualifiedPath_id2c2AzQcx8XZ = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("makeFullyQualifiedPath").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(2522748330422079359L).languageId(0xaad4fb739bb3569fL, 0x32190be623f74e17L).build2(SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""));
+  public static final SMethod<String> makeFullyQualifiedName_id1sudaVNqDDl = new SMethodBuilder<>(String.class).name("makeFullyQualifiedName").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(1665826838186465877L).languageId(0xaad4fb739bb3569fL, 0x32190be623f74e17L).build2(SMethodBuilder.createJavaParameter(SNode.class, "frame"));
+  public static final SMethod<String> makeFullyQualifiedPath_id2c2AzQcx8XZ = new SMethodBuilder<>(String.class).name("makeFullyQualifiedPath").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(2522748330422079359L).languageId(0xaad4fb739bb3569fL, 0x32190be623f74e17L).build2(SMethodBuilder.createJavaParameter(SNode.class, "frame"));
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(makeFullyQualifiedName_id1sudaVNqDDl, makeFullyQualifiedPath_id2c2AzQcx8XZ);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(makeFullyQualifiedName_id1sudaVNqDDl, makeFullyQualifiedPath_id2c2AzQcx8XZ);
 
-  private static void ___init___(@NotNull SNode __thisNode__) {
-  }
 
   /*package*/ static String makeFullyQualifiedName_id1sudaVNqDDl(@NotNull SNode __thisNode__, SNode frame) {
     return ScreenshotPathSpec__BehaviorDescriptor.makeFullyQualifiedPath_id2c2AzQcx8XZ.invoke(__thisNode__, frame) + "/" + SPropertyOperations.getString(frame, PROPS.name$MnvL) + ".png";
@@ -45,10 +41,6 @@ public final class ScreenshotPathSpec__BehaviorDescriptor extends BaseBHDescript
   /*package*/ ScreenshotPathSpec__BehaviorDescriptor() {
   }
 
-  @Override
-  protected void initNode(@NotNull SNode node, @NotNull SConstructor constructor, @Nullable Object[] parameters) {
-    ___init___(node);
-  }
 
   @Override
   protected <T> T invokeSpecial0(@NotNull SNode node, @NotNull SMethod<T> method, @Nullable Object[] parameters) {

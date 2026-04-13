@@ -24,17 +24,13 @@ import jetbrains.mps.ide.actions.StandaloneMPSStackTraceFilter;
 import jetbrains.mps.execution.configurations.implementation.plugin.plugin.TestInProcessRunState;
 import jetbrains.mps.execution.configurations.implementation.plugin.plugin.RunStateEnum;
 import com.intellij.execution.configurations.RuntimeConfigurationError;
+import org.jetbrains.annotations.NotNull;
 import com.intellij.openapi.project.Project;
 import com.intellij.execution.configurations.ConfigurationFactory;
 import org.jetbrains.annotations.Nullable;
 import com.intellij.execution.configurations.RunProfileState;
-import org.jetbrains.annotations.NotNull;
 import com.intellij.execution.runners.ExecutionEnvironment;
 import com.intellij.execution.ExecutionException;
-import com.intellij.openapi.options.SettingsEditor;
-import com.intellij.execution.configurations.ConfigurationPerRunnerSettings;
-import com.intellij.execution.runners.ProgramRunner;
-import com.intellij.execution.configurations.ConfigurationInfoProvider;
 import jetbrains.mps.execution.api.settings.SettingsEditorEx;
 import com.intellij.openapi.util.Key;
 import com.intellij.execution.BeforeRunTask;
@@ -86,17 +82,11 @@ public final class JUnitInterpreterTest_Configuration extends BaseMpsRunConfigur
       throw new RuntimeConfigurationError("There is already another instance running tests in-process. Only one instance is allowed to run in-process.");
     }
   }
-  @Override
-  @Deprecated
-  public JUnitInterpreterTest_Configuration clone() {
-    return copy();
-  }
 
   @Override
+  @NotNull
   public JUnitInterpreterTest_Configuration copy() {
     JUnitInterpreterTest_Configuration cloneTemplate = createCloneTemplate();
-    // beware, PersistenceConfiguration.this of newly created MyState instance would be the same as
-    // the value of myState, and != clone as regular Java passer-by would expect.
     cloneTemplate.myJUnitInterpreterSettings = ((Copyable<JUnitInterpreterSettings_Configuration>) myJUnitInterpreterSettings).copy();
     return cloneTemplate;
   }
@@ -116,26 +106,21 @@ public final class JUnitInterpreterTest_Configuration extends BaseMpsRunConfigur
   public RunProfileState getState(@NotNull Executor executor, @NotNull ExecutionEnvironment environment) throws ExecutionException {
     return new JUnitInterpreterTest_Configuration_RunProfileState(this, executor, environment);
   }
-  @Nullable
-  public SettingsEditor<ConfigurationPerRunnerSettings> getRunnerSettingsEditor(ProgramRunner runner) {
-    return null;
-  }
-  public ConfigurationPerRunnerSettings createRunnerSettings(ConfigurationInfoProvider provider) {
-    return null;
-  }
+  @NotNull
   public SettingsEditorEx<JUnitInterpreterTest_Configuration> getConfigurationEditor() {
     return (SettingsEditorEx<JUnitInterpreterTest_Configuration>) getEditor();
   }
+  @Override
+  public JUnitInterpreterTest_Configuration clone() {
+    return copy();
+  }
+  @Override
   public JUnitInterpreterTest_Configuration createCloneTemplate() {
     return (JUnitInterpreterTest_Configuration) super.clone();
   }
+  @Override
   public SettingsEditorEx<? extends IPersistentConfiguration> getEditor() {
     return new JUnitInterpreterTest_Configuration_Editor(myJUnitInterpreterSettings.getEditor());
-  }
-  @Override
-  public void checkConfiguration() throws RuntimeConfigurationException {
-    final jetbrains.mps.project.Project mpsProject = ProjectHelper.fromIdeaProject(getProject());
-    checkConfiguration(() -> mpsProject);
   }
   @Override
   public boolean canExecute(String executorId) {

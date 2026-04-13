@@ -8,14 +8,12 @@ import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import org.jetbrains.mps.openapi.model.SNode;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import java.util.List;
 import java.util.Arrays;
 import org.jetbrains.annotations.NotNull;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
-import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 import org.jetbrains.mps.openapi.language.SConcept;
@@ -24,12 +22,10 @@ import org.jetbrains.mps.openapi.language.SContainmentLink;
 public final class TestItemVectorCollection__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getConcept(0xd441fba0f46b43cdL, 0xb723dad7b65da615L, 0x39ebb0e06abca135L, "org.iets3.core.expr.tests.structure.TestItemVectorCollection");
 
-  public static final SMethod<SNode> subject_id1bwJEEeTss8 = new SMethodBuilder<SNode>(new SJavaCompoundTypeImpl((Class<SNode>) ((Class) Object.class))).name("subject").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(1360296727217030920L).languageId(0xb723dad7b65da615L, 0xd441fba0f46b43cdL).build2();
+  public static final SMethod<SNode> subject_id1bwJEEeTss8 = new SMethodBuilder<>(SNode.class).name("subject").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(1360296727217030920L).languageId(0xb723dad7b65da615L, 0xd441fba0f46b43cdL).build2();
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(subject_id1bwJEEeTss8);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(subject_id1bwJEEeTss8);
 
-  private static void ___init___(@NotNull SNode __thisNode__) {
-  }
 
   /*package*/ static SNode subject_id1bwJEEeTss8(@NotNull SNode __thisNode__) {
     return SLinkOperations.getTarget(SNodeOperations.cast(SNodeOperations.getParent(__thisNode__), CONCEPTS.VectorTestItem$2F), LINKS.subject$Zng6);
@@ -38,10 +34,6 @@ public final class TestItemVectorCollection__BehaviorDescriptor extends BaseBHDe
   /*package*/ TestItemVectorCollection__BehaviorDescriptor() {
   }
 
-  @Override
-  protected void initNode(@NotNull SNode node, @NotNull SConstructor constructor, @Nullable Object[] parameters) {
-    ___init___(node);
-  }
 
   @Override
   protected <T> T invokeSpecial0(@NotNull SNode node, @NotNull SMethod<T> method, @Nullable Object[] parameters) {

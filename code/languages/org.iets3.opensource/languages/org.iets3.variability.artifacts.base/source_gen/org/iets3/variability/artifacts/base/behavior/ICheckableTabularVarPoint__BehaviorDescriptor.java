@@ -7,7 +7,6 @@ import org.jetbrains.mps.openapi.language.SAbstractConcept;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import org.jetbrains.mps.openapi.model.SNode;
 import java.util.List;
@@ -20,7 +19,6 @@ import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
 import jetbrains.mps.internal.collections.runtime.ListSequence;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
 import jetbrains.mps.baseLanguage.closures.runtime._FunctionTypes;
-import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 import jetbrains.mps.smodel.builder.SNodeBuilder;
@@ -31,19 +29,17 @@ import org.jetbrains.mps.openapi.language.SProperty;
 public final class ICheckableTabularVarPoint__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getInterfaceConcept(0xf08835038eaa4bc8L, 0x8846eb63220ab1ddL, 0x6fb29cae23c4f73fL, "org.iets3.variability.artifacts.base.structure.ICheckableTabularVarPoint");
 
-  public static final SMethod<Boolean> showSubResults_id4MH81Y0VldB = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("showSubResults").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5525107637532578663L).languageId(0xbd9c05c0f8725a35L, 0x7b68d745a7b848b9L).build2();
-  public static final SMethod<SNode> createSolverTask_id4pkidg67Lgb = new SMethodBuilder<SNode>(new SJavaCompoundTypeImpl((Class<SNode>) ((Class) Object.class))).name("createSolverTask").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5067755556171617291L).languageId(0x8fed954c202d18beL, 0xdb8bd0353f5141d8L).build2();
-  public static final SMethod<Boolean> readyForSolving_id7EfNCVjpXdh = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("readyForSolving").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(8831504507124306769L).languageId(0x8fed954c202d18beL, 0xdb8bd0353f5141d8L).build2();
-  public static final SMethod<String> getSolvableName_idWieAE6TWOo = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("getSolvableName").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(1085994689353993496L).languageId(0x8fed954c202d18beL, 0xdb8bd0353f5141d8L).build2();
-  public static final SMethod<Boolean> solvedInTypeSystem_id1LoQHJHiiZd = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("solvedInTypeSystem").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(2042623069126209485L).languageId(0x8fed954c202d18beL, 0xdb8bd0353f5141d8L).build2();
-  public static final SMethod<Iterable<SNode>> contentForSolverTask_id1ssmHrAa6oD = new SMethodBuilder<Iterable<SNode>>(new SJavaCompoundTypeImpl((Class<Iterable<SNode>>) ((Class) Object.class))).name("contentForSolverTask").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(1665305841251149353L).languageId(0x8846eb63220ab1ddL, 0xf08835038eaa4bc8L).build2();
-  public static final SMethod<Boolean> unrelatedTo_id1_3_lS1SjJv = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("unrelatedTo").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(1820462905378814943L).languageId(0x8846eb63220ab1ddL, 0xf08835038eaa4bc8L).build2(SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""));
-  public static final SMethod<Boolean> highlightWarning_id4358bbCIl2g = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("highlightWarning").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(4667172541620113552L).languageId(0xbd9c05c0f8725a35L, 0x7b68d745a7b848b9L).build2();
+  public static final SMethod<Boolean> showSubResults_id4MH81Y0VldB = new SMethodBuilder<>(Boolean.TYPE).name("showSubResults").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5525107637532578663L).languageId(0xbd9c05c0f8725a35L, 0x7b68d745a7b848b9L).build2();
+  public static final SMethod<SNode> createSolverTask_id4pkidg67Lgb = new SMethodBuilder<>(SNode.class).name("createSolverTask").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5067755556171617291L).languageId(0x8fed954c202d18beL, 0xdb8bd0353f5141d8L).build2();
+  public static final SMethod<Boolean> readyForSolving_id7EfNCVjpXdh = new SMethodBuilder<>(Boolean.TYPE).name("readyForSolving").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(8831504507124306769L).languageId(0x8fed954c202d18beL, 0xdb8bd0353f5141d8L).build2();
+  public static final SMethod<String> getSolvableName_idWieAE6TWOo = new SMethodBuilder<>(String.class).name("getSolvableName").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(1085994689353993496L).languageId(0x8fed954c202d18beL, 0xdb8bd0353f5141d8L).build2();
+  public static final SMethod<Boolean> solvedInTypeSystem_id1LoQHJHiiZd = new SMethodBuilder<>(Boolean.TYPE).name("solvedInTypeSystem").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(2042623069126209485L).languageId(0x8fed954c202d18beL, 0xdb8bd0353f5141d8L).build2();
+  public static final SMethod<Iterable<SNode>> contentForSolverTask_id1ssmHrAa6oD = new SMethodBuilder<>((Class<Iterable<SNode>>) ((Class) Object.class)).name("contentForSolverTask").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(1665305841251149353L).languageId(0x8846eb63220ab1ddL, 0xf08835038eaa4bc8L).build2();
+  public static final SMethod<Boolean> unrelatedTo_id1_3_lS1SjJv = new SMethodBuilder<>(Boolean.TYPE).name("unrelatedTo").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(1820462905378814943L).languageId(0x8846eb63220ab1ddL, 0xf08835038eaa4bc8L).build2(SMethodBuilder.createJavaParameter(SNode.class, "n"));
+  public static final SMethod<Boolean> highlightWarning_id4358bbCIl2g = new SMethodBuilder<>(Boolean.TYPE).name("highlightWarning").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(4667172541620113552L).languageId(0xbd9c05c0f8725a35L, 0x7b68d745a7b848b9L).build2();
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(showSubResults_id4MH81Y0VldB, createSolverTask_id4pkidg67Lgb, readyForSolving_id7EfNCVjpXdh, getSolvableName_idWieAE6TWOo, solvedInTypeSystem_id1LoQHJHiiZd, contentForSolverTask_id1ssmHrAa6oD, unrelatedTo_id1_3_lS1SjJv, highlightWarning_id4358bbCIl2g);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(showSubResults_id4MH81Y0VldB, createSolverTask_id4pkidg67Lgb, readyForSolving_id7EfNCVjpXdh, getSolvableName_idWieAE6TWOo, solvedInTypeSystem_id1LoQHJHiiZd, contentForSolverTask_id1ssmHrAa6oD, unrelatedTo_id1_3_lS1SjJv, highlightWarning_id4358bbCIl2g);
 
-  private static void ___init___(@NotNull SNode __thisNode__) {
-  }
 
   /*package*/ static boolean showSubResults_id4MH81Y0VldB(@NotNull SNode __thisNode__) {
     return true;
@@ -62,7 +58,18 @@ public final class ICheckableTabularVarPoint__BehaviorDescriptor extends BaseBHD
     return "TabularVarPoint";
   }
   /*package*/ static boolean solvedInTypeSystem_id1LoQHJHiiZd(@NotNull SNode __thisNode__) {
-    return true;
+    /*
+      We are not executing the solver automatically via checking rule anymore. There are various problems
+      which have to be solved first before we activate it again. 
+      
+      * In the editor: If several tabular VPs are in the same root node, executing the solver check for one of the tabular VPs might remove the error markers attached to other tabular VPs in previous checks. Moreover, problems due to solver exceptions (in corner cases) will hassle the user, without a possibility to avoid it.
+      * During model check: As the solver check for tabular VPs is executed asynchronously, the results are not integrated in the overall model check results. Moreover, the checking of tabular VPs might still run minutes after the model check seems to have finished.
+      
+      See ticket https://github.com/IETS3/iets3.opensource/issues/1731 for details.
+
+    */
+
+    return false;
   }
   /*package*/ static Iterable<SNode> contentForSolverTask_id1ssmHrAa6oD(@NotNull SNode __thisNode__) {
     return Sequence.fromIterable(SLinkOperations.collect(ITabularVarPoint__BehaviorDescriptor.items_idWVQivijUir.invoke(__thisNode__), LINKS.featureExpr$cJRc)).where((it) -> {
@@ -84,10 +91,6 @@ public final class ICheckableTabularVarPoint__BehaviorDescriptor extends BaseBHD
   /*package*/ ICheckableTabularVarPoint__BehaviorDescriptor() {
   }
 
-  @Override
-  protected void initNode(@NotNull SNode node, @NotNull SConstructor constructor, @Nullable Object[] parameters) {
-    ___init___(node);
-  }
 
   @Override
   protected <T> T invokeSpecial0(@NotNull SNode node, @NotNull SMethod<T> method, @Nullable Object[] parameters) {
