@@ -51,17 +51,17 @@ public class ContextActionsDescriptor extends AbstractContextActionsDescriptor i
     ListSequence.fromList(result).addElement(new WrapperActionSource(new IntentionActionSource(new String[]{"org.iets3.req.core.intentions.AddChildRequirement_Intention"}) {
       @Override
       protected Icon getIcon(IIntention intention, IContext context) {
-        return IconContainer.ICON_a0a0a0a0a0a0c0d;
+        return IconContainer.ICON0;
       }
     }, new IntentionActionSource(new String[]{"org.iets3.req.core.intentions.AddSiblingRequirement_Intention"}) {
       @Override
       protected Icon getIcon(IIntention intention, IContext context) {
-        return IconContainer.ICON_a0a0a0b0a0a0c0d;
+        return IconContainer.ICON1;
       }
     }, new IntentionActionSource(new String[]{"org.iets3.req.core.intentions.DeleteRequirement_Intention"}) {
       @Override
       protected Icon getIcon(IIntention intention, IContext context) {
-        return IconContainer.ICON_a0a0a0c0a0a0c0d;
+        return IconContainer.ICON2;
       }
     }) {
       @Override

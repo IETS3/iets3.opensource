@@ -33,6 +33,7 @@ import com.mbeddr.mpsutil.grammarcells.runtime.StringOrSequenceQuery;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
 import com.mbeddr.mpsutil.grammarcells.runtime.MultiTextActionItem;
 import jetbrains.mps.smodel.action.SNodeFactoryOperations;
+import org.iets3.core.expr.base.plugin.EditorCustomizationConfigHelper;
 import org.jetbrains.mps.openapi.language.SAbstractConcept;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.baseLanguage.closures.runtime._FunctionTypes;
@@ -155,6 +156,11 @@ import org.jetbrains.mps.openapi.language.SConcept;
           public SNode doSubstitute(@NotNull String pattern) {
             SNode result = ListSequence.fromList(SLinkOperations.getChildren(SNodeOperations.cast(ctx.getNode(), CONCEPTS.Event$EX), LINKS.args$VFlw)).insertElement(0, SNodeFactoryOperations.createNewNode(CONCEPTS.EventArg$T0, null));
             EditorContext editorContext = ctx.getEditorContext();
+            new Object() {
+              public void postprocess(SNode node) {
+                EditorCustomizationConfigHelper.getConfig().postProcessOptionalCell(EditorCustomizationConfigHelper.getIdentifier(CONCEPTS.Event$EX, LINKS.args$VFlw), node, editorContext);
+              }
+            }.postprocess(ctx.getNode());
 
             return result;
           }
@@ -169,7 +175,8 @@ import org.jetbrains.mps.openapi.language.SConcept;
             SNode node = ctx.getNode();
             String originalText = super.getShortDescriptionText(pattern);
             EditorContext editorContext = ctx.getEditorContext();
-            return "arguments for the event";
+            String description = EditorCustomizationConfigHelper.getConfig().getOptionalCellDescriptionText(EditorCustomizationConfigHelper.getIdentifier(CONCEPTS.Event$EX, LINKS.args$VFlw), node, originalText, editorContext);
+            return ((description != null && description.length() > 0) ? description : "add arguments for the event");
           }
 
         });
@@ -204,6 +211,11 @@ import org.jetbrains.mps.openapi.language.SConcept;
             String description = "Insert child into " + child.getSNode().getContainmentLink();
             SNodeReference trace = new SNodePointer("r:b88120ae-56ea-40ef-9fbc-357ff05a0880(org.iets3.core.expr.genjava.stateMachineExample.editor)", "5544528087567484412");
             _FunctionTypes._void_P1_E0<? super SNode> postprocessor = null;
+            postprocessor = new _FunctionTypes._void_P1_E0<SNode>() {
+              public void invoke(SNode node) {
+                EditorCustomizationConfigHelper.getConfig().postProcessOptionalCell(EditorCustomizationConfigHelper.getIdentifier(CONCEPTS.Event$EX, LINKS.args$VFlw), node, editorContext);
+              }
+            };
             CompositeTransformationMenuLookup.add(child, new ListInsertActionLookup(matchingTexts, false, parentCellId, description, child.getSNode(), trace, postprocessor));
             CompositeTransformationMenuLookup.add(child, new ListInsertActionLookup(matchingTexts, true, parentCellId, description, child.getSNode(), trace, postprocessor));
           }

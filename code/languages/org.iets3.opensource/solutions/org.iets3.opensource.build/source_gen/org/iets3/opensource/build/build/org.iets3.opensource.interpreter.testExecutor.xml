@@ -70,7 +70,7 @@
         <id>org.iets3.opensource.interpreterExecutor</id>
         <name>org.iets3.opensource.interpreterExecutor</name>
         <version>${org.iets3.opensource.version}</version>
-        <depends>com.intellij.modules.mps</depends>
+        <depends>com.intellij.modules.platform</depends>
         <depends>org.iets3.core.junit.interpreter.run.configuration</depends>
         <depends>org.iets3.build.os</depends>
         <depends>jetbrains.mps.debugger.api</depends>
@@ -176,7 +176,6 @@
       <plugin path="${artifacts.com.mbeddr.platform}/com.mbeddr.mpsutil.editor.querylist" id="com.mbeddr.mpsutil.editor.querylist" />
       <plugin path="${artifacts.com.mbeddr.platform}/com.mbeddr.mpsutil.editorsupport" id="com.mbeddr.mpsutil.editorsupport" />
       <plugin path="${artifacts.com.mbeddr.platform}/com.mbeddr.mpsutil.filepicker" id="com.mbeddr.mpsutil.filepicker" />
-      <plugin path="${artifacts.com.mbeddr.platform}/com.mbeddr.mpsutil.httpsupport" id="com.mbeddr.mpsutil.httpsupport" />
       <plugin path="${artifacts.com.mbeddr.platform}/com.mbeddr.mpsutil.infrastructure.misc" id="com.mbeddr.mpsutil.infrastructure.misc" />
       <plugin path="${artifacts.com.mbeddr.platform}/com.mbeddr.mpsutil.intentions" id="com.mbeddr.mpsutil.intentions" />
       <plugin path="${artifacts.com.mbeddr.platform}/com.mbeddr.mpsutil.interpreter" id="com.mbeddr.mpsutil.interpreter" />
@@ -239,6 +238,9 @@
       <plugin path="${artifacts.org.iets3.opensource}/org.iets3.build.os" id="org.iets3.build.os" />
       <plugin path="${artifacts.org.iets3.opensource}/org.iets3.core.junit.interpretertest.runner" id="org.iets3.core.junit.interpreter.run.configuration" />
       <plugin path="${artifacts.org.iets3.opensource}/org.iets3.core.os" id="org.iets3.core.os" />
+      <library file="${artifacts.mps}/languages/editor/jetbrains.mps.ide.editor.jar" />
+      <library file="${artifacts.mps}/languages/plaf/jetbrains.mps.ide.refactoring.platform.jar" />
+      <library file="${artifacts.mps}/languages/plaf/jetbrains.mps.ide.ui.jar" />
       <library file="${artifacts.mps}/languages/workbench-stub.jar" />
       <library file="${artifacts.mps}/languages/workbench/jetbrains.mps.ide.jar" />
       <chunk>
@@ -352,7 +354,6 @@
       <plugin path="${artifacts.com.mbeddr.platform}/com.mbeddr.mpsutil.filepicker" id="com.mbeddr.mpsutil.filepicker" />
       <plugin path="${artifacts.com.mbeddr.platform}/com.mbeddr.mpsutil.genreview" id="com.mbeddr.mpsutil.genreview" />
       <plugin path="${artifacts.com.mbeddr.platform}/com.mbeddr.mpsutil.gensupport" id="com.mbeddr.mpsutil.gensupport" />
-      <plugin path="${artifacts.com.mbeddr.platform}/com.mbeddr.mpsutil.httpsupport" id="com.mbeddr.mpsutil.httpsupport" />
       <plugin path="${artifacts.com.mbeddr.platform}/com.mbeddr.mpsutil.incrementalcomputation" id="com.mbeddr.mpsutil.incrementalcomputation" />
       <plugin path="${artifacts.com.mbeddr.platform}/com.mbeddr.mpsutil.infrastructure.misc" id="com.mbeddr.mpsutil.infrastructure.misc" />
       <plugin path="${artifacts.com.mbeddr.platform}/com.mbeddr.mpsutil.intentions" id="com.mbeddr.mpsutil.intentions" />
@@ -639,8 +640,8 @@
       <library file="${artifacts.mps}/plugins/mps-debugger-api/languages/jetbrains.mps.debugger.api.api.jar" />
       <library file="${artifacts.mps}/plugins/mps-debugger-api/languages/jetbrains.mps.debugger.api.lang.jar" />
       <library file="${artifacts.mps}/plugins/mps-debugger-api/languages/jetbrains.mps.debugger.api.runtime.jar" />
+      <library file="${artifacts.mps}/plugins/mps-debugger-api/languages/jetbrains.mps.debugger.core.jar" />
       <library file="${artifacts.mps}/plugins/mps-debugger-java/languages/JDK-tools.jar" />
-      <library file="${artifacts.mps}/plugins/mps-debugger-java/languages/jetbrains.mps.debugger.core.jar" />
       <library file="${artifacts.mps}/plugins/mps-debugger-java/languages/jetbrains.mps.debugger.java.api.jar" />
       <library file="${artifacts.mps}/plugins/mps-debugger-java/languages/jetbrains.mps.debugger.java.evaluation.jar" />
       <library file="${artifacts.mps}/plugins/mps-debugger-java/languages/jetbrains.mps.debugger.java.runtime.jar" />
