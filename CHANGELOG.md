@@ -9,7 +9,7 @@ The project does _not_ follow Semantic Versioning and the changes are documented
 
 ### Fixed
 
-- After calling intention 'adopt Configuration To extended Configuration' inherited attributes were set to manual. This bug has been fixed.
+- Variability: After calling intention 'Adopt This Configuration to the Extended Configuration' inherited attributes were set to manual. This bug has been fixed.
 
 ### Changed
 
