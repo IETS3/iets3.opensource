@@ -132,7 +132,7 @@ import org.jetbrains.mps.openapi.language.SConcept;
     }
 
     /*package*/ EditorCell createCell() {
-      return createTooltip_1();
+      return createTooltip_0();
     }
 
     @NotNull
@@ -141,16 +141,13 @@ import org.jetbrains.mps.openapi.language.SConcept;
       return myNode;
     }
 
-    private EditorCell createTooltip_0(final EditorContext editorContext, final SNode node) {
-      LazyTooltipCellEvaluator tooltip = new LazyTooltipCellEvaluator(editorContext, node, "org.iets3.components.functional.editor.GeneratedHints.tooltipHint_m27nl3_a0b0", true);
+    private EditorCell createTooltip_0() {
+      LazyTooltipCellEvaluator tooltip = new LazyTooltipCellEvaluator(getEditorContext(), myNode, "org.iets3.components.functional.editor.GeneratedHints.tooltipHint_m27nl3_a0b0", true);
       EditorCell visibleCell = createProperty_0();
 
-      TooltipWrapper editorCell = new TooltipWrapper(editorContext, node, visibleCell, tooltip, TooltipTimingProperties.DEFAULT);
+      TooltipWrapper editorCell = new TooltipWrapper(getEditorContext(), myNode, visibleCell, tooltip, TooltipTimingProperties.DEFAULT);
       editorCell.setCellId("Tooltip_m27nl3_a0b0");
       return editorCell;
-    }
-    private EditorCell createTooltip_1() {
-      return createTooltip_0(getEditorContext(), myNode);
     }
     private EditorCell createProperty_0() {
       getCellFactory().pushCellContext();

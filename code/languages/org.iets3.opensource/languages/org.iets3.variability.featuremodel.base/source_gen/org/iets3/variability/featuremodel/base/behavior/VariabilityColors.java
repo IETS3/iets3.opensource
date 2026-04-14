@@ -9,7 +9,7 @@ public class VariabilityColors {
   /**
    * The base foreground color indicating that something is variability related.
    * 
-   * It is a combination of two colors (for light themes and dark themes). 
+   * It is a combination of two colors (for light themes and dark themes).
    * - light theme: dark green
    * - dark theme: light green
    */

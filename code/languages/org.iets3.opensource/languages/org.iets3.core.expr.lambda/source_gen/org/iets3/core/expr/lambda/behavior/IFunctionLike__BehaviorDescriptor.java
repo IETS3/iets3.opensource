@@ -8,7 +8,6 @@ import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import org.jetbrains.mps.openapi.model.SNode;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import org.iets3.core.expr.base.plugin.EffectDescriptor;
 import com.mbeddr.core.base.behavior.AbstractTreeViewNode;
@@ -25,7 +24,6 @@ import jetbrains.mps.lang.core.behavior.BaseConcept__BehaviorDescriptor;
 import com.mbeddr.core.base.behavior.ITreeViewRoot__BehaviorDescriptor;
 import jetbrains.mps.internal.collections.runtime.Sequence;
 import com.mbeddr.core.base.behavior.ITreeViewable__BehaviorDescriptor;
-import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 import org.jetbrains.mps.openapi.language.SContainmentLink;
@@ -36,23 +34,21 @@ import org.jetbrains.mps.openapi.language.SProperty;
 public final class IFunctionLike__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getInterfaceConcept(0x9464fa065ab9409bL, 0x927464ab29588457L, 0x427ce523083b8a2fL, "org.iets3.core.expr.lambda.structure.IFunctionLike");
 
-  public static final SMethod<Iterable<SNode>> getUniquelyNamedElements_id4qSf1u1TRfj = new SMethodBuilder<Iterable<SNode>>(new SJavaCompoundTypeImpl((Class<Iterable<SNode>>) ((Class) Object.class))).name("getUniquelyNamedElements").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5095889050031059923L).languageId(0xaa41d1b2bffa7eb1L, 0xd4280a54f6df4383L).build2();
-  public static final SMethod<Boolean> canHavePrecondition_idKaZMgy4IjP = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("canHavePrecondition").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(867786408877810933L).languageId(0xb66a309a6e1a7290L, 0xcfaa4966b7d54b69L).build2();
-  public static final SMethod<Boolean> canHavePostcondition_idKaZMgy4Iky = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("canHavePostcondition").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(867786408877810978L).languageId(0xb66a309a6e1a7290L, 0xcfaa4966b7d54b69L).build2();
-  public static final SMethod<SNode> getNodeFromWhichToDeriveType_id5aHkq2w4m8L = new SMethodBuilder<SNode>(new SJavaCompoundTypeImpl((Class<SNode>) ((Class) Object.class))).name("getNodeFromWhichToDeriveType").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5957507632403145265L).languageId(0xb66a309a6e1a7290L, 0xcfaa4966b7d54b69L).build2();
-  public static final SMethod<EffectDescriptor> effectDescriptor_id6GySMNjjWfO = new SMethodBuilder<EffectDescriptor>(new SJavaCompoundTypeImpl(EffectDescriptor.class)).name("effectDescriptor").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(7719982492929737716L).languageId(0xb66a309a6e1a7290L, 0xcfaa4966b7d54b69L).build2();
-  public static final SMethod<Iterable<SNode>> getDependenciesRelevantForCycleDetection_id59HbAIOYveX = new SMethodBuilder<Iterable<SNode>>(new SJavaCompoundTypeImpl((Class<Iterable<SNode>>) ((Class) Object.class))).name("getDependenciesRelevantForCycleDetection").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5939454523704210365L).languageId(0xaa41d1b2bffa7eb1L, 0xd4280a54f6df4383L).build2();
-  public static final SMethod<Iterable<SNode>> namedNodesForComment_id5ElkanPUl6T = new SMethodBuilder<Iterable<SNode>>(new SJavaCompoundTypeImpl((Class<Iterable<SNode>>) ((Class) Object.class))).name("namedNodesForComment").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(6527211908668936633L).languageId(0xb66a309a6e1a7290L, 0xcfaa4966b7d54b69L).build2();
-  public static final SMethod<Boolean> overrideDefaultAllowUmlaute_id5D8v3P4jYKp = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("overrideDefaultUmlaute").modifiers(9, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(6505586264317619225L).languageId(0xbd9c05c0f8725a35L, 0x7b68d745a7b848b9L).build2();
-  public static final SMethod<Boolean> isToplevelCoverageContent_id2hXd3rsZYy8 = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("isToplevelCoverageContent").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(2629315167694874760L).languageId(0xa6067ce0236c8023L, 0x47f075a6558e4640L).build2();
-  public static final SMethod<Iterable<SNode>> getChildrenForCoverage_id5IKJrJHNCE8 = new SMethodBuilder<Iterable<SNode>>(new SJavaCompoundTypeImpl((Class<Iterable<SNode>>) ((Class) Object.class))).name("getChildrenForCoverage").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(6606989268198787720L).languageId(0xa6067ce0236c8023L, 0x47f075a6558e4640L).build2();
-  public static final SMethod<String[]> getTreeCategories_id7NyyyjNtbmX = new SMethodBuilder<String[]>(new SJavaCompoundTypeImpl(String[].class)).name("getTreeCategories").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(8998906896747640253L).languageId(0xaa41d1b2bffa7eb1L, 0xd4280a54f6df4383L).build2();
-  public static final SMethod<AbstractTreeViewNode> getTreeNode_id7NyyyjNtbn2 = new SMethodBuilder<AbstractTreeViewNode>(new SJavaCompoundTypeImpl(AbstractTreeViewNode.class)).name("getTreeNode").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(8998906896747640258L).languageId(0xaa41d1b2bffa7eb1L, 0xd4280a54f6df4383L).build2(SMethodBuilder.createJavaParameter(String.class, ""));
+  public static final SMethod<Iterable<SNode>> getUniquelyNamedElements_id4qSf1u1TRfj = new SMethodBuilder<>((Class<Iterable<SNode>>) ((Class) Object.class)).name("getUniquelyNamedElements").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5095889050031059923L).languageId(0xaa41d1b2bffa7eb1L, 0xd4280a54f6df4383L).build2();
+  public static final SMethod<Boolean> canHavePrecondition_idKaZMgy4IjP = new SMethodBuilder<>(Boolean.TYPE).name("canHavePrecondition").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(867786408877810933L).languageId(0xb66a309a6e1a7290L, 0xcfaa4966b7d54b69L).build2();
+  public static final SMethod<Boolean> canHavePostcondition_idKaZMgy4Iky = new SMethodBuilder<>(Boolean.TYPE).name("canHavePostcondition").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(867786408877810978L).languageId(0xb66a309a6e1a7290L, 0xcfaa4966b7d54b69L).build2();
+  public static final SMethod<SNode> getNodeFromWhichToDeriveType_id5aHkq2w4m8L = new SMethodBuilder<>(SNode.class).name("getNodeFromWhichToDeriveType").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5957507632403145265L).languageId(0xb66a309a6e1a7290L, 0xcfaa4966b7d54b69L).build2();
+  public static final SMethod<EffectDescriptor> effectDescriptor_id6GySMNjjWfO = new SMethodBuilder<>(EffectDescriptor.class).name("effectDescriptor").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(7719982492929737716L).languageId(0xb66a309a6e1a7290L, 0xcfaa4966b7d54b69L).build2();
+  public static final SMethod<Iterable<SNode>> getDependenciesRelevantForCycleDetection_id59HbAIOYveX = new SMethodBuilder<>((Class<Iterable<SNode>>) ((Class) Object.class)).name("getDependenciesRelevantForCycleDetection").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5939454523704210365L).languageId(0xaa41d1b2bffa7eb1L, 0xd4280a54f6df4383L).build2();
+  public static final SMethod<Iterable<SNode>> namedNodesForComment_id5ElkanPUl6T = new SMethodBuilder<>((Class<Iterable<SNode>>) ((Class) Object.class)).name("namedNodesForComment").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(6527211908668936633L).languageId(0xb66a309a6e1a7290L, 0xcfaa4966b7d54b69L).build2();
+  public static final SMethod<Boolean> overrideDefaultAllowUmlaute_id5D8v3P4jYKp = new SMethodBuilder<>(Boolean.TYPE).name("overrideDefaultUmlaute").modifiers(9, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(6505586264317619225L).languageId(0xbd9c05c0f8725a35L, 0x7b68d745a7b848b9L).build2();
+  public static final SMethod<Boolean> isToplevelCoverageContent_id2hXd3rsZYy8 = new SMethodBuilder<>(Boolean.TYPE).name("isToplevelCoverageContent").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(2629315167694874760L).languageId(0xa6067ce0236c8023L, 0x47f075a6558e4640L).build2();
+  public static final SMethod<Iterable<SNode>> getChildrenForCoverage_id5IKJrJHNCE8 = new SMethodBuilder<>((Class<Iterable<SNode>>) ((Class) Object.class)).name("getChildrenForCoverage").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(6606989268198787720L).languageId(0xa6067ce0236c8023L, 0x47f075a6558e4640L).build2();
+  public static final SMethod<String[]> getTreeCategories_id7NyyyjNtbmX = new SMethodBuilder<>(String[].class).name("getTreeCategories").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(8998906896747640253L).languageId(0xaa41d1b2bffa7eb1L, 0xd4280a54f6df4383L).build2();
+  public static final SMethod<AbstractTreeViewNode> getTreeNode_id7NyyyjNtbn2 = new SMethodBuilder<>(AbstractTreeViewNode.class).name("getTreeNode").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(8998906896747640258L).languageId(0xaa41d1b2bffa7eb1L, 0xd4280a54f6df4383L).build2(SMethodBuilder.createJavaParameter(String.class, "category"));
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(getUniquelyNamedElements_id4qSf1u1TRfj, canHavePrecondition_idKaZMgy4IjP, canHavePostcondition_idKaZMgy4Iky, getNodeFromWhichToDeriveType_id5aHkq2w4m8L, effectDescriptor_id6GySMNjjWfO, getDependenciesRelevantForCycleDetection_id59HbAIOYveX, namedNodesForComment_id5ElkanPUl6T, overrideDefaultAllowUmlaute_id5D8v3P4jYKp, isToplevelCoverageContent_id2hXd3rsZYy8, getChildrenForCoverage_id5IKJrJHNCE8, getTreeCategories_id7NyyyjNtbmX, getTreeNode_id7NyyyjNtbn2);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(getUniquelyNamedElements_id4qSf1u1TRfj, canHavePrecondition_idKaZMgy4IjP, canHavePostcondition_idKaZMgy4Iky, getNodeFromWhichToDeriveType_id5aHkq2w4m8L, effectDescriptor_id6GySMNjjWfO, getDependenciesRelevantForCycleDetection_id59HbAIOYveX, namedNodesForComment_id5ElkanPUl6T, overrideDefaultAllowUmlaute_id5D8v3P4jYKp, isToplevelCoverageContent_id2hXd3rsZYy8, getChildrenForCoverage_id5IKJrJHNCE8, getTreeCategories_id7NyyyjNtbmX, getTreeNode_id7NyyyjNtbn2);
 
-  private static void ___init___(@NotNull SNode __thisNode__) {
-  }
 
   /*package*/ static Iterable<SNode> getUniquelyNamedElements_id4qSf1u1TRfj(@NotNull SNode __thisNode__) {
     return SLinkOperations.getChildren(__thisNode__, LINKS.args$XOIh);
@@ -110,10 +106,6 @@ public final class IFunctionLike__BehaviorDescriptor extends BaseBHDescriptor {
   /*package*/ IFunctionLike__BehaviorDescriptor() {
   }
 
-  @Override
-  protected void initNode(@NotNull SNode node, @NotNull SConstructor constructor, @Nullable Object[] parameters) {
-    ___init___(node);
-  }
 
   @Override
   protected <T> T invokeSpecial0(@NotNull SNode node, @NotNull SMethod<T> method, @Nullable Object[] parameters) {

@@ -8,34 +8,26 @@ import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import com.mbeddr.mpsutil.interpreter.rt.IContext;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import java.util.List;
 import java.util.Arrays;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.mps.openapi.model.SNode;
-import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 
 public final class IRunningInterpreterContext__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getInterfaceConcept(0xcfaa4966b7d54b69L, 0xb66a309a6e1a7290L, 0x45fe014ac8835911L, "org.iets3.core.expr.base.structure.IRunningInterpreterContext");
 
-  public static final SMethod<IContext> getCurrentInterpreterContext_id4nY0kF8wP$O = new SMethodBuilder<IContext>(new SJavaCompoundTypeImpl(IContext.class)).name("getCurrentInterpreterContext").modifiers(12, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5043470053404793140L).languageId(0xb66a309a6e1a7290L, 0xcfaa4966b7d54b69L).build2();
+  public static final SMethod<IContext> getCurrentInterpreterContext_id4nY0kF8wP$O = new SMethodBuilder<>(IContext.class).name("getCurrentInterpreterContext").modifiers(12, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5043470053404793140L).languageId(0xb66a309a6e1a7290L, 0xcfaa4966b7d54b69L).build2();
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(getCurrentInterpreterContext_id4nY0kF8wP$O);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(getCurrentInterpreterContext_id4nY0kF8wP$O);
 
-  private static void ___init___(@NotNull SNode __thisNode__) {
-  }
 
 
   /*package*/ IRunningInterpreterContext__BehaviorDescriptor() {
   }
 
-  @Override
-  protected void initNode(@NotNull SNode node, @NotNull SConstructor constructor, @Nullable Object[] parameters) {
-    ___init___(node);
-  }
 
   @Override
   protected <T> T invokeSpecial0(@NotNull SNode node, @NotNull SMethod<T> method, @Nullable Object[] parameters) {

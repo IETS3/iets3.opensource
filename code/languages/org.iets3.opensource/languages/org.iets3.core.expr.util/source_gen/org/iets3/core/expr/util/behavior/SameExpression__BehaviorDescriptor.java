@@ -7,7 +7,6 @@ import org.jetbrains.mps.openapi.language.SAbstractConcept;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import org.jetbrains.mps.openapi.model.SNode;
 import java.util.List;
@@ -17,7 +16,6 @@ import jetbrains.mps.lang.smodel.generator.smodelAdapter.SConceptOperations;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
 import jetbrains.mps.internal.collections.runtime.ListSequence;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
-import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 import org.jetbrains.mps.openapi.language.SConcept;
@@ -27,16 +25,14 @@ import org.jetbrains.mps.openapi.language.SReferenceLink;
 public final class SameExpression__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getConcept(0x8bb1251eeae547abL, 0x984333adfae8edaaL, 0xcde8c60ce90a22dL, "org.iets3.core.expr.util.structure.SameExpression");
 
-  public static final SMethod<String> renderReadable_id4Y0vh0cfqjE = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("renderReadable").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5728716233893586154L).languageId(0xb66a309a6e1a7290L, 0xcfaa4966b7d54b69L).build2();
-  public static final SMethod<Iterable<SNode>> effectiveContents_idNuz63e$fnb = new SMethodBuilder<Iterable<SNode>>(new SJavaCompoundTypeImpl((Class<Iterable<SNode>>) ((Class) Object.class))).name("effectiveContents").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(927332920695256523L).languageId(0x984333adfae8edaaL, 0x8bb1251eeae547abL).build2();
-  public static final SMethod<SNode> content_idNuz63e_aEU = new SMethodBuilder<SNode>(new SJavaCompoundTypeImpl((Class<SNode>) ((Class) Object.class))).name("content").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(927332920695499450L).languageId(0x984333adfae8edaaL, 0x8bb1251eeae547abL).build2();
-  public static final SMethod<SNode> row_idNuz63e_bQj = new SMethodBuilder<SNode>(new SJavaCompoundTypeImpl((Class<SNode>) ((Class) Object.class))).name("row").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(927332920695504275L).languageId(0x984333adfae8edaaL, 0x8bb1251eeae547abL).build2();
-  public static final SMethod<Iterable<SNode>> siblings_idNuz63e_d0o = new SMethodBuilder<Iterable<SNode>>(new SJavaCompoundTypeImpl((Class<Iterable<SNode>>) ((Class) Object.class))).name("siblings").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(927332920695509016L).languageId(0x984333adfae8edaaL, 0x8bb1251eeae547abL).build2();
+  public static final SMethod<String> renderReadable_id4Y0vh0cfqjE = new SMethodBuilder<>(String.class).name("renderReadable").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5728716233893586154L).languageId(0xb66a309a6e1a7290L, 0xcfaa4966b7d54b69L).build2();
+  public static final SMethod<Iterable<SNode>> effectiveContents_idNuz63e$fnb = new SMethodBuilder<>((Class<Iterable<SNode>>) ((Class) Object.class)).name("effectiveContents").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(927332920695256523L).languageId(0x984333adfae8edaaL, 0x8bb1251eeae547abL).build2();
+  public static final SMethod<SNode> content_idNuz63e_aEU = new SMethodBuilder<>(SNode.class).name("content").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(927332920695499450L).languageId(0x984333adfae8edaaL, 0x8bb1251eeae547abL).build2();
+  public static final SMethod<SNode> row_idNuz63e_bQj = new SMethodBuilder<>(SNode.class).name("row").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(927332920695504275L).languageId(0x984333adfae8edaaL, 0x8bb1251eeae547abL).build2();
+  public static final SMethod<Iterable<SNode>> siblings_idNuz63e_d0o = new SMethodBuilder<>((Class<Iterable<SNode>>) ((Class) Object.class)).name("siblings").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(927332920695509016L).languageId(0x984333adfae8edaaL, 0x8bb1251eeae547abL).build2();
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(renderReadable_id4Y0vh0cfqjE, effectiveContents_idNuz63e$fnb, content_idNuz63e_aEU, row_idNuz63e_bQj, siblings_idNuz63e_d0o);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(renderReadable_id4Y0vh0cfqjE, effectiveContents_idNuz63e$fnb, content_idNuz63e_aEU, row_idNuz63e_bQj, siblings_idNuz63e_d0o);
 
-  private static void ___init___(@NotNull SNode __thisNode__) {
-  }
 
   /*package*/ static String renderReadable_id4Y0vh0cfqjE(@NotNull SNode __thisNode__) {
     return SConceptOperations.conceptAlias(SNodeOperations.getConcept(__thisNode__));
@@ -69,10 +65,6 @@ public final class SameExpression__BehaviorDescriptor extends BaseBHDescriptor {
   /*package*/ SameExpression__BehaviorDescriptor() {
   }
 
-  @Override
-  protected void initNode(@NotNull SNode node, @NotNull SConstructor constructor, @Nullable Object[] parameters) {
-    ___init___(node);
-  }
 
   @Override
   protected <T> T invokeSpecial0(@NotNull SNode node, @NotNull SMethod<T> method, @Nullable Object[] parameters) {

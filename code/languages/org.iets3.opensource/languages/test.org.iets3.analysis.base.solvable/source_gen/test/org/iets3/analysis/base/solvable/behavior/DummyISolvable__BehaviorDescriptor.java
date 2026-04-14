@@ -8,13 +8,11 @@ import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import org.jetbrains.mps.openapi.model.SNode;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import java.util.List;
 import java.util.Arrays;
 import org.jetbrains.annotations.NotNull;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations;
-import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 import jetbrains.mps.smodel.builder.SNodeBuilder;
@@ -24,12 +22,10 @@ import org.jetbrains.mps.openapi.language.SConcept;
 public final class DummyISolvable__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getConcept(0x5a0fae258093498fL, 0x81fe3b264864819aL, 0x782a6ab7cbd22cbbL, "test.org.iets3.analysis.base.solvable.structure.DummyISolvable");
 
-  public static final SMethod<SNode> createSolverTask_id4pkidg67Lgb = new SMethodBuilder<SNode>(new SJavaCompoundTypeImpl((Class<SNode>) ((Class) Object.class))).name("createSolverTask").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5067755556171617291L).languageId(0x8fed954c202d18beL, 0xdb8bd0353f5141d8L).build2();
+  public static final SMethod<SNode> createSolverTask_id4pkidg67Lgb = new SMethodBuilder<>(SNode.class).name("createSolverTask").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5067755556171617291L).languageId(0x8fed954c202d18beL, 0xdb8bd0353f5141d8L).build2();
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(createSolverTask_id4pkidg67Lgb);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(createSolverTask_id4pkidg67Lgb);
 
-  private static void ___init___(@NotNull SNode __thisNode__) {
-  }
 
   /*package*/ static SNode createSolverTask_id4pkidg67Lgb(@NotNull SNode __thisNode__) {
     return createDummySolverTask_b8htd4_a0a0(SPropertyOperations.getInteger(__thisNode__, PROPS.sleepTime$rMiT));
@@ -38,10 +34,6 @@ public final class DummyISolvable__BehaviorDescriptor extends BaseBHDescriptor {
   /*package*/ DummyISolvable__BehaviorDescriptor() {
   }
 
-  @Override
-  protected void initNode(@NotNull SNode node, @NotNull SConstructor constructor, @Nullable Object[] parameters) {
-    ___init___(node);
-  }
 
   @Override
   protected <T> T invokeSpecial0(@NotNull SNode node, @NotNull SMethod<T> method, @Nullable Object[] parameters) {

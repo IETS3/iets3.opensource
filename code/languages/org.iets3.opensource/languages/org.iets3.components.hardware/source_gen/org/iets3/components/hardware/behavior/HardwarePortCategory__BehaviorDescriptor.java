@@ -7,26 +7,22 @@ import org.jetbrains.mps.openapi.language.SAbstractConcept;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import java.util.List;
 import java.util.Arrays;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.mps.openapi.model.SNode;
-import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 
 public final class HardwarePortCategory__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getConcept(0xc35abfa80db04d42L, 0xbb3ff46112aeb888L, 0x952418520a4a16cL, "org.iets3.components.hardware.structure.HardwarePortCategory");
 
-  public static final SMethod<Boolean> actsAsSourceOfConnector_idmIQkxfpv6p = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("actsAsSourceOfConnector").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(409503520730247577L).languageId(0xb6713d118449c6e7L, 0xf0fd486f857743e9L).build2();
-  public static final SMethod<Boolean> actsAsTargetOfConnector_id1Q0bloV3JFY = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("actsAsTargetOfConnector").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(2125748872500148990L).languageId(0xb6713d118449c6e7L, 0xf0fd486f857743e9L).build2();
+  public static final SMethod<Boolean> actsAsSourceOfConnector_idmIQkxfpv6p = new SMethodBuilder<>(Boolean.TYPE).name("actsAsSourceOfConnector").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(409503520730247577L).languageId(0xb6713d118449c6e7L, 0xf0fd486f857743e9L).build2();
+  public static final SMethod<Boolean> actsAsTargetOfConnector_id1Q0bloV3JFY = new SMethodBuilder<>(Boolean.TYPE).name("actsAsTargetOfConnector").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(2125748872500148990L).languageId(0xb6713d118449c6e7L, 0xf0fd486f857743e9L).build2();
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(actsAsSourceOfConnector_idmIQkxfpv6p, actsAsTargetOfConnector_id1Q0bloV3JFY);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(actsAsSourceOfConnector_idmIQkxfpv6p, actsAsTargetOfConnector_id1Q0bloV3JFY);
 
-  private static void ___init___(@NotNull SNode __thisNode__) {
-  }
 
   /*package*/ static boolean actsAsSourceOfConnector_idmIQkxfpv6p(@NotNull SNode __thisNode__) {
     return true;
@@ -38,10 +34,6 @@ public final class HardwarePortCategory__BehaviorDescriptor extends BaseBHDescri
   /*package*/ HardwarePortCategory__BehaviorDescriptor() {
   }
 
-  @Override
-  protected void initNode(@NotNull SNode node, @NotNull SConstructor constructor, @Nullable Object[] parameters) {
-    ___init___(node);
-  }
 
   @Override
   protected <T> T invokeSpecial0(@NotNull SNode node, @NotNull SMethod<T> method, @Nullable Object[] parameters) {

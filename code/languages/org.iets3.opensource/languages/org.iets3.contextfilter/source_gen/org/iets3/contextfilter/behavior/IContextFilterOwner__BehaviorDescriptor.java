@@ -7,7 +7,6 @@ import org.jetbrains.mps.openapi.language.SAbstractConcept;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import org.jetbrains.mps.openapi.model.SNode;
 import java.util.List;
@@ -18,7 +17,6 @@ import jetbrains.mps.internal.collections.runtime.Sequence;
 import jetbrains.mps.internal.collections.runtime.ListSequence;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations;
-import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 import org.jetbrains.mps.openapi.language.SConcept;
@@ -28,19 +26,17 @@ import org.jetbrains.mps.openapi.language.SProperty;
 public final class IContextFilterOwner__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getInterfaceConcept(0xdcb9d48f1fb64793L, 0x88cff6f4971432a5L, 0x1ebc36697a4d5563L, "org.iets3.contextfilter.structure.IContextFilterOwner");
 
-  public static final SMethod<Boolean> hasContextFilter_id1UWdA_Ujlm9 = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("hasContextFilter").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(2214704943410795913L).languageId(0x88cff6f4971432a5L, 0xdcb9d48f1fb64793L).build2();
-  public static final SMethod<Void> createContextFilter_id1UWdA_UjmdZ = new SMethodBuilder<Void>(new SJavaCompoundTypeImpl(Void.class)).name("createContextFilter").modifiers(12, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(2214704943410799487L).languageId(0x88cff6f4971432a5L, 0xdcb9d48f1fb64793L).build2(SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""));
-  public static final SMethod<Void> updateSelection_idh84Hs_YCIm = new SMethodBuilder<Void>(new SJavaCompoundTypeImpl(Void.class)).name("updateSelection").modifiers(12, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(308517289739324310L).languageId(0x88cff6f4971432a5L, 0xdcb9d48f1fb64793L).build2(SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""), SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""));
-  public static final SMethod<Void> deleteContextFilter_id7ZJLM0fFRC0 = new SMethodBuilder<Void>(new SJavaCompoundTypeImpl(Void.class)).name("deleteContextFilter").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(9218805902766733824L).languageId(0x88cff6f4971432a5L, 0xdcb9d48f1fb64793L).build2();
-  public static final SMethod<Iterable<IFilterContext>> getContexts_id1UWdA_UjmeY = new SMethodBuilder<Iterable<IFilterContext>>(new SJavaCompoundTypeImpl((Class<Iterable<IFilterContext>>) ((Class) Object.class))).name("getContexts").modifiers(12, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(2214704943410799550L).languageId(0x88cff6f4971432a5L, 0xdcb9d48f1fb64793L).build2();
-  public static final SMethod<Iterable<SNode>> getSelectorsOf_id3j0RMEs8iio = new SMethodBuilder<Iterable<SNode>>(new SJavaCompoundTypeImpl((Class<Iterable<SNode>>) ((Class) Object.class))).name("getSelectorsOf").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(3801283459601736856L).languageId(0x88cff6f4971432a5L, 0xdcb9d48f1fb64793L).build2(SMethodBuilder.createJavaParameter((Class<SAbstractConcept>) ((Class) Object.class), ""));
-  public static final SMethod<SNode> getFirstSelectorOf_id3j0RMEs8lUK = new SMethodBuilder<SNode>(new SJavaCompoundTypeImpl((Class<SNode>) ((Class) Object.class))).name("getFirstSelectorOf").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(3801283459601751728L).languageId(0x88cff6f4971432a5L, 0xdcb9d48f1fb64793L).build2(SMethodBuilder.createJavaParameter((Class<SAbstractConcept>) ((Class) Object.class), ""));
-  public static final SMethod<Void> initializeSelectorWithDefaultContext_id58U$_rNsvYw = new SMethodBuilder<Void>(new SJavaCompoundTypeImpl(Void.class)).name("initializeSelectorWithDefaultContext").modifiers(0, AccessPrivileges.PROTECTED).concept(CONCEPT).baseMethodId(5925209161908486048L).languageId(0x88cff6f4971432a5L, 0xdcb9d48f1fb64793L).build2();
+  public static final SMethod<Boolean> hasContextFilter_id1UWdA_Ujlm9 = new SMethodBuilder<>(Boolean.TYPE).name("hasContextFilter").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(2214704943410795913L).languageId(0x88cff6f4971432a5L, 0xdcb9d48f1fb64793L).build2();
+  public static final SMethod<Void> createContextFilter_id1UWdA_UjmdZ = new SMethodBuilder<>(Void.TYPE).name("createContextFilter").modifiers(12, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(2214704943410799487L).languageId(0x88cff6f4971432a5L, 0xdcb9d48f1fb64793L).build2(SMethodBuilder.createJavaParameter(SNode.class, "blueprint"));
+  public static final SMethod<Void> updateSelection_idh84Hs_YCIm = new SMethodBuilder<>(Void.TYPE).name("updateSelection").modifiers(12, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(308517289739324310L).languageId(0x88cff6f4971432a5L, 0xdcb9d48f1fb64793L).build2(SMethodBuilder.createJavaParameter(SNode.class, "origin"), SMethodBuilder.createJavaParameter(SNode.class, "refNode"));
+  public static final SMethod<Void> deleteContextFilter_id7ZJLM0fFRC0 = new SMethodBuilder<>(Void.TYPE).name("deleteContextFilter").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(9218805902766733824L).languageId(0x88cff6f4971432a5L, 0xdcb9d48f1fb64793L).build2();
+  public static final SMethod<Iterable<IFilterContext>> getContexts_id1UWdA_UjmeY = new SMethodBuilder<>((Class<Iterable<IFilterContext>>) ((Class) Object.class)).name("getContexts").modifiers(12, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(2214704943410799550L).languageId(0x88cff6f4971432a5L, 0xdcb9d48f1fb64793L).build2();
+  public static final SMethod<Iterable<SNode>> getSelectorsOf_id3j0RMEs8iio = new SMethodBuilder<>((Class<Iterable<SNode>>) ((Class) Object.class)).name("getSelectorsOf").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(3801283459601736856L).languageId(0x88cff6f4971432a5L, 0xdcb9d48f1fb64793L).build2(SMethodBuilder.createJavaParameter(SAbstractConcept.class, "conc"));
+  public static final SMethod<SNode> getFirstSelectorOf_id3j0RMEs8lUK = new SMethodBuilder<>(SNode.class).name("getFirstSelectorOf").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(3801283459601751728L).languageId(0x88cff6f4971432a5L, 0xdcb9d48f1fb64793L).build2(SMethodBuilder.createJavaParameter(SAbstractConcept.class, "conc"));
+  public static final SMethod<Void> initializeSelectorWithDefaultContext_id58U$_rNsvYw = new SMethodBuilder<>(Void.TYPE).name("initializeSelectorWithDefaultContext").modifiers(0, AccessPrivileges.PROTECTED).concept(CONCEPT).baseMethodId(5925209161908486048L).languageId(0x88cff6f4971432a5L, 0xdcb9d48f1fb64793L).build2();
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(hasContextFilter_id1UWdA_Ujlm9, createContextFilter_id1UWdA_UjmdZ, updateSelection_idh84Hs_YCIm, deleteContextFilter_id7ZJLM0fFRC0, getContexts_id1UWdA_UjmeY, getSelectorsOf_id3j0RMEs8iio, getFirstSelectorOf_id3j0RMEs8lUK, initializeSelectorWithDefaultContext_id58U$_rNsvYw);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(hasContextFilter_id1UWdA_Ujlm9, createContextFilter_id1UWdA_UjmdZ, updateSelection_idh84Hs_YCIm, deleteContextFilter_id7ZJLM0fFRC0, getContexts_id1UWdA_UjmeY, getSelectorsOf_id3j0RMEs8iio, getFirstSelectorOf_id3j0RMEs8lUK, initializeSelectorWithDefaultContext_id58U$_rNsvYw);
 
-  private static void ___init___(@NotNull SNode __thisNode__) {
-  }
 
   /*package*/ static boolean hasContextFilter_id1UWdA_Ujlm9(@NotNull SNode __thisNode__) {
     return (new IAttributeDescriptor.NodeAttribute(CONCEPTS.ContextFilterFrame$9u).get(__thisNode__) != null);
@@ -70,10 +66,6 @@ public final class IContextFilterOwner__BehaviorDescriptor extends BaseBHDescrip
   /*package*/ IContextFilterOwner__BehaviorDescriptor() {
   }
 
-  @Override
-  protected void initNode(@NotNull SNode node, @NotNull SConstructor constructor, @Nullable Object[] parameters) {
-    ___init___(node);
-  }
 
   @Override
   protected <T> T invokeSpecial0(@NotNull SNode node, @NotNull SMethod<T> method, @Nullable Object[] parameters) {

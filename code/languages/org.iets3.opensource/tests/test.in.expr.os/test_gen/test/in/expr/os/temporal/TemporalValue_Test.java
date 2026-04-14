@@ -20,7 +20,7 @@ public class TemporalValue_Test {
   private TemporalValue TT8_null = new TemporalValue();
   @Test
   public void test_testingTemporalValueEquality() throws Exception {
-    Assert.assertEquals("TT1 number of slices", 2, TT1.numberOfSlices());
+    Assert.assertEquals("TT1 number of slices", Integer.valueOf(2), Integer.valueOf(TT1.numberOfSlices()));
     Assert.assertEquals("TemporalValues are the same", TT1, TT1);
     Assert.assertEquals("TemporalValues are equal", TT1, TT2);
     Assert.assertFalse("TemporalValues have different slices size: actual " + TT1.slices() + " expected: " + TT1.slices(), TT1.equals(TT3));
@@ -30,11 +30,11 @@ public class TemporalValue_Test {
   }
   @Test
   public void test_testingTemporalValueHashCode() throws Exception {
-    Assert.assertEquals("Hashcodes of the same TemporalValue", TT1.hashCode(), TT1.hashCode());
-    Assert.assertEquals("Hashcodes of equal TemporalValues", TT1.hashCode(), TT2.hashCode());
+    Assert.assertEquals("Hashcodes of the same TemporalValue", Integer.valueOf(TT1.hashCode()), Integer.valueOf(TT1.hashCode()));
+    Assert.assertEquals("Hashcodes of equal TemporalValues", Integer.valueOf(TT1.hashCode()), Integer.valueOf(TT2.hashCode()));
     Assert.assertFalse("Hashcodes of TemporalValues with different slices size: actual " + TT1.hashCode() + " expected: " + TT1.hashCode(), TT1.hashCode() == TT3.hashCode());
     Assert.assertFalse("Hashcodes of TemporalValues with different slices: actual: " + TT3.hashCode() + " expected: " + TT4.hashCode(), TT3.hashCode() == TT4.hashCode());
-    Assert.assertEquals("Hashcodes of TemporalValues with different slices: actual: " + TT5_null.hashCode() + " expected: " + TT6_null.hashCode(), TT5_null.hashCode(), TT6_null.hashCode());
+    Assert.assertEquals("Hashcodes of TemporalValues with different slices: actual: " + TT5_null.hashCode() + " expected: " + TT6_null.hashCode(), Integer.valueOf(TT5_null.hashCode()), Integer.valueOf(TT6_null.hashCode()));
     Assert.assertFalse("Hashcodes of TemporalValues with different slices: actual: " + TT7_null.hashCode() + " expected: " + TT8_null.hashCode(), TT7_null.equals(TT8_null));
   }
   @BeforeEach

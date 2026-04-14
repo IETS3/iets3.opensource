@@ -27,21 +27,18 @@ import jetbrains.mps.lang.editor.tooltips.runtime.TooltipTimingProperties;
   }
 
   /*package*/ EditorCell createCell() {
-    return createTooltip_1();
+    return createTooltip_0();
   }
 
-  private EditorCell createTooltip_0(final EditorContext editorContext, final SNode node) {
-    LazyTooltipCellEvaluator tooltip = new LazyTooltipCellEvaluator(editorContext, node, "test.iest3.component.attribute.editor.GeneratedHints.tooltipHint_mb9os1_a", true);
+  private EditorCell createTooltip_0() {
+    LazyTooltipCellEvaluator tooltip = new LazyTooltipCellEvaluator(getEditorContext(), myNode, "test.iest3.component.attribute.editor.GeneratedHints.tooltipHint_mb9os1_a", true);
     EditorCell visibleCell = createComponent_0();
 
-    TooltipWrapper editorCell = new TooltipWrapper(editorContext, node, visibleCell, tooltip, TooltipTimingProperties.DEFAULT);
+    TooltipWrapper editorCell = new TooltipWrapper(getEditorContext(), myNode, visibleCell, tooltip, TooltipTimingProperties.DEFAULT);
     editorCell.setCellId("Tooltip_mb9os1_a");
     editorCell.setBig(true);
     setCellContext(editorCell);
     return editorCell;
-  }
-  private EditorCell createTooltip_1() {
-    return createTooltip_0(getEditorContext(), myNode);
   }
   private EditorCell createComponent_0() {
     EditorCell editorCell = getCellFactory().createEditorComponentCell(myNode, "jetbrains.mps.lang.core.editor.alias");

@@ -7,7 +7,6 @@ import org.jetbrains.mps.openapi.language.SAbstractConcept;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import org.jetbrains.mps.openapi.model.SNode;
 import java.util.List;
@@ -20,7 +19,6 @@ import java.util.Objects;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations;
 import jetbrains.mps.internal.collections.runtime.Sequence;
 import org.iets3.core.expr.typetags.units.behavior.ScopingHelper;
-import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 import jetbrains.mps.smodel.builder.SNodeBuilder;
@@ -32,16 +30,14 @@ import org.jetbrains.mps.openapi.language.SProperty;
 public final class QuantitySpecification__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getConcept(0xbe67900743124db1L, 0x9ac0ab7dfbe66a74L, 0x1c3a590e2b8629faL, "org.iets3.core.expr.typetags.units.quantity.structure.QuantitySpecification");
 
-  public static final SMethod<Boolean> canTagExpression_id2Ux6GHgZEiG = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("canTagExpression").modifiers(9, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(3359996257534649516L).languageId(0xa9df73d9e86c27d3L, 0x5186c6ce428c4f09L).build2();
-  public static final SMethod<Boolean> subsumes_id1RcasK0V7Pl = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("subsumes").modifiers(9, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(2147137078514449749L).languageId(0xa9df73d9e86c27d3L, 0x5186c6ce428c4f09L).build2(SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""), SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""));
-  public static final SMethod<String> getName_id76ZhK6XVfon = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("getName").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(8196347919644554775L).languageId(0xa9df73d9e86c27d3L, 0x5186c6ce428c4f09L).build2();
-  public static final SMethod<Iterable<SNode>> getTaggedExpressionScope_id76ZhK6XUPd6 = new SMethodBuilder<Iterable<SNode>>(new SJavaCompoundTypeImpl((Class<Iterable<SNode>>) ((Class) Object.class))).name("getTaggedExpressionScope").modifiers(9, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(8196347919644447558L).languageId(0xa9df73d9e86c27d3L, 0x5186c6ce428c4f09L).build2(SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""));
-  public static final SMethod<SAbstractConcept> getGroupingTagConcept_idx_aN5M65iL = new SMethodBuilder<SAbstractConcept>(new SJavaCompoundTypeImpl((Class<SAbstractConcept>) ((Class) Object.class))).name("getGroupingTagConcept").modifiers(9, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(604937216318788785L).languageId(0xa9df73d9e86c27d3L, 0x5186c6ce428c4f09L).build2();
+  public static final SMethod<Boolean> canTagExpression_id2Ux6GHgZEiG = new SMethodBuilder<>(Boolean.TYPE).name("canTagExpression").modifiers(9, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(3359996257534649516L).languageId(0xa9df73d9e86c27d3L, 0x5186c6ce428c4f09L).build2();
+  public static final SMethod<Boolean> subsumes_id1RcasK0V7Pl = new SMethodBuilder<>(Boolean.TYPE).name("subsumes").modifiers(9, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(2147137078514449749L).languageId(0xa9df73d9e86c27d3L, 0x5186c6ce428c4f09L).build2(SMethodBuilder.createJavaParameter(SNode.class, "sub"), SMethodBuilder.createJavaParameter(SNode.class, "sup"));
+  public static final SMethod<String> getName_id76ZhK6XVfon = new SMethodBuilder<>(String.class).name("getName").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(8196347919644554775L).languageId(0xa9df73d9e86c27d3L, 0x5186c6ce428c4f09L).build2();
+  public static final SMethod<Iterable<SNode>> getTaggedExpressionScope_id76ZhK6XUPd6 = new SMethodBuilder<>((Class<Iterable<SNode>>) ((Class) Object.class)).name("getTaggedExpressionScope").modifiers(9, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(8196347919644447558L).languageId(0xa9df73d9e86c27d3L, 0x5186c6ce428c4f09L).build2(SMethodBuilder.createJavaParameter(SNode.class, "context"));
+  public static final SMethod<SAbstractConcept> getGroupingTagConcept_idx_aN5M65iL = new SMethodBuilder<>(SAbstractConcept.class).name("getGroupingTagConcept").modifiers(9, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(604937216318788785L).languageId(0xa9df73d9e86c27d3L, 0x5186c6ce428c4f09L).build2();
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(canTagExpression_id2Ux6GHgZEiG, subsumes_id1RcasK0V7Pl, getName_id76ZhK6XVfon, getTaggedExpressionScope_id76ZhK6XUPd6, getGroupingTagConcept_idx_aN5M65iL);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(canTagExpression_id2Ux6GHgZEiG, subsumes_id1RcasK0V7Pl, getName_id76ZhK6XVfon, getTaggedExpressionScope_id76ZhK6XUPd6, getGroupingTagConcept_idx_aN5M65iL);
 
-  private static void ___init___(@NotNull SNode __thisNode__) {
-  }
 
   /*package*/ static boolean canTagExpression_id2Ux6GHgZEiG(@NotNull SAbstractConcept __thisConcept__) {
     return true;
@@ -64,10 +60,6 @@ public final class QuantitySpecification__BehaviorDescriptor extends BaseBHDescr
   /*package*/ QuantitySpecification__BehaviorDescriptor() {
   }
 
-  @Override
-  protected void initNode(@NotNull SNode node, @NotNull SConstructor constructor, @Nullable Object[] parameters) {
-    ___init___(node);
-  }
 
   @Override
   protected <T> T invokeSpecial0(@NotNull SNode node, @NotNull SMethod<T> method, @Nullable Object[] parameters) {

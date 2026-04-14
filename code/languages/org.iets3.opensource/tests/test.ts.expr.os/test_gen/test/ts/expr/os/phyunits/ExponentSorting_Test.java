@@ -183,12 +183,12 @@ public class ExponentSorting_Test extends BaseTransformationTest {
     public void test_compareTo() throws Exception {
       initTestNodes();
       runWithinCommand(() -> {
-        Assert.assertEquals(new Fraction(0).compareTo(new Fraction(1)), -1);
-        Assert.assertEquals(new Fraction(0).compareTo(new Fraction(0)), 0);
-        Assert.assertEquals(new Fraction(0).compareTo(new Fraction(-1)), 1);
+        Assert.assertEquals(Integer.valueOf(new Fraction(0).compareTo(new Fraction(1))), Integer.valueOf(-1));
+        Assert.assertEquals(Integer.valueOf(new Fraction(0).compareTo(new Fraction(0))), Integer.valueOf(0));
+        Assert.assertEquals(Integer.valueOf(new Fraction(0).compareTo(new Fraction(-1))), Integer.valueOf(1));
 
-        Assert.assertEquals(new Fraction(1).compareTo(new Fraction(0)), 1);
-        Assert.assertEquals(new Fraction(-1).compareTo(new Fraction(0)), -1);
+        Assert.assertEquals(Integer.valueOf(new Fraction(1).compareTo(new Fraction(0))), Integer.valueOf(1));
+        Assert.assertEquals(Integer.valueOf(new Fraction(-1).compareTo(new Fraction(0))), Integer.valueOf(-1));
 
       });
     }
