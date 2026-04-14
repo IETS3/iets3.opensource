@@ -7,13 +7,19 @@ The project does _not_ follow Semantic Versioning and the changes are documented
 
 ## April 2026
 
-### Fixed
-
-- Variability: After calling intention 'Adopt This Configuration to the Extended Configuration' inherited attributes were set to manual. This bug has been fixed.
+### Added
+- Variability: Added checking rules for missing not-present values of attributes. The following cases have been covered:
+  - default expression of another attribute in feature model
+  - presence condition in artifact
+  - left-hand-side condition in an ITabularVarPoint
 
 ### Changed
 
 - Variability: The automatic execution of solver checking for tabular variation points (eg. feature decision tables) has been switched off. Now the solver check can be executed manually via "Run/Evaluate/Check manually" from the context menu. We will work on improving stability and performance for this feature and plan to reactivate it back later.
+
+### Fixed
+
+- Variability: After calling intention 'Adapt This Configuration to the Extended Configuration' inherited attributes were set to manual. This bug has been fixed.
 
 
 ## March 2026
