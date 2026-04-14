@@ -21,6 +21,7 @@ The project does _not_ follow Semantic Versioning and the changes are documented
 ### Fixed
 
 - Fixed a bug in the `execTestsByInterpreter` task which would result in a wrong JNA path
+- Variability: Newly created feature models will not show a "Property constraint violation" error anymore.
 
 
 ## February 2026
