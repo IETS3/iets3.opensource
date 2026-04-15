@@ -6862,7 +6862,7 @@
     <property role="3DII0k" value="2hh8MJdVwqX/command" />
     <property role="TrG5h" value="TestIdempotency" />
     <node concept="1LZb2c" id="36USfKvlVFS" role="1SL9yI">
-      <property role="TrG5h" value="gg" />
+      <property role="TrG5h" value="mustNotChangeAttributes" />
       <node concept="3cqZAl" id="36USfKvlVFT" role="3clF45" />
       <node concept="3clFbS" id="36USfKvlVFX" role="3clF47">
         <node concept="3clFbF" id="36USfKvm0hj" role="3cqZAp">
@@ -6880,7 +6880,7 @@
       </node>
     </node>
     <node concept="1LZb2c" id="36USfKvrzpM" role="1SL9yI">
-      <property role="TrG5h" value="ggg" />
+      <property role="TrG5h" value="mustNotChangeAttributeSingle" />
       <node concept="3cqZAl" id="36USfKvrzpN" role="3clF45" />
       <node concept="3clFbS" id="36USfKvrzpO" role="3clF47">
         <node concept="3clFbF" id="36USfKvrzpP" role="3cqZAp">
