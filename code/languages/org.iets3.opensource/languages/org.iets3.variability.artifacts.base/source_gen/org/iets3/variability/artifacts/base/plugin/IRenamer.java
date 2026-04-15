@@ -8,6 +8,7 @@ import jetbrains.mps.internal.collections.runtime.Sequence;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
 import java.util.Objects;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations;
+import java.util.Collection;
 import jetbrains.mps.internal.collections.runtime.ListSequence;
 import jetbrains.mps.internal.collections.runtime.IterableUtils;
 import org.apache.commons.lang3.RandomStringUtils;
@@ -45,6 +46,10 @@ public interface IRenamer {
   static boolean hasNameClash(Set<SNode> existingInstances, final SNode newInstance) {
     return Sequence.fromIterable((SNodeOperations.ofConcept(existingInstances, SNodeOperations.asSConcept(SNodeOperations.getConcept(newInstance))))).any((it) -> Objects.equals(SPropertyOperations.getString(it, PROPS.name$MnvL), SPropertyOperations.getString(newInstance, PROPS.name$MnvL)));
   }
+
+  default void renameInstances(Collection<SNode> instancesOfSameComponent) {
+  }
+
 
   /**
    * 

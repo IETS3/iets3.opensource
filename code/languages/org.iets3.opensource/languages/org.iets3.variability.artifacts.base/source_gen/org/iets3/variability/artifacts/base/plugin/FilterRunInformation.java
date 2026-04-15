@@ -12,12 +12,12 @@ import java.util.ArrayList;
 import com.google.common.collect.Lists;
 import java.util.Optional;
 import java.util.Map;
-import org.iets3.variability.artifacts.base.behavior.SkeletonNode;
-import com.google.common.collect.Maps;
 import com.google.common.collect.Multimap;
 import com.google.common.collect.ArrayListMultimap;
-import jetbrains.mps.internal.collections.runtime.MapSequence;
 import jetbrains.mps.internal.collections.runtime.SetSequence;
+import org.iets3.variability.artifacts.base.behavior.SkeletonNode;
+import com.google.common.collect.Maps;
+import jetbrains.mps.internal.collections.runtime.MapSequence;
 import java.util.Collection;
 import jetbrains.mps.internal.collections.runtime.CollectionSequence;
 import java.util.Collections;
@@ -59,6 +59,14 @@ public class FilterRunInformation {
     return this.ie.instanceToOrig();
   }
 
+  public Multimap<SNode, SNode> originalToInstances() {
+    Map<SNode, SNode> instanceToOriginal = this.instanceToOriginal();
+    ArrayListMultimap<SNode, SNode> resultHolder = ArrayListMultimap.<SNode,SNode>create();
+    for (Map.Entry<SNode, SNode> e : SetSequence.fromSet(instanceToOriginal.entrySet())) {
+      resultHolder.put(e.getValue(), e.getKey());
+    }
+    return resultHolder;
+  }
   /**
    * All copied nodes which have been created in instance-cases
    * 
@@ -96,7 +104,7 @@ public class FilterRunInformation {
     /**
      * Maps copies of AST nodes (created during instantiation) to their original node.
      */
-    private Map<SNode, SNode> instanceToOrig = Maps.newHashMap();
+    private Map<SNode, SNode> instanceToOrig = Maps.newLinkedHashMap();
 
     private void add(SkeletonNode skn, Map<SNode, SNode> origToInstance) {
       MapSequence.fromMap(this.origToInstanceEnvironment).putAll(origToInstance);
