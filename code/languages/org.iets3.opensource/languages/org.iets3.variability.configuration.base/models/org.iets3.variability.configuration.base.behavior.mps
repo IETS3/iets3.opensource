@@ -22100,7 +22100,7 @@
                       <ref role="3cqZAo" node="7_2J966vbSO" resolve="extendedFeatureAttributeAssignment" />
                     </node>
                     <node concept="3TrEf2" id="3lB$zWdrHbN" role="2OqNvi">
-                      <ref role="3Tt5mk" to="4ndm:30ECcbtOuaE" />
+                      <ref role="3Tt5mk" to="4ndm:30ECcbtOuaE" resolve="value" />
                     </node>
                   </node>
                 </node>
