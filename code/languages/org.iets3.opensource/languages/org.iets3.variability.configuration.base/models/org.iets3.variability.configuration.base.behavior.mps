@@ -22086,8 +22086,8 @@
                 </node>
               </node>
               <node concept="1Wc70l" id="7_2J966vbTj" role="3clFbw">
-                <node concept="2OqwBi" id="7_2J966vbTk" role="3uHU7w">
-                  <node concept="2OqwBi" id="7_2J966vbTl" role="2Oq$k0">
+                <node concept="17QLQc" id="3lB$zWdrFLE" role="3uHU7w">
+                  <node concept="2OqwBi" id="7_2J966vbTl" role="3uHU7B">
                     <node concept="37vLTw" id="7_2J966vbTm" role="2Oq$k0">
                       <ref role="3cqZAo" node="7_2J966vbSU" resolve="inheritingFeatureAttributeAssignment" />
                     </node>
@@ -22095,7 +22095,14 @@
                       <ref role="3Tt5mk" to="4ndm:30ECcbtOuaE" resolve="value" />
                     </node>
                   </node>
-                  <node concept="3w_OXm" id="7_2J966vbTo" role="2OqNvi" />
+                  <node concept="2OqwBi" id="3lB$zWdrHbL" role="3uHU7w">
+                    <node concept="37vLTw" id="3lB$zWdrHbM" role="2Oq$k0">
+                      <ref role="3cqZAo" node="7_2J966vbSO" resolve="extendedFeatureAttributeAssignment" />
+                    </node>
+                    <node concept="3TrEf2" id="3lB$zWdrHbN" role="2OqNvi">
+                      <ref role="3Tt5mk" to="4ndm:30ECcbtOuaE" />
+                    </node>
+                  </node>
                 </node>
                 <node concept="2OqwBi" id="7_2J966vbTp" role="3uHU7B">
                   <node concept="2OqwBi" id="7_2J966vbTq" role="2Oq$k0">
