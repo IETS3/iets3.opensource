@@ -384,29 +384,29 @@
   <root nodeRef="r:67b8c8a1-c2c2-4db8-bb17-956b347d6975(test.org.iets3.variability.configuration.base.inheritance@tests)/3583423826988754593">
     <file name="TestIdempotency_Test.java">
       <node id="3583423826988754593" at="19,33,20,60" concept="11" />
-      <node id="3583423826988874488" at="24,42,25,33" concept="2" />
-      <node id="3583423826990347890" at="28,43,29,34" concept="2" />
+      <node id="3583423826988874488" at="24,63,25,54" concept="2" />
+      <node id="3583423826990347890" at="28,68,29,59" concept="2" />
       <node id="3583423826988754593" at="34,52,35,19" concept="11" />
       <node id="3583423826988754593" at="39,36,40,46" concept="2" />
-      <node id="3583423826988874488" at="43,44,44,22" concept="2" />
+      <node id="3583423826988874488" at="43,65,44,22" concept="2" />
       <node id="3583423826988874488" at="44,22,45,146" concept="2" />
-      <node id="3583423826990347890" at="47,45,48,22" concept="2" />
+      <node id="3583423826990347890" at="47,70,48,22" concept="2" />
       <node id="3583423826990347890" at="48,22,49,148" concept="2" />
       <node id="3583423826988754593" at="16,0,18,0" concept="9" trace="ourParametersCacheExtension" />
       <node id="3583423826988754593" at="19,0,22,0" concept="1" trace="TestIdempotency_Test#()V" />
       <node id="3583423826988754593" at="34,0,37,0" concept="1" trace="TestBody#(Ljetbrains/mps/lang/test/runtime/TransformationTest;)V" />
-      <node id="3583423826988874488" at="23,0,27,0" concept="4" trace="test_gg#()V" />
-      <node id="3583423826990347890" at="27,0,31,0" concept="4" trace="test_ggg#()V" />
+      <node id="3583423826988874488" at="23,0,27,0" concept="4" trace="test_mustNotChangeAttributes#()V" />
+      <node id="3583423826990347890" at="27,0,31,0" concept="4" trace="test_mustNotChangeAttributeSingle#()V" />
       <node id="3583423826988754593" at="38,0,42,0" concept="4" trace="initTestNodes#()V" />
-      <node id="3583423826988874488" at="43,0,47,0" concept="4" trace="test_gg#()V" />
-      <node id="3583423826990347890" at="47,0,51,0" concept="4" trace="test_ggg#()V" />
+      <node id="3583423826988874488" at="43,0,47,0" concept="4" trace="test_mustNotChangeAttributes#()V" />
+      <node id="3583423826990347890" at="47,0,51,0" concept="4" trace="test_mustNotChangeAttributeSingle#()V" />
       <scope id="3583423826988754593" at="19,33,20,60" />
-      <scope id="3583423826988874488" at="24,42,25,33" />
-      <scope id="3583423826990347890" at="28,43,29,34" />
+      <scope id="3583423826988874488" at="24,63,25,54" />
+      <scope id="3583423826990347890" at="28,68,29,59" />
       <scope id="3583423826988754593" at="34,52,35,19" />
       <scope id="3583423826988754593" at="39,36,40,46" />
-      <scope id="3583423826988874488" at="43,44,45,146" />
-      <scope id="3583423826990347890" at="47,45,49,148" />
+      <scope id="3583423826988874488" at="43,65,45,146" />
+      <scope id="3583423826990347890" at="47,70,49,148" />
       <scope id="3583423826988754593" at="19,0,22,0" />
       <scope id="3583423826988754593" at="34,0,37,0">
         <var name="owner" id="3583423826988754593" />

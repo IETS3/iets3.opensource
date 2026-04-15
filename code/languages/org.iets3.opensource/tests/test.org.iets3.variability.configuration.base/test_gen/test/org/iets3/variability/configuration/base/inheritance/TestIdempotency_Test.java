@@ -21,12 +21,12 @@ public class TestIdempotency_Test extends BaseTransformationTest {
   }
 
   @Test
-  public void test_gg() throws Throwable {
-    new TestBody(this).test_gg();
+  public void test_mustNotChangeAttributes() throws Throwable {
+    new TestBody(this).test_mustNotChangeAttributes();
   }
   @Test
-  public void test_ggg() throws Throwable {
-    new TestBody(this).test_ggg();
+  public void test_mustNotChangeAttributeSingle() throws Throwable {
+    new TestBody(this).test_mustNotChangeAttributeSingle();
   }
 
   /*package*/ static class TestBody extends BaseTestBody {
@@ -40,11 +40,11 @@ public class TestIdempotency_Test extends BaseTransformationTest {
       prepareTestNodes("3583423826988754792");
     }
 
-    public void test_gg() throws Exception {
+    public void test_mustNotChangeAttributes() throws Exception {
       initTestNodes();
       runWithinCommand(() -> InheritanceTestUtil.adaptToConfigTraversingTopDownAndCheck(getAnnotatedNode("given"), getAnnotatedNode("expected")));
     }
-    public void test_ggg() throws Exception {
+    public void test_mustNotChangeAttributeSingle() throws Exception {
       initTestNodes();
       runWithinCommand(() -> InheritanceTestUtil.adaptToConfigTraversingTopDownAndCheck(getAnnotatedNode("given2"), getAnnotatedNode("expected2")));
     }
