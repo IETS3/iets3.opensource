@@ -12710,33 +12710,6 @@
             </node>
           </node>
         </node>
-        <node concept="3cpWs8" id="QTuVAId$Q" role="3cqZAp">
-          <node concept="3cpWsn" id="QTuVAId$R" role="3cpWs9">
-            <property role="TrG5h" value="multiMapView" />
-            <node concept="3uibUv" id="QTuVAI2kP" role="1tU5fm">
-              <ref role="3uigEE" to="3o3z:~SetMultimap" resolve="SetMultimap" />
-              <node concept="3uibUv" id="QTuVAI2kU" role="11_B2D">
-                <ref role="3uigEE" to="mhbf:~SNode" resolve="SNode" />
-              </node>
-              <node concept="3uibUv" id="QTuVAI2kV" role="11_B2D">
-                <ref role="3uigEE" to="mhbf:~SNode" resolve="SNode" />
-              </node>
-            </node>
-            <node concept="2YIFZM" id="QTuVAId$S" role="33vP2m">
-              <ref role="37wK5l" to="3o3z:~Multimaps.forMap(java.util.Map)" resolve="forMap" />
-              <ref role="1Pybhc" to="3o3z:~Multimaps" resolve="Multimaps" />
-              <node concept="37vLTw" id="QTuVAId$T" role="37wK5m">
-                <ref role="3cqZAo" node="QTuVAM0C8" resolve="instanceToOriginal" />
-              </node>
-              <node concept="3uibUv" id="QTuVAId$U" role="3PaCim">
-                <ref role="3uigEE" to="mhbf:~SNode" resolve="SNode" />
-              </node>
-              <node concept="3uibUv" id="QTuVAId$V" role="3PaCim">
-                <ref role="3uigEE" to="mhbf:~SNode" resolve="SNode" />
-              </node>
-            </node>
-          </node>
-        </node>
         <node concept="3cpWs8" id="QTuVAIsz_" role="3cqZAp">
           <node concept="3cpWsn" id="QTuVAIszA" role="3cpWs9">
             <property role="TrG5h" value="resultHolder" />
@@ -12761,16 +12734,50 @@
             </node>
           </node>
         </node>
-        <node concept="3clFbF" id="QTuVAMmYb" role="3cqZAp">
-          <node concept="2YIFZM" id="QTuVANdLR" role="3clFbG">
-            <ref role="37wK5l" to="3o3z:~Multimaps.invertFrom(com.google.common.collect.Multimap,com.google.common.collect.Multimap)" resolve="invertFrom" />
-            <ref role="1Pybhc" to="3o3z:~Multimaps" resolve="Multimaps" />
-            <node concept="37vLTw" id="QTuVANdLS" role="37wK5m">
-              <ref role="3cqZAo" node="QTuVAId$R" resolve="multiMapView" />
+        <node concept="2Gpval" id="76WmTJ1BruO" role="3cqZAp">
+          <node concept="2GrKxI" id="76WmTJ1BruQ" role="2Gsz3X">
+            <property role="TrG5h" value="e" />
+          </node>
+          <node concept="2OqwBi" id="76WmTJ1B$U1" role="2GsD0m">
+            <node concept="37vLTw" id="76WmTJ1Bxxt" role="2Oq$k0">
+              <ref role="3cqZAo" node="QTuVAM0C8" resolve="instanceToOriginal" />
             </node>
-            <node concept="37vLTw" id="QTuVANdLT" role="37wK5m">
-              <ref role="3cqZAo" node="QTuVAIszA" resolve="resultHolder" />
+            <node concept="liA8E" id="76WmTJ1BDDY" role="2OqNvi">
+              <ref role="37wK5l" to="33ny:~Map.entrySet()" resolve="entrySet" />
             </node>
+          </node>
+          <node concept="3clFbS" id="76WmTJ1BruU" role="2LFqv$">
+            <node concept="3clFbF" id="76WmTJ1BGmq" role="3cqZAp">
+              <node concept="2OqwBi" id="76WmTJ1BLze" role="3clFbG">
+                <node concept="37vLTw" id="76WmTJ1BGmp" role="2Oq$k0">
+                  <ref role="3cqZAo" node="QTuVAIszA" resolve="resultHolder" />
+                </node>
+                <node concept="liA8E" id="76WmTJ1BSjO" role="2OqNvi">
+                  <ref role="37wK5l" to="3o3z:~AbstractListMultimap.put(java.lang.Object,java.lang.Object)" resolve="put" />
+                  <node concept="2OqwBi" id="76WmTJ1BYuw" role="37wK5m">
+                    <node concept="2GrUjf" id="76WmTJ1BW40" role="2Oq$k0">
+                      <ref role="2Gs0qQ" node="76WmTJ1BruQ" resolve="e" />
+                    </node>
+                    <node concept="liA8E" id="76WmTJ1C3ig" role="2OqNvi">
+                      <ref role="37wK5l" to="33ny:~Map$Entry.getValue()" resolve="getValue" />
+                    </node>
+                  </node>
+                  <node concept="2OqwBi" id="76WmTJ1CcIX" role="37wK5m">
+                    <node concept="2GrUjf" id="76WmTJ1CazN" role="2Oq$k0">
+                      <ref role="2Gs0qQ" node="76WmTJ1BruQ" resolve="e" />
+                    </node>
+                    <node concept="liA8E" id="76WmTJ1Che4" role="2OqNvi">
+                      <ref role="37wK5l" to="33ny:~Map$Entry.getKey()" resolve="getKey" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="76WmTJ1CoJ0" role="3cqZAp">
+          <node concept="37vLTw" id="76WmTJ1CoIY" role="3clFbG">
+            <ref role="3cqZAo" node="QTuVAIszA" resolve="resultHolder" />
           </node>
         </node>
       </node>
@@ -12953,8 +12960,8 @@
           <node concept="3Tqbb2" id="Sut9gz84BC" role="3rvQeY" />
           <node concept="3Tqbb2" id="Sut9gz855n" role="3rvSg0" />
         </node>
-        <node concept="2YIFZM" id="Sut9gz89Bj" role="33vP2m">
-          <ref role="37wK5l" to="3o3z:~Maps.newHashMap()" resolve="newHashMap" />
+        <node concept="2YIFZM" id="76WmTJ1BfIy" role="33vP2m">
+          <ref role="37wK5l" to="3o3z:~Maps.newLinkedHashMap()" resolve="newLinkedHashMap" />
           <ref role="1Pybhc" to="3o3z:~Maps" resolve="Maps" />
         </node>
         <node concept="z59LJ" id="Sut9gzep86" role="lGtFl">
@@ -17574,51 +17581,6 @@
                     <ref role="3cqZAo" node="QTuVB6WF2" resolve="collection" />
                   </node>
                   <node concept="ANE8D" id="QTuVB7pnH" role="2OqNvi" />
-                </node>
-              </node>
-            </node>
-            <node concept="3clFbF" id="2s6842pMfEU" role="3cqZAp">
-              <node concept="37vLTI" id="2s6842pMj3I" role="3clFbG">
-                <node concept="2OqwBi" id="2s6842pMRc8" role="37vLTx">
-                  <node concept="2OqwBi" id="2s6842pMrd5" role="2Oq$k0">
-                    <node concept="37vLTw" id="2s6842pMmzA" role="2Oq$k0">
-                      <ref role="3cqZAo" node="QTuVB7pnE" resolve="list" />
-                    </node>
-                    <node concept="2S7cBI" id="2s6842pMDp_" role="2OqNvi">
-                      <node concept="1nlBCl" id="2s6842pMDpB" role="2S7zOq">
-                        <property role="3clFbU" value="true" />
-                      </node>
-                      <node concept="1bVj0M" id="2s6842pMDpC" role="23t8la">
-                        <node concept="3clFbS" id="2s6842pMDpD" role="1bW5cS">
-                          <node concept="3clFbF" id="2s6842pMGQn" role="3cqZAp">
-                            <node concept="2OqwBi" id="2s6842pNcaM" role="3clFbG">
-                              <node concept="2OqwBi" id="2s6842pN3Vm" role="2Oq$k0">
-                                <node concept="2JrnkZ" id="2s6842pN0SO" role="2Oq$k0">
-                                  <node concept="37vLTw" id="2s6842pMGQm" role="2JrQYb">
-                                    <ref role="3cqZAo" node="2s6842pMDpE" resolve="it" />
-                                  </node>
-                                </node>
-                                <node concept="liA8E" id="2s6842pN9LC" role="2OqNvi">
-                                  <ref role="37wK5l" to="mhbf:~SNode.getNodeId()" resolve="getNodeId" />
-                                </node>
-                              </node>
-                              <node concept="liA8E" id="2s6842pNhzq" role="2OqNvi">
-                                <ref role="37wK5l" to="wyt6:~Object.hashCode()" resolve="hashCode" />
-                              </node>
-                            </node>
-                          </node>
-                        </node>
-                        <node concept="gl6BB" id="2s6842pMDpE" role="1bW2Oz">
-                          <property role="TrG5h" value="it" />
-                          <node concept="2jxLKc" id="2s6842pMDpF" role="1tU5fm" />
-                        </node>
-                      </node>
-                    </node>
-                  </node>
-                  <node concept="ANE8D" id="2s6842pMVOi" role="2OqNvi" />
-                </node>
-                <node concept="37vLTw" id="2s6842pMfES" role="37vLTJ">
-                  <ref role="3cqZAo" node="QTuVB7pnE" resolve="list" />
                 </node>
               </node>
             </node>
