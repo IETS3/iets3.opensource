@@ -252,7 +252,7 @@ public class FeatureModelConfigurationInheritanceUtil {
       SNode extendedFeatureAttributeAssignment = paired.getRight();
       SNode inheritingFeatureAttributeAssignment = paired.getLeft();
 
-      if ((SLinkOperations.getTarget(extendedFeatureAttributeAssignment, LINKS.value$kgDc) != null) && (SLinkOperations.getTarget(inheritingFeatureAttributeAssignment, LINKS.value$kgDc) == null)) {
+      if ((SLinkOperations.getTarget(extendedFeatureAttributeAssignment, LINKS.value$kgDc) != null) && !(Objects.equals(SLinkOperations.getTarget(inheritingFeatureAttributeAssignment, LINKS.value$kgDc), SLinkOperations.getTarget(extendedFeatureAttributeAssignment, LINKS.value$kgDc)))) {
         SLinkOperations.setTarget(inheritingFeatureAttributeAssignment, LINKS.value$kgDc, SNodeOperations.copyNode(SLinkOperations.getTarget(extendedFeatureAttributeAssignment, LINKS.value$kgDc)));
         SPropertyOperations.assign(inheritingFeatureAttributeAssignment, PROPS.inherited$oyCC, true);
       } else {

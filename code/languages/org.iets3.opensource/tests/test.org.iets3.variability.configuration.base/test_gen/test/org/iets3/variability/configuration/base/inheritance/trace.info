@@ -420,6 +420,36 @@
       <unit id="3583423826988754593" at="14,0,54,0" name="test.org.iets3.variability.configuration.base.inheritance.TestIdempotency_Test" />
     </file>
   </root>
+  <root nodeRef="r:67b8c8a1-c2c2-4db8-bb17-956b347d6975(test.org.iets3.variability.configuration.base.inheritance@tests)/3848205206118948413">
+    <file name="MustAdaptToChangedInheritedValue_Test.java">
+      <node id="3848205206118948413" at="19,50,20,60" concept="11" />
+      <node id="3848205206119156551" at="24,77,25,68" concept="2" />
+      <node id="3848205206118948413" at="30,52,31,19" concept="11" />
+      <node id="3848205206118948413" at="35,36,36,46" concept="2" />
+      <node id="3848205206119156551" at="39,79,40,22" concept="2" />
+      <node id="3848205206119156551" at="40,22,41,146" concept="2" />
+      <node id="3848205206118948413" at="16,0,18,0" concept="9" trace="ourParametersCacheExtension" />
+      <node id="3848205206118948413" at="19,0,22,0" concept="1" trace="MustAdaptToChangedInheritedValue_Test#()V" />
+      <node id="3848205206118948413" at="30,0,33,0" concept="1" trace="TestBody#(Ljetbrains/mps/lang/test/runtime/TransformationTest;)V" />
+      <node id="3848205206119156551" at="23,0,27,0" concept="4" trace="test_mustAdopToChangesOfInheritedAttribute#()V" />
+      <node id="3848205206118948413" at="34,0,38,0" concept="4" trace="initTestNodes#()V" />
+      <node id="3848205206119156551" at="39,0,43,0" concept="4" trace="test_mustAdopToChangesOfInheritedAttribute#()V" />
+      <scope id="3848205206118948413" at="19,50,20,60" />
+      <scope id="3848205206119156551" at="24,77,25,68" />
+      <scope id="3848205206118948413" at="30,52,31,19" />
+      <scope id="3848205206118948413" at="35,36,36,46" />
+      <scope id="3848205206119156551" at="39,79,41,146" />
+      <scope id="3848205206118948413" at="19,0,22,0" />
+      <scope id="3848205206118948413" at="30,0,33,0">
+        <var name="owner" id="3848205206118948413" />
+      </scope>
+      <scope id="3848205206119156551" at="23,0,27,0" />
+      <scope id="3848205206118948413" at="34,0,38,0" />
+      <scope id="3848205206119156551" at="39,0,43,0" />
+      <unit id="3848205206118948413" at="28,0,45,0" name="test.org.iets3.variability.configuration.base.inheritance.MustAdaptToChangedInheritedValue_Test$TestBody" />
+      <unit id="3848205206118948413" at="14,0,46,0" name="test.org.iets3.variability.configuration.base.inheritance.MustAdaptToChangedInheritedValue_Test" />
+    </file>
+  </root>
   <root nodeRef="r:67b8c8a1-c2c2-4db8-bb17-956b347d6975(test.org.iets3.variability.configuration.base.inheritance@tests)/4863260546552253877">
     <file name="AttributesInInheritance_Test.java">
       <node id="4863260546552253877" at="24,41,25,60" concept="11" />
