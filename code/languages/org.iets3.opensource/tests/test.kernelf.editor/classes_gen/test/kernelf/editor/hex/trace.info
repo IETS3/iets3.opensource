@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<debug-info version="2">
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123140:jetbrains.mps.baseLanguage.structure.ConstructorDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123155:jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123165:jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242864:jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242878:jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1070462154015:jetbrains.mps.baseLanguage.structure.StaticFieldDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1081236700938:jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1070475587102:jetbrains.mps.baseLanguage.structure.SuperConstructorInvocation" />
+  <root nodeRef="r:6f6268c7-a3c6-45ec-96e3-0cf14e1e0fe9(test.kernelf.editor.hex@tests)/2052872502397759178">
+    <file name="HexEnablingMapperForTesting.java">
+      <node id="2052872502397765542" at="14,44,15,16" concept="4" />
+      <node id="2052872502397773849" at="18,31,19,67" concept="1" />
+      <node id="2052872502398062219" at="22,32,23,26" concept="1" />
+      <node id="2052872502398058348" at="18,0,21,0" concept="6" trace="enable#()V" />
+      <node id="2052872502398060953" at="22,0,25,0" concept="6" trace="disable#()V" />
+      <node id="2052872502397764269" at="13,0,17,0" concept="2" trace="allowHexadecimalNumbers#()Z" />
+      <scope id="2052872502397764276" at="14,44,15,16" />
+      <scope id="2052872502398058351" at="18,31,19,67" />
+      <scope id="2052872502398060956" at="22,32,23,26" />
+      <scope id="2052872502398058348" at="18,0,21,0" />
+      <scope id="2052872502398060953" at="22,0,25,0" />
+      <scope id="2052872502397764269" at="13,0,17,0" />
+      <unit id="2052872502397759178" at="11,0,27,0" name="test.kernelf.editor.hex.HexEnablingMapperForTesting" />
+    </file>
+  </root>
+  <root nodeRef="r:6f6268c7-a3c6-45ec-96e3-0cf14e1e0fe9(test.kernelf.editor.hex@tests)/2052872502398065398">
+    <file name="LiteralTyping0x1234_Test.java">
+      <node id="2052872502398065398" at="29,37,30,60" concept="7" />
+      <node id="2052872502398065398" at="34,59,35,36" concept="1" />
+      <node id="2052872502398065398" at="40,52,41,19" concept="7" />
+      <node id="2052872502398065398" at="45,51,46,72" concept="1" />
+      <node id="2052872502398065409" at="46,72,47,27" concept="1" />
+      <node id="2052872502398240898" at="47,27,48,242" concept="3" />
+      <node id="2052872502398214263" at="48,242,49,41" concept="1" />
+      <node id="2052872502398065402" at="53,36,54,41" concept="1" />
+      <node id="2052872502398065406" at="58,35,59,42" concept="1" />
+      <node id="2052872502398065398" at="63,0,64,0" concept="5" trace="expr$CW3E" />
+      <node id="2052872502398065398" at="67,0,68,0" concept="5" trace="NumberLiteral$wE" />
+      <node id="2052872502398065398" at="71,0,72,0" concept="5" trace="value$iWTK" />
+      <node id="2052872502398065398" at="26,0,28,0" concept="5" trace="ourParametersCacheExtension" />
+      <node id="2052872502398065398" at="29,0,32,0" concept="0" trace="LiteralTyping0x1234_Test#()V" />
+      <node id="2052872502398065398" at="40,0,43,0" concept="0" trace="TestBody#(Ljetbrains/mps/lang/test/runtime/TransformationTest;)V" />
+      <node id="2052872502398065398" at="33,0,37,0" concept="2" trace="test_LiteralTyping0x1234#()V" />
+      <node id="2052872502398065399" at="52,0,56,0" concept="6" trace="beforeTests#()V" />
+      <node id="2052872502398065399" at="57,0,61,0" concept="6" trace="afterTests#()V" />
+      <node id="2052872502398065398" at="44,0,51,0" concept="2" trace="testMethodImpl#()V" />
+      <scope id="2052872502398065398" at="29,37,30,60" />
+      <scope id="2052872502398065398" at="34,59,35,36" />
+      <scope id="2052872502398065398" at="40,52,41,19" />
+      <scope id="2052872502398065399" at="53,36,54,41" />
+      <scope id="2052872502398065399" at="58,35,59,42" />
+      <scope id="2052872502398065398" at="29,0,32,0" />
+      <scope id="2052872502398065398" at="40,0,43,0">
+        <var name="owner" id="2052872502398065398" />
+      </scope>
+      <scope id="2052872502398065398" at="33,0,37,0" />
+      <scope id="2052872502398065398" at="45,51,49,41">
+        <var name="value" id="2052872502398240899" />
+      </scope>
+      <scope id="2052872502398065399" at="52,0,56,0" />
+      <scope id="2052872502398065399" at="57,0,61,0" />
+      <scope id="2052872502398065398" at="44,0,51,0" />
+      <unit id="2052872502398065398" at="62,0,65,0" name="test.kernelf.editor.hex.LiteralTyping0x1234_Test$LINKS" />
+      <unit id="2052872502398065398" at="66,0,69,0" name="test.kernelf.editor.hex.LiteralTyping0x1234_Test$CONCEPTS" />
+      <unit id="2052872502398065398" at="70,0,73,0" name="test.kernelf.editor.hex.LiteralTyping0x1234_Test$PROPS" />
+      <unit id="2052872502398065398" at="38,0,52,0" name="test.kernelf.editor.hex.LiteralTyping0x1234_Test$TestBody" />
+      <unit id="2052872502398065398" at="24,0,74,0" name="test.kernelf.editor.hex.LiteralTyping0x1234_Test" />
+    </file>
+  </root>
+  <root nodeRef="r:6f6268c7-a3c6-45ec-96e3-0cf14e1e0fe9(test.kernelf.editor.hex@tests)/268290533307178361">
+    <file name="NumberRangeMinDecimal_Test.java">
+      <node id="268290533307178361" at="19,39,20,60" concept="7" />
+      <node id="268290533307178361" at="24,61,25,36" concept="1" />
+      <node id="268290533307178361" at="30,52,31,19" concept="7" />
+      <node id="268290533307178361" at="35,51,36,72" concept="1" />
+      <node id="268290533307178372" at="36,72,37,24" concept="1" />
+      <node id="268290533307178361" at="16,0,18,0" concept="5" trace="ourParametersCacheExtension" />
+      <node id="268290533307178361" at="19,0,22,0" concept="0" trace="NumberRangeMinDecimal_Test#()V" />
+      <node id="268290533307178361" at="30,0,33,0" concept="0" trace="TestBody#(Ljetbrains/mps/lang/test/runtime/TransformationTest;)V" />
+      <node id="268290533307178361" at="23,0,27,0" concept="2" trace="test_NumberRangeMinDecimal#()V" />
+      <node id="268290533307178361" at="34,0,39,0" concept="2" trace="testMethodImpl#()V" />
+      <scope id="268290533307178361" at="19,39,20,60" />
+      <scope id="268290533307178361" at="24,61,25,36" />
+      <scope id="268290533307178361" at="30,52,31,19" />
+      <scope id="268290533307178361" at="35,51,37,24" />
+      <scope id="268290533307178361" at="19,0,22,0" />
+      <scope id="268290533307178361" at="30,0,33,0">
+        <var name="owner" id="268290533307178361" />
+      </scope>
+      <scope id="268290533307178361" at="23,0,27,0" />
+      <scope id="268290533307178361" at="34,0,39,0" />
+      <unit id="268290533307178361" at="28,0,40,0" name="test.kernelf.editor.hex.NumberRangeMinDecimal_Test$TestBody" />
+      <unit id="268290533307178361" at="14,0,41,0" name="test.kernelf.editor.hex.NumberRangeMinDecimal_Test" />
+    </file>
+  </root>
+  <root nodeRef="r:6f6268c7-a3c6-45ec-96e3-0cf14e1e0fe9(test.kernelf.editor.hex@tests)/2719143324311213436">
+    <file name="CollectionSizeMinDecimal_Test.java">
+      <node id="2719143324311213436" at="19,42,20,60" concept="7" />
+      <node id="2719143324311213436" at="24,64,25,36" concept="1" />
+      <node id="2719143324311213436" at="30,52,31,19" concept="7" />
+      <node id="2719143324311213436" at="35,51,36,72" concept="1" />
+      <node id="2719143324311213438" at="36,72,37,24" concept="1" />
+      <node id="2719143324311213436" at="16,0,18,0" concept="5" trace="ourParametersCacheExtension" />
+      <node id="2719143324311213436" at="19,0,22,0" concept="0" trace="CollectionSizeMinDecimal_Test#()V" />
+      <node id="2719143324311213436" at="30,0,33,0" concept="0" trace="TestBody#(Ljetbrains/mps/lang/test/runtime/TransformationTest;)V" />
+      <node id="2719143324311213436" at="23,0,27,0" concept="2" trace="test_CollectionSizeMinDecimal#()V" />
+      <node id="2719143324311213436" at="34,0,39,0" concept="2" trace="testMethodImpl#()V" />
+      <scope id="2719143324311213436" at="19,42,20,60" />
+      <scope id="2719143324311213436" at="24,64,25,36" />
+      <scope id="2719143324311213436" at="30,52,31,19" />
+      <scope id="2719143324311213436" at="35,51,37,24" />
+      <scope id="2719143324311213436" at="19,0,22,0" />
+      <scope id="2719143324311213436" at="30,0,33,0">
+        <var name="owner" id="2719143324311213436" />
+      </scope>
+      <scope id="2719143324311213436" at="23,0,27,0" />
+      <scope id="2719143324311213436" at="34,0,39,0" />
+      <unit id="2719143324311213436" at="28,0,40,0" name="test.kernelf.editor.hex.CollectionSizeMinDecimal_Test$TestBody" />
+      <unit id="2719143324311213436" at="14,0,41,0" name="test.kernelf.editor.hex.CollectionSizeMinDecimal_Test" />
+    </file>
+  </root>
+  <root nodeRef="r:6f6268c7-a3c6-45ec-96e3-0cf14e1e0fe9(test.kernelf.editor.hex@tests)/2719143324311213450">
+    <file name="CollectionSizeMinHex_Test.java">
+      <node id="2719143324311213450" at="25,38,26,60" concept="7" />
+      <node id="2719143324311213450" at="30,60,31,36" concept="1" />
+      <node id="2719143324311213450" at="36,52,37,19" concept="7" />
+      <node id="2719143324311213450" at="41,51,42,72" concept="1" />
+      <node id="2719143324311213461" at="42,72,43,27" concept="1" />
+      <node id="2719143324311213462" at="43,27,44,145" concept="3" />
+      <node id="2719143324311213476" at="44,145,45,41" concept="1" />
+      <node id="2719143324311213454" at="49,36,50,41" concept="1" />
+      <node id="2719143324311213458" at="54,35,55,42" concept="1" />
+      <node id="2719143324311213450" at="59,0,60,0" concept="5" trace="min$H3xo" />
+      <node id="2719143324311213450" at="22,0,24,0" concept="5" trace="ourParametersCacheExtension" />
+      <node id="2719143324311213450" at="25,0,28,0" concept="0" trace="CollectionSizeMinHex_Test#()V" />
+      <node id="2719143324311213450" at="36,0,39,0" concept="0" trace="TestBody#(Ljetbrains/mps/lang/test/runtime/TransformationTest;)V" />
+      <node id="2719143324311213450" at="29,0,33,0" concept="2" trace="test_CollectionSizeMinHex#()V" />
+      <node id="2719143324311213451" at="48,0,52,0" concept="6" trace="beforeTests#()V" />
+      <node id="2719143324311213451" at="53,0,57,0" concept="6" trace="afterTests#()V" />
+      <node id="2719143324311213450" at="40,0,47,0" concept="2" trace="testMethodImpl#()V" />
+      <scope id="2719143324311213450" at="25,38,26,60" />
+      <scope id="2719143324311213450" at="30,60,31,36" />
+      <scope id="2719143324311213450" at="36,52,37,19" />
+      <scope id="2719143324311213451" at="49,36,50,41" />
+      <scope id="2719143324311213451" at="54,35,55,42" />
+      <scope id="2719143324311213450" at="25,0,28,0" />
+      <scope id="2719143324311213450" at="36,0,39,0">
+        <var name="owner" id="2719143324311213450" />
+      </scope>
+      <scope id="2719143324311213450" at="29,0,33,0" />
+      <scope id="2719143324311213450" at="41,51,45,41">
+        <var name="value" id="2719143324311213463" />
+      </scope>
+      <scope id="2719143324311213451" at="48,0,52,0" />
+      <scope id="2719143324311213451" at="53,0,57,0" />
+      <scope id="2719143324311213450" at="40,0,47,0" />
+      <unit id="2719143324311213450" at="58,0,61,0" name="test.kernelf.editor.hex.CollectionSizeMinHex_Test$PROPS" />
+      <unit id="2719143324311213450" at="34,0,48,0" name="test.kernelf.editor.hex.CollectionSizeMinHex_Test$TestBody" />
+      <unit id="2719143324311213450" at="20,0,62,0" name="test.kernelf.editor.hex.CollectionSizeMinHex_Test" />
+    </file>
+  </root>
+  <root nodeRef="r:6f6268c7-a3c6-45ec-96e3-0cf14e1e0fe9(test.kernelf.editor.hex@tests)/3929896078287639676">
+    <file name="LiteralTyping0xWhenNoHexSupport_Test.java">
+      <node id="3929896078287639676" at="19,49,20,60" concept="7" />
+      <node id="3929896078287639676" at="24,71,25,36" concept="1" />
+      <node id="3929896078287639676" at="30,52,31,19" concept="7" />
+      <node id="3929896078287639676" at="35,51,36,72" concept="1" />
+      <node id="3929896078287639687" at="36,72,37,23" concept="1" />
+      <node id="3929896078287639676" at="16,0,18,0" concept="5" trace="ourParametersCacheExtension" />
+      <node id="3929896078287639676" at="19,0,22,0" concept="0" trace="LiteralTyping0xWhenNoHexSupport_Test#()V" />
+      <node id="3929896078287639676" at="30,0,33,0" concept="0" trace="TestBody#(Ljetbrains/mps/lang/test/runtime/TransformationTest;)V" />
+      <node id="3929896078287639676" at="23,0,27,0" concept="2" trace="test_LiteralTyping0xWhenNoHexSupport#()V" />
+      <node id="3929896078287639676" at="34,0,39,0" concept="2" trace="testMethodImpl#()V" />
+      <scope id="3929896078287639676" at="19,49,20,60" />
+      <scope id="3929896078287639676" at="24,71,25,36" />
+      <scope id="3929896078287639676" at="30,52,31,19" />
+      <scope id="3929896078287639676" at="35,51,37,23" />
+      <scope id="3929896078287639676" at="19,0,22,0" />
+      <scope id="3929896078287639676" at="30,0,33,0">
+        <var name="owner" id="3929896078287639676" />
+      </scope>
+      <scope id="3929896078287639676" at="23,0,27,0" />
+      <scope id="3929896078287639676" at="34,0,39,0" />
+      <unit id="3929896078287639676" at="28,0,40,0" name="test.kernelf.editor.hex.LiteralTyping0xWhenNoHexSupport_Test$TestBody" />
+      <unit id="3929896078287639676" at="14,0,41,0" name="test.kernelf.editor.hex.LiteralTyping0xWhenNoHexSupport_Test" />
+    </file>
+  </root>
+  <root nodeRef="r:6f6268c7-a3c6-45ec-96e3-0cf14e1e0fe9(test.kernelf.editor.hex@tests)/3929896078287756669">
+    <file name="NumberRangeMinHex_Test.java">
+      <node id="3929896078287756669" at="25,35,26,60" concept="7" />
+      <node id="3929896078287756669" at="30,57,31,36" concept="1" />
+      <node id="3929896078287756669" at="36,52,37,19" concept="7" />
+      <node id="3929896078287756669" at="41,51,42,72" concept="1" />
+      <node id="3929896078287756680" at="42,72,43,27" concept="1" />
+      <node id="3929896078287756681" at="43,27,44,146" concept="3" />
+      <node id="3929896078287756699" at="44,146,45,41" concept="1" />
+      <node id="3929896078287756673" at="49,36,50,41" concept="1" />
+      <node id="3929896078287756677" at="54,35,55,42" concept="1" />
+      <node id="3929896078287756669" at="59,0,60,0" concept="5" trace="min$7OOG" />
+      <node id="3929896078287756669" at="22,0,24,0" concept="5" trace="ourParametersCacheExtension" />
+      <node id="3929896078287756669" at="25,0,28,0" concept="0" trace="NumberRangeMinHex_Test#()V" />
+      <node id="3929896078287756669" at="36,0,39,0" concept="0" trace="TestBody#(Ljetbrains/mps/lang/test/runtime/TransformationTest;)V" />
+      <node id="3929896078287756669" at="29,0,33,0" concept="2" trace="test_NumberRangeMinHex#()V" />
+      <node id="3929896078287756670" at="48,0,52,0" concept="6" trace="beforeTests#()V" />
+      <node id="3929896078287756670" at="53,0,57,0" concept="6" trace="afterTests#()V" />
+      <node id="3929896078287756669" at="40,0,47,0" concept="2" trace="testMethodImpl#()V" />
+      <scope id="3929896078287756669" at="25,35,26,60" />
+      <scope id="3929896078287756669" at="30,57,31,36" />
+      <scope id="3929896078287756669" at="36,52,37,19" />
+      <scope id="3929896078287756670" at="49,36,50,41" />
+      <scope id="3929896078287756670" at="54,35,55,42" />
+      <scope id="3929896078287756669" at="25,0,28,0" />
+      <scope id="3929896078287756669" at="36,0,39,0">
+        <var name="owner" id="3929896078287756669" />
+      </scope>
+      <scope id="3929896078287756669" at="29,0,33,0" />
+      <scope id="3929896078287756669" at="41,51,45,41">
+        <var name="value" id="3929896078287756682" />
+      </scope>
+      <scope id="3929896078287756670" at="48,0,52,0" />
+      <scope id="3929896078287756670" at="53,0,57,0" />
+      <scope id="3929896078287756669" at="40,0,47,0" />
+      <unit id="3929896078287756669" at="58,0,61,0" name="test.kernelf.editor.hex.NumberRangeMinHex_Test$PROPS" />
+      <unit id="3929896078287756669" at="34,0,48,0" name="test.kernelf.editor.hex.NumberRangeMinHex_Test$TestBody" />
+      <unit id="3929896078287756669" at="20,0,62,0" name="test.kernelf.editor.hex.NumberRangeMinHex_Test" />
+    </file>
+  </root>
+  <root nodeRef="r:6f6268c7-a3c6-45ec-96e3-0cf14e1e0fe9(test.kernelf.editor.hex@tests)/8036394178084075185">
+    <file name="LiteralTyping0x_Test.java">
+      <node id="8036394178084075185" at="21,33,22,60" concept="7" />
+      <node id="8036394178084075185" at="26,55,27,36" concept="1" />
+      <node id="8036394178084075185" at="32,52,33,19" concept="7" />
+      <node id="8036394178084075185" at="37,51,38,72" concept="1" />
+      <node id="2052872502397829035" at="38,72,39,23" concept="1" />
+      <node id="2052872502398063345" at="43,36,44,41" concept="1" />
+      <node id="2052872502398064656" at="48,35,49,42" concept="1" />
+      <node id="8036394178084075185" at="18,0,20,0" concept="5" trace="ourParametersCacheExtension" />
+      <node id="8036394178084075185" at="21,0,24,0" concept="0" trace="LiteralTyping0x_Test#()V" />
+      <node id="8036394178084075185" at="32,0,35,0" concept="0" trace="TestBody#(Ljetbrains/mps/lang/test/runtime/TransformationTest;)V" />
+      <node id="8036394178084075185" at="25,0,29,0" concept="2" trace="test_LiteralTyping0x#()V" />
+      <node id="2052872502397744320" at="42,0,46,0" concept="6" trace="beforeTests#()V" />
+      <node id="2052872502397744320" at="47,0,51,0" concept="6" trace="afterTests#()V" />
+      <node id="8036394178084075185" at="36,0,41,0" concept="2" trace="testMethodImpl#()V" />
+      <scope id="8036394178084075185" at="21,33,22,60" />
+      <scope id="8036394178084075185" at="26,55,27,36" />
+      <scope id="8036394178084075185" at="32,52,33,19" />
+      <scope id="2052872502397744320" at="43,36,44,41" />
+      <scope id="2052872502397744320" at="48,35,49,42" />
+      <scope id="8036394178084075185" at="37,51,39,23" />
+      <scope id="8036394178084075185" at="21,0,24,0" />
+      <scope id="8036394178084075185" at="32,0,35,0">
+        <var name="owner" id="8036394178084075185" />
+      </scope>
+      <scope id="8036394178084075185" at="25,0,29,0" />
+      <scope id="2052872502397744320" at="42,0,46,0" />
+      <scope id="2052872502397744320" at="47,0,51,0" />
+      <scope id="8036394178084075185" at="36,0,41,0" />
+      <unit id="8036394178084075185" at="30,0,42,0" name="test.kernelf.editor.hex.LiteralTyping0x_Test$TestBody" />
+      <unit id="8036394178084075185" at="16,0,53,0" name="test.kernelf.editor.hex.LiteralTyping0x_Test" />
+    </file>
+  </root>
+</debug-info>
+
