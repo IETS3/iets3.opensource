@@ -1513,6 +1513,25 @@
   <node concept="1YbPZF" id="4mQcEpIhQCL">
     <property role="TrG5h" value="typeof_FeatureAttribute" />
     <node concept="3clFbS" id="4mQcEpIhQCM" role="18ibNy">
+      <node concept="1Z5TYs" id="2RTNek8IMWj" role="3cqZAp">
+        <node concept="mw_s8" id="2RTNek8IN2n" role="1ZfhKB">
+          <node concept="2OqwBi" id="2RTNek8INdB" role="mwGJk">
+            <node concept="1YBJjd" id="2RTNek8IN2l" role="2Oq$k0">
+              <ref role="1YBMHb" node="4mQcEpIhQCO" resolve="featureAttribute" />
+            </node>
+            <node concept="2qgKlT" id="2RTNek8INIY" role="2OqNvi">
+              <ref role="37wK5l" to="zccc:3rysoRwbqUB" resolve="effectiveType" />
+            </node>
+          </node>
+        </node>
+        <node concept="mw_s8" id="2RTNek8IMWm" role="1ZfhK$">
+          <node concept="1Z2H0r" id="2RTNek8IMyA" role="mwGJk">
+            <node concept="1YBJjd" id="2RTNek8IMCD" role="1Z2MuG">
+              <ref role="1YBMHb" node="4mQcEpIhQCO" resolve="featureAttribute" />
+            </node>
+          </node>
+        </node>
+      </node>
       <node concept="3clFbJ" id="4mQcEpIhQCS" role="3cqZAp">
         <node concept="2OqwBi" id="4mQcEpIhQCT" role="3clFbw">
           <node concept="2OqwBi" id="4mQcEpIhQCU" role="2Oq$k0">
