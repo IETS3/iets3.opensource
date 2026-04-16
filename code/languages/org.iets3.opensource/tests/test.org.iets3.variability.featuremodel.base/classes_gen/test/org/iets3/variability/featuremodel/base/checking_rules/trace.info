@@ -74,48 +74,90 @@
       <node id="3050013027466900069" at="23,55,24,60" concept="5" />
       <node id="4782337335699992343" at="28,93,29,84" concept="1" />
       <node id="4782337335703131027" at="32,93,33,84" concept="1" />
-      <node id="3050013027466900069" at="38,52,39,19" concept="5" />
-      <node id="3050013027466900069" at="43,36,44,46" concept="1" />
-      <node id="4782337335699992343" at="47,95,48,22" concept="1" />
-      <node id="4782337335699992343" at="49,30,50,63" concept="3" />
-      <node id="4782337335699992343" at="50,63,51,307" concept="1" />
-      <node id="4782337335703131027" at="54,95,55,22" concept="1" />
-      <node id="4782337335703131027" at="56,30,57,63" concept="3" />
-      <node id="4782337335703131027" at="57,63,58,307" concept="1" />
+      <node id="4489740985379665114" at="36,91,37,82" concept="1" />
+      <node id="4489740985379705785" at="40,91,41,82" concept="1" />
+      <node id="549778908785278071" at="44,90,45,81" concept="1" />
+      <node id="3050013027466900069" at="50,52,51,19" concept="5" />
+      <node id="3050013027466900069" at="55,36,56,46" concept="1" />
+      <node id="4782337335699992343" at="59,95,60,22" concept="1" />
+      <node id="4782337335699992343" at="61,30,62,63" concept="3" />
+      <node id="4782337335699992343" at="62,63,63,307" concept="1" />
+      <node id="4782337335703131027" at="66,95,67,22" concept="1" />
+      <node id="4782337335703131027" at="68,30,69,63" concept="3" />
+      <node id="4782337335703131027" at="69,63,70,307" concept="1" />
+      <node id="4489740985379665114" at="73,93,74,22" concept="1" />
+      <node id="4489740985379665114" at="75,30,76,63" concept="3" />
+      <node id="4489740985379665114" at="76,63,77,307" concept="1" />
+      <node id="4489740985379705785" at="80,93,81,22" concept="1" />
+      <node id="4489740985379705785" at="82,30,83,63" concept="3" />
+      <node id="4489740985379705785" at="83,63,84,307" concept="1" />
+      <node id="549778908785278071" at="87,92,88,22" concept="1" />
+      <node id="549778908785278071" at="89,30,90,63" concept="3" />
+      <node id="549778908785278071" at="90,63,91,307" concept="1" />
       <node id="3050013027466900069" at="20,0,22,0" concept="4" trace="ourParametersCacheExtension" />
       <node id="3050013027466900069" at="23,0,26,0" concept="0" trace="CheckMissingValueForFeatureNotPresent_Test#()V" />
-      <node id="3050013027466900069" at="38,0,41,0" concept="0" trace="TestBody#(Ljetbrains/mps/lang/test/runtime/TransformationTest;)V" />
+      <node id="3050013027466900069" at="50,0,53,0" concept="0" trace="TestBody#(Ljetbrains/mps/lang/test/runtime/TransformationTest;)V" />
       <node id="4782337335699992343" at="27,0,31,0" concept="2" trace="test_NodeAttributeUsedInConstraintCheck4782337335699992343#()V" />
       <node id="4782337335703131027" at="31,0,35,0" concept="2" trace="test_NodeAttributeUsedInConstraintCheck4782337335703131027#()V" />
-      <node id="3050013027466900069" at="42,0,46,0" concept="2" trace="initTestNodes#()V" />
-      <node id="4782337335699992343" at="48,22,52,9" concept="1" />
-      <node id="4782337335703131027" at="55,22,59,9" concept="1" />
-      <node id="4782337335699992343" at="47,0,54,0" concept="2" trace="test_NodeAttributeUsedInConstraintCheck4782337335699992343#()V" />
-      <node id="4782337335703131027" at="54,0,61,0" concept="2" trace="test_NodeAttributeUsedInConstraintCheck4782337335703131027#()V" />
+      <node id="4489740985379665114" at="35,0,39,0" concept="2" trace="test_NodeAttributeUsedButWithoutCheck4489740985379665114#()V" />
+      <node id="4489740985379705785" at="39,0,43,0" concept="2" trace="test_NodeAttributeUsedButWithoutCheck4489740985379705785#()V" />
+      <node id="549778908785278071" at="43,0,47,0" concept="2" trace="test_NodeAttributeUsedButWithoutCheck549778908785278071#()V" />
+      <node id="3050013027466900069" at="54,0,58,0" concept="2" trace="initTestNodes#()V" />
+      <node id="4782337335699992343" at="60,22,64,9" concept="1" />
+      <node id="4782337335703131027" at="67,22,71,9" concept="1" />
+      <node id="4489740985379665114" at="74,22,78,9" concept="1" />
+      <node id="4489740985379705785" at="81,22,85,9" concept="1" />
+      <node id="549778908785278071" at="88,22,92,9" concept="1" />
+      <node id="4782337335699992343" at="59,0,66,0" concept="2" trace="test_NodeAttributeUsedInConstraintCheck4782337335699992343#()V" />
+      <node id="4782337335703131027" at="66,0,73,0" concept="2" trace="test_NodeAttributeUsedInConstraintCheck4782337335703131027#()V" />
+      <node id="4489740985379665114" at="73,0,80,0" concept="2" trace="test_NodeAttributeUsedButWithoutCheck4489740985379665114#()V" />
+      <node id="4489740985379705785" at="80,0,87,0" concept="2" trace="test_NodeAttributeUsedButWithoutCheck4489740985379705785#()V" />
+      <node id="549778908785278071" at="87,0,94,0" concept="2" trace="test_NodeAttributeUsedButWithoutCheck549778908785278071#()V" />
       <scope id="3050013027466900069" at="23,55,24,60" />
       <scope id="4782337335699992343" at="28,93,29,84" />
       <scope id="4782337335703131027" at="32,93,33,84" />
-      <scope id="3050013027466900069" at="38,52,39,19" />
-      <scope id="3050013027466900069" at="43,36,44,46" />
-      <scope id="4782337335699992343" at="49,30,51,307">
+      <scope id="4489740985379665114" at="36,91,37,82" />
+      <scope id="4489740985379705785" at="40,91,41,82" />
+      <scope id="549778908785278071" at="44,90,45,81" />
+      <scope id="3050013027466900069" at="50,52,51,19" />
+      <scope id="3050013027466900069" at="55,36,56,46" />
+      <scope id="4782337335699992343" at="61,30,63,307">
         <var name="nodeToCheck" id="4782337335699992343" />
       </scope>
-      <scope id="4782337335703131027" at="56,30,58,307">
+      <scope id="4782337335703131027" at="68,30,70,307">
         <var name="nodeToCheck" id="4782337335703131027" />
       </scope>
+      <scope id="4489740985379665114" at="75,30,77,307">
+        <var name="nodeToCheck" id="4489740985379665114" />
+      </scope>
+      <scope id="4489740985379705785" at="82,30,84,307">
+        <var name="nodeToCheck" id="4489740985379705785" />
+      </scope>
+      <scope id="549778908785278071" at="89,30,91,307">
+        <var name="nodeToCheck" id="549778908785278071" />
+      </scope>
       <scope id="3050013027466900069" at="23,0,26,0" />
-      <scope id="3050013027466900069" at="38,0,41,0">
+      <scope id="3050013027466900069" at="50,0,53,0">
         <var name="owner" id="3050013027466900069" />
       </scope>
       <scope id="4782337335699992343" at="27,0,31,0" />
       <scope id="4782337335703131027" at="31,0,35,0" />
-      <scope id="3050013027466900069" at="42,0,46,0" />
-      <scope id="4782337335699992343" at="47,95,52,9" />
-      <scope id="4782337335703131027" at="54,95,59,9" />
-      <scope id="4782337335699992343" at="47,0,54,0" />
-      <scope id="4782337335703131027" at="54,0,61,0" />
-      <unit id="3050013027466900069" at="36,0,63,0" name="test.org.iets3.variability.featuremodel.base.checking_rules.CheckMissingValueForFeatureNotPresent_Test$TestBody" />
-      <unit id="3050013027466900069" at="18,0,64,0" name="test.org.iets3.variability.featuremodel.base.checking_rules.CheckMissingValueForFeatureNotPresent_Test" />
+      <scope id="4489740985379665114" at="35,0,39,0" />
+      <scope id="4489740985379705785" at="39,0,43,0" />
+      <scope id="549778908785278071" at="43,0,47,0" />
+      <scope id="3050013027466900069" at="54,0,58,0" />
+      <scope id="4782337335699992343" at="59,95,64,9" />
+      <scope id="4782337335703131027" at="66,95,71,9" />
+      <scope id="4489740985379665114" at="73,93,78,9" />
+      <scope id="4489740985379705785" at="80,93,85,9" />
+      <scope id="549778908785278071" at="87,92,92,9" />
+      <scope id="4782337335699992343" at="59,0,66,0" />
+      <scope id="4782337335703131027" at="66,0,73,0" />
+      <scope id="4489740985379665114" at="73,0,80,0" />
+      <scope id="4489740985379705785" at="80,0,87,0" />
+      <scope id="549778908785278071" at="87,0,94,0" />
+      <unit id="3050013027466900069" at="48,0,96,0" name="test.org.iets3.variability.featuremodel.base.checking_rules.CheckMissingValueForFeatureNotPresent_Test$TestBody" />
+      <unit id="3050013027466900069" at="18,0,97,0" name="test.org.iets3.variability.featuremodel.base.checking_rules.CheckMissingValueForFeatureNotPresent_Test" />
     </file>
   </root>
   <root nodeRef="r:24a667d9-96b7-4b98-90dc-d2adc89d96f8(test.org.iets3.variability.featuremodel.base.checking_rules@tests)/5950371775739840783">

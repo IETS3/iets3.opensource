@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<product version="3" modelHash="-3futzmul9zak629lfu7vt5pj1eooeq4">
+<product version="3" modelHash="aziyxo61urcdmpk5su4u3ekfcabrvqn">
   <files names="CheckConstrantsFeatureReferencesForAmbiguity_Test.java:CheckMissingValueForFeatureNotPresent_Test.java:ConstraintsEqualTypeCheck_Test.java" />
 </product>
 
