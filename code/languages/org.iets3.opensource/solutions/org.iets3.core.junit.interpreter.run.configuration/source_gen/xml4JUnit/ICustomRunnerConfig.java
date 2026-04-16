@@ -6,6 +6,7 @@ import org.iets3.core.junit.interpreter.run.configuration.plugin.IInterpreterRun
 
 public interface ICustomRunnerConfig {
   String getOutputPathMacroName();
+  void setReportFileNamePrefix(String prefix);
   String getReportFileNamePrefix();
   IInterpreterRunListener getListener();
   IInterpreterTestReporter getReporter();
