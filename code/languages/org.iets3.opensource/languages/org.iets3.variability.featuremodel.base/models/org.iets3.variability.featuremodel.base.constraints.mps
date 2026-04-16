@@ -21,6 +21,8 @@
     <import index="700h" ref="r:61b1de80-490d-4fee-8e95-b956503290e9(org.iets3.core.expr.collections.structure)" />
     <import index="lzb2" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.ui(MPS.IDEA/)" />
     <import index="n8u2" ref="r:452e57fa-fd4c-45a8-b9ba-964614a5a66e(org.iets3.variability.base.behavior)" />
+    <import index="n8ay" ref="39983771-4e9b-401b-a1a9-1da6c777c843/java:org.apache.commons.lang(MPS.ThirdParty/)" />
+    <import index="btm1" ref="b0f8641f-bd77-4421-8425-30d9088a82f7/java:org.apache.commons.lang3(org.apache.commons/)" />
     <import index="c17a" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.language(MPS.OpenAPI/)" implicit="true" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
     <import index="guwi" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.io(JDK/)" implicit="true" />
@@ -323,16 +325,36 @@
       <ref role="EomxK" to="tpck:h0TrG11" resolve="name" />
       <node concept="Eqf_E" id="3tsFshP61NO" role="EtsB7">
         <node concept="3clFbS" id="3tsFshP61NP" role="2VODD2">
-          <node concept="3clFbF" id="3tsFshP61OY" role="3cqZAp">
-            <node concept="2OqwBi" id="3tsFshP62hf" role="3clFbG">
-              <node concept="2OqwBi" id="3tsFshP61SV" role="2Oq$k0">
-                <node concept="EsrRn" id="3tsFshP61OX" role="2Oq$k0" />
-                <node concept="3TrEf2" id="3tsFshP626V" role="2OqNvi">
-                  <ref role="3Tt5mk" to="s6b7:3tsFshP5Ecc" resolve="root" />
+          <node concept="3clFbF" id="25bCHl4QMjm" role="3cqZAp">
+            <node concept="3K4zz7" id="25bCHl4R5DC" role="3clFbG">
+              <node concept="Xl_RD" id="25bCHl4R93_" role="3K4E3e">
+                <property role="Xl_RC" value="NO_NAME" />
+              </node>
+              <node concept="2OqwBi" id="3tsFshP62hf" role="3K4GZi">
+                <node concept="2OqwBi" id="3tsFshP61SV" role="2Oq$k0">
+                  <node concept="EsrRn" id="3tsFshP61OX" role="2Oq$k0" />
+                  <node concept="3TrEf2" id="3tsFshP626V" role="2OqNvi">
+                    <ref role="3Tt5mk" to="s6b7:3tsFshP5Ecc" resolve="root" />
+                  </node>
+                </node>
+                <node concept="3TrcHB" id="3tsFshP62q1" role="2OqNvi">
+                  <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
                 </node>
               </node>
-              <node concept="3TrcHB" id="3tsFshP62q1" role="2OqNvi">
-                <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
+              <node concept="2YIFZM" id="7SXl9kEJJmM" role="3K4Cdx">
+                <ref role="37wK5l" to="btm1:~StringUtils.isEmpty(java.lang.CharSequence)" resolve="isEmpty" />
+                <ref role="1Pybhc" to="btm1:~StringUtils" resolve="StringUtils" />
+                <node concept="2OqwBi" id="7SXl9kEJJPj" role="37wK5m">
+                  <node concept="2OqwBi" id="7SXl9kEJJPk" role="2Oq$k0">
+                    <node concept="EsrRn" id="7SXl9kEJJPl" role="2Oq$k0" />
+                    <node concept="3TrEf2" id="7SXl9kEJJPm" role="2OqNvi">
+                      <ref role="3Tt5mk" to="s6b7:3tsFshP5Ecc" resolve="root" />
+                    </node>
+                  </node>
+                  <node concept="3TrcHB" id="7SXl9kEJJPn" role="2OqNvi">
+                    <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
+                  </node>
+                </node>
               </node>
             </node>
           </node>
