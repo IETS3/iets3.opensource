@@ -53,7 +53,7 @@ public class InterpreterMetaFunctionInterpreter extends InterpreterBase {
         }
       }
       public EvaluatorInfo getInfo() {
-        return new EvaluatorInfo("MetaFunction", "http://127.0.0.1:63320/node?ref=58dcf5ee-9cf5-4696-b2c9-9a9fcb91218f%2Fi%3A10000001%28org.iets3.core.expr.metafunction.interpreter%40transient36%2Forg.iets3.core.expr.metafunction.interpreter.plugin%400%29%2F5994308065078499708");
+        return new EvaluatorInfo("MetaFunction", "http://127.0.0.1:63320/node?ref=r%3Abd9fb079-27cf-425c-8944-a655ffd4b313%28org.iets3.core.expr.metafunction.interpreter.plugin%29%2F5994308065078499708");
       }
 
       @Override
@@ -82,7 +82,7 @@ public class InterpreterMetaFunctionInterpreter extends InterpreterBase {
         }
       }
       public EvaluatorInfo getInfo() {
-        return new EvaluatorInfo("MetaFunArgRef", "http://127.0.0.1:63320/node?ref=58dcf5ee-9cf5-4696-b2c9-9a9fcb91218f%2Fi%3A10000001%28org.iets3.core.expr.metafunction.interpreter%40transient36%2Forg.iets3.core.expr.metafunction.interpreter.plugin%400%29%2F5994308065078500080");
+        return new EvaluatorInfo("MetaFunArgRef", "http://127.0.0.1:63320/node?ref=r%3Abd9fb079-27cf-425c-8944-a655ffd4b313%28org.iets3.core.expr.metafunction.interpreter.plugin%29%2F5994308065078500080");
       }
 
       @Override

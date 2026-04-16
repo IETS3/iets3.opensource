@@ -60,17 +60,18 @@ public final class LanguageConceptSwitch {
   public static final int Scalar = 48;
   public static final int StripUnitExpression = 49;
   public static final int Tensor = 50;
-  public static final int Unit = 51;
-  public static final int UnitDivision = 52;
-  public static final int UnitExponent = 53;
-  public static final int UnitExpression = 54;
-  public static final int UnitMultiplication = 55;
-  public static final int UnitNeutral = 56;
-  public static final int UnitReference = 57;
-  public static final int UnitSpecification = 58;
-  public static final int ValExpression = 59;
-  public static final int Vector = 60;
-  public static final int VectorField = 61;
+  public static final int TypeAsExpression = 51;
+  public static final int Unit = 52;
+  public static final int UnitDivision = 53;
+  public static final int UnitExponent = 54;
+  public static final int UnitExpression = 55;
+  public static final int UnitMultiplication = 56;
+  public static final int UnitNeutral = 57;
+  public static final int UnitReference = 58;
+  public static final int UnitSpecification = 59;
+  public static final int ValExpression = 60;
+  public static final int Vector = 61;
+  public static final int VectorField = 62;
 
   public LanguageConceptSwitch() {
     LanguageConceptIndexBuilder builder = new LanguageConceptIndexBuilder(0x7ee265bd59864709L, 0x86ed2c6daa33cd8cL);
@@ -125,6 +126,7 @@ public final class LanguageConceptSwitch {
     builder.put(0x139e7427ba264977L, Scalar);
     builder.put(0x8ac4b7baae857ebL, StripUnitExpression);
     builder.put(0x139e7427ba26565eL, Tensor);
+    builder.put(0x6e5865d462644237L, TypeAsExpression);
     builder.put(0x73b48a125b0d373fL, Unit);
     builder.put(0x729d46b7ceac12f5L, UnitDivision);
     builder.put(0x74818abc54714f3eL, UnitExponent);

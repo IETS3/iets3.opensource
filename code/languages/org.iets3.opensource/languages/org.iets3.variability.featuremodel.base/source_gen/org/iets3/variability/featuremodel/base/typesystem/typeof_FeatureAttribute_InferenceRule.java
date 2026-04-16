@@ -7,9 +7,9 @@ import jetbrains.mps.lang.typesystem.runtime.InferenceRule_Runtime;
 import org.jetbrains.mps.openapi.model.SNode;
 import jetbrains.mps.typesystem.inference.TypeCheckingContext;
 import jetbrains.mps.lang.typesystem.runtime.IsApplicableStatus;
-import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
 import jetbrains.mps.typesystem.inference.EquationInfo;
 import org.iets3.variability.featuremodel.base.behavior.AbstractFeatureAttribute__BehaviorDescriptor;
+import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
 import org.jetbrains.mps.openapi.language.SAbstractConcept;
 import org.jetbrains.mps.openapi.language.SContainmentLink;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
@@ -19,6 +19,11 @@ public class typeof_FeatureAttribute_InferenceRule extends AbstractInferenceRule
   public typeof_FeatureAttribute_InferenceRule() {
   }
   public void applyRule(final SNode featureAttribute, final TypeCheckingContext typeCheckingContext, IsApplicableStatus status) {
+    {
+      SNode _nodeToCheck_1029348928467 = featureAttribute;
+      EquationInfo _info_12389875345 = new EquationInfo(_nodeToCheck_1029348928467, null, "r:ea20ecfb-5cc1-4867-966a-b2976cfc5ae3(org.iets3.variability.featuremodel.base.typesystem)", "3312904284973772563", 0, null);
+      typeCheckingContext.createEquation((SNode) typeCheckingContext.typeOf(_nodeToCheck_1029348928467, "r:ea20ecfb-5cc1-4867-966a-b2976cfc5ae3(org.iets3.variability.featuremodel.base.typesystem)", "3312904284973770918", true), (SNode) AbstractFeatureAttribute__BehaviorDescriptor.effectiveType_id3rysoRwbqUB.invoke(featureAttribute), _info_12389875345);
+    }
     if ((SLinkOperations.getTarget(featureAttribute, LINKS.defaultValue$$Qoz) != null)) {
       if (!(typeCheckingContext.isSingleTypeComputation())) {
         {

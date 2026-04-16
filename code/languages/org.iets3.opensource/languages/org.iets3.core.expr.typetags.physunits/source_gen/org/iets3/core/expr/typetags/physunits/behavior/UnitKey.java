@@ -4,12 +4,12 @@ package org.iets3.core.expr.typetags.physunits.behavior;
 
 import org.jetbrains.mps.openapi.model.SNode;
 import java.util.Optional;
-import java.util.Objects;
-import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations;
-import org.jetbrains.mps.openapi.language.SInterfaceConcept;
-import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
+import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
+import java.util.Objects;
 import org.jetbrains.mps.openapi.language.SProperty;
+import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
+import org.jetbrains.mps.openapi.language.SInterfaceConcept;
 
 public class UnitKey {
   private final SNode wrapped;
@@ -24,6 +24,10 @@ public class UnitKey {
 
   public Optional<SNode> getRepresentedUnit() {
     return (Optional<SNode>) IRepresentUnit__BehaviorDescriptor.getUnit_idQWlYnY5DVv.invoke(wrapped);
+  }
+
+  public String asString() {
+    return IRepresentUnit__BehaviorDescriptor.getUnit_idQWlYnY5DVv.invoke(wrapped).map((u) -> SPropertyOperations.getString(u, PROPS.name$MnvL)).orElse(SNodeOperations.present(wrapped));
   }
 
   @Override
@@ -42,7 +46,7 @@ public class UnitKey {
             final SNode ref2 = unitRep;
             if (SNodeOperations.isInstanceOf(ref2, CONCEPTS.IReference$$s)) {
               b = Objects.equals(IReference__BehaviorDescriptor.getReferencedNode_id6q45UTyu4YY.invoke(ref1), IReference__BehaviorDescriptor.getReferencedNode_id6q45UTyu4YY.invoke(ref2));
-              b &= Objects.equals(SPropertyOperations.getString(ref1, PROPS.name$MnvL), SPropertyOperations.getString(ref2, PROPS.name$MnvL));
+              // we ignore the unit prefix, so keys for "km" and "m" will match
             }
           }
         }
@@ -71,11 +75,11 @@ public class UnitKey {
     return "Key(" + SPropertyOperations.getString(wrapped, PROPS.name$MnvL) + "/" + SNodeOperations.present(wrapped) + "/" + SNodeOperations.getConcept(wrapped).getName() + ")";
   }
 
-  private static final class CONCEPTS {
-    /*package*/ static final SInterfaceConcept IReference$$s = MetaAdapterFactory.getInterfaceConcept(0x7ee265bd59864709L, 0x86ed2c6daa33cd8cL, 0x668417ae62784d3aL, "org.iets3.core.expr.typetags.physunits.structure.IReference");
-  }
-
   private static final class PROPS {
     /*package*/ static final SProperty name$MnvL = MetaAdapterFactory.getProperty(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L, 0x110396ec041L, "name");
+  }
+
+  private static final class CONCEPTS {
+    /*package*/ static final SInterfaceConcept IReference$$s = MetaAdapterFactory.getInterfaceConcept(0x7ee265bd59864709L, 0x86ed2c6daa33cd8cL, 0x668417ae62784d3aL, "org.iets3.core.expr.typetags.physunits.structure.IReference");
   }
 }

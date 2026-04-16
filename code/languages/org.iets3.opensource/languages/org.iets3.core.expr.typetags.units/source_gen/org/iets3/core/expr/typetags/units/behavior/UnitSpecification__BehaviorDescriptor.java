@@ -10,6 +10,7 @@ import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
 import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import org.jetbrains.mps.openapi.model.SNode;
+import org.iets3.core.expr.typetags.behavior.TagCombinator;
 import java.util.List;
 import java.util.Arrays;
 import org.jetbrains.annotations.NotNull;
@@ -37,13 +38,13 @@ public final class UnitSpecification__BehaviorDescriptor extends BaseBHDescripto
   public static final SMethod<String> getName_id76ZhK6XVfon = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("getName").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(8196347919644554775L).languageId(0xa9df73d9e86c27d3L, 0x5186c6ce428c4f09L).build2();
   public static final SMethod<String> getDescription_id76ZhK6XViJl = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("getDescription").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(8196347919644568533L).languageId(0xa9df73d9e86c27d3L, 0x5186c6ce428c4f09L).build2();
   public static final SMethod<Iterable<SNode>> getTaggedExpressionScope_id76ZhK6XUPd6 = new SMethodBuilder<Iterable<SNode>>(new SJavaCompoundTypeImpl((Class<Iterable<SNode>>) ((Class) Object.class))).name("getTaggedExpressionScope").modifiers(9, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(8196347919644447558L).languageId(0xa9df73d9e86c27d3L, 0x5186c6ce428c4f09L).build2(SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""));
-  public static final SMethod<SNode> combine_id4HxogODTmVB = new SMethodBuilder<SNode>(new SJavaCompoundTypeImpl((Class<SNode>) ((Class) Object.class))).name("combine").modifiers(9, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5431729334750899943L).languageId(0xa9df73d9e86c27d3L, 0x5186c6ce428c4f09L).build2(SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""), SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""), SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""));
+  public static final SMethod<TagCombinator> combine_idV9WAJSLzx5 = new SMethodBuilder<TagCombinator>(new SJavaCompoundTypeImpl(TagCombinator.class)).name("combine").modifiers(9, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(1065649332398995525L).languageId(0xa9df73d9e86c27d3L, 0x5186c6ce428c4f09L).build2(SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""), SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""), SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""), SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""), SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""));
   public static final SMethod<Boolean> subsumes_id1RcasK0V7Pl = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("subsumes").modifiers(9, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(2147137078514449749L).languageId(0xa9df73d9e86c27d3L, 0x5186c6ce428c4f09L).build2(SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""), SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""));
   public static final SMethod<SAbstractConcept> getGroupingTagConcept_idx_aN5M65iL = new SMethodBuilder<SAbstractConcept>(new SJavaCompoundTypeImpl((Class<SAbstractConcept>) ((Class) Object.class))).name("getGroupingTagConcept").modifiers(9, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(604937216318788785L).languageId(0xa9df73d9e86c27d3L, 0x5186c6ce428c4f09L).build2();
   public static final SMethod<List<SNode>> components_id1KUmgSF_6Sp = new SMethodBuilder<List<SNode>>(new SJavaCompoundTypeImpl((Class<List<SNode>>) ((Class) Object.class))).name("components").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(2034036099106762265L).languageId(0xa96d448d08f526faL, 0xcb91a38e738a4811L).build2();
   public static final SMethod<Boolean> isSameAs_id4HxogODPWaJ = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("isSameAs").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5431729334750003887L).languageId(0xa9df73d9e86c27d3L, 0x5186c6ce428c4f09L).build2(SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""));
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(getPresentation_idhEwIMiw, canTagExpression_id2Ux6GHgZEiG, getName_id76ZhK6XVfon, getDescription_id76ZhK6XViJl, getTaggedExpressionScope_id76ZhK6XUPd6, combine_id4HxogODTmVB, subsumes_id1RcasK0V7Pl, getGroupingTagConcept_idx_aN5M65iL, components_id1KUmgSF_6Sp, isSameAs_id4HxogODPWaJ);
+  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(getPresentation_idhEwIMiw, canTagExpression_id2Ux6GHgZEiG, getName_id76ZhK6XVfon, getDescription_id76ZhK6XViJl, getTaggedExpressionScope_id76ZhK6XUPd6, combine_idV9WAJSLzx5, subsumes_id1RcasK0V7Pl, getGroupingTagConcept_idx_aN5M65iL, components_id1KUmgSF_6Sp, isSameAs_id4HxogODPWaJ);
 
   private static void ___init___(@NotNull SNode __thisNode__) {
   }
@@ -69,8 +70,8 @@ public final class UnitSpecification__BehaviorDescriptor extends BaseBHDescripto
   /*package*/ static Iterable<SNode> getTaggedExpressionScope_id76ZhK6XUPd6(@NotNull SAbstractConcept __thisConcept__, SNode context) {
     return Sequence.fromIterable(ScopingHelper.getVisibleUnitsFrom(context)).select((it) -> createUnitSpecification_75ds3d_a0a0a0a0e(it));
   }
-  /*package*/ static SNode combine_id4HxogODTmVB(@NotNull SAbstractConcept __thisConcept__, SNode left, SNode right, SNode operation) {
-    return UnitCombinators.combine(left, right, operation);
+  /*package*/ static TagCombinator combine_idV9WAJSLzx5(@NotNull SAbstractConcept __thisConcept__, SNode left, SNode right, SNode operation, SNode leftType, SNode rightType) {
+    return new TagCombinator(UnitCombinators.combine(left, right, operation));
   }
   /*package*/ static boolean subsumes_id1RcasK0V7Pl(@NotNull SAbstractConcept __thisConcept__, SNode sub, SNode sup) {
     return UnitSubsumption.subsumes(sub, sup);
@@ -133,7 +134,7 @@ public final class UnitSpecification__BehaviorDescriptor extends BaseBHDescripto
       case 4:
         return (T) ((Iterable<SNode>) getTaggedExpressionScope_id76ZhK6XUPd6(concept, (SNode) parameters[0]));
       case 5:
-        return (T) ((SNode) combine_id4HxogODTmVB(concept, (SNode) parameters[0], (SNode) parameters[1], (SNode) parameters[2]));
+        return (T) ((TagCombinator) combine_idV9WAJSLzx5(concept, (SNode) parameters[0], (SNode) parameters[1], (SNode) parameters[2], (SNode) parameters[3], (SNode) parameters[4]));
       case 6:
         return (T) ((Boolean) subsumes_id1RcasK0V7Pl(concept, (SNode) parameters[0], (SNode) parameters[1]));
       case 7:

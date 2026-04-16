@@ -60,6 +60,7 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
   private ConceptPresentation props_Scalar;
   private ConceptPresentation props_StripUnitExpression;
   private ConceptPresentation props_Tensor;
+  private ConceptPresentation props_TypeAsExpression;
   private ConceptPresentation props_Unit;
   private ConceptPresentation props_UnitDivision;
   private ConceptPresentation props_UnitExponent;
@@ -437,6 +438,13 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           props_Tensor = cpb.create();
         }
         return props_Tensor;
+      case LanguageConceptSwitch.TypeAsExpression:
+        if (props_TypeAsExpression == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.rawPresentation("TypeAsExpression");
+          props_TypeAsExpression = cpb.create();
+        }
+        return props_TypeAsExpression;
       case LanguageConceptSwitch.Unit:
         if (props_Unit == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();

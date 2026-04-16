@@ -22,8 +22,9 @@ import com.mbeddr.mpsutil.interpreter.rt.EvaluatorInfo;
 import org.iets3.core.expr.typetags.physunits.behavior.UnitConversionUtil;
 import jetbrains.mps.typechecking.TypecheckingFacade;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations;
-import org.iets3.core.expr.typetags.physunits.behavior.AbstractUnitPrefix;
+import org.iets3.core.expr.typetags.physunits.behavior.AbstractUnitPrefixManager;
 import org.iets3.core.expr.typetags.physunits.behavior.GlobalUnitPrefixManager;
+import org.iets3.core.expr.typetags.physunits.behavior.AbstractUnitPrefix;
 import com.mbeddr.mpsutil.interpreter.rt.ITypeMapper;
 import com.mbeddr.mpsutil.interpreter.rt.IRelationship;
 import com.mbeddr.mpsutil.interpreter.rt.InterpretBeforeRelationshipImpl;
@@ -82,7 +83,7 @@ public class InterpreterExprPhysUnitInterpreter extends InterpreterBase {
         }
       }
       public EvaluatorInfo getInfo() {
-        return new EvaluatorInfo("IConvertUnit", "http://127.0.0.1:63320/node?ref=c3528e91-19d7-4271-a5fc-52aec24a61a3%2Fi%3A10000029%28org.iets3.core.expr.typetags.physunits%40transient93%2Forg.iets3.core.expr.typetags.physunits.plugin%400%29%2F4063324562830258787");
+        return new EvaluatorInfo("IConvertUnit", "http://127.0.0.1:63320/node?ref=r%3A6e69e40f-b186-4866-917f-dbdef5b3c590%28org.iets3.core.expr.typetags.physunits.plugin%29%2F4063324562830258787");
       }
 
       @Override
@@ -111,7 +112,7 @@ public class InterpreterExprPhysUnitInterpreter extends InterpreterBase {
         }
       }
       public EvaluatorInfo getInfo() {
-        return new EvaluatorInfo("ValExpression", "http://127.0.0.1:63320/node?ref=c3528e91-19d7-4271-a5fc-52aec24a61a3%2Fi%3A10000029%28org.iets3.core.expr.typetags.physunits%40transient93%2Forg.iets3.core.expr.typetags.physunits.plugin%400%29%2F4063324562830308195");
+        return new EvaluatorInfo("ValExpression", "http://127.0.0.1:63320/node?ref=r%3A6e69e40f-b186-4866-917f-dbdef5b3c590%28org.iets3.core.expr.typetags.physunits.plugin%29%2F4063324562830308195");
       }
 
       @Override
@@ -140,7 +141,7 @@ public class InterpreterExprPhysUnitInterpreter extends InterpreterBase {
         }
       }
       public EvaluatorInfo getInfo() {
-        return new EvaluatorInfo("NoConvertExpression", "http://127.0.0.1:63320/node?ref=c3528e91-19d7-4271-a5fc-52aec24a61a3%2Fi%3A10000029%28org.iets3.core.expr.typetags.physunits%40transient93%2Forg.iets3.core.expr.typetags.physunits.plugin%400%29%2F1227969439340862130");
+        return new EvaluatorInfo("NoConvertExpression", "http://127.0.0.1:63320/node?ref=r%3A6e69e40f-b186-4866-917f-dbdef5b3c590%28org.iets3.core.expr.typetags.physunits.plugin%29%2F1227969439340862130");
       }
 
       @Override
@@ -160,33 +161,42 @@ public class InterpreterExprPhysUnitInterpreter extends InterpreterBase {
           coverage.visitedConcept(this.concept);
           coverage.visitedConcept(SNodeOperations.getConcept(node));
           SNode theNode = node;
-          SNode specification = SNodeOperations.as(UnitConversionUtil.getSpecification(TypecheckingFacade.getFromContext().getTypeOf(theNode)), CONCEPTS.UnitSpecification$6j);
-          boolean interpretDirectly = theNode.getUserObject("interpret_directly") == null;
 
+          // check if implicit conversions are enabled
           IUnitLangConfig config = PhysUnitLangConfigHelper.getConfig();
           if (config.implicitConversionIsEnabled() && config.implicitConversionIsEnabledAt(node)) {
-            {
-              final SNode unitReference = SLinkOperations.getTarget(specification, LINKS.specification$d6YI);
-              if (SNodeOperations.isInstanceOf(unitReference, CONCEPTS.UnitReference$Zo)) {
-                String unitPrefix = SPropertyOperations.getString(unitReference, PROPS.prefix$AtV);
-                if ((unitPrefix == null || unitPrefix.length() == 0)) {
-                  unitPrefix = ((String) theNode.getUserObject("interpreter_original_unit_prefix"));
-                }
-                AbstractUnitPrefix prefix = GlobalUnitPrefixManager.getManager(SLinkOperations.getTarget(unitReference, LINKS.unit$nTeG)).findPrefix(unitPrefix);
-                boolean isInsideConvert = (SNodeOperations.getNodeAncestor(theNode, CONCEPTS.IConvertUnit$8k, false, false) != null) || SNodeOperations.isInstanceOf(SLinkOperations.getTarget(SNodeOperations.getNodeAncestor(theNode, CONCEPTS.DotExpression$jp, false, false), LINKS.target$u23F), CONCEPTS.IConvertUnit$8k);
-                boolean isInsideRule = (SNodeOperations.getNodeAncestor(theNode, CONCEPTS.ConversionRule$iv, false, false) != null);
+            // check if implicit conversion between units has to be applied (depends on location in AST)
+            SNode withImplicitConv = PhysUnitInterpreterHelper.getImplicitConversionExpression(theNode);
+            if ((withImplicitConv != null)) {
+              Object object = context.getRootInterpreter().evaluate(withImplicitConv, context, coverage, trace, false);
+              return object;
+            }
 
-                if (!(isInsideConvert) && !(isInsideRule) && (SNodeOperations.getNodeAncestor(theNode, CONCEPTS.NoConvertExpression$B$, false, false) == null) && prefix != null && interpretDirectly) {
-
-                  SNode copiedExpr = SNodeOperations.copyNode(theNode);
-                  copiedExpr.putUserObject("interpret_directly", true);
-                  SNode convertExpression = createConvertExpression_ewsp53_a0d0g0a0f0a0d(copiedExpr, SLinkOperations.getTarget(unitReference, LINKS.unit$nTeG));
-
-                  return context.getRootInterpreter().evaluate(convertExpression, context, coverage, trace, false);
+            boolean interpretDirectly = theNode.getUserObject("INTERPRET_DIRECTLY") != null;
+            if (!(interpretDirectly)) {
+              // check if implicit conversion for unit prefix has to be applied
+              SNode unitSpec = SNodeOperations.as(UnitConversionUtil.getSpecification(TypecheckingFacade.getFromContext().getTypeOf(theNode)), CONCEPTS.UnitSpecification$6j);
+              {
+                final SNode unitReference = SLinkOperations.getTarget(unitSpec, LINKS.specification$d6YI);
+                if (SNodeOperations.isInstanceOf(unitReference, CONCEPTS.UnitReference$Zo)) {
+                  String unitPrefix = SPropertyOperations.getString(unitReference, PROPS.prefix$AtV);
+                  if ((unitPrefix == null || unitPrefix.length() == 0)) {
+                    unitPrefix = ((String) theNode.getUserObject("interpreter_original_unit_prefix"));
+                  }
+                  AbstractUnitPrefixManager manager = GlobalUnitPrefixManager.getManager(SLinkOperations.getTarget(unitReference, LINKS.unit$nTeG));
+                  AbstractUnitPrefix prefix = UnitConversionUtil.getPrefixForConversion(theNode, manager, unitPrefix);
+                  if (prefix != null) {
+                    SNode copiedExpr = SNodeOperations.copyNode(theNode);
+                    copiedExpr.putUserObject("INTERPRET_DIRECTLY", true);
+                    SNode withPrefixConv = createConvertExpression_ewsp53_a0c0e0c0f0e0a0d(copiedExpr, SLinkOperations.getTarget(unitReference, LINKS.unit$nTeG));
+                    return context.getRootInterpreter().evaluate(withPrefixConv, context, coverage, trace, false);
+                  }
                 }
               }
             }
           }
+
+          // fallback: ignore tags and just evaluate expression
           return ((Object) castUp(context.getRootInterpreter().evaluate(SLinkOperations.getTarget(node, LINKS.expr$CW3E), context, coverage, trace, false), Object.class));
         } catch (StopAndReturnException stop) {
           return stop.value();
@@ -197,7 +207,7 @@ public class InterpreterExprPhysUnitInterpreter extends InterpreterBase {
         }
       }
       public EvaluatorInfo getInfo() {
-        return new EvaluatorInfo("TaggedExpression", "http://127.0.0.1:63320/node?ref=c3528e91-19d7-4271-a5fc-52aec24a61a3%2Fi%3A10000029%28org.iets3.core.expr.typetags.physunits%40transient93%2Forg.iets3.core.expr.typetags.physunits.plugin%400%29%2F4063324562830525726");
+        return new EvaluatorInfo("TaggedExpression", "http://127.0.0.1:63320/node?ref=r%3A6e69e40f-b186-4866-917f-dbdef5b3c590%28org.iets3.core.expr.typetags.physunits.plugin%29%2F4063324562830525726");
       }
 
       @Override
@@ -222,7 +232,7 @@ public class InterpreterExprPhysUnitInterpreter extends InterpreterBase {
     ListSequence.fromList(((List<IRelationship>) relationships)).addElement(new InterpretBeforeRelationshipImpl("org.iets3.core.expr.typetags.physunits.plugin.InterpreterExprPhysUnitInterpreter", "org.iets3.core.expr.base.interpreter.plugin.InterpreterExprBaseInterpreter"));
     ListSequence.fromList(((List<IRelationship>) relationships)).addElement(new InterpretBeforeRelationshipImpl("org.iets3.core.expr.typetags.physunits.plugin.InterpreterExprPhysUnitInterpreter", "org.iets3.core.expr.simpleTypes.interpreter.plugin.InterpreterExprSimpleTypesInterpreter"));
   }
-  private static SNode createConvertExpression_ewsp53_a0d0g0a0f0a0d(SNode p0, SNode p1) {
+  private static SNode createConvertExpression_ewsp53_a0c0e0c0f0e0a0d(SNode p0, SNode p1) {
     SNodeBuilder n0 = new SNodeBuilder().init(CONCEPTS.ConvertExpression$Xc);
     n0.forChild(LINKS.expr$CW3E).initNode(p0, CONCEPTS.Expression$D_, true);
     {
@@ -237,7 +247,6 @@ public class InterpreterExprPhysUnitInterpreter extends InterpreterBase {
     /*package*/ static final SContainmentLink expr$CW3E = MetaAdapterFactory.getContainmentLink(0xcfaa4966b7d54b69L, 0xb66a309a6e1a7290L, 0x3b256bb6ae8048d8L, 0x3b256bb6ae8048d9L, "expr");
     /*package*/ static final SContainmentLink specification$d6YI = MetaAdapterFactory.getContainmentLink(0x7ee265bd59864709L, 0x86ed2c6daa33cd8cL, 0x73b48a125b0d411dL, 0x73b48a125b0dab03L, "specification");
     /*package*/ static final SReferenceLink unit$nTeG = MetaAdapterFactory.getReferenceLink(0x7ee265bd59864709L, 0x86ed2c6daa33cd8cL, 0x73b48a125b0d4dc5L, 0x73b48a125b0daafcL, "unit");
-    /*package*/ static final SContainmentLink target$u23F = MetaAdapterFactory.getContainmentLink(0xcfaa4966b7d54b69L, 0xb66a309a6e1a7290L, 0x7cef88020a0f4249L, 0x7cef88020a0f424bL, "target");
     /*package*/ static final SContainmentLink targetUnit$c07m = MetaAdapterFactory.getContainmentLink(0x7ee265bd59864709L, 0x86ed2c6daa33cd8cL, 0x3930d8ab4c0e6285L, 0x19cd9c98ec2a3ab4L, "targetUnit");
   }
 
@@ -247,8 +256,6 @@ public class InterpreterExprPhysUnitInterpreter extends InterpreterBase {
     /*package*/ static final SConcept NoConvertExpression$B$ = MetaAdapterFactory.getConcept(0x7ee265bd59864709L, 0x86ed2c6daa33cd8cL, 0x110a9fb2f2d15aadL, "org.iets3.core.expr.typetags.physunits.structure.NoConvertExpression");
     /*package*/ static final SConcept UnitSpecification$6j = MetaAdapterFactory.getConcept(0x7ee265bd59864709L, 0x86ed2c6daa33cd8cL, 0x73b48a125b0d411dL, "org.iets3.core.expr.typetags.physunits.structure.UnitSpecification");
     /*package*/ static final SConcept UnitReference$Zo = MetaAdapterFactory.getConcept(0x7ee265bd59864709L, 0x86ed2c6daa33cd8cL, 0x73b48a125b0d4dc5L, "org.iets3.core.expr.typetags.physunits.structure.UnitReference");
-    /*package*/ static final SConcept DotExpression$jp = MetaAdapterFactory.getConcept(0xcfaa4966b7d54b69L, 0xb66a309a6e1a7290L, 0x7cef88020a0f4249L, "org.iets3.core.expr.base.structure.DotExpression");
-    /*package*/ static final SConcept ConversionRule$iv = MetaAdapterFactory.getConcept(0x7ee265bd59864709L, 0x86ed2c6daa33cd8cL, 0xed6abcb370b28cbL, "org.iets3.core.expr.typetags.physunits.structure.ConversionRule");
     /*package*/ static final SConcept TaggedExpression$jU = MetaAdapterFactory.getConcept(0x5186c6ce428c4f09L, 0xa9df73d9e86c27d3L, 0x2ea11acb50fe9dabL, "org.iets3.core.expr.typetags.structure.TaggedExpression");
     /*package*/ static final SConcept ConvertExpression$Xc = MetaAdapterFactory.getConcept(0x7ee265bd59864709L, 0x86ed2c6daa33cd8cL, 0x3930d8ab4c0e6285L, "org.iets3.core.expr.typetags.physunits.structure.ConvertExpression");
     /*package*/ static final SConcept Expression$D_ = MetaAdapterFactory.getConcept(0xcfaa4966b7d54b69L, 0xb66a309a6e1a7290L, 0x670d5e92f854a047L, "org.iets3.core.expr.base.structure.Expression");

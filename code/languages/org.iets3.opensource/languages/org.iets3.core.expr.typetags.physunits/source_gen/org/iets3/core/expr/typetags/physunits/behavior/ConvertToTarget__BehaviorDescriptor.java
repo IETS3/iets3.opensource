@@ -15,7 +15,6 @@ import java.util.Arrays;
 import org.jetbrains.annotations.NotNull;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SConceptOperations;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
-import org.iets3.core.expr.base.behavior.Expression__BehaviorDescriptor;
 import org.iets3.core.expr.base.behavior.IDotTarget__BehaviorDescriptor;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
@@ -42,7 +41,7 @@ public final class ConvertToTarget__BehaviorDescriptor extends BaseBHDescriptor 
   }
 
   /*package*/ static String renderReadable_id6kR0qIbI2yi(@NotNull SNode __thisNode__) {
-    return SConceptOperations.conceptAlias(SNodeOperations.getConcept(__thisNode__)) + "(" + Expression__BehaviorDescriptor.renderReadable_id4Y0vh0cfqjE.invoke(IDotTarget__BehaviorDescriptor.contextExpression_id6zmBjqUivyF.invoke(__thisNode__)) + " -> " + SPropertyOperations.getString(SLinkOperations.getTarget(SLinkOperations.getTarget(__thisNode__, LINKS.targetUnit$_yUk), LINKS.unit$nTeG), PROPS.name$MnvL) + ")";
+    return SConceptOperations.conceptAlias(SNodeOperations.getConcept(__thisNode__)) + "(" + SNodeOperations.present(IDotTarget__BehaviorDescriptor.contextExpression_id6zmBjqUivyF.invoke(__thisNode__)) + " -> " + SPropertyOperations.getString(SLinkOperations.getTarget(SLinkOperations.getTarget(__thisNode__, LINKS.targetUnit$_yUk), LINKS.unit$nTeG), PROPS.name$MnvL) + ")";
   }
   /*package*/ static SNode getExpression_id7SygLIkQnGn(@NotNull SNode __thisNode__) {
     return IDotTarget__BehaviorDescriptor.contextExpression_id6zmBjqUivyF.invoke(__thisNode__);

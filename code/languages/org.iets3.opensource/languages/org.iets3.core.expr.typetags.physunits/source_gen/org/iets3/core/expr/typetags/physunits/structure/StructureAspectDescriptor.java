@@ -67,6 +67,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
   /*package*/ final ConceptDescriptor myConceptScalar = createDescriptorForScalar();
   /*package*/ final ConceptDescriptor myConceptStripUnitExpression = createDescriptorForStripUnitExpression();
   /*package*/ final ConceptDescriptor myConceptTensor = createDescriptorForTensor();
+  /*package*/ final ConceptDescriptor myConceptTypeAsExpression = createDescriptorForTypeAsExpression();
   /*package*/ final ConceptDescriptor myConceptUnit = createDescriptorForUnit();
   /*package*/ final ConceptDescriptor myConceptUnitDivision = createDescriptorForUnitDivision();
   /*package*/ final ConceptDescriptor myConceptUnitExponent = createDescriptorForUnitExponent();
@@ -100,7 +101,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
 
   @Override
   public Collection<ConceptDescriptor> getDescriptors() {
-    return Arrays.asList(myConceptAllowNameShadowingAnnotation, myConceptConversionRule, myConceptConversionSpecifier, myConceptConvertExpression, myConceptConvertToTarget, myConceptDimension, myConceptDimensionDivision, myConceptDimensionExponent, myConceptDimensionExpression, myConceptDimensionMultiplication, myConceptDimensionNeutral, myConceptDimensionReference, myConceptExponent, myConceptFractionalExponent, myConceptICanUseUnitlessUnit, myConceptIConvertUnit, myConceptIGroupBase, myConceptIGroupDivision, myConceptIGroupLike, myConceptIGroupMultiplication, myConceptIGroupNeutral, myConceptIGroupPower, myConceptIHaveIUnitSpecification, myConceptIReference, myConceptIRepresentUnit, myConceptISpecification, myConceptITransformationProperty, myConceptIUnit, myConceptIUnitDeclarationsProvider, myConceptIUnitSpecification, myConceptIntegerExponent, myConceptNoConvertExpression, myConceptPseudoScalar, myConceptPseudoVector, myConceptQuantity, myConceptQuantityBaseType, myConceptQuantityDivision, myConceptQuantityDivisionType, myConceptQuantityEmptyType, myConceptQuantityExponent, myConceptQuantityExponentType, myConceptQuantityExpression, myConceptQuantityMultiplication, myConceptQuantityMultiplicationType, myConceptQuantityNeutral, myConceptQuantityReference, myConceptQuantitySpecification, myConceptQuantityType, myConceptScalar, myConceptStripUnitExpression, myConceptTensor, myConceptUnit, myConceptUnitDivision, myConceptUnitExponent, myConceptUnitExpression, myConceptUnitMultiplication, myConceptUnitNeutral, myConceptUnitReference, myConceptUnitSpecification, myConceptValExpression, myConceptVector, myConceptVectorField);
+    return Arrays.asList(myConceptAllowNameShadowingAnnotation, myConceptConversionRule, myConceptConversionSpecifier, myConceptConvertExpression, myConceptConvertToTarget, myConceptDimension, myConceptDimensionDivision, myConceptDimensionExponent, myConceptDimensionExpression, myConceptDimensionMultiplication, myConceptDimensionNeutral, myConceptDimensionReference, myConceptExponent, myConceptFractionalExponent, myConceptICanUseUnitlessUnit, myConceptIConvertUnit, myConceptIGroupBase, myConceptIGroupDivision, myConceptIGroupLike, myConceptIGroupMultiplication, myConceptIGroupNeutral, myConceptIGroupPower, myConceptIHaveIUnitSpecification, myConceptIReference, myConceptIRepresentUnit, myConceptISpecification, myConceptITransformationProperty, myConceptIUnit, myConceptIUnitDeclarationsProvider, myConceptIUnitSpecification, myConceptIntegerExponent, myConceptNoConvertExpression, myConceptPseudoScalar, myConceptPseudoVector, myConceptQuantity, myConceptQuantityBaseType, myConceptQuantityDivision, myConceptQuantityDivisionType, myConceptQuantityEmptyType, myConceptQuantityExponent, myConceptQuantityExponentType, myConceptQuantityExpression, myConceptQuantityMultiplication, myConceptQuantityMultiplicationType, myConceptQuantityNeutral, myConceptQuantityReference, myConceptQuantitySpecification, myConceptQuantityType, myConceptScalar, myConceptStripUnitExpression, myConceptTensor, myConceptTypeAsExpression, myConceptUnit, myConceptUnitDivision, myConceptUnitExponent, myConceptUnitExpression, myConceptUnitMultiplication, myConceptUnitNeutral, myConceptUnitReference, myConceptUnitSpecification, myConceptValExpression, myConceptVector, myConceptVectorField);
   }
 
   @Override
@@ -209,6 +210,8 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
         return myConceptStripUnitExpression;
       case LanguageConceptSwitch.Tensor:
         return myConceptTensor;
+      case LanguageConceptSwitch.TypeAsExpression:
+        return myConceptTypeAsExpression;
       case LanguageConceptSwitch.Unit:
         return myConceptUnit;
       case LanguageConceptSwitch.UnitDivision:
@@ -754,6 +757,16 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.origin("r:4f64e2f0-6a4e-4db3-b3bf-7977f44949b6(org.iets3.core.expr.typetags.physunits.structure)/1413695047016535646");
     b.version(3);
     b.alias("tensor");
+    return b.create();
+  }
+  private static ConceptDescriptor createDescriptorForTypeAsExpression() {
+    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("org.iets3.core.expr.typetags.physunits", "TypeAsExpression", 0x7ee265bd59864709L, 0x86ed2c6daa33cd8cL, 0x6e5865d462644237L);
+    b.class_(false, false, false);
+    // extends: org.iets3.core.expr.base.structure.Expression
+    b.super_(0xcfaa4966b7d54b69L, 0xb66a309a6e1a7290L, 0x670d5e92f854a047L);
+    b.origin("r:4f64e2f0-6a4e-4db3-b3bf-7977f44949b6(org.iets3.core.expr.typetags.physunits.structure)/7951217104980820535");
+    b.version(3);
+    b.aggregate("wrappedType", 0x6e5865d462644238L).target(0xcfaa4966b7d54b69L, 0xb66a309a6e1a7290L, 0x670d5e92f854a614L).optional(false).ordered(true).multiple(false).origin("7951217104980820536").done();
     return b.create();
   }
   private static ConceptDescriptor createDescriptorForUnit() {

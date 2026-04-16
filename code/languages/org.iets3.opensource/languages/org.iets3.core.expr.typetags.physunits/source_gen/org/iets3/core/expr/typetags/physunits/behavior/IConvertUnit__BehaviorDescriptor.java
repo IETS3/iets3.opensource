@@ -15,10 +15,6 @@ import java.util.Arrays;
 import org.jetbrains.annotations.NotNull;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
 import java.util.ArrayList;
-import jetbrains.mps.classloading.ClassLoaderManager;
-import jetbrains.mps.typesystem.inference.TypeCheckingContext;
-import jetbrains.mps.newTypesystem.context.IncrementalTypecheckingContext;
-import jetbrains.mps.typesystem.inference.TypeChecker;
 import jetbrains.mps.internal.collections.runtime.Sequence;
 import com.mbeddr.core.base.behavior.IVisibleElementProvider__BehaviorDescriptor;
 import jetbrains.mps.internal.collections.runtime.ListSequence;
@@ -45,27 +41,36 @@ public final class IConvertUnit__BehaviorDescriptor extends BaseBHDescriptor {
   public static final SMethod<Void> setConversionSpecifier_id7SygLIkQzuc = new SMethodBuilder<Void>(new SJavaCompoundTypeImpl(Void.class)).name("setConversionSpecifier").modifiers(12, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(9088900783727589260L).languageId(0x86ed2c6daa33cd8cL, 0x7ee265bd59864709L).build2(SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""));
   public static final SMethod<SNode> getConversionSpecifier_id7SygLIkR36w = new SMethodBuilder<SNode>(new SJavaCompoundTypeImpl((Class<SNode>) ((Class) Object.class))).name("getConversionSpecifier").modifiers(12, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(9088900783727718816L).languageId(0x86ed2c6daa33cd8cL, 0x7ee265bd59864709L).build2();
   public static final SMethod<SNode> getContext_id7NHcideTk7h = new SMethodBuilder<SNode>(new SJavaCompoundTypeImpl((Class<SNode>) ((Class) Object.class))).name("getContext").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(9001905257900753361L).languageId(0x86ed2c6daa33cd8cL, 0x7ee265bd59864709L).build2();
+  public static final SMethod<Void> setFallbackVisibleElementProvider_idTizm$fGBF2 = new SMethodBuilder<Void>(new SJavaCompoundTypeImpl(Void.class)).name("setFallbackVisibleElementProvider").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(1032042746995702466L).languageId(0x86ed2c6daa33cd8cL, 0x7ee265bd59864709L).build2(SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""));
   public static final SMethod<List<SNode>> getApplicableConversionSpecifiers_id3_TFq$0_vSx = new SMethodBuilder<List<SNode>>(new SJavaCompoundTypeImpl((Class<List<SNode>>) ((Class) Object.class))).name("getApplicableConversionSpecifiers").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(4141532273714789921L).languageId(0x86ed2c6daa33cd8cL, 0x7ee265bd59864709L).build2(SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""));
   public static final SMethod<SNode> getImplicitConversionSpecifier_id2x0M_l2hX_w = new SMethodBuilder<SNode>(new SJavaCompoundTypeImpl((Class<SNode>) ((Class) Object.class))).name("getImplicitConversionSpecifier").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(2900540627559635296L).languageId(0x86ed2c6daa33cd8cL, 0x7ee265bd59864709L).build2(SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""));
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(getExpression_id7SygLIkQnGn, getTargetUnit_id7SygLIkQpOA, getTargetUnitReference_id1BdB9zGarhv, setConversionSpecifier_id7SygLIkQzuc, getConversionSpecifier_id7SygLIkR36w, getContext_id7NHcideTk7h, getApplicableConversionSpecifiers_id3_TFq$0_vSx, getImplicitConversionSpecifier_id2x0M_l2hX_w);
+  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(getExpression_id7SygLIkQnGn, getTargetUnit_id7SygLIkQpOA, getTargetUnitReference_id1BdB9zGarhv, setConversionSpecifier_id7SygLIkQzuc, getConversionSpecifier_id7SygLIkR36w, getContext_id7NHcideTk7h, setFallbackVisibleElementProvider_idTizm$fGBF2, getApplicableConversionSpecifiers_id3_TFq$0_vSx, getImplicitConversionSpecifier_id2x0M_l2hX_w);
 
   private static void ___init___(@NotNull SNode __thisNode__) {
   }
 
   /*package*/ static SNode getContext_id7NHcideTk7h(@NotNull SNode __thisNode__) {
-    return SNodeOperations.getNodeAncestor(__thisNode__, CONCEPTS.IVisibleElementProvider$$O, false, false);
+    SNode vep = SNodeOperations.getNodeAncestor(__thisNode__, CONCEPTS.IVisibleElementProvider$$O, false, false);
+    if ((vep != null)) {
+      return vep;
+    }
+
+    Object obj = __thisNode__.getUserObject("FALLBACK_VEP");
+    if (obj != null && obj instanceof SNode) {
+      SNode fallback = (SNode) obj;
+      return SNodeOperations.as(fallback, CONCEPTS.IVisibleElementProvider$$O);
+    }
+    return null;
+  }
+  /*package*/ static void setFallbackVisibleElementProvider_idTizm$fGBF2(@NotNull SNode __thisNode__, SNode fallback) {
+    __thisNode__.putUserObject("FALLBACK_VEP", fallback);
   }
   /*package*/ static List<SNode> getApplicableConversionSpecifiers_id3_TFq$0_vSx(@NotNull SNode __thisNode__, SNode scope) {
     List<SNode> result = new ArrayList<SNode>();
     SNode expression = IConvertUnit__BehaviorDescriptor.getExpression_id7SygLIkQnGn.invoke(__thisNode__);
     if (expression != null && IConvertUnit__BehaviorDescriptor.getTargetUnit_id7SygLIkQpOA.invoke(__thisNode__) != null) {
-      // deprecated getInstance is necessary to ensure compatibility with the command-line generator execution (MpsEnvironment)
-      ClassLoaderManager classLoaderManager = ClassLoaderManager.getInstance();
-      TypeCheckingContext typeChecking = new IncrementalTypecheckingContext(expression, TypeChecker.getInstance().getTypeCheckerHelper(), classLoaderManager);
-      typeChecking.checkIfNotChecked(expression, false);
-      SNode sourceType = typeChecking.typeOf(expression);
-      typeChecking.dispose();
+      SNode sourceType = TypeHelper.computeType(expression);
       SNode sourceUnitRef = SNodeOperations.as(IUnitSpecification__BehaviorDescriptor.getExpression_id6q45UTytEvW.invoke(UnitConversionUtil.getSpecification(sourceType)), CONCEPTS.UnitReference$Zo);
       SNode targetUnitRef = IConvertUnit__BehaviorDescriptor.getTargetUnitReference_id1BdB9zGarhv.invoke(__thisNode__);
       UnitMap sourceUnitMap = UnitConversionUtil.getMapForType(sourceType);
@@ -108,11 +113,12 @@ public final class IConvertUnit__BehaviorDescriptor extends BaseBHDescriptor {
     if ((IConvertUnit__BehaviorDescriptor.getConversionSpecifier_id7SygLIkR36w.invoke(__thisNode__) != null)) {
       return null;
     }
-    List<SNode> implicitMarkedSpecifiers = ListSequence.fromList(IConvertUnit__BehaviorDescriptor.getApplicableConversionSpecifiers_id3_TFq$0_vSx.invoke(__thisNode__, scope)).where((it) -> SNodeOperations.getModel(it) != null && (int) ConversionRule__BehaviorDescriptor.getPriority_id3wrpJuqIhSQ.invoke(ConversionSpecifier__BehaviorDescriptor.getConversionRule_id1wGuEUvYk55.invoke(it)) > -1).toList();
+    List<SNode> allApplicableConversionSpecifiers = IConvertUnit__BehaviorDescriptor.getApplicableConversionSpecifiers_id3_TFq$0_vSx.invoke(__thisNode__, scope);
+    List<SNode> implicitMarkedSpecifiers = ListSequence.fromList(allApplicableConversionSpecifiers).where((it) -> SNodeOperations.getModel(it) != null && (int) ConversionRule__BehaviorDescriptor.getPriority_id3wrpJuqIhSQ.invoke(ConversionSpecifier__BehaviorDescriptor.getConversionRule_id1wGuEUvYk55.invoke(it)) > -1).toList();
     if (ListSequence.fromList(implicitMarkedSpecifiers).isNotEmpty()) {
       return ListSequence.fromList(implicitMarkedSpecifiers).sort((a, b) -> (int) ConversionRule__BehaviorDescriptor.getPriority_id3wrpJuqIhSQ.invoke(ConversionSpecifier__BehaviorDescriptor.getConversionRule_id1wGuEUvYk55.invoke(a)), true).last();
     } else {
-      return ListSequence.fromList(IConvertUnit__BehaviorDescriptor.getApplicableConversionSpecifiers_id3_TFq$0_vSx.invoke(__thisNode__, scope)).findFirst((it) -> SNodeOperations.getModel(it) == null);
+      return ListSequence.fromList(allApplicableConversionSpecifiers).findFirst((it) -> SNodeOperations.getModel(it) == null);
     }
   }
 
@@ -134,8 +140,11 @@ public final class IConvertUnit__BehaviorDescriptor extends BaseBHDescriptor {
       case 5:
         return (T) ((SNode) getContext_id7NHcideTk7h(node));
       case 6:
-        return (T) ((List<SNode>) getApplicableConversionSpecifiers_id3_TFq$0_vSx(node, (SNode) parameters[0]));
+        setFallbackVisibleElementProvider_idTizm$fGBF2(node, (SNode) parameters[0]);
+        return null;
       case 7:
+        return (T) ((List<SNode>) getApplicableConversionSpecifiers_id3_TFq$0_vSx(node, (SNode) parameters[0]));
+      case 8:
         return (T) ((SNode) getImplicitConversionSpecifier_id2x0M_l2hX_w(node, (SNode) parameters[0]));
       default:
         throw new BHMethodNotFoundException(this, method);

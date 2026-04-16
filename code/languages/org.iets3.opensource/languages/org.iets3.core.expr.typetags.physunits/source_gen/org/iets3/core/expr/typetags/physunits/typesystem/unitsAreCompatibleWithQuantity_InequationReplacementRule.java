@@ -40,7 +40,7 @@ public class unitsAreCompatibleWithQuantity_InequationReplacementRule extends Ab
   public unitsAreCompatibleWithQuantity_InequationReplacementRule() {
   }
   public boolean isApplicableCustom(SNode subtype, SNode supertype, IsApplicable2Status status) {
-    if (!(SNodeOperations.isInstanceOf(subtype, CONCEPTS.TaggedType$O4) | SNodeOperations.isInstanceOf(supertype, CONCEPTS.TaggedType$O4))) {
+    if (!(SNodeOperations.isInstanceOf(subtype, CONCEPTS.TaggedType$O4) || SNodeOperations.isInstanceOf(supertype, CONCEPTS.TaggedType$O4))) {
       return false;
     }
 

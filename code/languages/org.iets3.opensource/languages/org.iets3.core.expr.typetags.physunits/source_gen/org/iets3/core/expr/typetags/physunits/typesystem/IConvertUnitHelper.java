@@ -222,12 +222,9 @@ public class IConvertUnitHelper {
   /**
    * Replace all ValExpression nodes in an expression by a tagged type.
    * 
-   * NOTE: The resulting structure is not an expression anymore, as a Type is not an Expression.
-   *       However, the typesystem can cope with this. E.g., typeof_BinaryExpression will be called with
-   *       binaryExpr.left not being an Expression node. Calling renderReadable() on the resulting
-   *       expression will throw an exception.
-   * 
-   * TODO: Check if this can be solved without producing temporary invalid expressions. 
+   * NOTE: In the resulting structure we are using a type wrapped as an expression (concept "TypeAsExpression").
+   *       The type of this wrapper node is the same as the wrapped type. The typesystem can compute with the
+   *       wrapped type without problems. Outside of the typesystem this wrapper will not be instantiated.
    */
   private static void replaceValExprWithBaseType(final SNode specifierExprCopy, final SNode parentConversionRule, final SNode baseType) {
     ListSequence.fromList(SNodeOperations.getNodeDescendants(specifierExprCopy, CONCEPTS.ValExpression$hl, false, new SAbstractConcept[]{})).visitAll((it) -> {
@@ -240,9 +237,9 @@ public class IConvertUnitHelper {
         SLinkOperations.setTarget(srcUnitRef, LINKS.unit$nTeG, SLinkOperations.getTarget(SLinkOperations.getTarget(parentConversionRule, LINKS.sourceUnit$zzDG), LINKS.unit$nTeG));
         SLinkOperations.setTarget(srcUnitSpec, LINKS.specification$d6YI, srcUnitRef);
         ListSequence.fromList(SLinkOperations.getChildren(taggedType, LINKS.tags$Lx_i)).addElement(srcUnitSpec);
-        SNodeOperations.replaceWithAnother(it, taggedType);
+        SNodeOperations.replaceWithAnother(it, createTypeAsExpression_kpu7bi_a0a8a0a0a0a0i(taggedType));
       } else {
-        SNodeOperations.replaceWithAnother(it, SNodeOperations.copyNode(baseType));
+        SNodeOperations.replaceWithAnother(it, createTypeAsExpression_kpu7bi_a0a0a0a0a0a0a8(SNodeOperations.copyNode(baseType)));
       }
     });
   }
@@ -265,6 +262,16 @@ public class IConvertUnitHelper {
     SNode unitReference = IConvertUnit__BehaviorDescriptor.getTargetUnitReference_id1BdB9zGarhv.invoke(iConvertUnit);
     return createUnitSpecification_kpu7bi_a1a41(SLinkOperations.getTarget(unitReference, LINKS.unit$nTeG), SPropertyOperations.getString(unitReference, PROPS.prefix$AtV));
   }
+  private static SNode createTypeAsExpression_kpu7bi_a0a8a0a0a0a0i(SNode p0) {
+    SNodeBuilder n0 = new SNodeBuilder().init(CONCEPTS.TypeAsExpression$Hu);
+    n0.forChild(LINKS.wrappedType$MbSk).initNode(p0, CONCEPTS.Type$WK, true);
+    return n0.getResult();
+  }
+  private static SNode createTypeAsExpression_kpu7bi_a0a0a0a0a0a0a8(SNode p0) {
+    SNodeBuilder n0 = new SNodeBuilder().init(CONCEPTS.TypeAsExpression$Hu);
+    n0.forChild(LINKS.wrappedType$MbSk).initNode(p0, CONCEPTS.Type$WK, true);
+    return n0.getResult();
+  }
   private static SNode createUnitSpecification_kpu7bi_a1a41(SNode p0, String p1) {
     SNodeBuilder n0 = new SNodeBuilder().init(CONCEPTS.UnitSpecification$6j);
     {
@@ -282,6 +289,7 @@ public class IConvertUnitHelper {
     /*package*/ static final SConcept Type$WK = MetaAdapterFactory.getConcept(0xcfaa4966b7d54b69L, 0xb66a309a6e1a7290L, 0x670d5e92f854a614L, "org.iets3.core.expr.base.structure.Type");
     /*package*/ static final SConcept NumberType$n = MetaAdapterFactory.getConcept(0x6b277d9ad52d416fL, 0xa2091919bd737f50L, 0x7211e50064d40ea8L, "org.iets3.core.expr.simpleTypes.structure.NumberType");
     /*package*/ static final SConcept ValExpression$hl = MetaAdapterFactory.getConcept(0x7ee265bd59864709L, 0x86ed2c6daa33cd8cL, 0x47f53137d1e3b2aeL, "org.iets3.core.expr.typetags.physunits.structure.ValExpression");
+    /*package*/ static final SConcept TypeAsExpression$Hu = MetaAdapterFactory.getConcept(0x7ee265bd59864709L, 0x86ed2c6daa33cd8cL, 0x6e5865d462644237L, "org.iets3.core.expr.typetags.physunits.structure.TypeAsExpression");
     /*package*/ static final SConcept UnitSpecification$6j = MetaAdapterFactory.getConcept(0x7ee265bd59864709L, 0x86ed2c6daa33cd8cL, 0x73b48a125b0d411dL, "org.iets3.core.expr.typetags.physunits.structure.UnitSpecification");
   }
 
@@ -302,5 +310,6 @@ public class IConvertUnitHelper {
     /*package*/ static final SContainmentLink prec$RwIK = MetaAdapterFactory.getContainmentLink(0x6b277d9ad52d416fL, 0xa2091919bd737f50L, 0x7211e50064d40ea8L, 0x127541598201af89L, "prec");
     /*package*/ static final SContainmentLink baseType$z6Mz = MetaAdapterFactory.getContainmentLink(0x5186c6ce428c4f09L, 0xa9df73d9e86c27d3L, 0x186a8ed9947750b6L, 0x186a8ed9947750b9L, "baseType");
     /*package*/ static final SContainmentLink tags$Lx_i = MetaAdapterFactory.getContainmentLink(0x5186c6ce428c4f09L, 0xa9df73d9e86c27d3L, 0x71bf4701bdf46b3eL, 0x186a8ed9947750b7L, "tags");
+    /*package*/ static final SContainmentLink wrappedType$MbSk = MetaAdapterFactory.getContainmentLink(0x7ee265bd59864709L, 0x86ed2c6daa33cd8cL, 0x6e5865d462644237L, 0x6e5865d462644238L, "wrappedType");
   }
 }

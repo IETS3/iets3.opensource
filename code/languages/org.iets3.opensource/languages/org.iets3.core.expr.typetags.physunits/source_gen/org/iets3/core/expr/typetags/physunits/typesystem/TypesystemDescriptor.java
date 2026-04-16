@@ -77,6 +77,10 @@ public class TypesystemDescriptor extends BaseHelginsDescriptor {
       this.myInferenceRules.add(inferenceRule);
     }
     {
+      InferenceRule_Runtime inferenceRule = new typeof_TypeAsExpression_InferenceRule();
+      this.myInferenceRules.add(inferenceRule);
+    }
+    {
       InferenceRule_Runtime inferenceRule = new typeof_Unit_InferenceRule();
       this.myInferenceRules.add(inferenceRule);
     }
@@ -175,7 +179,7 @@ public class TypesystemDescriptor extends BaseHelginsDescriptor {
     {
       OverloadedOpsProvider_OneTypeSpecified provider = new OverloadedOpsProvider_OneTypeSpecified() {
         {
-          this.myOperandType = createAbstractTaggedType_3ist9o_a0a0a0a0a0a0a83a0();
+          this.myOperandType = createAbstractTaggedType_3ist9o_a0a0a0a0a0a0a93a0();
           this.myOperationConcept = CONCEPTS.FractionExpression$NO;
           this.myTypeIsExact = false;
           this.myIsStrong = false;
@@ -183,7 +187,7 @@ public class TypesystemDescriptor extends BaseHelginsDescriptor {
           this.myRuleNodeId = "7396263120834015294";
         }
         public SNode getOperationType(SNode operation, SNode leftOperandType, SNode rightOperandType) {
-          return TypeChecker.getInstance().getRulesManager().getOperationType(createDivExpression_3ist9o_a0a0a1a0a0a0a0mb0a(SNodeOperations.copyNode(SLinkOperations.getTarget(operation, LINKS.numerator$GF9U)), SNodeOperations.copyNode(SLinkOperations.getTarget(operation, LINKS.denominator$GFQX))), leftOperandType, rightOperandType);
+          return TypeChecker.getInstance().getRulesManager().getOperationType(createDivExpression_3ist9o_a0a0a1a0a0a0a0nb0a(SNodeOperations.copyNode(SLinkOperations.getTarget(operation, LINKS.numerator$GF9U)), SNodeOperations.copyNode(SLinkOperations.getTarget(operation, LINKS.denominator$GFQX))), leftOperandType, rightOperandType);
         }
         public boolean isApplicable(SubtypingManager subtypingManager, SNode operation, SNode leftOperandType, SNode rightOperandType) {
           return PhysUnitTypeHelper.hasSingleUnitSpecificationTag(leftOperandType) || PhysUnitTypeHelper.hasSingleUnitSpecificationTag(rightOperandType);
@@ -349,11 +353,11 @@ public class TypesystemDescriptor extends BaseHelginsDescriptor {
       return n0.getResult();
     }
   }
-  private static SNode createAbstractTaggedType_3ist9o_a0a0a0a0a0a0a83a0() {
+  private static SNode createAbstractTaggedType_3ist9o_a0a0a0a0a0a0a93a0() {
     SNodeBuilder n0 = new SNodeBuilder().init(CONCEPTS.AbstractTaggedType$oL);
     return n0.getResult();
   }
-  private static SNode createDivExpression_3ist9o_a0a0a1a0a0a0a0mb0a(SNode p0, SNode p1) {
+  private static SNode createDivExpression_3ist9o_a0a0a1a0a0a0a0nb0a(SNode p0, SNode p1) {
     SNodeBuilder n0 = new SNodeBuilder().init(CONCEPTS.DivExpression$us);
     n0.forChild(LINKS.left$zxUa).initNode(p0, CONCEPTS.Expression$D_, true);
     n0.forChild(LINKS.right$zBjx).initNode(p1, CONCEPTS.Expression$D_, true);
