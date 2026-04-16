@@ -17,7 +17,6 @@ import de.slisson.mps.richtext.behavior.Text__BehaviorDescriptor;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
 import jetbrains.mps.internal.collections.runtime.ListSequence;
-import jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations;
 import de.slisson.mps.richtext.behavior.IWord__BehaviorDescriptor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
@@ -51,35 +50,22 @@ public final class StringInterpolationExpr__BehaviorDescriptor extends BaseBHDes
   }
   /*package*/ static SNode createReducedExpression_id71dSyJVoY1g(@NotNull SNode __thisNode__) {
     SNode result = null;
-    SNode lastToken = null;
     for (SNode w : ListSequence.fromList(SLinkOperations.getChildren(SLinkOperations.getTarget(__thisNode__, LINKS.text$btRI), LINKS.words$C8QZ))) {
       SNode token;
       if (SNodeOperations.isInstanceOf(w, CONCEPTS.InterpolExprWord$4z)) {
-        if (SNodeOperations.isInstanceOf(lastToken, CONCEPTS.StringLiteral$By)) {
-          SPropertyOperations.assign(SNodeOperations.cast(lastToken, CONCEPTS.StringLiteral$By), PROPS.value$zwlK, SPropertyOperations.getString(SNodeOperations.cast(lastToken, CONCEPTS.StringLiteral$By), PROPS.value$zwlK) + " ");
-          token = SLinkOperations.getTarget(SNodeOperations.cast(w, CONCEPTS.InterpolExprWord$4z), LINKS.expr$CW3E);
-        } else if ((lastToken != null)) {
-          token = createPlusExpression_kso7fo_a0a0a0a1a2a3(SLinkOperations.getTarget(SNodeOperations.cast(w, CONCEPTS.InterpolExprWord$4z), LINKS.expr$CW3E));
-        } else {
-          token = SLinkOperations.getTarget(SNodeOperations.cast(w, CONCEPTS.InterpolExprWord$4z), LINKS.expr$CW3E);
-        }
+        token = SLinkOperations.getTarget(SNodeOperations.cast(w, CONCEPTS.InterpolExprWord$4z), LINKS.expr$CW3E);
       } else {
         String content = IWord__BehaviorDescriptor.toTextString_id3Q5enzfMT4t.invoke(w);
         if ((content == null || content.length() == 0)) {
           continue;
         }
-        String prefix = "";
-        if (lastToken != null && !(SNodeOperations.isInstanceOf(lastToken, CONCEPTS.StringLiteral$By))) {
-          prefix = " ";
-        }
-        token = createStringLiteral_kso7fo_a0e0a1a2a3(prefix + content);
+        token = createStringLiteral_kso7fo_a0c0a1a1a3(content);
       }
       if (result == null) {
         result = token;
       } else {
-        result = createPlusExpression_kso7fo_a0a0a2a2a3(result, token);
+        result = createPlusExpression_kso7fo_a0a0a2a1a3(result, token);
       }
-      lastToken = token;
     }
     return result;
   }
@@ -131,21 +117,12 @@ public final class StringInterpolationExpr__BehaviorDescriptor extends BaseBHDes
   public SAbstractConcept getConcept() {
     return CONCEPT;
   }
-  private static SNode createPlusExpression_kso7fo_a0a0a0a1a2a3(SNode p0) {
-    SNodeBuilder n0 = new SNodeBuilder().init(CONCEPTS.PlusExpression$mx);
-    {
-      SNodeBuilder n1 = n0.forChild(LINKS.left$zxUa).init(CONCEPTS.StringLiteral$By);
-      n1.setProperty(PROPS.value$zwlK, " ");
-    }
-    n0.forChild(LINKS.right$zBjx).initNode(p0, CONCEPTS.Expression$D_, true);
-    return n0.getResult();
-  }
-  private static SNode createStringLiteral_kso7fo_a0e0a1a2a3(String p0) {
+  private static SNode createStringLiteral_kso7fo_a0c0a1a1a3(String p0) {
     SNodeBuilder n0 = new SNodeBuilder().init(CONCEPTS.StringLiteral$By);
     n0.setProperty(PROPS.value$zwlK, p0);
     return n0.getResult();
   }
-  private static SNode createPlusExpression_kso7fo_a0a0a2a2a3(SNode p0, SNode p1) {
+  private static SNode createPlusExpression_kso7fo_a0a0a2a1a3(SNode p0, SNode p1) {
     SNodeBuilder n0 = new SNodeBuilder().init(CONCEPTS.PlusExpression$mx);
     n0.forChild(LINKS.left$zxUa).initNode(p0, CONCEPTS.Expression$D_, true);
     n0.forChild(LINKS.right$zBjx).initNode(p1, CONCEPTS.Expression$D_, true);

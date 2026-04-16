@@ -13,6 +13,7 @@ import jetbrains.mps.smodel.runtime.ConstraintContext_CanBeAncestor;
 import jetbrains.mps.smodel.runtime.base.BasePropertyConstraintsDescriptor;
 import jetbrains.mps.smodel.runtime.ConstraintsDescriptor;
 import org.jetbrains.mps.openapi.model.SNode;
+import org.apache.commons.lang3.StringUtils;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
 import jetbrains.mps.smodel.runtime.base.BaseReferenceConstraintsDescriptor;
@@ -65,7 +66,7 @@ public class FeatureModel_Constraints extends BaseConstraintsDescriptor {
     }
     @Override
     public Object getValue(SNode node) {
-      return SPropertyOperations.getString(SLinkOperations.getTarget(node, LINKS.root$XEj1), PROPS.name$MnvL);
+      return (StringUtils.isEmpty(SPropertyOperations.getString(SLinkOperations.getTarget(node, LINKS.root$XEj1), PROPS.name$MnvL)) ? "NO_NAME" : SPropertyOperations.getString(SLinkOperations.getTarget(node, LINKS.root$XEj1), PROPS.name$MnvL));
     }
   }
   /*package*/ static final class RD1 extends BaseReferenceConstraintsDescriptor {
