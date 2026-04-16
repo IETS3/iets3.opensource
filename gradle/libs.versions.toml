@@ -4,7 +4,7 @@ mpsQaVersion = "2024.1.1298.c3de9ee"
 # if you want to build against a specific mbeddr branch, prepend it here with a dot.
 # NOTE: instances of '/' in the branch name need to be replaced by '-'
 # example: mbeddrVersion="feature-my_new_feature.2023.2.+"
-mbeddrVersion = "2024.1.26445.99c2179"
+mbeddrVersion = "2024.1.26449.5767bbf"
 
 jbr = "17.0.11-b1207.30"
 
