@@ -2341,7 +2341,7 @@
               <node concept="2206d8" id="4ptnK4ii18c" role="2lDidJ">
                 <node concept="19SGf9" id="4ptnK4ii18e" role="2206d9">
                   <node concept="19SUe$" id="4ptnK4ii18f" role="19SJt6">
-                    <property role="19SUeA" value="The author" />
+                    <property role="19SUeA" value="The author " />
                   </node>
                   <node concept="2206Zw" id="4ptnK4ii2NU" role="19SJt6">
                     <node concept="1QScDb" id="4ptnK4ii2PL" role="2lDidJ">
@@ -2352,7 +2352,7 @@
                     </node>
                   </node>
                   <node concept="19SUe$" id="4ptnK4ii2NX" role="19SJt6">
-                    <property role="19SUeA" value="has published in" />
+                    <property role="19SUeA" value=" has published in " />
                   </node>
                   <node concept="2206Zw" id="4ptnK4ii4L2" role="19SJt6">
                     <node concept="1QScDb" id="4ptnK4ipC$O" role="2lDidJ">
