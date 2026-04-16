@@ -14,9 +14,12 @@ import org.iets3.variability.featuremodel.base.behavior.AbstractFeatureAttribute
 import jetbrains.mps.errors.messageTargets.MessageTarget;
 import jetbrains.mps.errors.messageTargets.NodeMessageTarget;
 import jetbrains.mps.errors.IErrorReporter;
+import jetbrains.mps.internal.collections.runtime.ListSequence;
 import org.jetbrains.mps.openapi.language.SAbstractConcept;
+import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
 import org.jetbrains.mps.openapi.language.SConcept;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
+import org.jetbrains.mps.openapi.language.SReferenceLink;
 
 public class check_FeatureAttribute_NonTypesystemRule extends AbstractNonTypesystemRule_Runtime implements NonTypesystemRule_Runtime {
   public check_FeatureAttribute_NonTypesystemRule() {
@@ -32,6 +35,12 @@ public class check_FeatureAttribute_NonTypesystemRule extends AbstractNonTypesys
         }
       });
     }
+    ListSequence.fromList(SNodeOperations.getNodeDescendants(featureAttribute, CONCEPTS.AttributeRefExpr$VD, false, new SAbstractConcept[]{})).where((are) -> AbstractFeatureAttribute__BehaviorDescriptor.notPresentValueForSolver_idRJ4G$UUrsi.invoke(SLinkOperations.getTarget(are, LINKS.attribute$Kd68)).isEmpty()).visitAll((are) -> {
+      {
+        final MessageTarget errorTarget = new NodeMessageTarget();
+        IErrorReporter _reporter_2309309498 = typeCheckingContext.reportWarning(are, "Attribute used, but without NotPresent-Value!" + " Set it!", "r:ea20ecfb-5cc1-4867-966a-b2976cfc5ae3(org.iets3.variability.featuremodel.base.typesystem)", "4489740985360550969", null, errorTarget);
+      }
+    });
   }
   public SAbstractConcept getApplicableConcept() {
     return CONCEPTS.FeatureAttribute$en;
@@ -45,6 +54,11 @@ public class check_FeatureAttribute_NonTypesystemRule extends AbstractNonTypesys
 
   private static final class CONCEPTS {
     /*package*/ static final SConcept FeatureModel$X0 = MetaAdapterFactory.getConcept(0x165f1d0525064544L, 0x895e1424f54166ecL, 0x375cadc47516a211L, "org.iets3.variability.featuremodel.base.structure.FeatureModel");
+    /*package*/ static final SConcept AttributeRefExpr$VD = MetaAdapterFactory.getConcept(0x165f1d0525064544L, 0x895e1424f54166ecL, 0x7cde27c7fd953cbaL, "org.iets3.variability.featuremodel.base.structure.AttributeRefExpr");
     /*package*/ static final SConcept FeatureAttribute$en = MetaAdapterFactory.getConcept(0x165f1d0525064544L, 0x895e1424f54166ecL, 0x7cde27c7fd65e207L, "org.iets3.variability.featuremodel.base.structure.FeatureAttribute");
+  }
+
+  private static final class LINKS {
+    /*package*/ static final SReferenceLink attribute$Kd68 = MetaAdapterFactory.getReferenceLink(0x165f1d0525064544L, 0x895e1424f54166ecL, 0x7cde27c7fd953cbaL, 0x7cde27c7fd953ccaL, "attribute");
   }
 }
