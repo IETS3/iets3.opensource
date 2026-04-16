@@ -12,6 +12,7 @@ The project does _not_ follow Semantic Versioning and the changes are documented
   - default expression of another attribute in feature model
   - presence condition in artifact
   - left-hand-side condition in an ITabularVarPoint
+- Allow to set `reportsFilenamePrefix` for the `ICustomRunnerConfig` interface
 
 ### Changed
 
