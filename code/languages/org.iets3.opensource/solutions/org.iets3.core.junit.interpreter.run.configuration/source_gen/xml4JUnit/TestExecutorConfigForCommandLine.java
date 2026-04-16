@@ -10,7 +10,7 @@ import java.util.HashMap;
 
 public class TestExecutorConfigForCommandLine implements ICustomRunnerConfig {
 
-  private static String myReportsFilenamePrefix = "InterpreterTestSuite";
+  private String myReportsFilenamePrefix = "InterpreterTestSuite";
   private static final String outputPathMacro = "iets3.interpreterExecutor.genPath";
   private static final IInterpreterRunListener listener = new NullRunListener();
   private static final IInterpreterTestReporter reporter = new InterpreterTestReporter();
@@ -18,12 +18,17 @@ public class TestExecutorConfigForCommandLine implements ICustomRunnerConfig {
   public static String keyCustomRunnerAspect = "CustomRunnerAspect";
   public static String keyBuildMacroRef = "BuildMacroRef";
 
+  @Override
   public String getOutputPathMacroName() {
     return outputPathMacro;
   }
-
+  @Override
   public String getReportFileNamePrefix() {
     return myReportsFilenamePrefix;
+  }
+  @Override
+  public void setReportFileNamePrefix(String prefix) {
+    this.myReportsFilenamePrefix = prefix;
   }
   @Override
   public IInterpreterRunListener getListener() {

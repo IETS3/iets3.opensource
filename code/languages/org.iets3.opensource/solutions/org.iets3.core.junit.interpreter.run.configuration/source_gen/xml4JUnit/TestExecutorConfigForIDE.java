@@ -46,4 +46,8 @@ public class TestExecutorConfigForIDE implements ICustomRunnerConfig {
   @Override
   public void clear() {
   }
+  @Override
+  public void setReportFileNamePrefix(String prefix) {
+    this.myReportsFilenamePrefix = prefix;
+  }
 }
