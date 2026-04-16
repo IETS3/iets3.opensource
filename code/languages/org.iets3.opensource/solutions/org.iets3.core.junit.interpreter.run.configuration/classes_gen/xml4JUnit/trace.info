@@ -130,51 +130,57 @@
   </root>
   <root nodeRef="r:3b363c34-a1ec-4ae6-92cc-95c0273ad0c2(xml4JUnit)/6210493253424925917">
     <file name="TestExecutorConfigForCommandLine.java">
-      <node id="6210493253424928164" at="13,0,14,0" concept="8" trace="myReportsFilenamePrefix" />
+      <node id="7174873163069082444" at="13,0,14,0" concept="2" trace="myReportsFilenamePrefix" />
       <node id="6210493253424928168" at="14,0,15,0" concept="8" trace="outputPathMacro" />
       <node id="6962548927777570539" at="15,0,16,0" concept="8" trace="listener" />
       <node id="6962548927777586702" at="16,0,17,0" concept="8" trace="reporter" />
       <node id="6962548927783677377" at="17,0,18,0" concept="2" trace="myMap" />
       <node id="6962548927783776817" at="18,0,19,0" concept="8" trace="keyCustomRunnerAspect" />
       <node id="6962548927783778091" at="19,0,20,0" concept="8" trace="keyBuildMacroRef" />
-      <node id="6210493253424982195" at="21,42,22,27" concept="7" />
-      <node id="6210493253424979725" at="25,43,26,35" concept="7" />
-      <node id="6962548927777565536" at="29,48,30,20" concept="7" />
-      <node id="6962548927777565544" at="33,49,34,20" concept="7" />
-      <node id="6962548927782231037" at="37,43,38,17" concept="7" />
-      <node id="6962548927783684290" at="41,45,42,47" concept="1" />
-      <node id="6962548927783699982" at="45,33,46,47" concept="7" />
-      <node id="6962548927783714814" at="49,23,50,39" concept="1" />
-      <node id="6210493253424982192" at="21,0,24,0" concept="5" trace="getOutputPathMacroName#()Ljava/lang/String;" />
-      <node id="6210493253424979463" at="25,0,28,0" concept="5" trace="getReportFileNamePrefix#()Ljava/lang/String;" />
-      <node id="6962548927777565529" at="28,0,32,0" concept="5" trace="getListener#()Lorg/iets3/core/junit/interpreter/run/configuration/plugin/IInterpreterRunListener;" />
-      <node id="6962548927777565537" at="32,0,36,0" concept="5" trace="getReporter#()Lxml4JUnit/IInterpreterTestReporter;" />
-      <node id="6962548927782231030" at="36,0,40,0" concept="5" trace="isTerminationRequested#()Z" />
-      <node id="6962548927783675235" at="40,0,44,0" concept="5" trace="put#(Ljava/lang/String;Ljava/lang/String;)V" />
-      <node id="6962548927783697772" at="44,0,48,0" concept="5" trace="get#(Ljava/lang/String;)Ljava/lang/String;" />
-      <node id="6962548927783697780" at="48,0,52,0" concept="5" trace="clear#()V" />
-      <scope id="6210493253424982194" at="21,42,22,27" />
-      <scope id="6210493253424979466" at="25,43,26,35" />
-      <scope id="6962548927777565533" at="29,48,30,20" />
-      <scope id="6962548927777565541" at="33,49,34,20" />
-      <scope id="6962548927782231034" at="37,43,38,17" />
-      <scope id="6962548927783675243" at="41,45,42,47" />
-      <scope id="6962548927783697778" at="45,33,46,47" />
-      <scope id="6962548927783697784" at="49,23,50,39" />
-      <scope id="6210493253424982192" at="21,0,24,0" />
-      <scope id="6210493253424979463" at="25,0,28,0" />
-      <scope id="6962548927777565529" at="28,0,32,0" />
-      <scope id="6962548927777565537" at="32,0,36,0" />
-      <scope id="6962548927782231030" at="36,0,40,0" />
-      <scope id="6962548927783675235" at="40,0,44,0">
+      <node id="6210493253424982195" at="22,42,23,27" concept="7" />
+      <node id="6210493253424979725" at="26,43,27,35" concept="7" />
+      <node id="7174873163069117886" at="30,54,31,42" concept="1" />
+      <node id="6962548927777565536" at="34,48,35,20" concept="7" />
+      <node id="6962548927777565544" at="38,49,39,20" concept="7" />
+      <node id="6962548927782231037" at="42,43,43,17" concept="7" />
+      <node id="6962548927783684290" at="46,45,47,47" concept="1" />
+      <node id="6962548927783699982" at="50,33,51,47" concept="7" />
+      <node id="6962548927783714814" at="54,23,55,39" concept="1" />
+      <node id="6210493253424982192" at="21,0,25,0" concept="5" trace="getOutputPathMacroName#()Ljava/lang/String;" />
+      <node id="6210493253424979463" at="25,0,29,0" concept="5" trace="getReportFileNamePrefix#()Ljava/lang/String;" />
+      <node id="7174873163069113405" at="29,0,33,0" concept="5" trace="setReportFileNamePrefix#(Ljava/lang/String;)V" />
+      <node id="6962548927777565529" at="33,0,37,0" concept="5" trace="getListener#()Lorg/iets3/core/junit/interpreter/run/configuration/plugin/IInterpreterRunListener;" />
+      <node id="6962548927777565537" at="37,0,41,0" concept="5" trace="getReporter#()Lxml4JUnit/IInterpreterTestReporter;" />
+      <node id="6962548927782231030" at="41,0,45,0" concept="5" trace="isTerminationRequested#()Z" />
+      <node id="6962548927783675235" at="45,0,49,0" concept="5" trace="put#(Ljava/lang/String;Ljava/lang/String;)V" />
+      <node id="6962548927783697772" at="49,0,53,0" concept="5" trace="get#(Ljava/lang/String;)Ljava/lang/String;" />
+      <node id="6962548927783697780" at="53,0,57,0" concept="5" trace="clear#()V" />
+      <scope id="6210493253424982194" at="22,42,23,27" />
+      <scope id="6210493253424979466" at="26,43,27,35" />
+      <scope id="7174873163069113408" at="30,54,31,42" />
+      <scope id="6962548927777565533" at="34,48,35,20" />
+      <scope id="6962548927777565541" at="38,49,39,20" />
+      <scope id="6962548927782231034" at="42,43,43,17" />
+      <scope id="6962548927783675243" at="46,45,47,47" />
+      <scope id="6962548927783697778" at="50,33,51,47" />
+      <scope id="6962548927783697784" at="54,23,55,39" />
+      <scope id="6210493253424982192" at="21,0,25,0" />
+      <scope id="6210493253424979463" at="25,0,29,0" />
+      <scope id="7174873163069113405" at="29,0,33,0">
+        <var name="prefix" id="7174873163069115432" />
+      </scope>
+      <scope id="6962548927777565529" at="33,0,37,0" />
+      <scope id="6962548927777565537" at="37,0,41,0" />
+      <scope id="6962548927782231030" at="41,0,45,0" />
+      <scope id="6962548927783675235" at="45,0,49,0">
         <var name="key" id="6962548927783675239" />
         <var name="value" id="6962548927783675241" />
       </scope>
-      <scope id="6962548927783697772" at="44,0,48,0">
+      <scope id="6962548927783697772" at="49,0,53,0">
         <var name="key" id="6962548927783697776" />
       </scope>
-      <scope id="6962548927783697780" at="48,0,52,0" />
-      <unit id="6210493253424925917" at="11,0,53,0" name="xml4JUnit.TestExecutorConfigForCommandLine" />
+      <scope id="6962548927783697780" at="53,0,57,0" />
+      <unit id="6210493253424925917" at="11,0,58,0" name="xml4JUnit.TestExecutorConfigForCommandLine" />
     </file>
   </root>
   <root nodeRef="r:3b363c34-a1ec-4ae6-92cc-95c0273ad0c2(xml4JUnit)/6917321505705319729">
@@ -921,27 +927,31 @@
   <root nodeRef="r:3b363c34-a1ec-4ae6-92cc-95c0273ad0c2(xml4JUnit)/6962548927774890821">
     <file name="ICustomRunnerConfig.java">
       <node id="6962548927774890986" at="8,0,9,0" concept="5" trace="getOutputPathMacroName#()Ljava/lang/String;" />
-      <node id="6962548927774891200" at="9,0,10,0" concept="5" trace="getReportFileNamePrefix#()Ljava/lang/String;" />
-      <node id="6962548927777533742" at="10,0,11,0" concept="5" trace="getListener#()Lorg/iets3/core/junit/interpreter/run/configuration/plugin/IInterpreterRunListener;" />
-      <node id="6962548927777533937" at="11,0,12,0" concept="5" trace="getReporter#()Lxml4JUnit/IInterpreterTestReporter;" />
-      <node id="6962548927781955669" at="12,0,13,0" concept="5" trace="isTerminationRequested#()Z" />
-      <node id="6962548927783606487" at="13,0,14,0" concept="5" trace="put#(Ljava/lang/String;Ljava/lang/String;)V" />
-      <node id="6962548927783686860" at="14,0,15,0" concept="5" trace="get#(Ljava/lang/String;)Ljava/lang/String;" />
-      <node id="6962548927783688367" at="15,0,16,0" concept="5" trace="clear#()V" />
+      <node id="7690551029442192869" at="9,0,10,0" concept="5" trace="setReportFileNamePrefix#(Ljava/lang/String;)V" />
+      <node id="6962548927774891200" at="10,0,11,0" concept="5" trace="getReportFileNamePrefix#()Ljava/lang/String;" />
+      <node id="6962548927777533742" at="11,0,12,0" concept="5" trace="getListener#()Lorg/iets3/core/junit/interpreter/run/configuration/plugin/IInterpreterRunListener;" />
+      <node id="6962548927777533937" at="12,0,13,0" concept="5" trace="getReporter#()Lxml4JUnit/IInterpreterTestReporter;" />
+      <node id="6962548927781955669" at="13,0,14,0" concept="5" trace="isTerminationRequested#()Z" />
+      <node id="6962548927783606487" at="14,0,15,0" concept="5" trace="put#(Ljava/lang/String;Ljava/lang/String;)V" />
+      <node id="6962548927783686860" at="15,0,16,0" concept="5" trace="get#(Ljava/lang/String;)Ljava/lang/String;" />
+      <node id="6962548927783688367" at="16,0,17,0" concept="5" trace="clear#()V" />
       <scope id="6962548927774890986" at="8,0,9,0" />
-      <scope id="6962548927774891200" at="9,0,10,0" />
-      <scope id="6962548927777533742" at="10,0,11,0" />
-      <scope id="6962548927777533937" at="11,0,12,0" />
-      <scope id="6962548927781955669" at="12,0,13,0" />
-      <scope id="6962548927783606487" at="13,0,14,0">
+      <scope id="7690551029442192869" at="9,0,10,0">
+        <var name="prefix" id="7690551029442193299" />
+      </scope>
+      <scope id="6962548927774891200" at="10,0,11,0" />
+      <scope id="6962548927777533742" at="11,0,12,0" />
+      <scope id="6962548927777533937" at="12,0,13,0" />
+      <scope id="6962548927781955669" at="13,0,14,0" />
+      <scope id="6962548927783606487" at="14,0,15,0">
         <var name="key" id="6962548927783608968" />
         <var name="value" id="6962548927783609422" />
       </scope>
-      <scope id="6962548927783686860" at="14,0,15,0">
+      <scope id="6962548927783686860" at="15,0,16,0">
         <var name="key" id="6962548927783687332" />
       </scope>
-      <scope id="6962548927783688367" at="15,0,16,0" />
-      <unit id="6962548927774890821" at="7,0,17,0" name="xml4JUnit.ICustomRunnerConfig" />
+      <scope id="6962548927783688367" at="16,0,17,0" />
+      <unit id="6962548927774890821" at="7,0,18,0" name="xml4JUnit.ICustomRunnerConfig" />
     </file>
   </root>
   <root nodeRef="r:3b363c34-a1ec-4ae6-92cc-95c0273ad0c2(xml4JUnit)/6962548927777590387">
@@ -958,6 +968,7 @@
       <node id="6962548927777590434" at="32,49,33,20" concept="7" />
       <node id="6962548927781978573" at="36,43,37,47" concept="7" />
       <node id="6962548927783709625" at="43,33,44,14" concept="7" />
+      <node id="606611348691680286" at="50,54,51,42" concept="1" />
       <node id="6962548927781879852" at="17,0,20,0" concept="0" trace="TestExecutorConfigForIDE#(Ljetbrains/mps/baseLanguage/closures/runtime/_FunctionTypes/_return_P0_E0;)V" />
       <node id="6962548927777590408" at="20,0,23,0" concept="5" trace="getOutputPathMacroName#()Ljava/lang/String;" />
       <node id="6962548927777590415" at="24,0,27,0" concept="5" trace="getReportFileNamePrefix#()Ljava/lang/String;" />
@@ -967,6 +978,7 @@
       <node id="6962548927777590430" at="31,0,35,0" concept="5" trace="getReporter#()Lxml4JUnit/IInterpreterTestReporter;" />
       <node id="6962548927781978566" at="35,0,39,0" concept="5" trace="isTerminationRequested#()Z" />
       <node id="6962548927783691406" at="42,0,46,0" concept="5" trace="get#(Ljava/lang/String;)Ljava/lang/String;" />
+      <node id="606611348691677524" at="49,0,53,0" concept="5" trace="setReportFileNamePrefix#(Ljava/lang/String;)V" />
       <scope id="6962548927783691404" at="40,45,40,45" />
       <scope id="6962548927783691418" at="47,23,47,23" />
       <scope id="6962548927781879856" at="17,110,18,64" />
@@ -976,6 +988,7 @@
       <scope id="6962548927777590433" at="32,49,33,20" />
       <scope id="6962548927781978570" at="36,43,37,47" />
       <scope id="6962548927783691412" at="43,33,44,14" />
+      <scope id="606611348691677530" at="50,54,51,42" />
       <scope id="6962548927781879852" at="17,0,20,0">
         <var name="termiateRequestedFunction" id="6962548927781932076" />
       </scope>
@@ -992,7 +1005,10 @@
       <scope id="6962548927783691406" at="42,0,46,0">
         <var name="key" id="6962548927783691410" />
       </scope>
-      <unit id="6962548927777590387" at="9,0,50,0" name="xml4JUnit.TestExecutorConfigForIDE" />
+      <scope id="606611348691677524" at="49,0,53,0">
+        <var name="prefix" id="606611348691677528" />
+      </scope>
+      <unit id="6962548927777590387" at="9,0,54,0" name="xml4JUnit.TestExecutorConfigForIDE" />
     </file>
   </root>
   <root nodeRef="r:3b363c34-a1ec-4ae6-92cc-95c0273ad0c2(xml4JUnit)/9207170148972427287">
