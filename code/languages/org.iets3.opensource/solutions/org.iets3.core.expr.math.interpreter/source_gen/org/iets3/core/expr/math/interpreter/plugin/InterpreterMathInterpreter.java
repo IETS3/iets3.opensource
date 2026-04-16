@@ -1523,13 +1523,15 @@ public class InterpreterMathInterpreter extends InterpreterBase {
           coverage.visitedEvaluator(this);
           coverage.visitedConcept(this.concept);
           coverage.visitedConcept(SNodeOperations.getConcept(node));
-          return new NixSupport(context.getRootInterpreter().evaluate(SLinkOperations.getTarget(node, LINKS.expr$CW3E), context, coverage, trace, false), context.getRootInterpreter().evaluate(SLinkOperations.getTarget(node, LINKS.exponent$uVP8), context, coverage, trace, false), node, (NixSupport s) -> {
-            BigInteger base = s.getBigI(0);
-            BigInteger exp = s.getBigI(1);
-            if (exp.compareTo(BigInteger.ZERO) >= 0) {
-              return base.pow(exp.intValue());
+          return new NixSupport(context.getRootInterpreter().evaluate(SLinkOperations.getTarget(node, LINKS.expr$CW3E), context, coverage, trace, false), context.getRootInterpreter().evaluate(SLinkOperations.getTarget(node, LINKS.exponent$uVP8), context, coverage, trace, false), node, new _FunctionTypes._return_P1_E0<Comparable, NixSupport>() {
+            public Comparable invoke(NixSupport s) {
+              BigInteger base = s.getBigI(0);
+              BigInteger exp = s.getBigI(1);
+              if (exp.compareTo(BigInteger.ZERO) >= 0) {
+                return base.pow(exp.intValue());
+              }
+              return new BigDecimal(base).pow(exp.intValue(), MathContext.DECIMAL128);
             }
-            return new BigDecimal(base).pow(exp.intValue(), MathContext.DECIMAL128);
           }).run();
         } catch (StopAndReturnException stop) {
           return stop.value();
