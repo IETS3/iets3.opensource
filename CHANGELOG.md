@@ -8,8 +8,24 @@ The project does _not_ follow Semantic Versioning and the changes are documented
 ## April 2026
 
 ### Added
-
+- Variability: Added checking rules for missing Not-Present-Values of Attributes. The following cases have been covered:
+  - default expression of another attribute in feature model
+  - presence condition in artifact
+  - left-hand-side condition in an ITabularVarPoint
+- Allow to set `reportsFilenamePrefix` for the `ICustomRunnerConfig` interface
 - Physical units (language `org.iets3.core.expr.typetags.physunits`): Implicit conversion rules are now supported in typesystem and interpreter. E.g., with the implicit conversion rules defined in `SIDerivedUnits` an expression like `(7 min + 1234 sec) < 0.5 h` is perfectly valid and can be evaluated by the interpreter.
+
+### Changed
+
+- Variability: The automatic execution of solver checking for tabular variation points (eg. feature decision tables) has been switched off. Now the solver check can be executed manually via "Run/Evaluate/Check manually" from the context menu. We will work on improving stability and performance for this feature and plan to reactivate it back later.
+
+
+## March 2026
+
+### Fixed
+
+- Fixed a bug in the `execTestsByInterpreter` task which would result in a wrong JNA path
+- Variability: Newly created feature models will not show a "Property constraint violation" error anymore.
 
 
 ## February 2026
