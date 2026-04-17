@@ -2135,6 +2135,16 @@
             <ref role="3bR37D" to="90a9:5vQ_hAOOn52" resolve="de.slisson.mps.conditionalEditor.hints" />
           </node>
         </node>
+        <node concept="1SiIV0" id="2L0OAuQ2Fu7" role="3bR37C">
+          <node concept="3bR9La" id="2L0OAuQ2Fu8" role="1SiIV1">
+            <ref role="3bR37D" node="1VJeVhdX98g" resolve="org.iets3.core.expr.typetags.physunits" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="2L0OAuQ2Fu9" role="3bR37C">
+          <node concept="3bR9La" id="2L0OAuQ2Fua" role="1SiIV1">
+            <ref role="3bR37D" node="JUiQTzdslj" resolve="org.iets3.core.expr.typetags" />
+          </node>
+        </node>
       </node>
       <node concept="1E1JtD" id="7yHH$DDpBOh" role="2G$12L">
         <property role="BnDLt" value="true" />
