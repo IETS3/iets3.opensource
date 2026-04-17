@@ -7,7 +7,21 @@ import jetbrains.mps.baseLanguage.tuples.runtime.Tuples;
 
 public interface IUnitStandardizer {
 
+  /**
+   * Check if there is a standard unit for the given referenced unit.
+   * 
+   * If this method returns a unit, then the following applies:
+   * 1. There is a standard unit.
+   * 2. There is an implicit conversion rule allowing to convert values with unit unitRef
+   *    to the standard unit.
+   * 
+   * E.g., when in the SI-system, "m" would be the standard unit for all kinds of length quantities.
+   */
   SNode getStandardUnit(SNode unitRef);
 
-  Tuples._2<SNode, SNode> getConversion(SNode unitRef);
+  /**
+   * This method behaves like the above, but additionally returns the implicit conversion rule
+   * which witnesses the existence of a standard unit.
+   */
+  Tuples._2<SNode, SNode> getConversionToStandardUnit(SNode unitRef);
 }

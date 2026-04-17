@@ -30,7 +30,7 @@ public abstract class AbstractUnitStandardizer implements IUnitStandardizer {
 
   @Override
   public SNode getStandardUnit(SNode unitRef) {
-    Tuples._2<SNode, SNode> result = getConversion(unitRef);
+    Tuples._2<SNode, SNode> result = getConversionToStandardUnit(unitRef);
     return (result == null ? null : result._0());
   }
 

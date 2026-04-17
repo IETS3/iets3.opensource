@@ -22,7 +22,7 @@ public class SIUnitStandardizer extends AbstractUnitStandardizer {
   }
 
   @Override
-  public Tuples._2<SNode, SNode> getConversion(SNode unitRef) {
+  public Tuples._2<SNode, SNode> getConversionToStandardUnit(SNode unitRef) {
     SNode defaultUnit = getDefaultUnit(unitRef);
     if ((defaultUnit == null)) {
       return null;

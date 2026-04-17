@@ -13,16 +13,7 @@ import jetbrains.mps.baseLanguage.tuples.runtime.Tuples;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
 import jetbrains.mps.typechecking.TypecheckingFacade;
 import org.iets3.core.expr.typetags.physunits.behavior.ConversionSpecifier__BehaviorDescriptor;
-import jetbrains.mps.baseLanguage.tuples.runtime.MultiTuple;
-import java.util.Objects;
-import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
-import org.iets3.core.expr.typetags.physunits.behavior.UnitConversionUtil;
-import org.iets3.core.expr.typetags.physunits.behavior.UnitMap;
-import org.iets3.core.expr.typetags.physunits.behavior.IUnitSpecification__BehaviorDescriptor;
-import org.iets3.core.expr.typetags.physunits.behavior.IUnitStandardizer;
 import org.jetbrains.mps.openapi.language.SConcept;
-import org.jetbrains.mps.openapi.language.SInterfaceConcept;
-import org.jetbrains.mps.openapi.language.SContainmentLink;
 
 public class PhysUnitInterpreterHelper {
   private PhysUnitInterpreterHelper() {
@@ -48,10 +39,11 @@ public class PhysUnitInterpreterHelper {
   public static SNode getImplicitConversionExpression(SNode operand) {
     List<UnitCombinators.Conversion> conversionSeq = ListSequence.fromList(new ArrayList<UnitCombinators.Conversion>());
     SNode last = operand;
-    Tuples._2<SNode, Boolean> enforcer = parentConversionEnforcer(last);
+    UnitExpressionConverter uec = new UnitExpressionConverter();
+    Tuples._2<SNode, Boolean> enforcer = uec.parentConversionEnforcer(last);
     SNode nextType = SNodeOperations.as(TypecheckingFacade.getFromContext().getTypeOf(last), CONCEPTS.TaggedType$O4);
     while (enforcer != null) {
-      UnitCombinators.Conversion conv = getConversionRequiredByContext(nextType, enforcer._0(), (boolean) enforcer._1());
+      UnitCombinators.Conversion conv = uec.getConversionRequiredByContext(nextType, enforcer._0(), (boolean) enforcer._1());
       if (conv != null) {
         ListSequence.fromList(conversionSeq).addElement(conv);
         {
@@ -65,7 +57,7 @@ public class PhysUnitInterpreterHelper {
       }
 
       last = enforcer._0();
-      enforcer = parentConversionEnforcer(last);
+      enforcer = uec.parentConversionEnforcer(last);
     }
 
     if (ListSequence.fromList(conversionSeq).isEmpty()) {
@@ -76,147 +68,8 @@ public class PhysUnitInterpreterHelper {
     return chained;
   }
 
-  /**
-   * Walks up the AST from a given expression and finds the first binary expression which enforces a common unit.
-   * 
-   * If no parent expression is available anymore, or an expression which will not propagate the unit, null is returned.
-   * 
-   * @return a pair [ancestor binary expression enforcing an implicit conversion, indicator if the child is left or right]
-   */
-  private static Tuples._2<SNode, Boolean> parentConversionEnforcer(SNode expr) {
-    while ((SNodeOperations.getParent(expr) != null) && SNodeOperations.isInstanceOf(SNodeOperations.getParent(expr), CONCEPTS.Expression$D_)) {
-      SNode parent = SNodeOperations.as(SNodeOperations.getParent(expr), CONCEPTS.Expression$D_);
-      {
-        final SNode binEx = parent;
-        if (SNodeOperations.isInstanceOf(binEx, CONCEPTS.BinaryExpression$j$)) {
-          if (isConversionEnforcer(binEx)) {
-            return MultiTuple.<SNode,Boolean>from(binEx, Objects.equals(SLinkOperations.getTarget(binEx, LINKS.left$zxUa), expr));
-          }
-        }
-      }
-      if (!(propagatesChildUnitUpward(parent, expr))) {
-        return null;
-      }
-      expr = parent;
-    }
-    return null;
-  }
-
-  private static boolean isConversionEnforcer(SNode op) {
-    return UnitCombinators.isBinaryAddition(op) || UnitCombinators.isBinaryComparison(op);
-  }
-
-  /**
-   * Some expressions will just propagate the physical unit of their child, and not require implicit conversions.
-   * 
-   * Examples: parenthesis (e.g. "(1 min)"), or multiplication with non-unit values (e.g., "3 * 4h").
-   */
-  private static boolean propagatesChildUnitUpward(SNode parent, SNode child) {
-    {
-      final SNode pe = parent;
-      if (SNodeOperations.isInstanceOf(pe, CONCEPTS.ParensExpression$Tv)) {
-        return true;
-      }
-    }
-    {
-      final SNode binEx = parent;
-      if (SNodeOperations.isInstanceOf(binEx, CONCEPTS.BinaryExpression$j$)) {
-        SNode other = (Objects.equals(SLinkOperations.getTarget(binEx, LINKS.left$zxUa), child) ? SLinkOperations.getTarget(binEx, LINKS.right$zBjx) : SLinkOperations.getTarget(binEx, LINKS.left$zxUa));
-        if (!(SNodeOperations.isInstanceOf(TypecheckingFacade.getFromContext().getTypeOf(other), CONCEPTS.TaggedType$O4))) {
-          return true;
-        }
-      }
-    }
-    return false;
-  }
-
-  private static UnitCombinators.Conversion getConversionRequiredByContext(SNode operandType, SNode binOp, boolean isLeft) {
-    boolean isComp = UnitCombinators.isBinaryComparison(binOp);
-    if (!(SNodeOperations.isInstanceOf(binOp, CONCEPTS.PlusExpression$mx) || SNodeOperations.isInstanceOf(binOp, CONCEPTS.MinusExpression$6z) || isComp)) {
-      return null;
-    }
-
-    SNode other = (isLeft ? SLinkOperations.getTarget(binOp, LINKS.right$zBjx) : SLinkOperations.getTarget(binOp, LINKS.left$zxUa));
-    SNode otherType = TypecheckingFacade.getFromContext().getTypeOf(other);
-    SNode otherSpec = UnitConversionUtil.getSpecification(TypecheckingFacade.getFromContext().getTypeOf(other));
-    UnitMap otherMap = UnitConversionUtil.getMapForGroup(IUnitSpecification__BehaviorDescriptor.getExpression_id6q45UTytEvW.invoke(otherSpec));
-    UnitMap operandMap = UnitConversionUtil.getMapForType(operandType);
-    if (UnitMap.matching(operandMap, otherMap)) {
-      return null;
-    }
-
-    SNode operandSpec = UnitConversionUtil.getSpecification(operandType);
-    {
-      final SNode operandURef = IUnitSpecification__BehaviorDescriptor.getExpression_id6q45UTytEvW.invoke(operandSpec);
-      if (SNodeOperations.isInstanceOf(operandURef, CONCEPTS.UnitReference$Zo)) {
-        {
-          final SNode otherURef = IUnitSpecification__BehaviorDescriptor.getExpression_id6q45UTytEvW.invoke(otherSpec);
-          if (SNodeOperations.isInstanceOf(otherURef, CONCEPTS.UnitReference$Zo)) {
-            /*
-              It is an arbitrary choice in which order we try to do implicit conversions.
-              
-              The current order being executed here is: 
-              1. Try to implicitly convert the left operand to the unit of the right operand
-              2. Try to implicitly convert the right operand to the unit of the left operand
-              3. Check if both operands can be converted to a common standard unit (e.g., SI base unit)
-
-            */
-
-            SNode context = SNodeOperations.getNodeAncestor(binOp, CONCEPTS.IVisibleElementProvider$$O, false, false);
-
-            // first, try to convert left operand to physical unit of right operand or vice versa
-            UnitCombinators.Conversion operand2other = new UnitCombinators.Conversion(operandType, otherURef, context);
-            UnitCombinators.Conversion other2operand = new UnitCombinators.Conversion(otherType, operandURef, context);
-            boolean preferRight2Left = false;
-            if (operand2other.hasImplicitConv() && other2operand.hasImplicitConv()) {
-              // both directions could be converted implicitly, pick one based on priority
-              preferRight2Left = operand2other.getPrio() < other2operand.getPrio();
-            }
-            if (operand2other.hasImplicitConv() && !(preferRight2Left)) {
-              return operand2other;
-            }
-            if (other2operand.hasImplicitConv()) {
-              return null;
-            }
-
-            // next, try to match after implicit conversions of both sides to standard unit (usually SI-base-units)
-            IUnitLangConfig config = PhysUnitLangConfigHelper.getConfig();
-            IUnitStandardizer standardizer = config.getUnitStandardizer(binOp);
-            SNode operandConv = standardizer.getStandardUnit(operandURef);
-            SNode otherConv = standardizer.getStandardUnit(otherURef);
-            if ((operandConv != null) && (otherConv != null)) {
-              if (Objects.equals(operandConv, otherConv)) {
-                SNode stdUnit = operandConv;
-                UnitCombinators.Conversion operand2std = new UnitCombinators.Conversion(operandType, stdUnit, context);
-                return operand2std;
-              }
-            }
-
-            // implicit conversion is enabled, and the units are atomic, but no applicable implicit conversion rule
-            return null;
-          }
-        }
-      }
-    }
-
-    // one or both units are non-atomic, i.e., too complex for applying implicit conversion
-    return null;
-
-  }
-
   private static final class CONCEPTS {
     /*package*/ static final SConcept TaggedType$O4 = MetaAdapterFactory.getConcept(0x5186c6ce428c4f09L, 0xa9df73d9e86c27d3L, 0x186a8ed9947750b6L, "org.iets3.core.expr.typetags.structure.TaggedType");
     /*package*/ static final SConcept Expression$D_ = MetaAdapterFactory.getConcept(0xcfaa4966b7d54b69L, 0xb66a309a6e1a7290L, 0x670d5e92f854a047L, "org.iets3.core.expr.base.structure.Expression");
-    /*package*/ static final SConcept BinaryExpression$j$ = MetaAdapterFactory.getConcept(0xcfaa4966b7d54b69L, 0xb66a309a6e1a7290L, 0x46ff3b3d86c99c15L, "org.iets3.core.expr.base.structure.BinaryExpression");
-    /*package*/ static final SConcept ParensExpression$Tv = MetaAdapterFactory.getConcept(0xcfaa4966b7d54b69L, 0xb66a309a6e1a7290L, 0x46ff3b3d86d2f11fL, "org.iets3.core.expr.base.structure.ParensExpression");
-    /*package*/ static final SConcept PlusExpression$mx = MetaAdapterFactory.getConcept(0xcfaa4966b7d54b69L, 0xb66a309a6e1a7290L, 0x46ff3b3d86c9a4f2L, "org.iets3.core.expr.base.structure.PlusExpression");
-    /*package*/ static final SConcept MinusExpression$6z = MetaAdapterFactory.getConcept(0xcfaa4966b7d54b69L, 0xb66a309a6e1a7290L, 0x46ff3b3d86cac5a5L, "org.iets3.core.expr.base.structure.MinusExpression");
-    /*package*/ static final SConcept UnitReference$Zo = MetaAdapterFactory.getConcept(0x7ee265bd59864709L, 0x86ed2c6daa33cd8cL, 0x73b48a125b0d4dc5L, "org.iets3.core.expr.typetags.physunits.structure.UnitReference");
-    /*package*/ static final SInterfaceConcept IVisibleElementProvider$$O = MetaAdapterFactory.getInterfaceConcept(0xd4280a54f6df4383L, 0xaa41d1b2bffa7eb1L, 0x6315bcc6eff580a3L, "com.mbeddr.core.base.structure.IVisibleElementProvider");
-  }
-
-  private static final class LINKS {
-    /*package*/ static final SContainmentLink left$zxUa = MetaAdapterFactory.getContainmentLink(0xcfaa4966b7d54b69L, 0xb66a309a6e1a7290L, 0x46ff3b3d86c99c15L, 0x46ff3b3d86c99c16L, "left");
-    /*package*/ static final SContainmentLink right$zBjx = MetaAdapterFactory.getContainmentLink(0xcfaa4966b7d54b69L, 0xb66a309a6e1a7290L, 0x46ff3b3d86c99c15L, 0x46ff3b3d86c99c18L, "right");
   }
 }
