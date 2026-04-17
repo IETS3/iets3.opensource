@@ -22,6 +22,7 @@ import com.mbeddr.mpsutil.interpreter.rt.EvaluatorInfo;
 import org.iets3.core.expr.typetags.physunits.behavior.UnitConversionUtil;
 import jetbrains.mps.typechecking.TypecheckingFacade;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations;
+import org.iets3.core.expr.typetags.physunits.behavior.TaggedExprExt;
 import org.iets3.core.expr.typetags.physunits.behavior.AbstractUnitPrefixManager;
 import org.iets3.core.expr.typetags.physunits.behavior.GlobalUnitPrefixManager;
 import org.iets3.core.expr.typetags.physunits.behavior.AbstractUnitPrefix;
@@ -179,12 +180,12 @@ public class InterpreterExprPhysUnitInterpreter extends InterpreterBase {
               {
                 final SNode unitReference = SLinkOperations.getTarget(unitSpec, LINKS.specification$d6YI);
                 if (SNodeOperations.isInstanceOf(unitReference, CONCEPTS.UnitReference$Zo)) {
-                  String unitPrefix = SPropertyOperations.getString(unitReference, PROPS.prefix$AtV);
-                  if ((unitPrefix == null || unitPrefix.length() == 0)) {
-                    unitPrefix = ((String) theNode.getUserObject("interpreter_original_unit_prefix"));
+                  String prefixString = SPropertyOperations.getString(unitReference, PROPS.prefix$AtV);
+                  if ((prefixString == null || prefixString.length() == 0)) {
+                    prefixString = TaggedExprExt.getPrefix(theNode);
                   }
                   AbstractUnitPrefixManager manager = GlobalUnitPrefixManager.getManager(SLinkOperations.getTarget(unitReference, LINKS.unit$nTeG));
-                  AbstractUnitPrefix prefix = UnitConversionUtil.getPrefixForConversion(theNode, manager, unitPrefix);
+                  AbstractUnitPrefix prefix = UnitConversionUtil.getPrefixForConversion(theNode, manager, prefixString);
                   if (prefix != null) {
                     SNode copiedExpr = SNodeOperations.copyNode(theNode);
                     copiedExpr.putUserObject("INTERPRET_DIRECTLY", true);

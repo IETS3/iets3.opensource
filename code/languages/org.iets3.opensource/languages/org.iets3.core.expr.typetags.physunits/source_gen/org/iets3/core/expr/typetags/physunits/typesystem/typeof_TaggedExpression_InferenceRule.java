@@ -21,6 +21,7 @@ import org.iets3.core.expr.typetags.physunits.behavior.AbstractUnitPrefixManager
 import org.iets3.core.expr.typetags.physunits.behavior.GlobalUnitPrefixManager;
 import org.iets3.core.expr.typetags.physunits.behavior.AbstractUnitPrefix;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations;
+import org.iets3.core.expr.typetags.physunits.behavior.TaggedExprExt;
 import org.iets3.core.expr.simpleTypes.behavior.NumberRangeSpec__BehaviorDescriptor;
 import ch.obermuhlner.math.big.DefaultBigDecimalMath;
 import java.math.BigDecimal;
@@ -63,7 +64,7 @@ public class typeof_TaggedExpression_InferenceRule extends AbstractInferenceRule
             AbstractUnitPrefixManager manager = GlobalUnitPrefixManager.getManager(SLinkOperations.getTarget(unitReference, LINKS.unit$nTeG));
             AbstractUnitPrefix prefix = UnitConversionUtil.getPrefixForConversion(expr, manager, SPropertyOperations.getString(unitReference, PROPS.prefix$AtV));
             if (prefix != null) {
-              expr.putUserObject("interpreter_original_unit_prefix", SPropertyOperations.getString(unitReference, PROPS.prefix$AtV));
+              TaggedExprExt.storePrefix(expr, SPropertyOperations.getString(unitReference, PROPS.prefix$AtV));
               SPropertyOperations.assign(unitReference, PROPS.prefix$AtV, null);
               {
                 final SNode numberType = SLinkOperations.getTarget(type, LINKS.baseType$z6Mz);

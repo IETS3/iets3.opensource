@@ -337,12 +337,17 @@ public class UnitConversionUtil {
           int targetFactor = (targetPrefix != null ? (int) targetPrefix.factor() : 0);
 
           int base = GlobalUnitPrefixManager.getManager(SLinkOperations.getTarget(sourceExpression, LINKS.unit$nTeG), SLinkOperations.getTarget(targetUnitReference, LINKS.unit$nTeG)).getBase();
-          SNode powerExpr = createPowerExpression_5ohk72_a0k0c0d0sb(String.valueOf(base), String.valueOf(sourceFactor) + ".0", String.valueOf(targetFactor) + ".0");
-          return createConversionSpecifier_5ohk72_a11a2a3a44(powerExpr);
+          int exp = sourceFactor - targetFactor;
+          return createConversionSpecifierForScaling(base, exp);
         }
       }
     }
     return null;
+  }
+
+  private static SNode createConversionSpecifierForScaling(int base, int exp) {
+    SNode powerExpr = createPowerExpression_5ohk72_a0a0ub(String.valueOf(base), String.valueOf(exp) + ".0");
+    return createConversionSpecifier_5ohk72_a1a64(powerExpr);
   }
 
   public static SNode replaceUnitsWithSIBaseEquivalents(SNode unitExpr, SRepository repository) {
@@ -417,26 +422,19 @@ public class UnitConversionUtil {
     n0.forChild(LINKS.exponent$xhDu).initNode(p1, CONCEPTS.Exponent$bg, true);
     return n0.getResult();
   }
-  private static SNode createPowerExpression_5ohk72_a0k0c0d0sb(String p0, String p1, String p2) {
+  private static SNode createPowerExpression_5ohk72_a0a0ub(String p0, String p1) {
     SNodeBuilder n0 = new SNodeBuilder().init(CONCEPTS.PowerExpression$l7);
     {
       SNodeBuilder n1 = n0.forChild(LINKS.expr$CW3E).init(CONCEPTS.NumberLiteral$wE);
       n1.setProperty(PROPS.value$iWTK, p0);
     }
     {
-      SNodeBuilder n2 = n0.forChild(LINKS.exponent$uVP8).init(CONCEPTS.MinusExpression$6z);
-      {
-        SNodeBuilder n3 = n2.forChild(LINKS.left$zxUa).init(CONCEPTS.NumberLiteral$wE);
-        n3.setProperty(PROPS.value$iWTK, p1);
-      }
-      {
-        SNodeBuilder n4 = n2.forChild(LINKS.right$zBjx).init(CONCEPTS.NumberLiteral$wE);
-        n4.setProperty(PROPS.value$iWTK, p2);
-      }
+      SNodeBuilder n2 = n0.forChild(LINKS.exponent$uVP8).init(CONCEPTS.NumberLiteral$wE);
+      n2.setProperty(PROPS.value$iWTK, p1);
     }
     return n0.getResult();
   }
-  private static SNode createConversionSpecifier_5ohk72_a11a2a3a44(SNode p0) {
+  private static SNode createConversionSpecifier_5ohk72_a1a64(SNode p0) {
     SNodeBuilder n0 = new SNodeBuilder().init(CONCEPTS.ConversionSpecifier$X$);
     n0.forChild(LINKS.type$poAd).init(CONCEPTS.IntegerType$m0);
     {
@@ -480,7 +478,6 @@ public class UnitConversionUtil {
     /*package*/ static final SConcept Exponent$bg = MetaAdapterFactory.getConcept(0x7ee265bd59864709L, 0x86ed2c6daa33cd8cL, 0x34c38940d07a6995L, "org.iets3.core.expr.typetags.physunits.structure.Exponent");
     /*package*/ static final SConcept PowerExpression$l7 = MetaAdapterFactory.getConcept(0x6fadc44e69c24a4aL, 0x9d167ebf5f8d3ba0L, 0x449e19d04e9c6144L, "org.iets3.core.expr.math.structure.PowerExpression");
     /*package*/ static final SConcept NumberLiteral$wE = MetaAdapterFactory.getConcept(0x6b277d9ad52d416fL, 0xa2091919bd737f50L, 0x46ff3b3d86d0e6daL, "org.iets3.core.expr.simpleTypes.structure.NumberLiteral");
-    /*package*/ static final SConcept MinusExpression$6z = MetaAdapterFactory.getConcept(0xcfaa4966b7d54b69L, 0xb66a309a6e1a7290L, 0x46ff3b3d86cac5a5L, "org.iets3.core.expr.base.structure.MinusExpression");
     /*package*/ static final SConcept ConversionSpecifier$X$ = MetaAdapterFactory.getConcept(0x7ee265bd59864709L, 0x86ed2c6daa33cd8cL, 0x182c7aae9fea4574L, "org.iets3.core.expr.typetags.physunits.structure.ConversionSpecifier");
     /*package*/ static final SConcept IntegerType$m0 = MetaAdapterFactory.getConcept(0x6b277d9ad52d416fL, 0xa2091919bd737f50L, 0x46ff3b3d86d0e6d9L, "org.iets3.core.expr.simpleTypes.structure.IntegerType");
     /*package*/ static final SConcept CastExpression$Df = MetaAdapterFactory.getConcept(0xcfaa4966b7d54b69L, 0xb66a309a6e1a7290L, 0x2d8b76405dcec884L, "org.iets3.core.expr.base.structure.CastExpression");
@@ -514,11 +511,11 @@ public class UnitConversionUtil {
     /*package*/ static final SContainmentLink exponent$xhDu = MetaAdapterFactory.getContainmentLink(0x7ee265bd59864709L, 0x86ed2c6daa33cd8cL, 0x729d46b7ce979cf7L, 0x70ccd48a59f31f35L, "exponent");
     /*package*/ static final SContainmentLink expr$CW3E = MetaAdapterFactory.getContainmentLink(0xcfaa4966b7d54b69L, 0xb66a309a6e1a7290L, 0x3b256bb6ae8048d8L, 0x3b256bb6ae8048d9L, "expr");
     /*package*/ static final SContainmentLink exponent$uVP8 = MetaAdapterFactory.getContainmentLink(0x6fadc44e69c24a4aL, 0x9d167ebf5f8d3ba0L, 0x449e19d04e9c6144L, 0x46c15b39e5605f2fL, "exponent");
-    /*package*/ static final SContainmentLink left$zxUa = MetaAdapterFactory.getContainmentLink(0xcfaa4966b7d54b69L, 0xb66a309a6e1a7290L, 0x46ff3b3d86c99c15L, 0x46ff3b3d86c99c16L, "left");
-    /*package*/ static final SContainmentLink right$zBjx = MetaAdapterFactory.getContainmentLink(0xcfaa4966b7d54b69L, 0xb66a309a6e1a7290L, 0x46ff3b3d86c99c15L, 0x46ff3b3d86c99c18L, "right");
     /*package*/ static final SContainmentLink type$poAd = MetaAdapterFactory.getContainmentLink(0x7ee265bd59864709L, 0x86ed2c6daa33cd8cL, 0x182c7aae9fea4574L, 0x182c7aaea0320b8dL, "type");
     /*package*/ static final SContainmentLink expression$BZ0p = MetaAdapterFactory.getContainmentLink(0x7ee265bd59864709L, 0x86ed2c6daa33cd8cL, 0x182c7aae9fea4574L, 0x182c7aae9fee3f05L, "expression");
     /*package*/ static final SContainmentLink expectedType$SdFI = MetaAdapterFactory.getContainmentLink(0xcfaa4966b7d54b69L, 0xb66a309a6e1a7290L, 0x2d8b76405dcec884L, 0x2d8b76405dcec889L, "expectedType");
+    /*package*/ static final SContainmentLink left$zxUa = MetaAdapterFactory.getContainmentLink(0xcfaa4966b7d54b69L, 0xb66a309a6e1a7290L, 0x46ff3b3d86c99c15L, 0x46ff3b3d86c99c16L, "left");
+    /*package*/ static final SContainmentLink right$zBjx = MetaAdapterFactory.getContainmentLink(0xcfaa4966b7d54b69L, 0xb66a309a6e1a7290L, 0x46ff3b3d86c99c15L, 0x46ff3b3d86c99c18L, "right");
   }
 
   private static final class PROPS {

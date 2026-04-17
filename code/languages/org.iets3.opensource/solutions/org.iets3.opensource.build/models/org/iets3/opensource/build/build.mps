@@ -2135,6 +2135,16 @@
             <ref role="3bR37D" to="90a9:5vQ_hAOOn52" resolve="de.slisson.mps.conditionalEditor.hints" />
           </node>
         </node>
+        <node concept="1SiIV0" id="2L0OAuQ2Fu7" role="3bR37C">
+          <node concept="3bR9La" id="2L0OAuQ2Fu8" role="1SiIV1">
+            <ref role="3bR37D" node="1VJeVhdX98g" resolve="org.iets3.core.expr.typetags.physunits" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="2L0OAuQ2Fu9" role="3bR37C">
+          <node concept="3bR9La" id="2L0OAuQ2Fua" role="1SiIV1">
+            <ref role="3bR37D" node="JUiQTzdslj" resolve="org.iets3.core.expr.typetags" />
+          </node>
+        </node>
       </node>
       <node concept="1E1JtD" id="7yHH$DDpBOh" role="2G$12L">
         <property role="BnDLt" value="true" />
@@ -17167,6 +17177,22 @@
           </node>
           <node concept="3qWCbU" id="7K$Mm86tiZZ" role="3LXTna">
             <property role="3qWCbO" value="**/*.mps, **/*.mpsr, **/.model" />
+          </node>
+        </node>
+      </node>
+      <node concept="3rtmxn" id="6SFWL_jnmM7" role="3bR31x">
+        <node concept="3LXTmp" id="6SFWL_jnmM8" role="3rtmxm">
+          <node concept="3qWCbU" id="6SFWL_jnmM9" role="3LXTna">
+            <property role="3qWCbO" value="icons/**, resources/**" />
+          </node>
+          <node concept="398BVA" id="6SFWL_jnmMa" role="3LXTmr">
+            <ref role="398BVh" node="OJuIQp$deE" resolve="iets3.lang.opensource" />
+            <node concept="2Ry0Ak" id="6SFWL_jnmMb" role="iGT6I">
+              <property role="2Ry0Am" value="tests" />
+              <node concept="2Ry0Ak" id="6SFWL_jnmMc" role="2Ry0An">
+                <property role="2Ry0Am" value="test.org.iets3.core.comments" />
+              </node>
+            </node>
           </node>
         </node>
       </node>

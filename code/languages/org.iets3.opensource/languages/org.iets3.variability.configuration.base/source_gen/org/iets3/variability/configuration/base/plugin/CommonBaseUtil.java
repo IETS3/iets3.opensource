@@ -7,20 +7,68 @@ import org.jetbrains.mps.openapi.model.SNode;
 import jetbrains.mps.internal.collections.runtime.Sequence;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
 import org.iets3.variability.configuration.base.behavior.FeatureAttributeAssignment__BehaviorDescriptor;
+import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
+import org.iets3.core.expr.typetags.physunits.behavior.UnitConversionUtil;
+import org.iets3.core.expr.typetags.behavior.ITag__BehaviorDescriptor;
+import jetbrains.mps.smodel.builder.SNodeBuilder;
 import org.jetbrains.mps.openapi.language.SContainmentLink;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
+import org.jetbrains.mps.openapi.language.SReferenceLink;
+import org.jetbrains.mps.openapi.language.SConcept;
+import org.jetbrains.mps.openapi.language.SInterfaceConcept;
 
 public class CommonBaseUtil {
+  /**
+   * Attach attribute values computed by a solver to the assignment nodes. 
+   * 
+   * If the attribute has a physical unit attached, then also attach it to the computed value.
+   * The solver cannot do it as it does not know about physical units.
+   */
   public static void setAttributes(Iterable<Pair<SNode, SNode>> faas) {
     Sequence.fromIterable(faas).visitAll((it) -> {
       SNode expr = it.getKey();
       SNode faa = it.getValue();
-      SLinkOperations.setTarget(faa, LINKS.value$kgDc, expr);
+      SLinkOperations.setTarget(faa, LINKS.value$kgDc, attachUnitToExpression(expr, SLinkOperations.getTarget(faa, LINKS.attribute$J5jI)));
       FeatureAttributeAssignment__BehaviorDescriptor.setCompulsory_id6jw22F9ba_Z.invoke(faa);
     });
   }
 
+  public static SNode attachUnitToExpression(SNode expr, SNode afa) {
+    {
+      final SNode attr = afa;
+      if (SNodeOperations.isInstanceOf(attr, CONCEPTS.FeatureAttribute$en)) {
+        SNode ius = UnitConversionUtil.getSpecification(SLinkOperations.getTarget(attr, LINKS.type$mJNs));
+        {
+          final SNode unitSpec = ius;
+          if (SNodeOperations.isInstanceOf(unitSpec, CONCEPTS.UnitSpecification$6j)) {
+            // encapsulate plain expression with physical unit tag
+            return createTaggedExpression_fv6rpr_a1a1a0a2(expr, Sequence.singleton(SNodeOperations.copyNode(ITag__BehaviorDescriptor.getBaseTag_id1RcasK0UAlt.invoke(unitSpec))));
+          }
+        }
+      }
+    }
+    return expr;
+  }
+  private static SNode createTaggedExpression_fv6rpr_a1a1a0a2(SNode p0, Iterable<? extends SNode> p1) {
+    SNodeBuilder n0 = new SNodeBuilder().init(CONCEPTS.TaggedExpression$jU);
+    n0.forChild(LINKS.expr$CW3E).initNode(p0, CONCEPTS.Expression$D_, true);
+    n0.forChild(LINKS.tags$Lx_i).initNodeList(p1, CONCEPTS.ITag$EI);
+    return n0.getResult();
+  }
+
   private static final class LINKS {
     /*package*/ static final SContainmentLink value$kgDc = MetaAdapterFactory.getContainmentLink(0x71226ee2bbc445d2L, 0xa41d20b97237156cL, 0x302aa0c2ddc5ae16L, 0x302aa0c2ddd1e2aaL, "value");
+    /*package*/ static final SReferenceLink attribute$J5jI = MetaAdapterFactory.getReferenceLink(0x71226ee2bbc445d2L, 0xa41d20b97237156cL, 0x302aa0c2ddc5ae16L, 0x302aa0c2ddca3d88L, "attribute");
+    /*package*/ static final SContainmentLink type$mJNs = MetaAdapterFactory.getContainmentLink(0x165f1d0525064544L, 0x895e1424f54166ecL, 0x7cde27c7fd65e207L, 0x7cde27c7fd6dcc47L, "type");
+    /*package*/ static final SContainmentLink expr$CW3E = MetaAdapterFactory.getContainmentLink(0xcfaa4966b7d54b69L, 0xb66a309a6e1a7290L, 0x3b256bb6ae8048d8L, 0x3b256bb6ae8048d9L, "expr");
+    /*package*/ static final SContainmentLink tags$Lx_i = MetaAdapterFactory.getContainmentLink(0x5186c6ce428c4f09L, 0xa9df73d9e86c27d3L, 0x71bf4701bdf46b3eL, 0x186a8ed9947750b7L, "tags");
+  }
+
+  private static final class CONCEPTS {
+    /*package*/ static final SConcept FeatureAttribute$en = MetaAdapterFactory.getConcept(0x165f1d0525064544L, 0x895e1424f54166ecL, 0x7cde27c7fd65e207L, "org.iets3.variability.featuremodel.base.structure.FeatureAttribute");
+    /*package*/ static final SConcept UnitSpecification$6j = MetaAdapterFactory.getConcept(0x7ee265bd59864709L, 0x86ed2c6daa33cd8cL, 0x73b48a125b0d411dL, "org.iets3.core.expr.typetags.physunits.structure.UnitSpecification");
+    /*package*/ static final SConcept TaggedExpression$jU = MetaAdapterFactory.getConcept(0x5186c6ce428c4f09L, 0xa9df73d9e86c27d3L, 0x2ea11acb50fe9dabL, "org.iets3.core.expr.typetags.structure.TaggedExpression");
+    /*package*/ static final SConcept Expression$D_ = MetaAdapterFactory.getConcept(0xcfaa4966b7d54b69L, 0xb66a309a6e1a7290L, 0x670d5e92f854a047L, "org.iets3.core.expr.base.structure.Expression");
+    /*package*/ static final SInterfaceConcept ITag$EI = MetaAdapterFactory.getInterfaceConcept(0x5186c6ce428c4f09L, 0xa9df73d9e86c27d3L, 0x4b61610d29de4961L, "org.iets3.core.expr.typetags.structure.ITag");
   }
 }
