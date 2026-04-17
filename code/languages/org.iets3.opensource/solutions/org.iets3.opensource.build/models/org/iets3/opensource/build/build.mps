@@ -17170,6 +17170,22 @@
           </node>
         </node>
       </node>
+      <node concept="3rtmxn" id="6SFWL_jnmM7" role="3bR31x">
+        <node concept="3LXTmp" id="6SFWL_jnmM8" role="3rtmxm">
+          <node concept="3qWCbU" id="6SFWL_jnmM9" role="3LXTna">
+            <property role="3qWCbO" value="icons/**, resources/**" />
+          </node>
+          <node concept="398BVA" id="6SFWL_jnmMa" role="3LXTmr">
+            <ref role="398BVh" node="OJuIQp$deE" resolve="iets3.lang.opensource" />
+            <node concept="2Ry0Ak" id="6SFWL_jnmMb" role="iGT6I">
+              <property role="2Ry0Am" value="tests" />
+              <node concept="2Ry0Ak" id="6SFWL_jnmMc" role="2Ry0An">
+                <property role="2Ry0Am" value="test.org.iets3.core.comments" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
     </node>
     <node concept="1E1JtA" id="4dUR79iwSjX" role="3989C9">
       <property role="BnDLt" value="true" />
