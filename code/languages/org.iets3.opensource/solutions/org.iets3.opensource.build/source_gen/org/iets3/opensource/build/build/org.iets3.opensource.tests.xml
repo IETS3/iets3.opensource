@@ -1304,6 +1304,7 @@
     </echoxml>
     <jar destfile="${build.layout}/org.iets3.opensource.tests/test.org.iets3.core.comments.jar" duplicate="preserve">
       <fileset dir="${build.tmp}/java/out/test.org.iets3.core.comments" />
+      <fileset dir="${iets3.lang.opensource}/tests/test.org.iets3.core.comments" includes="icons/**, resources/**" />
       <fileset dir="${iets3.lang.opensource}/tests/test.org.iets3.core.comments/source_gen" includes="**/trace.info, **/exports, **/*.mps, **/checkpoints" />
       <fileset dir="${build.tmp}/default/test.org.iets3.core.comments.jar" />
     </jar>
@@ -4690,6 +4691,7 @@
       <compilerarg value="-Xlint:none" />
       <src>
         <path location="${iets3.lang.opensource}/tests/test.org.iets3.core.expr.typetags.physunits/source_gen" />
+        <pathelement path="${iets3.lang.opensource}/tests/test.org.iets3.core.expr.typetags.physunits/test_gen/" />
       </src>
       <classpath>
         <fileset file="${artifacts.mps}/lib/mps-core.jar" />
@@ -4770,6 +4772,7 @@
     </javac2>
     <copy todir="${build.tmp}/java/out/test.org.iets3.core.expr.typetags.physunits">
       <fileset dir="${iets3.lang.opensource}/tests/test.org.iets3.core.expr.typetags.physunits/source_gen" excludes="**/*.java" />
+      <fileset dir="${iets3.lang.opensource}/tests/test.org.iets3.core.expr.typetags.physunits/test_gen/" excludes="**/*.java" />
     </copy>
   </target>
   
@@ -5245,6 +5248,7 @@
     <delete dir="${iets3.lang.opensource}/tests/test.in.expr.os/test_gen" />
     <delete dir="${iets3.lang.opensource}/tests/test.node.expr.os/test_gen" />
     <delete dir="${iets3.lang.opensource}/tests/test.org.iets3.core.comments/test_gen" />
+    <delete dir="${iets3.lang.opensource}/tests/test.org.iets3.core.expr.typetags.physunits/test_gen" />
     <delete dir="${iets3.lang.opensource}/tests/test.org.iets3.protocol.transport/test_gen" />
     <delete dir="${iets3.lang.opensource}/tests/test.org.iets3.variability.configuration.base/test_gen" />
     <delete dir="${iets3.lang.opensource}/tests/test.org.iets3.variability.featuremodel.base/test_gen" />
