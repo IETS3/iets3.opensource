@@ -20,6 +20,7 @@
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" />
     <import index="3o3z" ref="ecfb9949-7433-4db5-85de-0f84d172e4ce/java:com.google.common.collect(de.q60.mps.collections.libs/)" />
     <import index="33ny" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.util(JDK/)" />
+    <import index="guwi" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.io(JDK/)" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -2167,6 +2168,77 @@
           <node concept="3x8VRR" id="ZsB2gD_J_Q" role="2OqNvi" />
         </node>
       </node>
+      <node concept="3clFbF" id="3TeKUdPV9Fm" role="3cqZAp">
+        <node concept="2OqwBi" id="3TeKUdPVken" role="3clFbG">
+          <node concept="2OqwBi" id="3TeKUdPVfyu" role="2Oq$k0">
+            <node concept="2OqwBi" id="3TeKUdPVayn" role="2Oq$k0">
+              <node concept="1YBJjd" id="3TeKUdPV9Fk" role="2Oq$k0">
+                <ref role="1YBMHb" node="ZsB2gD_Ibm" resolve="featureAttribute" />
+              </node>
+              <node concept="2Rf3mk" id="3TeKUdPVbS8" role="2OqNvi">
+                <node concept="1xMEDy" id="3TeKUdPVbSa" role="1xVPHs">
+                  <node concept="chp4Y" id="3TeKUdPVbSq" role="ri$Ld">
+                    <ref role="cht4Q" to="s6b7:7Nu9WvX_jMU" resolve="AttributeRefExpr" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3zZkjj" id="3TeKUdPVhyr" role="2OqNvi">
+              <node concept="1bVj0M" id="3TeKUdPVhys" role="23t8la">
+                <node concept="3clFbS" id="3TeKUdPVhyt" role="1bW5cS">
+                  <node concept="3clFbF" id="3TeKUdPVhyB" role="3cqZAp">
+                    <node concept="2OqwBi" id="3TeKUdPVhyC" role="3clFbG">
+                      <node concept="2OqwBi" id="3TeKUdPVhyD" role="2Oq$k0">
+                        <node concept="2OqwBi" id="3TeKUdPVhyE" role="2Oq$k0">
+                          <node concept="37vLTw" id="3TeKUdPVhyF" role="2Oq$k0">
+                            <ref role="3cqZAo" node="3TeKUdPVhyJ" resolve="are" />
+                          </node>
+                          <node concept="3TrEf2" id="3TeKUdPVhyG" role="2OqNvi">
+                            <ref role="3Tt5mk" to="s6b7:7Nu9WvX_jNa" resolve="attribute" />
+                          </node>
+                        </node>
+                        <node concept="2qgKlT" id="3TeKUdPVhyH" role="2OqNvi">
+                          <ref role="37wK5l" to="zccc:RJ4G$UUrsi" resolve="notPresentValueForSolver" />
+                        </node>
+                      </node>
+                      <node concept="liA8E" id="3TeKUdPVhyI" role="2OqNvi">
+                        <ref role="37wK5l" to="33ny:~Optional.isEmpty()" resolve="isEmpty" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+                <node concept="gl6BB" id="3TeKUdPVhyJ" role="1bW2Oz">
+                  <property role="TrG5h" value="are" />
+                  <node concept="2jxLKc" id="3TeKUdPVhyK" role="1tU5fm" />
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="2es0OD" id="3TeKUdPVoKL" role="2OqNvi">
+            <node concept="1bVj0M" id="3TeKUdPVoKM" role="23t8la">
+              <node concept="3clFbS" id="3TeKUdPVoKN" role="1bW5cS">
+                <node concept="a7r0C" id="3TeKUdPVoKT" role="3cqZAp">
+                  <node concept="3cpWs3" id="3TeKUdPVoKU" role="a7wSD">
+                    <node concept="Xl_RD" id="3TeKUdPVoKV" role="3uHU7w">
+                      <property role="Xl_RC" value=" Set it!" />
+                    </node>
+                    <node concept="Xl_RD" id="3TeKUdPVoKW" role="3uHU7B">
+                      <property role="Xl_RC" value="Attribute used, but without NotPresent-Value!" />
+                    </node>
+                  </node>
+                  <node concept="37vLTw" id="3TeKUdPVoKX" role="1urrMF">
+                    <ref role="3cqZAo" node="3TeKUdPVoKY" resolve="are" />
+                  </node>
+                </node>
+              </node>
+              <node concept="gl6BB" id="3TeKUdPVoKY" role="1bW2Oz">
+                <property role="TrG5h" value="are" />
+                <node concept="2jxLKc" id="3TeKUdPVoKZ" role="1tU5fm" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
     </node>
     <node concept="1YaCAy" id="ZsB2gD_Ibm" role="1YuTPh">
       <property role="TrG5h" value="featureAttribute" />
@@ -3307,6 +3379,46 @@
     <node concept="1YaCAy" id="og68vfkpes" role="1YuTPh">
       <property role="TrG5h" value="fmActualParam" />
       <ref role="1YaFvo" to="s6b7:7PHwTKCLnAQ" resolve="FMActualParam" />
+    </node>
+  </node>
+  <node concept="18kY7G" id="3TeKUdR4SNS">
+    <property role="TrG5h" value="check_FeatureAttributeDotTarget" />
+    <property role="3GE5qa" value="constraints" />
+    <node concept="3clFbS" id="3TeKUdR4SNT" role="18ibNy">
+      <node concept="3clFbJ" id="3TeKUdR4Txw" role="3cqZAp">
+        <node concept="2OqwBi" id="3TeKUdR4Zrn" role="3clFbw">
+          <node concept="2OqwBi" id="3TeKUdR4XlJ" role="2Oq$k0">
+            <node concept="2OqwBi" id="3TeKUdR4V7A" role="2Oq$k0">
+              <node concept="1YBJjd" id="3TeKUdR4Ue8" role="2Oq$k0">
+                <ref role="1YBMHb" node="3TeKUdR4SNV" resolve="featureAttributeDotTarget" />
+              </node>
+              <node concept="3TrEf2" id="3TeKUdR4W5U" role="2OqNvi">
+                <ref role="3Tt5mk" to="s6b7:7Nu9WvX_CEF" resolve="attribute" />
+              </node>
+            </node>
+            <node concept="2qgKlT" id="3TeKUdR4Yqe" role="2OqNvi">
+              <ref role="37wK5l" to="zccc:RJ4G$UUrsi" resolve="notPresentValueForSolver" />
+            </node>
+          </node>
+          <node concept="liA8E" id="3TeKUdR53dc" role="2OqNvi">
+            <ref role="37wK5l" to="33ny:~Optional.isEmpty()" resolve="isEmpty" />
+          </node>
+        </node>
+        <node concept="3clFbS" id="3TeKUdR4Txy" role="3clFbx">
+          <node concept="a7r0C" id="3TeKUdR549f" role="3cqZAp">
+            <node concept="1YBJjd" id="3TeKUdR56VN" role="1urrMF">
+              <ref role="1YBMHb" node="3TeKUdR4SNV" resolve="featureAttributeDotTarget" />
+            </node>
+            <node concept="Xl_RD" id="3TeKUdR58I8" role="a7wSD">
+              <property role="Xl_RC" value="Attribute used, but without NotPresent-Value! Set it!" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1YaCAy" id="3TeKUdR4SNV" role="1YuTPh">
+      <property role="TrG5h" value="featureAttributeDotTarget" />
+      <ref role="1YaFvo" to="s6b7:7Nu9WvX_CEE" resolve="FeatureAttributeDotTarget" />
     </node>
   </node>
 </model>

@@ -3,6 +3,7 @@ import de.itemis.mps.gradle.GitBasedVersioning
 import de.itemis.mps.gradle.Macro
 import de.itemis.mps.gradle.RunAntScript
 import de.itemis.mps.gradle.TestLanguages
+import de.itemis.mps.gradle.tasks.MpsCheck
 import de.itemis.mps.gradle.tasks.MpsMigrate
 import de.itemis.mps.gradle.tasks.Remigrate
 import groovy.util.Node
@@ -21,7 +22,6 @@ plugins {
     alias(libs.plugins.githubRelease)
     alias(libs.plugins.cyclonedxBom)
     alias(libs.plugins.downloadJbr)
-    alias(libs.plugins.modelcheck)
 }
 
 repositories {
@@ -51,11 +51,6 @@ dependencies {
     functionalJava(libs.functionalJava) { isTransitive = false }
     // we need to explicitly state the jar type for this dependency
     cpSuite(libs.cpSuite.get().toString() + "@jar") { isTransitive = false }
-}
-
-tasks.wrapper {
-    gradleVersion = libs.versions.gradle.get()
-    distributionType = Wrapper.DistributionType.ALL
 }
 
 downloadJbr {
@@ -260,7 +255,7 @@ tasks.assemble {
 }
 
 val migrate by tasks.registering(MpsMigrate::class) {
-    dependsOn(resolveMPS, "resolveMpsForModelcheck", tasks.downloadJbr, buildLanguages, buildAndRunTests)
+    dependsOn(resolveMPS, tasks.downloadJbr, buildLanguages, buildAndRunTests)
     javaLauncher.set(tasks.downloadJbr.get().javaLauncher)
     haltOnPrecheckFailure.set(false)
     haltOnDependencyError.set(false)
@@ -273,7 +268,7 @@ val migrate by tasks.registering(MpsMigrate::class) {
 
 val remigrate by tasks.registering(Remigrate::class) {
     mustRunAfter(migrate, buildLanguages, buildAndRunTests)
-    dependsOn(resolveMPS, "resolveMpsForModelcheck", tasks.downloadJbr)
+    dependsOn(resolveMPS, tasks.downloadJbr)
     javaLauncher.set(tasks.downloadJbr.get().javaLauncher)
     mpsHome.set(mpsHomeDir)
     projectDirectories.from("code/languages/org.iets3.opensource")
@@ -282,23 +277,24 @@ val remigrate by tasks.registering(Remigrate::class) {
     maxHeapSize = "4G"
 }
 
-modelcheck {
-    projectLocation = File("$projectDir/code/languages/org.iets3.opensource")
-    mpsLocation = mpsHomeDir.asFile
-    pluginsProperty.set(emptyList())
-    mpsConfig = mps
-    macros = listOf(Macro("iets3.github.opensource.home", "$projectDir"))
-    junitFile = layout.buildDirectory.file("TEST-checkProject.xml").get().asFile
-    junitFormat = "message"
-    errorNoFail = true
+val checkmodels by tasks.registering(MpsCheck::class) {
+    dependsOn(resolveMPS)
+    javaLauncher.set(tasks.downloadJbr.get().javaLauncher)
+
+    projectLocation.set(file("$projectDir/code/languages/org.iets3.opensource"))
+    mpsHome.set(mpsHomeDir)
+    pluginRoots.add(mpsHomeDir.dir("plugins"))
+    folderMacros.put("iets3.github.opensource.home", layout.projectDirectory)
+
+    junitFile.set(layout.buildDirectory.file("TEST-checkProject.xml"))
+    junitFormat.set("message")
+    ignoreFailures = true
     debug = false
-    maxHeap = "4G"
+    maxHeapSize = "4G"
 }
 
-tasks.checkmodels { dependsOn(resolveMPS) }
-
 val packageLanguages by tasks.registering(Zip::class) {
-    dependsOn(buildLanguages, tasks.cyclonedxBom)
+    dependsOn(buildLanguages, tasks.cyclonedxDirectBom)
     from(artifactsDir) {
         include("org.iets3.opensource/**")
     }
@@ -536,15 +532,10 @@ tasks.githubRelease {
     dependsOn(packageDistroWithDependencies)
 }
 
-tasks.cyclonedxBom {
-    // SBOM destination directory
-    destination.set(reportsDir.asFile)
-    // The file name for the generated SBOMs (before the file format suffix)
-    outputName.set("sbom")
-    // The file format generated, can be xml, json or all for generating both
-    outputFormat.set("json")
-    // Don't include license texts in generated SBOMs
+tasks.cyclonedxDirectBom {
+    jsonOutput.set(reportsDir.file("sbom.json"))
+    // will not generate .xml
+    xmlOutput.unsetConvention()
     includeLicenseText.set(false)
-    // Included bundled runtime dependencies
-    includeConfigs.set(bundledDependencies.map { it.name } + languageLibs.name + mps.name)
+    includeConfigs.set(bundledDependencies.map { it.name }.union(listOf(languageLibs.name, mps.name)))
 }
