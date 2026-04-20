@@ -12,7 +12,7 @@
       <unit at="11,0,29,0" name="org.iets3.variability.artifacts.vanguard.structure.ConceptPresentationAspectImpl" />
     </file>
     <file name="LanguageConceptSwitch.java">
-      <unit at="10,0,28,0" name="org.iets3.variability.artifacts.vanguard.structure.LanguageConceptSwitch" />
+      <unit at="12,0,36,0" name="org.iets3.variability.artifacts.vanguard.structure.LanguageConceptSwitch" />
     </file>
     <file name="StructureAspectDescriptor.java">
       <unit at="14,0,56,0" name="org.iets3.variability.artifacts.vanguard.structure.StructureAspectDescriptor" />
@@ -31,8 +31,8 @@
       <scope id="8774008540172819290" at="19,49,24,37" />
     </file>
     <file name="LanguageConceptSwitch.java">
-      <node id="8774008540172819290" at="12,0,13,0" concept="5" trace="IVariationPoint" />
-      <node id="8774008540172819290" at="15,116,16,54" concept="0" />
+      <node id="8774008540172819290" at="14,0,15,0" concept="5" trace="IVariationPoint" />
+      <node id="8774008540172819290" at="17,116,18,54" concept="0" />
     </file>
     <file name="StructureAspectDescriptor.java">
       <node id="8774008540172819290" at="15,0,16,0" concept="1" trace="myConceptIVariationPoint" />

@@ -1836,20 +1836,17 @@
       <node id="3369305329023113270" at="22,50,23,33" concept="9" />
       <node id="3369305329023113270" at="25,68,26,102" concept="9" />
       <node id="3369305329023113270" at="28,27,29,17" concept="9" />
-      <node id="3369305329023113270" at="31,39,32,16" concept="9" />
-      <node id="3369305329023113270" at="36,0,37,0" concept="12" trace="TupleType$8E" />
+      <node id="3369305329023113270" at="33,0,34,0" concept="12" trace="TupleType$8E" />
       <node id="3369305329023113270" at="17,0,19,0" concept="1" trace="supertypeOf_TupleType_SubtypingRule#()V" />
       <node id="3369305329023113270" at="19,0,22,0" concept="7" trace="getSubOrSuperTypes#(Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/typesystem/inference/TypeCheckingContext;Ljetbrains/mps/lang/typesystem/runtime/IsApplicableStatus;)Ljava/util/List;" />
       <node id="3369305329023113270" at="22,0,25,0" concept="7" trace="getApplicableConcept#()Lorg/jetbrains/mps/openapi/language/SAbstractConcept;" />
       <node id="3369305329023113270" at="25,0,28,0" concept="7" trace="isApplicableAndPattern#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljetbrains/mps/lang/typesystem/runtime/IsApplicableStatus;" />
       <node id="3369305329023113270" at="28,0,31,0" concept="7" trace="isWeak#()Z" />
-      <node id="3369305329023113270" at="31,0,34,0" concept="7" trace="surelyKeepsConcept#()Z" />
       <scope id="3369305329023113270" at="17,48,17,48" />
       <scope id="3369305329023113271" at="19,119,20,89" />
       <scope id="3369305329023113270" at="22,50,23,33" />
       <scope id="3369305329023113270" at="25,68,26,102" />
       <scope id="3369305329023113270" at="28,27,29,17" />
-      <scope id="3369305329023113270" at="31,39,32,16" />
       <scope id="3369305329023113270" at="17,0,19,0" />
       <scope id="3369305329023113270" at="19,0,22,0">
         <var name="status" id="3369305329023113270" />
@@ -1861,9 +1858,8 @@
         <var name="argument" id="3369305329023113270" />
       </scope>
       <scope id="3369305329023113270" at="28,0,31,0" />
-      <scope id="3369305329023113270" at="31,0,34,0" />
-      <unit id="3369305329023113270" at="35,0,38,0" name="org.iets3.core.expr.base.typesystem.supertypeOf_TupleType_SubtypingRule$CONCEPTS" />
-      <unit id="3369305329023113270" at="16,0,39,0" name="org.iets3.core.expr.base.typesystem.supertypeOf_TupleType_SubtypingRule" />
+      <unit id="3369305329023113270" at="32,0,35,0" name="org.iets3.core.expr.base.typesystem.supertypeOf_TupleType_SubtypingRule$CONCEPTS" />
+      <unit id="3369305329023113270" at="16,0,36,0" name="org.iets3.core.expr.base.typesystem.supertypeOf_TupleType_SubtypingRule" />
     </file>
   </root>
   <root nodeRef="r:80cf2246-750c-4158-9056-a619ebcf894c(org.iets3.core.expr.base.typesystem)/3723661587906273499">
@@ -1916,27 +1912,24 @@
       <node id="3752439765771327275" at="35,50,36,34" concept="9" />
       <node id="3752439765771327275" at="38,68,39,102" concept="9" />
       <node id="3752439765771327275" at="41,27,42,17" concept="9" />
-      <node id="3752439765771327275" at="44,39,45,16" concept="9" />
-      <node id="3752439765771364451" at="47,67,48,70" concept="8" />
-      <node id="3752439765771364451" at="48,70,49,74" concept="3" />
-      <node id="3752439765771364451" at="49,74,50,26" concept="9" />
-      <node id="3752439765771327275" at="54,0,55,0" concept="12" trace="baseType$Cv_a" />
-      <node id="3752439765771327275" at="58,0,59,0" concept="12" trace="Type$WK" />
-      <node id="3752439765771327275" at="59,0,60,0" concept="12" trace="OptionType$eU" />
+      <node id="3752439765771364451" at="44,67,45,70" concept="8" />
+      <node id="3752439765771364451" at="45,70,46,74" concept="3" />
+      <node id="3752439765771364451" at="46,74,47,26" concept="9" />
+      <node id="3752439765771327275" at="51,0,52,0" concept="12" trace="baseType$Cv_a" />
+      <node id="3752439765771327275" at="55,0,56,0" concept="12" trace="Type$WK" />
+      <node id="3752439765771327275" at="56,0,57,0" concept="12" trace="OptionType$eU" />
       <node id="3752439765771327275" at="25,0,27,0" concept="1" trace="supertypeOf_OptionType_SubtypingRule#()V" />
       <node id="3752439765771356204" at="29,161,32,5" concept="5" />
       <node id="3752439765771327275" at="35,0,38,0" concept="7" trace="getApplicableConcept#()Lorg/jetbrains/mps/openapi/language/SAbstractConcept;" />
       <node id="3752439765771327275" at="38,0,41,0" concept="7" trace="isApplicableAndPattern#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljetbrains/mps/lang/typesystem/runtime/IsApplicableStatus;" />
       <node id="3752439765771327275" at="41,0,44,0" concept="7" trace="isWeak#()Z" />
-      <node id="3752439765771327275" at="44,0,47,0" concept="7" trace="surelyKeepsConcept#()Z" />
-      <node id="3752439765771364451" at="47,0,52,0" concept="13" trace="createOptionType_uy1p63_a0a0a2a1#(Lorg/jetbrains/mps/openapi/model/SNode;)Lorg/jetbrains/mps/openapi/model/SNode;" />
+      <node id="3752439765771364451" at="44,0,49,0" concept="13" trace="createOptionType_uy1p63_a0a0a2a1#(Lorg/jetbrains/mps/openapi/model/SNode;)Lorg/jetbrains/mps/openapi/model/SNode;" />
       <node id="3752439765771327275" at="27,0,35,0" concept="7" trace="getSubOrSuperTypes#(Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/typesystem/inference/TypeCheckingContext;Ljetbrains/mps/lang/typesystem/runtime/IsApplicableStatus;)Ljava/util/List;" />
       <scope id="3752439765771327275" at="25,49,25,49" />
       <scope id="3752439765771356210" at="30,49,31,119" />
       <scope id="3752439765771327275" at="35,50,36,34" />
       <scope id="3752439765771327275" at="38,68,39,102" />
       <scope id="3752439765771327275" at="41,27,42,17" />
-      <scope id="3752439765771327275" at="44,39,45,16" />
       <scope id="3752439765771327275" at="25,0,27,0" />
       <scope id="3752439765771356204" at="29,161,32,5">
         <var name="t" id="3752439765771356206" />
@@ -1946,11 +1939,10 @@
         <var name="argument" id="3752439765771327275" />
       </scope>
       <scope id="3752439765771327275" at="41,0,44,0" />
-      <scope id="3752439765771327275" at="44,0,47,0" />
-      <scope id="3752439765771364451" at="47,67,50,26">
+      <scope id="3752439765771364451" at="44,67,47,26">
         <var name="n0" id="3752439765771364451" />
       </scope>
-      <scope id="3752439765771364451" at="47,0,52,0">
+      <scope id="3752439765771364451" at="44,0,49,0">
         <var name="p0" id="3752439765771364451" />
       </scope>
       <scope id="3752439765771327276" at="27,119,33,15">
@@ -1962,9 +1954,9 @@
         <var name="status" id="3752439765771327275" />
         <var name="typeCheckingContext" id="3752439765771327275" />
       </scope>
-      <unit id="3752439765771327275" at="53,0,56,0" name="org.iets3.core.expr.base.typesystem.supertypeOf_OptionType_SubtypingRule$LINKS" />
-      <unit id="3752439765771327275" at="57,0,61,0" name="org.iets3.core.expr.base.typesystem.supertypeOf_OptionType_SubtypingRule$CONCEPTS" />
-      <unit id="3752439765771327275" at="24,0,62,0" name="org.iets3.core.expr.base.typesystem.supertypeOf_OptionType_SubtypingRule" />
+      <unit id="3752439765771327275" at="50,0,53,0" name="org.iets3.core.expr.base.typesystem.supertypeOf_OptionType_SubtypingRule$LINKS" />
+      <unit id="3752439765771327275" at="54,0,58,0" name="org.iets3.core.expr.base.typesystem.supertypeOf_OptionType_SubtypingRule$CONCEPTS" />
+      <unit id="3752439765771327275" at="24,0,59,0" name="org.iets3.core.expr.base.typesystem.supertypeOf_OptionType_SubtypingRule" />
     </file>
   </root>
   <root nodeRef="r:80cf2246-750c-4158-9056-a619ebcf894c(org.iets3.core.expr.base.typesystem)/3829047245302402820">
@@ -5751,20 +5743,17 @@
       <node id="8219602584765461526" at="21,50,22,36" concept="9" />
       <node id="8219602584765461526" at="24,68,25,102" concept="9" />
       <node id="8219602584765461526" at="27,27,28,17" concept="9" />
-      <node id="8219602584765461526" at="30,39,31,16" concept="9" />
-      <node id="8219602584765461526" at="35,0,36,0" concept="12" trace="ValidityType$4H" />
+      <node id="8219602584765461526" at="32,0,33,0" concept="12" trace="ValidityType$4H" />
       <node id="8219602584765461526" at="16,0,18,0" concept="1" trace="supertypeOf_ValidityType_SubtypingRule#()V" />
       <node id="8219602584765461526" at="18,0,21,0" concept="7" trace="getSubOrSuperType#(Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/typesystem/inference/TypeCheckingContext;Ljetbrains/mps/lang/typesystem/runtime/IsApplicableStatus;)Lorg/jetbrains/mps/openapi/model/SNode;" />
       <node id="8219602584765461526" at="21,0,24,0" concept="7" trace="getApplicableConcept#()Lorg/jetbrains/mps/openapi/language/SAbstractConcept;" />
       <node id="8219602584765461526" at="24,0,27,0" concept="7" trace="isApplicableAndPattern#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljetbrains/mps/lang/typesystem/runtime/IsApplicableStatus;" />
       <node id="8219602584765461526" at="27,0,30,0" concept="7" trace="isWeak#()Z" />
-      <node id="8219602584765461526" at="30,0,33,0" concept="7" trace="surelyKeepsConcept#()Z" />
       <scope id="8219602584765461526" at="16,51,16,51" />
       <scope id="8219602584765461527" at="18,112,19,35" />
       <scope id="8219602584765461526" at="21,50,22,36" />
       <scope id="8219602584765461526" at="24,68,25,102" />
       <scope id="8219602584765461526" at="27,27,28,17" />
-      <scope id="8219602584765461526" at="30,39,31,16" />
       <scope id="8219602584765461526" at="16,0,18,0" />
       <scope id="8219602584765461526" at="18,0,21,0">
         <var name="status" id="8219602584765461526" />
@@ -5776,9 +5765,8 @@
         <var name="argument" id="8219602584765461526" />
       </scope>
       <scope id="8219602584765461526" at="27,0,30,0" />
-      <scope id="8219602584765461526" at="30,0,33,0" />
-      <unit id="8219602584765461526" at="34,0,37,0" name="org.iets3.core.expr.base.typesystem.supertypeOf_ValidityType_SubtypingRule$CONCEPTS" />
-      <unit id="8219602584765461526" at="15,0,38,0" name="org.iets3.core.expr.base.typesystem.supertypeOf_ValidityType_SubtypingRule" />
+      <unit id="8219602584765461526" at="31,0,34,0" name="org.iets3.core.expr.base.typesystem.supertypeOf_ValidityType_SubtypingRule$CONCEPTS" />
+      <unit id="8219602584765461526" at="15,0,35,0" name="org.iets3.core.expr.base.typesystem.supertypeOf_ValidityType_SubtypingRule" />
     </file>
   </root>
   <root nodeRef="r:80cf2246-750c-4158-9056-a619ebcf894c(org.iets3.core.expr.base.typesystem)/8219602584774436697">

@@ -8,7 +8,6 @@ import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import org.jetbrains.mps.openapi.model.SNode;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import org.iets3.core.expr.base.behavior.ConstraintAndError;
 import java.util.List;
@@ -27,7 +26,6 @@ import org.iets3.core.expr.toplevel.plugin.RecordIsComparable;
 import jetbrains.mps.internal.collections.runtime.ListSequence;
 import org.iets3.core.expr.base.behavior.Type__BehaviorDescriptor;
 import org.iets3.core.expr.base.behavior.ITypeable__BehaviorDescriptor;
-import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 import jetbrains.mps.smodel.builder.SNodeBuilder;
@@ -40,19 +38,17 @@ import org.jetbrains.mps.openapi.language.SInterfaceConcept;
 public final class RecordType__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getConcept(0x71934284d7d145eeL, 0xa0548c072591085fL, 0x7a477bfec237e8c2L, "org.iets3.core.expr.toplevel.structure.RecordType");
 
-  public static final SMethod<Iterable<SNode>> members_id6LLGpXJ1KQb = new SMethodBuilder<Iterable<SNode>>(new SJavaCompoundTypeImpl((Class<Iterable<SNode>>) ((Class) Object.class))).name("members").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(7814222126785170827L).languageId(0x9150f0f3b880ce27L, 0xf3eafff030d246d6L).build2();
-  public static final SMethod<Iterable<ConstraintAndError>> applicableConstraints_id2S3ZC$oEyBR = new SMethodBuilder<Iterable<ConstraintAndError>>(new SJavaCompoundTypeImpl((Class<Iterable<ConstraintAndError>>) ((Class) Object.class))).name("applicableConstraints").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(3315773615452596727L).languageId(0xb66a309a6e1a7290L, 0xcfaa4966b7d54b69L).build2();
-  public static final SMethod<Boolean> isSameAs_idfIXgjlt4VE = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("isSameAs").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(283433227680763626L).languageId(0xb66a309a6e1a7290L, 0xcfaa4966b7d54b69L).build2(SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""));
-  public static final SMethod<Boolean> canBeReferenced_id6JZACDWNZP9 = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("canBeReferenced").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(7782108600709676361L).languageId(0xb66a309a6e1a7290L, 0xcfaa4966b7d54b69L).build2();
-  public static final SMethod<SNode> record_id3KgQFIke4EG = new SMethodBuilder<SNode>(new SJavaCompoundTypeImpl((Class<SNode>) ((Class) Object.class))).name("record").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(4328199741083503276L).languageId(0xa0548c072591085fL, 0x71934284d7d145eeL).build2();
-  public static final SMethod<SNode> createDefaultVarExpr_id60Qa1k_nI2O = new SMethodBuilder<SNode>(new SJavaCompoundTypeImpl((Class<SNode>) ((Class) Object.class))).name("createDefaultVarExpr").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(6932772747669856436L).languageId(0xb66a309a6e1a7290L, 0xcfaa4966b7d54b69L).build2();
-  public static final SMethod<Boolean> isComparableTo_id6xvNSEj6BML = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("isComparableTo").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(7520958096812440753L).languageId(0xb66a309a6e1a7290L, 0xcfaa4966b7d54b69L).build2(SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""));
-  public static final SMethod<Boolean> canBeSorted_id7k6A8Wfp3IU = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("canBeSorted").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(8432595092503804858L).languageId(0xb66a309a6e1a7290L, 0xcfaa4966b7d54b69L).build2();
+  public static final SMethod<Iterable<SNode>> members_id6LLGpXJ1KQb = new SMethodBuilder<>((Class<Iterable<SNode>>) ((Class) Object.class)).name("members").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(7814222126785170827L).languageId(0x9150f0f3b880ce27L, 0xf3eafff030d246d6L).build2();
+  public static final SMethod<Iterable<ConstraintAndError>> applicableConstraints_id2S3ZC$oEyBR = new SMethodBuilder<>((Class<Iterable<ConstraintAndError>>) ((Class) Object.class)).name("applicableConstraints").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(3315773615452596727L).languageId(0xb66a309a6e1a7290L, 0xcfaa4966b7d54b69L).build2();
+  public static final SMethod<Boolean> isSameAs_idfIXgjlt4VE = new SMethodBuilder<>(Boolean.TYPE).name("isSameAs").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(283433227680763626L).languageId(0xb66a309a6e1a7290L, 0xcfaa4966b7d54b69L).build2(SMethodBuilder.createJavaParameter(SNode.class, "other"));
+  public static final SMethod<Boolean> canBeReferenced_id6JZACDWNZP9 = new SMethodBuilder<>(Boolean.TYPE).name("canBeReferenced").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(7782108600709676361L).languageId(0xb66a309a6e1a7290L, 0xcfaa4966b7d54b69L).build2();
+  public static final SMethod<SNode> record_id3KgQFIke4EG = new SMethodBuilder<>(SNode.class).name("record").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(4328199741083503276L).languageId(0xa0548c072591085fL, 0x71934284d7d145eeL).build2();
+  public static final SMethod<SNode> createDefaultVarExpr_id60Qa1k_nI2O = new SMethodBuilder<>(SNode.class).name("createDefaultVarExpr").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(6932772747669856436L).languageId(0xb66a309a6e1a7290L, 0xcfaa4966b7d54b69L).build2();
+  public static final SMethod<Boolean> isComparableTo_id6xvNSEj6BML = new SMethodBuilder<>(Boolean.TYPE).name("isComparableTo").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(7520958096812440753L).languageId(0xb66a309a6e1a7290L, 0xcfaa4966b7d54b69L).build2(SMethodBuilder.createJavaParameter(SNode.class, "other"));
+  public static final SMethod<Boolean> canBeSorted_id7k6A8Wfp3IU = new SMethodBuilder<>(Boolean.TYPE).name("canBeSorted").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(8432595092503804858L).languageId(0xb66a309a6e1a7290L, 0xcfaa4966b7d54b69L).build2();
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(members_id6LLGpXJ1KQb, applicableConstraints_id2S3ZC$oEyBR, isSameAs_idfIXgjlt4VE, canBeReferenced_id6JZACDWNZP9, record_id3KgQFIke4EG, createDefaultVarExpr_id60Qa1k_nI2O, isComparableTo_id6xvNSEj6BML, canBeSorted_id7k6A8Wfp3IU);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(members_id6LLGpXJ1KQb, applicableConstraints_id2S3ZC$oEyBR, isSameAs_idfIXgjlt4VE, canBeReferenced_id6JZACDWNZP9, record_id3KgQFIke4EG, createDefaultVarExpr_id60Qa1k_nI2O, isComparableTo_id6xvNSEj6BML, canBeSorted_id7k6A8Wfp3IU);
 
-  private static void ___init___(@NotNull SNode __thisNode__) {
-  }
 
   /*package*/ static Iterable<SNode> members_id6LLGpXJ1KQb(@NotNull SNode __thisNode__) {
     return (Iterable<SNode>) IRecordDeclaration__BehaviorDescriptor.effectiveMembers_id1qrYg08iahZ.invoke(SLinkOperations.getTarget(__thisNode__, LINKS.record$jEA7));
@@ -99,10 +95,6 @@ public final class RecordType__BehaviorDescriptor extends BaseBHDescriptor {
   /*package*/ RecordType__BehaviorDescriptor() {
   }
 
-  @Override
-  protected void initNode(@NotNull SNode node, @NotNull SConstructor constructor, @Nullable Object[] parameters) {
-    ___init___(node);
-  }
 
   @Override
   protected <T> T invokeSpecial0(@NotNull SNode node, @NotNull SMethod<T> method, @Nullable Object[] parameters) {

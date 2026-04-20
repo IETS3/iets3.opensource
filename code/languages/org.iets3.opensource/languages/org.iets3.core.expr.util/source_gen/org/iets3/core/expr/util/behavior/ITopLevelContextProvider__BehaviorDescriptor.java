@@ -9,32 +9,24 @@ import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import java.util.List;
 import org.jetbrains.mps.openapi.model.SNode;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import java.util.Arrays;
 import org.jetbrains.annotations.NotNull;
-import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 
 public final class ITopLevelContextProvider__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getInterfaceConcept(0x8bb1251eeae547abL, 0x984333adfae8edaaL, 0x7adee935255bd9ffL, "org.iets3.core.expr.util.structure.ITopLevelContextProvider");
 
-  public static final SMethod<List<SNode>> getUnboundColDefs_id7FuUjk_FoGI = new SMethodBuilder<List<SNode>>(new SJavaCompoundTypeImpl((Class<List<SNode>>) ((Class) Object.class))).name("getUnboundColDefs").modifiers(12, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(8853770331931642670L).languageId(0x984333adfae8edaaL, 0x8bb1251eeae547abL).build2();
+  public static final SMethod<List<SNode>> getUnboundColDefs_id7FuUjk_FoGI = new SMethodBuilder<>((Class<List<SNode>>) ((Class) Object.class)).name("getUnboundColDefs").modifiers(12, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(8853770331931642670L).languageId(0x984333adfae8edaaL, 0x8bb1251eeae547abL).build2();
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(getUnboundColDefs_id7FuUjk_FoGI);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(getUnboundColDefs_id7FuUjk_FoGI);
 
-  private static void ___init___(@NotNull SNode __thisNode__) {
-  }
 
 
   /*package*/ ITopLevelContextProvider__BehaviorDescriptor() {
   }
 
-  @Override
-  protected void initNode(@NotNull SNode node, @NotNull SConstructor constructor, @Nullable Object[] parameters) {
-    ___init___(node);
-  }
 
   @Override
   protected <T> T invokeSpecial0(@NotNull SNode node, @NotNull SMethod<T> method, @Nullable Object[] parameters) {

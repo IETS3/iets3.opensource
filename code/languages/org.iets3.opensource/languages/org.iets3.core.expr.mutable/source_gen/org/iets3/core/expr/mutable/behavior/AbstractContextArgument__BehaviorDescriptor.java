@@ -8,24 +8,20 @@ import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import org.jetbrains.mps.openapi.model.SNode;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import java.util.List;
 import java.util.Arrays;
 import org.jetbrains.annotations.NotNull;
-import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 
 public final class AbstractContextArgument__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getConcept(0xfbba51185fc649ffL, 0x9c3b0b4469830440L, 0x4bbb011107468f43L, "org.iets3.core.expr.mutable.structure.AbstractContextArgument");
 
-  public static final SMethod<SNode> expectedType_id4IV0h47jS3m = new SMethodBuilder<SNode>(new SJavaCompoundTypeImpl((Class<SNode>) ((Class) Object.class))).name("expectedType").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5456956546138210518L).languageId(0x9c3b0b4469830440L, 0xfbba51185fc649ffL).build2();
+  public static final SMethod<SNode> expectedType_id4IV0h47jS3m = new SMethodBuilder<>(SNode.class).name("expectedType").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5456956546138210518L).languageId(0x9c3b0b4469830440L, 0xfbba51185fc649ffL).build2();
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(expectedType_id4IV0h47jS3m);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(expectedType_id4IV0h47jS3m);
 
-  private static void ___init___(@NotNull SNode __thisNode__) {
-  }
 
   /*package*/ static SNode expectedType_id4IV0h47jS3m(@NotNull SNode __thisNode__) {
     return null;
@@ -34,10 +30,6 @@ public final class AbstractContextArgument__BehaviorDescriptor extends BaseBHDes
   /*package*/ AbstractContextArgument__BehaviorDescriptor() {
   }
 
-  @Override
-  protected void initNode(@NotNull SNode node, @NotNull SConstructor constructor, @Nullable Object[] parameters) {
-    ___init___(node);
-  }
 
   @Override
   protected <T> T invokeSpecial0(@NotNull SNode node, @NotNull SMethod<T> method, @Nullable Object[] parameters) {

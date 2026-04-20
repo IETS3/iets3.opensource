@@ -7,7 +7,6 @@ import org.jetbrains.mps.openapi.language.SAbstractConcept;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import java.awt.Color;
 import java.util.List;
@@ -25,10 +24,10 @@ import org.jetbrains.mps.openapi.language.SContainmentLink;
 public final class TraceAttribute__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getConcept(0x7d21cc4b4c2441dbL, 0x98688af4a7f3eba9L, 0x1d637a1db4ef0b38L, "org.iets3.core.trace.structure.TraceAttribute");
 
-  public static final SMethod<String> summaryString_id4A8SzOVam5y = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("summaryString").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5298733714214838626L).languageId(0xa055a74f8477fc34L, 0x583939beded04735L).build2();
-  public static final SMethod<Color> summaryColor_id4A8SzOVam5R = new SMethodBuilder<Color>(new SJavaCompoundTypeImpl(Color.class)).name("summaryColor").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5298733714214838647L).languageId(0xa055a74f8477fc34L, 0x583939beded04735L).build2();
+  public static final SMethod<String> summaryString_id4A8SzOVam5y = new SMethodBuilder<>(String.class).name("summaryString").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5298733714214838626L).languageId(0xa055a74f8477fc34L, 0x583939beded04735L).build2();
+  public static final SMethod<Color> summaryColor_id4A8SzOVam5R = new SMethodBuilder<>(Color.class).name("summaryColor").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5298733714214838647L).languageId(0xa055a74f8477fc34L, 0x583939beded04735L).build2();
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(summaryString_id4A8SzOVam5y, summaryColor_id4A8SzOVam5R);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(summaryString_id4A8SzOVam5y, summaryColor_id4A8SzOVam5R);
 
   private static void ___init___(@NotNull SNode __thisNode__) {
     SLinkOperations.setNewChild(__thisNode__, LINKS.value$GE3X, null);
