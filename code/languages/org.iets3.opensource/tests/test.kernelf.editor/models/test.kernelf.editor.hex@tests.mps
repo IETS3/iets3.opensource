@@ -6,7 +6,7 @@
     <use id="f61473f9-130f-42f6-b98d-6c438812c2f6" name="jetbrains.mps.baseLanguage.unitTest" version="1" />
     <use id="6b277d9a-d52d-416f-a209-1919bd737f50" name="org.iets3.core.expr.simpleTypes" version="11" />
     <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="12" />
-    <use id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc" version="2" />
+    <use id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc" version="3" />
     <use id="71934284-d7d1-45ee-a054-8c072591085f" name="org.iets3.core.expr.toplevel" version="6" />
     <use id="953e4089-c643-455b-8629-636de7085d1c" name="nl.f1re.testing" version="0" />
     <use id="2f7e2e35-6e74-4c43-9fa5-2465d68f5996" name="org.iets3.core.expr.collections" version="11" />
@@ -195,16 +195,10 @@
       </concept>
     </language>
     <language id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc">
-      <concept id="5349172909345501395" name="jetbrains.mps.baseLanguage.javadoc.structure.BaseDocComment" flags="ng" index="P$AiS">
-        <child id="8465538089690331502" name="body" index="TZ5H$" />
-      </concept>
-      <concept id="8465538089690331500" name="jetbrains.mps.baseLanguage.javadoc.structure.CommentLine" flags="ng" index="TZ5HA">
-        <child id="8970989240999019149" name="part" index="1dT_Ay" />
-      </concept>
-      <concept id="8970989240999019143" name="jetbrains.mps.baseLanguage.javadoc.structure.TextCommentLinePart" flags="ng" index="1dT_AC">
-        <property id="8970989240999019144" name="text" index="1dT_AB" />
-      </concept>
       <concept id="2068944020170241612" name="jetbrains.mps.baseLanguage.javadoc.structure.ClassifierDocComment" flags="ng" index="3UR2Jj" />
+      <concept id="5085607816302529296" name="jetbrains.mps.baseLanguage.javadoc.structure.IHoldCommentLines" flags="ngI" index="1VezTd">
+        <child id="5085607816302529587" name="commentBody" index="1Vez_I" />
+      </concept>
     </language>
     <language id="953e4089-c643-455b-8629-636de7085d1c" name="nl.f1re.testing">
       <concept id="2052872502397333186" name="nl.f1re.testing.structure.EditorTestLifecycleMethods" flags="ng" index="eWyDC">
@@ -244,6 +238,14 @@
       </concept>
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ngI" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
+      </concept>
+    </language>
+    <language id="c7fb639f-be78-4307-89b0-b5959c3fa8c8" name="jetbrains.mps.lang.text">
+      <concept id="155656958578482948" name="jetbrains.mps.lang.text.structure.Word" flags="nn" index="3oM_SD">
+        <property id="155656958578482949" name="value" index="3oM_SC" />
+      </concept>
+      <concept id="2535923850359271782" name="jetbrains.mps.lang.text.structure.Line" flags="nn" index="1PaTwC">
+        <child id="2535923850359271783" name="elements" index="1PaTwD" />
       </concept>
     </language>
     <language id="9464fa06-5ab9-409b-9274-64ab29588457" name="org.iets3.core.expr.lambda">
@@ -340,9 +342,48 @@
       <ref role="3uigEE" to="9mim:3p6$WoErNuK" resolve="SimpleTypesPrimitiveTypeMapper" />
     </node>
     <node concept="3UR2Jj" id="1LXhaCi_vWa" role="lGtFl">
-      <node concept="TZ5HA" id="1LXhaCi_vWb" role="TZ5H$">
-        <node concept="1dT_AC" id="1LXhaCi_vWc" role="1dT_Ay">
-          <property role="1dT_AB" value="Enables hex support. Only used for testing, so does not have an associated extension." />
+      <node concept="1PaTwC" id="1OHhakIqSsT" role="1Vez_I">
+        <node concept="3oM_SD" id="1OHhakIqSsU" role="1PaTwD">
+          <property role="3oM_SC" value="Enables" />
+        </node>
+        <node concept="3oM_SD" id="1OHhakIqSsV" role="1PaTwD">
+          <property role="3oM_SC" value="hex" />
+        </node>
+        <node concept="3oM_SD" id="1OHhakIqSsW" role="1PaTwD">
+          <property role="3oM_SC" value="support." />
+        </node>
+        <node concept="3oM_SD" id="1OHhakIqSsX" role="1PaTwD">
+          <property role="3oM_SC" value="Only" />
+        </node>
+        <node concept="3oM_SD" id="1OHhakIqSsY" role="1PaTwD">
+          <property role="3oM_SC" value="used" />
+        </node>
+        <node concept="3oM_SD" id="1OHhakIqSsZ" role="1PaTwD">
+          <property role="3oM_SC" value="for" />
+        </node>
+        <node concept="3oM_SD" id="1OHhakIqSt0" role="1PaTwD">
+          <property role="3oM_SC" value="testing," />
+        </node>
+        <node concept="3oM_SD" id="1OHhakIqSt1" role="1PaTwD">
+          <property role="3oM_SC" value="so" />
+        </node>
+        <node concept="3oM_SD" id="1OHhakIqSt2" role="1PaTwD">
+          <property role="3oM_SC" value="does" />
+        </node>
+        <node concept="3oM_SD" id="1OHhakIqSt3" role="1PaTwD">
+          <property role="3oM_SC" value="not" />
+        </node>
+        <node concept="3oM_SD" id="1OHhakIqSt4" role="1PaTwD">
+          <property role="3oM_SC" value="have" />
+        </node>
+        <node concept="3oM_SD" id="1OHhakIqSt5" role="1PaTwD">
+          <property role="3oM_SC" value="an" />
+        </node>
+        <node concept="3oM_SD" id="1OHhakIqSt6" role="1PaTwD">
+          <property role="3oM_SC" value="associated" />
+        </node>
+        <node concept="3oM_SD" id="1OHhakIqSt7" role="1PaTwD">
+          <property role="3oM_SC" value="extension." />
         </node>
       </node>
     </node>
