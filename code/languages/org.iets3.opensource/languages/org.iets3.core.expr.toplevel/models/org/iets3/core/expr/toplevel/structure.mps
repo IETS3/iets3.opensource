@@ -619,6 +619,11 @@
       <property role="IQ2nx" value="7061117989424763681" />
       <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
     </node>
+    <node concept="1TJgyi" id="2KASPekr2Ls" role="1TKVEl">
+      <property role="IQ2nx" value="3181480134895742044" />
+      <property role="TrG5h" value="useVerticalLayout" />
+      <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
+    </node>
     <node concept="1TJgyj" id="6PMVc5H_jOd" role="1TKVEi">
       <property role="IQ2ns" value="7886626212990500109" />
       <property role="20lmBu" value="fLJjDmT/aggregation" />
