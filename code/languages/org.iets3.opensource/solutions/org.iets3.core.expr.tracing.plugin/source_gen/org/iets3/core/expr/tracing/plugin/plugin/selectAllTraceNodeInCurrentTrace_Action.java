@@ -17,7 +17,7 @@ import jetbrains.mps.ide.actions.MPSCommonDataKeys;
 import java.awt.Frame;
 
 public class selectAllTraceNodeInCurrentTrace_Action extends BaseAction {
-  private static final Icon ICON = IconContainer.ICON_a0;
+  private static final Icon ICON = IconContainer.ICON0;
 
   public selectAllTraceNodeInCurrentTrace_Action() {
     super("Trace: select all traces of this node", "", ICON);

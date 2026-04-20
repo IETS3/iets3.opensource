@@ -22,7 +22,7 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
           cpb.shortDesc("a ghost icon");
           cpb.rawPresentation("GhostIconConcept");
-          cpb.icon(IconContainer.RESOURCE_a0a3a0a0b0d);
+          cpb.icon(IconContainer.RESOURCE_0);
           props_GhostIconConcept = cpb.create();
         }
         return props_GhostIconConcept;
@@ -31,7 +31,7 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
           cpb.shortDesc("a tracer icon");
           cpb.rawPresentation("TracerIconConcept");
-          cpb.icon(IconContainer.RESOURCE_a0a3a0a1b0d);
+          cpb.icon(IconContainer.RESOURCE_1);
           props_TracerIconConcept = cpb.create();
         }
         return props_TracerIconConcept;
