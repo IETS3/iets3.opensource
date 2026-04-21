@@ -6948,6 +6948,29 @@
         </node>
       </node>
     </node>
+    <node concept="13i0hz" id="2KASPekuEm4" role="13h7CS">
+      <property role="TrG5h" value="useVerticalLayout" />
+      <node concept="3Tm1VV" id="2KASPekuEm5" role="1B3o_S" />
+      <node concept="10P_77" id="2KASPekuEut" role="3clF45" />
+      <node concept="3clFbS" id="2KASPekuEm7" role="3clF47">
+        <node concept="3clFbF" id="2KASPekuEw0" role="3cqZAp">
+          <node concept="22lmx$" id="2KASPekuHK0" role="3clFbG">
+            <node concept="2OqwBi" id="2KASPekuHPN" role="3uHU7w">
+              <node concept="13iPFW" id="2KASPekuHL3" role="2Oq$k0" />
+              <node concept="3TrcHB" id="2KASPekuHT4" role="2OqNvi">
+                <ref role="3TsBF5" to="yv47:2KASPekr2Ls" resolve="useVerticalLayout" />
+              </node>
+            </node>
+            <node concept="2OqwBi" id="2KASPekuEUf" role="3uHU7B">
+              <node concept="13iPFW" id="2KASPekuEvZ" role="2Oq$k0" />
+              <node concept="2qgKlT" id="2KASPekuGkm" role="2OqNvi">
+                <ref role="37wK5l" node="3Y6fbK16sYK" resolve="isValued" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
   </node>
   <node concept="13h7C7" id="3Y6fbK1lTzW">
     <property role="3GE5qa" value="enum" />
