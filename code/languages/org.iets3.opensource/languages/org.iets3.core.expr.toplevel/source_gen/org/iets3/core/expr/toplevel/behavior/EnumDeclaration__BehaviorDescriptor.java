@@ -18,10 +18,12 @@ import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
 import org.iets3.core.expr.base.plugin.TypesystemCustomizer;
 import jetbrains.mps.smodel.structure.ExtensionPoint;
 import org.iets3.core.expr.base.plugin.DefaultTypesystemCustomizer;
+import jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 import org.jetbrains.mps.openapi.language.SContainmentLink;
 import org.jetbrains.mps.openapi.language.SInterfaceConcept;
+import org.jetbrains.mps.openapi.language.SProperty;
 
 public final class EnumDeclaration__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getConcept(0x71934284d7d145eeL, 0xa0548c072591085fL, 0x61fe216664a72eaeL, "org.iets3.core.expr.toplevel.structure.EnumDeclaration");
@@ -31,8 +33,9 @@ public final class EnumDeclaration__BehaviorDescriptor extends BaseBHDescriptor 
   public static final SMethod<SNode> getDefaultLiteral_idVFjlN5t4Q7 = new SMethodBuilder<>(SNode.class).name("getDefaultLiteral").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(1075037996903058823L).languageId(0xa0548c072591085fL, 0x71934284d7d145eeL).build2();
   public static final SMethod<Iterable<SNode>> effectiveLiterals_idolugnm0Egc = new SMethodBuilder<>((Class<Iterable<SNode>>) ((Class) Object.class)).name("effectiveLiterals").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(438389604710786060L).languageId(0xa0548c072591085fL, 0x71934284d7d145eeL).build2();
   public static final SMethod<Boolean> checkDuplicates_id1WjCak8S2F0 = new SMethodBuilder<>(Boolean.TYPE).name("checkDuplicates").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(2239310070412225216L).languageId(0xa0548c072591085fL, 0x71934284d7d145eeL).build2();
+  public static final SMethod<Boolean> useVerticalLayout_id2KASPekuEm4 = new SMethodBuilder<>(Boolean.TYPE).name("useVerticalLayout").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(3181480134896690564L).languageId(0xa0548c072591085fL, 0x71934284d7d145eeL).build2();
 
-  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(getUniquelyNamedElements_id4qSf1u1TRfj, isValued_id3Y6fbK16sYK, getDefaultLiteral_idVFjlN5t4Q7, effectiveLiterals_idolugnm0Egc, checkDuplicates_id1WjCak8S2F0);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(getUniquelyNamedElements_id4qSf1u1TRfj, isValued_id3Y6fbK16sYK, getDefaultLiteral_idVFjlN5t4Q7, effectiveLiterals_idolugnm0Egc, checkDuplicates_id1WjCak8S2F0, useVerticalLayout_id2KASPekuEm4);
 
 
   /*package*/ static Iterable<SNode> getUniquelyNamedElements_id4qSf1u1TRfj(@NotNull SNode __thisNode__) {
@@ -58,6 +61,9 @@ public final class EnumDeclaration__BehaviorDescriptor extends BaseBHDescriptor 
     }
     return DefaultTypesystemCustomizer.getInstance().checkDuplicateValuesInEnums();
   }
+  /*package*/ static boolean useVerticalLayout_id2KASPekuEm4(@NotNull SNode __thisNode__) {
+    return ((boolean) EnumDeclaration__BehaviorDescriptor.isValued_id3Y6fbK16sYK.invoke(__thisNode__)) || SPropertyOperations.getBoolean(__thisNode__, PROPS.useVerticalLayout$wNgV);
+  }
 
   /*package*/ EnumDeclaration__BehaviorDescriptor() {
   }
@@ -80,6 +86,8 @@ public final class EnumDeclaration__BehaviorDescriptor extends BaseBHDescriptor 
         return (T) ((Iterable<SNode>) effectiveLiterals_idolugnm0Egc(node));
       case 4:
         return (T) ((Boolean) checkDuplicates_id1WjCak8S2F0(node));
+      case 5:
+        return (T) ((Boolean) useVerticalLayout_id2KASPekuEm4(node));
       default:
         throw new BHMethodNotFoundException(this, method);
     }
@@ -116,5 +124,9 @@ public final class EnumDeclaration__BehaviorDescriptor extends BaseBHDescriptor 
 
   private static final class CONCEPTS {
     /*package*/ static final SInterfaceConcept IDeclarationExtensionContext$$B = MetaAdapterFactory.getInterfaceConcept(0x71934284d7d145eeL, 0xa0548c072591085fL, 0x6157905d6177b58L, "org.iets3.core.expr.toplevel.structure.IDeclarationExtensionContext");
+  }
+
+  private static final class PROPS {
+    /*package*/ static final SProperty useVerticalLayout$wNgV = MetaAdapterFactory.getProperty(0x71934284d7d145eeL, 0xa0548c072591085fL, 0x61fe216664a72eaeL, 0x2c26e353946c2c5cL, "useVerticalLayout");
   }
 }
