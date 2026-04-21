@@ -16182,10 +16182,10 @@
       <node id="4329377722072726779" at="148,60,149,62" concept="10" />
       <node id="4329377722072726779" at="149,62,150,105" concept="4" />
       <node id="4329377722072726793" at="152,127,153,80" concept="11" />
-      <node id="4329377722072726783" at="155,121,156,180" concept="4" />
+      <node id="4329377722072726783" at="155,121,156,172" concept="4" />
       <node id="4329377722072726779" at="158,34,159,26" concept="11" />
-      <node id="4329377722072726789" at="161,65,162,77" concept="10" />
-      <node id="4329377722072726789" at="162,77,163,28" concept="11" />
+      <node id="1934342229909874133" at="161,57,162,69" concept="10" />
+      <node id="1934342229909874133" at="162,69,163,28" concept="11" />
       <node id="1311534854737711489" at="167,37,168,38" concept="4" />
       <node id="1311534854737711489" at="170,40,171,23" concept="11" />
       <node id="1311534854737711489" at="173,40,174,19" concept="11" />
@@ -16224,7 +16224,6 @@
       <node id="5944584503038205873" at="251,0,252,0" concept="14" trace="AbstractFeature$T" />
       <node id="5944584503038205873" at="252,0,253,0" concept="14" trace="ICanHaveSubFeature$Cu" />
       <node id="5944584503038205873" at="253,0,254,0" concept="14" trace="Feature$D7" />
-      <node id="5944584503038205873" at="254,0,255,0" concept="14" trace="FeatureTreeNode$HV" />
       <node id="5944584503038208651" at="41,0,44,0" concept="2" trace="Feature_Keymap_Action0#()V" />
       <node id="5944584503038208651" at="44,0,47,0" concept="9" trace="getDescriptionText#()Ljava/lang/String;" />
       <node id="5944584503038208651" at="47,0,50,0" concept="9" trace="isMenuAlwaysShown#()Z" />
@@ -16273,7 +16272,7 @@
       <node id="1901441284409661697" at="106,0,110,0" concept="9" trace="execute#(Ljetbrains/mps/openapi/editor/EditorContext;)V" />
       <node id="1901441284409677233" at="119,0,123,0" concept="15" trace="createFeature_1upo2r_a0a0a0b#()Lorg/jetbrains/mps/openapi/model/SNode;" />
       <node id="4329377722072726779" at="148,0,152,0" concept="9" trace="execute#(Ljetbrains/mps/openapi/editor/EditorContext;)V" />
-      <node id="4329377722072726789" at="161,0,165,0" concept="15" trace="createFeatureTreeNode_1upo2r_a0a0a0c#()Lorg/jetbrains/mps/openapi/model/SNode;" />
+      <node id="1934342229909874133" at="161,0,165,0" concept="15" trace="createFeature_1upo2r_a0a0a0c#()Lorg/jetbrains/mps/openapi/model/SNode;" />
       <node id="1311534854737711489" at="190,0,194,0" concept="9" trace="execute#(Ljetbrains/mps/openapi/editor/EditorContext;)V" />
       <node id="1311534854741455031" at="232,0,236,0" concept="9" trace="execute#(Ljetbrains/mps/openapi/editor/EditorContext;)V" />
       <node id="1311534854741455031" at="239,0,245,0" concept="9" trace="execute_internal#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;Ljava/util/List;)V" />
@@ -16309,7 +16308,7 @@
       <scope id="4329377722072726779" at="140,32,141,21" />
       <scope id="4329377722072726779" at="143,85,144,21" />
       <scope id="4329377722072726792" at="152,127,153,80" />
-      <scope id="4329377722072726782" at="155,121,156,180" />
+      <scope id="4329377722072726782" at="155,121,156,172" />
       <scope id="4329377722072726779" at="158,34,159,26" />
       <scope id="1311534854737711489" at="167,37,168,38" />
       <scope id="1311534854737711489" at="170,40,171,23" />
@@ -16342,8 +16341,8 @@
       <scope id="4329377722072726779" at="148,60,150,105">
         <var name="contextCell" id="4329377722072726779" />
       </scope>
-      <scope id="4329377722072726789" at="161,65,163,28">
-        <var name="n0" id="4329377722072726789" />
+      <scope id="1934342229909874133" at="161,57,163,28">
+        <var name="n0" id="1934342229909874133" />
       </scope>
       <scope id="1311534854737711489" at="190,60,192,105">
         <var name="contextCell" id="1311534854737711489" />
@@ -16422,7 +16421,7 @@
       <scope id="4329377722072726779" at="148,0,152,0">
         <var name="editorContext" id="4329377722072726779" />
       </scope>
-      <scope id="4329377722072726789" at="161,0,165,0" />
+      <scope id="1934342229909874133" at="161,0,165,0" />
       <scope id="1311534854737711489" at="190,0,194,0">
         <var name="editorContext" id="1311534854737711489" />
       </scope>
@@ -16486,13 +16485,13 @@
       <scope id="1311534854741455031" at="218,0,232,0">
         <var name="editorContext" id="1311534854741455031" />
       </scope>
-      <unit id="5944584503038205873" at="250,0,256,0" name="org.iets3.variability.featuremodel.base.editor.Feature_Keymap$CONCEPTS" />
+      <unit id="5944584503038205873" at="250,0,255,0" name="org.iets3.variability.featuremodel.base.editor.Feature_Keymap$CONCEPTS" />
       <unit id="1311534854741455031" at="208,0,249,0" name="org.iets3.variability.featuremodel.base.editor.Feature_Keymap$Feature_Keymap_Action4" />
       <unit id="5944584503038208651" at="40,0,82,0" name="org.iets3.variability.featuremodel.base.editor.Feature_Keymap$Feature_Keymap_Action0" />
       <unit id="1901441284409661697" at="82,0,124,0" name="org.iets3.variability.featuremodel.base.editor.Feature_Keymap$Feature_Keymap_Action1" />
       <unit id="4329377722072726779" at="124,0,166,0" name="org.iets3.variability.featuremodel.base.editor.Feature_Keymap$Feature_Keymap_Action2" />
       <unit id="1311534854737711489" at="166,0,208,0" name="org.iets3.variability.featuremodel.base.editor.Feature_Keymap$Feature_Keymap_Action3" />
-      <unit id="5944584503038205873" at="25,0,257,0" name="org.iets3.variability.featuremodel.base.editor.Feature_Keymap" />
+      <unit id="5944584503038205873" at="25,0,256,0" name="org.iets3.variability.featuremodel.base.editor.Feature_Keymap" />
     </file>
   </root>
   <root nodeRef="r:6f04f8d5-318b-477f-9c0e-932f665e2395(org.iets3.variability.featuremodel.base.editor)/6003766691768681232">
