@@ -50,7 +50,7 @@ public class enumDeclarationInsertLiteral extends KeyMapImpl {
       this.execute_internal(editorContext, contextCell.getSNode(), this.getSelectedNodes(editorContext));
     }
     private boolean canExecute_internal(final EditorContext editorContext, final SNode node, final List<SNode> selectedNodes) {
-      return !((boolean) EnumDeclaration__BehaviorDescriptor.isValued_id3Y6fbK16sYK.invoke(node));
+      return !((boolean) EnumDeclaration__BehaviorDescriptor.useVerticalLayout_id2KASPekuEm4.invoke(node));
     }
     private void execute_internal(final EditorContext editorContext, final SNode node, final List<SNode> selectedNodes) {
       SLinkOperations.addNewChild(node, LINKS.literals$K_NE, null);

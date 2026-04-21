@@ -414,6 +414,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.origin("r:da65683e-ff6f-430d-ab68-32a77df72c93(org.iets3.core.expr.toplevel.structure)/7061117989422575278");
     b.version(3);
     b.property("qualified", 0x61fe216664c89321L).type(PrimitiveTypeId.BOOLEAN).origin("7061117989424763681").done();
+    b.property("useVerticalLayout", 0x2c26e353946c2c5cL).type(PrimitiveTypeId.BOOLEAN).origin("3181480134895742044").done();
     b.aggregate("type", 0x2c99d73be0951222L).target(0xcfaa4966b7d54b69L, 0xb66a309a6e1a7290L, 0x670d5e92f854a614L).optional(true).ordered(true).multiple(false).origin("3213836461276467746").done();
     b.aggregate("literals", 0x61fe216664a72ef4L).target(0x71934284d7d145eeL, 0xa0548c072591085fL, 0x61fe216664a72ed1L).optional(true).ordered(true).multiple(true).origin("7061117989422575348").done();
     b.aggregate("order", 0x6d72ecc16d953d0dL).target(0x71934284d7d145eeL, 0xa0548c072591085fL, 0x6d72ecc16d953cfeL).optional(true).ordered(true).multiple(false).origin("7886626212990500109").done();
