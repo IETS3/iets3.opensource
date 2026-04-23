@@ -18967,7 +18967,7 @@
     <property role="turDy" value="build-testInterpreter2.xml" />
     <property role="2DA0ip" value="../../../../../build/scripts" />
     <node concept="m$_wf" id="4bxCLc4WX1Y" role="3989C9">
-      <property role="m$_wk" value="org.iets3.opensource.interpreterExecutor" />
+      <property role="m$_wk" value="org.iets3.opensource.interpreterExecutorStarter" />
       <node concept="3_J27D" id="4bxCLc4WX1Z" role="m$_yQ">
         <node concept="3Mxwew" id="4bxCLc4WX20" role="3MwsjC">
           <property role="3MwjfP" value="org.iets3.opensource.interpreterExecutor" />
