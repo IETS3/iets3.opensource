@@ -5633,5 +5633,99 @@
       <ref role="1YaFvo" to="5qo5:2xPWNWpoRmG" resolve="StringTypeWithConstraint" />
     </node>
   </node>
+  <node concept="35pCF_" id="5WXTlJEeP2F">
+    <property role="3GE5qa" value="numeric" />
+    <property role="TrG5h" value="replaceIntegerType" />
+    <node concept="1YaCAy" id="5WXTlJEePrE" role="35pZ6h">
+      <property role="TrG5h" value="numberType" />
+      <ref role="1YaFvo" to="5qo5:78hTg1$P0UC" resolve="NumberType" />
+    </node>
+    <node concept="3clFbS" id="5WXTlJEeP2H" role="2sgrp5" />
+    <node concept="1YaCAy" id="5WXTlJEeP2J" role="1YuTPh">
+      <property role="TrG5h" value="integerType" />
+      <ref role="1YaFvo" to="5qo5:4rZeNQ6Oerp" resolve="IntegerType" />
+    </node>
+    <node concept="1xSnZT" id="5WXTlJEeQpi" role="1xSnZW">
+      <node concept="3clFbS" id="5WXTlJEeQpj" role="2VODD2">
+        <node concept="3clFbF" id="5WXTlJEeQCv" role="3cqZAp">
+          <node concept="1Wc70l" id="5WXTlJEfPuO" role="3clFbG">
+            <node concept="2OqwBi" id="5WXTlJEfQaz" role="3uHU7w">
+              <node concept="1YBJjd" id="5WXTlJEfPww" role="2Oq$k0">
+                <ref role="1YBMHb" node="5WXTlJEePrE" resolve="numberType" />
+              </node>
+              <node concept="2qgKlT" id="5WXTlJEfRgg" role="2OqNvi">
+                <ref role="37wK5l" to="b1h1:2NHHcg2D9Nd" resolve="isPositiveInfinity" />
+              </node>
+            </node>
+            <node concept="1Wc70l" id="5WXTlJEfues" role="3uHU7B">
+              <node concept="2OqwBi" id="5WXTlJEeQV0" role="3uHU7B">
+                <node concept="1YBJjd" id="5WXTlJEeQCu" role="2Oq$k0">
+                  <ref role="1YBMHb" node="5WXTlJEePrE" resolve="numberType" />
+                </node>
+                <node concept="2qgKlT" id="5WXTlJEeSVe" role="2OqNvi">
+                  <ref role="37wK5l" to="b1h1:3p6$WoEh1ch" resolve="isInt" />
+                </node>
+              </node>
+              <node concept="2OqwBi" id="5WXTlJEfuMq" role="3uHU7w">
+                <node concept="1YBJjd" id="5WXTlJEfuyc" role="2Oq$k0">
+                  <ref role="1YBMHb" node="5WXTlJEePrE" resolve="numberType" />
+                </node>
+                <node concept="2qgKlT" id="5WXTlJEfv9N" role="2OqNvi">
+                  <ref role="37wK5l" to="b1h1:2NHHcg2Dg5B" resolve="isNegativeInfinity" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="35pCF_" id="5WXTlJEkrjE">
+    <property role="3GE5qa" value="numeric" />
+    <property role="TrG5h" value="replaceRealType" />
+    <node concept="3clFbS" id="5WXTlJEkrjG" role="2sgrp5" />
+    <node concept="1YaCAy" id="5WXTlJEkrjI" role="1YuTPh">
+      <property role="TrG5h" value="realType" />
+      <ref role="1YaFvo" to="5qo5:4rZeNQ6Oetc" resolve="RealType" />
+    </node>
+    <node concept="1YaCAy" id="5WXTlJEkrl5" role="35pZ6h">
+      <property role="TrG5h" value="numberType" />
+      <ref role="1YaFvo" to="5qo5:78hTg1$P0UC" resolve="NumberType" />
+    </node>
+    <node concept="1xSnZT" id="5WXTlJEkrlp" role="1xSnZW">
+      <node concept="3clFbS" id="5WXTlJEkrlq" role="2VODD2">
+        <node concept="3clFbF" id="5WXTlJEkrBa" role="3cqZAp">
+          <node concept="1Wc70l" id="5WXTlJEkvHE" role="3clFbG">
+            <node concept="1Wc70l" id="5WXTlJEktOP" role="3uHU7B">
+              <node concept="2OqwBi" id="5WXTlJEks6J" role="3uHU7B">
+                <node concept="1YBJjd" id="5WXTlJEkrB9" role="2Oq$k0">
+                  <ref role="1YBMHb" node="5WXTlJEkrl5" resolve="numberType" />
+                </node>
+                <node concept="2qgKlT" id="5WXTlJEkstC" role="2OqNvi">
+                  <ref role="37wK5l" to="b1h1:7Wa2sv3Gi_T" resolve="isInfinitePrecision" />
+                </node>
+              </node>
+              <node concept="2OqwBi" id="5WXTlJEktVc" role="3uHU7w">
+                <node concept="1YBJjd" id="5WXTlJEktVd" role="2Oq$k0">
+                  <ref role="1YBMHb" node="5WXTlJEkrl5" resolve="numberType" />
+                </node>
+                <node concept="2qgKlT" id="5WXTlJEktVe" role="2OqNvi">
+                  <ref role="37wK5l" to="b1h1:2NHHcg2Dg5B" resolve="isNegativeInfinity" />
+                </node>
+              </node>
+            </node>
+            <node concept="2OqwBi" id="5WXTlJEkvOT" role="3uHU7w">
+              <node concept="1YBJjd" id="5WXTlJEkvOU" role="2Oq$k0">
+                <ref role="1YBMHb" node="5WXTlJEkrl5" resolve="numberType" />
+              </node>
+              <node concept="2qgKlT" id="5WXTlJEkvOV" role="2OqNvi">
+                <ref role="37wK5l" to="b1h1:2NHHcg2D9Nd" resolve="isPositiveInfinity" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
 </model>
 

@@ -301,6 +301,7 @@
       <concept id="1175517767210" name="jetbrains.mps.lang.typesystem.structure.ReportErrorStatement" flags="nn" index="2MkqsV">
         <child id="1175517851849" name="errorString" index="2MkJ7o" />
       </concept>
+      <concept id="4649457259824694112" name="jetbrains.mps.lang.typesystem.structure.TypesystemEquationStatementAnnotation" flags="ng" index="MG7fu" />
       <concept id="1175594888091" name="jetbrains.mps.lang.typesystem.structure.TypeCheckerAccessExpression" flags="nn" index="2QUAEa" />
       <concept id="1205762105978" name="jetbrains.mps.lang.typesystem.structure.WhenConcreteVariableDeclaration" flags="ng" index="2X1qdy" />
       <concept id="1205762656241" name="jetbrains.mps.lang.typesystem.structure.WhenConcreteVariableReference" flags="nn" index="2X3wrD">
@@ -7030,6 +7031,9 @@
                         <ref role="2X3Bk0" node="46cplYwOkUY" resolve="sub" />
                       </node>
                     </node>
+                  </node>
+                  <node concept="MG7fu" id="5WXTlJEkgv9" role="lGtFl">
+                    <property role="TrG5h" value="IncompatibleType" />
                   </node>
                 </node>
               </node>

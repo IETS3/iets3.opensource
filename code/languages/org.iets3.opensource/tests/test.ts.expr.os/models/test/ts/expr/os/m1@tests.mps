@@ -6945,7 +6945,265 @@
             </node>
           </node>
         </node>
+        <node concept="_ixoA" id="5WXTlJEk7ta" role="_iOnC" />
+        <node concept="1Ws0TD" id="5WXTlJEk7te" role="_iOnC">
+          <property role="1WsWdv" value="real / int to number types compatibility" />
+        </node>
+        <node concept="_ixoA" id="5WXTlJEkacp" role="_iOnC" />
+        <node concept="2zPypq" id="5WXTlJEkaPl" role="_iOnC">
+          <property role="TrG5h" value="realNum" />
+          <node concept="30bXRB" id="5WXTlJEkaQ0" role="2lDidJ">
+            <property role="30bXRw" value="42.2" />
+          </node>
+          <node concept="30bXLL" id="5WXTlJEkaRM" role="2zM23F" />
+        </node>
+        <node concept="2zPypq" id="5WXTlJEkaQu" role="_iOnC">
+          <property role="TrG5h" value="intNum" />
+          <node concept="30bXRB" id="5WXTlJEkaT_" role="2lDidJ">
+            <property role="30bXRw" value="42" />
+          </node>
+          <node concept="30bXR$" id="5WXTlJEkaSE" role="2zM23F" />
+        </node>
+        <node concept="_ixoA" id="5WXTlJEkaV5" role="_iOnC" />
+        <node concept="2zPypq" id="5WXTlJEkaUh" role="_iOnC">
+          <property role="TrG5h" value="realToGenericNum" />
+          <node concept="_emDc" id="5WXTlJEkaVf" role="2lDidJ">
+            <ref role="_emDf" node="5WXTlJEkaPl" resolve="realNum" />
+            <node concept="7CXmI" id="5WXTlJEkaVw" role="lGtFl">
+              <node concept="2DdRWr" id="5WXTlJEkgk2" role="7EUXB">
+                <node concept="MGsTx" id="5WXTlJEkgk3" role="MJxsd">
+                  <ref role="39XzEq" to="t4jv:5aHkq2w4P8w" />
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="mLuIC" id="5WXTlJEkaUW" role="2zM23F" />
+        </node>
+        <node concept="2zPypq" id="5WXTlJElpNu" role="_iOnC">
+          <property role="TrG5h" value="realToPrecNum" />
+          <node concept="_emDc" id="5WXTlJElpNv" role="2lDidJ">
+            <ref role="_emDf" node="5WXTlJEkaPl" resolve="realNum" />
+            <node concept="7CXmI" id="5WXTlJElpRS" role="lGtFl">
+              <node concept="2DdRWr" id="5WXTlJElviw" role="7EUXB">
+                <node concept="MGsTx" id="5WXTlJElvix" role="MJxsd">
+                  <ref role="39XzEq" to="t4jv:5aHkq2w4P8w" />
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="mLuIC" id="5WXTlJElpNw" role="2zM23F">
+            <node concept="2gteS_" id="5WXTlJElpNx" role="2gteVg">
+              <property role="2gteVv" value="10" />
+            </node>
+          </node>
+        </node>
+        <node concept="2zPypq" id="5WXTlJEkhIe" role="_iOnC">
+          <property role="TrG5h" value="realToInfPrecNum" />
+          <node concept="_emDc" id="5WXTlJEkhJj" role="2lDidJ">
+            <ref role="_emDf" node="5WXTlJEkaPl" resolve="realNum" />
+          </node>
+          <node concept="mLuIC" id="5WXTlJEkhIC" role="2zM23F">
+            <node concept="2gteS_" id="5WXTlJEkhIN" role="2gteVg">
+              <property role="2gteVv" value="inf" />
+            </node>
+          </node>
+        </node>
+        <node concept="2zPypq" id="5WXTlJElymC" role="_iOnC">
+          <property role="TrG5h" value="realToInfRangeInfPrecNum" />
+          <node concept="_emDc" id="5WXTlJElyoq" role="2lDidJ">
+            <ref role="_emDf" node="5WXTlJEkaPl" resolve="realNum" />
+          </node>
+          <node concept="mLuIC" id="5WXTlJElyn5" role="2zM23F">
+            <node concept="2gteSX" id="5WXTlJElyng" role="2gteSx" />
+            <node concept="2gteS_" id="5WXTlJElynG" role="2gteVg">
+              <property role="2gteVv" value="inf" />
+            </node>
+          </node>
+        </node>
+        <node concept="_ixoA" id="5WXTlJElKR4" role="_iOnC" />
+        <node concept="2zPypq" id="5WXTlJEkhHe" role="_iOnC">
+          <property role="TrG5h" value="intToGenericNum" />
+          <node concept="_emDc" id="5WXTlJEkhHP" role="2lDidJ">
+            <ref role="_emDf" node="5WXTlJEkaQu" resolve="intNum" />
+          </node>
+          <node concept="mLuIC" id="5WXTlJEkhHx" role="2zM23F" />
+        </node>
+        <node concept="2zPypq" id="5WXTlJElBO7" role="_iOnC">
+          <property role="TrG5h" value="intToZeroPrecNum" />
+          <node concept="_emDc" id="5WXTlJElBO8" role="2lDidJ">
+            <ref role="_emDf" node="5WXTlJEkaQu" resolve="intNum" />
+          </node>
+          <node concept="mLuIC" id="5WXTlJElBO9" role="2zM23F">
+            <node concept="2gteS_" id="5WXTlJElBT2" role="2gteVg">
+              <property role="2gteVv" value="0" />
+            </node>
+          </node>
+        </node>
+        <node concept="2zPypq" id="5WXTlJElBV9" role="_iOnC">
+          <property role="TrG5h" value="intToInfRangeZeroPrecNum" />
+          <node concept="_emDc" id="5WXTlJElBVa" role="2lDidJ">
+            <ref role="_emDf" node="5WXTlJEkaQu" resolve="intNum" />
+          </node>
+          <node concept="mLuIC" id="5WXTlJElBVb" role="2zM23F">
+            <node concept="2gteS_" id="5WXTlJElBVc" role="2gteVg">
+              <property role="2gteVv" value="0" />
+            </node>
+            <node concept="2gteSX" id="5WXTlJElBVz" role="2gteSx" />
+          </node>
+        </node>
+        <node concept="2zPypq" id="5WXTlJElFjK" role="_iOnC">
+          <property role="TrG5h" value="intToPrecNum" />
+          <node concept="_emDc" id="5WXTlJElFkT" role="2lDidJ">
+            <ref role="_emDf" node="5WXTlJEkaQu" resolve="intNum" />
+            <node concept="7CXmI" id="5WXTlJElFlj" role="lGtFl">
+              <node concept="2DdRWr" id="5WXTlJElKNl" role="7EUXB">
+                <node concept="MGsTx" id="5WXTlJElKNm" role="MJxsd">
+                  <ref role="39XzEq" to="t4jv:5aHkq2w4P8w" />
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="mLuIC" id="5WXTlJElFkb" role="2zM23F">
+            <node concept="2gteS_" id="5WXTlJElFkm" role="2gteVg">
+              <property role="2gteVv" value="10" />
+            </node>
+          </node>
+        </node>
+        <node concept="_ixoA" id="5WXTlJElKPe" role="_iOnC" />
+        <node concept="1Ws0TD" id="5WXTlJElPtx" role="_iOnC">
+          <property role="1WsWdv" value="number to real / int types compatibility" />
+        </node>
+        <node concept="_ixoA" id="5WXTlJElPtL" role="_iOnC" />
+        <node concept="2zPypq" id="5WXTlJElL35" role="_iOnC">
+          <property role="TrG5h" value="genericNum" />
+          <node concept="30bXRB" id="5WXTlJElL3B" role="2lDidJ">
+            <property role="30bXRw" value="42" />
+          </node>
+          <node concept="mLuIC" id="5WXTlJElL3q" role="2zM23F" />
+        </node>
+        <node concept="2zPypq" id="5WXTlJElLNf" role="_iOnC">
+          <property role="TrG5h" value="precNum" />
+          <node concept="30bXRB" id="5WXTlJElLNg" role="2lDidJ">
+            <property role="30bXRw" value="42.2" />
+          </node>
+          <node concept="mLuIC" id="5WXTlJElLNh" role="2zM23F">
+            <node concept="2gteS_" id="5WXTlJElLOv" role="2gteVg">
+              <property role="2gteVv" value="10" />
+            </node>
+          </node>
+        </node>
+        <node concept="2zPypq" id="5WXTlJElOIk" role="_iOnC">
+          <property role="TrG5h" value="infPrecNum" />
+          <node concept="30bXRB" id="5WXTlJElOIl" role="2lDidJ">
+            <property role="30bXRw" value="42.2" />
+          </node>
+          <node concept="mLuIC" id="5WXTlJElOIm" role="2zM23F">
+            <node concept="2gteS_" id="5WXTlJElOIn" role="2gteVg">
+              <property role="2gteVv" value="inf" />
+            </node>
+          </node>
+        </node>
+        <node concept="2zPypq" id="5WXTlJElP4M" role="_iOnC">
+          <property role="TrG5h" value="infRangeInfPrecNum" />
+          <node concept="30bXRB" id="5WXTlJElP4N" role="2lDidJ">
+            <property role="30bXRw" value="42.2" />
+          </node>
+          <node concept="mLuIC" id="5WXTlJElP4O" role="2zM23F">
+            <node concept="2gteS_" id="5WXTlJElP4P" role="2gteVg">
+              <property role="2gteVv" value="inf" />
+            </node>
+            <node concept="2gteSX" id="5WXTlJElP7L" role="2gteSx" />
+          </node>
+        </node>
+        <node concept="2zPypq" id="5WXTlJElPMI" role="_iOnC">
+          <property role="TrG5h" value="zeroPrecNum" />
+          <node concept="30bXRB" id="5WXTlJElPMJ" role="2lDidJ">
+            <property role="30bXRw" value="42" />
+          </node>
+          <node concept="mLuIC" id="5WXTlJElPMK" role="2zM23F">
+            <node concept="2gteS_" id="5WXTlJElPML" role="2gteVg">
+              <property role="2gteVv" value="0" />
+            </node>
+          </node>
+        </node>
+        <node concept="2zPypq" id="5WXTlJElRqG" role="_iOnC">
+          <property role="TrG5h" value="infRangeZeroPrecNum" />
+          <node concept="30bXRB" id="5WXTlJElRqH" role="2lDidJ">
+            <property role="30bXRw" value="42" />
+          </node>
+          <node concept="mLuIC" id="5WXTlJElPu5" role="2zM23F">
+            <node concept="2gteS_" id="5WXTlJElPu6" role="2gteVg">
+              <property role="2gteVv" value="0" />
+            </node>
+            <node concept="2gteSX" id="5WXTlJElPu7" role="2gteSx" />
+          </node>
+        </node>
         <node concept="_ixoA" id="17MOwOjM$LU" role="_iOnC" />
+        <node concept="2zPypq" id="5WXTlJElKPL" role="_iOnC">
+          <property role="TrG5h" value="genericNumToReal" />
+          <node concept="_emDc" id="5WXTlJElKPM" role="2lDidJ">
+            <ref role="_emDf" node="5WXTlJElL35" resolve="genericNum" />
+          </node>
+          <node concept="30bXLL" id="5WXTlJElL03" role="2zM23F" />
+        </node>
+        <node concept="2zPypq" id="5WXTlJElKPE" role="_iOnC">
+          <property role="TrG5h" value="precNumToReal" />
+          <node concept="30bXLL" id="5WXTlJElLCv" role="2zM23F" />
+          <node concept="_emDc" id="5WXTlJElP4n" role="2lDidJ">
+            <ref role="_emDf" node="5WXTlJElLNf" resolve="precNum" />
+          </node>
+        </node>
+        <node concept="2zPypq" id="5WXTlJElKPA" role="_iOnC">
+          <property role="TrG5h" value="infPrecNumToReal" />
+          <node concept="_emDc" id="5WXTlJElKPB" role="2lDidJ">
+            <ref role="_emDf" node="5WXTlJElOIk" resolve="infPrecNum" />
+          </node>
+          <node concept="30bXLL" id="5WXTlJElOFT" role="2zM23F" />
+        </node>
+        <node concept="2zPypq" id="5WXTlJElKPx" role="_iOnC">
+          <property role="TrG5h" value="infRangeInfPrecNumToReal" />
+          <node concept="_emDc" id="5WXTlJElKPy" role="2lDidJ">
+            <ref role="_emDf" node="5WXTlJElP4M" resolve="infRangeInfPrecNum" />
+          </node>
+          <node concept="30bXLL" id="5WXTlJElPcn" role="2zM23F" />
+        </node>
+        <node concept="_ixoA" id="5WXTlJElFk9" role="_iOnC" />
+        <node concept="2zPypq" id="5WXTlJElPtW" role="_iOnC">
+          <property role="TrG5h" value="genericNumToInt" />
+          <node concept="_emDc" id="5WXTlJElPtX" role="2lDidJ">
+            <ref role="_emDf" node="5WXTlJElL35" resolve="genericNum" />
+          </node>
+          <node concept="30bXR$" id="5WXTlJElP_s" role="2zM23F" />
+        </node>
+        <node concept="2zPypq" id="5WXTlJElPtZ" role="_iOnC">
+          <property role="TrG5h" value="zeroPrecNumToInt" />
+          <node concept="_emDc" id="5WXTlJElPu0" role="2lDidJ">
+            <ref role="_emDf" node="5WXTlJElPMI" resolve="zeroPrecNum" />
+          </node>
+          <node concept="30bXR$" id="5WXTlJElPJ7" role="2zM23F" />
+        </node>
+        <node concept="2zPypq" id="5WXTlJElPu3" role="_iOnC">
+          <property role="TrG5h" value="infRangeZeroPrecNumToInt" />
+          <node concept="_emDc" id="5WXTlJElPu4" role="2lDidJ">
+            <ref role="_emDf" node="5WXTlJElRqG" resolve="infRangeZeroPrecNum" />
+          </node>
+          <node concept="30bXR$" id="5WXTlJElQQK" role="2zM23F" />
+        </node>
+        <node concept="2zPypq" id="5WXTlJElPu8" role="_iOnC">
+          <property role="TrG5h" value="precNumToInt" />
+          <node concept="_emDc" id="5WXTlJElPu9" role="2lDidJ">
+            <ref role="_emDf" node="5WXTlJElLNf" resolve="precNum" />
+            <node concept="7CXmI" id="5WXTlJElPua" role="lGtFl">
+              <node concept="2DdRWr" id="5WXTlJElPub" role="7EUXB">
+                <node concept="MGsTx" id="5WXTlJElPuc" role="MJxsd">
+                  <ref role="39XzEq" to="t4jv:5aHkq2w4P8w" />
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="30bXR$" id="5WXTlJElS9$" role="2zM23F" />
+        </node>
+        <node concept="_ixoA" id="5WXTlJElPtN" role="_iOnC" />
         <node concept="7CXmI" id="6rdp$3y_pdc" role="lGtFl">
           <node concept="7OXhh" id="6rdp$3y_pdd" role="7EUXB">
             <property role="G7GLP" value="true" />

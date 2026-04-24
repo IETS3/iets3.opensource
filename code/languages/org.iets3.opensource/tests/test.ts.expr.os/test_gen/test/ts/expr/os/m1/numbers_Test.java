@@ -93,6 +93,22 @@ public class numbers_Test extends BaseTransformationTest {
     new TestBody(this).test_NodeErrorCheck1293326996617370337();
   }
   @Test
+  public void test_NodeTypeSystemCheck6862893590118466818() throws Throwable {
+    new TestBody(this).test_NodeTypeSystemCheck6862893590118466818();
+  }
+  @Test
+  public void test_NodeTypeSystemCheck6862893590118790304() throws Throwable {
+    new TestBody(this).test_NodeTypeSystemCheck6862893590118790304();
+  }
+  @Test
+  public void test_NodeTypeSystemCheck6862893590118862037() throws Throwable {
+    new TestBody(this).test_NodeTypeSystemCheck6862893590118862037();
+  }
+  @Test
+  public void test_NodeTypeSystemCheck6862893590118881163() throws Throwable {
+    new TestBody(this).test_NodeTypeSystemCheck6862893590118881163();
+  }
+  @Test
   public void test_ErrorMessagesCheck7407689390959727437() throws Throwable {
     new TestBody(this).test_ErrorMessagesCheck7407689390959727437();
   }
@@ -111,134 +127,134 @@ public class numbers_Test extends BaseTransformationTest {
     public void test_aNumberTypeShouldBeEqualToItself() throws Exception {
       initTestNodes();
       runWithinCommand(() -> {
-        Assert.assertEquals(true, (boolean) Type__BehaviorDescriptor.isSameAs_idfIXgjlt4VE.invoke(createNumberType_g4w43n_a0a0a0b0f71(InfHelper.NEGINF, InfHelper.POSINF), createNumberType_g4w43n_a0a0a0a1a5r(InfHelper.NEGINF, InfHelper.POSINF)));
-        Assert.assertEquals(true, (boolean) Type__BehaviorDescriptor.isSameAs_idfIXgjlt4VE.invoke(createNumberType_g4w43n_a0b0a0b0f71(InfHelper.NEGINF, InfHelper.POSINF), createNumberType_g4w43n_a0a1a0a1a5r(InfHelper.NEGINF, InfHelper.POSINF)));
-        Assert.assertEquals(true, (boolean) Type__BehaviorDescriptor.isSameAs_idfIXgjlt4VE.invoke(createNumberType_g4w43n_a0c0a0b0f71(), createNumberType_g4w43n_a0a2a0a1a5r()));
+        Assert.assertEquals(true, (boolean) Type__BehaviorDescriptor.isSameAs_idfIXgjlt4VE.invoke(createNumberType_g4w43n_a0a0a0b0f12(InfHelper.NEGINF, InfHelper.POSINF), createNumberType_g4w43n_a0a0a0a1a5v(InfHelper.NEGINF, InfHelper.POSINF)));
+        Assert.assertEquals(true, (boolean) Type__BehaviorDescriptor.isSameAs_idfIXgjlt4VE.invoke(createNumberType_g4w43n_a0b0a0b0f12(InfHelper.NEGINF, InfHelper.POSINF), createNumberType_g4w43n_a0a1a0a1a5v(InfHelper.NEGINF, InfHelper.POSINF)));
+        Assert.assertEquals(true, (boolean) Type__BehaviorDescriptor.isSameAs_idfIXgjlt4VE.invoke(createNumberType_g4w43n_a0c0a0b0f12(), createNumberType_g4w43n_a0a2a0a1a5v()));
       });
     }
     public void test_aNumberTypeIsNotEqualToOtherTypes() throws Exception {
       initTestNodes();
       runWithinCommand(() -> {
-        Assert.assertEquals(false, (boolean) Type__BehaviorDescriptor.isSameAs_idfIXgjlt4VE.invoke(createNumberType_g4w43n_a0a0a0b0g71(InfHelper.NEGINF, InfHelper.POSINF), createStringType_g4w43n_a0a0a0a1a6r()));
-        Assert.assertEquals(false, (boolean) Type__BehaviorDescriptor.isSameAs_idfIXgjlt4VE.invoke(createNumberType_g4w43n_a0b0a0b0g71(InfHelper.NEGINF, InfHelper.POSINF), createBooleanType_g4w43n_a0a1a0a1a6r()));
+        Assert.assertEquals(false, (boolean) Type__BehaviorDescriptor.isSameAs_idfIXgjlt4VE.invoke(createNumberType_g4w43n_a0a0a0b0g12(InfHelper.NEGINF, InfHelper.POSINF), createStringType_g4w43n_a0a0a0a1a6v()));
+        Assert.assertEquals(false, (boolean) Type__BehaviorDescriptor.isSameAs_idfIXgjlt4VE.invoke(createNumberType_g4w43n_a0b0a0b0g12(InfHelper.NEGINF, InfHelper.POSINF), createBooleanType_g4w43n_a0a1a0a1a6v()));
       });
     }
     public void test_precisionMattersForIsSameAs() throws Exception {
       initTestNodes();
-      runWithinCommand(() -> Assert.assertEquals(false, (boolean) Type__BehaviorDescriptor.isSameAs_idfIXgjlt4VE.invoke(createNumberType_g4w43n_a0a0a0b0h71(InfHelper.NEGINF, InfHelper.POSINF), createNumberType_g4w43n_a0a0a0a1a7r(InfHelper.NEGINF, InfHelper.POSINF))));
+      runWithinCommand(() -> Assert.assertEquals(false, (boolean) Type__BehaviorDescriptor.isSameAs_idfIXgjlt4VE.invoke(createNumberType_g4w43n_a0a0a0b0h12(InfHelper.NEGINF, InfHelper.POSINF), createNumberType_g4w43n_a0a0a0a1a7v(InfHelper.NEGINF, InfHelper.POSINF))));
     }
     public void test_rangeMattersForIsSameAs() throws Exception {
       initTestNodes();
       runWithinCommand(() -> {
-        Assert.assertEquals(false, (boolean) Type__BehaviorDescriptor.isSameAs_idfIXgjlt4VE.invoke(createNumberType_g4w43n_a0a0a0b0i71(InfHelper.NEGINF, InfHelper.POSINF), createNumberType_g4w43n_a0a0a0a1a8r(InfHelper.POSINF)));
-        Assert.assertEquals(false, (boolean) Type__BehaviorDescriptor.isSameAs_idfIXgjlt4VE.invoke(createNumberType_g4w43n_a0b0a0b0i71(), createNumberType_g4w43n_a0a1a0a1a8r(InfHelper.POSINF)));
+        Assert.assertEquals(false, (boolean) Type__BehaviorDescriptor.isSameAs_idfIXgjlt4VE.invoke(createNumberType_g4w43n_a0a0a0b0i12(InfHelper.NEGINF, InfHelper.POSINF), createNumberType_g4w43n_a0a0a0a1a8v(InfHelper.POSINF)));
+        Assert.assertEquals(false, (boolean) Type__BehaviorDescriptor.isSameAs_idfIXgjlt4VE.invoke(createNumberType_g4w43n_a0b0a0b0i12(), createNumberType_g4w43n_a0a1a0a1a8v(InfHelper.POSINF)));
       });
     }
     public void test_differentRangeExcludesNotCompatible() throws Exception {
       initTestNodes();
       runWithinCommand(() -> {
-        Assert.assertEquals(false, (boolean) Type__BehaviorDescriptor.isSameAs_idfIXgjlt4VE.invoke(createNumberType_g4w43n_a0a0a0b0j71(), createNumberType_g4w43n_a0a0a0a1a9r()));
-        Assert.assertEquals(false, (boolean) Type__BehaviorDescriptor.isSameAs_idfIXgjlt4VE.invoke(createNumberType_g4w43n_a0b0a0b0j71(), createNumberType_g4w43n_a0a1a0a1a9r()));
-        Assert.assertEquals(false, (boolean) Type__BehaviorDescriptor.isSameAs_idfIXgjlt4VE.invoke(createNumberType_g4w43n_a0c0a0b0j71(), createNumberType_g4w43n_a0a2a0a1a9r()));
+        Assert.assertEquals(false, (boolean) Type__BehaviorDescriptor.isSameAs_idfIXgjlt4VE.invoke(createNumberType_g4w43n_a0a0a0b0j12(), createNumberType_g4w43n_a0a0a0a1a9v()));
+        Assert.assertEquals(false, (boolean) Type__BehaviorDescriptor.isSameAs_idfIXgjlt4VE.invoke(createNumberType_g4w43n_a0b0a0b0j12(), createNumberType_g4w43n_a0a1a0a1a9v()));
+        Assert.assertEquals(false, (boolean) Type__BehaviorDescriptor.isSameAs_idfIXgjlt4VE.invoke(createNumberType_g4w43n_a0c0a0b0j12(), createNumberType_g4w43n_a0a2a0a1a9v()));
       });
     }
     public void test_sameRangeExcludesCompatible() throws Exception {
       initTestNodes();
       runWithinCommand(() -> {
-        Assert.assertEquals(true, (boolean) Type__BehaviorDescriptor.isSameAs_idfIXgjlt4VE.invoke(createNumberType_g4w43n_a0a0a0b0k71(), createNumberType_g4w43n_a0a0a0a1a01r()));
-        Assert.assertEquals(true, (boolean) Type__BehaviorDescriptor.isSameAs_idfIXgjlt4VE.invoke(createNumberType_g4w43n_a0b0a0b0k71(), createNumberType_g4w43n_a0a1a0a1a01r()));
-        Assert.assertEquals(true, (boolean) Type__BehaviorDescriptor.isSameAs_idfIXgjlt4VE.invoke(createNumberType_g4w43n_a0c0a0b0k71(), createNumberType_g4w43n_a0a2a0a1a01r()));
+        Assert.assertEquals(true, (boolean) Type__BehaviorDescriptor.isSameAs_idfIXgjlt4VE.invoke(createNumberType_g4w43n_a0a0a0b0k12(), createNumberType_g4w43n_a0a0a0a1a01v()));
+        Assert.assertEquals(true, (boolean) Type__BehaviorDescriptor.isSameAs_idfIXgjlt4VE.invoke(createNumberType_g4w43n_a0b0a0b0k12(), createNumberType_g4w43n_a0a1a0a1a01v()));
+        Assert.assertEquals(true, (boolean) Type__BehaviorDescriptor.isSameAs_idfIXgjlt4VE.invoke(createNumberType_g4w43n_a0c0a0b0k12(), createNumberType_g4w43n_a0a2a0a1a01v()));
       });
     }
     public void test_numberOfDecimals() throws Exception {
       initTestNodes();
       runWithinCommand(() -> {
-        SNode zero = _quotation_createNode_g4w43n_a0a0a0b0l71();
+        SNode zero = _quotation_createNode_g4w43n_a0a0a0b0l12();
         Assert.assertEquals(0, (int) NumberLiteral__BehaviorDescriptor.numberOfDecimals_id3p6$WoEl3wd.invoke(zero));
 
-        SNode integerPositive = _quotation_createNode_g4w43n_a0d0a0b0l71();
+        SNode integerPositive = _quotation_createNode_g4w43n_a0d0a0b0l12();
         Assert.assertEquals(0, (int) NumberLiteral__BehaviorDescriptor.numberOfDecimals_id3p6$WoEl3wd.invoke(integerPositive));
 
-        SNode integerNegative = _quotation_createNode_g4w43n_a0g0a0b0l71();
+        SNode integerNegative = _quotation_createNode_g4w43n_a0g0a0b0l12();
         Assert.assertEquals(0, (int) NumberLiteral__BehaviorDescriptor.numberOfDecimals_id3p6$WoEl3wd.invoke(integerNegative));
 
-        SNode floatPositive = _quotation_createNode_g4w43n_a0j0a0b0l71();
+        SNode floatPositive = _quotation_createNode_g4w43n_a0j0a0b0l12();
         Assert.assertEquals(2, (int) NumberLiteral__BehaviorDescriptor.numberOfDecimals_id3p6$WoEl3wd.invoke(floatPositive));
 
-        SNode floatNegative = _quotation_createNode_g4w43n_a0m0a0b0l71();
+        SNode floatNegative = _quotation_createNode_g4w43n_a0m0a0b0l12();
         Assert.assertEquals(2, (int) NumberLiteral__BehaviorDescriptor.numberOfDecimals_id3p6$WoEl3wd.invoke(floatNegative));
 
-        SNode floatZero = _quotation_createNode_g4w43n_a0p0a0b0l71();
+        SNode floatZero = _quotation_createNode_g4w43n_a0p0a0b0l12();
         Assert.assertEquals(1, (int) NumberLiteral__BehaviorDescriptor.numberOfDecimals_id3p6$WoEl3wd.invoke(floatZero));
 
-        SNode scientificInteger = _quotation_createNode_g4w43n_a0s0a0b0l71();
+        SNode scientificInteger = _quotation_createNode_g4w43n_a0s0a0b0l12();
         Assert.assertEquals(0, (int) NumberLiteral__BehaviorDescriptor.numberOfDecimals_id3p6$WoEl3wd.invoke(scientificInteger));
 
-        SNode scientificNegativeInteger = _quotation_createNode_g4w43n_a0v0a0b0l71();
+        SNode scientificNegativeInteger = _quotation_createNode_g4w43n_a0v0a0b0l12();
         Assert.assertEquals(0, (int) NumberLiteral__BehaviorDescriptor.numberOfDecimals_id3p6$WoEl3wd.invoke(scientificNegativeInteger));
 
-        SNode scientificIntegerTrailing = _quotation_createNode_g4w43n_a0y0a0b0l71();
+        SNode scientificIntegerTrailing = _quotation_createNode_g4w43n_a0y0a0b0l12();
         Assert.assertEquals(0, (int) NumberLiteral__BehaviorDescriptor.numberOfDecimals_id3p6$WoEl3wd.invoke(scientificIntegerTrailing));
 
-        SNode scientificIntegerNegativeTrailing = _quotation_createNode_g4w43n_a0bb0a0b0l71();
+        SNode scientificIntegerNegativeTrailing = _quotation_createNode_g4w43n_a0bb0a0b0l12();
         Assert.assertEquals(0, (int) NumberLiteral__BehaviorDescriptor.numberOfDecimals_id3p6$WoEl3wd.invoke(scientificIntegerNegativeTrailing));
 
-        SNode scientificFloatIsInteger = _quotation_createNode_g4w43n_a0eb0a0b0l71();
+        SNode scientificFloatIsInteger = _quotation_createNode_g4w43n_a0eb0a0b0l12();
         Assert.assertEquals(0, (int) NumberLiteral__BehaviorDescriptor.numberOfDecimals_id3p6$WoEl3wd.invoke(scientificFloatIsInteger));
 
-        SNode scientificFloatNegativeIsInteger = _quotation_createNode_g4w43n_a0hb0a0b0l71();
+        SNode scientificFloatNegativeIsInteger = _quotation_createNode_g4w43n_a0hb0a0b0l12();
         Assert.assertEquals(0, (int) NumberLiteral__BehaviorDescriptor.numberOfDecimals_id3p6$WoEl3wd.invoke(scientificFloatNegativeIsInteger));
 
-        SNode scientificFloat = _quotation_createNode_g4w43n_a0kb0a0b0l71();
+        SNode scientificFloat = _quotation_createNode_g4w43n_a0kb0a0b0l12();
         Assert.assertEquals(2, (int) NumberLiteral__BehaviorDescriptor.numberOfDecimals_id3p6$WoEl3wd.invoke(scientificFloat));
 
-        SNode scientificFloatNegative = _quotation_createNode_g4w43n_a0nb0a0b0l71();
+        SNode scientificFloatNegative = _quotation_createNode_g4w43n_a0nb0a0b0l12();
         Assert.assertEquals(2, (int) NumberLiteral__BehaviorDescriptor.numberOfDecimals_id3p6$WoEl3wd.invoke(scientificFloatNegative));
       });
     }
     public void test_toDecimal() throws Exception {
       initTestNodes();
       runWithinCommand(() -> {
-        SNode zero = _quotation_createNode_g4w43n_a0a0a0b0m71();
+        SNode zero = _quotation_createNode_g4w43n_a0a0a0b0m12();
         Assert.assertEquals(0, NumberLiteral__BehaviorDescriptor.toBigDecimal_id6v8$kf$4zsT.invoke(zero).intValue());
 
-        SNode integerPositive = _quotation_createNode_g4w43n_a0d0a0b0m71();
+        SNode integerPositive = _quotation_createNode_g4w43n_a0d0a0b0m12();
         Assert.assertEquals(10, NumberLiteral__BehaviorDescriptor.toBigDecimal_id6v8$kf$4zsT.invoke(integerPositive).intValue());
 
-        SNode integerNegative = _quotation_createNode_g4w43n_a0g0a0b0m71();
+        SNode integerNegative = _quotation_createNode_g4w43n_a0g0a0b0m12();
         Assert.assertEquals(-10, NumberLiteral__BehaviorDescriptor.toBigDecimal_id6v8$kf$4zsT.invoke(integerNegative).intValue());
 
-        SNode floatPositive = _quotation_createNode_g4w43n_a0j0a0b0m71();
+        SNode floatPositive = _quotation_createNode_g4w43n_a0j0a0b0m12();
         Assert.assertEquals(Float.valueOf(10.85f), Float.valueOf(NumberLiteral__BehaviorDescriptor.toBigDecimal_id6v8$kf$4zsT.invoke(floatPositive).floatValue()));
 
-        SNode floatNegative = _quotation_createNode_g4w43n_a0m0a0b0m71();
+        SNode floatNegative = _quotation_createNode_g4w43n_a0m0a0b0m12();
         Assert.assertEquals(Float.valueOf(-10.85f), Float.valueOf(NumberLiteral__BehaviorDescriptor.toBigDecimal_id6v8$kf$4zsT.invoke(floatNegative).floatValue()));
 
-        SNode floatZero = _quotation_createNode_g4w43n_a0p0a0b0m71();
+        SNode floatZero = _quotation_createNode_g4w43n_a0p0a0b0m12();
         Assert.assertEquals(Float.valueOf(10.0f), Float.valueOf(NumberLiteral__BehaviorDescriptor.toBigDecimal_id6v8$kf$4zsT.invoke(floatZero).floatValue()));
 
-        SNode scientificInteger = _quotation_createNode_g4w43n_a0s0a0b0m71();
+        SNode scientificInteger = _quotation_createNode_g4w43n_a0s0a0b0m12();
         Assert.assertEquals(100, NumberLiteral__BehaviorDescriptor.toBigDecimal_id6v8$kf$4zsT.invoke(scientificInteger).intValue());
 
-        SNode scientificNegativeInteger = _quotation_createNode_g4w43n_a0v0a0b0m71();
+        SNode scientificNegativeInteger = _quotation_createNode_g4w43n_a0v0a0b0m12();
         Assert.assertEquals(-100, NumberLiteral__BehaviorDescriptor.toBigDecimal_id6v8$kf$4zsT.invoke(scientificNegativeInteger).intValue());
 
-        SNode scientificIntegerTrailing = _quotation_createNode_g4w43n_a0y0a0b0m71();
+        SNode scientificIntegerTrailing = _quotation_createNode_g4w43n_a0y0a0b0m12();
         Assert.assertEquals(100, NumberLiteral__BehaviorDescriptor.toBigDecimal_id6v8$kf$4zsT.invoke(scientificIntegerTrailing).intValue());
 
-        SNode scientificIntegerNegativeTrailing = _quotation_createNode_g4w43n_a0bb0a0b0m71();
+        SNode scientificIntegerNegativeTrailing = _quotation_createNode_g4w43n_a0bb0a0b0m12();
         Assert.assertEquals(-100, NumberLiteral__BehaviorDescriptor.toBigDecimal_id6v8$kf$4zsT.invoke(scientificIntegerNegativeTrailing).intValue());
 
-        SNode scientificFloatIsInteger = _quotation_createNode_g4w43n_a0eb0a0b0m71();
+        SNode scientificFloatIsInteger = _quotation_createNode_g4w43n_a0eb0a0b0m12();
         Assert.assertEquals(101, NumberLiteral__BehaviorDescriptor.toBigDecimal_id6v8$kf$4zsT.invoke(scientificFloatIsInteger).intValue());
 
-        SNode scientificFloatNegativeIsInteger = _quotation_createNode_g4w43n_a0hb0a0b0m71();
+        SNode scientificFloatNegativeIsInteger = _quotation_createNode_g4w43n_a0hb0a0b0m12();
         Assert.assertEquals(-101, NumberLiteral__BehaviorDescriptor.toBigDecimal_id6v8$kf$4zsT.invoke(scientificFloatNegativeIsInteger).intValue());
 
-        SNode scientificFloat = _quotation_createNode_g4w43n_a0kb0a0b0m71();
+        SNode scientificFloat = _quotation_createNode_g4w43n_a0kb0a0b0m12();
         Assert.assertEquals(Float.valueOf(101.23f), Float.valueOf(NumberLiteral__BehaviorDescriptor.toBigDecimal_id6v8$kf$4zsT.invoke(scientificFloat).floatValue()));
 
-        SNode scientificFloatNegative = _quotation_createNode_g4w43n_a0nb0a0b0m71();
+        SNode scientificFloatNegative = _quotation_createNode_g4w43n_a0nb0a0b0m12();
         Assert.assertEquals(Float.valueOf(-101.23f), Float.valueOf(NumberLiteral__BehaviorDescriptor.toBigDecimal_id6v8$kf$4zsT.invoke(scientificFloatNegative).floatValue()));
       });
     }
@@ -247,9 +263,9 @@ public class numbers_Test extends BaseTransformationTest {
       runWithinCommand(() -> {
         // migration is needed
         {
-          final SNode expectedNode_b0a0b0n71 = _quotation_createNode_g4w43n_a1a0a1a31r();
-          final SNode actualNode_b0a0b0n71 = ScientificNumberMigrationHelper.migrateNumber(_quotation_createNode_g4w43n_a0b0a0b0n71());
-          MPSNodeComparisonResult result_b0a0b0n71 = MPSNodeComparator.compare(expectedNode_b0a0b0n71, actualNode_b0a0b0n71, ((_FunctionTypes._return_P0_E0<MPSComparatorOptions>) () -> {
+          final SNode expectedNode_b0a0b0n12 = _quotation_createNode_g4w43n_a1a0a1a31v();
+          final SNode actualNode_b0a0b0n12 = ScientificNumberMigrationHelper.migrateNumber(_quotation_createNode_g4w43n_a0b0a0b0n12());
+          MPSNodeComparisonResult result_b0a0b0n12 = MPSNodeComparator.compare(expectedNode_b0a0b0n12, actualNode_b0a0b0n12, ((_FunctionTypes._return_P0_E0<MPSComparatorOptions>) () -> {
             MPSComparatorOptions options = new MPSComparatorOptions();
             options.compareChildren = true;
             options.compareAnnotations = true;
@@ -259,21 +275,21 @@ public class numbers_Test extends BaseTransformationTest {
             ListSequence.fromList(options.ignoredReferences).addSequence(ListSequence.fromList(ListSequence.fromList(new ArrayList<IgnoredReference>())));
             return options;
           }).invoke());
-          if (!(result_b0a0b0n71.areEquals())) {
+          if (!(result_b0a0b0n12.areEquals())) {
             if (!(ApplicationManager.getApplication().isHeadlessEnvironment())) {
               {
                 MPSModuleRepository repository = MPSCoreComponents.getInstance().getPlatform().findComponent(MPSModuleRepository.class);
-                SNode input_b0a0b0n71 = (SNode) SNodePointer.deserialize("r:75f6a9e9-cf21-495f-b1aa-7fd992d0d7d0(test.ts.expr.os.m1@tests)/717395623381491737").resolve(repository);
-                DiffView.showNonEditibleDiff(expectedNode_b0a0b0n71, actualNode_b0a0b0n71, result_b0a0b0n71, input_b0a0b0n71, repository);
+                SNode input_b0a0b0n12 = (SNode) SNodePointer.deserialize("r:75f6a9e9-cf21-495f-b1aa-7fd992d0d7d0(test.ts.expr.os.m1@tests)/717395623381491737").resolve(repository);
+                DiffView.showNonEditibleDiff(expectedNode_b0a0b0n12, actualNode_b0a0b0n12, result_b0a0b0n12, input_b0a0b0n12, repository);
               }
             }
-            Assert.assertTrue(result_b0a0b0n71.getDescription(), false);
+            Assert.assertTrue(result_b0a0b0n12.getDescription(), false);
           }
         }
         {
-          final SNode expectedNode_c0a0b0n71 = _quotation_createNode_g4w43n_a2a0a1a31r();
-          final SNode actualNode_c0a0b0n71 = ScientificNumberMigrationHelper.migrateNumber(_quotation_createNode_g4w43n_a0c0a0b0n71());
-          MPSNodeComparisonResult result_c0a0b0n71 = MPSNodeComparator.compare(expectedNode_c0a0b0n71, actualNode_c0a0b0n71, ((_FunctionTypes._return_P0_E0<MPSComparatorOptions>) () -> {
+          final SNode expectedNode_c0a0b0n12 = _quotation_createNode_g4w43n_a2a0a1a31v();
+          final SNode actualNode_c0a0b0n12 = ScientificNumberMigrationHelper.migrateNumber(_quotation_createNode_g4w43n_a0c0a0b0n12());
+          MPSNodeComparisonResult result_c0a0b0n12 = MPSNodeComparator.compare(expectedNode_c0a0b0n12, actualNode_c0a0b0n12, ((_FunctionTypes._return_P0_E0<MPSComparatorOptions>) () -> {
             MPSComparatorOptions options = new MPSComparatorOptions();
             options.compareChildren = true;
             options.compareAnnotations = true;
@@ -283,21 +299,21 @@ public class numbers_Test extends BaseTransformationTest {
             ListSequence.fromList(options.ignoredReferences).addSequence(ListSequence.fromList(ListSequence.fromList(new ArrayList<IgnoredReference>())));
             return options;
           }).invoke());
-          if (!(result_c0a0b0n71.areEquals())) {
+          if (!(result_c0a0b0n12.areEquals())) {
             if (!(ApplicationManager.getApplication().isHeadlessEnvironment())) {
               {
                 MPSModuleRepository repository = MPSCoreComponents.getInstance().getPlatform().findComponent(MPSModuleRepository.class);
-                SNode input_c0a0b0n71 = (SNode) SNodePointer.deserialize("r:75f6a9e9-cf21-495f-b1aa-7fd992d0d7d0(test.ts.expr.os.m1@tests)/717395623381492187").resolve(repository);
-                DiffView.showNonEditibleDiff(expectedNode_c0a0b0n71, actualNode_c0a0b0n71, result_c0a0b0n71, input_c0a0b0n71, repository);
+                SNode input_c0a0b0n12 = (SNode) SNodePointer.deserialize("r:75f6a9e9-cf21-495f-b1aa-7fd992d0d7d0(test.ts.expr.os.m1@tests)/717395623381492187").resolve(repository);
+                DiffView.showNonEditibleDiff(expectedNode_c0a0b0n12, actualNode_c0a0b0n12, result_c0a0b0n12, input_c0a0b0n12, repository);
               }
             }
-            Assert.assertTrue(result_c0a0b0n71.getDescription(), false);
+            Assert.assertTrue(result_c0a0b0n12.getDescription(), false);
           }
         }
         {
-          final SNode expectedNode_d0a0b0n71 = _quotation_createNode_g4w43n_a3a0a1a31r();
-          final SNode actualNode_d0a0b0n71 = ScientificNumberMigrationHelper.migrateNumber(_quotation_createNode_g4w43n_a0d0a0b0n71());
-          MPSNodeComparisonResult result_d0a0b0n71 = MPSNodeComparator.compare(expectedNode_d0a0b0n71, actualNode_d0a0b0n71, ((_FunctionTypes._return_P0_E0<MPSComparatorOptions>) () -> {
+          final SNode expectedNode_d0a0b0n12 = _quotation_createNode_g4w43n_a3a0a1a31v();
+          final SNode actualNode_d0a0b0n12 = ScientificNumberMigrationHelper.migrateNumber(_quotation_createNode_g4w43n_a0d0a0b0n12());
+          MPSNodeComparisonResult result_d0a0b0n12 = MPSNodeComparator.compare(expectedNode_d0a0b0n12, actualNode_d0a0b0n12, ((_FunctionTypes._return_P0_E0<MPSComparatorOptions>) () -> {
             MPSComparatorOptions options = new MPSComparatorOptions();
             options.compareChildren = true;
             options.compareAnnotations = true;
@@ -307,21 +323,21 @@ public class numbers_Test extends BaseTransformationTest {
             ListSequence.fromList(options.ignoredReferences).addSequence(ListSequence.fromList(ListSequence.fromList(new ArrayList<IgnoredReference>())));
             return options;
           }).invoke());
-          if (!(result_d0a0b0n71.areEquals())) {
+          if (!(result_d0a0b0n12.areEquals())) {
             if (!(ApplicationManager.getApplication().isHeadlessEnvironment())) {
               {
                 MPSModuleRepository repository = MPSCoreComponents.getInstance().getPlatform().findComponent(MPSModuleRepository.class);
-                SNode input_d0a0b0n71 = (SNode) SNodePointer.deserialize("r:75f6a9e9-cf21-495f-b1aa-7fd992d0d7d0(test.ts.expr.os.m1@tests)/717395623381492190").resolve(repository);
-                DiffView.showNonEditibleDiff(expectedNode_d0a0b0n71, actualNode_d0a0b0n71, result_d0a0b0n71, input_d0a0b0n71, repository);
+                SNode input_d0a0b0n12 = (SNode) SNodePointer.deserialize("r:75f6a9e9-cf21-495f-b1aa-7fd992d0d7d0(test.ts.expr.os.m1@tests)/717395623381492190").resolve(repository);
+                DiffView.showNonEditibleDiff(expectedNode_d0a0b0n12, actualNode_d0a0b0n12, result_d0a0b0n12, input_d0a0b0n12, repository);
               }
             }
-            Assert.assertTrue(result_d0a0b0n71.getDescription(), false);
+            Assert.assertTrue(result_d0a0b0n12.getDescription(), false);
           }
         }
         {
-          final SNode expectedNode_e0a0b0n71 = _quotation_createNode_g4w43n_a4a0a1a31r();
-          final SNode actualNode_e0a0b0n71 = ScientificNumberMigrationHelper.migrateNumber(_quotation_createNode_g4w43n_a0e0a0b0n71());
-          MPSNodeComparisonResult result_e0a0b0n71 = MPSNodeComparator.compare(expectedNode_e0a0b0n71, actualNode_e0a0b0n71, ((_FunctionTypes._return_P0_E0<MPSComparatorOptions>) () -> {
+          final SNode expectedNode_e0a0b0n12 = _quotation_createNode_g4w43n_a4a0a1a31v();
+          final SNode actualNode_e0a0b0n12 = ScientificNumberMigrationHelper.migrateNumber(_quotation_createNode_g4w43n_a0e0a0b0n12());
+          MPSNodeComparisonResult result_e0a0b0n12 = MPSNodeComparator.compare(expectedNode_e0a0b0n12, actualNode_e0a0b0n12, ((_FunctionTypes._return_P0_E0<MPSComparatorOptions>) () -> {
             MPSComparatorOptions options = new MPSComparatorOptions();
             options.compareChildren = true;
             options.compareAnnotations = true;
@@ -331,21 +347,21 @@ public class numbers_Test extends BaseTransformationTest {
             ListSequence.fromList(options.ignoredReferences).addSequence(ListSequence.fromList(ListSequence.fromList(new ArrayList<IgnoredReference>())));
             return options;
           }).invoke());
-          if (!(result_e0a0b0n71.areEquals())) {
+          if (!(result_e0a0b0n12.areEquals())) {
             if (!(ApplicationManager.getApplication().isHeadlessEnvironment())) {
               {
                 MPSModuleRepository repository = MPSCoreComponents.getInstance().getPlatform().findComponent(MPSModuleRepository.class);
-                SNode input_e0a0b0n71 = (SNode) SNodePointer.deserialize("r:75f6a9e9-cf21-495f-b1aa-7fd992d0d7d0(test.ts.expr.os.m1@tests)/717395623381492193").resolve(repository);
-                DiffView.showNonEditibleDiff(expectedNode_e0a0b0n71, actualNode_e0a0b0n71, result_e0a0b0n71, input_e0a0b0n71, repository);
+                SNode input_e0a0b0n12 = (SNode) SNodePointer.deserialize("r:75f6a9e9-cf21-495f-b1aa-7fd992d0d7d0(test.ts.expr.os.m1@tests)/717395623381492193").resolve(repository);
+                DiffView.showNonEditibleDiff(expectedNode_e0a0b0n12, actualNode_e0a0b0n12, result_e0a0b0n12, input_e0a0b0n12, repository);
               }
             }
-            Assert.assertTrue(result_e0a0b0n71.getDescription(), false);
+            Assert.assertTrue(result_e0a0b0n12.getDescription(), false);
           }
         }
         {
-          final SNode expectedNode_f0a0b0n71 = _quotation_createNode_g4w43n_a5a0a1a31r();
-          final SNode actualNode_f0a0b0n71 = ScientificNumberMigrationHelper.migrateNumber(_quotation_createNode_g4w43n_a0f0a0b0n71());
-          MPSNodeComparisonResult result_f0a0b0n71 = MPSNodeComparator.compare(expectedNode_f0a0b0n71, actualNode_f0a0b0n71, ((_FunctionTypes._return_P0_E0<MPSComparatorOptions>) () -> {
+          final SNode expectedNode_f0a0b0n12 = _quotation_createNode_g4w43n_a5a0a1a31v();
+          final SNode actualNode_f0a0b0n12 = ScientificNumberMigrationHelper.migrateNumber(_quotation_createNode_g4w43n_a0f0a0b0n12());
+          MPSNodeComparisonResult result_f0a0b0n12 = MPSNodeComparator.compare(expectedNode_f0a0b0n12, actualNode_f0a0b0n12, ((_FunctionTypes._return_P0_E0<MPSComparatorOptions>) () -> {
             MPSComparatorOptions options = new MPSComparatorOptions();
             options.compareChildren = true;
             options.compareAnnotations = true;
@@ -355,21 +371,21 @@ public class numbers_Test extends BaseTransformationTest {
             ListSequence.fromList(options.ignoredReferences).addSequence(ListSequence.fromList(ListSequence.fromList(new ArrayList<IgnoredReference>())));
             return options;
           }).invoke());
-          if (!(result_f0a0b0n71.areEquals())) {
+          if (!(result_f0a0b0n12.areEquals())) {
             if (!(ApplicationManager.getApplication().isHeadlessEnvironment())) {
               {
                 MPSModuleRepository repository = MPSCoreComponents.getInstance().getPlatform().findComponent(MPSModuleRepository.class);
-                SNode input_f0a0b0n71 = (SNode) SNodePointer.deserialize("r:75f6a9e9-cf21-495f-b1aa-7fd992d0d7d0(test.ts.expr.os.m1@tests)/717395623381492196").resolve(repository);
-                DiffView.showNonEditibleDiff(expectedNode_f0a0b0n71, actualNode_f0a0b0n71, result_f0a0b0n71, input_f0a0b0n71, repository);
+                SNode input_f0a0b0n12 = (SNode) SNodePointer.deserialize("r:75f6a9e9-cf21-495f-b1aa-7fd992d0d7d0(test.ts.expr.os.m1@tests)/717395623381492196").resolve(repository);
+                DiffView.showNonEditibleDiff(expectedNode_f0a0b0n12, actualNode_f0a0b0n12, result_f0a0b0n12, input_f0a0b0n12, repository);
               }
             }
-            Assert.assertTrue(result_f0a0b0n71.getDescription(), false);
+            Assert.assertTrue(result_f0a0b0n12.getDescription(), false);
           }
         }
         {
-          final SNode expectedNode_g0a0b0n71 = _quotation_createNode_g4w43n_a6a0a1a31r();
-          final SNode actualNode_g0a0b0n71 = ScientificNumberMigrationHelper.migrateNumber(_quotation_createNode_g4w43n_a0g0a0b0n71());
-          MPSNodeComparisonResult result_g0a0b0n71 = MPSNodeComparator.compare(expectedNode_g0a0b0n71, actualNode_g0a0b0n71, ((_FunctionTypes._return_P0_E0<MPSComparatorOptions>) () -> {
+          final SNode expectedNode_g0a0b0n12 = _quotation_createNode_g4w43n_a6a0a1a31v();
+          final SNode actualNode_g0a0b0n12 = ScientificNumberMigrationHelper.migrateNumber(_quotation_createNode_g4w43n_a0g0a0b0n12());
+          MPSNodeComparisonResult result_g0a0b0n12 = MPSNodeComparator.compare(expectedNode_g0a0b0n12, actualNode_g0a0b0n12, ((_FunctionTypes._return_P0_E0<MPSComparatorOptions>) () -> {
             MPSComparatorOptions options = new MPSComparatorOptions();
             options.compareChildren = true;
             options.compareAnnotations = true;
@@ -379,22 +395,22 @@ public class numbers_Test extends BaseTransformationTest {
             ListSequence.fromList(options.ignoredReferences).addSequence(ListSequence.fromList(ListSequence.fromList(new ArrayList<IgnoredReference>())));
             return options;
           }).invoke());
-          if (!(result_g0a0b0n71.areEquals())) {
+          if (!(result_g0a0b0n12.areEquals())) {
             if (!(ApplicationManager.getApplication().isHeadlessEnvironment())) {
               {
                 MPSModuleRepository repository = MPSCoreComponents.getInstance().getPlatform().findComponent(MPSModuleRepository.class);
-                SNode input_g0a0b0n71 = (SNode) SNodePointer.deserialize("r:75f6a9e9-cf21-495f-b1aa-7fd992d0d7d0(test.ts.expr.os.m1@tests)/717395623381492470").resolve(repository);
-                DiffView.showNonEditibleDiff(expectedNode_g0a0b0n71, actualNode_g0a0b0n71, result_g0a0b0n71, input_g0a0b0n71, repository);
+                SNode input_g0a0b0n12 = (SNode) SNodePointer.deserialize("r:75f6a9e9-cf21-495f-b1aa-7fd992d0d7d0(test.ts.expr.os.m1@tests)/717395623381492470").resolve(repository);
+                DiffView.showNonEditibleDiff(expectedNode_g0a0b0n12, actualNode_g0a0b0n12, result_g0a0b0n12, input_g0a0b0n12, repository);
               }
             }
-            Assert.assertTrue(result_g0a0b0n71.getDescription(), false);
+            Assert.assertTrue(result_g0a0b0n12.getDescription(), false);
           }
         }
         // no migration is needed
         {
-          final SNode expectedNode_i0a0b0n71 = _quotation_createNode_g4w43n_a8a0a1a31r();
-          final SNode actualNode_i0a0b0n71 = ScientificNumberMigrationHelper.migrateNumber(_quotation_createNode_g4w43n_a0i0a0b0n71());
-          MPSNodeComparisonResult result_i0a0b0n71 = MPSNodeComparator.compare(expectedNode_i0a0b0n71, actualNode_i0a0b0n71, ((_FunctionTypes._return_P0_E0<MPSComparatorOptions>) () -> {
+          final SNode expectedNode_i0a0b0n12 = _quotation_createNode_g4w43n_a8a0a1a31v();
+          final SNode actualNode_i0a0b0n12 = ScientificNumberMigrationHelper.migrateNumber(_quotation_createNode_g4w43n_a0i0a0b0n12());
+          MPSNodeComparisonResult result_i0a0b0n12 = MPSNodeComparator.compare(expectedNode_i0a0b0n12, actualNode_i0a0b0n12, ((_FunctionTypes._return_P0_E0<MPSComparatorOptions>) () -> {
             MPSComparatorOptions options = new MPSComparatorOptions();
             options.compareChildren = true;
             options.compareAnnotations = true;
@@ -404,21 +420,21 @@ public class numbers_Test extends BaseTransformationTest {
             ListSequence.fromList(options.ignoredReferences).addSequence(ListSequence.fromList(ListSequence.fromList(new ArrayList<IgnoredReference>())));
             return options;
           }).invoke());
-          if (!(result_i0a0b0n71.areEquals())) {
+          if (!(result_i0a0b0n12.areEquals())) {
             if (!(ApplicationManager.getApplication().isHeadlessEnvironment())) {
               {
                 MPSModuleRepository repository = MPSCoreComponents.getInstance().getPlatform().findComponent(MPSModuleRepository.class);
-                SNode input_i0a0b0n71 = (SNode) SNodePointer.deserialize("r:75f6a9e9-cf21-495f-b1aa-7fd992d0d7d0(test.ts.expr.os.m1@tests)/717395623384619162").resolve(repository);
-                DiffView.showNonEditibleDiff(expectedNode_i0a0b0n71, actualNode_i0a0b0n71, result_i0a0b0n71, input_i0a0b0n71, repository);
+                SNode input_i0a0b0n12 = (SNode) SNodePointer.deserialize("r:75f6a9e9-cf21-495f-b1aa-7fd992d0d7d0(test.ts.expr.os.m1@tests)/717395623384619162").resolve(repository);
+                DiffView.showNonEditibleDiff(expectedNode_i0a0b0n12, actualNode_i0a0b0n12, result_i0a0b0n12, input_i0a0b0n12, repository);
               }
             }
-            Assert.assertTrue(result_i0a0b0n71.getDescription(), false);
+            Assert.assertTrue(result_i0a0b0n12.getDescription(), false);
           }
         }
         {
-          final SNode expectedNode_j0a0b0n71 = _quotation_createNode_g4w43n_a9a0a1a31r();
-          final SNode actualNode_j0a0b0n71 = ScientificNumberMigrationHelper.migrateNumber(_quotation_createNode_g4w43n_a0j0a0b0n71());
-          MPSNodeComparisonResult result_j0a0b0n71 = MPSNodeComparator.compare(expectedNode_j0a0b0n71, actualNode_j0a0b0n71, ((_FunctionTypes._return_P0_E0<MPSComparatorOptions>) () -> {
+          final SNode expectedNode_j0a0b0n12 = _quotation_createNode_g4w43n_a9a0a1a31v();
+          final SNode actualNode_j0a0b0n12 = ScientificNumberMigrationHelper.migrateNumber(_quotation_createNode_g4w43n_a0j0a0b0n12());
+          MPSNodeComparisonResult result_j0a0b0n12 = MPSNodeComparator.compare(expectedNode_j0a0b0n12, actualNode_j0a0b0n12, ((_FunctionTypes._return_P0_E0<MPSComparatorOptions>) () -> {
             MPSComparatorOptions options = new MPSComparatorOptions();
             options.compareChildren = true;
             options.compareAnnotations = true;
@@ -428,21 +444,21 @@ public class numbers_Test extends BaseTransformationTest {
             ListSequence.fromList(options.ignoredReferences).addSequence(ListSequence.fromList(ListSequence.fromList(new ArrayList<IgnoredReference>())));
             return options;
           }).invoke());
-          if (!(result_j0a0b0n71.areEquals())) {
+          if (!(result_j0a0b0n12.areEquals())) {
             if (!(ApplicationManager.getApplication().isHeadlessEnvironment())) {
               {
                 MPSModuleRepository repository = MPSCoreComponents.getInstance().getPlatform().findComponent(MPSModuleRepository.class);
-                SNode input_j0a0b0n71 = (SNode) SNodePointer.deserialize("r:75f6a9e9-cf21-495f-b1aa-7fd992d0d7d0(test.ts.expr.os.m1@tests)/717395623384619168").resolve(repository);
-                DiffView.showNonEditibleDiff(expectedNode_j0a0b0n71, actualNode_j0a0b0n71, result_j0a0b0n71, input_j0a0b0n71, repository);
+                SNode input_j0a0b0n12 = (SNode) SNodePointer.deserialize("r:75f6a9e9-cf21-495f-b1aa-7fd992d0d7d0(test.ts.expr.os.m1@tests)/717395623384619168").resolve(repository);
+                DiffView.showNonEditibleDiff(expectedNode_j0a0b0n12, actualNode_j0a0b0n12, result_j0a0b0n12, input_j0a0b0n12, repository);
               }
             }
-            Assert.assertTrue(result_j0a0b0n71.getDescription(), false);
+            Assert.assertTrue(result_j0a0b0n12.getDescription(), false);
           }
         }
         {
-          final SNode expectedNode_k0a0b0n71 = _quotation_createNode_g4w43n_a01a0a1a31r();
-          final SNode actualNode_k0a0b0n71 = ScientificNumberMigrationHelper.migrateNumber(_quotation_createNode_g4w43n_a0k0a0b0n71());
-          MPSNodeComparisonResult result_k0a0b0n71 = MPSNodeComparator.compare(expectedNode_k0a0b0n71, actualNode_k0a0b0n71, ((_FunctionTypes._return_P0_E0<MPSComparatorOptions>) () -> {
+          final SNode expectedNode_k0a0b0n12 = _quotation_createNode_g4w43n_a01a0a1a31v();
+          final SNode actualNode_k0a0b0n12 = ScientificNumberMigrationHelper.migrateNumber(_quotation_createNode_g4w43n_a0k0a0b0n12());
+          MPSNodeComparisonResult result_k0a0b0n12 = MPSNodeComparator.compare(expectedNode_k0a0b0n12, actualNode_k0a0b0n12, ((_FunctionTypes._return_P0_E0<MPSComparatorOptions>) () -> {
             MPSComparatorOptions options = new MPSComparatorOptions();
             options.compareChildren = true;
             options.compareAnnotations = true;
@@ -452,21 +468,21 @@ public class numbers_Test extends BaseTransformationTest {
             ListSequence.fromList(options.ignoredReferences).addSequence(ListSequence.fromList(ListSequence.fromList(new ArrayList<IgnoredReference>())));
             return options;
           }).invoke());
-          if (!(result_k0a0b0n71.areEquals())) {
+          if (!(result_k0a0b0n12.areEquals())) {
             if (!(ApplicationManager.getApplication().isHeadlessEnvironment())) {
               {
                 MPSModuleRepository repository = MPSCoreComponents.getInstance().getPlatform().findComponent(MPSModuleRepository.class);
-                SNode input_k0a0b0n71 = (SNode) SNodePointer.deserialize("r:75f6a9e9-cf21-495f-b1aa-7fd992d0d7d0(test.ts.expr.os.m1@tests)/717395623384619174").resolve(repository);
-                DiffView.showNonEditibleDiff(expectedNode_k0a0b0n71, actualNode_k0a0b0n71, result_k0a0b0n71, input_k0a0b0n71, repository);
+                SNode input_k0a0b0n12 = (SNode) SNodePointer.deserialize("r:75f6a9e9-cf21-495f-b1aa-7fd992d0d7d0(test.ts.expr.os.m1@tests)/717395623384619174").resolve(repository);
+                DiffView.showNonEditibleDiff(expectedNode_k0a0b0n12, actualNode_k0a0b0n12, result_k0a0b0n12, input_k0a0b0n12, repository);
               }
             }
-            Assert.assertTrue(result_k0a0b0n71.getDescription(), false);
+            Assert.assertTrue(result_k0a0b0n12.getDescription(), false);
           }
         }
         {
-          final SNode expectedNode_l0a0b0n71 = _quotation_createNode_g4w43n_a11a0a1a31r();
-          final SNode actualNode_l0a0b0n71 = ScientificNumberMigrationHelper.migrateNumber(_quotation_createNode_g4w43n_a0l0a0b0n71());
-          MPSNodeComparisonResult result_l0a0b0n71 = MPSNodeComparator.compare(expectedNode_l0a0b0n71, actualNode_l0a0b0n71, ((_FunctionTypes._return_P0_E0<MPSComparatorOptions>) () -> {
+          final SNode expectedNode_l0a0b0n12 = _quotation_createNode_g4w43n_a11a0a1a31v();
+          final SNode actualNode_l0a0b0n12 = ScientificNumberMigrationHelper.migrateNumber(_quotation_createNode_g4w43n_a0l0a0b0n12());
+          MPSNodeComparisonResult result_l0a0b0n12 = MPSNodeComparator.compare(expectedNode_l0a0b0n12, actualNode_l0a0b0n12, ((_FunctionTypes._return_P0_E0<MPSComparatorOptions>) () -> {
             MPSComparatorOptions options = new MPSComparatorOptions();
             options.compareChildren = true;
             options.compareAnnotations = true;
@@ -476,21 +492,21 @@ public class numbers_Test extends BaseTransformationTest {
             ListSequence.fromList(options.ignoredReferences).addSequence(ListSequence.fromList(ListSequence.fromList(new ArrayList<IgnoredReference>())));
             return options;
           }).invoke());
-          if (!(result_l0a0b0n71.areEquals())) {
+          if (!(result_l0a0b0n12.areEquals())) {
             if (!(ApplicationManager.getApplication().isHeadlessEnvironment())) {
               {
                 MPSModuleRepository repository = MPSCoreComponents.getInstance().getPlatform().findComponent(MPSModuleRepository.class);
-                SNode input_l0a0b0n71 = (SNode) SNodePointer.deserialize("r:75f6a9e9-cf21-495f-b1aa-7fd992d0d7d0(test.ts.expr.os.m1@tests)/717395623387923094").resolve(repository);
-                DiffView.showNonEditibleDiff(expectedNode_l0a0b0n71, actualNode_l0a0b0n71, result_l0a0b0n71, input_l0a0b0n71, repository);
+                SNode input_l0a0b0n12 = (SNode) SNodePointer.deserialize("r:75f6a9e9-cf21-495f-b1aa-7fd992d0d7d0(test.ts.expr.os.m1@tests)/717395623387923094").resolve(repository);
+                DiffView.showNonEditibleDiff(expectedNode_l0a0b0n12, actualNode_l0a0b0n12, result_l0a0b0n12, input_l0a0b0n12, repository);
               }
             }
-            Assert.assertTrue(result_l0a0b0n71.getDescription(), false);
+            Assert.assertTrue(result_l0a0b0n12.getDescription(), false);
           }
         }
         {
-          final SNode expectedNode_m0a0b0n71 = _quotation_createNode_g4w43n_a21a0a1a31r();
-          final SNode actualNode_m0a0b0n71 = ScientificNumberMigrationHelper.migrateNumber(_quotation_createNode_g4w43n_a0m0a0b0n71());
-          MPSNodeComparisonResult result_m0a0b0n71 = MPSNodeComparator.compare(expectedNode_m0a0b0n71, actualNode_m0a0b0n71, ((_FunctionTypes._return_P0_E0<MPSComparatorOptions>) () -> {
+          final SNode expectedNode_m0a0b0n12 = _quotation_createNode_g4w43n_a21a0a1a31v();
+          final SNode actualNode_m0a0b0n12 = ScientificNumberMigrationHelper.migrateNumber(_quotation_createNode_g4w43n_a0m0a0b0n12());
+          MPSNodeComparisonResult result_m0a0b0n12 = MPSNodeComparator.compare(expectedNode_m0a0b0n12, actualNode_m0a0b0n12, ((_FunctionTypes._return_P0_E0<MPSComparatorOptions>) () -> {
             MPSComparatorOptions options = new MPSComparatorOptions();
             options.compareChildren = true;
             options.compareAnnotations = true;
@@ -500,22 +516,22 @@ public class numbers_Test extends BaseTransformationTest {
             ListSequence.fromList(options.ignoredReferences).addSequence(ListSequence.fromList(ListSequence.fromList(new ArrayList<IgnoredReference>())));
             return options;
           }).invoke());
-          if (!(result_m0a0b0n71.areEquals())) {
+          if (!(result_m0a0b0n12.areEquals())) {
             if (!(ApplicationManager.getApplication().isHeadlessEnvironment())) {
               {
                 MPSModuleRepository repository = MPSCoreComponents.getInstance().getPlatform().findComponent(MPSModuleRepository.class);
-                SNode input_m0a0b0n71 = (SNode) SNodePointer.deserialize("r:75f6a9e9-cf21-495f-b1aa-7fd992d0d7d0(test.ts.expr.os.m1@tests)/717395623387923100").resolve(repository);
-                DiffView.showNonEditibleDiff(expectedNode_m0a0b0n71, actualNode_m0a0b0n71, result_m0a0b0n71, input_m0a0b0n71, repository);
+                SNode input_m0a0b0n12 = (SNode) SNodePointer.deserialize("r:75f6a9e9-cf21-495f-b1aa-7fd992d0d7d0(test.ts.expr.os.m1@tests)/717395623387923100").resolve(repository);
+                DiffView.showNonEditibleDiff(expectedNode_m0a0b0n12, actualNode_m0a0b0n12, result_m0a0b0n12, input_m0a0b0n12, repository);
               }
             }
-            Assert.assertTrue(result_m0a0b0n71.getDescription(), false);
+            Assert.assertTrue(result_m0a0b0n12.getDescription(), false);
           }
         }
 
         {
-          final SNode expectedNode_o0a0b0n71 = _quotation_createNode_g4w43n_a41a0a1a31r();
-          final SNode actualNode_o0a0b0n71 = ScientificNumberMigrationHelper.migrateNumber(_quotation_createNode_g4w43n_a0o0a0b0n71());
-          MPSNodeComparisonResult result_o0a0b0n71 = MPSNodeComparator.compare(expectedNode_o0a0b0n71, actualNode_o0a0b0n71, ((_FunctionTypes._return_P0_E0<MPSComparatorOptions>) () -> {
+          final SNode expectedNode_o0a0b0n12 = _quotation_createNode_g4w43n_a41a0a1a31v();
+          final SNode actualNode_o0a0b0n12 = ScientificNumberMigrationHelper.migrateNumber(_quotation_createNode_g4w43n_a0o0a0b0n12());
+          MPSNodeComparisonResult result_o0a0b0n12 = MPSNodeComparator.compare(expectedNode_o0a0b0n12, actualNode_o0a0b0n12, ((_FunctionTypes._return_P0_E0<MPSComparatorOptions>) () -> {
             MPSComparatorOptions options = new MPSComparatorOptions();
             options.compareChildren = true;
             options.compareAnnotations = true;
@@ -525,21 +541,21 @@ public class numbers_Test extends BaseTransformationTest {
             ListSequence.fromList(options.ignoredReferences).addSequence(ListSequence.fromList(ListSequence.fromList(new ArrayList<IgnoredReference>())));
             return options;
           }).invoke());
-          if (!(result_o0a0b0n71.areEquals())) {
+          if (!(result_o0a0b0n12.areEquals())) {
             if (!(ApplicationManager.getApplication().isHeadlessEnvironment())) {
               {
                 MPSModuleRepository repository = MPSCoreComponents.getInstance().getPlatform().findComponent(MPSModuleRepository.class);
-                SNode input_o0a0b0n71 = (SNode) SNodePointer.deserialize("r:75f6a9e9-cf21-495f-b1aa-7fd992d0d7d0(test.ts.expr.os.m1@tests)/717395623384619180").resolve(repository);
-                DiffView.showNonEditibleDiff(expectedNode_o0a0b0n71, actualNode_o0a0b0n71, result_o0a0b0n71, input_o0a0b0n71, repository);
+                SNode input_o0a0b0n12 = (SNode) SNodePointer.deserialize("r:75f6a9e9-cf21-495f-b1aa-7fd992d0d7d0(test.ts.expr.os.m1@tests)/717395623384619180").resolve(repository);
+                DiffView.showNonEditibleDiff(expectedNode_o0a0b0n12, actualNode_o0a0b0n12, result_o0a0b0n12, input_o0a0b0n12, repository);
               }
             }
-            Assert.assertTrue(result_o0a0b0n71.getDescription(), false);
+            Assert.assertTrue(result_o0a0b0n12.getDescription(), false);
           }
         }
         {
-          final SNode expectedNode_p0a0b0n71 = _quotation_createNode_g4w43n_a51a0a1a31r();
-          final SNode actualNode_p0a0b0n71 = ScientificNumberMigrationHelper.migrateNumber(_quotation_createNode_g4w43n_a0p0a0b0n71());
-          MPSNodeComparisonResult result_p0a0b0n71 = MPSNodeComparator.compare(expectedNode_p0a0b0n71, actualNode_p0a0b0n71, ((_FunctionTypes._return_P0_E0<MPSComparatorOptions>) () -> {
+          final SNode expectedNode_p0a0b0n12 = _quotation_createNode_g4w43n_a51a0a1a31v();
+          final SNode actualNode_p0a0b0n12 = ScientificNumberMigrationHelper.migrateNumber(_quotation_createNode_g4w43n_a0p0a0b0n12());
+          MPSNodeComparisonResult result_p0a0b0n12 = MPSNodeComparator.compare(expectedNode_p0a0b0n12, actualNode_p0a0b0n12, ((_FunctionTypes._return_P0_E0<MPSComparatorOptions>) () -> {
             MPSComparatorOptions options = new MPSComparatorOptions();
             options.compareChildren = true;
             options.compareAnnotations = true;
@@ -549,21 +565,21 @@ public class numbers_Test extends BaseTransformationTest {
             ListSequence.fromList(options.ignoredReferences).addSequence(ListSequence.fromList(ListSequence.fromList(new ArrayList<IgnoredReference>())));
             return options;
           }).invoke());
-          if (!(result_p0a0b0n71.areEquals())) {
+          if (!(result_p0a0b0n12.areEquals())) {
             if (!(ApplicationManager.getApplication().isHeadlessEnvironment())) {
               {
                 MPSModuleRepository repository = MPSCoreComponents.getInstance().getPlatform().findComponent(MPSModuleRepository.class);
-                SNode input_p0a0b0n71 = (SNode) SNodePointer.deserialize("r:75f6a9e9-cf21-495f-b1aa-7fd992d0d7d0(test.ts.expr.os.m1@tests)/717395623384619186").resolve(repository);
-                DiffView.showNonEditibleDiff(expectedNode_p0a0b0n71, actualNode_p0a0b0n71, result_p0a0b0n71, input_p0a0b0n71, repository);
+                SNode input_p0a0b0n12 = (SNode) SNodePointer.deserialize("r:75f6a9e9-cf21-495f-b1aa-7fd992d0d7d0(test.ts.expr.os.m1@tests)/717395623384619186").resolve(repository);
+                DiffView.showNonEditibleDiff(expectedNode_p0a0b0n12, actualNode_p0a0b0n12, result_p0a0b0n12, input_p0a0b0n12, repository);
               }
             }
-            Assert.assertTrue(result_p0a0b0n71.getDescription(), false);
+            Assert.assertTrue(result_p0a0b0n12.getDescription(), false);
           }
         }
         {
-          final SNode expectedNode_q0a0b0n71 = _quotation_createNode_g4w43n_a61a0a1a31r();
-          final SNode actualNode_q0a0b0n71 = ScientificNumberMigrationHelper.migrateNumber(_quotation_createNode_g4w43n_a0q0a0b0n71());
-          MPSNodeComparisonResult result_q0a0b0n71 = MPSNodeComparator.compare(expectedNode_q0a0b0n71, actualNode_q0a0b0n71, ((_FunctionTypes._return_P0_E0<MPSComparatorOptions>) () -> {
+          final SNode expectedNode_q0a0b0n12 = _quotation_createNode_g4w43n_a61a0a1a31v();
+          final SNode actualNode_q0a0b0n12 = ScientificNumberMigrationHelper.migrateNumber(_quotation_createNode_g4w43n_a0q0a0b0n12());
+          MPSNodeComparisonResult result_q0a0b0n12 = MPSNodeComparator.compare(expectedNode_q0a0b0n12, actualNode_q0a0b0n12, ((_FunctionTypes._return_P0_E0<MPSComparatorOptions>) () -> {
             MPSComparatorOptions options = new MPSComparatorOptions();
             options.compareChildren = true;
             options.compareAnnotations = true;
@@ -573,21 +589,21 @@ public class numbers_Test extends BaseTransformationTest {
             ListSequence.fromList(options.ignoredReferences).addSequence(ListSequence.fromList(ListSequence.fromList(new ArrayList<IgnoredReference>())));
             return options;
           }).invoke());
-          if (!(result_q0a0b0n71.areEquals())) {
+          if (!(result_q0a0b0n12.areEquals())) {
             if (!(ApplicationManager.getApplication().isHeadlessEnvironment())) {
               {
                 MPSModuleRepository repository = MPSCoreComponents.getInstance().getPlatform().findComponent(MPSModuleRepository.class);
-                SNode input_q0a0b0n71 = (SNode) SNodePointer.deserialize("r:75f6a9e9-cf21-495f-b1aa-7fd992d0d7d0(test.ts.expr.os.m1@tests)/717395623384619192").resolve(repository);
-                DiffView.showNonEditibleDiff(expectedNode_q0a0b0n71, actualNode_q0a0b0n71, result_q0a0b0n71, input_q0a0b0n71, repository);
+                SNode input_q0a0b0n12 = (SNode) SNodePointer.deserialize("r:75f6a9e9-cf21-495f-b1aa-7fd992d0d7d0(test.ts.expr.os.m1@tests)/717395623384619192").resolve(repository);
+                DiffView.showNonEditibleDiff(expectedNode_q0a0b0n12, actualNode_q0a0b0n12, result_q0a0b0n12, input_q0a0b0n12, repository);
               }
             }
-            Assert.assertTrue(result_q0a0b0n71.getDescription(), false);
+            Assert.assertTrue(result_q0a0b0n12.getDescription(), false);
           }
         }
         {
-          final SNode expectedNode_r0a0b0n71 = _quotation_createNode_g4w43n_a71a0a1a31r();
-          final SNode actualNode_r0a0b0n71 = ScientificNumberMigrationHelper.migrateNumber(_quotation_createNode_g4w43n_a0r0a0b0n71());
-          MPSNodeComparisonResult result_r0a0b0n71 = MPSNodeComparator.compare(expectedNode_r0a0b0n71, actualNode_r0a0b0n71, ((_FunctionTypes._return_P0_E0<MPSComparatorOptions>) () -> {
+          final SNode expectedNode_r0a0b0n12 = _quotation_createNode_g4w43n_a71a0a1a31v();
+          final SNode actualNode_r0a0b0n12 = ScientificNumberMigrationHelper.migrateNumber(_quotation_createNode_g4w43n_a0r0a0b0n12());
+          MPSNodeComparisonResult result_r0a0b0n12 = MPSNodeComparator.compare(expectedNode_r0a0b0n12, actualNode_r0a0b0n12, ((_FunctionTypes._return_P0_E0<MPSComparatorOptions>) () -> {
             MPSComparatorOptions options = new MPSComparatorOptions();
             options.compareChildren = true;
             options.compareAnnotations = true;
@@ -597,15 +613,15 @@ public class numbers_Test extends BaseTransformationTest {
             ListSequence.fromList(options.ignoredReferences).addSequence(ListSequence.fromList(ListSequence.fromList(new ArrayList<IgnoredReference>())));
             return options;
           }).invoke());
-          if (!(result_r0a0b0n71.areEquals())) {
+          if (!(result_r0a0b0n12.areEquals())) {
             if (!(ApplicationManager.getApplication().isHeadlessEnvironment())) {
               {
                 MPSModuleRepository repository = MPSCoreComponents.getInstance().getPlatform().findComponent(MPSModuleRepository.class);
-                SNode input_r0a0b0n71 = (SNode) SNodePointer.deserialize("r:75f6a9e9-cf21-495f-b1aa-7fd992d0d7d0(test.ts.expr.os.m1@tests)/717395623384645194").resolve(repository);
-                DiffView.showNonEditibleDiff(expectedNode_r0a0b0n71, actualNode_r0a0b0n71, result_r0a0b0n71, input_r0a0b0n71, repository);
+                SNode input_r0a0b0n12 = (SNode) SNodePointer.deserialize("r:75f6a9e9-cf21-495f-b1aa-7fd992d0d7d0(test.ts.expr.os.m1@tests)/717395623384645194").resolve(repository);
+                DiffView.showNonEditibleDiff(expectedNode_r0a0b0n12, actualNode_r0a0b0n12, result_r0a0b0n12, input_r0a0b0n12, repository);
               }
             }
-            Assert.assertTrue(result_r0a0b0n71.getDescription(), false);
+            Assert.assertTrue(result_r0a0b0n12.getDescription(), false);
           }
         }
 
@@ -625,15 +641,43 @@ public class numbers_Test extends BaseTransformationTest {
         new CheckExpectedMessageRunnable.CheckAnyMessageRunnable(nodeToCheck, MessageStatus.ERROR, "", myProject.getRepository(), myProject.getPlatform()).run();
       });
     }
+    public void test_NodeTypeSystemCheck6862893590118466818() throws Exception {
+      initTestNodes();
+      runWithinCommand(() -> {
+        SNode nodeToCheck = getNodeById("6862893590118444751");
+        new CheckExpectedMessageRunnable.CheckExpectedTypesystemMessageRunnable(nodeToCheck, MessageStatus.ERROR, "", myProject.getRepository(), myProject.getPlatform()).run();
+      });
+    }
+    public void test_NodeTypeSystemCheck6862893590118790304() throws Exception {
+      initTestNodes();
+      runWithinCommand(() -> {
+        SNode nodeToCheck = getNodeById("6862893590118767839");
+        new CheckExpectedMessageRunnable.CheckExpectedTypesystemMessageRunnable(nodeToCheck, MessageStatus.ERROR, "", myProject.getRepository(), myProject.getPlatform()).run();
+      });
+    }
+    public void test_NodeTypeSystemCheck6862893590118862037() throws Exception {
+      initTestNodes();
+      runWithinCommand(() -> {
+        SNode nodeToCheck = getNodeById("6862893590118839609");
+        new CheckExpectedMessageRunnable.CheckExpectedTypesystemMessageRunnable(nodeToCheck, MessageStatus.ERROR, "", myProject.getRepository(), myProject.getPlatform()).run();
+      });
+    }
+    public void test_NodeTypeSystemCheck6862893590118881163() throws Exception {
+      initTestNodes();
+      runWithinCommand(() -> {
+        SNode nodeToCheck = getNodeById("6862893590118881161");
+        new CheckExpectedMessageRunnable.CheckExpectedTypesystemMessageRunnable(nodeToCheck, MessageStatus.ERROR, "", myProject.getRepository(), myProject.getPlatform()).run();
+      });
+    }
     public void test_ErrorMessagesCheck7407689390959727437() throws Exception {
       initTestNodes();
       runWithinCommand(() -> {
         SNode nodeToCheck = getNodeById("9215883686876725790");
-        new CheckErrorMessagesRunnable(nodeToCheck, true, false, myProject.getPlatform()).includeSelf(false).exclude(Arrays.<CheckExpectedMessageRunnable>asList(new CheckExpectedMessageRunnable.CheckExpectedTypesystemMessageRunnable(getNodeById("6706649924975945310"), MessageStatus.ERROR, "", myProject.getRepository(), myProject.getPlatform()), new CheckExpectedMessageRunnable.CheckAnyMessageRunnable(getNodeById("1293326996617369533"), MessageStatus.ERROR, "", myProject.getRepository(), myProject.getPlatform()))).run();
+        new CheckErrorMessagesRunnable(nodeToCheck, true, false, myProject.getPlatform()).includeSelf(false).exclude(Arrays.<CheckExpectedMessageRunnable>asList(new CheckExpectedMessageRunnable.CheckExpectedTypesystemMessageRunnable(getNodeById("6706649924975945310"), MessageStatus.ERROR, "", myProject.getRepository(), myProject.getPlatform()), new CheckExpectedMessageRunnable.CheckAnyMessageRunnable(getNodeById("1293326996617369533"), MessageStatus.ERROR, "", myProject.getRepository(), myProject.getPlatform()), new CheckExpectedMessageRunnable.CheckExpectedTypesystemMessageRunnable(getNodeById("6862893590118444751"), MessageStatus.ERROR, "", myProject.getRepository(), myProject.getPlatform()), new CheckExpectedMessageRunnable.CheckExpectedTypesystemMessageRunnable(getNodeById("6862893590118767839"), MessageStatus.ERROR, "", myProject.getRepository(), myProject.getPlatform()), new CheckExpectedMessageRunnable.CheckExpectedTypesystemMessageRunnable(getNodeById("6862893590118839609"), MessageStatus.ERROR, "", myProject.getRepository(), myProject.getPlatform()), new CheckExpectedMessageRunnable.CheckExpectedTypesystemMessageRunnable(getNodeById("6862893590118881161"), MessageStatus.ERROR, "", myProject.getRepository(), myProject.getPlatform()))).run();
       });
     }
 
-    private static SNode createNumberType_g4w43n_a0a0a0b0f71(String p0, String p1) {
+    private static SNode createNumberType_g4w43n_a0a0a0b0f12(String p0, String p1) {
       SNodeBuilder n0 = new SNodeBuilder().init(CONCEPTS.NumberType$n);
       {
         SNodeBuilder n1 = n0.forChild(LINKS.prec$RwIK).init(CONCEPTS.NumberPrecSpec$yQ);
@@ -646,7 +690,7 @@ public class numbers_Test extends BaseTransformationTest {
       }
       return n0.getResult();
     }
-    private static SNode createNumberType_g4w43n_a0a0a0a1a5r(String p0, String p1) {
+    private static SNode createNumberType_g4w43n_a0a0a0a1a5v(String p0, String p1) {
       SNodeBuilder n0 = new SNodeBuilder().init(CONCEPTS.NumberType$n);
       {
         SNodeBuilder n1 = n0.forChild(LINKS.prec$RwIK).init(CONCEPTS.NumberPrecSpec$yQ);
@@ -659,7 +703,7 @@ public class numbers_Test extends BaseTransformationTest {
       }
       return n0.getResult();
     }
-    private static SNode createNumberType_g4w43n_a0b0a0b0f71(String p0, String p1) {
+    private static SNode createNumberType_g4w43n_a0b0a0b0f12(String p0, String p1) {
       SNodeBuilder n0 = new SNodeBuilder().init(CONCEPTS.NumberType$n);
       {
         SNodeBuilder n1 = n0.forChild(LINKS.prec$RwIK).init(CONCEPTS.NumberPrecSpec$yQ);
@@ -672,7 +716,7 @@ public class numbers_Test extends BaseTransformationTest {
       }
       return n0.getResult();
     }
-    private static SNode createNumberType_g4w43n_a0a1a0a1a5r(String p0, String p1) {
+    private static SNode createNumberType_g4w43n_a0a1a0a1a5v(String p0, String p1) {
       SNodeBuilder n0 = new SNodeBuilder().init(CONCEPTS.NumberType$n);
       {
         SNodeBuilder n1 = n0.forChild(LINKS.prec$RwIK).init(CONCEPTS.NumberPrecSpec$yQ);
@@ -685,7 +729,7 @@ public class numbers_Test extends BaseTransformationTest {
       }
       return n0.getResult();
     }
-    private static SNode createNumberType_g4w43n_a0c0a0b0f71() {
+    private static SNode createNumberType_g4w43n_a0c0a0b0f12() {
       SNodeBuilder n0 = new SNodeBuilder().init(CONCEPTS.NumberType$n);
       {
         SNodeBuilder n1 = n0.forChild(LINKS.prec$RwIK).init(CONCEPTS.NumberPrecSpec$yQ);
@@ -698,7 +742,7 @@ public class numbers_Test extends BaseTransformationTest {
       }
       return n0.getResult();
     }
-    private static SNode createNumberType_g4w43n_a0a2a0a1a5r() {
+    private static SNode createNumberType_g4w43n_a0a2a0a1a5v() {
       SNodeBuilder n0 = new SNodeBuilder().init(CONCEPTS.NumberType$n);
       {
         SNodeBuilder n1 = n0.forChild(LINKS.prec$RwIK).init(CONCEPTS.NumberPrecSpec$yQ);
@@ -711,7 +755,7 @@ public class numbers_Test extends BaseTransformationTest {
       }
       return n0.getResult();
     }
-    private static SNode createNumberType_g4w43n_a0a0a0b0g71(String p0, String p1) {
+    private static SNode createNumberType_g4w43n_a0a0a0b0g12(String p0, String p1) {
       SNodeBuilder n0 = new SNodeBuilder().init(CONCEPTS.NumberType$n);
       {
         SNodeBuilder n1 = n0.forChild(LINKS.prec$RwIK).init(CONCEPTS.NumberPrecSpec$yQ);
@@ -724,11 +768,11 @@ public class numbers_Test extends BaseTransformationTest {
       }
       return n0.getResult();
     }
-    private static SNode createStringType_g4w43n_a0a0a0a1a6r() {
+    private static SNode createStringType_g4w43n_a0a0a0a1a6v() {
       SNodeBuilder n0 = new SNodeBuilder().init(CONCEPTS.StringType$B3);
       return n0.getResult();
     }
-    private static SNode createNumberType_g4w43n_a0b0a0b0g71(String p0, String p1) {
+    private static SNode createNumberType_g4w43n_a0b0a0b0g12(String p0, String p1) {
       SNodeBuilder n0 = new SNodeBuilder().init(CONCEPTS.NumberType$n);
       {
         SNodeBuilder n1 = n0.forChild(LINKS.prec$RwIK).init(CONCEPTS.NumberPrecSpec$yQ);
@@ -741,11 +785,11 @@ public class numbers_Test extends BaseTransformationTest {
       }
       return n0.getResult();
     }
-    private static SNode createBooleanType_g4w43n_a0a1a0a1a6r() {
+    private static SNode createBooleanType_g4w43n_a0a1a0a1a6v() {
       SNodeBuilder n0 = new SNodeBuilder().init(CONCEPTS.BooleanType$eL);
       return n0.getResult();
     }
-    private static SNode createNumberType_g4w43n_a0a0a0b0h71(String p0, String p1) {
+    private static SNode createNumberType_g4w43n_a0a0a0b0h12(String p0, String p1) {
       SNodeBuilder n0 = new SNodeBuilder().init(CONCEPTS.NumberType$n);
       {
         SNodeBuilder n1 = n0.forChild(LINKS.prec$RwIK).init(CONCEPTS.NumberPrecSpec$yQ);
@@ -758,7 +802,7 @@ public class numbers_Test extends BaseTransformationTest {
       }
       return n0.getResult();
     }
-    private static SNode createNumberType_g4w43n_a0a0a0a1a7r(String p0, String p1) {
+    private static SNode createNumberType_g4w43n_a0a0a0a1a7v(String p0, String p1) {
       SNodeBuilder n0 = new SNodeBuilder().init(CONCEPTS.NumberType$n);
       {
         SNodeBuilder n1 = n0.forChild(LINKS.prec$RwIK).init(CONCEPTS.NumberPrecSpec$yQ);
@@ -771,7 +815,7 @@ public class numbers_Test extends BaseTransformationTest {
       }
       return n0.getResult();
     }
-    private static SNode createNumberType_g4w43n_a0a0a0b0i71(String p0, String p1) {
+    private static SNode createNumberType_g4w43n_a0a0a0b0i12(String p0, String p1) {
       SNodeBuilder n0 = new SNodeBuilder().init(CONCEPTS.NumberType$n);
       {
         SNodeBuilder n1 = n0.forChild(LINKS.prec$RwIK).init(CONCEPTS.NumberPrecSpec$yQ);
@@ -784,7 +828,7 @@ public class numbers_Test extends BaseTransformationTest {
       }
       return n0.getResult();
     }
-    private static SNode createNumberType_g4w43n_a0a0a0a1a8r(String p0) {
+    private static SNode createNumberType_g4w43n_a0a0a0a1a8v(String p0) {
       SNodeBuilder n0 = new SNodeBuilder().init(CONCEPTS.NumberType$n);
       {
         SNodeBuilder n1 = n0.forChild(LINKS.prec$RwIK).init(CONCEPTS.NumberPrecSpec$yQ);
@@ -797,7 +841,7 @@ public class numbers_Test extends BaseTransformationTest {
       }
       return n0.getResult();
     }
-    private static SNode createNumberType_g4w43n_a0b0a0b0i71() {
+    private static SNode createNumberType_g4w43n_a0b0a0b0i12() {
       SNodeBuilder n0 = new SNodeBuilder().init(CONCEPTS.NumberType$n);
       {
         SNodeBuilder n1 = n0.forChild(LINKS.prec$RwIK).init(CONCEPTS.NumberPrecSpec$yQ);
@@ -810,7 +854,7 @@ public class numbers_Test extends BaseTransformationTest {
       }
       return n0.getResult();
     }
-    private static SNode createNumberType_g4w43n_a0a1a0a1a8r(String p0) {
+    private static SNode createNumberType_g4w43n_a0a1a0a1a8v(String p0) {
       SNodeBuilder n0 = new SNodeBuilder().init(CONCEPTS.NumberType$n);
       {
         SNodeBuilder n1 = n0.forChild(LINKS.prec$RwIK).init(CONCEPTS.NumberPrecSpec$yQ);
@@ -823,7 +867,7 @@ public class numbers_Test extends BaseTransformationTest {
       }
       return n0.getResult();
     }
-    private static SNode createNumberType_g4w43n_a0a0a0b0j71() {
+    private static SNode createNumberType_g4w43n_a0a0a0b0j12() {
       SNodeBuilder n0 = new SNodeBuilder().init(CONCEPTS.NumberType$n);
       n0.forChild(LINKS.prec$RwIK).initNull();
       {
@@ -833,61 +877,7 @@ public class numbers_Test extends BaseTransformationTest {
       }
       return n0.getResult();
     }
-    private static SNode createNumberType_g4w43n_a0a0a0a1a9r() {
-      SNodeBuilder n0 = new SNodeBuilder().init(CONCEPTS.NumberType$n);
-      n0.forChild(LINKS.prec$RwIK).initNull();
-      {
-        SNodeBuilder n1 = n0.forChild(LINKS.range$RnOa).init(CONCEPTS.NumberRangeSpec$3n);
-        n1.setProperty(PROPS.min$7OOG, "1");
-        n1.setProperty(PROPS.max$7P3H, "1");
-        n1.setProperty(PROPS.excludeMin$z1dD, "" + (true));
-      }
-      return n0.getResult();
-    }
-    private static SNode createNumberType_g4w43n_a0b0a0b0j71() {
-      SNodeBuilder n0 = new SNodeBuilder().init(CONCEPTS.NumberType$n);
-      n0.forChild(LINKS.prec$RwIK).initNull();
-      {
-        SNodeBuilder n1 = n0.forChild(LINKS.range$RnOa).init(CONCEPTS.NumberRangeSpec$3n);
-        n1.setProperty(PROPS.min$7OOG, "1");
-        n1.setProperty(PROPS.max$7P3H, "1");
-      }
-      return n0.getResult();
-    }
-    private static SNode createNumberType_g4w43n_a0a1a0a1a9r() {
-      SNodeBuilder n0 = new SNodeBuilder().init(CONCEPTS.NumberType$n);
-      n0.forChild(LINKS.prec$RwIK).initNull();
-      {
-        SNodeBuilder n1 = n0.forChild(LINKS.range$RnOa).init(CONCEPTS.NumberRangeSpec$3n);
-        n1.setProperty(PROPS.min$7OOG, "1");
-        n1.setProperty(PROPS.max$7P3H, "1");
-        n1.setProperty(PROPS.excludeMax$cVA4, "" + (true));
-      }
-      return n0.getResult();
-    }
-    private static SNode createNumberType_g4w43n_a0c0a0b0j71() {
-      SNodeBuilder n0 = new SNodeBuilder().init(CONCEPTS.NumberType$n);
-      n0.forChild(LINKS.prec$RwIK).initNull();
-      {
-        SNodeBuilder n1 = n0.forChild(LINKS.range$RnOa).init(CONCEPTS.NumberRangeSpec$3n);
-        n1.setProperty(PROPS.min$7OOG, "1");
-        n1.setProperty(PROPS.max$7P3H, "1");
-      }
-      return n0.getResult();
-    }
-    private static SNode createNumberType_g4w43n_a0a2a0a1a9r() {
-      SNodeBuilder n0 = new SNodeBuilder().init(CONCEPTS.NumberType$n);
-      n0.forChild(LINKS.prec$RwIK).initNull();
-      {
-        SNodeBuilder n1 = n0.forChild(LINKS.range$RnOa).init(CONCEPTS.NumberRangeSpec$3n);
-        n1.setProperty(PROPS.min$7OOG, "1");
-        n1.setProperty(PROPS.max$7P3H, "1");
-        n1.setProperty(PROPS.excludeMin$z1dD, "" + (true));
-        n1.setProperty(PROPS.excludeMax$cVA4, "" + (true));
-      }
-      return n0.getResult();
-    }
-    private static SNode createNumberType_g4w43n_a0a0a0b0k71() {
+    private static SNode createNumberType_g4w43n_a0a0a0a1a9v() {
       SNodeBuilder n0 = new SNodeBuilder().init(CONCEPTS.NumberType$n);
       n0.forChild(LINKS.prec$RwIK).initNull();
       {
@@ -898,29 +888,17 @@ public class numbers_Test extends BaseTransformationTest {
       }
       return n0.getResult();
     }
-    private static SNode createNumberType_g4w43n_a0a0a0a1a01r() {
+    private static SNode createNumberType_g4w43n_a0b0a0b0j12() {
       SNodeBuilder n0 = new SNodeBuilder().init(CONCEPTS.NumberType$n);
       n0.forChild(LINKS.prec$RwIK).initNull();
       {
         SNodeBuilder n1 = n0.forChild(LINKS.range$RnOa).init(CONCEPTS.NumberRangeSpec$3n);
         n1.setProperty(PROPS.min$7OOG, "1");
         n1.setProperty(PROPS.max$7P3H, "1");
-        n1.setProperty(PROPS.excludeMin$z1dD, "" + (true));
       }
       return n0.getResult();
     }
-    private static SNode createNumberType_g4w43n_a0b0a0b0k71() {
-      SNodeBuilder n0 = new SNodeBuilder().init(CONCEPTS.NumberType$n);
-      n0.forChild(LINKS.prec$RwIK).initNull();
-      {
-        SNodeBuilder n1 = n0.forChild(LINKS.range$RnOa).init(CONCEPTS.NumberRangeSpec$3n);
-        n1.setProperty(PROPS.min$7OOG, "1");
-        n1.setProperty(PROPS.max$7P3H, "1");
-        n1.setProperty(PROPS.excludeMax$cVA4, "" + (true));
-      }
-      return n0.getResult();
-    }
-    private static SNode createNumberType_g4w43n_a0a1a0a1a01r() {
+    private static SNode createNumberType_g4w43n_a0a1a0a1a9v() {
       SNodeBuilder n0 = new SNodeBuilder().init(CONCEPTS.NumberType$n);
       n0.forChild(LINKS.prec$RwIK).initNull();
       {
@@ -931,7 +909,17 @@ public class numbers_Test extends BaseTransformationTest {
       }
       return n0.getResult();
     }
-    private static SNode createNumberType_g4w43n_a0c0a0b0k71() {
+    private static SNode createNumberType_g4w43n_a0c0a0b0j12() {
+      SNodeBuilder n0 = new SNodeBuilder().init(CONCEPTS.NumberType$n);
+      n0.forChild(LINKS.prec$RwIK).initNull();
+      {
+        SNodeBuilder n1 = n0.forChild(LINKS.range$RnOa).init(CONCEPTS.NumberRangeSpec$3n);
+        n1.setProperty(PROPS.min$7OOG, "1");
+        n1.setProperty(PROPS.max$7P3H, "1");
+      }
+      return n0.getResult();
+    }
+    private static SNode createNumberType_g4w43n_a0a2a0a1a9v() {
       SNodeBuilder n0 = new SNodeBuilder().init(CONCEPTS.NumberType$n);
       n0.forChild(LINKS.prec$RwIK).initNull();
       {
@@ -943,7 +931,51 @@ public class numbers_Test extends BaseTransformationTest {
       }
       return n0.getResult();
     }
-    private static SNode createNumberType_g4w43n_a0a2a0a1a01r() {
+    private static SNode createNumberType_g4w43n_a0a0a0b0k12() {
+      SNodeBuilder n0 = new SNodeBuilder().init(CONCEPTS.NumberType$n);
+      n0.forChild(LINKS.prec$RwIK).initNull();
+      {
+        SNodeBuilder n1 = n0.forChild(LINKS.range$RnOa).init(CONCEPTS.NumberRangeSpec$3n);
+        n1.setProperty(PROPS.min$7OOG, "1");
+        n1.setProperty(PROPS.max$7P3H, "1");
+        n1.setProperty(PROPS.excludeMin$z1dD, "" + (true));
+      }
+      return n0.getResult();
+    }
+    private static SNode createNumberType_g4w43n_a0a0a0a1a01v() {
+      SNodeBuilder n0 = new SNodeBuilder().init(CONCEPTS.NumberType$n);
+      n0.forChild(LINKS.prec$RwIK).initNull();
+      {
+        SNodeBuilder n1 = n0.forChild(LINKS.range$RnOa).init(CONCEPTS.NumberRangeSpec$3n);
+        n1.setProperty(PROPS.min$7OOG, "1");
+        n1.setProperty(PROPS.max$7P3H, "1");
+        n1.setProperty(PROPS.excludeMin$z1dD, "" + (true));
+      }
+      return n0.getResult();
+    }
+    private static SNode createNumberType_g4w43n_a0b0a0b0k12() {
+      SNodeBuilder n0 = new SNodeBuilder().init(CONCEPTS.NumberType$n);
+      n0.forChild(LINKS.prec$RwIK).initNull();
+      {
+        SNodeBuilder n1 = n0.forChild(LINKS.range$RnOa).init(CONCEPTS.NumberRangeSpec$3n);
+        n1.setProperty(PROPS.min$7OOG, "1");
+        n1.setProperty(PROPS.max$7P3H, "1");
+        n1.setProperty(PROPS.excludeMax$cVA4, "" + (true));
+      }
+      return n0.getResult();
+    }
+    private static SNode createNumberType_g4w43n_a0a1a0a1a01v() {
+      SNodeBuilder n0 = new SNodeBuilder().init(CONCEPTS.NumberType$n);
+      n0.forChild(LINKS.prec$RwIK).initNull();
+      {
+        SNodeBuilder n1 = n0.forChild(LINKS.range$RnOa).init(CONCEPTS.NumberRangeSpec$3n);
+        n1.setProperty(PROPS.min$7OOG, "1");
+        n1.setProperty(PROPS.max$7P3H, "1");
+        n1.setProperty(PROPS.excludeMax$cVA4, "" + (true));
+      }
+      return n0.getResult();
+    }
+    private static SNode createNumberType_g4w43n_a0c0a0b0k12() {
       SNodeBuilder n0 = new SNodeBuilder().init(CONCEPTS.NumberType$n);
       n0.forChild(LINKS.prec$RwIK).initNull();
       {
@@ -955,406 +987,418 @@ public class numbers_Test extends BaseTransformationTest {
       }
       return n0.getResult();
     }
-    private static SNode _quotation_createNode_g4w43n_a0a0a0b0l71() {
+    private static SNode createNumberType_g4w43n_a0a2a0a1a01v() {
+      SNodeBuilder n0 = new SNodeBuilder().init(CONCEPTS.NumberType$n);
+      n0.forChild(LINKS.prec$RwIK).initNull();
+      {
+        SNodeBuilder n1 = n0.forChild(LINKS.range$RnOa).init(CONCEPTS.NumberRangeSpec$3n);
+        n1.setProperty(PROPS.min$7OOG, "1");
+        n1.setProperty(PROPS.max$7P3H, "1");
+        n1.setProperty(PROPS.excludeMin$z1dD, "" + (true));
+        n1.setProperty(PROPS.excludeMax$cVA4, "" + (true));
+      }
+      return n0.getResult();
+    }
+    private static SNode _quotation_createNode_g4w43n_a0a0a0b0l12() {
       SNode quotedNode_1 = null;
       SNodeBuilder nb = new SNodeBuilder(null, null).init(MetaAdapterFactory.getConcept(MetaAdapterFactory.getLanguage(0x6b277d9ad52d416fL, 0xa2091919bd737f50L, "org.iets3.core.expr.simpleTypes"), 0x46ff3b3d86d0e6daL, "NumberLiteral"));
       quotedNode_1 = nb.getResult();
       nb.setProperty(MetaAdapterFactory.getProperty(0x6b277d9ad52d416fL, 0xa2091919bd737f50L, 0x46ff3b3d86d0e6daL, 0x46ff3b3d86d0e6ddL, "value"), "0");
       return quotedNode_1;
     }
-    private static SNode _quotation_createNode_g4w43n_a0d0a0b0l71() {
+    private static SNode _quotation_createNode_g4w43n_a0d0a0b0l12() {
       SNode quotedNode_1 = null;
       SNodeBuilder nb = new SNodeBuilder(null, null).init(MetaAdapterFactory.getConcept(MetaAdapterFactory.getLanguage(0x6b277d9ad52d416fL, 0xa2091919bd737f50L, "org.iets3.core.expr.simpleTypes"), 0x46ff3b3d86d0e6daL, "NumberLiteral"));
       quotedNode_1 = nb.getResult();
       nb.setProperty(MetaAdapterFactory.getProperty(0x6b277d9ad52d416fL, 0xa2091919bd737f50L, 0x46ff3b3d86d0e6daL, 0x46ff3b3d86d0e6ddL, "value"), "10");
       return quotedNode_1;
     }
-    private static SNode _quotation_createNode_g4w43n_a0g0a0b0l71() {
+    private static SNode _quotation_createNode_g4w43n_a0g0a0b0l12() {
       SNode quotedNode_1 = null;
       SNodeBuilder nb = new SNodeBuilder(null, null).init(MetaAdapterFactory.getConcept(MetaAdapterFactory.getLanguage(0x6b277d9ad52d416fL, 0xa2091919bd737f50L, "org.iets3.core.expr.simpleTypes"), 0x46ff3b3d86d0e6daL, "NumberLiteral"));
       quotedNode_1 = nb.getResult();
       nb.setProperty(MetaAdapterFactory.getProperty(0x6b277d9ad52d416fL, 0xa2091919bd737f50L, 0x46ff3b3d86d0e6daL, 0x46ff3b3d86d0e6ddL, "value"), "-10");
       return quotedNode_1;
     }
-    private static SNode _quotation_createNode_g4w43n_a0j0a0b0l71() {
+    private static SNode _quotation_createNode_g4w43n_a0j0a0b0l12() {
       SNode quotedNode_1 = null;
       SNodeBuilder nb = new SNodeBuilder(null, null).init(MetaAdapterFactory.getConcept(MetaAdapterFactory.getLanguage(0x6b277d9ad52d416fL, 0xa2091919bd737f50L, "org.iets3.core.expr.simpleTypes"), 0x46ff3b3d86d0e6daL, "NumberLiteral"));
       quotedNode_1 = nb.getResult();
       nb.setProperty(MetaAdapterFactory.getProperty(0x6b277d9ad52d416fL, 0xa2091919bd737f50L, 0x46ff3b3d86d0e6daL, 0x46ff3b3d86d0e6ddL, "value"), "10.85");
       return quotedNode_1;
     }
-    private static SNode _quotation_createNode_g4w43n_a0m0a0b0l71() {
+    private static SNode _quotation_createNode_g4w43n_a0m0a0b0l12() {
       SNode quotedNode_1 = null;
       SNodeBuilder nb = new SNodeBuilder(null, null).init(MetaAdapterFactory.getConcept(MetaAdapterFactory.getLanguage(0x6b277d9ad52d416fL, 0xa2091919bd737f50L, "org.iets3.core.expr.simpleTypes"), 0x46ff3b3d86d0e6daL, "NumberLiteral"));
       quotedNode_1 = nb.getResult();
       nb.setProperty(MetaAdapterFactory.getProperty(0x6b277d9ad52d416fL, 0xa2091919bd737f50L, 0x46ff3b3d86d0e6daL, 0x46ff3b3d86d0e6ddL, "value"), "-10.85");
       return quotedNode_1;
     }
-    private static SNode _quotation_createNode_g4w43n_a0p0a0b0l71() {
+    private static SNode _quotation_createNode_g4w43n_a0p0a0b0l12() {
       SNode quotedNode_1 = null;
       SNodeBuilder nb = new SNodeBuilder(null, null).init(MetaAdapterFactory.getConcept(MetaAdapterFactory.getLanguage(0x6b277d9ad52d416fL, 0xa2091919bd737f50L, "org.iets3.core.expr.simpleTypes"), 0x46ff3b3d86d0e6daL, "NumberLiteral"));
       quotedNode_1 = nb.getResult();
       nb.setProperty(MetaAdapterFactory.getProperty(0x6b277d9ad52d416fL, 0xa2091919bd737f50L, 0x46ff3b3d86d0e6daL, 0x46ff3b3d86d0e6ddL, "value"), "10.0");
       return quotedNode_1;
     }
-    private static SNode _quotation_createNode_g4w43n_a0s0a0b0l71() {
+    private static SNode _quotation_createNode_g4w43n_a0s0a0b0l12() {
       SNode quotedNode_1 = null;
       SNodeBuilder nb = new SNodeBuilder(null, null).init(MetaAdapterFactory.getConcept(MetaAdapterFactory.getLanguage(0x6b277d9ad52d416fL, 0xa2091919bd737f50L, "org.iets3.core.expr.simpleTypes"), 0x46ff3b3d86d0e6daL, "NumberLiteral"));
       quotedNode_1 = nb.getResult();
       nb.setProperty(MetaAdapterFactory.getProperty(0x6b277d9ad52d416fL, 0xa2091919bd737f50L, 0x46ff3b3d86d0e6daL, 0x46ff3b3d86d0e6ddL, "value"), "10e+1");
       return quotedNode_1;
     }
-    private static SNode _quotation_createNode_g4w43n_a0v0a0b0l71() {
+    private static SNode _quotation_createNode_g4w43n_a0v0a0b0l12() {
       SNode quotedNode_1 = null;
       SNodeBuilder nb = new SNodeBuilder(null, null).init(MetaAdapterFactory.getConcept(MetaAdapterFactory.getLanguage(0x6b277d9ad52d416fL, 0xa2091919bd737f50L, "org.iets3.core.expr.simpleTypes"), 0x46ff3b3d86d0e6daL, "NumberLiteral"));
       quotedNode_1 = nb.getResult();
       nb.setProperty(MetaAdapterFactory.getProperty(0x6b277d9ad52d416fL, 0xa2091919bd737f50L, 0x46ff3b3d86d0e6daL, 0x46ff3b3d86d0e6ddL, "value"), "-10e+1");
       return quotedNode_1;
     }
-    private static SNode _quotation_createNode_g4w43n_a0y0a0b0l71() {
+    private static SNode _quotation_createNode_g4w43n_a0y0a0b0l12() {
       SNode quotedNode_1 = null;
       SNodeBuilder nb = new SNodeBuilder(null, null).init(MetaAdapterFactory.getConcept(MetaAdapterFactory.getLanguage(0x6b277d9ad52d416fL, 0xa2091919bd737f50L, "org.iets3.core.expr.simpleTypes"), 0x46ff3b3d86d0e6daL, "NumberLiteral"));
       quotedNode_1 = nb.getResult();
       nb.setProperty(MetaAdapterFactory.getProperty(0x6b277d9ad52d416fL, 0xa2091919bd737f50L, 0x46ff3b3d86d0e6daL, 0x46ff3b3d86d0e6ddL, "value"), "10e+1");
       return quotedNode_1;
     }
-    private static SNode _quotation_createNode_g4w43n_a0bb0a0b0l71() {
+    private static SNode _quotation_createNode_g4w43n_a0bb0a0b0l12() {
       SNode quotedNode_1 = null;
       SNodeBuilder nb = new SNodeBuilder(null, null).init(MetaAdapterFactory.getConcept(MetaAdapterFactory.getLanguage(0x6b277d9ad52d416fL, 0xa2091919bd737f50L, "org.iets3.core.expr.simpleTypes"), 0x46ff3b3d86d0e6daL, "NumberLiteral"));
       quotedNode_1 = nb.getResult();
       nb.setProperty(MetaAdapterFactory.getProperty(0x6b277d9ad52d416fL, 0xa2091919bd737f50L, 0x46ff3b3d86d0e6daL, 0x46ff3b3d86d0e6ddL, "value"), "-10e+1");
       return quotedNode_1;
     }
-    private static SNode _quotation_createNode_g4w43n_a0eb0a0b0l71() {
+    private static SNode _quotation_createNode_g4w43n_a0eb0a0b0l12() {
       SNode quotedNode_1 = null;
       SNodeBuilder nb = new SNodeBuilder(null, null).init(MetaAdapterFactory.getConcept(MetaAdapterFactory.getLanguage(0x6b277d9ad52d416fL, 0xa2091919bd737f50L, "org.iets3.core.expr.simpleTypes"), 0x46ff3b3d86d0e6daL, "NumberLiteral"));
       quotedNode_1 = nb.getResult();
       nb.setProperty(MetaAdapterFactory.getProperty(0x6b277d9ad52d416fL, 0xa2091919bd737f50L, 0x46ff3b3d86d0e6daL, 0x46ff3b3d86d0e6ddL, "value"), "10.1e+1");
       return quotedNode_1;
     }
-    private static SNode _quotation_createNode_g4w43n_a0hb0a0b0l71() {
+    private static SNode _quotation_createNode_g4w43n_a0hb0a0b0l12() {
       SNode quotedNode_1 = null;
       SNodeBuilder nb = new SNodeBuilder(null, null).init(MetaAdapterFactory.getConcept(MetaAdapterFactory.getLanguage(0x6b277d9ad52d416fL, 0xa2091919bd737f50L, "org.iets3.core.expr.simpleTypes"), 0x46ff3b3d86d0e6daL, "NumberLiteral"));
       quotedNode_1 = nb.getResult();
       nb.setProperty(MetaAdapterFactory.getProperty(0x6b277d9ad52d416fL, 0xa2091919bd737f50L, 0x46ff3b3d86d0e6daL, 0x46ff3b3d86d0e6ddL, "value"), "-10.1e+1");
       return quotedNode_1;
     }
-    private static SNode _quotation_createNode_g4w43n_a0kb0a0b0l71() {
+    private static SNode _quotation_createNode_g4w43n_a0kb0a0b0l12() {
       SNode quotedNode_1 = null;
       SNodeBuilder nb = new SNodeBuilder(null, null).init(MetaAdapterFactory.getConcept(MetaAdapterFactory.getLanguage(0x6b277d9ad52d416fL, 0xa2091919bd737f50L, "org.iets3.core.expr.simpleTypes"), 0x46ff3b3d86d0e6daL, "NumberLiteral"));
       quotedNode_1 = nb.getResult();
       nb.setProperty(MetaAdapterFactory.getProperty(0x6b277d9ad52d416fL, 0xa2091919bd737f50L, 0x46ff3b3d86d0e6daL, 0x46ff3b3d86d0e6ddL, "value"), "10.123e+1");
       return quotedNode_1;
     }
-    private static SNode _quotation_createNode_g4w43n_a0nb0a0b0l71() {
+    private static SNode _quotation_createNode_g4w43n_a0nb0a0b0l12() {
       SNode quotedNode_1 = null;
       SNodeBuilder nb = new SNodeBuilder(null, null).init(MetaAdapterFactory.getConcept(MetaAdapterFactory.getLanguage(0x6b277d9ad52d416fL, 0xa2091919bd737f50L, "org.iets3.core.expr.simpleTypes"), 0x46ff3b3d86d0e6daL, "NumberLiteral"));
       quotedNode_1 = nb.getResult();
       nb.setProperty(MetaAdapterFactory.getProperty(0x6b277d9ad52d416fL, 0xa2091919bd737f50L, 0x46ff3b3d86d0e6daL, 0x46ff3b3d86d0e6ddL, "value"), "-10.123e+1");
       return quotedNode_1;
     }
-    private static SNode _quotation_createNode_g4w43n_a0a0a0b0m71() {
+    private static SNode _quotation_createNode_g4w43n_a0a0a0b0m12() {
       SNode quotedNode_1 = null;
       SNodeBuilder nb = new SNodeBuilder(null, null).init(MetaAdapterFactory.getConcept(MetaAdapterFactory.getLanguage(0x6b277d9ad52d416fL, 0xa2091919bd737f50L, "org.iets3.core.expr.simpleTypes"), 0x46ff3b3d86d0e6daL, "NumberLiteral"));
       quotedNode_1 = nb.getResult();
       nb.setProperty(MetaAdapterFactory.getProperty(0x6b277d9ad52d416fL, 0xa2091919bd737f50L, 0x46ff3b3d86d0e6daL, 0x46ff3b3d86d0e6ddL, "value"), "0");
       return quotedNode_1;
     }
-    private static SNode _quotation_createNode_g4w43n_a0d0a0b0m71() {
+    private static SNode _quotation_createNode_g4w43n_a0d0a0b0m12() {
       SNode quotedNode_1 = null;
       SNodeBuilder nb = new SNodeBuilder(null, null).init(MetaAdapterFactory.getConcept(MetaAdapterFactory.getLanguage(0x6b277d9ad52d416fL, 0xa2091919bd737f50L, "org.iets3.core.expr.simpleTypes"), 0x46ff3b3d86d0e6daL, "NumberLiteral"));
       quotedNode_1 = nb.getResult();
       nb.setProperty(MetaAdapterFactory.getProperty(0x6b277d9ad52d416fL, 0xa2091919bd737f50L, 0x46ff3b3d86d0e6daL, 0x46ff3b3d86d0e6ddL, "value"), "10");
       return quotedNode_1;
     }
-    private static SNode _quotation_createNode_g4w43n_a0g0a0b0m71() {
+    private static SNode _quotation_createNode_g4w43n_a0g0a0b0m12() {
       SNode quotedNode_1 = null;
       SNodeBuilder nb = new SNodeBuilder(null, null).init(MetaAdapterFactory.getConcept(MetaAdapterFactory.getLanguage(0x6b277d9ad52d416fL, 0xa2091919bd737f50L, "org.iets3.core.expr.simpleTypes"), 0x46ff3b3d86d0e6daL, "NumberLiteral"));
       quotedNode_1 = nb.getResult();
       nb.setProperty(MetaAdapterFactory.getProperty(0x6b277d9ad52d416fL, 0xa2091919bd737f50L, 0x46ff3b3d86d0e6daL, 0x46ff3b3d86d0e6ddL, "value"), "-10");
       return quotedNode_1;
     }
-    private static SNode _quotation_createNode_g4w43n_a0j0a0b0m71() {
+    private static SNode _quotation_createNode_g4w43n_a0j0a0b0m12() {
       SNode quotedNode_1 = null;
       SNodeBuilder nb = new SNodeBuilder(null, null).init(MetaAdapterFactory.getConcept(MetaAdapterFactory.getLanguage(0x6b277d9ad52d416fL, 0xa2091919bd737f50L, "org.iets3.core.expr.simpleTypes"), 0x46ff3b3d86d0e6daL, "NumberLiteral"));
       quotedNode_1 = nb.getResult();
       nb.setProperty(MetaAdapterFactory.getProperty(0x6b277d9ad52d416fL, 0xa2091919bd737f50L, 0x46ff3b3d86d0e6daL, 0x46ff3b3d86d0e6ddL, "value"), "10.85");
       return quotedNode_1;
     }
-    private static SNode _quotation_createNode_g4w43n_a0m0a0b0m71() {
+    private static SNode _quotation_createNode_g4w43n_a0m0a0b0m12() {
       SNode quotedNode_1 = null;
       SNodeBuilder nb = new SNodeBuilder(null, null).init(MetaAdapterFactory.getConcept(MetaAdapterFactory.getLanguage(0x6b277d9ad52d416fL, 0xa2091919bd737f50L, "org.iets3.core.expr.simpleTypes"), 0x46ff3b3d86d0e6daL, "NumberLiteral"));
       quotedNode_1 = nb.getResult();
       nb.setProperty(MetaAdapterFactory.getProperty(0x6b277d9ad52d416fL, 0xa2091919bd737f50L, 0x46ff3b3d86d0e6daL, 0x46ff3b3d86d0e6ddL, "value"), "-10.85");
       return quotedNode_1;
     }
-    private static SNode _quotation_createNode_g4w43n_a0p0a0b0m71() {
+    private static SNode _quotation_createNode_g4w43n_a0p0a0b0m12() {
       SNode quotedNode_1 = null;
       SNodeBuilder nb = new SNodeBuilder(null, null).init(MetaAdapterFactory.getConcept(MetaAdapterFactory.getLanguage(0x6b277d9ad52d416fL, 0xa2091919bd737f50L, "org.iets3.core.expr.simpleTypes"), 0x46ff3b3d86d0e6daL, "NumberLiteral"));
       quotedNode_1 = nb.getResult();
       nb.setProperty(MetaAdapterFactory.getProperty(0x6b277d9ad52d416fL, 0xa2091919bd737f50L, 0x46ff3b3d86d0e6daL, 0x46ff3b3d86d0e6ddL, "value"), "10.0");
       return quotedNode_1;
     }
-    private static SNode _quotation_createNode_g4w43n_a0s0a0b0m71() {
+    private static SNode _quotation_createNode_g4w43n_a0s0a0b0m12() {
       SNode quotedNode_1 = null;
       SNodeBuilder nb = new SNodeBuilder(null, null).init(MetaAdapterFactory.getConcept(MetaAdapterFactory.getLanguage(0x6b277d9ad52d416fL, 0xa2091919bd737f50L, "org.iets3.core.expr.simpleTypes"), 0x46ff3b3d86d0e6daL, "NumberLiteral"));
       quotedNode_1 = nb.getResult();
       nb.setProperty(MetaAdapterFactory.getProperty(0x6b277d9ad52d416fL, 0xa2091919bd737f50L, 0x46ff3b3d86d0e6daL, 0x46ff3b3d86d0e6ddL, "value"), "10e+1");
       return quotedNode_1;
     }
-    private static SNode _quotation_createNode_g4w43n_a0v0a0b0m71() {
+    private static SNode _quotation_createNode_g4w43n_a0v0a0b0m12() {
       SNode quotedNode_1 = null;
       SNodeBuilder nb = new SNodeBuilder(null, null).init(MetaAdapterFactory.getConcept(MetaAdapterFactory.getLanguage(0x6b277d9ad52d416fL, 0xa2091919bd737f50L, "org.iets3.core.expr.simpleTypes"), 0x46ff3b3d86d0e6daL, "NumberLiteral"));
       quotedNode_1 = nb.getResult();
       nb.setProperty(MetaAdapterFactory.getProperty(0x6b277d9ad52d416fL, 0xa2091919bd737f50L, 0x46ff3b3d86d0e6daL, 0x46ff3b3d86d0e6ddL, "value"), "-10e+1");
       return quotedNode_1;
     }
-    private static SNode _quotation_createNode_g4w43n_a0y0a0b0m71() {
+    private static SNode _quotation_createNode_g4w43n_a0y0a0b0m12() {
       SNode quotedNode_1 = null;
       SNodeBuilder nb = new SNodeBuilder(null, null).init(MetaAdapterFactory.getConcept(MetaAdapterFactory.getLanguage(0x6b277d9ad52d416fL, 0xa2091919bd737f50L, "org.iets3.core.expr.simpleTypes"), 0x46ff3b3d86d0e6daL, "NumberLiteral"));
       quotedNode_1 = nb.getResult();
       nb.setProperty(MetaAdapterFactory.getProperty(0x6b277d9ad52d416fL, 0xa2091919bd737f50L, 0x46ff3b3d86d0e6daL, 0x46ff3b3d86d0e6ddL, "value"), "10e+1");
       return quotedNode_1;
     }
-    private static SNode _quotation_createNode_g4w43n_a0bb0a0b0m71() {
+    private static SNode _quotation_createNode_g4w43n_a0bb0a0b0m12() {
       SNode quotedNode_1 = null;
       SNodeBuilder nb = new SNodeBuilder(null, null).init(MetaAdapterFactory.getConcept(MetaAdapterFactory.getLanguage(0x6b277d9ad52d416fL, 0xa2091919bd737f50L, "org.iets3.core.expr.simpleTypes"), 0x46ff3b3d86d0e6daL, "NumberLiteral"));
       quotedNode_1 = nb.getResult();
       nb.setProperty(MetaAdapterFactory.getProperty(0x6b277d9ad52d416fL, 0xa2091919bd737f50L, 0x46ff3b3d86d0e6daL, 0x46ff3b3d86d0e6ddL, "value"), "-10e+1");
       return quotedNode_1;
     }
-    private static SNode _quotation_createNode_g4w43n_a0eb0a0b0m71() {
+    private static SNode _quotation_createNode_g4w43n_a0eb0a0b0m12() {
       SNode quotedNode_1 = null;
       SNodeBuilder nb = new SNodeBuilder(null, null).init(MetaAdapterFactory.getConcept(MetaAdapterFactory.getLanguage(0x6b277d9ad52d416fL, 0xa2091919bd737f50L, "org.iets3.core.expr.simpleTypes"), 0x46ff3b3d86d0e6daL, "NumberLiteral"));
       quotedNode_1 = nb.getResult();
       nb.setProperty(MetaAdapterFactory.getProperty(0x6b277d9ad52d416fL, 0xa2091919bd737f50L, 0x46ff3b3d86d0e6daL, 0x46ff3b3d86d0e6ddL, "value"), "10.1e+1");
       return quotedNode_1;
     }
-    private static SNode _quotation_createNode_g4w43n_a0hb0a0b0m71() {
+    private static SNode _quotation_createNode_g4w43n_a0hb0a0b0m12() {
       SNode quotedNode_1 = null;
       SNodeBuilder nb = new SNodeBuilder(null, null).init(MetaAdapterFactory.getConcept(MetaAdapterFactory.getLanguage(0x6b277d9ad52d416fL, 0xa2091919bd737f50L, "org.iets3.core.expr.simpleTypes"), 0x46ff3b3d86d0e6daL, "NumberLiteral"));
       quotedNode_1 = nb.getResult();
       nb.setProperty(MetaAdapterFactory.getProperty(0x6b277d9ad52d416fL, 0xa2091919bd737f50L, 0x46ff3b3d86d0e6daL, 0x46ff3b3d86d0e6ddL, "value"), "-10.1e+1");
       return quotedNode_1;
     }
-    private static SNode _quotation_createNode_g4w43n_a0kb0a0b0m71() {
+    private static SNode _quotation_createNode_g4w43n_a0kb0a0b0m12() {
       SNode quotedNode_1 = null;
       SNodeBuilder nb = new SNodeBuilder(null, null).init(MetaAdapterFactory.getConcept(MetaAdapterFactory.getLanguage(0x6b277d9ad52d416fL, 0xa2091919bd737f50L, "org.iets3.core.expr.simpleTypes"), 0x46ff3b3d86d0e6daL, "NumberLiteral"));
       quotedNode_1 = nb.getResult();
       nb.setProperty(MetaAdapterFactory.getProperty(0x6b277d9ad52d416fL, 0xa2091919bd737f50L, 0x46ff3b3d86d0e6daL, 0x46ff3b3d86d0e6ddL, "value"), "10.123e+1");
       return quotedNode_1;
     }
-    private static SNode _quotation_createNode_g4w43n_a0nb0a0b0m71() {
+    private static SNode _quotation_createNode_g4w43n_a0nb0a0b0m12() {
       SNode quotedNode_1 = null;
       SNodeBuilder nb = new SNodeBuilder(null, null).init(MetaAdapterFactory.getConcept(MetaAdapterFactory.getLanguage(0x6b277d9ad52d416fL, 0xa2091919bd737f50L, "org.iets3.core.expr.simpleTypes"), 0x46ff3b3d86d0e6daL, "NumberLiteral"));
       quotedNode_1 = nb.getResult();
       nb.setProperty(MetaAdapterFactory.getProperty(0x6b277d9ad52d416fL, 0xa2091919bd737f50L, 0x46ff3b3d86d0e6daL, 0x46ff3b3d86d0e6ddL, "value"), "-10.123e+1");
       return quotedNode_1;
     }
-    private static SNode _quotation_createNode_g4w43n_a1a0a1a31r() {
+    private static SNode _quotation_createNode_g4w43n_a1a0a1a31v() {
       SNode quotedNode_1 = null;
       SNodeBuilder nb = new SNodeBuilder(null, null).init(MetaAdapterFactory.getConcept(MetaAdapterFactory.getLanguage(0x6b277d9ad52d416fL, 0xa2091919bd737f50L, "org.iets3.core.expr.simpleTypes"), 0x46ff3b3d86d0e6daL, "NumberLiteral"));
       quotedNode_1 = nb.getResult();
       nb.setProperty(MetaAdapterFactory.getProperty(0x6b277d9ad52d416fL, 0xa2091919bd737f50L, 0x46ff3b3d86d0e6daL, 0x46ff3b3d86d0e6ddL, "value"), "0e5");
       return quotedNode_1;
     }
-    private static SNode _quotation_createNode_g4w43n_a0b0a0b0n71() {
+    private static SNode _quotation_createNode_g4w43n_a0b0a0b0n12() {
       SNode quotedNode_1 = null;
       SNodeBuilder nb = new SNodeBuilder(null, null).init(MetaAdapterFactory.getConcept(MetaAdapterFactory.getLanguage(0x6b277d9ad52d416fL, 0xa2091919bd737f50L, "org.iets3.core.expr.simpleTypes"), 0x46ff3b3d86d0e6daL, "NumberLiteral"));
       quotedNode_1 = nb.getResult();
       nb.setProperty(MetaAdapterFactory.getProperty(0x6b277d9ad52d416fL, 0xa2091919bd737f50L, 0x46ff3b3d86d0e6daL, 0x46ff3b3d86d0e6ddL, "value"), "0e5");
       return quotedNode_1;
     }
-    private static SNode _quotation_createNode_g4w43n_a2a0a1a31r() {
+    private static SNode _quotation_createNode_g4w43n_a2a0a1a31v() {
       SNode quotedNode_1 = null;
       SNodeBuilder nb = new SNodeBuilder(null, null).init(MetaAdapterFactory.getConcept(MetaAdapterFactory.getLanguage(0x6b277d9ad52d416fL, 0xa2091919bd737f50L, "org.iets3.core.expr.simpleTypes"), 0x46ff3b3d86d0e6daL, "NumberLiteral"));
       quotedNode_1 = nb.getResult();
       nb.setProperty(MetaAdapterFactory.getProperty(0x6b277d9ad52d416fL, 0xa2091919bd737f50L, 0x46ff3b3d86d0e6daL, 0x46ff3b3d86d0e6ddL, "value"), "-0e5");
       return quotedNode_1;
     }
-    private static SNode _quotation_createNode_g4w43n_a0c0a0b0n71() {
+    private static SNode _quotation_createNode_g4w43n_a0c0a0b0n12() {
       SNode quotedNode_1 = null;
       SNodeBuilder nb = new SNodeBuilder(null, null).init(MetaAdapterFactory.getConcept(MetaAdapterFactory.getLanguage(0x6b277d9ad52d416fL, 0xa2091919bd737f50L, "org.iets3.core.expr.simpleTypes"), 0x46ff3b3d86d0e6daL, "NumberLiteral"));
       quotedNode_1 = nb.getResult();
       nb.setProperty(MetaAdapterFactory.getProperty(0x6b277d9ad52d416fL, 0xa2091919bd737f50L, 0x46ff3b3d86d0e6daL, 0x46ff3b3d86d0e6ddL, "value"), "-0e5");
       return quotedNode_1;
     }
-    private static SNode _quotation_createNode_g4w43n_a3a0a1a31r() {
+    private static SNode _quotation_createNode_g4w43n_a3a0a1a31v() {
       SNode quotedNode_1 = null;
       SNodeBuilder nb = new SNodeBuilder(null, null).init(MetaAdapterFactory.getConcept(MetaAdapterFactory.getLanguage(0x6b277d9ad52d416fL, 0xa2091919bd737f50L, "org.iets3.core.expr.simpleTypes"), 0x46ff3b3d86d0e6daL, "NumberLiteral"));
       quotedNode_1 = nb.getResult();
       nb.setProperty(MetaAdapterFactory.getProperty(0x6b277d9ad52d416fL, 0xa2091919bd737f50L, 0x46ff3b3d86d0e6daL, 0x46ff3b3d86d0e6ddL, "value"), ".0e5");
       return quotedNode_1;
     }
-    private static SNode _quotation_createNode_g4w43n_a0d0a0b0n71() {
+    private static SNode _quotation_createNode_g4w43n_a0d0a0b0n12() {
       SNode quotedNode_1 = null;
       SNodeBuilder nb = new SNodeBuilder(null, null).init(MetaAdapterFactory.getConcept(MetaAdapterFactory.getLanguage(0x6b277d9ad52d416fL, 0xa2091919bd737f50L, "org.iets3.core.expr.simpleTypes"), 0x46ff3b3d86d0e6daL, "NumberLiteral"));
       quotedNode_1 = nb.getResult();
       nb.setProperty(MetaAdapterFactory.getProperty(0x6b277d9ad52d416fL, 0xa2091919bd737f50L, 0x46ff3b3d86d0e6daL, 0x46ff3b3d86d0e6ddL, "value"), ".0e5");
       return quotedNode_1;
     }
-    private static SNode _quotation_createNode_g4w43n_a4a0a1a31r() {
+    private static SNode _quotation_createNode_g4w43n_a4a0a1a31v() {
       SNode quotedNode_1 = null;
       SNodeBuilder nb = new SNodeBuilder(null, null).init(MetaAdapterFactory.getConcept(MetaAdapterFactory.getLanguage(0x6b277d9ad52d416fL, 0xa2091919bd737f50L, "org.iets3.core.expr.simpleTypes"), 0x46ff3b3d86d0e6daL, "NumberLiteral"));
       quotedNode_1 = nb.getResult();
       nb.setProperty(MetaAdapterFactory.getProperty(0x6b277d9ad52d416fL, 0xa2091919bd737f50L, 0x46ff3b3d86d0e6daL, 0x46ff3b3d86d0e6ddL, "value"), "-.0e5");
       return quotedNode_1;
     }
-    private static SNode _quotation_createNode_g4w43n_a0e0a0b0n71() {
+    private static SNode _quotation_createNode_g4w43n_a0e0a0b0n12() {
       SNode quotedNode_1 = null;
       SNodeBuilder nb = new SNodeBuilder(null, null).init(MetaAdapterFactory.getConcept(MetaAdapterFactory.getLanguage(0x6b277d9ad52d416fL, 0xa2091919bd737f50L, "org.iets3.core.expr.simpleTypes"), 0x46ff3b3d86d0e6daL, "NumberLiteral"));
       quotedNode_1 = nb.getResult();
       nb.setProperty(MetaAdapterFactory.getProperty(0x6b277d9ad52d416fL, 0xa2091919bd737f50L, 0x46ff3b3d86d0e6daL, 0x46ff3b3d86d0e6ddL, "value"), "-.0e5");
       return quotedNode_1;
     }
-    private static SNode _quotation_createNode_g4w43n_a5a0a1a31r() {
+    private static SNode _quotation_createNode_g4w43n_a5a0a1a31v() {
       SNode quotedNode_1 = null;
       SNodeBuilder nb = new SNodeBuilder(null, null).init(MetaAdapterFactory.getConcept(MetaAdapterFactory.getLanguage(0x6b277d9ad52d416fL, 0xa2091919bd737f50L, "org.iets3.core.expr.simpleTypes"), 0x46ff3b3d86d0e6daL, "NumberLiteral"));
       quotedNode_1 = nb.getResult();
       nb.setProperty(MetaAdapterFactory.getProperty(0x6b277d9ad52d416fL, 0xa2091919bd737f50L, 0x46ff3b3d86d0e6daL, 0x46ff3b3d86d0e6ddL, "value"), "123.0e5");
       return quotedNode_1;
     }
-    private static SNode _quotation_createNode_g4w43n_a0f0a0b0n71() {
+    private static SNode _quotation_createNode_g4w43n_a0f0a0b0n12() {
       SNode quotedNode_1 = null;
       SNodeBuilder nb = new SNodeBuilder(null, null).init(MetaAdapterFactory.getConcept(MetaAdapterFactory.getLanguage(0x6b277d9ad52d416fL, 0xa2091919bd737f50L, "org.iets3.core.expr.simpleTypes"), 0x46ff3b3d86d0e6daL, "NumberLiteral"));
       quotedNode_1 = nb.getResult();
       nb.setProperty(MetaAdapterFactory.getProperty(0x6b277d9ad52d416fL, 0xa2091919bd737f50L, 0x46ff3b3d86d0e6daL, 0x46ff3b3d86d0e6ddL, "value"), "123.0e5");
       return quotedNode_1;
     }
-    private static SNode _quotation_createNode_g4w43n_a6a0a1a31r() {
+    private static SNode _quotation_createNode_g4w43n_a6a0a1a31v() {
       SNode quotedNode_1 = null;
       SNodeBuilder nb = new SNodeBuilder(null, null).init(MetaAdapterFactory.getConcept(MetaAdapterFactory.getLanguage(0x6b277d9ad52d416fL, 0xa2091919bd737f50L, "org.iets3.core.expr.simpleTypes"), 0x46ff3b3d86d0e6daL, "NumberLiteral"));
       quotedNode_1 = nb.getResult();
       nb.setProperty(MetaAdapterFactory.getProperty(0x6b277d9ad52d416fL, 0xa2091919bd737f50L, 0x46ff3b3d86d0e6daL, 0x46ff3b3d86d0e6ddL, "value"), "-123.0e5");
       return quotedNode_1;
     }
-    private static SNode _quotation_createNode_g4w43n_a0g0a0b0n71() {
+    private static SNode _quotation_createNode_g4w43n_a0g0a0b0n12() {
       SNode quotedNode_1 = null;
       SNodeBuilder nb = new SNodeBuilder(null, null).init(MetaAdapterFactory.getConcept(MetaAdapterFactory.getLanguage(0x6b277d9ad52d416fL, 0xa2091919bd737f50L, "org.iets3.core.expr.simpleTypes"), 0x46ff3b3d86d0e6daL, "NumberLiteral"));
       quotedNode_1 = nb.getResult();
       nb.setProperty(MetaAdapterFactory.getProperty(0x6b277d9ad52d416fL, 0xa2091919bd737f50L, 0x46ff3b3d86d0e6daL, 0x46ff3b3d86d0e6ddL, "value"), "-123.0e5");
       return quotedNode_1;
     }
-    private static SNode _quotation_createNode_g4w43n_a8a0a1a31r() {
+    private static SNode _quotation_createNode_g4w43n_a8a0a1a31v() {
       SNode quotedNode_1 = null;
       SNodeBuilder nb = new SNodeBuilder(null, null).init(MetaAdapterFactory.getConcept(MetaAdapterFactory.getLanguage(0x6b277d9ad52d416fL, 0xa2091919bd737f50L, "org.iets3.core.expr.simpleTypes"), 0x46ff3b3d86d0e6daL, "NumberLiteral"));
       quotedNode_1 = nb.getResult();
       nb.setProperty(MetaAdapterFactory.getProperty(0x6b277d9ad52d416fL, 0xa2091919bd737f50L, 0x46ff3b3d86d0e6daL, 0x46ff3b3d86d0e6ddL, "value"), "0");
       return quotedNode_1;
     }
-    private static SNode _quotation_createNode_g4w43n_a0i0a0b0n71() {
+    private static SNode _quotation_createNode_g4w43n_a0i0a0b0n12() {
       SNode quotedNode_1 = null;
       SNodeBuilder nb = new SNodeBuilder(null, null).init(MetaAdapterFactory.getConcept(MetaAdapterFactory.getLanguage(0x6b277d9ad52d416fL, 0xa2091919bd737f50L, "org.iets3.core.expr.simpleTypes"), 0x46ff3b3d86d0e6daL, "NumberLiteral"));
       quotedNode_1 = nb.getResult();
       nb.setProperty(MetaAdapterFactory.getProperty(0x6b277d9ad52d416fL, 0xa2091919bd737f50L, 0x46ff3b3d86d0e6daL, 0x46ff3b3d86d0e6ddL, "value"), "0");
       return quotedNode_1;
     }
-    private static SNode _quotation_createNode_g4w43n_a9a0a1a31r() {
+    private static SNode _quotation_createNode_g4w43n_a9a0a1a31v() {
       SNode quotedNode_1 = null;
       SNodeBuilder nb = new SNodeBuilder(null, null).init(MetaAdapterFactory.getConcept(MetaAdapterFactory.getLanguage(0x6b277d9ad52d416fL, 0xa2091919bd737f50L, "org.iets3.core.expr.simpleTypes"), 0x46ff3b3d86d0e6daL, "NumberLiteral"));
       quotedNode_1 = nb.getResult();
       nb.setProperty(MetaAdapterFactory.getProperty(0x6b277d9ad52d416fL, 0xa2091919bd737f50L, 0x46ff3b3d86d0e6daL, 0x46ff3b3d86d0e6ddL, "value"), "10");
       return quotedNode_1;
     }
-    private static SNode _quotation_createNode_g4w43n_a0j0a0b0n71() {
+    private static SNode _quotation_createNode_g4w43n_a0j0a0b0n12() {
       SNode quotedNode_1 = null;
       SNodeBuilder nb = new SNodeBuilder(null, null).init(MetaAdapterFactory.getConcept(MetaAdapterFactory.getLanguage(0x6b277d9ad52d416fL, 0xa2091919bd737f50L, "org.iets3.core.expr.simpleTypes"), 0x46ff3b3d86d0e6daL, "NumberLiteral"));
       quotedNode_1 = nb.getResult();
       nb.setProperty(MetaAdapterFactory.getProperty(0x6b277d9ad52d416fL, 0xa2091919bd737f50L, 0x46ff3b3d86d0e6daL, 0x46ff3b3d86d0e6ddL, "value"), "10");
       return quotedNode_1;
     }
-    private static SNode _quotation_createNode_g4w43n_a01a0a1a31r() {
+    private static SNode _quotation_createNode_g4w43n_a01a0a1a31v() {
       SNode quotedNode_1 = null;
       SNodeBuilder nb = new SNodeBuilder(null, null).init(MetaAdapterFactory.getConcept(MetaAdapterFactory.getLanguage(0x6b277d9ad52d416fL, 0xa2091919bd737f50L, "org.iets3.core.expr.simpleTypes"), 0x46ff3b3d86d0e6daL, "NumberLiteral"));
       quotedNode_1 = nb.getResult();
       nb.setProperty(MetaAdapterFactory.getProperty(0x6b277d9ad52d416fL, 0xa2091919bd737f50L, 0x46ff3b3d86d0e6daL, 0x46ff3b3d86d0e6ddL, "value"), "-10");
       return quotedNode_1;
     }
-    private static SNode _quotation_createNode_g4w43n_a0k0a0b0n71() {
+    private static SNode _quotation_createNode_g4w43n_a0k0a0b0n12() {
       SNode quotedNode_1 = null;
       SNodeBuilder nb = new SNodeBuilder(null, null).init(MetaAdapterFactory.getConcept(MetaAdapterFactory.getLanguage(0x6b277d9ad52d416fL, 0xa2091919bd737f50L, "org.iets3.core.expr.simpleTypes"), 0x46ff3b3d86d0e6daL, "NumberLiteral"));
       quotedNode_1 = nb.getResult();
       nb.setProperty(MetaAdapterFactory.getProperty(0x6b277d9ad52d416fL, 0xa2091919bd737f50L, 0x46ff3b3d86d0e6daL, 0x46ff3b3d86d0e6ddL, "value"), "-10");
       return quotedNode_1;
     }
-    private static SNode _quotation_createNode_g4w43n_a11a0a1a31r() {
+    private static SNode _quotation_createNode_g4w43n_a11a0a1a31v() {
       SNode quotedNode_1 = null;
       SNodeBuilder nb = new SNodeBuilder(null, null).init(MetaAdapterFactory.getConcept(MetaAdapterFactory.getLanguage(0x6b277d9ad52d416fL, 0xa2091919bd737f50L, "org.iets3.core.expr.simpleTypes"), 0x46ff3b3d86d0e6daL, "NumberLiteral"));
       quotedNode_1 = nb.getResult();
       nb.setProperty(MetaAdapterFactory.getProperty(0x6b277d9ad52d416fL, 0xa2091919bd737f50L, 0x46ff3b3d86d0e6daL, 0x46ff3b3d86d0e6ddL, "value"), "10.");
       return quotedNode_1;
     }
-    private static SNode _quotation_createNode_g4w43n_a0l0a0b0n71() {
+    private static SNode _quotation_createNode_g4w43n_a0l0a0b0n12() {
       SNode quotedNode_1 = null;
       SNodeBuilder nb = new SNodeBuilder(null, null).init(MetaAdapterFactory.getConcept(MetaAdapterFactory.getLanguage(0x6b277d9ad52d416fL, 0xa2091919bd737f50L, "org.iets3.core.expr.simpleTypes"), 0x46ff3b3d86d0e6daL, "NumberLiteral"));
       quotedNode_1 = nb.getResult();
       nb.setProperty(MetaAdapterFactory.getProperty(0x6b277d9ad52d416fL, 0xa2091919bd737f50L, 0x46ff3b3d86d0e6daL, 0x46ff3b3d86d0e6ddL, "value"), "10.");
       return quotedNode_1;
     }
-    private static SNode _quotation_createNode_g4w43n_a21a0a1a31r() {
+    private static SNode _quotation_createNode_g4w43n_a21a0a1a31v() {
       SNode quotedNode_1 = null;
       SNodeBuilder nb = new SNodeBuilder(null, null).init(MetaAdapterFactory.getConcept(MetaAdapterFactory.getLanguage(0x6b277d9ad52d416fL, 0xa2091919bd737f50L, "org.iets3.core.expr.simpleTypes"), 0x46ff3b3d86d0e6daL, "NumberLiteral"));
       quotedNode_1 = nb.getResult();
       nb.setProperty(MetaAdapterFactory.getProperty(0x6b277d9ad52d416fL, 0xa2091919bd737f50L, 0x46ff3b3d86d0e6daL, 0x46ff3b3d86d0e6ddL, "value"), "-10.");
       return quotedNode_1;
     }
-    private static SNode _quotation_createNode_g4w43n_a0m0a0b0n71() {
+    private static SNode _quotation_createNode_g4w43n_a0m0a0b0n12() {
       SNode quotedNode_1 = null;
       SNodeBuilder nb = new SNodeBuilder(null, null).init(MetaAdapterFactory.getConcept(MetaAdapterFactory.getLanguage(0x6b277d9ad52d416fL, 0xa2091919bd737f50L, "org.iets3.core.expr.simpleTypes"), 0x46ff3b3d86d0e6daL, "NumberLiteral"));
       quotedNode_1 = nb.getResult();
       nb.setProperty(MetaAdapterFactory.getProperty(0x6b277d9ad52d416fL, 0xa2091919bd737f50L, 0x46ff3b3d86d0e6daL, 0x46ff3b3d86d0e6ddL, "value"), "-10.");
       return quotedNode_1;
     }
-    private static SNode _quotation_createNode_g4w43n_a41a0a1a31r() {
+    private static SNode _quotation_createNode_g4w43n_a41a0a1a31v() {
       SNode quotedNode_1 = null;
       SNodeBuilder nb = new SNodeBuilder(null, null).init(MetaAdapterFactory.getConcept(MetaAdapterFactory.getLanguage(0x6b277d9ad52d416fL, 0xa2091919bd737f50L, "org.iets3.core.expr.simpleTypes"), 0x46ff3b3d86d0e6daL, "NumberLiteral"));
       quotedNode_1 = nb.getResult();
       nb.setProperty(MetaAdapterFactory.getProperty(0x6b277d9ad52d416fL, 0xa2091919bd737f50L, 0x46ff3b3d86d0e6daL, 0x46ff3b3d86d0e6ddL, "value"), "10.0e1");
       return quotedNode_1;
     }
-    private static SNode _quotation_createNode_g4w43n_a0o0a0b0n71() {
+    private static SNode _quotation_createNode_g4w43n_a0o0a0b0n12() {
       SNode quotedNode_1 = null;
       SNodeBuilder nb = new SNodeBuilder(null, null).init(MetaAdapterFactory.getConcept(MetaAdapterFactory.getLanguage(0x6b277d9ad52d416fL, 0xa2091919bd737f50L, "org.iets3.core.expr.simpleTypes"), 0x46ff3b3d86d0e6daL, "NumberLiteral"));
       quotedNode_1 = nb.getResult();
       nb.setProperty(MetaAdapterFactory.getProperty(0x6b277d9ad52d416fL, 0xa2091919bd737f50L, 0x46ff3b3d86d0e6daL, 0x46ff3b3d86d0e6ddL, "value"), "10.0e1");
       return quotedNode_1;
     }
-    private static SNode _quotation_createNode_g4w43n_a51a0a1a31r() {
+    private static SNode _quotation_createNode_g4w43n_a51a0a1a31v() {
       SNode quotedNode_1 = null;
       SNodeBuilder nb = new SNodeBuilder(null, null).init(MetaAdapterFactory.getConcept(MetaAdapterFactory.getLanguage(0x6b277d9ad52d416fL, 0xa2091919bd737f50L, "org.iets3.core.expr.simpleTypes"), 0x46ff3b3d86d0e6daL, "NumberLiteral"));
       quotedNode_1 = nb.getResult();
       nb.setProperty(MetaAdapterFactory.getProperty(0x6b277d9ad52d416fL, 0xa2091919bd737f50L, 0x46ff3b3d86d0e6daL, 0x46ff3b3d86d0e6ddL, "value"), "-10.0e1");
       return quotedNode_1;
     }
-    private static SNode _quotation_createNode_g4w43n_a0p0a0b0n71() {
+    private static SNode _quotation_createNode_g4w43n_a0p0a0b0n12() {
       SNode quotedNode_1 = null;
       SNodeBuilder nb = new SNodeBuilder(null, null).init(MetaAdapterFactory.getConcept(MetaAdapterFactory.getLanguage(0x6b277d9ad52d416fL, 0xa2091919bd737f50L, "org.iets3.core.expr.simpleTypes"), 0x46ff3b3d86d0e6daL, "NumberLiteral"));
       quotedNode_1 = nb.getResult();
       nb.setProperty(MetaAdapterFactory.getProperty(0x6b277d9ad52d416fL, 0xa2091919bd737f50L, 0x46ff3b3d86d0e6daL, 0x46ff3b3d86d0e6ddL, "value"), "-10.0e1");
       return quotedNode_1;
     }
-    private static SNode _quotation_createNode_g4w43n_a61a0a1a31r() {
+    private static SNode _quotation_createNode_g4w43n_a61a0a1a31v() {
       SNode quotedNode_1 = null;
       SNodeBuilder nb = new SNodeBuilder(null, null).init(MetaAdapterFactory.getConcept(MetaAdapterFactory.getLanguage(0x6b277d9ad52d416fL, 0xa2091919bd737f50L, "org.iets3.core.expr.simpleTypes"), 0x46ff3b3d86d0e6daL, "NumberLiteral"));
       quotedNode_1 = nb.getResult();
       nb.setProperty(MetaAdapterFactory.getProperty(0x6b277d9ad52d416fL, 0xa2091919bd737f50L, 0x46ff3b3d86d0e6daL, 0x46ff3b3d86d0e6ddL, "value"), ".1e1");
       return quotedNode_1;
     }
-    private static SNode _quotation_createNode_g4w43n_a0q0a0b0n71() {
+    private static SNode _quotation_createNode_g4w43n_a0q0a0b0n12() {
       SNode quotedNode_1 = null;
       SNodeBuilder nb = new SNodeBuilder(null, null).init(MetaAdapterFactory.getConcept(MetaAdapterFactory.getLanguage(0x6b277d9ad52d416fL, 0xa2091919bd737f50L, "org.iets3.core.expr.simpleTypes"), 0x46ff3b3d86d0e6daL, "NumberLiteral"));
       quotedNode_1 = nb.getResult();
       nb.setProperty(MetaAdapterFactory.getProperty(0x6b277d9ad52d416fL, 0xa2091919bd737f50L, 0x46ff3b3d86d0e6daL, 0x46ff3b3d86d0e6ddL, "value"), ".1e1");
       return quotedNode_1;
     }
-    private static SNode _quotation_createNode_g4w43n_a71a0a1a31r() {
+    private static SNode _quotation_createNode_g4w43n_a71a0a1a31v() {
       SNode quotedNode_1 = null;
       SNodeBuilder nb = new SNodeBuilder(null, null).init(MetaAdapterFactory.getConcept(MetaAdapterFactory.getLanguage(0x6b277d9ad52d416fL, 0xa2091919bd737f50L, "org.iets3.core.expr.simpleTypes"), 0x46ff3b3d86d0e6daL, "NumberLiteral"));
       quotedNode_1 = nb.getResult();
       nb.setProperty(MetaAdapterFactory.getProperty(0x6b277d9ad52d416fL, 0xa2091919bd737f50L, 0x46ff3b3d86d0e6daL, 0x46ff3b3d86d0e6ddL, "value"), "-.1e1");
       return quotedNode_1;
     }
-    private static SNode _quotation_createNode_g4w43n_a0r0a0b0n71() {
+    private static SNode _quotation_createNode_g4w43n_a0r0a0b0n12() {
       SNode quotedNode_1 = null;
       SNodeBuilder nb = new SNodeBuilder(null, null).init(MetaAdapterFactory.getConcept(MetaAdapterFactory.getLanguage(0x6b277d9ad52d416fL, 0xa2091919bd737f50L, "org.iets3.core.expr.simpleTypes"), 0x46ff3b3d86d0e6daL, "NumberLiteral"));
       quotedNode_1 = nb.getResult();

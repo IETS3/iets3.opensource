@@ -131,7 +131,15 @@ public class TypesystemDescriptor extends BaseHelginsDescriptor {
       this.myInequationReplacementRules.add(eliminationRule);
     }
     {
+      InequationReplacementRule_Runtime eliminationRule = new replaceIntegerType_InequationReplacementRule();
+      this.myInequationReplacementRules.add(eliminationRule);
+    }
+    {
       InequationReplacementRule_Runtime eliminationRule = new replaceNumberTypes_InequationReplacementRule();
+      this.myInequationReplacementRules.add(eliminationRule);
+    }
+    {
+      InequationReplacementRule_Runtime eliminationRule = new replaceRealType_InequationReplacementRule();
       this.myInequationReplacementRules.add(eliminationRule);
     }
     {
