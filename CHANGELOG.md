@@ -13,11 +13,12 @@ The project does _not_ follow Semantic Versioning and the changes are documented
   - presence condition in artifact
   - left-hand-side condition in an ITabularVarPoint
 - Allow to set `reportsFilenamePrefix` for the `ICustomRunnerConfig` interface
+- Support vertical layout of enum declarations without values
 
 ### Changed
 
 - Variability: The automatic execution of solver checking for tabular variation points (eg. feature decision tables) has been switched off. Now the solver check can be executed manually via "Run/Evaluate/Check manually" from the context menu. We will work on improving stability and performance for this feature and plan to reactivate it back later.
-
+- Enhanced compatibility between number and int/real types
 
 ## March 2026
 
