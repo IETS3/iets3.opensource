@@ -6,6 +6,8 @@ import org.jetbrains.mps.openapi.model.SNode;
 import jetbrains.mps.typesystem.inference.TypeCheckingContext;
 import jetbrains.mps.errors.messageTargets.MessageTarget;
 import jetbrains.mps.errors.messageTargets.NodeMessageTarget;
+import jetbrains.mps.internal.collections.runtime.Sequence;
+import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
 
 public interface ForAllVariantsContext {
   default void reportWarning(SNode n, String message) {
@@ -13,9 +15,28 @@ public interface ForAllVariantsContext {
   default void reportInfo(SNode n, String message) {
   }
 
+  default boolean canDoMulticheck(Iterable<SNode> group) {
+    return true;
+  }
+
   static ForAllVariantsContext make(final TypeCheckingContext tcc) {
     return new ForAllVariantsContext() {
       private final MessageTarget errorTarget = new NodeMessageTarget();
+
+      @Override
+      public boolean canDoMulticheck(Iterable<SNode> group) {
+        // if the group's members are embedded in a testcase, they will be stored in same MPS root (the testcase)
+        // (in that case, the typesystem will work properly and the check can be done although it involves multiple IVAAs)
+        Iterable<SNode> involvedRoots = Sequence.fromIterable(group).select((it) -> SNodeOperations.getContainingRoot(it)).distinct();
+        if (Sequence.fromIterable(involvedRoots).count() == 1) {
+          return true;
+        }
+
+        // if more than one root, there likely will be problems with interpreting presence conditions if called during "Check Model" (then the interpreter can only get types for the root node of the node under check)
+        TypeCheckingContext.NonTypesystemComputationMode mode = tcc.getNonTypesystemComputationMode();
+        boolean duringCheckModel = mode != TypeCheckingContext.NonTypesystemComputationMode.ON_THE_FLY;
+        return !(duringCheckModel);
+      }
 
       @Override
       public void reportInfo(SNode n, String message) {

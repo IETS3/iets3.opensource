@@ -18,6 +18,10 @@ The project does _not_ follow Semantic Versioning and the changes are documented
 
 - Variability: The automatic execution of solver checking for tabular variation points (eg. feature decision tables) has been switched off. Now the solver check can be executed manually via "Run/Evaluate/Check manually" from the context menu. We will work on improving stability and performance for this feature and plan to reactivate it back later.
 
+### Fixed
+
+- Variability: Restored workaround for using for-all-variants checking rules outside the IDE (e.g., on a build server). Due to MPS-34340, the for-all-variants checking cannot be done outside the IDE if the model under check has more than one root nodes.
+
 
 ## March 2026
 
