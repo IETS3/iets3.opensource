@@ -381,6 +381,75 @@
       <unit id="3215608712597185747" at="14,0,62,0" name="test.org.iets3.variability.configuration.base.inheritance.InheritanceWithConfigRefs_Test" />
     </file>
   </root>
+  <root nodeRef="r:67b8c8a1-c2c2-4db8-bb17-956b347d6975(test.org.iets3.variability.configuration.base.inheritance@tests)/3583423826988754593">
+    <file name="TestIdempotency_Test.java">
+      <node id="3583423826988754593" at="19,33,20,60" concept="11" />
+      <node id="3583423826988874488" at="24,63,25,54" concept="2" />
+      <node id="3583423826990347890" at="28,68,29,59" concept="2" />
+      <node id="3583423826988754593" at="34,52,35,19" concept="11" />
+      <node id="3583423826988754593" at="39,36,40,46" concept="2" />
+      <node id="3583423826988874488" at="43,65,44,22" concept="2" />
+      <node id="3583423826988874488" at="44,22,45,146" concept="2" />
+      <node id="3583423826990347890" at="47,70,48,22" concept="2" />
+      <node id="3583423826990347890" at="48,22,49,148" concept="2" />
+      <node id="3583423826988754593" at="16,0,18,0" concept="9" trace="ourParametersCacheExtension" />
+      <node id="3583423826988754593" at="19,0,22,0" concept="1" trace="TestIdempotency_Test#()V" />
+      <node id="3583423826988754593" at="34,0,37,0" concept="1" trace="TestBody#(Ljetbrains/mps/lang/test/runtime/TransformationTest;)V" />
+      <node id="3583423826988874488" at="23,0,27,0" concept="4" trace="test_mustNotChangeAttributes#()V" />
+      <node id="3583423826990347890" at="27,0,31,0" concept="4" trace="test_mustNotChangeAttributeSingle#()V" />
+      <node id="3583423826988754593" at="38,0,42,0" concept="4" trace="initTestNodes#()V" />
+      <node id="3583423826988874488" at="43,0,47,0" concept="4" trace="test_mustNotChangeAttributes#()V" />
+      <node id="3583423826990347890" at="47,0,51,0" concept="4" trace="test_mustNotChangeAttributeSingle#()V" />
+      <scope id="3583423826988754593" at="19,33,20,60" />
+      <scope id="3583423826988874488" at="24,63,25,54" />
+      <scope id="3583423826990347890" at="28,68,29,59" />
+      <scope id="3583423826988754593" at="34,52,35,19" />
+      <scope id="3583423826988754593" at="39,36,40,46" />
+      <scope id="3583423826988874488" at="43,65,45,146" />
+      <scope id="3583423826990347890" at="47,70,49,148" />
+      <scope id="3583423826988754593" at="19,0,22,0" />
+      <scope id="3583423826988754593" at="34,0,37,0">
+        <var name="owner" id="3583423826988754593" />
+      </scope>
+      <scope id="3583423826988874488" at="23,0,27,0" />
+      <scope id="3583423826990347890" at="27,0,31,0" />
+      <scope id="3583423826988754593" at="38,0,42,0" />
+      <scope id="3583423826988874488" at="43,0,47,0" />
+      <scope id="3583423826990347890" at="47,0,51,0" />
+      <unit id="3583423826988754593" at="32,0,53,0" name="test.org.iets3.variability.configuration.base.inheritance.TestIdempotency_Test$TestBody" />
+      <unit id="3583423826988754593" at="14,0,54,0" name="test.org.iets3.variability.configuration.base.inheritance.TestIdempotency_Test" />
+    </file>
+  </root>
+  <root nodeRef="r:67b8c8a1-c2c2-4db8-bb17-956b347d6975(test.org.iets3.variability.configuration.base.inheritance@tests)/3848205206118948413">
+    <file name="MustAdaptToChangedInheritedValue_Test.java">
+      <node id="3848205206118948413" at="19,50,20,60" concept="11" />
+      <node id="3848205206119156551" at="24,77,25,68" concept="2" />
+      <node id="3848205206118948413" at="30,52,31,19" concept="11" />
+      <node id="3848205206118948413" at="35,36,36,46" concept="2" />
+      <node id="3848205206119156551" at="39,79,40,22" concept="2" />
+      <node id="3848205206119156551" at="40,22,41,146" concept="2" />
+      <node id="3848205206118948413" at="16,0,18,0" concept="9" trace="ourParametersCacheExtension" />
+      <node id="3848205206118948413" at="19,0,22,0" concept="1" trace="MustAdaptToChangedInheritedValue_Test#()V" />
+      <node id="3848205206118948413" at="30,0,33,0" concept="1" trace="TestBody#(Ljetbrains/mps/lang/test/runtime/TransformationTest;)V" />
+      <node id="3848205206119156551" at="23,0,27,0" concept="4" trace="test_mustAdopToChangesOfInheritedAttribute#()V" />
+      <node id="3848205206118948413" at="34,0,38,0" concept="4" trace="initTestNodes#()V" />
+      <node id="3848205206119156551" at="39,0,43,0" concept="4" trace="test_mustAdopToChangesOfInheritedAttribute#()V" />
+      <scope id="3848205206118948413" at="19,50,20,60" />
+      <scope id="3848205206119156551" at="24,77,25,68" />
+      <scope id="3848205206118948413" at="30,52,31,19" />
+      <scope id="3848205206118948413" at="35,36,36,46" />
+      <scope id="3848205206119156551" at="39,79,41,146" />
+      <scope id="3848205206118948413" at="19,0,22,0" />
+      <scope id="3848205206118948413" at="30,0,33,0">
+        <var name="owner" id="3848205206118948413" />
+      </scope>
+      <scope id="3848205206119156551" at="23,0,27,0" />
+      <scope id="3848205206118948413" at="34,0,38,0" />
+      <scope id="3848205206119156551" at="39,0,43,0" />
+      <unit id="3848205206118948413" at="28,0,45,0" name="test.org.iets3.variability.configuration.base.inheritance.MustAdaptToChangedInheritedValue_Test$TestBody" />
+      <unit id="3848205206118948413" at="14,0,46,0" name="test.org.iets3.variability.configuration.base.inheritance.MustAdaptToChangedInheritedValue_Test" />
+    </file>
+  </root>
   <root nodeRef="r:67b8c8a1-c2c2-4db8-bb17-956b347d6975(test.org.iets3.variability.configuration.base.inheritance@tests)/4863260546552253877">
     <file name="AttributesInInheritance_Test.java">
       <node id="4863260546552253877" at="24,41,25,60" concept="11" />
@@ -1157,6 +1226,45 @@
       <scope id="8102750928825949711" at="47,0,51,0" />
       <unit id="8102750928825949643" at="32,0,53,0" name="test.org.iets3.variability.configuration.base.inheritance.SimpleInheritanceRemoveWithAttribute_Test$TestBody" />
       <unit id="8102750928825949643" at="14,0,54,0" name="test.org.iets3.variability.configuration.base.inheritance.SimpleInheritanceRemoveWithAttribute_Test" />
+    </file>
+  </root>
+  <root nodeRef="r:67b8c8a1-c2c2-4db8-bb17-956b347d6975(test.org.iets3.variability.configuration.base.inheritance@tests)/815021483311269083">
+    <file name="SimpleInheritanceAddDoubleAttribute_Test.java">
+      <node id="815021483311269083" at="19,53,20,60" concept="11" />
+      <node id="815021483311269458" at="24,104,25,95" concept="2" />
+      <node id="815021483314262993" at="28,106,29,97" concept="2" />
+      <node id="815021483311269083" at="34,52,35,19" concept="11" />
+      <node id="815021483311269083" at="39,36,40,45" concept="2" />
+      <node id="815021483311269458" at="43,106,44,22" concept="2" />
+      <node id="815021483311269458" at="44,22,45,132" concept="2" />
+      <node id="815021483314262993" at="47,108,48,22" concept="2" />
+      <node id="815021483314262993" at="48,22,49,134" concept="2" />
+      <node id="815021483311269083" at="16,0,18,0" concept="9" trace="ourParametersCacheExtension" />
+      <node id="815021483311269083" at="19,0,22,0" concept="1" trace="SimpleInheritanceAddDoubleAttribute_Test#()V" />
+      <node id="815021483311269083" at="34,0,37,0" concept="1" trace="TestBody#(Ljetbrains/mps/lang/test/runtime/TransformationTest;)V" />
+      <node id="815021483311269458" at="23,0,27,0" concept="4" trace="test_checkThatFeaturesCheckedInParentWithInheritedAttributeDissapears#()V" />
+      <node id="815021483314262993" at="27,0,31,0" concept="4" trace="test_checkThatFeaturesCheckedInParentWithInheritedAttributeAreInherited#()V" />
+      <node id="815021483311269083" at="38,0,42,0" concept="4" trace="initTestNodes#()V" />
+      <node id="815021483311269458" at="43,0,47,0" concept="4" trace="test_checkThatFeaturesCheckedInParentWithInheritedAttributeDissapears#()V" />
+      <node id="815021483314262993" at="47,0,51,0" concept="4" trace="test_checkThatFeaturesCheckedInParentWithInheritedAttributeAreInherited#()V" />
+      <scope id="815021483311269083" at="19,53,20,60" />
+      <scope id="815021483311269458" at="24,104,25,95" />
+      <scope id="815021483314262993" at="28,106,29,97" />
+      <scope id="815021483311269083" at="34,52,35,19" />
+      <scope id="815021483311269083" at="39,36,40,45" />
+      <scope id="815021483311269458" at="43,106,45,132" />
+      <scope id="815021483314262993" at="47,108,49,134" />
+      <scope id="815021483311269083" at="19,0,22,0" />
+      <scope id="815021483311269083" at="34,0,37,0">
+        <var name="owner" id="815021483311269083" />
+      </scope>
+      <scope id="815021483311269458" at="23,0,27,0" />
+      <scope id="815021483314262993" at="27,0,31,0" />
+      <scope id="815021483311269083" at="38,0,42,0" />
+      <scope id="815021483311269458" at="43,0,47,0" />
+      <scope id="815021483314262993" at="47,0,51,0" />
+      <unit id="815021483311269083" at="32,0,53,0" name="test.org.iets3.variability.configuration.base.inheritance.SimpleInheritanceAddDoubleAttribute_Test$TestBody" />
+      <unit id="815021483311269083" at="14,0,54,0" name="test.org.iets3.variability.configuration.base.inheritance.SimpleInheritanceAddDoubleAttribute_Test" />
     </file>
   </root>
   <root nodeRef="r:67b8c8a1-c2c2-4db8-bb17-956b347d6975(test.org.iets3.variability.configuration.base.inheritance@tests)/9150773682806073477">
