@@ -8,6 +8,7 @@ The project does _not_ follow Semantic Versioning and the changes are documented
 ## April 2026
 
 ### Added
+
 - Variability: Added checking rules for missing not-present values of attributes. The following cases have been covered:
   - default expression of another attribute in feature model
   - presence condition in artifact
@@ -20,6 +21,7 @@ The project does _not_ follow Semantic Versioning and the changes are documented
 
 ### Fixed
 
+- Variability: Restored workaround for using for-all-variants checking rules outside the IDE (e.g., on a build server). Due to MPS-34340, the for-all-variants checking cannot be done outside the IDE if the model under check has more than one root nodes.
 - Variability: After calling intention 'Adapt This Configuration to the Extended Configuration' inherited attributes were set to manual. This bug has been fixed.
 
 
