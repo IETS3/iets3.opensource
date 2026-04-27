@@ -39,13 +39,13 @@ public class FeatureModelConfigurationInheritanceUtil {
 
     List<Pair<SNode, SNode>> conflicts = Lists.newArrayList();
 
-    for (SNode extendedFeatureModelConfig : Sequence.fromIterable(extendedFeatureModelConfigs(fmc))) {
-      for (FMCTraversal.PathConfig tce : CollectionSequence.fromCollection(FMCTraversal.traverseConfigs(extendedFeatureModelConfig).pathConfigs)) {
+    for (SNode extendedConfig : Sequence.fromIterable(extendedConfigs(fmc))) {
+      for (FMCTraversal.PathConfig tce : CollectionSequence.fromCollection(FMCTraversal.traverseConfigs(extendedConfig).pathConfigs)) {
         SNode efc = tce.configuration();
         SNode afc = includesToFeature.get(tce.key());
         if (afc != null) {
           if (hasSelectionOrAttributeConflictForInheritance(afc, efc)) {
-            ListSequence.fromList(conflicts).addElement(ImmutablePair.of(extendedFeatureModelConfig, afc));
+            ListSequence.fromList(conflicts).addElement(ImmutablePair.of(extendedConfig, afc));
           }
         }
       }
@@ -101,12 +101,12 @@ public class FeatureModelConfigurationInheritanceUtil {
   }
 
 
-  public static Iterable<SNode> extendedFeatureModelConfigs(SNode fmc) {
+  public static Iterable<SNode> extendedConfigs(SNode fmc) {
     if (hasNoContent(fmc) || (SLinkOperations.getTarget(SLinkOperations.getTarget(fmc, LINKS.extendedFMC$tFbw), LINKS.config$ID3f) == null)) {
-      return Collections.<SNode>emptyList();
+      return Sequence.fromIterable(Collections.emptyList());
     }
 
-    return Iterables.concat(Collections.singletonList(SLinkOperations.getTarget(SLinkOperations.getTarget(fmc, LINKS.extendedFMC$tFbw), LINKS.config$ID3f)), extendedFeatureModelConfigs(SLinkOperations.getTarget(SLinkOperations.getTarget(fmc, LINKS.extendedFMC$tFbw), LINKS.config$ID3f)));
+    return Iterables.concat(Sequence.singleton(SLinkOperations.getTarget(SLinkOperations.getTarget(fmc, LINKS.extendedFMC$tFbw), LINKS.config$ID3f)), extendedConfigs(SLinkOperations.getTarget(SLinkOperations.getTarget(fmc, LINKS.extendedFMC$tFbw), LINKS.config$ID3f)));
   }
 
 
@@ -249,24 +249,27 @@ public class FeatureModelConfigurationInheritanceUtil {
 
   private static void applyAttributesOfExtendedConfig(SNode subConfig, SNode extendedConfig) {
     for (Pair<SNode, SNode> paired : ListSequence.fromList(FeatureModelConfigurationInheritanceUtil.pairBySameFeatureAttribute(AbstractFeatureConfiguration__BehaviorDescriptor.attributeAssignments_id30ECcbtQkN2.invoke(subConfig), AbstractFeatureConfiguration__BehaviorDescriptor.attributeAssignments_id30ECcbtQkN2.invoke(extendedConfig)))) {
-      SNode extendedFeatureAttributeAssignment = paired.getRight();
-      SNode inheritingFeatureAttributeAssignment = paired.getLeft();
+      SNode extendedAssignment = paired.getRight();
+      SNode inheritingAssignment = paired.getLeft();
 
-      if ((SLinkOperations.getTarget(extendedFeatureAttributeAssignment, LINKS.value$kgDc) != null) && !(Objects.equals(SLinkOperations.getTarget(inheritingFeatureAttributeAssignment, LINKS.value$kgDc), SLinkOperations.getTarget(extendedFeatureAttributeAssignment, LINKS.value$kgDc)))) {
-        SLinkOperations.setTarget(inheritingFeatureAttributeAssignment, LINKS.value$kgDc, SNodeOperations.copyNode(SLinkOperations.getTarget(extendedFeatureAttributeAssignment, LINKS.value$kgDc)));
-        SPropertyOperations.assign(inheritingFeatureAttributeAssignment, PROPS.inherited$oyCC, true);
+      SNode baseValue = SLinkOperations.getTarget(extendedAssignment, LINKS.value$kgDc);
+      if ((baseValue != null)) {
+        if (!(Objects.equals(SLinkOperations.getTarget(inheritingAssignment, LINKS.value$kgDc), baseValue))) {
+          SLinkOperations.setTarget(inheritingAssignment, LINKS.value$kgDc, SNodeOperations.copyNode(baseValue));
+          SPropertyOperations.assign(inheritingAssignment, PROPS.inherited$oyCC, true);
+        }
       } else {
-        if ((extendedFeatureAttributeAssignment == null) && SPropertyOperations.getBoolean(inheritingFeatureAttributeAssignment, PROPS.inherited$oyCC)) {
-          SLinkOperations.setTarget(inheritingFeatureAttributeAssignment, LINKS.value$kgDc, null);
-          SPropertyOperations.assign(inheritingFeatureAttributeAssignment, PROPS.inherited$oyCC, false);
+        if (SPropertyOperations.getBoolean(inheritingAssignment, PROPS.inherited$oyCC)) {
+          SLinkOperations.setTarget(inheritingAssignment, LINKS.value$kgDc, null);
+          SPropertyOperations.assign(inheritingAssignment, PROPS.inherited$oyCC, false);
         }
       }
     }
   }
 
 
-  private static Optional<SNode> matchingSubfeatureConfigOfExtendedConfig(Iterable<SNode> subfeatureConfigsOfextendedConfig, final SNode subfeatureConfiguration) {
-    return Optional.ofNullable(Sequence.fromIterable(subfeatureConfigsOfextendedConfig).findFirst((subfeatureConfigOfExtendedConfig) -> SLinkOperations.getTarget(subfeatureConfigOfExtendedConfig, LINKS.targetFeature$16lA) == SLinkOperations.getTarget(subfeatureConfiguration, LINKS.targetFeature$16lA)));
+  private static Optional<SNode> matchingSubfeatureConfigOfExtendedConfig(Iterable<SNode> subConfigsOfExtendedConfig, final SNode subConfiguration) {
+    return Optional.ofNullable(Sequence.fromIterable(subConfigsOfExtendedConfig).findFirst((subConfigOfExtendedConfig) -> SLinkOperations.getTarget(subConfigOfExtendedConfig, LINKS.targetFeature$16lA) == SLinkOperations.getTarget(subConfiguration, LINKS.targetFeature$16lA)));
   }
 
   private static boolean bothSelected(SNode subAFC, SNode extendedAFC) {
@@ -285,16 +288,16 @@ public class FeatureModelConfigurationInheritanceUtil {
       SPropertyOperations.setEnum(subAFC, PROPS.selectionState$zbc1, 0x5db06c237c250a81L, "userFalse");
     }
 
-    Iterable<SNode> extendedSubfeatureConfigs = AbstractFeatureConfiguration__BehaviorDescriptor.subfeatureConfigurationsTransitive_id1lUmdle4kqX.invoke(extendedAFC);
-    Iterable<SNode> extendingSubfeatureConfigs = AbstractFeatureConfiguration__BehaviorDescriptor.subfeatureConfigurationsTransitive_id1lUmdle4kqX.invoke(subAFC);
+    Iterable<SNode> extendedSubConfigs = AbstractFeatureConfiguration__BehaviorDescriptor.subfeatureConfigurationsTransitive_id1lUmdle4kqX.invoke(extendedAFC);
+    Iterable<SNode> extendingSubConfigs = AbstractFeatureConfiguration__BehaviorDescriptor.subfeatureConfigurationsTransitive_id1lUmdle4kqX.invoke(subAFC);
 
-    for (final SNode extendedSubfeatureConfig : Sequence.fromIterable(extendedSubfeatureConfigs)) {
-      if (!(Sequence.fromIterable(extendingSubfeatureConfigs).any((it) -> SLinkOperations.getTarget(it, LINKS.targetFeature$16lA) == SLinkOperations.getTarget(extendedSubfeatureConfig, LINKS.targetFeature$16lA)))) {
-        AbstractFeatureConfiguration__BehaviorDescriptor.addConfigAtIndex_id5Bs7u207px$.invoke(subAFC, SNodeOperations.copyNode(extendedSubfeatureConfig), ((int) SNodeOperations.getIndexInParent(extendedSubfeatureConfig)));
+    for (final SNode extendedSubConfig : Sequence.fromIterable(extendedSubConfigs)) {
+      if (!(Sequence.fromIterable(extendingSubConfigs).any((it) -> SLinkOperations.getTarget(it, LINKS.targetFeature$16lA) == SLinkOperations.getTarget(extendedSubConfig, LINKS.targetFeature$16lA)))) {
+        AbstractFeatureConfiguration__BehaviorDescriptor.addConfigAtIndex_id5Bs7u207px$.invoke(subAFC, SNodeOperations.copyNode(extendedSubConfig), ((int) SNodeOperations.getIndexInParent(extendedSubConfig)));
       }
     }
-    for (final SNode extendingSubfeatureConfig : Sequence.fromIterable(extendingSubfeatureConfigs)) {
-      Optional.ofNullable(Sequence.fromIterable(extendedSubfeatureConfigs).findFirst((extendedSubfeatureConfig) -> SLinkOperations.getTarget(extendedSubfeatureConfig, LINKS.targetFeature$16lA) == SLinkOperations.getTarget(extendingSubfeatureConfig, LINKS.targetFeature$16lA))).ifPresent((SNode matchFromExtended) -> addFeaturesFromExtendedConfig(extendingSubfeatureConfig, matchFromExtended));
+    for (final SNode extendingSubConfig : Sequence.fromIterable(extendingSubConfigs)) {
+      Optional.ofNullable(Sequence.fromIterable(extendedSubConfigs).findFirst((extendedSubConfig) -> SLinkOperations.getTarget(extendedSubConfig, LINKS.targetFeature$16lA) == SLinkOperations.getTarget(extendingSubConfig, LINKS.targetFeature$16lA))).ifPresent((SNode matchFromExtended) -> addFeaturesFromExtendedConfig(extendingSubConfig, matchFromExtended));
     }
   }
 
@@ -303,7 +306,7 @@ public class FeatureModelConfigurationInheritanceUtil {
 
     for (SNode elem1 : Sequence.fromIterable(seq1)) {
       for (SNode elem2 : Sequence.fromIterable(seq2)) {
-        if (SLinkOperations.getTarget(elem1, LINKS.attribute$J5jI) == SLinkOperations.getTarget(elem2, LINKS.attribute$J5jI)) {
+        if (Objects.equals(SLinkOperations.getTarget(elem1, LINKS.attribute$J5jI), SLinkOperations.getTarget(elem2, LINKS.attribute$J5jI))) {
           ListSequence.fromList(result).addElement(ImmutablePair.of(elem1, elem2));
         }
       }
