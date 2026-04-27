@@ -8,7 +8,8 @@ The project does _not_ follow Semantic Versioning and the changes are documented
 ## April 2026
 
 ### Added
-- Variability: Added checking rules for missing Not-Present-Values of Attributes. The following cases have been covered:
+
+- Variability: Added checking rules for missing not-present values of attributes. The following cases have been covered:
   - default expression of another attribute in feature model
   - presence condition in artifact
   - left-hand-side condition in an ITabularVarPoint
@@ -21,6 +22,7 @@ The project does _not_ follow Semantic Versioning and the changes are documented
 ### Fixed
 
 - Variability: Restored workaround for using for-all-variants checking rules outside the IDE (e.g., on a build server). Due to MPS-34340, the for-all-variants checking cannot be done outside the IDE if the model under check has more than one root nodes.
+- Variability: After calling intention 'Adapt This Configuration to the Extended Configuration' inherited attributes were set to manual. This bug has been fixed.
 
 
 ## March 2026
@@ -30,6 +32,7 @@ The project does _not_ follow Semantic Versioning and the changes are documented
 - Fixed a bug in the `execTestsByInterpreter` task which would result in a wrong JNA path
 - Variability: Newly created feature models will not show a "Property constraint violation" error anymore.
 
+- Hexadecimal number support now works for MPS 2025.1 and above.
 
 ## February 2026
 
@@ -87,13 +90,18 @@ The project does _not_ follow Semantic Versioning and the changes are documented
 
 - The Maven POM now contains all bundled JARs as dependencies with `provided` scope to help with automated license and
   vulnerability scanning.
+- The Grammar Cells of KernelF editors can now be customized through the extension point `EditorCustomization`. Optional cells, flag cells, constant cells, substitute cells and side transformations can be customized (activation of substitutions, side transformations, description text, post-processing etc.).
 
 ### Fixed
 
 - A bug was fixed that caused the editor of NumberLiteral to break if a property macro was used for its value.
 - Added missing support for IndexExpr for the operations findFirst and forEach.
+- The AssessmentAnalyzer doesn't try to modify read-only models on the CI anymore.
 - An invalid checking rule for parameter value types of functional component instances has been removed. It was introduced by a move of IETS3.Core languages in February 2025.
 
+### Improved
+
+- Some editor action descriptions were improved.
 
 ## October 2025
 
