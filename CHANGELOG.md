@@ -8,7 +8,8 @@ The project does _not_ follow Semantic Versioning and the changes are documented
 ## April 2026
 
 ### Added
-- Variability: Added checking rules for missing Not-Present-Values of Attributes. The following cases have been covered:
+
+- Variability: Added checking rules for missing not-present values of attributes. The following cases have been covered:
   - default expression of another attribute in feature model
   - presence condition in artifact
   - left-hand-side condition in an ITabularVarPoint
@@ -17,6 +18,11 @@ The project does _not_ follow Semantic Versioning and the changes are documented
 ### Changed
 
 - Variability: The automatic execution of solver checking for tabular variation points (eg. feature decision tables) has been switched off. Now the solver check can be executed manually via "Run/Evaluate/Check manually" from the context menu. We will work on improving stability and performance for this feature and plan to reactivate it back later.
+
+### Fixed
+
+- Variability: Restored workaround for using for-all-variants checking rules outside the IDE (e.g., on a build server). Due to MPS-34340, the for-all-variants checking cannot be done outside the IDE if the model under check has more than one root nodes.
+- Variability: After calling intention 'Adapt This Configuration to the Extended Configuration' inherited attributes were set to manual. This bug has been fixed.
 
 
 ## March 2026
