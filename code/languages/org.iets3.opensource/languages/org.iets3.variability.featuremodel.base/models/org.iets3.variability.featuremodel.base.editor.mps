@@ -5499,9 +5499,9 @@
               </node>
               <node concept="2qgKlT" id="3Kl2xAACBO4" role="2OqNvi">
                 <ref role="37wK5l" to="zccc:1GMgmu$sb6j" resolve="addSubFeature" />
-                <node concept="2pJPEk" id="3Kl2xAACBO5" role="37wK5m">
-                  <node concept="2pJPED" id="3Kl2xAACBO6" role="2pJPEn">
-                    <ref role="2pJxaS" to="s6b7:3tsFshP5M5B" resolve="FeatureTreeNode" />
+                <node concept="2pJPEk" id="1Foaw9JOanl" role="37wK5m">
+                  <node concept="2pJPED" id="1Foaw9JOanm" role="2pJPEn">
+                    <ref role="2pJxaS" to="s6b7:3tsFshP5Ec7" resolve="Feature" />
                   </node>
                 </node>
               </node>
