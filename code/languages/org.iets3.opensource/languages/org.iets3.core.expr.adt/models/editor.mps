@@ -2,7 +2,7 @@
 <model ref="r:3516b3a3-433b-4400-aca7-cbbe85a5429d(org.iets3.core.expr.adt.editor)">
   <persistence version="9" />
   <languages>
-    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="14" />
+    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="15" />
     <use id="9d69e719-78c8-4286-90db-fb19c107d049" name="com.mbeddr.mpsutil.grammarcells" version="2" />
     <use id="c73b17af-16a1-4490-8072-8a84937c5206" name="com.mbeddr.mpsutil.treenotation" version="0" />
     <use id="1919c723-b60b-4592-9318-9ce96d91da44" name="de.itemis.mps.editor.celllayout" version="0" />
@@ -15,6 +15,8 @@
     <import index="v0r8" ref="r:8ef260d4-7762-457a-8d33-23916aa626ab(org.iets3.core.expr.adt.structure)" />
     <import index="lzb2" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.ui(MPS.IDEA/)" />
     <import index="hm2y" ref="r:66e07cb4-a4b0-4bf3-a36d-5e9ed1ff1bd3(org.iets3.core.expr.base.structure)" />
+    <import index="oq0c" ref="r:6c6155f0-4bbe-4af5-8c26-244d570e21e4(org.iets3.core.expr.base.plugin)" />
+    <import index="c17a" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.language(MPS.OpenAPI/)" />
     <import index="m999" ref="r:1d6bd88a-7393-4b32-b0e6-2d8b3094776e(org.iets3.core.expr.toplevel.editor)" implicit="true" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
     <import index="dnkk" ref="r:c7dec76d-437e-4f48-9d01-3857e3cf30e6(org.iets3.core.expr.adt.behavior)" implicit="true" />
@@ -151,10 +153,15 @@
       <concept id="1070534058343" name="jetbrains.mps.baseLanguage.structure.NullLiteral" flags="nn" index="10Nm6u" />
       <concept id="1070534644030" name="jetbrains.mps.baseLanguage.structure.BooleanType" flags="in" index="10P_77" />
       <concept id="1068390468198" name="jetbrains.mps.baseLanguage.structure.ClassConcept" flags="ig" index="312cEu" />
+      <concept id="1068431474542" name="jetbrains.mps.baseLanguage.structure.VariableDeclaration" flags="ng" index="33uBYm">
+        <child id="1068431790190" name="initializer" index="33vP2m" />
+      </concept>
       <concept id="1068498886296" name="jetbrains.mps.baseLanguage.structure.VariableReference" flags="nn" index="37vLTw">
         <reference id="1068581517664" name="variableDeclaration" index="3cqZAo" />
       </concept>
       <concept id="1068498886292" name="jetbrains.mps.baseLanguage.structure.ParameterDeclaration" flags="ir" index="37vLTG" />
+      <concept id="1225271177708" name="jetbrains.mps.baseLanguage.structure.StringType" flags="in" index="17QB3L" />
+      <concept id="1225271408483" name="jetbrains.mps.baseLanguage.structure.IsNotEmptyOperation" flags="nn" index="17RvpY" />
       <concept id="4972933694980447171" name="jetbrains.mps.baseLanguage.structure.BaseVariableDeclaration" flags="ng" index="19Szcq">
         <child id="5680397130376446158" name="type" index="1tU5fm" />
       </concept>
@@ -183,6 +190,10 @@
       <concept id="1068581242878" name="jetbrains.mps.baseLanguage.structure.ReturnStatement" flags="nn" index="3cpWs6">
         <child id="1068581517676" name="expression" index="3cqZAk" />
       </concept>
+      <concept id="1068581242864" name="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" flags="nn" index="3cpWs8">
+        <child id="1068581242865" name="localVariableDeclaration" index="3cpWs9" />
+      </concept>
+      <concept id="1068581242863" name="jetbrains.mps.baseLanguage.structure.LocalVariableDeclaration" flags="nr" index="3cpWsn" />
       <concept id="1068581517677" name="jetbrains.mps.baseLanguage.structure.VoidType" flags="in" index="3cqZAl" />
       <concept id="1081516740877" name="jetbrains.mps.baseLanguage.structure.NotExpression" flags="nn" index="3fqX7Q">
         <child id="1081516765348" name="expression" index="3fr31v" />
@@ -204,6 +215,11 @@
       <concept id="1178549954367" name="jetbrains.mps.baseLanguage.structure.IVisible" flags="ngI" index="1B3ioH">
         <child id="1178549979242" name="visibility" index="1B3o_S" />
       </concept>
+      <concept id="1163668896201" name="jetbrains.mps.baseLanguage.structure.TernaryOperatorExpression" flags="nn" index="3K4zz7">
+        <child id="1163668914799" name="condition" index="3K4Cdx" />
+        <child id="1163668922816" name="ifTrue" index="3K4E3e" />
+        <child id="1163668934364" name="ifFalse" index="3K4GZi" />
+      </concept>
       <concept id="1146644602865" name="jetbrains.mps.baseLanguage.structure.PublicVisibility" flags="nn" index="3Tm1VV" />
       <concept id="1080120340718" name="jetbrains.mps.baseLanguage.structure.AndExpression" flags="nn" index="1Wc70l" />
     </language>
@@ -215,29 +231,47 @@
       </concept>
     </language>
     <language id="9d69e719-78c8-4286-90db-fb19c107d049" name="com.mbeddr.mpsutil.grammarcells">
+      <concept id="1954385921685809440" name="com.mbeddr.mpsutil.grammarcells.structure.Parameter_node" flags="ng" index="313q4" />
+      <concept id="1954385921685784800" name="com.mbeddr.mpsutil.grammarcells.structure.PostprocessFunction" flags="ig" index="315t4" />
+      <concept id="7408935449007508559" name="com.mbeddr.mpsutil.grammarcells.structure.WrapperCell_SubstituteCondition_expectedConcept" flags="ng" index="7dpZ6" />
       <concept id="7408935449007503509" name="com.mbeddr.mpsutil.grammarcells.structure.WrapperCell_SubstituteCondition" flags="ig" index="7duGs" />
       <concept id="1984422498402698431" name="com.mbeddr.mpsutil.grammarcells.structure.WrapperCell_Condition" flags="ig" index="2e7140" />
       <concept id="1984422498402709328" name="com.mbeddr.mpsutil.grammarcells.structure.WrapperCell_Condition_wrappedNode" flags="ng" index="2e73FJ" />
+      <concept id="2523386941174202656" name="com.mbeddr.mpsutil.grammarcells.structure.FlagCell_SubstituteCondition_parentNode" flags="ng" index="2gy9SH" />
       <concept id="9041925471455857605" name="com.mbeddr.mpsutil.grammarcells.structure.Cell_DescriptionText" flags="ig" index="uPpia" />
       <concept id="5083944728298846680" name="com.mbeddr.mpsutil.grammarcells.structure.OptionalCell" flags="ng" index="_tjkj">
+        <child id="7011566904921631440" name="postprocess" index="vWNKz" />
         <child id="5083944728298846681" name="option" index="_tjki" />
         <child id="8945098465480008160" name="transformationText" index="ZWbT9" />
       </concept>
       <concept id="8207263695490893775" name="com.mbeddr.mpsutil.grammarcells.structure.CellBasedRule" flags="ng" index="2ElW$n" />
+      <concept id="2489050352088028316" name="com.mbeddr.mpsutil.grammarcells.structure.Parameter_editorContext" flags="ng" index="2MNBq7" />
       <concept id="8945098465480383073" name="com.mbeddr.mpsutil.grammarcells.structure.OptionalCell_TransformationText" flags="ig" index="ZYGn8" />
       <concept id="848437706375087728" name="com.mbeddr.mpsutil.grammarcells.structure.ICanHaveDescriptionText" flags="ngI" index="1djCvD">
         <child id="848437706375087729" name="descriptionText" index="1djCvC" />
       </concept>
-      <concept id="7363578995839203705" name="com.mbeddr.mpsutil.grammarcells.structure.FlagCell" flags="sg" stub="1984422498400729024" index="1kHk_G" />
+      <concept id="2293941288997642241" name="com.mbeddr.mpsutil.grammarcells.structure.WrapperCell_Condition_wrappedConcept" flags="ng" index="3dAXtN" />
+      <concept id="484443907672824414" name="com.mbeddr.mpsutil.grammarcells.structure.FlagCell_SubstituteCondition" flags="ig" index="3gMsPO" />
+      <concept id="484443907672900465" name="com.mbeddr.mpsutil.grammarcells.structure.FlagCell_SubstituteCondition_substitutedNode" flags="ng" index="3gMLhr" />
+      <concept id="7363578995839203705" name="com.mbeddr.mpsutil.grammarcells.structure.FlagCell" flags="sg" stub="1984422498400729024" index="1kHk_G">
+        <child id="484443907672828832" name="substituteCondition" index="3gMvMa" />
+        <child id="621193272061064649" name="sideTransformCondition" index="1m$hSO" />
+      </concept>
       <concept id="7363578995839435357" name="com.mbeddr.mpsutil.grammarcells.structure.WrapperCell" flags="ng" index="1kIj98">
+        <child id="1954385921685817931" name="postprocessSideTransform" index="31dnJ" />
+        <child id="1954385921685817946" name="postprocessNodeSubstitute" index="31dnY" />
         <child id="7408935449007570592" name="substituteCondition" index="7deOD" />
         <child id="1984422498402083610" name="sideTransformationCondition" index="2e1Fq_" />
         <child id="7363578995839435358" name="wrapped" index="1kIj9b" />
       </concept>
+      <concept id="621193272061064420" name="com.mbeddr.mpsutil.grammarcells.structure.FlagCell_SideTransformationCondition" flags="ig" index="1m$hWp" />
+      <concept id="7463174232466930070" name="com.mbeddr.mpsutil.grammarcells.structure.Parameter_OriginalText" flags="ng" index="1oAbNU" />
+      <concept id="2862331529394480355" name="com.mbeddr.mpsutil.grammarcells.structure.Parameter_SubConcept" flags="ng" index="1Lj6YZ" />
       <concept id="3011849438420226693" name="com.mbeddr.mpsutil.grammarcells.structure.GrammarInfoCell" flags="ng" index="1WcQYu">
         <child id="8207263695490916687" name="rules" index="2El2Yn" />
         <child id="2862331529394260612" name="projection" index="1LiK7o" />
       </concept>
+      <concept id="6349233906483558394" name="com.mbeddr.mpsutil.grammarcells.structure.Parameter_wrappedConcept" flags="ng" index="1ZN7lz" />
     </language>
     <language id="c73b17af-16a1-4490-8072-8a84937c5206" name="com.mbeddr.mpsutil.treenotation">
       <concept id="134774857084556552" name="com.mbeddr.mpsutil.treenotation.structure.TreeCell" flags="ng" index="2SWKgc">
@@ -271,6 +305,17 @@
       <concept id="1173122760281" name="jetbrains.mps.lang.smodel.structure.Node_GetAncestorsOperation" flags="nn" index="z$bX8" />
       <concept id="1145404486709" name="jetbrains.mps.lang.smodel.structure.SemanticDowncastExpression" flags="nn" index="2JrnkZ">
         <child id="1145404616321" name="leftExpression" index="2JrQYb" />
+      </concept>
+      <concept id="2644386474302386080" name="jetbrains.mps.lang.smodel.structure.PropertyIdRefExpression" flags="nn" index="355D3s">
+        <reference id="2644386474302386081" name="conceptDeclaration" index="355D3t" />
+        <reference id="2644386474302386082" name="propertyDeclaration" index="355D3u" />
+      </concept>
+      <concept id="2644386474301421077" name="jetbrains.mps.lang.smodel.structure.LinkIdRefExpression" flags="nn" index="359W_D">
+        <reference id="2644386474301421078" name="conceptDeclaration" index="359W_E" />
+        <reference id="2644386474301421079" name="linkDeclaration" index="359W_F" />
+      </concept>
+      <concept id="2644386474300074836" name="jetbrains.mps.lang.smodel.structure.ConceptIdRefExpression" flags="nn" index="35c_gC">
+        <reference id="2644386474300074837" name="conceptDeclaration" index="35c_gD" />
       </concept>
       <concept id="1139621453865" name="jetbrains.mps.lang.smodel.structure.Node_IsInstanceOfOperation" flags="nn" index="1mIQ4w">
         <child id="1177027386292" name="conceptArgument" index="cj9EA" />
@@ -350,9 +395,107 @@
           <ref role="1NtTu8" to="v0r8:5a_u3OzNkkU" resolve="abstract" />
           <node concept="uPpia" id="1ZlHRbf$yfo" role="1djCvC">
             <node concept="3clFbS" id="1ZlHRbf$yfp" role="2VODD2">
-              <node concept="3clFbF" id="7PVnOXzn_Dr" role="3cqZAp">
-                <node concept="Xl_RD" id="7PVnOXzn_Dq" role="3clFbG">
-                  <property role="Xl_RC" value="make the constructor abstract" />
+              <node concept="3cpWs8" id="60PTWgmU2Jh" role="3cqZAp">
+                <node concept="3cpWsn" id="60PTWgmU2Ji" role="3cpWs9">
+                  <property role="TrG5h" value="descriptiontext" />
+                  <node concept="17QB3L" id="60PTWgmU2B2" role="1tU5fm" />
+                  <node concept="2OqwBi" id="60PTWgmU2Jj" role="33vP2m">
+                    <node concept="2YIFZM" id="60PTWgmU2Jk" role="2Oq$k0">
+                      <ref role="37wK5l" to="oq0c:4qv99IrBnzk" resolve="getConfig" />
+                      <ref role="1Pybhc" to="oq0c:4qv99IrBkzE" resolve="EditorCustomizationConfigHelper" />
+                    </node>
+                    <node concept="liA8E" id="60PTWgmU2Jl" role="2OqNvi">
+                      <ref role="37wK5l" to="oq0c:60PTWgmTSO2" resolve="getFlagCellDescriptionText" />
+                      <node concept="2YIFZM" id="60PTWgoz9RP" role="37wK5m">
+                        <ref role="37wK5l" to="oq0c:60PTWgovZKt" resolve="getIdentifier" />
+                        <ref role="1Pybhc" to="oq0c:4qv99IrBkzE" resolve="EditorCustomizationConfigHelper" />
+                        <node concept="35c_gC" id="60PTWgoz9RQ" role="37wK5m">
+                          <ref role="35c_gD" to="v0r8:5a_u3OyMttW" resolve="AlgebraicConstructor" />
+                        </node>
+                        <node concept="355D3s" id="60PTWgmU2Jn" role="37wK5m">
+                          <ref role="355D3t" to="v0r8:5a_u3OyMttW" resolve="AlgebraicConstructor" />
+                          <ref role="355D3u" to="v0r8:5a_u3OzNkkU" resolve="abstract" />
+                        </node>
+                      </node>
+                      <node concept="1oAbNU" id="60PTWgmU2Jp" role="37wK5m" />
+                      <node concept="2MNBq7" id="60PTWgmU2Jq" role="37wK5m" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+              <node concept="3clFbF" id="60PTWgmU1MA" role="3cqZAp">
+                <node concept="3K4zz7" id="60PTWgmU4xR" role="3clFbG">
+                  <node concept="37vLTw" id="60PTWgmU4$0" role="3K4E3e">
+                    <ref role="3cqZAo" node="60PTWgmU2Ji" resolve="descriptiontext" />
+                  </node>
+                  <node concept="2OqwBi" id="60PTWgmU3qG" role="3K4Cdx">
+                    <node concept="37vLTw" id="60PTWgmU2Jr" role="2Oq$k0">
+                      <ref role="3cqZAo" node="60PTWgmU2Ji" resolve="descriptiontext" />
+                    </node>
+                    <node concept="17RvpY" id="60PTWgmU3XZ" role="2OqNvi" />
+                  </node>
+                  <node concept="Xl_RD" id="7PVnOXzk8V0" role="3K4GZi">
+                    <property role="Xl_RC" value="an abstract constructor" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="3gMsPO" id="60PTWgmjWs5" role="3gMvMa">
+            <node concept="3clFbS" id="60PTWgmjWs6" role="2VODD2">
+              <node concept="3clFbF" id="1xItpY9k2yp" role="3cqZAp">
+                <node concept="2OqwBi" id="1xItpY9k2Pg" role="3clFbG">
+                  <node concept="2YIFZM" id="60PTWgmmnWj" role="2Oq$k0">
+                    <ref role="37wK5l" to="oq0c:4qv99IrBnzk" resolve="getConfig" />
+                    <ref role="1Pybhc" to="oq0c:4qv99IrBkzE" resolve="EditorCustomizationConfigHelper" />
+                  </node>
+                  <node concept="liA8E" id="1xItpY9k2XH" role="2OqNvi">
+                    <ref role="37wK5l" to="oq0c:3yPQSK6HgSW" resolve="isFlagCellSubstitutionActivated" />
+                    <node concept="2YIFZM" id="60PTWgoz06U" role="37wK5m">
+                      <ref role="37wK5l" to="oq0c:60PTWgovZKt" resolve="getIdentifier" />
+                      <ref role="1Pybhc" to="oq0c:4qv99IrBkzE" resolve="EditorCustomizationConfigHelper" />
+                      <node concept="35c_gC" id="60PTWgoz06V" role="37wK5m">
+                        <ref role="35c_gD" to="v0r8:5a_u3OyMttW" resolve="AlgebraicConstructor" />
+                      </node>
+                      <node concept="355D3s" id="60PTWgmkBfr" role="37wK5m">
+                        <ref role="355D3t" to="v0r8:5a_u3OyMttW" resolve="AlgebraicConstructor" />
+                        <ref role="355D3u" to="v0r8:5a_u3OzNkkU" resolve="abstract" />
+                      </node>
+                    </node>
+                    <node concept="1Lj6YZ" id="1xItpY9k6rB" role="37wK5m" />
+                    <node concept="3gMLhr" id="1xItpY9k7iC" role="37wK5m" />
+                    <node concept="2gy9SH" id="1xItpY9kbHU" role="37wK5m" />
+                    <node concept="2MNBq7" id="1xItpY9kbU1" role="37wK5m" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="1m$hWp" id="60PTWgmlJ1m" role="1m$hSO">
+            <node concept="3clFbS" id="60PTWgmlJ1n" role="2VODD2">
+              <node concept="3clFbF" id="60PTWgmlJqq" role="3cqZAp">
+                <node concept="2OqwBi" id="60PTWgmlJQx" role="3clFbG">
+                  <node concept="2YIFZM" id="60PTWgmmnWk" role="2Oq$k0">
+                    <ref role="37wK5l" to="oq0c:4qv99IrBnzk" resolve="getConfig" />
+                    <ref role="1Pybhc" to="oq0c:4qv99IrBkzE" resolve="EditorCustomizationConfigHelper" />
+                  </node>
+                  <node concept="liA8E" id="60PTWgmlK4w" role="2OqNvi">
+                    <ref role="37wK5l" to="oq0c:1xItpY9kSqt" resolve="isFlagCellSideTransformationActivated" />
+                    <node concept="2YIFZM" id="60PTWgoz9NN" role="37wK5m">
+                      <ref role="37wK5l" to="oq0c:60PTWgovZKt" resolve="getIdentifier" />
+                      <ref role="1Pybhc" to="oq0c:4qv99IrBkzE" resolve="EditorCustomizationConfigHelper" />
+                      <node concept="35c_gC" id="60PTWgoz9NO" role="37wK5m">
+                        <ref role="35c_gD" to="v0r8:28$LOSBCtT$" resolve="AlgebraicConstructorArg" />
+                      </node>
+                      <node concept="355D3s" id="60PTWgoBtWX" role="37wK5m">
+                        <ref role="355D3t" to="v0r8:5a_u3OyMttW" resolve="AlgebraicConstructor" />
+                        <ref role="355D3u" to="v0r8:5a_u3OzNkkU" resolve="abstract" />
+                      </node>
+                    </node>
+                    <node concept="1Lj6YZ" id="60PTWgmlKq4" role="37wK5m" />
+                    <node concept="313q4" id="60PTWgmlKFM" role="37wK5m" />
+                    <node concept="2MNBq7" id="60PTWgmlKXU" role="37wK5m" />
+                  </node>
                 </node>
               </node>
             </node>
@@ -514,9 +657,136 @@
           </node>
           <node concept="uPpia" id="2zRMcT4P_fE" role="1djCvC">
             <node concept="3clFbS" id="2zRMcT4P_fF" role="2VODD2">
-              <node concept="3clFbF" id="2zRMcT4P_fG" role="3cqZAp">
-                <node concept="Xl_RD" id="2zRMcT4P_fH" role="3clFbG">
-                  <property role="Xl_RC" value="an algebraic term with type" />
+              <node concept="3cpWs8" id="60PTWgrzbHr" role="3cqZAp">
+                <node concept="3cpWsn" id="60PTWgrzbHs" role="3cpWs9">
+                  <property role="TrG5h" value="descriptiontext" />
+                  <node concept="17QB3L" id="60PTWgrzbHt" role="1tU5fm" />
+                  <node concept="2OqwBi" id="60PTWgrzbHu" role="33vP2m">
+                    <node concept="2YIFZM" id="60PTWgrzbHv" role="2Oq$k0">
+                      <ref role="37wK5l" to="oq0c:4qv99IrBnzk" resolve="getConfig" />
+                      <ref role="1Pybhc" to="oq0c:4qv99IrBkzE" resolve="EditorCustomizationConfigHelper" />
+                    </node>
+                    <node concept="liA8E" id="60PTWgrzbHw" role="2OqNvi">
+                      <ref role="37wK5l" to="oq0c:60PTWgry9kT" resolve="getWrapperCellSubstitutionDescriptionText" />
+                      <node concept="2YIFZM" id="60PTWgr$OzZ" role="37wK5m">
+                        <ref role="37wK5l" to="oq0c:60PTWgovZKt" resolve="getIdentifier" />
+                        <ref role="1Pybhc" to="oq0c:4qv99IrBkzE" resolve="EditorCustomizationConfigHelper" />
+                        <node concept="35c_gC" id="60PTWgr$O$0" role="37wK5m">
+                          <ref role="35c_gD" to="v0r8:5a_u3OyMSN$" resolve="AlgebraicTerm" />
+                        </node>
+                        <node concept="359W_D" id="60PTWgr$O$1" role="37wK5m">
+                          <ref role="359W_E" to="v0r8:5a_u3OyMSN$" resolve="AlgebraicTerm" />
+                          <ref role="359W_F" to="v0r8:5a_u3OyMSQm" resolve="type" />
+                        </node>
+                      </node>
+                      <node concept="2e73FJ" id="60PTWgrzbH$" role="37wK5m" />
+                      <node concept="3dAXtN" id="60PTWgrzbH_" role="37wK5m" />
+                      <node concept="1Lj6YZ" id="60PTWgrzbHA" role="37wK5m" />
+                      <node concept="1oAbNU" id="60PTWgrzbHB" role="37wK5m" />
+                      <node concept="2MNBq7" id="60PTWgrzbHC" role="37wK5m" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+              <node concept="3clFbF" id="60PTWgrzbHD" role="3cqZAp">
+                <node concept="3K4zz7" id="60PTWgrzbHE" role="3clFbG">
+                  <node concept="37vLTw" id="60PTWgrzbHF" role="3K4E3e">
+                    <ref role="3cqZAo" node="60PTWgrzbHs" resolve="descriptiontext" />
+                  </node>
+                  <node concept="2OqwBi" id="60PTWgrzbHG" role="3K4Cdx">
+                    <node concept="37vLTw" id="60PTWgrzbHH" role="2Oq$k0">
+                      <ref role="3cqZAo" node="60PTWgrzbHs" resolve="descriptiontext" />
+                    </node>
+                    <node concept="17RvpY" id="60PTWgrzbHI" role="2OqNvi" />
+                  </node>
+                  <node concept="Xl_RD" id="2zRMcT4P_fH" role="3K4GZi">
+                    <property role="Xl_RC" value="an algebraic term with type" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="315t4" id="60PTWgqYwAE" role="31dnJ">
+            <node concept="3clFbS" id="60PTWgqYwAF" role="2VODD2">
+              <node concept="3clFbF" id="60PTWgqYwAG" role="3cqZAp">
+                <node concept="2OqwBi" id="60PTWgqYwAH" role="3clFbG">
+                  <node concept="2YIFZM" id="60PTWgqYwAI" role="2Oq$k0">
+                    <ref role="37wK5l" to="oq0c:4qv99IrBnzk" resolve="getConfig" />
+                    <ref role="1Pybhc" to="oq0c:4qv99IrBkzE" resolve="EditorCustomizationConfigHelper" />
+                  </node>
+                  <node concept="liA8E" id="60PTWgqYwAJ" role="2OqNvi">
+                    <ref role="37wK5l" to="oq0c:60PTWgqXNLq" resolve="wrapperCellSideTransformationPostProcess" />
+                    <node concept="2YIFZM" id="60PTWgr12Qr" role="37wK5m">
+                      <ref role="37wK5l" to="oq0c:60PTWgovZKt" resolve="getIdentifier" />
+                      <ref role="1Pybhc" to="oq0c:4qv99IrBkzE" resolve="EditorCustomizationConfigHelper" />
+                      <node concept="35c_gC" id="60PTWgr12Qs" role="37wK5m">
+                        <ref role="35c_gD" to="v0r8:5a_u3OyMSN$" resolve="AlgebraicTerm" />
+                      </node>
+                      <node concept="359W_D" id="60PTWgr12Qt" role="37wK5m">
+                        <ref role="359W_E" to="v0r8:5a_u3OyMSN$" resolve="AlgebraicTerm" />
+                        <ref role="359W_F" to="v0r8:5a_u3OyMSQm" resolve="type" />
+                      </node>
+                    </node>
+                    <node concept="313q4" id="60PTWgqYwAN" role="37wK5m" />
+                    <node concept="2MNBq7" id="60PTWgqYwAO" role="37wK5m" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="315t4" id="60PTWgqZJ1D" role="31dnY">
+            <node concept="3clFbS" id="60PTWgqZJ1E" role="2VODD2">
+              <node concept="3clFbF" id="60PTWgqZJ1F" role="3cqZAp">
+                <node concept="2OqwBi" id="60PTWgqZJ1G" role="3clFbG">
+                  <node concept="2YIFZM" id="60PTWgqZJ1H" role="2Oq$k0">
+                    <ref role="37wK5l" to="oq0c:4qv99IrBnzk" resolve="getConfig" />
+                    <ref role="1Pybhc" to="oq0c:4qv99IrBkzE" resolve="EditorCustomizationConfigHelper" />
+                  </node>
+                  <node concept="liA8E" id="60PTWgqZJ1I" role="2OqNvi">
+                    <ref role="37wK5l" to="oq0c:60PTWgqXQTX" resolve="wrapperCellSubstitutionPostProcess" />
+                    <node concept="2YIFZM" id="60PTWgr12ZR" role="37wK5m">
+                      <ref role="37wK5l" to="oq0c:60PTWgovZKt" resolve="getIdentifier" />
+                      <ref role="1Pybhc" to="oq0c:4qv99IrBkzE" resolve="EditorCustomizationConfigHelper" />
+                      <node concept="35c_gC" id="60PTWgr12ZS" role="37wK5m">
+                        <ref role="35c_gD" to="v0r8:5a_u3OyMSN$" resolve="AlgebraicTerm" />
+                      </node>
+                      <node concept="359W_D" id="60PTWgr12ZT" role="37wK5m">
+                        <ref role="359W_E" to="v0r8:5a_u3OyMSN$" resolve="AlgebraicTerm" />
+                        <ref role="359W_F" to="v0r8:5a_u3OyMSQm" resolve="type" />
+                      </node>
+                    </node>
+                    <node concept="313q4" id="60PTWgqZJ1M" role="37wK5m" />
+                    <node concept="2MNBq7" id="60PTWgqZJ1N" role="37wK5m" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="2e7140" id="60PTWgq7Ogb" role="2e1Fq_">
+            <node concept="3clFbS" id="60PTWgq7Ogc" role="2VODD2">
+              <node concept="3clFbF" id="60PTWgq7Ogd" role="3cqZAp">
+                <node concept="2OqwBi" id="60PTWgq7Oge" role="3clFbG">
+                  <node concept="2YIFZM" id="60PTWgq7Ogf" role="2Oq$k0">
+                    <ref role="37wK5l" to="oq0c:4qv99IrBnzk" resolve="getConfig" />
+                    <ref role="1Pybhc" to="oq0c:4qv99IrBkzE" resolve="EditorCustomizationConfigHelper" />
+                  </node>
+                  <node concept="liA8E" id="60PTWgq7Ogg" role="2OqNvi">
+                    <ref role="37wK5l" to="oq0c:60PTWgq7bk$" resolve="isWrapperCellSideTransformationActivated" />
+                    <node concept="2YIFZM" id="60PTWgq7Ogh" role="37wK5m">
+                      <ref role="37wK5l" to="oq0c:60PTWgovZKt" resolve="getIdentifier" />
+                      <ref role="1Pybhc" to="oq0c:4qv99IrBkzE" resolve="EditorCustomizationConfigHelper" />
+                      <node concept="35c_gC" id="60PTWgq7Ogi" role="37wK5m">
+                        <ref role="35c_gD" to="v0r8:5a_u3OyMSN$" resolve="AlgebraicTerm" />
+                      </node>
+                      <node concept="359W_D" id="60PTWgq7Ogj" role="37wK5m">
+                        <ref role="359W_E" to="v0r8:5a_u3OyMSN$" resolve="AlgebraicTerm" />
+                        <ref role="359W_F" to="v0r8:5a_u3OyMSQm" resolve="type" />
+                      </node>
+                    </node>
+                    <node concept="2e73FJ" id="60PTWgq7Ogk" role="37wK5m" />
+                    <node concept="1Lj6YZ" id="60PTWgq7Ogl" role="37wK5m" />
+                    <node concept="2MNBq7" id="60PTWgq7Ogm" role="37wK5m" />
+                  </node>
                 </node>
               </node>
             </node>
@@ -580,9 +850,165 @@
           </node>
           <node concept="uPpia" id="2zRMcT4P_fI" role="1djCvC">
             <node concept="3clFbS" id="2zRMcT4P_fJ" role="2VODD2">
-              <node concept="3clFbF" id="2zRMcT4P_fK" role="3cqZAp">
-                <node concept="Xl_RD" id="2zRMcT4P_fL" role="3clFbG">
-                  <property role="Xl_RC" value="an algebraic term with type" />
+              <node concept="3cpWs8" id="60PTWgrzc7C" role="3cqZAp">
+                <node concept="3cpWsn" id="60PTWgrzc7D" role="3cpWs9">
+                  <property role="TrG5h" value="descriptiontext" />
+                  <node concept="17QB3L" id="60PTWgrzc7E" role="1tU5fm" />
+                  <node concept="2OqwBi" id="60PTWgrzc7F" role="33vP2m">
+                    <node concept="2YIFZM" id="60PTWgrzc7G" role="2Oq$k0">
+                      <ref role="37wK5l" to="oq0c:4qv99IrBnzk" resolve="getConfig" />
+                      <ref role="1Pybhc" to="oq0c:4qv99IrBkzE" resolve="EditorCustomizationConfigHelper" />
+                    </node>
+                    <node concept="liA8E" id="60PTWgrzc7H" role="2OqNvi">
+                      <ref role="37wK5l" to="oq0c:60PTWgry9kT" resolve="getWrapperCellSubstitutionDescriptionText" />
+                      <node concept="2YIFZM" id="60PTWgr$OUs" role="37wK5m">
+                        <ref role="37wK5l" to="oq0c:60PTWgovZKt" resolve="getIdentifier" />
+                        <ref role="1Pybhc" to="oq0c:4qv99IrBkzE" resolve="EditorCustomizationConfigHelper" />
+                        <node concept="35c_gC" id="60PTWgr$OUt" role="37wK5m">
+                          <ref role="35c_gD" to="v0r8:5a_u3OyMSN$" resolve="AlgebraicTerm" />
+                        </node>
+                        <node concept="359W_D" id="60PTWgr$OUu" role="37wK5m">
+                          <ref role="359W_E" to="v0r8:5a_u3OyMSN$" resolve="AlgebraicTerm" />
+                          <ref role="359W_F" to="v0r8:5a_u3OyMSQm" resolve="type" />
+                        </node>
+                      </node>
+                      <node concept="2e73FJ" id="60PTWgrzc7L" role="37wK5m" />
+                      <node concept="3dAXtN" id="60PTWgrzc7M" role="37wK5m" />
+                      <node concept="1Lj6YZ" id="60PTWgrzc7N" role="37wK5m" />
+                      <node concept="1oAbNU" id="60PTWgrzc7O" role="37wK5m" />
+                      <node concept="2MNBq7" id="60PTWgrzc7P" role="37wK5m" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+              <node concept="3clFbF" id="60PTWgrzc7Q" role="3cqZAp">
+                <node concept="3K4zz7" id="60PTWgrzc7R" role="3clFbG">
+                  <node concept="37vLTw" id="60PTWgrzc7S" role="3K4E3e">
+                    <ref role="3cqZAo" node="60PTWgrzc7D" resolve="descriptiontext" />
+                  </node>
+                  <node concept="2OqwBi" id="60PTWgrzc7T" role="3K4Cdx">
+                    <node concept="37vLTw" id="60PTWgrzc7U" role="2Oq$k0">
+                      <ref role="3cqZAo" node="60PTWgrzc7D" resolve="descriptiontext" />
+                    </node>
+                    <node concept="17RvpY" id="60PTWgrzc7V" role="2OqNvi" />
+                  </node>
+                  <node concept="Xl_RD" id="2zRMcT4P_fL" role="3K4GZi">
+                    <property role="Xl_RC" value="an algebraic term with type" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="315t4" id="60PTWgqYwQb" role="31dnJ">
+            <node concept="3clFbS" id="60PTWgqYwQc" role="2VODD2">
+              <node concept="3clFbF" id="60PTWgqYwQd" role="3cqZAp">
+                <node concept="2OqwBi" id="60PTWgqYwQe" role="3clFbG">
+                  <node concept="2YIFZM" id="60PTWgqYwQf" role="2Oq$k0">
+                    <ref role="37wK5l" to="oq0c:4qv99IrBnzk" resolve="getConfig" />
+                    <ref role="1Pybhc" to="oq0c:4qv99IrBkzE" resolve="EditorCustomizationConfigHelper" />
+                  </node>
+                  <node concept="liA8E" id="60PTWgqYwQg" role="2OqNvi">
+                    <ref role="37wK5l" to="oq0c:60PTWgqXNLq" resolve="wrapperCellSideTransformationPostProcess" />
+                    <node concept="2YIFZM" id="60PTWgr139u" role="37wK5m">
+                      <ref role="37wK5l" to="oq0c:60PTWgovZKt" resolve="getIdentifier" />
+                      <ref role="1Pybhc" to="oq0c:4qv99IrBkzE" resolve="EditorCustomizationConfigHelper" />
+                      <node concept="35c_gC" id="60PTWgr139v" role="37wK5m">
+                        <ref role="35c_gD" to="v0r8:5a_u3OyMSN$" resolve="AlgebraicTerm" />
+                      </node>
+                      <node concept="359W_D" id="60PTWgr139w" role="37wK5m">
+                        <ref role="359W_E" to="v0r8:5a_u3OyMSN$" resolve="AlgebraicTerm" />
+                        <ref role="359W_F" to="v0r8:5a_u3OyMSQm" resolve="type" />
+                      </node>
+                    </node>
+                    <node concept="313q4" id="60PTWgqYwQk" role="37wK5m" />
+                    <node concept="2MNBq7" id="60PTWgqYwQl" role="37wK5m" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="315t4" id="60PTWgqZJlt" role="31dnY">
+            <node concept="3clFbS" id="60PTWgqZJlu" role="2VODD2">
+              <node concept="3clFbF" id="60PTWgqZJlv" role="3cqZAp">
+                <node concept="2OqwBi" id="60PTWgqZJlw" role="3clFbG">
+                  <node concept="2YIFZM" id="60PTWgqZJlx" role="2Oq$k0">
+                    <ref role="37wK5l" to="oq0c:4qv99IrBnzk" resolve="getConfig" />
+                    <ref role="1Pybhc" to="oq0c:4qv99IrBkzE" resolve="EditorCustomizationConfigHelper" />
+                  </node>
+                  <node concept="liA8E" id="60PTWgqZJly" role="2OqNvi">
+                    <ref role="37wK5l" to="oq0c:60PTWgqXQTX" resolve="wrapperCellSubstitutionPostProcess" />
+                    <node concept="2YIFZM" id="60PTWgr13iU" role="37wK5m">
+                      <ref role="37wK5l" to="oq0c:60PTWgovZKt" resolve="getIdentifier" />
+                      <ref role="1Pybhc" to="oq0c:4qv99IrBkzE" resolve="EditorCustomizationConfigHelper" />
+                      <node concept="35c_gC" id="60PTWgr13iV" role="37wK5m">
+                        <ref role="35c_gD" to="v0r8:5a_u3OyMSN$" resolve="AlgebraicTerm" />
+                      </node>
+                      <node concept="359W_D" id="60PTWgr13iW" role="37wK5m">
+                        <ref role="359W_E" to="v0r8:5a_u3OyMSN$" resolve="AlgebraicTerm" />
+                        <ref role="359W_F" to="v0r8:5a_u3OyMSQm" resolve="type" />
+                      </node>
+                    </node>
+                    <node concept="313q4" id="60PTWgqZJlA" role="37wK5m" />
+                    <node concept="2MNBq7" id="60PTWgqZJlB" role="37wK5m" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="7duGs" id="60PTWgqdhtO" role="7deOD">
+            <node concept="3clFbS" id="60PTWgqdhtP" role="2VODD2">
+              <node concept="3clFbF" id="60PTWgqdhtQ" role="3cqZAp">
+                <node concept="2OqwBi" id="60PTWgqdhtR" role="3clFbG">
+                  <node concept="2YIFZM" id="60PTWgqdhtS" role="2Oq$k0">
+                    <ref role="37wK5l" to="oq0c:4qv99IrBnzk" resolve="getConfig" />
+                    <ref role="1Pybhc" to="oq0c:4qv99IrBkzE" resolve="EditorCustomizationConfigHelper" />
+                  </node>
+                  <node concept="liA8E" id="60PTWgqdhtT" role="2OqNvi">
+                    <ref role="37wK5l" to="oq0c:60PTWgq7bkl" resolve="isWrapperCellSubstitutionActivated" />
+                    <node concept="2YIFZM" id="60PTWgqdhtU" role="37wK5m">
+                      <ref role="37wK5l" to="oq0c:60PTWgovZKt" resolve="getIdentifier" />
+                      <ref role="1Pybhc" to="oq0c:4qv99IrBkzE" resolve="EditorCustomizationConfigHelper" />
+                      <node concept="35c_gC" id="60PTWgqelcn" role="37wK5m">
+                        <ref role="35c_gD" to="v0r8:5a_u3OyMSN$" resolve="AlgebraicTerm" />
+                      </node>
+                      <node concept="359W_D" id="60PTWgqeleQ" role="37wK5m">
+                        <ref role="359W_E" to="v0r8:5a_u3OyMSN$" resolve="AlgebraicTerm" />
+                        <ref role="359W_F" to="v0r8:5a_u3OyMSQm" resolve="type" />
+                      </node>
+                    </node>
+                    <node concept="7dpZ6" id="60PTWgqdhtX" role="37wK5m" />
+                    <node concept="1ZN7lz" id="60PTWgqdhtY" role="37wK5m" />
+                    <node concept="2MNBq7" id="60PTWgqdhtZ" role="37wK5m" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="2e7140" id="60PTWgq7OnG" role="2e1Fq_">
+            <node concept="3clFbS" id="60PTWgq7OnH" role="2VODD2">
+              <node concept="3clFbF" id="60PTWgq7OnI" role="3cqZAp">
+                <node concept="2OqwBi" id="60PTWgq7OnJ" role="3clFbG">
+                  <node concept="2YIFZM" id="60PTWgq7OnK" role="2Oq$k0">
+                    <ref role="37wK5l" to="oq0c:4qv99IrBnzk" resolve="getConfig" />
+                    <ref role="1Pybhc" to="oq0c:4qv99IrBkzE" resolve="EditorCustomizationConfigHelper" />
+                  </node>
+                  <node concept="liA8E" id="60PTWgq7OnL" role="2OqNvi">
+                    <ref role="37wK5l" to="oq0c:60PTWgq7bk$" resolve="isWrapperCellSideTransformationActivated" />
+                    <node concept="2YIFZM" id="60PTWgq7OnM" role="37wK5m">
+                      <ref role="37wK5l" to="oq0c:60PTWgovZKt" resolve="getIdentifier" />
+                      <ref role="1Pybhc" to="oq0c:4qv99IrBkzE" resolve="EditorCustomizationConfigHelper" />
+                      <node concept="35c_gC" id="60PTWgq7OnN" role="37wK5m">
+                        <ref role="35c_gD" to="v0r8:5a_u3OyMSN$" resolve="AlgebraicTerm" />
+                      </node>
+                      <node concept="359W_D" id="60PTWgq7OnO" role="37wK5m">
+                        <ref role="359W_E" to="v0r8:5a_u3OyMSN$" resolve="AlgebraicTerm" />
+                        <ref role="359W_F" to="v0r8:5a_u3OyMSQm" resolve="type" />
+                      </node>
+                    </node>
+                    <node concept="2e73FJ" id="60PTWgq7OnP" role="37wK5m" />
+                    <node concept="1Lj6YZ" id="60PTWgq7OnQ" role="37wK5m" />
+                    <node concept="2MNBq7" id="60PTWgq7OnR" role="37wK5m" />
+                  </node>
                 </node>
               </node>
             </node>
@@ -648,9 +1074,136 @@
             </node>
             <node concept="uPpia" id="2zRMcT4P_fM" role="1djCvC">
               <node concept="3clFbS" id="2zRMcT4P_fN" role="2VODD2">
-                <node concept="3clFbF" id="2zRMcT4P_fO" role="3cqZAp">
-                  <node concept="Xl_RD" id="2zRMcT4P_fP" role="3clFbG">
-                    <property role="Xl_RC" value="an algebraic term with type" />
+                <node concept="3cpWs8" id="60PTWgrzcx2" role="3cqZAp">
+                  <node concept="3cpWsn" id="60PTWgrzcx3" role="3cpWs9">
+                    <property role="TrG5h" value="descriptiontext" />
+                    <node concept="17QB3L" id="60PTWgrzcx4" role="1tU5fm" />
+                    <node concept="2OqwBi" id="60PTWgrzcx5" role="33vP2m">
+                      <node concept="2YIFZM" id="60PTWgrzcx6" role="2Oq$k0">
+                        <ref role="37wK5l" to="oq0c:4qv99IrBnzk" resolve="getConfig" />
+                        <ref role="1Pybhc" to="oq0c:4qv99IrBkzE" resolve="EditorCustomizationConfigHelper" />
+                      </node>
+                      <node concept="liA8E" id="60PTWgrzcx7" role="2OqNvi">
+                        <ref role="37wK5l" to="oq0c:60PTWgry9kT" resolve="getWrapperCellSubstitutionDescriptionText" />
+                        <node concept="2YIFZM" id="60PTWgr$P7C" role="37wK5m">
+                          <ref role="37wK5l" to="oq0c:60PTWgovZKt" resolve="getIdentifier" />
+                          <ref role="1Pybhc" to="oq0c:4qv99IrBkzE" resolve="EditorCustomizationConfigHelper" />
+                          <node concept="35c_gC" id="60PTWgr$P7D" role="37wK5m">
+                            <ref role="35c_gD" to="v0r8:5a_u3OyMSN$" resolve="AlgebraicTerm" />
+                          </node>
+                          <node concept="359W_D" id="60PTWgr$P7E" role="37wK5m">
+                            <ref role="359W_E" to="v0r8:5a_u3OyMSN$" resolve="AlgebraicTerm" />
+                            <ref role="359W_F" to="v0r8:5a_u3OyMSQm" resolve="type" />
+                          </node>
+                        </node>
+                        <node concept="2e73FJ" id="60PTWgrzcxb" role="37wK5m" />
+                        <node concept="3dAXtN" id="60PTWgrzcxc" role="37wK5m" />
+                        <node concept="1Lj6YZ" id="60PTWgrzcxd" role="37wK5m" />
+                        <node concept="1oAbNU" id="60PTWgrzcxe" role="37wK5m" />
+                        <node concept="2MNBq7" id="60PTWgrzcxf" role="37wK5m" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+                <node concept="3clFbF" id="60PTWgrzcxg" role="3cqZAp">
+                  <node concept="3K4zz7" id="60PTWgrzcxh" role="3clFbG">
+                    <node concept="37vLTw" id="60PTWgrzcxi" role="3K4E3e">
+                      <ref role="3cqZAo" node="60PTWgrzcx3" resolve="descriptiontext" />
+                    </node>
+                    <node concept="2OqwBi" id="60PTWgrzcxj" role="3K4Cdx">
+                      <node concept="37vLTw" id="60PTWgrzcxk" role="2Oq$k0">
+                        <ref role="3cqZAo" node="60PTWgrzcx3" resolve="descriptiontext" />
+                      </node>
+                      <node concept="17RvpY" id="60PTWgrzcxl" role="2OqNvi" />
+                    </node>
+                    <node concept="Xl_RD" id="2zRMcT4P_fP" role="3K4GZi">
+                      <property role="Xl_RC" value="an algebraic term with type" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="315t4" id="60PTWgqYx5y" role="31dnJ">
+              <node concept="3clFbS" id="60PTWgqYx5z" role="2VODD2">
+                <node concept="3clFbF" id="60PTWgqYx5$" role="3cqZAp">
+                  <node concept="2OqwBi" id="60PTWgqYx5_" role="3clFbG">
+                    <node concept="2YIFZM" id="60PTWgqYx5A" role="2Oq$k0">
+                      <ref role="37wK5l" to="oq0c:4qv99IrBnzk" resolve="getConfig" />
+                      <ref role="1Pybhc" to="oq0c:4qv99IrBkzE" resolve="EditorCustomizationConfigHelper" />
+                    </node>
+                    <node concept="liA8E" id="60PTWgqYx5B" role="2OqNvi">
+                      <ref role="37wK5l" to="oq0c:60PTWgqXNLq" resolve="wrapperCellSideTransformationPostProcess" />
+                      <node concept="2YIFZM" id="60PTWgr13sx" role="37wK5m">
+                        <ref role="37wK5l" to="oq0c:60PTWgovZKt" resolve="getIdentifier" />
+                        <ref role="1Pybhc" to="oq0c:4qv99IrBkzE" resolve="EditorCustomizationConfigHelper" />
+                        <node concept="35c_gC" id="60PTWgr13sy" role="37wK5m">
+                          <ref role="35c_gD" to="v0r8:5a_u3OyMSN$" resolve="AlgebraicTerm" />
+                        </node>
+                        <node concept="359W_D" id="60PTWgr13sz" role="37wK5m">
+                          <ref role="359W_E" to="v0r8:5a_u3OyMSN$" resolve="AlgebraicTerm" />
+                          <ref role="359W_F" to="v0r8:5a_u3OyMSQm" resolve="type" />
+                        </node>
+                      </node>
+                      <node concept="313q4" id="60PTWgqYx5F" role="37wK5m" />
+                      <node concept="2MNBq7" id="60PTWgqYx5G" role="37wK5m" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="315t4" id="60PTWgqZJFA" role="31dnY">
+              <node concept="3clFbS" id="60PTWgqZJFB" role="2VODD2">
+                <node concept="3clFbF" id="60PTWgqZJFC" role="3cqZAp">
+                  <node concept="2OqwBi" id="60PTWgqZJFD" role="3clFbG">
+                    <node concept="2YIFZM" id="60PTWgqZJFE" role="2Oq$k0">
+                      <ref role="37wK5l" to="oq0c:4qv99IrBnzk" resolve="getConfig" />
+                      <ref role="1Pybhc" to="oq0c:4qv99IrBkzE" resolve="EditorCustomizationConfigHelper" />
+                    </node>
+                    <node concept="liA8E" id="60PTWgqZJFF" role="2OqNvi">
+                      <ref role="37wK5l" to="oq0c:60PTWgqXQTX" resolve="wrapperCellSubstitutionPostProcess" />
+                      <node concept="2YIFZM" id="60PTWgr13FL" role="37wK5m">
+                        <ref role="37wK5l" to="oq0c:60PTWgovZKt" resolve="getIdentifier" />
+                        <ref role="1Pybhc" to="oq0c:4qv99IrBkzE" resolve="EditorCustomizationConfigHelper" />
+                        <node concept="35c_gC" id="60PTWgr13FM" role="37wK5m">
+                          <ref role="35c_gD" to="v0r8:5a_u3OyMSN$" resolve="AlgebraicTerm" />
+                        </node>
+                        <node concept="359W_D" id="60PTWgr13FN" role="37wK5m">
+                          <ref role="359W_E" to="v0r8:5a_u3OyMSN$" resolve="AlgebraicTerm" />
+                          <ref role="359W_F" to="v0r8:5a_u3OyMSQm" resolve="type" />
+                        </node>
+                      </node>
+                      <node concept="313q4" id="60PTWgqZJFJ" role="37wK5m" />
+                      <node concept="2MNBq7" id="60PTWgqZJFK" role="37wK5m" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="2e7140" id="60PTWgq7OtC" role="2e1Fq_">
+              <node concept="3clFbS" id="60PTWgq7OtD" role="2VODD2">
+                <node concept="3clFbF" id="60PTWgq7OtE" role="3cqZAp">
+                  <node concept="2OqwBi" id="60PTWgq7OtF" role="3clFbG">
+                    <node concept="2YIFZM" id="60PTWgq7OtG" role="2Oq$k0">
+                      <ref role="37wK5l" to="oq0c:4qv99IrBnzk" resolve="getConfig" />
+                      <ref role="1Pybhc" to="oq0c:4qv99IrBkzE" resolve="EditorCustomizationConfigHelper" />
+                    </node>
+                    <node concept="liA8E" id="60PTWgq7OtH" role="2OqNvi">
+                      <ref role="37wK5l" to="oq0c:60PTWgq7bk$" resolve="isWrapperCellSideTransformationActivated" />
+                      <node concept="2YIFZM" id="60PTWgq7OtI" role="37wK5m">
+                        <ref role="37wK5l" to="oq0c:60PTWgovZKt" resolve="getIdentifier" />
+                        <ref role="1Pybhc" to="oq0c:4qv99IrBkzE" resolve="EditorCustomizationConfigHelper" />
+                        <node concept="35c_gC" id="60PTWgq7OtJ" role="37wK5m">
+                          <ref role="35c_gD" to="v0r8:5a_u3OyMSN$" resolve="AlgebraicTerm" />
+                        </node>
+                        <node concept="359W_D" id="60PTWgq7OtK" role="37wK5m">
+                          <ref role="359W_E" to="v0r8:5a_u3OyMSN$" resolve="AlgebraicTerm" />
+                          <ref role="359W_F" to="v0r8:5a_u3OyMSQm" resolve="type" />
+                        </node>
+                      </node>
+                      <node concept="2e73FJ" id="60PTWgq7OtL" role="37wK5m" />
+                      <node concept="1Lj6YZ" id="60PTWgq7OtM" role="37wK5m" />
+                      <node concept="2MNBq7" id="60PTWgq7OtN" role="37wK5m" />
+                    </node>
                   </node>
                 </node>
               </node>
@@ -770,9 +1323,136 @@
               </node>
               <node concept="uPpia" id="2zRMcT4P_fQ" role="1djCvC">
                 <node concept="3clFbS" id="2zRMcT4P_fR" role="2VODD2">
-                  <node concept="3clFbF" id="2zRMcT4P_fS" role="3cqZAp">
-                    <node concept="Xl_RD" id="2zRMcT4P_fT" role="3clFbG">
-                      <property role="Xl_RC" value="an algebraic term with type" />
+                  <node concept="3cpWs8" id="60PTWgrzcVO" role="3cqZAp">
+                    <node concept="3cpWsn" id="60PTWgrzcVP" role="3cpWs9">
+                      <property role="TrG5h" value="descriptiontext" />
+                      <node concept="17QB3L" id="60PTWgrzcVQ" role="1tU5fm" />
+                      <node concept="2OqwBi" id="60PTWgrzcVR" role="33vP2m">
+                        <node concept="2YIFZM" id="60PTWgrzcVS" role="2Oq$k0">
+                          <ref role="37wK5l" to="oq0c:4qv99IrBnzk" resolve="getConfig" />
+                          <ref role="1Pybhc" to="oq0c:4qv99IrBkzE" resolve="EditorCustomizationConfigHelper" />
+                        </node>
+                        <node concept="liA8E" id="60PTWgrzcVT" role="2OqNvi">
+                          <ref role="37wK5l" to="oq0c:60PTWgry9kT" resolve="getWrapperCellSubstitutionDescriptionText" />
+                          <node concept="2YIFZM" id="60PTWgr$PkO" role="37wK5m">
+                            <ref role="37wK5l" to="oq0c:60PTWgovZKt" resolve="getIdentifier" />
+                            <ref role="1Pybhc" to="oq0c:4qv99IrBkzE" resolve="EditorCustomizationConfigHelper" />
+                            <node concept="35c_gC" id="60PTWgr$PkP" role="37wK5m">
+                              <ref role="35c_gD" to="v0r8:5a_u3OyMSN$" resolve="AlgebraicTerm" />
+                            </node>
+                            <node concept="359W_D" id="60PTWgr$PkQ" role="37wK5m">
+                              <ref role="359W_E" to="v0r8:5a_u3OyMSN$" resolve="AlgebraicTerm" />
+                              <ref role="359W_F" to="v0r8:5a_u3OyMSQm" resolve="type" />
+                            </node>
+                          </node>
+                          <node concept="2e73FJ" id="60PTWgrzcVX" role="37wK5m" />
+                          <node concept="3dAXtN" id="60PTWgrzcVY" role="37wK5m" />
+                          <node concept="1Lj6YZ" id="60PTWgrzcVZ" role="37wK5m" />
+                          <node concept="1oAbNU" id="60PTWgrzcW0" role="37wK5m" />
+                          <node concept="2MNBq7" id="60PTWgrzcW1" role="37wK5m" />
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                  <node concept="3clFbF" id="60PTWgrzcW2" role="3cqZAp">
+                    <node concept="3K4zz7" id="60PTWgrzcW3" role="3clFbG">
+                      <node concept="37vLTw" id="60PTWgrzcW4" role="3K4E3e">
+                        <ref role="3cqZAo" node="60PTWgrzcVP" resolve="descriptiontext" />
+                      </node>
+                      <node concept="2OqwBi" id="60PTWgrzcW5" role="3K4Cdx">
+                        <node concept="37vLTw" id="60PTWgrzcW6" role="2Oq$k0">
+                          <ref role="3cqZAo" node="60PTWgrzcVP" resolve="descriptiontext" />
+                        </node>
+                        <node concept="17RvpY" id="60PTWgrzcW7" role="2OqNvi" />
+                      </node>
+                      <node concept="Xl_RD" id="2zRMcT4P_fT" role="3K4GZi">
+                        <property role="Xl_RC" value="an algebraic term with type" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+              <node concept="315t4" id="60PTWgqYxl0" role="31dnJ">
+                <node concept="3clFbS" id="60PTWgqYxl1" role="2VODD2">
+                  <node concept="3clFbF" id="60PTWgqYxl2" role="3cqZAp">
+                    <node concept="2OqwBi" id="60PTWgqYxl3" role="3clFbG">
+                      <node concept="2YIFZM" id="60PTWgqYxl4" role="2Oq$k0">
+                        <ref role="37wK5l" to="oq0c:4qv99IrBnzk" resolve="getConfig" />
+                        <ref role="1Pybhc" to="oq0c:4qv99IrBkzE" resolve="EditorCustomizationConfigHelper" />
+                      </node>
+                      <node concept="liA8E" id="60PTWgqYxl5" role="2OqNvi">
+                        <ref role="37wK5l" to="oq0c:60PTWgqXNLq" resolve="wrapperCellSideTransformationPostProcess" />
+                        <node concept="2YIFZM" id="60PTWgr13Po" role="37wK5m">
+                          <ref role="37wK5l" to="oq0c:60PTWgovZKt" resolve="getIdentifier" />
+                          <ref role="1Pybhc" to="oq0c:4qv99IrBkzE" resolve="EditorCustomizationConfigHelper" />
+                          <node concept="35c_gC" id="60PTWgr13Pp" role="37wK5m">
+                            <ref role="35c_gD" to="v0r8:5a_u3OyMSN$" resolve="AlgebraicTerm" />
+                          </node>
+                          <node concept="359W_D" id="60PTWgr13Pq" role="37wK5m">
+                            <ref role="359W_E" to="v0r8:5a_u3OyMSN$" resolve="AlgebraicTerm" />
+                            <ref role="359W_F" to="v0r8:5a_u3OyMSQm" resolve="type" />
+                          </node>
+                        </node>
+                        <node concept="313q4" id="60PTWgqYxl9" role="37wK5m" />
+                        <node concept="2MNBq7" id="60PTWgqYxla" role="37wK5m" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+              <node concept="315t4" id="60PTWgqZK1Q" role="31dnY">
+                <node concept="3clFbS" id="60PTWgqZK1R" role="2VODD2">
+                  <node concept="3clFbF" id="60PTWgqZK1S" role="3cqZAp">
+                    <node concept="2OqwBi" id="60PTWgqZK1T" role="3clFbG">
+                      <node concept="2YIFZM" id="60PTWgqZK1U" role="2Oq$k0">
+                        <ref role="37wK5l" to="oq0c:4qv99IrBnzk" resolve="getConfig" />
+                        <ref role="1Pybhc" to="oq0c:4qv99IrBkzE" resolve="EditorCustomizationConfigHelper" />
+                      </node>
+                      <node concept="liA8E" id="60PTWgqZK1V" role="2OqNvi">
+                        <ref role="37wK5l" to="oq0c:60PTWgqXQTX" resolve="wrapperCellSubstitutionPostProcess" />
+                        <node concept="2YIFZM" id="60PTWgr13YO" role="37wK5m">
+                          <ref role="37wK5l" to="oq0c:60PTWgovZKt" resolve="getIdentifier" />
+                          <ref role="1Pybhc" to="oq0c:4qv99IrBkzE" resolve="EditorCustomizationConfigHelper" />
+                          <node concept="35c_gC" id="60PTWgr13YP" role="37wK5m">
+                            <ref role="35c_gD" to="v0r8:5a_u3OyMSN$" resolve="AlgebraicTerm" />
+                          </node>
+                          <node concept="359W_D" id="60PTWgr13YQ" role="37wK5m">
+                            <ref role="359W_E" to="v0r8:5a_u3OyMSN$" resolve="AlgebraicTerm" />
+                            <ref role="359W_F" to="v0r8:5a_u3OyMSQm" resolve="type" />
+                          </node>
+                        </node>
+                        <node concept="313q4" id="60PTWgqZK1Z" role="37wK5m" />
+                        <node concept="2MNBq7" id="60PTWgqZK20" role="37wK5m" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+              <node concept="2e7140" id="60PTWgq7O$Q" role="2e1Fq_">
+                <node concept="3clFbS" id="60PTWgq7O$R" role="2VODD2">
+                  <node concept="3clFbF" id="60PTWgq7O$S" role="3cqZAp">
+                    <node concept="2OqwBi" id="60PTWgq7O$T" role="3clFbG">
+                      <node concept="2YIFZM" id="60PTWgq7O$U" role="2Oq$k0">
+                        <ref role="37wK5l" to="oq0c:4qv99IrBnzk" resolve="getConfig" />
+                        <ref role="1Pybhc" to="oq0c:4qv99IrBkzE" resolve="EditorCustomizationConfigHelper" />
+                      </node>
+                      <node concept="liA8E" id="60PTWgq7O$V" role="2OqNvi">
+                        <ref role="37wK5l" to="oq0c:60PTWgq7bk$" resolve="isWrapperCellSideTransformationActivated" />
+                        <node concept="2YIFZM" id="60PTWgq7O$W" role="37wK5m">
+                          <ref role="37wK5l" to="oq0c:60PTWgovZKt" resolve="getIdentifier" />
+                          <ref role="1Pybhc" to="oq0c:4qv99IrBkzE" resolve="EditorCustomizationConfigHelper" />
+                          <node concept="35c_gC" id="60PTWgq7O$X" role="37wK5m">
+                            <ref role="35c_gD" to="v0r8:5a_u3OyMSN$" resolve="AlgebraicTerm" />
+                          </node>
+                          <node concept="359W_D" id="60PTWgq7O$Y" role="37wK5m">
+                            <ref role="359W_E" to="v0r8:5a_u3OyMSN$" resolve="AlgebraicTerm" />
+                            <ref role="359W_F" to="v0r8:5a_u3OyMSQm" resolve="type" />
+                          </node>
+                        </node>
+                        <node concept="2e73FJ" id="60PTWgq7O$Z" role="37wK5m" />
+                        <node concept="1Lj6YZ" id="60PTWgq7O_0" role="37wK5m" />
+                        <node concept="2MNBq7" id="60PTWgq7O_1" role="37wK5m" />
+                      </node>
                     </node>
                   </node>
                 </node>
@@ -895,17 +1575,185 @@
           </node>
           <node concept="2e7140" id="6HHp2Wnfd$i" role="2e1Fq_">
             <node concept="3clFbS" id="6HHp2Wnfd$j" role="2VODD2">
-              <node concept="3clFbF" id="6HHp2WnfdAn" role="3cqZAp">
-                <node concept="2OqwBi" id="6HHp2WnfdRJ" role="3clFbG">
-                  <node concept="2OqwBi" id="6HHp2WnfdD5" role="2Oq$k0">
-                    <node concept="2e73FJ" id="6HHp2WnfdAm" role="2Oq$k0" />
-                    <node concept="3JvlWi" id="6HHp2WnfdNg" role="2OqNvi" />
-                  </node>
-                  <node concept="1mIQ4w" id="6HHp2WnfdW_" role="2OqNvi">
-                    <node concept="chp4Y" id="5a_u3OyQsXI" role="cj9EA">
-                      <ref role="cht4Q" to="v0r8:5a_u3OyM_sl" resolve="AlgebraicConstructorType" />
+              <node concept="3cpWs8" id="60PTWgq7M21" role="3cqZAp">
+                <node concept="3cpWsn" id="60PTWgq7M24" role="3cpWs9">
+                  <property role="TrG5h" value="condition" />
+                  <node concept="10P_77" id="60PTWgq7M1Z" role="1tU5fm" />
+                  <node concept="2OqwBi" id="60PTWgq7zBq" role="33vP2m">
+                    <node concept="2YIFZM" id="60PTWgq7zBr" role="2Oq$k0">
+                      <ref role="37wK5l" to="oq0c:4qv99IrBnzk" resolve="getConfig" />
+                      <ref role="1Pybhc" to="oq0c:4qv99IrBkzE" resolve="EditorCustomizationConfigHelper" />
+                    </node>
+                    <node concept="liA8E" id="60PTWgq7zBs" role="2OqNvi">
+                      <ref role="37wK5l" to="oq0c:60PTWgq7bk$" resolve="isWrapperCellSideTransformationActivated" />
+                      <node concept="2YIFZM" id="60PTWgq7zBt" role="37wK5m">
+                        <ref role="37wK5l" to="oq0c:60PTWgovZKt" resolve="getIdentifier" />
+                        <ref role="1Pybhc" to="oq0c:4qv99IrBkzE" resolve="EditorCustomizationConfigHelper" />
+                        <node concept="35c_gC" id="60PTWgq7$Do" role="37wK5m">
+                          <ref role="35c_gD" to="v0r8:5a_u3OyQ3QL" resolve="AlgebraicArgAccess" />
+                        </node>
+                        <node concept="359W_D" id="60PTWgq7$MX" role="37wK5m">
+                          <ref role="359W_E" to="v0r8:5a_u3OyQ3QL" resolve="AlgebraicArgAccess" />
+                          <ref role="359W_F" to="hm2y:3G_qVqIw4zp" resolve="expr" />
+                        </node>
+                      </node>
+                      <node concept="2e73FJ" id="60PTWgq7_Vg" role="37wK5m" />
+                      <node concept="1Lj6YZ" id="60PTWgq7AcO" role="37wK5m" />
+                      <node concept="2MNBq7" id="60PTWgq7Atr" role="37wK5m" />
                     </node>
                   </node>
+                </node>
+              </node>
+              <node concept="3clFbF" id="6HHp2WnfdAn" role="3cqZAp">
+                <node concept="1Wc70l" id="60PTWgq7MmR" role="3clFbG">
+                  <node concept="37vLTw" id="60PTWgq7Mq1" role="3uHU7B">
+                    <ref role="3cqZAo" node="60PTWgq7M24" resolve="condition" />
+                  </node>
+                  <node concept="2OqwBi" id="6HHp2WnfdRJ" role="3uHU7w">
+                    <node concept="2OqwBi" id="6HHp2WnfdD5" role="2Oq$k0">
+                      <node concept="2e73FJ" id="6HHp2WnfdAm" role="2Oq$k0" />
+                      <node concept="3JvlWi" id="6HHp2WnfdNg" role="2OqNvi" />
+                    </node>
+                    <node concept="1mIQ4w" id="6HHp2WnfdW_" role="2OqNvi">
+                      <node concept="chp4Y" id="5a_u3OyQsXI" role="cj9EA">
+                        <ref role="cht4Q" to="v0r8:5a_u3OyM_sl" resolve="AlgebraicConstructorType" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="315t4" id="60PTWgqY1TG" role="31dnJ">
+            <node concept="3clFbS" id="60PTWgqY1TH" role="2VODD2">
+              <node concept="3clFbF" id="60PTWgqY1Zk" role="3cqZAp">
+                <node concept="2OqwBi" id="60PTWgqY1Zl" role="3clFbG">
+                  <node concept="2YIFZM" id="60PTWgqY1Zm" role="2Oq$k0">
+                    <ref role="37wK5l" to="oq0c:4qv99IrBnzk" resolve="getConfig" />
+                    <ref role="1Pybhc" to="oq0c:4qv99IrBkzE" resolve="EditorCustomizationConfigHelper" />
+                  </node>
+                  <node concept="liA8E" id="60PTWgqY1Zn" role="2OqNvi">
+                    <ref role="37wK5l" to="oq0c:60PTWgqXNLq" resolve="wrapperCellSideTransformationPostProcess" />
+                    <node concept="2YIFZM" id="60PTWgr107l" role="37wK5m">
+                      <ref role="37wK5l" to="oq0c:60PTWgovZKt" resolve="getIdentifier" />
+                      <ref role="1Pybhc" to="oq0c:4qv99IrBkzE" resolve="EditorCustomizationConfigHelper" />
+                      <node concept="35c_gC" id="60PTWgr107m" role="37wK5m">
+                        <ref role="35c_gD" to="v0r8:5a_u3OyQ3QL" resolve="AlgebraicArgAccess" />
+                      </node>
+                      <node concept="359W_D" id="60PTWgr107n" role="37wK5m">
+                        <ref role="359W_E" to="v0r8:5a_u3OyQ3QL" resolve="AlgebraicArgAccess" />
+                        <ref role="359W_F" to="hm2y:3G_qVqIw4zp" resolve="expr" />
+                      </node>
+                    </node>
+                    <node concept="313q4" id="60PTWgqY3cH" role="37wK5m" />
+                    <node concept="2MNBq7" id="60PTWgqY1Zt" role="37wK5m" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="315t4" id="60PTWgqZqtc" role="31dnY">
+            <node concept="3clFbS" id="60PTWgqZqtd" role="2VODD2">
+              <node concept="3clFbF" id="60PTWgqZuo$" role="3cqZAp">
+                <node concept="2OqwBi" id="60PTWgqZuo_" role="3clFbG">
+                  <node concept="2YIFZM" id="60PTWgqZuoA" role="2Oq$k0">
+                    <ref role="37wK5l" to="oq0c:4qv99IrBnzk" resolve="getConfig" />
+                    <ref role="1Pybhc" to="oq0c:4qv99IrBkzE" resolve="EditorCustomizationConfigHelper" />
+                  </node>
+                  <node concept="liA8E" id="60PTWgqZuoB" role="2OqNvi">
+                    <ref role="37wK5l" to="oq0c:60PTWgqXQTX" resolve="wrapperCellSubstitutionPostProcess" />
+                    <node concept="2YIFZM" id="60PTWgr10c5" role="37wK5m">
+                      <ref role="37wK5l" to="oq0c:60PTWgovZKt" resolve="getIdentifier" />
+                      <ref role="1Pybhc" to="oq0c:4qv99IrBkzE" resolve="EditorCustomizationConfigHelper" />
+                      <node concept="35c_gC" id="60PTWgr10c6" role="37wK5m">
+                        <ref role="35c_gD" to="v0r8:5a_u3OyQ3QL" resolve="AlgebraicArgAccess" />
+                      </node>
+                      <node concept="359W_D" id="60PTWgr10c7" role="37wK5m">
+                        <ref role="359W_E" to="v0r8:5a_u3OyQ3QL" resolve="AlgebraicArgAccess" />
+                        <ref role="359W_F" to="hm2y:3G_qVqIw4zp" resolve="expr" />
+                      </node>
+                    </node>
+                    <node concept="313q4" id="60PTWgqZuoF" role="37wK5m" />
+                    <node concept="2MNBq7" id="60PTWgqZuoG" role="37wK5m" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="7duGs" id="60PTWgqcYVi" role="7deOD">
+            <node concept="3clFbS" id="60PTWgqcYVj" role="2VODD2">
+              <node concept="3clFbF" id="60PTWgqcYZc" role="3cqZAp">
+                <node concept="2OqwBi" id="60PTWgqcYZd" role="3clFbG">
+                  <node concept="2YIFZM" id="60PTWgqcYZe" role="2Oq$k0">
+                    <ref role="37wK5l" to="oq0c:4qv99IrBnzk" resolve="getConfig" />
+                    <ref role="1Pybhc" to="oq0c:4qv99IrBkzE" resolve="EditorCustomizationConfigHelper" />
+                  </node>
+                  <node concept="liA8E" id="60PTWgqcYZf" role="2OqNvi">
+                    <ref role="37wK5l" to="oq0c:60PTWgq7bkl" resolve="isWrapperCellSubstitutionActivated" />
+                    <node concept="2YIFZM" id="60PTWgqcYZg" role="37wK5m">
+                      <ref role="37wK5l" to="oq0c:60PTWgovZKt" resolve="getIdentifier" />
+                      <ref role="1Pybhc" to="oq0c:4qv99IrBkzE" resolve="EditorCustomizationConfigHelper" />
+                      <node concept="35c_gC" id="60PTWgqej73" role="37wK5m">
+                        <ref role="35c_gD" to="v0r8:5a_u3OyQ3QL" resolve="AlgebraicArgAccess" />
+                      </node>
+                      <node concept="359W_D" id="60PTWgqejgW" role="37wK5m">
+                        <ref role="359W_E" to="v0r8:5a_u3OyQ3QL" resolve="AlgebraicArgAccess" />
+                        <ref role="359W_F" to="hm2y:3G_qVqIw4zp" resolve="expr" />
+                      </node>
+                    </node>
+                    <node concept="7dpZ6" id="60PTWgqd3w$" role="37wK5m" />
+                    <node concept="1ZN7lz" id="60PTWgqd3QB" role="37wK5m" />
+                    <node concept="2MNBq7" id="60PTWgqcYZl" role="37wK5m" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="uPpia" id="60PTWgrz8g0" role="1djCvC">
+            <node concept="3clFbS" id="60PTWgrz8g1" role="2VODD2">
+              <node concept="3cpWs8" id="60PTWgryKR8" role="3cqZAp">
+                <node concept="3cpWsn" id="60PTWgryKR9" role="3cpWs9">
+                  <property role="TrG5h" value="descriptiontext" />
+                  <node concept="17QB3L" id="60PTWgryKRa" role="1tU5fm" />
+                  <node concept="2OqwBi" id="60PTWgryKRb" role="33vP2m">
+                    <node concept="2YIFZM" id="60PTWgryKRc" role="2Oq$k0">
+                      <ref role="37wK5l" to="oq0c:4qv99IrBnzk" resolve="getConfig" />
+                      <ref role="1Pybhc" to="oq0c:4qv99IrBkzE" resolve="EditorCustomizationConfigHelper" />
+                    </node>
+                    <node concept="liA8E" id="60PTWgryKRd" role="2OqNvi">
+                      <ref role="37wK5l" to="oq0c:60PTWgry9kT" resolve="getWrapperCellSubstitutionDescriptionText" />
+                      <node concept="2YIFZM" id="60PTWgr$LCk" role="37wK5m">
+                        <ref role="37wK5l" to="oq0c:60PTWgovZKt" resolve="getIdentifier" />
+                        <ref role="1Pybhc" to="oq0c:4qv99IrBkzE" resolve="EditorCustomizationConfigHelper" />
+                        <node concept="35c_gC" id="60PTWgr$LCl" role="37wK5m">
+                          <ref role="35c_gD" to="v0r8:5a_u3OyQ3QL" resolve="AlgebraicArgAccess" />
+                        </node>
+                        <node concept="359W_D" id="60PTWgr$LCm" role="37wK5m">
+                          <ref role="359W_E" to="v0r8:5a_u3OyQ3QL" resolve="AlgebraicArgAccess" />
+                          <ref role="359W_F" to="hm2y:3G_qVqIw4zp" resolve="expr" />
+                        </node>
+                      </node>
+                      <node concept="2e73FJ" id="60PTWgryNjr" role="37wK5m" />
+                      <node concept="3dAXtN" id="60PTWgryNtQ" role="37wK5m" />
+                      <node concept="1Lj6YZ" id="60PTWgryNTZ" role="37wK5m" />
+                      <node concept="1oAbNU" id="60PTWgryOdP" role="37wK5m" />
+                      <node concept="2MNBq7" id="60PTWgryO$L" role="37wK5m" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+              <node concept="3clFbF" id="60PTWgryKRj" role="3cqZAp">
+                <node concept="3K4zz7" id="60PTWgryKRk" role="3clFbG">
+                  <node concept="37vLTw" id="60PTWgryKRl" role="3K4E3e">
+                    <ref role="3cqZAo" node="60PTWgryKR9" resolve="descriptiontext" />
+                  </node>
+                  <node concept="2OqwBi" id="60PTWgryKRm" role="3K4Cdx">
+                    <node concept="37vLTw" id="60PTWgryKRn" role="2Oq$k0">
+                      <ref role="3cqZAo" node="60PTWgryKR9" resolve="descriptiontext" />
+                    </node>
+                    <node concept="17RvpY" id="60PTWgryKRo" role="2OqNvi" />
+                  </node>
+                  <node concept="1oAbNU" id="60PTWgrAdAO" role="3K4GZi" />
                 </node>
               </node>
             </node>
@@ -1013,9 +1861,49 @@
         </node>
         <node concept="uPpia" id="1ZlHRbgl0mN" role="1djCvC">
           <node concept="3clFbS" id="1ZlHRbgl0mO" role="2VODD2">
-            <node concept="3clFbF" id="1ZlHRbgl0nb" role="3cqZAp">
-              <node concept="Xl_RD" id="1ZlHRbgl0na" role="3clFbG">
-                <property role="Xl_RC" value="a condition for the case" />
+            <node concept="3cpWs8" id="60PTWgneeSx" role="3cqZAp">
+              <node concept="3cpWsn" id="60PTWgneeSy" role="3cpWs9">
+                <property role="TrG5h" value="description" />
+                <node concept="17QB3L" id="60PTWgneeSz" role="1tU5fm" />
+                <node concept="2OqwBi" id="60PTWgneeS$" role="33vP2m">
+                  <node concept="2YIFZM" id="60PTWgneeS_" role="2Oq$k0">
+                    <ref role="37wK5l" to="oq0c:4qv99IrBnzk" resolve="getConfig" />
+                    <ref role="1Pybhc" to="oq0c:4qv99IrBkzE" resolve="EditorCustomizationConfigHelper" />
+                  </node>
+                  <node concept="liA8E" id="60PTWgneeSA" role="2OqNvi">
+                    <ref role="37wK5l" to="oq0c:60PTWgnc5Jg" resolve="getOptionalCellDescriptionText" />
+                    <node concept="2YIFZM" id="60PTWgoxoaX" role="37wK5m">
+                      <ref role="37wK5l" to="oq0c:60PTWgovZKt" resolve="getIdentifier" />
+                      <ref role="1Pybhc" to="oq0c:4qv99IrBkzE" resolve="EditorCustomizationConfigHelper" />
+                      <node concept="35c_gC" id="60PTWgoxoaY" role="37wK5m">
+                        <ref role="35c_gD" to="v0r8:5a_u3OySk8l" resolve="MatchCase" />
+                      </node>
+                      <node concept="359W_D" id="60PTWgoBv9Z" role="37wK5m">
+                        <ref role="359W_E" to="v0r8:5a_u3OySk8l" resolve="MatchCase" />
+                        <ref role="359W_F" to="v0r8:5a_u3Oz5b2N" resolve="cond" />
+                      </node>
+                    </node>
+                    <node concept="313q4" id="60PTWgneeSE" role="37wK5m" />
+                    <node concept="1oAbNU" id="60PTWgneeSF" role="37wK5m" />
+                    <node concept="2MNBq7" id="60PTWgneeSG" role="37wK5m" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3clFbF" id="60PTWgmkZsV" role="3cqZAp">
+              <node concept="3K4zz7" id="60PTWgneeSI" role="3clFbG">
+                <node concept="37vLTw" id="60PTWgneeSJ" role="3K4E3e">
+                  <ref role="3cqZAo" node="60PTWgneeSy" resolve="description" />
+                </node>
+                <node concept="2OqwBi" id="60PTWgneeSL" role="3K4Cdx">
+                  <node concept="37vLTw" id="60PTWgneeSM" role="2Oq$k0">
+                    <ref role="3cqZAo" node="60PTWgneeSy" resolve="description" />
+                  </node>
+                  <node concept="17RvpY" id="60PTWgneeSN" role="2OqNvi" />
+                </node>
+                <node concept="Xl_RD" id="1ZlHRbgl0na" role="3K4GZi">
+                  <property role="Xl_RC" value="add a condition for the case" />
+                </node>
               </node>
             </node>
           </node>
@@ -1568,9 +2456,165 @@
         </node>
         <node concept="uPpia" id="2zRMcT4P_fU" role="1djCvC">
           <node concept="3clFbS" id="2zRMcT4P_fV" role="2VODD2">
-            <node concept="3clFbF" id="2zRMcT4P_fW" role="3cqZAp">
-              <node concept="Xl_RD" id="2zRMcT4P_fX" role="3clFbG">
-                <property role="Xl_RC" value="an argument of type" />
+            <node concept="3cpWs8" id="60PTWgrz9An" role="3cqZAp">
+              <node concept="3cpWsn" id="60PTWgrz9Ao" role="3cpWs9">
+                <property role="TrG5h" value="descriptiontext" />
+                <node concept="17QB3L" id="60PTWgrz9Ap" role="1tU5fm" />
+                <node concept="2OqwBi" id="60PTWgrz9Aq" role="33vP2m">
+                  <node concept="2YIFZM" id="60PTWgrz9Ar" role="2Oq$k0">
+                    <ref role="37wK5l" to="oq0c:4qv99IrBnzk" resolve="getConfig" />
+                    <ref role="1Pybhc" to="oq0c:4qv99IrBkzE" resolve="EditorCustomizationConfigHelper" />
+                  </node>
+                  <node concept="liA8E" id="60PTWgrz9As" role="2OqNvi">
+                    <ref role="37wK5l" to="oq0c:60PTWgry9kT" resolve="getWrapperCellSubstitutionDescriptionText" />
+                    <node concept="2YIFZM" id="60PTWgr$MwK" role="37wK5m">
+                      <ref role="37wK5l" to="oq0c:60PTWgovZKt" resolve="getIdentifier" />
+                      <ref role="1Pybhc" to="oq0c:4qv99IrBkzE" resolve="EditorCustomizationConfigHelper" />
+                      <node concept="35c_gC" id="60PTWgr$MwL" role="37wK5m">
+                        <ref role="35c_gD" to="v0r8:28$LOSBCtT$" resolve="AlgebraicConstructorArg" />
+                      </node>
+                      <node concept="359W_D" id="60PTWgr$MwM" role="37wK5m">
+                        <ref role="359W_E" to="v0r8:28$LOSBCtT$" resolve="AlgebraicConstructorArg" />
+                        <ref role="359W_F" to="hm2y:7D7uZV2iYAD" resolve="type" />
+                      </node>
+                    </node>
+                    <node concept="2e73FJ" id="60PTWgrz9Aw" role="37wK5m" />
+                    <node concept="3dAXtN" id="60PTWgrz9Ax" role="37wK5m" />
+                    <node concept="1Lj6YZ" id="60PTWgrz9Ay" role="37wK5m" />
+                    <node concept="1oAbNU" id="60PTWgrz9Az" role="37wK5m" />
+                    <node concept="2MNBq7" id="60PTWgrz9A$" role="37wK5m" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3clFbF" id="60PTWgrz9A_" role="3cqZAp">
+              <node concept="3K4zz7" id="60PTWgrz9AA" role="3clFbG">
+                <node concept="37vLTw" id="60PTWgrz9AB" role="3K4E3e">
+                  <ref role="3cqZAo" node="60PTWgrz9Ao" resolve="descriptiontext" />
+                </node>
+                <node concept="2OqwBi" id="60PTWgrz9AC" role="3K4Cdx">
+                  <node concept="37vLTw" id="60PTWgrz9AD" role="2Oq$k0">
+                    <ref role="3cqZAo" node="60PTWgrz9Ao" resolve="descriptiontext" />
+                  </node>
+                  <node concept="17RvpY" id="60PTWgrz9AE" role="2OqNvi" />
+                </node>
+                <node concept="Xl_RD" id="2zRMcT4P_fX" role="3K4GZi">
+                  <property role="Xl_RC" value="an argument of type" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="315t4" id="60PTWgqYv8H" role="31dnJ">
+          <node concept="3clFbS" id="60PTWgqYv8I" role="2VODD2">
+            <node concept="3clFbF" id="60PTWgqYv8J" role="3cqZAp">
+              <node concept="2OqwBi" id="60PTWgqYv8K" role="3clFbG">
+                <node concept="2YIFZM" id="60PTWgqYv8L" role="2Oq$k0">
+                  <ref role="37wK5l" to="oq0c:4qv99IrBnzk" resolve="getConfig" />
+                  <ref role="1Pybhc" to="oq0c:4qv99IrBkzE" resolve="EditorCustomizationConfigHelper" />
+                </node>
+                <node concept="liA8E" id="60PTWgqYv8M" role="2OqNvi">
+                  <ref role="37wK5l" to="oq0c:60PTWgqXNLq" resolve="wrapperCellSideTransformationPostProcess" />
+                  <node concept="2YIFZM" id="60PTWgr112n" role="37wK5m">
+                    <ref role="37wK5l" to="oq0c:60PTWgovZKt" resolve="getIdentifier" />
+                    <ref role="1Pybhc" to="oq0c:4qv99IrBkzE" resolve="EditorCustomizationConfigHelper" />
+                    <node concept="35c_gC" id="60PTWgr112o" role="37wK5m">
+                      <ref role="35c_gD" to="v0r8:28$LOSBCtT$" resolve="AlgebraicConstructorArg" />
+                    </node>
+                    <node concept="359W_D" id="60PTWgr112p" role="37wK5m">
+                      <ref role="359W_E" to="v0r8:28$LOSBCtT$" resolve="AlgebraicConstructorArg" />
+                      <ref role="359W_F" to="hm2y:7D7uZV2iYAD" resolve="type" />
+                    </node>
+                  </node>
+                  <node concept="313q4" id="60PTWgqYv8Q" role="37wK5m" />
+                  <node concept="2MNBq7" id="60PTWgqYv8R" role="37wK5m" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="315t4" id="60PTWgqZHlV" role="31dnY">
+          <node concept="3clFbS" id="60PTWgqZHlW" role="2VODD2">
+            <node concept="3clFbF" id="60PTWgqZHlX" role="3cqZAp">
+              <node concept="2OqwBi" id="60PTWgqZHlY" role="3clFbG">
+                <node concept="2YIFZM" id="60PTWgqZHlZ" role="2Oq$k0">
+                  <ref role="37wK5l" to="oq0c:4qv99IrBnzk" resolve="getConfig" />
+                  <ref role="1Pybhc" to="oq0c:4qv99IrBkzE" resolve="EditorCustomizationConfigHelper" />
+                </node>
+                <node concept="liA8E" id="60PTWgqZHm0" role="2OqNvi">
+                  <ref role="37wK5l" to="oq0c:60PTWgqXQTX" resolve="wrapperCellSubstitutionPostProcess" />
+                  <node concept="2YIFZM" id="60PTWgr118G" role="37wK5m">
+                    <ref role="37wK5l" to="oq0c:60PTWgovZKt" resolve="getIdentifier" />
+                    <ref role="1Pybhc" to="oq0c:4qv99IrBkzE" resolve="EditorCustomizationConfigHelper" />
+                    <node concept="35c_gC" id="60PTWgr118H" role="37wK5m">
+                      <ref role="35c_gD" to="v0r8:28$LOSBCtT$" resolve="AlgebraicConstructorArg" />
+                    </node>
+                    <node concept="359W_D" id="60PTWgr118I" role="37wK5m">
+                      <ref role="359W_E" to="v0r8:28$LOSBCtT$" resolve="AlgebraicConstructorArg" />
+                      <ref role="359W_F" to="hm2y:7D7uZV2iYAD" resolve="type" />
+                    </node>
+                  </node>
+                  <node concept="313q4" id="60PTWgqZHm4" role="37wK5m" />
+                  <node concept="2MNBq7" id="60PTWgqZHm5" role="37wK5m" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="7duGs" id="60PTWgqdg6l" role="7deOD">
+          <node concept="3clFbS" id="60PTWgqdg6m" role="2VODD2">
+            <node concept="3clFbF" id="60PTWgqdg6n" role="3cqZAp">
+              <node concept="2OqwBi" id="60PTWgqdg6o" role="3clFbG">
+                <node concept="2YIFZM" id="60PTWgqdg6p" role="2Oq$k0">
+                  <ref role="37wK5l" to="oq0c:4qv99IrBnzk" resolve="getConfig" />
+                  <ref role="1Pybhc" to="oq0c:4qv99IrBkzE" resolve="EditorCustomizationConfigHelper" />
+                </node>
+                <node concept="liA8E" id="60PTWgqdg6q" role="2OqNvi">
+                  <ref role="37wK5l" to="oq0c:60PTWgq7bkl" resolve="isWrapperCellSubstitutionActivated" />
+                  <node concept="2YIFZM" id="60PTWgqdg6r" role="37wK5m">
+                    <ref role="37wK5l" to="oq0c:60PTWgovZKt" resolve="getIdentifier" />
+                    <ref role="1Pybhc" to="oq0c:4qv99IrBkzE" resolve="EditorCustomizationConfigHelper" />
+                    <node concept="35c_gC" id="60PTWgqejUk" role="37wK5m">
+                      <ref role="35c_gD" to="v0r8:28$LOSBCtT$" resolve="AlgebraicConstructorArg" />
+                    </node>
+                    <node concept="359W_D" id="60PTWgqejWN" role="37wK5m">
+                      <ref role="359W_E" to="v0r8:28$LOSBCtT$" resolve="AlgebraicConstructorArg" />
+                      <ref role="359W_F" to="hm2y:7D7uZV2iYAD" resolve="type" />
+                    </node>
+                  </node>
+                  <node concept="7dpZ6" id="60PTWgqdg6u" role="37wK5m" />
+                  <node concept="1ZN7lz" id="60PTWgqdg6v" role="37wK5m" />
+                  <node concept="2MNBq7" id="60PTWgqdg6w" role="37wK5m" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="2e7140" id="60PTWgq7zAR" role="2e1Fq_">
+          <node concept="3clFbS" id="60PTWgq7zAS" role="2VODD2">
+            <node concept="3clFbF" id="60PTWgq7zBo" role="3cqZAp">
+              <node concept="2OqwBi" id="60PTWgq7N7y" role="3clFbG">
+                <node concept="2YIFZM" id="60PTWgq7N7z" role="2Oq$k0">
+                  <ref role="37wK5l" to="oq0c:4qv99IrBnzk" resolve="getConfig" />
+                  <ref role="1Pybhc" to="oq0c:4qv99IrBkzE" resolve="EditorCustomizationConfigHelper" />
+                </node>
+                <node concept="liA8E" id="60PTWgq7N7$" role="2OqNvi">
+                  <ref role="37wK5l" to="oq0c:60PTWgq7bk$" resolve="isWrapperCellSideTransformationActivated" />
+                  <node concept="2YIFZM" id="60PTWgq7N7_" role="37wK5m">
+                    <ref role="37wK5l" to="oq0c:60PTWgovZKt" resolve="getIdentifier" />
+                    <ref role="1Pybhc" to="oq0c:4qv99IrBkzE" resolve="EditorCustomizationConfigHelper" />
+                    <node concept="35c_gC" id="60PTWgq7N7A" role="37wK5m">
+                      <ref role="35c_gD" to="v0r8:28$LOSBCtT$" resolve="AlgebraicConstructorArg" />
+                    </node>
+                    <node concept="359W_D" id="60PTWgq7N7B" role="37wK5m">
+                      <ref role="359W_E" to="v0r8:28$LOSBCtT$" resolve="AlgebraicConstructorArg" />
+                      <ref role="359W_F" to="hm2y:7D7uZV2iYAD" resolve="type" />
+                    </node>
+                  </node>
+                  <node concept="2e73FJ" id="60PTWgq7N7C" role="37wK5m" />
+                  <node concept="1Lj6YZ" id="60PTWgq7N7D" role="37wK5m" />
+                  <node concept="2MNBq7" id="60PTWgq7N7E" role="37wK5m" />
+                </node>
               </node>
             </node>
           </node>
@@ -1582,18 +2626,125 @@
         </node>
         <node concept="ZYGn8" id="28$LOSBGswu" role="ZWbT9">
           <node concept="3clFbS" id="28$LOSBGswv" role="2VODD2">
-            <node concept="3clFbF" id="28$LOSBGsxg" role="3cqZAp">
-              <node concept="Xl_RD" id="28$LOSBGsxf" role="3clFbG">
-                <property role="Xl_RC" value="*" />
+            <node concept="3cpWs8" id="60PTWgnKpsZ" role="3cqZAp">
+              <node concept="3cpWsn" id="60PTWgnKpt0" role="3cpWs9">
+                <property role="TrG5h" value="description" />
+                <node concept="17QB3L" id="60PTWgnKpt1" role="1tU5fm" />
+                <node concept="2OqwBi" id="60PTWgnKpt2" role="33vP2m">
+                  <node concept="2YIFZM" id="60PTWgnKpt3" role="2Oq$k0">
+                    <ref role="37wK5l" to="oq0c:4qv99IrBnzk" resolve="getConfig" />
+                    <ref role="1Pybhc" to="oq0c:4qv99IrBkzE" resolve="EditorCustomizationConfigHelper" />
+                  </node>
+                  <node concept="liA8E" id="60PTWgnKpt4" role="2OqNvi">
+                    <ref role="37wK5l" to="oq0c:60PTWgnKnol" resolve="getOptionalCellTransformationText" />
+                    <node concept="2YIFZM" id="60PTWgoxdpY" role="37wK5m">
+                      <ref role="37wK5l" to="oq0c:60PTWgovZKt" resolve="getIdentifier" />
+                      <ref role="1Pybhc" to="oq0c:4qv99IrBkzE" resolve="EditorCustomizationConfigHelper" />
+                      <node concept="35c_gC" id="60PTWgoxdRD" role="37wK5m">
+                        <ref role="35c_gD" to="v0r8:28$LOSBCtT$" resolve="AlgebraicConstructorArg" />
+                      </node>
+                      <node concept="359W_D" id="60PTWgoBrza" role="37wK5m">
+                        <ref role="359W_E" to="v0r8:28$LOSBCtT$" resolve="AlgebraicConstructorArg" />
+                        <ref role="359W_F" to="v0r8:28$LOSBF$hC" resolve="multi" />
+                      </node>
+                    </node>
+                    <node concept="pncrf" id="60PTWgnKqg1" role="37wK5m" />
+                    <node concept="2MNBq7" id="60PTWgnKpta" role="37wK5m" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3clFbF" id="60PTWgnKptb" role="3cqZAp">
+              <node concept="3K4zz7" id="60PTWgnKptc" role="3clFbG">
+                <node concept="37vLTw" id="60PTWgnKptd" role="3K4E3e">
+                  <ref role="3cqZAo" node="60PTWgnKpt0" resolve="description" />
+                </node>
+                <node concept="2OqwBi" id="60PTWgnKpte" role="3K4Cdx">
+                  <node concept="37vLTw" id="60PTWgnKptf" role="2Oq$k0">
+                    <ref role="3cqZAo" node="60PTWgnKpt0" resolve="description" />
+                  </node>
+                  <node concept="17RvpY" id="60PTWgnKptg" role="2OqNvi" />
+                </node>
+                <node concept="Xl_RD" id="28$LOSBGsxf" role="3K4GZi">
+                  <property role="Xl_RC" value="*" />
+                </node>
               </node>
             </node>
           </node>
         </node>
         <node concept="uPpia" id="1ZlHRbgkZZM" role="1djCvC">
           <node concept="3clFbS" id="1ZlHRbgkZZN" role="2VODD2">
-            <node concept="3clFbF" id="1ZlHRbgl00a" role="3cqZAp">
-              <node concept="Xl_RD" id="1ZlHRbgl009" role="3clFbG">
-                <property role="Xl_RC" value="a multi argument for the constructor" />
+            <node concept="3cpWs8" id="60PTWgne84W" role="3cqZAp">
+              <node concept="3cpWsn" id="60PTWgne84X" role="3cpWs9">
+                <property role="TrG5h" value="description" />
+                <node concept="17QB3L" id="60PTWgne7R_" role="1tU5fm" />
+                <node concept="2OqwBi" id="60PTWgne84Y" role="33vP2m">
+                  <node concept="2YIFZM" id="60PTWgne84Z" role="2Oq$k0">
+                    <ref role="37wK5l" to="oq0c:4qv99IrBnzk" resolve="getConfig" />
+                    <ref role="1Pybhc" to="oq0c:4qv99IrBkzE" resolve="EditorCustomizationConfigHelper" />
+                  </node>
+                  <node concept="liA8E" id="60PTWgne850" role="2OqNvi">
+                    <ref role="37wK5l" to="oq0c:60PTWgnc5Jg" resolve="getOptionalCellDescriptionText" />
+                    <node concept="2YIFZM" id="60PTWgoxn$B" role="37wK5m">
+                      <ref role="37wK5l" to="oq0c:60PTWgovZKt" resolve="getIdentifier" />
+                      <ref role="1Pybhc" to="oq0c:4qv99IrBkzE" resolve="EditorCustomizationConfigHelper" />
+                      <node concept="35c_gC" id="60PTWgoxn$C" role="37wK5m">
+                        <ref role="35c_gD" to="v0r8:28$LOSBCtT$" resolve="AlgebraicConstructorArg" />
+                      </node>
+                      <node concept="359W_D" id="60PTWgnea7W" role="37wK5m">
+                        <ref role="359W_E" to="v0r8:28$LOSBCtT$" resolve="AlgebraicConstructorArg" />
+                        <ref role="359W_F" to="v0r8:28$LOSBF$hC" resolve="multi" />
+                      </node>
+                    </node>
+                    <node concept="313q4" id="60PTWgne854" role="37wK5m" />
+                    <node concept="1oAbNU" id="60PTWgne855" role="37wK5m" />
+                    <node concept="2MNBq7" id="60PTWgne856" role="37wK5m" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3clFbF" id="60PTWgneevG" role="3cqZAp">
+              <node concept="3K4zz7" id="60PTWgne9KK" role="3clFbG">
+                <node concept="37vLTw" id="60PTWgne9N5" role="3K4E3e">
+                  <ref role="3cqZAo" node="60PTWgne84X" resolve="description" />
+                </node>
+                <node concept="2OqwBi" id="60PTWgne8JG" role="3K4Cdx">
+                  <node concept="37vLTw" id="60PTWgne858" role="2Oq$k0">
+                    <ref role="3cqZAo" node="60PTWgne84X" resolve="description" />
+                  </node>
+                  <node concept="17RvpY" id="60PTWgne9iC" role="2OqNvi" />
+                </node>
+                <node concept="Xl_RD" id="1ZlHRbgl009" role="3K4GZi">
+                  <property role="Xl_RC" value="add a multi argument for the constructor" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="315t4" id="60PTWgpuY6m" role="vWNKz">
+          <node concept="3clFbS" id="60PTWgpuY6n" role="2VODD2">
+            <node concept="3clFbF" id="60PTWgpuY6t" role="3cqZAp">
+              <node concept="2OqwBi" id="60PTWgpuEPD" role="3clFbG">
+                <node concept="2YIFZM" id="60PTWgpuEPE" role="2Oq$k0">
+                  <ref role="37wK5l" to="oq0c:4qv99IrBnzk" resolve="getConfig" />
+                  <ref role="1Pybhc" to="oq0c:4qv99IrBkzE" resolve="EditorCustomizationConfigHelper" />
+                </node>
+                <node concept="liA8E" id="60PTWgpuEPF" role="2OqNvi">
+                  <ref role="37wK5l" to="oq0c:60PTWgpu75o" resolve="postProcessOptionalCell" />
+                  <node concept="2YIFZM" id="60PTWgpuEPG" role="37wK5m">
+                    <ref role="37wK5l" to="oq0c:60PTWgovZKt" resolve="getIdentifier" />
+                    <ref role="1Pybhc" to="oq0c:4qv99IrBkzE" resolve="EditorCustomizationConfigHelper" />
+                    <node concept="35c_gC" id="60PTWgpwrYj" role="37wK5m">
+                      <ref role="35c_gD" to="v0r8:28$LOSBCtT$" resolve="AlgebraicConstructorArg" />
+                    </node>
+                    <node concept="359W_D" id="60PTWgpws01" role="37wK5m">
+                      <ref role="359W_E" to="v0r8:28$LOSBCtT$" resolve="AlgebraicConstructorArg" />
+                      <ref role="359W_F" to="v0r8:28$LOSBF$hC" resolve="multi" />
+                    </node>
+                  </node>
+                  <node concept="313q4" id="60PTWgpuEPJ" role="37wK5m" />
+                  <node concept="2MNBq7" id="60PTWgpuEPK" role="37wK5m" />
+                </node>
               </node>
             </node>
           </node>
