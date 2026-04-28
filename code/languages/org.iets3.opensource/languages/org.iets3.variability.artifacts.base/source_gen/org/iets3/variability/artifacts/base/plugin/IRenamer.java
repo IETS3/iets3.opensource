@@ -16,6 +16,9 @@ import org.jetbrains.mps.openapi.language.SProperty;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import org.jetbrains.mps.openapi.language.SInterfaceConcept;
 
+/**
+ * The renaming API definition used by the IFilterInstantiater for filtering 150% models.
+ */
 public interface IRenamer {
   @Deprecated(since = "2025-06-25")
   default void rename(SNode newInstance, Set<SNode> oldInstances, SNode artifactRoot) {
@@ -26,6 +29,9 @@ public interface IRenamer {
    * This method is called during variability filtering, allowing the application code to rename
    * instantiated nodes. It provides some additional arguments which can be used by the renaming-logic.
    * 
+   * Usually it will be easier to use the renameInstances() method instead, which will provide the
+   * full information and run as a post-processing step.
+   * 
    * @param newInstance the instantiated node being created
    * @param oldInstances all instances which have been created up to now
    * @param artifactPivot the pivot node on which the instantiation is based
@@ -34,7 +40,6 @@ public interface IRenamer {
   default void rename(SNode newInstance, Set<SNode> oldInstances, SNode artifactPivot, IInstantiationContext context) {
     rename(newInstance, oldInstances, artifactPivot);
   }
-
 
   /**
    * Helper function to check if among the existing instances is one with the same name as newInstance.
@@ -47,7 +52,16 @@ public interface IRenamer {
     return Sequence.fromIterable((SNodeOperations.ofConcept(existingInstances, SNodeOperations.asSConcept(SNodeOperations.getConcept(newInstance))))).any((it) -> Objects.equals(SPropertyOperations.getString(it, PROPS.name$MnvL), SPropertyOperations.getString(newInstance, PROPS.name$MnvL)));
   }
 
+  /**
+   * Do renaming as a post-processing step. This will be called after it is known which instances
+   * have been created. Thus, the application logic has full information to decide what to do.
+   * 
+   * Use this method instead of using the simple rename() method above.
+   * 
+   * @param instancesOfSameComponent all instances created for a specific component definition
+   */
   default void renameInstances(Collection<SNode> instancesOfSameComponent) {
+    // default: do nothing
   }
 
 

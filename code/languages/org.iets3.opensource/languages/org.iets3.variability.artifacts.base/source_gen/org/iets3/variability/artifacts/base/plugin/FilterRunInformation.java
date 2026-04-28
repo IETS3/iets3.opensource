@@ -67,6 +67,7 @@ public class FilterRunInformation {
     }
     return resultHolder;
   }
+
   /**
    * All copied nodes which have been created in instance-cases
    * 
