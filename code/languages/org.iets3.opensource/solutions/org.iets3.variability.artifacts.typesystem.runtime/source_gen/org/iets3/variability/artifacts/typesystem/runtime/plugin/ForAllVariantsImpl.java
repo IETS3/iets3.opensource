@@ -13,6 +13,8 @@ import jetbrains.mps.internal.collections.runtime.Sequence;
 import java.util.List;
 import org.iets3.variability.artifacts.base.plugin.IVAAUtil;
 import java.util.Collection;
+import org.iets3.variability.featuremodel.base.plugin.IETS3VariabilitySettings;
+import org.iets3.variability.base.plugin.Settings;
 import org.iets3.variability.artifacts.base.plugin.IArtifactAlgorithms;
 import org.iets3.variability.artifacts.base.plugin.IFilterInstantiator;
 import org.iets3.variability.artifacts.base.plugin.RootNodesCopy;
@@ -147,6 +149,16 @@ public class ForAllVariantsImpl {
 
     List<SNode> artifactGroup = Sequence.fromIterable(IVAAUtil.artifactGroup(ivaa)).toList();
     Collection<SNode> artifactGroupLogical = Sequence.fromIterable(IVAAUtil.artifactGroupWithLogicalChildren(artifactGroup)).toList();
+    // TODO: remove this workaround after https://youtrack.jetbrains.com/issue/MPS-34340 is solved
+    if (!(typeCheckingContext.canDoMulticheck(artifactGroup))) {
+      IETS3VariabilitySettings.VerbosityLevel verb = Settings.showForAllVariantsExecutionWarning();
+      if (verb == IETS3VariabilitySettings.VerbosityLevel.FULL || (verb == IETS3VariabilitySettings.VerbosityLevel.REDUCED && !(hasMulticheckWarningBeenShown))) {
+        // cannot do multi-check during "Check Model" with multiple roots
+        report(typeCheckingContext, checkName, "involves multiple roots and will only be executed in the IDE", nodeUnderCheck, true);
+        hasMulticheckWarningBeenShown = true;
+      }
+      return true;
+    }
 
     IArtifactAlgorithms instance = IArtifactAlgorithms.instance();
     IFilterInstantiator filterInstantiator = instance.filterInstantiator();
