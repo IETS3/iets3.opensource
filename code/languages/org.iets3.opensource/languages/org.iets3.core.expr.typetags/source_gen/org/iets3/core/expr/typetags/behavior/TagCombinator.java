@@ -30,10 +30,6 @@ public class TagCombinator {
     return SNodeOperations.isInstanceOf(tag, CONCEPTS.ErrorTag$yj);
   }
 
-  public int k() {
-    return 1;
-  }
-
   public Tuples._2<SNode, SNode> adaptOperandTypes(SNode leftType, SNode rightType) {
     // default: do nothing
     return MultiTuple.<SNode,SNode>from(leftType, rightType);

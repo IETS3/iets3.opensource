@@ -105,9 +105,8 @@ public class UnitExpressionConverter {
               It is an arbitrary choice in which order we try to do implicit conversions.
               
               The current order being executed here is: 
-              1. Try to implicitly convert the left operand to the unit of the right operand
-              2. Try to implicitly convert the right operand to the unit of the left operand
-              3. Check if both operands can be converted to a common standard unit (e.g., SI base unit)
+              1. Try to implicitly convert the left operand to the unit of the right operand, or vice versa. If both conversions are possible, pick the one with the higher priority.
+              2. Check if both operands can be converted to a common standard unit (e.g., SI base unit)
 
             */
 
@@ -124,7 +123,8 @@ public class UnitExpressionConverter {
               return operand2other;
             }
             if (other2operand.hasImplicitConv()) {
-              // TODO: Why return null here? Maybe either "null" or other2operand instead => we need a testcase for this
+              // this conversion will be executed when the algorithm calls this with the current "other"
+              // being the actual operand (the symmetric case)
               return null;
             }
 

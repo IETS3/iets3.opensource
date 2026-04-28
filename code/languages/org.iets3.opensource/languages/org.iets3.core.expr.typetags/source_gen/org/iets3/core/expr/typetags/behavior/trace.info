@@ -110,30 +110,27 @@
       <node id="1065649332398992597" at="21,35,22,19" concept="3" />
       <node id="1065649332398994946" at="25,25,26,20" concept="10" />
       <node id="1065649332399409972" at="29,28,30,67" concept="10" />
-      <node id="1065649332401003223" at="33,18,34,13" concept="10" />
-      <node id="1065649332400981335" at="37,85,38,26" concept="11" />
-      <node id="1065649332400982328" at="38,26,39,61" concept="10" />
-      <node id="1065649332400360780" at="43,28,44,55" concept="10" />
-      <node id="1065649332400707100" at="46,64,47,68" concept="9" />
-      <node id="1065649332400707100" at="47,68,48,47" concept="3" />
-      <node id="1065649332400707100" at="48,47,49,26" concept="10" />
-      <node id="1065649332398988137" at="53,0,54,0" concept="13" trace="ErrorTag$yj" />
-      <node id="1065649332398988137" at="57,0,58,0" concept="13" trace="description$dnEg" />
+      <node id="1065649332400981335" at="33,85,34,26" concept="11" />
+      <node id="1065649332400982328" at="34,26,35,61" concept="10" />
+      <node id="1065649332400360780" at="39,28,40,55" concept="10" />
+      <node id="1065649332400707100" at="42,64,43,68" concept="9" />
+      <node id="1065649332400707100" at="43,68,44,47" concept="3" />
+      <node id="1065649332400707100" at="44,47,45,26" concept="10" />
+      <node id="1065649332398988137" at="49,0,50,0" concept="13" trace="ErrorTag$yj" />
+      <node id="1065649332398988137" at="53,0,54,0" concept="13" trace="description$dnEg" />
       <node id="1065649332400675341" at="17,0,20,0" concept="14" trace="createError#(Ljava/lang/String;)Lorg/iets3/core/expr/typetags/behavior/TagCombinator;" />
       <node id="1065649332398992427" at="21,0,24,0" concept="1" trace="TagCombinator#(Lorg/jetbrains/mps/openapi/model/SNode;)V" />
       <node id="1065649332398994835" at="25,0,28,0" concept="8" trace="getTag#()Lorg/jetbrains/mps/openapi/model/SNode;" />
       <node id="1065649332399409827" at="29,0,32,0" concept="8" trace="isError#()Z" />
-      <node id="1065649332401002162" at="33,0,36,0" concept="8" trace="k#()I" />
-      <node id="1065649332400976308" at="37,0,41,0" concept="8" trace="adaptOperandTypes#(Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;)Ljetbrains/mps/baseLanguage/tuples/runtime/Tuples/_2;" />
-      <node id="1065649332400352916" at="42,0,46,0" concept="8" trace="toString#()Ljava/lang/String;" />
-      <node id="1065649332400707100" at="46,0,51,0" concept="14" trace="createErrorTag_i4fesr_a0a0a2#(Ljava/lang/String;)Lorg/jetbrains/mps/openapi/model/SNode;" />
+      <node id="1065649332400976308" at="33,0,37,0" concept="8" trace="adaptOperandTypes#(Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;)Ljetbrains/mps/baseLanguage/tuples/runtime/Tuples/_2;" />
+      <node id="1065649332400352916" at="38,0,42,0" concept="8" trace="toString#()Ljava/lang/String;" />
+      <node id="1065649332400707100" at="42,0,47,0" concept="14" trace="createErrorTag_i4fesr_a0a0a2#(Ljava/lang/String;)Lorg/jetbrains/mps/openapi/model/SNode;" />
       <scope id="1065649332400675344" at="17,63,18,72" />
       <scope id="1065649332398992431" at="21,35,22,19" />
       <scope id="1065649332398994838" at="25,25,26,20" />
       <scope id="1065649332399409830" at="29,28,30,67" />
-      <scope id="1065649332401002165" at="33,18,34,13" />
-      <scope id="1065649332400352920" at="43,28,44,55" />
-      <scope id="1065649332400976311" at="37,85,39,61" />
+      <scope id="1065649332400352920" at="39,28,40,55" />
+      <scope id="1065649332400976311" at="33,85,35,61" />
       <scope id="1065649332400675341" at="17,0,20,0">
         <var name="description" id="1065649332400699671" />
       </scope>
@@ -142,21 +139,20 @@
       </scope>
       <scope id="1065649332398994835" at="25,0,28,0" />
       <scope id="1065649332399409827" at="29,0,32,0" />
-      <scope id="1065649332401002162" at="33,0,36,0" />
-      <scope id="1065649332400707100" at="46,64,49,26">
+      <scope id="1065649332400707100" at="42,64,45,26">
         <var name="n0" id="1065649332400707100" />
       </scope>
-      <scope id="1065649332400976308" at="37,0,41,0">
+      <scope id="1065649332400976308" at="33,0,37,0">
         <var name="leftType" id="1065649332400977259" />
         <var name="rightType" id="1065649332400977994" />
       </scope>
-      <scope id="1065649332400352916" at="42,0,46,0" />
-      <scope id="1065649332400707100" at="46,0,51,0">
+      <scope id="1065649332400352916" at="38,0,42,0" />
+      <scope id="1065649332400707100" at="42,0,47,0">
         <var name="p0" id="1065649332400707100" />
       </scope>
-      <unit id="1065649332398988137" at="52,0,55,0" name="org.iets3.core.expr.typetags.behavior.TagCombinator$CONCEPTS" />
-      <unit id="1065649332398988137" at="56,0,59,0" name="org.iets3.core.expr.typetags.behavior.TagCombinator$PROPS" />
-      <unit id="1065649332398988137" at="14,0,60,0" name="org.iets3.core.expr.typetags.behavior.TagCombinator" />
+      <unit id="1065649332398988137" at="48,0,51,0" name="org.iets3.core.expr.typetags.behavior.TagCombinator$CONCEPTS" />
+      <unit id="1065649332398988137" at="52,0,55,0" name="org.iets3.core.expr.typetags.behavior.TagCombinator$PROPS" />
+      <unit id="1065649332398988137" at="14,0,56,0" name="org.iets3.core.expr.typetags.behavior.TagCombinator" />
     </file>
   </root>
   <root nodeRef="r:c0482758-b46b-48c3-8482-fa4a3115b53b(org.iets3.core.expr.typetags.behavior)/2147137078514312379">

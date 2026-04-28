@@ -64,9 +64,8 @@ public class UnitCombinators {
                   It is an arbitrary choice in which order we try to do implicit conversions.
                   
                   The current order being executed here is: 
-                  1. Try to implicitly convert the left operand to the unit of the right operand
-                  2. Try to implicitly convert the right operand to the unit of the left operand
-                  3. Check if both operands can be converted to a common standard unit (e.g., SI base unit)
+                  1. Try to implicitly convert the left operand to the unit of the right operand, or vice versa. If both conversions are possible, pick the one with the higher priority.
+                  2. Check if both operands can be converted to a common standard unit (e.g., SI base unit)
 
                 */
 
