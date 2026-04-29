@@ -8,7 +8,6 @@ import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import java.math.BigDecimal;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import java.util.List;
 import java.util.Arrays;
@@ -16,7 +15,6 @@ import org.jetbrains.annotations.NotNull;
 import org.jetbrains.mps.openapi.model.SNode;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
-import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 import org.jetbrains.mps.openapi.language.SConcept;
@@ -25,13 +23,11 @@ import org.jetbrains.mps.openapi.language.SProperty;
 public final class RoundingMode__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getConcept(0x6b277d9ad52d416fL, 0xa2091919bd737f50L, 0x7a79f2f908510210L, "org.iets3.core.expr.simpleTypes.structure.RoundingMode");
 
-  public static final SMethod<BigDecimal> process_id7DTWJ$8l$8B = new SMethodBuilder<BigDecimal>(new SJavaCompoundTypeImpl(BigDecimal.class)).name("process").modifiers(12, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(8825352096209846823L).languageId(0xa2091919bd737f50L, 0x6b277d9ad52d416fL).build2(SMethodBuilder.createJavaParameter(BigDecimal.class, ""));
-  public static final SMethod<Integer> targetPrecision_id7DTWJ$8lDMY = new SMethodBuilder<Integer>(new SJavaCompoundTypeImpl(Integer.TYPE)).name("targetPrecision").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(8825352096209870014L).languageId(0xa2091919bd737f50L, 0x6b277d9ad52d416fL).build2();
+  public static final SMethod<BigDecimal> process_id7DTWJ$8l$8B = new SMethodBuilder<>(BigDecimal.class).name("process").modifiers(12, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(8825352096209846823L).languageId(0xa2091919bd737f50L, 0x6b277d9ad52d416fL).build2(SMethodBuilder.createJavaParameter(BigDecimal.class, "value"));
+  public static final SMethod<Integer> targetPrecision_id7DTWJ$8lDMY = new SMethodBuilder<>(Integer.TYPE).name("targetPrecision").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(8825352096209870014L).languageId(0xa2091919bd737f50L, 0x6b277d9ad52d416fL).build2();
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(process_id7DTWJ$8l$8B, targetPrecision_id7DTWJ$8lDMY);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(process_id7DTWJ$8l$8B, targetPrecision_id7DTWJ$8lDMY);
 
-  private static void ___init___(@NotNull SNode __thisNode__) {
-  }
 
   /*package*/ static int targetPrecision_id7DTWJ$8lDMY(@NotNull SNode __thisNode__) {
     return SPropertyOperations.getInteger(SNodeOperations.cast(SNodeOperations.getParent(__thisNode__), CONCEPTS.ConvertPrecisionNumberExpression$4S), PROPS.targetPrecision$Fj_c);
@@ -40,10 +36,6 @@ public final class RoundingMode__BehaviorDescriptor extends BaseBHDescriptor {
   /*package*/ RoundingMode__BehaviorDescriptor() {
   }
 
-  @Override
-  protected void initNode(@NotNull SNode node, @NotNull SConstructor constructor, @Nullable Object[] parameters) {
-    ___init___(node);
-  }
 
   @Override
   protected <T> T invokeSpecial0(@NotNull SNode node, @NotNull SMethod<T> method, @Nullable Object[] parameters) {

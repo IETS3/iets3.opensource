@@ -7,7 +7,6 @@ import org.jetbrains.mps.openapi.language.SAbstractConcept;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import org.jetbrains.mps.openapi.model.SNode;
 import java.util.List;
@@ -15,7 +14,6 @@ import java.util.Arrays;
 import org.jetbrains.annotations.NotNull;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
-import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 import org.jetbrains.mps.openapi.language.SReferenceLink;
@@ -24,13 +22,11 @@ import org.jetbrains.mps.openapi.language.SProperty;
 public final class BTDeclarationRef__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getConcept(0x9c3cc6fbae5e46d1L, 0xace21e08bb47d03dL, 0x1f9fc88698ea7909L, "org.iets3.core.expr.typetags.bindingtime.structure.BTDeclarationRef");
 
-  public static final SMethod<String> getName_id5XGFpL9UyO3 = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("getName").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(6876061617854491907L).languageId(0xace21e08bb47d03dL, 0x9c3cc6fbae5e46d1L).build2();
-  public static final SMethod<SNode> getDependency_id1CvMCa_pcre = new SMethodBuilder<SNode>(new SJavaCompoundTypeImpl((Class<SNode>) ((Class) Object.class))).name("getDependency").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(1882445831733561038L).languageId(0xace21e08bb47d03dL, 0x9c3cc6fbae5e46d1L).build2();
+  public static final SMethod<String> getName_id5XGFpL9UyO3 = new SMethodBuilder<>(String.class).name("getName").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(6876061617854491907L).languageId(0xace21e08bb47d03dL, 0x9c3cc6fbae5e46d1L).build2();
+  public static final SMethod<SNode> getDependency_id1CvMCa_pcre = new SMethodBuilder<>(SNode.class).name("getDependency").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(1882445831733561038L).languageId(0xace21e08bb47d03dL, 0x9c3cc6fbae5e46d1L).build2();
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(getName_id5XGFpL9UyO3, getDependency_id1CvMCa_pcre);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(getName_id5XGFpL9UyO3, getDependency_id1CvMCa_pcre);
 
-  private static void ___init___(@NotNull SNode __thisNode__) {
-  }
 
   /*package*/ static String getName_id5XGFpL9UyO3(@NotNull SNode __thisNode__) {
     return SPropertyOperations.getString(SLinkOperations.getTarget(__thisNode__, LINKS.stage$GYTh), PROPS.name$MnvL);
@@ -42,10 +38,6 @@ public final class BTDeclarationRef__BehaviorDescriptor extends BaseBHDescriptor
   /*package*/ BTDeclarationRef__BehaviorDescriptor() {
   }
 
-  @Override
-  protected void initNode(@NotNull SNode node, @NotNull SConstructor constructor, @Nullable Object[] parameters) {
-    ___init___(node);
-  }
 
   @Override
   protected <T> T invokeSpecial0(@NotNull SNode node, @NotNull SMethod<T> method, @Nullable Object[] parameters) {

@@ -9,7 +9,6 @@ import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import java.util.List;
 import org.jetbrains.mps.openapi.model.SNode;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import java.util.Arrays;
 import org.jetbrains.annotations.NotNull;
@@ -24,7 +23,6 @@ import jetbrains.mps.internal.collections.runtime.ArrayUtils;
 import jetbrains.mps.internal.collections.runtime.Sequence;
 import jetbrains.mps.lang.core.behavior.BaseConcept__BehaviorDescriptor;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SConceptOperations;
-import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 import org.jetbrains.mps.openapi.language.SConcept;
@@ -32,25 +30,23 @@ import org.jetbrains.mps.openapi.language.SConcept;
 public final class Type__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getConcept(0xcfaa4966b7d54b69L, 0xb66a309a6e1a7290L, 0x670d5e92f854a614L, "org.iets3.core.expr.base.structure.Type");
 
-  public static final SMethod<List<SNode>> allSupertypes_id4Q4DxjDsh$t = new SMethodBuilder<List<SNode>>(new SJavaCompoundTypeImpl((Class<List<SNode>>) ((Class) Object.class))).name("allSupertypes").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5585772046592317725L).languageId(0xb66a309a6e1a7290L, 0xcfaa4966b7d54b69L).build2();
-  public static final SMethod<Iterable<ConstraintAndError>> applicableConstraints_id2S3ZC$oEyBR = new SMethodBuilder<Iterable<ConstraintAndError>>(new SJavaCompoundTypeImpl((Class<Iterable<ConstraintAndError>>) ((Class) Object.class))).name("applicableConstraints").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(3315773615452596727L).languageId(0xb66a309a6e1a7290L, 0xcfaa4966b7d54b69L).build2();
-  public static final SMethod<String> generateName_id4iVHBBBBcav = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("generateName").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(4952752849917100703L).languageId(0xb66a309a6e1a7290L, 0xcfaa4966b7d54b69L).build2();
-  public static final SMethod<Boolean> canBeSimplified_id46cplYwxrWE = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("canBeSimplified").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(4723261570594225962L).languageId(0xb66a309a6e1a7290L, 0xcfaa4966b7d54b69L).build2();
-  public static final SMethod<Void> simplify_id46cplYwxszL = new SMethodBuilder<Void>(new SJavaCompoundTypeImpl(Void.class)).name("simplify").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(4723261570594228465L).languageId(0xb66a309a6e1a7290L, 0xcfaa4966b7d54b69L).build2();
-  public static final SMethod<SNode> baseType_idXhdFKv3UAU = new SMethodBuilder<SNode>(new SJavaCompoundTypeImpl((Class<SNode>) ((Class) Object.class))).name("baseType").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(1103723565285353914L).languageId(0xb66a309a6e1a7290L, 0xcfaa4966b7d54b69L).build2();
-  public static final SMethod<ICapabilityRequirement> getCapabilityRequirement_id7McqtXGyz8c = new SMethodBuilder<ICapabilityRequirement>(new SJavaCompoundTypeImpl(ICapabilityRequirement.class)).name("getCapabilityRequirement").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(8974664565762175500L).languageId(0xb66a309a6e1a7290L, 0xcfaa4966b7d54b69L).build2();
-  public static final SMethod<Boolean> requiresSpecialCapability_id7McqtXG$e3Z = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("requiresSpecialCapability").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(8974664565762613503L).languageId(0xb66a309a6e1a7290L, 0xcfaa4966b7d54b69L).build2();
-  public static final SMethod<Boolean> notRequiresSpecialCapability_id7McqtXG$h_u = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("notRequiresSpecialCapability").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(8974664565762627934L).languageId(0xb66a309a6e1a7290L, 0xcfaa4966b7d54b69L).build2();
-  public static final SMethod<Boolean> isSameAs_idfIXgjlt4VE = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("isSameAs").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(283433227680763626L).languageId(0xb66a309a6e1a7290L, 0xcfaa4966b7d54b69L).build2(SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""));
-  public static final SMethod<Boolean> isDiscrete_id8XWEtesn15 = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("isDiscrete").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(161551962044723269L).languageId(0xb66a309a6e1a7290L, 0xcfaa4966b7d54b69L).build2();
-  public static final SMethod<Boolean> isSynthesized_id7_$HJtBs0P$ = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("isSynthesized").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(8747317549968919908L).languageId(0xb66a309a6e1a7290L, 0xcfaa4966b7d54b69L).build2();
-  public static final SMethod<String> getPresentation_idhEwIMiw = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("getPresentation").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(1213877396640L).languageId(0x9b92103b95ca8c0cL, 0xceab519525ea4f22L).build2();
-  public static final SMethod<Boolean> canBeSorted_id7k6A8Wfp3IU = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("canBeSorted").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(8432595092503804858L).languageId(0xb66a309a6e1a7290L, 0xcfaa4966b7d54b69L).build2();
+  public static final SMethod<List<SNode>> allSupertypes_id4Q4DxjDsh$t = new SMethodBuilder<>((Class<List<SNode>>) ((Class) Object.class)).name("allSupertypes").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5585772046592317725L).languageId(0xb66a309a6e1a7290L, 0xcfaa4966b7d54b69L).build2();
+  public static final SMethod<Iterable<ConstraintAndError>> applicableConstraints_id2S3ZC$oEyBR = new SMethodBuilder<>((Class<Iterable<ConstraintAndError>>) ((Class) Object.class)).name("applicableConstraints").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(3315773615452596727L).languageId(0xb66a309a6e1a7290L, 0xcfaa4966b7d54b69L).build2();
+  public static final SMethod<String> generateName_id4iVHBBBBcav = new SMethodBuilder<>(String.class).name("generateName").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(4952752849917100703L).languageId(0xb66a309a6e1a7290L, 0xcfaa4966b7d54b69L).build2();
+  public static final SMethod<Boolean> canBeSimplified_id46cplYwxrWE = new SMethodBuilder<>(Boolean.TYPE).name("canBeSimplified").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(4723261570594225962L).languageId(0xb66a309a6e1a7290L, 0xcfaa4966b7d54b69L).build2();
+  public static final SMethod<Void> simplify_id46cplYwxszL = new SMethodBuilder<>(Void.TYPE).name("simplify").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(4723261570594228465L).languageId(0xb66a309a6e1a7290L, 0xcfaa4966b7d54b69L).build2();
+  public static final SMethod<SNode> baseType_idXhdFKv3UAU = new SMethodBuilder<>(SNode.class).name("baseType").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(1103723565285353914L).languageId(0xb66a309a6e1a7290L, 0xcfaa4966b7d54b69L).build2();
+  public static final SMethod<ICapabilityRequirement> getCapabilityRequirement_id7McqtXGyz8c = new SMethodBuilder<>(ICapabilityRequirement.class).name("getCapabilityRequirement").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(8974664565762175500L).languageId(0xb66a309a6e1a7290L, 0xcfaa4966b7d54b69L).build2();
+  public static final SMethod<Boolean> requiresSpecialCapability_id7McqtXG$e3Z = new SMethodBuilder<>(Boolean.TYPE).name("requiresSpecialCapability").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(8974664565762613503L).languageId(0xb66a309a6e1a7290L, 0xcfaa4966b7d54b69L).build2();
+  public static final SMethod<Boolean> notRequiresSpecialCapability_id7McqtXG$h_u = new SMethodBuilder<>(Boolean.TYPE).name("notRequiresSpecialCapability").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(8974664565762627934L).languageId(0xb66a309a6e1a7290L, 0xcfaa4966b7d54b69L).build2();
+  public static final SMethod<Boolean> isSameAs_idfIXgjlt4VE = new SMethodBuilder<>(Boolean.TYPE).name("isSameAs").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(283433227680763626L).languageId(0xb66a309a6e1a7290L, 0xcfaa4966b7d54b69L).build2(SMethodBuilder.createJavaParameter(SNode.class, "other"));
+  public static final SMethod<Boolean> isDiscrete_id8XWEtesn15 = new SMethodBuilder<>(Boolean.TYPE).name("isDiscrete").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(161551962044723269L).languageId(0xb66a309a6e1a7290L, 0xcfaa4966b7d54b69L).build2();
+  public static final SMethod<Boolean> isSynthesized_id7_$HJtBs0P$ = new SMethodBuilder<>(Boolean.TYPE).name("isSynthesized").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(8747317549968919908L).languageId(0xb66a309a6e1a7290L, 0xcfaa4966b7d54b69L).build2();
+  public static final SMethod<String> getPresentation_idhEwIMiw = new SMethodBuilder<>(String.class).name("getPresentation").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(1213877396640L).languageId(0x9b92103b95ca8c0cL, 0xceab519525ea4f22L).build2();
+  public static final SMethod<Boolean> canBeSorted_id7k6A8Wfp3IU = new SMethodBuilder<>(Boolean.TYPE).name("canBeSorted").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(8432595092503804858L).languageId(0xb66a309a6e1a7290L, 0xcfaa4966b7d54b69L).build2();
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(allSupertypes_id4Q4DxjDsh$t, applicableConstraints_id2S3ZC$oEyBR, generateName_id4iVHBBBBcav, canBeSimplified_id46cplYwxrWE, simplify_id46cplYwxszL, baseType_idXhdFKv3UAU, getCapabilityRequirement_id7McqtXGyz8c, requiresSpecialCapability_id7McqtXG$e3Z, notRequiresSpecialCapability_id7McqtXG$h_u, isSameAs_idfIXgjlt4VE, isDiscrete_id8XWEtesn15, isSynthesized_id7_$HJtBs0P$, getPresentation_idhEwIMiw, canBeSorted_id7k6A8Wfp3IU);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(allSupertypes_id4Q4DxjDsh$t, applicableConstraints_id2S3ZC$oEyBR, generateName_id4iVHBBBBcav, canBeSimplified_id46cplYwxrWE, simplify_id46cplYwxszL, baseType_idXhdFKv3UAU, getCapabilityRequirement_id7McqtXGyz8c, requiresSpecialCapability_id7McqtXG$e3Z, notRequiresSpecialCapability_id7McqtXG$h_u, isSameAs_idfIXgjlt4VE, isDiscrete_id8XWEtesn15, isSynthesized_id7_$HJtBs0P$, getPresentation_idhEwIMiw, canBeSorted_id7k6A8Wfp3IU);
 
-  private static void ___init___(@NotNull SNode __thisNode__) {
-  }
 
   /*package*/ static List<SNode> allSupertypes_id4Q4DxjDsh$t(@NotNull SNode __thisNode__) {
     final List<SNode> supertypes = new ArrayList<SNode>();
@@ -115,10 +111,6 @@ public final class Type__BehaviorDescriptor extends BaseBHDescriptor {
   /*package*/ Type__BehaviorDescriptor() {
   }
 
-  @Override
-  protected void initNode(@NotNull SNode node, @NotNull SConstructor constructor, @Nullable Object[] parameters) {
-    ___init___(node);
-  }
 
   @Override
   protected <T> T invokeSpecial0(@NotNull SNode node, @NotNull SMethod<T> method, @Nullable Object[] parameters) {

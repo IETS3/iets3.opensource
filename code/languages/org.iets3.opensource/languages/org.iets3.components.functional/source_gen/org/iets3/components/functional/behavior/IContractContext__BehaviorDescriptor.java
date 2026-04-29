@@ -8,14 +8,12 @@ import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import org.jetbrains.mps.openapi.model.SNode;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import java.util.List;
 import java.util.Arrays;
 import org.jetbrains.annotations.NotNull;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
 import java.util.ArrayList;
-import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 import org.jetbrains.mps.openapi.language.SContainmentLink;
@@ -23,14 +21,12 @@ import org.jetbrains.mps.openapi.language.SContainmentLink;
 public final class IContractContext__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getInterfaceConcept(0x257976063fb647b8L, 0xbc3cb4384df7da44L, 0x55a63ae098529759L, "org.iets3.components.functional.structure.IContractContext");
 
-  public static final SMethod<Iterable<SNode>> states_id5mAeI2omVgq = new SMethodBuilder<Iterable<SNode>>(new SJavaCompoundTypeImpl((Class<Iterable<SNode>>) ((Class) Object.class))).name("states").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(6171685075661075482L).languageId(0xbc3cb4384df7da44L, 0x257976063fb647b8L).build2();
-  public static final SMethod<Iterable<SNode>> counters_id5mAeI2omZrU = new SMethodBuilder<Iterable<SNode>>(new SJavaCompoundTypeImpl((Class<Iterable<SNode>>) ((Class) Object.class))).name("counters").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(6171685075661092602L).languageId(0xbc3cb4384df7da44L, 0x257976063fb647b8L).build2();
-  public static final SMethod<Iterable<SNode>> parameters_idS$tO8nOCjD = new SMethodBuilder<Iterable<SNode>>(new SJavaCompoundTypeImpl((Class<Iterable<SNode>>) ((Class) Object.class))).name("parameters").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(1019070541443794153L).languageId(0xbc3cb4384df7da44L, 0x257976063fb647b8L).build2();
+  public static final SMethod<Iterable<SNode>> states_id5mAeI2omVgq = new SMethodBuilder<>((Class<Iterable<SNode>>) ((Class) Object.class)).name("states").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(6171685075661075482L).languageId(0xbc3cb4384df7da44L, 0x257976063fb647b8L).build2();
+  public static final SMethod<Iterable<SNode>> counters_id5mAeI2omZrU = new SMethodBuilder<>((Class<Iterable<SNode>>) ((Class) Object.class)).name("counters").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(6171685075661092602L).languageId(0xbc3cb4384df7da44L, 0x257976063fb647b8L).build2();
+  public static final SMethod<Iterable<SNode>> parameters_idS$tO8nOCjD = new SMethodBuilder<>((Class<Iterable<SNode>>) ((Class) Object.class)).name("parameters").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(1019070541443794153L).languageId(0xbc3cb4384df7da44L, 0x257976063fb647b8L).build2();
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(states_id5mAeI2omVgq, counters_id5mAeI2omZrU, parameters_idS$tO8nOCjD);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(states_id5mAeI2omVgq, counters_id5mAeI2omZrU, parameters_idS$tO8nOCjD);
 
-  private static void ___init___(@NotNull SNode __thisNode__) {
-  }
 
   /*package*/ static Iterable<SNode> states_id5mAeI2omVgq(@NotNull SNode __thisNode__) {
     if (SLinkOperations.getTarget(__thisNode__, LINKS.data$K1kQ) == null) {
@@ -54,10 +50,6 @@ public final class IContractContext__BehaviorDescriptor extends BaseBHDescriptor
   /*package*/ IContractContext__BehaviorDescriptor() {
   }
 
-  @Override
-  protected void initNode(@NotNull SNode node, @NotNull SConstructor constructor, @Nullable Object[] parameters) {
-    ___init___(node);
-  }
 
   @Override
   protected <T> T invokeSpecial0(@NotNull SNode node, @NotNull SMethod<T> method, @Nullable Object[] parameters) {

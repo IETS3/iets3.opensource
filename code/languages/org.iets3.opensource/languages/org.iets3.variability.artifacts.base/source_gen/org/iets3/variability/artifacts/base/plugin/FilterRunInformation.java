@@ -86,7 +86,7 @@ public class FilterRunInformation {
     private Map<SNode, SNode> origToInstanceEnvironment = Maps.newHashMap();
 
     /**
-     * With every new SkeletonNode new instantiation of a component c in the current model might happen. 
+     * With every new SkeletonNode new instantiation of a component c in the current model might happen.
      * This means that further instantiation points are also copied. In the further run of the algorithm down the SkeletonTree
      * we do only consider those copies in the instantiated component. Nevertheless in descendant SkeletonNodes only a link to the original instantiation
      * in the original component is stored. This Multimap keeps track for which originals we have instantiations in  'origToInstanceEnvironment'
@@ -106,7 +106,7 @@ public class FilterRunInformation {
     }
 
     /**
-     * Once a SkeletonNode during the traversal is done we need to remove any effects to the environment, i.e. the mapping of 
+     * Once a SkeletonNode during the traversal is done we need to remove any effects to the environment, i.e. the mapping of
      * originals to copied instantiations.
      * 
      * @param skn skeletonNode

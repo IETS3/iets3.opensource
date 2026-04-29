@@ -7,7 +7,6 @@ import org.jetbrains.mps.openapi.language.SAbstractConcept;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import java.util.List;
 import org.iets3.contextfilter.behavior.AbstractSelectorItem;
@@ -18,22 +17,19 @@ import org.jetbrains.mps.openapi.model.SNode;
 import org.iets3.variability.artifacts.base.plugin.ArtifactInstanceFilterContext;
 import jetbrains.mps.internal.collections.runtime.Sequence;
 import org.iets3.contextfilter.behavior.ContextSelector__BehaviorDescriptor;
-import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 
 public final class ArtifactInstanceContextSelector__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getConcept(0xf08835038eaa4bc8L, 0x8846eb63220ab1ddL, 0x3ef9945f640c3e60L, "org.iets3.variability.artifacts.base.structure.ArtifactInstanceContextSelector");
 
-  public static final SMethod<Class> getSelectorItemClass_id3j0RMEsazSW = new SMethodBuilder<Class>(new SJavaCompoundTypeImpl(Class.class)).name("getSelectorItemClass").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(3801283459602333244L).languageId(0x88cff6f4971432a5L, 0xdcb9d48f1fb64793L).build2();
-  public static final SMethod<List<AbstractSelectorItem>> selectorItems_id1UWdA_UjjPg = new SMethodBuilder<List<AbstractSelectorItem>>(new SJavaCompoundTypeImpl((Class<List<AbstractSelectorItem>>) ((Class) Object.class))).name("selectorItems").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(2214704943410789712L).languageId(0x88cff6f4971432a5L, 0xdcb9d48f1fb64793L).build2();
-  public static final SMethod<ArtifactInstanceSelectorItem> getSelectedItem_idHf7whNuUAf = new SMethodBuilder<ArtifactInstanceSelectorItem>(new SJavaCompoundTypeImpl(ArtifactInstanceSelectorItem.class)).name("getSelectedItem").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(814903062043535759L).languageId(0x8846eb63220ab1ddL, 0xf08835038eaa4bc8L).build2();
-  public static final SMethod<SkeletonNode> getSkeletonNodeForSelectedInstance_idHf7whNvtfR = new SMethodBuilder<SkeletonNode>(new SJavaCompoundTypeImpl(SkeletonNode.class)).name("getSkeletonNodeForSelectedInstance").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(814903062043677687L).languageId(0x8846eb63220ab1ddL, 0xf08835038eaa4bc8L).build2();
+  public static final SMethod<Class> getSelectorItemClass_id3j0RMEsazSW = new SMethodBuilder<>(Class.class).name("getSelectorItemClass").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(3801283459602333244L).languageId(0x88cff6f4971432a5L, 0xdcb9d48f1fb64793L).build2();
+  public static final SMethod<List<AbstractSelectorItem>> selectorItems_id1UWdA_UjjPg = new SMethodBuilder<>((Class<List<AbstractSelectorItem>>) ((Class) Object.class)).name("selectorItems").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(2214704943410789712L).languageId(0x88cff6f4971432a5L, 0xdcb9d48f1fb64793L).build2();
+  public static final SMethod<ArtifactInstanceSelectorItem> getSelectedItem_idHf7whNuUAf = new SMethodBuilder<>(ArtifactInstanceSelectorItem.class).name("getSelectedItem").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(814903062043535759L).languageId(0x8846eb63220ab1ddL, 0xf08835038eaa4bc8L).build2();
+  public static final SMethod<SkeletonNode> getSkeletonNodeForSelectedInstance_idHf7whNvtfR = new SMethodBuilder<>(SkeletonNode.class).name("getSkeletonNodeForSelectedInstance").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(814903062043677687L).languageId(0x8846eb63220ab1ddL, 0xf08835038eaa4bc8L).build2();
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(getSelectorItemClass_id3j0RMEsazSW, selectorItems_id1UWdA_UjjPg, getSelectedItem_idHf7whNuUAf, getSkeletonNodeForSelectedInstance_idHf7whNvtfR);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(getSelectorItemClass_id3j0RMEsazSW, selectorItems_id1UWdA_UjjPg, getSelectedItem_idHf7whNuUAf, getSkeletonNodeForSelectedInstance_idHf7whNvtfR);
 
-  private static void ___init___(@NotNull SNode __thisNode__) {
-  }
 
   /*package*/ static Class getSelectorItemClass_id3j0RMEsazSW(@NotNull SNode __thisNode__) {
     return ArtifactInstanceSelectorItem.class;
@@ -44,7 +40,7 @@ public final class ArtifactInstanceContextSelector__BehaviorDescriptor extends B
     return Sequence.fromIterable(contexts).select((it) -> (AbstractSelectorItem) new ArtifactInstanceSelectorItem(it.getLabel(), it.getSkeletonNode())).toList();
   }
   /*package*/ static ArtifactInstanceSelectorItem getSelectedItem_idHf7whNuUAf(@NotNull SNode __thisNode__) {
-    return as_jzdfg4_a0a0n(ContextSelector__BehaviorDescriptor.getSelectedItem_id1UWdA_UjxsD.invoke(__thisNode__), ArtifactInstanceSelectorItem.class);
+    return as_jzdfg4_a0a0m(ContextSelector__BehaviorDescriptor.getSelectedItem_id1UWdA_UjxsD.invoke(__thisNode__), ArtifactInstanceSelectorItem.class);
   }
   /*package*/ static SkeletonNode getSkeletonNodeForSelectedInstance_idHf7whNvtfR(@NotNull SNode __thisNode__) {
     return check_fnqpg5_a0a3(ArtifactInstanceContextSelector__BehaviorDescriptor.getSelectedItem_idHf7whNuUAf.invoke(__thisNode__));
@@ -53,10 +49,6 @@ public final class ArtifactInstanceContextSelector__BehaviorDescriptor extends B
   /*package*/ ArtifactInstanceContextSelector__BehaviorDescriptor() {
   }
 
-  @Override
-  protected void initNode(@NotNull SNode node, @NotNull SConstructor constructor, @Nullable Object[] parameters) {
-    ___init___(node);
-  }
 
   @Override
   protected <T> T invokeSpecial0(@NotNull SNode node, @NotNull SMethod<T> method, @Nullable Object[] parameters) {
@@ -107,7 +99,7 @@ public final class ArtifactInstanceContextSelector__BehaviorDescriptor extends B
     }
     return null;
   }
-  private static <T> T as_jzdfg4_a0a0n(Object o, Class<T> type) {
+  private static <T> T as_jzdfg4_a0a0m(Object o, Class<T> type) {
     return (type.isInstance(o) ? (T) o : null);
   }
 }

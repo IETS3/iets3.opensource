@@ -14,7 +14,6 @@ import org.jetbrains.mps.openapi.model.SNode;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
 import java.util.List;
-import java.util.ArrayList;
 import jetbrains.mps.internal.collections.runtime.ListSequence;
 import jetbrains.mps.internal.collections.runtime.SetSequence;
 import jetbrains.mps.internal.collections.runtime.IMapping;
@@ -117,12 +116,12 @@ public class UnitMap {
   }
 
   /**
-   * Checks whether two mappings can be possibly matched / exactly matched. 
+   * Checks whether two mappings can be possibly matched / exactly matched.
    * In case of exact match check the unit mappings must be entirely the same.
    */
   public static Tuples._3<Boolean, List<SNode>, List<SNode>> computeMatch(UnitMap left, UnitMap right) {
     if (left == null && right == null) {
-      return MultiTuple.<Boolean,List<SNode>,List<SNode>>from(true, new ArrayList<SNode>(), new ArrayList<SNode>());
+      return MultiTuple.<Boolean,List<SNode>,List<SNode>>from(true, List.<SNode>of(), List.<SNode>of());
     }
 
     // remove units with zero exponents
@@ -159,9 +158,9 @@ public class UnitMap {
   }
 
   /**
-   * Unifies the given mapping with an other mapping. This means that all of the exponents will be 
-   * summed in the mapping with the corresponding exponent from the other mapping. If a node is not 
-   * present in the original mapping, then the exponent of the other mapping's node will be inserted. 
+   * Unifies the given mapping with an other mapping. This means that all of the exponents will be
+   * summed in the mapping with the corresponding exponent from the other mapping. If a node is not
+   * present in the original mapping, then the exponent of the other mapping's node will be inserted.
    * Nodes with zero exponents are eliminated from the resulting unit mapping. 
    */
   public UnitMap unify(UnitMap other) {
@@ -180,10 +179,10 @@ public class UnitMap {
   }
 
   /**
-   * Reduces the given mapping with an other mapping. This means that all of the exponents will be 
-   * subtracted in the mapping with the corresponding exponent from the other mapping. If a unit is 
-   * not present in the original mapping, then the inverse exponent of the other mapping's node will be inserted. 
-   * Nodes with zero exponents are eliminated from the resulting mapping. 
+   * Reduces the given mapping with an other mapping. This means that all of the exponents will be
+   * subtracted in the mapping with the corresponding exponent from the other mapping. If a unit is
+   * not present in the original mapping, then the inverse exponent of the other mapping's node will be inserted.
+   * Nodes with zero exponents are eliminated from the resulting mapping.
    */
   public UnitMap reduceBy(UnitMap other) {
     UnitMap result = new UnitMap(this);
@@ -204,8 +203,8 @@ public class UnitMap {
 
   /**
    * Divides all of the exponents in the mapping with the given value if it is possible.
-   * As fractions are used in their minimal form this can only be possible if two fractions 
-   * have the exact same denominator and the modulo check should be performed with their numerators. 
+   * As fractions are used in their minimal form this can only be possible if two fractions
+   * have the exact same denominator and the modulo check should be performed with their numerators.
    */
   public UnitMap rootBy(SNode root) {
     UnitMap result = new UnitMap();
@@ -218,7 +217,7 @@ public class UnitMap {
 
 
   /**
-   * It is expected that the passed map is already broken down to atomic units. 
+   * It is expected that the passed map is already broken down to atomic units.
    */
   public List<SNode> createUnitReferences() {
     return MapSequence.fromMap(entries).select((final IMapping<UnitKey, Fraction> it) -> it.key().getRepresentedUnit().map((repUnit) -> createUnitReference(repUnit, it.value())).orElse(null)).where(new NotNullWhereFilter()).toList();

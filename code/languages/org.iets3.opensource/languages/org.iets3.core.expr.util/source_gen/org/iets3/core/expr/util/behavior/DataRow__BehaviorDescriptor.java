@@ -8,7 +8,6 @@ import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import org.jetbrains.mps.openapi.model.SNode;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import java.util.List;
 import java.util.Arrays;
@@ -18,7 +17,6 @@ import jetbrains.mps.internal.collections.runtime.Sequence;
 import jetbrains.mps.internal.collections.runtime.ListSequence;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
 import jetbrains.mps.internal.collections.runtime.NotNullWhereFilter;
-import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 import org.jetbrains.mps.openapi.language.SInterfaceConcept;
@@ -28,16 +26,14 @@ import org.jetbrains.mps.openapi.language.SReferenceLink;
 public final class DataRow__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getConcept(0x8bb1251eeae547abL, 0x984333adfae8edaaL, 0x23df2a74df8bcffL, "org.iets3.core.expr.util.structure.DataRow");
 
-  public static final SMethod<Iterable<SNode>> resultContents_id8XWEtejPkO = new SMethodBuilder<Iterable<SNode>>(new SJavaCompoundTypeImpl((Class<Iterable<SNode>>) ((Class) Object.class))).name("resultContents").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(161551962042488116L).languageId(0x984333adfae8edaaL, 0x8bb1251eeae547abL).build2();
-  public static final SMethod<Iterable<SNode>> queryContents_id8XWEteuTUz = new SMethodBuilder<Iterable<SNode>>(new SJavaCompoundTypeImpl((Class<Iterable<SNode>>) ((Class) Object.class))).name("queryContents").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(161551962045390499L).languageId(0x984333adfae8edaaL, 0x8bb1251eeae547abL).build2();
-  public static final SMethod<SNode> createRowQueryExpr_idLvU0bhz6Io = new SMethodBuilder<SNode>(new SJavaCompoundTypeImpl((Class<SNode>) ((Class) Object.class))).name("createRowQueryExpr").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(891686350045866904L).languageId(0x984333adfae8edaaL, 0x8bb1251eeae547abL).build2();
-  public static final SMethod<Boolean> isDefault_id3V7UZBYyZ4 = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("isDefault").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(70685059526045636L).languageId(0x984333adfae8edaaL, 0x8bb1251eeae547abL).build2();
-  public static final SMethod<SNode> lastResultContent_id7_eY2TduQzc = new SMethodBuilder<SNode>(new SJavaCompoundTypeImpl((Class<SNode>) ((Class) Object.class))).name("lastResultContent").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(8741196804524828876L).languageId(0x984333adfae8edaaL, 0x8bb1251eeae547abL).build2();
+  public static final SMethod<Iterable<SNode>> resultContents_id8XWEtejPkO = new SMethodBuilder<>((Class<Iterable<SNode>>) ((Class) Object.class)).name("resultContents").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(161551962042488116L).languageId(0x984333adfae8edaaL, 0x8bb1251eeae547abL).build2();
+  public static final SMethod<Iterable<SNode>> queryContents_id8XWEteuTUz = new SMethodBuilder<>((Class<Iterable<SNode>>) ((Class) Object.class)).name("queryContents").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(161551962045390499L).languageId(0x984333adfae8edaaL, 0x8bb1251eeae547abL).build2();
+  public static final SMethod<SNode> createRowQueryExpr_idLvU0bhz6Io = new SMethodBuilder<>(SNode.class).name("createRowQueryExpr").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(891686350045866904L).languageId(0x984333adfae8edaaL, 0x8bb1251eeae547abL).build2();
+  public static final SMethod<Boolean> isDefault_id3V7UZBYyZ4 = new SMethodBuilder<>(Boolean.TYPE).name("isDefault").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(70685059526045636L).languageId(0x984333adfae8edaaL, 0x8bb1251eeae547abL).build2();
+  public static final SMethod<SNode> lastResultContent_id7_eY2TduQzc = new SMethodBuilder<>(SNode.class).name("lastResultContent").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(8741196804524828876L).languageId(0x984333adfae8edaaL, 0x8bb1251eeae547abL).build2();
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(resultContents_id8XWEtejPkO, queryContents_id8XWEteuTUz, createRowQueryExpr_idLvU0bhz6Io, isDefault_id3V7UZBYyZ4, lastResultContent_id7_eY2TduQzc);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(resultContents_id8XWEtejPkO, queryContents_id8XWEteuTUz, createRowQueryExpr_idLvU0bhz6Io, isDefault_id3V7UZBYyZ4, lastResultContent_id7_eY2TduQzc);
 
-  private static void ___init___(@NotNull SNode __thisNode__) {
-  }
 
   /*package*/ static Iterable<SNode> resultContents_id8XWEtejPkO(@NotNull final SNode __thisNode__) {
     // we have to make sure to return them in the order of their definition in the column header!
@@ -60,10 +56,6 @@ public final class DataRow__BehaviorDescriptor extends BaseBHDescriptor {
   /*package*/ DataRow__BehaviorDescriptor() {
   }
 
-  @Override
-  protected void initNode(@NotNull SNode node, @NotNull SConstructor constructor, @Nullable Object[] parameters) {
-    ___init___(node);
-  }
 
   @Override
   protected <T> T invokeSpecial0(@NotNull SNode node, @NotNull SMethod<T> method, @Nullable Object[] parameters) {
