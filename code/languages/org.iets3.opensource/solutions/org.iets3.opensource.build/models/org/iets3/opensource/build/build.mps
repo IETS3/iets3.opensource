@@ -2135,6 +2135,16 @@
             <ref role="3bR37D" to="90a9:5vQ_hAOOn52" resolve="de.slisson.mps.conditionalEditor.hints" />
           </node>
         </node>
+        <node concept="1SiIV0" id="2L0OAuQ2Fu7" role="3bR37C">
+          <node concept="3bR9La" id="2L0OAuQ2Fu8" role="1SiIV1">
+            <ref role="3bR37D" node="1VJeVhdX98g" resolve="org.iets3.core.expr.typetags.physunits" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="2L0OAuQ2Fu9" role="3bR37C">
+          <node concept="3bR9La" id="2L0OAuQ2Fua" role="1SiIV1">
+            <ref role="3bR37D" node="JUiQTzdslj" resolve="org.iets3.core.expr.typetags" />
+          </node>
+        </node>
       </node>
       <node concept="1E1JtD" id="7yHH$DDpBOh" role="2G$12L">
         <property role="BnDLt" value="true" />
@@ -16091,6 +16101,9 @@
         <node concept="L2wRC" id="7K$Mm86tjxH" role="39821P">
           <ref role="L2wRA" node="5CKJX630vfX" resolve="test.ts.expr.os.comma" />
         </node>
+        <node concept="L2wRC" id="76EiapPSb0Y" role="39821P">
+          <ref role="L2wRA" node="4Ifs9kimNd8" resolve="test.org.iets3.core.expr.typetags.physunits" />
+        </node>
       </node>
     </node>
     <node concept="10PD9b" id="OJuIQpzfqU" role="10PD9s" />
@@ -17145,22 +17158,6 @@
           </node>
         </node>
       </node>
-      <node concept="3rtmxn" id="59rcyU3GDms" role="3bR31x">
-        <node concept="3LXTmp" id="59rcyU3GDmt" role="3rtmxm">
-          <node concept="3qWCbU" id="59rcyU3GDmu" role="3LXTna">
-            <property role="3qWCbO" value="icons/**, resources/**" />
-          </node>
-          <node concept="398BVA" id="59rcyU3GDmv" role="3LXTmr">
-            <ref role="398BVh" node="OJuIQp$deE" resolve="iets3.lang.opensource" />
-            <node concept="2Ry0Ak" id="59rcyU3GDmw" role="iGT6I">
-              <property role="2Ry0Am" value="tests" />
-              <node concept="2Ry0Ak" id="59rcyU3GDmx" role="2Ry0An">
-                <property role="2Ry0Am" value="test.org.iets3.core.comments" />
-              </node>
-            </node>
-          </node>
-        </node>
-      </node>
       <node concept="1BupzO" id="1RMC8GHIDGD" role="3bR31x">
         <property role="3ZfqAx" value="models" />
         <property role="1Hdu6h" value="true" />
@@ -17180,6 +17177,22 @@
           </node>
           <node concept="3qWCbU" id="7K$Mm86tiZZ" role="3LXTna">
             <property role="3qWCbO" value="**/*.mps, **/*.mpsr, **/.model" />
+          </node>
+        </node>
+      </node>
+      <node concept="3rtmxn" id="6SFWL_jnmM7" role="3bR31x">
+        <node concept="3LXTmp" id="6SFWL_jnmM8" role="3rtmxm">
+          <node concept="3qWCbU" id="6SFWL_jnmM9" role="3LXTna">
+            <property role="3qWCbO" value="icons/**, resources/**" />
+          </node>
+          <node concept="398BVA" id="6SFWL_jnmMa" role="3LXTmr">
+            <ref role="398BVh" node="OJuIQp$deE" resolve="iets3.lang.opensource" />
+            <node concept="2Ry0Ak" id="6SFWL_jnmMb" role="iGT6I">
+              <property role="2Ry0Am" value="tests" />
+              <node concept="2Ry0Ak" id="6SFWL_jnmMc" role="2Ry0An">
+                <property role="2Ry0Am" value="test.org.iets3.core.comments" />
+              </node>
+            </node>
           </node>
         </node>
       </node>
@@ -17979,6 +17992,9 @@
       <node concept="22LTRM" id="1WrO9kaEJRE" role="22LTRK">
         <ref role="22LTRN" node="5CKJX630vfX" resolve="test.ts.expr.os.comma" />
       </node>
+      <node concept="22LTRM" id="76EiapPSb11" role="22LTRK">
+        <ref role="22LTRN" node="4Ifs9kimNd8" resolve="test.org.iets3.core.expr.typetags.physunits" />
+      </node>
       <node concept="22LTRM" id="1WrO9kaEJRH" role="22LTRK">
         <ref role="22LTRN" node="2i81Z9BQeAe" resolve="test.iets3.safety.attributes" />
       </node>
@@ -17994,6 +18010,67 @@
     </node>
     <node concept="2vP9LM" id="3ZBI8Awdbww" role="1hWBAP">
       <ref role="2vP9LP" node="OJuIQq2vpw" resolve="tests" />
+    </node>
+    <node concept="1E1JtA" id="4Ifs9kimNd8" role="3989C9">
+      <property role="BnDLt" value="true" />
+      <property role="TrG5h" value="test.org.iets3.core.expr.typetags.physunits" />
+      <property role="3LESm3" value="6a0feb66-faac-4cf7-bf7b-b635f9d16261" />
+      <property role="aoJFB" value="eYcmk9QOlj/sources_and_tests" />
+      <node concept="398BVA" id="4Ifs9kimNdb" role="3LF7KH">
+        <ref role="398BVh" node="OJuIQp$deE" resolve="iets3.lang.opensource" />
+        <node concept="2Ry0Ak" id="4Ifs9kimNde" role="iGT6I">
+          <property role="2Ry0Am" value="tests" />
+          <node concept="2Ry0Ak" id="76EiapPSaTX" role="2Ry0An">
+            <property role="2Ry0Am" value="test.org.iets3.core.expr.typetags.physunits" />
+            <node concept="2Ry0Ak" id="76EiapPSaU0" role="2Ry0An">
+              <property role="2Ry0Am" value="test.org.iets3.core.expr.typetags.physunits.msd" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3rtmxn" id="76EiapPSaU1" role="3bR31x">
+        <node concept="3LXTmp" id="76EiapPSaU2" role="3rtmxm">
+          <node concept="398BVA" id="76EiapPSaU3" role="3LXTmr">
+            <ref role="398BVh" node="OJuIQp$deE" resolve="iets3.lang.opensource" />
+            <node concept="2Ry0Ak" id="76EiapPSaU4" role="iGT6I">
+              <property role="2Ry0Am" value="tests" />
+              <node concept="2Ry0Ak" id="76EiapPSaU5" role="2Ry0An">
+                <property role="2Ry0Am" value="test.org.iets3.core.expr.typetags.physunits" />
+              </node>
+            </node>
+          </node>
+          <node concept="3qWCbU" id="76EiapPSaU7" role="3LXTna">
+            <property role="3qWCbO" value="icons/**" />
+          </node>
+        </node>
+      </node>
+      <node concept="1SiIV0" id="76EiapPSb0A" role="3bR37C">
+        <node concept="3bR9La" id="76EiapPSb0B" role="1SiIV1">
+          <ref role="3bR37D" node="3jMXg07aoGO" resolve="org.iets3.core.expr.typetags.phyunits.si" />
+        </node>
+      </node>
+      <node concept="1BupzO" id="76EiapPSb0U" role="3bR31x">
+        <property role="3ZfqAx" value="models" />
+        <property role="1Hdu6h" value="true" />
+        <property role="1HemKv" value="true" />
+        <node concept="3LXTmp" id="76EiapPSb0V" role="1HemKq">
+          <node concept="398BVA" id="76EiapPSb0C" role="3LXTmr">
+            <ref role="398BVh" node="OJuIQp$deE" resolve="iets3.lang.opensource" />
+            <node concept="2Ry0Ak" id="76EiapPSb0D" role="iGT6I">
+              <property role="2Ry0Am" value="tests" />
+              <node concept="2Ry0Ak" id="76EiapPSb0E" role="2Ry0An">
+                <property role="2Ry0Am" value="test.org.iets3.core.expr.typetags.physunits" />
+                <node concept="2Ry0Ak" id="76EiapPSb0F" role="2Ry0An">
+                  <property role="2Ry0Am" value="models" />
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="3qWCbU" id="76EiapPSb0W" role="3LXTna">
+            <property role="3qWCbO" value="**/*.mps, **/*.mpsr, **/.model" />
+          </node>
+        </node>
+      </node>
     </node>
   </node>
   <node concept="1l3spW" id="71zSQigYEMA">
