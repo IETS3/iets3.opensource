@@ -1353,7 +1353,7 @@
         </node>
         <node concept="3cpWs8" id="5hMo5PmOBzN" role="3cqZAp">
           <node concept="3cpWsn" id="5hMo5PmOBzO" role="3cpWs9">
-            <property role="TrG5h" value="artifactGroupLogical" />
+            <property role="TrG5h" value="allArtifactGroup" />
             <node concept="3vKaQO" id="4pGaDIgIgzD" role="1tU5fm">
               <node concept="3Tqbb2" id="4pGaDIgIgzF" role="3O5elw" />
             </node>
@@ -1518,8 +1518,8 @@
               </node>
               <node concept="liA8E" id="5hMo5PmRzbe" role="2OqNvi">
                 <ref role="37wK5l" node="5hMo5PmNklQ" resolve="canDoMulticheck" />
-                <node concept="37vLTw" id="5hMo5PmRBWB" role="37wK5m">
-                  <ref role="3cqZAo" node="24YzBBJVE6u" resolve="artifactGroup" />
+                <node concept="37vLTw" id="5vB1gFotsFq" role="37wK5m">
+                  <ref role="3cqZAo" node="5hMo5PmOBzO" resolve="artifactGroupLogical" />
                 </node>
               </node>
             </node>
