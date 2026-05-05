@@ -51,7 +51,7 @@ public class FilterRunInformation {
 
   public Set<SNode> componentStaticReferenced = Sets.newHashSet();
 
-  private Multimap<SNode, SNode> originalComponent2Instances = MultimapBuilder.SetMultimapBuilder.hashKeys().hashSetValues().<SNode,SNode>build();
+  private Multimap<SNode, SNode> originalComponent2Instances = MultimapBuilder.SetMultimapBuilder.hashKeys().linkedHashSetValues().<SNode,SNode>build();
 
   public Optional<SNode> instanceFor(SNode blueprint) {
     return this.ie.instanceFor(blueprint);
