@@ -10,14 +10,15 @@ import java.util.List;
 import jetbrains.mps.internal.collections.runtime.ListSequence;
 import java.util.ArrayList;
 import com.google.common.collect.Lists;
+import com.google.common.collect.Multimap;
+import com.google.common.collect.MultimapBuilder;
 import java.util.Optional;
 import java.util.Map;
-import com.google.common.collect.Multimap;
-import com.google.common.collect.ArrayListMultimap;
-import jetbrains.mps.internal.collections.runtime.SetSequence;
 import org.iets3.variability.artifacts.base.behavior.SkeletonNode;
 import com.google.common.collect.Maps;
+import com.google.common.collect.ArrayListMultimap;
 import jetbrains.mps.internal.collections.runtime.MapSequence;
+import jetbrains.mps.internal.collections.runtime.SetSequence;
 import java.util.Collection;
 import jetbrains.mps.internal.collections.runtime.CollectionSequence;
 import java.util.Collections;
@@ -50,6 +51,7 @@ public class FilterRunInformation {
 
   public Set<SNode> componentStaticReferenced = Sets.newHashSet();
 
+  private Multimap<SNode, SNode> originalComponent2Instances = MultimapBuilder.SetMultimapBuilder.hashKeys().hashSetValues().<SNode,SNode>build();
 
   public Optional<SNode> instanceFor(SNode blueprint) {
     return this.ie.instanceFor(blueprint);
@@ -60,12 +62,7 @@ public class FilterRunInformation {
   }
 
   public Multimap<SNode, SNode> originalToInstances() {
-    Map<SNode, SNode> instanceToOriginal = this.instanceToOriginal();
-    ArrayListMultimap<SNode, SNode> resultHolder = ArrayListMultimap.<SNode,SNode>create();
-    for (Map.Entry<SNode, SNode> e : SetSequence.fromSet(instanceToOriginal.entrySet())) {
-      resultHolder.put(e.getValue(), e.getKey());
-    }
-    return resultHolder;
+    return this.originalComponent2Instances;
   }
 
   /**
@@ -79,6 +76,10 @@ public class FilterRunInformation {
 
   public void remove(SkeletonNode skn) {
     this.ie.remove(skn);
+  }
+
+  public void addOrig2Instance(SNode orig, SNode instance) {
+    this.originalComponent2Instances.put(orig, instance);
   }
 
   public void add(SkeletonNode skn, Map<SNode, SNode> mapping) {
