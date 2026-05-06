@@ -17054,7 +17054,7 @@
     </node>
     <node concept="2tJIrI" id="4pGaDIglX0F" role="jymVt" />
     <node concept="2YIFZL" id="4pGaDIgmOzB" role="jymVt">
-      <property role="TrG5h" value="artifactGroupWithLogicalChildren" />
+      <property role="TrG5h" value="artifactGroupIncludingLogicalChildren" />
       <node concept="37vLTG" id="4pGaDIgmPgo" role="3clF46">
         <property role="TrG5h" value="mainArtifact" />
         <node concept="3Tqbb2" id="4pGaDIgmPgp" role="1tU5fm">
@@ -17083,7 +17083,7 @@
         </node>
         <node concept="3cpWs6" id="4pGaDIgrZNC" role="3cqZAp">
           <node concept="1rXfSq" id="1q2b1nq0DBO" role="3cqZAk">
-            <ref role="37wK5l" node="4pGaDIgrZNy" resolve="artifactGroupWithLogicalChildren" />
+            <ref role="37wK5l" node="4pGaDIgrZNy" resolve="artifactGroupIncludingLogicalChildren" />
             <node concept="37vLTw" id="4pGaDIgrZNA" role="37wK5m">
               <ref role="3cqZAo" node="4pGaDIgmUeC" resolve="artifactGroup" />
             </node>
@@ -17097,7 +17097,7 @@
     </node>
     <node concept="2tJIrI" id="4pGaDIgs0W5" role="jymVt" />
     <node concept="2YIFZL" id="4pGaDIgrZNy" role="jymVt">
-      <property role="TrG5h" value="artifactGroupWithLogicalChildren" />
+      <property role="TrG5h" value="artifactGroupIncludingLogicalChildren" />
       <node concept="3Tm1VV" id="4pGaDIgrZNz" role="1B3o_S" />
       <node concept="A3Dl8" id="4pGaDIgrZN$" role="3clF45">
         <node concept="3Tqbb2" id="4pGaDIgrZN_" role="A3Ik2" />
