@@ -148,9 +148,9 @@ public class ForAllVariantsImpl {
     }
 
     List<SNode> artifactGroup = Sequence.fromIterable(IVAAUtil.artifactGroup(ivaa)).toList();
-    Collection<SNode> artifactGroupLogical = Sequence.fromIterable(IVAAUtil.artifactGroupWithLogicalChildren(artifactGroup)).toList();
+    Collection<SNode> allArtifactGroup = Sequence.fromIterable(IVAAUtil.artifactGroupIncludingLogicalChildren(artifactGroup)).toList();
     // TODO: remove this workaround after https://youtrack.jetbrains.com/issue/MPS-34340 is solved
-    if (!(typeCheckingContext.canDoMulticheck(artifactGroup))) {
+    if (!(typeCheckingContext.canDoMulticheck(allArtifactGroup))) {
       IETS3VariabilitySettings.VerbosityLevel verb = Settings.showForAllVariantsExecutionWarning();
       if (verb == IETS3VariabilitySettings.VerbosityLevel.FULL || (verb == IETS3VariabilitySettings.VerbosityLevel.REDUCED && !(hasMulticheckWarningBeenShown))) {
         // cannot do multi-check during "Check Model" with multiple roots
@@ -164,7 +164,7 @@ public class ForAllVariantsImpl {
     IFilterInstantiator filterInstantiator = instance.filterInstantiator();
     for (SNode config : Sequence.fromIterable(concreteConfigs)) {
       // create cloned root nodes for 150% artifact group
-      final RootNodesCopy origToCopy = RootNodesCopy.createFromNodeGroup(artifactGroupLogical);
+      final RootNodesCopy origToCopy = RootNodesCopy.createFromNodeGroup(allArtifactGroup);
 
       // apply variability filtering to copy
       FilterParams params = FilterParams.builder(ivaa, config).setUseSkeletonCache(true).setNodeMapper(origToCopy.getMapper()).setDeleteStaticContent(false).setFixBrokenLinks(true).build();

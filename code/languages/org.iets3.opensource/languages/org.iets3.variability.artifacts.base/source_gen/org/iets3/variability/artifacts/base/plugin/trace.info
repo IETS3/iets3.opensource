@@ -1912,9 +1912,9 @@
   <root nodeRef="r:154fabcc-b3d3-4e79-bb19-4903ef6965db(org.iets3.variability.artifacts.base.plugin)/5074477727769656227">
     <file name="IVAAUtil.java">
       <node id="5074477727769706118" at="26,67,27,243" concept="12" />
-      <node id="5074477727769928615" at="30,86,31,92" concept="11" />
-      <node id="5074477727771262184" at="31,92,32,59" concept="12" />
-      <node id="5074477727771262150" at="35,99,36,143" concept="11" />
+      <node id="5074477727769928615" at="30,91,31,92" concept="11" />
+      <node id="5074477727771262184" at="31,92,32,64" concept="12" />
+      <node id="5074477727771262150" at="35,104,36,143" concept="11" />
       <node id="5074477727771262164" at="36,143,37,67" concept="12" />
       <node id="2590092927356918443" at="40,75,41,216" concept="11" />
       <node id="2590092927356959253" at="41,216,42,59" concept="12" />
@@ -1937,8 +1937,8 @@
       <node id="5074477727769656227" at="75,0,76,0" concept="15" trace="ILogicalChildOwner$nQ" />
       <node id="5074477727769676548" at="26,0,29,0" concept="16" trace="artifactGroup#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljava/lang/Iterable;" />
       <node id="4221041331930920644" at="45,117,48,5" concept="9" />
-      <node id="5074477727769905383" at="30,0,34,0" concept="16" trace="artifactGroupWithLogicalChildren#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljava/lang/Iterable;" />
-      <node id="5074477727771262178" at="35,0,39,0" concept="16" trace="artifactGroupWithLogicalChildren#(Ljava/util/Collection;)Ljava/lang/Iterable;" />
+      <node id="5074477727769905383" at="30,0,34,0" concept="16" trace="artifactGroupIncludingLogicalChildren#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljava/lang/Iterable;" />
+      <node id="5074477727771262178" at="35,0,39,0" concept="16" trace="artifactGroupIncludingLogicalChildren#(Ljava/util/Collection;)Ljava/lang/Iterable;" />
       <node id="5074477727770023564" at="40,0,44,0" concept="16" trace="collectNestedLogicalChildren#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljava/lang/Iterable;" />
       <node id="1621907288169963211" at="48,5,53,5" concept="20" />
       <node id="1621907288170307479" at="63,0,70,5" concept="21" />
@@ -1948,10 +1948,10 @@
       <scope id="4221041331930920646" at="46,22,47,69" />
       <scope id="1621907288169963212" at="49,9,50,124" />
       <scope id="1621907288169963215" at="51,27,52,36" />
-      <scope id="5074477727769905388" at="30,86,32,59">
+      <scope id="5074477727769905388" at="30,91,32,64">
         <var name="artifactGroup" id="5074477727769928616" />
       </scope>
-      <scope id="5074477727771262149" at="35,99,37,67">
+      <scope id="5074477727771262149" at="35,104,37,67">
         <var name="logicalChildren" id="5074477727771262151" />
       </scope>
       <scope id="5074477727770023565" at="40,75,42,59">
