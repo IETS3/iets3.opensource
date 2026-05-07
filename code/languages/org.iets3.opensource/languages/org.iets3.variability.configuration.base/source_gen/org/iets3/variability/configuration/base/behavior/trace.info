@@ -842,8 +842,8 @@
     <file name="ConfigRelations.java">
       <node id="3174023752802868762" at="29,44,30,18" concept="10" />
       <node id="3174023752802869427" at="31,5,32,0" concept="12" />
-      <node id="3174023752785803760" at="32,0,33,110" concept="9" />
-      <node id="3174023752802869823" at="33,110,34,0" concept="12" />
+      <node id="3174023752785803760" at="32,0,33,98" concept="9" />
+      <node id="3174023752802869823" at="33,98,34,0" concept="12" />
       <node id="3174023752802876156" at="34,0,35,61" concept="10" />
       <node id="3174023752802863004" at="28,78,31,5" concept="7" />
       <node id="3174023752802897146" at="28,0,37,0" concept="14" trace="isMoreSpecificOrEqual#(Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;)Z" />
@@ -946,7 +946,7 @@
       <node id="6821044287477853131" at="178,82,179,76" concept="4" />
       <node id="6821044287477836881" at="179,76,180,77" concept="4" />
       <node id="5050560734056697203" at="182,90,183,77" concept="10" />
-      <node id="8737753560260941288" at="185,109,186,94" concept="10" />
+      <node id="8737753560260941288" at="185,109,186,82" concept="10" />
       <node id="5788938342145975904" at="188,114,189,189" concept="4" />
       <node id="4143858465353827603" at="191,119,192,131" concept="4" />
       <node id="7877854869141084339" at="194,88,195,123" concept="4" />
@@ -973,7 +973,7 @@
       <node id="5473634649714025305" at="243,35,244,134" concept="4" />
       <node id="5473634649719365926" at="244,134,245,71" concept="4" />
       <node id="5473634649713587911" at="246,5,247,34" concept="10" />
-      <node id="8133409598987398633" at="249,111,250,338" concept="10" />
+      <node id="8133409598987398633" at="249,111,250,326" concept="10" />
       <node id="1713046119073478809" at="252,103,253,205" concept="9" />
       <node id="1713046119073491518" at="253,205,254,55" concept="4" />
       <node id="1713046119073490485" at="254,55,255,13" concept="10" />
@@ -1229,7 +1229,7 @@
       <scope id="2096528664894048314" at="168,115,169,148" />
       <scope id="1493993126251022024" at="171,102,172,214" />
       <scope id="5050560734056692300" at="182,90,183,77" />
-      <scope id="3632605611353623643" at="185,109,186,94" />
+      <scope id="3632605611353623643" at="185,109,186,82" />
       <scope id="7877854869138861889" at="188,114,189,189" />
       <scope id="4143858465343291928" at="191,119,192,131" />
       <scope id="7877854869141031390" at="194,88,195,123" />
@@ -1238,7 +1238,7 @@
       <scope id="3414566187109975135" at="217,25,218,15" />
       <scope id="3414566187110145051" at="229,100,230,19" />
       <scope id="1713046119074596899" at="236,35,237,19" />
-      <scope id="1713046119074657252" at="249,111,250,338" />
+      <scope id="1713046119074657252" at="249,111,250,326" />
       <scope id="3052460515443830004" at="269,273,270,100" />
       <scope id="1609421049999380838" at="272,25,273,99" />
       <scope id="1954229057911756797" at="276,93,277,161" />
@@ -5107,20 +5107,20 @@
       <node id="1487763945534546252" at="31,71,32,68" concept="4" />
       <node id="1487763945534518611" at="36,5,37,32" concept="9" />
       <node id="1487763945534518614" at="38,94,39,157" concept="4" />
-      <node id="7772191056242220490" at="44,78,45,89" concept="9" />
-      <node id="7772191056242220490" at="45,89,46,26" concept="10" />
-      <node id="7772191056242220495" at="48,78,49,93" concept="9" />
-      <node id="7772191056242220495" at="49,93,50,26" concept="10" />
-      <node id="7772191056242169614" at="54,0,55,0" concept="13" trace="FeatureModelInclude$Iq" />
-      <node id="7772191056242169614" at="55,0,56,0" concept="13" trace="InlineFeatureConfigurationContent$P5" />
-      <node id="7772191056242169614" at="56,0,57,0" concept="13" trace="FeatureModelConfigurationBase$y8" />
-      <node id="7772191056242169614" at="60,0,61,0" concept="13" trace="cardinality$EsDt" />
-      <node id="7772191056242169614" at="61,0,62,0" concept="13" trace="subfeatureConfigurations$l9wi" />
+      <node id="7772191056242220490" at="43,78,44,89" concept="9" />
+      <node id="7772191056242220490" at="44,89,45,26" concept="10" />
+      <node id="7772191056242220495" at="47,78,48,93" concept="9" />
+      <node id="7772191056242220495" at="48,93,49,26" concept="10" />
+      <node id="7772191056242169614" at="53,0,54,0" concept="13" trace="FeatureModelInclude$Iq" />
+      <node id="7772191056242169614" at="54,0,55,0" concept="13" trace="InlineFeatureConfigurationContent$P5" />
+      <node id="7772191056242169614" at="55,0,56,0" concept="13" trace="FeatureModelConfigurationBase$y8" />
+      <node id="7772191056242169614" at="59,0,60,0" concept="13" trace="cardinality$EsDt" />
+      <node id="7772191056242169614" at="60,0,61,0" concept="13" trace="subfeatureConfigurations$l9wi" />
       <node id="1487763945523271440" at="22,79,25,9" concept="7" />
       <node id="1487763945534432431" at="31,0,34,0" concept="14" trace="addSubConfigurations#(Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;)V" />
       <node id="1487763945534518611" at="37,32,40,7" concept="7" />
-      <node id="7772191056242220490" at="44,0,48,0" concept="14" trace="createFeatureModelConfigurationBase_r16tdr_a0a0a0a1#()Lorg/jetbrains/mps/openapi/model/SNode;" />
-      <node id="7772191056242220495" at="48,0,52,0" concept="14" trace="createInlineFeatureConfigurationContent_r16tdr_a1a1#()Lorg/jetbrains/mps/openapi/model/SNode;" />
+      <node id="7772191056242220490" at="43,0,47,0" concept="14" trace="createFeatureModelConfigurationBase_r16tdr_a0a0a0a1#()Lorg/jetbrains/mps/openapi/model/SNode;" />
+      <node id="7772191056242220495" at="47,0,51,0" concept="14" trace="createInlineFeatureConfigurationContent_r16tdr_a1a1#()Lorg/jetbrains/mps/openapi/model/SNode;" />
       <node id="7772191056242220486" at="21,28,26,7" concept="7" />
       <node id="1487763945534518611" at="35,83,41,5" concept="1" />
       <node id="7772191056242220486" at="19,46,27,5" concept="1" />
@@ -5129,10 +5129,10 @@
       <scope id="1487763945523271442" at="23,77,24,71" />
       <scope id="1487763945534432439" at="31,71,32,68" />
       <scope id="1487763945534518613" at="38,94,39,157" />
-      <scope id="7772191056242220490" at="44,78,46,26">
+      <scope id="7772191056242220490" at="43,78,45,26">
         <var name="n0" id="7772191056242220490" />
       </scope>
-      <scope id="7772191056242220495" at="48,78,50,26">
+      <scope id="7772191056242220495" at="47,78,49,26">
         <var name="n0" id="7772191056242220495" />
       </scope>
       <scope id="7772191056242220488" at="22,79,25,9" />
@@ -5143,8 +5143,8 @@
       <scope id="1487763945534518611" at="36,5,40,7">
         <var name="ifcc" id="1487763945534518611" />
       </scope>
-      <scope id="7772191056242220490" at="44,0,48,0" />
-      <scope id="7772191056242220495" at="48,0,52,0" />
+      <scope id="7772191056242220490" at="43,0,47,0" />
+      <scope id="7772191056242220495" at="47,0,51,0" />
       <scope id="7772191056242220486" at="20,5,26,7">
         <var name="fmi" id="7772191056242220486" />
       </scope>
@@ -5157,9 +5157,9 @@
       <scope id="7772191056242220479" at="19,0,30,0">
         <var name="ftn" id="7772191056242220481" />
       </scope>
-      <unit id="7772191056242169614" at="59,0,63,0" name="org.iets3.variability.configuration.base.behavior.ActionsUtil$LINKS" />
-      <unit id="7772191056242169614" at="53,0,58,0" name="org.iets3.variability.configuration.base.behavior.ActionsUtil$CONCEPTS" />
-      <unit id="7772191056242169614" at="17,0,64,0" name="org.iets3.variability.configuration.base.behavior.ActionsUtil" />
+      <unit id="7772191056242169614" at="58,0,62,0" name="org.iets3.variability.configuration.base.behavior.ActionsUtil$LINKS" />
+      <unit id="7772191056242169614" at="52,0,57,0" name="org.iets3.variability.configuration.base.behavior.ActionsUtil$CONCEPTS" />
+      <unit id="7772191056242169614" at="17,0,63,0" name="org.iets3.variability.configuration.base.behavior.ActionsUtil" />
     </file>
   </root>
   <root nodeRef="r:dedd19c9-9ff3-4f30-aa73-ce61203b2296(org.iets3.variability.configuration.base.behavior)/8737753560258549184">
@@ -5169,9 +5169,9 @@
       <node id="588069925724222955" at="38,145,39,0" concept="12" />
       <node id="8133409598996584699" at="39,0,40,62" concept="9" />
       <node id="8133409598995873517" at="40,62,41,0" concept="12" />
-      <node id="588069925726143743" at="43,147,44,40" concept="9" />
+      <node id="588069925726143743" at="43,135,44,40" concept="9" />
       <node id="588069925725942009" at="44,40,45,53" concept="9" />
-      <node id="588069925726329501" at="47,72,48,107" concept="4" />
+      <node id="588069925726329501" at="47,72,48,95" concept="4" />
       <node id="588069925726482948" at="51,7,52,0" concept="12" />
       <node id="8133409598996535016" at="53,5,54,0" concept="12" />
       <node id="8737753560258757871" at="54,0,55,55" concept="10" />
@@ -5193,9 +5193,9 @@
       <node id="9150773682800327409" at="94,24,95,0" concept="12" />
       <node id="8737753560258772143" at="95,0,96,17" concept="10" />
       <node id="8737753560258859365" at="99,73,100,208" concept="10" />
-      <node id="8737753560258685630" at="105,142,106,44" concept="10" />
+      <node id="8737753560258685630" at="105,142,106,60" concept="10" />
       <node id="8737753560258685646" at="107,5,108,0" concept="12" />
-      <node id="8737753560258685647" at="108,0,109,288" concept="10" />
+      <node id="8737753560258685647" at="108,0,109,269" concept="10" />
       <node id="8737753560264576600" at="123,164,124,0" concept="12" />
       <node id="8541409672754204526" at="124,0,125,64" concept="11" />
       <node id="8541409672723224784" at="126,5,127,87" concept="9" />
@@ -5249,48 +5249,48 @@
       <node id="8737753560264881808" at="241,110,242,13" concept="10" />
       <node id="8737753560264881814" at="244,120,245,311" concept="4" />
       <node id="8737753560264881823" at="245,311,246,13" concept="10" />
-      <node id="8737753560264785459" at="251,341,252,67" concept="9" />
-      <node id="8737753560264785465" at="252,67,253,68" concept="9" />
-      <node id="3016709118214565288" at="253,68,254,0" concept="12" />
-      <node id="8737753560264785474" at="255,197,256,197" concept="4" />
-      <node id="8737753560264785484" at="256,197,257,101" concept="4" />
-      <node id="8737753560264785490" at="257,101,258,15" concept="10" />
-      <node id="8737753560264785504" at="260,151,261,96" concept="4" />
-      <node id="8737753560264785517" at="262,7,263,100" concept="4" />
-      <node id="8737753560264592572" at="268,163,269,304" concept="10" />
-      <node id="8737753560270167763" at="272,72,273,231" concept="10" />
-      <node id="8737753560270230038" at="276,75,277,237" concept="10" />
-      <node id="8737753560270339192" at="281,44,282,102" concept="4" />
-      <node id="8737753560270339204" at="284,47,285,103" concept="4" />
-      <node id="8737753560270339214" at="286,5,287,0" concept="12" />
-      <node id="8737753560270339215" at="287,0,288,166" concept="9" />
-      <node id="8737753560270339222" at="288,166,289,162" concept="9" />
-      <node id="8737753560270339229" at="289,162,290,0" concept="12" />
-      <node id="8737753560270339252" at="292,215,293,223" concept="4" />
-      <node id="8737753560270339266" at="296,101,297,393" concept="4" />
-      <node id="7546762587690758358" at="301,114,302,97" concept="9" />
-      <node id="7546762587690764520" at="302,97,303,0" concept="12" />
-      <node id="7546762587690761322" at="306,127,307,83" concept="4" />
-      <node id="7546762587690758394" at="310,5,311,18" concept="10" />
-      <node id="8541409672731146106" at="313,81,314,89" concept="9" />
-      <node id="8541409672731146106" at="314,89,315,26" concept="10" />
-      <node id="8848546765726241627" at="317,85,318,93" concept="9" />
-      <node id="8848546765726241627" at="318,93,319,26" concept="10" />
-      <node id="8737753560258549184" at="323,0,324,0" concept="13" trace="value$kgDc" />
-      <node id="8737753560258549184" at="324,0,325,0" concept="13" trace="extendedFMC$tFbw" />
-      <node id="8737753560258549184" at="325,0,326,0" concept="13" trace="config$ID3f" />
-      <node id="8737753560258549184" at="326,0,327,0" concept="13" trace="content$Wdfq" />
-      <node id="8737753560258549184" at="327,0,328,0" concept="13" trace="config$VWuN" />
-      <node id="8737753560258549184" at="328,0,329,0" concept="13" trace="subfeatureConfigurations$l9wi" />
-      <node id="8737753560258549184" at="329,0,330,0" concept="13" trace="targetFeature$16lA" />
-      <node id="8737753560258549184" at="330,0,331,0" concept="13" trace="attribute$J5jI" />
-      <node id="8737753560258549184" at="334,0,335,0" concept="13" trace="FeatureModelConfiguration$nE" />
-      <node id="8737753560258549184" at="335,0,336,0" concept="13" trace="FeatureModelConfigurationBase$y8" />
-      <node id="8737753560258549184" at="336,0,337,0" concept="13" trace="FeatureModelConfigurationRef$kq" />
-      <node id="8737753560258549184" at="337,0,338,0" concept="13" trace="InlineFeatureConfigurationContent$P5" />
-      <node id="8737753560258549184" at="341,0,342,0" concept="13" trace="abstract$Wu4W" />
-      <node id="8737753560258549184" at="342,0,343,0" concept="13" trace="selectionState$zbc1" />
-      <node id="8737753560258549184" at="343,0,344,0" concept="13" trace="inherited$oyCC" />
+      <node id="8737753560264785459" at="251,341,252,51" concept="9" />
+      <node id="8737753560264785465" at="252,51,253,52" concept="9" />
+      <node id="3016709118214565288" at="253,52,254,0" concept="12" />
+      <node id="2329063533648653249" at="254,0,255,88" concept="9" />
+      <node id="8737753560264785474" at="257,110,258,113" concept="4" />
+      <node id="8737753560264785484" at="258,113,259,87" concept="4" />
+      <node id="8737753560264785504" at="262,89,263,82" concept="4" />
+      <node id="8737753560264785517" at="263,82,264,88" concept="4" />
+      <node id="8737753560264592572" at="271,149,272,276" concept="10" />
+      <node id="8737753560270167763" at="275,72,276,231" concept="10" />
+      <node id="8737753560270230038" at="279,75,280,237" concept="10" />
+      <node id="8737753560270339192" at="284,44,285,102" concept="4" />
+      <node id="8737753560270339204" at="287,47,288,103" concept="4" />
+      <node id="8737753560270339214" at="289,5,290,0" concept="12" />
+      <node id="8737753560270339215" at="290,0,291,159" concept="9" />
+      <node id="8737753560270339222" at="291,159,292,155" concept="9" />
+      <node id="8737753560270339229" at="292,155,293,0" concept="12" />
+      <node id="8737753560270339252" at="295,201,296,209" concept="4" />
+      <node id="8737753560270339266" at="299,87,300,358" concept="4" />
+      <node id="7546762587690758358" at="304,114,305,97" concept="9" />
+      <node id="7546762587690764520" at="305,97,306,0" concept="12" />
+      <node id="7546762587690761322" at="309,141,310,83" concept="4" />
+      <node id="7546762587690758394" at="313,5,314,18" concept="10" />
+      <node id="8541409672731146106" at="316,81,317,89" concept="9" />
+      <node id="8541409672731146106" at="317,89,318,26" concept="10" />
+      <node id="8848546765726241627" at="320,85,321,93" concept="9" />
+      <node id="8848546765726241627" at="321,93,322,26" concept="10" />
+      <node id="8737753560258549184" at="326,0,327,0" concept="13" trace="value$kgDc" />
+      <node id="8737753560258549184" at="327,0,328,0" concept="13" trace="extendedFMC$tFbw" />
+      <node id="8737753560258549184" at="328,0,329,0" concept="13" trace="config$ID3f" />
+      <node id="8737753560258549184" at="329,0,330,0" concept="13" trace="content$Wdfq" />
+      <node id="8737753560258549184" at="330,0,331,0" concept="13" trace="config$VWuN" />
+      <node id="8737753560258549184" at="331,0,332,0" concept="13" trace="subfeatureConfigurations$l9wi" />
+      <node id="8737753560258549184" at="332,0,333,0" concept="13" trace="targetFeature$16lA" />
+      <node id="8737753560258549184" at="333,0,334,0" concept="13" trace="attribute$J5jI" />
+      <node id="8737753560258549184" at="337,0,338,0" concept="13" trace="FeatureModelConfiguration$nE" />
+      <node id="8737753560258549184" at="338,0,339,0" concept="13" trace="FeatureModelConfigurationBase$y8" />
+      <node id="8737753560258549184" at="339,0,340,0" concept="13" trace="FeatureModelConfigurationRef$kq" />
+      <node id="8737753560258549184" at="340,0,341,0" concept="13" trace="InlineFeatureConfigurationContent$P5" />
+      <node id="8737753560258549184" at="344,0,345,0" concept="13" trace="abstract$Wu4W" />
+      <node id="8737753560258549184" at="345,0,346,0" concept="13" trace="selectionState$zbc1" />
+      <node id="8737753560258549184" at="346,0,347,0" concept="13" trace="inherited$oyCC" />
       <node id="8848546765718469155" at="148,14,150,9" concept="1" />
       <node id="588069925726278088" at="46,26,49,11" concept="7" />
       <node id="8133409598996818146" at="58,0,61,0" concept="14" trace="hasSelectionOrAttributeConflictForInheritance#(Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;)Z" />
@@ -5299,7 +5299,7 @@
       <node id="8737753560258772112" at="86,16,89,5" concept="7" />
       <node id="8737753560258772127" at="90,17,93,5" concept="7" />
       <node id="8737753560258859362" at="99,0,102,0" concept="14" trace="inheritingNotRestricting#(Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;)Z" />
-      <node id="8737753560258685628" at="104,72,107,5" concept="7" />
+      <node id="8737753560258685628" at="104,60,107,5" concept="7" />
       <node id="5343842209077412023" at="144,118,147,11" concept="7" />
       <node id="8848546765740083512" at="152,67,155,9" concept="7" />
       <node id="8737753560264576632" at="164,0,167,7" concept="7" />
@@ -5309,64 +5309,66 @@
       <node id="5343842209080671207" at="207,9,210,9" concept="7" />
       <node id="8848546765732410318" at="217,130,220,7" concept="7" />
       <node id="8737753560264881736" at="227,94,230,5" concept="7" />
-      <node id="8737753560264785502" at="259,7,262,7" concept="7" />
-      <node id="8737753560264592569" at="268,0,271,0" concept="14" trace="matchingSubfeatureConfigOfExtendedConfig#(Ljava/lang/Iterable;Lorg/jetbrains/mps/openapi/model/SNode;)Ljava/util/Optional;" />
-      <node id="8737753560270167760" at="272,0,275,0" concept="14" trace="bothSelected#(Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;)Z" />
-      <node id="8737753560270230035" at="276,0,279,0" concept="14" trace="bothDisSelected#(Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;)Z" />
-      <node id="8737753560270339190" at="280,85,283,5" concept="7" />
-      <node id="8737753560270339202" at="283,5,286,5" concept="7" />
-      <node id="8737753560270339234" at="291,99,294,7" concept="7" />
-      <node id="8737753560270339262" at="295,5,298,5" concept="6" />
-      <node id="7546762587690761313" at="305,55,308,9" concept="7" />
+      <node id="8737753560264592569" at="271,0,274,0" concept="14" trace="matchingSubfeatureConfigOfExtendedConfig#(Ljava/lang/Iterable;Lorg/jetbrains/mps/openapi/model/SNode;)Ljava/util/Optional;" />
+      <node id="8737753560270167760" at="275,0,278,0" concept="14" trace="bothSelected#(Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;)Z" />
+      <node id="8737753560270230035" at="279,0,282,0" concept="14" trace="bothDisSelected#(Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;)Z" />
+      <node id="8737753560270339190" at="283,85,286,5" concept="7" />
+      <node id="8737753560270339202" at="286,5,289,5" concept="7" />
+      <node id="8737753560270339234" at="294,85,297,7" concept="7" />
+      <node id="8737753560270339262" at="298,5,301,5" concept="6" />
+      <node id="7546762587690761313" at="308,55,311,9" concept="7" />
       <node id="588069925712619638" at="76,28,80,7" concept="7" />
       <node id="8737753560264576645" at="170,72,174,5" concept="7" />
       <node id="8737753560264881752" at="230,5,234,5" concept="7" />
       <node id="8737753560264881775" at="234,5,238,5" concept="7" />
       <node id="8737753560264881799" at="239,0,243,5" concept="7" />
       <node id="8737753560264881812" at="243,5,247,5" concept="7" />
-      <node id="8541409672731146106" at="313,0,317,0" concept="14" trace="createFeatureModelConfigurationBase_w45mms_a0a2a0a2a71#()Lorg/jetbrains/mps/openapi/model/SNode;" />
-      <node id="8848546765726241627" at="317,0,321,0" concept="14" trace="createInlineFeatureConfigurationContent_w45mms_a0a0a0a0f0r#()Lorg/jetbrains/mps/openapi/model/SNode;" />
+      <node id="2329063533648692850" at="256,32,260,9" concept="7" />
+      <node id="8737753560264785502" at="261,14,265,9" concept="7" />
+      <node id="8541409672731146106" at="316,0,320,0" concept="14" trace="createFeatureModelConfigurationBase_w45mms_a0a2a0a2a71#()Lorg/jetbrains/mps/openapi/model/SNode;" />
+      <node id="8848546765726241627" at="320,0,324,0" concept="14" trace="createInlineFeatureConfigurationContent_w45mms_a0a0a0a0f0r#()Lorg/jetbrains/mps/openapi/model/SNode;" />
       <node id="588069925734735745" at="45,53,50,9" concept="7" />
       <node id="1404837192717772634" at="128,90,133,9" concept="7" />
-      <node id="8737753560264785472" at="254,0,259,7" concept="7" />
-      <node id="8737753560270339230" at="290,0,295,5" concept="6" />
-      <node id="7546762587690761307" at="304,53,309,7" concept="6" />
+      <node id="815021483314489148" at="261,12,266,7" concept="1" />
+      <node id="8737753560270339230" at="293,0,298,5" concept="6" />
+      <node id="7546762587690761307" at="307,53,312,7" concept="6" />
       <node id="1649980136394251097" at="182,64,188,5" concept="1" />
       <node id="8737753560258916157" at="62,79,69,5" concept="6" />
       <node id="588069925712619638" at="74,83,81,5" concept="1" />
-      <node id="8737753560258685623" at="104,0,111,0" concept="14" trace="extendedFeatureModelConfigs#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljava/lang/Iterable;" />
+      <node id="8737753560258685623" at="104,0,111,0" concept="14" trace="extendedConfigs#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljava/lang/Iterable;" />
       <node id="8848546765718437563" at="143,89,150,9" concept="7" />
       <node id="8848546765732376074" at="216,78,223,5" concept="7" />
-      <node id="7546762587690758369" at="303,0,310,5" concept="6" />
+      <node id="7546762587690758369" at="306,0,313,5" concept="6" />
       <node id="8737753560264576601" at="160,0,168,5" concept="6" />
-      <node id="588069925725665700" at="42,102,51,7" concept="6" />
+      <node id="588069925725665700" at="42,78,51,7" concept="6" />
       <node id="1649980136394222215" at="182,0,191,0" concept="14" trace="isEmptyInlineContent#(Lorg/jetbrains/mps/openapi/model/SNode;)Z" />
       <node id="5343842209080671174" at="202,49,211,7" concept="7" />
       <node id="8737753560258916154" at="62,0,72,0" concept="14" trace="attributesOkToApplyInheritance#(Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;)Z" />
       <node id="8541409672723224784" at="127,87,137,7" concept="7" />
       <node id="8737753560264750704" at="216,0,226,0" concept="14" trace="isDetachable#(Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;)Z" />
+      <node id="8737753560264785472" at="255,88,266,7" concept="7" />
       <node id="8133409598996247227" at="41,0,53,5" concept="6" />
       <node id="5343842209080671174" at="200,0,212,5" concept="1" />
-      <node id="7546762587690758354" at="301,0,313,0" concept="14" trace="pairBySameFeatureAttribute#(Ljava/lang/Iterable;Ljava/lang/Iterable;)Ljava/util/List;" />
+      <node id="7546762587690758354" at="304,0,316,0" concept="14" trace="pairBySameFeatureAttribute#(Ljava/lang/Iterable;Ljava/lang/Iterable;)Ljava/util/List;" />
       <node id="8541409672723224784" at="125,64,138,5" concept="1" />
-      <node id="8737753560264785449" at="250,94,264,5" concept="6" />
       <node id="8541409672769445552" at="142,87,158,7" concept="7" />
       <node id="5343842209080671237" at="199,0,215,0" concept="14" trace="contentExtendsConfigOfExtended#(Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;)Z" />
-      <node id="8737753560264785446" at="250,0,266,0" concept="14" trace="applyAttributesOfExtendedConfig#(Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;)V" />
+      <node id="8737753560264785449" at="250,94,267,5" concept="6" />
       <node id="8541409672769445552" at="140,57,159,5" concept="1" />
-      <node id="8737753560270339187" at="280,0,300,0" concept="14" trace="addFeaturesFromExtendedConfig#(Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;)V" />
+      <node id="8737753560264785446" at="250,0,269,0" concept="14" trace="applyAttributesOfExtendedConfig#(Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;)V" />
+      <node id="8737753560270339187" at="283,0,303,0" concept="14" trace="addFeaturesFromExtendedConfig#(Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;)V" />
       <node id="8737753560258757800" at="36,0,57,0" concept="14" trace="conflictingConfigs#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljava/lang/Iterable;" />
       <node id="8737753560264881733" at="227,0,249,0" concept="14" trace="applySelectionsOfExtendedConfig#(Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;)V" />
       <node id="8737753560258772093" at="74,0,98,0" concept="14" trace="selectionStateOkToApplyInheritance#(Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;)Z" />
       <node id="8737753560264576597" at="123,0,177,0" concept="14" trace="applyInheritance#(Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;)Z" />
-      <scope id="588069925726278090" at="47,72,48,107" />
+      <scope id="588069925726278090" at="47,72,48,95" />
       <scope id="8133409598996818154" at="58,94,59,106" />
       <scope id="8737753560258916180" at="66,488,67,21" />
       <scope id="8737753560258772103" at="83,45,84,18" />
       <scope id="8737753560258772113" at="87,205,88,18" />
       <scope id="8737753560258772128" at="91,211,92,18" />
       <scope id="8737753560258859364" at="99,73,100,208" />
-      <scope id="8737753560258685629" at="105,142,106,44" />
+      <scope id="8737753560258685629" at="105,142,106,60" />
       <scope id="5343842209077412025" at="145,160,146,137" />
       <scope id="8848546765718469156" at="148,16,149,129" />
       <scope id="8848546765740083514" at="153,118,154,23" />
@@ -5377,25 +5379,26 @@
       <scope id="5343842209080671208" at="208,102,209,22" />
       <scope id="8848546765732410320" at="218,120,219,21" />
       <scope id="8737753560264881737" at="228,244,229,13" />
-      <scope id="8737753560264785503" at="260,151,261,96" />
-      <scope id="8737753560264592571" at="268,163,269,304" />
-      <scope id="8737753560270167762" at="272,72,273,231" />
-      <scope id="8737753560270230037" at="276,75,277,237" />
-      <scope id="8737753560270339191" at="281,44,282,102" />
-      <scope id="8737753560270339203" at="284,47,285,103" />
-      <scope id="8737753560270339251" at="292,215,293,223" />
-      <scope id="8737753560270339265" at="296,101,297,393" />
-      <scope id="7546762587690761321" at="306,127,307,83" />
+      <scope id="8737753560264592571" at="271,149,272,276" />
+      <scope id="8737753560270167762" at="275,72,276,231" />
+      <scope id="8737753560270230037" at="279,75,280,237" />
+      <scope id="8737753560270339191" at="284,44,285,102" />
+      <scope id="8737753560270339203" at="287,47,288,103" />
+      <scope id="8737753560270339251" at="295,201,296,209" />
+      <scope id="8737753560270339265" at="299,87,300,358" />
+      <scope id="7546762587690761321" at="309,141,310,83" />
       <scope id="588069925712619642" at="77,85,79,20" />
       <scope id="8737753560264576646" at="171,31,173,65" />
       <scope id="8737753560264881753" at="231,244,233,13" />
       <scope id="8737753560264881776" at="235,244,237,13" />
       <scope id="8737753560264881800" at="240,117,242,13" />
       <scope id="8737753560264881813" at="244,120,246,13" />
-      <scope id="8541409672731146106" at="313,81,315,26">
+      <scope id="2329063533648692852" at="257,110,259,87" />
+      <scope id="8737753560264785503" at="262,89,264,88" />
+      <scope id="8541409672731146106" at="316,81,318,26">
         <var name="n0" id="8541409672731146106" />
       </scope>
-      <scope id="8848546765726241627" at="317,85,319,26">
+      <scope id="8848546765726241627" at="320,85,322,26">
         <var name="n0" id="8848546765726241627" />
       </scope>
       <scope id="588069925734735747" at="46,26,49,11" />
@@ -5412,29 +5415,30 @@
       <scope id="1649980136397368448" at="178,0,181,0">
         <var name="subConfig" id="1649980136397368144" />
       </scope>
-      <scope id="8737753560264785473" at="255,197,258,15" />
-      <scope id="8737753560264592569" at="268,0,271,0">
-        <var name="subfeatureConfigsOfextendedConfig" id="8737753560264592589" />
-        <var name="subfeatureConfiguration" id="8737753560264592592" />
+      <scope id="8737753560264592569" at="271,0,274,0">
+        <var name="subConfigsOfExtendedConfig" id="8737753560264592589" />
+        <var name="subConfiguration" id="8737753560264592592" />
       </scope>
-      <scope id="8737753560270167760" at="272,0,275,0">
+      <scope id="8737753560270167760" at="275,0,278,0">
         <var name="extendedAFC" id="8737753560270167773" />
         <var name="subAFC" id="8737753560270172419" />
       </scope>
-      <scope id="8737753560270230035" at="276,0,279,0">
+      <scope id="8737753560270230035" at="279,0,282,0">
         <var name="extendedAFC" id="8737753560270230048" />
         <var name="subAFC" id="8737753560270234862" />
       </scope>
-      <scope id="8737753560270339233" at="291,99,294,7" />
-      <scope id="8737753560270339262" at="295,5,298,5">
-        <var name="extendingSubfeatureConfig" id="8737753560270339263" />
+      <scope id="8737753560270339233" at="294,85,297,7" />
+      <scope id="8737753560270339262" at="298,5,301,5">
+        <var name="extendingSubConfig" id="8737753560270339263" />
       </scope>
-      <scope id="7546762587690761312" at="305,55,308,9" />
+      <scope id="7546762587690761312" at="308,55,311,9" />
       <scope id="1649980136394251097" at="183,5,187,7">
         <var name="ifcc" id="1649980136394251097" />
       </scope>
-      <scope id="8541409672731146106" at="313,0,317,0" />
-      <scope id="8848546765726241627" at="317,0,321,0" />
+      <scope id="8737753560264785473" at="256,32,260,9" />
+      <scope id="815021483314489149" at="261,14,265,9" />
+      <scope id="8541409672731146106" at="316,0,320,0" />
+      <scope id="8848546765726241627" at="320,0,324,0" />
       <scope id="8737753560258916166" at="63,283,68,7">
         <var name="afcAAs" id="8737753560258916168" />
         <var name="efcAAs" id="8737753560258916174" />
@@ -5442,20 +5446,20 @@
       <scope id="588069925712619638" at="75,5,80,7">
         <var name="fmc" id="588069925712619638" />
       </scope>
-      <scope id="8737753560258685627" at="104,72,109,288" />
+      <scope id="8737753560258685627" at="104,60,109,269" />
       <scope id="8848546765732376076" at="217,130,222,476" />
-      <scope id="8737753560270339230" at="290,0,295,5">
-        <var name="extendedSubfeatureConfig" id="8737753560270339231" />
+      <scope id="8737753560270339230" at="293,0,298,5">
+        <var name="extendedSubConfig" id="8737753560270339231" />
       </scope>
-      <scope id="7546762587690758372" at="304,53,309,7" />
-      <scope id="7546762587690761307" at="304,53,309,7">
+      <scope id="7546762587690758372" at="307,53,312,7" />
+      <scope id="7546762587690761307" at="307,53,312,7">
         <var name="elem2" id="7546762587690761329" />
       </scope>
       <scope id="8737753560264576606" at="161,188,167,7">
         <var name="detachable" id="8737753560264576609" />
         <var name="matchingSubfeatureConfigOfExtendedConfig1" id="8541409672706623023" />
       </scope>
-      <scope id="588069925725665706" at="43,147,50,9">
+      <scope id="588069925725665706" at="43,135,50,9">
         <var name="afc" id="588069925725942010" />
         <var name="efc" id="588069925726143744" />
       </scope>
@@ -5469,7 +5473,7 @@
       <scope id="5343842209080671178" at="203,97,210,9">
         <var name="extended" id="5343842209080671180" />
       </scope>
-      <scope id="7546762587690758369" at="303,0,310,5">
+      <scope id="7546762587690758369" at="306,0,313,5">
         <var name="elem1" id="7546762587690758370" />
       </scope>
       <scope id="8737753560258916156" at="62,79,70,16" />
@@ -5478,13 +5482,13 @@
         <var name="subfeatureConfiguration" id="8737753560264576602" />
       </scope>
       <scope id="8737753560264750706" at="216,78,224,17" />
-      <scope id="588069925725665700" at="42,102,51,7">
+      <scope id="588069925725665700" at="42,78,51,7">
         <var name="tce" id="588069925725665702" />
       </scope>
       <scope id="1649980136394222215" at="182,0,191,0">
         <var name="subConfig" id="1649980136394222211" />
       </scope>
-      <scope id="8133409598996247233" at="42,102,52,0" />
+      <scope id="8133409598996247233" at="42,78,52,0" />
       <scope id="8737753560258916154" at="62,0,72,0">
         <var name="afc" id="8737753560258916211" />
         <var name="efc" id="8737753560258916213" />
@@ -5496,50 +5500,51 @@
         <var name="extendedConfig" id="8737753560264750754" />
         <var name="subConfig" id="8737753560264750752" />
       </scope>
-      <scope id="7546762587690758356" at="301,114,311,18">
+      <scope id="7546762587690758356" at="304,114,314,18">
         <var name="result" id="7546762587690758359" />
       </scope>
       <scope id="8541409672723224784" at="126,5,137,7">
         <var name="fmcb" id="8541409672723224784" />
       </scope>
       <scope id="8133409598996247227" at="41,0,53,5">
-        <var name="extendedFeatureModelConfig" id="8133409598996247229" />
+        <var name="extendedConfig" id="8133409598996247229" />
       </scope>
-      <scope id="8737753560264785458" at="251,341,263,100">
-        <var name="extendedFeatureAttributeAssignment" id="8737753560264785460" />
-        <var name="inheritingFeatureAttributeAssignment" id="8737753560264785466" />
-      </scope>
-      <scope id="7546762587690758354" at="301,0,313,0">
+      <scope id="7546762587690758354" at="304,0,316,0">
         <var name="seq1" id="7546762587690758397" />
         <var name="seq2" id="7546762587690758400" />
       </scope>
       <scope id="8541409672769445556" at="143,89,157,0" />
       <scope id="5343842209080671167" at="199,119,213,17" />
-      <scope id="8737753560264785448" at="250,94,264,5" />
-      <scope id="8737753560264785449" at="250,94,264,5">
-        <var name="paired" id="8737753560264785450" />
+      <scope id="8737753560264785458" at="251,341,266,7">
+        <var name="baseValue" id="2329063533648653250" />
+        <var name="extendedAssignment" id="8737753560264785460" />
+        <var name="inheritingAssignment" id="8737753560264785466" />
       </scope>
       <scope id="5343842209080671237" at="199,0,215,0">
         <var name="contentExtender" id="5343842209080671228" />
         <var name="referencedConfigurationExtended" id="5564423563673248409" />
       </scope>
-      <scope id="8737753560264785446" at="250,0,266,0">
-        <var name="extendedConfig" id="8737753560264785524" />
-        <var name="subConfig" id="8737753560264792317" />
-      </scope>
       <scope id="8541409672769445552" at="141,5,158,7">
         <var name="fmcr" id="8541409672769445552" />
       </scope>
-      <scope id="8737753560270339189" at="280,85,298,5">
-        <var name="extendedSubfeatureConfigs" id="8737753560270339216" />
-        <var name="extendingSubfeatureConfigs" id="8737753560270339223" />
+      <scope id="8737753560264785448" at="250,94,267,5" />
+      <scope id="8737753560264785449" at="250,94,267,5">
+        <var name="paired" id="8737753560264785450" />
+      </scope>
+      <scope id="8737753560270339189" at="283,85,301,5">
+        <var name="extendedSubConfigs" id="8737753560270339216" />
+        <var name="extendingSubConfigs" id="8737753560270339223" />
       </scope>
       <scope id="8737753560258757804" at="36,76,55,55">
         <var name="conflicts" id="8133409598996584702" />
         <var name="includesToFeature" id="588069925725380350" />
       </scope>
+      <scope id="8737753560264785446" at="250,0,269,0">
+        <var name="extendedConfig" id="8737753560264785524" />
+        <var name="subConfig" id="8737753560264792317" />
+      </scope>
       <scope id="8737753560264881735" at="227,94,247,5" />
-      <scope id="8737753560270339187" at="280,0,300,0">
+      <scope id="8737753560270339187" at="283,0,303,0">
         <var name="extendedAFC" id="8737753560270339296" />
         <var name="subAFC" id="8737753560270339294" />
       </scope>
@@ -5564,10 +5569,10 @@
         <var name="parentSubConfig" id="8541409672731003978" />
         <var name="subConfig" id="8737753560264579567" />
       </scope>
-      <unit id="8737753560258549184" at="340,0,345,0" name="org.iets3.variability.configuration.base.behavior.FeatureModelConfigurationInheritanceUtil$PROPS" />
-      <unit id="8737753560258549184" at="333,0,339,0" name="org.iets3.variability.configuration.base.behavior.FeatureModelConfigurationInheritanceUtil$CONCEPTS" />
-      <unit id="8737753560258549184" at="322,0,332,0" name="org.iets3.variability.configuration.base.behavior.FeatureModelConfigurationInheritanceUtil$LINKS" />
-      <unit id="8737753560258549184" at="34,0,346,0" name="org.iets3.variability.configuration.base.behavior.FeatureModelConfigurationInheritanceUtil" />
+      <unit id="8737753560258549184" at="343,0,348,0" name="org.iets3.variability.configuration.base.behavior.FeatureModelConfigurationInheritanceUtil$PROPS" />
+      <unit id="8737753560258549184" at="336,0,342,0" name="org.iets3.variability.configuration.base.behavior.FeatureModelConfigurationInheritanceUtil$CONCEPTS" />
+      <unit id="8737753560258549184" at="325,0,335,0" name="org.iets3.variability.configuration.base.behavior.FeatureModelConfigurationInheritanceUtil$LINKS" />
+      <unit id="8737753560258549184" at="34,0,349,0" name="org.iets3.variability.configuration.base.behavior.FeatureModelConfigurationInheritanceUtil" />
     </file>
   </root>
 </debug-info>

@@ -35,12 +35,7 @@ public abstract class AbstractUnitStandardizer implements IUnitStandardizer {
   }
 
   protected SNode getImplicitConversionRule(final SNode sourceUnit, final SNode targetUnit) {
-    Iterable<SNode> implicitRules = getVisibleImplicitRules(context);
-    if (Sequence.fromIterable(implicitRules).isEmpty()) {
-      return null;
-    }
-
-    return Sequence.fromIterable(implicitRules).findFirst((r) -> Objects.equals(SLinkOperations.getTarget(SLinkOperations.getTarget(r, LINKS.sourceUnit$zzDG), LINKS.unit$nTeG), sourceUnit) && Objects.equals(SLinkOperations.getTarget(SLinkOperations.getTarget(r, LINKS.targetUnit$cNlh), LINKS.unit$nTeG), targetUnit));
+    return Sequence.fromIterable(getVisibleImplicitRules(context)).findFirst((r) -> Objects.equals(SLinkOperations.getTarget(SLinkOperations.getTarget(r, LINKS.sourceUnit$zzDG), LINKS.unit$nTeG), sourceUnit) && Objects.equals(SLinkOperations.getTarget(SLinkOperations.getTarget(r, LINKS.targetUnit$cNlh), LINKS.unit$nTeG), targetUnit));
   }
 
   protected SNode getImplicitConversionRule(UnitMap sourceUnitMap, UnitMap targetUnitMap) {
