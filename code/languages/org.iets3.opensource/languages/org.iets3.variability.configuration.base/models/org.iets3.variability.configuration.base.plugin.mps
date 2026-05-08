@@ -322,19 +322,12 @@
         <reference id="6832197706140518108" name="param" index="zr_51" />
       </concept>
       <concept id="5349172909345501395" name="jetbrains.mps.baseLanguage.javadoc.structure.BaseDocComment" flags="ng" index="P$AiS">
-        <child id="8465538089690331502" name="body" index="TZ5H$" />
         <child id="5383422241790532083" name="tags" index="3nqlJM" />
       </concept>
       <concept id="5349172909345532724" name="jetbrains.mps.baseLanguage.javadoc.structure.MethodDocComment" flags="ng" index="P$JXv" />
       <concept id="8465538089690881930" name="jetbrains.mps.baseLanguage.javadoc.structure.ParameterBlockDocTag" flags="ng" index="TUZQ0">
         <property id="8465538089690881934" name="text" index="TUZQ4" />
         <child id="6832197706140518123" name="parameter" index="zr_5Q" />
-      </concept>
-      <concept id="8465538089690331500" name="jetbrains.mps.baseLanguage.javadoc.structure.CommentLine" flags="ng" index="TZ5HA">
-        <child id="8970989240999019149" name="part" index="1dT_Ay" />
-      </concept>
-      <concept id="8970989240999019143" name="jetbrains.mps.baseLanguage.javadoc.structure.TextCommentLinePart" flags="ng" index="1dT_AC">
-        <property id="8970989240999019144" name="text" index="1dT_AB" />
       </concept>
       <concept id="2068944020170241612" name="jetbrains.mps.baseLanguage.javadoc.structure.ClassifierDocComment" flags="ng" index="3UR2Jj" />
       <concept id="5085607816302529296" name="jetbrains.mps.baseLanguage.javadoc.structure.IHoldCommentLines" flags="ngI" index="1VezTd">
@@ -8787,24 +8780,135 @@
         </node>
       </node>
       <node concept="P$JXv" id="2L0OAuPXDtV" role="lGtFl">
-        <node concept="TZ5HA" id="2L0OAuPXDtW" role="TZ5H$">
-          <node concept="1dT_AC" id="2L0OAuPXDtX" role="1dT_Ay">
-            <property role="1dT_AB" value="Attach attribute values computed by a solver to the assignment nodes. " />
+        <node concept="1PaTwC" id="6Uw_nMIfx4o" role="1Vez_I">
+          <node concept="3oM_SD" id="6Uw_nMIfx4p" role="1PaTwD">
+            <property role="3oM_SC" value="Attach" />
+          </node>
+          <node concept="3oM_SD" id="6Uw_nMIfx4q" role="1PaTwD">
+            <property role="3oM_SC" value="attribute" />
+          </node>
+          <node concept="3oM_SD" id="6Uw_nMIfx4r" role="1PaTwD">
+            <property role="3oM_SC" value="values" />
+          </node>
+          <node concept="3oM_SD" id="6Uw_nMIfx4s" role="1PaTwD">
+            <property role="3oM_SC" value="computed" />
+          </node>
+          <node concept="3oM_SD" id="6Uw_nMIfx4t" role="1PaTwD">
+            <property role="3oM_SC" value="by" />
+          </node>
+          <node concept="3oM_SD" id="6Uw_nMIfx4u" role="1PaTwD">
+            <property role="3oM_SC" value="a" />
+          </node>
+          <node concept="3oM_SD" id="6Uw_nMIfx4v" role="1PaTwD">
+            <property role="3oM_SC" value="solver" />
+          </node>
+          <node concept="3oM_SD" id="6Uw_nMIfx4w" role="1PaTwD">
+            <property role="3oM_SC" value="to" />
+          </node>
+          <node concept="3oM_SD" id="6Uw_nMIfx4x" role="1PaTwD">
+            <property role="3oM_SC" value="the" />
+          </node>
+          <node concept="3oM_SD" id="6Uw_nMIfx4y" role="1PaTwD">
+            <property role="3oM_SC" value="assignment" />
+          </node>
+          <node concept="3oM_SD" id="6Uw_nMIfx4z" role="1PaTwD">
+            <property role="3oM_SC" value="nodes." />
           </node>
         </node>
-        <node concept="TZ5HA" id="2L0OAuPYLJx" role="TZ5H$">
-          <node concept="1dT_AC" id="2L0OAuPYLJy" role="1dT_Ay">
-            <property role="1dT_AB" value="" />
+        <node concept="1PaTwC" id="6Uw_nMIfx4$" role="1Vez_I">
+          <node concept="3oM_SD" id="6Uw_nMIfx4_" role="1PaTwD">
+            <property role="3oM_SC" value="" />
           </node>
         </node>
-        <node concept="TZ5HA" id="2L0OAuPYLJz" role="TZ5H$">
-          <node concept="1dT_AC" id="2L0OAuPYLJ$" role="1dT_Ay">
-            <property role="1dT_AB" value="If the attribute has a physical unit attached, then also attach it to the computed value." />
+        <node concept="1PaTwC" id="6Uw_nMIfx4A" role="1Vez_I">
+          <node concept="3oM_SD" id="6Uw_nMIfx4B" role="1PaTwD">
+            <property role="3oM_SC" value="If" />
+          </node>
+          <node concept="3oM_SD" id="6Uw_nMIfx4C" role="1PaTwD">
+            <property role="3oM_SC" value="the" />
+          </node>
+          <node concept="3oM_SD" id="6Uw_nMIfx4D" role="1PaTwD">
+            <property role="3oM_SC" value="attribute" />
+          </node>
+          <node concept="3oM_SD" id="6Uw_nMIfx4E" role="1PaTwD">
+            <property role="3oM_SC" value="has" />
+          </node>
+          <node concept="3oM_SD" id="6Uw_nMIfx4F" role="1PaTwD">
+            <property role="3oM_SC" value="a" />
+          </node>
+          <node concept="3oM_SD" id="6Uw_nMIfx4G" role="1PaTwD">
+            <property role="3oM_SC" value="physical" />
+          </node>
+          <node concept="3oM_SD" id="6Uw_nMIfx4H" role="1PaTwD">
+            <property role="3oM_SC" value="unit" />
+          </node>
+          <node concept="3oM_SD" id="6Uw_nMIfx4I" role="1PaTwD">
+            <property role="3oM_SC" value="attached," />
+          </node>
+          <node concept="3oM_SD" id="6Uw_nMIfx4J" role="1PaTwD">
+            <property role="3oM_SC" value="then" />
+          </node>
+          <node concept="3oM_SD" id="6Uw_nMIfx4K" role="1PaTwD">
+            <property role="3oM_SC" value="also" />
+          </node>
+          <node concept="3oM_SD" id="6Uw_nMIfx4L" role="1PaTwD">
+            <property role="3oM_SC" value="attach" />
+          </node>
+          <node concept="3oM_SD" id="6Uw_nMIfx4M" role="1PaTwD">
+            <property role="3oM_SC" value="it" />
+          </node>
+          <node concept="3oM_SD" id="6Uw_nMIfx4N" role="1PaTwD">
+            <property role="3oM_SC" value="to" />
+          </node>
+          <node concept="3oM_SD" id="6Uw_nMIfx4O" role="1PaTwD">
+            <property role="3oM_SC" value="the" />
+          </node>
+          <node concept="3oM_SD" id="6Uw_nMIfx4P" role="1PaTwD">
+            <property role="3oM_SC" value="computed" />
+          </node>
+          <node concept="3oM_SD" id="6Uw_nMIfx4Q" role="1PaTwD">
+            <property role="3oM_SC" value="value." />
           </node>
         </node>
-        <node concept="TZ5HA" id="2L0OAuPZVtr" role="TZ5H$">
-          <node concept="1dT_AC" id="2L0OAuPZVts" role="1dT_Ay">
-            <property role="1dT_AB" value="The solver cannot do it as it does not know about physical units." />
+        <node concept="1PaTwC" id="6Uw_nMIfx4R" role="1Vez_I">
+          <node concept="3oM_SD" id="6Uw_nMIfx4S" role="1PaTwD">
+            <property role="3oM_SC" value="The" />
+          </node>
+          <node concept="3oM_SD" id="6Uw_nMIfx4T" role="1PaTwD">
+            <property role="3oM_SC" value="solver" />
+          </node>
+          <node concept="3oM_SD" id="6Uw_nMIfx4U" role="1PaTwD">
+            <property role="3oM_SC" value="cannot" />
+          </node>
+          <node concept="3oM_SD" id="6Uw_nMIfx4V" role="1PaTwD">
+            <property role="3oM_SC" value="do" />
+          </node>
+          <node concept="3oM_SD" id="6Uw_nMIfx4W" role="1PaTwD">
+            <property role="3oM_SC" value="it" />
+          </node>
+          <node concept="3oM_SD" id="6Uw_nMIfx4X" role="1PaTwD">
+            <property role="3oM_SC" value="as" />
+          </node>
+          <node concept="3oM_SD" id="6Uw_nMIfx4Y" role="1PaTwD">
+            <property role="3oM_SC" value="it" />
+          </node>
+          <node concept="3oM_SD" id="6Uw_nMIfx4Z" role="1PaTwD">
+            <property role="3oM_SC" value="does" />
+          </node>
+          <node concept="3oM_SD" id="6Uw_nMIfx50" role="1PaTwD">
+            <property role="3oM_SC" value="not" />
+          </node>
+          <node concept="3oM_SD" id="6Uw_nMIfx51" role="1PaTwD">
+            <property role="3oM_SC" value="know" />
+          </node>
+          <node concept="3oM_SD" id="6Uw_nMIfx52" role="1PaTwD">
+            <property role="3oM_SC" value="about" />
+          </node>
+          <node concept="3oM_SD" id="6Uw_nMIfx53" role="1PaTwD">
+            <property role="3oM_SC" value="physical" />
+          </node>
+          <node concept="3oM_SD" id="6Uw_nMIfx54" role="1PaTwD">
+            <property role="3oM_SC" value="units." />
           </node>
         </node>
       </node>

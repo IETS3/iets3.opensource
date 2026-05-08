@@ -6,7 +6,7 @@
     <use id="fd392034-7849-419d-9071-12563d152375" name="jetbrains.mps.baseLanguage.closures" version="0" />
     <use id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core" version="2" />
     <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="12" />
-    <use id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc" version="2" />
+    <use id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc" version="3" />
     <use id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" name="jetbrains.mps.lang.typesystem" version="5" />
     <use id="774bf8a0-62e5-41e1-af63-f4812e60e48b" name="jetbrains.mps.baseLanguage.checkedDots" version="0" />
     <devkit ref="00000000-0000-4000-0000-1de82b3a4936(jetbrains.mps.devkit.aspect.typesystem)" />
@@ -289,16 +289,7 @@
       </concept>
     </language>
     <language id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc">
-      <concept id="5349172909345501395" name="jetbrains.mps.baseLanguage.javadoc.structure.BaseDocComment" flags="ng" index="P$AiS">
-        <child id="8465538089690331502" name="body" index="TZ5H$" />
-      </concept>
       <concept id="5349172909345532724" name="jetbrains.mps.baseLanguage.javadoc.structure.MethodDocComment" flags="ng" index="P$JXv" />
-      <concept id="8465538089690331500" name="jetbrains.mps.baseLanguage.javadoc.structure.CommentLine" flags="ng" index="TZ5HA">
-        <child id="8970989240999019149" name="part" index="1dT_Ay" />
-      </concept>
-      <concept id="8970989240999019143" name="jetbrains.mps.baseLanguage.javadoc.structure.TextCommentLinePart" flags="ng" index="1dT_AC">
-        <property id="8970989240999019144" name="text" index="1dT_AB" />
-      </concept>
       <concept id="5085607816302529296" name="jetbrains.mps.baseLanguage.javadoc.structure.IHoldCommentLines" flags="ngI" index="1VezTd">
         <child id="5085607816302529587" name="commentBody" index="1Vez_I" />
       </concept>
@@ -569,9 +560,6 @@
       <concept id="4222318806802425298" name="jetbrains.mps.lang.core.structure.SuppressErrorsAnnotation" flags="ng" index="15s5l7" />
     </language>
     <language id="c7fb639f-be78-4307-89b0-b5959c3fa8c8" name="jetbrains.mps.lang.text">
-      <concept id="3133179214568824809" name="jetbrains.mps.lang.text.structure.NodeWrapperElement" flags="nn" index="tu5oc">
-        <child id="3133179214568824810" name="node" index="tu5of" />
-      </concept>
       <concept id="155656958578482948" name="jetbrains.mps.lang.text.structure.Word" flags="nn" index="3oM_SD">
         <property id="155656958578482949" name="value" index="3oM_SC" />
       </concept>
@@ -5550,46 +5538,6 @@
         </node>
       </node>
       <node concept="P$JXv" id="7NHcideUgSs" role="lGtFl">
-        <node concept="TZ5HA" id="7NHcideUgSt" role="TZ5H$">
-          <node concept="1dT_AC" id="7NHcideUgSu" role="1dT_Ay">
-            <property role="1dT_AB" value="Replace all ValExpression nodes in an expression by a tagged type." />
-          </node>
-        </node>
-        <node concept="TZ5HA" id="7NHcideZybu" role="TZ5H$">
-          <node concept="1dT_AC" id="7NHcideZybv" role="1dT_Ay">
-            <property role="1dT_AB" value="" />
-          </node>
-        </node>
-        <node concept="TZ5HA" id="7NHcideVfj0" role="TZ5H$">
-          <node concept="1dT_AC" id="7NHcideVfj1" role="1dT_Ay">
-            <property role="1dT_AB" value="NOTE: The resulting structure is not an expression anymore, as a Type is not an Expression." />
-          </node>
-        </node>
-        <node concept="TZ5HA" id="7NHcideWby1" role="TZ5H$">
-          <node concept="1dT_AC" id="7NHcideWby2" role="1dT_Ay">
-            <property role="1dT_AB" value="      However, the typesystem can cope with this. E.g., typeof_BinaryExpression will be called with" />
-          </node>
-        </node>
-        <node concept="TZ5HA" id="7NHcideXa8c" role="TZ5H$">
-          <node concept="1dT_AC" id="7NHcideXa8d" role="1dT_Ay">
-            <property role="1dT_AB" value="      binaryExpr.left not being an Expression node. Calling renderReadable() on the resulting" />
-          </node>
-        </node>
-        <node concept="TZ5HA" id="7NHcideZ4X2" role="TZ5H$">
-          <node concept="1dT_AC" id="7NHcideZ4X3" role="1dT_Ay">
-            <property role="1dT_AB" value="      expression will throw an exception." />
-          </node>
-        </node>
-        <node concept="TZ5HA" id="7NHcideXOdf" role="TZ5H$">
-          <node concept="1dT_AC" id="7NHcideXOdg" role="1dT_Ay">
-            <property role="1dT_AB" value="" />
-          </node>
-        </node>
-        <node concept="TZ5HA" id="7NHcideXToD" role="TZ5H$">
-          <node concept="1dT_AC" id="7NHcideXToE" role="1dT_Ay">
-            <property role="1dT_AB" value="TODO: Check if this can be solved without producing temporary invalid expressions. " />
-          </node>
-        </node>
         <node concept="1PaTwC" id="69UqCTx8_yv" role="1Vez_I">
           <node concept="3oM_SD" id="69UqCTx8_yw" role="1PaTwD">
             <property role="3oM_SC" value="Replace" />
@@ -5625,32 +5573,192 @@
             <property role="3oM_SC" value="type." />
           </node>
         </node>
-        <node concept="1PaTwC" id="69UqCTx8_yF" role="1Vez_I">
-          <node concept="3oM_SD" id="69UqCTx8_yG" role="1PaTwD">
+        <node concept="1PaTwC" id="6Uw_nMIg2e3" role="1Vez_I">
+          <node concept="3oM_SD" id="6Uw_nMIg2e2" role="1PaTwD">
             <property role="3oM_SC" value="" />
           </node>
         </node>
-        <node concept="1PaTwC" id="6Uw_nMIfjxN" role="1Vez_I">
-          <node concept="tu5oc" id="6Uw_nMIfjxS" role="1PaTwD">
-            <node concept="TZ5HA" id="6Uw_nMIfjxT" role="tu5of">
-              <node concept="1dT_AC" id="6Uw_nMIfjxU" role="1dT_Ay">
-                <property role="1dT_AB" value="NOTE: In the resulting structure we are using a type wrapped as an expression (concept &quot;TypeAsExpression&quot;)." />
-              </node>
-            </node>
+        <node concept="1PaTwC" id="6Uw_nMIg6Qb" role="1Vez_I">
+          <node concept="3oM_SD" id="6Uw_nMIg6Qg" role="1PaTwD">
+            <property role="3oM_SC" value="NOTE:" />
           </node>
-          <node concept="tu5oc" id="6Uw_nMIfjxV" role="1PaTwD">
-            <node concept="TZ5HA" id="6Topthyzp98" role="tu5of">
-              <node concept="1dT_AC" id="6Topthyzp99" role="1dT_Ay">
-                <property role="1dT_AB" value="      The type of this wrapper node is the same as the wrapped type. The typesystem can compute with the" />
-              </node>
-            </node>
+          <node concept="3oM_SD" id="6Uw_nMIg6Qh" role="1PaTwD">
+            <property role="3oM_SC" value="In" />
           </node>
-          <node concept="tu5oc" id="6Uw_nMIfjxW" role="1PaTwD">
-            <node concept="TZ5HA" id="6Topthy$To2" role="tu5of">
-              <node concept="1dT_AC" id="6Topthy$To3" role="1dT_Ay">
-                <property role="1dT_AB" value="      wrapped type without problems. Outside of the typesystem this wrapper will not be instantiated." />
-              </node>
-            </node>
+          <node concept="3oM_SD" id="6Uw_nMIg6Qi" role="1PaTwD">
+            <property role="3oM_SC" value="the" />
+          </node>
+          <node concept="3oM_SD" id="6Uw_nMIg6Qj" role="1PaTwD">
+            <property role="3oM_SC" value="resulting" />
+          </node>
+          <node concept="3oM_SD" id="6Uw_nMIg6Qk" role="1PaTwD">
+            <property role="3oM_SC" value="structure" />
+          </node>
+          <node concept="3oM_SD" id="6Uw_nMIg6Ql" role="1PaTwD">
+            <property role="3oM_SC" value="we" />
+          </node>
+          <node concept="3oM_SD" id="6Uw_nMIg6Qm" role="1PaTwD">
+            <property role="3oM_SC" value="are" />
+          </node>
+          <node concept="3oM_SD" id="6Uw_nMIg6Qn" role="1PaTwD">
+            <property role="3oM_SC" value="using" />
+          </node>
+          <node concept="3oM_SD" id="6Uw_nMIg6Qo" role="1PaTwD">
+            <property role="3oM_SC" value="a" />
+          </node>
+          <node concept="3oM_SD" id="6Uw_nMIg6Qp" role="1PaTwD">
+            <property role="3oM_SC" value="type" />
+          </node>
+          <node concept="3oM_SD" id="6Uw_nMIg6Qq" role="1PaTwD">
+            <property role="3oM_SC" value="wrapped" />
+          </node>
+          <node concept="3oM_SD" id="6Uw_nMIg6Qr" role="1PaTwD">
+            <property role="3oM_SC" value="as" />
+          </node>
+          <node concept="3oM_SD" id="6Uw_nMIg6Qs" role="1PaTwD">
+            <property role="3oM_SC" value="an" />
+          </node>
+          <node concept="3oM_SD" id="6Uw_nMIg6Qt" role="1PaTwD">
+            <property role="3oM_SC" value="expression" />
+          </node>
+          <node concept="3oM_SD" id="6Uw_nMIg6Qu" role="1PaTwD">
+            <property role="3oM_SC" value="(concept" />
+          </node>
+          <node concept="3oM_SD" id="6Uw_nMIgf2H" role="1PaTwD">
+            <property role="3oM_SC" value="&quot;TypeAsExpression&quot;)." />
+          </node>
+        </node>
+        <node concept="1PaTwC" id="6Uw_nMIggcz" role="1Vez_I">
+          <node concept="3oM_SD" id="6Uw_nMIggcy" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="6Uw_nMIghnc" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="6Uw_nMIghne" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="6Uw_nMIghnf" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="6Uw_nMIghng" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="6Uw_nMIghnh" role="1PaTwD">
+            <property role="3oM_SC" value="The" />
+          </node>
+          <node concept="3oM_SD" id="6Uw_nMIg6Qy" role="1PaTwD">
+            <property role="3oM_SC" value="type" />
+          </node>
+          <node concept="3oM_SD" id="6Uw_nMIg6Qz" role="1PaTwD">
+            <property role="3oM_SC" value="of" />
+          </node>
+          <node concept="3oM_SD" id="6Uw_nMIg6Q$" role="1PaTwD">
+            <property role="3oM_SC" value="this" />
+          </node>
+          <node concept="3oM_SD" id="6Uw_nMIg6Q_" role="1PaTwD">
+            <property role="3oM_SC" value="wrapper" />
+          </node>
+          <node concept="3oM_SD" id="6Uw_nMIg6QA" role="1PaTwD">
+            <property role="3oM_SC" value="node" />
+          </node>
+          <node concept="3oM_SD" id="6Uw_nMIg6QB" role="1PaTwD">
+            <property role="3oM_SC" value="is" />
+          </node>
+          <node concept="3oM_SD" id="6Uw_nMIg6QC" role="1PaTwD">
+            <property role="3oM_SC" value="the" />
+          </node>
+          <node concept="3oM_SD" id="6Uw_nMIg6QD" role="1PaTwD">
+            <property role="3oM_SC" value="same" />
+          </node>
+          <node concept="3oM_SD" id="6Uw_nMIg6QE" role="1PaTwD">
+            <property role="3oM_SC" value="as" />
+          </node>
+          <node concept="3oM_SD" id="6Uw_nMIg6QF" role="1PaTwD">
+            <property role="3oM_SC" value="the" />
+          </node>
+          <node concept="3oM_SD" id="6Uw_nMIg6QG" role="1PaTwD">
+            <property role="3oM_SC" value="wrapped" />
+          </node>
+          <node concept="3oM_SD" id="6Uw_nMIg6QH" role="1PaTwD">
+            <property role="3oM_SC" value="type." />
+          </node>
+          <node concept="3oM_SD" id="6Uw_nMIg6QI" role="1PaTwD">
+            <property role="3oM_SC" value="The" />
+          </node>
+          <node concept="3oM_SD" id="6Uw_nMIg6QJ" role="1PaTwD">
+            <property role="3oM_SC" value="typesystem" />
+          </node>
+          <node concept="3oM_SD" id="6Uw_nMIg6QK" role="1PaTwD">
+            <property role="3oM_SC" value="can" />
+          </node>
+          <node concept="3oM_SD" id="6Uw_nMIg6QL" role="1PaTwD">
+            <property role="3oM_SC" value="compute" />
+          </node>
+          <node concept="3oM_SD" id="6Uw_nMIg6QM" role="1PaTwD">
+            <property role="3oM_SC" value="with" />
+          </node>
+          <node concept="3oM_SD" id="6Uw_nMIg6QN" role="1PaTwD">
+            <property role="3oM_SC" value="the" />
+          </node>
+        </node>
+        <node concept="1PaTwC" id="6Uw_nMIg6QO" role="1Vez_I">
+          <node concept="3oM_SD" id="6Uw_nMIg6QP" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="6Uw_nMIgl8C" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="6Uw_nMIgl8E" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="6Uw_nMIgl8F" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="6Uw_nMIgl8G" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="6Uw_nMIgl8H" role="1PaTwD">
+            <property role="3oM_SC" value="wrapped" />
+          </node>
+          <node concept="3oM_SD" id="6Uw_nMIg6QQ" role="1PaTwD">
+            <property role="3oM_SC" value="type" />
+          </node>
+          <node concept="3oM_SD" id="6Uw_nMIg6QR" role="1PaTwD">
+            <property role="3oM_SC" value="without" />
+          </node>
+          <node concept="3oM_SD" id="6Uw_nMIg6QS" role="1PaTwD">
+            <property role="3oM_SC" value="problems." />
+          </node>
+          <node concept="3oM_SD" id="6Uw_nMIg6QT" role="1PaTwD">
+            <property role="3oM_SC" value="Outside" />
+          </node>
+          <node concept="3oM_SD" id="6Uw_nMIg6QU" role="1PaTwD">
+            <property role="3oM_SC" value="of" />
+          </node>
+          <node concept="3oM_SD" id="6Uw_nMIg6QV" role="1PaTwD">
+            <property role="3oM_SC" value="the" />
+          </node>
+          <node concept="3oM_SD" id="6Uw_nMIg6QW" role="1PaTwD">
+            <property role="3oM_SC" value="typesystem" />
+          </node>
+          <node concept="3oM_SD" id="6Uw_nMIg6QX" role="1PaTwD">
+            <property role="3oM_SC" value="this" />
+          </node>
+          <node concept="3oM_SD" id="6Uw_nMIg6QY" role="1PaTwD">
+            <property role="3oM_SC" value="wrapper" />
+          </node>
+          <node concept="3oM_SD" id="6Uw_nMIg6QZ" role="1PaTwD">
+            <property role="3oM_SC" value="will" />
+          </node>
+          <node concept="3oM_SD" id="6Uw_nMIg6R0" role="1PaTwD">
+            <property role="3oM_SC" value="not" />
+          </node>
+          <node concept="3oM_SD" id="6Uw_nMIg6R1" role="1PaTwD">
+            <property role="3oM_SC" value="be" />
+          </node>
+          <node concept="3oM_SD" id="6Uw_nMIgaCp" role="1PaTwD">
+            <property role="3oM_SC" value="instantiated." />
           </node>
         </node>
       </node>

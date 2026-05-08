@@ -253,15 +253,7 @@
         <property id="8465538089690881934" name="text" index="TUZQ4" />
         <child id="6832197706140518123" name="parameter" index="zr_5Q" />
       </concept>
-      <concept id="8465538089690331500" name="jetbrains.mps.baseLanguage.javadoc.structure.CommentLine" flags="ng" index="TZ5HA">
-        <child id="8970989240999019149" name="part" index="1dT_Ay" />
-      </concept>
-      <concept id="8465538089690331492" name="jetbrains.mps.baseLanguage.javadoc.structure.DeprecatedBlockDocTag" flags="ng" index="TZ5HI">
-        <child id="2667874559098216723" name="text" index="3HnX3l" />
-      </concept>
-      <concept id="8970989240999019143" name="jetbrains.mps.baseLanguage.javadoc.structure.TextCommentLinePart" flags="ng" index="1dT_AC">
-        <property id="8970989240999019144" name="text" index="1dT_AB" />
-      </concept>
+      <concept id="8465538089690331492" name="jetbrains.mps.baseLanguage.javadoc.structure.DeprecatedBlockDocTag" flags="ng" index="TZ5HI" />
       <concept id="5085607816302529296" name="jetbrains.mps.baseLanguage.javadoc.structure.IHoldCommentLines" flags="ngI" index="1VezTd">
         <child id="5085607816302529587" name="commentBody" index="1Vez_I" />
       </concept>
@@ -1434,9 +1426,15 @@
       </node>
       <node concept="P$JXv" id="V9WAJSLEDP" role="lGtFl">
         <node concept="TZ5HI" id="V9WAJSLEDQ" role="3nqlJM">
-          <node concept="TZ5HA" id="V9WAJSLEDR" role="3HnX3l">
-            <node concept="1dT_AC" id="V9WAJSLEI$" role="1dT_Ay">
-              <property role="1dT_AB" value="Use combine() instead." />
+          <node concept="1PaTwC" id="6Uw_nMIfx4k" role="1Vez_I">
+            <node concept="3oM_SD" id="6Uw_nMIfx4l" role="1PaTwD">
+              <property role="3oM_SC" value="Use" />
+            </node>
+            <node concept="3oM_SD" id="6Uw_nMIfx4m" role="1PaTwD">
+              <property role="3oM_SC" value="combine()" />
+            </node>
+            <node concept="3oM_SD" id="6Uw_nMIfx4n" role="1PaTwD">
+              <property role="3oM_SC" value="instead." />
             </node>
           </node>
         </node>
