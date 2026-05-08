@@ -30,7 +30,7 @@ public class ConfigRelations {
       return true;
     }
 
-    Iterable<SNode> extended = FeatureModelConfigurationInheritanceUtil.extendedFeatureModelConfigs(specific);
+    Iterable<SNode> extended = FeatureModelConfigurationInheritanceUtil.extendedConfigs(specific);
 
     return Sequence.fromIterable(extended).contains(generic);
   }

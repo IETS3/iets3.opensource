@@ -250,8 +250,8 @@ public class ExpressionsPart2_Test extends BaseTransformationTest {
       runWithinCommand(() -> {
         TestBody.this.assertHasRuntimeErrorType(getAnnotatedNode("ifWithOneUnit"));
         TestBody.this.assertHasRuntimeErrorType(getAnnotatedNode("ifWithDifferentUnits"));
-        TestBody.this.assertHasRuntimeErrorType(getAnnotatedNode("mathWithDifferentUnit"));
-        TestBody.this.assertHasRuntimeErrorType(getAnnotatedNode("machWithMixedType"));
+        TestBody.this.assertHasRuntimeErrorType(getAnnotatedNode("matchWithDifferentUnit"));
+        TestBody.this.assertHasRuntimeErrorType(getAnnotatedNode("matchWithMixedType"));
       });
     }
     public void test_ErrorMessagesCheck1433036590207129170() throws Exception {

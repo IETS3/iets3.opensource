@@ -5,10 +5,71 @@ package org.iets3.core.expr.typetags.physunits.plugin;
 import org.jetbrains.mps.openapi.model.SNode;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SConceptOperations;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
+import java.util.List;
+import org.iets3.core.expr.typetags.physunits.behavior.UnitCombinators;
+import jetbrains.mps.internal.collections.runtime.ListSequence;
+import java.util.ArrayList;
+import jetbrains.mps.baseLanguage.tuples.runtime.Tuples;
+import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
+import jetbrains.mps.typechecking.TypecheckingFacade;
+import org.iets3.core.expr.typetags.physunits.behavior.ConversionSpecifier__BehaviorDescriptor;
+import org.jetbrains.mps.openapi.language.SConcept;
 
 public class PhysUnitInterpreterHelper {
   private PhysUnitInterpreterHelper() {
   }
 
   public static SNode CURRENT_VAL_EXPRESSION = SConceptOperations.createNewNode(MetaAdapterFactory.getConcept(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x10802efe25aL, "jetbrains.mps.lang.core.structure.BaseConcept"));
+
+
+  /**
+   * Compute conversion expression for a tagged expression, if implicit conversion is required.
+   * 
+   * This is determined by looking at the ancestors in the AST, and generating a proper sequence of
+   * convertTo operators. Basically, some binary expressions require their left/right operands to
+   * have the same unit (like Plus, Minus, and all comparison operators), others don't (like Mult and Div).
+   * 
+   * If a conversion is needed, but no implicit conversion rule can be found, this method will
+   * return null. In that case, the eval result will probably be wrong. But the user should be aware
+   * of this already, because the typesystem will show an error.
+   * 
+   * @param operand the tagged expression which maybe has to be converted due to implicit rules
+   * @return the conversion expression, or null if no implicit conversion is applicable
+   */
+  public static SNode getImplicitConversionExpression(SNode operand) {
+    List<UnitCombinators.Conversion> conversionSeq = ListSequence.fromList(new ArrayList<UnitCombinators.Conversion>());
+    SNode last = operand;
+    UnitExpressionConverter uec = new UnitExpressionConverter();
+    Tuples._2<SNode, Boolean> enforcer = uec.parentConversionEnforcer(last);
+    SNode nextType = SNodeOperations.as(TypecheckingFacade.getFromContext().getTypeOf(last), CONCEPTS.TaggedType$O4);
+    while (enforcer != null) {
+      UnitCombinators.Conversion conv = uec.getConversionRequiredByContext(nextType, enforcer._0(), (boolean) enforcer._1());
+      if (conv != null) {
+        ListSequence.fromList(conversionSeq).addElement(conv);
+        {
+          final SNode tt = conv.resultingType();
+          if (SNodeOperations.isInstanceOf(tt, CONCEPTS.TaggedType$O4)) {
+            nextType = tt;
+          }
+        }
+      } else {
+        // no conversion needed
+      }
+
+      last = enforcer._0();
+      enforcer = uec.parentConversionEnforcer(last);
+    }
+
+    if (ListSequence.fromList(conversionSeq).isEmpty()) {
+      return null;
+    }
+
+    SNode chained = ListSequence.fromList(conversionSeq).foldLeft(SNodeOperations.as(operand, CONCEPTS.Expression$D_), (s, it) -> (SNode) ConversionSpecifier__BehaviorDescriptor.expandValParameter_id7UgeC20_E8d.invoke(it.getImplicitConv(), s));
+    return chained;
+  }
+
+  private static final class CONCEPTS {
+    /*package*/ static final SConcept TaggedType$O4 = MetaAdapterFactory.getConcept(0x5186c6ce428c4f09L, 0xa9df73d9e86c27d3L, 0x186a8ed9947750b6L, "org.iets3.core.expr.typetags.structure.TaggedType");
+    /*package*/ static final SConcept Expression$D_ = MetaAdapterFactory.getConcept(0xcfaa4966b7d54b69L, 0xb66a309a6e1a7290L, 0x670d5e92f854a047L, "org.iets3.core.expr.base.structure.Expression");
+  }
 }

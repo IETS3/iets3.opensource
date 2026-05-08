@@ -9,6 +9,7 @@ import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import org.jetbrains.mps.openapi.model.SNode;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
+import org.iets3.core.expr.typetags.behavior.TagCombinator;
 import java.util.List;
 import java.util.Arrays;
 import org.jetbrains.annotations.NotNull;
@@ -39,14 +40,14 @@ public final class UnitSpecification__BehaviorDescriptor extends BaseBHDescripto
   public static final SMethod<String> getDescription_id76ZhK6XViJl = new SMethodBuilder<>(String.class).name("getDescription").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(8196347919644568533L).languageId(0xa9df73d9e86c27d3L, 0x5186c6ce428c4f09L).build2();
   public static final SMethod<Iterable<SNode>> getTaggedExpressionScope_id76ZhK6XUPd6 = new SMethodBuilder<>((Class<Iterable<SNode>>) ((Class) Object.class)).name("getTaggedExpressionScope").modifiers(9, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(8196347919644447558L).languageId(0xa9df73d9e86c27d3L, 0x5186c6ce428c4f09L).build2(SMethodBuilder.createJavaParameter(SNode.class, "context"));
   public static final SMethod<Boolean> canSubstitute_id42$mjgeIjbE = new SMethodBuilder<>(Boolean.TYPE).name("canSubstitute").modifiers(9, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(4657945994728125162L).languageId(0xa9df73d9e86c27d3L, 0x5186c6ce428c4f09L).build2(SMethodBuilder.createJavaParameter(SNode.class, "context"));
-  public static final SMethod<SNode> combine_id4HxogODTmVB = new SMethodBuilder<>(SNode.class).name("combine").modifiers(9, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5431729334750899943L).languageId(0xa9df73d9e86c27d3L, 0x5186c6ce428c4f09L).build2(SMethodBuilder.createJavaParameter(SNode.class, "left"), SMethodBuilder.createJavaParameter(SNode.class, "right"), SMethodBuilder.createJavaParameter(SNode.class, "operation"));
+  public static final SMethod<TagCombinator> combine_idV9WAJSLzx5 = new SMethodBuilder<>(TagCombinator.class).name("combine").modifiers(9, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(1065649332398995525L).languageId(0xa9df73d9e86c27d3L, 0x5186c6ce428c4f09L).build2(SMethodBuilder.createJavaParameter(SNode.class, "left"), SMethodBuilder.createJavaParameter(SNode.class, "right"), SMethodBuilder.createJavaParameter(SNode.class, "operation"), SMethodBuilder.createJavaParameter(SNode.class, "leftType"), SMethodBuilder.createJavaParameter(SNode.class, "rightType"));
   public static final SMethod<Boolean> subsumes_id1RcasK0V7Pl = new SMethodBuilder<>(Boolean.TYPE).name("subsumes").modifiers(9, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(2147137078514449749L).languageId(0xa9df73d9e86c27d3L, 0x5186c6ce428c4f09L).build2(SMethodBuilder.createJavaParameter(SNode.class, "sub"), SMethodBuilder.createJavaParameter(SNode.class, "sup"));
   public static final SMethod<SAbstractConcept> getGroupingTagConcept_idx_aN5M65iL = new SMethodBuilder<>(SAbstractConcept.class).name("getGroupingTagConcept").modifiers(9, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(604937216318788785L).languageId(0xa9df73d9e86c27d3L, 0x5186c6ce428c4f09L).build2();
   public static final SMethod<List<SNode>> components_id1KUmgSF_6Sp = new SMethodBuilder<>((Class<List<SNode>>) ((Class) Object.class)).name("components").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(2034036099106762265L).languageId(0x86ed2c6daa33cd8cL, 0x7ee265bd59864709L).build2();
   public static final SMethod<Boolean> isSameAs_id4HxogODPWaJ = new SMethodBuilder<>(Boolean.TYPE).name("isSameAs").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5431729334750003887L).languageId(0xa9df73d9e86c27d3L, 0x5186c6ce428c4f09L).build2(SMethodBuilder.createJavaParameter(SNode.class, "other"));
   public static final SMethod<Boolean> requireBraces_id3wrpJuuH6pN = new SMethodBuilder<>(Boolean.TYPE).name("requireBraces").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(4042938304200730227L).languageId(0xa9df73d9e86c27d3L, 0x5186c6ce428c4f09L).build2();
 
-  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(getExpression_id6q45UTytEvW, getPresentation_idhEwIMiw, canTagExpression_id2Ux6GHgZEiG, getName_id76ZhK6XVfon, getDescription_id76ZhK6XViJl, getTaggedExpressionScope_id76ZhK6XUPd6, canSubstitute_id42$mjgeIjbE, combine_id4HxogODTmVB, subsumes_id1RcasK0V7Pl, getGroupingTagConcept_idx_aN5M65iL, components_id1KUmgSF_6Sp, isSameAs_id4HxogODPWaJ, requireBraces_id3wrpJuuH6pN);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(getExpression_id6q45UTytEvW, getPresentation_idhEwIMiw, canTagExpression_id2Ux6GHgZEiG, getName_id76ZhK6XVfon, getDescription_id76ZhK6XViJl, getTaggedExpressionScope_id76ZhK6XUPd6, canSubstitute_id42$mjgeIjbE, combine_idV9WAJSLzx5, subsumes_id1RcasK0V7Pl, getGroupingTagConcept_idx_aN5M65iL, components_id1KUmgSF_6Sp, isSameAs_id4HxogODPWaJ, requireBraces_id3wrpJuuH6pN);
 
 
   /*package*/ static SNode getExpression_id6q45UTytEvW(@NotNull SNode __thisNode__) {
@@ -70,8 +71,8 @@ public final class UnitSpecification__BehaviorDescriptor extends BaseBHDescripto
   /*package*/ static boolean canSubstitute_id42$mjgeIjbE(@NotNull SAbstractConcept __thisConcept__, SNode context) {
     return false;
   }
-  /*package*/ static SNode combine_id4HxogODTmVB(@NotNull SAbstractConcept __thisConcept__, SNode left, SNode right, SNode operation) {
-    return UnitCombinators.combine(left, right, operation);
+  /*package*/ static TagCombinator combine_idV9WAJSLzx5(@NotNull SAbstractConcept __thisConcept__, SNode left, SNode right, SNode operation, SNode leftType, SNode rightType) {
+    return UnitCombinators.combine(left, right, operation, leftType, rightType);
   }
   /*package*/ static boolean subsumes_id1RcasK0V7Pl(@NotNull SAbstractConcept __thisConcept__, SNode sub, SNode sup) {
     return UnitSubsumption.subsumes(sub, sup);
@@ -141,7 +142,7 @@ public final class UnitSpecification__BehaviorDescriptor extends BaseBHDescripto
       case 6:
         return (T) ((Boolean) canSubstitute_id42$mjgeIjbE(concept, (SNode) parameters[0]));
       case 7:
-        return (T) ((SNode) combine_id4HxogODTmVB(concept, (SNode) parameters[0], (SNode) parameters[1], (SNode) parameters[2]));
+        return (T) ((TagCombinator) combine_idV9WAJSLzx5(concept, (SNode) parameters[0], (SNode) parameters[1], (SNode) parameters[2], (SNode) parameters[3], (SNode) parameters[4]));
       case 8:
         return (T) ((Boolean) subsumes_id1RcasK0V7Pl(concept, (SNode) parameters[0], (SNode) parameters[1]));
       case 9:
