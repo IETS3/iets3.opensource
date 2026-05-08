@@ -28,7 +28,8 @@ public final class ITag__BehaviorDescriptor extends BaseBHDescriptor {
   public static final SMethod<String> getName_id76ZhK6XVfon = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("getName").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(8196347919644554775L).languageId(0xa9df73d9e86c27d3L, 0x5186c6ce428c4f09L).build2();
   public static final SMethod<String> getDescription_id76ZhK6XViJl = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("getDescription").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(8196347919644568533L).languageId(0xa9df73d9e86c27d3L, 0x5186c6ce428c4f09L).build2();
   public static final SMethod<Boolean> isSameAs_id4HxogODPWaJ = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("isSameAs").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5431729334750003887L).languageId(0xa9df73d9e86c27d3L, 0x5186c6ce428c4f09L).build2(SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""));
-  public static final SMethod<SNode> combine_id4HxogODTmVB = new SMethodBuilder<SNode>(new SJavaCompoundTypeImpl((Class<SNode>) ((Class) Object.class))).name("combine").modifiers(9, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5431729334750899943L).languageId(0xa9df73d9e86c27d3L, 0x5186c6ce428c4f09L).build2(SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""), SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""), SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""));
+  public static final SMethod<SNode> combine_old_id4HxogODTmVB = new SMethodBuilder<SNode>(new SJavaCompoundTypeImpl((Class<SNode>) ((Class) Object.class))).name("combine_old").modifiers(9, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5431729334750899943L).languageId(0xa9df73d9e86c27d3L, 0x5186c6ce428c4f09L).build2(SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""), SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""), SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""));
+  public static final SMethod<TagCombinator> combine_idV9WAJSLzx5 = new SMethodBuilder<TagCombinator>(new SJavaCompoundTypeImpl(TagCombinator.class)).name("combine").modifiers(9, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(1065649332398995525L).languageId(0xa9df73d9e86c27d3L, 0x5186c6ce428c4f09L).build2(SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""), SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""), SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""), SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""), SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""));
   public static final SMethod<Boolean> subsumes_id1RcasK0V7Pl = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("subsumes").modifiers(9, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(2147137078514449749L).languageId(0xa9df73d9e86c27d3L, 0x5186c6ce428c4f09L).build2(SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""), SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""));
   public static final SMethod<SNode> getDefault_id1WJTL5jvcNW = new SMethodBuilder<SNode>(new SJavaCompoundTypeImpl((Class<SNode>) ((Class) Object.class))).name("getDefault").modifiers(9, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(2247268800682315004L).languageId(0xa9df73d9e86c27d3L, 0x5186c6ce428c4f09L).build2();
   public static final SMethod<SAbstractConcept> getGroupingTagConcept_idx_aN5M65iL = new SMethodBuilder<SAbstractConcept>(new SJavaCompoundTypeImpl((Class<SAbstractConcept>) ((Class) Object.class))).name("getGroupingTagConcept").modifiers(9, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(604937216318788785L).languageId(0xa9df73d9e86c27d3L, 0x5186c6ce428c4f09L).build2();
@@ -40,7 +41,7 @@ public final class ITag__BehaviorDescriptor extends BaseBHDescriptor {
   public static final SMethod<Boolean> canBeNegated_id6KxoTHgKls2 = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("canBeNegated").modifiers(9, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(7791618349053597442L).languageId(0xa9df73d9e86c27d3L, 0x5186c6ce428c4f09L).build2();
   public static final SMethod<Boolean> requireBraces_id3wrpJuuH6pN = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("requireBraces").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(4042938304200730227L).languageId(0xa9df73d9e86c27d3L, 0x5186c6ce428c4f09L).build2();
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(canTagExpression_id2Ux6GHgZEiG, canTagExpression_id52qjO8Ir6jN, canSubstitute_id42$mjgeIjbE, getTaggedExpressionScope_id76ZhK6XUPd6, getName_id76ZhK6XVfon, getDescription_id76ZhK6XViJl, isSameAs_id4HxogODPWaJ, combine_id4HxogODTmVB, subsumes_id1RcasK0V7Pl, getDefault_id1WJTL5jvcNW, getGroupingTagConcept_idx_aN5M65iL, isAtLeast_id52gSz9iqRup, IsAtMost_id52gSz9iqREL, isNegative_id1RcasK0SECn, isPositive_id1RcasK0V9pJ, getBaseTag_id1RcasK0UAlt, canBeNegated_id6KxoTHgKls2, requireBraces_id3wrpJuuH6pN);
+  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(canTagExpression_id2Ux6GHgZEiG, canTagExpression_id52qjO8Ir6jN, canSubstitute_id42$mjgeIjbE, getTaggedExpressionScope_id76ZhK6XUPd6, getName_id76ZhK6XVfon, getDescription_id76ZhK6XViJl, isSameAs_id4HxogODPWaJ, combine_old_id4HxogODTmVB, combine_idV9WAJSLzx5, subsumes_id1RcasK0V7Pl, getDefault_id1WJTL5jvcNW, getGroupingTagConcept_idx_aN5M65iL, isAtLeast_id52gSz9iqRup, IsAtMost_id52gSz9iqREL, isNegative_id1RcasK0SECn, isPositive_id1RcasK0V9pJ, getBaseTag_id1RcasK0UAlt, canBeNegated_id6KxoTHgKls2, requireBraces_id3wrpJuuH6pN);
 
   private static void ___init___(@NotNull SNode __thisNode__) {
   }
@@ -78,7 +79,8 @@ public final class ITag__BehaviorDescriptor extends BaseBHDescriptor {
 
     return false;
   }
-  /*package*/ static SNode combine_id4HxogODTmVB(@NotNull SAbstractConcept __thisConcept__, SNode left, SNode right, SNode operation) {
+  @Deprecated(since = "2026-03-24")
+  /*package*/ static SNode combine_old_id4HxogODTmVB(@NotNull SAbstractConcept __thisConcept__, SNode left, SNode right, SNode operation) {
     if (left == null) {
       left = ITag__BehaviorDescriptor.getDefault_id1WJTL5jvcNW.invoke(__thisConcept__);
     }
@@ -90,6 +92,11 @@ public final class ITag__BehaviorDescriptor extends BaseBHDescriptor {
     } else {
       return left;
     }
+  }
+  /*package*/ static TagCombinator combine_idV9WAJSLzx5(@NotNull SAbstractConcept __thisConcept__, SNode left, SNode right, SNode operation, SNode leftType, SNode rightType) {
+    // if not overwritten, then forward to deprecated method
+    SNode combined = ITag__BehaviorDescriptor.combine_old_id4HxogODTmVB.invoke(__thisConcept__, left, right, operation);
+    return ((combined == null) ? null : new TagCombinator(combined));
   }
   /*package*/ static boolean subsumes_id1RcasK0V7Pl(@NotNull SAbstractConcept __thisConcept__, SNode sub, SNode sup) {
     return false;
@@ -143,17 +150,17 @@ public final class ITag__BehaviorDescriptor extends BaseBHDescriptor {
         return (T) ((String) getDescription_id76ZhK6XViJl(node));
       case 6:
         return (T) ((Boolean) isSameAs_id4HxogODPWaJ(node, (SNode) parameters[0]));
-      case 11:
-        return (T) ((Boolean) isAtLeast_id52gSz9iqRup(node));
       case 12:
-        return (T) ((Boolean) IsAtMost_id52gSz9iqREL(node));
+        return (T) ((Boolean) isAtLeast_id52gSz9iqRup(node));
       case 13:
-        return (T) ((Boolean) isNegative_id1RcasK0SECn(node));
+        return (T) ((Boolean) IsAtMost_id52gSz9iqREL(node));
       case 14:
-        return (T) ((Boolean) isPositive_id1RcasK0V9pJ(node));
+        return (T) ((Boolean) isNegative_id1RcasK0SECn(node));
       case 15:
+        return (T) ((Boolean) isPositive_id1RcasK0V9pJ(node));
+      case 16:
         return (T) ((SNode) getBaseTag_id1RcasK0UAlt(node));
-      case 17:
+      case 18:
         return (T) ((Boolean) requireBraces_id3wrpJuuH6pN(node));
       default:
         throw new BHMethodNotFoundException(this, method);
@@ -176,14 +183,16 @@ public final class ITag__BehaviorDescriptor extends BaseBHDescriptor {
       case 3:
         return (T) ((Iterable<SNode>) getTaggedExpressionScope_id76ZhK6XUPd6(concept, (SNode) parameters[0]));
       case 7:
-        return (T) ((SNode) combine_id4HxogODTmVB(concept, (SNode) parameters[0], (SNode) parameters[1], (SNode) parameters[2]));
+        return (T) ((SNode) combine_old_id4HxogODTmVB(concept, (SNode) parameters[0], (SNode) parameters[1], (SNode) parameters[2]));
       case 8:
-        return (T) ((Boolean) subsumes_id1RcasK0V7Pl(concept, (SNode) parameters[0], (SNode) parameters[1]));
+        return (T) ((TagCombinator) combine_idV9WAJSLzx5(concept, (SNode) parameters[0], (SNode) parameters[1], (SNode) parameters[2], (SNode) parameters[3], (SNode) parameters[4]));
       case 9:
-        return (T) ((SNode) getDefault_id1WJTL5jvcNW(concept));
+        return (T) ((Boolean) subsumes_id1RcasK0V7Pl(concept, (SNode) parameters[0], (SNode) parameters[1]));
       case 10:
+        return (T) ((SNode) getDefault_id1WJTL5jvcNW(concept));
+      case 11:
         return (T) ((SAbstractConcept) getGroupingTagConcept_idx_aN5M65iL(concept));
-      case 16:
+      case 17:
         return (T) ((Boolean) canBeNegated_id6KxoTHgKls2(concept));
       default:
         throw new BHMethodNotFoundException(this, method);
