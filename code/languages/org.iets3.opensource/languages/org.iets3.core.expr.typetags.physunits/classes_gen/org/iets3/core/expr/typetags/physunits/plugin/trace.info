@@ -725,18 +725,18 @@
       <node id="9201263995806904149" at="71,53,72,17" concept="10" />
       <node id="4042938304129098825" at="79,0,80,0" concept="7" trace="implicitConversionIsEnabled#()Z" />
       <node id="829367150915197241" at="86,73,87,16" concept="10" />
-      <node id="8208191299088819530" at="97,71,98,17" concept="10" />
-      <node id="5309643485300009797" at="106,64,107,85" concept="11" />
-      <node id="5309643485300011493" at="107,85,108,108" concept="11" />
-      <node id="5309643485299866703" at="108,108,109,43" concept="10" />
-      <node id="12730654244610237" at="116,0,117,0" concept="7" trace="getExponentComparator#()Ljava/util/Comparator;" />
-      <node id="5249618192327743649" at="118,76,119,83" concept="10" />
+      <node id="8208191299088819530" at="100,71,101,17" concept="10" />
+      <node id="5309643485300009797" at="109,64,110,85" concept="11" />
+      <node id="5309643485300011493" at="110,85,111,108" concept="11" />
+      <node id="5309643485299866703" at="111,108,112,43" concept="10" />
+      <node id="12730654244610237" at="119,0,120,0" concept="7" trace="getExponentComparator#()Ljava/util/Comparator;" />
+      <node id="5249618192327743649" at="121,76,122,83" concept="10" />
       <node id="4062314141637644561" at="64,0,67,0" concept="7" trace="getUnitLessUnitName#()Ljava/lang/String;" />
       <node id="9201263995806902302" at="71,0,74,0" concept="7" trace="useSlashInsteadOfDivisionSymbol#()Z" />
       <node id="829367150914593967" at="86,0,89,0" concept="7" trace="implicitConversionIsEnabledAt#(Lorg/jetbrains/mps/openapi/model/SNode;)Z" />
-      <node id="8208191299088816517" at="97,0,100,0" concept="7" trace="allowMixingCompatibleQuantitiesWithoutConversions#()Z" />
-      <node id="5249618192327739924" at="118,0,121,0" concept="7" trace="getOverwrittenScaling#()Ljava/util/Map;" />
-      <node id="5309643485299829436" at="106,0,111,0" concept="7" trace="getUnitStandardizer#(Lorg/jetbrains/mps/openapi/model/SNode;)Lorg/iets3/core/expr/typetags/physunits/behavior/IUnitStandardizer;" />
+      <node id="8208191299088816517" at="100,0,103,0" concept="7" trace="allowMixingCompatibleQuantitiesWithoutConversions#()Z" />
+      <node id="5249618192327739924" at="121,0,124,0" concept="7" trace="getOverwrittenScaling#()Ljava/util/Map;" />
+      <node id="5309643485299829436" at="109,0,114,0" concept="7" trace="getUnitStandardizer#(Lorg/jetbrains/mps/openapi/model/SNode;)Lorg/iets3/core/expr/typetags/physunits/behavior/IUnitStandardizer;" />
       <scope id="2417394483935019962" at="31,0,32,0" />
       <scope id="5088826354699949538" at="37,0,38,0" />
       <scope id="8974592143659681708" at="44,0,45,0" />
@@ -747,23 +747,23 @@
       <scope id="9201263995806902305" at="71,53,72,17" />
       <scope id="4042938304129098825" at="79,0,80,0" />
       <scope id="829367150914593970" at="86,73,87,16" />
-      <scope id="8208191299088816520" at="97,71,98,17" />
-      <scope id="12730654244610237" at="116,0,117,0" />
-      <scope id="5249618192327739927" at="118,76,119,83" />
+      <scope id="8208191299088816520" at="100,71,101,17" />
+      <scope id="12730654244610237" at="119,0,120,0" />
+      <scope id="5249618192327739927" at="121,76,122,83" />
       <scope id="4062314141637644561" at="64,0,67,0" />
       <scope id="9201263995806902302" at="71,0,74,0" />
       <scope id="829367150914593967" at="86,0,89,0">
         <var name="taggedExpression" id="778041577207543417" />
       </scope>
-      <scope id="8208191299088816517" at="97,0,100,0" />
-      <scope id="5309643485299829439" at="106,64,109,43" />
-      <scope id="5249618192327739924" at="118,0,121,0" />
-      <scope id="5309643485299829436" at="106,0,111,0">
+      <scope id="8208191299088816517" at="100,0,103,0" />
+      <scope id="5309643485299829439" at="109,64,112,43" />
+      <scope id="5249618192327739924" at="121,0,124,0" />
+      <scope id="5309643485299829436" at="109,0,114,0">
         <var name="context" id="5309643485299865382" />
       </scope>
       <unit id="5088826354699946460" at="18,0,22,0" name="org.iets3.core.expr.typetags.physunits.plugin.IUnitLangConfig$ConversionSpecifierSelection" />
       <unit id="8974592143659678823" at="23,0,27,0" name="org.iets3.core.expr.typetags.physunits.plugin.IUnitLangConfig$MinimizationStrategy" />
-      <unit id="5088826354699943896" at="15,0,122,0" name="org.iets3.core.expr.typetags.physunits.plugin.IUnitLangConfig" />
+      <unit id="5088826354699943896" at="15,0,125,0" name="org.iets3.core.expr.typetags.physunits.plugin.IUnitLangConfig" />
     </file>
   </root>
   <root nodeRef="r:6e69e40f-b186-4866-917f-dbdef5b3c590(org.iets3.core.expr.typetags.physunits.plugin)/5088826354700360584">

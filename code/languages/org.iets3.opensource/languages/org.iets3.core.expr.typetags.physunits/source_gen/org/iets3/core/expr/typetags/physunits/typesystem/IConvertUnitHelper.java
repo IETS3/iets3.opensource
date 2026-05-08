@@ -222,7 +222,9 @@ public class IConvertUnitHelper {
   /**
    * Replace all ValExpression nodes in an expression by a tagged type.
    * 
-   * '''NOTE: In the resulting structure we are using a type wrapped as an expression (concept "TypeAsExpression").''' '''The type of this wrapper node is the same as the wrapped type. The typesystem can compute with the''' '''wrapped type without problems. Outside of the typesystem this wrapper will not be instantiated.'''
+   * NOTE: In the resulting structure we are using a type wrapped as an expression (concept "TypeAsExpression").
+   *      The type of this wrapper node is the same as the wrapped type. The typesystem can compute with the
+   *      wrapped type without problems. Outside of the typesystem this wrapper will not be instantiated.
    */
   private static void replaceValExprWithBaseType(final SNode specifierExprCopy, final SNode parentConversionRule, final SNode baseType) {
     ListSequence.fromList(SNodeOperations.getNodeDescendants(specifierExprCopy, CONCEPTS.ValExpression$hl, false, new SAbstractConcept[]{})).visitAll((it) -> {
