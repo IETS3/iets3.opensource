@@ -5,6 +5,13 @@ All notable changes to this project are documented in this file.
 Format of the log is _loosely_ based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 The project does _not_ follow Semantic Versioning and the changes are documented in reverse chronological order, grouped by calendar month.
 
+## May 2026
+
+### Fixed
+
+- Variability: Fix workaround for using for-all-variants checking rules outside the IDE (e.g., on a build server). Due to MPS-34340, the for-all-variants checking cannot be done outside the IDE if the model under check has more than one root nodes. This bugfix includes roots of LogicalChildren in the list of used root nodes.
+
+
 ## April 2026
 
 ### Added
@@ -14,6 +21,7 @@ The project does _not_ follow Semantic Versioning and the changes are documented
   - presence condition in artifact
   - left-hand-side condition in an ITabularVarPoint
 - Allow to set `reportsFilenamePrefix` for the `ICustomRunnerConfig` interface
+- Physical units (language `org.iets3.core.expr.typetags.physunits`): Implicit conversion rules are now supported in typesystem and interpreter. E.g., with the implicit conversion rules defined in `SIDerivedUnits` an expression like `(7 min + 1234 sec) < 0.5 h` is perfectly valid and can be evaluated by the interpreter.
 
 ### Changed
 
@@ -46,8 +54,8 @@ The project does _not_ follow Semantic Versioning and the changes are documented
 - Variability: The class hierarchy implementing `IRenamer` has been improved and documented. This interface is being used for tailoring the renaming behavior of the variability filtering algorithms.
 - Variability: Remove deprecated concepts `FeatureModelConfiguration_old`, and all related concepts. These concepts have been introduced when one proto-language for variability has been split into two languages, one for feature models and one for configurations. This happened end of 2024, and the deprecation window is now closing.
 - Variability: The variability.os plugin no longer depends on the potentially slow tracing language.
-- The physical units language `org.iets3.core.expr.typetags.physunits` has been refactored internally (logic has not been changed). 
-- The behaviour methods of `IValidNamedConcept` for umlauts, paragraphs and apostrophes in language `org.iets3.core.base` were refactored internally and allow now customization via extension point. 
+- The physical units language `org.iets3.core.expr.typetags.physunits` has been refactored internally (logic has not been changed).
+- The behaviour methods of `IValidNamedConcept` for umlauts, paragraphs and apostrophes in language `org.iets3.core.base` were refactored internally and allow now customization via extension point.
 
 ### Fixed
 - Add missing deps. to SBOM
@@ -139,7 +147,7 @@ The project does _not_ follow Semantic Versioning and the changes are documented
 
 ### Added
 
-- Data tables, binary and multi-criteria decision tables now support deletion, copying and pasting when multiple cells are selected with the mouse. 
+- Data tables, binary and multi-criteria decision tables now support deletion, copying and pasting when multiple cells are selected with the mouse.
 
 
 ## July 2025
@@ -148,7 +156,7 @@ The project does _not_ follow Semantic Versioning and the changes are documented
 
 - Expressions of ShortLambdas are now correctly updated and used for interpretation after they are changed
 - API for coverage calculation and restored original functionality. Coverage is now calculated during interpreter execution
-- Duplicated colors for PARTIAL and IGNORED 
+- Duplicated colors for PARTIAL and IGNORED
 
 ### Added
 
@@ -187,7 +195,7 @@ The project does _not_ follow Semantic Versioning and the changes are documented
 
 ### Fixed
 
-- Plugin org.iets3.safety was renamed to org.iets3.safety.os fixing the name collision with a plugin in org.iets3.core 
+- Plugin org.iets3.safety was renamed to org.iets3.safety.os fixing the name collision with a plugin in org.iets3.core
 
 - A NullPointerException was fixed for cases where a node implementing IValidNamedConcept had no name.
 - When calculating the supertype of number types, the precision is now correctly set to infinite when one of the types has an infinite precision.
@@ -263,7 +271,7 @@ The project does _not_ follow Semantic Versioning and the changes are documented
 - The physical units B and b were renamed to byte and bit to avoid confusion.
 - Breaking change: The units of digital information were split into 3 different libraries: UnitsOfInformationIEC, UnitsOfInformationJEDEC, UnitsOfInformationMetric. They are still considered part of the derived units.
 
-### Added 
+### Added
 
 - Physical units now also support metric scaling for only the positive and negative prefixes. Scaling can also be overwritten for units by overwritten `IUnitLangConfig#getOverwrittenScaling` for the extension point `PhysUnitLangConfig`.
 - Execution of Test by Interpreter can be done without generation and compilation.
@@ -297,7 +305,7 @@ The project does _not_ follow Semantic Versioning and the changes are documented
 
 ### Changed
 
-- The `noConvert` expressions in the physunit language doesn't strip the unit anymore. Use the `stripUnit` expression for that. 
+- The `noConvert` expressions in the physunit language doesn't strip the unit anymore. Use the `stripUnit` expression for that.
 
 ## September 2024
 
@@ -382,7 +390,7 @@ The project does _not_ follow Semantic Versioning and the changes are documented
 
 ### Changed
 
-- `ComponentKind#canbeContent(conceptNode<>)` was deprecated in favour of `ComponentKind#canbeContent(concept<>)` 
+- `ComponentKind#canbeContent(conceptNode<>)` was deprecated in favour of `ComponentKind#canbeContent(concept<>)`
 - `Component#canBeInComponentContent(conceptNode<>)` was deprecated in favour of `Component#canBeInComponentContent(concept<>)`
 
 ### Added
@@ -395,7 +403,7 @@ The project does _not_ follow Semantic Versioning and the changes are documented
 ### Added
 
 - *MessageDefiniton* uses *extensionPoint/IdentifierConfigurator/* that allows the user to decide to use german umlauts and paragraphs in it.
-- This extensionPoint got a new method to select which implementation will be chosen. 
+- This extensionPoint got a new method to select which implementation will be chosen.
 - A new (experimental) language `org.iets3.core.expr.typetags.physunits` was added that should eventually replace the old unit language. Read the documentation in `org.iets3.core.expr.typetags.physunits.documentation` to learn more about the features of the new language.
 
 ### Fixed

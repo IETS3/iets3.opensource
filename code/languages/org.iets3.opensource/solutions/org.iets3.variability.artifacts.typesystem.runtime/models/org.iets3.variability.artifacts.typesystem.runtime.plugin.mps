@@ -1353,13 +1353,13 @@
         </node>
         <node concept="3cpWs8" id="5hMo5PmOBzN" role="3cqZAp">
           <node concept="3cpWsn" id="5hMo5PmOBzO" role="3cpWs9">
-            <property role="TrG5h" value="artifactGroupLogical" />
+            <property role="TrG5h" value="allArtifactGroup" />
             <node concept="3vKaQO" id="4pGaDIgIgzD" role="1tU5fm">
               <node concept="3Tqbb2" id="4pGaDIgIgzF" role="3O5elw" />
             </node>
             <node concept="2OqwBi" id="4lHDM39xYJ_" role="33vP2m">
               <node concept="2YIFZM" id="4pGaDIgsoi2" role="2Oq$k0">
-                <ref role="37wK5l" to="eagd:4pGaDIgrZNy" resolve="artifactGroupWithLogicalChildren" />
+                <ref role="37wK5l" to="eagd:4pGaDIgrZNy" resolve="artifactGroupIncludingLogicalChildren" />
                 <ref role="1Pybhc" to="eagd:4pGaDIglRIz" resolve="IVAAUtil" />
                 <node concept="37vLTw" id="24YzBBJVNYd" role="37wK5m">
                   <ref role="3cqZAo" node="24YzBBJVE6u" resolve="artifactGroup" />
@@ -1518,8 +1518,8 @@
               </node>
               <node concept="liA8E" id="5hMo5PmRzbe" role="2OqNvi">
                 <ref role="37wK5l" node="5hMo5PmNklQ" resolve="canDoMulticheck" />
-                <node concept="37vLTw" id="5hMo5PmRBWB" role="37wK5m">
-                  <ref role="3cqZAo" node="24YzBBJVE6u" resolve="artifactGroup" />
+                <node concept="37vLTw" id="5vB1gFotsFq" role="37wK5m">
+                  <ref role="3cqZAo" node="5hMo5PmOBzO" resolve="allArtifactGroup" />
                 </node>
               </node>
             </node>
@@ -1649,7 +1649,7 @@
                   <ref role="37wK5l" to="eagd:7n4AitrhwSh" resolve="createFromNodeGroup" />
                   <ref role="1Pybhc" to="eagd:7n4Aitrl88z" resolve="RootNodesCopy" />
                   <node concept="37vLTw" id="7n4AitrqctQ" role="37wK5m">
-                    <ref role="3cqZAo" node="5hMo5PmOBzO" resolve="artifactGroupLogical" />
+                    <ref role="3cqZAo" node="5hMo5PmOBzO" resolve="allArtifactGroup" />
                   </node>
                 </node>
               </node>

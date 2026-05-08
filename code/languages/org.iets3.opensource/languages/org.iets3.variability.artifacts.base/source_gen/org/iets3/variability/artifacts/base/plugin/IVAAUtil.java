@@ -27,12 +27,12 @@ public class IVAAUtil {
     return Sequence.fromIterable(Sequence.<SNode>singleton(mainArtifact)).union(Sequence.fromIterable(IVariabilityAwareArtifact__BehaviorDescriptor.getAllDependenciesTransitive_id5LihCoMjg$M.invoke(mainArtifact)).select((it) -> it.getLeaf()));
   }
 
-  public static Iterable<SNode> artifactGroupWithLogicalChildren(SNode mainArtifact) {
+  public static Iterable<SNode> artifactGroupIncludingLogicalChildren(SNode mainArtifact) {
     List<SNode> artifactGroup = Sequence.fromIterable(artifactGroup(mainArtifact)).toList();
-    return artifactGroupWithLogicalChildren(artifactGroup);
+    return artifactGroupIncludingLogicalChildren(artifactGroup);
   }
 
-  public static Iterable<SNode> artifactGroupWithLogicalChildren(Collection<SNode> artifactGroup) {
+  public static Iterable<SNode> artifactGroupIncludingLogicalChildren(Collection<SNode> artifactGroup) {
     Iterable<SNode> logicalChildren = CollectionSequence.fromCollection(artifactGroup).translate((ivaa) -> collectNestedLogicalChildren(ivaa));
     return Iterables.<SNode>concat(artifactGroup, logicalChildren);
   }
