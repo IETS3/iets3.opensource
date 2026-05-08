@@ -1191,7 +1191,7 @@
       <node id="8457729117602978085" at="82,90,83,81" concept="3" />
       <node id="8457729117602976503" at="86,73,87,64" concept="3" />
       <node id="7151854550137073291" at="90,73,91,64" concept="3" />
-      <node id="1034638375398704010" at="94,80,95,71" concept="3" />
+      <node id="1034638375398704010" at="94,96,95,87" concept="3" />
       <node id="3315773615451966892" at="98,77,99,68" concept="3" />
       <node id="1034638375398714804" at="102,88,103,79" concept="3" />
       <node id="4020487592982401140" at="106,94,107,85" concept="3" />
@@ -1245,7 +1245,7 @@
       <node id="7151854550137073291" at="226,75,227,22" concept="3" />
       <node id="7151854550137073291" at="228,30,229,63" concept="7" />
       <node id="7151854550137073291" at="229,63,230,161" concept="3" />
-      <node id="1034638375398704010" at="233,82,234,22" concept="3" />
+      <node id="1034638375398704010" at="233,98,234,22" concept="3" />
       <node id="1034638375398704010" at="235,30,236,63" concept="7" />
       <node id="1034638375398704010" at="236,63,237,290" concept="3" />
       <node id="3315773615451966892" at="240,79,241,22" concept="3" />
@@ -1276,7 +1276,7 @@
       <node id="8457729117602978085" at="81,0,85,0" concept="6" trace="test_NodeExpressionCannotBePartCheck8457729117602978085#()V" />
       <node id="8457729117602976503" at="85,0,89,0" concept="6" trace="test_NodeErrorCheck8457729117602976503#()V" />
       <node id="7151854550137073291" at="89,0,93,0" concept="6" trace="test_NodeErrorCheck7151854550137073291#()V" />
-      <node id="1034638375398704010" at="93,0,97,0" concept="6" trace="test_NodeUnnamedErrorCheck1034638375398704010#()V" />
+      <node id="1034638375398704010" at="93,0,97,0" concept="6" trace="test_NodeBinaryExpressionRuntimeErrorCheck1034638375398704010#()V" />
       <node id="3315773615451966892" at="97,0,101,0" concept="6" trace="test_ErrorMessagesCheck3315773615451966892#()V" />
       <node id="1034638375398714804" at="101,0,105,0" concept="6" trace="test_NodeIncompatibleTypesAndCheck1034638375398714804#()V" />
       <node id="4020487592982401140" at="105,0,109,0" concept="6" trace="test_NodeTheTypeDefinitionIsAlreadyCheck4020487592982401140#()V" />
@@ -1317,7 +1317,7 @@
       <node id="8457729117602978085" at="212,0,219,0" concept="6" trace="test_NodeExpressionCannotBePartCheck8457729117602978085#()V" />
       <node id="8457729117602976503" at="219,0,226,0" concept="6" trace="test_NodeErrorCheck8457729117602976503#()V" />
       <node id="7151854550137073291" at="226,0,233,0" concept="6" trace="test_NodeErrorCheck7151854550137073291#()V" />
-      <node id="1034638375398704010" at="233,0,240,0" concept="6" trace="test_NodeUnnamedErrorCheck1034638375398704010#()V" />
+      <node id="1034638375398704010" at="233,0,240,0" concept="6" trace="test_NodeBinaryExpressionRuntimeErrorCheck1034638375398704010#()V" />
       <node id="3315773615451966892" at="240,0,247,0" concept="6" trace="test_ErrorMessagesCheck3315773615451966892#()V" />
       <node id="1034638375398714804" at="247,0,254,0" concept="6" trace="test_NodeIncompatibleTypesAndCheck1034638375398714804#()V" />
       <node id="4020487592982401140" at="254,0,261,0" concept="6" trace="test_NodeTheTypeDefinitionIsAlreadyCheck4020487592982401140#()V" />
@@ -1338,7 +1338,7 @@
       <scope id="8457729117602978085" at="82,90,83,81" />
       <scope id="8457729117602976503" at="86,73,87,64" />
       <scope id="7151854550137073291" at="90,73,91,64" />
-      <scope id="1034638375398704010" at="94,80,95,71" />
+      <scope id="1034638375398704010" at="94,96,95,87" />
       <scope id="3315773615451966892" at="98,77,99,68" />
       <scope id="1034638375398714804" at="102,88,103,79" />
       <scope id="4020487592982401140" at="106,94,107,85" />
@@ -1445,7 +1445,7 @@
       <scope id="8457729117602978085" at="212,92,217,9" />
       <scope id="8457729117602976503" at="219,75,224,9" />
       <scope id="7151854550137073291" at="226,75,231,9" />
-      <scope id="1034638375398704010" at="233,82,238,9" />
+      <scope id="1034638375398704010" at="233,98,238,9" />
       <scope id="3315773615451966892" at="240,79,245,9" />
       <scope id="1034638375398714804" at="247,90,252,9" />
       <scope id="4020487592982401140" at="254,96,259,9" />
