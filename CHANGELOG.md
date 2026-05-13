@@ -10,6 +10,7 @@ The project does _not_ follow Semantic Versioning and the changes are documented
 ### Fixed
 
 - Variability: Fix workaround for using for-all-variants checking rules outside the IDE (e.g., on a build server). Due to MPS-34340, the for-all-variants checking cannot be done outside the IDE if the model under check has more than one root nodes. This bugfix includes roots of LogicalChildren in the list of used root nodes.
+- Physical units (language `org.iets3.core.expr.typetags.physunits`): Update unit in typesystem after prefix has been removed (e.g., from "cm" to "m").
 
 
 ## April 2026
@@ -21,6 +22,7 @@ The project does _not_ follow Semantic Versioning and the changes are documented
   - presence condition in artifact
   - left-hand-side condition in an ITabularVarPoint
 - Allow to set `reportsFilenamePrefix` for the `ICustomRunnerConfig` interface
+- Physical units (language `org.iets3.core.expr.typetags.physunits`): Implicit conversion rules are now supported in typesystem and interpreter. E.g., with the implicit conversion rules defined in `SIDerivedUnits` an expression like `(7 min + 1234 sec) < 0.5 h` is perfectly valid and can be evaluated by the interpreter.
 
 ### Changed
 
