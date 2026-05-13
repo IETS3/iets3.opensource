@@ -295,6 +295,7 @@
       <concept id="1220357310820" name="jetbrains.mps.lang.typesystem.structure.AddDependencyStatement" flags="nn" index="yXGxS">
         <child id="1220357350423" name="dependency" index="yXQkb" />
       </concept>
+      <concept id="7992060018732187438" name="jetbrains.mps.lang.typesystem.structure.ReportErrorStatementAnnotation" flags="ng" index="AMVWg" />
       <concept id="1175517400280" name="jetbrains.mps.lang.typesystem.structure.AssertStatement" flags="nn" index="2Mj0R9">
         <child id="1175517761460" name="condition" index="2MkoU_" />
       </concept>
@@ -759,9 +760,7 @@
                     <node concept="3cpWs8" id="3eH6BL3YdV4" role="3cqZAp">
                       <node concept="3cpWsn" id="3eH6BL3YdV5" role="3cpWs9">
                         <property role="TrG5h" value="errorMessage" />
-                        <node concept="3uibUv" id="3eH6BL3YaIw" role="1tU5fm">
-                          <ref role="3uigEE" to="wyt6:~String" resolve="String" />
-                        </node>
+                        <node concept="17QB3L" id="5b_AnPYaFes" role="1tU5fm" />
                         <node concept="2YIFZM" id="3eH6BL4dXbX" role="33vP2m">
                           <ref role="37wK5l" to="gdgh:3eH6BL4dyR5" resolve="cannotBeAppliedToTypesMessage" />
                           <ref role="1Pybhc" to="gdgh:3eH6BL4bSKS" resolve="ErrorCheckingUtil" />
@@ -885,6 +884,9 @@
                                     </node>
                                     <node concept="1YBJjd" id="TrLxV$GLGl" role="1urrMF">
                                       <ref role="1YBMHb" node="4rZeNQ6PB0M" resolve="be" />
+                                    </node>
+                                    <node concept="AMVWg" id="6Topth$0i7G" role="lGtFl">
+                                      <property role="TrG5h" value="BinaryExpressionRuntimeError" />
                                     </node>
                                   </node>
                                 </node>
