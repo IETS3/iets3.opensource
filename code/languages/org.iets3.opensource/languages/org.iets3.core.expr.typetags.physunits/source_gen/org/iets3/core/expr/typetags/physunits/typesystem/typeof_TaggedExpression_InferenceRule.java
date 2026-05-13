@@ -15,6 +15,7 @@ import jetbrains.mps.internal.collections.runtime.ListSequence;
 import org.iets3.core.expr.typetags.physunits.plugin.IUnitLangConfig;
 import org.iets3.core.expr.typetags.physunits.plugin.PhysUnitLangConfigHelper;
 import jetbrains.mps.typesystem.inference.EquationInfo;
+import org.iets3.core.expr.typetags.physunits.behavior.TaggedExprExt;
 import org.iets3.core.expr.typetags.physunits.behavior.UnitConversionUtil;
 import org.iets3.core.expr.typetags.physunits.behavior.IUnitSpecification__BehaviorDescriptor;
 import org.iets3.core.expr.typetags.physunits.behavior.AbstractUnitPrefixManager;
@@ -29,7 +30,6 @@ import org.jetbrains.mps.openapi.language.SAbstractConcept;
 import org.jetbrains.mps.openapi.language.SContainmentLink;
 import org.jetbrains.mps.openapi.language.SReferenceLink;
 import org.jetbrains.mps.openapi.language.SConcept;
-import org.jetbrains.mps.openapi.language.SInterfaceConcept;
 import org.jetbrains.mps.openapi.language.SProperty;
 
 public class typeof_TaggedExpression_InferenceRule extends AbstractInferenceRule_Runtime implements InferenceRule_Runtime {
@@ -42,6 +42,7 @@ public class typeof_TaggedExpression_InferenceRule extends AbstractInferenceRule
     {
       final SNode baseType = typeCheckingContext.typeOf(SLinkOperations.getTarget(expr, LINKS.expr$CW3E), "r:d4f1532d-fc5c-419f-84ee-daef42867c8e(org.iets3.core.expr.typetags.physunits.typesystem)", "8196347919645402170", true);
       typeCheckingContext.whenConcrete(baseType, () -> {
+
         SNode type = SConceptOperations.createNewNode(MetaAdapterFactory.getConcept(0x5186c6ce428c4f09L, 0xa9df73d9e86c27d3L, 0x186a8ed9947750b6L, "org.iets3.core.expr.typetags.structure.TaggedType"));
         SLinkOperations.setTarget(type, LINKS.baseType$z6Mz, SNodeOperations.as(typeCheckingContext.getExpandedNode(baseType), CONCEPTS.Type$WK));
         for (SNode tag : ListSequence.fromList(SLinkOperations.getChildren(expr, LINKS.tags$Lx_i))) {
@@ -57,16 +58,17 @@ public class typeof_TaggedExpression_InferenceRule extends AbstractInferenceRule
           }
           return;
         }
+
+        TaggedExprExt.storePrefix(expr, null);
+
         SNode specification = UnitConversionUtil.getSpecification(type);
         {
           final SNode unitReference = IUnitSpecification__BehaviorDescriptor.getExpression_id6q45UTytEvW.invoke(specification);
           if (SNodeOperations.isInstanceOf(unitReference, CONCEPTS.UnitReference$Zo)) {
             AbstractUnitPrefixManager manager = GlobalUnitPrefixManager.getManager(SLinkOperations.getTarget(unitReference, LINKS.unit$nTeG));
-            AbstractUnitPrefix prefix = manager.findPrefix(SPropertyOperations.getString(unitReference, PROPS.prefix$AtV));
-            boolean isInsideConvert = (SNodeOperations.getNodeAncestor(expr, CONCEPTS.IConvertUnit$8k, false, false) != null) || SNodeOperations.isInstanceOf(SLinkOperations.getTarget(SNodeOperations.getNodeAncestor(expr, CONCEPTS.DotExpression$jp, false, false), LINKS.target$u23F), CONCEPTS.IConvertUnit$8k);
-            boolean isInsideRule = (SNodeOperations.getNodeAncestor(expr, CONCEPTS.ConversionRule$iv, false, false) != null);
-            if (!(isInsideConvert) && !(isInsideRule) && (SNodeOperations.getNodeAncestor(expr, CONCEPTS.NoConvertExpression$B$, false, false) == null) && prefix != null) {
-              expr.putUserObject("interpreter_original_unit_prefix", SPropertyOperations.getString(unitReference, PROPS.prefix$AtV));
+            AbstractUnitPrefix prefix = UnitConversionUtil.getPrefixForConversion(expr, manager, SPropertyOperations.getString(unitReference, PROPS.prefix$AtV));
+            if (prefix != null) {
+              TaggedExprExt.storePrefix(expr, SPropertyOperations.getString(unitReference, PROPS.prefix$AtV));
               SPropertyOperations.assign(unitReference, PROPS.prefix$AtV, null);
               {
                 final SNode numberType = SLinkOperations.getTarget(type, LINKS.baseType$z6Mz);
@@ -115,18 +117,13 @@ public class typeof_TaggedExpression_InferenceRule extends AbstractInferenceRule
     /*package*/ static final SContainmentLink baseType$z6Mz = MetaAdapterFactory.getContainmentLink(0x5186c6ce428c4f09L, 0xa9df73d9e86c27d3L, 0x186a8ed9947750b6L, 0x186a8ed9947750b9L, "baseType");
     /*package*/ static final SContainmentLink tags$Lx_i = MetaAdapterFactory.getContainmentLink(0x5186c6ce428c4f09L, 0xa9df73d9e86c27d3L, 0x71bf4701bdf46b3eL, 0x186a8ed9947750b7L, "tags");
     /*package*/ static final SReferenceLink unit$nTeG = MetaAdapterFactory.getReferenceLink(0x7ee265bd59864709L, 0x86ed2c6daa33cd8cL, 0x73b48a125b0d4dc5L, 0x73b48a125b0daafcL, "unit");
-    /*package*/ static final SContainmentLink target$u23F = MetaAdapterFactory.getContainmentLink(0xcfaa4966b7d54b69L, 0xb66a309a6e1a7290L, 0x7cef88020a0f4249L, 0x7cef88020a0f424bL, "target");
     /*package*/ static final SContainmentLink range$RnOa = MetaAdapterFactory.getContainmentLink(0x6b277d9ad52d416fL, 0xa2091919bd737f50L, 0x7211e50064d40ea8L, 0x127541598201af78L, "range");
   }
 
   private static final class CONCEPTS {
     /*package*/ static final SConcept Type$WK = MetaAdapterFactory.getConcept(0xcfaa4966b7d54b69L, 0xb66a309a6e1a7290L, 0x670d5e92f854a614L, "org.iets3.core.expr.base.structure.Type");
     /*package*/ static final SConcept UnitReference$Zo = MetaAdapterFactory.getConcept(0x7ee265bd59864709L, 0x86ed2c6daa33cd8cL, 0x73b48a125b0d4dc5L, "org.iets3.core.expr.typetags.physunits.structure.UnitReference");
-    /*package*/ static final SConcept DotExpression$jp = MetaAdapterFactory.getConcept(0xcfaa4966b7d54b69L, 0xb66a309a6e1a7290L, 0x7cef88020a0f4249L, "org.iets3.core.expr.base.structure.DotExpression");
-    /*package*/ static final SInterfaceConcept IConvertUnit$8k = MetaAdapterFactory.getInterfaceConcept(0x7ee265bd59864709L, 0x86ed2c6daa33cd8cL, 0x7e22431b94d76bbaL, "org.iets3.core.expr.typetags.physunits.structure.IConvertUnit");
-    /*package*/ static final SConcept ConversionRule$iv = MetaAdapterFactory.getConcept(0x7ee265bd59864709L, 0x86ed2c6daa33cd8cL, 0xed6abcb370b28cbL, "org.iets3.core.expr.typetags.physunits.structure.ConversionRule");
     /*package*/ static final SConcept NumberType$n = MetaAdapterFactory.getConcept(0x6b277d9ad52d416fL, 0xa2091919bd737f50L, 0x7211e50064d40ea8L, "org.iets3.core.expr.simpleTypes.structure.NumberType");
-    /*package*/ static final SConcept NoConvertExpression$B$ = MetaAdapterFactory.getConcept(0x7ee265bd59864709L, 0x86ed2c6daa33cd8cL, 0x110a9fb2f2d15aadL, "org.iets3.core.expr.typetags.physunits.structure.NoConvertExpression");
     /*package*/ static final SConcept TaggedExpression$jU = MetaAdapterFactory.getConcept(0x5186c6ce428c4f09L, 0xa9df73d9e86c27d3L, 0x2ea11acb50fe9dabL, "org.iets3.core.expr.typetags.structure.TaggedExpression");
   }
 
