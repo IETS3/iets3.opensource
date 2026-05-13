@@ -22,10 +22,6 @@ import jetbrains.mps.lang.smodel.generator.smodelAdapter.SConceptOperations;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import java.util.ArrayList;
 import jetbrains.mps.internal.collections.runtime.Sequence;
-import jetbrains.mps.classloading.ClassLoaderManager;
-import jetbrains.mps.typesystem.inference.TypeCheckingContext;
-import jetbrains.mps.newTypesystem.context.IncrementalTypecheckingContext;
-import jetbrains.mps.typesystem.inference.TypeChecker;
 import java.util.Objects;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations;
 import org.jetbrains.mps.openapi.module.SRepository;
@@ -320,13 +316,8 @@ public class UnitConversionUtil {
   }
 
   public static SNode createConversionSpecifierForPrefixedUnitReferences(SNode convertUnit, UnitMap sourceUnitMap, UnitMap targetUnitMap) {
-    SNode expression = IConvertUnit__BehaviorDescriptor.getExpression_id7SygLIkQnGn.invoke(convertUnit);
-    // deprecated getInstance is necessary to ensure compatibility with the command-line generator execution (MpsEnvironment)
-    ClassLoaderManager classLoaderManager = ClassLoaderManager.getInstance();
-    TypeCheckingContext typeChecking = new IncrementalTypecheckingContext(expression, TypeChecker.getInstance().getTypeCheckerHelper(), classLoaderManager);
-    typeChecking.checkIfNotChecked(expression, false);
-    SNode sourceType = typeChecking.typeOf(expression);
-    typeChecking.dispose();
+    SNode expr = IConvertUnit__BehaviorDescriptor.getExpression_id7SygLIkQnGn.invoke(convertUnit);
+    SNode sourceType = TypeHelper.computeType(expr);
     SNode sourceSpecification = UnitConversionUtil.getSpecification(sourceType);
     {
       final SNode sourceExpression = IUnitSpecification__BehaviorDescriptor.getExpression_id6q45UTytEvW.invoke(sourceSpecification);
@@ -346,12 +337,17 @@ public class UnitConversionUtil {
           int targetFactor = (targetPrefix != null ? (int) targetPrefix.factor() : 0);
 
           int base = GlobalUnitPrefixManager.getManager(SLinkOperations.getTarget(sourceExpression, LINKS.unit$nTeG), SLinkOperations.getTarget(targetUnitReference, LINKS.unit$nTeG)).getBase();
-          SNode powerExpr = createPowerExpression_5ohk72_a0k0c0i0sb(String.valueOf(base), String.valueOf(sourceFactor) + ".0", String.valueOf(targetFactor) + ".0");
-          return createConversionSpecifier_5ohk72_a11a2a8a44(powerExpr);
+          int exp = sourceFactor - targetFactor;
+          return createConversionSpecifierForScaling(base, exp);
         }
       }
     }
     return null;
+  }
+
+  private static SNode createConversionSpecifierForScaling(int base, int exp) {
+    SNode powerExpr = createPowerExpression_5ohk72_a0a0ub(String.valueOf(base), String.valueOf(exp) + ".0");
+    return createConversionSpecifier_5ohk72_a1a64(powerExpr);
   }
 
   public static SNode replaceUnitsWithSIBaseEquivalents(SNode unitExpr, SRepository repository) {
@@ -373,6 +369,25 @@ public class UnitConversionUtil {
     } else {
       return SPropertyOperations.getEnum(unit, PROPS.scaling$a4tq);
     }
+  }
+
+  /**
+   * In typesystem and interpreter, implicit prefix conversions might be applied.
+   * This depends on the context of the expression with the prefixed unit.
+   */
+  public static AbstractUnitPrefix getPrefixForConversion(SNode expr, AbstractUnitPrefixManager manager, String prefixStr) {
+    // depending on AST location, a prefix conversion might not be allowed
+    if ((SNodeOperations.getNodeAncestor(expr, CONCEPTS.IConvertUnit$8k, false, false) != null) || SNodeOperations.isInstanceOf(SLinkOperations.getTarget(SNodeOperations.getNodeAncestor(expr, CONCEPTS.DotExpression$jp, false, false), LINKS.target$u23F), CONCEPTS.IConvertUnit$8k)) {
+      return null;
+    }
+    if ((SNodeOperations.getNodeAncestor(expr, CONCEPTS.ConversionRule$iv, false, false) != null)) {
+      return null;
+    }
+    if ((SNodeOperations.getNodeAncestor(expr, CONCEPTS.NoConvertExpression$B$, false, false) != null)) {
+      return null;
+    }
+
+    return manager.findPrefix(prefixStr);
   }
   private static SNode createUnitReference_5ohk72_a0a0a0a0a3a32(SNode p0) {
     SNodeBuilder n0 = new SNodeBuilder().init(CONCEPTS.UnitReference$Zo);
@@ -407,26 +422,19 @@ public class UnitConversionUtil {
     n0.forChild(LINKS.exponent$xhDu).initNode(p1, CONCEPTS.Exponent$bg, true);
     return n0.getResult();
   }
-  private static SNode createPowerExpression_5ohk72_a0k0c0i0sb(String p0, String p1, String p2) {
+  private static SNode createPowerExpression_5ohk72_a0a0ub(String p0, String p1) {
     SNodeBuilder n0 = new SNodeBuilder().init(CONCEPTS.PowerExpression$l7);
     {
       SNodeBuilder n1 = n0.forChild(LINKS.expr$CW3E).init(CONCEPTS.NumberLiteral$wE);
       n1.setProperty(PROPS.value$iWTK, p0);
     }
     {
-      SNodeBuilder n2 = n0.forChild(LINKS.exponent$uVP8).init(CONCEPTS.MinusExpression$6z);
-      {
-        SNodeBuilder n3 = n2.forChild(LINKS.left$zxUa).init(CONCEPTS.NumberLiteral$wE);
-        n3.setProperty(PROPS.value$iWTK, p1);
-      }
-      {
-        SNodeBuilder n4 = n2.forChild(LINKS.right$zBjx).init(CONCEPTS.NumberLiteral$wE);
-        n4.setProperty(PROPS.value$iWTK, p2);
-      }
+      SNodeBuilder n2 = n0.forChild(LINKS.exponent$uVP8).init(CONCEPTS.NumberLiteral$wE);
+      n2.setProperty(PROPS.value$iWTK, p1);
     }
     return n0.getResult();
   }
-  private static SNode createConversionSpecifier_5ohk72_a11a2a8a44(SNode p0) {
+  private static SNode createConversionSpecifier_5ohk72_a1a64(SNode p0) {
     SNodeBuilder n0 = new SNodeBuilder().init(CONCEPTS.ConversionSpecifier$X$);
     n0.forChild(LINKS.type$poAd).init(CONCEPTS.IntegerType$m0);
     {
@@ -458,6 +466,10 @@ public class UnitConversionUtil {
     /*package*/ static final SConcept UnitReference$Zo = MetaAdapterFactory.getConcept(0x7ee265bd59864709L, 0x86ed2c6daa33cd8cL, 0x73b48a125b0d4dc5L, "org.iets3.core.expr.typetags.physunits.structure.UnitReference");
     /*package*/ static final SConcept UnitDivision$$9 = MetaAdapterFactory.getConcept(0x7ee265bd59864709L, 0x86ed2c6daa33cd8cL, 0x729d46b7ceac12f5L, "org.iets3.core.expr.typetags.physunits.structure.UnitDivision");
     /*package*/ static final SConcept UnitExponent$BW = MetaAdapterFactory.getConcept(0x7ee265bd59864709L, 0x86ed2c6daa33cd8cL, 0x74818abc54714f3eL, "org.iets3.core.expr.typetags.physunits.structure.UnitExponent");
+    /*package*/ static final SConcept DotExpression$jp = MetaAdapterFactory.getConcept(0xcfaa4966b7d54b69L, 0xb66a309a6e1a7290L, 0x7cef88020a0f4249L, "org.iets3.core.expr.base.structure.DotExpression");
+    /*package*/ static final SInterfaceConcept IConvertUnit$8k = MetaAdapterFactory.getInterfaceConcept(0x7ee265bd59864709L, 0x86ed2c6daa33cd8cL, 0x7e22431b94d76bbaL, "org.iets3.core.expr.typetags.physunits.structure.IConvertUnit");
+    /*package*/ static final SConcept ConversionRule$iv = MetaAdapterFactory.getConcept(0x7ee265bd59864709L, 0x86ed2c6daa33cd8cL, 0xed6abcb370b28cbL, "org.iets3.core.expr.typetags.physunits.structure.ConversionRule");
+    /*package*/ static final SConcept NoConvertExpression$B$ = MetaAdapterFactory.getConcept(0x7ee265bd59864709L, 0x86ed2c6daa33cd8cL, 0x110a9fb2f2d15aadL, "org.iets3.core.expr.typetags.physunits.structure.NoConvertExpression");
     /*package*/ static final SConcept QuantityExpression$D7 = MetaAdapterFactory.getConcept(0x7ee265bd59864709L, 0x86ed2c6daa33cd8cL, 0x729d46b7ce978ef0L, "org.iets3.core.expr.typetags.physunits.structure.QuantityExpression");
     /*package*/ static final SConcept QuantityReference$ba = MetaAdapterFactory.getConcept(0x7ee265bd59864709L, 0x86ed2c6daa33cd8cL, 0x729d46b7ce8b6fa3L, "org.iets3.core.expr.typetags.physunits.structure.QuantityReference");
     /*package*/ static final SConcept QuantityDivision$7h = MetaAdapterFactory.getConcept(0x7ee265bd59864709L, 0x86ed2c6daa33cd8cL, 0x729d46b7ce97ab00L, "org.iets3.core.expr.typetags.physunits.structure.QuantityDivision");
@@ -466,7 +478,6 @@ public class UnitConversionUtil {
     /*package*/ static final SConcept Exponent$bg = MetaAdapterFactory.getConcept(0x7ee265bd59864709L, 0x86ed2c6daa33cd8cL, 0x34c38940d07a6995L, "org.iets3.core.expr.typetags.physunits.structure.Exponent");
     /*package*/ static final SConcept PowerExpression$l7 = MetaAdapterFactory.getConcept(0x6fadc44e69c24a4aL, 0x9d167ebf5f8d3ba0L, 0x449e19d04e9c6144L, "org.iets3.core.expr.math.structure.PowerExpression");
     /*package*/ static final SConcept NumberLiteral$wE = MetaAdapterFactory.getConcept(0x6b277d9ad52d416fL, 0xa2091919bd737f50L, 0x46ff3b3d86d0e6daL, "org.iets3.core.expr.simpleTypes.structure.NumberLiteral");
-    /*package*/ static final SConcept MinusExpression$6z = MetaAdapterFactory.getConcept(0xcfaa4966b7d54b69L, 0xb66a309a6e1a7290L, 0x46ff3b3d86cac5a5L, "org.iets3.core.expr.base.structure.MinusExpression");
     /*package*/ static final SConcept ConversionSpecifier$X$ = MetaAdapterFactory.getConcept(0x7ee265bd59864709L, 0x86ed2c6daa33cd8cL, 0x182c7aae9fea4574L, "org.iets3.core.expr.typetags.physunits.structure.ConversionSpecifier");
     /*package*/ static final SConcept IntegerType$m0 = MetaAdapterFactory.getConcept(0x6b277d9ad52d416fL, 0xa2091919bd737f50L, 0x46ff3b3d86d0e6d9L, "org.iets3.core.expr.simpleTypes.structure.IntegerType");
     /*package*/ static final SConcept CastExpression$Df = MetaAdapterFactory.getConcept(0xcfaa4966b7d54b69L, 0xb66a309a6e1a7290L, 0x2d8b76405dcec884L, "org.iets3.core.expr.base.structure.CastExpression");
@@ -489,6 +500,7 @@ public class UnitConversionUtil {
     /*package*/ static final SContainmentLink denominator$4xz7 = MetaAdapterFactory.getContainmentLink(0x7ee265bd59864709L, 0x86ed2c6daa33cd8cL, 0x729d46b7ceac12f5L, 0x729d46b7ceac19c9L, "denominator");
     /*package*/ static final SContainmentLink base$z8ie = MetaAdapterFactory.getContainmentLink(0x7ee265bd59864709L, 0x86ed2c6daa33cd8cL, 0x74818abc54714f3eL, 0x74818abc54715a86L, "base");
     /*package*/ static final SContainmentLink exponent$z83d = MetaAdapterFactory.getContainmentLink(0x7ee265bd59864709L, 0x86ed2c6daa33cd8cL, 0x74818abc54714f3eL, 0x74818abc54715a85L, "exponent");
+    /*package*/ static final SContainmentLink target$u23F = MetaAdapterFactory.getContainmentLink(0xcfaa4966b7d54b69L, 0xb66a309a6e1a7290L, 0x7cef88020a0f4249L, 0x7cef88020a0f424bL, "target");
     /*package*/ static final SContainmentLink specification$WwUP = MetaAdapterFactory.getContainmentLink(0x7ee265bd59864709L, 0x86ed2c6daa33cd8cL, 0x729d46b7ce8b64dcL, 0x729d46b7ce8b6885L, "specification");
     /*package*/ static final SReferenceLink quantity$A_Kl = MetaAdapterFactory.getReferenceLink(0x7ee265bd59864709L, 0x86ed2c6daa33cd8cL, 0x729d46b7ce8b6fa3L, 0x729d46b7ce8b760cL, "quantity");
     /*package*/ static final SContainmentLink numerator$clxk = MetaAdapterFactory.getContainmentLink(0x7ee265bd59864709L, 0x86ed2c6daa33cd8cL, 0x729d46b7ce97ab00L, 0x1be25d17bc5c9220L, "numerator");
@@ -499,11 +511,11 @@ public class UnitConversionUtil {
     /*package*/ static final SContainmentLink exponent$xhDu = MetaAdapterFactory.getContainmentLink(0x7ee265bd59864709L, 0x86ed2c6daa33cd8cL, 0x729d46b7ce979cf7L, 0x70ccd48a59f31f35L, "exponent");
     /*package*/ static final SContainmentLink expr$CW3E = MetaAdapterFactory.getContainmentLink(0xcfaa4966b7d54b69L, 0xb66a309a6e1a7290L, 0x3b256bb6ae8048d8L, 0x3b256bb6ae8048d9L, "expr");
     /*package*/ static final SContainmentLink exponent$uVP8 = MetaAdapterFactory.getContainmentLink(0x6fadc44e69c24a4aL, 0x9d167ebf5f8d3ba0L, 0x449e19d04e9c6144L, 0x46c15b39e5605f2fL, "exponent");
-    /*package*/ static final SContainmentLink left$zxUa = MetaAdapterFactory.getContainmentLink(0xcfaa4966b7d54b69L, 0xb66a309a6e1a7290L, 0x46ff3b3d86c99c15L, 0x46ff3b3d86c99c16L, "left");
-    /*package*/ static final SContainmentLink right$zBjx = MetaAdapterFactory.getContainmentLink(0xcfaa4966b7d54b69L, 0xb66a309a6e1a7290L, 0x46ff3b3d86c99c15L, 0x46ff3b3d86c99c18L, "right");
     /*package*/ static final SContainmentLink type$poAd = MetaAdapterFactory.getContainmentLink(0x7ee265bd59864709L, 0x86ed2c6daa33cd8cL, 0x182c7aae9fea4574L, 0x182c7aaea0320b8dL, "type");
     /*package*/ static final SContainmentLink expression$BZ0p = MetaAdapterFactory.getContainmentLink(0x7ee265bd59864709L, 0x86ed2c6daa33cd8cL, 0x182c7aae9fea4574L, 0x182c7aae9fee3f05L, "expression");
     /*package*/ static final SContainmentLink expectedType$SdFI = MetaAdapterFactory.getContainmentLink(0xcfaa4966b7d54b69L, 0xb66a309a6e1a7290L, 0x2d8b76405dcec884L, 0x2d8b76405dcec889L, "expectedType");
+    /*package*/ static final SContainmentLink left$zxUa = MetaAdapterFactory.getContainmentLink(0xcfaa4966b7d54b69L, 0xb66a309a6e1a7290L, 0x46ff3b3d86c99c15L, 0x46ff3b3d86c99c16L, "left");
+    /*package*/ static final SContainmentLink right$zBjx = MetaAdapterFactory.getContainmentLink(0xcfaa4966b7d54b69L, 0xb66a309a6e1a7290L, 0x46ff3b3d86c99c15L, 0x46ff3b3d86c99c18L, "right");
   }
 
   private static final class PROPS {

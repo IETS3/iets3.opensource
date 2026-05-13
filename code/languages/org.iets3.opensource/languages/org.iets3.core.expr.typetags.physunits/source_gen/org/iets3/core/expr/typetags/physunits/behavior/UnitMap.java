@@ -13,10 +13,8 @@ import jetbrains.mps.baseLanguage.tuples.runtime.MultiTuple;
 import org.jetbrains.mps.openapi.model.SNode;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
-import java.util.List;
-import java.util.ArrayList;
 import jetbrains.mps.internal.collections.runtime.ListSequence;
-import jetbrains.mps.internal.collections.runtime.SetSequence;
+import java.util.List;
 import jetbrains.mps.internal.collections.runtime.IMapping;
 import jetbrains.mps.internal.collections.runtime.NotNullWhereFilter;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SConceptOperations;
@@ -120,9 +118,9 @@ public class UnitMap {
    * Checks whether two mappings can be possibly matched / exactly matched. 
    * In case of exact match check the unit mappings must be entirely the same.
    */
-  public static Tuples._3<Boolean, List<SNode>, List<SNode>> computeMatch(UnitMap left, UnitMap right) {
+  public static Tuples._3<Boolean, UnitMap, UnitMap> computeMatch(UnitMap left, UnitMap right) {
     if (left == null && right == null) {
-      return MultiTuple.<Boolean,List<SNode>,List<SNode>>from(true, new ArrayList<SNode>(), new ArrayList<SNode>());
+      return MultiTuple.<Boolean,UnitMap,UnitMap>from(true, EMPTY, EMPTY);
     }
 
     // remove units with zero exponents
@@ -130,7 +128,7 @@ public class UnitMap {
     UnitMap rightNonMatched = ((right == null) ? EMPTY : right.nonZero());
 
     for (UnitKey key : ListSequence.fromList(Sequence.fromIterable(leftNonMatched.keys()).toList())) {
-      if (MapSequence.fromMap(leftNonMatched.entries).containsKey(key) && MapSequence.fromMap(rightNonMatched.entries).containsKey(key)) {
+      if (MapSequence.fromMap(rightNonMatched.entries).containsKey(key)) {
         Fraction le = MapSequence.fromMap(leftNonMatched.entries).get(key);
         Fraction re = MapSequence.fromMap(rightNonMatched.entries).get(key);
         int c = le.compareTo(re);
@@ -147,15 +145,11 @@ public class UnitMap {
         }
       }
     }
-    return MultiTuple.<Boolean,List<SNode>,List<SNode>>from(leftNonMatched.isEmpty() && rightNonMatched.isEmpty(), leftNonMatched.unitRepresenters(), rightNonMatched.unitRepresenters());
+    return MultiTuple.<Boolean,UnitMap,UnitMap>from(leftNonMatched.isEmpty() && rightNonMatched.isEmpty(), leftNonMatched, rightNonMatched);
   }
 
   public static boolean matching(UnitMap left, UnitMap right) {
     return (boolean) computeMatch(left, right)._0();
-  }
-
-  private List<SNode> unitRepresenters() {
-    return SetSequence.fromSet(MapSequence.fromMap(entries).keySet()).select((it) -> it.getKey()).toList();
   }
 
   /**
@@ -216,7 +210,6 @@ public class UnitMap {
     return result;
   }
 
-
   /**
    * It is expected that the passed map is already broken down to atomic units. 
    */
@@ -246,25 +239,32 @@ public class UnitMap {
     if (!(exp.equals(Fraction.ONE))) {
       SNode exponent;
       if (exp.denominator == 1) {
-        exponent = createIntegerExponent_be8uj0_a0a0b0e0xb(exp.numerator);
+        exponent = createIntegerExponent_be8uj0_a0a0b0e0ub(exp.numerator);
       } else {
-        exponent = createFractionalExponent_be8uj0_a0a0a1a4a94(NumberLiteral__BehaviorDescriptor.set_id2oUyrt$Tg3c.invoke(SConceptOperations.createNewNode(MetaAdapterFactory.getConcept(0x6b277d9ad52d416fL, 0xa2091919bd737f50L, 0x46ff3b3d86d0e6daL, "org.iets3.core.expr.simpleTypes.structure.NumberLiteral")), "" + exp.numerator), NumberLiteral__BehaviorDescriptor.set_id2oUyrt$Tg3c.invoke(SConceptOperations.createNewNode(MetaAdapterFactory.getConcept(0x6b277d9ad52d416fL, 0xa2091919bd737f50L, 0x46ff3b3d86d0e6daL, "org.iets3.core.expr.simpleTypes.structure.NumberLiteral")), "" + exp.denominator));
+        exponent = createFractionalExponent_be8uj0_a0a0a1a4a64(NumberLiteral__BehaviorDescriptor.set_id2oUyrt$Tg3c.invoke(SConceptOperations.createNewNode(MetaAdapterFactory.getConcept(0x6b277d9ad52d416fL, 0xa2091919bd737f50L, 0x46ff3b3d86d0e6daL, "org.iets3.core.expr.simpleTypes.structure.NumberLiteral")), "" + exp.numerator), NumberLiteral__BehaviorDescriptor.set_id2oUyrt$Tg3c.invoke(SConceptOperations.createNewNode(MetaAdapterFactory.getConcept(0x6b277d9ad52d416fL, 0xa2091919bd737f50L, 0x46ff3b3d86d0e6daL, "org.iets3.core.expr.simpleTypes.structure.NumberLiteral")), "" + exp.denominator));
       }
-      return createUnitExponent_be8uj0_a2a4a94(reference, exponent);
+      return createUnitExponent_be8uj0_a2a4a64(reference, exponent);
     }
     return reference;
+  }
+
+  public String asCompactString() {
+    return IterableUtils.join(MapSequence.fromMap(entries).select((it) -> {
+      String unit = it.key().asString();
+      return (it.value().equals(Fraction.ONE) ? unit : unit + it.value().toString());
+    }), "•");
   }
 
   @Override
   public String toString() {
     return "[" + IterableUtils.join(MapSequence.fromMap(entries).select((it) -> it.key() + "/" + it.value()), ",") + "]";
   }
-  private static SNode createIntegerExponent_be8uj0_a0a0b0e0xb(int p0) {
+  private static SNode createIntegerExponent_be8uj0_a0a0b0e0ub(int p0) {
     SNodeBuilder n0 = new SNodeBuilder().init(CONCEPTS.IntegerExponent$a2);
     n0.setProperty(PROPS.value$NUak, "" + (p0));
     return n0.getResult();
   }
-  private static SNode createFractionalExponent_be8uj0_a0a0a1a4a94(SNode p0, SNode p1) {
+  private static SNode createFractionalExponent_be8uj0_a0a0a1a4a64(SNode p0, SNode p1) {
     SNodeBuilder n0 = new SNodeBuilder().init(CONCEPTS.FractionalExponent$I4);
     {
       SNodeBuilder n1 = n0.forChild(LINKS.fraction$NfyQ).init(CONCEPTS.FractionExpression$NO);
@@ -273,7 +273,7 @@ public class UnitMap {
     }
     return n0.getResult();
   }
-  private static SNode createUnitExponent_be8uj0_a2a4a94(SNode p0, SNode p1) {
+  private static SNode createUnitExponent_be8uj0_a2a4a64(SNode p0, SNode p1) {
     SNodeBuilder n0 = new SNodeBuilder().init(CONCEPTS.UnitExponent$BW);
     n0.forChild(LINKS.base$z8ie).initNode(p0, CONCEPTS.UnitExpression$Xv, true);
     n0.forChild(LINKS.exponent$z83d).initNode(p1, CONCEPTS.Exponent$bg, true);

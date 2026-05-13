@@ -13249,6 +13249,8 @@
           <module ref="dbe08fb5-334d-4b64-86a0-622406fa0e87(org.iets3.core.expr.base.runtime)" kind="cl" />
           <module ref="00ca1323-762b-4f39-ab5a-6a6bd602dc4b(org.iets3.core.expr.base.shared.runtime)" kind="cl" />
           <module ref="6b277d9a-d52d-416f-a209-1919bd737f50(org.iets3.core.expr.simpleTypes)" kind="cl" />
+          <module ref="5186c6ce-428c-4f09-a9df-73d9e86c27d3(org.iets3.core.expr.typetags)" kind="cl" />
+          <module ref="7ee265bd-5986-4709-86ed-2c6daa33cd8c(org.iets3.core.expr.typetags.physunits)" kind="cl" />
           <module ref="165f1d05-2506-4544-895e-1424f54166ec(org.iets3.variability.featuremodel.base)" kind="cl" />
         </dependencies>
         <uses>
@@ -15017,7 +15019,7 @@
     </copy>
   </target>
   
-  <target name="java.compile.org.iets3.variability.configuration.base" depends="java.compile.org.iets3.analysis.base, java.compile.org.iets3.analysis.solversupport.util, java.compile.org.iets3.core.base, java.compile.org.iets3.core.expr.base, java.compile.org.iets3.core.expr.base.runtime, java.compile.org.iets3.core.expr.base.shared.runtime, java.compile.org.iets3.core.expr.collections, java.compile.org.iets3.core.expr.lambda, java.compile.org.iets3.core.expr.path, java.compile.org.iets3.core.expr.simpleTypes, java.compile.org.iets3.core.expr.toplevel, java.compile.org.iets3.variability.base, java.compile.org.iets3.variability.featuremodel.base, fetchDependencies">
+  <target name="java.compile.org.iets3.variability.configuration.base" depends="java.compile.org.iets3.analysis.base, java.compile.org.iets3.analysis.solversupport.util, java.compile.org.iets3.core.base, java.compile.org.iets3.core.expr.base, java.compile.org.iets3.core.expr.base.runtime, java.compile.org.iets3.core.expr.base.shared.runtime, java.compile.org.iets3.core.expr.collections, java.compile.org.iets3.core.expr.lambda, java.compile.org.iets3.core.expr.path, java.compile.org.iets3.core.expr.simpleTypes, java.compile.org.iets3.core.expr.toplevel, java.compile.org.iets3.core.expr.typetags, java.compile.org.iets3.core.expr.typetags.physunits, java.compile.org.iets3.variability.base, java.compile.org.iets3.variability.featuremodel.base, fetchDependencies">
     <mkdir dir="${iets3.lang.opensource}/languages/org.iets3.variability.configuration.base/source_gen" />
     <mkdir dir="${build.tmp}/java/out/org.iets3.variability.configuration.base" />
     <javac2 destdir="${build.tmp}/java/out/org.iets3.variability.configuration.base" fork="false" encoding="utf8" includeantruntime="false" debug="true" source="1.8" target="1.8">
@@ -15066,6 +15068,8 @@
         <pathelement path="${build.tmp}/java/out/org.iets3.core.expr.path" />
         <pathelement path="${build.tmp}/java/out/org.iets3.core.expr.simpleTypes" />
         <pathelement path="${build.tmp}/java/out/org.iets3.core.expr.toplevel" />
+        <pathelement path="${build.tmp}/java/out/org.iets3.core.expr.typetags" />
+        <pathelement path="${build.tmp}/java/out/org.iets3.core.expr.typetags.physunits" />
         <pathelement path="${build.tmp}/java/out/org.iets3.variability.base" />
         <fileset file="${artifacts.mps}/plugins/mps-vcs/lib/vcs-platform.jar" />
         <pathelement path="${build.tmp}/java/out/org.iets3.variability.featuremodel.base" />
