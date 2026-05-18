@@ -33,6 +33,9 @@
     <language id="13744753-c81f-424a-9c1b-cf8943bf4e86" name="jetbrains.mps.lang.sharedConcepts">
       <concept id="1161622665029" name="jetbrains.mps.lang.sharedConcepts.structure.ConceptFunctionParameter_model" flags="nn" index="1Q6Npb" />
     </language>
+    <language id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior">
+      <concept id="3235159848334022093" name="jetbrains.mps.lang.behavior.structure.Node_ConceptMethodCall" flags="nn" index="3zqWPK" />
+    </language>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
       <concept id="1080223426719" name="jetbrains.mps.baseLanguage.structure.OrExpression" flags="nn" index="22lmx$" />
       <concept id="1082485599095" name="jetbrains.mps.baseLanguage.structure.BlockStatement" flags="nn" index="9aQIb">
@@ -317,7 +320,6 @@
       <concept id="1177026924588" name="jetbrains.mps.lang.smodel.structure.RefConcept_Reference" flags="nn" index="chp4Y">
         <reference id="1177026940964" name="conceptDeclaration" index="cht4Q" />
       </concept>
-      <concept id="1179409122411" name="jetbrains.mps.lang.smodel.structure.Node_ConceptMethodCall" flags="nn" index="2qgKlT" />
       <concept id="7453996997717780434" name="jetbrains.mps.lang.smodel.structure.Node_GetSConceptOperation" flags="nn" index="2yIwOk" />
       <concept id="2396822768958367367" name="jetbrains.mps.lang.smodel.structure.AbstractTypeCastExpression" flags="nn" index="$5XWr">
         <child id="6733348108486823193" name="leftExpression" index="1m5AlR" />
@@ -484,7 +486,7 @@
                 <node concept="3clFbS" id="1Ds3skyyNTB" role="2VODD2">
                   <node concept="3clFbF" id="1Ds3skyzewU" role="3cqZAp">
                     <node concept="2OqwBi" id="1Ds3skyzeIX" role="3clFbG">
-                      <node concept="2qgKlT" id="1Ds3skyzfi6" role="2OqNvi">
+                      <node concept="3zqWPK" id="5DJjBfj0bEU" role="2OqNvi">
                         <ref role="37wK5l" to="tpe5:hGBohAB" resolve="getTestName" />
                       </node>
                       <node concept="30H73N" id="1Ds3skyzewT" role="2Oq$k0" />
@@ -737,7 +739,7 @@
           <node concept="3clFbF" id="hHq$I51" role="3cqZAp">
             <node concept="2OqwBi" id="7aUGNm8lno2" role="3clFbG">
               <node concept="30H73N" id="hHq$I52" role="2Oq$k0" />
-              <node concept="2qgKlT" id="6VjyfUYex3m" role="2OqNvi">
+              <node concept="3zqWPK" id="5DJjBfj0bEW" role="2OqNvi">
                 <ref role="37wK5l" to="xk6s:6VjyfUYe5Ll" resolve="getSimpleClassNameForGenerator" />
               </node>
             </node>
@@ -2120,7 +2122,7 @@
                             </node>
                             <node concept="30H73N" id="6IxV2nSe7UV" role="1m5AlR" />
                           </node>
-                          <node concept="2qgKlT" id="6IxV2nSe9CW" role="2OqNvi">
+                          <node concept="3zqWPK" id="5DJjBfj0bEY" role="2OqNvi">
                             <ref role="37wK5l" to="pbu6:4Y0vh0cfqjE" resolve="renderReadable" />
                           </node>
                         </node>
@@ -2353,7 +2355,7 @@
                         <property role="Xl_RC" value="classname" />
                       </node>
                       <node concept="2OqwBi" id="7EIB27g8OCE" role="37wK5m">
-                        <node concept="2qgKlT" id="2HxWS56X$VZ" role="2OqNvi">
+                        <node concept="3zqWPK" id="5DJjBfj0bF0" role="2OqNvi">
                           <ref role="37wK5l" to="xk6s:6VjyfUYe5Ll" resolve="getSimpleClassNameForGenerator" />
                         </node>
                         <node concept="1PxgMI" id="7EIB27g8NJn" role="2Oq$k0">
@@ -2434,7 +2436,7 @@
                         <property role="Xl_RC" value="classname" />
                       </node>
                       <node concept="2OqwBi" id="3$XzGmIzdvF" role="37wK5m">
-                        <node concept="2qgKlT" id="2HxWS56XAA8" role="2OqNvi">
+                        <node concept="3zqWPK" id="5DJjBfj0bF2" role="2OqNvi">
                           <ref role="37wK5l" to="xk6s:6VjyfUYe5Ll" resolve="getSimpleClassNameForGenerator" />
                         </node>
                         <node concept="1PxgMI" id="3$XzGmIzdvG" role="2Oq$k0">
