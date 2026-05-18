@@ -10,7 +10,7 @@
     <use id="fd392034-7849-419d-9071-12563d152375" name="jetbrains.mps.baseLanguage.closures" version="0" />
     <use id="982eb8df-2c96-4bd7-9963-11712ea622e5" name="jetbrains.mps.lang.resources" version="4" />
     <use id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core" version="2" />
-    <use id="a247e09e-2435-45ba-b8d2-07e93feba96a" name="jetbrains.mps.baseLanguage.tuples" version="0" />
+    <use id="a247e09e-2435-45ba-b8d2-07e93feba96a" name="jetbrains.mps.baseLanguage.tuples" version="1" />
     <use id="fbc14279-5e2a-4c87-a5d1-5f7061e6c456" name="jetbrains.mps.debugger.api.lang" version="1" />
     <use id="c7fb639f-be78-4307-89b0-b5959c3fa8c8" name="jetbrains.mps.lang.text" version="0" />
     <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="19" />
@@ -104,6 +104,9 @@
       <concept id="8974276187400029883" name="jetbrains.mps.lang.resources.structure.FileIcon" flags="ng" index="1QGGSu">
         <child id="6976585500156684809" name="iconExpression" index="3xaMm5" />
       </concept>
+    </language>
+    <language id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior">
+      <concept id="3235159848334022093" name="jetbrains.mps.lang.behavior.structure.Node_ConceptMethodCall" flags="nn" index="3zqWPK" />
     </language>
     <language id="ef7bf5ac-d06c-4342-b11d-e42104eb9343" name="jetbrains.mps.lang.plugin.standalone">
       <concept id="7520713872864775836" name="jetbrains.mps.lang.plugin.standalone.structure.StandalonePluginDescriptor" flags="ng" index="2DaZZR" />
@@ -570,7 +573,6 @@
       <concept id="1177026924588" name="jetbrains.mps.lang.smodel.structure.RefConcept_Reference" flags="nn" index="chp4Y">
         <reference id="1177026940964" name="conceptDeclaration" index="cht4Q" />
       </concept>
-      <concept id="1179409122411" name="jetbrains.mps.lang.smodel.structure.Node_ConceptMethodCall" flags="nn" index="2qgKlT" />
       <concept id="7453996997717780434" name="jetbrains.mps.lang.smodel.structure.Node_GetSConceptOperation" flags="nn" index="2yIwOk" />
       <concept id="2396822768958367367" name="jetbrains.mps.lang.smodel.structure.AbstractTypeCastExpression" flags="nn" index="$5XWr">
         <child id="6733348108486823193" name="leftExpression" index="1m5AlR" />
@@ -3386,7 +3388,7 @@
                     <node concept="37vLTw" id="3GM_nagT$yK" role="2Oq$k0">
                       <ref role="3cqZAo" node="5gyVhZ188am" resolve="testCase" />
                     </node>
-                    <node concept="2qgKlT" id="5gyVhZ188aj" role="2OqNvi">
+                    <node concept="3zqWPK" id="5DJjBfj0bUE" role="2OqNvi">
                       <ref role="37wK5l" to="tpe5:6I8tQNTvi0f" resolve="getUncommentedTestMethods" />
                     </node>
                   </node>
@@ -3411,7 +3413,7 @@
                     <node concept="37vLTw" id="1uEBw$5rppa" role="2Oq$k0">
                       <ref role="3cqZAo" node="5gyVhZ188am" resolve="testCase" />
                     </node>
-                    <node concept="2qgKlT" id="1uEBw$5rppb" role="2OqNvi">
+                    <node concept="3zqWPK" id="5DJjBfj0bUG" role="2OqNvi">
                       <ref role="37wK5l" to="tpe5:5_jSk8paieB" resolve="canRunInProcess" />
                     </node>
                   </node>
@@ -3575,7 +3577,7 @@
                           <node concept="30xZXu" id="2XSAFHY6UN2" role="2Oq$k0" />
                           <node concept="1uHKPH" id="2XSAFHY6UN3" role="2OqNvi" />
                         </node>
-                        <node concept="2qgKlT" id="2XSAFHY6UN4" role="2OqNvi">
+                        <node concept="3zqWPK" id="5DJjBfj0bUI" role="2OqNvi">
                           <ref role="37wK5l" to="tpe5:hGBohAB" resolve="getTestName" />
                         </node>
                       </node>
@@ -3628,7 +3630,7 @@
                     <node concept="37vLTw" id="2kwDHsImJ9C" role="2Oq$k0">
                       <ref role="3cqZAo" node="2kwDHsIl_Z8" resolve="testMethod" />
                     </node>
-                    <node concept="2qgKlT" id="2kwDHsImJ9D" role="2OqNvi">
+                    <node concept="3zqWPK" id="5DJjBfj0bUK" role="2OqNvi">
                       <ref role="37wK5l" to="tpe5:hGBgWVd" resolve="getTestCase" />
                     </node>
                   </node>
@@ -3659,7 +3661,7 @@
                       <node concept="37vLTw" id="2kwDHsImPKE" role="2Oq$k0">
                         <ref role="3cqZAo" node="2kwDHsImJ9A" resolve="testCase" />
                       </node>
-                      <node concept="2qgKlT" id="2kwDHsIl_Z6" role="2OqNvi">
+                      <node concept="3zqWPK" id="5DJjBfj0bUM" role="2OqNvi">
                         <ref role="37wK5l" to="tpe5:5_jSk8paieB" resolve="canRunInProcess" />
                       </node>
                     </node>
@@ -4654,7 +4656,7 @@
                     <node concept="37vLTw" id="1ZjgyFGCPqQ" role="2Oq$k0">
                       <ref role="3cqZAo" node="1ZjgyFGBkSe" resolve="item" />
                     </node>
-                    <node concept="2qgKlT" id="1ZjgyFGBkRp" role="2OqNvi">
+                    <node concept="3zqWPK" id="5DJjBfj0bUO" role="2OqNvi">
                       <ref role="37wK5l" to="xk6s:4KZjPKUdEYm" resolve="executeTest" />
                     </node>
                   </node>
