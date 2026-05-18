@@ -10,10 +10,10 @@ jbr = "17.0.11-b1207.30"
 
 [libraries]
 mps = { group = "com.jetbrains", name = "mps", version.ref = "mpsVersion" }
-remigrate = { group = "de.itemis.mps.build-backends", name = "remigrate", version = "1.0.1.171.f987265" }
+remigrate = { group = "de.itemis.mps.build-backends", name = "remigrate", version = "1.0.1.180.8e0fd7e" }
 mpsQaAllInOne = { group = "org.mpsqa", name = "all-in-one", version.ref = "mpsQaVersion" }
 mbeddrPlatform = { group = "com.mbeddr", name = "platform", version.ref = "mbeddrVersion" }
-antJunit = { group = "org.apache.ant", name = "ant-junit", version = "1.10.15" }
+antJunit = { group = "org.apache.ant", name = "ant-junit", version = "1.10.17" }
 
 # bundled dependencies
 pcollections = { group = "org.pcollections", name = "pcollections", version = "5.0.0" }
@@ -24,8 +24,8 @@ cpSuite = { group = "io.takari.junit", name = "takari-cpsuite", version = "1.2.7
 [bundles]
 
 [plugins]
-cyclonedxBom = { id = "org.cyclonedx.bom", version = "3.2.1" }
-downloadJbr = { id = "download-jbr", version = "1.29.3.+" }
-githubRelease = { id = "com.github.breadmoirai.github-release", version = "2.4.1" }
-mpsCommon = { id = "de.itemis.mps.gradle.common", version = "1.29.+" }
-mpsLauncher = { id = "de.itemis.mps.gradle.launcher", version = "2.5.2.+" }
+cyclonedxBom = { id = "org.cyclonedx.bom", version = "3.2.4" }
+downloadJbr = { id = "download-jbr", version = "1.30.1.+" }
+githubRelease = { id = "com.github.breadmoirai.github-release", version = "2.5.2" }
+mpsCommon = { id = "de.itemis.mps.gradle.common", version = "1.30.+" }
+mpsLauncher = { id = "de.itemis.mps.gradle.launcher", version = "2.8.1.+" }
