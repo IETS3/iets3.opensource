@@ -11419,8 +11419,8 @@
       <node id="8156363746489887724" at="43,46,44,97" concept="3" />
       <node id="8156363746503411979" at="44,97,45,47" concept="9" />
       <node id="8156363746490074763" at="46,90,47,121" concept="3" />
-      <node id="8156363746490085622" at="50,54,51,64" concept="9" />
-      <node id="8156363746490085622" at="51,64,52,26" concept="10" />
+      <node id="6516513445196643203" at="50,54,51,64" concept="9" />
+      <node id="6516513445196643203" at="51,64,52,26" concept="10" />
       <node id="8156363746486173155" at="56,0,57,0" concept="13" trace="NUM_ROWS$ohhn" />
       <node id="8156363746486173155" at="57,0,58,0" concept="13" trace="NUM_COLS$obaX" />
       <node id="8156363746486173155" at="61,0,62,0" concept="13" trace="Cell$3y" />
@@ -11428,15 +11428,15 @@
       <node id="8156363746489851942" at="28,0,32,0" concept="8" trace="getDescriptionText#()Ljava/lang/String;" />
       <node id="8156363746489851950" at="32,0,36,0" concept="8" trace="executeInCommand#()Z" />
       <node id="8156363746489851958" at="37,0,41,0" concept="8" trace="canExecute#(Ljetbrains/mps/openapi/editor/EditorContext;)Z" />
-      <node id="8156363746490085622" at="50,0,54,0" concept="14" trace="createCell_ns9opo_a0a0a2a21#()Lorg/jetbrains/mps/openapi/model/SNode;" />
+      <node id="6516513445196643203" at="50,0,54,0" concept="14" trace="createCell_ns9opo_a0a0a2a21#()Lorg/jetbrains/mps/openapi/model/SNode;" />
       <node id="8156363746489867563" at="22,0,27,0" concept="1" trace="SheetInsertRowAction#(Lorg/jetbrains/mps/openapi/model/SNode;IZ)V" />
       <node id="8156363746489851968" at="42,0,50,0" concept="8" trace="execute#(Ljetbrains/mps/openapi/editor/EditorContext;)V" />
       <scope id="8156363746489851946" at="29,38,30,28" />
       <scope id="8156363746489851954" at="33,37,34,16" />
       <scope id="8156363746489851964" at="38,52,39,16" />
       <scope id="8156363746490107889" at="46,90,47,121" />
-      <scope id="8156363746490085622" at="50,54,52,26">
-        <var name="n0" id="8156363746490085622" />
+      <scope id="6516513445196643203" at="50,54,52,26">
+        <var name="n0" id="6516513445196643203" />
       </scope>
       <scope id="8156363746489867566" at="22,74,25,25" />
       <scope id="8156363746490107887" at="45,47,48,5">
@@ -11447,7 +11447,7 @@
       <scope id="8156363746489851958" at="37,0,41,0">
         <var name="context" id="8156363746489851962" />
       </scope>
-      <scope id="8156363746490085622" at="50,0,54,0" />
+      <scope id="6516513445196643203" at="50,0,54,0" />
       <scope id="8156363746489867563" at="22,0,27,0">
         <var name="before" id="8156363746503400183" />
         <var name="rowIndex" id="8156363746489868793" />
