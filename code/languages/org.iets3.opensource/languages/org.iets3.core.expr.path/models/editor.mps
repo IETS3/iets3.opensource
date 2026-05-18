@@ -10,6 +10,9 @@
     <import index="1zby" ref="r:e876148b-672e-4264-9fee-d6d24a2d1223(org.iets3.core.expr.path.behavior)" implicit="true" />
   </imports>
   <registry>
+    <language id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior">
+      <concept id="3235159848334022093" name="jetbrains.mps.lang.behavior.structure.Node_ConceptMethodCall" flags="nn" index="3zqWPK" />
+    </language>
     <language id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor">
       <concept id="5991739802479784073" name="jetbrains.mps.lang.editor.structure.MenuTypeDefault" flags="ng" index="22hDWj" />
       <concept id="2000375450116423800" name="jetbrains.mps.lang.editor.structure.SubstituteMenu" flags="ng" index="22mcaB" />
@@ -66,9 +69,6 @@
         <reference id="1068499141037" name="baseMethodDeclaration" index="37wK5l" />
       </concept>
     </language>
-    <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
-      <concept id="1179409122411" name="jetbrains.mps.lang.smodel.structure.Node_ConceptMethodCall" flags="nn" index="2qgKlT" />
-    </language>
   </registry>
   <node concept="24kQdi" id="6LLGpXJ4YEc">
     <ref role="1XX52x" to="lmd:6LLGpXJ4YDJ" resolve="PathElement" />
@@ -82,7 +82,7 @@
                 <node concept="3clFbF" id="6LLGpXJ52xy" role="3cqZAp">
                   <node concept="2OqwBi" id="6LLGpXJ52$X" role="3clFbG">
                     <node concept="pncrf" id="6LLGpXJ52xx" role="2Oq$k0" />
-                    <node concept="2qgKlT" id="6LLGpXJ52GC" role="2OqNvi">
+                    <node concept="3zqWPK" id="5Sy$a0nHnCp" role="2OqNvi">
                       <ref role="37wK5l" to="1zby:6LLGpXJ4YES" resolve="getPathLabel" />
                     </node>
                   </node>
@@ -96,7 +96,7 @@
                 <node concept="3clFbF" id="2U5Q01UgBBs" role="3cqZAp">
                   <node concept="2OqwBi" id="2U5Q01UgBEO" role="3clFbG">
                     <node concept="pncrf" id="2U5Q01UgBBr" role="2Oq$k0" />
-                    <node concept="2qgKlT" id="2U5Q01UgBMY" role="2OqNvi">
+                    <node concept="3zqWPK" id="5Sy$a0nHnCr" role="2OqNvi">
                       <ref role="37wK5l" to="1zby:2U5Q01Ug$y6" resolve="getPathColor" />
                     </node>
                   </node>

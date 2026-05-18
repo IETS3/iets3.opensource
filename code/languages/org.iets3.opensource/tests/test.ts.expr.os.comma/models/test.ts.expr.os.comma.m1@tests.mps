@@ -44,6 +44,9 @@
       </concept>
       <concept id="1225978065297" name="jetbrains.mps.lang.test.structure.SimpleNodeTest" flags="ng" index="1LZb2c" />
     </language>
+    <language id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior">
+      <concept id="3235159848334022093" name="jetbrains.mps.lang.behavior.structure.Node_ConceptMethodCall" flags="nn" index="3zqWPK" />
+    </language>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
       <concept id="1197027756228" name="jetbrains.mps.baseLanguage.structure.DotExpression" flags="nn" index="2OqwBi">
         <child id="1197027771414" name="operand" index="2Oq$k0" />
@@ -143,7 +146,6 @@
       </concept>
     </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
-      <concept id="1179409122411" name="jetbrains.mps.lang.smodel.structure.Node_ConceptMethodCall" flags="nn" index="2qgKlT" />
       <concept id="1138056022639" name="jetbrains.mps.lang.smodel.structure.SPropertyAccess" flags="nn" index="3TrcHB">
         <reference id="1138056395725" name="property" index="3TsBF5" />
       </concept>
@@ -5768,12 +5770,12 @@
             <node concept="3xONca" id="5CKJX636EsC" role="2Oq$k0">
               <ref role="3xOPvv" node="5CKJX6372Ra" resolve="rangeX" />
             </node>
-            <node concept="2qgKlT" id="5CKJX636EPC" role="2OqNvi">
+            <node concept="3zqWPK" id="5Sy$a0nHnQO" role="2OqNvi">
               <ref role="37wK5l" to="b1h1:ijdpu3aPf0" resolve="times" />
-              <node concept="2YIFZM" id="5CKJX63745W" role="37wK5m">
+              <node concept="2YIFZM" id="5Sy$a0nHnQQ" role="37wK5m">
                 <ref role="37wK5l" to="xlxw:~BigDecimal.valueOf(long)" resolve="valueOf" />
                 <ref role="1Pybhc" to="xlxw:~BigDecimal" resolve="BigDecimal" />
-                <node concept="3cmrfG" id="5CKJX63746P" role="37wK5m">
+                <node concept="3cmrfG" id="5Sy$a0nHnQR" role="37wK5m">
                   <property role="3cmrfH" value="2" />
                 </node>
               </node>
@@ -5817,12 +5819,12 @@
             <node concept="3xONca" id="5CKJX6370s6" role="2Oq$k0">
               <ref role="3xOPvv" node="5CKJX6373$R" resolve="rangeY" />
             </node>
-            <node concept="2qgKlT" id="5CKJX6370s7" role="2OqNvi">
+            <node concept="3zqWPK" id="5Sy$a0nHnQS" role="2OqNvi">
               <ref role="37wK5l" to="b1h1:ijdpu3aPf0" resolve="times" />
-              <node concept="2YIFZM" id="5CKJX6375Ru" role="37wK5m">
+              <node concept="2YIFZM" id="5Sy$a0nHnQU" role="37wK5m">
                 <ref role="37wK5l" to="xlxw:~BigDecimal.valueOf(long)" resolve="valueOf" />
                 <ref role="1Pybhc" to="xlxw:~BigDecimal" resolve="BigDecimal" />
-                <node concept="3cmrfG" id="5CKJX6375Rv" role="37wK5m">
+                <node concept="3cmrfG" id="5Sy$a0nHnQV" role="37wK5m">
                   <property role="3cmrfH" value="2" />
                 </node>
               </node>

@@ -35,6 +35,7 @@
         <property id="1225194472832" name="isVirtual" index="13i0it" />
       </concept>
       <concept id="1225194691553" name="jetbrains.mps.lang.behavior.structure.ThisNodeExpression" flags="nn" index="13iPFW" />
+      <concept id="3235159848334022093" name="jetbrains.mps.lang.behavior.structure.Node_ConceptMethodCall" flags="nn" index="3zqWPK" />
     </language>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
       <concept id="1082485599095" name="jetbrains.mps.baseLanguage.structure.BlockStatement" flags="nn" index="9aQIb">
@@ -144,7 +145,6 @@
       </concept>
     </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
-      <concept id="1179409122411" name="jetbrains.mps.lang.smodel.structure.Node_ConceptMethodCall" flags="nn" index="2qgKlT" />
       <concept id="1143226024141" name="jetbrains.mps.lang.smodel.structure.SModelType" flags="in" index="H_c77" />
       <concept id="1143234257716" name="jetbrains.mps.lang.smodel.structure.Node_GetModelOperation" flags="nn" index="I4A8Y" />
       <concept id="1171999116870" name="jetbrains.mps.lang.smodel.structure.Node_IsNullOperation" flags="nn" index="3w_OXm" />
@@ -228,7 +228,7 @@
             <node concept="2OqwBi" id="3jj0rvsBVzZ" role="2Oq$k0">
               <node concept="2OqwBi" id="oAObYP$iTS" role="2Oq$k0">
                 <node concept="13iPFW" id="oAObYP$i_K" role="2Oq$k0" />
-                <node concept="2qgKlT" id="oAObYP$jl0" role="2OqNvi">
+                <node concept="3zqWPK" id="5Sy$a0nHnKN" role="2OqNvi">
                   <ref role="37wK5l" node="5o9wjw02jJe" resolve="ivaa" />
                 </node>
               </node>
@@ -247,7 +247,7 @@
                         <node concept="37vLTw" id="oAObYPzYO4" role="2Oq$k0">
                           <ref role="3cqZAo" node="3jj0rvsBV$3" resolve="ivaa" />
                         </node>
-                        <node concept="2qgKlT" id="oAObYP$0Yp" role="2OqNvi">
+                        <node concept="3zqWPK" id="5Sy$a0nHnKP" role="2OqNvi">
                           <ref role="37wK5l" to="i05g:5bXbDSdjI5A" resolve="getAvailableConfigurations" />
                         </node>
                       </node>
@@ -602,7 +602,7 @@
                       <ref role="3Tt5mk" to="oe8b:4VcV5lH5FF$" resolve="artifact" />
                     </node>
                   </node>
-                  <node concept="2qgKlT" id="5o9wjw03KUj" role="2OqNvi">
+                  <node concept="3zqWPK" id="5Sy$a0nHnKR" role="2OqNvi">
                     <ref role="37wK5l" to="tpcu:hEwIMiw" resolve="getPresentation" />
                   </node>
                 </node>

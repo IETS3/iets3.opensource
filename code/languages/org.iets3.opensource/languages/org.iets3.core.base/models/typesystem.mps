@@ -17,6 +17,9 @@
     <import index="33ny" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.util(JDK/)" />
   </imports>
   <registry>
+    <language id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior">
+      <concept id="3235159848334022093" name="jetbrains.mps.lang.behavior.structure.Node_ConceptMethodCall" flags="nn" index="3zqWPK" />
+    </language>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
       <concept id="1082485599095" name="jetbrains.mps.baseLanguage.structure.BlockStatement" flags="nn" index="9aQIb">
         <child id="1082485599096" name="statements" index="9aQI4" />
@@ -181,7 +184,6 @@
       </concept>
     </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
-      <concept id="1179409122411" name="jetbrains.mps.lang.smodel.structure.Node_ConceptMethodCall" flags="nn" index="2qgKlT" />
       <concept id="1172008320231" name="jetbrains.mps.lang.smodel.structure.Node_IsNotNullOperation" flags="nn" index="3x8VRR" />
       <concept id="1138055754698" name="jetbrains.mps.lang.smodel.structure.SNodeType" flags="in" index="3Tqbb2">
         <reference id="1138405853777" name="concept" index="ehGHo" />
@@ -541,7 +543,7 @@
                       <node concept="37vLTw" id="4358bbCP2b2" role="2Oq$k0">
                         <ref role="3cqZAo" node="4358bbCOTlE" resolve="icrm" />
                       </node>
-                      <node concept="2qgKlT" id="4358bbCOTvH" role="2OqNvi">
+                      <node concept="3zqWPK" id="5Sy$a0nHnEI" role="2OqNvi">
                         <ref role="37wK5l" to="gdgh:3R3AIvumwq7" resolve="getLastResult" />
                       </node>
                     </node>
@@ -772,7 +774,7 @@
                                             <node concept="37vLTw" id="4358bbCP33g" role="2Oq$k0">
                                               <ref role="3cqZAo" node="4358bbCOTlE" resolve="icrm" />
                                             </node>
-                                            <node concept="2qgKlT" id="4358bbCOTxi" role="2OqNvi">
+                                            <node concept="3zqWPK" id="5Sy$a0nHnEK" role="2OqNvi">
                                               <ref role="37wK5l" to="gdgh:4358bbCIl2g" resolve="highlightWarning" />
                                             </node>
                                           </node>
@@ -921,7 +923,7 @@
                             <node concept="37vLTw" id="4358bbCP1Sj" role="2Oq$k0">
                               <ref role="3cqZAo" node="4358bbCOTlE" resolve="icrm" />
                             </node>
-                            <node concept="2qgKlT" id="4358bbCOTyb" role="2OqNvi">
+                            <node concept="3zqWPK" id="5Sy$a0nHnEM" role="2OqNvi">
                               <ref role="37wK5l" to="gdgh:4MH81Y0VldB" resolve="showSubResults" />
                             </node>
                           </node>
@@ -932,7 +934,7 @@
                           <node concept="37vLTw" id="4358bbCP2KB" role="2Oq$k0">
                             <ref role="3cqZAo" node="4358bbCOTlE" resolve="icrm" />
                           </node>
-                          <node concept="2qgKlT" id="4358bbCOTyf" role="2OqNvi">
+                          <node concept="3zqWPK" id="5Sy$a0nHnEO" role="2OqNvi">
                             <ref role="37wK5l" to="gdgh:4b4fYXfo1HZ" resolve="highlightError" />
                           </node>
                         </node>
@@ -1040,9 +1042,9 @@
                     <node concept="37vLTw" id="4358bbCP2tJ" role="2Oq$k0">
                       <ref role="3cqZAo" node="4358bbCOTlE" resolve="icrm" />
                     </node>
-                    <node concept="2qgKlT" id="4358bbCOTyP" role="2OqNvi">
+                    <node concept="3zqWPK" id="5Sy$a0nHnEQ" role="2OqNvi">
                       <ref role="37wK5l" to="gdgh:3R3AIvuq5Dp" resolve="storeLastResult" />
-                      <node concept="10Nm6u" id="4358bbCOTyQ" role="37wK5m" />
+                      <node concept="10Nm6u" id="5Sy$a0nHnES" role="37wK5m" />
                     </node>
                   </node>
                 </node>
@@ -1051,7 +1053,7 @@
                 <node concept="37vLTw" id="4358bbCP3Vc" role="2Oq$k0">
                   <ref role="3cqZAo" node="4358bbCOTlE" resolve="icrm" />
                 </node>
-                <node concept="2qgKlT" id="4358bbCOTyT" role="2OqNvi">
+                <node concept="3zqWPK" id="5Sy$a0nHnET" role="2OqNvi">
                   <ref role="37wK5l" to="gdgh:3R3AIvumwpO" resolve="hasExistingResult" />
                 </node>
               </node>
@@ -1079,7 +1081,7 @@
                   <node concept="37vLTw" id="4358bbCP3CD" role="2Oq$k0">
                     <ref role="3cqZAo" node="4358bbCOTlE" resolve="icrm" />
                   </node>
-                  <node concept="2qgKlT" id="4358bbCOTz2" role="2OqNvi">
+                  <node concept="3zqWPK" id="5Sy$a0nHnEV" role="2OqNvi">
                     <ref role="37wK5l" to="gdgh:6MJy$PGsBY8" resolve="canDetectChange" />
                   </node>
                 </node>
@@ -1087,7 +1089,7 @@
                   <node concept="37vLTw" id="4358bbCP4dH" role="2Oq$k0">
                     <ref role="3cqZAo" node="4358bbCOTlE" resolve="icrm" />
                   </node>
-                  <node concept="2qgKlT" id="4358bbCOTz5" role="2OqNvi">
+                  <node concept="3zqWPK" id="5Sy$a0nHnEX" role="2OqNvi">
                     <ref role="37wK5l" to="gdgh:6MJy$PGsBKB" resolve="hasChangedAndMustBeRechecked" />
                   </node>
                 </node>
@@ -1098,7 +1100,7 @@
             <node concept="37vLTw" id="4358bbCP3m4" role="2Oq$k0">
               <ref role="3cqZAo" node="4358bbCOTlE" resolve="icrm" />
             </node>
-            <node concept="2qgKlT" id="4358bbCOTz8" role="2OqNvi">
+            <node concept="3zqWPK" id="5Sy$a0nHnEZ" role="2OqNvi">
               <ref role="37wK5l" to="gdgh:3R3AIvumAZH" resolve="mustBeRunManually" />
             </node>
           </node>

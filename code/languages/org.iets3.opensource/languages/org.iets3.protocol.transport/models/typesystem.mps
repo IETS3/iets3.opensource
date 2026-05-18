@@ -15,6 +15,9 @@
     <import index="c17a" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.language(MPS.OpenAPI/)" implicit="true" />
   </imports>
   <registry>
+    <language id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior">
+      <concept id="3235159848334022093" name="jetbrains.mps.lang.behavior.structure.Node_ConceptMethodCall" flags="nn" index="3zqWPK" />
+    </language>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
       <concept id="1082485599095" name="jetbrains.mps.baseLanguage.structure.BlockStatement" flags="nn" index="9aQIb">
         <child id="1082485599096" name="statements" index="9aQI4" />
@@ -129,7 +132,6 @@
       <concept id="1138411891628" name="jetbrains.mps.lang.smodel.structure.SNodeOperation" flags="nn" index="eCIE_">
         <child id="1144104376918" name="parameter" index="1xVPHs" />
       </concept>
-      <concept id="1179409122411" name="jetbrains.mps.lang.smodel.structure.Node_ConceptMethodCall" flags="nn" index="2qgKlT" />
       <concept id="4693937538533521280" name="jetbrains.mps.lang.smodel.structure.OfConceptOperation" flags="ng" index="v3k3i">
         <child id="4693937538533538124" name="requestedConcept" index="v3oSu" />
       </concept>
@@ -250,7 +252,7 @@
                 <node concept="37vLTw" id="3wMQ0tmuqgS" role="2Oq$k0">
                   <ref role="3cqZAo" node="3wMQ0tmuqgN" resolve="protocol" />
                 </node>
-                <node concept="2qgKlT" id="3wMQ0tmsG19" role="2OqNvi">
+                <node concept="3zqWPK" id="5Sy$a0nHonh" role="2OqNvi">
                   <ref role="37wK5l" to="zxy1:6JtAeCuVpNb" resolve="connectorType" />
                 </node>
               </node>
@@ -269,7 +271,7 @@
                         <node concept="37vLTw" id="3wMQ0tmuqgT" role="2Oq$k0">
                           <ref role="3cqZAo" node="3wMQ0tmuqgN" resolve="protocol" />
                         </node>
-                        <node concept="2qgKlT" id="2HsTbibbpqB" role="2OqNvi">
+                        <node concept="3zqWPK" id="5Sy$a0nHonj" role="2OqNvi">
                           <ref role="37wK5l" to="zxy1:6JtAeCuSn_1" resolve="simpleName" />
                         </node>
                       </node>
@@ -292,9 +294,9 @@
                 <node concept="1YBJjd" id="3wMQ0tmu6jF" role="2Oq$k0">
                   <ref role="1YBMHb" node="6JtAeCuVO$N" resolve="iProtocoled" />
                 </node>
-                <node concept="2qgKlT" id="3wMQ0tmu6jG" role="2OqNvi">
+                <node concept="3zqWPK" id="5Sy$a0nHonl" role="2OqNvi">
                   <ref role="37wK5l" to="zxy1:3wMQ0tmsjST" resolve="isConnectorTypeAvailable" />
-                  <node concept="37vLTw" id="3wMQ0tmu6jH" role="37wK5m">
+                  <node concept="37vLTw" id="5Sy$a0nHonn" role="37wK5m">
                     <ref role="3cqZAo" node="3wMQ0tmsG14" resolve="requiredConnectorType" />
                   </node>
                 </node>
@@ -312,9 +314,9 @@
                 <node concept="1YBJjd" id="3wMQ0tmsUqz" role="2Oq$k0">
                   <ref role="1YBMHb" node="6JtAeCuVO$N" resolve="iProtocoled" />
                 </node>
-                <node concept="2qgKlT" id="3wMQ0tmsUq$" role="2OqNvi">
+                <node concept="3zqWPK" id="5Sy$a0nHono" role="2OqNvi">
                   <ref role="37wK5l" to="zxy1:3wMQ0tmsR1Z" resolve="notMappedProtocoledElements" />
-                  <node concept="37vLTw" id="3wMQ0tmuqgR" role="37wK5m">
+                  <node concept="37vLTw" id="5Sy$a0nHonq" role="37wK5m">
                     <ref role="3cqZAo" node="3wMQ0tmuqgN" resolve="protocol" />
                   </node>
                 </node>
@@ -337,7 +339,7 @@
                               <node concept="37vLTw" id="2HsTbib$XNk" role="2Oq$k0">
                                 <ref role="3cqZAo" node="2r1kIC$yAsA" resolve="it" />
                               </node>
-                              <node concept="2qgKlT" id="2HsTbib$Yrx" role="2OqNvi">
+                              <node concept="3zqWPK" id="5Sy$a0nHonr" role="2OqNvi">
                                 <ref role="37wK5l" to="tpcu:hEwIMiw" resolve="getPresentation" />
                               </node>
                             </node>
@@ -449,7 +451,7 @@
             <node concept="1YBJjd" id="6FL_GAhfrgr" role="2Oq$k0">
               <ref role="1YBMHb" node="2HsTbibKs77" resolve="attr" />
             </node>
-            <node concept="2qgKlT" id="6FL_GAhfrQm" role="2OqNvi">
+            <node concept="3zqWPK" id="5Sy$a0nHont" role="2OqNvi">
               <ref role="37wK5l" to="zxy1:2HsTbibmy9E" resolve="protocoledElements" />
             </node>
           </node>
@@ -529,7 +531,7 @@
             <node concept="1YBJjd" id="4FLRp99CaJd" role="2Oq$k0">
               <ref role="1YBMHb" node="4FLRp99Caju" resolve="protocolMapSection" />
             </node>
-            <node concept="2qgKlT" id="4FLRp99CaJe" role="2OqNvi">
+            <node concept="3zqWPK" id="5Sy$a0nHonv" role="2OqNvi">
               <ref role="37wK5l" to="zxy1:4ETZusGCO9f" resolve="includedProtocolMaps" />
             </node>
           </node>
@@ -583,7 +585,7 @@
                           <ref role="3Tt5mk" to="boyp:6JtAeCuN9lA" resolve="protocolMapTarget" />
                         </node>
                       </node>
-                      <node concept="2qgKlT" id="4FLRp99Fsn4" role="2OqNvi">
+                      <node concept="3zqWPK" id="5Sy$a0nHonx" role="2OqNvi">
                         <ref role="37wK5l" to="zxy1:6JtAeCuNd2x" resolve="getTarget" />
                       </node>
                     </node>
@@ -705,7 +707,7 @@
                                   <node concept="37vLTw" id="4FLRp99FP$u" role="2Oq$k0">
                                     <ref role="3cqZAo" node="4FLRp99Fvd4" resolve="protocol" />
                                   </node>
-                                  <node concept="2qgKlT" id="4FLRp99FQp_" role="2OqNvi">
+                                  <node concept="3zqWPK" id="5Sy$a0nHonz" role="2OqNvi">
                                     <ref role="37wK5l" to="zxy1:6JtAeCuSn_1" resolve="simpleName" />
                                   </node>
                                 </node>
@@ -890,7 +892,7 @@
                           <ref role="3Tt5mk" to="boyp:6JtAeCuN9lA" resolve="protocolMapTarget" />
                         </node>
                       </node>
-                      <node concept="2qgKlT" id="65sbyp4AGLa" role="2OqNvi">
+                      <node concept="3zqWPK" id="5Sy$a0nHon_" role="2OqNvi">
                         <ref role="37wK5l" to="zxy1:6JtAeCuNd2x" resolve="getTarget" />
                       </node>
                     </node>
@@ -914,7 +916,7 @@
                         <node concept="2yIwOk" id="65sbyp4GKw6" role="2OqNvi" />
                       </node>
                     </node>
-                    <node concept="2qgKlT" id="65sbyp4GMjy" role="2OqNvi">
+                    <node concept="3zqWPK" id="5Sy$a0nHonB" role="2OqNvi">
                       <ref role="37wK5l" to="zxy1:1hn4HGoFAu6" resolve="getExpectedMapTargets" />
                     </node>
                   </node>
@@ -956,7 +958,7 @@
                         <node concept="2yIwOk" id="65sbyp4GMIs" role="2OqNvi" />
                       </node>
                     </node>
-                    <node concept="2qgKlT" id="65sbyp4GO8V" role="2OqNvi">
+                    <node concept="3zqWPK" id="5Sy$a0nHonD" role="2OqNvi">
                       <ref role="37wK5l" to="zxy1:1hn4HGoFAum" resolve="getExpectedProtocol" />
                     </node>
                   </node>

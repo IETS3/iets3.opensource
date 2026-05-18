@@ -28,6 +28,9 @@
     <import index="48kf" ref="r:5f41c82d-84d1-4fb1-a1cf-6697d2365854(com.mbeddr.mpsutil.filepicker.behavior)" implicit="true" />
   </imports>
   <registry>
+    <language id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior">
+      <concept id="3235159848334022093" name="jetbrains.mps.lang.behavior.structure.Node_ConceptMethodCall" flags="nn" index="3zqWPK" />
+    </language>
     <language id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor">
       <concept id="1402906326895675325" name="jetbrains.mps.lang.editor.structure.CellActionMap_FunctionParm_selectedNode" flags="nn" index="0IXxy" />
       <concept id="1071666914219" name="jetbrains.mps.lang.editor.structure.ConceptEditorDeclaration" flags="ig" index="24kQdi">
@@ -245,7 +248,6 @@
       <concept id="4900677560559655527" name="de.itemis.mps.editor.bool.structure.CellModel_Checkbox" flags="sg" stub="416014060004381438" index="27S6Sx" />
     </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
-      <concept id="1179409122411" name="jetbrains.mps.lang.smodel.structure.Node_ConceptMethodCall" flags="nn" index="2qgKlT" />
       <concept id="1143234257716" name="jetbrains.mps.lang.smodel.structure.Node_GetModelOperation" flags="nn" index="I4A8Y" />
       <concept id="1145404486709" name="jetbrains.mps.lang.smodel.structure.SemanticDowncastExpression" flags="nn" index="2JrnkZ">
         <child id="1145404616321" name="leftExpression" index="2JrQYb" />
@@ -328,7 +330,7 @@
                 <node concept="3clFbF" id="1sudaVNr64b" role="3cqZAp">
                   <node concept="2OqwBi" id="1sudaVNr6nn" role="3clFbG">
                     <node concept="pncrf" id="1sudaVNr64a" role="2Oq$k0" />
-                    <node concept="2qgKlT" id="1sudaVNr6UN" role="2OqNvi">
+                    <node concept="3zqWPK" id="5Sy$a0nHmAh" role="2OqNvi">
                       <ref role="37wK5l" to="srqo:1sudaVNr1vl" resolve="qualifiedFileName" />
                     </node>
                   </node>
@@ -359,7 +361,7 @@
                             <node concept="pncrf" id="2c2AzQc_PhS" role="2Oq$k0" />
                             <node concept="2Rxl7S" id="2c2AzQc_Qt3" role="2OqNvi" />
                           </node>
-                          <node concept="2qgKlT" id="2c2AzQc_RzD" role="2OqNvi">
+                          <node concept="3zqWPK" id="5Sy$a0nHmAj" role="2OqNvi">
                             <ref role="37wK5l" to="tpcu:hEwIMiw" resolve="getPresentation" />
                           </node>
                         </node>
@@ -419,7 +421,7 @@
                 <node concept="3clFbF" id="2c2AzQcE2g1" role="3cqZAp">
                   <node concept="2OqwBi" id="31BLocd031d" role="3clFbG">
                     <node concept="pncrf" id="31BLocd02zd" role="2Oq$k0" />
-                    <node concept="2qgKlT" id="31BLocd04es" role="2OqNvi">
+                    <node concept="3zqWPK" id="5Sy$a0nHmAl" role="2OqNvi">
                       <ref role="37wK5l" to="srqo:31BLoccZVAr" resolve="markdownIncludeString" />
                     </node>
                   </node>
@@ -487,7 +489,7 @@
                                     <node concept="3clFbF" id="5AlTalNZdo$" role="3cqZAp">
                                       <node concept="2OqwBi" id="5AlTalNZd$W" role="3clFbG">
                                         <node concept="pncrf" id="5AlTalNZdoz" role="2Oq$k0" />
-                                        <node concept="2qgKlT" id="5AlTalNZe79" role="2OqNvi">
+                                        <node concept="3zqWPK" id="5Sy$a0nHmAn" role="2OqNvi">
                                           <ref role="37wK5l" to="srqo:2c2AzQc_YDC" resolve="takeScreenshot" />
                                         </node>
                                       </node>
@@ -625,7 +627,7 @@
                       <ref role="3Tt5mk" to="34lm:1JOtRcapYu0" resolve="path" />
                     </node>
                   </node>
-                  <node concept="2qgKlT" id="1JOtRcaqbU1" role="2OqNvi">
+                  <node concept="3zqWPK" id="5Sy$a0nHmAp" role="2OqNvi">
                     <ref role="37wK5l" to="48kf:5lKnBeAuKov" resolve="getCanonicalPath" />
                   </node>
                 </node>

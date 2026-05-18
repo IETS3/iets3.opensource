@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<product version="3" modelHash="-1rv546p6k9o762hwzu6g5nm6rbuufro">
+<product version="3" modelHash="7f46paoj0o8yi2222i4gqpqhsv0t1zg">
   <files names="TypesystemDescriptor.java:check_CompositeBlock_NonTypesystemRule.java:check_InPort_NonTypesystemRule.java:check_Instance_NonTypesystemRule.java:check_OutPort_NonTypesystemRule.java:typeof_BlockCallExpr_InferenceRule.java:typeof_BlockParameter_InferenceRule.java:typeof_Connector_InferenceRule.java:typeof_Endpoint_InferenceRule.java:typeof_InPort_InferenceRule.java:typeof_InportRef_InferenceRule.java:typeof_OutPort_InferenceRule.java:typeof_ParamRefExpr_InferenceRule.java:typeof_ParamValue_InferenceRule.java" />
 </product>
 
