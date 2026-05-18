@@ -3,7 +3,7 @@
   <persistence version="9" />
   <languages>
     <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="12" />
-    <use id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc" version="2" />
+    <use id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc" version="3" />
   </languages>
   <imports>
     <import index="xlxw" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.math(JDK/)" />
@@ -154,16 +154,10 @@
     </language>
     <language id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc">
       <concept id="6832197706140896242" name="jetbrains.mps.baseLanguage.javadoc.structure.FieldDocComment" flags="ng" index="z59LJ" />
-      <concept id="5349172909345501395" name="jetbrains.mps.baseLanguage.javadoc.structure.BaseDocComment" flags="ng" index="P$AiS">
-        <child id="8465538089690331502" name="body" index="TZ5H$" />
-      </concept>
-      <concept id="8465538089690331500" name="jetbrains.mps.baseLanguage.javadoc.structure.CommentLine" flags="ng" index="TZ5HA">
-        <child id="8970989240999019149" name="part" index="1dT_Ay" />
-      </concept>
-      <concept id="8970989240999019143" name="jetbrains.mps.baseLanguage.javadoc.structure.TextCommentLinePart" flags="ng" index="1dT_AC">
-        <property id="8970989240999019144" name="text" index="1dT_AB" />
-      </concept>
       <concept id="2068944020170241612" name="jetbrains.mps.baseLanguage.javadoc.structure.ClassifierDocComment" flags="ng" index="3UR2Jj" />
+      <concept id="5085607816302529296" name="jetbrains.mps.baseLanguage.javadoc.structure.IHoldCommentLines" flags="ngI" index="1VezTd">
+        <child id="5085607816302529587" name="commentBody" index="1Vez_I" />
+      </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
       <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
@@ -188,9 +182,33 @@
     <property role="TrG5h" value="INixValue" />
     <node concept="3Tm1VV" id="3nVyItrYNyq" role="1B3o_S" />
     <node concept="3UR2Jj" id="3iq6R$ZyUFV" role="lGtFl">
-      <node concept="TZ5HA" id="3iq6R$ZyUFW" role="TZ5H$">
-        <node concept="1dT_AC" id="3iq6R$ZyUFX" role="1dT_Ay">
-          <property role="1dT_AB" value="Represents general empty ('nothing') value for any value type." />
+      <node concept="1PaTwC" id="3MzwgoR0VkN" role="1Vez_I">
+        <node concept="3oM_SD" id="3MzwgoR0VkO" role="1PaTwD">
+          <property role="3oM_SC" value="Represents" />
+        </node>
+        <node concept="3oM_SD" id="3MzwgoR0VkP" role="1PaTwD">
+          <property role="3oM_SC" value="general" />
+        </node>
+        <node concept="3oM_SD" id="3MzwgoR0VkQ" role="1PaTwD">
+          <property role="3oM_SC" value="empty" />
+        </node>
+        <node concept="3oM_SD" id="3MzwgoR0VkR" role="1PaTwD">
+          <property role="3oM_SC" value="('nothing')" />
+        </node>
+        <node concept="3oM_SD" id="3MzwgoR0VkS" role="1PaTwD">
+          <property role="3oM_SC" value="value" />
+        </node>
+        <node concept="3oM_SD" id="3MzwgoR0VkT" role="1PaTwD">
+          <property role="3oM_SC" value="for" />
+        </node>
+        <node concept="3oM_SD" id="3MzwgoR0VkU" role="1PaTwD">
+          <property role="3oM_SC" value="any" />
+        </node>
+        <node concept="3oM_SD" id="3MzwgoR0VkV" role="1PaTwD">
+          <property role="3oM_SC" value="value" />
+        </node>
+        <node concept="3oM_SD" id="3MzwgoR0VkW" role="1PaTwD">
+          <property role="3oM_SC" value="type." />
         </node>
       </node>
     </node>
@@ -213,9 +231,42 @@
         <property role="3cmrfH" value="16" />
       </node>
       <node concept="z59LJ" id="1VqmZU7jL_C" role="lGtFl">
-        <node concept="TZ5HA" id="1VqmZU7jL_D" role="TZ5H$">
-          <node concept="1dT_AC" id="1VqmZU7jL_E" role="1dT_Ay">
-            <property role="1dT_AB" value="Default infinite precision corresponds to the decimal digits number of the double-precision" />
+        <node concept="1PaTwC" id="3MzwgoR0Vlr" role="1Vez_I">
+          <node concept="3oM_SD" id="3MzwgoR0Vls" role="1PaTwD">
+            <property role="3oM_SC" value="Default" />
+          </node>
+          <node concept="3oM_SD" id="3MzwgoR0Vlt" role="1PaTwD">
+            <property role="3oM_SC" value="infinite" />
+          </node>
+          <node concept="3oM_SD" id="3MzwgoR0Vlu" role="1PaTwD">
+            <property role="3oM_SC" value="precision" />
+          </node>
+          <node concept="3oM_SD" id="3MzwgoR0Vlv" role="1PaTwD">
+            <property role="3oM_SC" value="corresponds" />
+          </node>
+          <node concept="3oM_SD" id="3MzwgoR0Vlw" role="1PaTwD">
+            <property role="3oM_SC" value="to" />
+          </node>
+          <node concept="3oM_SD" id="3MzwgoR0Vlx" role="1PaTwD">
+            <property role="3oM_SC" value="the" />
+          </node>
+          <node concept="3oM_SD" id="3MzwgoR0Vly" role="1PaTwD">
+            <property role="3oM_SC" value="decimal" />
+          </node>
+          <node concept="3oM_SD" id="3MzwgoR0Vlz" role="1PaTwD">
+            <property role="3oM_SC" value="digits" />
+          </node>
+          <node concept="3oM_SD" id="3MzwgoR0Vl$" role="1PaTwD">
+            <property role="3oM_SC" value="number" />
+          </node>
+          <node concept="3oM_SD" id="3MzwgoR0Vl_" role="1PaTwD">
+            <property role="3oM_SC" value="of" />
+          </node>
+          <node concept="3oM_SD" id="3MzwgoR0VlA" role="1PaTwD">
+            <property role="3oM_SC" value="the" />
+          </node>
+          <node concept="3oM_SD" id="3MzwgoR0VlB" role="1PaTwD">
+            <property role="3oM_SC" value="double-precision" />
           </node>
         </node>
       </node>
@@ -232,9 +283,48 @@
         <ref role="Rm8GQ" to="xlxw:~RoundingMode.HALF_UP" resolve="HALF_UP" />
       </node>
       <node concept="z59LJ" id="6zU$Zuz6NV7" role="lGtFl">
-        <node concept="TZ5HA" id="6zU$Zuz6NV8" role="TZ5H$">
-          <node concept="1dT_AC" id="6zU$Zuz6NV9" role="1dT_Ay">
-            <property role="1dT_AB" value="Default rounding mode applied when converting decimals with infinite/undefined precision to decimals with INF_PREC" />
+        <node concept="1PaTwC" id="3MzwgoR0VlC" role="1Vez_I">
+          <node concept="3oM_SD" id="3MzwgoR0VlD" role="1PaTwD">
+            <property role="3oM_SC" value="Default" />
+          </node>
+          <node concept="3oM_SD" id="3MzwgoR0VlE" role="1PaTwD">
+            <property role="3oM_SC" value="rounding" />
+          </node>
+          <node concept="3oM_SD" id="3MzwgoR0VlF" role="1PaTwD">
+            <property role="3oM_SC" value="mode" />
+          </node>
+          <node concept="3oM_SD" id="3MzwgoR0VlG" role="1PaTwD">
+            <property role="3oM_SC" value="applied" />
+          </node>
+          <node concept="3oM_SD" id="3MzwgoR0VlH" role="1PaTwD">
+            <property role="3oM_SC" value="when" />
+          </node>
+          <node concept="3oM_SD" id="3MzwgoR0VlI" role="1PaTwD">
+            <property role="3oM_SC" value="converting" />
+          </node>
+          <node concept="3oM_SD" id="3MzwgoR0VlJ" role="1PaTwD">
+            <property role="3oM_SC" value="decimals" />
+          </node>
+          <node concept="3oM_SD" id="3MzwgoR0VlK" role="1PaTwD">
+            <property role="3oM_SC" value="with" />
+          </node>
+          <node concept="3oM_SD" id="3MzwgoR0VlL" role="1PaTwD">
+            <property role="3oM_SC" value="infinite/undefined" />
+          </node>
+          <node concept="3oM_SD" id="3MzwgoR0VlM" role="1PaTwD">
+            <property role="3oM_SC" value="precision" />
+          </node>
+          <node concept="3oM_SD" id="3MzwgoR0VlN" role="1PaTwD">
+            <property role="3oM_SC" value="to" />
+          </node>
+          <node concept="3oM_SD" id="3MzwgoR0VlO" role="1PaTwD">
+            <property role="3oM_SC" value="decimals" />
+          </node>
+          <node concept="3oM_SD" id="3MzwgoR0VlP" role="1PaTwD">
+            <property role="3oM_SC" value="with" />
+          </node>
+          <node concept="3oM_SD" id="3MzwgoR0VlQ" role="1PaTwD">
+            <property role="3oM_SC" value="INF_PREC" />
           </node>
         </node>
       </node>
@@ -242,9 +332,48 @@
     <node concept="2tJIrI" id="3qKzW8QBgdp" role="jymVt" />
     <node concept="3Tm1VV" id="3qKzW8QxL7i" role="1B3o_S" />
     <node concept="3UR2Jj" id="3qKzW8QHIs2" role="lGtFl">
-      <node concept="TZ5HA" id="3qKzW8QHIs3" role="TZ5H$">
-        <node concept="1dT_AC" id="3qKzW8QHIs4" role="1dT_Ay">
-          <property role="1dT_AB" value="This class is shared between interpreter and generator, be careful when introducing extra dependencies." />
+      <node concept="1PaTwC" id="3MzwgoR0VkX" role="1Vez_I">
+        <node concept="3oM_SD" id="3MzwgoR0VkY" role="1PaTwD">
+          <property role="3oM_SC" value="This" />
+        </node>
+        <node concept="3oM_SD" id="3MzwgoR0VkZ" role="1PaTwD">
+          <property role="3oM_SC" value="class" />
+        </node>
+        <node concept="3oM_SD" id="3MzwgoR0Vl0" role="1PaTwD">
+          <property role="3oM_SC" value="is" />
+        </node>
+        <node concept="3oM_SD" id="3MzwgoR0Vl1" role="1PaTwD">
+          <property role="3oM_SC" value="shared" />
+        </node>
+        <node concept="3oM_SD" id="3MzwgoR0Vl2" role="1PaTwD">
+          <property role="3oM_SC" value="between" />
+        </node>
+        <node concept="3oM_SD" id="3MzwgoR0Vl3" role="1PaTwD">
+          <property role="3oM_SC" value="interpreter" />
+        </node>
+        <node concept="3oM_SD" id="3MzwgoR0Vl4" role="1PaTwD">
+          <property role="3oM_SC" value="and" />
+        </node>
+        <node concept="3oM_SD" id="3MzwgoR0Vl5" role="1PaTwD">
+          <property role="3oM_SC" value="generator," />
+        </node>
+        <node concept="3oM_SD" id="3MzwgoR0Vl6" role="1PaTwD">
+          <property role="3oM_SC" value="be" />
+        </node>
+        <node concept="3oM_SD" id="3MzwgoR0Vl7" role="1PaTwD">
+          <property role="3oM_SC" value="careful" />
+        </node>
+        <node concept="3oM_SD" id="3MzwgoR0Vl8" role="1PaTwD">
+          <property role="3oM_SC" value="when" />
+        </node>
+        <node concept="3oM_SD" id="3MzwgoR0Vl9" role="1PaTwD">
+          <property role="3oM_SC" value="introducing" />
+        </node>
+        <node concept="3oM_SD" id="3MzwgoR0Vla" role="1PaTwD">
+          <property role="3oM_SC" value="extra" />
+        </node>
+        <node concept="3oM_SD" id="3MzwgoR0Vlb" role="1PaTwD">
+          <property role="3oM_SC" value="dependencies." />
         </node>
       </node>
     </node>
@@ -1859,9 +1988,48 @@
     <node concept="2tJIrI" id="1RwPUjziunU" role="jymVt" />
     <node concept="3Tm1VV" id="1RwPUjziunf" role="1B3o_S" />
     <node concept="3UR2Jj" id="3qKzW8QHIf8" role="lGtFl">
-      <node concept="TZ5HA" id="3qKzW8QHIf9" role="TZ5H$">
-        <node concept="1dT_AC" id="3qKzW8QHIfa" role="1dT_Ay">
-          <property role="1dT_AB" value="This class is shared between interpreter and generator, be careful when introducing extra dependencies." />
+      <node concept="1PaTwC" id="3MzwgoR0Vlc" role="1Vez_I">
+        <node concept="3oM_SD" id="3MzwgoR0Vld" role="1PaTwD">
+          <property role="3oM_SC" value="This" />
+        </node>
+        <node concept="3oM_SD" id="3MzwgoR0Vle" role="1PaTwD">
+          <property role="3oM_SC" value="class" />
+        </node>
+        <node concept="3oM_SD" id="3MzwgoR0Vlf" role="1PaTwD">
+          <property role="3oM_SC" value="is" />
+        </node>
+        <node concept="3oM_SD" id="3MzwgoR0Vlg" role="1PaTwD">
+          <property role="3oM_SC" value="shared" />
+        </node>
+        <node concept="3oM_SD" id="3MzwgoR0Vlh" role="1PaTwD">
+          <property role="3oM_SC" value="between" />
+        </node>
+        <node concept="3oM_SD" id="3MzwgoR0Vli" role="1PaTwD">
+          <property role="3oM_SC" value="interpreter" />
+        </node>
+        <node concept="3oM_SD" id="3MzwgoR0Vlj" role="1PaTwD">
+          <property role="3oM_SC" value="and" />
+        </node>
+        <node concept="3oM_SD" id="3MzwgoR0Vlk" role="1PaTwD">
+          <property role="3oM_SC" value="generator," />
+        </node>
+        <node concept="3oM_SD" id="3MzwgoR0Vll" role="1PaTwD">
+          <property role="3oM_SC" value="be" />
+        </node>
+        <node concept="3oM_SD" id="3MzwgoR0Vlm" role="1PaTwD">
+          <property role="3oM_SC" value="careful" />
+        </node>
+        <node concept="3oM_SD" id="3MzwgoR0Vln" role="1PaTwD">
+          <property role="3oM_SC" value="when" />
+        </node>
+        <node concept="3oM_SD" id="3MzwgoR0Vlo" role="1PaTwD">
+          <property role="3oM_SC" value="introducing" />
+        </node>
+        <node concept="3oM_SD" id="3MzwgoR0Vlp" role="1PaTwD">
+          <property role="3oM_SC" value="extra" />
+        </node>
+        <node concept="3oM_SD" id="3MzwgoR0Vlq" role="1PaTwD">
+          <property role="3oM_SC" value="dependencies." />
         </node>
       </node>
     </node>
