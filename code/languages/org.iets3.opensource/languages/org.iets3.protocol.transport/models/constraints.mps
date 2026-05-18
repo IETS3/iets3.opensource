@@ -16,6 +16,9 @@
     <import index="zxy1" ref="r:78df9f07-df07-4ea2-aa68-2442e5c9df7e(org.iets3.protocol.transport.behavior)" implicit="true" />
   </imports>
   <registry>
+    <language id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior">
+      <concept id="3235159848334022093" name="jetbrains.mps.lang.behavior.structure.Node_ConceptMethodCall" flags="nn" index="3zqWPK" />
+    </language>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
       <concept id="1082485599095" name="jetbrains.mps.baseLanguage.structure.BlockStatement" flags="nn" index="9aQIb">
         <child id="1082485599096" name="statements" index="9aQI4" />
@@ -193,9 +196,9 @@
                       </node>
                     </node>
                   </node>
-                  <node concept="2qgKlT" id="1F1F0IV2PUg" role="2OqNvi">
+                  <node concept="3zqWPK" id="5DJjBfj0cth" role="2OqNvi">
                     <ref role="37wK5l" to="hwgx:3g6LnlWuSo8" resolve="visibleContentsOfTypeAsSequence" />
-                    <node concept="35c_gC" id="62OY$PcopAI" role="37wK5m">
+                    <node concept="35c_gC" id="5DJjBfj0ctj" role="37wK5m">
                       <ref role="35c_gD" to="874t:252QIDzs18l" resolve="Interface" />
                     </node>
                   </node>
@@ -235,9 +238,9 @@
                       </node>
                     </node>
                   </node>
-                  <node concept="2qgKlT" id="1F1F0IV2PQC" role="2OqNvi">
+                  <node concept="3zqWPK" id="5DJjBfj0ctk" role="2OqNvi">
                     <ref role="37wK5l" to="hwgx:3g6LnlWuSo8" resolve="visibleContentsOfTypeAsSequence" />
-                    <node concept="35c_gC" id="62OY$Pcor7r" role="37wK5m">
+                    <node concept="35c_gC" id="5DJjBfj0ctm" role="37wK5m">
                       <ref role="35c_gD" to="boyp:vJtToBuGSd" resolve="ProtocolMap" />
                     </node>
                   </node>
@@ -281,9 +284,9 @@
                       </node>
                     </node>
                   </node>
-                  <node concept="2qgKlT" id="3UksLgEWQc9" role="2OqNvi">
+                  <node concept="3zqWPK" id="5DJjBfj0ctn" role="2OqNvi">
                     <ref role="37wK5l" to="hwgx:3g6LnlWuSo8" resolve="visibleContentsOfTypeAsSequence" />
-                    <node concept="35c_gC" id="62OY$PcoqB8" role="37wK5m">
+                    <node concept="35c_gC" id="5DJjBfj0ctp" role="37wK5m">
                       <ref role="35c_gD" to="boyp:6JtAeCuHS41" resolve="ProtocolMapCatalog" />
                     </node>
                   </node>
@@ -506,21 +509,21 @@
             <node concept="3cpWs6" id="65sbyp4GclJ" role="3cqZAp">
               <node concept="2OqwBi" id="65sbyp4GclL" role="3cqZAk">
                 <node concept="EsrRn" id="65sbyp4GclM" role="2Oq$k0" />
-                <node concept="2qgKlT" id="65sbyp4GclN" role="2OqNvi">
+                <node concept="3zqWPK" id="5DJjBfj0ctq" role="2OqNvi">
                   <ref role="37wK5l" to="zxy1:65sbyp4FWa4" resolve="canBeInContent" />
-                  <node concept="2OqwBi" id="65sbyp4GclO" role="37wK5m">
-                    <node concept="37vLTw" id="65sbyp4GclP" role="2Oq$k0">
+                  <node concept="2OqwBi" id="5DJjBfj0cts" role="37wK5m">
+                    <node concept="37vLTw" id="5DJjBfj0ctt" role="2Oq$k0">
                       <ref role="3cqZAo" node="65sbyp4G7KP" resolve="contextSpecific" />
                     </node>
-                    <node concept="2qgKlT" id="65sbyp4GclQ" role="2OqNvi">
+                    <node concept="2qgKlT" id="5DJjBfj0ctu" role="2OqNvi">
                       <ref role="37wK5l" to="zxy1:1hn4HGoFAum" resolve="getExpectedProtocol" />
                     </node>
                   </node>
-                  <node concept="2OqwBi" id="65sbyp4GclR" role="37wK5m">
-                    <node concept="37vLTw" id="65sbyp4GclS" role="2Oq$k0">
+                  <node concept="2OqwBi" id="5DJjBfj0ctv" role="37wK5m">
+                    <node concept="37vLTw" id="5DJjBfj0ctw" role="2Oq$k0">
                       <ref role="3cqZAo" node="65sbyp4G7KP" resolve="contextSpecific" />
                     </node>
-                    <node concept="2qgKlT" id="65sbyp4GclT" role="2OqNvi">
+                    <node concept="2qgKlT" id="5DJjBfj0ctx" role="2OqNvi">
                       <ref role="37wK5l" to="zxy1:1hn4HGoFAu6" resolve="getExpectedMapTargets" />
                     </node>
                   </node>
