@@ -85,7 +85,7 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
           cpb.shortDesc("an IETS3 icon (16px)");
           cpb.rawPresentation("IETS3DummyIcon16");
-          cpb.icon(IconContainer.RESOURCE_a0a3a0a8b0s);
+          cpb.icon(IconContainer.RESOURCE_0);
           props_IETS3DummyIcon16 = cpb.create();
         }
         return props_IETS3DummyIcon16;
@@ -94,7 +94,7 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
           cpb.shortDesc("an IETS3 icon (24px)");
           cpb.rawPresentation("IETS3DummyIcon24");
-          cpb.icon(IconContainer.RESOURCE_a0a3a0a9b0s);
+          cpb.icon(IconContainer.RESOURCE_1);
           props_IETS3DummyIcon24 = cpb.create();
         }
         return props_IETS3DummyIcon24;
@@ -103,7 +103,7 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
           cpb.shortDesc("an IETS3 icon (32px)");
           cpb.rawPresentation("IETS3DummyIcon32");
-          cpb.icon(IconContainer.RESOURCE_a0a3a0a01b0s);
+          cpb.icon(IconContainer.RESOURCE_2);
           props_IETS3DummyIcon32 = cpb.create();
         }
         return props_IETS3DummyIcon32;
