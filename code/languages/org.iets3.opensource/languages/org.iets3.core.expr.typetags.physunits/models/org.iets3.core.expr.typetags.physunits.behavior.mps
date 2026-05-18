@@ -487,7 +487,6 @@
         <child id="1144104376918" name="parameter" index="1xVPHs" />
       </concept>
       <concept id="5045161044515397667" name="jetbrains.mps.lang.smodel.structure.Node_PointerOperation" flags="ng" index="iZEcu" />
-      <concept id="1179409122411" name="jetbrains.mps.lang.smodel.structure.Node_ConceptMethodCall" flags="nn" index="2qgKlT" />
       <concept id="7400021826771268254" name="jetbrains.mps.lang.smodel.structure.SNodePointerType" flags="ig" index="2sp9CU">
         <reference id="7400021826771268269" name="concept" index="2sp9C9" />
       </concept>
@@ -14834,7 +14833,7 @@
                         <node concept="37vLTw" id="25gun7YvCuA" role="2Oq$k0">
                           <ref role="3cqZAo" node="3EoIKdtLh$B" resolve="baseExpr" />
                         </node>
-                        <node concept="2qgKlT" id="25gun7YvCuB" role="2OqNvi">
+                        <node concept="3zqWPK" id="1pka42urL3f" role="2OqNvi">
                           <ref role="37wK5l" node="1JynhuWs9Jp" resolve="getBase" />
                         </node>
                       </node>
