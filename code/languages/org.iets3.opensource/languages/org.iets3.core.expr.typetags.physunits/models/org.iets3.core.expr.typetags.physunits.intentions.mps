@@ -140,7 +140,6 @@
       </concept>
     </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
-      <concept id="1179409122411" name="jetbrains.mps.lang.smodel.structure.Node_ConceptMethodCall" flags="nn" index="2qgKlT" />
       <concept id="1143224127713" name="jetbrains.mps.lang.smodel.structure.Node_InsertPrevSiblingOperation" flags="nn" index="HtX7F">
         <child id="1143224127716" name="insertedNode" index="HtX7I" />
       </concept>
@@ -500,13 +499,13 @@
                   <ref role="37wK5l" to="rppw:45a4DYZTqDU" resolve="mkMultiply" />
                   <node concept="2OqwBi" id="5DJjBfj0bhi" role="37wK5m">
                     <node concept="2Sf5sV" id="5DJjBfj0bhj" role="2Oq$k0" />
-                    <node concept="2qgKlT" id="5DJjBfj0bhk" role="2OqNvi">
+                    <node concept="3zqWPK" id="25gun7YvCsW" role="2OqNvi">
                       <ref role="37wK5l" to="rppw:1JynhuWs0LF" resolve="getRight" />
                     </node>
                   </node>
                   <node concept="2OqwBi" id="5DJjBfj0bhl" role="37wK5m">
                     <node concept="2Sf5sV" id="5DJjBfj0bhm" role="2Oq$k0" />
-                    <node concept="2qgKlT" id="5DJjBfj0bhn" role="2OqNvi">
+                    <node concept="3zqWPK" id="25gun7YvCsY" role="2OqNvi">
                       <ref role="37wK5l" to="rppw:1JynhuWs0Bg" resolve="getLeft" />
                     </node>
                   </node>
@@ -583,13 +582,13 @@
                   <ref role="37wK5l" to="rppw:brG9xoyyFz" resolve="from" />
                   <node concept="2OqwBi" id="5DJjBfj0bhu" role="37wK5m">
                     <node concept="2Sf5sV" id="5DJjBfj0bhv" role="2Oq$k0" />
-                    <node concept="2qgKlT" id="5DJjBfj0bhw" role="2OqNvi">
+                    <node concept="3zqWPK" id="25gun7YvCt0" role="2OqNvi">
                       <ref role="37wK5l" to="rppw:3j3yk3guAC3" resolve="getNumerator" />
                     </node>
                   </node>
                   <node concept="2OqwBi" id="5DJjBfj0bhx" role="37wK5m">
                     <node concept="2Sf5sV" id="5DJjBfj0bhy" role="2Oq$k0" />
-                    <node concept="2qgKlT" id="5DJjBfj0bhz" role="2OqNvi">
+                    <node concept="3zqWPK" id="25gun7YvCt2" role="2OqNvi">
                       <ref role="37wK5l" to="rppw:3j3yk3guABz" resolve="getDenominator" />
                     </node>
                   </node>

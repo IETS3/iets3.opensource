@@ -124,7 +124,6 @@
       </concept>
     </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
-      <concept id="1179409122411" name="jetbrains.mps.lang.smodel.structure.Node_ConceptMethodCall" flags="nn" index="2qgKlT" />
       <concept id="1143234257716" name="jetbrains.mps.lang.smodel.structure.Node_GetModelOperation" flags="nn" index="I4A8Y" />
       <concept id="1145383075378" name="jetbrains.mps.lang.smodel.structure.SNodeListType" flags="in" index="2I9FWS">
         <reference id="1145383142433" name="elementConcept" index="2I9WkF" />
@@ -568,11 +567,11 @@
                       <ref role="3Tt5mk" to="330h:378sigX35lr" resolve="scope" />
                     </node>
                   </node>
-                  <node concept="2qgKlT" id="5DJjBfj0c8j" role="2OqNvi">
+                  <node concept="3zqWPK" id="25gun7YvCtW" role="2OqNvi">
                     <ref role="37wK5l" to="hwgx:7nkDZJXluPi" resolve="findElements" />
-                    <node concept="2OqwBi" id="5DJjBfj0c8k" role="37wK5m">
-                      <node concept="13iPFW" id="5DJjBfj0c8l" role="2Oq$k0" />
-                      <node concept="I4A8Y" id="5DJjBfj0c8m" role="2OqNvi" />
+                    <node concept="2OqwBi" id="25gun7YvCtY" role="37wK5m">
+                      <node concept="13iPFW" id="25gun7YvCtZ" role="2Oq$k0" />
+                      <node concept="I4A8Y" id="25gun7YvCu0" role="2OqNvi" />
                     </node>
                   </node>
                 </node>

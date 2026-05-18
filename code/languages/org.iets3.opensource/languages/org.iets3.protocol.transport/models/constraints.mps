@@ -111,7 +111,6 @@
       <concept id="1138411891628" name="jetbrains.mps.lang.smodel.structure.SNodeOperation" flags="nn" index="eCIE_">
         <child id="1144104376918" name="parameter" index="1xVPHs" />
       </concept>
-      <concept id="1179409122411" name="jetbrains.mps.lang.smodel.structure.Node_ConceptMethodCall" flags="nn" index="2qgKlT" />
       <concept id="4693937538533521280" name="jetbrains.mps.lang.smodel.structure.OfConceptOperation" flags="ng" index="v3k3i">
         <child id="4693937538533538124" name="requestedConcept" index="v3oSu" />
       </concept>
@@ -515,7 +514,7 @@
                     <node concept="37vLTw" id="5DJjBfj0ctt" role="2Oq$k0">
                       <ref role="3cqZAo" node="65sbyp4G7KP" resolve="contextSpecific" />
                     </node>
-                    <node concept="2qgKlT" id="5DJjBfj0ctu" role="2OqNvi">
+                    <node concept="3zqWPK" id="25gun7YvCu1" role="2OqNvi">
                       <ref role="37wK5l" to="zxy1:1hn4HGoFAum" resolve="getExpectedProtocol" />
                     </node>
                   </node>
@@ -523,7 +522,7 @@
                     <node concept="37vLTw" id="5DJjBfj0ctw" role="2Oq$k0">
                       <ref role="3cqZAo" node="65sbyp4G7KP" resolve="contextSpecific" />
                     </node>
-                    <node concept="2qgKlT" id="5DJjBfj0ctx" role="2OqNvi">
+                    <node concept="3zqWPK" id="25gun7YvCu3" role="2OqNvi">
                       <ref role="37wK5l" to="zxy1:1hn4HGoFAu6" resolve="getExpectedMapTargets" />
                     </node>
                   </node>

@@ -214,7 +214,6 @@
       <concept id="1177026924588" name="jetbrains.mps.lang.smodel.structure.RefConcept_Reference" flags="nn" index="chp4Y">
         <reference id="1177026940964" name="conceptDeclaration" index="cht4Q" />
       </concept>
-      <concept id="1179409122411" name="jetbrains.mps.lang.smodel.structure.Node_ConceptMethodCall" flags="nn" index="2qgKlT" />
       <concept id="4693937538533521280" name="jetbrains.mps.lang.smodel.structure.OfConceptOperation" flags="ng" index="v3k3i">
         <child id="4693937538533538124" name="requestedConcept" index="v3oSu" />
       </concept>
@@ -947,7 +946,7 @@
                                                       </node>
                                                       <node concept="30H73N" id="5DJjBfj0d1Z" role="1m5AlR" />
                                                     </node>
-                                                    <node concept="2qgKlT" id="5DJjBfj0d20" role="2OqNvi">
+                                                    <node concept="3zqWPK" id="25gun7YvCtQ" role="2OqNvi">
                                                       <ref role="37wK5l" to="tp5o:38gbJV0XvZR" resolve="getAnnotatedNode" />
                                                     </node>
                                                   </node>
