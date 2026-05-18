@@ -23,6 +23,9 @@
     <import index="pbu6" ref="r:83e946de-2a7f-4a4c-b3c9-4f671aa7f2db(org.iets3.core.expr.base.behavior)" implicit="true" />
   </imports>
   <registry>
+    <language id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior">
+      <concept id="3235159848334022093" name="jetbrains.mps.lang.behavior.structure.Node_ConceptMethodCall" flags="nn" index="3zqWPK" />
+    </language>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
       <concept id="1197027756228" name="jetbrains.mps.baseLanguage.structure.DotExpression" flags="nn" index="2OqwBi">
         <child id="1197027771414" name="operand" index="2Oq$k0" />
@@ -76,7 +79,6 @@
       <concept id="1138411891628" name="jetbrains.mps.lang.smodel.structure.SNodeOperation" flags="nn" index="eCIE_">
         <child id="1144104376918" name="parameter" index="1xVPHs" />
       </concept>
-      <concept id="1179409122411" name="jetbrains.mps.lang.smodel.structure.Node_ConceptMethodCall" flags="nn" index="2qgKlT" />
       <concept id="4693937538533521280" name="jetbrains.mps.lang.smodel.structure.OfConceptOperation" flags="ng" index="v3k3i">
         <child id="4693937538533538124" name="requestedConcept" index="v3oSu" />
       </concept>
@@ -134,9 +136,9 @@
                       <node concept="1xIGOp" id="1CNpG_h7uBC" role="1xVPHs" />
                     </node>
                   </node>
-                  <node concept="2qgKlT" id="1F1F0IUZB1a" role="2OqNvi">
+                  <node concept="3zqWPK" id="5Sy$a0nHnKr" role="2OqNvi">
                     <ref role="37wK5l" to="hwgx:3g6LnlWuSo8" resolve="visibleContentsOfTypeAsSequence" />
-                    <node concept="35c_gC" id="3Q$zA1C_Tzg" role="37wK5m">
+                    <node concept="35c_gC" id="5Sy$a0nHnKt" role="37wK5m">
                       <ref role="35c_gD" to="e9k1:cPLa7Fp8FI" resolve="DataTable" />
                     </node>
                   </node>
@@ -176,9 +178,9 @@
                       <node concept="1xIGOp" id="cPLa7Fswqs" role="1xVPHs" />
                     </node>
                   </node>
-                  <node concept="2qgKlT" id="cPLa7Fswqt" role="2OqNvi">
+                  <node concept="3zqWPK" id="5Sy$a0nHnKu" role="2OqNvi">
                     <ref role="37wK5l" to="hwgx:3g6LnlWuSo8" resolve="visibleContentsOfTypeAsSequence" />
-                    <node concept="35c_gC" id="3Q$zA1C_ST3" role="37wK5m">
+                    <node concept="35c_gC" id="5Sy$a0nHnKw" role="37wK5m">
                       <ref role="35c_gD" to="e9k1:cPLa7Fp8FI" resolve="DataTable" />
                     </node>
                   </node>
@@ -207,12 +209,12 @@
               </node>
               <node concept="nLn13" id="cPLa7Ft27B" role="1m5AlR" />
             </node>
-            <node concept="2qgKlT" id="cPLa7Ft3qS" role="2OqNvi">
+            <node concept="3zqWPK" id="5Sy$a0nHnKx" role="2OqNvi">
               <ref role="37wK5l" to="pbu6:5WNmJ7DokMG" resolve="expectType" />
-              <node concept="35c_gC" id="cPLa7Ft3B5" role="37wK5m">
+              <node concept="35c_gC" id="5Sy$a0nHnKz" role="37wK5m">
                 <ref role="35c_gD" to="e9k1:cPLa7Fs1v4" resolve="DataTableType" />
               </node>
-              <node concept="3clFbT" id="cPLa7Ft43I" role="37wK5m" />
+              <node concept="3clFbT" id="5Sy$a0nHnK$" role="37wK5m" />
             </node>
           </node>
         </node>
@@ -441,12 +443,12 @@
                 <ref role="cht4Q" to="hm2y:7NJy08a3O99" resolve="DotExpression" />
               </node>
             </node>
-            <node concept="2qgKlT" id="6WstIz8MKEv" role="2OqNvi">
+            <node concept="3zqWPK" id="5Sy$a0nHnK_" role="2OqNvi">
               <ref role="37wK5l" to="pbu6:5WNmJ7DokMG" resolve="expectType" />
-              <node concept="35c_gC" id="6WstIz8MKEw" role="37wK5m">
+              <node concept="35c_gC" id="5Sy$a0nHnKB" role="37wK5m">
                 <ref role="35c_gD" to="e9k1:cPLa7Fs1v4" resolve="DataTableType" />
               </node>
-              <node concept="3clFbT" id="6WstIz8MKEx" role="37wK5m">
+              <node concept="3clFbT" id="5Sy$a0nHnKC" role="37wK5m">
                 <property role="3clFbU" value="true" />
               </node>
             </node>

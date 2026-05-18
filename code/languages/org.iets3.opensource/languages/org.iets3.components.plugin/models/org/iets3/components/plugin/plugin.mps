@@ -27,6 +27,9 @@
         <reference id="1203092736097" name="modifiedGroup" index="tU$_T" />
       </concept>
     </language>
+    <language id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior">
+      <concept id="3235159848334022093" name="jetbrains.mps.lang.behavior.structure.Node_ConceptMethodCall" flags="nn" index="3zqWPK" />
+    </language>
     <language id="ef7bf5ac-d06c-4342-b11d-e42104eb9343" name="jetbrains.mps.lang.plugin.standalone">
       <concept id="7520713872864775836" name="jetbrains.mps.lang.plugin.standalone.structure.StandalonePluginDescriptor" flags="ng" index="2DaZZR" />
     </language>
@@ -172,7 +175,6 @@
       <concept id="1177026924588" name="jetbrains.mps.lang.smodel.structure.RefConcept_Reference" flags="nn" index="chp4Y">
         <reference id="1177026940964" name="conceptDeclaration" index="cht4Q" />
       </concept>
-      <concept id="1179409122411" name="jetbrains.mps.lang.smodel.structure.Node_ConceptMethodCall" flags="nn" index="2qgKlT" />
       <concept id="1143226024141" name="jetbrains.mps.lang.smodel.structure.SModelType" flags="in" index="H_c77" />
       <concept id="1171315804604" name="jetbrains.mps.lang.smodel.structure.Model_RootsOperation" flags="nn" index="2RRcyG">
         <child id="6750920497477046361" name="conceptArgument" index="3MHsoP" />
@@ -256,7 +258,7 @@
                       <node concept="37vLTw" id="5Jew25TJ3VI" role="2Oq$k0">
                         <ref role="3cqZAo" node="4z0AnX817mc" resolve="it" />
                       </node>
-                      <node concept="2qgKlT" id="5Jew25TJ4ho" role="2OqNvi">
+                      <node concept="3zqWPK" id="5Sy$a0nHmva" role="2OqNvi">
                         <ref role="37wK5l" to="tpcu:hEwIMiw" resolve="getPresentation" />
                       </node>
                     </node>
@@ -354,7 +356,7 @@
           <node concept="14b0Wr" id="2JYumEA$y1U" role="2Oq$k0">
             <ref role="14b0Uw" node="1ognOHjzeue" resolve="content" />
           </node>
-          <node concept="2qgKlT" id="2JYumEA$ykP" role="2OqNvi">
+          <node concept="3zqWPK" id="5Sy$a0nHmvc" role="2OqNvi">
             <ref role="37wK5l" to="3eba:2JYumEA$tiF" resolve="getIcon" />
           </node>
         </node>

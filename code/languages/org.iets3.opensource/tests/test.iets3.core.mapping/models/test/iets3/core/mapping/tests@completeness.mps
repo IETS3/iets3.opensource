@@ -52,6 +52,9 @@
       </concept>
       <concept id="1225978065297" name="jetbrains.mps.lang.test.structure.SimpleNodeTest" flags="ng" index="1LZb2c" />
     </language>
+    <language id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior">
+      <concept id="3235159848334022093" name="jetbrains.mps.lang.behavior.structure.Node_ConceptMethodCall" flags="nn" index="3zqWPK" />
+    </language>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
       <concept id="1224071154655" name="jetbrains.mps.baseLanguage.structure.AsExpression" flags="nn" index="0kSF2">
         <child id="1224071154657" name="classifierType" index="0kSFW" />
@@ -263,7 +266,6 @@
       </concept>
     </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
-      <concept id="1179409122411" name="jetbrains.mps.lang.smodel.structure.Node_ConceptMethodCall" flags="nn" index="2qgKlT" />
       <concept id="4065387505485742666" name="jetbrains.mps.lang.smodel.structure.ModelPointer_ResolveOperation" flags="ng" index="2yCiCJ" />
       <concept id="4065387505485742749" name="jetbrains.mps.lang.smodel.structure.AbstractPointerResolveOperation" flags="ng" index="2yCiFS">
         <child id="3648723375513868575" name="repositoryArg" index="Vysub" />
@@ -3504,11 +3506,11 @@
                             <node concept="3xONca" id="21duBB1MYsq" role="2Oq$k0">
                               <ref role="3xOPvv" node="21duBB1LXIB" resolve="HCLeafsMapping" />
                             </node>
-                            <node concept="2qgKlT" id="4ltAt_Q7ThC" role="2OqNvi">
+                            <node concept="3zqWPK" id="5Sy$a0nHnP4" role="2OqNvi">
                               <ref role="37wK5l" to="2k20:3GbuJrdLq2$" resolve="instanceSection" />
                             </node>
                           </node>
-                          <node concept="2qgKlT" id="21duBB1MYss" role="2OqNvi">
+                          <node concept="3zqWPK" id="5Sy$a0nHnP6" role="2OqNvi">
                             <ref role="37wK5l" to="2k20:JbnHRlyksH" resolve="getHardWCompInstances" />
                           </node>
                         </node>
@@ -3521,7 +3523,7 @@
                       <ref role="3Tt5mk" to="w9y2:6LfBX8YiQvJ" resolve="ref" />
                     </node>
                   </node>
-                  <node concept="2qgKlT" id="21duBB1MYsw" role="2OqNvi">
+                  <node concept="3zqWPK" id="5Sy$a0nHnP8" role="2OqNvi">
                     <ref role="37wK5l" to="3eba:x8tpSA1Tv5" resolve="compSubstructure" />
                   </node>
                 </node>
@@ -3555,11 +3557,11 @@
                             <node concept="3xONca" id="21duBB1N6Wz" role="2Oq$k0">
                               <ref role="3xOPvv" node="21duBB1LXIB" resolve="HCLeafsMapping" />
                             </node>
-                            <node concept="2qgKlT" id="4ltAt_Q7Ujc" role="2OqNvi">
+                            <node concept="3zqWPK" id="5Sy$a0nHnPa" role="2OqNvi">
                               <ref role="37wK5l" to="2k20:3GbuJrdLq2$" resolve="instanceSection" />
                             </node>
                           </node>
-                          <node concept="2qgKlT" id="21duBB1N6W_" role="2OqNvi">
+                          <node concept="3zqWPK" id="5Sy$a0nHnPc" role="2OqNvi">
                             <ref role="37wK5l" to="2k20:JbnHRlyksH" resolve="getHardWCompInstances" />
                           </node>
                         </node>
@@ -3572,7 +3574,7 @@
                       <ref role="3Tt5mk" to="w9y2:6LfBX8YiQvJ" resolve="ref" />
                     </node>
                   </node>
-                  <node concept="2qgKlT" id="21duBB1N6WD" role="2OqNvi">
+                  <node concept="3zqWPK" id="5Sy$a0nHnPe" role="2OqNvi">
                     <ref role="37wK5l" to="3eba:x8tpSA1Tv5" resolve="compSubstructure" />
                   </node>
                 </node>
@@ -4122,7 +4124,7 @@
               <node concept="3xONca" id="6O4xZ$5DYW9" role="2Oq$k0">
                 <ref role="3xOPvv" node="6O4xZ$5DUzn" resolve="compMappingFC2" />
               </node>
-              <node concept="2qgKlT" id="6O4xZ$5DYWa" role="2OqNvi">
+              <node concept="3zqWPK" id="5Sy$a0nHnPg" role="2OqNvi">
                 <ref role="37wK5l" to="2k20:7ly9CZm7eR$" resolve="getMappedSourceComponenInstance" />
               </node>
             </node>
@@ -4248,7 +4250,7 @@
               <node concept="3xONca" id="6O4xZ$5E7Jk" role="2Oq$k0">
                 <ref role="3xOPvv" node="6O4xZ$5E6F5" resolve="compMappingFC3" />
               </node>
-              <node concept="2qgKlT" id="6O4xZ$5E7r9" role="2OqNvi">
+              <node concept="3zqWPK" id="5Sy$a0nHnPi" role="2OqNvi">
                 <ref role="37wK5l" to="2k20:7ly9CZm7eR$" resolve="getMappedSourceComponenInstance" />
               </node>
             </node>
@@ -4373,7 +4375,7 @@
               <node concept="3xONca" id="6O4xZ$5EkLH" role="2Oq$k0">
                 <ref role="3xOPvv" node="6O4xZ$5EiN8" resolve="comMappingH1" />
               </node>
-              <node concept="2qgKlT" id="6O4xZ$5EKu6" role="2OqNvi">
+              <node concept="3zqWPK" id="5Sy$a0nHnPk" role="2OqNvi">
                 <ref role="37wK5l" to="2k20:7ly9CZm7XG$" resolve="getMappedTargetComponenInstance" />
               </node>
             </node>
@@ -4858,7 +4860,7 @@
               <node concept="3xONca" id="JbnHRluvOf" role="2Oq$k0">
                 <ref role="3xOPvv" node="JbnHRlnhvJ" resolve="mapSec" />
               </node>
-              <node concept="2qgKlT" id="JbnHRluvOg" role="2OqNvi">
+              <node concept="3zqWPK" id="5Sy$a0nHnPm" role="2OqNvi">
                 <ref role="37wK5l" to="2k20:JbnHRltPt6" resolve="getAllDirectlyMappedFuncCompInst" />
               </node>
             </node>
@@ -4966,7 +4968,7 @@
               <node concept="3xONca" id="JbnHRlofis" role="2Oq$k0">
                 <ref role="3xOPvv" node="JbnHRlnhvJ" resolve="mapSec" />
               </node>
-              <node concept="2qgKlT" id="JbnHRlofit" role="2OqNvi">
+              <node concept="3zqWPK" id="5Sy$a0nHnPo" role="2OqNvi">
                 <ref role="37wK5l" to="2k20:JbnHRllLTe" resolve="getUsedRootCompInstInSourceMapping" />
               </node>
             </node>
@@ -5048,7 +5050,7 @@
               <node concept="3xONca" id="JbnHRlpyE6" role="2Oq$k0">
                 <ref role="3xOPvv" node="JbnHRlnhvJ" resolve="mapSec" />
               </node>
-              <node concept="2qgKlT" id="JbnHRlpyE7" role="2OqNvi">
+              <node concept="3zqWPK" id="5Sy$a0nHnPq" role="2OqNvi">
                 <ref role="37wK5l" to="2k20:JbnHRllV12" resolve="getUsedRootCompInstInTargetMapping" />
               </node>
             </node>

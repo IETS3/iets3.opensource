@@ -33,6 +33,7 @@
         <reference id="1225194472831" name="overriddenMethod" index="13i0hy" />
       </concept>
       <concept id="1225194691553" name="jetbrains.mps.lang.behavior.structure.ThisNodeExpression" flags="nn" index="13iPFW" />
+      <concept id="3235159848334022093" name="jetbrains.mps.lang.behavior.structure.Node_ConceptMethodCall" flags="nn" index="3zqWPK" />
     </language>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
       <concept id="1082485599095" name="jetbrains.mps.baseLanguage.structure.BlockStatement" flags="nn" index="9aQIb">
@@ -141,7 +142,6 @@
       <concept id="1138411891628" name="jetbrains.mps.lang.smodel.structure.SNodeOperation" flags="nn" index="eCIE_">
         <child id="1144104376918" name="parameter" index="1xVPHs" />
       </concept>
-      <concept id="1179409122411" name="jetbrains.mps.lang.smodel.structure.Node_ConceptMethodCall" flags="nn" index="2qgKlT" />
       <concept id="7453996997717780434" name="jetbrains.mps.lang.smodel.structure.Node_GetSConceptOperation" flags="nn" index="2yIwOk" />
       <concept id="2396822768958367367" name="jetbrains.mps.lang.smodel.structure.AbstractTypeCastExpression" flags="nn" index="$5XWr">
         <child id="6733348108486823193" name="leftExpression" index="1m5AlR" />
@@ -274,16 +274,16 @@
                   <node concept="37vLTw" id="42PYVEWFvWq" role="2Oq$k0">
                     <ref role="3cqZAo" node="2TqXzNe$YQE" resolve="project" />
                   </node>
-                  <node concept="2qgKlT" id="2TqXzNe_6HT" role="2OqNvi">
+                  <node concept="3zqWPK" id="5Sy$a0nHn0h" role="2OqNvi">
                     <ref role="37wK5l" to="tpcu:52_Geb4QFgX" resolve="getScope" />
-                    <node concept="35c_gC" id="42Bx8VcbZCi" role="37wK5m">
+                    <node concept="35c_gC" id="5Sy$a0nHn0j" role="37wK5m">
                       <ref role="35c_gD" to="kdzh:2L4pT56gD3R" resolve="BuildMps_Solution" />
                     </node>
-                    <node concept="359W_D" id="42Bx8VcbZKj" role="37wK5m">
+                    <node concept="359W_D" id="5Sy$a0nHn0k" role="37wK5m">
                       <ref role="359W_E" to="3ior:4RPz6WoY4Cj" resolve="BuildProject" />
                       <ref role="359W_F" to="3ior:6qcrfIJFfrM" resolve="parts" />
                     </node>
-                    <node concept="3cmrfG" id="2TqXzNe_HOq" role="37wK5m">
+                    <node concept="3cmrfG" id="5Sy$a0nHn0l" role="37wK5m">
                       <property role="3cmrfH" value="0" />
                     </node>
                   </node>
@@ -336,7 +336,7 @@
                       </node>
                       <node concept="2OqwBi" id="1br4Vy9oLb" role="3uHU7w">
                         <node concept="13iPFW" id="1br4Vy9oLc" role="2Oq$k0" />
-                        <node concept="2qgKlT" id="1br4Vy9oLd" role="2OqNvi">
+                        <node concept="3zqWPK" id="5Sy$a0nHn0m" role="2OqNvi">
                           <ref role="37wK5l" to="tpcu:hEwIMiw" resolve="getPresentation" />
                         </node>
                       </node>
@@ -640,12 +640,12 @@
                     </node>
                   </node>
                 </node>
-                <node concept="2qgKlT" id="7Lttyc2W6aY" role="2OqNvi">
+                <node concept="3zqWPK" id="5Sy$a0nHn0o" role="2OqNvi">
                   <ref role="37wK5l" to="tpcu:52_Geb4QDV$" resolve="getScope" />
-                  <node concept="37vLTw" id="7Lttyc2W6aZ" role="37wK5m">
+                  <node concept="37vLTw" id="5Sy$a0nHn0q" role="37wK5m">
                     <ref role="3cqZAo" node="7Lttyc2W1LD" resolve="kind" />
                   </node>
-                  <node concept="37vLTw" id="7Lttyc2W6b0" role="37wK5m">
+                  <node concept="37vLTw" id="5Sy$a0nHn0r" role="37wK5m">
                     <ref role="3cqZAo" node="7Lttyc2W1LF" resolve="child" />
                   </node>
                 </node>

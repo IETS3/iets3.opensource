@@ -4201,7 +4201,7 @@
       <property role="TrG5h" value="timedSale" />
       <node concept="2EWGZN" id="3wXkdMVps2p" role="2lDidJ">
         <node concept="2EWGYO" id="3wXkdMVps2q" role="1G1OS$">
-          <ref role="2EWGYF" node="3wXkdMVps2i" />
+          <ref role="2EWGYF" node="3wXkdMVps2i" resolve="SellWithTimeout" />
         </node>
       </node>
     </node>
@@ -4462,7 +4462,7 @@
       <node concept="1ahQXy" id="3wXkdMVps3Z" role="1ahQWs">
         <property role="TrG5h" value="sale" />
         <node concept="2EWGYO" id="3wXkdMVps40" role="3ix9CU">
-          <ref role="2EWGYF" node="3wXkdMVps2i" />
+          <ref role="2EWGYF" node="3wXkdMVps2i" resolve="SellWithTimeout" />
         </node>
       </node>
       <node concept="2lgajY" id="3wXkdMVps41" role="28QfE6" />
@@ -4881,7 +4881,7 @@
                   </node>
                   <node concept="2EWGZN" id="4pyjK6aSCv1" role="m5g4p">
                     <node concept="2EWGYO" id="4pyjK6aSCv2" role="1G1OS$">
-                      <ref role="2EWGYF" node="4pyjK6aOaes" />
+                      <ref role="2EWGYF" node="4pyjK6aOaes" resolve="ShouldWeSell" />
                     </node>
                   </node>
                 </node>
@@ -8512,7 +8512,7 @@
       <property role="TrG5h" value="sale_unanimous" />
       <node concept="2EWGZN" id="7WFhXJlQs4c" role="2lDidJ">
         <node concept="2EWGYO" id="1mDdTGkYab" role="1G1OS$">
-          <ref role="2EWGYF" node="7WFhXJlQob7" />
+          <ref role="2EWGYF" node="7WFhXJlQob7" resolve="Unanimous" />
         </node>
       </node>
     </node>
@@ -8520,7 +8520,7 @@
       <property role="TrG5h" value="sale_withReject" />
       <node concept="2EWGZN" id="Z4fkwzeJQ2" role="2lDidJ">
         <node concept="2EWGYO" id="1mDdTGkYbH" role="1G1OS$">
-          <ref role="2EWGYF" node="Z4fkwzeJEz" />
+          <ref role="2EWGYF" node="Z4fkwzeJEz" resolve="UnanimousWithReject" />
         </node>
       </node>
     </node>
@@ -8528,7 +8528,7 @@
       <property role="TrG5h" value="sale_majority" />
       <node concept="2EWGZN" id="1mDdTFSYIA" role="2lDidJ">
         <node concept="2EWGYO" id="1mDdTGkYfi" role="1G1OS$">
-          <ref role="2EWGYF" node="33mFrumMyAS" />
+          <ref role="2EWGYF" node="33mFrumMyAS" resolve="MajorityWithReject" />
         </node>
       </node>
     </node>
@@ -8536,7 +8536,7 @@
       <property role="TrG5h" value="sale_markus" />
       <node concept="2EWGZN" id="3iESbJsi2d1" role="2lDidJ">
         <node concept="2EWGYO" id="3iESbJsi2iM" role="1G1OS$">
-          <ref role="2EWGYF" node="3iESbJshXUB" />
+          <ref role="2EWGYF" node="3iESbJshXUB" resolve="MarkusDecides" />
         </node>
       </node>
     </node>
@@ -9252,7 +9252,7 @@
         <node concept="1DGDPD" id="2uo6UInPxpZ" role="2S399n">
           <node concept="GZN9E" id="2uo6UInPyyb" role="1DGDPC" />
           <node concept="2EWGYO" id="2uo6UInPzE7" role="1DGDPA">
-            <ref role="2EWGYF" node="71HHyJ2r2nl" />
+            <ref role="2EWGYF" node="71HHyJ2r2nl" resolve="AccessControl" />
           </node>
         </node>
       </node>
@@ -9400,7 +9400,7 @@
                   <property role="0Rz4W" value="-1123262314" />
                   <node concept="2EWGZN" id="71HHyJ2rmwq" role="2lDidJ">
                     <node concept="2EWGYO" id="71HHyJ2rm_p" role="1G1OS$">
-                      <ref role="2EWGYF" node="71HHyJ2r2nl" />
+                      <ref role="2EWGYF" node="71HHyJ2r2nl" resolve="AccessControl" />
                     </node>
                   </node>
                 </node>
@@ -11919,7 +11919,7 @@
       <property role="TrG5h" value="sellOrNot" />
       <node concept="2EWGZN" id="3wXkdMVpsDu" role="2lDidJ">
         <node concept="2EWGYO" id="3wXkdMVpsDv" role="1G1OS$">
-          <ref role="2EWGYF" node="3wXkdMVpsDm" />
+          <ref role="2EWGYF" node="3wXkdMVpsDm" resolve="SellWithTurnout" />
         </node>
       </node>
     </node>
@@ -12264,7 +12264,7 @@
       <property role="TrG5h" value="dec" />
       <node concept="2EWGZN" id="69FYpZq$sv1" role="2lDidJ">
         <node concept="2EWGYO" id="69FYpZq$svf" role="1G1OS$">
-          <ref role="2EWGYF" node="69FYpZq$s4d" />
+          <ref role="2EWGYF" node="69FYpZq$s4d" resolve="D" />
         </node>
       </node>
     </node>
@@ -12395,7 +12395,7 @@
       <property role="0Rz4W" value="2050601052" />
       <node concept="2EWGZN" id="VApoyDH40Q" role="2lDidJ">
         <node concept="2EWGYO" id="VApoyDH40R" role="1G1OS$">
-          <ref role="2EWGYF" node="VApoyDH40I" />
+          <ref role="2EWGYF" node="VApoyDH40I" resolve="SellWithDynamicGroup" />
         </node>
       </node>
     </node>
@@ -12605,7 +12605,7 @@
       <property role="0Rz4W" value="1020823016" />
       <node concept="2EWGZN" id="3H4W4dhu8rK" role="2lDidJ">
         <node concept="2EWGYO" id="3H4W4dhu8FU" role="1G1OS$">
-          <ref role="2EWGYF" node="3H4W4dhu01Y" />
+          <ref role="2EWGYF" node="3H4W4dhu01Y" resolve="SellWithDynamicGroupAndSeal" />
         </node>
       </node>
     </node>
@@ -12773,7 +12773,7 @@
       <node concept="1ahQXy" id="3H4W4dhuxz7" role="1ahQWs">
         <property role="TrG5h" value="s" />
         <node concept="2EWGYO" id="3H4W4dhuxzm" role="3ix9CU">
-          <ref role="2EWGYF" node="3H4W4dhu01Y" />
+          <ref role="2EWGYF" node="3H4W4dhu01Y" resolve="SellWithDynamicGroupAndSeal" />
         </node>
       </node>
       <node concept="2lgajY" id="3H4W4dhuABY" role="28QfE6" />
@@ -12866,7 +12866,7 @@
         <property role="TrG5h" value="sale" />
         <node concept="2EWGZN" id="VApoyDIycV" role="2lDidJ">
           <node concept="2EWGYO" id="4J6AqiIN40h" role="1G1OS$">
-            <ref role="2EWGYF" node="4J6AqiIMTCY" />
+            <ref role="2EWGYF" node="4J6AqiIMTCY" resolve="Sale" />
           </node>
         </node>
       </node>
@@ -12877,7 +12877,7 @@
             <node concept="ylO4Q" id="VApoyDIxIu" role="ylO0F">
               <node concept="GZN9E" id="VApoyDIxJe" role="ylO4R" />
               <node concept="2EWGYO" id="VApoyDIxKm" role="ylO4K">
-                <ref role="2EWGYF" node="VApoyDIrC1" />
+                <ref role="2EWGYF" node="VApoyDIrC1" resolve="AccessControl" />
               </node>
             </node>
           </node>
@@ -13036,7 +13036,7 @@
                 <property role="0Rz4W" value="886282053" />
                 <node concept="2EWGZN" id="VApoyDISie" role="2lDidJ">
                   <node concept="2EWGYO" id="VApoyDISoq" role="1G1OS$">
-                    <ref role="2EWGYF" node="VApoyDIrC1" />
+                    <ref role="2EWGYF" node="VApoyDIrC1" resolve="AccessControl" />
                   </node>
                 </node>
               </node>
@@ -13758,7 +13758,7 @@
         <property role="TrG5h" value="shouldWeSell" />
         <node concept="2EWGZN" id="1mDdTGi1PQ" role="2lDidJ">
           <node concept="2EWGYO" id="1mDdTGTndc" role="1G1OS$">
-            <ref role="2EWGYF" node="1mDdTGi1N6" />
+            <ref role="2EWGYF" node="1mDdTGi1N6" resolve="ShouldWeSell" />
           </node>
         </node>
       </node>
@@ -14328,7 +14328,7 @@
         <property role="TrG5h" value="sale" />
         <node concept="2EWGZN" id="4IV0h47E8Jm" role="2lDidJ">
           <node concept="2EWGYO" id="4IV0h47E8Jn" role="1G1OS$">
-            <ref role="2EWGYF" node="4IV0h47E8IN" />
+            <ref role="2EWGYF" node="4IV0h47E8IN" resolve="Sale" />
           </node>
         </node>
       </node>
@@ -14339,7 +14339,7 @@
             <node concept="ylO4Q" id="4IV0h47E8Jr" role="ylO0F">
               <node concept="GZN9E" id="4IV0h47E8Js" role="ylO4R" />
               <node concept="2EWGYO" id="4IV0h47E8Jt" role="ylO4K">
-                <ref role="2EWGYF" node="4IV0h47E8IS" />
+                <ref role="2EWGYF" node="4IV0h47E8IS" resolve="AccessControl" />
               </node>
             </node>
           </node>
@@ -14498,7 +14498,7 @@
                 <property role="0Rz4W" value="285213015" />
                 <node concept="2EWGZN" id="4IV0h47E8Kx" role="2lDidJ">
                   <node concept="2EWGYO" id="4IV0h47E8Ky" role="1G1OS$">
-                    <ref role="2EWGYF" node="4IV0h47E8IS" />
+                    <ref role="2EWGYF" node="4IV0h47E8IS" resolve="AccessControl" />
                   </node>
                 </node>
               </node>
@@ -16019,7 +16019,7 @@
                   </node>
                   <node concept="2EWGZN" id="2DgHCfu$8Kd" role="m5g4p">
                     <node concept="2EWGYO" id="2DgHCfu$8Ke" role="1G1OS$">
-                      <ref role="2EWGYF" node="2DgHCfu$8Ho" />
+                      <ref role="2EWGYF" node="2DgHCfu$8Ho" resolve="ShouldWeSell" />
                     </node>
                   </node>
                 </node>

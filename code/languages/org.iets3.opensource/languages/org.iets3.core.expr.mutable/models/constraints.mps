@@ -13,6 +13,9 @@
     <import index="4lqd" ref="r:4ce62e6d-8c9b-46a5-83ca-ffa0c624b76d(org.iets3.core.expr.mutable.behavior)" implicit="true" />
   </imports>
   <registry>
+    <language id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior">
+      <concept id="3235159848334022093" name="jetbrains.mps.lang.behavior.structure.Node_ConceptMethodCall" flags="nn" index="3zqWPK" />
+    </language>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
       <concept id="1197027756228" name="jetbrains.mps.baseLanguage.structure.DotExpression" flags="nn" index="2OqwBi">
         <child id="1197027771414" name="operand" index="2Oq$k0" />
@@ -57,7 +60,6 @@
       <concept id="1138411891628" name="jetbrains.mps.lang.smodel.structure.SNodeOperation" flags="nn" index="eCIE_">
         <child id="1144104376918" name="parameter" index="1xVPHs" />
       </concept>
-      <concept id="1179409122411" name="jetbrains.mps.lang.smodel.structure.Node_ConceptMethodCall" flags="nn" index="2qgKlT" />
       <concept id="2396822768958367367" name="jetbrains.mps.lang.smodel.structure.AbstractTypeCastExpression" flags="nn" index="$5XWr">
         <child id="6733348108486823193" name="leftExpression" index="1m5AlR" />
         <child id="3906496115198199033" name="conceptArgument" index="3oSUPX" />
@@ -121,12 +123,12 @@
               </node>
               <node concept="nLn13" id="3GdqffBPhRi" role="1m5AlR" />
             </node>
-            <node concept="2qgKlT" id="3GdqffBPjcV" role="2OqNvi">
+            <node concept="3zqWPK" id="5Sy$a0nHmeQ" role="2OqNvi">
               <ref role="37wK5l" to="pbu6:5WNmJ7DokMG" resolve="expectType" />
-              <node concept="35c_gC" id="3GdqffBPjqr" role="37wK5m">
+              <node concept="35c_gC" id="5Sy$a0nHmeS" role="37wK5m">
                 <ref role="35c_gD" to="8lgj:3GdqffBKoAm" resolve="BoxType" />
               </node>
-              <node concept="3clFbT" id="3GdqffBPjV8" role="37wK5m">
+              <node concept="3clFbT" id="5Sy$a0nHmeT" role="37wK5m">
                 <property role="3clFbU" value="false" />
               </node>
             </node>
@@ -189,12 +191,12 @@
               </node>
               <node concept="nLn13" id="7WFhXJlSwxn" role="1m5AlR" />
             </node>
-            <node concept="2qgKlT" id="7WFhXJlSx$o" role="2OqNvi">
+            <node concept="3zqWPK" id="5Sy$a0nHmeU" role="2OqNvi">
               <ref role="37wK5l" to="pbu6:5WNmJ7DokMG" resolve="expectType" />
-              <node concept="35c_gC" id="7WFhXJlSxMl" role="37wK5m">
+              <node concept="35c_gC" id="5Sy$a0nHmeW" role="37wK5m">
                 <ref role="35c_gD" to="8lgj:5y3VELfuT55" resolve="IInteractorType" />
               </node>
-              <node concept="3clFbT" id="7WFhXJlSyAE" role="37wK5m">
+              <node concept="3clFbT" id="5Sy$a0nHmeX" role="37wK5m">
                 <property role="3clFbU" value="false" />
               </node>
             </node>
@@ -220,12 +222,12 @@
               </node>
               <node concept="nLn13" id="3iESbJsCrnN" role="1m5AlR" />
             </node>
-            <node concept="2qgKlT" id="3iESbJsCspn" role="2OqNvi">
+            <node concept="3zqWPK" id="5Sy$a0nHmeY" role="2OqNvi">
               <ref role="37wK5l" to="pbu6:5WNmJ7DokMG" resolve="expectType" />
-              <node concept="35c_gC" id="3iESbJsCsBk" role="37wK5m">
+              <node concept="35c_gC" id="5Sy$a0nHmf0" role="37wK5m">
                 <ref role="35c_gD" to="8lgj:3iESbJsCqWF" resolve="ClockType" />
               </node>
-              <node concept="3clFbT" id="3iESbJsCtok" role="37wK5m">
+              <node concept="3clFbT" id="5Sy$a0nHmf1" role="37wK5m">
                 <property role="3clFbU" value="false" />
               </node>
             </node>
@@ -247,12 +249,12 @@
               </node>
               <node concept="nLn13" id="3iESbJsFvB4" role="1m5AlR" />
             </node>
-            <node concept="2qgKlT" id="3iESbJsFwGf" role="2OqNvi">
+            <node concept="3zqWPK" id="5Sy$a0nHmf2" role="2OqNvi">
               <ref role="37wK5l" to="pbu6:5WNmJ7DokMG" resolve="expectType" />
-              <node concept="35c_gC" id="3iESbJsFwUc" role="37wK5m">
+              <node concept="35c_gC" id="5Sy$a0nHmf4" role="37wK5m">
                 <ref role="35c_gD" to="8lgj:3iESbJsEYtt" resolve="ArtificialClockType" />
               </node>
-              <node concept="3clFbT" id="3iESbJsFy$3" role="37wK5m">
+              <node concept="3clFbT" id="5Sy$a0nHmf5" role="37wK5m">
                 <property role="3clFbU" value="false" />
               </node>
             </node>
@@ -298,7 +300,7 @@
                   </node>
                 </node>
               </node>
-              <node concept="2qgKlT" id="4IV0h47HZ3D" role="2OqNvi">
+              <node concept="3zqWPK" id="5Sy$a0nHmf6" role="2OqNvi">
                 <ref role="37wK5l" to="4lqd:4IV0h47G1Zf" resolve="guaranteesContextArguments" />
               </node>
             </node>

@@ -6,7 +6,7 @@
     <use id="8585453e-6bfb-4d80-98de-b16074f1d86c" name="jetbrains.mps.lang.test" version="6" />
     <use id="f61473f9-130f-42f6-b98d-6c438812c2f6" name="jetbrains.mps.baseLanguage.unitTest" version="1" />
     <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="12" />
-    <use id="a247e09e-2435-45ba-b8d2-07e93feba96a" name="jetbrains.mps.baseLanguage.tuples" version="0" />
+    <use id="a247e09e-2435-45ba-b8d2-07e93feba96a" name="jetbrains.mps.baseLanguage.tuples" version="1" />
     <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="19" />
     <use id="a2242e6f-d308-41e6-ac06-28b0a2a4ad79" name="test.ts.expr.os.validNameConcept" version="0" />
   </languages>
@@ -55,6 +55,9 @@
         <child id="1216989461394" name="nodeToCheck" index="1qenE9" />
       </concept>
       <concept id="1225978065297" name="jetbrains.mps.lang.test.structure.SimpleNodeTest" flags="ng" index="1LZb2c" />
+    </language>
+    <language id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior">
+      <concept id="3235159848334022093" name="jetbrains.mps.lang.behavior.structure.Node_ConceptMethodCall" flags="nn" index="3zqWPK" />
     </language>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
       <concept id="1202948039474" name="jetbrains.mps.baseLanguage.structure.InstanceMethodCallOperation" flags="nn" index="liA8E" />
@@ -148,7 +151,6 @@
       </concept>
     </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
-      <concept id="1179409122411" name="jetbrains.mps.lang.smodel.structure.Node_ConceptMethodCall" flags="nn" index="2qgKlT" />
       <concept id="7453996997717780434" name="jetbrains.mps.lang.smodel.structure.Node_GetSConceptOperation" flags="nn" index="2yIwOk" />
       <concept id="1180636770613" name="jetbrains.mps.lang.smodel.structure.SNodeCreator" flags="nn" index="3zrR0B">
         <child id="1180636770616" name="createdType" index="3zrR0E" />
@@ -211,16 +213,16 @@
                               </node>
                               <node concept="2yIwOk" id="39ERotey$Jr" role="2OqNvi" />
                             </node>
-                            <node concept="2qgKlT" id="39ERotey$Js" role="2OqNvi">
+                            <node concept="3zqWPK" id="5Sy$a0nHnhP" role="2OqNvi">
                               <ref role="37wK5l" to="gdgh:39ERoteujbz" resolve="isValidName" />
-                              <node concept="3cpWs3" id="39ERotezyz2" role="37wK5m">
-                                <node concept="37vLTw" id="39ERotezyzb" role="3uHU7B">
+                              <node concept="3cpWs3" id="5Sy$a0nHnhR" role="37wK5m">
+                                <node concept="37vLTw" id="5Sy$a0nHnhS" role="3uHU7B">
                                   <ref role="3cqZAo" node="39ERotezxTS" resolve="prefix" />
                                 </node>
-                                <node concept="2YIFZM" id="39ERoteDp3f" role="3uHU7w">
+                                <node concept="2YIFZM" id="5Sy$a0nHnhT" role="3uHU7w">
                                   <ref role="37wK5l" to="wyt6:~Character.toString(int)" resolve="toString" />
                                   <ref role="1Pybhc" to="wyt6:~Character" resolve="Character" />
-                                  <node concept="37vLTw" id="39ERoteDp3g" role="37wK5m">
+                                  <node concept="37vLTw" id="5Sy$a0nHnhU" role="37wK5m">
                                     <ref role="3cqZAo" node="39ERotey$Jx" resolve="c" />
                                   </node>
                                 </node>

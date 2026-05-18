@@ -15,6 +15,9 @@
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
   </imports>
   <registry>
+    <language id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior">
+      <concept id="3235159848334022093" name="jetbrains.mps.lang.behavior.structure.Node_ConceptMethodCall" flags="nn" index="3zqWPK" />
+    </language>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
       <concept id="1080223426719" name="jetbrains.mps.baseLanguage.structure.OrExpression" flags="nn" index="22lmx$" />
       <concept id="1215693861676" name="jetbrains.mps.baseLanguage.structure.BaseAssignmentExpression" flags="nn" index="d038R">
@@ -115,7 +118,6 @@
       <concept id="1177026924588" name="jetbrains.mps.lang.smodel.structure.RefConcept_Reference" flags="nn" index="chp4Y">
         <reference id="1177026940964" name="conceptDeclaration" index="cht4Q" />
       </concept>
-      <concept id="1179409122411" name="jetbrains.mps.lang.smodel.structure.Node_ConceptMethodCall" flags="nn" index="2qgKlT" />
       <concept id="1138661924179" name="jetbrains.mps.lang.smodel.structure.Property_SetOperation" flags="nn" index="tyxLq">
         <child id="1138662048170" name="value" index="tz02z" />
       </concept>
@@ -169,9 +171,9 @@
                 <node concept="35c_gC" id="2zI9HllFqVB" role="2Oq$k0">
                   <ref role="35c_gD" to="l80j:7QsdZDAwecO" resolve="IUseSolver" />
                 </node>
-                <node concept="2qgKlT" id="2zI9HllFqVC" role="2OqNvi">
+                <node concept="3zqWPK" id="5Sy$a0nHnyp" role="2OqNvi">
                   <ref role="37wK5l" to="1jcu:7QsdZDAweeW" resolve="isSolverEnabled" />
-                  <node concept="2Sf5sV" id="2zI9HllFqVD" role="37wK5m" />
+                  <node concept="2Sf5sV" id="5Sy$a0nHnyr" role="37wK5m" />
                 </node>
               </node>
             </node>
@@ -311,9 +313,9 @@
                 <node concept="35c_gC" id="2zI9HllF$so" role="2Oq$k0">
                   <ref role="35c_gD" to="l80j:7QsdZDAwecO" resolve="IUseSolver" />
                 </node>
-                <node concept="2qgKlT" id="2zI9HllF$sp" role="2OqNvi">
+                <node concept="3zqWPK" id="5Sy$a0nHnys" role="2OqNvi">
                   <ref role="37wK5l" to="1jcu:7QsdZDAweeW" resolve="isSolverEnabled" />
-                  <node concept="2Sf5sV" id="2zI9HllF$sq" role="37wK5m" />
+                  <node concept="2Sf5sV" id="5Sy$a0nHnyu" role="37wK5m" />
                 </node>
               </node>
             </node>
@@ -634,9 +636,9 @@
               <node concept="35c_gC" id="7QsdZDAwiKU" role="2Oq$k0">
                 <ref role="35c_gD" to="l80j:7QsdZDAwecO" resolve="IUseSolver" />
               </node>
-              <node concept="2qgKlT" id="7QsdZDAwk0z" role="2OqNvi">
+              <node concept="3zqWPK" id="5Sy$a0nHnyv" role="2OqNvi">
                 <ref role="37wK5l" to="1jcu:7QsdZDAweeW" resolve="isSolverEnabled" />
-                <node concept="2Sf5sV" id="7QsdZDAwmXz" role="37wK5m" />
+                <node concept="2Sf5sV" id="5Sy$a0nHnyx" role="37wK5m" />
               </node>
             </node>
           </node>

@@ -51,6 +51,9 @@
       </concept>
       <concept id="1225978065297" name="jetbrains.mps.lang.test.structure.SimpleNodeTest" flags="ng" index="1LZb2c" />
     </language>
+    <language id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior">
+      <concept id="3235159848334022093" name="jetbrains.mps.lang.behavior.structure.Node_ConceptMethodCall" flags="nn" index="3zqWPK" />
+    </language>
     <language id="2f7e2e35-6e74-4c43-9fa5-2465d68f5996" name="org.iets3.core.expr.collections">
       <concept id="7554398283339749509" name="org.iets3.core.expr.collections.structure.CollectionType" flags="ng" index="3iBWmN">
         <child id="7554398283339749510" name="baseType" index="3iBWmK" />
@@ -227,7 +230,6 @@
       </concept>
     </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
-      <concept id="1179409122411" name="jetbrains.mps.lang.smodel.structure.Node_ConceptMethodCall" flags="nn" index="2qgKlT" />
       <concept id="1138055754698" name="jetbrains.mps.lang.smodel.structure.SNodeType" flags="in" index="3Tqbb2">
         <reference id="1138405853777" name="concept" index="ehGHo" />
       </concept>
@@ -295,7 +297,7 @@
               <node concept="3xONca" id="2z$ejgXwXMK" role="2Oq$k0">
                 <ref role="3xOPvv" node="2z$ejgXwXlx" resolve="sendMsg" />
               </node>
-              <node concept="2qgKlT" id="2z$ejgXwXML" role="2OqNvi">
+              <node concept="3zqWPK" id="5Sy$a0nHmcK" role="2OqNvi">
                 <ref role="37wK5l" to="ktvs:2z$ejgXvKUY" resolve="allMessageArguments" />
               </node>
             </node>
@@ -332,7 +334,7 @@
               <node concept="3xONca" id="2z$ejgXx4Wv" role="2Oq$k0">
                 <ref role="3xOPvv" node="2z$ejgXwXlS" resolve="reqMsg" />
               </node>
-              <node concept="2qgKlT" id="2z$ejgXx3h_" role="2OqNvi">
+              <node concept="3zqWPK" id="5Sy$a0nHmcM" role="2OqNvi">
                 <ref role="37wK5l" to="ktvs:2z$ejgXvKUY" resolve="allMessageArguments" />
               </node>
             </node>
