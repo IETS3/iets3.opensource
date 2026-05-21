@@ -13,6 +13,7 @@
     <use id="165f1d05-2506-4544-895e-1424f54166ec" name="org.iets3.variability.featuremodel.base" version="24" />
     <use id="c7fb639f-be78-4307-89b0-b5959c3fa8c8" name="jetbrains.mps.lang.text" version="0" />
     <use id="6b277d9a-d52d-416f-a209-1919bd737f50" name="org.iets3.core.expr.simpleTypes" version="11" />
+    <use id="d7a92d38-f7db-40d0-8431-763b0c3c9f20" name="jetbrains.mps.lang.intentions" version="1" />
   </languages>
   <imports>
     <import index="lte6" ref="r:dedd19c9-9ff3-4f30-aa73-ce61203b2296(org.iets3.variability.configuration.base.behavior)" />
@@ -20,6 +21,7 @@
     <import index="urik" ref="r:791971f5-b094-4342-a75c-0ce6c1b43e9d(org.iets3.variability.configuration.base.typesystem)" />
     <import index="s6b7" ref="r:a7e2f963-3e46-49e0-a385-e8c7f33c91b7(org.iets3.variability.featuremodel.base.structure)" />
     <import index="8w4h" ref="r:47440061-d7b2-45b0-8507-64028fc49a72(test.org.iets3.common.base.util)" />
+    <import index="nzwl" ref="r:dfaa2422-aef5-456d-a8cd-942c81b870e6(org.iets3.variability.configuration.base.intentions)" />
   </imports>
   <registry>
     <language id="8585453e-6bfb-4d80-98de-b16074f1d86c" name="jetbrains.mps.lang.test">
@@ -7279,6 +7281,529 @@
           </node>
           <node concept="3xLA65" id="3lB$zWdyvkF" role="lGtFl">
             <property role="TrG5h" value="expected" />
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="1lH9Xt" id="1LW76QFXY$Y">
+    <property role="3DII0k" value="2hh8MJdVwqX/command" />
+    <property role="TrG5h" value="InlineReferencedConfigurations" />
+    <node concept="1LZb2c" id="1LW76QFYajo" role="1SL9yI">
+      <property role="TrG5h" value="inlne" />
+      <node concept="3cqZAl" id="1LW76QFYajp" role="3clF45" />
+      <node concept="3clFbS" id="1LW76QFYajt" role="3clF47">
+        <node concept="3clFbF" id="1LW76QFY46M" role="3cqZAp">
+          <node concept="2YIFZM" id="1LW76QFY46L" role="3clFbG">
+            <ref role="1Pybhc" to="nzwl:3GsRbmWlMok" resolve="IntentionUtilConfiguration" />
+            <ref role="37wK5l" to="nzwl:1LW76QFY46H" resolve="doInlining" />
+            <node concept="3xONca" id="1LW76QFY$RZ" role="37wK5m">
+              <ref role="3xOPvv" node="1LW76QFYoP$" resolve="shallowExtends" />
+            </node>
+          </node>
+        </node>
+        <node concept="3GXo0L" id="1LW76QG07qC" role="3cqZAp">
+          <node concept="3xONca" id="1LW76QG09Us" role="3tpDZB">
+            <ref role="3xOPvv" node="1LW76QFZQck" resolve="shallowExtendsExpected" />
+          </node>
+          <node concept="3xONca" id="1LW76QG0f37" role="3tpDZA">
+            <ref role="3xOPvv" node="1LW76QFYoP$" resolve="shallowExtends" />
+          </node>
+          <node concept="2YIFZM" id="1LW76QG07qF" role="1nr0yI">
+            <ref role="37wK5l" to="8w4h:38zJ$UFea15" resolve="commonPropertiesToIgnore" />
+            <ref role="1Pybhc" to="8w4h:38zJ$UFea12" resolve="CommonTestUtil" />
+          </node>
+        </node>
+        <node concept="3clFbH" id="1LW76QG0518" role="3cqZAp" />
+      </node>
+    </node>
+    <node concept="1qefOq" id="1LW76QFY0vE" role="1SKRRt">
+      <node concept="12icEM" id="5o9wjw0derN" role="1qenE9">
+        <property role="TrG5h" value="CarVariability" />
+        <node concept="12iwZl" id="1LW76QFY0vG" role="12i2BX">
+          <property role="bVyBI" value="-410915801" />
+          <node concept="12iwV3" id="1LW76QFY0vH" role="12iwV8">
+            <property role="TrG5h" value="Seat" />
+            <node concept="12iwV3" id="1LW76QFY0vI" role="12iwVe">
+              <property role="TrG5h" value="Heating" />
+            </node>
+            <node concept="12iwV3" id="1LW76QFY0vJ" role="12iwVe">
+              <property role="TrG5h" value="Sport" />
+            </node>
+            <node concept="12iwV3" id="1LW76QFY0vK" role="12iwVe">
+              <property role="TrG5h" value="Leather" />
+            </node>
+            <node concept="21CcQa" id="uvsslJvUA7" role="21CcQ0">
+              <node concept="3o403X" id="uvsslJvUAP" role="21CcQ9">
+                <node concept="21nZkD" id="uvsslJvUBv" role="30dEs_">
+                  <ref role="21nZkZ" node="1LW76QFY0vK" resolve="Leather" />
+                </node>
+                <node concept="21nZkD" id="uvsslJvUAo" role="30dEsF">
+                  <ref role="21nZkZ" node="1LW76QFY0vJ" resolve="Sport" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="12i7jc" id="1LW76QFY0vL" role="12i2BX" />
+        <node concept="rqKB5" id="594_IbYjBZl" role="12i2BX">
+          <property role="26YOJW" value="" />
+          <property role="bVyBI" value="-1019987609" />
+          <property role="bROok" value="-410915801" />
+          <property role="1n_0Gn" value="true" />
+          <property role="0Rz4W" value="-394682457" />
+          <property role="TrG5h" value="StandardSeat" />
+          <property role="1nQUAq" value="true" />
+          <ref role="rqKBe" node="1LW76QFY0vH" resolve="Seat" />
+          <node concept="rqCGG" id="594_IbYjBZo" role="rqCGo">
+            <node concept="rqKBd" id="594_IbYjBZp" role="rqKBa">
+              <property role="3BMj5M" value="5QKr2dW9gE1/userFalse" />
+              <ref role="rqKBe" node="1LW76QFY0vI" resolve="Heating" />
+              <node concept="rqCGG" id="594_IbYjBZq" role="rqCGo" />
+            </node>
+            <node concept="rqKBd" id="594_IbYjBZr" role="rqKBa">
+              <property role="3BMj5M" value="5QKr2dW9gE1/userFalse" />
+              <ref role="rqKBe" node="1LW76QFY0vJ" resolve="Sport" />
+              <node concept="rqCGG" id="594_IbYjBZs" role="rqCGo" />
+            </node>
+            <node concept="rqKBd" id="594_IbYjBZt" role="rqKBa">
+              <property role="3BMj5M" value="5QKr2dW9gE1/userFalse" />
+              <ref role="rqKBe" node="1LW76QFY0vK" resolve="Leather" />
+              <node concept="rqCGG" id="594_IbYjBZu" role="rqCGo" />
+            </node>
+          </node>
+        </node>
+        <node concept="12i7jc" id="594_IbYjBYG" role="12i2BX" />
+        <node concept="rqKB5" id="1LW76QFY0vM" role="12i2BX">
+          <property role="0Rz4W" value="532888402" />
+          <property role="TrG5h" value="SportsSeat" />
+          <property role="bVyBI" value="-403393197" />
+          <property role="1n_0Gn" value="true" />
+          <property role="26YOJW" value="" />
+          <property role="33ZQ4u" value="true" />
+          <property role="bROok" value="-410915801" />
+          <property role="1nQUAq" value="true" />
+          <ref role="rqKBe" node="1LW76QFY0vH" resolve="Seat" />
+          <node concept="rqCGG" id="1LW76QFY0vN" role="rqCGo">
+            <node concept="rqKBd" id="1LW76QFY0vO" role="rqKBa">
+              <ref role="rqKBe" node="1LW76QFY0vI" resolve="Heating" />
+              <node concept="rqCGG" id="1LW76QFY0vP" role="rqCGo" />
+            </node>
+            <node concept="rqKBd" id="1LW76QFY0vQ" role="rqKBa">
+              <property role="3BMj5M" value="5QKr2dW9gDW/userTrue" />
+              <ref role="rqKBe" node="1LW76QFY0vJ" resolve="Sport" />
+              <node concept="rqCGG" id="1LW76QFY0vR" role="rqCGo" />
+            </node>
+            <node concept="rqKBd" id="1LW76QFY0vS" role="rqKBa">
+              <property role="3BMj5M" value="5QKr2dW9gDP/autoTrue" />
+              <ref role="rqKBe" node="1LW76QFY0vK" resolve="Leather" />
+              <node concept="rqCGG" id="1LW76QFY0vT" role="rqCGo" />
+            </node>
+          </node>
+        </node>
+        <node concept="12i7jc" id="1LW76QFY0vU" role="12i2BX" />
+        <node concept="rqKB5" id="1LW76QFY0vV" role="12i2BX">
+          <property role="bVyBI" value="1069314315" />
+          <property role="0Rz4W" value="1497836319" />
+          <property role="TrG5h" value="ComfortSportSeat" />
+          <property role="1n_0Gn" value="true" />
+          <property role="26YOJW" value="" />
+          <property role="bROok" value="-403393197" />
+          <property role="1nQUAq" value="true" />
+          <ref role="rqKBe" node="1LW76QFY0vH" resolve="Seat" />
+          <node concept="rqCGG" id="1LW76QFY0vW" role="rqCGo">
+            <node concept="rqKBd" id="uvsslJvUjo" role="rqKBa">
+              <property role="3BMj5M" value="5QKr2dW9gDW/userTrue" />
+              <ref role="rqKBe" node="1LW76QFY0vI" resolve="Heating" />
+              <node concept="rqCGG" id="uvsslJvUjp" role="rqCGo" />
+            </node>
+          </node>
+          <node concept="30ne8c" id="uvsslJvUw4" role="30ne9f">
+            <ref role="30ne9N" node="1LW76QFY0vM" resolve="SportsSeat" />
+          </node>
+        </node>
+        <node concept="12i7jc" id="1LW76QFY0vX" role="12i2BX" />
+        <node concept="rqKB5" id="594_IbYjCvp" role="12i2BX">
+          <property role="26YOJW" value="" />
+          <property role="bVyBI" value="-1745964375" />
+          <property role="bROok" value="-403393197" />
+          <property role="1n_0Gn" value="true" />
+          <property role="0Rz4W" value="-265118366" />
+          <property role="TrG5h" value="StandardSport" />
+          <property role="1nQUAq" value="true" />
+          <ref role="rqKBe" node="1LW76QFY0vH" resolve="Seat" />
+          <node concept="rqCGG" id="594_IbYjCvs" role="rqCGo">
+            <node concept="rqKBd" id="594_IbYjCvt" role="rqKBa">
+              <property role="3BMj5M" value="5QKr2dW9gE1/userFalse" />
+              <ref role="rqKBe" node="1LW76QFY0vI" resolve="Heating" />
+              <node concept="rqCGG" id="594_IbYjCvu" role="rqCGo" />
+            </node>
+          </node>
+          <node concept="30ne8c" id="594_IbYjCAU" role="30ne9f">
+            <ref role="30ne9N" node="1LW76QFY0vM" resolve="SportsSeat" />
+          </node>
+        </node>
+        <node concept="12i7jc" id="594_IbYjCuK" role="12i2BX" />
+        <node concept="rqKB5" id="1LW76QFY0vY" role="12i2BX">
+          <property role="bVyBI" value="283420130" />
+          <property role="0Rz4W" value="1665079523" />
+          <property role="TrG5h" value="ComfortSeat" />
+          <property role="1n_0Gn" value="true" />
+          <property role="26YOJW" value="" />
+          <property role="33ZQ4u" value="true" />
+          <property role="bROok" value="-410915801" />
+          <property role="1nQUAq" value="true" />
+          <ref role="rqKBe" node="1LW76QFY0vH" resolve="Seat" />
+          <node concept="rqCGG" id="1LW76QFY0vZ" role="rqCGo">
+            <node concept="rqKBd" id="1LW76QFY0w0" role="rqKBa">
+              <property role="3BMj5M" value="5QKr2dW9gDW/userTrue" />
+              <ref role="rqKBe" node="1LW76QFY0vI" resolve="Heating" />
+              <node concept="rqCGG" id="1LW76QFY0w1" role="rqCGo" />
+            </node>
+            <node concept="rqKBd" id="1LW76QFY0w2" role="rqKBa">
+              <property role="3BMj5M" value="5QKr2dW9gE1/userFalse" />
+              <ref role="rqKBe" node="1LW76QFY0vJ" resolve="Sport" />
+              <node concept="rqCGG" id="1LW76QFY0w3" role="rqCGo" />
+            </node>
+            <node concept="rqKBd" id="1LW76QFY0w4" role="rqKBa">
+              <ref role="rqKBe" node="1LW76QFY0vK" resolve="Leather" />
+              <node concept="rqCGG" id="1LW76QFY0w5" role="rqCGo" />
+            </node>
+          </node>
+        </node>
+        <node concept="12i7jc" id="1LW76QFY0w6" role="12i2BX" />
+        <node concept="rqKB5" id="74692at5PjB" role="12i2BX">
+          <property role="bVyBI" value="578707684" />
+          <property role="TrG5h" value="LuxurySeat" />
+          <property role="0Rz4W" value="-1887495323" />
+          <property role="1n_0Gn" value="true" />
+          <property role="26YOJW" value="" />
+          <property role="bROok" value="283420130" />
+          <property role="1nQUAq" value="true" />
+          <ref role="rqKBe" node="1LW76QFY0vH" resolve="Seat" />
+          <node concept="rqCGG" id="74692at5PjE" role="rqCGo">
+            <node concept="rqKBd" id="74692at5PjL" role="rqKBa">
+              <property role="3BMj5M" value="5QKr2dW9gDW/userTrue" />
+              <ref role="rqKBe" node="1LW76QFY0vK" resolve="Leather" />
+              <node concept="rqCGG" id="74692at5PjN" role="rqCGo" />
+            </node>
+          </node>
+          <node concept="30ne8c" id="74692at5Po5" role="30ne9f">
+            <ref role="30ne9N" node="1LW76QFY0vY" resolve="ComfortSeat" />
+          </node>
+        </node>
+        <node concept="12i7jc" id="1LW76QFY0w7" role="12i2BX" />
+        <node concept="12i7jc" id="74692at5QhL" role="12i2BX" />
+        <node concept="12i7jc" id="74692at5Qiq" role="12i2BX" />
+        <node concept="12iwZl" id="1LW76QFY0w8" role="12i2BX">
+          <property role="bVyBI" value="-1166122711" />
+          <node concept="12iwV3" id="1LW76QFY0w9" role="12iwV8">
+            <property role="TrG5h" value="Car" />
+            <node concept="12iSMG" id="1LW76QFY0wa" role="12iwVe">
+              <property role="TrG5h" value="driver" />
+              <property role="12h82M" value="true" />
+              <ref role="12iSMH" node="1LW76QFY0vG" resolve="Seat" />
+            </node>
+            <node concept="12iSMG" id="1LW76QFY0wb" role="12iwVe">
+              <property role="TrG5h" value="passenger" />
+              <ref role="12iSMH" node="1LW76QFY0vG" resolve="Seat" />
+            </node>
+            <node concept="12iwV3" id="74692at5OWW" role="12iwVe">
+              <property role="TrG5h" value="Electric" />
+            </node>
+          </node>
+        </node>
+        <node concept="12i7jc" id="1LW76QFY0wc" role="12i2BX" />
+        <node concept="rqKB5" id="594_IbYjKRX" role="12i2BX">
+          <property role="26YOJW" value="" />
+          <property role="bVyBI" value="-1521787967" />
+          <property role="bROok" value="-772674392" />
+          <property role="1n_0Gn" value="true" />
+          <property role="0Rz4W" value="1452517827" />
+          <property role="TrG5h" value="Maybach" />
+          <property role="1nQUAq" value="true" />
+          <ref role="rqKBe" node="1LW76QFY0w9" resolve="Car" />
+          <node concept="rqCGG" id="594_IbYjKS0" role="rqCGo">
+            <node concept="rqKBd" id="594_IbYjKS1" role="rqKBa">
+              <property role="3BMj5M" value="5QKr2dW9gDP/autoTrue" />
+              <ref role="rqKBe" node="1LW76QFY0wa" resolve="driver" />
+              <node concept="rqCGG" id="594_IbYjL0b" role="rqCGo">
+                <node concept="rqKBd" id="594_IbYjL0c" role="rqKBa">
+                  <property role="3BMj5M" value="5QKr2dW9gDW/userTrue" />
+                  <ref role="rqKBe" node="1LW76QFY0vI" resolve="Heating" />
+                  <node concept="rqCGG" id="594_IbYjL0d" role="rqCGo" />
+                </node>
+                <node concept="rqKBd" id="594_IbYjL0e" role="rqKBa">
+                  <property role="3BMj5M" value="5QKr2dW9gE1/userFalse" />
+                  <ref role="rqKBe" node="1LW76QFY0vJ" resolve="Sport" />
+                  <node concept="rqCGG" id="594_IbYjL0f" role="rqCGo" />
+                </node>
+                <node concept="rqKBd" id="594_IbYjL0g" role="rqKBa">
+                  <property role="3BMj5M" value="5QKr2dW9gDW/userTrue" />
+                  <ref role="rqKBe" node="1LW76QFY0vK" resolve="Leather" />
+                  <node concept="rqCGG" id="594_IbYjL0h" role="rqCGo" />
+                </node>
+              </node>
+            </node>
+            <node concept="rqKBd" id="594_IbYjKS3" role="rqKBa">
+              <property role="3BMj5M" value="5QKr2dW9gDP/autoTrue" />
+              <ref role="rqKBe" node="1LW76QFY0wb" resolve="passenger" />
+              <node concept="rqCGG" id="594_IbYjL0U" role="rqCGo">
+                <node concept="rqKBd" id="594_IbYjL0V" role="rqKBa">
+                  <property role="3BMj5M" value="5QKr2dW9gDW/userTrue" />
+                  <ref role="rqKBe" node="1LW76QFY0vI" resolve="Heating" />
+                  <node concept="rqCGG" id="594_IbYjL0W" role="rqCGo" />
+                </node>
+                <node concept="rqKBd" id="594_IbYjL0X" role="rqKBa">
+                  <property role="3BMj5M" value="5QKr2dW9gE1/userFalse" />
+                  <ref role="rqKBe" node="1LW76QFY0vJ" resolve="Sport" />
+                  <node concept="rqCGG" id="594_IbYjL0Y" role="rqCGo" />
+                </node>
+                <node concept="rqKBd" id="594_IbYjL0Z" role="rqKBa">
+                  <property role="3BMj5M" value="5QKr2dW9gDW/userTrue" />
+                  <ref role="rqKBe" node="1LW76QFY0vK" resolve="Leather" />
+                  <node concept="rqCGG" id="594_IbYjL10" role="rqCGo" />
+                </node>
+              </node>
+            </node>
+            <node concept="rqKBd" id="594_IbYjKS5" role="rqKBa">
+              <property role="3BMj5M" value="5QKr2dW9gE1/userFalse" />
+              <ref role="rqKBe" node="74692at5OWW" resolve="Electric" />
+              <node concept="rqCGG" id="594_IbYjKS6" role="rqCGo" />
+            </node>
+          </node>
+        </node>
+        <node concept="12i7jc" id="594_IbYjN09" role="12i2BX" />
+        <node concept="rqKB5" id="594_IbYjN3Y" role="12i2BX">
+          <property role="26YOJW" value="" />
+          <property role="bVyBI" value="-1856282067" />
+          <property role="bROok" value="-1166122711" />
+          <property role="1n_0Gn" value="true" />
+          <property role="0Rz4W" value="-1390842417" />
+          <property role="TrG5h" value="Maybach2" />
+          <property role="1nQUAq" value="true" />
+          <ref role="rqKBe" node="1LW76QFY0w9" resolve="Car" />
+          <node concept="rqCGG" id="594_IbYjN41" role="rqCGo">
+            <node concept="rqKBd" id="594_IbYjN42" role="rqKBa">
+              <property role="3BMj5M" value="5QKr2dW9gDP/autoTrue" />
+              <ref role="rqKBe" node="1LW76QFY0wa" resolve="driver" />
+              <node concept="rqMQU" id="594_IbYjOL6" role="rqCGo">
+                <ref role="rqMQV" node="74692at5PjB" resolve="LuxurySeat" />
+              </node>
+            </node>
+            <node concept="rqKBd" id="594_IbYjN44" role="rqKBa">
+              <property role="3BMj5M" value="5QKr2dW9gDP/autoTrue" />
+              <ref role="rqKBe" node="1LW76QFY0wb" resolve="passenger" />
+              <node concept="rqMQU" id="594_IbYjNph" role="rqCGo">
+                <ref role="rqMQV" node="74692at5PjB" resolve="LuxurySeat" />
+              </node>
+            </node>
+            <node concept="rqKBd" id="594_IbYjN46" role="rqKBa">
+              <property role="3BMj5M" value="5QKr2dW9gE1/userFalse" />
+              <ref role="rqKBe" node="74692at5OWW" resolve="Electric" />
+              <node concept="rqCGG" id="594_IbYjN47" role="rqCGo" />
+            </node>
+          </node>
+        </node>
+        <node concept="12i7jc" id="594_IbYjDn_" role="12i2BX" />
+        <node concept="12i7jc" id="594_IbYjKRj" role="12i2BX" />
+        <node concept="12i7jc" id="594_IbYjMXC" role="12i2BX" />
+        <node concept="rqKB5" id="1ZOb_3zYiPn" role="12i2BX">
+          <property role="bVyBI" value="-1595396674" />
+          <property role="0Rz4W" value="-1401752026" />
+          <property role="TrG5h" value="SportsCar" />
+          <property role="1n_0Gn" value="true" />
+          <property role="26YOJW" value="" />
+          <property role="33ZQ4u" value="true" />
+          <property role="bROok" value="-1166122711" />
+          <property role="1nQUAq" value="true" />
+          <ref role="rqKBe" node="1LW76QFY0w9" resolve="Car" />
+          <node concept="rqCGG" id="1ZOb_3zYiPq" role="rqCGo">
+            <node concept="rqKBd" id="1ZOb_3zYiPr" role="rqKBa">
+              <property role="3BMj5M" value="5QKr2dW9gDP/autoTrue" />
+              <ref role="rqKBe" node="1LW76QFY0wa" resolve="driver" />
+              <node concept="rqMQU" id="1ZOb_3zYjdF" role="rqCGo">
+                <ref role="rqMQV" node="1LW76QFY0vM" resolve="SportsSeat" />
+              </node>
+            </node>
+            <node concept="rqKBd" id="1ZOb_3zYiPB" role="rqKBa">
+              <ref role="rqKBe" node="1LW76QFY0wb" resolve="passenger" />
+              <node concept="3hCpYG" id="74692at5SkC" role="rqCGo" />
+            </node>
+            <node concept="rqKBd" id="74692at5OYe" role="rqKBa">
+              <property role="3BMj5M" value="5QKr2dW9gE1/userFalse" />
+              <ref role="rqKBe" node="74692at5OWW" resolve="Electric" />
+              <node concept="rqCGG" id="74692at5OYd" role="rqCGo" />
+            </node>
+          </node>
+        </node>
+        <node concept="12i7jc" id="594_IbYjCu7" role="12i2BX" />
+        <node concept="12i7jc" id="1ZOb_3zYj3h" role="12i2BX" />
+        <node concept="rqKB5" id="594_IbYj$Ks" role="12i2BX">
+          <property role="26YOJW" value="" />
+          <property role="bVyBI" value="-1906696513" />
+          <property role="bROok" value="-1595396674" />
+          <property role="1n_0Gn" value="true" />
+          <property role="0Rz4W" value="-1969966358" />
+          <property role="TrG5h" value="Porsche" />
+          <property role="1nQUAq" value="true" />
+          <ref role="rqKBe" node="1LW76QFY0w9" resolve="Car" />
+          <node concept="rqCGG" id="594_IbYj$Kv" role="rqCGo">
+            <node concept="rqKBd" id="594_IbYj$Kw" role="rqKBa">
+              <property role="3BMj5M" value="2wLdcSYDcHT/inheritedTrue" />
+              <ref role="rqKBe" node="1LW76QFY0wa" resolve="driver" />
+              <node concept="rqMQU" id="594_IbYjBxf" role="rqCGo">
+                <ref role="rqMQV" node="1LW76QFY0vV" resolve="ComfortSportSeat" />
+              </node>
+            </node>
+            <node concept="rqKBd" id="594_IbYj$Ky" role="rqKBa">
+              <property role="3BMj5M" value="5QKr2dW9gDP/autoTrue" />
+              <ref role="rqKBe" node="1LW76QFY0wb" resolve="passenger" />
+              <node concept="rqMQU" id="594_IbYjBKq" role="rqCGo">
+                <ref role="rqMQV" node="1LW76QFY0vV" resolve="ComfortSportSeat" />
+              </node>
+            </node>
+          </node>
+          <node concept="30ne8c" id="594_IbYj$TV" role="30ne9f">
+            <ref role="30ne9N" node="1ZOb_3zYiPn" resolve="SportsCar" />
+          </node>
+        </node>
+        <node concept="12i7jc" id="7FmxG8fAsrJ" role="12i2BX" />
+        <node concept="rqKB5" id="594_IbYjCLL" role="12i2BX">
+          <property role="26YOJW" value="" />
+          <property role="bVyBI" value="-67856204" />
+          <property role="bROok" value="-1595396674" />
+          <property role="1n_0Gn" value="true" />
+          <property role="0Rz4W" value="-1502463938" />
+          <property role="TrG5h" value="Manta" />
+          <property role="1nQUAq" value="true" />
+          <ref role="rqKBe" node="1LW76QFY0w9" resolve="Car" />
+          <node concept="rqCGG" id="594_IbYjCLO" role="rqCGo">
+            <node concept="rqKBd" id="594_IbYjCLP" role="rqKBa">
+              <property role="3BMj5M" value="2wLdcSYDcHT/inheritedTrue" />
+              <ref role="rqKBe" node="1LW76QFY0wa" resolve="driver" />
+              <node concept="rqMQU" id="594_IbYjCVj" role="rqCGo">
+                <ref role="rqMQV" node="594_IbYjCvp" resolve="StandardSport" />
+              </node>
+            </node>
+            <node concept="rqKBd" id="594_IbYjCLR" role="rqKBa">
+              <property role="3BMj5M" value="5QKr2dW9gDW/userTrue" />
+              <ref role="rqKBe" node="1LW76QFY0wb" resolve="passenger" />
+              <node concept="rqMQU" id="594_IbYjD2J" role="rqCGo">
+                <ref role="rqMQV" node="594_IbYjBZl" resolve="StandardSeat" />
+              </node>
+            </node>
+          </node>
+          <node concept="30ne8c" id="594_IbYjCU0" role="30ne9f">
+            <ref role="30ne9N" node="1ZOb_3zYiPn" resolve="SportsCar" />
+          </node>
+        </node>
+        <node concept="12i7jc" id="1LW76QFY0wd" role="12i2BX" />
+        <node concept="rqKB5" id="594_IbYjDoQ" role="12i2BX">
+          <property role="26YOJW" value="" />
+          <property role="bVyBI" value="776880009" />
+          <property role="bROok" value="-1166122711" />
+          <property role="1n_0Gn" value="true" />
+          <property role="0Rz4W" value="12651182" />
+          <property role="TrG5h" value="ElectricCar" />
+          <property role="33ZQ4u" value="true" />
+          <property role="1nQUAq" value="true" />
+          <ref role="rqKBe" node="1LW76QFY0w9" resolve="Car" />
+          <node concept="rqCGG" id="594_IbYjDoT" role="rqCGo">
+            <node concept="rqKBd" id="594_IbYjDoU" role="rqKBa">
+              <property role="3BMj5M" value="5QKr2dW9gDP/autoTrue" />
+              <ref role="rqKBe" node="1LW76QFY0wa" resolve="driver" />
+              <node concept="3hCpYG" id="594_IbYjDoV" role="rqCGo" />
+            </node>
+            <node concept="rqKBd" id="594_IbYjDoW" role="rqKBa">
+              <ref role="rqKBe" node="1LW76QFY0wb" resolve="passenger" />
+              <node concept="3hCpYG" id="594_IbYjDoX" role="rqCGo" />
+            </node>
+            <node concept="rqKBd" id="594_IbYjDoY" role="rqKBa">
+              <property role="3BMj5M" value="5QKr2dW9gDW/userTrue" />
+              <ref role="rqKBe" node="74692at5OWW" resolve="Electric" />
+              <node concept="rqCGG" id="594_IbYjDoZ" role="rqCGo" />
+            </node>
+          </node>
+        </node>
+        <node concept="12i7jc" id="1LW76QFY0we" role="12i2BX" />
+        <node concept="rqKB5" id="594_IbYjDEr" role="12i2BX">
+          <property role="26YOJW" value="" />
+          <property role="bVyBI" value="-529952027" />
+          <property role="bROok" value="776880009" />
+          <property role="1n_0Gn" value="true" />
+          <property role="0Rz4W" value="1411497456" />
+          <property role="TrG5h" value="BYD" />
+          <property role="1nQUAq" value="true" />
+          <ref role="rqKBe" node="1LW76QFY0w9" resolve="Car" />
+          <node concept="rqCGG" id="594_IbYjDEu" role="rqCGo">
+            <node concept="rqKBd" id="594_IbYjDEv" role="rqKBa">
+              <property role="3BMj5M" value="2wLdcSYDcHT/inheritedTrue" />
+              <ref role="rqKBe" node="1LW76QFY0wa" resolve="driver" />
+              <node concept="rqMQU" id="594_IbYjDNk" role="rqCGo">
+                <ref role="rqMQV" node="594_IbYjBZl" resolve="StandardSeat" />
+              </node>
+              <node concept="3xLA65" id="1LW76QFYoP$" role="lGtFl">
+                <property role="TrG5h" value="shallowExtends" />
+              </node>
+            </node>
+            <node concept="rqKBd" id="594_IbYjDEx" role="rqKBa">
+              <property role="3BMj5M" value="5QKr2dW9gDW/userTrue" />
+              <ref role="rqKBe" node="1LW76QFY0wb" resolve="passenger" />
+              <node concept="rqMQU" id="594_IbYjDUC" role="rqCGo">
+                <ref role="rqMQV" node="594_IbYjBZl" resolve="StandardSeat" />
+              </node>
+            </node>
+          </node>
+          <node concept="30ne8c" id="594_IbYjDM2" role="30ne9f">
+            <ref role="30ne9N" node="594_IbYjDoQ" resolve="ElectricCar" />
+          </node>
+        </node>
+        <node concept="12i7jc" id="1LW76QFY0wf" role="12i2BX" />
+        <node concept="12i7jc" id="1LW76QFZ$XM" role="12i2BX" />
+        <node concept="rqKB5" id="1LW76QFZDI5" role="12i2BX">
+          <property role="26YOJW" value="" />
+          <property role="bVyBI" value="531410008" />
+          <property role="bROok" value="776880009" />
+          <property role="1n_0Gn" value="true" />
+          <property role="0Rz4W" value="-1198917438" />
+          <property role="TrG5h" value="BYD2" />
+          <property role="1nQUAq" value="true" />
+          <ref role="rqKBe" node="1LW76QFY0w9" resolve="Car" />
+          <node concept="rqCGG" id="1LW76QFZDI8" role="rqCGo">
+            <node concept="rqKBd" id="1LW76QFZDI9" role="rqKBa">
+              <property role="3BMj5M" value="2wLdcSYDcHT/inheritedTrue" />
+              <ref role="rqKBe" node="1LW76QFY0wa" resolve="driver" />
+              <node concept="rqCGG" id="1LW76QFZNK8" role="rqCGo">
+                <node concept="rqKBd" id="1LW76QFZNK9" role="rqKBa">
+                  <property role="3BMj5M" value="5QKr2dW9gE1/userFalse" />
+                  <ref role="rqKBe" node="1LW76QFY0vI" resolve="Heating" />
+                  <node concept="rqCGG" id="1LW76QFZNKa" role="rqCGo" />
+                </node>
+                <node concept="rqKBd" id="1LW76QFZNKb" role="rqKBa">
+                  <property role="3BMj5M" value="5QKr2dW9gE1/userFalse" />
+                  <ref role="rqKBe" node="1LW76QFY0vJ" resolve="Sport" />
+                  <node concept="rqCGG" id="1LW76QFZNKc" role="rqCGo" />
+                </node>
+                <node concept="rqKBd" id="1LW76QFZNKd" role="rqKBa">
+                  <property role="3BMj5M" value="5QKr2dW9gE1/userFalse" />
+                  <ref role="rqKBe" node="1LW76QFY0vK" resolve="Leather" />
+                  <node concept="rqCGG" id="1LW76QFZNKe" role="rqCGo" />
+                </node>
+              </node>
+              <node concept="3xLA65" id="1LW76QFZQck" role="lGtFl">
+                <property role="TrG5h" value="shallowExtendsExpected" />
+              </node>
+            </node>
+            <node concept="rqKBd" id="1LW76QFZDIb" role="rqKBa">
+              <ref role="rqKBe" node="1LW76QFY0wb" resolve="passenger" />
+              <node concept="rqMQU" id="1LW76QFZLdX" role="rqCGo">
+                <ref role="rqMQV" node="594_IbYjBZl" resolve="StandardSeat" />
+              </node>
+            </node>
+          </node>
+          <node concept="30ne8c" id="1LW76QG1kGK" role="30ne9f">
+            <ref role="30ne9N" node="594_IbYjDoQ" resolve="ElectricCar" />
           </node>
         </node>
       </node>
