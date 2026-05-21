@@ -8,7 +8,6 @@ import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import org.jetbrains.mps.openapi.model.SNode;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import org.iets3.core.expr.base.plugin.EffectDescriptor;
 import java.util.List;
@@ -20,7 +19,6 @@ import jetbrains.mps.typechecking.TypecheckingFacade;
 import org.iets3.core.expr.base.behavior.IDotTarget__BehaviorDescriptor;
 import org.iets3.core.expr.base.plugin.EffectHelper;
 import org.iets3.core.expr.base.behavior.IMayHaveEffect__BehaviorDescriptor;
-import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 import org.jetbrains.mps.openapi.language.SConcept;
@@ -29,14 +27,12 @@ import org.jetbrains.mps.openapi.language.SContainmentLink;
 public final class WhereOp__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getConcept(0x2f7e2e356e744c43L, 0x9fa52465d68f5996L, 0x68d69d36ba58158eL, "org.iets3.core.expr.collections.structure.WhereOp");
 
-  public static final SMethod<SNode> requiredType_id6zmBjqUm7MF = new SMethodBuilder<SNode>(new SJavaCompoundTypeImpl((Class<SNode>) ((Class) Object.class))).name("requiredType").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(7554398283340741803L).languageId(0x927464ab29588457L, 0x9464fa065ab9409bL).build2();
-  public static final SMethod<String> allowsEffectForNode_idORfz$DS6Ap = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("allowsEffectForNode").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(952298261448780185L).languageId(0xb66a309a6e1a7290L, 0xcfaa4966b7d54b69L).build2(SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""));
-  public static final SMethod<EffectDescriptor> effectDescriptor_id6GySMNjjWfO = new SMethodBuilder<EffectDescriptor>(new SJavaCompoundTypeImpl(EffectDescriptor.class)).name("effectDescriptor").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(7719982492929737716L).languageId(0xb66a309a6e1a7290L, 0xcfaa4966b7d54b69L).build2();
+  public static final SMethod<SNode> requiredType_id6zmBjqUm7MF = new SMethodBuilder<>(SNode.class).name("requiredType").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(7554398283340741803L).languageId(0x927464ab29588457L, 0x9464fa065ab9409bL).build2();
+  public static final SMethod<String> allowsEffectForNode_idORfz$DS6Ap = new SMethodBuilder<>(String.class).name("allowsEffectForNode").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(952298261448780185L).languageId(0xb66a309a6e1a7290L, 0xcfaa4966b7d54b69L).build2(SMethodBuilder.createJavaParameter(SNode.class, "n"));
+  public static final SMethod<EffectDescriptor> effectDescriptor_id6GySMNjjWfO = new SMethodBuilder<>(EffectDescriptor.class).name("effectDescriptor").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(7719982492929737716L).languageId(0xb66a309a6e1a7290L, 0xcfaa4966b7d54b69L).build2();
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(requiredType_id6zmBjqUm7MF, allowsEffectForNode_idORfz$DS6Ap, effectDescriptor_id6GySMNjjWfO);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(requiredType_id6zmBjqUm7MF, allowsEffectForNode_idORfz$DS6Ap, effectDescriptor_id6GySMNjjWfO);
 
-  private static void ___init___(@NotNull SNode __thisNode__) {
-  }
 
   /*package*/ static SNode requiredType_id6zmBjqUm7MF(@NotNull SNode __thisNode__) {
     return SLinkOperations.getTarget(SNodeOperations.cast(TypecheckingFacade.getFromContext().getTypeOf(IDotTarget__BehaviorDescriptor.contextExpression_id6zmBjqUivyF.invoke(__thisNode__)), CONCEPTS.CollectionType$kS), LINKS.baseType$5NOJ);
@@ -51,10 +47,6 @@ public final class WhereOp__BehaviorDescriptor extends BaseBHDescriptor {
   /*package*/ WhereOp__BehaviorDescriptor() {
   }
 
-  @Override
-  protected void initNode(@NotNull SNode node, @NotNull SConstructor constructor, @Nullable Object[] parameters) {
-    ___init___(node);
-  }
 
   @Override
   protected <T> T invokeSpecial0(@NotNull SNode node, @NotNull SMethod<T> method, @Nullable Object[] parameters) {

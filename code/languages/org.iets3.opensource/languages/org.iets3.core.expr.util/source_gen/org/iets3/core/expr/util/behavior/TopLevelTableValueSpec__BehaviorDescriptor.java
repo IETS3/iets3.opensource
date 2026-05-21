@@ -7,7 +7,6 @@ import org.jetbrains.mps.openapi.language.SAbstractConcept;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import java.util.List;
 import java.util.Arrays;
@@ -16,7 +15,6 @@ import org.jetbrains.mps.openapi.model.SNode;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
 import org.iets3.core.expr.base.behavior.Expression__BehaviorDescriptor;
-import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 import org.jetbrains.mps.openapi.language.SContainmentLink;
@@ -26,12 +24,10 @@ import org.jetbrains.mps.openapi.language.SProperty;
 public final class TopLevelTableValueSpec__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getConcept(0x8bb1251eeae547abL, 0x984333adfae8edaaL, 0x7adee935255bd9f6L, "org.iets3.core.expr.util.structure.TopLevelTableValueSpec");
 
-  public static final SMethod<String> renderReadable_id7lDeIdaByVZ = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("renderReadable").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(8460358122876055295L).languageId(0x984333adfae8edaaL, 0x8bb1251eeae547abL).build2();
+  public static final SMethod<String> renderReadable_id7lDeIdaByVZ = new SMethodBuilder<>(String.class).name("renderReadable").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(8460358122876055295L).languageId(0x984333adfae8edaaL, 0x8bb1251eeae547abL).build2();
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(renderReadable_id7lDeIdaByVZ);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(renderReadable_id7lDeIdaByVZ);
 
-  private static void ___init___(@NotNull SNode __thisNode__) {
-  }
 
   /*package*/ static String renderReadable_id7lDeIdaByVZ(@NotNull SNode __thisNode__) {
     return SPropertyOperations.getString(SLinkOperations.getTarget(__thisNode__, LINKS.col$DRhq), PROPS.name$MnvL) + "=>" + Expression__BehaviorDescriptor.renderReadable_id4Y0vh0cfqjE.invoke(SLinkOperations.getTarget(__thisNode__, LINKS.expr$CW3E));
@@ -40,10 +36,6 @@ public final class TopLevelTableValueSpec__BehaviorDescriptor extends BaseBHDesc
   /*package*/ TopLevelTableValueSpec__BehaviorDescriptor() {
   }
 
-  @Override
-  protected void initNode(@NotNull SNode node, @NotNull SConstructor constructor, @Nullable Object[] parameters) {
-    ___init___(node);
-  }
 
   @Override
   protected <T> T invokeSpecial0(@NotNull SNode node, @NotNull SMethod<T> method, @Nullable Object[] parameters) {

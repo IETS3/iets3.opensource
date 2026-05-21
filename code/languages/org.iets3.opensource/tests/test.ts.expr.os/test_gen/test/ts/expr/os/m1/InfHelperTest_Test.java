@@ -378,25 +378,25 @@ public class InfHelperTest_Test extends BaseTransformationTest {
     public void test_signum() throws Exception {
       initTestNodes();
       runWithinCommand(() -> {
-        Assert.assertEquals(1, InfHelper.signum(InfHelper.POSINF));
-        Assert.assertEquals(-1, InfHelper.signum(InfHelper.NEGINF));
+        Assert.assertEquals(Integer.valueOf(1), Integer.valueOf(InfHelper.signum(InfHelper.POSINF)));
+        Assert.assertEquals(Integer.valueOf(-1), Integer.valueOf(InfHelper.signum(InfHelper.NEGINF)));
 
-        Assert.assertEquals(0, InfHelper.signum("0"));
-        Assert.assertEquals(0, InfHelper.signum("-0"));
-        Assert.assertEquals(0, InfHelper.signum("0.0"));
-        Assert.assertEquals(0, InfHelper.signum("-0.0"));
+        Assert.assertEquals(Integer.valueOf(0), Integer.valueOf(InfHelper.signum("0")));
+        Assert.assertEquals(Integer.valueOf(0), Integer.valueOf(InfHelper.signum("-0")));
+        Assert.assertEquals(Integer.valueOf(0), Integer.valueOf(InfHelper.signum("0.0")));
+        Assert.assertEquals(Integer.valueOf(0), Integer.valueOf(InfHelper.signum("-0.0")));
 
-        Assert.assertEquals(1, InfHelper.signum("1"));
-        Assert.assertEquals(1, InfHelper.signum("1.0"));
-        Assert.assertEquals(1, InfHelper.signum("10"));
-        Assert.assertEquals(1, InfHelper.signum("0.1"));
-        Assert.assertEquals(1, InfHelper.signum("10.33"));
+        Assert.assertEquals(Integer.valueOf(1), Integer.valueOf(InfHelper.signum("1")));
+        Assert.assertEquals(Integer.valueOf(1), Integer.valueOf(InfHelper.signum("1.0")));
+        Assert.assertEquals(Integer.valueOf(1), Integer.valueOf(InfHelper.signum("10")));
+        Assert.assertEquals(Integer.valueOf(1), Integer.valueOf(InfHelper.signum("0.1")));
+        Assert.assertEquals(Integer.valueOf(1), Integer.valueOf(InfHelper.signum("10.33")));
 
-        Assert.assertEquals(-1, InfHelper.signum("-1"));
-        Assert.assertEquals(-1, InfHelper.signum("-1.0"));
-        Assert.assertEquals(-1, InfHelper.signum("-10"));
-        Assert.assertEquals(-1, InfHelper.signum("-0.1"));
-        Assert.assertEquals(-1, InfHelper.signum("-10.33"));
+        Assert.assertEquals(Integer.valueOf(-1), Integer.valueOf(InfHelper.signum("-1")));
+        Assert.assertEquals(Integer.valueOf(-1), Integer.valueOf(InfHelper.signum("-1.0")));
+        Assert.assertEquals(Integer.valueOf(-1), Integer.valueOf(InfHelper.signum("-10")));
+        Assert.assertEquals(Integer.valueOf(-1), Integer.valueOf(InfHelper.signum("-0.1")));
+        Assert.assertEquals(Integer.valueOf(-1), Integer.valueOf(InfHelper.signum("-10.33")));
 
         try {
           InfHelper.signum("10,33");

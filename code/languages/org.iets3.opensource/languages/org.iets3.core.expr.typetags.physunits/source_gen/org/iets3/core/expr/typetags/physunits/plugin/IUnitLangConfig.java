@@ -93,9 +93,9 @@ public interface IUnitLangConfig {
    * Introduced to support the new, stricter unit compatibility check without forcing activation of the implicit conversions.
    * 
    * Note: This is probably not helpful, as an expression like "10 min + 1 h" cannot be evaluated without an implicit
-   *       conversion rule. By switching off any errors such expressions can be modeled, but not processed in any way.
-   *       It is also impossible to compute a proper type for this, as the number range of the type can only be
-   *       computed if implicit conversions are available (the type "number[11|11]<min>" is obviously wrong).
+   *      conversion rule. By switching off any errors such expressions can be modeled, but not processed in any way.
+   *      It is also impossible to compute a proper type for this, as the number range of the type can only be
+   *      computed if implicit conversions are available (the type "number[11|11]<min>" is obviously wrong).
    */
   default boolean allowMixingCompatibleQuantitiesWithoutConversions() {
     return false;

@@ -7,7 +7,6 @@ import org.jetbrains.mps.openapi.language.SAbstractConcept;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import org.jetbrains.mps.openapi.model.SNode;
 import java.util.Set;
@@ -21,7 +20,6 @@ import jetbrains.mps.typechecking.TypecheckingFacade;
 import org.iets3.core.expr.base.behavior.IDotTarget__BehaviorDescriptor;
 import jetbrains.mps.internal.collections.runtime.Sequence;
 import org.iets3.core.expr.base.behavior.ISSConstrainedValue__BehaviorDescriptor;
-import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 import jetbrains.mps.smodel.builder.SNodeBuilder;
@@ -33,17 +31,15 @@ import org.jetbrains.mps.openapi.language.SProperty;
 public final class MaxOp__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getConcept(0x2f7e2e356e744c43L, 0x9fa52465d68f5996L, 0x4d84a614e92e2689L, "org.iets3.core.expr.collections.structure.MaxOp");
 
-  public static final SMethod<Boolean> shouldDotExpressionBeSubstitutedAsConstrainedValue_id74u6qanLBRj = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("shouldDotExpressionBeSubstitutedAsConstrainedValue").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(8150980561708940755L).languageId(0xb66a309a6e1a7290L, 0xcfaa4966b7d54b69L).build2();
-  public static final SMethod<SNode> getISSVariable_id74u6qanSXND = new SMethodBuilder<SNode>(new SJavaCompoundTypeImpl((Class<SNode>) ((Class) Object.class))).name("getISSVariable").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(8150980561710865641L).languageId(0xb66a309a6e1a7290L, 0xcfaa4966b7d54b69L).build2();
-  public static final SMethod<String> getVariableName_id7BxfuU7QrrQ = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("getVariableName").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(8782368843039880950L).languageId(0xb66a309a6e1a7290L, 0xcfaa4966b7d54b69L).build2();
-  public static final SMethod<SNode> getVariableType_id7BxfuU7QrsR = new SMethodBuilder<SNode>(new SJavaCompoundTypeImpl((Class<SNode>) ((Class) Object.class))).name("getVariableType").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(8782368843039881015L).languageId(0xb66a309a6e1a7290L, 0xcfaa4966b7d54b69L).build2();
-  public static final SMethod<Iterable<SNode>> getVariableConstraints_id7BxfuU7Qruw = new SMethodBuilder<Iterable<SNode>>(new SJavaCompoundTypeImpl((Class<Iterable<SNode>>) ((Class) Object.class))).name("getVariableConstraints").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(8782368843039881120L).languageId(0xb66a309a6e1a7290L, 0xcfaa4966b7d54b69L).build2();
-  public static final SMethod<Set<SNode>> getDependentValues_id1xFBUnwWaWp = new SMethodBuilder<Set<SNode>>(new SJavaCompoundTypeImpl((Class<Set<SNode>>) ((Class) Object.class))).name("getDependentValues").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(1759675614210600729L).languageId(0xb66a309a6e1a7290L, 0xcfaa4966b7d54b69L).build2();
+  public static final SMethod<Boolean> shouldDotExpressionBeSubstitutedAsConstrainedValue_id74u6qanLBRj = new SMethodBuilder<>(Boolean.TYPE).name("shouldDotExpressionBeSubstitutedAsConstrainedValue").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(8150980561708940755L).languageId(0xb66a309a6e1a7290L, 0xcfaa4966b7d54b69L).build2();
+  public static final SMethod<SNode> getISSVariable_id74u6qanSXND = new SMethodBuilder<>(SNode.class).name("getISSVariable").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(8150980561710865641L).languageId(0xb66a309a6e1a7290L, 0xcfaa4966b7d54b69L).build2();
+  public static final SMethod<String> getVariableName_id7BxfuU7QrrQ = new SMethodBuilder<>(String.class).name("getVariableName").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(8782368843039880950L).languageId(0xb66a309a6e1a7290L, 0xcfaa4966b7d54b69L).build2();
+  public static final SMethod<SNode> getVariableType_id7BxfuU7QrsR = new SMethodBuilder<>(SNode.class).name("getVariableType").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(8782368843039881015L).languageId(0xb66a309a6e1a7290L, 0xcfaa4966b7d54b69L).build2();
+  public static final SMethod<Iterable<SNode>> getVariableConstraints_id7BxfuU7Qruw = new SMethodBuilder<>((Class<Iterable<SNode>>) ((Class) Object.class)).name("getVariableConstraints").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(8782368843039881120L).languageId(0xb66a309a6e1a7290L, 0xcfaa4966b7d54b69L).build2();
+  public static final SMethod<Set<SNode>> getDependentValues_id1xFBUnwWaWp = new SMethodBuilder<>((Class<Set<SNode>>) ((Class) Object.class)).name("getDependentValues").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(1759675614210600729L).languageId(0xb66a309a6e1a7290L, 0xcfaa4966b7d54b69L).build2();
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(shouldDotExpressionBeSubstitutedAsConstrainedValue_id74u6qanLBRj, getISSVariable_id74u6qanSXND, getVariableName_id7BxfuU7QrrQ, getVariableType_id7BxfuU7QrsR, getVariableConstraints_id7BxfuU7Qruw, getDependentValues_id1xFBUnwWaWp);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(shouldDotExpressionBeSubstitutedAsConstrainedValue_id74u6qanLBRj, getISSVariable_id74u6qanSXND, getVariableName_id7BxfuU7QrrQ, getVariableType_id7BxfuU7QrsR, getVariableConstraints_id7BxfuU7Qruw, getDependentValues_id1xFBUnwWaWp);
 
-  private static void ___init___(@NotNull SNode __thisNode__) {
-  }
 
   /*package*/ static boolean shouldDotExpressionBeSubstitutedAsConstrainedValue_id74u6qanLBRj(@NotNull SNode __thisNode__) {
     return true;
@@ -70,10 +66,6 @@ public final class MaxOp__BehaviorDescriptor extends BaseBHDescriptor {
   /*package*/ MaxOp__BehaviorDescriptor() {
   }
 
-  @Override
-  protected void initNode(@NotNull SNode node, @NotNull SConstructor constructor, @Nullable Object[] parameters) {
-    ___init___(node);
-  }
 
   @Override
   protected <T> T invokeSpecial0(@NotNull SNode node, @NotNull SMethod<T> method, @Nullable Object[] parameters) {

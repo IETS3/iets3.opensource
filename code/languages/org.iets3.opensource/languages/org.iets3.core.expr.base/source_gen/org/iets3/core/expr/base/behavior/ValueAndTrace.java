@@ -10,14 +10,14 @@ public class ValueAndTrace implements IValueAndTrace {
 
   /**
    * 
-   * @deprecated use {@link org.iets3.core.expr.base.behavior.ValueAndTrace#getValue() }
+   * @deprecated use {@link org.iets3.core.expr.base.behavior.ValueAndTrace#getValue()} 
    */
   @Deprecated
   public final Object value;
 
   /**
    * 
-   * @deprecated {@link org.iets3.core.expr.base.behavior.ValueAndTrace#getTrace() }
+   * @deprecated  {@link org.iets3.core.expr.base.behavior.ValueAndTrace#getTrace()} 
    */
   @Deprecated
   public final ComputationTrace trace;

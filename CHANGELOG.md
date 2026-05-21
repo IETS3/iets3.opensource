@@ -11,6 +11,7 @@ The project does _not_ follow Semantic Versioning and the changes are documented
 
 - Variability: Fix workaround for using for-all-variants checking rules outside the IDE (e.g., on a build server). Due to MPS-34340, the for-all-variants checking cannot be done outside the IDE if the model under check has more than one root nodes. This bugfix includes roots of LogicalChildren in the list of used root nodes.
 - Physical units (language `org.iets3.core.expr.typetags.physunits`): Update unit in typesystem after prefix has been removed (e.g., from "cm" to "m").
+- `org.iets3.core.expr.datetime.runtime` catch DateTimeException causing an internal interpreter exception ([#1773](https://github.com/IETS3/iets3.opensource/issues/1773))
 
 
 ## April 2026
@@ -145,12 +146,16 @@ The project does _not_ follow Semantic Versioning and the changes are documented
 
 - The renderReadable/getPresentation implementations were improved and are now equivalent in all concepts.
 - Variability: For feature attributes, the inspector in the configuration editor shows the current value of the attribute and what caused this value (manual input by user, default, forced by tool, etc). This assignment cause is read-only now. An intention is added to manually set it to 'manual' state.
+- Updated API for build.gentests and junit.interpreter.run.configuration
 - Variability: In the configuration editor, pressing Return/Enter anywhere will create an empty line after the configuration. Pressing Shift-Return/Enter on the header line of a configuration will create an empty line before the configuration.
 
 ### Added
 
 - Data tables, binary and multi-criteria decision tables now support deletion, copying and pasting when multiple cells are selected with the mouse.
 
+
+### Removed
+- To enable github release the usage of `listMergedPRs` script is removed for the time beeing.
 
 ## July 2025
 

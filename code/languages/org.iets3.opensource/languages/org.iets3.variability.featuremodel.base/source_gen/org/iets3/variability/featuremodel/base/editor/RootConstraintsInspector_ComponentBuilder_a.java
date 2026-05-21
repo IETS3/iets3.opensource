@@ -44,24 +44,21 @@ import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
   }
 
   /*package*/ EditorCell createCell() {
-    return createQueryList_1();
+    return createQueryList_0();
   }
 
-  private EditorCell createQueryList_0(final EditorContext editorContext, final SNode node) {
+  private EditorCell createQueryList_0() {
 
-    QueryListHandler handler = new QueryListHandler_n1dq9_a(editorContext, node, true);
+    QueryListHandler handler = new QueryListHandler_n1dq9_a(getEditorContext(), getNode(), true);
     EditorCell_QueryList editorCell = handler.createCells(new CellLayout_Vertical());
     editorCell.setTargeConcept(CONCEPTS.AbstractConstraint$MS);
-    editorCell.setOwner(SNodeOperations.getConcept(node));
+    editorCell.setOwner(SNodeOperations.getConcept(getNode()));
     editorCell.setCellId("QueryList_n1dq9_a");
     Style style = new StyleImpl();
     style.set(StyleAttributes.READ_ONLY, true);
     editorCell.getStyle().putAll(style);
     return editorCell;
 
-  }
-  private EditorCell createQueryList_1() {
-    return createQueryList_0(getEditorContext(), myNode);
   }
   private static class QueryListHandler_n1dq9_a extends QueryListHandler {
     /**

@@ -7,14 +7,12 @@ import org.jetbrains.mps.openapi.language.SAbstractConcept;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import org.jetbrains.mps.openapi.model.SNode;
 import java.util.List;
 import java.util.Arrays;
 import org.jetbrains.annotations.NotNull;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
-import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 import org.jetbrains.mps.openapi.language.SInterfaceConcept;
@@ -22,23 +20,21 @@ import org.jetbrains.mps.openapi.language.SInterfaceConcept;
 public final class IControlAdvancedFeatures__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getInterfaceConcept(0x7b68d745a7b848b9L, 0xbd9c05c0f8725a35L, 0x69e8e71b93a1b282L, "org.iets3.core.base.structure.IControlAdvancedFeatures");
 
-  public static final SMethod<Boolean> allowOptions_id6BCTLIjCraB = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("allowOptions").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(7631603674206286503L).languageId(0xbd9c05c0f8725a35L, 0x7b68d745a7b848b9L).build2();
-  public static final SMethod<Boolean> allowAttempts_id6BCTLIjCrbW = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("allowAttempts").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(7631603674206286588L).languageId(0xbd9c05c0f8725a35L, 0x7b68d745a7b848b9L).build2();
-  public static final SMethod<Boolean> allowReveal_idk9boAtHuqo = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("allowReveal").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(362871314059749016L).languageId(0xbd9c05c0f8725a35L, 0x7b68d745a7b848b9L).build2();
-  public static final SMethod<Boolean> allowShowEffect_idk9boAtHFco = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("allowShowEffect").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(362871314059801368L).languageId(0xbd9c05c0f8725a35L, 0x7b68d745a7b848b9L).build2();
-  public static final SMethod<Boolean> allowSuppressErrors_id5hiN5PkjlJi = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("allowSuppressErrors").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(6076143548494601170L).languageId(0xbd9c05c0f8725a35L, 0x7b68d745a7b848b9L).build2();
-  public static final SMethod<Boolean> allowManualChecks_idYsVdBRNivM = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("allowManualChecks").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(1125034427845257202L).languageId(0xbd9c05c0f8725a35L, 0x7b68d745a7b848b9L).build2();
-  public static final SMethod<Boolean> areOptionsAllowed_id4FREEt6zKrJ = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("areOptionsAllowed").modifiers(1, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5401973913474238191L).languageId(0xbd9c05c0f8725a35L, 0x7b68d745a7b848b9L).build2(SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""));
-  public static final SMethod<Boolean> areAttemptsAllowed_id4FREEt6zM91 = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("areAttemptsAllowed").modifiers(1, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5401973913474245185L).languageId(0xbd9c05c0f8725a35L, 0x7b68d745a7b848b9L).build2(SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""));
-  public static final SMethod<Boolean> allowReveal_idk9boAtHqZL = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("allowReveal").modifiers(1, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(362871314059735025L).languageId(0xbd9c05c0f8725a35L, 0x7b68d745a7b848b9L).build2(SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""));
-  public static final SMethod<Boolean> allowShowEffect_idk9boAtHEPS = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("allowShowEffect").modifiers(1, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(362871314059799928L).languageId(0xbd9c05c0f8725a35L, 0x7b68d745a7b848b9L).build2(SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""));
-  public static final SMethod<Boolean> allowSuppressErrors_id5hiN5PkjlUJ = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("allowSuppressErrors").modifiers(1, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(6076143548494601903L).languageId(0xbd9c05c0f8725a35L, 0x7b68d745a7b848b9L).build2(SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""));
-  public static final SMethod<Boolean> areManualChecksAllowed_idYsVdBRNjbz = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("areManualChecksAllowed").modifiers(1, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(1125034427845260003L).languageId(0xbd9c05c0f8725a35L, 0x7b68d745a7b848b9L).build2(SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""));
+  public static final SMethod<Boolean> allowOptions_id6BCTLIjCraB = new SMethodBuilder<>(Boolean.TYPE).name("allowOptions").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(7631603674206286503L).languageId(0xbd9c05c0f8725a35L, 0x7b68d745a7b848b9L).build2();
+  public static final SMethod<Boolean> allowAttempts_id6BCTLIjCrbW = new SMethodBuilder<>(Boolean.TYPE).name("allowAttempts").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(7631603674206286588L).languageId(0xbd9c05c0f8725a35L, 0x7b68d745a7b848b9L).build2();
+  public static final SMethod<Boolean> allowReveal_idk9boAtHuqo = new SMethodBuilder<>(Boolean.TYPE).name("allowReveal").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(362871314059749016L).languageId(0xbd9c05c0f8725a35L, 0x7b68d745a7b848b9L).build2();
+  public static final SMethod<Boolean> allowShowEffect_idk9boAtHFco = new SMethodBuilder<>(Boolean.TYPE).name("allowShowEffect").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(362871314059801368L).languageId(0xbd9c05c0f8725a35L, 0x7b68d745a7b848b9L).build2();
+  public static final SMethod<Boolean> allowSuppressErrors_id5hiN5PkjlJi = new SMethodBuilder<>(Boolean.TYPE).name("allowSuppressErrors").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(6076143548494601170L).languageId(0xbd9c05c0f8725a35L, 0x7b68d745a7b848b9L).build2();
+  public static final SMethod<Boolean> allowManualChecks_idYsVdBRNivM = new SMethodBuilder<>(Boolean.TYPE).name("allowManualChecks").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(1125034427845257202L).languageId(0xbd9c05c0f8725a35L, 0x7b68d745a7b848b9L).build2();
+  public static final SMethod<Boolean> areOptionsAllowed_id4FREEt6zKrJ = new SMethodBuilder<>(Boolean.TYPE).name("areOptionsAllowed").modifiers(1, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5401973913474238191L).languageId(0xbd9c05c0f8725a35L, 0x7b68d745a7b848b9L).build2(SMethodBuilder.createJavaParameter(SNode.class, "n"));
+  public static final SMethod<Boolean> areAttemptsAllowed_id4FREEt6zM91 = new SMethodBuilder<>(Boolean.TYPE).name("areAttemptsAllowed").modifiers(1, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5401973913474245185L).languageId(0xbd9c05c0f8725a35L, 0x7b68d745a7b848b9L).build2(SMethodBuilder.createJavaParameter(SNode.class, "n"));
+  public static final SMethod<Boolean> allowReveal_idk9boAtHqZL = new SMethodBuilder<>(Boolean.TYPE).name("allowReveal").modifiers(1, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(362871314059735025L).languageId(0xbd9c05c0f8725a35L, 0x7b68d745a7b848b9L).build2(SMethodBuilder.createJavaParameter(SNode.class, "n"));
+  public static final SMethod<Boolean> allowShowEffect_idk9boAtHEPS = new SMethodBuilder<>(Boolean.TYPE).name("allowShowEffect").modifiers(1, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(362871314059799928L).languageId(0xbd9c05c0f8725a35L, 0x7b68d745a7b848b9L).build2(SMethodBuilder.createJavaParameter(SNode.class, "n"));
+  public static final SMethod<Boolean> allowSuppressErrors_id5hiN5PkjlUJ = new SMethodBuilder<>(Boolean.TYPE).name("allowSuppressErrors").modifiers(1, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(6076143548494601903L).languageId(0xbd9c05c0f8725a35L, 0x7b68d745a7b848b9L).build2(SMethodBuilder.createJavaParameter(SNode.class, "n"));
+  public static final SMethod<Boolean> areManualChecksAllowed_idYsVdBRNjbz = new SMethodBuilder<>(Boolean.TYPE).name("areManualChecksAllowed").modifiers(1, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(1125034427845260003L).languageId(0xbd9c05c0f8725a35L, 0x7b68d745a7b848b9L).build2(SMethodBuilder.createJavaParameter(SNode.class, "n"));
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(allowOptions_id6BCTLIjCraB, allowAttempts_id6BCTLIjCrbW, allowReveal_idk9boAtHuqo, allowShowEffect_idk9boAtHFco, allowSuppressErrors_id5hiN5PkjlJi, allowManualChecks_idYsVdBRNivM, areOptionsAllowed_id4FREEt6zKrJ, areAttemptsAllowed_id4FREEt6zM91, allowReveal_idk9boAtHqZL, allowShowEffect_idk9boAtHEPS, allowSuppressErrors_id5hiN5PkjlUJ, areManualChecksAllowed_idYsVdBRNjbz);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(allowOptions_id6BCTLIjCraB, allowAttempts_id6BCTLIjCrbW, allowReveal_idk9boAtHuqo, allowShowEffect_idk9boAtHFco, allowSuppressErrors_id5hiN5PkjlJi, allowManualChecks_idYsVdBRNivM, areOptionsAllowed_id4FREEt6zKrJ, areAttemptsAllowed_id4FREEt6zM91, allowReveal_idk9boAtHqZL, allowShowEffect_idk9boAtHEPS, allowSuppressErrors_id5hiN5PkjlUJ, areManualChecksAllowed_idYsVdBRNjbz);
 
-  private static void ___init___(@NotNull SNode __thisNode__) {
-  }
 
   /*package*/ static boolean allowOptions_id6BCTLIjCraB(@NotNull SNode __thisNode__) {
     return false;
@@ -86,10 +82,6 @@ public final class IControlAdvancedFeatures__BehaviorDescriptor extends BaseBHDe
   /*package*/ IControlAdvancedFeatures__BehaviorDescriptor() {
   }
 
-  @Override
-  protected void initNode(@NotNull SNode node, @NotNull SConstructor constructor, @Nullable Object[] parameters) {
-    ___init___(node);
-  }
 
   @Override
   protected <T> T invokeSpecial0(@NotNull SNode node, @NotNull SMethod<T> method, @Nullable Object[] parameters) {

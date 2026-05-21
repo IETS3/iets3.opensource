@@ -7,14 +7,12 @@ import org.jetbrains.mps.openapi.language.SAbstractConcept;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import org.jetbrains.mps.openapi.model.SNode;
 import java.util.List;
 import java.util.Arrays;
 import org.jetbrains.annotations.NotNull;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
-import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 import org.jetbrains.mps.openapi.language.SConcept;
@@ -22,12 +20,10 @@ import org.jetbrains.mps.openapi.language.SConcept;
 public final class FunctionalKind__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getConcept(0x257976063fb647b8L, 0xbc3cb4384df7da44L, 0x6c4f9fd23e4c962dL, "org.iets3.components.functional.structure.FunctionalKind");
 
-  public static final SMethod<Boolean> canBeInContext_id6LfBX8Ylle0 = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("canBeInContext").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(7804632404594086784L).languageId(0xb6713d118449c6e7L, 0xf0fd486f857743e9L).build2(SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""));
+  public static final SMethod<Boolean> canBeInContext_id6LfBX8Ylle0 = new SMethodBuilder<>(Boolean.TYPE).name("canBeInContext").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(7804632404594086784L).languageId(0xb6713d118449c6e7L, 0xf0fd486f857743e9L).build2(SMethodBuilder.createJavaParameter(SNode.class, "contextKind"));
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(canBeInContext_id6LfBX8Ylle0);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(canBeInContext_id6LfBX8Ylle0);
 
-  private static void ___init___(@NotNull SNode __thisNode__) {
-  }
 
   /*package*/ static boolean canBeInContext_id6LfBX8Ylle0(@NotNull SNode __thisNode__, SNode contextKind) {
     return SNodeOperations.isInstanceOf(contextKind, CONCEPTS.FunctionalKind$7r);
@@ -36,10 +32,6 @@ public final class FunctionalKind__BehaviorDescriptor extends BaseBHDescriptor {
   /*package*/ FunctionalKind__BehaviorDescriptor() {
   }
 
-  @Override
-  protected void initNode(@NotNull SNode node, @NotNull SConstructor constructor, @Nullable Object[] parameters) {
-    ___init___(node);
-  }
 
   @Override
   protected <T> T invokeSpecial0(@NotNull SNode node, @NotNull SMethod<T> method, @Nullable Object[] parameters) {

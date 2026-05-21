@@ -9,25 +9,21 @@ import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import jetbrains.mps.baseLanguage.tuples.runtime.Tuples;
 import org.jetbrains.mps.openapi.model.SNode;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import java.util.List;
 import java.util.Arrays;
 import org.jetbrains.annotations.NotNull;
-import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 
 public final class AbstractSheetFinder__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getConcept(0x18001c9433a74f68L, 0xa7c1ffddc4b39be1L, 0x366e9b3ea4e64187L, "org.iets3.core.expr.repl.structure.AbstractSheetFinder");
 
-  public static final SMethod<Tuples._2<SNode, SNode>> find_id3pIANU$Z74R = new SMethodBuilder<Tuples._2<SNode, SNode>>(new SJavaCompoundTypeImpl((Class<Tuples._2<SNode, SNode>>) ((Class) Object.class))).name("find").modifiers(12, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(3922243018844565815L).languageId(0xa7c1ffddc4b39be1L, 0x18001c9433a74f68L).build2();
-  public static final SMethod<Boolean> supportsRelative_id3pIANU_3n6x = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("supportsRelative").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(3922243018845680033L).languageId(0xa7c1ffddc4b39be1L, 0x18001c9433a74f68L).build2();
+  public static final SMethod<Tuples._2<SNode, SNode>> find_id3pIANU$Z74R = new SMethodBuilder<>((Class<Tuples._2<SNode, SNode>>) ((Class) Object.class)).name("find").modifiers(12, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(3922243018844565815L).languageId(0xa7c1ffddc4b39be1L, 0x18001c9433a74f68L).build2();
+  public static final SMethod<Boolean> supportsRelative_id3pIANU_3n6x = new SMethodBuilder<>(Boolean.TYPE).name("supportsRelative").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(3922243018845680033L).languageId(0xa7c1ffddc4b39be1L, 0x18001c9433a74f68L).build2();
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(find_id3pIANU$Z74R, supportsRelative_id3pIANU_3n6x);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(find_id3pIANU$Z74R, supportsRelative_id3pIANU_3n6x);
 
-  private static void ___init___(@NotNull SNode __thisNode__) {
-  }
 
   /*package*/ static boolean supportsRelative_id3pIANU_3n6x(@NotNull SNode __thisNode__) {
     return false;
@@ -36,10 +32,6 @@ public final class AbstractSheetFinder__BehaviorDescriptor extends BaseBHDescrip
   /*package*/ AbstractSheetFinder__BehaviorDescriptor() {
   }
 
-  @Override
-  protected void initNode(@NotNull SNode node, @NotNull SConstructor constructor, @Nullable Object[] parameters) {
-    ___init___(node);
-  }
 
   @Override
   protected <T> T invokeSpecial0(@NotNull SNode node, @NotNull SMethod<T> method, @Nullable Object[] parameters) {

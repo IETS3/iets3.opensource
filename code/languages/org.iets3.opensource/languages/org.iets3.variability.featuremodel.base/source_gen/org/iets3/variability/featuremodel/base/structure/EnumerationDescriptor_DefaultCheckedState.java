@@ -20,7 +20,7 @@ public class EnumerationDescriptor_DefaultCheckedState extends EnumerationDescri
   private final EnumerationDescriptor.MemberDescriptor myMember_unchecked_0 = new EnumerationDescriptor.MemberDescriptor("unchecked", "unchecked", 0x74046bf85651daf6L, "r:a7e2f963-3e46-49e0-a385-e8c7f33c91b7(org.iets3.variability.featuremodel.base.structure)/5939066662398655260");
 
   private final EnumerationLiteralsIndex myIndex = EnumerationLiteralsIndex.build(0x165f1d0525064544L, 0x895e1424f54166ecL, 0x74046bf8564f89f9L, 0x74046bf8564f89faL, 0x74046bf8564f89fbL, 0x74046bf85651daf6L);
-  private final List<EnumerationDescriptor.MemberDescriptor> myMembers = new EnumerationDescriptorBase.MembersList(myIndex, myMember_untouched_0, myMember_checked_0, myMember_unchecked_0);
+  private final List<EnumerationDescriptor.MemberDescriptor> myMembers = new EnumerationDescriptorBase.MembersList0(myIndex, myMember_untouched_0, myMember_checked_0, myMember_unchecked_0);
 
   @Nullable
   @Override

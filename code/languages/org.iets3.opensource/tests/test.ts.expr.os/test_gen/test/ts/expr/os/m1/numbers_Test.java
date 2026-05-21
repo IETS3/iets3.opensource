@@ -105,12 +105,12 @@ public class numbers_Test extends BaseTransformationTest {
     new TestBody(this).test_NodeTypeSystemCheck6862893590118862037();
   }
   @Test
-  public void test_NodeTypeSystemCheck6862893590118881163() throws Throwable {
-    new TestBody(this).test_NodeTypeSystemCheck6862893590118881163();
-  }
-  @Test
   public void test_ErrorMessagesCheck7407689390959727437() throws Throwable {
     new TestBody(this).test_ErrorMessagesCheck7407689390959727437();
+  }
+  @Test
+  public void test_NodeTypeSystemCheck6862893590118881163() throws Throwable {
+    new TestBody(this).test_NodeTypeSystemCheck6862893590118881163();
   }
 
   /*package*/ static class TestBody extends BaseTestBody {
@@ -170,59 +170,59 @@ public class numbers_Test extends BaseTransformationTest {
       initTestNodes();
       runWithinCommand(() -> {
         SNode zero = _quotation_createNode_g4w43n_a0a0a0b0l12();
-        Assert.assertEquals(0, (int) NumberLiteral__BehaviorDescriptor.numberOfDecimals_id3p6$WoEl3wd.invoke(zero));
+        Assert.assertEquals(Integer.valueOf(0), Integer.valueOf((int) NumberLiteral__BehaviorDescriptor.numberOfDecimals_id3p6$WoEl3wd.invoke(zero)));
 
         SNode integerPositive = _quotation_createNode_g4w43n_a0d0a0b0l12();
-        Assert.assertEquals(0, (int) NumberLiteral__BehaviorDescriptor.numberOfDecimals_id3p6$WoEl3wd.invoke(integerPositive));
+        Assert.assertEquals(Integer.valueOf(0), Integer.valueOf((int) NumberLiteral__BehaviorDescriptor.numberOfDecimals_id3p6$WoEl3wd.invoke(integerPositive)));
 
         SNode integerNegative = _quotation_createNode_g4w43n_a0g0a0b0l12();
-        Assert.assertEquals(0, (int) NumberLiteral__BehaviorDescriptor.numberOfDecimals_id3p6$WoEl3wd.invoke(integerNegative));
+        Assert.assertEquals(Integer.valueOf(0), Integer.valueOf((int) NumberLiteral__BehaviorDescriptor.numberOfDecimals_id3p6$WoEl3wd.invoke(integerNegative)));
 
         SNode floatPositive = _quotation_createNode_g4w43n_a0j0a0b0l12();
-        Assert.assertEquals(2, (int) NumberLiteral__BehaviorDescriptor.numberOfDecimals_id3p6$WoEl3wd.invoke(floatPositive));
+        Assert.assertEquals(Integer.valueOf(2), Integer.valueOf((int) NumberLiteral__BehaviorDescriptor.numberOfDecimals_id3p6$WoEl3wd.invoke(floatPositive)));
 
         SNode floatNegative = _quotation_createNode_g4w43n_a0m0a0b0l12();
-        Assert.assertEquals(2, (int) NumberLiteral__BehaviorDescriptor.numberOfDecimals_id3p6$WoEl3wd.invoke(floatNegative));
+        Assert.assertEquals(Integer.valueOf(2), Integer.valueOf((int) NumberLiteral__BehaviorDescriptor.numberOfDecimals_id3p6$WoEl3wd.invoke(floatNegative)));
 
         SNode floatZero = _quotation_createNode_g4w43n_a0p0a0b0l12();
-        Assert.assertEquals(1, (int) NumberLiteral__BehaviorDescriptor.numberOfDecimals_id3p6$WoEl3wd.invoke(floatZero));
+        Assert.assertEquals(Integer.valueOf(1), Integer.valueOf((int) NumberLiteral__BehaviorDescriptor.numberOfDecimals_id3p6$WoEl3wd.invoke(floatZero)));
 
         SNode scientificInteger = _quotation_createNode_g4w43n_a0s0a0b0l12();
-        Assert.assertEquals(0, (int) NumberLiteral__BehaviorDescriptor.numberOfDecimals_id3p6$WoEl3wd.invoke(scientificInteger));
+        Assert.assertEquals(Integer.valueOf(0), Integer.valueOf((int) NumberLiteral__BehaviorDescriptor.numberOfDecimals_id3p6$WoEl3wd.invoke(scientificInteger)));
 
         SNode scientificNegativeInteger = _quotation_createNode_g4w43n_a0v0a0b0l12();
-        Assert.assertEquals(0, (int) NumberLiteral__BehaviorDescriptor.numberOfDecimals_id3p6$WoEl3wd.invoke(scientificNegativeInteger));
+        Assert.assertEquals(Integer.valueOf(0), Integer.valueOf((int) NumberLiteral__BehaviorDescriptor.numberOfDecimals_id3p6$WoEl3wd.invoke(scientificNegativeInteger)));
 
         SNode scientificIntegerTrailing = _quotation_createNode_g4w43n_a0y0a0b0l12();
-        Assert.assertEquals(0, (int) NumberLiteral__BehaviorDescriptor.numberOfDecimals_id3p6$WoEl3wd.invoke(scientificIntegerTrailing));
+        Assert.assertEquals(Integer.valueOf(0), Integer.valueOf((int) NumberLiteral__BehaviorDescriptor.numberOfDecimals_id3p6$WoEl3wd.invoke(scientificIntegerTrailing)));
 
         SNode scientificIntegerNegativeTrailing = _quotation_createNode_g4w43n_a0bb0a0b0l12();
-        Assert.assertEquals(0, (int) NumberLiteral__BehaviorDescriptor.numberOfDecimals_id3p6$WoEl3wd.invoke(scientificIntegerNegativeTrailing));
+        Assert.assertEquals(Integer.valueOf(0), Integer.valueOf((int) NumberLiteral__BehaviorDescriptor.numberOfDecimals_id3p6$WoEl3wd.invoke(scientificIntegerNegativeTrailing)));
 
         SNode scientificFloatIsInteger = _quotation_createNode_g4w43n_a0eb0a0b0l12();
-        Assert.assertEquals(0, (int) NumberLiteral__BehaviorDescriptor.numberOfDecimals_id3p6$WoEl3wd.invoke(scientificFloatIsInteger));
+        Assert.assertEquals(Integer.valueOf(0), Integer.valueOf((int) NumberLiteral__BehaviorDescriptor.numberOfDecimals_id3p6$WoEl3wd.invoke(scientificFloatIsInteger)));
 
         SNode scientificFloatNegativeIsInteger = _quotation_createNode_g4w43n_a0hb0a0b0l12();
-        Assert.assertEquals(0, (int) NumberLiteral__BehaviorDescriptor.numberOfDecimals_id3p6$WoEl3wd.invoke(scientificFloatNegativeIsInteger));
+        Assert.assertEquals(Integer.valueOf(0), Integer.valueOf((int) NumberLiteral__BehaviorDescriptor.numberOfDecimals_id3p6$WoEl3wd.invoke(scientificFloatNegativeIsInteger)));
 
         SNode scientificFloat = _quotation_createNode_g4w43n_a0kb0a0b0l12();
-        Assert.assertEquals(2, (int) NumberLiteral__BehaviorDescriptor.numberOfDecimals_id3p6$WoEl3wd.invoke(scientificFloat));
+        Assert.assertEquals(Integer.valueOf(2), Integer.valueOf((int) NumberLiteral__BehaviorDescriptor.numberOfDecimals_id3p6$WoEl3wd.invoke(scientificFloat)));
 
         SNode scientificFloatNegative = _quotation_createNode_g4w43n_a0nb0a0b0l12();
-        Assert.assertEquals(2, (int) NumberLiteral__BehaviorDescriptor.numberOfDecimals_id3p6$WoEl3wd.invoke(scientificFloatNegative));
+        Assert.assertEquals(Integer.valueOf(2), Integer.valueOf((int) NumberLiteral__BehaviorDescriptor.numberOfDecimals_id3p6$WoEl3wd.invoke(scientificFloatNegative)));
       });
     }
     public void test_toDecimal() throws Exception {
       initTestNodes();
       runWithinCommand(() -> {
         SNode zero = _quotation_createNode_g4w43n_a0a0a0b0m12();
-        Assert.assertEquals(0, NumberLiteral__BehaviorDescriptor.toBigDecimal_id6v8$kf$4zsT.invoke(zero).intValue());
+        Assert.assertEquals(Integer.valueOf(0), Integer.valueOf(NumberLiteral__BehaviorDescriptor.toBigDecimal_id6v8$kf$4zsT.invoke(zero).intValue()));
 
         SNode integerPositive = _quotation_createNode_g4w43n_a0d0a0b0m12();
-        Assert.assertEquals(10, NumberLiteral__BehaviorDescriptor.toBigDecimal_id6v8$kf$4zsT.invoke(integerPositive).intValue());
+        Assert.assertEquals(Integer.valueOf(10), Integer.valueOf(NumberLiteral__BehaviorDescriptor.toBigDecimal_id6v8$kf$4zsT.invoke(integerPositive).intValue()));
 
         SNode integerNegative = _quotation_createNode_g4w43n_a0g0a0b0m12();
-        Assert.assertEquals(-10, NumberLiteral__BehaviorDescriptor.toBigDecimal_id6v8$kf$4zsT.invoke(integerNegative).intValue());
+        Assert.assertEquals(Integer.valueOf(-10), Integer.valueOf(NumberLiteral__BehaviorDescriptor.toBigDecimal_id6v8$kf$4zsT.invoke(integerNegative).intValue()));
 
         SNode floatPositive = _quotation_createNode_g4w43n_a0j0a0b0m12();
         Assert.assertEquals(Float.valueOf(10.85f), Float.valueOf(NumberLiteral__BehaviorDescriptor.toBigDecimal_id6v8$kf$4zsT.invoke(floatPositive).floatValue()));
@@ -234,22 +234,22 @@ public class numbers_Test extends BaseTransformationTest {
         Assert.assertEquals(Float.valueOf(10.0f), Float.valueOf(NumberLiteral__BehaviorDescriptor.toBigDecimal_id6v8$kf$4zsT.invoke(floatZero).floatValue()));
 
         SNode scientificInteger = _quotation_createNode_g4w43n_a0s0a0b0m12();
-        Assert.assertEquals(100, NumberLiteral__BehaviorDescriptor.toBigDecimal_id6v8$kf$4zsT.invoke(scientificInteger).intValue());
+        Assert.assertEquals(Integer.valueOf(100), Integer.valueOf(NumberLiteral__BehaviorDescriptor.toBigDecimal_id6v8$kf$4zsT.invoke(scientificInteger).intValue()));
 
         SNode scientificNegativeInteger = _quotation_createNode_g4w43n_a0v0a0b0m12();
-        Assert.assertEquals(-100, NumberLiteral__BehaviorDescriptor.toBigDecimal_id6v8$kf$4zsT.invoke(scientificNegativeInteger).intValue());
+        Assert.assertEquals(Integer.valueOf(-100), Integer.valueOf(NumberLiteral__BehaviorDescriptor.toBigDecimal_id6v8$kf$4zsT.invoke(scientificNegativeInteger).intValue()));
 
         SNode scientificIntegerTrailing = _quotation_createNode_g4w43n_a0y0a0b0m12();
-        Assert.assertEquals(100, NumberLiteral__BehaviorDescriptor.toBigDecimal_id6v8$kf$4zsT.invoke(scientificIntegerTrailing).intValue());
+        Assert.assertEquals(Integer.valueOf(100), Integer.valueOf(NumberLiteral__BehaviorDescriptor.toBigDecimal_id6v8$kf$4zsT.invoke(scientificIntegerTrailing).intValue()));
 
         SNode scientificIntegerNegativeTrailing = _quotation_createNode_g4w43n_a0bb0a0b0m12();
-        Assert.assertEquals(-100, NumberLiteral__BehaviorDescriptor.toBigDecimal_id6v8$kf$4zsT.invoke(scientificIntegerNegativeTrailing).intValue());
+        Assert.assertEquals(Integer.valueOf(-100), Integer.valueOf(NumberLiteral__BehaviorDescriptor.toBigDecimal_id6v8$kf$4zsT.invoke(scientificIntegerNegativeTrailing).intValue()));
 
         SNode scientificFloatIsInteger = _quotation_createNode_g4w43n_a0eb0a0b0m12();
-        Assert.assertEquals(101, NumberLiteral__BehaviorDescriptor.toBigDecimal_id6v8$kf$4zsT.invoke(scientificFloatIsInteger).intValue());
+        Assert.assertEquals(Integer.valueOf(101), Integer.valueOf(NumberLiteral__BehaviorDescriptor.toBigDecimal_id6v8$kf$4zsT.invoke(scientificFloatIsInteger).intValue()));
 
         SNode scientificFloatNegativeIsInteger = _quotation_createNode_g4w43n_a0hb0a0b0m12();
-        Assert.assertEquals(-101, NumberLiteral__BehaviorDescriptor.toBigDecimal_id6v8$kf$4zsT.invoke(scientificFloatNegativeIsInteger).intValue());
+        Assert.assertEquals(Integer.valueOf(-101), Integer.valueOf(NumberLiteral__BehaviorDescriptor.toBigDecimal_id6v8$kf$4zsT.invoke(scientificFloatNegativeIsInteger).intValue()));
 
         SNode scientificFloat = _quotation_createNode_g4w43n_a0kb0a0b0m12();
         Assert.assertEquals(Float.valueOf(101.23f), Float.valueOf(NumberLiteral__BehaviorDescriptor.toBigDecimal_id6v8$kf$4zsT.invoke(scientificFloat).floatValue()));
@@ -662,18 +662,18 @@ public class numbers_Test extends BaseTransformationTest {
         new CheckExpectedMessageRunnable.CheckExpectedTypesystemMessageRunnable(nodeToCheck, MessageStatus.ERROR, "", myProject.getRepository(), myProject.getPlatform()).run();
       });
     }
-    public void test_NodeTypeSystemCheck6862893590118881163() throws Exception {
-      initTestNodes();
-      runWithinCommand(() -> {
-        SNode nodeToCheck = getNodeById("6862893590118881161");
-        new CheckExpectedMessageRunnable.CheckExpectedTypesystemMessageRunnable(nodeToCheck, MessageStatus.ERROR, "", myProject.getRepository(), myProject.getPlatform()).run();
-      });
-    }
     public void test_ErrorMessagesCheck7407689390959727437() throws Exception {
       initTestNodes();
       runWithinCommand(() -> {
         SNode nodeToCheck = getNodeById("9215883686876725790");
         new CheckErrorMessagesRunnable(nodeToCheck, true, false, myProject.getPlatform()).includeSelf(false).exclude(Arrays.<CheckExpectedMessageRunnable>asList(new CheckExpectedMessageRunnable.CheckExpectedTypesystemMessageRunnable(getNodeById("6706649924975945310"), MessageStatus.ERROR, "", myProject.getRepository(), myProject.getPlatform()), new CheckExpectedMessageRunnable.CheckAnyMessageRunnable(getNodeById("1293326996617369533"), MessageStatus.ERROR, "", myProject.getRepository(), myProject.getPlatform()), new CheckExpectedMessageRunnable.CheckExpectedTypesystemMessageRunnable(getNodeById("6862893590118444751"), MessageStatus.ERROR, "", myProject.getRepository(), myProject.getPlatform()), new CheckExpectedMessageRunnable.CheckExpectedTypesystemMessageRunnable(getNodeById("6862893590118767839"), MessageStatus.ERROR, "", myProject.getRepository(), myProject.getPlatform()), new CheckExpectedMessageRunnable.CheckExpectedTypesystemMessageRunnable(getNodeById("6862893590118839609"), MessageStatus.ERROR, "", myProject.getRepository(), myProject.getPlatform()), new CheckExpectedMessageRunnable.CheckExpectedTypesystemMessageRunnable(getNodeById("6862893590118881161"), MessageStatus.ERROR, "", myProject.getRepository(), myProject.getPlatform()))).run();
+      });
+    }
+    public void test_NodeTypeSystemCheck6862893590118881163() throws Exception {
+      initTestNodes();
+      runWithinCommand(() -> {
+        SNode nodeToCheck = getNodeById("6862893590118881161");
+        new CheckExpectedMessageRunnable.CheckExpectedTypesystemMessageRunnable(nodeToCheck, MessageStatus.ERROR, "", myProject.getRepository(), myProject.getPlatform()).run();
       });
     }
 

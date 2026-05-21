@@ -7,7 +7,6 @@ import org.jetbrains.mps.openapi.language.SAbstractConcept;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import org.iets3.core.expr.base.plugin.EffectDescriptor;
 import java.util.List;
@@ -17,7 +16,6 @@ import org.jetbrains.mps.openapi.model.SNode;
 import org.iets3.core.expr.base.behavior.Expression__BehaviorDescriptor;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
 import org.iets3.core.expr.base.behavior.IMayHaveEffect__BehaviorDescriptor;
-import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 import org.jetbrains.mps.openapi.language.SContainmentLink;
@@ -25,13 +23,11 @@ import org.jetbrains.mps.openapi.language.SContainmentLink;
 public final class InterpolExprWord__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getConcept(0x6b277d9ad52d416fL, 0xa2091919bd737f50L, 0x73194702f11928e2L, "org.iets3.core.expr.simpleTypes.structure.InterpolExprWord");
 
-  public static final SMethod<String> toTextString_id3Q5enzfMT4t = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("toTextString").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(4433012599261204765L).languageId(0xa676c7604efe3504L, 0x92d2ea165a424fdfL).build2();
-  public static final SMethod<EffectDescriptor> effectDescriptor_id6GySMNjjWfO = new SMethodBuilder<EffectDescriptor>(new SJavaCompoundTypeImpl(EffectDescriptor.class)).name("effectDescriptor").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(7719982492929737716L).languageId(0xb66a309a6e1a7290L, 0xcfaa4966b7d54b69L).build2();
+  public static final SMethod<String> toTextString_id3Q5enzfMT4t = new SMethodBuilder<>(String.class).name("toTextString").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(4433012599261204765L).languageId(0xa676c7604efe3504L, 0x92d2ea165a424fdfL).build2();
+  public static final SMethod<EffectDescriptor> effectDescriptor_id6GySMNjjWfO = new SMethodBuilder<>(EffectDescriptor.class).name("effectDescriptor").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(7719982492929737716L).languageId(0xb66a309a6e1a7290L, 0xcfaa4966b7d54b69L).build2();
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(toTextString_id3Q5enzfMT4t, effectDescriptor_id6GySMNjjWfO);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(toTextString_id3Q5enzfMT4t, effectDescriptor_id6GySMNjjWfO);
 
-  private static void ___init___(@NotNull SNode __thisNode__) {
-  }
 
   /*package*/ static String toTextString_id3Q5enzfMT4t(@NotNull SNode __thisNode__) {
     return "$(" + Expression__BehaviorDescriptor.renderReadable_id4Y0vh0cfqjE.invoke(SLinkOperations.getTarget(__thisNode__, LINKS.expr$CW3E)) + ")";
@@ -43,10 +39,6 @@ public final class InterpolExprWord__BehaviorDescriptor extends BaseBHDescriptor
   /*package*/ InterpolExprWord__BehaviorDescriptor() {
   }
 
-  @Override
-  protected void initNode(@NotNull SNode node, @NotNull SConstructor constructor, @Nullable Object[] parameters) {
-    ___init___(node);
-  }
 
   @Override
   protected <T> T invokeSpecial0(@NotNull SNode node, @NotNull SMethod<T> method, @Nullable Object[] parameters) {

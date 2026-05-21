@@ -235,10 +235,10 @@ public class QueriesGenerated extends QueryProviderBase {
     return _context.getOutputNodeByInputNodeAndMappingLabel(SNodeOperations.getContainingRoot(SLinkOperations.getTarget(_context.getNode(), LINKS.constant$YVF7)), "KernelFRoot");
   }
   public static Object referenceMacro_GetReferent_1_2(final ReferenceMacroContext _context) {
-    return _context.getOutputNodeByInputNodeAndMappingLabel(SLinkOperations.getTarget(_context.getNode(), LINKS.function$xJRS), "Funktion");
+    return _context.getOutputNodeByInputNodeAndMappingLabel(SLinkOperations.getTarget(_context.getNode(), LINKS.function$xJRS), "Function");
   }
   public static Object referenceMacro_GetReferent_1_3(final ReferenceMacroContext _context) {
-    return SNodeOperations.cast(SNodeOperations.getParent(_context.getOutputNodeByInputNodeAndMappingLabel(SLinkOperations.getTarget(_context.getNode(), LINKS.function$xJRS), "Funktion")), CONCEPTS.Classifier$Ix);
+    return SNodeOperations.cast(SNodeOperations.getParent(_context.getOutputNodeByInputNodeAndMappingLabel(SLinkOperations.getTarget(_context.getNode(), LINKS.function$xJRS), "Function")), CONCEPTS.Classifier$Ix);
   }
   public static Object referenceMacro_GetReferent_1_4(final ReferenceMacroContext _context) {
     return SPropertyOperations.getString(SLinkOperations.getTarget(((SNode) SLinkOperations.getTarget(_context.getNode(), LINKS.target$u23F)), LINKS.extFun$udGR), PROPS.name$MnvL);
@@ -277,7 +277,7 @@ public class QueriesGenerated extends QueryProviderBase {
     return Sequence.fromIterable(ClassConcept__BehaviorDescriptor.constructors_id4_LVZ3pCvsd.invoke(_context.getOutputNodeByInputNodeAndMappingLabel(record, "RecordDeclarationClass"))).first();
   }
   public static Object referenceMacro_GetReferent_1_15(final ReferenceMacroContext _context) {
-    return _context.getOutputNodeByInputNodeAndMappingLabel(SLinkOperations.getTarget(_context.getNode(), LINKS.fun$DJ6H), "Funktion");
+    return _context.getOutputNodeByInputNodeAndMappingLabel(SLinkOperations.getTarget(_context.getNode(), LINKS.fun$DJ6H), "Function");
   }
   public static Object referenceMacro_GetReferent_1_16(final ReferenceMacroContext _context) {
     return SPropertyOperations.getString(SLinkOperations.getTarget(((SNode) SLinkOperations.getTarget(_context.getNode(), LINKS.fun$JJ25)), LINKS.fun$DJ6H), PROPS.name$MnvL);

@@ -7,7 +7,6 @@ import org.jetbrains.mps.openapi.language.SAbstractConcept;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import java.util.List;
 import java.util.Arrays;
@@ -22,7 +21,6 @@ import java.util.OptionalInt;
 import jetbrains.mps.internal.collections.runtime.ListSequence;
 import org.apache.commons.math3.analysis.integration.RombergIntegrator;
 import org.apache.commons.math3.analysis.polynomials.PolynomialFunction;
-import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 import org.jetbrains.mps.openapi.language.SContainmentLink;
@@ -30,13 +28,11 @@ import org.jetbrains.mps.openapi.language.SContainmentLink;
 public final class IntegralExpression__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getConcept(0x6fadc44e69c24a4aL, 0x9d167ebf5f8d3ba0L, 0x34bc74538fd11c81L, "org.iets3.core.expr.math.structure.IntegralExpression");
 
-  public static final SMethod<String> renderReadable_id4Y0vh0cfqjE = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("renderReadable").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5728716233893586154L).languageId(0xb66a309a6e1a7290L, 0xcfaa4966b7d54b69L).build2();
-  public static final SMethod<Double> compute_id3iWt5eg_dvW = new SMethodBuilder<Double>(new SJavaCompoundTypeImpl(Double.TYPE)).name("compute").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(3800040087850637308L).languageId(0x9d167ebf5f8d3ba0L, 0x6fadc44e69c24a4aL).build2(SMethodBuilder.createJavaParameter(Double.TYPE, ""), SMethodBuilder.createJavaParameter(Double.TYPE, ""));
+  public static final SMethod<String> renderReadable_id4Y0vh0cfqjE = new SMethodBuilder<>(String.class).name("renderReadable").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5728716233893586154L).languageId(0xb66a309a6e1a7290L, 0xcfaa4966b7d54b69L).build2();
+  public static final SMethod<Double> compute_id3iWt5eg_dvW = new SMethodBuilder<>(Double.TYPE).name("compute").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(3800040087850637308L).languageId(0x9d167ebf5f8d3ba0L, 0x6fadc44e69c24a4aL).build2(SMethodBuilder.createJavaParameter(Double.TYPE, "lowerBound"), SMethodBuilder.createJavaParameter(Double.TYPE, "upperBound"));
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(renderReadable_id4Y0vh0cfqjE, compute_id3iWt5eg_dvW);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(renderReadable_id4Y0vh0cfqjE, compute_id3iWt5eg_dvW);
 
-  private static void ___init___(@NotNull SNode __thisNode__) {
-  }
 
   /*package*/ static String renderReadable_id4Y0vh0cfqjE(@NotNull SNode __thisNode__) {
     return SConceptOperations.conceptAlias(SNodeOperations.getConcept(__thisNode__)) + "(" + Expression__BehaviorDescriptor.renderReadable_id4Y0vh0cfqjE.invoke(SLinkOperations.getTarget(__thisNode__, LINKS.lower$iJH_)) + "," + Expression__BehaviorDescriptor.renderReadable_id4Y0vh0cfqjE.invoke(SLinkOperations.getTarget(__thisNode__, LINKS.upper$iJWA)) + "," + Expression__BehaviorDescriptor.renderReadable_id4Y0vh0cfqjE.invoke(SLinkOperations.getTarget(__thisNode__, LINKS.body$iKbB)) + ")";
@@ -58,10 +54,6 @@ public final class IntegralExpression__BehaviorDescriptor extends BaseBHDescript
   /*package*/ IntegralExpression__BehaviorDescriptor() {
   }
 
-  @Override
-  protected void initNode(@NotNull SNode node, @NotNull SConstructor constructor, @Nullable Object[] parameters) {
-    ___init___(node);
-  }
 
   @Override
   protected <T> T invokeSpecial0(@NotNull SNode node, @NotNull SMethod<T> method, @Nullable Object[] parameters) {
