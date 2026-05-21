@@ -3161,35 +3161,46 @@
       <property role="TrG5h" value="isApplicableInlineReferencedConfiguration" />
       <node concept="3clFbS" id="2ERoLibd_vu" role="3clF47">
         <node concept="3clFbF" id="438P21Cd2bm" role="3cqZAp">
-          <node concept="1eOMI4" id="2ERoLibd_v$" role="3clFbG">
-            <node concept="22lmx$" id="2ERoLibd_v_" role="1eOMHV">
-              <node concept="2OqwBi" id="2ERoLibd_vA" role="3uHU7B">
-                <node concept="2OqwBi" id="2ERoLibd_vB" role="2Oq$k0">
-                  <node concept="37vLTw" id="2ERoLibd_vC" role="2Oq$k0">
-                    <ref role="3cqZAo" node="2ERoLibd_vN" resolve="node" />
-                  </node>
-                  <node concept="3TrEf2" id="2ERoLibd_vD" role="2OqNvi">
-                    <ref role="3Tt5mk" to="4ndm:5NPKd17BOJ8" resolve="content" />
-                  </node>
-                </node>
-                <node concept="1mIQ4w" id="2ERoLibd_vE" role="2OqNvi">
-                  <node concept="chp4Y" id="2ERoLibd_vF" role="cj9EA">
-                    <ref role="cht4Q" to="4ndm:5NPKd17BIPE" resolve="FeatureModelConfigurationRef" />
-                  </node>
+          <node concept="1Wc70l" id="hMocy8HRZ5" role="3clFbG">
+            <node concept="3fqX7Q" id="hMocy8HSec" role="3uHU7w">
+              <node concept="2YIFZM" id="hMocy8HUbX" role="3fr31v">
+                <ref role="37wK5l" node="2ERoLibd_vR" resolve="inheritancePreventsInlining" />
+                <ref role="1Pybhc" node="3GsRbmWlMok" resolve="IntentionUtilConfiguration" />
+                <node concept="37vLTw" id="hMocy8HUmH" role="37wK5m">
+                  <ref role="3cqZAo" node="2ERoLibd_vN" resolve="node" />
                 </node>
               </node>
-              <node concept="2OqwBi" id="2ERoLibd_vG" role="3uHU7w">
-                <node concept="2OqwBi" id="2ERoLibd_vH" role="2Oq$k0">
-                  <node concept="37vLTw" id="2ERoLibd_vI" role="2Oq$k0">
-                    <ref role="3cqZAo" node="2ERoLibd_vN" resolve="node" />
+            </node>
+            <node concept="1eOMI4" id="2ERoLibd_v$" role="3uHU7B">
+              <node concept="22lmx$" id="2ERoLibd_v_" role="1eOMHV">
+                <node concept="2OqwBi" id="2ERoLibd_vA" role="3uHU7B">
+                  <node concept="2OqwBi" id="2ERoLibd_vB" role="2Oq$k0">
+                    <node concept="37vLTw" id="2ERoLibd_vC" role="2Oq$k0">
+                      <ref role="3cqZAo" node="2ERoLibd_vN" resolve="node" />
+                    </node>
+                    <node concept="3TrEf2" id="2ERoLibd_vD" role="2OqNvi">
+                      <ref role="3Tt5mk" to="4ndm:5NPKd17BOJ8" resolve="content" />
+                    </node>
                   </node>
-                  <node concept="3TrEf2" id="2ERoLibd_vJ" role="2OqNvi">
-                    <ref role="3Tt5mk" to="4ndm:5NPKd17BOJ8" resolve="content" />
+                  <node concept="1mIQ4w" id="2ERoLibd_vE" role="2OqNvi">
+                    <node concept="chp4Y" id="2ERoLibd_vF" role="cj9EA">
+                      <ref role="cht4Q" to="4ndm:5NPKd17BIPE" resolve="FeatureModelConfigurationRef" />
+                    </node>
                   </node>
                 </node>
-                <node concept="1mIQ4w" id="2ERoLibd_vK" role="2OqNvi">
-                  <node concept="chp4Y" id="2ERoLibd_vL" role="cj9EA">
-                    <ref role="cht4Q" to="4ndm:2SOOyvZ_kQb" resolve="FeatureModelConfigurationBase" />
+                <node concept="2OqwBi" id="2ERoLibd_vG" role="3uHU7w">
+                  <node concept="2OqwBi" id="2ERoLibd_vH" role="2Oq$k0">
+                    <node concept="37vLTw" id="2ERoLibd_vI" role="2Oq$k0">
+                      <ref role="3cqZAo" node="2ERoLibd_vN" resolve="node" />
+                    </node>
+                    <node concept="3TrEf2" id="2ERoLibd_vJ" role="2OqNvi">
+                      <ref role="3Tt5mk" to="4ndm:5NPKd17BOJ8" resolve="content" />
+                    </node>
+                  </node>
+                  <node concept="1mIQ4w" id="2ERoLibd_vK" role="2OqNvi">
+                    <node concept="chp4Y" id="2ERoLibd_vL" role="cj9EA">
+                      <ref role="cht4Q" to="4ndm:2SOOyvZ_kQb" resolve="FeatureModelConfigurationBase" />
+                    </node>
                   </node>
                 </node>
               </node>
