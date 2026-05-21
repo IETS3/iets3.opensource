@@ -10,6 +10,7 @@ The project does _not_ follow Semantic Versioning and the changes are documented
 ### Fixed
 
 - Variability: Fix workaround for using for-all-variants checking rules outside the IDE (e.g., on a build server). Due to MPS-34340, the for-all-variants checking cannot be done outside the IDE if the model under check has more than one root nodes. This bugfix includes roots of LogicalChildren in the list of used root nodes.
+- Physical units (language `org.iets3.core.expr.typetags.physunits`): Update unit in typesystem after prefix has been removed (e.g., from "cm" to "m").
 
 
 ## April 2026
@@ -22,16 +23,17 @@ The project does _not_ follow Semantic Versioning and the changes are documented
   - left-hand-side condition in an ITabularVarPoint
 - Allow to set `reportsFilenamePrefix` for the `ICustomRunnerConfig` interface
 - Physical units (language `org.iets3.core.expr.typetags.physunits`): Implicit conversion rules are now supported in typesystem and interpreter. E.g., with the implicit conversion rules defined in `SIDerivedUnits` an expression like `(7 min + 1234 sec) < 0.5 h` is perfectly valid and can be evaluated by the interpreter.
+- Support vertical layout of enum declarations without values
 
 ### Changed
 
 - Variability: The automatic execution of solver checking for tabular variation points (eg. feature decision tables) has been switched off. Now the solver check can be executed manually via "Run/Evaluate/Check manually" from the context menu. We will work on improving stability and performance for this feature and plan to reactivate it back later.
+- Enhanced compatibility between number and int/real types
 
 ### Fixed
 
 - Variability: Restored workaround for using for-all-variants checking rules outside the IDE (e.g., on a build server). Due to MPS-34340, the for-all-variants checking cannot be done outside the IDE if the model under check has more than one root nodes.
 - Variability: After calling intention 'Adapt This Configuration to the Extended Configuration' inherited attributes were set to manual. This bug has been fixed.
-
 
 ## March 2026
 
