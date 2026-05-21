@@ -15,13 +15,13 @@ import jetbrains.mps.internal.collections.runtime.ListSequence;
 import org.iets3.core.expr.typetags.physunits.plugin.IUnitLangConfig;
 import org.iets3.core.expr.typetags.physunits.plugin.PhysUnitLangConfigHelper;
 import jetbrains.mps.typesystem.inference.EquationInfo;
+import org.iets3.core.expr.typetags.physunits.behavior.TaggedExprExt;
 import org.iets3.core.expr.typetags.physunits.behavior.UnitConversionUtil;
 import org.iets3.core.expr.typetags.physunits.behavior.IUnitSpecification__BehaviorDescriptor;
 import org.iets3.core.expr.typetags.physunits.behavior.AbstractUnitPrefixManager;
 import org.iets3.core.expr.typetags.physunits.behavior.GlobalUnitPrefixManager;
 import org.iets3.core.expr.typetags.physunits.behavior.AbstractUnitPrefix;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations;
-import org.iets3.core.expr.typetags.physunits.behavior.TaggedExprExt;
 import org.iets3.core.expr.simpleTypes.behavior.NumberRangeSpec__BehaviorDescriptor;
 import ch.obermuhlner.math.big.DefaultBigDecimalMath;
 import java.math.BigDecimal;
@@ -42,6 +42,7 @@ public class typeof_TaggedExpression_InferenceRule extends AbstractInferenceRule
     {
       final SNode baseType = typeCheckingContext.typeOf(SLinkOperations.getTarget(expr, LINKS.expr$CW3E), "r:d4f1532d-fc5c-419f-84ee-daef42867c8e(org.iets3.core.expr.typetags.physunits.typesystem)", "8196347919645402170", true);
       typeCheckingContext.whenConcrete(baseType, () -> {
+
         SNode type = SConceptOperations.createNewNode(MetaAdapterFactory.getConcept(0x5186c6ce428c4f09L, 0xa9df73d9e86c27d3L, 0x186a8ed9947750b6L, "org.iets3.core.expr.typetags.structure.TaggedType"));
         SLinkOperations.setTarget(type, LINKS.baseType$z6Mz, SNodeOperations.as(typeCheckingContext.getExpandedNode(baseType), CONCEPTS.Type$WK));
         for (SNode tag : ListSequence.fromList(SLinkOperations.getChildren(expr, LINKS.tags$Lx_i))) {
@@ -57,6 +58,9 @@ public class typeof_TaggedExpression_InferenceRule extends AbstractInferenceRule
           }
           return;
         }
+
+        TaggedExprExt.storePrefix(expr, null);
+
         SNode specification = UnitConversionUtil.getSpecification(type);
         {
           final SNode unitReference = IUnitSpecification__BehaviorDescriptor.getExpression_id6q45UTytEvW.invoke(specification);
