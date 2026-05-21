@@ -5655,7 +5655,7 @@
               <node concept="1YBJjd" id="5WXTlJEfPww" role="2Oq$k0">
                 <ref role="1YBMHb" node="5WXTlJEePrE" resolve="numberType" />
               </node>
-              <node concept="2qgKlT" id="5WXTlJEfRgg" role="2OqNvi">
+              <node concept="3zqWPK" id="1ufO_JQr6tQ" role="2OqNvi">
                 <ref role="37wK5l" to="b1h1:2NHHcg2D9Nd" resolve="isPositiveInfinity" />
               </node>
             </node>
@@ -5664,7 +5664,7 @@
                 <node concept="1YBJjd" id="5WXTlJEeQCu" role="2Oq$k0">
                   <ref role="1YBMHb" node="5WXTlJEePrE" resolve="numberType" />
                 </node>
-                <node concept="2qgKlT" id="5WXTlJEeSVe" role="2OqNvi">
+                <node concept="3zqWPK" id="1ufO_JQr6tS" role="2OqNvi">
                   <ref role="37wK5l" to="b1h1:3p6$WoEh1ch" resolve="isInt" />
                 </node>
               </node>
@@ -5672,7 +5672,7 @@
                 <node concept="1YBJjd" id="5WXTlJEfuyc" role="2Oq$k0">
                   <ref role="1YBMHb" node="5WXTlJEePrE" resolve="numberType" />
                 </node>
-                <node concept="2qgKlT" id="5WXTlJEfv9N" role="2OqNvi">
+                <node concept="3zqWPK" id="1ufO_JQr6tU" role="2OqNvi">
                   <ref role="37wK5l" to="b1h1:2NHHcg2Dg5B" resolve="isNegativeInfinity" />
                 </node>
               </node>
@@ -5703,7 +5703,7 @@
                 <node concept="1YBJjd" id="5WXTlJEkrB9" role="2Oq$k0">
                   <ref role="1YBMHb" node="5WXTlJEkrl5" resolve="numberType" />
                 </node>
-                <node concept="2qgKlT" id="5WXTlJEkstC" role="2OqNvi">
+                <node concept="3zqWPK" id="1ufO_JQr6tW" role="2OqNvi">
                   <ref role="37wK5l" to="b1h1:7Wa2sv3Gi_T" resolve="isInfinitePrecision" />
                 </node>
               </node>
@@ -5711,7 +5711,7 @@
                 <node concept="1YBJjd" id="5WXTlJEktVd" role="2Oq$k0">
                   <ref role="1YBMHb" node="5WXTlJEkrl5" resolve="numberType" />
                 </node>
-                <node concept="2qgKlT" id="5WXTlJEktVe" role="2OqNvi">
+                <node concept="3zqWPK" id="1ufO_JQr6tY" role="2OqNvi">
                   <ref role="37wK5l" to="b1h1:2NHHcg2Dg5B" resolve="isNegativeInfinity" />
                 </node>
               </node>
@@ -5720,7 +5720,7 @@
               <node concept="1YBJjd" id="5WXTlJEkvOU" role="2Oq$k0">
                 <ref role="1YBMHb" node="5WXTlJEkrl5" resolve="numberType" />
               </node>
-              <node concept="2qgKlT" id="5WXTlJEkvOV" role="2OqNvi">
+              <node concept="3zqWPK" id="1ufO_JQr6u0" role="2OqNvi">
                 <ref role="37wK5l" to="b1h1:2NHHcg2D9Nd" resolve="isPositiveInfinity" />
               </node>
             </node>
