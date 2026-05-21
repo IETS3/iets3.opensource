@@ -26,12 +26,12 @@ public class PhysUnitInterpreterHelper {
    * Compute conversion expression for a tagged expression, if implicit conversion is required.
    * 
    * This is determined by looking at the ancestors in the AST, and generating a proper sequence of
-   * convertTo operators. Basically, some binary expressions require their left/right operands to 
+   * convertTo operators. Basically, some binary expressions require their left/right operands to
    * have the same unit (like Plus, Minus, and all comparison operators), others don't (like Mult and Div).
    * 
    * If a conversion is needed, but no implicit conversion rule can be found, this method will
-   * return null. In that case, the eval result will probably be wrong. But the user should be aware 
-   * of this already, because the typesystem will show an error. 
+   * return null. In that case, the eval result will probably be wrong. But the user should be aware
+   * of this already, because the typesystem will show an error.
    * 
    * @param operand the tagged expression which maybe has to be converted due to implicit rules
    * @return the conversion expression, or null if no implicit conversion is applicable

@@ -10,7 +10,7 @@ import java.math.BigInteger;
 import java.time.YearMonth;
 
 /**
- * Represents a date range (interval) starting from 'begin', of length 'count' units given by 'unit'.
+ * Represents a date range (interval) starting from 'begin', of length 'count' units given by 'unit'. 
  * Example: new DateRangeValue(LocalDate.of(2018, 1, 1), ChronoUnit.MONTHS, 3) represents Q1 of 2018.
  * 
  * Factory methods are provided for the common cases of single-year, single-month, and "all-time" ranges.

@@ -20,7 +20,7 @@ public class EnumerationDescriptor_SubFeatureRelationship extends EnumerationDes
   private final EnumerationDescriptor.MemberDescriptor myMember_or_0 = new EnumerationDescriptor.MemberDescriptor("or", "or", 0x375cadc475182d48L, "r:a7e2f963-3e46-49e0-a385-e8c7f33c91b7(org.iets3.variability.featuremodel.base.structure)/5939066662398655248");
 
   private final EnumerationLiteralsIndex myIndex = EnumerationLiteralsIndex.build(0x165f1d0525064544L, 0x895e1424f54166ecL, 0x375cadc475182d3aL, 0x375cadc475182d3bL, 0x375cadc475182d45L, 0x375cadc475182d48L);
-  private final List<EnumerationDescriptor.MemberDescriptor> myMembers = new EnumerationDescriptorBase.MembersList(myIndex, myMember_default_0, myMember_xor_0, myMember_or_0);
+  private final List<EnumerationDescriptor.MemberDescriptor> myMembers = new EnumerationDescriptorBase.MembersList0(myIndex, myMember_default_0, myMember_xor_0, myMember_or_0);
 
   @Nullable
   @Override

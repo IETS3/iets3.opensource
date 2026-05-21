@@ -77,7 +77,7 @@ public class AsyncSolverTaskExecutor {
    * @param statusUpdater informs UI of status updates
    * @param timeout defines max run time
    * @param messaging sould errors be highlighted
-   * @return result of callable 
+   * @return result of callable
    */
   public static CompletableFuture<List<IResult>> submit(final SNode forWho, final Supplier<List<IResult>> runnableSolverTask, final Consumer<ISolvableTaskStatus> statusUpdater, final Duration timeout, final boolean messaging) {
     return CompletableFuture.supplyAsync(() -> CollectionSequence.fromCollection(AsyncSolverTaskExecutor.runSolverTask(readAccess(forWho), statusUpdater, runnableSolverTask, messaging, forWho, timeout)).toList(), executorPhase2);

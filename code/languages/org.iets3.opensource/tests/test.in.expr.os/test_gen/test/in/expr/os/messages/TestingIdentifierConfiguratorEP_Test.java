@@ -66,7 +66,7 @@ public class TestingIdentifierConfiguratorEP_Test extends BaseTransformationTest
 
         // The TestIdentifierConfigurator has a lower priority than DefaultIdentifierConfigurator, thus the DefaultIdentifierConfigurator should be selected as the EP-implementation
         IdentifierConfigurator resolveIdentConfig = IdentifierConfiguratorAccess.resolveIdentConfig();
-        Assert.assertEquals("Wrong priority with default EP implementation", new DefaultIdentifierConfigurator().getPriorityLevel(), resolveIdentConfig.getPriorityLevel());
+        Assert.assertEquals("Wrong priority with default EP implementation", Integer.valueOf(new DefaultIdentifierConfigurator().getPriorityLevel()), Integer.valueOf(resolveIdentConfig.getPriorityLevel()));
         assert resolveIdentConfig instanceof DefaultIdentifierConfigurator : "Wrong class with default EP implementation";
 
 
@@ -76,7 +76,7 @@ public class TestingIdentifierConfiguratorEP_Test extends BaseTransformationTest
 
         // The TestIdentifierConfigurator has now a higher priority than DefaultIdentifierConfigurator, thus the TestIdentifierConfigurator should be selected as the EP-implementation
         IdentifierConfigurator resolveIdentConfigReset = IdentifierConfiguratorAccess.resolveIdentConfig();
-        Assert.assertEquals("Wrong priority with test EP implementation", new TestIdentifierConfigurator().getPriorityLevel(), resolveIdentConfigReset.getPriorityLevel());
+        Assert.assertEquals("Wrong priority with test EP implementation", Integer.valueOf(new TestIdentifierConfigurator().getPriorityLevel()), Integer.valueOf(resolveIdentConfigReset.getPriorityLevel()));
         assert resolveIdentConfigReset instanceof TestIdentifierConfigurator : "Wrong class with test EP implementation";
       });
     }

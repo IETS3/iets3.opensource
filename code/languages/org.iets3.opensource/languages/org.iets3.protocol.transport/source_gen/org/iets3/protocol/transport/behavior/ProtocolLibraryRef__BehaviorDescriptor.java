@@ -8,13 +8,11 @@ import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import org.jetbrains.mps.openapi.model.SNode;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import java.util.List;
 import java.util.Arrays;
 import org.jetbrains.annotations.NotNull;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
-import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 import org.jetbrains.mps.openapi.language.SReferenceLink;
@@ -22,12 +20,10 @@ import org.jetbrains.mps.openapi.language.SReferenceLink;
 public final class ProtocolLibraryRef__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getConcept(0xa50d629093d242afL, 0x9ae0b2fefc6ee754L, 0x2b5ce4b48b4eba08L, "org.iets3.protocol.transport.structure.ProtocolLibraryRef");
 
-  public static final SMethod<Iterable<SNode>> protocolMaps_id2HsTbibjFCb = new SMethodBuilder<Iterable<SNode>>(new SJavaCompoundTypeImpl((Class<Iterable<SNode>>) ((Class) Object.class))).name("protocolMaps").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(3124623705570720267L).languageId(0x9ae0b2fefc6ee754L, 0xa50d629093d242afL).build2();
+  public static final SMethod<Iterable<SNode>> protocolMaps_id2HsTbibjFCb = new SMethodBuilder<>((Class<Iterable<SNode>>) ((Class) Object.class)).name("protocolMaps").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(3124623705570720267L).languageId(0x9ae0b2fefc6ee754L, 0xa50d629093d242afL).build2();
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(protocolMaps_id2HsTbibjFCb);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(protocolMaps_id2HsTbibjFCb);
 
-  private static void ___init___(@NotNull SNode __thisNode__) {
-  }
 
   /*package*/ static Iterable<SNode> protocolMaps_id2HsTbibjFCb(@NotNull SNode __thisNode__) {
     return IProtocolMapContainer__BehaviorDescriptor.includedProtocolMaps_id4ETZusGCO9f.invoke(SLinkOperations.getTarget(__thisNode__, LINKS.lib$PkvN));
@@ -36,10 +32,6 @@ public final class ProtocolLibraryRef__BehaviorDescriptor extends BaseBHDescript
   /*package*/ ProtocolLibraryRef__BehaviorDescriptor() {
   }
 
-  @Override
-  protected void initNode(@NotNull SNode node, @NotNull SConstructor constructor, @Nullable Object[] parameters) {
-    ___init___(node);
-  }
 
   @Override
   protected <T> T invokeSpecial0(@NotNull SNode node, @NotNull SMethod<T> method, @Nullable Object[] parameters) {

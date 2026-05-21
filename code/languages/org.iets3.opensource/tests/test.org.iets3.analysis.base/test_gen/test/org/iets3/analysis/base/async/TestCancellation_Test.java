@@ -98,14 +98,14 @@ public class TestCancellation_Test extends BaseTransformationTest {
         Collection<IResult.MessageType> messageTypes = CollectionSequence.fromCollection(new LinkedList<IResult.MessageType>());
         for (CompletableFuture<List<IResult>> future : ListSequence.fromList(futures)) {
           List<IResult> results = future.get(1, TimeUnit.SECONDS);
-          Assert.assertEquals(1, results.size());
+          Assert.assertEquals(Integer.valueOf(1), Integer.valueOf(results.size()));
           IResult result = results.get(0);
           CollectionSequence.fromCollection(messageTypes).addElement(result.messageType());
         }
         // The first and last solvable must be have been ran successfully
-        Assert.assertEquals(2, Collections.frequency(messageTypes, IResult.MessageType.OK));
+        Assert.assertEquals(Integer.valueOf(2), Integer.valueOf(Collections.frequency(messageTypes, IResult.MessageType.OK)));
         // The other in between got cancelled due to being submitted shortly afterwards the first one. The have been submitted while the first solvable still was running
-        Assert.assertEquals(limit - 2, Collections.frequency(messageTypes, IResult.MessageType.Cancelled));
+        Assert.assertEquals(Integer.valueOf(limit - 2), Integer.valueOf(Collections.frequency(messageTypes, IResult.MessageType.Cancelled)));
 
       } finally {
         if (modelTmp.value != null) {

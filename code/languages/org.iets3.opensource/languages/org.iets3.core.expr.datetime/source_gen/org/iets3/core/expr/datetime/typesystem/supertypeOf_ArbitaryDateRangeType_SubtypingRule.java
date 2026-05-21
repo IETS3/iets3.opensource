@@ -27,9 +27,6 @@ public class supertypeOf_ArbitaryDateRangeType_SubtypingRule extends SubtypingRu
   public boolean isWeak() {
     return false;
   }
-  public boolean surelyKeepsConcept() {
-    return true;
-  }
   private static SNode createPeriodType_k4rbfj_a0a1() {
     SNodeBuilder n0 = new SNodeBuilder().init(CONCEPTS.PeriodType$Sv);
     return n0.getResult();

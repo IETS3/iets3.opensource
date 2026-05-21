@@ -9,7 +9,6 @@ import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import java.util.List;
 import org.jetbrains.mps.openapi.model.SNode;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import java.util.Arrays;
 import org.jetbrains.annotations.NotNull;
@@ -20,7 +19,6 @@ import org.iets3.core.trace.plugin.GenericTraceHelper;
 import java.util.ArrayList;
 import jetbrains.mps.internal.collections.runtime.ListSequence;
 import org.iets3.core.trace.behavior.ITrace__BehaviorDescriptor;
-import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 import jetbrains.mps.smodel.builder.SNodeBuilder;
@@ -31,14 +29,12 @@ import org.jetbrains.mps.openapi.language.SConcept;
 public final class GenericTraceQuery__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getConcept(0xbe5191a9347647caL, 0xb2a7a426623add55L, 0x5ff1db2cda0901b7L, "org.iets3.core.assessment.structure.GenericTraceQuery");
 
-  public static final SMethod<List<SNode>> runQuery_id7hIyKqbFNeu = new SMethodBuilder<List<SNode>>(new SJavaCompoundTypeImpl((Class<List<SNode>>) ((Class) Object.class))).name("runQuery").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(8389796016067392414L).languageId(0xaa41d1b2bffa7eb1L, 0xd4280a54f6df4383L).build2();
-  public static final SMethod<Boolean> updateAutomatically_idKxraUPpeM7 = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("updateAutomatically").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(874099300309986439L).languageId(0xaa41d1b2bffa7eb1L, 0xd4280a54f6df4383L).build2();
-  public static final SMethod<List<SNode>> createAssessentResults_id2WDcIIzLpWZ = new SMethodBuilder<List<SNode>>(new SJavaCompoundTypeImpl((Class<List<SNode>>) ((Class) Object.class))).name("createAssessentResults").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(3398303381474090815L).languageId(0xb2a7a426623add55L, 0xbe5191a9347647caL).build2(SMethodBuilder.createJavaParameter((Class<List<SNode>>) ((Class) Object.class), ""));
+  public static final SMethod<List<SNode>> runQuery_id7hIyKqbFNeu = new SMethodBuilder<>((Class<List<SNode>>) ((Class) Object.class)).name("runQuery").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(8389796016067392414L).languageId(0xaa41d1b2bffa7eb1L, 0xd4280a54f6df4383L).build2();
+  public static final SMethod<Boolean> updateAutomatically_idKxraUPpeM7 = new SMethodBuilder<>(Boolean.TYPE).name("updateAutomatically").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(874099300309986439L).languageId(0xaa41d1b2bffa7eb1L, 0xd4280a54f6df4383L).build2();
+  public static final SMethod<List<SNode>> createAssessentResults_id2WDcIIzLpWZ = new SMethodBuilder<>((Class<List<SNode>>) ((Class) Object.class)).name("createAssessentResults").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(3398303381474090815L).languageId(0xb2a7a426623add55L, 0xbe5191a9347647caL).build2(SMethodBuilder.createJavaParameter((Class<List<SNode>>) ((Class) Object.class), "traces"));
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(runQuery_id7hIyKqbFNeu, updateAutomatically_idKxraUPpeM7, createAssessentResults_id2WDcIIzLpWZ);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(runQuery_id7hIyKqbFNeu, updateAutomatically_idKxraUPpeM7, createAssessentResults_id2WDcIIzLpWZ);
 
-  private static void ___init___(@NotNull SNode __thisNode__) {
-  }
 
   /*package*/ static List<SNode> runQuery_id7hIyKqbFNeu(@NotNull SNode __thisNode__) {
     Iterable<SNode> findElements = AssessmentScope__BehaviorDescriptor.findElements_id7nkDZJXluPi.invoke(SLinkOperations.getTarget(__thisNode__, LINKS.scope$pcaf), SNodeOperations.getModel(SLinkOperations.getTarget(__thisNode__, LINKS.scope$pcaf)));
@@ -62,10 +58,6 @@ public final class GenericTraceQuery__BehaviorDescriptor extends BaseBHDescripto
   /*package*/ GenericTraceQuery__BehaviorDescriptor() {
   }
 
-  @Override
-  protected void initNode(@NotNull SNode node, @NotNull SConstructor constructor, @Nullable Object[] parameters) {
-    ___init___(node);
-  }
 
   @Override
   protected <T> T invokeSpecial0(@NotNull SNode node, @NotNull SMethod<T> method, @Nullable Object[] parameters) {

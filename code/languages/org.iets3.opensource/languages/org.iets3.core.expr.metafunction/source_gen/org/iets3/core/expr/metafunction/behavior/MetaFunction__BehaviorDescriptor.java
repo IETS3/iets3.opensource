@@ -8,7 +8,6 @@ import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import org.jetbrains.mps.openapi.model.SNode;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import java.util.List;
 import java.util.Arrays;
@@ -19,7 +18,6 @@ import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
 import org.iets3.core.expr.base.plugin.EffectDescriptor;
 import org.iets3.core.expr.lambda.behavior.EffectTag__BehaviorDescriptor;
 import org.iets3.core.expr.base.behavior.IMayHaveEffect__BehaviorDescriptor;
-import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 import org.jetbrains.mps.openapi.language.SContainmentLink;
@@ -29,14 +27,12 @@ import org.jetbrains.mps.openapi.language.SInterfaceConcept;
 public final class MetaFunction__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getConcept(0x711a16d799e84e1dL, 0xb20c99c0b7309cd8L, 0x53300f6d0c251610L, "org.iets3.core.expr.metafunction.structure.MetaFunction");
 
-  public static final SMethod<SNode> addArg_id6dpaV_AQ5Xf = new SMethodBuilder<SNode>(new SJavaCompoundTypeImpl((Class<SNode>) ((Class) Object.class))).name("addArg").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(7158801157976514383L).languageId(0xb20c99c0b7309cd8L, 0x711a16d799e84e1dL).build2(SMethodBuilder.createJavaParameter(String.class, ""), SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""));
-  public static final SMethod<String> getPresentation_idhEwIMiw = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("getPresentation").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(1213877396640L).languageId(0x9b92103b95ca8c0cL, 0xceab519525ea4f22L).build2();
-  public static final SMethod<String> allowsEffectForNode_idORfz$DS6Ap = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("allowsEffectForNode").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(952298261448780185L).languageId(0xb66a309a6e1a7290L, 0xcfaa4966b7d54b69L).build2(SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""));
+  public static final SMethod<SNode> addArg_id6dpaV_AQ5Xf = new SMethodBuilder<>(SNode.class).name("addArg").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(7158801157976514383L).languageId(0xb20c99c0b7309cd8L, 0x711a16d799e84e1dL).build2(SMethodBuilder.createJavaParameter(String.class, "name"), SMethodBuilder.createJavaParameter(SNode.class, "type"));
+  public static final SMethod<String> getPresentation_idhEwIMiw = new SMethodBuilder<>(String.class).name("getPresentation").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(1213877396640L).languageId(0x9b92103b95ca8c0cL, 0xceab519525ea4f22L).build2();
+  public static final SMethod<String> allowsEffectForNode_idORfz$DS6Ap = new SMethodBuilder<>(String.class).name("allowsEffectForNode").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(952298261448780185L).languageId(0xb66a309a6e1a7290L, 0xcfaa4966b7d54b69L).build2(SMethodBuilder.createJavaParameter(SNode.class, "n"));
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(addArg_id6dpaV_AQ5Xf, getPresentation_idhEwIMiw, allowsEffectForNode_idORfz$DS6Ap);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(addArg_id6dpaV_AQ5Xf, getPresentation_idhEwIMiw, allowsEffectForNode_idORfz$DS6Ap);
 
-  private static void ___init___(@NotNull SNode __thisNode__) {
-  }
 
   /*package*/ static SNode addArg_id6dpaV_AQ5Xf(@NotNull SNode __thisNode__, String name, SNode type) {
     SNode arg = SLinkOperations.addNewChild(__thisNode__, LINKS.args$M3Dr, null);
@@ -68,10 +64,6 @@ public final class MetaFunction__BehaviorDescriptor extends BaseBHDescriptor {
   /*package*/ MetaFunction__BehaviorDescriptor() {
   }
 
-  @Override
-  protected void initNode(@NotNull SNode node, @NotNull SConstructor constructor, @Nullable Object[] parameters) {
-    ___init___(node);
-  }
 
   @Override
   protected <T> T invokeSpecial0(@NotNull SNode node, @NotNull SMethod<T> method, @Nullable Object[] parameters) {
