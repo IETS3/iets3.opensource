@@ -54,6 +54,7 @@
     <import index="rppw" ref="r:720d563d-1633-46b3-a98e-08d2fde4c4a8(org.iets3.core.expr.typetags.physunits.behavior)" />
     <import index="i3ya" ref="r:4f64e2f0-6a4e-4db3-b3bf-7977f44949b6(org.iets3.core.expr.typetags.physunits.structure)" />
     <import index="qlm2" ref="r:c0482758-b46b-48c3-8482-fa4a3115b53b(org.iets3.core.expr.typetags.behavior)" />
+    <import index="2rbz" ref="r:aeef8772-8af4-45c3-a762-623d4009d953(org.iets3.variability.base.plugin)" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -258,7 +259,9 @@
       <concept id="1178549954367" name="jetbrains.mps.baseLanguage.structure.IVisible" flags="ngI" index="1B3ioH">
         <child id="1178549979242" name="visibility" index="1B3o_S" />
       </concept>
-      <concept id="1107796713796" name="jetbrains.mps.baseLanguage.structure.Interface" flags="ig" index="3HP615" />
+      <concept id="1107796713796" name="jetbrains.mps.baseLanguage.structure.Interface" flags="ig" index="3HP615">
+        <child id="1107797138135" name="extendedInterface" index="3HQHJm" />
+      </concept>
       <concept id="5351203823916750322" name="jetbrains.mps.baseLanguage.structure.TryUniversalStatement" flags="nn" index="3J1_TO">
         <child id="8276990574886367510" name="catchClause" index="1zxBo5" />
         <child id="8276990574886367509" name="finallyClause" index="1zxBo6" />
@@ -11808,25 +11811,15 @@
     <node concept="3Tm1VV" id="1GjSFjiD0H1" role="1B3o_S" />
   </node>
   <node concept="vrV6u" id="1e_Qt5z9Qg">
-    <property role="3GE5qa" value="tailoring" />
+    <property role="3GE5qa" value="tailoring.names" />
     <property role="TrG5h" value="enrichedConfigNameLogicExtPoint" />
     <node concept="3uibUv" id="1e_Qt5$A4I" role="luc8K">
       <ref role="3uigEE" node="1e_Qt5zas$" resolve="IEnrichedConfigNameLogic" />
     </node>
   </node>
   <node concept="3HP615" id="1e_Qt5zas$">
-    <property role="3GE5qa" value="tailoring" />
+    <property role="3GE5qa" value="tailoring.names" />
     <property role="TrG5h" value="IEnrichedConfigNameLogic" />
-    <node concept="Wx3nA" id="6vXjBknmRAN" role="jymVt">
-      <property role="TrG5h" value="DEFAULT_PRIORITY" />
-      <property role="3TUv4t" value="true" />
-      <node concept="3Tm1VV" id="6vXjBknmRAO" role="1B3o_S" />
-      <node concept="10Oyi0" id="6vXjBknmRtl" role="1tU5fm" />
-      <node concept="3cmrfG" id="6vXjBknmRLU" role="33vP2m">
-        <property role="3cmrfH" value="0" />
-      </node>
-    </node>
-    <node concept="2tJIrI" id="1e_Qt5zEII" role="jymVt" />
     <node concept="3clFb_" id="6vXjBknacek" role="jymVt">
       <property role="TrG5h" value="hasActualEnrichedName" />
       <node concept="37vLTG" id="6vXjBknacuZ" role="3clF46">
@@ -11934,20 +11927,6 @@
         </node>
       </node>
     </node>
-    <node concept="2tJIrI" id="1e_Qt5$zhQ" role="jymVt" />
-    <node concept="3clFb_" id="1e_Qt5$ziC" role="jymVt">
-      <property role="TrG5h" value="priority" />
-      <node concept="10Oyi0" id="1e_Qt5$ziD" role="3clF45" />
-      <node concept="3Tm1VV" id="1e_Qt5$ziE" role="1B3o_S" />
-      <node concept="3clFbS" id="1e_Qt5$ziF" role="3clF47" />
-      <node concept="P$JXv" id="1e_Qt5$ziI" role="lGtFl">
-        <node concept="TZ5HA" id="1e_Qt5$ziJ" role="TZ5H$">
-          <node concept="1dT_AC" id="1e_Qt5$ziK" role="1dT_Ay">
-            <property role="1dT_AB" value="The extension implementation with the highest priority wins." />
-          </node>
-        </node>
-      </node>
-    </node>
     <node concept="3Tm1VV" id="1e_Qt5zas_" role="1B3o_S" />
     <node concept="3UR2Jj" id="4O1MtdoPj5h" role="lGtFl">
       <node concept="TZ5HA" id="4O1MtdoPj5i" role="TZ5H$">
@@ -11956,9 +11935,12 @@
         </node>
       </node>
     </node>
+    <node concept="3uibUv" id="7Sbg4UjPuEf" role="3HQHJm">
+      <ref role="3uigEE" to="2rbz:7Sbg4UjPubL" resolve="IExtensionWithPriority" />
+    </node>
   </node>
   <node concept="312cEu" id="1e_Qt5zgHq">
-    <property role="3GE5qa" value="tailoring" />
+    <property role="3GE5qa" value="tailoring.names" />
     <property role="TrG5h" value="DefaultEnrichedConfigNameLogic" />
     <node concept="2tJIrI" id="1e_Qt5$B0d" role="jymVt" />
     <node concept="3clFb_" id="6vXjBknadV1" role="jymVt">
@@ -12050,111 +12032,50 @@
         <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
       </node>
     </node>
-    <node concept="2tJIrI" id="1e_Qt5$Bhg" role="jymVt" />
-    <node concept="3clFb_" id="1e_Qt5$A79" role="jymVt">
-      <property role="TrG5h" value="priority" />
-      <node concept="10Oyi0" id="1e_Qt5$A7a" role="3clF45" />
-      <node concept="3Tm1VV" id="1e_Qt5$A7b" role="1B3o_S" />
-      <node concept="3clFbS" id="1e_Qt5$A7g" role="3clF47">
-        <node concept="3clFbF" id="1e_Qt5$A7j" role="3cqZAp">
-          <node concept="37vLTw" id="6vXjBknmUPE" role="3clFbG">
-            <ref role="3cqZAo" node="6vXjBknmRAN" resolve="DEFAULT_PRIORITY" />
-          </node>
-        </node>
-      </node>
-      <node concept="2AHcQZ" id="1e_Qt5$A7h" role="2AJF6D">
-        <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
-      </node>
+    <node concept="3uibUv" id="7Sbg4UjP$mp" role="1zkMxy">
+      <ref role="3uigEE" to="2rbz:7Sbg4UjPvkH" resolve="AbstractExtensionWithPriority" />
     </node>
   </node>
   <node concept="312cEu" id="1e_Qt5_v$e">
     <property role="TrG5h" value="EnrichedConfigNames" />
-    <property role="3GE5qa" value="tailoring" />
+    <property role="3GE5qa" value="tailoring.names" />
     <node concept="2tJIrI" id="1e_Qt5_Gcq" role="jymVt" />
     <node concept="2YIFZL" id="4qv99IrBnzk" role="jymVt">
       <property role="TrG5h" value="instance" />
       <node concept="3clFbS" id="4qv99IrBnzn" role="3clF47">
-        <node concept="3cpWs8" id="4qv99IrBJ3T" role="3cqZAp">
-          <node concept="3cpWsn" id="4qv99IrBJ3U" role="3cpWs9">
-            <property role="TrG5h" value="ep" />
-            <node concept="3uibUv" id="4qv99IrBJ1H" role="1tU5fm">
-              <ref role="3uigEE" node="1e_Qt5zas$" resolve="IEnrichedConfigNameLogic" />
-            </node>
-            <node concept="2OqwBi" id="4qv99IrBJ3V" role="33vP2m">
-              <node concept="2OqwBi" id="4qv99IrBJ3W" role="2Oq$k0">
-                <node concept="2OqwBi" id="4qv99IrBJ3X" role="2Oq$k0">
-                  <node concept="2O5UvJ" id="4qv99IrBJ3Y" role="2Oq$k0">
-                    <ref role="2O5UnU" node="1e_Qt5z9Qg" resolve="enrichedConfigNameLogicExtPoint" />
-                  </node>
-                  <node concept="SfwO_" id="4qv99IrBJ3Z" role="2OqNvi" />
-                </node>
-                <node concept="2S7cBI" id="4qv99IrBJ40" role="2OqNvi">
-                  <node concept="1bVj0M" id="4qv99IrBJ41" role="23t8la">
-                    <node concept="3clFbS" id="4qv99IrBJ42" role="1bW5cS">
-                      <node concept="3clFbF" id="4qv99IrBJ43" role="3cqZAp">
-                        <node concept="2OqwBi" id="4qv99IrBJ44" role="3clFbG">
-                          <node concept="37vLTw" id="4qv99IrBJ45" role="2Oq$k0">
-                            <ref role="3cqZAo" node="2FZhxW1aEb9" resolve="it" />
-                          </node>
-                          <node concept="liA8E" id="4qv99IrBJ46" role="2OqNvi">
-                            <ref role="37wK5l" node="1e_Qt5$ziC" resolve="priority" />
-                          </node>
-                        </node>
-                      </node>
-                    </node>
-                    <node concept="gl6BB" id="2FZhxW1aEb9" role="1bW2Oz">
-                      <property role="TrG5h" value="it" />
-                      <node concept="2jxLKc" id="2FZhxW1aEba" role="1tU5fm" />
-                    </node>
-                  </node>
-                  <node concept="1nlBCl" id="29cIrQKmYPA" role="2S7zOq" />
-                </node>
+        <node concept="3cpWs8" id="7Sbg4UjPQDx" role="3cqZAp">
+          <node concept="3cpWsn" id="7Sbg4UjPQDy" role="3cpWs9">
+            <property role="TrG5h" value="extensions" />
+            <node concept="A3Dl8" id="7Sbg4UjPQCf" role="1tU5fm">
+              <node concept="3uibUv" id="7Sbg4UjPQCi" role="A3Ik2">
+                <ref role="3uigEE" node="1e_Qt5zas$" resolve="IEnrichedConfigNameLogic" />
               </node>
-              <node concept="1uHKPH" id="29cIrQKn0vr" role="2OqNvi" />
+            </node>
+            <node concept="2OqwBi" id="7Sbg4UjPQDz" role="33vP2m">
+              <node concept="2O5UvJ" id="7Sbg4UjPQD$" role="2Oq$k0">
+                <ref role="2O5UnU" node="1e_Qt5z9Qg" resolve="enrichedConfigNameLogicExtPoint" />
+              </node>
+              <node concept="SfwO_" id="7Sbg4UjPQD_" role="2OqNvi" />
             </node>
           </node>
         </node>
-        <node concept="3clFbH" id="1e_Qt5_BTi" role="3cqZAp" />
-        <node concept="3SKdUt" id="3bE2i5JypcP" role="3cqZAp">
-          <node concept="1PaTwC" id="3bE2i5JypcQ" role="1aUNEU">
-            <node concept="3oM_SD" id="3bE2i5Jypff" role="1PaTwD">
-              <property role="3oM_SC" value="null" />
+        <node concept="3clFbF" id="7Sbg4UjPPjW" role="3cqZAp">
+          <node concept="2YIFZM" id="7Sbg4UjPPv$" role="3clFbG">
+            <ref role="1Pybhc" to="2rbz:7Sbg4UjPNNA" resolve="AbstractExtensionProvider" />
+            <ref role="37wK5l" to="2rbz:7Sbg4UjP$Z3" resolve="instanceByPriority" />
+            <node concept="37vLTw" id="7Sbg4UjPQDA" role="37wK5m">
+              <ref role="3cqZAo" node="7Sbg4UjPQDy" resolve="extensions" />
             </node>
-            <node concept="3oM_SD" id="3bE2i5JypCM" role="1PaTwD">
-              <property role="3oM_SC" value="case" />
-            </node>
-            <node concept="3oM_SD" id="3bE2i5JypD8" role="1PaTwD">
-              <property role="3oM_SC" value="is" />
-            </node>
-            <node concept="3oM_SD" id="3bE2i5JypDv" role="1PaTwD">
-              <property role="3oM_SC" value="fallback," />
-            </node>
-            <node concept="3oM_SD" id="3bE2i5Jypfh" role="1PaTwD">
-              <property role="3oM_SC" value="should" />
-            </node>
-            <node concept="3oM_SD" id="3bE2i5Jypfk" role="1PaTwD">
-              <property role="3oM_SC" value="not" />
-            </node>
-            <node concept="3oM_SD" id="3bE2i5Jypfo" role="1PaTwD">
-              <property role="3oM_SC" value="happen" />
-            </node>
-          </node>
-        </node>
-        <node concept="3clFbF" id="4qv99IrBJoK" role="3cqZAp">
-          <node concept="3K4zz7" id="4qv99IrBK2L" role="3clFbG">
-            <node concept="2ShNRf" id="4qv99IrBK8j" role="3K4E3e">
-              <node concept="HV5vD" id="4qv99IrBMfR" role="2ShVmc">
-                <property role="373rjd" value="true" />
-                <ref role="HV5vE" node="1e_Qt5zgHq" resolve="DefaultEnrichedConfigNameLogic" />
-              </node>
-            </node>
-            <node concept="37vLTw" id="4qv99IrBMks" role="3K4GZi">
-              <ref role="3cqZAo" node="4qv99IrBJ3U" resolve="ep" />
-            </node>
-            <node concept="3clFbC" id="4qv99IrBJNT" role="3K4Cdx">
-              <node concept="10Nm6u" id="4qv99IrBJTZ" role="3uHU7w" />
-              <node concept="37vLTw" id="4qv99IrBJoI" role="3uHU7B">
-                <ref role="3cqZAo" node="4qv99IrBJ3U" resolve="ep" />
+            <node concept="1bVj0M" id="7Sbg4UjPPUD" role="37wK5m">
+              <node concept="3clFbS" id="7Sbg4UjPPUJ" role="1bW5cS">
+                <node concept="3clFbF" id="7Sbg4UjPQvr" role="3cqZAp">
+                  <node concept="2ShNRf" id="7Sbg4UjPQvt" role="3clFbG">
+                    <node concept="HV5vD" id="7Sbg4UjPQvv" role="2ShVmc">
+                      <property role="373rjd" value="true" />
+                      <ref role="HV5vE" node="1e_Qt5zgHq" resolve="DefaultEnrichedConfigNameLogic" />
+                    </node>
+                  </node>
+                </node>
               </node>
             </node>
           </node>
@@ -12166,10 +12087,13 @@
       </node>
     </node>
     <node concept="3Tm1VV" id="1e_Qt5_v$f" role="1B3o_S" />
+    <node concept="3uibUv" id="7Sbg4UjPOxM" role="1zkMxy">
+      <ref role="3uigEE" to="2rbz:7Sbg4UjPNNA" resolve="AbstractExtensionProvider" />
+    </node>
   </node>
   <node concept="1lYeZD" id="7TK9se3Zi5c">
     <property role="TrG5h" value="DefaultEnrichedConfigNameLogicExtension" />
-    <property role="3GE5qa" value="tailoring" />
+    <property role="3GE5qa" value="tailoring.names" />
     <ref role="1lYe$Y" node="1e_Qt5z9Qg" resolve="enrichedConfigNameLogicExtPoint" />
     <node concept="3Tm1VV" id="7TK9se3Zi5d" role="1B3o_S" />
     <node concept="2tJIrI" id="7TK9se3Zi5e" role="jymVt" />
@@ -12200,6 +12124,149 @@
         <ref role="q3mfh" to="90d:3zLwYDe0sv$" />
         <ref role="1QQUv3" node="7TK9se3Zi5i" resolve="get" />
       </node>
+    </node>
+  </node>
+  <node concept="vrV6u" id="7Sbg4UjOAZ$">
+    <property role="3GE5qa" value="tailoring.logic" />
+    <property role="TrG5h" value="configCombinationLogicExtPoint" />
+    <node concept="3uibUv" id="7Sbg4UjOAZ_" role="luc8K">
+      <ref role="3uigEE" node="7Sbg4UjOBdB" resolve="IConfigCombinationLogic" />
+    </node>
+  </node>
+  <node concept="3HP615" id="7Sbg4UjOBdB">
+    <property role="TrG5h" value="IConfigCombinationLogic" />
+    <property role="3GE5qa" value="tailoring.logic" />
+    <node concept="2tJIrI" id="7Sbg4UjOD1r" role="jymVt" />
+    <node concept="3clFb_" id="7Sbg4UjOEaG" role="jymVt">
+      <property role="TrG5h" value="allowAbstractSubConfigs" />
+      <node concept="3clFbS" id="7Sbg4UjOEaJ" role="3clF47" />
+      <node concept="3Tm1VV" id="7Sbg4UjOEaK" role="1B3o_S" />
+      <node concept="10P_77" id="7Sbg4UjOEaf" role="3clF45" />
+    </node>
+    <node concept="3Tm1VV" id="7Sbg4UjOBdC" role="1B3o_S" />
+    <node concept="3UR2Jj" id="7Sbg4UjOCX6" role="lGtFl">
+      <node concept="TZ5HA" id="7Sbg4UjOCX7" role="TZ5H$">
+        <node concept="1dT_AC" id="7Sbg4UjOCX8" role="1dT_Ay">
+          <property role="1dT_AB" value="Extension API definition for EP &quot;configCombinationLogicExtPoint&quot;" />
+        </node>
+      </node>
+    </node>
+    <node concept="3uibUv" id="7Sbg4UjPuLf" role="3HQHJm">
+      <ref role="3uigEE" to="2rbz:7Sbg4UjPubL" resolve="IExtensionWithPriority" />
+    </node>
+  </node>
+  <node concept="312cEu" id="7Sbg4UjOCBA">
+    <property role="3GE5qa" value="tailoring.logic" />
+    <property role="TrG5h" value="DefaultConfigCombinationLogic" />
+    <node concept="3clFb_" id="7Sbg4UjOEe7" role="jymVt">
+      <property role="TrG5h" value="allowAbstractSubConfigs" />
+      <node concept="3Tm1VV" id="7Sbg4UjOEe9" role="1B3o_S" />
+      <node concept="10P_77" id="7Sbg4UjOEea" role="3clF45" />
+      <node concept="3clFbS" id="7Sbg4UjOEeb" role="3clF47">
+        <node concept="3clFbF" id="7Sbg4UjOEee" role="3cqZAp">
+          <node concept="3clFbT" id="7Sbg4UjOEed" role="3clFbG" />
+        </node>
+      </node>
+      <node concept="2AHcQZ" id="7Sbg4UjOEec" role="2AJF6D">
+        <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
+      </node>
+    </node>
+    <node concept="3Tm1VV" id="7Sbg4UjOCBB" role="1B3o_S" />
+    <node concept="3uibUv" id="7Sbg4UjOCCM" role="EKbjA">
+      <ref role="3uigEE" node="7Sbg4UjOBdB" resolve="IConfigCombinationLogic" />
+    </node>
+    <node concept="3uibUv" id="7Sbg4UjPvro" role="1zkMxy">
+      <ref role="3uigEE" to="2rbz:7Sbg4UjPvkH" resolve="AbstractExtensionWithPriority" />
+    </node>
+  </node>
+  <node concept="1lYeZD" id="7Sbg4UjOGdF">
+    <property role="TrG5h" value="DefaultConfigCombinationLogicExtension" />
+    <property role="3GE5qa" value="tailoring.logic" />
+    <ref role="1lYe$Y" node="7Sbg4UjOAZ$" resolve="configCombinationLogicExtPoint" />
+    <node concept="3Tm1VV" id="7Sbg4UjOGdG" role="1B3o_S" />
+    <node concept="2tJIrI" id="7Sbg4UjOGdH" role="jymVt" />
+    <node concept="3tTeZs" id="7Sbg4UjOGdI" role="jymVt">
+      <property role="3tTeZt" value="activate" />
+      <ref role="3tTeZr" to="90d:3zLwYDe0CPy" resolve="activate" />
+    </node>
+    <node concept="3tTeZs" id="7Sbg4UjOGdJ" role="jymVt">
+      <property role="3tTeZt" value="deactivate" />
+      <ref role="3tTeZr" to="90d:3zLwYDe0BDO" resolve="deactivate" />
+    </node>
+    <node concept="2tJIrI" id="7Sbg4UjOGdK" role="jymVt" />
+    <node concept="q3mfD" id="7Sbg4UjOGdL" role="jymVt">
+      <property role="TrG5h" value="get" />
+      <ref role="2VtyIY" to="90d:3zLwYDe0svr" resolve="get" />
+      <node concept="3Tm1VV" id="7Sbg4UjOGdM" role="1B3o_S" />
+      <node concept="3clFbS" id="7Sbg4UjOGdN" role="3clF47">
+        <node concept="3cpWs6" id="7Sbg4UjOGdO" role="3cqZAp">
+          <node concept="2ShNRf" id="7Sbg4UjOGdP" role="3cqZAk">
+            <node concept="HV5vD" id="7Sbg4UjOGdQ" role="2ShVmc">
+              <property role="373rjd" value="true" />
+              <ref role="HV5vE" node="7Sbg4UjOCBA" resolve="DefaultConfigCombinationLogic" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="q3mfm" id="7Sbg4UjOGdR" role="3clF45">
+        <ref role="q3mfh" to="90d:3zLwYDe0sv$" />
+        <ref role="1QQUv3" node="7Sbg4UjOGdL" resolve="get" />
+      </node>
+    </node>
+  </node>
+  <node concept="312cEu" id="7Sbg4UjP3T$">
+    <property role="TrG5h" value="ConfigCombinationLogic" />
+    <property role="3GE5qa" value="tailoring.logic" />
+    <node concept="2tJIrI" id="7Sbg4UjP3T_" role="jymVt" />
+    <node concept="2YIFZL" id="7Sbg4UjPS90" role="jymVt">
+      <property role="TrG5h" value="instance" />
+      <node concept="3clFbS" id="7Sbg4UjPS91" role="3clF47">
+        <node concept="3cpWs8" id="7Sbg4UjPS92" role="3cqZAp">
+          <node concept="3cpWsn" id="7Sbg4UjPS93" role="3cpWs9">
+            <property role="TrG5h" value="extensions" />
+            <node concept="A3Dl8" id="7Sbg4UjPS94" role="1tU5fm">
+              <node concept="3uibUv" id="7Sbg4UjPS95" role="A3Ik2">
+                <ref role="3uigEE" node="7Sbg4UjOBdB" resolve="IConfigCombinationLogic" />
+              </node>
+            </node>
+            <node concept="2OqwBi" id="7Sbg4UjPS96" role="33vP2m">
+              <node concept="2O5UvJ" id="7Sbg4UjPS97" role="2Oq$k0">
+                <ref role="2O5UnU" node="7Sbg4UjOAZ$" resolve="configCombinationLogicExtPoint" />
+              </node>
+              <node concept="SfwO_" id="7Sbg4UjPS98" role="2OqNvi" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="7Sbg4UjPS99" role="3cqZAp">
+          <node concept="2YIFZM" id="7Sbg4UjPS9a" role="3clFbG">
+            <ref role="1Pybhc" to="2rbz:7Sbg4UjPNNA" resolve="AbstractExtensionProvider" />
+            <ref role="37wK5l" to="2rbz:7Sbg4UjP$Z3" resolve="instanceByPriority" />
+            <node concept="37vLTw" id="7Sbg4UjPS9b" role="37wK5m">
+              <ref role="3cqZAo" node="7Sbg4UjPS93" resolve="extensions" />
+            </node>
+            <node concept="1bVj0M" id="7Sbg4UjPS9c" role="37wK5m">
+              <node concept="3clFbS" id="7Sbg4UjPS9d" role="1bW5cS">
+                <node concept="3clFbF" id="7Sbg4UjPS9e" role="3cqZAp">
+                  <node concept="2ShNRf" id="7Sbg4UjPS9f" role="3clFbG">
+                    <node concept="HV5vD" id="7Sbg4UjPS9g" role="2ShVmc">
+                      <property role="373rjd" value="true" />
+                      <ref role="HV5vE" node="7Sbg4UjOCBA" resolve="DefaultConfigCombinationLogic" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3Tm1VV" id="7Sbg4UjPS9h" role="1B3o_S" />
+      <node concept="3uibUv" id="7Sbg4UjPS9i" role="3clF45">
+        <ref role="3uigEE" node="7Sbg4UjOBdB" resolve="IConfigCombinationLogic" />
+      </node>
+    </node>
+    <node concept="3Tm1VV" id="7Sbg4UjP3Uf" role="1B3o_S" />
+    <node concept="3uibUv" id="7Sbg4UjPS$D" role="1zkMxy">
+      <ref role="3uigEE" to="2rbz:7Sbg4UjPNNA" resolve="AbstractExtensionProvider" />
     </node>
   </node>
 </model>
