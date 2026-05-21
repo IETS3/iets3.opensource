@@ -5,6 +5,14 @@ All notable changes to this project are documented in this file.
 Format of the log is _loosely_ based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 The project does _not_ follow Semantic Versioning and the changes are documented in reverse chronological order, grouped by calendar month.
 
+## June 2026
+
+### Added
+
+- Variability: Introduced extension point `configCombinationLogicExtPoint` (interface `IConfigCombinationLogic`) to make the logic of combining configurations (via `extends`, `abstract` and referenced sub-configurations) configurable per application.
+- Variability: Configuration checking for referenced abstract sub-configurations now respects the active combination logic, and configuration hashing was extended to cover a configuration together with all configurations reachable from it.
+
+
 ## May 2026
 
 ### Fixed
