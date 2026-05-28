@@ -12,9 +12,9 @@ import java.util.Collection;
 import jetbrains.mps.internal.collections.runtime.ListSequence;
 import jetbrains.mps.internal.collections.runtime.IterableUtils;
 import org.apache.commons.lang3.RandomStringUtils;
-import org.jetbrains.mps.openapi.language.SProperty;
-import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import org.jetbrains.mps.openapi.language.SInterfaceConcept;
+import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
+import org.jetbrains.mps.openapi.language.SProperty;
 
 /**
  * The renaming API definition used by the IFilterInstantiater for filtering 150% models.
@@ -49,7 +49,7 @@ public interface IRenamer {
    * @return true if the name already exists
    */
   static boolean hasNameClash(Set<SNode> existingInstances, final SNode newInstance) {
-    return Sequence.fromIterable((SNodeOperations.ofConcept(existingInstances, SNodeOperations.asSConcept(SNodeOperations.getConcept(newInstance))))).any((it) -> Objects.equals(SPropertyOperations.getString(it, PROPS.name$MnvL), SPropertyOperations.getString(newInstance, PROPS.name$MnvL)));
+    return Sequence.fromIterable((SNodeOperations.ofConcept(existingInstances, SNodeOperations.asSConcept(SNodeOperations.getConcept(newInstance))))).any((it) -> Objects.equals(SPropertyOperations.getString(SNodeOperations.as(it, CONCEPTS.INamedConcept$Kd), PROPS.name$MnvL), SPropertyOperations.getString(newInstance, PROPS.name$MnvL)));
   }
 
   /**
@@ -82,11 +82,11 @@ public interface IRenamer {
     return pathName;
   }
 
-  final class PROPS {
-    /*package*/ static final SProperty name$MnvL = MetaAdapterFactory.getProperty(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L, 0x110396ec041L, "name");
-  }
-
   final class CONCEPTS {
     /*package*/ static final SInterfaceConcept INamedConcept$Kd = MetaAdapterFactory.getInterfaceConcept(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L, "jetbrains.mps.lang.core.structure.INamedConcept");
+  }
+
+  final class PROPS {
+    /*package*/ static final SProperty name$MnvL = MetaAdapterFactory.getProperty(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L, 0x110396ec041L, "name");
   }
 }
