@@ -57,7 +57,7 @@ public class STFTest_Test extends BaseTransformationTest {
         Assert.assertTrue("Task is not " + CONCEPTS.DummySolverTask$vc + " but " + SNodeOperations.getConcept(task), SNodeOperations.isInstanceOf(task, CONCEPTS.DummySolverTask$vc));
         // 'Factory1' and 'Factory2' create a 'DummySolverTask', but 'Factory2' must be chosen. This can be determined as 
         // it sets 'sleepTime' to '0'. Further, 'UnrelatedConcept''s SolverTaskFactory has the highest prio, but must not be considered as it is not in the concept-hierarchy of 'DummyISolvable'. 
-        Assert.assertEquals("Sleep time wrong", 0, SPropertyOperations.getInteger(SNodeOperations.as(task, CONCEPTS.DummySolverTask$vc), PROPS.sleepTime$9t9K));
+        Assert.assertEquals("Sleep time wrong", Integer.valueOf(0), Integer.valueOf(SPropertyOperations.getInteger(SNodeOperations.as(task, CONCEPTS.DummySolverTask$vc), PROPS.sleepTime$9t9K)));
       });
     }
     public void test_ensureThatSolverTaskFactoryForUnrelatedConceptIsChosen() throws Exception {
@@ -68,7 +68,7 @@ public class STFTest_Test extends BaseTransformationTest {
         Assert.assertNotNull("Task must not be null", task);
         Assert.assertTrue("Task is not " + CONCEPTS.DummySolverTask$vc + " but " + SNodeOperations.getConcept(task), SNodeOperations.isInstanceOf(task, CONCEPTS.DummySolverTask$vc));
         // uninfluenced by subclasses of 'DummyISolvable', the SolvertaskFactory of 'UnrelatedConcept' must be chosen
-        Assert.assertEquals("Sleep time wrong", 1234, SPropertyOperations.getInteger(SNodeOperations.as(task, CONCEPTS.DummySolverTask$vc), PROPS.sleepTime$9t9K));
+        Assert.assertEquals("Sleep time wrong", Integer.valueOf(1234), Integer.valueOf(SPropertyOperations.getInteger(SNodeOperations.as(task, CONCEPTS.DummySolverTask$vc), PROPS.sleepTime$9t9K)));
 
       });
     }

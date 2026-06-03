@@ -342,7 +342,7 @@ import org.jetbrains.mps.openapi.language.SConcept;
     style.set(StyleAttributes.INDENT_LAYOUT_INDENT, true);
     editorCell.getStyle().putAll(style);
     editorCell.addEditorCell(createConstant_6());
-    editorCell.addEditorCell(createCheckbox_1());
+    editorCell.addEditorCell(createCheckbox_0());
     return editorCell;
   }
   private EditorCell createConstant_6() {
@@ -351,12 +351,12 @@ import org.jetbrains.mps.openapi.language.SConcept;
     editorCell.setDefaultText("");
     return editorCell;
   }
-  private EditorCell createCheckbox_0(EditorContext editorContext, SNode node) {
+  private EditorCell createCheckbox_0() {
     SProperty property = PROPS.highlightErrors$Rknd;
-    CellProviderWithRole provider = new CheckboxCellProvider(node, property, editorContext);
+    CellProviderWithRole provider = new CheckboxCellProvider(getNode(), property, getEditorContext());
     provider.setNoTargetText("<no highlightErrors>");
     EditorCell_Checkbox editorCell;
-    editorCell = ((EditorCell_Checkbox) provider.createEditorCell(editorContext));
+    editorCell = ((EditorCell_Checkbox) provider.createEditorCell(getEditorContext()));
     editorCell.setCellId("property_highlightErrors");
     editorCell.setSubstituteInfo(provider.createDefaultSubstituteInfo());
     SNode attributeConcept = provider.getRoleAttribute();
@@ -364,9 +364,6 @@ import org.jetbrains.mps.openapi.language.SConcept;
       return getUpdateSession().updateAttributeCell(provider.getRoleAttributeKind(), editorCell, attributeConcept);
     } else
     return editorCell;
-  }
-  private EditorCell createCheckbox_1() {
-    return createCheckbox_0(getEditorContext(), myNode);
   }
   private EditorCell createCollection_9() {
     EditorCell_Collection editorCell = new EditorCell_Collection(getEditorContext(), myNode, new CellLayout_Indent());
@@ -376,7 +373,7 @@ import org.jetbrains.mps.openapi.language.SConcept;
     style.set(StyleAttributes.INDENT_LAYOUT_INDENT, true);
     editorCell.getStyle().putAll(style);
     editorCell.addEditorCell(createConstant_7());
-    editorCell.addEditorCell(createCheckbox_3());
+    editorCell.addEditorCell(createCheckbox_1());
     return editorCell;
   }
   private EditorCell createConstant_7() {
@@ -385,12 +382,12 @@ import org.jetbrains.mps.openapi.language.SConcept;
     editorCell.setDefaultText("");
     return editorCell;
   }
-  private EditorCell createCheckbox_2(EditorContext editorContext, SNode node) {
+  private EditorCell createCheckbox_1() {
     SProperty property = PROPS.lookOutsideTestSuites$FhGq;
-    CellProviderWithRole provider = new CheckboxCellProvider(node, property, editorContext);
+    CellProviderWithRole provider = new CheckboxCellProvider(getNode(), property, getEditorContext());
     provider.setNoTargetText("<no lookOutsideTestSuites>");
     EditorCell_Checkbox editorCell;
-    editorCell = ((EditorCell_Checkbox) provider.createEditorCell(editorContext));
+    editorCell = ((EditorCell_Checkbox) provider.createEditorCell(getEditorContext()));
     editorCell.setCellId("property_lookOutsideTestSuites");
     editorCell.setSubstituteInfo(provider.createDefaultSubstituteInfo());
     SNode attributeConcept = provider.getRoleAttribute();
@@ -398,9 +395,6 @@ import org.jetbrains.mps.openapi.language.SConcept;
       return getUpdateSession().updateAttributeCell(provider.getRoleAttributeKind(), editorCell, attributeConcept);
     } else
     return editorCell;
-  }
-  private EditorCell createCheckbox_3() {
-    return createCheckbox_2(getEditorContext(), myNode);
   }
   private EditorCell createCollection_10() {
     EditorCell_Collection editorCell = new EditorCell_Collection(getEditorContext(), myNode, new CellLayout_Indent());
@@ -410,7 +404,7 @@ import org.jetbrains.mps.openapi.language.SConcept;
     style.set(StyleAttributes.INDENT_LAYOUT_INDENT, true);
     editorCell.getStyle().putAll(style);
     editorCell.addEditorCell(createConstant_8());
-    editorCell.addEditorCell(createCheckbox_5());
+    editorCell.addEditorCell(createCheckbox_2());
     return editorCell;
   }
   private EditorCell createConstant_8() {
@@ -419,12 +413,12 @@ import org.jetbrains.mps.openapi.language.SConcept;
     editorCell.setDefaultText("");
     return editorCell;
   }
-  private EditorCell createCheckbox_4(EditorContext editorContext, SNode node) {
+  private EditorCell createCheckbox_2() {
     SProperty property = PROPS.trackProperties$VIIw;
-    CellProviderWithRole provider = new CheckboxCellProvider(node, property, editorContext);
+    CellProviderWithRole provider = new CheckboxCellProvider(getNode(), property, getEditorContext());
     provider.setNoTargetText("<no trackProperties>");
     EditorCell_Checkbox editorCell;
-    editorCell = ((EditorCell_Checkbox) provider.createEditorCell(editorContext));
+    editorCell = ((EditorCell_Checkbox) provider.createEditorCell(getEditorContext()));
     editorCell.setCellId("property_trackProperties");
     editorCell.setSubstituteInfo(provider.createDefaultSubstituteInfo());
     SNode attributeConcept = provider.getRoleAttribute();
@@ -432,9 +426,6 @@ import org.jetbrains.mps.openapi.language.SConcept;
       return getUpdateSession().updateAttributeCell(provider.getRoleAttributeKind(), editorCell, attributeConcept);
     } else
     return editorCell;
-  }
-  private EditorCell createCheckbox_5() {
-    return createCheckbox_4(getEditorContext(), myNode);
   }
   private EditorCell createCollection_11() {
     EditorCell_Collection editorCell = new EditorCell_Collection(getEditorContext(), myNode, new CellLayout_Indent());

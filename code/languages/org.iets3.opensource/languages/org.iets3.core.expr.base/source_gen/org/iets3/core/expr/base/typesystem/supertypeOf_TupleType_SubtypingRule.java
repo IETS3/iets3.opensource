@@ -28,9 +28,6 @@ public class supertypeOf_TupleType_SubtypingRule extends SubtypingRule_Runtime i
   public boolean isWeak() {
     return false;
   }
-  public boolean surelyKeepsConcept() {
-    return true;
-  }
 
   private static final class CONCEPTS {
     /*package*/ static final SConcept TupleType$8E = MetaAdapterFactory.getConcept(0xcfaa4966b7d54b69L, 0xb66a309a6e1a7290L, 0xe247742183174baL, "org.iets3.core.expr.base.structure.TupleType");

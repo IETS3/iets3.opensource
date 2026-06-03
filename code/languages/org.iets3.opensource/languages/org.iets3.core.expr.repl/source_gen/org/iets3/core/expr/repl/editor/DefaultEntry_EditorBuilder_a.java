@@ -94,20 +94,17 @@ import org.jetbrains.mps.openapi.language.SInterfaceConcept;
     editorCell.setCellId("Collection_78o9r1_a");
     editorCell.setBig(true);
     setCellContext(editorCell);
+    editorCell.addEditorCell(createFrameCell_0());
     editorCell.addEditorCell(createFrameCell_1());
-    editorCell.addEditorCell(createFrameCell_3());
     return editorCell;
   }
-  private EditorCell createTooltip_0(final EditorContext editorContext, final SNode node) {
-    LazyTooltipCellEvaluator tooltip = new LazyTooltipCellEvaluator(editorContext, node, "org.iets3.core.expr.repl.editor.GeneratedHints.tooltipHint_78o9r1_a0a", true);
+  private EditorCell createTooltip_0() {
+    LazyTooltipCellEvaluator tooltip = new LazyTooltipCellEvaluator(getEditorContext(), myNode, "org.iets3.core.expr.repl.editor.GeneratedHints.tooltipHint_78o9r1_a0a", true);
     EditorCell visibleCell = createCollection_1();
 
-    TooltipWrapper editorCell = new TooltipWrapper(editorContext, node, visibleCell, tooltip, TooltipTimingProperties.DEFAULT);
+    TooltipWrapper editorCell = new TooltipWrapper(getEditorContext(), myNode, visibleCell, tooltip, TooltipTimingProperties.DEFAULT);
     editorCell.setCellId("Tooltip_78o9r1_a0a");
     return editorCell;
-  }
-  private EditorCell createTooltip_1() {
-    return createTooltip_0(getEditorContext(), myNode);
   }
   private EditorCell createCollection_1() {
     EditorCell_Collection editorCell = new EditorCell_Collection(getEditorContext(), myNode, new CellLayout_Indent());
@@ -178,7 +175,7 @@ import org.jetbrains.mps.openapi.language.SInterfaceConcept;
     return editorCell;
   }
   private EditorCell createCustomFactory_1() {
-    return createCustomFactory_0(getEditorContext(), myNode);
+    return createCustomFactory_0(getEditorContext(), getNode());
   }
   private EditorCell createCustomFactory_2(final EditorContext editorContext, final SNode node) {
 
@@ -210,7 +207,7 @@ import org.jetbrains.mps.openapi.language.SInterfaceConcept;
     return editorCell;
   }
   private EditorCell createCustomFactory_3() {
-    return createCustomFactory_2(getEditorContext(), myNode);
+    return createCustomFactory_2(getEditorContext(), getNode());
   }
   private EditorCell createCollection_2() {
     EditorCell_Collection editorCell = new EditorCell_Collection(getEditorContext(), myNode, new CellLayout_Indent());
@@ -271,19 +268,16 @@ import org.jetbrains.mps.openapi.language.SInterfaceConcept;
   private Color _StyleParameter_QueryFunction_78o9r1_a0c0a0a() {
     return ((boolean) IReplEntry__BehaviorDescriptor.isReferenceable_id2QxWJFK_S9T.invoke(getNode()) ? JBColor.black : JBColor.gray);
   }
-  private EditorCell createFrameCell_0(final EditorContext editorContext, final SNode node) {
-    FrameCell editorCell = new FrameCell(editorContext, node);
+  private EditorCell createFrameCell_0() {
+    FrameCell editorCell = new FrameCell(getEditorContext(), getNode());
     editorCell.setCellId("FrameCell_78o9r1_a0");
     Style style = new StyleImpl();
     style.set(StyleAttributes.BACKGROUND_COLOR, getStyleRegistry().getSimpleColor(_StyleParameter_QueryFunction_78o9r1_a0a0()));
     style.set(StyleAttributes.getInstance().<Color>getAttribute("com.mbeddr.mpsutil.framecell", "frame-color"), _StyleParameter_QueryFunction_78o9r1_a1a0());
     style.set(StyleAttributes.getInstance().<Integer>getAttribute("com.mbeddr.mpsutil.framecell", "frame-width"), _StyleParameter_QueryFunction_78o9r1_a2a0());
     editorCell.getStyle().putAll(style);
-    editorCell.addEditorCell(createTooltip_1());
+    editorCell.addEditorCell(createTooltip_0());
     return editorCell;
-  }
-  private EditorCell createFrameCell_1() {
-    return createFrameCell_0(getEditorContext(), myNode);
   }
   private Color _StyleParameter_QueryFunction_78o9r1_a0a0() {
     return new JBColor(Color.decode("#EDEDED"), Color.decode("#1a1a1a"));
@@ -322,7 +316,7 @@ import org.jetbrains.mps.openapi.language.SInterfaceConcept;
     return editorCell;
   }
   private EditorCell createCollapsible_1() {
-    return createCollapsible_0(getEditorContext(), myNode);
+    return createCollapsible_0(getEditorContext(), getNode());
   }
   private EditorCell createCollection_3() {
     EditorCell_Collection editorCell = new EditorCell_Collection(getEditorContext(), myNode, new CellLayout_Indent());
@@ -564,8 +558,8 @@ import org.jetbrains.mps.openapi.language.SInterfaceConcept;
     editorCell.getStyle().putAll(style);
     return editorCell;
   }
-  private EditorCell createFrameCell_2(final EditorContext editorContext, final SNode node) {
-    FrameCell editorCell = new FrameCell(editorContext, node);
+  private EditorCell createFrameCell_1() {
+    FrameCell editorCell = new FrameCell(getEditorContext(), getNode());
     editorCell.setCellId("FrameCell_78o9r1_b0");
     Style style = new StyleImpl();
     style.set(StyleAttributes.BACKGROUND_COLOR, getStyleRegistry().getSimpleColor(_StyleParameter_QueryFunction_78o9r1_a0b0()));
@@ -574,9 +568,6 @@ import org.jetbrains.mps.openapi.language.SInterfaceConcept;
     editorCell.getStyle().putAll(style);
     editorCell.addEditorCell(createCollapsible_1());
     return editorCell;
-  }
-  private EditorCell createFrameCell_3() {
-    return createFrameCell_2(getEditorContext(), myNode);
   }
   private Color _StyleParameter_QueryFunction_78o9r1_a0b0() {
     if ((boolean) DefaultEntry__BehaviorDescriptor.isReadOnly_id4nY0kF8uh7w.invoke(getNode())) {

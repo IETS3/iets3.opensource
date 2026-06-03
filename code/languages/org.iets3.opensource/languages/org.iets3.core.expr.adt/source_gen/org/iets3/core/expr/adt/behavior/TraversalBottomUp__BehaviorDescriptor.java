@@ -8,7 +8,6 @@ import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import org.pcollections.PVector;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import org.iets3.core.expr.adt.plugin.AlgebraicValue;
 import java.util.List;
@@ -18,19 +17,16 @@ import org.jetbrains.mps.openapi.model.SNode;
 import org.pcollections.Empty;
 import jetbrains.mps.internal.collections.runtime.Sequence;
 import java.util.Collection;
-import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 
 public final class TraversalBottomUp__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getConcept(0x5fe6cb132fbd4e21L, 0x9842785bdd6fc5b1L, 0x52a5783d235512a0L, "org.iets3.core.expr.adt.structure.TraversalBottomUp");
 
-  public static final SMethod<PVector> perform_id5a_u3Ozn4SP = new SMethodBuilder<PVector>(new SJavaCompoundTypeImpl(PVector.class)).name("perform").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5955298286248939061L).languageId(0x9842785bdd6fc5b1L, 0x5fe6cb132fbd4e21L).build2(SMethodBuilder.createJavaParameter(AlgebraicValue.class, ""));
+  public static final SMethod<PVector> perform_id5a_u3Ozn4SP = new SMethodBuilder<>(PVector.class).name("perform").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5955298286248939061L).languageId(0x9842785bdd6fc5b1L, 0x5fe6cb132fbd4e21L).build2(SMethodBuilder.createJavaParameter(AlgebraicValue.class, "root"));
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(perform_id5a_u3Ozn4SP);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(perform_id5a_u3Ozn4SP);
 
-  private static void ___init___(@NotNull SNode __thisNode__) {
-  }
 
   /*package*/ static PVector perform_id5a_u3Ozn4SP(@NotNull SNode __thisNode__, AlgebraicValue root) {
     PVector<Object> res = Empty.vector();
@@ -44,10 +40,6 @@ public final class TraversalBottomUp__BehaviorDescriptor extends BaseBHDescripto
   /*package*/ TraversalBottomUp__BehaviorDescriptor() {
   }
 
-  @Override
-  protected void initNode(@NotNull SNode node, @NotNull SConstructor constructor, @Nullable Object[] parameters) {
-    ___init___(node);
-  }
 
   @Override
   protected <T> T invokeSpecial0(@NotNull SNode node, @NotNull SMethod<T> method, @Nullable Object[] parameters) {

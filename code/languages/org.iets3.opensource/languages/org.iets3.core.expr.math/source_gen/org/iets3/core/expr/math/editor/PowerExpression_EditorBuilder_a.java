@@ -125,7 +125,7 @@ import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
     return editorCell;
   }
   private EditorCell createMathBase_1() {
-    return createMathBase_0(getEditorContext(), myNode);
+    return createMathBase_0(getEditorContext(), getNode());
   }
   private EditorCell createCollection_0() {
     EditorCell_Collection editorCell = new EditorCell_Collection(getEditorContext(), myNode, new CellLayout_Indent());

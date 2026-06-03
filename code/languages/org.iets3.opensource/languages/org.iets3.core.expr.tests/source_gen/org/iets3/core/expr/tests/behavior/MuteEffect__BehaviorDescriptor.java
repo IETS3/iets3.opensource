@@ -7,7 +7,6 @@ import org.jetbrains.mps.openapi.language.SAbstractConcept;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import org.jetbrains.mps.openapi.model.SNode;
 import java.util.List;
@@ -16,7 +15,6 @@ import org.jetbrains.annotations.NotNull;
 import jetbrains.mps.lang.core.behavior.BaseConcept__BehaviorDescriptor;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
-import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 import org.jetbrains.mps.openapi.language.SContainmentLink;
@@ -25,14 +23,12 @@ import org.jetbrains.mps.openapi.language.SConcept;
 public final class MuteEffect__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getConcept(0xd441fba0f46b43cdL, 0xb723dad7b65da615L, 0x3b0d68f3e7e24c96L, "org.iets3.core.expr.tests.structure.MuteEffect");
 
-  public static final SMethod<String> renderReadable_id4Y0vh0cfqjE = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("renderReadable").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5728716233893586154L).languageId(0xb66a309a6e1a7290L, 0xcfaa4966b7d54b69L).build2();
-  public static final SMethod<String> allowsEffectForNode_idORfz$DS6Ap = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("allowsEffectForNode").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(952298261448780185L).languageId(0xb66a309a6e1a7290L, 0xcfaa4966b7d54b69L).build2(SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""));
-  public static final SMethod<Void> addChildToMainSlot_id91pmpwTPqy = new SMethodBuilder<Void>(new SJavaCompoundTypeImpl(Void.class)).name("addChildToMainSlot").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(162522551948891810L).languageId(0xb66a309a6e1a7290L, 0xcfaa4966b7d54b69L).build2(SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""), SMethodBuilder.createJavaParameter(String.class, ""));
+  public static final SMethod<String> renderReadable_id4Y0vh0cfqjE = new SMethodBuilder<>(String.class).name("renderReadable").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5728716233893586154L).languageId(0xb66a309a6e1a7290L, 0xcfaa4966b7d54b69L).build2();
+  public static final SMethod<String> allowsEffectForNode_idORfz$DS6Ap = new SMethodBuilder<>(String.class).name("allowsEffectForNode").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(952298261448780185L).languageId(0xb66a309a6e1a7290L, 0xcfaa4966b7d54b69L).build2(SMethodBuilder.createJavaParameter(SNode.class, "n"));
+  public static final SMethod<Void> addChildToMainSlot_id91pmpwTPqy = new SMethodBuilder<>(Void.TYPE).name("addChildToMainSlot").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(162522551948891810L).languageId(0xb66a309a6e1a7290L, 0xcfaa4966b7d54b69L).build2(SMethodBuilder.createJavaParameter(SNode.class, "c"), SMethodBuilder.createJavaParameter(String.class, "slot"));
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(renderReadable_id4Y0vh0cfqjE, allowsEffectForNode_idORfz$DS6Ap, addChildToMainSlot_id91pmpwTPqy);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(renderReadable_id4Y0vh0cfqjE, allowsEffectForNode_idORfz$DS6Ap, addChildToMainSlot_id91pmpwTPqy);
 
-  private static void ___init___(@NotNull SNode __thisNode__) {
-  }
 
   /*package*/ static String renderReadable_id4Y0vh0cfqjE(@NotNull SNode __thisNode__) {
     return "mute(" + BaseConcept__BehaviorDescriptor.getPresentation_idhEwIMiw.invoke(SLinkOperations.getTarget(__thisNode__, LINKS.expr$CW3E)) + ")";
@@ -47,10 +43,6 @@ public final class MuteEffect__BehaviorDescriptor extends BaseBHDescriptor {
   /*package*/ MuteEffect__BehaviorDescriptor() {
   }
 
-  @Override
-  protected void initNode(@NotNull SNode node, @NotNull SConstructor constructor, @Nullable Object[] parameters) {
-    ___init___(node);
-  }
 
   @Override
   protected <T> T invokeSpecial0(@NotNull SNode node, @NotNull SMethod<T> method, @Nullable Object[] parameters) {

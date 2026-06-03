@@ -8,7 +8,6 @@ import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import javax.swing.Icon;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import org.jetbrains.mps.openapi.model.SNode;
 import java.util.Set;
@@ -19,22 +18,19 @@ import jetbrains.mps.ide.icons.GlobalIconManager;
 import jetbrains.mps.internal.collections.runtime.SetSequence;
 import java.util.HashSet;
 import jetbrains.mps.internal.collections.runtime.Sequence;
-import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 
 public final class IComponentsChunkContent__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getInterfaceConcept(0xf0fd486f857743e9L, 0xb6713d118449c6e7L, 0x6c4f9fd23e49f653L, "org.iets3.components.core.structure.IComponentsChunkContent");
 
-  public static final SMethod<Icon> getIcon_id2JYumEA$tiF = new SMethodBuilder<Icon>(new SJavaCompoundTypeImpl(Icon.class)).name("getIcon").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(3170104686683477163L).languageId(0xb6713d118449c6e7L, 0xf0fd486f857743e9L).build2();
-  public static final SMethod<Iterable<SNode>> dependencies_id1WCh2the5Vh = new SMethodBuilder<Iterable<SNode>>(new SJavaCompoundTypeImpl((Class<Iterable<SNode>>) ((Class) Object.class))).name("dependencies").modifiers(12, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(2245119349901254353L).languageId(0xb6713d118449c6e7L, 0xf0fd486f857743e9L).build2();
-  public static final SMethod<Iterable<SNode>> transitiveDependencies_id1WCh2the5WA = new SMethodBuilder<Iterable<SNode>>(new SJavaCompoundTypeImpl((Class<Iterable<SNode>>) ((Class) Object.class))).name("transitiveDependencies").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(2245119349901254438L).languageId(0xb6713d118449c6e7L, 0xf0fd486f857743e9L).build2();
-  /*package*/ static final SMethod<Void> addDependencies_id1WCh2the630 = new SMethodBuilder<Void>(new SJavaCompoundTypeImpl(Void.class)).name("addDependencies").modifiers(0, AccessPrivileges.PRIVATE).concept(CONCEPT).baseMethodId(2245119349901254848L).languageId(0xb6713d118449c6e7L, 0xf0fd486f857743e9L).build2(SMethodBuilder.createJavaParameter((Class<Set<SNode>>) ((Class) Object.class), ""));
+  public static final SMethod<Icon> getIcon_id2JYumEA$tiF = new SMethodBuilder<>(Icon.class).name("getIcon").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(3170104686683477163L).languageId(0xb6713d118449c6e7L, 0xf0fd486f857743e9L).build2();
+  public static final SMethod<Iterable<SNode>> dependencies_id1WCh2the5Vh = new SMethodBuilder<>((Class<Iterable<SNode>>) ((Class) Object.class)).name("dependencies").modifiers(12, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(2245119349901254353L).languageId(0xb6713d118449c6e7L, 0xf0fd486f857743e9L).build2();
+  public static final SMethod<Iterable<SNode>> transitiveDependencies_id1WCh2the5WA = new SMethodBuilder<>((Class<Iterable<SNode>>) ((Class) Object.class)).name("transitiveDependencies").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(2245119349901254438L).languageId(0xb6713d118449c6e7L, 0xf0fd486f857743e9L).build2();
+  /*package*/ static final SMethod<Void> addDependencies_id1WCh2the630 = new SMethodBuilder<>(Void.TYPE).name("addDependencies").modifiers(0, AccessPrivileges.PRIVATE).concept(CONCEPT).baseMethodId(2245119349901254848L).languageId(0xb6713d118449c6e7L, 0xf0fd486f857743e9L).build2(SMethodBuilder.createJavaParameter((Class<Set<SNode>>) ((Class) Object.class), "collector"));
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(getIcon_id2JYumEA$tiF, dependencies_id1WCh2the5Vh, transitiveDependencies_id1WCh2the5WA, addDependencies_id1WCh2the630);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(getIcon_id2JYumEA$tiF, dependencies_id1WCh2the5Vh, transitiveDependencies_id1WCh2the5WA, addDependencies_id1WCh2the630);
 
-  private static void ___init___(@NotNull SNode __thisNode__) {
-  }
 
   /*package*/ static Icon getIcon_id2JYumEA$tiF(@NotNull SNode __thisNode__) {
     return GlobalIconManager.getInstance().getIconFor(__thisNode__);
@@ -58,10 +54,6 @@ public final class IComponentsChunkContent__BehaviorDescriptor extends BaseBHDes
   /*package*/ IComponentsChunkContent__BehaviorDescriptor() {
   }
 
-  @Override
-  protected void initNode(@NotNull SNode node, @NotNull SConstructor constructor, @Nullable Object[] parameters) {
-    ___init___(node);
-  }
 
   @Override
   protected <T> T invokeSpecial0(@NotNull SNode node, @NotNull SMethod<T> method, @Nullable Object[] parameters) {

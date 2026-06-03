@@ -80,7 +80,7 @@ import org.jetbrains.mps.openapi.language.SConcept;
     return editorCell;
   }
   private EditorCell createCustomFactory_1() {
-    return createCustomFactory_0(getEditorContext(), myNode);
+    return createCustomFactory_0(getEditorContext(), getNode());
   }
   private EditorCell createCustomFactory_2(final EditorContext editorContext, final SNode node) {
 
@@ -90,7 +90,7 @@ import org.jetbrains.mps.openapi.language.SConcept;
     return editorCell;
   }
   private EditorCell createCustomFactory_3() {
-    return createCustomFactory_2(getEditorContext(), myNode);
+    return createCustomFactory_2(getEditorContext(), getNode());
   }
   private EditorCell createRefNode_0() {
     SingleRoleCellProvider provider = new occurenceSingleRoleHandler_t5fhdg_a0a0(myNode, LINKS.occurence$VyEk, getEditorContext());
@@ -239,7 +239,7 @@ import org.jetbrains.mps.openapi.language.SConcept;
     return editorCell;
   }
   private EditorCell createCustomFactory_5() {
-    return createCustomFactory_4(getEditorContext(), myNode);
+    return createCustomFactory_4(getEditorContext(), getNode());
   }
   private EditorCell createRefNode_1() {
     SingleRoleCellProvider provider = new matchSingleRoleHandler_t5fhdg_a1a(myNode, LINKS.match$Vz8m, getEditorContext());
@@ -352,7 +352,7 @@ import org.jetbrains.mps.openapi.language.SConcept;
     return editorCell;
   }
   private EditorCell createCustomFactory_7() {
-    return createCustomFactory_6(getEditorContext(), myNode);
+    return createCustomFactory_6(getEditorContext(), getNode());
   }
   private EditorCell createCustom_0() {
     AbstractCellProvider provider = ((_FunctionTypes._return_P0_E0<OpeningBracketCell>) () -> new OpeningBracketCell(myNode, JBColor.black)).invoke();
@@ -419,7 +419,7 @@ import org.jetbrains.mps.openapi.language.SConcept;
     return editorCell;
   }
   private EditorCell createCustomFactory_9() {
-    return createCustomFactory_8(getEditorContext(), myNode);
+    return createCustomFactory_8(getEditorContext(), getNode());
   }
   private EditorCell createRefNodeList_0() {
     AbstractCellListHandler handler = new checksListHandler_t5fhdg_a3a(myNode, getEditorContext());
@@ -552,7 +552,7 @@ import org.jetbrains.mps.openapi.language.SConcept;
     return editorCell;
   }
   private EditorCell createCustomFactory_11() {
-    return createCustomFactory_10(getEditorContext(), myNode);
+    return createCustomFactory_10(getEditorContext(), getNode());
   }
   private EditorCell createCustom_1() {
     AbstractCellProvider provider = ((_FunctionTypes._return_P0_E0<ClosingBracketCell>) () -> new ClosingBracketCell(myNode, JBColor.black)).invoke();

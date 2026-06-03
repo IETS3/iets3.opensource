@@ -7,7 +7,6 @@ import org.jetbrains.mps.openapi.language.SAbstractConcept;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import org.jetbrains.mps.openapi.model.SNode;
 import java.util.List;
@@ -18,7 +17,6 @@ import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
 import jetbrains.mps.typechecking.TypecheckingFacade;
-import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 import jetbrains.mps.smodel.builder.SNodeBuilder;
@@ -30,14 +28,12 @@ import org.jetbrains.mps.openapi.language.SReferenceLink;
 public final class NameAnnotation__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getConcept(0x5fe6cb132fbd4e21L, 0x9842785bdd6fc5b1L, 0x52a5783d22ea3588L, "org.iets3.core.expr.adt.structure.NameAnnotation");
 
-  public static final SMethod<String> getPresentation_idhEwIMiw = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("getPresentation").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(1213877396640L).languageId(0x9b92103b95ca8c0cL, 0xceab519525ea4f22L).build2();
-  public static final SMethod<SNode> getType_id5a_u3OyYQw7 = new SMethodBuilder<SNode>(new SJavaCompoundTypeImpl((Class<SNode>) ((Class) Object.class))).name("getType").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5955298286242588679L).languageId(0x9842785bdd6fc5b1L, 0x5fe6cb132fbd4e21L).build2();
-  public static final SMethod<String> getName_id5a_u3Oz33tz = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("getName").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5955298286243690339L).languageId(0x9842785bdd6fc5b1L, 0x5fe6cb132fbd4e21L).build2();
+  public static final SMethod<String> getPresentation_idhEwIMiw = new SMethodBuilder<>(String.class).name("getPresentation").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(1213877396640L).languageId(0x9b92103b95ca8c0cL, 0xceab519525ea4f22L).build2();
+  public static final SMethod<SNode> getType_id5a_u3OyYQw7 = new SMethodBuilder<>(SNode.class).name("getType").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5955298286242588679L).languageId(0x9842785bdd6fc5b1L, 0x5fe6cb132fbd4e21L).build2();
+  public static final SMethod<String> getName_id5a_u3Oz33tz = new SMethodBuilder<>(String.class).name("getName").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5955298286243690339L).languageId(0x9842785bdd6fc5b1L, 0x5fe6cb132fbd4e21L).build2();
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(getPresentation_idhEwIMiw, getType_id5a_u3OyYQw7, getName_id5a_u3Oz33tz);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(getPresentation_idhEwIMiw, getType_id5a_u3OyYQw7, getName_id5a_u3Oz33tz);
 
-  private static void ___init___(@NotNull SNode __thisNode__) {
-  }
 
   /*package*/ static String getPresentation_idhEwIMiw(@NotNull SNode __thisNode__) {
     return BaseConcept__BehaviorDescriptor.getPresentation_idhEwIMiw.invoke(SNodeOperations.getParent(__thisNode__)) + "@" + SPropertyOperations.getString(__thisNode__, PROPS.name$MnvL);
@@ -62,10 +58,6 @@ public final class NameAnnotation__BehaviorDescriptor extends BaseBHDescriptor {
   /*package*/ NameAnnotation__BehaviorDescriptor() {
   }
 
-  @Override
-  protected void initNode(@NotNull SNode node, @NotNull SConstructor constructor, @Nullable Object[] parameters) {
-    ___init___(node);
-  }
 
   @Override
   protected <T> T invokeSpecial0(@NotNull SNode node, @NotNull SMethod<T> method, @Nullable Object[] parameters) {

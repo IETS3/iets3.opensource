@@ -7,7 +7,6 @@ import org.jetbrains.mps.openapi.language.SAbstractConcept;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import org.iets3.core.expr.base.plugin.EffectDescriptor;
 import org.jetbrains.mps.openapi.model.SNode;
@@ -17,7 +16,6 @@ import org.jetbrains.annotations.NotNull;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
 import jetbrains.mps.typechecking.TypecheckingFacade;
-import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 import org.jetbrains.mps.openapi.language.SContainmentLink;
@@ -27,14 +25,12 @@ import org.jetbrains.mps.openapi.language.SConcept;
 public final class AssignmentExpr__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getConcept(0xcfaa4966b7d54b69L, 0xb66a309a6e1a7290L, 0x2b547b5bcfa1bafL, "org.iets3.core.expr.base.structure.AssignmentExpr");
 
-  public static final SMethod<Integer> priority_id4rZeNQ6MpZB = new SMethodBuilder<Integer>(new SJavaCompoundTypeImpl(Integer.TYPE)).name("priority").modifiers(9, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5115872837156577255L).languageId(0xb66a309a6e1a7290L, 0xcfaa4966b7d54b69L).build2();
-  public static final SMethod<EffectDescriptor> effectDescriptor_id6GySMNjjWfO = new SMethodBuilder<EffectDescriptor>(new SJavaCompoundTypeImpl(EffectDescriptor.class)).name("effectDescriptor").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(7719982492929737716L).languageId(0xb66a309a6e1a7290L, 0xcfaa4966b7d54b69L).build2();
-  public static final SMethod<SNode> getContextType_id_kNv2QbVfK = new SMethodBuilder<SNode>(new SJavaCompoundTypeImpl((Class<SNode>) ((Class) Object.class))).name("getContextType").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(672388678117471216L).languageId(0xb66a309a6e1a7290L, 0xcfaa4966b7d54b69L).build2(SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""));
+  public static final SMethod<Integer> priority_id4rZeNQ6MpZB = new SMethodBuilder<>(Integer.TYPE).name("priority").modifiers(9, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5115872837156577255L).languageId(0xb66a309a6e1a7290L, 0xcfaa4966b7d54b69L).build2();
+  public static final SMethod<EffectDescriptor> effectDescriptor_id6GySMNjjWfO = new SMethodBuilder<>(EffectDescriptor.class).name("effectDescriptor").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(7719982492929737716L).languageId(0xb66a309a6e1a7290L, 0xcfaa4966b7d54b69L).build2();
+  public static final SMethod<SNode> getContextType_id_kNv2QbVfK = new SMethodBuilder<>(SNode.class).name("getContextType").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(672388678117471216L).languageId(0xb66a309a6e1a7290L, 0xcfaa4966b7d54b69L).build2(SMethodBuilder.createJavaParameter(SNode.class, "location"));
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(priority_id4rZeNQ6MpZB, effectDescriptor_id6GySMNjjWfO, getContextType_id_kNv2QbVfK);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(priority_id4rZeNQ6MpZB, effectDescriptor_id6GySMNjjWfO, getContextType_id_kNv2QbVfK);
 
-  private static void ___init___(@NotNull SNode __thisNode__) {
-  }
 
   /*package*/ static int priority_id4rZeNQ6MpZB(@NotNull SAbstractConcept __thisConcept__) {
     return 100;
@@ -55,10 +51,6 @@ public final class AssignmentExpr__BehaviorDescriptor extends BaseBHDescriptor {
   /*package*/ AssignmentExpr__BehaviorDescriptor() {
   }
 
-  @Override
-  protected void initNode(@NotNull SNode node, @NotNull SConstructor constructor, @Nullable Object[] parameters) {
-    ___init___(node);
-  }
 
   @Override
   protected <T> T invokeSpecial0(@NotNull SNode node, @NotNull SMethod<T> method, @Nullable Object[] parameters) {

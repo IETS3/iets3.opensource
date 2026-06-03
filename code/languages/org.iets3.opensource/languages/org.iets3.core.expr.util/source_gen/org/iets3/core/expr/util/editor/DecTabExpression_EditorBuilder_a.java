@@ -8,7 +8,6 @@ import org.jetbrains.mps.openapi.model.SNode;
 import jetbrains.mps.openapi.editor.EditorContext;
 import jetbrains.mps.openapi.editor.cells.EditorCell;
 import jetbrains.mps.baseLanguage.closures.runtime._FunctionTypes;
-import jetbrains.mps.editor.runtime.cells.BigCellUtil;
 import jetbrains.mps.nodeEditor.cellProviders.AbstractCellListHandler;
 import jetbrains.mps.nodeEditor.cells.EditorCell_Collection;
 import jetbrains.mps.nodeEditor.cellLayout.CellLayout_Horizontal;
@@ -53,15 +52,12 @@ import org.jetbrains.mps.openapi.language.SConcept;
 
     final EditorCell cell = createCustomFactory_3();
     EditorCell editorCell = ((_FunctionTypes._return_P0_E0<EditorCell>) () -> cell).invoke();
-    EditorCell bigCell = BigCellUtil.findBigCell(editorCell, getNode());
-    if (bigCell != null) {
-      bigCell.setBig(true);
-      setCellContext(bigCell);
-    }
+    editorCell.setBig(true);
+    setCellContext(editorCell);
     return editorCell;
   }
   private EditorCell createCustomFactory_1() {
-    return createCustomFactory_0(getEditorContext(), myNode);
+    return createCustomFactory_0(getEditorContext(), getNode());
   }
   private EditorCell createCustomFactory_2(final EditorContext editorContext, final SNode node) {
 
@@ -71,7 +67,7 @@ import org.jetbrains.mps.openapi.language.SConcept;
     return editorCell;
   }
   private EditorCell createCustomFactory_3() {
-    return createCustomFactory_2(getEditorContext(), myNode);
+    return createCustomFactory_2(getEditorContext(), getNode());
   }
   private EditorCell createRefNodeList_0() {
     AbstractCellListHandler handler = new expressionsListHandler_v8lgg0_a0a(myNode, getEditorContext());

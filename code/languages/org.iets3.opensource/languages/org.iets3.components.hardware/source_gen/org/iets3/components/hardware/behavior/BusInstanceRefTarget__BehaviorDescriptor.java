@@ -7,7 +7,6 @@ import org.jetbrains.mps.openapi.language.SAbstractConcept;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import org.jetbrains.mps.openapi.model.SNode;
 import java.util.List;
@@ -15,7 +14,6 @@ import java.util.Arrays;
 import org.jetbrains.annotations.NotNull;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
-import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 import org.jetbrains.mps.openapi.language.SReferenceLink;
@@ -24,13 +22,11 @@ import org.jetbrains.mps.openapi.language.SProperty;
 public final class BusInstanceRefTarget__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getConcept(0xc35abfa80db04d42L, 0xbb3ff46112aeb888L, 0x45ce069d5408e866L, "org.iets3.components.hardware.structure.BusInstanceRefTarget");
 
-  public static final SMethod<String> renderReadable_id6kR0qIbI2yi = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("renderReadable").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(7293299957844945042L).languageId(0xb66a309a6e1a7290L, 0xcfaa4966b7d54b69L).build2();
-  public static final SMethod<SNode> target_id4fgA7QrEdeJ = new SMethodBuilder<SNode>(new SJavaCompoundTypeImpl((Class<SNode>) ((Class) Object.class))).name("target").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(4886573260946854831L).languageId(0x9150f0f3b880ce27L, 0xf3eafff030d246d6L).build2();
+  public static final SMethod<String> renderReadable_id6kR0qIbI2yi = new SMethodBuilder<>(String.class).name("renderReadable").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(7293299957844945042L).languageId(0xb66a309a6e1a7290L, 0xcfaa4966b7d54b69L).build2();
+  public static final SMethod<SNode> target_id4fgA7QrEdeJ = new SMethodBuilder<>(SNode.class).name("target").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(4886573260946854831L).languageId(0x9150f0f3b880ce27L, 0xf3eafff030d246d6L).build2();
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(renderReadable_id6kR0qIbI2yi, target_id4fgA7QrEdeJ);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(renderReadable_id6kR0qIbI2yi, target_id4fgA7QrEdeJ);
 
-  private static void ___init___(@NotNull SNode __thisNode__) {
-  }
 
   /*package*/ static String renderReadable_id6kR0qIbI2yi(@NotNull SNode __thisNode__) {
     return SPropertyOperations.getString(SLinkOperations.getTarget(__thisNode__, LINKS.busInstance$uhdk), PROPS.name$MnvL);
@@ -42,10 +38,6 @@ public final class BusInstanceRefTarget__BehaviorDescriptor extends BaseBHDescri
   /*package*/ BusInstanceRefTarget__BehaviorDescriptor() {
   }
 
-  @Override
-  protected void initNode(@NotNull SNode node, @NotNull SConstructor constructor, @Nullable Object[] parameters) {
-    ___init___(node);
-  }
 
   @Override
   protected <T> T invokeSpecial0(@NotNull SNode node, @NotNull SMethod<T> method, @Nullable Object[] parameters) {
