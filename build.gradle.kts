@@ -532,6 +532,7 @@ githubRelease {
     releaseAssets(packageDistroWithDependencies.get().outputs.files.map { it.path })
     dryRun = false
 }
+
 tasks.githubRelease {
     dependsOn(packageDistroWithDependencies)
 }
