@@ -11,6 +11,7 @@ The project does _not_ follow Semantic Versioning and the changes are documented
 
 - Variability: Fix workaround for using for-all-variants checking rules outside the IDE (e.g., on a build server). Due to MPS-34340, the for-all-variants checking cannot be done outside the IDE if the model under check has more than one root nodes. This bugfix includes roots of LogicalChildren in the list of used root nodes.
 - Physical units (language `org.iets3.core.expr.typetags.physunits`): Update unit in typesystem after prefix has been removed (e.g., from "cm" to "m").
+- `org.iets3.core.expr.datetime.runtime` catch DateTimeException causing an internal interpreter exception ([#1773](https://github.com/IETS3/iets3.opensource/issues/1773))
 
 
 ## April 2026
@@ -42,6 +43,7 @@ The project does _not_ follow Semantic Versioning and the changes are documented
 - Fixed a bug in the `execTestsByInterpreter` task which would result in a wrong JNA path
 - Variability: Newly created feature models will not show a "Property constraint violation" error anymore.
 
+- Hexadecimal number support now works for MPS 2025.1 and above.
 
 ## February 2026
 
@@ -99,13 +101,18 @@ The project does _not_ follow Semantic Versioning and the changes are documented
 
 - The Maven POM now contains all bundled JARs as dependencies with `provided` scope to help with automated license and
   vulnerability scanning.
+- The Grammar Cells of KernelF editors can now be customized through the extension point `EditorCustomization`. Optional cells, flag cells, constant cells, substitute cells and side transformations can be customized (activation of substitutions, side transformations, description text, post-processing etc.).
 
 ### Fixed
 
 - A bug was fixed that caused the editor of NumberLiteral to break if a property macro was used for its value.
 - Added missing support for IndexExpr for the operations findFirst and forEach.
+- The AssessmentAnalyzer doesn't try to modify read-only models on the CI anymore.
 - An invalid checking rule for parameter value types of functional component instances has been removed. It was introduced by a move of IETS3.Core languages in February 2025.
 
+### Improved
+
+- Some editor action descriptions were improved.
 
 ## October 2025
 
