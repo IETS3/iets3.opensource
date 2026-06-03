@@ -83,7 +83,8 @@ public class TestModelExecutor {
   public Iterable<ITestNodeWrapper> getTestableNodes() {
     Iterable<ITestNodeWrapper> wrappedTestNodes = SetSequence.fromSet(getTestItemContainers(repo)).select((final SNode it) -> {
       final Wrappers._T<ITestNodeWrapper> wrapper = new Wrappers._T<ITestNodeWrapper>();
-      repo.getModelAccess().runReadAction(() -> wrapper.value = TestNodeWrapperFactory.tryToWrap(it));
+      final TestNodeWrapperFactory tnf = new TestNodeWrapperFactory(platform);
+      repo.getModelAccess().runReadAction(() -> wrapper.value = tnf.tryToWrap(it));
       return wrapper.value;
     }).where(new NotNullWhereFilter());
     return wrappedTestNodes;

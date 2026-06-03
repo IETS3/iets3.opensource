@@ -8,7 +8,6 @@ import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import org.jetbrains.mps.openapi.model.SNode;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import java.util.List;
 import java.util.Arrays;
@@ -24,7 +23,6 @@ import jetbrains.mps.internal.collections.runtime.CollectionSequence;
 import jetbrains.mps.lang.core.behavior.BaseConcept__BehaviorDescriptor;
 import jetbrains.mps.internal.collections.runtime.IterableUtils;
 import org.iets3.core.expr.base.behavior.Type__BehaviorDescriptor;
-import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 import org.jetbrains.mps.openapi.language.SContainmentLink;
@@ -33,19 +31,17 @@ import org.jetbrains.mps.openapi.language.SConcept;
 public final class TaggedType__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getConcept(0x5186c6ce428c4f09L, 0xa9df73d9e86c27d3L, 0x186a8ed9947750b6L, "org.iets3.core.expr.typetags.structure.TaggedType");
 
-  public static final SMethod<SNode> addTags_id4HxogODPWH$ = new SMethodBuilder<SNode>(new SJavaCompoundTypeImpl((Class<SNode>) ((Class) Object.class))).name("addTags").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5431729334750006116L).languageId(0xa9df73d9e86c27d3L, 0x5186c6ce428c4f09L).build2(SMethodBuilder.createJavaParameter((Class<Iterable<SNode>>) ((Class) Object.class), ""));
-  public static final SMethod<SNode> addTag_id2JXkwhJ7y6m = new SMethodBuilder<SNode>(new SJavaCompoundTypeImpl((Class<SNode>) ((Class) Object.class))).name("addTag").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(3169779891736289686L).languageId(0xa9df73d9e86c27d3L, 0x5186c6ce428c4f09L).build2(SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""));
-  public static final SMethod<SNode> create_id2JXkwhJbtfS = new SMethodBuilder<SNode>(new SJavaCompoundTypeImpl((Class<SNode>) ((Class) Object.class))).name("create").modifiers(1, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(3169779891737318392L).languageId(0xa9df73d9e86c27d3L, 0x5186c6ce428c4f09L).build2(SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""), SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""));
-  public static final SMethod<SNode> create_id4HxogODQaID = new SMethodBuilder<SNode>(new SJavaCompoundTypeImpl((Class<SNode>) ((Class) Object.class))).name("create").modifiers(1, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5431729334750063529L).languageId(0xa9df73d9e86c27d3L, 0x5186c6ce428c4f09L).build2(SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""), SMethodBuilder.createJavaParameter((Class<Iterable<SNode>>) ((Class) Object.class), ""));
-  public static final SMethod<String> getPresentation_idhEwIMiw = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("getPresentation").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(1213877396640L).languageId(0x9b92103b95ca8c0cL, 0xceab519525ea4f22L).build2();
-  public static final SMethod<SNode> wrappedType_id6bG6MAFRDvi = new SMethodBuilder<SNode>(new SJavaCompoundTypeImpl((Class<SNode>) ((Class) Object.class))).name("wrappedType").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(7128102176011753426L).languageId(0xa6067ce0236c8023L, 0x47f075a6558e4640L).build2();
-  public static final SMethod<SNode> reWrap_id6bG6MAG4Mv3 = new SMethodBuilder<SNode>(new SJavaCompoundTypeImpl((Class<SNode>) ((Class) Object.class))).name("reWrap").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(7128102176015198147L).languageId(0xa6067ce0236c8023L, 0x47f075a6558e4640L).build2(SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""), SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""));
-  public static final SMethod<Boolean> isSameAs_idfIXgjlt4VE = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("isSameAs").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(283433227680763626L).languageId(0xb66a309a6e1a7290L, 0xcfaa4966b7d54b69L).build2(SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""));
+  public static final SMethod<SNode> addTags_id4HxogODPWH$ = new SMethodBuilder<>(SNode.class).name("addTags").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5431729334750006116L).languageId(0xa9df73d9e86c27d3L, 0x5186c6ce428c4f09L).build2(SMethodBuilder.createJavaParameter((Class<Iterable<SNode>>) ((Class) Object.class), "tags"));
+  public static final SMethod<SNode> addTag_id2JXkwhJ7y6m = new SMethodBuilder<>(SNode.class).name("addTag").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(3169779891736289686L).languageId(0xa9df73d9e86c27d3L, 0x5186c6ce428c4f09L).build2(SMethodBuilder.createJavaParameter(SNode.class, "tag"));
+  public static final SMethod<SNode> create_id2JXkwhJbtfS = new SMethodBuilder<>(SNode.class).name("create").modifiers(1, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(3169779891737318392L).languageId(0xa9df73d9e86c27d3L, 0x5186c6ce428c4f09L).build2(SMethodBuilder.createJavaParameter(SNode.class, "baseType"), SMethodBuilder.createJavaParameter(SNode.class, "tag"));
+  public static final SMethod<SNode> create_id4HxogODQaID = new SMethodBuilder<>(SNode.class).name("create").modifiers(1, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5431729334750063529L).languageId(0xa9df73d9e86c27d3L, 0x5186c6ce428c4f09L).build2(SMethodBuilder.createJavaParameter(SNode.class, "baseType"), SMethodBuilder.createJavaParameter((Class<Iterable<SNode>>) ((Class) Object.class), "tags"));
+  public static final SMethod<String> getPresentation_idhEwIMiw = new SMethodBuilder<>(String.class).name("getPresentation").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(1213877396640L).languageId(0x9b92103b95ca8c0cL, 0xceab519525ea4f22L).build2();
+  public static final SMethod<SNode> wrappedType_id6bG6MAFRDvi = new SMethodBuilder<>(SNode.class).name("wrappedType").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(7128102176011753426L).languageId(0xa6067ce0236c8023L, 0x47f075a6558e4640L).build2();
+  public static final SMethod<SNode> reWrap_id6bG6MAG4Mv3 = new SMethodBuilder<>(SNode.class).name("reWrap").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(7128102176015198147L).languageId(0xa6067ce0236c8023L, 0x47f075a6558e4640L).build2(SMethodBuilder.createJavaParameter(SNode.class, "newBaseType"), SMethodBuilder.createJavaParameter(SNode.class, "originalWrapper"));
+  public static final SMethod<Boolean> isSameAs_idfIXgjlt4VE = new SMethodBuilder<>(Boolean.TYPE).name("isSameAs").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(283433227680763626L).languageId(0xb66a309a6e1a7290L, 0xcfaa4966b7d54b69L).build2(SMethodBuilder.createJavaParameter(SNode.class, "other"));
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(addTags_id4HxogODPWH$, addTag_id2JXkwhJ7y6m, create_id2JXkwhJbtfS, create_id4HxogODQaID, getPresentation_idhEwIMiw, wrappedType_id6bG6MAFRDvi, reWrap_id6bG6MAG4Mv3, isSameAs_idfIXgjlt4VE);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(addTags_id4HxogODPWH$, addTag_id2JXkwhJ7y6m, create_id2JXkwhJbtfS, create_id4HxogODQaID, getPresentation_idhEwIMiw, wrappedType_id6bG6MAFRDvi, reWrap_id6bG6MAG4Mv3, isSameAs_idfIXgjlt4VE);
 
-  private static void ___init___(@NotNull SNode __thisNode__) {
-  }
 
   /*package*/ static SNode addTags_id4HxogODPWH$(@NotNull SNode __thisNode__, Iterable<SNode> tags) {
     Tuples._2<SNode, Map<SAbstractConcept, SNode>> components = BaseTaggedTypeHelper.getComponents(__thisNode__);
@@ -120,10 +116,6 @@ public final class TaggedType__BehaviorDescriptor extends BaseBHDescriptor {
   /*package*/ TaggedType__BehaviorDescriptor() {
   }
 
-  @Override
-  protected void initNode(@NotNull SNode node, @NotNull SConstructor constructor, @Nullable Object[] parameters) {
-    ___init___(node);
-  }
 
   @Override
   protected <T> T invokeSpecial0(@NotNull SNode node, @NotNull SMethod<T> method, @Nullable Object[] parameters) {

@@ -7,7 +7,6 @@ import org.jetbrains.mps.openapi.language.SAbstractConcept;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import org.jetbrains.mps.openapi.model.SNode;
 import java.util.List;
@@ -22,7 +21,6 @@ import org.iets3.core.expr.base.runtime.runtime.PTF;
 import java.util.ArrayList;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SConceptOperations;
 import jetbrains.mps.typechecking.TypecheckingFacade;
-import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 import org.jetbrains.mps.openapi.language.SContainmentLink;
@@ -32,18 +30,16 @@ import org.jetbrains.mps.openapi.language.SInterfaceConcept;
 public final class TupleType__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getConcept(0xcfaa4966b7d54b69L, 0xb66a309a6e1a7290L, 0xe247742183174baL, "org.iets3.core.expr.base.structure.TupleType");
 
-  public static final SMethod<Boolean> hasSameStructure_id2ck7OjOKh8Y = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("hasSameStructure").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(2527679671886221886L).languageId(0xb66a309a6e1a7290L, 0xcfaa4966b7d54b69L).build2(SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""));
-  public static final SMethod<String> getPresentation_idhEwIMiw = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("getPresentation").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(1213877396640L).languageId(0x9b92103b95ca8c0cL, 0xceab519525ea4f22L).build2();
-  public static final SMethod<String> getOpeningTag_id1DSLxNDLNPn = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("getOpeningTag").modifiers(1, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(1907492269674937687L).languageId(0xb66a309a6e1a7290L, 0xcfaa4966b7d54b69L).build2();
-  public static final SMethod<String> getCloseningTag_id1DSLxNDLPWK = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("getCloseningTag").modifiers(1, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(1907492269674946352L).languageId(0xb66a309a6e1a7290L, 0xcfaa4966b7d54b69L).build2();
-  public static final SMethod<Boolean> isSameAs_idfIXgjlt4VE = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("isSameAs").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(283433227680763626L).languageId(0xb66a309a6e1a7290L, 0xcfaa4966b7d54b69L).build2(SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""));
-  public static final SMethod<List<SNode>> allSupertypes_id4Q4DxjDsh$t = new SMethodBuilder<List<SNode>>(new SJavaCompoundTypeImpl((Class<List<SNode>>) ((Class) Object.class))).name("allSupertypes").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5585772046592317725L).languageId(0xb66a309a6e1a7290L, 0xcfaa4966b7d54b69L).build2();
-  public static final SMethod<SNode> createDefaultVarExpr_id60Qa1k_nI2O = new SMethodBuilder<SNode>(new SJavaCompoundTypeImpl((Class<SNode>) ((Class) Object.class))).name("createDefaultVarExpr").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(6932772747669856436L).languageId(0xb66a309a6e1a7290L, 0xcfaa4966b7d54b69L).build2();
+  public static final SMethod<Boolean> hasSameStructure_id2ck7OjOKh8Y = new SMethodBuilder<>(Boolean.TYPE).name("hasSameStructure").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(2527679671886221886L).languageId(0xb66a309a6e1a7290L, 0xcfaa4966b7d54b69L).build2(SMethodBuilder.createJavaParameter(SNode.class, "other"));
+  public static final SMethod<String> getPresentation_idhEwIMiw = new SMethodBuilder<>(String.class).name("getPresentation").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(1213877396640L).languageId(0x9b92103b95ca8c0cL, 0xceab519525ea4f22L).build2();
+  public static final SMethod<String> getOpeningTag_id1DSLxNDLNPn = new SMethodBuilder<>(String.class).name("getOpeningTag").modifiers(1, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(1907492269674937687L).languageId(0xb66a309a6e1a7290L, 0xcfaa4966b7d54b69L).build2();
+  public static final SMethod<String> getCloseningTag_id1DSLxNDLPWK = new SMethodBuilder<>(String.class).name("getCloseningTag").modifiers(1, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(1907492269674946352L).languageId(0xb66a309a6e1a7290L, 0xcfaa4966b7d54b69L).build2();
+  public static final SMethod<Boolean> isSameAs_idfIXgjlt4VE = new SMethodBuilder<>(Boolean.TYPE).name("isSameAs").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(283433227680763626L).languageId(0xb66a309a6e1a7290L, 0xcfaa4966b7d54b69L).build2(SMethodBuilder.createJavaParameter(SNode.class, "other"));
+  public static final SMethod<List<SNode>> allSupertypes_id4Q4DxjDsh$t = new SMethodBuilder<>((Class<List<SNode>>) ((Class) Object.class)).name("allSupertypes").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5585772046592317725L).languageId(0xb66a309a6e1a7290L, 0xcfaa4966b7d54b69L).build2();
+  public static final SMethod<SNode> createDefaultVarExpr_id60Qa1k_nI2O = new SMethodBuilder<>(SNode.class).name("createDefaultVarExpr").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(6932772747669856436L).languageId(0xb66a309a6e1a7290L, 0xcfaa4966b7d54b69L).build2();
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(hasSameStructure_id2ck7OjOKh8Y, getPresentation_idhEwIMiw, getOpeningTag_id1DSLxNDLNPn, getCloseningTag_id1DSLxNDLPWK, isSameAs_idfIXgjlt4VE, allSupertypes_id4Q4DxjDsh$t, createDefaultVarExpr_id60Qa1k_nI2O);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(hasSameStructure_id2ck7OjOKh8Y, getPresentation_idhEwIMiw, getOpeningTag_id1DSLxNDLNPn, getCloseningTag_id1DSLxNDLPWK, isSameAs_idfIXgjlt4VE, allSupertypes_id4Q4DxjDsh$t, createDefaultVarExpr_id60Qa1k_nI2O);
 
-  private static void ___init___(@NotNull SNode __thisNode__) {
-  }
 
   /*package*/ static boolean hasSameStructure_id2ck7OjOKh8Y(@NotNull SNode __thisNode__, SNode other) {
     if (ListSequence.fromList(SLinkOperations.getChildren(__thisNode__, LINKS.elementTypes$gWta)).count() == ListSequence.fromList(SLinkOperations.getChildren(other, LINKS.elementTypes$gWta)).count()) {
@@ -102,10 +98,6 @@ public final class TupleType__BehaviorDescriptor extends BaseBHDescriptor {
   /*package*/ TupleType__BehaviorDescriptor() {
   }
 
-  @Override
-  protected void initNode(@NotNull SNode node, @NotNull SConstructor constructor, @Nullable Object[] parameters) {
-    ___init___(node);
-  }
 
   @Override
   protected <T> T invokeSpecial0(@NotNull SNode node, @NotNull SMethod<T> method, @Nullable Object[] parameters) {

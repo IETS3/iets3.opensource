@@ -111,7 +111,7 @@ import org.jetbrains.mps.openapi.language.SInterfaceConcept;
     editorCell.setCellId("Collection_dmp46v_a0a");
     editorCell.addEditorCell(createCustomFactory_1());
     editorCell.addEditorCell(createConstant_1());
-    editorCell.addEditorCell(createTooltip_1());
+    editorCell.addEditorCell(createTooltip_0());
     editorCell.addEditorCell(createConstant_2());
     return editorCell;
   }
@@ -126,7 +126,7 @@ import org.jetbrains.mps.openapi.language.SInterfaceConcept;
     return editorCell;
   }
   private EditorCell createCustomFactory_1() {
-    return createCustomFactory_0(getEditorContext(), myNode);
+    return createCustomFactory_0(getEditorContext(), getNode());
   }
   private EditorCell createAlternation_0() {
     boolean alternationCondition = true;
@@ -171,7 +171,7 @@ import org.jetbrains.mps.openapi.language.SInterfaceConcept;
     return editorCell;
   }
   private EditorCell createCustomFactory_3() {
-    return createCustomFactory_2(getEditorContext(), myNode);
+    return createCustomFactory_2(getEditorContext(), getNode());
   }
   private EditorCell createConstant_0() {
     EditorCell_Constant editorCell = new EditorCell_Constant(getEditorContext(), myNode, "initial");
@@ -259,16 +259,13 @@ import org.jetbrains.mps.openapi.language.SInterfaceConcept;
     editorCell.setDefaultText("");
     return editorCell;
   }
-  private EditorCell createTooltip_0(final EditorContext editorContext, final SNode node) {
-    LazyTooltipCellEvaluator tooltip = new LazyTooltipCellEvaluator(editorContext, node, "org.iets3.components.functional.editor.GeneratedHints.tooltipHint_dmp46v_c0a0", true);
+  private EditorCell createTooltip_0() {
+    LazyTooltipCellEvaluator tooltip = new LazyTooltipCellEvaluator(getEditorContext(), myNode, "org.iets3.components.functional.editor.GeneratedHints.tooltipHint_dmp46v_c0a0", true);
     EditorCell visibleCell = createRefCell_0();
 
-    TooltipWrapper editorCell = new TooltipWrapper(editorContext, node, visibleCell, tooltip, TooltipTimingProperties.DEFAULT);
+    TooltipWrapper editorCell = new TooltipWrapper(getEditorContext(), myNode, visibleCell, tooltip, TooltipTimingProperties.DEFAULT);
     editorCell.setCellId("Tooltip_dmp46v_c0a0");
     return editorCell;
-  }
-  private EditorCell createTooltip_1() {
-    return createTooltip_0(getEditorContext(), myNode);
   }
   private EditorCell createRefCell_0() {
     final SReferenceLink referenceLink = LINKS.glossaryTerm$PgWx;

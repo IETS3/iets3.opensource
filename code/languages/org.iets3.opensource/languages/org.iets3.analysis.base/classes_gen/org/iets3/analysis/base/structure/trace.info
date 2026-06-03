@@ -17,7 +17,7 @@
       <unit at="11,0,85,0" name="org.iets3.analysis.base.structure.ConceptPresentationAspectImpl" />
     </file>
     <file name="LanguageConceptSwitch.java">
-      <unit at="10,0,42,0" name="org.iets3.analysis.base.structure.LanguageConceptSwitch" />
+      <unit at="12,0,50,0" name="org.iets3.analysis.base.structure.LanguageConceptSwitch" />
     </file>
     <file name="StructureAspectDescriptor.java">
       <unit at="18,0,147,0" name="org.iets3.analysis.base.structure.StructureAspectDescriptor" />
@@ -38,8 +38,8 @@
       <scope id="1103723565300541528" at="41,49,48,37" />
     </file>
     <file name="LanguageConceptSwitch.java">
-      <node id="1103723565300541528" at="14,0,15,0" concept="8" trace="ErrorSolverTask" />
-      <node id="1103723565300541528" at="24,50,25,53" concept="1" />
+      <node id="1103723565300541528" at="16,0,17,0" concept="8" trace="ErrorSolverTask" />
+      <node id="1103723565300541528" at="26,50,27,53" concept="1" />
     </file>
     <file name="StructureAspectDescriptor.java">
       <node id="1103723565300541528" at="21,0,22,0" concept="2" trace="myConceptErrorSolverTask" />
@@ -75,8 +75,8 @@
       <scope id="1103723565300550875" at="33,46,40,34" />
     </file>
     <file name="LanguageConceptSwitch.java">
-      <node id="1103723565300550875" at="13,0,14,0" concept="8" trace="ErrorMessage" />
-      <node id="1103723565300550875" at="23,57,24,50" concept="1" />
+      <node id="1103723565300550875" at="15,0,16,0" concept="8" trace="ErrorMessage" />
+      <node id="1103723565300550875" at="25,57,26,50" concept="1" />
     </file>
     <file name="StructureAspectDescriptor.java">
       <node id="1103723565300550875" at="20,0,21,0" concept="2" trace="myConceptErrorMessage" />
@@ -158,8 +158,8 @@
       <scope id="2165212223089852935" at="61,55,66,43" />
     </file>
     <file name="LanguageConceptSwitch.java">
-      <node id="2165212223089852935" at="17,0,18,0" concept="8" trace="ISolverCollectionType" />
-      <node id="2165212223089852935" at="27,48,28,60" concept="1" />
+      <node id="2165212223089852935" at="19,0,20,0" concept="8" trace="ISolverCollectionType" />
+      <node id="2165212223089852935" at="29,48,30,60" concept="1" />
     </file>
     <file name="StructureAspectDescriptor.java">
       <node id="2165212223089852935" at="24,0,25,0" concept="2" trace="myConceptISolverCollectionType" />
@@ -192,8 +192,8 @@
       <scope id="4214990435119232757" at="73,46,80,34" />
     </file>
     <file name="LanguageConceptSwitch.java">
-      <node id="4214990435119232757" at="19,0,20,0" concept="8" trace="SolveControl" />
-      <node id="4214990435119232757" at="29,49,30,51" concept="1" />
+      <node id="4214990435119232757" at="21,0,22,0" concept="8" trace="SolveControl" />
+      <node id="4214990435119232757" at="31,49,32,51" concept="1" />
     </file>
     <file name="StructureAspectDescriptor.java">
       <node id="4214990435119232757" at="26,0,27,0" concept="2" trace="myConceptSolveControl" />
@@ -228,8 +228,8 @@
       <scope id="5067755556171617239" at="55,43,60,31" />
     </file>
     <file name="LanguageConceptSwitch.java">
-      <node id="5067755556171617239" at="16,0,17,0" concept="8" trace="ISolvable" />
-      <node id="5067755556171617239" at="26,59,27,48" concept="1" />
+      <node id="5067755556171617239" at="18,0,19,0" concept="8" trace="ISolvable" />
+      <node id="5067755556171617239" at="28,59,29,48" concept="1" />
     </file>
     <file name="StructureAspectDescriptor.java">
       <node id="5067755556171617239" at="23,0,24,0" concept="2" trace="myConceptISolvable" />
@@ -261,8 +261,8 @@
       <scope id="5553107600697040451" at="49,54,54,42" />
     </file>
     <file name="LanguageConceptSwitch.java">
-      <node id="5553107600697040451" at="15,0,16,0" concept="8" trace="ICanBeMappedToSolver" />
-      <node id="5553107600697040451" at="25,53,26,59" concept="1" />
+      <node id="5553107600697040451" at="17,0,18,0" concept="8" trace="ICanBeMappedToSolver" />
+      <node id="5553107600697040451" at="27,53,28,59" concept="1" />
     </file>
     <file name="StructureAspectDescriptor.java">
       <node id="5553107600697040451" at="22,0,23,0" concept="2" trace="myConceptICanBeMappedToSolver" />
@@ -294,8 +294,8 @@
       <scope id="8571724170506775997" at="26,52,32,40" />
     </file>
     <file name="LanguageConceptSwitch.java">
-      <node id="8571724170506775997" at="12,0,13,0" concept="8" trace="AbstractSolverTask" />
-      <node id="8571724170506775997" at="22,116,23,57" concept="1" />
+      <node id="8571724170506775997" at="14,0,15,0" concept="8" trace="AbstractSolverTask" />
+      <node id="8571724170506775997" at="24,116,25,57" concept="1" />
     </file>
     <file name="StructureAspectDescriptor.java">
       <node id="8571724170506775997" at="19,0,20,0" concept="2" trace="myConceptAbstractSolverTask" />
@@ -327,8 +327,8 @@
       <scope id="9051170899708928820" at="67,44,72,32" />
     </file>
     <file name="LanguageConceptSwitch.java">
-      <node id="9051170899708928820" at="18,0,19,0" concept="8" trace="IUseSolver" />
-      <node id="9051170899708928820" at="28,60,29,49" concept="1" />
+      <node id="9051170899708928820" at="20,0,21,0" concept="8" trace="IUseSolver" />
+      <node id="9051170899708928820" at="30,60,31,49" concept="1" />
     </file>
     <file name="StructureAspectDescriptor.java">
       <node id="9051170899708928820" at="25,0,26,0" concept="2" trace="myConceptIUseSolver" />

@@ -8,7 +8,6 @@ import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import org.jetbrains.mps.openapi.model.SNode;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import org.iets3.core.mapping.plugin.TreeNode;
 import java.util.List;
@@ -23,7 +22,6 @@ import org.iets3.components.core.behavior.Component__BehaviorDescriptor;
 import org.iets3.components.core.behavior.AbstractComponentInterface__BehaviorDescriptor;
 import org.iets3.core.expr.base.behavior.IDotTarget__BehaviorDescriptor;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations;
-import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 import org.jetbrains.mps.openapi.language.SContainmentLink;
@@ -34,23 +32,21 @@ import org.jetbrains.mps.openapi.language.SProperty;
 public final class ComponentMapping__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getConcept(0x8c1ef69abcac4cb5L, 0x96196b27d0aefc0cL, 0x2b39747c07e31164L, "org.iets3.core.mapping.structure.ComponentMapping");
 
-  public static final SMethod<SNode> getTopLevelMappingSource_idJbnHRljhvc = new SMethodBuilder<SNode>(new SJavaCompoundTypeImpl((Class<SNode>) ((Class) Object.class))).name("getTopLevelMappingSource").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(849877261548853196L).languageId(0x96196b27d0aefc0cL, 0x8c1ef69abcac4cb5L).build2();
-  public static final SMethod<SNode> getTopLevelMappingTarget_idJbnHRljrx6 = new SMethodBuilder<SNode>(new SJavaCompoundTypeImpl((Class<SNode>) ((Class) Object.class))).name("getTopLevelMappingTarget").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(849877261548894278L).languageId(0x96196b27d0aefc0cL, 0x8c1ef69abcac4cb5L).build2();
-  public static final SMethod<SNode> getMappedSourceComponenInstance_id7ly9CZm7eR$ = new SMethodBuilder<SNode>(new SJavaCompoundTypeImpl((Class<SNode>) ((Class) Object.class))).name("getMappedSourceComponenInstance").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(8458365449369611748L).languageId(0x96196b27d0aefc0cL, 0x8c1ef69abcac4cb5L).build2();
-  public static final SMethod<SNode> getMappedTargetComponenInstance_id7ly9CZm7XG$ = new SMethodBuilder<SNode>(new SJavaCompoundTypeImpl((Class<SNode>) ((Class) Object.class))).name("getMappedTargetComponenInstance").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(8458365449369803556L).languageId(0x96196b27d0aefc0cL, 0x8c1ef69abcac4cb5L).build2();
-  public static final SMethod<Iterable<SNode>> getMappedSourcePorts_id6FL_GAgYY$I = new SMethodBuilder<Iterable<SNode>>(new SJavaCompoundTypeImpl((Class<Iterable<SNode>>) ((Class) Object.class))).name("getMappedSourcePorts").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(7706106229872650542L).languageId(0x96196b27d0aefc0cL, 0x8c1ef69abcac4cb5L).build2();
-  public static final SMethod<Iterable<SNode>> getMappedTargetPorts_id6FL_GAgYY$_ = new SMethodBuilder<Iterable<SNode>>(new SJavaCompoundTypeImpl((Class<Iterable<SNode>>) ((Class) Object.class))).name("getMappedTargetPorts").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(7706106229872650533L).languageId(0x96196b27d0aefc0cL, 0x8c1ef69abcac4cb5L).build2();
-  /*package*/ static final SMethod<Iterable<SNode>> getPortsFrom_id6FL_GAgYZOC = new SMethodBuilder<Iterable<SNode>>(new SJavaCompoundTypeImpl((Class<Iterable<SNode>>) ((Class) Object.class))).name("getPortsFrom").modifiers(0, AccessPrivileges.PRIVATE).concept(CONCEPT).baseMethodId(7706106229872655656L).languageId(0x96196b27d0aefc0cL, 0x8c1ef69abcac4cb5L).build2(SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""));
-  /*package*/ static final SMethod<SNode> getCompInstanceFrom_id6UJt898GE$g = new SMethodBuilder<SNode>(new SJavaCompoundTypeImpl((Class<SNode>) ((Class) Object.class))).name("getCompInstanceFrom").modifiers(0, AccessPrivileges.PRIVATE).concept(CONCEPT).baseMethodId(7975721568010676496L).languageId(0x96196b27d0aefc0cL, 0x8c1ef69abcac4cb5L).build2(SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""));
-  public static final SMethod<TreeNode> getTreeNodeFromSourceExpr_id5am5hXls2Kw = new SMethodBuilder<TreeNode>(new SJavaCompoundTypeImpl(TreeNode.class)).name("getTreeNodeFromSourceExpr").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5950967181938273312L).languageId(0x96196b27d0aefc0cL, 0x8c1ef69abcac4cb5L).build2();
-  /*package*/ static final SMethod<List<SNode>> getInstanceList_id5am5hXls4ga = new SMethodBuilder<List<SNode>>(new SJavaCompoundTypeImpl((Class<List<SNode>>) ((Class) Object.class))).name("getInstanceList").modifiers(0, AccessPrivileges.PRIVATE).concept(CONCEPT).baseMethodId(5950967181938279434L).languageId(0x96196b27d0aefc0cL, 0x8c1ef69abcac4cb5L).build2(SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""));
-  /*package*/ static final SMethod<List<SNode>> splitDotExpr_id5am5hXls5xh = new SMethodBuilder<List<SNode>>(new SJavaCompoundTypeImpl((Class<List<SNode>>) ((Class) Object.class))).name("splitDotExpr").modifiers(0, AccessPrivileges.PRIVATE).concept(CONCEPT).baseMethodId(5950967181938284625L).languageId(0x96196b27d0aefc0cL, 0x8c1ef69abcac4cb5L).build2(SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""), SMethodBuilder.createJavaParameter((Class<List<SNode>>) ((Class) Object.class), ""));
-  /*package*/ static final SMethod<TreeNode> list2Tree_id5am5hXlscdS = new SMethodBuilder<TreeNode>(new SJavaCompoundTypeImpl(TreeNode.class)).name("list2Tree").modifiers(0, AccessPrivileges.PRIVATE).concept(CONCEPT).baseMethodId(5950967181938312056L).languageId(0x96196b27d0aefc0cL, 0x8c1ef69abcac4cb5L).build2(SMethodBuilder.createJavaParameter((Class<List<SNode>>) ((Class) Object.class), ""));
+  public static final SMethod<SNode> getTopLevelMappingSource_idJbnHRljhvc = new SMethodBuilder<>(SNode.class).name("getTopLevelMappingSource").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(849877261548853196L).languageId(0x96196b27d0aefc0cL, 0x8c1ef69abcac4cb5L).build2();
+  public static final SMethod<SNode> getTopLevelMappingTarget_idJbnHRljrx6 = new SMethodBuilder<>(SNode.class).name("getTopLevelMappingTarget").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(849877261548894278L).languageId(0x96196b27d0aefc0cL, 0x8c1ef69abcac4cb5L).build2();
+  public static final SMethod<SNode> getMappedSourceComponenInstance_id7ly9CZm7eR$ = new SMethodBuilder<>(SNode.class).name("getMappedSourceComponenInstance").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(8458365449369611748L).languageId(0x96196b27d0aefc0cL, 0x8c1ef69abcac4cb5L).build2();
+  public static final SMethod<SNode> getMappedTargetComponenInstance_id7ly9CZm7XG$ = new SMethodBuilder<>(SNode.class).name("getMappedTargetComponenInstance").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(8458365449369803556L).languageId(0x96196b27d0aefc0cL, 0x8c1ef69abcac4cb5L).build2();
+  public static final SMethod<Iterable<SNode>> getMappedSourcePorts_id6FL_GAgYY$I = new SMethodBuilder<>((Class<Iterable<SNode>>) ((Class) Object.class)).name("getMappedSourcePorts").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(7706106229872650542L).languageId(0x96196b27d0aefc0cL, 0x8c1ef69abcac4cb5L).build2();
+  public static final SMethod<Iterable<SNode>> getMappedTargetPorts_id6FL_GAgYY$_ = new SMethodBuilder<>((Class<Iterable<SNode>>) ((Class) Object.class)).name("getMappedTargetPorts").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(7706106229872650533L).languageId(0x96196b27d0aefc0cL, 0x8c1ef69abcac4cb5L).build2();
+  /*package*/ static final SMethod<Iterable<SNode>> getPortsFrom_id6FL_GAgYZOC = new SMethodBuilder<>((Class<Iterable<SNode>>) ((Class) Object.class)).name("getPortsFrom").modifiers(0, AccessPrivileges.PRIVATE).concept(CONCEPT).baseMethodId(7706106229872655656L).languageId(0x96196b27d0aefc0cL, 0x8c1ef69abcac4cb5L).build2(SMethodBuilder.createJavaParameter(SNode.class, "expr"));
+  /*package*/ static final SMethod<SNode> getCompInstanceFrom_id6UJt898GE$g = new SMethodBuilder<>(SNode.class).name("getCompInstanceFrom").modifiers(0, AccessPrivileges.PRIVATE).concept(CONCEPT).baseMethodId(7975721568010676496L).languageId(0x96196b27d0aefc0cL, 0x8c1ef69abcac4cb5L).build2(SMethodBuilder.createJavaParameter(SNode.class, "expr"));
+  public static final SMethod<TreeNode> getTreeNodeFromSourceExpr_id5am5hXls2Kw = new SMethodBuilder<>(TreeNode.class).name("getTreeNodeFromSourceExpr").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5950967181938273312L).languageId(0x96196b27d0aefc0cL, 0x8c1ef69abcac4cb5L).build2();
+  /*package*/ static final SMethod<List<SNode>> getInstanceList_id5am5hXls4ga = new SMethodBuilder<>((Class<List<SNode>>) ((Class) Object.class)).name("getInstanceList").modifiers(0, AccessPrivileges.PRIVATE).concept(CONCEPT).baseMethodId(5950967181938279434L).languageId(0x96196b27d0aefc0cL, 0x8c1ef69abcac4cb5L).build2(SMethodBuilder.createJavaParameter(SNode.class, "dotExpr"));
+  /*package*/ static final SMethod<List<SNode>> splitDotExpr_id5am5hXls5xh = new SMethodBuilder<>((Class<List<SNode>>) ((Class) Object.class)).name("splitDotExpr").modifiers(0, AccessPrivileges.PRIVATE).concept(CONCEPT).baseMethodId(5950967181938284625L).languageId(0x96196b27d0aefc0cL, 0x8c1ef69abcac4cb5L).build2(SMethodBuilder.createJavaParameter(SNode.class, "dotExpr"), SMethodBuilder.createJavaParameter((Class<List<SNode>>) ((Class) Object.class), "exprFound"));
+  /*package*/ static final SMethod<TreeNode> list2Tree_id5am5hXlscdS = new SMethodBuilder<>(TreeNode.class).name("list2Tree").modifiers(0, AccessPrivileges.PRIVATE).concept(CONCEPT).baseMethodId(5950967181938312056L).languageId(0x96196b27d0aefc0cL, 0x8c1ef69abcac4cb5L).build2(SMethodBuilder.createJavaParameter((Class<List<SNode>>) ((Class) Object.class), "instances"));
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(getTopLevelMappingSource_idJbnHRljhvc, getTopLevelMappingTarget_idJbnHRljrx6, getMappedSourceComponenInstance_id7ly9CZm7eR$, getMappedTargetComponenInstance_id7ly9CZm7XG$, getMappedSourcePorts_id6FL_GAgYY$I, getMappedTargetPorts_id6FL_GAgYY$_, getPortsFrom_id6FL_GAgYZOC, getCompInstanceFrom_id6UJt898GE$g, getTreeNodeFromSourceExpr_id5am5hXls2Kw, getInstanceList_id5am5hXls4ga, splitDotExpr_id5am5hXls5xh, list2Tree_id5am5hXlscdS);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(getTopLevelMappingSource_idJbnHRljhvc, getTopLevelMappingTarget_idJbnHRljrx6, getMappedSourceComponenInstance_id7ly9CZm7eR$, getMappedTargetComponenInstance_id7ly9CZm7XG$, getMappedSourcePorts_id6FL_GAgYY$I, getMappedTargetPorts_id6FL_GAgYY$_, getPortsFrom_id6FL_GAgYZOC, getCompInstanceFrom_id6UJt898GE$g, getTreeNodeFromSourceExpr_id5am5hXls2Kw, getInstanceList_id5am5hXls4ga, splitDotExpr_id5am5hXls5xh, list2Tree_id5am5hXlscdS);
 
-  private static void ___init___(@NotNull SNode __thisNode__) {
-  }
 
   /*package*/ static SNode getTopLevelMappingSource_idJbnHRljhvc(@NotNull SNode __thisNode__) {
     // TODO: change to NULL-Proved implementation
@@ -153,10 +149,6 @@ public final class ComponentMapping__BehaviorDescriptor extends BaseBHDescriptor
   /*package*/ ComponentMapping__BehaviorDescriptor() {
   }
 
-  @Override
-  protected void initNode(@NotNull SNode node, @NotNull SConstructor constructor, @Nullable Object[] parameters) {
-    ___init___(node);
-  }
 
   @Override
   protected <T> T invokeSpecial0(@NotNull SNode node, @NotNull SMethod<T> method, @Nullable Object[] parameters) {

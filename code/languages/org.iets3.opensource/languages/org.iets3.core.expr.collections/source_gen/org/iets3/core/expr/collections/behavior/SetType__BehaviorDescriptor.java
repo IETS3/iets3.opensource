@@ -7,7 +7,6 @@ import org.jetbrains.mps.openapi.language.SAbstractConcept;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import java.util.List;
 import org.jetbrains.mps.openapi.model.SNode;
@@ -30,13 +29,13 @@ import org.jetbrains.mps.openapi.language.SConcept;
 public final class SetType__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getConcept(0x2f7e2e356e744c43L, 0x9fa52465d68f5996L, 0x7b20a1e3c2f0b587L, "org.iets3.core.expr.collections.structure.SetType");
 
-  public static final SMethod<String> getPresentation_idhEwIMiw = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("getPresentation").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(1213877396640L).languageId(0x9b92103b95ca8c0cL, 0xceab519525ea4f22L).build2();
-  public static final SMethod<List<SNode>> allSupertypes_id4Q4DxjDsh$t = new SMethodBuilder<List<SNode>>(new SJavaCompoundTypeImpl((Class<List<SNode>>) ((Class) Object.class))).name("getAllSupertypes").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5585772046592317725L).languageId(0xb66a309a6e1a7290L, 0xcfaa4966b7d54b69L).build2();
-  public static final SMethod<Boolean> isReadOnly_id1RHynufnzD2 = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("isReadOnly").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(2156530943179766338L).languageId(0x9fa52465d68f5996L, 0x2f7e2e356e744c43L).build2();
-  public static final SMethod<SNode> createDefaultVarExpr_id60Qa1k_nI2O = new SMethodBuilder<SNode>(new SJavaCompoundTypeImpl((Class<SNode>) ((Class) Object.class))).name("createDefaultVarExpr").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(6932772747669856436L).languageId(0xb66a309a6e1a7290L, 0xcfaa4966b7d54b69L).build2();
-  public static final SMethod<Boolean> supportsDefault_id60Qa1k_sqM4 = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("supportsDefault").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(6932772747671088260L).languageId(0xb66a309a6e1a7290L, 0xcfaa4966b7d54b69L).build2();
+  public static final SMethod<String> getPresentation_idhEwIMiw = new SMethodBuilder<>(String.class).name("getPresentation").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(1213877396640L).languageId(0x9b92103b95ca8c0cL, 0xceab519525ea4f22L).build2();
+  public static final SMethod<List<SNode>> allSupertypes_id4Q4DxjDsh$t = new SMethodBuilder<>((Class<List<SNode>>) ((Class) Object.class)).name("getAllSupertypes").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5585772046592317725L).languageId(0xb66a309a6e1a7290L, 0xcfaa4966b7d54b69L).build2();
+  public static final SMethod<Boolean> isReadOnly_id1RHynufnzD2 = new SMethodBuilder<>(Boolean.TYPE).name("isReadOnly").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(2156530943179766338L).languageId(0x9fa52465d68f5996L, 0x2f7e2e356e744c43L).build2();
+  public static final SMethod<SNode> createDefaultVarExpr_id60Qa1k_nI2O = new SMethodBuilder<>(SNode.class).name("createDefaultVarExpr").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(6932772747669856436L).languageId(0xb66a309a6e1a7290L, 0xcfaa4966b7d54b69L).build2();
+  public static final SMethod<Boolean> supportsDefault_id60Qa1k_sqM4 = new SMethodBuilder<>(Boolean.TYPE).name("supportsDefault").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(6932772747671088260L).languageId(0xb66a309a6e1a7290L, 0xcfaa4966b7d54b69L).build2();
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(getPresentation_idhEwIMiw, allSupertypes_id4Q4DxjDsh$t, isReadOnly_id1RHynufnzD2, createDefaultVarExpr_id60Qa1k_nI2O, supportsDefault_id60Qa1k_sqM4);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(getPresentation_idhEwIMiw, allSupertypes_id4Q4DxjDsh$t, isReadOnly_id1RHynufnzD2, createDefaultVarExpr_id60Qa1k_nI2O, supportsDefault_id60Qa1k_sqM4);
 
   private static void ___init___(@NotNull SNode __thisNode__) {
 

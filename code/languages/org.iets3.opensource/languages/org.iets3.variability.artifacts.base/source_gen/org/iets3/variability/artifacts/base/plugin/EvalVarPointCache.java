@@ -107,7 +107,7 @@ public final class EvalVarPointCache {
    * 
    * Note that if a configuration's checkboxes or attribute values are being changed,
    * the cache will contain multiple values for each previous state of this configuration.
-   * As the number of configurable states and thus the cache size might be big, we have to 
+   * As the number of configurable states and thus the cache size might be big, we have to
    * limit the cache size in order to avoid a memory leak. However, in practice we do not
    * expect to reach that limit.
    * 

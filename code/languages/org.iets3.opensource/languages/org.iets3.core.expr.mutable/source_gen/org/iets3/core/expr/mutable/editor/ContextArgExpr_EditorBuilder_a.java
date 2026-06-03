@@ -8,7 +8,6 @@ import org.jetbrains.mps.openapi.model.SNode;
 import jetbrains.mps.openapi.editor.EditorContext;
 import jetbrains.mps.openapi.editor.cells.EditorCell;
 import jetbrains.mps.baseLanguage.closures.runtime._FunctionTypes;
-import jetbrains.mps.editor.runtime.cells.BigCellUtil;
 import jetbrains.mps.lang.editor.cellProviders.SingleRoleCellProvider;
 import org.jetbrains.mps.openapi.language.SContainmentLink;
 import jetbrains.mps.openapi.editor.cells.CellActionType;
@@ -46,15 +45,12 @@ import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 
     final EditorCell cell = createCustomFactory_3();
     EditorCell editorCell = ((_FunctionTypes._return_P0_E0<EditorCell>) () -> cell).invoke();
-    EditorCell bigCell = BigCellUtil.findBigCell(editorCell, getNode());
-    if (bigCell != null) {
-      bigCell.setBig(true);
-      setCellContext(bigCell);
-    }
+    editorCell.setBig(true);
+    setCellContext(editorCell);
     return editorCell;
   }
   private EditorCell createCustomFactory_1() {
-    return createCustomFactory_0(getEditorContext(), myNode);
+    return createCustomFactory_0(getEditorContext(), getNode());
   }
   private EditorCell createCustomFactory_2(final EditorContext editorContext, final SNode node) {
 
@@ -64,7 +60,7 @@ import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
     return editorCell;
   }
   private EditorCell createCustomFactory_3() {
-    return createCustomFactory_2(getEditorContext(), myNode);
+    return createCustomFactory_2(getEditorContext(), getNode());
   }
   private EditorCell createRefNode_0() {
     SingleRoleCellProvider provider = new argSingleRoleHandler_z1psfc_a0a(myNode, LINKS.arg$fPVm, getEditorContext());

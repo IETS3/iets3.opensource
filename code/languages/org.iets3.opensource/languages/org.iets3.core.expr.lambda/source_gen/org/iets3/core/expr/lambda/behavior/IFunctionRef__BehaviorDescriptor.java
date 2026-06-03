@@ -8,14 +8,12 @@ import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import org.jetbrains.mps.openapi.model.SNode;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import org.iets3.core.expr.base.plugin.EffectDescriptor;
 import java.util.List;
 import java.util.Arrays;
 import org.jetbrains.annotations.NotNull;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
-import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 import org.jetbrains.mps.openapi.language.SReferenceLink;
@@ -23,13 +21,11 @@ import org.jetbrains.mps.openapi.language.SReferenceLink;
 public final class IFunctionRef__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getInterfaceConcept(0x9464fa065ab9409bL, 0x927464ab29588457L, 0x427ce5230845606aL, "org.iets3.core.expr.lambda.structure.IFunctionRef");
 
-  public static final SMethod<SNode> target_id6rGLT0TevFd = new SMethodBuilder<SNode>(new SJavaCompoundTypeImpl((Class<SNode>) ((Class) Object.class))).name("target").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(7416522108621683405L).languageId(0xb66a309a6e1a7290L, 0xcfaa4966b7d54b69L).build2();
-  public static final SMethod<EffectDescriptor> delayedEffectDescriptor_id6NpHfQ5A3Wb = new SMethodBuilder<EffectDescriptor>(new SJavaCompoundTypeImpl(EffectDescriptor.class)).name("delayedEffectDescriptor").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(7843499227003502347L).languageId(0x927464ab29588457L, 0x9464fa065ab9409bL).build2();
+  public static final SMethod<SNode> target_id6rGLT0TevFd = new SMethodBuilder<>(SNode.class).name("target").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(7416522108621683405L).languageId(0xb66a309a6e1a7290L, 0xcfaa4966b7d54b69L).build2();
+  public static final SMethod<EffectDescriptor> delayedEffectDescriptor_id6NpHfQ5A3Wb = new SMethodBuilder<>(EffectDescriptor.class).name("delayedEffectDescriptor").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(7843499227003502347L).languageId(0x927464ab29588457L, 0x9464fa065ab9409bL).build2();
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(target_id6rGLT0TevFd, delayedEffectDescriptor_id6NpHfQ5A3Wb);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(target_id6rGLT0TevFd, delayedEffectDescriptor_id6NpHfQ5A3Wb);
 
-  private static void ___init___(@NotNull SNode __thisNode__) {
-  }
 
   /*package*/ static SNode target_id6rGLT0TevFd(@NotNull SNode __thisNode__) {
     return SLinkOperations.getTarget(__thisNode__, LINKS.fun$DJ6H);
@@ -41,10 +37,6 @@ public final class IFunctionRef__BehaviorDescriptor extends BaseBHDescriptor {
   /*package*/ IFunctionRef__BehaviorDescriptor() {
   }
 
-  @Override
-  protected void initNode(@NotNull SNode node, @NotNull SConstructor constructor, @Nullable Object[] parameters) {
-    ___init___(node);
-  }
 
   @Override
   protected <T> T invokeSpecial0(@NotNull SNode node, @NotNull SMethod<T> method, @Nullable Object[] parameters) {

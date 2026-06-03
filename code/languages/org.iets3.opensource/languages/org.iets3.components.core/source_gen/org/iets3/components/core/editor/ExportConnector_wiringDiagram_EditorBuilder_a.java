@@ -8,7 +8,6 @@ import org.jetbrains.mps.openapi.model.SNode;
 import jetbrains.mps.openapi.editor.EditorContext;
 import jetbrains.mps.openapi.editor.cells.EditorCell;
 import jetbrains.mps.baseLanguage.closures.runtime._FunctionTypes;
-import jetbrains.mps.editor.runtime.cells.BigCellUtil;
 import jetbrains.mps.baseLanguage.closures.runtime.Wrappers;
 import de.itemis.mps.editor.diagram.runtime.model.EditorCell_DiagramElement;
 import de.itemis.mps.editor.diagram.runtime.ContextVariables;
@@ -71,15 +70,12 @@ import org.jetbrains.mps.openapi.language.SConcept;
 
     final EditorCell cell = createDiagramConnector_1();
     EditorCell editorCell = ((_FunctionTypes._return_P0_E0<EditorCell>) () -> cell).invoke();
-    EditorCell bigCell = BigCellUtil.findBigCell(editorCell, getNode());
-    if (bigCell != null) {
-      bigCell.setBig(true);
-      setCellContext(bigCell);
-    }
+    editorCell.setBig(true);
+    setCellContext(editorCell);
     return editorCell;
   }
   private EditorCell createCustomFactory_1() {
-    return createCustomFactory_0(getEditorContext(), myNode);
+    return createCustomFactory_0(getEditorContext(), getNode());
   }
   private EditorCell createDiagramConnector_0(final EditorContext editorContext, final SNode node) {
 
@@ -210,7 +206,7 @@ import org.jetbrains.mps.openapi.language.SConcept;
     return diagramCell.value;
   }
   private EditorCell createDiagramConnector_1() {
-    return createDiagramConnector_0(getEditorContext(), myNode);
+    return createDiagramConnector_0(getEditorContext(), getNode());
   }
   private Color _StyleParameter_QueryFunction_m9tra8_a0a0() {
     Color cc = IPortType__BehaviorDescriptor.characteristicColor_idmIQkxg4rmC.invoke(SLinkOperations.getTarget(AbstractConnectorBase__BehaviorDescriptor.getGoverningPort_idmIQkxg5V$2.invoke(getNode()), LINKS.type$5Gl6));
