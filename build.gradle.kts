@@ -68,8 +68,8 @@ version = calculateVersion().also {
 }
 
 fun calculateVersion(): String {
-    val major = libs.versions.mpsVersion.get().substring(0, 4)
-    val minor = libs.versions.mpsVersion.get().substring(5, 6)
+    val major = "9999"
+    val minor = "9"
     if (!ciBuild) return "$major.$minor-SNAPSHOT"
 
     val buildNumber =
