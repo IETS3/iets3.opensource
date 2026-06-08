@@ -1,5 +1,5 @@
 [versions]
-mpsVersion = "261.24374.10085"
+mpsVersion = "261.24374.10099"
 mpsQaVersion = "9999.9.1378.0734814"
 # if you want to build against a specific mbeddr branch, prepend it here with a dot.
 # NOTE: instances of '/' in the branch name need to be replaced by '-'
