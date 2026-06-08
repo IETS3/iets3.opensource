@@ -17,7 +17,7 @@ import jetbrains.mps.ide.actions.MPSCommonDataKeys;
 import java.awt.Frame;
 
 public class selectNextTraceNodeAndInspectSource_Action extends BaseAction {
-  private static final Icon ICON = IconContainer.ICON_a0_0;
+  private static final Icon ICON = IconContainer.ICON1;
 
   public selectNextTraceNodeAndInspectSource_Action() {
     super("Trace: select next trace and inspect source", "", ICON);

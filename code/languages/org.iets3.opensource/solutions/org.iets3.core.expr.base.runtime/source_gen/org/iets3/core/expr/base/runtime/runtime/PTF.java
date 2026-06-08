@@ -29,6 +29,13 @@ public class PTF {
     return mapper;
   }
 
+  /**
+   * Replace the mapper with {@code newMapper}. For use in tests only. To clean up, call {@link org.iets3.core.expr.base.runtime.runtime.PTF#invalidateCache() }.
+   */
+  public static void replaceMapperForTesting(PrimitiveTypeMapper newMapper) {
+    mapper = newMapper;
+  }
+
   public static void invalidateCache() {
     mapper = null;
   }

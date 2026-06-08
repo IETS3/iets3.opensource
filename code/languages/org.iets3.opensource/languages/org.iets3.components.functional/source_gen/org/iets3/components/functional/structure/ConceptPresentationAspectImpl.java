@@ -209,7 +209,7 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
         if (props_ConsumesPortCategory == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
           cpb.rawPresentation("consumes");
-          cpb.icon(IconContainer.RESOURCE_a0a2a0a21b0fe);
+          cpb.icon(IconContainer.RESOURCE_0);
           props_ConsumesPortCategory = cpb.create();
         }
         return props_ConsumesPortCategory;
@@ -250,7 +250,7 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
         if (props_DataBundleImageDummy == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
           cpb.rawPresentation("DataBundleImageDummy");
-          cpb.icon(IconContainer.RESOURCE_a0a2a0a81b0fe);
+          cpb.icon(IconContainer.RESOURCE_1);
           props_DataBundleImageDummy = cpb.create();
         }
         return props_DataBundleImageDummy;
@@ -265,7 +265,7 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
         if (props_DataItem == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
           cpb.presentationByName();
-          cpb.icon(IconContainer.RESOURCE_a0a2a0a02b0fe);
+          cpb.icon(IconContainer.RESOURCE_2);
           props_DataItem = cpb.create();
         }
         return props_DataItem;
@@ -293,7 +293,7 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
       case LanguageConceptSwitch.DataPortCategory:
         if (props_DataPortCategory == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
-          cpb.icon(IconContainer.RESOURCE_a0a1a0a42b0fe);
+          cpb.icon(IconContainer.RESOURCE_3);
           props_DataPortCategory = cpb.create();
         }
         return props_DataPortCategory;
@@ -640,7 +640,7 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
         if (props_ProducesPortCategory == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
           cpb.rawPresentation("produces");
-          cpb.icon(IconContainer.RESOURCE_a0a2a0a57b0fe);
+          cpb.icon(IconContainer.RESOURCE_4);
           props_ProducesPortCategory = cpb.create();
         }
         return props_ProducesPortCategory;
@@ -703,7 +703,7 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
         if (props_ProvidesPortCategory == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
           cpb.rawPresentation("provides");
-          cpb.icon(IconContainer.RESOURCE_a0a2a0a48b0fe);
+          cpb.icon(IconContainer.RESOURCE_5);
           props_ProvidesPortCategory = cpb.create();
         }
         return props_ProvidesPortCategory;
@@ -719,7 +719,7 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
           cpb.shortDesc("receive a message");
           cpb.presentationByName();
-          cpb.icon(IconContainer.RESOURCE_a0a3a0a68b0fe);
+          cpb.icon(IconContainer.RESOURCE_6);
           props_ReceiveMessage = cpb.create();
         }
         return props_ReceiveMessage;
@@ -728,7 +728,7 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
           cpb.shortDesc("send and receive a message");
           cpb.presentationByName();
-          cpb.icon(IconContainer.RESOURCE_a0a3a0a78b0fe);
+          cpb.icon(IconContainer.RESOURCE_7);
           props_RequestReplyMessage = cpb.create();
         }
         return props_RequestReplyMessage;
@@ -744,7 +744,7 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
           cpb.shortDesc("send a message");
           cpb.presentationByName();
-          cpb.icon(IconContainer.RESOURCE_a0a3a0a98b0fe);
+          cpb.icon(IconContainer.RESOURCE_8);
           props_SendMessage = cpb.create();
         }
         return props_SendMessage;
@@ -766,14 +766,14 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
         if (props_ServiceDefinition == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
           cpb.presentationByName();
-          cpb.icon(IconContainer.RESOURCE_a0a2a0a29b0fe);
+          cpb.icon(IconContainer.RESOURCE_9);
           props_ServiceDefinition = cpb.create();
         }
         return props_ServiceDefinition;
       case LanguageConceptSwitch.ServicePortCategory:
         if (props_ServicePortCategory == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
-          cpb.icon(IconContainer.RESOURCE_a0a1a0a39b0fe);
+          cpb.icon(IconContainer.RESOURCE_10);
           props_ServicePortCategory = cpb.create();
         }
         return props_ServicePortCategory;
@@ -859,7 +859,7 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
         if (props_UsesPortCategory == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
           cpb.rawPresentation("uses");
-          cpb.icon(IconContainer.RESOURCE_a0a2a0a501b0fe);
+          cpb.icon(IconContainer.RESOURCE_11);
           props_UsesPortCategory = cpb.create();
         }
         return props_UsesPortCategory;
