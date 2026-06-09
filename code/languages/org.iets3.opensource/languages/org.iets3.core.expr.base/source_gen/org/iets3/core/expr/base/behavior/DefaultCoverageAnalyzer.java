@@ -16,7 +16,7 @@ import java.util.Set;
 import org.jetbrains.mps.openapi.language.SLanguage;
 
 /**
- * Previous implementation of {@link org.iets3.core.expr.base.behavior.IDefaultCoverageAnalyzer }.
+ * Previous implementation of {@link org.iets3.core.expr.base.behavior.IDefaultCoverageAnalyzer} .
  * Tries hard to maintain public API, and quirks from mixing instance / static implementation.
  */
 public class DefaultCoverageAnalyzer extends DefaultCoverageAnalyzerBase {
@@ -139,82 +139,82 @@ public class DefaultCoverageAnalyzer extends DefaultCoverageAnalyzerBase {
 
   /**
    * 
-   * @deprecated use {@link org.iets3.core.expr.base.behavior.IDefaultCoverageAnalyzer#COVERED }
+   * @deprecated use {@link org.iets3.core.expr.base.behavior.IDefaultCoverageAnalyzer#COVERED} 
    */
   @Deprecated
   public static final String COVERED = IDefaultCoverageAnalyzer.COVERED;
   /**
    * 
-   * @deprecated use {@link org.iets3.core.expr.base.behavior.IDefaultCoverageAnalyzer#MISSING }
+   * @deprecated use {@link org.iets3.core.expr.base.behavior.IDefaultCoverageAnalyzer#MISSING}
    */
   @Deprecated
   public static final String MISSING = IDefaultCoverageAnalyzer.MISSING;
   /**
    * 
-   * @deprecated use {@link org.iets3.core.expr.base.behavior.IDefaultCoverageAnalyzer#PARTIAL }
+   * @deprecated use {@link org.iets3.core.expr.base.behavior.IDefaultCoverageAnalyzer#PARTIAL}
    */
   @Deprecated
   public static final String PARTIAL = IDefaultCoverageAnalyzer.PARTIAL;
   /**
    * 
-   * @deprecated use {@link org.iets3.core.expr.base.behavior.IDefaultCoverageAnalyzer#IGNORED }
+   * @deprecated use {@link org.iets3.core.expr.base.behavior.IDefaultCoverageAnalyzer#IGNORED}
    */
   @Deprecated
   public static final String IGNORED = IDefaultCoverageAnalyzer.IGNORED;
 
   /**
    * 
-   * @deprecated use {@link org.iets3.core.expr.base.behavior.IDefaultCoverageAnalyzer#COVERED_COLOR }
+   * @deprecated use {@link org.iets3.core.expr.base.behavior.IDefaultCoverageAnalyzer#COVERED_COLOR}
    */
   @Deprecated
   public static final Color COVERED_COLOR = IDefaultCoverageAnalyzer.COVERED_COLOR;
   /**
    * 
-   * @deprecated use {@link org.iets3.core.expr.base.behavior.IDefaultCoverageAnalyzer#MISSING_COLOR }
+   * @deprecated use {@link org.iets3.core.expr.base.behavior.IDefaultCoverageAnalyzer#MISSING_COLOR}
    */
   @Deprecated
   public static final Color MISSING_COLOR = IDefaultCoverageAnalyzer.MISSING_COLOR;
   /**
    * 
-   * @deprecated use {@link org.iets3.core.expr.base.behavior.IDefaultCoverageAnalyzer#PARTIAL_COLOR }
+   * @deprecated use {@link org.iets3.core.expr.base.behavior.IDefaultCoverageAnalyzer#PARTIAL_COLOR}
    */
   @Deprecated
   public static final Color PARTIAL_COLOR = IDefaultCoverageAnalyzer.PARTIAL_COLOR;
   /**
    * 
-   * @deprecated use {@link org.iets3.core.expr.base.behavior.IDefaultCoverageAnalyzer#IGNORED_COLOR }
+   * @deprecated use {@link org.iets3.core.expr.base.behavior.IDefaultCoverageAnalyzer#IGNORED_COLOR}
    */
   @Deprecated
   public static final Color IGNORED_COLOR = IDefaultCoverageAnalyzer.IGNORED_COLOR;
 
   /**
    * 
-   * @deprecated use {@link org.iets3.core.expr.base.behavior.IDefaultCoverageAnalyzer#CODE_COVERED_COLOR }
+   * @deprecated use {@link org.iets3.core.expr.base.behavior.IDefaultCoverageAnalyzer#CODE_COVERED_COLOR}
    */
   @Deprecated
   public static final Color CODE_COVERED_COLOR = IDefaultCoverageAnalyzer.CODE_COVERED_COLOR;
   /**
    * 
-   * @deprecated use {@link org.iets3.core.expr.base.behavior.IDefaultCoverageAnalyzer#CODE_MISSING_COLOR }
+   * @deprecated use {@link org.iets3.core.expr.base.behavior.IDefaultCoverageAnalyzer#CODE_MISSING_COLOR}
    */
   @Deprecated
   public static final Color CODE_MISSING_COLOR = IDefaultCoverageAnalyzer.CODE_MISSING_COLOR;
   /**
    * 
-   * @deprecated use {@link org.iets3.core.expr.base.behavior.IDefaultCoverageAnalyzer#CODE_PARTIAL_COLOR }
+   * @deprecated use {@link org.iets3.core.expr.base.behavior.IDefaultCoverageAnalyzer#CODE_PARTIAL_COLOR}
    */
   @Deprecated
   public static final Color CODE_PARTIAL_COLOR = IDefaultCoverageAnalyzer.CODE_PARTIAL_COLOR;
   /**
    * 
-   * @deprecated use {@link org.iets3.core.expr.base.behavior.IDefaultCoverageAnalyzer#CODE_IGNORE }
+   * @deprecated use {@link org.iets3.core.expr.base.behavior.IDefaultCoverageAnalyzer#CODE_IGNORE}
    */
   @Deprecated
   public static final Color CODE_IGNORE = IDefaultCoverageAnalyzer.CODE_IGNORE;
 
   /**
    * 
-   * @deprecated use {@link org.iets3.core.expr.base.behavior.IDefaultCoverageAnalyzer#ratio() }
+   * @deprecated use {@link org.iets3.core.expr.base.behavior.IDefaultCoverageAnalyzer#ratio()}
    */
   @Deprecated
   public static int ratio() {
@@ -223,7 +223,7 @@ public class DefaultCoverageAnalyzer extends DefaultCoverageAnalyzerBase {
 
   /**
    * 
-   * @deprecated use {@link org.iets3.core.expr.base.behavior.IDefaultCoverageAnalyzer#reset() }
+   * @deprecated use {@link org.iets3.core.expr.base.behavior.IDefaultCoverageAnalyzer#reset()}
    */
   @Deprecated
   public static void reset() {
@@ -232,7 +232,7 @@ public class DefaultCoverageAnalyzer extends DefaultCoverageAnalyzerBase {
 
   /**
    * 
-   * @deprecated use {@link org.iets3.core.expr.base.behavior.IDefaultCoverageAnalyzer#getInstance() }
+   * @deprecated use {@link org.iets3.core.expr.base.behavior.IDefaultCoverageAnalyzer#getInstance()}
    */
   @NotNull
   @Deprecated
@@ -241,7 +241,7 @@ public class DefaultCoverageAnalyzer extends DefaultCoverageAnalyzerBase {
   }
   /**
    * 
-   * @deprecated use {@link org.iets3.core.expr.base.behavior.IDefaultCoverageAnalyzer#allConcepts() }
+   * @deprecated use {@link org.iets3.core.expr.base.behavior.IDefaultCoverageAnalyzer#allConcepts()}
    */
   @Deprecated
   public static List<SAbstractConcept> allConcepts() {
@@ -249,7 +249,7 @@ public class DefaultCoverageAnalyzer extends DefaultCoverageAnalyzerBase {
   }
   /**
    * 
-   * @deprecated use {@link org.iets3.core.expr.base.behavior.IDefaultCoverageAnalyzer#missingConceptsOrIncomplete() }
+   * @deprecated use {@link org.iets3.core.expr.base.behavior.IDefaultCoverageAnalyzer#missingConceptsOrIncomplete()}
    */
   @Deprecated
   public static Iterable<ConceptData> missingConceptsOrIncomplete() {
@@ -257,7 +257,7 @@ public class DefaultCoverageAnalyzer extends DefaultCoverageAnalyzerBase {
   }
   /**
    * 
-   * @deprecated use {@link org.iets3.core.expr.base.behavior.IDefaultCoverageAnalyzer#allConceptsStatus() }
+   * @deprecated use {@link org.iets3.core.expr.base.behavior.IDefaultCoverageAnalyzer#allConceptsStatus()}
    */
   @Deprecated
   public static Iterable<ConceptData> allConceptsStatus() {
@@ -265,7 +265,7 @@ public class DefaultCoverageAnalyzer extends DefaultCoverageAnalyzerBase {
   }
   /**
    * 
-   * @deprecated use {@link org.iets3.core.expr.base.behavior.IDefaultCoverageAnalyzer#allCoveredNodes() }
+   * @deprecated use {@link org.iets3.core.expr.base.behavior.IDefaultCoverageAnalyzer#allCoveredNodes()}
    */
   @Deprecated
   public static Set<SNode> allCoveredNodes() {
@@ -273,7 +273,7 @@ public class DefaultCoverageAnalyzer extends DefaultCoverageAnalyzerBase {
   }
   /**
    * 
-   * @deprecated use {@link org.iets3.core.expr.base.behavior.IDefaultCoverageAnalyzer#hasNodeCoverage(SNode) }
+   * @deprecated use {@link org.iets3.core.expr.base.behavior.IDefaultCoverageAnalyzer#hasNodeCoverage(SNode)}
    */
   @Deprecated
   public static boolean hasNodeCoverage(SNode node) {
@@ -281,7 +281,7 @@ public class DefaultCoverageAnalyzer extends DefaultCoverageAnalyzerBase {
   }
   /**
    * 
-   * @deprecated use {@link org.iets3.core.expr.base.behavior.IDefaultCoverageAnalyzer#getNodeCoverage(SNode) }
+   * @deprecated use {@link org.iets3.core.expr.base.behavior.IDefaultCoverageAnalyzer#getNodeCoverage(SNode)}
    */
   @Deprecated
   public static NodeCoverage getNodeCoverage(SNode node) {
@@ -289,7 +289,7 @@ public class DefaultCoverageAnalyzer extends DefaultCoverageAnalyzerBase {
   }
   /**
    * 
-   * @deprecated use {@link org.iets3.core.expr.base.behavior.IDefaultCoverageAnalyzer#isNodeCovered(SNode) }
+   * @deprecated use {@link org.iets3.core.expr.base.behavior.IDefaultCoverageAnalyzer#isNodeCovered(SNode)}
    */
   @Deprecated
   public static boolean isNodeCovered(SNode node) {
@@ -297,7 +297,7 @@ public class DefaultCoverageAnalyzer extends DefaultCoverageAnalyzerBase {
   }
   /**
    * 
-   * @deprecated use {@link org.iets3.core.expr.base.behavior.IDefaultCoverageAnalyzer#isNodePartiallyCovered(SNode) }
+   * @deprecated use {@link org.iets3.core.expr.base.behavior.IDefaultCoverageAnalyzer#isNodePartiallyCovered(SNode)}
    */
   @Deprecated
   public static boolean isNodePartiallyCovered(SNode node) {
@@ -305,7 +305,7 @@ public class DefaultCoverageAnalyzer extends DefaultCoverageAnalyzerBase {
   }
   /**
    * 
-   * @deprecated use {@link org.iets3.core.expr.base.behavior.IDefaultCoverageAnalyzer#isNodeNotCovered(SNode) }
+   * @deprecated use {@link org.iets3.core.expr.base.behavior.IDefaultCoverageAnalyzer#isNodeNotCovered(SNode)}
    */
   @Deprecated
   public static boolean isNodeNotCovered(SNode node) {
@@ -313,7 +313,7 @@ public class DefaultCoverageAnalyzer extends DefaultCoverageAnalyzerBase {
   }
   /**
    * 
-   * @deprecated use {@link org.iets3.core.expr.base.behavior.IDefaultCoverageAnalyzer#visitNode(SNode) }
+   * @deprecated use {@link org.iets3.core.expr.base.behavior.IDefaultCoverageAnalyzer#visitNode(SNode)}
    */
   @Deprecated
   public static void visitNode(SNode node) {
@@ -321,7 +321,7 @@ public class DefaultCoverageAnalyzer extends DefaultCoverageAnalyzerBase {
   }
   /**
    * 
-   * @deprecated use {@link org.iets3.core.expr.base.behavior.IDefaultCoverageAnalyzer#registerLanguage(SLanguage) }
+   * @deprecated use {@link org.iets3.core.expr.base.behavior.IDefaultCoverageAnalyzer#registerLanguage(SLanguage)}
    */
   @Deprecated
   public static void registerLanguage(SLanguage l) {
@@ -329,7 +329,7 @@ public class DefaultCoverageAnalyzer extends DefaultCoverageAnalyzerBase {
   }
   /**
    * 
-   * @deprecated use {@link org.iets3.core.expr.base.behavior.IDefaultCoverageAnalyzer#registerIgnoredConcept(SAbstractConcept) }
+   * @deprecated use {@link org.iets3.core.expr.base.behavior.IDefaultCoverageAnalyzer#registerIgnoredConcept(SAbstractConcept)}
    */
   @Deprecated
   public static void registerIgnoredConcept(SAbstractConcept c) {
@@ -337,7 +337,7 @@ public class DefaultCoverageAnalyzer extends DefaultCoverageAnalyzerBase {
   }
   /**
    * 
-   * @deprecated use {@link org.iets3.core.expr.base.behavior.IDefaultCoverageAnalyzer#registerMeasuredConcept(SAbstractConcept) }
+   * @deprecated use {@link org.iets3.core.expr.base.behavior.IDefaultCoverageAnalyzer#registerMeasuredConcept(SAbstractConcept)}
    */
   @Deprecated
   public static void registerMeasuredConcept(SAbstractConcept c) {
@@ -345,7 +345,7 @@ public class DefaultCoverageAnalyzer extends DefaultCoverageAnalyzerBase {
   }
   /**
    * 
-   * @deprecated use {@link org.iets3.core.expr.base.behavior.IDefaultCoverageAnalyzer#isInInterestingContext(SNode) }
+   * @deprecated use {@link org.iets3.core.expr.base.behavior.IDefaultCoverageAnalyzer#isInInterestingContext(SNode)}
    */
   @Deprecated
   public static boolean isInInterestingContext(SNode n) {
@@ -353,7 +353,7 @@ public class DefaultCoverageAnalyzer extends DefaultCoverageAnalyzerBase {
   }
   /**
    * 
-   * @deprecated use {@link org.iets3.core.expr.base.behavior.IDefaultCoverageAnalyzer#isInterestingConcept(SNode) }
+   * @deprecated use {@link org.iets3.core.expr.base.behavior.IDefaultCoverageAnalyzer#isInterestingConcept(SNode)}
    */
   @Deprecated
   public static boolean isInterestingConcept(SNode n) {
@@ -361,7 +361,7 @@ public class DefaultCoverageAnalyzer extends DefaultCoverageAnalyzerBase {
   }
   /**
    * 
-   * @deprecated use {@link org.iets3.core.expr.base.behavior.IDefaultCoverageAnalyzer#getValueStatistics() }
+   * @deprecated use {@link org.iets3.core.expr.base.behavior.IDefaultCoverageAnalyzer#getValueStatistics()}
    */
   @Deprecated
   public static ValueStatistics getValueStatistics() {
@@ -369,7 +369,7 @@ public class DefaultCoverageAnalyzer extends DefaultCoverageAnalyzerBase {
   }
   /**
    * 
-   * @deprecated use {@link org.iets3.core.expr.base.behavior.IDefaultCoverageAnalyzer#isIgnored(SNode) }
+   * @deprecated use {@link org.iets3.core.expr.base.behavior.IDefaultCoverageAnalyzer#isIgnored(SNode)}
    */
   @Deprecated
   public static boolean isIgnored(SNode n) {
@@ -377,7 +377,7 @@ public class DefaultCoverageAnalyzer extends DefaultCoverageAnalyzerBase {
   }
   /**
    * 
-   * @deprecated use {@link org.iets3.core.expr.base.behavior.IDefaultCoverageAnalyzer#hasData() }
+   * @deprecated use {@link org.iets3.core.expr.base.behavior.IDefaultCoverageAnalyzer#hasData()}
    */
   @Deprecated
   public static boolean hasData() {

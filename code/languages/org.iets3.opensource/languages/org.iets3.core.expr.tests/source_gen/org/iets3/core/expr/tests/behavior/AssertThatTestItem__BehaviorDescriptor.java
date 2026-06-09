@@ -7,7 +7,6 @@ import org.jetbrains.mps.openapi.language.SAbstractConcept;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import org.hamcrest.Matcher;
 import org.iets3.core.expr.base.behavior.ValueAndTrace;
@@ -29,7 +28,6 @@ import org.iets3.core.base.behavior.ICanStoreCheckResult__BehaviorDescriptor;
 import org.hamcrest.Description;
 import org.hamcrest.StringDescription;
 import org.iets3.core.expr.base.behavior.Expression__BehaviorDescriptor;
-import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 import org.jetbrains.mps.openapi.language.SContainmentLink;
@@ -37,17 +35,15 @@ import org.jetbrains.mps.openapi.language.SContainmentLink;
 public final class AssertThatTestItem__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getConcept(0xd441fba0f46b43cdL, 0xb723dad7b65da615L, 0x5d506259b80ef61aL, "org.iets3.core.expr.tests.structure.AssertThatTestItem");
 
-  public static final SMethod<Boolean> isStructurallyValid_id5Pgo_AS57ir = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("isStructurallyValid").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(6723982381144110235L).languageId(0xb723dad7b65da615L, 0xd441fba0f46b43cdL).build2();
-  public static final SMethod<EvalResult> executeTestInternal_id78hTg1$THJg = new SMethodBuilder<EvalResult>(new SJavaCompoundTypeImpl(EvalResult.class)).name("executeTestInternal").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(8219602584783477712L).languageId(0xb723dad7b65da615L, 0xd441fba0f46b43cdL).build2();
-  /*package*/ static final SMethod<String> formatErrorMessage_id5Pgo_AS7m_e = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("formatErrorMessage").modifiers(0, AccessPrivileges.PRIVATE).concept(CONCEPT).baseMethodId(6723982381144697166L).languageId(0xb723dad7b65da615L, 0xd441fba0f46b43cdL).build2(SMethodBuilder.createJavaParameter(Object.class, ""), SMethodBuilder.createJavaParameter(Matcher.class, ""));
-  public static final SMethod<String> asString_id6iqfHNBPkjP = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("asString").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(7249175668709475573L).languageId(0xb66a309a6e1a7290L, 0xcfaa4966b7d54b69L).build2();
-  /*package*/ static final SMethod<ValueAndTrace> evaluateValue_id6vw$0gDvi9b = new SMethodBuilder<ValueAndTrace>(new SJavaCompoundTypeImpl(ValueAndTrace.class)).name("evaluateValue").modifiers(0, AccessPrivileges.PRIVATE).concept(CONCEPT).baseMethodId(7485140928240099915L).languageId(0xb723dad7b65da615L, 0xd441fba0f46b43cdL).build2();
-  /*package*/ static final SMethod<ValueAndTrace> evaluateMatcher_id6vw$0gDuos0 = new SMethodBuilder<ValueAndTrace>(new SJavaCompoundTypeImpl(ValueAndTrace.class)).name("evaluateMatcher").modifiers(0, AccessPrivileges.PRIVATE).concept(CONCEPT).baseMethodId(7485140928239863552L).languageId(0xb723dad7b65da615L, 0xd441fba0f46b43cdL).build2();
+  public static final SMethod<Boolean> isStructurallyValid_id5Pgo_AS57ir = new SMethodBuilder<>(Boolean.TYPE).name("isStructurallyValid").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(6723982381144110235L).languageId(0xb723dad7b65da615L, 0xd441fba0f46b43cdL).build2();
+  public static final SMethod<EvalResult> executeTestInternal_id78hTg1$THJg = new SMethodBuilder<>(EvalResult.class).name("executeTestInternal").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(8219602584783477712L).languageId(0xb723dad7b65da615L, 0xd441fba0f46b43cdL).build2();
+  /*package*/ static final SMethod<String> formatErrorMessage_id5Pgo_AS7m_e = new SMethodBuilder<>(String.class).name("formatErrorMessage").modifiers(0, AccessPrivileges.PRIVATE).concept(CONCEPT).baseMethodId(6723982381144697166L).languageId(0xb723dad7b65da615L, 0xd441fba0f46b43cdL).build2(SMethodBuilder.createJavaParameter(Object.class, "value"), SMethodBuilder.createJavaParameter(Matcher.class, "matcher"));
+  public static final SMethod<String> asString_id6iqfHNBPkjP = new SMethodBuilder<>(String.class).name("asString").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(7249175668709475573L).languageId(0xb66a309a6e1a7290L, 0xcfaa4966b7d54b69L).build2();
+  /*package*/ static final SMethod<ValueAndTrace> evaluateValue_id6vw$0gDvi9b = new SMethodBuilder<>(ValueAndTrace.class).name("evaluateValue").modifiers(0, AccessPrivileges.PRIVATE).concept(CONCEPT).baseMethodId(7485140928240099915L).languageId(0xb723dad7b65da615L, 0xd441fba0f46b43cdL).build2();
+  /*package*/ static final SMethod<ValueAndTrace> evaluateMatcher_id6vw$0gDuos0 = new SMethodBuilder<>(ValueAndTrace.class).name("evaluateMatcher").modifiers(0, AccessPrivileges.PRIVATE).concept(CONCEPT).baseMethodId(7485140928239863552L).languageId(0xb723dad7b65da615L, 0xd441fba0f46b43cdL).build2();
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(isStructurallyValid_id5Pgo_AS57ir, executeTestInternal_id78hTg1$THJg, formatErrorMessage_id5Pgo_AS7m_e, asString_id6iqfHNBPkjP, evaluateValue_id6vw$0gDvi9b, evaluateMatcher_id6vw$0gDuos0);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(isStructurallyValid_id5Pgo_AS57ir, executeTestInternal_id78hTg1$THJg, formatErrorMessage_id5Pgo_AS7m_e, asString_id6iqfHNBPkjP, evaluateValue_id6vw$0gDvi9b, evaluateMatcher_id6vw$0gDuos0);
 
-  private static void ___init___(@NotNull SNode __thisNode__) {
-  }
 
   /*package*/ static boolean isStructurallyValid_id5Pgo_AS57ir(@NotNull SNode __thisNode__) {
     return SLinkOperations.getTarget(__thisNode__, LINKS.value$skhv) != null && SLinkOperations.getTarget(__thisNode__, LINKS.matcher$sjNt) != null && ListSequence.fromList(SNodeOperations.getNodeDescendants(__thisNode__, null, true, new SAbstractConcept[]{})).all((it) -> !(SNodeOperations.getConcept(it).isAbstract()));
@@ -156,10 +152,6 @@ public final class AssertThatTestItem__BehaviorDescriptor extends BaseBHDescript
   /*package*/ AssertThatTestItem__BehaviorDescriptor() {
   }
 
-  @Override
-  protected void initNode(@NotNull SNode node, @NotNull SConstructor constructor, @Nullable Object[] parameters) {
-    ___init___(node);
-  }
 
   @Override
   protected <T> T invokeSpecial0(@NotNull SNode node, @NotNull SMethod<T> method, @Nullable Object[] parameters) {

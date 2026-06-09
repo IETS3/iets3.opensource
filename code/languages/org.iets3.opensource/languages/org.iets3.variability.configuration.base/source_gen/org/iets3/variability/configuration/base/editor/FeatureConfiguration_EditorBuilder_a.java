@@ -90,7 +90,7 @@ import org.jetbrains.mps.openapi.language.SConcept;
     editorCell.setCellId("Collection_kzhlkm_a");
     editorCell.setBig(true);
     setCellContext(editorCell);
-    editorCell.addEditorCell(createTooltip_1());
+    editorCell.addEditorCell(createTooltip_0());
     if (nodeCondition_kzhlkm_a1a()) {
       editorCell.addEditorCell(createCollection_4());
     }
@@ -105,16 +105,13 @@ import org.jetbrains.mps.openapi.language.SConcept;
     }
     return true;
   }
-  private EditorCell createTooltip_0(final EditorContext editorContext, final SNode node) {
-    LazyTooltipCellEvaluator tooltip = new LazyTooltipCellEvaluator(editorContext, node, "org.iets3.variability.configuration.base.editor.GeneratedHints.tooltipHint_kzhlkm_a0", true);
+  private EditorCell createTooltip_0() {
+    LazyTooltipCellEvaluator tooltip = new LazyTooltipCellEvaluator(getEditorContext(), myNode, "org.iets3.variability.configuration.base.editor.GeneratedHints.tooltipHint_kzhlkm_a0", true);
     EditorCell visibleCell = createCollection_1();
 
-    TooltipWrapper editorCell = new TooltipWrapper(editorContext, node, visibleCell, tooltip, TooltipTimingProperties.DEFAULT);
+    TooltipWrapper editorCell = new TooltipWrapper(getEditorContext(), myNode, visibleCell, tooltip, TooltipTimingProperties.DEFAULT);
     editorCell.setCellId("Tooltip_kzhlkm_a0");
     return editorCell;
-  }
-  private EditorCell createTooltip_1() {
-    return createTooltip_0(getEditorContext(), myNode);
   }
   private EditorCell createCollection_1() {
     EditorCell_Collection editorCell = new EditorCell_Collection(getEditorContext(), myNode, new CellLayout_Indent());
@@ -178,7 +175,7 @@ import org.jetbrains.mps.openapi.language.SConcept;
     }
   }
   private EditorCell createEnumCheckbox_1() {
-    return createEnumCheckbox_0(getEditorContext(), myNode);
+    return createEnumCheckbox_0(getEditorContext(), getNode());
   }
   private EditorCell createAlternation_0() {
     boolean alternationCondition = true;

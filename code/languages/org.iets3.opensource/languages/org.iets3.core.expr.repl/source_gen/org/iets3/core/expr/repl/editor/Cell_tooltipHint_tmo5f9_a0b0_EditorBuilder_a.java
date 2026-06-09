@@ -56,28 +56,25 @@ import org.jetbrains.mps.openapi.language.SContainmentLink;
     try {
       getCellFactory().pushCellContext();
       getCellFactory().removeCellContextHints(new String[]{"org.iets3.core.expr.repl.editor.GeneratedHints.tooltipHint_tmo5f9_a0b0"});
-      editorCell.addEditorCell(createQueryList_1());
+      editorCell.addEditorCell(createQueryList_0());
       setInnerCellsContext(editorCell);
     } finally {
       getCellFactory().popCellContext();
     }
     return editorCell;
   }
-  private EditorCell createQueryList_0(final EditorContext editorContext, final SNode node) {
+  private EditorCell createQueryList_0() {
 
-    QueryListHandler handler = new QueryListHandler_jak9ey_a0(editorContext, node, true);
+    QueryListHandler handler = new QueryListHandler_jak9ey_a0(getEditorContext(), getNode(), true);
     EditorCell_QueryList editorCell = handler.createCells(new CellLayout_Horizontal());
     editorCell.setTargeConcept(CONCEPTS.CellConstraint$fJ);
-    editorCell.setOwner(SNodeOperations.getConcept(node));
+    editorCell.setOwner(SNodeOperations.getConcept(getNode()));
     editorCell.setCellId("QueryList_jak9ey_a0");
     Style style = new StyleImpl();
     style.set(StyleAttributes.READ_ONLY, true);
     editorCell.getStyle().putAll(style);
     return editorCell;
 
-  }
-  private EditorCell createQueryList_1() {
-    return createQueryList_0(getEditorContext(), myNode);
   }
   private static class QueryListHandler_jak9ey_a0 extends QueryListHandler {
     /**

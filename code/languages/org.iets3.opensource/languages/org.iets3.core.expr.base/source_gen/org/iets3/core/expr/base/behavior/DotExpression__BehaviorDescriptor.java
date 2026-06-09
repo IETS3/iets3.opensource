@@ -7,7 +7,6 @@ import org.jetbrains.mps.openapi.language.SAbstractConcept;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import org.iets3.core.expr.base.plugin.EffectDescriptor;
 import org.jetbrains.mps.openapi.model.SNode;
@@ -21,7 +20,6 @@ import jetbrains.mps.typechecking.TypecheckingFacade;
 import com.mbeddr.mpsutil.interpreter.behavior.IInterpreterWrapperType__BehaviorDescriptor;
 import java.util.ArrayList;
 import jetbrains.mps.internal.collections.runtime.ListSequence;
-import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 import org.jetbrains.mps.openapi.language.SContainmentLink;
@@ -31,23 +29,21 @@ import org.jetbrains.mps.openapi.language.SInterfaceConcept;
 public final class DotExpression__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getConcept(0xcfaa4966b7d54b69L, 0xb66a309a6e1a7290L, 0x7cef88020a0f4249L, "org.iets3.core.expr.base.structure.DotExpression");
 
-  public static final SMethod<Integer> priority_id4rZeNQ6Nh_5 = new SMethodBuilder<Integer>(new SJavaCompoundTypeImpl(Integer.TYPE)).name("priority").modifiers(9, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5115872837156804933L).languageId(0xb66a309a6e1a7290L, 0xcfaa4966b7d54b69L).build2();
-  public static final SMethod<String> renderReadable_id4Y0vh0cfqjE = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("renderReadable").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5728716233893586154L).languageId(0xb66a309a6e1a7290L, 0xcfaa4966b7d54b69L).build2();
-  public static final SMethod<String> getPresentation_idhEwIMiw = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("getPresentation").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(1213877396640L).languageId(0x9b92103b95ca8c0cL, 0xceab519525ea4f22L).build2();
-  public static final SMethod<EffectDescriptor> effectDescriptor_id6GySMNjjWfO = new SMethodBuilder<EffectDescriptor>(new SJavaCompoundTypeImpl(EffectDescriptor.class)).name("effectDescriptor").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(7719982492929737716L).languageId(0xb66a309a6e1a7290L, 0xcfaa4966b7d54b69L).build2();
-  public static final SMethod<SNode> innermostExpression_id1o3PqYGf0HI = new SMethodBuilder<SNode>(new SJavaCompoundTypeImpl((Class<SNode>) ((Class) Object.class))).name("innermostExpression").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(1586346444250155886L).languageId(0xb66a309a6e1a7290L, 0xcfaa4966b7d54b69L).build2();
-  public static final SMethod<Boolean> expectType_id5WNmJ7DokMG = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("expectType").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(6859926652464483500L).languageId(0xb66a309a6e1a7290L, 0xcfaa4966b7d54b69L).build2(SMethodBuilder.createJavaParameter((Class<SAbstractConcept>) ((Class) Object.class), ""), SMethodBuilder.createJavaParameter(Boolean.TYPE, ""));
-  public static final SMethod<SNode> extractContextBaseType_id5WNmJ7Ez2mW = new SMethodBuilder<SNode>(new SJavaCompoundTypeImpl((Class<SNode>) ((Class) Object.class))).name("extractContextBaseType").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(6859926652484068796L).languageId(0xb66a309a6e1a7290L, 0xcfaa4966b7d54b69L).build2();
-  public static final SMethod<List<SNode>> additionallyShownNodes_id5Beavy19lGt = new SMethodBuilder<List<SNode>>(new SJavaCompoundTypeImpl((Class<List<SNode>>) ((Class) Object.class))).name("additionallyShownNodes").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(6471155861873318685L).languageId(0xa6067ce0236c8023L, 0x47f075a6558e4640L).build2();
-  public static final SMethod<Boolean> isLValue_idaPhVmWYjn5 = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("isLValue").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(195141004745586117L).languageId(0xb66a309a6e1a7290L, 0xcfaa4966b7d54b69L).build2();
-  public static final SMethod<Boolean> isUsedAsLValue_idYMJl2BJIOO = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("isUsedAsLValue").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(1131174610532756788L).languageId(0xb66a309a6e1a7290L, 0xcfaa4966b7d54b69L).build2();
-  public static final SMethod<Boolean> shouldBeSubstituted_id14gxgpJfXC0 = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("shouldBeSubstituted").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(1229628960954898944L).languageId(0xb66a309a6e1a7290L, 0xcfaa4966b7d54b69L).build2();
-  public static final SMethod<SNode> getISSVariable_id5GL30CqMVFo = new SMethodBuilder<SNode>(new SJavaCompoundTypeImpl((Class<SNode>) ((Class) Object.class))).name("getISSVariable").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(6571046568849029848L).languageId(0xb66a309a6e1a7290L, 0xcfaa4966b7d54b69L).build2();
+  public static final SMethod<Integer> priority_id4rZeNQ6Nh_5 = new SMethodBuilder<>(Integer.TYPE).name("priority").modifiers(9, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5115872837156804933L).languageId(0xb66a309a6e1a7290L, 0xcfaa4966b7d54b69L).build2();
+  public static final SMethod<String> renderReadable_id4Y0vh0cfqjE = new SMethodBuilder<>(String.class).name("renderReadable").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5728716233893586154L).languageId(0xb66a309a6e1a7290L, 0xcfaa4966b7d54b69L).build2();
+  public static final SMethod<String> getPresentation_idhEwIMiw = new SMethodBuilder<>(String.class).name("getPresentation").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(1213877396640L).languageId(0x9b92103b95ca8c0cL, 0xceab519525ea4f22L).build2();
+  public static final SMethod<EffectDescriptor> effectDescriptor_id6GySMNjjWfO = new SMethodBuilder<>(EffectDescriptor.class).name("effectDescriptor").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(7719982492929737716L).languageId(0xb66a309a6e1a7290L, 0xcfaa4966b7d54b69L).build2();
+  public static final SMethod<SNode> innermostExpression_id1o3PqYGf0HI = new SMethodBuilder<>(SNode.class).name("innermostExpression").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(1586346444250155886L).languageId(0xb66a309a6e1a7290L, 0xcfaa4966b7d54b69L).build2();
+  public static final SMethod<Boolean> expectType_id5WNmJ7DokMG = new SMethodBuilder<>(Boolean.TYPE).name("expectType").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(6859926652464483500L).languageId(0xb66a309a6e1a7290L, 0xcfaa4966b7d54b69L).build2(SMethodBuilder.createJavaParameter(SAbstractConcept.class, "cc"), SMethodBuilder.createJavaParameter(Boolean.TYPE, "transparentWrappedTypes"));
+  public static final SMethod<SNode> extractContextBaseType_id5WNmJ7Ez2mW = new SMethodBuilder<>(SNode.class).name("extractContextBaseType").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(6859926652484068796L).languageId(0xb66a309a6e1a7290L, 0xcfaa4966b7d54b69L).build2();
+  public static final SMethod<List<SNode>> additionallyShownNodes_id5Beavy19lGt = new SMethodBuilder<>((Class<List<SNode>>) ((Class) Object.class)).name("additionallyShownNodes").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(6471155861873318685L).languageId(0xa6067ce0236c8023L, 0x47f075a6558e4640L).build2();
+  public static final SMethod<Boolean> isLValue_idaPhVmWYjn5 = new SMethodBuilder<>(Boolean.TYPE).name("isLValue").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(195141004745586117L).languageId(0xb66a309a6e1a7290L, 0xcfaa4966b7d54b69L).build2();
+  public static final SMethod<Boolean> isUsedAsLValue_idYMJl2BJIOO = new SMethodBuilder<>(Boolean.TYPE).name("isUsedAsLValue").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(1131174610532756788L).languageId(0xb66a309a6e1a7290L, 0xcfaa4966b7d54b69L).build2();
+  public static final SMethod<Boolean> shouldBeSubstituted_id14gxgpJfXC0 = new SMethodBuilder<>(Boolean.TYPE).name("shouldBeSubstituted").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(1229628960954898944L).languageId(0xb66a309a6e1a7290L, 0xcfaa4966b7d54b69L).build2();
+  public static final SMethod<SNode> getISSVariable_id5GL30CqMVFo = new SMethodBuilder<>(SNode.class).name("getISSVariable").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(6571046568849029848L).languageId(0xb66a309a6e1a7290L, 0xcfaa4966b7d54b69L).build2();
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(priority_id4rZeNQ6Nh_5, renderReadable_id4Y0vh0cfqjE, getPresentation_idhEwIMiw, effectDescriptor_id6GySMNjjWfO, innermostExpression_id1o3PqYGf0HI, expectType_id5WNmJ7DokMG, extractContextBaseType_id5WNmJ7Ez2mW, additionallyShownNodes_id5Beavy19lGt, isLValue_idaPhVmWYjn5, isUsedAsLValue_idYMJl2BJIOO, shouldBeSubstituted_id14gxgpJfXC0, getISSVariable_id5GL30CqMVFo);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(priority_id4rZeNQ6Nh_5, renderReadable_id4Y0vh0cfqjE, getPresentation_idhEwIMiw, effectDescriptor_id6GySMNjjWfO, innermostExpression_id1o3PqYGf0HI, expectType_id5WNmJ7DokMG, extractContextBaseType_id5WNmJ7Ez2mW, additionallyShownNodes_id5Beavy19lGt, isLValue_idaPhVmWYjn5, isUsedAsLValue_idYMJl2BJIOO, shouldBeSubstituted_id14gxgpJfXC0, getISSVariable_id5GL30CqMVFo);
 
-  private static void ___init___(@NotNull SNode __thisNode__) {
-  }
 
   /*package*/ static int priority_id4rZeNQ6Nh_5(@NotNull SAbstractConcept __thisConcept__) {
     return 30000;
@@ -122,10 +118,6 @@ public final class DotExpression__BehaviorDescriptor extends BaseBHDescriptor {
   /*package*/ DotExpression__BehaviorDescriptor() {
   }
 
-  @Override
-  protected void initNode(@NotNull SNode node, @NotNull SConstructor constructor, @Nullable Object[] parameters) {
-    ___init___(node);
-  }
 
   @Override
   protected <T> T invokeSpecial0(@NotNull SNode node, @NotNull SMethod<T> method, @Nullable Object[] parameters) {
