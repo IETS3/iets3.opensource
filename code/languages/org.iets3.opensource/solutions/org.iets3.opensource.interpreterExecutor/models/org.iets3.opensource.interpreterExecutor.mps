@@ -6,7 +6,7 @@
     <use id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections" version="2" />
     <use id="760a0a8c-eabb-4521-8bfd-65db761a9ba3" name="jetbrains.mps.baseLanguage.logging" version="0" />
     <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="19" />
-    <use id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc" version="2" />
+    <use id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc" version="3" />
   </languages>
   <imports>
     <import index="4o98" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.core.platform(MPS.Core/)" />
@@ -94,16 +94,10 @@
       <concept id="1146644602865" name="jetbrains.mps.baseLanguage.structure.PublicVisibility" flags="nn" index="3Tm1VV" />
     </language>
     <language id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc">
-      <concept id="5349172909345501395" name="jetbrains.mps.baseLanguage.javadoc.structure.BaseDocComment" flags="ng" index="P$AiS">
-        <child id="8465538089690331502" name="body" index="TZ5H$" />
-      </concept>
-      <concept id="8465538089690331500" name="jetbrains.mps.baseLanguage.javadoc.structure.CommentLine" flags="ng" index="TZ5HA">
-        <child id="8970989240999019149" name="part" index="1dT_Ay" />
-      </concept>
-      <concept id="8970989240999019143" name="jetbrains.mps.baseLanguage.javadoc.structure.TextCommentLinePart" flags="ng" index="1dT_AC">
-        <property id="8970989240999019144" name="text" index="1dT_AB" />
-      </concept>
       <concept id="2068944020170241612" name="jetbrains.mps.baseLanguage.javadoc.structure.ClassifierDocComment" flags="ng" index="3UR2Jj" />
+      <concept id="5085607816302529296" name="jetbrains.mps.baseLanguage.javadoc.structure.IHoldCommentLines" flags="ngI" index="1VezTd">
+        <child id="5085607816302529587" name="commentBody" index="1Vez_I" />
+      </concept>
     </language>
     <language id="760a0a8c-eabb-4521-8bfd-65db761a9ba3" name="jetbrains.mps.baseLanguage.logging">
       <concept id="2034914114981261497" name="jetbrains.mps.baseLanguage.logging.structure.LogLowLevelStatement" flags="ng" index="RRSsy">
@@ -123,6 +117,14 @@
       </concept>
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ngI" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
+      </concept>
+    </language>
+    <language id="c7fb639f-be78-4307-89b0-b5959c3fa8c8" name="jetbrains.mps.lang.text">
+      <concept id="155656958578482948" name="jetbrains.mps.lang.text.structure.Word" flags="nn" index="3oM_SD">
+        <property id="155656958578482949" name="value" index="3oM_SC" />
+      </concept>
+      <concept id="2535923850359271782" name="jetbrains.mps.lang.text.structure.Line" flags="nn" index="1PaTwC">
+        <child id="2535923850359271783" name="elements" index="1PaTwD" />
       </concept>
     </language>
     <language id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections">
@@ -289,19 +291,130 @@
     <node concept="2tJIrI" id="wLSoj1nZ_O" role="jymVt" />
     <node concept="3Tm1VV" id="4u2ErA3hWZC" role="1B3o_S" />
     <node concept="3UR2Jj" id="392I_bds4Vu" role="lGtFl">
-      <node concept="TZ5HA" id="392I_bds4Vv" role="TZ5H$">
-        <node concept="1dT_AC" id="392I_bds4Vw" role="1dT_Ay">
-          <property role="1dT_AB" value="This is an application entry point that can be used for interpreting tests." />
+      <node concept="1PaTwC" id="3MzwgoR0WxH" role="1Vez_I">
+        <node concept="3oM_SD" id="3MzwgoR0WxI" role="1PaTwD">
+          <property role="3oM_SC" value="This" />
+        </node>
+        <node concept="3oM_SD" id="3MzwgoR0WxJ" role="1PaTwD">
+          <property role="3oM_SC" value="is" />
+        </node>
+        <node concept="3oM_SD" id="3MzwgoR0WxK" role="1PaTwD">
+          <property role="3oM_SC" value="an" />
+        </node>
+        <node concept="3oM_SD" id="3MzwgoR0WxL" role="1PaTwD">
+          <property role="3oM_SC" value="application" />
+        </node>
+        <node concept="3oM_SD" id="3MzwgoR0WxM" role="1PaTwD">
+          <property role="3oM_SC" value="entry" />
+        </node>
+        <node concept="3oM_SD" id="3MzwgoR0WxN" role="1PaTwD">
+          <property role="3oM_SC" value="point" />
+        </node>
+        <node concept="3oM_SD" id="3MzwgoR0WxO" role="1PaTwD">
+          <property role="3oM_SC" value="that" />
+        </node>
+        <node concept="3oM_SD" id="3MzwgoR0WxP" role="1PaTwD">
+          <property role="3oM_SC" value="can" />
+        </node>
+        <node concept="3oM_SD" id="3MzwgoR0WxQ" role="1PaTwD">
+          <property role="3oM_SC" value="be" />
+        </node>
+        <node concept="3oM_SD" id="3MzwgoR0WxR" role="1PaTwD">
+          <property role="3oM_SC" value="used" />
+        </node>
+        <node concept="3oM_SD" id="3MzwgoR0WxS" role="1PaTwD">
+          <property role="3oM_SC" value="for" />
+        </node>
+        <node concept="3oM_SD" id="3MzwgoR0WxT" role="1PaTwD">
+          <property role="3oM_SC" value="interpreting" />
+        </node>
+        <node concept="3oM_SD" id="3MzwgoR0WxU" role="1PaTwD">
+          <property role="3oM_SC" value="tests." />
         </node>
       </node>
-      <node concept="TZ5HA" id="392I_bds5W1" role="TZ5H$">
-        <node concept="1dT_AC" id="392I_bds5W2" role="1dT_Ay">
-          <property role="1dT_AB" value="It is called directly by the mps-runner plugin used in a build script." />
+      <node concept="1PaTwC" id="3MzwgoR0WxV" role="1Vez_I">
+        <node concept="3oM_SD" id="3MzwgoR0WxW" role="1PaTwD">
+          <property role="3oM_SC" value="It" />
+        </node>
+        <node concept="3oM_SD" id="3MzwgoR0WxX" role="1PaTwD">
+          <property role="3oM_SC" value="is" />
+        </node>
+        <node concept="3oM_SD" id="3MzwgoR0WxY" role="1PaTwD">
+          <property role="3oM_SC" value="called" />
+        </node>
+        <node concept="3oM_SD" id="3MzwgoR0WxZ" role="1PaTwD">
+          <property role="3oM_SC" value="directly" />
+        </node>
+        <node concept="3oM_SD" id="3MzwgoR0Wy0" role="1PaTwD">
+          <property role="3oM_SC" value="by" />
+        </node>
+        <node concept="3oM_SD" id="3MzwgoR0Wy1" role="1PaTwD">
+          <property role="3oM_SC" value="the" />
+        </node>
+        <node concept="3oM_SD" id="3MzwgoR0Wy2" role="1PaTwD">
+          <property role="3oM_SC" value="mps-runner" />
+        </node>
+        <node concept="3oM_SD" id="3MzwgoR0Wy3" role="1PaTwD">
+          <property role="3oM_SC" value="plugin" />
+        </node>
+        <node concept="3oM_SD" id="3MzwgoR0Wy4" role="1PaTwD">
+          <property role="3oM_SC" value="used" />
+        </node>
+        <node concept="3oM_SD" id="3MzwgoR0Wy5" role="1PaTwD">
+          <property role="3oM_SC" value="in" />
+        </node>
+        <node concept="3oM_SD" id="3MzwgoR0Wy6" role="1PaTwD">
+          <property role="3oM_SC" value="a" />
+        </node>
+        <node concept="3oM_SD" id="3MzwgoR0Wy7" role="1PaTwD">
+          <property role="3oM_SC" value="build" />
+        </node>
+        <node concept="3oM_SD" id="3MzwgoR0Wy8" role="1PaTwD">
+          <property role="3oM_SC" value="script." />
         </node>
       </node>
-      <node concept="TZ5HA" id="392I_bdsaAX" role="TZ5H$">
-        <node concept="1dT_AC" id="392I_bdsaAY" role="1dT_Ay">
-          <property role="1dT_AB" value="In this special case, by the CustomRunnerAspect that is derived from that build aspect." />
+      <node concept="1PaTwC" id="3MzwgoR0Wy9" role="1Vez_I">
+        <node concept="3oM_SD" id="3MzwgoR0Wya" role="1PaTwD">
+          <property role="3oM_SC" value="In" />
+        </node>
+        <node concept="3oM_SD" id="3MzwgoR0Wyb" role="1PaTwD">
+          <property role="3oM_SC" value="this" />
+        </node>
+        <node concept="3oM_SD" id="3MzwgoR0Wyc" role="1PaTwD">
+          <property role="3oM_SC" value="special" />
+        </node>
+        <node concept="3oM_SD" id="3MzwgoR0Wyd" role="1PaTwD">
+          <property role="3oM_SC" value="case," />
+        </node>
+        <node concept="3oM_SD" id="3MzwgoR0Wye" role="1PaTwD">
+          <property role="3oM_SC" value="by" />
+        </node>
+        <node concept="3oM_SD" id="3MzwgoR0Wyf" role="1PaTwD">
+          <property role="3oM_SC" value="the" />
+        </node>
+        <node concept="3oM_SD" id="3MzwgoR0Wyg" role="1PaTwD">
+          <property role="3oM_SC" value="CustomRunnerAspect" />
+        </node>
+        <node concept="3oM_SD" id="3MzwgoR0Wyh" role="1PaTwD">
+          <property role="3oM_SC" value="that" />
+        </node>
+        <node concept="3oM_SD" id="3MzwgoR0Wyi" role="1PaTwD">
+          <property role="3oM_SC" value="is" />
+        </node>
+        <node concept="3oM_SD" id="3MzwgoR0Wyj" role="1PaTwD">
+          <property role="3oM_SC" value="derived" />
+        </node>
+        <node concept="3oM_SD" id="3MzwgoR0Wyk" role="1PaTwD">
+          <property role="3oM_SC" value="from" />
+        </node>
+        <node concept="3oM_SD" id="3MzwgoR0Wyl" role="1PaTwD">
+          <property role="3oM_SC" value="that" />
+        </node>
+        <node concept="3oM_SD" id="3MzwgoR0Wym" role="1PaTwD">
+          <property role="3oM_SC" value="build" />
+        </node>
+        <node concept="3oM_SD" id="3MzwgoR0Wyn" role="1PaTwD">
+          <property role="3oM_SC" value="aspect." />
         </node>
       </node>
     </node>
