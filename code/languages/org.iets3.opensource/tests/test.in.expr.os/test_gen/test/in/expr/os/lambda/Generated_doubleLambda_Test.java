@@ -230,7 +230,7 @@ public class Generated_doubleLambda_Test {
     }
   }).collect(Collectors.<Number>toList()));
   public static final Number sum_ = CollectionHelper.sumAsBigInteger(Generated_doubleLambda_Test.numbers_);
-  public static final Number sum2_ = CollectionHelper.sumAsBigDecimal(Generated_doubleLambda_Test.numbers2_);
+  public static final Number sum2_ = CollectionHelper.sumAsBigInteger(Generated_doubleLambda_Test.numbers2_);
   public static final PVector<Number> mappedItems_ = TreePVector.<Number>from(Generated_doubleLambda_Test.data_.stream().map(new Function<Order, Number>() {
     public Number apply(Order param) {
       return new Function<ParameterSetWrapper, Number>() {
@@ -241,7 +241,7 @@ public class Generated_doubleLambda_Test {
       }.apply(new ParameterSetWrapper(param));
     }
   }).collect(Collectors.<Number>toList()));
-  public static final Number mappedItemsSum_ = CollectionHelper.sumAsBigDecimal(TreePVector.<Number>from(Generated_doubleLambda_Test.data_.stream().map(new Function<Order, Number>() {
+  public static final Number mappedItemsSum_ = CollectionHelper.sumAsBigInteger(TreePVector.<Number>from(Generated_doubleLambda_Test.data_.stream().map(new Function<Order, Number>() {
     public Number apply(Order param) {
       return new Function<ParameterSetWrapper, Number>() {
         public Number apply(ParameterSetWrapper param) {
