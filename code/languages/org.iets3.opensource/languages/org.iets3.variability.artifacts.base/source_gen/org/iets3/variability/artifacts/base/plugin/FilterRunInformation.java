@@ -10,18 +10,20 @@ import java.util.List;
 import jetbrains.mps.internal.collections.runtime.ListSequence;
 import java.util.ArrayList;
 import com.google.common.collect.Lists;
+import com.google.common.collect.Multimap;
+import com.google.common.collect.MultimapBuilder;
 import java.util.Collections;
 import jetbrains.mps.internal.collections.runtime.SetSequence;
 import jetbrains.mps.internal.collections.runtime.Sequence;
 import java.util.Optional;
 import java.util.Map;
+import com.google.common.collect.ImmutableMap;
+import jetbrains.mps.internal.collections.runtime.CollectionSequence;
 import org.iets3.variability.artifacts.base.behavior.SkeletonNode;
 import com.google.common.collect.Maps;
-import com.google.common.collect.Multimap;
 import com.google.common.collect.ArrayListMultimap;
 import jetbrains.mps.internal.collections.runtime.MapSequence;
 import java.util.Collection;
-import jetbrains.mps.internal.collections.runtime.CollectionSequence;
 import java.util.HashSet;
 
 public class FilterRunInformation {
@@ -51,6 +53,7 @@ public class FilterRunInformation {
 
   public Set<SNode> componentStaticReferenced = Sets.newHashSet();
 
+  private Multimap<SNode, SNode> originalComponent2Instances = MultimapBuilder.SetMultimapBuilder.hashKeys().linkedHashSetValues().<SNode,SNode>build();
 
   public Set<SNode> detachments() {
     return Collections.unmodifiableSet(this.detachments);
@@ -69,7 +72,15 @@ public class FilterRunInformation {
   }
 
   public Map<SNode, SNode> instanceToOriginal() {
-    return this.ie.instanceToOrig();
+    ImmutableMap.Builder<SNode, SNode> builder = new ImmutableMap.Builder<>();
+    for (Map.Entry<SNode, SNode> e : CollectionSequence.fromCollection(this.originalComponent2Instances.entries())) {
+      builder.put(e.getValue(), e.getKey());
+    }
+    return builder.build();
+  }
+
+  public Multimap<SNode, SNode> originalToInstances() {
+    return this.originalComponent2Instances;
   }
 
   /**
@@ -83,6 +94,10 @@ public class FilterRunInformation {
 
   public void remove(SkeletonNode skn) {
     this.ie.remove(skn);
+  }
+
+  public void addOrig2Instance(SNode orig, SNode instance) {
+    this.originalComponent2Instances.put(orig, instance);
   }
 
   public void add(SkeletonNode skn, Map<SNode, SNode> mapping) {
@@ -106,16 +121,9 @@ public class FilterRunInformation {
      */
     private Multimap<SkeletonNode, SNode> skeletonNodeToOrig = ArrayListMultimap.create();
 
-    /**
-     * Maps copies of AST nodes (created during instantiation) to their original node.
-     */
-    private Map<SNode, SNode> instanceToOrig = Maps.newHashMap();
-
     private void add(SkeletonNode skn, Map<SNode, SNode> origToInstance) {
       MapSequence.fromMap(this.origToInstanceEnvironment).putAll(origToInstance);
       this.skeletonNodeToOrig.putAll(skn, MapSequence.fromMap(origToInstance).keySet());
-
-      SetSequence.fromSet(MapSequence.fromMap(origToInstance).mappingsSet()).visitAll((it) -> MapSequence.fromMap(instanceToOrig).put(it.value(), it.key()));
     }
 
     /**
@@ -135,9 +143,6 @@ public class FilterRunInformation {
       return Optional.ofNullable(MapSequence.fromMap(this.origToInstanceEnvironment).get(orig));
     }
 
-    private Map<SNode, SNode> instanceToOrig() {
-      return Collections.unmodifiableMap(this.instanceToOrig);
-    }
   }
 
 
