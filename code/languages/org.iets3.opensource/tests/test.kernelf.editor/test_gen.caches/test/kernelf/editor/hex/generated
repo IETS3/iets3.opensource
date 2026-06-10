@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<product version="3" modelHash="-7eemyuqgazz9cqys7hj8w12flcei1xf">
+  <files names="CollectionSizeMinDecimal_Test.java:CollectionSizeMinHex_Test.java:HexEnablingMapperForTesting.java:LiteralTyping0x1234_Test.java:LiteralTyping0xWhenNoHexSupport_Test.java:LiteralTyping0x_Test.java:NumberRangeMinDecimal_Test.java:NumberRangeMinHex_Test.java" />
+</product>
+
