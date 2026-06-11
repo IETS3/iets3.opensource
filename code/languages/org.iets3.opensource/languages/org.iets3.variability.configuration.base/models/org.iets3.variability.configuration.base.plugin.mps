@@ -9781,12 +9781,17 @@
                                           </node>
                                         </node>
                                       </node>
-                                      <node concept="3clFbF" id="2BePqP6gdlr" role="3cqZAp">
-                                        <node concept="2YIFZM" id="1Vm2qfKKDKa" role="3clFbG">
-                                          <ref role="37wK5l" to="lte6:49LV9yvwKqG" resolve="setHashOfSolverRelevantData" />
-                                          <ref role="1Pybhc" to="lte6:49LV9yvww2v" resolve="FeatureModelConfHashUtil" />
-                                          <node concept="37vLTw" id="2BePqP6gj9V" role="37wK5m">
-                                            <ref role="3cqZAo" node="2BePqP5KhiC" resolve="fmc" />
+                                      <node concept="3clFbF" id="6u_oBd1J0Qh" role="3cqZAp">
+                                        <node concept="2OqwBi" id="6u_oBd1Jnsb" role="3clFbG">
+                                          <node concept="2YIFZM" id="6u_oBd1J8oe" role="2Oq$k0">
+                                            <ref role="37wK5l" to="lte6:6u_oBd1HBzc" resolve="of" />
+                                            <ref role="1Pybhc" to="lte6:49LV9yvww2v" resolve="SolverRelevantDataHashing" />
+                                            <node concept="37vLTw" id="6u_oBd1JfyM" role="37wK5m">
+                                              <ref role="3cqZAo" node="2BePqP5KhiC" resolve="fmc" />
+                                            </node>
+                                          </node>
+                                          <node concept="liA8E" id="6u_oBd1Jwlx" role="2OqNvi">
+                                            <ref role="37wK5l" to="lte6:6u_oBd1G27W" resolve="setHash" />
                                           </node>
                                         </node>
                                       </node>
