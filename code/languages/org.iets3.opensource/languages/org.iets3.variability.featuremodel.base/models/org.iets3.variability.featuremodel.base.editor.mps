@@ -7057,6 +7057,7 @@
             </node>
           </node>
         </node>
+        <node concept="3F0ifn" id="$eFy4THtE3" role="3EZMnx" />
         <node concept="3F0A7n" id="1lex4TVpCxn" role="3EZMnx">
           <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
         </node>
@@ -7124,7 +7125,7 @@
                         <ref role="3cqZAo" node="1lex4TVpCy4" resolve="node" />
                       </node>
                       <node concept="3TrEf2" id="$eFy4RXYqC" role="2OqNvi">
-                        <ref role="3Tt5mk" to="s6b7:3tsFshP6ikc" />
+                        <ref role="3Tt5mk" to="s6b7:3tsFshP6ikc" resolve="cardinality" />
                       </node>
                     </node>
                     <node concept="3w_OXm" id="$eFy4RY0Kj" role="2OqNvi" />
