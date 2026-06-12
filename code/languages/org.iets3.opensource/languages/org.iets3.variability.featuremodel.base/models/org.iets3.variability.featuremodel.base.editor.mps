@@ -7146,7 +7146,7 @@
         </node>
         <node concept="_tjkj" id="$eFy4QwgRu" role="3EZMnx">
           <node concept="3F1sOY" id="$eFy4QwgRw" role="_tjki">
-            <ref role="1NtTu8" to="s6b7:3tsFshP6ikc" />
+            <ref role="1NtTu8" to="s6b7:3tsFshP6ikc" resolve="cardinality" />
           </node>
           <node concept="ZYGn8" id="$eFy4QwgRq" role="ZWbT9">
             <node concept="3clFbS" id="$eFy4QwgRs" role="2VODD2">
