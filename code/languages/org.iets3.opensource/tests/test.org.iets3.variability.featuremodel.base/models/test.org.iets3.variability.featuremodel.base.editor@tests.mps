@@ -38,6 +38,9 @@
         <property id="1932269937152561478" name="useLabelSelection" index="OXtK3" />
         <property id="1229432188737" name="isLastPosition" index="ZRATv" />
       </concept>
+      <concept id="1227182079811" name="jetbrains.mps.lang.test.structure.TypeKeyStatement" flags="nn" index="2TK7Tu">
+        <property id="1227184461946" name="keys" index="2TTd_B" />
+      </concept>
       <concept id="4239542196496927193" name="jetbrains.mps.lang.test.structure.MPSActionReference" flags="ng" index="1iFQzN">
         <reference id="4239542196496929559" name="action" index="1iFR8X" />
       </concept>
@@ -1634,6 +1637,81 @@
           <property role="pLAjf" value="VK_ENTER" />
           <property role="pLAjc" value="ctrl+shift" />
         </node>
+      </node>
+    </node>
+  </node>
+  <node concept="LiM7Y" id="$eFy4RvrMh">
+    <property role="TrG5h" value="TypeSemicolonFeature" />
+    <node concept="1qefOq" id="$eFy4RvrMi" role="25YQCW">
+      <node concept="12iwZl" id="$eFy4RvrMk" role="1qenE9">
+        <property role="bVyBI" value="-151275731" />
+        <node concept="12iwV3" id="$eFy4RvrMl" role="12iwV8">
+          <property role="TrG5h" value="M" />
+          <node concept="12iwV3" id="$eFy4RvrMm" role="12iwVe">
+            <property role="TrG5h" value="d" />
+            <node concept="LIFWc" id="$eFy4RvMP3" role="lGtFl">
+              <property role="ZRATv" value="true" />
+              <property role="OXtK3" value="true" />
+              <property role="p6zMq" value="1" />
+              <property role="p6zMs" value="1" />
+              <property role="LIFWd" value="property_name" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1qefOq" id="$eFy4RvrMp" role="25YQFr">
+      <node concept="12iwZl" id="$eFy4RvrMn" role="1qenE9">
+        <property role="bVyBI" value="-597388075" />
+        <node concept="12iwV3" id="$eFy4RvrMo" role="12iwV8">
+          <property role="TrG5h" value="M" />
+          <node concept="12iSMG" id="$eFy4RvrMs" role="12iwVe">
+            <property role="TrG5h" value="d" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="3clFbS" id="$eFy4RvrNX" role="LjaKd">
+      <node concept="2TK7Tu" id="$eFy4RvrNW" role="3cqZAp">
+        <property role="2TTd_B" value=":" />
+      </node>
+    </node>
+  </node>
+  <node concept="LiM7Y" id="$eFy4RIB1K">
+    <property role="TrG5h" value="TypeBracketFeature" />
+    <node concept="1qefOq" id="$eFy4RIB1L" role="25YQCW">
+      <node concept="12iwZl" id="$eFy4RIB1M" role="1qenE9">
+        <property role="bVyBI" value="-151275731" />
+        <node concept="12iwV3" id="$eFy4RIB1N" role="12iwV8">
+          <property role="TrG5h" value="M" />
+          <node concept="12iwV3" id="$eFy4RIB1O" role="12iwVe">
+            <property role="TrG5h" value="d" />
+            <node concept="LIFWc" id="$eFy4RIB1P" role="lGtFl">
+              <property role="ZRATv" value="true" />
+              <property role="OXtK3" value="true" />
+              <property role="p6zMq" value="1" />
+              <property role="p6zMs" value="1" />
+              <property role="LIFWd" value="property_name" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1qefOq" id="$eFy4RIB1Q" role="25YQFr">
+      <node concept="12iwZl" id="$eFy4RIB1R" role="1qenE9">
+        <property role="bVyBI" value="345593971" />
+        <node concept="12iwV3" id="$eFy4RIB1S" role="12iwV8">
+          <property role="TrG5h" value="M" />
+          <node concept="12iwV3" id="$eFy4RIB1W" role="12iwVe">
+            <property role="TrG5h" value="d" />
+            <node concept="12h7s0" id="$eFy4RIB1Y" role="12hoz8" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="3clFbS" id="$eFy4RIB1U" role="LjaKd">
+      <node concept="2TK7Tu" id="$eFy4RIB1V" role="3cqZAp">
+        <property role="2TTd_B" value="[" />
       </node>
     </node>
   </node>
