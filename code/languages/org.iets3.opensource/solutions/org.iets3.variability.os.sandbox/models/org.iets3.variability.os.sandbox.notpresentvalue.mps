@@ -30,6 +30,7 @@
       </concept>
     </language>
     <language id="9b66c5c9-38bf-4315-a96f-9f4e212c69cb" name="org.iets3.variability.base">
+      <concept id="3989254429232912648" name="org.iets3.variability.base.structure.EmptyVariabilityContent" flags="ng" index="12i7jc" />
       <concept id="3989254429232883574" name="org.iets3.variability.base.structure.VariabilityModelChunk" flags="ng" index="12icEM">
         <child id="3989254429232890937" name="contents" index="12i2BX" />
       </concept>
@@ -130,6 +131,21 @@
           <node concept="21IWn0" id="3TeKUdPfWqn" role="21GevL">
             <property role="TrG5h" value="d" />
             <node concept="30bXR$" id="3TeKUdPfWql" role="21GYI0" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="12i7jc" id="5miEvCz_XOR" role="12i2BX" />
+    <node concept="12i7jc" id="5miEvCz_XOS" role="12i2BX" />
+    <node concept="12i7jc" id="5miEvCz_XOT" role="12i2BX" />
+    <node concept="12iwZl" id="5miEvCz_XSd" role="12i2BX">
+      <property role="bVyBI" value="181071613" />
+      <node concept="12iwV3" id="5miEvCz_XSe" role="12iwV8">
+        <property role="TrG5h" value="M" />
+        <node concept="12iwV3" id="$eFy4P3JKT" role="12iwVe">
+          <property role="TrG5h" value="f" />
+          <node concept="12iwV3" id="$eFy4RvrsL" role="12iwVe">
+            <property role="TrG5h" value="g" />
           </node>
         </node>
       </node>
