@@ -1004,8 +1004,8 @@
       <node id="7411708798922797109" at="311,151,312,281" concept="4" />
       <node id="3476740975209551222" at="314,104,315,125" concept="11" />
       <node id="3476740975209940837" at="315,125,316,294" concept="10" />
-      <node id="4787868019136083420" at="318,101,319,82" concept="10" />
-      <node id="4787868019135932412" at="321,94,322,75" concept="10" />
+      <node id="7468483804227285886" at="318,101,319,68" concept="10" />
+      <node id="7468483804227322489" at="321,94,322,64" concept="10" />
       <node id="9019173585527372008" at="324,110,325,493" concept="10" />
       <node id="5114138133598173212" at="328,5,329,76" concept="9" />
       <node id="5114138133598185168" at="330,94,331,113" concept="9" />
@@ -1249,8 +1249,8 @@
       <scope id="6969178017465177946" at="293,79,294,198" />
       <scope id="1440538066257752081" at="299,131,300,653" />
       <scope id="3734590111327185123" at="302,84,303,468" />
-      <scope id="3331197186577939677" at="318,101,319,82" />
-      <scope id="3331197186578539732" at="321,94,322,75" />
+      <scope id="3331197186577939677" at="318,101,319,68" />
+      <scope id="3331197186578539732" at="321,94,322,64" />
       <scope id="5473634649713842709" at="324,110,325,493" />
       <scope id="5196090269268363628" at="348,29,349,79" />
       <scope id="9159423170671310098" at="354,29,355,22" />
@@ -3541,51 +3541,24 @@
     </file>
   </root>
   <root nodeRef="r:dedd19c9-9ff3-4f30-aa73-ce61203b2296(org.iets3.variability.configuration.base.behavior)/4787868019126829215">
-    <file name="FeatureModelConfHashUtil.java">
-      <node id="4787868019129814730" at="20,0,21,0" concept="13" trace="hashId" />
-      <node id="4787868019126896305" at="22,63,23,16" concept="9" />
-      <node id="4787868019126896308" at="23,16,24,73" concept="4" />
-      <node id="4787868019126896312" at="24,73,25,36" concept="4" />
-      <node id="4787868019126896319" at="25,36,26,16" concept="10" />
-      <node id="4787868019126899537" at="29,64,30,177" concept="9" />
-      <node id="4787868019126899546" at="30,177,31,183" concept="9" />
-      <node id="4787868019126899565" at="31,183,32,403" concept="9" />
-      <node id="4787868019126899601" at="32,403,33,0" concept="12" />
-      <node id="4787868019126899602" at="33,0,34,127" concept="10" />
-      <node id="4787868019135964520" at="37,57,38,44" concept="9" />
-      <node id="4787868019135964530" at="39,23,40,71" concept="4" />
-      <node id="4787868019135964538" at="41,5,42,22" concept="10" />
-      <node id="4787868019126829215" at="46,0,47,0" concept="13" trace="selectionState$zbc1" />
-      <node id="4787868019126829215" at="50,0,51,0" concept="13" trace="attribute$J5jI" />
-      <node id="4787868019126829215" at="51,0,52,0" concept="13" trace="value$kgDc" />
-      <node id="4787868019135964528" at="38,44,41,5" concept="7" />
-      <node id="4787868019126896300" at="22,0,28,0" concept="14" trace="setHashOfSolverRelevantData#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljava/lang/Object;" />
-      <node id="4787868019126899532" at="29,0,36,0" concept="14" trace="computeHashOfSolverRelevantData#(Lorg/jetbrains/mps/openapi/model/SNode;)I" />
-      <node id="4787868019135964515" at="37,0,44,0" concept="14" trace="hashOfSolverRelevantData#(Lorg/jetbrains/mps/openapi/model/SNode;)I" />
-      <scope id="4787868019135964529" at="39,23,40,71" />
-      <scope id="4787868019126896304" at="22,63,26,16">
-        <var name="hash" id="4787868019126896306" />
+    <file name="SolverRelevantDataHashing.java">
+      <node id="7468483804227080154" at="9,60,10,49" concept="10" />
+      <node id="7468483804226866230" at="13,51,14,46" concept="15" />
+      <node id="7468483804233042675" at="18,28,19,67" concept="10" />
+      <node id="7468483804227074252" at="9,0,12,0" concept="14" trace="of#(Lorg/jetbrains/mps/openapi/model/SNode;)Lorg/iets3/variability/configuration/base/behavior/SolverRelevantDataHashing;" />
+      <node id="7468483804226846883" at="13,0,16,0" concept="2" trace="SolverRelevantDataHashing#(Lorg/jetbrains/mps/openapi/model/SNode;)V" />
+      <node id="7468483804226889731" at="17,0,21,0" concept="8" trace="computeHash#()I" />
+      <scope id="7468483804227074255" at="9,60,10,49" />
+      <scope id="7468483804226846887" at="13,51,14,46" />
+      <scope id="7468483804226889735" at="18,28,19,67" />
+      <scope id="7468483804227074252" at="9,0,12,0">
+        <var name="config" id="7468483804227077891" />
       </scope>
-      <scope id="4787868019126899536" at="29,64,34,127">
-        <var name="attributeAssignmentPaired" id="4787868019126899566" />
-        <var name="selStates" id="4787868019126899547" />
-        <var name="subfeatureConfigurations" id="4787868019126899538" />
+      <scope id="7468483804226846883" at="13,0,16,0">
+        <var name="config" id="7468483804226855656" />
       </scope>
-      <scope id="4787868019135964519" at="37,57,42,22">
-        <var name="hash" id="4787868019135964521" />
-      </scope>
-      <scope id="4787868019126896300" at="22,0,28,0">
-        <var name="fmc" id="4787868019126896302" />
-      </scope>
-      <scope id="4787868019126899532" at="29,0,36,0">
-        <var name="fmc" id="4787868019126899534" />
-      </scope>
-      <scope id="4787868019135964515" at="37,0,44,0">
-        <var name="fmc" id="4787868019135964517" />
-      </scope>
-      <unit id="4787868019126829215" at="45,0,48,0" name="org.iets3.variability.configuration.base.behavior.FeatureModelConfHashUtil$PROPS" />
-      <unit id="4787868019126829215" at="49,0,53,0" name="org.iets3.variability.configuration.base.behavior.FeatureModelConfHashUtil$LINKS" />
-      <unit id="4787868019126829215" at="18,0,54,0" name="org.iets3.variability.configuration.base.behavior.FeatureModelConfHashUtil" />
+      <scope id="7468483804226889731" at="17,0,21,0" />
+      <unit id="4787868019126829215" at="7,0,22,0" name="org.iets3.variability.configuration.base.behavior.SolverRelevantDataHashing" />
     </file>
   </root>
   <root nodeRef="r:dedd19c9-9ff3-4f30-aa73-ce61203b2296(org.iets3.variability.configuration.base.behavior)/5153642642040015858">
@@ -4551,6 +4524,145 @@
       <unit id="6791872587324986477" at="127,0,131,0" name="org.iets3.variability.configuration.base.behavior.Traversals$LINKS" />
       <unit id="6791872587324986477" at="132,0,137,0" name="org.iets3.variability.configuration.base.behavior.Traversals$CONCEPTS" />
       <unit id="6791872587324986477" at="23,0,138,0" name="org.iets3.variability.configuration.base.behavior.Traversals" />
+    </file>
+  </root>
+  <root nodeRef="r:dedd19c9-9ff3-4f30-aa73-ce61203b2296(org.iets3.variability.configuration.base.behavior)/7468483804226489398">
+    <file name="AbstractConfigHashing.java">
+      <node id="7468483804226797375" at="29,0,30,0" concept="5" trace="tag" />
+      <node id="7468483804226669446" at="30,0,31,0" concept="5" trace="config" />
+      <node id="7468483804226801860" at="32,61,33,19" concept="4" />
+      <node id="7468483804226686109" at="33,19,34,25" concept="4" />
+      <node id="7468483804226710957" at="37,0,38,0" concept="8" trace="computeHash#()I" />
+      <node id="7468483804226715525" at="39,24,40,29" concept="9" />
+      <node id="7468483804226724394" at="40,29,41,36" concept="4" />
+      <node id="7468483804226886507" at="41,36,42,16" concept="10" />
+      <node id="7468483804226985182" at="45,24,46,47" concept="9" />
+      <node id="7468483804227024286" at="47,26,48,27" concept="10" />
+      <node id="7468483804227046150" at="49,12,50,23" concept="10" />
+      <node id="7468483804232968983" at="54,61,55,180" concept="9" />
+      <node id="7468483804232968992" at="55,180,56,183" concept="9" />
+      <node id="7468483804232969013" at="56,183,57,403" concept="9" />
+      <node id="7468483804232969049" at="57,403,58,0" concept="12" />
+      <node id="7468483804232969050" at="58,0,59,127" concept="10" />
+      <node id="7468483804226489398" at="63,0,64,0" concept="13" trace="selectionState$zbc1" />
+      <node id="7468483804226489398" at="67,0,68,0" concept="13" trace="attribute$J5jI" />
+      <node id="7468483804226489398" at="68,0,69,0" concept="13" trace="value$kgDc" />
+      <node id="7468483804227042353" at="49,10,51,5" concept="1" />
+      <node id="7468483804226675550" at="32,0,36,0" concept="2" trace="AbstractConfigHashing#(Ljava/lang/String;Lorg/jetbrains/mps/openapi/model/SNode;)V" />
+      <node id="7468483804226658812" at="39,0,44,0" concept="8" trace="setHash#()I" />
+      <node id="7468483804227009384" at="46,47,51,5" concept="7" />
+      <node id="7468483804233008911" at="54,0,61,0" concept="14" trace="computeHashForLocalConfig#(Lorg/jetbrains/mps/openapi/model/SNode;)I" />
+      <node id="7468483804226978926" at="45,0,53,0" concept="8" trace="getHash#()I" />
+      <scope id="7468483804226710957" at="37,0,38,0" />
+      <scope id="7468483804227009386" at="47,26,48,27" />
+      <scope id="7468483804227042354" at="49,12,50,23" />
+      <scope id="7468483804226675554" at="32,61,34,25" />
+      <scope id="7468483804226658815" at="39,24,42,16">
+        <var name="hash" id="7468483804226715528" />
+      </scope>
+      <scope id="7468483804226675550" at="32,0,36,0">
+        <var name="config" id="7468483804226677843" />
+        <var name="tag" id="7468483804226821766" />
+      </scope>
+      <scope id="7468483804226658812" at="39,0,44,0" />
+      <scope id="7468483804232968982" at="54,61,59,127">
+        <var name="attributeAssignmentPaired" id="7468483804232969014" />
+        <var name="selStates" id="7468483804232968993" />
+        <var name="subfeatureConfigurations" id="7468483804232968984" />
+      </scope>
+      <scope id="7468483804226978929" at="45,24,51,5">
+        <var name="hashObj" id="7468483804226985183" />
+      </scope>
+      <scope id="7468483804233008911" at="54,0,61,0">
+        <var name="config" id="7468483804233012844" />
+      </scope>
+      <scope id="7468483804226978926" at="45,0,53,0" />
+      <unit id="7468483804226489398" at="62,0,65,0" name="org.iets3.variability.configuration.base.behavior.AbstractConfigHashing$PROPS" />
+      <unit id="7468483804226489398" at="66,0,70,0" name="org.iets3.variability.configuration.base.behavior.AbstractConfigHashing$LINKS" />
+      <unit id="7468483804226489398" at="27,0,71,0" name="org.iets3.variability.configuration.base.behavior.AbstractConfigHashing" />
+    </file>
+  </root>
+  <root nodeRef="r:dedd19c9-9ff3-4f30-aa73-ce61203b2296(org.iets3.variability.configuration.base.behavior)/7468483804229168468">
+    <file name="AllDetailsHashing.java">
+      <node id="7468483804229168474" at="11,52,12,41" concept="10" />
+      <node id="7468483804229168485" at="15,43,16,38" concept="15" />
+      <node id="7468483804230815729" at="20,28,21,81" concept="9" />
+      <node id="4132032746425560602" at="21,81,22,40" concept="4" />
+      <node id="7468483804233243231" at="22,40,23,0" concept="12" />
+      <node id="7468483804233205102" at="23,0,24,155" concept="9" />
+      <node id="7468483804233178382" at="24,155,25,32" concept="10" />
+      <node id="7468483804229168470" at="11,0,14,0" concept="14" trace="of#(Lorg/jetbrains/mps/openapi/model/SNode;)Lorg/iets3/variability/configuration/base/behavior/AllDetailsHashing;" />
+      <node id="7468483804229168481" at="15,0,18,0" concept="2" trace="AllDetailsHashing#(Lorg/jetbrains/mps/openapi/model/SNode;)V" />
+      <node id="7468483804229168491" at="19,0,27,0" concept="8" trace="computeHash#()I" />
+      <scope id="7468483804229168473" at="11,52,12,41" />
+      <scope id="7468483804229168484" at="15,43,16,38" />
+      <scope id="7468483804229168470" at="11,0,14,0">
+        <var name="config" id="7468483804229168471" />
+      </scope>
+      <scope id="7468483804229168481" at="15,0,18,0">
+        <var name="config" id="7468483804229168488" />
+      </scope>
+      <scope id="7468483804229168494" at="20,28,25,32">
+        <var name="hashCodes" id="7468483804233205103" />
+        <var name="traversalFMC" id="7468483804230815730" />
+      </scope>
+      <scope id="7468483804229168491" at="19,0,27,0" />
+      <unit id="7468483804229168468" at="9,0,28,0" name="org.iets3.variability.configuration.base.behavior.AllDetailsHashing" />
+    </file>
+  </root>
+  <root nodeRef="r:dedd19c9-9ff3-4f30-aa73-ce61203b2296(org.iets3.variability.configuration.base.behavior)/7468483804230480873">
+    <file name="AllReachableConfigTraversal.java">
+      <node id="7468483804233667584" at="21,0,22,0" concept="5" trace="forEach" />
+      <node id="7468483804233781324" at="23,40,24,15" concept="17" />
+      <node id="7468483804233714378" at="27,89,28,27" concept="4" />
+      <node id="7468483804233812143" at="32,53,33,37" concept="11" />
+      <node id="7468483804233864067" at="34,26,35,26" concept="4" />
+      <node id="7468483804233807653" at="36,5,37,0" concept="12" />
+      <node id="6475210451087898369" at="37,0,38,88" concept="11" />
+      <node id="4132032746431758188" at="38,88,39,96" concept="9" />
+      <node id="5273806638176172042" at="39,96,40,207" concept="9" />
+      <node id="5273806638176221513" at="40,207,41,236" concept="9" />
+      <node id="5273806638176327728" at="41,236,42,189" concept="10" />
+      <node id="7468483804230781587" at="45,38,46,24" concept="10" />
+      <node id="7468483804230737203" at="49,36,50,77" concept="10" />
+      <node id="7468483804230737203" at="51,5,52,16" concept="10" />
+      <node id="7468483804230480873" at="56,0,57,0" concept="13" trace="extendedFMC$tFbw" />
+      <node id="7468483804230480873" at="57,0,58,0" concept="13" trace="config$SCsb" />
+      <node id="7468483804230480873" at="58,0,59,0" concept="13" trace="config$VWuN" />
+      <node id="7468483804230480873" at="59,0,60,0" concept="13" trace="config$ID3f" />
+      <node id="7468483804230480873" at="63,0,64,0" concept="13" trace="FeatureModelConfigurationRef$kq" />
+      <node id="7468483804233767818" at="23,0,26,0" concept="2" trace="AllReachableConfigTraversal#()V" />
+      <node id="7468483804233586604" at="27,0,30,0" concept="2" trace="AllReachableConfigTraversal#(Ljetbrains/mps/baseLanguage/closures/runtime/_FunctionTypes/_void_P1_E0;)V" />
+      <node id="7468483804233820919" at="33,37,36,5" concept="7" />
+      <node id="7468483804230776421" at="45,0,48,0" concept="8" trace="getResult#()Ljava/lang/Iterable;" />
+      <node id="7468483804230737203" at="48,68,51,5" concept="7" />
+      <node id="7468483804230737203" at="48,0,54,0" concept="14" trace="check_crjbmg_a0e0h#(Lorg/jetbrains/mps/openapi/model/SNode;)Lorg/jetbrains/mps/openapi/model/SNode;" />
+      <node id="7468483804230484597" at="31,0,44,0" concept="8" trace="successorsOf#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljava/lang/Iterable;" />
+      <scope id="7468483804233767822" at="23,40,24,15" />
+      <scope id="7468483804233586608" at="27,89,28,27" />
+      <scope id="7468483804233820921" at="34,26,35,26" />
+      <scope id="7468483804230776424" at="45,38,46,24" />
+      <scope id="7468483804230737203" at="49,36,50,77" />
+      <scope id="7468483804233767818" at="23,0,26,0" />
+      <scope id="7468483804233586604" at="27,0,30,0">
+        <var name="forEach" id="7468483804233596316" />
+      </scope>
+      <scope id="7468483804230776421" at="45,0,48,0" />
+      <scope id="7468483804230737203" at="48,68,52,16" />
+      <scope id="7468483804230737203" at="48,0,54,0">
+        <var name="checkedDotOperand" id="7468483804230737203" />
+      </scope>
+      <scope id="7468483804230484616" at="32,53,42,189">
+        <var name="extended" id="4132032746431758189" />
+        <var name="referenced" id="5273806638176221514" />
+        <var name="used" id="5273806638176172043" />
+      </scope>
+      <scope id="7468483804230484597" at="31,0,44,0">
+        <var name="cfg" id="7468483804230484602" />
+      </scope>
+      <unit id="7468483804230480873" at="62,0,65,0" name="org.iets3.variability.configuration.base.behavior.AllReachableConfigTraversal$CONCEPTS" />
+      <unit id="7468483804230480873" at="55,0,61,0" name="org.iets3.variability.configuration.base.behavior.AllReachableConfigTraversal$LINKS" />
+      <unit id="7468483804230480873" at="19,0,66,0" name="org.iets3.variability.configuration.base.behavior.AllReachableConfigTraversal" />
     </file>
   </root>
   <root nodeRef="r:dedd19c9-9ff3-4f30-aa73-ce61203b2296(org.iets3.variability.configuration.base.behavior)/7519059339745638943">

@@ -27,6 +27,7 @@
     <import index="z1c3" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.project(MPS.Core/)" />
     <import index="tp5g" ref="r:00000000-0000-4000-0000-011c89590388(jetbrains.mps.lang.test.structure)" />
     <import index="rmn3" ref="r:2f587aa6-2d3f-4726-9564-7648183caf97(org.iets3.variability.base.structure)" />
+    <import index="2rbz" ref="r:aeef8772-8af4-45c3-a762-623d4009d953(org.iets3.variability.base.plugin)" implicit="true" />
   </imports>
   <registry>
     <language id="8585453e-6bfb-4d80-98de-b16074f1d86c" name="jetbrains.mps.lang.test">
@@ -339,7 +340,7 @@
       <node concept="3clFbS" id="6vXjBknwW_G" role="3clF47">
         <node concept="3clFbF" id="6vXjBkn_nqD" role="3cqZAp">
           <node concept="2YIFZM" id="6vXjBkn_xQr" role="3clFbG">
-            <ref role="37wK5l" to="qqx9:6vXjBkn_pIp" resolve="doTest" />
+            <ref role="37wK5l" to="2rbz:6vXjBkn_pIp" resolve="doTest" />
             <ref role="1Pybhc" to="qqx9:1e_Qt5zgHq" resolve="SomeEnrichedNameLogic" />
             <node concept="1bVj0M" id="6vXjBkn_xSV" role="37wK5m">
               <node concept="3clFbS" id="6vXjBkn_xSZ" role="1bW5cS">
@@ -1075,7 +1076,7 @@
       <node concept="3clFbS" id="6vXjBknBa3p" role="2VODD2">
         <node concept="3clFbF" id="6vXjBknBa4u" role="3cqZAp">
           <node concept="2YIFZM" id="6vXjBknCpUi" role="3clFbG">
-            <ref role="37wK5l" to="qqx9:6vXjBknCaFI" resolve="switchOn" />
+            <ref role="37wK5l" to="2rbz:6vXjBknCaFI" resolve="switchOn" />
             <ref role="1Pybhc" to="qqx9:1e_Qt5zgHq" resolve="SomeEnrichedNameLogic" />
           </node>
         </node>
@@ -1265,8 +1266,8 @@
     <node concept="0EjCn" id="6vXjBknCr6$" role="0EEgL">
       <node concept="3clFbS" id="6vXjBknCr6_" role="2VODD2">
         <node concept="3clFbF" id="6vXjBknCr6A" role="3cqZAp">
-          <node concept="2YIFZM" id="6vXjBknCr6B" role="3clFbG">
-            <ref role="37wK5l" to="qqx9:6vXjBknCaFI" resolve="switchOn" />
+          <node concept="2YIFZM" id="7Sbg4UjSevU" role="3clFbG">
+            <ref role="37wK5l" to="2rbz:6vXjBknCaFI" resolve="switchOn" />
             <ref role="1Pybhc" to="qqx9:1e_Qt5zgHq" resolve="SomeEnrichedNameLogic" />
           </node>
         </node>
@@ -1275,7 +1276,7 @@
     <node concept="0EjCo" id="6vXjBknCr6C" role="0EEgW">
       <node concept="3clFbS" id="6vXjBknCr6D" role="2VODD2">
         <node concept="3clFbF" id="6vXjBknCr6E" role="3cqZAp">
-          <node concept="2YIFZM" id="6vXjBknCr6F" role="3clFbG">
+          <node concept="2YIFZM" id="7Sbg4UjSexk" role="3clFbG">
             <ref role="37wK5l" to="qqx9:6vXjBkn$Q8Y" resolve="switchOff" />
             <ref role="1Pybhc" to="qqx9:1e_Qt5zgHq" resolve="SomeEnrichedNameLogic" />
           </node>
@@ -1780,7 +1781,7 @@
       <node concept="3clFbS" id="4O1MtdoK7L_" role="2VODD2">
         <node concept="3clFbF" id="4O1MtdoK7LA" role="3cqZAp">
           <node concept="2YIFZM" id="4O1MtdoK7LB" role="3clFbG">
-            <ref role="37wK5l" to="qqx9:6vXjBknCaFI" resolve="switchOn" />
+            <ref role="37wK5l" to="2rbz:6vXjBknCaFI" resolve="switchOn" />
             <ref role="1Pybhc" to="qqx9:1e_Qt5zgHq" resolve="SomeEnrichedNameLogic" />
           </node>
         </node>

@@ -39,7 +39,7 @@ public class GlobalFeatureModelConfiguration_Constraints extends BaseConstraints
   private static boolean staticCanBeAChild(SNode node, SNode parentNode, SAbstractConcept childConcept, SContainmentLink link) {
     return !(SNodeOperations.isInstanceOf(parentNode, CONCEPTS.VariabilityModelChunk$Tl));
   }
-  private static final SNodePointer canBeChildBreakingPoint = new SNodePointer("r:5258aee4-21db-4874-b08a-288a78f8a679(org.iets3.variability.artifacts.base.constraints)", "3796618706790335315");
+  private static final SNodePointer canBeChildBreakingPoint = new SNodePointer("r:5258aee4-21db-4874-b08a-288a78f8a679(org.iets3.variability.artifacts.base.constraints)", "900077437759598977");
 
   private static final class CONCEPTS {
     /*package*/ static final SConcept GlobalFeatureModelConfiguration$QI = MetaAdapterFactory.getConcept(0xf08835038eaa4bc8L, 0x8846eb63220ab1ddL, 0x48cf645483bfd191L, "org.iets3.variability.artifacts.base.structure.GlobalFeatureModelConfiguration");

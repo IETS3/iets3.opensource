@@ -833,60 +833,63 @@
   </root>
   <root nodeRef="r:1b5a3de4-b200-4da6-9671-97911d423210(org.iets3.variability.featuremodel.base.plugin)/3460963097059760991">
     <file name="IETS3VariabilitySettings.java">
-      <node id="2417394483935010466" at="16,0,17,0" concept="6" trace="getPriorityLevel#()I" />
-      <node id="3460963097059909991" at="18,0,19,0" concept="6" trace="aliasFeatureModel#()Ljava/lang/String;" />
-      <node id="3460963097073597492" at="19,0,20,0" concept="6" trace="aliasFeature#()Ljava/lang/String;" />
-      <node id="3852013213351482497" at="20,0,21,0" concept="6" trace="aliasFeatureModelInclude#()Ljava/lang/String;" />
-      <node id="4249804086705137568" at="21,0,22,0" concept="6" trace="aliasConfiguration#()Ljava/lang/String;" />
-      <node id="3789754953812668807" at="29,71,30,31" concept="8" />
-      <node id="6441425252273382190" at="33,89,34,61" concept="8" />
-      <node id="198723497268093720" at="36,68,37,81" concept="7" />
-      <node id="198723497268093720" at="37,81,38,26" concept="8" />
-      <node id="3460963097059760991" at="42,0,43,0" concept="11" trace="VariabilityModelChunk$Tl" />
-      <node id="3789754953812585302" at="29,0,32,0" concept="6" trace="getVerbosity_ForAllVariantsExecutionWarning#()Lorg/iets3/variability/featuremodel/base/plugin/IETS3VariabilitySettings/VerbosityLevel;" />
-      <node id="6441425252273377645" at="33,0,36,0" concept="6" trace="getVariabilityContainerFactory#()Ljetbrains/mps/baseLanguage/closures/runtime/_FunctionTypes/_return_P0_E0;" />
-      <node id="198723497268093720" at="36,0,40,0" concept="12" trace="createVariabilityModelChunk_k441l_a0a0a0m#()Lorg/jetbrains/mps/openapi/model/SNode;" />
-      <scope id="2417394483935010466" at="16,0,17,0" />
-      <scope id="3460963097059909991" at="18,0,19,0" />
-      <scope id="3460963097073597492" at="19,0,20,0" />
-      <scope id="3852013213351482497" at="20,0,21,0" />
-      <scope id="4249804086705137568" at="21,0,22,0" />
-      <scope id="3789754953812585305" at="29,71,30,31" />
-      <scope id="6441425252273377648" at="33,89,34,61" />
-      <scope id="198723497268093720" at="36,68,38,26">
+      <node id="9082423779754888934" at="23,33,24,28" concept="8" />
+      <node id="9082423779754945519" at="34,25,35,71" concept="9" />
+      <node id="9082423779754943198" at="35,71,36,30" concept="8" />
+      <node id="3460963097059909991" at="39,0,40,0" concept="6" trace="aliasFeatureModel#()Ljava/lang/String;" />
+      <node id="3460963097073597492" at="40,0,41,0" concept="6" trace="aliasFeature#()Ljava/lang/String;" />
+      <node id="3852013213351482497" at="41,0,42,0" concept="6" trace="aliasFeatureModelInclude#()Ljava/lang/String;" />
+      <node id="4249804086705137568" at="42,0,43,0" concept="6" trace="aliasConfiguration#()Ljava/lang/String;" />
+      <node id="3789754953812668807" at="50,71,51,31" concept="8" />
+      <node id="6441425252273382190" at="54,89,55,61" concept="8" />
+      <node id="198723497268093720" at="57,68,58,81" concept="7" />
+      <node id="198723497268093720" at="58,81,59,26" concept="8" />
+      <node id="3460963097059760991" at="63,0,64,0" concept="11" trace="VariabilityModelChunk$Tl" />
+      <node id="3789754953812585302" at="50,0,53,0" concept="6" trace="getVerbosity_ForAllVariantsExecutionWarning#()Lorg/iets3/variability/featuremodel/base/plugin/IETS3VariabilitySettings/VerbosityLevel;" />
+      <node id="6441425252273377645" at="54,0,57,0" concept="6" trace="getVariabilityContainerFactory#()Ljetbrains/mps/baseLanguage/closures/runtime/_FunctionTypes/_return_P0_E0;" />
+      <node id="2417394483935010466" at="22,0,26,0" concept="6" trace="getPriorityLevel#()I" />
+      <node id="198723497268093720" at="57,0,61,0" concept="12" trace="createVariabilityModelChunk_k441l_a0a0a0o#()Lorg/jetbrains/mps/openapi/model/SNode;" />
+      <node id="9082423779754891434" at="33,0,38,0" concept="6" trace="priority#()I" />
+      <scope id="2417394483935010469" at="23,33,24,28" />
+      <scope id="3460963097059909991" at="39,0,40,0" />
+      <scope id="3460963097073597492" at="40,0,41,0" />
+      <scope id="3852013213351482497" at="41,0,42,0" />
+      <scope id="4249804086705137568" at="42,0,43,0" />
+      <scope id="3789754953812585305" at="50,71,51,31" />
+      <scope id="6441425252273377648" at="54,89,55,61" />
+      <scope id="9082423779754891441" at="34,25,36,30" />
+      <scope id="198723497268093720" at="57,68,59,26">
         <var name="n0" id="198723497268093720" />
       </scope>
-      <scope id="3789754953812585302" at="29,0,32,0" />
-      <scope id="6441425252273377645" at="33,0,36,0" />
-      <scope id="198723497268093720" at="36,0,40,0" />
-      <unit id="3460963097059760991" at="41,0,44,0" name="org.iets3.variability.featuremodel.base.plugin.IETS3VariabilitySettings$CONCEPTS" />
-      <unit id="3789754953812586416" at="23,0,28,0" name="org.iets3.variability.featuremodel.base.plugin.IETS3VariabilitySettings$VerbosityLevel" />
-      <unit id="3460963097059760991" at="14,0,45,0" name="org.iets3.variability.featuremodel.base.plugin.IETS3VariabilitySettings" />
+      <scope id="3789754953812585302" at="50,0,53,0" />
+      <scope id="6441425252273377645" at="54,0,57,0" />
+      <scope id="2417394483935010466" at="22,0,26,0" />
+      <scope id="198723497268093720" at="57,0,61,0" />
+      <scope id="9082423779754891434" at="33,0,38,0" />
+      <unit id="3460963097059760991" at="62,0,65,0" name="org.iets3.variability.featuremodel.base.plugin.IETS3VariabilitySettings$CONCEPTS" />
+      <unit id="3789754953812586416" at="44,0,49,0" name="org.iets3.variability.featuremodel.base.plugin.IETS3VariabilitySettings$VerbosityLevel" />
+      <unit id="3460963097059760991" at="16,0,66,0" name="org.iets3.variability.featuremodel.base.plugin.IETS3VariabilitySettings" />
     </file>
   </root>
   <root nodeRef="r:1b5a3de4-b200-4da6-9671-97911d423210(org.iets3.variability.featuremodel.base.plugin)/3460963097059915390">
     <file name="DefaultIETS3VariabilitySettings.java">
-      <node id="2417394483935021150" at="12,33,13,13" concept="8" />
-      <node id="3460963097073597718" at="17,37,18,27" concept="8" />
-      <node id="3460963097059915561" at="22,32,23,21" concept="8" />
-      <node id="3852013213351482845" at="27,44,28,35" concept="8" />
-      <node id="4249804086705140345" at="32,38,33,27" concept="8" />
-      <node id="2417394483935019962" at="11,0,15,0" concept="6" trace="getPriorityLevel#()I" />
-      <node id="3460963097073597714" at="16,0,20,0" concept="6" trace="aliasFeatureModel#()Ljava/lang/String;" />
-      <node id="3460963097059915554" at="21,0,25,0" concept="6" trace="aliasFeature#()Ljava/lang/String;" />
-      <node id="3852013213351482841" at="26,0,30,0" concept="6" trace="aliasFeatureModelInclude#()Ljava/lang/String;" />
-      <node id="4249804086705138219" at="31,0,35,0" concept="6" trace="aliasConfiguration#()Ljava/lang/String;" />
-      <scope id="2417394483935019966" at="12,33,13,13" />
-      <scope id="3460963097073597717" at="17,37,18,27" />
-      <scope id="3460963097059915558" at="22,32,23,21" />
-      <scope id="3852013213351482844" at="27,44,28,35" />
-      <scope id="4249804086705138223" at="32,38,33,27" />
-      <scope id="2417394483935019962" at="11,0,15,0" />
-      <scope id="3460963097073597714" at="16,0,20,0" />
-      <scope id="3460963097059915554" at="21,0,25,0" />
-      <scope id="3852013213351482841" at="26,0,30,0" />
-      <scope id="4249804086705138219" at="31,0,35,0" />
-      <unit id="3460963097059915390" at="9,0,36,0" name="org.iets3.variability.featuremodel.base.plugin.DefaultIETS3VariabilitySettings" />
+      <node id="3460963097073597718" at="12,37,13,27" concept="8" />
+      <node id="3460963097059915561" at="17,32,18,21" concept="8" />
+      <node id="3852013213351482845" at="22,44,23,35" concept="8" />
+      <node id="4249804086705140345" at="27,38,28,27" concept="8" />
+      <node id="3460963097073597714" at="11,0,15,0" concept="6" trace="aliasFeatureModel#()Ljava/lang/String;" />
+      <node id="3460963097059915554" at="16,0,20,0" concept="6" trace="aliasFeature#()Ljava/lang/String;" />
+      <node id="3852013213351482841" at="21,0,25,0" concept="6" trace="aliasFeatureModelInclude#()Ljava/lang/String;" />
+      <node id="4249804086705138219" at="26,0,30,0" concept="6" trace="aliasConfiguration#()Ljava/lang/String;" />
+      <scope id="3460963097073597717" at="12,37,13,27" />
+      <scope id="3460963097059915558" at="17,32,18,21" />
+      <scope id="3852013213351482844" at="22,44,23,35" />
+      <scope id="4249804086705138223" at="27,38,28,27" />
+      <scope id="3460963097073597714" at="11,0,15,0" />
+      <scope id="3460963097059915554" at="16,0,20,0" />
+      <scope id="3852013213351482841" at="21,0,25,0" />
+      <scope id="4249804086705138219" at="26,0,30,0" />
+      <unit id="3460963097059915390" at="9,0,31,0" name="org.iets3.variability.featuremodel.base.plugin.DefaultIETS3VariabilitySettings" />
     </file>
   </root>
   <root nodeRef="r:1b5a3de4-b200-4da6-9671-97911d423210(org.iets3.variability.featuremodel.base.plugin)/38708446880905206">
