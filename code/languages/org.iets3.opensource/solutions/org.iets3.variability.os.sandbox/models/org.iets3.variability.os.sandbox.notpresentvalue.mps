@@ -149,7 +149,7 @@
           <property role="TrG5h" value="f" />
           <node concept="12iSMG" id="3uwMEO1m_IF" role="12iwVe">
             <property role="TrG5h" value="g" />
-            <ref role="12iSMH" node="3TeKUdOiNIJ" />
+            <ref role="12iSMH" node="3TeKUdOiNIJ" resolve="V" />
           </node>
         </node>
       </node>

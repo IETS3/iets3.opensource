@@ -12,16 +12,16 @@ import jetbrains.mps.lang.test.runtime.BaseEditorTestBody;
 import jetbrains.mps.lang.test.runtime.TransformationTest;
 
 @MPSLaunch
-public class TypeSemicolonAfterCardinalityBracket_Test extends BaseTransformationTest {
+public class TypeBracketFeature_Test extends BaseTransformationTest {
   @RegisterExtension
-  private static final TestParametersCacheExtension ourParametersCacheExtension = new TestParametersCacheExtension(new TestParametersCacheBuilder(TypeSemicolonAfterCardinalityBracket_Test.class).projectPath(null).modelRef("r:d6bc629b-7e76-4d7c-b56d-ed7cc0573909(test.org.iets3.variability.featuremodel.base.editor@tests)").reopenProject(false).build());
+  private static final TestParametersCacheExtension ourParametersCacheExtension = new TestParametersCacheExtension(new TestParametersCacheBuilder(TypeBracketFeature_Test.class).projectPath(null).modelRef("r:d6bc629b-7e76-4d7c-b56d-ed7cc0573909(test.org.iets3.variability.featuremodel.base.editor@tests)").reopenProject(false).build());
 
-  public TypeSemicolonAfterCardinalityBracket_Test() {
+  public TypeBracketFeature_Test() {
     super(ourParametersCacheExtension.getParametersCache());
   }
 
   @Test
-  public void test_TypeSemicolonAfterCardinalityBracket() throws Throwable {
+  public void test_TypeBracketFeature() throws Throwable {
     new TestBody(this).testMethod();
   }
 
@@ -33,8 +33,8 @@ public class TypeSemicolonAfterCardinalityBracket_Test extends BaseTransformatio
 
     @Override
     public void testMethodImpl() throws Exception {
-      initEditorComponent("652650453712904158", "652650453712904163");
-      typeString(":");
+      initEditorComponent("652650453707419762", "652650453707419767");
+      typeString("[");
     }
   }
 }
