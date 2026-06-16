@@ -4,14 +4,13 @@ package org.iets3.variability.base.plugin;
 
 import org.iets3.variability.featuremodel.base.plugin.IETS3VariabilitySettings;
 import jetbrains.mps.smodel.structure.ExtensionPoint;
-import jetbrains.mps.internal.collections.runtime.Sequence;
 import org.iets3.variability.featuremodel.base.plugin.DefaultIETS3VariabilitySettings;
 import java.util.Arrays;
 import java.util.stream.Collectors;
 import jetbrains.mps.baseLanguage.closures.runtime._FunctionTypes;
 import org.jetbrains.mps.openapi.model.SNode;
 
-public class Settings {
+public class Settings extends AbstractExtensionProvider {
   /**
    * TOOD: The IETS3VariabilitySettings class and the extension point definition should be moved to o.i.variability.base.
    */
@@ -28,12 +27,7 @@ public class Settings {
   private static IETS3VariabilitySettings instance() {
     if (settings == null) {
       ExtensionPoint<IETS3VariabilitySettings> ep = new ExtensionPoint<IETS3VariabilitySettings>("org.iets3.variability.featuremodel.base.tailorIETS3Variability");
-      Iterable<IETS3VariabilitySettings> handlers = Sequence.fromIterable(ep.getObjects()).sort((it) -> it.getPriorityLevel(), false);
-      if (Sequence.fromIterable(handlers).isEmpty()) {
-        settings = new DefaultIETS3VariabilitySettings();
-      } else {
-        settings = Sequence.fromIterable(handlers).first();
-      }
+      settings = AbstractExtensionProvider.instanceByPriority(ep.getObjects(), () -> new DefaultIETS3VariabilitySettings());
     }
     return settings;
   }

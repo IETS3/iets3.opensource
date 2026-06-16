@@ -15,31 +15,48 @@ import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import org.jetbrains.mps.openapi.language.SReferenceLink;
 import org.jetbrains.mps.openapi.language.SContainmentLink;
 
-public class FeatureModelConfHashUtil {
+/**
+ * Base class for lazily computing and caching a hash of a FeatureModelConfiguration.
+ * 
+ * The hash is stored as a user object on the config node, keyed by `tag`, so several independent
+ * hashes can coexist on one configuration. User objects are in-memory only, hence the cache is
+ * per-session and not persisted with the model.
+ * 
+ * Subclasses implement computeHash(); getHash() reads-or-computes lazily, setHash() forces recomputation.
+ */
+public abstract class AbstractConfigHashing {
 
-  private static final String hashId = "HashOfSolverRelevantData";
+  private final String tag;
+  protected final SNode config;
 
-  public static Object setHashOfSolverRelevantData(SNode fmc) {
-    Object hash;
-    hash = FeatureModelConfHashUtil.computeHashOfSolverRelevantData(fmc);
-    fmc.putUserObject(hashId, hash);
+  protected AbstractConfigHashing(String tag, SNode config) {
+    this.tag = tag;
+    this.config = config;
+  }
+
+  public abstract int computeHash();
+
+  public int setHash() {
+    int hash = computeHash();
+    config.putUserObject(tag, hash);
     return hash;
   }
 
-  public static int computeHashOfSolverRelevantData(SNode fmc) {
-    List<SNode> subfeatureConfigurations = Sequence.fromIterable(AbstractFeatureConfiguration__BehaviorDescriptor.descendantLocalConfigItems_id7Sn21ZwO0hh.invoke(fmc)).toList();
+  public int getHash() {
+    Object hashObj = config.getUserObject(tag);
+    if (hashObj != null) {
+      return (int) hashObj;
+    } else {
+      return setHash();
+    }
+  }
+
+  public static int computeHashForLocalConfig(SNode config) {
+    List<SNode> subfeatureConfigurations = Sequence.fromIterable(AbstractFeatureConfiguration__BehaviorDescriptor.descendantLocalConfigItems_id7Sn21ZwO0hh.invoke(config)).toList();
     List<Object> selStates = ListSequence.fromList(subfeatureConfigurations).select((it) -> (Object) SPropertyOperations.getEnum(it, PROPS.selectionState$zbc1).getOrdinal()).toList();
     List<Object> attributeAssignmentPaired = ListSequence.fromList((ListSequence.fromList(subfeatureConfigurations).translate((it) -> (Iterable<SNode>) AbstractFeatureConfiguration__BehaviorDescriptor.attributeAssignments_id30ECcbtQkN2.invoke(it)).toList())).select((it) -> (Object) Pair.of(SLinkOperations.getTarget(it, LINKS.attribute$J5jI), SLinkOperations.getTarget(it, LINKS.value$kgDc))).toList();
 
     return Objects.hashCode(ListSequence.fromList(selStates).union(ListSequence.fromList(attributeAssignmentPaired)).toList());
-  }
-
-  public static int hashOfSolverRelevantData(SNode fmc) {
-    Object hash = fmc.getUserObject(hashId);
-    if (hash == null) {
-      hash = FeatureModelConfHashUtil.setHashOfSolverRelevantData(fmc);
-    }
-    return (int) hash;
   }
 
   private static final class PROPS {

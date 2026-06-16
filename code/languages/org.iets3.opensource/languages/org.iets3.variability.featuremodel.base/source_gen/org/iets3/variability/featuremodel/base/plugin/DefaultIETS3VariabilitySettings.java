@@ -9,11 +9,6 @@ package org.iets3.variability.featuremodel.base.plugin;
 public class DefaultIETS3VariabilitySettings extends IETS3VariabilitySettings {
 
   @Override
-  public int getPriorityLevel() {
-    return 0;
-  }
-
-  @Override
   public String aliasFeatureModel() {
     return "feature model";
   }
