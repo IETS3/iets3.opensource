@@ -123,29 +123,12 @@ public class InterpreterExprSimpleTypesInterpreter extends InterpreterBase {
           coverage.visitedConcept(this.concept);
           coverage.visitedConcept(SNodeOperations.getConcept(node));
           StringBuilder sb = new StringBuilder();
-          String delayed_token = null;
           for (SNode w : ListSequence.fromList(SLinkOperations.getChildren(SLinkOperations.getTarget(node, LINKS.text$btRI), LINKS.words$C8QZ))) {
-            boolean is_first = sb.length() == 0;
             if (SNodeOperations.isInstanceOf(w, CONCEPTS.InterpolExprWord$4z)) {
-
               Object r = context.getRootInterpreter().evaluate(SNodeOperations.cast(w, CONCEPTS.InterpolExprWord$4z), context, coverage, trace, false);
-              String content = r.toString();
-              if ((content != null && content.length() > 0) && delayed_token != null) {
-                sb.append(delayed_token);
-                delayed_token = null;
-              } else if (!(is_first)) {
-                sb.append(" ");
-              }
-
-              sb.append(content);
-              delayed_token = " ";
+              sb.append(r.toString());
             } else {
-              String content = IWord__BehaviorDescriptor.toTextString_id3Q5enzfMT4t.invoke(w);
-              if ((content != null && content.length() > 0) && delayed_token != null) {
-                sb.append(delayed_token);
-                delayed_token = null;
-              }
-              sb.append(content);
+              sb.append(IWord__BehaviorDescriptor.toTextString_id3Q5enzfMT4t.invoke(w));
             }
           }
           return sb.toString();

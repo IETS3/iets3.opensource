@@ -17,7 +17,7 @@
       <unit at="11,0,602,0" name="org.iets3.core.expr.tests.structure.ConceptPresentationAspectImpl" />
     </file>
     <file name="IconContainer.java">
-      <unit at="7,0,11,0" name="org.iets3.core.expr.tests.structure.IconContainer" />
+      <unit at="8,0,13,0" name="org.iets3.core.expr.tests.structure.IconContainer" />
     </file>
     <file name="LanguageConceptSwitch.java">
       <unit at="10,0,156,0" name="org.iets3.core.expr.tests.structure.LanguageConceptSwitch" />
@@ -1355,8 +1355,8 @@
       <node id="543569365052056263" at="519,37,520,76" concept="5" />
       <node id="543569365052056263" at="520,76,521,67" concept="1" />
       <node id="543569365052056263" at="521,67,522,35" concept="1" />
-      <node id="543569365052056263" at="522,35,523,57" concept="1" />
-      <node id="543569365052056263" at="523,57,524,40" concept="1" />
+      <node id="543569365052056263" at="522,35,523,45" concept="1" />
+      <node id="543569365052056263" at="523,45,524,40" concept="1" />
       <node id="543569365052056263" at="525,9,526,30" concept="6" />
       <node id="543569365052056263" at="518,42,525,9" concept="3" />
       <scope id="543569365052056263" at="519,37,524,40">
@@ -1508,8 +1508,8 @@
       <node id="8811147530091989932" at="566,136,567,77" concept="1" />
       <node id="543569365052711055" at="567,77,568,40" concept="1" />
       <node id="543569365052711055" at="568,40,569,35" concept="1" />
-      <node id="543569365052711055" at="569,35,570,57" concept="1" />
-      <node id="543569365052711055" at="570,57,571,41" concept="1" />
+      <node id="543569365052711055" at="569,35,570,45" concept="1" />
+      <node id="543569365052711055" at="570,45,571,41" concept="1" />
       <node id="543569365052711055" at="572,9,573,31" concept="6" />
       <node id="543569365052711055" at="564,43,572,9" concept="3" />
       <scope id="543569365052711055" at="565,38,571,41">
