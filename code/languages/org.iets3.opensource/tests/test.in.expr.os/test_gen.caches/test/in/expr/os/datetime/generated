@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <product version="3" modelHash="-1q6d8s8mb7p79lvvafoowf6ggh41t5w">
-  <files names="Generated_date_Test.java:Generated_time_Test.java:date_Test.java:time_Test.java" />
+  <files names="date_Test.java:time_Test.java" />
 </product>
 
