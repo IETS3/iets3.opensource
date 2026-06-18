@@ -10,6 +10,8 @@ The project does _not_ follow Semantic Versioning and the changes are documented
 ### Added
 
 - Variability: For the filtering of 150% models, a new API for `IRenamer` is provided. It allows renaming all clones of an instantiated element in one step. The old API which allows renaming only one-by-one is still available - this is not a breaking change.
+- Variability: Introduced extension point `configCombinationLogicExtPoint` (interface `IConfigCombinationLogic`) to make the logic of combining configurations (via `extends`, `abstract` and referenced sub-configurations) configurable per application.
+- Variability: Configuration checking for referenced abstract sub-configurations now respects the active combination logic, and configuration hashing was extended to cover a configuration together with all configurations reachable from it.
 
 
 ## May 2026
