@@ -4488,5 +4488,30 @@
       </node>
     </node>
   </node>
+  <node concept="1YbPZF" id="6NLFGgDzmvj">
+    <property role="TrG5h" value="typeof_EnumIsNotInTarget" />
+    <property role="3GE5qa" value="enum.oneof" />
+    <node concept="3clFbS" id="6NLFGgDzmvk" role="18ibNy">
+      <node concept="1Z5TYs" id="6NLFGgDzmx2" role="3cqZAp">
+        <node concept="mw_s8" id="6NLFGgDzmx3" role="1ZfhKB">
+          <node concept="2YIFZM" id="6NLFGgDzmx4" role="mwGJk">
+            <ref role="37wK5l" to="xfg9:2Qbt$1tTQco" resolve="createBooleanType" />
+            <ref role="1Pybhc" to="xfg9:2Qbt$1tTQaH" resolve="PTF" />
+          </node>
+        </node>
+        <node concept="mw_s8" id="6NLFGgDzmx5" role="1ZfhK$">
+          <node concept="1Z2H0r" id="6NLFGgDzmx6" role="mwGJk">
+            <node concept="1YBJjd" id="6NLFGgDzmx7" role="1Z2MuG">
+              <ref role="1YBMHb" node="6NLFGgDzmvm" resolve="enumIsNotInTarget" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1YaCAy" id="6NLFGgDzmvm" role="1YuTPh">
+      <property role="TrG5h" value="enumIsNotInTarget" />
+      <ref role="1YaFvo" to="yv47:6NLFGgDxmkC" resolve="EnumIsNotInTarget" />
+    </node>
+  </node>
 </model>
 

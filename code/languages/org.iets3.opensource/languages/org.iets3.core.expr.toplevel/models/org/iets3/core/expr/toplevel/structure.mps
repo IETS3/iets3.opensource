@@ -1338,5 +1338,24 @@
       <ref role="20lvS9" node="67Y8mp$DMVh" resolve="EnumLiteral" />
     </node>
   </node>
+  <node concept="1TIwiD" id="6NLFGgDxmkC">
+    <property role="TrG5h" value="EnumIsNotInTarget" />
+    <property role="34LRSv" value="isNotIn" />
+    <property role="R4oN_" value="check the enumeration literal is NOT in several literals" />
+    <property role="3GE5qa" value="enum.oneof" />
+    <property role="EcuMT" value="7850247783016916264" />
+    <property role="2eQzMB" value="71934284-d7d1-45ee-a054-8c072591085f" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="PrWs8" id="6NLFGgDxmkD" role="PzmwI">
+      <ref role="PrY4T" to="hm2y:7NJy08a3O9a" resolve="IDotTarget" />
+    </node>
+    <node concept="1TJgyj" id="6NLFGgDxmkE" role="1TKVEi">
+      <property role="20kJfa" value="selectors" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20lbJX" value="_1__n" />
+      <property role="IQ2ns" value="7850247783016916266" />
+      <ref role="20lvS9" node="6WstIz8MKZd" resolve="EnumIsInSelector" />
+    </node>
+  </node>
 </model>
 

@@ -154,7 +154,7 @@
       <concept id="7740953487933794886" name="org.iets3.core.expr.toplevel.structure.SectionMarker" flags="ng" index="1Ws0TD">
         <property id="7740953487933876080" name="label" index="1WsWdv" />
       </concept>
-      <concept id="4557392569141521968" name="org.iets3.core.expr.toplevel.structure.EnumNotInTarget" flags="ng" index="1Y$79l">
+      <concept id="4557392569141521968" name="org.iets3.core.expr.toplevel.structure.EnumNotIsTarget" flags="ng" index="1Y$79l">
         <reference id="4557392569141521970" name="literal" index="1Y$79n" />
       </concept>
     </language>
