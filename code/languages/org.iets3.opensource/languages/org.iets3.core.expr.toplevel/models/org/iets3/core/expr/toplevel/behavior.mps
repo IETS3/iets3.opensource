@@ -10262,7 +10262,7 @@
   </node>
   <node concept="13h7C7" id="3WZ76l1FQTM">
     <property role="3GE5qa" value="enum" />
-    <ref role="13h7C2" to="yv47:3WZ76l1FQSK" resolve="EnumNotIsTarget" />
+    <ref role="13h7C2" to="yv47:3WZ76l1FQSK" resolve="EnumIsNotTarget" />
     <node concept="13hLZK" id="3WZ76l1FQTN" role="13h7CW">
       <node concept="3clFbS" id="3WZ76l1FQTO" role="2VODD2" />
     </node>
@@ -10640,7 +10640,7 @@
               <node concept="2pIpSj" id="6NLFGgDxmnq" role="2pJxcM">
                 <ref role="2pIpSl" to="hm2y:7NJy08a3O9b" resolve="target" />
                 <node concept="2pJPED" id="6NLFGgDxmnr" role="28nt2d">
-                  <ref role="2pJxaS" to="yv47:3WZ76l1FQSK" resolve="EnumNotIsTarget" />
+                  <ref role="2pJxaS" to="yv47:3WZ76l1FQSK" resolve="EnumIsNotTarget" />
                   <node concept="2pIpSj" id="6NLFGgDxmns" role="2pJxcM">
                     <ref role="2pIpSl" to="yv47:3WZ76l1FQSM" resolve="literal" />
                     <node concept="36biLy" id="6NLFGgDxmnt" role="28nt2d">

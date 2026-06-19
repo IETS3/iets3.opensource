@@ -1321,7 +1321,7 @@
     <ref role="1TJDcQ" node="wlV$3kt3Ry" resolve="AbstractEnumSortOrder" />
   </node>
   <node concept="1TIwiD" id="3WZ76l1FQSK">
-    <property role="TrG5h" value="EnumNotIsTarget" />
+    <property role="TrG5h" value="EnumIsNotTarget" />
     <property role="34LRSv" value="isNot" />
     <property role="R4oN_" value="check the enumeration literal is NOT equal to another literal" />
     <property role="3GE5qa" value="enum" />

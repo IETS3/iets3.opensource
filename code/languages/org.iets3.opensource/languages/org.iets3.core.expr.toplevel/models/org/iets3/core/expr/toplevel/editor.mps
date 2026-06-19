@@ -5744,7 +5744,7 @@
   </node>
   <node concept="24kQdi" id="3WZ76l1FQT7">
     <property role="3GE5qa" value="enum" />
-    <ref role="1XX52x" to="yv47:3WZ76l1FQSK" resolve="EnumNotIsTarget" />
+    <ref role="1XX52x" to="yv47:3WZ76l1FQSK" resolve="EnumIsNotTarget" />
     <node concept="3EZMnI" id="3WZ76l1FQT8" role="2wV5jI">
       <node concept="l2Vlx" id="3WZ76l1FQT9" role="2iSdaV" />
       <node concept="PMmxH" id="3WZ76l1FQTa" role="3EZMnx">
