@@ -5742,5 +5742,45 @@
       </node>
     </node>
   </node>
+  <node concept="24kQdi" id="3WZ76l1FQT7">
+    <property role="3GE5qa" value="enum" />
+    <ref role="1XX52x" to="yv47:3WZ76l1FQSK" resolve="EnumNotInTarget" />
+    <node concept="3EZMnI" id="3WZ76l1FQT8" role="2wV5jI">
+      <node concept="l2Vlx" id="3WZ76l1FQT9" role="2iSdaV" />
+      <node concept="PMmxH" id="3WZ76l1FQTa" role="3EZMnx">
+        <ref role="PMmxG" to="buwp:12bsjhgd0dR" resolve="OpAlias" />
+      </node>
+      <node concept="3F0ifn" id="3WZ76l1FQTb" role="3EZMnx">
+        <property role="3F0ifm" value="(" />
+        <node concept="11L4FC" id="3WZ76l1FQTc" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+        <node concept="11LMrY" id="3WZ76l1FQTd" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+      <node concept="1iCGBv" id="3WZ76l1FQTe" role="3EZMnx">
+        <ref role="1NtTu8" to="yv47:3WZ76l1FQSM" resolve="literal" />
+        <node concept="1sVBvm" id="3WZ76l1FQTf" role="1sWHZn">
+          <node concept="3F0A7n" id="3WZ76l1FQTg" role="2wV5jI">
+            <property role="1Intyy" value="true" />
+            <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+            <node concept="Vb9p2" id="3WZ76l1FQTh" role="3F10Kt">
+              <property role="Vbekb" value="BOLD_ITALIC" />
+            </node>
+            <node concept="VechU" id="3WZ76l1FQTi" role="3F10Kt">
+              <property role="Vb096" value="darkGray" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3F0ifn" id="3WZ76l1FQTj" role="3EZMnx">
+        <property role="3F0ifm" value=")" />
+        <node concept="11L4FC" id="3WZ76l1FQTk" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+    </node>
+  </node>
 </model>
 

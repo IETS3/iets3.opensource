@@ -31,6 +31,7 @@
         <property id="7862711839422615217" name="text" index="t5JxN" />
       </concept>
       <concept id="1169125787135" name="jetbrains.mps.lang.structure.structure.AbstractConceptDeclaration" flags="ig" index="PkWjJ">
+        <property id="9005308665739310115" name="languageId" index="2eQzMB" />
         <property id="6714410169261853888" name="conceptId" index="EcuMT" />
         <property id="4628067390765907488" name="conceptShortDescription" index="R4oN_" />
         <property id="4628067390765956807" name="final" index="R5$K2" />
@@ -1318,6 +1319,24 @@
     <property role="TrG5h" value="EnumSortByLiteral" />
     <property role="34LRSv" value="by literal" />
     <ref role="1TJDcQ" node="wlV$3kt3Ry" resolve="AbstractEnumSortOrder" />
+  </node>
+  <node concept="1TIwiD" id="3WZ76l1FQSK">
+    <property role="TrG5h" value="EnumNotInTarget" />
+    <property role="34LRSv" value="isNot" />
+    <property role="R4oN_" value="check the enumeration literal is NOT equal to another literal" />
+    <property role="3GE5qa" value="enum" />
+    <property role="EcuMT" value="4557392569141521968" />
+    <property role="2eQzMB" value="71934284-d7d1-45ee-a054-8c072591085f" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="PrWs8" id="3WZ76l1FQSL" role="PzmwI">
+      <ref role="PrY4T" to="hm2y:7NJy08a3O9a" resolve="IDotTarget" />
+    </node>
+    <node concept="1TJgyj" id="3WZ76l1FQSM" role="1TKVEi">
+      <property role="20kJfa" value="literal" />
+      <property role="20lbJX" value="_1" />
+      <property role="IQ2ns" value="4557392569141521970" />
+      <ref role="20lvS9" node="67Y8mp$DMVh" resolve="EnumLiteral" />
+    </node>
   </node>
 </model>
 
