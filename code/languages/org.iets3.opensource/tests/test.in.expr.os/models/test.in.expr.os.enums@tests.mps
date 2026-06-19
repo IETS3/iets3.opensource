@@ -154,6 +154,9 @@
       <concept id="7740953487933794886" name="org.iets3.core.expr.toplevel.structure.SectionMarker" flags="ng" index="1Ws0TD">
         <property id="7740953487933876080" name="label" index="1WsWdv" />
       </concept>
+      <concept id="4557392569141521968" name="org.iets3.core.expr.toplevel.structure.EnumNotInTarget" flags="ng" index="1Y$79l">
+        <reference id="4557392569141521970" name="literal" index="1Y$79n" />
+      </concept>
     </language>
     <language id="4621d3e3-b8a3-4bbe-b7ac-234b6e2d1d68" name="org.iets3.core.expr.temporal">
       <concept id="5772589292322890249" name="org.iets3.core.expr.temporal.structure.TemporalType" flags="ng" index="Ffn_D">
@@ -401,6 +404,48 @@
           </node>
         </node>
         <node concept="UmHTt" id="5WNmJ7EGQHl" role="_fkuS" />
+      </node>
+      <node concept="_fkuZ" id="6NLFGgCJ6RQ" role="_fkp5">
+        <node concept="_fku$" id="6NLFGgCJ6RR" role="_fkur" />
+        <node concept="1QScDb" id="6NLFGgCJ6SC" role="_fkuY">
+          <node concept="2nD44o" id="6NLFGgCJ6S6" role="2lDidJ">
+            <node concept="_emDc" id="6NLFGgCJ6Sg" role="2lDidJ">
+              <ref role="_emDf" node="67Y8mp$IHj_" resolve="ocean" />
+            </node>
+          </node>
+          <node concept="1Y$79l" id="6NLFGgCJ70L" role="1QScD9">
+            <ref role="1Y$79n" node="67Y8mp$Gkhk" resolve="red" />
+          </node>
+        </node>
+        <node concept="2vmpnb" id="6NLFGgCJ75c" role="_fkuS" />
+      </node>
+      <node concept="_fkuZ" id="6NLFGgD3N2q" role="_fkp5">
+        <node concept="_fku$" id="6NLFGgD3N2r" role="_fkur" />
+        <node concept="1QScDb" id="6NLFGgD3N3b" role="_fkuY">
+          <node concept="1Y$79l" id="6NLFGgD3N6u" role="1QScD9">
+            <ref role="1Y$79n" node="67Y8mp$HuG1" resolve="blue" />
+          </node>
+          <node concept="2nD44o" id="6NLFGgD3N2C" role="2lDidJ">
+            <node concept="_emDc" id="6NLFGgD3N2N" role="2lDidJ">
+              <ref role="_emDf" node="67Y8mp$IHj_" resolve="ocean" />
+            </node>
+          </node>
+        </node>
+        <node concept="2vmpn$" id="6NLFGgD48RF" role="_fkuS" />
+      </node>
+      <node concept="_fkuZ" id="6NLFGgD4tWQ" role="_fkp5">
+        <node concept="_fku$" id="6NLFGgD4tWR" role="_fkur" />
+        <node concept="1QScDb" id="6NLFGgD4tY9" role="_fkuY">
+          <node concept="1Y$79l" id="6NLFGgD4u2c" role="1QScD9">
+            <ref role="1Y$79n" node="67Y8mp$Gkhk" resolve="red" />
+          </node>
+          <node concept="2nGkMB" id="6NLFGgD4tXu" role="2lDidJ">
+            <node concept="_emDc" id="6NLFGgD4tXL" role="2lDidJ">
+              <ref role="_emDf" node="67Y8mp$IHj_" resolve="ocean" />
+            </node>
+          </node>
+        </node>
+        <node concept="UmHTt" id="6NLFGgD4u8i" role="_fkuS" />
       </node>
     </node>
     <node concept="_ixoA" id="5WNmJ7EzoW4" role="_iOnB" />
