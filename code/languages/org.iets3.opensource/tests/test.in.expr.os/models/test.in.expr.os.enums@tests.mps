@@ -145,6 +145,9 @@
       <concept id="8811147530084018361" name="org.iets3.core.expr.toplevel.structure.RecordMember" flags="ng" index="2Ss9d7" />
       <concept id="8811147530084018358" name="org.iets3.core.expr.toplevel.structure.RecordDeclaration" flags="ng" index="2Ss9d8" />
       <concept id="4577412849441593498" name="org.iets3.core.expr.toplevel.structure.EnumValueAccessor" flags="ng" index="YK6gA" />
+      <concept id="7850247783016916264" name="org.iets3.core.expr.toplevel.structure.EnumIsNotInTarget" flags="ng" index="15tcJG">
+        <child id="7850247783016916266" name="selectors" index="15tcJI" />
+      </concept>
       <concept id="4790956042240570348" name="org.iets3.core.expr.toplevel.structure.FunctionCall" flags="ng" index="1af_rf" />
       <concept id="4790956042240148643" name="org.iets3.core.expr.toplevel.structure.Function" flags="ng" index="1aga60" />
       <concept id="2945473592442820328" name="org.iets3.core.expr.toplevel.structure.AllLitList" flags="ng" index="1cenD8">
@@ -371,6 +374,40 @@
           </node>
         </node>
         <node concept="2vmpn$" id="6WstIz8RK0y" role="_fkuS" />
+      </node>
+      <node concept="_fkuZ" id="3rqhHT2ZXI5" role="_fkp5">
+        <node concept="_fku$" id="3rqhHT2ZXI6" role="_fkur" />
+        <node concept="1QScDb" id="3rqhHT2ZXI7" role="_fkuY">
+          <node concept="15tcJG" id="3rqhHT2ZYc0" role="1QScD9">
+            <node concept="2BPR$_" id="3rqhHT2ZYc4" role="15tcJI">
+              <ref role="2BPR$A" node="67Y8mp$Gkhk" resolve="red" />
+            </node>
+            <node concept="2BPR$_" id="3rqhHT2ZYip" role="15tcJI">
+              <ref role="2BPR$A" node="67Y8mp$HuFV" resolve="green" />
+            </node>
+          </node>
+          <node concept="_emDc" id="3rqhHT2ZXIb" role="2lDidJ">
+            <ref role="_emDf" node="67Y8mp$IHj_" resolve="ocean" />
+          </node>
+        </node>
+        <node concept="2vmpnb" id="3rqhHT2ZYFT" role="_fkuS" />
+      </node>
+      <node concept="_fkuZ" id="3rqhHT3Dln7" role="_fkp5">
+        <node concept="_fku$" id="3rqhHT3Dln8" role="_fkur" />
+        <node concept="1QScDb" id="3rqhHT3DlnD" role="_fkuY">
+          <node concept="15tcJG" id="3rqhHT3DlrW" role="1QScD9">
+            <node concept="2BPR$_" id="3rqhHT3Dl_W" role="15tcJI">
+              <ref role="2BPR$A" node="67Y8mp$HuFV" resolve="green" />
+            </node>
+            <node concept="2BPR$_" id="3rqhHT3DlDh" role="15tcJI">
+              <ref role="2BPR$A" node="67Y8mp$HuG1" resolve="blue" />
+            </node>
+          </node>
+          <node concept="_emDc" id="3rqhHT3Dlnm" role="2lDidJ">
+            <ref role="_emDf" node="67Y8mp$IHj_" resolve="ocean" />
+          </node>
+        </node>
+        <node concept="2vmpn$" id="3rqhHT3DlKc" role="_fkuS" />
       </node>
     </node>
     <node concept="_ixoA" id="3Y6fbK15FGn" role="_iOnB" />
