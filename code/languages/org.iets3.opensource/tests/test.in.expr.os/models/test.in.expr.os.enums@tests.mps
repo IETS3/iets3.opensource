@@ -157,7 +157,7 @@
       <concept id="7740953487933794886" name="org.iets3.core.expr.toplevel.structure.SectionMarker" flags="ng" index="1Ws0TD">
         <property id="7740953487933876080" name="label" index="1WsWdv" />
       </concept>
-      <concept id="4557392569141521968" name="org.iets3.core.expr.toplevel.structure.EnumNotIsTarget" flags="ng" index="1Y$79l">
+      <concept id="4557392569141521968" name="org.iets3.core.expr.toplevel.structure.EnumIsNotTarget" flags="ng" index="1Y$79l">
         <reference id="4557392569141521970" name="literal" index="1Y$79n" />
       </concept>
     </language>
@@ -293,6 +293,30 @@
     <node concept="_ixoA" id="6WstIz8RJ2o" role="_iOnB" />
     <node concept="_fkuM" id="6WstIz8RJh8" role="_iOnB">
       <property role="TrG5h" value="IsOneOf" />
+      <node concept="_fkuZ" id="3rqhHT4fDB0" role="_fkp5">
+        <node concept="_fku$" id="3rqhHT4fDB1" role="_fkur" />
+        <node concept="1QScDb" id="3rqhHT4fDBt" role="_fkuY">
+          <node concept="2JjPkS" id="3rqhHT4fDGC" role="1QScD9">
+            <ref role="2Jt$xV" node="67Y8mp$HuG1" resolve="blue" />
+          </node>
+          <node concept="_emDc" id="3rqhHT4fDBd" role="2lDidJ">
+            <ref role="_emDf" node="67Y8mp$IHj_" resolve="ocean" />
+          </node>
+        </node>
+        <node concept="2vmpnb" id="3rqhHT4fDNW" role="_fkuS" />
+      </node>
+      <node concept="_fkuZ" id="3rqhHT4fDO5" role="_fkp5">
+        <node concept="_fku$" id="3rqhHT4fDO6" role="_fkur" />
+        <node concept="1QScDb" id="3rqhHT4fDOH" role="_fkuY">
+          <node concept="1Y$79l" id="3rqhHT4fDTC" role="1QScD9">
+            <ref role="1Y$79n" node="67Y8mp$HuG1" resolve="blue" />
+          </node>
+          <node concept="_emDc" id="3rqhHT4fDOt" role="2lDidJ">
+            <ref role="_emDf" node="67Y8mp$IHj_" resolve="ocean" />
+          </node>
+        </node>
+        <node concept="2vmpn$" id="3rqhHT4fE1i" role="_fkuS" />
+      </node>
       <node concept="_fkuZ" id="6WstIz8RJnG" role="_fkp5">
         <node concept="_fku$" id="6WstIz8RJnH" role="_fkur" />
         <node concept="1QScDb" id="6WstIz8RJod" role="_fkuY">
@@ -396,18 +420,32 @@
         <node concept="_fku$" id="3rqhHT3Dln8" role="_fkur" />
         <node concept="1QScDb" id="3rqhHT3DlnD" role="_fkuY">
           <node concept="15tcJG" id="3rqhHT3DlrW" role="1QScD9">
-            <node concept="2BPR$_" id="3rqhHT3Dl_W" role="15tcJI">
-              <ref role="2BPR$A" node="67Y8mp$HuFV" resolve="green" />
-            </node>
             <node concept="2BPR$_" id="3rqhHT3DlDh" role="15tcJI">
               <ref role="2BPR$A" node="67Y8mp$HuG1" resolve="blue" />
+            </node>
+            <node concept="2BPR$_" id="3rqhHT3UMbi" role="15tcJI">
+              <ref role="2BPR$A" node="67Y8mp$HuFV" resolve="green" />
             </node>
           </node>
           <node concept="_emDc" id="3rqhHT3Dlnm" role="2lDidJ">
             <ref role="_emDf" node="67Y8mp$IHj_" resolve="ocean" />
           </node>
         </node>
-        <node concept="2vmpn$" id="3rqhHT3DlKc" role="_fkuS" />
+        <node concept="2vmpn$" id="3rqhHT4hYcE" role="_fkuS" />
+      </node>
+      <node concept="_fkuZ" id="3rqhHT3PibN" role="_fkp5">
+        <node concept="_fku$" id="3rqhHT3PibO" role="_fkur" />
+        <node concept="1QScDb" id="3rqhHT3Picj" role="_fkuY">
+          <node concept="15tcJG" id="3rqhHT3Pig_" role="1QScD9">
+            <node concept="2BPR$_" id="3rqhHT3PigB" role="15tcJI">
+              <ref role="2BPR$A" node="67Y8mp$HuG1" resolve="blue" />
+            </node>
+          </node>
+          <node concept="_emDc" id="3rqhHT3Pic2" role="2lDidJ">
+            <ref role="_emDf" node="67Y8mp$IHj_" resolve="ocean" />
+          </node>
+        </node>
+        <node concept="2vmpn$" id="3rqhHT3Tz1N" role="_fkuS" />
       </node>
     </node>
     <node concept="_ixoA" id="3Y6fbK15FGn" role="_iOnB" />
