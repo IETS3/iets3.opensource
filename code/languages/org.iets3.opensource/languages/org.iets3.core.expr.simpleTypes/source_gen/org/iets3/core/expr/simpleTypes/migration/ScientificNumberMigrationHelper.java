@@ -6,6 +6,7 @@ import org.jetbrains.mps.openapi.model.SNode;
 import java.util.regex.Pattern;
 import org.iets3.core.expr.base.runtime.runtime.PTF;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations;
+import java.util.Objects;
 import java.util.Deque;
 import jetbrains.mps.lang.migration.runtime.base.Problem;
 import org.iets3.core.expr.simpleTypes.behavior.NumberLiteral__BehaviorDescriptor;
@@ -29,7 +30,11 @@ public class ScientificNumberMigrationHelper {
       } else if (indexOfE > 0 && !(Character.isDigit(value.charAt(indexOfE - 1)))) {
         value = value.substring(0, indexOfE) + "0" + value.substring(indexOfE);
       }
-      SPropertyOperations.assign(literal, PROPS.value$iWTK, value);
+
+      if (!(Objects.equals(value, SPropertyOperations.getString(literal, PROPS.value$iWTK)))) {
+        // Do not reassign the value if it hasn't changed, otherwise hex numbers in tests get broken.
+        SPropertyOperations.assign(literal, PROPS.value$iWTK, value);
+      }
     }
     return literal;
   }

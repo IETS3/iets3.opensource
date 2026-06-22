@@ -18,8 +18,11 @@ import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
 import org.jetbrains.mps.openapi.model.SNode;
 import com.mbeddr.mpsutil.grammarcells.runtime.GrammarCellsUtil;
 import jetbrains.mps.openapi.editor.EditorContext;
+import org.iets3.core.expr.base.plugin.EditorCustomizationConfigHelper;
 import com.mbeddr.mpsutil.grammarcells.runtime.FlagSubstituteMenuItem;
 import com.mbeddr.mpsutil.grammarcells.runtime.DefaultFlagModelAccess;
+import org.jetbrains.annotations.Nullable;
+import org.jetbrains.annotations.NotNull;
 import jetbrains.mps.openapi.editor.menus.transformation.TransformationMenuItem;
 import jetbrains.mps.openapi.editor.menus.transformation.TransformationMenuContext;
 import jetbrains.mps.openapi.editor.cells.SubstituteAction;
@@ -57,8 +60,22 @@ public class GrammarActionsDescriptor extends AbstractGrammarActionDescriptor im
               for (final SAbstractConcept subconcept : GrammarCellsUtil.getVisibleSubconceptsNonAbstract(outputConcept, _context.getModel(), ProtocolMapCatalog_Editor.class, _context.getEditorContext())) {
                 EditorContext editorContext = _context.getEditorContext();
                 boolean applicable = GrammarCellsUtil.canBeChild(subconcept, _context);
+                applicable &= new Object() {
+                  public boolean query() {
+                    return EditorCustomizationConfigHelper.getConfig().isFlagCellSubstitutionActivated(EditorCustomizationConfigHelper.getIdentifier(CONCEPTS.ProtocolMapCatalog$xA, PROPS.public$9JFf), subconcept, substitutedNode, parentNode, editorContext);
+                  }
+                }.query();
                 if (applicable) {
-                  ListSequence.fromList(result).addElement(new FlagSubstituteMenuItem(parentNode, _context.getCurrentTargetNode(), subconcept, "public", _context, new DefaultFlagModelAccess(PROPS.public$9JFf)) {});
+                  ListSequence.fromList(result).addElement(new FlagSubstituteMenuItem(parentNode, _context.getCurrentTargetNode(), subconcept, "public", _context, new DefaultFlagModelAccess(PROPS.public$9JFf)) {
+                    @Nullable
+                    @Override
+                    public String getDescriptionText(@NotNull String pattern) {
+                      String originalText = super.getDescriptionText(pattern);
+                      EditorContext editorContext = _context.getEditorContext();
+                      String descriptiontext = EditorCustomizationConfigHelper.getConfig().getFlagCellDescriptionText(EditorCustomizationConfigHelper.getIdentifier(CONCEPTS.ProtocolMapCatalog$xA, PROPS.public$9JFf), originalText, editorContext);
+                      return ((descriptiontext != null && descriptiontext.length() > 0) ? descriptiontext : originalText);
+                    }
+                  });
                 }
               }
             }
@@ -80,8 +97,22 @@ public class GrammarActionsDescriptor extends AbstractGrammarActionDescriptor im
               for (final SAbstractConcept subconcept : GrammarCellsUtil.getVisibleSubconceptsNonAbstract(outputConcept, _context.getModel(), ProtocolMap_Editor.class, _context.getEditorContext())) {
                 EditorContext editorContext = _context.getEditorContext();
                 boolean applicable = GrammarCellsUtil.canBeChild(subconcept, _context);
+                applicable &= new Object() {
+                  public boolean query() {
+                    return EditorCustomizationConfigHelper.getConfig().isFlagCellSubstitutionActivated(EditorCustomizationConfigHelper.getIdentifier(CONCEPTS.ProtocolMap$j3, PROPS.public$9JFf), subconcept, substitutedNode, parentNode, editorContext);
+                  }
+                }.query();
                 if (applicable) {
-                  ListSequence.fromList(result).addElement(new FlagSubstituteMenuItem(parentNode, _context.getCurrentTargetNode(), subconcept, "public", _context, new DefaultFlagModelAccess(PROPS.public$9JFf)) {});
+                  ListSequence.fromList(result).addElement(new FlagSubstituteMenuItem(parentNode, _context.getCurrentTargetNode(), subconcept, "public", _context, new DefaultFlagModelAccess(PROPS.public$9JFf)) {
+                    @Nullable
+                    @Override
+                    public String getDescriptionText(@NotNull String pattern) {
+                      String originalText = super.getDescriptionText(pattern);
+                      EditorContext editorContext = _context.getEditorContext();
+                      String descriptiontext = EditorCustomizationConfigHelper.getConfig().getFlagCellDescriptionText(EditorCustomizationConfigHelper.getIdentifier(CONCEPTS.ProtocolMap$j3, PROPS.public$9JFf), originalText, editorContext);
+                      return ((descriptiontext != null && descriptiontext.length() > 0) ? descriptiontext : originalText);
+                    }
+                  });
                 }
               }
             }
