@@ -1200,7 +1200,7 @@
     <property role="TrG5h" value="EnumIsInTarget" />
     <property role="34LRSv" value="isIn" />
     <property role="R4oN_" value="check the enumeration literal against several literals" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <ref role="1TJDcQ" node="4L5R3LmDtPG" resolve="AbstractEnumInTarget" />
     <node concept="PrWs8" id="6WstIz8MK68" role="PzmwI">
       <ref role="PrY4T" to="hm2y:7NJy08a3O9a" resolve="IDotTarget" />
     </node>
@@ -1345,7 +1345,7 @@
     <property role="3GE5qa" value="enum.oneof" />
     <property role="EcuMT" value="7850247783016916264" />
     <property role="2eQzMB" value="71934284-d7d1-45ee-a054-8c072591085f" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <ref role="1TJDcQ" node="4L5R3LmDtPG" resolve="AbstractEnumInTarget" />
     <node concept="PrWs8" id="6NLFGgDxmkD" role="PzmwI">
       <ref role="PrY4T" to="hm2y:7NJy08a3O9a" resolve="IDotTarget" />
     </node>
@@ -1356,6 +1356,12 @@
       <property role="IQ2ns" value="7850247783016916266" />
       <ref role="20lvS9" node="6WstIz8MKZd" resolve="EnumIsInSelector" />
     </node>
+  </node>
+  <node concept="1TIwiD" id="4L5R3LmDtPG">
+    <property role="EcuMT" value="5496041071985417580" />
+    <property role="TrG5h" value="AbstractEnumInTarget" />
+    <property role="R5$K7" value="true" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" />
   </node>
 </model>
 
