@@ -2889,33 +2889,6 @@
         </node>
       </node>
     </node>
-    <node concept="3EZMnI" id="3rqhHT3HmwM" role="6VMZX">
-      <node concept="l2Vlx" id="3rqhHT3HmwN" role="2iSdaV" />
-      <node concept="3F0ifn" id="3rqhHT3HmwO" role="3EZMnx">
-        <property role="3F0ifm" value="reduced:" />
-      </node>
-      <node concept="1HlG4h" id="3rqhHT3HmwP" role="3EZMnx">
-        <node concept="1HfYo3" id="3rqhHT3HmwQ" role="1HlULh">
-          <node concept="3TQlhw" id="3rqhHT3HmwR" role="1Hhtcw">
-            <node concept="3clFbS" id="3rqhHT3HmwS" role="2VODD2">
-              <node concept="3clFbF" id="3rqhHT3HmwT" role="3cqZAp">
-                <node concept="2OqwBi" id="3rqhHT3HmwU" role="3clFbG">
-                  <node concept="2OqwBi" id="3rqhHT3HmwV" role="2Oq$k0">
-                    <node concept="pncrf" id="3rqhHT3HmwW" role="2Oq$k0" />
-                    <node concept="2qgKlT" id="3rqhHT3HmwX" role="2OqNvi">
-                      <ref role="37wK5l" to="nu60:6NLFGgDxml_" resolve="reduce" />
-                    </node>
-                  </node>
-                  <node concept="2qgKlT" id="3rqhHT3HmwY" role="2OqNvi">
-                    <ref role="37wK5l" to="pbu6:4Y0vh0cfqjE" resolve="renderReadable" />
-                  </node>
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
-      </node>
-    </node>
   </node>
   <node concept="24kQdi" id="5VEHrQcTA57">
     <ref role="1XX52x" to="yv47:ub9nkyK62f" resolve="Library" />
