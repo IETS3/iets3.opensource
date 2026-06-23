@@ -38,7 +38,6 @@
     <import index="lmd" ref="r:a6074908-e483-4c8e-80b5-5dbf8b24df4c(org.iets3.core.expr.path.structure)" implicit="true" />
     <import index="tpce" ref="r:00000000-0000-4000-0000-011c89590292(jetbrains.mps.lang.structure.structure)" implicit="true" />
     <import index="tpek" ref="r:00000000-0000-4000-0000-011c895902c0(jetbrains.mps.baseLanguage.behavior)" implicit="true" />
-    <import index="guwi" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.io(JDK/)" implicit="true" />
     <import index="3673" ref="r:78633c85-d020-485e-aaa3-59e2daa3b826(com.mbeddr.mpsutil.interpreter.structure)" implicit="true" />
     <import index="kqnq" ref="r:7628c3bd-6988-4d33-9682-86b8cef4b8c0(com.mbeddr.mpsutil.interpreter.behavior)" implicit="true" />
     <import index="pbu6" ref="r:83e946de-2a7f-4a4c-b3c9-4f671aa7f2db(org.iets3.core.expr.base.behavior)" implicit="true" />
@@ -4391,20 +4390,6 @@
                           <node concept="1W57fq" id="3fg81r5KlVF" role="lGtFl">
                             <node concept="3IZrLx" id="3fg81r5KlVG" role="3IZSJc">
                               <node concept="3clFbS" id="3fg81r5KlVH" role="2VODD2">
-                                <node concept="3clFbF" id="3fg81r5NzDy" role="3cqZAp">
-                                  <node concept="2OqwBi" id="3fg81r5NzDv" role="3clFbG">
-                                    <node concept="10M0yZ" id="3fg81r5NzDw" role="2Oq$k0">
-                                      <ref role="1PxDUh" to="wyt6:~System" resolve="System" />
-                                      <ref role="3cqZAo" to="wyt6:~System.out" resolve="out" />
-                                    </node>
-                                    <node concept="liA8E" id="3fg81r5NzDx" role="2OqNvi">
-                                      <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String)" resolve="println" />
-                                      <node concept="Xl_RD" id="3fg81r5NzZ6" role="37wK5m">
-                                        <property role="Xl_RC" value="--------------&gt; is" />
-                                      </node>
-                                    </node>
-                                  </node>
-                                </node>
                                 <node concept="3clFbF" id="3fg81r5KlVI" role="3cqZAp">
                                   <node concept="2OqwBi" id="3fg81r5KlVJ" role="3clFbG">
                                     <node concept="2OqwBi" id="3fg81r5KlVK" role="2Oq$k0">
