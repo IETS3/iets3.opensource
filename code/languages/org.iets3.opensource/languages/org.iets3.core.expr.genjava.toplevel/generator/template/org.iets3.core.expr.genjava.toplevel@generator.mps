@@ -4394,8 +4394,8 @@
                                 <node concept="3clFbF" id="3fg81r5NzDy" role="3cqZAp">
                                   <node concept="2OqwBi" id="3fg81r5NzDv" role="3clFbG">
                                     <node concept="10M0yZ" id="3fg81r5NzDw" role="2Oq$k0">
-                                      <ref role="1PxDUh" to="wyt6:~System" />
-                                      <ref role="3cqZAo" to="wyt6:~System.out" />
+                                      <ref role="1PxDUh" to="wyt6:~System" resolve="System" />
+                                      <ref role="3cqZAo" to="wyt6:~System.out" resolve="out" />
                                     </node>
                                     <node concept="liA8E" id="3fg81r5NzDx" role="2OqNvi">
                                       <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String)" resolve="println" />
@@ -4410,7 +4410,7 @@
                                     <node concept="2OqwBi" id="3fg81r5KlVK" role="2Oq$k0">
                                       <node concept="30H73N" id="3fg81r5KlVL" role="2Oq$k0" />
                                       <node concept="3TrEf2" id="3fg81r5KlVM" role="2OqNvi">
-                                        <ref role="3Tt5mk" to="hm2y:7NJy08a3O9b" />
+                                        <ref role="3Tt5mk" to="hm2y:7NJy08a3O9b" resolve="target" />
                                       </node>
                                     </node>
                                     <node concept="1mIQ4w" id="3fg81r5KlVN" role="2OqNvi">
@@ -4423,11 +4423,9 @@
                               </node>
                             </node>
                             <node concept="gft3U" id="3fg81r5KlVP" role="UU_$l">
-                              <node concept="3fqX7Q" id="3fg81r5N14U" role="gfFT$">
-                                <node concept="3fqX7Q" id="3fg81r5N14W" role="3fr31v">
-                                  <node concept="37vLTw" id="3fg81r5N14X" role="3fr31v">
-                                    <ref role="3cqZAo" node="7hc$_$CPBuD" resolve="b" />
-                                  </node>
+                              <node concept="3fqX7Q" id="3fg81r5N14W" role="gfFT$">
+                                <node concept="37vLTw" id="3fg81r5N14X" role="3fr31v">
+                                  <ref role="3cqZAo" node="7hc$_$CPBuD" resolve="b" />
                                 </node>
                               </node>
                             </node>

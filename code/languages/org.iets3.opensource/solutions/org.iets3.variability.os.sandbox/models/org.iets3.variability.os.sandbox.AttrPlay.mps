@@ -9,7 +9,7 @@
   <imports />
   <registry>
     <language id="7b68d745-a7b8-48b9-bd9c-05c0f8725a35" name="org.iets3.core.base">
-      <concept id="7831630342157089621" name="org.iets3.core.base.structure.IDetectNeedToRunManually" flags="ngI" index="0Rz4o">
+      <concept id="7831630342157089621" name="org.iets3.core.base.structure.IDetectNeedToRunManually" flags="ng" index="0Rz4o">
         <property id="7831630342157089649" name="__hash" index="0Rz4W" />
       </concept>
     </language>
@@ -62,7 +62,7 @@
       <concept id="8997672845436117511" name="org.iets3.variability.featuremodel.base.structure.FeatureAttribute" flags="ng" index="21IWn0">
         <child id="8997672845436636231" name="type" index="21GYI0" />
       </concept>
-      <concept id="3414566187106618468" name="org.iets3.variability.featuremodel.base.structure.ICalculateHashForUpdateWarning" flags="ngI" index="bVzmZ">
+      <concept id="3414566187106618468" name="org.iets3.variability.featuremodel.base.structure.ICalculateHashForUpdateWarning" flags="ng" index="bVzmZ">
         <property id="3414566187106619445" name="__updateHash" index="bVyBI" />
       </concept>
       <concept id="3989254429233029895" name="org.iets3.variability.featuremodel.base.structure.Feature" flags="ng" index="12iwV3">
@@ -109,17 +109,17 @@
       <property role="TrG5h" value="CBase" />
       <property role="33ZQ4u" value="true" />
       <property role="1nQUAq" value="true" />
-      <ref role="rqKBe" node="36USfKuxwcw" resolve="FM9" />
+      <ref role="rqKBe" node="36USfKuxwcw" />
       <node concept="rqCGG" id="36USfKuxwcx" role="rqCGo">
         <node concept="rqKBd" id="36USfKuxwcz" role="rqKBa">
-          <ref role="rqKBe" node="36USfKuxwcy" resolve="A" />
+          <ref role="rqKBe" node="36USfKuxwcy" />
           <node concept="rqCGG" id="36USfKuxwcA" role="rqCGo">
             <node concept="3HVKVk" id="36USfKuxwcD" role="3HVKVh">
-              <ref role="3HS9Pa" node="36USfKuxwc$" resolve="b" />
+              <ref role="3HS9Pa" node="36USfKuxwc$" />
             </node>
             <node concept="3HVKVk" id="36USfKuxwcE" role="3HVKVh">
               <property role="2fdZ4z" value="zJQZm6SRYR/manual" />
-              <ref role="3HS9Pa" node="36USfKuxwc_" resolve="c" />
+              <ref role="3HS9Pa" node="36USfKuxwc_" />
               <node concept="30bdrP" id="36USfKuxwcG" role="3HYO9C">
                 <property role="30bdrQ" value="foo" />
               </node>
@@ -137,15 +137,15 @@
       <property role="0Rz4W" value="1515577359" />
       <property role="TrG5h" value="CDerived" />
       <property role="1nQUAq" value="true" />
-      <ref role="rqKBe" node="36USfKuxwcw" resolve="FM9" />
+      <ref role="rqKBe" node="36USfKuxwcw" />
       <node concept="rqCGG" id="1bRqh6WViw5" role="rqCGo">
         <node concept="rqKBd" id="1bRqh6WViw6" role="rqKBa">
           <property role="3BMj5M" value="5QKr2dW9gDW/userTrue" />
-          <ref role="rqKBe" node="36USfKuxwcy" resolve="A" />
+          <ref role="rqKBe" node="36USfKuxwcy" />
           <node concept="rqCGG" id="1bRqh6WViw7" role="rqCGo">
             <node concept="3HVKVk" id="1bRqh6WViw8" role="3HVKVh">
               <property role="2fdZ4z" value="zJQZm6SRYR/manual" />
-              <ref role="3HS9Pa" node="36USfKuxwc$" resolve="b" />
+              <ref role="3HS9Pa" node="36USfKuxwc$" />
               <node concept="30bXRB" id="21ivJ6Av4cA" role="3HYO9C">
                 <property role="30bXRw" value="700" />
               </node>
@@ -153,7 +153,7 @@
             <node concept="3HVKVk" id="1bRqh6WViw9" role="3HVKVh">
               <property role="lyGKx" value="true" />
               <property role="2fdZ4z" value="zJQZm6SRYR/manual" />
-              <ref role="3HS9Pa" node="36USfKuxwc_" resolve="c" />
+              <ref role="3HS9Pa" node="36USfKuxwc_" />
               <node concept="30bdrP" id="21ivJ6Av4eQ" role="3HYO9C">
                 <property role="30bdrQ" value="foo" />
               </node>
@@ -162,7 +162,7 @@
         </node>
       </node>
       <node concept="30ne8c" id="1bRqh6WViz6" role="30ne9f">
-        <ref role="30ne9N" node="36USfKuxwct" resolve="CBase" />
+        <ref role="30ne9N" node="36USfKuxwct" />
       </node>
     </node>
     <node concept="12i7jc" id="21ivJ6Atd7G" role="12i2BX" />
