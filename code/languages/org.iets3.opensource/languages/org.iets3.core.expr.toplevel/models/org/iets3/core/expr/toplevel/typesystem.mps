@@ -4465,6 +4465,7 @@
   </node>
   <node concept="1YbPZF" id="4L5R3LnUBuz">
     <property role="TrG5h" value="typeof_AbstractEnumInTarget" />
+    <property role="3GE5qa" value="enum.oneof" />
     <node concept="3clFbS" id="4L5R3LnUBu$" role="18ibNy">
       <node concept="1Z5TYs" id="4L5R3LnUBQi" role="3cqZAp">
         <node concept="mw_s8" id="4L5R3LnUBQj" role="1ZfhKB">

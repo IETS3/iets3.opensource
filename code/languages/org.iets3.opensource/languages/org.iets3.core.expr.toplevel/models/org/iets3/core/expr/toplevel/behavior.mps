@@ -10306,6 +10306,7 @@
     </node>
   </node>
   <node concept="13h7C7" id="4L5R3LmDtPI">
+    <property role="3GE5qa" value="enum.oneof" />
     <ref role="13h7C2" to="yv47:4L5R3LmDtPG" resolve="AbstractEnumInTarget" />
     <node concept="13i0hz" id="3wraVjnnC5i" role="13h7CS">
       <property role="TrG5h" value="singleOp" />

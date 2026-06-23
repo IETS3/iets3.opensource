@@ -2258,6 +2258,7 @@
     <ref role="1M2myG" to="yv47:6NLFGgDxmkC" resolve="EnumIsNotInTarget" />
   </node>
   <node concept="1M2fIO" id="4L5R3LnUzsb">
+    <property role="3GE5qa" value="enum.oneof" />
     <ref role="1M2myG" to="yv47:4L5R3LmDtPG" resolve="AbstractEnumInTarget" />
     <node concept="9S07l" id="4L5R3LnU$TW" role="9Vyp8">
       <node concept="3clFbS" id="4L5R3LnU$TX" role="2VODD2">

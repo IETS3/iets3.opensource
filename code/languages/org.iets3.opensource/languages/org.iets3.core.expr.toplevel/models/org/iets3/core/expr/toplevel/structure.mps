@@ -1361,6 +1361,7 @@
     <property role="EcuMT" value="5496041071985417580" />
     <property role="TrG5h" value="AbstractEnumInTarget" />
     <property role="R5$K7" value="true" />
+    <property role="3GE5qa" value="enum.oneof" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" />
   </node>
 </model>
