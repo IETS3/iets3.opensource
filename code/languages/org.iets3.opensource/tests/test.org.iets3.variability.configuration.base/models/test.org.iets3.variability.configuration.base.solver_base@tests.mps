@@ -123,7 +123,7 @@
       <concept id="6451706574537082687" name="com.mbeddr.mpsutil.blutil.structure.ShortStaticMethodCall" flags="ng" index="NRdvd" />
     </language>
     <language id="7b68d745-a7b8-48b9-bd9c-05c0f8725a35" name="org.iets3.core.base">
-      <concept id="7831630342157089621" name="org.iets3.core.base.structure.IDetectNeedToRunManually" flags="ng" index="0Rz4o">
+      <concept id="7831630342157089621" name="org.iets3.core.base.structure.IDetectNeedToRunManually" flags="ngI" index="0Rz4o">
         <property id="7831630342157089649" name="__hash" index="0Rz4W" />
       </concept>
     </language>
@@ -165,7 +165,7 @@
       </concept>
     </language>
     <language id="165f1d05-2506-4544-895e-1424f54166ec" name="org.iets3.variability.featuremodel.base">
-      <concept id="3414566187106618468" name="org.iets3.variability.featuremodel.base.structure.ICalculateHashForUpdateWarning" flags="ng" index="bVzmZ">
+      <concept id="3414566187106618468" name="org.iets3.variability.featuremodel.base.structure.ICalculateHashForUpdateWarning" flags="ngI" index="bVzmZ">
         <property id="3414566187106619445" name="__updateHash" index="bVyBI" />
       </concept>
       <concept id="3989254429233029895" name="org.iets3.variability.featuremodel.base.structure.Feature" flags="ng" index="12iwV3">
@@ -542,17 +542,17 @@
           <property role="TrG5h" value="CM" />
           <property role="0Rz4W" value="1373923751" />
           <property role="1nQUAq" value="true" />
-          <ref role="rqKBe" node="4XfgEhEe6vi" />
+          <ref role="rqKBe" node="4XfgEhEe6vi" resolve="M" />
           <node concept="rqCGG" id="4XfgEhEe6vM" role="rqCGo">
             <node concept="rqKBd" id="4XfgEhEe6vN" role="rqKBa">
-              <ref role="rqKBe" node="4XfgEhEe6vk" />
+              <ref role="rqKBe" node="4XfgEhEe6vk" resolve="A" />
               <node concept="rqCGG" id="4XfgEhEe6vO" role="rqCGo" />
               <node concept="3xLA65" id="4XfgEhEe8O$" role="lGtFl">
                 <property role="TrG5h" value="featA" />
               </node>
             </node>
             <node concept="rqKBd" id="4XfgEhEe6vP" role="rqKBa">
-              <ref role="rqKBe" node="4XfgEhEe6vl" />
+              <ref role="rqKBe" node="4XfgEhEe6vl" resolve="B" />
               <node concept="rqCGG" id="4XfgEhEe6vQ" role="rqCGo" />
               <node concept="3xLA65" id="4XfgEhEe8O_" role="lGtFl">
                 <property role="TrG5h" value="featB" />
@@ -621,7 +621,7 @@
           <property role="1nQUAq" value="true" />
           <property role="TrG5h" value="CM" />
           <property role="1n_0Gn" value="true" />
-          <ref role="rqKBe" node="7_IBAC_WHc4" />
+          <ref role="rqKBe" node="7_IBAC_WHc4" resolve="MAMA" />
           <node concept="rqCGG" id="3scZu9zdPJR" role="rqCGo" />
           <node concept="3xLA65" id="3scZu9ze0xL" role="lGtFl">
             <property role="TrG5h" value="conf" />

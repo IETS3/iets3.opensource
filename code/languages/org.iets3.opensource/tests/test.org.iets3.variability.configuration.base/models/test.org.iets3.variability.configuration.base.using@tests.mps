@@ -35,7 +35,7 @@
       </concept>
     </language>
     <language id="7b68d745-a7b8-48b9-bd9c-05c0f8725a35" name="org.iets3.core.base">
-      <concept id="7831630342157089621" name="org.iets3.core.base.structure.IDetectNeedToRunManually" flags="ng" index="0Rz4o">
+      <concept id="7831630342157089621" name="org.iets3.core.base.structure.IDetectNeedToRunManually" flags="ngI" index="0Rz4o">
         <property id="7831630342157089649" name="__hash" index="0Rz4W" />
       </concept>
     </language>
@@ -67,7 +67,7 @@
       </concept>
     </language>
     <language id="165f1d05-2506-4544-895e-1424f54166ec" name="org.iets3.variability.featuremodel.base">
-      <concept id="3414566187106618468" name="org.iets3.variability.featuremodel.base.structure.ICalculateHashForUpdateWarning" flags="ng" index="bVzmZ">
+      <concept id="3414566187106618468" name="org.iets3.variability.featuremodel.base.structure.ICalculateHashForUpdateWarning" flags="ngI" index="bVzmZ">
         <property id="3414566187106619445" name="__updateHash" index="bVyBI" />
       </concept>
       <concept id="7725497592275044117" name="org.iets3.variability.featuremodel.base.structure.FMParam" flags="ng" index="2vxJKP">
@@ -125,7 +125,7 @@
           <node concept="1lrKzq" id="3VBefHGStH0" role="1lrLG6">
             <node concept="2vxJKP" id="3VBefHGStH1" role="2vxkbM">
               <property role="TrG5h" value="m" />
-              <ref role="2vxkaC" node="3GyiqLFavVU" />
+              <ref role="2vxkaC" node="3GyiqLFavVU" resolve="M" />
             </node>
           </node>
         </node>
@@ -140,7 +140,7 @@
           <property role="1n_0Gn" value="true" />
           <property role="26YOJW" value="" />
           <property role="bROok" value="573354694" />
-          <ref role="rqKBe" node="3GyiqLFavWg" />
+          <ref role="rqKBe" node="3GyiqLFavWg" resolve="Q" />
           <node concept="7CXmI" id="3VBefHGSzlu" role="lGtFl">
             <node concept="29bkU" id="3VBefHGSzlv" role="7EUXB">
               <node concept="2PQEqo" id="3VBefHGSzrt" role="3lydCh">
@@ -178,7 +178,7 @@
           <node concept="1lrKzq" id="3VBefHGX1BQ" role="1lrLG6">
             <node concept="2vxJKP" id="3VBefHGX1BR" role="2vxkbM">
               <property role="TrG5h" value="m" />
-              <ref role="2vxkaC" node="3VBefHGWXlo" />
+              <ref role="2vxkaC" node="3VBefHGWXlo" resolve="M" />
             </node>
           </node>
         </node>
@@ -191,10 +191,10 @@
           <property role="1n_0Gn" value="true" />
           <property role="26YOJW" value="" />
           <property role="bROok" value="2033930471" />
-          <ref role="rqKBe" node="3VBefHGWXlp" />
+          <ref role="rqKBe" node="3VBefHGWXlp" resolve="M" />
           <node concept="rqCGG" id="3VBefHGX1N2" role="rqCGo">
             <node concept="rqKBd" id="3VBefHGX1N3" role="rqKBa">
-              <ref role="rqKBe" node="3VBefHGWXls" />
+              <ref role="rqKBe" node="3VBefHGWXls" resolve="A" />
               <node concept="rqCGG" id="3VBefHGX1N5" role="rqCGo" />
             </node>
           </node>
@@ -208,11 +208,11 @@
           <property role="1n_0Gn" value="true" />
           <property role="26YOJW" value="" />
           <property role="bROok" value="573354694" />
-          <ref role="rqKBe" node="3VBefHGX1BJ" />
+          <ref role="rqKBe" node="3VBefHGX1BJ" resolve="Q" />
           <node concept="rqCGG" id="3VBefHGX1Cn" role="rqCGo" />
           <node concept="1l23a_" id="3VBefHGX1F5" role="1l23gV">
-            <ref role="1l2MNE" node="3VBefHGX1BR" />
-            <ref role="1l2N9i" node="3VBefHGX1MZ" />
+            <ref role="1l2MNE" node="3VBefHGX1BR" resolve="m" />
+            <ref role="1l2N9i" node="3VBefHGX1MZ" resolve="m" />
             <node concept="7CXmI" id="3VBefHGX1SY" role="lGtFl">
               <node concept="1TM$A" id="3VBefHGX1SZ" role="7EUXB">
                 <node concept="2PYRI3" id="3VBefHGX2yJ" role="3lydEf">
@@ -222,8 +222,8 @@
             </node>
           </node>
           <node concept="1l23a_" id="3VBefHGX1HD" role="1l23gV">
-            <ref role="1l2MNE" node="3VBefHGX1BR" />
-            <ref role="1l2N9i" node="3VBefHGX1MZ" />
+            <ref role="1l2MNE" node="3VBefHGX1BR" resolve="m" />
+            <ref role="1l2N9i" node="3VBefHGX1MZ" resolve="m" />
             <node concept="7CXmI" id="3VBefHGX1SR" role="lGtFl">
               <node concept="1TM$A" id="3VBefHGX1SS" role="7EUXB">
                 <node concept="2PYRI3" id="3VBefHGX1SW" role="3lydEf">

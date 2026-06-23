@@ -27,7 +27,7 @@
       <concept id="7554398283339757344" name="org.iets3.core.expr.collections.structure.ListType" flags="ng" index="3iBYCm" />
     </language>
     <language id="7b68d745-a7b8-48b9-bd9c-05c0f8725a35" name="org.iets3.core.base">
-      <concept id="229512757698888199" name="org.iets3.core.base.structure.IOptionallyNamed" flags="ng" index="pfQq$">
+      <concept id="229512757698888199" name="org.iets3.core.base.structure.IOptionallyNamed" flags="ngI" index="pfQq$">
         <child id="229512757698888936" name="optionalName" index="pfQ1b" />
       </concept>
       <concept id="229512757698888202" name="org.iets3.core.base.structure.OptionalNameSpecifier" flags="ng" index="pfQqD">
@@ -35,7 +35,7 @@
       </concept>
     </language>
     <language id="cfaa4966-b7d5-4b69-b66a-309a6e1a7290" name="org.iets3.core.expr.base">
-      <concept id="4261931054731905240" name="org.iets3.core.expr.base.structure.IContainExpressionParam" flags="ng" index="2lDidI">
+      <concept id="4261931054731905240" name="org.iets3.core.expr.base.structure.IContainExpressionParam" flags="ngI" index="2lDidI">
         <child id="4261931054731905241" name="expr" index="2lDidJ" />
       </concept>
       <concept id="1019070541450016346" name="org.iets3.core.expr.base.structure.TupleValue" flags="ng" index="m5g4o">
@@ -45,10 +45,10 @@
         <child id="1019070541450015931" name="elementTypes" index="m5gfT" />
       </concept>
       <concept id="2403760773179476914" name="org.iets3.core.expr.base.structure.NCopiesOp" flags="ng" index="ze_g2" />
-      <concept id="7089558164905593724" name="org.iets3.core.expr.base.structure.IOptionallyTyped" flags="ng" index="2zM23E">
+      <concept id="7089558164905593724" name="org.iets3.core.expr.base.structure.IOptionallyTyped" flags="ngI" index="2zM23E">
         <child id="7089558164905593725" name="type" index="2zM23F" />
       </concept>
-      <concept id="7071042522334260296" name="org.iets3.core.expr.base.structure.ITyped" flags="ng" index="2_iKZX">
+      <concept id="7071042522334260296" name="org.iets3.core.expr.base.structure.ITyped" flags="ngI" index="2_iKZX">
         <child id="8811147530085329321" name="type" index="2S399n" />
       </concept>
       <concept id="5115872837156578546" name="org.iets3.core.expr.base.structure.PlusExpression" flags="ng" index="30dDZf" />
@@ -297,12 +297,12 @@
       <node concept="mXNUv" id="ijyib_loZT" role="_fkp5">
         <property role="xVyv2" value="the argument must be greater than 0" />
         <node concept="_emDc" id="5a86BD1bm7V" role="mXJVd">
-          <ref role="_emDf" node="5a86BD1blUe" />
+          <ref role="_emDf" node="5a86BD1blUe" resolve="nCopies1" />
         </node>
       </node>
       <node concept="mXNUv" id="ijyib_lPJh" role="_fkp5">
         <node concept="_emDc" id="5a86BD1bpmG" role="mXJVd">
-          <ref role="_emDf" node="5a86BD1bm8f" />
+          <ref role="_emDf" node="5a86BD1bm8f" resolve="nCopies2" />
         </node>
       </node>
       <node concept="_fkuZ" id="ijyib_kqA1" role="_fkp5">
@@ -328,7 +328,7 @@
           </node>
         </node>
         <node concept="_emDc" id="5a86BD12UXi" role="_fkuY">
-          <ref role="_emDf" node="5a86BD12UX4" />
+          <ref role="_emDf" node="5a86BD12UX4" resolve="nCopies3" />
         </node>
       </node>
       <node concept="_fkuZ" id="ijyib_kjre" role="_fkp5">
@@ -656,7 +656,7 @@
           </node>
         </node>
         <node concept="_emDc" id="5a86BD1brBi" role="_fkuY">
-          <ref role="_emDf" node="5a86BD1bpn0" />
+          <ref role="_emDf" node="5a86BD1bpn0" resolve="nCopies4" />
         </node>
       </node>
       <node concept="_fkuZ" id="3mhgBZp5pUU" role="_fkp5">
@@ -666,7 +666,7 @@
             <property role="30bXRw" value="0" />
           </node>
           <node concept="_emDc" id="3mhgBZp5pV7" role="2lDidJ">
-            <ref role="_emDf" node="3mhgBZp5pKq" />
+            <ref role="_emDf" node="3mhgBZp5pKq" resolve="t" />
           </node>
         </node>
         <node concept="30bXRB" id="3mhgBZp5q1Q" role="_fkuS">
@@ -696,7 +696,7 @@
         <node concept="3nOhSe" id="6HHp2WmY4dT" role="_fkuY">
           <property role="3nOAFM" value="0" />
           <node concept="_emDc" id="6HHp2WmY4hj" role="3nOhSx">
-            <ref role="_emDf" node="6HHp2WmY4cI" />
+            <ref role="_emDf" node="6HHp2WmY4cI" resolve="t1" />
           </node>
         </node>
         <node concept="30bXRB" id="6HHp2WmY4dV" role="_fkuS">
@@ -711,7 +711,7 @@
         <node concept="3nOhSe" id="6HHp2WmY4dZ" role="_fkuY">
           <property role="3nOAFM" value="1" />
           <node concept="_emDc" id="6HHp2WmY4hn" role="3nOhSx">
-            <ref role="_emDf" node="6HHp2WmY4cI" />
+            <ref role="_emDf" node="6HHp2WmY4cI" resolve="t1" />
           </node>
         </node>
         <node concept="30bXRB" id="6HHp2WmY4e1" role="_fkuS">
@@ -768,7 +768,7 @@
         <node concept="3nOhSe" id="3aItn4K2fsZ" role="_fkuY">
           <property role="3nOAFM" value="0" />
           <node concept="_emDc" id="3aItn4K2ft0" role="3nOhSx">
-            <ref role="_emDf" node="3aItn4K2fqa" />
+            <ref role="_emDf" node="3aItn4K2fqa" resolve="t2" />
           </node>
         </node>
         <node concept="30bXRB" id="3aItn4K2ft1" role="_fkuS">
@@ -780,7 +780,7 @@
         <node concept="3nOhSe" id="3aItn4K2ft4" role="_fkuY">
           <property role="3nOAFM" value="1" />
           <node concept="_emDc" id="3aItn4K2ft5" role="3nOhSx">
-            <ref role="_emDf" node="3aItn4K2fqa" />
+            <ref role="_emDf" node="3aItn4K2fqa" resolve="t2" />
           </node>
         </node>
         <node concept="30bdrP" id="3aItn4K2ft6" role="_fkuS">
@@ -792,7 +792,7 @@
         <node concept="3nOhSe" id="3aItn4K2ft9" role="_fkuY">
           <property role="3nOAFM" value="2" />
           <node concept="_emDc" id="3aItn4K2fta" role="3nOhSx">
-            <ref role="_emDf" node="3aItn4K2fqa" />
+            <ref role="_emDf" node="3aItn4K2fqa" resolve="t2" />
           </node>
         </node>
         <node concept="2vmpnb" id="3aItn4K2ftb" role="_fkuS" />

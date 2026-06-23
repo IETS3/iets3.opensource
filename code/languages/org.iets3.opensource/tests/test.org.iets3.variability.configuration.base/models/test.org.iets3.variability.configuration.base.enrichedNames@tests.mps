@@ -98,7 +98,7 @@
       </concept>
     </language>
     <language id="7b68d745-a7b8-48b9-bd9c-05c0f8725a35" name="org.iets3.core.base">
-      <concept id="7831630342157089621" name="org.iets3.core.base.structure.IDetectNeedToRunManually" flags="ng" index="0Rz4o">
+      <concept id="7831630342157089621" name="org.iets3.core.base.structure.IDetectNeedToRunManually" flags="ngI" index="0Rz4o">
         <property id="7831630342157089649" name="__hash" index="0Rz4W" />
       </concept>
     </language>
@@ -163,7 +163,7 @@
       </concept>
     </language>
     <language id="165f1d05-2506-4544-895e-1424f54166ec" name="org.iets3.variability.featuremodel.base">
-      <concept id="3414566187106618468" name="org.iets3.variability.featuremodel.base.structure.ICalculateHashForUpdateWarning" flags="ng" index="bVzmZ">
+      <concept id="3414566187106618468" name="org.iets3.variability.featuremodel.base.structure.ICalculateHashForUpdateWarning" flags="ngI" index="bVzmZ">
         <property id="3414566187106619445" name="__updateHash" index="bVyBI" />
       </concept>
       <concept id="7725497592275044117" name="org.iets3.variability.featuremodel.base.structure.FMParam" flags="ng" index="2vxJKP">
@@ -472,21 +472,21 @@
           <property role="0Rz4W" value="-452524050" />
           <property role="TrG5h" value="Italy" />
           <property role="1nQUAq" value="true" />
-          <ref role="rqKBe" node="6vXjBknru_d" />
+          <ref role="rqKBe" node="6vXjBknru_d" resolve="Market" />
           <node concept="rqCGG" id="6vXjBknrvfY" role="rqCGo">
             <node concept="rqKBd" id="6vXjBknrvfZ" role="rqKBa">
               <property role="3BMj5M" value="5QKr2dW9gDW/userTrue" />
-              <ref role="rqKBe" node="6vXjBknru_f" />
+              <ref role="rqKBe" node="6vXjBknru_f" resolve="EU" />
               <node concept="rqCGG" id="6vXjBknrvg0" role="rqCGo" />
             </node>
             <node concept="rqKBd" id="6vXjBknrvg1" role="rqKBa">
               <property role="3BMj5M" value="5QKr2dW9gDS/autoFalse" />
-              <ref role="rqKBe" node="6vXjBknru_e" />
+              <ref role="rqKBe" node="6vXjBknru_e" resolve="US" />
               <node concept="rqCGG" id="6vXjBknrvg2" role="rqCGo" />
             </node>
             <node concept="rqKBd" id="6vXjBknrvg3" role="rqKBa">
               <property role="3BMj5M" value="5QKr2dW9gDS/autoFalse" />
-              <ref role="rqKBe" node="6vXjBknru_g" />
+              <ref role="rqKBe" node="6vXjBknru_g" resolve="CHN" />
               <node concept="rqCGG" id="6vXjBknrvg4" role="rqCGo" />
             </node>
           </node>
@@ -503,11 +503,11 @@
           <property role="0Rz4W" value="-286766015" />
           <property role="TrG5h" value="Romulus" />
           <property role="1nQUAq" value="true" />
-          <ref role="rqKBe" node="6vXjBknNUt$" />
+          <ref role="rqKBe" node="6vXjBknNUt$" resolve="AllConfigsSameName" />
           <node concept="rqCGG" id="6vXjBknPcCn" role="rqCGo">
             <node concept="rqKBd" id="6vXjBknPcCo" role="rqKBa">
               <property role="3BMj5M" value="5QKr2dW9gDW/userTrue" />
-              <ref role="rqKBe" node="6vXjBknNUt_" />
+              <ref role="rqKBe" node="6vXjBknNUt_" resolve="D" />
               <node concept="rqCGG" id="6vXjBknPcCp" role="rqCGo" />
             </node>
           </node>
@@ -517,7 +517,7 @@
         </node>
         <node concept="12i7jc" id="6vXjBknPcDo" role="12i2BX" />
         <node concept="3GEVxB" id="6vXjBknrvfS" role="38kjvB">
-          <ref role="3GEb4d" node="6vXjBknru_a" />
+          <ref role="3GEb4d" node="6vXjBknru_a" resolve="SomeFeatureModels" />
         </node>
       </node>
     </node>
@@ -562,17 +562,17 @@
         <property role="TrG5h" value="Center" />
         <node concept="12iSMG" id="6vXjBknruQt" role="12iwVe">
           <property role="TrG5h" value="rack1" />
-          <ref role="12iSMH" node="6vXjBknru_m" />
+          <ref role="12iSMH" node="6vXjBknru_m" resolve="Rack" />
         </node>
         <node concept="12iSMG" id="6vXjBknrvcA" role="12iwVe">
           <property role="TrG5h" value="rack2" />
-          <ref role="12iSMH" node="6vXjBknru_m" />
+          <ref role="12iSMH" node="6vXjBknru_m" resolve="Rack" />
         </node>
       </node>
       <node concept="1lrKzq" id="6vXjBknruQv" role="1lrLG6">
         <node concept="2vxJKP" id="6vXjBknruQw" role="2vxkbM">
           <property role="TrG5h" value="market" />
-          <ref role="2vxkaC" node="6vXjBknru_c" />
+          <ref role="2vxkaC" node="6vXjBknru_c" resolve="Market" />
         </node>
       </node>
     </node>
@@ -683,21 +683,21 @@
           <property role="0Rz4W" value="-452524050" />
           <property role="TrG5h" value="Italy" />
           <property role="1nQUAq" value="true" />
-          <ref role="rqKBe" node="6vXjBknru_d" />
+          <ref role="rqKBe" node="6vXjBknru_d" resolve="Market" />
           <node concept="rqCGG" id="6vXjBkn$neZ" role="rqCGo">
             <node concept="rqKBd" id="6vXjBkn$nf0" role="rqKBa">
               <property role="3BMj5M" value="5QKr2dW9gDW/userTrue" />
-              <ref role="rqKBe" node="6vXjBknru_f" />
+              <ref role="rqKBe" node="6vXjBknru_f" resolve="EU" />
               <node concept="rqCGG" id="6vXjBkn$nf1" role="rqCGo" />
             </node>
             <node concept="rqKBd" id="6vXjBkn$nf2" role="rqKBa">
               <property role="3BMj5M" value="5QKr2dW9gDS/autoFalse" />
-              <ref role="rqKBe" node="6vXjBknru_e" />
+              <ref role="rqKBe" node="6vXjBknru_e" resolve="US" />
               <node concept="rqCGG" id="6vXjBkn$nf3" role="rqCGo" />
             </node>
             <node concept="rqKBd" id="6vXjBkn$nf4" role="rqKBa">
               <property role="3BMj5M" value="5QKr2dW9gDS/autoFalse" />
-              <ref role="rqKBe" node="6vXjBknru_g" />
+              <ref role="rqKBe" node="6vXjBknru_g" resolve="CHN" />
               <node concept="rqCGG" id="6vXjBkn$nf5" role="rqCGo" />
             </node>
           </node>
@@ -711,28 +711,28 @@
           <property role="0Rz4W" value="262615595" />
           <property role="TrG5h" value="Italy" />
           <property role="1nQUAq" value="true" />
-          <ref role="rqKBe" node="6vXjBknru_d" />
+          <ref role="rqKBe" node="6vXjBknru_d" resolve="Market" />
           <node concept="rqCGG" id="6vXjBkn$nYE" role="rqCGo">
             <node concept="rqKBd" id="6vXjBkn$nYF" role="rqKBa">
               <property role="3BMj5M" value="5QKr2dW9gDS/autoFalse" />
-              <ref role="rqKBe" node="6vXjBknru_f" />
+              <ref role="rqKBe" node="6vXjBknru_f" resolve="EU" />
               <node concept="rqCGG" id="6vXjBkn$nYG" role="rqCGo" />
             </node>
             <node concept="rqKBd" id="6vXjBkn$nYH" role="rqKBa">
               <property role="3BMj5M" value="5QKr2dW9gDW/userTrue" />
-              <ref role="rqKBe" node="6vXjBknru_e" />
+              <ref role="rqKBe" node="6vXjBknru_e" resolve="US" />
               <node concept="rqCGG" id="6vXjBkn$nYI" role="rqCGo" />
             </node>
             <node concept="rqKBd" id="6vXjBkn$nYJ" role="rqKBa">
               <property role="3BMj5M" value="5QKr2dW9gDS/autoFalse" />
-              <ref role="rqKBe" node="6vXjBknru_g" />
+              <ref role="rqKBe" node="6vXjBknru_g" resolve="CHN" />
               <node concept="rqCGG" id="6vXjBkn$nYK" role="rqCGo" />
             </node>
           </node>
         </node>
         <node concept="12i7jc" id="6vXjBkn$o4k" role="12i2BX" />
         <node concept="3GEVxB" id="6vXjBkn$nf8" role="38kjvB">
-          <ref role="3GEb4d" node="6vXjBknru_a" />
+          <ref role="3GEb4d" node="6vXjBknru_a" resolve="SomeFeatureModels" />
         </node>
         <node concept="3xLA65" id="6vXjBknM82e" role="lGtFl">
           <property role="TrG5h" value="var1" />
@@ -754,21 +754,21 @@
           <property role="0Rz4W" value="-452524050" />
           <property role="TrG5h" value="Italy" />
           <property role="1nQUAq" value="true" />
-          <ref role="rqKBe" node="6vXjBknru_d" />
+          <ref role="rqKBe" node="6vXjBknru_d" resolve="Market" />
           <node concept="rqCGG" id="6vXjBknALxp" role="rqCGo">
             <node concept="rqKBd" id="6vXjBknALxq" role="rqKBa">
               <property role="3BMj5M" value="5QKr2dW9gDW/userTrue" />
-              <ref role="rqKBe" node="6vXjBknru_f" />
+              <ref role="rqKBe" node="6vXjBknru_f" resolve="EU" />
               <node concept="rqCGG" id="6vXjBknALxr" role="rqCGo" />
             </node>
             <node concept="rqKBd" id="6vXjBknALxs" role="rqKBa">
               <property role="3BMj5M" value="5QKr2dW9gDS/autoFalse" />
-              <ref role="rqKBe" node="6vXjBknru_e" />
+              <ref role="rqKBe" node="6vXjBknru_e" resolve="US" />
               <node concept="rqCGG" id="6vXjBknALxt" role="rqCGo" />
             </node>
             <node concept="rqKBd" id="6vXjBknALxu" role="rqKBa">
               <property role="3BMj5M" value="5QKr2dW9gDS/autoFalse" />
-              <ref role="rqKBe" node="6vXjBknru_g" />
+              <ref role="rqKBe" node="6vXjBknru_g" resolve="CHN" />
               <node concept="rqCGG" id="6vXjBknALxv" role="rqCGo" />
             </node>
           </node>
@@ -782,28 +782,28 @@
           <property role="0Rz4W" value="1325383967" />
           <property role="TrG5h" value="Italy" />
           <property role="1nQUAq" value="true" />
-          <ref role="rqKBe" node="6vXjBknru_d" />
+          <ref role="rqKBe" node="6vXjBknru_d" resolve="Market" />
           <node concept="rqCGG" id="6vXjBknALxy" role="rqCGo">
             <node concept="rqKBd" id="6vXjBknALxz" role="rqKBa">
               <property role="3BMj5M" value="5QKr2dW9gDP/autoTrue" />
-              <ref role="rqKBe" node="6vXjBknru_f" />
+              <ref role="rqKBe" node="6vXjBknru_f" resolve="EU" />
               <node concept="rqCGG" id="6vXjBknALx$" role="rqCGo" />
             </node>
             <node concept="rqKBd" id="6vXjBknALx_" role="rqKBa">
               <property role="3BMj5M" value="5QKr2dW9gE1/userFalse" />
-              <ref role="rqKBe" node="6vXjBknru_e" />
+              <ref role="rqKBe" node="6vXjBknru_e" resolve="US" />
               <node concept="rqCGG" id="6vXjBknALxA" role="rqCGo" />
             </node>
             <node concept="rqKBd" id="6vXjBknALxB" role="rqKBa">
               <property role="3BMj5M" value="5QKr2dW9gE1/userFalse" />
-              <ref role="rqKBe" node="6vXjBknru_g" />
+              <ref role="rqKBe" node="6vXjBknru_g" resolve="CHN" />
               <node concept="rqCGG" id="6vXjBknALxC" role="rqCGo" />
             </node>
           </node>
         </node>
         <node concept="12i7jc" id="6vXjBknM71t" role="12i2BX" />
         <node concept="3GEVxB" id="6vXjBknALxE" role="38kjvB">
-          <ref role="3GEb4d" node="6vXjBknru_a" />
+          <ref role="3GEb4d" node="6vXjBknru_a" resolve="SomeFeatureModels" />
         </node>
         <node concept="3xLA65" id="6vXjBknLhLn" role="lGtFl">
           <property role="TrG5h" value="var2" />
@@ -821,11 +821,11 @@
           <property role="0Rz4W" value="-900037635" />
           <property role="TrG5h" value="Castor" />
           <property role="1nQUAq" value="true" />
-          <ref role="rqKBe" node="6vXjBknNUt$" />
+          <ref role="rqKBe" node="6vXjBknNUt$" resolve="AllConfigsSameName" />
           <node concept="rqCGG" id="6vXjBknOq$y" role="rqCGo">
             <node concept="rqKBd" id="6vXjBknOq$z" role="rqKBa">
               <property role="3BMj5M" value="5QKr2dW9gDW/userTrue" />
-              <ref role="rqKBe" node="6vXjBknNUt_" />
+              <ref role="rqKBe" node="6vXjBknNUt_" resolve="D" />
               <node concept="rqCGG" id="6vXjBknOq$$" role="rqCGo" />
             </node>
           </node>
@@ -839,11 +839,11 @@
           <property role="0Rz4W" value="1878126479" />
           <property role="TrG5h" value="Pollux" />
           <property role="1nQUAq" value="true" />
-          <ref role="rqKBe" node="6vXjBknNUt$" />
+          <ref role="rqKBe" node="6vXjBknNUt$" resolve="AllConfigsSameName" />
           <node concept="rqCGG" id="6vXjBknOq$B" role="rqCGo">
             <node concept="rqKBd" id="6vXjBknOq$C" role="rqKBa">
               <property role="3BMj5M" value="5QKr2dW9gE1/userFalse" />
-              <ref role="rqKBe" node="6vXjBknNUt_" />
+              <ref role="rqKBe" node="6vXjBknNUt_" resolve="D" />
               <node concept="rqCGG" id="6vXjBknOq$D" role="rqCGo" />
             </node>
           </node>
@@ -853,7 +853,7 @@
           <property role="TrG5h" value="var3" />
         </node>
         <node concept="3GEVxB" id="6vXjBknOq$G" role="38kjvB">
-          <ref role="3GEb4d" node="6vXjBknru_a" />
+          <ref role="3GEb4d" node="6vXjBknru_a" resolve="SomeFeatureModels" />
         </node>
       </node>
     </node>
@@ -1015,16 +1015,16 @@
           <property role="0Rz4W" value="-339734359" />
           <property role="TrG5h" value="R1" />
           <property role="1nQUAq" value="true" />
-          <ref role="rqKBe" node="6vXjBknru_n" />
+          <ref role="rqKBe" node="6vXjBknru_n" resolve="Rack" />
           <node concept="rqCGG" id="6vXjBknB9k8" role="rqCGo">
             <node concept="rqKBd" id="6vXjBknB9k9" role="rqKBa">
               <property role="3BMj5M" value="5QKr2dW9gDW/userTrue" />
-              <ref role="rqKBe" node="6vXjBknruQn" />
+              <ref role="rqKBe" node="6vXjBknruQn" resolve="Compute" />
               <node concept="rqCGG" id="6vXjBknB9ka" role="rqCGo" />
             </node>
             <node concept="rqKBd" id="6vXjBknB9kh" role="rqKBa">
               <property role="3BMj5M" value="5QKr2dW9gDW/userTrue" />
-              <ref role="rqKBe" node="6vXjBknruQr" />
+              <ref role="rqKBe" node="6vXjBknruQr" resolve="Memory" />
               <node concept="rqCGG" id="6vXjBknB9ki" role="rqCGo" />
             </node>
           </node>
@@ -1048,13 +1048,13 @@
           <property role="0Rz4W" value="-1364719800" />
           <property role="TrG5h" value="Center1" />
           <property role="1nQUAq" value="true" />
-          <ref role="rqKBe" node="6vXjBknru_k" />
+          <ref role="rqKBe" node="6vXjBknru_k" resolve="Center" />
           <node concept="rqCGG" id="6vXjBknC470" role="rqCGo">
             <node concept="rqKBd" id="6vXjBknC471" role="rqKBa">
               <property role="3BMj5M" value="5QKr2dW9gDP/autoTrue" />
-              <ref role="rqKBe" node="6vXjBknruQt" />
+              <ref role="rqKBe" node="6vXjBknruQt" resolve="rack1" />
               <node concept="rqMQU" id="6vXjBknC4j4" role="rqCGo">
-                <ref role="rqMQV" node="6vXjBknB9k5" />
+                <ref role="rqMQV" node="6vXjBknB9k5" resolve="R1" />
                 <node concept="3xLA65" id="6vXjBknC4vt" role="lGtFl">
                   <property role="TrG5h" value="ref" />
                 </node>
@@ -1062,13 +1062,13 @@
             </node>
             <node concept="rqKBd" id="6vXjBknC473" role="rqKBa">
               <property role="3BMj5M" value="5QKr2dW9gE1/userFalse" />
-              <ref role="rqKBe" node="6vXjBknrvcA" />
+              <ref role="rqKBe" node="6vXjBknrvcA" resolve="rack2" />
               <node concept="3hCpYG" id="6vXjBknC474" role="rqCGo" />
             </node>
           </node>
         </node>
         <node concept="3GEVxB" id="6vXjBknB8vP" role="38kjvB">
-          <ref role="3GEb4d" node="6vXjBknru_a" />
+          <ref role="3GEb4d" node="6vXjBknru_a" resolve="SomeFeatureModels" />
         </node>
       </node>
     </node>
@@ -1203,15 +1203,15 @@
           <property role="TrG5h" value="ComBase" />
           <property role="33ZQ4u" value="true" />
           <property role="1nQUAq" value="true" />
-          <ref role="rqKBe" node="6vXjBknru_n" />
+          <ref role="rqKBe" node="6vXjBknru_n" resolve="Rack" />
           <node concept="rqCGG" id="6vXjBknCrBk" role="rqCGo">
             <node concept="rqKBd" id="6vXjBknCrBl" role="rqKBa">
               <property role="3BMj5M" value="5QKr2dW9gDW/userTrue" />
-              <ref role="rqKBe" node="6vXjBknruQn" />
+              <ref role="rqKBe" node="6vXjBknruQn" resolve="Compute" />
               <node concept="rqCGG" id="6vXjBknCrBm" role="rqCGo" />
             </node>
             <node concept="rqKBd" id="6vXjBknCrBt" role="rqKBa">
-              <ref role="rqKBe" node="6vXjBknruQr" />
+              <ref role="rqKBe" node="6vXjBknruQr" resolve="Memory" />
               <node concept="rqCGG" id="6vXjBknCrBu" role="rqCGo" />
             </node>
           </node>
@@ -1235,11 +1235,11 @@
           <property role="0Rz4W" value="-531866401" />
           <property role="TrG5h" value="Mem" />
           <property role="1nQUAq" value="true" />
-          <ref role="rqKBe" node="6vXjBknru_n" />
+          <ref role="rqKBe" node="6vXjBknru_n" resolve="Rack" />
           <node concept="rqCGG" id="6vXjBknCwtO" role="rqCGo">
             <node concept="rqKBd" id="6vXjBknCwtR" role="rqKBa">
               <property role="3BMj5M" value="5QKr2dW9gE1/userFalse" />
-              <ref role="rqKBe" node="6vXjBknruQr" />
+              <ref role="rqKBe" node="6vXjBknruQr" resolve="Memory" />
               <node concept="rqCGG" id="6vXjBknCwtS" role="rqCGo" />
             </node>
           </node>
@@ -1251,7 +1251,7 @@
             </node>
           </node>
           <node concept="30ne8c" id="6vXjBknCwxO" role="30ne9f">
-            <ref role="30ne9N" node="6vXjBknCrBh" />
+            <ref role="30ne9N" node="6vXjBknCrBh" resolve="ComBase" />
             <node concept="3xLA65" id="6vXjBknCwHw" role="lGtFl">
               <property role="TrG5h" value="extends" />
             </node>
@@ -1259,7 +1259,7 @@
         </node>
         <node concept="12i7jc" id="6vXjBknCrBg" role="12i2BX" />
         <node concept="3GEVxB" id="6vXjBknCr6z" role="38kjvB">
-          <ref role="3GEb4d" node="6vXjBknru_a" />
+          <ref role="3GEb4d" node="6vXjBknru_a" resolve="SomeFeatureModels" />
         </node>
       </node>
     </node>
@@ -1380,21 +1380,21 @@
           <property role="0Rz4W" value="-452524050" />
           <property role="TrG5h" value="Italy" />
           <property role="1nQUAq" value="true" />
-          <ref role="rqKBe" node="6vXjBknru_d" />
+          <ref role="rqKBe" node="6vXjBknru_d" resolve="Market" />
           <node concept="rqCGG" id="6vXjBknNNhk" role="rqCGo">
             <node concept="rqKBd" id="6vXjBknNNhl" role="rqKBa">
               <property role="3BMj5M" value="5QKr2dW9gDW/userTrue" />
-              <ref role="rqKBe" node="6vXjBknru_f" />
+              <ref role="rqKBe" node="6vXjBknru_f" resolve="EU" />
               <node concept="rqCGG" id="6vXjBknNNhm" role="rqCGo" />
             </node>
             <node concept="rqKBd" id="6vXjBknNNhn" role="rqKBa">
               <property role="3BMj5M" value="5QKr2dW9gDS/autoFalse" />
-              <ref role="rqKBe" node="6vXjBknru_e" />
+              <ref role="rqKBe" node="6vXjBknru_e" resolve="US" />
               <node concept="rqCGG" id="6vXjBknNNho" role="rqCGo" />
             </node>
             <node concept="rqKBd" id="6vXjBknNNhp" role="rqKBa">
               <property role="3BMj5M" value="5QKr2dW9gDS/autoFalse" />
-              <ref role="rqKBe" node="6vXjBknru_g" />
+              <ref role="rqKBe" node="6vXjBknru_g" resolve="CHN" />
               <node concept="rqCGG" id="6vXjBknNNhq" role="rqCGo" />
             </node>
           </node>
@@ -1408,28 +1408,28 @@
           <property role="0Rz4W" value="262615595" />
           <property role="TrG5h" value="Italy" />
           <property role="1nQUAq" value="true" />
-          <ref role="rqKBe" node="6vXjBknru_d" />
+          <ref role="rqKBe" node="6vXjBknru_d" resolve="Market" />
           <node concept="rqCGG" id="6vXjBknNNht" role="rqCGo">
             <node concept="rqKBd" id="6vXjBknNNhu" role="rqKBa">
               <property role="3BMj5M" value="5QKr2dW9gDS/autoFalse" />
-              <ref role="rqKBe" node="6vXjBknru_f" />
+              <ref role="rqKBe" node="6vXjBknru_f" resolve="EU" />
               <node concept="rqCGG" id="6vXjBknNNhv" role="rqCGo" />
             </node>
             <node concept="rqKBd" id="6vXjBknNNhw" role="rqKBa">
               <property role="3BMj5M" value="5QKr2dW9gDW/userTrue" />
-              <ref role="rqKBe" node="6vXjBknru_e" />
+              <ref role="rqKBe" node="6vXjBknru_e" resolve="US" />
               <node concept="rqCGG" id="6vXjBknNNhx" role="rqCGo" />
             </node>
             <node concept="rqKBd" id="6vXjBknNNhy" role="rqKBa">
               <property role="3BMj5M" value="5QKr2dW9gDS/autoFalse" />
-              <ref role="rqKBe" node="6vXjBknru_g" />
+              <ref role="rqKBe" node="6vXjBknru_g" resolve="CHN" />
               <node concept="rqCGG" id="6vXjBknNNhz" role="rqCGo" />
             </node>
           </node>
         </node>
         <node concept="12i7jc" id="6vXjBknNNh$" role="12i2BX" />
         <node concept="3GEVxB" id="6vXjBknNNh_" role="38kjvB">
-          <ref role="3GEb4d" node="6vXjBknru_a" />
+          <ref role="3GEb4d" node="6vXjBknru_a" resolve="SomeFeatureModels" />
         </node>
         <node concept="3xLA65" id="6vXjBknNNhA" role="lGtFl">
           <property role="TrG5h" value="var1" />
@@ -1451,21 +1451,21 @@
           <property role="0Rz4W" value="-452524050" />
           <property role="TrG5h" value="Italy" />
           <property role="1nQUAq" value="true" />
-          <ref role="rqKBe" node="6vXjBknru_d" />
+          <ref role="rqKBe" node="6vXjBknru_d" resolve="Market" />
           <node concept="rqCGG" id="6vXjBknNNhF" role="rqCGo">
             <node concept="rqKBd" id="6vXjBknNNhG" role="rqKBa">
               <property role="3BMj5M" value="5QKr2dW9gDW/userTrue" />
-              <ref role="rqKBe" node="6vXjBknru_f" />
+              <ref role="rqKBe" node="6vXjBknru_f" resolve="EU" />
               <node concept="rqCGG" id="6vXjBknNNhH" role="rqCGo" />
             </node>
             <node concept="rqKBd" id="6vXjBknNNhI" role="rqKBa">
               <property role="3BMj5M" value="5QKr2dW9gDS/autoFalse" />
-              <ref role="rqKBe" node="6vXjBknru_e" />
+              <ref role="rqKBe" node="6vXjBknru_e" resolve="US" />
               <node concept="rqCGG" id="6vXjBknNNhJ" role="rqCGo" />
             </node>
             <node concept="rqKBd" id="6vXjBknNNhK" role="rqKBa">
               <property role="3BMj5M" value="5QKr2dW9gDS/autoFalse" />
-              <ref role="rqKBe" node="6vXjBknru_g" />
+              <ref role="rqKBe" node="6vXjBknru_g" resolve="CHN" />
               <node concept="rqCGG" id="6vXjBknNNhL" role="rqCGo" />
             </node>
           </node>
@@ -1479,28 +1479,28 @@
           <property role="0Rz4W" value="1325383967" />
           <property role="TrG5h" value="Italy" />
           <property role="1nQUAq" value="true" />
-          <ref role="rqKBe" node="6vXjBknru_d" />
+          <ref role="rqKBe" node="6vXjBknru_d" resolve="Market" />
           <node concept="rqCGG" id="6vXjBknNNhO" role="rqCGo">
             <node concept="rqKBd" id="6vXjBknNNhP" role="rqKBa">
               <property role="3BMj5M" value="5QKr2dW9gDP/autoTrue" />
-              <ref role="rqKBe" node="6vXjBknru_f" />
+              <ref role="rqKBe" node="6vXjBknru_f" resolve="EU" />
               <node concept="rqCGG" id="6vXjBknNNhQ" role="rqCGo" />
             </node>
             <node concept="rqKBd" id="6vXjBknNNhR" role="rqKBa">
               <property role="3BMj5M" value="5QKr2dW9gE1/userFalse" />
-              <ref role="rqKBe" node="6vXjBknru_e" />
+              <ref role="rqKBe" node="6vXjBknru_e" resolve="US" />
               <node concept="rqCGG" id="6vXjBknNNhS" role="rqCGo" />
             </node>
             <node concept="rqKBd" id="6vXjBknNNhT" role="rqKBa">
               <property role="3BMj5M" value="5QKr2dW9gE1/userFalse" />
-              <ref role="rqKBe" node="6vXjBknru_g" />
+              <ref role="rqKBe" node="6vXjBknru_g" resolve="CHN" />
               <node concept="rqCGG" id="6vXjBknNNhU" role="rqCGo" />
             </node>
           </node>
         </node>
         <node concept="12i7jc" id="6vXjBknNNhV" role="12i2BX" />
         <node concept="3GEVxB" id="6vXjBknNNhW" role="38kjvB">
-          <ref role="3GEb4d" node="6vXjBknru_a" />
+          <ref role="3GEb4d" node="6vXjBknru_a" resolve="SomeFeatureModels" />
         </node>
         <node concept="3xLA65" id="6vXjBknNNhX" role="lGtFl">
           <property role="TrG5h" value="var2" />
@@ -1518,11 +1518,11 @@
           <property role="0Rz4W" value="-900037635" />
           <property role="TrG5h" value="Castor" />
           <property role="1nQUAq" value="true" />
-          <ref role="rqKBe" node="6vXjBknNUt$" />
+          <ref role="rqKBe" node="6vXjBknNUt$" resolve="AllConfigsSameName" />
           <node concept="rqCGG" id="6vXjBknOgEy" role="rqCGo">
             <node concept="rqKBd" id="6vXjBknOgEz" role="rqKBa">
               <property role="3BMj5M" value="5QKr2dW9gDW/userTrue" />
-              <ref role="rqKBe" node="6vXjBknNUt_" />
+              <ref role="rqKBe" node="6vXjBknNUt_" resolve="D" />
               <node concept="rqCGG" id="6vXjBknOgE$" role="rqCGo" />
             </node>
           </node>
@@ -1536,11 +1536,11 @@
           <property role="0Rz4W" value="1878126479" />
           <property role="TrG5h" value="Pollux" />
           <property role="1nQUAq" value="true" />
-          <ref role="rqKBe" node="6vXjBknNUt$" />
+          <ref role="rqKBe" node="6vXjBknNUt$" resolve="AllConfigsSameName" />
           <node concept="rqCGG" id="6vXjBknOgHf" role="rqCGo">
             <node concept="rqKBd" id="6vXjBknOgHg" role="rqKBa">
               <property role="3BMj5M" value="5QKr2dW9gE1/userFalse" />
-              <ref role="rqKBe" node="6vXjBknNUt_" />
+              <ref role="rqKBe" node="6vXjBknNUt_" resolve="D" />
               <node concept="rqCGG" id="6vXjBknOgHh" role="rqCGo" />
             </node>
           </node>
@@ -1550,7 +1550,7 @@
           <property role="TrG5h" value="var3" />
         </node>
         <node concept="3GEVxB" id="6vXjBknOgEu" role="38kjvB">
-          <ref role="3GEb4d" node="6vXjBknru_a" />
+          <ref role="3GEb4d" node="6vXjBknru_a" resolve="SomeFeatureModels" />
         </node>
       </node>
     </node>
@@ -1719,21 +1719,21 @@
           <property role="0Rz4W" value="1501613111" />
           <property role="TrG5h" value="Beijing" />
           <property role="1nQUAq" value="true" />
-          <ref role="rqKBe" node="6vXjBknru_d" />
+          <ref role="rqKBe" node="6vXjBknru_d" resolve="Market" />
           <node concept="rqCGG" id="4O1MtdoK8mB" role="rqCGo">
             <node concept="rqKBd" id="4O1MtdoK8mC" role="rqKBa">
               <property role="3BMj5M" value="5QKr2dW9gDS/autoFalse" />
-              <ref role="rqKBe" node="6vXjBknru_f" />
+              <ref role="rqKBe" node="6vXjBknru_f" resolve="EU" />
               <node concept="rqCGG" id="4O1MtdoK8mD" role="rqCGo" />
             </node>
             <node concept="rqKBd" id="4O1MtdoK8mE" role="rqKBa">
               <property role="3BMj5M" value="5QKr2dW9gDS/autoFalse" />
-              <ref role="rqKBe" node="6vXjBknru_e" />
+              <ref role="rqKBe" node="6vXjBknru_e" resolve="US" />
               <node concept="rqCGG" id="4O1MtdoK8mF" role="rqCGo" />
             </node>
             <node concept="rqKBd" id="4O1MtdoK8mG" role="rqKBa">
               <property role="3BMj5M" value="5QKr2dW9gDW/userTrue" />
-              <ref role="rqKBe" node="6vXjBknru_g" />
+              <ref role="rqKBe" node="6vXjBknru_g" resolve="CHN" />
               <node concept="rqCGG" id="4O1MtdoK8mH" role="rqCGo" />
             </node>
           </node>
@@ -1750,22 +1750,22 @@
           <property role="0Rz4W" value="-624612239" />
           <property role="TrG5h" value="Conf1" />
           <property role="1nQUAq" value="true" />
-          <ref role="rqKBe" node="6vXjBknru_k" />
+          <ref role="rqKBe" node="6vXjBknru_k" resolve="Center" />
           <node concept="rqCGG" id="4O1MtdoK8Ds" role="rqCGo">
             <node concept="rqKBd" id="4O1MtdoK8Dt" role="rqKBa">
               <property role="3BMj5M" value="5QKr2dW9gE1/userFalse" />
-              <ref role="rqKBe" node="6vXjBknruQt" />
+              <ref role="rqKBe" node="6vXjBknruQt" resolve="rack1" />
               <node concept="3hCpYG" id="4O1MtdoK8Du" role="rqCGo" />
             </node>
             <node concept="rqKBd" id="4O1MtdoK8Dv" role="rqKBa">
               <property role="3BMj5M" value="5QKr2dW9gE1/userFalse" />
-              <ref role="rqKBe" node="6vXjBknrvcA" />
+              <ref role="rqKBe" node="6vXjBknrvcA" resolve="rack2" />
               <node concept="3hCpYG" id="4O1MtdoK8Dw" role="rqCGo" />
             </node>
           </node>
           <node concept="1l23a_" id="4O1MtdoK8U9" role="1l23gV">
-            <ref role="1l2MNE" node="6vXjBknruQw" />
-            <ref role="1l2N9i" node="4O1MtdoK8m$" />
+            <ref role="1l2MNE" node="6vXjBknruQw" resolve="market" />
+            <ref role="1l2N9i" node="4O1MtdoK8m$" resolve="Beijing" />
             <node concept="3xLA65" id="4O1MtdoK9dz" role="lGtFl">
               <property role="TrG5h" value="usage" />
             </node>
@@ -1773,7 +1773,7 @@
         </node>
         <node concept="12i7jc" id="4O1MtdoK8Rg" role="12i2BX" />
         <node concept="3GEVxB" id="4O1MtdoK7Lz" role="38kjvB">
-          <ref role="3GEb4d" node="6vXjBknru_a" />
+          <ref role="3GEb4d" node="6vXjBknru_a" resolve="SomeFeatureModels" />
         </node>
       </node>
     </node>

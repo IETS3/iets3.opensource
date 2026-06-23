@@ -9,7 +9,7 @@
   <imports />
   <registry>
     <language id="cfaa4966-b7d5-4b69-b66a-309a6e1a7290" name="org.iets3.core.expr.base">
-      <concept id="4261931054731905240" name="org.iets3.core.expr.base.structure.IContainExpressionParam" flags="ng" index="2lDidI">
+      <concept id="4261931054731905240" name="org.iets3.core.expr.base.structure.IContainExpressionParam" flags="ngI" index="2lDidI">
         <child id="4261931054731905241" name="expr" index="2lDidJ" />
       </concept>
       <concept id="5115872837156687764" name="org.iets3.core.expr.base.structure.GreaterExpression" flags="ng" index="30d7iD" />
@@ -51,7 +51,7 @@
         <child id="8997672845436636231" name="type" index="21GYI0" />
         <child id="1004041897414673278" name="notPresentValue" index="QVt6R" />
       </concept>
-      <concept id="3414566187106618468" name="org.iets3.variability.featuremodel.base.structure.ICalculateHashForUpdateWarning" flags="ng" index="bVzmZ">
+      <concept id="3414566187106618468" name="org.iets3.variability.featuremodel.base.structure.ICalculateHashForUpdateWarning" flags="ngI" index="bVzmZ">
         <property id="3414566187106619445" name="__updateHash" index="bVyBI" />
       </concept>
       <concept id="3989254429233029895" name="org.iets3.variability.featuremodel.base.structure.Feature" flags="ng" index="12iwV3">
@@ -79,27 +79,27 @@
             <node concept="30dDZf" id="3TeKUdOiOHh" role="30dEsF">
               <node concept="1QScDb" id="3TeKUdOiOHi" role="30dEsF">
                 <node concept="21nZkD" id="3TeKUdOiNOl" role="2lDidJ">
-                  <ref role="21nZkZ" node="3TeKUdOiNIM" />
+                  <ref role="21nZkZ" node="3TeKUdOiNIM" resolve="A" />
                 </node>
                 <node concept="21iaPH" id="3TeKUdOiNP_" role="1QScD9">
-                  <ref role="21iaPG" node="3TeKUdOiNKU" />
+                  <ref role="21iaPG" node="3TeKUdOiNKU" resolve="a" />
                 </node>
               </node>
               <node concept="1QScDb" id="3TeKUdOiOHj" role="30dEs_">
                 <node concept="21nZkD" id="3TeKUdOiNRT" role="2lDidJ">
-                  <ref role="21nZkZ" node="3TeKUdOiNIM" />
+                  <ref role="21nZkZ" node="3TeKUdOiNIM" resolve="A" />
                 </node>
                 <node concept="21iaPH" id="3TeKUdOiNVo" role="1QScD9">
-                  <ref role="21iaPG" node="3TeKUdOiNNh" />
+                  <ref role="21iaPG" node="3TeKUdOiNNh" resolve="b" />
                 </node>
               </node>
             </node>
             <node concept="1QScDb" id="3TeKUdOiOSQ" role="30dEs_">
               <node concept="21iaPH" id="3TeKUdOiOYP" role="1QScD9">
-                <ref role="21iaPG" node="3TeKUdOiOt1" />
+                <ref role="21iaPG" node="3TeKUdOiOt1" resolve="c" />
               </node>
               <node concept="21nZkD" id="3TeKUdOiOMh" role="2lDidJ">
-                <ref role="21nZkZ" node="3TeKUdOiNIM" />
+                <ref role="21nZkZ" node="3TeKUdOiNIM" resolve="A" />
               </node>
             </node>
           </node>
@@ -120,7 +120,7 @@
             <property role="TrG5h" value="b" />
             <node concept="30bXR$" id="3TeKUdOiNNf" role="21GYI0" />
             <node concept="21iLHX" id="3TeKUdQ9ID_" role="QVt6R">
-              <ref role="21iLGd" node="3TeKUdOiOt1" />
+              <ref role="21iLGd" node="3TeKUdOiOt1" resolve="c" />
             </node>
           </node>
           <node concept="21IWn0" id="3TeKUdOiOt1" role="21GevL">

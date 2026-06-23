@@ -32,7 +32,7 @@
       </concept>
     </language>
     <language id="cfaa4966-b7d5-4b69-b66a-309a6e1a7290" name="org.iets3.core.expr.base">
-      <concept id="4261931054731905240" name="org.iets3.core.expr.base.structure.IContainExpressionParam" flags="ng" index="2lDidI">
+      <concept id="4261931054731905240" name="org.iets3.core.expr.base.structure.IContainExpressionParam" flags="ngI" index="2lDidI">
         <child id="4261931054731905241" name="expr" index="2lDidJ" />
       </concept>
     </language>
@@ -81,12 +81,12 @@
       <concept id="4790956042240407469" name="org.iets3.core.expr.lambda.structure.ArgRef" flags="ng" index="1afdae">
         <reference id="4790956042240460422" name="arg" index="1afue_" />
       </concept>
-      <concept id="4790956042240100911" name="org.iets3.core.expr.lambda.structure.IFunctionLike" flags="ng" index="1ahQWc">
+      <concept id="4790956042240100911" name="org.iets3.core.expr.lambda.structure.IFunctionLike" flags="ngI" index="1ahQWc">
         <child id="4790956042240100927" name="args" index="1ahQWs" />
         <child id="4790956042240100950" name="body" index="1ahQXP" />
       </concept>
       <concept id="4790956042240100929" name="org.iets3.core.expr.lambda.structure.FunctionArgument" flags="ng" index="1ahQXy" />
-      <concept id="7554398283340318473" name="org.iets3.core.expr.lambda.structure.IArgument" flags="ng" index="3ix9CZ">
+      <concept id="7554398283340318473" name="org.iets3.core.expr.lambda.structure.IArgument" flags="ngI" index="3ix9CZ">
         <child id="7554398283340318476" name="type" index="3ix9CU" />
       </concept>
     </language>
@@ -116,7 +116,7 @@
             <node concept="mLuIC" id="_aJC6nSg5u" role="3ix9CU" />
           </node>
           <node concept="1afdae" id="_aJC6nSg5A" role="1ahQXP">
-            <ref role="1afue_" node="_aJC6nSg5c" />
+            <ref role="1afue_" node="_aJC6nSg5c" resolve="in" />
           </node>
         </node>
       </node>
@@ -134,10 +134,10 @@
             <property role="TrG5h" value="OFF" />
             <node concept="174hPn" id="_aJC6ogFSN" role="17rfIJ">
               <node concept="2AuZ2C" id="_aJC6ogFSU" role="2AuZ2o">
-                <ref role="2AuZ2q" node="_aJC6ogFSp" />
+                <ref role="2AuZ2q" node="_aJC6ogFSp" resolve="turnOn" />
               </node>
               <node concept="1vQcaV" id="_aJC6ogFT4" role="1vQNHF">
-                <ref role="1vQcaS" node="_aJC6ogFSE" />
+                <ref role="1vQcaS" node="_aJC6ogFSE" resolve="OFF" />
               </node>
             </node>
           </node>
@@ -145,10 +145,10 @@
             <property role="TrG5h" value="ON" />
             <node concept="174hPn" id="_aJC6ogFTC" role="17rfIJ">
               <node concept="2AuZ2C" id="_aJC6ogFTJ" role="2AuZ2o">
-                <ref role="2AuZ2q" node="_aJC6ogFSw" />
+                <ref role="2AuZ2q" node="_aJC6ogFSw" resolve="turnOff" />
               </node>
               <node concept="1vQcaV" id="_aJC6ogFTT" role="1vQNHF">
-                <ref role="1vQcaS" node="_aJC6ogFTr" />
+                <ref role="1vQcaS" node="_aJC6ogFTr" resolve="ON" />
               </node>
             </node>
           </node>

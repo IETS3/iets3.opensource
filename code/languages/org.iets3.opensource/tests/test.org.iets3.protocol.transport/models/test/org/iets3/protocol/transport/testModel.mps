@@ -10,7 +10,7 @@
   <imports />
   <registry>
     <language id="7b68d745-a7b8-48b9-bd9c-05c0f8725a35" name="org.iets3.core.base">
-      <concept id="229512757698888199" name="org.iets3.core.base.structure.IOptionallyNamed" flags="ng" index="pfQq$">
+      <concept id="229512757698888199" name="org.iets3.core.base.structure.IOptionallyNamed" flags="ngI" index="pfQq$">
         <child id="229512757698888936" name="optionalName" index="pfQ1b" />
       </concept>
       <concept id="229512757698888202" name="org.iets3.core.base.structure.OptionalNameSpecifier" flags="ng" index="pfQqD">
@@ -31,7 +31,7 @@
         <reference id="7804632404593436655" name="ref" index="1i1fwX" />
       </concept>
       <concept id="7804632404593342574" name="org.iets3.components.core.structure.EmptyComponentsChunkContent" flags="ng" index="1i1AuW" />
-      <concept id="7804632404593342035" name="org.iets3.components.core.structure.IComponentsChunkContent" flags="ng" index="1i1AA1">
+      <concept id="7804632404593342035" name="org.iets3.components.core.structure.IComponentsChunkContent" flags="ngI" index="1i1AA1">
         <property id="6142232665969969516" name="public" index="13Nl5X" />
       </concept>
       <concept id="7804632404593341326" name="org.iets3.components.core.structure.ComponentsChunk" flags="ng" index="1i1ALs">
@@ -60,7 +60,7 @@
       </concept>
       <concept id="571807164490417084" name="org.iets3.protocol.transport.structure.SomeIPProtocol" flags="ng" index="w_JgE" />
       <concept id="571807164490417082" name="org.iets3.protocol.transport.structure.TCPProtocol" flags="ng" index="w_JgG" />
-      <concept id="5384613998826276856" name="org.iets3.protocol.transport.structure.IProtocolMapContainer" flags="ng" index="1A6NCv">
+      <concept id="5384613998826276856" name="org.iets3.protocol.transport.structure.IProtocolMapContainer" flags="ngI" index="1A6NCv">
         <child id="4382927200846165532" name="content" index="1Y1BWd" />
       </concept>
       <concept id="7772536663216455977" name="org.iets3.protocol.transport.structure.ProtocolMapRef" flags="ng" index="1PqxB3">
@@ -104,12 +104,12 @@
       <node concept="GnABt" id="4FLRp99DEf5" role="1i1XAe">
         <node concept="1i6xzV" id="4FLRp99DEff" role="GnABu">
           <node concept="1i1fwW" id="4FLRp99DEfn" role="MGl3R">
-            <ref role="1i1fwX" node="4FLRp99DEcC" />
+            <ref role="1i1fwX" node="4FLRp99DEcC" resolve="hardware1" />
           </node>
         </node>
         <node concept="1i6xzV" id="4FLRp99DEf$" role="GnABu">
           <node concept="1i1fwW" id="4FLRp99DEfK" role="MGl3R">
-            <ref role="1i1fwX" node="4FLRp99DEdW" />
+            <ref role="1i1fwX" node="4FLRp99DEdW" resolve="hardware2" />
           </node>
         </node>
       </node>
@@ -162,7 +162,7 @@
       <node concept="H_j2F" id="4FLRp99DE8Z" role="1i1XAe">
         <node concept="1i7wMI" id="4FLRp99DE9p" role="IJpy$">
           <node concept="12cI7h" id="4FLRp99DEa_" role="1i6vMw">
-            <ref role="12cI7k" node="4FLRp99DEad" />
+            <ref role="12cI7k" node="4FLRp99DEad" resolve="I1" />
           </node>
           <node concept="12cEab" id="4FLRp99DE9o" role="1aMMyH" />
         </node>
@@ -193,7 +193,7 @@
     <node concept="1i1AuW" id="65sbyp4rrca" role="1i1AA4" />
     <node concept="w_rAr" id="65sbyp4rrdP" role="1i1AA4">
       <node concept="2tIEYn" id="65sbyp4D8ri" role="1P4gQc">
-        <ref role="2tIEYC" node="4FLRp99DEad" />
+        <ref role="2tIEYC" node="4FLRp99DEad" resolve="I1" />
       </node>
       <node concept="w_JgG" id="65sbyp4D8rm" role="1P4gQe" />
     </node>
@@ -201,14 +201,14 @@
       <property role="13Nl5X" value="true" />
       <node concept="w_JgE" id="3KzcZuQaDfA" role="1P4gQe" />
       <node concept="2tIEYn" id="4FLRp99DEpR" role="1P4gQc">
-        <ref role="2tIEYC" node="4FLRp99DEad" />
+        <ref role="2tIEYC" node="4FLRp99DEad" resolve="I1" />
       </node>
     </node>
     <node concept="w_rAr" id="4FLRp99E3xc" role="1i1AA4">
       <property role="13Nl5X" value="true" />
       <node concept="w_JgG" id="4FLRp99E81Q" role="1P4gQe" />
       <node concept="2tIEYn" id="4FLRp99E3yM" role="1P4gQc">
-        <ref role="2tIEYC" node="4FLRp99E3xY" />
+        <ref role="2tIEYC" node="4FLRp99E3xY" resolve="I2" />
       </node>
     </node>
     <node concept="1PqxBF" id="4FLRp99E3vv" role="1i1AA4">
@@ -216,7 +216,7 @@
       <property role="13Nl5X" value="true" />
       <node concept="2w4_Pq" id="3Njih52UyGE" role="1Y1BWd">
         <node concept="1PqxB3" id="3Njih52UyGD" role="2w4_P9">
-          <ref role="1PqxB5" node="4FLRp99DEoU" />
+          <ref role="1PqxB5" node="4FLRp99DEoU" resolve="I1_someip" />
         </node>
       </node>
     </node>

@@ -3590,9 +3590,9 @@
                 <node concept="2OqwBi" id="1nMzDp6Oq5o" role="37vLTx">
                   <node concept="2tJFMh" id="1nMzDp6Nosi" role="2Oq$k0">
                     <node concept="ZC_QK" id="1nMzDp6NFBz" role="2tJFKM">
-                      <ref role="2aWVGs" to="8ps7:3xM68GMigWg" />
+                      <ref role="2aWVGs" to="8ps7:3xM68GMigWg" resolve="SIBaseUnits" />
                       <node concept="ZC_QK" id="1nMzDp6NU2J" role="2aWVGa">
-                        <ref role="2aWVGs" to="8ps7:3xM68GMigWi" />
+                        <ref role="2aWVGs" to="8ps7:3xM68GMigWi" resolve="unspecified quantity" />
                       </node>
                     </node>
                   </node>
@@ -3665,9 +3665,9 @@
                 <node concept="2OqwBi" id="1a2DxsCEF98" role="37vLTx">
                   <node concept="2tJFMh" id="1a2DxsCEF99" role="2Oq$k0">
                     <node concept="ZC_QK" id="1a2DxsCEF9a" role="2tJFKM">
-                      <ref role="2aWVGs" to="8ps7:3xM68GMigWg" />
+                      <ref role="2aWVGs" to="8ps7:3xM68GMigWg" resolve="SIBaseUnits" />
                       <node concept="ZC_QK" id="1a2DxsCEF9b" role="2aWVGa">
-                        <ref role="2aWVGs" to="8ps7:3xM68GMigWm" />
+                        <ref role="2aWVGs" to="8ps7:3xM68GMigWm" resolve="thermodynamic temperature" />
                       </node>
                     </node>
                   </node>
@@ -4226,9 +4226,9 @@
                         <node concept="2OqwBi" id="1nMzDp6SSAC" role="36biLW">
                           <node concept="2tJFMh" id="1nMzDp6S7S9" role="2Oq$k0">
                             <node concept="ZC_QK" id="1nMzDp6SggV" role="2tJFKM">
-                              <ref role="2aWVGs" to="8ps7:3xM68GMigWg" />
+                              <ref role="2aWVGs" to="8ps7:3xM68GMigWg" resolve="SIBaseUnits" />
                               <node concept="ZC_QK" id="1nMzDp6SvL3" role="2aWVGa">
-                                <ref role="2aWVGs" to="8ps7:36kPvG5oSra" />
+                                <ref role="2aWVGs" to="8ps7:36kPvG5oSra" resolve="unitless" />
                               </node>
                             </node>
                           </node>
@@ -4317,9 +4317,9 @@
                         <node concept="2OqwBi" id="1a2DxsCSbBs" role="36biLW">
                           <node concept="2tJFMh" id="1a2DxsCSbBt" role="2Oq$k0">
                             <node concept="ZC_QK" id="1a2DxsCSbBu" role="2tJFKM">
-                              <ref role="2aWVGs" to="8ps7:3xM68GMigWy" />
+                              <ref role="2aWVGs" to="8ps7:3xM68GMigWy" resolve="SIDerivedUnits" />
                               <node concept="ZC_QK" id="1a2DxsCSbBv" role="2aWVGa">
-                                <ref role="2aWVGs" to="8ps7:3NjH4t$iNK$" />
+                                <ref role="2aWVGs" to="8ps7:3NjH4t$iNK$" resolve="d" />
                               </node>
                             </node>
                           </node>
@@ -4408,9 +4408,9 @@
                         <node concept="2OqwBi" id="1a2DxsCY7o7" role="36biLW">
                           <node concept="2tJFMh" id="1a2DxsCY7o8" role="2Oq$k0">
                             <node concept="ZC_QK" id="1a2DxsCY7o9" role="2tJFKM">
-                              <ref role="2aWVGs" to="8ps7:3xM68GMigWy" />
+                              <ref role="2aWVGs" to="8ps7:3xM68GMigWy" resolve="SIDerivedUnits" />
                               <node concept="ZC_QK" id="1a2DxsCY7oa" role="2aWVGa">
-                                <ref role="2aWVGs" to="8ps7:3xM68GMih14" />
+                                <ref role="2aWVGs" to="8ps7:3xM68GMih14" resolve="°C" />
                               </node>
                             </node>
                           </node>
@@ -4499,9 +4499,9 @@
                         <node concept="2OqwBi" id="1a2DxsD2sSs" role="36biLW">
                           <node concept="2tJFMh" id="1a2DxsD2sSt" role="2Oq$k0">
                             <node concept="ZC_QK" id="1a2DxsD2sSu" role="2tJFKM">
-                              <ref role="2aWVGs" to="8ps7:3xM68GMigWy" />
+                              <ref role="2aWVGs" to="8ps7:3xM68GMigWy" resolve="SIDerivedUnits" />
                               <node concept="ZC_QK" id="1a2DxsD2sSv" role="2aWVGa">
-                                <ref role="2aWVGs" to="8ps7:3xM68GMigZP" />
+                                <ref role="2aWVGs" to="8ps7:3xM68GMigZP" resolve="Ω" />
                               </node>
                             </node>
                           </node>
@@ -10970,7 +10970,7 @@
                       <node concept="2OqwBi" id="1FkCRmRWRLa" role="37vLTx">
                         <node concept="2tJFMh" id="1FkCRmRWPPs" role="2Oq$k0">
                           <node concept="ZC_QK" id="1FkCRmRWPWF" role="2tJFKM">
-                            <ref role="2aWVGs" to="8ps7:3xM68GMigWg" />
+                            <ref role="2aWVGs" to="8ps7:3xM68GMigWg" resolve="SIBaseUnits" />
                           </node>
                         </node>
                         <node concept="Vyspw" id="1FkCRmRWSzb" role="2OqNvi">

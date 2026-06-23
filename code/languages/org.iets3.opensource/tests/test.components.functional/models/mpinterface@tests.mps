@@ -96,7 +96,7 @@
       </concept>
     </language>
     <language id="7b68d745-a7b8-48b9-bd9c-05c0f8725a35" name="org.iets3.core.base">
-      <concept id="229512757698888199" name="org.iets3.core.base.structure.IOptionallyNamed" flags="ng" index="pfQq$">
+      <concept id="229512757698888199" name="org.iets3.core.base.structure.IOptionallyNamed" flags="ngI" index="pfQq$">
         <child id="229512757698888936" name="optionalName" index="pfQ1b" />
       </concept>
       <concept id="229512757698888202" name="org.iets3.core.base.structure.OptionalNameSpecifier" flags="ng" index="pfQqD">
@@ -104,10 +104,10 @@
       </concept>
     </language>
     <language id="cfaa4966-b7d5-4b69-b66a-309a6e1a7290" name="org.iets3.core.expr.base">
-      <concept id="4261931054731905240" name="org.iets3.core.expr.base.structure.IContainExpressionParam" flags="ng" index="2lDidI">
+      <concept id="4261931054731905240" name="org.iets3.core.expr.base.structure.IContainExpressionParam" flags="ngI" index="2lDidI">
         <child id="4261931054731905241" name="expr" index="2lDidJ" />
       </concept>
-      <concept id="7071042522334260296" name="org.iets3.core.expr.base.structure.ITyped" flags="ng" index="2_iKZX">
+      <concept id="7071042522334260296" name="org.iets3.core.expr.base.structure.ITyped" flags="ngI" index="2_iKZX">
         <child id="8811147530085329321" name="type" index="2S399n" />
       </concept>
     </language>
@@ -142,7 +142,7 @@
       <concept id="8811147530085329320" name="org.iets3.core.expr.toplevel.structure.RecordLiteral" flags="ng" index="2S399m">
         <child id="8811147530085329323" name="memberValues" index="2S399l" />
       </concept>
-      <concept id="602952467877559919" name="org.iets3.core.expr.toplevel.structure.IRecordDeclaration" flags="ng" index="S5Q1W">
+      <concept id="602952467877559919" name="org.iets3.core.expr.toplevel.structure.IRecordDeclaration" flags="ngI" index="S5Q1W">
         <child id="602952467877562565" name="members" index="S5Trm" />
       </concept>
       <concept id="8811147530084018370" name="org.iets3.core.expr.toplevel.structure.RecordType" flags="ng" index="2Ss9cW">
@@ -525,7 +525,7 @@
           <node concept="3iBYCm" id="6P1C6lFyk6i" role="1297_c">
             <node concept="3iBYCm" id="6P1C6lFyk6P" role="3iBWmK">
               <node concept="1WbbFT" id="6P1C6lFyk7I" role="3iBWmK">
-                <ref role="1WbbFS" node="3V7UZCjV6V" />
+                <ref role="1WbbFS" node="3V7UZCjV6V" resolve="byte" />
               </node>
             </node>
           </node>
@@ -535,7 +535,7 @@
           <node concept="3iBYCm" id="6P1C6lFMdHE" role="1297_c">
             <node concept="3iBYCm" id="6P1C6lFMdHF" role="3iBWmK">
               <node concept="1WbbFT" id="6P1C6lFMdHG" role="3iBWmK">
-                <ref role="1WbbFS" node="3V7UZCjV6V" />
+                <ref role="1WbbFS" node="3V7UZCjV6V" resolve="byte" />
               </node>
             </node>
           </node>
@@ -544,11 +544,11 @@
           <property role="TrG5h" value="Stream" />
           <node concept="3iBYCm" id="6I4xWfUnlhq" role="1297_c">
             <node concept="1WbbFT" id="6I4xWfUnlhM" role="3iBWmK">
-              <ref role="1WbbFS" node="3V7UZCjV6V" />
+              <ref role="1WbbFS" node="3V7UZCjV6V" resolve="byte" />
             </node>
           </node>
           <node concept="2Ss9cW" id="6I4xWfUnl$r" role="2hP8G4">
-            <ref role="2Ss9cX" node="7Z_pmaBQoQY" />
+            <ref role="2Ss9cX" node="7Z_pmaBQoQY" resolve="ImageStreamConfig" />
           </node>
         </node>
         <node concept="1i1AuW" id="6P1C6lFyjj6" role="1i1AA4" />
@@ -558,7 +558,7 @@
             <node concept="2Ss9d7" id="6P1C6lFykaw" role="S5Trm">
               <property role="TrG5h" value="res" />
               <node concept="5mh7t" id="6P1C6lFykbw" role="2S399n">
-                <ref role="5mh6l" node="8XWEtevISU" />
+                <ref role="5mh6l" node="8XWEtevISU" resolve="Resolution" />
               </node>
             </node>
             <node concept="2Ss9d7" id="6P1C6lFykbT" role="S5Trm">
@@ -568,7 +568,7 @@
             <node concept="2Ss9d7" id="6P1C6lFykij" role="S5Trm">
               <property role="TrG5h" value="encoding" />
               <node concept="5mh7t" id="6P1C6lFykjI" role="2S399n">
-                <ref role="5mh6l" node="6P1C6lFykfs" />
+                <ref role="5mh6l" node="6P1C6lFykfs" resolve="Codec" />
               </node>
             </node>
           </node>
@@ -579,7 +579,7 @@
             <node concept="2Ss9d7" id="6P1C6lFLSIw" role="S5Trm">
               <property role="TrG5h" value="res" />
               <node concept="5mh7t" id="6P1C6lFLSIx" role="2S399n">
-                <ref role="5mh6l" node="8XWEtevISU" />
+                <ref role="5mh6l" node="8XWEtevISU" resolve="Resolution" />
               </node>
             </node>
             <node concept="2Ss9d7" id="6P1C6lFLSIy" role="S5Trm">
@@ -589,7 +589,7 @@
             <node concept="2Ss9d7" id="6P1C6lFLSI$" role="S5Trm">
               <property role="TrG5h" value="encoding" />
               <node concept="5mh7t" id="6P1C6lFLSI_" role="2S399n">
-                <ref role="5mh6l" node="6P1C6lFykfs" />
+                <ref role="5mh6l" node="6P1C6lFykfs" resolve="Codec" />
               </node>
             </node>
           </node>
@@ -603,17 +603,17 @@
             <node concept="pdmcS" id="6P1C6lFykky" role="H_jLS">
               <property role="TrG5h" value="config" />
               <node concept="2Ss9cW" id="6P1C6lFykkJ" role="2S399n">
-                <ref role="2Ss9cX" node="7Z_pmaBQoQY" />
+                <ref role="2Ss9cX" node="7Z_pmaBQoQY" resolve="ImageStreamConfig" />
               </node>
             </node>
             <node concept="1i7wMI" id="6P1C6lFyklh" role="IJpy$">
               <node concept="1aMMJS" id="6P1C6lFyklg" role="1aMMyH" />
               <node concept="3Uzt5i" id="6P1C6lFykun" role="1i6vMw">
                 <node concept="18Ww8V" id="6P1C6lFykxb" role="3UziXr">
-                  <ref role="18Ww8U" node="6P1C6lFykky" />
+                  <ref role="18Ww8U" node="6P1C6lFykky" resolve="config" />
                 </node>
                 <node concept="1i16kK" id="6P1C6lFyklq" role="3Uzt4n">
-                  <ref role="1i16kL" node="6P1C6lFyk44" />
+                  <ref role="1i16kL" node="6P1C6lFyk44" resolve="ImageStream" />
                 </node>
               </node>
             </node>
@@ -626,24 +626,24 @@
             <node concept="pdmcS" id="6P1C6lFyknJ" role="H_jLS">
               <property role="TrG5h" value="config" />
               <node concept="2Ss9cW" id="6P1C6lFLT8V" role="2S399n">
-                <ref role="2Ss9cX" node="7Z_pmaBQoQY" />
+                <ref role="2Ss9cX" node="7Z_pmaBQoQY" resolve="ImageStreamConfig" />
               </node>
             </node>
             <node concept="1i7wMI" id="6P1C6lFyko8" role="IJo7D">
               <node concept="1aMMGI" id="6P1C6lFyko7" role="1aMMyH" />
               <node concept="3Uzt5i" id="6P1C6lFykoS" role="1i6vMw">
                 <node concept="18Ww8V" id="6P1C6lFykrH" role="3UziXr">
-                  <ref role="18Ww8U" node="6P1C6lFyknJ" />
+                  <ref role="18Ww8U" node="6P1C6lFyknJ" resolve="config" />
                 </node>
                 <node concept="1i16kK" id="3xMjepAp9b1" role="3Uzt4n">
-                  <ref role="1i16kL" node="6P1C6lFyk44" />
+                  <ref role="1i16kL" node="6P1C6lFyk44" resolve="ImageStream" />
                 </node>
               </node>
             </node>
             <node concept="1i7wMI" id="6I4xWfUrxAh" role="IJo7D">
               <node concept="1aMMGI" id="6I4xWfUrxAf" role="1aMMyH" />
               <node concept="1i16kK" id="6I4xWfUrxAs" role="1i6vMw">
-                <ref role="1i16kL" node="6I4xWfUnlfb" />
+                <ref role="1i16kL" node="6I4xWfUnlfb" resolve="Stream" />
               </node>
               <node concept="7CXmI" id="6I4xWfUxO2G" role="lGtFl">
                 <node concept="1TM$A" id="6I4xWfUxO2H" role="7EUXB">
@@ -661,23 +661,23 @@
             <node concept="pdmcS" id="3mxHOBiDGaV" role="H_jLS">
               <property role="TrG5h" value="config" />
               <node concept="2Ss9cW" id="3mxHOBiDGb6" role="2S399n">
-                <ref role="2Ss9cX" node="6P1C6lFLSIv" />
+                <ref role="2Ss9cX" node="6P1C6lFLSIv" resolve="ImageStreamConfig2" />
               </node>
             </node>
             <node concept="pdmcS" id="6I4xWfU$BJD" role="H_jLS">
               <property role="TrG5h" value="cf" />
               <node concept="2Ss9cW" id="6I4xWfU$BJS" role="2S399n">
-                <ref role="2Ss9cX" node="7Z_pmaBQoQY" />
+                <ref role="2Ss9cX" node="7Z_pmaBQoQY" resolve="ImageStreamConfig" />
               </node>
             </node>
             <node concept="1i7wMI" id="3mxHOBiDGbR" role="IJo7D">
               <node concept="1aMMGI" id="3mxHOBiDGbQ" role="1aMMyH" />
               <node concept="3Uzt5i" id="3mxHOBiDGcI" role="1i6vMw">
                 <node concept="18Ww8V" id="3mxHOBiDGoP" role="3UziXr">
-                  <ref role="18Ww8U" node="3mxHOBiDGaV" />
+                  <ref role="18Ww8U" node="3mxHOBiDGaV" resolve="config" />
                 </node>
                 <node concept="1i16kK" id="3mxHOBiDGbX" role="3Uzt4n">
-                  <ref role="1i16kL" node="6P1C6lFyk44" />
+                  <ref role="1i16kL" node="6P1C6lFyk44" resolve="ImageStream" />
                 </node>
               </node>
             </node>
@@ -685,10 +685,10 @@
               <node concept="1aMMGI" id="6I4xWfU$BIV" role="1aMMyH" />
               <node concept="3Uzt5i" id="6I4xWfU$C50" role="1i6vMw">
                 <node concept="1i16kK" id="6I4xWfU$BJ8" role="3Uzt4n">
-                  <ref role="1i16kL" node="6I4xWfUnlfb" />
+                  <ref role="1i16kL" node="6I4xWfUnlfb" resolve="Stream" />
                 </node>
                 <node concept="18Ww8V" id="6I4xWfU$C51" role="3UziXr">
-                  <ref role="18Ww8U" node="6I4xWfU$BJD" />
+                  <ref role="18Ww8U" node="6I4xWfU$BJD" resolve="cf" />
                 </node>
               </node>
             </node>
@@ -706,7 +706,7 @@
                   </node>
                 </node>
                 <node concept="1i16kK" id="1QfwpkTYJen" role="3Uzt4n">
-                  <ref role="1i16kL" node="6I4xWfUnlfb" />
+                  <ref role="1i16kL" node="6I4xWfUnlfb" resolve="Stream" />
                 </node>
               </node>
             </node>
@@ -718,16 +718,16 @@
             <property role="TrG5h" value="fo" />
             <node concept="2S399m" id="3mxHOBiUCe9" role="2lDidJ">
               <node concept="2Ss9cW" id="3mxHOBiUCea" role="2S399n">
-                <ref role="2Ss9cX" node="7Z_pmaBQoQY" />
+                <ref role="2Ss9cX" node="7Z_pmaBQoQY" resolve="ImageStreamConfig" />
               </node>
               <node concept="5mhuz" id="3mxHOBiUCeb" role="2S399l">
-                <ref role="5mhpJ" node="6P1C6lFyjZD" />
+                <ref role="5mhpJ" node="6P1C6lFyjZD" resolve="_1080p" />
               </node>
               <node concept="30bXRB" id="3mxHOBiUCec" role="2S399l">
                 <property role="30bXRw" value="30" />
               </node>
               <node concept="5mhuz" id="3mxHOBiUCed" role="2S399l">
-                <ref role="5mhpJ" node="6P1C6lFykhJ" />
+                <ref role="5mhpJ" node="6P1C6lFykhJ" resolve="H265" />
               </node>
             </node>
           </node>
@@ -738,66 +738,66 @@
           <node concept="GnABt" id="6P1C6lFyk__" role="1i1XAe">
             <node concept="1i6xzV" id="6P1C6lFyk_F" role="GnABu">
               <node concept="1i1fwW" id="6P1C6lFyk_N" role="MGl3R">
-                <ref role="1i1fwX" node="6P1C6lFy2DE" />
+                <ref role="1i1fwX" node="6P1C6lFy2DE" resolve="Server" />
               </node>
               <node concept="ifHuv" id="6P1C6lFykAk" role="MGlrR">
-                <ref role="ifHum" node="6P1C6lFykky" />
+                <ref role="ifHum" node="6P1C6lFykky" resolve="config" />
                 <node concept="2S399m" id="6P1C6lFykAA" role="2lDidJ">
                   <node concept="2Ss9cW" id="6P1C6lFykDq" role="2S399n">
-                    <ref role="2Ss9cX" node="7Z_pmaBQoQY" />
+                    <ref role="2Ss9cX" node="7Z_pmaBQoQY" resolve="ImageStreamConfig" />
                   </node>
                   <node concept="5mhuz" id="6P1C6lFykGm" role="2S399l">
-                    <ref role="5mhpJ" node="6P1C6lFyjZD" />
+                    <ref role="5mhpJ" node="6P1C6lFyjZD" resolve="_1080p" />
                   </node>
                   <node concept="30bXRB" id="6P1C6lFykM4" role="2S399l">
                     <property role="30bXRw" value="30" />
                   </node>
                   <node concept="5mhuz" id="6P1C6lFykSh" role="2S399l">
-                    <ref role="5mhpJ" node="6P1C6lFykhJ" />
+                    <ref role="5mhpJ" node="6P1C6lFykhJ" resolve="H265" />
                   </node>
                 </node>
               </node>
             </node>
             <node concept="1i6xzV" id="6P1C6lFykA0" role="GnABu">
               <node concept="1i1fwW" id="6P1C6lFykAc" role="MGl3R">
-                <ref role="1i1fwX" node="6P1C6lFykmS" />
+                <ref role="1i1fwX" node="6P1C6lFykmS" resolve="Client" />
               </node>
               <node concept="ifHuv" id="6P1C6lFykWf" role="MGlrR">
-                <ref role="ifHum" node="6P1C6lFyknJ" />
+                <ref role="ifHum" node="6P1C6lFyknJ" resolve="config" />
                 <node concept="2S399m" id="6P1C6lFykWu" role="2lDidJ">
                   <node concept="2Ss9cW" id="6P1C6lFLTjP" role="2S399n">
-                    <ref role="2Ss9cX" node="7Z_pmaBQoQY" />
+                    <ref role="2Ss9cX" node="7Z_pmaBQoQY" resolve="ImageStreamConfig" />
                   </node>
                   <node concept="5mhuz" id="6P1C6lFykWw" role="2S399l">
-                    <ref role="5mhpJ" node="6P1C6lFyjZD" />
+                    <ref role="5mhpJ" node="6P1C6lFyjZD" resolve="_1080p" />
                   </node>
                   <node concept="30bXRB" id="6P1C6lFykWx" role="2S399l">
                     <property role="30bXRw" value="30" />
                   </node>
                   <node concept="5mhuz" id="6P1C6lFLTuK" role="2S399l">
-                    <ref role="5mhpJ" node="6P1C6lFykht" />
+                    <ref role="5mhpJ" node="6P1C6lFykht" resolve="H264" />
                   </node>
                 </node>
               </node>
             </node>
             <node concept="1i6xzV" id="3mxHOBiDGAb" role="GnABu">
               <node concept="1i1fwW" id="3mxHOBiDGAD" role="MGl3R">
-                <ref role="1i1fwX" node="3mxHOBiDG97" />
+                <ref role="1i1fwX" node="3mxHOBiDG97" resolve="Client2" />
               </node>
               <node concept="ifHuv" id="3mxHOBiDGAL" role="MGlrR">
-                <ref role="ifHum" node="3mxHOBiDGaV" />
+                <ref role="ifHum" node="3mxHOBiDGaV" resolve="config" />
                 <node concept="2S399m" id="3mxHOBiDGB3" role="2lDidJ">
                   <node concept="2Ss9cW" id="3mxHOBiDGOd" role="2S399n">
-                    <ref role="2Ss9cX" node="6P1C6lFLSIv" />
+                    <ref role="2Ss9cX" node="6P1C6lFLSIv" resolve="ImageStreamConfig2" />
                   </node>
                   <node concept="5mhuz" id="3mxHOBiDH1A" role="2S399l">
-                    <ref role="5mhpJ" node="6P1C6lFyjZD" />
+                    <ref role="5mhpJ" node="6P1C6lFyjZD" resolve="_1080p" />
                   </node>
                   <node concept="30bXRB" id="3mxHOBiDHsa" role="2S399l">
                     <property role="30bXRw" value="20" />
                   </node>
                   <node concept="5mhuz" id="3mxHOBiDHRc" role="2S399l">
-                    <ref role="5mhpJ" node="6P1C6lFykht" />
+                    <ref role="5mhpJ" node="6P1C6lFykht" resolve="H264" />
                   </node>
                 </node>
               </node>
@@ -816,12 +816,12 @@
             </node>
             <node concept="1i6xzV" id="3mxHOBiUCg1" role="GnABu">
               <node concept="1i1fwW" id="3mxHOBiUCgH" role="MGl3R">
-                <ref role="1i1fwX" node="6P1C6lFykmS" />
+                <ref role="1i1fwX" node="6P1C6lFykmS" resolve="Client" />
               </node>
               <node concept="ifHuv" id="3mxHOBiUCgP" role="MGlrR">
-                <ref role="ifHum" node="6P1C6lFyknJ" />
+                <ref role="ifHum" node="6P1C6lFyknJ" resolve="config" />
                 <node concept="_emDc" id="3mxHOBiUCh8" role="2lDidJ">
-                  <ref role="_emDf" node="3mxHOBiUCbj" />
+                  <ref role="_emDf" node="3mxHOBiUCbj" resolve="fo" />
                 </node>
               </node>
               <node concept="pfQqD" id="3mxHOBiUCy$" role="pfQ1b">
@@ -829,24 +829,24 @@
               </node>
             </node>
             <node concept="VCwYV" id="6P1C6lFyECg" role="GnABu">
-              <ref role="paF6x" node="6P1C6lFyklh" />
-              <ref role="paF6R" node="6P1C6lFyko8" />
+              <ref role="paF6x" node="6P1C6lFyklh" resolve="null_out" />
+              <ref role="paF6R" node="6P1C6lFyko8" resolve="null_in" />
               <node concept="VCwY8" id="6P1C6lFyECH" role="VCno0">
-                <ref role="VCwYn" node="6P1C6lFyk_F" />
+                <ref role="VCwYn" node="6P1C6lFyk_F" resolve="Server" />
               </node>
               <node concept="VCwY8" id="6P1C6lFyECV" role="VC6R4">
-                <ref role="VCwYn" node="6P1C6lFykA0" />
+                <ref role="VCwYn" node="6P1C6lFykA0" resolve="Client" />
               </node>
               <node concept="4mvsC" id="6P1C6lFyED2" role="1O05jb" />
             </node>
             <node concept="VCwYV" id="3mxHOBiDIai" role="GnABu">
-              <ref role="paF6x" node="6P1C6lFyklh" />
-              <ref role="paF6R" node="3mxHOBiDGbR" />
+              <ref role="paF6x" node="6P1C6lFyklh" resolve="null_out" />
+              <ref role="paF6R" node="3mxHOBiDGbR" resolve="null_in" />
               <node concept="VCwY8" id="3mxHOBiDIaY" role="VCno0">
-                <ref role="VCwYn" node="6P1C6lFyk_F" />
+                <ref role="VCwYn" node="6P1C6lFyk_F" resolve="Server" />
               </node>
               <node concept="VCwY8" id="3mxHOBiDIdu" role="VC6R4">
-                <ref role="VCwYn" node="3mxHOBiDGAb" />
+                <ref role="VCwYn" node="3mxHOBiDGAb" resolve="Client2" />
               </node>
               <node concept="4mvsC" id="3mxHOBiDIu9" role="1O05jb" />
               <node concept="7CXmI" id="3mxHOBiDK1H" role="lGtFl">
@@ -854,26 +854,26 @@
               </node>
             </node>
             <node concept="paFpy" id="4VHfdEqeCax" role="GnABu">
-              <ref role="paFpC" node="4VHfdEqeCj0" />
-              <ref role="padQV" node="6I4xWfUrxAh" />
+              <ref role="paFpC" node="4VHfdEqeCj0" resolve="Stream_in" />
+              <ref role="padQV" node="6I4xWfUrxAh" resolve="Stream_in" />
               <node concept="VCwY8" id="4VHfdEqeCcb" role="padQQ">
-                <ref role="VCwYn" node="6P1C6lFykA0" />
+                <ref role="VCwYn" node="6P1C6lFykA0" resolve="Client" />
               </node>
               <node concept="4mvsC" id="4VHfdEqeCkJ" role="1O05jb" />
             </node>
             <node concept="paFpy" id="4VHfdEqlhnD" role="GnABu">
-              <ref role="paFpC" node="4VHfdEqeCj0" />
-              <ref role="padQV" node="6I4xWfUrxAh" />
+              <ref role="paFpC" node="4VHfdEqeCj0" resolve="Stream_in" />
+              <ref role="padQV" node="6I4xWfUrxAh" resolve="Stream_in" />
               <node concept="VCwY8" id="4VHfdEqlhpp" role="padQQ">
-                <ref role="VCwYn" node="3mxHOBiUCg1" />
+                <ref role="VCwYn" node="3mxHOBiUCg1" resolve="c" />
               </node>
               <node concept="4mvsC" id="4VHfdEqlhq6" role="1O05jb" />
             </node>
             <node concept="paFpy" id="4VHfdEqliaW" role="GnABu">
-              <ref role="paFpC" node="4VHfdEqljEC" />
-              <ref role="padQV" node="6P1C6lFyko8" />
+              <ref role="paFpC" node="4VHfdEqljEC" resolve="null_in" />
+              <ref role="padQV" node="6P1C6lFyko8" resolve="null_in" />
               <node concept="VCwY8" id="4VHfdEqlk4v" role="padQQ">
-                <ref role="VCwYn" node="3mxHOBiUCg1" />
+                <ref role="VCwYn" node="3mxHOBiUCg1" resolve="c" />
               </node>
               <node concept="4mvsC" id="4VHfdEqlkt7" role="1O05jb" />
             </node>
@@ -883,7 +883,7 @@
             <node concept="1i7wMI" id="4VHfdEqeCj0" role="IJo7D">
               <node concept="1aMMGI" id="4VHfdEqeCiW" role="1aMMyH" />
               <node concept="1i16kK" id="4VHfdEqeCj6" role="1i6vMw">
-                <ref role="1i16kL" node="6I4xWfUnlfb" />
+                <ref role="1i16kL" node="6I4xWfUnlfb" resolve="Stream" />
               </node>
               <node concept="7CXmI" id="4VHfdEqeFrn" role="lGtFl">
                 <node concept="1TM$A" id="4VHfdEqeFro" role="7EUXB" />
@@ -893,20 +893,20 @@
               <node concept="1aMMGI" id="4VHfdEqljEA" role="1aMMyH" />
               <node concept="3Uzt5i" id="4VHfdEqlnxQ" role="1i6vMw">
                 <node concept="1i16kK" id="4VHfdEqlk2X" role="3Uzt4n">
-                  <ref role="1i16kL" node="6P1C6lFyk44" />
+                  <ref role="1i16kL" node="6P1C6lFyk44" resolve="ImageStream" />
                 </node>
                 <node concept="2S399m" id="4VHfdEqloHd" role="3UziXr">
                   <node concept="2Ss9cW" id="4VHfdEqloHe" role="2S399n">
-                    <ref role="2Ss9cX" node="7Z_pmaBQoQY" />
+                    <ref role="2Ss9cX" node="7Z_pmaBQoQY" resolve="ImageStreamConfig" />
                   </node>
                   <node concept="5mhuz" id="4VHfdEqloHf" role="2S399l">
-                    <ref role="5mhpJ" node="6P1C6lFyjZD" />
+                    <ref role="5mhpJ" node="6P1C6lFyjZD" resolve="_1080p" />
                   </node>
                   <node concept="30bXRB" id="4VHfdEqloHg" role="2S399l">
                     <property role="30bXRw" value="30" />
                   </node>
                   <node concept="5mhuz" id="4VHfdEqloHh" role="2S399l">
-                    <ref role="5mhpJ" node="6P1C6lFykhJ" />
+                    <ref role="5mhpJ" node="6P1C6lFykhJ" resolve="H265" />
                   </node>
                 </node>
               </node>
