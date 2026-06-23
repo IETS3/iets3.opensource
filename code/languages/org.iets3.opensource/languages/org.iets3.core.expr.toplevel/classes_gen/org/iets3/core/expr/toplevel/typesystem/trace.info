@@ -317,10 +317,10 @@
   </root>
   <root nodeRef="r:8023e40c-26d4-4543-bd46-2ec2c03f861f(org.iets3.core.expr.toplevel.typesystem)/217046401489010199">
     <file name="TypesystemDescriptor.java">
-      <node id="217046401489010199" at="41,5,42,83" concept="7" />
-      <node id="217046401489010199" at="42,83,43,47" concept="2" />
-      <node id="217046401489010199" at="40,5,44,5" concept="0" />
-      <scope id="217046401489010199" at="41,5,43,47">
+      <node id="217046401489010199" at="49,5,50,83" concept="7" />
+      <node id="217046401489010199" at="50,83,51,47" concept="2" />
+      <node id="217046401489010199" at="48,5,52,5" concept="0" />
+      <scope id="217046401489010199" at="49,5,51,47">
         <var name="inferenceRule" id="217046401489010199" />
       </scope>
     </file>
@@ -705,10 +705,10 @@
   </root>
   <root nodeRef="r:8023e40c-26d4-4543-bd46-2ec2c03f861f(org.iets3.core.expr.toplevel.typesystem)/2945473592442828675">
     <file name="TypesystemDescriptor.java">
-      <node id="2945473592442828675" at="25,5,26,82" concept="7" />
-      <node id="2945473592442828675" at="26,82,27,47" concept="2" />
-      <node id="2945473592442828675" at="24,33,28,5" concept="0" />
-      <scope id="2945473592442828675" at="25,5,27,47">
+      <node id="2945473592442828675" at="33,5,34,82" concept="7" />
+      <node id="2945473592442828675" at="34,82,35,47" concept="2" />
+      <node id="2945473592442828675" at="32,5,36,5" concept="0" />
+      <scope id="2945473592442828675" at="33,5,35,47">
         <var name="inferenceRule" id="2945473592442828675" />
       </scope>
     </file>
@@ -917,6 +917,53 @@
       <unit id="3315773615451995625" at="18,0,47,0" name="org.iets3.core.expr.toplevel.typesystem.typeof_TypedefContractValExpr_InferenceRule" />
     </file>
   </root>
+  <root nodeRef="r:8023e40c-26d4-4543-bd46-2ec2c03f861f(org.iets3.core.expr.toplevel.typesystem)/3902381939130395329">
+    <file name="TypesystemDescriptor.java">
+      <node id="3902381939130395329" at="29,5,30,98" concept="7" />
+      <node id="3902381939130395329" at="30,98,31,47" concept="2" />
+      <node id="3902381939130395329" at="28,5,32,5" concept="0" />
+      <scope id="3902381939130395329" at="29,5,31,47">
+        <var name="inferenceRule" id="3902381939130395329" />
+      </scope>
+    </file>
+    <file name="typeof_AbstractEnumSingleInTarget_InferenceRule.java">
+      <node id="3902381939130395402" at="20,5,21,44" concept="7" />
+      <node id="3902381939130395402" at="21,44,22,205" concept="7" />
+      <node id="3902381939130395402" at="22,205,23,269" concept="2" />
+      <node id="3902381939130395329" at="26,50,27,50" concept="8" />
+      <node id="3902381939130395329" at="29,68,30,102" concept="8" />
+      <node id="3902381939130395329" at="32,30,33,17" concept="8" />
+      <node id="3902381939130395329" at="37,0,38,0" concept="11" trace="AbstractEnumSingleInTarget$JO" />
+      <node id="3902381939130395329" at="17,0,19,0" concept="1" trace="typeof_AbstractEnumSingleInTarget_InferenceRule#()V" />
+      <node id="3902381939130395329" at="26,0,29,0" concept="6" trace="getApplicableConcept#()Lorg/jetbrains/mps/openapi/language/SAbstractConcept;" />
+      <node id="3902381939130395329" at="29,0,32,0" concept="6" trace="isApplicableAndPattern#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljetbrains/mps/lang/typesystem/runtime/IsApplicableStatus;" />
+      <node id="3902381939130395329" at="32,0,35,0" concept="6" trace="overrides#()Z" />
+      <node id="3902381939130395402" at="19,115,24,5" concept="0" />
+      <node id="3902381939130395329" at="19,0,26,0" concept="6" trace="applyRule#(Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/typesystem/inference/TypeCheckingContext;Ljetbrains/mps/lang/typesystem/runtime/IsApplicableStatus;)V" />
+      <scope id="3902381939130395329" at="17,60,17,60" />
+      <scope id="3902381939130395329" at="26,50,27,50" />
+      <scope id="3902381939130395329" at="29,68,30,102" />
+      <scope id="3902381939130395329" at="32,30,33,17" />
+      <scope id="3902381939130395329" at="17,0,19,0" />
+      <scope id="3902381939130395402" at="20,5,23,269">
+        <var name="_info_12389875345" id="3902381939130395402" />
+        <var name="_nodeToCheck_1029348928467" id="3902381939130395402" />
+      </scope>
+      <scope id="3902381939130395329" at="26,0,29,0" />
+      <scope id="3902381939130395329" at="29,0,32,0">
+        <var name="argument" id="3902381939130395329" />
+      </scope>
+      <scope id="3902381939130395329" at="32,0,35,0" />
+      <scope id="3902381939130395330" at="19,115,24,5" />
+      <scope id="3902381939130395329" at="19,0,26,0">
+        <var name="et" id="3902381939130395329" />
+        <var name="status" id="3902381939130395329" />
+        <var name="typeCheckingContext" id="3902381939130395329" />
+      </scope>
+      <unit id="3902381939130395329" at="36,0,39,0" name="org.iets3.core.expr.toplevel.typesystem.typeof_AbstractEnumSingleInTarget_InferenceRule$CONCEPTS" />
+      <unit id="3902381939130395329" at="16,0,40,0" name="org.iets3.core.expr.toplevel.typesystem.typeof_AbstractEnumSingleInTarget_InferenceRule" />
+    </file>
+  </root>
   <root nodeRef="r:8023e40c-26d4-4543-bd46-2ec2c03f861f(org.iets3.core.expr.toplevel.typesystem)/3913100176254106512">
     <file name="toggleEffectOnFunction_QuickFix.java">
       <node id="3913100176254106512" at="14,44,15,134" concept="13" />
@@ -947,10 +994,10 @@
   </root>
   <root nodeRef="r:8023e40c-26d4-4543-bd46-2ec2c03f861f(org.iets3.core.expr.toplevel.typesystem)/4395496037581355610">
     <file name="TypesystemDescriptor.java">
-      <node id="4395496037581355610" at="37,5,38,87" concept="7" />
-      <node id="4395496037581355610" at="38,87,39,47" concept="2" />
-      <node id="4395496037581355610" at="36,5,40,5" concept="0" />
-      <scope id="4395496037581355610" at="37,5,39,47">
+      <node id="4395496037581355610" at="45,5,46,87" concept="7" />
+      <node id="4395496037581355610" at="46,87,47,47" concept="2" />
+      <node id="4395496037581355610" at="44,5,48,5" concept="0" />
+      <scope id="4395496037581355610" at="45,5,47,47">
         <var name="inferenceRule" id="4395496037581355610" />
       </scope>
     </file>
@@ -1238,10 +1285,10 @@
   </root>
   <root nodeRef="r:8023e40c-26d4-4543-bd46-2ec2c03f861f(org.iets3.core.expr.toplevel.typesystem)/5070313213710579135">
     <file name="TypesystemDescriptor.java">
-      <node id="5070313213710579135" at="29,5,30,89" concept="7" />
-      <node id="5070313213710579135" at="30,89,31,47" concept="2" />
-      <node id="5070313213710579135" at="28,5,32,5" concept="0" />
-      <scope id="5070313213710579135" at="29,5,31,47">
+      <node id="5070313213710579135" at="37,5,38,89" concept="7" />
+      <node id="5070313213710579135" at="38,89,39,47" concept="2" />
+      <node id="5070313213710579135" at="36,5,40,5" concept="0" />
+      <scope id="5070313213710579135" at="37,5,39,47">
         <var name="inferenceRule" id="5070313213710579135" />
       </scope>
     </file>
@@ -1419,10 +1466,10 @@
   </root>
   <root nodeRef="r:8023e40c-26d4-4543-bd46-2ec2c03f861f(org.iets3.core.expr.toplevel.typesystem)/543569365051806358">
     <file name="TypesystemDescriptor.java">
-      <node id="543569365051806358" at="33,5,34,83" concept="7" />
-      <node id="543569365051806358" at="34,83,35,47" concept="2" />
-      <node id="543569365051806358" at="32,5,36,5" concept="0" />
-      <scope id="543569365051806358" at="33,5,35,47">
+      <node id="543569365051806358" at="41,5,42,83" concept="7" />
+      <node id="543569365051806358" at="42,83,43,47" concept="2" />
+      <node id="543569365051806358" at="40,5,44,5" concept="0" />
+      <scope id="543569365051806358" at="41,5,43,47">
         <var name="inferenceRule" id="543569365051806358" />
       </scope>
     </file>
@@ -1464,6 +1511,53 @@
       <unit id="543569365051806358" at="37,0,40,0" name="org.iets3.core.expr.toplevel.typesystem.typeof_ConstantRef_InferenceRule$LINKS" />
       <unit id="543569365051806358" at="41,0,44,0" name="org.iets3.core.expr.toplevel.typesystem.typeof_ConstantRef_InferenceRule$CONCEPTS" />
       <unit id="543569365051806358" at="17,0,45,0" name="org.iets3.core.expr.toplevel.typesystem.typeof_ConstantRef_InferenceRule" />
+    </file>
+  </root>
+  <root nodeRef="r:8023e40c-26d4-4543-bd46-2ec2c03f861f(org.iets3.core.expr.toplevel.typesystem)/5496041072006690723">
+    <file name="TypesystemDescriptor.java">
+      <node id="5496041072006690723" at="25,5,26,92" concept="7" />
+      <node id="5496041072006690723" at="26,92,27,47" concept="2" />
+      <node id="5496041072006690723" at="24,33,28,5" concept="0" />
+      <scope id="5496041072006690723" at="25,5,27,47">
+        <var name="inferenceRule" id="5496041072006690723" />
+      </scope>
+    </file>
+    <file name="typeof_AbstractEnumInTarget_InferenceRule.java">
+      <node id="5496041072006692242" at="20,5,21,52" concept="7" />
+      <node id="5496041072006692242" at="21,52,22,205" concept="7" />
+      <node id="5496041072006692242" at="22,205,23,269" concept="2" />
+      <node id="5496041072006690723" at="26,50,27,44" concept="8" />
+      <node id="5496041072006690723" at="29,68,30,102" concept="8" />
+      <node id="5496041072006690723" at="32,30,33,17" concept="8" />
+      <node id="5496041072006690723" at="37,0,38,0" concept="11" trace="AbstractEnumInTarget$Vo" />
+      <node id="5496041072006690723" at="17,0,19,0" concept="1" trace="typeof_AbstractEnumInTarget_InferenceRule#()V" />
+      <node id="5496041072006690723" at="26,0,29,0" concept="6" trace="getApplicableConcept#()Lorg/jetbrains/mps/openapi/language/SAbstractConcept;" />
+      <node id="5496041072006690723" at="29,0,32,0" concept="6" trace="isApplicableAndPattern#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljetbrains/mps/lang/typesystem/runtime/IsApplicableStatus;" />
+      <node id="5496041072006690723" at="32,0,35,0" concept="6" trace="overrides#()Z" />
+      <node id="5496041072006692242" at="19,123,24,5" concept="0" />
+      <node id="5496041072006690723" at="19,0,26,0" concept="6" trace="applyRule#(Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/typesystem/inference/TypeCheckingContext;Ljetbrains/mps/lang/typesystem/runtime/IsApplicableStatus;)V" />
+      <scope id="5496041072006690723" at="17,54,17,54" />
+      <scope id="5496041072006690723" at="26,50,27,44" />
+      <scope id="5496041072006690723" at="29,68,30,102" />
+      <scope id="5496041072006690723" at="32,30,33,17" />
+      <scope id="5496041072006690723" at="17,0,19,0" />
+      <scope id="5496041072006692242" at="20,5,23,269">
+        <var name="_info_12389875345" id="5496041072006692242" />
+        <var name="_nodeToCheck_1029348928467" id="5496041072006692242" />
+      </scope>
+      <scope id="5496041072006690723" at="26,0,29,0" />
+      <scope id="5496041072006690723" at="29,0,32,0">
+        <var name="argument" id="5496041072006690723" />
+      </scope>
+      <scope id="5496041072006690723" at="32,0,35,0" />
+      <scope id="5496041072006690724" at="19,123,24,5" />
+      <scope id="5496041072006690723" at="19,0,26,0">
+        <var name="enumtarget" id="5496041072006690723" />
+        <var name="status" id="5496041072006690723" />
+        <var name="typeCheckingContext" id="5496041072006690723" />
+      </scope>
+      <unit id="5496041072006690723" at="36,0,39,0" name="org.iets3.core.expr.toplevel.typesystem.typeof_AbstractEnumInTarget_InferenceRule$CONCEPTS" />
+      <unit id="5496041072006690723" at="16,0,40,0" name="org.iets3.core.expr.toplevel.typesystem.typeof_AbstractEnumInTarget_InferenceRule" />
     </file>
   </root>
   <root nodeRef="r:8023e40c-26d4-4543-bd46-2ec2c03f861f(org.iets3.core.expr.toplevel.typesystem)/5645377606047343399">
@@ -1640,53 +1734,6 @@
         <var name="concept" id="6527211908664776182" />
       </scope>
       <unit id="6527211908664776182" at="208,0,231,0" name="org.iets3.core.expr.toplevel.typesystem.TypesystemDescriptor$CustomOverloadedOperationsTypesProvider_a" />
-    </file>
-  </root>
-  <root nodeRef="r:8023e40c-26d4-4543-bd46-2ec2c03f861f(org.iets3.core.expr.toplevel.typesystem)/6527211908667949118">
-    <file name="TypesystemDescriptor.java">
-      <node id="6527211908667949118" at="49,5,50,84" concept="7" />
-      <node id="6527211908667949118" at="50,84,51,47" concept="2" />
-      <node id="6527211908667949118" at="48,5,52,5" concept="0" />
-      <scope id="6527211908667949118" at="49,5,51,47">
-        <var name="inferenceRule" id="6527211908667949118" />
-      </scope>
-    </file>
-    <file name="typeof_EnumIsTarget_InferenceRule.java">
-      <node id="6527211908667949973" at="20,5,21,44" concept="7" />
-      <node id="6527211908667949973" at="21,44,22,205" concept="7" />
-      <node id="6527211908667949973" at="22,205,23,269" concept="2" />
-      <node id="6527211908667949118" at="26,50,27,36" concept="8" />
-      <node id="6527211908667949118" at="29,68,30,102" concept="8" />
-      <node id="6527211908667949118" at="32,30,33,17" concept="8" />
-      <node id="6527211908667949118" at="37,0,38,0" concept="11" trace="EnumIsTarget$x4" />
-      <node id="6527211908667949118" at="17,0,19,0" concept="1" trace="typeof_EnumIsTarget_InferenceRule#()V" />
-      <node id="6527211908667949118" at="26,0,29,0" concept="6" trace="getApplicableConcept#()Lorg/jetbrains/mps/openapi/language/SAbstractConcept;" />
-      <node id="6527211908667949118" at="29,0,32,0" concept="6" trace="isApplicableAndPattern#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljetbrains/mps/lang/typesystem/runtime/IsApplicableStatus;" />
-      <node id="6527211908667949118" at="32,0,35,0" concept="6" trace="overrides#()Z" />
-      <node id="6527211908667949973" at="19,115,24,5" concept="0" />
-      <node id="6527211908667949118" at="19,0,26,0" concept="6" trace="applyRule#(Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/typesystem/inference/TypeCheckingContext;Ljetbrains/mps/lang/typesystem/runtime/IsApplicableStatus;)V" />
-      <scope id="6527211908667949118" at="17,46,17,46" />
-      <scope id="6527211908667949118" at="26,50,27,36" />
-      <scope id="6527211908667949118" at="29,68,30,102" />
-      <scope id="6527211908667949118" at="32,30,33,17" />
-      <scope id="6527211908667949118" at="17,0,19,0" />
-      <scope id="6527211908667949973" at="20,5,23,269">
-        <var name="_info_12389875345" id="6527211908667949973" />
-        <var name="_nodeToCheck_1029348928467" id="6527211908667949973" />
-      </scope>
-      <scope id="6527211908667949118" at="26,0,29,0" />
-      <scope id="6527211908667949118" at="29,0,32,0">
-        <var name="argument" id="6527211908667949118" />
-      </scope>
-      <scope id="6527211908667949118" at="32,0,35,0" />
-      <scope id="6527211908667949119" at="19,115,24,5" />
-      <scope id="6527211908667949118" at="19,0,26,0">
-        <var name="et" id="6527211908667949118" />
-        <var name="status" id="6527211908667949118" />
-        <var name="typeCheckingContext" id="6527211908667949118" />
-      </scope>
-      <unit id="6527211908667949118" at="36,0,39,0" name="org.iets3.core.expr.toplevel.typesystem.typeof_EnumIsTarget_InferenceRule$CONCEPTS" />
-      <unit id="6527211908667949118" at="16,0,40,0" name="org.iets3.core.expr.toplevel.typesystem.typeof_EnumIsTarget_InferenceRule" />
     </file>
   </root>
   <root nodeRef="r:8023e40c-26d4-4543-bd46-2ec2c03f861f(org.iets3.core.expr.toplevel.typesystem)/6746231842233413021">
@@ -2010,53 +2057,6 @@
       <unit id="7849023854693457538" at="43,0,46,0" name="org.iets3.core.expr.toplevel.typesystem.check_RecordLiteral_NonTypesystemRule$LINKS" />
       <unit id="7849023854693457538" at="47,0,51,0" name="org.iets3.core.expr.toplevel.typesystem.check_RecordLiteral_NonTypesystemRule$CONCEPTS" />
       <unit id="7849023854693457538" at="22,0,52,0" name="org.iets3.core.expr.toplevel.typesystem.check_RecordLiteral_NonTypesystemRule" />
-    </file>
-  </root>
-  <root nodeRef="r:8023e40c-26d4-4543-bd46-2ec2c03f861f(org.iets3.core.expr.toplevel.typesystem)/8006404979731161209">
-    <file name="TypesystemDescriptor.java">
-      <node id="8006404979731161209" at="45,5,46,89" concept="7" />
-      <node id="8006404979731161209" at="46,89,47,47" concept="2" />
-      <node id="8006404979731161209" at="44,5,48,5" concept="0" />
-      <scope id="8006404979731161209" at="45,5,47,47">
-        <var name="inferenceRule" id="8006404979731161209" />
-      </scope>
-    </file>
-    <file name="typeof_EnumIsOneOfTarget_InferenceRule.java">
-      <node id="8006404979731161782" at="20,5,21,45" concept="7" />
-      <node id="8006404979731161782" at="21,45,22,205" concept="7" />
-      <node id="8006404979731161782" at="22,205,23,269" concept="2" />
-      <node id="8006404979731161209" at="26,50,27,38" concept="8" />
-      <node id="8006404979731161209" at="29,68,30,102" concept="8" />
-      <node id="8006404979731161209" at="32,30,33,17" concept="8" />
-      <node id="8006404979731161209" at="37,0,38,0" concept="11" trace="EnumIsInTarget$Vc" />
-      <node id="8006404979731161209" at="17,0,19,0" concept="1" trace="typeof_EnumIsOneOfTarget_InferenceRule#()V" />
-      <node id="8006404979731161209" at="26,0,29,0" concept="6" trace="getApplicableConcept#()Lorg/jetbrains/mps/openapi/language/SAbstractConcept;" />
-      <node id="8006404979731161209" at="29,0,32,0" concept="6" trace="isApplicableAndPattern#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljetbrains/mps/lang/typesystem/runtime/IsApplicableStatus;" />
-      <node id="8006404979731161209" at="32,0,35,0" concept="6" trace="overrides#()Z" />
-      <node id="8006404979731161782" at="19,116,24,5" concept="0" />
-      <node id="8006404979731161209" at="19,0,26,0" concept="6" trace="applyRule#(Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/typesystem/inference/TypeCheckingContext;Ljetbrains/mps/lang/typesystem/runtime/IsApplicableStatus;)V" />
-      <scope id="8006404979731161209" at="17,51,17,51" />
-      <scope id="8006404979731161209" at="26,50,27,38" />
-      <scope id="8006404979731161209" at="29,68,30,102" />
-      <scope id="8006404979731161209" at="32,30,33,17" />
-      <scope id="8006404979731161209" at="17,0,19,0" />
-      <scope id="8006404979731161782" at="20,5,23,269">
-        <var name="_info_12389875345" id="8006404979731161782" />
-        <var name="_nodeToCheck_1029348928467" id="8006404979731161782" />
-      </scope>
-      <scope id="8006404979731161209" at="26,0,29,0" />
-      <scope id="8006404979731161209" at="29,0,32,0">
-        <var name="argument" id="8006404979731161209" />
-      </scope>
-      <scope id="8006404979731161209" at="32,0,35,0" />
-      <scope id="8006404979731161210" at="19,116,24,5" />
-      <scope id="8006404979731161209" at="19,0,26,0">
-        <var name="eio" id="8006404979731161209" />
-        <var name="status" id="8006404979731161209" />
-        <var name="typeCheckingContext" id="8006404979731161209" />
-      </scope>
-      <unit id="8006404979731161209" at="36,0,39,0" name="org.iets3.core.expr.toplevel.typesystem.typeof_EnumIsOneOfTarget_InferenceRule$CONCEPTS" />
-      <unit id="8006404979731161209" at="16,0,40,0" name="org.iets3.core.expr.toplevel.typesystem.typeof_EnumIsOneOfTarget_InferenceRule" />
     </file>
   </root>
   <root nodeRef="r:8023e40c-26d4-4543-bd46-2ec2c03f861f(org.iets3.core.expr.toplevel.typesystem)/820361861852635808">

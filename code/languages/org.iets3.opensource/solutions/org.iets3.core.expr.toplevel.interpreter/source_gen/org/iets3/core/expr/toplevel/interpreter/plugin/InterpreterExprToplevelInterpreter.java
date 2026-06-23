@@ -913,25 +913,19 @@ public class InterpreterExprToplevelInterpreter extends InterpreterBase {
       }
     });
     ListSequence.fromList(((List<IEvaluator>) evaluators)).addElement(new ConceptEvaluatorBase(CONCEPTS.EnumIsInTarget$Vc, "r:fdc4a3a8-bc78-4f8e-a74a-27e64dd85f6d(org.iets3.core.expr.toplevel.interpreter.plugin)/8006404979732395794", true) {
-      public Object evaluateEvaluator(final SNode node, IContext context, final ICoverageAnalyzer coverage, final ComputationTrace trace) {
+      public Object evaluateEvaluator(final SNode node, final IContext context, final ICoverageAnalyzer coverage, final ComputationTrace trace) {
         try {
           coverage.visitedEvaluator(this);
           coverage.visitedConcept(this.concept);
           coverage.visitedConcept(SNodeOperations.getConcept(node));
-          Object ctx = MapSequence.fromMap(context.getEnvironment()).get(SLinkOperations.getTarget(SNodeOperations.cast(SNodeOperations.getParent(node), CONCEPTS.DotExpression$jp), LINKS.expr$CW3E));
-          boolean ret = false;
-          for (SNode l : ListSequence.fromList(SLinkOperations.getChildren(node, LINKS.selectors$9mRD))) {
-            if (ctx == EnumLiteral.getInstance(SLinkOperations.getTarget(l, LINKS.literal$XL8B), context, coverage, ((_FunctionTypes._return_P0_E0<ComputationTrace>) () -> {
-              if (trace != null) {
-                return trace;
-              } else {
-                return new DummyComputationTrace(node);
-              }
-            }).invoke())) {
-              ret = true;
-              break;
+          final Object ctx = MapSequence.fromMap(context.getEnvironment()).get(SLinkOperations.getTarget(SNodeOperations.cast(SNodeOperations.getParent(node), CONCEPTS.DotExpression$jp), LINKS.expr$CW3E));
+          boolean ret = ListSequence.fromList(SLinkOperations.getChildren(node, LINKS.selectors$9mRD)).any((it) -> ctx == EnumLiteral.getInstance(SLinkOperations.getTarget(it, LINKS.literal$XL8B), context, coverage, ((_FunctionTypes._return_P0_E0<ComputationTrace>) () -> {
+            if (trace != null) {
+              return trace;
+            } else {
+              return new DummyComputationTrace(node);
             }
-          }
+          }).invoke()));
           if (ret) {
             ListSequence.fromList(SLinkOperations.getChildren(node, LINKS.selectors$9mRD)).visitAll((it) -> coverage.coverValue(it, null));
           }
@@ -951,6 +945,46 @@ public class InterpreterExprToplevelInterpreter extends InterpreterBase {
       @Override
       public String toString() {
         return "EnumIsInTarget";
+      }
+
+      @Override
+      public boolean canLookupBeCached() {
+        return true;
+      }
+    });
+    ListSequence.fromList(((List<IEvaluator>) evaluators)).addElement(new ConceptEvaluatorBase(CONCEPTS.EnumIsNotInTarget$Dq, "r:fdc4a3a8-bc78-4f8e-a74a-27e64dd85f6d(org.iets3.core.expr.toplevel.interpreter.plugin)/7850247783020677514", true) {
+      public Object evaluateEvaluator(final SNode node, final IContext context, final ICoverageAnalyzer coverage, final ComputationTrace trace) {
+        try {
+          coverage.visitedEvaluator(this);
+          coverage.visitedConcept(this.concept);
+          coverage.visitedConcept(SNodeOperations.getConcept(node));
+          final Object ctx = MapSequence.fromMap(context.getEnvironment()).get(SLinkOperations.getTarget(SNodeOperations.cast(SNodeOperations.getParent(node), CONCEPTS.DotExpression$jp), LINKS.expr$CW3E));
+          boolean ret = ListSequence.fromList(SLinkOperations.getChildren(node, LINKS.selectors$qdJC)).all((it) -> ctx != EnumLiteral.getInstance(SLinkOperations.getTarget(it, LINKS.literal$XL8B), context, coverage, ((_FunctionTypes._return_P0_E0<ComputationTrace>) () -> {
+            if (trace != null) {
+              return trace;
+            } else {
+              return new DummyComputationTrace(node);
+            }
+          }).invoke()));
+          if (ret) {
+            ListSequence.fromList(SLinkOperations.getChildren(node, LINKS.selectors$qdJC)).visitAll((it) -> coverage.coverValue(it, null));
+          }
+          return ret;
+        } catch (StopAndReturnException stop) {
+          return stop.value();
+        } catch (InterpreterEscapeException ex) {
+          throw ex;
+        } catch (RuntimeException ex) {
+          throw new InterpreterRuntimeException("isNotIn()", node, ex, trace);
+        }
+      }
+      public EvaluatorInfo getInfo() {
+        return new EvaluatorInfo("EnumIsNotInTarget", "http://127.0.0.1:63320/node?ref=r%3Afdc4a3a8-bc78-4f8e-a74a-27e64dd85f6d%28org.iets3.core.expr.toplevel.interpreter.plugin%29%2F7850247783020677514");
+      }
+
+      @Override
+      public String toString() {
+        return "EnumIsNotInTarget";
       }
 
       @Override
@@ -1033,6 +1067,42 @@ public class InterpreterExprToplevelInterpreter extends InterpreterBase {
         return true;
       }
     });
+    ListSequence.fromList(((List<IEvaluator>) evaluators)).addElement(new ConceptEvaluatorBase(CONCEPTS.EnumIsNotTarget$32, "r:fdc4a3a8-bc78-4f8e-a74a-27e64dd85f6d(org.iets3.core.expr.toplevel.interpreter.plugin)/7850247782988049095", true) {
+      public Object evaluateEvaluator(final SNode node, IContext context, ICoverageAnalyzer coverage, final ComputationTrace trace) {
+        try {
+          coverage.visitedEvaluator(this);
+          coverage.visitedConcept(this.concept);
+          coverage.visitedConcept(SNodeOperations.getConcept(node));
+          Object ctx = MapSequence.fromMap(context.getEnvironment()).get(SLinkOperations.getTarget(SNodeOperations.cast(SNodeOperations.getParent(node), CONCEPTS.DotExpression$jp), LINKS.expr$CW3E));
+          return ctx != EnumLiteral.getInstance(SLinkOperations.getTarget(node, LINKS.literal$KvuX), context, coverage, ((_FunctionTypes._return_P0_E0<ComputationTrace>) () -> {
+            if (trace != null) {
+              return trace;
+            } else {
+              return new DummyComputationTrace(node);
+            }
+          }).invoke());
+        } catch (StopAndReturnException stop) {
+          return stop.value();
+        } catch (InterpreterEscapeException ex) {
+          throw ex;
+        } catch (RuntimeException ex) {
+          throw new InterpreterRuntimeException("isNot()", node, ex, trace);
+        }
+      }
+      public EvaluatorInfo getInfo() {
+        return new EvaluatorInfo("EnumIsNotTarget", "http://127.0.0.1:63320/node?ref=r%3Afdc4a3a8-bc78-4f8e-a74a-27e64dd85f6d%28org.iets3.core.expr.toplevel.interpreter.plugin%29%2F7850247782988049095");
+      }
+
+      @Override
+      public String toString() {
+        return "EnumIsNotTarget";
+      }
+
+      @Override
+      public boolean canLookupBeCached() {
+        return true;
+      }
+    });
   }
 
 
@@ -1074,8 +1144,10 @@ public class InterpreterExprToplevelInterpreter extends InterpreterBase {
     /*package*/ static final SConcept ConstantRef$5J = MetaAdapterFactory.getConcept(0x71934284d7d145eeL, 0xa0548c072591085fL, 0x78b257522b24f39L, "org.iets3.core.expr.toplevel.structure.ConstantRef");
     /*package*/ static final SConcept ExtensionFunctionCall$AX = MetaAdapterFactory.getConcept(0x71934284d7d145eeL, 0xa0548c072591085fL, 0x27b717d14a8f82d7L, "org.iets3.core.expr.toplevel.structure.ExtensionFunctionCall");
     /*package*/ static final SConcept EnumIsInTarget$Vc = MetaAdapterFactory.getConcept(0x71934284d7d145eeL, 0xa0548c072591085fL, 0x6f1c76e8c8cb0187L, "org.iets3.core.expr.toplevel.structure.EnumIsInTarget");
+    /*package*/ static final SConcept EnumIsNotInTarget$Dq = MetaAdapterFactory.getConcept(0x71934284d7d145eeL, 0xa0548c072591085fL, 0x6cf1aec429856528L, "org.iets3.core.expr.toplevel.structure.EnumIsNotInTarget");
     /*package*/ static final SConcept AllLitList$RT = MetaAdapterFactory.getConcept(0x71934284d7d145eeL, 0xa0548c072591085fL, 0x28e06ca064d916e8L, "org.iets3.core.expr.toplevel.structure.AllLitList");
     /*package*/ static final SConcept EnumIsTarget$x4 = MetaAdapterFactory.getConcept(0x71934284d7d145eeL, 0xa0548c072591085fL, 0x5a9550a5f5da059dL, "org.iets3.core.expr.toplevel.structure.EnumIsTarget");
+    /*package*/ static final SConcept EnumIsNotTarget$32 = MetaAdapterFactory.getConcept(0x71934284d7d145eeL, 0xa0548c072591085fL, 0x3f3f1c6541af6e30L, "org.iets3.core.expr.toplevel.structure.EnumIsNotTarget");
   }
 
   private static final class PROPS {
@@ -1103,11 +1175,13 @@ public class InterpreterExprToplevelInterpreter extends InterpreterBase {
     /*package*/ static final SContainmentLink args$hM$s = MetaAdapterFactory.getContainmentLink(0x71934284d7d145eeL, 0xa0548c072591085fL, 0x27b717d14a8f82d7L, 0x27b717d14a903157L, "args");
     /*package*/ static final SReferenceLink extFun$udGR = MetaAdapterFactory.getReferenceLink(0x71934284d7d145eeL, 0xa0548c072591085fL, 0x27b717d14a8f82d7L, 0x27b717d14a8f82e8L, "extFun");
     /*package*/ static final SContainmentLink args$XOIh = MetaAdapterFactory.getContainmentLink(0x9464fa065ab9409bL, 0x927464ab29588457L, 0x427ce523083b8a2fL, 0x427ce523083b8a3fL, "args");
-    /*package*/ static final SReferenceLink literal$XL8B = MetaAdapterFactory.getReferenceLink(0x71934284d7d145eeL, 0xa0548c072591085fL, 0x6f1c76e8c8cb0fcdL, 0x6f1c76e8c8cb0fceL, "literal");
     /*package*/ static final SContainmentLink selectors$9mRD = MetaAdapterFactory.getContainmentLink(0x71934284d7d145eeL, 0xa0548c072591085fL, 0x6f1c76e8c8cb0187L, 0x6f1c76e8c8cb018aL, "selectors");
+    /*package*/ static final SReferenceLink literal$XL8B = MetaAdapterFactory.getReferenceLink(0x71934284d7d145eeL, 0xa0548c072591085fL, 0x6f1c76e8c8cb0fcdL, 0x6f1c76e8c8cb0fceL, "literal");
+    /*package*/ static final SContainmentLink selectors$qdJC = MetaAdapterFactory.getContainmentLink(0x71934284d7d145eeL, 0xa0548c072591085fL, 0x6cf1aec429856528L, 0x6cf1aec42985652aL, "selectors");
     /*package*/ static final SContainmentLink enumType$fTEX = MetaAdapterFactory.getContainmentLink(0x71934284d7d145eeL, 0xa0548c072591085fL, 0x28e06ca064d916e8L, 0x28e06ca064d91ca1L, "enumType");
     /*package*/ static final SReferenceLink enum$2YBB = MetaAdapterFactory.getReferenceLink(0x71934284d7d145eeL, 0xa0548c072591085fL, 0x61fe216664a730bbL, 0x61fe216664a730f3L, "enum");
     /*package*/ static final SContainmentLink literals$K_NE = MetaAdapterFactory.getContainmentLink(0x71934284d7d145eeL, 0xa0548c072591085fL, 0x61fe216664a72eaeL, 0x61fe216664a72ef4L, "literals");
     /*package*/ static final SReferenceLink literal$lbzw = MetaAdapterFactory.getReferenceLink(0x71934284d7d145eeL, 0xa0548c072591085fL, 0x5a9550a5f5da059dL, 0x5a9550a5f5e318deL, "literal");
+    /*package*/ static final SReferenceLink literal$KvuX = MetaAdapterFactory.getReferenceLink(0x71934284d7d145eeL, 0xa0548c072591085fL, 0x3f3f1c6541af6e30L, 0x3f3f1c6541af6e32L, "literal");
   }
 }

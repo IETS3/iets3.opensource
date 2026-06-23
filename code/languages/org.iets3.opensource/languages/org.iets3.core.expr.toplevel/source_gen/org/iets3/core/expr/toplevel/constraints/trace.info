@@ -15,7 +15,7 @@
   <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1070475587102:jetbrains.mps.baseLanguage.structure.SuperConstructorInvocation" />
   <root>
     <file name="ConstraintsAspectDescriptor.java">
-      <unit at="13,0,97,0" name="org.iets3.core.expr.toplevel.constraints.ConstraintsAspectDescriptor" />
+      <unit at="13,0,103,0" name="org.iets3.core.expr.toplevel.constraints.ConstraintsAspectDescriptor" />
     </file>
   </root>
   <root nodeRef="r:dfbbc430-47fe-4054-9d32-72c481150c72(org.iets3.core.expr.toplevel.constraints)/1024425597324740350">
@@ -782,6 +782,49 @@
       <unit id="543569365051817369" at="25,0,63,0" name="org.iets3.core.expr.toplevel.constraints.ConstantRef_Constraints" />
     </file>
   </root>
+  <root nodeRef="r:dfbbc430-47fe-4054-9d32-72c481150c72(org.iets3.core.expr.toplevel.constraints)/5496041072006674187">
+    <file name="AbstractEnumInTarget_Constraints.java">
+      <node id="5496041072006674187" at="21,45,22,44" concept="12" />
+      <node id="5496041072006674187" at="29,127,30,128" concept="6" />
+      <node id="5496041072006674187" at="30,128,31,0" concept="9" />
+      <node id="5496041072006674187" at="32,55,33,71" concept="2" />
+      <node id="5496041072006674187" at="34,9,35,0" concept="9" />
+      <node id="5496041072006674187" at="35,0,36,22" concept="7" />
+      <node id="5496041072006681053" at="40,128,41,187" concept="7" />
+      <node id="5496041072006674187" at="43,0,44,0" concept="10" trace="canBeChildBreakingPoint" />
+      <node id="5496041072006674187" at="46,0,47,0" concept="10" trace="AbstractEnumInTarget$Vo" />
+      <node id="5496041072006674187" at="47,0,48,0" concept="10" trace="DotExpression$jp" />
+      <node id="5496041072006674187" at="48,0,49,0" concept="10" trace="EnumType$z" />
+      <node id="5496041072006674187" at="21,0,24,0" concept="1" trace="AbstractEnumInTarget_Constraints#()V" />
+      <node id="5496041072006674187" at="31,0,34,9" concept="4" />
+      <node id="5496041072006674187" at="40,0,43,0" concept="11" trace="staticCanBeAChild#(Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/language/SAbstractConcept;Lorg/jetbrains/mps/openapi/language/SContainmentLink;)Z" />
+      <node id="5496041072006674187" at="28,0,38,0" concept="5" trace="invoke#(Ljetbrains/mps/smodel/runtime/ConstraintContext_CanBeChild;Ljetbrains/mps/smodel/runtime/CheckingNodeContext;)Ljava/lang/Boolean;" />
+      <node id="5496041072006674187" at="26,103,38,6" concept="7" />
+      <node id="5496041072006674187" at="25,0,40,0" concept="5" trace="calculateCanBeChildConstraint#()Ljetbrains/mps/smodel/runtime/ConstraintFunction;" />
+      <scope id="5496041072006674187" at="21,45,22,44" />
+      <scope id="5496041072006674187" at="32,55,33,71" />
+      <scope id="5496041072006680189" at="40,128,41,187" />
+      <scope id="5496041072006674187" at="21,0,24,0" />
+      <scope id="5496041072006674187" at="40,0,43,0">
+        <var name="childConcept" id="5496041072006674187" />
+        <var name="link" id="5496041072006674187" />
+        <var name="node" id="5496041072006674187" />
+        <var name="parentNode" id="5496041072006674187" />
+      </scope>
+      <scope id="5496041072006674187" at="29,127,36,22">
+        <var name="result" id="5496041072006674187" />
+      </scope>
+      <scope id="5496041072006674187" at="28,0,38,0">
+        <var name="checkingNodeContext" id="5496041072006674187" />
+        <var name="context" id="5496041072006674187" />
+      </scope>
+      <scope id="5496041072006674187" at="26,103,38,6" />
+      <scope id="5496041072006674187" at="25,0,40,0" />
+      <unit id="5496041072006674187" at="45,0,50,0" name="org.iets3.core.expr.toplevel.constraints.AbstractEnumInTarget_Constraints$CONCEPTS" />
+      <unit id="5496041072006674187" at="27,15,38,5" name="org.iets3.core.expr.toplevel.constraints.AbstractEnumInTarget_Constraints$1" />
+      <unit id="5496041072006674187" at="20,0,51,0" name="org.iets3.core.expr.toplevel.constraints.AbstractEnumInTarget_Constraints" />
+    </file>
+  </root>
   <root nodeRef="r:dfbbc430-47fe-4054-9d32-72c481150c72(org.iets3.core.expr.toplevel.constraints)/582633689024150524">
     <file name="EnumSortByValue_Constraints.java">
       <node id="582633689024150524" at="22,40,23,39" concept="12" />
@@ -1230,47 +1273,98 @@
       <unit id="7740953487933872583" at="17,0,63,0" name="org.iets3.core.expr.toplevel.constraints.SectionMarker_Constraints" />
     </file>
   </root>
+  <root nodeRef="r:dfbbc430-47fe-4054-9d32-72c481150c72(org.iets3.core.expr.toplevel.constraints)/7850247783015978344">
+    <file name="EnumIsNotTarget_Constraints.java">
+      <node id="7850247783015978344" at="34,40,35,39" concept="12" />
+      <node id="7850247783015978344" at="42,127,43,128" concept="6" />
+      <node id="7850247783015978344" at="43,128,44,0" concept="9" />
+      <node id="7850247783015978344" at="45,55,46,71" concept="2" />
+      <node id="7850247783015978344" at="47,9,48,0" concept="9" />
+      <node id="7850247783015978344" at="48,0,49,22" concept="7" />
+      <node id="7850247783015989973" at="61,63,62,143" concept="7" />
+      <node id="7850247783015989976" at="65,80,66,469" concept="7" />
+      <node id="7850247783015978344" at="70,6,71,131" concept="6" />
+      <node id="7850247783015989973" at="71,131,72,42" concept="2" />
+      <node id="7850247783015978344" at="72,42,73,22" concept="7" />
+      <node id="7850247783015981760" at="75,128,76,187" concept="7" />
+      <node id="7850247783015978344" at="78,0,79,0" concept="10" trace="canBeChildBreakingPoint" />
+      <node id="7850247783015978344" at="81,0,82,0" concept="10" trace="EnumIsNotTarget$32" />
+      <node id="7850247783015978344" at="82,0,83,0" concept="10" trace="DotExpression$jp" />
+      <node id="7850247783015978344" at="83,0,84,0" concept="10" trace="EnumType$z" />
+      <node id="7850247783015978344" at="87,0,88,0" concept="10" trace="literal$KvuX" />
+      <node id="7850247783015978344" at="88,0,89,0" concept="10" trace="enum$2YBB" />
+      <node id="7850247783015978344" at="34,0,37,0" concept="1" trace="EnumIsNotTarget_Constraints#()V" />
+      <node id="7850247783015978344" at="44,0,47,9" concept="4" />
+      <node id="7850247783015978344" at="75,0,78,0" concept="11" trace="staticCanBeAChild#(Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/language/SAbstractConcept;Lorg/jetbrains/mps/openapi/language/SContainmentLink;)Z" />
+      <node id="7850247783015989973" at="60,0,64,0" concept="5" trace="getSearchScopeValidatorNode#()Lorg/jetbrains/mps/openapi/model/SNodeReference;" />
+      <node id="7850247783015989973" at="64,0,68,0" concept="5" trace="createScope#(Ljetbrains/mps/smodel/runtime/ReferenceConstraintsContext;)Ljetbrains/mps/scope/Scope;" />
+      <node id="7850247783015978344" at="41,0,51,0" concept="5" trace="invoke#(Ljetbrains/mps/smodel/runtime/ConstraintContext_CanBeChild;Ljetbrains/mps/smodel/runtime/CheckingNodeContext;)Ljava/lang/Boolean;" />
+      <node id="7850247783015989973" at="58,56,68,10" concept="7" />
+      <node id="7850247783015978344" at="39,103,51,6" concept="7" />
+      <node id="7850247783015989973" at="56,0,70,0" concept="5" trace="getScopeProvider#()Ljetbrains/mps/smodel/runtime/ReferenceScopeProvider;" />
+      <node id="7850247783015978344" at="38,0,53,0" concept="5" trace="calculateCanBeChildConstraint#()Ljetbrains/mps/smodel/runtime/ConstraintFunction;" />
+      <node id="7850247783015989973" at="54,90,70,6" concept="6" />
+      <node id="7850247783015978344" at="53,0,75,0" concept="5" trace="getSpecifiedReferences#()Ljava/util/Map;" />
+      <scope id="7850247783015978344" at="34,40,35,39" />
+      <scope id="7850247783015978344" at="45,55,46,71" />
+      <scope id="7850247783015989973" at="61,63,62,143" />
+      <scope id="7850247783015989973" at="65,80,66,469" />
+      <scope id="7850247783015980896" at="75,128,76,187" />
+      <scope id="7850247783015978344" at="34,0,37,0" />
+      <scope id="7850247783015978344" at="75,0,78,0">
+        <var name="childConcept" id="7850247783015978344" />
+        <var name="link" id="7850247783015978344" />
+        <var name="node" id="7850247783015978344" />
+        <var name="parentNode" id="7850247783015978344" />
+      </scope>
+      <scope id="7850247783015989973" at="60,0,64,0" />
+      <scope id="7850247783015989973" at="64,0,68,0">
+        <var name="_context" id="7850247783015989973" />
+      </scope>
+      <scope id="7850247783015978344" at="42,127,49,22">
+        <var name="result" id="7850247783015978344" />
+      </scope>
+      <scope id="7850247783015978344" at="41,0,51,0">
+        <var name="checkingNodeContext" id="7850247783015978344" />
+        <var name="context" id="7850247783015978344" />
+      </scope>
+      <scope id="7850247783015989973" at="58,56,68,10" />
+      <scope id="7850247783015978344" at="39,103,51,6" />
+      <scope id="7850247783015989973" at="56,0,70,0" />
+      <scope id="7850247783015978344" at="38,0,53,0" />
+      <scope id="7850247783015978344" at="54,90,73,22">
+        <var name="d0" id="7850247783015989973" />
+        <var name="references" id="7850247783015978344" />
+      </scope>
+      <scope id="7850247783015978344" at="53,0,75,0" />
+      <unit id="7850247783015978344" at="86,0,90,0" name="org.iets3.core.expr.toplevel.constraints.EnumIsNotTarget_Constraints$LINKS" />
+      <unit id="7850247783015978344" at="80,0,85,0" name="org.iets3.core.expr.toplevel.constraints.EnumIsNotTarget_Constraints$CONCEPTS" />
+      <unit id="7850247783015989973" at="59,19,68,9" name="org.iets3.core.expr.toplevel.constraints.EnumIsNotTarget_Constraints$2$1" />
+      <unit id="7850247783015978344" at="40,15,51,5" name="org.iets3.core.expr.toplevel.constraints.EnumIsNotTarget_Constraints$1" />
+      <unit id="7850247783015989973" at="55,48,70,5" name="org.iets3.core.expr.toplevel.constraints.EnumIsNotTarget_Constraints$2" />
+      <unit id="7850247783015978344" at="33,0,91,0" name="org.iets3.core.expr.toplevel.constraints.EnumIsNotTarget_Constraints" />
+    </file>
+  </root>
+  <root nodeRef="r:dfbbc430-47fe-4054-9d32-72c481150c72(org.iets3.core.expr.toplevel.constraints)/7850247783016916494">
+    <file name="EnumIsNotInTarget_Constraints.java">
+      <node id="7850247783016916494" at="10,42,11,41" concept="12" />
+      <node id="7850247783016916494" at="15,0,16,0" concept="10" trace="EnumIsNotInTarget$Dq" />
+      <node id="7850247783016916494" at="10,0,13,0" concept="1" trace="EnumIsNotInTarget_Constraints#()V" />
+      <scope id="7850247783016916494" at="10,42,11,41" />
+      <scope id="7850247783016916494" at="10,0,13,0" />
+      <unit id="7850247783016916494" at="14,0,17,0" name="org.iets3.core.expr.toplevel.constraints.EnumIsNotInTarget_Constraints$CONCEPTS" />
+      <unit id="7850247783016916494" at="9,0,18,0" name="org.iets3.core.expr.toplevel.constraints.EnumIsNotInTarget_Constraints" />
+    </file>
+  </root>
   <root nodeRef="r:dfbbc430-47fe-4054-9d32-72c481150c72(org.iets3.core.expr.toplevel.constraints)/8006404979731139216">
     <file name="EnumIsInTarget_Constraints.java">
-      <node id="8006404979731139216" at="21,39,22,38" concept="12" />
-      <node id="8006404979731139216" at="29,127,30,128" concept="6" />
-      <node id="8006404979731139216" at="30,128,31,0" concept="9" />
-      <node id="8006404979731139216" at="32,55,33,71" concept="2" />
-      <node id="8006404979731139216" at="34,9,35,0" concept="9" />
-      <node id="8006404979731139216" at="35,0,36,22" concept="7" />
-      <node id="8006404979731139226" at="40,128,41,187" concept="7" />
-      <node id="8006404979731139216" at="43,0,44,0" concept="10" trace="canBeChildBreakingPoint" />
-      <node id="8006404979731139216" at="46,0,47,0" concept="10" trace="EnumIsInTarget$Vc" />
-      <node id="8006404979731139216" at="47,0,48,0" concept="10" trace="DotExpression$jp" />
-      <node id="8006404979731139216" at="48,0,49,0" concept="10" trace="EnumType$z" />
-      <node id="8006404979731139216" at="21,0,24,0" concept="1" trace="EnumIsInTarget_Constraints#()V" />
-      <node id="8006404979731139216" at="31,0,34,9" concept="4" />
-      <node id="8006404979731139216" at="40,0,43,0" concept="11" trace="staticCanBeAChild#(Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/language/SAbstractConcept;Lorg/jetbrains/mps/openapi/language/SContainmentLink;)Z" />
-      <node id="8006404979731139216" at="28,0,38,0" concept="5" trace="invoke#(Ljetbrains/mps/smodel/runtime/ConstraintContext_CanBeChild;Ljetbrains/mps/smodel/runtime/CheckingNodeContext;)Ljava/lang/Boolean;" />
-      <node id="8006404979731139216" at="26,103,38,6" concept="7" />
-      <node id="8006404979731139216" at="25,0,40,0" concept="5" trace="calculateCanBeChildConstraint#()Ljetbrains/mps/smodel/runtime/ConstraintFunction;" />
-      <scope id="8006404979731139216" at="21,39,22,38" />
-      <scope id="8006404979731139216" at="32,55,33,71" />
-      <scope id="8006404979731139218" at="40,128,41,187" />
-      <scope id="8006404979731139216" at="21,0,24,0" />
-      <scope id="8006404979731139216" at="40,0,43,0">
-        <var name="childConcept" id="8006404979731139216" />
-        <var name="link" id="8006404979731139216" />
-        <var name="node" id="8006404979731139216" />
-        <var name="parentNode" id="8006404979731139216" />
-      </scope>
-      <scope id="8006404979731139216" at="29,127,36,22">
-        <var name="result" id="8006404979731139216" />
-      </scope>
-      <scope id="8006404979731139216" at="28,0,38,0">
-        <var name="checkingNodeContext" id="8006404979731139216" />
-        <var name="context" id="8006404979731139216" />
-      </scope>
-      <scope id="8006404979731139216" at="26,103,38,6" />
-      <scope id="8006404979731139216" at="25,0,40,0" />
-      <unit id="8006404979731139216" at="45,0,50,0" name="org.iets3.core.expr.toplevel.constraints.EnumIsInTarget_Constraints$CONCEPTS" />
-      <unit id="8006404979731139216" at="27,15,38,5" name="org.iets3.core.expr.toplevel.constraints.EnumIsInTarget_Constraints$1" />
-      <unit id="8006404979731139216" at="20,0,51,0" name="org.iets3.core.expr.toplevel.constraints.EnumIsInTarget_Constraints" />
+      <node id="8006404979731139216" at="10,39,11,38" concept="12" />
+      <node id="8006404979731139216" at="15,0,16,0" concept="10" trace="EnumIsInTarget$Vc" />
+      <node id="8006404979731139216" at="10,0,13,0" concept="1" trace="EnumIsInTarget_Constraints#()V" />
+      <scope id="8006404979731139216" at="10,39,11,38" />
+      <scope id="8006404979731139216" at="10,0,13,0" />
+      <unit id="8006404979731139216" at="14,0,17,0" name="org.iets3.core.expr.toplevel.constraints.EnumIsInTarget_Constraints$CONCEPTS" />
+      <unit id="8006404979731139216" at="9,0,18,0" name="org.iets3.core.expr.toplevel.constraints.EnumIsInTarget_Constraints" />
     </file>
   </root>
   <root nodeRef="r:dfbbc430-47fe-4054-9d32-72c481150c72(org.iets3.core.expr.toplevel.constraints)/8006404979732221732">

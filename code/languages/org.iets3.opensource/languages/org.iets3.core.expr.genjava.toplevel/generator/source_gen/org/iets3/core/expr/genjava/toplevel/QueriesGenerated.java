@@ -19,6 +19,7 @@ import org.jetbrains.mps.openapi.model.SNode;
 import jetbrains.mps.internal.collections.runtime.Sequence;
 import jetbrains.mps.baseLanguage.behavior.ClassConcept__BehaviorDescriptor;
 import org.iets3.core.expr.toplevel.behavior.IRecordType__BehaviorDescriptor;
+import org.iets3.core.expr.toplevel.behavior.AbstractEnumSingleInTarget__BehaviorDescriptor;
 import jetbrains.mps.generator.template.IfMacroContext;
 import org.iets3.core.expr.toplevel.behavior.IRecordDeclaration__BehaviorDescriptor;
 import jetbrains.mps.generator.template.SourceSubstituteMacroNodeContext;
@@ -32,7 +33,7 @@ import java.util.ArrayList;
 import org.iets3.core.expr.base.behavior.IContracted__BehaviorDescriptor;
 import jetbrains.mps.generator.template.MappingScriptContext;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SModelOperations;
-import org.iets3.core.expr.toplevel.behavior.EnumIsInTarget__BehaviorDescriptor;
+import org.iets3.core.expr.toplevel.behavior.AbstractEnumInTarget__BehaviorDescriptor;
 import java.util.Map;
 import jetbrains.mps.generator.impl.query.ReductionRuleCondition;
 import java.util.HashMap;
@@ -109,7 +110,7 @@ public class QueriesGenerated extends QueryProviderBase {
     return SNodeOperations.isInstanceOf(SLinkOperations.getTarget(_context.getNode(), LINKS.target$u23F), CONCEPTS.GroupKeyTarget$WX);
   }
   public static boolean rule_Condition_1_13(final BaseMappingRuleContext _context) {
-    return SNodeOperations.isInstanceOf(SLinkOperations.getTarget(_context.getNode(), LINKS.target$u23F), CONCEPTS.EnumIsTarget$x4);
+    return SNodeOperations.isInstanceOf(SLinkOperations.getTarget(_context.getNode(), LINKS.target$u23F), CONCEPTS.AbstractEnumSingleInTarget$JO);
   }
   public static boolean rule_Condition_1_14(final BaseMappingRuleContext _context) {
     return SNodeOperations.isInstanceOf(SLinkOperations.getTarget(_context.getNode(), LINKS.target$u23F), CONCEPTS.ProjectOp$p);
@@ -289,10 +290,10 @@ public class QueriesGenerated extends QueryProviderBase {
     return _context.getOutputNodeByInputNodeAndMappingLabel(SLinkOperations.getTarget(_context.getNode(), LINKS.literal$llO8), "EnumConstant");
   }
   public static Object referenceMacro_GetReferent_1_19(final ReferenceMacroContext _context) {
-    return SPropertyOperations.getString(SNodeOperations.cast(_context.getOriginalCopiedInputNode(SNodeOperations.getParent(SLinkOperations.getTarget(SNodeOperations.cast(SLinkOperations.getTarget(_context.getNode(), LINKS.target$u23F), CONCEPTS.EnumIsTarget$x4), LINKS.literal$lbzw))), CONCEPTS.EnumDeclaration$3b), PROPS.name$MnvL);
+    return SPropertyOperations.getString(SNodeOperations.cast(_context.getOriginalCopiedInputNode(SNodeOperations.getParent(AbstractEnumSingleInTarget__BehaviorDescriptor.literal_id3fg81r5z3uD.invoke(SNodeOperations.cast(SLinkOperations.getTarget(_context.getNode(), LINKS.target$u23F), CONCEPTS.AbstractEnumSingleInTarget$JO)))), CONCEPTS.EnumDeclaration$3b), PROPS.name$MnvL);
   }
   public static Object referenceMacro_GetReferent_1_20(final ReferenceMacroContext _context) {
-    return SPropertyOperations.getString(SLinkOperations.getTarget(SNodeOperations.cast(SLinkOperations.getTarget(_context.getNode(), LINKS.target$u23F), CONCEPTS.EnumIsTarget$x4), LINKS.literal$lbzw), PROPS.name$MnvL);
+    return SPropertyOperations.getString(AbstractEnumSingleInTarget__BehaviorDescriptor.literal_id3fg81r5z3uD.invoke(SNodeOperations.cast(SLinkOperations.getTarget(_context.getNode(), LINKS.target$u23F), CONCEPTS.AbstractEnumSingleInTarget$JO)), PROPS.name$MnvL);
   }
   public static Object referenceMacro_GetReferent_1_21(final ReferenceMacroContext _context) {
     return "it";
@@ -316,7 +317,7 @@ public class QueriesGenerated extends QueryProviderBase {
     return _context.getOutputNodeByInputNodeAndMappingLabel(SLinkOperations.getTarget(_context.getNode(), LINKS.member$d1yc), "Getter");
   }
   public static Object referenceMacro_GetReferent_3_1(final ReferenceMacroContext _context) {
-    return SPropertyOperations.getString(SLinkOperations.getTarget(_context.getNode(), LINKS.literal$lbzw), PROPS.name$MnvL);
+    return SPropertyOperations.getString(AbstractEnumSingleInTarget__BehaviorDescriptor.literal_id3fg81r5z3uD.invoke(_context.getNode()), PROPS.name$MnvL);
   }
   public static Object referenceMacro_GetReferent_4_0(final ReferenceMacroContext _context) {
     return "set" + SPropertyOperations.getString(SLinkOperations.getTarget(_context.getNode(), LINKS.member$6757), PROPS.name$MnvL);
@@ -474,6 +475,9 @@ public class QueriesGenerated extends QueryProviderBase {
   }
   public static Object referenceMacro_GetReferent_20_9(final ReferenceMacroContext _context) {
     return _context.getOutputNodeByInputNodeAndMappingLabel(_context.getNode(), "EnumClass");
+  }
+  public static boolean ifMacro_Condition_1_0(final IfMacroContext _context) {
+    return SNodeOperations.isInstanceOf(SLinkOperations.getTarget(_context.getNode(), LINKS.target$u23F), CONCEPTS.EnumIsTarget$x4);
   }
   public static boolean ifMacro_Condition_16_0(final IfMacroContext _context) {
     return Sequence.fromIterable(IRecordDeclaration__BehaviorDescriptor.nonEmptyMembers_id58eyHuUgYVm.invoke(_context.getNode())).isNotEmpty();
@@ -931,7 +935,7 @@ public class QueriesGenerated extends QueryProviderBase {
     }
   }
   public static void mappingScript_CodeBlock_15(final MappingScriptContext _context) {
-    ListSequence.fromList(SModelOperations.nodes(_context.getModel(), CONCEPTS.EnumIsInTarget$Vc)).visitAll((it) -> SNodeOperations.replaceWithAnother(SNodeOperations.getParent(it), EnumIsInTarget__BehaviorDescriptor.reduce_id4CksDrmwwdX.invoke(it)));
+    ListSequence.fromList(SModelOperations.nodes(_context.getModel(), CONCEPTS.AbstractEnumInTarget$Vo)).visitAll((it) -> SNodeOperations.replaceWithAnother(SNodeOperations.getParent(it), AbstractEnumInTarget__BehaviorDescriptor.reduce_id4L5R3LmDzwi.invoke(it)));
   }
   private final Map<String, ReductionRuleCondition> rrcMethods = new HashMap<String, ReductionRuleCondition>();
   {
@@ -1557,6 +1561,7 @@ public class QueriesGenerated extends QueryProviderBase {
   private final Map<String, IfMacroCondition> imcMethods = new HashMap<String, IfMacroCondition>();
   {
     int i = 0;
+    imcMethods.put("3733519373269294827", new IfMC(i++));
     imcMethods.put("8028267163666259810", new IfMC(i++));
     imcMethods.put("8432595092505168991", new IfMC(i++));
     imcMethods.put("8432595092505353977", new IfMC(i++));
@@ -1578,14 +1583,16 @@ public class QueriesGenerated extends QueryProviderBase {
     public boolean check(@NotNull IfMacroContext ctx) throws GenerationFailureException {
       switch (methodKey) {
         case 0:
-          return QueriesGenerated.ifMacro_Condition_16_0(ctx);
+          return QueriesGenerated.ifMacro_Condition_1_0(ctx);
         case 1:
-          return QueriesGenerated.ifMacro_Condition_16_1(ctx);
+          return QueriesGenerated.ifMacro_Condition_16_0(ctx);
         case 2:
-          return QueriesGenerated.ifMacro_Condition_16_2(ctx);
+          return QueriesGenerated.ifMacro_Condition_16_1(ctx);
         case 3:
-          return QueriesGenerated.ifMacro_Condition_17_0(ctx);
+          return QueriesGenerated.ifMacro_Condition_16_2(ctx);
         case 4:
+          return QueriesGenerated.ifMacro_Condition_17_0(ctx);
+        case 5:
           return QueriesGenerated.ifMacro_Condition_17_1(ctx);
         default:
           throw new GenerationFailureException(String.format("Inconsistent QueriesGenerated: there's no condition method for if macro %s (key: #%d)", ctx.getTemplateReference(), methodKey));
@@ -1622,7 +1629,7 @@ public class QueriesGenerated extends QueryProviderBase {
     rtqMethods.put("3977732701913456775", new RTQ(25, "DVE_Enum.E"));
     rtqMethods.put("3977732701913517283", new RTQ(26, "A"));
     rtqMethods.put("437702699889687894", new RTQ(27, "getI"));
-    rtqMethods.put("3838957558559072167", new RTQ(28, "x"));
+    rtqMethods.put("7850247783002544169", new RTQ(28, "x"));
     rtqMethods.put("437702699889715121", new RTQ(29, "setI"));
     rtqMethods.put("437702699887234028", new RTQ(30, "RecordType"));
     rtqMethods.put("5070026041301097610", new RTQ(31, "GroupType"));
@@ -1886,7 +1893,6 @@ public class QueriesGenerated extends QueryProviderBase {
     /*package*/ static final SContainmentLink type$MFr_ = MetaAdapterFactory.getContainmentLink(0x71934284d7d145eeL, 0xa0548c072591085fL, 0x465d5f01132db232L, 0x465d5f01132db23cL, "type");
     /*package*/ static final SReferenceLink fun$DJ6H = MetaAdapterFactory.getReferenceLink(0x9464fa065ab9409bL, 0x927464ab29588457L, 0x427ce5230845606aL, 0x427ce5230845606bL, "fun");
     /*package*/ static final SReferenceLink literal$llO8 = MetaAdapterFactory.getReferenceLink(0x71934284d7d145eeL, 0xa0548c072591085fL, 0x61fe216664a736c5L, 0x61fe216664a73709L, "literal");
-    /*package*/ static final SReferenceLink literal$lbzw = MetaAdapterFactory.getReferenceLink(0x71934284d7d145eeL, 0xa0548c072591085fL, 0x5a9550a5f5da059dL, 0x5a9550a5f5e318deL, "literal");
     /*package*/ static final SReferenceLink enum$2YBB = MetaAdapterFactory.getReferenceLink(0x71934284d7d145eeL, 0xa0548c072591085fL, 0x61fe216664a730bbL, 0x61fe216664a730f3L, "enum");
     /*package*/ static final SContainmentLink literals$K_NE = MetaAdapterFactory.getContainmentLink(0x71934284d7d145eeL, 0xa0548c072591085fL, 0x61fe216664a72eaeL, 0x61fe216664a72ef4L, "literals");
     /*package*/ static final SReferenceLink member$d1yc = MetaAdapterFactory.getReferenceLink(0xf3eafff030d246d6L, 0x9150f0f3b880ce27L, 0x6c71b19f6f13ea6fL, 0x6c71b19f6f13ea72L, "member");
@@ -1937,7 +1943,7 @@ public class QueriesGenerated extends QueryProviderBase {
     /*package*/ static final SConcept GroupByOp$AQ = MetaAdapterFactory.getConcept(0x71934284d7d145eeL, 0xa0548c072591085fL, 0x73194702f05f7592L, "org.iets3.core.expr.toplevel.structure.GroupByOp");
     /*package*/ static final SConcept GroupMembersTarget$sT = MetaAdapterFactory.getConcept(0x71934284d7d145eeL, 0xa0548c072591085fL, 0x73194702f07abfb8L, "org.iets3.core.expr.toplevel.structure.GroupMembersTarget");
     /*package*/ static final SConcept GroupKeyTarget$WX = MetaAdapterFactory.getConcept(0x71934284d7d145eeL, 0xa0548c072591085fL, 0x73194702f071c6daL, "org.iets3.core.expr.toplevel.structure.GroupKeyTarget");
-    /*package*/ static final SConcept EnumIsTarget$x4 = MetaAdapterFactory.getConcept(0x71934284d7d145eeL, 0xa0548c072591085fL, 0x5a9550a5f5da059dL, "org.iets3.core.expr.toplevel.structure.EnumIsTarget");
+    /*package*/ static final SConcept AbstractEnumSingleInTarget$JO = MetaAdapterFactory.getConcept(0x71934284d7d145eeL, 0xa0548c072591085fL, 0x33d02016c58c3783L, "org.iets3.core.expr.toplevel.structure.AbstractEnumSingleInTarget");
     /*package*/ static final SConcept ProjectOp$p = MetaAdapterFactory.getConcept(0x71934284d7d145eeL, 0xa0548c072591085fL, 0x73194702f12a0d24L, "org.iets3.core.expr.toplevel.structure.ProjectOp");
     /*package*/ static final SConcept IfExpression$6$ = MetaAdapterFactory.getConcept(0xcfaa4966b7d54b69L, 0xb66a309a6e1a7290L, 0x6cef3d81a56f626aL, "org.iets3.core.expr.base.structure.IfExpression");
     /*package*/ static final SConcept EnumType$z = MetaAdapterFactory.getConcept(0x71934284d7d145eeL, 0xa0548c072591085fL, 0x61fe216664a730bbL, "org.iets3.core.expr.toplevel.structure.EnumType");
@@ -1953,6 +1959,7 @@ public class QueriesGenerated extends QueryProviderBase {
     /*package*/ static final SConcept PublicVisibility$R0 = MetaAdapterFactory.getConcept(0xf3061a5392264cc5L, 0xa443f952ceaf5816L, 0x10af9581ff1L, "jetbrains.mps.baseLanguage.structure.PublicVisibility");
     /*package*/ static final SConcept EnumDeclaration$3b = MetaAdapterFactory.getConcept(0x71934284d7d145eeL, 0xa0548c072591085fL, 0x61fe216664a72eaeL, "org.iets3.core.expr.toplevel.structure.EnumDeclaration");
     /*package*/ static final SConcept RecordDeclaration$9r = MetaAdapterFactory.getConcept(0x71934284d7d145eeL, 0xa0548c072591085fL, 0x7a477bfec237e8b6L, "org.iets3.core.expr.toplevel.structure.RecordDeclaration");
+    /*package*/ static final SConcept EnumIsTarget$x4 = MetaAdapterFactory.getConcept(0x71934284d7d145eeL, 0xa0548c072591085fL, 0x5a9550a5f5da059dL, "org.iets3.core.expr.toplevel.structure.EnumIsTarget");
     /*package*/ static final SConcept EnumSortByDeclaration$KN = MetaAdapterFactory.getConcept(0x71934284d7d145eeL, 0xa0548c072591085fL, 0x6d72ecc16d953d05L, "org.iets3.core.expr.toplevel.structure.EnumSortByDeclaration");
     /*package*/ static final SConcept EnumSortByLiteral$Cp = MetaAdapterFactory.getConcept(0x71934284d7d145eeL, 0xa0548c072591085fL, 0x6d72ecc16d953cffL, "org.iets3.core.expr.toplevel.structure.EnumSortByLiteral");
     /*package*/ static final SConcept FunctionType$RQ = MetaAdapterFactory.getConcept(0x9464fa065ab9409bL, 0x927464ab29588457L, 0x68d69d36ba4ecfb6L, "org.iets3.core.expr.lambda.structure.FunctionType");
@@ -1967,6 +1974,6 @@ public class QueriesGenerated extends QueryProviderBase {
     /*package*/ static final SConcept BooleanType$eL = MetaAdapterFactory.getConcept(0x6b277d9ad52d416fL, 0xa2091919bd737f50L, 0x670d5e92f854a617L, "org.iets3.core.expr.simpleTypes.structure.BooleanType");
     /*package*/ static final SConcept Chunk$sT = MetaAdapterFactory.getConcept(0xd4280a54f6df4383L, 0xaa41d1b2bffa7eb1L, 0x6315bcc6effb4ea6L, "com.mbeddr.core.base.structure.Chunk");
     /*package*/ static final SConcept FunctionCall$bZ = MetaAdapterFactory.getConcept(0x71934284d7d145eeL, 0xa0548c072591085fL, 0x427ce5230842b3ecL, "org.iets3.core.expr.toplevel.structure.FunctionCall");
-    /*package*/ static final SConcept EnumIsInTarget$Vc = MetaAdapterFactory.getConcept(0x71934284d7d145eeL, 0xa0548c072591085fL, 0x6f1c76e8c8cb0187L, "org.iets3.core.expr.toplevel.structure.EnumIsInTarget");
+    /*package*/ static final SConcept AbstractEnumInTarget$Vo = MetaAdapterFactory.getConcept(0x71934284d7d145eeL, 0xa0548c072591085fL, 0x4c45dc3c56a5dd6cL, "org.iets3.core.expr.toplevel.structure.AbstractEnumInTarget");
   }
 }

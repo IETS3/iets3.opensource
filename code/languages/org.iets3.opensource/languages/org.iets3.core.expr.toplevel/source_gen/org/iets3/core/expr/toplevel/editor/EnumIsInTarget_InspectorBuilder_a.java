@@ -13,7 +13,7 @@ import jetbrains.mps.nodeEditor.cells.EditorCell_Constant;
 import jetbrains.mps.nodeEditor.cells.EditorCell_Property;
 import jetbrains.mps.nodeEditor.cells.ModelAccessor;
 import org.iets3.core.expr.base.behavior.Expression__BehaviorDescriptor;
-import org.iets3.core.expr.toplevel.behavior.EnumIsInTarget__BehaviorDescriptor;
+import org.iets3.core.expr.toplevel.behavior.AbstractEnumInTarget__BehaviorDescriptor;
 import jetbrains.mps.openapi.editor.cells.CellActionType;
 import jetbrains.mps.editor.runtime.cells.EmptyCellAction;
 import jetbrains.mps.openapi.editor.style.Style;
@@ -57,7 +57,7 @@ import jetbrains.mps.editor.runtime.style.StyleAttributes;
   private EditorCell createReadOnlyModelAccessor_0() {
     EditorCell_Property editorCell = EditorCell_Property.create(getEditorContext(), new ModelAccessor.ReadOnly() {
       public String getText() {
-        return (String) Expression__BehaviorDescriptor.renderReadable_id4Y0vh0cfqjE.invoke(EnumIsInTarget__BehaviorDescriptor.reduce_id4CksDrmwwdX.invoke(myNode));
+        return (String) Expression__BehaviorDescriptor.renderReadable_id4Y0vh0cfqjE.invoke(AbstractEnumInTarget__BehaviorDescriptor.reduce_id4L5R3LmDzwi.invoke(myNode));
       }
     }, myNode);
     editorCell.setAction(CellActionType.DELETE, EmptyCellAction.getInstance());
