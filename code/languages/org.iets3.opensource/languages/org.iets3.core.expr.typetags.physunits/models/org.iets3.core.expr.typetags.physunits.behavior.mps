@@ -10379,6 +10379,7 @@
         </node>
       </node>
     </node>
+    <node concept="3Tm1VV" id="4jkbLB5RJZM" role="1B3o_S" />
     <node concept="2tJIrI" id="1Ijzht4CPC" role="jymVt" />
     <node concept="2YIFZL" id="1Ijzht4L5g" role="jymVt">
       <property role="TrG5h" value="getPrefixForConversion" />
@@ -10560,7 +10561,6 @@
         </node>
       </node>
     </node>
-    <node concept="3Tm1VV" id="4jkbLB5RJZM" role="1B3o_S" />
   </node>
   <node concept="13h7C7" id="4SwD0JT7zKD">
     <property role="3GE5qa" value="interfaces" />
@@ -33249,65 +33249,6 @@
     <node concept="2YIFZL" id="13vFojevYcH" role="jymVt">
       <property role="TrG5h" value="computeType" />
       <node concept="3clFbS" id="13vFojevYcK" role="3clF47">
-        <node concept="3SKdUt" id="13vFojewnMx" role="3cqZAp">
-          <node concept="1PaTwC" id="13vFojewnMy" role="1aUNEU">
-            <node concept="3oM_SD" id="13vFojewnMz" role="1PaTwD">
-              <property role="3oM_SC" value="deprecated" />
-            </node>
-            <node concept="3oM_SD" id="13vFojewnM$" role="1PaTwD">
-              <property role="3oM_SC" value="getInstance" />
-            </node>
-            <node concept="3oM_SD" id="13vFojewnM_" role="1PaTwD">
-              <property role="3oM_SC" value="is" />
-            </node>
-            <node concept="3oM_SD" id="13vFojewnMA" role="1PaTwD">
-              <property role="3oM_SC" value="necessary" />
-            </node>
-            <node concept="3oM_SD" id="13vFojewnMB" role="1PaTwD">
-              <property role="3oM_SC" value="to" />
-            </node>
-            <node concept="3oM_SD" id="13vFojewnMC" role="1PaTwD">
-              <property role="3oM_SC" value="ensure" />
-            </node>
-            <node concept="3oM_SD" id="13vFojewQeG" role="1PaTwD">
-              <property role="3oM_SC" value="compatibility" />
-            </node>
-          </node>
-        </node>
-        <node concept="3SKdUt" id="13vFojewQeW" role="3cqZAp">
-          <node concept="1PaTwC" id="13vFojewQeI" role="1aUNEU">
-            <node concept="3oM_SD" id="13vFojewQeH" role="1PaTwD">
-              <property role="3oM_SC" value="with" />
-            </node>
-            <node concept="3oM_SD" id="13vFojewnMF" role="1PaTwD">
-              <property role="3oM_SC" value="the" />
-            </node>
-            <node concept="3oM_SD" id="13vFojewnMG" role="1PaTwD">
-              <property role="3oM_SC" value="command-line" />
-            </node>
-            <node concept="3oM_SD" id="13vFojewnMH" role="1PaTwD">
-              <property role="3oM_SC" value="generator" />
-            </node>
-            <node concept="3oM_SD" id="13vFojewnMI" role="1PaTwD">
-              <property role="3oM_SC" value="execution" />
-            </node>
-            <node concept="3oM_SD" id="13vFojewnMJ" role="1PaTwD">
-              <property role="3oM_SC" value="(MpsEnvironment)" />
-            </node>
-          </node>
-        </node>
-        <node concept="3cpWs8" id="13vFojewnMK" role="3cqZAp">
-          <node concept="3cpWsn" id="13vFojewnML" role="3cpWs9">
-            <property role="TrG5h" value="classLoaderManager" />
-            <node concept="3uibUv" id="13vFojewnMM" role="1tU5fm">
-              <ref role="3uigEE" to="3qmy:~ClassLoaderManager" resolve="ClassLoaderManager" />
-            </node>
-            <node concept="2YIFZM" id="13vFojewnMN" role="33vP2m">
-              <ref role="37wK5l" to="3qmy:~ClassLoaderManager.getInstance()" resolve="getInstance" />
-              <ref role="1Pybhc" to="3qmy:~ClassLoaderManager" resolve="ClassLoaderManager" />
-            </node>
-          </node>
-        </node>
         <node concept="3cpWs8" id="13vFojewnMO" role="3cqZAp">
           <node concept="3cpWsn" id="13vFojewnMP" role="3cpWs9">
             <property role="TrG5h" value="typeChecking" />
@@ -33317,7 +33258,7 @@
             <node concept="2ShNRf" id="13vFojewnMR" role="33vP2m">
               <node concept="1pGfFk" id="13vFojewnMS" role="2ShVmc">
                 <property role="373rjd" value="true" />
-                <ref role="37wK5l" to="evo:~IncrementalTypecheckingContext.&lt;init&gt;(org.jetbrains.mps.openapi.model.SNode,jetbrains.mps.typesystem.inference.TypeCheckerHelper,jetbrains.mps.classloading.ClassLoaderManager)" resolve="IncrementalTypecheckingContext" />
+                <ref role="37wK5l" to="evo:~IncrementalTypecheckingContext.&lt;init&gt;(org.jetbrains.mps.openapi.model.SNode,jetbrains.mps.typesystem.inference.TypeCheckerHelper,jetbrains.mps.smodel.language.LanguageRegistry)" resolve="IncrementalTypecheckingContext" />
                 <node concept="37vLTw" id="13vFojewnMT" role="37wK5m">
                   <ref role="3cqZAo" node="13vFojew3dj" resolve="expr" />
                 </node>
@@ -33327,9 +33268,7 @@
                     <ref role="37wK5l" to="u78q:~TypeChecker.getTypeCheckerHelper()" resolve="getTypeCheckerHelper" />
                   </node>
                 </node>
-                <node concept="37vLTw" id="13vFojewnMX" role="37wK5m">
-                  <ref role="3cqZAo" node="13vFojewnML" resolve="classLoaderManager" />
-                </node>
+                <node concept="10Nm6u" id="6WzIHlVU5LM" role="37wK5m" />
               </node>
             </node>
           </node>
