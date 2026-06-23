@@ -798,7 +798,7 @@
     <property role="TrG5h" value="EnumIsTarget" />
     <property role="34LRSv" value="is" />
     <property role="R4oN_" value="check the enumeration literal against another literal" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <ref role="1TJDcQ" node="3fg81r5z3u3" resolve="AbstractEnumSingleInTarget" />
     <node concept="PrWs8" id="5ElkanPQwmu" role="PzmwI">
       <ref role="PrY4T" to="hm2y:7NJy08a3O9a" resolve="IDotTarget" />
     </node>
@@ -1327,13 +1327,13 @@
     <property role="3GE5qa" value="enum" />
     <property role="EcuMT" value="4557392569141521968" />
     <property role="2eQzMB" value="71934284-d7d1-45ee-a054-8c072591085f" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <ref role="1TJDcQ" node="3fg81r5z3u3" resolve="AbstractEnumSingleInTarget" />
     <node concept="PrWs8" id="3WZ76l1FQSL" role="PzmwI">
       <ref role="PrY4T" to="hm2y:7NJy08a3O9a" resolve="IDotTarget" />
     </node>
     <node concept="1TJgyj" id="3WZ76l1FQSM" role="1TKVEi">
       <property role="20kJfa" value="literal" />
-      <property role="20lbJX" value="_1" />
+      <property role="20lbJX" value="fLJekj4/_1" />
       <property role="IQ2ns" value="4557392569141521970" />
       <ref role="20lvS9" node="67Y8mp$DMVh" resolve="EnumLiteral" />
     </node>
@@ -1351,8 +1351,8 @@
     </node>
     <node concept="1TJgyj" id="6NLFGgDxmkE" role="1TKVEi">
       <property role="20kJfa" value="selectors" />
-      <property role="20lmBu" value="aggregation" />
-      <property role="20lbJX" value="_1__n" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20lbJX" value="fLJekj6/_1__n" />
       <property role="IQ2ns" value="7850247783016916266" />
       <ref role="20lvS9" node="6WstIz8MKZd" resolve="EnumIsInSelector" />
     </node>
@@ -1362,6 +1362,12 @@
     <property role="TrG5h" value="AbstractEnumInTarget" />
     <property role="R5$K7" value="true" />
     <property role="3GE5qa" value="enum.oneof" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+  </node>
+  <node concept="1TIwiD" id="3fg81r5z3u3">
+    <property role="EcuMT" value="3733519373265811331" />
+    <property role="TrG5h" value="AbstractEnumSingleInTarget" />
+    <property role="3GE5qa" value="enum" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" />
   </node>
 </model>

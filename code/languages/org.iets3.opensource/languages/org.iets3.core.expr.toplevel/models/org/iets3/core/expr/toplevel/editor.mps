@@ -5766,10 +5766,10 @@
             <property role="1Intyy" value="true" />
             <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
             <node concept="Vb9p2" id="3WZ76l1FQTh" role="3F10Kt">
-              <property role="Vbekb" value="BOLD_ITALIC" />
+              <property role="Vbekb" value="g1_tSyq/BOLD_ITALIC" />
             </node>
             <node concept="VechU" id="3WZ76l1FQTi" role="3F10Kt">
-              <property role="Vb096" value="darkGray" />
+              <property role="Vb096" value="fLJRk5B/darkGray" />
             </node>
           </node>
         </node>
