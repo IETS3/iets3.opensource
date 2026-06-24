@@ -18999,7 +18999,7 @@
         <ref role="27ge4" node="4bxCLc4WX2S" resolve="iets3.interpreterExecutor.genPath" />
       </node>
       <node concept="24YFd5" id="Bt8sbNUPYS" role="5id3f">
-        <ref role="24YFd6" to="ffeo:1jjxZP6JyD_" />
+        <ref role="24YFd6" to="ffeo:1jjxZP6JyD_" resolve="jetbrains.mps.console" />
       </node>
     </node>
     <node concept="398rNT" id="4bxCLc4WX2z" role="1l3spd">
@@ -19085,7 +19085,7 @@
     <node concept="55IIr" id="29i5SfmBmWR" role="auvoZ" />
     <node concept="1l3spV" id="29i5SfmBmWS" role="1l3spN">
       <node concept="m$_wl" id="4bxCLc51Ow2" role="39821P">
-        <ref role="m_rDy" node="4bxCLc4WX1Y" />
+        <ref role="m_rDy" node="4bxCLc4WX1Y" resolve="org.iets3.opensource.interpreterExecutorStarter" />
         <node concept="pUk6x" id="4bxCLc51Ow6" role="pUk7w" />
       </node>
     </node>

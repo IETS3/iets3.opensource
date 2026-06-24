@@ -1138,7 +1138,7 @@
         <node concept="3clFbF" id="Bt8sbNY1gx" role="3cqZAp">
           <node concept="2OqwBi" id="Bt8sbNY4B$" role="3clFbG">
             <node concept="37vLTw" id="Bt8sbNY1gv" role="2Oq$k0">
-              <ref role="3cqZAo" node="Bt8sbO5Yzs" resolve="scopse2" />
+              <ref role="3cqZAo" node="Bt8sbO5Yzs" resolve="scopes" />
             </node>
             <node concept="2es0OD" id="Bt8sbNY72J" role="2OqNvi">
               <node concept="1bVj0M" id="Bt8sbNY72L" role="23t8la">
@@ -1151,7 +1151,7 @@
                       <node concept="liA8E" id="Bt8sbNY9_1" role="2OqNvi">
                         <ref role="37wK5l" to="o8zo:7ipADkTevN6" resolve="addScope" />
                         <node concept="37vLTw" id="Bt8sbNYa2z" role="37wK5m">
-                          <ref role="3cqZAo" node="Bt8sbNY72N" resolve="it" />
+                          <ref role="3cqZAo" node="Bt8sbNY72N" resolve="scope" />
                         </node>
                       </node>
                     </node>
@@ -1167,7 +1167,7 @@
         </node>
         <node concept="3clFbF" id="Bt8sbNXSHg" role="3cqZAp">
           <node concept="37vLTw" id="Bt8sbNXYMm" role="3clFbG">
-            <ref role="3cqZAo" node="Bt8sbNXYMj" resolve="scope" />
+            <ref role="3cqZAo" node="Bt8sbNXYMj" resolve="compositeScope" />
           </node>
         </node>
       </node>
@@ -1224,7 +1224,7 @@
                       <node concept="2OqwBi" id="Bt8sbO6rEA" role="2Oq$k0">
                         <node concept="2OqwBi" id="Bt8sbO6rEB" role="2Oq$k0">
                           <node concept="37vLTw" id="Bt8sbO6rEC" role="2Oq$k0">
-                            <ref role="3cqZAo" node="Bt8sbO6rEx" resolve="buildProject2" />
+                            <ref role="3cqZAo" node="Bt8sbO6rEx" resolve="buildProjectParam" />
                           </node>
                           <node concept="3Tsc0h" id="Bt8sbO6rED" role="2OqNvi">
                             <ref role="3TtcxE" to="3ior:4RPz6WoY4C_" resolve="dependencies" />
