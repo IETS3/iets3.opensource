@@ -8,7 +8,7 @@ The project does _not_ follow Semantic Versioning and the changes are documented
 ## June 2026
 
 ### Added
-
+- Operatore 'isNot' and 'isNotIn' have been introduced for enumerations. The first checks if a given enumeration element is not equal to another one. The second checks whether this element is not contained in a list.
 - Variability: For the filtering of 150% models, a new API for `IRenamer` is provided. It allows renaming all clones of an instantiated element in one step. The old API which allows renaming only one-by-one is still available - this is not a breaking change.
 - Variability: Introduced extension point `configCombinationLogicExtPoint` (interface `IConfigCombinationLogic`) to make the logic of combining configurations (via `extends`, `abstract` and referenced sub-configurations) configurable per application.
 - Variability: Configuration checking for referenced abstract sub-configurations now respects the active combination logic, and configuration hashing was extended to cover a configuration together with all configurations reachable from it.
