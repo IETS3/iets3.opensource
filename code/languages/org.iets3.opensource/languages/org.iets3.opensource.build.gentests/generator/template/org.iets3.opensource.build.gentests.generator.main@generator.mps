@@ -2704,6 +2704,49 @@
               </node>
             </node>
             <node concept="2VaTY3" id="5eJiSDhB5oI" role="2VaTZU" />
+            <node concept="2Vbh7Z" id="4JguHscXsk9" role="2VaTZU">
+              <node concept="2pNNFK" id="4JguHscXska" role="2Vbh7K">
+                <property role="2pNNFO" value="taskdef" />
+                <node concept="2pNUuL" id="4JguHscXskb" role="2pNNFR">
+                  <property role="2pNUuO" value="resource" />
+                  <node concept="2pMdtt" id="4JguHscXskd" role="2pMdts">
+                    <property role="2pMdty" value="jetbrains/mps/build/ant/antlib.xml" />
+                  </node>
+                </node>
+                <node concept="2pNNFK" id="4JguHscXskc" role="3o6s8t">
+                  <property role="2pNNFO" value="classpath" />
+                  <node concept="2pNNFK" id="4JguHscXske" role="3o6s8t">
+                    <property role="2pNNFO" value="pathelement" />
+                    <property role="qg3DV" value="true" />
+                    <node concept="2pNUuL" id="4JguHscXskg" role="2pNNFR">
+                      <property role="2pNUuO" value="location" />
+                      <node concept="2pMdtt" id="4JguHscXskj" role="2pMdts">
+                        <property role="2pMdty" value="${artifacts.mps}/lib/ant/lib/ant-mps.jar" />
+                      </node>
+                    </node>
+                  </node>
+                  <node concept="2pNNFK" id="4JguHscXskf" role="3o6s8t">
+                    <property role="2pNNFO" value="fileset" />
+                    <node concept="2pNUuL" id="4JguHscXskh" role="2pNNFR">
+                      <property role="2pNUuO" value="dir" />
+                      <node concept="2pMdtt" id="4JguHscXskk" role="2pMdts">
+                        <property role="2pMdty" value="${artifacts.mps}/lib" />
+                      </node>
+                    </node>
+                    <node concept="2pNNFK" id="4JguHscXski" role="3o6s8t">
+                      <property role="2pNNFO" value="include" />
+                      <property role="qg3DV" value="true" />
+                      <node concept="2pNUuL" id="4JguHscXskl" role="2pNNFR">
+                        <property role="2pNUuO" value="name" />
+                        <node concept="2pMdtt" id="4JguHscXskm" role="2pMdts">
+                          <property role="2pMdty" value="util-8.jar" />
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
             <node concept="2Vbh7Z" id="3BExUgsKUkr" role="2VaTZU">
               <node concept="2pNNFK" id="3BExUgsKUuU" role="2Vbh7K">
                 <property role="2pNNFO" value="runMPS" />
