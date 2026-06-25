@@ -398,8 +398,8 @@
             <ref role="1Busuk" to="ffeo:1Vi5mb_o9f_" resolve="jetbrains.mps.build.mps.runner" />
           </node>
         </node>
-        <node concept="1SiIV0" id="Bt8sbO4ZGl" role="3bR37C">
-          <node concept="3bR9La" id="Bt8sbO4ZGm" role="1SiIV1">
+        <node concept="1SiIV0" id="1Fo9c12FpyB" role="3bR37C">
+          <node concept="3bR9La" id="1Fo9c12FpyC" role="1SiIV1">
             <ref role="3bR37D" to="al5i:5fGcQI947Ca" resolve="com.mbeddr.mpsutil.common" />
           </node>
         </node>
