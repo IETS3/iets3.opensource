@@ -287,6 +287,7 @@
           <module ref="9a4afe51-f114-4595-b5df-048ce3c596be(jetbrains.mps.runtime)" kind="rt" />
           <module ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065(JDK)" kind="cl" />
           <module ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34(MPS.OpenAPI)" kind="cl" />
+          <module ref="c7a315e6-1d93-4186-85bc-2dfafd1ccc21(com.mbeddr.mpsutil.common)" kind="cl" />
           <module ref="798100da-4f0a-421a-b991-71f8c50ce5d2(jetbrains.mps.build)" kind="cl" />
           <module ref="0cf935df-4699-4e9c-a132-fa109541cba3(jetbrains.mps.build.mps)" kind="cl" />
           <module ref="427a473d-5177-432c-9905-bcbceb71b996(jetbrains.mps.build.mps.runner)" kind="cl" />
@@ -12605,6 +12606,7 @@
           <language id="l:b92f861d-0184-446d-b88b-6dcf0e070241:com.mbeddr.mpsutil.intentions" />
           <language id="l:309e0004-4976-4416-b947-ec02ae4ecef2:com.mbeddr.mpsutil.modellisteners" />
           <language id="l:1919c723-b60b-4592-9318-9ce96d91da44:de.itemis.mps.editor.celllayout" />
+          <language id="l:92d2ea16-5a42-4fdf-a676-c7604efe3504:de.slisson.mps.richtext" />
           <language id="l:7e450f4e-1ac3-41ef-a851-4598161bdb94:de.slisson.mps.tables" />
           <language id="l:f3061a53-9226-4cc5-a443-f952ceaf5816:jetbrains.mps.baseLanguage" />
           <language id="l:774bf8a0-62e5-41e1-af63-f4812e60e48b:jetbrains.mps.baseLanguage.checkedDots" />
@@ -12642,7 +12644,6 @@
           <language id="l:d7a92d38-f7db-40d0-8431-763b0c3c9f20:jetbrains.mps.lang.intentions" />
           <language id="l:ad93155d-79b2-4759-b10c-55123e763903:jetbrains.mps.lang.messages" />
           <language id="l:90746344-04fd-4286-97d5-b46ae6a81709:jetbrains.mps.lang.migration" />
-          <language id="l:9882f4ad-1955-46fe-8269-94189e5dbbf2:jetbrains.mps.lang.migration.util" />
           <language id="l:d4615e3b-d671-4ba9-af01-2b78369b0ba7:jetbrains.mps.lang.pattern" />
           <language id="l:3a13115c-633c-4c5c-bbcc-75c4219e9555:jetbrains.mps.lang.quotation" />
           <language id="l:982eb8df-2c96-4bd7-9963-11712ea622e5:jetbrains.mps.lang.resources" />
@@ -13249,6 +13250,8 @@
           <module ref="dbe08fb5-334d-4b64-86a0-622406fa0e87(org.iets3.core.expr.base.runtime)" kind="cl" />
           <module ref="00ca1323-762b-4f39-ab5a-6a6bd602dc4b(org.iets3.core.expr.base.shared.runtime)" kind="cl" />
           <module ref="6b277d9a-d52d-416f-a209-1919bd737f50(org.iets3.core.expr.simpleTypes)" kind="cl" />
+          <module ref="5186c6ce-428c-4f09-a9df-73d9e86c27d3(org.iets3.core.expr.typetags)" kind="cl" />
+          <module ref="7ee265bd-5986-4709-86ed-2c6daa33cd8c(org.iets3.core.expr.typetags.physunits)" kind="cl" />
           <module ref="165f1d05-2506-4544-895e-1424f54166ec(org.iets3.variability.featuremodel.base)" kind="cl" />
         </dependencies>
         <uses>
@@ -15017,7 +15020,7 @@
     </copy>
   </target>
   
-  <target name="java.compile.org.iets3.variability.configuration.base" depends="java.compile.org.iets3.analysis.base, java.compile.org.iets3.analysis.solversupport.util, java.compile.org.iets3.core.base, java.compile.org.iets3.core.expr.base, java.compile.org.iets3.core.expr.base.runtime, java.compile.org.iets3.core.expr.base.shared.runtime, java.compile.org.iets3.core.expr.collections, java.compile.org.iets3.core.expr.lambda, java.compile.org.iets3.core.expr.path, java.compile.org.iets3.core.expr.simpleTypes, java.compile.org.iets3.core.expr.toplevel, java.compile.org.iets3.variability.base, java.compile.org.iets3.variability.featuremodel.base, fetchDependencies">
+  <target name="java.compile.org.iets3.variability.configuration.base" depends="java.compile.org.iets3.analysis.base, java.compile.org.iets3.analysis.solversupport.util, java.compile.org.iets3.core.base, java.compile.org.iets3.core.expr.base, java.compile.org.iets3.core.expr.base.runtime, java.compile.org.iets3.core.expr.base.shared.runtime, java.compile.org.iets3.core.expr.collections, java.compile.org.iets3.core.expr.lambda, java.compile.org.iets3.core.expr.path, java.compile.org.iets3.core.expr.simpleTypes, java.compile.org.iets3.core.expr.toplevel, java.compile.org.iets3.core.expr.typetags, java.compile.org.iets3.core.expr.typetags.physunits, java.compile.org.iets3.variability.base, java.compile.org.iets3.variability.featuremodel.base, fetchDependencies">
     <mkdir dir="${iets3.lang.opensource}/languages/org.iets3.variability.configuration.base/source_gen" />
     <mkdir dir="${build.tmp}/java/out/org.iets3.variability.configuration.base" />
     <javac2 destdir="${build.tmp}/java/out/org.iets3.variability.configuration.base" fork="false" encoding="utf8" includeantruntime="false" debug="true" source="1.8" target="1.8">
@@ -15066,6 +15069,8 @@
         <pathelement path="${build.tmp}/java/out/org.iets3.core.expr.path" />
         <pathelement path="${build.tmp}/java/out/org.iets3.core.expr.simpleTypes" />
         <pathelement path="${build.tmp}/java/out/org.iets3.core.expr.toplevel" />
+        <pathelement path="${build.tmp}/java/out/org.iets3.core.expr.typetags" />
+        <pathelement path="${build.tmp}/java/out/org.iets3.core.expr.typetags.physunits" />
         <pathelement path="${build.tmp}/java/out/org.iets3.variability.base" />
         <fileset file="${artifacts.mps}/plugins/mps-vcs/lib/vcs-platform.jar" />
         <pathelement path="${build.tmp}/java/out/org.iets3.variability.featuremodel.base" />
@@ -28652,6 +28657,7 @@
         <fileset file="${artifacts.mps}/lib/stats.jar" />
         <fileset file="${artifacts.mps}/lib/platform-loader.jar" />
         <fileset file="${artifacts.mps}/lib/trove.jar" />
+        <fileset file="${artifacts.com.mbeddr.platform}/com.mbeddr.mpsutil.common/languages/group.common/com.mbeddr.mpsutil.common.jar" />
         <fileset file="${artifacts.mps}/languages/runtimes/jetbrains.mps.analyzers.runtime.jar" />
         <fileset file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.logging.runtime.jar" />
         <fileset file="${artifacts.mps}/plugins/mps-build/languages/build/jetbrains.mps.build.jar" />

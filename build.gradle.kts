@@ -177,8 +177,14 @@ val buildLanguages by tasks.registering(BuildLanguages::class) {
     script = scriptsDir.file("build-languages.xml")
 }
 
-val execTestsByInterpreter by tasks.registering(TestLanguages::class) {
+val execTestsByInterpreterPre by tasks.registering(TestLanguages::class) {
     script = scriptsDir.file("build-testInterpreter.xml")
+    targets("generate", "build")
+}
+
+val execTestsByInterpreter by tasks.registering(TestLanguages::class) {
+    dependsOn(execTestsByInterpreterPre)
+    script = scriptsDir.file("build-testInterpreterExec.xml")
     targets("generate", "build")
     doLast {
         // there is limited ant support for kotlin so we fall back to groovy
@@ -506,28 +512,27 @@ publishing {
 defaultTasks.add(tasks.assemble.name)
 
 githubRelease {
-    owner("IETS3")
-    repo("iets3.opensource")
+    owner = "IETS3"
+    repo = "iets3.opensource"
     token(rootProject.findProperty("github.token").toString())
-    tagName("nightly-$version")
-    targetCommitish(GitBasedVersioning.getGitCommitHash())
+    tagName = "nightly-$version"
+    targetCommitish = GitBasedVersioning.getGitCommitHash()
     val currentDate = LocalDate.now().format(DateTimeFormatter.ofLocalizedDate(FormatStyle.FULL))
     val dependencyList =
         languageLibs.resolvedConfiguration.lenientConfiguration.allModuleDependencies.joinToString("\n") {
             "- `${it.moduleGroup}:${it.moduleName}` : `${it.moduleVersion}`"
         }
-    body {
-        """
+    body = """
             Automated Nightly build from ${currentDate}.
             //
             //Includes dependencies:
             //${dependencyList}
         """.trimIndent()
-    }
-    prerelease(true)
+    prerelease = true
     releaseAssets(packageDistroWithDependencies.get().outputs.files.map { it.path })
-    dryRun(false)
+    dryRun = false
 }
+
 tasks.githubRelease {
     dependsOn(packageDistroWithDependencies)
 }

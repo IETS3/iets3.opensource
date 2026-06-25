@@ -15,11 +15,12 @@ import jetbrains.mps.baseLanguage.tuples.runtime.MultiTuple;
 import java.util.Set;
 import jetbrains.mps.internal.collections.runtime.SetSequence;
 import java.util.HashSet;
-import jetbrains.mps.typesystem.inference.TypeChecker;
-import jetbrains.mps.lang.smodel.generator.smodelAdapter.SConceptOperations;
-import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
+import java.util.ArrayList;
 import jetbrains.mps.internal.collections.runtime.MapSequence;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations;
+import jetbrains.mps.lang.smodel.generator.smodelAdapter.SConceptOperations;
+import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
+import jetbrains.mps.typesystem.inference.TypeChecker;
 import java.util.Objects;
 import jetbrains.mps.typechecking.TypecheckingFacade;
 import jetbrains.mps.smodel.builder.SNodeBuilder;
@@ -71,27 +72,34 @@ public class BaseTaggedTypeHelper {
     fillOnDemand(leftTagMap, keys);
     fillOnDemand(rightTagMap, keys);
 
-    SNode baseOperationType = TypeChecker.getInstance().getRulesManager().getOperationType(operator, leftBaseType, rightBaseType);
-
-    if (baseOperationType == null) {
-      return createRuntimeErrorType_wyrhxu_a0a61a5();
-    } else {
-      SNode result = SConceptOperations.createNewNode(MetaAdapterFactory.getConcept(0x5186c6ce428c4f09L, 0xa9df73d9e86c27d3L, 0x186a8ed9947750b6L, "org.iets3.core.expr.typetags.structure.TaggedType"));
-      SLinkOperations.setTarget(result, LINKS.baseType$z6Mz, SNodeOperations.cast(baseOperationType, CONCEPTS.Type$WK));
-
-      for (SAbstractConcept key : SetSequence.fromSet(keys)) {
-        SNode leftTag = MapSequence.fromMap(leftTagMap).get(key);
-        SNode rightTag = MapSequence.fromMap(rightTagMap).get(key);
-        SNode combined = ITag__BehaviorDescriptor.combine_id4HxogODTmVB.invoke(SNodeOperations.asSConcept(key), leftTag, rightTag, operator);
-        if (combined != null) {
-          if (SNodeOperations.isInstanceOf(combined, CONCEPTS.ErrorTag$yj)) {
-            return createRuntimeErrorType_wyrhxu_a0a0a3a3a0q0f(SPropertyOperations.getString(SNodeOperations.cast(combined, CONCEPTS.ErrorTag$yj), PROPS.description$dnEg));
-          } else {
-            ListSequence.fromList(SLinkOperations.getChildren(result, LINKS.tags$Lx_i)).addElement(combined);
-          }
+    List<TagCombinator> combinedTags = ListSequence.fromList(new ArrayList<TagCombinator>());
+    for (SAbstractConcept key : SetSequence.fromSet(keys)) {
+      SNode leftTag = MapSequence.fromMap(leftTagMap).get(key);
+      SNode rightTag = MapSequence.fromMap(rightTagMap).get(key);
+      TagCombinator combined = ITag__BehaviorDescriptor.combine_idV9WAJSLzx5.invoke(SNodeOperations.asSConcept(key), leftTag, rightTag, operator, left, right);
+      if (combined != null) {
+        if (combined.isError()) {
+          return createRuntimeErrorType_wyrhxu_a0a0a3a51a5(SPropertyOperations.getString(SNodeOperations.cast(combined.getTag(), CONCEPTS.ErrorTag$yj), PROPS.description$dnEg));
+        } else {
+          ListSequence.fromList(combinedTags).addElement(combined);
         }
       }
+    }
 
+    for (TagCombinator tc : ListSequence.fromList(combinedTags)) {
+      Tuples._2<SNode, SNode> adapted = tc.adaptOperandTypes(leftBaseType, rightBaseType);
+      leftBaseType = adapted._0();
+      rightBaseType = adapted._1();
+    }
+
+    SNode result = SConceptOperations.createNewNode(MetaAdapterFactory.getConcept(0x5186c6ce428c4f09L, 0xa9df73d9e86c27d3L, 0x186a8ed9947750b6L, "org.iets3.core.expr.typetags.structure.TaggedType"));
+    ListSequence.fromList(SLinkOperations.getChildren(result, LINKS.tags$Lx_i)).addSequence(ListSequence.fromList(combinedTags).select((it) -> it.getTag()));
+
+    SNode baseOperationType = TypeChecker.getInstance().getRulesManager().getOperationType(operator, leftBaseType, rightBaseType);
+    if (baseOperationType == null) {
+      return createRuntimeErrorType_wyrhxu_a0a32a5();
+    } else {
+      SLinkOperations.setTarget(result, LINKS.baseType$z6Mz, SNodeOperations.cast(baseOperationType, CONCEPTS.Type$WK));
       if (ListSequence.fromList(SLinkOperations.getChildren(result, LINKS.tags$Lx_i)).isEmpty()) {
         return SLinkOperations.getTarget(result, LINKS.baseType$z6Mz);
       } else {
@@ -141,20 +149,20 @@ public class BaseTaggedTypeHelper {
     return true;
   }
 
-  private static SNode createRuntimeErrorType_wyrhxu_a0a61a5() {
-    SNodeBuilder n0 = new SNodeBuilder().init(CONCEPTS.RuntimeErrorType$3c);
-    return n0.getResult();
-  }
-  private static SNode createRuntimeErrorType_wyrhxu_a0a0a3a3a0q0f(String p0) {
+  private static SNode createRuntimeErrorType_wyrhxu_a0a0a3a51a5(String p0) {
     SNodeBuilder n0 = new SNodeBuilder().init(CONCEPTS.RuntimeErrorType$3c);
     n0.setProperty(PROPS.errorText$leWQ, p0);
+    return n0.getResult();
+  }
+  private static SNode createRuntimeErrorType_wyrhxu_a0a32a5() {
+    SNodeBuilder n0 = new SNodeBuilder().init(CONCEPTS.RuntimeErrorType$3c);
     return n0.getResult();
   }
 
   private static final class CONCEPTS {
     /*package*/ static final SConcept TaggedType$O4 = MetaAdapterFactory.getConcept(0x5186c6ce428c4f09L, 0xa9df73d9e86c27d3L, 0x186a8ed9947750b6L, "org.iets3.core.expr.typetags.structure.TaggedType");
-    /*package*/ static final SConcept Type$WK = MetaAdapterFactory.getConcept(0xcfaa4966b7d54b69L, 0xb66a309a6e1a7290L, 0x670d5e92f854a614L, "org.iets3.core.expr.base.structure.Type");
     /*package*/ static final SConcept ErrorTag$yj = MetaAdapterFactory.getConcept(0x5186c6ce428c4f09L, 0xa9df73d9e86c27d3L, 0x4b61610d29e00172L, "org.iets3.core.expr.typetags.structure.ErrorTag");
+    /*package*/ static final SConcept Type$WK = MetaAdapterFactory.getConcept(0xcfaa4966b7d54b69L, 0xb66a309a6e1a7290L, 0x670d5e92f854a614L, "org.iets3.core.expr.base.structure.Type");
     /*package*/ static final SConcept RuntimeErrorType$3c = MetaAdapterFactory.getConcept(0x7a5dda6291404668L, 0xab76d5ed1746f2b2L, 0x113f84956f9L, "jetbrains.mps.lang.typesystem.structure.RuntimeErrorType");
   }
 

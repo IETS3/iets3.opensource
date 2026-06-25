@@ -44,7 +44,7 @@ public final class adaptToExtendedFMC_Intention extends AbstractIntentionDescrip
 
     @Override
     public String getDescription(final SNode node, final EditorContext editorContext) {
-      return "Adapt This Configuration to the Extended Configuration";
+      return "VARIABILITY: " + ("Adapt This Configuration to the Extended Configuration");
     }
 
     @Override

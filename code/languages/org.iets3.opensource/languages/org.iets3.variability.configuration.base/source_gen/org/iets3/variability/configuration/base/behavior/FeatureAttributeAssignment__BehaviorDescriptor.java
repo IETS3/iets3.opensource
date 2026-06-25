@@ -95,7 +95,7 @@ public final class FeatureAttributeAssignment__BehaviorDescriptor extends BaseBH
     return (SNode) AbstractFeatureAttribute__BehaviorDescriptor.defaultValue_id3rysoRwsNOP.invoke(SLinkOperations.getTarget(__thisNode__, LINKS.attribute$J5jI));
   }
   /*package*/ static String getPresentation_idhEwIMiw(@NotNull SNode __thisNode__) {
-    return "{" + "inherited: " + SPropertyOperations.getBoolean(__thisNode__, PROPS.inherited$oyCC) + " assignmentType " + SPropertyOperations.getEnum(__thisNode__, PROPS.assignmentCause$9xP) + " attribute:" + BaseConcept__BehaviorDescriptor.getPresentation_idhEwIMiw.invoke(SLinkOperations.getTarget(__thisNode__, LINKS.attribute$J5jI)) + " value: " + BaseConcept__BehaviorDescriptor.getPresentation_idhEwIMiw.invoke(SLinkOperations.getTarget(__thisNode__, LINKS.value$kgDc)) + "}";
+    return "{" + BaseConcept__BehaviorDescriptor.getPresentation_idhEwIMiw.invoke(SLinkOperations.getTarget(__thisNode__, LINKS.attribute$J5jI)) + "=" + BaseConcept__BehaviorDescriptor.getPresentation_idhEwIMiw.invoke(SLinkOperations.getTarget(__thisNode__, LINKS.value$kgDc)) + " (" + SPropertyOperations.getEnum(__thisNode__, PROPS.assignmentCause$9xP) + ((SPropertyOperations.getBoolean(__thisNode__, PROPS.inherited$oyCC) ? "/inherited" : "")) + ")}";
   }
 
   /*package*/ FeatureAttributeAssignment__BehaviorDescriptor() {
