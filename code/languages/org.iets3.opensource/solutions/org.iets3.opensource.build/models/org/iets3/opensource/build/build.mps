@@ -19007,8 +19007,8 @@
     <node concept="_l39y" id="7OQaAJRI72U" role="10PD9s" />
   </node>
   <node concept="1l3spW" id="29i5SfmBmWQ">
-    <property role="TrG5h" value="org.iets3.opensource.interpreter.testExecutorStarter" />
-    <property role="turDy" value="build-testInterpreter2.xml" />
+    <property role="TrG5h" value="org.iets3.opensource.interpreter.testExecutorExec" />
+    <property role="turDy" value="build-testInterpreterExec.xml" />
     <property role="2DA0ip" value="../../../../../build/scripts" />
     <node concept="1YJUtn" id="Bt8sbNUPYI" role="1hWBAP">
       <property role="3MWwXZ" value="MainClass" />

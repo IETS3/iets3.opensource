@@ -156,6 +156,9 @@
       <concept id="6666499814681541919" name="jetbrains.mps.core.xml.structure.XmlTextValue" flags="ng" index="2pMdtt">
         <property id="6666499814681541920" name="text" index="2pMdty" />
       </concept>
+      <concept id="6666499814681299064" name="jetbrains.mps.core.xml.structure.XmlComment" flags="nn" index="2pNm8U">
+        <child id="1622293396949036151" name="lines" index="3o66t8" />
+      </concept>
       <concept id="6666499814681415858" name="jetbrains.mps.core.xml.structure.XmlElement" flags="ng" index="2pNNFK">
         <property id="6666499814681415862" name="tagName" index="2pNNFO" />
         <property id="6999033275467544021" name="shortEmptyNotation" index="qg3DV" />
@@ -165,6 +168,9 @@
       <concept id="6666499814681447923" name="jetbrains.mps.core.xml.structure.XmlAttribute" flags="ng" index="2pNUuL">
         <property id="6666499814681447926" name="attrName" index="2pNUuO" />
         <child id="6666499814681541918" name="value" index="2pMdts" />
+      </concept>
+      <concept id="1622293396949036126" name="jetbrains.mps.core.xml.structure.XmlCommentLine" flags="nn" index="3o66tx">
+        <property id="1622293396949036127" name="text" index="3o66tw" />
       </concept>
       <concept id="1622293396948952339" name="jetbrains.mps.core.xml.structure.XmlText" flags="nn" index="3o6iSG" />
     </language>
@@ -317,6 +323,7 @@
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
       <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
+        <property id="1156234966388" name="shortDescription" index="OYnhT" />
         <child id="5169995583184591170" name="smodelAttribute" index="lGtFl" />
       </concept>
       <concept id="3364660638048049750" name="jetbrains.mps.lang.core.structure.PropertyAttribute" flags="ng" index="A9Btg">
@@ -2705,8 +2712,17 @@
             </node>
             <node concept="2VaTY3" id="5eJiSDhB5oI" role="2VaTZU" />
             <node concept="2Vbh7Z" id="4JguHscXsk9" role="2VaTZU">
+              <property role="OYnhT" value="" />
               <node concept="2pNNFK" id="4JguHscXska" role="2Vbh7K">
                 <property role="2pNNFO" value="taskdef" />
+                <node concept="2pNm8U" id="4JguHsdzJxD" role="3o6s8t">
+                  <node concept="3o66tx" id="4JguHsdzJxE" role="3o66t8">
+                    <property role="3o66tw" value=" Register the MPS ant tasks (antlib.xml) so the runMPS task below resolves. " />
+                  </node>
+                  <node concept="3o66tx" id="4JguHsdzJxF" role="3o66t8">
+                    <property role="3o66tw" value=" This starter project does no module generation, so the standard build generator emits no project-level taskdef; declare it here. " />
+                  </node>
+                </node>
                 <node concept="2pNUuL" id="4JguHscXskb" role="2pNNFR">
                   <property role="2pNUuO" value="resource" />
                   <node concept="2pMdtt" id="4JguHscXskd" role="2pMdts">

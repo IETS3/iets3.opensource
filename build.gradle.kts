@@ -177,108 +177,14 @@ val buildLanguages by tasks.registering(BuildLanguages::class) {
     script = scriptsDir.file("build-languages.xml")
 }
 
-val mergeTestInterpreterXml by tasks.registering {
-    dependsOn(buildAllScripts)
-    val xmlaFile = scriptsDir.file("build-testInterpreter.xml")
-    val xmlbFile = scriptsDir.file("build-testInterpreter2.xml")
-    val outFile  = scriptsDir.file("build-combined.xml")
-    inputs.files(xmlaFile, xmlbFile)
-    outputs.file(outFile)
-
-    doLast {
-        fun deepCopy(src: Node, parent: Node?): Node {
-            @Suppress("UNCHECKED_CAST")
-            val copy = Node(parent, src.name(), LinkedHashMap(src.attributes() as Map<Any, Any>))
-            for (child in src.children()) {
-                if (child is Node) deepCopy(child, copy)
-                else (copy.value() as NodeList).add(child.toString())
-            }
-            return copy
-        }
-        fun Node.childrenNamed(name: String) =
-            children().filterIsInstance<Node>().filter { it.name().toString() == name }
-        fun Node.indexedTargets() =
-            childrenNamed("target").associateBy { it.attribute("name") as String }
-
-        val parser = groovy.xml.XmlParser(false, false)
-        val xmla = parser.parse(xmlaFile.asFile)
-        val xmlb = parser.parse(xmlbFile.asFile)
-
-        val targetsA = xmla.indexedTargets()
-        val targetsB = xmlb.indexedTargets()
-
-        val extraPropNames = listOf(
-            "build.mps.config.path", "build.mps.system.path", "dependencies.root",
-            "iets3.interpreterExecutor.genPath", "mps.macro.iets3.github.opensource.home",
-            "artifacts.org.iets3.opensource.interpreter.testExecutor", "artifacts.com.mbeddr.platform"
-        )
-        val propsB = xmlb.childrenNamed("property").associateBy { it.attribute("name") as String? }
-        val extraProps = extraPropNames.mapNotNull { propsB[it] }
-
-        val root = Node(null, "project", mapOf("name" to xmlb.attribute("name"), "default" to "build"))
-
-        // Properties: all from XMLa; inject XMLb extras after 'iets3.artifacts.root'
-        xmla.childrenNamed("property").forEach { prop ->
-            deepCopy(prop, root)
-            if (prop.attribute("name") == "iets3.artifacts.root") {
-                extraProps.forEach { deepCopy(it, root) }
-            }
-        }
-
-        // Infrastructure: path, taskdef, generator-settings from XMLa only
-        xmla.childrenNamed("path").forEach { deepCopy(it, root) }
-        xmla.childrenNamed("taskdef").forEach { deepCopy(it, root) }
-        xmla.childrenNamed("generator-settings").forEach { deepCopy(it, root) }
-
-        // assemble from XMLb, depends extended to include 'classes'
-        val assembleTarget = deepCopy(targetsB["assemble"]!!, root)
-        assembleTarget.attributes()["depends"] = "classes, declare-mps-tasks"
-
-        Node(root, "target", mapOf("name" to "buildDependents"))
-        deepCopy(targetsA["fetchDependencies"]!!, root)
-        Node(root, "target", mapOf("name" to "build", "depends" to "assemble, run-mps-code"))
-        deepCopy(targetsB["clean"]!!, root)
-        deepCopy(targetsA["compileJava"]!!, root)
-        deepCopy(targetsA["processResources"]!!, root)
-        deepCopy(targetsA["classes"]!!, root)
-        deepCopy(targetsA["test"]!!, root)
-        deepCopy(targetsA["check"]!!, root)
-
-        // generate from XMLa (full MPS plugin list; XMLb's generate target is empty)
-        deepCopy(targetsA["generate"]!!, root)
-        deepCopy(targetsA["declare-mps-tasks"]!!, root)
-        deepCopy(targetsA["makeDependents"]!!, root)
-        deepCopy(targetsA["java.compile.org.iets3.opensource.interpreterExecutor"]!!, root)
-        deepCopy(targetsA["cleanSources"]!!, root)
-        deepCopy(targetsB["run-mps-code"]!!, root)
-
-        // run.* from XMLb — update interpreterExecutor.jar library to use combined build.layout
-        val runTarget = deepCopy(targetsB["run.org.iets3.opensource.interpreterExecutor"]!!, root)
-        runTarget.childrenNamed("runMPS")
-            .flatMap { it.childrenNamed("library") }
-            .filter { (it.attribute("file") as String?)?.contains("artifacts.org.iets3.opensource.interpreter.testExecutor") == true }
-            .forEach { lib ->
-                lib.attributes()["file"] =
-                    "\${build.layout}/org.iets3.opensource.interpreterExecutor/languages/iets3.opensource.interpreterExecutor/org.iets3.opensource.interpreterExecutor.jar"
-            }
-
-        val pw = java.io.PrintWriter(outFile.asFile)
-        pw.println("<?xml version=\"1.0\" encoding=\"UTF-8\"?>")
-        groovy.xml.XmlNodePrinter(pw, "  ").print(root)
-        pw.close()
-        logger.lifecycle("Combined XML written to: ${outFile.asFile}")
-    }
-}
-
-val yInterpreter by tasks.registering(TestLanguages::class) {
+val execTestsByInterpreterPre by tasks.registering(TestLanguages::class) {
     script = scriptsDir.file("build-testInterpreter.xml")
     targets("generate", "build")
-    
 }
 
 val execTestsByInterpreter by tasks.registering(TestLanguages::class) {
-    dependsOn(yInterpreter)
-    script = scriptsDir.file("build-testInterpreter2.xml")
+    dependsOn(execTestsByInterpreterPre)
+    script = scriptsDir.file("build-testInterpreterExec.xml")
     targets("generate", "build")
     doLast {
         // there is limited ant support for kotlin so we fall back to groovy
