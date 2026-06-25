@@ -270,9 +270,15 @@ val mergeTestInterpreterXml by tasks.registering {
     }
 }
 
+val yInterpreter by tasks.registering(TestLanguages::class) {
+    script = scriptsDir.file("build-testInterpreter.xml")
+    targets("generate", "build")
+    
+}
+
 val execTestsByInterpreter by tasks.registering(TestLanguages::class) {
-    dependsOn(mergeTestInterpreterXml)
-    script = scriptsDir.file("build-combined.xml")
+    dependsOn(yInterpreter)
+    script = scriptsDir.file("build-testInterpreter2.xml")
     targets("generate", "build")
     doLast {
         // there is limited ant support for kotlin so we fall back to groovy
