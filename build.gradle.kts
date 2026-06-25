@@ -202,7 +202,7 @@ val execTestsByInterpreter by tasks.registering(TestLanguages::class) {
                 )
                 "report"("format" to "frames", "todir" to "${layout.buildDirectory.get()}/junitInterpreterReport")
             }
-            "echo"("JUnit Interpreter report placed into ${layout.buildDirectory.get()}/junitInterpreterReport/index.html")
+            "echo"("JUnit Interpreter report placed into file://${layout.buildDirectory.get()}/junitInterpreterReport/index.html")
         }
     }
 }
