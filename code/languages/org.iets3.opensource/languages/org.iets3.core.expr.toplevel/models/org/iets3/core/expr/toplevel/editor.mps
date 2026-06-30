@@ -5657,7 +5657,7 @@
         </node>
       </node>
       <node concept="1iCGBv" id="3meuf2aZHdl" role="3EZMnx">
-        <ref role="1NtTu8" to="yv47:3meuf2aV0ef" />
+        <ref role="1NtTu8" to="yv47:3meuf2aV0ef" resolve="literal" />
         <node concept="1sVBvm" id="3meuf2aZHdm" role="1sWHZn">
           <node concept="3F0A7n" id="3meuf2aZHdn" role="2wV5jI">
             <property role="1Intyy" value="true" />
@@ -5698,7 +5698,7 @@
       </node>
       <node concept="3F2HdR" id="3meuf2b7gEe" role="3EZMnx">
         <property role="2czwfO" value="," />
-        <ref role="1NtTu8" to="yv47:3meuf2b3h5o" />
+        <ref role="1NtTu8" to="yv47:3meuf2b3h5o" resolve="selectors" />
         <node concept="l2Vlx" id="3meuf2b7gEf" role="2czzBx" />
         <node concept="3F0ifn" id="3meuf2b7gEg" role="2czzBI">
           <property role="3F0ifm" value="" />
