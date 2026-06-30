@@ -611,9 +611,7 @@
       <concept id="1024425597324739336" name="org.iets3.core.expr.toplevel.structure.RecordMemberRefInConstraint" flags="ng" index="XrbUJ">
         <reference id="1024425597324739346" name="member" index="XrbUP" />
       </concept>
-      <concept id="7850247783016916264" name="org.iets3.core.expr.toplevel.structure.EnumIsNotInTarget" flags="ng" index="15tcJG">
-        <child id="7850247783016916266" name="selectors" index="15tcJI" />
-      </concept>
+      <concept id="7850247783016916264" name="org.iets3.core.expr.toplevel.structure.EnumIsNotInTarget" flags="ng" index="15tcJG" />
       <concept id="4790956042240790396" name="org.iets3.core.expr.toplevel.structure.FunRef" flags="ng" index="1aeIDv" />
       <concept id="4790956042240570348" name="org.iets3.core.expr.toplevel.structure.FunctionCall" flags="ng" index="1af_rf" />
       <concept id="4790956042240148643" name="org.iets3.core.expr.toplevel.structure.Function" flags="ng" index="1aga60" />
@@ -15232,9 +15230,9 @@
       <node concept="I61D5" id="6NLFGgBL9lc" role="I61D6">
         <node concept="I61DT" id="6NLFGgBL9ld" role="I61D1">
           <node concept="30bsCy" id="6NLFGgBL9lf" role="2lDidJ">
-            <node concept="1QScDb" id="6NLFGgBL9lg" role="2lDidJ">
-              <node concept="1Y$79l" id="6NLFGgBLo4X" role="1QScD9">
-                <ref role="1Y$79n" node="1bwJEEguiBh" resolve="RED" />
+            <node concept="1QScDb" id="3meuf2bd_Ah" role="2lDidJ">
+              <node concept="1Y$79l" id="3meuf2bdBfV" role="1QScD9">
+                <ref role="2ZoBHZ" node="1bwJEEguiBh" resolve="RED" />
               </node>
               <node concept="1afdae" id="6NLFGgBL9li" role="2lDidJ">
                 <ref role="1afue_" node="6NLFGgBL9la" resolve="c" />
@@ -15495,13 +15493,13 @@
       <node concept="I61D5" id="6NLFGgDHq$W" role="I61D6">
         <node concept="I61DT" id="6NLFGgDHq$X" role="I61D1">
           <node concept="30bsCy" id="6NLFGgDHq$Y" role="2lDidJ">
-            <node concept="1QScDb" id="6NLFGgDHq$Z" role="2lDidJ">
-              <node concept="15tcJG" id="6NLFGgDHvEz" role="1QScD9">
-                <node concept="2BPR$_" id="6NLFGgDHvEB" role="15tcJI">
-                  <ref role="2BPR$A" node="1bwJEEguiBk" resolve="GREEN" />
-                </node>
-                <node concept="2BPR$_" id="6NLFGgDHyF2" role="15tcJI">
+            <node concept="1QScDb" id="3meuf2bh_77" role="2lDidJ">
+              <node concept="15tcJG" id="3meuf2bhAKU" role="1QScD9">
+                <node concept="2BPR$_" id="3meuf2bhAKW" role="2YwQAC">
                   <ref role="2BPR$A" node="1bwJEEguiBh" resolve="RED" />
+                </node>
+                <node concept="2BPR$_" id="3meuf2bhE28" role="2YwQAC">
+                  <ref role="2BPR$A" node="1bwJEEguiBk" resolve="GREEN" />
                 </node>
               </node>
               <node concept="1afdae" id="6NLFGgDHq_3" role="2lDidJ">
