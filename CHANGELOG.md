@@ -18,6 +18,7 @@ The project does _not_ follow Semantic Versioning and the changes are documented
 
 ### Fixed
 
+- Variability: The editing of feature models in tree layout has been improved. E.g., typing ENTER on a feature will create a new sibling. Typing ":" in a feature's name will change it to a feature model include node. The intentions "Change to feature / feature model include" previously lost information about the feature, this is also fixed.
 - Variability: Fix workaround for using for-all-variants checking rules outside the IDE (e.g., on a build server). Due to MPS-34340, the for-all-variants checking cannot be done outside the IDE if the model under check has more than one root nodes. This bugfix includes roots of LogicalChildren in the list of used root nodes.
 - Physical units (language `org.iets3.core.expr.typetags.physunits`): Update unit in typesystem after prefix has been removed (e.g., from "cm" to "m").
 
