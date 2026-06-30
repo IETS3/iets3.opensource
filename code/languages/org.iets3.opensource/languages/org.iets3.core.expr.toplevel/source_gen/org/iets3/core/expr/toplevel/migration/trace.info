@@ -158,5 +158,151 @@
       <unit id="2620596026122501948" at="22,0,67,0" name="org.iets3.core.expr.toplevel.migration.Migrate_MoveLinkUp_5" />
     </file>
   </root>
+  <root nodeRef="r:c83a66aa-08f5-45cf-927f-2bb7fe2faa8d(org.iets3.core.expr.toplevel.migration)/3859154905221301145">
+    <file name="Migrate_MoveLinkUp_6.java">
+      <node id="3859154905221301145" at="23,0,24,0" concept="2" trace="description" />
+      <node id="3859154905221301145" at="24,30,25,23" concept="5" />
+      <node id="3859154905221301145" at="28,33,29,16" concept="5" />
+      <node id="3859154905221301145" at="31,41,32,17" concept="1" />
+      <node id="3859154905221301145" at="32,17,33,16" concept="5" />
+      <node id="3859154905221301145" at="36,5,37,64" concept="4" />
+      <node id="3859154905221301145" at="37,64,38,90" concept="4" />
+      <node id="3859154905221301145" at="38,90,39,63" concept="4" />
+      <node id="3859154905221301153" at="39,63,40,770" concept="1" />
+      <node id="3859154905221301145" at="45,5,46,64" concept="4" />
+      <node id="3859154905221301145" at="46,64,47,90" concept="4" />
+      <node id="3859154905221301145" at="47,90,48,69" concept="4" />
+      <node id="3859154905221301153" at="52,45,53,227" concept="5" />
+      <node id="3859154905221301145" at="60,50,61,149" concept="5" />
+      <node id="3859154905221301145" at="63,60,64,17" concept="5" />
+      <node id="3859154905221301145" at="24,0,27,0" concept="3" trace="getCaption#()Ljava/lang/String;" />
+      <node id="3859154905221301153" at="52,0,55,0" concept="3" trace="invoke#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljetbrains/mps/lang/migration/runtime/base/Problem;" />
+      <node id="3859154905221301145" at="60,0,63,0" concept="3" trace="getReference#()Ljetbrains/mps/lang/migration/runtime/base/MigrationScriptReference;" />
+      <node id="3859154905221301145" at="63,0,66,0" concept="6" trace="isMovedConcept#(Lorg/jetbrains/mps/openapi/language/SAbstractConcept;)Z" />
+      <node id="3859154905221301145" at="27,0,31,0" concept="3" trace="isRerunnable#()Z" />
+      <node id="3859154905221301145" at="31,0,35,0" concept="3" trace="execute#(Lorg/jetbrains/mps/openapi/module/SModule;)Lorg/jetbrains/mps/openapi/model/SNode;" />
+      <node id="3859154905221301153" at="50,43,55,13" concept="5" />
+      <node id="3859154905221301145" at="35,42,41,5" concept="0" />
+      <node id="3859154905221301145" at="50,0,57,0" concept="3" trace="invoke#()Ljava/lang/Iterable;" />
+      <node id="3859154905221301145" at="35,0,43,0" concept="3" trace="doExecute#(Lorg/jetbrains/mps/openapi/module/SModule;)V" />
+      <node id="3859154905221301145" at="48,69,57,9" concept="5" />
+      <node id="3859154905221301145" at="44,45,58,5" concept="0" />
+      <node id="3859154905221301145" at="43,0,60,0" concept="3" trace="check#(Lorg/jetbrains/mps/openapi/module/SModule;)Ljava/lang/Iterable;" />
+      <scope id="3859154905221301145" at="24,30,25,23" />
+      <scope id="3859154905221301145" at="28,33,29,16" />
+      <scope id="3859154905221301153" at="52,45,53,227" />
+      <scope id="3859154905221301145" at="60,50,61,149" />
+      <scope id="3859154905221301145" at="63,60,64,17" />
+      <scope id="3859154905221301145" at="31,41,33,16" />
+      <scope id="3859154905221301145" at="24,0,27,0" />
+      <scope id="3859154905221301153" at="52,0,55,0">
+        <var name="it" id="3859154905221301153" />
+      </scope>
+      <scope id="3859154905221301145" at="60,0,63,0" />
+      <scope id="3859154905221301145" at="63,0,66,0">
+        <var name="c" id="3859154905221301145" />
+      </scope>
+      <scope id="3859154905221301145" at="27,0,31,0" />
+      <scope id="3859154905221301145" at="31,0,35,0">
+        <var name="m" id="3859154905221301145" />
+      </scope>
+      <scope id="3859154905221301145" at="36,5,40,770">
+        <var name="context" id="3859154905221301145" />
+        <var name="scope_3ru2ns_a0e" id="3859154905221301145" />
+        <var name="scope_3ru2ns_a0e_0" id="3859154905221301145" />
+      </scope>
+      <scope id="3859154905221301145" at="50,43,55,13" />
+      <scope id="3859154905221301145" at="35,42,41,5" />
+      <scope id="3859154905221301145" at="50,0,57,0" />
+      <scope id="3859154905221301145" at="35,0,43,0">
+        <var name="m" id="3859154905221301145" />
+      </scope>
+      <scope id="3859154905221301145" at="45,5,57,9">
+        <var name="context" id="3859154905221301145" />
+        <var name="scope_3ru2ns_a0f" id="3859154905221301145" />
+        <var name="scope_3ru2ns_a0f_0" id="3859154905221301145" />
+      </scope>
+      <scope id="3859154905221301145" at="44,45,58,5" />
+      <scope id="3859154905221301145" at="43,0,60,0">
+        <var name="m" id="3859154905221301145" />
+      </scope>
+      <unit id="3859154905221301153" at="51,786,55,11" name="org.iets3.core.expr.toplevel.migration.Migrate_MoveLinkUp_6$1$1" />
+      <unit id="3859154905221301145" at="49,38,57,7" name="org.iets3.core.expr.toplevel.migration.Migrate_MoveLinkUp_6$1" />
+      <unit id="3859154905221301145" at="22,0,67,0" name="org.iets3.core.expr.toplevel.migration.Migrate_MoveLinkUp_6" />
+    </file>
+  </root>
+  <root nodeRef="r:c83a66aa-08f5-45cf-927f-2bb7fe2faa8d(org.iets3.core.expr.toplevel.migration)/3859154905223467362">
+    <file name="Migrate_MoveLinkUp_7.java">
+      <node id="3859154905223467362" at="23,0,24,0" concept="2" trace="description" />
+      <node id="3859154905223467362" at="24,30,25,23" concept="5" />
+      <node id="3859154905223467362" at="28,33,29,16" concept="5" />
+      <node id="3859154905223467362" at="31,41,32,17" concept="1" />
+      <node id="3859154905223467362" at="32,17,33,16" concept="5" />
+      <node id="3859154905223467362" at="36,5,37,64" concept="4" />
+      <node id="3859154905223467362" at="37,64,38,90" concept="4" />
+      <node id="3859154905223467362" at="38,90,39,63" concept="4" />
+      <node id="3859154905223467370" at="39,63,40,773" concept="1" />
+      <node id="3859154905223467362" at="45,5,46,64" concept="4" />
+      <node id="3859154905223467362" at="46,64,47,90" concept="4" />
+      <node id="3859154905223467362" at="47,90,48,69" concept="4" />
+      <node id="3859154905223467370" at="52,45,53,233" concept="5" />
+      <node id="3859154905223467362" at="60,50,61,149" concept="5" />
+      <node id="3859154905223467362" at="63,60,64,17" concept="5" />
+      <node id="3859154905223467362" at="24,0,27,0" concept="3" trace="getCaption#()Ljava/lang/String;" />
+      <node id="3859154905223467370" at="52,0,55,0" concept="3" trace="invoke#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljetbrains/mps/lang/migration/runtime/base/Problem;" />
+      <node id="3859154905223467362" at="60,0,63,0" concept="3" trace="getReference#()Ljetbrains/mps/lang/migration/runtime/base/MigrationScriptReference;" />
+      <node id="3859154905223467362" at="63,0,66,0" concept="6" trace="isMovedConcept#(Lorg/jetbrains/mps/openapi/language/SAbstractConcept;)Z" />
+      <node id="3859154905223467362" at="27,0,31,0" concept="3" trace="isRerunnable#()Z" />
+      <node id="3859154905223467362" at="31,0,35,0" concept="3" trace="execute#(Lorg/jetbrains/mps/openapi/module/SModule;)Lorg/jetbrains/mps/openapi/model/SNode;" />
+      <node id="3859154905223467370" at="50,43,55,13" concept="5" />
+      <node id="3859154905223467362" at="35,42,41,5" concept="0" />
+      <node id="3859154905223467362" at="50,0,57,0" concept="3" trace="invoke#()Ljava/lang/Iterable;" />
+      <node id="3859154905223467362" at="35,0,43,0" concept="3" trace="doExecute#(Lorg/jetbrains/mps/openapi/module/SModule;)V" />
+      <node id="3859154905223467362" at="48,69,57,9" concept="5" />
+      <node id="3859154905223467362" at="44,45,58,5" concept="0" />
+      <node id="3859154905223467362" at="43,0,60,0" concept="3" trace="check#(Lorg/jetbrains/mps/openapi/module/SModule;)Ljava/lang/Iterable;" />
+      <scope id="3859154905223467362" at="24,30,25,23" />
+      <scope id="3859154905223467362" at="28,33,29,16" />
+      <scope id="3859154905223467370" at="52,45,53,233" />
+      <scope id="3859154905223467362" at="60,50,61,149" />
+      <scope id="3859154905223467362" at="63,60,64,17" />
+      <scope id="3859154905223467362" at="31,41,33,16" />
+      <scope id="3859154905223467362" at="24,0,27,0" />
+      <scope id="3859154905223467370" at="52,0,55,0">
+        <var name="it" id="3859154905223467370" />
+      </scope>
+      <scope id="3859154905223467362" at="60,0,63,0" />
+      <scope id="3859154905223467362" at="63,0,66,0">
+        <var name="c" id="3859154905223467362" />
+      </scope>
+      <scope id="3859154905223467362" at="27,0,31,0" />
+      <scope id="3859154905223467362" at="31,0,35,0">
+        <var name="m" id="3859154905223467362" />
+      </scope>
+      <scope id="3859154905223467362" at="36,5,40,773">
+        <var name="context" id="3859154905223467362" />
+        <var name="scope_3ru2nt_a0e" id="3859154905223467362" />
+        <var name="scope_3ru2nt_a0e_0" id="3859154905223467362" />
+      </scope>
+      <scope id="3859154905223467362" at="50,43,55,13" />
+      <scope id="3859154905223467362" at="35,42,41,5" />
+      <scope id="3859154905223467362" at="50,0,57,0" />
+      <scope id="3859154905223467362" at="35,0,43,0">
+        <var name="m" id="3859154905223467362" />
+      </scope>
+      <scope id="3859154905223467362" at="45,5,57,9">
+        <var name="context" id="3859154905223467362" />
+        <var name="scope_3ru2nt_a0f" id="3859154905223467362" />
+        <var name="scope_3ru2nt_a0f_0" id="3859154905223467362" />
+      </scope>
+      <scope id="3859154905223467362" at="44,45,58,5" />
+      <scope id="3859154905223467362" at="43,0,60,0">
+        <var name="m" id="3859154905223467362" />
+      </scope>
+      <unit id="3859154905223467370" at="51,798,55,11" name="org.iets3.core.expr.toplevel.migration.Migrate_MoveLinkUp_7$1$1" />
+      <unit id="3859154905223467362" at="49,38,57,7" name="org.iets3.core.expr.toplevel.migration.Migrate_MoveLinkUp_7$1" />
+      <unit id="3859154905223467362" at="22,0,67,0" name="org.iets3.core.expr.toplevel.migration.Migrate_MoveLinkUp_7" />
+    </file>
+  </root>
 </debug-info>
 
