@@ -204,11 +204,22 @@
       </concept>
     </language>
     <language id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc">
+      <concept id="5858074156537516430" name="jetbrains.mps.baseLanguage.javadoc.structure.ReturnBlockDocTag" flags="ng" index="x79VA">
+        <property id="5858074156537516431" name="text" index="x79VB" />
+      </concept>
+      <concept id="6832197706140518104" name="jetbrains.mps.baseLanguage.javadoc.structure.DocMethodParameterReference" flags="ng" index="zr_55" />
+      <concept id="6832197706140518103" name="jetbrains.mps.baseLanguage.javadoc.structure.BaseParameterReference" flags="ng" index="zr_5a">
+        <reference id="6832197706140518108" name="param" index="zr_51" />
+      </concept>
       <concept id="5349172909345501395" name="jetbrains.mps.baseLanguage.javadoc.structure.BaseDocComment" flags="ng" index="P$AiS">
         <child id="8465538089690331502" name="body" index="TZ5H$" />
         <child id="5383422241790532083" name="tags" index="3nqlJM" />
       </concept>
       <concept id="5349172909345532724" name="jetbrains.mps.baseLanguage.javadoc.structure.MethodDocComment" flags="ng" index="P$JXv" />
+      <concept id="8465538089690881930" name="jetbrains.mps.baseLanguage.javadoc.structure.ParameterBlockDocTag" flags="ng" index="TUZQ0">
+        <property id="8465538089690881934" name="text" index="TUZQ4" />
+        <child id="6832197706140518123" name="parameter" index="zr_5Q" />
+      </concept>
       <concept id="8465538089690331500" name="jetbrains.mps.baseLanguage.javadoc.structure.CommentLine" flags="ng" index="TZ5HA">
         <child id="8970989240999019149" name="part" index="1dT_Ay" />
       </concept>
@@ -10287,6 +10298,22 @@
         <ref role="ehGHo" to="hm2y:7NJy08a3O9a" resolve="IDotTarget" />
       </node>
       <node concept="3clFbS" id="3wraVjnnC5l" role="3clF47" />
+      <node concept="P$JXv" id="lJ6hiUJYr6" role="lGtFl">
+        <node concept="TZ5HA" id="lJ6hiUJYr7" role="TZ5H$">
+          <node concept="1dT_AC" id="lJ6hiUJYr8" role="1dT_Ay">
+            <property role="1dT_AB" value="Wrap the literal in a custom 'IDotTarget' handling a single enum literal" />
+          </node>
+        </node>
+        <node concept="TUZQ0" id="lJ6hiUJYr9" role="3nqlJM">
+          <property role="TUZQ4" value=" " />
+          <node concept="zr_55" id="lJ6hiUJYrb" role="zr_5Q">
+            <ref role="zr_51" node="3wraVjnnIla" resolve="literal" />
+          </node>
+        </node>
+        <node concept="x79VA" id="lJ6hiUJYrc" role="3nqlJM">
+          <property role="x79VB" value=" " />
+        </node>
+      </node>
     </node>
     <node concept="13i0hz" id="4L5R3LmDwOh" role="13h7CS">
       <property role="TrG5h" value="compose" />
@@ -10303,7 +10330,7 @@
         </node>
       </node>
       <node concept="37vLTG" id="4L5R3LmDwOm" role="3clF46">
-        <property role="TrG5h" value="leftExpr" />
+        <property role="TrG5h" value="currExpression" />
         <node concept="3Tqbb2" id="4L5R3LmDwOn" role="1tU5fm">
           <ref role="ehGHo" to="hm2y:6sdnDbSla17" resolve="Expression" />
         </node>
@@ -10315,21 +10342,32 @@
         </node>
       </node>
       <node concept="3clFbS" id="4L5R3LmDwOq" role="3clF47" />
-    </node>
-    <node concept="13i0hz" id="4L5R3LmDye0" role="13h7CS">
-      <property role="TrG5h" value="enumSelectors" />
-      <node concept="3Tm1VV" id="4L5R3LmDye1" role="1B3o_S" />
-      <node concept="2I9FWS" id="4L5R3LmDyfn" role="3clF45">
-        <ref role="2I9WkF" to="yv47:6WstIz8MKZd" resolve="EnumIsInSelector" />
-      </node>
-      <node concept="3clFbS" id="4L5R3LmDye3" role="3clF47">
-        <node concept="3clFbF" id="3meuf2b3vWK" role="3cqZAp">
-          <node concept="2OqwBi" id="3meuf2b3wDu" role="3clFbG">
-            <node concept="13iPFW" id="3meuf2b3vWJ" role="2Oq$k0" />
-            <node concept="3Tsc0h" id="3meuf2b3xzI" role="2OqNvi">
-              <ref role="3TtcxE" to="yv47:3meuf2b3h5o" resolve="selectors" />
-            </node>
+      <node concept="P$JXv" id="lJ6hiUK3oA" role="lGtFl">
+        <node concept="TZ5HA" id="lJ6hiUK3oB" role="TZ5H$">
+          <node concept="1dT_AC" id="lJ6hiUK3oC" role="1dT_Ay">
+            <property role="1dT_AB" value="compose the current expression with a enum literal" />
           </node>
+        </node>
+        <node concept="TUZQ0" id="lJ6hiUK3oD" role="3nqlJM">
+          <property role="TUZQ4" value=" " />
+          <node concept="zr_55" id="lJ6hiUK3oF" role="zr_5Q">
+            <ref role="zr_51" node="4L5R3LmDwOk" resolve="literal" />
+          </node>
+        </node>
+        <node concept="TUZQ0" id="lJ6hiUK3oG" role="3nqlJM">
+          <property role="TUZQ4" value=" " />
+          <node concept="zr_55" id="lJ6hiUK3oI" role="zr_5Q">
+            <ref role="zr_51" node="4L5R3LmDwOm" resolve="currExpression" />
+          </node>
+        </node>
+        <node concept="TUZQ0" id="lJ6hiUK3oJ" role="3nqlJM">
+          <property role="TUZQ4" value=" " />
+          <node concept="zr_55" id="lJ6hiUK3oL" role="zr_5Q">
+            <ref role="zr_51" node="4L5R3LmDwOo" resolve="ctx" />
+          </node>
+        </node>
+        <node concept="x79VA" id="lJ6hiUK3oM" role="3nqlJM">
+          <property role="x79VB" value=" " />
         </node>
       </node>
     </node>
@@ -10341,10 +10379,10 @@
       <node concept="3clFbS" id="4L5R3LmDzwk" role="3clF47">
         <node concept="3clFbJ" id="4L5R3LmDzwl" role="3cqZAp">
           <node concept="2OqwBi" id="4L5R3LmDzwm" role="3clFbw">
-            <node concept="2OqwBi" id="4L5R3LmDzwn" role="2Oq$k0">
-              <node concept="13iPFW" id="4L5R3LmDzwo" role="2Oq$k0" />
-              <node concept="2qgKlT" id="4L5R3LmD$IW" role="2OqNvi">
-                <ref role="37wK5l" node="4L5R3LmDye0" resolve="enumSelectors" />
+            <node concept="2OqwBi" id="lJ6hiUGofd" role="2Oq$k0">
+              <node concept="13iPFW" id="lJ6hiUGofe" role="2Oq$k0" />
+              <node concept="3Tsc0h" id="lJ6hiUGoff" role="2OqNvi">
+                <ref role="3TtcxE" to="yv47:3meuf2b3h5o" resolve="selectors" />
               </node>
             </node>
             <node concept="1v1jN8" id="4L5R3LmDzwq" role="2OqNvi" />
@@ -10390,10 +10428,10 @@
               </node>
               <node concept="2OqwBi" id="4L5R3LmDzwH" role="37wK5m">
                 <node concept="2OqwBi" id="4L5R3LmDzwI" role="2Oq$k0">
-                  <node concept="2OqwBi" id="4L5R3LmDzwJ" role="2Oq$k0">
-                    <node concept="13iPFW" id="4L5R3LmDzwK" role="2Oq$k0" />
-                    <node concept="2qgKlT" id="4L5R3LmD_3z" role="2OqNvi">
-                      <ref role="37wK5l" node="4L5R3LmDye0" resolve="enumSelectors" />
+                  <node concept="2OqwBi" id="lJ6hiUGofq" role="2Oq$k0">
+                    <node concept="13iPFW" id="lJ6hiUGofr" role="2Oq$k0" />
+                    <node concept="3Tsc0h" id="lJ6hiUGofs" role="2OqNvi">
+                      <ref role="3TtcxE" to="yv47:3meuf2b3h5o" resolve="selectors" />
                     </node>
                   </node>
                   <node concept="1uHKPH" id="4L5R3LmDzwM" role="2OqNvi" />
@@ -10413,10 +10451,10 @@
             </node>
             <node concept="2OqwBi" id="4L5R3LmDzwR" role="33vP2m">
               <node concept="2OqwBi" id="4L5R3LmDzwS" role="2Oq$k0">
-                <node concept="2OqwBi" id="4L5R3LmDzwT" role="2Oq$k0">
-                  <node concept="13iPFW" id="4L5R3LmDzwU" role="2Oq$k0" />
-                  <node concept="2qgKlT" id="4L5R3LmD_Lg" role="2OqNvi">
-                    <ref role="37wK5l" node="4L5R3LmDye0" resolve="enumSelectors" />
+                <node concept="2OqwBi" id="lJ6hiUGofB" role="2Oq$k0">
+                  <node concept="13iPFW" id="lJ6hiUGofC" role="2Oq$k0" />
+                  <node concept="3Tsc0h" id="lJ6hiUGofD" role="2OqNvi">
+                    <ref role="3TtcxE" to="yv47:3meuf2b3h5o" resolve="selectors" />
                   </node>
                 </node>
                 <node concept="2Wx4Xu" id="4L5R3LmDzwW" role="2OqNvi">
@@ -10425,10 +10463,10 @@
                       <property role="3cmrfH" value="1" />
                     </node>
                     <node concept="2OqwBi" id="4L5R3LmDzwZ" role="3uHU7B">
-                      <node concept="2OqwBi" id="4L5R3LmDzx0" role="2Oq$k0">
-                        <node concept="13iPFW" id="4L5R3LmDzx1" role="2Oq$k0" />
-                        <node concept="2qgKlT" id="4L5R3LmDAoO" role="2OqNvi">
-                          <ref role="37wK5l" node="4L5R3LmDye0" resolve="enumSelectors" />
+                      <node concept="2OqwBi" id="lJ6hiUGofO" role="2Oq$k0">
+                        <node concept="13iPFW" id="lJ6hiUGofP" role="2Oq$k0" />
+                        <node concept="3Tsc0h" id="lJ6hiUGofQ" role="2OqNvi">
+                          <ref role="3TtcxE" to="yv47:3meuf2b3h5o" resolve="selectors" />
                         </node>
                       </node>
                       <node concept="34oBXx" id="4L5R3LmDzx3" role="2OqNvi" />
@@ -10493,6 +10531,13 @@
         </node>
       </node>
       <node concept="3Tm1VV" id="4L5R3LmDzxo" role="1B3o_S" />
+      <node concept="P$JXv" id="lJ6hiUK45R" role="lGtFl">
+        <node concept="TZ5HA" id="lJ6hiUK45S" role="TZ5H$">
+          <node concept="1dT_AC" id="lJ6hiUK45T" role="1dT_Ay">
+            <property role="1dT_AB" value="Composes the enum literals of the selector into a equivalent logical expression based." />
+          </node>
+        </node>
+      </node>
     </node>
     <node concept="13i0hz" id="3wraVjnnEfa" role="13h7CS">
       <property role="2Ki8OM" value="false" />

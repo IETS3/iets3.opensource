@@ -1544,10 +1544,6 @@
       </node>
     </node>
   </node>
-  <node concept="1M2fIO" id="5ElkanPQwuW">
-    <property role="3GE5qa" value="enum" />
-    <ref role="1M2myG" to="yv47:5ElkanPQwmt" resolve="EnumIsTarget" />
-  </node>
   <node concept="1M2fIO" id="6vIMss7od46">
     <property role="3GE5qa" value="record" />
     <ref role="1M2myG" to="yv47:7D7uZV2dYyQ" resolve="RecordDeclaration" />
@@ -1814,10 +1810,6 @@
         </node>
       </node>
     </node>
-  </node>
-  <node concept="1M2fIO" id="6WstIz8MKEg">
-    <property role="3GE5qa" value="enum.oneof" />
-    <ref role="1M2myG" to="yv47:6WstIz8MK67" resolve="EnumIsInTarget" />
   </node>
   <node concept="1M2fIO" id="6itIYitoKoW">
     <property role="3GE5qa" value="record" />
@@ -2100,37 +2092,6 @@
         </node>
       </node>
     </node>
-  </node>
-  <node concept="1M2fIO" id="6NLFGgDtLlC">
-    <property role="3GE5qa" value="enum" />
-    <ref role="1M2myG" to="yv47:3WZ76l1FQSK" resolve="EnumIsNotTarget" />
-    <node concept="9S07l" id="6NLFGgDtLXv" role="9Vyp8">
-      <node concept="3clFbS" id="6NLFGgDtLXw" role="2VODD2">
-        <node concept="3clFbF" id="6NLFGgDtMb0" role="3cqZAp">
-          <node concept="2OqwBi" id="6NLFGgDtMb1" role="3clFbG">
-            <node concept="1PxgMI" id="6NLFGgDtMb2" role="2Oq$k0">
-              <node concept="nLn13" id="6NLFGgDtMb3" role="1m5AlR" />
-              <node concept="chp4Y" id="6NLFGgDtMb4" role="3oSUPX">
-                <ref role="cht4Q" to="hm2y:7NJy08a3O99" resolve="DotExpression" />
-              </node>
-            </node>
-            <node concept="2qgKlT" id="6NLFGgDtMb5" role="2OqNvi">
-              <ref role="37wK5l" to="pbu6:5WNmJ7DokMG" resolve="expectType" />
-              <node concept="35c_gC" id="6NLFGgDtMb6" role="37wK5m">
-                <ref role="35c_gD" to="yv47:67Y8mp$DN2V" resolve="EnumType" />
-              </node>
-              <node concept="3clFbT" id="6NLFGgDtMb7" role="37wK5m">
-                <property role="3clFbU" value="true" />
-              </node>
-            </node>
-          </node>
-        </node>
-      </node>
-    </node>
-  </node>
-  <node concept="1M2fIO" id="6NLFGgDxmoe">
-    <property role="3GE5qa" value="enum.oneof" />
-    <ref role="1M2myG" to="yv47:6NLFGgDxmkC" resolve="EnumIsNotInTarget" />
   </node>
   <node concept="1M2fIO" id="4L5R3LnUzsb">
     <property role="3GE5qa" value="enum.oneof" />
