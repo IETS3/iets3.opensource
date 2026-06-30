@@ -578,6 +578,9 @@
         <reference id="7061117989422577417" name="literal" index="5mhpJ" />
       </concept>
       <concept id="7782108600709718604" name="org.iets3.core.expr.toplevel.structure.ReferenceableFlag" flags="ng" index="nbNz6" />
+      <concept id="5496041071985417580" name="org.iets3.core.expr.toplevel.structure.AbstractEnumInTarget" flags="ng" index="qS05g">
+        <child id="3859154905223467352" name="selectors" index="2YwQAC" />
+      </concept>
       <concept id="7089558164906249676" name="org.iets3.core.expr.toplevel.structure.Constant" flags="ng" index="2zPypq" />
       <concept id="543569365051789113" name="org.iets3.core.expr.toplevel.structure.ConstantRef" flags="ng" index="_emDc">
         <reference id="543569365051789114" name="constant" index="_emDf" />
@@ -586,9 +589,7 @@
       <concept id="543569365052711055" name="org.iets3.core.expr.toplevel.structure.Library" flags="ng" index="_iOnV">
         <child id="543569365052711058" name="contents" index="_iOnC" />
       </concept>
-      <concept id="8006404979731136903" name="org.iets3.core.expr.toplevel.structure.EnumIsInTarget" flags="ng" index="2BPRtJ">
-        <child id="8006404979731136906" name="selectors" index="2BPRty" />
-      </concept>
+      <concept id="8006404979731136903" name="org.iets3.core.expr.toplevel.structure.EnumIsInTarget" flags="ng" index="2BPRtJ" />
       <concept id="8006404979731140557" name="org.iets3.core.expr.toplevel.structure.EnumIsInSelector" flags="ng" index="2BPR$_">
         <reference id="8006404979731140558" name="literal" index="2BPR$A" />
       </concept>
@@ -15362,10 +15363,10 @@
           <node concept="30bsCy" id="6NLFGgDBFmF" role="2lDidJ">
             <node concept="1QScDb" id="6NLFGgDBFmG" role="2lDidJ">
               <node concept="2BPRtJ" id="6NLFGgDBKsf" role="1QScD9">
-                <node concept="2BPR$_" id="6NLFGgDBKsi" role="2BPRty">
+                <node concept="2BPR$_" id="6NLFGgDBKsi" role="2YwQAC">
                   <ref role="2BPR$A" node="1bwJEEguiBk" resolve="GREEN" />
                 </node>
-                <node concept="2BPR$_" id="6NLFGgDBLOc" role="2BPRty">
+                <node concept="2BPR$_" id="6NLFGgDBLOc" role="2YwQAC">
                   <ref role="2BPR$A" node="1bwJEEguiBI" resolve="BLUE" />
                 </node>
               </node>

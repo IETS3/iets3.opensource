@@ -327,5 +327,88 @@
       </node>
     </node>
   </node>
+  <node concept="W$Crc" id="3meuf2b3h5p">
+    <property role="3GE5qa" value="refactoring" />
+    <property role="W$Cri" value="5" />
+    <property role="TrG5h" value="Update References: selectors-&gt;selectors" />
+    <node concept="1w76tK" id="3meuf2b3h5q" role="1w76sc">
+      <node concept="1w76tN" id="3meuf2b3h5r" role="1w76tQ">
+        <property role="1w76tO" value="moveNode.options.updateLocalInstances" />
+        <property role="1w7ld4" value="Update instances in current project" />
+      </node>
+      <node concept="1w76tN" id="3meuf2b3h5s" role="1w76tQ">
+        <property role="1w76tO" value="moveNode.options.updateModelImports" />
+        <property role="1w7ld4" value="Update model imports" />
+      </node>
+      <node concept="1w76tN" id="3meuf2b3h5t" role="1w76tQ">
+        <property role="1w76tO" value="moveNode.options.updateReferencesParticipant" />
+        <property role="1w7ld4" value="Update references" />
+      </node>
+      <node concept="1w76tN" id="3meuf2b3h5u" role="1w76tQ">
+        <property role="1w76tO" value="moveNode.options.writeMigrationScript" />
+        <property role="1w7ld4" value="Write migration script" />
+      </node>
+      <node concept="1w76tN" id="3meuf2b3h5v" role="1w76tQ">
+        <property role="1w76tO" value="moveNode.options.writeRefactoringLog" />
+        <property role="1w7ld4" value="Write refactoring log" />
+      </node>
+    </node>
+    <node concept="7amoh" id="3meuf2b3h5x" role="W$Crh">
+      <property role="hSBgo" value="moveNode.updateReferences" />
+      <node concept="2pBcaW" id="3meuf2b3h5m" role="hSBgu">
+        <property role="2pBcoG" value="8006404979731136906" />
+        <property role="2pBcow" value="r:da65683e-ff6f-430d-ab68-32a77df72c93(org.iets3.core.expr.toplevel.structure)" />
+        <property role="2pBc3U" value="selectors" />
+      </node>
+      <node concept="2pBcaW" id="3meuf2b3h5w" role="hSBgs">
+        <property role="2pBcoG" value="3859154905223467352" />
+        <property role="2pBcow" value="r:da65683e-ff6f-430d-ab68-32a77df72c93(org.iets3.core.expr.toplevel.structure)" />
+        <property role="2pBc3U" value="selectors" />
+      </node>
+    </node>
+  </node>
+  <node concept="Z5qvL" id="3meuf2b3h5y">
+    <property role="Z5qvQ" value="7" />
+    <property role="TrG5h" value="Migrate_MoveLinkUp_7" />
+    <property role="1AQGQl" value="Move link `selectors` to concept `AbstractEnumInTarget`" />
+    <node concept="Z4OXk" id="3meuf2b3h5H" role="Z5rET">
+      <node concept="2pBcaW" id="3meuf2b3h5F" role="Z5P1v">
+        <property role="2pBcoG" value="8006404979731136906" />
+        <property role="2pBcow" value="r:da65683e-ff6f-430d-ab68-32a77df72c93(org.iets3.core.expr.toplevel.structure)" />
+        <property role="2pBc3U" value="selectors_old" />
+      </node>
+      <node concept="2pBcaW" id="3meuf2b3h5G" role="Z5P1t">
+        <property role="2pBcoG" value="3859154905223467352" />
+        <property role="2pBcow" value="r:da65683e-ff6f-430d-ab68-32a77df72c93(org.iets3.core.expr.toplevel.structure)" />
+        <property role="2pBc3U" value="selectors" />
+      </node>
+      <node concept="7a1rN" id="3meuf2b3h5E" role="7agGg">
+        <node concept="HUanS" id="3meuf2b3h5$" role="HTpAE">
+          <property role="HUanP" value="selectors_old" />
+          <property role="HUanQ" value="1otu9p31t9ea2" />
+          <node concept="2x4n5u" id="3meuf2b3h5_" role="HUanR">
+            <property role="2x4mPI" value="EnumIsInTarget" />
+            <property role="2x4n5l" value="1otu9p31t9e9z" />
+            <node concept="2V$Bhx" id="3meuf2b3h5A" role="2x4n5j">
+              <property role="2V$B1T" value="71934284-d7d1-45ee-a054-8c072591085f" />
+              <property role="2V$B1Q" value="org.iets3.core.expr.toplevel" />
+            </node>
+          </node>
+        </node>
+        <node concept="HUanS" id="3meuf2b3h5B" role="HTpAD">
+          <property role="HUanP" value="selectors" />
+          <property role="HUanQ" value="tbis8oov56xk" />
+          <node concept="2x4n5u" id="3meuf2b3h5C" role="HUanR">
+            <property role="2x4mPI" value="AbstractEnumInTarget" />
+            <property role="2x4n5l" value="15r87ykkct5kc" />
+            <node concept="2V$Bhx" id="3meuf2b3h5D" role="2x4n5j">
+              <property role="2V$B1T" value="71934284-d7d1-45ee-a054-8c072591085f" />
+              <property role="2V$B1Q" value="org.iets3.core.expr.toplevel" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
 </model>
 

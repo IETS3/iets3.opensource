@@ -1203,9 +1203,12 @@
     <node concept="1TJgyj" id="6WstIz8MK6a" role="1TKVEi">
       <property role="IQ2ns" value="8006404979731136906" />
       <property role="20lmBu" value="fLJjDmT/aggregation" />
-      <property role="20kJfa" value="selectors" />
-      <property role="20lbJX" value="fLJekj6/_1__n" />
+      <property role="20kJfa" value="selectors_old" />
+      <property role="20lbJX" value="fLJekj5/_0__n" />
       <ref role="20lvS9" node="6WstIz8MKZd" resolve="EnumIsInSelector" />
+      <node concept="asaX9" id="3meuf2b3h5z" role="lGtFl">
+        <property role="YLQ7P" value="The link was moved to concept &quot;org.iets3.core.expr.toplevel.structure.AbstractEnumInTarget&quot;" />
+      </node>
     </node>
   </node>
   <node concept="1TIwiD" id="6WstIz8MKZd">
@@ -1349,6 +1352,13 @@
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="3meuf2aNc25" role="PzmwI">
       <ref role="PrY4T" to="hm2y:7NJy08a3O9a" resolve="IDotTarget" />
+    </node>
+    <node concept="1TJgyj" id="3meuf2b3h5o" role="1TKVEi">
+      <property role="IQ2ns" value="3859154905223467352" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="selectors" />
+      <property role="20lbJX" value="fLJekj6/_1__n" />
+      <ref role="20lvS9" node="6WstIz8MKZd" resolve="EnumIsInSelector" />
     </node>
   </node>
   <node concept="1TIwiD" id="3fg81r5z3u3">
