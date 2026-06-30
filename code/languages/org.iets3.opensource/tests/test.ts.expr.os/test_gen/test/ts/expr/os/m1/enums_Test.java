@@ -35,8 +35,8 @@ public class enums_Test extends BaseTransformationTest {
     new TestBody(this).test_NodeTypeSystemCheck6608002498680979531();
   }
   @Test
-  public void test_NodeTypeSystemCheck7850247783015091490() throws Throwable {
-    new TestBody(this).test_NodeTypeSystemCheck7850247783015091490();
+  public void test_NodeTypeSystemCheck3859154905230146769() throws Throwable {
+    new TestBody(this).test_NodeTypeSystemCheck3859154905230146769();
   }
   @Test
   public void test_NodeDuplicatedValueCheck7972706095413138971() throws Throwable {
@@ -92,10 +92,10 @@ public class enums_Test extends BaseTransformationTest {
         new CheckExpectedMessageRunnable.CheckExpectedTypesystemMessageRunnable(nodeToCheck, MessageStatus.ERROR, "", myProject.getRepository(), myProject.getPlatform()).run();
       });
     }
-    public void test_NodeTypeSystemCheck7850247783015091490() throws Exception {
+    public void test_NodeTypeSystemCheck3859154905230146769() throws Exception {
       initTestNodes();
       runWithinCommand(() -> {
-        SNode nodeToCheck = getNodeById("7850247783015091487");
+        SNode nodeToCheck = getNodeById("3859154905230146766");
         new CheckExpectedMessageRunnable.CheckExpectedTypesystemMessageRunnable(nodeToCheck, MessageStatus.ERROR, "", myProject.getRepository(), myProject.getPlatform()).run();
       });
     }

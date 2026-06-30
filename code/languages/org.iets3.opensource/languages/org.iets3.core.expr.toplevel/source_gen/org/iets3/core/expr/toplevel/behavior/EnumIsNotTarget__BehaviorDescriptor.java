@@ -9,10 +9,10 @@ import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
 import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
-import org.jetbrains.mps.openapi.model.SNode;
 import java.util.List;
 import java.util.Arrays;
 import org.jetbrains.annotations.NotNull;
+import org.jetbrains.mps.openapi.model.SNode;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
 import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
@@ -25,18 +25,14 @@ public final class EnumIsNotTarget__BehaviorDescriptor extends BaseBHDescriptor 
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getConcept(0x71934284d7d145eeL, 0xa0548c072591085fL, 0x3f3f1c6541af6e30L, "org.iets3.core.expr.toplevel.structure.EnumIsNotTarget");
 
   public static final SMethod<String> renderReadable_id6kR0qIbI2yi = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("renderReadable").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(7293299957844945042L).languageId(0xb66a309a6e1a7290L, 0xcfaa4966b7d54b69L).build2();
-  public static final SMethod<SNode> literal_id3fg81r5z3uD = new SMethodBuilder<SNode>(new SJavaCompoundTypeImpl((Class<SNode>) ((Class) Object.class))).name("literal").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(3733519373265811369L).languageId(0xa0548c072591085fL, 0x71934284d7d145eeL).build2();
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(renderReadable_id6kR0qIbI2yi, literal_id3fg81r5z3uD);
+  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(renderReadable_id6kR0qIbI2yi);
 
   private static void ___init___(@NotNull SNode __thisNode__) {
   }
 
   /*package*/ static String renderReadable_id6kR0qIbI2yi(@NotNull SNode __thisNode__) {
-    return "is not(" + SPropertyOperations.getString(SLinkOperations.getTarget(__thisNode__, LINKS.literal$KvuX), PROPS.name$MnvL) + ")";
-  }
-  /*package*/ static SNode literal_id3fg81r5z3uD(@NotNull SNode __thisNode__) {
-    return SLinkOperations.getTarget(__thisNode__, LINKS.literal$KvuX);
+    return "is not(" + SPropertyOperations.getString(SLinkOperations.getTarget(__thisNode__, LINKS.literal$7Jlb), PROPS.name$MnvL) + ")";
   }
 
   /*package*/ EnumIsNotTarget__BehaviorDescriptor() {
@@ -56,8 +52,6 @@ public final class EnumIsNotTarget__BehaviorDescriptor extends BaseBHDescriptor 
     switch (methodIndex) {
       case 0:
         return (T) ((String) renderReadable_id6kR0qIbI2yi(node));
-      case 1:
-        return (T) ((SNode) literal_id3fg81r5z3uD(node));
       default:
         throw new BHMethodNotFoundException(this, method);
     }
@@ -88,7 +82,7 @@ public final class EnumIsNotTarget__BehaviorDescriptor extends BaseBHDescriptor 
   }
 
   private static final class LINKS {
-    /*package*/ static final SReferenceLink literal$KvuX = MetaAdapterFactory.getReferenceLink(0x71934284d7d145eeL, 0xa0548c072591085fL, 0x3f3f1c6541af6e30L, 0x3f3f1c6541af6e32L, "literal");
+    /*package*/ static final SReferenceLink literal$7Jlb = MetaAdapterFactory.getReferenceLink(0x71934284d7d145eeL, 0xa0548c072591085fL, 0x33d02016c58c3783L, 0x358e78f08aec038fL, "literal");
   }
 
   private static final class PROPS {

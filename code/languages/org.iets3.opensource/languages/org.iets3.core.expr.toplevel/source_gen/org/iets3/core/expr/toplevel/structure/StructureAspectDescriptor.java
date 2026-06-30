@@ -286,15 +286,19 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
   private static ConceptDescriptor createDescriptorForAbstractEnumInTarget() {
     ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("org.iets3.core.expr.toplevel", "AbstractEnumInTarget", 0x71934284d7d145eeL, 0xa0548c072591085fL, 0x4c45dc3c56a5dd6cL);
     b.class_(false, true, false);
+    b.parent(0xcfaa4966b7d54b69L, 0xb66a309a6e1a7290L, 0x7cef88020a0f424aL);
     b.origin("r:da65683e-ff6f-430d-ab68-32a77df72c93(org.iets3.core.expr.toplevel.structure)/5496041071985417580");
     b.version(3);
+    b.aggregate("selectors", 0x358e78f08b0d1158L).target(0x71934284d7d145eeL, 0xa0548c072591085fL, 0x6f1c76e8c8cb0fcdL).optional(false).ordered(true).multiple(true).origin("3859154905223467352").done();
     return b.create();
   }
   private static ConceptDescriptor createDescriptorForAbstractEnumSingleInTarget() {
     ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("org.iets3.core.expr.toplevel", "AbstractEnumSingleInTarget", 0x71934284d7d145eeL, 0xa0548c072591085fL, 0x33d02016c58c3783L);
-    b.class_(false, false, false);
+    b.class_(false, true, false);
+    b.parent(0xcfaa4966b7d54b69L, 0xb66a309a6e1a7290L, 0x7cef88020a0f424aL);
     b.origin("r:da65683e-ff6f-430d-ab68-32a77df72c93(org.iets3.core.expr.toplevel.structure)/3733519373265811331");
     b.version(3);
+    b.associate("literal", 0x358e78f08aec038fL).target(0x71934284d7d145eeL, 0xa0548c072591085fL, 0x61fe216664a72ed1L).optional(false).origin("3859154905221301135").done();
     return b.create();
   }
   private static ConceptDescriptor createDescriptorForAbstractEnumSortOrder() {
@@ -469,10 +473,9 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.class_(false, false, false);
     // extends: org.iets3.core.expr.toplevel.structure.AbstractEnumInTarget
     b.super_(0x71934284d7d145eeL, 0xa0548c072591085fL, 0x4c45dc3c56a5dd6cL);
-    b.parent(0xcfaa4966b7d54b69L, 0xb66a309a6e1a7290L, 0x7cef88020a0f424aL);
     b.origin("r:da65683e-ff6f-430d-ab68-32a77df72c93(org.iets3.core.expr.toplevel.structure)/8006404979731136903");
     b.version(3);
-    b.aggregate("selectors", 0x6f1c76e8c8cb018aL).target(0x71934284d7d145eeL, 0xa0548c072591085fL, 0x6f1c76e8c8cb0fcdL).optional(false).ordered(true).multiple(true).origin("8006404979731136906").done();
+    b.aggregate("selectors_old", 0x6f1c76e8c8cb018aL).target(0x71934284d7d145eeL, 0xa0548c072591085fL, 0x6f1c76e8c8cb0fcdL).optional(true).ordered(true).multiple(true).origin("8006404979731136906").done();
     b.alias("isIn");
     return b.create();
   }
@@ -481,10 +484,8 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.class_(false, false, false);
     // extends: org.iets3.core.expr.toplevel.structure.AbstractEnumInTarget
     b.super_(0x71934284d7d145eeL, 0xa0548c072591085fL, 0x4c45dc3c56a5dd6cL);
-    b.parent(0xcfaa4966b7d54b69L, 0xb66a309a6e1a7290L, 0x7cef88020a0f424aL);
     b.origin("r:da65683e-ff6f-430d-ab68-32a77df72c93(org.iets3.core.expr.toplevel.structure)/7850247783016916264");
     b.version(3);
-    b.aggregate("selectors", 0x6cf1aec42985652aL).target(0x71934284d7d145eeL, 0xa0548c072591085fL, 0x6f1c76e8c8cb0fcdL).optional(false).ordered(true).multiple(true).origin("7850247783016916266").done();
     b.alias("isNotIn");
     return b.create();
   }
@@ -493,10 +494,8 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.class_(false, false, false);
     // extends: org.iets3.core.expr.toplevel.structure.AbstractEnumSingleInTarget
     b.super_(0x71934284d7d145eeL, 0xa0548c072591085fL, 0x33d02016c58c3783L);
-    b.parent(0xcfaa4966b7d54b69L, 0xb66a309a6e1a7290L, 0x7cef88020a0f424aL);
     b.origin("r:da65683e-ff6f-430d-ab68-32a77df72c93(org.iets3.core.expr.toplevel.structure)/4557392569141521968");
     b.version(3);
-    b.associate("literal", 0x3f3f1c6541af6e32L).target(0x71934284d7d145eeL, 0xa0548c072591085fL, 0x61fe216664a72ed1L).optional(false).origin("4557392569141521970").done();
     b.alias("isNot");
     return b.create();
   }
@@ -505,10 +504,9 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.class_(false, false, false);
     // extends: org.iets3.core.expr.toplevel.structure.AbstractEnumSingleInTarget
     b.super_(0x71934284d7d145eeL, 0xa0548c072591085fL, 0x33d02016c58c3783L);
-    b.parent(0xcfaa4966b7d54b69L, 0xb66a309a6e1a7290L, 0x7cef88020a0f424aL);
     b.origin("r:da65683e-ff6f-430d-ab68-32a77df72c93(org.iets3.core.expr.toplevel.structure)/6527211908667934109");
     b.version(3);
-    b.associate("literal", 0x5a9550a5f5e318deL).target(0x71934284d7d145eeL, 0xa0548c072591085fL, 0x61fe216664a72ed1L).optional(false).origin("6527211908668528862").done();
+    b.associate("literal_old", 0x5a9550a5f5e318deL).target(0x71934284d7d145eeL, 0xa0548c072591085fL, 0x61fe216664a72ed1L).optional(true).origin("6527211908668528862").done();
     b.alias("is");
     return b.create();
   }

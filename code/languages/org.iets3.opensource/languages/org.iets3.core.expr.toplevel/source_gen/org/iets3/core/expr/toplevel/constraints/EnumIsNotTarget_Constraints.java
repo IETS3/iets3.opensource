@@ -8,25 +8,12 @@ import jetbrains.mps.smodel.runtime.ConstraintContext_CanBeChild;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.smodel.runtime.CheckingNodeContext;
-import java.util.Map;
-import org.jetbrains.mps.openapi.language.SReferenceLink;
-import jetbrains.mps.smodel.runtime.ReferenceConstraintsDescriptor;
-import jetbrains.mps.smodel.runtime.base.BaseReferenceConstraintsDescriptor;
-import jetbrains.mps.smodel.runtime.ReferenceScopeProvider;
-import jetbrains.mps.smodel.runtime.base.BaseScopeProvider;
-import org.jetbrains.mps.openapi.model.SNodeReference;
-import jetbrains.mps.smodel.SNodePointer;
-import jetbrains.mps.scope.Scope;
-import jetbrains.mps.smodel.runtime.ReferenceConstraintsContext;
-import jetbrains.mps.scope.ListScope;
-import org.iets3.core.expr.toplevel.behavior.EnumDeclaration__BehaviorDescriptor;
-import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
-import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
-import org.iets3.core.expr.base.behavior.DotExpression__BehaviorDescriptor;
-import java.util.HashMap;
 import org.jetbrains.mps.openapi.model.SNode;
 import org.jetbrains.mps.openapi.language.SAbstractConcept;
 import org.jetbrains.mps.openapi.language.SContainmentLink;
+import org.iets3.core.expr.base.behavior.DotExpression__BehaviorDescriptor;
+import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
+import jetbrains.mps.smodel.SNodePointer;
 import org.jetbrains.mps.openapi.language.SConcept;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 
@@ -50,28 +37,6 @@ public class EnumIsNotTarget_Constraints extends BaseConstraintsDescriptor {
       }
     };
   }
-  @Override
-  protected Map<SReferenceLink, ReferenceConstraintsDescriptor> getSpecifiedReferences() {
-    BaseReferenceConstraintsDescriptor d0 = new BaseReferenceConstraintsDescriptor(LINKS.literal$KvuX, this, true, false) {
-      @Nullable
-      @Override
-      public ReferenceScopeProvider getScopeProvider() {
-        return new BaseScopeProvider() {
-          @Override
-          public SNodeReference getSearchScopeValidatorNode() {
-            return new SNodePointer("r:dfbbc430-47fe-4054-9d32-72c481150c72(org.iets3.core.expr.toplevel.constraints)", "7850247783015989974");
-          }
-          @Override
-          public Scope createScope(final ReferenceConstraintsContext _context) {
-            return ListScope.forResolvableElements(EnumDeclaration__BehaviorDescriptor.effectiveLiterals_idolugnm0Egc.invoke(SLinkOperations.getTarget(SNodeOperations.cast(DotExpression__BehaviorDescriptor.extractContextBaseType_id5WNmJ7Ez2mW.invoke(SNodeOperations.cast((((_context.getReferenceNode() == null) ? _context.getContextNode() : SNodeOperations.getParent(_context.getReferenceNode()))), CONCEPTS.DotExpression$jp)), CONCEPTS.EnumType$z), LINKS.enum$2YBB)));
-          }
-        };
-      }
-    };
-    Map<SReferenceLink, ReferenceConstraintsDescriptor> references = new HashMap<SReferenceLink, ReferenceConstraintsDescriptor>();
-    references.put(d0.getReference(), d0);
-    return references;
-  }
   private static boolean staticCanBeAChild(SNode node, SNode parentNode, SAbstractConcept childConcept, SContainmentLink link) {
     return (boolean) DotExpression__BehaviorDescriptor.expectType_id5WNmJ7DokMG.invoke(SNodeOperations.cast(parentNode, CONCEPTS.DotExpression$jp), CONCEPTS.EnumType$z, ((boolean) true));
   }
@@ -81,10 +46,5 @@ public class EnumIsNotTarget_Constraints extends BaseConstraintsDescriptor {
     /*package*/ static final SConcept EnumIsNotTarget$32 = MetaAdapterFactory.getConcept(0x71934284d7d145eeL, 0xa0548c072591085fL, 0x3f3f1c6541af6e30L, "org.iets3.core.expr.toplevel.structure.EnumIsNotTarget");
     /*package*/ static final SConcept DotExpression$jp = MetaAdapterFactory.getConcept(0xcfaa4966b7d54b69L, 0xb66a309a6e1a7290L, 0x7cef88020a0f4249L, "org.iets3.core.expr.base.structure.DotExpression");
     /*package*/ static final SConcept EnumType$z = MetaAdapterFactory.getConcept(0x71934284d7d145eeL, 0xa0548c072591085fL, 0x61fe216664a730bbL, "org.iets3.core.expr.toplevel.structure.EnumType");
-  }
-
-  private static final class LINKS {
-    /*package*/ static final SReferenceLink literal$KvuX = MetaAdapterFactory.getReferenceLink(0x71934284d7d145eeL, 0xa0548c072591085fL, 0x3f3f1c6541af6e30L, 0x3f3f1c6541af6e32L, "literal");
-    /*package*/ static final SReferenceLink enum$2YBB = MetaAdapterFactory.getReferenceLink(0x71934284d7d145eeL, 0xa0548c072591085fL, 0x61fe216664a730bbL, 0x61fe216664a730f3L, "enum");
   }
 }

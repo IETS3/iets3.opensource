@@ -919,7 +919,7 @@ public class InterpreterExprToplevelInterpreter extends InterpreterBase {
           coverage.visitedConcept(this.concept);
           coverage.visitedConcept(SNodeOperations.getConcept(node));
           final Object ctx = MapSequence.fromMap(context.getEnvironment()).get(SLinkOperations.getTarget(SNodeOperations.cast(SNodeOperations.getParent(node), CONCEPTS.DotExpression$jp), LINKS.expr$CW3E));
-          boolean ret = ListSequence.fromList(SLinkOperations.getChildren(node, LINKS.selectors$9mRD)).any((it) -> ctx == EnumLiteral.getInstance(SLinkOperations.getTarget(it, LINKS.literal$XL8B), context, coverage, ((_FunctionTypes._return_P0_E0<ComputationTrace>) () -> {
+          boolean ret = ListSequence.fromList(SLinkOperations.getChildren(node, LINKS.selectors$Hqrd)).any((it) -> ctx == EnumLiteral.getInstance(SLinkOperations.getTarget(it, LINKS.literal$XL8B), context, coverage, ((_FunctionTypes._return_P0_E0<ComputationTrace>) () -> {
             if (trace != null) {
               return trace;
             } else {
@@ -927,7 +927,7 @@ public class InterpreterExprToplevelInterpreter extends InterpreterBase {
             }
           }).invoke()));
           if (ret) {
-            ListSequence.fromList(SLinkOperations.getChildren(node, LINKS.selectors$9mRD)).visitAll((it) -> coverage.coverValue(it, null));
+            ListSequence.fromList(SLinkOperations.getChildren(node, LINKS.selectors$Hqrd)).visitAll((it) -> coverage.coverValue(it, null));
           }
           return ret;
         } catch (StopAndReturnException stop) {
@@ -959,7 +959,7 @@ public class InterpreterExprToplevelInterpreter extends InterpreterBase {
           coverage.visitedConcept(this.concept);
           coverage.visitedConcept(SNodeOperations.getConcept(node));
           final Object ctx = MapSequence.fromMap(context.getEnvironment()).get(SLinkOperations.getTarget(SNodeOperations.cast(SNodeOperations.getParent(node), CONCEPTS.DotExpression$jp), LINKS.expr$CW3E));
-          boolean ret = ListSequence.fromList(SLinkOperations.getChildren(node, LINKS.selectors$qdJC)).all((it) -> ctx != EnumLiteral.getInstance(SLinkOperations.getTarget(it, LINKS.literal$XL8B), context, coverage, ((_FunctionTypes._return_P0_E0<ComputationTrace>) () -> {
+          boolean ret = ListSequence.fromList(SLinkOperations.getChildren(node, LINKS.selectors$Hqrd)).all((it) -> ctx != EnumLiteral.getInstance(SLinkOperations.getTarget(it, LINKS.literal$XL8B), context, coverage, ((_FunctionTypes._return_P0_E0<ComputationTrace>) () -> {
             if (trace != null) {
               return trace;
             } else {
@@ -967,7 +967,7 @@ public class InterpreterExprToplevelInterpreter extends InterpreterBase {
             }
           }).invoke()));
           if (ret) {
-            ListSequence.fromList(SLinkOperations.getChildren(node, LINKS.selectors$qdJC)).visitAll((it) -> coverage.coverValue(it, null));
+            ListSequence.fromList(SLinkOperations.getChildren(node, LINKS.selectors$Hqrd)).visitAll((it) -> coverage.coverValue(it, null));
           }
           return ret;
         } catch (StopAndReturnException stop) {
@@ -1038,7 +1038,7 @@ public class InterpreterExprToplevelInterpreter extends InterpreterBase {
           coverage.visitedConcept(this.concept);
           coverage.visitedConcept(SNodeOperations.getConcept(node));
           Object ctx = MapSequence.fromMap(context.getEnvironment()).get(SLinkOperations.getTarget(SNodeOperations.cast(SNodeOperations.getParent(node), CONCEPTS.DotExpression$jp), LINKS.expr$CW3E));
-          return ctx == EnumLiteral.getInstance(SLinkOperations.getTarget(node, LINKS.literal$lbzw), context, coverage, ((_FunctionTypes._return_P0_E0<ComputationTrace>) () -> {
+          return ctx == EnumLiteral.getInstance(SLinkOperations.getTarget(node, LINKS.literal$7Jlb), context, coverage, ((_FunctionTypes._return_P0_E0<ComputationTrace>) () -> {
             if (trace != null) {
               return trace;
             } else {
@@ -1074,7 +1074,7 @@ public class InterpreterExprToplevelInterpreter extends InterpreterBase {
           coverage.visitedConcept(this.concept);
           coverage.visitedConcept(SNodeOperations.getConcept(node));
           Object ctx = MapSequence.fromMap(context.getEnvironment()).get(SLinkOperations.getTarget(SNodeOperations.cast(SNodeOperations.getParent(node), CONCEPTS.DotExpression$jp), LINKS.expr$CW3E));
-          return ctx != EnumLiteral.getInstance(SLinkOperations.getTarget(node, LINKS.literal$KvuX), context, coverage, ((_FunctionTypes._return_P0_E0<ComputationTrace>) () -> {
+          return ctx != EnumLiteral.getInstance(SLinkOperations.getTarget(node, LINKS.literal$7Jlb), context, coverage, ((_FunctionTypes._return_P0_E0<ComputationTrace>) () -> {
             if (trace != null) {
               return trace;
             } else {
@@ -1175,13 +1175,11 @@ public class InterpreterExprToplevelInterpreter extends InterpreterBase {
     /*package*/ static final SContainmentLink args$hM$s = MetaAdapterFactory.getContainmentLink(0x71934284d7d145eeL, 0xa0548c072591085fL, 0x27b717d14a8f82d7L, 0x27b717d14a903157L, "args");
     /*package*/ static final SReferenceLink extFun$udGR = MetaAdapterFactory.getReferenceLink(0x71934284d7d145eeL, 0xa0548c072591085fL, 0x27b717d14a8f82d7L, 0x27b717d14a8f82e8L, "extFun");
     /*package*/ static final SContainmentLink args$XOIh = MetaAdapterFactory.getContainmentLink(0x9464fa065ab9409bL, 0x927464ab29588457L, 0x427ce523083b8a2fL, 0x427ce523083b8a3fL, "args");
-    /*package*/ static final SContainmentLink selectors$9mRD = MetaAdapterFactory.getContainmentLink(0x71934284d7d145eeL, 0xa0548c072591085fL, 0x6f1c76e8c8cb0187L, 0x6f1c76e8c8cb018aL, "selectors");
+    /*package*/ static final SContainmentLink selectors$Hqrd = MetaAdapterFactory.getContainmentLink(0x71934284d7d145eeL, 0xa0548c072591085fL, 0x4c45dc3c56a5dd6cL, 0x358e78f08b0d1158L, "selectors");
     /*package*/ static final SReferenceLink literal$XL8B = MetaAdapterFactory.getReferenceLink(0x71934284d7d145eeL, 0xa0548c072591085fL, 0x6f1c76e8c8cb0fcdL, 0x6f1c76e8c8cb0fceL, "literal");
-    /*package*/ static final SContainmentLink selectors$qdJC = MetaAdapterFactory.getContainmentLink(0x71934284d7d145eeL, 0xa0548c072591085fL, 0x6cf1aec429856528L, 0x6cf1aec42985652aL, "selectors");
     /*package*/ static final SContainmentLink enumType$fTEX = MetaAdapterFactory.getContainmentLink(0x71934284d7d145eeL, 0xa0548c072591085fL, 0x28e06ca064d916e8L, 0x28e06ca064d91ca1L, "enumType");
     /*package*/ static final SReferenceLink enum$2YBB = MetaAdapterFactory.getReferenceLink(0x71934284d7d145eeL, 0xa0548c072591085fL, 0x61fe216664a730bbL, 0x61fe216664a730f3L, "enum");
     /*package*/ static final SContainmentLink literals$K_NE = MetaAdapterFactory.getContainmentLink(0x71934284d7d145eeL, 0xa0548c072591085fL, 0x61fe216664a72eaeL, 0x61fe216664a72ef4L, "literals");
-    /*package*/ static final SReferenceLink literal$lbzw = MetaAdapterFactory.getReferenceLink(0x71934284d7d145eeL, 0xa0548c072591085fL, 0x5a9550a5f5da059dL, 0x5a9550a5f5e318deL, "literal");
-    /*package*/ static final SReferenceLink literal$KvuX = MetaAdapterFactory.getReferenceLink(0x71934284d7d145eeL, 0xa0548c072591085fL, 0x3f3f1c6541af6e30L, 0x3f3f1c6541af6e32L, "literal");
+    /*package*/ static final SReferenceLink literal$7Jlb = MetaAdapterFactory.getReferenceLink(0x71934284d7d145eeL, 0xa0548c072591085fL, 0x33d02016c58c3783L, 0x358e78f08aec038fL, "literal");
   }
 }

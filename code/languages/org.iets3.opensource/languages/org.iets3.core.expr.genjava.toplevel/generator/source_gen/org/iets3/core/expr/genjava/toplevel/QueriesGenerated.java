@@ -19,7 +19,6 @@ import org.jetbrains.mps.openapi.model.SNode;
 import jetbrains.mps.internal.collections.runtime.Sequence;
 import jetbrains.mps.baseLanguage.behavior.ClassConcept__BehaviorDescriptor;
 import org.iets3.core.expr.toplevel.behavior.IRecordType__BehaviorDescriptor;
-import org.iets3.core.expr.toplevel.behavior.AbstractEnumSingleInTarget__BehaviorDescriptor;
 import jetbrains.mps.generator.template.IfMacroContext;
 import org.iets3.core.expr.toplevel.behavior.IRecordDeclaration__BehaviorDescriptor;
 import jetbrains.mps.generator.template.SourceSubstituteMacroNodeContext;
@@ -290,10 +289,10 @@ public class QueriesGenerated extends QueryProviderBase {
     return _context.getOutputNodeByInputNodeAndMappingLabel(SLinkOperations.getTarget(_context.getNode(), LINKS.literal$llO8), "EnumConstant");
   }
   public static Object referenceMacro_GetReferent_1_19(final ReferenceMacroContext _context) {
-    return SPropertyOperations.getString(SNodeOperations.cast(_context.getOriginalCopiedInputNode(SNodeOperations.getParent(AbstractEnumSingleInTarget__BehaviorDescriptor.literal_id3fg81r5z3uD.invoke(SNodeOperations.cast(SLinkOperations.getTarget(_context.getNode(), LINKS.target$u23F), CONCEPTS.AbstractEnumSingleInTarget$JO)))), CONCEPTS.EnumDeclaration$3b), PROPS.name$MnvL);
+    return SPropertyOperations.getString(SNodeOperations.cast(_context.getOriginalCopiedInputNode(SNodeOperations.getParent(SLinkOperations.getTarget(SNodeOperations.cast(SLinkOperations.getTarget(_context.getNode(), LINKS.target$u23F), CONCEPTS.AbstractEnumSingleInTarget$JO), LINKS.literal$7Jlb))), CONCEPTS.EnumDeclaration$3b), PROPS.name$MnvL);
   }
   public static Object referenceMacro_GetReferent_1_20(final ReferenceMacroContext _context) {
-    return SPropertyOperations.getString(AbstractEnumSingleInTarget__BehaviorDescriptor.literal_id3fg81r5z3uD.invoke(SNodeOperations.cast(SLinkOperations.getTarget(_context.getNode(), LINKS.target$u23F), CONCEPTS.AbstractEnumSingleInTarget$JO)), PROPS.name$MnvL);
+    return SPropertyOperations.getString(SLinkOperations.getTarget(SNodeOperations.cast(SLinkOperations.getTarget(_context.getNode(), LINKS.target$u23F), CONCEPTS.AbstractEnumSingleInTarget$JO), LINKS.literal$7Jlb), PROPS.name$MnvL);
   }
   public static Object referenceMacro_GetReferent_1_21(final ReferenceMacroContext _context) {
     return "it";
@@ -317,7 +316,7 @@ public class QueriesGenerated extends QueryProviderBase {
     return _context.getOutputNodeByInputNodeAndMappingLabel(SLinkOperations.getTarget(_context.getNode(), LINKS.member$d1yc), "Getter");
   }
   public static Object referenceMacro_GetReferent_3_1(final ReferenceMacroContext _context) {
-    return SPropertyOperations.getString(AbstractEnumSingleInTarget__BehaviorDescriptor.literal_id3fg81r5z3uD.invoke(_context.getNode()), PROPS.name$MnvL);
+    return SPropertyOperations.getString(SLinkOperations.getTarget(_context.getNode(), LINKS.literal$7Jlb), PROPS.name$MnvL);
   }
   public static Object referenceMacro_GetReferent_4_0(final ReferenceMacroContext _context) {
     return "set" + SPropertyOperations.getString(SLinkOperations.getTarget(_context.getNode(), LINKS.member$6757), PROPS.name$MnvL);
@@ -1893,6 +1892,7 @@ public class QueriesGenerated extends QueryProviderBase {
     /*package*/ static final SContainmentLink type$MFr_ = MetaAdapterFactory.getContainmentLink(0x71934284d7d145eeL, 0xa0548c072591085fL, 0x465d5f01132db232L, 0x465d5f01132db23cL, "type");
     /*package*/ static final SReferenceLink fun$DJ6H = MetaAdapterFactory.getReferenceLink(0x9464fa065ab9409bL, 0x927464ab29588457L, 0x427ce5230845606aL, 0x427ce5230845606bL, "fun");
     /*package*/ static final SReferenceLink literal$llO8 = MetaAdapterFactory.getReferenceLink(0x71934284d7d145eeL, 0xa0548c072591085fL, 0x61fe216664a736c5L, 0x61fe216664a73709L, "literal");
+    /*package*/ static final SReferenceLink literal$7Jlb = MetaAdapterFactory.getReferenceLink(0x71934284d7d145eeL, 0xa0548c072591085fL, 0x33d02016c58c3783L, 0x358e78f08aec038fL, "literal");
     /*package*/ static final SReferenceLink enum$2YBB = MetaAdapterFactory.getReferenceLink(0x71934284d7d145eeL, 0xa0548c072591085fL, 0x61fe216664a730bbL, 0x61fe216664a730f3L, "enum");
     /*package*/ static final SContainmentLink literals$K_NE = MetaAdapterFactory.getContainmentLink(0x71934284d7d145eeL, 0xa0548c072591085fL, 0x61fe216664a72eaeL, 0x61fe216664a72ef4L, "literals");
     /*package*/ static final SReferenceLink member$d1yc = MetaAdapterFactory.getReferenceLink(0xf3eafff030d246d6L, 0x9150f0f3b880ce27L, 0x6c71b19f6f13ea6fL, 0x6c71b19f6f13ea72L, "member");

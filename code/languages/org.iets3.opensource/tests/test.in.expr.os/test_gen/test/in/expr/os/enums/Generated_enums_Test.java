@@ -87,19 +87,19 @@ public class Generated_enums_Test {
   }
   @Test
   public void IsOneOf_item1_3952549543412669701() throws Throwable {
-    Assert.assertEquals("Expected: " + (false) + ", but was: " + (((_FunctionTypes._return_P0_E0<Boolean>) () -> {
+    Assert.assertEquals("Expected: " + (false) + ", but was: " + ((((_FunctionTypes._return_P0_E0<Boolean>) () -> {
       Boolean b = (Generated_enums_Test.ocean_ == Color.blue);
       if (Generated_enums_Test.ocean_ == null) {
         return null;
       }
       return !(b);
-    }).invoke()), (Object) false, (Object) ((_FunctionTypes._return_P0_E0<Boolean>) () -> {
+    }).invoke())), (Object) false, (Object) (((_FunctionTypes._return_P0_E0<Boolean>) () -> {
       Boolean b = (Generated_enums_Test.ocean_ == Color.blue);
       if (Generated_enums_Test.ocean_ == null) {
         return null;
       }
       return !(b);
-    }).invoke());
+    }).invoke()));
   }
   @Test
   public void IsOneOf_item2_8006404979732444652() throws Throwable {

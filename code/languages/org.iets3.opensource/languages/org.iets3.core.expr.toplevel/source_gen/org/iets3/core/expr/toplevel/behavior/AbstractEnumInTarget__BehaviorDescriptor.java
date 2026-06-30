@@ -13,24 +13,24 @@ import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import java.util.List;
 import java.util.Arrays;
 import org.jetbrains.annotations.NotNull;
-import jetbrains.mps.internal.collections.runtime.ListSequence;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
+import jetbrains.mps.internal.collections.runtime.ListSequence;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
 import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 import jetbrains.mps.smodel.builder.SNodeBuilder;
-import org.jetbrains.mps.openapi.language.SConcept;
-import org.jetbrains.mps.openapi.language.SInterfaceConcept;
 import org.jetbrains.mps.openapi.language.SContainmentLink;
 import org.jetbrains.mps.openapi.language.SReferenceLink;
+import org.jetbrains.mps.openapi.language.SConcept;
+import org.jetbrains.mps.openapi.language.SInterfaceConcept;
 
 public final class AbstractEnumInTarget__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getConcept(0x71934284d7d145eeL, 0xa0548c072591085fL, 0x4c45dc3c56a5dd6cL, "org.iets3.core.expr.toplevel.structure.AbstractEnumInTarget");
 
   public static final SMethod<SNode> singleOp_id3wraVjnnC5i = new SMethodBuilder<SNode>(new SJavaCompoundTypeImpl((Class<SNode>) ((Class) Object.class))).name("singleOp").modifiers(12, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(4042873146202554706L).languageId(0xa0548c072591085fL, 0x71934284d7d145eeL).build2(SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""));
   public static final SMethod<SNode> compose_id4L5R3LmDwOh = new SMethodBuilder<SNode>(new SJavaCompoundTypeImpl((Class<SNode>) ((Class) Object.class))).name("compose").modifiers(12, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5496041071985429777L).languageId(0xa0548c072591085fL, 0x71934284d7d145eeL).build2(SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""), SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""), SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""));
-  public static final SMethod<List<SNode>> enumSelectors_id4L5R3LmDye0 = new SMethodBuilder<List<SNode>>(new SJavaCompoundTypeImpl((Class<List<SNode>>) ((Class) Object.class))).name("enumSelectors").modifiers(12, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5496041071985435520L).languageId(0xa0548c072591085fL, 0x71934284d7d145eeL).build2();
+  public static final SMethod<List<SNode>> enumSelectors_id4L5R3LmDye0 = new SMethodBuilder<List<SNode>>(new SJavaCompoundTypeImpl((Class<List<SNode>>) ((Class) Object.class))).name("enumSelectors").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5496041071985435520L).languageId(0xa0548c072591085fL, 0x71934284d7d145eeL).build2();
   public static final SMethod<SNode> reduce_id4L5R3LmDzwi = new SMethodBuilder<SNode>(new SJavaCompoundTypeImpl((Class<SNode>) ((Class) Object.class))).name("reduce").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5496041071985440786L).languageId(0xa0548c072591085fL, 0x71934284d7d145eeL).build2();
   public static final SMethod<SNode> single_id3wraVjnnEfa = new SMethodBuilder<SNode>(new SJavaCompoundTypeImpl((Class<SNode>) ((Class) Object.class))).name("single").modifiers(0, AccessPrivileges.PROTECTED).concept(CONCEPT).baseMethodId(4042873146202563530L).languageId(0xa0548c072591085fL, 0x71934284d7d145eeL).build2(SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""), SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""));
 
@@ -39,6 +39,9 @@ public final class AbstractEnumInTarget__BehaviorDescriptor extends BaseBHDescri
   private static void ___init___(@NotNull SNode __thisNode__) {
   }
 
+  /*package*/ static List<SNode> enumSelectors_id4L5R3LmDye0(@NotNull SNode __thisNode__) {
+    return SLinkOperations.getChildren(__thisNode__, LINKS.selectors$Hqrd);
+  }
   /*package*/ static SNode reduce_id4L5R3LmDzwi(@NotNull final SNode __thisNode__) {
     if (ListSequence.fromList(AbstractEnumInTarget__BehaviorDescriptor.enumSelectors_id4L5R3LmDye0.invoke(__thisNode__)).isEmpty()) {
       return null;
@@ -68,6 +71,8 @@ public final class AbstractEnumInTarget__BehaviorDescriptor extends BaseBHDescri
       throw new BHMethodNotFoundException(this, method);
     }
     switch (methodIndex) {
+      case 2:
+        return (T) ((List<SNode>) enumSelectors_id4L5R3LmDye0(node));
       case 3:
         return (T) ((SNode) reduce_id4L5R3LmDzwi(node));
       case 4:
@@ -112,16 +117,17 @@ public final class AbstractEnumInTarget__BehaviorDescriptor extends BaseBHDescri
     return n0.getResult();
   }
 
+  private static final class LINKS {
+    /*package*/ static final SContainmentLink selectors$Hqrd = MetaAdapterFactory.getContainmentLink(0x71934284d7d145eeL, 0xa0548c072591085fL, 0x4c45dc3c56a5dd6cL, 0x358e78f08b0d1158L, "selectors");
+    /*package*/ static final SContainmentLink expr$CW3E = MetaAdapterFactory.getContainmentLink(0xcfaa4966b7d54b69L, 0xb66a309a6e1a7290L, 0x3b256bb6ae8048d8L, 0x3b256bb6ae8048d9L, "expr");
+    /*package*/ static final SReferenceLink literal$XL8B = MetaAdapterFactory.getReferenceLink(0x71934284d7d145eeL, 0xa0548c072591085fL, 0x6f1c76e8c8cb0fcdL, 0x6f1c76e8c8cb0fceL, "literal");
+    /*package*/ static final SContainmentLink target$u23F = MetaAdapterFactory.getContainmentLink(0xcfaa4966b7d54b69L, 0xb66a309a6e1a7290L, 0x7cef88020a0f4249L, 0x7cef88020a0f424bL, "target");
+  }
+
   private static final class CONCEPTS {
     /*package*/ static final SConcept DotExpression$jp = MetaAdapterFactory.getConcept(0xcfaa4966b7d54b69L, 0xb66a309a6e1a7290L, 0x7cef88020a0f4249L, "org.iets3.core.expr.base.structure.DotExpression");
     /*package*/ static final SConcept ParensExpression$Tv = MetaAdapterFactory.getConcept(0xcfaa4966b7d54b69L, 0xb66a309a6e1a7290L, 0x46ff3b3d86d2f11fL, "org.iets3.core.expr.base.structure.ParensExpression");
     /*package*/ static final SConcept Expression$D_ = MetaAdapterFactory.getConcept(0xcfaa4966b7d54b69L, 0xb66a309a6e1a7290L, 0x670d5e92f854a047L, "org.iets3.core.expr.base.structure.Expression");
     /*package*/ static final SInterfaceConcept IDotTarget$jS = MetaAdapterFactory.getInterfaceConcept(0xcfaa4966b7d54b69L, 0xb66a309a6e1a7290L, 0x7cef88020a0f424aL, "org.iets3.core.expr.base.structure.IDotTarget");
-  }
-
-  private static final class LINKS {
-    /*package*/ static final SContainmentLink expr$CW3E = MetaAdapterFactory.getContainmentLink(0xcfaa4966b7d54b69L, 0xb66a309a6e1a7290L, 0x3b256bb6ae8048d8L, 0x3b256bb6ae8048d9L, "expr");
-    /*package*/ static final SReferenceLink literal$XL8B = MetaAdapterFactory.getReferenceLink(0x71934284d7d145eeL, 0xa0548c072591085fL, 0x6f1c76e8c8cb0fcdL, 0x6f1c76e8c8cb0fceL, "literal");
-    /*package*/ static final SContainmentLink target$u23F = MetaAdapterFactory.getContainmentLink(0xcfaa4966b7d54b69L, 0xb66a309a6e1a7290L, 0x7cef88020a0f4249L, 0x7cef88020a0f424bL, "target");
   }
 }
