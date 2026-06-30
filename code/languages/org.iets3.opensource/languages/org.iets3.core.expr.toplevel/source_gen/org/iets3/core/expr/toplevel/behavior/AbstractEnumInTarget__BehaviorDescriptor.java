@@ -13,8 +13,8 @@ import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import java.util.List;
 import java.util.Arrays;
 import org.jetbrains.annotations.NotNull;
-import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
 import jetbrains.mps.internal.collections.runtime.ListSequence;
+import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
 import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
@@ -30,30 +30,26 @@ public final class AbstractEnumInTarget__BehaviorDescriptor extends BaseBHDescri
 
   public static final SMethod<SNode> singleOp_id3wraVjnnC5i = new SMethodBuilder<SNode>(new SJavaCompoundTypeImpl((Class<SNode>) ((Class) Object.class))).name("singleOp").modifiers(12, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(4042873146202554706L).languageId(0xa0548c072591085fL, 0x71934284d7d145eeL).build2(SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""));
   public static final SMethod<SNode> compose_id4L5R3LmDwOh = new SMethodBuilder<SNode>(new SJavaCompoundTypeImpl((Class<SNode>) ((Class) Object.class))).name("compose").modifiers(12, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5496041071985429777L).languageId(0xa0548c072591085fL, 0x71934284d7d145eeL).build2(SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""), SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""), SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""));
-  public static final SMethod<List<SNode>> enumSelectors_id4L5R3LmDye0 = new SMethodBuilder<List<SNode>>(new SJavaCompoundTypeImpl((Class<List<SNode>>) ((Class) Object.class))).name("enumSelectors").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5496041071985435520L).languageId(0xa0548c072591085fL, 0x71934284d7d145eeL).build2();
   public static final SMethod<SNode> reduce_id4L5R3LmDzwi = new SMethodBuilder<SNode>(new SJavaCompoundTypeImpl((Class<SNode>) ((Class) Object.class))).name("reduce").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5496041071985440786L).languageId(0xa0548c072591085fL, 0x71934284d7d145eeL).build2();
   public static final SMethod<SNode> single_id3wraVjnnEfa = new SMethodBuilder<SNode>(new SJavaCompoundTypeImpl((Class<SNode>) ((Class) Object.class))).name("single").modifiers(0, AccessPrivileges.PROTECTED).concept(CONCEPT).baseMethodId(4042873146202563530L).languageId(0xa0548c072591085fL, 0x71934284d7d145eeL).build2(SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""), SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""));
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(singleOp_id3wraVjnnC5i, compose_id4L5R3LmDwOh, enumSelectors_id4L5R3LmDye0, reduce_id4L5R3LmDzwi, single_id3wraVjnnEfa);
+  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(singleOp_id3wraVjnnC5i, compose_id4L5R3LmDwOh, reduce_id4L5R3LmDzwi, single_id3wraVjnnEfa);
 
   private static void ___init___(@NotNull SNode __thisNode__) {
   }
 
-  /*package*/ static List<SNode> enumSelectors_id4L5R3LmDye0(@NotNull SNode __thisNode__) {
-    return SLinkOperations.getChildren(__thisNode__, LINKS.selectors$Hqrd);
-  }
   /*package*/ static SNode reduce_id4L5R3LmDzwi(@NotNull final SNode __thisNode__) {
-    if (ListSequence.fromList(AbstractEnumInTarget__BehaviorDescriptor.enumSelectors_id4L5R3LmDye0.invoke(__thisNode__)).isEmpty()) {
+    if (ListSequence.fromList(SLinkOperations.getChildren(__thisNode__, LINKS.selectors$Hqrd)).isEmpty()) {
       return null;
     }
     final SNode ctx = SLinkOperations.getTarget(SNodeOperations.cast(SNodeOperations.getParent(__thisNode__), CONCEPTS.DotExpression$jp), LINKS.expr$CW3E);
-    SNode start = AbstractEnumInTarget__BehaviorDescriptor.single_id3wraVjnnEfa.invoke(__thisNode__, ctx, SLinkOperations.getTarget(ListSequence.fromList(AbstractEnumInTarget__BehaviorDescriptor.enumSelectors_id4L5R3LmDye0.invoke(__thisNode__)).first(), LINKS.literal$XL8B));
-    SNode logicalExpr = ListSequence.fromList(AbstractEnumInTarget__BehaviorDescriptor.enumSelectors_id4L5R3LmDye0.invoke(__thisNode__)).tail(ListSequence.fromList(AbstractEnumInTarget__BehaviorDescriptor.enumSelectors_id4L5R3LmDye0.invoke(__thisNode__)).count() - 1).foldLeft(start, (s, it) -> AbstractEnumInTarget__BehaviorDescriptor.compose_id4L5R3LmDwOh.invoke(__thisNode__, SLinkOperations.getTarget(it, LINKS.literal$XL8B), s, ctx));
+    SNode start = AbstractEnumInTarget__BehaviorDescriptor.single_id3wraVjnnEfa.invoke(__thisNode__, ctx, SLinkOperations.getTarget(ListSequence.fromList(SLinkOperations.getChildren(__thisNode__, LINKS.selectors$Hqrd)).first(), LINKS.literal$XL8B));
+    SNode logicalExpr = ListSequence.fromList(SLinkOperations.getChildren(__thisNode__, LINKS.selectors$Hqrd)).tail(ListSequence.fromList(SLinkOperations.getChildren(__thisNode__, LINKS.selectors$Hqrd)).count() - 1).foldLeft(start, (s, it) -> AbstractEnumInTarget__BehaviorDescriptor.compose_id4L5R3LmDwOh.invoke(__thisNode__, SLinkOperations.getTarget(it, LINKS.literal$XL8B), s, ctx));
 
-    return createParensExpression_30sz0_a5a3(logicalExpr);
+    return createParensExpression_30sz0_a5a2(logicalExpr);
   }
   /*package*/ static SNode single_id3wraVjnnEfa(@NotNull SNode __thisNode__, SNode ctx, SNode lit) {
-    return createDotExpression_30sz0_a0a4(SNodeOperations.copyNode(ctx), AbstractEnumInTarget__BehaviorDescriptor.singleOp_id3wraVjnnC5i.invoke(__thisNode__, lit));
+    return createDotExpression_30sz0_a0a3(SNodeOperations.copyNode(ctx), AbstractEnumInTarget__BehaviorDescriptor.singleOp_id3wraVjnnC5i.invoke(__thisNode__, lit));
   }
 
   /*package*/ AbstractEnumInTarget__BehaviorDescriptor() {
@@ -72,10 +68,8 @@ public final class AbstractEnumInTarget__BehaviorDescriptor extends BaseBHDescri
     }
     switch (methodIndex) {
       case 2:
-        return (T) ((List<SNode>) enumSelectors_id4L5R3LmDye0(node));
-      case 3:
         return (T) ((SNode) reduce_id4L5R3LmDzwi(node));
-      case 4:
+      case 3:
         return (T) ((SNode) single_id3wraVjnnEfa(node, (SNode) parameters[0], (SNode) parameters[1]));
       default:
         throw new BHMethodNotFoundException(this, method);
@@ -105,12 +99,12 @@ public final class AbstractEnumInTarget__BehaviorDescriptor extends BaseBHDescri
   public SAbstractConcept getConcept() {
     return CONCEPT;
   }
-  private static SNode createParensExpression_30sz0_a5a3(SNode p0) {
+  private static SNode createParensExpression_30sz0_a5a2(SNode p0) {
     SNodeBuilder n0 = new SNodeBuilder().init(CONCEPTS.ParensExpression$Tv);
     n0.forChild(LINKS.expr$CW3E).initNode(p0, CONCEPTS.Expression$D_, true);
     return n0.getResult();
   }
-  private static SNode createDotExpression_30sz0_a0a4(SNode p0, SNode p1) {
+  private static SNode createDotExpression_30sz0_a0a3(SNode p0, SNode p1) {
     SNodeBuilder n0 = new SNodeBuilder().init(CONCEPTS.DotExpression$jp);
     n0.forChild(LINKS.expr$CW3E).initNode(p0, CONCEPTS.Expression$D_, true);
     n0.forChild(LINKS.target$u23F).initNode(p1, CONCEPTS.IDotTarget$jS, true);
