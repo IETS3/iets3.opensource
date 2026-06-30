@@ -150,7 +150,7 @@
     <module reference="9464fa06-5ab9-409b-9274-64ab29588457(org.iets3.core.expr.lambda)" version="5" />
     <module reference="f3eafff0-30d2-46d6-9150-f0f3b880ce27(org.iets3.core.expr.path)" version="0" />
     <module reference="6b277d9a-d52d-416f-a209-1919bd737f50(org.iets3.core.expr.simpleTypes)" version="9" />
-    <module reference="71934284-d7d1-45ee-a054-8c072591085f(org.iets3.core.expr.toplevel)" version="4" />
+    <module reference="71934284-d7d1-45ee-a054-8c072591085f(org.iets3.core.expr.toplevel)" version="6" />
     <module reference="5d6c0572-ccc8-4389-af81-29bf43d3db42(org.iets3.util)" version="0" />
     <module reference="f0883503-8eaa-4bc8-8846-eb63220ab1dd(org.iets3.variability.artifacts.base)" version="18" />
     <module reference="c6ff3b3b-aff6-455e-9637-7955ccbfec22(org.iets3.variability.artifacts.vanguard)" version="0" />
