@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<language namespace="org.iets3.core.expr.toplevel" uuid="71934284-d7d1-45ee-a054-8c072591085f" languageVersion="6" moduleVersion="4">
+<language namespace="org.iets3.core.expr.toplevel" uuid="71934284-d7d1-45ee-a054-8c072591085f" languageVersion="7" moduleVersion="5">
   <models>
     <modelRoot type="default" contentPath="${module}">
       <sourceRoot location="models" />
@@ -139,7 +139,7 @@
     <module reference="f3eafff0-30d2-46d6-9150-f0f3b880ce27(org.iets3.core.expr.path)" version="0" />
     <module reference="6b277d9a-d52d-416f-a209-1919bd737f50(org.iets3.core.expr.simpleTypes)" version="9" />
     <module reference="52a8c4c0-f4b0-4243-bf00-9dfac3472876(org.iets3.core.expr.simpleTypes.runtime)" version="0" />
-    <module reference="71934284-d7d1-45ee-a054-8c072591085f(org.iets3.core.expr.toplevel)" version="4" />
+    <module reference="71934284-d7d1-45ee-a054-8c072591085f(org.iets3.core.expr.toplevel)" version="5" />
   </dependencyVersions>
   <extendedLanguages>
     <extendedLanguage>2f7e2e35-6e74-4c43-9fa5-2465d68f5996(org.iets3.core.expr.collections)</extendedLanguage>

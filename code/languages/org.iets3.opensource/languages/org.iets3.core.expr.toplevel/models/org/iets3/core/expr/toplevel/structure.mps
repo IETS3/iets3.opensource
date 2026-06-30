@@ -801,9 +801,11 @@
     <ref role="1TJDcQ" node="3fg81r5z3u3" resolve="AbstractEnumSingleInTarget" />
     <node concept="1TJgyj" id="5ElkanPSLzu" role="1TKVEi">
       <property role="IQ2ns" value="6527211908668528862" />
-      <property role="20kJfa" value="literal" />
-      <property role="20lbJX" value="fLJekj4/_1" />
+      <property role="20kJfa" value="literal_old" />
       <ref role="20lvS9" node="67Y8mp$DMVh" resolve="EnumLiteral" />
+      <node concept="asaX9" id="3meuf2aV0eq" role="lGtFl">
+        <property role="YLQ7P" value="The link was moved to concept &quot;org.iets3.core.expr.toplevel.structure.AbstractEnumSingleInTarget&quot;" />
+      </node>
     </node>
   </node>
   <node concept="1TIwiD" id="ub9nkyK62f">
@@ -1322,12 +1324,6 @@
     <property role="EcuMT" value="4557392569141521968" />
     <property role="2eQzMB" value="71934284-d7d1-45ee-a054-8c072591085f" />
     <ref role="1TJDcQ" node="3fg81r5z3u3" resolve="AbstractEnumSingleInTarget" />
-    <node concept="1TJgyj" id="3WZ76l1FQSM" role="1TKVEi">
-      <property role="20kJfa" value="literal" />
-      <property role="20lbJX" value="fLJekj4/_1" />
-      <property role="IQ2ns" value="4557392569141521970" />
-      <ref role="20lvS9" node="67Y8mp$DMVh" resolve="EnumLiteral" />
-    </node>
   </node>
   <node concept="1TIwiD" id="6NLFGgDxmkC">
     <property role="TrG5h" value="EnumIsNotInTarget" />
@@ -1363,6 +1359,12 @@
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="3meuf2aRmCC" role="PzmwI">
       <ref role="PrY4T" to="hm2y:7NJy08a3O9a" resolve="IDotTarget" />
+    </node>
+    <node concept="1TJgyj" id="3meuf2aV0ef" role="1TKVEi">
+      <property role="IQ2ns" value="3859154905221301135" />
+      <property role="20kJfa" value="literal" />
+      <property role="20lbJX" value="fLJekj4/_1" />
+      <ref role="20lvS9" node="67Y8mp$DMVh" resolve="EnumLiteral" />
     </node>
   </node>
 </model>

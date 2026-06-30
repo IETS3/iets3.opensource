@@ -271,9 +271,7 @@
       <concept id="543569365052711055" name="org.iets3.core.expr.toplevel.structure.Library" flags="ng" index="_iOnV">
         <child id="543569365052711058" name="contents" index="_iOnC" />
       </concept>
-      <concept id="6527211908667934109" name="org.iets3.core.expr.toplevel.structure.EnumIsTarget" flags="ng" index="2JjPkS">
-        <reference id="6527211908668528862" name="literal" index="2Jt$xV" />
-      </concept>
+      <concept id="6527211908667934109" name="org.iets3.core.expr.toplevel.structure.EnumIsTarget" flags="ng" index="2JjPkS" />
       <concept id="3315773615451992747" name="org.iets3.core.expr.toplevel.structure.TypedefContractValExpr" flags="ng" index="QCKKy" />
       <concept id="8811147530085329320" name="org.iets3.core.expr.toplevel.structure.RecordLiteral" flags="ng" index="2S399m">
         <child id="8811147530085329323" name="memberValues" index="2S399l" />
@@ -315,6 +313,9 @@
       </concept>
       <concept id="1249392911699110107" name="org.iets3.core.expr.toplevel.structure.RecordChangeTarget" flags="ng" index="3vStjw">
         <child id="1249392911699129399" name="setters" index="3vSgwc" />
+      </concept>
+      <concept id="3733519373265811331" name="org.iets3.core.expr.toplevel.structure.AbstractEnumSingleInTarget" flags="ng" index="3Qn1ul">
+        <reference id="3859154905221301135" name="literal" index="2ZoBHZ" />
       </concept>
       <concept id="7740953487936183912" name="org.iets3.core.expr.toplevel.structure.Typedef" flags="ng" index="1WbbD7">
         <child id="7740953487936183915" name="originalType" index="1WbbD4" />
@@ -966,7 +967,7 @@
                   <node concept="3izI60" id="5ipapt3EfHn" role="2lDidJ">
                     <node concept="1QScDb" id="5ipapt3EfHo" role="2lDidJ">
                       <node concept="2JjPkS" id="5ipapt3EfHp" role="1QScD9">
-                        <ref role="2Jt$xV" node="5ipapt3EfET" resolve="male" />
+                        <ref role="2ZoBHZ" node="5ipapt3EfET" resolve="male" />
                       </node>
                       <node concept="1QScDb" id="5ipapt3EfHq" role="2lDidJ">
                         <node concept="3o_JK" id="5ipapt3EfHr" role="1QScD9">
