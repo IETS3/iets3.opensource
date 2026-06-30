@@ -7457,24 +7457,6 @@
       </node>
       <node concept="17QB3L" id="5ElkanPSL$c" role="3clF45" />
     </node>
-    <node concept="13i0hz" id="3fg81r5zcvu" role="13h7CS">
-      <property role="TrG5h" value="literal" />
-      <ref role="13i0hy" node="3fg81r5z3uD" resolve="literal" />
-      <node concept="3Tm1VV" id="3fg81r5zcvv" role="1B3o_S" />
-      <node concept="3clFbS" id="3fg81r5zcvy" role="3clF47">
-        <node concept="3clFbF" id="3fg81r5zcwY" role="3cqZAp">
-          <node concept="2OqwBi" id="3fg81r5zcKF" role="3clFbG">
-            <node concept="13iPFW" id="3fg81r5zcwX" role="2Oq$k0" />
-            <node concept="3TrEf2" id="3fg81r5zf4n" role="2OqNvi">
-              <ref role="3Tt5mk" to="yv47:3meuf2aV0ef" resolve="literal" />
-            </node>
-          </node>
-        </node>
-      </node>
-      <node concept="3Tqbb2" id="3fg81r5zcvz" role="3clF45">
-        <ref role="ehGHo" to="yv47:67Y8mp$DMVh" resolve="EnumLiteral" />
-      </node>
-    </node>
   </node>
   <node concept="13h7C7" id="5VEHrQcTAZU">
     <ref role="13h7C2" to="yv47:ub9nkyK62f" resolve="Library" />
@@ -10142,24 +10124,6 @@
         </node>
       </node>
     </node>
-    <node concept="13i0hz" id="3fg81r5zfKH" role="13h7CS">
-      <property role="TrG5h" value="literal" />
-      <ref role="13i0hy" node="3fg81r5z3uD" resolve="literal" />
-      <node concept="3Tm1VV" id="3fg81r5zfKI" role="1B3o_S" />
-      <node concept="3clFbS" id="3fg81r5zfKL" role="3clF47">
-        <node concept="3clFbF" id="3fg81r5zfMd" role="3cqZAp">
-          <node concept="2OqwBi" id="3fg81r5zg1U" role="3clFbG">
-            <node concept="13iPFW" id="3fg81r5zfMc" role="2Oq$k0" />
-            <node concept="3TrEf2" id="3fg81r5zgI0" role="2OqNvi">
-              <ref role="3Tt5mk" to="yv47:3meuf2aV0ef" />
-            </node>
-          </node>
-        </node>
-      </node>
-      <node concept="3Tqbb2" id="3fg81r5zfKM" role="3clF45">
-        <ref role="ehGHo" to="yv47:67Y8mp$DMVh" resolve="EnumLiteral" />
-      </node>
-    </node>
   </node>
   <node concept="13h7C7" id="6NLFGgDxml3">
     <property role="3GE5qa" value="enum.oneof" />
@@ -10620,16 +10584,6 @@
   <node concept="13h7C7" id="3fg81r5z3u4">
     <property role="3GE5qa" value="enum" />
     <ref role="13h7C2" to="yv47:3fg81r5z3u3" resolve="AbstractEnumSingleInTarget" />
-    <node concept="13i0hz" id="3fg81r5z3uD" role="13h7CS">
-      <property role="TrG5h" value="literal" />
-      <property role="13i0it" value="true" />
-      <property role="13i0iv" value="true" />
-      <node concept="3Tm1VV" id="3fg81r5z3uE" role="1B3o_S" />
-      <node concept="3Tqbb2" id="3fg81r5z41Y" role="3clF45">
-        <ref role="ehGHo" to="yv47:67Y8mp$DMVh" resolve="EnumLiteral" />
-      </node>
-      <node concept="3clFbS" id="3fg81r5z3uG" role="3clF47" />
-    </node>
     <node concept="13hLZK" id="3fg81r5z3u5" role="13h7CW">
       <node concept="3clFbS" id="3fg81r5z3u6" role="2VODD2" />
     </node>
