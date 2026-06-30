@@ -2163,7 +2163,7 @@
     <property role="3GE5qa" value="enum" />
     <ref role="1M2myG" to="yv47:3fg81r5z3u3" resolve="AbstractEnumSingleInTarget" />
     <node concept="1N5Pfh" id="5ElkanPSMF3" role="1Mr941">
-      <ref role="1N5Vy1" to="yv47:3meuf2aV0ef" />
+      <ref role="1N5Vy1" to="yv47:3meuf2aV0ef" resolve="literal" />
       <node concept="3dgokm" id="5ElkanPSMTF" role="1N6uqs">
         <node concept="3clFbS" id="1F1F0IUZBh$" role="2VODD2">
           <node concept="3clFbF" id="1F1F0IUZBh_" role="3cqZAp">
@@ -2201,7 +2201,7 @@
                     </node>
                   </node>
                   <node concept="3TrEf2" id="1F1F0IUZBlu" role="2OqNvi">
-                    <ref role="3Tt5mk" to="yv47:67Y8mp$DN3N" />
+                    <ref role="3Tt5mk" to="yv47:67Y8mp$DN3N" resolve="enum" />
                   </node>
                 </node>
                 <node concept="2qgKlT" id="olugnm0T$S" role="2OqNvi">
