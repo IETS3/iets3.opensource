@@ -642,9 +642,7 @@
       <concept id="7740953487933794886" name="org.iets3.core.expr.toplevel.structure.SectionMarker" flags="ng" index="1Ws0TD">
         <property id="7740953487933876080" name="label" index="1WsWdv" />
       </concept>
-      <concept id="4557392569141521968" name="org.iets3.core.expr.toplevel.structure.EnumIsNotTarget" flags="ng" index="1Y$79l">
-        <reference id="4557392569141521970" name="literal" index="1Y$79n" />
-      </concept>
+      <concept id="4557392569141521968" name="org.iets3.core.expr.toplevel.structure.EnumIsNotTarget" flags="ng" index="1Y$79l" />
     </language>
     <language id="64e79176-30a1-4836-821c-bf62ff6c6091" name="org.iets3.core.expr.natlang">
       <concept id="1693890388431451161" name="org.iets3.core.expr.natlang.structure.NatLangCallSyntax" flags="ng" index="1Xp_Lc">
@@ -12212,17 +12210,17 @@
         <node concept="2zPypq" id="6NLFGgDqoOt" role="_iOnC">
           <property role="TrG5h" value="isSomeOceanBlue3" />
           <node concept="2vmvy5" id="6NLFGgDqoOu" role="2zM23F" />
-          <node concept="1QScDb" id="6NLFGgDqoOv" role="2lDidJ">
-            <node concept="1Y$79l" id="6NLFGgDqp7g" role="1QScD9">
-              <ref role="1Y$79n" node="3gKGtj9bXy5" resolve="red" />
+          <node concept="1QScDb" id="3meuf2bsJNe" role="2lDidJ">
+            <node concept="7CXmI" id="3meuf2bsJNg" role="lGtFl">
+              <node concept="2DdRWr" id="3meuf2bsJNh" role="7EUXB" />
             </node>
-            <node concept="7CXmI" id="6NLFGgDqoOx" role="lGtFl">
-              <node concept="2DdRWr" id="6NLFGgDqoOy" role="7EUXB" />
-            </node>
-            <node concept="2nD44o" id="6NLFGgDqoOz" role="2lDidJ">
-              <node concept="_emDc" id="6NLFGgDqoO$" role="2lDidJ">
+            <node concept="2nD44o" id="3meuf2bsJNi" role="2lDidJ">
+              <node concept="_emDc" id="3meuf2bsJNj" role="2lDidJ">
                 <ref role="_emDf" node="3gKGtj9bXyd" resolve="ocean" />
               </node>
+            </node>
+            <node concept="1Y$79l" id="3meuf2bsJVL" role="1QScD9">
+              <ref role="2ZoBHZ" node="3gKGtj9bXy7" resolve="blue" />
             </node>
           </node>
         </node>
