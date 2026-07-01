@@ -43,11 +43,11 @@ import java.util.Objects;
 import org.iets3.variability.featuremodel.base.behavior.ICanBeCheckStateInitalized__BehaviorDescriptor;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SEnumOperations;
 import com.mbeddr.mpsutil.grammarcells.runtime.StringOrSequenceQuery;
+import org.iets3.variability.featuremodel.base.behavior.FeatureTreeNode__BehaviorDescriptor;
+import org.iets3.variability.featuremodel.base.behavior.AbstractFeature__BehaviorDescriptor;
 import com.mbeddr.mpsutil.grammarcells.runtime.MultiTextActionItem;
 import com.mbeddr.mpsutil.grammarcells.runtime.EditorHierachyCache;
-import org.iets3.variability.featuremodel.base.behavior.FeatureTreeNode__BehaviorDescriptor;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations;
-import org.iets3.variability.featuremodel.base.behavior.AbstractFeature__BehaviorDescriptor;
 import jetbrains.mps.smodel.action.SNodeFactoryOperations;
 import jetbrains.mps.openapi.editor.cells.SubstituteAction;
 import jetbrains.mps.smodel.IOperationContext;
@@ -291,7 +291,8 @@ public class GrammarActionsDescriptor extends AbstractGrammarActionDescriptor im
               }.query();
               final boolean isApplicable = new Object() {
                 public boolean query() {
-                  return TopPartFeatureUtil.isApplicable(SNodeOperations.cast(_context.getNode(), CONCEPTS.Feature$D7));
+                  SNode node = SNodeOperations.cast(_context.getNode(), CONCEPTS.Feature$D7);
+                  return !((boolean) FeatureTreeNode__BehaviorDescriptor.isRoot_id7Nu9WvXvoDo.invoke(node)) && Sequence.fromIterable(AbstractFeature__BehaviorDescriptor.subFeatures_id6GZHy357BW_.invoke(node)).isEmpty() && (SLinkOperations.getTarget(node, LINKS.cardinality$EsDt) == null);
                 }
               }.query();
 
@@ -302,7 +303,7 @@ public class GrammarActionsDescriptor extends AbstractGrammarActionDescriptor im
                     doSubstitute(pattern);
                   }
                   public SNode doSubstitute(@NotNull String pattern) {
-                    return TopPartFeatureUtil.execute(SNodeOperations.cast(_context.getNode(), CONCEPTS.FeatureTreeNode$HV));
+                    return TopPartFeatureUtil2.featureModelIncludeTransform(_context);
                   }
 
                   @Override
@@ -439,7 +440,8 @@ public class GrammarActionsDescriptor extends AbstractGrammarActionDescriptor im
               }.query();
               final boolean isApplicable = new Object() {
                 public boolean query() {
-                  return TopPartFeatureUtil.isApplicable(SNodeOperations.cast(_context.getNode(), CONCEPTS.Feature$D7));
+                  SNode node = SNodeOperations.cast(_context.getNode(), CONCEPTS.Feature$D7);
+                  return !((boolean) FeatureTreeNode__BehaviorDescriptor.isRoot_id7Nu9WvXvoDo.invoke(node)) && Sequence.fromIterable(AbstractFeature__BehaviorDescriptor.subFeatures_id6GZHy357BW_.invoke(node)).isEmpty();
                 }
               }.query();
 
@@ -450,7 +452,7 @@ public class GrammarActionsDescriptor extends AbstractGrammarActionDescriptor im
                     doSubstitute(pattern);
                   }
                   public SNode doSubstitute(@NotNull String pattern) {
-                    return TopPartFeatureUtil.execute(SNodeOperations.cast(_context.getNode(), CONCEPTS.FeatureTreeNode$HV));
+                    return TopPartFeatureUtil2.featureModelIncludeTransform(_context);
                   }
 
                   @Override

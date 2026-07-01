@@ -10,6 +10,58 @@
   <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123157:jetbrains.mps.baseLanguage.structure.Statement" />
   <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1070462154015:jetbrains.mps.baseLanguage.structure.StaticFieldDeclaration" />
   <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1070475587102:jetbrains.mps.baseLanguage.structure.SuperConstructorInvocation" />
+  <root nodeRef="r:d6bc629b-7e76-4d7c-b56d-ed7cc0573909(test.org.iets3.variability.featuremodel.base.editor@tests)/1934342229914392691">
+    <file name="NewChildIsFeature_Test.java">
+      <node id="1934342229914392691" at="21,35,22,60" concept="9" />
+      <node id="1934342229914392691" at="26,57,27,36" concept="2" />
+      <node id="1934342229914392691" at="32,52,33,19" concept="9" />
+      <node id="1934342229914392691" at="37,51,38,72" concept="2" />
+      <node id="1934342229914397826" at="38,72,39,86" concept="2" />
+      <node id="1934342229914392691" at="18,0,20,0" concept="8" trace="ourParametersCacheExtension" />
+      <node id="1934342229914392691" at="21,0,24,0" concept="1" trace="NewChildIsFeature_Test#()V" />
+      <node id="1934342229914392691" at="32,0,35,0" concept="1" trace="TestBody#(Ljetbrains/mps/lang/test/runtime/TransformationTest;)V" />
+      <node id="1934342229914392691" at="25,0,29,0" concept="4" trace="test_NewChildIsFeature#()V" />
+      <node id="1934342229914392691" at="36,0,41,0" concept="4" trace="testMethodImpl#()V" />
+      <scope id="1934342229914392691" at="21,35,22,60" />
+      <scope id="1934342229914392691" at="26,57,27,36" />
+      <scope id="1934342229914392691" at="32,52,33,19" />
+      <scope id="1934342229914392691" at="37,51,39,86" />
+      <scope id="1934342229914392691" at="21,0,24,0" />
+      <scope id="1934342229914392691" at="32,0,35,0">
+        <var name="owner" id="1934342229914392691" />
+      </scope>
+      <scope id="1934342229914392691" at="25,0,29,0" />
+      <scope id="1934342229914392691" at="36,0,41,0" />
+      <unit id="1934342229914392691" at="30,0,42,0" name="test.org.iets3.variability.featuremodel.base.editor.NewChildIsFeature_Test$TestBody" />
+      <unit id="1934342229914392691" at="16,0,43,0" name="test.org.iets3.variability.featuremodel.base.editor.NewChildIsFeature_Test" />
+    </file>
+  </root>
+  <root nodeRef="r:d6bc629b-7e76-4d7c-b56d-ed7cc0573909(test.org.iets3.variability.featuremodel.base.editor@tests)/1934342229918873897">
+    <file name="NewSiblingIsFeature_Test.java">
+      <node id="1934342229918873897" at="21,37,22,60" concept="9" />
+      <node id="1934342229918873897" at="26,59,27,36" concept="2" />
+      <node id="1934342229918873897" at="32,52,33,19" concept="9" />
+      <node id="1934342229918873897" at="37,51,38,72" concept="2" />
+      <node id="1934342229918874287" at="38,72,39,92" concept="2" />
+      <node id="1934342229918873897" at="18,0,20,0" concept="8" trace="ourParametersCacheExtension" />
+      <node id="1934342229918873897" at="21,0,24,0" concept="1" trace="NewSiblingIsFeature_Test#()V" />
+      <node id="1934342229918873897" at="32,0,35,0" concept="1" trace="TestBody#(Ljetbrains/mps/lang/test/runtime/TransformationTest;)V" />
+      <node id="1934342229918873897" at="25,0,29,0" concept="4" trace="test_NewSiblingIsFeature#()V" />
+      <node id="1934342229918873897" at="36,0,41,0" concept="4" trace="testMethodImpl#()V" />
+      <scope id="1934342229918873897" at="21,37,22,60" />
+      <scope id="1934342229918873897" at="26,59,27,36" />
+      <scope id="1934342229918873897" at="32,52,33,19" />
+      <scope id="1934342229918873897" at="37,51,39,92" />
+      <scope id="1934342229918873897" at="21,0,24,0" />
+      <scope id="1934342229918873897" at="32,0,35,0">
+        <var name="owner" id="1934342229918873897" />
+      </scope>
+      <scope id="1934342229918873897" at="25,0,29,0" />
+      <scope id="1934342229918873897" at="36,0,41,0" />
+      <unit id="1934342229918873897" at="30,0,42,0" name="test.org.iets3.variability.featuremodel.base.editor.NewSiblingIsFeature_Test$TestBody" />
+      <unit id="1934342229918873897" at="16,0,43,0" name="test.org.iets3.variability.featuremodel.base.editor.NewSiblingIsFeature_Test" />
+    </file>
+  </root>
   <root nodeRef="r:d6bc629b-7e76-4d7c-b56d-ed7cc0573909(test.org.iets3.variability.featuremodel.base.editor@tests)/4429662921185784420">
     <file name="MoveAttributeByFeatureModelExtraction_Test.java">
       <node id="4429662921185784420" at="30,55,31,60" concept="9" />
@@ -156,6 +208,84 @@
       <scope id="6265241395917888906" at="34,0,39,0" />
       <unit id="6265241395917888906" at="28,0,40,0" name="test.org.iets3.variability.featuremodel.base.editor.FeatureToFeatureModelInclude_Cardinality_Test$TestBody" />
       <unit id="6265241395917888906" at="14,0,41,0" name="test.org.iets3.variability.featuremodel.base.editor.FeatureToFeatureModelInclude_Cardinality_Test" />
+    </file>
+  </root>
+  <root nodeRef="r:d6bc629b-7e76-4d7c-b56d-ed7cc0573909(test.org.iets3.variability.featuremodel.base.editor@tests)/652650453703441553">
+    <file name="TypeSemicolonFeature_Test.java">
+      <node id="652650453703441553" at="19,38,20,60" concept="9" />
+      <node id="652650453703441553" at="24,60,25,36" concept="2" />
+      <node id="652650453703441553" at="30,52,31,19" concept="9" />
+      <node id="652650453703441553" at="35,51,36,70" concept="2" />
+      <node id="652650453703441660" at="36,70,37,22" concept="2" />
+      <node id="652650453703441553" at="16,0,18,0" concept="8" trace="ourParametersCacheExtension" />
+      <node id="652650453703441553" at="19,0,22,0" concept="1" trace="TypeSemicolonFeature_Test#()V" />
+      <node id="652650453703441553" at="30,0,33,0" concept="1" trace="TestBody#(Ljetbrains/mps/lang/test/runtime/TransformationTest;)V" />
+      <node id="652650453703441553" at="23,0,27,0" concept="4" trace="test_TypeSemicolonFeature#()V" />
+      <node id="652650453703441553" at="34,0,39,0" concept="4" trace="testMethodImpl#()V" />
+      <scope id="652650453703441553" at="19,38,20,60" />
+      <scope id="652650453703441553" at="24,60,25,36" />
+      <scope id="652650453703441553" at="30,52,31,19" />
+      <scope id="652650453703441553" at="35,51,37,22" />
+      <scope id="652650453703441553" at="19,0,22,0" />
+      <scope id="652650453703441553" at="30,0,33,0">
+        <var name="owner" id="652650453703441553" />
+      </scope>
+      <scope id="652650453703441553" at="23,0,27,0" />
+      <scope id="652650453703441553" at="34,0,39,0" />
+      <unit id="652650453703441553" at="28,0,40,0" name="test.org.iets3.variability.featuremodel.base.editor.TypeSemicolonFeature_Test$TestBody" />
+      <unit id="652650453703441553" at="14,0,41,0" name="test.org.iets3.variability.featuremodel.base.editor.TypeSemicolonFeature_Test" />
+    </file>
+  </root>
+  <root nodeRef="r:d6bc629b-7e76-4d7c-b56d-ed7cc0573909(test.org.iets3.variability.featuremodel.base.editor@tests)/652650453707419760">
+    <file name="TypeBracketFeature_Test.java">
+      <node id="652650453707419760" at="19,36,20,60" concept="9" />
+      <node id="652650453707419760" at="24,58,25,36" concept="2" />
+      <node id="652650453707419760" at="30,52,31,19" concept="9" />
+      <node id="652650453707419760" at="35,51,36,70" concept="2" />
+      <node id="652650453707419771" at="36,70,37,22" concept="2" />
+      <node id="652650453707419760" at="16,0,18,0" concept="8" trace="ourParametersCacheExtension" />
+      <node id="652650453707419760" at="19,0,22,0" concept="1" trace="TypeBracketFeature_Test#()V" />
+      <node id="652650453707419760" at="30,0,33,0" concept="1" trace="TestBody#(Ljetbrains/mps/lang/test/runtime/TransformationTest;)V" />
+      <node id="652650453707419760" at="23,0,27,0" concept="4" trace="test_TypeBracketFeature#()V" />
+      <node id="652650453707419760" at="34,0,39,0" concept="4" trace="testMethodImpl#()V" />
+      <scope id="652650453707419760" at="19,36,20,60" />
+      <scope id="652650453707419760" at="24,58,25,36" />
+      <scope id="652650453707419760" at="30,52,31,19" />
+      <scope id="652650453707419760" at="35,51,37,22" />
+      <scope id="652650453707419760" at="19,0,22,0" />
+      <scope id="652650453707419760" at="30,0,33,0">
+        <var name="owner" id="652650453707419760" />
+      </scope>
+      <scope id="652650453707419760" at="23,0,27,0" />
+      <scope id="652650453707419760" at="34,0,39,0" />
+      <unit id="652650453707419760" at="28,0,40,0" name="test.org.iets3.variability.featuremodel.base.editor.TypeBracketFeature_Test$TestBody" />
+      <unit id="652650453707419760" at="14,0,41,0" name="test.org.iets3.variability.featuremodel.base.editor.TypeBracketFeature_Test" />
+    </file>
+  </root>
+  <root nodeRef="r:d6bc629b-7e76-4d7c-b56d-ed7cc0573909(test.org.iets3.variability.featuremodel.base.editor@tests)/652650453712904156">
+    <file name="TypeSemicolonFeatureCardinality_Test.java">
+      <node id="652650453712904156" at="19,49,20,60" concept="9" />
+      <node id="652650453712904156" at="24,71,25,36" concept="2" />
+      <node id="652650453712904156" at="30,52,31,19" concept="9" />
+      <node id="652650453712904156" at="35,51,36,70" concept="2" />
+      <node id="652650453712904168" at="36,70,37,22" concept="2" />
+      <node id="652650453712904156" at="16,0,18,0" concept="8" trace="ourParametersCacheExtension" />
+      <node id="652650453712904156" at="19,0,22,0" concept="1" trace="TypeSemicolonFeatureCardinality_Test#()V" />
+      <node id="652650453712904156" at="30,0,33,0" concept="1" trace="TestBody#(Ljetbrains/mps/lang/test/runtime/TransformationTest;)V" />
+      <node id="652650453712904156" at="23,0,27,0" concept="4" trace="test_TypeSemicolonFeatureCardinality#()V" />
+      <node id="652650453712904156" at="34,0,39,0" concept="4" trace="testMethodImpl#()V" />
+      <scope id="652650453712904156" at="19,49,20,60" />
+      <scope id="652650453712904156" at="24,71,25,36" />
+      <scope id="652650453712904156" at="30,52,31,19" />
+      <scope id="652650453712904156" at="35,51,37,22" />
+      <scope id="652650453712904156" at="19,0,22,0" />
+      <scope id="652650453712904156" at="30,0,33,0">
+        <var name="owner" id="652650453712904156" />
+      </scope>
+      <scope id="652650453712904156" at="23,0,27,0" />
+      <scope id="652650453712904156" at="34,0,39,0" />
+      <unit id="652650453712904156" at="28,0,40,0" name="test.org.iets3.variability.featuremodel.base.editor.TypeSemicolonFeatureCardinality_Test$TestBody" />
+      <unit id="652650453712904156" at="14,0,41,0" name="test.org.iets3.variability.featuremodel.base.editor.TypeSemicolonFeatureCardinality_Test" />
     </file>
   </root>
   <root nodeRef="r:d6bc629b-7e76-4d7c-b56d-ed7cc0573909(test.org.iets3.variability.featuremodel.base.editor@tests)/6805039216502634186">

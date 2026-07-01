@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<product version="3" modelHash="ef3y7dido4n1rf1nyippfkzsmozjlr0">
-  <files names="DeleteFeature_Test.java:ExtractFeatureModel_Test.java:FeatureToFeatureModelInclude_Cardinality_Test.java:FeatureToFeatureModelInclude_Test.java:MoveAttributeByFeatureModelExtraction_Test.java:RelationToXorWithInitialStateChecked_Test.java:RelationToXor_Test.java" />
+<product version="3" modelHash="-2b1x5ml6wzniqvzz5rznyehplfnouwf">
+  <files names="DeleteFeature_Test.java:ExtractFeatureModel_Test.java:FeatureToFeatureModelInclude_Cardinality_Test.java:FeatureToFeatureModelInclude_Test.java:MoveAttributeByFeatureModelExtraction_Test.java:NewChildIsFeature_Test.java:NewSiblingIsFeature_Test.java:RelationToXorWithInitialStateChecked_Test.java:RelationToXor_Test.java:TypeBracketFeature_Test.java:TypeSemicolonFeatureCardinality_Test.java:TypeSemicolonFeature_Test.java" />
 </product>
 
