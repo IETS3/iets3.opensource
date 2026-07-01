@@ -15,9 +15,9 @@ import com.mbeddr.core.base.behavior.AbstractTreeViewNode;
 import java.util.List;
 import java.util.Arrays;
 import org.jetbrains.annotations.NotNull;
+import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
 import jetbrains.mps.internal.collections.runtime.ListSequence;
-import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
 import java.util.ArrayList;
 import com.mbeddr.core.base.behavior.NodeTreeViewNode;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations;
@@ -30,6 +30,7 @@ import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 import org.jetbrains.mps.openapi.language.SContainmentLink;
 import org.jetbrains.mps.openapi.language.SReferenceLink;
+import org.jetbrains.mps.openapi.language.SConcept;
 import org.jetbrains.mps.openapi.language.SInterfaceConcept;
 import org.jetbrains.mps.openapi.language.SProperty;
 
@@ -55,7 +56,8 @@ public final class IFunctionLike__BehaviorDescriptor extends BaseBHDescriptor {
   }
 
   /*package*/ static Iterable<SNode> getUniquelyNamedElements_id4qSf1u1TRfj(@NotNull SNode __thisNode__) {
-    return SLinkOperations.getChildren(__thisNode__, LINKS.args$XOIh);
+    List<SNode> valExpressionOfBody = SNodeOperations.getNodeDescendants(SLinkOperations.getTarget(__thisNode__, LINKS.body$Y8TB), CONCEPTS.ValExpression$fC, false, new SAbstractConcept[]{});
+    return ListSequence.fromList(SLinkOperations.getChildren(__thisNode__, LINKS.args$XOIh)).union(ListSequence.fromList(valExpressionOfBody)).toList();
   }
   /*package*/ static boolean canHavePrecondition_idKaZMgy4IjP(@NotNull SNode __thisNode__) {
     return true;
@@ -176,14 +178,15 @@ public final class IFunctionLike__BehaviorDescriptor extends BaseBHDescriptor {
   }
 
   private static final class LINKS {
-    /*package*/ static final SContainmentLink args$XOIh = MetaAdapterFactory.getContainmentLink(0x9464fa065ab9409bL, 0x927464ab29588457L, 0x427ce523083b8a2fL, 0x427ce523083b8a3fL, "args");
     /*package*/ static final SContainmentLink body$Y8TB = MetaAdapterFactory.getContainmentLink(0x9464fa065ab9409bL, 0x927464ab29588457L, 0x427ce523083b8a2fL, 0x427ce523083b8a56L, "body");
+    /*package*/ static final SContainmentLink args$XOIh = MetaAdapterFactory.getContainmentLink(0x9464fa065ab9409bL, 0x927464ab29588457L, 0x427ce523083b8a2fL, 0x427ce523083b8a3fL, "args");
     /*package*/ static final SContainmentLink effect$2Wvu = MetaAdapterFactory.getContainmentLink(0x9464fa065ab9409bL, 0x927464ab29588457L, 0x427ce523083b8a2fL, 0x35d9ac9dbd01561bL, "effect");
     /*package*/ static final SReferenceLink function$xJRS = MetaAdapterFactory.getReferenceLink(0x9464fa065ab9409bL, 0x927464ab29588457L, 0x427ce5230841f89cL, 0x427ce5230841f8a8L, "function");
     /*package*/ static final SContainmentLink type$8xXf = MetaAdapterFactory.getContainmentLink(0x9464fa065ab9409bL, 0x927464ab29588457L, 0x68d69d36ba520709L, 0x68d69d36ba52070cL, "type");
   }
 
   private static final class CONCEPTS {
+    /*package*/ static final SConcept ValExpression$fC = MetaAdapterFactory.getConcept(0x9464fa065ab9409bL, 0x927464ab29588457L, 0x427ce523084a11aeL, "org.iets3.core.expr.lambda.structure.ValExpression");
     /*package*/ static final SInterfaceConcept IFunctionCall$zN = MetaAdapterFactory.getInterfaceConcept(0x9464fa065ab9409bL, 0x927464ab29588457L, 0x427ce5230841f89cL, "org.iets3.core.expr.lambda.structure.IFunctionCall");
     /*package*/ static final SInterfaceConcept IValidNamedConcept$gJ = MetaAdapterFactory.getInterfaceConcept(0x7b68d745a7b848b9L, 0xbd9c05c0f8725a35L, 0x32f64a31a179034L, "org.iets3.core.base.structure.IValidNamedConcept");
   }

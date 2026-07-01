@@ -31,24 +31,52 @@ public class enums_Test extends BaseTransformationTest {
     new TestBody(this).TestEnums_item0_7061117989423813565();
   }
   @Test
-  public void IsOneOf_item0_8006404979732444652() throws Throwable {
-    new TestBody(this).IsOneOf_item0_8006404979732444652();
+  public void IsOneOf_item0_3952549543412668864() throws Throwable {
+    new TestBody(this).IsOneOf_item0_3952549543412668864();
   }
   @Test
-  public void IsOneOf_item1_8006404979732446046() throws Throwable {
-    new TestBody(this).IsOneOf_item1_8006404979732446046();
+  public void IsOneOf_item1_3952549543412669701() throws Throwable {
+    new TestBody(this).IsOneOf_item1_3952549543412669701();
   }
   @Test
-  public void IsOneOf_item2_8006404979732446190() throws Throwable {
-    new TestBody(this).IsOneOf_item2_8006404979732446190();
+  public void IsOneOf_item2_8006404979732444652() throws Throwable {
+    new TestBody(this).IsOneOf_item2_8006404979732444652();
   }
   @Test
-  public void IsOneOf_item3_8006404979732446355() throws Throwable {
-    new TestBody(this).IsOneOf_item3_8006404979732446355();
+  public void IsOneOf_item3_8006404979732446046() throws Throwable {
+    new TestBody(this).IsOneOf_item3_8006404979732446046();
   }
   @Test
-  public void IsOneOf_item4_8006404979732446543() throws Throwable {
-    new TestBody(this).IsOneOf_item4_8006404979732446543();
+  public void IsOneOf_item4_8006404979732446190() throws Throwable {
+    new TestBody(this).IsOneOf_item4_8006404979732446190();
+  }
+  @Test
+  public void IsOneOf_item5_8006404979732446355() throws Throwable {
+    new TestBody(this).IsOneOf_item5_8006404979732446355();
+  }
+  @Test
+  public void IsOneOf_item6_8006404979732446543() throws Throwable {
+    new TestBody(this).IsOneOf_item6_8006404979732446543();
+  }
+  @Test
+  public void IsOneOf_item7_3952549543391779717() throws Throwable {
+    new TestBody(this).IsOneOf_item7_3952549543391779717();
+  }
+  @Test
+  public void IsOneOf_item8_3952549543402624455() throws Throwable {
+    new TestBody(this).IsOneOf_item8_3952549543402624455();
+  }
+  @Test
+  public void IsOneOf_item9_3952549543405757171() throws Throwable {
+    new TestBody(this).IsOneOf_item9_3952549543405757171();
+  }
+  @Test
+  public void IsOneOf_item10_5496041071981536501() throws Throwable {
+    new TestBody(this).IsOneOf_item10_5496041071981536501();
+  }
+  @Test
+  public void IsOneOf_item11_5496041071981539610() throws Throwable {
+    new TestBody(this).IsOneOf_item11_5496041071981539610();
   }
   @Test
   public void TestOptions_item0_6859926652484161181() throws Throwable {
@@ -57,6 +85,18 @@ public class enums_Test extends BaseTransformationTest {
   @Test
   public void TestOptions_item1_6859926652486642305() throws Throwable {
     new TestBody(this).TestOptions_item1_6859926652486642305();
+  }
+  @Test
+  public void TestOptions_item2_7850247783003745782() throws Throwable {
+    new TestBody(this).TestOptions_item2_7850247783003745782();
+  }
+  @Test
+  public void TestOptions_item3_7850247783009169562() throws Throwable {
+    new TestBody(this).TestOptions_item3_7850247783009169562();
+  }
+  @Test
+  public void TestOptions_item4_7850247783009345334() throws Throwable {
+    new TestBody(this).TestOptions_item4_7850247783009345334();
   }
   @Test
   public void ListIndexByEnum_item0_217046401488934820() throws Throwable {
@@ -111,7 +151,25 @@ public class enums_Test extends BaseTransformationTest {
         }
       });
     }
-    public void IsOneOf_item0_8006404979732444652() throws Exception {
+    public void IsOneOf_item0_3952549543412668864() throws Exception {
+      runWithinCommand(new BaseTestBody.ExceptionRunnable() {
+        @Override
+        public void run() throws Exception {
+          SNode ti = SNodeOperations.cast(getRealNodeById("3952549543412668864"), CONCEPTS.AbstractTestItem$9u);
+          TestRunner.doExecuteTest(ti);
+        }
+      });
+    }
+    public void IsOneOf_item1_3952549543412669701() throws Exception {
+      runWithinCommand(new BaseTestBody.ExceptionRunnable() {
+        @Override
+        public void run() throws Exception {
+          SNode ti = SNodeOperations.cast(getRealNodeById("3952549543412669701"), CONCEPTS.AbstractTestItem$9u);
+          TestRunner.doExecuteTest(ti);
+        }
+      });
+    }
+    public void IsOneOf_item2_8006404979732444652() throws Exception {
       runWithinCommand(new BaseTestBody.ExceptionRunnable() {
         @Override
         public void run() throws Exception {
@@ -120,7 +178,7 @@ public class enums_Test extends BaseTransformationTest {
         }
       });
     }
-    public void IsOneOf_item1_8006404979732446046() throws Exception {
+    public void IsOneOf_item3_8006404979732446046() throws Exception {
       runWithinCommand(new BaseTestBody.ExceptionRunnable() {
         @Override
         public void run() throws Exception {
@@ -129,7 +187,7 @@ public class enums_Test extends BaseTransformationTest {
         }
       });
     }
-    public void IsOneOf_item2_8006404979732446190() throws Exception {
+    public void IsOneOf_item4_8006404979732446190() throws Exception {
       runWithinCommand(new BaseTestBody.ExceptionRunnable() {
         @Override
         public void run() throws Exception {
@@ -138,7 +196,7 @@ public class enums_Test extends BaseTransformationTest {
         }
       });
     }
-    public void IsOneOf_item3_8006404979732446355() throws Exception {
+    public void IsOneOf_item5_8006404979732446355() throws Exception {
       runWithinCommand(new BaseTestBody.ExceptionRunnable() {
         @Override
         public void run() throws Exception {
@@ -147,11 +205,56 @@ public class enums_Test extends BaseTransformationTest {
         }
       });
     }
-    public void IsOneOf_item4_8006404979732446543() throws Exception {
+    public void IsOneOf_item6_8006404979732446543() throws Exception {
       runWithinCommand(new BaseTestBody.ExceptionRunnable() {
         @Override
         public void run() throws Exception {
           SNode ti = SNodeOperations.cast(getRealNodeById("8006404979732446543"), CONCEPTS.AbstractTestItem$9u);
+          TestRunner.doExecuteTest(ti);
+        }
+      });
+    }
+    public void IsOneOf_item7_3952549543391779717() throws Exception {
+      runWithinCommand(new BaseTestBody.ExceptionRunnable() {
+        @Override
+        public void run() throws Exception {
+          SNode ti = SNodeOperations.cast(getRealNodeById("3952549543391779717"), CONCEPTS.AbstractTestItem$9u);
+          TestRunner.doExecuteTest(ti);
+        }
+      });
+    }
+    public void IsOneOf_item8_3952549543402624455() throws Exception {
+      runWithinCommand(new BaseTestBody.ExceptionRunnable() {
+        @Override
+        public void run() throws Exception {
+          SNode ti = SNodeOperations.cast(getRealNodeById("3952549543402624455"), CONCEPTS.AbstractTestItem$9u);
+          TestRunner.doExecuteTest(ti);
+        }
+      });
+    }
+    public void IsOneOf_item9_3952549543405757171() throws Exception {
+      runWithinCommand(new BaseTestBody.ExceptionRunnable() {
+        @Override
+        public void run() throws Exception {
+          SNode ti = SNodeOperations.cast(getRealNodeById("3952549543405757171"), CONCEPTS.AbstractTestItem$9u);
+          TestRunner.doExecuteTest(ti);
+        }
+      });
+    }
+    public void IsOneOf_item10_5496041071981536501() throws Exception {
+      runWithinCommand(new BaseTestBody.ExceptionRunnable() {
+        @Override
+        public void run() throws Exception {
+          SNode ti = SNodeOperations.cast(getRealNodeById("5496041071981536501"), CONCEPTS.AbstractTestItem$9u);
+          TestRunner.doExecuteTest(ti);
+        }
+      });
+    }
+    public void IsOneOf_item11_5496041071981539610() throws Exception {
+      runWithinCommand(new BaseTestBody.ExceptionRunnable() {
+        @Override
+        public void run() throws Exception {
+          SNode ti = SNodeOperations.cast(getRealNodeById("5496041071981539610"), CONCEPTS.AbstractTestItem$9u);
           TestRunner.doExecuteTest(ti);
         }
       });
@@ -170,6 +273,33 @@ public class enums_Test extends BaseTransformationTest {
         @Override
         public void run() throws Exception {
           SNode ti = SNodeOperations.cast(getRealNodeById("6859926652486642305"), CONCEPTS.AbstractTestItem$9u);
+          TestRunner.doExecuteTest(ti);
+        }
+      });
+    }
+    public void TestOptions_item2_7850247783003745782() throws Exception {
+      runWithinCommand(new BaseTestBody.ExceptionRunnable() {
+        @Override
+        public void run() throws Exception {
+          SNode ti = SNodeOperations.cast(getRealNodeById("7850247783003745782"), CONCEPTS.AbstractTestItem$9u);
+          TestRunner.doExecuteTest(ti);
+        }
+      });
+    }
+    public void TestOptions_item3_7850247783009169562() throws Exception {
+      runWithinCommand(new BaseTestBody.ExceptionRunnable() {
+        @Override
+        public void run() throws Exception {
+          SNode ti = SNodeOperations.cast(getRealNodeById("7850247783009169562"), CONCEPTS.AbstractTestItem$9u);
+          TestRunner.doExecuteTest(ti);
+        }
+      });
+    }
+    public void TestOptions_item4_7850247783009345334() throws Exception {
+      runWithinCommand(new BaseTestBody.ExceptionRunnable() {
+        @Override
+        public void run() throws Exception {
+          SNode ti = SNodeOperations.cast(getRealNodeById("7850247783009345334"), CONCEPTS.AbstractTestItem$9u);
           TestRunner.doExecuteTest(ti);
         }
       });

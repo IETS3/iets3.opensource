@@ -153,13 +153,13 @@ public class Feature_Keymap extends KeyMapImpl {
       return SNodeOperations.isInstanceOf(node, CONCEPTS.ICanHaveSubFeature$Cu);
     }
     private void execute_internal(final EditorContext editorContext, final SNode node, final List<SNode> selectedNodes) {
-      ICanHaveSubFeature__BehaviorDescriptor.addSubFeature_id1GMgmu$sb6j.invoke(SNodeOperations.cast(node, CONCEPTS.ICanHaveSubFeature$Cu), createFeatureTreeNode_1upo2r_a0a0a0c());
+      ICanHaveSubFeature__BehaviorDescriptor.addSubFeature_id1GMgmu$sb6j.invoke(SNodeOperations.cast(node, CONCEPTS.ICanHaveSubFeature$Cu), createFeature_1upo2r_a0a0a0c());
     }
     public String getKeyStroke() {
       return "ctrl ENTER";
     }
-    private static SNode createFeatureTreeNode_1upo2r_a0a0a0c() {
-      SNodeBuilder n0 = new SNodeBuilder().init(CONCEPTS.FeatureTreeNode$HV);
+    private static SNode createFeature_1upo2r_a0a0a0c() {
+      SNodeBuilder n0 = new SNodeBuilder().init(CONCEPTS.Feature$D7);
       return n0.getResult();
     }
   }
@@ -251,6 +251,5 @@ public class Feature_Keymap extends KeyMapImpl {
     /*package*/ static final SConcept AbstractFeature$T = MetaAdapterFactory.getConcept(0x165f1d0525064544L, 0x895e1424f54166ecL, 0x6b3fb620c4f9ac90L, "org.iets3.variability.featuremodel.base.structure.AbstractFeature");
     /*package*/ static final SInterfaceConcept ICanHaveSubFeature$Cu = MetaAdapterFactory.getInterfaceConcept(0x165f1d0525064544L, 0x895e1424f54166ecL, 0x1b324167a470b175L, "org.iets3.variability.featuremodel.base.structure.ICanHaveSubFeature");
     /*package*/ static final SConcept Feature$D7 = MetaAdapterFactory.getConcept(0x165f1d0525064544L, 0x895e1424f54166ecL, 0x375cadc47516a307L, "org.iets3.variability.featuremodel.base.structure.Feature");
-    /*package*/ static final SConcept FeatureTreeNode$HV = MetaAdapterFactory.getConcept(0x165f1d0525064544L, 0x895e1424f54166ecL, 0x375cadc475172167L, "org.iets3.variability.featuremodel.base.structure.FeatureTreeNode");
   }
 }
