@@ -57,7 +57,8 @@ public final class IFunctionLike__BehaviorDescriptor extends BaseBHDescriptor {
 
   /*package*/ static Iterable<SNode> getUniquelyNamedElements_id4qSf1u1TRfj(@NotNull SNode __thisNode__) {
     List<SNode> valExpressionOfBody = SNodeOperations.getNodeDescendants(SLinkOperations.getTarget(__thisNode__, LINKS.body$Y8TB), CONCEPTS.ValExpression$fC, false, new SAbstractConcept[]{});
-    return ListSequence.fromList(SLinkOperations.getChildren(__thisNode__, LINKS.args$XOIh)).union(ListSequence.fromList(valExpressionOfBody)).toList();
+    List<SNode> varExpressionsBody = SNodeOperations.getNodeDescendants(SLinkOperations.getTarget(__thisNode__, LINKS.body$Y8TB), CONCEPTS.LocalVarDeclExpr$$Y, false, new SAbstractConcept[]{});
+    return ListSequence.fromList(SLinkOperations.getChildren(__thisNode__, LINKS.args$XOIh)).union(ListSequence.fromList(valExpressionOfBody)).union(ListSequence.fromList(varExpressionsBody)).toList();
   }
   /*package*/ static boolean canHavePrecondition_idKaZMgy4IjP(@NotNull SNode __thisNode__) {
     return true;
@@ -187,6 +188,7 @@ public final class IFunctionLike__BehaviorDescriptor extends BaseBHDescriptor {
 
   private static final class CONCEPTS {
     /*package*/ static final SConcept ValExpression$fC = MetaAdapterFactory.getConcept(0x9464fa065ab9409bL, 0x927464ab29588457L, 0x427ce523084a11aeL, "org.iets3.core.expr.lambda.structure.ValExpression");
+    /*package*/ static final SConcept LocalVarDeclExpr$$Y = MetaAdapterFactory.getConcept(0x9464fa065ab9409bL, 0x927464ab29588457L, 0x1ed6f14a008c1af9L, "org.iets3.core.expr.lambda.structure.LocalVarDeclExpr");
     /*package*/ static final SInterfaceConcept IFunctionCall$zN = MetaAdapterFactory.getInterfaceConcept(0x9464fa065ab9409bL, 0x927464ab29588457L, 0x427ce5230841f89cL, "org.iets3.core.expr.lambda.structure.IFunctionCall");
     /*package*/ static final SInterfaceConcept IValidNamedConcept$gJ = MetaAdapterFactory.getInterfaceConcept(0x7b68d745a7b848b9L, 0xbd9c05c0f8725a35L, 0x32f64a31a179034L, "org.iets3.core.base.structure.IValidNamedConcept");
   }
