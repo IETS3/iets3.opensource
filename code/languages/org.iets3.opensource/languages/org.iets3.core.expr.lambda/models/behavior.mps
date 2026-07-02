@@ -2048,7 +2048,7 @@
                       <node concept="2OqwBi" id="S0JwotCVZv" role="2Oq$k0">
                         <node concept="13iPFW" id="S0JwotCVZw" role="2Oq$k0" />
                         <node concept="3TrEf2" id="S0JwotCVZx" role="2OqNvi">
-                          <ref role="3Tt5mk" to="zzzn:49WTic8eSDm" />
+                          <ref role="3Tt5mk" to="zzzn:49WTic8eSDm" resolve="body" />
                         </node>
                       </node>
                       <node concept="2Rf3mk" id="S0JwotCWV8" role="2OqNvi" />
@@ -2417,7 +2417,7 @@
               <node concept="1Y3b0j" id="4zsmO3KPRBu" role="YeSDq">
                 <property role="2bfB8j" value="true" />
                 <ref role="1Y3XeK" to="hwgx:7NyyyjNtce8" resolve="NodeTreeViewNode" />
-                <ref role="37wK5l" to="hwgx:9MiAwFBo2R" resolve="NodeTreeViewNode" />
+                <ref role="37wK5l" to="wyt6:~Object.&lt;init&gt;()" resolve="Object" />
                 <node concept="3Tm1VV" id="4zsmO3KPRBv" role="1B3o_S" />
                 <node concept="13iPFW" id="4zsmO3KPNS6" role="37wK5m" />
                 <node concept="3cpWs3" id="3E_uh2joi2Y" role="37wK5m">
