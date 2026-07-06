@@ -177,8 +177,14 @@ val buildLanguages by tasks.registering(BuildLanguages::class) {
     script = scriptsDir.file("build-languages.xml")
 }
 
-val execTestsByInterpreter by tasks.registering(TestLanguages::class) {
+val execTestsByInterpreterPre by tasks.registering(TestLanguages::class) {
     script = scriptsDir.file("build-testInterpreter.xml")
+    targets("generate", "build")
+}
+
+val execTestsByInterpreter by tasks.registering(TestLanguages::class) {
+    dependsOn(execTestsByInterpreterPre)
+    script = scriptsDir.file("build-testInterpreterExec.xml")
     targets("generate", "build")
     doLast {
         // there is limited ant support for kotlin so we fall back to groovy
@@ -196,7 +202,7 @@ val execTestsByInterpreter by tasks.registering(TestLanguages::class) {
                 )
                 "report"("format" to "frames", "todir" to "${layout.buildDirectory.get()}/junitInterpreterReport")
             }
-            "echo"("JUnit Interpreter report placed into ${layout.buildDirectory.get()}/junitInterpreterReport/index.html")
+            "echo"("JUnit Interpreter report placed into file://${layout.buildDirectory.get()}/junitInterpreterReport/index.html")
         }
     }
 }
