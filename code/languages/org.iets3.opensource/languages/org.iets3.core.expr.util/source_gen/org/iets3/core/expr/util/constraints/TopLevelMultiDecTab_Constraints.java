@@ -30,7 +30,7 @@ public class TopLevelMultiDecTab_Constraints extends BaseConstraintsDescriptor {
         boolean result = staticCanBeAnAncestor(context.getNode(), context.getChildNode(), context.getChildConcept(), context.getParentNode(), context.getLink());
 
         if (!(result) && checkingNodeContext != null) {
-          checkingNodeContext.setBreakingNode(canBeRootBreakingPoint);
+          checkingNodeContext.setBreakingNode(canBeAncestorBreakingPoint);
         }
 
         return result;
@@ -40,7 +40,7 @@ public class TopLevelMultiDecTab_Constraints extends BaseConstraintsDescriptor {
   private static boolean staticCanBeAnAncestor(SNode node, SNode childNode, SAbstractConcept childConcept, SNode parentNode, SContainmentLink link) {
     return !(SConceptOperations.isSubConceptOf(SNodeOperations.asSConcept(childConcept), CONCEPTS.QueryColDef$Es));
   }
-  private static final SNodePointer canBeRootBreakingPoint = new SNodePointer("r:6bcf29f0-13bc-4fe5-bc5e-a316f596988a(org.iets3.core.expr.util.constraints)", "6572235884489044379");
+  private static final SNodePointer canBeAncestorBreakingPoint = new SNodePointer("r:6bcf29f0-13bc-4fe5-bc5e-a316f596988a(org.iets3.core.expr.util.constraints)", "6572235884489044379");
 
   private static final class CONCEPTS {
     /*package*/ static final SConcept TopLevelMultiDecTab$TA = MetaAdapterFactory.getConcept(0x8bb1251eeae547abL, 0x984333adfae8edaaL, 0x5b3545b73b0933c2L, "org.iets3.core.expr.util.structure.TopLevelMultiDecTab");

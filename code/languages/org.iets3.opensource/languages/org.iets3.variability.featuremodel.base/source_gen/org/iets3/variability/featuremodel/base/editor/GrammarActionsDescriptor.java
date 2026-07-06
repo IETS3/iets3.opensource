@@ -25,6 +25,7 @@ import jetbrains.mps.openapi.editor.EditorContext;
 import org.jetbrains.mps.openapi.model.SNode;
 import jetbrains.mps.lang.editor.menus.substitute.ReferenceScopeSubstituteMenuItem;
 import de.slisson.mps.reflection.runtime.ReflectionUtil;
+import org.iets3.core.expr.base.plugin.EditorCustomizationConfigHelper;
 import org.iets3.variability.base.behavior.VariabilityTypeRestrictions;
 import jetbrains.mps.lang.editor.menus.substitute.SubstituteMenuItemWrapper;
 import org.jetbrains.annotations.NotNull;
@@ -46,9 +47,9 @@ import com.mbeddr.mpsutil.grammarcells.runtime.StringOrSequenceQuery;
 import org.iets3.variability.featuremodel.base.behavior.FeatureTreeNode__BehaviorDescriptor;
 import org.iets3.variability.featuremodel.base.behavior.AbstractFeature__BehaviorDescriptor;
 import com.mbeddr.mpsutil.grammarcells.runtime.MultiTextActionItem;
-import com.mbeddr.mpsutil.grammarcells.runtime.EditorHierachyCache;
-import jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations;
 import jetbrains.mps.smodel.action.SNodeFactoryOperations;
+import jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations;
+import com.mbeddr.mpsutil.grammarcells.runtime.EditorHierachyCache;
 import jetbrains.mps.openapi.editor.cells.SubstituteAction;
 import jetbrains.mps.smodel.IOperationContext;
 import jetbrains.mps.smodel.action.NodeSubstituteActionsFactoryContext;
@@ -126,7 +127,8 @@ public class GrammarActionsDescriptor extends AbstractGrammarActionDescriptor im
 
                         isApplicable &= new Object() {
                           public boolean query(SAbstractConcept expectedConcept) {
-                            return SConceptOperations.isSubConceptOf(SNodeOperations.asSConcept(expectedConcept), CONCEPTS.AbstractFeatureAttribute$iW) && VariabilityTypeRestrictions.canBeFeatureAttributeType(wrappedConcept);
+                            boolean condition = EditorCustomizationConfigHelper.getConfig().isWrapperCellSubstitutionActivated(EditorCustomizationConfigHelper.getIdentifier(CONCEPTS.FeatureAttribute$en, LINKS.type$mJNs), expectedConcept, wrappedConcept, editorContext);
+                            return condition && SConceptOperations.isSubConceptOf(SNodeOperations.asSConcept(expectedConcept), CONCEPTS.AbstractFeatureAttribute$iW) && VariabilityTypeRestrictions.canBeFeatureAttributeType(wrappedConcept);
                           }
                         }.query(expectedOutputConcept);
                         return isApplicable;
@@ -148,12 +150,24 @@ public class GrammarActionsDescriptor extends AbstractGrammarActionDescriptor im
                           SLinkOperations.setTarget(wrapper, LINKS.type$mJNs, SNodeOperations.cast(nodeToWrap, CONCEPTS.Type$WK));
                           NodeFactoryManager.setupNode(outputConcept, wrapper, _context.getCurrentTargetNode(), _context.getParentNode(), _context.getModel());
 
+                          new Object() {
+                            public void postprocess(SNode node, EditorContext editorContext, SNode parentNode) {
+                              EditorCustomizationConfigHelper.getConfig().wrapperCellSubstitutionPostProcess(EditorCustomizationConfigHelper.getIdentifier(CONCEPTS.FeatureAttribute$en, LINKS.type$mJNs), node, editorContext);
+                            }
+                          }.postprocess(wrapper, _context.getEditorContext(), _context.getParentNode());
                           return wrapper;
                         }
                         @Override
-                        public String getDescriptionText(@NotNull String pattern) {
-                          String description = it.getDescriptionText(pattern);
-                          return ((description != null && description.length() > 0) ? description : it.getOutputConcept().getName());
+                        public String getDescriptionText(@NotNull final String pattern) {
+                          String originalText = ((_FunctionTypes._return_P0_E0<String>) () -> {
+                            String description = it.getDescriptionText(pattern);
+                            return ((description != null && description.length() > 0) ? description : it.getOutputConcept().getName());
+                          }).invoke();
+                          SNode wrappedNode = null;
+                          SAbstractConcept wrappedConcept = super.getOutputConcept();
+                          EditorContext editorContext = _context.getEditorContext();
+                          String descriptiontext = EditorCustomizationConfigHelper.getConfig().getWrapperCellSubstitutionDescriptionText(EditorCustomizationConfigHelper.getIdentifier(CONCEPTS.FeatureAttribute$en, LINKS.type$mJNs), wrappedNode, wrappedConcept, subconcept, originalText, editorContext);
+                          return ((descriptiontext != null && descriptiontext.length() > 0) ? descriptiontext : originalText);
                         }
                         @Override
                         public SAbstractConcept getOutputConcept() {
@@ -286,13 +300,15 @@ public class GrammarActionsDescriptor extends AbstractGrammarActionDescriptor im
             if (SNodeOperations.isInstanceOf(sourceNode, CONCEPTS.Feature$D7)) {
               final Iterable<String> matchingTexts = new StringOrSequenceQuery() {
                 public Object queryStringOrSequence() {
-                  return ":";
+                  String matchingText = EditorCustomizationConfigHelper.getConfig().getSideTransformationCellMatchingText(CONCEPTS.StringType$B3.getName(), _context);
+                  return ((matchingText != null && matchingText.length() > 0) ? matchingText : ":");
                 }
               }.query();
               final boolean isApplicable = new Object() {
                 public boolean query() {
+                  boolean isApplicable = EditorCustomizationConfigHelper.getConfig().isSideTransformationCellApplicable(CONCEPTS.StringType$B3.getName(), _context);
                   SNode node = SNodeOperations.cast(_context.getNode(), CONCEPTS.Feature$D7);
-                  return !((boolean) FeatureTreeNode__BehaviorDescriptor.isRoot_id7Nu9WvXvoDo.invoke(node)) && Sequence.fromIterable(AbstractFeature__BehaviorDescriptor.subFeatures_id6GZHy357BW_.invoke(node)).isEmpty() && (SLinkOperations.getTarget(node, LINKS.cardinality$EsDt) == null);
+                  return isApplicable && !((boolean) FeatureTreeNode__BehaviorDescriptor.isRoot_id7Nu9WvXvoDo.invoke(node)) && Sequence.fromIterable(AbstractFeature__BehaviorDescriptor.subFeatures_id6GZHy357BW_.invoke(node)).isEmpty();
                 }
               }.query();
 
@@ -303,7 +319,11 @@ public class GrammarActionsDescriptor extends AbstractGrammarActionDescriptor im
                     doSubstitute(pattern);
                   }
                   public SNode doSubstitute(@NotNull String pattern) {
-                    return TopPartFeatureUtil.featureModelIncludeTransform(_context);
+                    SNode node = SNodeOperations.cast(_context.getNode(), CONCEPTS.FeatureTreeNode$HV);
+                    SNode fi = SNodeFactoryOperations.replaceWithNewChild(node, CONCEPTS.FeatureModelInclude$Iq);
+                    SPropertyOperations.assign(fi, PROPS.name$MnvL, SPropertyOperations.getString(node, PROPS.name$MnvL));
+                    SLinkOperations.setTarget(fi, LINKS.cardinality$EsDt, SLinkOperations.getTarget(node, LINKS.cardinality$EsDt));
+                    return fi;
                   }
 
                   @Override
@@ -435,13 +455,15 @@ public class GrammarActionsDescriptor extends AbstractGrammarActionDescriptor im
             if (SNodeOperations.isInstanceOf(sourceNode, CONCEPTS.Feature$D7)) {
               final Iterable<String> matchingTexts = new StringOrSequenceQuery() {
                 public Object queryStringOrSequence() {
-                  return ":";
+                  String matchingText = EditorCustomizationConfigHelper.getConfig().getSideTransformationCellMatchingText(CONCEPTS.StringType$B3.getName(), _context);
+                  return ((matchingText != null && matchingText.length() > 0) ? matchingText : ":");
                 }
               }.query();
               final boolean isApplicable = new Object() {
                 public boolean query() {
+                  boolean isApplicable = EditorCustomizationConfigHelper.getConfig().isSideTransformationCellApplicable(CONCEPTS.StringType$B3.getName(), _context);
                   SNode node = SNodeOperations.cast(_context.getNode(), CONCEPTS.Feature$D7);
-                  return !((boolean) FeatureTreeNode__BehaviorDescriptor.isRoot_id7Nu9WvXvoDo.invoke(node)) && Sequence.fromIterable(AbstractFeature__BehaviorDescriptor.subFeatures_id6GZHy357BW_.invoke(node)).isEmpty();
+                  return isApplicable && !((boolean) FeatureTreeNode__BehaviorDescriptor.isRoot_id7Nu9WvXvoDo.invoke(node)) && Sequence.fromIterable(AbstractFeature__BehaviorDescriptor.subFeatures_id6GZHy357BW_.invoke(node)).isEmpty();
                 }
               }.query();
 
@@ -452,7 +474,11 @@ public class GrammarActionsDescriptor extends AbstractGrammarActionDescriptor im
                     doSubstitute(pattern);
                   }
                   public SNode doSubstitute(@NotNull String pattern) {
-                    return TopPartFeatureUtil.featureModelIncludeTransform(_context);
+                    SNode node = SNodeOperations.cast(_context.getNode(), CONCEPTS.FeatureTreeNode$HV);
+                    SNode fi = SNodeFactoryOperations.replaceWithNewChild(node, CONCEPTS.FeatureModelInclude$Iq);
+                    SPropertyOperations.assign(fi, PROPS.name$MnvL, SPropertyOperations.getString(node, PROPS.name$MnvL));
+                    SLinkOperations.setTarget(fi, LINKS.cardinality$EsDt, SLinkOperations.getTarget(node, LINKS.cardinality$EsDt));
+                    return fi;
                   }
 
                   @Override
@@ -684,13 +710,15 @@ public class GrammarActionsDescriptor extends AbstractGrammarActionDescriptor im
             if (SNodeOperations.isInstanceOf(sourceNode, CONCEPTS.Feature$D7)) {
               final Iterable<String> matchingTexts = new StringOrSequenceQuery() {
                 public Object queryStringOrSequence() {
-                  return ":";
+                  String matchingText = EditorCustomizationConfigHelper.getConfig().getSideTransformationCellMatchingText(CONCEPTS.Feature$D7.getName(), _context);
+                  return ((matchingText != null && matchingText.length() > 0) ? matchingText : ":");
                 }
               }.query();
               final boolean isApplicable = new Object() {
                 public boolean query() {
+                  boolean isApplicable = EditorCustomizationConfigHelper.getConfig().isSideTransformationCellApplicable(CONCEPTS.StringType$uX.getName(), _context);
                   SNode node = SNodeOperations.cast(_context.getNode(), CONCEPTS.Feature$D7);
-                  return !((boolean) FeatureTreeNode__BehaviorDescriptor.isRoot_id7Nu9WvXvoDo.invoke(node)) && ListSequence.fromList(SLinkOperations.getChildren(node, LINKS.subFeatures$VrQA)).isEmpty();
+                  return isApplicable && !((boolean) FeatureTreeNode__BehaviorDescriptor.isRoot_id7Nu9WvXvoDo.invoke(node)) && ListSequence.fromList(SLinkOperations.getChildren(node, LINKS.subFeatures$VrQA)).isEmpty();
                 }
               }.query();
 
@@ -790,15 +818,17 @@ public class GrammarActionsDescriptor extends AbstractGrammarActionDescriptor im
 
   private static final class CONCEPTS {
     /*package*/ static final SConcept Type$WK = MetaAdapterFactory.getConcept(0xcfaa4966b7d54b69L, 0xb66a309a6e1a7290L, 0x670d5e92f854a614L, "org.iets3.core.expr.base.structure.Type");
-    /*package*/ static final SConcept AbstractFeatureAttribute$iW = MetaAdapterFactory.getConcept(0x165f1d0525064544L, 0x895e1424f54166ecL, 0x36e2718de01a95ffL, "org.iets3.variability.featuremodel.base.structure.AbstractFeatureAttribute");
     /*package*/ static final SConcept FeatureAttribute$en = MetaAdapterFactory.getConcept(0x165f1d0525064544L, 0x895e1424f54166ecL, 0x7cde27c7fd65e207L, "org.iets3.variability.featuremodel.base.structure.FeatureAttribute");
+    /*package*/ static final SConcept AbstractFeatureAttribute$iW = MetaAdapterFactory.getConcept(0x165f1d0525064544L, 0x895e1424f54166ecL, 0x36e2718de01a95ffL, "org.iets3.variability.featuremodel.base.structure.AbstractFeatureAttribute");
     /*package*/ static final SConcept Feature$D7 = MetaAdapterFactory.getConcept(0x165f1d0525064544L, 0x895e1424f54166ecL, 0x375cadc47516a307L, "org.iets3.variability.featuremodel.base.structure.Feature");
     /*package*/ static final SInterfaceConcept IFeatureExtension$HC = MetaAdapterFactory.getInterfaceConcept(0x165f1d0525064544L, 0x895e1424f54166ecL, 0x247c551ab04d3919L, "org.iets3.variability.featuremodel.base.structure.IFeatureExtension");
     /*package*/ static final SConcept Cardinality$7Y = MetaAdapterFactory.getConcept(0x165f1d0525064544L, 0x895e1424f54166ecL, 0x375cadc47518dac4L, "org.iets3.variability.featuremodel.base.structure.Cardinality");
+    /*package*/ static final SConcept StringType$B3 = MetaAdapterFactory.getConcept(0x6b277d9ad52d416fL, 0xa2091919bd737f50L, 0x46ff3b3d86d3edc7L, "org.iets3.core.expr.simpleTypes.structure.StringType");
     /*package*/ static final SConcept FeatureTreeNode$HV = MetaAdapterFactory.getConcept(0x165f1d0525064544L, 0x895e1424f54166ecL, 0x375cadc475172167L, "org.iets3.variability.featuremodel.base.structure.FeatureTreeNode");
+    /*package*/ static final SConcept FeatureModelInclude$Iq = MetaAdapterFactory.getConcept(0x165f1d0525064544L, 0x895e1424f54166ecL, 0x375cadc475172168L, "org.iets3.variability.featuremodel.base.structure.FeatureModelInclude");
     /*package*/ static final SConcept AbstractConstraint$MS = MetaAdapterFactory.getConcept(0x165f1d0525064544L, 0x895e1424f54166ecL, 0x7cde27c7fd7eea4cL, "org.iets3.variability.featuremodel.base.structure.AbstractConstraint");
     /*package*/ static final SConcept TextBlock$N8 = MetaAdapterFactory.getConcept(0xd4280a54f6df4383L, 0xaa41d1b2bffa7eb1L, 0x743b6d0940760196L, "com.mbeddr.core.base.structure.TextBlock");
-    /*package*/ static final SConcept FeatureModelInclude$Iq = MetaAdapterFactory.getConcept(0x165f1d0525064544L, 0x895e1424f54166ecL, 0x375cadc475172168L, "org.iets3.variability.featuremodel.base.structure.FeatureModelInclude");
+    /*package*/ static final SConcept StringType$uX = MetaAdapterFactory.getConcept(0xf3061a5392264cc5L, 0xa443f952ceaf5816L, 0x11d47da71ecL, "jetbrains.mps.baseLanguage.structure.StringType");
   }
 
   private static final class LINKS {
@@ -812,7 +842,7 @@ public class GrammarActionsDescriptor extends AbstractGrammarActionDescriptor im
   }
 
   private static final class PROPS {
-    /*package*/ static final SProperty defaultState$z3_z = MetaAdapterFactory.getProperty(0x165f1d0525064544L, 0x895e1424f54166ecL, 0x375cadc475172167L, 0x74046bf85651dafaL, "defaultState");
     /*package*/ static final SProperty name$MnvL = MetaAdapterFactory.getProperty(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L, 0x110396ec041L, "name");
+    /*package*/ static final SProperty defaultState$z3_z = MetaAdapterFactory.getProperty(0x165f1d0525064544L, 0x895e1424f54166ecL, 0x375cadc475172167L, 0x74046bf85651dafaL, "defaultState");
   }
 }
