@@ -5,19 +5,28 @@ All notable changes to this project are documented in this file.
 Format of the log is _loosely_ based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 The project does _not_ follow Semantic Versioning and the changes are documented in reverse chronological order, grouped by calendar month.
 
+## July 2026
+### Added
+- IFunctionLike takes arguments and named body content into account when performing ab uniqueness name check
+
 ## June 2026
 
 ### Added
-
+- Operatore 'isNot' and 'isNotIn' have been introduced for enumerations. The first checks if a given enumeration element is not equal to another one. The second checks whether this element is not contained in a list.
 - Variability: For the filtering of 150% models, a new API for `IRenamer` is provided. It allows renaming all clones of an instantiated element in one step. The old API which allows renaming only one-by-one is still available - this is not a breaking change.
 - Variability: Introduced extension point `configCombinationLogicExtPoint` (interface `IConfigCombinationLogic`) to make the logic of combining configurations (via `extends`, `abstract` and referenced sub-configurations) configurable per application.
 - Variability: Configuration checking for referenced abstract sub-configurations now respects the active combination logic, and configuration hashing was extended to cover a configuration together with all configurations reachable from it.
+
+### Changed
+
+- CLI interpreter: Relaxed the reference scope of `CustomRunnerAspect` so it can reference `BuildMps_Solution`s outside its containing root, allowing a proper MPS build to be composed for command-line interpreter test runs. The generator was adapted accordingly, so the `execTestsByInterpreter` Gradle task works end-to-end again.
 
 
 ## May 2026
 
 ### Fixed
 
+- Variability: The editing of feature models in tree layout has been improved. E.g., typing ENTER on a feature will create a new sibling. Typing ":" in a feature's name will change it to a feature model include node. The intentions "Change to feature / feature model include" previously lost information about the feature, this is also fixed.
 - Variability: Fix workaround for using for-all-variants checking rules outside the IDE (e.g., on a build server). Due to MPS-34340, the for-all-variants checking cannot be done outside the IDE if the model under check has more than one root nodes. This bugfix includes roots of LogicalChildren in the list of used root nodes.
 - Physical units (language `org.iets3.core.expr.typetags.physunits`): Update unit in typesystem after prefix has been removed (e.g., from "cm" to "m").
 - `org.iets3.core.expr.datetime.runtime` catch DateTimeException causing an internal interpreter exception ([#1773](https://github.com/IETS3/iets3.opensource/issues/1773))

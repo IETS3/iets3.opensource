@@ -22,7 +22,6 @@
     <import index="7kwb" ref="r:54537613-52b5-40a8-b223-e87f0960b04f(jetbrains.mps.build.mps.generator.template.main@generator)" />
     <import index="2txq" ref="r:2c8fa2a8-11a0-4729-bd56-47f702d30278(jetbrains.mps.build.mps.behavior)" />
     <import index="426s" ref="r:1c8c1989-0591-468a-b1d1-b72fb2712738(jetbrains.mps.build.mps.runner.generator.template.main@generator)" />
-    <import index="mhbf" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.model(MPS.OpenAPI/)" />
     <import index="as3y" ref="r:0f2b4a26-93a1-4327-97ef-ca91b7a4cf5e(jetbrains.mps.build.mps.runner.structure)" />
     <import index="boe" ref="r:4e917293-f5b9-4023-b36a-fcf2132c435c(jetbrains.mps.build.mps.runner.accessories)" />
     <import index="tos2" ref="r:19e846e2-aa6a-48a9-8367-2a1eda2709e7(jetbrains.mps.build.mps.runner.behavior)" />
@@ -156,6 +155,9 @@
       <concept id="6666499814681541919" name="jetbrains.mps.core.xml.structure.XmlTextValue" flags="ng" index="2pMdtt">
         <property id="6666499814681541920" name="text" index="2pMdty" />
       </concept>
+      <concept id="6666499814681299064" name="jetbrains.mps.core.xml.structure.XmlComment" flags="nn" index="2pNm8U">
+        <child id="1622293396949036151" name="lines" index="3o66t8" />
+      </concept>
       <concept id="6666499814681415858" name="jetbrains.mps.core.xml.structure.XmlElement" flags="ng" index="2pNNFK">
         <property id="6666499814681415862" name="tagName" index="2pNNFO" />
         <property id="6999033275467544021" name="shortEmptyNotation" index="qg3DV" />
@@ -165,6 +167,9 @@
       <concept id="6666499814681447923" name="jetbrains.mps.core.xml.structure.XmlAttribute" flags="ng" index="2pNUuL">
         <property id="6666499814681447926" name="attrName" index="2pNUuO" />
         <child id="6666499814681541918" name="value" index="2pMdts" />
+      </concept>
+      <concept id="1622293396949036126" name="jetbrains.mps.core.xml.structure.XmlCommentLine" flags="nn" index="3o66tx">
+        <property id="1622293396949036127" name="text" index="3o66tw" />
       </concept>
       <concept id="1622293396948952339" name="jetbrains.mps.core.xml.structure.XmlText" flags="nn" index="3o6iSG" />
     </language>
@@ -317,6 +322,7 @@
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
       <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
+        <property id="1156234966388" name="shortDescription" index="OYnhT" />
         <child id="5169995583184591170" name="smodelAttribute" index="lGtFl" />
       </concept>
       <concept id="3364660638048049750" name="jetbrains.mps.lang.core.structure.PropertyAttribute" flags="ng" index="A9Btg">
@@ -2696,6 +2702,58 @@
               </node>
             </node>
             <node concept="2VaTY3" id="5eJiSDhB5oI" role="2VaTZU" />
+            <node concept="2Vbh7Z" id="4JguHscXsk9" role="2VaTZU">
+              <property role="OYnhT" value="" />
+              <node concept="2pNNFK" id="4JguHscXska" role="2Vbh7K">
+                <property role="2pNNFO" value="taskdef" />
+                <node concept="2pNm8U" id="4JguHsdzJxD" role="3o6s8t">
+                  <node concept="3o66tx" id="4JguHsdzJxE" role="3o66t8">
+                    <property role="3o66tw" value=" Register the MPS ant tasks (antlib.xml) so the runMPS task below resolves. " />
+                  </node>
+                  <node concept="3o66tx" id="4JguHsdzJxF" role="3o66t8">
+                    <property role="3o66tw" value=" This starter project does no module generation, so the standard build generator emits no project-level taskdef; declare it here. " />
+                  </node>
+                </node>
+                <node concept="2pNUuL" id="4JguHscXskb" role="2pNNFR">
+                  <property role="2pNUuO" value="resource" />
+                  <node concept="2pMdtt" id="4JguHscXskd" role="2pMdts">
+                    <property role="2pMdty" value="jetbrains/mps/build/ant/antlib.xml" />
+                  </node>
+                </node>
+                <node concept="2pNNFK" id="4JguHscXskc" role="3o6s8t">
+                  <property role="2pNNFO" value="classpath" />
+                  <node concept="2pNNFK" id="4JguHscXske" role="3o6s8t">
+                    <property role="2pNNFO" value="pathelement" />
+                    <property role="qg3DV" value="true" />
+                    <node concept="2pNUuL" id="4JguHscXskg" role="2pNNFR">
+                      <property role="2pNUuO" value="location" />
+                      <node concept="2pMdtt" id="4JguHscXskj" role="2pMdts">
+                        <property role="2pMdty" value="${artifacts.mps}/lib/ant/lib/ant-mps.jar" />
+                      </node>
+                    </node>
+                  </node>
+                  <node concept="2pNNFK" id="4JguHscXskf" role="3o6s8t">
+                    <property role="2pNNFO" value="fileset" />
+                    <node concept="2pNUuL" id="4JguHscXskh" role="2pNNFR">
+                      <property role="2pNUuO" value="dir" />
+                      <node concept="2pMdtt" id="4JguHscXskk" role="2pMdts">
+                        <property role="2pMdty" value="${artifacts.mps}/lib" />
+                      </node>
+                    </node>
+                    <node concept="2pNNFK" id="4JguHscXski" role="3o6s8t">
+                      <property role="2pNNFO" value="include" />
+                      <property role="qg3DV" value="true" />
+                      <node concept="2pNUuL" id="4JguHscXskl" role="2pNNFR">
+                        <property role="2pNUuO" value="name" />
+                        <node concept="2pMdtt" id="4JguHscXskm" role="2pMdts">
+                          <property role="2pMdty" value="util-8.jar" />
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
             <node concept="2Vbh7Z" id="3BExUgsKUkr" role="2VaTZU">
               <node concept="2pNNFK" id="3BExUgsKUuU" role="2Vbh7K">
                 <property role="2pNNFO" value="runMPS" />

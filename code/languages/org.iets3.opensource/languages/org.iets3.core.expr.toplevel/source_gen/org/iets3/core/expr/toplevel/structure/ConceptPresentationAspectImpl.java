@@ -9,6 +9,8 @@ import org.jetbrains.mps.openapi.language.SAbstractConcept;
 import jetbrains.mps.smodel.runtime.ConceptPresentationBuilder;
 
 public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase {
+  private ConceptPresentation props_AbstractEnumInTarget;
+  private ConceptPresentation props_AbstractEnumSingleInTarget;
   private ConceptPresentation props_AbstractEnumSortOrder;
   private ConceptPresentation props_AbstractFunctionAdapter;
   private ConceptPresentation props_AbstractFunctionLikeAdapter;
@@ -26,6 +28,8 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
   private ConceptPresentation props_EnumIndexOp;
   private ConceptPresentation props_EnumIsInSelector;
   private ConceptPresentation props_EnumIsInTarget;
+  private ConceptPresentation props_EnumIsNotInTarget;
+  private ConceptPresentation props_EnumIsNotTarget;
   private ConceptPresentation props_EnumIsTarget;
   private ConceptPresentation props_EnumLiteral;
   private ConceptPresentation props_EnumLiteralRef;
@@ -87,6 +91,18 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
   public ConceptPresentation getDescriptor(SAbstractConcept c) {
     StructureAspectDescriptor structureDescriptor = (StructureAspectDescriptor) myLanguageRuntime.getAspect(jetbrains.mps.smodel.runtime.StructureAspectDescriptor.class);
     switch (structureDescriptor.internalIndex(c)) {
+      case LanguageConceptSwitch.AbstractEnumInTarget:
+        if (props_AbstractEnumInTarget == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          props_AbstractEnumInTarget = cpb.create();
+        }
+        return props_AbstractEnumInTarget;
+      case LanguageConceptSwitch.AbstractEnumSingleInTarget:
+        if (props_AbstractEnumSingleInTarget == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          props_AbstractEnumSingleInTarget = cpb.create();
+        }
+        return props_AbstractEnumSingleInTarget;
       case LanguageConceptSwitch.AbstractEnumSortOrder:
         if (props_AbstractEnumSortOrder == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
@@ -212,15 +228,33 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
         return props_EnumIsInSelector;
       case LanguageConceptSwitch.EnumIsInTarget:
         if (props_EnumIsInTarget == null) {
-          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder(0x71934284d7d145eeL, 0xa0548c072591085fL, 0x6f1c76e8c8cb0187L);
+          cpb.deprecateAggregation(0x6f1c76e8c8cb018aL, "selectors_old");
           cpb.shortDesc("check the enumeration literal against several literals");
           cpb.rawPresentation("isIn");
           props_EnumIsInTarget = cpb.create();
         }
         return props_EnumIsInTarget;
+      case LanguageConceptSwitch.EnumIsNotInTarget:
+        if (props_EnumIsNotInTarget == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.shortDesc("check the enumeration literal is NOT in several literals");
+          cpb.rawPresentation("isNotIn");
+          props_EnumIsNotInTarget = cpb.create();
+        }
+        return props_EnumIsNotInTarget;
+      case LanguageConceptSwitch.EnumIsNotTarget:
+        if (props_EnumIsNotTarget == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.shortDesc("check the enumeration literal is NOT equal to another literal");
+          cpb.rawPresentation("isNot");
+          props_EnumIsNotTarget = cpb.create();
+        }
+        return props_EnumIsNotTarget;
       case LanguageConceptSwitch.EnumIsTarget:
         if (props_EnumIsTarget == null) {
-          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder(0x71934284d7d145eeL, 0xa0548c072591085fL, 0x5a9550a5f5da059dL);
+          cpb.deprecateAssociation(0x5a9550a5f5e318deL, "literal_old");
           cpb.shortDesc("check the enumeration literal against another literal");
           cpb.rawPresentation("is");
           props_EnumIsTarget = cpb.create();

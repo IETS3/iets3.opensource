@@ -287,6 +287,7 @@
           <module ref="9a4afe51-f114-4595-b5df-048ce3c596be(jetbrains.mps.runtime)" kind="rt" />
           <module ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065(JDK)" kind="cl" />
           <module ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34(MPS.OpenAPI)" kind="cl" />
+          <module ref="c7a315e6-1d93-4186-85bc-2dfafd1ccc21(com.mbeddr.mpsutil.common)" kind="cl" />
           <module ref="798100da-4f0a-421a-b991-71f8c50ce5d2(jetbrains.mps.build)" kind="cl" />
           <module ref="0cf935df-4699-4e9c-a132-fa109541cba3(jetbrains.mps.build.mps)" kind="cl" />
           <module ref="427a473d-5177-432c-9905-bcbceb71b996(jetbrains.mps.build.mps.runner)" kind="cl" />
@@ -5976,7 +5977,6 @@
           <module ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea(MPS.Core)" kind="cl" />
           <module ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224(MPS.Editor)" kind="cl" />
           <module ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34(MPS.OpenAPI)" kind="cl" />
-          <module ref="742f6602-5a2f-4313-aa6e-ae1cd4ffdc61(MPS.Platform)" kind="cl" />
           <module ref="d4280a54-f6df-4383-aa41-d1b2bffa7eb1(com.mbeddr.core.base)" kind="cl" />
           <module ref="766348f7-6a67-4b85-9323-384840132299(de.itemis.mps.editor.math)" kind="cl" />
           <module ref="ecfb9949-7433-4db5-85de-0f84d172e4ce(de.q60.mps.collections.libs)" kind="cl" />
@@ -13597,6 +13597,7 @@
           <module ref="cfaa4966-b7d5-4b69-b66a-309a6e1a7290(org.iets3.core.expr.base)" kind="cl" />
           <module ref="dbe08fb5-334d-4b64-86a0-622406fa0e87(org.iets3.core.expr.base.runtime)" kind="cl" />
           <module ref="2f7e2e35-6e74-4c43-9fa5-2465d68f5996(org.iets3.core.expr.collections)" kind="cl" />
+          <module ref="6b277d9a-d52d-416f-a209-1919bd737f50(org.iets3.core.expr.simpleTypes)" kind="cl" />
           <module ref="71934284-d7d1-45ee-a054-8c072591085f(org.iets3.core.expr.toplevel)" kind="cl" />
           <module ref="9b66c5c9-38bf-4315-a96f-9f4e212c69cb(org.iets3.variability.base)" kind="cl" />
         </dependencies>
@@ -15346,7 +15347,7 @@
     </copy>
   </target>
   
-  <target name="java.compile.org.iets3.variability.featuremodel.base" depends="java.compile.org.iets3.analysis.base, java.compile.org.iets3.analysis.solversupport.util, java.compile.org.iets3.core.base, java.compile.org.iets3.core.expr.base, java.compile.org.iets3.core.expr.base.runtime, java.compile.org.iets3.core.expr.collections, java.compile.org.iets3.core.expr.lambda, java.compile.org.iets3.core.expr.path, java.compile.org.iets3.core.expr.toplevel, java.compile.java.modules.cycle.1, fetchDependencies">
+  <target name="java.compile.org.iets3.variability.featuremodel.base" depends="java.compile.org.iets3.analysis.base, java.compile.org.iets3.analysis.solversupport.util, java.compile.org.iets3.core.base, java.compile.org.iets3.core.expr.base, java.compile.org.iets3.core.expr.base.runtime, java.compile.org.iets3.core.expr.collections, java.compile.org.iets3.core.expr.lambda, java.compile.org.iets3.core.expr.path, java.compile.org.iets3.core.expr.simpleTypes, java.compile.org.iets3.core.expr.toplevel, java.compile.java.modules.cycle.1, fetchDependencies">
     <mkdir dir="${iets3.lang.opensource}/languages/org.iets3.variability.featuremodel.base/source_gen" />
     <mkdir dir="${build.tmp}/java/out/org.iets3.variability.featuremodel.base" />
     <javac2 destdir="${build.tmp}/java/out/org.iets3.variability.featuremodel.base" fork="false" encoding="utf8" includeantruntime="false" debug="true" source="1.8" target="1.8">
@@ -15392,6 +15393,7 @@
         <pathelement path="${build.tmp}/java/out/org.iets3.core.expr.collections" />
         <pathelement path="${build.tmp}/java/out/org.iets3.core.expr.lambda" />
         <pathelement path="${build.tmp}/java/out/org.iets3.core.expr.path" />
+        <pathelement path="${build.tmp}/java/out/org.iets3.core.expr.simpleTypes" />
         <pathelement path="${build.tmp}/java/out/org.iets3.core.expr.toplevel" />
         <fileset file="${artifacts.mps}/plugins/mps-vcs/lib/vcs-platform.jar" />
         <fileset file="${artifacts.mps}/lib/app.jar" />
@@ -29005,6 +29007,7 @@
         <fileset file="${artifacts.mps}/lib/stats.jar" />
         <fileset file="${artifacts.mps}/lib/platform-loader.jar" />
         <fileset file="${artifacts.mps}/lib/trove.jar" />
+        <fileset file="${artifacts.com.mbeddr.platform}/com.mbeddr.mpsutil.common/languages/group.common/com.mbeddr.mpsutil.common.jar" />
         <fileset file="${artifacts.mps}/languages/runtimes/jetbrains.mps.analyzers.runtime.jar" />
         <fileset file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.logging.runtime.jar" />
         <fileset file="${artifacts.mps}/plugins/mps-build/languages/build/jetbrains.mps.build.jar" />
