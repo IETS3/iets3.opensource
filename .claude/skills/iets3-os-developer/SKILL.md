@@ -1,6 +1,6 @@
 ---
 name: iets3-os-developer
-description: Repo-specific development knowledge for IETS3/iets3.opensource — existing infrastructure (checking-rule locations, test models, sandbox solutions) and component knowledge. TRIGGER when: implementing a ticket or bugfix, preparing or reviewing a PR, or doing any language development work in the iets3.opensource repository.
+description: Repo-specific development knowledge for IETS3/iets3.opensource — existing infrastructure and component knowledge across the variability languages, the KernelF expression languages, and physical units. TRIGGER when: implementing a ticket or bugfix, preparing or reviewing a PR, or doing any language development work in the iets3.opensource repository.
 ---
 
 <!-- synced-with-mps-developer: 2026-07-12 -->
@@ -21,6 +21,11 @@ Like the other layers, this is a growing knowledge base fed by analyzing merged 
 - os is the **upstream half** of the IETS3 family: core consumes it as a pinned binary build. Changes here often get a companion PR in iets3.core — see "The core ↔ opensource split" in `mps-platform-projects`.
 - Branching, tickets, and the PR workflow follow the IETS3 family conventions — see `mps-platform-projects`.
 
-## References (load progressively — only what the task needs)
+## References (load progressively — only the topic(s) your task touches)
 
-- **`references/codebase-notes.md`** — existing infrastructure and component knowledge: checking-rule and test-model locations for the variability languages, sandbox solutions. Load when implementing or changing anything in this codebase.
+Organized by domain; this repo skill will grow, so knowledge is split by topic from the start:
+
+- **`references/variability.md`** — the variability languages (`org.iets3.variability.*`): feature-model checking rules and constraints, the skeleton-tree viewer.
+- **`references/kernelf.md`** — the KernelF expression languages (`org.iets3.core.expr.*`, physical units excluded): number types and the typesystem.
+- **`references/physunits.md`** — the physical-units language (`typetags.physunits`); note that `typetags.units` is the deprecated legacy implementation and must not be used.
+- **`references/misc.md`** — cross-cutting knowledge not tied to one domain (e.g. sandbox/testing infrastructure); home for new topics until they warrant their own file.
