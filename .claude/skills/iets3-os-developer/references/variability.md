@@ -8,9 +8,24 @@ Repo-specific knowledge for the variability languages (`org.iets3.variability.*`
 - Domain predicates for rules are **behavior methods on the structure concepts** (e.g. `FeatureAttribute.notPresentValueForSolver(): Optional<Expression>`) — extend those rather than traversing models inside rule bodies.
 - Checking-rule tests live in **`test.org.iets3.variability.featuremodel.base.checking_rules@tests`** — a dedicated test model per rule group, using inline warning-check annotations bound to the specific rule (`testing.warning-check-annotations` in `mps-developer`).
 
+## Configuration editor
+
+- The configuration editors and their **cell action maps** (enter → `INSERT` new config line after; shift-enter → `INSERT_BEFORE`, active only in the header line; plus deletion/creation/paste restrictions) live in **`org.iets3.variability.configuration.base.editor`** — *not* in `featuremodel.base`, whose configuration-related concepts are **deprecated** and whose editors are kept only to display un-migrated legacy models (PR #1431 moved the behavior here). Follow `editor.action-maps` / `editor.deprecated-concept-editors` in `mps-developer`.
+
+## Feature-model (tree/diagram) editor
+
+- The feature-model editor lives in **`org.iets3.variability.featuremodel.base.editor`** (`TopPartFeature` component, `Feature_Keymap`). A newly created child/sibling defaults to a plain **`Feature`**; typing **`:`** on a feature converts it to a **`FeatureModelInclude`** (also with cardinality) via the keymap. Conversions must **preserve** cardinality/constraints — the `changeFeature` parametric intention in `featuremodel.base.intentions` had a bug where it dropped them (PR #1760; `editor.type-conversion-preserve-data` in `mps-developer`).
+- This editor behavior is covered by **`EditorTestCase`s** in `test.org.iets3.variability.featuremodel.base.editor@tests` (`NewChildIsFeature`, `TypeSemicolonFeature`, `TypeBracketFeatureCardinality`, …) — extend them when touching the keymap (`testing.editor-tests`).
+
 ## Feature-model constraints
 
 - **`FeatureModel.name` is derived** from the root feature's name via a get-property constraint in `featuremodel.base.constraints`, with sentinel `'NO_NAME'` when the root is null/unnamed (`constraints.derived-property-sentinel` in `mps-developer`, PR #1714) — don't validate against the raw derived name.
+
+## Configuration combination logic (extension points)
+
+- How configurations combine (`extends`, `abstract`, sub-config references) is pluggable via the **`configCombinationLogicExtPoint`** extension point + interface **`IConfigCombinationLogic`** (`allowAbstractSubConfigs()`, …) in `org.iets3.variability.configuration.base.plugin`, default `DefaultConfigCombinationLogic` (PR #1832; `plugin.extension-point` in `mps-developer`). The `check_FeatureModelConfiguration` typesystem rule consults it rather than hard-coding — so per-application rules differ.
+- Priority-based extension selection is shared infrastructure in **`org.iets3.variability.base.plugin`**: `IExtensionWithPriority` + `AbstractExtensionWithPriority`/`AbstractExtensionProvider` (`plugin.priority-extension`). The enriched-config-name extension point (`enrichedConfigNameLogicExtPoint`) is built on it — reuse this base for new priority extension points.
+- **Config hashing**: transient per-config hashes live in `configuration.base.behavior` — `AbstractConfigHashing` with `SolverRelevantDataHashing` and `AllDetailsHashing`; cached on the config node, recomputed only when the source changes. `AllReachableConfigTraversal` (a `Traversal` over sub-config references) visits a config and everything reachable from it (consumed by core #1755).
 
 ## Skeleton tree viewer
 
