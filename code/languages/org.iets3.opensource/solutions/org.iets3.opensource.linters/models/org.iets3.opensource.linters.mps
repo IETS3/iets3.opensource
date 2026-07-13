@@ -142,7 +142,7 @@
         <child id="1716492013482699988" name="check" index="14J5yK" />
         <child id="2555875871751847640" name="documentation" index="1MIJl8" />
       </concept>
-      <concept id="2555875871751904530" name="org.mpsqa.lint.generic.structure.GenericCheckingFunction" flags="ig" index="1MIXq2" />
+      <concept id="2555875871751904530" name="org.mpsqa.lint.generic.structure.GenericCheckingFunction" flags="ng" index="1MIXq2" />
     </language>
     <language id="fd392034-7849-419d-9071-12563d152375" name="jetbrains.mps.baseLanguage.closures">
       <concept id="2524418899405758586" name="jetbrains.mps.baseLanguage.closures.structure.InferredClosureParameterDeclaration" flags="ig" index="gl6BB" />
@@ -227,22 +227,22 @@
     </language>
   </registry>
   <node concept="2wR3oc" id="1y9CZgddoKE">
-    <ref role="2wR3oD" to="wpu7:1anGYsMsnkr" resolve="broken_module_dependencies" />
+    <ref role="2wR3oD" to="wpu7:1anGYsMsnkr" />
   </node>
   <node concept="2wR3oc" id="1y9CZgddoKF">
-    <ref role="2wR3oD" to="vi29:4aEqBbbsVSI" resolve="empty_generators" />
+    <ref role="2wR3oD" to="vi29:4aEqBbbsVSI" />
   </node>
   <node concept="2wR3oc" id="1y9CZgddoKG">
-    <ref role="2wR3oD" to="emnw:3jiJ$OUDXsn" resolve="models_in_same_project_with_same_IDs" />
+    <ref role="2wR3oD" to="emnw:3jiJ$OUDXsn" />
   </node>
   <node concept="2wR3oc" id="1y9CZgddoKJ">
-    <ref role="2wR3oD" to="wpu7:52u1lglB0sa" resolve="not_migrated_modules_and_models" />
+    <ref role="2wR3oD" to="wpu7:52u1lglB0sa" />
   </node>
   <node concept="2wR3oc" id="1y9CZgddoKK">
-    <ref role="2wR3oD" to="mjm5:1WMZ_AZ2QHN" resolve="not_updated_resolve_info" />
+    <ref role="2wR3oD" to="mjm5:1WMZ_AZ2QHN" />
   </node>
   <node concept="2wR3oc" id="1y9CZgddoKL">
-    <ref role="2wR3oD" to="emnw:7hx0FZiTgg2" resolve="not_used_model_dependencies" />
+    <ref role="2wR3oD" to="emnw:7hx0FZiTgg2" />
   </node>
   <node concept="1MIHA_" id="7PLfUB8ZIDz">
     <property role="TrG5h" value="not_used_module_dependencies_overwritten" />
