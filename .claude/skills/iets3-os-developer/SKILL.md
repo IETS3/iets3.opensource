@@ -3,7 +3,7 @@ name: iets3-os-developer
 description: Repo-specific development knowledge for IETS3/iets3.opensource — existing infrastructure and component knowledge across the variability languages, the KernelF expression languages, and physical units. TRIGGER when: implementing a ticket or bugfix, preparing or reviewing a PR, or doing any language development work in the iets3.opensource repository.
 ---
 
-<!-- synced-with-mps-developer: 2026-07-12 -->
+<!-- synced-with-mps-developer: 2026-07-13 -->
 
 ## What this skill is
 
