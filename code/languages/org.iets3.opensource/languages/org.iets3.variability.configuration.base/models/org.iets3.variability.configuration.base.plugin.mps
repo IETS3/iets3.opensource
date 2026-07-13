@@ -14,7 +14,7 @@
     <use id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections" version="2" />
     <use id="774bf8a0-62e5-41e1-af63-f4812e60e48b" name="jetbrains.mps.baseLanguage.checkedDots" version="0" />
     <use id="3a13115c-633c-4c5c-bbcc-75c4219e9555" name="jetbrains.mps.lang.quotation" version="5" />
-    <use id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc" version="2" />
+    <use id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc" version="3" />
     <use id="c0080a47-7e37-4558-bee9-9ae18e690549" name="jetbrains.mps.lang.extension" version="2" />
     <use id="c7d5b9dd-a05f-4be2-bc73-f2e16994cc67" name="jetbrains.mps.baseLanguage.lightweightdsl" version="1" />
     <use id="760a0a8c-eabb-4521-8bfd-65db761a9ba3" name="jetbrains.mps.baseLanguage.logging" version="0" />
@@ -59,7 +59,7 @@
   </imports>
   <registry>
     <language id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior">
-      <concept id="3235159848334022093" name="jetbrains.mps.lang.behavior.structure.Node_ConceptMethodCall" flags="ng" index="3zqWPK" />
+      <concept id="3235159848334022093" name="jetbrains.mps.lang.behavior.structure.Node_ConceptMethodCall" flags="nn" index="3zqWPK" />
     </language>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
       <concept id="1080223426719" name="jetbrains.mps.baseLanguage.structure.OrExpression" flags="nn" index="22lmx$" />
@@ -329,7 +329,6 @@
         <reference id="6832197706140518108" name="param" index="zr_51" />
       </concept>
       <concept id="5349172909345501395" name="jetbrains.mps.baseLanguage.javadoc.structure.BaseDocComment" flags="ng" index="P$AiS">
-        <child id="8465538089690331502" name="body" index="TZ5H$" />
         <child id="5383422241790532083" name="tags" index="3nqlJM" />
       </concept>
       <concept id="5349172909345532724" name="jetbrains.mps.baseLanguage.javadoc.structure.MethodDocComment" flags="ng" index="P$JXv" />
@@ -337,14 +336,8 @@
         <property id="8465538089690881934" name="text" index="TUZQ4" />
         <child id="6832197706140518123" name="parameter" index="zr_5Q" />
       </concept>
-      <concept id="8465538089690331500" name="jetbrains.mps.baseLanguage.javadoc.structure.CommentLine" flags="ng" index="TZ5HA">
-        <child id="8970989240999019149" name="part" index="1dT_Ay" />
-      </concept>
-      <concept id="8970989240999019143" name="jetbrains.mps.baseLanguage.javadoc.structure.TextCommentLinePart" flags="ng" index="1dT_AC">
-        <property id="8970989240999019144" name="text" index="1dT_AB" />
-      </concept>
       <concept id="2068944020170241612" name="jetbrains.mps.baseLanguage.javadoc.structure.ClassifierDocComment" flags="ng" index="3UR2Jj" />
-      <concept id="5085607816302529296" name="jetbrains.mps.baseLanguage.javadoc.structure.IHoldCommentLines" flags="ng" index="1VezTd">
+      <concept id="5085607816302529296" name="jetbrains.mps.baseLanguage.javadoc.structure.IHoldCommentLines" flags="ngI" index="1VezTd">
         <child id="5085607816302529587" name="commentBody" index="1Vez_I" />
       </concept>
     </language>
@@ -12535,14 +12528,74 @@
       <node concept="3Tm1VV" id="6vXjBknaceo" role="1B3o_S" />
       <node concept="10P_77" id="6vXjBknacaI" role="3clF45" />
       <node concept="P$JXv" id="6vXjBknacnj" role="lGtFl">
-        <node concept="TZ5HA" id="6vXjBknacnk" role="TZ5H$">
-          <node concept="1dT_AC" id="6vXjBknacnl" role="1dT_Ay">
-            <property role="1dT_AB" value="Checks if the enriched name is actually different from the configuration's manual name." />
+        <node concept="1PaTwC" id="5qG9$j3kpyl" role="1Vez_I">
+          <node concept="3oM_SD" id="5qG9$j3kpym" role="1PaTwD">
+            <property role="3oM_SC" value="Checks" />
+          </node>
+          <node concept="3oM_SD" id="5qG9$j3kpyn" role="1PaTwD">
+            <property role="3oM_SC" value="if" />
+          </node>
+          <node concept="3oM_SD" id="5qG9$j3kpyo" role="1PaTwD">
+            <property role="3oM_SC" value="the" />
+          </node>
+          <node concept="3oM_SD" id="5qG9$j3kpyp" role="1PaTwD">
+            <property role="3oM_SC" value="enriched" />
+          </node>
+          <node concept="3oM_SD" id="5qG9$j3kpyq" role="1PaTwD">
+            <property role="3oM_SC" value="name" />
+          </node>
+          <node concept="3oM_SD" id="5qG9$j3kpyr" role="1PaTwD">
+            <property role="3oM_SC" value="is" />
+          </node>
+          <node concept="3oM_SD" id="5qG9$j3kpys" role="1PaTwD">
+            <property role="3oM_SC" value="actually" />
+          </node>
+          <node concept="3oM_SD" id="5qG9$j3kpyt" role="1PaTwD">
+            <property role="3oM_SC" value="different" />
+          </node>
+          <node concept="3oM_SD" id="5qG9$j3kpyu" role="1PaTwD">
+            <property role="3oM_SC" value="from" />
+          </node>
+          <node concept="3oM_SD" id="5qG9$j3kpyv" role="1PaTwD">
+            <property role="3oM_SC" value="the" />
+          </node>
+          <node concept="3oM_SD" id="5qG9$j3kpyw" role="1PaTwD">
+            <property role="3oM_SC" value="configuration's" />
+          </node>
+          <node concept="3oM_SD" id="5qG9$j3kpyx" role="1PaTwD">
+            <property role="3oM_SC" value="manual" />
+          </node>
+          <node concept="3oM_SD" id="5qG9$j3kpyy" role="1PaTwD">
+            <property role="3oM_SC" value="name." />
           </node>
         </node>
-        <node concept="TZ5HA" id="6vXjBknateY" role="TZ5H$">
-          <node concept="1dT_AC" id="6vXjBknateZ" role="1dT_Ay">
-            <property role="1dT_AB" value="It is recommended to avoid string comparisons, if possible. " />
+        <node concept="1PaTwC" id="5qG9$j3kpyz" role="1Vez_I">
+          <node concept="3oM_SD" id="5qG9$j3kpy$" role="1PaTwD">
+            <property role="3oM_SC" value="It" />
+          </node>
+          <node concept="3oM_SD" id="5qG9$j3kpy_" role="1PaTwD">
+            <property role="3oM_SC" value="is" />
+          </node>
+          <node concept="3oM_SD" id="5qG9$j3kpyA" role="1PaTwD">
+            <property role="3oM_SC" value="recommended" />
+          </node>
+          <node concept="3oM_SD" id="5qG9$j3kpyB" role="1PaTwD">
+            <property role="3oM_SC" value="to" />
+          </node>
+          <node concept="3oM_SD" id="5qG9$j3kpyC" role="1PaTwD">
+            <property role="3oM_SC" value="avoid" />
+          </node>
+          <node concept="3oM_SD" id="5qG9$j3kpyD" role="1PaTwD">
+            <property role="3oM_SC" value="string" />
+          </node>
+          <node concept="3oM_SD" id="5qG9$j3kpyE" role="1PaTwD">
+            <property role="3oM_SC" value="comparisons," />
+          </node>
+          <node concept="3oM_SD" id="5qG9$j3kpyF" role="1PaTwD">
+            <property role="3oM_SC" value="if" />
+          </node>
+          <node concept="3oM_SD" id="5qG9$j3kpyG" role="1PaTwD">
+            <property role="3oM_SC" value="possible." />
           </node>
         </node>
       </node>
@@ -12560,9 +12613,39 @@
         </node>
       </node>
       <node concept="P$JXv" id="1e_Qt5$_Ek" role="lGtFl">
-        <node concept="TZ5HA" id="1e_Qt5$_El" role="TZ5H$">
-          <node concept="1dT_AC" id="1e_Qt5$_Em" role="1dT_Ay">
-            <property role="1dT_AB" value="Returns enriched name for this configuration. Default: The manually defined name." />
+        <node concept="1PaTwC" id="5qG9$j3kpyH" role="1Vez_I">
+          <node concept="3oM_SD" id="5qG9$j3kpyI" role="1PaTwD">
+            <property role="3oM_SC" value="Returns" />
+          </node>
+          <node concept="3oM_SD" id="5qG9$j3kpyJ" role="1PaTwD">
+            <property role="3oM_SC" value="enriched" />
+          </node>
+          <node concept="3oM_SD" id="5qG9$j3kpyK" role="1PaTwD">
+            <property role="3oM_SC" value="name" />
+          </node>
+          <node concept="3oM_SD" id="5qG9$j3kpyL" role="1PaTwD">
+            <property role="3oM_SC" value="for" />
+          </node>
+          <node concept="3oM_SD" id="5qG9$j3kpyM" role="1PaTwD">
+            <property role="3oM_SC" value="this" />
+          </node>
+          <node concept="3oM_SD" id="5qG9$j3kpyN" role="1PaTwD">
+            <property role="3oM_SC" value="configuration." />
+          </node>
+          <node concept="3oM_SD" id="5qG9$j3kpyO" role="1PaTwD">
+            <property role="3oM_SC" value="Default:" />
+          </node>
+          <node concept="3oM_SD" id="5qG9$j3kpyP" role="1PaTwD">
+            <property role="3oM_SC" value="The" />
+          </node>
+          <node concept="3oM_SD" id="5qG9$j3kpyQ" role="1PaTwD">
+            <property role="3oM_SC" value="manually" />
+          </node>
+          <node concept="3oM_SD" id="5qG9$j3kpyR" role="1PaTwD">
+            <property role="3oM_SC" value="defined" />
+          </node>
+          <node concept="3oM_SD" id="5qG9$j3kpyS" role="1PaTwD">
+            <property role="3oM_SC" value="name." />
           </node>
         </node>
       </node>
@@ -12593,14 +12676,83 @@
         <ref role="3uigEE" node="4qv99IrykBs" resolve="IEnrichedConfigNameLogic.DisplayStrategy" />
       </node>
       <node concept="P$JXv" id="3Qgc3xL_1QB" role="lGtFl">
-        <node concept="TZ5HA" id="3Qgc3xL_1QC" role="TZ5H$">
-          <node concept="1dT_AC" id="3Qgc3xL_1QD" role="1dT_Ay">
-            <property role="1dT_AB" value="Selects a strategy whether and where the enriched names should be shown to the user." />
+        <node concept="1PaTwC" id="5qG9$j3kpyT" role="1Vez_I">
+          <node concept="3oM_SD" id="5qG9$j3kpyU" role="1PaTwD">
+            <property role="3oM_SC" value="Selects" />
+          </node>
+          <node concept="3oM_SD" id="5qG9$j3kpyV" role="1PaTwD">
+            <property role="3oM_SC" value="a" />
+          </node>
+          <node concept="3oM_SD" id="5qG9$j3kpyW" role="1PaTwD">
+            <property role="3oM_SC" value="strategy" />
+          </node>
+          <node concept="3oM_SD" id="5qG9$j3kpyX" role="1PaTwD">
+            <property role="3oM_SC" value="whether" />
+          </node>
+          <node concept="3oM_SD" id="5qG9$j3kpyY" role="1PaTwD">
+            <property role="3oM_SC" value="and" />
+          </node>
+          <node concept="3oM_SD" id="5qG9$j3kpyZ" role="1PaTwD">
+            <property role="3oM_SC" value="where" />
+          </node>
+          <node concept="3oM_SD" id="5qG9$j3kpz0" role="1PaTwD">
+            <property role="3oM_SC" value="the" />
+          </node>
+          <node concept="3oM_SD" id="5qG9$j3kpz1" role="1PaTwD">
+            <property role="3oM_SC" value="enriched" />
+          </node>
+          <node concept="3oM_SD" id="5qG9$j3kpz2" role="1PaTwD">
+            <property role="3oM_SC" value="names" />
+          </node>
+          <node concept="3oM_SD" id="5qG9$j3kpz3" role="1PaTwD">
+            <property role="3oM_SC" value="should" />
+          </node>
+          <node concept="3oM_SD" id="5qG9$j3kpz4" role="1PaTwD">
+            <property role="3oM_SC" value="be" />
+          </node>
+          <node concept="3oM_SD" id="5qG9$j3kpz5" role="1PaTwD">
+            <property role="3oM_SC" value="shown" />
+          </node>
+          <node concept="3oM_SD" id="5qG9$j3kpz6" role="1PaTwD">
+            <property role="3oM_SC" value="to" />
+          </node>
+          <node concept="3oM_SD" id="5qG9$j3kpz7" role="1PaTwD">
+            <property role="3oM_SC" value="the" />
+          </node>
+          <node concept="3oM_SD" id="5qG9$j3kpz8" role="1PaTwD">
+            <property role="3oM_SC" value="user." />
           </node>
         </node>
-        <node concept="TZ5HA" id="3Qgc3xL_1U6" role="TZ5H$">
-          <node concept="1dT_AC" id="3Qgc3xL_1U7" role="1dT_Ay">
-            <property role="1dT_AB" value="Might be specific to the feature model of the configuration." />
+        <node concept="1PaTwC" id="5qG9$j3kpz9" role="1Vez_I">
+          <node concept="3oM_SD" id="5qG9$j3kpza" role="1PaTwD">
+            <property role="3oM_SC" value="Might" />
+          </node>
+          <node concept="3oM_SD" id="5qG9$j3kpzb" role="1PaTwD">
+            <property role="3oM_SC" value="be" />
+          </node>
+          <node concept="3oM_SD" id="5qG9$j3kpzc" role="1PaTwD">
+            <property role="3oM_SC" value="specific" />
+          </node>
+          <node concept="3oM_SD" id="5qG9$j3kpzd" role="1PaTwD">
+            <property role="3oM_SC" value="to" />
+          </node>
+          <node concept="3oM_SD" id="5qG9$j3kpze" role="1PaTwD">
+            <property role="3oM_SC" value="the" />
+          </node>
+          <node concept="3oM_SD" id="5qG9$j3kpzf" role="1PaTwD">
+            <property role="3oM_SC" value="feature" />
+          </node>
+          <node concept="3oM_SD" id="5qG9$j3kpzg" role="1PaTwD">
+            <property role="3oM_SC" value="model" />
+          </node>
+          <node concept="3oM_SD" id="5qG9$j3kpzh" role="1PaTwD">
+            <property role="3oM_SC" value="of" />
+          </node>
+          <node concept="3oM_SD" id="5qG9$j3kpzi" role="1PaTwD">
+            <property role="3oM_SC" value="the" />
+          </node>
+          <node concept="3oM_SD" id="5qG9$j3kpzj" role="1PaTwD">
+            <property role="3oM_SC" value="configuration." />
           </node>
         </node>
       </node>
@@ -12618,23 +12770,107 @@
       <node concept="3Tm1VV" id="1e_Qt5$vSS" role="1B3o_S" />
       <node concept="10P_77" id="1e_Qt5$vSj" role="3clF45" />
       <node concept="P$JXv" id="1e_Qt5$_Gt" role="lGtFl">
-        <node concept="TZ5HA" id="1e_Qt5$_Gu" role="TZ5H$">
-          <node concept="1dT_AC" id="1e_Qt5$_Gv" role="1dT_Ay">
-            <property role="1dT_AB" value="If true, the enriched names are used for checking the uniqueness of configurations." />
+        <node concept="1PaTwC" id="5qG9$j3kpzk" role="1Vez_I">
+          <node concept="3oM_SD" id="5qG9$j3kpzl" role="1PaTwD">
+            <property role="3oM_SC" value="If" />
+          </node>
+          <node concept="3oM_SD" id="5qG9$j3kpzm" role="1PaTwD">
+            <property role="3oM_SC" value="true," />
+          </node>
+          <node concept="3oM_SD" id="5qG9$j3kpzn" role="1PaTwD">
+            <property role="3oM_SC" value="the" />
+          </node>
+          <node concept="3oM_SD" id="5qG9$j3kpzo" role="1PaTwD">
+            <property role="3oM_SC" value="enriched" />
+          </node>
+          <node concept="3oM_SD" id="5qG9$j3kpzp" role="1PaTwD">
+            <property role="3oM_SC" value="names" />
+          </node>
+          <node concept="3oM_SD" id="5qG9$j3kpzq" role="1PaTwD">
+            <property role="3oM_SC" value="are" />
+          </node>
+          <node concept="3oM_SD" id="5qG9$j3kpzr" role="1PaTwD">
+            <property role="3oM_SC" value="used" />
+          </node>
+          <node concept="3oM_SD" id="5qG9$j3kpzs" role="1PaTwD">
+            <property role="3oM_SC" value="for" />
+          </node>
+          <node concept="3oM_SD" id="5qG9$j3kpzt" role="1PaTwD">
+            <property role="3oM_SC" value="checking" />
+          </node>
+          <node concept="3oM_SD" id="5qG9$j3kpzu" role="1PaTwD">
+            <property role="3oM_SC" value="the" />
+          </node>
+          <node concept="3oM_SD" id="5qG9$j3kpzv" role="1PaTwD">
+            <property role="3oM_SC" value="uniqueness" />
+          </node>
+          <node concept="3oM_SD" id="5qG9$j3kpzw" role="1PaTwD">
+            <property role="3oM_SC" value="of" />
+          </node>
+          <node concept="3oM_SD" id="5qG9$j3kpzx" role="1PaTwD">
+            <property role="3oM_SC" value="configurations." />
           </node>
         </node>
-        <node concept="TZ5HA" id="2JE7SEA5rxi" role="TZ5H$">
-          <node concept="1dT_AC" id="2JE7SEA5rxj" role="1dT_Ay">
-            <property role="1dT_AB" value="Otherwise, the manually defined names (i.e., values of property FeatureModelConfiguration.name) are used." />
+        <node concept="1PaTwC" id="5qG9$j3kpzy" role="1Vez_I">
+          <node concept="3oM_SD" id="5qG9$j3kpzz" role="1PaTwD">
+            <property role="3oM_SC" value="Otherwise," />
+          </node>
+          <node concept="3oM_SD" id="5qG9$j3kpz$" role="1PaTwD">
+            <property role="3oM_SC" value="the" />
+          </node>
+          <node concept="3oM_SD" id="5qG9$j3kpz_" role="1PaTwD">
+            <property role="3oM_SC" value="manually" />
+          </node>
+          <node concept="3oM_SD" id="5qG9$j3kpzA" role="1PaTwD">
+            <property role="3oM_SC" value="defined" />
+          </node>
+          <node concept="3oM_SD" id="5qG9$j3kpzB" role="1PaTwD">
+            <property role="3oM_SC" value="names" />
+          </node>
+          <node concept="3oM_SD" id="5qG9$j3kpzC" role="1PaTwD">
+            <property role="3oM_SC" value="(i.e.," />
+          </node>
+          <node concept="3oM_SD" id="5qG9$j3kpzD" role="1PaTwD">
+            <property role="3oM_SC" value="values" />
+          </node>
+          <node concept="3oM_SD" id="5qG9$j3kpzE" role="1PaTwD">
+            <property role="3oM_SC" value="of" />
+          </node>
+          <node concept="3oM_SD" id="5qG9$j3kpzF" role="1PaTwD">
+            <property role="3oM_SC" value="property" />
+          </node>
+          <node concept="3oM_SD" id="5qG9$j3kpzG" role="1PaTwD">
+            <property role="3oM_SC" value="FeatureModelConfiguration.name)" />
+          </node>
+          <node concept="3oM_SD" id="5qG9$j3kpzH" role="1PaTwD">
+            <property role="3oM_SC" value="are" />
+          </node>
+          <node concept="3oM_SD" id="5qG9$j3kpzI" role="1PaTwD">
+            <property role="3oM_SC" value="used." />
           </node>
         </node>
       </node>
     </node>
     <node concept="3Tm1VV" id="1e_Qt5zas_" role="1B3o_S" />
     <node concept="3UR2Jj" id="4O1MtdoPj5h" role="lGtFl">
-      <node concept="TZ5HA" id="4O1MtdoPj5i" role="TZ5H$">
-        <node concept="1dT_AC" id="4O1MtdoPj5j" role="1dT_Ay">
-          <property role="1dT_AB" value="Extension API definition for EP &quot;enrichedConfigNameLogicExtPoint&quot;" />
+      <node concept="1PaTwC" id="5qG9$j3kpy7" role="1Vez_I">
+        <node concept="3oM_SD" id="5qG9$j3kpy8" role="1PaTwD">
+          <property role="3oM_SC" value="Extension" />
+        </node>
+        <node concept="3oM_SD" id="5qG9$j3kpy9" role="1PaTwD">
+          <property role="3oM_SC" value="API" />
+        </node>
+        <node concept="3oM_SD" id="5qG9$j3kpya" role="1PaTwD">
+          <property role="3oM_SC" value="definition" />
+        </node>
+        <node concept="3oM_SD" id="5qG9$j3kpyb" role="1PaTwD">
+          <property role="3oM_SC" value="for" />
+        </node>
+        <node concept="3oM_SD" id="5qG9$j3kpyc" role="1PaTwD">
+          <property role="3oM_SC" value="EP" />
+        </node>
+        <node concept="3oM_SD" id="5qG9$j3kpyd" role="1PaTwD">
+          <property role="3oM_SC" value="&quot;enrichedConfigNameLogicExtPoint&quot;" />
         </node>
       </node>
     </node>
@@ -12841,9 +13077,24 @@
     </node>
     <node concept="3Tm1VV" id="7Sbg4UjOBdC" role="1B3o_S" />
     <node concept="3UR2Jj" id="7Sbg4UjOCX6" role="lGtFl">
-      <node concept="TZ5HA" id="7Sbg4UjOCX7" role="TZ5H$">
-        <node concept="1dT_AC" id="7Sbg4UjOCX8" role="1dT_Ay">
-          <property role="1dT_AB" value="Extension API definition for EP &quot;configCombinationLogicExtPoint&quot;" />
+      <node concept="1PaTwC" id="5qG9$j3kpye" role="1Vez_I">
+        <node concept="3oM_SD" id="5qG9$j3kpyf" role="1PaTwD">
+          <property role="3oM_SC" value="Extension" />
+        </node>
+        <node concept="3oM_SD" id="5qG9$j3kpyg" role="1PaTwD">
+          <property role="3oM_SC" value="API" />
+        </node>
+        <node concept="3oM_SD" id="5qG9$j3kpyh" role="1PaTwD">
+          <property role="3oM_SC" value="definition" />
+        </node>
+        <node concept="3oM_SD" id="5qG9$j3kpyi" role="1PaTwD">
+          <property role="3oM_SC" value="for" />
+        </node>
+        <node concept="3oM_SD" id="5qG9$j3kpyj" role="1PaTwD">
+          <property role="3oM_SC" value="EP" />
+        </node>
+        <node concept="3oM_SD" id="5qG9$j3kpyk" role="1PaTwD">
+          <property role="3oM_SC" value="&quot;configCombinationLogicExtPoint&quot;" />
         </node>
       </node>
     </node>

@@ -22,7 +22,7 @@
   </imports>
   <registry>
     <language id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior">
-      <concept id="3235159848334022093" name="jetbrains.mps.lang.behavior.structure.Node_ConceptMethodCall" flags="ng" index="3zqWPK" />
+      <concept id="3235159848334022093" name="jetbrains.mps.lang.behavior.structure.Node_ConceptMethodCall" flags="nn" index="3zqWPK" />
     </language>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
       <concept id="1080223426719" name="jetbrains.mps.baseLanguage.structure.OrExpression" flags="nn" index="22lmx$" />
@@ -198,7 +198,6 @@
       <concept id="1138411891628" name="jetbrains.mps.lang.smodel.structure.SNodeOperation" flags="nn" index="eCIE_">
         <child id="1144104376918" name="parameter" index="1xVPHs" />
       </concept>
-      <concept id="1179409122411" name="jetbrains.mps.lang.smodel.structure.Node_ConceptMethodCall" flags="nn" index="2qgKlT" />
       <concept id="4693937538533521280" name="jetbrains.mps.lang.smodel.structure.OfConceptOperation" flags="ng" index="v3k3i">
         <child id="4693937538533538124" name="requestedConcept" index="v3oSu" />
       </concept>
@@ -2109,12 +2108,12 @@
                 <ref role="cht4Q" to="hm2y:7NJy08a3O99" resolve="DotExpression" />
               </node>
             </node>
-            <node concept="2qgKlT" id="4L5R3LnU_7y" role="2OqNvi">
+            <node concept="3zqWPK" id="5qG9$j3k0sz" role="2OqNvi">
               <ref role="37wK5l" to="pbu6:5WNmJ7DokMG" resolve="expectType" />
-              <node concept="35c_gC" id="4L5R3LnU_7z" role="37wK5m">
+              <node concept="35c_gC" id="5qG9$j3k0s_" role="37wK5m">
                 <ref role="35c_gD" to="yv47:67Y8mp$DN2V" resolve="EnumType" />
               </node>
-              <node concept="3clFbT" id="4L5R3LnU_7$" role="37wK5m">
+              <node concept="3clFbT" id="5qG9$j3k0sA" role="37wK5m">
                 <property role="3clFbU" value="true" />
               </node>
             </node>
@@ -2156,7 +2155,7 @@
                           <ref role="cht4Q" to="hm2y:7NJy08a3O99" resolve="DotExpression" />
                         </node>
                       </node>
-                      <node concept="2qgKlT" id="1F1F0IUZBls" role="2OqNvi">
+                      <node concept="3zqWPK" id="5qG9$j3k0sB" role="2OqNvi">
                         <ref role="37wK5l" to="pbu6:5WNmJ7Ez2mW" resolve="extractContextBaseType" />
                       </node>
                     </node>
@@ -2168,7 +2167,7 @@
                     <ref role="3Tt5mk" to="yv47:67Y8mp$DN3N" resolve="enum" />
                   </node>
                 </node>
-                <node concept="2qgKlT" id="olugnm0T$S" role="2OqNvi">
+                <node concept="3zqWPK" id="5qG9$j3k0sD" role="2OqNvi">
                   <ref role="37wK5l" to="nu60:olugnm0Egc" resolve="effectiveLiterals" />
                 </node>
               </node>
@@ -2187,12 +2186,12 @@
                 <ref role="cht4Q" to="hm2y:7NJy08a3O99" resolve="DotExpression" />
               </node>
             </node>
-            <node concept="2qgKlT" id="3meuf2aVf71" role="2OqNvi">
+            <node concept="3zqWPK" id="5qG9$j3k0sF" role="2OqNvi">
               <ref role="37wK5l" to="pbu6:5WNmJ7DokMG" resolve="expectType" />
-              <node concept="35c_gC" id="3meuf2aVf72" role="37wK5m">
+              <node concept="35c_gC" id="5qG9$j3k0sH" role="37wK5m">
                 <ref role="35c_gD" to="yv47:67Y8mp$DN2V" resolve="EnumType" />
               </node>
-              <node concept="3clFbT" id="3meuf2aVf73" role="37wK5m">
+              <node concept="3clFbT" id="5qG9$j3k0sI" role="37wK5m">
                 <property role="3clFbU" value="true" />
               </node>
             </node>

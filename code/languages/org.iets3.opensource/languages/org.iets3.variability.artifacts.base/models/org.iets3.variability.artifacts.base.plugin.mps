@@ -4,7 +4,7 @@
   <attribute name="doNotGenerate" value="false" />
   <languages>
     <use id="63e0e566-5131-447e-90e3-12ea330e1a00" name="com.mbeddr.mpsutil.blutil" version="3" />
-    <use id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc" version="2" />
+    <use id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc" version="3" />
     <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="12" />
     <use id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections" version="2" />
     <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="19" />
@@ -77,7 +77,7 @@
       </concept>
     </language>
     <language id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior">
-      <concept id="3235159848334022093" name="jetbrains.mps.lang.behavior.structure.Node_ConceptMethodCall" flags="ng" index="3zqWPK" />
+      <concept id="3235159848334022093" name="jetbrains.mps.lang.behavior.structure.Node_ConceptMethodCall" flags="nn" index="3zqWPK" />
     </language>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
       <concept id="1224071154655" name="jetbrains.mps.baseLanguage.structure.AsExpression" flags="nn" index="0kSF2">
@@ -420,7 +420,6 @@
         <reference id="6832197706140518108" name="param" index="zr_51" />
       </concept>
       <concept id="5349172909345501395" name="jetbrains.mps.baseLanguage.javadoc.structure.BaseDocComment" flags="ng" index="P$AiS">
-        <child id="8465538089690331502" name="body" index="TZ5H$" />
         <child id="5383422241790532083" name="tags" index="3nqlJM" />
       </concept>
       <concept id="5349172909345532724" name="jetbrains.mps.baseLanguage.javadoc.structure.MethodDocComment" flags="ng" index="P$JXv" />
@@ -428,15 +427,9 @@
         <property id="8465538089690881934" name="text" index="TUZQ4" />
         <child id="6832197706140518123" name="parameter" index="zr_5Q" />
       </concept>
-      <concept id="8465538089690331500" name="jetbrains.mps.baseLanguage.javadoc.structure.CommentLine" flags="ng" index="TZ5HA">
-        <child id="8970989240999019149" name="part" index="1dT_Ay" />
-      </concept>
       <concept id="8465538089690331492" name="jetbrains.mps.baseLanguage.javadoc.structure.DeprecatedBlockDocTag" flags="ng" index="TZ5HI" />
-      <concept id="8970989240999019143" name="jetbrains.mps.baseLanguage.javadoc.structure.TextCommentLinePart" flags="ng" index="1dT_AC">
-        <property id="8970989240999019144" name="text" index="1dT_AB" />
-      </concept>
       <concept id="2068944020170241612" name="jetbrains.mps.baseLanguage.javadoc.structure.ClassifierDocComment" flags="ng" index="3UR2Jj" />
-      <concept id="5085607816302529296" name="jetbrains.mps.baseLanguage.javadoc.structure.IHoldCommentLines" flags="ng" index="1VezTd">
+      <concept id="5085607816302529296" name="jetbrains.mps.baseLanguage.javadoc.structure.IHoldCommentLines" flags="ngI" index="1VezTd">
         <child id="5085607816302529587" name="commentBody" index="1Vez_I" />
       </concept>
     </language>
@@ -20048,16 +20041,6 @@
         </node>
       </node>
       <node concept="P$JXv" id="1yzsogEc82a" role="lGtFl">
-        <node concept="TZ5HA" id="1yzsogEc82b" role="TZ5H$">
-          <node concept="1dT_AC" id="1yzsogEc82c" role="1dT_Ay">
-            <property role="1dT_AB" value="This method is called during variability filtering, allowing the application code to rename" />
-          </node>
-        </node>
-        <node concept="TZ5HA" id="1yzsogEcaKs" role="TZ5H$">
-          <node concept="1dT_AC" id="1yzsogEcaKt" role="1dT_Ay">
-            <property role="1dT_AB" value="instantiated nodes. It provides some additional arguments which can be used by the renaming-logic." />
-          </node>
-        </node>
         <node concept="TUZQ0" id="1yzsogEc82d" role="3nqlJM">
           <property role="TUZQ4" value="" />
           <node concept="zr_55" id="1yzsogEc82f" role="zr_5Q">
@@ -20184,21 +20167,6 @@
             <node concept="3oM_SD" id="7rQg6MDvZ08" role="1PaTwD">
               <property role="3oM_SC" value="nodes)" />
             </node>
-          </node>
-        </node>
-        <node concept="TZ5HA" id="7Wx7R1Ufvwn" role="TZ5H$">
-          <node concept="1dT_AC" id="7Wx7R1Ufvwo" role="1dT_Ay">
-            <property role="1dT_AB" value="" />
-          </node>
-        </node>
-        <node concept="TZ5HA" id="7Wx7R1Ufvwp" role="TZ5H$">
-          <node concept="1dT_AC" id="7Wx7R1Ufvwq" role="1dT_Ay">
-            <property role="1dT_AB" value="Usually it will be easier to use the renameInstances() method instead, which will provide the" />
-          </node>
-        </node>
-        <node concept="TZ5HA" id="7Wx7R1UfwR3" role="TZ5H$">
-          <node concept="1dT_AC" id="7Wx7R1UfwR4" role="1dT_Ay">
-            <property role="1dT_AB" value="full information and run as a post-processing step." />
           </node>
         </node>
         <node concept="1PaTwC" id="7rQg6MDvYZ8" role="1Vez_I">
@@ -20572,30 +20540,173 @@
       </node>
       <node concept="2JFqV2" id="QTuVAxavE" role="2frcjj" />
       <node concept="P$JXv" id="7Wx7R1Ufnr9" role="lGtFl">
-        <node concept="TZ5HA" id="7Wx7R1Ufnra" role="TZ5H$">
-          <node concept="1dT_AC" id="7Wx7R1Ufnrb" role="1dT_Ay">
-            <property role="1dT_AB" value="Do renaming as a post-processing step. This will be called after it is known which instances" />
-          </node>
-        </node>
-        <node concept="TZ5HA" id="7Wx7R1UfoPX" role="TZ5H$">
-          <node concept="1dT_AC" id="7Wx7R1UfoPY" role="1dT_Ay">
-            <property role="1dT_AB" value="have been created. Thus, the application logic has full information to decide what to do." />
-          </node>
-        </node>
-        <node concept="TZ5HA" id="7Wx7R1UfrEl" role="TZ5H$">
-          <node concept="1dT_AC" id="7Wx7R1UfrEm" role="1dT_Ay">
-            <property role="1dT_AB" value="" />
-          </node>
-        </node>
-        <node concept="TZ5HA" id="7Wx7R1Uft1f" role="TZ5H$">
-          <node concept="1dT_AC" id="7Wx7R1Uft1g" role="1dT_Ay">
-            <property role="1dT_AB" value="Use this method instead of using the simple rename() method above." />
-          </node>
-        </node>
         <node concept="TUZQ0" id="7Wx7R1Ufnrc" role="3nqlJM">
-          <property role="TUZQ4" value="all instances created for a specific component definition" />
+          <property role="TUZQ4" value="" />
           <node concept="zr_55" id="7Wx7R1Ufnre" role="zr_5Q">
             <ref role="zr_51" node="QTuVAt_p3" resolve="instancesOfSameComponent" />
+          </node>
+          <node concept="1PaTwC" id="5qG9$j3km$s" role="1Vez_I">
+            <node concept="3oM_SD" id="5qG9$j3km$t" role="1PaTwD">
+              <property role="3oM_SC" value="all" />
+            </node>
+            <node concept="3oM_SD" id="5qG9$j3km$u" role="1PaTwD">
+              <property role="3oM_SC" value="instances" />
+            </node>
+            <node concept="3oM_SD" id="5qG9$j3km$v" role="1PaTwD">
+              <property role="3oM_SC" value="created" />
+            </node>
+            <node concept="3oM_SD" id="5qG9$j3km$w" role="1PaTwD">
+              <property role="3oM_SC" value="for" />
+            </node>
+            <node concept="3oM_SD" id="5qG9$j3km$x" role="1PaTwD">
+              <property role="3oM_SC" value="a" />
+            </node>
+            <node concept="3oM_SD" id="5qG9$j3km$y" role="1PaTwD">
+              <property role="3oM_SC" value="specific" />
+            </node>
+            <node concept="3oM_SD" id="5qG9$j3km$z" role="1PaTwD">
+              <property role="3oM_SC" value="component" />
+            </node>
+            <node concept="3oM_SD" id="5qG9$j3km$$" role="1PaTwD">
+              <property role="3oM_SC" value="definition" />
+            </node>
+          </node>
+        </node>
+        <node concept="1PaTwC" id="5qG9$j3kmzH" role="1Vez_I">
+          <node concept="3oM_SD" id="5qG9$j3kmzI" role="1PaTwD">
+            <property role="3oM_SC" value="Do" />
+          </node>
+          <node concept="3oM_SD" id="5qG9$j3kmzJ" role="1PaTwD">
+            <property role="3oM_SC" value="renaming" />
+          </node>
+          <node concept="3oM_SD" id="5qG9$j3kmzK" role="1PaTwD">
+            <property role="3oM_SC" value="as" />
+          </node>
+          <node concept="3oM_SD" id="5qG9$j3kmzL" role="1PaTwD">
+            <property role="3oM_SC" value="a" />
+          </node>
+          <node concept="3oM_SD" id="5qG9$j3kmzM" role="1PaTwD">
+            <property role="3oM_SC" value="post-processing" />
+          </node>
+          <node concept="3oM_SD" id="5qG9$j3kmzN" role="1PaTwD">
+            <property role="3oM_SC" value="step." />
+          </node>
+          <node concept="3oM_SD" id="5qG9$j3kmzO" role="1PaTwD">
+            <property role="3oM_SC" value="This" />
+          </node>
+          <node concept="3oM_SD" id="5qG9$j3kmzP" role="1PaTwD">
+            <property role="3oM_SC" value="will" />
+          </node>
+          <node concept="3oM_SD" id="5qG9$j3kmzQ" role="1PaTwD">
+            <property role="3oM_SC" value="be" />
+          </node>
+          <node concept="3oM_SD" id="5qG9$j3kmzR" role="1PaTwD">
+            <property role="3oM_SC" value="called" />
+          </node>
+          <node concept="3oM_SD" id="5qG9$j3kmzS" role="1PaTwD">
+            <property role="3oM_SC" value="after" />
+          </node>
+          <node concept="3oM_SD" id="5qG9$j3kmzT" role="1PaTwD">
+            <property role="3oM_SC" value="it" />
+          </node>
+          <node concept="3oM_SD" id="5qG9$j3kmzU" role="1PaTwD">
+            <property role="3oM_SC" value="is" />
+          </node>
+          <node concept="3oM_SD" id="5qG9$j3kmzV" role="1PaTwD">
+            <property role="3oM_SC" value="known" />
+          </node>
+          <node concept="3oM_SD" id="5qG9$j3kmzW" role="1PaTwD">
+            <property role="3oM_SC" value="which" />
+          </node>
+          <node concept="3oM_SD" id="5qG9$j3kmzX" role="1PaTwD">
+            <property role="3oM_SC" value="instances" />
+          </node>
+        </node>
+        <node concept="1PaTwC" id="5qG9$j3kmzY" role="1Vez_I">
+          <node concept="3oM_SD" id="5qG9$j3kmzZ" role="1PaTwD">
+            <property role="3oM_SC" value="have" />
+          </node>
+          <node concept="3oM_SD" id="5qG9$j3km$0" role="1PaTwD">
+            <property role="3oM_SC" value="been" />
+          </node>
+          <node concept="3oM_SD" id="5qG9$j3km$1" role="1PaTwD">
+            <property role="3oM_SC" value="created." />
+          </node>
+          <node concept="3oM_SD" id="5qG9$j3km$2" role="1PaTwD">
+            <property role="3oM_SC" value="Thus," />
+          </node>
+          <node concept="3oM_SD" id="5qG9$j3km$3" role="1PaTwD">
+            <property role="3oM_SC" value="the" />
+          </node>
+          <node concept="3oM_SD" id="5qG9$j3km$4" role="1PaTwD">
+            <property role="3oM_SC" value="application" />
+          </node>
+          <node concept="3oM_SD" id="5qG9$j3km$5" role="1PaTwD">
+            <property role="3oM_SC" value="logic" />
+          </node>
+          <node concept="3oM_SD" id="5qG9$j3km$6" role="1PaTwD">
+            <property role="3oM_SC" value="has" />
+          </node>
+          <node concept="3oM_SD" id="5qG9$j3km$7" role="1PaTwD">
+            <property role="3oM_SC" value="full" />
+          </node>
+          <node concept="3oM_SD" id="5qG9$j3km$8" role="1PaTwD">
+            <property role="3oM_SC" value="information" />
+          </node>
+          <node concept="3oM_SD" id="5qG9$j3km$9" role="1PaTwD">
+            <property role="3oM_SC" value="to" />
+          </node>
+          <node concept="3oM_SD" id="5qG9$j3km$a" role="1PaTwD">
+            <property role="3oM_SC" value="decide" />
+          </node>
+          <node concept="3oM_SD" id="5qG9$j3km$b" role="1PaTwD">
+            <property role="3oM_SC" value="what" />
+          </node>
+          <node concept="3oM_SD" id="5qG9$j3km$c" role="1PaTwD">
+            <property role="3oM_SC" value="to" />
+          </node>
+          <node concept="3oM_SD" id="5qG9$j3km$d" role="1PaTwD">
+            <property role="3oM_SC" value="do." />
+          </node>
+        </node>
+        <node concept="1PaTwC" id="5qG9$j3km$e" role="1Vez_I">
+          <node concept="3oM_SD" id="5qG9$j3km$f" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+        </node>
+        <node concept="1PaTwC" id="5qG9$j3km$g" role="1Vez_I">
+          <node concept="3oM_SD" id="5qG9$j3km$h" role="1PaTwD">
+            <property role="3oM_SC" value="Use" />
+          </node>
+          <node concept="3oM_SD" id="5qG9$j3km$i" role="1PaTwD">
+            <property role="3oM_SC" value="this" />
+          </node>
+          <node concept="3oM_SD" id="5qG9$j3km$j" role="1PaTwD">
+            <property role="3oM_SC" value="method" />
+          </node>
+          <node concept="3oM_SD" id="5qG9$j3km$k" role="1PaTwD">
+            <property role="3oM_SC" value="instead" />
+          </node>
+          <node concept="3oM_SD" id="5qG9$j3km$l" role="1PaTwD">
+            <property role="3oM_SC" value="of" />
+          </node>
+          <node concept="3oM_SD" id="5qG9$j3km$m" role="1PaTwD">
+            <property role="3oM_SC" value="using" />
+          </node>
+          <node concept="3oM_SD" id="5qG9$j3km$n" role="1PaTwD">
+            <property role="3oM_SC" value="the" />
+          </node>
+          <node concept="3oM_SD" id="5qG9$j3km$o" role="1PaTwD">
+            <property role="3oM_SC" value="simple" />
+          </node>
+          <node concept="3oM_SD" id="5qG9$j3km$p" role="1PaTwD">
+            <property role="3oM_SC" value="rename()" />
+          </node>
+          <node concept="3oM_SD" id="5qG9$j3km$q" role="1PaTwD">
+            <property role="3oM_SC" value="method" />
+          </node>
+          <node concept="3oM_SD" id="5qG9$j3km$r" role="1PaTwD">
+            <property role="3oM_SC" value="above." />
           </node>
         </node>
       </node>
@@ -20846,9 +20957,42 @@
       </node>
     </node>
     <node concept="3UR2Jj" id="7Wx7R1Uf$_m" role="lGtFl">
-      <node concept="TZ5HA" id="7Wx7R1Uf$_n" role="TZ5H$">
-        <node concept="1dT_AC" id="7Wx7R1Uf$_o" role="1dT_Ay">
-          <property role="1dT_AB" value="The renaming API definition used by the IFilterInstantiater for filtering 150% models." />
+      <node concept="1PaTwC" id="5qG9$j3kmzw" role="1Vez_I">
+        <node concept="3oM_SD" id="5qG9$j3kmzx" role="1PaTwD">
+          <property role="3oM_SC" value="The" />
+        </node>
+        <node concept="3oM_SD" id="5qG9$j3kmzy" role="1PaTwD">
+          <property role="3oM_SC" value="renaming" />
+        </node>
+        <node concept="3oM_SD" id="5qG9$j3kmzz" role="1PaTwD">
+          <property role="3oM_SC" value="API" />
+        </node>
+        <node concept="3oM_SD" id="5qG9$j3kmz$" role="1PaTwD">
+          <property role="3oM_SC" value="definition" />
+        </node>
+        <node concept="3oM_SD" id="5qG9$j3kmz_" role="1PaTwD">
+          <property role="3oM_SC" value="used" />
+        </node>
+        <node concept="3oM_SD" id="5qG9$j3kmzA" role="1PaTwD">
+          <property role="3oM_SC" value="by" />
+        </node>
+        <node concept="3oM_SD" id="5qG9$j3kmzB" role="1PaTwD">
+          <property role="3oM_SC" value="the" />
+        </node>
+        <node concept="3oM_SD" id="5qG9$j3kmzC" role="1PaTwD">
+          <property role="3oM_SC" value="IFilterInstantiater" />
+        </node>
+        <node concept="3oM_SD" id="5qG9$j3kmzD" role="1PaTwD">
+          <property role="3oM_SC" value="for" />
+        </node>
+        <node concept="3oM_SD" id="5qG9$j3kmzE" role="1PaTwD">
+          <property role="3oM_SC" value="filtering" />
+        </node>
+        <node concept="3oM_SD" id="5qG9$j3kmzF" role="1PaTwD">
+          <property role="3oM_SC" value="150%" />
+        </node>
+        <node concept="3oM_SD" id="5qG9$j3kmzG" role="1PaTwD">
+          <property role="3oM_SC" value="models." />
         </node>
       </node>
     </node>

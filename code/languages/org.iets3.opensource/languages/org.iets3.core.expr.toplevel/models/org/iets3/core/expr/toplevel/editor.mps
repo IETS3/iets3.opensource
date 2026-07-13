@@ -55,7 +55,7 @@
       <concept id="1194033889146" name="jetbrains.mps.lang.sharedConcepts.structure.ConceptFunctionParameter_editorContext" flags="nn" index="1XNTG" />
     </language>
     <language id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior">
-      <concept id="3235159848334022093" name="jetbrains.mps.lang.behavior.structure.Node_ConceptMethodCall" flags="ng" index="3zqWPK" />
+      <concept id="3235159848334022093" name="jetbrains.mps.lang.behavior.structure.Node_ConceptMethodCall" flags="nn" index="3zqWPK" />
     </language>
     <language id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor">
       <concept id="1402906326896143883" name="jetbrains.mps.lang.editor.structure.CellKeyMap_FunctionParm_selectedNode" flags="nn" index="0GJ7k" />
@@ -649,7 +649,6 @@
       <concept id="1138411891628" name="jetbrains.mps.lang.smodel.structure.SNodeOperation" flags="nn" index="eCIE_">
         <child id="1144104376918" name="parameter" index="1xVPHs" />
       </concept>
-      <concept id="1179409122411" name="jetbrains.mps.lang.smodel.structure.Node_ConceptMethodCall" flags="nn" index="2qgKlT" />
       <concept id="1173122760281" name="jetbrains.mps.lang.smodel.structure.Node_GetAncestorsOperation" flags="nn" index="z$bX8" />
       <concept id="2396822768958367367" name="jetbrains.mps.lang.smodel.structure.AbstractTypeCastExpression" flags="nn" index="$5XWr">
         <child id="6733348108486823193" name="leftExpression" index="1m5AlR" />
@@ -8284,11 +8283,11 @@
                 <node concept="2OqwBi" id="3meuf2b7h4e" role="3clFbG">
                   <node concept="2OqwBi" id="3meuf2b7h4f" role="2Oq$k0">
                     <node concept="pncrf" id="3meuf2b7h4g" role="2Oq$k0" />
-                    <node concept="2qgKlT" id="3meuf2b7h4h" role="2OqNvi">
+                    <node concept="3zqWPK" id="5qG9$j3k0sf" role="2OqNvi">
                       <ref role="37wK5l" to="nu60:4L5R3LmDzwi" resolve="reduce" />
                     </node>
                   </node>
-                  <node concept="2qgKlT" id="3meuf2b7h4i" role="2OqNvi">
+                  <node concept="3zqWPK" id="5qG9$j3k0sh" role="2OqNvi">
                     <ref role="37wK5l" to="pbu6:4Y0vh0cfqjE" resolve="renderReadable" />
                   </node>
                 </node>
