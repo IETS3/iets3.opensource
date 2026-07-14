@@ -466,7 +466,6 @@
       <concept id="1138411891628" name="jetbrains.mps.lang.smodel.structure.SNodeOperation" flags="nn" index="eCIE_">
         <child id="1144104376918" name="parameter" index="1xVPHs" />
       </concept>
-      <concept id="1179409122411" name="jetbrains.mps.lang.smodel.structure.Node_ConceptMethodCall" flags="nn" index="2qgKlT" />
       <concept id="4693937538533521280" name="jetbrains.mps.lang.smodel.structure.OfConceptOperation" flags="ng" index="v3k3i">
         <child id="4693937538533538124" name="requestedConcept" index="v3oSu" />
       </concept>
@@ -8356,7 +8355,7 @@
                   <node concept="2GrUjf" id="72z6VwrmyOZ" role="2Oq$k0">
                     <ref role="2Gs0qQ" node="HzSZE0gDt7" resolve="ivaa" />
                   </node>
-                  <node concept="2qgKlT" id="72z6VwrmyP0" role="2OqNvi">
+                  <node concept="3zqWPK" id="fjp2rmnmnh" role="2OqNvi">
                     <ref role="37wK5l" to="i05g:3q2wVeorTKs" resolve="artifactRoot" />
                   </node>
                 </node>
@@ -8382,7 +8381,7 @@
                       <node concept="Jnkvi" id="72z6VwrmDDK" role="2Oq$k0">
                         <ref role="1M0zk5" node="72z6Vwrm_el" resolve="logicalChildOwner" />
                       </node>
-                      <node concept="2qgKlT" id="72z6VwrmEJC" role="2OqNvi">
+                      <node concept="3zqWPK" id="fjp2rmnmnj" role="2OqNvi">
                         <ref role="37wK5l" to="n7tw:7c93VeVMIYV" resolve="findLogicalChildren" />
                       </node>
                     </node>
