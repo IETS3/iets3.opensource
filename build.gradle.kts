@@ -139,6 +139,12 @@ val resolveDependencies by tasks.registering {
     bundledDependencyResolveTasks.forEach { dependsOn(it) }
 }
 
+val setup by tasks.registering {
+    dependsOn(resolveDependencies, resolveLanguageLibs)
+    group = "setup"
+    description = "Download the dependencies necessary to build the project in MPS."
+}
+
 // Default arguments for ant scripts
 val defaultScriptArgs = mutableMapOf(
     "mps.home" to mpsHomeDir.asFile,
