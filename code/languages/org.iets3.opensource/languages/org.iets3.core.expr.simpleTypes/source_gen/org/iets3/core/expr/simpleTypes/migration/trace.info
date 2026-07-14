@@ -491,52 +491,56 @@
   </root>
   <root nodeRef="r:2ef874f0-eb83-423c-afd2-f0c0921489b8(org.iets3.core.expr.simpleTypes.migration)/717395623381360650">
     <file name="ScientificNumberMigrationHelper.java">
-      <node id="717395623381378012" at="18,52,19,84" concept="6" />
-      <node id="717395623381380361" at="19,84,20,76" concept="6" />
-      <node id="717395623385453855" at="21,49,22,21" concept="7" />
-      <node id="717395623385454918" at="23,5,24,0" concept="9" />
-      <node id="717395623382671041" at="25,46,26,105" concept="6" />
-      <node id="717395623383610518" at="27,26,28,28" concept="1" />
-      <node id="717395623383669358" at="29,84,30,79" concept="1" />
-      <node id="717395623382671077" at="31,7,32,67" concept="1" />
-      <node id="717395623381581389" at="33,5,34,19" concept="7" />
-      <node id="717395623381419469" at="41,36,42,112" concept="7" />
-      <node id="717395623381419443" at="45,5,46,0" concept="9" />
-      <node id="717395623381378019" at="48,0,49,0" concept="10" trace="REGEXP" />
-      <node id="717395623381378060" at="49,0,50,0" concept="10" trace="REGEXP1" />
-      <node id="717395623381360650" at="52,0,53,0" concept="10" trace="value$iWTK" />
-      <node id="717395623385431098" at="20,76,23,5" concept="4" />
-      <node id="717395623381419465" at="40,0,44,0" concept="5" trace="getMessage#()Ljava/lang/String;" />
-      <node id="717395623383565573" at="26,105,31,7" concept="4" />
-      <node id="717395623381426184" at="38,159,44,9" concept="1" />
-      <node id="717395623381419450" at="37,82,45,5" concept="4" />
-      <node id="717395623381380367" at="24,0,33,5" concept="4" />
-      <node id="717395623381413890" at="37,0,48,0" concept="11" trace="checkMigratedNumber#(Lorg/jetbrains/mps/openapi/model/SNode;Ljava/util/Deque;)V" />
-      <node id="717395623381375077" at="18,0,36,0" concept="11" trace="migrateNumber#(Lorg/jetbrains/mps/openapi/model/SNode;)Lorg/jetbrains/mps/openapi/model/SNode;" />
-      <scope id="717395623385431100" at="21,49,22,21" />
-      <scope id="717395623383565575" at="27,26,28,28" />
-      <scope id="717395623384915681" at="29,84,30,79" />
-      <scope id="717395623381419468" at="41,36,42,112" />
-      <scope id="717395623381419465" at="40,0,44,0" />
-      <scope id="717395623381419458" at="38,159,44,9" />
-      <scope id="717395623381380375" at="25,46,32,67">
+      <node id="717395623381378012" at="19,52,20,84" concept="6" />
+      <node id="717395623381380361" at="20,84,21,76" concept="6" />
+      <node id="717395623385453855" at="22,49,23,21" concept="7" />
+      <node id="717395623385454918" at="24,5,25,0" concept="9" />
+      <node id="717395623382671041" at="26,46,27,105" concept="6" />
+      <node id="717395623383610518" at="28,26,29,28" concept="1" />
+      <node id="717395623383669358" at="30,84,31,79" concept="1" />
+      <node id="176082328576778825" at="32,7,33,0" concept="9" />
+      <node id="176082328576811189" at="34,95,35,101" concept="8" />
+      <node id="717395623382671077" at="35,101,36,69" concept="1" />
+      <node id="717395623381581389" at="38,5,39,19" concept="7" />
+      <node id="717395623381419469" at="46,36,47,112" concept="7" />
+      <node id="717395623381419443" at="50,5,51,0" concept="9" />
+      <node id="717395623381378019" at="53,0,54,0" concept="10" trace="REGEXP" />
+      <node id="717395623381378060" at="54,0,55,0" concept="10" trace="REGEXP1" />
+      <node id="717395623381360650" at="57,0,58,0" concept="10" trace="value$iWTK" />
+      <node id="717395623385431098" at="21,76,24,5" concept="4" />
+      <node id="176082328576781933" at="33,0,37,7" concept="4" />
+      <node id="717395623381419465" at="45,0,49,0" concept="5" trace="getMessage#()Ljava/lang/String;" />
+      <node id="717395623383565573" at="27,105,32,7" concept="4" />
+      <node id="717395623381426184" at="43,159,49,9" concept="1" />
+      <node id="717395623381419450" at="42,82,50,5" concept="4" />
+      <node id="717395623381413890" at="42,0,53,0" concept="11" trace="checkMigratedNumber#(Lorg/jetbrains/mps/openapi/model/SNode;Ljava/util/Deque;)V" />
+      <node id="717395623381380367" at="25,0,38,5" concept="4" />
+      <node id="717395623381375077" at="19,0,41,0" concept="11" trace="migrateNumber#(Lorg/jetbrains/mps/openapi/model/SNode;)Lorg/jetbrains/mps/openapi/model/SNode;" />
+      <scope id="717395623385431100" at="22,49,23,21" />
+      <scope id="717395623383565575" at="28,26,29,28" />
+      <scope id="717395623384915681" at="30,84,31,79" />
+      <scope id="717395623381419468" at="46,36,47,112" />
+      <scope id="176082328576781935" at="34,95,36,69" />
+      <scope id="717395623381419465" at="45,0,49,0" />
+      <scope id="717395623381419458" at="43,159,49,9" />
+      <scope id="717395623381413893" at="42,82,51,0" />
+      <scope id="717395623381380375" at="26,46,37,7">
         <var name="indexOfE" id="717395623382671040" />
       </scope>
-      <scope id="717395623381413893" at="37,82,46,0" />
-      <scope id="717395623381413890" at="37,0,48,0">
+      <scope id="717395623381413890" at="42,0,53,0">
         <var name="literal" id="717395623381415478" />
         <var name="problems" id="717395623381416267" />
       </scope>
-      <scope id="717395623381375080" at="18,52,34,19">
+      <scope id="717395623381375080" at="19,52,39,19">
         <var name="newPattern" id="717395623381378015" />
         <var name="value" id="717395623381380362" />
       </scope>
-      <scope id="717395623381375077" at="18,0,36,0">
+      <scope id="717395623381375077" at="19,0,41,0">
         <var name="literal" id="717395623381375987" />
       </scope>
-      <unit id="717395623381360650" at="51,0,54,0" name="org.iets3.core.expr.simpleTypes.migration.ScientificNumberMigrationHelper$PROPS" />
-      <unit id="717395623381419462" at="39,68,44,7" name="org.iets3.core.expr.simpleTypes.migration.ScientificNumberMigrationHelper$1" />
-      <unit id="717395623381360650" at="17,0,55,0" name="org.iets3.core.expr.simpleTypes.migration.ScientificNumberMigrationHelper" />
+      <unit id="717395623381360650" at="56,0,59,0" name="org.iets3.core.expr.simpleTypes.migration.ScientificNumberMigrationHelper$PROPS" />
+      <unit id="717395623381419462" at="44,68,49,7" name="org.iets3.core.expr.simpleTypes.migration.ScientificNumberMigrationHelper$1" />
+      <unit id="717395623381360650" at="18,0,60,0" name="org.iets3.core.expr.simpleTypes.migration.ScientificNumberMigrationHelper" />
     </file>
   </root>
   <root nodeRef="r:2ef874f0-eb83-423c-afd2-f0c0921489b8(org.iets3.core.expr.simpleTypes.migration)/8340745474827066158">

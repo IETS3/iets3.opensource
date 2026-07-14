@@ -173,7 +173,7 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
           cpb.shortDesc("a global constant");
           cpb.presentationByName();
-          cpb.icon(IconContainer.RESOURCE_a0a3a0a11b0zc);
+          cpb.icon(IconContainer.RESOURCE_0);
           props_Constant = cpb.create();
         }
         return props_Constant;
@@ -206,7 +206,7 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
           cpb.shortDesc("an enumeration declaration");
           cpb.presentationByName();
-          cpb.icon(IconContainer.RESOURCE_a0a3a0a51b0zc);
+          cpb.icon(IconContainer.RESOURCE_1);
           props_EnumDeclaration = cpb.create();
         }
         return props_EnumDeclaration;
@@ -344,7 +344,7 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           cpb.deprecateProperty(0x27b717d14a8df4edL, "ext_old");
           cpb.shortDesc("a function");
           cpb.presentationByName();
-          cpb.icon(IconContainer.RESOURCE_a0a4a0a23b0zc);
+          cpb.icon(IconContainer.RESOURCE_2);
           props_Function = cpb.create();
         }
         return props_Function;
@@ -506,7 +506,7 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
           cpb.shortDesc("a library");
           cpb.presentationByName();
-          cpb.icon(IconContainer.RESOURCE_a0a3a0a55b0zc);
+          cpb.icon(IconContainer.RESOURCE_3);
           props_Library = cpb.create();
         }
         return props_Library;
@@ -588,7 +588,7 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           cpb.deprecateAggregation(0x7a477bfec237e8f0L, "members_old");
           cpb.shortDesc("a record (structure with named members)");
           cpb.presentationByName();
-          cpb.icon(IconContainer.RESOURCE_a0a4a0a56b0zc);
+          cpb.icon(IconContainer.RESOURCE_4);
           props_RecordDeclaration = cpb.create();
         }
         return props_RecordDeclaration;
@@ -653,7 +653,7 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
           cpb.shortDesc("a derived (constrained) type based on an existing type");
           cpb.presentationByName();
-          cpb.icon(IconContainer.RESOURCE_a0a3a0a37b0zc);
+          cpb.icon(IconContainer.RESOURCE_5);
           props_Typedef = cpb.create();
         }
         return props_Typedef;

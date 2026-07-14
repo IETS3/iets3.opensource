@@ -40,6 +40,7 @@ import java.util.ArrayList;
 import com.mbeddr.mpsutil.grammarcells.runtime.StringOrSequenceQuery;
 import com.mbeddr.mpsutil.grammarcells.runtime.MultiTextActionItem;
 import jetbrains.mps.smodel.action.SNodeFactoryOperations;
+import org.iets3.core.expr.base.plugin.EditorCustomizationConfigHelper;
 import org.jetbrains.mps.openapi.language.SAbstractConcept;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
@@ -279,6 +280,11 @@ import org.jetbrains.mps.openapi.language.SConcept;
             final SNode sourceNode = ctx.getNode();
             EditorContext editorContext = ctx.getEditorContext();
             SNode newNode = SNodeFactoryOperations.setNewChild(SNodeOperations.cast(sourceNode, CONCEPTS.TryErrorClause$MY), LINKS.errorLiteral$QRaD, null);
+            new Object() {
+              public void postprocess(SNode node) {
+                EditorCustomizationConfigHelper.getConfig().postProcessOptionalCell(EditorCustomizationConfigHelper.getIdentifier(CONCEPTS.TryErrorClause$MY, LINKS.errorLiteral$QRaD), node, editorContext);
+              }
+            }.postprocess(sourceNode);
           }
           @Override
           public SAbstractConcept getOutputConcept() {
@@ -291,7 +297,8 @@ import org.jetbrains.mps.openapi.language.SConcept;
             SNode node = ctx.getNode();
             String originalText = super.getShortDescriptionText(pattern);
             EditorContext editorContext = ctx.getEditorContext();
-            return "an error message";
+            String description = EditorCustomizationConfigHelper.getConfig().getOptionalCellDescriptionText(EditorCustomizationConfigHelper.getIdentifier(CONCEPTS.TryErrorClause$MY, LINKS.errorLiteral$QRaD), node, originalText, editorContext);
+            return ((description != null && description.length() > 0) ? description : "add an error message");
           }
         });
       }
