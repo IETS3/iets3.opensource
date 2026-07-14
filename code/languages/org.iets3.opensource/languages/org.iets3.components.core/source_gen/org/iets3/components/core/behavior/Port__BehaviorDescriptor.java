@@ -7,7 +7,6 @@ import org.jetbrains.mps.openapi.language.SAbstractConcept;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import org.jetbrains.mps.openapi.model.SNode;
 import java.util.List;
@@ -19,7 +18,6 @@ import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
 import java.util.Objects;
 import jetbrains.mps.internal.collections.runtime.ListSequence;
 import jetbrains.mps.baseLanguage.tuples.runtime.Tuples;
-import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 import org.jetbrains.mps.openapi.language.SContainmentLink;
@@ -28,17 +26,15 @@ import org.jetbrains.mps.openapi.language.SConcept;
 public final class Port__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getConcept(0xf0fd486f857743e9L, 0xb6713d118449c6e7L, 0x6c4f9fd23e51937cL, "org.iets3.components.core.structure.Port");
 
-  public static final SMethod<String> getAutomaticName_idcJpacq408C = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("getAutomaticName").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(229512757698888232L).languageId(0xbd9c05c0f8725a35L, 0x7b68d745a7b848b9L).build2();
-  public static final SMethod<Boolean> isOptional_idmIQkxf$r$2 = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("isOptional").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(409503520733116674L).languageId(0xb6713d118449c6e7L, 0xf0fd486f857743e9L).build2();
-  public static final SMethod<Boolean> isUnlimitedMulti_id7Atos1y4IiF = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("isUnlimitedMulti").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(8763267928839873707L).languageId(0xb6713d118449c6e7L, 0xf0fd486f857743e9L).build2();
-  public static final SMethod<String> getConnectionMulitplicityError_id7Atos1y63VI = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("getConnectionMulitplicityError").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(8763267928840224494L).languageId(0xb6713d118449c6e7L, 0xf0fd486f857743e9L).build2(SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""), SMethodBuilder.createJavaParameter((Class<Iterable<SNode>>) ((Class) Object.class), ""));
-  public static final SMethod<Iterable<SNode>> filterOwnConnections_id5RkEkmFo09K = new SMethodBuilder<Iterable<SNode>>(new SJavaCompoundTypeImpl((Class<Iterable<SNode>>) ((Class) Object.class))).name("filterOwnConnections").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(6761215057282990704L).languageId(0xb6713d118449c6e7L, 0xf0fd486f857743e9L).build2(SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""), SMethodBuilder.createJavaParameter((Class<Iterable<SNode>>) ((Class) Object.class), ""));
-  public static final SMethod<SNode> getTypedContextNode_id4fgA7QrKR89 = new SMethodBuilder<SNode>(new SJavaCompoundTypeImpl((Class<SNode>) ((Class) Object.class))).name("nodeToCalculateTypeFrom").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(4886573260948599305L).languageId(0xb66a309a6e1a7290L, 0xcfaa4966b7d54b69L).build2();
+  public static final SMethod<String> getAutomaticName_idcJpacq408C = new SMethodBuilder<>(String.class).name("getAutomaticName").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(229512757698888232L).languageId(0xbd9c05c0f8725a35L, 0x7b68d745a7b848b9L).build2();
+  public static final SMethod<Boolean> isOptional_idmIQkxf$r$2 = new SMethodBuilder<>(Boolean.TYPE).name("isOptional").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(409503520733116674L).languageId(0xb6713d118449c6e7L, 0xf0fd486f857743e9L).build2();
+  public static final SMethod<Boolean> isUnlimitedMulti_id7Atos1y4IiF = new SMethodBuilder<>(Boolean.TYPE).name("isUnlimitedMulti").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(8763267928839873707L).languageId(0xb6713d118449c6e7L, 0xf0fd486f857743e9L).build2();
+  public static final SMethod<String> getConnectionMulitplicityError_id7Atos1y63VI = new SMethodBuilder<>(String.class).name("getConnectionMulitplicityError").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(8763267928840224494L).languageId(0xb6713d118449c6e7L, 0xf0fd486f857743e9L).build2(SMethodBuilder.createJavaParameter(SNode.class, "instance"), SMethodBuilder.createJavaParameter((Class<Iterable<SNode>>) ((Class) Object.class), "allConnectors"));
+  public static final SMethod<Iterable<SNode>> filterOwnConnections_id5RkEkmFo09K = new SMethodBuilder<>((Class<Iterable<SNode>>) ((Class) Object.class)).name("filterOwnConnections").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(6761215057282990704L).languageId(0xb6713d118449c6e7L, 0xf0fd486f857743e9L).build2(SMethodBuilder.createJavaParameter(SNode.class, "instance"), SMethodBuilder.createJavaParameter((Class<Iterable<SNode>>) ((Class) Object.class), "allConnectors"));
+  public static final SMethod<SNode> getTypedContextNode_id4fgA7QrKR89 = new SMethodBuilder<>(SNode.class).name("nodeToCalculateTypeFrom").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(4886573260948599305L).languageId(0xb66a309a6e1a7290L, 0xcfaa4966b7d54b69L).build2();
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(getAutomaticName_idcJpacq408C, isOptional_idmIQkxf$r$2, isUnlimitedMulti_id7Atos1y4IiF, getConnectionMulitplicityError_id7Atos1y63VI, filterOwnConnections_id5RkEkmFo09K, getTypedContextNode_id4fgA7QrKR89);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(getAutomaticName_idcJpacq408C, isOptional_idmIQkxf$r$2, isUnlimitedMulti_id7Atos1y4IiF, getConnectionMulitplicityError_id7Atos1y63VI, filterOwnConnections_id5RkEkmFo09K, getTypedContextNode_id4fgA7QrKR89);
 
-  private static void ___init___(@NotNull SNode __thisNode__) {
-  }
 
   /*package*/ static String getAutomaticName_idcJpacq408C(@NotNull final SNode __thisNode__) {
     final String defaultPortName = IPortType__BehaviorDescriptor.defaultPortName_idcJpacq4Df4.invoke(SLinkOperations.getTarget(__thisNode__, LINKS.type$5Gl6));
@@ -87,10 +83,6 @@ public final class Port__BehaviorDescriptor extends BaseBHDescriptor {
   /*package*/ Port__BehaviorDescriptor() {
   }
 
-  @Override
-  protected void initNode(@NotNull SNode node, @NotNull SConstructor constructor, @Nullable Object[] parameters) {
-    ___init___(node);
-  }
 
   @Override
   protected <T> T invokeSpecial0(@NotNull SNode node, @NotNull SMethod<T> method, @Nullable Object[] parameters) {

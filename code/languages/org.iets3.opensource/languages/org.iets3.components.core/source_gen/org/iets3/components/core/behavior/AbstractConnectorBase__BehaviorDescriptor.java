@@ -7,7 +7,6 @@ import org.jetbrains.mps.openapi.language.SAbstractConcept;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import com.mbeddr.core.base.behavior.AbstractTreeViewNode;
 import org.jetbrains.mps.openapi.model.SNode;
@@ -15,23 +14,20 @@ import java.util.List;
 import java.util.Arrays;
 import org.jetbrains.annotations.NotNull;
 import com.mbeddr.core.base.behavior.NodeTreeViewNode;
-import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 
 public final class AbstractConnectorBase__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getConcept(0xf0fd486f857743e9L, 0xb6713d118449c6e7L, 0x3a8867c74e876c3fL, "org.iets3.components.core.structure.AbstractConnectorBase");
 
-  public static final SMethod<String> treeViewLabel_id7Atos1ybm9U = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("treeViewLabel").modifiers(12, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(8763267928841609850L).languageId(0xb6713d118449c6e7L, 0xf0fd486f857743e9L).build2();
-  public static final SMethod<AbstractTreeViewNode> getTreeNode_id7NyyyjNtbn2 = new SMethodBuilder<AbstractTreeViewNode>(new SJavaCompoundTypeImpl(AbstractTreeViewNode.class)).name("getTreeNode").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(8998906896747640258L).languageId(0xaa41d1b2bffa7eb1L, 0xd4280a54f6df4383L).build2(SMethodBuilder.createJavaParameter(String.class, ""));
-  public static final SMethod<SNode> getTypedContextNode_id4fgA7QrKR89 = new SMethodBuilder<SNode>(new SJavaCompoundTypeImpl((Class<SNode>) ((Class) Object.class))).name("getTypedContextNode").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(4886573260948599305L).languageId(0xb66a309a6e1a7290L, 0xcfaa4966b7d54b69L).build2();
-  public static final SMethod<SNode> getGoverningPort_idmIQkxg5V$2 = new SMethodBuilder<SNode>(new SJavaCompoundTypeImpl((Class<SNode>) ((Class) Object.class))).name("getGoverningPort").modifiers(12, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(409503520741898498L).languageId(0xb6713d118449c6e7L, 0xf0fd486f857743e9L).build2();
-  public static final SMethod<SNode> getTarget_id3E8pWteyf_5 = new SMethodBuilder<SNode>(new SJavaCompoundTypeImpl((Class<SNode>) ((Class) Object.class))).name("getTarget").modifiers(12, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(4217735156746221893L).languageId(0xb6713d118449c6e7L, 0xf0fd486f857743e9L).build2();
+  public static final SMethod<String> treeViewLabel_id7Atos1ybm9U = new SMethodBuilder<>(String.class).name("treeViewLabel").modifiers(12, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(8763267928841609850L).languageId(0xb6713d118449c6e7L, 0xf0fd486f857743e9L).build2();
+  public static final SMethod<AbstractTreeViewNode> getTreeNode_id7NyyyjNtbn2 = new SMethodBuilder<>(AbstractTreeViewNode.class).name("getTreeNode").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(8998906896747640258L).languageId(0xaa41d1b2bffa7eb1L, 0xd4280a54f6df4383L).build2(SMethodBuilder.createJavaParameter(String.class, "cat"));
+  public static final SMethod<SNode> getTypedContextNode_id4fgA7QrKR89 = new SMethodBuilder<>(SNode.class).name("getTypedContextNode").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(4886573260948599305L).languageId(0xb66a309a6e1a7290L, 0xcfaa4966b7d54b69L).build2();
+  public static final SMethod<SNode> getGoverningPort_idmIQkxg5V$2 = new SMethodBuilder<>(SNode.class).name("getGoverningPort").modifiers(12, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(409503520741898498L).languageId(0xb6713d118449c6e7L, 0xf0fd486f857743e9L).build2();
+  public static final SMethod<SNode> getTarget_id3E8pWteyf_5 = new SMethodBuilder<>(SNode.class).name("getTarget").modifiers(12, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(4217735156746221893L).languageId(0xb6713d118449c6e7L, 0xf0fd486f857743e9L).build2();
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(treeViewLabel_id7Atos1ybm9U, getTreeNode_id7NyyyjNtbn2, getTypedContextNode_id4fgA7QrKR89, getGoverningPort_idmIQkxg5V$2, getTarget_id3E8pWteyf_5);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(treeViewLabel_id7Atos1ybm9U, getTreeNode_id7NyyyjNtbn2, getTypedContextNode_id4fgA7QrKR89, getGoverningPort_idmIQkxg5V$2, getTarget_id3E8pWteyf_5);
 
-  private static void ___init___(@NotNull SNode __thisNode__) {
-  }
 
   /*package*/ static AbstractTreeViewNode getTreeNode_id7NyyyjNtbn2(@NotNull SNode __thisNode__, final String cat) {
     return new NodeTreeViewNode(__thisNode__, AbstractConnectorBase__BehaviorDescriptor.treeViewLabel_id7Atos1ybm9U.invoke(__thisNode__), cat, new String[]{"structure"}) {
@@ -50,10 +46,6 @@ public final class AbstractConnectorBase__BehaviorDescriptor extends BaseBHDescr
   /*package*/ AbstractConnectorBase__BehaviorDescriptor() {
   }
 
-  @Override
-  protected void initNode(@NotNull SNode node, @NotNull SConstructor constructor, @Nullable Object[] parameters) {
-    ___init___(node);
-  }
 
   @Override
   protected <T> T invokeSpecial0(@NotNull SNode node, @NotNull SMethod<T> method, @Nullable Object[] parameters) {

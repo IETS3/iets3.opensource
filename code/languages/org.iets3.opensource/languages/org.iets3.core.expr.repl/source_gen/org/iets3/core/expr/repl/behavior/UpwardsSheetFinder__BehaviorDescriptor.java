@@ -9,14 +9,12 @@ import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import jetbrains.mps.baseLanguage.tuples.runtime.Tuples;
 import org.jetbrains.mps.openapi.model.SNode;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import java.util.List;
 import java.util.Arrays;
 import org.jetbrains.annotations.NotNull;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
 import jetbrains.mps.baseLanguage.tuples.runtime.MultiTuple;
-import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 import org.jetbrains.mps.openapi.language.SConcept;
@@ -24,12 +22,10 @@ import org.jetbrains.mps.openapi.language.SConcept;
 public final class UpwardsSheetFinder__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getConcept(0x18001c9433a74f68L, 0xa7c1ffddc4b39be1L, 0x366e9b3ea4e64188L, "org.iets3.core.expr.repl.structure.UpwardsSheetFinder");
 
-  public static final SMethod<Tuples._2<SNode, SNode>> find_id3pIANU$Z74R = new SMethodBuilder<Tuples._2<SNode, SNode>>(new SJavaCompoundTypeImpl((Class<Tuples._2<SNode, SNode>>) ((Class) Object.class))).name("find").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(3922243018844565815L).languageId(0xa7c1ffddc4b39be1L, 0x18001c9433a74f68L).build2();
+  public static final SMethod<Tuples._2<SNode, SNode>> find_id3pIANU$Z74R = new SMethodBuilder<>((Class<Tuples._2<SNode, SNode>>) ((Class) Object.class)).name("find").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(3922243018844565815L).languageId(0xa7c1ffddc4b39be1L, 0x18001c9433a74f68L).build2();
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(find_id3pIANU$Z74R);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(find_id3pIANU$Z74R);
 
-  private static void ___init___(@NotNull SNode __thisNode__) {
-  }
 
   /*package*/ static Tuples._2<SNode, SNode> find_id3pIANU$Z74R(@NotNull SNode __thisNode__) {
     SNode myCell = SNodeOperations.getNodeAncestor(__thisNode__, CONCEPTS.Cell$3y, false, false);
@@ -43,10 +39,6 @@ public final class UpwardsSheetFinder__BehaviorDescriptor extends BaseBHDescript
   /*package*/ UpwardsSheetFinder__BehaviorDescriptor() {
   }
 
-  @Override
-  protected void initNode(@NotNull SNode node, @NotNull SConstructor constructor, @Nullable Object[] parameters) {
-    ___init___(node);
-  }
 
   @Override
   protected <T> T invokeSpecial0(@NotNull SNode node, @NotNull SMethod<T> method, @Nullable Object[] parameters) {

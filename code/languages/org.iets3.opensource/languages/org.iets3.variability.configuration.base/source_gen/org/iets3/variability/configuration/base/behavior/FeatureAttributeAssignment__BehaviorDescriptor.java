@@ -7,7 +7,6 @@ import org.jetbrains.mps.openapi.language.SAbstractConcept;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import org.jetbrains.mps.openapi.model.SNode;
 import java.util.List;
@@ -21,7 +20,6 @@ import jetbrains.mps.internal.collections.runtime.Sequence;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
 import org.iets3.variability.featuremodel.base.behavior.AbstractFeatureAttribute__BehaviorDescriptor;
 import jetbrains.mps.lang.core.behavior.BaseConcept__BehaviorDescriptor;
-import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 import org.jetbrains.mps.openapi.language.SProperty;
@@ -32,25 +30,23 @@ import org.jetbrains.mps.openapi.language.SReferenceLink;
 public final class FeatureAttributeAssignment__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getConcept(0x71226ee2bbc445d2L, 0xa41d20b97237156cL, 0x302aa0c2ddc5ae16L, "org.iets3.variability.configuration.base.structure.FeatureAttributeAssignment");
 
-  public static final SMethod<Boolean> compulsory_id6jw22F991F9 = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("compulsory").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(7268818778432215753L).languageId(0xa41d20b97237156cL, 0x71226ee2bbc445d2L).build2();
-  public static final SMethod<Boolean> manual_idzJQZm70LZI = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("manual").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(643975119315869678L).languageId(0xa41d20b97237156cL, 0x71226ee2bbc445d2L).build2();
-  public static final SMethod<Boolean> automatic_idzJQZm70xzm = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("automatic").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(643975119315802326L).languageId(0xa41d20b97237156cL, 0x71226ee2bbc445d2L).build2();
-  public static final SMethod<Void> setCompulsory_id6jw22F9ba_Z = new SMethodBuilder<Void>(new SJavaCompoundTypeImpl(Void.class)).name("setCompulsory").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(7268818778432776575L).languageId(0xa41d20b97237156cL, 0x71226ee2bbc445d2L).build2();
-  public static final SMethod<Void> setProposed_idzJQZm78TFR = new SMethodBuilder<Void>(new SJavaCompoundTypeImpl(Void.class)).name("setProposed").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(643975119317998327L).languageId(0xa41d20b97237156cL, 0x71226ee2bbc445d2L).build2();
-  public static final SMethod<Void> setManual_idiJPTCYz76l = new SMethodBuilder<Void>(new SJavaCompoundTypeImpl(Void.class)).name("setManual").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(337725554550403477L).languageId(0xa41d20b97237156cL, 0x71226ee2bbc445d2L).build2();
-  public static final SMethod<Boolean> proposed_idiJPTCYkgto = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("proposed").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(337725554546509656L).languageId(0xa41d20b97237156cL, 0x71226ee2bbc445d2L).build2();
-  public static final SMethod<Void> unsetAutomatic_id6jw22F99kPS = new SMethodBuilder<Void>(new SJavaCompoundTypeImpl(Void.class)).name("unsetAutomatic").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(7268818778432294264L).languageId(0xa41d20b97237156cL, 0x71226ee2bbc445d2L).build2();
-  public static final SMethod<Void> setUnset_idzJQZm7Y5oJ = new SMethodBuilder<Void>(new SJavaCompoundTypeImpl(Void.class)).name("setUnset").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(643975119331939887L).languageId(0xa41d20b97237156cL, 0x71226ee2bbc445d2L).build2();
-  public static final SMethod<Boolean> unset_idiJPTCXZ5_L = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("unset").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(337725554540960113L).languageId(0xa41d20b97237156cL, 0x71226ee2bbc445d2L).build2();
-  public static final SMethod<Boolean> isVisible_idul08NiEUsy = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("isVisible").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(546343534625269538L).languageId(0xa41d20b97237156cL, 0x71226ee2bbc445d2L).build2();
-  public static final SMethod<Boolean> isTransitivelyVisible_idul08NjohY_ = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("isTransitivelyVisible").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(546343534637162405L).languageId(0xa41d20b97237156cL, 0x71226ee2bbc445d2L).build2();
-  public static final SMethod<SNode> getValue_id5Bs7u20FcLE = new SMethodBuilder<SNode>(new SJavaCompoundTypeImpl((Class<SNode>) ((Class) Object.class))).name("getValue").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(6475083214320618602L).languageId(0xa41d20b97237156cL, 0x71226ee2bbc445d2L).build2();
-  public static final SMethod<String> getPresentation_idhEwIMiw = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("getPresentation").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(1213877396640L).languageId(0x9b92103b95ca8c0cL, 0xceab519525ea4f22L).build2();
+  public static final SMethod<Boolean> compulsory_id6jw22F991F9 = new SMethodBuilder<>(Boolean.TYPE).name("compulsory").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(7268818778432215753L).languageId(0xa41d20b97237156cL, 0x71226ee2bbc445d2L).build2();
+  public static final SMethod<Boolean> manual_idzJQZm70LZI = new SMethodBuilder<>(Boolean.TYPE).name("manual").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(643975119315869678L).languageId(0xa41d20b97237156cL, 0x71226ee2bbc445d2L).build2();
+  public static final SMethod<Boolean> automatic_idzJQZm70xzm = new SMethodBuilder<>(Boolean.TYPE).name("automatic").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(643975119315802326L).languageId(0xa41d20b97237156cL, 0x71226ee2bbc445d2L).build2();
+  public static final SMethod<Void> setCompulsory_id6jw22F9ba_Z = new SMethodBuilder<>(Void.TYPE).name("setCompulsory").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(7268818778432776575L).languageId(0xa41d20b97237156cL, 0x71226ee2bbc445d2L).build2();
+  public static final SMethod<Void> setProposed_idzJQZm78TFR = new SMethodBuilder<>(Void.TYPE).name("setProposed").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(643975119317998327L).languageId(0xa41d20b97237156cL, 0x71226ee2bbc445d2L).build2();
+  public static final SMethod<Void> setManual_idiJPTCYz76l = new SMethodBuilder<>(Void.TYPE).name("setManual").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(337725554550403477L).languageId(0xa41d20b97237156cL, 0x71226ee2bbc445d2L).build2();
+  public static final SMethod<Boolean> proposed_idiJPTCYkgto = new SMethodBuilder<>(Boolean.TYPE).name("proposed").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(337725554546509656L).languageId(0xa41d20b97237156cL, 0x71226ee2bbc445d2L).build2();
+  public static final SMethod<Void> unsetAutomatic_id6jw22F99kPS = new SMethodBuilder<>(Void.TYPE).name("unsetAutomatic").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(7268818778432294264L).languageId(0xa41d20b97237156cL, 0x71226ee2bbc445d2L).build2();
+  public static final SMethod<Void> setUnset_idzJQZm7Y5oJ = new SMethodBuilder<>(Void.TYPE).name("setUnset").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(643975119331939887L).languageId(0xa41d20b97237156cL, 0x71226ee2bbc445d2L).build2();
+  public static final SMethod<Boolean> unset_idiJPTCXZ5_L = new SMethodBuilder<>(Boolean.TYPE).name("unset").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(337725554540960113L).languageId(0xa41d20b97237156cL, 0x71226ee2bbc445d2L).build2();
+  public static final SMethod<Boolean> isVisible_idul08NiEUsy = new SMethodBuilder<>(Boolean.TYPE).name("isVisible").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(546343534625269538L).languageId(0xa41d20b97237156cL, 0x71226ee2bbc445d2L).build2();
+  public static final SMethod<Boolean> isTransitivelyVisible_idul08NjohY_ = new SMethodBuilder<>(Boolean.TYPE).name("isTransitivelyVisible").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(546343534637162405L).languageId(0xa41d20b97237156cL, 0x71226ee2bbc445d2L).build2();
+  public static final SMethod<SNode> getValue_id5Bs7u20FcLE = new SMethodBuilder<>(SNode.class).name("getValue").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(6475083214320618602L).languageId(0xa41d20b97237156cL, 0x71226ee2bbc445d2L).build2();
+  public static final SMethod<String> getPresentation_idhEwIMiw = new SMethodBuilder<>(String.class).name("getPresentation").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(1213877396640L).languageId(0x9b92103b95ca8c0cL, 0xceab519525ea4f22L).build2();
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(compulsory_id6jw22F991F9, manual_idzJQZm70LZI, automatic_idzJQZm70xzm, setCompulsory_id6jw22F9ba_Z, setProposed_idzJQZm78TFR, setManual_idiJPTCYz76l, proposed_idiJPTCYkgto, unsetAutomatic_id6jw22F99kPS, setUnset_idzJQZm7Y5oJ, unset_idiJPTCXZ5_L, isVisible_idul08NiEUsy, isTransitivelyVisible_idul08NjohY_, getValue_id5Bs7u20FcLE, getPresentation_idhEwIMiw);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(compulsory_id6jw22F991F9, manual_idzJQZm70LZI, automatic_idzJQZm70xzm, setCompulsory_id6jw22F9ba_Z, setProposed_idzJQZm78TFR, setManual_idiJPTCYz76l, proposed_idiJPTCYkgto, unsetAutomatic_id6jw22F99kPS, setUnset_idzJQZm7Y5oJ, unset_idiJPTCXZ5_L, isVisible_idul08NiEUsy, isTransitivelyVisible_idul08NjohY_, getValue_id5Bs7u20FcLE, getPresentation_idhEwIMiw);
 
-  private static void ___init___(@NotNull SNode __thisNode__) {
-  }
 
   /*package*/ static boolean compulsory_id6jw22F991F9(@NotNull SNode __thisNode__) {
     return Objects.equals(SPropertyOperations.getEnum(__thisNode__, PROPS.assignmentCause$9xP), SEnumOperations.getMember(MetaAdapterFactory.getEnumeration(0x71226ee2bbc445d2L, 0xa41d20b97237156cL, 0x8efdbf586e37fb6L, "org.iets3.variability.configuration.base.structure.AssignmentCause"), 0x8efdbf586e37fb8L, "compulsory"));
@@ -101,10 +97,6 @@ public final class FeatureAttributeAssignment__BehaviorDescriptor extends BaseBH
   /*package*/ FeatureAttributeAssignment__BehaviorDescriptor() {
   }
 
-  @Override
-  protected void initNode(@NotNull SNode node, @NotNull SConstructor constructor, @Nullable Object[] parameters) {
-    ___init___(node);
-  }
 
   @Override
   protected <T> T invokeSpecial0(@NotNull SNode node, @NotNull SMethod<T> method, @Nullable Object[] parameters) {

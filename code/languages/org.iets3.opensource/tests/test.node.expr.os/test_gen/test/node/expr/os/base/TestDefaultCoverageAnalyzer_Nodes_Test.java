@@ -160,12 +160,12 @@ public class TestDefaultCoverageAnalyzer_Nodes_Test extends BaseTransformationTe
 
         SNode nodeA = createDefaultValueExpression_b93dld_a0e0a0b0f23();
         analyzer.visitNodeEx(nodeA);
-        Assert.assertEquals(1, SetSequence.fromSet(analyzer.getAllCoveredNodes()).count());
+        Assert.assertEquals(Integer.valueOf(1), Integer.valueOf(SetSequence.fromSet(analyzer.getAllCoveredNodes()).count()));
         Assert.assertSame(nodeA, SetSequence.fromSet(analyzer.getAllCoveredNodes()).first());
 
         SNode nodeB = createDefaultValueExpression_b93dld_a0j0a0b0f23();
         analyzer.visitNodeEx(nodeB);
-        Assert.assertEquals(2, SetSequence.fromSet(analyzer.getAllCoveredNodes()).count());
+        Assert.assertEquals(Integer.valueOf(2), Integer.valueOf(SetSequence.fromSet(analyzer.getAllCoveredNodes()).count()));
         Assert.assertTrue(SetSequence.fromSet(analyzer.getAllCoveredNodes()).contains(nodeA));
         Assert.assertTrue(SetSequence.fromSet(analyzer.getAllCoveredNodes()).contains(nodeB));
       });
@@ -179,12 +179,12 @@ public class TestDefaultCoverageAnalyzer_Nodes_Test extends BaseTransformationTe
 
         SNode nodeA = createDefaultValueExpression_b93dld_a0e0a0b0g23();
         IDefaultCoverageAnalyzer.visitNode(nodeA);
-        Assert.assertEquals(1, SetSequence.fromSet(IDefaultCoverageAnalyzer.allCoveredNodes()).count());
+        Assert.assertEquals(Integer.valueOf(1), Integer.valueOf(SetSequence.fromSet(IDefaultCoverageAnalyzer.allCoveredNodes()).count()));
         Assert.assertSame(nodeA, SetSequence.fromSet(IDefaultCoverageAnalyzer.allCoveredNodes()).first());
 
         SNode nodeB = createDefaultValueExpression_b93dld_a0j0a0b0g23();
         IDefaultCoverageAnalyzer.visitNode(nodeB);
-        Assert.assertEquals(2, SetSequence.fromSet(IDefaultCoverageAnalyzer.allCoveredNodes()).count());
+        Assert.assertEquals(Integer.valueOf(2), Integer.valueOf(SetSequence.fromSet(IDefaultCoverageAnalyzer.allCoveredNodes()).count()));
         Assert.assertTrue(SetSequence.fromSet(IDefaultCoverageAnalyzer.allCoveredNodes()).contains(nodeA));
         Assert.assertTrue(SetSequence.fromSet(IDefaultCoverageAnalyzer.allCoveredNodes()).contains(nodeB));
       });
@@ -237,7 +237,7 @@ public class TestDefaultCoverageAnalyzer_Nodes_Test extends BaseTransformationTe
 
         Assert.assertSame(node, coverage.getNode());
         Assert.assertEquals(IDefaultCoverageAnalyzer.MISSING, coverage.getStatus());
-        Assert.assertEquals(0, coverage.getCoverageRatio());
+        Assert.assertEquals(Integer.valueOf(0), Integer.valueOf(coverage.getCoverageRatio()));
       });
     }
     public void test_getNodeCoverageEx_visited() throws Exception {
@@ -251,7 +251,7 @@ public class TestDefaultCoverageAnalyzer_Nodes_Test extends BaseTransformationTe
 
         Assert.assertSame(node, coverage.getNode());
         Assert.assertEquals(IDefaultCoverageAnalyzer.COVERED, coverage.getStatus());
-        Assert.assertEquals(100, coverage.getCoverageRatio());
+        Assert.assertEquals(Integer.valueOf(100), Integer.valueOf(coverage.getCoverageRatio()));
       });
     }
     public void test_getNodeCoverageEx_unregisteredNested() throws Exception {
@@ -264,7 +264,7 @@ public class TestDefaultCoverageAnalyzer_Nodes_Test extends BaseTransformationTe
 
         Assert.assertSame(node, nodeCoverage.getNode());
         Assert.assertEquals(IDefaultCoverageAnalyzer.MISSING, nodeCoverage.getStatus());
-        Assert.assertEquals(0, nodeCoverage.getCoverageRatio());
+        Assert.assertEquals(Integer.valueOf(0), Integer.valueOf(nodeCoverage.getCoverageRatio()));
       });
     }
     public void test_getNodeCoverageEx_partialNested() throws Exception {
@@ -281,12 +281,12 @@ public class TestDefaultCoverageAnalyzer_Nodes_Test extends BaseTransformationTe
         IDefaultCoverageAnalyzer.INodeCoverage leftCoverage = analyzer.getNodeCoverageEx(left);
         Assert.assertSame(left, leftCoverage.getNode());
         Assert.assertEquals(IDefaultCoverageAnalyzer.COVERED, leftCoverage.getStatus());
-        Assert.assertEquals(100, leftCoverage.getCoverageRatio());
+        Assert.assertEquals(Integer.valueOf(100), Integer.valueOf(leftCoverage.getCoverageRatio()));
 
         IDefaultCoverageAnalyzer.INodeCoverage plusCoverage = analyzer.getNodeCoverageEx(plus);
         Assert.assertSame(plus, plusCoverage.getNode());
         Assert.assertEquals(IDefaultCoverageAnalyzer.PARTIAL, plusCoverage.getStatus());
-        Assert.assertEquals(50, plusCoverage.getCoverageRatio());
+        Assert.assertEquals(Integer.valueOf(50), Integer.valueOf(plusCoverage.getCoverageRatio()));
       });
     }
     public void test_getNodeCoverage() throws Exception {
@@ -303,12 +303,12 @@ public class TestDefaultCoverageAnalyzer_Nodes_Test extends BaseTransformationTe
         IDefaultCoverageAnalyzer.INodeCoverage leftCoverage = IDefaultCoverageAnalyzer.getNodeCoverage(left);
         Assert.assertSame(left, leftCoverage.getNode());
         Assert.assertEquals(IDefaultCoverageAnalyzer.COVERED, leftCoverage.getStatus());
-        Assert.assertEquals(100, leftCoverage.getCoverageRatio());
+        Assert.assertEquals(Integer.valueOf(100), Integer.valueOf(leftCoverage.getCoverageRatio()));
 
         IDefaultCoverageAnalyzer.INodeCoverage plusCoverage = IDefaultCoverageAnalyzer.getNodeCoverage(plus);
         Assert.assertSame(plus, plusCoverage.getNode());
         Assert.assertEquals(IDefaultCoverageAnalyzer.PARTIAL, plusCoverage.getStatus());
-        Assert.assertEquals(50, plusCoverage.getCoverageRatio());
+        Assert.assertEquals(Integer.valueOf(50), Integer.valueOf(plusCoverage.getCoverageRatio()));
       });
     }
     public void test_isNodeCoveredEx_unknown() throws Exception {

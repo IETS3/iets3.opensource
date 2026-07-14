@@ -10,7 +10,6 @@ import jetbrains.mps.baseLanguage.tuples.runtime.Tuples;
 import org.iets3.core.expr.mutable.plugin.IDElement;
 import org.iets3.core.expr.mutable.plugin.InterceptorState;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import java.util.List;
 import org.iets3.core.expr.mutable.plugin.ContextValue;
@@ -19,21 +18,18 @@ import com.mbeddr.mpsutil.interpreter.rt.ComputationTrace;
 import java.util.Arrays;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.mps.openapi.model.SNode;
-import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 
 public final class IInterceptor__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getInterfaceConcept(0xfbba51185fc649ffL, 0x9c3b0b4469830440L, 0x4bbb01110734eea6L, "org.iets3.core.expr.mutable.structure.IInterceptor");
 
-  public static final SMethod<Tuples._2<IDElement, InterceptorState>> processOrThrow_id4IV0h47deV3 = new SMethodBuilder<Tuples._2<IDElement, InterceptorState>>(new SJavaCompoundTypeImpl((Class<Tuples._2<IDElement, InterceptorState>>) ((Class) Object.class))).name("processOrThrow").modifiers(12, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5456956546136469187L).languageId(0x9c3b0b4469830440L, 0xfbba51185fc649ffL).build2(SMethodBuilder.createJavaParameter(IDElement.class, ""), SMethodBuilder.createJavaParameter(InterceptorState.class, ""), SMethodBuilder.createJavaParameter((Class<List<Object>>) ((Class) Object.class), ""), SMethodBuilder.createJavaParameter((Class<List<ContextValue>>) ((Class) Object.class), ""), SMethodBuilder.createJavaParameter(IContext.class, ""), SMethodBuilder.createJavaParameter(ComputationTrace.class, ""));
-  public static final SMethod<InterceptorState> createStateObject_id4IV0h47VEDy = new SMethodBuilder<InterceptorState>(new SJavaCompoundTypeImpl(InterceptorState.class)).name("createStateObject").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5456956546148641378L).languageId(0x9c3b0b4469830440L, 0xfbba51185fc649ffL).build2(SMethodBuilder.createJavaParameter(IContext.class, ""), SMethodBuilder.createJavaParameter(ComputationTrace.class, ""));
-  public static final SMethod<Iterable<SAbstractConcept>> guaranteesContextArguments_id4IV0h47FYNX = new SMethodBuilder<Iterable<SAbstractConcept>>(new SJavaCompoundTypeImpl((Class<Iterable<SAbstractConcept>>) ((Class) Object.class))).name("guaranteesContextArguments").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5456956546144529661L).languageId(0x9c3b0b4469830440L, 0xfbba51185fc649ffL).build2();
+  public static final SMethod<Tuples._2<IDElement, InterceptorState>> processOrThrow_id4IV0h47deV3 = new SMethodBuilder<>((Class<Tuples._2<IDElement, InterceptorState>>) ((Class) Object.class)).name("processOrThrow").modifiers(12, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5456956546136469187L).languageId(0x9c3b0b4469830440L, 0xfbba51185fc649ffL).build2(SMethodBuilder.createJavaParameter(IDElement.class, "element"), SMethodBuilder.createJavaParameter(InterceptorState.class, "state"), SMethodBuilder.createJavaParameter((Class<List<Object>>) ((Class) Object.class), "payload"), SMethodBuilder.createJavaParameter((Class<List<ContextValue>>) ((Class) Object.class), "contextArgs"), SMethodBuilder.createJavaParameter(IContext.class, "ctx"), SMethodBuilder.createJavaParameter(ComputationTrace.class, "trace"));
+  public static final SMethod<InterceptorState> createStateObject_id4IV0h47VEDy = new SMethodBuilder<>(InterceptorState.class).name("createStateObject").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5456956546148641378L).languageId(0x9c3b0b4469830440L, 0xfbba51185fc649ffL).build2(SMethodBuilder.createJavaParameter(IContext.class, "ctx"), SMethodBuilder.createJavaParameter(ComputationTrace.class, "trace"));
+  public static final SMethod<Iterable<SAbstractConcept>> guaranteesContextArguments_id4IV0h47FYNX = new SMethodBuilder<>((Class<Iterable<SAbstractConcept>>) ((Class) Object.class)).name("guaranteesContextArguments").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5456956546144529661L).languageId(0x9c3b0b4469830440L, 0xfbba51185fc649ffL).build2();
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(processOrThrow_id4IV0h47deV3, createStateObject_id4IV0h47VEDy, guaranteesContextArguments_id4IV0h47FYNX);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(processOrThrow_id4IV0h47deV3, createStateObject_id4IV0h47VEDy, guaranteesContextArguments_id4IV0h47FYNX);
 
-  private static void ___init___(@NotNull SNode __thisNode__) {
-  }
 
   /*package*/ static InterceptorState createStateObject_id4IV0h47VEDy(@NotNull SNode __thisNode__, IContext ctx, ComputationTrace trace) {
     return null;
@@ -45,10 +41,6 @@ public final class IInterceptor__BehaviorDescriptor extends BaseBHDescriptor {
   /*package*/ IInterceptor__BehaviorDescriptor() {
   }
 
-  @Override
-  protected void initNode(@NotNull SNode node, @NotNull SConstructor constructor, @Nullable Object[] parameters) {
-    ___init___(node);
-  }
 
   @Override
   protected <T> T invokeSpecial0(@NotNull SNode node, @NotNull SMethod<T> method, @Nullable Object[] parameters) {

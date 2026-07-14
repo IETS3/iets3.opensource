@@ -7,7 +7,7 @@ import org.iets3.core.expr.base.runtime.runtime.PTF;
 import jetbrains.mps.baseLanguage.logging.rt.LogContext;
 
 /**
- * Temporarily enables {@link test.ts.expr.os.comma.plugin.TestCommaPrimitiveTypeMapper#useCommaInsteadOfDotForDecimals() } for tests.
+ * Temporarily enables {@link test.ts.expr.os.comma.plugin.TestCommaPrimitiveTypeMapper#useCommaInsteadOfDotForDecimals()} for tests.
  */
 public class TestCommaPrimitiveTypeMapper extends SimpleTypesPrimitiveTypeMapper {
   private static int priorityDelta = -2;

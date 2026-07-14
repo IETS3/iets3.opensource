@@ -20,7 +20,7 @@ public class EnumerationDescriptor_Visualization extends EnumerationDescriptorBa
   private final EnumerationDescriptor.MemberDescriptor myMember_explorer_0 = new EnumerationDescriptor.MemberDescriptor("explorer", "explorer", 0x598dc612d79f0517L, "r:a7e2f963-3e46-49e0-a385-e8c7f33c91b7(org.iets3.variability.featuremodel.base.structure)/5939066662398655265");
 
   private final EnumerationLiteralsIndex myIndex = EnumerationLiteralsIndex.build(0x165f1d0525064544L, 0x895e1424f54166ecL, 0x598dc612d79f050eL, 0x598dc612d79f050fL, 0x598dc612d79f0510L, 0x598dc612d79f0517L);
-  private final List<EnumerationDescriptor.MemberDescriptor> myMembers = new EnumerationDescriptorBase.MembersList(myIndex, myMember_vertical_0, myMember_horizontal_0, myMember_explorer_0);
+  private final List<EnumerationDescriptor.MemberDescriptor> myMembers = new EnumerationDescriptorBase.MembersList0(myIndex, myMember_vertical_0, myMember_horizontal_0, myMember_explorer_0);
 
   @Nullable
   @Override

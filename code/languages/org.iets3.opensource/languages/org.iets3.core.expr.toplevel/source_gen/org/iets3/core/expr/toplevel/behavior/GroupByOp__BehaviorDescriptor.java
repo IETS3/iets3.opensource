@@ -8,7 +8,6 @@ import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import org.jetbrains.mps.openapi.model.SNode;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import java.util.List;
 import java.util.Arrays;
@@ -26,10 +25,10 @@ import org.jetbrains.mps.openapi.language.SConcept;
 public final class GroupByOp__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getConcept(0x71934284d7d145eeL, 0xa0548c072591085fL, 0x73194702f05f7592L, "org.iets3.core.expr.toplevel.structure.GroupByOp");
 
-  public static final SMethod<SNode> requiredType_id6zmBjqUm7MF = new SMethodBuilder<SNode>(new SJavaCompoundTypeImpl((Class<SNode>) ((Class) Object.class))).name("requiredType").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(7554398283340741803L).languageId(0x927464ab29588457L, 0x9464fa065ab9409bL).build2();
-  public static final SMethod<String> allowsEffectForNode_idORfz$DS6Ap = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("allowsEffectForNode").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(952298261448780185L).languageId(0xb66a309a6e1a7290L, 0xcfaa4966b7d54b69L).build2(SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""));
+  public static final SMethod<SNode> requiredType_id6zmBjqUm7MF = new SMethodBuilder<>(SNode.class).name("requiredType").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(7554398283340741803L).languageId(0x927464ab29588457L, 0x9464fa065ab9409bL).build2();
+  public static final SMethod<String> allowsEffectForNode_idORfz$DS6Ap = new SMethodBuilder<>(String.class).name("allowsEffectForNode").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(952298261448780185L).languageId(0xb66a309a6e1a7290L, 0xcfaa4966b7d54b69L).build2(SMethodBuilder.createJavaParameter(SNode.class, "n"));
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(requiredType_id6zmBjqUm7MF, allowsEffectForNode_idORfz$DS6Ap);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(requiredType_id6zmBjqUm7MF, allowsEffectForNode_idORfz$DS6Ap);
 
   private static void ___init___(@NotNull SNode __thisNode__) {
     SNode sle = SLinkOperations.setNewChild(__thisNode__, LINKS.expr$CW3E, CONCEPTS.ShortLambdaExpression$Xg);

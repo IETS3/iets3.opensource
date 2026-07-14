@@ -7,7 +7,6 @@ import org.jetbrains.mps.openapi.language.SAbstractConcept;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import java.util.List;
 import java.util.Arrays;
@@ -23,11 +22,11 @@ import org.jetbrains.mps.openapi.language.SContainmentLink;
 public final class TestExecutionConfig__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getConcept(0x2022a47110ba4431L, 0xba5d622df898f3c6L, 0x3e144f9cc1c728afL, "org.iets3.core.expr.testExecution.structure.TestExecutionConfig");
 
-  public static final SMethod<String> getIDEDisplayString_idIviauXb0g = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("getIDEDisplayString").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(13085436577886224L).languageId(0xaa41d1b2bffa7eb1L, 0xd4280a54f6df4383L).build2();
-  public static final SMethod<Integer> getSortOrder_id1uL8CIs6rGR = new SMethodBuilder<Integer>(new SJavaCompoundTypeImpl(Integer.TYPE)).name("getSortOrder").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(1707183716764859191L).languageId(0xaa41d1b2bffa7eb1L, 0xd4280a54f6df4383L).build2();
-  public static final SMethod<String> getCategory_id1uL8CIsKxiy = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("getCategory").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(1707183716775892130L).languageId(0xaa41d1b2bffa7eb1L, 0xd4280a54f6df4383L).build2();
+  public static final SMethod<String> getIDEDisplayString_idIviauXb0g = new SMethodBuilder<>(String.class).name("getIDEDisplayString").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(13085436577886224L).languageId(0xaa41d1b2bffa7eb1L, 0xd4280a54f6df4383L).build2();
+  public static final SMethod<Integer> getSortOrder_id1uL8CIs6rGR = new SMethodBuilder<>(Integer.TYPE).name("getSortOrder").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(1707183716764859191L).languageId(0xaa41d1b2bffa7eb1L, 0xd4280a54f6df4383L).build2();
+  public static final SMethod<String> getCategory_id1uL8CIsKxiy = new SMethodBuilder<>(String.class).name("getCategory").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(1707183716775892130L).languageId(0xaa41d1b2bffa7eb1L, 0xd4280a54f6df4383L).build2();
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(getIDEDisplayString_idIviauXb0g, getSortOrder_id1uL8CIs6rGR, getCategory_id1uL8CIsKxiy);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(getIDEDisplayString_idIviauXb0g, getSortOrder_id1uL8CIs6rGR, getCategory_id1uL8CIsKxiy);
 
   private static void ___init___(@NotNull SNode __thisNode__) {
     SLinkOperations.setTarget(__thisNode__, LINKS.executionMode$y6nW, SConceptOperations.createNewNode(MetaAdapterFactory.getConcept(0x2022a47110ba4431L, 0xba5d622df898f3c6L, 0x3e144f9cc1c797c8L, "org.iets3.core.expr.testExecution.structure.InterpreterExecutionMode")));

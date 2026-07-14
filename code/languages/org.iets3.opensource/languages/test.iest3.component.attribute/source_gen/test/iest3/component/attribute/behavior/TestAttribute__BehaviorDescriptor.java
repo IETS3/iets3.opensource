@@ -7,15 +7,13 @@ import org.jetbrains.mps.openapi.language.SAbstractConcept;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import java.util.List;
 import java.util.Arrays;
 import org.jetbrains.annotations.NotNull;
-import org.jetbrains.mps.openapi.model.SNode;
 import jetbrains.mps.internal.collections.runtime.ListSequence;
 import java.util.ArrayList;
-import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
+import org.jetbrains.mps.openapi.model.SNode;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 import org.jetbrains.mps.openapi.language.SConcept;
@@ -23,12 +21,10 @@ import org.jetbrains.mps.openapi.language.SConcept;
 public final class TestAttribute__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getConcept(0x3c910f627ca945f3L, 0xa98ac6239acaa8f1L, 0x3dbd14d2e5871bf2L, "test.iest3.component.attribute.structure.TestAttribute");
 
-  public static final SMethod<Iterable<SAbstractConcept>> canBeUsedUnder_id1WCh2th1Boz = new SMethodBuilder<Iterable<SAbstractConcept>>(new SJavaCompoundTypeImpl((Class<Iterable<SAbstractConcept>>) ((Class) Object.class))).name("canBeUsedUnder").modifiers(9, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(2245119349897983523L).languageId(0xb6713d118449c6e7L, 0xf0fd486f857743e9L).build2();
+  public static final SMethod<Iterable<SAbstractConcept>> canBeUsedUnder_id1WCh2th1Boz = new SMethodBuilder<>((Class<Iterable<SAbstractConcept>>) ((Class) Object.class)).name("canBeUsedUnder").modifiers(9, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(2245119349897983523L).languageId(0xb6713d118449c6e7L, 0xf0fd486f857743e9L).build2();
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(canBeUsedUnder_id1WCh2th1Boz);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(canBeUsedUnder_id1WCh2th1Boz);
 
-  private static void ___init___(@NotNull SNode __thisNode__) {
-  }
 
   /*package*/ static Iterable<SAbstractConcept> canBeUsedUnder_id1WCh2th1Boz(@NotNull SAbstractConcept __thisConcept__) {
     return ListSequence.fromListAndArray(new ArrayList<SAbstractConcept>(), CONCEPTS.Component$gR, CONCEPTS.Parameter$HZ, CONCEPTS.ComponentInstance$7c, CONCEPTS.AbstractPortToPortConnector$JI, CONCEPTS.Port$gs);
@@ -37,10 +33,6 @@ public final class TestAttribute__BehaviorDescriptor extends BaseBHDescriptor {
   /*package*/ TestAttribute__BehaviorDescriptor() {
   }
 
-  @Override
-  protected void initNode(@NotNull SNode node, @NotNull SConstructor constructor, @Nullable Object[] parameters) {
-    ___init___(node);
-  }
 
   @Override
   protected <T> T invokeSpecial0(@NotNull SNode node, @NotNull SMethod<T> method, @Nullable Object[] parameters) {

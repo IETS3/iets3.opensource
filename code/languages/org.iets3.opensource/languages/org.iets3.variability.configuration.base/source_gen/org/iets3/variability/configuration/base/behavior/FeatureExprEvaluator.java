@@ -35,11 +35,13 @@ public class FeatureExprEvaluator {
   public static boolean debug = false;
 
   /**
-   * <p>Evaluate a feature reference expression.</p>
+   *  <p>Evaluate a feature reference expression.</p>  
    * 
-   * <p>Note that this method uses a plain interpreter context with
+   *  <p>
+   * Note that this method uses a plain interpreter context with
    * empty environment. Thus, it can only be used if no context
-   * information is needed to evaluate the reference expression.</p>
+   * information is needed to evaluate the reference expression.
+   * </p> 
    * 
    * @param expr the feature reference expression
    * @return the resulting feature configuration node, or null on error
@@ -49,7 +51,7 @@ public class FeatureExprEvaluator {
   }
 
   /**
-   * <p>Evaluate a feature reference expression.</p>
+   *  <p>Evaluate a feature reference expression.</p>  
    * 
    * @param expr the feature reference expression
    * @param context an interpreter context containing the necessary feature configurations
@@ -71,12 +73,14 @@ public class FeatureExprEvaluator {
   }
 
   /**
-   * <p>Evaluate a feature expression (i.e., a presence condition).</p>
+   *  <p>Evaluate a feature expression (i.e., a presence condition).</p>  
    * 
-   * <p>In order to evaluate feature selection states and feature
+   *  <p>
+   * In order to evaluate feature selection states and feature
    * attribute values, a feature configuration has to be provided
    * via the context's environment. The environment has to contain
-   * a mapping from a feature model to a corresponding configuration.</p>
+   * a mapping from a feature model to a corresponding configuration.
+   * </p> 
    * 
    * @deprecated this method cannot distinguish between evaluation results "undefined" and "false", use evaluateConditionTernary instead
    * @param expr a boolean expression which might contain feature references
@@ -115,16 +119,20 @@ public class FeatureExprEvaluator {
   }
 
   /**
-   * <p>Evaluate a feature expression (i.e., a presence condition).</p>
+   *  <p>Evaluate a feature expression (i.e., a presence condition).</p>  
    * 
-   * <p>This method will handle expressions referencing features which are _untouched_ in the
+   *  <p>
+   * This method will handle expressions referencing features which are _untouched_ in the
    * supplied configuration. If the expression's result depends on one of those feature, the
-   * result cannot be decided to either true or false. The method will return null in that case.</p>
+   * result cannot be decided to either true or false. The method will return null in that case.
+   * </p> 
    * 
-   * <p>In order to evaluate feature selection states and feature
+   *  <p>
+   * In order to evaluate feature selection states and feature
    * attribute values, a feature configuration has to be provided
    * via the context's environment. The environment has to contain
-   * a mapping from a feature model to a corresponding configuration.</p>
+   * a mapping from a feature model to a corresponding configuration.
+   * </p> 
    * 
    * @param expr a boolean expression which might contain feature references
    * @param context the evaluation context
@@ -165,7 +173,7 @@ public class FeatureExprEvaluator {
   }
 
   /**
-   * <p>Helper function which uses the interpreter to evaluate an expression.</p>
+   *  <p>Helper function which uses the interpreter to evaluate an expression.</p>
    * 
    * @param expr the expression to be evaluated
    * @param context a context for the interpreter

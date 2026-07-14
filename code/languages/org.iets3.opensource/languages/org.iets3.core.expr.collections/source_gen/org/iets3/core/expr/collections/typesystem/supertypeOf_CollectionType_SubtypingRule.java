@@ -28,9 +28,6 @@ public class supertypeOf_CollectionType_SubtypingRule extends SubtypingRule_Runt
   public boolean isWeak() {
     return false;
   }
-  public boolean surelyKeepsConcept() {
-    return true;
-  }
 
   private static final class CONCEPTS {
     /*package*/ static final SConcept CollectionType$kS = MetaAdapterFactory.getConcept(0x2f7e2e356e744c43L, 0x9fa52465d68f5996L, 0x68d69d36ba495885L, "org.iets3.core.expr.collections.structure.CollectionType");

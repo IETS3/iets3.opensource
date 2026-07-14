@@ -8,7 +8,6 @@ import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import com.mbeddr.mpsutil.traceExplorer.plugin.ITraceRecord;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import org.jetbrains.mps.openapi.model.SNode;
 import java.util.List;
@@ -30,12 +29,12 @@ import org.jetbrains.mps.openapi.language.SConcept;
 public final class TopLevelMultiDecTab__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getConcept(0x8bb1251eeae547abL, 0x984333adfae8edaaL, 0x5b3545b73b0933c2L, "org.iets3.core.expr.util.structure.TopLevelMultiDecTab");
 
-  public static final SMethod<ITraceRecord> getRootTrace_id7obiejCh8Tv = new SMethodBuilder<ITraceRecord>(new SJavaCompoundTypeImpl(ITraceRecord.class)).name("getRootTrace").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(8505972469205864031L).languageId(0xb66a309a6e1a7290L, 0xcfaa4966b7d54b69L).build2();
-  public static final SMethod<Iterable<SNode>> inputColDefs_id7FuUjk_dUMU = new SMethodBuilder<Iterable<SNode>>(new SJavaCompoundTypeImpl((Class<Iterable<SNode>>) ((Class) Object.class))).name("inputColDefs").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(8853770331923918010L).languageId(0x984333adfae8edaaL, 0x8bb1251eeae547abL).build2();
-  public static final SMethod<Boolean> isToplevelCoverageContent_id2hXd3rsZYy8 = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("isToplevelCoverageContent").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(2629315167694874760L).languageId(0xa6067ce0236c8023L, 0x47f075a6558e4640L).build2();
-  public static final SMethod<List<SNode>> getMembers_id5r47dOfJ8UL = new SMethodBuilder<List<SNode>>(new SJavaCompoundTypeImpl((Class<List<SNode>>) ((Class) Object.class))).name("getMembers").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(6252153918474456753L).languageId(0xb66a309a6e1a7290L, 0xcfaa4966b7d54b69L).build2();
+  public static final SMethod<ITraceRecord> getRootTrace_id7obiejCh8Tv = new SMethodBuilder<>(ITraceRecord.class).name("getRootTrace").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(8505972469205864031L).languageId(0xb66a309a6e1a7290L, 0xcfaa4966b7d54b69L).build2();
+  public static final SMethod<Iterable<SNode>> inputColDefs_id7FuUjk_dUMU = new SMethodBuilder<>((Class<Iterable<SNode>>) ((Class) Object.class)).name("inputColDefs").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(8853770331923918010L).languageId(0x984333adfae8edaaL, 0x8bb1251eeae547abL).build2();
+  public static final SMethod<Boolean> isToplevelCoverageContent_id2hXd3rsZYy8 = new SMethodBuilder<>(Boolean.TYPE).name("isToplevelCoverageContent").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(2629315167694874760L).languageId(0xa6067ce0236c8023L, 0x47f075a6558e4640L).build2();
+  public static final SMethod<List<SNode>> getMembers_id5r47dOfJ8UL = new SMethodBuilder<>((Class<List<SNode>>) ((Class) Object.class)).name("getMembers").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(6252153918474456753L).languageId(0xb66a309a6e1a7290L, 0xcfaa4966b7d54b69L).build2();
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(getRootTrace_id7obiejCh8Tv, inputColDefs_id7FuUjk_dUMU, isToplevelCoverageContent_id2hXd3rsZYy8, getMembers_id5r47dOfJ8UL);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(getRootTrace_id7obiejCh8Tv, inputColDefs_id7FuUjk_dUMU, isToplevelCoverageContent_id2hXd3rsZYy8, getMembers_id5r47dOfJ8UL);
 
   private static void ___init___(@NotNull SNode __thisNode__) {
     ListSequence.fromList(SLinkOperations.getChildren(__thisNode__, LINKS.colDefs$80en)).addElement(SConceptOperations.createNewNode(MetaAdapterFactory.getConcept(0x8bb1251eeae547abL, 0x984333adfae8edaaL, 0x5b3545b73b0942c8L, "org.iets3.core.expr.util.structure.TopLevelColDef")));

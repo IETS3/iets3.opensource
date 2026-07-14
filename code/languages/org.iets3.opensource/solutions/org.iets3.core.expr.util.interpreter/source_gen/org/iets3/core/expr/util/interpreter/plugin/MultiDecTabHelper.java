@@ -34,8 +34,8 @@ public class MultiDecTabHelper {
   private ComputationTrace trace;
 
   /**
-   * Value set for the node representing a row in the computation trace by this helper. 
-   * Knowing the value that is used to indicate that the row was matched is useful for analyses 
+   * Value set for the node representing a row in the computation trace by this helper.
+   * Knowing the value that is used to indicate that the row was matched is useful for analyses
    * scenarios like coverage reporting.
    */
   public static final String ROW_MATCHED_VALUE = "row matched";

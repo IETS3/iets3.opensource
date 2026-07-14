@@ -60,7 +60,7 @@ public class Segment implements IInstantiation {
   }
 
   /**
-   * true if instantiation has been applied on the SkeletonNode corresponding to this segment. 
+   * true if instantiation has been applied on the SkeletonNode corresponding to this segment.
    * 
    * @return  
    */

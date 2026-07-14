@@ -8,13 +8,11 @@ import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import org.jetbrains.mps.openapi.model.SNode;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import java.util.List;
 import java.util.Arrays;
 import org.jetbrains.annotations.NotNull;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
-import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 import org.jetbrains.mps.openapi.language.SContainmentLink;
@@ -22,13 +20,11 @@ import org.jetbrains.mps.openapi.language.SContainmentLink;
 public final class DimensionMultiplication__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getConcept(0x7ee265bd59864709L, 0x86ed2c6daa33cd8cL, 0x4dee5a62d2094e08L, "org.iets3.core.expr.typetags.physunits.structure.DimensionMultiplication");
 
-  public static final SMethod<SNode> getLeft_id1JynhuWs0Bg = new SMethodBuilder<SNode>(new SJavaCompoundTypeImpl((Class<SNode>) ((Class) Object.class))).name("getLeft").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(2009270740287752656L).languageId(0x86ed2c6daa33cd8cL, 0x7ee265bd59864709L).build2();
-  public static final SMethod<SNode> getRight_id1JynhuWs0LF = new SMethodBuilder<SNode>(new SJavaCompoundTypeImpl((Class<SNode>) ((Class) Object.class))).name("getRight").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(2009270740287753323L).languageId(0x86ed2c6daa33cd8cL, 0x7ee265bd59864709L).build2();
+  public static final SMethod<SNode> getLeft_id1JynhuWs0Bg = new SMethodBuilder<>(SNode.class).name("getLeft").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(2009270740287752656L).languageId(0x86ed2c6daa33cd8cL, 0x7ee265bd59864709L).build2();
+  public static final SMethod<SNode> getRight_id1JynhuWs0LF = new SMethodBuilder<>(SNode.class).name("getRight").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(2009270740287753323L).languageId(0x86ed2c6daa33cd8cL, 0x7ee265bd59864709L).build2();
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(getLeft_id1JynhuWs0Bg, getRight_id1JynhuWs0LF);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(getLeft_id1JynhuWs0Bg, getRight_id1JynhuWs0LF);
 
-  private static void ___init___(@NotNull SNode __thisNode__) {
-  }
 
   /*package*/ static SNode getLeft_id1JynhuWs0Bg(@NotNull SNode __thisNode__) {
     return SLinkOperations.getTarget(__thisNode__, LINKS.left$FCvk);
@@ -40,10 +36,6 @@ public final class DimensionMultiplication__BehaviorDescriptor extends BaseBHDes
   /*package*/ DimensionMultiplication__BehaviorDescriptor() {
   }
 
-  @Override
-  protected void initNode(@NotNull SNode node, @NotNull SConstructor constructor, @Nullable Object[] parameters) {
-    ___init___(node);
-  }
 
   @Override
   protected <T> T invokeSpecial0(@NotNull SNode node, @NotNull SMethod<T> method, @Nullable Object[] parameters) {

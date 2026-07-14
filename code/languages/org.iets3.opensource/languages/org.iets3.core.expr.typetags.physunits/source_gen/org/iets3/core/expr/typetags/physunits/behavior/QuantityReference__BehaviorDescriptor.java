@@ -8,14 +8,12 @@ import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import org.jetbrains.mps.openapi.model.SNode;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import java.util.List;
 import java.util.Arrays;
 import org.jetbrains.annotations.NotNull;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
 import com.mbeddr.core.base.behavior.IDetectCycle__BehaviorDescriptor;
-import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 import org.jetbrains.mps.openapi.language.SReferenceLink;
@@ -24,14 +22,12 @@ import org.jetbrains.mps.openapi.language.SContainmentLink;
 public final class QuantityReference__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getConcept(0x7ee265bd59864709L, 0x86ed2c6daa33cd8cL, 0x729d46b7ce8b6fa3L, "org.iets3.core.expr.typetags.physunits.structure.QuantityReference");
 
-  public static final SMethod<SNode> getReferencedNode_id6q45UTyu4YY = new SMethodBuilder<SNode>(new SJavaCompoundTypeImpl((Class<SNode>) ((Class) Object.class))).name("getReferencedNode").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(7387055326538256318L).languageId(0x86ed2c6daa33cd8cL, 0x7ee265bd59864709L).build2();
-  public static final SMethod<String> getPresentation_idhEwIMiw = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("getPresentation").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(1213877396640L).languageId(0x9b92103b95ca8c0cL, 0xceab519525ea4f22L).build2();
-  public static final SMethod<SNode> getReducedExpr_id69ZGumtuChd = new SMethodBuilder<SNode>(new SJavaCompoundTypeImpl((Class<SNode>) ((Class) Object.class))).name("getReducedExpr").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(7097587137506870349L).languageId(0x86ed2c6daa33cd8cL, 0x7ee265bd59864709L).build2();
+  public static final SMethod<SNode> getReferencedNode_id6q45UTyu4YY = new SMethodBuilder<>(SNode.class).name("getReferencedNode").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(7387055326538256318L).languageId(0x86ed2c6daa33cd8cL, 0x7ee265bd59864709L).build2();
+  public static final SMethod<String> getPresentation_idhEwIMiw = new SMethodBuilder<>(String.class).name("getPresentation").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(1213877396640L).languageId(0x9b92103b95ca8c0cL, 0xceab519525ea4f22L).build2();
+  public static final SMethod<SNode> getReducedExpr_id69ZGumtuChd = new SMethodBuilder<>(SNode.class).name("getReducedExpr").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(7097587137506870349L).languageId(0x86ed2c6daa33cd8cL, 0x7ee265bd59864709L).build2();
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(getReferencedNode_id6q45UTyu4YY, getPresentation_idhEwIMiw, getReducedExpr_id69ZGumtuChd);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(getReferencedNode_id6q45UTyu4YY, getPresentation_idhEwIMiw, getReducedExpr_id69ZGumtuChd);
 
-  private static void ___init___(@NotNull SNode __thisNode__) {
-  }
 
   /*package*/ static SNode getReferencedNode_id6q45UTyu4YY(@NotNull SNode __thisNode__) {
     return SLinkOperations.getTarget(__thisNode__, LINKS.quantity$A_Kl);
@@ -50,10 +46,6 @@ public final class QuantityReference__BehaviorDescriptor extends BaseBHDescripto
   /*package*/ QuantityReference__BehaviorDescriptor() {
   }
 
-  @Override
-  protected void initNode(@NotNull SNode node, @NotNull SConstructor constructor, @Nullable Object[] parameters) {
-    ___init___(node);
-  }
 
   @Override
   protected <T> T invokeSpecial0(@NotNull SNode node, @NotNull SMethod<T> method, @Nullable Object[] parameters) {
