@@ -581,7 +581,7 @@
                 <node concept="2OqwBi" id="7nsgDAXwnkb" role="10QFUP">
                   <node concept="71T_Y" id="7nsgDAXwnkc" role="2Oq$k0" />
                   <node concept="liA8E" id="7nsgDAXwnkd" role="2OqNvi">
-                    <ref role="37wK5l" to="b8lf:~AbstractMultipleSelection.getSelectedNodes()" resolve="getSelectedNodes" />
+                    <ref role="37wK5l" to="b8lf:~NodeRangeSelection.getSelectedNodes()" resolve="getSelectedNodes" />
                   </node>
                 </node>
                 <node concept="2I9FWS" id="7nsgDAXwnka" role="10QFUM">
@@ -715,7 +715,7 @@
             <node concept="2OqwBi" id="7nsgDAXwlQh" role="33vP2m">
               <node concept="71T_Y" id="7nsgDAXwlQi" role="2Oq$k0" />
               <node concept="liA8E" id="7nsgDAXwlQj" role="2OqNvi">
-                <ref role="37wK5l" to="b8lf:~AbstractMultipleSelection.getSelectedNodes()" resolve="getSelectedNodes" />
+                <ref role="37wK5l" to="b8lf:~NodeRangeSelection.getSelectedNodes()" resolve="getSelectedNodes" />
               </node>
             </node>
           </node>
