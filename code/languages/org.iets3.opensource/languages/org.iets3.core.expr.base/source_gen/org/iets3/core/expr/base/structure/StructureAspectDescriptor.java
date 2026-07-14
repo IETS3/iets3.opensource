@@ -919,6 +919,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.origin("r:66e07cb4-a4b0-4bf3-a36d-5e9ed1ff1bd3(org.iets3.core.expr.base.structure)/9002563722476995145");
     b.version(3);
     b.aggregate("target", 0x7cef88020a0f424bL).target(0xcfaa4966b7d54b69L, 0xb66a309a6e1a7290L, 0x7cef88020a0f424aL).optional(false).ordered(true).multiple(false).origin("9002563722476995147").done();
+    b.alias(".");
     return b.create();
   }
   private static ConceptDescriptor createDescriptorForEmptyExpression() {

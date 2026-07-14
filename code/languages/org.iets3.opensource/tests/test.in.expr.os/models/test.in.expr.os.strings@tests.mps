@@ -10,6 +10,11 @@
   </languages>
   <imports />
   <registry>
+    <language id="7b68d745-a7b8-48b9-bd9c-05c0f8725a35" name="org.iets3.core.base">
+      <concept id="7831630342157089621" name="org.iets3.core.base.structure.IDetectNeedToRunManually" flags="ngI" index="0Rz4o">
+        <property id="7831630342157089649" name="__hash" index="0Rz4W" />
+      </concept>
+    </language>
     <language id="cfaa4966-b7d5-4b69-b66a-309a6e1a7290" name="org.iets3.core.expr.base">
       <concept id="4261931054731905240" name="org.iets3.core.expr.base.structure.IContainExpressionParam" flags="ngI" index="2lDidI">
         <child id="4261931054731905241" name="expr" index="2lDidJ" />
@@ -890,10 +895,11 @@
     <node concept="_ixoA" id="1EIbarKbUZU" role="_iOnB" />
     <node concept="2zPypq" id="7cphKbL8wvv" role="_iOnB">
       <property role="TrG5h" value="i1" />
+      <property role="0Rz4W" value="-2092563943" />
       <node concept="2206d8" id="7cphKbL8wyz" role="2lDidJ">
         <node concept="19SGf9" id="7cphKbL8wy_" role="2206d9">
           <node concept="19SUe$" id="7cphKbL8wyA" role="19SJt6">
-            <property role="19SUeA" value="Here" />
+            <property role="19SUeA" value="Here " />
           </node>
           <node concept="2206Zw" id="7cphKbL9fti" role="19SJt6">
             <node concept="_emDc" id="7cphKbL9ftA" role="2lDidJ">
@@ -901,17 +907,18 @@
             </node>
           </node>
           <node concept="19SUe$" id="7cphKbL9ftl" role="19SJt6">
-            <property role="19SUeA" value="X" />
+            <property role="19SUeA" value=" X" />
           </node>
         </node>
       </node>
     </node>
     <node concept="2zPypq" id="39iG6BG5RyW" role="_iOnB">
       <property role="TrG5h" value="i2" />
+      <property role="0Rz4W" value="1187901536" />
       <node concept="2206d8" id="39iG6BG5RLQ" role="2lDidJ">
         <node concept="19SGf9" id="39iG6BG5RLS" role="2206d9">
           <node concept="19SUe$" id="39iG6BG5RLT" role="19SJt6">
-            <property role="19SUeA" value="  with some   space   upfront" />
+            <property role="19SUeA" value="  with some   space   upfront " />
           </node>
           <node concept="2206Zw" id="39iG6BG5RM8" role="19SJt6">
             <node concept="_emDc" id="39iG6BG5RMv" role="2lDidJ">
@@ -919,13 +926,14 @@
             </node>
           </node>
           <node concept="19SUe$" id="39iG6BG5RMb" role="19SJt6">
-            <property role="19SUeA" value="and some behind   " />
+            <property role="19SUeA" value=" and some behind   " />
           </node>
         </node>
       </node>
     </node>
     <node concept="2zPypq" id="39iG6BG5UAH" role="_iOnB">
       <property role="TrG5h" value="i3" />
+      <property role="0Rz4W" value="1555862946" />
       <node concept="2206d8" id="39iG6BG5UQ8" role="2lDidJ">
         <node concept="19SGf9" id="39iG6BG5UQa" role="2206d9">
           <node concept="19SUe$" id="39iG6BG5UQt" role="19SJt6" />
@@ -935,17 +943,18 @@
             </node>
           </node>
           <node concept="19SUe$" id="39iG6BG5UQu" role="19SJt6">
-            <property role="19SUeA" value="at the beginning" />
+            <property role="19SUeA" value=" at the beginning" />
           </node>
         </node>
       </node>
     </node>
     <node concept="2zPypq" id="39iG6BG5V6v" role="_iOnB">
       <property role="TrG5h" value="i4" />
+      <property role="0Rz4W" value="-1641907464" />
       <node concept="2206d8" id="39iG6BG5Vmj" role="2lDidJ">
         <node concept="19SGf9" id="39iG6BG5Vml" role="2206d9">
           <node concept="19SUe$" id="39iG6BG5Vmm" role="19SJt6">
-            <property role="19SUeA" value="at the end" />
+            <property role="19SUeA" value="at the end " />
           </node>
           <node concept="2206Zw" id="39iG6BG5Vm_" role="19SJt6">
             <node concept="_emDc" id="39iG6BG5VmW" role="2lDidJ">
@@ -958,6 +967,7 @@
     </node>
     <node concept="2zPypq" id="39iG6BG5ZfT" role="_iOnB">
       <property role="TrG5h" value="i5" />
+      <property role="0Rz4W" value="2113603419" />
       <node concept="2206d8" id="39iG6BGyHPu" role="2lDidJ">
         <node concept="19SGf9" id="39iG6BGyHPw" role="2206d9">
           <node concept="19SUe$" id="39iG6BGyHPP" role="19SJt6" />
@@ -977,24 +987,27 @@
     </node>
     <node concept="2zPypq" id="IYj_dZsNZE" role="_iOnB">
       <property role="TrG5h" value="i6" />
+      <property role="0Rz4W" value="-329301861" />
       <node concept="2206d8" id="IYj_dZsOpP" role="2lDidJ">
         <node concept="19SGf9" id="IYj_dZsOpR" role="2206d9">
           <node concept="19SUe$" id="IYj_dZsOpS" role="19SJt6">
-            <property role="19SUeA" value="  with deliberate" />
+            <property role="19SUeA" value="  with deliberate " />
           </node>
           <node concept="2206Zw" id="IYj_dZsOrO" role="19SJt6">
             <node concept="_emDc" id="IYj_dZsOrP" role="2lDidJ">
               <ref role="_emDf" node="39iG6BG5ZL9" resolve="f" />
             </node>
           </node>
-          <node concept="19SUe$" id="IYj_dZsPwk" role="19SJt6" />
+          <node concept="19SUe$" id="IYj_dZsPwk" role="19SJt6">
+            <property role="19SUeA" value=" " />
+          </node>
           <node concept="2206Zw" id="IYj_dZsPwg" role="19SJt6">
             <node concept="_emDc" id="IYj_dZsPx5" role="2lDidJ">
               <ref role="_emDf" node="39iG6BG60iG" resolve="g" />
             </node>
           </node>
           <node concept="19SUe$" id="IYj_dZsPwj" role="19SJt6">
-            <property role="19SUeA" value="spaces   " />
+            <property role="19SUeA" value=" spaces   " />
           </node>
         </node>
       </node>

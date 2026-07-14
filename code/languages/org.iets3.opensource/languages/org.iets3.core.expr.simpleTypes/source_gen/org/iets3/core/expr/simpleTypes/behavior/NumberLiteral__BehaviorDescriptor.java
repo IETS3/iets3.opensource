@@ -18,6 +18,7 @@ import org.iets3.core.expr.base.runtime.runtime.PTF;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations;
 import org.iets3.core.expr.base.behavior.Expression__BehaviorDescriptor;
 import org.iets3.core.expr.base.behavior.ISupportHexValues__BehaviorDescriptor;
+import java.util.Objects;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
 import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
@@ -89,7 +90,7 @@ public final class NumberLiteral__BehaviorDescriptor extends BaseBHDescriptor {
     if (other == null) {
       return false;
     }
-    if (SNodeOperations.getConcept(__thisNode__) != SNodeOperations.getConcept(other)) {
+    if (!(Objects.equals(SNodeOperations.getConcept(__thisNode__), SNodeOperations.getConcept(other)))) {
       return false;
     }
     return SPropertyOperations.getString(__thisNode__, PROPS.value$iWTK).equals(SPropertyOperations.getString(SNodeOperations.cast(other, CONCEPTS.NumberLiteral$wE), PROPS.value$iWTK));
