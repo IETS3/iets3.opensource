@@ -420,7 +420,6 @@
         <reference id="6832197706140518108" name="param" index="zr_51" />
       </concept>
       <concept id="5349172909345501395" name="jetbrains.mps.baseLanguage.javadoc.structure.BaseDocComment" flags="ng" index="P$AiS">
-        <child id="8465538089690331502" name="body" index="TZ5H$" />
         <child id="5383422241790532083" name="tags" index="3nqlJM" />
       </concept>
       <concept id="5349172909345532724" name="jetbrains.mps.baseLanguage.javadoc.structure.MethodDocComment" flags="ng" index="P$JXv" />
@@ -428,13 +427,7 @@
         <property id="8465538089690881934" name="text" index="TUZQ4" />
         <child id="6832197706140518123" name="parameter" index="zr_5Q" />
       </concept>
-      <concept id="8465538089690331500" name="jetbrains.mps.baseLanguage.javadoc.structure.CommentLine" flags="ng" index="TZ5HA">
-        <child id="8970989240999019149" name="part" index="1dT_Ay" />
-      </concept>
       <concept id="8465538089690331492" name="jetbrains.mps.baseLanguage.javadoc.structure.DeprecatedBlockDocTag" flags="ng" index="TZ5HI" />
-      <concept id="8970989240999019143" name="jetbrains.mps.baseLanguage.javadoc.structure.TextCommentLinePart" flags="ng" index="1dT_AC">
-        <property id="8970989240999019144" name="text" index="1dT_AB" />
-      </concept>
       <concept id="2068944020170241612" name="jetbrains.mps.baseLanguage.javadoc.structure.ClassifierDocComment" flags="ng" index="3UR2Jj" />
       <concept id="5085607816302529296" name="jetbrains.mps.baseLanguage.javadoc.structure.IHoldCommentLines" flags="ngI" index="1VezTd">
         <child id="5085607816302529587" name="commentBody" index="1Vez_I" />
@@ -8431,20 +8424,106 @@
         </node>
       </node>
       <node concept="P$JXv" id="72z6VwrsAqg" role="lGtFl">
-        <node concept="TZ5HA" id="72z6VwrsAqh" role="TZ5H$">
-          <node concept="1dT_AC" id="72z6VwrsAqi" role="1dT_Ay">
-            <property role="1dT_AB" value="Invalidates all cached variation-point evaluation results associated with the given artifact." />
-          </node>
-        </node>
-        <node concept="TZ5HA" id="72z6VwrsAqj" role="TZ5H$">
-          <node concept="1dT_AC" id="72z6VwrsAqk" role="1dT_Ay">
-            <property role="1dT_AB" value="It also handles nested IVAAs and logical children." />
-          </node>
-        </node>
         <node concept="TUZQ0" id="72z6VwrsAql" role="3nqlJM">
-          <property role="TUZQ4" value="the root variability-aware artifact (IVAA) whose evaluation caches should be flushed" />
+          <property role="TUZQ4" value="" />
           <node concept="zr_55" id="72z6VwrsAqm" role="zr_5Q">
             <ref role="zr_51" node="HzSZE0fvvc" resolve="mainIVAA" />
+          </node>
+          <node concept="1PaTwC" id="4k$dDayUJw2" role="1Vez_I">
+            <node concept="3oM_SD" id="4k$dDayUJw3" role="1PaTwD">
+              <property role="3oM_SC" value="the" />
+            </node>
+            <node concept="3oM_SD" id="4k$dDayUJw4" role="1PaTwD">
+              <property role="3oM_SC" value="root" />
+            </node>
+            <node concept="3oM_SD" id="4k$dDayUJw5" role="1PaTwD">
+              <property role="3oM_SC" value="variability-aware" />
+            </node>
+            <node concept="3oM_SD" id="4k$dDayUJw6" role="1PaTwD">
+              <property role="3oM_SC" value="artifact" />
+            </node>
+            <node concept="3oM_SD" id="4k$dDayUJw7" role="1PaTwD">
+              <property role="3oM_SC" value="(IVAA)" />
+            </node>
+            <node concept="3oM_SD" id="4k$dDayUJw8" role="1PaTwD">
+              <property role="3oM_SC" value="whose" />
+            </node>
+            <node concept="3oM_SD" id="4k$dDayUJw9" role="1PaTwD">
+              <property role="3oM_SC" value="evaluation" />
+            </node>
+            <node concept="3oM_SD" id="4k$dDayUJwa" role="1PaTwD">
+              <property role="3oM_SC" value="caches" />
+            </node>
+            <node concept="3oM_SD" id="4k$dDayUJwb" role="1PaTwD">
+              <property role="3oM_SC" value="should" />
+            </node>
+            <node concept="3oM_SD" id="4k$dDayUJwc" role="1PaTwD">
+              <property role="3oM_SC" value="be" />
+            </node>
+            <node concept="3oM_SD" id="4k$dDayUJwd" role="1PaTwD">
+              <property role="3oM_SC" value="flushed" />
+            </node>
+          </node>
+        </node>
+        <node concept="1PaTwC" id="4k$dDayUJvH" role="1Vez_I">
+          <node concept="3oM_SD" id="4k$dDayUJvI" role="1PaTwD">
+            <property role="3oM_SC" value="Invalidates" />
+          </node>
+          <node concept="3oM_SD" id="4k$dDayUJvJ" role="1PaTwD">
+            <property role="3oM_SC" value="all" />
+          </node>
+          <node concept="3oM_SD" id="4k$dDayUJvK" role="1PaTwD">
+            <property role="3oM_SC" value="cached" />
+          </node>
+          <node concept="3oM_SD" id="4k$dDayUJvL" role="1PaTwD">
+            <property role="3oM_SC" value="variation-point" />
+          </node>
+          <node concept="3oM_SD" id="4k$dDayUJvM" role="1PaTwD">
+            <property role="3oM_SC" value="evaluation" />
+          </node>
+          <node concept="3oM_SD" id="4k$dDayUJvN" role="1PaTwD">
+            <property role="3oM_SC" value="results" />
+          </node>
+          <node concept="3oM_SD" id="4k$dDayUJvO" role="1PaTwD">
+            <property role="3oM_SC" value="associated" />
+          </node>
+          <node concept="3oM_SD" id="4k$dDayUJvP" role="1PaTwD">
+            <property role="3oM_SC" value="with" />
+          </node>
+          <node concept="3oM_SD" id="4k$dDayUJvQ" role="1PaTwD">
+            <property role="3oM_SC" value="the" />
+          </node>
+          <node concept="3oM_SD" id="4k$dDayUJvR" role="1PaTwD">
+            <property role="3oM_SC" value="given" />
+          </node>
+          <node concept="3oM_SD" id="4k$dDayUJvS" role="1PaTwD">
+            <property role="3oM_SC" value="artifact." />
+          </node>
+        </node>
+        <node concept="1PaTwC" id="4k$dDayUJvT" role="1Vez_I">
+          <node concept="3oM_SD" id="4k$dDayUJvU" role="1PaTwD">
+            <property role="3oM_SC" value="It" />
+          </node>
+          <node concept="3oM_SD" id="4k$dDayUJvV" role="1PaTwD">
+            <property role="3oM_SC" value="also" />
+          </node>
+          <node concept="3oM_SD" id="4k$dDayUJvW" role="1PaTwD">
+            <property role="3oM_SC" value="handles" />
+          </node>
+          <node concept="3oM_SD" id="4k$dDayUJvX" role="1PaTwD">
+            <property role="3oM_SC" value="nested" />
+          </node>
+          <node concept="3oM_SD" id="4k$dDayUJvY" role="1PaTwD">
+            <property role="3oM_SC" value="IVAAs" />
+          </node>
+          <node concept="3oM_SD" id="4k$dDayUJvZ" role="1PaTwD">
+            <property role="3oM_SC" value="and" />
+          </node>
+          <node concept="3oM_SD" id="4k$dDayUJw0" role="1PaTwD">
+            <property role="3oM_SC" value="logical" />
+          </node>
+          <node concept="3oM_SD" id="4k$dDayUJw1" role="1PaTwD">
+            <property role="3oM_SC" value="children." />
           </node>
         </node>
       </node>
