@@ -21,7 +21,7 @@ import java.util.Collections;
 import org.iets3.core.base.behavior.ICanStoreCheckResult__BehaviorDescriptor;
 import org.apache.commons.lang3.tuple.Pair;
 import jetbrains.mps.internal.collections.runtime.CollectionSequence;
-import org.iets3.variability.configuration.base.behavior.FeatureModelConfHashUtil;
+import org.iets3.variability.configuration.base.behavior.SolverRelevantDataHashing;
 import org.iets3.core.base.behavior.ICanRunCheckManually__BehaviorDescriptor;
 import org.iets3.analysis.base.plugin.AsyncSolverTaskExecutor;
 import org.iets3.analysis.solversupport.util.plugin.ISolvableSettingsModel;
@@ -155,7 +155,7 @@ public class ConfigurationSolverFacade {
           @Override
           public void run() {
             FeatureModelConfiguration__BehaviorDescriptor.updateAdaptHash_id2XyYtG$Jnmi.invoke(fmc);
-            FeatureModelConfHashUtil.setHashOfSolverRelevantData(fmc);
+            SolverRelevantDataHashing.of(fmc).setHash();
           }
         });
       });

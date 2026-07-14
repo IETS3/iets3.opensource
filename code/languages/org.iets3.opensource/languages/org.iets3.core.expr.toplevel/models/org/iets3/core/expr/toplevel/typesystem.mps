@@ -1147,11 +1147,11 @@
                                     <ref role="1YBMHb" node="7D7uZV2j1Jt" resolve="rl" />
                                   </node>
                                   <node concept="2OqwBi" id="4$QBvTqUuNb" role="37wK5m">
-                                    <node concept="3zqWPK" id="5DJjBfj0aRj" role="2OqNvi">
-                                      <ref role="37wK5l" to="pbu6:4WLweXm3SW5" resolve="type" />
-                                    </node>
                                     <node concept="37vLTw" id="4$QBvTqUuAy" role="2Oq$k0">
                                       <ref role="3cqZAo" node="7D7uZV2p7hm" resolve="m" />
+                                    </node>
+                                    <node concept="3zqWPK" id="5DJjBfj0aRj" role="2OqNvi">
+                                      <ref role="37wK5l" to="pbu6:4WLweXm3SW5" resolve="type" />
                                     </node>
                                   </node>
                                 </node>
@@ -2208,31 +2208,6 @@
       </node>
     </node>
   </node>
-  <node concept="1YbPZF" id="5ElkanPQ$0Y">
-    <property role="TrG5h" value="typeof_EnumIsTarget" />
-    <property role="3GE5qa" value="enum" />
-    <node concept="3clFbS" id="5ElkanPQ$0Z" role="18ibNy">
-      <node concept="1Z5TYs" id="5ElkanPQ$el" role="3cqZAp">
-        <node concept="mw_s8" id="5ElkanPQ$eA" role="1ZfhKB">
-          <node concept="2YIFZM" id="5wDe8wA6zqS" role="mwGJk">
-            <ref role="37wK5l" to="xfg9:2Qbt$1tTQco" resolve="createBooleanType" />
-            <ref role="1Pybhc" to="xfg9:2Qbt$1tTQaH" resolve="PTF" />
-          </node>
-        </node>
-        <node concept="mw_s8" id="5ElkanPQ$eo" role="1ZfhK$">
-          <node concept="1Z2H0r" id="5ElkanPQ$1b" role="mwGJk">
-            <node concept="1YBJjd" id="5ElkanPQ$2V" role="1Z2MuG">
-              <ref role="1YBMHb" node="5ElkanPQ$11" resolve="et" />
-            </node>
-          </node>
-        </node>
-      </node>
-    </node>
-    <node concept="1YaCAy" id="5ElkanPQ$11" role="1YuTPh">
-      <property role="TrG5h" value="et" />
-      <ref role="1YaFvo" to="yv47:5ElkanPQwmt" resolve="EnumIsTarget" />
-    </node>
-  </node>
   <node concept="35pCF_" id="29BBztTT4Gl">
     <property role="3GE5qa" value="typedef" />
     <property role="TrG5h" value="replaceTypedefType2" />
@@ -3135,11 +3110,11 @@
               </node>
               <node concept="1Z2H0r" id="40o9_yLF0UH" role="nvjzm">
                 <node concept="2OqwBi" id="40o9_yLEZ7i" role="1Z2MuG">
-                  <node concept="3zqWPK" id="5DJjBfj0aRT" role="2OqNvi">
-                    <ref role="37wK5l" to="pbu6:6zmBjqUivyF" resolve="contextExpression" />
-                  </node>
                   <node concept="1YBJjd" id="7cphKbLiXrP" role="2Oq$k0">
                     <ref role="1YBMHb" node="7cphKbLaID3" resolve="pe" />
+                  </node>
+                  <node concept="3zqWPK" id="5DJjBfj0aRT" role="2OqNvi">
+                    <ref role="37wK5l" to="pbu6:6zmBjqUivyF" resolve="contextExpression" />
                   </node>
                 </node>
               </node>
@@ -3359,19 +3334,19 @@
               <node concept="3fqX7Q" id="7cphKbLm7L2" role="3clFbw">
                 <node concept="3JuTUA" id="7cphKbLm7L4" role="3fr31v">
                   <node concept="2OqwBi" id="7cphKbLm7L5" role="3JuY14">
-                    <node concept="3zqWPK" id="5DJjBfj0aRX" role="2OqNvi">
-                      <ref role="37wK5l" to="pbu6:4WLweXm3SW5" resolve="type" />
-                    </node>
                     <node concept="2GrUjf" id="7cphKbLm7L6" role="2Oq$k0">
                       <ref role="2Gs0qQ" node="7cphKbLlQGG" resolve="m1" />
                     </node>
-                  </node>
-                  <node concept="2OqwBi" id="7cphKbLm7L8" role="3JuZjQ">
-                    <node concept="3zqWPK" id="5DJjBfj0aRZ" role="2OqNvi">
+                    <node concept="3zqWPK" id="5DJjBfj0aRX" role="2OqNvi">
                       <ref role="37wK5l" to="pbu6:4WLweXm3SW5" resolve="type" />
                     </node>
+                  </node>
+                  <node concept="2OqwBi" id="7cphKbLm7L8" role="3JuZjQ">
                     <node concept="37vLTw" id="7cphKbLm7L9" role="2Oq$k0">
                       <ref role="3cqZAo" node="7cphKbLlYvk" resolve="m2" />
+                    </node>
+                    <node concept="3zqWPK" id="5DJjBfj0aRZ" role="2OqNvi">
+                      <ref role="37wK5l" to="pbu6:4WLweXm3SW5" resolve="type" />
                     </node>
                   </node>
                 </node>
@@ -4113,31 +4088,6 @@
       <ref role="1YaFvo" to="yv47:67Y8mp$DN2V" resolve="EnumType" />
     </node>
   </node>
-  <node concept="1YbPZF" id="6WstIz8MQ1T">
-    <property role="TrG5h" value="typeof_EnumIsOneOfTarget" />
-    <property role="3GE5qa" value="enum.oneof" />
-    <node concept="3clFbS" id="6WstIz8MQ1U" role="18ibNy">
-      <node concept="1Z5TYs" id="6WstIz8MQaQ" role="3cqZAp">
-        <node concept="mw_s8" id="6WstIz8MQbf" role="1ZfhKB">
-          <node concept="2YIFZM" id="6WstIz8MQcO" role="mwGJk">
-            <ref role="37wK5l" to="xfg9:2Qbt$1tTQco" resolve="createBooleanType" />
-            <ref role="1Pybhc" to="xfg9:2Qbt$1tTQaH" resolve="PTF" />
-          </node>
-        </node>
-        <node concept="mw_s8" id="6WstIz8MQaT" role="1ZfhK$">
-          <node concept="1Z2H0r" id="6WstIz8MQ26" role="mwGJk">
-            <node concept="1YBJjd" id="6WstIz8MQ3V" role="1Z2MuG">
-              <ref role="1YBMHb" node="6WstIz8MQ1W" resolve="eio" />
-            </node>
-          </node>
-        </node>
-      </node>
-    </node>
-    <node concept="1YaCAy" id="6WstIz8MQ1W" role="1YuTPh">
-      <property role="TrG5h" value="eio" />
-      <ref role="1YaFvo" to="yv47:6WstIz8MK67" resolve="EnumIsInTarget" />
-    </node>
-  </node>
   <node concept="1YbPZF" id="2zwra1$Qju3">
     <property role="TrG5h" value="typeof_AllLitList" />
     <property role="3GE5qa" value="enum" />
@@ -4463,6 +4413,56 @@
     <node concept="1YaCAy" id="5QvrxSgK6Qw" role="1YuTPh">
       <property role="TrG5h" value="typedef" />
       <ref role="1YaFvo" to="yv47:6HHp2WngtTC" resolve="Typedef" />
+    </node>
+  </node>
+  <node concept="1YbPZF" id="3oC2VaFL6F1">
+    <property role="TrG5h" value="typeof_AbstractEnumSingleInTarget" />
+    <property role="3GE5qa" value="enum" />
+    <node concept="3clFbS" id="3oC2VaFL6F2" role="18ibNy">
+      <node concept="1Z5TYs" id="3oC2VaFL6Ga" role="3cqZAp">
+        <node concept="mw_s8" id="3oC2VaFL6Gb" role="1ZfhKB">
+          <node concept="2YIFZM" id="3oC2VaFL6Gc" role="mwGJk">
+            <ref role="37wK5l" to="xfg9:2Qbt$1tTQco" resolve="createBooleanType" />
+            <ref role="1Pybhc" to="xfg9:2Qbt$1tTQaH" resolve="PTF" />
+          </node>
+        </node>
+        <node concept="mw_s8" id="3oC2VaFL6Gd" role="1ZfhK$">
+          <node concept="1Z2H0r" id="3oC2VaFL6Ge" role="mwGJk">
+            <node concept="1YBJjd" id="3oC2VaFL6Gf" role="1Z2MuG">
+              <ref role="1YBMHb" node="3oC2VaFL6F4" resolve="et" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1YaCAy" id="3oC2VaFL6F4" role="1YuTPh">
+      <property role="TrG5h" value="et" />
+      <ref role="1YaFvo" to="yv47:3fg81r5z3u3" resolve="AbstractEnumSingleInTarget" />
+    </node>
+  </node>
+  <node concept="1YbPZF" id="4L5R3LnUBuz">
+    <property role="TrG5h" value="typeof_AbstractEnumInTarget" />
+    <property role="3GE5qa" value="enum.oneof" />
+    <node concept="3clFbS" id="4L5R3LnUBu$" role="18ibNy">
+      <node concept="1Z5TYs" id="4L5R3LnUBQi" role="3cqZAp">
+        <node concept="mw_s8" id="4L5R3LnUBQj" role="1ZfhKB">
+          <node concept="2YIFZM" id="4L5R3LnUBQk" role="mwGJk">
+            <ref role="37wK5l" to="xfg9:2Qbt$1tTQco" resolve="createBooleanType" />
+            <ref role="1Pybhc" to="xfg9:2Qbt$1tTQaH" resolve="PTF" />
+          </node>
+        </node>
+        <node concept="mw_s8" id="4L5R3LnUBQl" role="1ZfhK$">
+          <node concept="1Z2H0r" id="4L5R3LnUBQm" role="mwGJk">
+            <node concept="1YBJjd" id="4L5R3LnUBQn" role="1Z2MuG">
+              <ref role="1YBMHb" node="4L5R3LnUBuA" resolve="enumtarget" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1YaCAy" id="4L5R3LnUBuA" role="1YuTPh">
+      <property role="TrG5h" value="enumtarget" />
+      <ref role="1YaFvo" to="yv47:4L5R3LmDtPG" resolve="AbstractEnumInTarget" />
     </node>
   </node>
 </model>

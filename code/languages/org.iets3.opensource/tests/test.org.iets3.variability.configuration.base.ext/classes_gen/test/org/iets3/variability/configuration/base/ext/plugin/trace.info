@@ -21,88 +21,69 @@
   </root>
   <root nodeRef="r:d0b063d0-89d8-4dc9-aa40-83abfa87c77f(test.org.iets3.variability.configuration.base.ext.plugin)/22121517987728218">
     <file name="SomeEnrichedNameLogic.java">
-      <node id="7493231619828112593" at="25,0,26,0" concept="11" trace="PRIO_INACTIVE" />
-      <node id="7493231619828153517" at="26,0,27,0" concept="11" trace="PRIO_ACTIVE" />
-      <node id="7493231619825829490" at="28,0,29,0" concept="11" trace="myPriority" />
-      <node id="7493231619825833985" at="29,0,30,0" concept="11" trace="useEnrichedNameForUniqueness" />
-      <node id="7493231619828199614" at="31,64,32,20" concept="3" />
-      <node id="7493231619828202418" at="32,20,33,20" concept="3" />
-      <node id="7493231619828197910" at="33,20,34,16" concept="3" />
-      <node id="7493231619828921643" at="37,33,38,20" concept="3" />
-      <node id="7493231619827978924" at="41,65,42,29" concept="3" />
-      <node id="7493231619828029654" at="42,29,43,60" concept="3" />
-      <node id="7493231619828056759" at="46,34,47,31" concept="3" />
-      <node id="7493231619828086940" at="47,31,48,41" concept="3" />
-      <node id="7493231619821067981" at="52,54,53,110" concept="8" />
-      <node id="7493231619825620336" at="58,144,59,259" concept="7" />
-      <node id="7493231619825620354" at="60,29,61,186" concept="8" />
-      <node id="7493231619832371100" at="64,156,65,56" concept="9" />
-      <node id="7493231619832056579" at="65,56,66,25" concept="8" />
-      <node id="7493231619828745763" at="68,70,69,134" concept="7" />
-      <node id="7493231619828808320" at="69,134,70,30" concept="7" />
-      <node id="7493231619828690671" at="71,32,72,122" concept="8" />
-      <node id="22121517988078011" at="74,5,75,66" concept="8" />
-      <node id="7493231619825666489" at="80,80,81,67" concept="8" />
-      <node id="22121517988078024" at="85,54,86,40" concept="8" />
-      <node id="22121517988078035" at="90,25,91,22" concept="8" />
-      <node id="22121517987728218" at="95,0,96,0" concept="11" trace="name$MnvL" />
-      <node id="22121517987728218" at="99,0,100,0" concept="11" trace="targetFeature$16lA" />
-      <node id="22121517987728218" at="100,0,101,0" concept="11" trace="doc$OiA0" />
-      <node id="7493231619828919022" at="37,0,40,0" concept="12" trace="switchOn#()V" />
-      <node id="7493231619825620352" at="59,259,62,7" concept="5" />
-      <node id="7493231619828756942" at="70,30,73,7" concept="5" />
-      <node id="7493231619827974750" at="41,0,45,0" concept="12" trace="switchOn#(Z)V" />
-      <node id="7493231619828048446" at="46,0,50,0" concept="12" trace="switchOff#()V" />
-      <node id="7493231619821067969" at="51,0,55,0" concept="6" trace="hasActualEnrichedName#(Lorg/jetbrains/mps/openapi/model/SNode;)Z" />
-      <node id="7493231619832010885" at="63,5,67,5" concept="5" />
-      <node id="4436098651941774330" at="79,0,83,0" concept="6" trace="getDisplayStrategy#(Lorg/jetbrains/mps/openapi/model/SNode;)Lorg/iets3/variability/configuration/base/plugin/IEnrichedConfigNameLogic/DisplayStrategy;" />
-      <node id="22121517988078012" at="84,0,88,0" concept="6" trace="useEnrichedNameForUniquenessCheck#()Z" />
-      <node id="22121517988078025" at="89,0,93,0" concept="6" trace="priority#()I" />
-      <node id="7493231619828194201" at="31,0,36,0" concept="12" trace="doTest#(Ljetbrains/mps/baseLanguage/closures/runtime/_FunctionTypes/_void_P0_E0;)V" />
-      <node id="7493231619823444801" at="57,47,63,5" concept="5" />
-      <node id="7493231619828665300" at="67,5,74,5" concept="5" />
-      <node id="22121517988077999" at="56,0,77,0" concept="6" trace="getEnrichedName#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljava/lang/String;" />
-      <scope id="7493231619828919025" at="37,33,38,20" />
-      <scope id="7493231619821067978" at="52,54,53,110" />
-      <scope id="7493231619825620353" at="60,29,61,186" />
-      <scope id="7493231619828756944" at="71,32,72,122" />
-      <scope id="4436098651941774339" at="80,80,81,67" />
-      <scope id="22121517988078021" at="85,54,86,40" />
-      <scope id="22121517988078032" at="90,25,91,22" />
-      <scope id="7493231619827974753" at="41,65,43,60" />
-      <scope id="7493231619828048449" at="46,34,48,41" />
-      <scope id="7493231619832010887" at="64,156,66,25" />
-      <scope id="7493231619828194204" at="31,64,34,16" />
-      <scope id="7493231619828919022" at="37,0,40,0" />
-      <scope id="7493231619827974750" at="41,0,45,0">
+      <node id="7493231619825833985" at="25,0,26,0" concept="11" trace="useEnrichedNameForUniqueness" />
+      <node id="7493231619828029654" at="27,65,28,60" concept="3" />
+      <node id="9082423779755149910" at="28,60,29,45" concept="3" />
+      <node id="9082423779755153927" at="32,34,33,46" concept="3" />
+      <node id="7493231619828086940" at="33,46,34,41" concept="3" />
+      <node id="7493231619821067981" at="38,54,39,110" concept="8" />
+      <node id="7493231619825620336" at="44,144,45,259" concept="7" />
+      <node id="7493231619825620354" at="46,29,47,186" concept="8" />
+      <node id="7493231619832371100" at="50,156,51,56" concept="9" />
+      <node id="7493231619832056579" at="51,56,52,25" concept="8" />
+      <node id="7493231619828745763" at="54,70,55,134" concept="7" />
+      <node id="7493231619828808320" at="55,134,56,30" concept="7" />
+      <node id="7493231619828690671" at="57,32,58,122" concept="8" />
+      <node id="22121517988078011" at="60,5,61,66" concept="8" />
+      <node id="7493231619825666489" at="66,80,67,67" concept="8" />
+      <node id="22121517988078024" at="71,54,72,40" concept="8" />
+      <node id="22121517987728218" at="76,0,77,0" concept="11" trace="name$MnvL" />
+      <node id="22121517987728218" at="80,0,81,0" concept="11" trace="targetFeature$16lA" />
+      <node id="22121517987728218" at="81,0,82,0" concept="11" trace="doc$OiA0" />
+      <node id="7493231619825620352" at="45,259,48,7" concept="5" />
+      <node id="7493231619828756942" at="56,30,59,7" concept="5" />
+      <node id="7493231619827974750" at="27,0,31,0" concept="12" trace="switchOn#(Z)V" />
+      <node id="7493231619828048446" at="32,0,36,0" concept="12" trace="switchOff#()V" />
+      <node id="7493231619821067969" at="37,0,41,0" concept="6" trace="hasActualEnrichedName#(Lorg/jetbrains/mps/openapi/model/SNode;)Z" />
+      <node id="7493231619832010885" at="49,5,53,5" concept="5" />
+      <node id="4436098651941774330" at="65,0,69,0" concept="6" trace="getDisplayStrategy#(Lorg/jetbrains/mps/openapi/model/SNode;)Lorg/iets3/variability/configuration/base/plugin/IEnrichedConfigNameLogic/DisplayStrategy;" />
+      <node id="22121517988078012" at="70,0,74,0" concept="6" trace="useEnrichedNameForUniquenessCheck#()Z" />
+      <node id="7493231619823444801" at="43,47,49,5" concept="5" />
+      <node id="7493231619828665300" at="53,5,60,5" concept="5" />
+      <node id="22121517988077999" at="42,0,63,0" concept="6" trace="getEnrichedName#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljava/lang/String;" />
+      <scope id="7493231619821067978" at="38,54,39,110" />
+      <scope id="7493231619825620353" at="46,29,47,186" />
+      <scope id="7493231619828756944" at="57,32,58,122" />
+      <scope id="4436098651941774339" at="66,80,67,67" />
+      <scope id="22121517988078021" at="71,54,72,40" />
+      <scope id="7493231619827974753" at="27,65,29,45" />
+      <scope id="7493231619828048449" at="32,34,34,41" />
+      <scope id="7493231619832010887" at="50,156,52,25" />
+      <scope id="7493231619827974750" at="27,0,31,0">
         <var name="useEnrichedForUniqueness" id="7493231619828027918" />
       </scope>
-      <scope id="7493231619828048446" at="46,0,50,0" />
-      <scope id="7493231619821067969" at="51,0,55,0">
+      <scope id="7493231619828048446" at="32,0,36,0" />
+      <scope id="7493231619821067969" at="37,0,41,0">
         <var name="config" id="7493231619821067970" />
       </scope>
-      <scope id="7493231619823444803" at="58,144,62,7">
+      <scope id="7493231619823444803" at="44,144,48,7">
         <var name="choice" id="7493231619825620337" />
       </scope>
-      <scope id="4436098651941774330" at="79,0,83,0">
+      <scope id="4436098651941774330" at="65,0,69,0">
         <var name="fm" id="4436098651941792393" />
       </scope>
-      <scope id="22121517988078012" at="84,0,88,0" />
-      <scope id="22121517988078025" at="89,0,93,0" />
-      <scope id="7493231619828194201" at="31,0,36,0">
-        <var name="action" id="7493231619828195931" />
-      </scope>
-      <scope id="7493231619828665302" at="68,70,73,7">
+      <scope id="22121517988078012" at="70,0,74,0" />
+      <scope id="7493231619828665302" at="54,70,59,7">
         <var name="doc" id="7493231619828745764" />
         <var name="tag" id="7493231619828808321" />
       </scope>
-      <scope id="22121517988078008" at="57,47,75,66" />
-      <scope id="22121517988077999" at="56,0,77,0">
+      <scope id="22121517988078008" at="43,47,61,66" />
+      <scope id="22121517988077999" at="42,0,63,0">
         <var name="config" id="22121517988078003" />
       </scope>
-      <unit id="22121517987728218" at="94,0,97,0" name="test.org.iets3.variability.configuration.base.ext.plugin.SomeEnrichedNameLogic$PROPS" />
-      <unit id="22121517987728218" at="98,0,102,0" name="test.org.iets3.variability.configuration.base.ext.plugin.SomeEnrichedNameLogic$LINKS" />
-      <unit id="22121517987728218" at="24,0,103,0" name="test.org.iets3.variability.configuration.base.ext.plugin.SomeEnrichedNameLogic" />
+      <unit id="22121517987728218" at="75,0,78,0" name="test.org.iets3.variability.configuration.base.ext.plugin.SomeEnrichedNameLogic$PROPS" />
+      <unit id="22121517987728218" at="79,0,83,0" name="test.org.iets3.variability.configuration.base.ext.plugin.SomeEnrichedNameLogic$LINKS" />
+      <unit id="22121517987728218" at="24,0,84,0" name="test.org.iets3.variability.configuration.base.ext.plugin.SomeEnrichedNameLogic" />
     </file>
   </root>
   <root nodeRef="r:d0b063d0-89d8-4dc9-aa40-83abfa87c77f(test.org.iets3.variability.configuration.base.ext.plugin)/7493231619831548858">

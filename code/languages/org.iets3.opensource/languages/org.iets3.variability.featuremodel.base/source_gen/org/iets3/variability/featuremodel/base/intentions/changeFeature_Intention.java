@@ -22,11 +22,13 @@ import org.iets3.variability.base.plugin.Settings;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SConceptOperations;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations;
+import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
 import org.iets3.variability.featuremodel.base.behavior.FeatureTreeNode__BehaviorDescriptor;
 import jetbrains.mps.openapi.intentions.IntentionDescriptor;
 import org.jetbrains.mps.openapi.language.SContainmentLink;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import org.jetbrains.mps.openapi.language.SInterfaceConcept;
+import org.jetbrains.mps.openapi.language.SConcept;
 import org.jetbrains.mps.openapi.language.SProperty;
 
 public final class changeFeature_Intention extends AbstractIntentionDescriptor implements IntentionFactory {
@@ -81,6 +83,16 @@ public final class changeFeature_Intention extends AbstractIntentionDescriptor i
           SPropertyOperations.assign(named, PROPS.name$MnvL, SPropertyOperations.getString(node, PROPS.name$MnvL));
         }
       }
+      {
+        final SNode newFTN = newInstance;
+        if (SNodeOperations.isInstanceOf(newFTN, CONCEPTS.FeatureTreeNode$HV)) {
+          SPropertyOperations.assign(newFTN, PROPS.isMandatory$LBat, SPropertyOperations.getBoolean(node, PROPS.isMandatory$LBat));
+          SPropertyOperations.assignEnum(newFTN, PROPS.defaultState$z3_z, SPropertyOperations.getEnum(node, PROPS.defaultState$z3_z));
+          SLinkOperations.setTarget(newFTN, LINKS.cardinality$EsDt, SLinkOperations.getTarget(node, LINKS.cardinality$EsDt));
+          ListSequence.fromList(SLinkOperations.getChildren(newFTN, LINKS.constraints$dOM1)).addSequence(ListSequence.fromList(SLinkOperations.getChildren(node, LINKS.constraints$dOM1)));
+          SLinkOperations.setTarget(newFTN, LINKS.doc$BpQs, SLinkOperations.getTarget(node, LINKS.doc$BpQs));
+        }
+      }
       SNodeOperations.replaceWithAnother(node, newInstance);
     }
 
@@ -109,13 +121,19 @@ public final class changeFeature_Intention extends AbstractIntentionDescriptor i
 
   private static final class LINKS {
     /*package*/ static final SContainmentLink subFeatures$VrQA = MetaAdapterFactory.getContainmentLink(0x165f1d0525064544L, 0x895e1424f54166ecL, 0x375cadc47516a307L, 0x375cadc47516a30aL, "subFeatures");
+    /*package*/ static final SContainmentLink cardinality$EsDt = MetaAdapterFactory.getContainmentLink(0x165f1d0525064544L, 0x895e1424f54166ecL, 0x375cadc475172167L, 0x375cadc47519250cL, "cardinality");
+    /*package*/ static final SContainmentLink constraints$dOM1 = MetaAdapterFactory.getContainmentLink(0x165f1d0525064544L, 0x895e1424f54166ecL, 0x375cadc475172167L, 0x7cde27c7fd7eea47L, "constraints");
+    /*package*/ static final SContainmentLink doc$BpQs = MetaAdapterFactory.getContainmentLink(0x165f1d0525064544L, 0x895e1424f54166ecL, 0x375cadc475172167L, 0x2d78f20de0750fb9L, "doc");
   }
 
   private static final class CONCEPTS {
     /*package*/ static final SInterfaceConcept INamedConcept$Kd = MetaAdapterFactory.getInterfaceConcept(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L, "jetbrains.mps.lang.core.structure.INamedConcept");
+    /*package*/ static final SConcept FeatureTreeNode$HV = MetaAdapterFactory.getConcept(0x165f1d0525064544L, 0x895e1424f54166ecL, 0x375cadc475172167L, "org.iets3.variability.featuremodel.base.structure.FeatureTreeNode");
   }
 
   private static final class PROPS {
     /*package*/ static final SProperty name$MnvL = MetaAdapterFactory.getProperty(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L, 0x110396ec041L, "name");
+    /*package*/ static final SProperty isMandatory$LBat = MetaAdapterFactory.getProperty(0x165f1d0525064544L, 0x895e1424f54166ecL, 0x375cadc475172167L, 0x375cadc475182d76L, "isMandatory");
+    /*package*/ static final SProperty defaultState$z3_z = MetaAdapterFactory.getProperty(0x165f1d0525064544L, 0x895e1424f54166ecL, 0x375cadc475172167L, 0x74046bf85651dafaL, "defaultState");
   }
 }
