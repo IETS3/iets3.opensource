@@ -9,6 +9,9 @@ The project does _not_ follow Semantic Versioning and the changes are documented
 ### Added
 - IFunctionLike takes arguments and named body content into account when performing ab uniqueness name check
 
+### Fixed
+- Variability: `EvalVarPointCache.flushCaches()` was a no-op when the variability-aware artifact (IVAA) was implemented as a node attribute (annotation).
+
 ## June 2026
 
 ### Added
