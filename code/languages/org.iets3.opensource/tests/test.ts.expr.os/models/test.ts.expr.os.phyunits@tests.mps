@@ -5,7 +5,7 @@
     <use id="8585453e-6bfb-4d80-98de-b16074f1d86c" name="jetbrains.mps.lang.test" version="6" />
     <use id="f61473f9-130f-42f6-b98d-6c438812c2f6" name="jetbrains.mps.baseLanguage.unitTest" version="1" />
     <use id="5186c6ce-428c-4f09-a9df-73d9e86c27d3" name="org.iets3.core.expr.typetags" version="1" />
-    <use id="71934284-d7d1-45ee-a054-8c072591085f" name="org.iets3.core.expr.toplevel" version="6" />
+    <use id="71934284-d7d1-45ee-a054-8c072591085f" name="org.iets3.core.expr.toplevel" version="8" />
     <use id="d4280a54-f6df-4383-aa41-d1b2bffa7eb1" name="com.mbeddr.core.base" version="6" />
     <use id="cfaa4966-b7d5-4b69-b66a-309a6e1a7290" name="org.iets3.core.expr.base" version="22" />
     <use id="6b277d9a-d52d-416f-a209-1919bd737f50" name="org.iets3.core.expr.simpleTypes" version="11" />
@@ -5364,6 +5364,9 @@
         <node concept="2zPypq" id="5aYM8it48mb" role="_iOnC">
           <property role="TrG5h" value="h1" />
           <node concept="30dDZf" id="5aYM8it4aHB" role="2lDidJ">
+            <node concept="30bXRB" id="5aYM8it4aHU" role="30dEs_">
+              <property role="30bXRw" value="2" />
+            </node>
             <node concept="2vmpnb" id="5aYM8it4awK" role="30dEsF" />
             <node concept="7CXmI" id="TrLxV$Chvd" role="lGtFl">
               <node concept="1TM$A" id="TrLxV$CmLg" role="7EUXB">
@@ -5371,9 +5374,6 @@
                   <ref role="39XzEq" to="t4jv:2ck7OjOLa0b" />
                 </node>
               </node>
-            </node>
-            <node concept="30bXRB" id="5aYM8it4aHU" role="30dEs_">
-              <property role="30bXRw" value="2" />
             </node>
           </node>
         </node>
@@ -5404,6 +5404,9 @@
         <node concept="2zPypq" id="5aYM8it4c7q" role="_iOnC">
           <property role="TrG5h" value="i1" />
           <node concept="30cPrO" id="5aYM8it4cJF" role="2lDidJ">
+            <node concept="30bXRB" id="5aYM8it4cJY" role="30dEs_">
+              <property role="30bXRw" value="2" />
+            </node>
             <node concept="2vmpnb" id="5aYM8it4cGP" role="30dEsF" />
             <node concept="7CXmI" id="TrLxV$CqRd" role="lGtFl">
               <node concept="1TM$A" id="TrLxV$Cw9g" role="7EUXB">
@@ -5411,9 +5414,6 @@
                   <ref role="39XzEq" to="t4jv:7KDVkAEtIWe" />
                 </node>
               </node>
-            </node>
-            <node concept="30bXRB" id="5aYM8it4cJY" role="30dEs_">
-              <property role="30bXRw" value="2" />
             </node>
           </node>
         </node>
