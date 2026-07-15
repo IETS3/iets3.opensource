@@ -23,6 +23,14 @@ import org.jetbrains.mps.openapi.language.SReferenceLink;
 public class TypesystemDescriptor extends BaseHelginsDescriptor {
   public TypesystemDescriptor() {
     {
+      InferenceRule_Runtime inferenceRule = new typeof_AbstractEnumInTarget_InferenceRule();
+      this.myInferenceRules.add(inferenceRule);
+    }
+    {
+      InferenceRule_Runtime inferenceRule = new typeof_AbstractEnumSingleInTarget_InferenceRule();
+      this.myInferenceRules.add(inferenceRule);
+    }
+    {
       InferenceRule_Runtime inferenceRule = new typeof_AllLitList_InferenceRule();
       this.myInferenceRules.add(inferenceRule);
     }
@@ -40,14 +48,6 @@ public class TypesystemDescriptor extends BaseHelginsDescriptor {
     }
     {
       InferenceRule_Runtime inferenceRule = new typeof_EnumIndexOp_InferenceRule();
-      this.myInferenceRules.add(inferenceRule);
-    }
-    {
-      InferenceRule_Runtime inferenceRule = new typeof_EnumIsOneOfTarget_InferenceRule();
-      this.myInferenceRules.add(inferenceRule);
-    }
-    {
-      InferenceRule_Runtime inferenceRule = new typeof_EnumIsTarget_InferenceRule();
       this.myInferenceRules.add(inferenceRule);
     }
     {

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<product version="3" modelHash="-1buvpqbmxvk0v7i1yu9pkjorzejvc6j">
-  <files names="ExtensionDescriptor.java:GeneratorDefinitions.java:ITableWriter.java:Settings.java:SolverNotRunSolverTaskFactoryExtension.java:SolverNotRunTaskFactory.java" />
+<product version="3" modelHash="bca0b28lq3n2613vvm7ahav8t7ctoeq">
+  <files names="AbstractExtensionProvider.java:AbstractExtensionWithPriority.java:ExtensionDescriptor.java:GeneratorDefinitions.java:IExtensionWithPriority.java:ITableWriter.java:Settings.java:SolverNotRunSolverTaskFactoryExtension.java:SolverNotRunTaskFactory.java:TestableExtensionWithPriority.java" />
 </product>
 

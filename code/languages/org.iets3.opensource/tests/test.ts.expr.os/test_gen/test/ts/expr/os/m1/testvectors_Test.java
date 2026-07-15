@@ -35,6 +35,18 @@ public class testvectors_Test extends BaseTransformationTest {
     new TestBody(this).TestPlus_item0_543046448979269937();
   }
   @Test
+  public void TestPlus2_item0_7850247782988384648() throws Throwable {
+    new TestBody(this).TestPlus2_item0_7850247782988384648();
+  }
+  @Test
+  public void TestPlus3_item0_7850247783018647746() throws Throwable {
+    new TestBody(this).TestPlus3_item0_7850247783018647746();
+  }
+  @Test
+  public void TestPlus4_item0_7850247783020221377() throws Throwable {
+    new TestBody(this).TestPlus4_item0_7850247783020221377();
+  }
+  @Test
   public void TestPost_item0_5070313213712731698() throws Throwable {
     new TestBody(this).TestPost_item0_5070313213712731698();
   }
@@ -80,6 +92,33 @@ public class testvectors_Test extends BaseTransformationTest {
         @Override
         public void run() throws Exception {
           SNode ti = SNodeOperations.cast(getRealNodeById("543046448979269937"), CONCEPTS.AbstractTestItem$9u);
+          TestRunner.doExecuteTest(ti);
+        }
+      });
+    }
+    public void TestPlus2_item0_7850247782988384648() throws Exception {
+      runWithinCommand(new BaseTestBody.ExceptionRunnable() {
+        @Override
+        public void run() throws Exception {
+          SNode ti = SNodeOperations.cast(getRealNodeById("7850247782988384648"), CONCEPTS.AbstractTestItem$9u);
+          TestRunner.doExecuteTest(ti);
+        }
+      });
+    }
+    public void TestPlus3_item0_7850247783018647746() throws Exception {
+      runWithinCommand(new BaseTestBody.ExceptionRunnable() {
+        @Override
+        public void run() throws Exception {
+          SNode ti = SNodeOperations.cast(getRealNodeById("7850247783018647746"), CONCEPTS.AbstractTestItem$9u);
+          TestRunner.doExecuteTest(ti);
+        }
+      });
+    }
+    public void TestPlus4_item0_7850247783020221377() throws Exception {
+      runWithinCommand(new BaseTestBody.ExceptionRunnable() {
+        @Override
+        public void run() throws Exception {
+          SNode ti = SNodeOperations.cast(getRealNodeById("7850247783020221377"), CONCEPTS.AbstractTestItem$9u);
           TestRunner.doExecuteTest(ti);
         }
       });

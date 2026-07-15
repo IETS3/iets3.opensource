@@ -105,12 +105,12 @@ public class numbers_Test extends BaseTransformationTest {
     new TestBody(this).test_NodeTypeSystemCheck6862893590118862037();
   }
   @Test
-  public void test_ErrorMessagesCheck7407689390959727437() throws Throwable {
-    new TestBody(this).test_ErrorMessagesCheck7407689390959727437();
-  }
-  @Test
   public void test_NodeTypeSystemCheck6862893590118881163() throws Throwable {
     new TestBody(this).test_NodeTypeSystemCheck6862893590118881163();
+  }
+  @Test
+  public void test_ErrorMessagesCheck7407689390959727437() throws Throwable {
+    new TestBody(this).test_ErrorMessagesCheck7407689390959727437();
   }
 
   /*package*/ static class TestBody extends BaseTestBody {
@@ -662,18 +662,18 @@ public class numbers_Test extends BaseTransformationTest {
         new CheckExpectedMessageRunnable.CheckExpectedTypesystemMessageRunnable(nodeToCheck, MessageStatus.ERROR, "", myProject.getRepository(), myProject.getPlatform()).run();
       });
     }
-    public void test_ErrorMessagesCheck7407689390959727437() throws Exception {
-      initTestNodes();
-      runWithinCommand(() -> {
-        SNode nodeToCheck = getNodeById("9215883686876725790");
-        new CheckErrorMessagesRunnable(nodeToCheck, true, false, myProject.getPlatform()).includeSelf(false).exclude(Arrays.<CheckExpectedMessageRunnable>asList(new CheckExpectedMessageRunnable.CheckExpectedTypesystemMessageRunnable(getNodeById("6706649924975945310"), MessageStatus.ERROR, "", myProject.getRepository(), myProject.getPlatform()), new CheckExpectedMessageRunnable.CheckAnyMessageRunnable(getNodeById("1293326996617369533"), MessageStatus.ERROR, "", myProject.getRepository(), myProject.getPlatform()), new CheckExpectedMessageRunnable.CheckExpectedTypesystemMessageRunnable(getNodeById("6862893590118444751"), MessageStatus.ERROR, "", myProject.getRepository(), myProject.getPlatform()), new CheckExpectedMessageRunnable.CheckExpectedTypesystemMessageRunnable(getNodeById("6862893590118767839"), MessageStatus.ERROR, "", myProject.getRepository(), myProject.getPlatform()), new CheckExpectedMessageRunnable.CheckExpectedTypesystemMessageRunnable(getNodeById("6862893590118839609"), MessageStatus.ERROR, "", myProject.getRepository(), myProject.getPlatform()), new CheckExpectedMessageRunnable.CheckExpectedTypesystemMessageRunnable(getNodeById("6862893590118881161"), MessageStatus.ERROR, "", myProject.getRepository(), myProject.getPlatform()))).run();
-      });
-    }
     public void test_NodeTypeSystemCheck6862893590118881163() throws Exception {
       initTestNodes();
       runWithinCommand(() -> {
         SNode nodeToCheck = getNodeById("6862893590118881161");
         new CheckExpectedMessageRunnable.CheckExpectedTypesystemMessageRunnable(nodeToCheck, MessageStatus.ERROR, "", myProject.getRepository(), myProject.getPlatform()).run();
+      });
+    }
+    public void test_ErrorMessagesCheck7407689390959727437() throws Exception {
+      initTestNodes();
+      runWithinCommand(() -> {
+        SNode nodeToCheck = getNodeById("9215883686876725790");
+        new CheckErrorMessagesRunnable(nodeToCheck, true, false, myProject.getPlatform()).includeSelf(false).exclude(Arrays.<CheckExpectedMessageRunnable>asList(new CheckExpectedMessageRunnable.CheckExpectedTypesystemMessageRunnable(getNodeById("6706649924975945310"), MessageStatus.ERROR, "", myProject.getRepository(), myProject.getPlatform()), new CheckExpectedMessageRunnable.CheckAnyMessageRunnable(getNodeById("1293326996617369533"), MessageStatus.ERROR, "", myProject.getRepository(), myProject.getPlatform()), new CheckExpectedMessageRunnable.CheckExpectedTypesystemMessageRunnable(getNodeById("6862893590118444751"), MessageStatus.ERROR, "", myProject.getRepository(), myProject.getPlatform()), new CheckExpectedMessageRunnable.CheckExpectedTypesystemMessageRunnable(getNodeById("6862893590118767839"), MessageStatus.ERROR, "", myProject.getRepository(), myProject.getPlatform()), new CheckExpectedMessageRunnable.CheckExpectedTypesystemMessageRunnable(getNodeById("6862893590118839609"), MessageStatus.ERROR, "", myProject.getRepository(), myProject.getPlatform()), new CheckExpectedMessageRunnable.CheckExpectedTypesystemMessageRunnable(getNodeById("6862893590118881161"), MessageStatus.ERROR, "", myProject.getRepository(), myProject.getPlatform()))).run();
       });
     }
 

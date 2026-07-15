@@ -70,75 +70,7 @@ public class Generated_enums_Test {
     Assert.assertEquals("Expected: " + (Color.blue) + ", but was: " + (Generated_enums_Test.ocean_), (Object) Color.blue, (Object) Generated_enums_Test.ocean_);
   }
   @Test
-  public void IsOneOf_item0_8006404979732444652() throws Throwable {
-    Assert.assertEquals("Expected: " + (true) + ", but was: " + ((((_FunctionTypes._return_P0_E0<Boolean>) () -> {
-      Boolean b = (Generated_enums_Test.ocean_ == Color.blue);
-      if (Generated_enums_Test.ocean_ == null) {
-        return null;
-      }
-      return b;
-    }).invoke() || ((_FunctionTypes._return_P0_E0<Boolean>) () -> {
-      Boolean b = (Generated_enums_Test.ocean_ == Color.green);
-      if (Generated_enums_Test.ocean_ == null) {
-        return null;
-      }
-      return b;
-    }).invoke() || ((_FunctionTypes._return_P0_E0<Boolean>) () -> {
-      Boolean b = (Generated_enums_Test.ocean_ == Color.red);
-      if (Generated_enums_Test.ocean_ == null) {
-        return null;
-      }
-      return b;
-    }).invoke())), (Object) true, (Object) (((_FunctionTypes._return_P0_E0<Boolean>) () -> {
-      Boolean b = (Generated_enums_Test.ocean_ == Color.blue);
-      if (Generated_enums_Test.ocean_ == null) {
-        return null;
-      }
-      return b;
-    }).invoke() || ((_FunctionTypes._return_P0_E0<Boolean>) () -> {
-      Boolean b = (Generated_enums_Test.ocean_ == Color.green);
-      if (Generated_enums_Test.ocean_ == null) {
-        return null;
-      }
-      return b;
-    }).invoke() || ((_FunctionTypes._return_P0_E0<Boolean>) () -> {
-      Boolean b = (Generated_enums_Test.ocean_ == Color.red);
-      if (Generated_enums_Test.ocean_ == null) {
-        return null;
-      }
-      return b;
-    }).invoke()));
-  }
-  @Test
-  public void IsOneOf_item1_8006404979732446046() throws Throwable {
-    Assert.assertEquals("Expected: " + (true) + ", but was: " + ((((_FunctionTypes._return_P0_E0<Boolean>) () -> {
-      Boolean b = (Generated_enums_Test.ocean_ == Color.blue);
-      if (Generated_enums_Test.ocean_ == null) {
-        return null;
-      }
-      return b;
-    }).invoke() || ((_FunctionTypes._return_P0_E0<Boolean>) () -> {
-      Boolean b = (Generated_enums_Test.ocean_ == Color.green);
-      if (Generated_enums_Test.ocean_ == null) {
-        return null;
-      }
-      return b;
-    }).invoke())), (Object) true, (Object) (((_FunctionTypes._return_P0_E0<Boolean>) () -> {
-      Boolean b = (Generated_enums_Test.ocean_ == Color.blue);
-      if (Generated_enums_Test.ocean_ == null) {
-        return null;
-      }
-      return b;
-    }).invoke() || ((_FunctionTypes._return_P0_E0<Boolean>) () -> {
-      Boolean b = (Generated_enums_Test.ocean_ == Color.green);
-      if (Generated_enums_Test.ocean_ == null) {
-        return null;
-      }
-      return b;
-    }).invoke()));
-  }
-  @Test
-  public void IsOneOf_item2_8006404979732446190() throws Throwable {
+  public void IsOneOf_item0_3952549543412668864() throws Throwable {
     Assert.assertEquals("Expected: " + (true) + ", but was: " + (((_FunctionTypes._return_P0_E0<Boolean>) () -> {
       Boolean b = (Generated_enums_Test.ocean_ == Color.blue);
       if (Generated_enums_Test.ocean_ == null) {
@@ -154,23 +86,123 @@ public class Generated_enums_Test {
     }).invoke());
   }
   @Test
-  public void IsOneOf_item3_8006404979732446355() throws Throwable {
-    Assert.assertEquals("Expected: " + (false) + ", but was: " + (((_FunctionTypes._return_P0_E0<Boolean>) () -> {
-      Boolean b = (Generated_enums_Test.ocean_ == Color.red);
+  public void IsOneOf_item1_3952549543412669701() throws Throwable {
+    Assert.assertEquals("Expected: " + (false) + ", but was: " + ((((_FunctionTypes._return_P0_E0<Boolean>) () -> {
+      Boolean b = (Generated_enums_Test.ocean_ == Color.blue);
       if (Generated_enums_Test.ocean_ == null) {
         return null;
       }
-      return b;
-    }).invoke()), (Object) false, (Object) ((_FunctionTypes._return_P0_E0<Boolean>) () -> {
-      Boolean b = (Generated_enums_Test.ocean_ == Color.red);
+      return !(b);
+    }).invoke())), (Object) false, (Object) (((_FunctionTypes._return_P0_E0<Boolean>) () -> {
+      Boolean b = (Generated_enums_Test.ocean_ == Color.blue);
       if (Generated_enums_Test.ocean_ == null) {
         return null;
       }
-      return b;
-    }).invoke());
+      return !(b);
+    }).invoke()));
   }
   @Test
-  public void IsOneOf_item4_8006404979732446543() throws Throwable {
+  public void IsOneOf_item2_8006404979732444652() throws Throwable {
+    Assert.assertEquals("Expected: " + (true) + ", but was: " + ((((_FunctionTypes._return_P0_E0<Boolean>) () -> {
+      Boolean b = (Generated_enums_Test.ocean_ == Color.blue);
+      if (Generated_enums_Test.ocean_ == null) {
+        return null;
+      }
+      return b;
+    }).invoke() || ((_FunctionTypes._return_P0_E0<Boolean>) () -> {
+      Boolean b = (Generated_enums_Test.ocean_ == Color.green);
+      if (Generated_enums_Test.ocean_ == null) {
+        return null;
+      }
+      return b;
+    }).invoke() || ((_FunctionTypes._return_P0_E0<Boolean>) () -> {
+      Boolean b = (Generated_enums_Test.ocean_ == Color.red);
+      if (Generated_enums_Test.ocean_ == null) {
+        return null;
+      }
+      return b;
+    }).invoke())), (Object) true, (Object) (((_FunctionTypes._return_P0_E0<Boolean>) () -> {
+      Boolean b = (Generated_enums_Test.ocean_ == Color.blue);
+      if (Generated_enums_Test.ocean_ == null) {
+        return null;
+      }
+      return b;
+    }).invoke() || ((_FunctionTypes._return_P0_E0<Boolean>) () -> {
+      Boolean b = (Generated_enums_Test.ocean_ == Color.green);
+      if (Generated_enums_Test.ocean_ == null) {
+        return null;
+      }
+      return b;
+    }).invoke() || ((_FunctionTypes._return_P0_E0<Boolean>) () -> {
+      Boolean b = (Generated_enums_Test.ocean_ == Color.red);
+      if (Generated_enums_Test.ocean_ == null) {
+        return null;
+      }
+      return b;
+    }).invoke()));
+  }
+  @Test
+  public void IsOneOf_item3_8006404979732446046() throws Throwable {
+    Assert.assertEquals("Expected: " + (true) + ", but was: " + ((((_FunctionTypes._return_P0_E0<Boolean>) () -> {
+      Boolean b = (Generated_enums_Test.ocean_ == Color.blue);
+      if (Generated_enums_Test.ocean_ == null) {
+        return null;
+      }
+      return b;
+    }).invoke() || ((_FunctionTypes._return_P0_E0<Boolean>) () -> {
+      Boolean b = (Generated_enums_Test.ocean_ == Color.green);
+      if (Generated_enums_Test.ocean_ == null) {
+        return null;
+      }
+      return b;
+    }).invoke())), (Object) true, (Object) (((_FunctionTypes._return_P0_E0<Boolean>) () -> {
+      Boolean b = (Generated_enums_Test.ocean_ == Color.blue);
+      if (Generated_enums_Test.ocean_ == null) {
+        return null;
+      }
+      return b;
+    }).invoke() || ((_FunctionTypes._return_P0_E0<Boolean>) () -> {
+      Boolean b = (Generated_enums_Test.ocean_ == Color.green);
+      if (Generated_enums_Test.ocean_ == null) {
+        return null;
+      }
+      return b;
+    }).invoke()));
+  }
+  @Test
+  public void IsOneOf_item4_8006404979732446190() throws Throwable {
+    Assert.assertEquals("Expected: " + (true) + ", but was: " + ((((_FunctionTypes._return_P0_E0<Boolean>) () -> {
+      Boolean b = (Generated_enums_Test.ocean_ == Color.blue);
+      if (Generated_enums_Test.ocean_ == null) {
+        return null;
+      }
+      return b;
+    }).invoke())), (Object) true, (Object) (((_FunctionTypes._return_P0_E0<Boolean>) () -> {
+      Boolean b = (Generated_enums_Test.ocean_ == Color.blue);
+      if (Generated_enums_Test.ocean_ == null) {
+        return null;
+      }
+      return b;
+    }).invoke()));
+  }
+  @Test
+  public void IsOneOf_item5_8006404979732446355() throws Throwable {
+    Assert.assertEquals("Expected: " + (false) + ", but was: " + ((((_FunctionTypes._return_P0_E0<Boolean>) () -> {
+      Boolean b = (Generated_enums_Test.ocean_ == Color.red);
+      if (Generated_enums_Test.ocean_ == null) {
+        return null;
+      }
+      return b;
+    }).invoke())), (Object) false, (Object) (((_FunctionTypes._return_P0_E0<Boolean>) () -> {
+      Boolean b = (Generated_enums_Test.ocean_ == Color.red);
+      if (Generated_enums_Test.ocean_ == null) {
+        return null;
+      }
+      return b;
+    }).invoke()));
+  }
+  @Test
+  public void IsOneOf_item6_8006404979732446543() throws Throwable {
     Assert.assertEquals("Expected: " + (false) + ", but was: " + ((((_FunctionTypes._return_P0_E0<Boolean>) () -> {
       Boolean b = (Generated_enums_Test.ocean_ == Color.red);
       if (Generated_enums_Test.ocean_ == null) {
@@ -191,6 +223,158 @@ public class Generated_enums_Test {
       return b;
     }).invoke() || ((_FunctionTypes._return_P0_E0<Boolean>) () -> {
       Boolean b = (Generated_enums_Test.ocean_ == Color.green);
+      if (Generated_enums_Test.ocean_ == null) {
+        return null;
+      }
+      return b;
+    }).invoke()));
+  }
+  @Test
+  public void IsOneOf_item7_3952549543391779717() throws Throwable {
+    Assert.assertEquals("Expected: " + (true) + ", but was: " + ((((_FunctionTypes._return_P0_E0<Boolean>) () -> {
+      Boolean b = (Generated_enums_Test.ocean_ == Color.red);
+      if (Generated_enums_Test.ocean_ == null) {
+        return null;
+      }
+      return !(b);
+    }).invoke() && ((_FunctionTypes._return_P0_E0<Boolean>) () -> {
+      Boolean b = (Generated_enums_Test.ocean_ == Color.green);
+      if (Generated_enums_Test.ocean_ == null) {
+        return null;
+      }
+      return !(b);
+    }).invoke())), (Object) true, (Object) (((_FunctionTypes._return_P0_E0<Boolean>) () -> {
+      Boolean b = (Generated_enums_Test.ocean_ == Color.red);
+      if (Generated_enums_Test.ocean_ == null) {
+        return null;
+      }
+      return !(b);
+    }).invoke() && ((_FunctionTypes._return_P0_E0<Boolean>) () -> {
+      Boolean b = (Generated_enums_Test.ocean_ == Color.green);
+      if (Generated_enums_Test.ocean_ == null) {
+        return null;
+      }
+      return !(b);
+    }).invoke()));
+  }
+  @Test
+  public void IsOneOf_item8_3952549543402624455() throws Throwable {
+    Assert.assertEquals("Expected: " + (false) + ", but was: " + ((((_FunctionTypes._return_P0_E0<Boolean>) () -> {
+      Boolean b = (Generated_enums_Test.ocean_ == Color.blue);
+      if (Generated_enums_Test.ocean_ == null) {
+        return null;
+      }
+      return !(b);
+    }).invoke() && ((_FunctionTypes._return_P0_E0<Boolean>) () -> {
+      Boolean b = (Generated_enums_Test.ocean_ == Color.green);
+      if (Generated_enums_Test.ocean_ == null) {
+        return null;
+      }
+      return !(b);
+    }).invoke())), (Object) false, (Object) (((_FunctionTypes._return_P0_E0<Boolean>) () -> {
+      Boolean b = (Generated_enums_Test.ocean_ == Color.blue);
+      if (Generated_enums_Test.ocean_ == null) {
+        return null;
+      }
+      return !(b);
+    }).invoke() && ((_FunctionTypes._return_P0_E0<Boolean>) () -> {
+      Boolean b = (Generated_enums_Test.ocean_ == Color.green);
+      if (Generated_enums_Test.ocean_ == null) {
+        return null;
+      }
+      return !(b);
+    }).invoke()));
+  }
+  @Test
+  public void IsOneOf_item9_3952549543405757171() throws Throwable {
+    Assert.assertEquals("Expected: " + (false) + ", but was: " + ((((_FunctionTypes._return_P0_E0<Boolean>) () -> {
+      Boolean b = (Generated_enums_Test.ocean_ == Color.blue);
+      if (Generated_enums_Test.ocean_ == null) {
+        return null;
+      }
+      return !(b);
+    }).invoke())), (Object) false, (Object) (((_FunctionTypes._return_P0_E0<Boolean>) () -> {
+      Boolean b = (Generated_enums_Test.ocean_ == Color.blue);
+      if (Generated_enums_Test.ocean_ == null) {
+        return null;
+      }
+      return !(b);
+    }).invoke()));
+  }
+  @Test
+  public void IsOneOf_item10_5496041071981536501() throws Throwable {
+    Assert.assertEquals("Expected: " + (false) + ", but was: " + ((((_FunctionTypes._return_P0_E0<Boolean>) () -> {
+      Boolean b = (Generated_enums_Test.ocean_ == Color.blue);
+      if (Generated_enums_Test.ocean_ == null) {
+        return null;
+      }
+      return !(b);
+    }).invoke() && ((_FunctionTypes._return_P0_E0<Boolean>) () -> {
+      Boolean b = (Generated_enums_Test.ocean_ == Color.green);
+      if (Generated_enums_Test.ocean_ == null) {
+        return null;
+      }
+      return !(b);
+    }).invoke() && ((_FunctionTypes._return_P0_E0<Boolean>) () -> {
+      Boolean b = (Generated_enums_Test.ocean_ == Color.red);
+      if (Generated_enums_Test.ocean_ == null) {
+        return null;
+      }
+      return !(b);
+    }).invoke())), (Object) false, (Object) (((_FunctionTypes._return_P0_E0<Boolean>) () -> {
+      Boolean b = (Generated_enums_Test.ocean_ == Color.blue);
+      if (Generated_enums_Test.ocean_ == null) {
+        return null;
+      }
+      return !(b);
+    }).invoke() && ((_FunctionTypes._return_P0_E0<Boolean>) () -> {
+      Boolean b = (Generated_enums_Test.ocean_ == Color.green);
+      if (Generated_enums_Test.ocean_ == null) {
+        return null;
+      }
+      return !(b);
+    }).invoke() && ((_FunctionTypes._return_P0_E0<Boolean>) () -> {
+      Boolean b = (Generated_enums_Test.ocean_ == Color.red);
+      if (Generated_enums_Test.ocean_ == null) {
+        return null;
+      }
+      return !(b);
+    }).invoke()));
+  }
+  @Test
+  public void IsOneOf_item11_5496041071981539610() throws Throwable {
+    Assert.assertEquals("Expected: " + (true) + ", but was: " + ((((_FunctionTypes._return_P0_E0<Boolean>) () -> {
+      Boolean b = (Generated_enums_Test.ocean_ == Color.green);
+      if (Generated_enums_Test.ocean_ == null) {
+        return null;
+      }
+      return b;
+    }).invoke() || ((_FunctionTypes._return_P0_E0<Boolean>) () -> {
+      Boolean b = (Generated_enums_Test.ocean_ == Color.red);
+      if (Generated_enums_Test.ocean_ == null) {
+        return null;
+      }
+      return b;
+    }).invoke() || ((_FunctionTypes._return_P0_E0<Boolean>) () -> {
+      Boolean b = (Generated_enums_Test.ocean_ == Color.blue);
+      if (Generated_enums_Test.ocean_ == null) {
+        return null;
+      }
+      return b;
+    }).invoke())), (Object) true, (Object) (((_FunctionTypes._return_P0_E0<Boolean>) () -> {
+      Boolean b = (Generated_enums_Test.ocean_ == Color.green);
+      if (Generated_enums_Test.ocean_ == null) {
+        return null;
+      }
+      return b;
+    }).invoke() || ((_FunctionTypes._return_P0_E0<Boolean>) () -> {
+      Boolean b = (Generated_enums_Test.ocean_ == Color.red);
+      if (Generated_enums_Test.ocean_ == null) {
+        return null;
+      }
+      return b;
+    }).invoke() || ((_FunctionTypes._return_P0_E0<Boolean>) () -> {
+      Boolean b = (Generated_enums_Test.ocean_ == Color.blue);
       if (Generated_enums_Test.ocean_ == null) {
         return null;
       }
@@ -227,6 +411,54 @@ public class Generated_enums_Test {
         return null;
       }
       return b;
+    }).invoke());
+  }
+  @Test
+  public void TestOptions_item2_7850247783003745782() throws Throwable {
+    Assert.assertEquals("Expected: " + (true) + ", but was: " + (((_FunctionTypes._return_P0_E0<Boolean>) () -> {
+      Boolean b = (Generated_enums_Test.ocean_ == Color.red);
+      if (Generated_enums_Test.ocean_ == null) {
+        return null;
+      }
+      return !(b);
+    }).invoke()), (Object) true, (Object) ((_FunctionTypes._return_P0_E0<Boolean>) () -> {
+      Boolean b = (Generated_enums_Test.ocean_ == Color.red);
+      if (Generated_enums_Test.ocean_ == null) {
+        return null;
+      }
+      return !(b);
+    }).invoke());
+  }
+  @Test
+  public void TestOptions_item3_7850247783009169562() throws Throwable {
+    Assert.assertEquals("Expected: " + (false) + ", but was: " + (((_FunctionTypes._return_P0_E0<Boolean>) () -> {
+      Boolean b = (Generated_enums_Test.ocean_ == Color.blue);
+      if (Generated_enums_Test.ocean_ == null) {
+        return null;
+      }
+      return !(b);
+    }).invoke()), (Object) false, (Object) ((_FunctionTypes._return_P0_E0<Boolean>) () -> {
+      Boolean b = (Generated_enums_Test.ocean_ == Color.blue);
+      if (Generated_enums_Test.ocean_ == null) {
+        return null;
+      }
+      return !(b);
+    }).invoke());
+  }
+  @Test
+  public void TestOptions_item4_7850247783009345334() throws Throwable {
+    Assert.assertEquals("Expected: " + (null) + ", but was: " + (((_FunctionTypes._return_P0_E0<Boolean>) () -> {
+      Boolean b = (null == Color.red);
+      if (null == null) {
+        return null;
+      }
+      return !(b);
+    }).invoke()), (Object) null, (Object) ((_FunctionTypes._return_P0_E0<Boolean>) () -> {
+      Boolean b = (null == Color.red);
+      if (null == null) {
+        return null;
+      }
+      return !(b);
     }).invoke());
   }
   public static final PVector<Number> listWithThree_ = ((_FunctionTypes._return_P0_E0<TreePVector<Number>>) () -> {
