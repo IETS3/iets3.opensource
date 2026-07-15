@@ -10,7 +10,7 @@ jbr = "25.0.3-b508.16"
 
 
 [libraries]
-mps = { group = "com.jetbrains.mps", name = "mps", version.ref = "mpsVersion" }
+mps = { group = "com.jetbrains", name = "mps", version.ref = "mpsVersion" }
 remigrate = { group = "de.itemis.mps.build-backends", name = "remigrate", version = "1.0.1.185.53c5432" }
 
 mpsQaAllInOne = { group = "org.mpsqa", name = "all-in-one", version.ref = "mpsQaVersion" }
