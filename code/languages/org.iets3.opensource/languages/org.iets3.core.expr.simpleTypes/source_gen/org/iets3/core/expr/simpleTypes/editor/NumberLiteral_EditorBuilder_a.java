@@ -10,16 +10,12 @@ import jetbrains.mps.openapi.editor.cells.EditorCell;
 import jetbrains.mps.nodeEditor.cells.EditorCell_Collection;
 import jetbrains.mps.nodeEditor.cellLayout.CellLayout_Indent;
 import jetbrains.mps.baseLanguage.closures.runtime._FunctionTypes;
-import org.iets3.core.expr.base.runtime.runtime.PTF;
-import jetbrains.mps.nodeEditor.cells.EditorCell_Property;
-import jetbrains.mps.nodeEditor.cells.PropertyAccessor;
-import de.slisson.mps.reflection.runtime.ReflectionUtil;
-import org.iets3.core.expr.base.runtime.runtime.HexPropertyAccessor;
 import org.jetbrains.mps.openapi.language.SProperty;
 import jetbrains.mps.openapi.editor.menus.transformation.SPropertyInfo;
 import jetbrains.mps.nodeEditor.cellProviders.CellProviderWithRole;
 import com.mbeddr.mpsutil.grammarcells.runtime.SplittablePropertyCellProvider;
 import com.mbeddr.mpsutil.grammarcells.runtime.NumberLiteralTokenizer;
+import jetbrains.mps.nodeEditor.cells.ModelAccessor;
 import jetbrains.mps.openapi.editor.style.Style;
 import jetbrains.mps.editor.runtime.style.StyleImpl;
 import org.iets3.core.base.editor.IETS3Styles_StyleSheet.IETS3NumberStyleClass;
@@ -35,6 +31,9 @@ import jetbrains.mps.openapi.editor.menus.EditorMenuDescriptor;
 import jetbrains.mps.nodeEditor.cellMenu.CellContext;
 import jetbrains.mps.lang.editor.menus.EditorMenuDescriptorBase;
 import jetbrains.mps.smodel.SNodePointer;
+import org.iets3.core.expr.base.runtime.runtime.PTF;
+import org.iets3.core.expr.base.runtime.runtime.HexPropertyAccessor;
+import jetbrains.mps.nodeEditor.cells.PropertyAccessor;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import org.jetbrains.mps.openapi.language.SConcept;
 
@@ -68,22 +67,22 @@ import org.jetbrains.mps.openapi.language.SConcept;
   private EditorCell createCustomFactory_0(final EditorContext editorContext, final SNode node) {
 
 
-    final EditorCell cell = createSplittableCell_0();
-    EditorCell editorCell = ((_FunctionTypes._return_P0_E0<EditorCell>) () -> {
-      if (PTF.areHexadecimalNumbersSupported(myNode)) {
-        EditorCell_Property propCell = (EditorCell_Property) cell;
-        if (propCell != null) {
-          PropertyAccessor modelAccessor = (PropertyAccessor) propCell.getModelAccessor();
-          ReflectionUtil.writeField(EditorCell_Property.class, propCell, "myModelAccessor", new HexPropertyAccessor(myNode, modelAccessor.getProperty(), ((Boolean) ReflectionUtil.readField(PropertyAccessor.class, modelAccessor, "myReadOnly")), ((Boolean) ReflectionUtil.readField(PropertyAccessor.class, modelAccessor, "myAllowEmptyText")), getEditorContext()));
-          propCell.synchronize();
-        }
-      }
-      return cell;
-    }).invoke();
+    final EditorCell cell = createCustomFactory_3();
+    EditorCell editorCell = ((_FunctionTypes._return_P0_E0<EditorCell>) () -> cell).invoke();
     return editorCell;
   }
   private EditorCell createCustomFactory_1() {
     return createCustomFactory_0(getEditorContext(), myNode);
+  }
+  private EditorCell createCustomFactory_2(final EditorContext editorContext, final SNode node) {
+
+
+    final EditorCell cell = createSplittableCell_0();
+    EditorCell editorCell = ((_FunctionTypes._return_P0_E0<EditorCell>) () -> cell).invoke();
+    return editorCell;
+  }
+  private EditorCell createCustomFactory_3() {
+    return createCustomFactory_2(getEditorContext(), myNode);
   }
   private EditorCell createSplittableCell_0() {
     // (*): lines added to the factory method from reduce_CellModel_Property (originally used for SplittableCell: reduce_CellModel_WithRole)
@@ -94,7 +93,17 @@ import org.jetbrains.mps.openapi.language.SConcept;
       SProperty property = PROPS.value$iWTK;
       getCellFactory().setPropertyInfo(new SPropertyInfo(myNode, property));
 
-      CellProviderWithRole provider = new SplittablePropertyCellProvider(myNode, PROPS.value$iWTK, getEditorContext(), new NumberLiteralTokenizer());
+      CellProviderWithRole provider = new SplittablePropertyCellProvider(myNode, PROPS.value$iWTK, getEditorContext(), new NumberLiteralTokenizer()) {
+        @Override
+        protected ModelAccessor createModelAccessor() {
+          ModelAccessor result = createModelAccessor_h1m3wb_a0a0a0a0a0e0d0n(getSNode(), getProperty(), getEditorContext(), false, false);
+          if (result != null) {
+            return result;
+          }
+
+          return super.createModelAccessor();
+        }
+      };
       provider.setNoTargetText("<no value>");
       EditorCell editorCell;
       editorCell = provider.createEditorCell(getEditorContext());
@@ -104,7 +113,7 @@ import org.jetbrains.mps.openapi.language.SConcept;
       style.set(StyleAttributes.AUTO_DELETABLE, true);
       style.set(StyleAttributes.DEFAULT_CARET_POSITION, CaretPosition.LAST);
       editorCell.getStyle().putAll(style);
-      editorCell.setSubstituteInfo(new CompositeSubstituteInfo(getEditorContext(), provider.getCellContext(), new SubstituteInfoPartExt[]{new ReplaceWith_Expression_cellMenu_5vqr8z_a0a0a(), new SChildSubstituteInfoPartEx(editorCell)}));
+      editorCell.setSubstituteInfo(new CompositeSubstituteInfo(getEditorContext(), provider.getCellContext(), new SubstituteInfoPartExt[]{new ReplaceWith_Expression_cellMenu_5vqr8z_a0a0a0(), new SChildSubstituteInfoPartEx(editorCell)}));
 
       // (*) store cell context for the new cell
       setCellContext(editorCell);
@@ -121,8 +130,8 @@ import org.jetbrains.mps.openapi.language.SConcept;
       getCellFactory().popCellContext();
     }
   }
-  public static class ReplaceWith_Expression_cellMenu_5vqr8z_a0a0a extends AbstractCellMenuPart_ReplaceNode_CustomNodeConcept {
-    public ReplaceWith_Expression_cellMenu_5vqr8z_a0a0a() {
+  public static class ReplaceWith_Expression_cellMenu_5vqr8z_a0a0a0 extends AbstractCellMenuPart_ReplaceNode_CustomNodeConcept {
+    public ReplaceWith_Expression_cellMenu_5vqr8z_a0a0a0() {
     }
     public SAbstractConcept getReplacementConcept() {
       return CONCEPTS.Expression$D_;
@@ -131,6 +140,13 @@ import org.jetbrains.mps.openapi.language.SConcept;
     protected EditorMenuDescriptor createEditorMenuDescriptor(CellContext cellContext, EditorContext editorContext) {
       return new EditorMenuDescriptorBase("replace node (custom node concept: " + "Expression" + ")", new SNodePointer("r:6d94c93d-1ff8-4e1f-8fca-b92e9d42f070(org.iets3.core.expr.simpleTypes.editor)", "7070869963735806143"));
     }
+  }
+  public static ModelAccessor createModelAccessor_h1m3wb_a0a0a0a0a0e0d0n(SNode node, SProperty property, EditorContext editorContext, boolean readOnly, boolean allowEmptyText) {
+    if (PTF.areHexadecimalNumbersSupported(node)) {
+      return new HexPropertyAccessor(node, PROPS.value$iWTK, readOnly, allowEmptyText);
+    }
+
+    return new PropertyAccessor(node, PROPS.value$iWTK, readOnly, allowEmptyText);
   }
 
   private static final class PROPS {

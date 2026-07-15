@@ -33,7 +33,7 @@ public class ProtocolMap_Constraints extends BaseConstraintsDescriptor {
         boolean result = staticCanBeAnAncestor(context.getNode(), context.getChildNode(), context.getChildConcept(), context.getParentNode(), context.getLink());
 
         if (!(result) && checkingNodeContext != null) {
-          checkingNodeContext.setBreakingNode(canBeRootBreakingPoint);
+          checkingNodeContext.setBreakingNode(canBeAncestorBreakingPoint);
         }
 
         return result;
@@ -48,7 +48,7 @@ public class ProtocolMap_Constraints extends BaseConstraintsDescriptor {
 
     return true;
   }
-  private static final SNodePointer canBeRootBreakingPoint = new SNodePointer("r:a094b17e-57e7-4abf-aa71-468cc3ad1e03(org.iets3.protocol.transport.constraints)", "7015533061433964195");
+  private static final SNodePointer canBeAncestorBreakingPoint = new SNodePointer("r:a094b17e-57e7-4abf-aa71-468cc3ad1e03(org.iets3.protocol.transport.constraints)", "7015533061433964195");
 
   private static final class CONCEPTS {
     /*package*/ static final SConcept ProtocolMap$j3 = MetaAdapterFactory.getConcept(0xa50d629093d242afL, 0x9ae0b2fefc6ee754L, 0x7ef7796277ace0dL, "org.iets3.protocol.transport.structure.ProtocolMap");
