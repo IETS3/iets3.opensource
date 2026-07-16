@@ -6,7 +6,7 @@
     <use id="696c1165-4a59-463b-bc5d-902caab85dd0" name="jetbrains.mps.make.facet" version="0" />
     <use id="28f9e497-3b42-4291-aeba-0a1039153ab1" name="jetbrains.mps.lang.plugin" version="6" />
     <use id="c9d137c4-3259-44f8-80ff-33ab2b506ee4" name="jetbrains.mps.lang.util.order" version="0" />
-    <use id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc" version="2" />
+    <use id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc" version="3" />
     <use id="c0080a47-7e37-4558-bee9-9ae18e690549" name="jetbrains.mps.lang.extension" version="2" />
     <use id="c7d5b9dd-a05f-4be2-bc73-f2e16994cc67" name="jetbrains.mps.baseLanguage.lightweightdsl" version="1" />
     <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="12" />
@@ -71,6 +71,9 @@
         <child id="1238857764950" name="tuple" index="1LFl5Q" />
         <child id="1238857834412" name="index" index="1LF_Uc" />
       </concept>
+    </language>
+    <language id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior">
+      <concept id="3235159848334022093" name="jetbrains.mps.lang.behavior.structure.Node_ConceptMethodCall" flags="nn" index="3zqWPK" />
     </language>
     <language id="5dc5fc0d-37ef-4782-8192-8b5ce1f69f80" name="jetbrains.mps.baseLanguage.extensionMethods">
       <concept id="8022092943110829337" name="jetbrains.mps.baseLanguage.extensionMethods.structure.BaseExtensionMethodContainer" flags="ng" index="a7sou">
@@ -296,15 +299,9 @@
       </concept>
     </language>
     <language id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc">
-      <concept id="5349172909345501395" name="jetbrains.mps.baseLanguage.javadoc.structure.BaseDocComment" flags="ng" index="P$AiS">
-        <child id="8465538089690331502" name="body" index="TZ5H$" />
-      </concept>
       <concept id="5349172909345532724" name="jetbrains.mps.baseLanguage.javadoc.structure.MethodDocComment" flags="ng" index="P$JXv" />
-      <concept id="8465538089690331500" name="jetbrains.mps.baseLanguage.javadoc.structure.CommentLine" flags="ng" index="TZ5HA">
-        <child id="8970989240999019149" name="part" index="1dT_Ay" />
-      </concept>
-      <concept id="8970989240999019143" name="jetbrains.mps.baseLanguage.javadoc.structure.TextCommentLinePart" flags="ng" index="1dT_AC">
-        <property id="8970989240999019144" name="text" index="1dT_AB" />
+      <concept id="5085607816302529296" name="jetbrains.mps.baseLanguage.javadoc.structure.IHoldCommentLines" flags="ngI" index="1VezTd">
+        <child id="5085607816302529587" name="commentBody" index="1Vez_I" />
       </concept>
     </language>
     <language id="c7d5b9dd-a05f-4be2-bc73-f2e16994cc67" name="jetbrains.mps.baseLanguage.lightweightdsl">
@@ -383,7 +380,6 @@
       <concept id="4497478346159780083" name="jetbrains.mps.lang.smodel.structure.LanguageRefExpression" flags="ng" index="pHN19">
         <child id="3542851458883491298" name="languageId" index="2V$M_3" />
       </concept>
-      <concept id="1179409122411" name="jetbrains.mps.lang.smodel.structure.Node_ConceptMethodCall" flags="nn" index="2qgKlT" />
       <concept id="7400021826771268254" name="jetbrains.mps.lang.smodel.structure.SNodePointerType" flags="ig" index="2sp9CU">
         <reference id="7400021826771268269" name="concept" index="2sp9C9" />
       </concept>
@@ -1705,19 +1701,112 @@
         </node>
       </node>
       <node concept="P$JXv" id="2rzAw9UV2cq" role="lGtFl">
-        <node concept="TZ5HA" id="2rzAw9UV2cr" role="TZ5H$">
-          <node concept="1dT_AC" id="2rzAw9UV2cs" role="1dT_Ay">
-            <property role="1dT_AB" value="Computes the supertype with respect to the units in the provided type." />
+        <node concept="1PaTwC" id="3MzwgoR0SXh" role="1Vez_I">
+          <node concept="3oM_SD" id="3MzwgoR0SXi" role="1PaTwD">
+            <property role="3oM_SC" value="Computes" />
+          </node>
+          <node concept="3oM_SD" id="3MzwgoR0SXj" role="1PaTwD">
+            <property role="3oM_SC" value="the" />
+          </node>
+          <node concept="3oM_SD" id="3MzwgoR0SXk" role="1PaTwD">
+            <property role="3oM_SC" value="supertype" />
+          </node>
+          <node concept="3oM_SD" id="3MzwgoR0SXl" role="1PaTwD">
+            <property role="3oM_SC" value="with" />
+          </node>
+          <node concept="3oM_SD" id="3MzwgoR0SXm" role="1PaTwD">
+            <property role="3oM_SC" value="respect" />
+          </node>
+          <node concept="3oM_SD" id="3MzwgoR0SXn" role="1PaTwD">
+            <property role="3oM_SC" value="to" />
+          </node>
+          <node concept="3oM_SD" id="3MzwgoR0SXo" role="1PaTwD">
+            <property role="3oM_SC" value="the" />
+          </node>
+          <node concept="3oM_SD" id="3MzwgoR0SXp" role="1PaTwD">
+            <property role="3oM_SC" value="units" />
+          </node>
+          <node concept="3oM_SD" id="3MzwgoR0SXq" role="1PaTwD">
+            <property role="3oM_SC" value="in" />
+          </node>
+          <node concept="3oM_SD" id="3MzwgoR0SXr" role="1PaTwD">
+            <property role="3oM_SC" value="the" />
+          </node>
+          <node concept="3oM_SD" id="3MzwgoR0SXs" role="1PaTwD">
+            <property role="3oM_SC" value="provided" />
+          </node>
+          <node concept="3oM_SD" id="3MzwgoR0SXt" role="1PaTwD">
+            <property role="3oM_SC" value="type." />
           </node>
         </node>
-        <node concept="TZ5HA" id="5ZuZjOMj9Qn" role="TZ5H$">
-          <node concept="1dT_AC" id="5ZuZjOMj9Qo" role="1dT_Ay">
-            <property role="1dT_AB" value="Creates runtime error types if not all types will have the same unit or if units types" />
+        <node concept="1PaTwC" id="3MzwgoR0SXu" role="1Vez_I">
+          <node concept="3oM_SD" id="3MzwgoR0SXv" role="1PaTwD">
+            <property role="3oM_SC" value="Creates" />
+          </node>
+          <node concept="3oM_SD" id="3MzwgoR0SXw" role="1PaTwD">
+            <property role="3oM_SC" value="runtime" />
+          </node>
+          <node concept="3oM_SD" id="3MzwgoR0SXx" role="1PaTwD">
+            <property role="3oM_SC" value="error" />
+          </node>
+          <node concept="3oM_SD" id="3MzwgoR0SXy" role="1PaTwD">
+            <property role="3oM_SC" value="types" />
+          </node>
+          <node concept="3oM_SD" id="3MzwgoR0SXz" role="1PaTwD">
+            <property role="3oM_SC" value="if" />
+          </node>
+          <node concept="3oM_SD" id="3MzwgoR0SX$" role="1PaTwD">
+            <property role="3oM_SC" value="not" />
+          </node>
+          <node concept="3oM_SD" id="3MzwgoR0SX_" role="1PaTwD">
+            <property role="3oM_SC" value="all" />
+          </node>
+          <node concept="3oM_SD" id="3MzwgoR0SXA" role="1PaTwD">
+            <property role="3oM_SC" value="types" />
+          </node>
+          <node concept="3oM_SD" id="3MzwgoR0SXB" role="1PaTwD">
+            <property role="3oM_SC" value="will" />
+          </node>
+          <node concept="3oM_SD" id="3MzwgoR0SXC" role="1PaTwD">
+            <property role="3oM_SC" value="have" />
+          </node>
+          <node concept="3oM_SD" id="3MzwgoR0SXD" role="1PaTwD">
+            <property role="3oM_SC" value="the" />
+          </node>
+          <node concept="3oM_SD" id="3MzwgoR0SXE" role="1PaTwD">
+            <property role="3oM_SC" value="same" />
+          </node>
+          <node concept="3oM_SD" id="3MzwgoR0SXF" role="1PaTwD">
+            <property role="3oM_SC" value="unit" />
+          </node>
+          <node concept="3oM_SD" id="3MzwgoR0SXG" role="1PaTwD">
+            <property role="3oM_SC" value="or" />
+          </node>
+          <node concept="3oM_SD" id="3MzwgoR0SXH" role="1PaTwD">
+            <property role="3oM_SC" value="if" />
+          </node>
+          <node concept="3oM_SD" id="3MzwgoR0SXI" role="1PaTwD">
+            <property role="3oM_SC" value="units" />
+          </node>
+          <node concept="3oM_SD" id="3MzwgoR0SXJ" role="1PaTwD">
+            <property role="3oM_SC" value="types" />
           </node>
         </node>
-        <node concept="TZ5HA" id="69hlyJ6ePgY" role="TZ5H$">
-          <node concept="1dT_AC" id="69hlyJ6ePgZ" role="1dT_Ay">
-            <property role="1dT_AB" value="are mixed with non-unit types." />
+        <node concept="1PaTwC" id="3MzwgoR0SXK" role="1Vez_I">
+          <node concept="3oM_SD" id="3MzwgoR0SXL" role="1PaTwD">
+            <property role="3oM_SC" value="are" />
+          </node>
+          <node concept="3oM_SD" id="3MzwgoR0SXM" role="1PaTwD">
+            <property role="3oM_SC" value="mixed" />
+          </node>
+          <node concept="3oM_SD" id="3MzwgoR0SXN" role="1PaTwD">
+            <property role="3oM_SC" value="with" />
+          </node>
+          <node concept="3oM_SD" id="3MzwgoR0SXO" role="1PaTwD">
+            <property role="3oM_SC" value="non-unit" />
+          </node>
+          <node concept="3oM_SD" id="3MzwgoR0SXP" role="1PaTwD">
+            <property role="3oM_SC" value="types." />
           </node>
         </node>
       </node>
@@ -1988,7 +2077,7 @@
                           <node concept="37vLTw" id="69hlyJ6g7p2" role="2Oq$k0">
                             <ref role="3cqZAo" node="4z0AnX817jC" resolve="it" />
                           </node>
-                          <node concept="2qgKlT" id="69hlyJ6hZY8" role="2OqNvi">
+                          <node concept="3zqWPK" id="5DJjBfj0aEa" role="2OqNvi">
                             <ref role="37wK5l" to="tpcu:hEwIMiw" resolve="getPresentation" />
                           </node>
                         </node>
@@ -2087,7 +2176,7 @@
                     <ref role="cht4Q" to="hm2y:6sdnDbSlaok" resolve="Type" />
                   </node>
                 </node>
-                <node concept="2qgKlT" id="1JTgXSYRK0u" role="2OqNvi">
+                <node concept="3zqWPK" id="5DJjBfj0aEc" role="2OqNvi">
                   <ref role="37wK5l" to="pbu6:7McqtXGyz8c" resolve="getCapabilityRequirement" />
                 </node>
               </node>
@@ -5108,7 +5197,7 @@
                             <node concept="37vLTw" id="1FkCRmRF63f" role="2Oq$k0">
                               <ref role="3cqZAo" node="3pG3MI6v$Eq" resolve="oldUnit" />
                             </node>
-                            <node concept="2qgKlT" id="1FkCRmRFuUa" role="2OqNvi">
+                            <node concept="3zqWPK" id="5DJjBfj0aEe" role="2OqNvi">
                               <ref role="37wK5l" to="hwgx:59HbAIOYtvQ" resolve="isInvolvedInCycle" />
                             </node>
                           </node>
@@ -5171,7 +5260,7 @@
                         <node concept="37vLTw" id="1FkCRmRSy74" role="2Oq$k0">
                           <ref role="3cqZAo" node="3pG3MI6v$Eq" resolve="oldUnit" />
                         </node>
-                        <node concept="2qgKlT" id="1FkCRmRSYLh" role="2OqNvi">
+                        <node concept="3zqWPK" id="5DJjBfj0aEg" role="2OqNvi">
                           <ref role="37wK5l" to="hwgx:59HbAIOYtvQ" resolve="isInvolvedInCycle" />
                         </node>
                       </node>
@@ -10366,7 +10455,7 @@
                                 <ref role="3Tt5mk" to="tp25:1Bs_61$ngwB" resolve="modelRef" />
                               </node>
                             </node>
-                            <node concept="2qgKlT" id="2qDVhi7xqJm" role="2OqNvi">
+                            <node concept="3zqWPK" id="5DJjBfj0aEi" role="2OqNvi">
                               <ref role="37wK5l" to="xlb7:1Bs_61$mvvu" resolve="toModelReference" />
                             </node>
                           </node>
@@ -12140,7 +12229,7 @@
                         <ref role="3Tt5mk" to="i3ya:7i1yFLkslE5" resolve="exponent" />
                       </node>
                     </node>
-                    <node concept="2qgKlT" id="4ElwYTiTTpb" role="2OqNvi">
+                    <node concept="3zqWPK" id="5DJjBfj0aEk" role="2OqNvi">
                       <ref role="37wK5l" to="rppw:3j3yk3guAC3" resolve="getNumerator" />
                     </node>
                   </node>
@@ -12151,7 +12240,7 @@
                         <ref role="3Tt5mk" to="i3ya:7i1yFLkslE5" resolve="exponent" />
                       </node>
                     </node>
-                    <node concept="2qgKlT" id="4ElwYTiTTpg" role="2OqNvi">
+                    <node concept="3zqWPK" id="5DJjBfj0aEm" role="2OqNvi">
                       <ref role="37wK5l" to="rppw:3j3yk3guABz" resolve="getDenominator" />
                     </node>
                   </node>
