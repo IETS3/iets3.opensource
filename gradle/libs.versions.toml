@@ -6,7 +6,8 @@ mpsQaVersion = "9999.9.1434.281ce77"
 # example: mbeddrVersion="feature-my_new_feature.2023.2.+"
 mbeddrVersion = "9999.9.26517.f1a39c7"
 
-jbr = "21.0.6-b895.109"
+jbr = "25.0.3-b508.16"
+
 
 [libraries]
 mps = { group = "com.jetbrains.mps", name = "mps-prerelease", version.ref = "mpsVersion" }
