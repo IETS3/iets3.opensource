@@ -27,9 +27,6 @@ public class QuantityTypes_SubtypingRule extends SubtypingRule_Runtime implement
   public boolean isWeak() {
     return false;
   }
-  public boolean surelyKeepsConcept() {
-    return true;
-  }
   private static SNode createQuantityType_pdvzq9_a0a1() {
     SNodeBuilder n0 = new SNodeBuilder().init(CONCEPTS.QuantityType$2O);
     return n0.getResult();

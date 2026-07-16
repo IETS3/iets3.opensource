@@ -50,7 +50,7 @@ public class WalkOnVariationModels_Test extends BaseTransformationTest {
       runWithinCommand(() -> {
         List<SNode> features = TreeWalker.gatherChildren(getAnnotatedNode("featureRoot"), CONCEPTS.Feature$D7, CONCEPTS.FeatureModelInclude$Iq, (SNode n) -> SLinkOperations.getTarget(((SNode) n), LINKS.fm$EY24));
 
-        Assert.assertEquals(11, ListSequence.fromList(features).count());
+        Assert.assertEquals(Integer.valueOf(11), Integer.valueOf(ListSequence.fromList(features).count()));
       });
     }
 

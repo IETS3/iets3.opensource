@@ -8,7 +8,6 @@ import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import org.jetbrains.mps.openapi.model.SNode;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import java.util.List;
 import java.util.Arrays;
@@ -20,7 +19,6 @@ import jetbrains.mps.internal.collections.runtime.ListSequence;
 import jetbrains.mps.editor.runtime.impl.cellActions.CommentUtil;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations;
 import org.iets3.core.expr.base.behavior.IMayAllowEffect__BehaviorDescriptor;
-import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 import org.jetbrains.mps.openapi.language.SInterfaceConcept;
@@ -30,20 +28,18 @@ import org.jetbrains.mps.openapi.language.SProperty;
 public final class Library__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getConcept(0x71934284d7d145eeL, 0xa0548c072591085fL, 0x78b257522c0608fL, "org.iets3.core.expr.toplevel.structure.Library");
 
-  public static final SMethod<Iterable<SNode>> getUniquelyNamedElements_id4qSf1u1TRfj = new SMethodBuilder<Iterable<SNode>>(new SJavaCompoundTypeImpl((Class<Iterable<SNode>>) ((Class) Object.class))).name("getUniquelyNamedElements").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5095889050031059923L).languageId(0xaa41d1b2bffa7eb1L, 0xd4280a54f6df4383L).build2();
-  public static final SMethod<Iterable<SNode>> dependencies_id6clJcrJYPM5 = new SMethodBuilder<Iterable<SNode>>(new SJavaCompoundTypeImpl((Class<Iterable<SNode>>) ((Class) Object.class))).name("dependencies").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(7139820346881563781L).languageId(0xaa41d1b2bffa7eb1L, 0xd4280a54f6df4383L).build2();
-  public static final SMethod<Iterable<SNode>> allReferenceableContentsInChunk_id6clJcrKmVSn = new SMethodBuilder<Iterable<SNode>>(new SJavaCompoundTypeImpl((Class<Iterable<SNode>>) ((Class) Object.class))).name("allReferenceableContentsInChunk").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(7139820346887880215L).languageId(0xaa41d1b2bffa7eb1L, 0xd4280a54f6df4383L).build2();
-  public static final SMethod<Iterable<SNode>> externallyReferenceableContentsInChunk_id6clJcrKmX4x = new SMethodBuilder<Iterable<SNode>>(new SJavaCompoundTypeImpl((Class<Iterable<SNode>>) ((Class) Object.class))).name("externallyReferenceableContentsInChunk").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(7139820346887885089L).languageId(0xaa41d1b2bffa7eb1L, 0xd4280a54f6df4383L).build2();
-  public static final SMethod<Void> addGenericChunkDependency_id94IdDK$n_l = new SMethodBuilder<Void>(new SJavaCompoundTypeImpl(Void.class)).name("addGenericDependecy").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(163458734823143765L).languageId(0xaa41d1b2bffa7eb1L, 0xd4280a54f6df4383L).build2(SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""));
-  public static final SMethod<String> asString_id6iqfHNBPkjP = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("asString").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(7249175668709475573L).languageId(0xb66a309a6e1a7290L, 0xcfaa4966b7d54b69L).build2();
-  public static final SMethod<Iterable<SNode>> namedNodesForComment_id5ElkanQ81fv = new SMethodBuilder<Iterable<SNode>>(new SJavaCompoundTypeImpl((Class<Iterable<SNode>>) ((Class) Object.class))).name("namedNodesForComment").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(6527211908672525279L).languageId(0xb66a309a6e1a7290L, 0xcfaa4966b7d54b69L).build2();
-  public static final SMethod<String> allowsEffectForNode_idORfz$DS6Ap = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("allowsEffectForNode").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(952298261448780185L).languageId(0xb66a309a6e1a7290L, 0xcfaa4966b7d54b69L).build2(SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""));
-  public static final SMethod<Boolean> isImplementationArtifact_id7Vd878ENIh6 = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("isImplementationArtifact").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(9136994893721166918L).languageId(0xaa41d1b2bffa7eb1L, 0xd4280a54f6df4383L).build2();
+  public static final SMethod<Iterable<SNode>> getUniquelyNamedElements_id4qSf1u1TRfj = new SMethodBuilder<>((Class<Iterable<SNode>>) ((Class) Object.class)).name("getUniquelyNamedElements").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5095889050031059923L).languageId(0xaa41d1b2bffa7eb1L, 0xd4280a54f6df4383L).build2();
+  public static final SMethod<Iterable<SNode>> dependencies_id6clJcrJYPM5 = new SMethodBuilder<>((Class<Iterable<SNode>>) ((Class) Object.class)).name("dependencies").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(7139820346881563781L).languageId(0xaa41d1b2bffa7eb1L, 0xd4280a54f6df4383L).build2();
+  public static final SMethod<Iterable<SNode>> allReferenceableContentsInChunk_id6clJcrKmVSn = new SMethodBuilder<>((Class<Iterable<SNode>>) ((Class) Object.class)).name("allReferenceableContentsInChunk").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(7139820346887880215L).languageId(0xaa41d1b2bffa7eb1L, 0xd4280a54f6df4383L).build2();
+  public static final SMethod<Iterable<SNode>> externallyReferenceableContentsInChunk_id6clJcrKmX4x = new SMethodBuilder<>((Class<Iterable<SNode>>) ((Class) Object.class)).name("externallyReferenceableContentsInChunk").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(7139820346887885089L).languageId(0xaa41d1b2bffa7eb1L, 0xd4280a54f6df4383L).build2();
+  public static final SMethod<Void> addGenericChunkDependency_id94IdDK$n_l = new SMethodBuilder<>(Void.TYPE).name("addGenericDependecy").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(163458734823143765L).languageId(0xaa41d1b2bffa7eb1L, 0xd4280a54f6df4383L).build2(SMethodBuilder.createJavaParameter(SNode.class, "dep"));
+  public static final SMethod<String> asString_id6iqfHNBPkjP = new SMethodBuilder<>(String.class).name("asString").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(7249175668709475573L).languageId(0xb66a309a6e1a7290L, 0xcfaa4966b7d54b69L).build2();
+  public static final SMethod<Iterable<SNode>> namedNodesForComment_id5ElkanQ81fv = new SMethodBuilder<>((Class<Iterable<SNode>>) ((Class) Object.class)).name("namedNodesForComment").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(6527211908672525279L).languageId(0xb66a309a6e1a7290L, 0xcfaa4966b7d54b69L).build2();
+  public static final SMethod<String> allowsEffectForNode_idORfz$DS6Ap = new SMethodBuilder<>(String.class).name("allowsEffectForNode").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(952298261448780185L).languageId(0xb66a309a6e1a7290L, 0xcfaa4966b7d54b69L).build2(SMethodBuilder.createJavaParameter(SNode.class, "n"));
+  public static final SMethod<Boolean> isImplementationArtifact_id7Vd878ENIh6 = new SMethodBuilder<>(Boolean.TYPE).name("isImplementationArtifact").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(9136994893721166918L).languageId(0xaa41d1b2bffa7eb1L, 0xd4280a54f6df4383L).build2();
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(getUniquelyNamedElements_id4qSf1u1TRfj, dependencies_id6clJcrJYPM5, allReferenceableContentsInChunk_id6clJcrKmVSn, externallyReferenceableContentsInChunk_id6clJcrKmX4x, addGenericChunkDependency_id94IdDK$n_l, asString_id6iqfHNBPkjP, namedNodesForComment_id5ElkanQ81fv, allowsEffectForNode_idORfz$DS6Ap, isImplementationArtifact_id7Vd878ENIh6);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(getUniquelyNamedElements_id4qSf1u1TRfj, dependencies_id6clJcrJYPM5, allReferenceableContentsInChunk_id6clJcrKmVSn, externallyReferenceableContentsInChunk_id6clJcrKmX4x, addGenericChunkDependency_id94IdDK$n_l, asString_id6iqfHNBPkjP, namedNodesForComment_id5ElkanQ81fv, allowsEffectForNode_idORfz$DS6Ap, isImplementationArtifact_id7Vd878ENIh6);
 
-  private static void ___init___(@NotNull SNode __thisNode__) {
-  }
 
   /*package*/ static Iterable<SNode> getUniquelyNamedElements_id4qSf1u1TRfj(@NotNull SNode __thisNode__) {
     return SNodeOperations.ofConcept(Chunk__BehaviorDescriptor.allReferenceableContentsInChunk_id6clJcrKmVSn.invoke(__thisNode__), CONCEPTS.INamedConcept$Kd);
@@ -82,10 +78,6 @@ public final class Library__BehaviorDescriptor extends BaseBHDescriptor {
   /*package*/ Library__BehaviorDescriptor() {
   }
 
-  @Override
-  protected void initNode(@NotNull SNode node, @NotNull SConstructor constructor, @Nullable Object[] parameters) {
-    ___init___(node);
-  }
 
   @Override
   protected <T> T invokeSpecial0(@NotNull SNode node, @NotNull SMethod<T> method, @Nullable Object[] parameters) {

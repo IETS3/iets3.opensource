@@ -7,7 +7,6 @@ import org.jetbrains.mps.openapi.language.SAbstractConcept;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import org.jetbrains.mps.openapi.model.SNode;
 import java.util.List;
@@ -15,7 +14,6 @@ import java.util.Arrays;
 import org.jetbrains.annotations.NotNull;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
-import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 import org.jetbrains.mps.openapi.language.SProperty;
@@ -24,13 +22,11 @@ import org.jetbrains.mps.openapi.language.SConcept;
 public final class EnumLiteral__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getConcept(0x71934284d7d145eeL, 0xa0548c072591085fL, 0x61fe216664a72ed1L, "org.iets3.core.expr.toplevel.structure.EnumLiteral");
 
-  public static final SMethod<String> nameWithEnum_id67Y8mp$HuPC = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("nameWithEnum").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(7061117989423541608L).languageId(0xa0548c072591085fL, 0x71934284d7d145eeL).build2();
-  public static final SMethod<SNode> enumDecl_id67Y8mp$M9$v = new SMethodBuilder<SNode>(new SJavaCompoundTypeImpl((Class<SNode>) ((Class) Object.class))).name("enumDecl").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(7061117989424765215L).languageId(0xa0548c072591085fL, 0x71934284d7d145eeL).build2();
+  public static final SMethod<String> nameWithEnum_id67Y8mp$HuPC = new SMethodBuilder<>(String.class).name("nameWithEnum").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(7061117989423541608L).languageId(0xa0548c072591085fL, 0x71934284d7d145eeL).build2();
+  public static final SMethod<SNode> enumDecl_id67Y8mp$M9$v = new SMethodBuilder<>(SNode.class).name("enumDecl").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(7061117989424765215L).languageId(0xa0548c072591085fL, 0x71934284d7d145eeL).build2();
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(nameWithEnum_id67Y8mp$HuPC, enumDecl_id67Y8mp$M9$v);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(nameWithEnum_id67Y8mp$HuPC, enumDecl_id67Y8mp$M9$v);
 
-  private static void ___init___(@NotNull SNode __thisNode__) {
-  }
 
   /*package*/ static String nameWithEnum_id67Y8mp$HuPC(@NotNull SNode __thisNode__) {
     return SPropertyOperations.getString(SNodeOperations.cast(SNodeOperations.getParent(__thisNode__), CONCEPTS.EnumDeclaration$3b), PROPS.name$MnvL) + ":" + SPropertyOperations.getString(__thisNode__, PROPS.name$MnvL);
@@ -42,10 +38,6 @@ public final class EnumLiteral__BehaviorDescriptor extends BaseBHDescriptor {
   /*package*/ EnumLiteral__BehaviorDescriptor() {
   }
 
-  @Override
-  protected void initNode(@NotNull SNode node, @NotNull SConstructor constructor, @Nullable Object[] parameters) {
-    ___init___(node);
-  }
 
   @Override
   protected <T> T invokeSpecial0(@NotNull SNode node, @NotNull SMethod<T> method, @Nullable Object[] parameters) {

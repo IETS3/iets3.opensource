@@ -25,6 +25,9 @@
     <import index="tpcu" ref="r:00000000-0000-4000-0000-011c89590282(jetbrains.mps.lang.core.behavior)" implicit="true" />
   </imports>
   <registry>
+    <language id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior">
+      <concept id="3235159848334022093" name="jetbrains.mps.lang.behavior.structure.Node_ConceptMethodCall" flags="nn" index="3zqWPK" />
+    </language>
     <language id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor">
       <concept id="1071666914219" name="jetbrains.mps.lang.editor.structure.ConceptEditorDeclaration" flags="ig" index="24kQdi" />
       <concept id="1140524381322" name="jetbrains.mps.lang.editor.structure.CellModel_ListWithRole" flags="ng" index="2czfm3">
@@ -393,7 +396,6 @@
       <concept id="1177026924588" name="jetbrains.mps.lang.smodel.structure.RefConcept_Reference" flags="nn" index="chp4Y">
         <reference id="1177026940964" name="conceptDeclaration" index="cht4Q" />
       </concept>
-      <concept id="1179409122411" name="jetbrains.mps.lang.smodel.structure.Node_ConceptMethodCall" flags="nn" index="2qgKlT" />
       <concept id="2396822768958367367" name="jetbrains.mps.lang.smodel.structure.AbstractTypeCastExpression" flags="nn" index="$5XWr">
         <child id="6733348108486823193" name="leftExpression" index="1m5AlR" />
         <child id="3906496115198199033" name="conceptArgument" index="3oSUPX" />
@@ -1743,15 +1745,15 @@
                                     <node concept="37vLTw" id="2nByCcxyQw2" role="2Oq$k0">
                                       <ref role="3cqZAo" node="4z0AnX8178A" resolve="it" />
                                     </node>
-                                    <node concept="2qgKlT" id="2nByCcxyRtj" role="2OqNvi">
+                                    <node concept="3zqWPK" id="5DJjBfj0bCh" role="2OqNvi">
                                       <ref role="37wK5l" to="b4m9:5Q9FzcI4YUK" resolve="connectsToOutsidePort" />
-                                      <node concept="1PxgMI" id="2nByCcxyT_O" role="37wK5m">
-                                        <node concept="chp4Y" id="2nByCcxyTA8" role="3oSUPX">
+                                      <node concept="1PxgMI" id="5DJjBfj0bCj" role="37wK5m">
+                                        <node concept="chp4Y" id="5DJjBfj0bCk" role="3oSUPX">
                                           <ref role="cht4Q" to="gx5r:4YhD5cZsmEb" resolve="Port" />
                                         </node>
-                                        <node concept="2OqwBi" id="2nByCcxySg4" role="1m5AlR">
-                                          <node concept="S62o3" id="2nByCcxyRVu" role="2Oq$k0" />
-                                          <node concept="liA8E" id="2nByCcxySXN" role="2OqNvi">
+                                        <node concept="2OqwBi" id="5DJjBfj0bCl" role="1m5AlR">
+                                          <node concept="S62o3" id="5DJjBfj0bCm" role="2Oq$k0" />
+                                          <node concept="liA8E" id="5DJjBfj0bCn" role="2OqNvi">
                                             <ref role="37wK5l" to="nkm5:6clvLV1Yg6Z" resolve="getSNode" />
                                           </node>
                                         </node>
@@ -1890,12 +1892,12 @@
                                     <node concept="37vLTw" id="2nByCcxzlYB" role="2Oq$k0">
                                       <ref role="3cqZAo" node="4z0AnX8178E" resolve="it" />
                                     </node>
-                                    <node concept="2qgKlT" id="2nByCcxzlYC" role="2OqNvi">
+                                    <node concept="3zqWPK" id="5DJjBfj0bCo" role="2OqNvi">
                                       <ref role="37wK5l" to="b4m9:5Q9FzcI6bZ6" resolve="connectsToInsideInPort" />
-                                      <node concept="37vLTw" id="2nByCcxzlYD" role="37wK5m">
+                                      <node concept="37vLTw" id="5DJjBfj0bCq" role="37wK5m">
                                         <ref role="3cqZAo" node="3_milxHOFol" resolve="inst" />
                                       </node>
-                                      <node concept="37vLTw" id="2nByCcxzlYE" role="37wK5m">
+                                      <node concept="37vLTw" id="5DJjBfj0bCr" role="37wK5m">
                                         <ref role="3cqZAo" node="2nByCcxzicp" resolve="inport" />
                                       </node>
                                     </node>
@@ -1949,7 +1951,7 @@
                     <node concept="3SuZgF" id="4qjJWfVrQTm" role="2Oq$k0" />
                     <node concept="2Rxl7S" id="4qjJWfVurwX" role="2OqNvi" />
                   </node>
-                  <node concept="2qgKlT" id="4qjJWfVutLH" role="2OqNvi">
+                  <node concept="3zqWPK" id="5DJjBfj0bCs" role="2OqNvi">
                     <ref role="37wK5l" to="tpcu:hEwIMiw" resolve="getPresentation" />
                   </node>
                 </node>
@@ -2201,9 +2203,9 @@
                           <node concept="37vLTw" id="30L$xlcesJg" role="2Oq$k0">
                             <ref role="3cqZAo" node="4z0AnX8178G" resolve="it" />
                           </node>
-                          <node concept="2qgKlT" id="30L$xlcet9v" role="2OqNvi">
+                          <node concept="3zqWPK" id="5DJjBfj0bCu" role="2OqNvi">
                             <ref role="37wK5l" to="b4m9:30L$xlcejQ2" resolve="connectsToInstance" />
-                            <node concept="1Pxb5l" id="30L$xlcetie" role="37wK5m" />
+                            <node concept="1Pxb5l" id="5DJjBfj0bCw" role="37wK5m" />
                           </node>
                         </node>
                       </node>

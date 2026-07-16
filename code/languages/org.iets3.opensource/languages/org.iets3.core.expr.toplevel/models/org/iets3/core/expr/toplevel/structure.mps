@@ -2,7 +2,7 @@
 <model ref="r:da65683e-ff6f-430d-ab68-32a77df72c93(org.iets3.core.expr.toplevel.structure)">
   <persistence version="9" />
   <languages>
-    <use id="982eb8df-2c96-4bd7-9963-11712ea622e5" name="jetbrains.mps.lang.resources" version="3" />
+    <use id="982eb8df-2c96-4bd7-9963-11712ea622e5" name="jetbrains.mps.lang.resources" version="4" />
     <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="-1" />
     <devkit ref="78434eb8-b0e5-444b-850d-e7c4ad2da9ab(jetbrains.mps.devkit.aspect.structure)" />
   </languages>
@@ -1319,15 +1319,6 @@
     <property role="34LRSv" value="by literal" />
     <ref role="1TJDcQ" node="wlV$3kt3Ry" resolve="AbstractEnumSortOrder" />
   </node>
-  <node concept="1TIwiD" id="3WZ76l1FQSK">
-    <property role="TrG5h" value="EnumIsNotTarget" />
-    <property role="34LRSv" value="isNot" />
-    <property role="R4oN_" value="check the enumeration literal is NOT equal to another literal" />
-    <property role="3GE5qa" value="enum" />
-    <property role="EcuMT" value="4557392569141521968" />
-    <property role="2eQzMB" value="71934284-d7d1-45ee-a054-8c072591085f" />
-    <ref role="1TJDcQ" node="3fg81r5z3u3" resolve="AbstractEnumSingleInTarget" />
-  </node>
   <node concept="1TIwiD" id="6NLFGgDxmkC">
     <property role="TrG5h" value="EnumIsNotInTarget" />
     <property role="34LRSv" value="isNotIn" />
@@ -1353,6 +1344,15 @@
       <property role="20lbJX" value="fLJekj6/_1__n" />
       <ref role="20lvS9" node="6WstIz8MKZd" resolve="EnumIsInSelector" />
     </node>
+  </node>
+  <node concept="1TIwiD" id="3WZ76l1FQSK">
+    <property role="TrG5h" value="EnumIsNotTarget" />
+    <property role="34LRSv" value="isNot" />
+    <property role="R4oN_" value="check the enumeration literal is NOT equal to another literal" />
+    <property role="3GE5qa" value="enum" />
+    <property role="EcuMT" value="4557392569141521968" />
+    <property role="2eQzMB" value="71934284-d7d1-45ee-a054-8c072591085f" />
+    <ref role="1TJDcQ" node="3fg81r5z3u3" resolve="AbstractEnumSingleInTarget" />
   </node>
   <node concept="1TIwiD" id="3fg81r5z3u3">
     <property role="EcuMT" value="3733519373265811331" />

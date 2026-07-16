@@ -8,14 +8,12 @@ import org.jetbrains.mps.openapi.language.SAbstractConcept;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import java.util.List;
 import java.util.Arrays;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.mps.openapi.model.SNode;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations;
-import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 import org.jetbrains.mps.openapi.language.SProperty;
@@ -24,15 +22,13 @@ public final class NumberPrecSpec__BehaviorDescriptor extends BaseBHDescriptor {
   private static final Logger LOG = Logger.getLogger(NumberPrecSpec__BehaviorDescriptor.class);
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getConcept(0x6b277d9ad52d416fL, 0xa2091919bd737f50L, 0x127541598201af7cL, "org.iets3.core.expr.simpleTypes.structure.NumberPrecSpec");
 
-  public static final SMethod<Void> setPrecision_id7Wa2sv3EZOu = new SMethodBuilder<Void>(new SJavaCompoundTypeImpl(Void.class)).name("setPrecision").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(9154139946169924894L).languageId(0xa2091919bd737f50L, 0x6b277d9ad52d416fL).build2(SMethodBuilder.createJavaParameter(Integer.TYPE, ""));
-  public static final SMethod<Void> setInfinitePrecision_id7Wa2sv3F28v = new SMethodBuilder<Void>(new SJavaCompoundTypeImpl(Void.class)).name("setInfinitePrecision").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(9154139946169934367L).languageId(0xa2091919bd737f50L, 0x6b277d9ad52d416fL).build2();
-  public static final SMethod<Boolean> isInfinitePrecision_id7Wa2sv3F32k = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("isInfinitePrecision").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(9154139946169938068L).languageId(0xa2091919bd737f50L, 0x6b277d9ad52d416fL).build2();
-  public static final SMethod<Integer> getPrecision_id7Wa2sv3F4CL = new SMethodBuilder<Integer>(new SJavaCompoundTypeImpl(Integer.TYPE)).name("getPrecision").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(9154139946169944625L).languageId(0xa2091919bd737f50L, 0x6b277d9ad52d416fL).build2();
+  public static final SMethod<Void> setPrecision_id7Wa2sv3EZOu = new SMethodBuilder<>(Void.TYPE).name("setPrecision").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(9154139946169924894L).languageId(0xa2091919bd737f50L, 0x6b277d9ad52d416fL).build2(SMethodBuilder.createJavaParameter(Integer.TYPE, "p"));
+  public static final SMethod<Void> setInfinitePrecision_id7Wa2sv3F28v = new SMethodBuilder<>(Void.TYPE).name("setInfinitePrecision").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(9154139946169934367L).languageId(0xa2091919bd737f50L, 0x6b277d9ad52d416fL).build2();
+  public static final SMethod<Boolean> isInfinitePrecision_id7Wa2sv3F32k = new SMethodBuilder<>(Boolean.TYPE).name("isInfinitePrecision").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(9154139946169938068L).languageId(0xa2091919bd737f50L, 0x6b277d9ad52d416fL).build2();
+  public static final SMethod<Integer> getPrecision_id7Wa2sv3F4CL = new SMethodBuilder<>(Integer.TYPE).name("getPrecision").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(9154139946169944625L).languageId(0xa2091919bd737f50L, 0x6b277d9ad52d416fL).build2();
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(setPrecision_id7Wa2sv3EZOu, setInfinitePrecision_id7Wa2sv3F28v, isInfinitePrecision_id7Wa2sv3F32k, getPrecision_id7Wa2sv3F4CL);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(setPrecision_id7Wa2sv3EZOu, setInfinitePrecision_id7Wa2sv3F28v, isInfinitePrecision_id7Wa2sv3F32k, getPrecision_id7Wa2sv3F4CL);
 
-  private static void ___init___(@NotNull SNode __thisNode__) {
-  }
 
   /*package*/ static void setPrecision_id7Wa2sv3EZOu(@NotNull SNode __thisNode__, int p) {
     if (p < 0) {
@@ -62,10 +58,6 @@ public final class NumberPrecSpec__BehaviorDescriptor extends BaseBHDescriptor {
   /*package*/ NumberPrecSpec__BehaviorDescriptor() {
   }
 
-  @Override
-  protected void initNode(@NotNull SNode node, @NotNull SConstructor constructor, @Nullable Object[] parameters) {
-    ___init___(node);
-  }
 
   @Override
   protected <T> T invokeSpecial0(@NotNull SNode node, @NotNull SMethod<T> method, @Nullable Object[] parameters) {

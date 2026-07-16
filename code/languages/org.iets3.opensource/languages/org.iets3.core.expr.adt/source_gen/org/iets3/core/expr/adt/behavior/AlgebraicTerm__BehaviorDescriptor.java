@@ -7,7 +7,6 @@ import org.jetbrains.mps.openapi.language.SAbstractConcept;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import org.jetbrains.mps.openapi.model.SNode;
 import java.util.List;
@@ -18,7 +17,6 @@ import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
 import jetbrains.mps.internal.collections.runtime.ListSequence;
 import jetbrains.mps.lang.core.behavior.BaseConcept__BehaviorDescriptor;
 import org.iets3.core.expr.base.behavior.Expression__BehaviorDescriptor;
-import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 import org.jetbrains.mps.openapi.language.SConcept;
@@ -27,17 +25,15 @@ import org.jetbrains.mps.openapi.language.SContainmentLink;
 public final class AlgebraicTerm__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getConcept(0x5fe6cb132fbd4e21L, 0x9842785bdd6fc5b1L, 0x52a5783d22cb8ce4L, "org.iets3.core.expr.adt.structure.AlgebraicTerm");
 
-  public static final SMethod<Boolean> isInPattern_id5a_u3OySVA8 = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("isInPattern").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5955298286241036680L).languageId(0x9842785bdd6fc5b1L, 0x5fe6cb132fbd4e21L).build2();
-  public static final SMethod<Boolean> isInstanceOf_id5a_u3OzQhMJ = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("isInstanceOf").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5955298286257118383L).languageId(0x9842785bdd6fc5b1L, 0x5fe6cb132fbd4e21L).build2(SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""));
-  public static final SMethod<String> path_id7aipPVpEyBV = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("path").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(8255774723999934971L).languageId(0x9842785bdd6fc5b1L, 0x5fe6cb132fbd4e21L).build2();
-  public static final SMethod<String> renderReadable_id4Y0vh0cfqjE = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("renderReadable").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5728716233893586154L).languageId(0xb66a309a6e1a7290L, 0xcfaa4966b7d54b69L).build2();
-  public static final SMethod<Boolean> isComplex_id28$LOSBs7q5 = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("isComplex").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(2460310434934191749L).languageId(0x9842785bdd6fc5b1L, 0x5fe6cb132fbd4e21L).build2();
-  public static final SMethod<Boolean> hasChildTerm_id28$LOSBsnfX = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("hasChildTerm").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(2460310434934256637L).languageId(0x9842785bdd6fc5b1L, 0x5fe6cb132fbd4e21L).build2();
+  public static final SMethod<Boolean> isInPattern_id5a_u3OySVA8 = new SMethodBuilder<>(Boolean.TYPE).name("isInPattern").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5955298286241036680L).languageId(0x9842785bdd6fc5b1L, 0x5fe6cb132fbd4e21L).build2();
+  public static final SMethod<Boolean> isInstanceOf_id5a_u3OzQhMJ = new SMethodBuilder<>(Boolean.TYPE).name("isInstanceOf").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5955298286257118383L).languageId(0x9842785bdd6fc5b1L, 0x5fe6cb132fbd4e21L).build2(SMethodBuilder.createJavaParameter(SNode.class, "constructor"));
+  public static final SMethod<String> path_id7aipPVpEyBV = new SMethodBuilder<>(String.class).name("path").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(8255774723999934971L).languageId(0x9842785bdd6fc5b1L, 0x5fe6cb132fbd4e21L).build2();
+  public static final SMethod<String> renderReadable_id4Y0vh0cfqjE = new SMethodBuilder<>(String.class).name("renderReadable").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5728716233893586154L).languageId(0xb66a309a6e1a7290L, 0xcfaa4966b7d54b69L).build2();
+  public static final SMethod<Boolean> isComplex_id28$LOSBs7q5 = new SMethodBuilder<>(Boolean.TYPE).name("isComplex").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(2460310434934191749L).languageId(0x9842785bdd6fc5b1L, 0x5fe6cb132fbd4e21L).build2();
+  public static final SMethod<Boolean> hasChildTerm_id28$LOSBsnfX = new SMethodBuilder<>(Boolean.TYPE).name("hasChildTerm").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(2460310434934256637L).languageId(0x9842785bdd6fc5b1L, 0x5fe6cb132fbd4e21L).build2();
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(isInPattern_id5a_u3OySVA8, isInstanceOf_id5a_u3OzQhMJ, path_id7aipPVpEyBV, renderReadable_id4Y0vh0cfqjE, isComplex_id28$LOSBs7q5, hasChildTerm_id28$LOSBsnfX);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(isInPattern_id5a_u3OySVA8, isInstanceOf_id5a_u3OzQhMJ, path_id7aipPVpEyBV, renderReadable_id4Y0vh0cfqjE, isComplex_id28$LOSBs7q5, hasChildTerm_id28$LOSBsnfX);
 
-  private static void ___init___(@NotNull SNode __thisNode__) {
-  }
 
   /*package*/ static boolean isInPattern_id5a_u3OySVA8(@NotNull SNode __thisNode__) {
     return (SNodeOperations.getNodeAncestor(__thisNode__, CONCEPTS.MatchCase$iO, false, false) != null);
@@ -69,10 +65,6 @@ public final class AlgebraicTerm__BehaviorDescriptor extends BaseBHDescriptor {
   /*package*/ AlgebraicTerm__BehaviorDescriptor() {
   }
 
-  @Override
-  protected void initNode(@NotNull SNode node, @NotNull SConstructor constructor, @Nullable Object[] parameters) {
-    ___init___(node);
-  }
 
   @Override
   protected <T> T invokeSpecial0(@NotNull SNode node, @NotNull SMethod<T> method, @Nullable Object[] parameters) {

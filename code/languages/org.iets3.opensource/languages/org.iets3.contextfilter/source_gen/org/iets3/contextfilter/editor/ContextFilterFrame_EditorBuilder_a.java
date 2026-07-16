@@ -142,7 +142,7 @@ import org.jetbrains.mps.openapi.language.SConcept;
     Style style = new StyleImpl();
     style.set(StyleAttributes.SELECTABLE, false);
     editorCell.getStyle().putAll(style);
-    editorCell.addEditorCell(createFrameCell_3());
+    editorCell.addEditorCell(createFrameCell_1());
     return editorCell;
   }
   private EditorCell createAttributedNodeCell_0() {
@@ -150,8 +150,8 @@ import org.jetbrains.mps.openapi.language.SConcept;
     EditorCell editorCell = getUpdateSession().getAttributedCell(AttributeKind.NODE, myNode);
     return editorCell;
   }
-  private EditorCell createFrameCell_0(final EditorContext editorContext, final SNode node) {
-    FrameCell editorCell = new FrameCell(editorContext, node);
+  private EditorCell createFrameCell_0() {
+    FrameCell editorCell = new FrameCell(getEditorContext(), getNode());
     editorCell.setCellId("FrameCell_nvkowj_a0b0");
     Style style = new StyleImpl();
     new ContextFrameInnerStyleClass(this).apply(style, editorCell);
@@ -160,19 +160,13 @@ import org.jetbrains.mps.openapi.language.SConcept;
     return editorCell;
   }
   private EditorCell createFrameCell_1() {
-    return createFrameCell_0(getEditorContext(), myNode);
-  }
-  private EditorCell createFrameCell_2(final EditorContext editorContext, final SNode node) {
-    FrameCell editorCell = new FrameCell(editorContext, node);
+    FrameCell editorCell = new FrameCell(getEditorContext(), getNode());
     editorCell.setCellId("FrameCell_nvkowj_a1a");
     Style style = new StyleImpl();
     new ContextFrameStyleClass(this).apply(style, editorCell);
     editorCell.getStyle().putAll(style);
-    editorCell.addEditorCell(createFrameCell_1());
+    editorCell.addEditorCell(createFrameCell_0());
     return editorCell;
-  }
-  private EditorCell createFrameCell_3() {
-    return createFrameCell_2(getEditorContext(), myNode);
   }
 
   private static final class LINKS {

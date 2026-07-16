@@ -7,7 +7,6 @@ import org.jetbrains.mps.openapi.language.SAbstractConcept;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import java.awt.Color;
 import org.jetbrains.mps.openapi.model.SNode;
@@ -17,7 +16,6 @@ import org.jetbrains.annotations.NotNull;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SConceptOperations;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
 import jetbrains.mps.lang.core.behavior.BaseConcept__BehaviorDescriptor;
-import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 import org.jetbrains.mps.openapi.language.SInterfaceConcept;
@@ -25,17 +23,15 @@ import org.jetbrains.mps.openapi.language.SInterfaceConcept;
 public final class IAttribute__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getInterfaceConcept(0x583939beded04735L, 0xa055a74f8477fc34L, 0x3ce7d489744328bbL, "org.iets3.core.attributes.structure.IAttribute");
 
-  public static final SMethod<String> summaryString_id4A8SzOVam5y = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("summaryString").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5298733714214838626L).languageId(0xa055a74f8477fc34L, 0x583939beded04735L).build2();
-  public static final SMethod<Color> summaryColor_id4A8SzOVam5R = new SMethodBuilder<Color>(new SJavaCompoundTypeImpl(Color.class)).name("summaryColor").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5298733714214838647L).languageId(0xa055a74f8477fc34L, 0x583939beded04735L).build2();
-  public static final SMethod<String> label_id1HqphBIQCVt = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("label").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(1970998948983901917L).languageId(0xa055a74f8477fc34L, 0x583939beded04735L).build2();
-  public static final SMethod<String> qualifiedPresentation_id1HqphBJ7K9P = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("qualifiedPresentation").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(1970998948988387957L).languageId(0xa055a74f8477fc34L, 0x583939beded04735L).build2();
-  public static final SMethod<Boolean> isMainAttribute_id5ZBgTg_IANQ = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("isMainAttribute").modifiers(9, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(6910566456790510838L).languageId(0xa055a74f8477fc34L, 0x583939beded04735L).build2();
-  public static final SMethod<SNode> context_id4fgA7QrBIoA = new SMethodBuilder<SNode>(new SJavaCompoundTypeImpl((Class<SNode>) ((Class) Object.class))).name("context").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(4886573260946204198L).languageId(0xa055a74f8477fc34L, 0x583939beded04735L).build2();
+  public static final SMethod<String> summaryString_id4A8SzOVam5y = new SMethodBuilder<>(String.class).name("summaryString").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5298733714214838626L).languageId(0xa055a74f8477fc34L, 0x583939beded04735L).build2();
+  public static final SMethod<Color> summaryColor_id4A8SzOVam5R = new SMethodBuilder<>(Color.class).name("summaryColor").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5298733714214838647L).languageId(0xa055a74f8477fc34L, 0x583939beded04735L).build2();
+  public static final SMethod<String> label_id1HqphBIQCVt = new SMethodBuilder<>(String.class).name("label").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(1970998948983901917L).languageId(0xa055a74f8477fc34L, 0x583939beded04735L).build2();
+  public static final SMethod<String> qualifiedPresentation_id1HqphBJ7K9P = new SMethodBuilder<>(String.class).name("qualifiedPresentation").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(1970998948988387957L).languageId(0xa055a74f8477fc34L, 0x583939beded04735L).build2();
+  public static final SMethod<Boolean> isMainAttribute_id5ZBgTg_IANQ = new SMethodBuilder<>(Boolean.TYPE).name("isMainAttribute").modifiers(9, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(6910566456790510838L).languageId(0xa055a74f8477fc34L, 0x583939beded04735L).build2();
+  public static final SMethod<SNode> context_id4fgA7QrBIoA = new SMethodBuilder<>(SNode.class).name("context").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(4886573260946204198L).languageId(0xa055a74f8477fc34L, 0x583939beded04735L).build2();
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(summaryString_id4A8SzOVam5y, summaryColor_id4A8SzOVam5R, label_id1HqphBIQCVt, qualifiedPresentation_id1HqphBJ7K9P, isMainAttribute_id5ZBgTg_IANQ, context_id4fgA7QrBIoA);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(summaryString_id4A8SzOVam5y, summaryColor_id4A8SzOVam5R, label_id1HqphBIQCVt, qualifiedPresentation_id1HqphBJ7K9P, isMainAttribute_id5ZBgTg_IANQ, context_id4fgA7QrBIoA);
 
-  private static void ___init___(@NotNull SNode __thisNode__) {
-  }
 
   /*package*/ static String summaryString_id4A8SzOVam5y(@NotNull SNode __thisNode__) {
     return null;
@@ -59,10 +55,6 @@ public final class IAttribute__BehaviorDescriptor extends BaseBHDescriptor {
   /*package*/ IAttribute__BehaviorDescriptor() {
   }
 
-  @Override
-  protected void initNode(@NotNull SNode node, @NotNull SConstructor constructor, @Nullable Object[] parameters) {
-    ___init___(node);
-  }
 
   @Override
   protected <T> T invokeSpecial0(@NotNull SNode node, @NotNull SMethod<T> method, @Nullable Object[] parameters) {

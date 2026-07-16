@@ -7,26 +7,22 @@ import org.jetbrains.mps.openapi.language.SAbstractConcept;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import org.jetbrains.mps.openapi.model.SNode;
 import java.util.List;
 import java.util.Arrays;
 import org.jetbrains.annotations.NotNull;
-import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 
 public final class EmptyProducer__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getConcept(0xd441fba0f46b43cdL, 0xb723dad7b65da615L, 0x12e0beaa8fa850b0L, "org.iets3.core.expr.tests.structure.EmptyProducer");
 
-  public static final SMethod<Void> populate_id1bwJEEfG$x9 = new SMethodBuilder<Void>(new SJavaCompoundTypeImpl(Void.class)).name("populate").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(1360296727230433353L).languageId(0xb723dad7b65da615L, 0xd441fba0f46b43cdL).build2();
-  public static final SMethod<Boolean> supportsType_id1bwJEEfKt$D = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("supportsType").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(1360296727231453481L).languageId(0xb723dad7b65da615L, 0xd441fba0f46b43cdL).build2(SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""));
+  public static final SMethod<Void> populate_id1bwJEEfG$x9 = new SMethodBuilder<>(Void.TYPE).name("populate").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(1360296727230433353L).languageId(0xb723dad7b65da615L, 0xd441fba0f46b43cdL).build2();
+  public static final SMethod<Boolean> supportsType_id1bwJEEfKt$D = new SMethodBuilder<>(Boolean.TYPE).name("supportsType").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(1360296727231453481L).languageId(0xb723dad7b65da615L, 0xd441fba0f46b43cdL).build2(SMethodBuilder.createJavaParameter(SNode.class, "type"));
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(populate_id1bwJEEfG$x9, supportsType_id1bwJEEfKt$D);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(populate_id1bwJEEfG$x9, supportsType_id1bwJEEfKt$D);
 
-  private static void ___init___(@NotNull SNode __thisNode__) {
-  }
 
   /*package*/ static void populate_id1bwJEEfG$x9(@NotNull SNode __thisNode__) {
   }
@@ -37,10 +33,6 @@ public final class EmptyProducer__BehaviorDescriptor extends BaseBHDescriptor {
   /*package*/ EmptyProducer__BehaviorDescriptor() {
   }
 
-  @Override
-  protected void initNode(@NotNull SNode node, @NotNull SConstructor constructor, @Nullable Object[] parameters) {
-    ___init___(node);
-  }
 
   @Override
   protected <T> T invokeSpecial0(@NotNull SNode node, @NotNull SMethod<T> method, @Nullable Object[] parameters) {

@@ -555,26 +555,23 @@
       <node id="3795092733478823829" at="21,50,22,43" concept="7" />
       <node id="3795092733478823829" at="24,68,25,102" concept="7" />
       <node id="3795092733478823829" at="27,27,28,17" concept="7" />
-      <node id="3795092733478823829" at="30,39,31,16" concept="7" />
-      <node id="3795092733478823906" at="33,54,34,69" concept="6" />
-      <node id="3795092733478823906" at="34,69,35,26" concept="7" />
-      <node id="3795092733478823829" at="39,0,40,0" concept="9" trace="ArtificialClockType$VQ" />
-      <node id="3795092733478823829" at="40,0,41,0" concept="9" trace="ClockType$2F" />
+      <node id="3795092733478823906" at="30,54,31,69" concept="6" />
+      <node id="3795092733478823906" at="31,69,32,26" concept="7" />
+      <node id="3795092733478823829" at="36,0,37,0" concept="9" trace="ArtificialClockType$VQ" />
+      <node id="3795092733478823829" at="37,0,38,0" concept="9" trace="ClockType$2F" />
       <node id="3795092733478823829" at="16,0,18,0" concept="1" trace="supertypeOf_ArtificialClockType_SubtypingRule#()V" />
       <node id="3795092733478823829" at="18,0,21,0" concept="5" trace="getSubOrSuperType#(Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/typesystem/inference/TypeCheckingContext;Ljetbrains/mps/lang/typesystem/runtime/IsApplicableStatus;)Lorg/jetbrains/mps/openapi/model/SNode;" />
       <node id="3795092733478823829" at="21,0,24,0" concept="5" trace="getApplicableConcept#()Lorg/jetbrains/mps/openapi/language/SAbstractConcept;" />
       <node id="3795092733478823829" at="24,0,27,0" concept="5" trace="isApplicableAndPattern#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljetbrains/mps/lang/typesystem/runtime/IsApplicableStatus;" />
       <node id="3795092733478823829" at="27,0,30,0" concept="5" trace="isWeak#()Z" />
-      <node id="3795092733478823829" at="30,0,33,0" concept="5" trace="surelyKeepsConcept#()Z" />
-      <node id="3795092733478823906" at="33,0,37,0" concept="10" trace="createClockType_wdvmsn_a0a1#()Lorg/jetbrains/mps/openapi/model/SNode;" />
+      <node id="3795092733478823906" at="30,0,34,0" concept="10" trace="createClockType_wdvmsn_a0a1#()Lorg/jetbrains/mps/openapi/model/SNode;" />
       <scope id="3795092733478823829" at="16,58,16,58" />
       <scope id="3795092733478823830" at="18,113,19,41" />
       <scope id="3795092733478823829" at="21,50,22,43" />
       <scope id="3795092733478823829" at="24,68,25,102" />
       <scope id="3795092733478823829" at="27,27,28,17" />
-      <scope id="3795092733478823829" at="30,39,31,16" />
       <scope id="3795092733478823829" at="16,0,18,0" />
-      <scope id="3795092733478823906" at="33,54,35,26">
+      <scope id="3795092733478823906" at="30,54,32,26">
         <var name="n0" id="3795092733478823906" />
       </scope>
       <scope id="3795092733478823829" at="18,0,21,0">
@@ -587,10 +584,9 @@
         <var name="argument" id="3795092733478823829" />
       </scope>
       <scope id="3795092733478823829" at="27,0,30,0" />
-      <scope id="3795092733478823829" at="30,0,33,0" />
-      <scope id="3795092733478823906" at="33,0,37,0" />
-      <unit id="3795092733478823829" at="38,0,42,0" name="org.iets3.core.expr.mutable.typesystem.supertypeOf_ArtificialClockType_SubtypingRule$CONCEPTS" />
-      <unit id="3795092733478823829" at="15,0,43,0" name="org.iets3.core.expr.mutable.typesystem.supertypeOf_ArtificialClockType_SubtypingRule" />
+      <scope id="3795092733478823906" at="30,0,34,0" />
+      <unit id="3795092733478823829" at="35,0,39,0" name="org.iets3.core.expr.mutable.typesystem.supertypeOf_ArtificialClockType_SubtypingRule$CONCEPTS" />
+      <unit id="3795092733478823829" at="15,0,40,0" name="org.iets3.core.expr.mutable.typesystem.supertypeOf_ArtificialClockType_SubtypingRule" />
     </file>
   </root>
   <root nodeRef="r:a71eb8ca-1a88-4b3c-85ef-63f23e5a12e0(org.iets3.core.expr.mutable.typesystem)/3795092733478824324">

@@ -7,7 +7,6 @@ import org.jetbrains.mps.openapi.language.SAbstractConcept;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import org.jetbrains.mps.openapi.model.SNode;
 import org.iets3.core.expr.base.plugin.EffectDescriptor;
@@ -25,7 +24,6 @@ import jetbrains.mps.internal.collections.runtime.SetSequence;
 import java.util.HashSet;
 import java.util.Objects;
 import jetbrains.mps.internal.collections.runtime.Sequence;
-import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 import org.jetbrains.mps.openapi.language.SContainmentLink;
@@ -34,17 +32,15 @@ import org.jetbrains.mps.openapi.language.SProperty;
 public final class IMetaFunctionContext__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getInterfaceConcept(0x711a16d799e84e1dL, 0xb20c99c0b7309cd8L, 0x53300f6d0c25a72bL, "org.iets3.core.expr.metafunction.structure.IMetaFunctionContext");
 
-  public static final SMethod<Boolean> functionIsMandatory_id5cK3QOcGp_H = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("functionIsMandatory").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5994308065068947821L).languageId(0xb20c99c0b7309cd8L, 0x711a16d799e84e1dL).build2();
-  public static final SMethod<SNode> createMetaFunction_id5cK3QOc9qti = new SMethodBuilder<SNode>(new SJavaCompoundTypeImpl((Class<SNode>) ((Class) Object.class))).name("createMetaFunction").modifiers(12, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5994308065059776338L).languageId(0xb20c99c0b7309cd8L, 0x711a16d799e84e1dL).build2();
-  public static final SMethod<Boolean> isActualFunctionValid_id5cK3QOcKo8v = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("isActualFunctionValid").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5994308065069990431L).languageId(0xb20c99c0b7309cd8L, 0x711a16d799e84e1dL).build2();
-  public static final SMethod<SNode> createNew_id6dpaV_AQiiy = new SMethodBuilder<SNode>(new SJavaCompoundTypeImpl((Class<SNode>) ((Class) Object.class))).name("createNew").modifiers(8, AccessPrivileges.PROTECTED).concept(CONCEPT).baseMethodId(7158801157976564898L).languageId(0xb20c99c0b7309cd8L, 0x711a16d799e84e1dL).build2(SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""), SMethodBuilder.createJavaParameter(String.class, ""));
-  public static final SMethod<SNode> createNew_id3iESbJsmKkH = new SMethodBuilder<SNode>(new SJavaCompoundTypeImpl((Class<SNode>) ((Class) Object.class))).name("createNew").modifiers(0, AccessPrivileges.PROTECTED).concept(CONCEPT).baseMethodId(3795092733473522989L).languageId(0xb20c99c0b7309cd8L, 0x711a16d799e84e1dL).build2(SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""), SMethodBuilder.createJavaParameter(String.class, ""), SMethodBuilder.createJavaParameter(EffectDescriptor.class, ""));
-  public static final SMethod<Void> syncNewMetaFunction_id68784T_q0lN = new SMethodBuilder<Void>(new SJavaCompoundTypeImpl(Void.class)).name("syncNewMetaFunction").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(7063650061634766195L).languageId(0xb20c99c0b7309cd8L, 0x711a16d799e84e1dL).build2(SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""), SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""));
+  public static final SMethod<Boolean> functionIsMandatory_id5cK3QOcGp_H = new SMethodBuilder<>(Boolean.TYPE).name("functionIsMandatory").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5994308065068947821L).languageId(0xb20c99c0b7309cd8L, 0x711a16d799e84e1dL).build2();
+  public static final SMethod<SNode> createMetaFunction_id5cK3QOc9qti = new SMethodBuilder<>(SNode.class).name("createMetaFunction").modifiers(12, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5994308065059776338L).languageId(0xb20c99c0b7309cd8L, 0x711a16d799e84e1dL).build2();
+  public static final SMethod<Boolean> isActualFunctionValid_id5cK3QOcKo8v = new SMethodBuilder<>(Boolean.TYPE).name("isActualFunctionValid").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5994308065069990431L).languageId(0xb20c99c0b7309cd8L, 0x711a16d799e84e1dL).build2();
+  public static final SMethod<SNode> createNew_id6dpaV_AQiiy = new SMethodBuilder<>(SNode.class).name("createNew").modifiers(8, AccessPrivileges.PROTECTED).concept(CONCEPT).baseMethodId(7158801157976564898L).languageId(0xb20c99c0b7309cd8L, 0x711a16d799e84e1dL).build2(SMethodBuilder.createJavaParameter(SNode.class, "tp"), SMethodBuilder.createJavaParameter(String.class, "description"));
+  public static final SMethod<SNode> createNew_id3iESbJsmKkH = new SMethodBuilder<>(SNode.class).name("createNew").modifiers(0, AccessPrivileges.PROTECTED).concept(CONCEPT).baseMethodId(3795092733473522989L).languageId(0xb20c99c0b7309cd8L, 0x711a16d799e84e1dL).build2(SMethodBuilder.createJavaParameter(SNode.class, "tp"), SMethodBuilder.createJavaParameter(String.class, "description"), SMethodBuilder.createJavaParameter(EffectDescriptor.class, "effect"));
+  public static final SMethod<Void> syncNewMetaFunction_id68784T_q0lN = new SMethodBuilder<>(Void.TYPE).name("syncNewMetaFunction").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(7063650061634766195L).languageId(0xb20c99c0b7309cd8L, 0x711a16d799e84e1dL).build2(SMethodBuilder.createJavaParameter(SNode.class, "existingF"), SMethodBuilder.createJavaParameter(SNode.class, "newF"));
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(functionIsMandatory_id5cK3QOcGp_H, createMetaFunction_id5cK3QOc9qti, isActualFunctionValid_id5cK3QOcKo8v, createNew_id6dpaV_AQiiy, createNew_id3iESbJsmKkH, syncNewMetaFunction_id68784T_q0lN);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(functionIsMandatory_id5cK3QOcGp_H, createMetaFunction_id5cK3QOc9qti, isActualFunctionValid_id5cK3QOcKo8v, createNew_id6dpaV_AQiiy, createNew_id3iESbJsmKkH, syncNewMetaFunction_id68784T_q0lN);
 
-  private static void ___init___(@NotNull SNode __thisNode__) {
-  }
 
   /*package*/ static boolean functionIsMandatory_id5cK3QOcGp_H(@NotNull SNode __thisNode__) {
     return true;
@@ -137,10 +133,6 @@ public final class IMetaFunctionContext__BehaviorDescriptor extends BaseBHDescri
   /*package*/ IMetaFunctionContext__BehaviorDescriptor() {
   }
 
-  @Override
-  protected void initNode(@NotNull SNode node, @NotNull SConstructor constructor, @Nullable Object[] parameters) {
-    ___init___(node);
-  }
 
   @Override
   protected <T> T invokeSpecial0(@NotNull SNode node, @NotNull SMethod<T> method, @Nullable Object[] parameters) {

@@ -8,7 +8,6 @@ import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import org.jetbrains.mps.openapi.model.SNode;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import java.util.List;
 import java.util.Arrays;
@@ -18,7 +17,6 @@ import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
 import jetbrains.mps.internal.collections.runtime.Sequence;
 import jetbrains.mps.internal.collections.runtime.ListSequence;
 import java.util.ArrayList;
-import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 import org.jetbrains.mps.openapi.language.SContainmentLink;
@@ -28,26 +26,24 @@ import org.jetbrains.mps.openapi.language.SInterfaceConcept;
 public final class State__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getConcept(0xcd87ddab6434448eL, 0xa0111e1c898de18eL, 0x7939418a3e285cd7L, "org.iets3.core.expr.statemachines.structure.State");
 
-  public static final SMethod<Iterable<SNode>> transitions_id7$TgoCYlrDb = new SMethodBuilder<Iterable<SNode>>(new SJavaCompoundTypeImpl((Class<Iterable<SNode>>) ((Class) Object.class))).name("transitions").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(8735085014268885579L).languageId(0xa0111e1c898de18eL, 0xcd87ddab6434448eL).build2();
-  public static final SMethod<Iterable<SNode>> triggeredTransitions_id7Z_fDCw7jPt = new SMethodBuilder<Iterable<SNode>>(new SJavaCompoundTypeImpl((Class<Iterable<SNode>>) ((Class) Object.class))).name("triggeredTransitions").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(9215841044168260957L).languageId(0xa0111e1c898de18eL, 0xcd87ddab6434448eL).build2();
-  public static final SMethod<Iterable<SNode>> allApplicableTriggeredTransitions_idk9boAuhUuG = new SMethodBuilder<Iterable<SNode>>(new SJavaCompoundTypeImpl((Class<Iterable<SNode>>) ((Class) Object.class))).name("allApplicableTriggeredTransitions").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(362871314069301164L).languageId(0xa0111e1c898de18eL, 0xcd87ddab6434448eL).build2();
-  public static final SMethod<Iterable<SNode>> automaticTransitions_id7Z_fDCw7kpI = new SMethodBuilder<Iterable<SNode>>(new SJavaCompoundTypeImpl((Class<Iterable<SNode>>) ((Class) Object.class))).name("automaticTransitions").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(9215841044168263278L).languageId(0xa0111e1c898de18eL, 0xcd87ddab6434448eL).build2();
-  public static final SMethod<Iterable<SNode>> entryActions_id7$TgoCYlwiZ = new SMethodBuilder<Iterable<SNode>>(new SJavaCompoundTypeImpl((Class<Iterable<SNode>>) ((Class) Object.class))).name("entryActions").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(8735085014268904639L).languageId(0xa0111e1c898de18eL, 0xcd87ddab6434448eL).build2();
-  public static final SMethod<Iterable<SNode>> exitActions_id7$TgoCYlwoK = new SMethodBuilder<Iterable<SNode>>(new SJavaCompoundTypeImpl((Class<Iterable<SNode>>) ((Class) Object.class))).name("exitActions").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(8735085014268905008L).languageId(0xa0111e1c898de18eL, 0xcd87ddab6434448eL).build2();
-  public static final SMethod<Iterable<SNode>> states_id3H4W4dizcin = new SMethodBuilder<Iterable<SNode>>(new SJavaCompoundTypeImpl((Class<Iterable<SNode>>) ((Class) Object.class))).name("states").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(4270802518592504983L).languageId(0xa0111e1c898de18eL, 0xcd87ddab6434448eL).build2();
-  public static final SMethod<Boolean> isInitial_id3H4W4dizjA7 = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("isInitial").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(4270802518592534919L).languageId(0xa0111e1c898de18eL, 0xcd87ddab6434448eL).build2();
-  public static final SMethod<Iterable<SNode>> getUniquelyNamedElements_id4qSf1u1TRfj = new SMethodBuilder<Iterable<SNode>>(new SJavaCompoundTypeImpl((Class<Iterable<SNode>>) ((Class) Object.class))).name("getUniquelyNamedElements").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5095889050031059923L).languageId(0xaa41d1b2bffa7eb1L, 0xd4280a54f6df4383L).build2();
-  public static final SMethod<SNode> leastCommonContainerWith_idk9boAtVIcE = new SMethodBuilder<SNode>(new SJavaCompoundTypeImpl((Class<SNode>) ((Class) Object.class))).name("leastCommonContainerWith").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(362871314063483690L).languageId(0xa0111e1c898de18eL, 0xcd87ddab6434448eL).build2(SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""));
-  public static final SMethod<List<SNode>> statesUpToContainer_idk9boAu1Bd0 = new SMethodBuilder<List<SNode>>(new SJavaCompoundTypeImpl((Class<List<SNode>>) ((Class) Object.class))).name("statesUpToContainer").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(362871314065027904L).languageId(0xa0111e1c898de18eL, 0xcd87ddab6434448eL).build2(SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""));
-  public static final SMethod<List<SNode>> statesDownFrom_idk9boAu6HpS = new SMethodBuilder<List<SNode>>(new SJavaCompoundTypeImpl((Class<List<SNode>>) ((Class) Object.class))).name("statesDownFrom").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(362871314066364024L).languageId(0xa0111e1c898de18eL, 0xcd87ddab6434448eL).build2(SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""));
-  public static final SMethod<SNode> effectiveTargetState_idk9boAu8mY4 = new SMethodBuilder<SNode>(new SJavaCompoundTypeImpl((Class<SNode>) ((Class) Object.class))).name("effectiveTargetState").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(362871314066796420L).languageId(0xa0111e1c898de18eL, 0xcd87ddab6434448eL).build2();
-  public static final SMethod<Boolean> hasSubstates_idk9boAu8BKZ = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("hasSubstates").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(362871314066865215L).languageId(0xa0111e1c898de18eL, 0xcd87ddab6434448eL).build2();
-  public static final SMethod<SNode> nestedInitialState_id60Qa1k_IB6a = new SMethodBuilder<SNode>(new SJavaCompoundTypeImpl((Class<SNode>) ((Class) Object.class))).name("nestedInitialState").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(6932772747675857290L).languageId(0xa0111e1c898de18eL, 0xcd87ddab6434448eL).build2();
+  public static final SMethod<Iterable<SNode>> transitions_id7$TgoCYlrDb = new SMethodBuilder<>((Class<Iterable<SNode>>) ((Class) Object.class)).name("transitions").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(8735085014268885579L).languageId(0xa0111e1c898de18eL, 0xcd87ddab6434448eL).build2();
+  public static final SMethod<Iterable<SNode>> triggeredTransitions_id7Z_fDCw7jPt = new SMethodBuilder<>((Class<Iterable<SNode>>) ((Class) Object.class)).name("triggeredTransitions").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(9215841044168260957L).languageId(0xa0111e1c898de18eL, 0xcd87ddab6434448eL).build2();
+  public static final SMethod<Iterable<SNode>> allApplicableTriggeredTransitions_idk9boAuhUuG = new SMethodBuilder<>((Class<Iterable<SNode>>) ((Class) Object.class)).name("allApplicableTriggeredTransitions").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(362871314069301164L).languageId(0xa0111e1c898de18eL, 0xcd87ddab6434448eL).build2();
+  public static final SMethod<Iterable<SNode>> automaticTransitions_id7Z_fDCw7kpI = new SMethodBuilder<>((Class<Iterable<SNode>>) ((Class) Object.class)).name("automaticTransitions").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(9215841044168263278L).languageId(0xa0111e1c898de18eL, 0xcd87ddab6434448eL).build2();
+  public static final SMethod<Iterable<SNode>> entryActions_id7$TgoCYlwiZ = new SMethodBuilder<>((Class<Iterable<SNode>>) ((Class) Object.class)).name("entryActions").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(8735085014268904639L).languageId(0xa0111e1c898de18eL, 0xcd87ddab6434448eL).build2();
+  public static final SMethod<Iterable<SNode>> exitActions_id7$TgoCYlwoK = new SMethodBuilder<>((Class<Iterable<SNode>>) ((Class) Object.class)).name("exitActions").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(8735085014268905008L).languageId(0xa0111e1c898de18eL, 0xcd87ddab6434448eL).build2();
+  public static final SMethod<Iterable<SNode>> states_id3H4W4dizcin = new SMethodBuilder<>((Class<Iterable<SNode>>) ((Class) Object.class)).name("states").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(4270802518592504983L).languageId(0xa0111e1c898de18eL, 0xcd87ddab6434448eL).build2();
+  public static final SMethod<Boolean> isInitial_id3H4W4dizjA7 = new SMethodBuilder<>(Boolean.TYPE).name("isInitial").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(4270802518592534919L).languageId(0xa0111e1c898de18eL, 0xcd87ddab6434448eL).build2();
+  public static final SMethod<Iterable<SNode>> getUniquelyNamedElements_id4qSf1u1TRfj = new SMethodBuilder<>((Class<Iterable<SNode>>) ((Class) Object.class)).name("getUniquelyNamedElements").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5095889050031059923L).languageId(0xaa41d1b2bffa7eb1L, 0xd4280a54f6df4383L).build2();
+  public static final SMethod<SNode> leastCommonContainerWith_idk9boAtVIcE = new SMethodBuilder<>(SNode.class).name("leastCommonContainerWith").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(362871314063483690L).languageId(0xa0111e1c898de18eL, 0xcd87ddab6434448eL).build2(SMethodBuilder.createJavaParameter(SNode.class, "other"));
+  public static final SMethod<List<SNode>> statesUpToContainer_idk9boAu1Bd0 = new SMethodBuilder<>((Class<List<SNode>>) ((Class) Object.class)).name("statesUpToContainer").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(362871314065027904L).languageId(0xa0111e1c898de18eL, 0xcd87ddab6434448eL).build2(SMethodBuilder.createJavaParameter(SNode.class, "container"));
+  public static final SMethod<List<SNode>> statesDownFrom_idk9boAu6HpS = new SMethodBuilder<>((Class<List<SNode>>) ((Class) Object.class)).name("statesDownFrom").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(362871314066364024L).languageId(0xa0111e1c898de18eL, 0xcd87ddab6434448eL).build2(SMethodBuilder.createJavaParameter(SNode.class, "container"));
+  public static final SMethod<SNode> effectiveTargetState_idk9boAu8mY4 = new SMethodBuilder<>(SNode.class).name("effectiveTargetState").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(362871314066796420L).languageId(0xa0111e1c898de18eL, 0xcd87ddab6434448eL).build2();
+  public static final SMethod<Boolean> hasSubstates_idk9boAu8BKZ = new SMethodBuilder<>(Boolean.TYPE).name("hasSubstates").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(362871314066865215L).languageId(0xa0111e1c898de18eL, 0xcd87ddab6434448eL).build2();
+  public static final SMethod<SNode> nestedInitialState_id60Qa1k_IB6a = new SMethodBuilder<>(SNode.class).name("nestedInitialState").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(6932772747675857290L).languageId(0xa0111e1c898de18eL, 0xcd87ddab6434448eL).build2();
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(transitions_id7$TgoCYlrDb, triggeredTransitions_id7Z_fDCw7jPt, allApplicableTriggeredTransitions_idk9boAuhUuG, automaticTransitions_id7Z_fDCw7kpI, entryActions_id7$TgoCYlwiZ, exitActions_id7$TgoCYlwoK, states_id3H4W4dizcin, isInitial_id3H4W4dizjA7, getUniquelyNamedElements_id4qSf1u1TRfj, leastCommonContainerWith_idk9boAtVIcE, statesUpToContainer_idk9boAu1Bd0, statesDownFrom_idk9boAu6HpS, effectiveTargetState_idk9boAu8mY4, hasSubstates_idk9boAu8BKZ, nestedInitialState_id60Qa1k_IB6a);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(transitions_id7$TgoCYlrDb, triggeredTransitions_id7Z_fDCw7jPt, allApplicableTriggeredTransitions_idk9boAuhUuG, automaticTransitions_id7Z_fDCw7kpI, entryActions_id7$TgoCYlwiZ, exitActions_id7$TgoCYlwoK, states_id3H4W4dizcin, isInitial_id3H4W4dizjA7, getUniquelyNamedElements_id4qSf1u1TRfj, leastCommonContainerWith_idk9boAtVIcE, statesUpToContainer_idk9boAu1Bd0, statesDownFrom_idk9boAu6HpS, effectiveTargetState_idk9boAu8mY4, hasSubstates_idk9boAu8BKZ, nestedInitialState_id60Qa1k_IB6a);
 
-  private static void ___init___(@NotNull SNode __thisNode__) {
-  }
 
   /*package*/ static Iterable<SNode> transitions_id7$TgoCYlrDb(@NotNull SNode __thisNode__) {
     return SNodeOperations.ofConcept(SLinkOperations.getChildren(__thisNode__, LINKS.contents$ejRe), CONCEPTS.AbstractTransition$ZK);
@@ -124,10 +120,6 @@ public final class State__BehaviorDescriptor extends BaseBHDescriptor {
   /*package*/ State__BehaviorDescriptor() {
   }
 
-  @Override
-  protected void initNode(@NotNull SNode node, @NotNull SConstructor constructor, @Nullable Object[] parameters) {
-    ___init___(node);
-  }
 
   @Override
   protected <T> T invokeSpecial0(@NotNull SNode node, @NotNull SMethod<T> method, @Nullable Object[] parameters) {

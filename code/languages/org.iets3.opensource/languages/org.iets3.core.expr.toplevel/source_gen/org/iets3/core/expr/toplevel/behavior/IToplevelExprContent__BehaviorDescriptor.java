@@ -7,7 +7,6 @@ import org.jetbrains.mps.openapi.language.SAbstractConcept;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import java.util.List;
 import java.util.Arrays;
@@ -16,7 +15,6 @@ import org.jetbrains.mps.openapi.model.SNode;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations;
 import org.iets3.core.expr.base.behavior.INameQualifier__BehaviorDescriptor;
-import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 import org.jetbrains.mps.openapi.language.SProperty;
@@ -25,14 +23,12 @@ import org.jetbrains.mps.openapi.language.SInterfaceConcept;
 public final class IToplevelExprContent__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getInterfaceConcept(0x71934284d7d145eeL, 0xa0548c072591085fL, 0x27b717d14a8b21f9L, "org.iets3.core.expr.toplevel.structure.IToplevelExprContent");
 
-  public static final SMethod<String> asString_id6iqfHNBPkjP = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("asString").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(7249175668709475573L).languageId(0xb66a309a6e1a7290L, 0xcfaa4966b7d54b69L).build2();
-  public static final SMethod<String> getQualifiedName_id4yaQL1YaUNL = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("getQualifiedName").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5227231181399633137L).languageId(0xaa41d1b2bffa7eb1L, 0xd4280a54f6df4383L).build2();
-  public static final SMethod<Boolean> overrideDefaultAllowUmlaute_id5D8v3P4jYKp = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("overrideDefaultAllowUmlaute").modifiers(9, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(6505586264317619225L).languageId(0xbd9c05c0f8725a35L, 0x7b68d745a7b848b9L).build2();
+  public static final SMethod<String> asString_id6iqfHNBPkjP = new SMethodBuilder<>(String.class).name("asString").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(7249175668709475573L).languageId(0xb66a309a6e1a7290L, 0xcfaa4966b7d54b69L).build2();
+  public static final SMethod<String> getQualifiedName_id4yaQL1YaUNL = new SMethodBuilder<>(String.class).name("getQualifiedName").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5227231181399633137L).languageId(0xaa41d1b2bffa7eb1L, 0xd4280a54f6df4383L).build2();
+  public static final SMethod<Boolean> overrideDefaultAllowUmlaute_id5D8v3P4jYKp = new SMethodBuilder<>(Boolean.TYPE).name("overrideDefaultAllowUmlaute").modifiers(9, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(6505586264317619225L).languageId(0xbd9c05c0f8725a35L, 0x7b68d745a7b848b9L).build2();
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(asString_id6iqfHNBPkjP, getQualifiedName_id4yaQL1YaUNL, overrideDefaultAllowUmlaute_id5D8v3P4jYKp);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(asString_id6iqfHNBPkjP, getQualifiedName_id4yaQL1YaUNL, overrideDefaultAllowUmlaute_id5D8v3P4jYKp);
 
-  private static void ___init___(@NotNull SNode __thisNode__) {
-  }
 
   /*package*/ static String asString_id6iqfHNBPkjP(@NotNull SNode __thisNode__) {
     return "[" + SNodeOperations.getConcept(__thisNode__).getName() + "] " + SPropertyOperations.getString(__thisNode__, PROPS.name$MnvL);
@@ -51,10 +47,6 @@ public final class IToplevelExprContent__BehaviorDescriptor extends BaseBHDescri
   /*package*/ IToplevelExprContent__BehaviorDescriptor() {
   }
 
-  @Override
-  protected void initNode(@NotNull SNode node, @NotNull SConstructor constructor, @Nullable Object[] parameters) {
-    ___init___(node);
-  }
 
   @Override
   protected <T> T invokeSpecial0(@NotNull SNode node, @NotNull SMethod<T> method, @Nullable Object[] parameters) {

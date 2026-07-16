@@ -10,9 +10,9 @@ import org.iets3.opensource.build.gentests.behavior.RunKernelFGeneratedTests__Be
 import org.jetbrains.mps.openapi.model.SNode;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
 import jetbrains.mps.build.util.DependenciesHelper;
+import jetbrains.mps.build.util.Context;
 import jetbrains.mps.build.behavior.BuildLayout_PathElement__BehaviorDescriptor;
 import jetbrains.mps.build.util.MacroHelper;
-import jetbrains.mps.build.util.Context;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
 import jetbrains.mps.build.behavior.BuildString__BehaviorDescriptor;
 import jetbrains.mps.build.behavior.BuildSourcePath__BehaviorDescriptor;
@@ -86,7 +86,7 @@ public class QueriesGenerated extends QueryProviderBase {
       _context.showErrorMessage(project, "Context project is null");
       return _context.getTemplateValue();
     }
-    DependenciesHelper helper = new DependenciesHelper(_context, project) {};
+    DependenciesHelper helper = new DependenciesHelper(Context.defaultContext(_context), project) {};
     String artifact = "mps-test-folder";
     SNode mpsTestJar = helper.getArtifact(artifact);
     if ((mpsTestJar != null)) {

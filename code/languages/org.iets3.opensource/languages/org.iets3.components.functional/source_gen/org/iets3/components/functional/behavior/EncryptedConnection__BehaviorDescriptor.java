@@ -7,25 +7,21 @@ import org.jetbrains.mps.openapi.language.SAbstractConcept;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import java.util.List;
 import java.util.Arrays;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.mps.openapi.model.SNode;
-import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 
 public final class EncryptedConnection__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getConcept(0x257976063fb647b8L, 0xbc3cb4384df7da44L, 0x3ce7d4897447ed6eL, "org.iets3.components.functional.structure.EncryptedConnection");
 
-  public static final SMethod<String> summaryString_id4A8SzOVam5y = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("summaryString").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5298733714214838626L).languageId(0xa055a74f8477fc34L, 0x583939beded04735L).build2();
+  public static final SMethod<String> summaryString_id4A8SzOVam5y = new SMethodBuilder<>(String.class).name("summaryString").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5298733714214838626L).languageId(0xa055a74f8477fc34L, 0x583939beded04735L).build2();
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(summaryString_id4A8SzOVam5y);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(summaryString_id4A8SzOVam5y);
 
-  private static void ___init___(@NotNull SNode __thisNode__) {
-  }
 
   /*package*/ static String summaryString_id4A8SzOVam5y(@NotNull SNode __thisNode__) {
     return "E";
@@ -34,10 +30,6 @@ public final class EncryptedConnection__BehaviorDescriptor extends BaseBHDescrip
   /*package*/ EncryptedConnection__BehaviorDescriptor() {
   }
 
-  @Override
-  protected void initNode(@NotNull SNode node, @NotNull SConstructor constructor, @Nullable Object[] parameters) {
-    ___init___(node);
-  }
 
   @Override
   protected <T> T invokeSpecial0(@NotNull SNode node, @NotNull SMethod<T> method, @Nullable Object[] parameters) {
