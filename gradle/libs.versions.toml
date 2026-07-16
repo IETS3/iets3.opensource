@@ -1,17 +1,18 @@
 [versions]
-mpsVersion = "2026.1"
-mpsQaVersion = "2026.1.1448.2560595"
+mpsVersion = "261.25134.10195"
+mpsQaVersion = "9999.9.1434.281ce77"
 # if you want to build against a specific mbeddr branch, prepend it here with a dot.
 # NOTE: instances of '/' in the branch name need to be replaced by '-'
 # example: mbeddrVersion="feature-my_new_feature.2023.2.+"
-mbeddrVersion = "2026.1.26532.5b4aae7"
+mbeddrVersion = "9999.9.26517.f1a39c7"
 
 jbr = "25.0.3-b508.16"
 
 
 [libraries]
-mps = { group = "com.jetbrains", name = "mps", version.ref = "mpsVersion" }
-remigrate = { group = "de.itemis.mps.build-backends", name = "remigrate", version = "1.0.1.186.eda5913" }
+mps = { group = "com.jetbrains.mps", name = "mps-prerelease", version.ref = "mpsVersion" }
+remigrate = { group = "de.itemis.mps.build-backends", name = "remigrate", version = "1.0.1.+" }
+
 mpsQaAllInOne = { group = "org.mpsqa", name = "all-in-one", version.ref = "mpsQaVersion" }
 mbeddrPlatform = { group = "com.mbeddr", name = "platform", version.ref = "mbeddrVersion" }
 antJunit = { group = "org.apache.ant", name = "ant-junit", version = "1.10.17" }
