@@ -25,17 +25,14 @@ import org.iets3.core.expr.tracing.util.TracingValue;
   }
 
   /*package*/ EditorCell createCell() {
-    return createDummyWrapperCell_1();
+    return createDummyWrapperCell_0();
   }
 
-  private EditorCell createDummyWrapperCell_0(EditorContext editorContext, SNode node) {
+  private EditorCell createDummyWrapperCell_0() {
     EditorCell editorCell = null;
     editorCell = createAlternation_0();
     editorCell.setBig(true);
     return editorCell;
-  }
-  private EditorCell createDummyWrapperCell_1() {
-    return createDummyWrapperCell_0(getEditorContext(), myNode);
   }
   private EditorCell createAlternation_0() {
     boolean alternationCondition = true;

@@ -13,7 +13,7 @@
       <unit at="11,0,94,0" name="test.iest3.component.attribute.structure.ConceptPresentationAspectImpl" />
     </file>
     <file name="LanguageConceptSwitch.java">
-      <unit at="10,0,42,0" name="test.iest3.component.attribute.structure.LanguageConceptSwitch" />
+      <unit at="12,0,50,0" name="test.iest3.component.attribute.structure.LanguageConceptSwitch" />
     </file>
     <file name="StructureAspectDescriptor.java">
       <unit at="14,0,148,0" name="test.iest3.component.attribute.structure.StructureAspectDescriptor" />
@@ -34,8 +34,8 @@
       <scope id="4448734902938442738" at="26,47,33,35" />
     </file>
     <file name="LanguageConceptSwitch.java">
-      <node id="4448734902938442738" at="12,0,13,0" concept="6" trace="TestAttribute" />
-      <node id="4448734902938442738" at="22,116,23,52" concept="0" />
+      <node id="4448734902938442738" at="14,0,15,0" concept="6" trace="TestAttribute" />
+      <node id="4448734902938442738" at="24,116,25,52" concept="0" />
     </file>
     <file name="StructureAspectDescriptor.java">
       <node id="4448734902938442738" at="15,0,16,0" concept="1" trace="myConceptTestAttribute" />
@@ -70,8 +70,8 @@
       <scope id="4448734902940615074" at="66,57,73,45" />
     </file>
     <file name="LanguageConceptSwitch.java">
-      <node id="4448734902940615074" at="17,0,18,0" concept="6" trace="TestPortCategoryAccepts" />
-      <node id="4448734902940615074" at="27,48,28,62" concept="0" />
+      <node id="4448734902940615074" at="19,0,20,0" concept="6" trace="TestPortCategoryAccepts" />
+      <node id="4448734902940615074" at="29,48,30,62" concept="0" />
     </file>
     <file name="StructureAspectDescriptor.java">
       <node id="4448734902940615074" at="20,0,21,0" concept="1" trace="myConceptTestPortCategoryAccepts" />
@@ -107,8 +107,8 @@
       <scope id="4448734902940638651" at="82,46,89,34" />
     </file>
     <file name="LanguageConceptSwitch.java">
-      <node id="4448734902940638651" at="19,0,20,0" concept="6" trace="TestPortType" />
-      <node id="4448734902940638651" at="29,61,30,51" concept="0" />
+      <node id="4448734902940638651" at="21,0,22,0" concept="6" trace="TestPortType" />
+      <node id="4448734902940638651" at="31,61,32,51" concept="0" />
     </file>
     <file name="StructureAspectDescriptor.java">
       <node id="4448734902940638651" at="22,0,23,0" concept="1" trace="myConceptTestPortType" />
@@ -143,8 +143,8 @@
       <scope id="4448734902941595848" at="42,43,49,31" />
     </file>
     <file name="LanguageConceptSwitch.java">
-      <node id="4448734902941595848" at="14,0,15,0" concept="6" trace="TestKindA" />
-      <node id="4448734902941595848" at="24,56,25,48" concept="0" />
+      <node id="4448734902941595848" at="16,0,17,0" concept="6" trace="TestKindA" />
+      <node id="4448734902941595848" at="26,56,27,48" concept="0" />
     </file>
     <file name="StructureAspectDescriptor.java">
       <node id="4448734902941595848" at="17,0,18,0" concept="1" trace="myConceptTestKindA" />
@@ -180,8 +180,8 @@
       <scope id="4448734902941668085" at="74,56,81,44" />
     </file>
     <file name="LanguageConceptSwitch.java">
-      <node id="4448734902941668085" at="18,0,19,0" concept="6" trace="TestPortCategoryOffers" />
-      <node id="4448734902941668085" at="28,62,29,61" concept="0" />
+      <node id="4448734902941668085" at="20,0,21,0" concept="6" trace="TestPortCategoryOffers" />
+      <node id="4448734902941668085" at="30,62,31,61" concept="0" />
     </file>
     <file name="StructureAspectDescriptor.java">
       <node id="4448734902941668085" at="21,0,22,0" concept="1" trace="myConceptTestPortCategoryOffers" />
@@ -217,8 +217,8 @@
       <scope id="4773799153887154601" at="34,51,41,39" />
     </file>
     <file name="LanguageConceptSwitch.java">
-      <node id="4773799153887154601" at="13,0,14,0" concept="6" trace="TestConnectorType" />
-      <node id="4773799153887154601" at="23,52,24,56" concept="0" />
+      <node id="4773799153887154601" at="15,0,16,0" concept="6" trace="TestConnectorType" />
+      <node id="4773799153887154601" at="25,52,26,56" concept="0" />
     </file>
     <file name="StructureAspectDescriptor.java">
       <node id="4773799153887154601" at="16,0,17,0" concept="1" trace="myConceptTestConnectorType" />
@@ -252,8 +252,8 @@
       <scope id="8956532715637138334" at="50,43,57,31" />
     </file>
     <file name="LanguageConceptSwitch.java">
-      <node id="8956532715637138334" at="15,0,16,0" concept="6" trace="TestKindB" />
-      <node id="8956532715637138334" at="25,48,26,48" concept="0" />
+      <node id="8956532715637138334" at="17,0,18,0" concept="6" trace="TestKindB" />
+      <node id="8956532715637138334" at="27,48,28,48" concept="0" />
     </file>
     <file name="StructureAspectDescriptor.java">
       <node id="8956532715637138334" at="18,0,19,0" concept="1" trace="myConceptTestKindB" />
@@ -289,8 +289,8 @@
       <scope id="8956532715640070482" at="58,43,65,31" />
     </file>
     <file name="LanguageConceptSwitch.java">
-      <node id="8956532715640070482" at="16,0,17,0" concept="6" trace="TestKindC" />
-      <node id="8956532715640070482" at="26,48,27,48" concept="0" />
+      <node id="8956532715640070482" at="18,0,19,0" concept="6" trace="TestKindC" />
+      <node id="8956532715640070482" at="28,48,29,48" concept="0" />
     </file>
     <file name="StructureAspectDescriptor.java">
       <node id="8956532715640070482" at="19,0,20,0" concept="1" trace="myConceptTestKindC" />

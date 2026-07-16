@@ -26,7 +26,7 @@ public class UnitsTestHelper {
     SNode taggedType = SNodeOperations.cast(TypecheckingFacade.getFromContext().getTypeOf(node), CONCEPTS.TaggedType$O4);
     List<SNode> tags = SLinkOperations.getChildren(taggedType, LINKS.tags$Lx_i);
     SNode unitSpec = SNodeOperations.cast(ListSequence.fromList(tags).first(), CONCEPTS.UnitSpecification$6j);
-    Assert.assertEquals("Wrong number of unit specifications found", 2, ListSequence.fromList(ISpecification__BehaviorDescriptor.components_id1KUmgSF_6Sp.invoke(unitSpec)).count());
+    Assert.assertEquals("Wrong number of unit specifications found", Integer.valueOf(2), Integer.valueOf(ListSequence.fromList(ISpecification__BehaviorDescriptor.components_id1KUmgSF_6Sp.invoke(unitSpec)).count()));
     UnitsTestHelper.assertUnitRef(SNodeOperations.as(ListSequence.fromList(ISpecification__BehaviorDescriptor.components_id1KUmgSF_6Sp.invoke(unitSpec)).first(), CONCEPTS.UnitExpression$Xv), expFirstUnitName, expFirstUnitExponent);
     UnitsTestHelper.assertUnitRef(SNodeOperations.as(ListSequence.fromList(ISpecification__BehaviorDescriptor.components_id1KUmgSF_6Sp.invoke(unitSpec)).getElement(1), CONCEPTS.UnitExpression$Xv), expSecondUnitName, expSecondUnitExponent);
   }
@@ -45,7 +45,7 @@ public class UnitsTestHelper {
         if (expUnitExponent == null) {
           Assert.fail("No exponent expected");
         } else {
-          Assert.assertEquals("Wrong numerator for exponent on unit " + expUnitName, expUnitExponent.intValue(), (int) Exponent__BehaviorDescriptor.getNumerator_id3j3yk3guAC3.invoke(SLinkOperations.getTarget(unitExp, LINKS.exponent$z83d)));
+          Assert.assertEquals("Wrong numerator for exponent on unit " + expUnitName, Integer.valueOf(expUnitExponent.intValue()), Integer.valueOf((int) Exponent__BehaviorDescriptor.getNumerator_id3j3yk3guAC3.invoke(SLinkOperations.getTarget(unitExp, LINKS.exponent$z83d))));
         }
       }
     }

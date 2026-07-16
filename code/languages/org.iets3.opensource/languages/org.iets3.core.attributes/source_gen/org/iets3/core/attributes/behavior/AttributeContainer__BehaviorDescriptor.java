@@ -8,7 +8,6 @@ import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import org.jetbrains.mps.openapi.model.SNode;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import java.util.List;
 import java.util.Arrays;
@@ -25,9 +24,9 @@ import org.jetbrains.mps.openapi.language.SConcept;
 public final class AttributeContainer__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getConcept(0x583939beded04735L, 0xa055a74f8477fc34L, 0xb30a80cc8ec823bL, "org.iets3.core.attributes.structure.AttributeContainer");
 
-  public static final SMethod<SNode> getTypedContextNode_id4fgA7QrKR89 = new SMethodBuilder<SNode>(new SJavaCompoundTypeImpl((Class<SNode>) ((Class) Object.class))).name("nodeToCalculateTypeFrom").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(4886573260948599305L).languageId(0xb66a309a6e1a7290L, 0xcfaa4966b7d54b69L).build2();
+  public static final SMethod<SNode> getTypedContextNode_id4fgA7QrKR89 = new SMethodBuilder<>(SNode.class).name("nodeToCalculateTypeFrom").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(4886573260948599305L).languageId(0xb66a309a6e1a7290L, 0xcfaa4966b7d54b69L).build2();
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(getTypedContextNode_id4fgA7QrKR89);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(getTypedContextNode_id4fgA7QrKR89);
 
   private static void ___init___(@NotNull SNode __thisNode__) {
     SNodeFactoryOperations.addNewChild(__thisNode__, LINKS.nestedAttributes$_qRn, CONCEPTS.EmptyAttribute$lw);

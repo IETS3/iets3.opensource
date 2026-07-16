@@ -41,7 +41,7 @@ public class InfHelper {
 
   /**
    * 
-   * @deprecated Use {@link org.iets3.core.expr.base.plugin.InfHelper#add(String, String) }
+   * @deprecated Use {@link org.iets3.core.expr.base.plugin.InfHelper#add(String, String)}
    */
   @Deprecated(forRemoval = true)
   public static String add(String v1, String v2, boolean skewLow) {
@@ -60,7 +60,7 @@ public class InfHelper {
 
   /**
    * 
-   * @deprecated Use {@link org.iets3.core.expr.base.plugin.InfHelper#sub(String, String) }
+   * @deprecated Use {@link org.iets3.core.expr.base.plugin.InfHelper#sub(String, String)} 
    */
   @Deprecated(forRemoval = true)
   public static String sub(String v1, String v2, boolean skewLow) {
@@ -80,7 +80,7 @@ public class InfHelper {
 
   /**
    * 
-   * @deprecated Use {@link org.iets3.core.expr.base.plugin.InfHelper#mul(String, String) }
+   * @deprecated Use {@link org.iets3.core.expr.base.plugin.InfHelper#mul(String, String)} 
    */
   @Deprecated(forRemoval = true)
   public static String mul(String v1, String v2, boolean skewLow) {
@@ -133,7 +133,7 @@ public class InfHelper {
 
   /**
    * 
-   * @deprecated Use {@link org.iets3.core.expr.base.plugin.InfHelper#div(String, String, RoundingMode) }
+   * @deprecated Use {@link org.iets3.core.expr.base.plugin.InfHelper#div(String, String, RoundingMode)} 
    */
   @Deprecated(forRemoval = true)
   public static String div(String v1, String v2, boolean skewLow, RoundingMode roundingMode) {

@@ -8,7 +8,6 @@ import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import org.jetbrains.mps.openapi.model.SNode;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import java.util.List;
 import java.util.Arrays;
@@ -18,7 +17,6 @@ import org.iets3.core.expr.base.behavior.IDotTarget__BehaviorDescriptor;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
 import org.iets3.analysis.base.behavior.ISolverCollectionType__BehaviorDescriptor;
-import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 import org.jetbrains.mps.openapi.language.SConcept;
@@ -28,12 +26,10 @@ import org.jetbrains.mps.openapi.language.SContainmentLink;
 public final class AnyOp__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getConcept(0x2f7e2e356e744c43L, 0x9fa52465d68f5996L, 0x7b20a1e3c2aca5dbL, "org.iets3.core.expr.collections.structure.AnyOp");
 
-  public static final SMethod<SNode> requiredType_id6zmBjqUm7MF = new SMethodBuilder<SNode>(new SJavaCompoundTypeImpl((Class<SNode>) ((Class) Object.class))).name("requiredType").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(7554398283340741803L).languageId(0x927464ab29588457L, 0x9464fa065ab9409bL).build2();
+  public static final SMethod<SNode> requiredType_id6zmBjqUm7MF = new SMethodBuilder<>(SNode.class).name("requiredType").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(7554398283340741803L).languageId(0x927464ab29588457L, 0x9464fa065ab9409bL).build2();
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(requiredType_id6zmBjqUm7MF);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(requiredType_id6zmBjqUm7MF);
 
-  private static void ___init___(@NotNull SNode __thisNode__) {
-  }
 
   /*package*/ static SNode requiredType_id6zmBjqUm7MF(@NotNull SNode __thisNode__) {
     SNode contextType = TypecheckingFacade.getFromContext().getTypeOf(IDotTarget__BehaviorDescriptor.contextExpression_id6zmBjqUivyF.invoke(__thisNode__));
@@ -49,10 +45,6 @@ public final class AnyOp__BehaviorDescriptor extends BaseBHDescriptor {
   /*package*/ AnyOp__BehaviorDescriptor() {
   }
 
-  @Override
-  protected void initNode(@NotNull SNode node, @NotNull SConstructor constructor, @Nullable Object[] parameters) {
-    ___init___(node);
-  }
 
   @Override
   protected <T> T invokeSpecial0(@NotNull SNode node, @NotNull SMethod<T> method, @Nullable Object[] parameters) {

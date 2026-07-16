@@ -8,7 +8,6 @@ import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import org.jetbrains.mps.openapi.model.SNode;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import java.util.List;
 import java.util.Arrays;
@@ -25,12 +24,12 @@ import org.jetbrains.mps.openapi.language.SConcept;
 public final class RecordDeclaration__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getConcept(0x71934284d7d145eeL, 0xa0548c072591085fL, 0x7a477bfec237e8b6L, "org.iets3.core.expr.toplevel.structure.RecordDeclaration");
 
-  public static final SMethod<Iterable<SNode>> getUniquelyNamedElements_id4qSf1u1TRfj = new SMethodBuilder<Iterable<SNode>>(new SJavaCompoundTypeImpl((Class<Iterable<SNode>>) ((Class) Object.class))).name("getUniquelyNamedElements").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5095889050031059923L).languageId(0xaa41d1b2bffa7eb1L, 0xd4280a54f6df4383L).build2();
-  public static final SMethod<Boolean> canHavePlainConstraint_idKaZMgylLn7 = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("canHavePlainConstraint").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(867786408882279879L).languageId(0xb66a309a6e1a7290L, 0xcfaa4966b7d54b69L).build2();
-  public static final SMethod<Boolean> canBeReferenced_id6JZACDWPqWY = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("canBeReferenced").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(7782108600710049598L).languageId(0xa0548c072591085fL, 0x71934284d7d145eeL).build2();
-  public static final SMethod<Iterable<SNode>> allContractItems_idKaZMgyh03Y = new SMethodBuilder<Iterable<SNode>>(new SJavaCompoundTypeImpl((Class<Iterable<SNode>>) ((Class) Object.class))).name("allContractItems").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(867786408881029374L).languageId(0xb66a309a6e1a7290L, 0xcfaa4966b7d54b69L).build2();
+  public static final SMethod<Iterable<SNode>> getUniquelyNamedElements_id4qSf1u1TRfj = new SMethodBuilder<>((Class<Iterable<SNode>>) ((Class) Object.class)).name("getUniquelyNamedElements").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5095889050031059923L).languageId(0xaa41d1b2bffa7eb1L, 0xd4280a54f6df4383L).build2();
+  public static final SMethod<Boolean> canHavePlainConstraint_idKaZMgylLn7 = new SMethodBuilder<>(Boolean.TYPE).name("canHavePlainConstraint").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(867786408882279879L).languageId(0xb66a309a6e1a7290L, 0xcfaa4966b7d54b69L).build2();
+  public static final SMethod<Boolean> canBeReferenced_id6JZACDWPqWY = new SMethodBuilder<>(Boolean.TYPE).name("canBeReferenced").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(7782108600710049598L).languageId(0xa0548c072591085fL, 0x71934284d7d145eeL).build2();
+  public static final SMethod<Iterable<SNode>> allContractItems_idKaZMgyh03Y = new SMethodBuilder<>((Class<Iterable<SNode>>) ((Class) Object.class)).name("allContractItems").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(867786408881029374L).languageId(0xb66a309a6e1a7290L, 0xcfaa4966b7d54b69L).build2();
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(getUniquelyNamedElements_id4qSf1u1TRfj, canHavePlainConstraint_idKaZMgylLn7, canBeReferenced_id6JZACDWPqWY, allContractItems_idKaZMgyh03Y);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(getUniquelyNamedElements_id4qSf1u1TRfj, canHavePlainConstraint_idKaZMgylLn7, canBeReferenced_id6JZACDWPqWY, allContractItems_idKaZMgyh03Y);
 
   private static void ___init___(@NotNull SNode __thisNode__) {
     SLinkOperations.addNewChild(__thisNode__, LINKS.members$mJj1, CONCEPTS.EmptyMember$Qn);

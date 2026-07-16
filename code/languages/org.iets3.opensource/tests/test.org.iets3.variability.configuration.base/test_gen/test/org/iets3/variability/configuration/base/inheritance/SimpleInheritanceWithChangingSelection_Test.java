@@ -72,7 +72,7 @@ public class SimpleInheritanceWithChangingSelection_Test extends BaseTransformat
         SPropertyOperations.assign(getAnnotatedNode("configExtendA"), PROPS.complete$4SB6, true);
 
         // Then the extending config looses Feature A
-        Assert.assertEquals(0, ListSequence.fromList(SLinkOperations.getChildren(SNodeOperations.cast(SLinkOperations.getTarget(getAnnotatedNode("extendingFMC"), LINKS.content$Wdfq), CONCEPTS.InlineFeatureConfigurationContent$P5), LINKS.subfeatureConfigurations$l9wi)).count());
+        Assert.assertEquals(Integer.valueOf(0), Integer.valueOf(ListSequence.fromList(SLinkOperations.getChildren(SNodeOperations.cast(SLinkOperations.getTarget(getAnnotatedNode("extendingFMC"), LINKS.content$Wdfq), CONCEPTS.InlineFeatureConfigurationContent$P5), LINKS.subfeatureConfigurations$l9wi)).count()));
       });
     }
     public void test_untouchingSelectedFeatureInExtendedConfig() throws Exception {
@@ -89,7 +89,7 @@ public class SimpleInheritanceWithChangingSelection_Test extends BaseTransformat
         // Then the extending Config has exactly one Feature which is untouched
         List<SNode> subfeatureConfigurations = SLinkOperations.getChildren(SNodeOperations.cast(SLinkOperations.getTarget(getAnnotatedNode("exendingFMC2"), LINKS.content$Wdfq), CONCEPTS.InlineFeatureConfigurationContent$P5), LINKS.subfeatureConfigurations$l9wi);
 
-        Assert.assertEquals(1, ListSequence.fromList(subfeatureConfigurations).count());
+        Assert.assertEquals(Integer.valueOf(1), Integer.valueOf(ListSequence.fromList(subfeatureConfigurations).count()));
         SNode extendingA = ListSequence.fromList(subfeatureConfigurations).getElement(0);
         Assert.assertEquals(SEnumOperations.getMember(MetaAdapterFactory.getEnumeration(0x165f1d0525064544L, 0x895e1424f54166ecL, 0x5db06c237c250a73L, "org.iets3.variability.featuremodel.base.structure.FeatureSelectionState"), 0x5db06c237c250a74L, "untouched"), SPropertyOperations.getEnum(extendingA, PROPS.selectionState$zbc1));
         {

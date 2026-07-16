@@ -20,7 +20,7 @@ public final class AutomaticTransition__BehaviorDescriptor extends BaseBHDescrip
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getConcept(0xcd87ddab6434448eL, 0xa0111e1c898de18eL, 0x7fe53e9a201bc1efL, "org.iets3.core.expr.statemachines.structure.AutomaticTransition");
 
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList();
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList();
 
   private static void ___init___(@NotNull SNode __thisNode__) {
     SLinkOperations.setNewChild(__thisNode__, LINKS.guard$axcj, null);

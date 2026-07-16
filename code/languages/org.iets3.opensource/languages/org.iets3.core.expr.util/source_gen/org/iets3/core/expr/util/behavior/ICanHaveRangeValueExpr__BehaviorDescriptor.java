@@ -8,34 +8,26 @@ import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import org.jetbrains.mps.openapi.model.SNode;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import java.util.List;
 import java.util.Arrays;
 import org.jetbrains.annotations.NotNull;
-import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 
 public final class ICanHaveRangeValueExpr__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getInterfaceConcept(0x8bb1251eeae547abL, 0x984333adfae8edaaL, 0x14c6f8f7168294cL, "org.iets3.core.expr.util.structure.ICanHaveRangeValueExpr");
 
-  public static final SMethod<SNode> getExpectedType_id2kKAjiT_53x = new SMethodBuilder<SNode>(new SJavaCompoundTypeImpl((Class<SNode>) ((Class) Object.class))).name("getExpectedType").modifiers(12, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(2679810230016299233L).languageId(0x984333adfae8edaaL, 0x8bb1251eeae547abL).build2();
-  public static final SMethod<SNode> getContextExpression_id5crSXMpQTn = new SMethodBuilder<SNode>(new SJavaCompoundTypeImpl((Class<SNode>) ((Class) Object.class))).name("getContextExpression").modifiers(12, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(93572354158325335L).languageId(0x984333adfae8edaaL, 0x8bb1251eeae547abL).build2();
+  public static final SMethod<SNode> getExpectedType_id2kKAjiT_53x = new SMethodBuilder<>(SNode.class).name("getExpectedType").modifiers(12, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(2679810230016299233L).languageId(0x984333adfae8edaaL, 0x8bb1251eeae547abL).build2();
+  public static final SMethod<SNode> getContextExpression_id5crSXMpQTn = new SMethodBuilder<>(SNode.class).name("getContextExpression").modifiers(12, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(93572354158325335L).languageId(0x984333adfae8edaaL, 0x8bb1251eeae547abL).build2();
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(getExpectedType_id2kKAjiT_53x, getContextExpression_id5crSXMpQTn);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(getExpectedType_id2kKAjiT_53x, getContextExpression_id5crSXMpQTn);
 
-  private static void ___init___(@NotNull SNode __thisNode__) {
-  }
 
 
   /*package*/ ICanHaveRangeValueExpr__BehaviorDescriptor() {
   }
 
-  @Override
-  protected void initNode(@NotNull SNode node, @NotNull SConstructor constructor, @Nullable Object[] parameters) {
-    ___init___(node);
-  }
 
   @Override
   protected <T> T invokeSpecial0(@NotNull SNode node, @NotNull SMethod<T> method, @Nullable Object[] parameters) {

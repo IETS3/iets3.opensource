@@ -7,34 +7,26 @@ import org.jetbrains.mps.openapi.language.SAbstractConcept;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import org.jetbrains.mps.openapi.model.SNode;
 import java.util.List;
 import java.util.Arrays;
 import org.jetbrains.annotations.NotNull;
-import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 
 public final class IComparablePathPart__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getInterfaceConcept(0xf3eafff030d246d6L, 0x9150f0f3b880ce27L, 0x46092b510768d48cL, "org.iets3.core.expr.path.structure.IComparablePathPart");
 
-  public static final SMethod<Boolean> isSameAs_id4o9aP47qdiC = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("isSameAs").modifiers(12, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5046612484462007464L).languageId(0x9150f0f3b880ce27L, 0xf3eafff030d246d6L).build2(SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""));
+  public static final SMethod<Boolean> isSameAs_id4o9aP47qdiC = new SMethodBuilder<>(Boolean.TYPE).name("isSameAs").modifiers(12, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5046612484462007464L).languageId(0x9150f0f3b880ce27L, 0xf3eafff030d246d6L).build2(SMethodBuilder.createJavaParameter(SNode.class, "other"));
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(isSameAs_id4o9aP47qdiC);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(isSameAs_id4o9aP47qdiC);
 
-  private static void ___init___(@NotNull SNode __thisNode__) {
-  }
 
 
   /*package*/ IComparablePathPart__BehaviorDescriptor() {
   }
 
-  @Override
-  protected void initNode(@NotNull SNode node, @NotNull SConstructor constructor, @Nullable Object[] parameters) {
-    ___init___(node);
-  }
 
   @Override
   protected <T> T invokeSpecial0(@NotNull SNode node, @NotNull SMethod<T> method, @Nullable Object[] parameters) {

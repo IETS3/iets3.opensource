@@ -8,7 +8,6 @@ import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import org.jetbrains.mps.openapi.model.SNode;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import java.util.List;
 import java.util.Arrays;
@@ -18,7 +17,6 @@ import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations;
 import java.util.Objects;
-import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 import org.jetbrains.mps.openapi.language.SConcept;
@@ -29,17 +27,15 @@ import org.jetbrains.mps.openapi.language.SProperty;
 public final class BTtag__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getConcept(0x9c3cc6fbae5e46d1L, 0xace21e08bb47d03dL, 0x1e22ec1660262d98L, "org.iets3.core.expr.typetags.bindingtime.structure.BTtag");
 
-  public static final SMethod<SNode> getDefault_id1WJTL5jvcNW = new SMethodBuilder<SNode>(new SJavaCompoundTypeImpl((Class<SNode>) ((Class) Object.class))).name("getDefault").modifiers(9, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(2247268800682315004L).languageId(0xa9df73d9e86c27d3L, 0x5186c6ce428c4f09L).build2();
-  public static final SMethod<Boolean> subsumes_id1RcasK0V7Pl = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("subsumes").modifiers(9, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(2147137078514449749L).languageId(0xa9df73d9e86c27d3L, 0x5186c6ce428c4f09L).build2(SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""), SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""));
-  public static final SMethod<SAbstractConcept> getGroupingTagConcept_idx_aN5M65iL = new SMethodBuilder<SAbstractConcept>(new SJavaCompoundTypeImpl((Class<SAbstractConcept>) ((Class) Object.class))).name("getGroupingTagConcept").modifiers(9, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(604937216318788785L).languageId(0xa9df73d9e86c27d3L, 0x5186c6ce428c4f09L).build2();
-  public static final SMethod<String> getName_id76ZhK6XVfon = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("getName").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(8196347919644554775L).languageId(0xa9df73d9e86c27d3L, 0x5186c6ce428c4f09L).build2();
-  public static final SMethod<Boolean> wasBefore_id35Mye9KoWWW = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("wasBefore").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(3563060761333059388L).languageId(0xace21e08bb47d03dL, 0x9c3cc6fbae5e46d1L).build2(SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""));
-  public static final SMethod<Boolean> groupBefore_id5XGFpL9V4bu = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("groupBefore").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(6876061617854628574L).languageId(0xace21e08bb47d03dL, 0x9c3cc6fbae5e46d1L).build2(SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""));
+  public static final SMethod<SNode> getDefault_id1WJTL5jvcNW = new SMethodBuilder<>(SNode.class).name("getDefault").modifiers(9, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(2247268800682315004L).languageId(0xa9df73d9e86c27d3L, 0x5186c6ce428c4f09L).build2();
+  public static final SMethod<Boolean> subsumes_id1RcasK0V7Pl = new SMethodBuilder<>(Boolean.TYPE).name("subsumes").modifiers(9, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(2147137078514449749L).languageId(0xa9df73d9e86c27d3L, 0x5186c6ce428c4f09L).build2(SMethodBuilder.createJavaParameter(SNode.class, "sub"), SMethodBuilder.createJavaParameter(SNode.class, "sup"));
+  public static final SMethod<SAbstractConcept> getGroupingTagConcept_idx_aN5M65iL = new SMethodBuilder<>(SAbstractConcept.class).name("getGroupingTagConcept").modifiers(9, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(604937216318788785L).languageId(0xa9df73d9e86c27d3L, 0x5186c6ce428c4f09L).build2();
+  public static final SMethod<String> getName_id76ZhK6XVfon = new SMethodBuilder<>(String.class).name("getName").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(8196347919644554775L).languageId(0xa9df73d9e86c27d3L, 0x5186c6ce428c4f09L).build2();
+  public static final SMethod<Boolean> wasBefore_id35Mye9KoWWW = new SMethodBuilder<>(Boolean.TYPE).name("wasBefore").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(3563060761333059388L).languageId(0xace21e08bb47d03dL, 0x9c3cc6fbae5e46d1L).build2(SMethodBuilder.createJavaParameter(SNode.class, "supremum"));
+  public static final SMethod<Boolean> groupBefore_id5XGFpL9V4bu = new SMethodBuilder<>(Boolean.TYPE).name("groupBefore").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(6876061617854628574L).languageId(0xace21e08bb47d03dL, 0x9c3cc6fbae5e46d1L).build2(SMethodBuilder.createJavaParameter(SNode.class, "group"));
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(getDefault_id1WJTL5jvcNW, subsumes_id1RcasK0V7Pl, getGroupingTagConcept_idx_aN5M65iL, getName_id76ZhK6XVfon, wasBefore_id35Mye9KoWWW, groupBefore_id5XGFpL9V4bu);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(getDefault_id1WJTL5jvcNW, subsumes_id1RcasK0V7Pl, getGroupingTagConcept_idx_aN5M65iL, getName_id76ZhK6XVfon, wasBefore_id35Mye9KoWWW, groupBefore_id5XGFpL9V4bu);
 
-  private static void ___init___(@NotNull SNode __thisNode__) {
-  }
 
   /*package*/ static SNode getDefault_id1WJTL5jvcNW(@NotNull SAbstractConcept __thisConcept__) {
     return SConceptOperations.createNewNode(MetaAdapterFactory.getConcept(0x9c3cc6fbae5e46d1L, 0xace21e08bb47d03dL, 0x1e22ec1660262d98L, "org.iets3.core.expr.typetags.bindingtime.structure.BTtag"));
@@ -107,10 +103,6 @@ public final class BTtag__BehaviorDescriptor extends BaseBHDescriptor {
   /*package*/ BTtag__BehaviorDescriptor() {
   }
 
-  @Override
-  protected void initNode(@NotNull SNode node, @NotNull SConstructor constructor, @Nullable Object[] parameters) {
-    ___init___(node);
-  }
 
   @Override
   protected <T> T invokeSpecial0(@NotNull SNode node, @NotNull SMethod<T> method, @Nullable Object[] parameters) {

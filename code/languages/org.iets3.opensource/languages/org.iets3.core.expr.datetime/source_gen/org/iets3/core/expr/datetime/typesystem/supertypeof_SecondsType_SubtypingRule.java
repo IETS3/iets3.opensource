@@ -27,9 +27,6 @@ public class supertypeof_SecondsType_SubtypingRule extends SubtypingRule_Runtime
   public boolean isWeak() {
     return false;
   }
-  public boolean surelyKeepsConcept() {
-    return true;
-  }
   private static SNode createTimeDeltaType_wnbgxp_a0a1() {
     SNodeBuilder n0 = new SNodeBuilder().init(CONCEPTS.TimeDeltaType$tq);
     return n0.getResult();

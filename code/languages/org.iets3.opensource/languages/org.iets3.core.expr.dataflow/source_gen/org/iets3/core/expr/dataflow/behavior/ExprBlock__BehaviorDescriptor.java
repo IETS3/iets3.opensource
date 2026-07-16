@@ -8,7 +8,6 @@ import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import org.jetbrains.mps.openapi.model.SNode;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import java.util.Map;
 import java.util.List;
@@ -19,7 +18,6 @@ import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
 import java.util.Objects;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations;
-import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 import jetbrains.mps.smodel.builder.SNodeBuilder;
@@ -31,12 +29,10 @@ import org.jetbrains.mps.openapi.language.SProperty;
 public final class ExprBlock__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getConcept(0xcee4aa62aca94f26L, 0x960275129cd457c9L, 0x4f91a4533f716984L, "org.iets3.core.expr.dataflow.structure.ExprBlock");
 
-  public static final SMethod<SNode> makeFunction_id2nByCcx_v36 = new SMethodBuilder<SNode>(new SJavaCompoundTypeImpl((Class<SNode>) ((Class) Object.class))).name("makeFunction").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(2731303994832318662L).languageId(0x960275129cd457c9L, 0xcee4aa62aca94f26L).build2(SMethodBuilder.createJavaParameter((Class<Map<SNode, SNode>>) ((Class) Object.class), ""));
+  public static final SMethod<SNode> makeFunction_id2nByCcx_v36 = new SMethodBuilder<>(SNode.class).name("makeFunction").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(2731303994832318662L).languageId(0x960275129cd457c9L, 0xcee4aa62aca94f26L).build2(SMethodBuilder.createJavaParameter((Class<Map<SNode, SNode>>) ((Class) Object.class), "collector"));
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(makeFunction_id2nByCcx_v36);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(makeFunction_id2nByCcx_v36);
 
-  private static void ___init___(@NotNull SNode __thisNode__) {
-  }
 
   /*package*/ static SNode makeFunction_id2nByCcx_v36(@NotNull SNode __thisNode__, Map<SNode, SNode> collector) {
     final SNode fun = Block__BehaviorDescriptor.makeFunctionSig_id2nByCcx$A7b.invoke(__thisNode__);
@@ -57,10 +53,6 @@ public final class ExprBlock__BehaviorDescriptor extends BaseBHDescriptor {
   /*package*/ ExprBlock__BehaviorDescriptor() {
   }
 
-  @Override
-  protected void initNode(@NotNull SNode node, @NotNull SConstructor constructor, @Nullable Object[] parameters) {
-    ___init___(node);
-  }
 
   @Override
   protected <T> T invokeSpecial0(@NotNull SNode node, @NotNull SMethod<T> method, @Nullable Object[] parameters) {

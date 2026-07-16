@@ -7,7 +7,6 @@ import org.jetbrains.mps.openapi.language.SAbstractConcept;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import java.util.List;
 import java.util.Arrays;
@@ -27,9 +26,9 @@ import org.jetbrains.mps.openapi.language.SProperty;
 public final class AsilConstraints__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getConcept(0x3d5cb9202b5f4dcbL, 0x834968b4bf077e63L, 0x3cd510b39c56e629L, "org.iets3.safety.attributes.structure.AsilConstraints");
 
-  public static final SMethod<Integer> calculateAsilLevel_id3Nl4beslLM4 = new SMethodBuilder<Integer>(new SJavaCompoundTypeImpl(Integer.TYPE)).name("calculateAsilLevel").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(4383428175923190916L).languageId(0x834968b4bf077e63L, 0x3d5cb9202b5f4dcbL).build2();
+  public static final SMethod<Integer> calculateAsilLevel_id3Nl4beslLM4 = new SMethodBuilder<>(Integer.TYPE).name("calculateAsilLevel").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(4383428175923190916L).languageId(0x834968b4bf077e63L, 0x3d5cb9202b5f4dcbL).build2();
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(calculateAsilLevel_id3Nl4beslLM4);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(calculateAsilLevel_id3Nl4beslLM4);
 
   private static void ___init___(@NotNull SNode __thisNode__) {
 
