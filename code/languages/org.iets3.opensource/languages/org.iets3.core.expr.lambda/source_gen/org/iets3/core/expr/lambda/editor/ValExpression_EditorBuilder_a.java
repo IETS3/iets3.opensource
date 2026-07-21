@@ -71,6 +71,7 @@ import java.util.ArrayList;
 import com.mbeddr.mpsutil.grammarcells.runtime.StringOrSequenceQuery;
 import com.mbeddr.mpsutil.grammarcells.runtime.MultiTextActionItem;
 import jetbrains.mps.smodel.action.SNodeFactoryOperations;
+import org.iets3.core.expr.base.plugin.EditorCustomizationConfigHelper;
 import org.jetbrains.annotations.Nullable;
 import org.jetbrains.mps.openapi.language.SConcept;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
@@ -380,6 +381,11 @@ import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
             final SNode sourceNode = ctx.getNode();
             EditorContext editorContext = ctx.getEditorContext();
             SNode newNode = SNodeFactoryOperations.setNewChild(SNodeOperations.cast(sourceNode, CONCEPTS.ValExpression$fC), LINKS.type$1eya, null);
+            new Object() {
+              public void postprocess(SNode node) {
+                EditorCustomizationConfigHelper.getConfig().postProcessOptionalCell(EditorCustomizationConfigHelper.getIdentifier(CONCEPTS.ValExpression$fC, LINKS.type$1eya), node, editorContext);
+              }
+            }.postprocess(sourceNode);
           }
           @Override
           public SAbstractConcept getOutputConcept() {
@@ -392,7 +398,8 @@ import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
             SNode node = ctx.getNode();
             String originalText = super.getShortDescriptionText(pattern);
             EditorContext editorContext = ctx.getEditorContext();
-            return "a type for the constant value";
+            String description = EditorCustomizationConfigHelper.getConfig().getOptionalCellDescriptionText(EditorCustomizationConfigHelper.getIdentifier(CONCEPTS.ValExpression$fC, LINKS.type$1eya), node, originalText, editorContext);
+            return ((description != null && description.length() > 0) ? description : "add a type for the constant value");
           }
         });
       }
@@ -549,7 +556,8 @@ import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
             public Iterable<String> query(SNode node) {
               return new StringOrSequenceQuery() {
                 public Object queryStringOrSequence() {
-                  return "where";
+                  String description = EditorCustomizationConfigHelper.getConfig().getOptionalCellTransformationText(EditorCustomizationConfigHelper.getIdentifier(CONCEPTS.ValExpression$fC, LINKS.contract$U1k2), node, editorContext);
+                  return ((description != null && description.length() > 0) ? description : "where");
                 }
               }.query();
             }
@@ -565,6 +573,11 @@ import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
             final SNode sourceNode = ctx.getNode();
             EditorContext editorContext = ctx.getEditorContext();
             SNode newNode = SNodeFactoryOperations.setNewChild(SNodeOperations.cast(sourceNode, CONCEPTS.ValExpression$fC), LINKS.contract$U1k2, null);
+            new Object() {
+              public void postprocess(SNode node) {
+                EditorCustomizationConfigHelper.getConfig().postProcessOptionalCell(EditorCustomizationConfigHelper.getIdentifier(CONCEPTS.ValExpression$fC, LINKS.contract$U1k2), node, editorContext);
+              }
+            }.postprocess(sourceNode);
           }
           @Override
           public SAbstractConcept getOutputConcept() {
@@ -577,7 +590,8 @@ import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
             SNode node = ctx.getNode();
             String originalText = super.getShortDescriptionText(pattern);
             EditorContext editorContext = ctx.getEditorContext();
-            return "a contract for the constant value";
+            String description = EditorCustomizationConfigHelper.getConfig().getOptionalCellDescriptionText(EditorCustomizationConfigHelper.getIdentifier(CONCEPTS.ValExpression$fC, LINKS.contract$U1k2), node, originalText, editorContext);
+            return ((description != null && description.length() > 0) ? description : "add a contract for the constant value");
           }
         });
       }

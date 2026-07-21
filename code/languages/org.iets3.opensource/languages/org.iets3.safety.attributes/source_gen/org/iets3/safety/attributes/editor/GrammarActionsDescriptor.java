@@ -17,13 +17,15 @@ import jetbrains.mps.lang.smodel.generator.smodelAdapter.SConceptOperations;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
 import org.jetbrains.mps.openapi.language.SConcept;
 import com.mbeddr.mpsutil.grammarcells.runtime.GrammarCellsUtil;
+import org.iets3.core.expr.base.plugin.EditorCustomizationConfigHelper;
 import org.jetbrains.mps.openapi.language.SEnumerationLiteral;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SEnumOperations;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import com.mbeddr.mpsutil.grammarcells.runtime.menu.GrammarCellsSubstituteMenuItem;
 import org.jetbrains.mps.openapi.language.SProperty;
-import org.jetbrains.mps.openapi.model.SNode;
 import org.jetbrains.annotations.NotNull;
+import org.jetbrains.mps.openapi.model.SNode;
+import jetbrains.mps.openapi.editor.EditorContext;
 import jetbrains.mps.smodel.action.SNodeFactoryOperations;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations;
 import jetbrains.mps.openapi.editor.menus.transformation.TransformationMenuItem;
@@ -63,6 +65,11 @@ public class GrammarActionsDescriptor extends AbstractGrammarActionDescriptor im
 
                 if (SConceptOperations.isSubConceptOf(SNodeOperations.asSConcept(outputConcept), SNodeOperations.asSConcept(expectedOutputConcept))) {
                   boolean isApplicable = GrammarCellsUtil.canBeChild(subconcept, _context);
+                  isApplicable &= new Object() {
+                    public boolean query(SAbstractConcept expectedConcept) {
+                      return EditorCustomizationConfigHelper.getConfig().isWrapperCellSubstitutionActivated(EditorCustomizationConfigHelper.getIdentifier(CONCEPTS.ASILLevelValue$fW, PROPS.value$wS9f), expectedConcept, null, null);
+                    }
+                  }.query(expectedOutputConcept);
                   if (isApplicable) {
                     List<SEnumerationLiteral> enumLiterals = SEnumOperations.getMembers(MetaAdapterFactory.getEnumeration(0x3d5cb9202b5f4dcbL, 0x834968b4bf077e63L, 0x3ce7d4897445a3c0L, "org.iets3.safety.attributes.structure.ASILLevelEnum"));
 
@@ -73,12 +80,27 @@ public class GrammarActionsDescriptor extends AbstractGrammarActionDescriptor im
                           return SEnumOperations.getMemberPresentation(literal);
                         }
 
+                        @Override
+                        public String getDescriptionText(@NotNull String pattern) {
+                          String originalText = super.getDescriptionText(pattern);
+                          SNode wrappedNode = null;
+
+                          SAbstractConcept wrappedConcept = this.getOutputConcept();
+                          EditorContext editorContext = _context.getEditorContext();
+                          String descriptiontext = EditorCustomizationConfigHelper.getConfig().getWrapperCellSubstitutionDescriptionText(EditorCustomizationConfigHelper.getIdentifier(CONCEPTS.ASILLevelValue$fW, PROPS.value$wS9f), wrappedNode, wrappedConcept, subconcept, originalText, editorContext);
+                          return ((descriptiontext != null && descriptiontext.length() > 0) ? descriptiontext : originalText);
+                        }
 
                         @Override
                         public SNode createNode(@NotNull String pattern) {
                           SNode newNode = SNodeFactoryOperations.createNewNode(outputConcept, null);
                           SPropertyOperations.assignEnum(newNode, PROPS.value$wS9f, literal);
 
+                          new Object() {
+                            public void postProcess(SNode node, EditorContext editorContext, SNode parentNode) {
+                              EditorCustomizationConfigHelper.getConfig().wrapperCellSubstitutionPostProcess(EditorCustomizationConfigHelper.getIdentifier(CONCEPTS.ASILLevelValue$fW, PROPS.value$wS9f), node, editorContext);
+                            }
+                          }.postProcess(newNode, _context.getEditorContext(), _context.getParentNode());
                           return newNode;
                         }
                         @Override
@@ -115,6 +137,11 @@ public class GrammarActionsDescriptor extends AbstractGrammarActionDescriptor im
 
                 if (SConceptOperations.isSubConceptOf(SNodeOperations.asSConcept(outputConcept), SNodeOperations.asSConcept(expectedOutputConcept))) {
                   boolean isApplicable = GrammarCellsUtil.canBeChild(subconcept, _context);
+                  isApplicable &= new Object() {
+                    public boolean query(SAbstractConcept expectedConcept) {
+                      return EditorCustomizationConfigHelper.getConfig().isWrapperCellSubstitutionActivated(EditorCustomizationConfigHelper.getIdentifier(CONCEPTS.ControllabilityValue$80, PROPS.value$Yy4w), expectedConcept, null, null);
+                    }
+                  }.query(expectedOutputConcept);
                   if (isApplicable) {
                     List<SEnumerationLiteral> enumLiterals = SEnumOperations.getMembers(MetaAdapterFactory.getEnumeration(0x3d5cb9202b5f4dcbL, 0x834968b4bf077e63L, 0x710b4f5487c7a161L, "org.iets3.safety.attributes.structure.ControllabilityEnum"));
 
@@ -125,12 +152,27 @@ public class GrammarActionsDescriptor extends AbstractGrammarActionDescriptor im
                           return SEnumOperations.getMemberPresentation(literal);
                         }
 
+                        @Override
+                        public String getDescriptionText(@NotNull String pattern) {
+                          String originalText = super.getDescriptionText(pattern);
+                          SNode wrappedNode = null;
+
+                          SAbstractConcept wrappedConcept = this.getOutputConcept();
+                          EditorContext editorContext = _context.getEditorContext();
+                          String descriptiontext = EditorCustomizationConfigHelper.getConfig().getWrapperCellSubstitutionDescriptionText(EditorCustomizationConfigHelper.getIdentifier(CONCEPTS.ControllabilityValue$80, PROPS.value$Yy4w), wrappedNode, wrappedConcept, subconcept, originalText, editorContext);
+                          return ((descriptiontext != null && descriptiontext.length() > 0) ? descriptiontext : originalText);
+                        }
 
                         @Override
                         public SNode createNode(@NotNull String pattern) {
                           SNode newNode = SNodeFactoryOperations.createNewNode(outputConcept, null);
                           SPropertyOperations.assignEnum(newNode, PROPS.value$Yy4w, literal);
 
+                          new Object() {
+                            public void postProcess(SNode node, EditorContext editorContext, SNode parentNode) {
+                              EditorCustomizationConfigHelper.getConfig().wrapperCellSubstitutionPostProcess(EditorCustomizationConfigHelper.getIdentifier(CONCEPTS.ControllabilityValue$80, PROPS.value$Yy4w), node, editorContext);
+                            }
+                          }.postProcess(newNode, _context.getEditorContext(), _context.getParentNode());
                           return newNode;
                         }
                         @Override
@@ -167,6 +209,11 @@ public class GrammarActionsDescriptor extends AbstractGrammarActionDescriptor im
 
                 if (SConceptOperations.isSubConceptOf(SNodeOperations.asSConcept(outputConcept), SNodeOperations.asSConcept(expectedOutputConcept))) {
                   boolean isApplicable = GrammarCellsUtil.canBeChild(subconcept, _context);
+                  isApplicable &= new Object() {
+                    public boolean query(SAbstractConcept expectedConcept) {
+                      return EditorCustomizationConfigHelper.getConfig().isWrapperCellSubstitutionActivated(EditorCustomizationConfigHelper.getIdentifier(CONCEPTS.ExposureValue$av, PROPS.value$YAJn), expectedConcept, null, null);
+                    }
+                  }.query(expectedOutputConcept);
                   if (isApplicable) {
                     List<SEnumerationLiteral> enumLiterals = SEnumOperations.getMembers(MetaAdapterFactory.getEnumeration(0x3d5cb9202b5f4dcbL, 0x834968b4bf077e63L, 0x710b4f5487c7a133L, "org.iets3.safety.attributes.structure.ExposureEnum"));
 
@@ -177,12 +224,27 @@ public class GrammarActionsDescriptor extends AbstractGrammarActionDescriptor im
                           return SEnumOperations.getMemberPresentation(literal);
                         }
 
+                        @Override
+                        public String getDescriptionText(@NotNull String pattern) {
+                          String originalText = super.getDescriptionText(pattern);
+                          SNode wrappedNode = null;
+
+                          SAbstractConcept wrappedConcept = this.getOutputConcept();
+                          EditorContext editorContext = _context.getEditorContext();
+                          String descriptiontext = EditorCustomizationConfigHelper.getConfig().getWrapperCellSubstitutionDescriptionText(EditorCustomizationConfigHelper.getIdentifier(CONCEPTS.ExposureValue$av, PROPS.value$YAJn), wrappedNode, wrappedConcept, subconcept, originalText, editorContext);
+                          return ((descriptiontext != null && descriptiontext.length() > 0) ? descriptiontext : originalText);
+                        }
 
                         @Override
                         public SNode createNode(@NotNull String pattern) {
                           SNode newNode = SNodeFactoryOperations.createNewNode(outputConcept, null);
                           SPropertyOperations.assignEnum(newNode, PROPS.value$YAJn, literal);
 
+                          new Object() {
+                            public void postProcess(SNode node, EditorContext editorContext, SNode parentNode) {
+                              EditorCustomizationConfigHelper.getConfig().wrapperCellSubstitutionPostProcess(EditorCustomizationConfigHelper.getIdentifier(CONCEPTS.ExposureValue$av, PROPS.value$YAJn), node, editorContext);
+                            }
+                          }.postProcess(newNode, _context.getEditorContext(), _context.getParentNode());
                           return newNode;
                         }
                         @Override
@@ -219,6 +281,11 @@ public class GrammarActionsDescriptor extends AbstractGrammarActionDescriptor im
 
                 if (SConceptOperations.isSubConceptOf(SNodeOperations.asSConcept(outputConcept), SNodeOperations.asSConcept(expectedOutputConcept))) {
                   boolean isApplicable = GrammarCellsUtil.canBeChild(subconcept, _context);
+                  isApplicable &= new Object() {
+                    public boolean query(SAbstractConcept expectedConcept) {
+                      return EditorCustomizationConfigHelper.getConfig().isWrapperCellSubstitutionActivated(EditorCustomizationConfigHelper.getIdentifier(CONCEPTS.SeverityValue$XT, PROPS.value$aIqG), expectedConcept, null, null);
+                    }
+                  }.query(expectedOutputConcept);
                   if (isApplicable) {
                     List<SEnumerationLiteral> enumLiterals = SEnumOperations.getMembers(MetaAdapterFactory.getEnumeration(0x3d5cb9202b5f4dcbL, 0x834968b4bf077e63L, 0x710b4f5487c7a116L, "org.iets3.safety.attributes.structure.SeverityEnum"));
 
@@ -229,12 +296,27 @@ public class GrammarActionsDescriptor extends AbstractGrammarActionDescriptor im
                           return SEnumOperations.getMemberPresentation(literal);
                         }
 
+                        @Override
+                        public String getDescriptionText(@NotNull String pattern) {
+                          String originalText = super.getDescriptionText(pattern);
+                          SNode wrappedNode = null;
+
+                          SAbstractConcept wrappedConcept = this.getOutputConcept();
+                          EditorContext editorContext = _context.getEditorContext();
+                          String descriptiontext = EditorCustomizationConfigHelper.getConfig().getWrapperCellSubstitutionDescriptionText(EditorCustomizationConfigHelper.getIdentifier(CONCEPTS.SeverityValue$XT, PROPS.value$aIqG), wrappedNode, wrappedConcept, subconcept, originalText, editorContext);
+                          return ((descriptiontext != null && descriptiontext.length() > 0) ? descriptiontext : originalText);
+                        }
 
                         @Override
                         public SNode createNode(@NotNull String pattern) {
                           SNode newNode = SNodeFactoryOperations.createNewNode(outputConcept, null);
                           SPropertyOperations.assignEnum(newNode, PROPS.value$aIqG, literal);
 
+                          new Object() {
+                            public void postProcess(SNode node, EditorContext editorContext, SNode parentNode) {
+                              EditorCustomizationConfigHelper.getConfig().wrapperCellSubstitutionPostProcess(EditorCustomizationConfigHelper.getIdentifier(CONCEPTS.SeverityValue$XT, PROPS.value$aIqG), node, editorContext);
+                            }
+                          }.postProcess(newNode, _context.getEditorContext(), _context.getParentNode());
                           return newNode;
                         }
                         @Override
@@ -371,17 +453,17 @@ public class GrammarActionsDescriptor extends AbstractGrammarActionDescriptor im
     return rules;
   }
 
-  private static final class PROPS {
-    /*package*/ static final SProperty value$wS9f = MetaAdapterFactory.getProperty(0x3d5cb9202b5f4dcbL, 0x834968b4bf077e63L, 0x1b5a6519ee9e81e2L, 0x1b5a6519ee9e81e6L, "value");
-    /*package*/ static final SProperty value$Yy4w = MetaAdapterFactory.getProperty(0x3d5cb9202b5f4dcbL, 0x834968b4bf077e63L, 0x710b4f5487c7a15dL, 0x710b4f5487c8b047L, "value");
-    /*package*/ static final SProperty value$YAJn = MetaAdapterFactory.getProperty(0x3d5cb9202b5f4dcbL, 0x834968b4bf077e63L, 0x710b4f5487c7a132L, 0x710b4f5487c8b04aL, "value");
-    /*package*/ static final SProperty value$aIqG = MetaAdapterFactory.getProperty(0x3d5cb9202b5f4dcbL, 0x834968b4bf077e63L, 0x710b4f5487c7a12dL, 0x710b4f5487c7a12eL, "value");
-  }
-
   private static final class CONCEPTS {
     /*package*/ static final SConcept ASILLevelValue$fW = MetaAdapterFactory.getConcept(0x3d5cb9202b5f4dcbL, 0x834968b4bf077e63L, 0x1b5a6519ee9e81e2L, "org.iets3.safety.attributes.structure.ASILLevelValue");
     /*package*/ static final SConcept ControllabilityValue$80 = MetaAdapterFactory.getConcept(0x3d5cb9202b5f4dcbL, 0x834968b4bf077e63L, 0x710b4f5487c7a15dL, "org.iets3.safety.attributes.structure.ControllabilityValue");
     /*package*/ static final SConcept ExposureValue$av = MetaAdapterFactory.getConcept(0x3d5cb9202b5f4dcbL, 0x834968b4bf077e63L, 0x710b4f5487c7a132L, "org.iets3.safety.attributes.structure.ExposureValue");
     /*package*/ static final SConcept SeverityValue$XT = MetaAdapterFactory.getConcept(0x3d5cb9202b5f4dcbL, 0x834968b4bf077e63L, 0x710b4f5487c7a12dL, "org.iets3.safety.attributes.structure.SeverityValue");
+  }
+
+  private static final class PROPS {
+    /*package*/ static final SProperty value$wS9f = MetaAdapterFactory.getProperty(0x3d5cb9202b5f4dcbL, 0x834968b4bf077e63L, 0x1b5a6519ee9e81e2L, 0x1b5a6519ee9e81e6L, "value");
+    /*package*/ static final SProperty value$Yy4w = MetaAdapterFactory.getProperty(0x3d5cb9202b5f4dcbL, 0x834968b4bf077e63L, 0x710b4f5487c7a15dL, 0x710b4f5487c8b047L, "value");
+    /*package*/ static final SProperty value$YAJn = MetaAdapterFactory.getProperty(0x3d5cb9202b5f4dcbL, 0x834968b4bf077e63L, 0x710b4f5487c7a132L, 0x710b4f5487c8b04aL, "value");
+    /*package*/ static final SProperty value$aIqG = MetaAdapterFactory.getProperty(0x3d5cb9202b5f4dcbL, 0x834968b4bf077e63L, 0x710b4f5487c7a12dL, 0x710b4f5487c7a12eL, "value");
   }
 }
