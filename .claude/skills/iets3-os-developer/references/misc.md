@@ -37,9 +37,9 @@ Repo-specific knowledge that does not belong to a single language domain (variab
 
 One-liners for the project's remaining top-level groups — **scaffolding verified against the module/concept lists, not yet mined**; expect to explore before working there:
 
-- **`analysis/`** — `org.iets3.analysis.base` (solver abstraction + async update/propagation infrastructure; the actual solver is provided by core via extension point — see "Configuration update propagation" in `variability.md`; async tests in `test.org.iets3.analysis.base.async@tests`), `org.iets3.analysis.logic.operator`, `org.iets3.analysis.solversupport.util`.
+- **`analysis/`** — `org.iets3.analysis.base` (solver abstraction + async update/propagation infrastructure; the actual solver is provided by core via extension point — see "Configuration update propagation" in `variability-configuration.md`; async tests in `test.org.iets3.analysis.base.async@tests`), `org.iets3.analysis.logic.operator`, `org.iets3.analysis.solversupport.util`.
 - **`assessmt/`** — `org.iets3.core.assessment`: query-based assessments over models (concepts `GenericTraceQuery`, `UntracedElementsQuery`, results) — reports on e.g. untraced elements.
-- **`trace/`** — `org.iets3.core.trace`: tracing links between model elements (`ITrace`, `TraceAttribute`, trace kinds/target providers); query tests in `test.iets3.core.tracequery`. The **tracing hint** interaction with variability editors is documented in `variability.md` (config-editor performance).
+- **`trace/`** — `org.iets3.core.trace`: tracing links between model elements (`ITrace`, `TraceAttribute`, trace kinds/target providers); query tests in `test.iets3.core.tracequery`. The **tracing hint** interaction with variability editors is documented in `variability-configuration.md` (config-editor performance).
 - **`safety/`** — `org.iets3.safety.attributes`: ISO-26262-style safety attributes (ASIL level, severity, exposure, controllability).
 - **`contextfilter/`** — `org.iets3.contextfilter` (+ plugin): context-based filtering of projections (`ContextFilterFrame`, `IContextSelector`).
 - **`req/`** — besides `org.iets3.req.core` (see above): `org.iets3.glossary` (glossary terms, `TermRefWord` references in prose, glossary assessments), `org.iets3.req`, `org.iets3.req.plugin`.

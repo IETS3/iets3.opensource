@@ -25,7 +25,10 @@ Like the other layers, this is a growing knowledge base fed by analyzing merged 
 
 Organized by domain; this repo skill will grow, so knowledge is split by topic from the start:
 
-- **`references/variability.md`** — the variability languages (`org.iets3.variability.*`): language architecture (featuremodel vs. configuration), checking rules, editors, update/propagation machinery, 150%→100% filtering, skeleton trees.
+- **`references/variability.md`** — variability overview: the language architecture (featuremodel vs. configuration split, dependency direction). Load first for any variability task; details split by language layer:
+  - **`references/variability-featuremodel.md`** — `featuremodel.base`: checking rules, tree/diagram editor, constraints.
+  - **`references/variability-configuration.md`** — `configuration.base`: editors, consistency rules, update/propagation machinery, inheritance, combination extension points.
+  - **`references/variability-artifacts.md`** — `artifacts.base` + runtime: the IVAA extension surface, renamers, filtering errors, caches, skeleton trees, for-all-variants runtime.
 - **`references/kernelf.md`** — the KernelF expression languages (`org.iets3.core.expr.*`, physical units excluded): the language map (lang-core / lang-advanced / lang-stateful, interpreter-per-language and genjava conventions), enums, lambdas, naming rules, number types and the typesystem.
 - **`references/physunits.md`** — the physical-units language (`typetags.physunits`): SI unit libraries, typesystem, implicit conversions, conversion internals; note that `typetags.units` is the deprecated legacy implementation and must not be used.
 - **`references/components.md`** — the components DSL group (`org.iets3.components.*`): module map incl. the functional components that moved from core.
