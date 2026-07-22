@@ -15,6 +15,15 @@ Repo-specific knowledge for the physical-units language (`org.iets3.core.expr.ty
 - Typesystem tests are in **`test.ts.expr.os.phyunits@tests`** — `ExpressionsPart1` (`NodesTestCase`) with a `Quantities` `Library` as test data (`testing.type-compatibility-matrix`).
 - **Known open issue (deferred):** adding mixed digital-information units of the same quantity (e.g. `kbyte + bit`) computes a wrong result — the byte↔bit implicit conversion misbehaves; flagged in #1594 review, deferred to separate tickets.
 
+## Implicit conversions (PR #1754)
+
+- Conversion rules between units of the same quantity can be marked **`implicit`**; since #1754 this actually takes effect — in the **typesystem** and in the **interpreter** (before, only unit-*prefix* handling was implicit). Applied to **plus/minus and binary comparisons** (`<`, `=`, …); multiplication/division need no implicit conversion.
+- **Direction strategy** for a binary expression: (1) only left→right conversion exists → apply it; (2) only right→left → apply that; (3) both exist → the rule with **higher priority** wins *(e.g. `2 min + 60 s` → min→s has higher priority → `120 s + 60 s`, avoiding rounding issues)*; (4) no direct conversion → convert both operands to a **common standard unit** (default: SI base unit).
+- Configurable via **`IUnitLangConfig`**: `implicitConversionIsEnabled[At]` switches the mechanism on/off; `getUnitStandardizer` sets the standard-unit strategy (default SI). The four-step strategy itself is a candidate for future extension-point configurability.
+- **Interpreter architecture**: conversion cannot happen in the local evaluation rule — runtime values are unit-less, so after evaluating an operand it is too late. On a unit-`TaggedExpression` the interpreter **walks up the AST** to compute the applicable conversions first (`interp.context-dependent-coercion` in `mps-developer`); the conversion logic is factored into **`UnitExpressionConverter`**. Known trade-off: this up-walk may be too restrictive for modular interpreter extensions.
+- Typesystem fix in the same PR: comparisons of tagged numbers now have plain type `boolean` (was wrongly `boolean<unit>`). Checking-rule errors carry a **tag for tests** instead of tests binding to message text.
+- Tests were consolidated into a **new physunits test solution** (duplicate roots and orphaned check-annotations cleaned up), e.g. `test.org.iets3.core.expr.typetags.physunits.combine@tests`. Feature attributes got a **type** in this PR (prerequisite for units on feature attributes, consumed by core #1742).
+
 ## Documentation
 
 - **The physunits documentation is itself an MPS model**: `org.iets3.core.expr.typetags.physunits.documentation` — fix doc typos there like any other model edit.
