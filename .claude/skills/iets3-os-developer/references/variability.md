@@ -8,6 +8,11 @@ Repo-specific knowledge for the variability languages (`org.iets3.variability.*`
 - The deprecated `*_old` bridge concepts from that split were **deleted in #1632** after a >1-year deprecation window (`structure.deprecation-window` in `mps-developer`) — code referencing `*_old` variability concepts is dead.
 - Earlier in the same lifecycle, #1548 removed the deprecated stubs left behind when **`VariabilityModelChunk`** (+ three interface concepts) moved to its own language in early 2025. Because the original move migration had a bug (spurious `contents_old` child on migrated chunk roots), **`org.iets3.variability.base.typesystem`** carries a checking rule + *automatic* quickfix that detects and removes that debris in user models.
 
+## Artifact extension surface (`org.iets3.variability.artifacts.base`)
+
+- The interfaces for **making a DSL variability-aware** are declared here: **`IVariabilityAwareArtifact`** (IVAA; base interface `IPreviewableArtifact` with the preview hooks, `dependentSourceComputer()` for implicit filtering logic, `addCustomChecks(ISolverCheckExtender)` for solver-based 150% invariants), the variation-point family **`IConditionVarPoint`** / **`ITabularVarPoint`** / **`ICheckableTabularVarPoint`** (+ `FeatureDecTab` as the reference implementation, wrappable via `FeatureDecTabWrapper`), and `ICanHide` for preview-hideable nodes. Changes to these interfaces ripple into customer language extensions — they are **public API** (see `api.deprecated-method-default-impl` in `mps-developer` for how callback changes were handled).
+- The **step-by-step extension recipe** (NodeAttribute pattern, artifact groups/dependencies, preview wiring, checking-rule strategies incl. the `for all variants` keyword) is documented in the **dev guide in the core repo** (solution `org.iets3.variability.doc.devguide`; details in the core repo skill `iets3-core-developer`).
+
 ## Feature-model checking rules
 
 - Checking rules for the feature-model language live in **`org.iets3.variability.featuremodel.base.typesystem`** (`NonTypesystemRule`s per concept, e.g. `check_FeatureAttribute`, `check_FeatureAttributeDotTarget`) — follow `types.checking-rules` in `mps-developer`.
