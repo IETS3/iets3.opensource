@@ -1,6 +1,6 @@
 ---
 name: iets3-os-developer
-description: Repo-specific development knowledge for IETS3/iets3.opensource — existing infrastructure and component knowledge across the variability languages, the KernelF expression languages, and physical units. TRIGGER when: implementing a ticket or bugfix, preparing or reviewing a PR, or doing any language development work in the iets3.opensource repository.
+description: Repo-specific development knowledge for IETS3/iets3.opensource — existing infrastructure and component knowledge across the variability languages, the KernelF expression languages, physical units, the components DSLs, and the smaller DSL groups (req, trace, analysis, …). TRIGGER when: implementing a ticket or bugfix, preparing or reviewing a PR, or doing any language development work in the iets3.opensource repository.
 ---
 
 <!-- synced-with-mps-developer: 2026-07-22 -->
@@ -25,7 +25,8 @@ Like the other layers, this is a growing knowledge base fed by analyzing merged 
 
 Organized by domain; this repo skill will grow, so knowledge is split by topic from the start:
 
-- **`references/variability.md`** — the variability languages (`org.iets3.variability.*`): feature-model checking rules and constraints, the skeleton-tree viewer.
-- **`references/kernelf.md`** — the KernelF expression languages (`org.iets3.core.expr.*`, physical units excluded): number types and the typesystem.
-- **`references/physunits.md`** — the physical-units language (`typetags.physunits`); note that `typetags.units` is the deprecated legacy implementation and must not be used.
-- **`references/misc.md`** — cross-cutting knowledge not tied to one domain (e.g. sandbox/testing infrastructure); home for new topics until they warrant their own file.
+- **`references/variability.md`** — the variability languages (`org.iets3.variability.*`): language architecture (featuremodel vs. configuration), checking rules, editors, update/propagation machinery, 150%→100% filtering, skeleton trees.
+- **`references/kernelf.md`** — the KernelF expression languages (`org.iets3.core.expr.*`, physical units excluded): the language map (lang-core / lang-advanced / lang-stateful, interpreter-per-language and genjava conventions), enums, lambdas, naming rules, number types and the typesystem.
+- **`references/physunits.md`** — the physical-units language (`typetags.physunits`): SI unit libraries, typesystem, implicit conversions, conversion internals; note that `typetags.units` is the deprecated legacy implementation and must not be used.
+- **`references/components.md`** — the components DSL group (`org.iets3.components.*`): module map incl. the functional components that moved from core.
+- **`references/misc.md`** — cross-cutting knowledge and the structural map of the remaining DSL groups (analysis, assessment, trace, safety, contextfilter, req/glossary, core.*, linters), plus build/publishing and interpreter-test infrastructure; home for new topics until they warrant their own file.

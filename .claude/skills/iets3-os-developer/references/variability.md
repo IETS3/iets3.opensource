@@ -72,7 +72,8 @@ Repo-specific knowledge for the variability languages (`org.iets3.variability.*`
 ## IRenamer API (150% → 100% filtering)
 
 - The **`IRenamer` interface and the renamer implementations live here in os** (`org.iets3.variability.artifacts.base.plugin`, renamers virtual package) — the filtering algorithm that *invokes* them lives in core (`IVAAFilterByConfig`, see `iets3-core-developer`). API changes are cross-repo pairs (os #1745 ↔ core #1739).
-- Two callbacks: legacy **`rename(...)`** (per node, during filtering — **deprecated**, kept for backwards compatibility) and **`renameInstances`** (since #1745): called once per **group of related instance clones** as a postprocessing step, with a `PostRenamer` base implementation (`api.aggregate-postprocess-callback` in `mps-developer`).
+- Two callbacks: legacy **`rename(...)`** (per node, during filtering — **deprecated**, has an empty default implementation so implementors can delete their override, `api.deprecated-method-default-impl` in `mps-developer`) and **`renameInstances`** (since #1745): called once per **group of related instance clones** as a postprocessing step, with a `PostRenamer` base implementation (`api.aggregate-postprocess-callback` in `mps-developer`).
+- Helper base classes **`DefaultRenamer`** and **`ConsistentRenamer`** (same plugin model) implement the corrected `oldInstances` contract (core #1707: the set no longer contains the instance currently being created) — extend these instead of implementing `IRenamer` from scratch.
 - **Determinism matters**: group traversal order is kept stable so renaming results are reproducible across runs — preserve this when touching the bookkeeping (original component → instances map).
 - The hierarchy was restructured and **extensively javadoc'd in PR #1626** as docs-first preparation for core's `rename()` semantics fix (core #1706/#1707); since then client code can also drop the deprecated `rename()` entirely. Keep the javadoc authoritative when semantics evolve.
 
@@ -100,7 +101,7 @@ Repo-specific knowledge for the variability languages (`org.iets3.variability.*`
 
 ## For-all-variants typesystem runtime
 
-- The "for-all-variants" extension's typesystem runtime lives in solution **`org.iets3.variability.artifacts.typesystem.runtime`** (plugin model) — moved here from IETS3.Core in 2025.
+- The "for-all-variants" extension's typesystem runtime lives in solution **`org.iets3.variability.artifacts.typesystem.runtime`** (plugin model, central class **`ForAllVariantsImpl`**) — moved here from IETS3.Core in 2025.
 - It contains a **workaround for upstream MPS-34340** (restored in #1762 after an accidental deletion in core). Do **not** remove it because "nothing visibly breaks": on MPS 2024.1 exceptions from checking rules are swallowed, on 2025.1 they are reported and block customer migrations (`types.swallowed-checking-rule-exceptions` in `mps-developer`).
 - The guarding test **`TwoActualRoots` lives in IETS3.Core** (needs core-only content) — changes to this runtime need a companion core PR for the test.
 - **Always use the artifact group *including logical children***: the workaround's `canDoMulticheck` condition originally queried only `IVAAUtil.artifactGroup(ivaa)` and silently failed for checked nodes with logical children — fixed in #1775 by using **`IVAAUtil.artifactGroupIncludingLogicalChildren(...)`**. This is a **recurring bug class**: cache flushing (#1863) and this guard both initially missed logical children; any traversal/condition over an artifact group must cover them (support exists since late 2024 — older/copied code predates it).

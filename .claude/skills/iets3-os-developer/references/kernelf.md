@@ -2,6 +2,20 @@
 
 Repo-specific knowledge for the KernelF-based expression languages (`org.iets3.core.expr.*`) in iets3.opensource — everything built around Expressions. **Physical units** (`typetags.physunits`) are technically part of this stack but are big enough to have their own file — see `physunits.md`.
 
+## Language map (structural)
+
+The expression stack is organized in three module groups under the project folder `expr` (this map is scaffolding verified against the module list; most of these languages are not yet covered by mined knowledge):
+
+- **`lang-core`** — the KernelF core: `expr.base`, `expr.toplevel`, `expr.lambda`, `expr.collections`, `expr.simpleTypes`, `expr.path`, `expr.repl` (interactive REPL), `expr.tests` (the test DSL itself). Devkits: `expr.base.devkit`, `expr.core.devkit`, `expr.interpreter.devkit`, `expr.repl.devkit`.
+- **`lang-advanced`** — optional extensions: `adt`, `data`, `dataflow`, `datetime`, `doc`, `lookup`, `math`, `messages`, `metafunction`, `natlang`, `query`, `stringvalidation`, `temporal`, `util`, and the `typetags.*` family (`physunits` — see `physunits.md`; `bindingtime`; legacy `units`). Devkit: `expr.advanced.devkit`.
+- **`lang-stateful`** — stateful computation: `mutable`, `process`, `statemachines`. Devkit: `expr.stateful.devkit`.
+
+Cross-cutting conventions:
+
+- **Interpreter per language**: nearly every language `X` has a sibling solution **`X.interpreter`** holding its evaluators; some also ship an **`X.runtime`** solution with runtime classes. A new construct needs its evaluator in the owning language's interpreter solution.
+- **Java generation** lives in the separate **`genjava`** group (`org.iets3.core.expr.genjava.*`) — a new operator/construct needs the full aspect set *plus* genjava *plus* interpreter (see the enum section below), and both execution paths tested.
+- **Test organization**: typesystem/structure tests in `test.ts.expr.os*`, interpreter tests in `test.in.expr.os.*` (one model per topic, e.g. `test.in.expr.os.enums`); interpreter coverage assessment in `expr.tests` (see below).
+
 ## Enum declarations
 
 - `EnumDeclaration` and friends live in `org.iets3.core.expr.toplevel.*` (structure/behavior/editor/intentions). Its editor layout is driven by the behavior method **`EnumDeclaration.useVerticalLayout()`** (`= useVerticalLayout property || isValued()`), referenced from the enum editor, the literal editor, and the insert-literal keymap — change layout logic there, not per-cell. A `toggleVerticalLayout` intention flips the property (PR #1737). Follows `editor.user-toggleable-formatting` / `intentions.toggle-property` in `mps-developer`.

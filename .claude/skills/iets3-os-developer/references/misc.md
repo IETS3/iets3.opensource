@@ -8,10 +8,6 @@ Repo-specific knowledge that does not belong to a single language domain (variab
 - Relation kind **`requires`** (a requirement based on one or more others); **`hideEmptyChildReqsSection`** is a persisted per-chunk property shown in the inspector (persist-vs-view-state criterion: per-node + lifecycle-bound — see `editor.user-toggleable-formatting` in `mps-developer`).
 - The indentation-string computation for table views is a reusable behavior method (variability renders the same indent). Editor-hint presentation names must be **unique** — `tableWithDetails` was renamed to "Requirements Table Details" to avoid the duplicate with `table`.
 
-## Functional components (`org.iets3.components.functional.*`)
-
-- These languages **moved from iets3.core to os in Feb 2025** (customer request); core consumes them via the pin (Simbench models use them). The former opt-in `...functional.checks` language was dissolved into the main language during the move — its only rule (`check_instanceParam`) turned out invalid and was deleted in PR #1528.
-
 ## Manual check/run infrastructure (`org.iets3.core.base`)
 
 - **`ICanRunCheckManually`** marks concepts supporting "Run/Evaluate/Check All in Root Manually"; the checking rule `check_ICanRunCheckManually` (`core.base.typesystem`) warns about outdated results. Since PR #1537 the warning is **gated by `highlightWarning()` (default `false`)** — overridden `true` for `FeatureModel`, `FeatureModelConfiguration`, `ICheckableTabularVarPoint`, and `IVariabilityAwareArtifact` (override at the most general interface — see the gating bullet in `types.checking-rules`, `mps-developer`).
@@ -36,6 +32,20 @@ Repo-specific knowledge that does not belong to a single language domain (variab
 - Runner configuration lives in solution **`org.iets3.core.junit.interpreter.run.configuration`** (model `xml4JUnit`): interface **`ICustomRunnerConfig`** with implementations `TestExecutorConfigForCommandLine` and `TestExecutorConfigForIDE`. New config options (e.g. the report-filename prefix, #1743) go **on the interface** and must be implemented in *both* configs.
 - **`CustomRunnerAspect`** (build.gentests) references the `BuildMps_Solution` to run; since #1850 its reference scope is a **`CompositeScope`** (descendants of the build root *plus* solutions from other roots — `constraints.composite-scope-widening` in `mps-developer`). The generated script must **taskdef the MPS antlib**, or `runMPS` fails ("failed to create task or type runMPS").
 - Command-line run: `./gradlew execTestsByInterpreter` — the `...Pre` step runs the generated `build-testInterpreter.xml` (generate+build), the main task runs `build-testInterpreterExec.xml` and then aggregates all `InterpreterTestSuite*.xml` reports into `build/` (raw XMLs land under `build/generatedXMLs/`, a path configured in the `org.iets3.opensource.build` model, not in gradle).
+
+## Other DSL groups (structural map)
+
+One-liners for the project's remaining top-level groups — **scaffolding verified against the module/concept lists, not yet mined**; expect to explore before working there:
+
+- **`analysis/`** — `org.iets3.analysis.base` (solver abstraction + async update/propagation infrastructure; the actual solver is provided by core via extension point — see "Configuration update propagation" in `variability.md`; async tests in `test.org.iets3.analysis.base.async@tests`), `org.iets3.analysis.logic.operator`, `org.iets3.analysis.solversupport.util`.
+- **`assessmt/`** — `org.iets3.core.assessment`: query-based assessments over models (concepts `GenericTraceQuery`, `UntracedElementsQuery`, results) — reports on e.g. untraced elements.
+- **`trace/`** — `org.iets3.core.trace`: tracing links between model elements (`ITrace`, `TraceAttribute`, trace kinds/target providers); query tests in `test.iets3.core.tracequery`. The **tracing hint** interaction with variability editors is documented in `variability.md` (config-editor performance).
+- **`safety/`** — `org.iets3.safety.attributes`: ISO-26262-style safety attributes (ASIL level, severity, exposure, controllability).
+- **`contextfilter/`** — `org.iets3.contextfilter` (+ plugin): context-based filtering of projections (`ContextFilterFrame`, `IContextSelector`).
+- **`req/`** — besides `org.iets3.req.core` (see above): `org.iets3.glossary` (glossary terms, `TermRefWord` references in prose, glossary assessments), `org.iets3.req`, `org.iets3.req.plugin`.
+- **`core/`** — besides `org.iets3.core.base` (see above): `org.iets3.core.attributes` (generic attribute/annotation infrastructure), `org.iets3.core.users` (`User`/`UserDirectory`, e.g. for ownership), `org.iets3.core.plugin`, and the interpreter runner configuration (see above).
+- **`linters/`** — solution `org.iets3.opensource.linters`: mps-qa lint scripts for this repo (`types.opt-in-linter` in `mps-developer`).
+- **`comp/`** — the components DSL group: see `components.md`.
 
 ## Sandboxes for manual testing
 
