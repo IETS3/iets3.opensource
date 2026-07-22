@@ -21,6 +21,22 @@ Repo-specific knowledge that does not belong to a single language domain (variab
 
 - **`IDetectNeedToRunManually.__hash`** (interface in `org.iets3.core.base`) stores a checksum of the node's AST to detect "changed since last run". Merge conflicts on it are auto-resolved with strategy **`ours`** via a VCS merge hint in `org.iets3.core.base.vcs` (PR #1487; `vcs.merge-hints-for-computed-properties` in `mps-developer`) — the hash is recomputed after merge anyway. The same property must be **suppressed in test node comparisons** (see os #1478's quickfix editor test).
 
+## Gradle build — model check
+
+- CI model checking runs via the **`checkmodels` task, an explicitly registered `MpsCheck` task** from the itemis mps-gradle-plugin (`de.itemis.mps.gradle.tasks.MpsCheck`) in `build.gradle.kts` — the former `modelcheck` gradle *plugin* (with its `modelcheck {}` extension) was removed in #1672. Configure via the task's properties (`projectLocation`, `mpsHome`, `pluginRoots`, `folderMacros`, `junitFile`/`junitFormat`, `ignoreFailures`), not a plugin extension.
+
+## Gradle build — Maven publishing
+
+- The published POMs declare **bundled third-party JARs as `provided` dependencies** so client-side dependency scanning (SBOM/vulnerability analysis) sees them: `MavenPom.addBundledDependencies()` in `build.gradle.kts` walks the **resolved transitive closure** (BFS over `resolvedConfiguration`, deduped) — first-level-only writing was fixed in #1544 because clients re-computed transitive deps without knowing the build's exclusions (`build.pom-provided-bundled-deps` in `mps-developer`; introduced in #1507, mirrored in mbeddr.core#3284).
+
+## Interpreter-based test execution (build)
+
+- Interpreter tests run in CI via the **`execTestsByInterpreter`** task, which is *generated* by the build language **`org.iets3.opensource.build.gentests`** (generator template `...build.gentests.generator.main@generator`) — changes to how tests are executed are template edits there, not gradle edits.
+- The JNA library path must be set **on the `runMPS` invocation** inside that template; ant-property-based JNA paths are overwritten by MPS's `MpsLoadTask` (fixed in #1705, `testing.headless-ant-native-libs` in `mps-developer`).
+- Runner configuration lives in solution **`org.iets3.core.junit.interpreter.run.configuration`** (model `xml4JUnit`): interface **`ICustomRunnerConfig`** with implementations `TestExecutorConfigForCommandLine` and `TestExecutorConfigForIDE`. New config options (e.g. the report-filename prefix, #1743) go **on the interface** and must be implemented in *both* configs.
+- **`CustomRunnerAspect`** (build.gentests) references the `BuildMps_Solution` to run; since #1850 its reference scope is a **`CompositeScope`** (descendants of the build root *plus* solutions from other roots — `constraints.composite-scope-widening` in `mps-developer`). The generated script must **taskdef the MPS antlib**, or `runMPS` fails ("failed to create task or type runMPS").
+- Command-line run: `./gradlew execTestsByInterpreter` (an `...Pre` step generates, the main task drives the generated `build-testInterpreterExec.xml`); reports land under `build/generatedXMLs/`.
+
 ## Sandboxes for manual testing
 
 - Sandbox solutions in this repo are named **`org.iets3.variability.os.sandbox.*`** (e.g. `...sandbox.notpresentvalue`) — so far only the variability languages ship them. The sandbox-per-feature convention itself is family-wide — see the testing conventions in `mps-platform-projects`.

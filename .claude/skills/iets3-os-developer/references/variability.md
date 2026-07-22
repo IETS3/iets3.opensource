@@ -2,6 +2,12 @@
 
 Repo-specific knowledge for the variability languages (`org.iets3.variability.*`) in iets3.opensource. Reach for these existing mechanisms before inventing new ones; cross-references into `mps-developer` use its stable slugs.
 
+## Language architecture — featuremodel vs. configuration
+
+- Since the end-of-2024 split, feature models (`org.iets3.variability.featuremodel.base`) and variant configurations (`org.iets3.variability.configuration.base`) are **separate languages**; the dependency direction is **configuration → featuremodel, never the reverse** (a reverse dependency was explicitly removed as an architecture violation in #1632).
+- The deprecated `*_old` bridge concepts from that split were **deleted in #1632** after a >1-year deprecation window (`structure.deprecation-window` in `mps-developer`) — code referencing `*_old` variability concepts is dead.
+- Earlier in the same lifecycle, #1548 removed the deprecated stubs left behind when **`VariabilityModelChunk`** (+ three interface concepts) moved to its own language in early 2025. Because the original move migration had a bug (spurious `contents_old` child on migrated chunk roots), **`org.iets3.variability.base.typesystem`** carries a checking rule + *automatic* quickfix that detects and removes that debris in user models.
+
 ## Feature-model checking rules
 
 - Checking rules for the feature-model language live in **`org.iets3.variability.featuremodel.base.typesystem`** (`NonTypesystemRule`s per concept, e.g. `check_FeatureAttribute`, `check_FeatureAttributeDotTarget`) — follow `types.checking-rules` in `mps-developer`.
@@ -50,6 +56,12 @@ Repo-specific knowledge for the variability languages (`org.iets3.variability.*`
 - When a configuration changes, the solver computes its consequences and the update is **propagated transitively to all referencing configurations** — infrastructure in `configuration.base.plugin` (+ `org.iets3.analysis.base` plugin). Invariant since PR #1539: each dependent updates **exactly once per change, asynchronously** (UI thread stays free) — a sync+async double dispatch previously multiplied updates exponentially in nested configs (`api.exactly-once-propagation` in `mps-developer`).
 - The actual solver runs only with **core** (provided via extension point) — os hosts the propagation infra, the behavioral tests live in core; os-side async tests in `test.org.iets3.analysis.base.async@tests`.
 
+## Configuration inheritance — "Adapt to extended configuration"
+
+- Configurations can **extend an (abstract) configuration**; feature-attribute values in the extending config carry a state (`inherited` / `manual` / `unset`). The **"Adapt this configuration to the extended configuration"** intention (and its quickfix twin — both must behave identically) reconciles the extending config; its logic lives in **`org.iets3.variability.configuration.base.behavior`**.
+- The operation must be **idempotent** — #1724/#1726 fixed state drift across repeated runs (`testing.idempotent-adaptation` in `mps-developer`); inheritance behavior is covered by **`test.org.iets3.variability.configuration.base.inheritance@tests`**, including explicit idempotency tests.
+- Manual-play sandbox: `org.iets3.variability.os.sandbox` (e.g. `AttrPlay`); the `HomeNetworkFeatures`/`HomeNetwork`/`Power` roots there are **shared examples referenced elsewhere** — don't delete them while testing.
+
 ## Configuration combination logic (extension points)
 
 - How configurations combine (`extends`, `abstract`, sub-config references) is pluggable via the **`configCombinationLogicExtPoint`** extension point + interface **`IConfigCombinationLogic`** (`allowAbstractSubConfigs()`, …) in `org.iets3.variability.configuration.base.plugin`, default `DefaultConfigCombinationLogic` (PR #1832; `plugin.extension-point` in `mps-developer`). The `check_FeatureModelConfiguration` typesystem rule consults it rather than hard-coding — so per-application rules differ.
@@ -85,6 +97,13 @@ Repo-specific knowledge for the variability languages (`org.iets3.variability.*`
 - **Invariant — always resolve the artifact via `IVAA.artifactRoot()`**, never via `ivaa.parent` or the IVAA node's own subtree: artifact DSLs implement `IVariabilityAwareArtifact` **either** directly on a concept **or** as a node attribute (annotation), and raw tree navigation is wrong for one of the two shapes (review finding in #1607; same root cause as the `flushCaches` bug #1859). See the dual-implementation nuance in `structure.annotation-glue-language` (`mps-developer`).
 - Review expectations in this area: value-ish classes like `Segment` are **immutable** (no setters).
 - **Regression-prone corner**: this refactor introduced the nested-instances-with-150%-body regression later fixed core-side (core #1714/#1717) — when touching `Segment`/path logic, make sure the core skeleton-builder tests (`skeletonBuilder@tests`, incl. nested instances) still pass.
+
+## For-all-variants typesystem runtime
+
+- The "for-all-variants" extension's typesystem runtime lives in solution **`org.iets3.variability.artifacts.typesystem.runtime`** (plugin model) — moved here from IETS3.Core in 2025.
+- It contains a **workaround for upstream MPS-34340** (restored in #1762 after an accidental deletion in core). Do **not** remove it because "nothing visibly breaks": on MPS 2024.1 exceptions from checking rules are swallowed, on 2025.1 they are reported and block customer migrations (`types.swallowed-checking-rule-exceptions` in `mps-developer`).
+- The guarding test **`TwoActualRoots` lives in IETS3.Core** (needs core-only content) — changes to this runtime need a companion core PR for the test.
+- **Always use the artifact group *including logical children***: the workaround's `canDoMulticheck` condition originally queried only `IVAAUtil.artifactGroup(ivaa)` and silently failed for checked nodes with logical children — fixed in #1775 by using the logical-children-including group. This is a **recurring bug class**: cache flushing (#1863) and this guard both initially missed logical children; any traversal/condition over an artifact group must cover them (support exists since late 2024 — older/copied code predates it).
 
 ## Skeleton tree viewer
 

@@ -16,6 +16,11 @@ Repo-specific knowledge for the KernelF-based expression languages (`org.iets3.c
 
 - Which characters identifiers may contain (umlauts, `§`, apostrophes) is **per-application configurable via an extension point** since PR #1653 (`plugin.extension-point` in `mps-developer`); the consolidated validation lives around `core.base`/`core.expr.base` behavior + the `expr.base.runtime` solution — formerly duplicated `validName` copies across many `expr.*` behavior models were deleted. Tests: `test.ts.expr.os.validNameConcept`. Possible future step (noted in the PR): make the whole name regex EP-configurable.
 
+## Function name uniqueness (`IFunctionLike`)
+
+- Since #1854, the unique-name check for function-like concepts (in **`org.iets3.core.expr.lambda` behavior**, on `IFunctionLike`) spans **arguments *and* named body content (`val` and `var`)** — previously args and body-locals were only checked within their own set, so parameter shadowing went undetected (`types.name-shadowing-checks` in `mps-developer`).
+- Placement rationale (settled in review): `BlockExpression` owns the body's unique-names list, but cannot see the args — the check must live at the `IFunctionLike` level. Regression tests: `m1@tests` in `test.ts.expr.os`.
+
 ## Short lambdas
 
 - `IShortLambdaContainer`'s required-type computation (`org.iets3.core.expr.lambda.plugin`) must return a **`.copy`** of the type node — un-copied, the type gets re-parented ("stolen") from its source when attached (PR #1610; `types.copy-nodes-before-reuse` in `mps-developer`).
