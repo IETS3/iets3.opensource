@@ -14,7 +14,7 @@ Repo-specific knowledge for the KernelF-based expression languages (`org.iets3.c
 
 ## Identifier naming rules (`IValidNameConcept`)
 
-- Which characters identifiers may contain (umlauts, `§`, apostrophes) is **per-application configurable via an extension point** since PR #1653 (`plugin.extension-point` in `mps-developer`); the consolidated validation lives around `core.base`/`core.expr.base` behavior + the `expr.base.runtime` solution — formerly duplicated `validName` copies across many `expr.*` behavior models were deleted. Tests: `test.ts.expr.os.validNameConcept`. Possible future step (noted in the PR): make the whole name regex EP-configurable.
+- Which characters identifiers may contain (umlauts, `§`, apostrophes) is **per-application configurable via an extension point** since PR #1653 (`plugin.extension-point` in `mps-developer`); the consolidated validation lives around `core.base`/`core.expr.base` behavior + the `expr.base.runtime` solution — formerly duplicated `validName` copies across many `expr.*` behavior models were deleted. Tests: `test.ts.expr.os.IValidNamedConcept@tests`. Possible future step (noted in the PR): make the whole name regex EP-configurable.
 
 ## Function name uniqueness (`IFunctionLike`)
 

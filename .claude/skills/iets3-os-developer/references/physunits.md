@@ -23,12 +23,12 @@ Repo-specific knowledge for the physical-units language (`org.iets3.core.expr.ty
 - Configurable via **`IUnitLangConfig`**: `implicitConversionIsEnabled[At]` switches the mechanism on/off; `getUnitStandardizer` sets the standard-unit strategy (default SI). The four-step strategy itself is a candidate for future extension-point configurability.
 - **Interpreter architecture**: conversion cannot happen in the local evaluation rule — runtime values are unit-less, so after evaluating an operand it is too late. On a unit-`TaggedExpression` the interpreter **walks up the AST** to compute the applicable conversions first (`interp.context-dependent-coercion` in `mps-developer`); the conversion logic is factored into **`UnitExpressionConverter`**. Known trade-off: this up-walk may be too restrictive for modular interpreter extensions.
 - Typesystem fix in the same PR: comparisons of tagged numbers now have plain type `boolean` (was wrongly `boolean<unit>`). Checking-rule errors carry a **tag for tests** instead of tests binding to message text.
-- Tests were consolidated into a **new physunits test solution** (duplicate roots and orphaned check-annotations cleaned up), e.g. `test.org.iets3.core.expr.typetags.physunits.combine@tests`. Feature attributes got a **type** in this PR (prerequisite for units on feature attributes, consumed by core #1742).
+- Tests were consolidated into a **new physunits test solution** (duplicate roots and orphaned check-annotations cleaned up): `test.org.iets3.core.expr.typetags.physunits` with model `...physunits.conversion@tests`. Feature attributes got a **type** in this PR (prerequisite for units on feature attributes, consumed by core #1742).
 
 ## Unit-conversion internals (PR #1648)
 
 - Unit-conversion bookkeeping is encapsulated in the **`UnitMap`** class (physunits `behavior` model, introduced by the #1648 refactoring): it wraps the former raw `map<quantity-key, Fraction>` plumbing of `UnitConversionUtil` and related classes, with a quantity/unit-specific key class. Extend `UnitMap` instead of reintroducing raw map logic.
-- **Known pitfall (documented, deliberately not fixed):** `IConvertUnitHelper.replaceValExprWithBaseType()` builds **temporary Expression trees that are structurally inconsistent** — some descendants are `Type` nodes, not Expressions. This works because the trees are only fed into type computation, but any new code that treats them as real expressions will break; see the javadoc on the method.
+- **Known pitfall (documented, deliberately not fixed):** `IConvertUnitHelper.replaceValExprWithBaseType()` (physunits **typesystem** model) builds **temporary Expression trees that are structurally inconsistent** — some descendants are `Type` nodes, not Expressions. This works because the trees are only fed into type computation, but any new code that treats them as real expressions will break; see the javadoc on the method.
 
 ## Documentation
 
