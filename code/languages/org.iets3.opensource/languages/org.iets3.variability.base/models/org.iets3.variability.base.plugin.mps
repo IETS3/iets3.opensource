@@ -430,6 +430,15 @@
             </node>
           </node>
         </node>
+        <node concept="3cpWs8" id="2QHkgIBGJ30" role="3cqZAp">
+          <node concept="3cpWsn" id="2QHkgIBGJ31" role="3cpWs9">
+            <property role="TrG5h" value="string" />
+            <node concept="17QB3L" id="2QHkgIBGGIF" role="1tU5fm" />
+            <node concept="Xl_RD" id="2QHkgIBGJ32" role="33vP2m">
+              <property role="Xl_RC" value=":" />
+            </node>
+          </node>
+        </node>
         <node concept="3clFbF" id="26cjRACVUI5" role="3cqZAp">
           <node concept="37vLTw" id="307NTAcZFOC" role="3clFbG">
             <ref role="3cqZAo" node="26cjRACVUHk" resolve="settings" />
@@ -1273,31 +1282,6 @@
     </node>
     <node concept="3Tm1VV" id="7Sbg4UjPubM" role="1B3o_S" />
   </node>
-  <node concept="312cEu" id="7Sbg4UjPvkH">
-    <property role="3GE5qa" value="extensionPoints" />
-    <property role="TrG5h" value="AbstractExtensionWithPriority" />
-    <property role="1sVAO0" value="true" />
-    <node concept="2tJIrI" id="7Sbg4UjP$NV" role="jymVt" />
-    <node concept="3Tm1VV" id="7Sbg4UjPvkI" role="1B3o_S" />
-    <node concept="3uibUv" id="7Sbg4UjPvll" role="EKbjA">
-      <ref role="3uigEE" node="7Sbg4UjPubL" resolve="IExtensionWithPriority" />
-    </node>
-    <node concept="3clFb_" id="7Sbg4UjPwLB" role="jymVt">
-      <property role="TrG5h" value="priority" />
-      <node concept="10Oyi0" id="7Sbg4UjPwLC" role="3clF45" />
-      <node concept="3Tm1VV" id="7Sbg4UjPwLD" role="1B3o_S" />
-      <node concept="3clFbS" id="7Sbg4UjPwLI" role="3clF47">
-        <node concept="3clFbF" id="7Sbg4UjPwLL" role="3cqZAp">
-          <node concept="37vLTw" id="7Sbg4UjPzFU" role="3clFbG">
-            <ref role="3cqZAo" node="7Sbg4UjOCYU" resolve="DEFAULT_PRIORITY" />
-          </node>
-        </node>
-      </node>
-      <node concept="2AHcQZ" id="7Sbg4UjPwLJ" role="2AJF6D">
-        <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
-      </node>
-    </node>
-  </node>
   <node concept="312cEu" id="7Sbg4UjPNNA">
     <property role="3GE5qa" value="extensionPoints" />
     <property role="TrG5h" value="AbstractExtensionProvider" />
@@ -1420,6 +1404,31 @@
       </node>
     </node>
     <node concept="3Tm1VV" id="7Sbg4UjPNNB" role="1B3o_S" />
+  </node>
+  <node concept="312cEu" id="7Sbg4UjPvkH">
+    <property role="3GE5qa" value="extensionPoints" />
+    <property role="TrG5h" value="AbstractExtensionWithPriority" />
+    <property role="1sVAO0" value="true" />
+    <node concept="2tJIrI" id="7Sbg4UjP$NV" role="jymVt" />
+    <node concept="3Tm1VV" id="7Sbg4UjPvkI" role="1B3o_S" />
+    <node concept="3uibUv" id="7Sbg4UjPvll" role="EKbjA">
+      <ref role="3uigEE" node="7Sbg4UjPubL" resolve="IExtensionWithPriority" />
+    </node>
+    <node concept="3clFb_" id="7Sbg4UjPwLB" role="jymVt">
+      <property role="TrG5h" value="priority" />
+      <node concept="10Oyi0" id="7Sbg4UjPwLC" role="3clF45" />
+      <node concept="3Tm1VV" id="7Sbg4UjPwLD" role="1B3o_S" />
+      <node concept="3clFbS" id="7Sbg4UjPwLI" role="3clF47">
+        <node concept="3clFbF" id="7Sbg4UjPwLL" role="3cqZAp">
+          <node concept="37vLTw" id="7Sbg4UjPzFU" role="3clFbG">
+            <ref role="3cqZAo" node="7Sbg4UjOCYU" resolve="DEFAULT_PRIORITY" />
+          </node>
+        </node>
+      </node>
+      <node concept="2AHcQZ" id="7Sbg4UjPwLJ" role="2AJF6D">
+        <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
+      </node>
+    </node>
   </node>
   <node concept="312cEu" id="1e_Qt5zgHq">
     <property role="3GE5qa" value="extensionPoints" />
