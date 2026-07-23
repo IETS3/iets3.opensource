@@ -183,7 +183,7 @@ public class SimpleTypesPrimitiveTypeMapper extends PrimitiveTypeMapper {
 
     // The next part is a hack:
     // Because '''mgr.leastCommonSupertypes(set, false)'''  does only operate on sets containing 2 elements,
-    // we need to extract the elements from  '''[List<SNode>]([<no instanceType>]resultTypes.value)'''  and pass them to the function successively.
+    // we need to extract the elements from  '''_field reference'''  and pass them to the function successively.
     // s.a.: https://youtrack.jetbrains.com/issue/MPSI-45/leastCommonSupertypes-does-not-calculate-correctly-on-tuples-with-multiple-values
     Set<SNode> set = SetSequence.fromSet(new HashSet<SNode>());
     SetSequence.fromSet(set).addElement(ListSequence.fromList(resultTypes.value).first());
