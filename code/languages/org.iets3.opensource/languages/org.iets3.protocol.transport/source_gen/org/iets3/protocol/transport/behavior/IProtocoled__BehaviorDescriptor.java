@@ -8,7 +8,6 @@ import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import org.jetbrains.mps.openapi.model.SNode;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import java.util.List;
 import java.util.Arrays;
@@ -17,7 +16,6 @@ import jetbrains.mps.internal.collections.runtime.Sequence;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
 import java.util.Objects;
-import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 import org.jetbrains.mps.openapi.language.SContainmentLink;
@@ -25,20 +23,18 @@ import org.jetbrains.mps.openapi.language.SContainmentLink;
 public final class IProtocoled__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getInterfaceConcept(0xa50d629093d242afL, 0x9ae0b2fefc6ee754L, 0x7ef7796277a6785L, "org.iets3.protocol.transport.structure.IProtocoled");
 
-  public static final SMethod<Iterable<SNode>> availableHardwareConnectorTypes_id6JtAeCuVOz7 = new SMethodBuilder<Iterable<SNode>>(new SJavaCompoundTypeImpl((Class<Iterable<SNode>>) ((Class) Object.class))).name("availableHardwareConnectorTypes").modifiers(12, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(7772536663220111559L).languageId(0x9ae0b2fefc6ee754L, 0xa50d629093d242afL).build2();
-  public static final SMethod<Iterable<SNode>> protocoledElements_id2HsTbibmy9E = new SMethodBuilder<Iterable<SNode>>(new SJavaCompoundTypeImpl((Class<Iterable<SNode>>) ((Class) Object.class))).name("protocoledElements").modifiers(12, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(3124623705571467882L).languageId(0x9ae0b2fefc6ee754L, 0xa50d629093d242afL).build2();
-  public static final SMethod<Iterable<SNode>> availableProtocolMaps_id3wMQ0tmq7Ce = new SMethodBuilder<Iterable<SNode>>(new SJavaCompoundTypeImpl((Class<Iterable<SNode>>) ((Class) Object.class))).name("availableProtocolMaps").modifiers(12, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(4049536540985555470L).languageId(0x9ae0b2fefc6ee754L, 0xa50d629093d242afL).build2();
-  public static final SMethod<Iterable<SNode>> availableProtocolMapsByProtocol_id3wMQ0tmq7Fr = new SMethodBuilder<Iterable<SNode>>(new SJavaCompoundTypeImpl((Class<Iterable<SNode>>) ((Class) Object.class))).name("availableProtocolMapsByProtocol").modifiers(12, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(4049536540985555675L).languageId(0x9ae0b2fefc6ee754L, 0xa50d629093d242afL).build2(SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""));
-  public static final SMethod<Boolean> isConnectorTypeAvailable_id3wMQ0tmsjST = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("isConnectorTypeAvailable").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(4049536540986129977L).languageId(0x9ae0b2fefc6ee754L, 0xa50d629093d242afL).build2(SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""));
-  public static final SMethod<Iterable<SNode>> notMappedProtocoledElements_id3wMQ0tmsR1Z = new SMethodBuilder<Iterable<SNode>>(new SJavaCompoundTypeImpl((Class<Iterable<SNode>>) ((Class) Object.class))).name("notMappedProtocoledElements").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(4049536540986273919L).languageId(0x9ae0b2fefc6ee754L, 0xa50d629093d242afL).build2(SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""));
-  public static final SMethod<Iterable<SNode>> mappedProtocoledElements_id2YYo1jI2jjk = new SMethodBuilder<Iterable<SNode>>(new SJavaCompoundTypeImpl((Class<Iterable<SNode>>) ((Class) Object.class))).name("mappedProtocoledElements").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(3440292808366830804L).languageId(0x9ae0b2fefc6ee754L, 0xa50d629093d242afL).build2(SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""));
-  public static final SMethod<Iterable<SNode>> notMappedProtocoledElements_id3wMQ0tmvpy$ = new SMethodBuilder<Iterable<SNode>>(new SJavaCompoundTypeImpl((Class<Iterable<SNode>>) ((Class) Object.class))).name("notMappedProtocoledElements").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(4049536540986939556L).languageId(0x9ae0b2fefc6ee754L, 0xa50d629093d242afL).build2();
-  public static final SMethod<Iterable<SNode>> protocolMapsForElement_id4FLRp99wBxW = new SMethodBuilder<Iterable<SNode>>(new SJavaCompoundTypeImpl((Class<Iterable<SNode>>) ((Class) Object.class))).name("protocolMapsForElement").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5400341048562186364L).languageId(0x9ae0b2fefc6ee754L, 0xa50d629093d242afL).build2(SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""));
+  public static final SMethod<Iterable<SNode>> availableHardwareConnectorTypes_id6JtAeCuVOz7 = new SMethodBuilder<>((Class<Iterable<SNode>>) ((Class) Object.class)).name("availableHardwareConnectorTypes").modifiers(12, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(7772536663220111559L).languageId(0x9ae0b2fefc6ee754L, 0xa50d629093d242afL).build2();
+  public static final SMethod<Iterable<SNode>> protocoledElements_id2HsTbibmy9E = new SMethodBuilder<>((Class<Iterable<SNode>>) ((Class) Object.class)).name("protocoledElements").modifiers(12, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(3124623705571467882L).languageId(0x9ae0b2fefc6ee754L, 0xa50d629093d242afL).build2();
+  public static final SMethod<Iterable<SNode>> availableProtocolMaps_id3wMQ0tmq7Ce = new SMethodBuilder<>((Class<Iterable<SNode>>) ((Class) Object.class)).name("availableProtocolMaps").modifiers(12, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(4049536540985555470L).languageId(0x9ae0b2fefc6ee754L, 0xa50d629093d242afL).build2();
+  public static final SMethod<Iterable<SNode>> availableProtocolMapsByProtocol_id3wMQ0tmq7Fr = new SMethodBuilder<>((Class<Iterable<SNode>>) ((Class) Object.class)).name("availableProtocolMapsByProtocol").modifiers(12, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(4049536540985555675L).languageId(0x9ae0b2fefc6ee754L, 0xa50d629093d242afL).build2(SMethodBuilder.createJavaParameter(SNode.class, "transportProtocol"));
+  public static final SMethod<Boolean> isConnectorTypeAvailable_id3wMQ0tmsjST = new SMethodBuilder<>(Boolean.TYPE).name("isConnectorTypeAvailable").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(4049536540986129977L).languageId(0x9ae0b2fefc6ee754L, 0xa50d629093d242afL).build2(SMethodBuilder.createJavaParameter(SNode.class, "connectorType"));
+  public static final SMethod<Iterable<SNode>> notMappedProtocoledElements_id3wMQ0tmsR1Z = new SMethodBuilder<>((Class<Iterable<SNode>>) ((Class) Object.class)).name("notMappedProtocoledElements").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(4049536540986273919L).languageId(0x9ae0b2fefc6ee754L, 0xa50d629093d242afL).build2(SMethodBuilder.createJavaParameter(SNode.class, "protocol"));
+  public static final SMethod<Iterable<SNode>> mappedProtocoledElements_id2YYo1jI2jjk = new SMethodBuilder<>((Class<Iterable<SNode>>) ((Class) Object.class)).name("mappedProtocoledElements").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(3440292808366830804L).languageId(0x9ae0b2fefc6ee754L, 0xa50d629093d242afL).build2(SMethodBuilder.createJavaParameter(SNode.class, "protocol"));
+  public static final SMethod<Iterable<SNode>> notMappedProtocoledElements_id3wMQ0tmvpy$ = new SMethodBuilder<>((Class<Iterable<SNode>>) ((Class) Object.class)).name("notMappedProtocoledElements").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(4049536540986939556L).languageId(0x9ae0b2fefc6ee754L, 0xa50d629093d242afL).build2();
+  public static final SMethod<Iterable<SNode>> protocolMapsForElement_id4FLRp99wBxW = new SMethodBuilder<>((Class<Iterable<SNode>>) ((Class) Object.class)).name("protocolMapsForElement").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5400341048562186364L).languageId(0x9ae0b2fefc6ee754L, 0xa50d629093d242afL).build2(SMethodBuilder.createJavaParameter(SNode.class, "element"));
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(availableHardwareConnectorTypes_id6JtAeCuVOz7, protocoledElements_id2HsTbibmy9E, availableProtocolMaps_id3wMQ0tmq7Ce, availableProtocolMapsByProtocol_id3wMQ0tmq7Fr, isConnectorTypeAvailable_id3wMQ0tmsjST, notMappedProtocoledElements_id3wMQ0tmsR1Z, mappedProtocoledElements_id2YYo1jI2jjk, notMappedProtocoledElements_id3wMQ0tmvpy$, protocolMapsForElement_id4FLRp99wBxW);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(availableHardwareConnectorTypes_id6JtAeCuVOz7, protocoledElements_id2HsTbibmy9E, availableProtocolMaps_id3wMQ0tmq7Ce, availableProtocolMapsByProtocol_id3wMQ0tmq7Fr, isConnectorTypeAvailable_id3wMQ0tmsjST, notMappedProtocoledElements_id3wMQ0tmsR1Z, mappedProtocoledElements_id2YYo1jI2jjk, notMappedProtocoledElements_id3wMQ0tmvpy$, protocolMapsForElement_id4FLRp99wBxW);
 
-  private static void ___init___(@NotNull SNode __thisNode__) {
-  }
 
   /*package*/ static boolean isConnectorTypeAvailable_id3wMQ0tmsjST(@NotNull SNode __thisNode__, SNode connectorType) {
     return Sequence.fromIterable(SNodeOperations.ofConcept(IProtocoled__BehaviorDescriptor.availableHardwareConnectorTypes_id6JtAeCuVOz7.invoke(__thisNode__), SNodeOperations.asSConcept(SNodeOperations.getConcept(connectorType)))).isNotEmpty();
@@ -65,10 +61,6 @@ public final class IProtocoled__BehaviorDescriptor extends BaseBHDescriptor {
   /*package*/ IProtocoled__BehaviorDescriptor() {
   }
 
-  @Override
-  protected void initNode(@NotNull SNode node, @NotNull SConstructor constructor, @Nullable Object[] parameters) {
-    ___init___(node);
-  }
 
   @Override
   protected <T> T invokeSpecial0(@NotNull SNode node, @NotNull SMethod<T> method, @Nullable Object[] parameters) {

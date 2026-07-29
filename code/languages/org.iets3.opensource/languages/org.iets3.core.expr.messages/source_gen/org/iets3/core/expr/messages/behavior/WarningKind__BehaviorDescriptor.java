@@ -7,25 +7,21 @@ import org.jetbrains.mps.openapi.language.SAbstractConcept;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import java.util.List;
 import java.util.Arrays;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.mps.openapi.model.SNode;
-import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 
 public final class WarningKind__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getConcept(0x553a35c5ccd640baL, 0x99235e3b354d0c76L, 0x37e13cd84b5364c9L, "org.iets3.core.expr.messages.structure.WarningKind");
 
-  public static final SMethod<String> postprocessMessageText_id5ZJ96SJA9uZ = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("postprocessMessageText").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(6912784008700532671L).languageId(0x99235e3b354d0c76L, 0x553a35c5ccd640baL).build2(SMethodBuilder.createJavaParameter(String.class, ""));
+  public static final SMethod<String> postprocessMessageText_id5ZJ96SJA9uZ = new SMethodBuilder<>(String.class).name("postprocessMessageText").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(6912784008700532671L).languageId(0x99235e3b354d0c76L, 0x553a35c5ccd640baL).build2(SMethodBuilder.createJavaParameter(String.class, "text"));
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(postprocessMessageText_id5ZJ96SJA9uZ);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(postprocessMessageText_id5ZJ96SJA9uZ);
 
-  private static void ___init___(@NotNull SNode __thisNode__) {
-  }
 
   /*package*/ static String postprocessMessageText_id5ZJ96SJA9uZ(@NotNull SNode __thisNode__, String text) {
     return "WARNING: " + text;
@@ -34,10 +30,6 @@ public final class WarningKind__BehaviorDescriptor extends BaseBHDescriptor {
   /*package*/ WarningKind__BehaviorDescriptor() {
   }
 
-  @Override
-  protected void initNode(@NotNull SNode node, @NotNull SConstructor constructor, @Nullable Object[] parameters) {
-    ___init___(node);
-  }
 
   @Override
   protected <T> T invokeSpecial0(@NotNull SNode node, @NotNull SMethod<T> method, @Nullable Object[] parameters) {

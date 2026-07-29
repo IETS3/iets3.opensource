@@ -7,7 +7,6 @@ import org.jetbrains.mps.openapi.language.SAbstractConcept;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import org.iets3.core.expr.base.plugin.EffectDescriptor;
 import org.jetbrains.mps.openapi.model.SNode;
@@ -19,7 +18,6 @@ import jetbrains.mps.lang.core.behavior.BaseConcept__BehaviorDescriptor;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
 import org.iets3.core.expr.base.behavior.Type__BehaviorDescriptor;
 import jetbrains.mps.internal.collections.runtime.ListSequence;
-import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 import org.jetbrains.mps.openapi.language.SContainmentLink;
@@ -28,16 +26,14 @@ import org.jetbrains.mps.openapi.language.SConcept;
 public final class FunctionType__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getConcept(0x9464fa065ab9409bL, 0x927464ab29588457L, 0x68d69d36ba4ecfb6L, "org.iets3.core.expr.lambda.structure.FunctionType");
 
-  public static final SMethod<String> getPresentation_idhEwIMiw = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("getPresentation").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(1213877396640L).languageId(0x9b92103b95ca8c0cL, 0xceab519525ea4f22L).build2();
-  public static final SMethod<EffectDescriptor> effectDescriptor_id6GySMNjYLtT = new SMethodBuilder<EffectDescriptor>(new SJavaCompoundTypeImpl(EffectDescriptor.class)).name("effectDescriptor").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(7719982492940965753L).languageId(0x927464ab29588457L, 0x9464fa065ab9409bL).build2();
-  public static final SMethod<Void> setHasEffect_idsflsE7ak__ = new SMethodBuilder<Void>(new SJavaCompoundTypeImpl(Void.class)).name("setHasEffect").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(508719611255540069L).languageId(0x927464ab29588457L, 0x9464fa065ab9409bL).build2();
-  public static final SMethod<SNode> copyWithEffect_idsflsE7al9q = new SMethodBuilder<SNode>(new SJavaCompoundTypeImpl((Class<SNode>) ((Class) Object.class))).name("copyWithEffect").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(508719611255542362L).languageId(0x927464ab29588457L, 0x9464fa065ab9409bL).build2();
-  public static final SMethod<Boolean> isSameAs_idfIXgjlt4VE = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("isSameAs").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(283433227680763626L).languageId(0xb66a309a6e1a7290L, 0xcfaa4966b7d54b69L).build2(SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""));
+  public static final SMethod<String> getPresentation_idhEwIMiw = new SMethodBuilder<>(String.class).name("getPresentation").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(1213877396640L).languageId(0x9b92103b95ca8c0cL, 0xceab519525ea4f22L).build2();
+  public static final SMethod<EffectDescriptor> effectDescriptor_id6GySMNjYLtT = new SMethodBuilder<>(EffectDescriptor.class).name("effectDescriptor").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(7719982492940965753L).languageId(0x927464ab29588457L, 0x9464fa065ab9409bL).build2();
+  public static final SMethod<Void> setHasEffect_idsflsE7ak__ = new SMethodBuilder<>(Void.TYPE).name("setHasEffect").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(508719611255540069L).languageId(0x927464ab29588457L, 0x9464fa065ab9409bL).build2();
+  public static final SMethod<SNode> copyWithEffect_idsflsE7al9q = new SMethodBuilder<>(SNode.class).name("copyWithEffect").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(508719611255542362L).languageId(0x927464ab29588457L, 0x9464fa065ab9409bL).build2();
+  public static final SMethod<Boolean> isSameAs_idfIXgjlt4VE = new SMethodBuilder<>(Boolean.TYPE).name("isSameAs").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(283433227680763626L).languageId(0xb66a309a6e1a7290L, 0xcfaa4966b7d54b69L).build2(SMethodBuilder.createJavaParameter(SNode.class, "other"));
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(getPresentation_idhEwIMiw, effectDescriptor_id6GySMNjYLtT, setHasEffect_idsflsE7ak__, copyWithEffect_idsflsE7al9q, isSameAs_idfIXgjlt4VE);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(getPresentation_idhEwIMiw, effectDescriptor_id6GySMNjYLtT, setHasEffect_idsflsE7ak__, copyWithEffect_idsflsE7al9q, isSameAs_idfIXgjlt4VE);
 
-  private static void ___init___(@NotNull SNode __thisNode__) {
-  }
 
   /*package*/ static String getPresentation_idhEwIMiw(@NotNull SNode __thisNode__) {
     return "(" + SLinkOperations.getChildren(__thisNode__, LINKS.argumentTypes$npDH) + "=>" + ((FunctionType__BehaviorDescriptor.effectDescriptor_id6GySMNjYLtT.invoke(__thisNode__).readsOrModifiesMutableState() ? "*" : "")) + BaseConcept__BehaviorDescriptor.getPresentation_idhEwIMiw.invoke(SLinkOperations.getTarget(__thisNode__, LINKS.returnType$nq7J)) + ")";
@@ -67,10 +63,6 @@ public final class FunctionType__BehaviorDescriptor extends BaseBHDescriptor {
   /*package*/ FunctionType__BehaviorDescriptor() {
   }
 
-  @Override
-  protected void initNode(@NotNull SNode node, @NotNull SConstructor constructor, @Nullable Object[] parameters) {
-    ___init___(node);
-  }
 
   @Override
   protected <T> T invokeSpecial0(@NotNull SNode node, @NotNull SMethod<T> method, @Nullable Object[] parameters) {

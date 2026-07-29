@@ -8,7 +8,6 @@ import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import org.jetbrains.mps.openapi.model.SNode;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import org.jetbrains.mps.openapi.language.SConcept;
 import jetbrains.mps.baseLanguage.tuples.runtime.Tuples;
@@ -21,7 +20,6 @@ import jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
 import jetbrains.mps.internal.collections.runtime.ListSequence;
 import jetbrains.mps.baseLanguage.tuples.runtime.MultiTuple;
-import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 import jetbrains.mps.smodel.builder.SNodeBuilder;
@@ -33,22 +31,20 @@ import org.jetbrains.mps.openapi.language.SInterfaceConcept;
 public final class AbstractComponentInstanceBase__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getConcept(0xf0fd486f857743e9L, 0xb6713d118449c6e7L, 0x71edfb21ed616471L, "org.iets3.components.core.structure.AbstractComponentInstanceBase");
 
-  public static final SMethod<SNode> component_id77HYM7H$sfU = new SMethodBuilder<SNode>(new SJavaCompoundTypeImpl((Class<SNode>) ((Class) Object.class))).name("component").modifiers(12, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(8209493818904527866L).languageId(0xb6713d118449c6e7L, 0xf0fd486f857743e9L).build2();
-  public static final SMethod<SNode> kind_id6LfBX8Yl7Hz = new SMethodBuilder<SNode>(new SJavaCompoundTypeImpl((Class<SNode>) ((Class) Object.class))).name("kind").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(7804632404594031459L).languageId(0xb6713d118449c6e7L, 0xf0fd486f857743e9L).build2();
-  public static final SMethod<SNode> findPortByID_idsiw10GLvYX = new SMethodBuilder<SNode>(new SJavaCompoundTypeImpl((Class<SNode>) ((Class) Object.class))).name("findPortByID").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(509610514805292989L).languageId(0xb6713d118449c6e7L, 0xf0fd486f857743e9L).build2(SMethodBuilder.createJavaParameter(String.class, ""));
-  public static final SMethod<Iterable<SNode>> sourcePorts_idmIQkxfsZt_ = new SMethodBuilder<Iterable<SNode>>(new SJavaCompoundTypeImpl((Class<Iterable<SNode>>) ((Class) Object.class))).name("sourcePorts").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(409503520731166565L).languageId(0xb6713d118449c6e7L, 0xf0fd486f857743e9L).build2();
-  public static final SMethod<Iterable<SNode>> targetPorts_idmIQkxft09G = new SMethodBuilder<Iterable<SNode>>(new SJavaCompoundTypeImpl((Class<Iterable<SNode>>) ((Class) Object.class))).name("targetPorts").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(409503520731169388L).languageId(0xb6713d118449c6e7L, 0xf0fd486f857743e9L).build2();
-  public static final SMethod<Iterable<SNode>> portsWithCategory_idmIQkxftdob = new SMethodBuilder<Iterable<SNode>>(new SJavaCompoundTypeImpl((Class<Iterable<SNode>>) ((Class) Object.class))).name("portsWithCategory").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(409503520731223563L).languageId(0xb6713d118449c6e7L, 0xf0fd486f857743e9L).build2(SMethodBuilder.createJavaParameter((Class<SConcept>) ((Class) Object.class), ""));
-  public static final SMethod<String> iconPath_id1MFobPs_HJR = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("iconPath").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(2065851220497980407L).languageId(0xb6713d118449c6e7L, 0xf0fd486f857743e9L).build2();
-  public static final SMethod<Void> autowire_id1WCh2thaL0Y = new SMethodBuilder<Void>(new SJavaCompoundTypeImpl(Void.class)).name("autowire").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(2245119349900382270L).languageId(0xb6713d118449c6e7L, 0xf0fd486f857743e9L).build2();
-  public static final SMethod<Iterable<Tuples._2<SNode, SNode>>> sourcePortsAndInstance_id1WCh2thchui = new SMethodBuilder<Iterable<Tuples._2<SNode, SNode>>>(new SJavaCompoundTypeImpl((Class<Iterable<Tuples._2<SNode, SNode>>>) ((Class) Object.class))).name("sourcePortsAndInstance").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(2245119349900777362L).languageId(0xb6713d118449c6e7L, 0xf0fd486f857743e9L).build2();
-  public static final SMethod<Iterable<SNode>> parameterValues_id3xTZ$YBvTdz = new SMethodBuilder<Iterable<SNode>>(new SJavaCompoundTypeImpl((Class<Iterable<SNode>>) ((Class) Object.class))).name("parameterValues").modifiers(12, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(4069563356371981155L).languageId(0xb6713d118449c6e7L, 0xf0fd486f857743e9L).build2();
-  public static final SMethod<Boolean> isInline_id3xTZ$YBw7Op = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("isInline").modifiers(12, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(4069563356372040985L).languageId(0xb6713d118449c6e7L, 0xf0fd486f857743e9L).build2();
+  public static final SMethod<SNode> component_id77HYM7H$sfU = new SMethodBuilder<>(SNode.class).name("component").modifiers(12, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(8209493818904527866L).languageId(0xb6713d118449c6e7L, 0xf0fd486f857743e9L).build2();
+  public static final SMethod<SNode> kind_id6LfBX8Yl7Hz = new SMethodBuilder<>(SNode.class).name("kind").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(7804632404594031459L).languageId(0xb6713d118449c6e7L, 0xf0fd486f857743e9L).build2();
+  public static final SMethod<SNode> findPortByID_idsiw10GLvYX = new SMethodBuilder<>(SNode.class).name("findPortByID").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(509610514805292989L).languageId(0xb6713d118449c6e7L, 0xf0fd486f857743e9L).build2(SMethodBuilder.createJavaParameter(String.class, "id"));
+  public static final SMethod<Iterable<SNode>> sourcePorts_idmIQkxfsZt_ = new SMethodBuilder<>((Class<Iterable<SNode>>) ((Class) Object.class)).name("sourcePorts").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(409503520731166565L).languageId(0xb6713d118449c6e7L, 0xf0fd486f857743e9L).build2();
+  public static final SMethod<Iterable<SNode>> targetPorts_idmIQkxft09G = new SMethodBuilder<>((Class<Iterable<SNode>>) ((Class) Object.class)).name("targetPorts").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(409503520731169388L).languageId(0xb6713d118449c6e7L, 0xf0fd486f857743e9L).build2();
+  public static final SMethod<Iterable<SNode>> portsWithCategory_idmIQkxftdob = new SMethodBuilder<>((Class<Iterable<SNode>>) ((Class) Object.class)).name("portsWithCategory").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(409503520731223563L).languageId(0xb6713d118449c6e7L, 0xf0fd486f857743e9L).build2(SMethodBuilder.createJavaParameter(SConcept.class, "cat"));
+  public static final SMethod<String> iconPath_id1MFobPs_HJR = new SMethodBuilder<>(String.class).name("iconPath").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(2065851220497980407L).languageId(0xb6713d118449c6e7L, 0xf0fd486f857743e9L).build2();
+  public static final SMethod<Void> autowire_id1WCh2thaL0Y = new SMethodBuilder<>(Void.TYPE).name("autowire").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(2245119349900382270L).languageId(0xb6713d118449c6e7L, 0xf0fd486f857743e9L).build2();
+  public static final SMethod<Iterable<Tuples._2<SNode, SNode>>> sourcePortsAndInstance_id1WCh2thchui = new SMethodBuilder<>((Class<Iterable<Tuples._2<SNode, SNode>>>) ((Class) Object.class)).name("sourcePortsAndInstance").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(2245119349900777362L).languageId(0xb6713d118449c6e7L, 0xf0fd486f857743e9L).build2();
+  public static final SMethod<Iterable<SNode>> parameterValues_id3xTZ$YBvTdz = new SMethodBuilder<>((Class<Iterable<SNode>>) ((Class) Object.class)).name("parameterValues").modifiers(12, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(4069563356371981155L).languageId(0xb6713d118449c6e7L, 0xf0fd486f857743e9L).build2();
+  public static final SMethod<Boolean> isInline_id3xTZ$YBw7Op = new SMethodBuilder<>(Boolean.TYPE).name("isInline").modifiers(12, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(4069563356372040985L).languageId(0xb6713d118449c6e7L, 0xf0fd486f857743e9L).build2();
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(component_id77HYM7H$sfU, kind_id6LfBX8Yl7Hz, findPortByID_idsiw10GLvYX, sourcePorts_idmIQkxfsZt_, targetPorts_idmIQkxft09G, portsWithCategory_idmIQkxftdob, iconPath_id1MFobPs_HJR, autowire_id1WCh2thaL0Y, sourcePortsAndInstance_id1WCh2thchui, parameterValues_id3xTZ$YBvTdz, isInline_id3xTZ$YBw7Op);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(component_id77HYM7H$sfU, kind_id6LfBX8Yl7Hz, findPortByID_idsiw10GLvYX, sourcePorts_idmIQkxfsZt_, targetPorts_idmIQkxft09G, portsWithCategory_idmIQkxftdob, iconPath_id1MFobPs_HJR, autowire_id1WCh2thaL0Y, sourcePortsAndInstance_id1WCh2thchui, parameterValues_id3xTZ$YBvTdz, isInline_id3xTZ$YBw7Op);
 
-  private static void ___init___(@NotNull SNode __thisNode__) {
-  }
 
   /*package*/ static SNode kind_id6LfBX8Yl7Hz(@NotNull SNode __thisNode__) {
     return SLinkOperations.getTarget(AbstractComponentInstanceBase__BehaviorDescriptor.component_id77HYM7H$sfU.invoke(__thisNode__), LINKS.kind$8cnO);
@@ -101,10 +97,6 @@ public final class AbstractComponentInstanceBase__BehaviorDescriptor extends Bas
   /*package*/ AbstractComponentInstanceBase__BehaviorDescriptor() {
   }
 
-  @Override
-  protected void initNode(@NotNull SNode node, @NotNull SConstructor constructor, @Nullable Object[] parameters) {
-    ___init___(node);
-  }
 
   @Override
   protected <T> T invokeSpecial0(@NotNull SNode node, @NotNull SMethod<T> method, @Nullable Object[] parameters) {

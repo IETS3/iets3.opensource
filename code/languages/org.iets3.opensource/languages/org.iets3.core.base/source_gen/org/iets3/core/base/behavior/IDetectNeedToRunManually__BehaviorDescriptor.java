@@ -8,14 +8,12 @@ import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import org.jetbrains.mps.openapi.model.SNode;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import java.util.List;
 import java.util.Arrays;
 import org.jetbrains.annotations.NotNull;
 import de.itemis.mps.utils.serializer.xml.serializer.NodeSerializer;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations;
-import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 import org.jetbrains.mps.openapi.language.SProperty;
@@ -23,17 +21,15 @@ import org.jetbrains.mps.openapi.language.SProperty;
 public final class IDetectNeedToRunManually__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getInterfaceConcept(0x7b68d745a7b848b9L, 0xbd9c05c0f8725a35L, 0x6caf8a4d6c71bb55L, "org.iets3.core.base.structure.IDetectNeedToRunManually");
 
-  public static final SMethod<SNode> hashRootNode_id6MJy$PGs$IZ = new SMethodBuilder<SNode>(new SJavaCompoundTypeImpl((Class<SNode>) ((Class) Object.class))).name("hashRootNode").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(7831630342157126591L).languageId(0xbd9c05c0f8725a35L, 0x7b68d745a7b848b9L).build2();
-  public static final SMethod<Integer> calculateHash_id6MJy$PGsrIf = new SMethodBuilder<Integer>(new SJavaCompoundTypeImpl(Integer.TYPE)).name("calculateHash").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(7831630342157089679L).languageId(0xbd9c05c0f8725a35L, 0x7b68d745a7b848b9L).build2();
-  public static final SMethod<Integer> getHash_idhXRDtvlc8I = new SMethodBuilder<Integer>(new SJavaCompoundTypeImpl(Integer.TYPE)).name("getHash").modifiers(8, AccessPrivileges.PROTECTED).concept(CONCEPT).baseMethodId(323659489961361966L).languageId(0xbd9c05c0f8725a35L, 0x7b68d745a7b848b9L).build2(SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""));
-  public static final SMethod<Void> updateHash_id6MJy$PGs_q4 = new SMethodBuilder<Void>(new SJavaCompoundTypeImpl(Void.class)).name("updateHash").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(7831630342157129348L).languageId(0xbd9c05c0f8725a35L, 0x7b68d745a7b848b9L).build2();
-  public static final SMethod<Boolean> hasChanged_id6MJy$PGs_J0 = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("hasChanged").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(7831630342157130688L).languageId(0xbd9c05c0f8725a35L, 0x7b68d745a7b848b9L).build2();
-  public static final SMethod<Boolean> hasChangedAndMustBeRechecked_id6MJy$PGsBKB = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("hasChangedAndMustBeRechecked").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(7831630342157138983L).languageId(0xbd9c05c0f8725a35L, 0x7b68d745a7b848b9L).build2();
+  public static final SMethod<SNode> hashRootNode_id6MJy$PGs$IZ = new SMethodBuilder<>(SNode.class).name("hashRootNode").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(7831630342157126591L).languageId(0xbd9c05c0f8725a35L, 0x7b68d745a7b848b9L).build2();
+  public static final SMethod<Integer> calculateHash_id6MJy$PGsrIf = new SMethodBuilder<>(Integer.TYPE).name("calculateHash").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(7831630342157089679L).languageId(0xbd9c05c0f8725a35L, 0x7b68d745a7b848b9L).build2();
+  public static final SMethod<Integer> getHash_idhXRDtvlc8I = new SMethodBuilder<>(Integer.TYPE).name("getHash").modifiers(8, AccessPrivileges.PROTECTED).concept(CONCEPT).baseMethodId(323659489961361966L).languageId(0xbd9c05c0f8725a35L, 0x7b68d745a7b848b9L).build2(SMethodBuilder.createJavaParameter(SNode.class, "n"));
+  public static final SMethod<Void> updateHash_id6MJy$PGs_q4 = new SMethodBuilder<>(Void.TYPE).name("updateHash").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(7831630342157129348L).languageId(0xbd9c05c0f8725a35L, 0x7b68d745a7b848b9L).build2();
+  public static final SMethod<Boolean> hasChanged_id6MJy$PGs_J0 = new SMethodBuilder<>(Boolean.TYPE).name("hasChanged").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(7831630342157130688L).languageId(0xbd9c05c0f8725a35L, 0x7b68d745a7b848b9L).build2();
+  public static final SMethod<Boolean> hasChangedAndMustBeRechecked_id6MJy$PGsBKB = new SMethodBuilder<>(Boolean.TYPE).name("hasChangedAndMustBeRechecked").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(7831630342157138983L).languageId(0xbd9c05c0f8725a35L, 0x7b68d745a7b848b9L).build2();
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(hashRootNode_id6MJy$PGs$IZ, calculateHash_id6MJy$PGsrIf, getHash_idhXRDtvlc8I, updateHash_id6MJy$PGs_q4, hasChanged_id6MJy$PGs_J0, hasChangedAndMustBeRechecked_id6MJy$PGsBKB);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(hashRootNode_id6MJy$PGs$IZ, calculateHash_id6MJy$PGsrIf, getHash_idhXRDtvlc8I, updateHash_id6MJy$PGs_q4, hasChanged_id6MJy$PGs_J0, hasChangedAndMustBeRechecked_id6MJy$PGsBKB);
 
-  private static void ___init___(@NotNull SNode __thisNode__) {
-  }
 
   /*package*/ static SNode hashRootNode_id6MJy$PGs$IZ(@NotNull SNode __thisNode__) {
     return __thisNode__;
@@ -61,10 +57,6 @@ public final class IDetectNeedToRunManually__BehaviorDescriptor extends BaseBHDe
   /*package*/ IDetectNeedToRunManually__BehaviorDescriptor() {
   }
 
-  @Override
-  protected void initNode(@NotNull SNode node, @NotNull SConstructor constructor, @Nullable Object[] parameters) {
-    ___init___(node);
-  }
 
   @Override
   protected <T> T invokeSpecial0(@NotNull SNode node, @NotNull SMethod<T> method, @Nullable Object[] parameters) {

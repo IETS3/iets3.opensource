@@ -33,7 +33,7 @@ public class BrokenLinks {
    * 
    * Instantiated nodes might be duplicated during variability filtering. If this is the case,
    * references to their content will break. These content references will always be built by
-   * referencing the instance node and identifying the actual content node from there. 
+   * referencing the instance node and identifying the actual content node from there.
    * Thus, we can detect these cases by looking for references to instance nodes.
    * 
    * @param instanceNode a node which represents an instance of something which might have been cloned

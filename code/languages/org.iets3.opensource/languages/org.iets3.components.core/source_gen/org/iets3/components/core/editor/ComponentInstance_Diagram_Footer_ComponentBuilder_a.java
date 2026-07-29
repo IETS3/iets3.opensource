@@ -71,21 +71,18 @@ import org.jetbrains.mps.openapi.language.SConcept;
   private EditorCell createCollection_1() {
     EditorCell_Collection editorCell = new EditorCell_Collection(getEditorContext(), myNode, new CellLayout_Vertical());
     editorCell.setCellId("Collection_ajbdai_a0");
-    editorCell.addEditorCell(createCompartment_1());
+    editorCell.addEditorCell(createCompartment_0());
     editorCell.addEditorCell(createCollection_2());
     return editorCell;
   }
-  private EditorCell createCompartment_0(EditorContext editorContext, SNode node) {
-    CompartmentCell editorCell = new CompartmentCell(editorContext, node);
+  private EditorCell createCompartment_0() {
+    CompartmentCell editorCell = new CompartmentCell(getEditorContext(), getNode());
     editorCell.setCellId("Compartment_ajbdai_a0a");
     Style style = new StyleImpl();
     style.set(StyleAttributes.getInstance().<Float>getAttribute("de.itemis.mps.editor.diagram.styles", "__line-width"), _StyleParameter_QueryFunction_ajbdai_a0a0a());
     style.set(StyleAttributes.getInstance().<Color>getAttribute("de.itemis.mps.editor.diagram.styles", "__line-color"), getStyleRegistry().getSimpleColor(MPSColors.darkGray));
     editorCell.getStyle().putAll(style);
     return editorCell;
-  }
-  private EditorCell createCompartment_1() {
-    return createCompartment_0(getEditorContext(), myNode);
   }
   private Float _StyleParameter_QueryFunction_ajbdai_a0a0a() {
     return 1.5f;

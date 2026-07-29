@@ -193,7 +193,7 @@ import org.jetbrains.mps.openapi.language.SConcept;
     return diagramCell.value;
   }
   private EditorCell createDiagramConnector_1() {
-    return createDiagramConnector_0(getEditorContext(), myNode);
+    return createDiagramConnector_0(getEditorContext(), getNode());
   }
   private Color _StyleParameter_QueryFunction_xg6e3t_a0a() {
     return HardwareColors.bus;

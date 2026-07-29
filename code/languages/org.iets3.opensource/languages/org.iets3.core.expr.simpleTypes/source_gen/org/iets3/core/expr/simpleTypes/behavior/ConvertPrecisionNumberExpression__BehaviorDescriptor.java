@@ -7,7 +7,6 @@ import org.jetbrains.mps.openapi.language.SAbstractConcept;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import org.jetbrains.mps.openapi.model.SNode;
 import java.util.List;
@@ -30,10 +29,10 @@ import org.jetbrains.mps.openapi.language.SProperty;
 public final class ConvertPrecisionNumberExpression__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getConcept(0x6b277d9ad52d416fL, 0xa2091919bd737f50L, 0x7a79f2f908510101L, "org.iets3.core.expr.simpleTypes.structure.ConvertPrecisionNumberExpression");
 
-  public static final SMethod<String> renderReadable_id4Y0vh0cfqjE = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("renderReadable").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5728716233893586154L).languageId(0xb66a309a6e1a7290L, 0xcfaa4966b7d54b69L).build2();
-  public static final SMethod<Iterable<SNode>> getChildrenForCoverage_id5IKJrJHNCE8 = new SMethodBuilder<Iterable<SNode>>(new SJavaCompoundTypeImpl((Class<Iterable<SNode>>) ((Class) Object.class))).name("getChildrenForCoverage").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(6606989268198787720L).languageId(0xa6067ce0236c8023L, 0x47f075a6558e4640L).build2();
+  public static final SMethod<String> renderReadable_id4Y0vh0cfqjE = new SMethodBuilder<>(String.class).name("renderReadable").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5728716233893586154L).languageId(0xb66a309a6e1a7290L, 0xcfaa4966b7d54b69L).build2();
+  public static final SMethod<Iterable<SNode>> getChildrenForCoverage_id5IKJrJHNCE8 = new SMethodBuilder<>((Class<Iterable<SNode>>) ((Class) Object.class)).name("getChildrenForCoverage").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(6606989268198787720L).languageId(0xa6067ce0236c8023L, 0x47f075a6558e4640L).build2();
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(renderReadable_id4Y0vh0cfqjE, getChildrenForCoverage_id5IKJrJHNCE8);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(renderReadable_id4Y0vh0cfqjE, getChildrenForCoverage_id5IKJrJHNCE8);
 
   private static void ___init___(@NotNull SNode __thisNode__) {
     SLinkOperations.setNewChild(__thisNode__, LINKS.rounding$iaJe, CONCEPTS.TruncateRoundingMode$62);

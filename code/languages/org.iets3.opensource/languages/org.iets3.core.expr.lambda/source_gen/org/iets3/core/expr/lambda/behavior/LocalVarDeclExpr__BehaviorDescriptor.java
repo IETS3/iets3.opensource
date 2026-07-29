@@ -7,7 +7,6 @@ import org.jetbrains.mps.openapi.language.SAbstractConcept;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import org.jetbrains.mps.openapi.model.SNode;
 import java.util.List;
@@ -19,7 +18,6 @@ import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
 import org.iets3.core.expr.base.plugin.EffectHelper;
-import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 import org.jetbrains.mps.openapi.language.SProperty;
@@ -28,18 +26,16 @@ import org.jetbrains.mps.openapi.language.SContainmentLink;
 public final class LocalVarDeclExpr__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getConcept(0x9464fa065ab9409bL, 0x927464ab29588457L, 0x1ed6f14a008c1af9L, "org.iets3.core.expr.lambda.structure.LocalVarDeclExpr");
 
-  public static final SMethod<String> renderReadable_id4Y0vh0cfqjE = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("renderReadable").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5728716233893586154L).languageId(0xb66a309a6e1a7290L, 0xcfaa4966b7d54b69L).build2();
-  public static final SMethod<SNode> getNodeFromWhichToDeriveType_id5aHkq2w4m8L = new SMethodBuilder<SNode>(new SJavaCompoundTypeImpl((Class<SNode>) ((Class) Object.class))).name("getNodeFromWhichToDeriveType").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5957507632403145265L).languageId(0xb66a309a6e1a7290L, 0xcfaa4966b7d54b69L).build2();
-  public static final SMethod<String> getErrorMessage_idZYPG76w9Fc = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("getErrorMessage").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(1152594682400774860L).languageId(0xb66a309a6e1a7290L, 0xcfaa4966b7d54b69L).build2(SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""), SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""));
-  public static final SMethod<String> getMatchingText_id69Qfsw3InJX = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("getMatchingText").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(7094926192234036221L).languageId(0x9b92103b95ca8c0cL, 0xceab519525ea4f22L).build2(SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""));
-  public static final SMethod<String> getVisibleMatchingText_id69Qfsw3Ipre = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("getVisibleMatchingText").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(7094926192234043086L).languageId(0x9b92103b95ca8c0cL, 0xceab519525ea4f22L).build2(SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""));
-  public static final SMethod<Boolean> overrideDefaultAllowUmlaute_id5D8v3P4jYKp = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("overrideDefaultUmlaute").modifiers(9, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(6505586264317619225L).languageId(0xbd9c05c0f8725a35L, 0x7b68d745a7b848b9L).build2();
-  public static final SMethod<String> allowsEffectForNode_idORfz$DS6Ap = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("allowsEffectForNode").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(952298261448780185L).languageId(0xb66a309a6e1a7290L, 0xcfaa4966b7d54b69L).build2(SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""));
+  public static final SMethod<String> renderReadable_id4Y0vh0cfqjE = new SMethodBuilder<>(String.class).name("renderReadable").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5728716233893586154L).languageId(0xb66a309a6e1a7290L, 0xcfaa4966b7d54b69L).build2();
+  public static final SMethod<SNode> getNodeFromWhichToDeriveType_id5aHkq2w4m8L = new SMethodBuilder<>(SNode.class).name("getNodeFromWhichToDeriveType").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5957507632403145265L).languageId(0xb66a309a6e1a7290L, 0xcfaa4966b7d54b69L).build2();
+  public static final SMethod<String> getErrorMessage_idZYPG76w9Fc = new SMethodBuilder<>(String.class).name("getErrorMessage").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(1152594682400774860L).languageId(0xb66a309a6e1a7290L, 0xcfaa4966b7d54b69L).build2(SMethodBuilder.createJavaParameter(SNode.class, "expectedType"), SMethodBuilder.createJavaParameter(SNode.class, "actualType"));
+  public static final SMethod<String> getMatchingText_id69Qfsw3InJX = new SMethodBuilder<>(String.class).name("getMatchingText").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(7094926192234036221L).languageId(0x9b92103b95ca8c0cL, 0xceab519525ea4f22L).build2(SMethodBuilder.createJavaParameter(SNode.class, "reference"));
+  public static final SMethod<String> getVisibleMatchingText_id69Qfsw3Ipre = new SMethodBuilder<>(String.class).name("getVisibleMatchingText").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(7094926192234043086L).languageId(0x9b92103b95ca8c0cL, 0xceab519525ea4f22L).build2(SMethodBuilder.createJavaParameter(SNode.class, "reference"));
+  public static final SMethod<Boolean> overrideDefaultAllowUmlaute_id5D8v3P4jYKp = new SMethodBuilder<>(Boolean.TYPE).name("overrideDefaultUmlaute").modifiers(9, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(6505586264317619225L).languageId(0xbd9c05c0f8725a35L, 0x7b68d745a7b848b9L).build2();
+  public static final SMethod<String> allowsEffectForNode_idORfz$DS6Ap = new SMethodBuilder<>(String.class).name("allowsEffectForNode").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(952298261448780185L).languageId(0xb66a309a6e1a7290L, 0xcfaa4966b7d54b69L).build2(SMethodBuilder.createJavaParameter(SNode.class, "n"));
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(renderReadable_id4Y0vh0cfqjE, getNodeFromWhichToDeriveType_id5aHkq2w4m8L, getErrorMessage_idZYPG76w9Fc, getMatchingText_id69Qfsw3InJX, getVisibleMatchingText_id69Qfsw3Ipre, overrideDefaultAllowUmlaute_id5D8v3P4jYKp, allowsEffectForNode_idORfz$DS6Ap);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(renderReadable_id4Y0vh0cfqjE, getNodeFromWhichToDeriveType_id5aHkq2w4m8L, getErrorMessage_idZYPG76w9Fc, getMatchingText_id69Qfsw3InJX, getVisibleMatchingText_id69Qfsw3Ipre, overrideDefaultAllowUmlaute_id5D8v3P4jYKp, allowsEffectForNode_idORfz$DS6Ap);
 
-  private static void ___init___(@NotNull SNode __thisNode__) {
-  }
 
   /*package*/ static String renderReadable_id4Y0vh0cfqjE(@NotNull SNode __thisNode__) {
     StringRepresentation text = new StringRepresentation();
@@ -78,10 +74,6 @@ public final class LocalVarDeclExpr__BehaviorDescriptor extends BaseBHDescriptor
   /*package*/ LocalVarDeclExpr__BehaviorDescriptor() {
   }
 
-  @Override
-  protected void initNode(@NotNull SNode node, @NotNull SConstructor constructor, @Nullable Object[] parameters) {
-    ___init___(node);
-  }
 
   @Override
   protected <T> T invokeSpecial0(@NotNull SNode node, @NotNull SMethod<T> method, @Nullable Object[] parameters) {
