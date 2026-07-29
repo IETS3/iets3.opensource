@@ -17,10 +17,6 @@ Repo-specific knowledge that does not belong to a single language domain (variab
 
 - **`IDetectNeedToRunManually.__hash`** (interface in `org.iets3.core.base`) stores a checksum of the node's AST to detect "changed since last run". Merge conflicts on it are auto-resolved with strategy **`ours`** via a VCS merge hint in `org.iets3.core.base.vcs` (PR #1487; `vcs.merge-hints-for-computed-properties` in `mps-developer`) — the hash is recomputed after merge anyway. The same property must be **suppressed in test node comparisons** (see os #1478's quickfix editor test).
 
-## Gradle build — model check
-
-- CI model checking runs via the **`checkmodels` task, an explicitly registered `MpsCheck` task** from the itemis mps-gradle-plugin (`de.itemis.mps.gradle.tasks.MpsCheck`) in `build.gradle.kts` — the former `modelcheck` gradle *plugin* (with its `modelcheck {}` extension) was removed in #1672. Configure via the task's properties (`projectLocation`, `mpsHome`, `pluginRoots`, `folderMacros`, `junitFile`/`junitFormat`, `ignoreFailures`), not a plugin extension.
-
 ## Gradle build — Maven publishing
 
 - The published POMs declare **bundled third-party JARs as `provided` dependencies** so client-side dependency scanning (SBOM/vulnerability analysis) sees them: `MavenPom.addBundledDependencies()` in `build.gradle.kts` walks the **resolved transitive closure** (BFS over `resolvedConfiguration`, deduped) — first-level-only writing was fixed in #1544 because clients re-computed transitive deps without knowing the build's exclusions (`build.pom-provided-bundled-deps` in `mps-developer`; introduced in #1507, mirrored in mbeddr.core#3284).
@@ -35,7 +31,7 @@ Repo-specific knowledge that does not belong to a single language domain (variab
 
 ## Other DSL groups (structural map)
 
-One-liners for the project's remaining top-level groups — **scaffolding verified against the module/concept lists, not yet mined**; expect to explore before working there:
+One-liners for the project's remaining top-level groups — **scaffolding verified against the module/concept lists, not yet mined**; expect to explore before working there. The repo README's [`## Project Structure`](../../../../README.md#project-structure) covers the same ground per module and is the team-maintained reference; use it first, and prefer it where the two disagree.
 
 - **`analysis/`** — `org.iets3.analysis.base` (solver abstraction + async update/propagation infrastructure; the actual solver is provided by core via extension point — see "Configuration update propagation" in `variability-configuration.md`; async tests in `test.org.iets3.analysis.base.async@tests`), `org.iets3.analysis.logic.operator`, `org.iets3.analysis.solversupport.util`.
 - **`assessmt/`** — `org.iets3.core.assessment`: query-based assessments over models (concepts `GenericTraceQuery`, `UntracedElementsQuery`, results) — reports on e.g. untraced elements.
