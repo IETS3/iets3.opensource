@@ -8,8 +8,8 @@ import java.math.BigInteger;
 import org.junit.Test;
 import org.junit.Assert;
 import java.util.Objects;
-import org.iets3.core.expr.datetime.runtime.DateDeltaValue;
 import java.time.YearMonth;
+import org.iets3.core.expr.datetime.runtime.DateDeltaValue;
 import java.time.format.DateTimeFormatter;
 import org.iets3.core.expr.genjava.tests.rt.rt.EqualsTestOp;
 import org.iets3.core.expr.simpleTypes.runtime.AH;
@@ -39,6 +39,7 @@ public class Generated_date_Test {
   public static final LocalDate jan_1_2017_ = LocalDate.of(2017, 1, 1);
   public static final DiscreteDateRangeValue feb2017_ = DiscreteDateRangeValue.month(2017, 2);
   public static final DiscreteDateRangeValue jan2017_ = DiscreteDateRangeValue.month(2017, 1);
+  public static final LocalDate maxDate_ = DiscreteDateRangeValue.year(((BigInteger) ((Number) new BigInteger("999999999"))).intValue()).end();
   public static final DiscreteDateRangeValue y2018_ = DiscreteDateRangeValue.year(((BigInteger) ((Number) new BigInteger("2018"))).intValue());
   public static final DiscreteDateRangeValue y2017_ = DiscreteDateRangeValue.year(((BigInteger) ((Number) new BigInteger("2017"))).intValue());
   public static final Boolean a_ = Generated_date_Test.feb2017_.isGreater(Generated_date_Test.jan2017_);
@@ -104,6 +105,10 @@ public class Generated_date_Test {
   @Test
   public void dateComparison_item16_717638518057675941() throws Throwable {
     Assert.assertEquals("Expected: " + (false) + ", but was: " + (false && (Generated_date_Test.jan_1_2017_.isAfter(Generated_date_Test.jan_1_2017_) || Generated_date_Test.jan_1_2017_.isEqual(Generated_date_Test.jan_1_2017_))), (Object) false, (Object) (false && (Generated_date_Test.jan_1_2017_.isAfter(Generated_date_Test.jan_1_2017_) || Generated_date_Test.jan_1_2017_.isEqual(Generated_date_Test.jan_1_2017_))));
+  }
+  @Test
+  public void dateComparison_item18_2744118490429313054() throws Throwable {
+    Assert.assertEquals("Expected: " + (Generated_date_Test.maxDate_) + ", but was: " + (DiscreteDateRangeValue.month(YearMonth.from(Generated_date_Test.maxDate_)).end()), (Object) Generated_date_Test.maxDate_, (Object) DiscreteDateRangeValue.month(YearMonth.from(Generated_date_Test.maxDate_)).end());
   }
   @Test
   public void dateDeltas_item0_8266215269006406384() throws Throwable {
@@ -387,6 +392,10 @@ public class Generated_date_Test {
   }
   @Test
   public void dateRangeBounds_item3_8266215269010184013() throws Throwable {
+    Assert.assertEquals("Expected: " + (Generated_date_Test.feb2017_) + ", but was: " + (DiscreteDateRangeValue.month(YearMonth.from(Generated_date_Test.feb2017_.end()))), (Object) Generated_date_Test.feb2017_, (Object) DiscreteDateRangeValue.month(YearMonth.from(Generated_date_Test.feb2017_.end())));
+  }
+  @Test
+  public void dateRangeBounds_item4_2744118490428638012() throws Throwable {
     Assert.assertEquals("Expected: " + (Generated_date_Test.feb2017_) + ", but was: " + (DiscreteDateRangeValue.month(YearMonth.from(Generated_date_Test.feb2017_.end()))), (Object) Generated_date_Test.feb2017_, (Object) DiscreteDateRangeValue.month(YearMonth.from(Generated_date_Test.feb2017_.end())));
   }
   @Test
