@@ -9,24 +9,20 @@ import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import java.util.Optional;
 import org.jetbrains.mps.openapi.model.SNode;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import java.util.List;
 import java.util.Arrays;
 import org.jetbrains.annotations.NotNull;
-import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 
 public final class IRepresentUnit__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getInterfaceConcept(0x7ee265bd59864709L, 0x86ed2c6daa33cd8cL, 0xdbc57e5fdfe8034L, "org.iets3.core.expr.typetags.physunits.structure.IRepresentUnit");
 
-  public static final SMethod<Optional<SNode>> getUnit_idQWlYnY5DVv = new SMethodBuilder<Optional<SNode>>(new SJavaCompoundTypeImpl(Optional.class)).name("getUnit").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(989762663436689119L).languageId(0x86ed2c6daa33cd8cL, 0x7ee265bd59864709L).build2();
+  public static final SMethod<Optional<SNode>> getUnit_idQWlYnY5DVv = new SMethodBuilder<>((Class<Optional<SNode>>) ((Class) Object.class)).name("getUnit").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(989762663436689119L).languageId(0x86ed2c6daa33cd8cL, 0x7ee265bd59864709L).build2();
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(getUnit_idQWlYnY5DVv);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(getUnit_idQWlYnY5DVv);
 
-  private static void ___init___(@NotNull SNode __thisNode__) {
-  }
 
   /*package*/ static Optional<SNode> getUnit_idQWlYnY5DVv(@NotNull SNode __thisNode__) {
     return Optional.empty();
@@ -35,10 +31,6 @@ public final class IRepresentUnit__BehaviorDescriptor extends BaseBHDescriptor {
   /*package*/ IRepresentUnit__BehaviorDescriptor() {
   }
 
-  @Override
-  protected void initNode(@NotNull SNode node, @NotNull SConstructor constructor, @Nullable Object[] parameters) {
-    ___init___(node);
-  }
 
   @Override
   protected <T> T invokeSpecial0(@NotNull SNode node, @NotNull SMethod<T> method, @Nullable Object[] parameters) {

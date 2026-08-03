@@ -56,19 +56,19 @@ import org.jetbrains.mps.openapi.language.SContainmentLink;
     style.set(StyleAttributes.SELECTABLE, false);
     editorCell.getStyle().putAll(style);
     if (nodeCondition_tx22xf_a0a()) {
-      editorCell.addEditorCell(createQueryList_1());
+      editorCell.addEditorCell(createQueryList_0());
     }
     return editorCell;
   }
   private boolean nodeCondition_tx22xf_a0a() {
     return Sequence.fromIterable(ICanHaveConstraint__BehaviorDescriptor.constraints_id1wX6IAeW7Y1.invoke(myNode)).isNotEmpty();
   }
-  private EditorCell createQueryList_0(final EditorContext editorContext, final SNode node) {
+  private EditorCell createQueryList_0() {
 
-    QueryListHandler handler = new QueryListHandler_tx22xf_a0(editorContext, node, false);
+    QueryListHandler handler = new QueryListHandler_tx22xf_a0(getEditorContext(), getNode(), false);
     EditorCell_QueryList editorCell = handler.createCells(new CellLayout_Vertical());
     editorCell.setTargeConcept(CONCEPTS.AbstractConstraint$MS);
-    editorCell.setOwner(SNodeOperations.getConcept(node));
+    editorCell.setOwner(SNodeOperations.getConcept(getNode()));
     editorCell.setCellId("QueryList_tx22xf_a0");
     Style style = new StyleImpl();
     new iets3MuchSmallerStyleClass(this).apply(style, editorCell);
@@ -77,9 +77,6 @@ import org.jetbrains.mps.openapi.language.SContainmentLink;
     editorCell.setGridLayout(true);
     return editorCell;
 
-  }
-  private EditorCell createQueryList_1() {
-    return createQueryList_0(getEditorContext(), myNode);
   }
   private static class QueryListHandler_tx22xf_a0 extends QueryListHandler {
     /**

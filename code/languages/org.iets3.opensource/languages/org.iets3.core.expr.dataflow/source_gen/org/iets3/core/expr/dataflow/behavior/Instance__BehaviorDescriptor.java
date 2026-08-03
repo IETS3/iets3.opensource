@@ -9,13 +9,11 @@ import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import java.util.List;
 import org.jetbrains.mps.openapi.model.SNode;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import java.util.Arrays;
 import org.jetbrains.annotations.NotNull;
 import jetbrains.mps.internal.collections.runtime.ListSequence;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
-import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 import org.jetbrains.mps.openapi.language.SReferenceLink;
@@ -24,12 +22,10 @@ import org.jetbrains.mps.openapi.language.SContainmentLink;
 public final class Instance__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getConcept(0xcee4aa62aca94f26L, 0x960275129cd457c9L, 0x4f91a4533f716a61L, "org.iets3.core.expr.dataflow.structure.Instance");
 
-  public static final SMethod<List<SNode>> missingParamValues_id2vkvJYSQLLw = new SMethodBuilder<List<SNode>>(new SJavaCompoundTypeImpl((Class<List<SNode>>) ((Class) Object.class))).name("missingParamValues").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(2870058499324976224L).languageId(0x960275129cd457c9L, 0xcee4aa62aca94f26L).build2();
+  public static final SMethod<List<SNode>> missingParamValues_id2vkvJYSQLLw = new SMethodBuilder<>((Class<List<SNode>>) ((Class) Object.class)).name("missingParamValues").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(2870058499324976224L).languageId(0x960275129cd457c9L, 0xcee4aa62aca94f26L).build2();
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(missingParamValues_id2vkvJYSQLLw);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(missingParamValues_id2vkvJYSQLLw);
 
-  private static void ___init___(@NotNull SNode __thisNode__) {
-  }
 
   /*package*/ static List<SNode> missingParamValues_id2vkvJYSQLLw(@NotNull final SNode __thisNode__) {
     return ListSequence.fromList(SLinkOperations.getChildren(SLinkOperations.getTarget(__thisNode__, LINKS.block$aVz7), LINKS.params$7rRh)).where((final SNode p) -> !(ListSequence.fromList(SLinkOperations.getChildren(__thisNode__, LINKS.paramValues$mkq$)).any((it) -> SLinkOperations.getTarget(it, LINKS.param$UNjl) == p))).toList();
@@ -38,10 +34,6 @@ public final class Instance__BehaviorDescriptor extends BaseBHDescriptor {
   /*package*/ Instance__BehaviorDescriptor() {
   }
 
-  @Override
-  protected void initNode(@NotNull SNode node, @NotNull SConstructor constructor, @Nullable Object[] parameters) {
-    ___init___(node);
-  }
 
   @Override
   protected <T> T invokeSpecial0(@NotNull SNode node, @NotNull SMethod<T> method, @Nullable Object[] parameters) {

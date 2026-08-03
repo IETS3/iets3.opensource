@@ -7,7 +7,6 @@ import org.jetbrains.mps.openapi.language.SAbstractConcept;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import org.jetbrains.mps.openapi.model.SNode;
 import org.jetbrains.mps.openapi.language.SProperty;
@@ -21,7 +20,6 @@ import java.util.Objects;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
 import java.math.BigInteger;
-import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 import jetbrains.mps.smodel.builder.SNodeBuilder;
@@ -30,19 +28,17 @@ import org.jetbrains.mps.openapi.language.SConcept;
 public final class ISupportHexValues__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getInterfaceConcept(0xcfaa4966b7d54b69L, 0xb66a309a6e1a7290L, 0x2c2a8fa953cd3113L, "org.iets3.core.expr.base.structure.ISupportHexValues");
 
-  public static final SMethod<String> getHexPrefix_id5JKfLQ9g2ZR = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("getHexPrefix").modifiers(1, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(6624864447951286263L).languageId(0xb66a309a6e1a7290L, 0xcfaa4966b7d54b69L).build2();
-  public static final SMethod<SNode> getHexValue_id2KEzU_jNnNP = new SMethodBuilder<SNode>(new SJavaCompoundTypeImpl((Class<SNode>) ((Class) Object.class))).name("getHexValue").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(3182514044108897525L).languageId(0xb66a309a6e1a7290L, 0xcfaa4966b7d54b69L).build2(SMethodBuilder.createJavaParameter(SProperty.class, ""));
-  public static final SMethod<Boolean> hasHexValue_id5JKfLQ8i_uc = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("hasHexValue").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(6624864447935174540L).languageId(0xb66a309a6e1a7290L, 0xcfaa4966b7d54b69L).build2(SMethodBuilder.createJavaParameter(SProperty.class, ""));
-  public static final SMethod<Void> copyHexValue_id6mBw0A_sUtS = new SMethodBuilder<Void>(new SJavaCompoundTypeImpl(Void.class)).name("copyHexValue").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(7324964097860282232L).languageId(0xb66a309a6e1a7290L, 0xcfaa4966b7d54b69L).build2(SMethodBuilder.createJavaParameter(SProperty.class, ""), SMethodBuilder.createJavaParameter(SProperty.class, ""), SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""));
-  public static final SMethod<String> getHexValueOrDefault_id5JKfLQ8iqvP = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("getHexValueOrDefault").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(6624864447935129589L).languageId(0xb66a309a6e1a7290L, 0xcfaa4966b7d54b69L).build2(SMethodBuilder.createJavaParameter(SProperty.class, ""), SMethodBuilder.createJavaParameter(String.class, ""));
-  public static final SMethod<Void> initHexValueWithDefault_id5JKfLQ9g2r5 = new SMethodBuilder<Void>(new SJavaCompoundTypeImpl(Void.class)).name("initHexValueWithDefault").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(6624864447951283909L).languageId(0xb66a309a6e1a7290L, 0xcfaa4966b7d54b69L).build2(SMethodBuilder.createJavaParameter(SProperty.class, ""));
-  public static final SMethod<Void> toggleHexValue_id65S0ZNFEOvc = new SMethodBuilder<Void>(new SJavaCompoundTypeImpl(Void.class)).name("toggleHexValue").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(7023368003704801228L).languageId(0xb66a309a6e1a7290L, 0xcfaa4966b7d54b69L).build2(SMethodBuilder.createJavaParameter(SProperty.class, ""), SMethodBuilder.createJavaParameter(String.class, ""));
-  public static final SMethod<SNode> setHexValue_id6QsMU1GWQsW = new SMethodBuilder<SNode>(new SJavaCompoundTypeImpl((Class<SNode>) ((Class) Object.class))).name("setHexValue").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(7898411736384104252L).languageId(0xb66a309a6e1a7290L, 0xcfaa4966b7d54b69L).build2(SMethodBuilder.createJavaParameter(SProperty.class, ""), SMethodBuilder.createJavaParameter(String.class, ""), SMethodBuilder.createJavaParameter(Boolean.TYPE, ""));
+  public static final SMethod<String> getHexPrefix_id5JKfLQ9g2ZR = new SMethodBuilder<>(String.class).name("getHexPrefix").modifiers(1, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(6624864447951286263L).languageId(0xb66a309a6e1a7290L, 0xcfaa4966b7d54b69L).build2();
+  public static final SMethod<SNode> getHexValue_id2KEzU_jNnNP = new SMethodBuilder<>(SNode.class).name("getHexValue").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(3182514044108897525L).languageId(0xb66a309a6e1a7290L, 0xcfaa4966b7d54b69L).build2(SMethodBuilder.createJavaParameter(SProperty.class, "property"));
+  public static final SMethod<Boolean> hasHexValue_id5JKfLQ8i_uc = new SMethodBuilder<>(Boolean.TYPE).name("hasHexValue").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(6624864447935174540L).languageId(0xb66a309a6e1a7290L, 0xcfaa4966b7d54b69L).build2(SMethodBuilder.createJavaParameter(SProperty.class, "property"));
+  public static final SMethod<Void> copyHexValue_id6mBw0A_sUtS = new SMethodBuilder<>(Void.TYPE).name("copyHexValue").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(7324964097860282232L).languageId(0xb66a309a6e1a7290L, 0xcfaa4966b7d54b69L).build2(SMethodBuilder.createJavaParameter(SProperty.class, "fromProperty"), SMethodBuilder.createJavaParameter(SProperty.class, "toProperty"), SMethodBuilder.createJavaParameter(SNode.class, "target"));
+  public static final SMethod<String> getHexValueOrDefault_id5JKfLQ8iqvP = new SMethodBuilder<>(String.class).name("getHexValueOrDefault").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(6624864447935129589L).languageId(0xb66a309a6e1a7290L, 0xcfaa4966b7d54b69L).build2(SMethodBuilder.createJavaParameter(SProperty.class, "property"), SMethodBuilder.createJavaParameter(String.class, "defaultValue"));
+  public static final SMethod<Void> initHexValueWithDefault_id5JKfLQ9g2r5 = new SMethodBuilder<>(Void.TYPE).name("initHexValueWithDefault").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(6624864447951283909L).languageId(0xb66a309a6e1a7290L, 0xcfaa4966b7d54b69L).build2(SMethodBuilder.createJavaParameter(SProperty.class, "property"));
+  public static final SMethod<Void> toggleHexValue_id65S0ZNFEOvc = new SMethodBuilder<>(Void.TYPE).name("toggleHexValue").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(7023368003704801228L).languageId(0xb66a309a6e1a7290L, 0xcfaa4966b7d54b69L).build2(SMethodBuilder.createJavaParameter(SProperty.class, "property"), SMethodBuilder.createJavaParameter(String.class, "decimalValue"));
+  public static final SMethod<SNode> setHexValue_id6QsMU1GWQsW = new SMethodBuilder<>(SNode.class).name("setHexValue").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(7898411736384104252L).languageId(0xb66a309a6e1a7290L, 0xcfaa4966b7d54b69L).build2(SMethodBuilder.createJavaParameter(SProperty.class, "property"), SMethodBuilder.createJavaParameter(String.class, "value"), SMethodBuilder.createJavaParameter(Boolean.TYPE, "isDecimal"));
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(getHexPrefix_id5JKfLQ9g2ZR, getHexValue_id2KEzU_jNnNP, hasHexValue_id5JKfLQ8i_uc, copyHexValue_id6mBw0A_sUtS, getHexValueOrDefault_id5JKfLQ8iqvP, initHexValueWithDefault_id5JKfLQ9g2r5, toggleHexValue_id65S0ZNFEOvc, setHexValue_id6QsMU1GWQsW);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(getHexPrefix_id5JKfLQ9g2ZR, getHexValue_id2KEzU_jNnNP, hasHexValue_id5JKfLQ8i_uc, copyHexValue_id6mBw0A_sUtS, getHexValueOrDefault_id5JKfLQ8iqvP, initHexValueWithDefault_id5JKfLQ9g2r5, toggleHexValue_id65S0ZNFEOvc, setHexValue_id6QsMU1GWQsW);
 
-  private static void ___init___(@NotNull SNode __thisNode__) {
-  }
 
   /*package*/ static String getHexPrefix_id5JKfLQ9g2ZR(@NotNull SAbstractConcept __thisConcept__) {
     return "0x";
@@ -107,10 +103,6 @@ public final class ISupportHexValues__BehaviorDescriptor extends BaseBHDescripto
   /*package*/ ISupportHexValues__BehaviorDescriptor() {
   }
 
-  @Override
-  protected void initNode(@NotNull SNode node, @NotNull SConstructor constructor, @Nullable Object[] parameters) {
-    ___init___(node);
-  }
 
   @Override
   protected <T> T invokeSpecial0(@NotNull SNode node, @NotNull SMethod<T> method, @Nullable Object[] parameters) {

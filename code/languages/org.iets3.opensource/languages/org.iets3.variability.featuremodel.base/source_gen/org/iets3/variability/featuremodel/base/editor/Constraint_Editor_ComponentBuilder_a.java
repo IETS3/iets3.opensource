@@ -70,7 +70,7 @@ import org.iets3.core.base.editor.IETS3Styles_StyleSheet.iets3MuchSmallerStyleCl
   }
   private EditorCell createCollapsible_0(EditorContext editorContext, SNode node) {
     EditorCell expanded = createComponent_0();
-    EditorCell collapsed = createTooltip_1();
+    EditorCell collapsed = createTooltip_0();
 
     ICollapsibleCallback callback = new ICollapsibleCallback() {
       public Dimension getNodeSize() {
@@ -96,22 +96,19 @@ import org.iets3.core.base.editor.IETS3Styles_StyleSheet.iets3MuchSmallerStyleCl
     return editorCell;
   }
   private EditorCell createCollapsible_1() {
-    return createCollapsible_0(getEditorContext(), myNode);
+    return createCollapsible_0(getEditorContext(), getNode());
   }
   private EditorCell createComponent_0() {
     EditorCell editorCell = getCellFactory().createEditorComponentCell(myNode, "org.iets3.variability.featuremodel.base.editor.Constraint_Editor_Inspector");
     return editorCell;
   }
-  private EditorCell createTooltip_0(final EditorContext editorContext, final SNode node) {
-    LazyTooltipCellEvaluator tooltip = new LazyTooltipCellEvaluator(editorContext, node, "org.iets3.variability.featuremodel.base.editor.GeneratedHints.tooltipHint_zei613_a0a", true);
+  private EditorCell createTooltip_0() {
+    LazyTooltipCellEvaluator tooltip = new LazyTooltipCellEvaluator(getEditorContext(), myNode, "org.iets3.variability.featuremodel.base.editor.GeneratedHints.tooltipHint_zei613_a0a", true);
     EditorCell visibleCell = createReadOnlyModelAccessor_0();
 
-    TooltipWrapper editorCell = new TooltipWrapper(editorContext, node, visibleCell, tooltip, TooltipTimingProperties.DEFAULT);
+    TooltipWrapper editorCell = new TooltipWrapper(getEditorContext(), myNode, visibleCell, tooltip, TooltipTimingProperties.DEFAULT);
     editorCell.setCellId("Tooltip_zei613_a0a0");
     return editorCell;
-  }
-  private EditorCell createTooltip_1() {
-    return createTooltip_0(getEditorContext(), myNode);
   }
   private EditorCell createReadOnlyModelAccessor_0() {
     EditorCell_Property editorCell = EditorCell_Property.create(getEditorContext(), new ModelAccessor.ReadOnly() {

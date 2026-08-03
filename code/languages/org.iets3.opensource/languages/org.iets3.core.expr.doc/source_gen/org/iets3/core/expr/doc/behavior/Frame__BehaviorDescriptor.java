@@ -7,7 +7,6 @@ import org.jetbrains.mps.openapi.language.SAbstractConcept;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import org.jetbrains.mps.openapi.model.SNode;
 import java.util.List;
@@ -24,7 +23,6 @@ import java.awt.datatransfer.StringSelection;
 import jetbrains.mps.lang.core.behavior.BaseConcept__BehaviorDescriptor;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations;
 import jetbrains.mps.ide.httpsupport.runtime.base.HttpSupportUtil;
-import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 import org.jetbrains.mps.openapi.language.SContainmentLink;
@@ -34,22 +32,20 @@ import org.jetbrains.mps.openapi.language.SProperty;
 public final class Frame__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getConcept(0x32190be623f74e17L, 0xaad4fb739bb3569fL, 0x171e34aef35bdf9eL, "org.iets3.core.expr.doc.structure.Frame");
 
-  public static final SMethod<String> qualifiedFileName_id1sudaVNr1vl = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("qualifiedFileName").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(1665826838186563541L).languageId(0xaad4fb739bb3569fL, 0x32190be623f74e17L).build2();
-  public static final SMethod<String> qualifiedFilePath_id2c2AzQcxb7B = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("qualifiedFilePath").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(2522748330422088167L).languageId(0xaad4fb739bb3569fL, 0x32190be623f74e17L).build2();
-  public static final SMethod<Iterable<SNode>> contents_id1sudaVNqph4 = new SMethodBuilder<Iterable<SNode>>(new SJavaCompoundTypeImpl((Class<Iterable<SNode>>) ((Class) Object.class))).name("contents").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(1665826838186398788L).languageId(0xa0548c072591085fL, 0x71934284d7d145eeL).build2();
-  public static final SMethod<SNode> resolvePathSpec_id1sudaVNr9jD = new SMethodBuilder<SNode>(new SJavaCompoundTypeImpl((Class<SNode>) ((Class) Object.class))).name("resolvePathSpec").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(1665826838186595561L).languageId(0xaad4fb739bb3569fL, 0x32190be623f74e17L).build2();
-  public static final SMethod<Void> takeScreenshot_id2c2AzQc_YDC = new SMethodBuilder<Void>(new SJavaCompoundTypeImpl(Void.class)).name("takeScreenshot").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(2522748330423347816L).languageId(0xaad4fb739bb3569fL, 0x32190be623f74e17L).build2();
-  public static final SMethod<String> localName_id2c2AzQcE4iJ = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("localName").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(2522748330424419503L).languageId(0xaad4fb739bb3569fL, 0x32190be623f74e17L).build2();
-  public static final SMethod<String> makeQualifiedName_id4yaQL1YeoUt = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("makeQualifiedName").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5227231181400542877L).languageId(0xb66a309a6e1a7290L, 0xcfaa4966b7d54b69L).build2(SMethodBuilder.createJavaParameter(String.class, ""));
-  public static final SMethod<String[]> getQualifiedName_id2m0pXWMyYL = new SMethodBuilder<String[]>(new SJavaCompoundTypeImpl(String[].class)).name("getQualifiedName").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(42223031011651505L).languageId(0xaad4fb739bb3569fL, 0x32190be623f74e17L).build2();
-  public static final SMethod<Boolean> hideBookmark_id2m0pXWMLk6 = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("hideBookmark").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(42223031011710214L).languageId(0xaad4fb739bb3569fL, 0x32190be623f74e17L).build2();
-  public static final SMethod<String> allowsEffectForNode_idORfz$DS6Ap = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("allowsEffectForNode").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(952298261448780185L).languageId(0xb66a309a6e1a7290L, 0xcfaa4966b7d54b69L).build2(SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""));
-  public static final SMethod<String> markdownIncludeString_id31BLoccZVAr = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("markdownIncludeString").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(3487973603071211931L).languageId(0xaad4fb739bb3569fL, 0x32190be623f74e17L).build2();
+  public static final SMethod<String> qualifiedFileName_id1sudaVNr1vl = new SMethodBuilder<>(String.class).name("qualifiedFileName").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(1665826838186563541L).languageId(0xaad4fb739bb3569fL, 0x32190be623f74e17L).build2();
+  public static final SMethod<String> qualifiedFilePath_id2c2AzQcxb7B = new SMethodBuilder<>(String.class).name("qualifiedFilePath").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(2522748330422088167L).languageId(0xaad4fb739bb3569fL, 0x32190be623f74e17L).build2();
+  public static final SMethod<Iterable<SNode>> contents_id1sudaVNqph4 = new SMethodBuilder<>((Class<Iterable<SNode>>) ((Class) Object.class)).name("contents").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(1665826838186398788L).languageId(0xa0548c072591085fL, 0x71934284d7d145eeL).build2();
+  public static final SMethod<SNode> resolvePathSpec_id1sudaVNr9jD = new SMethodBuilder<>(SNode.class).name("resolvePathSpec").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(1665826838186595561L).languageId(0xaad4fb739bb3569fL, 0x32190be623f74e17L).build2();
+  public static final SMethod<Void> takeScreenshot_id2c2AzQc_YDC = new SMethodBuilder<>(Void.TYPE).name("takeScreenshot").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(2522748330423347816L).languageId(0xaad4fb739bb3569fL, 0x32190be623f74e17L).build2();
+  public static final SMethod<String> localName_id2c2AzQcE4iJ = new SMethodBuilder<>(String.class).name("localName").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(2522748330424419503L).languageId(0xaad4fb739bb3569fL, 0x32190be623f74e17L).build2();
+  public static final SMethod<String> makeQualifiedName_id4yaQL1YeoUt = new SMethodBuilder<>(String.class).name("makeQualifiedName").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5227231181400542877L).languageId(0xb66a309a6e1a7290L, 0xcfaa4966b7d54b69L).build2(SMethodBuilder.createJavaParameter(String.class, "simpleName"));
+  public static final SMethod<String[]> getQualifiedName_id2m0pXWMyYL = new SMethodBuilder<>(String[].class).name("getQualifiedName").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(42223031011651505L).languageId(0xaad4fb739bb3569fL, 0x32190be623f74e17L).build2();
+  public static final SMethod<Boolean> hideBookmark_id2m0pXWMLk6 = new SMethodBuilder<>(Boolean.TYPE).name("hideBookmark").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(42223031011710214L).languageId(0xaad4fb739bb3569fL, 0x32190be623f74e17L).build2();
+  public static final SMethod<String> allowsEffectForNode_idORfz$DS6Ap = new SMethodBuilder<>(String.class).name("allowsEffectForNode").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(952298261448780185L).languageId(0xb66a309a6e1a7290L, 0xcfaa4966b7d54b69L).build2(SMethodBuilder.createJavaParameter(SNode.class, "n"));
+  public static final SMethod<String> markdownIncludeString_id31BLoccZVAr = new SMethodBuilder<>(String.class).name("markdownIncludeString").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(3487973603071211931L).languageId(0xaad4fb739bb3569fL, 0x32190be623f74e17L).build2();
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(qualifiedFileName_id1sudaVNr1vl, qualifiedFilePath_id2c2AzQcxb7B, contents_id1sudaVNqph4, resolvePathSpec_id1sudaVNr9jD, takeScreenshot_id2c2AzQc_YDC, localName_id2c2AzQcE4iJ, makeQualifiedName_id4yaQL1YeoUt, getQualifiedName_id2m0pXWMyYL, hideBookmark_id2m0pXWMLk6, allowsEffectForNode_idORfz$DS6Ap, markdownIncludeString_id31BLoccZVAr);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(qualifiedFileName_id1sudaVNr1vl, qualifiedFilePath_id2c2AzQcxb7B, contents_id1sudaVNqph4, resolvePathSpec_id1sudaVNr9jD, takeScreenshot_id2c2AzQc_YDC, localName_id2c2AzQcE4iJ, makeQualifiedName_id4yaQL1YeoUt, getQualifiedName_id2m0pXWMyYL, hideBookmark_id2m0pXWMLk6, allowsEffectForNode_idORfz$DS6Ap, markdownIncludeString_id31BLoccZVAr);
 
-  private static void ___init___(@NotNull SNode __thisNode__) {
-  }
 
   /*package*/ static String qualifiedFileName_id1sudaVNr1vl(@NotNull SNode __thisNode__) {
     SNode pathspec = Frame__BehaviorDescriptor.resolvePathSpec_id1sudaVNr9jD.invoke(__thisNode__);
@@ -107,10 +103,6 @@ public final class Frame__BehaviorDescriptor extends BaseBHDescriptor {
   /*package*/ Frame__BehaviorDescriptor() {
   }
 
-  @Override
-  protected void initNode(@NotNull SNode node, @NotNull SConstructor constructor, @Nullable Object[] parameters) {
-    ___init___(node);
-  }
 
   @Override
   protected <T> T invokeSpecial0(@NotNull SNode node, @NotNull SMethod<T> method, @Nullable Object[] parameters) {

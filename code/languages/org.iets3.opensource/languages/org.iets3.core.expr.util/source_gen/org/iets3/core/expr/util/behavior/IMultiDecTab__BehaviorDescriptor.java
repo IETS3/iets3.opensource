@@ -8,7 +8,6 @@ import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import org.jetbrains.mps.openapi.model.SNode;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import java.util.List;
 import java.util.Arrays;
@@ -20,7 +19,6 @@ import jetbrains.mps.internal.collections.runtime.ListSequence;
 import jetbrains.mps.internal.collections.runtime.Sequence;
 import jetbrains.mps.baseLanguage.closures.runtime._FunctionTypes;
 import jetbrains.mps.typechecking.TypecheckingFacade;
-import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 import org.jetbrains.mps.openapi.language.SContainmentLink;
@@ -30,15 +28,13 @@ import org.jetbrains.mps.openapi.language.SConcept;
 public final class IMultiDecTab__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getInterfaceConcept(0x8bb1251eeae547abL, 0x984333adfae8edaaL, 0x7adee935251479e0L, "org.iets3.core.expr.util.structure.IMultiDecTab");
 
-  public static final SMethod<Iterable<SNode>> resultColDefs_id7FuUjk_57S0 = new SMethodBuilder<Iterable<SNode>>(new SJavaCompoundTypeImpl((Class<Iterable<SNode>>) ((Class) Object.class))).name("resultColDefs").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(8853770331921612288L).languageId(0x984333adfae8edaaL, 0x8bb1251eeae547abL).build2();
-  public static final SMethod<Iterable<SNode>> inputColDefs_id7FuUjk_dUMU = new SMethodBuilder<Iterable<SNode>>(new SJavaCompoundTypeImpl((Class<Iterable<SNode>>) ((Class) Object.class))).name("inputColDefs").modifiers(12, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(8853770331923918010L).languageId(0x984333adfae8edaaL, 0x8bb1251eeae547abL).build2();
-  public static final SMethod<Iterable<SNode>> getChildrenForCoverage_id5IKJrJHNCE8 = new SMethodBuilder<Iterable<SNode>>(new SJavaCompoundTypeImpl((Class<Iterable<SNode>>) ((Class) Object.class))).name("getChildrenForCoverage").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(6606989268198787720L).languageId(0xa6067ce0236c8023L, 0x47f075a6558e4640L).build2();
-  public static final SMethod<SNode> getRangeType_id22hm_0zj$Sb = new SMethodBuilder<SNode>(new SJavaCompoundTypeImpl((Class<SNode>) ((Class) Object.class))).name("getRangeType").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(2346756181072956939L).languageId(0x984333adfae8edaaL, 0x8bb1251eeae547abL).build2(SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""));
+  public static final SMethod<Iterable<SNode>> resultColDefs_id7FuUjk_57S0 = new SMethodBuilder<>((Class<Iterable<SNode>>) ((Class) Object.class)).name("resultColDefs").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(8853770331921612288L).languageId(0x984333adfae8edaaL, 0x8bb1251eeae547abL).build2();
+  public static final SMethod<Iterable<SNode>> inputColDefs_id7FuUjk_dUMU = new SMethodBuilder<>((Class<Iterable<SNode>>) ((Class) Object.class)).name("inputColDefs").modifiers(12, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(8853770331923918010L).languageId(0x984333adfae8edaaL, 0x8bb1251eeae547abL).build2();
+  public static final SMethod<Iterable<SNode>> getChildrenForCoverage_id5IKJrJHNCE8 = new SMethodBuilder<>((Class<Iterable<SNode>>) ((Class) Object.class)).name("getChildrenForCoverage").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(6606989268198787720L).languageId(0xa6067ce0236c8023L, 0x47f075a6558e4640L).build2();
+  public static final SMethod<SNode> getRangeType_id22hm_0zj$Sb = new SMethodBuilder<>(SNode.class).name("getRangeType").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(2346756181072956939L).languageId(0x984333adfae8edaaL, 0x8bb1251eeae547abL).build2(SMethodBuilder.createJavaParameter(SNode.class, "currentNode"));
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(resultColDefs_id7FuUjk_57S0, inputColDefs_id7FuUjk_dUMU, getChildrenForCoverage_id5IKJrJHNCE8, getRangeType_id22hm_0zj$Sb);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(resultColDefs_id7FuUjk_57S0, inputColDefs_id7FuUjk_dUMU, getChildrenForCoverage_id5IKJrJHNCE8, getRangeType_id22hm_0zj$Sb);
 
-  private static void ___init___(@NotNull SNode __thisNode__) {
-  }
 
   /*package*/ static Iterable<SNode> resultColDefs_id7FuUjk_57S0(@NotNull SNode __thisNode__) {
     return SNodeOperations.ofConcept(SLinkOperations.getChildren(__thisNode__, LINKS.colDefs$80en), CONCEPTS.AbstractResultColDef$$y);
@@ -70,10 +66,6 @@ public final class IMultiDecTab__BehaviorDescriptor extends BaseBHDescriptor {
   /*package*/ IMultiDecTab__BehaviorDescriptor() {
   }
 
-  @Override
-  protected void initNode(@NotNull SNode node, @NotNull SConstructor constructor, @Nullable Object[] parameters) {
-    ___init___(node);
-  }
 
   @Override
   protected <T> T invokeSpecial0(@NotNull SNode node, @NotNull SMethod<T> method, @Nullable Object[] parameters) {

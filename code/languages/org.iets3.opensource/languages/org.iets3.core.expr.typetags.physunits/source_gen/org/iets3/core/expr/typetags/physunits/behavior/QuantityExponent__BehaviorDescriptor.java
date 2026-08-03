@@ -8,7 +8,6 @@ import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import org.iets3.core.expr.base.runtime.runtime.Fraction;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import org.jetbrains.mps.openapi.model.SNode;
 import java.util.List;
@@ -16,7 +15,6 @@ import java.util.Arrays;
 import org.jetbrains.annotations.NotNull;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
-import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 import jetbrains.mps.smodel.builder.SNodeBuilder;
@@ -27,15 +25,13 @@ import org.jetbrains.mps.openapi.language.SProperty;
 public final class QuantityExponent__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getConcept(0x7ee265bd59864709L, 0x86ed2c6daa33cd8cL, 0x729d46b7ce979cf7L, "org.iets3.core.expr.typetags.physunits.structure.QuantityExponent");
 
-  public static final SMethod<Fraction> getExp_id1JynhuWslGU = new SMethodBuilder<Fraction>(new SJavaCompoundTypeImpl(Fraction.class)).name("getExp").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(2009270740287839034L).languageId(0x86ed2c6daa33cd8cL, 0x7ee265bd59864709L).build2();
-  public static final SMethod<Void> setExp_id1JynhuWsqnp = new SMethodBuilder<Void>(new SJavaCompoundTypeImpl(Void.class)).name("setExp").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(2009270740287858137L).languageId(0x86ed2c6daa33cd8cL, 0x7ee265bd59864709L).build2(SMethodBuilder.createJavaParameter(Fraction.class, ""));
-  public static final SMethod<SNode> getBase_id1JynhuWs9Jp = new SMethodBuilder<SNode>(new SJavaCompoundTypeImpl((Class<SNode>) ((Class) Object.class))).name("getBase").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(2009270740287790041L).languageId(0x86ed2c6daa33cd8cL, 0x7ee265bd59864709L).build2();
-  public static final SMethod<SNode> getReducedExpr_id69ZGumtuChd = new SMethodBuilder<SNode>(new SJavaCompoundTypeImpl((Class<SNode>) ((Class) Object.class))).name("getReducedExpr").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(7097587137506870349L).languageId(0x86ed2c6daa33cd8cL, 0x7ee265bd59864709L).build2();
+  public static final SMethod<Fraction> getExp_id1JynhuWslGU = new SMethodBuilder<>(Fraction.class).name("getExp").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(2009270740287839034L).languageId(0x86ed2c6daa33cd8cL, 0x7ee265bd59864709L).build2();
+  public static final SMethod<Void> setExp_id1JynhuWsqnp = new SMethodBuilder<>(Void.TYPE).name("setExp").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(2009270740287858137L).languageId(0x86ed2c6daa33cd8cL, 0x7ee265bd59864709L).build2(SMethodBuilder.createJavaParameter(Fraction.class, "exp"));
+  public static final SMethod<SNode> getBase_id1JynhuWs9Jp = new SMethodBuilder<>(SNode.class).name("getBase").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(2009270740287790041L).languageId(0x86ed2c6daa33cd8cL, 0x7ee265bd59864709L).build2();
+  public static final SMethod<SNode> getReducedExpr_id69ZGumtuChd = new SMethodBuilder<>(SNode.class).name("getReducedExpr").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(7097587137506870349L).languageId(0x86ed2c6daa33cd8cL, 0x7ee265bd59864709L).build2();
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(getExp_id1JynhuWslGU, setExp_id1JynhuWsqnp, getBase_id1JynhuWs9Jp, getReducedExpr_id69ZGumtuChd);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(getExp_id1JynhuWslGU, setExp_id1JynhuWsqnp, getBase_id1JynhuWs9Jp, getReducedExpr_id69ZGumtuChd);
 
-  private static void ___init___(@NotNull SNode __thisNode__) {
-  }
 
   /*package*/ static Fraction getExp_id1JynhuWslGU(@NotNull SNode __thisNode__) {
     return new Fraction((int) Exponent__BehaviorDescriptor.getNumerator_id3j3yk3guAC3.invoke(SLinkOperations.getTarget(__thisNode__, LINKS.exponent$xhDu)), (int) Exponent__BehaviorDescriptor.getDenominator_id3j3yk3guABz.invoke(SLinkOperations.getTarget(__thisNode__, LINKS.exponent$xhDu)));
@@ -57,10 +53,6 @@ public final class QuantityExponent__BehaviorDescriptor extends BaseBHDescriptor
   /*package*/ QuantityExponent__BehaviorDescriptor() {
   }
 
-  @Override
-  protected void initNode(@NotNull SNode node, @NotNull SConstructor constructor, @Nullable Object[] parameters) {
-    ___init___(node);
-  }
 
   @Override
   protected <T> T invokeSpecial0(@NotNull SNode node, @NotNull SMethod<T> method, @Nullable Object[] parameters) {

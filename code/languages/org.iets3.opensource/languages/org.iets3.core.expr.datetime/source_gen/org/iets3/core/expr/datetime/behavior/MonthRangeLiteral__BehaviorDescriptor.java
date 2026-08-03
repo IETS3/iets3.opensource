@@ -7,14 +7,12 @@ import org.jetbrains.mps.openapi.language.SAbstractConcept;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import java.util.List;
 import java.util.Arrays;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.mps.openapi.model.SNode;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations;
-import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 import org.jetbrains.mps.openapi.language.SProperty;
@@ -22,14 +20,12 @@ import org.jetbrains.mps.openapi.language.SProperty;
 public final class MonthRangeLiteral__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getConcept(0x289fb12b7f534ef7L, 0xbc2e1ed2c6a7c998L, 0x1c99182675015cb6L, "org.iets3.core.expr.datetime.structure.MonthRangeLiteral");
 
-  public static final SMethod<String> renderReadable_id4Y0vh0cfqjE = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("renderReadable").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5728716233893586154L).languageId(0xb66a309a6e1a7290L, 0xcfaa4966b7d54b69L).build2();
-  public static final SMethod<Integer> yearNumber_id8iseid0Z09 = new SMethodBuilder<Integer>(new SJavaCompoundTypeImpl(Integer.TYPE)).name("yearNumber").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(149305864577347593L).languageId(0xbc2e1ed2c6a7c998L, 0x289fb12b7f534ef7L).build2();
-  public static final SMethod<Integer> monthNumber_id8iseid0Z0q = new SMethodBuilder<Integer>(new SJavaCompoundTypeImpl(Integer.TYPE)).name("monthNumber").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(149305864577347610L).languageId(0xbc2e1ed2c6a7c998L, 0x289fb12b7f534ef7L).build2();
+  public static final SMethod<String> renderReadable_id4Y0vh0cfqjE = new SMethodBuilder<>(String.class).name("renderReadable").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5728716233893586154L).languageId(0xb66a309a6e1a7290L, 0xcfaa4966b7d54b69L).build2();
+  public static final SMethod<Integer> yearNumber_id8iseid0Z09 = new SMethodBuilder<>(Integer.TYPE).name("yearNumber").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(149305864577347593L).languageId(0xbc2e1ed2c6a7c998L, 0x289fb12b7f534ef7L).build2();
+  public static final SMethod<Integer> monthNumber_id8iseid0Z0q = new SMethodBuilder<>(Integer.TYPE).name("monthNumber").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(149305864577347610L).languageId(0xbc2e1ed2c6a7c998L, 0x289fb12b7f534ef7L).build2();
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(renderReadable_id4Y0vh0cfqjE, yearNumber_id8iseid0Z09, monthNumber_id8iseid0Z0q);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(renderReadable_id4Y0vh0cfqjE, yearNumber_id8iseid0Z09, monthNumber_id8iseid0Z0q);
 
-  private static void ___init___(@NotNull SNode __thisNode__) {
-  }
 
   /*package*/ static String renderReadable_id4Y0vh0cfqjE(@NotNull SNode __thisNode__) {
     return "month[" + ((int) MonthRangeLiteral__BehaviorDescriptor.yearNumber_id8iseid0Z09.invoke(__thisNode__)) + "/" + ((int) MonthRangeLiteral__BehaviorDescriptor.monthNumber_id8iseid0Z0q.invoke(__thisNode__)) + "]";
@@ -52,10 +48,6 @@ public final class MonthRangeLiteral__BehaviorDescriptor extends BaseBHDescripto
   /*package*/ MonthRangeLiteral__BehaviorDescriptor() {
   }
 
-  @Override
-  protected void initNode(@NotNull SNode node, @NotNull SConstructor constructor, @Nullable Object[] parameters) {
-    ___init___(node);
-  }
 
   @Override
   protected <T> T invokeSpecial0(@NotNull SNode node, @NotNull SMethod<T> method, @Nullable Object[] parameters) {

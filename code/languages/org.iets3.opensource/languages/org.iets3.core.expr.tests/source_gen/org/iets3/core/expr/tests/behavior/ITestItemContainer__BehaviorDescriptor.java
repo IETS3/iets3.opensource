@@ -8,7 +8,6 @@ import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import org.jetbrains.mps.openapi.model.SNode;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import java.util.List;
 import java.util.Arrays;
@@ -17,20 +16,17 @@ import jetbrains.mps.internal.collections.runtime.Sequence;
 import org.iets3.core.base.behavior.ICanStoreCheckResult__BehaviorDescriptor;
 import org.iets3.core.base.behavior.IResult;
 import org.iets3.core.expr.tests.editor.TestColors;
-import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 
 public final class ITestItemContainer__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getInterfaceConcept(0xd441fba0f46b43cdL, 0xb723dad7b65da615L, 0x527c70c5bae4dd04L, "org.iets3.core.expr.tests.structure.ITestItemContainer");
 
-  public static final SMethod<Iterable<SNode>> nonEmptyItems_id59WscmUTju7 = new SMethodBuilder<Iterable<SNode>>(new SJavaCompoundTypeImpl((Class<Iterable<SNode>>) ((Class) Object.class))).name("nonEmptyItems").modifiers(12, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5943749602768664455L).languageId(0xb723dad7b65da615L, 0xd441fba0f46b43cdL).build2();
-  public static final SMethod<String> status_id1IW19eYFapX = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("status").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(1998477367251347069L).languageId(0xb723dad7b65da615L, 0xd441fba0f46b43cdL).build2();
+  public static final SMethod<Iterable<SNode>> nonEmptyItems_id59WscmUTju7 = new SMethodBuilder<>((Class<Iterable<SNode>>) ((Class) Object.class)).name("nonEmptyItems").modifiers(12, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5943749602768664455L).languageId(0xb723dad7b65da615L, 0xd441fba0f46b43cdL).build2();
+  public static final SMethod<String> status_id1IW19eYFapX = new SMethodBuilder<>(String.class).name("status").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(1998477367251347069L).languageId(0xb723dad7b65da615L, 0xd441fba0f46b43cdL).build2();
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(nonEmptyItems_id59WscmUTju7, status_id1IW19eYFapX);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(nonEmptyItems_id59WscmUTju7, status_id1IW19eYFapX);
 
-  private static void ___init___(@NotNull SNode __thisNode__) {
-  }
 
   /*package*/ static String status_id1IW19eYFapX(@NotNull SNode __thisNode__) {
     boolean oneHasNoResult = false;
@@ -52,10 +48,6 @@ public final class ITestItemContainer__BehaviorDescriptor extends BaseBHDescript
   /*package*/ ITestItemContainer__BehaviorDescriptor() {
   }
 
-  @Override
-  protected void initNode(@NotNull SNode node, @NotNull SConstructor constructor, @Nullable Object[] parameters) {
-    ___init___(node);
-  }
 
   @Override
   protected <T> T invokeSpecial0(@NotNull SNode node, @NotNull SMethod<T> method, @Nullable Object[] parameters) {
