@@ -8,5 +8,5 @@ import com.intellij.util.IconUtil;
 import com.intellij.icons.AllIcons;
 
 public class IconContainer {
-  protected static Icon ICON_b0a0a0c0d = (StartupUiUtil.isUnderDarcula() ? IconUtil.INSTANCE.brighter(AllIcons.RunConfigurations.Junit, 10) : IconUtil.INSTANCE.darker(AllIcons.RunConfigurations.Junit, 4));
+  protected static Icon ICON0 = (StartupUiUtil.isUnderDarcula() ? IconUtil.INSTANCE.brighter(AllIcons.RunConfigurations.Junit, 10) : IconUtil.INSTANCE.darker(AllIcons.RunConfigurations.Junit, 4));
 }

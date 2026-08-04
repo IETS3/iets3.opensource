@@ -54,6 +54,7 @@ import com.mbeddr.mpsutil.grammarcells.runtime.GrammarCellsUtil;
 import jetbrains.mps.smodel.action.SNodeFactoryOperations;
 import org.jetbrains.mps.openapi.language.SAbstractConcept;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SConceptOperations;
+import jetbrains.mps.baseLanguage.closures.runtime._FunctionTypes;
 import jetbrains.mps.nodeEditor.cellProviders.AbstractCellListHandler;
 import jetbrains.mps.nodeEditor.cellLayout.CellLayout_Vertical;
 import jetbrains.mps.openapi.editor.style.Style;
@@ -101,7 +102,7 @@ import org.jetbrains.mps.openapi.language.SConcept;
     editorCell.addEditorCell(createRefCell_0());
     editorCell.addEditorCell(createSideTransformationSectionCell_0());
     if (nodeCondition_fz2qnd_a2a0()) {
-      editorCell.addEditorCell(createRefNodeList_0());
+      editorCell.addEditorCell(createCustomFactory_1());
     }
     return editorCell;
   }
@@ -265,8 +266,25 @@ import org.jetbrains.mps.openapi.language.SConcept;
       }
     }
   }
+  private EditorCell createCustomFactory_0(final EditorContext editorContext, final SNode node) {
+
+    if (!(new Object() {
+      public boolean showWrapped() {
+        return Sequence.fromIterable(AttributeOperations.getChildNodesAndAttributes(myNode, LINKS.constraints$YcgL)).isNotEmpty();
+      }
+    }.showWrapped())) {
+      return jetbrains.mps.nodeEditor.cells.EditorCell_Collection.createVertical(editorContext, node);
+    }
+
+    final EditorCell cell = createRefNodeList_0();
+    EditorCell editorCell = ((_FunctionTypes._return_P0_E0<EditorCell>) () -> cell).invoke();
+    return editorCell;
+  }
+  private EditorCell createCustomFactory_1() {
+    return createCustomFactory_0(getEditorContext(), myNode);
+  }
   private EditorCell createRefNodeList_0() {
-    AbstractCellListHandler handler = new constraintsListHandler_fz2qnd_c0a(myNode, getEditorContext());
+    AbstractCellListHandler handler = new constraintsListHandler_fz2qnd_a2a0(myNode, getEditorContext());
     jetbrains.mps.nodeEditor.cells.EditorCell_Collection editorCell = handler.createCells(new CellLayout_Vertical(), false);
     editorCell.setCellId("refNodeList_constraints");
     Style style = new StyleImpl();
@@ -276,11 +294,11 @@ import org.jetbrains.mps.openapi.language.SConcept;
     editorCell.setSRole(handler.getElementSRole());
     return editorCell;
   }
-  private static class constraintsListHandler_fz2qnd_c0a extends RefNodeListHandler {
+  private static class constraintsListHandler_fz2qnd_a2a0 extends RefNodeListHandler {
     @NotNull
     private SNode myNode;
 
-    public constraintsListHandler_fz2qnd_c0a(SNode ownerNode, EditorContext context) {
+    public constraintsListHandler_fz2qnd_a2a0(SNode ownerNode, EditorContext context) {
       super(context, false);
       myNode = ownerNode;
     }
@@ -303,7 +321,7 @@ import org.jetbrains.mps.openapi.language.SConcept;
     }
     public EditorCell createEmptyCell() {
       getCellFactory().pushCellContext();
-      getCellFactory().setNodeLocation(new SNodeLocation.FromParentAndLink(constraintsListHandler_fz2qnd_c0a.this.getNode(), LINKS.constraints$YcgL));
+      getCellFactory().setNodeLocation(new SNodeLocation.FromParentAndLink(constraintsListHandler_fz2qnd_a2a0.this.getNode(), LINKS.constraints$YcgL));
       try {
         EditorCell emptyCell = null;
         emptyCell = super.createEmptyCell();

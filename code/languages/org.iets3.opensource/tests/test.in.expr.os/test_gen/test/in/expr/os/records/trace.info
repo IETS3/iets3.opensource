@@ -9,6 +9,7 @@
   <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123157:jetbrains.mps.baseLanguage.structure.Statement" />
   <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1070462154015:jetbrains.mps.baseLanguage.structure.StaticFieldDeclaration" />
   <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1070475587102:jetbrains.mps.baseLanguage.structure.SuperConstructorInvocation" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/5351203823916750322:jetbrains.mps.baseLanguage.structure.TryUniversalStatement" />
   <root nodeRef="r:fcb91210-c6db-4de0-81c0-ca99e48fd25a(test.in.expr.os.records@tests)/4259196335511579777">
     <file name="ExecuteInterpreterCoverageForRecords_Test.java">
       <node id="4259196335511579777" at="21,54,22,60" concept="8" />
@@ -24,39 +25,43 @@
       <node id="2477650143291494228" at="48,57,49,49" concept="5" />
       <node id="4259196335511848524" at="49,49,50,45" concept="4" />
       <node id="4259196335511849822" at="50,45,51,0" concept="6" />
-      <node id="4259196335524891557" at="51,0,52,109" concept="4" />
-      <node id="4259196335524939002" at="52,109,53,38" concept="4" />
-      <node id="4259196335511856054" at="53,38,54,29" concept="0" />
+      <node id="4259196335524891557" at="51,0,52,111" concept="4" />
+      <node id="4259196335524939002" at="52,111,53,40" concept="4" />
+      <node id="4259196335511856054" at="53,40,54,29" concept="0" />
       <node id="4259196335524942328" at="54,29,55,0" concept="6" />
-      <node id="4259196335524942430" at="55,0,56,31" concept="2" />
+      <node id="4259196335524942430" at="56,13,57,44" concept="2" />
+      <node id="793400734379268649" at="58,19,59,29" concept="2" />
       <node id="4259196335511579777" at="18,0,20,0" concept="7" trace="ourParametersCacheExtension" />
       <node id="4259196335511579777" at="21,0,24,0" concept="1" trace="ExecuteInterpreterCoverageForRecords_Test#()V" />
       <node id="4259196335511579777" at="32,0,35,0" concept="1" trace="TestBody#(Ljetbrains/mps/lang/test/runtime/TransformationTest;)V" />
       <node id="4259196335511579780" at="25,0,29,0" concept="3" trace="test_checkCoverageRatio#()V" />
       <node id="4259196335511579777" at="36,0,40,0" concept="3" trace="initTestNodes#()V" />
-      <node id="4259196335511579780" at="42,22,57,9" concept="2" />
-      <node id="4259196335511579780" at="41,0,59,0" concept="3" trace="test_checkCoverageRatio#()V" />
+      <node id="793400734379267209" at="55,0,60,9" concept="9" />
+      <node id="4259196335511579780" at="42,22,61,9" concept="2" />
+      <node id="4259196335511579780" at="41,0,63,0" concept="3" trace="test_checkCoverageRatio#()V" />
       <scope id="4259196335511579777" at="21,54,22,60" />
       <scope id="4259196335511579780" at="26,58,27,49" />
       <scope id="4259196335511579777" at="32,52,33,19" />
       <scope id="4259196335511579777" at="37,36,38,25" />
+      <scope id="793400734379267211" at="56,13,57,44" />
+      <scope id="793400734379267802" at="58,19,59,29" />
       <scope id="4259196335511579777" at="21,0,24,0" />
       <scope id="4259196335511579777" at="32,0,35,0">
         <var name="owner" id="4259196335511579777" />
       </scope>
       <scope id="4259196335511579780" at="25,0,29,0" />
       <scope id="4259196335511579777" at="36,0,40,0" />
-      <scope id="4259196335511579780" at="43,30,56,31">
+      <scope id="4259196335511579780" at="43,30,60,9">
+        <var name="analyzer" id="4259196335524891558" />
         <var name="ass" id="4259196335524939003" />
-        <var name="helper" id="4259196335524891558" />
         <var name="mdlId" id="4259196335511811065" />
         <var name="mdlName" id="4259196335511819240" />
         <var name="nodId" id="4259196335511848525" />
       </scope>
-      <scope id="4259196335511579780" at="41,60,57,9" />
-      <scope id="4259196335511579780" at="41,0,59,0" />
-      <unit id="4259196335511579777" at="30,0,61,0" name="test.in.expr.os.records.ExecuteInterpreterCoverageForRecords_Test$TestBody" />
-      <unit id="4259196335511579777" at="16,0,62,0" name="test.in.expr.os.records.ExecuteInterpreterCoverageForRecords_Test" />
+      <scope id="4259196335511579780" at="41,60,61,9" />
+      <scope id="4259196335511579780" at="41,0,63,0" />
+      <unit id="4259196335511579777" at="30,0,65,0" name="test.in.expr.os.records.ExecuteInterpreterCoverageForRecords_Test$TestBody" />
+      <unit id="4259196335511579777" at="16,0,66,0" name="test.in.expr.os.records.ExecuteInterpreterCoverageForRecords_Test" />
     </file>
   </root>
   <root nodeRef="r:fcb91210-c6db-4de0-81c0-ca99e48fd25a(test.in.expr.os.records@tests)/7740953487931040977">

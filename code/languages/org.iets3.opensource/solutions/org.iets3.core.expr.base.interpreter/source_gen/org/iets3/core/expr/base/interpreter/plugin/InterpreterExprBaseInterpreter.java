@@ -918,7 +918,7 @@ public class InterpreterExprBaseInterpreter extends InterpreterBase {
         } catch (InterpreterEscapeException ex) {
           throw ex;
         } catch (RuntimeException ex) {
-          throw new InterpreterRuntimeException("DotExpression()", node, ex, trace);
+          throw new InterpreterRuntimeException(".()", node, ex, trace);
         }
       }
       public EvaluatorInfo getInfo() {
