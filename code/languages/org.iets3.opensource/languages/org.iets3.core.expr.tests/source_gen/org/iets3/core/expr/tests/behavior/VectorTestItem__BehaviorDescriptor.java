@@ -7,7 +7,6 @@ import org.jetbrains.mps.openapi.language.SAbstractConcept;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import java.util.List;
 import java.util.Arrays;
@@ -18,7 +17,6 @@ import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
 import org.iets3.core.expr.base.plugin.MessageValue;
 import org.iets3.core.base.behavior.ICanStoreCheckResult__BehaviorDescriptor;
-import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 import org.jetbrains.mps.openapi.language.SContainmentLink;
@@ -27,13 +25,11 @@ import org.jetbrains.mps.openapi.language.SConcept;
 public final class VectorTestItem__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getConcept(0xd441fba0f46b43cdL, 0xb723dad7b65da615L, 0x39ebb0e06abca11aL, "org.iets3.core.expr.tests.structure.VectorTestItem");
 
-  public static final SMethod<EvalResult> executeTestInternal_id78hTg1$THJg = new SMethodBuilder<EvalResult>(new SJavaCompoundTypeImpl(EvalResult.class)).name("executeTestInternal").modifiers(8, AccessPrivileges.PROTECTED).concept(CONCEPT).baseMethodId(8219602584783477712L).languageId(0xb723dad7b65da615L, 0xd441fba0f46b43cdL).build2();
-  public static final SMethod<String> asString_id6iqfHNBPkjP = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("asString").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(7249175668709475573L).languageId(0xb66a309a6e1a7290L, 0xcfaa4966b7d54b69L).build2();
+  public static final SMethod<EvalResult> executeTestInternal_id78hTg1$THJg = new SMethodBuilder<>(EvalResult.class).name("executeTestInternal").modifiers(8, AccessPrivileges.PROTECTED).concept(CONCEPT).baseMethodId(8219602584783477712L).languageId(0xb723dad7b65da615L, 0xd441fba0f46b43cdL).build2();
+  public static final SMethod<String> asString_id6iqfHNBPkjP = new SMethodBuilder<>(String.class).name("asString").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(7249175668709475573L).languageId(0xb66a309a6e1a7290L, 0xcfaa4966b7d54b69L).build2();
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(executeTestInternal_id78hTg1$THJg, asString_id6iqfHNBPkjP);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(executeTestInternal_id78hTg1$THJg, asString_id6iqfHNBPkjP);
 
-  private static void ___init___(@NotNull SNode __thisNode__) {
-  }
 
   /*package*/ static EvalResult executeTestInternal_id78hTg1$THJg(@NotNull SNode __thisNode__) {
     boolean thereWasAnError = false;
@@ -64,10 +60,6 @@ public final class VectorTestItem__BehaviorDescriptor extends BaseBHDescriptor {
   /*package*/ VectorTestItem__BehaviorDescriptor() {
   }
 
-  @Override
-  protected void initNode(@NotNull SNode node, @NotNull SConstructor constructor, @Nullable Object[] parameters) {
-    ___init___(node);
-  }
 
   @Override
   protected <T> T invokeSpecial0(@NotNull SNode node, @NotNull SMethod<T> method, @Nullable Object[] parameters) {

@@ -7,7 +7,6 @@ import org.jetbrains.mps.openapi.language.SAbstractConcept;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import com.mbeddr.mpsutil.plantuml.node.behavior.VisGraph;
 import org.jetbrains.mps.openapi.model.SNode;
@@ -20,7 +19,6 @@ import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
 import jetbrains.mps.internal.collections.runtime.ListSequence;
 import jetbrains.mps.lang.core.behavior.BaseConcept__BehaviorDescriptor;
-import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 import org.jetbrains.mps.openapi.language.SProperty;
@@ -31,15 +29,13 @@ import org.jetbrains.mps.openapi.language.SReferenceLink;
 public final class ServiceDefinition__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getConcept(0x257976063fb647b8L, 0xbc3cb4384df7da44L, 0x5aed9484fdce311L, "org.iets3.components.functional.structure.ServiceDefinition");
 
-  public static final SMethod<String[]> getCategories_id2N1CSrzPN_a = new SMethodBuilder<String[]>(new SJavaCompoundTypeImpl(String[].class)).name("getCategories").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(3225038607917463882L).languageId(0x943e3a41f97a0e52L, 0xb4d28e197d2d47e9L).build2();
-  public static final SMethod<Void> getVisualization_id2N1CSrzPN_f = new SMethodBuilder<Void>(new SJavaCompoundTypeImpl(Void.class)).name("getVisualization").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(3225038607917463887L).languageId(0x943e3a41f97a0e52L, 0xb4d28e197d2d47e9L).build2(SMethodBuilder.createJavaParameter(String.class, ""), SMethodBuilder.createJavaParameter(VisGraph.class, ""));
-  public static final SMethod<SNode> initialState_id1AS3XeGlhI4 = new SMethodBuilder<SNode>(new SJavaCompoundTypeImpl((Class<SNode>) ((Class) Object.class))).name("initialState").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(1853248648466733956L).languageId(0xbc3cb4384df7da44L, 0x257976063fb647b8L).build2();
-  public static final SMethod<Iterable<SNode>> dependencies_id1WCh2the5Vh = new SMethodBuilder<Iterable<SNode>>(new SJavaCompoundTypeImpl((Class<Iterable<SNode>>) ((Class) Object.class))).name("dependencies").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(2245119349901254353L).languageId(0xb6713d118449c6e7L, 0xf0fd486f857743e9L).build2();
+  public static final SMethod<String[]> getCategories_id2N1CSrzPN_a = new SMethodBuilder<>(String[].class).name("getCategories").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(3225038607917463882L).languageId(0x943e3a41f97a0e52L, 0xb4d28e197d2d47e9L).build2();
+  public static final SMethod<Void> getVisualization_id2N1CSrzPN_f = new SMethodBuilder<>(Void.TYPE).name("getVisualization").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(3225038607917463887L).languageId(0x943e3a41f97a0e52L, 0xb4d28e197d2d47e9L).build2(SMethodBuilder.createJavaParameter(String.class, "category"), SMethodBuilder.createJavaParameter(VisGraph.class, "g"));
+  public static final SMethod<SNode> initialState_id1AS3XeGlhI4 = new SMethodBuilder<>(SNode.class).name("initialState").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(1853248648466733956L).languageId(0xbc3cb4384df7da44L, 0x257976063fb647b8L).build2();
+  public static final SMethod<Iterable<SNode>> dependencies_id1WCh2the5Vh = new SMethodBuilder<>((Class<Iterable<SNode>>) ((Class) Object.class)).name("dependencies").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(2245119349901254353L).languageId(0xb6713d118449c6e7L, 0xf0fd486f857743e9L).build2();
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(getCategories_id2N1CSrzPN_a, getVisualization_id2N1CSrzPN_f, initialState_id1AS3XeGlhI4, dependencies_id1WCh2the5Vh);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(getCategories_id2N1CSrzPN_a, getVisualization_id2N1CSrzPN_f, initialState_id1AS3XeGlhI4, dependencies_id1WCh2the5Vh);
 
-  private static void ___init___(@NotNull SNode __thisNode__) {
-  }
 
   /*package*/ static String[] getCategories_id2N1CSrzPN_a(@NotNull SNode __thisNode__) {
     return new String[]{"protocol"};
@@ -79,10 +75,6 @@ public final class ServiceDefinition__BehaviorDescriptor extends BaseBHDescripto
   /*package*/ ServiceDefinition__BehaviorDescriptor() {
   }
 
-  @Override
-  protected void initNode(@NotNull SNode node, @NotNull SConstructor constructor, @Nullable Object[] parameters) {
-    ___init___(node);
-  }
 
   @Override
   protected <T> T invokeSpecial0(@NotNull SNode node, @NotNull SMethod<T> method, @Nullable Object[] parameters) {

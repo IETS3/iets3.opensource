@@ -7,7 +7,6 @@ import org.jetbrains.mps.openapi.language.SAbstractConcept;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import org.jetbrains.mps.openapi.model.SNode;
 import java.util.List;
@@ -16,7 +15,6 @@ import org.jetbrains.annotations.NotNull;
 import jetbrains.mps.lang.core.behavior.BaseConcept__BehaviorDescriptor;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
-import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 import jetbrains.mps.smodel.builder.SNodeBuilder;
@@ -26,18 +24,16 @@ import org.jetbrains.mps.openapi.language.SConcept;
 public final class OptionType__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getConcept(0xcfaa4966b7d54b69L, 0xb66a309a6e1a7290L, 0x26f4f2a81ca93310L, "org.iets3.core.expr.base.structure.OptionType");
 
-  public static final SMethod<Boolean> guaranteedToBeSome_id7jlPi2BQ7aR = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("guaranteedToBeSome").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(8418869414670660279L).languageId(0xb66a309a6e1a7290L, 0xcfaa4966b7d54b69L).build2();
-  public static final SMethod<String> getPresentation_idhEwIMiw = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("getPresentation").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(1213877396640L).languageId(0x9b92103b95ca8c0cL, 0xceab519525ea4f22L).build2();
-  public static final SMethod<SNode> wrappedType_id6bG6MAFRDvi = new SMethodBuilder<SNode>(new SJavaCompoundTypeImpl((Class<SNode>) ((Class) Object.class))).name("wrappedType").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(7128102176011753426L).languageId(0xa6067ce0236c8023L, 0x47f075a6558e4640L).build2();
-  public static final SMethod<SNode> reWrap_id6bG6MAG4Mv3 = new SMethodBuilder<SNode>(new SJavaCompoundTypeImpl((Class<SNode>) ((Class) Object.class))).name("reWrap").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(7128102176015198147L).languageId(0xa6067ce0236c8023L, 0x47f075a6558e4640L).build2(SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""), SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""));
-  public static final SMethod<Boolean> isSameAs_idfIXgjlt4VE = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("isSameAs").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(283433227680763626L).languageId(0xb66a309a6e1a7290L, 0xcfaa4966b7d54b69L).build2(SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""));
-  public static final SMethod<SNode> createDefaultVarExpr_id60Qa1k_nI2O = new SMethodBuilder<SNode>(new SJavaCompoundTypeImpl((Class<SNode>) ((Class) Object.class))).name("createDefaultVarExpr").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(6932772747669856436L).languageId(0xb66a309a6e1a7290L, 0xcfaa4966b7d54b69L).build2();
-  public static final SMethod<Boolean> canBeSorted_id7k6A8Wfp3IU = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("canBeSorted").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(8432595092503804858L).languageId(0xb66a309a6e1a7290L, 0xcfaa4966b7d54b69L).build2();
+  public static final SMethod<Boolean> guaranteedToBeSome_id7jlPi2BQ7aR = new SMethodBuilder<>(Boolean.TYPE).name("guaranteedToBeSome").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(8418869414670660279L).languageId(0xb66a309a6e1a7290L, 0xcfaa4966b7d54b69L).build2();
+  public static final SMethod<String> getPresentation_idhEwIMiw = new SMethodBuilder<>(String.class).name("getPresentation").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(1213877396640L).languageId(0x9b92103b95ca8c0cL, 0xceab519525ea4f22L).build2();
+  public static final SMethod<SNode> wrappedType_id6bG6MAFRDvi = new SMethodBuilder<>(SNode.class).name("wrappedType").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(7128102176011753426L).languageId(0xa6067ce0236c8023L, 0x47f075a6558e4640L).build2();
+  public static final SMethod<SNode> reWrap_id6bG6MAG4Mv3 = new SMethodBuilder<>(SNode.class).name("reWrap").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(7128102176015198147L).languageId(0xa6067ce0236c8023L, 0x47f075a6558e4640L).build2(SMethodBuilder.createJavaParameter(SNode.class, "newBaseType"), SMethodBuilder.createJavaParameter(SNode.class, "originalWrapper"));
+  public static final SMethod<Boolean> isSameAs_idfIXgjlt4VE = new SMethodBuilder<>(Boolean.TYPE).name("isSameAs").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(283433227680763626L).languageId(0xb66a309a6e1a7290L, 0xcfaa4966b7d54b69L).build2(SMethodBuilder.createJavaParameter(SNode.class, "other"));
+  public static final SMethod<SNode> createDefaultVarExpr_id60Qa1k_nI2O = new SMethodBuilder<>(SNode.class).name("createDefaultVarExpr").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(6932772747669856436L).languageId(0xb66a309a6e1a7290L, 0xcfaa4966b7d54b69L).build2();
+  public static final SMethod<Boolean> canBeSorted_id7k6A8Wfp3IU = new SMethodBuilder<>(Boolean.TYPE).name("canBeSorted").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(8432595092503804858L).languageId(0xb66a309a6e1a7290L, 0xcfaa4966b7d54b69L).build2();
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(guaranteedToBeSome_id7jlPi2BQ7aR, getPresentation_idhEwIMiw, wrappedType_id6bG6MAFRDvi, reWrap_id6bG6MAG4Mv3, isSameAs_idfIXgjlt4VE, createDefaultVarExpr_id60Qa1k_nI2O, canBeSorted_id7k6A8Wfp3IU);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(guaranteedToBeSome_id7jlPi2BQ7aR, getPresentation_idhEwIMiw, wrappedType_id6bG6MAFRDvi, reWrap_id6bG6MAG4Mv3, isSameAs_idfIXgjlt4VE, createDefaultVarExpr_id60Qa1k_nI2O, canBeSorted_id7k6A8Wfp3IU);
 
-  private static void ___init___(@NotNull SNode __thisNode__) {
-  }
 
   /*package*/ static boolean guaranteedToBeSome_id7jlPi2BQ7aR(@NotNull SNode __thisNode__) {
     return true;
@@ -71,10 +67,6 @@ public final class OptionType__BehaviorDescriptor extends BaseBHDescriptor {
   /*package*/ OptionType__BehaviorDescriptor() {
   }
 
-  @Override
-  protected void initNode(@NotNull SNode node, @NotNull SConstructor constructor, @Nullable Object[] parameters) {
-    ___init___(node);
-  }
 
   @Override
   protected <T> T invokeSpecial0(@NotNull SNode node, @NotNull SMethod<T> method, @Nullable Object[] parameters) {

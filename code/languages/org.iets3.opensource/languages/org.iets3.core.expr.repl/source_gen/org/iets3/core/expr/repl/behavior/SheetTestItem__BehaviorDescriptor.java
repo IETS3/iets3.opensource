@@ -7,7 +7,6 @@ import org.jetbrains.mps.openapi.language.SAbstractConcept;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import org.iets3.core.expr.tests.behavior.EvalResult;
 import java.util.List;
@@ -19,7 +18,6 @@ import jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations;
 import org.iets3.core.base.behavior.ICanRunCheckManually__BehaviorDescriptor;
 import org.iets3.core.expr.base.plugin.MessageValue;
 import org.iets3.core.base.behavior.ICanStoreCheckResult__BehaviorDescriptor;
-import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 import org.jetbrains.mps.openapi.language.SContainmentLink;
@@ -28,14 +26,12 @@ import org.jetbrains.mps.openapi.language.SProperty;
 public final class SheetTestItem__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getConcept(0x18001c9433a74f68L, 0xa7c1ffddc4b39be1L, 0x529f594e6badfd30L, "org.iets3.core.expr.repl.structure.SheetTestItem");
 
-  public static final SMethod<Void> buildSheet_id5avmkTFIjNX = new SMethodBuilder<Void>(new SJavaCompoundTypeImpl(Void.class)).name("buildSheet").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5953575425756708093L).languageId(0xa7c1ffddc4b39be1L, 0x18001c9433a74f68L).build2();
-  public static final SMethod<EvalResult> executeTestInternal_id78hTg1$THJg = new SMethodBuilder<EvalResult>(new SJavaCompoundTypeImpl(EvalResult.class)).name("executeTestInternal").modifiers(8, AccessPrivileges.PROTECTED).concept(CONCEPT).baseMethodId(8219602584783477712L).languageId(0xb723dad7b65da615L, 0xd441fba0f46b43cdL).build2();
-  public static final SMethod<String> asString_id6iqfHNBPkjP = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("asString").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(7249175668709475573L).languageId(0xb66a309a6e1a7290L, 0xcfaa4966b7d54b69L).build2();
+  public static final SMethod<Void> buildSheet_id5avmkTFIjNX = new SMethodBuilder<>(Void.TYPE).name("buildSheet").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5953575425756708093L).languageId(0xa7c1ffddc4b39be1L, 0x18001c9433a74f68L).build2();
+  public static final SMethod<EvalResult> executeTestInternal_id78hTg1$THJg = new SMethodBuilder<>(EvalResult.class).name("executeTestInternal").modifiers(8, AccessPrivileges.PROTECTED).concept(CONCEPT).baseMethodId(8219602584783477712L).languageId(0xb723dad7b65da615L, 0xd441fba0f46b43cdL).build2();
+  public static final SMethod<String> asString_id6iqfHNBPkjP = new SMethodBuilder<>(String.class).name("asString").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(7249175668709475573L).languageId(0xb66a309a6e1a7290L, 0xcfaa4966b7d54b69L).build2();
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(buildSheet_id5avmkTFIjNX, executeTestInternal_id78hTg1$THJg, asString_id6iqfHNBPkjP);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(buildSheet_id5avmkTFIjNX, executeTestInternal_id78hTg1$THJg, asString_id6iqfHNBPkjP);
 
-  private static void ___init___(@NotNull SNode __thisNode__) {
-  }
 
   /*package*/ static void buildSheet_id5avmkTFIjNX(@NotNull SNode __thisNode__) {
     SLinkOperations.setNewChild(__thisNode__, LINKS.sheet$kxC5, null);
@@ -68,10 +64,6 @@ public final class SheetTestItem__BehaviorDescriptor extends BaseBHDescriptor {
   /*package*/ SheetTestItem__BehaviorDescriptor() {
   }
 
-  @Override
-  protected void initNode(@NotNull SNode node, @NotNull SConstructor constructor, @Nullable Object[] parameters) {
-    ___init___(node);
-  }
 
   @Override
   protected <T> T invokeSpecial0(@NotNull SNode node, @NotNull SMethod<T> method, @Nullable Object[] parameters) {

@@ -49,7 +49,7 @@ public class ArtifactHelper {
    * Get the IVAA from a given node.
    * 
    * This will be either the node itself or one of its node attributes.
-   * Note: Currently n has to be a root node, this is an assumption throughout the 
+   * Note: Currently n has to be a root node, this is an assumption throughout the
    * variability-awareness-framework (including the solver_gen generators).
    * 
    * @param n a given root node
@@ -83,12 +83,12 @@ public class ArtifactHelper {
    * Get IVAA for some model node even if it is not attached to the root node.
    * 
    * Currently this could be the case if we are in a NodesTest. Otherwise IVAAs should always
-   * reside at root nodes for the current version of IETS3 Variability. 
+   * reside at root nodes for the current version of IETS3 Variability.
    * 
    * Note that this assumption will be removed in later IETS3 Variability versions.
    * 
    * Caution: This method has to run up the parent-chain and check for each node
-   * if it either has an IVAA attribute or is itself implementing IVAA. This is 
+   * if it either has an IVAA attribute or is itself implementing IVAA. This is
    * probably not efficient if it is called for many nodes.
    * 
    * @param start the node for which we want to get the IVAA

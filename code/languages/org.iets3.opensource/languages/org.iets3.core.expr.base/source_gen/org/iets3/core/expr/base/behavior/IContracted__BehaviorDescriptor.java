@@ -7,7 +7,6 @@ import org.jetbrains.mps.openapi.language.SAbstractConcept;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import org.jetbrains.mps.openapi.model.SNode;
 import java.util.List;
@@ -15,7 +14,6 @@ import java.util.Arrays;
 import org.jetbrains.annotations.NotNull;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
-import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 import org.jetbrains.mps.openapi.language.SContainmentLink;
@@ -24,20 +22,18 @@ import org.jetbrains.mps.openapi.language.SConcept;
 public final class IContracted__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getInterfaceConcept(0xcfaa4966b7d54b69L, 0xb66a309a6e1a7290L, 0xc0aff242212e4a3L, "org.iets3.core.expr.base.structure.IContracted");
 
-  public static final SMethod<Boolean> canHaveInvariant_idKaZMgy4IiZ = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("canHaveInvariant").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(867786408877810879L).languageId(0xb66a309a6e1a7290L, 0xcfaa4966b7d54b69L).build2();
-  public static final SMethod<Boolean> canHavePrecondition_idKaZMgy4IjP = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("canHavePrecondition").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(867786408877810933L).languageId(0xb66a309a6e1a7290L, 0xcfaa4966b7d54b69L).build2();
-  public static final SMethod<Boolean> canHavePostcondition_idKaZMgy4Iky = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("canHavePostcondition").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(867786408877810978L).languageId(0xb66a309a6e1a7290L, 0xcfaa4966b7d54b69L).build2();
-  public static final SMethod<Boolean> canHavePlainConstraint_idKaZMgylLn7 = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("canHavePlainConstraint").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(867786408882279879L).languageId(0xb66a309a6e1a7290L, 0xcfaa4966b7d54b69L).build2();
-  public static final SMethod<Iterable<SNode>> allContractItems_idKaZMgyh03Y = new SMethodBuilder<Iterable<SNode>>(new SJavaCompoundTypeImpl((Class<Iterable<SNode>>) ((Class) Object.class))).name("allContractItems").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(867786408881029374L).languageId(0xb66a309a6e1a7290L, 0xcfaa4966b7d54b69L).build2();
-  public static final SMethod<Iterable<SNode>> invariants_idKaZMgygZub = new SMethodBuilder<Iterable<SNode>>(new SJavaCompoundTypeImpl((Class<Iterable<SNode>>) ((Class) Object.class))).name("invariants").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(867786408881026955L).languageId(0xb66a309a6e1a7290L, 0xcfaa4966b7d54b69L).build2();
-  public static final SMethod<Iterable<SNode>> preconditions_idKaZMgyh1or = new SMethodBuilder<Iterable<SNode>>(new SJavaCompoundTypeImpl((Class<Iterable<SNode>>) ((Class) Object.class))).name("preconditions").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(867786408881034779L).languageId(0xb66a309a6e1a7290L, 0xcfaa4966b7d54b69L).build2();
-  public static final SMethod<Iterable<SNode>> postconditions_idKaZMgyh1v9 = new SMethodBuilder<Iterable<SNode>>(new SJavaCompoundTypeImpl((Class<Iterable<SNode>>) ((Class) Object.class))).name("postconditions").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(867786408881035209L).languageId(0xb66a309a6e1a7290L, 0xcfaa4966b7d54b69L).build2();
-  public static final SMethod<Iterable<SNode>> plainConstraints_idKaZMgylLvI = new SMethodBuilder<Iterable<SNode>>(new SJavaCompoundTypeImpl((Class<Iterable<SNode>>) ((Class) Object.class))).name("plainConstraints").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(867786408882280430L).languageId(0xb66a309a6e1a7290L, 0xcfaa4966b7d54b69L).build2();
+  public static final SMethod<Boolean> canHaveInvariant_idKaZMgy4IiZ = new SMethodBuilder<>(Boolean.TYPE).name("canHaveInvariant").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(867786408877810879L).languageId(0xb66a309a6e1a7290L, 0xcfaa4966b7d54b69L).build2();
+  public static final SMethod<Boolean> canHavePrecondition_idKaZMgy4IjP = new SMethodBuilder<>(Boolean.TYPE).name("canHavePrecondition").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(867786408877810933L).languageId(0xb66a309a6e1a7290L, 0xcfaa4966b7d54b69L).build2();
+  public static final SMethod<Boolean> canHavePostcondition_idKaZMgy4Iky = new SMethodBuilder<>(Boolean.TYPE).name("canHavePostcondition").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(867786408877810978L).languageId(0xb66a309a6e1a7290L, 0xcfaa4966b7d54b69L).build2();
+  public static final SMethod<Boolean> canHavePlainConstraint_idKaZMgylLn7 = new SMethodBuilder<>(Boolean.TYPE).name("canHavePlainConstraint").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(867786408882279879L).languageId(0xb66a309a6e1a7290L, 0xcfaa4966b7d54b69L).build2();
+  public static final SMethod<Iterable<SNode>> allContractItems_idKaZMgyh03Y = new SMethodBuilder<>((Class<Iterable<SNode>>) ((Class) Object.class)).name("allContractItems").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(867786408881029374L).languageId(0xb66a309a6e1a7290L, 0xcfaa4966b7d54b69L).build2();
+  public static final SMethod<Iterable<SNode>> invariants_idKaZMgygZub = new SMethodBuilder<>((Class<Iterable<SNode>>) ((Class) Object.class)).name("invariants").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(867786408881026955L).languageId(0xb66a309a6e1a7290L, 0xcfaa4966b7d54b69L).build2();
+  public static final SMethod<Iterable<SNode>> preconditions_idKaZMgyh1or = new SMethodBuilder<>((Class<Iterable<SNode>>) ((Class) Object.class)).name("preconditions").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(867786408881034779L).languageId(0xb66a309a6e1a7290L, 0xcfaa4966b7d54b69L).build2();
+  public static final SMethod<Iterable<SNode>> postconditions_idKaZMgyh1v9 = new SMethodBuilder<>((Class<Iterable<SNode>>) ((Class) Object.class)).name("postconditions").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(867786408881035209L).languageId(0xb66a309a6e1a7290L, 0xcfaa4966b7d54b69L).build2();
+  public static final SMethod<Iterable<SNode>> plainConstraints_idKaZMgylLvI = new SMethodBuilder<>((Class<Iterable<SNode>>) ((Class) Object.class)).name("plainConstraints").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(867786408882280430L).languageId(0xb66a309a6e1a7290L, 0xcfaa4966b7d54b69L).build2();
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(canHaveInvariant_idKaZMgy4IiZ, canHavePrecondition_idKaZMgy4IjP, canHavePostcondition_idKaZMgy4Iky, canHavePlainConstraint_idKaZMgylLn7, allContractItems_idKaZMgyh03Y, invariants_idKaZMgygZub, preconditions_idKaZMgyh1or, postconditions_idKaZMgyh1v9, plainConstraints_idKaZMgylLvI);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(canHaveInvariant_idKaZMgy4IiZ, canHavePrecondition_idKaZMgy4IjP, canHavePostcondition_idKaZMgy4Iky, canHavePlainConstraint_idKaZMgylLn7, allContractItems_idKaZMgyh03Y, invariants_idKaZMgygZub, preconditions_idKaZMgyh1or, postconditions_idKaZMgyh1v9, plainConstraints_idKaZMgylLvI);
 
-  private static void ___init___(@NotNull SNode __thisNode__) {
-  }
 
   /*package*/ static boolean canHaveInvariant_idKaZMgy4IiZ(@NotNull SNode __thisNode__) {
     return false;
@@ -70,10 +66,6 @@ public final class IContracted__BehaviorDescriptor extends BaseBHDescriptor {
   /*package*/ IContracted__BehaviorDescriptor() {
   }
 
-  @Override
-  protected void initNode(@NotNull SNode node, @NotNull SConstructor constructor, @Nullable Object[] parameters) {
-    ___init___(node);
-  }
 
   @Override
   protected <T> T invokeSpecial0(@NotNull SNode node, @NotNull SMethod<T> method, @Nullable Object[] parameters) {
