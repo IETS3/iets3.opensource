@@ -55,8 +55,8 @@ public final class IFunctionLike__BehaviorDescriptor extends BaseBHDescriptor {
   private static void ___init___(@NotNull SNode __thisNode__) {
   }
 
-  /*package*/ static Iterable<SNode> getUniquelyNamedElements_id4qSf1u1TRfj(@NotNull SNode __thisNode__) {
-    return ListSequence.fromList(SLinkOperations.getChildren(__thisNode__, LINKS.args$XOIh)).union(Sequence.fromIterable(SNodeOperations.ofConcept(ListSequence.fromList(SNodeOperations.getNodeDescendants(SLinkOperations.getTarget(__thisNode__, LINKS.body$Y8TB), null, false, new SAbstractConcept[]{})).where((it) -> SNodeOperations.isInstanceOf(it, CONCEPTS.LocalVarDeclExpr$$Y) || SNodeOperations.isInstanceOf(it, CONCEPTS.ValExpression$fC)), CONCEPTS.INamedConcept$Kd))).toList();
+  /*package*/ static Iterable<SNode> getUniquelyNamedElements_id4qSf1u1TRfj(@NotNull final SNode __thisNode__) {
+    return ListSequence.fromList(SLinkOperations.getChildren(__thisNode__, LINKS.args$XOIh)).union(Sequence.fromIterable(SNodeOperations.ofConcept(ListSequence.fromList(SNodeOperations.getNodeDescendants(SLinkOperations.getTarget(__thisNode__, LINKS.body$Y8TB), null, false, new SAbstractConcept[]{})).where((it) -> (SNodeOperations.isInstanceOf(it, CONCEPTS.ValExpression$fC) || SNodeOperations.isInstanceOf(it, CONCEPTS.LocalVarDeclExpr$$Y)) && (SNodeOperations.getNodeAncestor(it, CONCEPTS.IContainerOfUniqueNames$2y, false, false) == __thisNode__ || SNodeOperations.getNodeAncestor(it, CONCEPTS.IContainerOfUniqueNames$2y, false, false) == SLinkOperations.getTarget(__thisNode__, LINKS.body$Y8TB))), CONCEPTS.INamedConcept$Kd))).toList();
   }
   /*package*/ static boolean canHavePrecondition_idKaZMgy4IjP(@NotNull SNode __thisNode__) {
     return true;
@@ -187,6 +187,7 @@ public final class IFunctionLike__BehaviorDescriptor extends BaseBHDescriptor {
   private static final class CONCEPTS {
     /*package*/ static final SConcept ValExpression$fC = MetaAdapterFactory.getConcept(0x9464fa065ab9409bL, 0x927464ab29588457L, 0x427ce523084a11aeL, "org.iets3.core.expr.lambda.structure.ValExpression");
     /*package*/ static final SConcept LocalVarDeclExpr$$Y = MetaAdapterFactory.getConcept(0x9464fa065ab9409bL, 0x927464ab29588457L, 0x1ed6f14a008c1af9L, "org.iets3.core.expr.lambda.structure.LocalVarDeclExpr");
+    /*package*/ static final SInterfaceConcept IContainerOfUniqueNames$2y = MetaAdapterFactory.getInterfaceConcept(0xd4280a54f6df4383L, 0xaa41d1b2bffa7eb1L, 0x46b83c1781e763b4L, "com.mbeddr.core.base.structure.IContainerOfUniqueNames");
     /*package*/ static final SInterfaceConcept INamedConcept$Kd = MetaAdapterFactory.getInterfaceConcept(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L, "jetbrains.mps.lang.core.structure.INamedConcept");
     /*package*/ static final SInterfaceConcept IFunctionCall$zN = MetaAdapterFactory.getInterfaceConcept(0x9464fa065ab9409bL, 0x927464ab29588457L, 0x427ce5230841f89cL, "org.iets3.core.expr.lambda.structure.IFunctionCall");
     /*package*/ static final SInterfaceConcept IValidNamedConcept$gJ = MetaAdapterFactory.getInterfaceConcept(0x7b68d745a7b848b9L, 0xbd9c05c0f8725a35L, 0x32f64a31a179034L, "org.iets3.core.base.structure.IValidNamedConcept");

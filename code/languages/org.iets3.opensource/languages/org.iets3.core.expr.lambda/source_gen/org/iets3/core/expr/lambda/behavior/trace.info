@@ -744,7 +744,7 @@
       <node id="4790956042240107847" at="50,0,51,0" concept="10" trace="getTreeCategories_id7NyyyjNtbmX" />
       <node id="4790956042240107847" at="51,0,52,0" concept="10" trace="getTreeNode_id7NyyyjNtbn2" />
       <node id="4790956042240107847" at="53,0,54,0" concept="10" trace="BH_METHODS" />
-      <node id="10776330437542043" at="58,106,59,482" concept="7" />
+      <node id="10776330437542043" at="58,112,59,742" concept="7" />
       <node id="867786408880293836" at="61,92,62,16" concept="7" />
       <node id="867786408880294470" at="64,93,65,16" concept="7" />
       <node id="5957507632403146388" at="67,100,68,68" concept="7" />
@@ -790,10 +790,11 @@
       <node id="4790956042240107847" at="184,0,185,0" concept="10" trace="type$8xXf" />
       <node id="4790956042240107847" at="188,0,189,0" concept="10" trace="ValExpression$fC" />
       <node id="4790956042240107847" at="189,0,190,0" concept="10" trace="LocalVarDeclExpr$$Y" />
-      <node id="4790956042240107847" at="190,0,191,0" concept="10" trace="INamedConcept$Kd" />
-      <node id="4790956042240107847" at="191,0,192,0" concept="10" trace="IFunctionCall$zN" />
-      <node id="4790956042240107847" at="192,0,193,0" concept="10" trace="IValidNamedConcept$gJ" />
-      <node id="4790956042240107847" at="196,0,197,0" concept="10" trace="name$MnvL" />
+      <node id="4790956042240107847" at="190,0,191,0" concept="10" trace="IContainerOfUniqueNames$2y" />
+      <node id="4790956042240107847" at="191,0,192,0" concept="10" trace="INamedConcept$Kd" />
+      <node id="4790956042240107847" at="192,0,193,0" concept="10" trace="IFunctionCall$zN" />
+      <node id="4790956042240107847" at="193,0,194,0" concept="10" trace="IValidNamedConcept$gJ" />
+      <node id="4790956042240107847" at="197,0,198,0" concept="10" trace="name$MnvL" />
       <node id="4790956042240107847" at="55,0,57,0" concept="11" trace="___init___#(Lorg/jetbrains/mps/openapi/model/SNode;)V" />
       <node id="4790956042240107847" at="111,0,113,0" concept="1" trace="IFunctionLike__BehaviorDescriptor#()V" />
       <node id="4790956042240107847" at="58,0,61,0" concept="11" trace="getUniquelyNamedElements_id4qSf1u1TRfj#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljava/lang/Iterable;" />
@@ -823,7 +824,7 @@
       <node id="4790956042240107847" at="119,0,152,0" concept="5" trace="invokeSpecial0#(Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/core/aspects/behaviour/api/SMethod;[Ljava/lang/Object;)null" />
       <scope id="4790956042240107847" at="55,63,55,63" />
       <scope id="4790956042240107847" at="111,51,111,51" />
-      <scope id="4790956042240107885" at="58,106,59,482" />
+      <scope id="4790956042240107885" at="58,112,59,742" />
       <scope id="867786408880293579" at="61,92,62,16" />
       <scope id="867786408880294230" at="64,93,65,16" />
       <scope id="5957507632403146217" at="67,100,68,68" />
@@ -927,11 +928,11 @@
         <var name="node" id="4790956042240107847" />
         <var name="parameters" id="4790956042240107847" />
       </scope>
-      <unit id="4790956042240107847" at="195,0,198,0" name="org.iets3.core.expr.lambda.behavior.IFunctionLike__BehaviorDescriptor$PROPS" />
+      <unit id="4790956042240107847" at="196,0,199,0" name="org.iets3.core.expr.lambda.behavior.IFunctionLike__BehaviorDescriptor$PROPS" />
       <unit id="4790956042240107847" at="179,0,186,0" name="org.iets3.core.expr.lambda.behavior.IFunctionLike__BehaviorDescriptor$LINKS" />
-      <unit id="4790956042240107847" at="187,0,194,0" name="org.iets3.core.expr.lambda.behavior.IFunctionLike__BehaviorDescriptor$CONCEPTS" />
+      <unit id="4790956042240107847" at="187,0,195,0" name="org.iets3.core.expr.lambda.behavior.IFunctionLike__BehaviorDescriptor$CONCEPTS" />
       <unit id="5250171600083843550" at="99,15,108,5" name="org.iets3.core.expr.lambda.behavior.IFunctionLike__BehaviorDescriptor$1" />
-      <unit id="4790956042240107847" at="37,0,199,0" name="org.iets3.core.expr.lambda.behavior.IFunctionLike__BehaviorDescriptor" />
+      <unit id="4790956042240107847" at="37,0,200,0" name="org.iets3.core.expr.lambda.behavior.IFunctionLike__BehaviorDescriptor" />
     </file>
   </root>
   <root nodeRef="r:06389a24-a77a-450d-bc88-bccec0aae7d8(org.iets3.core.expr.lambda.behavior)/4790956042240364982">
