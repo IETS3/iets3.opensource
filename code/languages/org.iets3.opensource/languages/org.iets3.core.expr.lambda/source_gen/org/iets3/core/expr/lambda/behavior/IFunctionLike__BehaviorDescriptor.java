@@ -19,6 +19,7 @@ import jetbrains.mps.internal.collections.runtime.ListSequence;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
 import jetbrains.mps.internal.collections.runtime.Sequence;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
+import java.util.Objects;
 import java.util.ArrayList;
 import com.mbeddr.core.base.behavior.NodeTreeViewNode;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations;
@@ -56,7 +57,7 @@ public final class IFunctionLike__BehaviorDescriptor extends BaseBHDescriptor {
   }
 
   /*package*/ static Iterable<SNode> getUniquelyNamedElements_id4qSf1u1TRfj(@NotNull final SNode __thisNode__) {
-    return ListSequence.fromList(SLinkOperations.getChildren(__thisNode__, LINKS.args$XOIh)).union(Sequence.fromIterable(SNodeOperations.ofConcept(ListSequence.fromList(SNodeOperations.getNodeDescendants(SLinkOperations.getTarget(__thisNode__, LINKS.body$Y8TB), null, false, new SAbstractConcept[]{})).where((it) -> (SNodeOperations.isInstanceOf(it, CONCEPTS.ValExpression$fC) || SNodeOperations.isInstanceOf(it, CONCEPTS.LocalVarDeclExpr$$Y)) && (SNodeOperations.getNodeAncestor(it, CONCEPTS.IContainerOfUniqueNames$2y, false, false) == __thisNode__ || SNodeOperations.getNodeAncestor(it, CONCEPTS.IContainerOfUniqueNames$2y, false, false) == SLinkOperations.getTarget(__thisNode__, LINKS.body$Y8TB))), CONCEPTS.INamedConcept$Kd))).toList();
+    return ListSequence.fromList(SLinkOperations.getChildren(__thisNode__, LINKS.args$XOIh)).union(Sequence.fromIterable(SNodeOperations.ofConcept(ListSequence.fromList(SNodeOperations.getNodeDescendants(SLinkOperations.getTarget(__thisNode__, LINKS.body$Y8TB), null, false, new SAbstractConcept[]{})).where((it) -> (SNodeOperations.isInstanceOf(it, CONCEPTS.ValExpression$fC) || SNodeOperations.isInstanceOf(it, CONCEPTS.LocalVarDeclExpr$$Y)) && (Objects.equals(SNodeOperations.getNodeAncestor(it, CONCEPTS.IContainerOfUniqueNames$2y, false, false), __thisNode__) || Objects.equals(SNodeOperations.getNodeAncestor(it, CONCEPTS.IContainerOfUniqueNames$2y, false, false), SLinkOperations.getTarget(__thisNode__, LINKS.body$Y8TB)))), CONCEPTS.INamedConcept$Kd))).toList();
   }
   /*package*/ static boolean canHavePrecondition_idKaZMgy4IjP(@NotNull SNode __thisNode__) {
     return true;

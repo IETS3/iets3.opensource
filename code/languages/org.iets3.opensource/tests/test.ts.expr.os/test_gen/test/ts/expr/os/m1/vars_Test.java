@@ -14,6 +14,8 @@ import org.jetbrains.mps.openapi.model.SNode;
 import jetbrains.mps.lang.test.runtime.CheckExpectedMessageRunnable;
 import jetbrains.mps.errors.MessageStatus;
 import jetbrains.mps.smodel.SNodePointer;
+import jetbrains.mps.lang.test.runtime.CheckErrorMessagesRunnable;
+import java.util.Arrays;
 
 @MPSLaunch
 public class vars_Test extends BaseTransformationTest {
@@ -55,6 +57,10 @@ public class vars_Test extends BaseTransformationTest {
   @Test
   public void test_NodeDuplicateNameCheck1009015249984652879() throws Throwable {
     new TestBody(this).test_NodeDuplicateNameCheck1009015249984652879();
+  }
+  @Test
+  public void test_ErrorMessagesCheck9005873059232256215() throws Throwable {
+    new TestBody(this).test_ErrorMessagesCheck9005873059232256215();
   }
   @Test
   public void test_NodeDuplicateNameCheck7401509881541028152() throws Throwable {
@@ -134,6 +140,13 @@ public class vars_Test extends BaseTransformationTest {
       runWithinCommand(() -> {
         SNode nodeToCheck = getNodeById("8378532079463729824");
         new CheckExpectedMessageRunnable.CheckExpectedRuleMessageRunnable(nodeToCheck, MessageStatus.ERROR, new SNodePointer("r:1b0f275e-bd62-4f6e-8c4b-51b05d651a63(com.mbeddr.core.base.typesystem)", "5095889050031059992"), "", myProject.getRepository(), myProject.getPlatform()).run();
+      });
+    }
+    public void test_ErrorMessagesCheck9005873059232256215() throws Exception {
+      initTestNodes();
+      runWithinCommand(() -> {
+        SNode nodeToCheck = getNodeById("4125643222385388365");
+        new CheckErrorMessagesRunnable(nodeToCheck, true, false, myProject.getPlatform()).includeSelf(true).exclude(Arrays.<CheckExpectedMessageRunnable>asList()).run();
       });
     }
     public void test_NodeDuplicateNameCheck7401509881541028152() throws Exception {
