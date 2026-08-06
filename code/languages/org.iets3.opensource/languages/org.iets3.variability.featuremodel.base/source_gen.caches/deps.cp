@@ -154,6 +154,7 @@
   <uses module="2f7e2e35-6e74-4c43-9fa5-2465d68f5996(org.iets3.core.expr.collections)" kind="dp" />
   <uses module="9464fa06-5ab9-409b-9274-64ab29588457(org.iets3.core.expr.lambda)" kind="dp" />
   <uses module="f3eafff0-30d2-46d6-9150-f0f3b880ce27(org.iets3.core.expr.path)" kind="dp" />
+  <uses module="6b277d9a-d52d-416f-a209-1919bd737f50(org.iets3.core.expr.simpleTypes)" kind="dp" />
   <uses module="71934284-d7d1-45ee-a054-8c072591085f(org.iets3.core.expr.toplevel)" kind="dp" />
   <uses module="9b66c5c9-38bf-4315-a96f-9f4e212c69cb(org.iets3.variability.base)" kind="dp" />
   <uses module="165f1d05-2506-4544-895e-1424f54166ec(org.iets3.variability.featuremodel.base)" kind="dp" />
