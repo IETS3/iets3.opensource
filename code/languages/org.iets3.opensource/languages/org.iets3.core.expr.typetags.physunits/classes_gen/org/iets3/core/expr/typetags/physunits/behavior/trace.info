@@ -626,31 +626,27 @@
   </root>
   <root nodeRef="r:720d563d-1633-46b3-a98e-08d2fde4c4a8(org.iets3.core.expr.typetags.physunits.behavior)/1215881210324934751">
     <file name="TypeHelper.java">
-      <node id="1215881210325204129" at="13,47,14,66" concept="13" />
-      <node id="1215881210325328828" at="14,66,15,65" concept="13" />
-      <node id="1215881210325204144" at="15,65,16,77" concept="10" />
-      <node id="1215881210325204148" at="16,77,17,150" concept="10" />
-      <node id="1215881210325627829" at="17,150,18,0" concept="14" />
-      <node id="1215881210325649023" at="18,0,19,56" concept="13" />
-      <node id="1215881210325204158" at="19,56,20,48" concept="4" />
-      <node id="1215881210325907923" at="20,48,21,0" concept="14" />
-      <node id="1215881210325928136" at="21,0,22,38" concept="13" />
-      <node id="1215881210325486173" at="22,38,23,45" concept="10" />
-      <node id="1215881210326086802" at="23,45,24,0" concept="14" />
-      <node id="1215881210326107996" at="24,0,25,15" concept="13" />
-      <node id="1215881210325572062" at="25,15,26,27" concept="4" />
-      <node id="1215881210326158414" at="26,27,27,0" concept="14" />
-      <node id="1215881210325245680" at="27,0,28,18" concept="12" />
-      <node id="1215881210325099309" at="13,0,30,0" concept="16" trace="computeType#(Lorg/jetbrains/mps/openapi/model/SNode;)Lorg/jetbrains/mps/openapi/model/SNode;" />
-      <scope id="1215881210325099312" at="13,47,28,18">
-        <var name="classLoaderManager" id="1215881210325204145" />
+      <node id="1215881210325204148" at="12,47,13,136" concept="10" />
+      <node id="1215881210325627829" at="13,136,14,0" concept="14" />
+      <node id="1215881210325649023" at="14,0,15,56" concept="13" />
+      <node id="1215881210325204158" at="15,56,16,48" concept="4" />
+      <node id="1215881210325907923" at="16,48,17,0" concept="14" />
+      <node id="1215881210325928136" at="17,0,18,38" concept="13" />
+      <node id="1215881210325486173" at="18,38,19,45" concept="10" />
+      <node id="1215881210326086802" at="19,45,20,0" concept="14" />
+      <node id="1215881210326107996" at="20,0,21,15" concept="13" />
+      <node id="1215881210325572062" at="21,15,22,27" concept="4" />
+      <node id="1215881210326158414" at="22,27,23,0" concept="14" />
+      <node id="1215881210325245680" at="23,0,24,18" concept="12" />
+      <node id="1215881210325099309" at="12,0,26,0" concept="16" trace="computeType#(Lorg/jetbrains/mps/openapi/model/SNode;)Lorg/jetbrains/mps/openapi/model/SNode;" />
+      <scope id="1215881210325099312" at="12,47,24,18">
         <var name="result" id="1215881210325486174" />
         <var name="typeChecking" id="1215881210325204149" />
       </scope>
-      <scope id="1215881210325099309" at="13,0,30,0">
+      <scope id="1215881210325099309" at="12,0,26,0">
         <var name="expr" id="1215881210325119827" />
       </scope>
-      <unit id="1215881210324934751" at="11,0,31,0" name="org.iets3.core.expr.typetags.physunits.behavior.TypeHelper" />
+      <unit id="1215881210324934751" at="10,0,27,0" name="org.iets3.core.expr.typetags.physunits.behavior.TypeHelper" />
     </file>
   </root>
   <root nodeRef="r:720d563d-1633-46b3-a98e-08d2fde4c4a8(org.iets3.core.expr.typetags.physunits.behavior)/122024235762420748">

@@ -250,149 +250,86 @@ public class Generated_strings_Test {
   }
   public static final String i1_ = ((_FunctionTypes._return_P0_E0<String>) () -> {
     StringBuilder sb = new StringBuilder();
-    boolean delayedSpace = false;
 
     {
-      if (delayedSpace) {
-        sb.append(' ');
-        delayedSpace = false;
-      }
-      sb.append("Here");
+      sb.append("Here ");
     }
     {
       final String content = String.valueOf(Generated_strings_Test.a_);
-      if (sb.length() > 0 || (!(content.isEmpty()) && delayedSpace)) {
-        sb.append(' ');
-      }
       sb.append(content);
-      delayedSpace = true;
     }
     {
-      if (delayedSpace) {
-        sb.append(' ');
-        delayedSpace = false;
-      }
-      sb.append("X");
+      sb.append(" X");
     }
     return sb.toString();
   }).invoke();
   public static final String i2_ = ((_FunctionTypes._return_P0_E0<String>) () -> {
     StringBuilder sb = new StringBuilder();
-    boolean delayedSpace = false;
 
     {
-      if (delayedSpace) {
-        sb.append(' ');
-        delayedSpace = false;
-      }
-      sb.append("  with some   space   upfront");
+      sb.append("  with some   space   upfront ");
     }
     {
       final String content = String.valueOf(Generated_strings_Test.a_);
-      if (sb.length() > 0 || (!(content.isEmpty()) && delayedSpace)) {
-        sb.append(' ');
-      }
       sb.append(content);
-      delayedSpace = true;
     }
     {
-      if (delayedSpace) {
-        sb.append(' ');
-        delayedSpace = false;
-      }
-      sb.append("and some behind   ");
+      sb.append(" and some behind   ");
     }
     return sb.toString();
   }).invoke();
   public static final String i3_ = ((_FunctionTypes._return_P0_E0<String>) () -> {
     StringBuilder sb = new StringBuilder();
-    boolean delayedSpace = false;
 
     {
       final String content = String.valueOf(Generated_strings_Test.a_);
-      if (sb.length() > 0 || (!(content.isEmpty()) && delayedSpace)) {
-        sb.append(' ');
-      }
       sb.append(content);
-      delayedSpace = true;
     }
     {
-      if (delayedSpace) {
-        sb.append(' ');
-        delayedSpace = false;
-      }
-      sb.append("at the beginning");
+      sb.append(" at the beginning");
     }
     return sb.toString();
   }).invoke();
   public static final String i4_ = ((_FunctionTypes._return_P0_E0<String>) () -> {
     StringBuilder sb = new StringBuilder();
-    boolean delayedSpace = false;
 
     {
-      if (delayedSpace) {
-        sb.append(' ');
-        delayedSpace = false;
-      }
-      sb.append("at the end");
+      sb.append("at the end ");
     }
     {
       final String content = String.valueOf(Generated_strings_Test.a_);
-      if (sb.length() > 0 || (!(content.isEmpty()) && delayedSpace)) {
-        sb.append(' ');
-      }
       sb.append(content);
-      delayedSpace = true;
     }
     return sb.toString();
   }).invoke();
   public static final String i5_ = ((_FunctionTypes._return_P0_E0<String>) () -> {
     StringBuilder sb = new StringBuilder();
-    boolean delayedSpace = false;
 
     {
       final String content = String.valueOf(AH.addString(Generated_strings_Test.f_, Generated_strings_Test.g_));
-      if (sb.length() > 0 || (!(content.isEmpty()) && delayedSpace)) {
-        sb.append(' ');
-      }
       sb.append(content);
-      delayedSpace = true;
     }
     return sb.toString();
   }).invoke();
   public static final String i6_ = ((_FunctionTypes._return_P0_E0<String>) () -> {
     StringBuilder sb = new StringBuilder();
-    boolean delayedSpace = false;
 
     {
-      if (delayedSpace) {
-        sb.append(' ');
-        delayedSpace = false;
-      }
-      sb.append("  with deliberate");
+      sb.append("  with deliberate ");
     }
     {
       final String content = String.valueOf(Generated_strings_Test.f_);
-      if (sb.length() > 0 || (!(content.isEmpty()) && delayedSpace)) {
-        sb.append(' ');
-      }
       sb.append(content);
-      delayedSpace = true;
+    }
+    {
+      sb.append(" ");
     }
     {
       final String content = String.valueOf(Generated_strings_Test.g_);
-      if (sb.length() > 0 || (!(content.isEmpty()) && delayedSpace)) {
-        sb.append(' ');
-      }
       sb.append(content);
-      delayedSpace = true;
     }
     {
-      if (delayedSpace) {
-        sb.append(' ');
-        delayedSpace = false;
-      }
-      sb.append("spaces   ");
+      sb.append(" spaces   ");
     }
     return sb.toString();
   }).invoke();
