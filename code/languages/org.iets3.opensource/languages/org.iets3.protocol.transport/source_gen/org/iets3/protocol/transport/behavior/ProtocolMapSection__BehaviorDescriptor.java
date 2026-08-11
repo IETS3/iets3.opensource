@@ -21,7 +21,7 @@ public final class ProtocolMapSection__BehaviorDescriptor extends BaseBHDescript
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getConcept(0xa50d629093d242afL, 0x9ae0b2fefc6ee754L, 0x2b5ce4b48b3382e4L, "org.iets3.protocol.transport.structure.ProtocolMapSection");
 
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList();
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList();
 
   private static void ___init___(@NotNull SNode __thisNode__) {
     SLinkOperations.addNewChild(__thisNode__, LINKS.content$tnjl, CONCEPTS.EmptyProtocolMapContainerContent$BB);

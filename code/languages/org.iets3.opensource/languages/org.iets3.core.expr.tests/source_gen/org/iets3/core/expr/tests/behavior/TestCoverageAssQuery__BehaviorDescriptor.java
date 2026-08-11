@@ -7,7 +7,6 @@ import org.jetbrains.mps.openapi.language.SAbstractConcept;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import org.jetbrains.mps.openapi.model.SNode;
 import java.util.List;
@@ -38,13 +37,13 @@ import org.jetbrains.mps.openapi.language.SProperty;
 public final class TestCoverageAssQuery__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getConcept(0xd441fba0f46b43cdL, 0xb723dad7b65da615L, 0x5bb0bdbbedd5fac0L, "org.iets3.core.expr.tests.structure.TestCoverageAssQuery");
 
-  public static final SMethod<Boolean> shouldAnalyze_id1vo80oO$S9 = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("shouldAnalyze").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(26846226076028425L).languageId(0xb723dad7b65da615L, 0xd441fba0f46b43cdL).build2(SMethodBuilder.createJavaParameter((Class<SAbstractConcept>) ((Class) Object.class), ""));
-  public static final SMethod<SNode> getSpecFor_id1vo80p38XS = new SMethodBuilder<SNode>(new SJavaCompoundTypeImpl((Class<SNode>) ((Class) Object.class))).name("getSpecFor").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(26846226079846264L).languageId(0xb723dad7b65da615L, 0xd441fba0f46b43cdL).build2(SMethodBuilder.createJavaParameter((Class<SAbstractConcept>) ((Class) Object.class), ""));
-  public static final SMethod<List<SNode>> runQuery_id7hIyKqbFNeu = new SMethodBuilder<List<SNode>>(new SJavaCompoundTypeImpl((Class<List<SNode>>) ((Class) Object.class))).name("runQuery").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(8389796016067392414L).languageId(0xaa41d1b2bffa7eb1L, 0xd4280a54f6df4383L).build2();
-  public static final SMethod<List<SNode>> getSummaries_id_gCXGjoJQM = new SMethodBuilder<List<SNode>>(new SJavaCompoundTypeImpl((Class<List<SNode>>) ((Class) Object.class))).name("getSummaries").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(671216505796623794L).languageId(0xaa41d1b2bffa7eb1L, 0xd4280a54f6df4383L).build2(SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""));
-  public static final SMethod<Void> prepareUpdate_id1gw9pCYwGF4 = new SMethodBuilder<Void>(new SJavaCompoundTypeImpl(Void.class)).name("prepareUpdate").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(1450200424417249988L).languageId(0xaa41d1b2bffa7eb1L, 0xd4280a54f6df4383L).build2(SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""));
+  public static final SMethod<Boolean> shouldAnalyze_id1vo80oO$S9 = new SMethodBuilder<>(Boolean.TYPE).name("shouldAnalyze").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(26846226076028425L).languageId(0xb723dad7b65da615L, 0xd441fba0f46b43cdL).build2(SMethodBuilder.createJavaParameter(SAbstractConcept.class, "c"));
+  public static final SMethod<SNode> getSpecFor_id1vo80p38XS = new SMethodBuilder<>(SNode.class).name("getSpecFor").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(26846226079846264L).languageId(0xb723dad7b65da615L, 0xd441fba0f46b43cdL).build2(SMethodBuilder.createJavaParameter(SAbstractConcept.class, "c"));
+  public static final SMethod<List<SNode>> runQuery_id7hIyKqbFNeu = new SMethodBuilder<>((Class<List<SNode>>) ((Class) Object.class)).name("runQuery").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(8389796016067392414L).languageId(0xaa41d1b2bffa7eb1L, 0xd4280a54f6df4383L).build2();
+  public static final SMethod<List<SNode>> getSummaries_id_gCXGjoJQM = new SMethodBuilder<>((Class<List<SNode>>) ((Class) Object.class)).name("getSummaries").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(671216505796623794L).languageId(0xaa41d1b2bffa7eb1L, 0xd4280a54f6df4383L).build2(SMethodBuilder.createJavaParameter(SNode.class, "ass"));
+  public static final SMethod<Void> prepareUpdate_id1gw9pCYwGF4 = new SMethodBuilder<>(Void.TYPE).name("prepareUpdate").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(1450200424417249988L).languageId(0xaa41d1b2bffa7eb1L, 0xd4280a54f6df4383L).build2(SMethodBuilder.createJavaParameter(SNode.class, "assessment"));
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(shouldAnalyze_id1vo80oO$S9, getSpecFor_id1vo80p38XS, runQuery_id7hIyKqbFNeu, getSummaries_id_gCXGjoJQM, prepareUpdate_id1gw9pCYwGF4);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(shouldAnalyze_id1vo80oO$S9, getSpecFor_id1vo80p38XS, runQuery_id7hIyKqbFNeu, getSummaries_id_gCXGjoJQM, prepareUpdate_id1gw9pCYwGF4);
 
   private static void ___init___(@NotNull SNode __thisNode__) {
     SLinkOperations.setNewChild(__thisNode__, LINKS.scope$VAmc, CONCEPTS.CurrentModelScope$FB);

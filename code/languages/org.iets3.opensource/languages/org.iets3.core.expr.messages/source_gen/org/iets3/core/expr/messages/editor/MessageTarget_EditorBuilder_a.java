@@ -77,7 +77,7 @@ import org.jetbrains.mps.openapi.language.SConcept;
     editorCell.setCellId("Collection_ix7vsa_a");
     editorCell.setBig(true);
     setCellContext(editorCell);
-    editorCell.addEditorCell(createTooltip_1());
+    editorCell.addEditorCell(createTooltip_0());
     if (nodeCondition_ix7vsa_a1a()) {
       editorCell.addEditorCell(createCollection_1());
     }
@@ -86,16 +86,13 @@ import org.jetbrains.mps.openapi.language.SConcept;
   private boolean nodeCondition_ix7vsa_a1a() {
     return ListSequence.fromList(SLinkOperations.getChildren(myNode, LINKS.args$M2BE)).isNotEmpty() || ListSequence.fromList(SLinkOperations.getChildren(SLinkOperations.getTarget(myNode, LINKS.message$Xv_g), LINKS.args$ez70)).isNotEmpty();
   }
-  private EditorCell createTooltip_0(final EditorContext editorContext, final SNode node) {
-    LazyTooltipCellEvaluator tooltip = new LazyTooltipCellEvaluator(editorContext, node, "org.iets3.core.expr.messages.editor.GeneratedHints.tooltipHint_ix7vsa_a0", true);
+  private EditorCell createTooltip_0() {
+    LazyTooltipCellEvaluator tooltip = new LazyTooltipCellEvaluator(getEditorContext(), myNode, "org.iets3.core.expr.messages.editor.GeneratedHints.tooltipHint_ix7vsa_a0", true);
     EditorCell visibleCell = createRefCell_0();
 
-    TooltipWrapper editorCell = new TooltipWrapper(editorContext, node, visibleCell, tooltip, TooltipTimingProperties.DEFAULT);
+    TooltipWrapper editorCell = new TooltipWrapper(getEditorContext(), myNode, visibleCell, tooltip, TooltipTimingProperties.DEFAULT);
     editorCell.setCellId("Tooltip_ix7vsa_a0");
     return editorCell;
-  }
-  private EditorCell createTooltip_1() {
-    return createTooltip_0(getEditorContext(), myNode);
   }
   private EditorCell createRefCell_0() {
     final SReferenceLink referenceLink = LINKS.message$Xv_g;

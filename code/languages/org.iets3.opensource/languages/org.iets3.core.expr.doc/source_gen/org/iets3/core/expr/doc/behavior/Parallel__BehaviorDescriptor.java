@@ -8,7 +8,6 @@ import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import org.jetbrains.mps.openapi.model.SNode;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import java.util.List;
 import java.util.Arrays;
@@ -23,9 +22,9 @@ import org.jetbrains.mps.openapi.language.SContainmentLink;
 public final class Parallel__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getConcept(0x32190be623f74e17L, 0xaad4fb739bb3569fL, 0x23029a3d8cae99b4L, "org.iets3.core.expr.doc.structure.Parallel");
 
-  public static final SMethod<Iterable<SNode>> contents_id1sudaVNqph4 = new SMethodBuilder<Iterable<SNode>>(new SJavaCompoundTypeImpl((Class<Iterable<SNode>>) ((Class) Object.class))).name("contents").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(1665826838186398788L).languageId(0xa0548c072591085fL, 0x71934284d7d145eeL).build2();
+  public static final SMethod<Iterable<SNode>> contents_id1sudaVNqph4 = new SMethodBuilder<>((Class<Iterable<SNode>>) ((Class) Object.class)).name("contents").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(1665826838186398788L).languageId(0xa0548c072591085fL, 0x71934284d7d145eeL).build2();
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(contents_id1sudaVNqph4);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(contents_id1sudaVNqph4);
 
   private static void ___init___(@NotNull SNode __thisNode__) {
     SLinkOperations.setNewChild(__thisNode__, LINKS.frame1$UZHF, null);

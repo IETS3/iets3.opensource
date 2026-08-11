@@ -21,7 +21,7 @@ public class EnumerationDescriptor_AssignmentCause extends EnumerationDescriptor
   private final EnumerationDescriptor.MemberDescriptor myMember_unset_0 = new EnumerationDescriptor.MemberDescriptor("unset", "unset", 0x8efdbf5875ad4fcL, "r:a9fe59d7-0b4f-42b0-925a-71cc04f93df1(org.iets3.variability.configuration.base.structure)/643975119321617660");
 
   private final EnumerationLiteralsIndex myIndex = EnumerationLiteralsIndex.build(0x71226ee2bbc445d2L, 0xa41d20b97237156cL, 0x8efdbf586e37fb6L, 0x8efdbf586e37fb7L, 0x8efdbf586e37fb8L, 0x8efdbf586e37fbbL, 0x8efdbf5875ad4fcL);
-  private final List<EnumerationDescriptor.MemberDescriptor> myMembers = new EnumerationDescriptorBase.MembersList(myIndex, myMember_manual_0, myMember_compulsory_0, myMember_proposed_0, myMember_unset_0);
+  private final List<EnumerationDescriptor.MemberDescriptor> myMembers = new EnumerationDescriptorBase.MembersList0(myIndex, myMember_manual_0, myMember_compulsory_0, myMember_proposed_0, myMember_unset_0);
 
   @Nullable
   @Override

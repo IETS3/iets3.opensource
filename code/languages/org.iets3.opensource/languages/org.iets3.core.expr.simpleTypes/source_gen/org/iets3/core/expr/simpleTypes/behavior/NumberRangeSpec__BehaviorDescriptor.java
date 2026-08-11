@@ -7,7 +7,6 @@ import org.jetbrains.mps.openapi.language.SAbstractConcept;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import java.math.BigDecimal;
 import java.util.List;
@@ -18,7 +17,6 @@ import jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations;
 import org.iets3.core.expr.base.behavior.ISupportHexValues__BehaviorDescriptor;
 import org.iets3.core.expr.base.plugin.InfHelper;
 import java.util.Objects;
-import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 import org.jetbrains.mps.openapi.language.SProperty;
@@ -26,21 +24,19 @@ import org.jetbrains.mps.openapi.language.SProperty;
 public final class NumberRangeSpec__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getConcept(0x6b277d9ad52d416fL, 0xa2091919bd737f50L, 0x127541598201af65L, "org.iets3.core.expr.simpleTypes.structure.NumberRangeSpec");
 
-  public static final SMethod<String> getStartBracket_id1HYdmFH2Ri = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("getStartBracket").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(30954369053896146L).languageId(0xa2091919bd737f50L, 0x6b277d9ad52d416fL).build2();
-  public static final SMethod<String> getEndBracket_id1HYdmFH3l9 = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("getEndBracket").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(30954369053898057L).languageId(0xa2091919bd737f50L, 0x6b277d9ad52d416fL).build2();
-  public static final SMethod<String> getPresentation_idhEwIMiw = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("getPresentation").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(1213877396640L).languageId(0x9b92103b95ca8c0cL, 0xceab519525ea4f22L).build2();
-  public static final SMethod<String> getMinPresentation_id5JKfLQ8_zjk = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("getMinPresentation").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(6624864447940146388L).languageId(0xa2091919bd737f50L, 0x6b277d9ad52d416fL).build2();
-  public static final SMethod<String> getMaxPresentation_id5JKfLQ8_zL9 = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("getMaxPresentation").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(6624864447940148297L).languageId(0xa2091919bd737f50L, 0x6b277d9ad52d416fL).build2();
-  public static final SMethod<Boolean> isRangeValid_id3tudP___IMn = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("isRangeValid").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(3989687176992844951L).languageId(0xa2091919bd737f50L, 0x6b277d9ad52d416fL).build2();
-  public static final SMethod<Boolean> isUnlimited_id1YvLuAX6F9 = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("isUnlimited").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(35605586627553993L).languageId(0xa2091919bd737f50L, 0x6b277d9ad52d416fL).build2();
-  public static final SMethod<Void> times_idijdpu3aPf0 = new SMethodBuilder<Void>(new SJavaCompoundTypeImpl(Void.class)).name("times").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(329666122585166784L).languageId(0xa2091919bd737f50L, 0x6b277d9ad52d416fL).build2(SMethodBuilder.createJavaParameter(BigDecimal.class, ""));
-  public static final SMethod<Boolean> isSinglePoint_id5bmRS0nmV1W = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("isSinglePoint").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5969204097366863996L).languageId(0xa2091919bd737f50L, 0x6b277d9ad52d416fL).build2();
-  public static final SMethod<String> getSinglePoint_id5bmRS0nnZlw = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("getSinglePoint").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5969204097367143776L).languageId(0xa2091919bd737f50L, 0x6b277d9ad52d416fL).build2();
+  public static final SMethod<String> getStartBracket_id1HYdmFH2Ri = new SMethodBuilder<>(String.class).name("getStartBracket").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(30954369053896146L).languageId(0xa2091919bd737f50L, 0x6b277d9ad52d416fL).build2();
+  public static final SMethod<String> getEndBracket_id1HYdmFH3l9 = new SMethodBuilder<>(String.class).name("getEndBracket").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(30954369053898057L).languageId(0xa2091919bd737f50L, 0x6b277d9ad52d416fL).build2();
+  public static final SMethod<String> getPresentation_idhEwIMiw = new SMethodBuilder<>(String.class).name("getPresentation").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(1213877396640L).languageId(0x9b92103b95ca8c0cL, 0xceab519525ea4f22L).build2();
+  public static final SMethod<String> getMinPresentation_id5JKfLQ8_zjk = new SMethodBuilder<>(String.class).name("getMinPresentation").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(6624864447940146388L).languageId(0xa2091919bd737f50L, 0x6b277d9ad52d416fL).build2();
+  public static final SMethod<String> getMaxPresentation_id5JKfLQ8_zL9 = new SMethodBuilder<>(String.class).name("getMaxPresentation").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(6624864447940148297L).languageId(0xa2091919bd737f50L, 0x6b277d9ad52d416fL).build2();
+  public static final SMethod<Boolean> isRangeValid_id3tudP___IMn = new SMethodBuilder<>(Boolean.TYPE).name("isRangeValid").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(3989687176992844951L).languageId(0xa2091919bd737f50L, 0x6b277d9ad52d416fL).build2();
+  public static final SMethod<Boolean> isUnlimited_id1YvLuAX6F9 = new SMethodBuilder<>(Boolean.TYPE).name("isUnlimited").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(35605586627553993L).languageId(0xa2091919bd737f50L, 0x6b277d9ad52d416fL).build2();
+  public static final SMethod<Void> times_idijdpu3aPf0 = new SMethodBuilder<>(Void.TYPE).name("times").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(329666122585166784L).languageId(0xa2091919bd737f50L, 0x6b277d9ad52d416fL).build2(SMethodBuilder.createJavaParameter(BigDecimal.class, "value"));
+  public static final SMethod<Boolean> isSinglePoint_id5bmRS0nmV1W = new SMethodBuilder<>(Boolean.TYPE).name("isSinglePoint").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5969204097366863996L).languageId(0xa2091919bd737f50L, 0x6b277d9ad52d416fL).build2();
+  public static final SMethod<String> getSinglePoint_id5bmRS0nnZlw = new SMethodBuilder<>(String.class).name("getSinglePoint").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5969204097367143776L).languageId(0xa2091919bd737f50L, 0x6b277d9ad52d416fL).build2();
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(getStartBracket_id1HYdmFH2Ri, getEndBracket_id1HYdmFH3l9, getPresentation_idhEwIMiw, getMinPresentation_id5JKfLQ8_zjk, getMaxPresentation_id5JKfLQ8_zL9, isRangeValid_id3tudP___IMn, isUnlimited_id1YvLuAX6F9, times_idijdpu3aPf0, isSinglePoint_id5bmRS0nmV1W, getSinglePoint_id5bmRS0nnZlw);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(getStartBracket_id1HYdmFH2Ri, getEndBracket_id1HYdmFH3l9, getPresentation_idhEwIMiw, getMinPresentation_id5JKfLQ8_zjk, getMaxPresentation_id5JKfLQ8_zL9, isRangeValid_id3tudP___IMn, isUnlimited_id1YvLuAX6F9, times_idijdpu3aPf0, isSinglePoint_id5bmRS0nmV1W, getSinglePoint_id5bmRS0nnZlw);
 
-  private static void ___init___(@NotNull SNode __thisNode__) {
-  }
 
   /*package*/ static String getStartBracket_id1HYdmFH2Ri(@NotNull SNode __thisNode__) {
     return (SPropertyOperations.getBoolean(__thisNode__, PROPS.excludeMin$z1dD) ? "(" : "[");
@@ -82,10 +78,6 @@ public final class NumberRangeSpec__BehaviorDescriptor extends BaseBHDescriptor 
   /*package*/ NumberRangeSpec__BehaviorDescriptor() {
   }
 
-  @Override
-  protected void initNode(@NotNull SNode node, @NotNull SConstructor constructor, @Nullable Object[] parameters) {
-    ___init___(node);
-  }
 
   @Override
   protected <T> T invokeSpecial0(@NotNull SNode node, @NotNull SMethod<T> method, @Nullable Object[] parameters) {

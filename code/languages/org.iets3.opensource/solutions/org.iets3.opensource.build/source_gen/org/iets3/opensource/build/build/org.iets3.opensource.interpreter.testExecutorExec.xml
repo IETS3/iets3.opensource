@@ -86,7 +86,6 @@
     </taskdef>
     <runMPS solution="26c41006-651b-45a4-aced-69694c3d5234(org.iets3.opensource.interpreterExecutor)" startClass="org.iets3.opensource.interpreterExecutor.MainClass" startMethod="mpsMain" jnaLibraryPath="lib/jna/amd64">
       <plugin path="${artifacts.com.mbeddr.platform}/MPS.Kotlin" id="MPS.Kotlin" />
-      <plugin path="${artifacts.com.mbeddr.platform}/MPS.ThirdParty" id="MPS.ThirdParty" />
       <plugin path="${artifacts.com.mbeddr.platform}/com.mbeddr.mpsutil.common" id="com.mbeddr.mpsutil.common" />
       <plugin path="${artifacts.com.mbeddr.platform}/com.mbeddr.mpsutil.contextactions" id="com.mbeddr.mpsutil.contextactions" />
       <plugin path="${artifacts.com.mbeddr.platform}/com.mbeddr.mpsutil.editor.querylist" id="com.mbeddr.mpsutil.editor.querylist" />
@@ -140,6 +139,7 @@
       <plugin path="${artifacts.com.mbeddr.platform}/mpsutil.refactoring" id="com.mbeddr.mpsutil.refactoring" />
       <plugin path="${artifacts.com.mbeddr.platform}/org.modelix.model.api" id="org.modelix.model.api" />
       <plugin path="${artifacts.mps}/lib/mps-workbench.jar" id="com.intellij.modules.mps" />
+      <plugin path="${artifacts.mps}/plugins/java" id="com.intellij.java" />
       <plugin path="${artifacts.mps}/plugins/mps-build" id="jetbrains.mps.build" />
       <plugin path="${artifacts.mps}/plugins/mps-console" id="jetbrains.mps.console" />
       <plugin path="${artifacts.mps}/plugins/mps-context-actions" id="jetbrains.mps.editor.contextActions" />
@@ -165,7 +165,6 @@
       <plugin path="${artifacts.org.iets3.opensource}/org.iets3.core.expr.devkits" id="org.iets3.core.expr.devkits" />
       <plugin path="${artifacts.org.iets3.opensource}/org.iets3.core.junit.interpretertest.runner" id="org.iets3.core.junit.interpreter.run.configuration" />
       <plugin path="${artifacts.org.iets3.opensource}/org.iets3.core.os" id="org.iets3.core.os" />
-      <library file="${artifacts.com.mbeddr.platform}/MPS.ThirdParty.jar" />
       <library file="${artifacts.com.mbeddr.platform}/com.mbeddr.mpsutil.common/languages/group.common/com.mbeddr.mpsutil.common.jar" />
       <library file="${artifacts.com.mbeddr.platform}/com.mbeddr.mpsutil.contextactions/languages/group.contextactions/com.mbeddr.mpsutil.contextactions.jar" />
       <library file="${artifacts.com.mbeddr.platform}/com.mbeddr.mpsutil.contextactions/languages/group.contextactions/com.mbeddr.mpsutil.contextactions.runtime.jar" />
@@ -233,7 +232,6 @@
       <library file="${artifacts.com.mbeddr.platform}/mps-tables/languages/mps-tables/de.slisson.mps.tables.runtime.jar" />
       <library file="${artifacts.com.mbeddr.platform}/mpsutil.refactoring/languages/group.refactoring/com.mbeddr.mpsutil.refactoring.jar" />
       <library file="${artifacts.com.mbeddr.platform}/mpsutil.refactoring/languages/group.refactoring/com.mbeddr.mpsutil.refactoring.rt.jar" />
-      <library file="${artifacts.com.mbeddr.platform}/stubs.jar" />
       <library file="${artifacts.mps}/languages/baseLanguage/closures.runtime.jar" />
       <library file="${artifacts.mps}/languages/baseLanguage/collections.runtime.jar" />
       <library file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.blTypes.jar" />
@@ -401,6 +399,7 @@
       <library file="${artifacts.mps}/plugins/mps-execution-languages/languages/jetbrains.mps.execution.languages.jar" />
       <library file="${artifacts.mps}/plugins/mps-execution-languages/languages/jetbrains.mps.execution.library.jar" />
       <library file="${artifacts.mps}/plugins/mps-git4idea/languages/jetbrains.mps.git4idea.stubs.jar" />
+      <library file="${artifacts.mps}/plugins/mps-git4idea/languages/jetbrains.mps.vcs.idea.stubs.jar" />
       <library file="${artifacts.mps}/plugins/mps-httpsupport/languages/jetbrains.mps.ide.httpsupport.jar" />
       <library file="${artifacts.mps}/plugins/mps-httpsupport/solutions/jetbrains.mps.ide.httpsupport.manager.jar" />
       <library file="${artifacts.mps}/plugins/mps-httpsupport/solutions/jetbrains.mps.ide.httpsupport.runtime.jar" />
@@ -412,7 +411,6 @@
       <library file="${artifacts.mps}/plugins/mps-testing/languages/languageDesign/jetbrains.mps.lang.test.junit5.jar" />
       <library file="${artifacts.mps}/plugins/mps-testing/languages/languageDesign/jetbrains.mps.lang.test.matcher.jar" />
       <library file="${artifacts.mps}/plugins/mps-testing/languages/languageDesign/jetbrains.mps.lang.test.runtime.jar" />
-      <library file="${artifacts.mps}/plugins/mps-testing/languages/launcher/jetbrains.mps.lang.test.launcher.jar" />
       <library file="${artifacts.mps}/plugins/mps-tooltips/languages/jetbrains.mps.lang.editor.tooltips.jar" />
       <library file="${artifacts.mps}/plugins/mps-tooltips/languages/jetbrains.mps.lang.editor.tooltips.runtime.jar" />
       <library file="${artifacts.mps}/plugins/mps-vcs/languages/jetbrains.mps.devkit.aspect.vcs.jar" />

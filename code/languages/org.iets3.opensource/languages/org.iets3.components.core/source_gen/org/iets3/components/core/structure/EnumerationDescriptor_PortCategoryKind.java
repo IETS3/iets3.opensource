@@ -21,7 +21,7 @@ public class EnumerationDescriptor_PortCategoryKind extends EnumerationDescripto
   private final EnumerationDescriptor.MemberDescriptor myMember_bottom_0 = new EnumerationDescriptor.MemberDescriptor("bottom", "bottom", 0x71280102d018900L, "r:b3786745-c763-4a49-a754-f84e15236f18(org.iets3.components.core.structure)/1293474851211742450");
 
   private final EnumerationLiteralsIndex myIndex = EnumerationLiteralsIndex.build(0xf0fd486f857743e9L, 0xb6713d118449c6e7L, 0x71280102d0188dfL, 0x71280102d0188e0L, 0x71280102d0188f9L, 0x71280102d0188fcL, 0x71280102d018900L);
-  private final List<EnumerationDescriptor.MemberDescriptor> myMembers = new EnumerationDescriptorBase.MembersList(myIndex, myMember_left_0, myMember_right_0, myMember_top_0, myMember_bottom_0);
+  private final List<EnumerationDescriptor.MemberDescriptor> myMembers = new EnumerationDescriptorBase.MembersList0(myIndex, myMember_left_0, myMember_right_0, myMember_top_0, myMember_bottom_0);
 
   @Nullable
   @Override
