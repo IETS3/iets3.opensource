@@ -30,7 +30,7 @@ public class StringType_Constraints extends BaseConstraintsDescriptor {
         boolean result = staticCanBeAnAncestor(context.getNode(), context.getChildNode(), context.getChildConcept(), context.getParentNode(), context.getLink());
 
         if (!(result) && checkingNodeContext != null) {
-          checkingNodeContext.setBreakingNode(canBeRootBreakingPoint);
+          checkingNodeContext.setBreakingNode(canBeAncestorBreakingPoint);
         }
 
         return result;
@@ -40,7 +40,7 @@ public class StringType_Constraints extends BaseConstraintsDescriptor {
   private static boolean staticCanBeAnAncestor(SNode node, SNode childNode, SAbstractConcept childConcept, SNode parentNode, SContainmentLink link) {
     return !(SConceptOperations.isSubConceptOf(SNodeOperations.asSConcept(childConcept), CONCEPTS.MatchParensRegexp$Ea));
   }
-  private static final SNodePointer canBeRootBreakingPoint = new SNodePointer("r:e3651d26-951a-4ffc-9443-e8b8de452a77(org.iets3.core.expr.simpleTypes.constraints)", "4735327607204181561");
+  private static final SNodePointer canBeAncestorBreakingPoint = new SNodePointer("r:e3651d26-951a-4ffc-9443-e8b8de452a77(org.iets3.core.expr.simpleTypes.constraints)", "4735327607204181561");
 
   private static final class CONCEPTS {
     /*package*/ static final SConcept StringType$B3 = MetaAdapterFactory.getConcept(0x6b277d9ad52d416fL, 0xa2091919bd737f50L, 0x46ff3b3d86d3edc7L, "org.iets3.core.expr.simpleTypes.structure.StringType");

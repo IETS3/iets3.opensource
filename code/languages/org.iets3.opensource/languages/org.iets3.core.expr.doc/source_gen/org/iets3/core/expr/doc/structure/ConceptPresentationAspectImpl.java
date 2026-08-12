@@ -70,7 +70,7 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
           cpb.shortDesc("a frame used for taking screenshots or as a bookmark target");
           cpb.presentationByName();
-          cpb.icon(IconContainer.RESOURCE_a0a3a0a5b0l);
+          cpb.icon(IconContainer.RESOURCE_0);
           props_Frame = cpb.create();
         }
         return props_Frame;

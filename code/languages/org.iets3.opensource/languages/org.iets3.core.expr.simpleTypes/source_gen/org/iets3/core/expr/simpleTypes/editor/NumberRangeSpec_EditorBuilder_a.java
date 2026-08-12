@@ -17,11 +17,6 @@ import jetbrains.mps.nodeEditor.cells.ModelAccessor;
 import org.iets3.core.expr.simpleTypes.behavior.NumberRangeSpec__BehaviorDescriptor;
 import jetbrains.mps.openapi.editor.cells.CellActionType;
 import jetbrains.mps.editor.runtime.cells.EmptyCellAction;
-import jetbrains.mps.baseLanguage.closures.runtime._FunctionTypes;
-import org.iets3.core.expr.base.runtime.runtime.PTF;
-import jetbrains.mps.nodeEditor.cells.SPropertyAccessor;
-import de.slisson.mps.reflection.runtime.ReflectionUtil;
-import org.iets3.core.expr.base.runtime.runtime.HexPropertyAccessor;
 import org.jetbrains.mps.openapi.language.SProperty;
 import jetbrains.mps.openapi.editor.menus.transformation.SPropertyInfo;
 import jetbrains.mps.editor.runtime.style.CaretPosition;
@@ -52,6 +47,9 @@ import org.jetbrains.mps.openapi.model.SModel;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations;
 import org.iets3.core.expr.base.plugin.InfHelper;
 import jetbrains.mps.nodeEditor.cells.EditorCell_Constant;
+import org.iets3.core.expr.base.runtime.runtime.PTF;
+import org.iets3.core.expr.base.runtime.runtime.HexPropertyAccessor;
+import jetbrains.mps.nodeEditor.cells.SPropertyAccessor;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import org.jetbrains.mps.openapi.language.SConcept;
 
@@ -83,9 +81,9 @@ import org.jetbrains.mps.openapi.language.SConcept;
     style.set(StyleAttributes.INDENT_LAYOUT_NO_WRAP, true);
     editorCell.getStyle().putAll(style);
     editorCell.addEditorCell(createReadOnlyModelAccessor_0());
-    editorCell.addEditorCell(createCustomFactory_1());
+    editorCell.addEditorCell(createProperty_0());
     editorCell.addEditorCell(createConstant_0());
-    editorCell.addEditorCell(createCustomFactory_3());
+    editorCell.addEditorCell(createProperty_1());
     editorCell.addEditorCell(createReadOnlyModelAccessor_1());
     return editorCell;
   }
@@ -105,37 +103,19 @@ import org.jetbrains.mps.openapi.language.SConcept;
     editorCell.getStyle().putAll(style);
     return editorCell;
   }
-  private EditorCell createCustomFactory_0(final EditorContext editorContext, final SNode node) {
-
-
-    final EditorCell cell = createProperty_0();
-    EditorCell editorCell = ((_FunctionTypes._return_P0_E0<EditorCell_Property>) () -> {
-      EditorCell_Property propCell = ((EditorCell_Property) cell);
-      if (PTF.areHexadecimalNumbersSupported(myNode)) {
-        SPropertyAccessor modelAccessor = (SPropertyAccessor) propCell.getModelAccessor();
-        ReflectionUtil.writeField(EditorCell_Property.class, propCell, "myModelAccessor", new HexPropertyAccessor(myNode, ((SProperty) ReflectionUtil.readField(SPropertyAccessor.class, modelAccessor, "myProperty")), ((Boolean) ReflectionUtil.readField(SPropertyAccessor.class, modelAccessor, "myReadOnly")), ((Boolean) ReflectionUtil.readField(SPropertyAccessor.class, modelAccessor, "myAllowEmptyText")), getEditorContext()));
-        propCell.synchronize();
-      }
-      return propCell;
-    }).invoke();
-    return editorCell;
-  }
-  private EditorCell createCustomFactory_1() {
-    return createCustomFactory_0(getEditorContext(), myNode);
-  }
   private EditorCell createProperty_0() {
     getCellFactory().pushCellContext();
     try {
       final SProperty property = PROPS.min$7OOG;
       getCellFactory().setPropertyInfo(new SPropertyInfo(myNode, property));
-      EditorCell_Property editorCell = EditorCell_Property.create(getEditorContext(), new SPropertyAccessor(myNode, property, false, true), myNode);
-      editorCell.setDefaultText("<no min>");
+      EditorCell_Property editorCell = EditorCell_Property.create(getEditorContext(), createModelAccessor_gubqz4_a1a0c0b0k(myNode, property, getEditorContext(), false, true), myNode);
+      editorCell.setDefaultText("-∞");
       editorCell.setCellId("property_min");
       Style style = new StyleImpl();
       style.set(StyleAttributes.DEFAULT_CARET_POSITION, CaretPosition.LAST);
       editorCell.getStyle().putAll(style);
       editorCell.setTransformationMenuLookup(new NamedTransformationMenuLookup(LanguageRegistry.getInstance(getEditorContext().getRepository()), CONCEPTS.NumberRangeSpec$3n, "org.iets3.core.expr.simpleTypes.editor.NumberRangeSpecIncompleteMinHexValue"));
-      editorCell.setSubstituteInfo(new CompositeSubstituteInfo(getEditorContext(), new PropertyCellContext(myNode, property), new SubstituteInfoPartExt[]{new NumberRangeSpec_generic_cellMenu_ueor4e_a0a1a(), new SChildSubstituteInfoPartEx(editorCell)}));
+      editorCell.setSubstituteInfo(new CompositeSubstituteInfo(getEditorContext(), new PropertyCellContext(myNode, property), new SubstituteInfoPartExt[]{new NumberRangeSpec_generic_cellMenu_ueor4e_a0b0(), new SChildSubstituteInfoPartEx(editorCell)}));
       setCellContext(editorCell);
       Iterable<SNode> propertyAttributes = SNodeOperations.ofConcept(new IAttributeDescriptor.AllAttributes().list(myNode), CONCEPTS.PropertyAttribute$Gb);
       Iterable<SNode> currentPropertyAttributes = Sequence.fromIterable(propertyAttributes).where((it) -> Objects.equals(PropertyAttribute__BehaviorDescriptor.getProperty_id1avfQ4BBzOo.invoke(it), property));
@@ -148,8 +128,8 @@ import org.jetbrains.mps.openapi.language.SConcept;
       getCellFactory().popCellContext();
     }
   }
-  public static class NumberRangeSpec_generic_cellMenu_ueor4e_a0a1a extends AbstractCellMenuPart_Generic_Item {
-    public NumberRangeSpec_generic_cellMenu_ueor4e_a0a1a() {
+  public static class NumberRangeSpec_generic_cellMenu_ueor4e_a0b0 extends AbstractCellMenuPart_Generic_Item {
+    public NumberRangeSpec_generic_cellMenu_ueor4e_a0b0() {
     }
     @Override
     public List<SubstituteAction> createActions(CellContext cellContext, EditorContext editorContext) {
@@ -182,37 +162,19 @@ import org.jetbrains.mps.openapi.language.SConcept;
     editorCell.setDefaultText("");
     return editorCell;
   }
-  private EditorCell createCustomFactory_2(final EditorContext editorContext, final SNode node) {
-
-
-    final EditorCell cell = createProperty_1();
-    EditorCell editorCell = ((_FunctionTypes._return_P0_E0<EditorCell_Property>) () -> {
-      EditorCell_Property propCell = ((EditorCell_Property) cell);
-      if (PTF.areHexadecimalNumbersSupported(myNode)) {
-        SPropertyAccessor modelAccessor = (SPropertyAccessor) propCell.getModelAccessor();
-        ReflectionUtil.writeField(EditorCell_Property.class, propCell, "myModelAccessor", new HexPropertyAccessor(myNode, ((SProperty) ReflectionUtil.readField(SPropertyAccessor.class, modelAccessor, "myProperty")), ((Boolean) ReflectionUtil.readField(SPropertyAccessor.class, modelAccessor, "myReadOnly")), ((Boolean) ReflectionUtil.readField(SPropertyAccessor.class, modelAccessor, "myAllowEmptyText")), getEditorContext()));
-        propCell.synchronize();
-      }
-      return propCell;
-    }).invoke();
-    return editorCell;
-  }
-  private EditorCell createCustomFactory_3() {
-    return createCustomFactory_2(getEditorContext(), myNode);
-  }
   private EditorCell createProperty_1() {
     getCellFactory().pushCellContext();
     try {
       final SProperty property = PROPS.max$7P3H;
       getCellFactory().setPropertyInfo(new SPropertyInfo(myNode, property));
-      EditorCell_Property editorCell = EditorCell_Property.create(getEditorContext(), new SPropertyAccessor(myNode, property, false, true), myNode);
-      editorCell.setDefaultText("<no max>");
+      EditorCell_Property editorCell = EditorCell_Property.create(getEditorContext(), createModelAccessor_gubqz4_a1a0c0b0n(myNode, property, getEditorContext(), false, true), myNode);
+      editorCell.setDefaultText("∞");
       editorCell.setCellId("property_max");
       Style style = new StyleImpl();
       style.set(StyleAttributes.DEFAULT_CARET_POSITION, CaretPosition.LAST);
       editorCell.getStyle().putAll(style);
       editorCell.setTransformationMenuLookup(new NamedTransformationMenuLookup(LanguageRegistry.getInstance(getEditorContext().getRepository()), CONCEPTS.NumberRangeSpec$3n, "org.iets3.core.expr.simpleTypes.editor.NumberRangeSpecIncompleteMaxHexValue"));
-      editorCell.setSubstituteInfo(new CompositeSubstituteInfo(getEditorContext(), new PropertyCellContext(myNode, property), new SubstituteInfoPartExt[]{new NumberRangeSpec_generic_cellMenu_ueor4e_a0a3a(), new SChildSubstituteInfoPartEx(editorCell)}));
+      editorCell.setSubstituteInfo(new CompositeSubstituteInfo(getEditorContext(), new PropertyCellContext(myNode, property), new SubstituteInfoPartExt[]{new NumberRangeSpec_generic_cellMenu_ueor4e_a0d0(), new SChildSubstituteInfoPartEx(editorCell)}));
       setCellContext(editorCell);
       Iterable<SNode> propertyAttributes = SNodeOperations.ofConcept(new IAttributeDescriptor.AllAttributes().list(myNode), CONCEPTS.PropertyAttribute$Gb);
       Iterable<SNode> currentPropertyAttributes = Sequence.fromIterable(propertyAttributes).where((it) -> Objects.equals(PropertyAttribute__BehaviorDescriptor.getProperty_id1avfQ4BBzOo.invoke(it), property));
@@ -225,8 +187,8 @@ import org.jetbrains.mps.openapi.language.SConcept;
       getCellFactory().popCellContext();
     }
   }
-  public static class NumberRangeSpec_generic_cellMenu_ueor4e_a0a3a extends AbstractCellMenuPart_Generic_Item {
-    public NumberRangeSpec_generic_cellMenu_ueor4e_a0a3a() {
+  public static class NumberRangeSpec_generic_cellMenu_ueor4e_a0d0 extends AbstractCellMenuPart_Generic_Item {
+    public NumberRangeSpec_generic_cellMenu_ueor4e_a0d0() {
     }
     @Override
     public List<SubstituteAction> createActions(CellContext cellContext, EditorContext editorContext) {
@@ -263,6 +225,20 @@ import org.jetbrains.mps.openapi.language.SConcept;
     style.set(StyleAttributes.EDITABLE, false);
     editorCell.getStyle().putAll(style);
     return editorCell;
+  }
+  public static ModelAccessor createModelAccessor_gubqz4_a1a0c0b0k(SNode node, SProperty property, EditorContext editorContext, boolean readOnly, boolean allowEmptyText) {
+    if (PTF.areHexadecimalNumbersSupported(node)) {
+      return new HexPropertyAccessor(node, PROPS.min$7OOG, readOnly, allowEmptyText);
+    } else {
+      return new SPropertyAccessor(node, PROPS.min$7OOG, readOnly, allowEmptyText);
+    }
+  }
+  public static ModelAccessor createModelAccessor_gubqz4_a1a0c0b0n(SNode node, SProperty property, EditorContext editorContext, boolean readOnly, boolean allowEmptyText) {
+    if (PTF.areHexadecimalNumbersSupported(node)) {
+      return new HexPropertyAccessor(node, PROPS.max$7P3H, readOnly, allowEmptyText);
+    } else {
+      return new SPropertyAccessor(node, PROPS.max$7P3H, readOnly, allowEmptyText);
+    }
   }
 
   private static final class PROPS {

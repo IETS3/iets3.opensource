@@ -21,7 +21,7 @@ import org.jetbrains.mps.openapi.language.SInterfaceConcept;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 
 public class runManuallyOnNode_Action extends BaseAction {
-  private static final Icon ICON = IconContainer.ICON_a0;
+  private static final Icon ICON = IconContainer.ICON0;
 
   public runManuallyOnNode_Action() {
     super("Run/Evaluate/Check Manually", "", ICON);
