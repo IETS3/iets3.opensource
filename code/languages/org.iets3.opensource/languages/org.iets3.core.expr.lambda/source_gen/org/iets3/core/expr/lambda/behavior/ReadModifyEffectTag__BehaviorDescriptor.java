@@ -8,25 +8,21 @@ import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import org.iets3.core.expr.base.plugin.EffectDescriptor;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import java.util.List;
 import java.util.Arrays;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.mps.openapi.model.SNode;
-import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 
 public final class ReadModifyEffectTag__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getConcept(0x9464fa065ab9409bL, 0x927464ab29588457L, 0x46bb4e10d3fbeaeeL, "org.iets3.core.expr.lambda.structure.ReadModifyEffectTag");
 
-  public static final SMethod<EffectDescriptor> createDescriptor_id4qVjx3k0U6M = new SMethodBuilder<EffectDescriptor>(new SJavaCompoundTypeImpl(EffectDescriptor.class)).name("createDescriptor").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5096753237483299250L).languageId(0x927464ab29588457L, 0x9464fa065ab9409bL).build2();
+  public static final SMethod<EffectDescriptor> createDescriptor_id4qVjx3k0U6M = new SMethodBuilder<>(EffectDescriptor.class).name("createDescriptor").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5096753237483299250L).languageId(0x927464ab29588457L, 0x9464fa065ab9409bL).build2();
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(createDescriptor_id4qVjx3k0U6M);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(createDescriptor_id4qVjx3k0U6M);
 
-  private static void ___init___(@NotNull SNode __thisNode__) {
-  }
 
   /*package*/ static EffectDescriptor createDescriptor_id4qVjx3k0U6M(@NotNull SNode __thisNode__) {
     return new EffectDescriptor(true, false, true);
@@ -35,10 +31,6 @@ public final class ReadModifyEffectTag__BehaviorDescriptor extends BaseBHDescrip
   /*package*/ ReadModifyEffectTag__BehaviorDescriptor() {
   }
 
-  @Override
-  protected void initNode(@NotNull SNode node, @NotNull SConstructor constructor, @Nullable Object[] parameters) {
-    ___init___(node);
-  }
 
   @Override
   protected <T> T invokeSpecial0(@NotNull SNode node, @NotNull SMethod<T> method, @Nullable Object[] parameters) {

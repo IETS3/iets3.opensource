@@ -13,7 +13,7 @@
       <unit at="11,0,71,0" name="org.iets3.core.trace.structure.ConceptPresentationAspectImpl" />
     </file>
     <file name="LanguageConceptSwitch.java">
-      <unit at="10,0,38,0" name="org.iets3.core.trace.structure.LanguageConceptSwitch" />
+      <unit at="12,0,46,0" name="org.iets3.core.trace.structure.LanguageConceptSwitch" />
     </file>
     <file name="StructureAspectDescriptor.java">
       <unit at="14,0,119,0" name="org.iets3.core.trace.structure.StructureAspectDescriptor" />
@@ -33,8 +33,8 @@
       <scope id="2117670517801897953" at="60,43,66,31" />
     </file>
     <file name="LanguageConceptSwitch.java">
-      <node id="2117670517801897953" at="17,0,18,0" concept="6" trace="TraceKind" />
-      <node id="2117670517801897953" at="25,58,26,48" concept="0" />
+      <node id="2117670517801897953" at="19,0,20,0" concept="6" trace="TraceKind" />
+      <node id="2117670517801897953" at="27,58,28,48" concept="0" />
     </file>
     <file name="StructureAspectDescriptor.java">
       <node id="2117670517801897953" at="20,0,21,0" concept="1" trace="myConceptTraceKind" />
@@ -67,8 +67,8 @@
       <scope id="2117670517801897954" at="52,53,59,41" />
     </file>
     <file name="LanguageConceptSwitch.java">
-      <node id="2117670517801897954" at="16,0,17,0" concept="6" trace="TraceAttributeValue" />
-      <node id="2117670517801897954" at="24,53,25,58" concept="0" />
+      <node id="2117670517801897954" at="18,0,19,0" concept="6" trace="TraceAttributeValue" />
+      <node id="2117670517801897954" at="26,53,27,58" concept="0" />
     </file>
     <file name="StructureAspectDescriptor.java">
       <node id="2117670517801897954" at="19,0,20,0" concept="1" trace="myConceptTraceAttributeValue" />
@@ -101,8 +101,8 @@
       <scope id="2117670517801898047" at="24,40,29,28" />
     </file>
     <file name="LanguageConceptSwitch.java">
-      <node id="2117670517801898047" at="12,0,13,0" concept="6" trace="ITrace" />
-      <node id="2117670517801898047" at="20,116,21,45" concept="0" />
+      <node id="2117670517801898047" at="14,0,15,0" concept="6" trace="ITrace" />
+      <node id="2117670517801898047" at="22,116,23,45" concept="0" />
     </file>
     <file name="StructureAspectDescriptor.java">
       <node id="2117670517801898047" at="15,0,16,0" concept="1" trace="myConceptITrace" />
@@ -136,8 +136,8 @@
       <scope id="2117670517801950028" at="30,54,35,42" />
     </file>
     <file name="LanguageConceptSwitch.java">
-      <node id="2117670517801950028" at="13,0,14,0" concept="6" trace="ITraceTargetProvider" />
-      <node id="2117670517801950028" at="21,45,22,59" concept="0" />
+      <node id="2117670517801950028" at="15,0,16,0" concept="6" trace="ITraceTargetProvider" />
+      <node id="2117670517801950028" at="23,45,24,59" concept="0" />
     </file>
     <file name="StructureAspectDescriptor.java">
       <node id="2117670517801950028" at="16,0,17,0" concept="1" trace="myConceptITraceTargetProvider" />
@@ -172,8 +172,8 @@
       <scope id="2117670517801951066" at="36,53,43,41" />
     </file>
     <file name="LanguageConceptSwitch.java">
-      <node id="2117670517801951066" at="14,0,15,0" concept="6" trace="NamedTargetProvider" />
-      <node id="2117670517801951066" at="22,59,23,58" concept="0" />
+      <node id="2117670517801951066" at="16,0,17,0" concept="6" trace="NamedTargetProvider" />
+      <node id="2117670517801951066" at="24,59,25,58" concept="0" />
     </file>
     <file name="StructureAspectDescriptor.java">
       <node id="2117670517801951066" at="17,0,18,0" concept="1" trace="myConceptNamedTargetProvider" />
@@ -207,8 +207,8 @@
       <scope id="2117670517802470200" at="44,48,51,36" />
     </file>
     <file name="LanguageConceptSwitch.java">
-      <node id="2117670517802470200" at="15,0,16,0" concept="6" trace="TraceAttribute" />
-      <node id="2117670517802470200" at="23,58,24,53" concept="0" />
+      <node id="2117670517802470200" at="17,0,18,0" concept="6" trace="TraceAttribute" />
+      <node id="2117670517802470200" at="25,58,26,53" concept="0" />
     </file>
     <file name="StructureAspectDescriptor.java">
       <node id="2117670517802470200" at="18,0,19,0" concept="1" trace="myConceptTraceAttribute" />

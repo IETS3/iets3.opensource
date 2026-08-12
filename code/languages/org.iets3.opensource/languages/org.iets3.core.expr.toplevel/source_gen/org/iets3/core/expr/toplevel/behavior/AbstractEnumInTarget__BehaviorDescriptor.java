@@ -8,7 +8,6 @@ import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import org.jetbrains.mps.openapi.model.SNode;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import java.util.List;
 import java.util.Arrays;
@@ -16,7 +15,6 @@ import org.jetbrains.annotations.NotNull;
 import jetbrains.mps.internal.collections.runtime.ListSequence;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
-import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 import jetbrains.mps.smodel.builder.SNodeBuilder;
@@ -28,15 +26,13 @@ import org.jetbrains.mps.openapi.language.SInterfaceConcept;
 public final class AbstractEnumInTarget__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getConcept(0x71934284d7d145eeL, 0xa0548c072591085fL, 0x4c45dc3c56a5dd6cL, "org.iets3.core.expr.toplevel.structure.AbstractEnumInTarget");
 
-  public static final SMethod<SNode> singleOp_id3wraVjnnC5i = new SMethodBuilder<SNode>(new SJavaCompoundTypeImpl((Class<SNode>) ((Class) Object.class))).name("singleOp").modifiers(12, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(4042873146202554706L).languageId(0xa0548c072591085fL, 0x71934284d7d145eeL).build2(SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""));
-  public static final SMethod<SNode> compose_id4L5R3LmDwOh = new SMethodBuilder<SNode>(new SJavaCompoundTypeImpl((Class<SNode>) ((Class) Object.class))).name("compose").modifiers(12, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5496041071985429777L).languageId(0xa0548c072591085fL, 0x71934284d7d145eeL).build2(SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""), SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""), SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""));
-  public static final SMethod<SNode> reduce_id4L5R3LmDzwi = new SMethodBuilder<SNode>(new SJavaCompoundTypeImpl((Class<SNode>) ((Class) Object.class))).name("reduce").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5496041071985440786L).languageId(0xa0548c072591085fL, 0x71934284d7d145eeL).build2();
-  public static final SMethod<SNode> single_id3wraVjnnEfa = new SMethodBuilder<SNode>(new SJavaCompoundTypeImpl((Class<SNode>) ((Class) Object.class))).name("single").modifiers(0, AccessPrivileges.PROTECTED).concept(CONCEPT).baseMethodId(4042873146202563530L).languageId(0xa0548c072591085fL, 0x71934284d7d145eeL).build2(SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""), SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""));
+  public static final SMethod<SNode> singleOp_id3wraVjnnC5i = new SMethodBuilder<>(SNode.class).name("singleOp").modifiers(12, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(4042873146202554706L).languageId(0xa0548c072591085fL, 0x71934284d7d145eeL).build2(SMethodBuilder.createJavaParameter(SNode.class, "literal"));
+  public static final SMethod<SNode> compose_id4L5R3LmDwOh = new SMethodBuilder<>(SNode.class).name("compose").modifiers(12, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5496041071985429777L).languageId(0xa0548c072591085fL, 0x71934284d7d145eeL).build2(SMethodBuilder.createJavaParameter(SNode.class, "literal"), SMethodBuilder.createJavaParameter(SNode.class, "currExpression"), SMethodBuilder.createJavaParameter(SNode.class, "ctx"));
+  public static final SMethod<SNode> reduce_id4L5R3LmDzwi = new SMethodBuilder<>(SNode.class).name("reduce").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5496041071985440786L).languageId(0xa0548c072591085fL, 0x71934284d7d145eeL).build2();
+  public static final SMethod<SNode> single_id3wraVjnnEfa = new SMethodBuilder<>(SNode.class).name("single").modifiers(0, AccessPrivileges.PROTECTED).concept(CONCEPT).baseMethodId(4042873146202563530L).languageId(0xa0548c072591085fL, 0x71934284d7d145eeL).build2(SMethodBuilder.createJavaParameter(SNode.class, "ctx"), SMethodBuilder.createJavaParameter(SNode.class, "lit"));
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(singleOp_id3wraVjnnC5i, compose_id4L5R3LmDwOh, reduce_id4L5R3LmDzwi, single_id3wraVjnnEfa);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(singleOp_id3wraVjnnC5i, compose_id4L5R3LmDwOh, reduce_id4L5R3LmDzwi, single_id3wraVjnnEfa);
 
-  private static void ___init___(@NotNull SNode __thisNode__) {
-  }
 
   /*package*/ static SNode reduce_id4L5R3LmDzwi(@NotNull final SNode __thisNode__) {
     if (ListSequence.fromList(SLinkOperations.getChildren(__thisNode__, LINKS.selectors$Hqrd)).isEmpty()) {
@@ -55,10 +51,6 @@ public final class AbstractEnumInTarget__BehaviorDescriptor extends BaseBHDescri
   /*package*/ AbstractEnumInTarget__BehaviorDescriptor() {
   }
 
-  @Override
-  protected void initNode(@NotNull SNode node, @NotNull SConstructor constructor, @Nullable Object[] parameters) {
-    ___init___(node);
-  }
 
   @Override
   protected <T> T invokeSpecial0(@NotNull SNode node, @NotNull SMethod<T> method, @Nullable Object[] parameters) {

@@ -8,26 +8,22 @@ import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import org.jetbrains.mps.openapi.model.SNode;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import java.util.List;
 import java.util.Arrays;
 import org.jetbrains.annotations.NotNull;
-import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 
 public final class IArtifactInstance__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getInterfaceConcept(0xf08835038eaa4bc8L, 0x8846eb63220ab1ddL, 0x29c0f4d5e8127ce1L, "org.iets3.variability.artifacts.base.structure.IArtifactInstance");
 
-  public static final SMethod<SNode> getFMInclude_id2B0XdnC571M = new SMethodBuilder<SNode>(new SJavaCompoundTypeImpl((Class<SNode>) ((Class) Object.class))).name("getFMInclude").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(3008673750642356338L).languageId(0x8846eb63220ab1ddL, 0xf08835038eaa4bc8L).build2();
-  public static final SMethod<SNode> featureModelExpression_id4joarafiBYO = new SMethodBuilder<SNode>(new SJavaCompoundTypeImpl((Class<SNode>) ((Class) Object.class))).name("featureModelExpression").modifiers(12, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(4960760836433543092L).languageId(0x8846eb63220ab1ddL, 0xf08835038eaa4bc8L).build2();
-  public static final SMethod<String> nameForSolver_id3dh1eqHHUOl = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("nameForSolver").modifiers(12, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(3697742157851372821L).languageId(0x8846eb63220ab1ddL, 0xf08835038eaa4bc8L).build2();
+  public static final SMethod<SNode> getFMInclude_id2B0XdnC571M = new SMethodBuilder<>(SNode.class).name("getFMInclude").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(3008673750642356338L).languageId(0x8846eb63220ab1ddL, 0xf08835038eaa4bc8L).build2();
+  public static final SMethod<SNode> featureModelExpression_id4joarafiBYO = new SMethodBuilder<>(SNode.class).name("featureModelExpression").modifiers(12, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(4960760836433543092L).languageId(0x8846eb63220ab1ddL, 0xf08835038eaa4bc8L).build2();
+  public static final SMethod<String> nameForSolver_id3dh1eqHHUOl = new SMethodBuilder<>(String.class).name("nameForSolver").modifiers(12, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(3697742157851372821L).languageId(0x8846eb63220ab1ddL, 0xf08835038eaa4bc8L).build2();
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(getFMInclude_id2B0XdnC571M, featureModelExpression_id4joarafiBYO, nameForSolver_id3dh1eqHHUOl);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(getFMInclude_id2B0XdnC571M, featureModelExpression_id4joarafiBYO, nameForSolver_id3dh1eqHHUOl);
 
-  private static void ___init___(@NotNull SNode __thisNode__) {
-  }
 
   /*package*/ static SNode getFMInclude_id2B0XdnC571M(@NotNull SNode __thisNode__) {
     return FeatureExprHelper.getFMInclude(IArtifactInstance__BehaviorDescriptor.featureModelExpression_id4joarafiBYO.invoke(__thisNode__));
@@ -36,10 +32,6 @@ public final class IArtifactInstance__BehaviorDescriptor extends BaseBHDescripto
   /*package*/ IArtifactInstance__BehaviorDescriptor() {
   }
 
-  @Override
-  protected void initNode(@NotNull SNode node, @NotNull SConstructor constructor, @Nullable Object[] parameters) {
-    ___init___(node);
-  }
 
   @Override
   protected <T> T invokeSpecial0(@NotNull SNode node, @NotNull SMethod<T> method, @Nullable Object[] parameters) {

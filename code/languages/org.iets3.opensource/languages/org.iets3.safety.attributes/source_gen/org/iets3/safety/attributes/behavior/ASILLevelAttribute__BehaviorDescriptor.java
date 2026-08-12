@@ -7,7 +7,6 @@ import org.jetbrains.mps.openapi.language.SAbstractConcept;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import java.awt.Color;
 import org.jetbrains.mps.openapi.model.SNode;
@@ -22,7 +21,6 @@ import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
 import com.intellij.ui.JBColor;
 import org.iets3.core.attributes.behavior.IAttributed__BehaviorDescriptor;
 import org.iets3.core.attributes.behavior.IComputedValueAttribute__BehaviorDescriptor;
-import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 import org.jetbrains.mps.openapi.language.SConcept;
@@ -33,16 +31,14 @@ import org.jetbrains.mps.openapi.language.SContainmentLink;
 public final class ASILLevelAttribute__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getConcept(0x3d5cb9202b5f4dcbL, 0x834968b4bf077e63L, 0x3ce7d4897445a3bbL, "org.iets3.safety.attributes.structure.ASILLevelAttribute");
 
-  public static final SMethod<String> summaryString_id4A8SzOVam5y = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("summaryString").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5298733714214838626L).languageId(0xa055a74f8477fc34L, 0x583939beded04735L).build2();
-  public static final SMethod<Color> summaryColor_id4A8SzOVam5R = new SMethodBuilder<Color>(new SJavaCompoundTypeImpl(Color.class)).name("summaryColor").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5298733714214838647L).languageId(0xa055a74f8477fc34L, 0x583939beded04735L).build2();
-  public static final SMethod<String> label_id1HqphBIQCVt = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("label").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(1970998948983901917L).languageId(0xa055a74f8477fc34L, 0x583939beded04735L).build2();
-  public static final SMethod<Iterable<SNode>> getContributingAttributes_id1HqphBIwqoi = new SMethodBuilder<Iterable<SNode>>(new SJavaCompoundTypeImpl((Class<Iterable<SNode>>) ((Class) Object.class))).name("getContributingAttributes").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(1970998948978075154L).languageId(0xa055a74f8477fc34L, 0x583939beded04735L).build2();
-  public static final SMethod<SNode> computedValue_id1HqphBIwaPM = new SMethodBuilder<SNode>(new SJavaCompoundTypeImpl((Class<SNode>) ((Class) Object.class))).name("computedValue").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(1970998948978011506L).languageId(0xa055a74f8477fc34L, 0x583939beded04735L).build2();
+  public static final SMethod<String> summaryString_id4A8SzOVam5y = new SMethodBuilder<>(String.class).name("summaryString").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5298733714214838626L).languageId(0xa055a74f8477fc34L, 0x583939beded04735L).build2();
+  public static final SMethod<Color> summaryColor_id4A8SzOVam5R = new SMethodBuilder<>(Color.class).name("summaryColor").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5298733714214838647L).languageId(0xa055a74f8477fc34L, 0x583939beded04735L).build2();
+  public static final SMethod<String> label_id1HqphBIQCVt = new SMethodBuilder<>(String.class).name("label").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(1970998948983901917L).languageId(0xa055a74f8477fc34L, 0x583939beded04735L).build2();
+  public static final SMethod<Iterable<SNode>> getContributingAttributes_id1HqphBIwqoi = new SMethodBuilder<>((Class<Iterable<SNode>>) ((Class) Object.class)).name("getContributingAttributes").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(1970998948978075154L).languageId(0xa055a74f8477fc34L, 0x583939beded04735L).build2();
+  public static final SMethod<SNode> computedValue_id1HqphBIwaPM = new SMethodBuilder<>(SNode.class).name("computedValue").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(1970998948978011506L).languageId(0xa055a74f8477fc34L, 0x583939beded04735L).build2();
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(summaryString_id4A8SzOVam5y, summaryColor_id4A8SzOVam5R, label_id1HqphBIQCVt, getContributingAttributes_id1HqphBIwqoi, computedValue_id1HqphBIwaPM);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(summaryString_id4A8SzOVam5y, summaryColor_id4A8SzOVam5R, label_id1HqphBIQCVt, getContributingAttributes_id1HqphBIwqoi, computedValue_id1HqphBIwaPM);
 
-  private static void ___init___(@NotNull SNode __thisNode__) {
-  }
 
   /*package*/ static String summaryString_id4A8SzOVam5y(@NotNull SNode __thisNode__) {
     return SEnumOperations.getMemberPresentation(SPropertyOperations.getEnum(SNodeOperations.cast(IValueAttribute__BehaviorDescriptor.getEffectiveValue_id1HqphBICm56.invoke(__thisNode__), CONCEPTS.ASILLevelValue$fW), PROPS.value$wS9f));
@@ -69,10 +65,6 @@ public final class ASILLevelAttribute__BehaviorDescriptor extends BaseBHDescript
   /*package*/ ASILLevelAttribute__BehaviorDescriptor() {
   }
 
-  @Override
-  protected void initNode(@NotNull SNode node, @NotNull SConstructor constructor, @Nullable Object[] parameters) {
-    ___init___(node);
-  }
 
   @Override
   protected <T> T invokeSpecial0(@NotNull SNode node, @NotNull SMethod<T> method, @Nullable Object[] parameters) {
