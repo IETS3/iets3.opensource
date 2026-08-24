@@ -3161,6 +3161,41 @@
       <unit id="3878179565992959388" at="18,0,339,0" name="test.ts.expr.os.m1.effects2_Test" />
     </file>
   </root>
+  <root nodeRef="r:75f6a9e9-cf21-495f-b1aa-7fd992d0d7d0(test.ts.expr.os.m1@tests)/4282216174436302307">
+    <file name="commentedOutUniqueNames_Test.java">
+      <node id="4282216174436302307" at="23,41,24,60" concept="13" />
+      <node id="4282216174436302335" at="28,77,29,68" concept="3" />
+      <node id="4282216174436302307" at="34,52,35,19" concept="13" />
+      <node id="4282216174436302307" at="39,36,40,46" concept="3" />
+      <node id="4282216174436302335" at="43,79,44,22" concept="3" />
+      <node id="4282216174436302335" at="45,30,46,63" concept="7" />
+      <node id="4282216174436302335" at="46,63,47,169" concept="3" />
+      <node id="4282216174436302307" at="20,0,22,0" concept="11" trace="ourParametersCacheExtension" />
+      <node id="4282216174436302307" at="23,0,26,0" concept="2" trace="commentedOutUniqueNames_Test#()V" />
+      <node id="4282216174436302307" at="34,0,37,0" concept="2" trace="TestBody#(Ljetbrains/mps/lang/test/runtime/TransformationTest;)V" />
+      <node id="4282216174436302335" at="27,0,31,0" concept="6" trace="test_ErrorMessagesCheck4282216174436302335#()V" />
+      <node id="4282216174436302307" at="38,0,42,0" concept="6" trace="initTestNodes#()V" />
+      <node id="4282216174436302335" at="44,22,48,9" concept="3" />
+      <node id="4282216174436302335" at="43,0,50,0" concept="6" trace="test_ErrorMessagesCheck4282216174436302335#()V" />
+      <scope id="4282216174436302307" at="23,41,24,60" />
+      <scope id="4282216174436302335" at="28,77,29,68" />
+      <scope id="4282216174436302307" at="34,52,35,19" />
+      <scope id="4282216174436302307" at="39,36,40,46" />
+      <scope id="4282216174436302335" at="45,30,47,169">
+        <var name="nodeToCheck" id="4282216174436302335" />
+      </scope>
+      <scope id="4282216174436302307" at="23,0,26,0" />
+      <scope id="4282216174436302307" at="34,0,37,0">
+        <var name="owner" id="4282216174436302307" />
+      </scope>
+      <scope id="4282216174436302335" at="27,0,31,0" />
+      <scope id="4282216174436302307" at="38,0,42,0" />
+      <scope id="4282216174436302335" at="43,79,48,9" />
+      <scope id="4282216174436302335" at="43,0,50,0" />
+      <unit id="4282216174436302307" at="32,0,52,0" name="test.ts.expr.os.m1.commentedOutUniqueNames_Test$TestBody" />
+      <unit id="4282216174436302307" at="18,0,53,0" name="test.ts.expr.os.m1.commentedOutUniqueNames_Test" />
+    </file>
+  </root>
   <root nodeRef="r:75f6a9e9-cf21-495f-b1aa-7fd992d0d7d0(test.ts.expr.os.m1@tests)/4378712714625616563">
     <file name="options_Test.java">
       <node id="4378712714625616563" at="25,25,26,60" concept="13" />
