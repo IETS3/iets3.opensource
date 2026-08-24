@@ -8,6 +8,7 @@ The project does _not_ follow Semantic Versioning and the changes are documented
 ## August 2026
 ### Fixed
 - Improve uniqueness name check of `IFunctionLike` `getUniquelyNamedElements()` behavior to avoid overzealous checking.
+- `IFunctionLike` `getUniquelyNamedElements()` no longer reports duplicate names for commented out code.
 
 ## July 2026
 ### Added
