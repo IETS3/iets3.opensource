@@ -5,14 +5,12 @@ package org.iets3.variability.featuremodel.base.editor;
 import jetbrains.mps.editor.runtime.cells.AbstractCellAction;
 import org.jetbrains.mps.openapi.model.SNode;
 import jetbrains.mps.openapi.editor.EditorContext;
-import jetbrains.mps.project.Project;
-import jetbrains.mps.ide.project.ProjectHelper;
-import jetbrains.mps.openapi.navigation.NavigationSupport;
 import jetbrains.mps.openapi.editor.cells.EditorCell;
 import jetbrains.mps.openapi.editor.cells.CellAction;
 import jetbrains.mps.openapi.editor.cells.CellActionType;
 import jetbrains.mps.nodeEditor.cellProviders.AbstractCellListHandler;
 import java.util.Objects;
+import jetbrains.mps.openapi.editor.EditorPanelManager;
 
 public class NavigateToConstraintGroup {
 
@@ -22,10 +20,7 @@ public class NavigateToConstraintGroup {
         this.execute_internal(editorContext, node);
       }
       public void execute_internal(EditorContext editorContext, SNode node) {
-        Project project = ProjectHelper.getProject(editorContext.getRepository());
-        if (project != null) {
-          NavigationSupport.getInstance(project).openNode(project, node, true, true);
-        }
+        check_xfairv_a0a1a0a0a1(editorContext.getEditorPanelManager(), node);
       }
 
     };
@@ -70,5 +65,11 @@ public class NavigateToConstraintGroup {
     if (Objects.equals(actionType, CellActionType.CLICK)) {
       editorCell.setAction(actionType, createAction_CLICK(node));
     }
+  }
+  private static void check_xfairv_a0a1a0a0a1(EditorPanelManager checkedDotOperand, SNode node) {
+    if (null != checkedDotOperand) {
+      checkedDotOperand.openAndSelect(node);
+    }
+
   }
 }

@@ -25,7 +25,7 @@ import jetbrains.mps.baseLanguage.closures.runtime.Wrappers;
 import javax.swing.Icon;
 import jetbrains.mps.ide.icons.GlobalIconManager;
 import jetbrains.mps.project.Project;
-import jetbrains.mps.openapi.navigation.NavigationSupport;
+import jetbrains.mps.openapi.navigation.EditorNavigator;
 import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
@@ -78,7 +78,7 @@ public final class AbstractComponentInstanceWithRef__BehaviorDescriptor extends 
         final SNode finalC = c.value;
         return oneAction(new TreeViewAction("Select Component in Editor", icon.value) {
           public void execute(final AbstractTreeViewNode treeNode, final Project project) {
-            SNodeOperations.getModel(__thisNode__).getRepository().getModelAccess().runWriteAction(() -> NavigationSupport.getInstance().openNode(project, finalC, true, true));
+            new EditorNavigator(project).shallFocus(true).shallSelect(true).open(SNodeOperations.getPointer(finalC));
           }
         });
       }

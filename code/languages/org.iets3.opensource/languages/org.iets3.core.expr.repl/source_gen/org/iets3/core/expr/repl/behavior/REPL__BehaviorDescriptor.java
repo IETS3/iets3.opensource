@@ -34,10 +34,10 @@ import de.slisson.mps.hacks.editor.EditorComponentHacks;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SConceptOperations;
 import jetbrains.mps.editor.runtime.selection.SelectionUtil;
 import jetbrains.mps.openapi.editor.selection.SelectionManager;
-import jetbrains.mps.openapi.navigation.NavigationSupport;
 import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
+import jetbrains.mps.openapi.editor.EditorPanelManager;
 import org.jetbrains.mps.openapi.language.SContainmentLink;
 import org.jetbrains.mps.openapi.language.SReferenceLink;
 import org.jetbrains.mps.openapi.language.SConcept;
@@ -131,7 +131,7 @@ public final class REPL__BehaviorDescriptor extends BaseBHDescriptor {
     SNode sn = SLinkOperations.getTarget(__thisNode__, LINKS.sourceNode$DY$O);
     SNodeOperations.deleteNode(__thisNode__);
     if (sn != null) {
-      NavigationSupport.getInstance().openNode(ctx.getOperationContext().getProject(), sn, true, true);
+      check_wdtin5_a0a2a01(ctx.getEditorPanelManager(), sn);
     }
   }
   /*package*/ static IContext getCurrentInterpreterContext_id4nY0kF8wP$O(@NotNull SNode __thisNode__) {
@@ -207,6 +207,12 @@ public final class REPL__BehaviorDescriptor extends BaseBHDescriptor {
   @Override
   public SAbstractConcept getConcept() {
     return CONCEPT;
+  }
+  private static void check_wdtin5_a0a2a01(EditorPanelManager checkedDotOperand, SNode sn) {
+    if (null != checkedDotOperand) {
+      checkedDotOperand.openAndSelect(sn);
+    }
+
   }
 
   private static final class LINKS {

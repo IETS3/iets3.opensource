@@ -11,9 +11,9 @@ import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
 import java.util.Objects;
 import jetbrains.mps.project.Project;
-import jetbrains.mps.ide.project.ProjectHelper;
+import jetbrains.mps.openapi.navigation.EditorNavigator;
+import java.util.function.BiConsumer;
 import jetbrains.mps.openapi.editor.Editor;
-import jetbrains.mps.openapi.navigation.NavigationSupport;
 import jetbrains.mps.openapi.editor.cells.EditorCell;
 import java.util.Set;
 import de.itemis.mps.editor.collapsible.runtime.CollapsibleCell;
@@ -40,34 +40,37 @@ public class FeatureModelConstraintsReadOnly {
       public void execute(EditorContext editorContext) {
         this.execute_internal(editorContext, node);
       }
-      public void execute_internal(EditorContext editorContext, final SNode node) {
+      public void execute_internal(final EditorContext editorContext, final SNode node) {
         // Find the constraint we want to jump to
-        SNode nodeOrig = ListSequence.fromList(SModelOperations.nodes(SNodeOperations.getModel(node), CONCEPTS.FeatureModel$X0)).translate((it) -> SLinkOperations.getChildren(it, LINKS.constraints$SJXp)).findFirst((it) -> Objects.equals(it, node));
-        Project project = ProjectHelper.getProject(editorContext.getRepository());
-        Editor editor = NavigationSupport.getInstance(project).openNode(project, nodeOrig, true, true);
-        // The node is under a CollapsibleCell which might be collapsed. Find it and uncollapse
-        EditorCell selectedCell = editor.getEditorContext().getSelectedCell();
-        // You have to remember the CollapsibleCells due to omitting ConcurrentModificaton
-        Set<CollapsibleCell> decollapseAll = SetSequence.fromSet(new HashSet<CollapsibleCell>());
-        // Iterate all cells under the root node omiting the subtree under the currently selected node
-        for (EditorCell cell : Sequence.fromIterable(CellTraversalUtil.iterateTree(selectedCell.getRootParent(), selectedCell.getRootParent(), true))) {
-          if (cell instanceof CollapsibleCell) {
-            CollapsibleCell collapseCell = ((CollapsibleCell) cell);
-            if ((collapseCell.getSNode()).isInstanceOfConcept(CONCEPTS.FeatureModel$X0)) {
+        final SNode nodeOrig = ListSequence.fromList(SModelOperations.nodes(SNodeOperations.getModel(node), CONCEPTS.FeatureModel$X0)).translate((it) -> SLinkOperations.getChildren(it, LINKS.constraints$SJXp)).findFirst((it) -> Objects.equals(it, node));
+        Project project = editorContext.getOperationContext().getProject();
+        new EditorNavigator(project).onceEditorReady(new BiConsumer<SNode, Editor>() {
+          public void accept(SNode node, Editor editor) {
+            // The node is under a CollapsibleCell which might be collapsed. Find it and uncollapse
+            EditorCell selectedCell = editor.getEditorContext().getSelectedCell();
+            // You have to remember the CollapsibleCells due to omitting ConcurrentModificaton
+            Set<CollapsibleCell> decollapseAll = SetSequence.fromSet(new HashSet<CollapsibleCell>());
+            // Iterate all cells under the root node omiting the subtree under the currently selected node
+            for (EditorCell cell : Sequence.fromIterable(CellTraversalUtil.iterateTree(selectedCell.getRootParent(), selectedCell.getRootParent(), true))) {
+              if (cell instanceof CollapsibleCell) {
+                CollapsibleCell collapseCell = ((CollapsibleCell) cell);
+                if ((collapseCell.getSNode()).isInstanceOfConcept(CONCEPTS.FeatureModel$X0)) {
 
-              EditorCell expandedCell = collapseCell.getExpandedCell();
-              // Now check if it is not an arbitrary cell. It must contain the node corresponding to the constraint.
-              for (EditorCell subCell : Sequence.fromIterable(CellTraversalUtil.iterateTree(expandedCell, expandedCell, true))) {
-                if (Objects.equals(subCell.getSNode(), nodeOrig)) {
-                  SetSequence.fromSet(decollapseAll).addElement(collapseCell);
+                  EditorCell expandedCell = collapseCell.getExpandedCell();
+                  // Now check if it is not an arbitrary cell. It must contain the node corresponding to the constraint.
+                  for (EditorCell subCell : Sequence.fromIterable(CellTraversalUtil.iterateTree(expandedCell, expandedCell, true))) {
+                    if (Objects.equals(subCell.getSNode(), nodeOrig)) {
+                      SetSequence.fromSet(decollapseAll).addElement(collapseCell);
+                    }
+                  }
                 }
               }
             }
+            // uncollapse + select
+            SetSequence.fromSet(decollapseAll).visitAll((it) -> it.setCollapsibleCollapsed(false));
+            SelectionUtil.selectLabelCellWithSelection(editorContext, nodeOrig, SelectionManager.FIRST_ERROR_CELL + "|" + SelectionManager.FOCUS_POLICY_CELL + "|" + SelectionManager.FIRST_EDITABLE_CELL + "|" + SelectionManager.FIRST_CELL, 0, 0);
           }
-        }
-        // uncollapse + select
-        SetSequence.fromSet(decollapseAll).visitAll((it) -> it.setCollapsibleCollapsed(false));
-        SelectionUtil.selectLabelCellWithSelection(editorContext, nodeOrig, SelectionManager.FIRST_ERROR_CELL + "|" + SelectionManager.FOCUS_POLICY_CELL + "|" + SelectionManager.FIRST_EDITABLE_CELL + "|" + SelectionManager.FIRST_CELL, 0, 0);
+        }).shallFocus(true).shallSelect(true).open(SNodeOperations.getPointer(nodeOrig));
       }
 
     };

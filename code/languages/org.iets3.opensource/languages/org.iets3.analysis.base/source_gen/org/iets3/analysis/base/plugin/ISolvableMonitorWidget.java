@@ -32,7 +32,7 @@ import com.intellij.ide.DataManager;
 import jetbrains.mps.project.MPSProject;
 import jetbrains.mps.ide.actions.MPSCommonDataKeys;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
-import jetbrains.mps.openapi.navigation.NavigationSupport;
+import jetbrains.mps.openapi.navigation.EditorNavigator;
 import com.intellij.openapi.ui.Messages;
 import javax.swing.BorderFactory;
 import javax.swing.JScrollPane;
@@ -147,12 +147,12 @@ public class ISolvableMonitorWidget implements StatusBarWidget, UISettingsListen
               return;
             }
             TaskEntity clickedTask = model.get(clickIndex);
-            final SNode solvable = clickedTask.getSolvable();
+            SNode solvable = clickedTask.getSolvable();
             DataContext dataContext = DataManager.getInstance().getDataContext(e.getComponent());
             final MPSProject mpsProject = MPSCommonDataKeys.MPS_PROJECT.getData(dataContext);
             if (mpsProject != null) {
               if ((solvable != null) && SNodeOperations.getModel(solvable) != null) {
-                SNodeOperations.getModel(solvable).getRepository().getModelAccess().runReadAction(() -> NavigationSupport.getInstance().openNode(mpsProject, solvable, true, true));
+                new EditorNavigator(mpsProject).shallFocus(true).shallSelect(true).open(SNodeOperations.getPointer(solvable));
               } else {
                 ApplicationManager.getApplication().invokeLater(() -> Messages.showWarningDialog(mpsProject.getProject(), "Solvable node is not available anymore", "Solvable not found"));
               }

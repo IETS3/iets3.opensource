@@ -496,42 +496,51 @@
       <node id="4237471344366421469" at="45,151,46,137" concept="2" />
       <node id="4631108758963127442" at="46,137,47,125" concept="2" />
       <node id="4631108758963205971" at="47,125,48,91" concept="7" />
-      <node id="4237471344366421478" at="48,91,49,112" concept="2" />
-      <node id="4631108758963166008" at="49,112,50,0" concept="9" />
-      <node id="4237471344366421144" at="54,0,55,0" concept="10" trace="REPL$Y7" />
-      <node id="4237471344366421144" at="55,0,56,0" concept="10" trace="DefaultEntry$YA" />
-      <node id="4237471344366421144" at="56,0,57,0" concept="10" trace="INamedConcept$Kd" />
-      <node id="4237471344366421144" at="57,0,58,0" concept="10" trace="IVisibleElementProvider$$O" />
-      <node id="4237471344366421144" at="61,0,62,0" concept="10" trace="virtualPackage$EkXl" />
-      <node id="4237471344366421144" at="62,0,63,0" concept="10" trace="name$MnvL" />
-      <node id="4237471344366421144" at="66,0,67,0" concept="10" trace="entries$77qo" />
-      <node id="4237471344366421144" at="67,0,68,0" concept="10" trace="sourceNode$DY$O" />
-      <node id="4237471344366421144" at="68,0,69,0" concept="10" trace="sourceScope$Eq$N" />
-      <node id="4237471344366421144" at="69,0,70,0" concept="10" trace="expression$3Lmy" />
+      <node id="3146986825093258676" at="48,91,49,66" concept="2" />
+      <node id="3146986825093271989" at="52,36,53,43" concept="2" />
+      <node id="3146986825093271989" at="54,5,55,0" concept="9" />
+      <node id="4237471344366421144" at="59,0,60,0" concept="10" trace="REPL$Y7" />
+      <node id="4237471344366421144" at="60,0,61,0" concept="10" trace="DefaultEntry$YA" />
+      <node id="4237471344366421144" at="61,0,62,0" concept="10" trace="INamedConcept$Kd" />
+      <node id="4237471344366421144" at="62,0,63,0" concept="10" trace="IVisibleElementProvider$$O" />
+      <node id="4237471344366421144" at="66,0,67,0" concept="10" trace="virtualPackage$EkXl" />
+      <node id="4237471344366421144" at="67,0,68,0" concept="10" trace="name$MnvL" />
+      <node id="4237471344366421144" at="71,0,72,0" concept="10" trace="entries$77qo" />
+      <node id="4237471344366421144" at="72,0,73,0" concept="10" trace="sourceNode$DY$O" />
+      <node id="4237471344366421144" at="73,0,74,0" concept="10" trace="sourceScope$Eq$N" />
+      <node id="4237471344366421144" at="74,0,75,0" concept="10" trace="expression$3Lmy" />
       <node id="4237471344366421433" at="37,10,39,5" concept="0" />
       <node id="4237471344366421395" at="31,125,34,5" concept="5" />
       <node id="8272305014736688123" at="40,62,43,5" concept="5" />
+      <node id="3146986825093271989" at="51,94,54,5" concept="5" />
       <node id="4237471344366421408" at="34,5,39,5" concept="5" />
-      <node id="4237471344366421203" at="27,0,52,0" concept="11" trace="openREPL#(Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/openapi/editor/EditorContext;)V" />
+      <node id="3146986825093271989" at="51,0,57,0" concept="11" trace="check_p7rann_a31a2#(Ljetbrains/mps/openapi/editor/EditorPanelManager;Lorg/jetbrains/mps/openapi/model/SNode;)V" />
+      <node id="4237471344366421203" at="27,0,51,0" concept="11" trace="openREPL#(Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/openapi/editor/EditorContext;)V" />
       <scope id="4237471344366421396" at="32,97,33,86" />
       <scope id="4237471344366421409" at="35,69,36,249" />
       <scope id="4237471344366421434" at="37,12,38,147" />
       <scope id="8272305014736688125" at="41,79,42,124" />
-      <scope id="4237471344366421207" at="27,65,50,0">
+      <scope id="3146986825093271989" at="52,36,53,43" />
+      <scope id="3146986825093271989" at="51,94,55,0" />
+      <scope id="3146986825093271989" at="51,0,57,0">
+        <var name="checkedDotOperand" id="3146986825093271989" />
+        <var name="second" id="3146986825093273524" />
+      </scope>
+      <scope id="4237471344366421207" at="27,65,49,66">
         <var name="first" id="4237471344366421461" />
         <var name="m" id="4237471344366421378" />
         <var name="r" id="4237471344366421384" />
         <var name="repl" id="4237471344366421390" />
         <var name="second" id="4631108758963205972" />
       </scope>
-      <scope id="4237471344366421203" at="27,0,52,0">
+      <scope id="4237471344366421203" at="27,0,51,0">
         <var name="editorCtx" id="3639663827569345751" />
         <var name="n" id="4237471344366421347" />
       </scope>
-      <unit id="4237471344366421144" at="60,0,64,0" name="org.iets3.core.expr.repl.intentions.REPLOpenHelper$PROPS" />
-      <unit id="4237471344366421144" at="53,0,59,0" name="org.iets3.core.expr.repl.intentions.REPLOpenHelper$CONCEPTS" />
-      <unit id="4237471344366421144" at="65,0,71,0" name="org.iets3.core.expr.repl.intentions.REPLOpenHelper$LINKS" />
-      <unit id="4237471344366421144" at="24,0,72,0" name="org.iets3.core.expr.repl.intentions.REPLOpenHelper" />
+      <unit id="4237471344366421144" at="65,0,69,0" name="org.iets3.core.expr.repl.intentions.REPLOpenHelper$PROPS" />
+      <unit id="4237471344366421144" at="58,0,64,0" name="org.iets3.core.expr.repl.intentions.REPLOpenHelper$CONCEPTS" />
+      <unit id="4237471344366421144" at="70,0,76,0" name="org.iets3.core.expr.repl.intentions.REPLOpenHelper$LINKS" />
+      <unit id="4237471344366421144" at="24,0,77,0" name="org.iets3.core.expr.repl.intentions.REPLOpenHelper" />
     </file>
   </root>
   <root nodeRef="r:2624010e-f32a-4ad0-8bd4-31f70a7a0d3d(org.iets3.core.expr.repl.intentions)/4767524222579040855">

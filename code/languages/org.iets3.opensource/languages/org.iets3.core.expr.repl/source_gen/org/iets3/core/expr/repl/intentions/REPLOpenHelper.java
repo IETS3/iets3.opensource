@@ -13,7 +13,7 @@ import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SModelOperations;
 import org.iets3.core.expr.repl.behavior.IReplEntry__BehaviorDescriptor;
 import org.iets3.core.expr.repl.behavior.REPL__BehaviorDescriptor;
-import jetbrains.mps.openapi.navigation.NavigationSupport;
+import jetbrains.mps.openapi.editor.EditorPanelManager;
 import org.jetbrains.mps.openapi.language.SConcept;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import org.jetbrains.mps.openapi.language.SInterfaceConcept;
@@ -46,7 +46,12 @@ public class REPLOpenHelper {
     SLinkOperations.setTarget(SNodeOperations.cast(first, CONCEPTS.DefaultEntry$YA), LINKS.expression$3Lmy, SNodeOperations.copyNode(n));
     IReplEntry__BehaviorDescriptor.evaluateEntry_id4nY0kF8p1AF.invoke(SNodeOperations.cast(first, CONCEPTS.DefaultEntry$YA));
     SNode second = REPL__BehaviorDescriptor.addEntry_id69FYpZqzT5W.invoke(repl, editorCtx);
-    NavigationSupport.getInstance().openNode(editorCtx.getOperationContext().getProject(), second, true, false);
+    check_p7rann_a31a2(editorCtx.getEditorPanelManager(), second);
+  }
+  private static void check_p7rann_a31a2(EditorPanelManager checkedDotOperand, SNode second) {
+    if (null != checkedDotOperand) {
+      checkedDotOperand.openEditor(second);
+    }
 
   }
 
