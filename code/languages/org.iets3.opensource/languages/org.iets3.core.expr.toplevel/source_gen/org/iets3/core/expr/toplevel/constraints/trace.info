@@ -719,100 +719,6 @@
       <unit id="5070313213710452023" at="9,0,18,0" name="org.iets3.core.expr.toplevel.constraints.BuilderAdapter_Constraints" />
     </file>
   </root>
-  <root nodeRef="r:dfbbc430-47fe-4054-9d32-72c481150c72(org.iets3.core.expr.toplevel.constraints)/5250171600078131106">
-    <file name="QualifierRef_Constraints.java">
-      <node id="5250171600078131106" at="33,37,34,36" concept="12" />
-      <node id="5250171600078131107" at="45,63,46,143" concept="7" />
-      <node id="5250171600078133645" at="49,80,50,329" concept="6" />
-      <node id="5250171600078133904" at="50,329,51,148" concept="7" />
-      <node id="5250171600078218509" at="58,116,59,20" concept="7" />
-      <node id="5250171600079004098" at="62,119,63,118" concept="2" />
-      <node id="5250171600078218509" at="70,63,71,143" concept="7" />
-      <node id="5250171600078218527" at="74,80,75,194" concept="7" />
-      <node id="5250171600078131106" at="79,6,80,131" concept="6" />
-      <node id="5250171600078131107" at="80,131,81,42" concept="2" />
-      <node id="5250171600078218509" at="81,42,82,42" concept="2" />
-      <node id="5250171600078131106" at="82,42,83,22" concept="7" />
-      <node id="5250171600079005819" at="85,76,86,74" concept="6" />
-      <node id="5250171600079005819" at="86,74,87,50" concept="2" />
-      <node id="5250171600079005819" at="87,50,88,26" concept="7" />
-      <node id="5250171600078131106" at="92,0,93,0" concept="10" trace="QualifierRef$2Q" />
-      <node id="5250171600078131106" at="93,0,94,0" concept="10" trace="IVisibleElementProvider$$O" />
-      <node id="5250171600078131106" at="94,0,95,0" concept="10" trace="EnumDeclaration$3b" />
-      <node id="5250171600078131106" at="95,0,96,0" concept="10" trace="EnumLiteralRef$$8" />
-      <node id="5250171600078131106" at="99,0,100,0" concept="10" trace="enum$$Z9W" />
-      <node id="5250171600078131106" at="100,0,101,0" concept="10" trace="lit$cjiB" />
-      <node id="5250171600078131106" at="101,0,102,0" concept="10" trace="literal$llO8" />
-      <node id="5250171600078131106" at="105,0,106,0" concept="10" trace="qualified$Uqnz" />
-      <node id="5250171600078131106" at="33,0,36,0" concept="1" trace="QualifierRef_Constraints#()V" />
-      <node id="5250171600078131107" at="44,0,48,0" concept="5" trace="getSearchScopeValidatorNode#()Lorg/jetbrains/mps/openapi/model/SNodeReference;" />
-      <node id="5250171600078218509" at="57,0,61,0" concept="5" trace="validate#(Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;)Z" />
-      <node id="5250171600078218509" at="61,0,65,0" concept="5" trace="onReferenceSet#(Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;)V" />
-      <node id="5250171600078218509" at="69,0,73,0" concept="5" trace="getSearchScopeValidatorNode#()Lorg/jetbrains/mps/openapi/model/SNodeReference;" />
-      <node id="5250171600078218509" at="73,0,77,0" concept="5" trace="createScope#(Ljetbrains/mps/smodel/runtime/ReferenceConstraintsContext;)Ljetbrains/mps/scope/Scope;" />
-      <node id="5250171600078131107" at="48,0,53,0" concept="5" trace="createScope#(Ljetbrains/mps/smodel/runtime/ReferenceConstraintsContext;)Ljetbrains/mps/scope/Scope;" />
-      <node id="5250171600079005819" at="85,0,90,0" concept="11" trace="createEnumLiteralRef_ke50sg_a0a0a1a0a0b0c#(Lorg/jetbrains/mps/openapi/model/SNode;)Lorg/jetbrains/mps/openapi/model/SNode;" />
-      <node id="5250171600078218509" at="67,56,77,10" concept="7" />
-      <node id="5250171600078131107" at="42,56,53,10" concept="7" />
-      <node id="5250171600078218509" at="65,0,79,0" concept="5" trace="getScopeProvider#()Ljetbrains/mps/smodel/runtime/ReferenceScopeProvider;" />
-      <node id="5250171600078131107" at="40,0,55,0" concept="5" trace="getScopeProvider#()Ljetbrains/mps/smodel/runtime/ReferenceScopeProvider;" />
-      <node id="5250171600078131107" at="38,90,55,6" concept="6" />
-      <node id="5250171600078218509" at="55,6,79,6" concept="6" />
-      <node id="5250171600078131106" at="37,0,85,0" concept="5" trace="getSpecifiedReferences#()Ljava/util/Map;" />
-      <scope id="5250171600078131106" at="33,37,34,36" />
-      <scope id="5250171600078131107" at="45,63,46,143" />
-      <scope id="5250171600078218509" at="58,116,59,20" />
-      <scope id="5250171600079003864" at="62,119,63,118" />
-      <scope id="5250171600078218509" at="70,63,71,143" />
-      <scope id="5250171600078218509" at="74,80,75,194" />
-      <scope id="5250171600078131107" at="49,80,51,148">
-        <var name="enums" id="5250171600078133646" />
-      </scope>
-      <scope id="5250171600078131106" at="33,0,36,0" />
-      <scope id="5250171600079005819" at="85,76,88,26">
-        <var name="n0" id="5250171600079005819" />
-      </scope>
-      <scope id="5250171600078131107" at="44,0,48,0" />
-      <scope id="5250171600078218509" at="57,0,61,0">
-        <var name="newReferentNode" id="5250171600078218509" />
-        <var name="oldReferentNode" id="5250171600078218509" />
-        <var name="referenceNode" id="5250171600078218509" />
-      </scope>
-      <scope id="5250171600078218509" at="61,0,65,0">
-        <var name="newReferentNode" id="5250171600078218509" />
-        <var name="oldReferentNode" id="5250171600078218509" />
-        <var name="referenceNode" id="5250171600078218509" />
-      </scope>
-      <scope id="5250171600078218509" at="69,0,73,0" />
-      <scope id="5250171600078218509" at="73,0,77,0">
-        <var name="_context" id="5250171600078218509" />
-      </scope>
-      <scope id="5250171600078131107" at="48,0,53,0">
-        <var name="_context" id="5250171600078131107" />
-      </scope>
-      <scope id="5250171600079005819" at="85,0,90,0">
-        <var name="p0" id="5250171600079005819" />
-      </scope>
-      <scope id="5250171600078218509" at="67,56,77,10" />
-      <scope id="5250171600078131107" at="42,56,53,10" />
-      <scope id="5250171600078218509" at="65,0,79,0" />
-      <scope id="5250171600078131107" at="40,0,55,0" />
-      <scope id="5250171600078131106" at="38,90,83,22">
-        <var name="d0" id="5250171600078131107" />
-        <var name="d1" id="5250171600078218509" />
-        <var name="references" id="5250171600078131106" />
-      </scope>
-      <scope id="5250171600078131106" at="37,0,85,0" />
-      <unit id="5250171600078131106" at="104,0,107,0" name="org.iets3.core.expr.toplevel.constraints.QualifierRef_Constraints$PROPS" />
-      <unit id="5250171600078131106" at="98,0,103,0" name="org.iets3.core.expr.toplevel.constraints.QualifierRef_Constraints$LINKS" />
-      <unit id="5250171600078131106" at="91,0,97,0" name="org.iets3.core.expr.toplevel.constraints.QualifierRef_Constraints$CONCEPTS" />
-      <unit id="5250171600078218509" at="68,19,77,9" name="org.iets3.core.expr.toplevel.constraints.QualifierRef_Constraints$2$1" />
-      <unit id="5250171600078131107" at="43,19,53,9" name="org.iets3.core.expr.toplevel.constraints.QualifierRef_Constraints$1$1" />
-      <unit id="5250171600078131107" at="39,48,55,5" name="org.iets3.core.expr.toplevel.constraints.QualifierRef_Constraints$1" />
-      <unit id="5250171600078218509" at="56,48,79,5" name="org.iets3.core.expr.toplevel.constraints.QualifierRef_Constraints$2" />
-      <unit id="5250171600078131106" at="32,0,108,0" name="org.iets3.core.expr.toplevel.constraints.QualifierRef_Constraints" />
-    </file>
-  </root>
   <root nodeRef="r:dfbbc430-47fe-4054-9d32-72c481150c72(org.iets3.core.expr.toplevel.constraints)/543569365051817369">
     <file name="ConstantRef_Constraints.java">
       <node id="543569365051817369" at="26,36,27,35" concept="12" />
@@ -1029,59 +935,50 @@
   </root>
   <root nodeRef="r:dfbbc430-47fe-4054-9d32-72c481150c72(org.iets3.core.expr.toplevel.constraints)/7061117989422580070">
     <file name="EnumLiteralRef_Constraints.java">
-      <node id="7061117989422580070" at="31,39,32,38" concept="12" />
-      <node id="7061117989422580114" at="43,63,44,143" concept="7" />
-      <node id="5250171600077270005" at="47,80,48,329" concept="6" />
-      <node id="5250171600077289457" at="49,54,50,184" concept="6" />
-      <node id="5250171600077286771" at="50,184,51,62" concept="7" />
-      <node id="5250171600077310639" at="52,20,53,258" concept="6" />
-      <node id="5250171600077313659" at="53,258,54,61" concept="7" />
-      <node id="7061117989422580070" at="59,6,60,131" concept="6" />
-      <node id="7061117989422580114" at="60,131,61,42" concept="2" />
-      <node id="7061117989422580070" at="61,42,62,22" concept="7" />
-      <node id="7061117989422580070" at="66,0,67,0" concept="10" trace="EnumLiteralRef$$8" />
-      <node id="7061117989422580070" at="67,0,68,0" concept="10" trace="IVisibleElementProvider$$O" />
-      <node id="7061117989422580070" at="68,0,69,0" concept="10" trace="EnumDeclaration$3b" />
-      <node id="7061117989422580070" at="72,0,73,0" concept="10" trace="literal$llO8" />
-      <node id="7061117989422580070" at="76,0,77,0" concept="10" trace="qualified$Uqnz" />
-      <node id="7061117989422580070" at="31,0,34,0" concept="1" trace="EnumLiteralRef_Constraints#()V" />
-      <node id="5250171600077296130" at="52,18,55,13" concept="0" />
-      <node id="7061117989422580114" at="42,0,46,0" concept="5" trace="getSearchScopeValidatorNode#()Lorg/jetbrains/mps/openapi/model/SNodeReference;" />
-      <node id="5250171600077273235" at="48,329,55,13" concept="4" />
-      <node id="7061117989422580114" at="46,0,57,0" concept="5" trace="createScope#(Ljetbrains/mps/smodel/runtime/ReferenceConstraintsContext;)Ljetbrains/mps/scope/Scope;" />
-      <node id="7061117989422580114" at="40,56,57,10" concept="7" />
-      <node id="7061117989422580114" at="38,0,59,0" concept="5" trace="getScopeProvider#()Ljetbrains/mps/smodel/runtime/ReferenceScopeProvider;" />
-      <node id="7061117989422580114" at="36,90,59,6" concept="6" />
-      <node id="7061117989422580070" at="35,0,64,0" concept="5" trace="getSpecifiedReferences#()Ljava/util/Map;" />
-      <scope id="7061117989422580070" at="31,39,32,38" />
-      <scope id="7061117989422580114" at="43,63,44,143" />
-      <scope id="5250171600077273237" at="49,54,51,62">
-        <var name="allLits" id="5250171600077289458" />
-      </scope>
-      <scope id="5250171600077296131" at="52,20,54,61">
-        <var name="direct" id="5250171600077310640" />
-      </scope>
-      <scope id="7061117989422580070" at="31,0,34,0" />
-      <scope id="7061117989422580114" at="42,0,46,0" />
-      <scope id="7061117989422580114" at="47,80,55,13">
+      <node id="7061117989422580070" at="29,39,30,38" concept="12" />
+      <node id="7061117989422580114" at="41,63,42,143" concept="7" />
+      <node id="8847333369144102028" at="45,80,46,105" concept="8" />
+      <node id="8847333369144102048" at="46,105,47,99" concept="8" />
+      <node id="8847333369144102070" at="47,99,48,105" concept="8" />
+      <node id="8847333369144102084" at="48,105,49,102" concept="8" />
+      <node id="5250171600077270005" at="49,102,50,329" concept="6" />
+      <node id="8847333369144102106" at="50,329,51,196" concept="7" />
+      <node id="7061117989422580070" at="55,6,56,131" concept="6" />
+      <node id="7061117989422580114" at="56,131,57,42" concept="2" />
+      <node id="7061117989422580070" at="57,42,58,22" concept="7" />
+      <node id="7061117989422580070" at="62,0,63,0" concept="10" trace="EnumLiteralRef$$8" />
+      <node id="7061117989422580070" at="63,0,64,0" concept="10" trace="IVisibleElementProvider$$O" />
+      <node id="7061117989422580070" at="64,0,65,0" concept="10" trace="EnumDeclaration$3b" />
+      <node id="7061117989422580070" at="68,0,69,0" concept="10" trace="literal$llO8" />
+      <node id="7061117989422580070" at="29,0,32,0" concept="1" trace="EnumLiteralRef_Constraints#()V" />
+      <node id="7061117989422580114" at="40,0,44,0" concept="5" trace="getSearchScopeValidatorNode#()Lorg/jetbrains/mps/openapi/model/SNodeReference;" />
+      <node id="7061117989422580114" at="44,0,53,0" concept="5" trace="createScope#(Ljetbrains/mps/smodel/runtime/ReferenceConstraintsContext;)Ljetbrains/mps/scope/Scope;" />
+      <node id="7061117989422580114" at="38,56,53,10" concept="7" />
+      <node id="7061117989422580114" at="36,0,55,0" concept="5" trace="getScopeProvider#()Ljetbrains/mps/smodel/runtime/ReferenceScopeProvider;" />
+      <node id="7061117989422580114" at="34,90,55,6" concept="6" />
+      <node id="7061117989422580070" at="33,0,60,0" concept="5" trace="getSpecifiedReferences#()Ljava/util/Map;" />
+      <scope id="7061117989422580070" at="29,39,30,38" />
+      <scope id="7061117989422580114" at="41,63,42,143" />
+      <scope id="7061117989422580070" at="29,0,32,0" />
+      <scope id="7061117989422580114" at="40,0,44,0" />
+      <scope id="7061117989422580114" at="45,80,51,196">
         <var name="enums" id="5250171600077270006" />
       </scope>
-      <scope id="7061117989422580114" at="46,0,57,0">
+      <scope id="7061117989422580114" at="44,0,53,0">
         <var name="_context" id="7061117989422580114" />
       </scope>
-      <scope id="7061117989422580114" at="40,56,57,10" />
-      <scope id="7061117989422580114" at="38,0,59,0" />
-      <scope id="7061117989422580070" at="36,90,62,22">
+      <scope id="7061117989422580114" at="38,56,53,10" />
+      <scope id="7061117989422580114" at="36,0,55,0" />
+      <scope id="7061117989422580070" at="34,90,58,22">
         <var name="d0" id="7061117989422580114" />
         <var name="references" id="7061117989422580070" />
       </scope>
-      <scope id="7061117989422580070" at="35,0,64,0" />
-      <unit id="7061117989422580070" at="71,0,74,0" name="org.iets3.core.expr.toplevel.constraints.EnumLiteralRef_Constraints$LINKS" />
-      <unit id="7061117989422580070" at="75,0,78,0" name="org.iets3.core.expr.toplevel.constraints.EnumLiteralRef_Constraints$PROPS" />
-      <unit id="7061117989422580070" at="65,0,70,0" name="org.iets3.core.expr.toplevel.constraints.EnumLiteralRef_Constraints$CONCEPTS" />
-      <unit id="7061117989422580114" at="41,19,57,9" name="org.iets3.core.expr.toplevel.constraints.EnumLiteralRef_Constraints$1$1" />
-      <unit id="7061117989422580114" at="37,48,59,5" name="org.iets3.core.expr.toplevel.constraints.EnumLiteralRef_Constraints$1" />
-      <unit id="7061117989422580070" at="30,0,79,0" name="org.iets3.core.expr.toplevel.constraints.EnumLiteralRef_Constraints" />
+      <scope id="7061117989422580070" at="33,0,60,0" />
+      <unit id="7061117989422580070" at="67,0,70,0" name="org.iets3.core.expr.toplevel.constraints.EnumLiteralRef_Constraints$LINKS" />
+      <unit id="7061117989422580070" at="61,0,66,0" name="org.iets3.core.expr.toplevel.constraints.EnumLiteralRef_Constraints$CONCEPTS" />
+      <unit id="7061117989422580114" at="39,19,53,9" name="org.iets3.core.expr.toplevel.constraints.EnumLiteralRef_Constraints$1$1" />
+      <unit id="7061117989422580114" at="35,48,55,5" name="org.iets3.core.expr.toplevel.constraints.EnumLiteralRef_Constraints$1" />
+      <unit id="7061117989422580070" at="28,0,71,0" name="org.iets3.core.expr.toplevel.constraints.EnumLiteralRef_Constraints" />
     </file>
   </root>
   <root nodeRef="r:dfbbc430-47fe-4054-9d32-72c481150c72(org.iets3.core.expr.toplevel.constraints)/7250157565703816764">
@@ -1609,6 +1506,46 @@
       <unit id="8293738266746733049" at="46,0,51,0" name="org.iets3.core.expr.toplevel.constraints.InlineRecordMemberAccess_Constraints$CONCEPTS" />
       <unit id="8293738266746733049" at="28,15,39,5" name="org.iets3.core.expr.toplevel.constraints.InlineRecordMemberAccess_Constraints$1" />
       <unit id="8293738266746733049" at="21,0,56,0" name="org.iets3.core.expr.toplevel.constraints.InlineRecordMemberAccess_Constraints" />
+    </file>
+  </root>
+  <root nodeRef="r:dfbbc430-47fe-4054-9d32-72c481150c72(org.iets3.core.expr.toplevel.constraints)/8847333369144652235">
+    <file name="EnumLiteral_Constraints.java">
+      <node id="8847333369144652235" at="18,36,19,35" concept="12" />
+      <node id="8847333369144652234" at="23,66,24,67" concept="12" />
+      <node id="8847333369144656757" at="27,40,28,101" concept="8" />
+      <node id="8847333369144656771" at="28,101,29,97" concept="8" />
+      <node id="8847333369144656789" at="29,97,30,99" concept="8" />
+      <node id="8847333369144656809" at="30,99,31,97" concept="8" />
+      <node id="8847333369144656826" at="31,97,32,98" concept="8" />
+      <node id="8847333369144656845" at="32,98,33,48" concept="8" />
+      <node id="8847333369144656857" at="33,48,34,97" concept="7" />
+      <node id="8847333369144652235" at="38,84,39,119" concept="6" />
+      <node id="8847333369144652234" at="39,119,40,75" concept="2" />
+      <node id="8847333369144652235" at="40,75,41,22" concept="7" />
+      <node id="8847333369144652235" at="45,0,46,0" concept="10" trace="EnumLiteral$S9" />
+      <node id="8847333369144652235" at="49,0,50,0" concept="10" trace="resolveInfo$lW9a" />
+      <node id="8847333369144652235" at="18,0,21,0" concept="1" trace="EnumLiteral_Constraints#()V" />
+      <node id="8847333369144652234" at="23,0,26,0" concept="1" trace="ResolveInfo_Property#(Ljetbrains/mps/smodel/runtime/ConstraintsDescriptor;)V" />
+      <node id="8847333369144652235" at="37,0,43,0" concept="5" trace="getSpecifiedProperties#()Ljava/util/Map;" />
+      <node id="8847333369144652234" at="26,0,36,0" concept="5" trace="getValue#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljava/lang/Object;" />
+      <scope id="8847333369144652235" at="18,36,19,35" />
+      <scope id="8847333369144652234" at="23,66,24,67" />
+      <scope id="8847333369144652235" at="18,0,21,0" />
+      <scope id="8847333369144652234" at="23,0,26,0">
+        <var name="container" id="8847333369144652234" />
+      </scope>
+      <scope id="8847333369144652235" at="38,84,41,22">
+        <var name="properties" id="8847333369144652235" />
+      </scope>
+      <scope id="8847333369144652235" at="37,0,43,0" />
+      <scope id="8847333369144652233" at="27,40,34,97" />
+      <scope id="8847333369144652234" at="26,0,36,0">
+        <var name="node" id="8847333369144652234" />
+      </scope>
+      <unit id="8847333369144652235" at="44,0,47,0" name="org.iets3.core.expr.toplevel.constraints.EnumLiteral_Constraints$CONCEPTS" />
+      <unit id="8847333369144652235" at="48,0,51,0" name="org.iets3.core.expr.toplevel.constraints.EnumLiteral_Constraints$PROPS" />
+      <unit id="8847333369144652234" at="22,0,37,0" name="org.iets3.core.expr.toplevel.constraints.EnumLiteral_Constraints$ResolveInfo_Property" />
+      <unit id="8847333369144652235" at="17,0,52,0" name="org.iets3.core.expr.toplevel.constraints.EnumLiteral_Constraints" />
     </file>
   </root>
 </debug-info>

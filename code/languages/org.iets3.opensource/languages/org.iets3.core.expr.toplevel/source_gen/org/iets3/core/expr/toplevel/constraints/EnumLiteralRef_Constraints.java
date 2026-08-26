@@ -17,15 +17,13 @@ import jetbrains.mps.smodel.runtime.ReferenceConstraintsContext;
 import org.jetbrains.mps.openapi.model.SNode;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
 import com.mbeddr.core.base.behavior.IVisibleElementProvider__BehaviorDescriptor;
+import jetbrains.mps.scope.ListScope;
 import jetbrains.mps.internal.collections.runtime.Sequence;
 import org.iets3.core.expr.toplevel.behavior.EnumDeclaration__BehaviorDescriptor;
-import jetbrains.mps.scope.ListScope;
-import jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations;
 import java.util.HashMap;
 import org.jetbrains.mps.openapi.language.SConcept;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import org.jetbrains.mps.openapi.language.SInterfaceConcept;
-import org.jetbrains.mps.openapi.language.SProperty;
 
 public class EnumLiteralRef_Constraints extends BaseConstraintsDescriptor {
   public EnumLiteralRef_Constraints() {
@@ -45,14 +43,12 @@ public class EnumLiteralRef_Constraints extends BaseConstraintsDescriptor {
           }
           @Override
           public Scope createScope(final ReferenceConstraintsContext _context) {
+            // Every visible literal is in scope, qualified enums included. What keeps a qualified enum's
+            // literals out of the way is not this scope but their matching text: EnumLiteral is an
+            // ISmartReferent/IResolveInfo whose presentation is "Enum:literal", and PatternUtil requires
+            // the first typed character to match, so they surface only once the enum's name is typed.
             Iterable<SNode> enums = SNodeOperations.ofConcept(IVisibleElementProvider__BehaviorDescriptor.visibleContentsOfTypeAsSequence_id3g6LnlWuSo8.invoke(SNodeOperations.getNodeAncestor(_context.getContextNode(), CONCEPTS.IVisibleElementProvider$$O, false, false), CONCEPTS.EnumDeclaration$3b), CONCEPTS.EnumDeclaration$3b);
-            if (_context.getReferenceNode() != null) {
-              Iterable<SNode> allLits = Sequence.fromIterable(enums).translate((it) -> (Iterable<SNode>) EnumDeclaration__BehaviorDescriptor.effectiveLiterals_idolugnm0Egc.invoke(it));
-              return ListScope.forResolvableElements(allLits);
-            } else {
-              Iterable<SNode> direct = Sequence.fromIterable(enums).where((it) -> !(SPropertyOperations.getBoolean(it, PROPS.qualified$Uqnz))).translate((it) -> (Iterable<SNode>) EnumDeclaration__BehaviorDescriptor.effectiveLiterals_idolugnm0Egc.invoke(it));
-              return ListScope.forResolvableElements(direct);
-            }
+            return ListScope.forResolvableElements(Sequence.fromIterable(enums).translate((it) -> (Iterable<SNode>) EnumDeclaration__BehaviorDescriptor.effectiveLiterals_idolugnm0Egc.invoke(it)));
           }
         };
       }
@@ -70,9 +66,5 @@ public class EnumLiteralRef_Constraints extends BaseConstraintsDescriptor {
 
   private static final class LINKS {
     /*package*/ static final SReferenceLink literal$llO8 = MetaAdapterFactory.getReferenceLink(0x71934284d7d145eeL, 0xa0548c072591085fL, 0x61fe216664a736c5L, 0x61fe216664a73709L, "literal");
-  }
-
-  private static final class PROPS {
-    /*package*/ static final SProperty qualified$Uqnz = MetaAdapterFactory.getProperty(0x71934284d7d145eeL, 0xa0548c072591085fL, 0x61fe216664a72eaeL, 0x61fe216664c89321L, "qualified");
   }
 }

@@ -779,18 +779,6 @@ public class GrammarActionsDescriptor extends AbstractGrammarActionDescriptor im
           return ListSequence.fromList(result).where((it) -> it != null).toList();
         }
       }.query()));
-      ListSequence.fromList(result).addSequence(Sequence.fromIterable(new Object() {
-        public Iterable<SubstituteMenuItem> query() {
-          List<SubstituteMenuItem> result = ListSequence.fromList(new ArrayList<SubstituteMenuItem>());
-          _context.getEditorMenuTrace().pushTraceInfo();
-          _context.getEditorMenuTrace().setDescriptor(new EditorMenuDescriptorBase("grammar.wrap in " + "QualifierRef", new SNodePointer("r:1d6bd88a-7393-4b32-b0e6-2d8b3094776e(org.iets3.core.expr.toplevel.editor)", "5250171600079090332")));
-          try {
-          } finally {
-            _context.getEditorMenuTrace().popTraceInfo();
-          }
-          return ListSequence.fromList(result).where((it) -> it != null).toList();
-        }
-      }.query()));
     } finally {
       _context.getEditorMenuTrace().popTraceInfo();
     }
@@ -929,25 +917,6 @@ public class GrammarActionsDescriptor extends AbstractGrammarActionDescriptor im
               List<TransformationMenuItem> result = ListSequence.fromList(new ArrayList<TransformationMenuItem>());
               _context.getEditorMenuTrace().pushTraceInfo();
               _context.getEditorMenuTrace().setDescriptor(new EditorMenuDescriptorBase("grammar.wrap in " + "AbstractFunctionLikeAdapter", new SNodePointer("r:1d6bd88a-7393-4b32-b0e6-2d8b3094776e(org.iets3.core.expr.toplevel.editor)", "336196204782304812")));
-              try {
-              } finally {
-                _context.getEditorMenuTrace().popTraceInfo();
-              }
-              return ListSequence.fromList(result).where((it) -> it != null).toList();
-            }
-          }.query(_context)));
-        }
-      }
-      {
-        boolean sideEnabled = false;
-        sideEnabled |= _context.getMenuLocation() == MenuLocations.LEFT_SIDE_TRANSFORM;
-        sideEnabled |= _context.getMenuLocation() == MenuLocations.RIGHT_SIDE_TRANSFORM;
-        if (sideEnabled) {
-          ListSequence.fromList(result).addSequence(Sequence.fromIterable(new Object() {
-            public Iterable<TransformationMenuItem> query(final TransformationMenuContext _context) {
-              List<TransformationMenuItem> result = ListSequence.fromList(new ArrayList<TransformationMenuItem>());
-              _context.getEditorMenuTrace().pushTraceInfo();
-              _context.getEditorMenuTrace().setDescriptor(new EditorMenuDescriptorBase("grammar.wrap in " + "QualifierRef", new SNodePointer("r:1d6bd88a-7393-4b32-b0e6-2d8b3094776e(org.iets3.core.expr.toplevel.editor)", "5250171600079090332")));
               try {
               } finally {
                 _context.getEditorMenuTrace().popTraceInfo();
