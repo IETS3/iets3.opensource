@@ -12158,7 +12158,7 @@
             <ref role="5mh6l" node="3gKGtj9bXy4" resolve="Color" />
           </node>
           <node concept="5mhuz" id="3gKGtj9bXyg" role="2lDidJ">
-            <ref role="5mhpJ" node="3gKGtj9bXy9" resolve="large" />
+            <ref role="5mhpJ" node="3gKGtj9bXy9" resolve="Starbucks:large" />
             <node concept="7CXmI" id="5IOlOc8LvGa" role="lGtFl">
               <node concept="2DdRWr" id="5IOlOc8LvQC" role="7EUXB" />
             </node>
