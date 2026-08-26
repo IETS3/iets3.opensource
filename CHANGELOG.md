@@ -8,6 +8,7 @@ The project does _not_ follow Semantic Versioning and the changes are documented
 ## August 2026
 ### Fixed
 - Improve uniqueness name check of `IFunctionLike` `getUniquelyNamedElements()` behavior to avoid overzealous checking.
+- Fix potential deadlocks on navigating to a node in MPS 2025.1 and above.
 
 ## July 2026
 ### Added

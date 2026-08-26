@@ -4,6 +4,7 @@
   <languages>
     <use id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior" version="2" />
     <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="12" />
+    <use id="774bf8a0-62e5-41e1-af63-f4812e60e48b" name="jetbrains.mps.baseLanguage.checkedDots" version="0" />
     <devkit ref="2677cb18-f558-4e33-bc38-a5139cee06dc(jetbrains.mps.devkit.language-design)" />
   </languages>
   <imports>
@@ -275,6 +276,9 @@
       <concept id="1200397529627" name="jetbrains.mps.baseLanguage.structure.CharConstant" flags="nn" index="1Xhbcc">
         <property id="1200397540847" name="charConstant" index="1XhdNS" />
       </concept>
+    </language>
+    <language id="774bf8a0-62e5-41e1-af63-f4812e60e48b" name="jetbrains.mps.baseLanguage.checkedDots">
+      <concept id="4079382982702596667" name="jetbrains.mps.baseLanguage.checkedDots.structure.CheckedDotExpression" flags="nn" index="2EnYce" />
     </language>
     <language id="fd392034-7849-419d-9071-12563d152375" name="jetbrains.mps.baseLanguage.closures">
       <concept id="2524418899405758586" name="jetbrains.mps.baseLanguage.closures.structure.InferredClosureParameterDeclaration" flags="ig" index="gl6BB" />
@@ -2173,35 +2177,20 @@
         </node>
         <node concept="3clFbJ" id="3FexrMiQkhV" role="3cqZAp">
           <node concept="3clFbS" id="3FexrMiQkhX" role="3clFbx">
-            <node concept="3clFbF" id="3FexrMiQnAl" role="3cqZAp">
-              <node concept="2OqwBi" id="3FexrMiQnAm" role="3clFbG">
-                <node concept="2YIFZM" id="3FexrMiQnAn" role="2Oq$k0">
-                  <ref role="37wK5l" to="kz9k:~NavigationSupport.getInstance()" resolve="getInstance" />
-                  <ref role="1Pybhc" to="kz9k:~NavigationSupport" resolve="NavigationSupport" />
+            <node concept="3clFbF" id="2IGlXwex9QO" role="3cqZAp">
+              <node concept="2EnYce" id="2IGlXwexd6P" role="3clFbG">
+                <node concept="2OqwBi" id="2IGlXwexa06" role="2Oq$k0">
+                  <node concept="37vLTw" id="2IGlXwex9QM" role="2Oq$k0">
+                    <ref role="3cqZAo" node="4150e4Ibu0X" resolve="ctx" />
+                  </node>
+                  <node concept="liA8E" id="2IGlXwexafM" role="2OqNvi">
+                    <ref role="37wK5l" to="cj4x:~EditorContext.getEditorPanelManager()" resolve="getEditorPanelManager" />
+                  </node>
                 </node>
-                <node concept="liA8E" id="3FexrMiQnAo" role="2OqNvi">
-                  <ref role="37wK5l" to="kz9k:~NavigationSupport.openNode(jetbrains.mps.project.Project,org.jetbrains.mps.openapi.model.SNode,boolean,boolean)" resolve="openNode" />
-                  <node concept="2OqwBi" id="3FexrMiQnAp" role="37wK5m">
-                    <node concept="2OqwBi" id="3FexrMiQnAq" role="2Oq$k0">
-                      <node concept="37vLTw" id="4150e4Ibu6p" role="2Oq$k0">
-                        <ref role="3cqZAo" node="4150e4Ibu0X" resolve="ctx" />
-                      </node>
-                      <node concept="liA8E" id="3FexrMiQnAs" role="2OqNvi">
-                        <ref role="37wK5l" to="cj4x:~EditorContext.getOperationContext()" resolve="getOperationContext" />
-                      </node>
-                    </node>
-                    <node concept="liA8E" id="3FexrMiQnAt" role="2OqNvi">
-                      <ref role="37wK5l" to="w1kc:~IOperationContext.getProject()" resolve="getProject" />
-                    </node>
-                  </node>
-                  <node concept="37vLTw" id="3FexrMiQnMo" role="37wK5m">
+                <node concept="liA8E" id="2IGlXwexdrY" role="2OqNvi">
+                  <ref role="37wK5l" to="cj4x:~EditorPanelManager.openAndSelect(org.jetbrains.mps.openapi.model.SNode)" resolve="openAndSelect" />
+                  <node concept="37vLTw" id="2IGlXwexduO" role="37wK5m">
                     <ref role="3cqZAo" node="3FexrMiQnls" resolve="sn" />
-                  </node>
-                  <node concept="3clFbT" id="3FexrMiQnAx" role="37wK5m">
-                    <property role="3clFbU" value="true" />
-                  </node>
-                  <node concept="3clFbT" id="3FexrMiQnAy" role="37wK5m">
-                    <property role="3clFbU" value="true" />
                   </node>
                 </node>
               </node>
