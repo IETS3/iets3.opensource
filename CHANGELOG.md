@@ -6,16 +6,20 @@ Format of the log is _loosely_ based on [Keep a Changelog](https://keepachangelo
 The project does _not_ follow Semantic Versioning and the changes are documented in reverse chronological order, grouped by calendar month.
 
 ## August 2026
+
 ### Fixed
 - Improve uniqueness name check of `IFunctionLike` `getUniquelyNamedElements()` behavior to avoid overzealous checking.
+- Variability: Feature attribute values are not overwritten anymore if the value stays the same. This avoids changing the model if not necessary, esp. it avoids merge conflicts.
 
 ## July 2026
+
 ### Added
 - IFunctionLike takes arguments and named body content into account when performing ab uniqueness name check
 - Developer tooling: the repository now ships an `iets3-os-developer` agent skill (under `.claude/skills/`) capturing repo-specific MPS language-engineering knowledge (variability, KernelF, physical units) for AI-assisted development with Claude Code.
 
 ### Fixed
 - Variability: `EvalVarPointCache.flushCaches()` was a no-op when the variability-aware artifact (IVAA) was implemented as a node attribute (annotation).
+
 
 ## June 2026
 
