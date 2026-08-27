@@ -19,22 +19,20 @@ import java.util.Collection;
 import jetbrains.mps.baseLanguage.logging.rt.LogContext;
 import java.util.Collections;
 import org.iets3.core.base.behavior.ICanStoreCheckResult__BehaviorDescriptor;
-import org.apache.commons.lang3.tuple.Pair;
-import jetbrains.mps.internal.collections.runtime.CollectionSequence;
+import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
+import org.jetbrains.mps.openapi.language.SAbstractConcept;
+import jetbrains.mps.internal.collections.runtime.Sequence;
 import org.iets3.variability.configuration.base.behavior.SolverRelevantDataHashing;
 import org.iets3.core.base.behavior.ICanRunCheckManually__BehaviorDescriptor;
 import org.iets3.analysis.base.plugin.AsyncSolverTaskExecutor;
 import org.iets3.analysis.solversupport.util.plugin.ISolvableSettingsModel;
-import java.util.Map;
 import jetbrains.mps.internal.collections.runtime.ListSequence;
 import org.iets3.variability.configuration.base.behavior.AbstractFeatureConfiguration__BehaviorDescriptor;
 import jetbrains.mps.smodel.SNodeMatcher;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
+import java.util.Map;
 import org.iets3.analysis.solversupport.util.plugin.FixedValueCategory;
-import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
-import org.jetbrains.mps.openapi.language.SAbstractConcept;
 import org.iets3.variability.configuration.base.behavior.FeatureAttributeAssignment__BehaviorDescriptor;
-import jetbrains.mps.internal.collections.runtime.Sequence;
 import org.iets3.core.base.behavior.IDetectNeedToRunManually__BehaviorDescriptor;
 import org.iets3.variability.configuration.base.behavior.ConfigRelationFinder;
 import org.iets3.analysis.base.behavior.ISolvable__BehaviorDescriptor;
@@ -42,9 +40,11 @@ import org.iets3.analysis.base.behavior.AbstractSolverTask__BehaviorDescriptor;
 import org.jetbrains.mps.openapi.language.SEnumerationLiteral;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SEnumOperations;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
+import org.apache.commons.lang3.tuple.Pair;
+import jetbrains.mps.internal.collections.runtime.CollectionSequence;
 import org.jetbrains.mps.openapi.language.SProperty;
-import org.jetbrains.mps.openapi.language.SContainmentLink;
 import org.jetbrains.mps.openapi.language.SConcept;
+import org.jetbrains.mps.openapi.language.SContainmentLink;
 
 /**
  * Provides functionality for checking constraints of a FMC and deriving values (SelectionStates, AttributeValues) 
@@ -54,6 +54,7 @@ public class ConfigurationSolverFacade {
   private static final Logger LOG = Logger.getLogger(ConfigurationSolverFacade.class);
 
   protected final SNode fmc;
+
   public ConfigurationSolverFacade(SNode fmc) {
     this.fmc = fmc;
   }
@@ -144,12 +145,13 @@ public class ConfigurationSolverFacade {
   private Collection<CompletableFuture<List<IResult>>> updateSelectionsAttributeAssignments(final MpsActions mpsAction, final Collection<IResult> allChecks, final ConfigFixedValues configFixedValues) {
     if (needsUpdate(mpsAction, configFixedValues)) {
       mpsAction.commandAction(() -> {
+        AssignmentValueMap valuesBeforeUnset = new AssignmentValueMap(SNodeOperations.getNodeDescendants(fmc, CONCEPTS.FeatureAttributeAssignment$1f, false, new SAbstractConcept[]{}));
         ConfigurationSolverFacade.this.updateConfig(configFixedValues);
 
-        Collection<Pair<SNode, SNode>> expressionForFeatureAttributeAssignmentAlreadySet = configFixedValues.expressionForFeatureAttributeAssignment();
+        AssignmentValueList expressionForAttributeAssignmentAlreadySet = configFixedValues.expressionForAttributeAssignment();
 
-        List<SNode> faas = CollectionSequence.fromCollection(expressionForFeatureAttributeAssignmentAlreadySet).select((it) -> it.getValue()).toList();
-        optimizeDefaultAttributes(allChecks, faas);
+        List<SNode> faas = Sequence.fromIterable(expressionForAttributeAssignmentAlreadySet.assignments()).toList();
+        optimizeDefaultAttributes(allChecks, faas, valuesBeforeUnset);
 
         mpsAction.writeAction(new Runnable() {
           @Override
@@ -177,9 +179,9 @@ public class ConfigurationSolverFacade {
    * it might be the case that not all default values for attributes can be set. 
    * 
    * @param allChecks  
-   * @param expressionForFeatureAttributeAssignmentAlreadySet  
+   * @param expressionForAttributeAssignmentAlreadySet  
    */
-  protected void optimizeDefaultAttributes(Collection<IResult> allChecks, List<SNode> expressionForFeatureAttributeAssignmentAlreadySet) {
+  protected void optimizeDefaultAttributes(Collection<IResult> allChecks, List<SNode> expressionForAttributeAssignmentAlreadySet, AssignmentValueMap valuesBeforeUnset) {
   }
 
   private CompletableFuture<List<IResult>> runSolvableAsync(MpsActions actions) {
@@ -235,9 +237,9 @@ public class ConfigurationSolverFacade {
 
   private boolean hasAttributeValueChanged(ConfigFixedValues configFixedValues) {
     // check if some to a attribute assigned value changed
-    final Map<SNode, SNode> attributeAssignment2Expression = configFixedValues.mapOfAttributeAssignmentToFixedValue();
+    final AssignmentValueMap attributeAssignment2Expr = configFixedValues.expressionForAttributeAssignment().asMap();
     return ListSequence.fromList(AbstractFeatureConfiguration__BehaviorDescriptor.allAttributeAssignments_id58DfSnqtfhS.invoke(fmc)).any((attrAssign) -> {
-      SNode newExpr = attributeAssignment2Expression.get(attrAssign);
+      SNode newExpr = attributeAssignment2Expr.get(attrAssign);
       return (newExpr != null ? !(new SNodeMatcher().match(SLinkOperations.getTarget(attrAssign, LINKS.value$kgDc), newExpr)) : SLinkOperations.getTarget(attrAssign, LINKS.value$kgDc) != null);
     });
   }
@@ -257,11 +259,13 @@ public class ConfigurationSolverFacade {
     return (ListSequence.fromList(SNodeOperations.getNodeDescendants(fmc, CONCEPTS.AbstractFeatureConfiguration$3P, false, new SAbstractConcept[]{})).any((it) -> (boolean) AbstractFeatureConfiguration__BehaviorDescriptor.hasForcedSelection_id1wdBX7uVtPv.invoke(it)) ? "Forced selection prevents solver success: " + msg : msg);
   }
 
-
-  private void unsetAutomaticAttributeAssignment() {
+  private void unsetAutomaticAttributeAssignment(ConfigFixedValues configFixedValues) {
+    final AssignmentValueMap newValues = configFixedValues.expressionForAttributeAssignment().asMap();
     ListSequence.fromList(SNodeOperations.getNodeDescendants(fmc, CONCEPTS.FeatureAttributeAssignment$1f, false, new SAbstractConcept[]{})).where((it) -> (boolean) FeatureAttributeAssignment__BehaviorDescriptor.automatic_idzJQZm70xzm.invoke(it)).visitAll((it) -> {
-      SLinkOperations.setTarget(it, LINKS.value$kgDc, null);
-      FeatureAttributeAssignment__BehaviorDescriptor.unsetAutomatic_id6jw22F99kPS.invoke(it);
+      if ((newValues.get(it) == null)) {
+        SLinkOperations.setTarget(it, LINKS.value$kgDc, null);
+        FeatureAttributeAssignment__BehaviorDescriptor.unsetAutomatic_id6jw22F99kPS.invoke(it);
+      }
     });
 
   }
@@ -279,7 +283,7 @@ public class ConfigurationSolverFacade {
     });
     SPropertyOperations.assign(fmc, PROPS.complete$4SB6, false);
     this.forcedChoiceToUserChoice();
-    this.unsetAutomaticAttributeAssignment();
+    this.unsetAutomaticAttributeAssignment(configFixedValues);
 
     updateState(configFixedValues);
     IDetectNeedToRunManually__BehaviorDescriptor.updateHash_id6MJy$PGs_q4.invoke(this.fmc);
@@ -319,7 +323,7 @@ public class ConfigurationSolverFacade {
     Collection<Pair<FixedValueCategory, SNode>> valuesForSelectionState = fv.fixedValueCategoryForSelectionState();
     adoptConfigSelectionStates(valuesForSelectionState);
 
-    CommonBaseUtil.setAttributes(fv.expressionForFeatureAttributeAssignment());
+    CommonBaseUtil.setAttributes(fv.expressionForAttributeAssignment());
   }
 
   private static void adoptConfigSelectionStates(Collection<Pair<FixedValueCategory, SNode>> valuesForSelectionState) {
@@ -340,13 +344,13 @@ public class ConfigurationSolverFacade {
     /*package*/ static final SProperty complete$4SB6 = MetaAdapterFactory.getProperty(0x71226ee2bbc445d2L, 0xa41d20b97237156cL, 0x5cf5c0d0479ec915L, 0x427f472315a4eeb9L, "complete");
   }
 
-  private static final class LINKS {
-    /*package*/ static final SContainmentLink value$kgDc = MetaAdapterFactory.getContainmentLink(0x71226ee2bbc445d2L, 0xa41d20b97237156cL, 0x302aa0c2ddc5ae16L, 0x302aa0c2ddd1e2aaL, "value");
+  private static final class CONCEPTS {
+    /*package*/ static final SConcept FeatureAttributeAssignment$1f = MetaAdapterFactory.getConcept(0x71226ee2bbc445d2L, 0xa41d20b97237156cL, 0x302aa0c2ddc5ae16L, "org.iets3.variability.configuration.base.structure.FeatureAttributeAssignment");
+    /*package*/ static final SConcept AbstractFeatureConfiguration$3P = MetaAdapterFactory.getConcept(0x71226ee2bbc445d2L, 0xa41d20b97237156cL, 0x302aa0c2ddab8940L, "org.iets3.variability.configuration.base.structure.AbstractFeatureConfiguration");
+    /*package*/ static final SConcept FeatureConfiguration$x2 = MetaAdapterFactory.getConcept(0x71226ee2bbc445d2L, 0xa41d20b97237156cL, 0x5cf5c0d0479ec91dL, "org.iets3.variability.configuration.base.structure.FeatureConfiguration");
   }
 
-  private static final class CONCEPTS {
-    /*package*/ static final SConcept AbstractFeatureConfiguration$3P = MetaAdapterFactory.getConcept(0x71226ee2bbc445d2L, 0xa41d20b97237156cL, 0x302aa0c2ddab8940L, "org.iets3.variability.configuration.base.structure.AbstractFeatureConfiguration");
-    /*package*/ static final SConcept FeatureAttributeAssignment$1f = MetaAdapterFactory.getConcept(0x71226ee2bbc445d2L, 0xa41d20b97237156cL, 0x302aa0c2ddc5ae16L, "org.iets3.variability.configuration.base.structure.FeatureAttributeAssignment");
-    /*package*/ static final SConcept FeatureConfiguration$x2 = MetaAdapterFactory.getConcept(0x71226ee2bbc445d2L, 0xa41d20b97237156cL, 0x5cf5c0d0479ec91dL, "org.iets3.variability.configuration.base.structure.FeatureConfiguration");
+  private static final class LINKS {
+    /*package*/ static final SContainmentLink value$kgDc = MetaAdapterFactory.getContainmentLink(0x71226ee2bbc445d2L, 0xa41d20b97237156cL, 0x302aa0c2ddc5ae16L, 0x302aa0c2ddd1e2aaL, "value");
   }
 }
