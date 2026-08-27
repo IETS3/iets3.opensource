@@ -672,7 +672,7 @@
                 <ref role="3xOPvv" node="G2E4WsqSLF" resolve="assignX" />
               </node>
               <node concept="3TrEf2" id="G2E4WssHHU" role="2OqNvi">
-                <ref role="3Tt5mk" to="4ndm:30ECcbtOuaE" />
+                <ref role="3Tt5mk" to="4ndm:30ECcbtOuaE" resolve="value" />
               </node>
             </node>
           </node>
@@ -774,7 +774,7 @@
                 <ref role="3xOPvv" node="G2E4WsqSLF" resolve="assignX" />
               </node>
               <node concept="3TrEf2" id="G2E4WssHIw" role="2OqNvi">
-                <ref role="3Tt5mk" to="4ndm:30ECcbtOuaE" />
+                <ref role="3Tt5mk" to="4ndm:30ECcbtOuaE" resolve="value" />
               </node>
             </node>
           </node>
