@@ -869,37 +869,44 @@
       <node id="3188779879054093556" at="41,86,42,66" concept="11" />
       <node id="3188779879054083683" at="42,66,43,178" concept="10" />
       <node id="3188779879054090933" at="47,5,48,16" concept="10" />
-      <node id="8045029366684193092" at="56,98,57,65" concept="4" />
-      <node id="3188779879054068763" at="60,103,61,76" concept="9" />
-      <node id="3188779879054068763" at="61,76,62,76" concept="4" />
-      <node id="3188779879054068763" at="62,76,63,68" concept="4" />
-      <node id="3188779879054068763" at="63,68,64,26" concept="10" />
-      <node id="3255940176392007035" at="68,0,69,0" concept="13" trace="attribute$J5jI" />
-      <node id="3255940176392007035" at="69,0,70,0" concept="13" trace="type$mJNs" />
-      <node id="3255940176392007035" at="70,0,71,0" concept="13" trace="value$kgDc" />
-      <node id="3255940176392007035" at="71,0,72,0" concept="13" trace="expr$CW3E" />
-      <node id="3255940176392007035" at="72,0,73,0" concept="13" trace="tags$Lx_i" />
-      <node id="3255940176392007035" at="76,0,77,0" concept="13" trace="FeatureAttribute$en" />
-      <node id="3255940176392007035" at="77,0,78,0" concept="13" trace="UnitSpecification$6j" />
-      <node id="3255940176392007035" at="78,0,79,0" concept="13" trace="TaggedExpression$jU" />
-      <node id="3255940176392007035" at="79,0,80,0" concept="13" trace="Expression$D_" />
-      <node id="3255940176392007035" at="80,0,81,0" concept="13" trace="ITag$EI" />
+      <node id="8045029366684193092" at="56,91,57,65" concept="4" />
+      <node id="6419484303136285756" at="61,69,62,50" concept="10" />
+      <node id="3188779879054068763" at="64,103,65,76" concept="9" />
+      <node id="3188779879054068763" at="65,76,66,76" concept="4" />
+      <node id="3188779879054068763" at="66,76,67,68" concept="4" />
+      <node id="3188779879054068763" at="67,68,68,26" concept="10" />
+      <node id="3255940176392007035" at="72,0,73,0" concept="13" trace="attribute$J5jI" />
+      <node id="3255940176392007035" at="73,0,74,0" concept="13" trace="type$mJNs" />
+      <node id="3255940176392007035" at="74,0,75,0" concept="13" trace="value$kgDc" />
+      <node id="3255940176392007035" at="75,0,76,0" concept="13" trace="expr$CW3E" />
+      <node id="3255940176392007035" at="76,0,77,0" concept="13" trace="tags$Lx_i" />
+      <node id="3255940176392007035" at="80,0,81,0" concept="13" trace="FeatureAttribute$en" />
+      <node id="3255940176392007035" at="81,0,82,0" concept="13" trace="UnitSpecification$6j" />
+      <node id="3255940176392007035" at="82,0,83,0" concept="13" trace="TaggedExpression$jU" />
+      <node id="3255940176392007035" at="83,0,84,0" concept="13" trace="Expression$D_" />
+      <node id="3255940176392007035" at="84,0,85,0" concept="13" trace="ITag$EI" />
       <node id="8045029366684193083" at="55,68,58,5" concept="7" />
+      <node id="6419484303136280520" at="61,0,64,0" concept="14" trace="isStructuralMatch#(Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;)Z" />
       <node id="8045029366700773564" at="27,62,31,7" concept="4" />
       <node id="3188779879054068759" at="40,37,44,11" concept="7" />
       <node id="793381542103952663" at="55,0,60,0" concept="14" trace="setValueIfChanged#(Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;)V" />
       <node id="6809538291476026358" at="27,0,33,0" concept="14" trace="setAttributes#(Lorg/iets3/variability/configuration/base/plugin/AssignmentValueList;)V" />
-      <node id="3188779879054068763" at="60,0,66,0" concept="14" trace="createTaggedExpression_fv6rpr_a1a1a0a2#(Lorg/jetbrains/mps/openapi/model/SNode;Ljava/lang/Iterable;)Lorg/jetbrains/mps/openapi/model/SNode;" />
+      <node id="3188779879054068763" at="64,0,70,0" concept="14" trace="createTaggedExpression_fv6rpr_a1a1a0a2#(Lorg/jetbrains/mps/openapi/model/SNode;Ljava/lang/Iterable;)Lorg/jetbrains/mps/openapi/model/SNode;" />
       <node id="3188779879054068759" at="38,106,45,9" concept="2" />
       <node id="3188779879054068747" at="36,29,46,7" concept="7" />
       <node id="3188779879054068747" at="34,69,47,5" concept="2" />
       <node id="3188779879054050540" at="34,0,50,0" concept="14" trace="attachUnitToExpression#(Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;)Lorg/jetbrains/mps/openapi/model/SNode;" />
-      <scope id="8045029366684193091" at="56,98,57,65" />
+      <scope id="8045029366684193091" at="56,91,57,65" />
+      <scope id="6419484303136280523" at="61,69,62,50" />
       <scope id="8045029366700777461" at="28,33,30,93" />
       <scope id="3188779879054068761" at="41,86,43,178" />
       <scope id="793381542103952675" at="55,68,58,5" />
+      <scope id="6419484303136280520" at="61,0,64,0">
+        <var name="expr1" id="6419484303136282375" />
+        <var name="expr2" id="6419484303136282610" />
+      </scope>
       <scope id="6809538291476026317" at="27,62,31,7" />
-      <scope id="3188779879054068763" at="60,103,64,26">
+      <scope id="3188779879054068763" at="64,103,68,26">
         <var name="n0" id="3188779879054068763" />
       </scope>
       <scope id="3188779879054068759" at="39,9,44,11">
@@ -912,7 +919,7 @@
       <scope id="6809538291476026358" at="27,0,33,0">
         <var name="faas" id="6809538291476026349" />
       </scope>
-      <scope id="3188779879054068763" at="60,0,66,0">
+      <scope id="3188779879054068763" at="64,0,70,0">
         <var name="p0" id="3188779879054068763" />
         <var name="p1" id="3188779879054068763" />
       </scope>
@@ -927,9 +934,9 @@
         <var name="afa" id="3188779879054057172" />
         <var name="expr" id="3188779879054054290" />
       </scope>
-      <unit id="3255940176392007035" at="67,0,74,0" name="org.iets3.variability.configuration.base.plugin.CommonBaseUtil$LINKS" />
-      <unit id="3255940176392007035" at="75,0,82,0" name="org.iets3.variability.configuration.base.plugin.CommonBaseUtil$CONCEPTS" />
-      <unit id="3255940176392007035" at="20,0,83,0" name="org.iets3.variability.configuration.base.plugin.CommonBaseUtil" />
+      <unit id="3255940176392007035" at="71,0,78,0" name="org.iets3.variability.configuration.base.plugin.CommonBaseUtil$LINKS" />
+      <unit id="3255940176392007035" at="79,0,86,0" name="org.iets3.variability.configuration.base.plugin.CommonBaseUtil$CONCEPTS" />
+      <unit id="3255940176392007035" at="20,0,87,0" name="org.iets3.variability.configuration.base.plugin.CommonBaseUtil" />
     </file>
   </root>
   <root nodeRef="r:83d54567-d361-47ca-a949-7374ea89921d(org.iets3.variability.configuration.base.plugin)/4729478301155439532">
@@ -1438,16 +1445,16 @@
     <file name="AssignmentValueMap.java">
       <node id="8045029366681654624" at="19,0,20,0" concept="5" trace="faa2value" />
       <node id="8045029366682988684" at="23,71,24,98" concept="4" />
-      <node id="8045029366699551357" at="29,66,30,126" concept="4" />
+      <node id="8045029366699551357" at="29,69,30,126" concept="4" />
       <node id="8045029366683006865" at="33,31,34,51" concept="10" />
       <node id="8045029366681640729" at="38,0,39,0" concept="13" trace="value$kgDc" />
       <node id="8045029366683591212" at="22,58,25,7" concept="7" />
       <node id="8045029366699539475" at="29,0,32,0" concept="3" trace="AssignmentValueMap#(Ljava/util/Collection;)V" />
       <node id="8045029366683001028" at="33,0,36,0" concept="8" trace="get#(Lorg/jetbrains/mps/openapi/model/SNode;)Lorg/jetbrains/mps/openapi/model/SNode;" />
-      <node id="8045029366682965729" at="21,58,26,7" concept="4" />
+      <node id="8045029366682965729" at="21,61,26,7" concept="4" />
       <node id="8045029366681679427" at="21,0,28,0" concept="3" trace="AssignmentValueMap#(Ljava/lang/Iterable;)V" />
       <scope id="8045029366683591214" at="23,71,24,98" />
-      <scope id="8045029366699539479" at="29,66,30,126" />
+      <scope id="8045029366699539479" at="29,69,30,126" />
       <scope id="8045029366683001031" at="33,31,34,51" />
       <scope id="8045029366682970169" at="22,58,25,7" />
       <scope id="8045029366699539475" at="29,0,32,0">
@@ -1456,7 +1463,7 @@
       <scope id="8045029366683001028" at="33,0,36,0">
         <var name="faa" id="8045029366683003043" />
       </scope>
-      <scope id="8045029366681679431" at="21,58,26,7" />
+      <scope id="8045029366681679431" at="21,61,26,7" />
       <scope id="8045029366681679427" at="21,0,28,0">
         <var name="assignments" id="8045029366682900985" />
       </scope>
@@ -1467,21 +1474,21 @@
   <root nodeRef="r:83d54567-d361-47ca-a949-7374ea89921d(org.iets3.variability.configuration.base.plugin)/8045029366681700277">
     <file name="AssignmentValueList.java">
       <node id="8045029366681714427" at="15,0,16,0" concept="5" trace="items" />
-      <node id="8045029366681814683" at="17,32,18,77" concept="4" />
+      <node id="8045029366681814683" at="17,35,18,77" concept="4" />
       <node id="8045029366703408566" at="21,65,22,54" concept="4" />
-      <node id="8045029366699646738" at="25,37,26,41" concept="10" />
-      <node id="8045029366701404517" at="29,40,30,75" concept="10" />
-      <node id="8045029366700397124" at="33,92,34,97" concept="4" />
+      <node id="8045029366699646738" at="25,40,26,41" concept="10" />
+      <node id="8045029366701404517" at="29,43,30,75" concept="10" />
+      <node id="8045029366700397124" at="33,95,34,97" concept="4" />
       <node id="8045029366681813546" at="17,0,20,0" concept="3" trace="AssignmentValueList#()V" />
       <node id="8045029366703363935" at="21,0,24,0" concept="3" trace="AssignmentValueList#(Ljava/lang/Iterable;)V" />
       <node id="8045029366699617454" at="25,0,28,0" concept="8" trace="asMap#()Lorg/iets3/variability/configuration/base/plugin/AssignmentValueMap;" />
       <node id="8045029366701391062" at="29,0,32,0" concept="8" trace="assignments#()Ljava/lang/Iterable;" />
       <node id="8045029366700380297" at="33,0,36,0" concept="8" trace="forEach#(Ljetbrains/mps/baseLanguage/closures/runtime/_FunctionTypes/_void_P2_E0;)V" />
-      <scope id="8045029366681813550" at="17,32,18,77" />
+      <scope id="8045029366681813550" at="17,35,18,77" />
       <scope id="8045029366703363939" at="21,65,22,54" />
-      <scope id="8045029366699617457" at="25,37,26,41" />
-      <scope id="8045029366701391065" at="29,40,30,75" />
-      <scope id="8045029366700380300" at="33,92,34,97" />
+      <scope id="8045029366699617457" at="25,40,26,41" />
+      <scope id="8045029366701391065" at="29,43,30,75" />
+      <scope id="8045029366700380300" at="33,95,34,97" />
       <scope id="8045029366681813546" at="17,0,20,0" />
       <scope id="8045029366703363935" at="21,0,24,0">
         <var name="data" id="8045029366703404516" />

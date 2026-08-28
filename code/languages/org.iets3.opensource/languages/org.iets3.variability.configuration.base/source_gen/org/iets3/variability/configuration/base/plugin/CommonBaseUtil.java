@@ -53,9 +53,13 @@ public class CommonBaseUtil {
    * unchanged value keeps its node (and its node id) across solver runs and branches (issue #1921).
    */
   private static void setValueIfChanged(SNode faa, SNode newValue) {
-    if (!(new SNodeMatcher().match(SLinkOperations.getTarget(faa, LINKS.value$kgDc), newValue))) {
+    if (!(isStructuralMatch(SLinkOperations.getTarget(faa, LINKS.value$kgDc), newValue))) {
       SLinkOperations.setTarget(faa, LINKS.value$kgDc, newValue);
     }
+  }
+
+  public static boolean isStructuralMatch(SNode expr1, SNode expr2) {
+    return new SNodeMatcher().match(expr1, expr2);
   }
   private static SNode createTaggedExpression_fv6rpr_a1a1a0a2(SNode p0, Iterable<? extends SNode> p1) {
     SNodeBuilder n0 = new SNodeBuilder().init(CONCEPTS.TaggedExpression$jU);

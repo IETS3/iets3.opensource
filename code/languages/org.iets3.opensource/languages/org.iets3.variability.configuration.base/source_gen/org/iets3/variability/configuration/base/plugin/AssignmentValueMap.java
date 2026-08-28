@@ -18,7 +18,7 @@ public class AssignmentValueMap {
 
   private Map<SNode, SNode> faa2value = MapSequence.fromMap(new LinkedHashMap<>(16, (float) 0.75, false));
 
-  public AssignmentValueMap(Iterable<SNode> assignments) {
+  protected AssignmentValueMap(Iterable<SNode> assignments) {
     Sequence.fromIterable(assignments).visitAll((faa) -> {
       if ((SLinkOperations.getTarget(faa, LINKS.value$kgDc) != null)) {
         MapSequence.fromMap(faa2value).put(faa, SLinkOperations.getTarget(faa, LINKS.value$kgDc));
@@ -26,7 +26,7 @@ public class AssignmentValueMap {
     });
   }
 
-  public AssignmentValueMap(Collection<Pair<SNode, SNode>> data) {
+  protected AssignmentValueMap(Collection<Pair<SNode, SNode>> data) {
     CollectionSequence.fromCollection(data).visitAll((it) -> MapSequence.fromMap(faa2value).put(it.getRight(), it.getLeft()));
   }
 

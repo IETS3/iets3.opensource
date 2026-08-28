@@ -14,7 +14,7 @@ public class AssignmentValueList {
 
   private final List<Pair<SNode, SNode>> items;
 
-  public AssignmentValueList() {
+  protected AssignmentValueList() {
     this.items = ListSequence.fromList(new LinkedList<Pair<SNode, SNode>>());
   }
 
@@ -22,15 +22,15 @@ public class AssignmentValueList {
     this.items = Sequence.fromIterable(data).toList();
   }
 
-  public AssignmentValueMap asMap() {
+  protected AssignmentValueMap asMap() {
     return new AssignmentValueMap(items);
   }
 
-  public Iterable<SNode> assignments() {
+  protected Iterable<SNode> assignments() {
     return ListSequence.fromList(this.items).select((it) -> it.getRight());
   }
 
-  public void forEach(final _FunctionTypes._void_P2_E0<? super SNode, ? super SNode> func) {
+  protected void forEach(final _FunctionTypes._void_P2_E0<? super SNode, ? super SNode> func) {
     ListSequence.fromList(this.items).visitAll((it) -> func.invoke(it.getLeft(), it.getRight()));
   }
 }
