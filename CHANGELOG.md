@@ -5,6 +5,11 @@ All notable changes to this project are documented in this file.
 Format of the log is _loosely_ based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 The project does _not_ follow Semantic Versioning and the changes are documented in reverse chronological order, grouped by calendar month.
 
+## September 2026
+
+### Fixed
+- KernelF: entries in the trace explorer are no longer truncated after a very low character limit, which made traces hard to read. The limit was raised and the tooltip now shows the full, untruncated text.
+
 ## August 2026
 
 ### Fixed
