@@ -10,6 +10,7 @@ The project does _not_ follow Semantic Versioning and the changes are documented
 ### Fixed
 - Improve uniqueness name check of `IFunctionLike` `getUniquelyNamedElements()` behavior to avoid overzealous checking.
 - Variability: Feature attribute values are not overwritten anymore if the value stays the same. This avoids changing the model if not necessary, esp. it avoids merge conflicts.
+- KernelF: Consistent usage of indent layout in Expression concepts.
 
 ## July 2026
 
