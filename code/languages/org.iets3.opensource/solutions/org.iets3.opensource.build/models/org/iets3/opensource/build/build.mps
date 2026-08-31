@@ -17183,6 +17183,31 @@
             <ref role="3bR37D" node="4O1MtdoYzuV" resolve="test.org.iets3.variability.configuration.base.ext" />
           </node>
         </node>
+        <node concept="1SiIV0" id="4ntddbsMW1H" role="3bR37C">
+          <node concept="3bR9La" id="4ntddbsMW1I" role="1SiIV1">
+            <ref role="3bR37D" node="5wLtKNeSRPD" resolve="org.iets3.core.expr.base" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="4ntddbsMW1J" role="3bR37C">
+          <node concept="3bR9La" id="4ntddbsMW1K" role="1SiIV1">
+            <ref role="3bR37D" to="ffeo:mXGwHwhVPj" resolve="JDK" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="4ntddbsMW1L" role="3bR37C">
+          <node concept="3bR9La" id="4ntddbsMW1M" role="1SiIV1">
+            <ref role="3bR37D" to="90a9:3$A0JaN5bpX" resolve="MPS.ThirdParty" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="4ntddbsMW1N" role="3bR37C">
+          <node concept="3bR9La" id="4ntddbsMW1O" role="1SiIV1">
+            <ref role="3bR37D" to="90a9:PE3B26QCrP" resolve="org.apache.commons" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="4ntddbsMW1P" role="3bR37C">
+          <node concept="3bR9La" id="4ntddbsMW1Q" role="1SiIV1">
+            <ref role="3bR37D" to="ffeo:1xb0AuwN7WS" resolve="JUnit" />
+          </node>
+        </node>
       </node>
       <node concept="1E1JtA" id="7tVUji9MfSt" role="2G$12L">
         <property role="BnDLt" value="true" />
