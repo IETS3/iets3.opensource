@@ -87,6 +87,10 @@ public class date_Test extends BaseTransformationTest {
     new TestBody(this).dateComparison_item16_717638518057675941();
   }
   @Test
+  public void dateComparison_item18_2744118490429313054() throws Throwable {
+    new TestBody(this).dateComparison_item18_2744118490429313054();
+  }
+  @Test
   public void dateDeltas_item0_8266215269006406384() throws Throwable {
     new TestBody(this).dateDeltas_item0_8266215269006406384();
   }
@@ -305,6 +309,10 @@ public class date_Test extends BaseTransformationTest {
   @Test
   public void dateRangeBounds_item3_8266215269010184013() throws Throwable {
     new TestBody(this).dateRangeBounds_item3_8266215269010184013();
+  }
+  @Test
+  public void dateRangeBounds_item4_2744118490428638012() throws Throwable {
+    new TestBody(this).dateRangeBounds_item4_2744118490428638012();
   }
   @Test
   public void dateRangeIteration_item0_8266215269007161853() throws Throwable {
@@ -1497,6 +1505,15 @@ public class date_Test extends BaseTransformationTest {
         }
       });
     }
+    public void dateComparison_item18_2744118490429313054() throws Exception {
+      runWithinCommand(new BaseTestBody.ExceptionRunnable() {
+        @Override
+        public void run() throws Exception {
+          SNode ti = SNodeOperations.cast(getRealNodeById("2744118490429313054"), CONCEPTS.AbstractTestItem$9u);
+          TestRunner.doExecuteTest(ti);
+        }
+      });
+    }
     public void dateDeltas_item0_8266215269006406384() throws Exception {
       runWithinCommand(new BaseTestBody.ExceptionRunnable() {
         @Override
@@ -1988,6 +2005,15 @@ public class date_Test extends BaseTransformationTest {
         @Override
         public void run() throws Exception {
           SNode ti = SNodeOperations.cast(getRealNodeById("8266215269010184013"), CONCEPTS.AbstractTestItem$9u);
+          TestRunner.doExecuteTest(ti);
+        }
+      });
+    }
+    public void dateRangeBounds_item4_2744118490428638012() throws Exception {
+      runWithinCommand(new BaseTestBody.ExceptionRunnable() {
+        @Override
+        public void run() throws Exception {
+          SNode ti = SNodeOperations.cast(getRealNodeById("2744118490428638012"), CONCEPTS.AbstractTestItem$9u);
           TestRunner.doExecuteTest(ti);
         }
       });

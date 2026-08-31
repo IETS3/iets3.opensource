@@ -18,6 +18,7 @@ import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
 import org.jetbrains.mps.openapi.model.SNode;
 import com.mbeddr.mpsutil.grammarcells.runtime.GrammarCellsUtil;
 import jetbrains.mps.openapi.editor.EditorContext;
+import org.iets3.core.expr.base.plugin.EditorCustomizationConfigHelper;
 import com.mbeddr.mpsutil.grammarcells.runtime.FlagSubstituteMenuItem;
 import com.mbeddr.mpsutil.grammarcells.runtime.DefaultFlagModelAccess;
 import org.jetbrains.annotations.Nullable;
@@ -76,6 +77,11 @@ public class GrammarActionsDescriptor extends AbstractGrammarActionDescriptor im
               for (final SAbstractConcept subconcept : GrammarCellsUtil.getVisibleSubconceptsNonAbstract(outputConcept, _context.getModel(), Function_Editor.class, _context.getEditorContext())) {
                 EditorContext editorContext = _context.getEditorContext();
                 boolean applicable = GrammarCellsUtil.canBeChild(subconcept, _context);
+                applicable &= new Object() {
+                  public boolean query() {
+                    return EditorCustomizationConfigHelper.getConfig().isFlagCellSubstitutionActivated(EditorCustomizationConfigHelper.getIdentifier(CONCEPTS.Function$iC, PROPS.ext$atYv), subconcept, substitutedNode, parentNode, editorContext);
+                  }
+                }.query();
                 if (applicable) {
                   ListSequence.fromList(result).addElement(new FlagSubstituteMenuItem(parentNode, _context.getCurrentTargetNode(), subconcept, "ext", _context, new DefaultFlagModelAccess(PROPS.ext$atYv)) {
                     @Nullable
@@ -83,7 +89,8 @@ public class GrammarActionsDescriptor extends AbstractGrammarActionDescriptor im
                     public String getDescriptionText(@NotNull String pattern) {
                       String originalText = super.getDescriptionText(pattern);
                       EditorContext editorContext = _context.getEditorContext();
-                      return "extension function";
+                      String descriptiontext = EditorCustomizationConfigHelper.getConfig().getFlagCellDescriptionText(EditorCustomizationConfigHelper.getIdentifier(CONCEPTS.Function$iC, PROPS.ext$atYv), originalText, editorContext);
+                      return ((descriptiontext != null && descriptiontext.length() > 0) ? descriptiontext : "an extension function");
                     }
                   });
                 }
@@ -108,12 +115,26 @@ public class GrammarActionsDescriptor extends AbstractGrammarActionDescriptor im
 
                 if (SConceptOperations.isSubConceptOf(SNodeOperations.asSConcept(outputConcept), SNodeOperations.asSConcept(expectedOutputConcept))) {
                   boolean isApplicable = GrammarCellsUtil.canBeChild(subconcept, _context);
+                  isApplicable &= new Object() {
+                    public boolean query(SAbstractConcept expectedConcept) {
+                      return EditorCustomizationConfigHelper.getConfig().isWrapperCellSubstitutionActivated(EditorCustomizationConfigHelper.getIdentifier(CONCEPTS.RecordMember$l3, PROPS.name$MnvL), expectedConcept, null, null);
+                    }
+                  }.query(expectedOutputConcept);
                   if (isApplicable) {
                     ListSequence.fromList(result).addElement(new GrammarCellsSubstituteMenuItem(_context) {
                       private SProperty myProperty = PROPS.name$MnvL;
 
                       public String getMatchingText(String pattern) {
                         return pattern;
+                      }
+                      @Override
+                      public String getDescriptionText(@NotNull String pattern) {
+                        String originalText = super.getDescriptionText(pattern);
+                        SNode wrappedNode = null;
+                        SAbstractConcept wrappedConcept = getOutputConcept();
+                        EditorContext editorContext = _context.getEditorContext();
+                        String descriptiontext = EditorCustomizationConfigHelper.getConfig().getWrapperCellSubstitutionDescriptionText(EditorCustomizationConfigHelper.getIdentifier(CONCEPTS.RecordMember$l3, PROPS.name$MnvL), wrappedNode, wrappedConcept, subconcept, originalText, editorContext);
+                        return ((descriptiontext != null && descriptiontext.length() > 0) ? descriptiontext : originalText);
                       }
                       @Override
                       public boolean canExecute(@NotNull String pattern) {
@@ -132,6 +153,11 @@ public class GrammarActionsDescriptor extends AbstractGrammarActionDescriptor im
                         SNode newNode = SNodeFactoryOperations.createNewNode(expectedOutputConceptExactly, null);
                         SPropertyOperations.assign(newNode, PROPS.name$MnvL, GrammarCellsUtil.toInternalPropertyValue(myProperty, pattern));
 
+                        new Object() {
+                          public void postProcess(SNode node, EditorContext editorContext, SNode parentNode) {
+                            EditorCustomizationConfigHelper.getConfig().wrapperCellSubstitutionPostProcess(EditorCustomizationConfigHelper.getIdentifier(CONCEPTS.RecordMember$l3, PROPS.name$MnvL), node, editorContext);
+                          }
+                        }.postProcess(newNode, _context.getEditorContext(), _context.getParentNode());
                         return newNode;
                       }
 
@@ -187,12 +213,26 @@ public class GrammarActionsDescriptor extends AbstractGrammarActionDescriptor im
 
                 if (SConceptOperations.isSubConceptOf(SNodeOperations.asSConcept(outputConcept), SNodeOperations.asSConcept(expectedOutputConcept))) {
                   boolean isApplicable = GrammarCellsUtil.canBeChild(subconcept, _context);
+                  isApplicable &= new Object() {
+                    public boolean query(SAbstractConcept expectedConcept) {
+                      return EditorCustomizationConfigHelper.getConfig().isWrapperCellSubstitutionActivated(EditorCustomizationConfigHelper.getIdentifier(CONCEPTS.EnumLiteral$S9, PROPS.name$MnvL), expectedConcept, null, null);
+                    }
+                  }.query(expectedOutputConcept);
                   if (isApplicable) {
                     ListSequence.fromList(result).addElement(new GrammarCellsSubstituteMenuItem(_context) {
                       private SProperty myProperty = PROPS.name$MnvL;
 
                       public String getMatchingText(String pattern) {
                         return pattern;
+                      }
+                      @Override
+                      public String getDescriptionText(@NotNull String pattern) {
+                        String originalText = super.getDescriptionText(pattern);
+                        SNode wrappedNode = null;
+                        SAbstractConcept wrappedConcept = getOutputConcept();
+                        EditorContext editorContext = _context.getEditorContext();
+                        String descriptiontext = EditorCustomizationConfigHelper.getConfig().getWrapperCellSubstitutionDescriptionText(EditorCustomizationConfigHelper.getIdentifier(CONCEPTS.EnumLiteral$S9, PROPS.name$MnvL), wrappedNode, wrappedConcept, subconcept, originalText, editorContext);
+                        return ((descriptiontext != null && descriptiontext.length() > 0) ? descriptiontext : originalText);
                       }
                       @Override
                       public boolean canExecute(@NotNull String pattern) {
@@ -211,6 +251,11 @@ public class GrammarActionsDescriptor extends AbstractGrammarActionDescriptor im
                         SNode newNode = SNodeFactoryOperations.createNewNode(expectedOutputConceptExactly, null);
                         SPropertyOperations.assign(newNode, PROPS.name$MnvL, GrammarCellsUtil.toInternalPropertyValue(myProperty, pattern));
 
+                        new Object() {
+                          public void postProcess(SNode node, EditorContext editorContext, SNode parentNode) {
+                            EditorCustomizationConfigHelper.getConfig().wrapperCellSubstitutionPostProcess(EditorCustomizationConfigHelper.getIdentifier(CONCEPTS.EnumLiteral$S9, PROPS.name$MnvL), node, editorContext);
+                          }
+                        }.postProcess(newNode, _context.getEditorContext(), _context.getParentNode());
                         return newNode;
                       }
 
@@ -250,12 +295,26 @@ public class GrammarActionsDescriptor extends AbstractGrammarActionDescriptor im
 
                 if (SConceptOperations.isSubConceptOf(SNodeOperations.asSConcept(outputConcept), SNodeOperations.asSConcept(expectedOutputConcept))) {
                   boolean isApplicable = GrammarCellsUtil.canBeChild(subconcept, _context);
+                  isApplicable &= new Object() {
+                    public boolean query(SAbstractConcept expectedConcept) {
+                      return EditorCustomizationConfigHelper.getConfig().isWrapperCellSubstitutionActivated(EditorCustomizationConfigHelper.getIdentifier(CONCEPTS.ProjectMember$2l, PROPS.name$MnvL), expectedConcept, null, null);
+                    }
+                  }.query(expectedOutputConcept);
                   if (isApplicable) {
                     ListSequence.fromList(result).addElement(new GrammarCellsSubstituteMenuItem(_context) {
                       private SProperty myProperty = PROPS.name$MnvL;
 
                       public String getMatchingText(String pattern) {
                         return pattern;
+                      }
+                      @Override
+                      public String getDescriptionText(@NotNull String pattern) {
+                        String originalText = super.getDescriptionText(pattern);
+                        SNode wrappedNode = null;
+                        SAbstractConcept wrappedConcept = getOutputConcept();
+                        EditorContext editorContext = _context.getEditorContext();
+                        String descriptiontext = EditorCustomizationConfigHelper.getConfig().getWrapperCellSubstitutionDescriptionText(EditorCustomizationConfigHelper.getIdentifier(CONCEPTS.ProjectMember$2l, PROPS.name$MnvL), wrappedNode, wrappedConcept, subconcept, originalText, editorContext);
+                        return ((descriptiontext != null && descriptiontext.length() > 0) ? descriptiontext : originalText);
                       }
                       @Override
                       public boolean canExecute(@NotNull String pattern) {
@@ -274,6 +333,11 @@ public class GrammarActionsDescriptor extends AbstractGrammarActionDescriptor im
                         SNode newNode = SNodeFactoryOperations.createNewNode(expectedOutputConceptExactly, null);
                         SPropertyOperations.assign(newNode, PROPS.name$MnvL, GrammarCellsUtil.toInternalPropertyValue(myProperty, pattern));
 
+                        new Object() {
+                          public void postProcess(SNode node, EditorContext editorContext, SNode parentNode) {
+                            EditorCustomizationConfigHelper.getConfig().wrapperCellSubstitutionPostProcess(EditorCustomizationConfigHelper.getIdentifier(CONCEPTS.ProjectMember$2l, PROPS.name$MnvL), node, editorContext);
+                          }
+                        }.postProcess(newNode, _context.getEditorContext(), _context.getParentNode());
                         return newNode;
                       }
 
@@ -335,6 +399,11 @@ public class GrammarActionsDescriptor extends AbstractGrammarActionDescriptor im
                         final EditorContext editorContext = _context.getEditorContext();
                         final SNode smartReferent = ((it instanceof ReferenceScopeSubstituteMenuItem) ? ((SNode) ReflectionUtil.readField(ReferenceScopeSubstituteMenuItem.class, ((ReferenceScopeSubstituteMenuItem) it), "myReferent")) : null);
 
+                        isApplicable &= new Object() {
+                          public boolean query(SAbstractConcept expectedConcept) {
+                            return EditorCustomizationConfigHelper.getConfig().isWrapperCellSubstitutionActivated(EditorCustomizationConfigHelper.getIdentifier(CONCEPTS.RecordTypeAdapter$nb, LINKS.type$MFr_), expectedConcept, wrappedConcept, editorContext);
+                          }
+                        }.query(expectedOutputConcept);
                         return isApplicable;
                       }
                     }).toList();
@@ -354,12 +423,24 @@ public class GrammarActionsDescriptor extends AbstractGrammarActionDescriptor im
                           SLinkOperations.setTarget(wrapper, LINKS.type$MFr_, SNodeOperations.cast(nodeToWrap, CONCEPTS.IRecordType$ka));
                           NodeFactoryManager.setupNode(outputConcept, wrapper, _context.getCurrentTargetNode(), _context.getParentNode(), _context.getModel());
 
+                          new Object() {
+                            public void postprocess(SNode node, EditorContext editorContext, SNode parentNode) {
+                              EditorCustomizationConfigHelper.getConfig().wrapperCellSubstitutionPostProcess(EditorCustomizationConfigHelper.getIdentifier(CONCEPTS.RecordTypeAdapter$nb, LINKS.type$MFr_), node, editorContext);
+                            }
+                          }.postprocess(wrapper, _context.getEditorContext(), _context.getParentNode());
                           return wrapper;
                         }
                         @Override
-                        public String getDescriptionText(@NotNull String pattern) {
-                          String description = it.getDescriptionText(pattern);
-                          return ((description != null && description.length() > 0) ? description : it.getOutputConcept().getName());
+                        public String getDescriptionText(@NotNull final String pattern) {
+                          String originalText = ((_FunctionTypes._return_P0_E0<String>) () -> {
+                            String description = it.getDescriptionText(pattern);
+                            return ((description != null && description.length() > 0) ? description : it.getOutputConcept().getName());
+                          }).invoke();
+                          SNode wrappedNode = null;
+                          SAbstractConcept wrappedConcept = super.getOutputConcept();
+                          EditorContext editorContext = _context.getEditorContext();
+                          String descriptiontext = EditorCustomizationConfigHelper.getConfig().getWrapperCellSubstitutionDescriptionText(EditorCustomizationConfigHelper.getIdentifier(CONCEPTS.RecordTypeAdapter$nb, LINKS.type$MFr_), wrappedNode, wrappedConcept, subconcept, originalText, editorContext);
+                          return ((descriptiontext != null && descriptiontext.length() > 0) ? descriptiontext : originalText);
                         }
                         @Override
                         public SAbstractConcept getOutputConcept() {
@@ -422,6 +503,11 @@ public class GrammarActionsDescriptor extends AbstractGrammarActionDescriptor im
                         final EditorContext editorContext = _context.getEditorContext();
                         final SNode smartReferent = ((it instanceof ReferenceScopeSubstituteMenuItem) ? ((SNode) ReflectionUtil.readField(ReferenceScopeSubstituteMenuItem.class, ((ReferenceScopeSubstituteMenuItem) it), "myReferent")) : null);
 
+                        isApplicable &= new Object() {
+                          public boolean query(SAbstractConcept expectedConcept) {
+                            return EditorCustomizationConfigHelper.getConfig().isWrapperCellSubstitutionActivated(EditorCustomizationConfigHelper.getIdentifier(CONCEPTS.AbstractFunctionAdapter$Ob, LINKS.fun$NLoa), expectedConcept, wrappedConcept, editorContext);
+                          }
+                        }.query(expectedOutputConcept);
                         return isApplicable;
                       }
                     }).toList();
@@ -441,12 +527,24 @@ public class GrammarActionsDescriptor extends AbstractGrammarActionDescriptor im
                           SLinkOperations.setTarget(wrapper, LINKS.fun$NLoa, SNodeOperations.cast(nodeToWrap, CONCEPTS.Function$iC));
                           NodeFactoryManager.setupNode(outputConcept, wrapper, _context.getCurrentTargetNode(), _context.getParentNode(), _context.getModel());
 
+                          new Object() {
+                            public void postprocess(SNode node, EditorContext editorContext, SNode parentNode) {
+                              EditorCustomizationConfigHelper.getConfig().wrapperCellSubstitutionPostProcess(EditorCustomizationConfigHelper.getIdentifier(CONCEPTS.AbstractFunctionAdapter$Ob, LINKS.fun$NLoa), node, editorContext);
+                            }
+                          }.postprocess(wrapper, _context.getEditorContext(), _context.getParentNode());
                           return wrapper;
                         }
                         @Override
-                        public String getDescriptionText(@NotNull String pattern) {
-                          String description = it.getDescriptionText(pattern);
-                          return ((description != null && description.length() > 0) ? description : it.getOutputConcept().getName());
+                        public String getDescriptionText(@NotNull final String pattern) {
+                          String originalText = ((_FunctionTypes._return_P0_E0<String>) () -> {
+                            String description = it.getDescriptionText(pattern);
+                            return ((description != null && description.length() > 0) ? description : it.getOutputConcept().getName());
+                          }).invoke();
+                          SNode wrappedNode = null;
+                          SAbstractConcept wrappedConcept = super.getOutputConcept();
+                          EditorContext editorContext = _context.getEditorContext();
+                          String descriptiontext = EditorCustomizationConfigHelper.getConfig().getWrapperCellSubstitutionDescriptionText(EditorCustomizationConfigHelper.getIdentifier(CONCEPTS.AbstractFunctionAdapter$Ob, LINKS.fun$NLoa), wrappedNode, wrappedConcept, subconcept, originalText, editorContext);
+                          return ((descriptiontext != null && descriptiontext.length() > 0) ? descriptiontext : originalText);
                         }
                         @Override
                         public SAbstractConcept getOutputConcept() {
@@ -509,6 +607,11 @@ public class GrammarActionsDescriptor extends AbstractGrammarActionDescriptor im
                         final EditorContext editorContext = _context.getEditorContext();
                         final SNode smartReferent = ((it instanceof ReferenceScopeSubstituteMenuItem) ? ((SNode) ReflectionUtil.readField(ReferenceScopeSubstituteMenuItem.class, ((ReferenceScopeSubstituteMenuItem) it), "myReferent")) : null);
 
+                        isApplicable &= new Object() {
+                          public boolean query(SAbstractConcept expectedConcept) {
+                            return EditorCustomizationConfigHelper.getConfig().isWrapperCellSubstitutionActivated(EditorCustomizationConfigHelper.getIdentifier(CONCEPTS.AbstractToplevelExprAdapter$eq, LINKS.toplevelExprContent$igxr), expectedConcept, wrappedConcept, editorContext);
+                          }
+                        }.query(expectedOutputConcept);
                         return isApplicable;
                       }
                     }).toList();
@@ -528,12 +631,24 @@ public class GrammarActionsDescriptor extends AbstractGrammarActionDescriptor im
                           SLinkOperations.setTarget(wrapper, LINKS.toplevelExprContent$igxr, SNodeOperations.cast(nodeToWrap, CONCEPTS.IToplevelExprContent$AI));
                           NodeFactoryManager.setupNode(outputConcept, wrapper, _context.getCurrentTargetNode(), _context.getParentNode(), _context.getModel());
 
+                          new Object() {
+                            public void postprocess(SNode node, EditorContext editorContext, SNode parentNode) {
+                              EditorCustomizationConfigHelper.getConfig().wrapperCellSubstitutionPostProcess(EditorCustomizationConfigHelper.getIdentifier(CONCEPTS.AbstractToplevelExprAdapter$eq, LINKS.toplevelExprContent$igxr), node, editorContext);
+                            }
+                          }.postprocess(wrapper, _context.getEditorContext(), _context.getParentNode());
                           return wrapper;
                         }
                         @Override
-                        public String getDescriptionText(@NotNull String pattern) {
-                          String description = it.getDescriptionText(pattern);
-                          return ((description != null && description.length() > 0) ? description : it.getOutputConcept().getName());
+                        public String getDescriptionText(@NotNull final String pattern) {
+                          String originalText = ((_FunctionTypes._return_P0_E0<String>) () -> {
+                            String description = it.getDescriptionText(pattern);
+                            return ((description != null && description.length() > 0) ? description : it.getOutputConcept().getName());
+                          }).invoke();
+                          SNode wrappedNode = null;
+                          SAbstractConcept wrappedConcept = super.getOutputConcept();
+                          EditorContext editorContext = _context.getEditorContext();
+                          String descriptiontext = EditorCustomizationConfigHelper.getConfig().getWrapperCellSubstitutionDescriptionText(EditorCustomizationConfigHelper.getIdentifier(CONCEPTS.AbstractToplevelExprAdapter$eq, LINKS.toplevelExprContent$igxr), wrappedNode, wrappedConcept, subconcept, originalText, editorContext);
+                          return ((descriptiontext != null && descriptiontext.length() > 0) ? descriptiontext : originalText);
                         }
                         @Override
                         public SAbstractConcept getOutputConcept() {
@@ -596,6 +711,11 @@ public class GrammarActionsDescriptor extends AbstractGrammarActionDescriptor im
                         final EditorContext editorContext = _context.getEditorContext();
                         final SNode smartReferent = ((it instanceof ReferenceScopeSubstituteMenuItem) ? ((SNode) ReflectionUtil.readField(ReferenceScopeSubstituteMenuItem.class, ((ReferenceScopeSubstituteMenuItem) it), "myReferent")) : null);
 
+                        isApplicable &= new Object() {
+                          public boolean query(SAbstractConcept expectedConcept) {
+                            return EditorCustomizationConfigHelper.getConfig().isWrapperCellSubstitutionActivated(EditorCustomizationConfigHelper.getIdentifier(CONCEPTS.AbstractFunctionLikeAdapter$in, LINKS.functionLike$1qr0), expectedConcept, wrappedConcept, editorContext);
+                          }
+                        }.query(expectedOutputConcept);
                         return isApplicable;
                       }
                     }).toList();
@@ -615,12 +735,24 @@ public class GrammarActionsDescriptor extends AbstractGrammarActionDescriptor im
                           SLinkOperations.setTarget(wrapper, LINKS.functionLike$1qr0, SNodeOperations.cast(nodeToWrap, CONCEPTS.IFunctionLike$t6));
                           NodeFactoryManager.setupNode(outputConcept, wrapper, _context.getCurrentTargetNode(), _context.getParentNode(), _context.getModel());
 
+                          new Object() {
+                            public void postprocess(SNode node, EditorContext editorContext, SNode parentNode) {
+                              EditorCustomizationConfigHelper.getConfig().wrapperCellSubstitutionPostProcess(EditorCustomizationConfigHelper.getIdentifier(CONCEPTS.AbstractFunctionLikeAdapter$in, LINKS.functionLike$1qr0), node, editorContext);
+                            }
+                          }.postprocess(wrapper, _context.getEditorContext(), _context.getParentNode());
                           return wrapper;
                         }
                         @Override
-                        public String getDescriptionText(@NotNull String pattern) {
-                          String description = it.getDescriptionText(pattern);
-                          return ((description != null && description.length() > 0) ? description : it.getOutputConcept().getName());
+                        public String getDescriptionText(@NotNull final String pattern) {
+                          String originalText = ((_FunctionTypes._return_P0_E0<String>) () -> {
+                            String description = it.getDescriptionText(pattern);
+                            return ((description != null && description.length() > 0) ? description : it.getOutputConcept().getName());
+                          }).invoke();
+                          SNode wrappedNode = null;
+                          SAbstractConcept wrappedConcept = super.getOutputConcept();
+                          EditorContext editorContext = _context.getEditorContext();
+                          String descriptiontext = EditorCustomizationConfigHelper.getConfig().getWrapperCellSubstitutionDescriptionText(EditorCustomizationConfigHelper.getIdentifier(CONCEPTS.AbstractFunctionLikeAdapter$in, LINKS.functionLike$1qr0), wrappedNode, wrappedConcept, subconcept, originalText, editorContext);
+                          return ((descriptiontext != null && descriptiontext.length() > 0) ? descriptiontext : originalText);
                         }
                         @Override
                         public SAbstractConcept getOutputConcept() {
