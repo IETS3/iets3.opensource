@@ -1467,8 +1467,12 @@
           <module ref="9a4afe51-f114-4595-b5df-048ce3c596be(jetbrains.mps.runtime)" kind="rt" />
           <module ref="dbe08fb5-334d-4b64-86a0-622406fa0e87(org.iets3.core.expr.base.runtime)" kind="rt" />
           <module ref="63b449db-0918-4a4a-a891-2c430ab133e4(org.junit.junit5)" kind="rt" />
+          <module ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065(JDK)" kind="cl" />
+          <module ref="49808fad-9d41-4b96-83fa-9231640f6b2b(JUnit)" kind="cl" />
           <module ref="c6420b75-4569-420d-aaf7-9bc590ad7b2a(de.itemis.mps.comparator)" kind="cl" />
           <module ref="ecfb9949-7433-4db5-85de-0f84d172e4ce(de.q60.mps.collections.libs)" kind="cl" />
+          <module ref="b0f8641f-bd77-4421-8425-30d9088a82f7(org.apache.commons)" kind="cl" />
+          <module ref="cfaa4966-b7d5-4b69-b66a-309a6e1a7290(org.iets3.core.expr.base)" kind="cl" />
           <module ref="6b277d9a-d52d-416f-a209-1919bd737f50(org.iets3.core.expr.simpleTypes)" kind="cl" />
           <module ref="71226ee2-bbc4-45d2-a41d-20b97237156c(org.iets3.variability.configuration.base)" kind="cl" />
           <module ref="c1fcd3e0-0603-4035-834f-14c6337eec24(test.org.iets3.common.base)" kind="cl" />
@@ -2080,7 +2084,7 @@
     <delete dir="${build.layout}" />
   </target>
   
-  <target name="compileJava" depends="java.compile.test.kernelf.editor, java.compile.test.components.functional, java.compile.test.ex.core.expr.genjava, java.compile.test.iets3.components.toplevel.adapter, java.compile.test.iets3.core.mapping, java.compile.test.iets3.core.tracequery, java.compile.test.iets3.safety.attributes, java.compile.test.in.expr.os, java.compile.test.node.expr.os, java.compile.test.org.iets3.analysis.base, java.compile.test.org.iets3.core.comments, java.compile.test.org.iets3.protocol.transport, java.compile.test.org.iets3.variability.configuration.base, java.compile.test.org.iets3.variability.featuremodel.base, java.compile.test.ts.components.core, java.compile.test.ts.components.hardware, java.compile.test.ts.expr.os, java.compile.test.ts.expr.os.comma, java.compile.test.org.iets3.variability.configuration.base.ext, java.compile.test.iest3.component.attribute, java.compile.org.iets3.core.trace.test, java.compile.test.org.iets3.analysis.base.solvable, java.compile.test.ts.expr.os.nix, java.compile.test.ts.expr.os.validNameConcept, java.compile.test.org.iets3.core.expr.typetags.physunits" />
+  <target name="compileJava" depends="java.compile.test.kernelf.editor, java.compile.test.components.functional, java.compile.test.ex.core.expr.genjava, java.compile.test.iets3.components.toplevel.adapter, java.compile.test.iets3.core.mapping, java.compile.test.iets3.core.tracequery, java.compile.test.iets3.safety.attributes, java.compile.test.in.expr.os, java.compile.test.node.expr.os, java.compile.test.org.iets3.analysis.base, java.compile.test.org.iets3.core.comments, java.compile.test.org.iets3.protocol.transport, java.compile.test.org.iets3.variability.configuration.base, java.compile.test.org.iets3.variability.featuremodel.base, java.compile.test.ts.components.core, java.compile.test.ts.components.hardware, java.compile.test.ts.expr.os, java.compile.test.ts.expr.os.comma, java.compile.test.org.iets3.core.expr.typetags.physunits, java.compile.test.org.iets3.variability.configuration.base.ext, java.compile.test.iest3.component.attribute, java.compile.org.iets3.core.trace.test, java.compile.test.org.iets3.analysis.base.solvable, java.compile.test.ts.expr.os.nix, java.compile.test.ts.expr.os.validNameConcept" />
   
   <target name="processResources" />
   
@@ -4122,6 +4126,7 @@
         <fileset file="${artifacts.mps}/plugins/mps-testing/languages/languageDesign/jetbrains.mps.lang.test.matcher.jar" />
         <fileset file="${artifacts.mps}/plugins/mps-testing/languages/languageDesign/jetbrains.mps.lang.test.runtime.jar" />
         <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.traceable.jar" />
+        <fileset file="${artifacts.com.mbeddr.platform}/mps-apache-commons/languages/mps-apache-commons/org.apache.commons.jar" />
         <fileset file="${artifacts.org.iets3.opensource}/org.iets3.core.os/languages/iets3.core.os/org.iets3.analysis.base.jar" />
         <fileset file="${artifacts.org.iets3.opensource}/org.iets3.core.os/languages/iets3.core.os/org.iets3.core.base.jar" />
         <fileset file="${artifacts.org.iets3.opensource}/org.iets3.core.os/languages/iets3.core.os/org.iets3.core.expr.base.jar" />
@@ -4142,6 +4147,13 @@
         <fileset dir="${artifacts.com.mbeddr.platform}/de.q60.mps.collections.libs/lib" includes="trove4j.jar" />
         <fileset dir="${artifacts.com.mbeddr.platform}/de.q60.mps.collections.libs/lib" includes="vavr.jar" />
         <fileset dir="${artifacts.com.mbeddr.platform}/mps-multiline/lib" includes="diff_match_patch.jar" />
+        <fileset dir="${artifacts.com.mbeddr.platform}/mps-apache-commons/lib" includes="commons-csv.jar" />
+        <fileset dir="${artifacts.com.mbeddr.platform}/mps-apache-commons/lib" includes="commons-io.jar" />
+        <fileset dir="${artifacts.com.mbeddr.platform}/mps-apache-commons/lib" includes="commons-lang3.jar" />
+        <fileset dir="${artifacts.com.mbeddr.platform}/mps-apache-commons/lib" includes="commons-math3.jar" />
+        <fileset dir="${artifacts.com.mbeddr.platform}/mps-apache-commons/lib" includes="commons-primitives.jar" />
+        <fileset dir="${artifacts.com.mbeddr.platform}/mps-apache-commons/lib" includes="miglayout-core.jar" />
+        <fileset dir="${artifacts.com.mbeddr.platform}/mps-apache-commons/lib" includes="miglayout-swing.jar" />
         <fileset dir="${artifacts.mps}/plugins/mps-junit5/lib" includes="apiguardian-api-1.1.2.jar" />
         <fileset dir="${artifacts.mps}/plugins/mps-junit5/lib" includes="junit-jupiter-api-5.13.4.jar" />
         <fileset dir="${artifacts.mps}/plugins/mps-junit5/lib" includes="junit-jupiter-engine-5.13.4.jar" />
@@ -4943,6 +4955,131 @@
     </copy>
   </target>
   
+  <target name="java.compile.test.org.iets3.core.expr.typetags.physunits" depends="fetchDependencies">
+    <mkdir dir="${iets3.lang.opensource}/tests/test.org.iets3.core.expr.typetags.physunits/source_gen" />
+    <mkdir dir="${build.tmp}/java/out/test.org.iets3.core.expr.typetags.physunits" />
+    <javac2 destdir="${build.tmp}/java/out/test.org.iets3.core.expr.typetags.physunits" fork="false" encoding="utf8" includeantruntime="false" debug="true" source="1.8" target="1.8">
+      <compilerarg value="-Xlint:none" />
+      <src>
+        <path location="${iets3.lang.opensource}/tests/test.org.iets3.core.expr.typetags.physunits/source_gen" />
+        <pathelement path="${iets3.lang.opensource}/tests/test.org.iets3.core.expr.typetags.physunits/test_gen/" />
+      </src>
+      <classpath>
+        <fileset file="${artifacts.mps}/lib/mps-core.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-platform.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-annotations.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-behavior-api.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-behavior-runtime.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-closures.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-collections.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-openapi.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-tuples.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-references.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-context.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-constraints-runtime.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-editor.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-editor-api.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-editor-runtime.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-environment.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-persistence.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-generator.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-project-check.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-test.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-textgen.jar" />
+        <fileset file="${artifacts.mps}/lib/app.jar" />
+        <fileset file="${artifacts.mps}/lib/app-client.jar" />
+        <fileset file="${artifacts.mps}/lib/lib.jar" />
+        <fileset file="${artifacts.mps}/lib/lib-client.jar" />
+        <fileset file="${artifacts.mps}/lib/util.jar" />
+        <fileset file="${artifacts.mps}/lib/util_rt.jar" />
+        <fileset file="${artifacts.mps}/lib/util-8.jar" />
+        <fileset file="${artifacts.mps}/lib/forms_rt.jar" />
+        <fileset file="${artifacts.mps}/lib/java-frontback.jar" />
+        <fileset file="${artifacts.mps}/lib/jps-model.jar" />
+        <fileset file="${artifacts.mps}/lib/testFramework.jar" />
+        <fileset file="${artifacts.mps}/lib/stats.jar" />
+        <fileset file="${artifacts.mps}/lib/hamcrest.jar" />
+        <fileset file="${artifacts.mps}/lib/platform-loader.jar" />
+        <fileset file="${artifacts.mps}/lib/intellij.libraries.asm.jar" />
+        <fileset file="${artifacts.mps}/lib/intellij.libraries.fastutil.jar" />
+        <fileset file="${artifacts.mps}/lib/intellij.libraries.gson.jar" />
+        <fileset file="${artifacts.mps}/lib/intellij.libraries.kotlinx.collections.immutable.jar" />
+        <fileset file="${artifacts.mps}/lib/intellij.libraries.kotlinx.coroutines.core.jar" />
+        <fileset file="${artifacts.mps}/lib/intellij.libraries.miglayout.swing.jar" />
+        <fileset file="${artifacts.mps}/lib/intellij.libraries.netty.buffer.jar" />
+        <fileset file="${artifacts.mps}/lib/intellij.libraries.netty.codec.http.jar" />
+        <fileset file="${artifacts.mps}/lib/intellij.libraries.swingx.jar" />
+        <fileset file="${artifacts.mps}/lib/intellij.platform.analysis.jar" />
+        <fileset file="${artifacts.mps}/lib/intellij.platform.analysis.impl.jar" />
+        <fileset file="${artifacts.mps}/lib/intellij.platform.builtInServer.jar" />
+        <fileset file="${artifacts.mps}/lib/intellij.platform.builtInServer.impl.jar" />
+        <fileset file="${artifacts.mps}/lib/intellij.platform.core.jar" />
+        <fileset file="${artifacts.mps}/lib/intellij.platform.core.impl.jar" />
+        <fileset file="${artifacts.mps}/lib/intellij.platform.core.ui.jar" />
+        <fileset file="${artifacts.mps}/lib/intellij.platform.debugger.jar" />
+        <fileset file="${artifacts.mps}/lib/intellij.platform.diff.jar" />
+        <fileset file="${artifacts.mps}/lib/intellij.platform.diff.impl.jar" />
+        <fileset file="${artifacts.mps}/lib/intellij.platform.ide.jar" />
+        <fileset file="${artifacts.mps}/lib/intellij.platform.ide.core.jar" />
+        <fileset file="${artifacts.mps}/lib/intellij.platform.ide.impl.jar" />
+        <fileset file="${artifacts.mps}/lib/intellij.platform.lang.jar" />
+        <fileset file="${artifacts.mps}/lib/intellij.platform.lang.core.jar" />
+        <fileset file="${artifacts.mps}/lib/intellij.platform.lang.impl.jar" />
+        <fileset file="${artifacts.mps}/lib/intellij.platform.locking.impl.jar" />
+        <fileset file="${artifacts.mps}/lib/intellij.platform.projectFrame.jar" />
+        <fileset file="${artifacts.mps}/lib/intellij.platform.projectModel.jar" />
+        <fileset file="${artifacts.mps}/lib/intellij.platform.projectModel.impl.jar" />
+        <fileset file="${artifacts.mps}/lib/intellij.platform.util.ex.jar" />
+        <fileset file="${artifacts.mps}/lib/intellij.platform.util.ui.jar" />
+        <fileset file="${artifacts.mps}/lib/intellij.platform.vcs.jar" />
+        <fileset file="${artifacts.mps}/lib/intellij.platform.vcs.core.jar" />
+        <fileset file="${artifacts.mps}/lib/intellij.xml.parser.jar" />
+        <fileset file="${artifacts.mps}/lib/annotations.jar" />
+        <fileset file="${artifacts.com.mbeddr.platform}/de.itemis.mps.blutil/languages/de.itemis.mps.blutil/com.mbeddr.mpsutil.blutil.rt.jar" />
+        <fileset file="${artifacts.com.mbeddr.platform}/com.mbeddr.mpsutil.interpreter/languages/group.interpreter/com.mbeddr.mpsutil.interpreter.rt.jar" />
+        <fileset file="${artifacts.com.mbeddr.platform}/com.mbeddr.mpsutil.interpreter/languages/group.interpreter/com.mbeddr.mpsutil.traceExplorer.jar" />
+        <fileset file="${artifacts.com.mbeddr.platform}/com.mbeddr.mpsutil.varscope/languages/group.varscope/com.mbeddr.mpsutil.varscope.runtime.jar" />
+        <fileset file="${artifacts.com.mbeddr.platform}/de.itemis.mps.celllayout/languages/de.itemis.mps.celllayout/de.itemis.mps.editor.celllayout.runtime.jar" />
+        <fileset file="${artifacts.com.mbeddr.platform}/de.itemis.mps.celllayout/languages/de.itemis.mps.celllayout/de.itemis.mps.editor.celllayout.styles.jar" />
+        <fileset file="${artifacts.com.mbeddr.platform}/mps-multiline/languages/mps-multiline/de.slisson.mps.editor.multiline.runtime.jar" />
+        <fileset file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.jar" />
+        <fileset file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.classifiers.jar" />
+        <fileset file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.logging.runtime.jar" />
+        <fileset file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.regexp.runtime.jar" />
+        <fileset file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.scopes.jar" />
+        <fileset file="${artifacts.mps}/plugins/mps-testing/languages/baseLanguage/jetbrains.mps.baseLanguage.unitTest.jar" />
+        <fileset file="${artifacts.mps}/plugins/mps-testing/languages/baseLanguage/jetbrains.mps.baseLanguage.unitTest.runtime.jar" />
+        <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.core.jar" />
+        <fileset file="${artifacts.mps}/plugins/mps-testing/languages/languageDesign/jetbrains.mps.lang.test.jar" />
+        <fileset file="${artifacts.mps}/plugins/mps-testing/languages/languageDesign/jetbrains.mps.lang.test.matcher.jar" />
+        <fileset file="${artifacts.mps}/plugins/mps-testing/languages/languageDesign/jetbrains.mps.lang.test.runtime.jar" />
+        <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.traceable.jar" />
+        <fileset file="${artifacts.org.iets3.opensource}/org.iets3.core.os/languages/iets3.core.os/org.iets3.core.expr.base.runtime.jar" />
+        <fileset file="${artifacts.org.iets3.opensource}/org.iets3.core.os/languages/iets3.core.os/org.iets3.core.expr.tests.rt.jar" />
+        <fileset file="${artifacts.org.iets3.opensource}/org.iets3.core.os/languages/iets3.core.os/org.iets3.core.expr.typetags.phyunits.si.jar" />
+        <fileset file="${artifacts.mps}/lib/ant/lib/ant.jar" />
+        <fileset file="${artifacts.mps}/lib/junit4.jar" />
+        <fileset dir="${artifacts.com.mbeddr.platform}/mps-multiline/lib" includes="diff_match_patch.jar" />
+        <fileset dir="${artifacts.mps}/plugins/mps-junit5/lib" includes="apiguardian-api-1.1.2.jar" />
+        <fileset dir="${artifacts.mps}/plugins/mps-junit5/lib" includes="junit-jupiter-api-5.13.4.jar" />
+        <fileset dir="${artifacts.mps}/plugins/mps-junit5/lib" includes="junit-jupiter-engine-5.13.4.jar" />
+        <fileset dir="${artifacts.mps}/plugins/mps-junit5/lib" includes="junit-jupiter-migrationsupport-5.13.4.jar" />
+        <fileset dir="${artifacts.mps}/plugins/mps-junit5/lib" includes="junit-jupiter-params-5.13.4.jar" />
+        <fileset dir="${artifacts.mps}/plugins/mps-junit5/lib" includes="junit-platform-commons-1.13.4.jar" />
+        <fileset dir="${artifacts.mps}/plugins/mps-junit5/lib" includes="junit-platform-engine-1.13.4.jar" />
+        <fileset dir="${artifacts.mps}/plugins/mps-junit5/lib" includes="junit-platform-launcher-1.13.4.jar" />
+        <fileset dir="${artifacts.mps}/plugins/mps-junit5/lib" includes="junit-vintage-engine-5.13.4.jar" />
+        <fileset dir="${artifacts.mps}/plugins/mps-junit5/lib" includes="opentest4j-1.3.0.jar" />
+        <fileset dir="${artifacts.mps}/plugins/mps-junit5/lib" includes="junit-platform-reporting-1.13.4.jar" />
+        <path refid="path.jdk.classpath" />
+      </classpath>
+    </javac2>
+    <copy todir="${build.tmp}/java/out/test.org.iets3.core.expr.typetags.physunits">
+      <fileset dir="${iets3.lang.opensource}/tests/test.org.iets3.core.expr.typetags.physunits/source_gen" excludes="**/*.java" />
+      <fileset dir="${iets3.lang.opensource}/tests/test.org.iets3.core.expr.typetags.physunits/test_gen/" excludes="**/*.java" />
+    </copy>
+  </target>
+  
   <target name="java.compile.test.org.iets3.variability.configuration.base.ext" depends="fetchDependencies">
     <mkdir dir="${iets3.lang.opensource}/tests/test.org.iets3.variability.configuration.base.ext/source_gen" />
     <mkdir dir="${build.tmp}/java/out/test.org.iets3.variability.configuration.base.ext" />
@@ -5669,131 +5806,6 @@
     </javac2>
     <copy todir="${build.tmp}/java/out/test.ts.expr.os.validNameConcept">
       <fileset dir="${iets3.lang.opensource}/languages/test.ts.expr.os.validNameConcept/source_gen" excludes="**/*.java" />
-    </copy>
-  </target>
-  
-  <target name="java.compile.test.org.iets3.core.expr.typetags.physunits" depends="fetchDependencies">
-    <mkdir dir="${iets3.lang.opensource}/tests/test.org.iets3.core.expr.typetags.physunits/source_gen" />
-    <mkdir dir="${build.tmp}/java/out/test.org.iets3.core.expr.typetags.physunits" />
-    <javac2 destdir="${build.tmp}/java/out/test.org.iets3.core.expr.typetags.physunits" fork="false" encoding="utf8" includeantruntime="false" debug="true" source="1.8" target="1.8">
-      <compilerarg value="-Xlint:none" />
-      <src>
-        <path location="${iets3.lang.opensource}/tests/test.org.iets3.core.expr.typetags.physunits/source_gen" />
-        <pathelement path="${iets3.lang.opensource}/tests/test.org.iets3.core.expr.typetags.physunits/test_gen/" />
-      </src>
-      <classpath>
-        <fileset file="${artifacts.mps}/lib/mps-core.jar" />
-        <fileset file="${artifacts.mps}/lib/mps-platform.jar" />
-        <fileset file="${artifacts.mps}/lib/mps-annotations.jar" />
-        <fileset file="${artifacts.mps}/lib/mps-behavior-api.jar" />
-        <fileset file="${artifacts.mps}/lib/mps-behavior-runtime.jar" />
-        <fileset file="${artifacts.mps}/lib/mps-closures.jar" />
-        <fileset file="${artifacts.mps}/lib/mps-collections.jar" />
-        <fileset file="${artifacts.mps}/lib/mps-openapi.jar" />
-        <fileset file="${artifacts.mps}/lib/mps-tuples.jar" />
-        <fileset file="${artifacts.mps}/lib/mps-references.jar" />
-        <fileset file="${artifacts.mps}/lib/mps-context.jar" />
-        <fileset file="${artifacts.mps}/lib/mps-constraints-runtime.jar" />
-        <fileset file="${artifacts.mps}/lib/mps-editor.jar" />
-        <fileset file="${artifacts.mps}/lib/mps-editor-api.jar" />
-        <fileset file="${artifacts.mps}/lib/mps-editor-runtime.jar" />
-        <fileset file="${artifacts.mps}/lib/mps-environment.jar" />
-        <fileset file="${artifacts.mps}/lib/mps-persistence.jar" />
-        <fileset file="${artifacts.mps}/lib/mps-generator.jar" />
-        <fileset file="${artifacts.mps}/lib/mps-project-check.jar" />
-        <fileset file="${artifacts.mps}/lib/mps-test.jar" />
-        <fileset file="${artifacts.mps}/lib/mps-textgen.jar" />
-        <fileset file="${artifacts.mps}/lib/app.jar" />
-        <fileset file="${artifacts.mps}/lib/app-client.jar" />
-        <fileset file="${artifacts.mps}/lib/lib.jar" />
-        <fileset file="${artifacts.mps}/lib/lib-client.jar" />
-        <fileset file="${artifacts.mps}/lib/util.jar" />
-        <fileset file="${artifacts.mps}/lib/util_rt.jar" />
-        <fileset file="${artifacts.mps}/lib/util-8.jar" />
-        <fileset file="${artifacts.mps}/lib/forms_rt.jar" />
-        <fileset file="${artifacts.mps}/lib/java-frontback.jar" />
-        <fileset file="${artifacts.mps}/lib/jps-model.jar" />
-        <fileset file="${artifacts.mps}/lib/testFramework.jar" />
-        <fileset file="${artifacts.mps}/lib/stats.jar" />
-        <fileset file="${artifacts.mps}/lib/hamcrest.jar" />
-        <fileset file="${artifacts.mps}/lib/platform-loader.jar" />
-        <fileset file="${artifacts.mps}/lib/intellij.libraries.asm.jar" />
-        <fileset file="${artifacts.mps}/lib/intellij.libraries.fastutil.jar" />
-        <fileset file="${artifacts.mps}/lib/intellij.libraries.gson.jar" />
-        <fileset file="${artifacts.mps}/lib/intellij.libraries.kotlinx.collections.immutable.jar" />
-        <fileset file="${artifacts.mps}/lib/intellij.libraries.kotlinx.coroutines.core.jar" />
-        <fileset file="${artifacts.mps}/lib/intellij.libraries.miglayout.swing.jar" />
-        <fileset file="${artifacts.mps}/lib/intellij.libraries.netty.buffer.jar" />
-        <fileset file="${artifacts.mps}/lib/intellij.libraries.netty.codec.http.jar" />
-        <fileset file="${artifacts.mps}/lib/intellij.libraries.swingx.jar" />
-        <fileset file="${artifacts.mps}/lib/intellij.platform.analysis.jar" />
-        <fileset file="${artifacts.mps}/lib/intellij.platform.analysis.impl.jar" />
-        <fileset file="${artifacts.mps}/lib/intellij.platform.builtInServer.jar" />
-        <fileset file="${artifacts.mps}/lib/intellij.platform.builtInServer.impl.jar" />
-        <fileset file="${artifacts.mps}/lib/intellij.platform.core.jar" />
-        <fileset file="${artifacts.mps}/lib/intellij.platform.core.impl.jar" />
-        <fileset file="${artifacts.mps}/lib/intellij.platform.core.ui.jar" />
-        <fileset file="${artifacts.mps}/lib/intellij.platform.debugger.jar" />
-        <fileset file="${artifacts.mps}/lib/intellij.platform.diff.jar" />
-        <fileset file="${artifacts.mps}/lib/intellij.platform.diff.impl.jar" />
-        <fileset file="${artifacts.mps}/lib/intellij.platform.ide.jar" />
-        <fileset file="${artifacts.mps}/lib/intellij.platform.ide.core.jar" />
-        <fileset file="${artifacts.mps}/lib/intellij.platform.ide.impl.jar" />
-        <fileset file="${artifacts.mps}/lib/intellij.platform.lang.jar" />
-        <fileset file="${artifacts.mps}/lib/intellij.platform.lang.core.jar" />
-        <fileset file="${artifacts.mps}/lib/intellij.platform.lang.impl.jar" />
-        <fileset file="${artifacts.mps}/lib/intellij.platform.locking.impl.jar" />
-        <fileset file="${artifacts.mps}/lib/intellij.platform.projectFrame.jar" />
-        <fileset file="${artifacts.mps}/lib/intellij.platform.projectModel.jar" />
-        <fileset file="${artifacts.mps}/lib/intellij.platform.projectModel.impl.jar" />
-        <fileset file="${artifacts.mps}/lib/intellij.platform.util.ex.jar" />
-        <fileset file="${artifacts.mps}/lib/intellij.platform.util.ui.jar" />
-        <fileset file="${artifacts.mps}/lib/intellij.platform.vcs.jar" />
-        <fileset file="${artifacts.mps}/lib/intellij.platform.vcs.core.jar" />
-        <fileset file="${artifacts.mps}/lib/intellij.xml.parser.jar" />
-        <fileset file="${artifacts.mps}/lib/annotations.jar" />
-        <fileset file="${artifacts.com.mbeddr.platform}/de.itemis.mps.blutil/languages/de.itemis.mps.blutil/com.mbeddr.mpsutil.blutil.rt.jar" />
-        <fileset file="${artifacts.com.mbeddr.platform}/com.mbeddr.mpsutil.interpreter/languages/group.interpreter/com.mbeddr.mpsutil.interpreter.rt.jar" />
-        <fileset file="${artifacts.com.mbeddr.platform}/com.mbeddr.mpsutil.interpreter/languages/group.interpreter/com.mbeddr.mpsutil.traceExplorer.jar" />
-        <fileset file="${artifacts.com.mbeddr.platform}/com.mbeddr.mpsutil.varscope/languages/group.varscope/com.mbeddr.mpsutil.varscope.runtime.jar" />
-        <fileset file="${artifacts.com.mbeddr.platform}/de.itemis.mps.celllayout/languages/de.itemis.mps.celllayout/de.itemis.mps.editor.celllayout.runtime.jar" />
-        <fileset file="${artifacts.com.mbeddr.platform}/de.itemis.mps.celllayout/languages/de.itemis.mps.celllayout/de.itemis.mps.editor.celllayout.styles.jar" />
-        <fileset file="${artifacts.com.mbeddr.platform}/mps-multiline/languages/mps-multiline/de.slisson.mps.editor.multiline.runtime.jar" />
-        <fileset file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.jar" />
-        <fileset file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.classifiers.jar" />
-        <fileset file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.logging.runtime.jar" />
-        <fileset file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.regexp.runtime.jar" />
-        <fileset file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.scopes.jar" />
-        <fileset file="${artifacts.mps}/plugins/mps-testing/languages/baseLanguage/jetbrains.mps.baseLanguage.unitTest.jar" />
-        <fileset file="${artifacts.mps}/plugins/mps-testing/languages/baseLanguage/jetbrains.mps.baseLanguage.unitTest.runtime.jar" />
-        <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.core.jar" />
-        <fileset file="${artifacts.mps}/plugins/mps-testing/languages/languageDesign/jetbrains.mps.lang.test.jar" />
-        <fileset file="${artifacts.mps}/plugins/mps-testing/languages/languageDesign/jetbrains.mps.lang.test.matcher.jar" />
-        <fileset file="${artifacts.mps}/plugins/mps-testing/languages/languageDesign/jetbrains.mps.lang.test.runtime.jar" />
-        <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.traceable.jar" />
-        <fileset file="${artifacts.org.iets3.opensource}/org.iets3.core.os/languages/iets3.core.os/org.iets3.core.expr.base.runtime.jar" />
-        <fileset file="${artifacts.org.iets3.opensource}/org.iets3.core.os/languages/iets3.core.os/org.iets3.core.expr.tests.rt.jar" />
-        <fileset file="${artifacts.org.iets3.opensource}/org.iets3.core.os/languages/iets3.core.os/org.iets3.core.expr.typetags.phyunits.si.jar" />
-        <fileset file="${artifacts.mps}/lib/ant/lib/ant.jar" />
-        <fileset file="${artifacts.mps}/lib/junit4.jar" />
-        <fileset dir="${artifacts.com.mbeddr.platform}/mps-multiline/lib" includes="diff_match_patch.jar" />
-        <fileset dir="${artifacts.mps}/plugins/mps-junit5/lib" includes="apiguardian-api-1.1.2.jar" />
-        <fileset dir="${artifacts.mps}/plugins/mps-junit5/lib" includes="junit-jupiter-api-5.13.4.jar" />
-        <fileset dir="${artifacts.mps}/plugins/mps-junit5/lib" includes="junit-jupiter-engine-5.13.4.jar" />
-        <fileset dir="${artifacts.mps}/plugins/mps-junit5/lib" includes="junit-jupiter-migrationsupport-5.13.4.jar" />
-        <fileset dir="${artifacts.mps}/plugins/mps-junit5/lib" includes="junit-jupiter-params-5.13.4.jar" />
-        <fileset dir="${artifacts.mps}/plugins/mps-junit5/lib" includes="junit-platform-commons-1.13.4.jar" />
-        <fileset dir="${artifacts.mps}/plugins/mps-junit5/lib" includes="junit-platform-engine-1.13.4.jar" />
-        <fileset dir="${artifacts.mps}/plugins/mps-junit5/lib" includes="junit-platform-launcher-1.13.4.jar" />
-        <fileset dir="${artifacts.mps}/plugins/mps-junit5/lib" includes="junit-vintage-engine-5.13.4.jar" />
-        <fileset dir="${artifacts.mps}/plugins/mps-junit5/lib" includes="opentest4j-1.3.0.jar" />
-        <fileset dir="${artifacts.mps}/plugins/mps-junit5/lib" includes="junit-platform-reporting-1.13.4.jar" />
-        <path refid="path.jdk.classpath" />
-      </classpath>
-    </javac2>
-    <copy todir="${build.tmp}/java/out/test.org.iets3.core.expr.typetags.physunits">
-      <fileset dir="${iets3.lang.opensource}/tests/test.org.iets3.core.expr.typetags.physunits/source_gen" excludes="**/*.java" />
-      <fileset dir="${iets3.lang.opensource}/tests/test.org.iets3.core.expr.typetags.physunits/test_gen/" excludes="**/*.java" />
     </copy>
   </target>
   
