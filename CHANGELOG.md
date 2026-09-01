@@ -5,6 +5,11 @@ All notable changes to this project are documented in this file.
 Format of the log is _loosely_ based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 The project does _not_ follow Semantic Versioning and the changes are documented in reverse chronological order, grouped by calendar month.
 
+## September 2026
+
+### Fixed
+- KernelF: an exception thrown by the interpreter no longer costs the whole trace. `Show Trace` now opens with everything that was computed before the exception, and the node that threw is marked with the exception and highlighted in the trace tree. This covers the generic trace roots (functions, constants, function calls) as well as the test items, whose `catch` branches used to drop the trace.
+
 ## August 2026
 
 ### Fixed
