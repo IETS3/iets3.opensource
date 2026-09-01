@@ -32,9 +32,6 @@ public class supertypeof_DataTableTyle_SubtypingRule extends SubtypingRule_Runti
   public boolean isWeak() {
     return false;
   }
-  public boolean surelyKeepsConcept() {
-    return true;
-  }
 
   private static final class LINKS {
     /*package*/ static final SReferenceLink table$tErP = MetaAdapterFactory.getReferenceLink(0xb25b8ad14d3d4e45L, 0x8c7872091b39fddaL, 0x335c4a1eb7017c4L, 0x335c4a1eb701dbaL, "table");

@@ -7,7 +7,6 @@ import org.jetbrains.mps.openapi.language.SAbstractConcept;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import java.util.List;
 import org.pcollections.PSet;
@@ -21,7 +20,6 @@ import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
 import org.iets3.core.expr.metafunction.behavior.IMetaFunctionContext__BehaviorDescriptor;
 import org.iets3.core.expr.base.runtime.runtime.PTF;
 import org.iets3.core.expr.metafunction.behavior.MetaFunction__BehaviorDescriptor;
-import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 import jetbrains.mps.smodel.builder.SNodeBuilder;
@@ -31,13 +29,11 @@ import org.jetbrains.mps.openapi.language.SConcept;
 public final class CustomDecProc__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getConcept(0x50b470e714ad46c3L, 0xb5404586f56d2e9cL, 0x34aae0bbdc45d69dL, "org.iets3.core.expr.process.structure.CustomDecProc");
 
-  public static final SMethod<Boolean> isDecided_id1mDdTFSeTs = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("isDecided").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(24388123196714588L).languageId(0xb5404586f56d2e9cL, 0x50b470e714ad46c3L).build2(SMethodBuilder.createJavaParameter((Class<List<Object>>) ((Class) Object.class), ""), SMethodBuilder.createJavaParameter(PSet.class, ""), SMethodBuilder.createJavaParameter(IETS3ExprContext.class, ""), SMethodBuilder.createJavaParameter(ComputationTrace.class, ""));
-  public static final SMethod<SNode> createMetaFunction_id5cK3QOc9qti = new SMethodBuilder<SNode>(new SJavaCompoundTypeImpl((Class<SNode>) ((Class) Object.class))).name("createMetaFunction").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5994308065059776338L).languageId(0xb20c99c0b7309cd8L, 0x711a16d799e84e1dL).build2();
+  public static final SMethod<Boolean> isDecided_id1mDdTFSeTs = new SMethodBuilder<>(Boolean.TYPE).name("isDecided").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(24388123196714588L).languageId(0xb5404586f56d2e9cL, 0x50b470e714ad46c3L).build2(SMethodBuilder.createJavaParameter((Class<List<Object>>) ((Class) Object.class), "parties"), SMethodBuilder.createJavaParameter(PSet.class, "whoVoted"), SMethodBuilder.createJavaParameter(IETS3ExprContext.class, "ctx"), SMethodBuilder.createJavaParameter(ComputationTrace.class, "trace"));
+  public static final SMethod<SNode> createMetaFunction_id5cK3QOc9qti = new SMethodBuilder<>(SNode.class).name("createMetaFunction").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5994308065059776338L).languageId(0xb20c99c0b7309cd8L, 0x711a16d799e84e1dL).build2();
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(isDecided_id1mDdTFSeTs, createMetaFunction_id5cK3QOc9qti);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(isDecided_id1mDdTFSeTs, createMetaFunction_id5cK3QOc9qti);
 
-  private static void ___init___(@NotNull SNode __thisNode__) {
-  }
 
   /*package*/ static boolean isDecided_id1mDdTFSeTs(@NotNull SNode __thisNode__, List<Object> parties, PSet whoVoted, IETS3ExprContext ctx, ComputationTrace trace) {
     Object res = new MFI(ctx, SLinkOperations.getTarget(__thisNode__, LINKS.function$1smc)).run(whoVoted, trace);
@@ -55,10 +51,6 @@ public final class CustomDecProc__BehaviorDescriptor extends BaseBHDescriptor {
   /*package*/ CustomDecProc__BehaviorDescriptor() {
   }
 
-  @Override
-  protected void initNode(@NotNull SNode node, @NotNull SConstructor constructor, @Nullable Object[] parameters) {
-    ___init___(node);
-  }
 
   @Override
   protected <T> T invokeSpecial0(@NotNull SNode node, @NotNull SMethod<T> method, @Nullable Object[] parameters) {

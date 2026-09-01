@@ -7,7 +7,6 @@ import org.jetbrains.mps.openapi.language.SAbstractConcept;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import jetbrains.mps.openapi.editor.EditorContext;
 import java.util.List;
@@ -16,7 +15,6 @@ import org.jetbrains.annotations.NotNull;
 import org.jetbrains.mps.openapi.model.SNode;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
 import jetbrains.mps.internal.collections.runtime.Sequence;
-import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 import org.jetbrains.mps.openapi.language.SInterfaceConcept;
@@ -24,24 +22,22 @@ import org.jetbrains.mps.openapi.language.SInterfaceConcept;
 public final class ICanRunCheckManually__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getInterfaceConcept(0x7b68d745a7b848b9L, 0xbd9c05c0f8725a35L, 0x3dc39ae7de59be3aL, "org.iets3.core.base.structure.ICanRunCheckManually");
 
-  public static final SMethod<Boolean> readyToRunManually_id3R3AIvumwpv = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("readyToRunManually").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(4450571177430746719L).languageId(0xbd9c05c0f8725a35L, 0x7b68d745a7b848b9L).build2();
-  public static final SMethod<Boolean> hasChangedAndMustBeRechecked_id6MJy$PGsBKB = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("hasChangedAndMustBeRechecked").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(7831630342157138983L).languageId(0xbd9c05c0f8725a35L, 0x7b68d745a7b848b9L).build2();
-  public static final SMethod<Boolean> canDetectChange_id6MJy$PGsBY8 = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("canDetectChange").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(7831630342157139848L).languageId(0xbd9c05c0f8725a35L, 0x7b68d745a7b848b9L).build2();
-  public static final SMethod<Boolean> isManualCheckAvaillable_id3ugRfIRApt7 = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("isManualCheckAvaillable").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(4003943042407569223L).languageId(0xbd9c05c0f8725a35L, 0x7b68d745a7b848b9L).build2();
-  public static final SMethod<Boolean> doNotShowManualInfoMessage_id2jITtfD$0No = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("doNotShowManualInfoMessage").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(2661317128141933784L).languageId(0xbd9c05c0f8725a35L, 0x7b68d745a7b848b9L).build2();
-  public static final SMethod<Void> runManually_id3R3AIvumrTm = new SMethodBuilder<Void>(new SJavaCompoundTypeImpl(Void.class)).name("runManually").modifiers(12, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(4450571177430728278L).languageId(0xbd9c05c0f8725a35L, 0x7b68d745a7b848b9L).build2(SMethodBuilder.createJavaParameter(EditorContext.class, ""));
-  public static final SMethod<Void> runManuallyWithUIUpdate_idub9nkyQ908 = new SMethodBuilder<Void>(new SJavaCompoundTypeImpl(Void.class)).name("runManuallyWithUIUpdate").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(543569365054296072L).languageId(0xbd9c05c0f8725a35L, 0x7b68d745a7b848b9L).build2(SMethodBuilder.createJavaParameter(EditorContext.class, ""));
-  public static final SMethod<Void> performAdditionalEditorUpdate_id3JvidvJx7iM = new SMethodBuilder<Void>(new SJavaCompoundTypeImpl(Void.class)).name("performAdditionalEditorUpdate").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(4314247060317828274L).languageId(0xbd9c05c0f8725a35L, 0x7b68d745a7b848b9L).build2(SMethodBuilder.createJavaParameter(EditorContext.class, ""));
-  public static final SMethod<Boolean> highlightError_id4b4fYXfo1HZ = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("highlightError").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(4811040598999964543L).languageId(0xbd9c05c0f8725a35L, 0x7b68d745a7b848b9L).build2();
-  public static final SMethod<Boolean> highlightWarning_id4358bbCIl2g = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("highlightWarning").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(4667172541620113552L).languageId(0xbd9c05c0f8725a35L, 0x7b68d745a7b848b9L).build2();
-  public static final SMethod<Boolean> showSubResults_id4MH81Y0VldB = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("showSubResults").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5525107637532578663L).languageId(0xbd9c05c0f8725a35L, 0x7b68d745a7b848b9L).build2();
-  public static final SMethod<Boolean> mustBeRunManually_id3R3AIvumAZH = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("mustBeRunManually").modifiers(12, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(4450571177430773741L).languageId(0xbd9c05c0f8725a35L, 0x7b68d745a7b848b9L).build2();
-  public static final SMethod<Boolean> shouldBeChecked_id1996aX856sE = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("shouldBeChecked").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(1317611507090220842L).languageId(0xbd9c05c0f8725a35L, 0x7b68d745a7b848b9L).build2();
+  public static final SMethod<Boolean> readyToRunManually_id3R3AIvumwpv = new SMethodBuilder<>(Boolean.TYPE).name("readyToRunManually").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(4450571177430746719L).languageId(0xbd9c05c0f8725a35L, 0x7b68d745a7b848b9L).build2();
+  public static final SMethod<Boolean> hasChangedAndMustBeRechecked_id6MJy$PGsBKB = new SMethodBuilder<>(Boolean.TYPE).name("hasChangedAndMustBeRechecked").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(7831630342157138983L).languageId(0xbd9c05c0f8725a35L, 0x7b68d745a7b848b9L).build2();
+  public static final SMethod<Boolean> canDetectChange_id6MJy$PGsBY8 = new SMethodBuilder<>(Boolean.TYPE).name("canDetectChange").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(7831630342157139848L).languageId(0xbd9c05c0f8725a35L, 0x7b68d745a7b848b9L).build2();
+  public static final SMethod<Boolean> isManualCheckAvaillable_id3ugRfIRApt7 = new SMethodBuilder<>(Boolean.TYPE).name("isManualCheckAvaillable").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(4003943042407569223L).languageId(0xbd9c05c0f8725a35L, 0x7b68d745a7b848b9L).build2();
+  public static final SMethod<Boolean> doNotShowManualInfoMessage_id2jITtfD$0No = new SMethodBuilder<>(Boolean.TYPE).name("doNotShowManualInfoMessage").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(2661317128141933784L).languageId(0xbd9c05c0f8725a35L, 0x7b68d745a7b848b9L).build2();
+  public static final SMethod<Void> runManually_id3R3AIvumrTm = new SMethodBuilder<>(Void.TYPE).name("runManually").modifiers(12, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(4450571177430728278L).languageId(0xbd9c05c0f8725a35L, 0x7b68d745a7b848b9L).build2(SMethodBuilder.createJavaParameter(EditorContext.class, "edCtxOrNull"));
+  public static final SMethod<Void> runManuallyWithUIUpdate_idub9nkyQ908 = new SMethodBuilder<>(Void.TYPE).name("runManuallyWithUIUpdate").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(543569365054296072L).languageId(0xbd9c05c0f8725a35L, 0x7b68d745a7b848b9L).build2(SMethodBuilder.createJavaParameter(EditorContext.class, "edCtxOrNull"));
+  public static final SMethod<Void> performAdditionalEditorUpdate_id3JvidvJx7iM = new SMethodBuilder<>(Void.TYPE).name("performAdditionalEditorUpdate").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(4314247060317828274L).languageId(0xbd9c05c0f8725a35L, 0x7b68d745a7b848b9L).build2(SMethodBuilder.createJavaParameter(EditorContext.class, "edCtxOrNull"));
+  public static final SMethod<Boolean> highlightError_id4b4fYXfo1HZ = new SMethodBuilder<>(Boolean.TYPE).name("highlightError").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(4811040598999964543L).languageId(0xbd9c05c0f8725a35L, 0x7b68d745a7b848b9L).build2();
+  public static final SMethod<Boolean> highlightWarning_id4358bbCIl2g = new SMethodBuilder<>(Boolean.TYPE).name("highlightWarning").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(4667172541620113552L).languageId(0xbd9c05c0f8725a35L, 0x7b68d745a7b848b9L).build2();
+  public static final SMethod<Boolean> showSubResults_id4MH81Y0VldB = new SMethodBuilder<>(Boolean.TYPE).name("showSubResults").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5525107637532578663L).languageId(0xbd9c05c0f8725a35L, 0x7b68d745a7b848b9L).build2();
+  public static final SMethod<Boolean> mustBeRunManually_id3R3AIvumAZH = new SMethodBuilder<>(Boolean.TYPE).name("mustBeRunManually").modifiers(12, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(4450571177430773741L).languageId(0xbd9c05c0f8725a35L, 0x7b68d745a7b848b9L).build2();
+  public static final SMethod<Boolean> shouldBeChecked_id1996aX856sE = new SMethodBuilder<>(Boolean.TYPE).name("shouldBeChecked").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(1317611507090220842L).languageId(0xbd9c05c0f8725a35L, 0x7b68d745a7b848b9L).build2();
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(readyToRunManually_id3R3AIvumwpv, hasChangedAndMustBeRechecked_id6MJy$PGsBKB, canDetectChange_id6MJy$PGsBY8, isManualCheckAvaillable_id3ugRfIRApt7, doNotShowManualInfoMessage_id2jITtfD$0No, runManually_id3R3AIvumrTm, runManuallyWithUIUpdate_idub9nkyQ908, performAdditionalEditorUpdate_id3JvidvJx7iM, highlightError_id4b4fYXfo1HZ, highlightWarning_id4358bbCIl2g, showSubResults_id4MH81Y0VldB, mustBeRunManually_id3R3AIvumAZH, shouldBeChecked_id1996aX856sE);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(readyToRunManually_id3R3AIvumwpv, hasChangedAndMustBeRechecked_id6MJy$PGsBKB, canDetectChange_id6MJy$PGsBY8, isManualCheckAvaillable_id3ugRfIRApt7, doNotShowManualInfoMessage_id2jITtfD$0No, runManually_id3R3AIvumrTm, runManuallyWithUIUpdate_idub9nkyQ908, performAdditionalEditorUpdate_id3JvidvJx7iM, highlightError_id4b4fYXfo1HZ, highlightWarning_id4358bbCIl2g, showSubResults_id4MH81Y0VldB, mustBeRunManually_id3R3AIvumAZH, shouldBeChecked_id1996aX856sE);
 
-  private static void ___init___(@NotNull SNode __thisNode__) {
-  }
 
   /*package*/ static boolean readyToRunManually_id3R3AIvumwpv(@NotNull SNode __thisNode__) {
     return true;
@@ -80,10 +76,6 @@ public final class ICanRunCheckManually__BehaviorDescriptor extends BaseBHDescri
   /*package*/ ICanRunCheckManually__BehaviorDescriptor() {
   }
 
-  @Override
-  protected void initNode(@NotNull SNode node, @NotNull SConstructor constructor, @Nullable Object[] parameters) {
-    ___init___(node);
-  }
 
   @Override
   protected <T> T invokeSpecial0(@NotNull SNode node, @NotNull SMethod<T> method, @Nullable Object[] parameters) {

@@ -8,7 +8,6 @@ import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import org.jetbrains.mps.openapi.model.SNode;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import java.util.List;
 import java.util.Arrays;
@@ -16,7 +15,6 @@ import org.jetbrains.annotations.NotNull;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
 import java.util.ArrayList;
-import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 import org.jetbrains.mps.openapi.language.SContainmentLink;
@@ -25,15 +23,13 @@ import org.jetbrains.mps.openapi.language.SInterfaceConcept;
 public final class IOptionallyTyped__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getInterfaceConcept(0xcfaa4966b7d54b69L, 0xb66a309a6e1a7290L, 0x62632b96c1ab0b7cL, "org.iets3.core.expr.base.structure.IOptionallyTyped");
 
-  public static final SMethod<SNode> getNodeFromWhichToDeriveType_id5aHkq2w4m8L = new SMethodBuilder<SNode>(new SJavaCompoundTypeImpl((Class<SNode>) ((Class) Object.class))).name("getNodeFromWhichToDeriveType").modifiers(12, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5957507632403145265L).languageId(0xb66a309a6e1a7290L, 0xcfaa4966b7d54b69L).build2();
-  public static final SMethod<SNode> getContextType_id_kNv2QbVfK = new SMethodBuilder<SNode>(new SJavaCompoundTypeImpl((Class<SNode>) ((Class) Object.class))).name("getContextType").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(672388678117471216L).languageId(0xb66a309a6e1a7290L, 0xcfaa4966b7d54b69L).build2(SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""));
-  public static final SMethod<Iterable<SNode>> getChildrenForCoverage_id5IKJrJHNCE8 = new SMethodBuilder<Iterable<SNode>>(new SJavaCompoundTypeImpl((Class<Iterable<SNode>>) ((Class) Object.class))).name("getChildrenForCoverage").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(6606989268198787720L).languageId(0xa6067ce0236c8023L, 0x47f075a6558e4640L).build2();
-  public static final SMethod<String> getErrorMessage_idZYPG76w9Fc = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("getErrorMessage").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(1152594682400774860L).languageId(0xb66a309a6e1a7290L, 0xcfaa4966b7d54b69L).build2(SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""), SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""));
+  public static final SMethod<SNode> getNodeFromWhichToDeriveType_id5aHkq2w4m8L = new SMethodBuilder<>(SNode.class).name("getNodeFromWhichToDeriveType").modifiers(12, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5957507632403145265L).languageId(0xb66a309a6e1a7290L, 0xcfaa4966b7d54b69L).build2();
+  public static final SMethod<SNode> getContextType_id_kNv2QbVfK = new SMethodBuilder<>(SNode.class).name("getContextType").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(672388678117471216L).languageId(0xb66a309a6e1a7290L, 0xcfaa4966b7d54b69L).build2(SMethodBuilder.createJavaParameter(SNode.class, "location"));
+  public static final SMethod<Iterable<SNode>> getChildrenForCoverage_id5IKJrJHNCE8 = new SMethodBuilder<>((Class<Iterable<SNode>>) ((Class) Object.class)).name("getChildrenForCoverage").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(6606989268198787720L).languageId(0xa6067ce0236c8023L, 0x47f075a6558e4640L).build2();
+  public static final SMethod<String> getErrorMessage_idZYPG76w9Fc = new SMethodBuilder<>(String.class).name("getErrorMessage").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(1152594682400774860L).languageId(0xb66a309a6e1a7290L, 0xcfaa4966b7d54b69L).build2(SMethodBuilder.createJavaParameter(SNode.class, "expectedType"), SMethodBuilder.createJavaParameter(SNode.class, "actualType"));
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(getNodeFromWhichToDeriveType_id5aHkq2w4m8L, getContextType_id_kNv2QbVfK, getChildrenForCoverage_id5IKJrJHNCE8, getErrorMessage_idZYPG76w9Fc);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(getNodeFromWhichToDeriveType_id5aHkq2w4m8L, getContextType_id_kNv2QbVfK, getChildrenForCoverage_id5IKJrJHNCE8, getErrorMessage_idZYPG76w9Fc);
 
-  private static void ___init___(@NotNull SNode __thisNode__) {
-  }
 
   /*package*/ static SNode getContextType_id_kNv2QbVfK(@NotNull SNode __thisNode__, SNode location) {
     if (SNodeOperations.getParent(location) == __thisNode__) {
@@ -55,10 +51,6 @@ public final class IOptionallyTyped__BehaviorDescriptor extends BaseBHDescriptor
   /*package*/ IOptionallyTyped__BehaviorDescriptor() {
   }
 
-  @Override
-  protected void initNode(@NotNull SNode node, @NotNull SConstructor constructor, @Nullable Object[] parameters) {
-    ___init___(node);
-  }
 
   @Override
   protected <T> T invokeSpecial0(@NotNull SNode node, @NotNull SMethod<T> method, @Nullable Object[] parameters) {

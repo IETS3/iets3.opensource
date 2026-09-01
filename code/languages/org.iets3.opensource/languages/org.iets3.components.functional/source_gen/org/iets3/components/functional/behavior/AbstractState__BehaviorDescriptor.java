@@ -7,7 +7,6 @@ import org.jetbrains.mps.openapi.language.SAbstractConcept;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import org.jetbrains.mps.openapi.model.SNode;
 import java.util.List;
@@ -20,7 +19,6 @@ import jetbrains.mps.internal.collections.runtime.ListSequence;
 import java.util.ArrayList;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
 import jetbrains.mps.internal.collections.runtime.Sequence;
-import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 import org.jetbrains.mps.openapi.language.SProperty;
@@ -30,19 +28,17 @@ import org.jetbrains.mps.openapi.language.SContainmentLink;
 public final class AbstractState__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getConcept(0x257976063fb647b8L, 0xbc3cb4384df7da44L, 0x3de2e5e44d841d61L, "org.iets3.components.functional.structure.AbstractState");
 
-  public static final SMethod<String> qualifiedName_id2Df8LH1gI18 = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("qualifiedName").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(3048694072719106120L).languageId(0xbc3cb4384df7da44L, 0x257976063fb647b8L).build2();
-  public static final SMethod<SNode> createSolverTask_id4pkidg67Lgb = new SMethodBuilder<SNode>(new SJavaCompoundTypeImpl((Class<SNode>) ((Class) Object.class))).name("createSolverTask").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5067755556171617291L).languageId(0x8fed954c202d18beL, 0xdb8bd0353f5141d8L).build2();
-  public static final SMethod<Iterable<SNode>> guards_id39kTj3BRU$u = new SMethodBuilder<Iterable<SNode>>(new SJavaCompoundTypeImpl((Class<Iterable<SNode>>) ((Class) Object.class))).name("guards").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(3626775598151477534L).languageId(0xbc3cb4384df7da44L, 0x257976063fb647b8L).build2();
-  public static final SMethod<Iterable<SNode>> entryBlocks_idkYh4fkqbON = new SMethodBuilder<Iterable<SNode>>(new SJavaCompoundTypeImpl((Class<Iterable<SNode>>) ((Class) Object.class))).name("entryBlocks").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(377814476862831923L).languageId(0xbc3cb4384df7da44L, 0x257976063fb647b8L).build2();
-  public static final SMethod<Iterable<SNode>> callOps_id3UO9rEA0eqD = new SMethodBuilder<Iterable<SNode>>(new SJavaCompoundTypeImpl((Class<Iterable<SNode>>) ((Class) Object.class))).name("callOps").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(4518277809738671785L).languageId(0xbc3cb4384df7da44L, 0x257976063fb647b8L).build2(SMethodBuilder.createJavaParameter((Class<Iterable<SNode>>) ((Class) Object.class), ""));
-  public static final SMethod<Iterable<SNode>> setOps_idDWlE3yF_Kb = new SMethodBuilder<Iterable<SNode>>(new SJavaCompoundTypeImpl((Class<Iterable<SNode>>) ((Class) Object.class))).name("setOps").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(755574086489234443L).languageId(0xbc3cb4384df7da44L, 0x257976063fb647b8L).build2(SMethodBuilder.createJavaParameter((Class<Iterable<SNode>>) ((Class) Object.class), ""));
-  public static final SMethod<Iterable<SNode>> transitions_id3UO9rEAQgWo = new SMethodBuilder<Iterable<SNode>>(new SJavaCompoundTypeImpl((Class<Iterable<SNode>>) ((Class) Object.class))).name("transitions").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(4518277809752837912L).languageId(0xbc3cb4384df7da44L, 0x257976063fb647b8L).build2();
-  public static final SMethod<SNode> firstAction_idkYh4fkq8Ho = new SMethodBuilder<SNode>(new SJavaCompoundTypeImpl((Class<SNode>) ((Class) Object.class))).name("firstAction").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(377814476862819160L).languageId(0xbc3cb4384df7da44L, 0x257976063fb647b8L).build2();
+  public static final SMethod<String> qualifiedName_id2Df8LH1gI18 = new SMethodBuilder<>(String.class).name("qualifiedName").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(3048694072719106120L).languageId(0xbc3cb4384df7da44L, 0x257976063fb647b8L).build2();
+  public static final SMethod<SNode> createSolverTask_id4pkidg67Lgb = new SMethodBuilder<>(SNode.class).name("createSolverTask").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5067755556171617291L).languageId(0x8fed954c202d18beL, 0xdb8bd0353f5141d8L).build2();
+  public static final SMethod<Iterable<SNode>> guards_id39kTj3BRU$u = new SMethodBuilder<>((Class<Iterable<SNode>>) ((Class) Object.class)).name("guards").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(3626775598151477534L).languageId(0xbc3cb4384df7da44L, 0x257976063fb647b8L).build2();
+  public static final SMethod<Iterable<SNode>> entryBlocks_idkYh4fkqbON = new SMethodBuilder<>((Class<Iterable<SNode>>) ((Class) Object.class)).name("entryBlocks").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(377814476862831923L).languageId(0xbc3cb4384df7da44L, 0x257976063fb647b8L).build2();
+  public static final SMethod<Iterable<SNode>> callOps_id3UO9rEA0eqD = new SMethodBuilder<>((Class<Iterable<SNode>>) ((Class) Object.class)).name("callOps").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(4518277809738671785L).languageId(0xbc3cb4384df7da44L, 0x257976063fb647b8L).build2(SMethodBuilder.createJavaParameter((Class<Iterable<SNode>>) ((Class) Object.class), "blocks"));
+  public static final SMethod<Iterable<SNode>> setOps_idDWlE3yF_Kb = new SMethodBuilder<>((Class<Iterable<SNode>>) ((Class) Object.class)).name("setOps").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(755574086489234443L).languageId(0xbc3cb4384df7da44L, 0x257976063fb647b8L).build2(SMethodBuilder.createJavaParameter((Class<Iterable<SNode>>) ((Class) Object.class), "blocks"));
+  public static final SMethod<Iterable<SNode>> transitions_id3UO9rEAQgWo = new SMethodBuilder<>((Class<Iterable<SNode>>) ((Class) Object.class)).name("transitions").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(4518277809752837912L).languageId(0xbc3cb4384df7da44L, 0x257976063fb647b8L).build2();
+  public static final SMethod<SNode> firstAction_idkYh4fkq8Ho = new SMethodBuilder<>(SNode.class).name("firstAction").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(377814476862819160L).languageId(0xbc3cb4384df7da44L, 0x257976063fb647b8L).build2();
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(qualifiedName_id2Df8LH1gI18, createSolverTask_id4pkidg67Lgb, guards_id39kTj3BRU$u, entryBlocks_idkYh4fkqbON, callOps_id3UO9rEA0eqD, setOps_idDWlE3yF_Kb, transitions_id3UO9rEAQgWo, firstAction_idkYh4fkq8Ho);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(qualifiedName_id2Df8LH1gI18, createSolverTask_id4pkidg67Lgb, guards_id39kTj3BRU$u, entryBlocks_idkYh4fkqbON, callOps_id3UO9rEA0eqD, setOps_idDWlE3yF_Kb, transitions_id3UO9rEAQgWo, firstAction_idkYh4fkq8Ho);
 
-  private static void ___init___(@NotNull SNode __thisNode__) {
-  }
 
   /*package*/ static String qualifiedName_id2Df8LH1gI18(@NotNull SNode __thisNode__) {
     if (SNodeOperations.isInstanceOf(SNodeOperations.getParent(__thisNode__), CONCEPTS.StateMachine$rO)) {
@@ -82,10 +78,6 @@ public final class AbstractState__BehaviorDescriptor extends BaseBHDescriptor {
   /*package*/ AbstractState__BehaviorDescriptor() {
   }
 
-  @Override
-  protected void initNode(@NotNull SNode node, @NotNull SConstructor constructor, @Nullable Object[] parameters) {
-    ___init___(node);
-  }
 
   @Override
   protected <T> T invokeSpecial0(@NotNull SNode node, @NotNull SMethod<T> method, @Nullable Object[] parameters) {

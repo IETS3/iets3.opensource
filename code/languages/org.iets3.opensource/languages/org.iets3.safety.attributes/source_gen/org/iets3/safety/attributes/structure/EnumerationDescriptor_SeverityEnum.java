@@ -20,7 +20,7 @@ public class EnumerationDescriptor_SeverityEnum extends EnumerationDescriptorBas
   private final EnumerationDescriptor.MemberDescriptor myMember__3_0 = new EnumerationDescriptor.MemberDescriptor("_3", "S3", 0x710b4f5487c7a124L, "r:b53239c7-3de8-44c4-9520-b85ab78eddfd(org.iets3.safety.attributes.structure)/5939066662398655498");
 
   private final EnumerationLiteralsIndex myIndex = EnumerationLiteralsIndex.build(0x3d5cb9202b5f4dcbL, 0x834968b4bf077e63L, 0x710b4f5487c7a116L, 0x710b4f5487c7a118L, 0x710b4f5487c7a11dL, 0x710b4f5487c7a124L);
-  private final List<EnumerationDescriptor.MemberDescriptor> myMembers = new EnumerationDescriptorBase.MembersList(myIndex, myMember__1_0, myMember__2_0, myMember__3_0);
+  private final List<EnumerationDescriptor.MemberDescriptor> myMembers = new EnumerationDescriptorBase.MembersList0(myIndex, myMember__1_0, myMember__2_0, myMember__3_0);
 
   @Nullable
   @Override

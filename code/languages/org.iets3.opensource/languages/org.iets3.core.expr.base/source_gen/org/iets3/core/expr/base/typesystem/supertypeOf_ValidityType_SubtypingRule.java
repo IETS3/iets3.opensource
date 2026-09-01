@@ -27,9 +27,6 @@ public class supertypeOf_ValidityType_SubtypingRule extends SubtypingRule_Runtim
   public boolean isWeak() {
     return false;
   }
-  public boolean surelyKeepsConcept() {
-    return true;
-  }
 
   private static final class CONCEPTS {
     /*package*/ static final SConcept ValidityType$4H = MetaAdapterFactory.getConcept(0xcfaa4966b7d54b69L, 0xb66a309a6e1a7290L, 0x7211e500635b4b5fL, "org.iets3.core.expr.base.structure.ValidityType");

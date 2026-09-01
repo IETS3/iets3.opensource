@@ -9,7 +9,6 @@ import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import java.util.List;
 import org.jetbrains.mps.openapi.model.SNode;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import jetbrains.mps.baseLanguage.closures.runtime._FunctionTypes;
 import java.util.Arrays;
@@ -19,7 +18,6 @@ import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
 import java.util.Iterator;
 import jetbrains.mps.internal.collections.runtime.ListSequence;
 import org.iets3.core.expr.base.typesystem.TypingHelper;
-import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 import org.jetbrains.mps.openapi.language.SConcept;
@@ -28,13 +26,11 @@ import org.jetbrains.mps.openapi.language.SInterfaceConcept;
 public final class IParameterizedTypeSupportsEquals__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getInterfaceConcept(0xcfaa4966b7d54b69L, 0xb66a309a6e1a7290L, 0x7c29ed49aa581218L, "org.iets3.core.expr.base.structure.IParameterizedTypeSupportsEquals");
 
-  public static final SMethod<List<SNode>> getTypeParameters_idKoRsm$Us0E = new SMethodBuilder<List<SNode>>(new SJavaCompoundTypeImpl((Class<List<SNode>>) ((Class) Object.class))).name("getTypeParameters").modifiers(12, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(871690368841269290L).languageId(0xb66a309a6e1a7290L, 0xcfaa4966b7d54b69L).build2();
-  public static final SMethod<Void> ensureParameterizedTypeComparability_id7KDVkAErfTB = new SMethodBuilder<Void>(new SJavaCompoundTypeImpl(Void.class)).name("ensureParameterizedTypeComparability").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(8946943035395866215L).languageId(0xb66a309a6e1a7290L, 0xcfaa4966b7d54b69L).build2(SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""), SMethodBuilder.createJavaParameter((Class<_FunctionTypes._return_P2_E0<? extends Boolean, ? super SNode, ? super SNode>>) ((Class) Object.class), ""), SMethodBuilder.createJavaParameter((Class<_FunctionTypes._void_P2_E0<? super SNode, ? super SNode>>) ((Class) Object.class), ""));
+  public static final SMethod<List<SNode>> getTypeParameters_idKoRsm$Us0E = new SMethodBuilder<>((Class<List<SNode>>) ((Class) Object.class)).name("getTypeParameters").modifiers(12, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(871690368841269290L).languageId(0xb66a309a6e1a7290L, 0xcfaa4966b7d54b69L).build2();
+  public static final SMethod<Void> ensureParameterizedTypeComparability_id7KDVkAErfTB = new SMethodBuilder<>(Void.TYPE).name("ensureParameterizedTypeComparability").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(8946943035395866215L).languageId(0xb66a309a6e1a7290L, 0xcfaa4966b7d54b69L).build2(SMethodBuilder.createJavaParameter(SNode.class, "otherType"), SMethodBuilder.createJavaParameter((Class<_FunctionTypes._return_P2_E0<? extends Boolean, ? super SNode, ? super SNode>>) ((Class) Object.class), "isPrimitiveTypeComparableTo"), SMethodBuilder.createJavaParameter((Class<_FunctionTypes._void_P2_E0<? super SNode, ? super SNode>>) ((Class) Object.class), "createError"));
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(getTypeParameters_idKoRsm$Us0E, ensureParameterizedTypeComparability_id7KDVkAErfTB);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(getTypeParameters_idKoRsm$Us0E, ensureParameterizedTypeComparability_id7KDVkAErfTB);
 
-  private static void ___init___(@NotNull SNode __thisNode__) {
-  }
 
   /*package*/ static void ensureParameterizedTypeComparability_id7KDVkAErfTB(@NotNull SNode __thisNode__, SNode otherType, _FunctionTypes._return_P2_E0<? extends Boolean, ? super SNode, ? super SNode> isPrimitiveTypeComparableTo, _FunctionTypes._void_P2_E0<? super SNode, ? super SNode> createError) {
     if (!(Objects.equals(SNodeOperations.getConcept(otherType), SNodeOperations.getConcept(SNodeOperations.cast(__thisNode__, CONCEPTS.Type$WK))))) {
@@ -67,10 +63,6 @@ public final class IParameterizedTypeSupportsEquals__BehaviorDescriptor extends 
   /*package*/ IParameterizedTypeSupportsEquals__BehaviorDescriptor() {
   }
 
-  @Override
-  protected void initNode(@NotNull SNode node, @NotNull SConstructor constructor, @Nullable Object[] parameters) {
-    ___init___(node);
-  }
 
   @Override
   protected <T> T invokeSpecial0(@NotNull SNode node, @NotNull SMethod<T> method, @Nullable Object[] parameters) {

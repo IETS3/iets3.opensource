@@ -14,6 +14,9 @@
     <import index="49km" ref="r:6399195b-f53f-4d2f-9194-153d6bba843f(org.iets3.components.hardware.structure)" implicit="true" />
   </imports>
   <registry>
+    <language id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior">
+      <concept id="3235159848334022093" name="jetbrains.mps.lang.behavior.structure.Node_ConceptMethodCall" flags="nn" index="3zqWPK" />
+    </language>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
       <concept id="4836112446988635817" name="jetbrains.mps.baseLanguage.structure.UndefinedType" flags="in" index="2jxLKc" />
       <concept id="1202948039474" name="jetbrains.mps.baseLanguage.structure.InstanceMethodCallOperation" flags="nn" index="liA8E" />
@@ -124,7 +127,6 @@
       <concept id="1138411891628" name="jetbrains.mps.lang.smodel.structure.SNodeOperation" flags="nn" index="eCIE_">
         <child id="1144104376918" name="parameter" index="1xVPHs" />
       </concept>
-      <concept id="1179409122411" name="jetbrains.mps.lang.smodel.structure.Node_ConceptMethodCall" flags="nn" index="2qgKlT" />
       <concept id="1171407110247" name="jetbrains.mps.lang.smodel.structure.Node_GetAncestorOperation" flags="nn" index="2Xjw5R" />
       <concept id="1139621453865" name="jetbrains.mps.lang.smodel.structure.Node_IsInstanceOfOperation" flags="nn" index="1mIQ4w">
         <child id="1177027386292" name="conceptArgument" index="cj9EA" />
@@ -216,7 +218,7 @@
               <node concept="1YBJjd" id="2IN247dym_J" role="2Oq$k0">
                 <ref role="1YBMHb" node="2IN247dyjmR" resolve="mC" />
               </node>
-              <node concept="2qgKlT" id="2IN247dynxR" role="2OqNvi">
+              <node concept="3zqWPK" id="5DJjBfj0bBP" role="2OqNvi">
                 <ref role="37wK5l" to="2k20:3GbuJrdLq2n" resolve="mappingSection" />
               </node>
             </node>
@@ -227,7 +229,7 @@
               <node concept="1YBJjd" id="2IN247dyk62" role="2Oq$k0">
                 <ref role="1YBMHb" node="2IN247dyjmR" resolve="mC" />
               </node>
-              <node concept="2qgKlT" id="2IN247dyl4p" role="2OqNvi">
+              <node concept="3zqWPK" id="5DJjBfj0bBR" role="2OqNvi">
                 <ref role="37wK5l" to="2k20:3GbuJrdLq2$" resolve="instanceSection" />
               </node>
             </node>
@@ -320,7 +322,7 @@
             <node concept="1YBJjd" id="JbnHRljv_g" role="2Oq$k0">
               <ref role="1YBMHb" node="JbnHRlg2Un" resolve="cM" />
             </node>
-            <node concept="2qgKlT" id="JbnHRljwiJ" role="2OqNvi">
+            <node concept="3zqWPK" id="5DJjBfj0bBT" role="2OqNvi">
               <ref role="37wK5l" to="2k20:JbnHRljhvc" resolve="getTopLevelMappingSource" />
             </node>
           </node>
@@ -336,7 +338,7 @@
             <node concept="1YBJjd" id="JbnHRljwzb" role="2Oq$k0">
               <ref role="1YBMHb" node="JbnHRlg2Un" resolve="cM" />
             </node>
-            <node concept="2qgKlT" id="JbnHRljxbK" role="2OqNvi">
+            <node concept="3zqWPK" id="5DJjBfj0bBV" role="2OqNvi">
               <ref role="37wK5l" to="2k20:JbnHRljrx6" resolve="getTopLevelMappingTarget" />
             </node>
           </node>
@@ -436,7 +438,7 @@
             <node concept="1YBJjd" id="JbnHRlzTz_" role="2Oq$k0">
               <ref role="1YBMHb" node="JbnHRlrCqx" resolve="mS" />
             </node>
-            <node concept="2qgKlT" id="JbnHRlzZh5" role="2OqNvi">
+            <node concept="3zqWPK" id="5DJjBfj0bBX" role="2OqNvi">
               <ref role="37wK5l" to="2k20:JbnHRlzXw3" resolve="mappingContainer" />
             </node>
           </node>
@@ -458,7 +460,7 @@
             <node concept="37vLTw" id="JbnHRlzTzE" role="2Oq$k0">
               <ref role="3cqZAo" node="JbnHRlzTzz" resolve="cont" />
             </node>
-            <node concept="2qgKlT" id="JbnHRlzRXO" role="2OqNvi">
+            <node concept="3zqWPK" id="5DJjBfj0bBZ" role="2OqNvi">
               <ref role="37wK5l" to="2k20:3GbuJrdLq2$" resolve="instanceSection" />
             </node>
           </node>
@@ -509,7 +511,7 @@
                 <node concept="1YBJjd" id="3hobjyQnUL$" role="2Oq$k0">
                   <ref role="1YBMHb" node="5am5hXlURGg" resolve="mIS" />
                 </node>
-                <node concept="2qgKlT" id="3hobjyQnUJC" role="2OqNvi">
+                <node concept="3zqWPK" id="5DJjBfj0bC1" role="2OqNvi">
                   <ref role="37wK5l" to="2k20:JbnHRlz9T4" resolve="getFuncCompInstances" />
                 </node>
               </node>
@@ -741,7 +743,7 @@
               <node concept="1YBJjd" id="5SW3EVPjt7X" role="2Oq$k0">
                 <ref role="1YBMHb" node="5SW3EVPj3UH" resolve="cM" />
               </node>
-              <node concept="2qgKlT" id="5SW3EVPjt7Y" role="2OqNvi">
+              <node concept="3zqWPK" id="5DJjBfj0bC3" role="2OqNvi">
                 <ref role="37wK5l" to="2k20:JbnHRljhvc" resolve="getTopLevelMappingSource" />
               </node>
             </node>

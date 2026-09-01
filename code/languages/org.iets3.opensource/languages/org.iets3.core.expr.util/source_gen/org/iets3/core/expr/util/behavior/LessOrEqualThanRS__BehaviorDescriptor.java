@@ -8,14 +8,12 @@ import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import org.jetbrains.mps.openapi.model.SNode;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import java.util.List;
 import java.util.Arrays;
 import org.jetbrains.annotations.NotNull;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
-import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 import jetbrains.mps.smodel.builder.SNodeBuilder;
@@ -25,12 +23,10 @@ import org.jetbrains.mps.openapi.language.SConcept;
 public final class LessOrEqualThanRS__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getConcept(0x8bb1251eeae547abL, 0x984333adfae8edaaL, 0x17752c05dc5cb1d0L, "org.iets3.core.expr.util.structure.LessOrEqualThanRS");
 
-  public static final SMethod<SNode> createExpression_id1tPb0nsnb6P = new SMethodBuilder<SNode>(new SJavaCompoundTypeImpl((Class<SNode>) ((Class) Object.class))).name("createExpresion").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(1690305638831010229L).languageId(0x984333adfae8edaaL, 0x8bb1251eeae547abL).build2(SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""));
+  public static final SMethod<SNode> createExpression_id1tPb0nsnb6P = new SMethodBuilder<>(SNode.class).name("createExpresion").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(1690305638831010229L).languageId(0x984333adfae8edaaL, 0x8bb1251eeae547abL).build2(SMethodBuilder.createJavaParameter(SNode.class, "subject"));
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(createExpression_id1tPb0nsnb6P);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(createExpression_id1tPb0nsnb6P);
 
-  private static void ___init___(@NotNull SNode __thisNode__) {
-  }
 
   /*package*/ static SNode createExpression_id1tPb0nsnb6P(@NotNull SNode __thisNode__, SNode subject) {
     return createLessEqualsExpression_c6fuvv_a0a0(SNodeOperations.copyNode(subject), SNodeOperations.copyNode(SLinkOperations.getTarget(__thisNode__, LINKS.bound$dvCq)));
@@ -39,10 +35,6 @@ public final class LessOrEqualThanRS__BehaviorDescriptor extends BaseBHDescripto
   /*package*/ LessOrEqualThanRS__BehaviorDescriptor() {
   }
 
-  @Override
-  protected void initNode(@NotNull SNode node, @NotNull SConstructor constructor, @Nullable Object[] parameters) {
-    ___init___(node);
-  }
 
   @Override
   protected <T> T invokeSpecial0(@NotNull SNode node, @NotNull SMethod<T> method, @Nullable Object[] parameters) {
