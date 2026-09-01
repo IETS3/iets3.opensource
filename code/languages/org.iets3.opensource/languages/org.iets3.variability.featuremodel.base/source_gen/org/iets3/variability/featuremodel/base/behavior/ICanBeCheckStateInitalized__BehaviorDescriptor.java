@@ -7,37 +7,29 @@ import org.jetbrains.mps.openapi.language.SAbstractConcept;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import org.jetbrains.mps.openapi.language.SEnumerationLiteral;
 import java.util.List;
 import java.util.Arrays;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.mps.openapi.model.SNode;
-import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 
 public final class ICanBeCheckStateInitalized__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getInterfaceConcept(0x165f1d0525064544L, 0x895e1424f54166ecL, 0x1b324167a4b7ff70L, "org.iets3.variability.featuremodel.base.structure.ICanBeCheckStateInitalized");
 
-  public static final SMethod<Boolean> isFeatureSelectionStateInitializable_id1GMgmu$HZYe = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("isFeatureSelectionStateInitializable").modifiers(12, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(1959700701260545934L).languageId(0x895e1424f54166ecL, 0x165f1d0525064544L).build2();
-  public static final SMethod<SEnumerationLiteral> defaultFeatureSelectionState_id1GMgmu$U9$5 = new SMethodBuilder<SEnumerationLiteral>(new SJavaCompoundTypeImpl((Class<SEnumerationLiteral>) ((Class) Object.class))).name("defaultFeatureSelectionState").modifiers(12, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(1959700701263730949L).languageId(0x895e1424f54166ecL, 0x165f1d0525064544L).build2();
-  public static final SMethod<Void> setDefaultCheckState_id1GMgmu$Up$S = new SMethodBuilder<Void>(new SJavaCompoundTypeImpl(Void.class)).name("setDefaultCheckState").modifiers(12, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(1959700701263796536L).languageId(0x895e1424f54166ecL, 0x165f1d0525064544L).build2(SMethodBuilder.createJavaParameter((Class<SEnumerationLiteral>) ((Class) Object.class), ""));
+  public static final SMethod<Boolean> isFeatureSelectionStateInitializable_id1GMgmu$HZYe = new SMethodBuilder<>(Boolean.TYPE).name("isFeatureSelectionStateInitializable").modifiers(12, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(1959700701260545934L).languageId(0x895e1424f54166ecL, 0x165f1d0525064544L).build2();
+  public static final SMethod<SEnumerationLiteral> defaultFeatureSelectionState_id1GMgmu$U9$5 = new SMethodBuilder<>(SEnumerationLiteral.class).name("defaultFeatureSelectionState").modifiers(12, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(1959700701263730949L).languageId(0x895e1424f54166ecL, 0x165f1d0525064544L).build2();
+  public static final SMethod<Void> setDefaultCheckState_id1GMgmu$Up$S = new SMethodBuilder<>(Void.TYPE).name("setDefaultCheckState").modifiers(12, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(1959700701263796536L).languageId(0x895e1424f54166ecL, 0x165f1d0525064544L).build2(SMethodBuilder.createJavaParameter(SEnumerationLiteral.class, "newState"));
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(isFeatureSelectionStateInitializable_id1GMgmu$HZYe, defaultFeatureSelectionState_id1GMgmu$U9$5, setDefaultCheckState_id1GMgmu$Up$S);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(isFeatureSelectionStateInitializable_id1GMgmu$HZYe, defaultFeatureSelectionState_id1GMgmu$U9$5, setDefaultCheckState_id1GMgmu$Up$S);
 
-  private static void ___init___(@NotNull SNode __thisNode__) {
-  }
 
 
   /*package*/ ICanBeCheckStateInitalized__BehaviorDescriptor() {
   }
 
-  @Override
-  protected void initNode(@NotNull SNode node, @NotNull SConstructor constructor, @Nullable Object[] parameters) {
-    ___init___(node);
-  }
 
   @Override
   protected <T> T invokeSpecial0(@NotNull SNode node, @NotNull SMethod<T> method, @Nullable Object[] parameters) {

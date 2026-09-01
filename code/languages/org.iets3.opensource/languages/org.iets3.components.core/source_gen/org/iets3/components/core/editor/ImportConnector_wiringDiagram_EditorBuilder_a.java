@@ -195,7 +195,7 @@ import org.jetbrains.mps.openapi.language.SConcept;
     return diagramCell.value;
   }
   private EditorCell createDiagramConnector_1() {
-    return createDiagramConnector_0(getEditorContext(), myNode);
+    return createDiagramConnector_0(getEditorContext(), getNode());
   }
   private Color _StyleParameter_QueryFunction_v2h6h_a0a() {
     Color cc = IPortType__BehaviorDescriptor.characteristicColor_idmIQkxg4rmC.invoke(SLinkOperations.getTarget(AbstractConnectorBase__BehaviorDescriptor.getGoverningPort_idmIQkxg5V$2.invoke(getNode()), LINKS.type$5Gl6));

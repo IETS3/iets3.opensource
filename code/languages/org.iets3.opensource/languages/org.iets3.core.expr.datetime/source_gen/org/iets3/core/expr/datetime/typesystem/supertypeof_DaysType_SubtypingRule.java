@@ -27,9 +27,6 @@ public class supertypeof_DaysType_SubtypingRule extends SubtypingRule_Runtime im
   public boolean isWeak() {
     return false;
   }
-  public boolean surelyKeepsConcept() {
-    return true;
-  }
   private static SNode createDateDeltaType_6lisi4_a0a1() {
     SNodeBuilder n0 = new SNodeBuilder().init(CONCEPTS.DateDeltaType$BG);
     return n0.getResult();

@@ -33,7 +33,7 @@ import jetbrains.mps.nodeEditor.MPSColors;
 import jetbrains.mps.baseLanguage.closures.runtime.Wrappers;
 import de.slisson.mps.tables.runtime.cells.TableEditor;
 import jetbrains.mps.baseLanguage.closures.runtime._FunctionTypes;
-import de.slisson.mps.tables.runtime.cells.CellCaching;
+import de.slisson.mps.hacks.editor.EditorCacheHacks;
 import de.slisson.mps.tables.runtime.cells.ChildsTracker;
 import de.slisson.mps.tables.runtime.cells.PartialTableExtractor;
 import de.slisson.mps.tables.runtime.gridmodel.Grid;
@@ -45,7 +45,6 @@ import de.slisson.mps.tables.runtime.gridmodel.GridAdapter;
 import de.slisson.mps.tables.runtime.gridmodel.IHeaderNodeInsertAction;
 import de.slisson.mps.tables.runtime.gridmodel.ChildNodesInsertAction;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
-import de.slisson.mps.tables.runtime.cells.TableUtils;
 import jetbrains.mps.openapi.editor.cells.SubstituteInfo;
 import de.slisson.mps.hacks.editor.SubstituteUtil;
 import jetbrains.mps.internal.collections.runtime.ListSequence;
@@ -91,7 +90,7 @@ import org.jetbrains.mps.openapi.language.SContainmentLink;
     EditorCell_Collection editorCell = new EditorCell_Collection(getEditorContext(), myNode, new CellLayout_Vertical());
     editorCell.setCellId("Collection_tcy191_a0");
     editorCell.addEditorCell(createCollection_2());
-    editorCell.addEditorCell(createHorizontalLineCell_1());
+    editorCell.addEditorCell(createHorizontalLineCell_0());
     editorCell.addEditorCell(createConstant_1());
     editorCell.addEditorCell(createTable_1());
     return editorCell;
@@ -136,16 +135,13 @@ import org.jetbrains.mps.openapi.language.SContainmentLink;
       getCellFactory().popCellContext();
     }
   }
-  private EditorCell createHorizontalLineCell_0(EditorContext editorContext, SNode node) {
-    HorizontalLineCell editorCell = new HorizontalLineCell(editorContext, node);
+  private EditorCell createHorizontalLineCell_0() {
+    HorizontalLineCell editorCell = new HorizontalLineCell(getEditorContext(), getNode());
     editorCell.setCellId("HorizontalLineCell_tcy191_b0a");
     Style style = new StyleImpl();
     style.set(StyleAttributes.getInstance().<Color>getAttribute("de.itemis.mps.editor.celllayout.styles", "_horizontal-line-color"), getStyleRegistry().getSimpleColor(MPSColors.gray));
     editorCell.getStyle().putAll(style);
     return editorCell;
-  }
-  private EditorCell createHorizontalLineCell_1() {
-    return createHorizontalLineCell_0(getEditorContext(), myNode);
   }
   private EditorCell createConstant_1() {
     EditorCell_Constant editorCell = new EditorCell_Constant(getEditorContext(), myNode, "");
@@ -161,7 +157,7 @@ import org.jetbrains.mps.openapi.language.SContainmentLink;
 
     final Wrappers._T<TableEditor> editorCell = new Wrappers._T<TableEditor>(null);
     _FunctionTypes._void_P0_E0 creator = () -> {
-      CellCaching.maybeDisableCache(node, editorContext, () -> {
+      EditorCacheHacks.noCaching(editorContext, () -> {
         try {
 
           ChildsTracker.pushNewInstance();
@@ -211,7 +207,7 @@ import org.jetbrains.mps.openapi.language.SContainmentLink;
 
   }
   private EditorCell createTable_1() {
-    return createTable_0(getEditorContext(), myNode);
+    return createTable_0(getEditorContext(), getNode());
   }
   public Grid createChildsVertical_tcy191_a3a0(final EditorContext editorContext, final SNode node) {
     Grid grid = new Grid();
@@ -228,7 +224,7 @@ import org.jetbrains.mps.openapi.language.SContainmentLink;
       Iterable<SNode> elements = SLinkOperations.getChildren(node, LINKS.users$xt8D);
       for (SNode child : Sequence.fromIterable(elements)) {
         final int yFinal = y;
-        EditorCell cell = TableUtils.createNodeCell(editorContext, child);
+        EditorCell cell = editorContext.getEditorComponent().getUpdater().getCurrentUpdateSession().updateChildNodeCell(child);
         ChildsTracker.getInstance().registerChild(cell);
         SubstituteInfo substituteInfo = SubstituteUtil.forChild(editorContext, node, (y < ListSequence.fromList(SLinkOperations.getChildren(node, LINKS.users$xt8D)).count() ? ListSequence.fromList(SLinkOperations.getChildren(node, LINKS.users$xt8D)).getElement(y) : null), LINKS.users$xt8D);
         cell.setSubstituteInfo(substituteInfo);

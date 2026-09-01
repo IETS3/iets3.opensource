@@ -10,7 +10,7 @@ import jetbrains.mps.openapi.editor.cells.EditorCell;
 import jetbrains.mps.baseLanguage.closures.runtime.Wrappers;
 import de.slisson.mps.tables.runtime.cells.TableEditor;
 import jetbrains.mps.baseLanguage.closures.runtime._FunctionTypes;
-import de.slisson.mps.tables.runtime.cells.CellCaching;
+import de.slisson.mps.hacks.editor.EditorCacheHacks;
 import de.slisson.mps.tables.runtime.cells.ChildsTracker;
 import de.slisson.mps.tables.runtime.cells.PartialTableExtractor;
 import de.slisson.mps.tables.runtime.gridmodel.Grid;
@@ -26,7 +26,6 @@ import de.slisson.mps.tables.runtime.gridmodel.IHeaderNodeInsertAction;
 import de.slisson.mps.tables.runtime.gridmodel.ChildNodesInsertAction;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
 import jetbrains.mps.internal.collections.runtime.Sequence;
-import de.slisson.mps.tables.runtime.cells.TableUtils;
 import jetbrains.mps.openapi.editor.cells.SubstituteInfo;
 import de.slisson.mps.hacks.editor.SubstituteUtil;
 import de.slisson.mps.tables.runtime.gridmodel.IGridElement;
@@ -80,7 +79,7 @@ import org.jetbrains.mps.openapi.language.SProperty;
 
     final Wrappers._T<TableEditor> editorCell = new Wrappers._T<TableEditor>(null);
     _FunctionTypes._void_P0_E0 creator = () -> {
-      CellCaching.maybeDisableCache(node, editorContext, () -> {
+      EditorCacheHacks.noCaching(editorContext, () -> {
         try {
 
           ChildsTracker.pushNewInstance();
@@ -132,7 +131,7 @@ import org.jetbrains.mps.openapi.language.SProperty;
 
   }
   private EditorCell createTable_1() {
-    return createTable_0(getEditorContext(), myNode);
+    return createTable_0(getEditorContext(), getNode());
   }
   public Grid createStaticVertical_wguyup_a0(final EditorContext editorContext, final SNode node) {
     Grid grid = new Grid();
@@ -179,7 +178,7 @@ import org.jetbrains.mps.openapi.language.SProperty;
       Iterable<SNode> elements = SLinkOperations.getChildren(node, LINKS.contents$oelO);
       for (SNode child : Sequence.fromIterable(elements)) {
         final int yFinal = y;
-        EditorCell cell = TableUtils.createNodeCell(editorContext, child);
+        EditorCell cell = editorContext.getEditorComponent().getUpdater().getCurrentUpdateSession().updateChildNodeCell(child);
         ChildsTracker.getInstance().registerChild(cell);
         SubstituteInfo substituteInfo = SubstituteUtil.forChild(editorContext, node, (y < ListSequence.fromList(SLinkOperations.getChildren(node, LINKS.contents$oelO)).count() ? ListSequence.fromList(SLinkOperations.getChildren(node, LINKS.contents$oelO)).getElement(y) : null), LINKS.contents$oelO);
         cell.setSubstituteInfo(substituteInfo);

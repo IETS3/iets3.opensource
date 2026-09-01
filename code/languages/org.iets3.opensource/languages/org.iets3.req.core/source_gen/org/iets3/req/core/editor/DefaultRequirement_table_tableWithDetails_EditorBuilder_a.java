@@ -64,7 +64,6 @@ import de.slisson.mps.tables.runtime.gridmodel.GridAdapter;
 import de.slisson.mps.tables.runtime.gridmodel.IHeaderNodeInsertAction;
 import de.slisson.mps.tables.runtime.gridmodel.ChildNodesInsertAction;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
-import de.slisson.mps.tables.runtime.cells.TableUtils;
 import jetbrains.mps.openapi.editor.cells.SubstituteInfo;
 import de.slisson.mps.hacks.editor.SubstituteUtil;
 import de.slisson.mps.tables.runtime.gridmodel.IGridElement;
@@ -132,7 +131,7 @@ import org.jetbrains.mps.openapi.language.SConcept;
     }
   }
   private EditorCell createPartialTable_1() {
-    return createPartialTable_0(getEditorContext(), myNode);
+    return createPartialTable_0(getEditorContext(), getNode());
   }
   public Grid createStaticVertical_1e1faw_a0(final EditorContext editorContext, final SNode node) {
     if (!(new Object() {
@@ -806,7 +805,7 @@ import org.jetbrains.mps.openapi.language.SConcept;
       Iterable<SNode> elements = SLinkOperations.getChildren(node, LINKS.requirements$OjTk);
       for (SNode child : Sequence.fromIterable(elements)) {
         final int yFinal = y;
-        EditorCell cell = TableUtils.createNodeCell(editorContext, child);
+        EditorCell cell = editorContext.getEditorComponent().getUpdater().getCurrentUpdateSession().updateChildNodeCell(child);
         ChildsTracker.getInstance().registerChild(cell);
         SubstituteInfo substituteInfo = SubstituteUtil.forChild(editorContext, node, (y < ListSequence.fromList(SLinkOperations.getChildren(node, LINKS.requirements$OjTk)).count() ? ListSequence.fromList(SLinkOperations.getChildren(node, LINKS.requirements$OjTk)).getElement(y) : null), LINKS.requirements$OjTk);
         cell.setSubstituteInfo(substituteInfo);

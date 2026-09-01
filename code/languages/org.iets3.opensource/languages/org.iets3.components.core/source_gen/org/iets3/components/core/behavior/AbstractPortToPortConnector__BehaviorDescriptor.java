@@ -9,27 +9,23 @@ import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import jetbrains.mps.baseLanguage.tuples.runtime.Tuples;
 import org.jetbrains.mps.openapi.model.SNode;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import java.util.List;
 import java.util.Arrays;
 import org.jetbrains.annotations.NotNull;
-import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 
 public final class AbstractPortToPortConnector__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getConcept(0xf0fd486f857743e9L, 0xb6713d118449c6e7L, 0x5aed9485017fe26L, "org.iets3.components.core.structure.AbstractPortToPortConnector");
 
-  public static final SMethod<Tuples._2<SNode, SNode>> getPorts_idmIQkxg5ZT6 = new SMethodBuilder<Tuples._2<SNode, SNode>>(new SJavaCompoundTypeImpl((Class<Tuples._2<SNode, SNode>>) ((Class) Object.class))).name("getPorts").modifiers(12, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(409503520741916230L).languageId(0xb6713d118449c6e7L, 0xf0fd486f857743e9L).build2();
-  public static final SMethod<SNode> getOtherPort_id7nsgDAXAO1M = new SMethodBuilder<SNode>(new SJavaCompoundTypeImpl((Class<SNode>) ((Class) Object.class))).name("getOtherPort").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(8492736225392410738L).languageId(0xb6713d118449c6e7L, 0xf0fd486f857743e9L).build2(SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""));
-  public static final SMethod<SNode> getTarget_id3E8pWteyf_5 = new SMethodBuilder<SNode>(new SJavaCompoundTypeImpl((Class<SNode>) ((Class) Object.class))).name("getTarget").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(4217735156746221893L).languageId(0xb6713d118449c6e7L, 0xf0fd486f857743e9L).build2();
-  public static final SMethod<SNode> getInstanceForPort_id4VHfdEqkeO4 = new SMethodBuilder<SNode>(new SJavaCompoundTypeImpl((Class<SNode>) ((Class) Object.class))).name("getInstanceForPort").modifiers(12, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5687268814028336388L).languageId(0xb6713d118449c6e7L, 0xf0fd486f857743e9L).build2(SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""));
+  public static final SMethod<Tuples._2<SNode, SNode>> getPorts_idmIQkxg5ZT6 = new SMethodBuilder<>((Class<Tuples._2<SNode, SNode>>) ((Class) Object.class)).name("getPorts").modifiers(12, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(409503520741916230L).languageId(0xb6713d118449c6e7L, 0xf0fd486f857743e9L).build2();
+  public static final SMethod<SNode> getOtherPort_id7nsgDAXAO1M = new SMethodBuilder<>(SNode.class).name("getOtherPort").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(8492736225392410738L).languageId(0xb6713d118449c6e7L, 0xf0fd486f857743e9L).build2(SMethodBuilder.createJavaParameter(SNode.class, "port"));
+  public static final SMethod<SNode> getTarget_id3E8pWteyf_5 = new SMethodBuilder<>(SNode.class).name("getTarget").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(4217735156746221893L).languageId(0xb6713d118449c6e7L, 0xf0fd486f857743e9L).build2();
+  public static final SMethod<SNode> getInstanceForPort_id4VHfdEqkeO4 = new SMethodBuilder<>(SNode.class).name("getInstanceForPort").modifiers(12, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5687268814028336388L).languageId(0xb6713d118449c6e7L, 0xf0fd486f857743e9L).build2(SMethodBuilder.createJavaParameter(SNode.class, "port"));
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(getPorts_idmIQkxg5ZT6, getOtherPort_id7nsgDAXAO1M, getTarget_id3E8pWteyf_5, getInstanceForPort_id4VHfdEqkeO4);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(getPorts_idmIQkxg5ZT6, getOtherPort_id7nsgDAXAO1M, getTarget_id3E8pWteyf_5, getInstanceForPort_id4VHfdEqkeO4);
 
-  private static void ___init___(@NotNull SNode __thisNode__) {
-  }
 
   /*package*/ static SNode getOtherPort_id7nsgDAXAO1M(@NotNull SNode __thisNode__, SNode port) {
     Tuples._2<SNode, SNode> ports = AbstractPortToPortConnector__BehaviorDescriptor.getPorts_idmIQkxg5ZT6.invoke(__thisNode__);
@@ -48,10 +44,6 @@ public final class AbstractPortToPortConnector__BehaviorDescriptor extends BaseB
   /*package*/ AbstractPortToPortConnector__BehaviorDescriptor() {
   }
 
-  @Override
-  protected void initNode(@NotNull SNode node, @NotNull SConstructor constructor, @Nullable Object[] parameters) {
-    ___init___(node);
-  }
 
   @Override
   protected <T> T invokeSpecial0(@NotNull SNode node, @NotNull SMethod<T> method, @Nullable Object[] parameters) {
