@@ -17,7 +17,7 @@ import org.jetbrains.annotations.NotNull;
 import jetbrains.mps.nodeEditor.EditorComponent;
 
 public class ShowCoverage_Action extends BaseAction {
-  private static final Icon ICON = IconContainer.ICON_a0_2;
+  private static final Icon ICON = IconContainer.ICON3;
 
   public ShowCoverage_Action() {
     super("Show Coverage", "", ICON);
