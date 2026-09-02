@@ -218,7 +218,7 @@ import org.jetbrains.mps.openapi.language.SInterfaceConcept;
       getCellFactory().pushCellContext();
       try {
         getCellFactory().setNodeLocation(new SNodeLocation.FromNode(node));
-        cell = createCellDuplicatesSafe(() -> context.getEditorComponent().getUpdater().getCurrentUpdateSession().updateReferencedNodeCell(() -> context.getEditorComponent().getUpdater().getCurrentUpdateSession().updateChildNodeCell(node), node, new DummyReferenceLink("querylist5435774817844400902")));
+        cell = createCellDuplicatesSafe(() -> context.getEditorComponent().getUpdater().getCurrentUpdateSession().updateReferencedNodeCell(() -> context.getEditorComponent().getUpdater().getCurrentUpdateSession().updateChildNodeCell(node), node, new DummyReferenceLink("querylist5100567051571656530")));
       } finally {
         getCellFactory().popCellContext();
       }
