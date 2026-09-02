@@ -5,6 +5,12 @@ All notable changes to this project are documented in this file.
 Format of the log is _loosely_ based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 The project does _not_ follow Semantic Versioning and the changes are documented in reverse chronological order, grouped by calendar month.
 
+## September 2026
+
+### Fixed
+- KernelF: `renderReadable()` of the `isIn`/`isNotIn` enumeration dot targets rendered `isIn([, , ])` instead of `isIn(blue, green, red)`: the separator was joined onto each selector's presentation instead of onto the sequence, which resolved to the varargs `String.join(CharSequence, CharSequence...)` with no elements.
+- KernelF: the `is`/`isIn` enumeration dot targets are backwards compatible with models that have not run the "move link up" migration of the `EnumIsTarget`/`EnumIsInTarget` refactoring yet. `EnumIsTarget` and `EnumIsInTarget` now have their own editors that show the deprecated `literal_old`/`selectors_old` elements in red, hidden as soon as the deprecated reference/child is empty. Behavior, generator and interpreter read the value through the new `AbstractEnumSingleInTarget.effectiveLiteral()`/`AbstractEnumInTarget.effectiveSelectors()` behavior methods, which the two legacy concepts override to fall back to the deprecated link, so an unmigrated model still renders, interprets and generates correctly.
+
 ## August 2026
 
 ### Fixed
