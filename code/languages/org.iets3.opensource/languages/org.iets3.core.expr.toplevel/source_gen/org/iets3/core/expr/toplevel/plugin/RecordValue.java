@@ -7,8 +7,8 @@ import java.util.Map;
 import jetbrains.mps.internal.collections.runtime.MapSequence;
 import java.util.HashMap;
 import org.jetbrains.mps.openapi.model.SNode;
-import jetbrains.mps.internal.collections.runtime.IMapping;
 import java.util.Objects;
+import jetbrains.mps.internal.collections.runtime.IMapping;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations;
 import jetbrains.mps.internal.collections.runtime.Sequence;
 import jetbrains.mps.internal.collections.runtime.ListSequence;
@@ -65,7 +65,7 @@ public class RecordValue implements IRecordValue, Comparable<RecordValue> {
   public boolean equals(Object object) {
     if (object instanceof RecordValue) {
       RecordValue rv = ((RecordValue) object);
-      if (this.recordDeclaration != rv.recordDeclaration()) {
+      if (!(Objects.equals(this.recordDeclaration, rv.recordDeclaration()))) {
         return false;
       }
       if (MapSequence.fromMap(this.memberData).count() != MapSequence.fromMap(rv.memberData).count()) {
