@@ -19,7 +19,7 @@ public interface ICopyLogic {
   /**
    * This method is useful for creating an instance from 'templateNode'.
    * After instance creation 'instantionOftemplateNode' must reference this instance.
-   * Any 'expression' which referenced a internal declaration of the templateNode must be adopted. It should now point to 
+   * Any 'expression' which referenced a internal declaration of the templateNode must be adopted. It should now point to
    * internals of the instance copy.
    * 
    * @param templateNode nodes to be copied

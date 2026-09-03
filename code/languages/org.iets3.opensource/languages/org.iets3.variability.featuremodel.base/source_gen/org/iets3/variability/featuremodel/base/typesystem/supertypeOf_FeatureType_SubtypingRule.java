@@ -30,9 +30,6 @@ public class supertypeOf_FeatureType_SubtypingRule extends SubtypingRule_Runtime
   public boolean isWeak() {
     return false;
   }
-  public boolean surelyKeepsConcept() {
-    return true;
-  }
 
   private static final class LINKS {
     /*package*/ static final SReferenceLink feature$SwK2 = MetaAdapterFactory.getReferenceLink(0x165f1d0525064544L, 0x895e1424f54166ecL, 0x7cde27c7fd8487c2L, 0x7cde27c7fd8487ccL, "feature");

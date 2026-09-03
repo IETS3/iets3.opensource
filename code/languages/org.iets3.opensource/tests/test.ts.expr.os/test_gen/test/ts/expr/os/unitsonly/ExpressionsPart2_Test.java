@@ -426,11 +426,11 @@ public class ExpressionsPart2_Test extends BaseTransformationTest {
       SNode actualType = TypecheckingFacade.getFromContext().getTypeOf(node);
       Assert.assertTrue(String.format("Expected type of node %s is TaggedType, but was %s", node, actualType), SNodeOperations.isInstanceOf(actualType, CONCEPTS.TaggedType$O4));
       SNode actualTaggedType = SNodeOperations.cast(actualType, CONCEPTS.TaggedType$O4);
-      Assert.assertEquals("Tag size of type " + BaseConcept__BehaviorDescriptor.getPresentation_idhEwIMiw.invoke(actualType) + " must be 1", 1, ListSequence.fromList(SLinkOperations.getChildren(actualTaggedType, LINKS.tags$Lx_i)).count());
+      Assert.assertEquals("Tag size of type " + BaseConcept__BehaviorDescriptor.getPresentation_idhEwIMiw.invoke(actualType) + " must be 1", Integer.valueOf(1), Integer.valueOf(ListSequence.fromList(SLinkOperations.getChildren(actualTaggedType, LINKS.tags$Lx_i)).count()));
       SNode tag = ListSequence.fromList(SLinkOperations.getChildren(actualTaggedType, LINKS.tags$Lx_i)).first();
       Assert.assertTrue(String.format("The tag of of type %s must be UnitSpecification, but was %s", actualTaggedType, tag), SNodeOperations.isInstanceOf(tag, CONCEPTS.UnitSpecification$DK));
       List<SNode> actualUnitReferences = SLinkOperations.getChildren(SNodeOperations.cast(tag, CONCEPTS.UnitSpecification$DK), LINKS.components$SDyb);
-      Assert.assertEquals("Wrong number of unit references found", expectedUnitReferences.length, ListSequence.fromList(actualUnitReferences).count());
+      Assert.assertEquals("Wrong number of unit references found", Integer.valueOf(expectedUnitReferences.length), Integer.valueOf(ListSequence.fromList(actualUnitReferences).count()));
       List<SNode> sortedExpectedUnitReferences = Sequence.fromIterable(Sequence.fromArray(expectedUnitReferences)).sort((it) -> SPropertyOperations.getString(SLinkOperations.getTarget(it, LINKS.unit$3rM9), PROPS.name$MnvL), true).toList();
       List<SNode> sortedActualUnitReferences = ListSequence.fromList(actualUnitReferences).sort((it) -> SPropertyOperations.getString(SLinkOperations.getTarget(it, LINKS.unit$3rM9), PROPS.name$MnvL), true).toList();
       for (int i = 0; i < ListSequence.fromList(sortedExpectedUnitReferences).count(); i++) {

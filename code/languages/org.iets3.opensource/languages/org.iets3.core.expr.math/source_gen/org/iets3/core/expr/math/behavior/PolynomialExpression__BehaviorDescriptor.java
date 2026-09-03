@@ -9,7 +9,6 @@ import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import java.util.List;
 import org.iets3.core.expr.math.plugin.PolynomialExpressionPart;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import org.jetbrains.mps.openapi.model.SNode;
 import java.util.Arrays;
@@ -32,11 +31,11 @@ import org.jetbrains.mps.openapi.language.SConcept;
 public final class PolynomialExpression__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getConcept(0x6fadc44e69c24a4aL, 0x9d167ebf5f8d3ba0L, 0x3a00468f8b639e38L, "org.iets3.core.expr.math.structure.PolynomialExpression");
 
-  public static final SMethod<List<PolynomialExpressionPart>> partsOfPolynomial_id3iWt5egBKW6 = new SMethodBuilder<List<PolynomialExpressionPart>>(new SJavaCompoundTypeImpl(List.class)).name("partsOfPolynomial").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(3800040087851306758L).languageId(0x9d167ebf5f8d3ba0L, 0x6fadc44e69c24a4aL).build2();
-  /*package*/ static final SMethod<Boolean> minusBefore_id4wFKMWZf6e2 = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("minusBefore").modifiers(0, AccessPrivileges.PRIVATE).concept(CONCEPT).baseMethodId(5200464802421171074L).languageId(0x9d167ebf5f8d3ba0L, 0x6fadc44e69c24a4aL).build2(SMethodBuilder.createJavaParameter((Class<List<SNode>>) ((Class) Object.class), ""), SMethodBuilder.createJavaParameter(Integer.TYPE, ""));
-  public static final SMethod<List<SNode>> polynomFlattened_id3C0hCYbWgi0 = new SMethodBuilder<List<SNode>>(new SJavaCompoundTypeImpl((Class<List<SNode>>) ((Class) Object.class))).name("polynomFlattened").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(4179418036541916288L).languageId(0x9d167ebf5f8d3ba0L, 0x6fadc44e69c24a4aL).build2();
+  public static final SMethod<List<PolynomialExpressionPart>> partsOfPolynomial_id3iWt5egBKW6 = new SMethodBuilder<>((Class<List<PolynomialExpressionPart>>) ((Class) Object.class)).name("partsOfPolynomial").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(3800040087851306758L).languageId(0x9d167ebf5f8d3ba0L, 0x6fadc44e69c24a4aL).build2();
+  /*package*/ static final SMethod<Boolean> minusBefore_id4wFKMWZf6e2 = new SMethodBuilder<>(Boolean.TYPE).name("minusBefore").modifiers(0, AccessPrivileges.PRIVATE).concept(CONCEPT).baseMethodId(5200464802421171074L).languageId(0x9d167ebf5f8d3ba0L, 0x6fadc44e69c24a4aL).build2(SMethodBuilder.createJavaParameter((Class<List<SNode>>) ((Class) Object.class), "expressions"), SMethodBuilder.createJavaParameter(Integer.TYPE, "i"));
+  public static final SMethod<List<SNode>> polynomFlattened_id3C0hCYbWgi0 = new SMethodBuilder<>((Class<List<SNode>>) ((Class) Object.class)).name("polynomFlattened").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(4179418036541916288L).languageId(0x9d167ebf5f8d3ba0L, 0x6fadc44e69c24a4aL).build2();
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(partsOfPolynomial_id3iWt5egBKW6, minusBefore_id4wFKMWZf6e2, polynomFlattened_id3C0hCYbWgi0);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(partsOfPolynomial_id3iWt5egBKW6, minusBefore_id4wFKMWZf6e2, polynomFlattened_id3C0hCYbWgi0);
 
   private static void ___init___(@NotNull SNode __thisNode__) {
     SLinkOperations.setTarget(ListSequence.fromList(SLinkOperations.getChildren(__thisNode__, LINKS.args$8wKH)).getElement(0), LINKS.type$8xXf, createRealType_5d574i_a0a0a0());

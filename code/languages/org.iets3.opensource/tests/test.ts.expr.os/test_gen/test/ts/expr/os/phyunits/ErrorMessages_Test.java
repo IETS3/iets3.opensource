@@ -47,10 +47,6 @@ public class ErrorMessages_Test extends BaseTransformationTest {
     new TestBody(this).test_NodeCreateRealQuantityForCheck3653559821044678313();
   }
   @Test
-  public void test_NodeTypeSystemWarningCheck764670910967485454() throws Throwable {
-    new TestBody(this).test_NodeTypeSystemWarningCheck764670910967485454();
-  }
-  @Test
   public void test_NodeThereIsNoUnitToStripCheck764670910967485455() throws Throwable {
     new TestBody(this).test_NodeThereIsNoUnitToStripCheck764670910967485455();
   }
@@ -69,10 +65,6 @@ public class ErrorMessages_Test extends BaseTransformationTest {
   @Test
   public void test_NodeNoMatchingConversionSpecifierCheck8845370414185092365() throws Throwable {
     new TestBody(this).test_NodeNoMatchingConversionSpecifierCheck8845370414185092365();
-  }
-  @Test
-  public void test_NodeTypeSystemWarningCheck8845370414185092367() throws Throwable {
-    new TestBody(this).test_NodeTypeSystemWarningCheck8845370414185092367();
   }
   @Test
   public void test_NodeCannotConvertBetweenUnitsCheck8845370414185092368() throws Throwable {
@@ -141,13 +133,6 @@ public class ErrorMessages_Test extends BaseTransformationTest {
         new CheckExpectedMessageRunnable.CheckExpectedRuleMessageRunnable(nodeToCheck, MessageStatus.WARNING, new SNodePointer("r:d4f1532d-fc5c-419f-84ee-daef42867c8e(org.iets3.core.expr.typetags.physunits.typesystem)", "2617704529593263806"), "", myProject.getRepository(), myProject.getPlatform()).run();
       });
     }
-    public void test_NodeTypeSystemWarningCheck764670910967485454() throws Exception {
-      initTestNodes();
-      runWithinCommand(() -> {
-        SNode nodeToCheck = getNodeById("764670910967485340");
-        new CheckExpectedMessageRunnable.CheckExpectedTypesystemMessageRunnable(nodeToCheck, MessageStatus.WARNING, "", myProject.getRepository(), myProject.getPlatform()).run();
-      });
-    }
     public void test_NodeThereIsNoUnitToStripCheck764670910967485455() throws Exception {
       initTestNodes();
       runWithinCommand(() -> {
@@ -181,13 +166,6 @@ public class ErrorMessages_Test extends BaseTransformationTest {
       runWithinCommand(() -> {
         SNode nodeToCheck = getNodeById("8845370414185092358");
         new CheckExpectedMessageRunnable.CheckExpectedRuleMessageRunnable(nodeToCheck, MessageStatus.ERROR, new SNodePointer("r:d4f1532d-fc5c-419f-84ee-daef42867c8e(org.iets3.core.expr.typetags.physunits.typesystem)", "624957442818656662"), "", myProject.getRepository(), myProject.getPlatform()).run();
-      });
-    }
-    public void test_NodeTypeSystemWarningCheck8845370414185092367() throws Exception {
-      initTestNodes();
-      runWithinCommand(() -> {
-        SNode nodeToCheck = getNodeById("8845370414185092358");
-        new CheckExpectedMessageRunnable.CheckExpectedTypesystemMessageRunnable(nodeToCheck, MessageStatus.WARNING, "", myProject.getRepository(), myProject.getPlatform()).run();
       });
     }
     public void test_NodeCannotConvertBetweenUnitsCheck8845370414185092368() throws Exception {

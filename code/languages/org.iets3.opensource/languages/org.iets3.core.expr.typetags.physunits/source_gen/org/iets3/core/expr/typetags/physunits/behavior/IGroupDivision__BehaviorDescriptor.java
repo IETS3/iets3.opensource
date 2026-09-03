@@ -7,7 +7,6 @@ import org.jetbrains.mps.openapi.language.SAbstractConcept;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import org.jetbrains.mps.openapi.model.SNode;
 import java.util.List;
@@ -15,7 +14,6 @@ import java.util.Arrays;
 import org.jetbrains.annotations.NotNull;
 import jetbrains.mps.lang.core.behavior.BaseConcept__BehaviorDescriptor;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
-import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 import org.jetbrains.mps.openapi.language.SInterfaceConcept;
@@ -23,16 +21,14 @@ import org.jetbrains.mps.openapi.language.SInterfaceConcept;
 public final class IGroupDivision__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getInterfaceConcept(0x7ee265bd59864709L, 0x86ed2c6daa33cd8cL, 0x414a129fbfe5a55aL, "org.iets3.core.expr.typetags.physunits.structure.IGroupDivision");
 
-  public static final SMethod<String> getPresentation_idhEwIMiw = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("getPresentation").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(1213877396640L).languageId(0x9b92103b95ca8c0cL, 0xceab519525ea4f22L).build2();
-  public static final SMethod<SNode> getNumerator_id1JynhuWrSSG = new SMethodBuilder<SNode>(new SJavaCompoundTypeImpl((Class<SNode>) ((Class) Object.class))).name("getNumerator").modifiers(12, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(2009270740287721004L).languageId(0x86ed2c6daa33cd8cL, 0x7ee265bd59864709L).build2();
-  public static final SMethod<SNode> getDenominator_id1JynhuWrTer = new SMethodBuilder<SNode>(new SJavaCompoundTypeImpl((Class<SNode>) ((Class) Object.class))).name("getDenominator").modifiers(12, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(2009270740287722395L).languageId(0x86ed2c6daa33cd8cL, 0x7ee265bd59864709L).build2();
-  public static final SMethod<Boolean> convertableToMultiply_id15KrVXSxcF0 = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("convertableToMultiply").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(1256627164187773632L).languageId(0x86ed2c6daa33cd8cL, 0x7ee265bd59864709L).build2();
-  public static final SMethod<SNode> convertToMulIfPossible_id15KrVXSx2Vf = new SMethodBuilder<SNode>(new SJavaCompoundTypeImpl((Class<SNode>) ((Class) Object.class))).name("convertToMulIfPossible").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(1256627164187733711L).languageId(0x86ed2c6daa33cd8cL, 0x7ee265bd59864709L).build2();
+  public static final SMethod<String> getPresentation_idhEwIMiw = new SMethodBuilder<>(String.class).name("getPresentation").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(1213877396640L).languageId(0x9b92103b95ca8c0cL, 0xceab519525ea4f22L).build2();
+  public static final SMethod<SNode> getNumerator_id1JynhuWrSSG = new SMethodBuilder<>(SNode.class).name("getNumerator").modifiers(12, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(2009270740287721004L).languageId(0x86ed2c6daa33cd8cL, 0x7ee265bd59864709L).build2();
+  public static final SMethod<SNode> getDenominator_id1JynhuWrTer = new SMethodBuilder<>(SNode.class).name("getDenominator").modifiers(12, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(2009270740287722395L).languageId(0x86ed2c6daa33cd8cL, 0x7ee265bd59864709L).build2();
+  public static final SMethod<Boolean> convertableToMultiply_id15KrVXSxcF0 = new SMethodBuilder<>(Boolean.TYPE).name("convertableToMultiply").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(1256627164187773632L).languageId(0x86ed2c6daa33cd8cL, 0x7ee265bd59864709L).build2();
+  public static final SMethod<SNode> convertToMulIfPossible_id15KrVXSx2Vf = new SMethodBuilder<>(SNode.class).name("convertToMulIfPossible").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(1256627164187733711L).languageId(0x86ed2c6daa33cd8cL, 0x7ee265bd59864709L).build2();
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(getPresentation_idhEwIMiw, getNumerator_id1JynhuWrSSG, getDenominator_id1JynhuWrTer, convertableToMultiply_id15KrVXSxcF0, convertToMulIfPossible_id15KrVXSx2Vf);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(getPresentation_idhEwIMiw, getNumerator_id1JynhuWrSSG, getDenominator_id1JynhuWrTer, convertableToMultiply_id15KrVXSxcF0, convertToMulIfPossible_id15KrVXSx2Vf);
 
-  private static void ___init___(@NotNull SNode __thisNode__) {
-  }
 
   /*package*/ static String getPresentation_idhEwIMiw(@NotNull SNode __thisNode__) {
     return "(" + BaseConcept__BehaviorDescriptor.getDetailedPresentation_id22G2W3WJ92t.invoke(IGroupDivision__BehaviorDescriptor.getNumerator_id1JynhuWrSSG.invoke(__thisNode__)) + ")" + "/" + "(" + BaseConcept__BehaviorDescriptor.getDetailedPresentation_id22G2W3WJ92t.invoke(IGroupDivision__BehaviorDescriptor.getDenominator_id1JynhuWrTer.invoke(__thisNode__)) + ")";
@@ -63,10 +59,6 @@ public final class IGroupDivision__BehaviorDescriptor extends BaseBHDescriptor {
   /*package*/ IGroupDivision__BehaviorDescriptor() {
   }
 
-  @Override
-  protected void initNode(@NotNull SNode node, @NotNull SConstructor constructor, @Nullable Object[] parameters) {
-    ___init___(node);
-  }
 
   @Override
   protected <T> T invokeSpecial0(@NotNull SNode node, @NotNull SMethod<T> method, @Nullable Object[] parameters) {
