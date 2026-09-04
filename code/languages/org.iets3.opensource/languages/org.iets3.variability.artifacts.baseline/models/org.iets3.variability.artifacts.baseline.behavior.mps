@@ -41,6 +41,17 @@
         <child id="1082485599096" name="statements" index="9aQI4" />
       </concept>
       <concept id="1202948039474" name="jetbrains.mps.baseLanguage.structure.InstanceMethodCallOperation" flags="nn" index="liA8E" />
+      <concept id="1188207840427" name="jetbrains.mps.baseLanguage.structure.AnnotationInstance" flags="nn" index="2AHcQZ">
+        <reference id="1188208074048" name="annotation" index="2AI5Lk" />
+        <child id="1188214630783" name="value" index="2B76xF" />
+      </concept>
+      <concept id="1188208481402" name="jetbrains.mps.baseLanguage.structure.HasAnnotation" flags="ngI" index="2AJDlI">
+        <child id="1188208488637" name="annotation" index="2AJF6D" />
+      </concept>
+      <concept id="1188214545140" name="jetbrains.mps.baseLanguage.structure.AnnotationInstanceValue" flags="ng" index="2B6LJw">
+        <reference id="1188214555875" name="key" index="2B6OnR" />
+        <child id="1188214607812" name="value" index="2B70Vg" />
+      </concept>
       <concept id="1197027756228" name="jetbrains.mps.baseLanguage.structure.DotExpression" flags="nn" index="2OqwBi">
         <child id="1197027771414" name="operand" index="2Oq$k0" />
         <child id="1197027833540" name="operation" index="2OqNvi" />
@@ -428,6 +439,69 @@
           <node concept="zr_55" id="1xsXReQWwa1" role="zr_5Q">
             <ref role="zr_51" node="1xsXReQTvNY" resolve="filteredModels" />
           </node>
+        </node>
+      </node>
+      <node concept="2AHcQZ" id="4bZ3p5x0Kpt" role="2AJF6D">
+        <ref role="2AI5Lk" to="wyt6:~Deprecated" resolve="Deprecated" />
+        <node concept="2B6LJw" id="4bZ3p5x0KBl" role="2B76xF">
+          <ref role="2B6OnR" to="wyt6:~Deprecated.since()" resolve="since" />
+          <node concept="Xl_RD" id="4bZ3p5x0KE7" role="2B70Vg">
+            <property role="Xl_RC" value="9.2.2026" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="13i0hz" id="4bZ3p5x0GrM" role="13h7CS">
+      <property role="13i0it" value="true" />
+      <property role="TrG5h" value="postprocess" />
+      <node concept="37vLTG" id="4bZ3p5x0GrN" role="3clF46">
+        <property role="TrG5h" value="filteredModels" />
+        <node concept="_YKpA" id="4bZ3p5x0F2f" role="1tU5fm">
+          <node concept="H_c77" id="4bZ3p5x0F2i" role="_ZDj9" />
+        </node>
+      </node>
+      <node concept="3Tm1VV" id="4bZ3p5x0GrQ" role="1B3o_S" />
+      <node concept="3cqZAl" id="4bZ3p5x0GrR" role="3clF45" />
+      <node concept="3clFbS" id="4bZ3p5x0GrS" role="3clF47">
+        <node concept="3clFbF" id="4bZ3p5x0KUr" role="3cqZAp">
+          <node concept="2OqwBi" id="4bZ3p5x0L4C" role="3clFbG">
+            <node concept="13iPFW" id="4bZ3p5x0KUq" role="2Oq$k0" />
+            <node concept="2qgKlT" id="4bZ3p5x0LuS" role="2OqNvi">
+              <ref role="37wK5l" node="1xsXReQTuZ$" resolve="postprocess" />
+              <node concept="37vLTw" id="4bZ3p5x0N6N" role="37wK5m">
+                <ref role="3cqZAo" node="4bZ3p5x0GrN" resolve="filteredModels" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="P$JXv" id="4bZ3p5x0GrY" role="lGtFl">
+        <node concept="TZ5HA" id="4bZ3p5x0GrZ" role="TZ5H$">
+          <node concept="1dT_AC" id="4bZ3p5x0Gs0" role="1dT_Ay">
+            <property role="1dT_AB" value="This method will be called after a module has been cloned and filtered according to a variant configuration." />
+          </node>
+        </node>
+        <node concept="TZ5HA" id="4bZ3p5x0Gs1" role="TZ5H$">
+          <node concept="1dT_AC" id="4bZ3p5x0Gs2" role="1dT_Ay">
+            <property role="1dT_AB" value="" />
+          </node>
+        </node>
+        <node concept="TZ5HA" id="4bZ3p5x0Gs3" role="TZ5H$">
+          <node concept="1dT_AC" id="4bZ3p5x0Gs4" role="1dT_Ay">
+            <property role="1dT_AB" value="It allows to implement application-specific clean-up logic for variant baselining." />
+          </node>
+        </node>
+        <node concept="TUZQ0" id="4bZ3p5x0Gs5" role="3nqlJM">
+          <property role="TUZQ4" value="the cloned and filtered models to be postprocessed" />
+          <node concept="zr_55" id="4bZ3p5x0Gs6" role="zr_5Q">
+            <ref role="zr_51" node="4bZ3p5x0GrN" resolve="filteredModels" />
+          </node>
+        </node>
+      </node>
+      <node concept="37vLTG" id="4bZ3p5x0Gs7" role="3clF46">
+        <property role="TrG5h" value="configItem" />
+        <node concept="3Tqbb2" id="4bZ3p5x0F1H" role="1tU5fm">
+          <ref role="ehGHo" to="oe8b:4Mwrvj$KmxA" resolve="IVariantBaselineConfigItem" />
         </node>
       </node>
     </node>
