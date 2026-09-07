@@ -1264,7 +1264,7 @@
             <ref role="2Ss9cX" node="2Alk1ztJIvB" resolve="recOrderedByDecl" />
           </node>
           <node concept="5mhuz" id="wlV$3l$XRF" role="2S399l">
-            <ref role="5mhpJ" node="wlV$3lzkpP" resolve="lit2" />
+            <ref role="5mhpJ" node="wlV$3lzkpP" resolve="enumOrderedByDeclaration:lit2" />
           </node>
           <node concept="30bdrP" id="2Alk1ztKtfx" role="2S399l">
             <property role="30bdrQ" value="a2" />
@@ -1278,7 +1278,7 @@
             <ref role="2Ss9cX" node="2Alk1ztJIvB" resolve="recOrderedByDecl" />
           </node>
           <node concept="5mhuz" id="wlV$3l$Yel" role="2S399l">
-            <ref role="5mhpJ" node="wlV$3lzkpN" resolve="lit1" />
+            <ref role="5mhpJ" node="wlV$3lzkpN" resolve="enumOrderedByDeclaration:lit1" />
           </node>
           <node concept="30bdrP" id="2Alk1ztKtpk" role="2S399l">
             <property role="30bdrQ" value="a4" />
@@ -1292,7 +1292,7 @@
             <ref role="2Ss9cX" node="2Alk1ztJIvB" resolve="recOrderedByDecl" />
           </node>
           <node concept="5mhuz" id="wlV$3l$YmR" role="2S399l">
-            <ref role="5mhpJ" node="wlV$3lzkpR" resolve="lit3" />
+            <ref role="5mhpJ" node="wlV$3lzkpR" resolve="enumOrderedByDeclaration:lit3" />
           </node>
           <node concept="30bdrP" id="2Alk1ztKupH" role="2S399l">
             <property role="30bdrQ" value="a3" />
@@ -1311,7 +1311,7 @@
             <ref role="2Ss9cX" node="2Alk1ztJIvB" resolve="recOrderedByDecl" />
           </node>
           <node concept="5mhuz" id="wlV$3l$YtV" role="2S399l">
-            <ref role="5mhpJ" node="wlV$3lzkpN" resolve="lit1" />
+            <ref role="5mhpJ" node="wlV$3lzkpN" resolve="enumOrderedByDeclaration:lit1" />
           </node>
           <node concept="30bdrP" id="365yA_OZJ3S" role="2S399l">
             <property role="30bdrQ" value="a4" />
@@ -1325,7 +1325,7 @@
             <ref role="2Ss9cX" node="2Alk1ztJIvB" resolve="recOrderedByDecl" />
           </node>
           <node concept="5mhuz" id="wlV$3l$Yz$" role="2S399l">
-            <ref role="5mhpJ" node="wlV$3lzkpP" resolve="lit2" />
+            <ref role="5mhpJ" node="wlV$3lzkpP" resolve="enumOrderedByDeclaration:lit2" />
           </node>
           <node concept="30bdrP" id="365yA_OZJ3X" role="2S399l">
             <property role="30bdrQ" value="a2" />
@@ -1339,7 +1339,7 @@
             <ref role="2Ss9cX" node="2Alk1ztJIvB" resolve="recOrderedByDecl" />
           </node>
           <node concept="5mhuz" id="wlV$3l$YDd" role="2S399l">
-            <ref role="5mhpJ" node="wlV$3lzkpR" resolve="lit3" />
+            <ref role="5mhpJ" node="wlV$3lzkpR" resolve="enumOrderedByDeclaration:lit3" />
           </node>
           <node concept="30bdrP" id="365yA_OZJ42" role="2S399l">
             <property role="30bdrQ" value="a3" />
@@ -1359,7 +1359,7 @@
             <ref role="2Ss9cX" node="365yA_OZG9l" resolve="recOrderedByLiteral" />
           </node>
           <node concept="5mhuz" id="wlV$3l$YR_" role="2S399l">
-            <ref role="5mhpJ" node="wlV$3lzmk4" resolve="lit2" />
+            <ref role="5mhpJ" node="wlV$3lzmk4" resolve="enumOrderedByLiteral:lit2" />
           </node>
           <node concept="30bdrP" id="2Alk1ztKuMC" role="2S399l">
             <property role="30bdrQ" value="a4" />
@@ -1373,7 +1373,7 @@
             <ref role="2Ss9cX" node="365yA_OZG9l" resolve="recOrderedByLiteral" />
           </node>
           <node concept="5mhuz" id="wlV$3l$Z8y" role="2S399l">
-            <ref role="5mhpJ" node="wlV$3lzmk0" resolve="lit1" />
+            <ref role="5mhpJ" node="wlV$3lzmk0" resolve="enumOrderedByLiteral:lit1" />
           </node>
           <node concept="30bdrP" id="2Alk1ztKuMH" role="2S399l">
             <property role="30bdrQ" value="a3" />
@@ -1387,7 +1387,7 @@
             <ref role="2Ss9cX" node="365yA_OZG9l" resolve="recOrderedByLiteral" />
           </node>
           <node concept="5mhuz" id="wlV$3l$Zh1" role="2S399l">
-            <ref role="5mhpJ" node="wlV$3lzmk2" resolve="lit3" />
+            <ref role="5mhpJ" node="wlV$3lzmk2" resolve="enumOrderedByLiteral:lit3" />
           </node>
           <node concept="30bdrP" id="2Alk1ztKuMW" role="2S399l">
             <property role="30bdrQ" value="a2" />
@@ -1406,7 +1406,7 @@
             <ref role="2Ss9cX" node="365yA_OZG9l" resolve="recOrderedByLiteral" />
           </node>
           <node concept="5mhuz" id="wlV$3l$Zo8" role="2S399l">
-            <ref role="5mhpJ" node="wlV$3lzmk0" resolve="lit1" />
+            <ref role="5mhpJ" node="wlV$3lzmk0" resolve="enumOrderedByLiteral:lit1" />
           </node>
           <node concept="30bdrP" id="365yA_OZKi1" role="2S399l">
             <property role="30bdrQ" value="a3" />
@@ -1420,7 +1420,7 @@
             <ref role="2Ss9cX" node="365yA_OZG9l" resolve="recOrderedByLiteral" />
           </node>
           <node concept="5mhuz" id="wlV$3l$ZtL" role="2S399l">
-            <ref role="5mhpJ" node="wlV$3lzmk4" resolve="lit2" />
+            <ref role="5mhpJ" node="wlV$3lzmk4" resolve="enumOrderedByLiteral:lit2" />
           </node>
           <node concept="30bdrP" id="365yA_OZKi6" role="2S399l">
             <property role="30bdrQ" value="a4" />
@@ -1434,7 +1434,7 @@
             <ref role="2Ss9cX" node="365yA_OZG9l" resolve="recOrderedByLiteral" />
           </node>
           <node concept="5mhuz" id="wlV$3l$Zzt" role="2S399l">
-            <ref role="5mhpJ" node="wlV$3lzmk2" resolve="lit3" />
+            <ref role="5mhpJ" node="wlV$3lzmk2" resolve="enumOrderedByLiteral:lit3" />
           </node>
           <node concept="30bdrP" id="365yA_OZKib" role="2S399l">
             <property role="30bdrQ" value="a2" />
@@ -1454,7 +1454,7 @@
             <ref role="2Ss9cX" node="365yA_OZHT1" resolve="recOrderedByValue" />
           </node>
           <node concept="5mhuz" id="wlV$3l$ZIG" role="2S399l">
-            <ref role="5mhpJ" node="wlV$3lzntJ" resolve="lit1" />
+            <ref role="5mhpJ" node="wlV$3lzntJ" resolve="enumOrderedByValue:lit1" />
           </node>
           <node concept="30bdrP" id="365yA_OZMoa" role="2S399l">
             <property role="30bdrQ" value="a1" />
@@ -1468,7 +1468,7 @@
             <ref role="2Ss9cX" node="365yA_OZHT1" resolve="recOrderedByValue" />
           </node>
           <node concept="5mhuz" id="wlV$3l$ZRe" role="2S399l">
-            <ref role="5mhpJ" node="wlV$3lzntN" resolve="lit2" />
+            <ref role="5mhpJ" node="wlV$3lzntN" resolve="enumOrderedByValue:lit2" />
           </node>
           <node concept="30bdrP" id="365yA_OZMzI" role="2S399l">
             <property role="30bdrQ" value="a2" />
@@ -1482,7 +1482,7 @@
             <ref role="2Ss9cX" node="365yA_OZHT1" resolve="recOrderedByValue" />
           </node>
           <node concept="5mhuz" id="wlV$3l_03W" role="2S399l">
-            <ref role="5mhpJ" node="wlV$3lzntL" resolve="lit3" />
+            <ref role="5mhpJ" node="wlV$3lzntL" resolve="enumOrderedByValue:lit3" />
           </node>
           <node concept="30bdrP" id="365yA_OZMRi" role="2S399l">
             <property role="30bdrQ" value="a3" />
@@ -1501,7 +1501,7 @@
             <ref role="2Ss9cX" node="365yA_OZHT1" resolve="recOrderedByValue" />
           </node>
           <node concept="5mhuz" id="wlV$3l_0gT" role="2S399l">
-            <ref role="5mhpJ" node="wlV$3lzntL" resolve="lit3" />
+            <ref role="5mhpJ" node="wlV$3lzntL" resolve="enumOrderedByValue:lit3" />
           </node>
           <node concept="30bdrP" id="365yA_OZN4H" role="2S399l">
             <property role="30bdrQ" value="a3" />
@@ -1515,7 +1515,7 @@
             <ref role="2Ss9cX" node="365yA_OZHT1" resolve="recOrderedByValue" />
           </node>
           <node concept="5mhuz" id="wlV$3l_0ms" role="2S399l">
-            <ref role="5mhpJ" node="wlV$3lzntJ" resolve="lit1" />
+            <ref role="5mhpJ" node="wlV$3lzntJ" resolve="enumOrderedByValue:lit1" />
           </node>
           <node concept="30bdrP" id="365yA_OZN4M" role="2S399l">
             <property role="30bdrQ" value="a1" />
@@ -1529,7 +1529,7 @@
             <ref role="2Ss9cX" node="365yA_OZHT1" resolve="recOrderedByValue" />
           </node>
           <node concept="5mhuz" id="wlV$3l_0b9" role="2S399l">
-            <ref role="5mhpJ" node="wlV$3lzntN" resolve="lit2" />
+            <ref role="5mhpJ" node="wlV$3lzntN" resolve="enumOrderedByValue:lit2" />
           </node>
           <node concept="30bdrP" id="365yA_OZN4R" role="2S399l">
             <property role="30bdrQ" value="a2" />
@@ -1670,13 +1670,13 @@
         </node>
         <node concept="3iBYfx" id="wlV$3lFIYW" role="_fkuS">
           <node concept="5mhuz" id="5WOGwuDLgbZ" role="3iBYfI">
-            <ref role="5mhpJ" node="wlV$3lzkpN" resolve="lit1" />
+            <ref role="5mhpJ" node="wlV$3lzkpN" resolve="enumOrderedByDeclaration:lit1" />
           </node>
           <node concept="5mhuz" id="5WOGwuDLgcT" role="3iBYfI">
-            <ref role="5mhpJ" node="wlV$3lzkpP" resolve="lit2" />
+            <ref role="5mhpJ" node="wlV$3lzkpP" resolve="enumOrderedByDeclaration:lit2" />
           </node>
           <node concept="5mhuz" id="5WOGwuDLgdN" role="3iBYfI">
-            <ref role="5mhpJ" node="wlV$3lzkpR" resolve="lit3" />
+            <ref role="5mhpJ" node="wlV$3lzkpR" resolve="enumOrderedByDeclaration:lit3" />
           </node>
         </node>
       </node>
@@ -1690,13 +1690,13 @@
         </node>
         <node concept="3iBYfx" id="1ChS3oVlVsL" role="_fkuS">
           <node concept="5mhuz" id="1ChS3oVlVsM" role="3iBYfI">
-            <ref role="5mhpJ" node="wlV$3lzntL" resolve="lit3" />
+            <ref role="5mhpJ" node="wlV$3lzntL" resolve="enumOrderedByValue:lit3" />
           </node>
           <node concept="5mhuz" id="1ChS3oVlVsN" role="3iBYfI">
-            <ref role="5mhpJ" node="wlV$3lzntJ" resolve="lit1" />
+            <ref role="5mhpJ" node="wlV$3lzntJ" resolve="enumOrderedByValue:lit1" />
           </node>
           <node concept="5mhuz" id="1ChS3oVlVsO" role="3iBYfI">
-            <ref role="5mhpJ" node="wlV$3lzntN" resolve="lit2" />
+            <ref role="5mhpJ" node="wlV$3lzntN" resolve="enumOrderedByValue:lit2" />
           </node>
         </node>
       </node>
@@ -1712,13 +1712,13 @@
         </node>
         <node concept="3iBYfx" id="wlV$3lFJr0" role="_fkuS">
           <node concept="5mhuz" id="wlV$3lFJug" role="3iBYfI">
-            <ref role="5mhpJ" node="wlV$3lzntN" resolve="lit2" />
+            <ref role="5mhpJ" node="wlV$3lzntN" resolve="enumOrderedByValue:lit2" />
           </node>
           <node concept="5mhuz" id="wlV$3lFJr2" role="3iBYfI">
-            <ref role="5mhpJ" node="wlV$3lzntJ" resolve="lit1" />
+            <ref role="5mhpJ" node="wlV$3lzntJ" resolve="enumOrderedByValue:lit1" />
           </node>
           <node concept="5mhuz" id="wlV$3lFJuM" role="3iBYfI">
-            <ref role="5mhpJ" node="wlV$3lzntL" resolve="lit3" />
+            <ref role="5mhpJ" node="wlV$3lzntL" resolve="enumOrderedByValue:lit3" />
           </node>
         </node>
       </node>
@@ -1732,13 +1732,13 @@
         </node>
         <node concept="3iBYfx" id="2OJHliZwskp" role="_fkuS">
           <node concept="5mhuz" id="768MZDbn_ho" role="3iBYfI">
-            <ref role="5mhpJ" node="wlV$3lzmk0" resolve="lit1" />
+            <ref role="5mhpJ" node="wlV$3lzmk0" resolve="enumOrderedByLiteral:lit1" />
           </node>
           <node concept="5mhuz" id="768MZDbn_hV" role="3iBYfI">
-            <ref role="5mhpJ" node="wlV$3lzmk4" resolve="lit2" />
+            <ref role="5mhpJ" node="wlV$3lzmk4" resolve="enumOrderedByLiteral:lit2" />
           </node>
           <node concept="5mhuz" id="768MZDbn_iu" role="3iBYfI">
-            <ref role="5mhpJ" node="wlV$3lzmk2" resolve="lit3" />
+            <ref role="5mhpJ" node="wlV$3lzmk2" resolve="enumOrderedByLiteral:lit3" />
           </node>
         </node>
       </node>
@@ -1754,13 +1754,13 @@
         </node>
         <node concept="3iBYfx" id="2OJHliZwsnf" role="_fkuS">
           <node concept="5mhuz" id="768MZDbn_gP" role="3iBYfI">
-            <ref role="5mhpJ" node="wlV$3lzmk2" resolve="lit3" />
+            <ref role="5mhpJ" node="wlV$3lzmk2" resolve="enumOrderedByLiteral:lit3" />
           </node>
           <node concept="5mhuz" id="768MZDbnpB6" role="3iBYfI">
-            <ref role="5mhpJ" node="wlV$3lzmk4" resolve="lit2" />
+            <ref role="5mhpJ" node="wlV$3lzmk4" resolve="enumOrderedByLiteral:lit2" />
           </node>
           <node concept="5mhuz" id="768MZDbn_j1" role="3iBYfI">
-            <ref role="5mhpJ" node="wlV$3lzmk0" resolve="lit1" />
+            <ref role="5mhpJ" node="wlV$3lzmk0" resolve="enumOrderedByLiteral:lit1" />
           </node>
         </node>
       </node>
