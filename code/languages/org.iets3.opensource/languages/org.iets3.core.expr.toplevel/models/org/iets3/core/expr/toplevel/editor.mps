@@ -630,7 +630,6 @@
       <concept id="1138411891628" name="jetbrains.mps.lang.smodel.structure.SNodeOperation" flags="nn" index="eCIE_">
         <child id="1144104376918" name="parameter" index="1xVPHs" />
       </concept>
-      <concept id="1179409122411" name="jetbrains.mps.lang.smodel.structure.Node_ConceptMethodCall" flags="nn" index="2qgKlT" />
       <concept id="1173122760281" name="jetbrains.mps.lang.smodel.structure.Node_GetAncestorsOperation" flags="nn" index="z$bX8" />
       <concept id="2396822768958367367" name="jetbrains.mps.lang.smodel.structure.AbstractTypeCastExpression" flags="nn" index="$5XWr">
         <child id="6733348108486823193" name="leftExpression" index="1m5AlR" />
@@ -7931,11 +7930,11 @@
                 <node concept="2OqwBi" id="48Zi1g$0eiS" role="3clFbG">
                   <node concept="2OqwBi" id="48Zi1g$0eiV" role="2Oq$k0">
                     <node concept="pncrf" id="48Zi1g$0eiY" role="2Oq$k0" />
-                    <node concept="2qgKlT" id="48Zi1g$0eiZ" role="2OqNvi">
+                    <node concept="3zqWPK" id="5JqfPwQHGnT" role="2OqNvi">
                       <ref role="37wK5l" to="nu60:4L5R3LmDzwi" resolve="reduce" />
                     </node>
                   </node>
-                  <node concept="2qgKlT" id="48Zi1g$0ej0" role="2OqNvi">
+                  <node concept="3zqWPK" id="5JqfPwQHGnV" role="2OqNvi">
                     <ref role="37wK5l" to="pbu6:4Y0vh0cfqjE" resolve="renderReadable" />
                   </node>
                 </node>

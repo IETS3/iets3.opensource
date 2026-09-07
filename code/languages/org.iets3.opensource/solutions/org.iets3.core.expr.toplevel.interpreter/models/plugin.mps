@@ -210,7 +210,6 @@
       <concept id="1138411891628" name="jetbrains.mps.lang.smodel.structure.SNodeOperation" flags="nn" index="eCIE_">
         <child id="1144104376918" name="parameter" index="1xVPHs" />
       </concept>
-      <concept id="1179409122411" name="jetbrains.mps.lang.smodel.structure.Node_ConceptMethodCall" flags="nn" index="2qgKlT" />
       <concept id="4693937538533521280" name="jetbrains.mps.lang.smodel.structure.OfConceptOperation" flags="ng" index="v3k3i">
         <child id="4693937538533538124" name="requestedConcept" index="v3oSu" />
       </concept>
@@ -2705,7 +2704,7 @@
                 <node concept="2OqwBi" id="7dojahfGqro" role="33vP2m">
                   <node concept="2OqwBi" id="7dojahfGqrp" role="2Oq$k0">
                     <node concept="oxGPV" id="7dojahfGqrq" role="2Oq$k0" />
-                    <node concept="2qgKlT" id="48Zi1gzEL8l" role="2OqNvi">
+                    <node concept="3zqWPK" id="5JqfPwQHGok" role="2OqNvi">
                       <ref role="37wK5l" to="nu60:48Zi1gznqdX" resolve="effectiveSelectors" />
                     </node>
                   </node>
@@ -2750,7 +2749,7 @@
                   <node concept="2OqwBi" id="3FGeL_$Gc4X" role="3clFbG">
                     <node concept="2OqwBi" id="3FGeL_$GaNM" role="2Oq$k0">
                       <node concept="oxGPV" id="3FGeL_$GaGo" role="2Oq$k0" />
-                      <node concept="2qgKlT" id="48Zi1gzFikB" role="2OqNvi">
+                      <node concept="3zqWPK" id="5JqfPwQHGom" role="2OqNvi">
                         <ref role="37wK5l" to="nu60:48Zi1gznqdX" resolve="effectiveSelectors" />
                       </node>
                     </node>
@@ -3033,7 +3032,7 @@
                   <ref role="37wK5l" to="pq1l:4$j2$kkfRAe" resolve="getInstance" />
                   <node concept="2OqwBi" id="4$j2$kkic0a" role="37wK5m">
                     <node concept="oxGPV" id="4$j2$kkibJa" role="2Oq$k0" />
-                    <node concept="2qgKlT" id="48Zi1gzEgil" role="2OqNvi">
+                    <node concept="3zqWPK" id="5JqfPwQHGoo" role="2OqNvi">
                       <ref role="37wK5l" to="nu60:48Zi1gznep_" resolve="effectiveLiteral" />
                     </node>
                   </node>
