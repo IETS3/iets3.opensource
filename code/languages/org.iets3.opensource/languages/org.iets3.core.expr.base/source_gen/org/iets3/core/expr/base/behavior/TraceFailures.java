@@ -5,6 +5,7 @@ package org.iets3.core.expr.base.behavior;
 import com.mbeddr.mpsutil.interpreter.rt.ComputationTrace;
 import com.mbeddr.mpsutil.interpreter.rt.InterpreterRuntimeException;
 import com.mbeddr.mpsutil.interpreter.rt.InterpreterEscapeException;
+import org.jetbrains.annotations.NotNull;
 import org.jetbrains.mps.openapi.model.SNode;
 
 public class TraceFailures {
@@ -50,6 +51,7 @@ public class TraceFailures {
    * for a node is added to its parent before that node is evaluated. So the partial trace is worth
    * showing even though the exception unwound the evaluation.
    */
+  @NotNull
   public static ComputationTrace traceForFailure(SNode fallbackNode, ComputationTrace partialTrace, Throwable t) {
     ComputationTrace failing = markFailure(t);
     ComputationTrace root = null;

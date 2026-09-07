@@ -8330,91 +8330,91 @@
   </root>
   <root nodeRef="r:83e946de-2a7f-4a4c-b3c9-4f671aa7f2db(org.iets3.core.expr.base.behavior)/6583972032667443305">
     <file name="TraceFailures.java">
-      <node id="6583972032667443440" at="20,59,21,36" concept="10" />
-      <node id="6583972032667443447" at="21,36,22,26" concept="10" />
-      <node id="6583972032667443463" at="23,29,24,40" concept="10" />
-      <node id="6583972032667443479" at="25,59,26,78" concept="4" />
-      <node id="6583972032667443505" at="27,65,28,71" concept="4" />
-      <node id="6583972032667443531" at="30,30,31,28" concept="4" />
-      <node id="6583972032667443538" at="32,7,33,78" concept="4" />
-      <node id="6583972032667443574" at="35,26,36,18" concept="11" />
-      <node id="6583972032667443587" at="38,44,39,48" concept="4" />
-      <node id="6583972032667443596" at="40,5,41,32" concept="4" />
-      <node id="6583972032667443603" at="41,32,42,34" concept="4" />
-      <node id="6583972032667443610" at="42,34,43,28" concept="4" />
-      <node id="6583972032667443617" at="43,28,44,19" concept="11" />
-      <node id="6583972032667443715" at="53,114,54,46" concept="10" />
-      <node id="6583972032667443723" at="54,46,55,33" concept="10" />
-      <node id="6583972032667443739" at="56,31,57,38" concept="4" />
-      <node id="6583972032667443759" at="59,26,60,33" concept="4" />
-      <node id="6583972032667443779" at="62,23,63,93" concept="12" />
-      <node id="6583972032667443801" at="63,93,64,48" concept="4" />
-      <node id="6583972032667443830" at="66,60,67,45" concept="4" />
-      <node id="6583972032667443839" at="67,45,68,27" concept="4" />
-      <node id="6583972032667443846" at="69,5,70,16" concept="11" />
-      <node id="6583972032667443876" at="76,46,77,24" concept="10" />
-      <node id="6583972032667443908" at="78,67,79,31" concept="4" />
-      <node id="6583972032667443919" at="80,5,81,40" concept="10" />
-      <node id="6583972032667443939" at="82,26,83,19" concept="4" />
-      <node id="6583972032667443949" at="84,12,85,91" concept="4" />
-      <node id="6583972032667444001" at="87,33,88,51" concept="4" />
-      <node id="6583972032667444018" at="89,5,90,71" concept="11" />
-      <node id="6583972032667443946" at="84,10,86,5" concept="0" />
-      <node id="6583972032667443522" at="29,7,32,7" concept="8" />
-      <node id="6583972032667443565" at="34,5,37,5" concept="8" />
-      <node id="6583972032667443576" at="37,5,40,5" concept="8" />
-      <node id="6583972032667443750" at="58,10,61,5" concept="8" />
-      <node id="6583972032667443883" at="77,24,80,5" concept="21" />
-      <node id="6583972032667443988" at="86,5,89,5" concept="8" />
-      <node id="6583972032667443770" at="61,5,65,5" concept="8" />
-      <node id="6583972032667443811" at="65,5,69,5" concept="8" />
-      <node id="6583972032667443470" at="24,40,29,7" concept="8" />
-      <node id="6583972032667443930" at="81,40,86,5" concept="8" />
-      <node id="6583972032667443730" at="55,33,61,5" concept="8" />
-      <node id="6583972032667443454" at="22,26,34,5" concept="21" />
-      <node id="6583972032667443849" at="76,0,92,0" concept="15" trace="describe#(Ljava/lang/Throwable;)Ljava/lang/String;" />
-      <node id="6583972032667443620" at="53,0,72,0" concept="15" trace="traceForFailure#(Lorg/jetbrains/mps/openapi/model/SNode;Lcom/mbeddr/mpsutil/interpreter/rt/ComputationTrace;Ljava/lang/Throwable;)Lcom/mbeddr/mpsutil/interpreter/rt/ComputationTrace;" />
-      <node id="6583972032667443309" at="20,0,46,0" concept="15" trace="markFailure#(Ljava/lang/Throwable;)Lcom/mbeddr/mpsutil/interpreter/rt/ComputationTrace;" />
-      <scope id="6583972032667443478" at="25,59,26,78" />
-      <scope id="6583972032667443504" at="27,65,28,71" />
-      <scope id="6583972032667443530" at="30,30,31,28" />
-      <scope id="6583972032667443573" at="35,26,36,18" />
-      <scope id="6583972032667443586" at="38,44,39,48" />
-      <scope id="6583972032667443738" at="56,31,57,38" />
-      <scope id="6583972032667443758" at="59,26,60,33" />
-      <scope id="6583972032667443907" at="78,67,79,31" />
-      <scope id="6583972032667443938" at="82,26,83,19" />
-      <scope id="6583972032667443948" at="84,12,85,91" />
-      <scope id="6583972032667444000" at="87,33,88,51" />
-      <scope id="6583972032667443778" at="62,23,64,48" />
-      <scope id="6583972032667443829" at="66,60,68,27" />
-      <scope id="6583972032667443462" at="23,29,33,78">
+      <node id="6583972032667443440" at="21,59,22,36" concept="10" />
+      <node id="6583972032667443447" at="22,36,23,26" concept="10" />
+      <node id="6583972032667443463" at="24,29,25,40" concept="10" />
+      <node id="6583972032667443479" at="26,59,27,78" concept="4" />
+      <node id="6583972032667443505" at="28,65,29,71" concept="4" />
+      <node id="6583972032667443531" at="31,30,32,28" concept="4" />
+      <node id="6583972032667443538" at="33,7,34,78" concept="4" />
+      <node id="6583972032667443574" at="36,26,37,18" concept="11" />
+      <node id="6583972032667443587" at="39,44,40,48" concept="4" />
+      <node id="6583972032667443596" at="41,5,42,32" concept="4" />
+      <node id="6583972032667443603" at="42,32,43,34" concept="4" />
+      <node id="6583972032667443610" at="43,34,44,28" concept="4" />
+      <node id="6583972032667443617" at="44,28,45,19" concept="11" />
+      <node id="6583972032667443715" at="55,114,56,46" concept="10" />
+      <node id="6583972032667443723" at="56,46,57,33" concept="10" />
+      <node id="6583972032667443739" at="58,31,59,38" concept="4" />
+      <node id="6583972032667443759" at="61,26,62,33" concept="4" />
+      <node id="6583972032667443779" at="64,23,65,93" concept="12" />
+      <node id="6583972032667443801" at="65,93,66,48" concept="4" />
+      <node id="6583972032667443830" at="68,60,69,45" concept="4" />
+      <node id="6583972032667443839" at="69,45,70,27" concept="4" />
+      <node id="6583972032667443846" at="71,5,72,16" concept="11" />
+      <node id="6583972032667443876" at="78,46,79,24" concept="10" />
+      <node id="6583972032667443908" at="80,67,81,31" concept="4" />
+      <node id="6583972032667443919" at="82,5,83,40" concept="10" />
+      <node id="6583972032667443939" at="84,26,85,19" concept="4" />
+      <node id="6583972032667443949" at="86,12,87,91" concept="4" />
+      <node id="6583972032667444001" at="89,33,90,51" concept="4" />
+      <node id="6583972032667444018" at="91,5,92,71" concept="11" />
+      <node id="6583972032667443946" at="86,10,88,5" concept="0" />
+      <node id="6583972032667443522" at="30,7,33,7" concept="8" />
+      <node id="6583972032667443565" at="35,5,38,5" concept="8" />
+      <node id="6583972032667443576" at="38,5,41,5" concept="8" />
+      <node id="6583972032667443750" at="60,10,63,5" concept="8" />
+      <node id="6583972032667443883" at="79,24,82,5" concept="21" />
+      <node id="6583972032667443988" at="88,5,91,5" concept="8" />
+      <node id="6583972032667443770" at="63,5,67,5" concept="8" />
+      <node id="6583972032667443811" at="67,5,71,5" concept="8" />
+      <node id="6583972032667443470" at="25,40,30,7" concept="8" />
+      <node id="6583972032667443930" at="83,40,88,5" concept="8" />
+      <node id="6583972032667443730" at="57,33,63,5" concept="8" />
+      <node id="6583972032667443454" at="23,26,35,5" concept="21" />
+      <node id="6583972032667443849" at="78,0,94,0" concept="15" trace="describe#(Ljava/lang/Throwable;)Ljava/lang/String;" />
+      <node id="6583972032667443620" at="54,0,74,0" concept="15" trace="traceForFailure#(Lorg/jetbrains/mps/openapi/model/SNode;Lcom/mbeddr/mpsutil/interpreter/rt/ComputationTrace;Ljava/lang/Throwable;)Lcom/mbeddr/mpsutil/interpreter/rt/ComputationTrace;" />
+      <node id="6583972032667443309" at="21,0,47,0" concept="15" trace="markFailure#(Ljava/lang/Throwable;)Lcom/mbeddr/mpsutil/interpreter/rt/ComputationTrace;" />
+      <scope id="6583972032667443478" at="26,59,27,78" />
+      <scope id="6583972032667443504" at="28,65,29,71" />
+      <scope id="6583972032667443530" at="31,30,32,28" />
+      <scope id="6583972032667443573" at="36,26,37,18" />
+      <scope id="6583972032667443586" at="39,44,40,48" />
+      <scope id="6583972032667443738" at="58,31,59,38" />
+      <scope id="6583972032667443758" at="61,26,62,33" />
+      <scope id="6583972032667443907" at="80,67,81,31" />
+      <scope id="6583972032667443938" at="84,26,85,19" />
+      <scope id="6583972032667443948" at="86,12,87,91" />
+      <scope id="6583972032667444000" at="89,33,90,51" />
+      <scope id="6583972032667443778" at="64,23,66,48" />
+      <scope id="6583972032667443829" at="68,60,70,27" />
+      <scope id="6583972032667443462" at="24,29,34,78">
         <var name="candidate" id="6583972032667443466" />
       </scope>
-      <scope id="6583972032667443858" at="76,46,90,71">
+      <scope id="6583972032667443858" at="78,46,92,71">
         <var name="cause" id="6583972032667443879" />
         <var name="message" id="6583972032667443922" />
       </scope>
-      <scope id="6583972032667443849" at="76,0,92,0">
+      <scope id="6583972032667443849" at="78,0,94,0">
         <var name="t" id="6583972032667443855" />
       </scope>
-      <scope id="6583972032667443635" at="53,114,70,16">
+      <scope id="6583972032667443635" at="55,114,72,16">
         <var name="failing" id="6583972032667443718" />
         <var name="root" id="6583972032667443726" />
       </scope>
-      <scope id="6583972032667443620" at="53,0,72,0">
+      <scope id="6583972032667443620" at="54,0,74,0">
         <var name="fallbackNode" id="6583972032667443626" />
         <var name="partialTrace" id="6583972032667443629" />
         <var name="t" id="6583972032667443632" />
       </scope>
-      <scope id="6583972032667443318" at="20,59,44,19">
+      <scope id="6583972032667443318" at="21,59,45,19">
         <var name="current" id="6583972032667443450" />
         <var name="failing" id="6583972032667443443" />
       </scope>
-      <scope id="6583972032667443309" at="20,0,46,0">
+      <scope id="6583972032667443309" at="21,0,47,0">
         <var name="t" id="6583972032667443315" />
       </scope>
-      <unit id="6583972032667443305" at="10,0,93,0" name="org.iets3.core.expr.base.behavior.TraceFailures" />
+      <unit id="6583972032667443305" at="11,0,95,0" name="org.iets3.core.expr.base.behavior.TraceFailures" />
     </file>
   </root>
   <root nodeRef="r:83e946de-2a7f-4a4c-b3c9-4f671aa7f2db(org.iets3.core.expr.base.behavior)/6603162703592206014">
