@@ -25270,7 +25270,7 @@
                     <node concept="3clFbS" id="65lm1C8R8_j" role="1bW5cS">
                       <node concept="3clFbF" id="6WUl45aDePE" role="3cqZAp">
                         <node concept="1rXfSq" id="6WUl45aDePD" role="3clFbG">
-                          <ref role="37wK5l" node="6WUl45aDeP_" resolve="propagate" />
+                          <ref role="37wK5l" node="64l_37QOe9U" resolve="propagate" />
                           <node concept="2GrUjf" id="6WUl45aDePC" role="37wK5m">
                             <ref role="2Gs0qQ" node="7SHUXR9KQNM" resolve="config" />
                           </node>
@@ -25617,38 +25617,24 @@
     <node concept="2tJIrI" id="64l_37Q8Bap" role="jymVt" />
     <node concept="3clFb_" id="64l_37Q8zJE" role="jymVt">
       <property role="TrG5h" value="updateReason" />
+      <property role="1EzhhJ" value="true" />
       <node concept="3Tmbuc" id="64l_37Q8zJF" role="1B3o_S" />
       <node concept="17QB3L" id="64l_37Q8zJG" role="3clF45" />
-      <node concept="3clFbS" id="64l_37Q8zJA" role="3clF47">
-        <node concept="3cpWs6" id="64l_37Q8zJB" role="3cqZAp">
-          <node concept="Xl_RD" id="64l_37Q8zJC" role="3cqZAk">
-            <property role="Xl_RC" value="Updating structure according to feature model..." />
-          </node>
-        </node>
-      </node>
+      <node concept="3clFbS" id="64l_37Q8zJA" role="3clF47" />
     </node>
     <node concept="2tJIrI" id="6WUl45aDgn5" role="jymVt" />
-    <node concept="3clFb_" id="6WUl45aDeP_" role="jymVt">
+    <node concept="3clFb_" id="64l_37QOe9U" role="jymVt">
       <property role="TrG5h" value="propagate" />
-      <node concept="3Tmbuc" id="6WUl45aDePA" role="1B3o_S" />
-      <node concept="3cqZAl" id="6WUl45aDePB" role="3clF45" />
-      <node concept="37vLTG" id="6WUl45aDePt" role="3clF46">
+      <property role="1EzhhJ" value="true" />
+      <node concept="3Tmbuc" id="64l_37QOe9V" role="1B3o_S" />
+      <node concept="3cqZAl" id="64l_37QOe9W" role="3clF45" />
+      <node concept="37vLTG" id="64l_37QOe9X" role="3clF46">
         <property role="TrG5h" value="config" />
-        <node concept="3Tqbb2" id="6WUl45aDePu" role="1tU5fm">
+        <node concept="3Tqbb2" id="64l_37QOe9Y" role="1tU5fm">
           <ref role="ehGHo" to="4ndm:5NPKd17BG$l" resolve="FeatureModelConfiguration" />
         </node>
       </node>
-      <node concept="3clFbS" id="6WUl45aDePp" role="3clF47">
-        <node concept="3clFbF" id="6WUl45aDePq" role="3cqZAp">
-          <node concept="2YIFZM" id="6WUl45aDePr" role="3clFbG">
-            <ref role="37wK5l" node="5cx1lEoXpx1" resolve="propagateFeatureModelChangesToConfig" />
-            <ref role="1Pybhc" node="5LYvV_xuyl9" resolve="ConfigUpdateHelper" />
-            <node concept="37vLTw" id="6WUl45aDePy" role="37wK5m">
-              <ref role="3cqZAo" node="6WUl45aDePt" resolve="config" />
-            </node>
-          </node>
-        </node>
-      </node>
+      <node concept="3clFbS" id="64l_37QOe9Z" role="3clF47" />
     </node>
     <node concept="2tJIrI" id="5BtXES5hV4K" role="jymVt" />
     <node concept="3clFb_" id="5BtXES5io$$" role="jymVt">
@@ -26385,8 +26371,8 @@
     </node>
     <node concept="2tJIrI" id="5BtXES5lwDm" role="jymVt" />
     <node concept="3Tm1VV" id="5BtXES5l5MW" role="1B3o_S" />
-    <node concept="3uibUv" id="5BtXES5l5ZA" role="1zkMxy">
-      <ref role="3uigEE" node="5szxK3gIrkz" resolve="AbstractUpdateConfigsTask" />
+    <node concept="3uibUv" id="64l_37QMHdW" role="1zkMxy">
+      <ref role="3uigEE" node="64l_37QMs40" resolve="ConfigFromFeatureModelUpdater" />
     </node>
     <node concept="3clFbW" id="5BtXES5l600" role="jymVt">
       <node concept="37vLTG" id="5BtXES5l601" role="3clF46">
@@ -26414,7 +26400,7 @@
       <node concept="3Tm1VV" id="5BtXES5l607" role="1B3o_S" />
       <node concept="3clFbS" id="5BtXES5l60q" role="3clF47">
         <node concept="XkiVB" id="5BtXES5l60r" role="3cqZAp">
-          <ref role="37wK5l" node="5szxK3gJ221" resolve="AbstractUpdateConfigsTask" />
+          <ref role="37wK5l" node="64l_37QMsaA" />
           <node concept="37vLTw" id="5BtXES5l60s" role="37wK5m">
             <ref role="3cqZAo" node="5BtXES5l601" resolve="project" />
           </node>
@@ -26713,8 +26699,8 @@
     </node>
     <node concept="2tJIrI" id="5BtXES5p02c" role="jymVt" />
     <node concept="3Tm1VV" id="5BtXES5l632" role="1B3o_S" />
-    <node concept="3uibUv" id="5BtXES5l64d" role="1zkMxy">
-      <ref role="3uigEE" node="5szxK3gIrkz" resolve="AbstractUpdateConfigsTask" />
+    <node concept="3uibUv" id="64l_37QMHEc" role="1zkMxy">
+      <ref role="3uigEE" node="64l_37QMs40" resolve="ConfigFromFeatureModelUpdater" />
     </node>
     <node concept="3clFbW" id="5BtXES5l64B" role="jymVt">
       <node concept="37vLTG" id="5BtXES5l64C" role="3clF46">
@@ -26742,7 +26728,7 @@
       <node concept="3Tm1VV" id="5BtXES5l64I" role="1B3o_S" />
       <node concept="3clFbS" id="5BtXES5l651" role="3clF47">
         <node concept="XkiVB" id="5BtXES5l652" role="3cqZAp">
-          <ref role="37wK5l" node="5szxK3gJ221" resolve="AbstractUpdateConfigsTask" />
+          <ref role="37wK5l" node="64l_37QMsaA" />
           <node concept="37vLTw" id="5BtXES5l653" role="37wK5m">
             <ref role="3cqZAo" node="5BtXES5l64C" resolve="project" />
           </node>
@@ -27770,8 +27756,8 @@
     <property role="TrG5h" value="UpdateAllExtendingConfigs" />
     <node concept="2tJIrI" id="6WUl45aDBz1" role="jymVt" />
     <node concept="3Tm1VV" id="6WUl45aDiYJ" role="1B3o_S" />
-    <node concept="3uibUv" id="6WUl45aDBar" role="1zkMxy">
-      <ref role="3uigEE" node="5szxK3gIrkz" resolve="AbstractUpdateConfigsTask" />
+    <node concept="3uibUv" id="64l_37QMtYb" role="1zkMxy">
+      <ref role="3uigEE" node="64l_37QMs40" resolve="AbstractExtendingConfigs" />
     </node>
     <node concept="Wx3nA" id="6WUl45aQ0Gy" role="jymVt">
       <property role="TrG5h" value="LOG" />
@@ -27822,7 +27808,7 @@
       <node concept="3Tm1VV" id="6WUl45aDBqG" role="1B3o_S" />
       <node concept="3clFbS" id="6WUl45aDBr5" role="3clF47">
         <node concept="XkiVB" id="6WUl45aDBr6" role="3cqZAp">
-          <ref role="37wK5l" node="5szxK3gJ221" resolve="AbstractUpdateConfigsTask" />
+          <ref role="37wK5l" node="64l_37QMsaA" />
           <node concept="37vLTw" id="6WUl45aDBr7" role="37wK5m">
             <ref role="3cqZAo" node="6WUl45aDBq$" resolve="project" />
           </node>
@@ -28176,7 +28162,7 @@
         </node>
       </node>
       <node concept="2AHcQZ" id="64l_37Q8Gks" role="2AJF6D">
-        <ref role="2AI5Lk" to="wyt6:~Override" />
+        <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
       </node>
     </node>
     <node concept="2tJIrI" id="64l_37Q9E1g" role="jymVt" />
@@ -28202,9 +28188,94 @@
         </node>
       </node>
       <node concept="2AHcQZ" id="6WUl45aHj$W" role="2AJF6D">
-        <ref role="2AI5Lk" to="wyt6:~Override" />
+        <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
       </node>
     </node>
+  </node>
+  <node concept="312cEu" id="64l_37QMs40">
+    <property role="TrG5h" value="ConfigFromFeatureModelUpdater" />
+    <property role="1sVAO0" value="true" />
+    <node concept="3Tm1VV" id="64l_37QMs41" role="1B3o_S" />
+    <node concept="3uibUv" id="64l_37QMs9N" role="1zkMxy">
+      <ref role="3uigEE" node="5szxK3gIrkz" resolve="AbstractUpdateConfigsTask" />
+    </node>
+    <node concept="2tJIrI" id="64l_37QMscp" role="jymVt" />
+    <node concept="3clFbW" id="64l_37QMsaA" role="jymVt">
+      <node concept="37vLTG" id="64l_37QMsaB" role="3clF46">
+        <property role="TrG5h" value="project" />
+        <node concept="2AHcQZ" id="64l_37QMsaC" role="2AJF6D">
+          <ref role="2AI5Lk" to="mhfm:~Nullable" resolve="Nullable" />
+        </node>
+        <node concept="3uibUv" id="64l_37QMsaD" role="1tU5fm">
+          <ref role="3uigEE" to="z1c3:~Project" resolve="Project" />
+        </node>
+      </node>
+      <node concept="37vLTG" id="64l_37QMsaE" role="3clF46">
+        <property role="TrG5h" value="model" />
+        <node concept="3uibUv" id="64l_37QMsaF" role="1tU5fm">
+          <ref role="3uigEE" to="mhbf:~SModel" resolve="SModel" />
+        </node>
+      </node>
+      <node concept="37vLTG" id="64l_37QMsaG" role="3clF46">
+        <property role="TrG5h" value="LOG" />
+        <node concept="3uibUv" id="64l_37QMsaH" role="1tU5fm">
+          <ref role="3uigEE" to="wwqx:~Logger" resolve="Logger" />
+        </node>
+      </node>
+      <node concept="3cqZAl" id="64l_37QMsaI" role="3clF45" />
+      <node concept="3Tm1VV" id="64l_37QMsaJ" role="1B3o_S" />
+      <node concept="3clFbS" id="64l_37QMsb8" role="3clF47">
+        <node concept="XkiVB" id="64l_37QMsb9" role="3cqZAp">
+          <ref role="37wK5l" node="5szxK3gJ221" resolve="AbstractUpdateConfigsTask" />
+          <node concept="37vLTw" id="64l_37QMsba" role="37wK5m">
+            <ref role="3cqZAo" node="64l_37QMsaB" resolve="project" />
+          </node>
+          <node concept="37vLTw" id="64l_37QMsbb" role="37wK5m">
+            <ref role="3cqZAo" node="64l_37QMsaE" resolve="model" />
+          </node>
+          <node concept="37vLTw" id="64l_37QMsbc" role="37wK5m">
+            <ref role="3cqZAo" node="64l_37QMsaG" resolve="LOG" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="2tJIrI" id="64l_37QMsy6" role="jymVt" />
+    <node concept="3clFb_" id="6WUl45aDeP_" role="jymVt">
+      <property role="TrG5h" value="propagate" />
+      <node concept="3Tmbuc" id="6WUl45aDePA" role="1B3o_S" />
+      <node concept="3cqZAl" id="6WUl45aDePB" role="3clF45" />
+      <node concept="37vLTG" id="6WUl45aDePt" role="3clF46">
+        <property role="TrG5h" value="config" />
+        <node concept="3Tqbb2" id="6WUl45aDePu" role="1tU5fm">
+          <ref role="ehGHo" to="4ndm:5NPKd17BG$l" resolve="FeatureModelConfiguration" />
+        </node>
+      </node>
+      <node concept="3clFbS" id="6WUl45aDePp" role="3clF47">
+        <node concept="3clFbF" id="6WUl45aDePq" role="3cqZAp">
+          <node concept="2YIFZM" id="6WUl45aDePr" role="3clFbG">
+            <ref role="37wK5l" node="5cx1lEoXpx1" resolve="propagateFeatureModelChangesToConfig" />
+            <ref role="1Pybhc" node="5LYvV_xuyl9" resolve="ConfigUpdateHelper" />
+            <node concept="37vLTw" id="6WUl45aDePy" role="37wK5m">
+              <ref role="3cqZAo" node="6WUl45aDePt" resolve="config" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="2tJIrI" id="64l_37QMsy7" role="jymVt" />
+    <node concept="3clFb_" id="64l_37QOn$C" role="jymVt">
+      <property role="TrG5h" value="updateReason" />
+      <node concept="3Tmbuc" id="64l_37QOn$D" role="1B3o_S" />
+      <node concept="17QB3L" id="64l_37QOn$E" role="3clF45" />
+      <node concept="3clFbS" id="64l_37QOn$F" role="3clF47">
+        <node concept="3cpWs6" id="64l_37QOn$G" role="3cqZAp">
+          <node concept="Xl_RD" id="64l_37QOn$H" role="3cqZAk">
+            <property role="Xl_RC" value="Updating structure according to feature model..." />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="2tJIrI" id="64l_37QOnxH" role="jymVt" />
   </node>
 </model>
 

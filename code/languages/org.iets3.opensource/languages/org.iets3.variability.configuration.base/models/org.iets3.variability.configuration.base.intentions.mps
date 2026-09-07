@@ -3488,6 +3488,7 @@
   </node>
   <node concept="2S6QgY" id="6WUl45aPI72">
     <property role="TrG5h" value="adaptExtendingFMCs" />
+    <property role="3GE5qa" value="adapt" />
     <ref role="2ZfgGC" to="4ndm:5NPKd17BG$l" resolve="FeatureModelConfiguration" />
     <node concept="2S6ZIM" id="6WUl45aPI73" role="2ZfVej">
       <node concept="3clFbS" id="6WUl45aPI74" role="2VODD2">
