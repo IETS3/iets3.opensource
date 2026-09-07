@@ -13,7 +13,7 @@ mps = { group = "com.jetbrains", name = "mps", version.ref = "mpsVersion" }
 remigrate = { group = "de.itemis.mps.build-backends", name = "remigrate", version = "1.0.1.186.eda5913" }
 mpsQaAllInOne = { group = "org.mpsqa", name = "all-in-one", version.ref = "mpsQaVersion" }
 mbeddrPlatform = { group = "com.mbeddr", name = "platform", version.ref = "mbeddrVersion" }
-antJunit = { group = "org.apache.ant", name = "ant-junit", version = "1.10.17" }
+antJunit = { group = "org.apache.ant", name = "ant-junit", version = "1.10.18" }
 
 # bundled dependencies
 pcollections = { group = "org.pcollections", name = "pcollections", version = "5.0.0" }
