@@ -8,7 +8,6 @@ import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import org.jetbrains.mps.openapi.model.SNode;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import java.util.List;
 import java.util.Arrays;
@@ -24,9 +23,9 @@ import org.jetbrains.mps.openapi.language.SConcept;
 public final class ProtocolMapCatalog__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getConcept(0xa50d629093d242afL, 0x9ae0b2fefc6ee754L, 0x6bdd98ea1eb78101L, "org.iets3.protocol.transport.structure.ProtocolMapCatalog");
 
-  public static final SMethod<Iterable<SNode>> dependencies_id1WCh2the5Vh = new SMethodBuilder<Iterable<SNode>>(new SJavaCompoundTypeImpl((Class<Iterable<SNode>>) ((Class) Object.class))).name("dependencies").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(2245119349901254353L).languageId(0xb6713d118449c6e7L, 0xf0fd486f857743e9L).build2();
+  public static final SMethod<Iterable<SNode>> dependencies_id1WCh2the5Vh = new SMethodBuilder<>((Class<Iterable<SNode>>) ((Class) Object.class)).name("dependencies").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(2245119349901254353L).languageId(0xb6713d118449c6e7L, 0xf0fd486f857743e9L).build2();
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(dependencies_id1WCh2the5Vh);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(dependencies_id1WCh2the5Vh);
 
   private static void ___init___(@NotNull SNode __thisNode__) {
     SLinkOperations.addNewChild(__thisNode__, LINKS.content$tnjl, CONCEPTS.EmptyProtocolMapContainerContent$BB);

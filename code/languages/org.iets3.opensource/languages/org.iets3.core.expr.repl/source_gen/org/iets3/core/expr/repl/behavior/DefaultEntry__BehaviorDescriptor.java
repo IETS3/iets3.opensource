@@ -7,7 +7,6 @@ import org.jetbrains.mps.openapi.language.SAbstractConcept;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import jetbrains.mps.openapi.editor.EditorContext;
 import org.jetbrains.mps.openapi.model.SNode;
@@ -30,7 +29,6 @@ import com.mbeddr.mpsutil.interpreter.rt.InvalidValueException;
 import org.iets3.core.expr.base.plugin.NoneValue;
 import jetbrains.mps.typechecking.TypecheckingFacade;
 import jetbrains.mps.internal.collections.runtime.Sequence;
-import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 import org.jetbrains.mps.openapi.language.SContainmentLink;
@@ -41,21 +39,19 @@ import org.jetbrains.mps.openapi.language.SProperty;
 public final class DefaultEntry__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getConcept(0x18001c9433a74f68L, 0xa7c1ffddc4b39be1L, 0x1137be0341408209L, "org.iets3.core.expr.repl.structure.DefaultEntry");
 
-  public static final SMethod<Boolean> isStructurallyValid_id14RJwd1gWJt = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("isStructurallyValid").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(1240669143553002461L).languageId(0xa7c1ffddc4b39be1L, 0x18001c9433a74f68L).build2();
-  public static final SMethod<Void> runManually_id3R3AIvumrTm = new SMethodBuilder<Void>(new SJavaCompoundTypeImpl(Void.class)).name("runManually").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(4450571177430728278L).languageId(0xbd9c05c0f8725a35L, 0x7b68d745a7b848b9L).build2(SMethodBuilder.createJavaParameter(EditorContext.class, ""));
-  public static final SMethod<Boolean> mustBeRunManually_id3R3AIvumAZH = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("mustBeRunManually").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(4450571177430773741L).languageId(0xbd9c05c0f8725a35L, 0x7b68d745a7b848b9L).build2();
-  public static final SMethod<Boolean> highlightError_id4b4fYXfo1HZ = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("highlightError").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(4811040598999964543L).languageId(0xbd9c05c0f8725a35L, 0x7b68d745a7b848b9L).build2();
-  public static final SMethod<String> allowsEffectForNode_idORfz$DS6Ap = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("allowsEffectForNode").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(952298261448780185L).languageId(0xb66a309a6e1a7290L, 0xcfaa4966b7d54b69L).build2(SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""));
-  public static final SMethod<ReplResult> evaluateEntry_id4nY0kF8p1AF = new SMethodBuilder<ReplResult>(new SJavaCompoundTypeImpl(ReplResult.class)).name("evaluateEntry").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5043470053402745259L).languageId(0xa7c1ffddc4b39be1L, 0x18001c9433a74f68L).build2();
-  public static final SMethod<Boolean> isReferenceable_id2QxWJFK_S9T = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("isReferenceable").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(3288176362549379705L).languageId(0xa7c1ffddc4b39be1L, 0x18001c9433a74f68L).build2();
-  public static final SMethod<Boolean> isReadOnly_id4nY0kF8uh7w = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("isReadOnly").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5043470053404119520L).languageId(0xa7c1ffddc4b39be1L, 0x18001c9433a74f68L).build2();
-  public static final SMethod<Boolean> doNotShowManualInfoMessage_id2jITtfD$0No = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("doNotShowManualInfoMessage").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(2661317128141933784L).languageId(0xbd9c05c0f8725a35L, 0x7b68d745a7b848b9L).build2();
-  public static final SMethod<IDiffable> findPredecessor_id2UfkHNj5e$2 = new SMethodBuilder<IDiffable>(new SJavaCompoundTypeImpl(IDiffable.class)).name("findPredecessor").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(3354991355801954562L).languageId(0xa7c1ffddc4b39be1L, 0x18001c9433a74f68L).build2(SMethodBuilder.createJavaParameter(IDiffable.class, ""));
+  public static final SMethod<Boolean> isStructurallyValid_id14RJwd1gWJt = new SMethodBuilder<>(Boolean.TYPE).name("isStructurallyValid").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(1240669143553002461L).languageId(0xa7c1ffddc4b39be1L, 0x18001c9433a74f68L).build2();
+  public static final SMethod<Void> runManually_id3R3AIvumrTm = new SMethodBuilder<>(Void.TYPE).name("runManually").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(4450571177430728278L).languageId(0xbd9c05c0f8725a35L, 0x7b68d745a7b848b9L).build2(SMethodBuilder.createJavaParameter(EditorContext.class, "edCtxOrNull"));
+  public static final SMethod<Boolean> mustBeRunManually_id3R3AIvumAZH = new SMethodBuilder<>(Boolean.TYPE).name("mustBeRunManually").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(4450571177430773741L).languageId(0xbd9c05c0f8725a35L, 0x7b68d745a7b848b9L).build2();
+  public static final SMethod<Boolean> highlightError_id4b4fYXfo1HZ = new SMethodBuilder<>(Boolean.TYPE).name("highlightError").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(4811040598999964543L).languageId(0xbd9c05c0f8725a35L, 0x7b68d745a7b848b9L).build2();
+  public static final SMethod<String> allowsEffectForNode_idORfz$DS6Ap = new SMethodBuilder<>(String.class).name("allowsEffectForNode").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(952298261448780185L).languageId(0xb66a309a6e1a7290L, 0xcfaa4966b7d54b69L).build2(SMethodBuilder.createJavaParameter(SNode.class, "n"));
+  public static final SMethod<ReplResult> evaluateEntry_id4nY0kF8p1AF = new SMethodBuilder<>(ReplResult.class).name("evaluateEntry").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5043470053402745259L).languageId(0xa7c1ffddc4b39be1L, 0x18001c9433a74f68L).build2();
+  public static final SMethod<Boolean> isReferenceable_id2QxWJFK_S9T = new SMethodBuilder<>(Boolean.TYPE).name("isReferenceable").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(3288176362549379705L).languageId(0xa7c1ffddc4b39be1L, 0x18001c9433a74f68L).build2();
+  public static final SMethod<Boolean> isReadOnly_id4nY0kF8uh7w = new SMethodBuilder<>(Boolean.TYPE).name("isReadOnly").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5043470053404119520L).languageId(0xa7c1ffddc4b39be1L, 0x18001c9433a74f68L).build2();
+  public static final SMethod<Boolean> doNotShowManualInfoMessage_id2jITtfD$0No = new SMethodBuilder<>(Boolean.TYPE).name("doNotShowManualInfoMessage").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(2661317128141933784L).languageId(0xbd9c05c0f8725a35L, 0x7b68d745a7b848b9L).build2();
+  public static final SMethod<IDiffable> findPredecessor_id2UfkHNj5e$2 = new SMethodBuilder<>(IDiffable.class).name("findPredecessor").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(3354991355801954562L).languageId(0xa7c1ffddc4b39be1L, 0x18001c9433a74f68L).build2(SMethodBuilder.createJavaParameter(IDiffable.class, "curr"));
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(isStructurallyValid_id14RJwd1gWJt, runManually_id3R3AIvumrTm, mustBeRunManually_id3R3AIvumAZH, highlightError_id4b4fYXfo1HZ, allowsEffectForNode_idORfz$DS6Ap, evaluateEntry_id4nY0kF8p1AF, isReferenceable_id2QxWJFK_S9T, isReadOnly_id4nY0kF8uh7w, doNotShowManualInfoMessage_id2jITtfD$0No, findPredecessor_id2UfkHNj5e$2);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(isStructurallyValid_id14RJwd1gWJt, runManually_id3R3AIvumrTm, mustBeRunManually_id3R3AIvumAZH, highlightError_id4b4fYXfo1HZ, allowsEffectForNode_idORfz$DS6Ap, evaluateEntry_id4nY0kF8p1AF, isReferenceable_id2QxWJFK_S9T, isReadOnly_id4nY0kF8uh7w, doNotShowManualInfoMessage_id2jITtfD$0No, findPredecessor_id2UfkHNj5e$2);
 
-  private static void ___init___(@NotNull SNode __thisNode__) {
-  }
 
   /*package*/ static boolean isStructurallyValid_id14RJwd1gWJt(@NotNull SNode __thisNode__) {
     SNode e = SLinkOperations.getTarget(__thisNode__, LINKS.expression$3Lmy);
@@ -147,10 +143,6 @@ public final class DefaultEntry__BehaviorDescriptor extends BaseBHDescriptor {
   /*package*/ DefaultEntry__BehaviorDescriptor() {
   }
 
-  @Override
-  protected void initNode(@NotNull SNode node, @NotNull SConstructor constructor, @Nullable Object[] parameters) {
-    ___init___(node);
-  }
 
   @Override
   protected <T> T invokeSpecial0(@NotNull SNode node, @NotNull SMethod<T> method, @Nullable Object[] parameters) {

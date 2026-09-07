@@ -8,14 +8,12 @@ import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import org.jetbrains.mps.openapi.model.SNode;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import java.util.List;
 import java.util.Arrays;
 import org.jetbrains.annotations.NotNull;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
 import com.mbeddr.core.base.behavior.IVisibleElementProvider__BehaviorDescriptor;
-import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 import org.jetbrains.mps.openapi.language.SInterfaceConcept;
@@ -23,12 +21,10 @@ import org.jetbrains.mps.openapi.language.SInterfaceConcept;
 public final class RealizesKind__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getConcept(0x9eff333614d746c5L, 0xafe1dcbad13c14c3L, 0x1b7130c9c8835d84L, "org.iets3.core.trace.test.structure.RealizesKind");
 
-  public static final SMethod<Iterable<SNode>> traceableElements_idx8tpS_QfyE = new SMethodBuilder<Iterable<SNode>>(new SJavaCompoundTypeImpl((Class<Iterable<SNode>>) ((Class) Object.class))).name("traceableElements").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(596856272726849706L).languageId(0x98688af4a7f3eba9L, 0x7d21cc4b4c2441dbL).build2();
+  public static final SMethod<Iterable<SNode>> traceableElements_idx8tpS_QfyE = new SMethodBuilder<>((Class<Iterable<SNode>>) ((Class) Object.class)).name("traceableElements").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(596856272726849706L).languageId(0x98688af4a7f3eba9L, 0x7d21cc4b4c2441dbL).build2();
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(traceableElements_idx8tpS_QfyE);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(traceableElements_idx8tpS_QfyE);
 
-  private static void ___init___(@NotNull SNode __thisNode__) {
-  }
 
   /*package*/ static Iterable<SNode> traceableElements_idx8tpS_QfyE(@NotNull SNode __thisNode__) {
     return SNodeOperations.ofConcept(IVisibleElementProvider__BehaviorDescriptor.visibleContentsOfTypeAsSequence_id3g6LnlWuSo8.invoke(SNodeOperations.getNodeAncestor(__thisNode__, CONCEPTS.IVisibleElementProvider$$O, false, false), CONCEPTS.INamedConcept$Kd), CONCEPTS.INamedConcept$Kd);
@@ -37,10 +33,6 @@ public final class RealizesKind__BehaviorDescriptor extends BaseBHDescriptor {
   /*package*/ RealizesKind__BehaviorDescriptor() {
   }
 
-  @Override
-  protected void initNode(@NotNull SNode node, @NotNull SConstructor constructor, @Nullable Object[] parameters) {
-    ___init___(node);
-  }
 
   @Override
   protected <T> T invokeSpecial0(@NotNull SNode node, @NotNull SMethod<T> method, @Nullable Object[] parameters) {

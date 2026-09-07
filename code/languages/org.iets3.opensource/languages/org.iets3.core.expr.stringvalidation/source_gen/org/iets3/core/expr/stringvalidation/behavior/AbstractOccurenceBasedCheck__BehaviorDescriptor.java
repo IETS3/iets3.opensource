@@ -8,7 +8,6 @@ import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import org.iets3.core.expr.stringvalidation.runtime.runtime.XAbstractOccurenceBasedCheck;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import java.util.List;
 import java.util.Arrays;
@@ -24,9 +23,9 @@ import org.jetbrains.mps.openapi.language.SConcept;
 public final class AbstractOccurenceBasedCheck__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getConcept(0xf003a0fec14041d7L, 0xa145ea42368e581cL, 0x4568eac1f475bf84L, "org.iets3.core.expr.stringvalidation.structure.AbstractOccurenceBasedCheck");
 
-  public static final SMethod<XAbstractOccurenceBasedCheck> makeX_id5wF$o0BLWcU = new SMethodBuilder<XAbstractOccurenceBasedCheck>(new SJavaCompoundTypeImpl(XAbstractOccurenceBasedCheck.class)).name("makeX").modifiers(12, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(6353331678945461050L).languageId(0xa145ea42368e581cL, 0xf003a0fec14041d7L).build2();
+  public static final SMethod<XAbstractOccurenceBasedCheck> makeX_id5wF$o0BLWcU = new SMethodBuilder<>(XAbstractOccurenceBasedCheck.class).name("makeX").modifiers(12, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(6353331678945461050L).languageId(0xa145ea42368e581cL, 0xf003a0fec14041d7L).build2();
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(makeX_id5wF$o0BLWcU);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(makeX_id5wF$o0BLWcU);
 
   private static void ___init___(@NotNull SNode __thisNode__) {
     SLinkOperations.setNewChild(__thisNode__, LINKS.kind$icW2, CONCEPTS.MustBeCheckKind$MM);

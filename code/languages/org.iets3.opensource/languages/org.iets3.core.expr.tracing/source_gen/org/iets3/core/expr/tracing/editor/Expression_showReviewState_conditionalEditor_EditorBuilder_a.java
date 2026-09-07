@@ -44,18 +44,15 @@ import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
   }
 
   /*package*/ EditorCell createCell() {
-    return createPriorityInfoCell_1();
+    return createPriorityInfoCell_0();
   }
 
-  private EditorCell createPriorityInfoCell_0(EditorContext editorContext, SNode node) {
+  private EditorCell createPriorityInfoCell_0() {
     EditorCell editorCell = null;
     editorCell = createAlternation_0();
     editorCell.setBig(true);
     setCellContext(editorCell);
     return editorCell;
-  }
-  private EditorCell createPriorityInfoCell_1() {
-    return createPriorityInfoCell_0(getEditorContext(), myNode);
   }
   private EditorCell createAlternation_0() {
     boolean alternationCondition = true;
@@ -94,7 +91,7 @@ import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
     style.set(StyleAttributes.SELECTABLE, false);
     editorCell.getStyle().putAll(style);
     editorCell.addEditorCell(createCollection_1());
-    editorCell.addEditorCell(createHorizontalLineCell_1());
+    editorCell.addEditorCell(createHorizontalLineCell_0());
     editorCell.addEditorCell(createReadOnlyModelAccessor_0());
     return editorCell;
   }
@@ -113,17 +110,14 @@ import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
       return editorCell;
     }
   }
-  private EditorCell createHorizontalLineCell_0(EditorContext editorContext, SNode node) {
-    HorizontalLineCell editorCell = new HorizontalLineCell(editorContext, node);
+  private EditorCell createHorizontalLineCell_0() {
+    HorizontalLineCell editorCell = new HorizontalLineCell(getEditorContext(), getNode());
     editorCell.setCellId("HorizontalLineCell_3fwvqp_b0a0a");
     Style style = new StyleImpl();
     style.set(StyleAttributes.getInstance().<Color>getAttribute("de.itemis.mps.editor.celllayout.styles", "_horizontal-line-color"), getStyleRegistry().getSimpleColor(_StyleParameter_QueryFunction_3fwvqp_a0b0a0a()));
     style.set(StyleAttributes.getInstance().<Integer>getAttribute("de.itemis.mps.editor.celllayout.styles", "_horizontal-line-width"), 2);
     editorCell.getStyle().putAll(style);
     return editorCell;
-  }
-  private EditorCell createHorizontalLineCell_1() {
-    return createHorizontalLineCell_0(getEditorContext(), myNode);
   }
   private Color _StyleParameter_QueryFunction_3fwvqp_a0b0a0a() {
     return TracingConstants.DEBUGGER_COLOR;

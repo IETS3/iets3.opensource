@@ -70,7 +70,7 @@ import jetbrains.mps.openapi.editor.cells.CellTraversalUtil;
 import de.slisson.mps.tables.runtime.cells.EditorCell_GridCell;
 import jetbrains.mps.baseLanguage.closures.runtime.Wrappers;
 import de.slisson.mps.tables.runtime.cells.TableEditor;
-import de.slisson.mps.tables.runtime.cells.CellCaching;
+import de.slisson.mps.hacks.editor.EditorCacheHacks;
 import de.slisson.mps.tables.runtime.cells.ChildsTracker;
 import de.slisson.mps.tables.runtime.cells.PartialTableExtractor;
 import de.slisson.mps.tables.runtime.gridmodel.Grid;
@@ -151,7 +151,7 @@ import org.jetbrains.mps.openapi.language.SReferenceLink;
     return editorCell;
   }
   private EditorCell createCustomFactory_1() {
-    return createCustomFactory_0(getEditorContext(), myNode);
+    return createCustomFactory_0(getEditorContext(), getNode());
   }
   private EditorCell createCustomFactory_2(final EditorContext editorContext, final SNode node) {
 
@@ -165,7 +165,7 @@ import org.jetbrains.mps.openapi.language.SReferenceLink;
     return editorCell;
   }
   private EditorCell createCustomFactory_3() {
-    return createCustomFactory_2(getEditorContext(), myNode);
+    return createCustomFactory_2(getEditorContext(), getNode());
   }
   private EditorCell createReadOnlyModelAccessor_0() {
     EditorCell_Property editorCell = EditorCell_Property.create(getEditorContext(), new ModelAccessor.ReadOnly() {
@@ -256,7 +256,7 @@ import org.jetbrains.mps.openapi.language.SReferenceLink;
     return editorCell;
   }
   private EditorCell createCustomFactory_5() {
-    return createCustomFactory_4(getEditorContext(), myNode);
+    return createCustomFactory_4(getEditorContext(), getNode());
   }
   private EditorCell createCustomFactory_6(final EditorContext editorContext, final SNode node) {
 
@@ -283,7 +283,7 @@ import org.jetbrains.mps.openapi.language.SReferenceLink;
     return editorCell;
   }
   private EditorCell createCustomFactory_7() {
-    return createCustomFactory_6(getEditorContext(), myNode);
+    return createCustomFactory_6(getEditorContext(), getNode());
   }
   private EditorCell createCollection_1() {
     jetbrains.mps.nodeEditor.cells.EditorCell_Collection editorCell = new jetbrains.mps.nodeEditor.cells.EditorCell_Collection(getEditorContext(), myNode, new CellLayout_Indent());
@@ -436,13 +436,13 @@ import org.jetbrains.mps.openapi.language.SReferenceLink;
     return editorCell;
   }
   private EditorCell createCustomFactory_9() {
-    return createCustomFactory_8(getEditorContext(), myNode);
+    return createCustomFactory_8(getEditorContext(), getNode());
   }
   private EditorCell createTable_0(final EditorContext editorContext, final SNode node) {
 
     final Wrappers._T<TableEditor> editorCell = new Wrappers._T<TableEditor>(null);
     _FunctionTypes._void_P0_E0 creator = () -> {
-      CellCaching.maybeDisableCache(node, editorContext, () -> {
+      EditorCacheHacks.noCaching(editorContext, () -> {
         try {
 
           ChildsTracker.pushNewInstance();
@@ -496,7 +496,7 @@ import org.jetbrains.mps.openapi.language.SReferenceLink;
 
   }
   private EditorCell createTable_1() {
-    return createTable_0(getEditorContext(), myNode);
+    return createTable_0(getEditorContext(), getNode());
   }
   public Grid createStaticVertical_dcq2gc_a0e0a(final EditorContext editorContext, final SNode node) {
     Grid grid = new Grid();

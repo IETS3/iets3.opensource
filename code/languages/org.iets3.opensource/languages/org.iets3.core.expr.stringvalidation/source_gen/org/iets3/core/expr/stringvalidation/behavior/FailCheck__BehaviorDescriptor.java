@@ -7,7 +7,6 @@ import org.jetbrains.mps.openapi.language.SAbstractConcept;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import org.iets3.core.expr.stringvalidation.runtime.runtime.XAbstractOccurenceBasedCheck;
 import java.util.List;
@@ -18,7 +17,6 @@ import jetbrains.mps.lang.smodel.generator.smodelAdapter.SConceptOperations;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
 import org.iets3.core.expr.stringvalidation.runtime.runtime.XFailCheck;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
-import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 import org.jetbrains.mps.openapi.language.SContainmentLink;
@@ -26,13 +24,11 @@ import org.jetbrains.mps.openapi.language.SContainmentLink;
 public final class FailCheck__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getConcept(0xf003a0fec14041d7L, 0xa145ea42368e581cL, 0x6c1f4b80af37c262L, "org.iets3.core.expr.stringvalidation.structure.FailCheck");
 
-  public static final SMethod<String> getPresentation_idhEwIMiw = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("getPresentation").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(1213877396640L).languageId(0x9b92103b95ca8c0cL, 0xceab519525ea4f22L).build2();
-  public static final SMethod<XAbstractOccurenceBasedCheck> makeX_id5wF$o0BLWcU = new SMethodBuilder<XAbstractOccurenceBasedCheck>(new SJavaCompoundTypeImpl(XAbstractOccurenceBasedCheck.class)).name("makeX").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(6353331678945461050L).languageId(0xa145ea42368e581cL, 0xf003a0fec14041d7L).build2();
+  public static final SMethod<String> getPresentation_idhEwIMiw = new SMethodBuilder<>(String.class).name("getPresentation").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(1213877396640L).languageId(0x9b92103b95ca8c0cL, 0xceab519525ea4f22L).build2();
+  public static final SMethod<XAbstractOccurenceBasedCheck> makeX_id5wF$o0BLWcU = new SMethodBuilder<>(XAbstractOccurenceBasedCheck.class).name("makeX").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(6353331678945461050L).languageId(0xa145ea42368e581cL, 0xf003a0fec14041d7L).build2();
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(getPresentation_idhEwIMiw, makeX_id5wF$o0BLWcU);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(getPresentation_idhEwIMiw, makeX_id5wF$o0BLWcU);
 
-  private static void ___init___(@NotNull SNode __thisNode__) {
-  }
 
   /*package*/ static String getPresentation_idhEwIMiw(@NotNull SNode __thisNode__) {
     return SConceptOperations.conceptAlias(SNodeOperations.getConcept(__thisNode__));
@@ -44,10 +40,6 @@ public final class FailCheck__BehaviorDescriptor extends BaseBHDescriptor {
   /*package*/ FailCheck__BehaviorDescriptor() {
   }
 
-  @Override
-  protected void initNode(@NotNull SNode node, @NotNull SConstructor constructor, @Nullable Object[] parameters) {
-    ___init___(node);
-  }
 
   @Override
   protected <T> T invokeSpecial0(@NotNull SNode node, @NotNull SMethod<T> method, @Nullable Object[] parameters) {

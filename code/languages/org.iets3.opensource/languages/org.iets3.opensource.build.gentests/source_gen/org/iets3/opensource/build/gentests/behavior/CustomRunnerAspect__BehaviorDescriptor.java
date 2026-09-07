@@ -8,7 +8,6 @@ import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import jetbrains.mps.scope.Scope;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import org.jetbrains.mps.openapi.model.SNode;
 import java.util.List;
@@ -24,7 +23,6 @@ import jetbrains.mps.scope.CompositeScope;
 import com.mbeddr.mpsutil.common.util.Traversal;
 import jetbrains.mps.internal.collections.runtime.Sequence;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
-import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 import org.jetbrains.mps.openapi.language.SInterfaceConcept;
@@ -35,13 +33,11 @@ import org.jetbrains.mps.openapi.language.SReferenceLink;
 public final class CustomRunnerAspect__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getConcept(0x9d000fbdbdca4a46L, 0xb39bc5ba9e79b38cL, 0x7c5d762302e2d174L, "org.iets3.opensource.build.gentests.structure.CustomRunnerAspect");
 
-  public static final SMethod<Scope> getScope_id52_Geb4QDV$ = new SMethodBuilder<Scope>(new SJavaCompoundTypeImpl(Scope.class)).name("getScope").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5811245382203252452L).languageId(0x9b92103b95ca8c0cL, 0xceab519525ea4f22L).build2(SMethodBuilder.createJavaParameter((Class<SAbstractConcept>) ((Class) Object.class), ""), SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""));
-  /*package*/ static final SMethod<List<SNode>> tarnsitiveBuildProjects_idBt8sbO6rFd = new SMethodBuilder<List<SNode>>(new SJavaCompoundTypeImpl((Class<List<SNode>>) ((Class) Object.class))).name("tarnsitiveBuildProjects").modifiers(0, AccessPrivileges.PRIVATE).concept(CONCEPT).baseMethodId(710761437397105357L).languageId(0xb39bc5ba9e79b38cL, 0x9d000fbdbdca4a46L).build2(SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""));
+  public static final SMethod<Scope> getScope_id52_Geb4QDV$ = new SMethodBuilder<>(Scope.class).name("getScope").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5811245382203252452L).languageId(0x9b92103b95ca8c0cL, 0xceab519525ea4f22L).build2(SMethodBuilder.createJavaParameter(SAbstractConcept.class, "kind"), SMethodBuilder.createJavaParameter(SNode.class, "child"));
+  /*package*/ static final SMethod<List<SNode>> tarnsitiveBuildProjects_idBt8sbO6rFd = new SMethodBuilder<>((Class<List<SNode>>) ((Class) Object.class)).name("tarnsitiveBuildProjects").modifiers(0, AccessPrivileges.PRIVATE).concept(CONCEPT).baseMethodId(710761437397105357L).languageId(0xb39bc5ba9e79b38cL, 0x9d000fbdbdca4a46L).build2(SMethodBuilder.createJavaParameter(SNode.class, "buildProject"));
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(getScope_id52_Geb4QDV$, tarnsitiveBuildProjects_idBt8sbO6rFd);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(getScope_id52_Geb4QDV$, tarnsitiveBuildProjects_idBt8sbO6rFd);
 
-  private static void ___init___(@NotNull SNode __thisNode__) {
-  }
 
   /*package*/ static Scope getScope_id52_Geb4QDV$(@NotNull SNode __thisNode__, final SAbstractConcept kind, SNode child) {
     if (SConceptOperations.isSubConceptOf(SNodeOperations.asSConcept(kind), CONCEPTS.BuildMacro$qd)) {
@@ -68,10 +64,6 @@ public final class CustomRunnerAspect__BehaviorDescriptor extends BaseBHDescript
   /*package*/ CustomRunnerAspect__BehaviorDescriptor() {
   }
 
-  @Override
-  protected void initNode(@NotNull SNode node, @NotNull SConstructor constructor, @Nullable Object[] parameters) {
-    ___init___(node);
-  }
 
   @Override
   protected <T> T invokeSpecial0(@NotNull SNode node, @NotNull SMethod<T> method, @Nullable Object[] parameters) {

@@ -17,7 +17,7 @@
       <unit at="11,0,70,0" name="org.iets3.safety.attributes.structure.ConceptPresentationAspectImpl" />
     </file>
     <file name="LanguageConceptSwitch.java">
-      <unit at="10,0,38,0" name="org.iets3.safety.attributes.structure.LanguageConceptSwitch" />
+      <unit at="12,0,46,0" name="org.iets3.safety.attributes.structure.LanguageConceptSwitch" />
     </file>
     <file name="StructureAspectDescriptor.java">
       <unit at="17,0,132,0" name="org.iets3.safety.attributes.structure.StructureAspectDescriptor" />
@@ -37,8 +37,8 @@
       <scope id="1970998948979966434" at="31,48,37,36" />
     </file>
     <file name="LanguageConceptSwitch.java">
-      <node id="1970998948979966434" at="13,0,14,0" concept="8" trace="ASILLevelValue" />
-      <node id="1970998948979966434" at="21,57,22,53" concept="1" />
+      <node id="1970998948979966434" at="15,0,16,0" concept="8" trace="ASILLevelValue" />
+      <node id="1970998948979966434" at="23,57,24,53" concept="1" />
     </file>
     <file name="StructureAspectDescriptor.java">
       <node id="1970998948979966434" at="19,0,20,0" concept="2" trace="myConceptASILLevelValue" />
@@ -74,8 +74,8 @@
       <scope id="4383428175923177001" at="38,49,44,37" />
     </file>
     <file name="LanguageConceptSwitch.java">
-      <node id="4383428175923177001" at="14,0,15,0" concept="8" trace="AsilConstraints" />
-      <node id="4383428175923177001" at="22,53,23,54" concept="1" />
+      <node id="4383428175923177001" at="16,0,17,0" concept="8" trace="AsilConstraints" />
+      <node id="4383428175923177001" at="24,53,25,54" concept="1" />
     </file>
     <file name="StructureAspectDescriptor.java">
       <node id="4383428175923177001" at="20,0,21,0" concept="2" trace="myConceptAsilConstraints" />
@@ -110,8 +110,8 @@
       <scope id="4388710048722166715" at="24,52,30,40" />
     </file>
     <file name="LanguageConceptSwitch.java">
-      <node id="4388710048722166715" at="12,0,13,0" concept="8" trace="ASILLevelAttribute" />
-      <node id="4388710048722166715" at="20,116,21,57" concept="1" />
+      <node id="4388710048722166715" at="14,0,15,0" concept="8" trace="ASILLevelAttribute" />
+      <node id="4388710048722166715" at="22,116,23,57" concept="1" />
     </file>
     <file name="StructureAspectDescriptor.java">
       <node id="4388710048722166715" at="18,0,19,0" concept="2" trace="myConceptASILLevelAttribute" />
@@ -367,8 +367,8 @@
       <scope id="8145691575503528237" at="59,47,65,35" />
     </file>
     <file name="LanguageConceptSwitch.java">
-      <node id="8145691575503528237" at="17,0,18,0" concept="8" trace="SeverityValue" />
-      <node id="8145691575503528237" at="25,52,26,52" concept="1" />
+      <node id="8145691575503528237" at="19,0,20,0" concept="8" trace="SeverityValue" />
+      <node id="8145691575503528237" at="27,52,28,52" concept="1" />
     </file>
     <file name="StructureAspectDescriptor.java">
       <node id="8145691575503528237" at="23,0,24,0" concept="2" trace="myConceptSeverityValue" />
@@ -401,8 +401,8 @@
       <scope id="8145691575503528242" at="52,47,58,35" />
     </file>
     <file name="LanguageConceptSwitch.java">
-      <node id="8145691575503528242" at="16,0,17,0" concept="8" trace="ExposureValue" />
-      <node id="8145691575503528242" at="24,59,25,52" concept="1" />
+      <node id="8145691575503528242" at="18,0,19,0" concept="8" trace="ExposureValue" />
+      <node id="8145691575503528242" at="26,59,27,52" concept="1" />
     </file>
     <file name="StructureAspectDescriptor.java">
       <node id="8145691575503528242" at="22,0,23,0" concept="2" trace="myConceptExposureValue" />
@@ -435,8 +435,8 @@
       <scope id="8145691575503528285" at="45,54,51,42" />
     </file>
     <file name="LanguageConceptSwitch.java">
-      <node id="8145691575503528285" at="15,0,16,0" concept="8" trace="ControllabilityValue" />
-      <node id="8145691575503528285" at="23,54,24,59" concept="1" />
+      <node id="8145691575503528285" at="17,0,18,0" concept="8" trace="ControllabilityValue" />
+      <node id="8145691575503528285" at="25,54,26,59" concept="1" />
     </file>
     <file name="StructureAspectDescriptor.java">
       <node id="8145691575503528285" at="21,0,22,0" concept="2" trace="myConceptControllabilityValue" />

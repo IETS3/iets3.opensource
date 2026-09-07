@@ -9,7 +9,6 @@ import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import java.util.List;
 import org.jetbrains.mps.openapi.model.SNode;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import java.util.Arrays;
 import org.jetbrains.annotations.NotNull;
@@ -44,11 +43,11 @@ import org.jetbrains.mps.openapi.language.SConcept;
 public final class StructuralCoverageAssQuery__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getConcept(0xd441fba0f46b43cdL, 0xb723dad7b65da615L, 0x4f55d7039928a44aL, "org.iets3.core.expr.tests.structure.StructuralCoverageAssQuery");
 
-  public static final SMethod<List<SNode>> runQuery_id7hIyKqbFNeu = new SMethodBuilder<List<SNode>>(new SJavaCompoundTypeImpl((Class<List<SNode>>) ((Class) Object.class))).name("runQuery").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(8389796016067392414L).languageId(0xaa41d1b2bffa7eb1L, 0xd4280a54f6df4383L).build2();
-  public static final SMethod<SNode> getNodesFilter_idCrzyxmFOD2 = new SMethodBuilder<SNode>(new SJavaCompoundTypeImpl((Class<SNode>) ((Class) Object.class))).name("getNodesFilter").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(728332068654631490L).languageId(0xb723dad7b65da615L, 0xd441fba0f46b43cdL).build2();
-  public static final SMethod<List<SNode>> getSummaries_id_gCXGjoJQM = new SMethodBuilder<List<SNode>>(new SJavaCompoundTypeImpl((Class<List<SNode>>) ((Class) Object.class))).name("getSummaries").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(671216505796623794L).languageId(0xaa41d1b2bffa7eb1L, 0xd4280a54f6df4383L).build2(SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""));
+  public static final SMethod<List<SNode>> runQuery_id7hIyKqbFNeu = new SMethodBuilder<>((Class<List<SNode>>) ((Class) Object.class)).name("runQuery").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(8389796016067392414L).languageId(0xaa41d1b2bffa7eb1L, 0xd4280a54f6df4383L).build2();
+  public static final SMethod<SNode> getNodesFilter_idCrzyxmFOD2 = new SMethodBuilder<>(SNode.class).name("getNodesFilter").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(728332068654631490L).languageId(0xb723dad7b65da615L, 0xd441fba0f46b43cdL).build2();
+  public static final SMethod<List<SNode>> getSummaries_id_gCXGjoJQM = new SMethodBuilder<>((Class<List<SNode>>) ((Class) Object.class)).name("getSummaries").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(671216505796623794L).languageId(0xaa41d1b2bffa7eb1L, 0xd4280a54f6df4383L).build2(SMethodBuilder.createJavaParameter(SNode.class, "ass"));
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(runQuery_id7hIyKqbFNeu, getNodesFilter_idCrzyxmFOD2, getSummaries_id_gCXGjoJQM);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(runQuery_id7hIyKqbFNeu, getNodesFilter_idCrzyxmFOD2, getSummaries_id_gCXGjoJQM);
 
   private static void ___init___(@NotNull SNode __thisNode__) {
     SLinkOperations.setNewChild(__thisNode__, LINKS.scope$VAmc, CONCEPTS.CurrentModelScope$FB);

@@ -60,10 +60,6 @@ public class Conversions_Test extends BaseTransformationTest {
     new TestBody(this).test_NodeSelfreferencingConvertCheck3169779891739033162();
   }
   @Test
-  public void test_NodeTypeSystemWarningCheck2900540627564397463() throws Throwable {
-    new TestBody(this).test_NodeTypeSystemWarningCheck2900540627564397463();
-  }
-  @Test
   public void test_NodeTheConversionExpressionsCheck2900540627564397464() throws Throwable {
     new TestBody(this).test_NodeTheConversionExpressionsCheck2900540627564397464();
   }
@@ -76,10 +72,6 @@ public class Conversions_Test extends BaseTransformationTest {
     new TestBody(this).test_ErrorMessagesCheck4240468146473102294();
   }
   @Test
-  public void test_NodeTypeSystemWarningCheck1859314401789100905() throws Throwable {
-    new TestBody(this).test_NodeTypeSystemWarningCheck1859314401789100905();
-  }
-  @Test
   public void test_NodeNoMatchingConversionSpecifierCheck1859314401789100906() throws Throwable {
     new TestBody(this).test_NodeNoMatchingConversionSpecifierCheck1859314401789100906();
   }
@@ -90,10 +82,6 @@ public class Conversions_Test extends BaseTransformationTest {
   @Test
   public void test_NodeWarningCheck7408964427860872839() throws Throwable {
     new TestBody(this).test_NodeWarningCheck7408964427860872839();
-  }
-  @Test
-  public void test_NodeTypeSystemWarningCheck1859314401789175466() throws Throwable {
-    new TestBody(this).test_NodeTypeSystemWarningCheck1859314401789175466();
   }
   @Test
   public void test_NodeNoMatchingConversionSpecifierCheck1859314401789175467() throws Throwable {
@@ -153,13 +141,6 @@ public class Conversions_Test extends BaseTransformationTest {
         new CheckExpectedMessageRunnable.CheckExpectedRuleMessageRunnable(nodeToCheck, MessageStatus.ERROR, new SNodePointer("r:d4f1532d-fc5c-419f-84ee-daef42867c8e(org.iets3.core.expr.typetags.physunits.typesystem)", "3156023081160644881"), "", myProject.getRepository(), myProject.getPlatform()).run();
       });
     }
-    public void test_NodeTypeSystemWarningCheck2900540627564397463() throws Exception {
-      initTestNodes();
-      runWithinCommand(() -> {
-        SNode nodeToCheck = getNodeById("1859314401789205251");
-        new CheckExpectedMessageRunnable.CheckExpectedTypesystemMessageRunnable(nodeToCheck, MessageStatus.WARNING, "", myProject.getRepository(), myProject.getPlatform()).run();
-      });
-    }
     public void test_NodeTheConversionExpressionsCheck2900540627564397464() throws Exception {
       initTestNodes();
       runWithinCommand(() -> {
@@ -171,7 +152,7 @@ public class Conversions_Test extends BaseTransformationTest {
       initTestNodes();
       runWithinCommand(() -> {
         SNode nodeToCheck = getNodeById("9215883686878643031");
-        new CheckErrorMessagesRunnable(nodeToCheck, true, false, myProject.getPlatform()).includeSelf(false).exclude(Arrays.<CheckExpectedMessageRunnable>asList(new CheckExpectedMessageRunnable.CheckExpectedTypesystemMessageRunnable(getNodeById("1859314401788564815"), MessageStatus.ERROR, "", myProject.getRepository(), myProject.getPlatform()), new CheckExpectedMessageRunnable.CheckExpectedRuleMessageRunnable(getNodeById("1933349866041728183"), MessageStatus.ERROR, new SNodePointer("r:d4f1532d-fc5c-419f-84ee-daef42867c8e(org.iets3.core.expr.typetags.physunits.typesystem)", "1741902046319978274"), "", myProject.getRepository(), myProject.getPlatform()), new CheckExpectedMessageRunnable.CheckExpectedRuleMessageRunnable(getNodeById("1933349866041728188"), MessageStatus.ERROR, new SNodePointer("r:d4f1532d-fc5c-419f-84ee-daef42867c8e(org.iets3.core.expr.typetags.physunits.typesystem)", "1741902046319978274"), "", myProject.getRepository(), myProject.getPlatform()), new CheckExpectedMessageRunnable.CheckExpectedRuleMessageRunnable(getNodeById("1933349866041728201"), MessageStatus.ERROR, new SNodePointer("r:d4f1532d-fc5c-419f-84ee-daef42867c8e(org.iets3.core.expr.typetags.physunits.typesystem)", "3156023081160644881"), "", myProject.getRepository(), myProject.getPlatform()), new CheckExpectedMessageRunnable.CheckExpectedTypesystemMessageRunnable(getNodeById("1859314401789205251"), MessageStatus.WARNING, "", myProject.getRepository(), myProject.getPlatform()), new CheckExpectedMessageRunnable.CheckExpectedRuleMessageRunnable(getNodeById("1859314401789205251"), MessageStatus.ERROR, new SNodePointer("r:d4f1532d-fc5c-419f-84ee-daef42867c8e(org.iets3.core.expr.typetags.physunits.typesystem)", "2315408579356842760"), "", myProject.getRepository(), myProject.getPlatform()))).run();
+        new CheckErrorMessagesRunnable(nodeToCheck, true, false, myProject.getPlatform()).includeSelf(false).exclude(Arrays.<CheckExpectedMessageRunnable>asList(new CheckExpectedMessageRunnable.CheckExpectedTypesystemMessageRunnable(getNodeById("1859314401788564815"), MessageStatus.ERROR, "", myProject.getRepository(), myProject.getPlatform()), new CheckExpectedMessageRunnable.CheckExpectedRuleMessageRunnable(getNodeById("1933349866041728183"), MessageStatus.ERROR, new SNodePointer("r:d4f1532d-fc5c-419f-84ee-daef42867c8e(org.iets3.core.expr.typetags.physunits.typesystem)", "1741902046319978274"), "", myProject.getRepository(), myProject.getPlatform()), new CheckExpectedMessageRunnable.CheckExpectedRuleMessageRunnable(getNodeById("1933349866041728188"), MessageStatus.ERROR, new SNodePointer("r:d4f1532d-fc5c-419f-84ee-daef42867c8e(org.iets3.core.expr.typetags.physunits.typesystem)", "1741902046319978274"), "", myProject.getRepository(), myProject.getPlatform()), new CheckExpectedMessageRunnable.CheckExpectedRuleMessageRunnable(getNodeById("1933349866041728201"), MessageStatus.ERROR, new SNodePointer("r:d4f1532d-fc5c-419f-84ee-daef42867c8e(org.iets3.core.expr.typetags.physunits.typesystem)", "3156023081160644881"), "", myProject.getRepository(), myProject.getPlatform()), new CheckExpectedMessageRunnable.CheckExpectedRuleMessageRunnable(getNodeById("1859314401789205251"), MessageStatus.ERROR, new SNodePointer("r:d4f1532d-fc5c-419f-84ee-daef42867c8e(org.iets3.core.expr.typetags.physunits.typesystem)", "2315408579356842760"), "", myProject.getRepository(), myProject.getPlatform()))).run();
       });
     }
     public void test_ErrorMessagesCheck4240468146473102294() throws Exception {
@@ -179,13 +160,6 @@ public class Conversions_Test extends BaseTransformationTest {
       runWithinCommand(() -> {
         SNode nodeToCheck = getNodeById("4240468146473098069");
         new CheckErrorMessagesRunnable(nodeToCheck, false, false, myProject.getPlatform()).includeSelf(true).exclude(Arrays.<CheckExpectedMessageRunnable>asList()).run();
-      });
-    }
-    public void test_NodeTypeSystemWarningCheck1859314401789100905() throws Exception {
-      initTestNodes();
-      runWithinCommand(() -> {
-        SNode nodeToCheck = getNodeById("1859314401789045206");
-        new CheckExpectedMessageRunnable.CheckExpectedTypesystemMessageRunnable(nodeToCheck, MessageStatus.WARNING, "", myProject.getRepository(), myProject.getPlatform()).run();
       });
     }
     public void test_NodeNoMatchingConversionSpecifierCheck1859314401789100906() throws Exception {
@@ -207,13 +181,6 @@ public class Conversions_Test extends BaseTransformationTest {
       runWithinCommand(() -> {
         SNode nodeToCheck = getNodeById("7408964427860868672");
         new CheckExpectedMessageRunnable.CheckAnyMessageRunnable(nodeToCheck, MessageStatus.WARNING, "", myProject.getRepository(), myProject.getPlatform()).run();
-      });
-    }
-    public void test_NodeTypeSystemWarningCheck1859314401789175466() throws Exception {
-      initTestNodes();
-      runWithinCommand(() -> {
-        SNode nodeToCheck = getNodeById("1859314401789134641");
-        new CheckExpectedMessageRunnable.CheckExpectedTypesystemMessageRunnable(nodeToCheck, MessageStatus.WARNING, "", myProject.getRepository(), myProject.getPlatform()).run();
       });
     }
     public void test_NodeNoMatchingConversionSpecifierCheck1859314401789175467() throws Exception {

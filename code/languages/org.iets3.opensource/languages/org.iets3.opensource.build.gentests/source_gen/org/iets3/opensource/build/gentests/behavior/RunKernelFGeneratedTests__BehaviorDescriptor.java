@@ -8,7 +8,6 @@ import org.jetbrains.mps.openapi.language.SAbstractConcept;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import jetbrains.mps.build.util.VisibleArtifacts;
 import jetbrains.mps.build.util.RequiredDependenciesBuilder;
@@ -18,13 +17,10 @@ import java.util.Arrays;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.mps.openapi.model.SNode;
 import org.jetbrains.mps.openapi.persistence.PersistenceFacade;
-import jetbrains.mps.build.util.UnpackHelper;
-import java.lang.reflect.Field;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
 import jetbrains.mps.lang.core.behavior.ScopeProvider__BehaviorDescriptor;
 import jetbrains.mps.lang.core.behavior.BaseConcept__BehaviorDescriptor;
 import jetbrains.mps.build.util.DependenciesHelper;
-import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 import org.jetbrains.mps.openapi.language.SConcept;
@@ -34,46 +30,24 @@ public final class RunKernelFGeneratedTests__BehaviorDescriptor extends BaseBHDe
   private static final Logger LOG = Logger.getLogger(RunKernelFGeneratedTests__BehaviorDescriptor.class);
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getConcept(0x9d000fbdbdca4a46L, 0xb39bc5ba9e79b38cL, 0x3fe7b889a03324fbL, "org.iets3.opensource.build.gentests.structure.RunKernelFGeneratedTests");
 
-  /*package*/ static final SMethod<String> getGentestsRtSolutionName_id6Fs_Z9I$Bez = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("getGentestsRtSolutionName").modifiers(0, AccessPrivileges.PRIVATE).concept(CONCEPT).baseMethodId(7700196530389676963L).languageId(0xb39bc5ba9e79b38cL, 0x9d000fbdbdca4a46L).build2();
-  public static final SMethod<Void> fetchDependencies_id57YmpYyL8F1 = new SMethodBuilder<Void>(new SJavaCompoundTypeImpl(Void.class)).name("fetchDependencies").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5908258303322131137L).languageId(0xb99171f8c50ce5d2L, 0x798100da4f0a421aL).build2(SMethodBuilder.createJavaParameter(VisibleArtifacts.class, ""), SMethodBuilder.createJavaParameter(RequiredDependenciesBuilder.class, ""));
-  public static final SMethod<String> findGentestsRt_id6Fs_Z9I$_5v = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("findGentestsRt").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(7700196530389668191L).languageId(0xb39bc5ba9e79b38cL, 0x9d000fbdbdca4a46L).build2(SMethodBuilder.createJavaParameter(TemplateQueryContext.class, ""));
+  /*package*/ static final SMethod<String> getGentestsRtSolutionName_id6Fs_Z9I$Bez = new SMethodBuilder<>(String.class).name("getGentestsRtSolutionName").modifiers(0, AccessPrivileges.PRIVATE).concept(CONCEPT).baseMethodId(7700196530389676963L).languageId(0xb39bc5ba9e79b38cL, 0x9d000fbdbdca4a46L).build2();
+  public static final SMethod<Void> fetchDependencies_id57YmpYyL8F1 = new SMethodBuilder<>(Void.TYPE).name("fetchDependencies").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5908258303322131137L).languageId(0xb99171f8c50ce5d2L, 0x798100da4f0a421aL).build2(SMethodBuilder.createJavaParameter(VisibleArtifacts.class, "artifacts"), SMethodBuilder.createJavaParameter(RequiredDependenciesBuilder.class, "builder"));
+  public static final SMethod<String> findGentestsRt_id6Fs_Z9I$_5v = new SMethodBuilder<>(String.class).name("findGentestsRt").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(7700196530389668191L).languageId(0xb39bc5ba9e79b38cL, 0x9d000fbdbdca4a46L).build2(SMethodBuilder.createJavaParameter(TemplateQueryContext.class, "genContext"));
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(getGentestsRtSolutionName_id6Fs_Z9I$Bez, fetchDependencies_id57YmpYyL8F1, findGentestsRt_id6Fs_Z9I$_5v);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(getGentestsRtSolutionName_id6Fs_Z9I$Bez, fetchDependencies_id57YmpYyL8F1, findGentestsRt_id6Fs_Z9I$_5v);
 
-  private static void ___init___(@NotNull SNode __thisNode__) {
-  }
 
   /*package*/ static String getGentestsRtSolutionName_id6Fs_Z9I$Bez(@NotNull SNode __thisNode__) {
     return PersistenceFacade.getInstance().createModuleReference("e70ad515-8ff0-4a50-8cb4-41406f14e348(org.iets3.opensource.build.gentests.rt)").getModuleName();
   }
   /*package*/ static void fetchDependencies_id57YmpYyL8F1(@NotNull SNode __thisNode__, VisibleArtifacts artifacts, RequiredDependenciesBuilder builder) {
 
-    // as genContext is a better way to report problems in the generation, we try to retrieve it from internal API
-    // and fall back to logging if this fails 
-    TemplateQueryContext genContext = null;
-    {
-      // workaround via reflection, cause API changed with mps 20.3.0
-      UnpackHelper uph = null;
-      try {
-        Field field = builder.getClass().getDeclaredField("helper");
-        field.setAccessible(true);
-        uph = as_25wnuw_a0a2a2a4a21(field.get(builder), UnpackHelper.class);
-        genContext = uph.getGenContext();
-      } catch (Throwable t) {
-        if (LOG.isWarningLevel()) {
-          LOG.warning("Failed to extract genContext from RequiredDependenciesBuilder, using fallback to log", t);
-        }
-      }
-    }
     final String gentestsRtSolutionName = RunKernelFGeneratedTests__BehaviorDescriptor.getGentestsRtSolutionName_id6Fs_Z9I$Bez.invokeSpecial(__thisNode__);
     SNode project = artifacts.getProject();
 
     // find gentests.rt
     SNode gentestsRtSolution = SNodeOperations.as(ScopeProvider__BehaviorDescriptor.getScope_id52_Geb4QFgX.invoke(project, CONCEPTS.BuildMps_Solution$R7, LINKS.parts$mGDj, ((int) 0)).resolve(project, gentestsRtSolutionName), CONCEPTS.BuildMps_Solution$R7);
     if ((gentestsRtSolution == null)) {
-      if (genContext != null) {
-        genContext.showErrorMessage(__thisNode__, "Cannot find solution " + gentestsRtSolutionName + " in scope");
-      }
       if (LOG.isErrorLevel()) {
         LOG.error("Cannot find solution " + gentestsRtSolutionName + " in scope (this: " + BaseConcept__BehaviorDescriptor.getPresentation_idhEwIMiw.invoke(__thisNode__) + ", concept: " + SNodeOperations.getConcept(__thisNode__) + ")");
       }
@@ -82,9 +56,6 @@ public final class RunKernelFGeneratedTests__BehaviorDescriptor extends BaseBHDe
 
     SNode gentestsLayoutNode = SNodeOperations.as(artifacts.findArtifact(gentestsRtSolution), CONCEPTS.BuildLayout_Node$Rb);
     if ((gentestsLayoutNode == null)) {
-      if (genContext != null) {
-        genContext.showErrorMessage(null, "Cannot find artifact for solution " + gentestsRtSolutionName);
-      }
       if (LOG.isErrorLevel()) {
         LOG.error("Cannot find artifact for solution " + gentestsRtSolutionName);
       }
@@ -95,7 +66,7 @@ public final class RunKernelFGeneratedTests__BehaviorDescriptor extends BaseBHDe
     builder.addWithTag(gentestsLayoutNode, gentestsRtSolutionName);
   }
   /*package*/ static String findGentestsRt_id6Fs_Z9I$_5v(@NotNull SNode __thisNode__, TemplateQueryContext genContext) {
-    // s. javadoc of DotExpression  for token explanation
+    // s. javadoc of '''new  FetchDependenciesProcessor().alternativeProcess()'''  for token explanation
     DependenciesHelper helper = DependenciesHelper.get(genContext, SNodeOperations.cast(SNodeOperations.getContainingRoot(__thisNode__), CONCEPTS.BuildProject$ae), "build.mps");
     String artifact = RunKernelFGeneratedTests__BehaviorDescriptor.getGentestsRtSolutionName_id6Fs_Z9I$Bez.invokeSpecial(__thisNode__);
 
@@ -110,10 +81,6 @@ public final class RunKernelFGeneratedTests__BehaviorDescriptor extends BaseBHDe
   /*package*/ RunKernelFGeneratedTests__BehaviorDescriptor() {
   }
 
-  @Override
-  protected void initNode(@NotNull SNode node, @NotNull SConstructor constructor, @Nullable Object[] parameters) {
-    ___init___(node);
-  }
 
   @Override
   protected <T> T invokeSpecial0(@NotNull SNode node, @NotNull SMethod<T> method, @Nullable Object[] parameters) {
@@ -156,9 +123,6 @@ public final class RunKernelFGeneratedTests__BehaviorDescriptor extends BaseBHDe
   @Override
   public SAbstractConcept getConcept() {
     return CONCEPT;
-  }
-  private static <T> T as_25wnuw_a0a2a2a4a21(Object o, Class<T> type) {
-    return (type.isInstance(o) ? (T) o : null);
   }
 
   private static final class CONCEPTS {

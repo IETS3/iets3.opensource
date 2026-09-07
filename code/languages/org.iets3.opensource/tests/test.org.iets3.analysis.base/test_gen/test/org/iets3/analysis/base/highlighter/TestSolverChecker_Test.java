@@ -53,14 +53,14 @@ public class TestSolverChecker_Test extends BaseTransformationTest {
       Highlighter highlighter = null;
       try {
         List<IResult> iresults = runManuallyAsync.get(5, TimeUnit.SECONDS);
-        Assert.assertEquals(1, iresults.size());
+        Assert.assertEquals(Integer.valueOf(1), Integer.valueOf(iresults.size()));
         IResult iresult = iresults.get(0);
         String errMsg = (String) iresult.getErrorMessage();
 
         UpdateResult.Completed updateResult = (UpdateResult.Completed) new SolverChecker().update(getEditorComponent(), true, true, null);
         Collection<EditorMessage> myMessages = updateResult.myMessages;
 
-        Assert.assertEquals(1, myMessages.size());
+        Assert.assertEquals(Integer.valueOf(1), Integer.valueOf(myMessages.size()));
         EditorMessage message = myMessages.iterator().next();
         Assert.assertEquals(message.getFormattedMessage(), errMsg);
         IResult.MessageType messageType = iresult.messageType();
@@ -69,7 +69,7 @@ public class TestSolverChecker_Test extends BaseTransformationTest {
         Assert.assertEquals(MessageStatus.ERROR, status);
 
         Assert.assertTrue(Sequence.fromIterable(iresult.targetNodes()).contains(message.getNode()));
-        Assert.assertEquals(1, Sequence.fromIterable(iresult.targetNodes()).count());
+        Assert.assertEquals(Integer.valueOf(1), Integer.valueOf(Sequence.fromIterable(iresult.targetNodes()).count()));
       } catch (ExecutionException e) {
         throw new RuntimeException(e);
       } catch (TimeoutException e) {

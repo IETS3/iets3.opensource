@@ -7,7 +7,6 @@ import org.jetbrains.mps.openapi.language.SAbstractConcept;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import java.util.List;
 import java.util.Arrays;
@@ -16,7 +15,6 @@ import org.jetbrains.mps.openapi.model.SNode;
 import jetbrains.mps.internal.collections.runtime.Sequence;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
 import jetbrains.mps.internal.collections.runtime.ListSequence;
-import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 import jetbrains.mps.smodel.builder.SNodeBuilder;
@@ -27,13 +25,11 @@ import org.jetbrains.mps.openapi.language.SConcept;
 public final class BuilderExpression__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getConcept(0x71934284d7d145eeL, 0xa0548c072591085fL, 0x465d5f01132dafd3L, "org.iets3.core.expr.toplevel.structure.BuilderExpression");
 
-  public static final SMethod<Void> addMissingSetters_id4ptnK4jexBh = new SMethodBuilder<Void>(new SJavaCompoundTypeImpl(Void.class)).name("addMissingSetters").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5070313213711227345L).languageId(0xa0548c072591085fL, 0x71934284d7d145eeL).build2();
-  public static final SMethod<String> renderReadable_id4Y0vh0cfqjE = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("renderReadable").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5728716233893586154L).languageId(0xb66a309a6e1a7290L, 0xcfaa4966b7d54b69L).build2();
+  public static final SMethod<Void> addMissingSetters_id4ptnK4jexBh = new SMethodBuilder<>(Void.TYPE).name("addMissingSetters").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5070313213711227345L).languageId(0xa0548c072591085fL, 0x71934284d7d145eeL).build2();
+  public static final SMethod<String> renderReadable_id4Y0vh0cfqjE = new SMethodBuilder<>(String.class).name("renderReadable").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5728716233893586154L).languageId(0xb66a309a6e1a7290L, 0xcfaa4966b7d54b69L).build2();
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(addMissingSetters_id4ptnK4jexBh, renderReadable_id4Y0vh0cfqjE);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(addMissingSetters_id4ptnK4jexBh, renderReadable_id4Y0vh0cfqjE);
 
-  private static void ___init___(@NotNull SNode __thisNode__) {
-  }
 
   /*package*/ static void addMissingSetters_id4ptnK4jexBh(@NotNull SNode __thisNode__) {
     for (SNode f : Sequence.fromIterable(BuilderAdapter__BehaviorDescriptor.missingSetters_id4ptnK4jbJRO.invoke(SLinkOperations.getTarget(__thisNode__, LINKS.adapted$goB5)))) {
@@ -47,10 +43,6 @@ public final class BuilderExpression__BehaviorDescriptor extends BaseBHDescripto
   /*package*/ BuilderExpression__BehaviorDescriptor() {
   }
 
-  @Override
-  protected void initNode(@NotNull SNode node, @NotNull SConstructor constructor, @Nullable Object[] parameters) {
-    ___init___(node);
-  }
 
   @Override
   protected <T> T invokeSpecial0(@NotNull SNode node, @NotNull SMethod<T> method, @Nullable Object[] parameters) {

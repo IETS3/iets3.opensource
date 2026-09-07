@@ -122,10 +122,7 @@ public class TableSelectionActionMap {
         }
 
         TableData<SNode> data = TableCopyStorage.getInstance().get();
-        //  depending on what was copied before, the storage might not be filled and can return null
-        if (data != null) {
-          support.paste(selection, data, editorContext);
-        }
+        support.paste(selection, data, editorContext);
       }
       @Override
       public boolean canExecute(EditorContext editorContext) {

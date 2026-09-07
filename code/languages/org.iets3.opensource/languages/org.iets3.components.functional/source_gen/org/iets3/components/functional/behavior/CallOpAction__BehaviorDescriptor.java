@@ -8,7 +8,6 @@ import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import org.jetbrains.mps.openapi.model.SNode;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import java.util.List;
 import java.util.Arrays;
@@ -16,7 +15,6 @@ import org.jetbrains.annotations.NotNull;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
 import org.iets3.core.expr.base.behavior.Expression__BehaviorDescriptor;
-import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 import org.jetbrains.mps.openapi.language.SReferenceLink;
@@ -26,15 +24,13 @@ import org.jetbrains.mps.openapi.language.SConcept;
 public final class CallOpAction__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getConcept(0x257976063fb647b8L, 0xbc3cb4384df7da44L, 0x64c5fc05da43d735L, "org.iets3.components.functional.structure.CallOpAction");
 
-  public static final SMethod<SNode> calledOp_id6yXR8poHA$0 = new SMethodBuilder<SNode>(new SJavaCompoundTypeImpl((Class<SNode>) ((Class) Object.class))).name("calledOp").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(7547431020114897152L).languageId(0xbc3cb4384df7da44L, 0x257976063fb647b8L).build2();
-  public static final SMethod<SNode> getActualParameter_id30km9rbY0q = new SMethodBuilder<SNode>(new SJavaCompoundTypeImpl((Class<SNode>) ((Class) Object.class))).name("getActualParameter").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(54132678406955034L).languageId(0xbc3cb4384df7da44L, 0x257976063fb647b8L).build2(SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""));
-  /*package*/ static final SMethod<SNode> serviceCall_id30km9rccF7 = new SMethodBuilder<SNode>(new SJavaCompoundTypeImpl((Class<SNode>) ((Class) Object.class))).name("serviceCall").modifiers(0, AccessPrivileges.PRIVATE).concept(CONCEPT).baseMethodId(54132678407015111L).languageId(0xbc3cb4384df7da44L, 0x257976063fb647b8L).build2();
-  public static final SMethod<String> signature_id5698x__Xdxg = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("signature").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5875264681361594448L).languageId(0xbc3cb4384df7da44L, 0x257976063fb647b8L).build2();
+  public static final SMethod<SNode> calledOp_id6yXR8poHA$0 = new SMethodBuilder<>(SNode.class).name("calledOp").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(7547431020114897152L).languageId(0xbc3cb4384df7da44L, 0x257976063fb647b8L).build2();
+  public static final SMethod<SNode> getActualParameter_id30km9rbY0q = new SMethodBuilder<>(SNode.class).name("getActualParameter").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(54132678406955034L).languageId(0xbc3cb4384df7da44L, 0x257976063fb647b8L).build2(SMethodBuilder.createJavaParameter(SNode.class, "formalParameter"));
+  /*package*/ static final SMethod<SNode> serviceCall_id30km9rccF7 = new SMethodBuilder<>(SNode.class).name("serviceCall").modifiers(0, AccessPrivileges.PRIVATE).concept(CONCEPT).baseMethodId(54132678407015111L).languageId(0xbc3cb4384df7da44L, 0x257976063fb647b8L).build2();
+  public static final SMethod<String> signature_id5698x__Xdxg = new SMethodBuilder<>(String.class).name("signature").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5875264681361594448L).languageId(0xbc3cb4384df7da44L, 0x257976063fb647b8L).build2();
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(calledOp_id6yXR8poHA$0, getActualParameter_id30km9rbY0q, serviceCall_id30km9rccF7, signature_id5698x__Xdxg);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(calledOp_id6yXR8poHA$0, getActualParameter_id30km9rbY0q, serviceCall_id30km9rccF7, signature_id5698x__Xdxg);
 
-  private static void ___init___(@NotNull SNode __thisNode__) {
-  }
 
   /*package*/ static SNode calledOp_id6yXR8poHA$0(@NotNull SNode __thisNode__) {
     return SLinkOperations.getTarget(CallOpAction__BehaviorDescriptor.serviceCall_id30km9rccF7.invokeSpecial(__thisNode__), LINKS.op$CMHz);
@@ -52,10 +48,6 @@ public final class CallOpAction__BehaviorDescriptor extends BaseBHDescriptor {
   /*package*/ CallOpAction__BehaviorDescriptor() {
   }
 
-  @Override
-  protected void initNode(@NotNull SNode node, @NotNull SConstructor constructor, @Nullable Object[] parameters) {
-    ___init___(node);
-  }
 
   @Override
   protected <T> T invokeSpecial0(@NotNull SNode node, @NotNull SMethod<T> method, @Nullable Object[] parameters) {

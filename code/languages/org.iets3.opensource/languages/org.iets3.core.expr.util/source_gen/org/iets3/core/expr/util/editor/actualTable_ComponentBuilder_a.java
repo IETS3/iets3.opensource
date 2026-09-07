@@ -16,7 +16,7 @@ import de.slisson.mps.tables.runtime.cells.EditorCell_GridCell;
 import jetbrains.mps.editor.runtime.style.StyleAttributes;
 import jetbrains.mps.baseLanguage.closures.runtime.Wrappers;
 import de.slisson.mps.tables.runtime.cells.TableEditor;
-import de.slisson.mps.tables.runtime.cells.CellCaching;
+import de.slisson.mps.hacks.editor.EditorCacheHacks;
 import de.slisson.mps.tables.runtime.cells.ChildsTracker;
 import de.slisson.mps.tables.runtime.cells.PartialTableExtractor;
 import de.slisson.mps.tables.runtime.gridmodel.Grid;
@@ -48,7 +48,6 @@ import de.slisson.mps.tables.runtime.gridmodel.HeaderNodeDeleteAction;
 import de.slisson.mps.tables.runtime.gridmodel.GridAdapter;
 import de.slisson.mps.tables.runtime.gridmodel.ChildNodesInsertAction;
 import jetbrains.mps.internal.collections.runtime.Sequence;
-import de.slisson.mps.tables.runtime.cells.TableUtils;
 import jetbrains.mps.openapi.editor.cells.SubstituteInfo;
 import de.slisson.mps.hacks.editor.SubstituteUtil;
 import de.slisson.mps.tables.runtime.gridmodel.IGridElement;
@@ -108,7 +107,7 @@ import org.jetbrains.mps.openapi.language.SInterfaceConcept;
     return editorCell;
   }
   private EditorCell createCustomFactory_1() {
-    return createCustomFactory_0(getEditorContext(), myNode);
+    return createCustomFactory_0(getEditorContext(), getNode());
   }
   private EditorCell createCollection_1() {
     EditorCell_Collection editorCell = new EditorCell_Collection(getEditorContext(), myNode, new CellLayout_Indent());
@@ -121,7 +120,7 @@ import org.jetbrains.mps.openapi.language.SInterfaceConcept;
 
     final Wrappers._T<TableEditor> editorCell = new Wrappers._T<TableEditor>(null);
     _FunctionTypes._void_P0_E0 creator = () -> {
-      CellCaching.maybeDisableCache(node, editorContext, () -> {
+      EditorCacheHacks.noCaching(editorContext, () -> {
         try {
 
           ChildsTracker.pushNewInstance();
@@ -171,7 +170,7 @@ import org.jetbrains.mps.openapi.language.SInterfaceConcept;
 
   }
   private EditorCell createTable_1() {
-    return createTable_0(getEditorContext(), myNode);
+    return createTable_0(getEditorContext(), getNode());
   }
   public Grid createStaticVertical_bp2q28_a0a0a(final EditorContext editorContext, final SNode node) {
     Grid grid = new Grid();
@@ -331,7 +330,7 @@ import org.jetbrains.mps.openapi.language.SInterfaceConcept;
       Iterable<SNode> elements = SLinkOperations.getChildren(node, LINKS.rows$sdUx);
       for (SNode child : Sequence.fromIterable(elements)) {
         final int yFinal = y;
-        EditorCell cell = TableUtils.createNodeCell(editorContext, child);
+        EditorCell cell = editorContext.getEditorComponent().getUpdater().getCurrentUpdateSession().updateChildNodeCell(child);
         ChildsTracker.getInstance().registerChild(cell);
         SubstituteInfo substituteInfo = SubstituteUtil.forChild(editorContext, node, (y < ListSequence.fromList(SLinkOperations.getChildren(node, LINKS.rows$sdUx)).count() ? ListSequence.fromList(SLinkOperations.getChildren(node, LINKS.rows$sdUx)).getElement(y) : null), LINKS.rows$sdUx);
         cell.setSubstituteInfo(substituteInfo);

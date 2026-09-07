@@ -7,7 +7,6 @@ import org.jetbrains.mps.openapi.language.SAbstractConcept;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import java.time.LocalTime;
 import java.util.List;
@@ -25,13 +24,13 @@ import org.jetbrains.mps.openapi.language.SProperty;
 public final class TimeLiteral__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getConcept(0x289fb12b7f534ef7L, 0xbc2e1ed2c6a7c998L, 0x3b52b7f3a2255e8aL, "org.iets3.core.expr.datetime.structure.TimeLiteral");
 
-  public static final SMethod<String> renderReadable_id4Y0vh0cfqjE = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("renderReadable").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5728716233893586154L).languageId(0xb66a309a6e1a7290L, 0xcfaa4966b7d54b69L).build2();
-  public static final SMethod<LocalTime> toTime_id3HiHZeydxpU = new SMethodBuilder<LocalTime>(new SJavaCompoundTypeImpl(LocalTime.class)).name("toTime").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(4274681253354411642L).languageId(0xbc2e1ed2c6a7c998L, 0x289fb12b7f534ef7L).build2();
-  public static final SMethod<Integer> hourNumber_id3HiHZeydzLS = new SMethodBuilder<Integer>(new SJavaCompoundTypeImpl(Integer.TYPE)).name("hourNumber").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(4274681253354421368L).languageId(0xbc2e1ed2c6a7c998L, 0x289fb12b7f534ef7L).build2();
-  public static final SMethod<Integer> minuteNumber_id3HiHZeydA1l = new SMethodBuilder<Integer>(new SJavaCompoundTypeImpl(Integer.TYPE)).name("minuteNumber").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(4274681253354430549L).languageId(0xbc2e1ed2c6a7c998L, 0x289fb12b7f534ef7L).build2();
-  public static final SMethod<Integer> secondNumber_id3HiHZeydAN$ = new SMethodBuilder<Integer>(new SJavaCompoundTypeImpl(Integer.TYPE)).name("secondNumber").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(4274681253354433764L).languageId(0xbc2e1ed2c6a7c998L, 0x289fb12b7f534ef7L).build2();
+  public static final SMethod<String> renderReadable_id4Y0vh0cfqjE = new SMethodBuilder<>(String.class).name("renderReadable").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5728716233893586154L).languageId(0xb66a309a6e1a7290L, 0xcfaa4966b7d54b69L).build2();
+  public static final SMethod<LocalTime> toTime_id3HiHZeydxpU = new SMethodBuilder<>(LocalTime.class).name("toTime").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(4274681253354411642L).languageId(0xbc2e1ed2c6a7c998L, 0x289fb12b7f534ef7L).build2();
+  public static final SMethod<Integer> hourNumber_id3HiHZeydzLS = new SMethodBuilder<>(Integer.TYPE).name("hourNumber").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(4274681253354421368L).languageId(0xbc2e1ed2c6a7c998L, 0x289fb12b7f534ef7L).build2();
+  public static final SMethod<Integer> minuteNumber_id3HiHZeydA1l = new SMethodBuilder<>(Integer.TYPE).name("minuteNumber").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(4274681253354430549L).languageId(0xbc2e1ed2c6a7c998L, 0x289fb12b7f534ef7L).build2();
+  public static final SMethod<Integer> secondNumber_id3HiHZeydAN$ = new SMethodBuilder<>(Integer.TYPE).name("secondNumber").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(4274681253354433764L).languageId(0xbc2e1ed2c6a7c998L, 0x289fb12b7f534ef7L).build2();
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(renderReadable_id4Y0vh0cfqjE, toTime_id3HiHZeydxpU, hourNumber_id3HiHZeydzLS, minuteNumber_id3HiHZeydA1l, secondNumber_id3HiHZeydAN$);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(renderReadable_id4Y0vh0cfqjE, toTime_id3HiHZeydxpU, hourNumber_id3HiHZeydzLS, minuteNumber_id3HiHZeydA1l, secondNumber_id3HiHZeydAN$);
 
   private static void ___init___(@NotNull SNode __thisNode__) {
     // users are less likely to go down to second precision, hence provide a default value.

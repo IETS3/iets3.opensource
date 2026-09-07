@@ -63,7 +63,7 @@ import jetbrains.mps.openapi.editor.cells.CellTraversalUtil;
 import de.slisson.mps.tables.runtime.cells.EditorCell_GridCell;
 import jetbrains.mps.baseLanguage.closures.runtime.Wrappers;
 import de.slisson.mps.tables.runtime.cells.TableEditor;
-import de.slisson.mps.tables.runtime.cells.CellCaching;
+import de.slisson.mps.hacks.editor.EditorCacheHacks;
 import de.slisson.mps.tables.runtime.cells.ChildsTracker;
 import de.slisson.mps.tables.runtime.cells.PartialTableExtractor;
 import de.slisson.mps.tables.runtime.gridmodel.Grid;
@@ -85,7 +85,6 @@ import de.slisson.mps.tables.runtime.gridmodel.HeaderNodeInsertAction;
 import de.slisson.mps.tables.runtime.gridmodel.HeaderNodeDeleteAction;
 import de.slisson.mps.tables.runtime.gridmodel.GridAdapter;
 import de.slisson.mps.tables.runtime.gridmodel.ChildNodesInsertAction;
-import de.slisson.mps.tables.runtime.cells.TableUtils;
 import jetbrains.mps.openapi.editor.cells.SubstituteInfo;
 import de.slisson.mps.hacks.editor.SubstituteUtil;
 import de.slisson.mps.tables.runtime.gridmodel.IGridElement;
@@ -149,7 +148,7 @@ import org.jetbrains.mps.openapi.language.SReferenceLink;
     return editorCell;
   }
   private EditorCell createCustomFactory_1() {
-    return createCustomFactory_0(getEditorContext(), myNode);
+    return createCustomFactory_0(getEditorContext(), getNode());
   }
   private EditorCell createCustomFactory_2(final EditorContext editorContext, final SNode node) {
 
@@ -163,7 +162,7 @@ import org.jetbrains.mps.openapi.language.SReferenceLink;
     return editorCell;
   }
   private EditorCell createCustomFactory_3() {
-    return createCustomFactory_2(getEditorContext(), myNode);
+    return createCustomFactory_2(getEditorContext(), getNode());
   }
   private EditorCell createReadOnlyModelAccessor_0() {
     EditorCell_Property editorCell = EditorCell_Property.create(getEditorContext(), new ModelAccessor.ReadOnly() {
@@ -223,7 +222,7 @@ import org.jetbrains.mps.openapi.language.SReferenceLink;
     return editorCell;
   }
   private EditorCell createCustomFactory_5() {
-    return createCustomFactory_4(getEditorContext(), myNode);
+    return createCustomFactory_4(getEditorContext(), getNode());
   }
   private EditorCell createAlternation_0() {
     boolean alternationCondition = true;
@@ -268,7 +267,7 @@ import org.jetbrains.mps.openapi.language.SReferenceLink;
     return editorCell;
   }
   private EditorCell createCustomFactory_7() {
-    return createCustomFactory_6(getEditorContext(), myNode);
+    return createCustomFactory_6(getEditorContext(), getNode());
   }
   private EditorCell createConstant_0() {
     EditorCell_Constant editorCell = new EditorCell_Constant(getEditorContext(), myNode, "allows lookup");
@@ -365,13 +364,13 @@ import org.jetbrains.mps.openapi.language.SReferenceLink;
     return editorCell;
   }
   private EditorCell createCustomFactory_9() {
-    return createCustomFactory_8(getEditorContext(), myNode);
+    return createCustomFactory_8(getEditorContext(), getNode());
   }
   private EditorCell createTable_0(final EditorContext editorContext, final SNode node) {
 
     final Wrappers._T<TableEditor> editorCell = new Wrappers._T<TableEditor>(null);
     _FunctionTypes._void_P0_E0 creator = () -> {
-      CellCaching.maybeDisableCache(node, editorContext, () -> {
+      EditorCacheHacks.noCaching(editorContext, () -> {
         try {
 
           ChildsTracker.pushNewInstance();
@@ -421,7 +420,7 @@ import org.jetbrains.mps.openapi.language.SReferenceLink;
 
   }
   private EditorCell createTable_1() {
-    return createTable_0(getEditorContext(), myNode);
+    return createTable_0(getEditorContext(), getNode());
   }
   public Grid createStaticVertical_rz8mbo_a0b0(final EditorContext editorContext, final SNode node) {
     Grid grid = new Grid();
@@ -549,7 +548,7 @@ import org.jetbrains.mps.openapi.language.SReferenceLink;
       Iterable<SNode> elements = SLinkOperations.getChildren(node, LINKS.rows$1pKa);
       for (SNode child : Sequence.fromIterable(elements)) {
         final int yFinal = y;
-        EditorCell cell = TableUtils.createNodeCell(editorContext, child);
+        EditorCell cell = editorContext.getEditorComponent().getUpdater().getCurrentUpdateSession().updateChildNodeCell(child);
         ChildsTracker.getInstance().registerChild(cell);
         SubstituteInfo substituteInfo = SubstituteUtil.forChild(editorContext, node, (y < ListSequence.fromList(SLinkOperations.getChildren(node, LINKS.rows$1pKa)).count() ? ListSequence.fromList(SLinkOperations.getChildren(node, LINKS.rows$1pKa)).getElement(y) : null), LINKS.rows$1pKa);
         cell.setSubstituteInfo(substituteInfo);
