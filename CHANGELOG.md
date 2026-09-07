@@ -5,17 +5,34 @@ All notable changes to this project are documented in this file.
 Format of the log is _loosely_ based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 The project does _not_ follow Semantic Versioning and the changes are documented in reverse chronological order, grouped by calendar month.
 
+## September 2026
+
+### Changed
+- KernelF: `EnumLiteral` now implements `ISmartReferent` and derives its `resolveInfo` from the same presentation (qualified for a qualified enum, bare otherwise), so completion, the editor cell and `renderReadable()` agree. The hand-written `EnumLiteralRef` substitute menus and the qualified filter in its scope were dropped in favour of the smart-reference machinery MPS generates. The auxiliary concept `QualifierRef` was removed; it had no instances and was never part of a valid model, so no migration is required.
+
+### Fixed
+- KernelF: `renderReadable()` of the `isIn`/`isNotIn` enumeration dot targets rendered `isIn([, , ])` instead of `isIn(blue, green, red)`: the separator was joined onto each selector's presentation instead of onto the sequence, which resolved to the varargs `String.join(CharSequence, CharSequence...)` with no elements.
+- KernelF: the `is`/`isIn` enumeration dot targets are backwards compatible with models that have not run the "move link up" migration of the `EnumIsTarget`/`EnumIsInTarget` refactoring yet. `EnumIsTarget` and `EnumIsInTarget` now have their own editors that show the deprecated `literal_old`/`selectors_old` elements in red, hidden as soon as the deprecated reference/child is empty. Behavior, generator and interpreter read the value through the new `AbstractEnumSingleInTarget.effectiveLiteral()`/`AbstractEnumInTarget.effectiveSelectors()` behavior methods, which the two legacy concepts override to fall back to the deprecated link, so an unmigrated model still renders, interprets and generates correctly.
+- KernelF: `RecordValue` no longer throws a `NullPointerException` from `equals` or `compareTo` when a record member has no value, nor from `compareTo` for inline records, which carry no record declaration. `equals`, `hashCode` and `compareTo` are consistent with each other again, so record values behave correctly in Java-side hash-based and sorted collections.
+- KernelF: a broken reference to a literal of a qualified enum no longer rebinds to a same-named literal of a different enum, because the persisted `resolve=` info now carries the qualified name instead of the simple one.
+
+
 ## August 2026
+
 ### Fixed
 - Improve uniqueness name check of `IFunctionLike` `getUniquelyNamedElements()` behavior to avoid overzealous checking.
+- Variability: Feature attribute values are not overwritten anymore if the value stays the same. This avoids changing the model if not necessary, esp. it avoids merge conflicts.
+- `IFunctionLike` `getUniquelyNamedElements()` no longer reports duplicate names for commented out code.
 
 ## July 2026
+
 ### Added
 - IFunctionLike takes arguments and named body content into account when performing ab uniqueness name check
 - Developer tooling: the repository now ships an `iets3-os-developer` agent skill (under `.claude/skills/`) capturing repo-specific MPS language-engineering knowledge (variability, KernelF, physical units) for AI-assisted development with Claude Code.
 
 ### Fixed
 - Variability: `EvalVarPointCache.flushCaches()` was a no-op when the variability-aware artifact (IVAA) was implemented as a node attribute (annotation).
+
 
 ## June 2026
 
