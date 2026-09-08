@@ -3549,7 +3549,7 @@
                       <node concept="2ShNRf" id="6WUl45aPMd3" role="33vP2m">
                         <node concept="1pGfFk" id="6WUl45aPZbF" role="2ShVmc">
                           <property role="373rjd" value="true" />
-                          <ref role="37wK5l" to="lte6:6WUl45aDBqz" resolve="UpadteAllExtendingConfigs" />
+                          <ref role="37wK5l" to="lte6:6WUl45aDBqz" resolve="UpdateAllExtendingConfigs" />
                           <node concept="37vLTw" id="6WUl45aQ2vm" role="37wK5m">
                             <ref role="3cqZAo" node="6WUl45aPMcT" resolve="project" />
                           </node>
