@@ -5,6 +5,14 @@ All notable changes to this project are documented in this file.
 Format of the log is _loosely_ based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 The project does _not_ follow Semantic Versioning and the changes are documented in reverse chronological order, grouped by calendar month.
 
+## September 2026
+
+### Added
+- Variability: New intention "Adapt Extending Configurations to Changes" on abstract feature model configurations. It propagates changes of the abstract configuration to *all* transitively extending configurations in one step (with progress reporting), instead of applying the per-configuration fix "Adapt this Configuration to the extended Configuration" one-by-one.
+
+### Changed
+- Variability: The update-configurations tasks were refactored - the common functionality of the tasks updating one, all, or all extending configurations now lives in the shared base classes `AbstractUpdateConfigsTask` / `ConfigFromFeatureModelUpdater`.
+
 ## August 2026
 
 ### Fixed
