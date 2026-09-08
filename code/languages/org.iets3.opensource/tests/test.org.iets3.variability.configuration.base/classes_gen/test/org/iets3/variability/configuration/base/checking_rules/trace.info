@@ -4,13 +4,54 @@
   <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123155:jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
   <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123165:jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" />
   <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242864:jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242878:jetbrains.mps.baseLanguage.structure.ReturnStatement" />
   <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/6329021646629104954:jetbrains.mps.baseLanguage.structure.SingleLineComment" />
   <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123157:jetbrains.mps.baseLanguage.structure.Statement" />
   <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1070462154015:jetbrains.mps.baseLanguage.structure.StaticFieldDeclaration" />
   <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1070475587102:jetbrains.mps.baseLanguage.structure.SuperConstructorInvocation" />
+  <root nodeRef="r:b52df216-430b-486e-bf75-226dacbbed72(test.org.iets3.variability.configuration.base.checking_rules@tests)/3085753687467509189">
+    <file name="UpdateAllRelatedConfigurations_Test.java">
+      <node id="3085753687467509189" at="30,48,31,60" concept="8" />
+      <node id="3085753687467509189" at="35,70,36,36" concept="1" />
+      <node id="3085753687467509189" at="41,52,42,19" concept="8" />
+      <node id="3085753687467509189" at="46,51,47,72" concept="1" />
+      <node id="3085753687467621532" at="48,69,49,103" concept="1" />
+      <node id="3085753687467509325" at="49,103,50,49" concept="5" />
+      <node id="3085753687467509357" at="51,318,52,69" concept="1" />
+      <node id="3085753687467509363" at="52,69,53,64" concept="1" />
+      <node id="3085753687467509369" at="53,64,54,70" concept="1" />
+      <node id="3085753687467509189" at="61,0,62,0" concept="7" trace="FeatureModelConfiguration$nE" />
+      <node id="3085753687467509189" at="65,0,66,0" concept="7" trace="__adaptHash$54Is" />
+      <node id="3085753687467509189" at="66,0,67,0" concept="7" trace="__hash$uJSm" />
+      <node id="3085753687467509189" at="67,0,68,0" concept="7" trace="__updateHash$vTMx" />
+      <node id="3085753687467509189" at="27,0,29,0" concept="7" trace="ourParametersCacheExtension" />
+      <node id="3085753687467509189" at="30,0,33,0" concept="0" trace="UpdateAllRelatedConfigurations_Test#()V" />
+      <node id="3085753687467509189" at="41,0,44,0" concept="0" trace="TestBody#(Ljetbrains/mps/lang/test/runtime/TransformationTest;)V" />
+      <node id="3085753687467509189" at="34,0,38,0" concept="2" trace="test_UpdateAllRelatedConfigurations#()V" />
+      <node id="3085753687467509334" at="50,49,55,11" concept="1" />
+      <node id="3085753687467509312" at="47,72,56,9" concept="1" />
+      <node id="3085753687467509189" at="45,0,58,0" concept="2" trace="testMethodImpl#()V" />
+      <scope id="3085753687467509189" at="30,48,31,60" />
+      <scope id="3085753687467509189" at="35,70,36,36" />
+      <scope id="3085753687467509189" at="41,52,42,19" />
+      <scope id="3085753687467509189" at="30,0,33,0" />
+      <scope id="3085753687467509189" at="41,0,44,0">
+        <var name="owner" id="3085753687467509189" />
+      </scope>
+      <scope id="3085753687467509356" at="51,318,54,70" />
+      <scope id="3085753687467509189" at="34,0,38,0" />
+      <scope id="3085753687467509314" at="48,69,55,11" />
+      <scope id="3085753687467509189" at="46,51,56,9" />
+      <scope id="3085753687467509189" at="45,0,58,0" />
+      <unit id="3085753687467509189" at="60,0,63,0" name="test.org.iets3.variability.configuration.base.checking_rules.UpdateAllRelatedConfigurations_Test$CONCEPTS" />
+      <unit id="3085753687467509189" at="64,0,69,0" name="test.org.iets3.variability.configuration.base.checking_rules.UpdateAllRelatedConfigurations_Test$PROPS" />
+      <unit id="3085753687467509189" at="39,0,59,0" name="test.org.iets3.variability.configuration.base.checking_rules.UpdateAllRelatedConfigurations_Test$TestBody" />
+      <unit id="3085753687467509189" at="25,0,70,0" name="test.org.iets3.variability.configuration.base.checking_rules.UpdateAllRelatedConfigurations_Test" />
+    </file>
+  </root>
   <root nodeRef="r:b52df216-430b-486e-bf75-226dacbbed72(test.org.iets3.variability.configuration.base.checking_rules@tests)/3414566187111182681">
     <file name="NotifyAdaptIsNecessary_Test.java">
-      <node id="3414566187111182681" at="22,40,23,60" concept="7" />
+      <node id="3414566187111182681" at="22,40,23,60" concept="8" />
       <node id="1713046119076466246" at="27,73,28,64" concept="1" />
       <node id="1713046119076468737" at="31,73,32,64" concept="1" />
       <node id="1713046119076468978" at="35,73,36,64" concept="1" />
@@ -19,7 +60,7 @@
       <node id="1184583690128570449" at="47,73,48,64" concept="1" />
       <node id="6344158927382994383" at="51,73,52,64" concept="1" />
       <node id="1184583690128569085" at="55,73,56,64" concept="1" />
-      <node id="3414566187111182681" at="61,52,62,19" concept="7" />
+      <node id="3414566187111182681" at="61,52,62,19" concept="8" />
       <node id="3414566187111182681" at="66,36,67,46" concept="1" />
       <node id="1713046119076466246" at="70,75,71,22" concept="1" />
       <node id="1713046119076466246" at="72,30,73,63" concept="3" />
@@ -45,7 +86,7 @@
       <node id="1184583690128569085" at="119,75,120,22" concept="1" />
       <node id="1184583690128569085" at="121,30,122,63" concept="3" />
       <node id="1184583690128569085" at="122,63,123,161" concept="1" />
-      <node id="3414566187111182681" at="19,0,21,0" concept="6" trace="ourParametersCacheExtension" />
+      <node id="3414566187111182681" at="19,0,21,0" concept="7" trace="ourParametersCacheExtension" />
       <node id="3414566187111182681" at="22,0,25,0" concept="0" trace="NotifyAdaptIsNecessary_Test#()V" />
       <node id="3414566187111182681" at="61,0,64,0" concept="0" trace="TestBody#(Ljetbrains/mps/lang/test/runtime/TransformationTest;)V" />
       <node id="1713046119076466246" at="26,0,30,0" concept="2" trace="test_NodeErrorCheck1713046119076466246#()V" />
@@ -143,7 +184,7 @@
   </root>
   <root nodeRef="r:b52df216-430b-486e-bf75-226dacbbed72(test.org.iets3.variability.configuration.base.checking_rules@tests)/3571885729775787823">
     <file name="EnforceSubFeatureDecisions_Test.java">
-      <node id="3571885729775787823" at="25,44,26,60" concept="7" />
+      <node id="3571885729775787823" at="25,44,26,60" concept="8" />
       <node id="3571885729776822764" at="30,90,31,81" concept="1" />
       <node id="8687300774438857497" at="34,90,35,81" concept="1" />
       <node id="8687300774438861350" at="38,77,39,68" concept="1" />
@@ -155,7 +196,7 @@
       <node id="3571885729776822789" at="62,90,63,81" concept="1" />
       <node id="3571885729776822794" at="66,90,67,81" concept="1" />
       <node id="3571885729776822799" at="70,90,71,81" concept="1" />
-      <node id="3571885729775787823" at="76,52,77,19" concept="7" />
+      <node id="3571885729775787823" at="76,52,77,19" concept="8" />
       <node id="3571885729775787823" at="81,36,82,46" concept="1" />
       <node id="3571885729776822764" at="85,92,86,22" concept="1" />
       <node id="3571885729776822764" at="87,30,88,63" concept="3" />
@@ -190,7 +231,7 @@
       <node id="3571885729776822799" at="155,92,156,22" concept="1" />
       <node id="3571885729776822799" at="157,30,158,63" concept="3" />
       <node id="3571885729776822799" at="158,63,159,306" concept="1" />
-      <node id="3571885729775787823" at="22,0,24,0" concept="6" trace="ourParametersCacheExtension" />
+      <node id="3571885729775787823" at="22,0,24,0" concept="7" trace="ourParametersCacheExtension" />
       <node id="3571885729775787823" at="25,0,28,0" concept="0" trace="EnforceSubFeatureDecisions_Test#()V" />
       <node id="3571885729775787823" at="76,0,79,0" concept="0" trace="TestBody#(Ljetbrains/mps/lang/test/runtime/TransformationTest;)V" />
       <node id="3571885729776822764" at="29,0,33,0" concept="2" trace="test_NodePleaseMakeSelectionForCheck3571885729776822764#()V" />
@@ -318,14 +359,14 @@
   </root>
   <root nodeRef="r:b52df216-430b-486e-bf75-226dacbbed72(test.org.iets3.variability.configuration.base.checking_rules@tests)/3577800949122627506">
     <file name="WarnWhenCardinalitiesHasTooFewItems_Test.java">
-      <node id="3577800949122627506" at="23,53,24,60" concept="7" />
+      <node id="3577800949122627506" at="23,53,24,60" concept="8" />
       <node id="6945424678034956840" at="28,90,29,81" concept="1" />
-      <node id="3577800949122627506" at="34,52,35,19" concept="7" />
+      <node id="3577800949122627506" at="34,52,35,19" concept="8" />
       <node id="3577800949122627506" at="39,36,40,46" concept="1" />
       <node id="6945424678034956840" at="43,92,44,22" concept="1" />
       <node id="6945424678034956840" at="45,30,46,63" concept="3" />
       <node id="6945424678034956840" at="46,63,47,306" concept="1" />
-      <node id="3577800949122627506" at="20,0,22,0" concept="6" trace="ourParametersCacheExtension" />
+      <node id="3577800949122627506" at="20,0,22,0" concept="7" trace="ourParametersCacheExtension" />
       <node id="3577800949122627506" at="23,0,26,0" concept="0" trace="WarnWhenCardinalitiesHasTooFewItems_Test#()V" />
       <node id="3577800949122627506" at="34,0,37,0" concept="0" trace="TestBody#(Ljetbrains/mps/lang/test/runtime/TransformationTest;)V" />
       <node id="6945424678034956840" at="27,0,31,0" concept="2" trace="test_NodeTooFewCardinalityItemsCheck6945424678034956840#()V" />
@@ -353,14 +394,14 @@
   </root>
   <root nodeRef="r:b52df216-430b-486e-bf75-226dacbbed72(test.org.iets3.variability.configuration.base.checking_rules@tests)/3577800949135658271">
     <file name="WarnWhenCardinalitiesHasTooManyItems_Test.java">
-      <node id="3577800949135658271" at="23,54,24,60" concept="7" />
+      <node id="3577800949135658271" at="23,54,24,60" concept="8" />
       <node id="6945424678034972604" at="28,91,29,82" concept="1" />
-      <node id="3577800949135658271" at="34,52,35,19" concept="7" />
+      <node id="3577800949135658271" at="34,52,35,19" concept="8" />
       <node id="3577800949135658271" at="39,36,40,46" concept="1" />
       <node id="6945424678034972604" at="43,93,44,22" concept="1" />
       <node id="6945424678034972604" at="45,30,46,63" concept="3" />
       <node id="6945424678034972604" at="46,63,47,306" concept="1" />
-      <node id="3577800949135658271" at="20,0,22,0" concept="6" trace="ourParametersCacheExtension" />
+      <node id="3577800949135658271" at="20,0,22,0" concept="7" trace="ourParametersCacheExtension" />
       <node id="3577800949135658271" at="23,0,26,0" concept="0" trace="WarnWhenCardinalitiesHasTooManyItems_Test#()V" />
       <node id="3577800949135658271" at="34,0,37,0" concept="0" trace="TestBody#(Ljetbrains/mps/lang/test/runtime/TransformationTest;)V" />
       <node id="6945424678034972604" at="27,0,31,0" concept="2" trace="test_NodeTooManyCardinalityItemsCheck6945424678034972604#()V" />
@@ -388,14 +429,14 @@
   </root>
   <root nodeRef="r:b52df216-430b-486e-bf75-226dacbbed72(test.org.iets3.variability.configuration.base.checking_rules@tests)/3577800949140794878">
     <file name="ErrorWhenCardinalityMissing_Test.java">
-      <node id="3577800949140794878" at="22,45,23,60" concept="7" />
+      <node id="3577800949140794878" at="22,45,23,60" concept="8" />
       <node id="3577800949140794896" at="27,73,28,64" concept="1" />
-      <node id="3577800949140794878" at="33,52,34,19" concept="7" />
+      <node id="3577800949140794878" at="33,52,34,19" concept="8" />
       <node id="3577800949140794878" at="38,36,39,46" concept="1" />
       <node id="3577800949140794896" at="42,75,43,22" concept="1" />
       <node id="3577800949140794896" at="44,30,45,63" concept="3" />
       <node id="3577800949140794896" at="45,63,46,161" concept="1" />
-      <node id="3577800949140794878" at="19,0,21,0" concept="6" trace="ourParametersCacheExtension" />
+      <node id="3577800949140794878" at="19,0,21,0" concept="7" trace="ourParametersCacheExtension" />
       <node id="3577800949140794878" at="22,0,25,0" concept="0" trace="ErrorWhenCardinalityMissing_Test#()V" />
       <node id="3577800949140794878" at="33,0,36,0" concept="0" trace="TestBody#(Ljetbrains/mps/lang/test/runtime/TransformationTest;)V" />
       <node id="3577800949140794896" at="26,0,30,0" concept="2" trace="test_NodeErrorCheck3577800949140794896#()V" />
@@ -423,14 +464,14 @@
   </root>
   <root nodeRef="r:b52df216-430b-486e-bf75-226dacbbed72(test.org.iets3.variability.configuration.base.checking_rules@tests)/50469839561587423">
     <file name="ConfigNotComplete_Test.java">
-      <node id="50469839561587423" at="22,35,23,60" concept="7" />
+      <node id="50469839561587423" at="22,35,23,60" concept="8" />
       <node id="50469839561725586" at="27,73,28,64" concept="1" />
-      <node id="50469839561587423" at="33,52,34,19" concept="7" />
+      <node id="50469839561587423" at="33,52,34,19" concept="8" />
       <node id="50469839561587423" at="38,36,39,44" concept="1" />
       <node id="50469839561725586" at="42,75,43,22" concept="1" />
       <node id="50469839561725586" at="44,30,45,61" concept="3" />
       <node id="50469839561725586" at="45,61,46,163" concept="1" />
-      <node id="50469839561587423" at="19,0,21,0" concept="6" trace="ourParametersCacheExtension" />
+      <node id="50469839561587423" at="19,0,21,0" concept="7" trace="ourParametersCacheExtension" />
       <node id="50469839561587423" at="22,0,25,0" concept="0" trace="ConfigNotComplete_Test#()V" />
       <node id="50469839561587423" at="33,0,36,0" concept="0" trace="TestBody#(Ljetbrains/mps/lang/test/runtime/TransformationTest;)V" />
       <node id="50469839561725586" at="26,0,30,0" concept="2" trace="test_NodeWarningCheck50469839561725586#()V" />
@@ -456,16 +497,104 @@
       <unit id="50469839561587423" at="17,0,52,0" name="test.org.iets3.variability.configuration.base.checking_rules.ConfigNotComplete_Test" />
     </file>
   </root>
+  <root nodeRef="r:b52df216-430b-486e-bf75-226dacbbed72(test.org.iets3.variability.configuration.base.checking_rules@tests)/6279010743056184611">
+    <file name="DummyIndicator.java">
+      <node id="6143370505399220692" at="20,30,21,17" concept="4" />
+      <node id="6143370505399220706" at="27,31,28,17" concept="4" />
+      <node id="6143370505399220724" at="35,27,36,16" concept="4" />
+      <node id="6143370505399220742" at="43,28,44,16" concept="4" />
+      <node id="6143370505399220750" at="47,31,48,16" concept="4" />
+      <node id="6143370505399220778" at="60,28,61,17" concept="4" />
+      <node id="6143370505399220787" at="65,43,66,16" concept="4" />
+      <node id="6143370505399220804" at="72,36,73,17" concept="4" />
+      <node id="6143370505399220827" at="82,36,83,17" concept="4" />
+      <node id="6143370505399220835" at="86,30,87,17" concept="4" />
+      <node id="6143370505399220673" at="13,0,16,0" concept="2" trace="start#()V" />
+      <node id="6143370505399220679" at="16,0,19,0" concept="2" trace="stop#()V" />
+      <node id="6143370505399220693" at="23,0,26,0" concept="2" trace="cancel#()V" />
+      <node id="6143370505399220707" at="30,0,33,0" concept="2" trace="setText#(Ljava/lang/String;)V" />
+      <node id="6143370505399220725" at="38,0,41,0" concept="2" trace="setText2#(Ljava/lang/String;)V" />
+      <node id="6143370505399220751" at="50,0,53,0" concept="2" trace="setFraction#(D)V" />
+      <node id="6143370505399220759" at="53,0,56,0" concept="2" trace="pushState#()V" />
+      <node id="6143370505399220765" at="56,0,59,0" concept="2" trace="popState#()V" />
+      <node id="6143370505399220788" at="68,0,71,0" concept="2" trace="setModalityProgress#(Lcom/intellij/openapi/progress/ProgressIndicator;)V" />
+      <node id="6143370505399220805" at="75,0,78,0" concept="2" trace="setIndeterminate#(Z)V" />
+      <node id="6143370505399220813" at="78,0,81,0" concept="2" trace="checkCanceled#()V" />
+      <node id="6143370505399220685" at="19,0,23,0" concept="2" trace="isRunning#()Z" />
+      <node id="6143370505399220699" at="26,0,30,0" concept="2" trace="isCanceled#()Z" />
+      <node id="6143370505399220743" at="46,0,50,0" concept="2" trace="getFraction#()D" />
+      <node id="6143370505399220771" at="59,0,63,0" concept="2" trace="isModal#()Z" />
+      <node id="6143370505399220797" at="71,0,75,0" concept="2" trace="isIndeterminate#()Z" />
+      <node id="6143370505399220820" at="81,0,85,0" concept="2" trace="isPopupWasShown#()Z" />
+      <node id="6143370505399220828" at="85,0,89,0" concept="2" trace="isShowing#()Z" />
+      <node id="6143370505399220716" at="33,0,38,0" concept="2" trace="getText#()Ljava/lang/String;" />
+      <node id="6143370505399220734" at="41,0,46,0" concept="2" trace="getText2#()Ljava/lang/String;" />
+      <node id="6143370505399220779" at="63,0,68,0" concept="2" trace="getModalityState#()Lcom/intellij/openapi/application/ModalityState;" />
+      <scope id="6143370505399220677" at="14,23,14,23" />
+      <scope id="6143370505399220683" at="17,22,17,22" />
+      <scope id="6143370505399220697" at="24,24,24,24" />
+      <scope id="6143370505399220714" at="31,64,31,64" />
+      <scope id="6143370505399220732" at="39,68,39,68" />
+      <scope id="6143370505399220757" at="51,37,51,37" />
+      <scope id="6143370505399220763" at="54,27,54,27" />
+      <scope id="6143370505399220769" at="57,26,57,26" />
+      <scope id="6143370505399220795" at="69,74,69,74" />
+      <scope id="6143370505399220811" at="76,43,76,43" />
+      <scope id="6143370505399220818" at="79,63,79,63" />
+      <scope id="6143370505399220689" at="20,30,21,17" />
+      <scope id="6143370505399220703" at="27,31,28,17" />
+      <scope id="6143370505399220721" at="35,27,36,16" />
+      <scope id="6143370505399220739" at="43,28,44,16" />
+      <scope id="6143370505399220747" at="47,31,48,16" />
+      <scope id="6143370505399220775" at="60,28,61,17" />
+      <scope id="6143370505399220784" at="65,43,66,16" />
+      <scope id="6143370505399220801" at="72,36,73,17" />
+      <scope id="6143370505399220824" at="82,36,83,17" />
+      <scope id="6143370505399220832" at="86,30,87,17" />
+      <scope id="6143370505399220673" at="13,0,16,0" />
+      <scope id="6143370505399220679" at="16,0,19,0" />
+      <scope id="6143370505399220693" at="23,0,26,0" />
+      <scope id="6143370505399220707" at="30,0,33,0">
+        <var name="string" id="6143370505399220711" />
+      </scope>
+      <scope id="6143370505399220725" at="38,0,41,0">
+        <var name="string" id="6143370505399220729" />
+      </scope>
+      <scope id="6143370505399220751" at="50,0,53,0">
+        <var name="d" id="6143370505399220755" />
+      </scope>
+      <scope id="6143370505399220759" at="53,0,56,0" />
+      <scope id="6143370505399220765" at="56,0,59,0" />
+      <scope id="6143370505399220788" at="68,0,71,0">
+        <var name="indicator" id="6143370505399220792" />
+      </scope>
+      <scope id="6143370505399220805" at="75,0,78,0">
+        <var name="b" id="6143370505399220809" />
+      </scope>
+      <scope id="6143370505399220813" at="78,0,81,0" />
+      <scope id="6143370505399220685" at="19,0,23,0" />
+      <scope id="6143370505399220699" at="26,0,30,0" />
+      <scope id="6143370505399220743" at="46,0,50,0" />
+      <scope id="6143370505399220771" at="59,0,63,0" />
+      <scope id="6143370505399220797" at="71,0,75,0" />
+      <scope id="6143370505399220820" at="81,0,85,0" />
+      <scope id="6143370505399220828" at="85,0,89,0" />
+      <scope id="6143370505399220716" at="33,0,38,0" />
+      <scope id="6143370505399220734" at="41,0,46,0" />
+      <scope id="6143370505399220779" at="63,0,68,0" />
+      <unit id="6279010743056184611" at="12,0,90,0" name="test.org.iets3.variability.configuration.base.checking_rules.DummyIndicator" />
+    </file>
+  </root>
   <root nodeRef="r:b52df216-430b-486e-bf75-226dacbbed72(test.org.iets3.variability.configuration.base.checking_rules@tests)/6475083214321209318">
     <file name="MissingAttributeValueError_Test.java">
-      <node id="6475083214321209318" at="22,44,23,60" concept="7" />
+      <node id="6475083214321209318" at="22,44,23,60" concept="8" />
       <node id="1142960084575531756" at="27,75,28,66" concept="1" />
-      <node id="6475083214321209318" at="33,52,34,19" concept="7" />
+      <node id="6475083214321209318" at="33,52,34,19" concept="8" />
       <node id="6475083214321209318" at="38,36,39,46" concept="1" />
       <node id="1142960084575531756" at="42,77,43,22" concept="1" />
       <node id="1142960084575531756" at="44,30,45,63" concept="3" />
       <node id="1142960084575531756" at="45,63,46,163" concept="1" />
-      <node id="6475083214321209318" at="19,0,21,0" concept="6" trace="ourParametersCacheExtension" />
+      <node id="6475083214321209318" at="19,0,21,0" concept="7" trace="ourParametersCacheExtension" />
       <node id="6475083214321209318" at="22,0,25,0" concept="0" trace="MissingAttributeValueError_Test#()V" />
       <node id="6475083214321209318" at="33,0,36,0" concept="0" trace="TestBody#(Ljetbrains/mps/lang/test/runtime/TransformationTest;)V" />
       <node id="1142960084575531756" at="26,0,30,0" concept="2" trace="test_NodeWarningCheck1142960084575531756#()V" />
@@ -493,10 +622,10 @@
   </root>
   <root nodeRef="r:b52df216-430b-486e-bf75-226dacbbed72(test.org.iets3.variability.configuration.base.checking_rules@tests)/6658370737386136193">
     <file name="FeatureConfigurationInheritance_Test.java">
-      <node id="6658370737386136193" at="22,49,23,60" concept="7" />
+      <node id="6658370737386136193" at="22,49,23,60" concept="8" />
       <node id="6658370737386193609" at="27,75,28,66" concept="1" />
       <node id="6658370737386195279" at="31,75,32,66" concept="1" />
-      <node id="6658370737386136193" at="37,52,38,19" concept="7" />
+      <node id="6658370737386136193" at="37,52,38,19" concept="8" />
       <node id="6658370737386136193" at="42,36,43,46" concept="1" />
       <node id="6658370737386193609" at="46,77,47,22" concept="1" />
       <node id="6658370737386193609" at="48,30,49,63" concept="3" />
@@ -504,7 +633,7 @@
       <node id="6658370737386195279" at="53,77,54,22" concept="1" />
       <node id="6658370737386195279" at="55,30,56,63" concept="3" />
       <node id="6658370737386195279" at="56,63,57,163" concept="1" />
-      <node id="6658370737386136193" at="19,0,21,0" concept="6" trace="ourParametersCacheExtension" />
+      <node id="6658370737386136193" at="19,0,21,0" concept="7" trace="ourParametersCacheExtension" />
       <node id="6658370737386136193" at="22,0,25,0" concept="0" trace="FeatureConfigurationInheritance_Test#()V" />
       <node id="6658370737386136193" at="37,0,40,0" concept="0" trace="TestBody#(Ljetbrains/mps/lang/test/runtime/TransformationTest;)V" />
       <node id="6658370737386193609" at="26,0,30,0" concept="2" trace="test_NodeWarningCheck6658370737386193609#()V" />
@@ -542,11 +671,11 @@
   </root>
   <root nodeRef="r:b52df216-430b-486e-bf75-226dacbbed72(test.org.iets3.variability.configuration.base.checking_rules@tests)/6945424678034521032">
     <file name="InconsistentFeatureReferences_Test.java">
-      <node id="6945424678034521032" at="23,47,24,60" concept="7" />
+      <node id="6945424678034521032" at="23,47,24,60" concept="8" />
       <node id="6945424678034521093" at="28,95,29,86" concept="1" />
       <node id="6945424678034534700" at="32,95,33,86" concept="1" />
       <node id="6945424678034535371" at="36,112,37,103" concept="1" />
-      <node id="6945424678034521032" at="42,52,43,19" concept="7" />
+      <node id="6945424678034521032" at="42,52,43,19" concept="8" />
       <node id="6945424678034521032" at="47,36,48,46" concept="1" />
       <node id="6945424678034521093" at="51,97,52,22" concept="1" />
       <node id="6945424678034521093" at="53,30,54,63" concept="3" />
@@ -557,7 +686,7 @@
       <node id="6945424678034535371" at="65,114,66,22" concept="1" />
       <node id="6945424678034535371" at="67,30,68,63" concept="3" />
       <node id="6945424678034535371" at="68,63,69,306" concept="1" />
-      <node id="6945424678034521032" at="20,0,22,0" concept="6" trace="ourParametersCacheExtension" />
+      <node id="6945424678034521032" at="20,0,22,0" concept="7" trace="ourParametersCacheExtension" />
       <node id="6945424678034521032" at="23,0,26,0" concept="0" trace="InconsistentFeatureReferences_Test#()V" />
       <node id="6945424678034521032" at="42,0,45,0" concept="0" trace="TestBody#(Ljetbrains/mps/lang/test/runtime/TransformationTest;)V" />
       <node id="6945424678034521093" at="27,0,31,0" concept="2" trace="test_Nodeinconsistent_ref_to_featureCheck6945424678034521093#()V" />
@@ -603,20 +732,60 @@
       <unit id="6945424678034521032" at="18,0,75,0" name="test.org.iets3.variability.configuration.base.checking_rules.InconsistentFeatureReferences_Test" />
     </file>
   </root>
+  <root nodeRef="r:b52df216-430b-486e-bf75-226dacbbed72(test.org.iets3.variability.configuration.base.checking_rules@tests)/6995660538498532225">
+    <file name="UpdateAllExtendingConfigurations_Test.java">
+      <node id="6995660538498532225" at="30,50,31,60" concept="8" />
+      <node id="6995660538498532225" at="35,72,36,36" concept="1" />
+      <node id="6995660538498532225" at="41,52,42,19" concept="8" />
+      <node id="6995660538498532225" at="46,51,47,72" concept="1" />
+      <node id="6143370505398542125" at="48,69,49,110" concept="1" />
+      <node id="4003275569550875692" at="49,110,50,49" concept="5" />
+      <node id="7057831301193087696" at="51,318,52,69" concept="1" />
+      <node id="7057831301193087702" at="52,69,53,64" concept="1" />
+      <node id="7057831301193087708" at="53,64,54,70" concept="1" />
+      <node id="6995660538498532225" at="61,0,62,0" concept="7" trace="FeatureModelConfiguration$nE" />
+      <node id="6995660538498532225" at="65,0,66,0" concept="7" trace="__adaptHash$54Is" />
+      <node id="6995660538498532225" at="66,0,67,0" concept="7" trace="__hash$uJSm" />
+      <node id="6995660538498532225" at="67,0,68,0" concept="7" trace="__updateHash$vTMx" />
+      <node id="6995660538498532225" at="27,0,29,0" concept="7" trace="ourParametersCacheExtension" />
+      <node id="6995660538498532225" at="30,0,33,0" concept="0" trace="UpdateAllExtendingConfigurations_Test#()V" />
+      <node id="6995660538498532225" at="41,0,44,0" concept="0" trace="TestBody#(Ljetbrains/mps/lang/test/runtime/TransformationTest;)V" />
+      <node id="6995660538498532225" at="34,0,38,0" concept="2" trace="test_UpdateAllExtendingConfigurations#()V" />
+      <node id="7057831301192897876" at="50,49,55,11" concept="1" />
+      <node id="6995660538499323715" at="47,72,56,9" concept="1" />
+      <node id="6995660538498532225" at="45,0,58,0" concept="2" trace="testMethodImpl#()V" />
+      <scope id="6995660538498532225" at="30,50,31,60" />
+      <scope id="6995660538498532225" at="35,72,36,36" />
+      <scope id="6995660538498532225" at="41,52,42,19" />
+      <scope id="6995660538498532225" at="30,0,33,0" />
+      <scope id="6995660538498532225" at="41,0,44,0">
+        <var name="owner" id="6995660538498532225" />
+      </scope>
+      <scope id="7057831301193087695" at="51,318,54,70" />
+      <scope id="6995660538498532225" at="34,0,38,0" />
+      <scope id="6995660538499323717" at="48,69,55,11" />
+      <scope id="6995660538498532225" at="46,51,56,9" />
+      <scope id="6995660538498532225" at="45,0,58,0" />
+      <unit id="6995660538498532225" at="60,0,63,0" name="test.org.iets3.variability.configuration.base.checking_rules.UpdateAllExtendingConfigurations_Test$CONCEPTS" />
+      <unit id="6995660538498532225" at="64,0,69,0" name="test.org.iets3.variability.configuration.base.checking_rules.UpdateAllExtendingConfigurations_Test$PROPS" />
+      <unit id="6995660538498532225" at="39,0,59,0" name="test.org.iets3.variability.configuration.base.checking_rules.UpdateAllExtendingConfigurations_Test$TestBody" />
+      <unit id="6995660538498532225" at="25,0,70,0" name="test.org.iets3.variability.configuration.base.checking_rules.UpdateAllExtendingConfigurations_Test" />
+    </file>
+  </root>
   <root nodeRef="r:b52df216-430b-486e-bf75-226dacbbed72(test.org.iets3.variability.configuration.base.checking_rules@tests)/7367925337237323169">
     <file name="FixInconsistentFeatureReference_Test.java">
-      <node id="7367925337237323169" at="22,49,23,60" concept="7" />
+      <node id="7367925337237323169" at="22,49,23,60" concept="8" />
       <node id="7367925337237323169" at="27,71,28,36" concept="1" />
-      <node id="7367925337237323169" at="33,52,34,19" concept="7" />
+      <node id="7367925337237323169" at="33,52,34,19" concept="8" />
       <node id="7367925337237323169" at="38,51,39,72" concept="1" />
       <node id="7367925337237333472" at="39,72,40,26" concept="1" />
-      <node id="7367925337238027887" at="40,26,41,0" concept="5" />
-      <node id="7367925337238029466" at="41,0,42,104" concept="4" />
+      <node id="7367925337238027887" at="40,26,41,0" concept="6" />
+      <node id="7367925337238029466" at="41,0,42,104" concept="5" />
       <node id="7367925337238003222" at="43,71,44,175" concept="1" />
       <node id="7367925337237936018" at="44,175,45,80" concept="1" />
-      <node id="7367925337237323169" at="51,0,52,0" concept="6" trace="__updateHash$vTMx" />
-      <node id="7367925337237323169" at="52,0,53,0" concept="6" trace="__hash$uJSm" />
-      <node id="7367925337237323169" at="19,0,21,0" concept="6" trace="ourParametersCacheExtension" />
+      <node id="7367925337237323169" at="51,0,52,0" concept="7" trace="__updateHash$vTMx" />
+      <node id="7367925337237323169" at="52,0,53,0" concept="7" trace="__hash$uJSm" />
+      <node id="7367925337237323169" at="19,0,21,0" concept="7" trace="ourParametersCacheExtension" />
       <node id="7367925337237323169" at="22,0,25,0" concept="0" trace="FixInconsistentFeatureReference_Test#()V" />
       <node id="7367925337237323169" at="33,0,36,0" concept="0" trace="TestBody#(Ljetbrains/mps/lang/test/runtime/TransformationTest;)V" />
       <node id="7367925337237323169" at="26,0,30,0" concept="2" trace="test_FixInconsistentFeatureReference#()V" />
@@ -640,14 +809,14 @@
   </root>
   <root nodeRef="r:b52df216-430b-486e-bf75-226dacbbed72(test.org.iets3.variability.configuration.base.checking_rules@tests)/7598187151652337510">
     <file name="NotifyAdaptIsNecessaryWithNestedModels_Test.java">
-      <node id="7598187151652337510" at="23,56,24,60" concept="7" />
+      <node id="7598187151652337510" at="23,56,24,60" concept="8" />
       <node id="7598187151654647266" at="28,89,29,80" concept="1" />
-      <node id="7598187151652337510" at="34,52,35,19" concept="7" />
+      <node id="7598187151652337510" at="34,52,35,19" concept="8" />
       <node id="7598187151652337510" at="39,36,40,46" concept="1" />
       <node id="7598187151654647266" at="43,91,44,22" concept="1" />
       <node id="7598187151654647266" at="45,30,46,63" concept="3" />
       <node id="7598187151654647266" at="46,63,47,306" concept="1" />
-      <node id="7598187151652337510" at="20,0,22,0" concept="6" trace="ourParametersCacheExtension" />
+      <node id="7598187151652337510" at="20,0,22,0" concept="7" trace="ourParametersCacheExtension" />
       <node id="7598187151652337510" at="23,0,26,0" concept="0" trace="NotifyAdaptIsNecessaryWithNestedModels_Test#()V" />
       <node id="7598187151652337510" at="34,0,37,0" concept="0" trace="TestBody#(Ljetbrains/mps/lang/test/runtime/TransformationTest;)V" />
       <node id="7598187151654647266" at="27,0,31,0" concept="2" trace="test_NodeThereWereChangesInTheCheck7598187151654647266#()V" />
@@ -674,19 +843,19 @@
     </file>
   </root>
   <root nodeRef="r:b52df216-430b-486e-bf75-226dacbbed72(test.org.iets3.variability.configuration.base.checking_rules@tests)/7598187151660691121">
-    <file name="UpdateAllRelatedConfigurations_Test.java">
-      <node id="7598187151660691121" at="20,48,21,60" concept="7" />
-      <node id="7598187151660691121" at="25,70,26,36" concept="1" />
-      <node id="7598187151660691121" at="31,52,32,19" concept="7" />
+    <file name="UpdateAllRelatedConfigurationsApplicable_Test.java">
+      <node id="7598187151660691121" at="20,58,21,60" concept="8" />
+      <node id="7598187151660691121" at="25,80,26,36" concept="1" />
+      <node id="7598187151660691121" at="31,52,32,19" concept="8" />
       <node id="7598187151660691121" at="36,51,37,53" concept="1" />
       <node id="7598187151660696773" at="37,53,38,162" concept="1" />
-      <node id="7598187151660691121" at="17,0,19,0" concept="6" trace="ourParametersCacheExtension" />
-      <node id="7598187151660691121" at="20,0,23,0" concept="0" trace="UpdateAllRelatedConfigurations_Test#()V" />
+      <node id="7598187151660691121" at="17,0,19,0" concept="7" trace="ourParametersCacheExtension" />
+      <node id="7598187151660691121" at="20,0,23,0" concept="0" trace="UpdateAllRelatedConfigurationsApplicable_Test#()V" />
       <node id="7598187151660691121" at="31,0,34,0" concept="0" trace="TestBody#(Ljetbrains/mps/lang/test/runtime/TransformationTest;)V" />
-      <node id="7598187151660691121" at="24,0,28,0" concept="2" trace="test_UpdateAllRelatedConfigurations#()V" />
+      <node id="7598187151660691121" at="24,0,28,0" concept="2" trace="test_UpdateAllRelatedConfigurationsApplicable#()V" />
       <node id="7598187151660691121" at="35,0,40,0" concept="2" trace="testMethodImpl#()V" />
-      <scope id="7598187151660691121" at="20,48,21,60" />
-      <scope id="7598187151660691121" at="25,70,26,36" />
+      <scope id="7598187151660691121" at="20,58,21,60" />
+      <scope id="7598187151660691121" at="25,80,26,36" />
       <scope id="7598187151660691121" at="31,52,32,19" />
       <scope id="7598187151660691121" at="36,51,38,162" />
       <scope id="7598187151660691121" at="20,0,23,0" />
@@ -695,13 +864,13 @@
       </scope>
       <scope id="7598187151660691121" at="24,0,28,0" />
       <scope id="7598187151660691121" at="35,0,40,0" />
-      <unit id="7598187151660691121" at="29,0,41,0" name="test.org.iets3.variability.configuration.base.checking_rules.UpdateAllRelatedConfigurations_Test$TestBody" />
-      <unit id="7598187151660691121" at="15,0,42,0" name="test.org.iets3.variability.configuration.base.checking_rules.UpdateAllRelatedConfigurations_Test" />
+      <unit id="7598187151660691121" at="29,0,41,0" name="test.org.iets3.variability.configuration.base.checking_rules.UpdateAllRelatedConfigurationsApplicable_Test$TestBody" />
+      <unit id="7598187151660691121" at="15,0,42,0" name="test.org.iets3.variability.configuration.base.checking_rules.UpdateAllRelatedConfigurationsApplicable_Test" />
     </file>
   </root>
   <root nodeRef="r:b52df216-430b-486e-bf75-226dacbbed72(test.org.iets3.variability.configuration.base.checking_rules@tests)/8924895748870136941">
     <file name="WarningUnselectedFeature_Test.java">
-      <node id="8924895748870136941" at="24,42,25,60" concept="7" />
+      <node id="8924895748870136941" at="24,42,25,60" concept="8" />
       <node id="8924895748870184473" at="29,75,30,66" concept="1" />
       <node id="8924895748870175596" at="33,75,34,66" concept="1" />
       <node id="8924895748888296702" at="37,75,38,66" concept="1" />
@@ -709,7 +878,7 @@
       <node id="581140759194109575" at="45,76,46,67" concept="1" />
       <node id="7344892490222979869" at="49,75,50,66" concept="1" />
       <node id="7344892490213462528" at="53,75,54,66" concept="1" />
-      <node id="8924895748870136941" at="59,52,60,19" concept="7" />
+      <node id="8924895748870136941" at="59,52,60,19" concept="8" />
       <node id="8924895748870136941" at="64,36,65,115" concept="1" />
       <node id="8924895748870184473" at="68,77,69,22" concept="1" />
       <node id="8924895748870184473" at="70,30,71,63" concept="3" />
@@ -732,7 +901,7 @@
       <node id="7344892490213462528" at="110,77,111,22" concept="1" />
       <node id="7344892490213462528" at="112,30,113,63" concept="3" />
       <node id="7344892490213462528" at="113,63,114,163" concept="1" />
-      <node id="8924895748870136941" at="21,0,23,0" concept="6" trace="ourParametersCacheExtension" />
+      <node id="8924895748870136941" at="21,0,23,0" concept="7" trace="ourParametersCacheExtension" />
       <node id="8924895748870136941" at="24,0,27,0" concept="0" trace="WarningUnselectedFeature_Test#()V" />
       <node id="8924895748870136941" at="59,0,62,0" concept="0" trace="TestBody#(Ljetbrains/mps/lang/test/runtime/TransformationTest;)V" />
       <node id="8924895748870184473" at="28,0,32,0" concept="2" trace="test_NodeWarningCheck8924895748870184473#()V" />
@@ -820,10 +989,10 @@
   </root>
   <root nodeRef="r:b52df216-430b-486e-bf75-226dacbbed72(test.org.iets3.variability.configuration.base.checking_rules@tests)/9159423170666273923">
     <file name="DuplicateName_Test.java">
-      <node id="9159423170666273923" at="23,31,24,60" concept="7" />
+      <node id="9159423170666273923" at="23,31,24,60" concept="8" />
       <node id="9159423170666735487" at="28,89,29,80" concept="1" />
       <node id="9159423170666735491" at="32,89,33,80" concept="1" />
-      <node id="9159423170666273923" at="38,52,39,19" concept="7" />
+      <node id="9159423170666273923" at="38,52,39,19" concept="8" />
       <node id="9159423170666273923" at="43,36,44,46" concept="1" />
       <node id="9159423170666735487" at="47,91,48,22" concept="1" />
       <node id="9159423170666735487" at="49,30,50,63" concept="3" />
@@ -831,7 +1000,7 @@
       <node id="9159423170666735491" at="54,91,55,22" concept="1" />
       <node id="9159423170666735491" at="56,30,57,63" concept="3" />
       <node id="9159423170666735491" at="57,63,58,306" concept="1" />
-      <node id="9159423170666273923" at="20,0,22,0" concept="6" trace="ourParametersCacheExtension" />
+      <node id="9159423170666273923" at="20,0,22,0" concept="7" trace="ourParametersCacheExtension" />
       <node id="9159423170666273923" at="23,0,26,0" concept="0" trace="DuplicateName_Test#()V" />
       <node id="9159423170666273923" at="38,0,41,0" concept="0" trace="TestBody#(Ljetbrains/mps/lang/test/runtime/TransformationTest;)V" />
       <node id="9159423170666735487" at="27,0,31,0" concept="2" trace="test_Nodeconfig_duplicate_nameCheck9159423170666735487#()V" />
@@ -869,10 +1038,10 @@
   </root>
   <root nodeRef="r:b52df216-430b-486e-bf75-226dacbbed72(test.org.iets3.variability.configuration.base.checking_rules@tests)/9159423170675551967">
     <file name="NonUniqueFeatureReferences_Test.java">
-      <node id="9159423170675551967" at="23,44,24,60" concept="7" />
+      <node id="9159423170675551967" at="23,44,24,60" concept="8" />
       <node id="9159423170675553557" at="28,93,29,84" concept="1" />
       <node id="9159423170675553560" at="32,93,33,84" concept="1" />
-      <node id="9159423170675551967" at="38,52,39,19" concept="7" />
+      <node id="9159423170675551967" at="38,52,39,19" concept="8" />
       <node id="9159423170675551967" at="43,36,44,46" concept="1" />
       <node id="9159423170675553557" at="47,95,48,22" concept="1" />
       <node id="9159423170675553557" at="49,30,50,63" concept="3" />
@@ -880,7 +1049,7 @@
       <node id="9159423170675553560" at="54,95,55,22" concept="1" />
       <node id="9159423170675553560" at="56,30,57,63" concept="3" />
       <node id="9159423170675553560" at="57,63,58,306" concept="1" />
-      <node id="9159423170675551967" at="20,0,22,0" concept="6" trace="ourParametersCacheExtension" />
+      <node id="9159423170675551967" at="20,0,22,0" concept="7" trace="ourParametersCacheExtension" />
       <node id="9159423170675551967" at="23,0,26,0" concept="0" trace="NonUniqueFeatureReferences_Test#()V" />
       <node id="9159423170675551967" at="38,0,41,0" concept="0" trace="TestBody#(Ljetbrains/mps/lang/test/runtime/TransformationTest;)V" />
       <node id="9159423170675553557" at="27,0,31,0" concept="2" trace="test_Nodenon_unique_ref_to_featureCheck9159423170675553557#()V" />

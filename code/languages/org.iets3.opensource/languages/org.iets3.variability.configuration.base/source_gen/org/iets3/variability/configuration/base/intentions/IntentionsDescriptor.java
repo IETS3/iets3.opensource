@@ -77,12 +77,13 @@ public final class IntentionsDescriptor extends AbstractIntentionAspectDescripto
       case 5:
         if (true) {
           // concept
-          intentions = new IntentionFactory[5];
+          intentions = new IntentionFactory[6];
           intentions[0] = new runSolver_Intention();
           intentions[1] = new adaptToChangesInFeatureModel_Intention();
           intentions[2] = new runSolverSync_Intention();
           intentions[3] = new specifyUsedConfigs_Intention();
           intentions[4] = new adaptToExtendedFMC_Intention();
+          intentions[5] = new adaptExtendingFMCs_Intention();
         }
         break;
       default:
@@ -94,7 +95,7 @@ public final class IntentionsDescriptor extends AbstractIntentionAspectDescripto
   @NotNull
   @Override
   public Collection<IntentionFactory> getAllIntentions() {
-    IntentionFactory[] rv = new IntentionFactory[18];
+    IntentionFactory[] rv = new IntentionFactory[19];
     rv[0] = new subFeatureSelectionStateUntouched_Intention();
     rv[1] = new resetForceSelectionStateSubFeatures_Intention();
     rv[2] = new setAllUntouchedChildrenToFalse_Intention();
@@ -113,6 +114,7 @@ public final class IntentionsDescriptor extends AbstractIntentionAspectDescripto
     rv[15] = new adaptToExtendedFMC_Intention();
     rv[16] = new updateAllRelatedConfigurations_Intention();
     rv[17] = new setManualAssignmentCause_Intention();
+    rv[18] = new adaptExtendingFMCs_Intention();
     return Arrays.asList(rv);
   }
   private static final ConceptSwitchIndex conceptIndex = new ConceptSwitchIndexBuilder().put(MetaIdFactory.conceptId(0x71226ee2bbc445d2L, 0xa41d20b97237156cL, 0x302aa0c2ddab8940L), MetaIdFactory.conceptId(0x71226ee2bbc445d2L, 0xa41d20b97237156cL, 0x5cf5c0d0479ec950L), MetaIdFactory.conceptId(0x71226ee2bbc445d2L, 0xa41d20b97237156cL, 0x302aa0c2ddc5ae16L), MetaIdFactory.conceptId(0x71226ee2bbc445d2L, 0xa41d20b97237156cL, 0x5cf5c0d0479ec91dL), MetaIdFactory.conceptId(0x165f1d0525064544L, 0x895e1424f54166ecL, 0x375cadc47516a211L), MetaIdFactory.conceptId(0x71226ee2bbc445d2L, 0xa41d20b97237156cL, 0x5cf5c0d0479ec915L)).seal();

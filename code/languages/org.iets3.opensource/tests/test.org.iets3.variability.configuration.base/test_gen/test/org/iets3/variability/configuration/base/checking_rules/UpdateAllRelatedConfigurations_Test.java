@@ -10,7 +10,17 @@ import jetbrains.mps.lang.test.runtime.TestParametersCacheBuilder;
 import org.junit.jupiter.api.Test;
 import jetbrains.mps.lang.test.runtime.BaseEditorTestBody;
 import jetbrains.mps.lang.test.runtime.TransformationTest;
-import org.junit.Assert;
+import org.iets3.variability.configuration.base.behavior.UpdateAllConfigsTask;
+import jetbrains.mps.internal.collections.runtime.ListSequence;
+import java.util.ArrayList;
+import java.util.Arrays;
+import org.jetbrains.mps.openapi.model.SNode;
+import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
+import org.jetbrains.mps.openapi.language.SAbstractConcept;
+import jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations;
+import org.jetbrains.mps.openapi.language.SConcept;
+import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
+import org.jetbrains.mps.openapi.language.SProperty;
 
 @MPSLaunch
 public class UpdateAllRelatedConfigurations_Test extends BaseTransformationTest {
@@ -34,8 +44,26 @@ public class UpdateAllRelatedConfigurations_Test extends BaseTransformationTest 
 
     @Override
     public void testMethodImpl() throws Exception {
-      initEditorComponent("7598187151660695260", "");
-      Assert.assertTrue(isIntentionApplicable("org.iets3.variability.configuration.base.intentions.updateAllRelatedConfigurations_Intention", myStart.getNode()));
+      initEditorComponent("3085753687467509191", "3085753687467509211");
+      myModel.getRepository().getModelAccess().runWriteAction(() -> {
+        new UpdateAllConfigsTask(myProject, myModel, getAnnotatedNode("fm")).run(new DummyIndicator());
+        // Make sure hash values are not compared
+        ListSequence.fromList(ListSequence.fromListWithValues(new ArrayList<>(), Arrays.<SNode>asList(getAnnotatedNode("chunkIn"), getAnnotatedNode("chunkOut")))).translate((chunk) -> SNodeOperations.getNodeDescendants(chunk, CONCEPTS.FeatureModelConfiguration$nE, false, new SAbstractConcept[]{})).visitAll((fmc) -> {
+          SPropertyOperations.assign(fmc, PROPS.__adaptHash$54Is, 0);
+          SPropertyOperations.assign(fmc, PROPS.__hash$uJSm, 0);
+          SPropertyOperations.assign(fmc, PROPS.__updateHash$vTMx, 0);
+        });
+      });
     }
+  }
+
+  private static final class CONCEPTS {
+    /*package*/ static final SConcept FeatureModelConfiguration$nE = MetaAdapterFactory.getConcept(0x71226ee2bbc445d2L, 0xa41d20b97237156cL, 0x5cf5c0d0479ec915L, "org.iets3.variability.configuration.base.structure.FeatureModelConfiguration");
+  }
+
+  private static final class PROPS {
+    /*package*/ static final SProperty __adaptHash$54Is = MetaAdapterFactory.getProperty(0x71226ee2bbc445d2L, 0xa41d20b97237156cL, 0x5cf5c0d0479ec915L, 0x2f62f9db24bdbfcfL, "__adaptHash");
+    /*package*/ static final SProperty __hash$uJSm = MetaAdapterFactory.getProperty(0x7b68d745a7b848b9L, 0xbd9c05c0f8725a35L, 0x6caf8a4d6c71bb55L, 0x6caf8a4d6c71bb71L, "__hash");
+    /*package*/ static final SProperty __updateHash$vTMx = MetaAdapterFactory.getProperty(0x165f1d0525064544L, 0x895e1424f54166ecL, 0x2f62f9db248ccc64L, 0x2f62f9db248cd035L, "__updateHash");
   }
 }

@@ -57,7 +57,7 @@ public abstract class AbstractUpdateConfigsTask extends Task.Modal {
   protected abstract void logFinalMessage(long tTotal);
 
   @Override
-  public void run(@NotNull ProgressIndicator indicator) {
+  public void run(@NotNull final ProgressIndicator indicator) {
     final long tTotal0 = System.currentTimeMillis();
     SRepository repo = mpsProject.getRepository();
     ListSequence.fromList(updatedConfigs).clear();
@@ -71,34 +71,38 @@ public abstract class AbstractUpdateConfigsTask extends Task.Modal {
     indicator.setFraction(0.0);
     giveWayToUI();
 
-    int idx = 1;
-    int nTasks = ListSequence.fromList(updatedConfigs).count() * 2;
-    int iTask = 0;
+    final Wrappers._int idx = new Wrappers._int(1);
+    final int nTasks = ListSequence.fromList(updatedConfigs).count() * 2;
+    final Wrappers._int iTask = new Wrappers._int(0);
     for (final SNode config : ListSequence.fromList(updatedConfigs)) {
       indicator.checkCanceled();
 
       final Wrappers._T<String> name = new Wrappers._T<String>();
-      repo.getModelAccess().runReadAction(() -> name.value = SPropertyOperations.getString(config, PROPS.name$MnvL));
+      repo.getModelAccess().runReadAction(() -> {
+        name.value = SPropertyOperations.getString(config, PROPS.name$MnvL);
+        // step 1 (adapt configuration to changes in feature model)
+        indicator.setText(String.format("Updating configuration %d/%d: %s", idx.value, ListSequence.fromList(updatedConfigs).count(), name.value));
+        indicator.setText2(updateReason());
+        indicator.setFraction(((double) iTask.value++) / nTasks);
+      });
 
-      // step 1 (adapt configuration to changes in feature model)
-      indicator.setText(String.format("Updating configuration %d/%d: %s", idx, ListSequence.fromList(updatedConfigs).count(), name.value));
-      indicator.setText2("Updating structure according to feature model...");
-      indicator.setFraction(((double) iTask++) / nTasks);
       giveWayToUI();
-      long dt1 = execModelWriteStep(modelData.value, repo, () -> ConfigUpdateHelper.propagateFeatureModelChangesToConfig(config));
+      long dt1 = execModelWriteStep(modelData.value, repo, () -> propagate(config));
       LOG.info("Updated structure for configuration '" + name.value + "', dt=" + dt1 + " milliseconds");
 
       // step 2 (generate solver task and execute solver)
       indicator.setText2("Updating automatic values using solver...");
-      indicator.setFraction(((double) iTask++) / nTasks);
+      indicator.setFraction(((double) iTask.value++) / nTasks);
       giveWayToUI();
       long dt2 = execModelWriteStep(modelData.value, repo, () -> ConfigUpdateHelper.runSolverSyncIfNotIgnored(config));
       LOG.info("Updated values for configuration '" + name.value + "', dt=" + dt2 + " milliseconds");
-      idx++;
+      idx.value++;
     }
 
     // finally, indicate that model has been changed
-    ((EditableSModel) this.model).setChanged(true);
+    if (!(((SModelBase) this.model).isReadOnly())) {
+      ((EditableSModel) this.model).setChanged(true);
+    }
 
     final long tTotal1 = System.currentTimeMillis();
     repo.getModelAccess().runReadAction(() -> logFinalMessage(tTotal1 - tTotal0));
@@ -111,6 +115,10 @@ public abstract class AbstractUpdateConfigsTask extends Task.Modal {
     }
     indicator.setText2("");
   }
+
+  protected abstract String updateReason();
+
+  protected abstract void propagate(SNode config);
 
   private void giveWayToUI() {
     try {
@@ -172,14 +180,14 @@ public abstract class AbstractUpdateConfigsTask extends Task.Modal {
   }
 
   private static Iterable<EditorComponent> getEditorComponents(final SNode containedNode) {
-    Iterable<EditorComponent> editorComps = ListSequence.fromList(EditorComponentHacks.findAllInstances()).where((it) -> check_y51t6d_a0a0a0a0a0db(it) == SNodeOperations.getContainingRoot(containedNode));
+    Iterable<EditorComponent> editorComps = ListSequence.fromList(EditorComponentHacks.findAllInstances()).where((it) -> check_y51t6d_a0a0a0a0a0hb(it) == SNodeOperations.getContainingRoot(containedNode));
 
     if (null == editorComps || Sequence.fromIterable(editorComps).isEmpty()) {
       return null;
     }
     return editorComps;
   }
-  private static SNode check_y51t6d_a0a0a0a0a0db(EditorComponent checkedDotOperand) {
+  private static SNode check_y51t6d_a0a0a0a0a0hb(EditorComponent checkedDotOperand) {
     if (null != checkedDotOperand) {
       return checkedDotOperand.getEditedNode();
     }
