@@ -32,6 +32,9 @@
     <import index="pbu6" ref="r:83e946de-2a7f-4a4c-b3c9-4f671aa7f2db(org.iets3.core.expr.base.behavior)" implicit="true" />
   </imports>
   <registry>
+    <language id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior">
+      <concept id="3235159848334022093" name="jetbrains.mps.lang.behavior.structure.Node_ConceptMethodCall" flags="nn" index="3zqWPK" />
+    </language>
     <language id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor">
       <concept id="1071666914219" name="jetbrains.mps.lang.editor.structure.ConceptEditorDeclaration" flags="ig" index="24kQdi">
         <child id="1078153129734" name="inspectedCellModel" index="6VMZX" />
@@ -371,7 +374,6 @@
       <concept id="1138411891628" name="jetbrains.mps.lang.smodel.structure.SNodeOperation" flags="nn" index="eCIE_">
         <child id="1144104376918" name="parameter" index="1xVPHs" />
       </concept>
-      <concept id="1179409122411" name="jetbrains.mps.lang.smodel.structure.Node_ConceptMethodCall" flags="nn" index="2qgKlT" />
       <concept id="1145383075378" name="jetbrains.mps.lang.smodel.structure.SNodeListType" flags="in" index="2I9FWS">
         <reference id="1145383142433" name="elementConcept" index="2I9WkF" />
       </concept>
@@ -1252,7 +1254,7 @@
                   <node concept="2OqwBi" id="6_rxy3GSXjJ" role="3clFbG">
                     <node concept="2OqwBi" id="6_rxy3GSWE0" role="2Oq$k0">
                       <node concept="pncrf" id="6_rxy3GSWrd" role="2Oq$k0" />
-                      <node concept="2qgKlT" id="6_rxy3GSX1U" role="2OqNvi">
+                      <node concept="3zqWPK" id="5DJjBfj0bRt" role="2OqNvi">
                         <ref role="37wK5l" to="ux24:7F9023_N_3E" resolve="getColumnDefinition" />
                       </node>
                     </node>
@@ -1389,11 +1391,11 @@
                 <node concept="2OqwBi" id="7rdMSLlhN2I" role="3clFbG">
                   <node concept="2OqwBi" id="7rdMSLlhMiA" role="2Oq$k0">
                     <node concept="pncrf" id="7rdMSLlhM3W" role="2Oq$k0" />
-                    <node concept="2qgKlT" id="3y6PJwOqmew" role="2OqNvi">
+                    <node concept="3zqWPK" id="5DJjBfj0bRv" role="2OqNvi">
                       <ref role="37wK5l" to="ux24:4CksDrmwwdX" resolve="reduce" />
                     </node>
                   </node>
-                  <node concept="2qgKlT" id="7rdMSLlhNOm" role="2OqNvi">
+                  <node concept="3zqWPK" id="5DJjBfj0bRx" role="2OqNvi">
                     <ref role="37wK5l" to="pbu6:4Y0vh0cfqjE" resolve="renderReadable" />
                   </node>
                 </node>

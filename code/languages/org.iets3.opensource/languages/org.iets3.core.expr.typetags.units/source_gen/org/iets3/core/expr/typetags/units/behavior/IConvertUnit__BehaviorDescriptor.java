@@ -8,7 +8,6 @@ import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import org.jetbrains.mps.openapi.model.SNode;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import java.util.List;
 import java.util.Arrays;
@@ -22,7 +21,6 @@ import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
 import com.mbeddr.core.base.behavior.IVisibleElementProvider__BehaviorDescriptor;
 import jetbrains.mps.internal.collections.runtime.ListSequence;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
-import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 import org.jetbrains.mps.openapi.language.SInterfaceConcept;
@@ -33,16 +31,14 @@ import org.jetbrains.mps.openapi.language.SContainmentLink;
 public final class IConvertUnit__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getInterfaceConcept(0xcb91a38e738a4811L, 0xa96d448d08f526faL, 0x7e22431b94d76bbaL, "org.iets3.core.expr.typetags.units.structure.IConvertUnit");
 
-  public static final SMethod<SNode> getExpression_id7SygLIkQnGn = new SMethodBuilder<SNode>(new SJavaCompoundTypeImpl((Class<SNode>) ((Class) Object.class))).name("getExpression").modifiers(12, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(9088900783727541015L).languageId(0xa96d448d08f526faL, 0xcb91a38e738a4811L).build2();
-  public static final SMethod<SNode> getTargetUnit_id7SygLIkQpOA = new SMethodBuilder<SNode>(new SJavaCompoundTypeImpl((Class<SNode>) ((Class) Object.class))).name("getTargetUnit").modifiers(12, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(9088900783727549734L).languageId(0xa96d448d08f526faL, 0xcb91a38e738a4811L).build2();
-  public static final SMethod<Void> setConversionSpecifier_id7SygLIkQzuc = new SMethodBuilder<Void>(new SJavaCompoundTypeImpl(Void.class)).name("setConversionSpecifier").modifiers(12, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(9088900783727589260L).languageId(0xa96d448d08f526faL, 0xcb91a38e738a4811L).build2(SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""));
-  public static final SMethod<SNode> getConversionSpecifier_id7SygLIkR36w = new SMethodBuilder<SNode>(new SJavaCompoundTypeImpl((Class<SNode>) ((Class) Object.class))).name("getConversionSpecifier").modifiers(12, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(9088900783727718816L).languageId(0xa96d448d08f526faL, 0xcb91a38e738a4811L).build2();
-  public static final SMethod<List<SNode>> getApplicableConversionSpecifiers_id3_TFq$0_vSx = new SMethodBuilder<List<SNode>>(new SJavaCompoundTypeImpl((Class<List<SNode>>) ((Class) Object.class))).name("getApplicableConversionSpecifiers").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(4141532273714789921L).languageId(0xa96d448d08f526faL, 0xcb91a38e738a4811L).build2();
+  public static final SMethod<SNode> getExpression_id7SygLIkQnGn = new SMethodBuilder<>(SNode.class).name("getExpression").modifiers(12, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(9088900783727541015L).languageId(0xa96d448d08f526faL, 0xcb91a38e738a4811L).build2();
+  public static final SMethod<SNode> getTargetUnit_id7SygLIkQpOA = new SMethodBuilder<>(SNode.class).name("getTargetUnit").modifiers(12, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(9088900783727549734L).languageId(0xa96d448d08f526faL, 0xcb91a38e738a4811L).build2();
+  public static final SMethod<Void> setConversionSpecifier_id7SygLIkQzuc = new SMethodBuilder<>(Void.TYPE).name("setConversionSpecifier").modifiers(12, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(9088900783727589260L).languageId(0xa96d448d08f526faL, 0xcb91a38e738a4811L).build2(SMethodBuilder.createJavaParameter(SNode.class, "conversionSpecifier"));
+  public static final SMethod<SNode> getConversionSpecifier_id7SygLIkR36w = new SMethodBuilder<>(SNode.class).name("getConversionSpecifier").modifiers(12, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(9088900783727718816L).languageId(0xa96d448d08f526faL, 0xcb91a38e738a4811L).build2();
+  public static final SMethod<List<SNode>> getApplicableConversionSpecifiers_id3_TFq$0_vSx = new SMethodBuilder<>((Class<List<SNode>>) ((Class) Object.class)).name("getApplicableConversionSpecifiers").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(4141532273714789921L).languageId(0xa96d448d08f526faL, 0xcb91a38e738a4811L).build2();
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(getExpression_id7SygLIkQnGn, getTargetUnit_id7SygLIkQpOA, setConversionSpecifier_id7SygLIkQzuc, getConversionSpecifier_id7SygLIkR36w, getApplicableConversionSpecifiers_id3_TFq$0_vSx);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(getExpression_id7SygLIkQnGn, getTargetUnit_id7SygLIkQpOA, setConversionSpecifier_id7SygLIkQzuc, getConversionSpecifier_id7SygLIkR36w, getApplicableConversionSpecifiers_id3_TFq$0_vSx);
 
-  private static void ___init___(@NotNull SNode __thisNode__) {
-  }
 
   /*package*/ static List<SNode> getApplicableConversionSpecifiers_id3_TFq$0_vSx(@NotNull SNode __thisNode__) {
     List<SNode> result = new ArrayList<SNode>();
@@ -70,10 +66,6 @@ public final class IConvertUnit__BehaviorDescriptor extends BaseBHDescriptor {
   /*package*/ IConvertUnit__BehaviorDescriptor() {
   }
 
-  @Override
-  protected void initNode(@NotNull SNode node, @NotNull SConstructor constructor, @Nullable Object[] parameters) {
-    ___init___(node);
-  }
 
   @Override
   protected <T> T invokeSpecial0(@NotNull SNode node, @NotNull SMethod<T> method, @Nullable Object[] parameters) {

@@ -8,7 +8,6 @@ import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import org.jetbrains.mps.openapi.model.SNode;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import org.iets3.core.expr.mutable.plugin.InteractionDescriptor;
 import org.iets3.core.expr.mutable.plugin.InteractorValue;
@@ -22,7 +21,6 @@ import jetbrains.mps.internal.collections.runtime.Sequence;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations;
 import jetbrains.mps.internal.collections.runtime.ListSequence;
 import org.iets3.core.expr.statemachines.plugin.SmValue;
-import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 import org.jetbrains.mps.openapi.language.SContainmentLink;
@@ -32,25 +30,23 @@ import org.jetbrains.mps.openapi.language.SProperty;
 public final class StateMachine__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getConcept(0xcd87ddab6434448eL, 0xa0111e1c898de18eL, 0x7939418a3e285ca3L, "org.iets3.core.expr.statemachines.structure.StateMachine");
 
-  public static final SMethod<Iterable<SNode>> events_id7$TgoCYjSsJ = new SMethodBuilder<Iterable<SNode>>(new SJavaCompoundTypeImpl((Class<Iterable<SNode>>) ((Class) Object.class))).name("events").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(8735085014268479279L).languageId(0xa0111e1c898de18eL, 0xcd87ddab6434448eL).build2();
-  public static final SMethod<Iterable<SNode>> queries_id4J6AqiIXbWG = new SMethodBuilder<Iterable<SNode>>(new SJavaCompoundTypeImpl((Class<Iterable<SNode>>) ((Class) Object.class))).name("queries").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5460220530822266668L).languageId(0xa0111e1c898de18eL, 0xcd87ddab6434448eL).build2();
-  public static final SMethod<SNode> eventByName_id7bd8pkkAFT3 = new SMethodBuilder<SNode>(new SJavaCompoundTypeImpl((Class<SNode>) ((Class) Object.class))).name("eventByName").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(8272305014728998467L).languageId(0xa0111e1c898de18eL, 0xcd87ddab6434448eL).build2(SMethodBuilder.createJavaParameter(String.class, ""));
-  public static final SMethod<Iterable<SNode>> variables_idaPhVmWXB8g = new SMethodBuilder<Iterable<SNode>>(new SJavaCompoundTypeImpl((Class<Iterable<SNode>>) ((Class) Object.class))).name("variables").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(195141004745404944L).languageId(0xa0111e1c898de18eL, 0xcd87ddab6434448eL).build2();
-  public static final SMethod<SNode> variableByName_id7bd8pkk$zhp = new SMethodBuilder<SNode>(new SJavaCompoundTypeImpl((Class<SNode>) ((Class) Object.class))).name("variableByName").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(8272305014728438873L).languageId(0xa0111e1c898de18eL, 0xcd87ddab6434448eL).build2(SMethodBuilder.createJavaParameter(String.class, ""));
-  public static final SMethod<SNode> queryByName_id4J6AqiIYd94 = new SMethodBuilder<SNode>(new SJavaCompoundTypeImpl((Class<SNode>) ((Class) Object.class))).name("queryByName").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5460220530822533700L).languageId(0xa0111e1c898de18eL, 0xcd87ddab6434448eL).build2(SMethodBuilder.createJavaParameter(String.class, ""));
-  public static final SMethod<Iterable<SNode>> observableVariables_id33mFrum_2U2 = new SMethodBuilder<Iterable<SNode>>(new SJavaCompoundTypeImpl((Class<Iterable<SNode>>) ((Class) Object.class))).name("observableVariables").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(3519191162853535362L).languageId(0xa0111e1c898de18eL, 0xcd87ddab6434448eL).build2();
-  public static final SMethod<Iterable<SNode>> observableQueries_id4J6AqiIUUBX = new SMethodBuilder<Iterable<SNode>>(new SJavaCompoundTypeImpl((Class<Iterable<SNode>>) ((Class) Object.class))).name("observableQueries").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5460220530821671421L).languageId(0xa0111e1c898de18eL, 0xcd87ddab6434448eL).build2();
-  public static final SMethod<Iterable<SNode>> getUniquelyNamedElements_id4qSf1u1TRfj = new SMethodBuilder<Iterable<SNode>>(new SJavaCompoundTypeImpl((Class<Iterable<SNode>>) ((Class) Object.class))).name("getUniquelyNamedElements").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5095889050031059923L).languageId(0xaa41d1b2bffa7eb1L, 0xd4280a54f6df4383L).build2();
-  public static final SMethod<InteractionDescriptor> getDescriptor_id5y3VELft_Ye = new SMethodBuilder<InteractionDescriptor>(new SJavaCompoundTypeImpl(InteractionDescriptor.class)).name("getDescriptor").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(6378203921121697678L).languageId(0x9c3b0b4469830440L, 0xfbba51185fc649ffL).build2();
-  public static final SMethod<InteractorValue> createNewValue_id7WFhXJlVW$d = new SMethodBuilder<InteractorValue>(new SJavaCompoundTypeImpl(InteractorValue.class)).name("createNewValue").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(9163496876328077581L).languageId(0x9c3b0b4469830440L, 0xfbba51185fc649ffL).build2(SMethodBuilder.createJavaParameter(IContext.class, ""));
-  public static final SMethod<Iterable<SNode>> visibleFunctions_idmQGcCvDdEN = new SMethodBuilder<Iterable<SNode>>(new SJavaCompoundTypeImpl((Class<Iterable<SNode>>) ((Class) Object.class))).name("visibleFunctions").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(411710798111759027L).languageId(0xa0548c072591085fL, 0x71934284d7d145eeL).build2();
-  public static final SMethod<Iterable<SNode>> states_id3H4W4dizcin = new SMethodBuilder<Iterable<SNode>>(new SJavaCompoundTypeImpl((Class<Iterable<SNode>>) ((Class) Object.class))).name("states").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(4270802518592504983L).languageId(0xa0111e1c898de18eL, 0xcd87ddab6434448eL).build2();
-  public static final SMethod<Iterable<SNode>> allStates_idk9boAubCes = new SMethodBuilder<Iterable<SNode>>(new SJavaCompoundTypeImpl((Class<Iterable<SNode>>) ((Class) Object.class))).name("allStates").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(362871314067653532L).languageId(0xa0111e1c898de18eL, 0xcd87ddab6434448eL).build2();
+  public static final SMethod<Iterable<SNode>> events_id7$TgoCYjSsJ = new SMethodBuilder<>((Class<Iterable<SNode>>) ((Class) Object.class)).name("events").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(8735085014268479279L).languageId(0xa0111e1c898de18eL, 0xcd87ddab6434448eL).build2();
+  public static final SMethod<Iterable<SNode>> queries_id4J6AqiIXbWG = new SMethodBuilder<>((Class<Iterable<SNode>>) ((Class) Object.class)).name("queries").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5460220530822266668L).languageId(0xa0111e1c898de18eL, 0xcd87ddab6434448eL).build2();
+  public static final SMethod<SNode> eventByName_id7bd8pkkAFT3 = new SMethodBuilder<>(SNode.class).name("eventByName").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(8272305014728998467L).languageId(0xa0111e1c898de18eL, 0xcd87ddab6434448eL).build2(SMethodBuilder.createJavaParameter(String.class, "name"));
+  public static final SMethod<Iterable<SNode>> variables_idaPhVmWXB8g = new SMethodBuilder<>((Class<Iterable<SNode>>) ((Class) Object.class)).name("variables").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(195141004745404944L).languageId(0xa0111e1c898de18eL, 0xcd87ddab6434448eL).build2();
+  public static final SMethod<SNode> variableByName_id7bd8pkk$zhp = new SMethodBuilder<>(SNode.class).name("variableByName").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(8272305014728438873L).languageId(0xa0111e1c898de18eL, 0xcd87ddab6434448eL).build2(SMethodBuilder.createJavaParameter(String.class, "name"));
+  public static final SMethod<SNode> queryByName_id4J6AqiIYd94 = new SMethodBuilder<>(SNode.class).name("queryByName").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5460220530822533700L).languageId(0xa0111e1c898de18eL, 0xcd87ddab6434448eL).build2(SMethodBuilder.createJavaParameter(String.class, "name"));
+  public static final SMethod<Iterable<SNode>> observableVariables_id33mFrum_2U2 = new SMethodBuilder<>((Class<Iterable<SNode>>) ((Class) Object.class)).name("observableVariables").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(3519191162853535362L).languageId(0xa0111e1c898de18eL, 0xcd87ddab6434448eL).build2();
+  public static final SMethod<Iterable<SNode>> observableQueries_id4J6AqiIUUBX = new SMethodBuilder<>((Class<Iterable<SNode>>) ((Class) Object.class)).name("observableQueries").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5460220530821671421L).languageId(0xa0111e1c898de18eL, 0xcd87ddab6434448eL).build2();
+  public static final SMethod<Iterable<SNode>> getUniquelyNamedElements_id4qSf1u1TRfj = new SMethodBuilder<>((Class<Iterable<SNode>>) ((Class) Object.class)).name("getUniquelyNamedElements").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5095889050031059923L).languageId(0xaa41d1b2bffa7eb1L, 0xd4280a54f6df4383L).build2();
+  public static final SMethod<InteractionDescriptor> getDescriptor_id5y3VELft_Ye = new SMethodBuilder<>(InteractionDescriptor.class).name("getDescriptor").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(6378203921121697678L).languageId(0x9c3b0b4469830440L, 0xfbba51185fc649ffL).build2();
+  public static final SMethod<InteractorValue> createNewValue_id7WFhXJlVW$d = new SMethodBuilder<>(InteractorValue.class).name("createNewValue").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(9163496876328077581L).languageId(0x9c3b0b4469830440L, 0xfbba51185fc649ffL).build2(SMethodBuilder.createJavaParameter(IContext.class, "ctx"));
+  public static final SMethod<Iterable<SNode>> visibleFunctions_idmQGcCvDdEN = new SMethodBuilder<>((Class<Iterable<SNode>>) ((Class) Object.class)).name("visibleFunctions").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(411710798111759027L).languageId(0xa0548c072591085fL, 0x71934284d7d145eeL).build2();
+  public static final SMethod<Iterable<SNode>> states_id3H4W4dizcin = new SMethodBuilder<>((Class<Iterable<SNode>>) ((Class) Object.class)).name("states").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(4270802518592504983L).languageId(0xa0111e1c898de18eL, 0xcd87ddab6434448eL).build2();
+  public static final SMethod<Iterable<SNode>> allStates_idk9boAubCes = new SMethodBuilder<>((Class<Iterable<SNode>>) ((Class) Object.class)).name("allStates").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(362871314067653532L).languageId(0xa0111e1c898de18eL, 0xcd87ddab6434448eL).build2();
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(events_id7$TgoCYjSsJ, queries_id4J6AqiIXbWG, eventByName_id7bd8pkkAFT3, variables_idaPhVmWXB8g, variableByName_id7bd8pkk$zhp, queryByName_id4J6AqiIYd94, observableVariables_id33mFrum_2U2, observableQueries_id4J6AqiIUUBX, getUniquelyNamedElements_id4qSf1u1TRfj, getDescriptor_id5y3VELft_Ye, createNewValue_id7WFhXJlVW$d, visibleFunctions_idmQGcCvDdEN, states_id3H4W4dizcin, allStates_idk9boAubCes);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(events_id7$TgoCYjSsJ, queries_id4J6AqiIXbWG, eventByName_id7bd8pkkAFT3, variables_idaPhVmWXB8g, variableByName_id7bd8pkk$zhp, queryByName_id4J6AqiIYd94, observableVariables_id33mFrum_2U2, observableQueries_id4J6AqiIUUBX, getUniquelyNamedElements_id4qSf1u1TRfj, getDescriptor_id5y3VELft_Ye, createNewValue_id7WFhXJlVW$d, visibleFunctions_idmQGcCvDdEN, states_id3H4W4dizcin, allStates_idk9boAubCes);
 
-  private static void ___init___(@NotNull SNode __thisNode__) {
-  }
 
   /*package*/ static Iterable<SNode> events_id7$TgoCYjSsJ(@NotNull SNode __thisNode__) {
     return SNodeOperations.ofConcept(SLinkOperations.getChildren(__thisNode__, LINKS.contents$Pwys), CONCEPTS.Event$Q3);
@@ -98,10 +94,6 @@ public final class StateMachine__BehaviorDescriptor extends BaseBHDescriptor {
   /*package*/ StateMachine__BehaviorDescriptor() {
   }
 
-  @Override
-  protected void initNode(@NotNull SNode node, @NotNull SConstructor constructor, @Nullable Object[] parameters) {
-    ___init___(node);
-  }
 
   @Override
   protected <T> T invokeSpecial0(@NotNull SNode node, @NotNull SMethod<T> method, @Nullable Object[] parameters) {

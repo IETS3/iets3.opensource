@@ -7,7 +7,6 @@ import org.jetbrains.mps.openapi.language.SAbstractConcept;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import org.jetbrains.mps.openapi.model.SNode;
 import java.util.Set;
@@ -18,7 +17,6 @@ import jetbrains.mps.internal.collections.runtime.SetSequence;
 import java.util.HashSet;
 import jetbrains.mps.internal.collections.runtime.ListSequence;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
-import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 import org.jetbrains.mps.openapi.language.SInterfaceConcept;
@@ -26,17 +24,15 @@ import org.jetbrains.mps.openapi.language.SInterfaceConcept;
 public final class ISSConstrainedValue__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getInterfaceConcept(0xcfaa4966b7d54b69L, 0xb66a309a6e1a7290L, 0x5b310c0a1acbbabbL, "org.iets3.core.expr.base.structure.ISSConstrainedValue");
 
-  public static final SMethod<String> getVariableName_id7BxfuU7QrrQ = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("getVariableName").modifiers(12, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(8782368843039880950L).languageId(0xb66a309a6e1a7290L, 0xcfaa4966b7d54b69L).build2();
-  public static final SMethod<SNode> getVariableType_id7BxfuU7QrsR = new SMethodBuilder<SNode>(new SJavaCompoundTypeImpl((Class<SNode>) ((Class) Object.class))).name("getVariableType").modifiers(12, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(8782368843039881015L).languageId(0xb66a309a6e1a7290L, 0xcfaa4966b7d54b69L).build2();
-  public static final SMethod<Iterable<SNode>> getVariableConstraints_id7BxfuU7Qruw = new SMethodBuilder<Iterable<SNode>>(new SJavaCompoundTypeImpl((Class<Iterable<SNode>>) ((Class) Object.class))).name("getVariableConstraints").modifiers(12, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(8782368843039881120L).languageId(0xb66a309a6e1a7290L, 0xcfaa4966b7d54b69L).build2();
-  public static final SMethod<Set<SNode>> getDependentValues_id1xFBUnwWaWp = new SMethodBuilder<Set<SNode>>(new SJavaCompoundTypeImpl((Class<Set<SNode>>) ((Class) Object.class))).name("getDependentValues").modifiers(12, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(1759675614210600729L).languageId(0xb66a309a6e1a7290L, 0xcfaa4966b7d54b69L).build2();
-  public static final SMethod<Set<SNode>> extractValuesFromExpression_id1xFBUnx0h1Q = new SMethodBuilder<Set<SNode>>(new SJavaCompoundTypeImpl((Class<Set<SNode>>) ((Class) Object.class))).name("extractValuesFromExpression").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(1759675614211674230L).languageId(0xb66a309a6e1a7290L, 0xcfaa4966b7d54b69L).build2(SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""));
-  public static final SMethod<Boolean> isVariableTypeInferred_id1996aX6uZ1A = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("isVariableTypeInferred").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(1317611507063451750L).languageId(0xb66a309a6e1a7290L, 0xcfaa4966b7d54b69L).build2();
+  public static final SMethod<String> getVariableName_id7BxfuU7QrrQ = new SMethodBuilder<>(String.class).name("getVariableName").modifiers(12, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(8782368843039880950L).languageId(0xb66a309a6e1a7290L, 0xcfaa4966b7d54b69L).build2();
+  public static final SMethod<SNode> getVariableType_id7BxfuU7QrsR = new SMethodBuilder<>(SNode.class).name("getVariableType").modifiers(12, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(8782368843039881015L).languageId(0xb66a309a6e1a7290L, 0xcfaa4966b7d54b69L).build2();
+  public static final SMethod<Iterable<SNode>> getVariableConstraints_id7BxfuU7Qruw = new SMethodBuilder<>((Class<Iterable<SNode>>) ((Class) Object.class)).name("getVariableConstraints").modifiers(12, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(8782368843039881120L).languageId(0xb66a309a6e1a7290L, 0xcfaa4966b7d54b69L).build2();
+  public static final SMethod<Set<SNode>> getDependentValues_id1xFBUnwWaWp = new SMethodBuilder<>((Class<Set<SNode>>) ((Class) Object.class)).name("getDependentValues").modifiers(12, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(1759675614210600729L).languageId(0xb66a309a6e1a7290L, 0xcfaa4966b7d54b69L).build2();
+  public static final SMethod<Set<SNode>> extractValuesFromExpression_id1xFBUnx0h1Q = new SMethodBuilder<>((Class<Set<SNode>>) ((Class) Object.class)).name("extractValuesFromExpression").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(1759675614211674230L).languageId(0xb66a309a6e1a7290L, 0xcfaa4966b7d54b69L).build2(SMethodBuilder.createJavaParameter(SNode.class, "expr"));
+  public static final SMethod<Boolean> isVariableTypeInferred_id1996aX6uZ1A = new SMethodBuilder<>(Boolean.TYPE).name("isVariableTypeInferred").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(1317611507063451750L).languageId(0xb66a309a6e1a7290L, 0xcfaa4966b7d54b69L).build2();
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(getVariableName_id7BxfuU7QrrQ, getVariableType_id7BxfuU7QrsR, getVariableConstraints_id7BxfuU7Qruw, getDependentValues_id1xFBUnwWaWp, extractValuesFromExpression_id1xFBUnx0h1Q, isVariableTypeInferred_id1996aX6uZ1A);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(getVariableName_id7BxfuU7QrrQ, getVariableType_id7BxfuU7QrsR, getVariableConstraints_id7BxfuU7Qruw, getDependentValues_id1xFBUnwWaWp, extractValuesFromExpression_id1xFBUnx0h1Q, isVariableTypeInferred_id1996aX6uZ1A);
 
-  private static void ___init___(@NotNull SNode __thisNode__) {
-  }
 
   /*package*/ static Set<SNode> extractValuesFromExpression_id1xFBUnx0h1Q(@NotNull SNode __thisNode__, SNode expr) {
     return SetSequence.fromSetWithValues(new HashSet<SNode>(), ListSequence.fromList(SNodeOperations.getNodeDescendants(expr, CONCEPTS.ISSConstrainedValueRef$xd, true, new SAbstractConcept[]{})).where((it) -> (boolean) ISSConstrainedValueRef__BehaviorDescriptor.shouldBeSubstituted_id14gxgpJfXC0.invoke(it)).select((it) -> (SNode) ISSConstrainedValueRef__BehaviorDescriptor.getISSVariable_id5GL30CqMVFo.invoke(it)));
@@ -48,10 +44,6 @@ public final class ISSConstrainedValue__BehaviorDescriptor extends BaseBHDescrip
   /*package*/ ISSConstrainedValue__BehaviorDescriptor() {
   }
 
-  @Override
-  protected void initNode(@NotNull SNode node, @NotNull SConstructor constructor, @Nullable Object[] parameters) {
-    ___init___(node);
-  }
 
   @Override
   protected <T> T invokeSpecial0(@NotNull SNode node, @NotNull SMethod<T> method, @Nullable Object[] parameters) {

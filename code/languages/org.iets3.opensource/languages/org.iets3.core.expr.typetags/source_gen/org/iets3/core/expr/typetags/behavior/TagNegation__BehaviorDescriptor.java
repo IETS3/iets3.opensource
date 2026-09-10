@@ -7,7 +7,6 @@ import org.jetbrains.mps.openapi.language.SAbstractConcept;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import org.jetbrains.mps.openapi.model.SNode;
 import java.util.List;
@@ -15,7 +14,6 @@ import java.util.Arrays;
 import org.jetbrains.annotations.NotNull;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
 import jetbrains.mps.lang.core.behavior.BaseConcept__BehaviorDescriptor;
-import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 import org.jetbrains.mps.openapi.language.SContainmentLink;
@@ -23,17 +21,15 @@ import org.jetbrains.mps.openapi.language.SContainmentLink;
 public final class TagNegation__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getConcept(0x5186c6ce428c4f09L, 0xa9df73d9e86c27d3L, 0x1dcc29cc00ea5f01L, "org.iets3.core.expr.typetags.structure.TagNegation");
 
-  public static final SMethod<Boolean> isNegative_id1RcasK0SECn = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("isNegative").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(2147137078513805847L).languageId(0xa9df73d9e86c27d3L, 0x5186c6ce428c4f09L).build2();
-  public static final SMethod<SNode> getBaseTag_id1RcasK0UAlt = new SMethodBuilder<SNode>(new SJavaCompoundTypeImpl((Class<SNode>) ((Class) Object.class))).name("getBaseTag").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(2147137078514312541L).languageId(0xa9df73d9e86c27d3L, 0x5186c6ce428c4f09L).build2();
-  public static final SMethod<String> getPresentation_idhEwIMiw = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("getPresentation").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(1213877396640L).languageId(0x9b92103b95ca8c0cL, 0xceab519525ea4f22L).build2();
-  public static final SMethod<SAbstractConcept> getGroupingTagConcept_idx_aN5M65iL = new SMethodBuilder<SAbstractConcept>(new SJavaCompoundTypeImpl((Class<SAbstractConcept>) ((Class) Object.class))).name("getGroupingTagConcept").modifiers(9, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(604937216318788785L).languageId(0xa9df73d9e86c27d3L, 0x5186c6ce428c4f09L).build2();
-  public static final SMethod<Boolean> subsumes_id1RcasK0V7Pl = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("subsumes").modifiers(9, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(2147137078514449749L).languageId(0xa9df73d9e86c27d3L, 0x5186c6ce428c4f09L).build2(SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""), SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""));
-  public static final SMethod<SNode> getDefault_id1WJTL5jvcNW = new SMethodBuilder<SNode>(new SJavaCompoundTypeImpl((Class<SNode>) ((Class) Object.class))).name("getDefault").modifiers(9, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(2247268800682315004L).languageId(0xa9df73d9e86c27d3L, 0x5186c6ce428c4f09L).build2();
+  public static final SMethod<Boolean> isNegative_id1RcasK0SECn = new SMethodBuilder<>(Boolean.TYPE).name("isNegative").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(2147137078513805847L).languageId(0xa9df73d9e86c27d3L, 0x5186c6ce428c4f09L).build2();
+  public static final SMethod<SNode> getBaseTag_id1RcasK0UAlt = new SMethodBuilder<>(SNode.class).name("getBaseTag").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(2147137078514312541L).languageId(0xa9df73d9e86c27d3L, 0x5186c6ce428c4f09L).build2();
+  public static final SMethod<String> getPresentation_idhEwIMiw = new SMethodBuilder<>(String.class).name("getPresentation").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(1213877396640L).languageId(0x9b92103b95ca8c0cL, 0xceab519525ea4f22L).build2();
+  public static final SMethod<SAbstractConcept> getGroupingTagConcept_idx_aN5M65iL = new SMethodBuilder<>(SAbstractConcept.class).name("getGroupingTagConcept").modifiers(9, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(604937216318788785L).languageId(0xa9df73d9e86c27d3L, 0x5186c6ce428c4f09L).build2();
+  public static final SMethod<Boolean> subsumes_id1RcasK0V7Pl = new SMethodBuilder<>(Boolean.TYPE).name("subsumes").modifiers(9, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(2147137078514449749L).languageId(0xa9df73d9e86c27d3L, 0x5186c6ce428c4f09L).build2(SMethodBuilder.createJavaParameter(SNode.class, "sub"), SMethodBuilder.createJavaParameter(SNode.class, "sup"));
+  public static final SMethod<SNode> getDefault_id1WJTL5jvcNW = new SMethodBuilder<>(SNode.class).name("getDefault").modifiers(9, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(2247268800682315004L).languageId(0xa9df73d9e86c27d3L, 0x5186c6ce428c4f09L).build2();
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(isNegative_id1RcasK0SECn, getBaseTag_id1RcasK0UAlt, getPresentation_idhEwIMiw, getGroupingTagConcept_idx_aN5M65iL, subsumes_id1RcasK0V7Pl, getDefault_id1WJTL5jvcNW);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(isNegative_id1RcasK0SECn, getBaseTag_id1RcasK0UAlt, getPresentation_idhEwIMiw, getGroupingTagConcept_idx_aN5M65iL, subsumes_id1RcasK0V7Pl, getDefault_id1WJTL5jvcNW);
 
-  private static void ___init___(@NotNull SNode __thisNode__) {
-  }
 
   /*package*/ static boolean isNegative_id1RcasK0SECn(@NotNull SNode __thisNode__) {
     return true;
@@ -57,10 +53,6 @@ public final class TagNegation__BehaviorDescriptor extends BaseBHDescriptor {
   /*package*/ TagNegation__BehaviorDescriptor() {
   }
 
-  @Override
-  protected void initNode(@NotNull SNode node, @NotNull SConstructor constructor, @Nullable Object[] parameters) {
-    ___init___(node);
-  }
 
   @Override
   protected <T> T invokeSpecial0(@NotNull SNode node, @NotNull SMethod<T> method, @Nullable Object[] parameters) {

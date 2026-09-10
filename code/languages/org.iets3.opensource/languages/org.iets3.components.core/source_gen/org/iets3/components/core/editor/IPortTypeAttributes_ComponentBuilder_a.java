@@ -39,21 +39,18 @@ import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
   }
 
   /*package*/ EditorCell createCell() {
-    return createQueryList_1();
+    return createQueryList_0();
   }
 
-  private EditorCell createQueryList_0(final EditorContext editorContext, final SNode node) {
+  private EditorCell createQueryList_0() {
 
-    QueryListHandler handler = new QueryListHandler_px8b6l_a(editorContext, node, false);
+    QueryListHandler handler = new QueryListHandler_px8b6l_a(getEditorContext(), getNode(), false);
     EditorCell_QueryList editorCell = handler.createCells(new CellLayout_Horizontal());
     editorCell.setTargeConcept(CONCEPTS.Port$gs);
-    editorCell.setOwner(SNodeOperations.getConcept(node));
+    editorCell.setOwner(SNodeOperations.getConcept(getNode()));
     editorCell.setCellId("QueryList_px8b6l_a");
     return editorCell;
 
-  }
-  private EditorCell createQueryList_1() {
-    return createQueryList_0(getEditorContext(), myNode);
   }
   private static class QueryListHandler_px8b6l_a extends QueryListHandler {
     /**

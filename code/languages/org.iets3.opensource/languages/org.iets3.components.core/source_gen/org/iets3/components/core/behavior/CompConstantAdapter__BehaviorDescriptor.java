@@ -21,7 +21,7 @@ public final class CompConstantAdapter__BehaviorDescriptor extends BaseBHDescrip
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getConcept(0xf0fd486f857743e9L, 0xb6713d118449c6e7L, 0x3493a42991f6cdf7L, "org.iets3.components.core.structure.CompConstantAdapter");
 
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList();
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList();
 
   private static void ___init___(@NotNull SNode __thisNode__) {
     SLinkOperations.setTarget(__thisNode__, LINKS.toplevelExprContent$igxr, SConceptOperations.createNewNode(MetaAdapterFactory.getConcept(0x71934284d7d145eeL, 0xa0548c072591085fL, 0x62632b96c1b50dccL, "org.iets3.core.expr.toplevel.structure.Constant")));

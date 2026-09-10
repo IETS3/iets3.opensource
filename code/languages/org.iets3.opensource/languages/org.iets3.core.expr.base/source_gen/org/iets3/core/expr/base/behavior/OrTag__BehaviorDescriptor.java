@@ -8,25 +8,21 @@ import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import org.jetbrains.mps.openapi.model.SNode;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import java.util.List;
 import java.util.Arrays;
 import org.jetbrains.annotations.NotNull;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SConceptOperations;
-import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 
 public final class OrTag__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getConcept(0xcfaa4966b7d54b69L, 0xb66a309a6e1a7290L, 0x6f1c76e8c8b0c30dL, "org.iets3.core.expr.base.structure.OrTag");
 
-  public static final SMethod<SNode> buildOperator_id4CksDrmwfht = new SMethodBuilder<SNode>(new SJavaCompoundTypeImpl((Class<SNode>) ((Class) Object.class))).name("buildOperator").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5338017450510316637L).languageId(0xb66a309a6e1a7290L, 0xcfaa4966b7d54b69L).build2();
+  public static final SMethod<SNode> buildOperator_id4CksDrmwfht = new SMethodBuilder<>(SNode.class).name("buildOperator").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5338017450510316637L).languageId(0xb66a309a6e1a7290L, 0xcfaa4966b7d54b69L).build2();
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(buildOperator_id4CksDrmwfht);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(buildOperator_id4CksDrmwfht);
 
-  private static void ___init___(@NotNull SNode __thisNode__) {
-  }
 
   /*package*/ static SNode buildOperator_id4CksDrmwfht(@NotNull SNode __thisNode__) {
     return SConceptOperations.createNewNode(MetaAdapterFactory.getConcept(0xcfaa4966b7d54b69L, 0xb66a309a6e1a7290L, 0x46ff3b3d86cbdcbbL, "org.iets3.core.expr.base.structure.LogicalOrExpression"));
@@ -35,10 +31,6 @@ public final class OrTag__BehaviorDescriptor extends BaseBHDescriptor {
   /*package*/ OrTag__BehaviorDescriptor() {
   }
 
-  @Override
-  protected void initNode(@NotNull SNode node, @NotNull SConstructor constructor, @Nullable Object[] parameters) {
-    ___init___(node);
-  }
 
   @Override
   protected <T> T invokeSpecial0(@NotNull SNode node, @NotNull SMethod<T> method, @Nullable Object[] parameters) {

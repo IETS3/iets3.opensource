@@ -50,14 +50,14 @@ public class Traversals {
 
   /**
    * Will create a tree structure consisting of subclasses of Action. Each Action corresponds to a
-   * transformation of the configuration-tree which is not yet carried out. 
+   * transformation of the configuration-tree which is not yet carried out.
    */
   private KeepInlineConfig createActionAstFrom(SNode config) {
     return new KeepInlineConfig(SNodeOperations.present(config) + "", SNodeOperations.cast(SLinkOperations.getTarget(config, LINKS.content$Wdfq), CONCEPTS.InlineFeatureConfigurationContent$P5), ChildActions.childActionsByConfig(config));
   }
 
   /**
-   * At this point each Action knows if it will remove parts of the configuration-tree. 
+   * At this point each Action knows if it will remove parts of the configuration-tree.
    * In this call it will register those subtree-configurations for later reuse.
    */
   private void registerActionNodesByFeatureTo(ConfigurationExchange configurationExchange, Action rootAction) {

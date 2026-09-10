@@ -7,7 +7,6 @@ import org.jetbrains.mps.openapi.language.SAbstractConcept;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import org.jetbrains.mps.openapi.model.SNode;
 import java.util.List;
@@ -17,7 +16,6 @@ import org.iets3.core.expr.base.behavior.Expression__BehaviorDescriptor;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
 import jetbrains.mps.typechecking.TypecheckingFacade;
-import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 import org.jetbrains.mps.openapi.language.SContainmentLink;
@@ -27,16 +25,14 @@ import org.jetbrains.mps.openapi.language.SConcept;
 public final class FeatureDecTabContent__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getConcept(0xf08835038eaa4bc8L, 0x8846eb63220ab1ddL, 0x2de0d5b2023d497bL, "org.iets3.variability.artifacts.base.structure.FeatureDecTabContent");
 
-  public static final SMethod<String> getPresentation_idhEwIMiw = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("getPresentation").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(1213877396640L).languageId(0x9b92103b95ca8c0cL, 0xceab519525ea4f22L).build2();
-  public static final SMethod<String> nameForSolver_id3q2wVeozeaM = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("nameForSolver").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(3927846632402248370L).languageId(0x8846eb63220ab1ddL, 0xf08835038eaa4bc8L).build2();
-  public static final SMethod<SNode> artifactNode_id3q2wVepCV0v = new SMethodBuilder<SNode>(new SJavaCompoundTypeImpl((Class<SNode>) ((Class) Object.class))).name("artifactNode").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(3927846632420519967L).languageId(0x8846eb63220ab1ddL, 0xf08835038eaa4bc8L).build2();
-  public static final SMethod<SNode> artifactNodeData_id3PRltoWVL10 = new SMethodBuilder<SNode>(new SJavaCompoundTypeImpl((Class<SNode>) ((Class) Object.class))).name("artifactNodeData").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(4429103137175834688L).languageId(0x8846eb63220ab1ddL, 0xf08835038eaa4bc8L).build2();
-  public static final SMethod<SNode> getContextFeature_id30ECcbtSVMe = new SMethodBuilder<SNode>(new SJavaCompoundTypeImpl((Class<SNode>) ((Class) Object.class))).name("getContextFeature").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(3470763221649177742L).languageId(0x895e1424f54166ecL, 0x165f1d0525064544L).build2();
+  public static final SMethod<String> getPresentation_idhEwIMiw = new SMethodBuilder<>(String.class).name("getPresentation").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(1213877396640L).languageId(0x9b92103b95ca8c0cL, 0xceab519525ea4f22L).build2();
+  public static final SMethod<String> nameForSolver_id3q2wVeozeaM = new SMethodBuilder<>(String.class).name("nameForSolver").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(3927846632402248370L).languageId(0x8846eb63220ab1ddL, 0xf08835038eaa4bc8L).build2();
+  public static final SMethod<SNode> artifactNode_id3q2wVepCV0v = new SMethodBuilder<>(SNode.class).name("artifactNode").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(3927846632420519967L).languageId(0x8846eb63220ab1ddL, 0xf08835038eaa4bc8L).build2();
+  public static final SMethod<SNode> artifactNodeData_id3PRltoWVL10 = new SMethodBuilder<>(SNode.class).name("artifactNodeData").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(4429103137175834688L).languageId(0x8846eb63220ab1ddL, 0xf08835038eaa4bc8L).build2();
+  public static final SMethod<SNode> getContextFeature_id30ECcbtSVMe = new SMethodBuilder<>(SNode.class).name("getContextFeature").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(3470763221649177742L).languageId(0x895e1424f54166ecL, 0x165f1d0525064544L).build2();
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(getPresentation_idhEwIMiw, nameForSolver_id3q2wVeozeaM, artifactNode_id3q2wVepCV0v, artifactNodeData_id3PRltoWVL10, getContextFeature_id30ECcbtSVMe);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(getPresentation_idhEwIMiw, nameForSolver_id3q2wVeozeaM, artifactNode_id3q2wVepCV0v, artifactNodeData_id3PRltoWVL10, getContextFeature_id30ECcbtSVMe);
 
-  private static void ___init___(@NotNull SNode __thisNode__) {
-  }
 
   /*package*/ static String getPresentation_idhEwIMiw(@NotNull SNode __thisNode__) {
     return "FDTC(" + Expression__BehaviorDescriptor.renderReadable_id4Y0vh0cfqjE.invoke(SLinkOperations.getTarget(__thisNode__, LINKS.featureExpr$cJRc)) + ")";
@@ -58,10 +54,6 @@ public final class FeatureDecTabContent__BehaviorDescriptor extends BaseBHDescri
   /*package*/ FeatureDecTabContent__BehaviorDescriptor() {
   }
 
-  @Override
-  protected void initNode(@NotNull SNode node, @NotNull SConstructor constructor, @Nullable Object[] parameters) {
-    ___init___(node);
-  }
 
   @Override
   protected <T> T invokeSpecial0(@NotNull SNode node, @NotNull SMethod<T> method, @Nullable Object[] parameters) {

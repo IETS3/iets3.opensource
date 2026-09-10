@@ -8,7 +8,6 @@ import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import org.jetbrains.mps.openapi.model.SNode;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import org.jetbrains.mps.openapi.model.SNodeReference;
 import org.jetbrains.mps.openapi.module.SRepository;
@@ -19,7 +18,6 @@ import jetbrains.mps.lang.smodel.generator.smodelAdapter.SConceptOperations;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations;
 import org.jetbrains.mps.openapi.persistence.PersistenceFacade;
 import jetbrains.mps.smodel.SNodePointer;
-import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 import org.jetbrains.mps.openapi.language.SProperty;
@@ -27,14 +25,12 @@ import org.jetbrains.mps.openapi.language.SProperty;
 public final class OriginalNodeInfo__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getConcept(0x7b68d745a7b848b9L, 0xbd9c05c0f8725a35L, 0x78c6e76523c4363fL, "org.iets3.core.base.structure.OriginalNodeInfo");
 
-  public static final SMethod<SNode> create_id7z6TQkzOkZL = new SMethodBuilder<SNode>(new SJavaCompoundTypeImpl((Class<SNode>) ((Class) Object.class))).name("create").modifiers(1, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(8702897751518695409L).languageId(0xbd9c05c0f8725a35L, 0x7b68d745a7b848b9L).build2(SMethodBuilder.createJavaParameter(SNodeReference.class, ""));
-  public static final SMethod<SNodeReference> getNodeReference_id4uVwhQyQblY = new SMethodBuilder<SNodeReference>(new SJavaCompoundTypeImpl(SNodeReference.class)).name("getNodeReference").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5168866961623922046L).languageId(0xbd9c05c0f8725a35L, 0x7b68d745a7b848b9L).build2();
-  public static final SMethod<SNode> tryToFindNode_id6szrkDoc2UI = new SMethodBuilder<SNode>(new SJavaCompoundTypeImpl((Class<SNode>) ((Class) Object.class))).name("tryToFindNode").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(7431903976166010542L).languageId(0xbd9c05c0f8725a35L, 0x7b68d745a7b848b9L).build2(SMethodBuilder.createJavaParameter(SRepository.class, ""));
+  public static final SMethod<SNode> create_id7z6TQkzOkZL = new SMethodBuilder<>(SNode.class).name("create").modifiers(1, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(8702897751518695409L).languageId(0xbd9c05c0f8725a35L, 0x7b68d745a7b848b9L).build2(SMethodBuilder.createJavaParameter(SNodeReference.class, "nodeReference"));
+  public static final SMethod<SNodeReference> getNodeReference_id4uVwhQyQblY = new SMethodBuilder<>(SNodeReference.class).name("getNodeReference").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5168866961623922046L).languageId(0xbd9c05c0f8725a35L, 0x7b68d745a7b848b9L).build2();
+  public static final SMethod<SNode> tryToFindNode_id6szrkDoc2UI = new SMethodBuilder<>(SNode.class).name("tryToFindNode").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(7431903976166010542L).languageId(0xbd9c05c0f8725a35L, 0x7b68d745a7b848b9L).build2(SMethodBuilder.createJavaParameter(SRepository.class, "repository"));
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(create_id7z6TQkzOkZL, getNodeReference_id4uVwhQyQblY, tryToFindNode_id6szrkDoc2UI);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(create_id7z6TQkzOkZL, getNodeReference_id4uVwhQyQblY, tryToFindNode_id6szrkDoc2UI);
 
-  private static void ___init___(@NotNull SNode __thisNode__) {
-  }
 
   /*package*/ static SNode create_id7z6TQkzOkZL(@NotNull SAbstractConcept __thisConcept__, SNodeReference nodeReference) {
     SNode result = SConceptOperations.createNewNode(MetaAdapterFactory.getConcept(0x7b68d745a7b848b9L, 0xbd9c05c0f8725a35L, 0x78c6e76523c4363fL, "org.iets3.core.base.structure.OriginalNodeInfo"));
@@ -60,10 +56,6 @@ public final class OriginalNodeInfo__BehaviorDescriptor extends BaseBHDescriptor
   /*package*/ OriginalNodeInfo__BehaviorDescriptor() {
   }
 
-  @Override
-  protected void initNode(@NotNull SNode node, @NotNull SConstructor constructor, @Nullable Object[] parameters) {
-    ___init___(node);
-  }
 
   @Override
   protected <T> T invokeSpecial0(@NotNull SNode node, @NotNull SMethod<T> method, @Nullable Object[] parameters) {

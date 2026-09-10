@@ -7,7 +7,6 @@ import org.jetbrains.mps.openapi.language.SAbstractConcept;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import org.jetbrains.mps.openapi.model.SNode;
 import java.util.List;
@@ -20,7 +19,6 @@ import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SConceptOperations;
 import com.mbeddr.doc.behavior.TextParagraph__BehaviorDescriptor;
 import org.apache.commons.lang3.StringUtils;
-import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 import org.jetbrains.mps.openapi.language.SProperty;
@@ -31,22 +29,20 @@ import org.jetbrains.mps.openapi.language.SContainmentLink;
 public final class AbstractRequirement__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getConcept(0xa3c6f64241b744cbL, 0x951b463b8427a245L, 0x477d8ab2bc8195aeL, "org.iets3.req.core.structure.AbstractRequirement");
 
-  public static final SMethod<String> qualificationPath_id7Dcax7AecRI = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("qualificationPath").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(8812464827222511086L).languageId(0x951b463b8427a245L, 0xa3c6f64241b744cbL).build2();
-  public static final SMethod<String> getFqName_idhEwIO9y = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("getFqName").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(1213877404258L).languageId(0x9b92103b95ca8c0cL, 0xceab519525ea4f22L).build2();
-  public static final SMethod<SNode> addChild_id7Dcax7AeLVS = new SMethodBuilder<SNode>(new SJavaCompoundTypeImpl((Class<SNode>) ((Class) Object.class))).name("addChild").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(8812464827222662904L).languageId(0x951b463b8427a245L, 0xa3c6f64241b744cbL).build2();
-  public static final SMethod<SNode> addSibling_id7Dcax7AghL2 = new SMethodBuilder<SNode>(new SJavaCompoundTypeImpl((Class<SNode>) ((Class) Object.class))).name("addSibling").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(8812464827223055426L).languageId(0x951b463b8427a245L, 0xa3c6f64241b744cbL).build2();
-  public static final SMethod<SNode> prepareNewReq_id7Dcax7Agpw_ = new SMethodBuilder<SNode>(new SJavaCompoundTypeImpl((Class<SNode>) ((Class) Object.class))).name("prepareNewReq").modifiers(8, AccessPrivileges.PROTECTED).concept(CONCEPT).baseMethodId(8812464827223087141L).languageId(0x951b463b8427a245L, 0xa3c6f64241b744cbL).build2();
-  public static final SMethod<Void> initializeAddedReq_idaOl9Vl0j4a = new SMethodBuilder<Void>(new SJavaCompoundTypeImpl(Void.class)).name("initializeAddedReq").modifiers(8, AccessPrivileges.PROTECTED).concept(CONCEPT).baseMethodId(194873725038965002L).languageId(0x951b463b8427a245L, 0xa3c6f64241b744cbL).build2(SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""));
-  public static final SMethod<String> getNameFirstLetter_id7Kc02r7ViA5 = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("getNameFirstLetter").modifiers(8, AccessPrivileges.PROTECTED).concept(CONCEPT).baseMethodId(8938519526986557829L).languageId(0x951b463b8427a245L, 0xa3c6f64241b744cbL).build2();
-  public static final SMethod<String> getDisplayName_id7gL8KYmPHWW = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("getDisplayName").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(8372511732120608572L).languageId(0x951b463b8427a245L, 0xa3c6f64241b744cbL).build2();
-  public static final SMethod<Boolean> suppressTags_id6Q6YvW0IOIs = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("suppressTags").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(7892270270637624220L).languageId(0x951b463b8427a245L, 0xa3c6f64241b744cbL).build2();
-  public static final SMethod<String> getIndent_id4zL1IiCQnzF = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("getIndent").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5255989819273214187L).languageId(0x951b463b8427a245L, 0xa3c6f64241b744cbL).build2();
-  public static final SMethod<Boolean> showChildReqs_id4zL1IiCStbX = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("showChildReqs").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5255989819273761533L).languageId(0x951b463b8427a245L, 0xa3c6f64241b744cbL).build2();
+  public static final SMethod<String> qualificationPath_id7Dcax7AecRI = new SMethodBuilder<>(String.class).name("qualificationPath").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(8812464827222511086L).languageId(0x951b463b8427a245L, 0xa3c6f64241b744cbL).build2();
+  public static final SMethod<String> getFqName_idhEwIO9y = new SMethodBuilder<>(String.class).name("getFqName").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(1213877404258L).languageId(0x9b92103b95ca8c0cL, 0xceab519525ea4f22L).build2();
+  public static final SMethod<SNode> addChild_id7Dcax7AeLVS = new SMethodBuilder<>(SNode.class).name("addChild").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(8812464827222662904L).languageId(0x951b463b8427a245L, 0xa3c6f64241b744cbL).build2();
+  public static final SMethod<SNode> addSibling_id7Dcax7AghL2 = new SMethodBuilder<>(SNode.class).name("addSibling").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(8812464827223055426L).languageId(0x951b463b8427a245L, 0xa3c6f64241b744cbL).build2();
+  public static final SMethod<SNode> prepareNewReq_id7Dcax7Agpw_ = new SMethodBuilder<>(SNode.class).name("prepareNewReq").modifiers(8, AccessPrivileges.PROTECTED).concept(CONCEPT).baseMethodId(8812464827223087141L).languageId(0x951b463b8427a245L, 0xa3c6f64241b744cbL).build2();
+  public static final SMethod<Void> initializeAddedReq_idaOl9Vl0j4a = new SMethodBuilder<>(Void.TYPE).name("initializeAddedReq").modifiers(8, AccessPrivileges.PROTECTED).concept(CONCEPT).baseMethodId(194873725038965002L).languageId(0x951b463b8427a245L, 0xa3c6f64241b744cbL).build2(SMethodBuilder.createJavaParameter(SNode.class, "r"));
+  public static final SMethod<String> getNameFirstLetter_id7Kc02r7ViA5 = new SMethodBuilder<>(String.class).name("getNameFirstLetter").modifiers(8, AccessPrivileges.PROTECTED).concept(CONCEPT).baseMethodId(8938519526986557829L).languageId(0x951b463b8427a245L, 0xa3c6f64241b744cbL).build2();
+  public static final SMethod<String> getDisplayName_id7gL8KYmPHWW = new SMethodBuilder<>(String.class).name("getDisplayName").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(8372511732120608572L).languageId(0x951b463b8427a245L, 0xa3c6f64241b744cbL).build2();
+  public static final SMethod<Boolean> suppressTags_id6Q6YvW0IOIs = new SMethodBuilder<>(Boolean.TYPE).name("suppressTags").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(7892270270637624220L).languageId(0x951b463b8427a245L, 0xa3c6f64241b744cbL).build2();
+  public static final SMethod<String> getIndent_id4zL1IiCQnzF = new SMethodBuilder<>(String.class).name("getIndent").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5255989819273214187L).languageId(0x951b463b8427a245L, 0xa3c6f64241b744cbL).build2();
+  public static final SMethod<Boolean> showChildReqs_id4zL1IiCStbX = new SMethodBuilder<>(Boolean.TYPE).name("showChildReqs").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5255989819273761533L).languageId(0x951b463b8427a245L, 0xa3c6f64241b744cbL).build2();
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(qualificationPath_id7Dcax7AecRI, getFqName_idhEwIO9y, addChild_id7Dcax7AeLVS, addSibling_id7Dcax7AghL2, prepareNewReq_id7Dcax7Agpw_, initializeAddedReq_idaOl9Vl0j4a, getNameFirstLetter_id7Kc02r7ViA5, getDisplayName_id7gL8KYmPHWW, suppressTags_id6Q6YvW0IOIs, getIndent_id4zL1IiCQnzF, showChildReqs_id4zL1IiCStbX);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(qualificationPath_id7Dcax7AecRI, getFqName_idhEwIO9y, addChild_id7Dcax7AeLVS, addSibling_id7Dcax7AghL2, prepareNewReq_id7Dcax7Agpw_, initializeAddedReq_idaOl9Vl0j4a, getNameFirstLetter_id7Kc02r7ViA5, getDisplayName_id7gL8KYmPHWW, suppressTags_id6Q6YvW0IOIs, getIndent_id4zL1IiCQnzF, showChildReqs_id4zL1IiCStbX);
 
-  private static void ___init___(@NotNull SNode __thisNode__) {
-  }
 
   /*package*/ static String qualificationPath_id7Dcax7AecRI(@NotNull SNode __thisNode__) {
     if (SNodeOperations.isInstanceOf(SNodeOperations.getParent(__thisNode__), CONCEPTS.AbstractRequirement$yu)) {
@@ -108,10 +104,6 @@ public final class AbstractRequirement__BehaviorDescriptor extends BaseBHDescrip
   /*package*/ AbstractRequirement__BehaviorDescriptor() {
   }
 
-  @Override
-  protected void initNode(@NotNull SNode node, @NotNull SConstructor constructor, @Nullable Object[] parameters) {
-    ___init___(node);
-  }
 
   @Override
   protected <T> T invokeSpecial0(@NotNull SNode node, @NotNull SMethod<T> method, @Nullable Object[] parameters) {

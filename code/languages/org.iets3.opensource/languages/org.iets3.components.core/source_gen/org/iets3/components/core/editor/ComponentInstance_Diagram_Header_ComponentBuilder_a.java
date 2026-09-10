@@ -224,7 +224,7 @@ import org.jetbrains.mps.openapi.language.SConcept;
     alternationCondition = nodeCondition_axhdvn_a0a0();
     EditorCell editorCell = null;
     if (alternationCondition) {
-      editorCell = createQueryList_1();
+      editorCell = createQueryList_0();
     } else {
       editorCell = createRefNode_1();
     }
@@ -233,21 +233,18 @@ import org.jetbrains.mps.openapi.language.SConcept;
   private boolean nodeCondition_axhdvn_a0a0() {
     return (boolean) Component__BehaviorDescriptor.isNameEditableInDiagram_id2pYJ4piWiiW.invoke(SLinkOperations.getTarget(SLinkOperations.getTarget(myNode, LINKS.component$xlLY), LINKS.ref$KPLr));
   }
-  private EditorCell createQueryList_0(final EditorContext editorContext, final SNode node) {
+  private EditorCell createQueryList_0() {
 
-    QueryListHandler handler = new QueryListHandler_axhdvn_a0a0(editorContext, node, false);
+    QueryListHandler handler = new QueryListHandler_axhdvn_a0a0(getEditorContext(), getNode(), false);
     EditorCell_QueryList editorCell = handler.createCells(new CellLayout_Horizontal());
     editorCell.setTargeConcept(CONCEPTS.Component$gR);
-    editorCell.setOwner(SNodeOperations.getConcept(node));
+    editorCell.setOwner(SNodeOperations.getConcept(getNode()));
     editorCell.setCellId("QueryList_axhdvn_a0a0");
     Style style = new StyleImpl();
     style.set(StyleAttributes.FONT_STYLE, MPSFonts.BOLD);
     editorCell.getStyle().putAll(style);
     return editorCell;
 
-  }
-  private EditorCell createQueryList_1() {
-    return createQueryList_0(getEditorContext(), myNode);
   }
   private static class QueryListHandler_axhdvn_a0a0 extends QueryListHandler {
     /**

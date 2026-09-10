@@ -12,9 +12,6 @@ import org.jetbrains.mps.openapi.language.SInterfaceConcept;
 import org.jetbrains.mps.openapi.language.SContainmentLink;
 import org.jetbrains.mps.openapi.language.SReferenceLink;
 
-/**
- * 
- */
 public class ConversionHelper {
 
   public static SNode makeConvertToTarget(SNode expr, SNode targetUnit, SNode context) {

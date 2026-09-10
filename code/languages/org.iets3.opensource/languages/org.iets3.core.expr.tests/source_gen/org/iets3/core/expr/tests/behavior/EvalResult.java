@@ -13,49 +13,49 @@ public class EvalResult implements IEvalResult {
 
   /**
    * 
-   * @deprecated use {@link org.iets3.core.expr.tests.behavior.EvalResult#getActual() } / {@link org.iets3.core.expr.tests.behavior.EvalResult#setActual(Object) }
+   * @deprecated use {@link org.iets3.core.expr.tests.behavior.EvalResult#getActual()} / {@link org.iets3.core.expr.tests.behavior.EvalResult#setActual(Object)} 
    */
   @Deprecated
   public Object actual;
 
   /**
    * 
-   * @deprecated use {@link org.iets3.core.expr.tests.behavior.EvalResult#isOk() } / {@link org.iets3.core.expr.tests.behavior.EvalResult#setOk(boolean) }
+   * @deprecated use {@link org.iets3.core.expr.tests.behavior.EvalResult#isOk()} / {@link org.iets3.core.expr.tests.behavior.EvalResult#setOk(boolean)} 
    */
   @Deprecated
   public boolean ok;
 
   /**
    * 
-   * @deprecated use {@link org.iets3.core.expr.tests.behavior.EvalResult#getTime() } / {@link org.iets3.core.expr.tests.behavior.EvalResult#setTime(long) }
+   * @deprecated use {@link org.iets3.core.expr.tests.behavior.EvalResult#getTime()} / {@link org.iets3.core.expr.tests.behavior.EvalResult#setTime(long)} 
    */
   @Deprecated
   public long time;
 
   /**
    * 
-   * @deprecated use {@link org.iets3.core.expr.tests.behavior.EvalResult#getErrorMessage() } / {@link org.iets3.core.expr.tests.behavior.EvalResult#setErrorMessage(MessageValue) }
+   * @deprecated use {@link org.iets3.core.expr.tests.behavior.EvalResult#getErrorMessage()} / {@link org.iets3.core.expr.tests.behavior.EvalResult#setErrorMessage(MessageValue)} 
    */
   @Deprecated
   public MessageValue errorMessage;
 
   /**
    * 
-   * @deprecated use {@link org.iets3.core.expr.tests.behavior.EvalResult#getTrace() } / {@link org.iets3.core.expr.tests.behavior.EvalResult#setTrace(ComputationTrace) }
+   * @deprecated use {@link org.iets3.core.expr.tests.behavior.EvalResult#getTrace()} / {@link org.iets3.core.expr.tests.behavior.EvalResult#setTrace(ComputationTrace)} 
    */
   @Deprecated
   public ComputationTrace trace;
 
   /**
    * 
-   * @deprecated use {@link org.iets3.core.expr.tests.behavior.EvalResult#getException() } / {@link org.iets3.core.expr.tests.behavior.EvalResult#setException(Throwable) }
+   * @deprecated use {@link org.iets3.core.expr.tests.behavior.EvalResult#getException()} / {@link org.iets3.core.expr.tests.behavior.EvalResult#setException(Throwable)} 
    */
   @Deprecated
   public Throwable exception;
 
   /**
    * 
-   * @deprecated use {@link org.iets3.core.expr.tests.behavior.EvalResult#getCoverage() } / {@link org.iets3.core.expr.tests.behavior.EvalResult#setCoverage(ICoverageAnalyzer) }
+   * @deprecated use {@link org.iets3.core.expr.tests.behavior.EvalResult#getCoverage()} / {@link org.iets3.core.expr.tests.behavior.EvalResult#setCoverage(ICoverageAnalyzer)} 
    */
   @Nullable
   @Deprecated
