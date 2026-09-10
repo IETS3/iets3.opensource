@@ -6,12 +6,17 @@ Format of the log is _loosely_ based on [Keep a Changelog](https://keepachangelo
 The project does _not_ follow Semantic Versioning and the changes are documented in reverse chronological order, grouped by calendar month.
 
 ## September 2026
+### Changed
+- KernelF: `EnumLiteral` now implements `ISmartReferent` and derives its `resolveInfo` from the same presentation (qualified for a qualified enum, bare otherwise), so completion, the editor cell and `renderReadable()` agree. The hand-written `EnumLiteralRef` substitute menus and the qualified filter in its scope were dropped in favour of the smart-reference machinery MPS generates. The auxiliary concept `QualifierRef` was removed; it had no instances and was never part of a valid model, so no migration is required.
 
 ### Fixed
+- KernelF: an exception thrown by the interpreter no longer costs the whole trace. `Show Trace` now opens with everything that was computed before the exception, and the node that threw is marked with the exception and highlighted in the trace tree. This covers the generic trace roots (functions, constants, function calls) as well as the test items, whose `catch` branches used to drop the trace.
 - KernelF: `renderReadable()` of the `isIn`/`isNotIn` enumeration dot targets rendered `isIn([, , ])` instead of `isIn(blue, green, red)`: the separator was joined onto each selector's presentation instead of onto the sequence, which resolved to the varargs `String.join(CharSequence, CharSequence...)` with no elements.
 - KernelF: the `is`/`isIn` enumeration dot targets are backwards compatible with models that have not run the "move link up" migration of the `EnumIsTarget`/`EnumIsInTarget` refactoring yet. `EnumIsTarget` and `EnumIsInTarget` now have their own editors that show the deprecated `literal_old`/`selectors_old` elements in red, hidden as soon as the deprecated reference/child is empty. Behavior, generator and interpreter read the value through the new `AbstractEnumSingleInTarget.effectiveLiteral()`/`AbstractEnumInTarget.effectiveSelectors()` behavior methods, which the two legacy concepts override to fall back to the deprecated link, so an unmigrated model still renders, interprets and generates correctly.
 - KernelF: `RecordValue` no longer throws a `NullPointerException` from `equals` or `compareTo` when a record member has no value, nor from `compareTo` for inline records, which carry no record declaration. `equals`, `hashCode` and `compareTo` are consistent with each other again, so record values behave correctly in Java-side hash-based and sorted collections.
+- KernelF: a broken reference to a literal of a qualified enum no longer rebinds to a same-named literal of a different enum, because the persisted `resolve=` info now carries the qualified name instead of the simple one.
 - KernelF: entries in the trace explorer are no longer truncated after a very low character limit, which made traces hard to read. The limit was raised and the tooltip now shows the full, untruncated text.
+
 
 ## August 2026
 

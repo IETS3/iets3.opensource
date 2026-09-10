@@ -49,9 +49,20 @@ public final class ITraceRoot__BehaviorDescriptor extends BaseBHDescriptor {
     final SNode n = __thisNode__;
     final ITraceRerunner runner = new ITraceRerunner() {
       public IRerunnableTraceRecord rerun() {
-        IValueAndTraceAndEnv result = new IETS3ExprEvaluator().withComputationTrace(true).evaluate(n);
-        ComputationTrace trace = result.getTrace();
-        trace.setRerunner(this);
+        IETS3ExprEvaluator evaluator = new IETS3ExprEvaluator().withComputationTrace(true);
+        ComputationTrace trace;
+        try {
+          IValueAndTraceAndEnv result = evaluator.evaluate(n);
+          trace = result.getTrace();
+        } catch (Throwable t) {
+          // An exception must not cost the whole trace: show what was computed before it,
+          // with the node that threw marked as the failure.
+          t.printStackTrace();
+          trace = TraceFailures.traceForFailure(n, evaluator.getLastLog(), t);
+        }
+        if (trace != null) {
+          trace.setRerunner(this);
+        }
         return trace;
       }
     };
