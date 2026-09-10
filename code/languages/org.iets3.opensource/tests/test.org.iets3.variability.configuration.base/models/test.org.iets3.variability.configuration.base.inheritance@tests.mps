@@ -26,7 +26,9 @@
       <concept id="1215507671101" name="jetbrains.mps.lang.test.structure.NodeErrorCheckOperation" flags="ng" index="1TM$A">
         <child id="8489045168660938517" name="errorRef" index="3lydEf" />
       </concept>
-      <concept id="1215511704609" name="jetbrains.mps.lang.test.structure.NodeWarningCheckOperation" flags="ng" index="29bkU" />
+      <concept id="1215511704609" name="jetbrains.mps.lang.test.structure.NodeWarningCheckOperation" flags="ng" index="29bkU">
+        <child id="8489045168660938635" name="warningRef" index="3lydCh" />
+      </concept>
       <concept id="1215603922101" name="jetbrains.mps.lang.test.structure.NodeOperationsContainer" flags="ng" index="7CXmI">
         <child id="1215604436604" name="nodeOperations" index="7EUXB" />
       </concept>
@@ -40,6 +42,7 @@
         <child id="1211979305365" name="before" index="JA92f" />
         <child id="1211979322383" name="after" index="JAdkl" />
       </concept>
+      <concept id="4531408400486526326" name="jetbrains.mps.lang.test.structure.WarningStatementReference" flags="ng" index="2PQEqo" />
       <concept id="4531408400484511853" name="jetbrains.mps.lang.test.structure.ReportErrorStatementReference" flags="ng" index="2PYRI3" />
       <concept id="1216913645126" name="jetbrains.mps.lang.test.structure.NodesTestCase" flags="lg" index="1lH9Xt">
         <property id="2616911529524314943" name="accessMode" index="3DII0k" />
@@ -6199,7 +6202,11 @@
           <property role="1nQUAq" value="true" />
           <ref role="rqKBe" node="4dXLrdfqOQY" resolve="FM1" />
           <node concept="7CXmI" id="ZsB2gD_zZi" role="lGtFl">
-            <node concept="29bkU" id="ZsB2gD_zZm" role="7EUXB" />
+            <node concept="29bkU" id="ZsB2gD_zZm" role="7EUXB">
+              <node concept="2PQEqo" id="2y1qxAP_BIQ" role="3lydCh">
+                <ref role="39XzEq" to="urik:34IieWHir4z" />
+              </node>
+            </node>
           </node>
           <node concept="rqCGG" id="71MKgCw6Tjw" role="rqCGo">
             <node concept="rqKBd" id="71MKgCw6Tjx" role="rqKBa">
