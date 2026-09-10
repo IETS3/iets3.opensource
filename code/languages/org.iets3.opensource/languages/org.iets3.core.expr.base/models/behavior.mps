@@ -364,16 +364,12 @@
         <child id="6971016359099801474" name="commentBody" index="2JaDBN" />
       </concept>
       <concept id="5349172909345501395" name="jetbrains.mps.baseLanguage.javadoc.structure.BaseDocComment" flags="ng" index="P$AiS">
-        <child id="8465538089690331502" name="body" index="TZ5H$" />
         <child id="5383422241790532083" name="tags" index="3nqlJM" />
       </concept>
       <concept id="5349172909345532724" name="jetbrains.mps.baseLanguage.javadoc.structure.MethodDocComment" flags="ng" index="P$JXv" />
       <concept id="8465538089690881930" name="jetbrains.mps.baseLanguage.javadoc.structure.ParameterBlockDocTag" flags="ng" index="TUZQ0">
         <property id="8465538089690881934" name="text" index="TUZQ4" />
         <child id="6832197706140518123" name="parameter" index="zr_5Q" />
-      </concept>
-      <concept id="8465538089690331500" name="jetbrains.mps.baseLanguage.javadoc.structure.CommentLine" flags="ng" index="TZ5HA">
-        <child id="8970989240999019149" name="part" index="1dT_Ay" />
       </concept>
       <concept id="8465538089690331492" name="jetbrains.mps.baseLanguage.javadoc.structure.DeprecatedBlockDocTag" flags="ng" index="TZ5HI" />
       <concept id="2217234381367190443" name="jetbrains.mps.baseLanguage.javadoc.structure.SeeBlockDocTag" flags="ng" index="VUp57">
@@ -388,9 +384,6 @@
       </concept>
       <concept id="5562345046718956738" name="jetbrains.mps.baseLanguage.javadoc.structure.BaseVariableDocReference" flags="ng" index="YTMYr">
         <reference id="5562345046718956740" name="declaration" index="YTMYt" />
-      </concept>
-      <concept id="8970989240999019143" name="jetbrains.mps.baseLanguage.javadoc.structure.TextCommentLinePart" flags="ng" index="1dT_AC">
-        <property id="8970989240999019144" name="text" index="1dT_AB" />
       </concept>
       <concept id="6501140109493894267" name="jetbrains.mps.baseLanguage.javadoc.structure.StaticFieldDocReference" flags="ng" index="1RlsK7" />
       <concept id="2068944020170241612" name="jetbrains.mps.baseLanguage.javadoc.structure.ClassifierDocComment" flags="ng" index="3UR2Jj" />
@@ -34244,34 +34237,271 @@
         </node>
       </node>
       <node concept="P$JXv" id="48Zi1gzgsFA" role="lGtFl">
-        <node concept="TZ5HA" id="48Zi1gzgsFB" role="TZ5H$">
-          <node concept="1dT_AC" id="48Zi1gzgsFC" role="1dT_Ay">
-            <property role="1dT_AB" value="Locates the trace record of the node whose evaluation threw t and marks it as the failure," />
+        <node concept="1PaTwC" id="61FnnmeBu6k" role="1Vez_I">
+          <node concept="3oM_SD" id="61FnnmeBu6l" role="1PaTwD">
+            <property role="3oM_SC" value="Locates" />
+          </node>
+          <node concept="3oM_SD" id="61FnnmeBu6m" role="1PaTwD">
+            <property role="3oM_SC" value="the" />
+          </node>
+          <node concept="3oM_SD" id="61FnnmeBu6n" role="1PaTwD">
+            <property role="3oM_SC" value="trace" />
+          </node>
+          <node concept="3oM_SD" id="61FnnmeBu6o" role="1PaTwD">
+            <property role="3oM_SC" value="record" />
+          </node>
+          <node concept="3oM_SD" id="61FnnmeBu6p" role="1PaTwD">
+            <property role="3oM_SC" value="of" />
+          </node>
+          <node concept="3oM_SD" id="61FnnmeBu6q" role="1PaTwD">
+            <property role="3oM_SC" value="the" />
+          </node>
+          <node concept="3oM_SD" id="61FnnmeBu6r" role="1PaTwD">
+            <property role="3oM_SC" value="node" />
+          </node>
+          <node concept="3oM_SD" id="61FnnmeBu6s" role="1PaTwD">
+            <property role="3oM_SC" value="whose" />
+          </node>
+          <node concept="3oM_SD" id="61FnnmeBu6t" role="1PaTwD">
+            <property role="3oM_SC" value="evaluation" />
+          </node>
+          <node concept="3oM_SD" id="61FnnmeBu6u" role="1PaTwD">
+            <property role="3oM_SC" value="threw" />
+          </node>
+          <node concept="3oM_SD" id="61FnnmeBu6v" role="1PaTwD">
+            <property role="3oM_SC" value="t" />
+          </node>
+          <node concept="3oM_SD" id="61FnnmeBu6w" role="1PaTwD">
+            <property role="3oM_SC" value="and" />
+          </node>
+          <node concept="3oM_SD" id="61FnnmeBu6x" role="1PaTwD">
+            <property role="3oM_SC" value="marks" />
+          </node>
+          <node concept="3oM_SD" id="61FnnmeBu6y" role="1PaTwD">
+            <property role="3oM_SC" value="it" />
+          </node>
+          <node concept="3oM_SD" id="61FnnmeBu6z" role="1PaTwD">
+            <property role="3oM_SC" value="as" />
+          </node>
+          <node concept="3oM_SD" id="61FnnmeBu6$" role="1PaTwD">
+            <property role="3oM_SC" value="the" />
+          </node>
+          <node concept="3oM_SD" id="61FnnmeBu6_" role="1PaTwD">
+            <property role="3oM_SC" value="failure," />
           </node>
         </node>
-        <node concept="TZ5HA" id="48Zi1gzgsFD" role="TZ5H$">
-          <node concept="1dT_AC" id="48Zi1gzgsFE" role="1dT_Ay">
-            <property role="1dT_AB" value="so that the trace explorer renders it in red and its filters do not drop it." />
+        <node concept="1PaTwC" id="61FnnmeBu6A" role="1Vez_I">
+          <node concept="3oM_SD" id="61FnnmeBu6B" role="1PaTwD">
+            <property role="3oM_SC" value="so" />
+          </node>
+          <node concept="3oM_SD" id="61FnnmeBu6C" role="1PaTwD">
+            <property role="3oM_SC" value="that" />
+          </node>
+          <node concept="3oM_SD" id="61FnnmeBu6D" role="1PaTwD">
+            <property role="3oM_SC" value="the" />
+          </node>
+          <node concept="3oM_SD" id="61FnnmeBu6E" role="1PaTwD">
+            <property role="3oM_SC" value="trace" />
+          </node>
+          <node concept="3oM_SD" id="61FnnmeBu6F" role="1PaTwD">
+            <property role="3oM_SC" value="explorer" />
+          </node>
+          <node concept="3oM_SD" id="61FnnmeBu6G" role="1PaTwD">
+            <property role="3oM_SC" value="renders" />
+          </node>
+          <node concept="3oM_SD" id="61FnnmeBu6H" role="1PaTwD">
+            <property role="3oM_SC" value="it" />
+          </node>
+          <node concept="3oM_SD" id="61FnnmeBu6I" role="1PaTwD">
+            <property role="3oM_SC" value="in" />
+          </node>
+          <node concept="3oM_SD" id="61FnnmeBu6J" role="1PaTwD">
+            <property role="3oM_SC" value="red" />
+          </node>
+          <node concept="3oM_SD" id="61FnnmeBu6K" role="1PaTwD">
+            <property role="3oM_SC" value="and" />
+          </node>
+          <node concept="3oM_SD" id="61FnnmeBu6L" role="1PaTwD">
+            <property role="3oM_SC" value="its" />
+          </node>
+          <node concept="3oM_SD" id="61FnnmeBu6M" role="1PaTwD">
+            <property role="3oM_SC" value="filters" />
+          </node>
+          <node concept="3oM_SD" id="61FnnmeBu6N" role="1PaTwD">
+            <property role="3oM_SC" value="do" />
+          </node>
+          <node concept="3oM_SD" id="61FnnmeBu6O" role="1PaTwD">
+            <property role="3oM_SC" value="not" />
+          </node>
+          <node concept="3oM_SD" id="61FnnmeBu6P" role="1PaTwD">
+            <property role="3oM_SC" value="drop" />
+          </node>
+          <node concept="3oM_SD" id="61FnnmeBu6Q" role="1PaTwD">
+            <property role="3oM_SC" value="it." />
           </node>
         </node>
-        <node concept="TZ5HA" id="48Zi1gzgsFF" role="TZ5H$">
-          <node concept="1dT_AC" id="48Zi1gzgsFG" role="1dT_Ay">
-            <property role="1dT_AB" value="The interpreter wraps whatever escapes an evaluator into an InterpreterRuntimeException that" />
+        <node concept="1PaTwC" id="61FnnmeBu6R" role="1Vez_I">
+          <node concept="3oM_SD" id="61FnnmeBu6S" role="1PaTwD">
+            <property role="3oM_SC" value="The" />
+          </node>
+          <node concept="3oM_SD" id="61FnnmeBu6T" role="1PaTwD">
+            <property role="3oM_SC" value="interpreter" />
+          </node>
+          <node concept="3oM_SD" id="61FnnmeBu6U" role="1PaTwD">
+            <property role="3oM_SC" value="wraps" />
+          </node>
+          <node concept="3oM_SD" id="61FnnmeBu6V" role="1PaTwD">
+            <property role="3oM_SC" value="whatever" />
+          </node>
+          <node concept="3oM_SD" id="61FnnmeBu6W" role="1PaTwD">
+            <property role="3oM_SC" value="escapes" />
+          </node>
+          <node concept="3oM_SD" id="61FnnmeBu6X" role="1PaTwD">
+            <property role="3oM_SC" value="an" />
+          </node>
+          <node concept="3oM_SD" id="61FnnmeBu6Y" role="1PaTwD">
+            <property role="3oM_SC" value="evaluator" />
+          </node>
+          <node concept="3oM_SD" id="61FnnmeBu6Z" role="1PaTwD">
+            <property role="3oM_SC" value="into" />
+          </node>
+          <node concept="3oM_SD" id="61FnnmeBu70" role="1PaTwD">
+            <property role="3oM_SC" value="an" />
+          </node>
+          <node concept="3oM_SD" id="61FnnmeBu71" role="1PaTwD">
+            <property role="3oM_SC" value="InterpreterRuntimeException" />
+          </node>
+          <node concept="3oM_SD" id="61FnnmeBu72" role="1PaTwD">
+            <property role="3oM_SC" value="that" />
           </node>
         </node>
-        <node concept="TZ5HA" id="48Zi1gzgsFH" role="TZ5H$">
-          <node concept="1dT_AC" id="48Zi1gzgsFI" role="1dT_Ay">
-            <property role="1dT_AB" value="knows the node and its trace record, and every enclosing evaluator wraps that again, so the" />
+        <node concept="1PaTwC" id="61FnnmeBu73" role="1Vez_I">
+          <node concept="3oM_SD" id="61FnnmeBu74" role="1PaTwD">
+            <property role="3oM_SC" value="knows" />
+          </node>
+          <node concept="3oM_SD" id="61FnnmeBu75" role="1PaTwD">
+            <property role="3oM_SC" value="the" />
+          </node>
+          <node concept="3oM_SD" id="61FnnmeBu76" role="1PaTwD">
+            <property role="3oM_SC" value="node" />
+          </node>
+          <node concept="3oM_SD" id="61FnnmeBu77" role="1PaTwD">
+            <property role="3oM_SC" value="and" />
+          </node>
+          <node concept="3oM_SD" id="61FnnmeBu78" role="1PaTwD">
+            <property role="3oM_SC" value="its" />
+          </node>
+          <node concept="3oM_SD" id="61FnnmeBu79" role="1PaTwD">
+            <property role="3oM_SC" value="trace" />
+          </node>
+          <node concept="3oM_SD" id="61FnnmeBu7a" role="1PaTwD">
+            <property role="3oM_SC" value="record," />
+          </node>
+          <node concept="3oM_SD" id="61FnnmeBu7b" role="1PaTwD">
+            <property role="3oM_SC" value="and" />
+          </node>
+          <node concept="3oM_SD" id="61FnnmeBu7c" role="1PaTwD">
+            <property role="3oM_SC" value="every" />
+          </node>
+          <node concept="3oM_SD" id="61FnnmeBu7d" role="1PaTwD">
+            <property role="3oM_SC" value="enclosing" />
+          </node>
+          <node concept="3oM_SD" id="61FnnmeBu7e" role="1PaTwD">
+            <property role="3oM_SC" value="evaluator" />
+          </node>
+          <node concept="3oM_SD" id="61FnnmeBu7f" role="1PaTwD">
+            <property role="3oM_SC" value="wraps" />
+          </node>
+          <node concept="3oM_SD" id="61FnnmeBu7g" role="1PaTwD">
+            <property role="3oM_SC" value="that" />
+          </node>
+          <node concept="3oM_SD" id="61FnnmeBu7h" role="1PaTwD">
+            <property role="3oM_SC" value="again," />
+          </node>
+          <node concept="3oM_SD" id="61FnnmeBu7i" role="1PaTwD">
+            <property role="3oM_SC" value="so" />
+          </node>
+          <node concept="3oM_SD" id="61FnnmeBu7j" role="1PaTwD">
+            <property role="3oM_SC" value="the" />
           </node>
         </node>
-        <node concept="TZ5HA" id="48Zi1gzgsFJ" role="TZ5H$">
-          <node concept="1dT_AC" id="48Zi1gzgsFK" role="1dT_Ay">
-            <property role="1dT_AB" value="record of the node that actually threw is the last one along the cause chain." />
+        <node concept="1PaTwC" id="61FnnmeBu7k" role="1Vez_I">
+          <node concept="3oM_SD" id="61FnnmeBu7l" role="1PaTwD">
+            <property role="3oM_SC" value="record" />
+          </node>
+          <node concept="3oM_SD" id="61FnnmeBu7m" role="1PaTwD">
+            <property role="3oM_SC" value="of" />
+          </node>
+          <node concept="3oM_SD" id="61FnnmeBu7n" role="1PaTwD">
+            <property role="3oM_SC" value="the" />
+          </node>
+          <node concept="3oM_SD" id="61FnnmeBu7o" role="1PaTwD">
+            <property role="3oM_SC" value="node" />
+          </node>
+          <node concept="3oM_SD" id="61FnnmeBu7p" role="1PaTwD">
+            <property role="3oM_SC" value="that" />
+          </node>
+          <node concept="3oM_SD" id="61FnnmeBu7q" role="1PaTwD">
+            <property role="3oM_SC" value="actually" />
+          </node>
+          <node concept="3oM_SD" id="61FnnmeBu7r" role="1PaTwD">
+            <property role="3oM_SC" value="threw" />
+          </node>
+          <node concept="3oM_SD" id="61FnnmeBu7s" role="1PaTwD">
+            <property role="3oM_SC" value="is" />
+          </node>
+          <node concept="3oM_SD" id="61FnnmeBu7t" role="1PaTwD">
+            <property role="3oM_SC" value="the" />
+          </node>
+          <node concept="3oM_SD" id="61FnnmeBu7u" role="1PaTwD">
+            <property role="3oM_SC" value="last" />
+          </node>
+          <node concept="3oM_SD" id="61FnnmeBu7v" role="1PaTwD">
+            <property role="3oM_SC" value="one" />
+          </node>
+          <node concept="3oM_SD" id="61FnnmeBu7w" role="1PaTwD">
+            <property role="3oM_SC" value="along" />
+          </node>
+          <node concept="3oM_SD" id="61FnnmeBu7x" role="1PaTwD">
+            <property role="3oM_SC" value="the" />
+          </node>
+          <node concept="3oM_SD" id="61FnnmeBu7y" role="1PaTwD">
+            <property role="3oM_SC" value="cause" />
+          </node>
+          <node concept="3oM_SD" id="61FnnmeBu7z" role="1PaTwD">
+            <property role="3oM_SC" value="chain." />
           </node>
         </node>
-        <node concept="TZ5HA" id="48Zi1gzgsFL" role="TZ5H$">
-          <node concept="1dT_AC" id="48Zi1gzgsFM" role="1dT_Ay">
-            <property role="1dT_AB" value="Returns null if t carries no trace record at all." />
+        <node concept="1PaTwC" id="61FnnmeBu7$" role="1Vez_I">
+          <node concept="3oM_SD" id="61FnnmeBu7_" role="1PaTwD">
+            <property role="3oM_SC" value="Returns" />
+          </node>
+          <node concept="3oM_SD" id="61FnnmeBu7A" role="1PaTwD">
+            <property role="3oM_SC" value="null" />
+          </node>
+          <node concept="3oM_SD" id="61FnnmeBu7B" role="1PaTwD">
+            <property role="3oM_SC" value="if" />
+          </node>
+          <node concept="3oM_SD" id="61FnnmeBu7C" role="1PaTwD">
+            <property role="3oM_SC" value="t" />
+          </node>
+          <node concept="3oM_SD" id="61FnnmeBu7D" role="1PaTwD">
+            <property role="3oM_SC" value="carries" />
+          </node>
+          <node concept="3oM_SD" id="61FnnmeBu7E" role="1PaTwD">
+            <property role="3oM_SC" value="no" />
+          </node>
+          <node concept="3oM_SD" id="61FnnmeBu7F" role="1PaTwD">
+            <property role="3oM_SC" value="trace" />
+          </node>
+          <node concept="3oM_SD" id="61FnnmeBu7G" role="1PaTwD">
+            <property role="3oM_SC" value="record" />
+          </node>
+          <node concept="3oM_SD" id="61FnnmeBu7H" role="1PaTwD">
+            <property role="3oM_SC" value="at" />
+          </node>
+          <node concept="3oM_SD" id="61FnnmeBu7I" role="1PaTwD">
+            <property role="3oM_SC" value="all." />
           </node>
         </node>
       </node>
@@ -34506,24 +34736,177 @@
         </node>
       </node>
       <node concept="P$JXv" id="48Zi1gzgsFN" role="lGtFl">
-        <node concept="TZ5HA" id="48Zi1gzgsFO" role="TZ5H$">
-          <node concept="1dT_AC" id="48Zi1gzgsFP" role="1dT_Ay">
-            <property role="1dT_AB" value="The root trace to show after t has aborted an evaluation; never null." />
+        <node concept="1PaTwC" id="61FnnmeBu7J" role="1Vez_I">
+          <node concept="3oM_SD" id="61FnnmeBu7K" role="1PaTwD">
+            <property role="3oM_SC" value="The" />
+          </node>
+          <node concept="3oM_SD" id="61FnnmeBu7L" role="1PaTwD">
+            <property role="3oM_SC" value="root" />
+          </node>
+          <node concept="3oM_SD" id="61FnnmeBu7M" role="1PaTwD">
+            <property role="3oM_SC" value="trace" />
+          </node>
+          <node concept="3oM_SD" id="61FnnmeBu7N" role="1PaTwD">
+            <property role="3oM_SC" value="to" />
+          </node>
+          <node concept="3oM_SD" id="61FnnmeBu7O" role="1PaTwD">
+            <property role="3oM_SC" value="show" />
+          </node>
+          <node concept="3oM_SD" id="61FnnmeBu7P" role="1PaTwD">
+            <property role="3oM_SC" value="after" />
+          </node>
+          <node concept="3oM_SD" id="61FnnmeBu7Q" role="1PaTwD">
+            <property role="3oM_SC" value="t" />
+          </node>
+          <node concept="3oM_SD" id="61FnnmeBu7R" role="1PaTwD">
+            <property role="3oM_SC" value="has" />
+          </node>
+          <node concept="3oM_SD" id="61FnnmeBu7S" role="1PaTwD">
+            <property role="3oM_SC" value="aborted" />
+          </node>
+          <node concept="3oM_SD" id="61FnnmeBu7T" role="1PaTwD">
+            <property role="3oM_SC" value="an" />
+          </node>
+          <node concept="3oM_SD" id="61FnnmeBu7U" role="1PaTwD">
+            <property role="3oM_SC" value="evaluation;" />
+          </node>
+          <node concept="3oM_SD" id="61FnnmeBu7V" role="1PaTwD">
+            <property role="3oM_SC" value="never" />
+          </node>
+          <node concept="3oM_SD" id="61FnnmeBu7W" role="1PaTwD">
+            <property role="3oM_SC" value="null." />
           </node>
         </node>
-        <node concept="TZ5HA" id="48Zi1gzgsFQ" role="TZ5H$">
-          <node concept="1dT_AC" id="48Zi1gzgsFR" role="1dT_Ay">
-            <property role="1dT_AB" value="Everything that was computed before the exception is already in the trace, because the record" />
+        <node concept="1PaTwC" id="61FnnmeBu7X" role="1Vez_I">
+          <node concept="3oM_SD" id="61FnnmeBu7Y" role="1PaTwD">
+            <property role="3oM_SC" value="Everything" />
+          </node>
+          <node concept="3oM_SD" id="61FnnmeBu7Z" role="1PaTwD">
+            <property role="3oM_SC" value="that" />
+          </node>
+          <node concept="3oM_SD" id="61FnnmeBu80" role="1PaTwD">
+            <property role="3oM_SC" value="was" />
+          </node>
+          <node concept="3oM_SD" id="61FnnmeBu81" role="1PaTwD">
+            <property role="3oM_SC" value="computed" />
+          </node>
+          <node concept="3oM_SD" id="61FnnmeBu82" role="1PaTwD">
+            <property role="3oM_SC" value="before" />
+          </node>
+          <node concept="3oM_SD" id="61FnnmeBu83" role="1PaTwD">
+            <property role="3oM_SC" value="the" />
+          </node>
+          <node concept="3oM_SD" id="61FnnmeBu84" role="1PaTwD">
+            <property role="3oM_SC" value="exception" />
+          </node>
+          <node concept="3oM_SD" id="61FnnmeBu85" role="1PaTwD">
+            <property role="3oM_SC" value="is" />
+          </node>
+          <node concept="3oM_SD" id="61FnnmeBu86" role="1PaTwD">
+            <property role="3oM_SC" value="already" />
+          </node>
+          <node concept="3oM_SD" id="61FnnmeBu87" role="1PaTwD">
+            <property role="3oM_SC" value="in" />
+          </node>
+          <node concept="3oM_SD" id="61FnnmeBu88" role="1PaTwD">
+            <property role="3oM_SC" value="the" />
+          </node>
+          <node concept="3oM_SD" id="61FnnmeBu89" role="1PaTwD">
+            <property role="3oM_SC" value="trace," />
+          </node>
+          <node concept="3oM_SD" id="61FnnmeBu8a" role="1PaTwD">
+            <property role="3oM_SC" value="because" />
+          </node>
+          <node concept="3oM_SD" id="61FnnmeBu8b" role="1PaTwD">
+            <property role="3oM_SC" value="the" />
+          </node>
+          <node concept="3oM_SD" id="61FnnmeBu8c" role="1PaTwD">
+            <property role="3oM_SC" value="record" />
           </node>
         </node>
-        <node concept="TZ5HA" id="48Zi1gzgsFS" role="TZ5H$">
-          <node concept="1dT_AC" id="48Zi1gzgsFT" role="1dT_Ay">
-            <property role="1dT_AB" value="for a node is added to its parent before that node is evaluated. So the partial trace is worth" />
+        <node concept="1PaTwC" id="61FnnmeBu8d" role="1Vez_I">
+          <node concept="3oM_SD" id="61FnnmeBu8e" role="1PaTwD">
+            <property role="3oM_SC" value="for" />
+          </node>
+          <node concept="3oM_SD" id="61FnnmeBu8f" role="1PaTwD">
+            <property role="3oM_SC" value="a" />
+          </node>
+          <node concept="3oM_SD" id="61FnnmeBu8g" role="1PaTwD">
+            <property role="3oM_SC" value="node" />
+          </node>
+          <node concept="3oM_SD" id="61FnnmeBu8h" role="1PaTwD">
+            <property role="3oM_SC" value="is" />
+          </node>
+          <node concept="3oM_SD" id="61FnnmeBu8i" role="1PaTwD">
+            <property role="3oM_SC" value="added" />
+          </node>
+          <node concept="3oM_SD" id="61FnnmeBu8j" role="1PaTwD">
+            <property role="3oM_SC" value="to" />
+          </node>
+          <node concept="3oM_SD" id="61FnnmeBu8k" role="1PaTwD">
+            <property role="3oM_SC" value="its" />
+          </node>
+          <node concept="3oM_SD" id="61FnnmeBu8l" role="1PaTwD">
+            <property role="3oM_SC" value="parent" />
+          </node>
+          <node concept="3oM_SD" id="61FnnmeBu8m" role="1PaTwD">
+            <property role="3oM_SC" value="before" />
+          </node>
+          <node concept="3oM_SD" id="61FnnmeBu8n" role="1PaTwD">
+            <property role="3oM_SC" value="that" />
+          </node>
+          <node concept="3oM_SD" id="61FnnmeBu8o" role="1PaTwD">
+            <property role="3oM_SC" value="node" />
+          </node>
+          <node concept="3oM_SD" id="61FnnmeBu8p" role="1PaTwD">
+            <property role="3oM_SC" value="is" />
+          </node>
+          <node concept="3oM_SD" id="61FnnmeBu8q" role="1PaTwD">
+            <property role="3oM_SC" value="evaluated." />
+          </node>
+          <node concept="3oM_SD" id="61FnnmeBu8r" role="1PaTwD">
+            <property role="3oM_SC" value="So" />
+          </node>
+          <node concept="3oM_SD" id="61FnnmeBu8s" role="1PaTwD">
+            <property role="3oM_SC" value="the" />
+          </node>
+          <node concept="3oM_SD" id="61FnnmeBu8t" role="1PaTwD">
+            <property role="3oM_SC" value="partial" />
+          </node>
+          <node concept="3oM_SD" id="61FnnmeBu8u" role="1PaTwD">
+            <property role="3oM_SC" value="trace" />
+          </node>
+          <node concept="3oM_SD" id="61FnnmeBu8v" role="1PaTwD">
+            <property role="3oM_SC" value="is" />
+          </node>
+          <node concept="3oM_SD" id="61FnnmeBu8w" role="1PaTwD">
+            <property role="3oM_SC" value="worth" />
           </node>
         </node>
-        <node concept="TZ5HA" id="48Zi1gzgsFU" role="TZ5H$">
-          <node concept="1dT_AC" id="48Zi1gzgsFV" role="1dT_Ay">
-            <property role="1dT_AB" value="showing even though the exception unwound the evaluation." />
+        <node concept="1PaTwC" id="61FnnmeBu8x" role="1Vez_I">
+          <node concept="3oM_SD" id="61FnnmeBu8y" role="1PaTwD">
+            <property role="3oM_SC" value="showing" />
+          </node>
+          <node concept="3oM_SD" id="61FnnmeBu8z" role="1PaTwD">
+            <property role="3oM_SC" value="even" />
+          </node>
+          <node concept="3oM_SD" id="61FnnmeBu8$" role="1PaTwD">
+            <property role="3oM_SC" value="though" />
+          </node>
+          <node concept="3oM_SD" id="61FnnmeBu8_" role="1PaTwD">
+            <property role="3oM_SC" value="the" />
+          </node>
+          <node concept="3oM_SD" id="61FnnmeBu8A" role="1PaTwD">
+            <property role="3oM_SC" value="exception" />
+          </node>
+          <node concept="3oM_SD" id="61FnnmeBu8B" role="1PaTwD">
+            <property role="3oM_SC" value="unwound" />
+          </node>
+          <node concept="3oM_SD" id="61FnnmeBu8C" role="1PaTwD">
+            <property role="3oM_SC" value="the" />
+          </node>
+          <node concept="3oM_SD" id="61FnnmeBu8D" role="1PaTwD">
+            <property role="3oM_SC" value="evaluation." />
           </node>
         </node>
       </node>
@@ -34756,9 +35139,39 @@
         </node>
       </node>
       <node concept="P$JXv" id="48Zi1gzgsFW" role="lGtFl">
-        <node concept="TZ5HA" id="48Zi1gzgsFX" role="TZ5H$">
-          <node concept="1dT_AC" id="48Zi1gzgsFY" role="1dT_Ay">
-            <property role="1dT_AB" value="A one-line rendering of the exception for a trace record label." />
+        <node concept="1PaTwC" id="61FnnmeBu8E" role="1Vez_I">
+          <node concept="3oM_SD" id="61FnnmeBu8F" role="1PaTwD">
+            <property role="3oM_SC" value="A" />
+          </node>
+          <node concept="3oM_SD" id="61FnnmeBu8G" role="1PaTwD">
+            <property role="3oM_SC" value="one-line" />
+          </node>
+          <node concept="3oM_SD" id="61FnnmeBu8H" role="1PaTwD">
+            <property role="3oM_SC" value="rendering" />
+          </node>
+          <node concept="3oM_SD" id="61FnnmeBu8I" role="1PaTwD">
+            <property role="3oM_SC" value="of" />
+          </node>
+          <node concept="3oM_SD" id="61FnnmeBu8J" role="1PaTwD">
+            <property role="3oM_SC" value="the" />
+          </node>
+          <node concept="3oM_SD" id="61FnnmeBu8K" role="1PaTwD">
+            <property role="3oM_SC" value="exception" />
+          </node>
+          <node concept="3oM_SD" id="61FnnmeBu8L" role="1PaTwD">
+            <property role="3oM_SC" value="for" />
+          </node>
+          <node concept="3oM_SD" id="61FnnmeBu8M" role="1PaTwD">
+            <property role="3oM_SC" value="a" />
+          </node>
+          <node concept="3oM_SD" id="61FnnmeBu8N" role="1PaTwD">
+            <property role="3oM_SC" value="trace" />
+          </node>
+          <node concept="3oM_SD" id="61FnnmeBu8O" role="1PaTwD">
+            <property role="3oM_SC" value="record" />
+          </node>
+          <node concept="3oM_SD" id="61FnnmeBu8P" role="1PaTwD">
+            <property role="3oM_SC" value="label." />
           </node>
         </node>
       </node>
