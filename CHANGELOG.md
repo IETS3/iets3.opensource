@@ -16,6 +16,7 @@ The project does _not_ follow Semantic Versioning and the changes are documented
 - KernelF: `RecordValue` no longer throws a `NullPointerException` from `equals` or `compareTo` when a record member has no value, nor from `compareTo` for inline records, which carry no record declaration. `equals`, `hashCode` and `compareTo` are consistent with each other again, so record values behave correctly in Java-side hash-based and sorted collections.
 - KernelF: a broken reference to a literal of a qualified enum no longer rebinds to a same-named literal of a different enum, because the persisted `resolve=` info now carries the qualified name instead of the simple one.
 - KernelF: entries in the trace explorer are no longer truncated after a very low character limit, which made traces hard to read. The limit was raised and the tooltip now shows the full, untruncated text.
+- KernelF: Consistent usage of indent layout in Expression concepts.
 
 
 ## August 2026
