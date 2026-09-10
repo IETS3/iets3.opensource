@@ -89,7 +89,7 @@
     <property role="TrG5h" value="CommentsOnComponents" />
     <node concept="3clFbS" id="5kwEgmAh24k" role="LjaKd">
       <node concept="2TK7Tu" id="5kwEgmAh24p" role="3cqZAp">
-        <property role="2TTd_B" value="//" />
+        <property role="2TTd_B" value="// " />
       </node>
     </node>
     <node concept="1qefOq" id="17Nm8oCo9au" role="25YQCW">
@@ -140,7 +140,7 @@
     <property role="TrG5h" value="CommentsOnInstance" />
     <node concept="3clFbS" id="5kwEgmAh7q0" role="LjaKd">
       <node concept="2TK7Tu" id="5kwEgmAh7q1" role="3cqZAp">
-        <property role="2TTd_B" value="//" />
+        <property role="2TTd_B" value="// " />
       </node>
     </node>
     <node concept="1qefOq" id="17Nm8oCo9av" role="25YQCW">
@@ -223,7 +223,7 @@
     <property role="TrG5h" value="CommentsOnSubstructure" />
     <node concept="3clFbS" id="5kwEgmAi6Lr" role="LjaKd">
       <node concept="2TK7Tu" id="5kwEgmAi6Ls" role="3cqZAp">
-        <property role="2TTd_B" value="//" />
+        <property role="2TTd_B" value="// " />
       </node>
     </node>
     <node concept="1qefOq" id="17Nm8oCo9aw" role="25YQCW">
