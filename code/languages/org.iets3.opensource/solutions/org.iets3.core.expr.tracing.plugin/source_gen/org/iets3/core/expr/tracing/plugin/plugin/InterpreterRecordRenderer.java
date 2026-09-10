@@ -27,8 +27,8 @@ import org.jetbrains.mps.openapi.language.SConcept;
 import org.jetbrains.mps.openapi.language.SContainmentLink;
 
 public class InterpreterRecordRenderer implements ITraceRecordRenderer<ComputationTrace> {
-  private static final int MAX_SYNTAX_LEN = 25;
-  private static final int MAX_VAL_LEN = 50;
+  private static final int MAX_SYNTAX_LEN = 120;
+  private static final int MAX_VAL_LEN = 200;
 
   private SNode traceIconNode = SConceptOperations.createNewNode(MetaAdapterFactory.getConcept(0x63c1aad1e2db439cL, 0xa30a02b5e0bc80f3L, 0x59ce29f88158d153L, "org.iets3.core.expr.tracing.structure.TracerIconConcept"));
   private SNode ghostIconNode = SConceptOperations.createNewNode(MetaAdapterFactory.getConcept(0x63c1aad1e2db439cL, 0xa30a02b5e0bc80f3L, 0x5344eca2dfe9b5f6L, "org.iets3.core.expr.tracing.structure.GhostIconConcept"));
@@ -159,9 +159,21 @@ public class InterpreterRecordRenderer implements ITraceRecordRenderer<Computati
         }
       }
       output.setIcon(icon);
-      output.setToolTipText(record.getConceptName());
+      output.setToolTipText(buildToolTipText(record));
       output.append(" [" + record.getConceptName() + "]", inactiveStyle);
     });
+  }
+  private String buildToolTipText(ComputationTrace record) {
+    String res = (record.isInfoNode() ? "" : record.getSyntax());
+    if (record.hasConstraintFailure()) {
+      res = res + "  " + record.getConstrainFailureMessage();
+    } else {
+      Object value = record.getTracedValue();
+      if (value != null) {
+        res = res + "  =  " + value.toString();
+      }
+    }
+    return res + "  [" + record.getConceptName() + "]";
   }
 
   private static final class CONCEPTS {
