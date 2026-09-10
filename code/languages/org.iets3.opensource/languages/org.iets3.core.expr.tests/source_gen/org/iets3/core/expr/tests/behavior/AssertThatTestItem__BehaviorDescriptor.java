@@ -22,6 +22,7 @@ import org.iets3.core.expr.base.behavior.IValueAndTrace;
 import org.iets3.core.expr.base.plugin.MessageValue;
 import org.iets3.core.expr.tests.plugin.ConstraintFailed;
 import org.iets3.core.expr.base.plugin.ConstraintFailedException;
+import org.iets3.core.expr.base.behavior.TraceFailures;
 import com.mbeddr.mpsutil.interpreter.rt.InvalidValueException;
 import com.mbeddr.mpsutil.interpreter.rt.InterpreterEscapeException;
 import org.iets3.core.expr.base.plugin.CVH;
@@ -92,22 +93,24 @@ public final class AssertThatTestItem__BehaviorDescriptor extends BaseBHDescript
         result.setOk(false);
         result.setActual("<constraint failed>");
         result.setErrorMessage(AbstractTestItem__BehaviorDescriptor.wrapException_id3YhAT14QasA.invoke(__thisNode__, "constraint failed", ex));
-        result.setTrace(ex.failedTrace);
+        result.setTrace(TraceFailures.markFailure(ex));
       } catch (InvalidValueException ex) {
         result.setOk(false);
         result.setActual("<invalid value detected>");
         result.setErrorMessage(AbstractTestItem__BehaviorDescriptor.wrapException_id3YhAT14QasA.invoke(__thisNode__, "invalid value detected", ex));
-        result.setTrace(ex.failedTrace);
+        result.setTrace(TraceFailures.markFailure(ex));
       } catch (InterpreterEscapeException ex) {
         result.setOk(false);
         result.setActual("<interpreter failed>");
         result.setErrorMessage(AbstractTestItem__BehaviorDescriptor.wrapException_id3YhAT14QasA.invoke(__thisNode__, "interpreter failed", ex));
-        result.setTrace(ex.failedTrace);
+        result.setTrace(TraceFailures.markFailure(ex));
       } catch (Throwable t) {
         result.setOk(false);
         result.setActual("<interpreter failed internally>");
         result.setErrorMessage(AbstractTestItem__BehaviorDescriptor.wrapException_id3YhAT14QasA.invoke(__thisNode__, "interpreter failed internally", t));
         t.printStackTrace();
+        // Keep the trace the interpreter had built when it threw, so that Show Trace still works.
+        result.setTrace(TraceFailures.markFailure(t));
       } finally {
         CVH.overrideWithException = false;
       }
@@ -139,7 +142,7 @@ public final class AssertThatTestItem__BehaviorDescriptor extends BaseBHDescript
       if (!(errorMessage instanceof MessageValue)) {
         errorMessage = new MessageValue(errorMessage.toString());
       }
-      return new ValueAndTrace(new ConstraintFailed((MessageValue) errorMessage, SLinkOperations.getTarget(__thisNode__, LINKS.value$skhv)), ex.failedTrace);
+      return new ValueAndTrace(new ConstraintFailed((MessageValue) errorMessage, SLinkOperations.getTarget(__thisNode__, LINKS.value$skhv)), TraceFailures.markFailure(ex));
     } finally {
       CVH.overrideWithException = false;
     }
