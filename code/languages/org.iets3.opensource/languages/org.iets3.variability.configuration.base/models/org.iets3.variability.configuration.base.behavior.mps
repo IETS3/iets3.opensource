@@ -20132,7 +20132,7 @@
                         </node>
                       </node>
                       <node concept="1rXfSq" id="wDfBHjbsZd" role="3clFbw">
-                        <ref role="37wK5l" node="73vFf08Xizy" resolve="hasSelectionOrAttributeConflictForInheritance" />
+                        <ref role="37wK5l" node="73vFf08Xizy" resolve="hasInheritanceConflicts" />
                         <node concept="37vLTw" id="wDfBHjbsZe" role="37wK5m">
                           <ref role="3cqZAo" node="wDfBHhZ33U" resolve="afc" />
                         </node>
