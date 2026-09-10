@@ -7905,5 +7905,178 @@
       </node>
     </node>
   </node>
+  <node concept="1lH9Xt" id="2y1qxAP$P7F">
+    <property role="TrG5h" value="InheritanceExtendsRefNarrowedToSubConfig" />
+    <property role="3DII0k" value="2hh8MJdVwqX/command" />
+    <node concept="1LZb2c" id="2y1qxAP$P7G" role="1SL9yI">
+      <property role="TrG5h" value="narrowedConfigRefIsKept" />
+      <node concept="3cqZAl" id="2y1qxAP$P7H" role="3clF45" />
+      <node concept="3clFbS" id="2y1qxAP$P7I" role="3clF47">
+        <node concept="3clFbF" id="2y1qxAP$P7J" role="3cqZAp">
+          <node concept="2YIFZM" id="2y1qxAP$P7K" role="3clFbG">
+            <ref role="1Pybhc" node="5Bs7u20xE9z" resolve="InheritanceTestUtil" />
+            <ref role="37wK5l" node="5Bs7u20xFZd" resolve="applyInheritanceAndCheck" />
+            <node concept="3xONca" id="2y1qxAP$P7L" role="37wK5m">
+              <ref role="3xOPvv" node="2y1qxAP$P8j" resolve="given" />
+            </node>
+            <node concept="3xONca" id="2y1qxAP$P7M" role="37wK5m">
+              <ref role="3xOPvv" node="2y1qxAP$P8p" resolve="expected" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1qefOq" id="2y1qxAP$P7N" role="1SKRRt">
+      <node concept="12icEM" id="2y1qxAP$P7O" role="1qenE9">
+        <property role="TrG5h" value="V" />
+        <node concept="12iwZl" id="2y1qxAP$P7P" role="12i2BX">
+          <property role="bVyBI" value="-1291946956" />
+          <node concept="12iwV3" id="2y1qxAP$P7Q" role="12iwV8">
+            <property role="TrG5h" value="Ink" />
+            <node concept="12iwV3" id="2y1qxAP$P7R" role="12iwVe">
+              <property role="TrG5h" value="A" />
+            </node>
+            <node concept="12iwV3" id="2y1qxAP$P7S" role="12iwVe">
+              <property role="TrG5h" value="B" />
+            </node>
+            <node concept="12iwV3" id="2y1qxAP$P7T" role="12iwVe">
+              <property role="TrG5h" value="C" />
+            </node>
+          </node>
+        </node>
+        <node concept="12iwZl" id="2y1qxAP$P7U" role="12i2BX">
+          <property role="bVyBI" value="342305362" />
+          <node concept="12iwV3" id="2y1qxAP$P7V" role="12iwV8">
+            <property role="TrG5h" value="M" />
+            <node concept="12iSMG" id="2y1qxAP$P7W" role="12iwVe">
+              <property role="TrG5h" value="ink" />
+              <ref role="12iSMH" node="2y1qxAP$P7P" resolve="Ink" />
+            </node>
+          </node>
+        </node>
+        <node concept="rqKB5" id="2y1qxAP$P7X" role="12i2BX">
+          <property role="TrG5h" value="CI1" />
+          <property role="33ZQ4u" value="true" />
+          <property role="1n_0Gn" value="true" />
+          <property role="26YOJW" value="" />
+          <property role="bVyBI" value="-125712443" />
+          <property role="bROok" value="-1291946956" />
+          <property role="0Rz4W" value="1766466815" />
+          <property role="1nQUAq" value="true" />
+          <ref role="rqKBe" node="2y1qxAP$P7Q" resolve="Ink" />
+          <node concept="rqCGG" id="2y1qxAP$P7Y" role="rqCGo">
+            <node concept="rqKBd" id="2y1qxAP$P7Z" role="rqKBa">
+              <property role="3BMj5M" value="5QKr2dW9gDW/userTrue" />
+              <ref role="rqKBe" node="2y1qxAP$P7R" resolve="A" />
+              <node concept="rqCGG" id="2y1qxAP$P80" role="rqCGo" />
+            </node>
+            <node concept="rqKBd" id="2y1qxAP$P81" role="rqKBa">
+              <ref role="rqKBe" node="2y1qxAP$P7S" resolve="B" />
+              <node concept="rqCGG" id="2y1qxAP$P82" role="rqCGo" />
+            </node>
+            <node concept="rqKBd" id="2y1qxAP$P83" role="rqKBa">
+              <ref role="rqKBe" node="2y1qxAP$P7T" resolve="C" />
+              <node concept="rqCGG" id="2y1qxAP$P84" role="rqCGo" />
+            </node>
+          </node>
+        </node>
+        <node concept="rqKB5" id="2y1qxAP$P85" role="12i2BX">
+          <property role="TrG5h" value="CI1Sub" />
+          <property role="33ZQ4u" value="true" />
+          <property role="1nQUAq" value="true" />
+          <property role="1n_0Gn" value="true" />
+          <property role="26YOJW" value="" />
+          <property role="bVyBI" value="-1542399638" />
+          <property role="bROok" value="-125712443" />
+          <ref role="rqKBe" node="2y1qxAP$P7Q" resolve="Ink" />
+          <node concept="30ne8c" id="2y1qxAP$P86" role="30ne9f">
+            <ref role="30ne9N" node="2y1qxAP$P7X" resolve="CI1" />
+          </node>
+          <node concept="rqCGG" id="2y1qxAP$P87" role="rqCGo">
+            <node concept="rqKBd" id="2y1qxAP$P88" role="rqKBa">
+              <property role="3BMj5M" value="2wLdcSYDcHT/inheritedTrue" />
+              <ref role="rqKBe" node="2y1qxAP$P7R" resolve="A" />
+              <node concept="rqCGG" id="2y1qxAP$P89" role="rqCGo" />
+            </node>
+            <node concept="rqKBd" id="2y1qxAP$P8a" role="rqKBa">
+              <ref role="rqKBe" node="2y1qxAP$P7S" resolve="B" />
+              <node concept="rqCGG" id="2y1qxAP$P8b" role="rqCGo" />
+            </node>
+            <node concept="rqKBd" id="2y1qxAP$P8c" role="rqKBa">
+              <ref role="rqKBe" node="2y1qxAP$P7T" resolve="C" />
+              <node concept="rqCGG" id="2y1qxAP$P8d" role="rqCGo" />
+            </node>
+          </node>
+        </node>
+        <node concept="rqKB5" id="2y1qxAP$P8e" role="12i2BX">
+          <property role="TrG5h" value="CBase" />
+          <property role="33ZQ4u" value="true" />
+          <property role="1n_0Gn" value="true" />
+          <property role="26YOJW" value="" />
+          <property role="bVyBI" value="1793015830" />
+          <property role="bROok" value="342305362" />
+          <property role="0Rz4W" value="-1986930563" />
+          <property role="1nQUAq" value="true" />
+          <ref role="rqKBe" node="2y1qxAP$P7V" resolve="M" />
+          <node concept="rqCGG" id="2y1qxAP$P8f" role="rqCGo">
+            <node concept="rqKBd" id="2y1qxAP$P8g" role="rqKBa">
+              <property role="3BMj5M" value="5QKr2dW9gDP/autoTrue" />
+              <ref role="rqKBe" node="2y1qxAP$P7W" resolve="ink" />
+              <node concept="rqMQU" id="2y1qxAP$P8h" role="rqCGo">
+                <ref role="rqMQV" node="2y1qxAP$P7X" resolve="CI1" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="rqKB5" id="2y1qxAP$P8i" role="12i2BX">
+          <property role="TrG5h" value="CExt" />
+          <property role="33ZQ4u" value="true" />
+          <property role="1n_0Gn" value="true" />
+          <property role="26YOJW" value="" />
+          <property role="bVyBI" value="-911070500" />
+          <property role="bROok" value="342305362" />
+          <property role="0Rz4W" value="1661349065" />
+          <property role="1nQUAq" value="true" />
+          <ref role="rqKBe" node="2y1qxAP$P7V" resolve="M" />
+          <node concept="3xLA65" id="2y1qxAP$P8j" role="lGtFl">
+            <property role="TrG5h" value="given" />
+          </node>
+          <node concept="rqCGG" id="2y1qxAP$P8k" role="rqCGo">
+            <node concept="rqKBd" id="2y1qxAP$P8l" role="rqKBa">
+              <ref role="rqKBe" node="2y1qxAP$P7W" resolve="ink" />
+              <node concept="rqMQU" id="2y1qxAP$P8m" role="rqCGo">
+                <ref role="rqMQV" node="2y1qxAP$P85" resolve="CI1Sub" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="rqKB5" id="2y1qxAP$P8n" role="12i2BX">
+          <property role="TrG5h" value="CExt" />
+          <property role="33ZQ4u" value="true" />
+          <property role="1nQUAq" value="true" />
+          <property role="1n_0Gn" value="true" />
+          <property role="26YOJW" value="" />
+          <property role="bVyBI" value="-1205697589" />
+          <property role="bROok" value="1793015830" />
+          <ref role="rqKBe" node="2y1qxAP$P7V" resolve="M" />
+          <node concept="30ne8c" id="2y1qxAP$P8o" role="30ne9f">
+            <ref role="30ne9N" node="2y1qxAP$P8e" resolve="CBase" />
+          </node>
+          <node concept="3xLA65" id="2y1qxAP$P8p" role="lGtFl">
+            <property role="TrG5h" value="expected" />
+          </node>
+          <node concept="rqCGG" id="2y1qxAP$P8q" role="rqCGo">
+            <node concept="rqKBd" id="2y1qxAP$P8r" role="rqKBa">
+              <property role="3BMj5M" value="2wLdcSYDcHT/inheritedTrue" />
+              <ref role="rqKBe" node="2y1qxAP$P7W" resolve="ink" />
+              <node concept="rqMQU" id="2y1qxAP$P8s" role="rqCGo">
+                <ref role="rqMQV" node="2y1qxAP$P85" resolve="CI1Sub" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
 </model>
 
