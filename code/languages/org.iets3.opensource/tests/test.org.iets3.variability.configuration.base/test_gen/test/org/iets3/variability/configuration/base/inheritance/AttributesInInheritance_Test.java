@@ -15,6 +15,7 @@ import jetbrains.mps.lang.test.runtime.CheckErrorMessagesRunnable;
 import java.util.Arrays;
 import jetbrains.mps.lang.test.runtime.CheckExpectedMessageRunnable;
 import jetbrains.mps.errors.MessageStatus;
+import jetbrains.mps.smodel.SNodePointer;
 
 @MPSLaunch
 public class AttributesInInheritance_Test extends BaseTransformationTest {
@@ -30,24 +31,28 @@ public class AttributesInInheritance_Test extends BaseTransformationTest {
     new TestBody(this).test_ErrorMessagesCheck3052460515426556481();
   }
   @Test
-  public void test_NodeErrorCheck1678558162662951582() throws Throwable {
-    new TestBody(this).test_NodeErrorCheck1678558162662951582();
+  public void test_NodeInheritanceCanNotBeAppliedCheck1678558162662951582() throws Throwable {
+    new TestBody(this).test_NodeInheritanceCanNotBeAppliedCheck1678558162662951582();
   }
   @Test
-  public void test_NodeErrorCheck3744073659868562144() throws Throwable {
-    new TestBody(this).test_NodeErrorCheck3744073659868562144();
+  public void test_NodeConflictWithExtendedConfigurationCheck3744073659868562144() throws Throwable {
+    new TestBody(this).test_NodeConflictWithExtendedConfigurationCheck3744073659868562144();
   }
   @Test
-  public void test_NodeWarningCheck1142960084575731670() throws Throwable {
-    new TestBody(this).test_NodeWarningCheck1142960084575731670();
+  public void test_NodeUnnamedWarningCheck1142960084575731670() throws Throwable {
+    new TestBody(this).test_NodeUnnamedWarningCheck1142960084575731670();
   }
   @Test
-  public void test_NodeErrorCheck4863260546552263007() throws Throwable {
-    new TestBody(this).test_NodeErrorCheck4863260546552263007();
+  public void test_NodeThereWereChangesInTheCheck4863260546552263007() throws Throwable {
+    new TestBody(this).test_NodeThereWereChangesInTheCheck4863260546552263007();
   }
   @Test
-  public void test_NodeErrorCheck4863260546552263088() throws Throwable {
-    new TestBody(this).test_NodeErrorCheck4863260546552263088();
+  public void test_NodeThereWereChangesInTheCheck4863260546552263088() throws Throwable {
+    new TestBody(this).test_NodeThereWereChangesInTheCheck4863260546552263088();
+  }
+  @Test
+  public void test_NodeThereWereChangesInTheCheck2918730692166000011() throws Throwable {
+    new TestBody(this).test_NodeThereWereChangesInTheCheck2918730692166000011();
   }
 
   /*package*/ static class TestBody extends BaseTestBody {
@@ -68,39 +73,46 @@ public class AttributesInInheritance_Test extends BaseTransformationTest {
         new CheckErrorMessagesRunnable(nodeToCheck, false, false, myProject.getPlatform()).includeSelf(true).exclude(Arrays.<CheckExpectedMessageRunnable>asList()).run();
       });
     }
-    public void test_NodeErrorCheck1678558162662951582() throws Exception {
+    public void test_NodeInheritanceCanNotBeAppliedCheck1678558162662951582() throws Exception {
       initTestNodes();
       runWithinCommand(() -> {
         SNode nodeToCheck = getNodeById("1678558162662947884");
-        new CheckExpectedMessageRunnable.CheckAnyMessageRunnable(nodeToCheck, MessageStatus.ERROR, "", myProject.getRepository(), myProject.getPlatform()).run();
+        new CheckExpectedMessageRunnable.CheckExpectedRuleMessageRunnable(nodeToCheck, MessageStatus.ERROR, new SNodePointer("r:791971f5-b094-4342-a75c-0ce6c1b43e9d(org.iets3.variability.configuration.base.typesystem)", "3543850148881346886"), "", myProject.getRepository(), myProject.getPlatform()).run();
       });
     }
-    public void test_NodeErrorCheck3744073659868562144() throws Exception {
+    public void test_NodeConflictWithExtendedConfigurationCheck3744073659868562144() throws Exception {
       initTestNodes();
       runWithinCommand(() -> {
         SNode nodeToCheck = getNodeById("1678558162662947888");
-        new CheckExpectedMessageRunnable.CheckAnyMessageRunnable(nodeToCheck, MessageStatus.ERROR, "", myProject.getRepository(), myProject.getPlatform()).run();
+        new CheckExpectedMessageRunnable.CheckExpectedRuleMessageRunnable(nodeToCheck, MessageStatus.ERROR, new SNodePointer("r:791971f5-b094-4342-a75c-0ce6c1b43e9d(org.iets3.variability.configuration.base.typesystem)", "3543850148881346895"), "", myProject.getRepository(), myProject.getPlatform()).run();
       });
     }
-    public void test_NodeWarningCheck1142960084575731670() throws Exception {
+    public void test_NodeUnnamedWarningCheck1142960084575731670() throws Exception {
       initTestNodes();
       runWithinCommand(() -> {
         SNode nodeToCheck = getNodeById("8102750928825455837");
-        new CheckExpectedMessageRunnable.CheckAnyMessageRunnable(nodeToCheck, MessageStatus.WARNING, "", myProject.getRepository(), myProject.getPlatform()).run();
+        new CheckExpectedMessageRunnable.CheckExpectedRuleMessageRunnable(nodeToCheck, MessageStatus.WARNING, new SNodePointer("r:791971f5-b094-4342-a75c-0ce6c1b43e9d(org.iets3.variability.configuration.base.typesystem)", "3543850148881346851"), "", myProject.getRepository(), myProject.getPlatform()).run();
       });
     }
-    public void test_NodeErrorCheck4863260546552263007() throws Exception {
+    public void test_NodeThereWereChangesInTheCheck4863260546552263007() throws Exception {
       initTestNodes();
       runWithinCommand(() -> {
         SNode nodeToCheck = getNodeById("4863260546552262555");
-        new CheckExpectedMessageRunnable.CheckAnyMessageRunnable(nodeToCheck, MessageStatus.ERROR, "", myProject.getRepository(), myProject.getPlatform()).run();
+        new CheckExpectedMessageRunnable.CheckExpectedRuleMessageRunnable(nodeToCheck, MessageStatus.ERROR, new SNodePointer("r:791971f5-b094-4342-a75c-0ce6c1b43e9d(org.iets3.variability.configuration.base.typesystem)", "3543850148881346922"), "", myProject.getRepository(), myProject.getPlatform()).run();
       });
     }
-    public void test_NodeErrorCheck4863260546552263088() throws Exception {
+    public void test_NodeThereWereChangesInTheCheck4863260546552263088() throws Exception {
       initTestNodes();
       runWithinCommand(() -> {
         SNode nodeToCheck = getNodeById("4863260546552262675");
-        new CheckExpectedMessageRunnable.CheckAnyMessageRunnable(nodeToCheck, MessageStatus.ERROR, "", myProject.getRepository(), myProject.getPlatform()).run();
+        new CheckExpectedMessageRunnable.CheckExpectedRuleMessageRunnable(nodeToCheck, MessageStatus.ERROR, new SNodePointer("r:791971f5-b094-4342-a75c-0ce6c1b43e9d(org.iets3.variability.configuration.base.typesystem)", "3543850148881347023"), "", myProject.getRepository(), myProject.getPlatform()).run();
+      });
+    }
+    public void test_NodeThereWereChangesInTheCheck2918730692166000011() throws Exception {
+      initTestNodes();
+      runWithinCommand(() -> {
+        SNode nodeToCheck = getNodeById("4863260546552262675");
+        new CheckExpectedMessageRunnable.CheckExpectedRuleMessageRunnable(nodeToCheck, MessageStatus.ERROR, new SNodePointer("r:791971f5-b094-4342-a75c-0ce6c1b43e9d(org.iets3.variability.configuration.base.typesystem)", "3543850148881346941"), "", myProject.getRepository(), myProject.getPlatform()).run();
       });
     }
 

@@ -8,6 +8,41 @@
   <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123157:jetbrains.mps.baseLanguage.structure.Statement" />
   <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1070462154015:jetbrains.mps.baseLanguage.structure.StaticFieldDeclaration" />
   <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1070475587102:jetbrains.mps.baseLanguage.structure.SuperConstructorInvocation" />
+  <root nodeRef="r:b52df216-430b-486e-bf75-226dacbbed72(test.org.iets3.variability.configuration.base.checking_rules@tests)/2918730692166238514">
+    <file name="ConfigForModelWithDependencyCycle_Test.java">
+      <node id="2918730692166238514" at="23,51,24,60" concept="7" />
+      <node id="2918730692166238526" at="28,91,29,82" concept="1" />
+      <node id="2918730692166238514" at="34,52,35,19" concept="7" />
+      <node id="2918730692166238514" at="39,36,40,46" concept="1" />
+      <node id="2918730692166238526" at="43,93,44,22" concept="1" />
+      <node id="2918730692166238526" at="45,30,46,63" concept="3" />
+      <node id="2918730692166238526" at="46,63,47,306" concept="1" />
+      <node id="2918730692166238514" at="20,0,22,0" concept="6" trace="ourParametersCacheExtension" />
+      <node id="2918730692166238514" at="23,0,26,0" concept="0" trace="ConfigForModelWithDependencyCycle_Test#()V" />
+      <node id="2918730692166238514" at="34,0,37,0" concept="0" trace="TestBody#(Ljetbrains/mps/lang/test/runtime/TransformationTest;)V" />
+      <node id="2918730692166238526" at="27,0,31,0" concept="2" trace="test_NodeConfigurationCreatedForCheck2918730692166238526#()V" />
+      <node id="2918730692166238514" at="38,0,42,0" concept="2" trace="initTestNodes#()V" />
+      <node id="2918730692166238526" at="44,22,48,9" concept="1" />
+      <node id="2918730692166238526" at="43,0,50,0" concept="2" trace="test_NodeConfigurationCreatedForCheck2918730692166238526#()V" />
+      <scope id="2918730692166238514" at="23,51,24,60" />
+      <scope id="2918730692166238526" at="28,91,29,82" />
+      <scope id="2918730692166238514" at="34,52,35,19" />
+      <scope id="2918730692166238514" at="39,36,40,46" />
+      <scope id="2918730692166238526" at="45,30,47,306">
+        <var name="nodeToCheck" id="2918730692166238526" />
+      </scope>
+      <scope id="2918730692166238514" at="23,0,26,0" />
+      <scope id="2918730692166238514" at="34,0,37,0">
+        <var name="owner" id="2918730692166238514" />
+      </scope>
+      <scope id="2918730692166238526" at="27,0,31,0" />
+      <scope id="2918730692166238514" at="38,0,42,0" />
+      <scope id="2918730692166238526" at="43,93,48,9" />
+      <scope id="2918730692166238526" at="43,0,50,0" />
+      <unit id="2918730692166238514" at="32,0,52,0" name="test.org.iets3.variability.configuration.base.checking_rules.ConfigForModelWithDependencyCycle_Test$TestBody" />
+      <unit id="2918730692166238514" at="18,0,53,0" name="test.org.iets3.variability.configuration.base.checking_rules.ConfigForModelWithDependencyCycle_Test" />
+    </file>
+  </root>
   <root nodeRef="r:b52df216-430b-486e-bf75-226dacbbed72(test.org.iets3.variability.configuration.base.checking_rules@tests)/3414566187111182681">
     <file name="NotifyAdaptIsNecessary_Test.java">
       <node id="3414566187111182681" at="22,40,23,60" concept="7" />

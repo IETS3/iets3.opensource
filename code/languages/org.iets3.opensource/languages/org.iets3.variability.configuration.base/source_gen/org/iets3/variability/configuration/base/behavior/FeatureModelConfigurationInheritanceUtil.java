@@ -15,13 +15,14 @@ import jetbrains.mps.internal.collections.runtime.ListSequence;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
 import jetbrains.mps.lang.core.behavior.BaseConcept__BehaviorDescriptor;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
+import java.util.Objects;
 import java.util.Collections;
 import com.google.common.collect.Iterables;
 import org.jetbrains.annotations.Nullable;
+import org.iets3.variability.configuration.base.plugin.FeatureModelConfigurationConstraintsUtil;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations;
 import java.util.Optional;
 import org.iets3.variability.configuration.base.plugin.FeatureModelIncludeUtil;
-import java.util.Objects;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SEnumOperations;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import java.util.ArrayList;
@@ -44,7 +45,7 @@ public class FeatureModelConfigurationInheritanceUtil {
         SNode efc = tce.configuration();
         SNode afc = includesToFeature.get(tce.key());
         if (afc != null) {
-          if (hasSelectionOrAttributeConflictForInheritance(afc, efc)) {
+          if (hasInheritanceConflicts(afc, efc)) {
             ListSequence.fromList(conflicts).addElement(ImmutablePair.of(extendedConfig, afc));
           }
         }
@@ -55,8 +56,8 @@ public class FeatureModelConfigurationInheritanceUtil {
     return ListSequence.fromList(conflicts).distinct();
   }
 
-  private static boolean hasSelectionOrAttributeConflictForInheritance(SNode afc, SNode efc) {
-    return !(selectionStateOkToApplyInheritance(afc, efc)) || !(attributesOkToApplyInheritance(afc, efc));
+  private static boolean hasInheritanceConflicts(SNode afc, SNode efc) {
+    return !(selectionStateOkToApplyInheritance(afc, efc)) || !(attributesOkToApplyInheritance(afc, efc)) || !(contentOkToApplyInheritance(afc, efc));
   }
 
   private static boolean attributesOkToApplyInheritance(SNode afc, SNode efc) {
@@ -70,6 +71,37 @@ public class FeatureModelConfigurationInheritanceUtil {
     return true;
   }
 
+  private static boolean contentOkToApplyInheritance(SNode afc, SNode efc) {
+    // nothing of the extending config can get lost if one of the two sides has no content at all
+    if (hasNoContent(afc) || hasNoContent(efc)) {
+      return true;
+    }
+    // the extended config leaves the decision 'unspecified' and thus does not restrict the extending config
+    if (SNodeOperations.isInstanceOf(SLinkOperations.getTarget(efc, LINKS.content$Wdfq), CONCEPTS.FeatureModelConfigurationBase$y8)) {
+      return true;
+    }
+    // the extending config has not decided anything yet and can take over the decision of the extended config
+    if (SNodeOperations.isInstanceOf(SLinkOperations.getTarget(afc, LINKS.content$Wdfq), CONCEPTS.FeatureModelConfigurationBase$y8) || isEmptyInlineContent(afc)) {
+      return true;
+    }
+    {
+      final SNode efcRef = SLinkOperations.getTarget(efc, LINKS.content$Wdfq);
+      if (SNodeOperations.isInstanceOf(efcRef, CONCEPTS.FeatureModelConfigurationRef$kq)) {
+        // the extended config references a config: the extending config must reference the same config or one which extends it,
+        // otherwise 'applyInheritance' would silently discard the content of the extending config
+        {
+          final SNode afcRef = SLinkOperations.getTarget(afc, LINKS.content$Wdfq);
+          if (SNodeOperations.isInstanceOf(afcRef, CONCEPTS.FeatureModelConfigurationRef$kq)) {
+            return Objects.equals(SLinkOperations.getTarget(afcRef, LINKS.config$VWuN), SLinkOperations.getTarget(efcRef, LINKS.config$VWuN)) || contentExtendsConfigOfExtended(afcRef, SLinkOperations.getTarget(efcRef, LINKS.config$VWuN));
+          }
+        }
+        return false;
+      }
+    }
+    // the extended config is inlined: the extending config must be inlined as well so that 'applyInheritance'
+    // can reconcile the two of them subfeature-wise
+    return SNodeOperations.isInstanceOf(SLinkOperations.getTarget(afc, LINKS.content$Wdfq), CONCEPTS.InlineFeatureConfigurationContent$P5);
+  }
 
   private static boolean selectionStateOkToApplyInheritance(SNode afc, SNode efc) {
     {
@@ -121,7 +153,15 @@ public class FeatureModelConfigurationInheritanceUtil {
    * @return true if the configuration-tree rooted at subConfig can be detached
    */
   public static boolean applyInheritance(final SNode subConfig, @Nullable SNode parentSubConfig, final SNode extendedConfig, @Nullable SNode parentExtendedConfig) {
+    {
+      final SNode fmcb = SLinkOperations.getTarget(subConfig, LINKS.content$Wdfq);
+      if (SNodeOperations.isInstanceOf(fmcb, CONCEPTS.FeatureModelConfigurationBase$y8)) {
+        SNode root = SLinkOperations.getTarget(FeatureModelConfigurationBase__BehaviorDescriptor.featureModel_id27K8O1MvJyD.invoke(fmcb), LINKS.root$XEj1);
+        SNode content = FeatureModelConfigurationConstraintsUtil.configContentByFeature(root);
 
+        SLinkOperations.setTarget(subConfig, LINKS.content$Wdfq, content);
+      }
+    }
     // Case when extended leaves a Config-Include 'unspecified'.
     {
       final SNode fmcb = SLinkOperations.getTarget(extendedConfig, LINKS.content$Wdfq);
@@ -129,7 +169,7 @@ public class FeatureModelConfigurationInheritanceUtil {
         if (hasNoContent(subConfig) || isEmptyInlineContent(subConfig)) {
           // The extending config takes over this decision as no other reference has been set
           // by replacing its 'content' also with 'unspecified'
-          SLinkOperations.setTarget(subConfig, LINKS.content$Wdfq, createFeatureModelConfigurationBase_w45mms_a0a2a0a2a71());
+          SLinkOperations.setTarget(subConfig, LINKS.content$Wdfq, createFeatureModelConfigurationBase_w45mms_a0a2a0a2a81());
         }
         applyAttributesOfExtendedConfig(subConfig, extendedConfig);
         applySelectionsOfExtendedConfig(subConfig, extendedConfig);
@@ -146,7 +186,7 @@ public class FeatureModelConfigurationInheritanceUtil {
             SNodeOperations.replaceWithAnother(SLinkOperations.getTarget(subConfig, LINKS.content$Wdfq), SNodeOperations.copyNode(fmcr));
           }
         } else {
-          SLinkOperations.setTarget(subConfig, LINKS.content$Wdfq, createInlineFeatureConfigurationContent_w45mms_a0a0a0a0f0r());
+          SLinkOperations.setTarget(subConfig, LINKS.content$Wdfq, createInlineFeatureConfigurationContent_w45mms_a0a0a0a0f0s());
         }
         applyAttributesOfExtendedConfig(subConfig, extendedConfig);
         applySelectionsOfExtendedConfig(subConfig, extendedConfig);
@@ -313,31 +353,32 @@ public class FeatureModelConfigurationInheritanceUtil {
     }
     return result;
   }
-  private static SNode createFeatureModelConfigurationBase_w45mms_a0a2a0a2a71() {
+  private static SNode createFeatureModelConfigurationBase_w45mms_a0a2a0a2a81() {
     SNodeBuilder n0 = new SNodeBuilder().init(CONCEPTS.FeatureModelConfigurationBase$y8);
     return n0.getResult();
   }
-  private static SNode createInlineFeatureConfigurationContent_w45mms_a0a0a0a0f0r() {
+  private static SNode createInlineFeatureConfigurationContent_w45mms_a0a0a0a0f0s() {
     SNodeBuilder n0 = new SNodeBuilder().init(CONCEPTS.InlineFeatureConfigurationContent$P5);
     return n0.getResult();
   }
 
   private static final class LINKS {
     /*package*/ static final SContainmentLink value$kgDc = MetaAdapterFactory.getContainmentLink(0x71226ee2bbc445d2L, 0xa41d20b97237156cL, 0x302aa0c2ddc5ae16L, 0x302aa0c2ddd1e2aaL, "value");
-    /*package*/ static final SContainmentLink extendedFMC$tFbw = MetaAdapterFactory.getContainmentLink(0x71226ee2bbc445d2L, 0xa41d20b97237156cL, 0x5cf5c0d0479ec915L, 0x4617323a864bd075L, "extendedFMC");
-    /*package*/ static final SReferenceLink config$ID3f = MetaAdapterFactory.getReferenceLink(0x71226ee2bbc445d2L, 0xa41d20b97237156cL, 0x4617323a864bd036L, 0x4617323a864bd049L, "config");
     /*package*/ static final SContainmentLink content$Wdfq = MetaAdapterFactory.getContainmentLink(0x71226ee2bbc445d2L, 0xa41d20b97237156cL, 0x302aa0c2ddab8940L, 0x5cf5c0d0479f4bc8L, "content");
     /*package*/ static final SReferenceLink config$VWuN = MetaAdapterFactory.getReferenceLink(0x71226ee2bbc445d2L, 0xa41d20b97237156cL, 0x5cf5c0d0479eed6aL, 0x5cf5c0d0479eed6bL, "config");
+    /*package*/ static final SContainmentLink extendedFMC$tFbw = MetaAdapterFactory.getContainmentLink(0x71226ee2bbc445d2L, 0xa41d20b97237156cL, 0x5cf5c0d0479ec915L, 0x4617323a864bd075L, "extendedFMC");
+    /*package*/ static final SReferenceLink config$ID3f = MetaAdapterFactory.getReferenceLink(0x71226ee2bbc445d2L, 0xa41d20b97237156cL, 0x4617323a864bd036L, 0x4617323a864bd049L, "config");
+    /*package*/ static final SContainmentLink root$XEj1 = MetaAdapterFactory.getContainmentLink(0x165f1d0525064544L, 0x895e1424f54166ecL, 0x375cadc47516a211L, 0x375cadc47516a30cL, "root");
     /*package*/ static final SContainmentLink subfeatureConfigurations$l9wi = MetaAdapterFactory.getContainmentLink(0x71226ee2bbc445d2L, 0xa41d20b97237156cL, 0x5cf5c0d0479f4bfcL, 0x5cf5c0d0479ec91aL, "subfeatureConfigurations");
     /*package*/ static final SReferenceLink targetFeature$16lA = MetaAdapterFactory.getReferenceLink(0x71226ee2bbc445d2L, 0xa41d20b97237156cL, 0x302aa0c2ddab8940L, 0x5cf5c0d0479ec91eL, "targetFeature");
     /*package*/ static final SReferenceLink attribute$J5jI = MetaAdapterFactory.getReferenceLink(0x71226ee2bbc445d2L, 0xa41d20b97237156cL, 0x302aa0c2ddc5ae16L, 0x302aa0c2ddca3d88L, "attribute");
   }
 
   private static final class CONCEPTS {
-    /*package*/ static final SConcept FeatureModelConfiguration$nE = MetaAdapterFactory.getConcept(0x71226ee2bbc445d2L, 0xa41d20b97237156cL, 0x5cf5c0d0479ec915L, "org.iets3.variability.configuration.base.structure.FeatureModelConfiguration");
     /*package*/ static final SConcept FeatureModelConfigurationBase$y8 = MetaAdapterFactory.getConcept(0x71226ee2bbc445d2L, 0xa41d20b97237156cL, 0x2e34d227ff954d8bL, "org.iets3.variability.configuration.base.structure.FeatureModelConfigurationBase");
     /*package*/ static final SConcept FeatureModelConfigurationRef$kq = MetaAdapterFactory.getConcept(0x71226ee2bbc445d2L, 0xa41d20b97237156cL, 0x5cf5c0d0479eed6aL, "org.iets3.variability.configuration.base.structure.FeatureModelConfigurationRef");
     /*package*/ static final SConcept InlineFeatureConfigurationContent$P5 = MetaAdapterFactory.getConcept(0x71226ee2bbc445d2L, 0xa41d20b97237156cL, 0x5cf5c0d0479f4bfcL, "org.iets3.variability.configuration.base.structure.InlineFeatureConfigurationContent");
+    /*package*/ static final SConcept FeatureModelConfiguration$nE = MetaAdapterFactory.getConcept(0x71226ee2bbc445d2L, 0xa41d20b97237156cL, 0x5cf5c0d0479ec915L, "org.iets3.variability.configuration.base.structure.FeatureModelConfiguration");
   }
 
   private static final class PROPS {
