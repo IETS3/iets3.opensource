@@ -5,6 +5,11 @@ All notable changes to this project are documented in this file.
 Format of the log is _loosely_ based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 The project does _not_ follow Semantic Versioning and the changes are documented in reverse chronological order, grouped by calendar month.
 
+## September 2026
+
+### Fixed
+- Variability: "Adapt this configuration to the extended configuration" no longer skips sub-configurations whose content is still unspecified (`FeatureModelConfigurationBase`). Such a content is now materialized as an inline configuration derived from the referenced feature model, so the values of the extended configuration are inherited ([#1953](https://github.com/IETS3/iets3.opensource/issues/1953)).
+
 ## August 2026
 
 ### Fixed

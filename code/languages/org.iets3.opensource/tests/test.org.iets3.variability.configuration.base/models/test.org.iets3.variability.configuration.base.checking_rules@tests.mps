@@ -129,6 +129,7 @@
         <reference id="6698472021570809195" name="config" index="rqMQV" />
       </concept>
       <concept id="3329517093767171467" name="org.iets3.variability.configuration.base.structure.FeatureModelConfigurationBase" flags="ng" index="3hCpYG" />
+      <concept id="3795093562300048859" name="org.iets3.variability.configuration.base.structure.FeatureConfigurationErrorContent" flags="ng" index="3yVGiB" />
       <concept id="3470763221645494592" name="org.iets3.variability.configuration.base.structure.AbstractFeatureConfiguration" flags="ng" index="3HwiA2">
         <property id="5939066662398655707" name="selectionState" index="3BMj5M" />
         <reference id="6698472021570799902" name="targetFeature" index="rqKBe" />
@@ -2460,6 +2461,51 @@
           </node>
         </node>
         <node concept="12i7jc" id="6p08gUDCquy" role="12i2BX" />
+      </node>
+    </node>
+  </node>
+  <node concept="1lH9Xt" id="2y1qxAPAk4M">
+    <property role="TrG5h" value="ConfigForModelWithDependencyCycle" />
+    <property role="3DII0k" value="2hh8MJdVwqX/command" />
+    <node concept="1qefOq" id="2y1qxAPAk4N" role="1SKRRt">
+      <node concept="12icEM" id="2y1qxAPAk4O" role="1qenE9">
+        <property role="TrG5h" value="MyVMC" />
+        <node concept="12iwZl" id="2y1qxAPAk4P" role="12i2BX">
+          <property role="bVyBI" value="-927065378" />
+          <node concept="12iwV3" id="2y1qxAPAk4Q" role="12iwV8">
+            <property role="TrG5h" value="A" />
+            <node concept="12iSMG" id="2y1qxAPAk4R" role="12iwVe">
+              <property role="TrG5h" value="b" />
+              <ref role="12iSMH" node="2y1qxAPAk4S" resolve="B" />
+            </node>
+          </node>
+        </node>
+        <node concept="12iwZl" id="2y1qxAPAk4S" role="12i2BX">
+          <property role="bVyBI" value="-1895026307" />
+          <node concept="12iwV3" id="2y1qxAPAk4T" role="12iwV8">
+            <property role="TrG5h" value="B" />
+            <node concept="12iSMG" id="2y1qxAPAk4U" role="12iwVe">
+              <property role="TrG5h" value="a" />
+              <ref role="12iSMH" node="2y1qxAPAk4P" resolve="A" />
+            </node>
+          </node>
+        </node>
+        <node concept="rqKB5" id="2y1qxAPAk4V" role="12i2BX">
+          <property role="TrG5h" value="CA" />
+          <property role="1nQUAq" value="true" />
+          <property role="1n_0Gn" value="true" />
+          <property role="26YOJW" value="" />
+          <property role="bVyBI" value="-1901896260" />
+          <ref role="rqKBe" node="2y1qxAPAk4Q" resolve="A" />
+          <node concept="3yVGiB" id="2y1qxAPAk4W" role="rqCGo" />
+          <node concept="7CXmI" id="2y1qxAPAk4X" role="lGtFl">
+            <node concept="1TM$A" id="2y1qxAPAk4Y" role="7EUXB">
+              <node concept="2PYRI3" id="2y1qxAPAk4Z" role="3lydEf">
+                <ref role="39XzEq" to="urik:34IieWHiqfZ" />
+              </node>
+            </node>
+          </node>
+        </node>
       </node>
     </node>
   </node>
