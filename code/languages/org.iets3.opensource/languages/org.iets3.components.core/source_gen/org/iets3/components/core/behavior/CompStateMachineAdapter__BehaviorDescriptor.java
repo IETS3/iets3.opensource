@@ -21,7 +21,7 @@ public final class CompStateMachineAdapter__BehaviorDescriptor extends BaseBHDes
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getConcept(0xf0fd486f857743e9L, 0xb6713d118449c6e7L, 0x3493a42992ae54daL, "org.iets3.components.core.structure.CompStateMachineAdapter");
 
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList();
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList();
 
   private static void ___init___(@NotNull SNode __thisNode__) {
     SLinkOperations.setTarget(__thisNode__, LINKS.toplevelExprContent$igxr, SConceptOperations.createNewNode(MetaAdapterFactory.getConcept(0xcd87ddab6434448eL, 0xa0111e1c898de18eL, 0x7939418a3e285ca3L, "org.iets3.core.expr.statemachines.structure.StateMachine")));

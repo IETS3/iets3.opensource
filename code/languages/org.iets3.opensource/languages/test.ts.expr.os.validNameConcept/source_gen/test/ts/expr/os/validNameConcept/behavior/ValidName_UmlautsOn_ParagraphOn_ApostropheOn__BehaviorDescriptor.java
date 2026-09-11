@@ -7,27 +7,23 @@ import org.jetbrains.mps.openapi.language.SAbstractConcept;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import java.util.List;
 import java.util.Arrays;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.mps.openapi.model.SNode;
-import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 
 public final class ValidName_UmlautsOn_ParagraphOn_ApostropheOn__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getConcept(0xa2242e6fd30841e6L, 0xac0628b0a2a4ad79L, 0x6d326765c6f19d62L, "test.ts.expr.os.validNameConcept.structure.ValidName_UmlautsOn_ParagraphOn_ApostropheOn");
 
-  public static final SMethod<Boolean> overrideDefaultAllowUmlaute_id5D8v3P4jYKp = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("overrideDefaultAllowUmlaute").modifiers(9, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(6505586264317619225L).languageId(0xbd9c05c0f8725a35L, 0x7b68d745a7b848b9L).build2();
-  public static final SMethod<Boolean> overrideDefaultAllowParagraph_id5D8v3P4lqOn = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("overrideDefaultAllowParagraph").modifiers(9, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(6505586264317996311L).languageId(0xbd9c05c0f8725a35L, 0x7b68d745a7b848b9L).build2();
-  public static final SMethod<Boolean> overrideDefaultAllowApostrophe_id5TO$xcFx5xN = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("overrideDefaultAllowApostrophe").modifiers(9, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(6806225547895789683L).languageId(0xbd9c05c0f8725a35L, 0x7b68d745a7b848b9L).build2();
+  public static final SMethod<Boolean> overrideDefaultAllowUmlaute_id5D8v3P4jYKp = new SMethodBuilder<>(Boolean.TYPE).name("overrideDefaultAllowUmlaute").modifiers(9, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(6505586264317619225L).languageId(0xbd9c05c0f8725a35L, 0x7b68d745a7b848b9L).build2();
+  public static final SMethod<Boolean> overrideDefaultAllowParagraph_id5D8v3P4lqOn = new SMethodBuilder<>(Boolean.TYPE).name("overrideDefaultAllowParagraph").modifiers(9, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(6505586264317996311L).languageId(0xbd9c05c0f8725a35L, 0x7b68d745a7b848b9L).build2();
+  public static final SMethod<Boolean> overrideDefaultAllowApostrophe_id5TO$xcFx5xN = new SMethodBuilder<>(Boolean.TYPE).name("overrideDefaultAllowApostrophe").modifiers(9, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(6806225547895789683L).languageId(0xbd9c05c0f8725a35L, 0x7b68d745a7b848b9L).build2();
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(overrideDefaultAllowUmlaute_id5D8v3P4jYKp, overrideDefaultAllowParagraph_id5D8v3P4lqOn, overrideDefaultAllowApostrophe_id5TO$xcFx5xN);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(overrideDefaultAllowUmlaute_id5D8v3P4jYKp, overrideDefaultAllowParagraph_id5D8v3P4lqOn, overrideDefaultAllowApostrophe_id5TO$xcFx5xN);
 
-  private static void ___init___(@NotNull SNode __thisNode__) {
-  }
 
   /*package*/ static boolean overrideDefaultAllowUmlaute_id5D8v3P4jYKp(@NotNull SAbstractConcept __thisConcept__) {
     return true;
@@ -42,10 +38,6 @@ public final class ValidName_UmlautsOn_ParagraphOn_ApostropheOn__BehaviorDescrip
   /*package*/ ValidName_UmlautsOn_ParagraphOn_ApostropheOn__BehaviorDescriptor() {
   }
 
-  @Override
-  protected void initNode(@NotNull SNode node, @NotNull SConstructor constructor, @Nullable Object[] parameters) {
-    ___init___(node);
-  }
 
   @Override
   protected <T> T invokeSpecial0(@NotNull SNode node, @NotNull SMethod<T> method, @Nullable Object[] parameters) {

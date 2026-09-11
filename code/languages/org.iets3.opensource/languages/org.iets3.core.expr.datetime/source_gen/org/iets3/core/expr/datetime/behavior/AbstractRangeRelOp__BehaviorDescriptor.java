@@ -7,25 +7,21 @@ import org.jetbrains.mps.openapi.language.SAbstractConcept;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import java.util.List;
 import java.util.Arrays;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.mps.openapi.model.SNode;
-import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 
 public final class AbstractRangeRelOp__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getConcept(0x289fb12b7f534ef7L, 0xbc2e1ed2c6a7c998L, 0x7511add9ed8aa4f2L, "org.iets3.core.expr.datetime.structure.AbstractRangeRelOp");
 
-  public static final SMethod<Boolean> alsoAllowSingleDate_id4O9rw8aBa$l = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("alsoAllowSingleDate").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5551088970757875989L).languageId(0xbc2e1ed2c6a7c998L, 0x289fb12b7f534ef7L).build2();
+  public static final SMethod<Boolean> alsoAllowSingleDate_id4O9rw8aBa$l = new SMethodBuilder<>(Boolean.TYPE).name("alsoAllowSingleDate").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5551088970757875989L).languageId(0xbc2e1ed2c6a7c998L, 0x289fb12b7f534ef7L).build2();
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(alsoAllowSingleDate_id4O9rw8aBa$l);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(alsoAllowSingleDate_id4O9rw8aBa$l);
 
-  private static void ___init___(@NotNull SNode __thisNode__) {
-  }
 
   /*package*/ static boolean alsoAllowSingleDate_id4O9rw8aBa$l(@NotNull SNode __thisNode__) {
     return false;
@@ -34,10 +30,6 @@ public final class AbstractRangeRelOp__BehaviorDescriptor extends BaseBHDescript
   /*package*/ AbstractRangeRelOp__BehaviorDescriptor() {
   }
 
-  @Override
-  protected void initNode(@NotNull SNode node, @NotNull SConstructor constructor, @Nullable Object[] parameters) {
-    ___init___(node);
-  }
 
   @Override
   protected <T> T invokeSpecial0(@NotNull SNode node, @NotNull SMethod<T> method, @Nullable Object[] parameters) {

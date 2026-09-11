@@ -7,7 +7,6 @@ import org.jetbrains.mps.openapi.language.SAbstractConcept;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import org.jetbrains.mps.openapi.model.SNode;
 import java.util.List;
@@ -15,7 +14,6 @@ import java.util.Arrays;
 import org.jetbrains.annotations.NotNull;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
-import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 import org.jetbrains.mps.openapi.language.SProperty;
@@ -25,13 +23,11 @@ import org.jetbrains.mps.openapi.language.SReferenceLink;
 public final class Bookmark__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getConcept(0x32190be623f74e17L, 0xaad4fb739bb3569fL, 0x47ff1854b01d0999L, "org.iets3.core.expr.doc.structure.Bookmark");
 
-  public static final SMethod<String[]> getQualifiedName_id2m0pXWMyYL = new SMethodBuilder<String[]>(new SJavaCompoundTypeImpl(String[].class)).name("getQualifiedName").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(42223031011651505L).languageId(0xaad4fb739bb3569fL, 0x32190be623f74e17L).build2();
-  public static final SMethod<SNode> getBookmarkedNode_id4vZ65iK1hOY = new SMethodBuilder<SNode>(new SJavaCompoundTypeImpl((Class<SNode>) ((Class) Object.class))).name("getBookmarkedNode").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5187892047763545406L).languageId(0xaad4fb739bb3569fL, 0x32190be623f74e17L).build2();
+  public static final SMethod<String[]> getQualifiedName_id2m0pXWMyYL = new SMethodBuilder<>(String[].class).name("getQualifiedName").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(42223031011651505L).languageId(0xaad4fb739bb3569fL, 0x32190be623f74e17L).build2();
+  public static final SMethod<SNode> getBookmarkedNode_id4vZ65iK1hOY = new SMethodBuilder<>(SNode.class).name("getBookmarkedNode").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5187892047763545406L).languageId(0xaad4fb739bb3569fL, 0x32190be623f74e17L).build2();
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(getQualifiedName_id2m0pXWMyYL, getBookmarkedNode_id4vZ65iK1hOY);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(getQualifiedName_id2m0pXWMyYL, getBookmarkedNode_id4vZ65iK1hOY);
 
-  private static void ___init___(@NotNull SNode __thisNode__) {
-  }
 
   /*package*/ static String[] getQualifiedName_id2m0pXWMyYL(@NotNull SNode __thisNode__) {
     return SPropertyOperations.getString(__thisNode__, PROPS.label$DApq).split("\\.");
@@ -46,10 +42,6 @@ public final class Bookmark__BehaviorDescriptor extends BaseBHDescriptor {
   /*package*/ Bookmark__BehaviorDescriptor() {
   }
 
-  @Override
-  protected void initNode(@NotNull SNode node, @NotNull SConstructor constructor, @Nullable Object[] parameters) {
-    ___init___(node);
-  }
 
   @Override
   protected <T> T invokeSpecial0(@NotNull SNode node, @NotNull SMethod<T> method, @Nullable Object[] parameters) {

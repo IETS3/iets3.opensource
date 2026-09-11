@@ -7,7 +7,6 @@ import org.jetbrains.mps.openapi.language.SAbstractConcept;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import org.jetbrains.mps.openapi.language.SProperty;
 import java.math.BigInteger;
@@ -21,7 +20,6 @@ import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
 import org.jetbrains.mps.openapi.model.SNodeReference;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations;
 import java.util.Objects;
-import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 import java.util.regex.Pattern;
@@ -30,16 +28,14 @@ import org.jetbrains.mps.openapi.language.SInterfaceConcept;
 public final class HexValue__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getConcept(0xcfaa4966b7d54b69L, 0xb66a309a6e1a7290L, 0x5f9c9574385e6251L, "org.iets3.core.expr.base.structure.HexValue");
 
-  public static final SMethod<String> getPresentation_idhEwIMiw = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("getPresentation").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(1213877396640L).languageId(0x9b92103b95ca8c0cL, 0xceab519525ea4f22L).build2();
-  public static final SMethod<Void> setProperty_id2KEzU_juQOS = new SMethodBuilder<Void>(new SJavaCompoundTypeImpl(Void.class)).name("setProperty").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(3182514044103519544L).languageId(0xb66a309a6e1a7290L, 0xcfaa4966b7d54b69L).build2(SMethodBuilder.createJavaParameter(SProperty.class, ""));
-  public static final SMethod<BigInteger> toNumber_id5Ys_ngSnY$C = new SMethodBuilder<BigInteger>(new SJavaCompoundTypeImpl(BigInteger.class)).name("toNumber").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(6889545856364570920L).languageId(0xb66a309a6e1a7290L, 0xcfaa4966b7d54b69L).build2();
-  public static final SMethod<Boolean> isHexaDecimal_id5Ys_ngSnA9D = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("isHexaDecimal").modifiers(1, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(6889545856364470889L).languageId(0xb66a309a6e1a7290L, 0xcfaa4966b7d54b69L).build2(SMethodBuilder.createJavaParameter(String.class, ""));
-  public static final SMethod<SNodePointer> getPropertyReference_id2KEzU_ju41e = new SMethodBuilder<SNodePointer>(new SJavaCompoundTypeImpl(SNodePointer.class)).name("getPropertyReference").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(3182514044103311438L).languageId(0xb66a309a6e1a7290L, 0xcfaa4966b7d54b69L).build2();
+  public static final SMethod<String> getPresentation_idhEwIMiw = new SMethodBuilder<>(String.class).name("getPresentation").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(1213877396640L).languageId(0x9b92103b95ca8c0cL, 0xceab519525ea4f22L).build2();
+  public static final SMethod<Void> setProperty_id2KEzU_juQOS = new SMethodBuilder<>(Void.TYPE).name("setProperty").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(3182514044103519544L).languageId(0xb66a309a6e1a7290L, 0xcfaa4966b7d54b69L).build2(SMethodBuilder.createJavaParameter(SProperty.class, "property"));
+  public static final SMethod<BigInteger> toNumber_id5Ys_ngSnY$C = new SMethodBuilder<>(BigInteger.class).name("toNumber").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(6889545856364570920L).languageId(0xb66a309a6e1a7290L, 0xcfaa4966b7d54b69L).build2();
+  public static final SMethod<Boolean> isHexaDecimal_id5Ys_ngSnA9D = new SMethodBuilder<>(Boolean.TYPE).name("isHexaDecimal").modifiers(1, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(6889545856364470889L).languageId(0xb66a309a6e1a7290L, 0xcfaa4966b7d54b69L).build2(SMethodBuilder.createJavaParameter(String.class, "val"));
+  public static final SMethod<SNodePointer> getPropertyReference_id2KEzU_ju41e = new SMethodBuilder<>(SNodePointer.class).name("getPropertyReference").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(3182514044103311438L).languageId(0xb66a309a6e1a7290L, 0xcfaa4966b7d54b69L).build2();
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(getPresentation_idhEwIMiw, setProperty_id2KEzU_juQOS, toNumber_id5Ys_ngSnY$C, isHexaDecimal_id5Ys_ngSnA9D, getPropertyReference_id2KEzU_ju41e);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(getPresentation_idhEwIMiw, setProperty_id2KEzU_juQOS, toNumber_id5Ys_ngSnY$C, isHexaDecimal_id5Ys_ngSnA9D, getPropertyReference_id2KEzU_ju41e);
 
-  private static void ___init___(@NotNull SNode __thisNode__) {
-  }
 
   /*package*/ static String getPresentation_idhEwIMiw(@NotNull SNode __thisNode__) {
     return "@hex value " + BaseConcept__BehaviorDescriptor.getPresentation_idhEwIMiw.invoke(SNodeOperations.getParent(__thisNode__));
@@ -74,10 +70,6 @@ public final class HexValue__BehaviorDescriptor extends BaseBHDescriptor {
   /*package*/ HexValue__BehaviorDescriptor() {
   }
 
-  @Override
-  protected void initNode(@NotNull SNode node, @NotNull SConstructor constructor, @Nullable Object[] parameters) {
-    ___init___(node);
-  }
 
   @Override
   protected <T> T invokeSpecial0(@NotNull SNode node, @NotNull SMethod<T> method, @Nullable Object[] parameters) {

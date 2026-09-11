@@ -7,14 +7,12 @@ import org.jetbrains.mps.openapi.language.SAbstractConcept;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import org.jetbrains.mps.openapi.model.SNode;
 import java.util.List;
 import java.util.Arrays;
 import org.jetbrains.annotations.NotNull;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
-import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 import org.jetbrains.mps.openapi.language.SConcept;
@@ -22,13 +20,11 @@ import org.jetbrains.mps.openapi.language.SConcept;
 public final class TestKindB__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getConcept(0x3c910f627ca945f3L, 0xa98ac6239acaa8f1L, 0x7c4bff0d16b7639eL, "test.iest3.component.attribute.structure.TestKindB");
 
-  public static final SMethod<Boolean> canBeReferencedInContext_id5WV8nQc1dAv = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("canBeReferencedInContext").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(6862115280332839327L).languageId(0xb6713d118449c6e7L, 0xf0fd486f857743e9L).build2(SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""));
-  public static final SMethod<Boolean> canBeInContext_id6LfBX8Ylle0 = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("canBeInContext").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(7804632404594086784L).languageId(0xb6713d118449c6e7L, 0xf0fd486f857743e9L).build2(SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""));
+  public static final SMethod<Boolean> canBeReferencedInContext_id5WV8nQc1dAv = new SMethodBuilder<>(Boolean.TYPE).name("canBeReferencedInContext").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(6862115280332839327L).languageId(0xb6713d118449c6e7L, 0xf0fd486f857743e9L).build2(SMethodBuilder.createJavaParameter(SNode.class, "contextKind"));
+  public static final SMethod<Boolean> canBeInContext_id6LfBX8Ylle0 = new SMethodBuilder<>(Boolean.TYPE).name("canBeInContext").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(7804632404594086784L).languageId(0xb6713d118449c6e7L, 0xf0fd486f857743e9L).build2(SMethodBuilder.createJavaParameter(SNode.class, "contextKind"));
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(canBeReferencedInContext_id5WV8nQc1dAv, canBeInContext_id6LfBX8Ylle0);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(canBeReferencedInContext_id5WV8nQc1dAv, canBeInContext_id6LfBX8Ylle0);
 
-  private static void ___init___(@NotNull SNode __thisNode__) {
-  }
 
   /*package*/ static boolean canBeReferencedInContext_id5WV8nQc1dAv(@NotNull SNode __thisNode__, SNode contextKind) {
     return SNodeOperations.isInstanceOf(contextKind, CONCEPTS.TestKindC$2i);
@@ -40,10 +36,6 @@ public final class TestKindB__BehaviorDescriptor extends BaseBHDescriptor {
   /*package*/ TestKindB__BehaviorDescriptor() {
   }
 
-  @Override
-  protected void initNode(@NotNull SNode node, @NotNull SConstructor constructor, @Nullable Object[] parameters) {
-    ___init___(node);
-  }
 
   @Override
   protected <T> T invokeSpecial0(@NotNull SNode node, @NotNull SMethod<T> method, @Nullable Object[] parameters) {

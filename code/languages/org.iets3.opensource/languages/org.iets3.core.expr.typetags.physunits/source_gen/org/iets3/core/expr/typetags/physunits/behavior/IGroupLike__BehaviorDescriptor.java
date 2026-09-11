@@ -8,30 +8,26 @@ import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import org.jetbrains.mps.openapi.model.SNode;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import org.iets3.core.expr.base.runtime.runtime.Fraction;
 import java.util.List;
 import java.util.Arrays;
 import org.jetbrains.annotations.NotNull;
-import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 
 public final class IGroupLike__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getInterfaceConcept(0x7ee265bd59864709L, 0x86ed2c6daa33cd8cL, 0x414a129fbfe5a091L, "org.iets3.core.expr.typetags.physunits.structure.IGroupLike");
 
-  public static final SMethod<SNode> mkMultiply_id45a4DYZTqDU = new SMethodBuilder<SNode>(new SJavaCompoundTypeImpl((Class<SNode>) ((Class) Object.class))).name("mkMultiply").modifiers(12, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(4704593238070504058L).languageId(0x86ed2c6daa33cd8cL, 0x7ee265bd59864709L).build2(SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""), SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""));
-  public static final SMethod<SNode> mkDivide_id45a4DYZTre1 = new SMethodBuilder<SNode>(new SJavaCompoundTypeImpl((Class<SNode>) ((Class) Object.class))).name("mkDivide").modifiers(12, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(4704593238070506369L).languageId(0x86ed2c6daa33cd8cL, 0x7ee265bd59864709L).build2(SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""), SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""));
-  public static final SMethod<SNode> mkPower_id45a4DYZTrHQ = new SMethodBuilder<SNode>(new SJavaCompoundTypeImpl((Class<SNode>) ((Class) Object.class))).name("mkPower").modifiers(12, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(4704593238070508406L).languageId(0x86ed2c6daa33cd8cL, 0x7ee265bd59864709L).build2(SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""), SMethodBuilder.createJavaParameter(Integer.TYPE, ""));
-  public static final SMethod<SNode> mkPower_id15KrVXSDEu7 = new SMethodBuilder<SNode>(new SJavaCompoundTypeImpl((Class<SNode>) ((Class) Object.class))).name("mkPower").modifiers(12, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(1256627164189992839L).languageId(0x86ed2c6daa33cd8cL, 0x7ee265bd59864709L).build2(SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""), SMethodBuilder.createJavaParameter(Fraction.class, ""));
-  public static final SMethod<SNode> mkNeutralElem_id45a4DYZV86U = new SMethodBuilder<SNode>(new SJavaCompoundTypeImpl((Class<SNode>) ((Class) Object.class))).name("mkNeutralElem").modifiers(12, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(4704593238070952378L).languageId(0x86ed2c6daa33cd8cL, 0x7ee265bd59864709L).build2();
-  public static final SMethod<String> getName_id6Yx4TURG_yz = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("getName").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(8043731981868095651L).languageId(0x86ed2c6daa33cd8cL, 0x7ee265bd59864709L).build2();
+  public static final SMethod<SNode> mkMultiply_id45a4DYZTqDU = new SMethodBuilder<>(SNode.class).name("mkMultiply").modifiers(12, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(4704593238070504058L).languageId(0x86ed2c6daa33cd8cL, 0x7ee265bd59864709L).build2(SMethodBuilder.createJavaParameter(SNode.class, "left"), SMethodBuilder.createJavaParameter(SNode.class, "right"));
+  public static final SMethod<SNode> mkDivide_id45a4DYZTre1 = new SMethodBuilder<>(SNode.class).name("mkDivide").modifiers(12, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(4704593238070506369L).languageId(0x86ed2c6daa33cd8cL, 0x7ee265bd59864709L).build2(SMethodBuilder.createJavaParameter(SNode.class, "top"), SMethodBuilder.createJavaParameter(SNode.class, "bot"));
+  public static final SMethod<SNode> mkPower_id45a4DYZTrHQ = new SMethodBuilder<>(SNode.class).name("mkPower").modifiers(12, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(4704593238070508406L).languageId(0x86ed2c6daa33cd8cL, 0x7ee265bd59864709L).build2(SMethodBuilder.createJavaParameter(SNode.class, "base"), SMethodBuilder.createJavaParameter(Integer.TYPE, "pow"));
+  public static final SMethod<SNode> mkPower_id15KrVXSDEu7 = new SMethodBuilder<>(SNode.class).name("mkPower").modifiers(12, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(1256627164189992839L).languageId(0x86ed2c6daa33cd8cL, 0x7ee265bd59864709L).build2(SMethodBuilder.createJavaParameter(SNode.class, "base"), SMethodBuilder.createJavaParameter(Fraction.class, "pow"));
+  public static final SMethod<SNode> mkNeutralElem_id45a4DYZV86U = new SMethodBuilder<>(SNode.class).name("mkNeutralElem").modifiers(12, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(4704593238070952378L).languageId(0x86ed2c6daa33cd8cL, 0x7ee265bd59864709L).build2();
+  public static final SMethod<String> getName_id6Yx4TURG_yz = new SMethodBuilder<>(String.class).name("getName").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(8043731981868095651L).languageId(0x86ed2c6daa33cd8cL, 0x7ee265bd59864709L).build2();
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(mkMultiply_id45a4DYZTqDU, mkDivide_id45a4DYZTre1, mkPower_id45a4DYZTrHQ, mkPower_id15KrVXSDEu7, mkNeutralElem_id45a4DYZV86U, getName_id6Yx4TURG_yz);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(mkMultiply_id45a4DYZTqDU, mkDivide_id45a4DYZTre1, mkPower_id45a4DYZTrHQ, mkPower_id15KrVXSDEu7, mkNeutralElem_id45a4DYZV86U, getName_id6Yx4TURG_yz);
 
-  private static void ___init___(@NotNull SNode __thisNode__) {
-  }
 
   /*package*/ static String getName_id6Yx4TURG_yz(@NotNull SNode __thisNode__) {
     return null;
@@ -40,10 +36,6 @@ public final class IGroupLike__BehaviorDescriptor extends BaseBHDescriptor {
   /*package*/ IGroupLike__BehaviorDescriptor() {
   }
 
-  @Override
-  protected void initNode(@NotNull SNode node, @NotNull SConstructor constructor, @Nullable Object[] parameters) {
-    ___init___(node);
-  }
 
   @Override
   protected <T> T invokeSpecial0(@NotNull SNode node, @NotNull SMethod<T> method, @Nullable Object[] parameters) {

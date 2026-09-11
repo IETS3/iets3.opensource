@@ -7,7 +7,6 @@ import org.jetbrains.mps.openapi.language.SAbstractConcept;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import java.util.List;
 import java.util.Arrays;
@@ -18,7 +17,6 @@ import jetbrains.mps.internal.collections.runtime.ListSequence;
 import java.util.Objects;
 import jetbrains.mps.internal.collections.runtime.Sequence;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
-import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 import org.jetbrains.mps.openapi.language.SProperty;
@@ -27,16 +25,14 @@ import org.jetbrains.mps.openapi.language.SInterfaceConcept;
 public final class ContextSelector__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getConcept(0xdcb9d48f1fb64793L, 0x88cff6f4971432a5L, 0x1ebc36697a4d55b9L, "org.iets3.contextfilter.structure.ContextSelector");
 
-  public static final SMethod<Class> getSelectorItemClass_id3j0RMEsazSW = new SMethodBuilder<Class>(new SJavaCompoundTypeImpl(Class.class)).name("getSelectorItemClass").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(3801283459602333244L).languageId(0x88cff6f4971432a5L, 0xdcb9d48f1fb64793L).build2();
-  public static final SMethod<Boolean> showIfUnique_id1UWdA_UjxqD = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("showIfUnique").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(2214704943410845353L).languageId(0x88cff6f4971432a5L, 0xdcb9d48f1fb64793L).build2();
-  public static final SMethod<AbstractSelectorItem> getSelectedItem_id1UWdA_UjxsD = new SMethodBuilder<AbstractSelectorItem>(new SJavaCompoundTypeImpl(AbstractSelectorItem.class)).name("getSelectedItem").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(2214704943410845481L).languageId(0x88cff6f4971432a5L, 0xdcb9d48f1fb64793L).build2();
-  public static final SMethod<Void> chooseViaPrefix_idh84HsA1Gh2 = new SMethodBuilder<Void>(new SJavaCompoundTypeImpl(Void.class)).name("chooseViaPrefix").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(308517289740125250L).languageId(0x88cff6f4971432a5L, 0xdcb9d48f1fb64793L).build2(SMethodBuilder.createJavaParameter(String.class, ""));
-  public static final SMethod<Iterable<IFilterContext>> getContexts_id3j0RMEs6FBV = new SMethodBuilder<Iterable<IFilterContext>>(new SJavaCompoundTypeImpl((Class<Iterable<IFilterContext>>) ((Class) Object.class))).name("getContexts").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(3801283459601316347L).languageId(0x88cff6f4971432a5L, 0xdcb9d48f1fb64793L).build2();
+  public static final SMethod<Class> getSelectorItemClass_id3j0RMEsazSW = new SMethodBuilder<>(Class.class).name("getSelectorItemClass").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(3801283459602333244L).languageId(0x88cff6f4971432a5L, 0xdcb9d48f1fb64793L).build2();
+  public static final SMethod<Boolean> showIfUnique_id1UWdA_UjxqD = new SMethodBuilder<>(Boolean.TYPE).name("showIfUnique").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(2214704943410845353L).languageId(0x88cff6f4971432a5L, 0xdcb9d48f1fb64793L).build2();
+  public static final SMethod<AbstractSelectorItem> getSelectedItem_id1UWdA_UjxsD = new SMethodBuilder<>(AbstractSelectorItem.class).name("getSelectedItem").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(2214704943410845481L).languageId(0x88cff6f4971432a5L, 0xdcb9d48f1fb64793L).build2();
+  public static final SMethod<Void> chooseViaPrefix_idh84HsA1Gh2 = new SMethodBuilder<>(Void.TYPE).name("chooseViaPrefix").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(308517289740125250L).languageId(0x88cff6f4971432a5L, 0xdcb9d48f1fb64793L).build2(SMethodBuilder.createJavaParameter(String.class, "prefix"));
+  public static final SMethod<Iterable<IFilterContext>> getContexts_id3j0RMEs6FBV = new SMethodBuilder<>((Class<Iterable<IFilterContext>>) ((Class) Object.class)).name("getContexts").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(3801283459601316347L).languageId(0x88cff6f4971432a5L, 0xdcb9d48f1fb64793L).build2();
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(getSelectorItemClass_id3j0RMEsazSW, showIfUnique_id1UWdA_UjxqD, getSelectedItem_id1UWdA_UjxsD, chooseViaPrefix_idh84HsA1Gh2, getContexts_id3j0RMEs6FBV);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(getSelectorItemClass_id3j0RMEsazSW, showIfUnique_id1UWdA_UjxqD, getSelectedItem_id1UWdA_UjxsD, chooseViaPrefix_idh84HsA1Gh2, getContexts_id3j0RMEs6FBV);
 
-  private static void ___init___(@NotNull SNode __thisNode__) {
-  }
 
   /*package*/ static Class getSelectorItemClass_id3j0RMEsazSW(@NotNull SNode __thisNode__) {
     // default, should be overridden
@@ -73,10 +69,6 @@ public final class ContextSelector__BehaviorDescriptor extends BaseBHDescriptor 
   /*package*/ ContextSelector__BehaviorDescriptor() {
   }
 
-  @Override
-  protected void initNode(@NotNull SNode node, @NotNull SConstructor constructor, @Nullable Object[] parameters) {
-    ___init___(node);
-  }
 
   @Override
   protected <T> T invokeSpecial0(@NotNull SNode node, @NotNull SMethod<T> method, @Nullable Object[] parameters) {

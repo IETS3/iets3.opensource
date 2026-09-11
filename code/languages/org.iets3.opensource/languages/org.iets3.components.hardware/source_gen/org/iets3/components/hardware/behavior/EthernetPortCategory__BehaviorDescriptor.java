@@ -8,7 +8,6 @@ import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import org.jetbrains.mps.openapi.language.SEnumerationLiteral;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import jetbrains.mps.baseLanguage.tuples.runtime.Tuples;
 import org.jetbrains.mps.openapi.language.SConcept;
@@ -22,25 +21,22 @@ import jetbrains.mps.baseLanguage.tuples.runtime.MultiTuple;
 import java.awt.Shape;
 import java.awt.geom.Rectangle2D;
 import java.awt.Polygon;
-import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 
 public final class EthernetPortCategory__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getConcept(0xc35abfa80db04d42L, 0xbb3ff46112aeb888L, 0x952418520a4a1a3L, "org.iets3.components.hardware.structure.EthernetPortCategory");
 
-  public static final SMethod<SEnumerationLiteral> kind_idsiw10H0omi = new SMethodBuilder<SEnumerationLiteral>(new SJavaCompoundTypeImpl((Class<SEnumerationLiteral>) ((Class) Object.class))).name("kind").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(509610514809193874L).languageId(0xb6713d118449c6e7L, 0xf0fd486f857743e9L).build2();
-  public static final SMethod<Boolean> isGoverningSide_idsiw10H0o$5 = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("isGoverningSide").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(509610514809194757L).languageId(0xb6713d118449c6e7L, 0xf0fd486f857743e9L).build2();
-  public static final SMethod<Boolean> isDirectional_idmIQkxfpvfA = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("isDirectional").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(409503520730248166L).languageId(0xb6713d118449c6e7L, 0xf0fd486f857743e9L).build2();
-  public static final SMethod<Tuples._2<Integer, Integer>> multiplicity_id7Atos1y391f = new SMethodBuilder<Tuples._2<Integer, Integer>>(new SJavaCompoundTypeImpl((Class<Tuples._2<Integer, Integer>>) ((Class) Object.class))).name("multiplicity").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(8763267928839458895L).languageId(0xb6713d118449c6e7L, 0xf0fd486f857743e9L).build2();
-  public static final SMethod<String> categoryString_idmIQkxgI2fs = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("categoryString").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(409503520752411612L).languageId(0xb6713d118449c6e7L, 0xf0fd486f857743e9L).build2();
-  public static final SMethod<SConcept> oppositeCategory_idmIQkxfpv6J = new SMethodBuilder<SConcept>(new SJavaCompoundTypeImpl((Class<SConcept>) ((Class) Object.class))).name("oppositeCategory").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(409503520730247599L).languageId(0xb6713d118449c6e7L, 0xf0fd486f857743e9L).build2();
-  public static final SMethod<PortShapeRenderer> shapeRenderer_idmIQkxgiY42 = new SMethodBuilder<PortShapeRenderer>(new SJavaCompoundTypeImpl(PortShapeRenderer.class)).name("shapeRenderer").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(409503520745316610L).languageId(0xb6713d118449c6e7L, 0xf0fd486f857743e9L).build2();
+  public static final SMethod<SEnumerationLiteral> kind_idsiw10H0omi = new SMethodBuilder<>(SEnumerationLiteral.class).name("kind").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(509610514809193874L).languageId(0xb6713d118449c6e7L, 0xf0fd486f857743e9L).build2();
+  public static final SMethod<Boolean> isGoverningSide_idsiw10H0o$5 = new SMethodBuilder<>(Boolean.TYPE).name("isGoverningSide").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(509610514809194757L).languageId(0xb6713d118449c6e7L, 0xf0fd486f857743e9L).build2();
+  public static final SMethod<Boolean> isDirectional_idmIQkxfpvfA = new SMethodBuilder<>(Boolean.TYPE).name("isDirectional").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(409503520730248166L).languageId(0xb6713d118449c6e7L, 0xf0fd486f857743e9L).build2();
+  public static final SMethod<Tuples._2<Integer, Integer>> multiplicity_id7Atos1y391f = new SMethodBuilder<>((Class<Tuples._2<Integer, Integer>>) ((Class) Object.class)).name("multiplicity").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(8763267928839458895L).languageId(0xb6713d118449c6e7L, 0xf0fd486f857743e9L).build2();
+  public static final SMethod<String> categoryString_idmIQkxgI2fs = new SMethodBuilder<>(String.class).name("categoryString").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(409503520752411612L).languageId(0xb6713d118449c6e7L, 0xf0fd486f857743e9L).build2();
+  public static final SMethod<SConcept> oppositeCategory_idmIQkxfpv6J = new SMethodBuilder<>(SConcept.class).name("oppositeCategory").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(409503520730247599L).languageId(0xb6713d118449c6e7L, 0xf0fd486f857743e9L).build2();
+  public static final SMethod<PortShapeRenderer> shapeRenderer_idmIQkxgiY42 = new SMethodBuilder<>(PortShapeRenderer.class).name("shapeRenderer").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(409503520745316610L).languageId(0xb6713d118449c6e7L, 0xf0fd486f857743e9L).build2();
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(kind_idsiw10H0omi, isGoverningSide_idsiw10H0o$5, isDirectional_idmIQkxfpvfA, multiplicity_id7Atos1y391f, categoryString_idmIQkxgI2fs, oppositeCategory_idmIQkxfpv6J, shapeRenderer_idmIQkxgiY42);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(kind_idsiw10H0omi, isGoverningSide_idsiw10H0o$5, isDirectional_idmIQkxfpvfA, multiplicity_id7Atos1y391f, categoryString_idmIQkxgI2fs, oppositeCategory_idmIQkxfpv6J, shapeRenderer_idmIQkxgiY42);
 
-  private static void ___init___(@NotNull SNode __thisNode__) {
-  }
 
   /*package*/ static SEnumerationLiteral kind_idsiw10H0omi(@NotNull SNode __thisNode__) {
     return SEnumOperations.getMember(MetaAdapterFactory.getEnumeration(0xf0fd486f857743e9L, 0xb6713d118449c6e7L, 0x71280102d0188dfL, "org.iets3.components.core.structure.PortCategoryKind"), 0x71280102d0188fcL, "top");
@@ -77,10 +73,6 @@ public final class EthernetPortCategory__BehaviorDescriptor extends BaseBHDescri
   /*package*/ EthernetPortCategory__BehaviorDescriptor() {
   }
 
-  @Override
-  protected void initNode(@NotNull SNode node, @NotNull SConstructor constructor, @Nullable Object[] parameters) {
-    ___init___(node);
-  }
 
   @Override
   protected <T> T invokeSpecial0(@NotNull SNode node, @NotNull SMethod<T> method, @Nullable Object[] parameters) {

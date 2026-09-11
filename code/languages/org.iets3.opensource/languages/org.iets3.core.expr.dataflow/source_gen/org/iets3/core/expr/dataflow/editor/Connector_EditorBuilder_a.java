@@ -184,7 +184,7 @@ import org.jetbrains.mps.openapi.language.SProperty;
     return diagramCell.value;
   }
   private EditorCell createDiagramConnector_1() {
-    return createDiagramConnector_0(getEditorContext(), myNode);
+    return createDiagramConnector_0(getEditorContext(), getNode());
   }
   private Color _StyleParameter_QueryFunction_htzvu7_a0a() {
     return JBColor.black;

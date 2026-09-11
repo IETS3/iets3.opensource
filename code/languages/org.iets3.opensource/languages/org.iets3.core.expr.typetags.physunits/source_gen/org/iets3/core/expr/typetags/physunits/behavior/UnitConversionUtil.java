@@ -82,7 +82,8 @@ public class UnitConversionUtil {
   }
 
   /**
-   * Returns true if the given map represents a unit-less mapping.
+   * Returns true if the given map represents a unitless mapping,
+   * meaning the map is empty or null.
    * 
    * @param unitMap the unit mapping
    * @return true if the mapping represents a unitless mapping, false otherwise
@@ -92,7 +93,7 @@ public class UnitConversionUtil {
   }
 
   /**
-   * Returns true of the given type is a unit-less type. 
+   * Returns true of the given type is a unitless type.
    * 
    * @param type the type
    * @return true if the type has no unit annotation, false otherwise
@@ -108,8 +109,8 @@ public class UnitConversionUtil {
   }
 
   /**
-   * Returns the mapping for the given type. 
-   * If the given type is not an annotated type then an empty map will be returned. 
+   * Returns the mapping for the given type.
+   * If the given type is not an annotated type then an empty map will be returned.
    * 
    * @param type the type
    * @return the unit mapping
@@ -128,10 +129,10 @@ public class UnitConversionUtil {
   }
 
   /**
-   * Generates the mapping from the given group expression. 
-   * Composite groups are always broken down to atomic groups 
-   * 
-   * This method returns a new mapping. 
+   * Generates the mapping from the given group expression.
+   * Composite groups are always broken down to atomic groups
+   *  
+   * This method returns a new mapping.
    */
   public static UnitMap getMapForGroup(SNode group) {
     if ((boolean) IDetectCycle__BehaviorDescriptor.isInvolvedInCycle_id59HbAIOYtvQ.invoke(SNodeOperations.getNodeAncestor(group, CONCEPTS.IDetectCycle$wy, false, false))) {
@@ -141,9 +142,9 @@ public class UnitConversionUtil {
   }
 
   /**
-   * Generates the mapping from the given group expression and multiplies all the exponents with the given one. 
-   * Composite groups are always broken down to atomic groups.
-   * 
+   * Generates the mapping from the given group expression and multiplies all the exponents with the given one.
+   * Composite groups are always broken down to atomic groups
+   *  
    * This method returns a new mapping. 
    */
   public static UnitMap getMapForGroup(SNode expr, Fraction exponent) {
@@ -191,7 +192,7 @@ public class UnitConversionUtil {
 
   /**
    * Generates the mapping from the given unit and multiplies all the exponents with the given one. 
-   * Composite units are always broken down to atomic units. 
+   * Composite units are always broken down to atomic units.
    * 
    * This method returns a new mapping. 
    */
