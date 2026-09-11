@@ -19,9 +19,9 @@ import java.util.Objects;
 import java.util.Collections;
 import com.google.common.collect.Iterables;
 import org.jetbrains.annotations.Nullable;
-import org.iets3.variability.configuration.base.plugin.FeatureModelConfigurationConstraintsUtil;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations;
 import java.util.Optional;
+import org.iets3.variability.configuration.base.plugin.FeatureModelConfigurationConstraintsUtil;
 import org.iets3.variability.configuration.base.plugin.FeatureModelIncludeUtil;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SEnumOperations;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
@@ -154,12 +154,22 @@ public class FeatureModelConfigurationInheritanceUtil {
    */
   public static boolean applyInheritance(final SNode subConfig, @Nullable SNode parentSubConfig, final SNode extendedConfig, @Nullable SNode parentExtendedConfig) {
     {
-      final SNode fmcb = SLinkOperations.getTarget(subConfig, LINKS.content$Wdfq);
-      if (SNodeOperations.isInstanceOf(fmcb, CONCEPTS.FeatureModelConfigurationBase$y8)) {
-        SNode root = SLinkOperations.getTarget(FeatureModelConfigurationBase__BehaviorDescriptor.featureModel_id27K8O1MvJyD.invoke(fmcb), LINKS.root$XEj1);
-        SNode content = FeatureModelConfigurationConstraintsUtil.configContentByFeature(root);
-
-        SLinkOperations.setTarget(subConfig, LINKS.content$Wdfq, content);
+      final SNode ifcc = SLinkOperations.getTarget(extendedConfig, LINKS.content$Wdfq);
+      if (SNodeOperations.isInstanceOf(ifcc, CONCEPTS.InlineFeatureConfigurationContent$P5)) {
+        {
+          final SNode fmcb = SLinkOperations.getTarget(subConfig, LINKS.content$Wdfq);
+          if (SNodeOperations.isInstanceOf(fmcb, CONCEPTS.FeatureModelConfigurationBase$y8)) {
+            SNode root = SLinkOperations.getTarget(FeatureModelConfigurationBase__BehaviorDescriptor.featureModel_id27K8O1MvJyD.invoke(fmcb), LINKS.root$XEj1);
+            FeatureModelConfigurationInheritanceUtil.addInlineContent(root, subConfig);
+          }
+        }
+        {
+          final SNode fmcr = SLinkOperations.getTarget(subConfig, LINKS.content$Wdfq);
+          if (SNodeOperations.isInstanceOf(fmcr, CONCEPTS.FeatureModelConfigurationRef$kq)) {
+            SNode root = SLinkOperations.getTarget(FeatureModelConfiguration__BehaviorDescriptor.getFeatureModel_id7PHwTKCuj99.invoke(SLinkOperations.getTarget(fmcr, LINKS.config$VWuN)), LINKS.root$XEj1);
+            FeatureModelConfigurationInheritanceUtil.addInlineContent(root, subConfig);
+          }
+        }
       }
     }
     // Case when extended leaves a Config-Include 'unspecified'.
@@ -213,6 +223,12 @@ public class FeatureModelConfigurationInheritanceUtil {
       applySelectionsOfExtendedConfig(subConfig, extendedConfig);
     }
     return isDetachable(subConfig, extendedConfig);
+  }
+
+  private static void addInlineContent(SNode root, SNode subConfig) {
+    SNode content = FeatureModelConfigurationConstraintsUtil.configContentByFeature(root);
+
+    SLinkOperations.setTarget(subConfig, LINKS.content$Wdfq, content);
   }
 
   private static boolean hasNoContent(SNode subConfig) {
