@@ -191,7 +191,7 @@ public class FeatureModelConfigurationInheritanceUtil {
     {
       final SNode fmcr = SLinkOperations.getTarget(extendedConfig, LINKS.content$Wdfq);
       if (SNodeOperations.isInstanceOf(fmcr, CONCEPTS.FeatureModelConfigurationRef$kq)) {
-        if (SPropertyOperations.getBoolean(SLinkOperations.getTarget(fmcr, LINKS.config$VWuN), PROPS.abstract$Wu4W)) {
+        if (SPropertyOperations.getBoolean(SLinkOperations.getTarget(fmcr, LINKS.config$VWuN), PROPS.abstract$Wu4W) || (!((boolean) FeatureModelConfiguration__BehaviorDescriptor.isConcrete_id3fjVuHBlYzw.invoke(SLinkOperations.getTarget(fmcr, LINKS.config$VWuN))))) {
           if (!(contentExtendsConfigOfExtended(SLinkOperations.getTarget(subConfig, LINKS.content$Wdfq), SLinkOperations.getTarget(fmcr, LINKS.config$VWuN)))) {
             SNodeOperations.replaceWithAnother(SLinkOperations.getTarget(subConfig, LINKS.content$Wdfq), SNodeOperations.copyNode(fmcr));
           }

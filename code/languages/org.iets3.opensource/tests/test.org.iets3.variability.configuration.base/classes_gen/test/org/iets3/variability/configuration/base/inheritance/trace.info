@@ -258,6 +258,36 @@
       <unit id="1806246553940539929" at="14,0,46,0" name="test.org.iets3.variability.configuration.base.inheritance.ExtendsWithTwoUnspecifiedIncludes_Test" />
     </file>
   </root>
+  <root nodeRef="r:67b8c8a1-c2c2-4db8-bb17-956b347d6975(test.org.iets3.variability.configuration.base.inheritance@tests)/1806246553958380856">
+    <file name="ExtendsWithSameConfigRefInInclude_Test.java">
+      <node id="1806246553958380856" at="19,51,20,60" concept="11" />
+      <node id="1806246553958380890" at="24,59,25,50" concept="2" />
+      <node id="1806246553958380856" at="30,52,31,19" concept="11" />
+      <node id="1806246553958380856" at="35,36,36,46" concept="2" />
+      <node id="1806246553958380890" at="39,61,40,22" concept="2" />
+      <node id="1806246553958380890" at="40,22,41,132" concept="2" />
+      <node id="1806246553958380856" at="16,0,18,0" concept="9" trace="ourParametersCacheExtension" />
+      <node id="1806246553958380856" at="19,0,22,0" concept="1" trace="ExtendsWithSameConfigRefInInclude_Test#()V" />
+      <node id="1806246553958380856" at="30,0,33,0" concept="1" trace="TestBody#(Ljetbrains/mps/lang/test/runtime/TransformationTest;)V" />
+      <node id="1806246553958380890" at="23,0,27,0" concept="4" trace="test_configRefMustBeKept#()V" />
+      <node id="1806246553958380856" at="34,0,38,0" concept="4" trace="initTestNodes#()V" />
+      <node id="1806246553958380890" at="39,0,43,0" concept="4" trace="test_configRefMustBeKept#()V" />
+      <scope id="1806246553958380856" at="19,51,20,60" />
+      <scope id="1806246553958380890" at="24,59,25,50" />
+      <scope id="1806246553958380856" at="30,52,31,19" />
+      <scope id="1806246553958380856" at="35,36,36,46" />
+      <scope id="1806246553958380890" at="39,61,41,132" />
+      <scope id="1806246553958380856" at="19,0,22,0" />
+      <scope id="1806246553958380856" at="30,0,33,0">
+        <var name="owner" id="1806246553958380856" />
+      </scope>
+      <scope id="1806246553958380890" at="23,0,27,0" />
+      <scope id="1806246553958380856" at="34,0,38,0" />
+      <scope id="1806246553958380890" at="39,0,43,0" />
+      <unit id="1806246553958380856" at="28,0,45,0" name="test.org.iets3.variability.configuration.base.inheritance.ExtendsWithSameConfigRefInInclude_Test$TestBody" />
+      <unit id="1806246553958380856" at="14,0,46,0" name="test.org.iets3.variability.configuration.base.inheritance.ExtendsWithSameConfigRefInInclude_Test" />
+    </file>
+  </root>
   <root nodeRef="r:67b8c8a1-c2c2-4db8-bb17-956b347d6975(test.org.iets3.variability.configuration.base.inheritance@tests)/2869035181859516664">
     <file name="AttributeRestore_Test.java">
       <node id="2869035181859516664" at="19,34,20,60" concept="11" />
