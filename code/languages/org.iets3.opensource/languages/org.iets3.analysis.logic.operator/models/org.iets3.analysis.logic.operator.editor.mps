@@ -26,7 +26,6 @@
         <child id="928328222691832421" name="separatorTextQuery" index="2gpyvW" />
         <child id="1233141163694" name="separatorStyle" index="sWeuL" />
       </concept>
-      <concept id="1106270549637" name="jetbrains.mps.lang.editor.structure.CellLayout_Horizontal" flags="nn" index="2iRfu4" />
       <concept id="1237303669825" name="jetbrains.mps.lang.editor.structure.CellLayout_Indent" flags="nn" index="l2Vlx" />
       <concept id="709996738298806197" name="jetbrains.mps.lang.editor.structure.QueryFunction_SeparatorText" flags="in" index="2o9xnK" />
       <concept id="1142886811589" name="jetbrains.mps.lang.editor.structure.ConceptFunctionParameter_node" flags="nn" index="pncrf" />
@@ -156,7 +155,7 @@
       </node>
       <node concept="3F2HdR" id="42uExpDJfCI" role="3EZMnx">
         <ref role="1NtTu8" to="5nv3:42uExpDspr4" resolve="exprs" />
-        <node concept="2iRfu4" id="42uExpDJfCK" role="2czzBx" />
+        <node concept="l2Vlx" id="4L4_gU2zVK2" role="2czzBx" />
         <node concept="2o9xnK" id="42uExpDJjWa" role="2gpyvW">
           <node concept="3clFbS" id="42uExpDJjWb" role="2VODD2">
             <node concept="3clFbF" id="42uExpDJk0J" role="3cqZAp">
@@ -167,7 +166,7 @@
           </node>
         </node>
       </node>
-      <node concept="2iRfu4" id="42uExpDsprC" role="2iSdaV" />
+      <node concept="l2Vlx" id="4L4_gU2zVK1" role="2iSdaV" />
       <node concept="3F0ifn" id="42uExpDsprF" role="3EZMnx">
         <property role="3F0ifm" value="," />
         <node concept="11L4FC" id="42uExpDJo6z" role="3F10Kt">
@@ -200,7 +199,7 @@
       <node concept="3F1sOY" id="kLIXBTspbO" role="3EZMnx">
         <ref role="1NtTu8" to="5nv3:2rOWEwsF5w1" resolve="expr" />
       </node>
-      <node concept="2iRfu4" id="kLIXBTspbH" role="2iSdaV" />
+      <node concept="l2Vlx" id="4L4_gU2zVK3" role="2iSdaV" />
       <node concept="3F0ifn" id="kLIXBTspbW" role="3EZMnx">
         <property role="3F0ifm" value=")" />
         <node concept="11L4FC" id="2rOWEwsF5_A" role="3F10Kt">

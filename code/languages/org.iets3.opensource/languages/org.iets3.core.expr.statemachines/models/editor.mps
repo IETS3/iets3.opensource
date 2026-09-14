@@ -41,7 +41,6 @@
       </concept>
       <concept id="671290755174094691" name="jetbrains.mps.lang.editor.structure.ConceptFunctionParameter_parameterObject" flags="nn" index="2itN01" />
       <concept id="671290755174094686" name="jetbrains.mps.lang.editor.structure.QueryFunction_MethodPresentation" flags="in" index="2itN0W" />
-      <concept id="1106270549637" name="jetbrains.mps.lang.editor.structure.CellLayout_Horizontal" flags="nn" index="2iRfu4" />
       <concept id="1106270571710" name="jetbrains.mps.lang.editor.structure.CellLayout_Vertical" flags="nn" index="2iRkQZ" />
       <concept id="4203201205844553978" name="jetbrains.mps.lang.editor.structure.ConceptFunctionParameter_selectedNode" flags="nn" index="jzRn0" />
       <concept id="4531786690998636238" name="jetbrains.mps.lang.editor.structure.AbstractStyledTextOperation" flags="nn" index="kdiOM">
@@ -1781,7 +1780,7 @@
         <node concept="3F2HdR" id="1mDdTG8NhB" role="3EZMnx">
           <property role="2czwfO" value="," />
           <ref role="1NtTu8" to="19m5:1mDdTG8NgS" resolve="paramValues" />
-          <node concept="2iRfu4" id="1mDdTG8NhD" role="2czzBx" />
+          <node concept="l2Vlx" id="4L4_gU2zVJS" role="2czzBx" />
           <node concept="3F0ifn" id="1mDdTG8NhQ" role="2czzBI">
             <property role="3F0ifm" value="" />
             <node concept="VPxyj" id="1mDdTG8NhS" role="3F10Kt">
