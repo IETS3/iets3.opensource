@@ -15,6 +15,9 @@ The project does _not_ follow Semantic Versioning and the changes are documented
 - KernelF: the `is`/`isIn` enumeration dot targets are backwards compatible with models that have not run the "move link up" migration of the `EnumIsTarget`/`EnumIsInTarget` refactoring yet. `EnumIsTarget` and `EnumIsInTarget` now have their own editors that show the deprecated `literal_old`/`selectors_old` elements in red, hidden as soon as the deprecated reference/child is empty. Behavior, generator and interpreter read the value through the new `AbstractEnumSingleInTarget.effectiveLiteral()`/`AbstractEnumInTarget.effectiveSelectors()` behavior methods, which the two legacy concepts override to fall back to the deprecated link, so an unmigrated model still renders, interprets and generates correctly.
 - KernelF: `RecordValue` no longer throws a `NullPointerException` from `equals` or `compareTo` when a record member has no value, nor from `compareTo` for inline records, which carry no record declaration. `equals`, `hashCode` and `compareTo` are consistent with each other again, so record values behave correctly in Java-side hash-based and sorted collections.
 - KernelF: a broken reference to a literal of a qualified enum no longer rebinds to a same-named literal of a different enum, because the persisted `resolve=` info now carries the qualified name instead of the simple one.
+- KernelF: entries in the trace explorer are no longer truncated after a very low character limit, which made traces hard to read. The limit was raised and the tooltip now shows the full, untruncated text.
+- KernelF: Consistent usage of indent layout in Expression concepts.
+
 
 ## August 2026
 
