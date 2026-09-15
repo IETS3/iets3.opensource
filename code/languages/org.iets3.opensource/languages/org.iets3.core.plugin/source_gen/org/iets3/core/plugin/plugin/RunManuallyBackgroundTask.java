@@ -8,6 +8,7 @@ import org.jetbrains.mps.openapi.module.SRepository;
 import jetbrains.mps.openapi.editor.EditorContext;
 import java.util.List;
 import org.jetbrains.mps.openapi.model.SNode;
+import java.util.concurrent.atomic.AtomicLong;
 import jetbrains.mps.project.MPSProject;
 import com.intellij.openapi.progress.ProgressManager;
 import jetbrains.mps.internal.collections.runtime.Sequence;
@@ -37,6 +38,7 @@ public class RunManuallyBackgroundTask extends Task.Backgroundable {
   private final EditorContext context;
   private final List<SNode> nodes;
   private long lastEditorUpdate = 0;
+  private final AtomicLong lastEditorUpdateDuration = new AtomicLong(0);
   private int itemsTotal = 0;
   private int itemsDone = 0;
 
@@ -66,7 +68,11 @@ public class RunManuallyBackgroundTask extends Task.Backgroundable {
 
   @Override
   public void run(final ProgressIndicator indicator) {
-    indicator.setIndeterminate(false);
+    // Nothing must block the EDT in this phase, or the status bar cannot show the indicator:
+    // the first editor refresh is therefore deferred by a full interval (see updateEditorsDebounced).
+    lastEditorUpdate = System.currentTimeMillis();
+    indicator.setIndeterminate(true);
+    indicator.setText("Collecting " + ListSequence.fromList(nodes).count() + " checks");
 
     // Three ways to run an item, from cheapest to most intrusive for the user:
     // - a read action on this thread, for items that only read the model;
@@ -92,6 +98,7 @@ public class RunManuallyBackgroundTask extends Task.Backgroundable {
       }
     });
     itemsTotal = ListSequence.fromList(inReadAction).count() + ListSequence.fromList(inWriteAction).count() + ListSequence.fromList(inCommand).count();
+    indicator.setIndeterminate(false);
 
     for (final SNode n : ListSequence.fromList(inReadAction)) {
       indicator.checkCanceled();
@@ -151,13 +158,19 @@ public class RunManuallyBackgroundTask extends Task.Backgroundable {
   }
 
   private void updateEditorsDebounced() {
-    // Show the results so far and the item that is about to run, but not more often than
-    // every EDITOR_UPDATE_INTERVAL_MS when items are quick. The first call always updates,
-    // so the queue is visible before the first item starts.
+    // Show the results so far and the item that is about to run, but not more often than every
+    // EDITOR_UPDATE_INTERVAL_MS, and not more often than a few times the duration of the previous
+    // refresh: a refresh rebuilds the editors of the affected roots on the EDT, which takes
+    // seconds for a big root, and the EDT must stay free enough to paint and to take input.
+    long minInterval = Math.max(EDITOR_UPDATE_INTERVAL_MS, 4 * lastEditorUpdateDuration.get());
     long now = System.currentTimeMillis();
-    if (now - lastEditorUpdate >= EDITOR_UPDATE_INTERVAL_MS) {
+    if (now - lastEditorUpdate >= minInterval) {
       lastEditorUpdate = now;
-      ApplicationManager.getApplication().invokeLater(() -> updateEditors());
+      ApplicationManager.getApplication().invokeLater(() -> {
+        long started = System.currentTimeMillis();
+        updateEditors();
+        lastEditorUpdateDuration.set(System.currentTimeMillis() - started);
+      });
     }
   }
 
