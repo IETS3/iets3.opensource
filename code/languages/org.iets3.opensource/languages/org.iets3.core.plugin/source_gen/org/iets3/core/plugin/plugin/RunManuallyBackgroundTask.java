@@ -17,7 +17,9 @@ import java.util.ArrayList;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
 import org.iets3.core.base.behavior.ICanRunCheckManually__BehaviorDescriptor;
 import org.iets3.core.base.behavior.ICanStoreCheckResult__BehaviorDescriptor;
+import java.util.concurrent.atomic.AtomicInteger;
 import com.intellij.openapi.application.ApplicationManager;
+import com.intellij.openapi.progress.ProcessCanceledException;
 import jetbrains.mps.lang.core.behavior.BaseConcept__BehaviorDescriptor;
 import org.iets3.core.base.behavior.RunManuallyUtil;
 
@@ -26,6 +28,8 @@ public class RunManuallyBackgroundTask extends Task.Backgroundable {
   public static final String STATE_QUEUED = "queued";
   public static final String STATE_RUNNING = "running";
   private static final long EDITOR_UPDATE_INTERVAL_MS = 500;
+  private static final long EDT_SLICE_MS = 100;
+  private static final long EDT_PAUSE_MS = 40;
 
   private static final AtomicBoolean RUNNING = new AtomicBoolean(false);
 
@@ -33,6 +37,8 @@ public class RunManuallyBackgroundTask extends Task.Backgroundable {
   private final EditorContext context;
   private final List<SNode> nodes;
   private long lastEditorUpdate = 0;
+  private int itemsTotal = 0;
+  private int itemsDone = 0;
 
   public static boolean isRunning() {
     return RUNNING.get();
@@ -62,10 +68,13 @@ public class RunManuallyBackgroundTask extends Task.Backgroundable {
   public void run(final ProgressIndicator indicator) {
     indicator.setIndeterminate(false);
 
-    // Items that only read the model run in a read action on this thread, so the UI stays
-    // responsive and an edit waits at most for one item. Everything else runs in a
-    // command on the EDT, one command per item.
+    // Three ways to run an item, from cheapest to most intrusive for the user:
+    // - a read action on this thread, for items that only read the model;
+    // - a write action on this thread, for items that write the model but need no UI;
+    // - a command on the EDT for everything else, in short slices so the UI can paint in between.
+    // In all three cases every item gets its own model access, so an edit waits at most for one item.
     final List<SNode> inReadAction = ListSequence.fromList(new ArrayList<SNode>());
+    final List<SNode> inWriteAction = ListSequence.fromList(new ArrayList<SNode>());
     final List<SNode> inCommand = ListSequence.fromList(new ArrayList<SNode>());
     repository.getModelAccess().runReadAction(() -> {
       for (SNode n : ListSequence.fromList(nodes)) {
@@ -74,43 +83,74 @@ public class RunManuallyBackgroundTask extends Task.Backgroundable {
         }
         if ((boolean) ICanRunCheckManually__BehaviorDescriptor.canRunManuallyInReadAction_id5WzVtORk4sL.invoke(n)) {
           ListSequence.fromList(inReadAction).addElement(n);
+        } else if ((boolean) ICanRunCheckManually__BehaviorDescriptor.canRunManuallyInWriteAction_id5WzVtORX6sf.invoke(n)) {
+          ListSequence.fromList(inWriteAction).addElement(n);
         } else {
           ListSequence.fromList(inCommand).addElement(n);
         }
         ICanStoreCheckResult__BehaviorDescriptor.setManualRunState_id5WzVtORNpOy.invoke(n, STATE_QUEUED);
       }
     });
+    itemsTotal = ListSequence.fromList(inReadAction).count() + ListSequence.fromList(inWriteAction).count() + ListSequence.fromList(inCommand).count();
 
-    int total = ListSequence.fromList(inReadAction).count() + ListSequence.fromList(inCommand).count();
-    int done = 0;
     for (final SNode n : ListSequence.fromList(inReadAction)) {
       indicator.checkCanceled();
-      reportProgress(indicator, done, total);
-      beforeItem(n);
+      reportProgress(indicator);
+      markRunningInBackground(n);
       repository.getModelAccess().runReadAction(() -> runOne(n, indicator));
-      done++;
+      itemsDone++;
     }
-    for (final SNode n : ListSequence.fromList(inCommand)) {
+    for (final SNode n : ListSequence.fromList(inWriteAction)) {
       indicator.checkCanceled();
-      reportProgress(indicator, done, total);
-      beforeItem(n);
-      ApplicationManager.getApplication().invokeAndWait(() -> repository.getModelAccess().executeCommand(() -> runOne(n, indicator)));
-      done++;
+      reportProgress(indicator);
+      markRunningInBackground(n);
+      repository.getModelAccess().runWriteAction(() -> runOne(n, indicator));
+      itemsDone++;
+    }
+
+    // EDT items: run as many as fit into EDT_SLICE_MS per invokeAndWait, then pause so that
+    // pending paint and input events get through. Back-to-back invokeAndWait calls would starve
+    // them, because AWT handles invocation events before paint events.
+    final AtomicInteger next = new AtomicInteger(0);
+    while (next.get() < ListSequence.fromList(inCommand).count()) {
+      indicator.checkCanceled();
+      ApplicationManager.getApplication().invokeAndWait(() -> {
+        long sliceStart = System.currentTimeMillis();
+        boolean first = true;
+        while (next.get() < ListSequence.fromList(inCommand).count() && (first || System.currentTimeMillis() - sliceStart < EDT_SLICE_MS)) {
+          first = false;
+          final SNode n = ListSequence.fromList(inCommand).getElement(next.getAndIncrement());
+          reportProgress(indicator);
+          repository.getModelAccess().executeCommand(() -> {
+            if (SNodeOperations.getModel(n) != null) {
+              ICanStoreCheckResult__BehaviorDescriptor.setManualRunState_id5WzVtORNpOy.invoke(n, STATE_RUNNING);
+            }
+            runOne(n, indicator);
+          });
+          itemsDone++;
+        }
+      });
+      updateEditorsDebounced();
+      pause();
     }
     indicator.setFraction(1.0);
   }
 
-  private void reportProgress(ProgressIndicator indicator, int done, int total) {
-    indicator.setFraction(done / (double) total);
-    indicator.setText("Running check " + (done + 1) + " of " + total);
+  private void reportProgress(ProgressIndicator indicator) {
+    indicator.setFraction(itemsDone / (double) itemsTotal);
+    indicator.setText("Running check " + (itemsDone + 1) + " of " + itemsTotal);
   }
 
-  private void beforeItem(final SNode n) {
+  private void markRunningInBackground(final SNode n) {
     repository.getModelAccess().runReadAction(() -> {
       if (SNodeOperations.getModel(n) != null) {
         ICanStoreCheckResult__BehaviorDescriptor.setManualRunState_id5WzVtORNpOy.invoke(n, STATE_RUNNING);
       }
     });
+    updateEditorsDebounced();
+  }
+
+  private void updateEditorsDebounced() {
     // Show the results so far and the item that is about to run, but not more often than
     // every EDITOR_UPDATE_INTERVAL_MS when items are quick. The first call always updates,
     // so the queue is visible before the first item starts.
@@ -118,6 +158,15 @@ public class RunManuallyBackgroundTask extends Task.Backgroundable {
     if (now - lastEditorUpdate >= EDITOR_UPDATE_INTERVAL_MS) {
       lastEditorUpdate = now;
       ApplicationManager.getApplication().invokeLater(() -> updateEditors());
+    }
+  }
+
+  private void pause() {
+    try {
+      Thread.sleep(EDT_PAUSE_MS);
+    } catch (InterruptedException e) {
+      Thread.currentThread().interrupt();
+      throw new ProcessCanceledException();
     }
   }
 
