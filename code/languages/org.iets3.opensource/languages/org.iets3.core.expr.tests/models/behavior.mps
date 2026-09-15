@@ -4511,6 +4511,19 @@
       </node>
       <node concept="10P_77" id="ub9nkyPQB8" role="3clF45" />
     </node>
+    <node concept="13i0hz" id="5WzVtORq0XD" role="13h7CS">
+      <property role="TrG5h" value="canRunManuallyInReadAction" />
+      <ref role="13i0hy" to="gdgh:5WzVtORk4sL" resolve="canRunManuallyInReadAction" />
+      <node concept="3Tm1VV" id="5WzVtORq0XE" role="1B3o_S" />
+      <node concept="10P_77" id="5WzVtORq0XG" role="3clF45" />
+      <node concept="3clFbS" id="5WzVtORq0XJ" role="3clF47">
+        <node concept="3clFbF" id="5WzVtORq0XI" role="3cqZAp">
+          <node concept="3clFbT" id="5WzVtORq0XH" role="3clFbG">
+            <property role="3clFbU" value="true" />
+          </node>
+        </node>
+      </node>
+    </node>
     <node concept="13i0hz" id="6HHp2WmSpHF" role="13h7CS">
       <property role="TrG5h" value="getAutomaticName" />
       <property role="13i0it" value="false" />
