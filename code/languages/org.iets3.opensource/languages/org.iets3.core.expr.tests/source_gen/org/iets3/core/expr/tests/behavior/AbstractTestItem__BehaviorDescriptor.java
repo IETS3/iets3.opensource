@@ -62,6 +62,7 @@ public final class AbstractTestItem__BehaviorDescriptor extends BaseBHDescriptor
   public static final SMethod<Void> executeSetupInternal_id1cd9HYW_D_k = new SMethodBuilder<Void>(new SJavaCompoundTypeImpl(Void.class)).name("executeSetupInternal").modifiers(8, AccessPrivileges.PROTECTED).concept(CONCEPT).baseMethodId(1372796203801418068L).languageId(0xb723dad7b65da615L, 0xd441fba0f46b43cdL).build2();
   public static final SMethod<EvalResult> executeTestInternal_id78hTg1$THJg = new SMethodBuilder<EvalResult>(new SJavaCompoundTypeImpl(EvalResult.class)).name("executeTestInternal").modifiers(12, AccessPrivileges.PROTECTED).concept(CONCEPT).baseMethodId(8219602584783477712L).languageId(0xb723dad7b65da615L, 0xd441fba0f46b43cdL).build2();
   public static final SMethod<Boolean> mustBeRunManually_id3R3AIvumAZH = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("mustBeRunManually").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(4450571177430773741L).languageId(0xbd9c05c0f8725a35L, 0x7b68d745a7b848b9L).build2();
+  public static final SMethod<Boolean> canRunManuallyInReadAction_id5WzVtORk4sL = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("canRunManuallyInReadAction").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(6855584592159590193L).languageId(0xbd9c05c0f8725a35L, 0x7b68d745a7b848b9L).build2();
   public static final SMethod<String> getAutomaticName_idcJpacq408C = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("getAutomaticName").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(229512757698888232L).languageId(0xbd9c05c0f8725a35L, 0x7b68d745a7b848b9L).build2();
   public static final SMethod<String> getPresentation_idhEwIMiw = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("getPresentation").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(1213877396640L).languageId(0x9b92103b95ca8c0cL, 0xceab519525ea4f22L).build2();
   public static final SMethod<ITraceRecord> getRootTrace_id7obiejCh8Tv = new SMethodBuilder<ITraceRecord>(new SJavaCompoundTypeImpl(ITraceRecord.class)).name("getRootTrace").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(8505972469205864031L).languageId(0xb66a309a6e1a7290L, 0xcfaa4966b7d54b69L).build2();
@@ -76,7 +77,7 @@ public final class AbstractTestItem__BehaviorDescriptor extends BaseBHDescriptor
   public static final SMethod<MessageValue> wrapException_id3YhAT14QasA = new SMethodBuilder<MessageValue>(new SJavaCompoundTypeImpl(MessageValue.class)).name("wrapException").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(4580613339945150246L).languageId(0xb723dad7b65da615L, 0xd441fba0f46b43cdL).build2(SMethodBuilder.createJavaParameter(String.class, ""), SMethodBuilder.createJavaParameter(Throwable.class, ""));
   public static final SMethod<Boolean> canBeIgnored_id48NC6VzTkMS = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("canBeIgnored").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(4770332828445789368L).languageId(0xb723dad7b65da615L, 0xd441fba0f46b43cdL).build2();
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(getInterpreter_iduGVYUilnJe, eval_iduGVYUilGwx, evalWithTraceAndEnv_id7obiejCzVLz, performAdditionalEditorUpdate_id3JvidvJx7iM, runManually_id3R3AIvumrTm, executeTest_id4KZjPKUdEYm, executeSetupInternal_id1cd9HYW_D_k, executeTestInternal_id78hTg1$THJg, mustBeRunManually_id3R3AIvumAZH, getAutomaticName_idcJpacq408C, getPresentation_idhEwIMiw, getRootTrace_id7obiejCh8Tv, getAnnotatedNode_id38gbJV0XvZR, getTestCase_idhGBgWVd, perform_id1kgh5YabdhC, getDefaultName_id7scb9XJdmH2, getTestName_idhGBohAB, expectsErrorsInside_id3efgZvcKrj8, extractVal_id5sTgzMBPObj, allowsEffectForNode_idORfz$DS6Ap, wrapException_id3YhAT14QasA, canBeIgnored_id48NC6VzTkMS);
+  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(getInterpreter_iduGVYUilnJe, eval_iduGVYUilGwx, evalWithTraceAndEnv_id7obiejCzVLz, performAdditionalEditorUpdate_id3JvidvJx7iM, runManually_id3R3AIvumrTm, executeTest_id4KZjPKUdEYm, executeSetupInternal_id1cd9HYW_D_k, executeTestInternal_id78hTg1$THJg, mustBeRunManually_id3R3AIvumAZH, canRunManuallyInReadAction_id5WzVtORk4sL, getAutomaticName_idcJpacq408C, getPresentation_idhEwIMiw, getRootTrace_id7obiejCh8Tv, getAnnotatedNode_id38gbJV0XvZR, getTestCase_idhGBgWVd, perform_id1kgh5YabdhC, getDefaultName_id7scb9XJdmH2, getTestName_idhGBohAB, expectsErrorsInside_id3efgZvcKrj8, extractVal_id5sTgzMBPObj, allowsEffectForNode_idORfz$DS6Ap, wrapException_id3YhAT14QasA, canBeIgnored_id48NC6VzTkMS);
 
   private static void ___init___(@NotNull SNode __thisNode__) {
   }
@@ -97,7 +98,7 @@ public final class AbstractTestItem__BehaviorDescriptor extends BaseBHDescriptor
     return new IETS3ExprEvaluator().withCoverAnalyzer(IDefaultCoverageAnalyzer.newInstance()).evaluate(n);
   }
   /*package*/ static void performAdditionalEditorUpdate_id3JvidvJx7iM(@NotNull SNode __thisNode__, EditorContext edCtxOrNull) {
-    IEvalResult result = as_iq2nic_a0a0a23(ICanStoreCheckResult__BehaviorDescriptor.getLastResult_id3R3AIvumwq7.invoke(__thisNode__), IEvalResult.class);
+    IEvalResult result = as_iq2nic_a0a0a33(ICanStoreCheckResult__BehaviorDescriptor.getLastResult_id3R3AIvumwq7.invoke(__thisNode__), IEvalResult.class);
     if (result == null) {
       return;
     }
@@ -134,6 +135,9 @@ public final class AbstractTestItem__BehaviorDescriptor extends BaseBHDescriptor
     }
   }
   /*package*/ static boolean mustBeRunManually_id3R3AIvumAZH(@NotNull SNode __thisNode__) {
+    return true;
+  }
+  /*package*/ static boolean canRunManuallyInReadAction_id5WzVtORk4sL(@NotNull SNode __thisNode__) {
     return true;
   }
   /*package*/ static String getAutomaticName_idcJpacq408C(@NotNull SNode __thisNode__) {
@@ -254,31 +258,33 @@ public final class AbstractTestItem__BehaviorDescriptor extends BaseBHDescriptor
       case 8:
         return (T) ((Boolean) mustBeRunManually_id3R3AIvumAZH(node));
       case 9:
-        return (T) ((String) getAutomaticName_idcJpacq408C(node));
+        return (T) ((Boolean) canRunManuallyInReadAction_id5WzVtORk4sL(node));
       case 10:
-        return (T) ((String) getPresentation_idhEwIMiw(node));
+        return (T) ((String) getAutomaticName_idcJpacq408C(node));
       case 11:
-        return (T) ((ITraceRecord) getRootTrace_id7obiejCh8Tv(node));
+        return (T) ((String) getPresentation_idhEwIMiw(node));
       case 12:
-        return (T) ((SNode) getAnnotatedNode_id38gbJV0XvZR(node));
+        return (T) ((ITraceRecord) getRootTrace_id7obiejCh8Tv(node));
       case 13:
-        return (T) ((SNode) getTestCase_idhGBgWVd(node));
+        return (T) ((SNode) getAnnotatedNode_id38gbJV0XvZR(node));
       case 14:
+        return (T) ((SNode) getTestCase_idhGBgWVd(node));
+      case 15:
         perform_id1kgh5YabdhC(node, (SNode) parameters[0], (ComponentHost) parameters[1]);
         return null;
-      case 15:
-        return (T) ((String) getDefaultName_id7scb9XJdmH2(node));
       case 16:
-        return (T) ((String) getTestName_idhGBohAB(node));
+        return (T) ((String) getDefaultName_id7scb9XJdmH2(node));
       case 17:
-        return (T) ((Boolean) expectsErrorsInside_id3efgZvcKrj8(node));
+        return (T) ((String) getTestName_idhGBohAB(node));
       case 18:
-        return (T) ((Object) extractVal_id5sTgzMBPObj(node, (Object) parameters[0]));
+        return (T) ((Boolean) expectsErrorsInside_id3efgZvcKrj8(node));
       case 19:
-        return (T) ((String) allowsEffectForNode_idORfz$DS6Ap(node, (SNode) parameters[0]));
+        return (T) ((Object) extractVal_id5sTgzMBPObj(node, (Object) parameters[0]));
       case 20:
-        return (T) ((MessageValue) wrapException_id3YhAT14QasA(node, (String) parameters[0], (Throwable) parameters[1]));
+        return (T) ((String) allowsEffectForNode_idORfz$DS6Ap(node, (SNode) parameters[0]));
       case 21:
+        return (T) ((MessageValue) wrapException_id3YhAT14QasA(node, (String) parameters[0], (Throwable) parameters[1]));
+      case 22:
         return (T) ((Boolean) canBeIgnored_id48NC6VzTkMS(node));
       default:
         throw new BHMethodNotFoundException(this, method);
@@ -308,7 +314,7 @@ public final class AbstractTestItem__BehaviorDescriptor extends BaseBHDescriptor
   public SAbstractConcept getConcept() {
     return CONCEPT;
   }
-  private static <T> T as_iq2nic_a0a0a23(Object o, Class<T> type) {
+  private static <T> T as_iq2nic_a0a0a33(Object o, Class<T> type) {
     return (type.isInstance(o) ? (T) o : null);
   }
 

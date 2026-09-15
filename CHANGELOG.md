@@ -7,6 +7,7 @@ The project does _not_ follow Semantic Versioning and the changes are documented
 
 ## September 2026
 ### Changed
+- Core: `Run/Evaluate/Check All in Root/Model/Children Manually` no longer freeze MPS for the whole run. The checks run as a cancellable background task with progress in the status bar, one model access per check, so the UI stays responsive and an edit waits at most for the check that is currently running. Checks whose `runManually` only reads the model (the KernelF test items) run in a read action on the background thread; all others keep running in a command on the EDT, one command per check. A second run cannot be started while one is active. The old `CommandWithMessage` helper, whose message window also opened on the primary screen instead of the MPS window, is deprecated.
 - KernelF: `EnumLiteral` now implements `ISmartReferent` and derives its `resolveInfo` from the same presentation (qualified for a qualified enum, bare otherwise), so completion, the editor cell and `renderReadable()` agree. The hand-written `EnumLiteralRef` substitute menus and the qualified filter in its scope were dropped in favour of the smart-reference machinery MPS generates. The auxiliary concept `QualifierRef` was removed; it had no instances and was never part of a valid model, so no migration is required.
 
 ### Fixed
