@@ -8,9 +8,12 @@ import javax.swing.JLabel;
 import javax.swing.BorderFactory;
 import javax.swing.SwingUtilities;
 
+@Deprecated
 public class CommandWithMessage {
 
   public static void execute(final String message, final SRepository repository, final Runnable runnable) {
+    // Deprecated: runs everything in one command on the EDT, which freezes the UI for the whole run.
+    // Use RunManuallyBackgroundTask instead.
     final JWindow win = new JWindow();
     JLabel label = new JLabel(message);
     label.setBorder(BorderFactory.createEmptyBorder(20, 50, 20, 50));

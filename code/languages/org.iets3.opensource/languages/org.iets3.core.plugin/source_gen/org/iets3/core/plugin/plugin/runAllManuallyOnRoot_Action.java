@@ -17,9 +17,6 @@ import jetbrains.mps.ide.editor.MPSEditorDataKeys;
 import jetbrains.mps.project.MPSProject;
 import java.util.List;
 import org.jetbrains.mps.openapi.language.SAbstractConcept;
-import jetbrains.mps.internal.collections.runtime.ListSequence;
-import org.iets3.core.base.behavior.ICanRunCheckManually__BehaviorDescriptor;
-import org.iets3.core.base.behavior.RunManuallyUtil;
 import org.jetbrains.mps.openapi.language.SInterfaceConcept;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 
@@ -37,7 +34,7 @@ public class runAllManuallyOnRoot_Action extends BaseAction {
   }
   @Override
   public boolean isApplicable(AnActionEvent event, final Map<String, Object> _params) {
-    return ((SNode) MapSequence.fromMap(_params).get("root")) != null && SNodeOperations.getParent(((SNode) MapSequence.fromMap(_params).get("root"))) == null;
+    return ((SNode) MapSequence.fromMap(_params).get("root")) != null && SNodeOperations.getParent(((SNode) MapSequence.fromMap(_params).get("root"))) == null && !(RunManuallyBackgroundTask.isRunning());
   }
   @Override
   public void doUpdate(@NotNull AnActionEvent event, final Map<String, Object> _params) {
@@ -75,14 +72,7 @@ public class runAllManuallyOnRoot_Action extends BaseAction {
   public void doExecute(@NotNull final AnActionEvent event, final Map<String, Object> _params) {
     final List<SNode> manuals = SNodeOperations.getNodeDescendants(((SNode) MapSequence.fromMap(_params).get("root")), CONCEPTS.ICanRunCheckManually$e, true, new SAbstractConcept[]{});
     final EditorContext context = ((EditorContext) MapSequence.fromMap(_params).get("ctx"));
-    CommandWithMessage.execute("running for " + ListSequence.fromList(manuals).count() + " nodes.", ((MPSProject) MapSequence.fromMap(_params).get("mpsProject")).getRepository(), new Runnable() {
-      public void run() {
-        for (SNode m : ListSequence.fromList(manuals).where((it) -> (boolean) ICanRunCheckManually__BehaviorDescriptor.mustBeRunManually_id3R3AIvumAZH.invoke(it) && (boolean) ICanRunCheckManually__BehaviorDescriptor.readyToRunManually_id3R3AIvumwpv.invoke(it))) {
-          ICanRunCheckManually__BehaviorDescriptor.runManually_id3R3AIvumrTm.invoke(m, context);
-        }
-        RunManuallyUtil.updateEditors(context, manuals);
-      }
-    });
+    RunManuallyBackgroundTask.start(((MPSProject) MapSequence.fromMap(_params).get("mpsProject")), context, manuals);
   }
 
   private static final class CONCEPTS {

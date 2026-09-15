@@ -7,19 +7,16 @@ import javax.swing.Icon;
 import jetbrains.mps.workbench.action.ActionAccess;
 import com.intellij.openapi.actionSystem.AnActionEvent;
 import java.util.Map;
+import org.jetbrains.annotations.NotNull;
 import org.jetbrains.mps.openapi.model.SModel;
 import jetbrains.mps.ide.actions.MPSCommonDataKeys;
 import jetbrains.mps.internal.collections.runtime.MapSequence;
 import jetbrains.mps.openapi.editor.EditorContext;
 import jetbrains.mps.ide.editor.MPSEditorDataKeys;
 import jetbrains.mps.project.MPSProject;
-import org.jetbrains.annotations.NotNull;
 import java.util.List;
 import org.jetbrains.mps.openapi.model.SNode;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SModelOperations;
-import jetbrains.mps.internal.collections.runtime.ListSequence;
-import org.iets3.core.base.behavior.ICanRunCheckManually__BehaviorDescriptor;
-import org.iets3.core.base.behavior.RunManuallyUtil;
 import org.jetbrains.mps.openapi.language.SInterfaceConcept;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 
@@ -30,11 +27,18 @@ public class runAllManuallyOnModel_Action extends BaseAction {
     super("Run/Evaluate/Check All in Model Manually", "", ICON);
     this.setIsAlwaysVisible(false);
     this.setActionAccess(ActionAccess.UNDO_PROJECT);
-    updateInBackground(true);
   }
   @Override
   public boolean isDumbAware() {
     return true;
+  }
+  @Override
+  public boolean isApplicable(AnActionEvent event, final Map<String, Object> _params) {
+    return !(RunManuallyBackgroundTask.isRunning());
+  }
+  @Override
+  public void doUpdate(@NotNull AnActionEvent event, final Map<String, Object> _params) {
+    this.setEnabledState(event.getPresentation(), this.isApplicable(event, _params));
   }
   @Override
   protected boolean collectActionData(AnActionEvent event, final Map<String, Object> _params) {
@@ -68,15 +72,7 @@ public class runAllManuallyOnModel_Action extends BaseAction {
   public void doExecute(@NotNull final AnActionEvent event, final Map<String, Object> _params) {
     final List<SNode> manuals = SModelOperations.nodes(((SModel) MapSequence.fromMap(_params).get("model")), CONCEPTS.ICanRunCheckManually$e);
     final EditorContext context = ((EditorContext) MapSequence.fromMap(_params).get("ctx"));
-    CommandWithMessage.execute("running for " + ListSequence.fromList(manuals).count() + " nodes.", ((MPSProject) MapSequence.fromMap(_params).get("mpsProject")).getRepository(), new Runnable() {
-      public void run() {
-        for (SNode m : ListSequence.fromList(manuals).where((it) -> (boolean) ICanRunCheckManually__BehaviorDescriptor.mustBeRunManually_id3R3AIvumAZH.invoke(it) && (boolean) ICanRunCheckManually__BehaviorDescriptor.readyToRunManually_id3R3AIvumwpv.invoke(it))) {
-          ICanRunCheckManually__BehaviorDescriptor.runManually_id3R3AIvumrTm.invoke(m, context);
-        }
-        RunManuallyUtil.updateEditors(context, manuals);
-      }
-    });
-
+    RunManuallyBackgroundTask.start(((MPSProject) MapSequence.fromMap(_params).get("mpsProject")), context, manuals);
   }
 
   private static final class CONCEPTS {

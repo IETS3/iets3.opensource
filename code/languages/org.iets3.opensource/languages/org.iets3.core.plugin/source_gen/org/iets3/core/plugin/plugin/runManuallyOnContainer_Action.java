@@ -18,7 +18,6 @@ import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
 import jetbrains.mps.openapi.editor.EditorContext;
 import jetbrains.mps.ide.editor.MPSEditorDataKeys;
 import jetbrains.mps.project.MPSProject;
-import org.iets3.core.base.behavior.RunManuallyUtil;
 import org.jetbrains.mps.openapi.language.SInterfaceConcept;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 
@@ -38,6 +37,9 @@ public class runManuallyOnContainer_Action extends BaseAction {
   public boolean isApplicable(AnActionEvent event, final Map<String, Object> _params) {
     Iterable<SNode> manuallyRunNodes = IContainsStuffToRunManually__BehaviorDescriptor.manuallyRunNodes_idTuTPrvRoDG.invoke(((SNode) MapSequence.fromMap(_params).get("selected")));
     if (manuallyRunNodes == null) {
+      return false;
+    }
+    if (RunManuallyBackgroundTask.isRunning()) {
       return false;
     }
     return Sequence.fromIterable(manuallyRunNodes).any((it) -> (boolean) ICanRunCheckManually__BehaviorDescriptor.mustBeRunManually_id3R3AIvumAZH.invoke(it) && (boolean) ICanRunCheckManually__BehaviorDescriptor.readyToRunManually_id3R3AIvumwpv.invoke(it));
@@ -81,16 +83,7 @@ public class runManuallyOnContainer_Action extends BaseAction {
   public void doExecute(@NotNull final AnActionEvent event, final Map<String, Object> _params) {
     final Iterable<SNode> manuallyRunNodes = IContainsStuffToRunManually__BehaviorDescriptor.manuallyRunNodes_idTuTPrvRoDG.invoke(((SNode) MapSequence.fromMap(_params).get("selected")));
     final EditorContext context = ((EditorContext) MapSequence.fromMap(_params).get("ctx"));
-    CommandWithMessage.execute("running for " + Sequence.fromIterable(manuallyRunNodes).count() + " nodes", ((MPSProject) MapSequence.fromMap(_params).get("mpsProject")).getRepository(), new Runnable() {
-      public void run() {
-        for (SNode mrn : Sequence.fromIterable(manuallyRunNodes)) {
-          ICanRunCheckManually__BehaviorDescriptor.runManually_id3R3AIvumrTm.invoke(mrn, context);
-        }
-        RunManuallyUtil.updateEditors(context, manuallyRunNodes);
-      }
-    });
-
-
+    RunManuallyBackgroundTask.start(((MPSProject) MapSequence.fromMap(_params).get("mpsProject")), context, manuallyRunNodes);
   }
 
   private static final class CONCEPTS {

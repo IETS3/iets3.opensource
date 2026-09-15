@@ -36,9 +36,10 @@ public final class ICanRunCheckManually__BehaviorDescriptor extends BaseBHDescri
   public static final SMethod<Boolean> highlightWarning_id4358bbCIl2g = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("highlightWarning").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(4667172541620113552L).languageId(0xbd9c05c0f8725a35L, 0x7b68d745a7b848b9L).build2();
   public static final SMethod<Boolean> showSubResults_id4MH81Y0VldB = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("showSubResults").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5525107637532578663L).languageId(0xbd9c05c0f8725a35L, 0x7b68d745a7b848b9L).build2();
   public static final SMethod<Boolean> mustBeRunManually_id3R3AIvumAZH = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("mustBeRunManually").modifiers(12, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(4450571177430773741L).languageId(0xbd9c05c0f8725a35L, 0x7b68d745a7b848b9L).build2();
+  public static final SMethod<Boolean> canRunManuallyInReadAction_id5WzVtORk4sL = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("canRunManuallyInReadAction").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(6855584592159590193L).languageId(0xbd9c05c0f8725a35L, 0x7b68d745a7b848b9L).build2();
   public static final SMethod<Boolean> shouldBeChecked_id1996aX856sE = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("shouldBeChecked").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(1317611507090220842L).languageId(0xbd9c05c0f8725a35L, 0x7b68d745a7b848b9L).build2();
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(readyToRunManually_id3R3AIvumwpv, hasChangedAndMustBeRechecked_id6MJy$PGsBKB, canDetectChange_id6MJy$PGsBY8, isManualCheckAvaillable_id3ugRfIRApt7, doNotShowManualInfoMessage_id2jITtfD$0No, runManually_id3R3AIvumrTm, runManuallyWithUIUpdate_idub9nkyQ908, performAdditionalEditorUpdate_id3JvidvJx7iM, highlightError_id4b4fYXfo1HZ, highlightWarning_id4358bbCIl2g, showSubResults_id4MH81Y0VldB, mustBeRunManually_id3R3AIvumAZH, shouldBeChecked_id1996aX856sE);
+  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(readyToRunManually_id3R3AIvumwpv, hasChangedAndMustBeRechecked_id6MJy$PGsBKB, canDetectChange_id6MJy$PGsBY8, isManualCheckAvaillable_id3ugRfIRApt7, doNotShowManualInfoMessage_id2jITtfD$0No, runManually_id3R3AIvumrTm, runManuallyWithUIUpdate_idub9nkyQ908, performAdditionalEditorUpdate_id3JvidvJx7iM, highlightError_id4b4fYXfo1HZ, highlightWarning_id4358bbCIl2g, showSubResults_id4MH81Y0VldB, mustBeRunManually_id3R3AIvumAZH, canRunManuallyInReadAction_id5WzVtORk4sL, shouldBeChecked_id1996aX856sE);
 
   private static void ___init___(@NotNull SNode __thisNode__) {
   }
@@ -71,6 +72,12 @@ public final class ICanRunCheckManually__BehaviorDescriptor extends BaseBHDescri
     return false;
   }
   /*package*/ static boolean showSubResults_id4MH81Y0VldB(@NotNull SNode __thisNode__) {
+    return false;
+  }
+  /*package*/ static boolean canRunManuallyInReadAction_id5WzVtORk4sL(@NotNull SNode __thisNode__) {
+    // true if runManually(EditorContext) only reads the model, so that a bulk run may execute it
+    // inside a plain read action on a background thread instead of a command on the EDT.
+    // Implementations that write the model or touch the editor in runManually must keep the default.
     return false;
   }
   /*package*/ static boolean shouldBeChecked_id1996aX856sE(@NotNull SNode __thisNode__) {
@@ -115,6 +122,8 @@ public final class ICanRunCheckManually__BehaviorDescriptor extends BaseBHDescri
       case 10:
         return (T) ((Boolean) showSubResults_id4MH81Y0VldB(node));
       case 12:
+        return (T) ((Boolean) canRunManuallyInReadAction_id5WzVtORk4sL(node));
+      case 13:
         return (T) ((Boolean) shouldBeChecked_id1996aX856sE(node));
       default:
         throw new BHMethodNotFoundException(this, method);
