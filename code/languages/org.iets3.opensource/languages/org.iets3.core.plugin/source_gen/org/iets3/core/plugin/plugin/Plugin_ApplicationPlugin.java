@@ -26,6 +26,8 @@ public class Plugin_ApplicationPlugin extends BaseApplicationPlugin {
 
   public void createGroups() {
     // actions w/o parameters
+    addAction(new clearResultsInModel_Action());
+    addAction(new clearResultsInRoot_Action());
     addAction(new runAllManuallyOnModel_Action());
     addAction(new runAllManuallyOnRoot_Action());
     addAction(new runManuallyOnContainer_Action());

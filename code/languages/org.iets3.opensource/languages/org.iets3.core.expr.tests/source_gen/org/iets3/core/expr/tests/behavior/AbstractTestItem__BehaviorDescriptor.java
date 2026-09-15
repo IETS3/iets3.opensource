@@ -99,9 +99,6 @@ public final class AbstractTestItem__BehaviorDescriptor extends BaseBHDescriptor
   }
   /*package*/ static void performAdditionalEditorUpdate_id3JvidvJx7iM(@NotNull SNode __thisNode__, EditorContext edCtxOrNull) {
     IEvalResult result = as_iq2nic_a0a0a33(ICanStoreCheckResult__BehaviorDescriptor.getLastResult_id3R3AIvumwq7.invoke(__thisNode__), IEvalResult.class);
-    if (result == null) {
-      return;
-    }
 
     if (edCtxOrNull != null) {
       EditorComponent component = ((EditorComponent) edCtxOrNull.getEditorComponent());
@@ -112,6 +109,9 @@ public final class AbstractTestItem__BehaviorDescriptor extends BaseBHDescriptor
         }
       }
 
+      if (result == null) {
+        return;
+      }
       if (!(result.isOk())) {
         DefaultEditorMessage message = new DefaultEditorMessage(__thisNode__, MessageStatus.ERROR, TestColors.colorForItem(result), "Test item failed", highlightManager);
         highlightManager.mark(message);

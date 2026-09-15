@@ -18,6 +18,7 @@ public class ManuallyTriggeredAnalysesGroup_ActionGroup extends GeneratedActionG
     ManuallyTriggeredAnalysesGroup_ActionGroup.this.addSeparator();
     ManuallyTriggeredAnalysesGroup_ActionGroup.this.addAction("org.iets3.core.plugin.plugin.runManuallyOnNode_Action");
     ManuallyTriggeredAnalysesGroup_ActionGroup.this.addAction("org.iets3.core.plugin.plugin.runAllManuallyOnRoot_Action");
+    ManuallyTriggeredAnalysesGroup_ActionGroup.this.addAction("org.iets3.core.plugin.plugin.clearResultsInRoot_Action");
     addNamedAnchor(LABEL_ID_ManuallyTriggeredAnalysesExtensionPoint);
     ManuallyTriggeredAnalysesGroup_ActionGroup.this.addSeparator();
   }

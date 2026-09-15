@@ -77,8 +77,9 @@ public class Check_ICanRunCheckManuallyUtil {
           }
         }
 
-        // Result must be cleared as otherwise we put errors/warning on stale nodes
-        ICanStoreCheckResult__BehaviorDescriptor.storeLastResult_id3R3AIvuq5Dp.invoke(icrm, null);
+        // The result is deliberately kept: it stays until the next manual run or until the user
+        // clears it (intention "Delete Stored Results", actions "Clear Manual Check Results ...").
+        // Clearing it here made results vanish as soon as the checker ran once after a manual run.
       }
       if ((boolean) ICanRunCheckManually__BehaviorDescriptor.canDetectChange_id6MJy$PGsBY8.invoke(icrm) && (boolean) ICanRunCheckManually__BehaviorDescriptor.hasChangedAndMustBeRechecked_id6MJy$PGsBKB.invoke(icrm)) {
         warn.invoke("This code has changed; check must be run manually", icrm);

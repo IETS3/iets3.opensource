@@ -15,6 +15,7 @@ public class runManuallyModel_ActionGroup extends GeneratedActionGroup {
     setPopup(false);
     runManuallyModel_ActionGroup.this.addSeparator();
     runManuallyModel_ActionGroup.this.addAction("org.iets3.core.plugin.plugin.runAllManuallyOnModel_Action");
+    runManuallyModel_ActionGroup.this.addAction("org.iets3.core.plugin.plugin.clearResultsInModel_Action");
     runManuallyModel_ActionGroup.this.addSeparator();
   }
 }

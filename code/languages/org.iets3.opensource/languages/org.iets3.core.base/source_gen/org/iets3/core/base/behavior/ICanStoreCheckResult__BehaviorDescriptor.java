@@ -44,9 +44,13 @@ public final class ICanStoreCheckResult__BehaviorDescriptor extends BaseBHDescri
     }
   }
   /*package*/ static IResult deleteLastResult_id5yiuuzNYbce(@NotNull SNode __thisNode__) {
-    IResult result = (IResult) __thisNode__.getUserObject(ICanStoreCheckResult__BehaviorDescriptor.userObjectKey_id3R3AIvum$_6.invoke(__thisNode__));
+    Object stored = __thisNode__.getUserObject(ICanStoreCheckResult__BehaviorDescriptor.userObjectKey_id3R3AIvum$_6.invoke(__thisNode__));
     __thisNode__.putUserObject(ICanStoreCheckResult__BehaviorDescriptor.userObjectKey_id3R3AIvum$_6.invoke(__thisNode__), null);
-    return result;
+    if (stored instanceof IResult) {
+      return (IResult) stored;
+    }
+    // a result stored before a class reload is of a foreign IResult class; it is dropped either way
+    return null;
   }
   /*package*/ static boolean hasExistingResult_id3R3AIvumwpO(@NotNull SNode __thisNode__) {
     boolean hasResult = __thisNode__.getUserObject(ICanStoreCheckResult__BehaviorDescriptor.userObjectKey_id3R3AIvum$_6.invoke(__thisNode__)) != null;
