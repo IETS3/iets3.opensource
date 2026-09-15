@@ -376,7 +376,7 @@ import org.jetbrains.mps.openapi.language.SInterfaceConcept;
             color = JBColor.red;
           }
         } else {
-          toBeDisplayed = "<no result found>";
+          toBeDisplayed = "<" + ((ICanStoreCheckResult__BehaviorDescriptor.manualRunState_id5WzVtORNpNn.invoke(myNode) == null ? "no result found" : ICanStoreCheckResult__BehaviorDescriptor.manualRunState_id5WzVtORNpNn.invoke(myNode))) + ">";
           color = JBColor.orange;
         }
       } catch (ClassCastException ignore) {

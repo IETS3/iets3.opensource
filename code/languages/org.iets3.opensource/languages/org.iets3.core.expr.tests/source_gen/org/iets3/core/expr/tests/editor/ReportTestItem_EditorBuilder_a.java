@@ -170,7 +170,7 @@ import org.jetbrains.mps.openapi.language.SProperty;
         try {
           IEvalResult res = ((IEvalResult) ICanStoreCheckResult__BehaviorDescriptor.getLastResult_id3R3AIvumwq7.invoke(myNode));
           if (res == null || res.getActual() == null) {
-            return "<no result found>";
+            return ErrorMessageHelper.noResultText(myNode, "<no result found>");
           }
           return res.getActual().toString();
         } catch (ClassCastException ignore) {

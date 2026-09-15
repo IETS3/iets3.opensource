@@ -28,8 +28,10 @@ public final class ICanStoreCheckResult__BehaviorDescriptor extends BaseBHDescri
   public static final SMethod<Boolean> hasExistingResult_id3R3AIvumwpO = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("hasExistingResult").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(4450571177430746740L).languageId(0xbd9c05c0f8725a35L, 0x7b68d745a7b848b9L).build2();
   public static final SMethod<Boolean> hasCounterExample_idhXRDtv5Cyz = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("hasCounterExample").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(323659489957284003L).languageId(0xbd9c05c0f8725a35L, 0x7b68d745a7b848b9L).build2();
   public static final SMethod<IResult> getLastResult_id3R3AIvumwq7 = new SMethodBuilder<IResult>(new SJavaCompoundTypeImpl(IResult.class)).name("getLastResult").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(4450571177430746759L).languageId(0xbd9c05c0f8725a35L, 0x7b68d745a7b848b9L).build2();
+  public static final SMethod<String> manualRunState_id5WzVtORNpNn = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("manualRunState").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(6855584592167804119L).languageId(0xbd9c05c0f8725a35L, 0x7b68d745a7b848b9L).build2();
+  public static final SMethod<Void> setManualRunState_id5WzVtORNpOy = new SMethodBuilder<Void>(new SJavaCompoundTypeImpl(Void.class)).name("setManualRunState").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(6855584592167804194L).languageId(0xbd9c05c0f8725a35L, 0x7b68d745a7b848b9L).build2(SMethodBuilder.createJavaParameter(String.class, ""));
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(userObjectKey_id3R3AIvum$_6, storeLastResult_id3R3AIvuq5Dp, deleteLastResult_id5yiuuzNYbce, hasExistingResult_id3R3AIvumwpO, hasCounterExample_idhXRDtv5Cyz, getLastResult_id3R3AIvumwq7);
+  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(userObjectKey_id3R3AIvum$_6, storeLastResult_id3R3AIvuq5Dp, deleteLastResult_id5yiuuzNYbce, hasExistingResult_id3R3AIvumwpO, hasCounterExample_idhXRDtv5Cyz, getLastResult_id3R3AIvumwq7, manualRunState_id5WzVtORNpNn, setManualRunState_id5WzVtORNpOy);
 
   private static void ___init___(@NotNull SNode __thisNode__) {
   }
@@ -82,6 +84,15 @@ public final class ICanStoreCheckResult__BehaviorDescriptor extends BaseBHDescri
       return null;
     }
   }
+  /*package*/ static String manualRunState_id5WzVtORNpNn(@NotNull SNode __thisNode__) {
+    // "queued" or "running" while a bulk manual run has this node in its queue, null otherwise;
+    // editors show it in place of "no result found"
+    Object state = __thisNode__.getUserObject("ICanRunCheckManually.runState");
+    return (state instanceof String ? (String) state : null);
+  }
+  /*package*/ static void setManualRunState_id5WzVtORNpOy(@NotNull SNode __thisNode__, String state) {
+    __thisNode__.putUserObject("ICanRunCheckManually.runState", state);
+  }
 
   /*package*/ ICanStoreCheckResult__BehaviorDescriptor() {
   }
@@ -111,6 +122,11 @@ public final class ICanStoreCheckResult__BehaviorDescriptor extends BaseBHDescri
         return (T) ((Boolean) hasCounterExample_idhXRDtv5Cyz(node));
       case 5:
         return (T) ((IResult) getLastResult_id3R3AIvumwq7(node));
+      case 6:
+        return (T) ((String) manualRunState_id5WzVtORNpNn(node));
+      case 7:
+        setManualRunState_id5WzVtORNpOy(node, (String) parameters[0]);
+        return null;
       default:
         throw new BHMethodNotFoundException(this, method);
     }

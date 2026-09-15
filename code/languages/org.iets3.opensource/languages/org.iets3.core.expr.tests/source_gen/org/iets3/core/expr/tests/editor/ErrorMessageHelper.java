@@ -11,7 +11,7 @@ import org.iets3.core.expr.base.plugin.ProgramLocationValue;
 public class ErrorMessageHelper {
 
   public static String format(SNode node) {
-    String contents = "[no result found]";
+    String contents = noResultText(node, "[no result found]");
     try {
       IEvalResult res = ((IEvalResult) ICanStoreCheckResult__BehaviorDescriptor.getLastResult_id3R3AIvumwq7.invoke(node));
       if (res != null) {
@@ -47,6 +47,17 @@ public class ErrorMessageHelper {
       contents = contents.substring(1);
     }
     return contents;
+  }
+
+  public static String noResultText(SNode node, String fallback) {
+    // while a bulk manual run has the node queued, say so instead of "no result found"
+    String state = ICanStoreCheckResult__BehaviorDescriptor.manualRunState_id5WzVtORNpNn.invoke(node);
+    if (state == null) {
+      return fallback;
+    }
+    String open = (fallback.startsWith("<") ? "<" : "[");
+    String close = (fallback.startsWith("<") ? ">" : "]");
+    return open + state + close;
   }
 
   public static SNode getSource(SNode node) {

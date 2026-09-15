@@ -16,17 +16,23 @@ import com.intellij.openapi.progress.ProgressIndicator;
 import java.util.ArrayList;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
 import org.iets3.core.base.behavior.ICanRunCheckManually__BehaviorDescriptor;
+import org.iets3.core.base.behavior.ICanStoreCheckResult__BehaviorDescriptor;
 import com.intellij.openapi.application.ApplicationManager;
 import jetbrains.mps.lang.core.behavior.BaseConcept__BehaviorDescriptor;
 import org.iets3.core.base.behavior.RunManuallyUtil;
 
 public class RunManuallyBackgroundTask extends Task.Backgroundable {
 
+  public static final String STATE_QUEUED = "queued";
+  public static final String STATE_RUNNING = "running";
+  private static final long EDITOR_UPDATE_INTERVAL_MS = 500;
+
   private static final AtomicBoolean RUNNING = new AtomicBoolean(false);
 
   private final SRepository repository;
   private final EditorContext context;
   private final List<SNode> nodes;
+  private long lastEditorUpdate = 0;
 
   public static boolean isRunning() {
     return RUNNING.get();
@@ -71,6 +77,7 @@ public class RunManuallyBackgroundTask extends Task.Backgroundable {
         } else {
           ListSequence.fromList(inCommand).addElement(n);
         }
+        ICanStoreCheckResult__BehaviorDescriptor.setManualRunState_id5WzVtORNpOy.invoke(n, STATE_QUEUED);
       }
     });
 
@@ -79,12 +86,14 @@ public class RunManuallyBackgroundTask extends Task.Backgroundable {
     for (final SNode n : ListSequence.fromList(inReadAction)) {
       indicator.checkCanceled();
       reportProgress(indicator, done, total);
+      beforeItem(n);
       repository.getModelAccess().runReadAction(() -> runOne(n, indicator));
       done++;
     }
     for (final SNode n : ListSequence.fromList(inCommand)) {
       indicator.checkCanceled();
       reportProgress(indicator, done, total);
+      beforeItem(n);
       ApplicationManager.getApplication().invokeAndWait(() -> repository.getModelAccess().executeCommand(() -> runOne(n, indicator)));
       done++;
     }
@@ -96,20 +105,52 @@ public class RunManuallyBackgroundTask extends Task.Backgroundable {
     indicator.setText("Running check " + (done + 1) + " of " + total);
   }
 
+  private void beforeItem(final SNode n) {
+    repository.getModelAccess().runReadAction(() -> {
+      if (SNodeOperations.getModel(n) != null) {
+        ICanStoreCheckResult__BehaviorDescriptor.setManualRunState_id5WzVtORNpOy.invoke(n, STATE_RUNNING);
+      }
+    });
+    // Show the results so far and the item that is about to run, but not more often than
+    // every EDITOR_UPDATE_INTERVAL_MS when items are quick. The first call always updates,
+    // so the queue is visible before the first item starts.
+    long now = System.currentTimeMillis();
+    if (now - lastEditorUpdate >= EDITOR_UPDATE_INTERVAL_MS) {
+      lastEditorUpdate = now;
+      ApplicationManager.getApplication().invokeLater(() -> updateEditors());
+    }
+  }
+
   private void runOne(SNode n, ProgressIndicator indicator) {
     if (SNodeOperations.getModel(n) == null) {
       // deleted while the run was in progress
       return;
     }
     indicator.setText2(BaseConcept__BehaviorDescriptor.getPresentation_idhEwIMiw.invoke(n));
-    ICanRunCheckManually__BehaviorDescriptor.runManually_id3R3AIvumrTm.invoke(n, context);
+    try {
+      ICanRunCheckManually__BehaviorDescriptor.runManually_id3R3AIvumrTm.invoke(n, context);
+    } finally {
+      ICanStoreCheckResult__BehaviorDescriptor.setManualRunState_id5WzVtORNpOy.invoke(n, null);
+    }
+  }
+
+  private void updateEditors() {
+    repository.getModelAccess().runReadAction(() -> RunManuallyUtil.updateEditors(context, ListSequence.fromList(nodes).where((it) -> SNodeOperations.getModel(it) != null)));
   }
 
   @Override
   public void onFinished() {
     // called on the EDT, also after a cancel, so partial results are shown
     RUNNING.set(false);
-    repository.getModelAccess().runReadAction(() -> RunManuallyUtil.updateEditors(context, ListSequence.fromList(nodes).where((it) -> SNodeOperations.getModel(it) != null)));
+    repository.getModelAccess().runReadAction(() -> {
+      // items still queued after a cancel or an exception
+      for (SNode n : ListSequence.fromList(nodes)) {
+        if (SNodeOperations.getModel(n) != null) {
+          ICanStoreCheckResult__BehaviorDescriptor.setManualRunState_id5WzVtORNpOy.invoke(n, null);
+        }
+      }
+    });
+    updateEditors();
   }
 
 }
