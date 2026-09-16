@@ -102,47 +102,57 @@
           <property role="2V$B1Q" value="org.iets3.core.expr.genjava.contracts" />
         </node>
       </node>
-      <node concept="2Qf6Nf" id="4z0AnX816YU" role="2Qf7GQ">
-        <node concept="2V$Bhx" id="6ii4I_AaKi7" role="2Qf6Ng">
+    </node>
+    <node concept="2VgMA2" id="6m3HP9nDSZG" role="2VgMA7">
+      <node concept="2Qf6Nf" id="6m3HP9nDSZY" role="2Qf7GQ">
+        <node concept="2V$Bhx" id="6m3HP9nDT02" role="2Qf6Ng">
+          <property role="2V$B1T" value="3b01f160-a12d-4471-8269-cdf596d4604c" />
+          <property role="2V$B1Q" value="org.iets3.core.expr.genjava.optimizer" />
+        </node>
+      </node>
+    </node>
+    <node concept="2VgMA2" id="7_igWyyzsQm" role="2VgMA7">
+      <node concept="2Qf6Nf" id="7_igWyyzsQn" role="2Qf7GQ">
+        <node concept="2V$Bhx" id="7_igWyyzsQp" role="2Qf6Ng">
           <property role="2V$B1T" value="fd392034-7849-419d-9071-12563d152375" />
           <property role="2V$B1Q" value="jetbrains.mps.baseLanguage.closures" />
         </node>
       </node>
-      <node concept="2Qf6Nf" id="4z0AnX816YV" role="2Qf7GQ">
-        <node concept="2V$Bhx" id="4bh_m841Xu2" role="2Qf6Ng">
+      <node concept="2Qf6Nf" id="7_igWyyzsQq" role="2Qf7GQ">
+        <node concept="2V$Bhx" id="7_igWyyzsQs" role="2Qf6Ng">
           <property role="2V$B1T" value="83888646-71ce-4f1c-9c53-c54016f6ad4f" />
           <property role="2V$B1Q" value="jetbrains.mps.baseLanguage.collections" />
         </node>
       </node>
-      <node concept="2Qf6Nf" id="4z0AnX816YW" role="2Qf7GQ">
-        <node concept="2V$Bhx" id="1URTIF$uG6y" role="2Qf6Ng">
+      <node concept="2Qf6Nf" id="7_igWyyzsQt" role="2Qf7GQ">
+        <node concept="2V$Bhx" id="7_igWyyzsQv" role="2Qf6Ng">
           <property role="2V$B1T" value="f61473f9-130f-42f6-b98d-6c438812c2f6" />
           <property role="2V$B1Q" value="jetbrains.mps.baseLanguage.unitTest" />
         </node>
       </node>
     </node>
-    <node concept="2VgMA2" id="6m3HP9nDSZG" role="2VgMA7">
+    <node concept="2VgMA2" id="7_igWyyzsQw" role="2VgMA7">
       <property role="1s431M" value="true" />
-      <node concept="2Qf6Nf" id="6m3HP9nDSZY" role="2Qf7GQ">
-        <node concept="2V$Bhx" id="6m3HP9nDT02" role="2Qf6Ng">
+      <node concept="2Qf6Nf" id="7_igWyyzsQx" role="2Qf7GQ">
+        <node concept="2V$Bhx" id="7_igWyyzsQz" role="2Qf6Ng">
           <property role="2V$B1T" value="8585453e-6bfb-4d80-98de-b16074f1d86c" />
           <property role="2V$B1Q" value="jetbrains.mps.lang.test" />
         </node>
       </node>
-      <node concept="2Qf6Nf" id="6m3HP9nDT04" role="2Qf7GQ">
-        <node concept="2V$Bhx" id="6m3HP9nDT0a" role="2Qf6Ng">
+      <node concept="2Qf6Nf" id="7_igWyyzsQ$" role="2Qf7GQ">
+        <node concept="2V$Bhx" id="7_igWyyzsQA" role="2Qf6Ng">
           <property role="2V$B1T" value="ceab5195-25ea-4f22-9b92-103b95ca8c0c" />
           <property role="2V$B1Q" value="jetbrains.mps.lang.core" />
         </node>
       </node>
-      <node concept="2Qf6Nf" id="6m3HP9nDT0c" role="2Qf7GQ">
-        <node concept="2V$Bhx" id="6m3HP9nDT0k" role="2Qf6Ng">
+      <node concept="2Qf6Nf" id="7_igWyyzsQB" role="2Qf7GQ">
+        <node concept="2V$Bhx" id="7_igWyyzsQD" role="2Qf6Ng">
           <property role="2V$B1T" value="d441fba0-f46b-43cd-b723-dad7b65da615" />
           <property role="2V$B1Q" value="org.iets3.core.expr.tests" />
         </node>
       </node>
-      <node concept="2Qf6Nf" id="6m3HP9nDT0m" role="2Qf7GQ">
-        <node concept="2V$Bhx" id="6m3HP9nDT0w" role="2Qf6Ng">
+      <node concept="2Qf6Nf" id="7_igWyyzsQE" role="2Qf7GQ">
+        <node concept="2V$Bhx" id="7_igWyyzsQG" role="2Qf6Ng">
           <property role="2V$B1T" value="d4280a54-f6df-4383-aa41-d1b2bffa7eb1" />
           <property role="2V$B1Q" value="com.mbeddr.core.base" />
         </node>

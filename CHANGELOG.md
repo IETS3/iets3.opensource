@@ -6,6 +6,9 @@ Format of the log is _loosely_ based on [Keep a Changelog](https://keepachangelo
 The project does _not_ follow Semantic Versioning and the changes are documented in reverse chronological order, grouped by calendar month.
 
 ## September 2026
+### Added
+- KernelF: a new generator language `org.iets3.core.expr.genjava.optimizer` post-processes the generated Java for readability, as a separate step of the `Java_genplan` generation plans between the KernelF generators and the `closures`/`collections`/`unitTest` generators. It inlines immediately invoked closures (`{ => return e; }.invoke()` becomes `e`, `if`/`else` returns become a ternary, bodies in return/statement/variable-initializer position are spliced into the surrounding block), collapses `T v = init; v = v.a(); …; return v;` closures into `init.a()…` call chains, folds `if (true)`/`true ? …` conditions, and removes nested casts to the same type and redundant parentheses. The KernelF generators themselves are unchanged and keep describing the semantics only.
+
 ### Changed
 - KernelF: `EnumLiteral` now implements `ISmartReferent` and derives its `resolveInfo` from the same presentation (qualified for a qualified enum, bare otherwise), so completion, the editor cell and `renderReadable()` agree. The hand-written `EnumLiteralRef` substitute menus and the qualified filter in its scope were dropped in favour of the smart-reference machinery MPS generates. The auxiliary concept `QualifierRef` was removed; it had no instances and was never part of a valid model, so no migration is required.
 
