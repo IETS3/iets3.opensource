@@ -65,7 +65,7 @@ public class Data {
       if (!(o instanceof Point)) {
         return false;
       }
-      Point rd = ((Point) o);
+      Point rd = (Point) o;
 
       if (!(AH.isEqual(this.x, rd.getx()))) {
         return false;

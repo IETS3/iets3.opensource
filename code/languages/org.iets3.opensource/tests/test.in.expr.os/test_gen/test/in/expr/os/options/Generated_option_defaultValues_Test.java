@@ -35,7 +35,7 @@ public class Generated_option_defaultValues_Test {
       if (!(o instanceof Dummy)) {
         return false;
       }
-      Dummy rd = ((Dummy) o);
+      Dummy rd = (Dummy) o;
 
 
 
@@ -59,47 +59,47 @@ public class Generated_option_defaultValues_Test {
   }
   @Test
   public void TestDefaultValues_item0_8613480905490286320() throws Throwable {
-    Assert.assertEquals("Expected: " + (null) + ", but was: " + (null), (Object) null, (Object) null);
+    Assert.assertEquals("Expected: " + null + ", but was: " + null, (Object) null, (Object) null);
   }
   @Test
   public void TestDefaultValues_item1_8613480905490286325() throws Throwable {
-    Assert.assertEquals("Expected: " + (null) + ", but was: " + (null), (Object) null, (Object) null);
+    Assert.assertEquals("Expected: " + null + ", but was: " + null, (Object) null, (Object) null);
   }
   @Test
   public void TestDefaultValues_item2_8613480905490286331() throws Throwable {
-    Assert.assertEquals("Expected: " + (null) + ", but was: " + (null), (Object) null, (Object) null);
+    Assert.assertEquals("Expected: " + null + ", but was: " + null, (Object) null, (Object) null);
   }
   @Test
   public void TestDefaultValues_item3_8613480905490286337() throws Throwable {
-    Assert.assertEquals("Expected: " + (null) + ", but was: " + (null), (Object) null, (Object) null);
+    Assert.assertEquals("Expected: " + null + ", but was: " + null, (Object) null, (Object) null);
   }
   @Test
   public void TestDefaultValues_item4_8613480905490286343() throws Throwable {
-    Assert.assertEquals("Expected: " + (null) + ", but was: " + (null), (Object) null, (Object) null);
+    Assert.assertEquals("Expected: " + null + ", but was: " + null, (Object) null, (Object) null);
   }
   @Test
   public void TestDefaultValues_item5_8613480905490286350() throws Throwable {
-    Assert.assertEquals("Expected: " + (null) + ", but was: " + (null), (Object) null, (Object) null);
+    Assert.assertEquals("Expected: " + null + ", but was: " + null, (Object) null, (Object) null);
   }
   @Test
   public void TestDefaultValues_item6_8613480905490286356() throws Throwable {
-    Assert.assertEquals("Expected: " + (null) + ", but was: " + (null), (Object) null, (Object) null);
+    Assert.assertEquals("Expected: " + null + ", but was: " + null, (Object) null, (Object) null);
   }
   @Test
   public void TestDefaultValues_item7_8613480905490286361() throws Throwable {
-    Assert.assertEquals("Expected: " + (null) + ", but was: " + (null), (Object) null, (Object) null);
+    Assert.assertEquals("Expected: " + null + ", but was: " + null, (Object) null, (Object) null);
   }
   @Test
   public void TestDefaultValues_item8_8613480905490286369() throws Throwable {
-    Assert.assertEquals("Expected: " + (null) + ", but was: " + (null), (Object) null, (Object) null);
+    Assert.assertEquals("Expected: " + null + ", but was: " + null, (Object) null, (Object) null);
   }
   @Test
   public void TestDefaultValues_item9_8613480905490286377() throws Throwable {
-    Assert.assertEquals("Expected: " + (null) + ", but was: " + (null), (Object) null, (Object) null);
+    Assert.assertEquals("Expected: " + null + ", but was: " + null, (Object) null, (Object) null);
   }
   @Test
   public void TestDefaultValues_item10_8613480905490286387() throws Throwable {
-    Assert.assertEquals("Expected: " + (null) + ", but was: " + (null), (Object) null, (Object) null);
+    Assert.assertEquals("Expected: " + null + ", but was: " + null, (Object) null, (Object) null);
   }
 
 

@@ -31,34 +31,31 @@ public class Generated_typedefs_Test {
 
 
 
-  public static Number f(Number arg) {
+  public static Number f(final Number arg) {
     {
       Number it = arg;
-      if (!(!(AH.isLess(it, ((Number) new BigInteger("0")))))) {
+      if (!(!(AH.isLess(it, (Number) new BigInteger("0"))))) {
         final Message message = new Message(BuiltinMessageKinds.error(), ContractViolatedException.CONSTRAINT_FAILED + ": " + "it >= 0").withLocation(new ProgramLocation("r:7d3e9570-276c-4dee-986d-52b72d41755a(test.in.expr.os.typedefs@tests)/2396718651920987243", "http://127.0.0.1:63320/node?ref=r%3A7d3e9570-276c-4dee-986d-52b72d41755a%28test.in.expr.os.typedefs%40tests%29%2F2396718651920987243")).withAffectedMemberNames(new HashSet<String>(Arrays.<String>asList()));
         GlobalContext.MESSAGE_LOG.get().collect(message);
         throw new ContractViolatedException(message);
       }
     }
     Number res = ((_FunctionTypes._return_P0_E0<Number>) () -> {
-      Number alter = ((_FunctionTypes._return_P0_E0<Number>) () -> {
-        Number result = arg;
-        {
-          Number it = result;
-          if (!(AH.isLess(it, ((Number) new BigInteger("120"))))) {
-            final Message message = new Message(BuiltinMessageKinds.error(), ContractViolatedException.CONSTRAINT_FAILED + ": " + "it < 120").withLocation(new ProgramLocation("r:7d3e9570-276c-4dee-986d-52b72d41755a(test.in.expr.os.typedefs@tests)/2396718651921061475", "http://127.0.0.1:63320/node?ref=r%3A7d3e9570-276c-4dee-986d-52b72d41755a%28test.in.expr.os.typedefs%40tests%29%2F2396718651921061475")).withAffectedMemberNames(new HashSet<String>(Arrays.<String>asList()));
-            GlobalContext.MESSAGE_LOG.get().collect(message);
-            throw new ContractViolatedException(message);
-          }
-          if (!(!(AH.isLess(it, ((Number) new BigInteger("0")))))) {
-            final Message message = new Message(BuiltinMessageKinds.error(), ContractViolatedException.CONSTRAINT_FAILED + ": " + "it >= 0").withLocation(new ProgramLocation("r:7d3e9570-276c-4dee-986d-52b72d41755a(test.in.expr.os.typedefs@tests)/2396718651920987243", "http://127.0.0.1:63320/node?ref=r%3A7d3e9570-276c-4dee-986d-52b72d41755a%28test.in.expr.os.typedefs%40tests%29%2F2396718651920987243")).withAffectedMemberNames(new HashSet<String>(Arrays.<String>asList()));
-            GlobalContext.MESSAGE_LOG.get().collect(message);
-            throw new ContractViolatedException(message);
-          }
+      Number result = arg;
+      {
+        Number it = result;
+        if (!(AH.isLess(it, (Number) new BigInteger("120")))) {
+          final Message message = new Message(BuiltinMessageKinds.error(), ContractViolatedException.CONSTRAINT_FAILED + ": " + "it < 120").withLocation(new ProgramLocation("r:7d3e9570-276c-4dee-986d-52b72d41755a(test.in.expr.os.typedefs@tests)/2396718651921061475", "http://127.0.0.1:63320/node?ref=r%3A7d3e9570-276c-4dee-986d-52b72d41755a%28test.in.expr.os.typedefs%40tests%29%2F2396718651921061475")).withAffectedMemberNames(new HashSet<String>(Arrays.<String>asList()));
+          GlobalContext.MESSAGE_LOG.get().collect(message);
+          throw new ContractViolatedException(message);
         }
-        return result;
-      }).invoke();
-      return alter;
+        if (!(!(AH.isLess(it, (Number) new BigInteger("0"))))) {
+          final Message message = new Message(BuiltinMessageKinds.error(), ContractViolatedException.CONSTRAINT_FAILED + ": " + "it >= 0").withLocation(new ProgramLocation("r:7d3e9570-276c-4dee-986d-52b72d41755a(test.in.expr.os.typedefs@tests)/2396718651920987243", "http://127.0.0.1:63320/node?ref=r%3A7d3e9570-276c-4dee-986d-52b72d41755a%28test.in.expr.os.typedefs%40tests%29%2F2396718651920987243")).withAffectedMemberNames(new HashSet<String>(Arrays.<String>asList()));
+          GlobalContext.MESSAGE_LOG.get().collect(message);
+          throw new ContractViolatedException(message);
+        }
+      }
+      return result;
     }).invoke();
 
     return res;
@@ -67,12 +64,12 @@ public class Generated_typedefs_Test {
     Number res = arg;
     {
       Number it = res;
-      if (!(AH.isLess(it, ((Number) new BigInteger("120"))))) {
+      if (!(AH.isLess(it, (Number) new BigInteger("120")))) {
         final Message message = new Message(BuiltinMessageKinds.error(), ContractViolatedException.CONSTRAINT_FAILED + ": " + "it < 120").withLocation(new ProgramLocation("r:7d3e9570-276c-4dee-986d-52b72d41755a(test.in.expr.os.typedefs@tests)/2396718651921061475", "http://127.0.0.1:63320/node?ref=r%3A7d3e9570-276c-4dee-986d-52b72d41755a%28test.in.expr.os.typedefs%40tests%29%2F2396718651921061475")).withAffectedMemberNames(new HashSet<String>(Arrays.<String>asList()));
         GlobalContext.MESSAGE_LOG.get().collect(message);
         throw new ContractViolatedException(message);
       }
-      if (!(!(AH.isLess(it, ((Number) new BigInteger("0")))))) {
+      if (!(!(AH.isLess(it, (Number) new BigInteger("0"))))) {
         final Message message = new Message(BuiltinMessageKinds.error(), ContractViolatedException.CONSTRAINT_FAILED + ": " + "it >= 0").withLocation(new ProgramLocation("r:7d3e9570-276c-4dee-986d-52b72d41755a(test.in.expr.os.typedefs@tests)/2396718651920987243", "http://127.0.0.1:63320/node?ref=r%3A7d3e9570-276c-4dee-986d-52b72d41755a%28test.in.expr.os.typedefs%40tests%29%2F2396718651920987243")).withAffectedMemberNames(new HashSet<String>(Arrays.<String>asList()));
         GlobalContext.MESSAGE_LOG.get().collect(message);
         throw new ContractViolatedException(message);
@@ -84,29 +81,27 @@ public class Generated_typedefs_Test {
   public static Number h(Number age) {
     {
       Number it = age;
-      if (!(AH.isLess(it, ((Number) new BigInteger("120"))))) {
+      if (!(AH.isLess(it, (Number) new BigInteger("120")))) {
         final Message message = new Message(BuiltinMessageKinds.error(), ContractViolatedException.CONSTRAINT_FAILED + ": " + "it < 120").withLocation(new ProgramLocation("r:7d3e9570-276c-4dee-986d-52b72d41755a(test.in.expr.os.typedefs@tests)/2396718651921061475", "http://127.0.0.1:63320/node?ref=r%3A7d3e9570-276c-4dee-986d-52b72d41755a%28test.in.expr.os.typedefs%40tests%29%2F2396718651921061475")).withAffectedMemberNames(new HashSet<String>(Arrays.<String>asList()));
         GlobalContext.MESSAGE_LOG.get().collect(message);
         throw new ContractViolatedException(message);
       }
-      if (!(!(AH.isLess(it, ((Number) new BigInteger("0")))))) {
+      if (!(!(AH.isLess(it, (Number) new BigInteger("0"))))) {
         final Message message = new Message(BuiltinMessageKinds.error(), ContractViolatedException.CONSTRAINT_FAILED + ": " + "it >= 0").withLocation(new ProgramLocation("r:7d3e9570-276c-4dee-986d-52b72d41755a(test.in.expr.os.typedefs@tests)/2396718651920987243", "http://127.0.0.1:63320/node?ref=r%3A7d3e9570-276c-4dee-986d-52b72d41755a%28test.in.expr.os.typedefs%40tests%29%2F2396718651920987243")).withAffectedMemberNames(new HashSet<String>(Arrays.<String>asList()));
         GlobalContext.MESSAGE_LOG.get().collect(message);
         throw new ContractViolatedException(message);
       }
     }
-    Number res = AH.mul(((Number) new BigInteger("2")), age);
+    Number res = AH.mul((Number) new BigInteger("2"), age);
 
     return res;
   }
   @Test
   public void testsForVal_item0_4723261570601131197() throws Throwable {
     try {
-      ((_FunctionTypes._void_P0_E0) () -> {
-        if (Generated_typedefs_Test.f(((BigInteger) ((Number) new BigInteger("2"))).negate()) == null) {
-          throw new NullPointerException("No Result in Confail Testitem");
-        }
-      }).invoke();
+      if (Generated_typedefs_Test.f(((BigInteger) (Number) new BigInteger("2")).negate()) == null) {
+        throw new NullPointerException("No Result in Confail Testitem");
+      }
       Assert.fail("Constraint failed");
     } catch (Exception e) {
       // expected exception
@@ -114,16 +109,14 @@ public class Generated_typedefs_Test {
   }
   @Test
   public void testsForVal_item1_651266901446701323() throws Throwable {
-    Assert.assertTrue("Expected: " + (((Number) new BigInteger("10"))) + ", but was: " + (Generated_typedefs_Test.f(((Number) new BigInteger("10")))), EqualsTestOp.matches(((Number) new BigInteger("10")), Generated_typedefs_Test.f(((Number) new BigInteger("10")))));
+    Assert.assertTrue("Expected: " + (Number) new BigInteger("10") + ", but was: " + Generated_typedefs_Test.f((Number) new BigInteger("10")), EqualsTestOp.matches((Number) new BigInteger("10"), Generated_typedefs_Test.f((Number) new BigInteger("10"))));
   }
   @Test
   public void testsForVal_item2_4723261570601250687() throws Throwable {
     try {
-      ((_FunctionTypes._void_P0_E0) () -> {
-        if (Generated_typedefs_Test.f(((Number) new BigInteger("140"))) == null) {
-          throw new NullPointerException("No Result in Confail Testitem");
-        }
-      }).invoke();
+      if (Generated_typedefs_Test.f((Number) new BigInteger("140")) == null) {
+        throw new NullPointerException("No Result in Confail Testitem");
+      }
       Assert.fail("Constraint failed");
     } catch (Exception e) {
       // expected exception
@@ -132,11 +125,9 @@ public class Generated_typedefs_Test {
   @Test
   public void testsForReturnTypes_item0_4723261570601384107() throws Throwable {
     try {
-      ((_FunctionTypes._void_P0_E0) () -> {
-        if (Generated_typedefs_Test.g(((Number) new BigInteger("140"))) == null) {
-          throw new NullPointerException("No Result in Confail Testitem");
-        }
-      }).invoke();
+      if (Generated_typedefs_Test.g((Number) new BigInteger("140")) == null) {
+        throw new NullPointerException("No Result in Confail Testitem");
+      }
       Assert.fail("Constraint failed");
     } catch (Exception e) {
       // expected exception
@@ -183,7 +174,7 @@ public class Generated_typedefs_Test {
       if (!(o instanceof R)) {
         return false;
       }
-      R rd = ((R) o);
+      R rd = (R) o;
 
       if (!(AH.isEqual(this.i, rd.geti()))) {
         return false;
@@ -220,17 +211,15 @@ public class Generated_typedefs_Test {
   @Test
   public void testsForArguments_item0_4723261570601453356() throws Throwable {
     try {
-      ((_FunctionTypes._void_P0_E0) () -> {
-        if (Generated_typedefs_Test.h(((Number) new BigInteger("200"))) == null) {
-          throw new NullPointerException("No Result in Confail Testitem");
-        }
-      }).invoke();
+      if (Generated_typedefs_Test.h((Number) new BigInteger("200")) == null) {
+        throw new NullPointerException("No Result in Confail Testitem");
+      }
       Assert.fail("Constraint failed");
     } catch (Exception e) {
       // expected exception
     }
   }
-  public static Number testSymbol(Number x, Number y) {
+  public static Number testSymbol(final Number x, final Number y) {
     Number res = ((_FunctionTypes._return_P0_E0<Number>) () -> {
       if (org.iets3.core.expr.genjava.base.rt.rt.AH.isSome(x) && org.iets3.core.expr.genjava.base.rt.rt.AH.isSome(y)) {
         return AH.add(x, y);
@@ -243,8 +232,8 @@ public class Generated_typedefs_Test {
   }
   public static Number testCall() {
     Number res = ((_FunctionTypes._return_P0_E0<Number>) () -> {
-      Number v = Generated_typedefs_Test.optionize(((Number) new BigInteger("10")));
-      if (org.iets3.core.expr.genjava.base.rt.rt.AH.isSome(Generated_typedefs_Test.optionize(((Number) new BigInteger("10"))))) {
+      Number v = Generated_typedefs_Test.optionize((Number) new BigInteger("10"));
+      if (org.iets3.core.expr.genjava.base.rt.rt.AH.isSome(Generated_typedefs_Test.optionize((Number) new BigInteger("10")))) {
         return v;
       } else {
         return null;
@@ -270,84 +259,36 @@ public class Generated_typedefs_Test {
   }
   @Test
   public void TestOptionStuff_item0_5096151429187731971() throws Throwable {
-    Assert.assertTrue("Expected: " + (((Number) new BigInteger("30"))) + ", but was: " + (Generated_typedefs_Test.testSymbol(((Number) new BigInteger("10")), ((Number) new BigInteger("20")))), EqualsTestOp.matches(((Number) new BigInteger("30")), Generated_typedefs_Test.testSymbol(((Number) new BigInteger("10")), ((Number) new BigInteger("20")))));
+    Assert.assertTrue("Expected: " + (Number) new BigInteger("30") + ", but was: " + Generated_typedefs_Test.testSymbol((Number) new BigInteger("10"), (Number) new BigInteger("20")), EqualsTestOp.matches((Number) new BigInteger("30"), Generated_typedefs_Test.testSymbol((Number) new BigInteger("10"), (Number) new BigInteger("20"))));
   }
   @Test
   public void TestOptionStuff_item1_5096151429187731977() throws Throwable {
-    Assert.assertTrue("Expected: " + (((Number) new BigInteger("20"))) + ", but was: " + (((_FunctionTypes._return_P0_E0<Number>) () -> {
-      if (org.iets3.core.expr.genjava.base.rt.rt.AH.isSome(Generated_typedefs_Test.nonify(((Number) new BigInteger("10"))))) {
-        return Generated_typedefs_Test.nonify(((Number) new BigInteger("10")));
-      } else {
-        return ((Number) new BigInteger("20"));
-      }
-    }).invoke()), EqualsTestOp.matches(((Number) new BigInteger("20")), ((_FunctionTypes._return_P0_E0<Number>) () -> {
-      if (org.iets3.core.expr.genjava.base.rt.rt.AH.isSome(Generated_typedefs_Test.nonify(((Number) new BigInteger("10"))))) {
-        return Generated_typedefs_Test.nonify(((Number) new BigInteger("10")));
-      } else {
-        return ((Number) new BigInteger("20"));
-      }
-    }).invoke()));
+    Assert.assertTrue("Expected: " + (Number) new BigInteger("20") + ", but was: " + (org.iets3.core.expr.genjava.base.rt.rt.AH.isSome(Generated_typedefs_Test.nonify((Number) new BigInteger("10"))) ? Generated_typedefs_Test.nonify((Number) new BigInteger("10")) : (Number) new BigInteger("20")), EqualsTestOp.matches((Number) new BigInteger("20"), (org.iets3.core.expr.genjava.base.rt.rt.AH.isSome(Generated_typedefs_Test.nonify((Number) new BigInteger("10"))) ? Generated_typedefs_Test.nonify((Number) new BigInteger("10")) : (Number) new BigInteger("20"))));
   }
   @Test
   public void TestOptionStuff_item2_5096151429187731984() throws Throwable {
-    Assert.assertTrue("Expected: " + (((Number) new BigInteger("10"))) + ", but was: " + (((_FunctionTypes._return_P0_E0<Number>) () -> {
-      if (org.iets3.core.expr.genjava.base.rt.rt.AH.isSome(Generated_typedefs_Test.optionize(((Number) new BigInteger("10"))))) {
-        return Generated_typedefs_Test.optionize(((Number) new BigInteger("10")));
-      } else {
-        return ((Number) new BigInteger("20"));
-      }
-    }).invoke()), EqualsTestOp.matches(((Number) new BigInteger("10")), ((_FunctionTypes._return_P0_E0<Number>) () -> {
-      if (org.iets3.core.expr.genjava.base.rt.rt.AH.isSome(Generated_typedefs_Test.optionize(((Number) new BigInteger("10"))))) {
-        return Generated_typedefs_Test.optionize(((Number) new BigInteger("10")));
-      } else {
-        return ((Number) new BigInteger("20"));
-      }
-    }).invoke()));
+    Assert.assertTrue("Expected: " + (Number) new BigInteger("10") + ", but was: " + (org.iets3.core.expr.genjava.base.rt.rt.AH.isSome(Generated_typedefs_Test.optionize((Number) new BigInteger("10"))) ? Generated_typedefs_Test.optionize((Number) new BigInteger("10")) : (Number) new BigInteger("20")), EqualsTestOp.matches((Number) new BigInteger("10"), (org.iets3.core.expr.genjava.base.rt.rt.AH.isSome(Generated_typedefs_Test.optionize((Number) new BigInteger("10"))) ? Generated_typedefs_Test.optionize((Number) new BigInteger("10")) : (Number) new BigInteger("20"))));
   }
   @Test
   public void TestOptionStuff_item3_5096151429187731991() throws Throwable {
-    Assert.assertTrue("Expected: " + (((Number) new BigInteger("10"))) + ", but was: " + (Generated_typedefs_Test.optionize(((Number) new BigInteger("10")))), EqualsTestOp.matches(((Number) new BigInteger("10")), Generated_typedefs_Test.optionize(((Number) new BigInteger("10")))));
+    Assert.assertTrue("Expected: " + (Number) new BigInteger("10") + ", but was: " + Generated_typedefs_Test.optionize((Number) new BigInteger("10")), EqualsTestOp.matches((Number) new BigInteger("10"), Generated_typedefs_Test.optionize((Number) new BigInteger("10"))));
   }
   @Test
   public void TestOptionStuff_item4_5096151429187731996() throws Throwable {
-    Assert.assertTrue("Expected: " + (((Number) new BigInteger("1"))) + ", but was: " + (AH.add((((_FunctionTypes._return_P0_E0<Number>) () -> {
-      if (org.iets3.core.expr.genjava.base.rt.rt.AH.isSome(Generated_typedefs_Test.nonify(((Number) new BigInteger("10"))))) {
-        return Generated_typedefs_Test.nonify(((Number) new BigInteger("10")));
-      } else {
-        return ((Number) new BigInteger("0"));
-      }
-    }).invoke()), ((Number) new BigInteger("1")))), EqualsTestOp.matches(((Number) new BigInteger("1")), AH.add((((_FunctionTypes._return_P0_E0<Number>) () -> {
-      if (org.iets3.core.expr.genjava.base.rt.rt.AH.isSome(Generated_typedefs_Test.nonify(((Number) new BigInteger("10"))))) {
-        return Generated_typedefs_Test.nonify(((Number) new BigInteger("10")));
-      } else {
-        return ((Number) new BigInteger("0"));
-      }
-    }).invoke()), ((Number) new BigInteger("1")))));
+    Assert.assertTrue("Expected: " + (Number) new BigInteger("1") + ", but was: " + AH.add((org.iets3.core.expr.genjava.base.rt.rt.AH.isSome(Generated_typedefs_Test.nonify((Number) new BigInteger("10"))) ? Generated_typedefs_Test.nonify((Number) new BigInteger("10")) : (Number) new BigInteger("0")), (Number) new BigInteger("1")), EqualsTestOp.matches((Number) new BigInteger("1"), AH.add((org.iets3.core.expr.genjava.base.rt.rt.AH.isSome(Generated_typedefs_Test.nonify((Number) new BigInteger("10"))) ? Generated_typedefs_Test.nonify((Number) new BigInteger("10")) : (Number) new BigInteger("0")), (Number) new BigInteger("1"))));
   }
 
 
   public static final String s1_ = "hello";
-  public static final Number s2_ = ((Number) new BigInteger("5"));
-  public static final Number s3_ = ((Number) new BigInteger("10"));
+  public static final Number s2_ = (Number) new BigInteger("5");
+  public static final Number s3_ = (Number) new BigInteger("10");
   public static String f1() {
-    String res = ((_FunctionTypes._return_P0_E0<String>) () -> {
-      String s = ((_FunctionTypes._return_P0_E0<String>) () -> {
-        String result = "world";
-        return result;
-      }).invoke();
-      return s;
-    }).invoke();
+    String res = "world";
 
     return res;
   }
   public static Number f3() {
-    Number res = ((_FunctionTypes._return_P0_E0<Number>) () -> {
-      Number n = ((_FunctionTypes._return_P0_E0<Number>) () -> {
-        Number result = ((Number) new BigInteger("6"));
-        return result;
-      }).invoke();
-      return n;
-    }).invoke();
+    Number res = (Number) new BigInteger("6");
 
     return res;
   }
@@ -363,275 +304,119 @@ public class Generated_typedefs_Test {
   }
   @Test
   public void simple_item0_5096151429187737276() throws Throwable {
-    Assert.assertEquals("Expected: " + ("test") + ", but was: " + (((_FunctionTypes._return_P0_E0<String>) () -> {
-      String s = ((_FunctionTypes._return_P0_E0<String>) () -> {
-        String result = "test";
-        return result;
-      }).invoke();
-      return s;
-    }).invoke()), (Object) "test", (Object) ((_FunctionTypes._return_P0_E0<String>) () -> {
-      String s = ((_FunctionTypes._return_P0_E0<String>) () -> {
-        String result = "test";
-        return result;
-      }).invoke();
-      return s;
-    }).invoke());
+    Assert.assertEquals("Expected: " + "test" + ", but was: " + "test", (Object) "test", (Object) "test");
   }
   @Test
   public void simple_item1_5096151429187737283() throws Throwable {
-    Assert.assertTrue("Expected: " + (((Number) new BigInteger("0"))) + ", but was: " + (((_FunctionTypes._return_P0_E0<Number>) () -> {
-      Number n = ((_FunctionTypes._return_P0_E0<Number>) () -> {
-        Number result = ((Number) new BigInteger("0"));
-        return result;
-      }).invoke();
-      return n;
-    }).invoke()), EqualsTestOp.matches(((Number) new BigInteger("0")), ((_FunctionTypes._return_P0_E0<Number>) () -> {
-      Number n = ((_FunctionTypes._return_P0_E0<Number>) () -> {
-        Number result = ((Number) new BigInteger("0"));
-        return result;
-      }).invoke();
-      return n;
-    }).invoke()));
+    Assert.assertTrue("Expected: " + (Number) new BigInteger("0") + ", but was: " + (Number) new BigInteger("0"), EqualsTestOp.matches((Number) new BigInteger("0"), (Number) new BigInteger("0")));
   }
   @Test
   public void simple_item3_5096151429187737291() throws Throwable {
-    Assert.assertEquals("Expected: " + ("hello") + ", but was: " + (Generated_typedefs_Test.s1_), (Object) "hello", (Object) Generated_typedefs_Test.s1_);
+    Assert.assertEquals("Expected: " + "hello" + ", but was: " + Generated_typedefs_Test.s1_, (Object) "hello", (Object) Generated_typedefs_Test.s1_);
   }
   @Test
   public void simple_item4_5096151429187737295() throws Throwable {
-    Assert.assertTrue("Expected: " + (((Number) new BigInteger("5"))) + ", but was: " + (Generated_typedefs_Test.s2_), EqualsTestOp.matches(((Number) new BigInteger("5")), Generated_typedefs_Test.s2_));
+    Assert.assertTrue("Expected: " + (Number) new BigInteger("5") + ", but was: " + Generated_typedefs_Test.s2_, EqualsTestOp.matches((Number) new BigInteger("5"), Generated_typedefs_Test.s2_));
   }
   @Test
   public void simple_item5_5096151429187737299() throws Throwable {
-    Assert.assertEquals("Expected: " + ("world") + ", but was: " + (Generated_typedefs_Test.f1()), (Object) "world", (Object) Generated_typedefs_Test.f1());
+    Assert.assertEquals("Expected: " + "world" + ", but was: " + Generated_typedefs_Test.f1(), (Object) "world", (Object) Generated_typedefs_Test.f1());
   }
   @Test
   public void simple_item6_5096151429187737303() throws Throwable {
-    Assert.assertEquals("Expected: " + (true) + ", but was: " + (AH.isEqual(Generated_typedefs_Test.s2_, ((Number) new BigInteger("5")))), (Object) true, (Object) AH.isEqual(Generated_typedefs_Test.s2_, ((Number) new BigInteger("5"))));
+    Assert.assertEquals("Expected: " + true + ", but was: " + AH.isEqual(Generated_typedefs_Test.s2_, (Number) new BigInteger("5")), (Object) true, (Object) AH.isEqual(Generated_typedefs_Test.s2_, (Number) new BigInteger("5")));
   }
   @Test
   public void simple_item7_5096151429187737309() throws Throwable {
-    Assert.assertEquals("Expected: " + (true) + ", but was: " + (!(AH.isGreater(Generated_typedefs_Test.s2_, ((Number) new BigInteger("6"))))), (Object) true, (Object) !(AH.isGreater(Generated_typedefs_Test.s2_, ((Number) new BigInteger("6")))));
+    Assert.assertEquals("Expected: " + true + ", but was: " + (!(AH.isGreater(Generated_typedefs_Test.s2_, (Number) new BigInteger("6")))), (Object) true, (Object) !(AH.isGreater(Generated_typedefs_Test.s2_, (Number) new BigInteger("6"))));
   }
   @Test
   public void simple_item8_5096151429187737315() throws Throwable {
-    Assert.assertTrue("Expected: " + (((Number) new BigInteger("9"))) + ", but was: " + (AH.add(Generated_typedefs_Test.s2_, ((Number) new BigInteger("4")))), EqualsTestOp.matches(((Number) new BigInteger("9")), AH.add(Generated_typedefs_Test.s2_, ((Number) new BigInteger("4")))));
+    Assert.assertTrue("Expected: " + (Number) new BigInteger("9") + ", but was: " + AH.add(Generated_typedefs_Test.s2_, (Number) new BigInteger("4")), EqualsTestOp.matches((Number) new BigInteger("9"), AH.add(Generated_typedefs_Test.s2_, (Number) new BigInteger("4"))));
   }
   @Test
   public void sorting_numList0_3571762280765721191() throws Throwable {
-    Assert.assertEquals("Expected: " + (TreePVector.<Number>from(new ArrayList<Number>())) + ", but was: " + (TreePVector.<Number>from(new ArrayList<Number>())), (Object) TreePVector.<Number>from(new ArrayList<Number>()), (Object) TreePVector.<Number>from(new ArrayList<Number>()));
+    Assert.assertEquals("Expected: " + TreePVector.<Number>from(new ArrayList<Number>()) + ", but was: " + TreePVector.<Number>from(new ArrayList<Number>()), (Object) TreePVector.<Number>from(new ArrayList<Number>()), (Object) TreePVector.<Number>from(new ArrayList<Number>()));
   }
   @Test
   public void sorting_numList1_3571762280765721200() throws Throwable {
-    Assert.assertEquals("Expected: " + (((_FunctionTypes._return_P0_E0<TreePVector<Number>>) () -> {
-      TreePVector<Number> tpv = TreePVector.empty();
-      tpv = tpv.plus(Generated_typedefs_Test.s2_);
-      return tpv;
-    }).invoke()) + ", but was: " + (((_FunctionTypes._return_P0_E0<TreePVector<Number>>) () -> {
-      TreePVector<Number> tpv = TreePVector.empty();
-      tpv = tpv.plus(Generated_typedefs_Test.s2_);
-      return tpv;
-    }).invoke()), (Object) ((_FunctionTypes._return_P0_E0<TreePVector<Number>>) () -> {
-      TreePVector<Number> tpv = TreePVector.empty();
-      tpv = tpv.plus(Generated_typedefs_Test.s2_);
-      return tpv;
-    }).invoke(), (Object) ((_FunctionTypes._return_P0_E0<TreePVector<Number>>) () -> {
-      TreePVector<Number> tpv = TreePVector.empty();
-      tpv = tpv.plus(Generated_typedefs_Test.s2_);
-      return tpv;
-    }).invoke());
+    Assert.assertEquals("Expected: " + TreePVector.<Number>empty().plus(Generated_typedefs_Test.s2_) + ", but was: " + TreePVector.<Number>empty().plus(Generated_typedefs_Test.s2_), (Object) TreePVector.<Number>empty().plus(Generated_typedefs_Test.s2_), (Object) TreePVector.<Number>empty().plus(Generated_typedefs_Test.s2_));
   }
   @Test
   public void sorting_numList2_3571762280765721207() throws Throwable {
-    Assert.assertEquals("Expected: " + (((_FunctionTypes._return_P0_E0<TreePVector<Number>>) () -> {
-      TreePVector<Number> tpv = TreePVector.empty();
-      tpv = tpv.plus(Generated_typedefs_Test.s2_);
-      tpv = tpv.plus(Generated_typedefs_Test.s3_);
-      return tpv;
-    }).invoke()) + ", but was: " + (((_FunctionTypes._return_P0_E0<TreePVector<Number>>) () -> {
-      TreePVector<Number> tpv = TreePVector.empty();
-      tpv = tpv.plus(Generated_typedefs_Test.s2_);
-      tpv = tpv.plus(Generated_typedefs_Test.s3_);
-      return tpv;
-    }).invoke()), (Object) ((_FunctionTypes._return_P0_E0<TreePVector<Number>>) () -> {
-      TreePVector<Number> tpv = TreePVector.empty();
-      tpv = tpv.plus(Generated_typedefs_Test.s2_);
-      tpv = tpv.plus(Generated_typedefs_Test.s3_);
-      return tpv;
-    }).invoke(), (Object) ((_FunctionTypes._return_P0_E0<TreePVector<Number>>) () -> {
-      TreePVector<Number> tpv = TreePVector.empty();
-      tpv = tpv.plus(Generated_typedefs_Test.s2_);
-      tpv = tpv.plus(Generated_typedefs_Test.s3_);
-      return tpv;
-    }).invoke());
+    Assert.assertEquals("Expected: " + TreePVector.<Number>empty().plus(Generated_typedefs_Test.s2_).plus(Generated_typedefs_Test.s3_) + ", but was: " + TreePVector.<Number>empty().plus(Generated_typedefs_Test.s2_).plus(Generated_typedefs_Test.s3_), (Object) TreePVector.<Number>empty().plus(Generated_typedefs_Test.s2_).plus(Generated_typedefs_Test.s3_), (Object) TreePVector.<Number>empty().plus(Generated_typedefs_Test.s2_).plus(Generated_typedefs_Test.s3_));
   }
   @Test
   public void sorting_item4_2143211017902290124() throws Throwable {
-    Assert.assertEquals("Expected: " + (TreePVector.<Number>from(new ArrayList<Number>())) + ", but was: " + (((_FunctionTypes._return_P0_E0<PVector<Number>>) () -> {
-      return (PVector<Number>) TreePVector.<Number>from(((PCollection<Number>) TreePVector.<Number>from(new ArrayList<Number>())).stream().filter(OH.predicate()).sorted(new Comparator<Number>() {
-        public int compare(Number p0, Number p1) {
-          return OH.compare(p0, p1);
-        }
-      }).collect(Collectors.<Number>toList()));
-    }).invoke()), (Object) TreePVector.<Number>from(new ArrayList<Number>()), (Object) ((_FunctionTypes._return_P0_E0<PVector<Number>>) () -> {
-      return (PVector<Number>) TreePVector.<Number>from(((PCollection<Number>) TreePVector.<Number>from(new ArrayList<Number>())).stream().filter(OH.predicate()).sorted(new Comparator<Number>() {
-        public int compare(Number p0, Number p1) {
-          return OH.compare(p0, p1);
-        }
-      }).collect(Collectors.<Number>toList()));
-    }).invoke());
+    Assert.assertEquals("Expected: " + TreePVector.<Number>from(new ArrayList<Number>()) + ", but was: " + (PVector<Number>) TreePVector.<Number>from(((PCollection<Number>) TreePVector.<Number>from(new ArrayList<Number>())).stream().filter(OH.predicate()).sorted(new Comparator<Number>() {
+      public int compare(Number p0, Number p1) {
+        return OH.compare(p0, p1);
+      }
+    }).collect(Collectors.<Number>toList())), (Object) TreePVector.<Number>from(new ArrayList<Number>()), (Object) (PVector<Number>) TreePVector.<Number>from(((PCollection<Number>) TreePVector.<Number>from(new ArrayList<Number>())).stream().filter(OH.predicate()).sorted(new Comparator<Number>() {
+      public int compare(Number p0, Number p1) {
+        return OH.compare(p0, p1);
+      }
+    }).collect(Collectors.<Number>toList())));
   }
   @Test
   public void sorting_item5_2143211017902291809() throws Throwable {
-    Assert.assertEquals("Expected: " + (((_FunctionTypes._return_P0_E0<TreePVector<Number>>) () -> {
-      TreePVector<Number> tpv = TreePVector.empty();
-      tpv = tpv.plus(Generated_typedefs_Test.s2_);
-      return tpv;
-    }).invoke()) + ", but was: " + (((_FunctionTypes._return_P0_E0<PVector<Number>>) () -> {
-      return (PVector<Number>) TreePVector.<Number>from(((PCollection<Number>) ((_FunctionTypes._return_P0_E0<TreePVector<Number>>) () -> {
-        TreePVector<Number> tpv = TreePVector.empty();
-        tpv = tpv.plus(Generated_typedefs_Test.s2_);
-        return tpv;
-      }).invoke()).stream().filter(OH.predicate()).sorted(new Comparator<Number>() {
-        public int compare(Number p0, Number p1) {
-          return OH.compare(p0, p1);
-        }
-      }).collect(Collectors.<Number>toList()));
-    }).invoke()), (Object) ((_FunctionTypes._return_P0_E0<TreePVector<Number>>) () -> {
-      TreePVector<Number> tpv = TreePVector.empty();
-      tpv = tpv.plus(Generated_typedefs_Test.s2_);
-      return tpv;
-    }).invoke(), (Object) ((_FunctionTypes._return_P0_E0<PVector<Number>>) () -> {
-      return (PVector<Number>) TreePVector.<Number>from(((PCollection<Number>) ((_FunctionTypes._return_P0_E0<TreePVector<Number>>) () -> {
-        TreePVector<Number> tpv = TreePVector.empty();
-        tpv = tpv.plus(Generated_typedefs_Test.s2_);
-        return tpv;
-      }).invoke()).stream().filter(OH.predicate()).sorted(new Comparator<Number>() {
-        public int compare(Number p0, Number p1) {
-          return OH.compare(p0, p1);
-        }
-      }).collect(Collectors.<Number>toList()));
-    }).invoke());
+    Assert.assertEquals("Expected: " + TreePVector.<Number>empty().plus(Generated_typedefs_Test.s2_) + ", but was: " + (PVector<Number>) TreePVector.<Number>from(((PCollection<Number>) TreePVector.<Number>empty().plus(Generated_typedefs_Test.s2_)).stream().filter(OH.predicate()).sorted(new Comparator<Number>() {
+      public int compare(Number p0, Number p1) {
+        return OH.compare(p0, p1);
+      }
+    }).collect(Collectors.<Number>toList())), (Object) TreePVector.<Number>empty().plus(Generated_typedefs_Test.s2_), (Object) (PVector<Number>) TreePVector.<Number>from(((PCollection<Number>) TreePVector.<Number>empty().plus(Generated_typedefs_Test.s2_)).stream().filter(OH.predicate()).sorted(new Comparator<Number>() {
+      public int compare(Number p0, Number p1) {
+        return OH.compare(p0, p1);
+      }
+    }).collect(Collectors.<Number>toList())));
   }
   @Test
   public void sorting_item6_5005695164082923047() throws Throwable {
-    Assert.assertEquals("Expected: " + (((_FunctionTypes._return_P0_E0<TreePVector<Number>>) () -> {
-      TreePVector<Number> tpv = TreePVector.empty();
-      tpv = tpv.plus(Generated_typedefs_Test.s2_);
-      tpv = tpv.plus(Generated_typedefs_Test.s3_);
-      return tpv;
-    }).invoke()) + ", but was: " + (((_FunctionTypes._return_P0_E0<PVector<Number>>) () -> {
-      return (PVector<Number>) TreePVector.<Number>from(((PCollection<Number>) ((_FunctionTypes._return_P0_E0<TreePVector<Number>>) () -> {
-        TreePVector<Number> tpv = TreePVector.empty();
-        tpv = tpv.plus(Generated_typedefs_Test.s2_);
-        tpv = tpv.plus(Generated_typedefs_Test.s3_);
-        return tpv;
-      }).invoke()).stream().filter(OH.predicate()).sorted(new Comparator<Number>() {
-        public int compare(Number p0, Number p1) {
-          return OH.compare(p0, p1);
-        }
-      }).collect(Collectors.<Number>toList()));
-    }).invoke()), (Object) ((_FunctionTypes._return_P0_E0<TreePVector<Number>>) () -> {
-      TreePVector<Number> tpv = TreePVector.empty();
-      tpv = tpv.plus(Generated_typedefs_Test.s2_);
-      tpv = tpv.plus(Generated_typedefs_Test.s3_);
-      return tpv;
-    }).invoke(), (Object) ((_FunctionTypes._return_P0_E0<PVector<Number>>) () -> {
-      return (PVector<Number>) TreePVector.<Number>from(((PCollection<Number>) ((_FunctionTypes._return_P0_E0<TreePVector<Number>>) () -> {
-        TreePVector<Number> tpv = TreePVector.empty();
-        tpv = tpv.plus(Generated_typedefs_Test.s2_);
-        tpv = tpv.plus(Generated_typedefs_Test.s3_);
-        return tpv;
-      }).invoke()).stream().filter(OH.predicate()).sorted(new Comparator<Number>() {
-        public int compare(Number p0, Number p1) {
-          return OH.compare(p0, p1);
-        }
-      }).collect(Collectors.<Number>toList()));
-    }).invoke());
+    Assert.assertEquals("Expected: " + TreePVector.<Number>empty().plus(Generated_typedefs_Test.s2_).plus(Generated_typedefs_Test.s3_) + ", but was: " + (PVector<Number>) TreePVector.<Number>from(((PCollection<Number>) TreePVector.<Number>empty().plus(Generated_typedefs_Test.s2_).plus(Generated_typedefs_Test.s3_)).stream().filter(OH.predicate()).sorted(new Comparator<Number>() {
+      public int compare(Number p0, Number p1) {
+        return OH.compare(p0, p1);
+      }
+    }).collect(Collectors.<Number>toList())), (Object) TreePVector.<Number>empty().plus(Generated_typedefs_Test.s2_).plus(Generated_typedefs_Test.s3_), (Object) (PVector<Number>) TreePVector.<Number>from(((PCollection<Number>) TreePVector.<Number>empty().plus(Generated_typedefs_Test.s2_).plus(Generated_typedefs_Test.s3_)).stream().filter(OH.predicate()).sorted(new Comparator<Number>() {
+      public int compare(Number p0, Number p1) {
+        return OH.compare(p0, p1);
+      }
+    }).collect(Collectors.<Number>toList())));
   }
   @Test
   public void sorting_item8_5005695164083462014() throws Throwable {
-    Assert.assertEquals("Expected: " + (TreePVector.<Number>from(new ArrayList<Number>())) + ", but was: " + (((_FunctionTypes._return_P0_E0<PVector<Number>>) () -> {
-      return (PVector<Number>) TreePVector.<Number>from(((PCollection<Number>) TreePVector.<Number>from(new ArrayList<Number>())).stream().filter(OH.predicate()).sorted(new Comparator<Number>() {
-        public int compare(Number p0, Number p1) {
-          return OH.compare(p1, p0);
-        }
-      }).collect(Collectors.<Number>toList()));
-    }).invoke()), (Object) TreePVector.<Number>from(new ArrayList<Number>()), (Object) ((_FunctionTypes._return_P0_E0<PVector<Number>>) () -> {
-      return (PVector<Number>) TreePVector.<Number>from(((PCollection<Number>) TreePVector.<Number>from(new ArrayList<Number>())).stream().filter(OH.predicate()).sorted(new Comparator<Number>() {
-        public int compare(Number p0, Number p1) {
-          return OH.compare(p1, p0);
-        }
-      }).collect(Collectors.<Number>toList()));
-    }).invoke());
+    Assert.assertEquals("Expected: " + TreePVector.<Number>from(new ArrayList<Number>()) + ", but was: " + (PVector<Number>) TreePVector.<Number>from(((PCollection<Number>) TreePVector.<Number>from(new ArrayList<Number>())).stream().filter(OH.predicate()).sorted(new Comparator<Number>() {
+      public int compare(Number p0, Number p1) {
+        return OH.compare(p1, p0);
+      }
+    }).collect(Collectors.<Number>toList())), (Object) TreePVector.<Number>from(new ArrayList<Number>()), (Object) (PVector<Number>) TreePVector.<Number>from(((PCollection<Number>) TreePVector.<Number>from(new ArrayList<Number>())).stream().filter(OH.predicate()).sorted(new Comparator<Number>() {
+      public int compare(Number p0, Number p1) {
+        return OH.compare(p1, p0);
+      }
+    }).collect(Collectors.<Number>toList())));
   }
   @Test
   public void sorting_item9_5005695164083462020() throws Throwable {
-    Assert.assertEquals("Expected: " + (((_FunctionTypes._return_P0_E0<TreePVector<Number>>) () -> {
-      TreePVector<Number> tpv = TreePVector.empty();
-      tpv = tpv.plus(Generated_typedefs_Test.s2_);
-      return tpv;
-    }).invoke()) + ", but was: " + (((_FunctionTypes._return_P0_E0<PVector<Number>>) () -> {
-      return (PVector<Number>) TreePVector.<Number>from(((PCollection<Number>) ((_FunctionTypes._return_P0_E0<TreePVector<Number>>) () -> {
-        TreePVector<Number> tpv = TreePVector.empty();
-        tpv = tpv.plus(Generated_typedefs_Test.s2_);
-        return tpv;
-      }).invoke()).stream().filter(OH.predicate()).sorted(new Comparator<Number>() {
-        public int compare(Number p0, Number p1) {
-          return OH.compare(p1, p0);
-        }
-      }).collect(Collectors.<Number>toList()));
-    }).invoke()), (Object) ((_FunctionTypes._return_P0_E0<TreePVector<Number>>) () -> {
-      TreePVector<Number> tpv = TreePVector.empty();
-      tpv = tpv.plus(Generated_typedefs_Test.s2_);
-      return tpv;
-    }).invoke(), (Object) ((_FunctionTypes._return_P0_E0<PVector<Number>>) () -> {
-      return (PVector<Number>) TreePVector.<Number>from(((PCollection<Number>) ((_FunctionTypes._return_P0_E0<TreePVector<Number>>) () -> {
-        TreePVector<Number> tpv = TreePVector.empty();
-        tpv = tpv.plus(Generated_typedefs_Test.s2_);
-        return tpv;
-      }).invoke()).stream().filter(OH.predicate()).sorted(new Comparator<Number>() {
-        public int compare(Number p0, Number p1) {
-          return OH.compare(p1, p0);
-        }
-      }).collect(Collectors.<Number>toList()));
-    }).invoke());
+    Assert.assertEquals("Expected: " + TreePVector.<Number>empty().plus(Generated_typedefs_Test.s2_) + ", but was: " + (PVector<Number>) TreePVector.<Number>from(((PCollection<Number>) TreePVector.<Number>empty().plus(Generated_typedefs_Test.s2_)).stream().filter(OH.predicate()).sorted(new Comparator<Number>() {
+      public int compare(Number p0, Number p1) {
+        return OH.compare(p1, p0);
+      }
+    }).collect(Collectors.<Number>toList())), (Object) TreePVector.<Number>empty().plus(Generated_typedefs_Test.s2_), (Object) (PVector<Number>) TreePVector.<Number>from(((PCollection<Number>) TreePVector.<Number>empty().plus(Generated_typedefs_Test.s2_)).stream().filter(OH.predicate()).sorted(new Comparator<Number>() {
+      public int compare(Number p0, Number p1) {
+        return OH.compare(p1, p0);
+      }
+    }).collect(Collectors.<Number>toList())));
   }
   @Test
   public void sorting_item10_5005695164083462026() throws Throwable {
-    Assert.assertEquals("Expected: " + (((_FunctionTypes._return_P0_E0<TreePVector<Number>>) () -> {
-      TreePVector<Number> tpv = TreePVector.empty();
-      tpv = tpv.plus(Generated_typedefs_Test.s3_);
-      tpv = tpv.plus(Generated_typedefs_Test.s2_);
-      return tpv;
-    }).invoke()) + ", but was: " + (((_FunctionTypes._return_P0_E0<PVector<Number>>) () -> {
-      return (PVector<Number>) TreePVector.<Number>from(((PCollection<Number>) ((_FunctionTypes._return_P0_E0<TreePVector<Number>>) () -> {
-        TreePVector<Number> tpv = TreePVector.empty();
-        tpv = tpv.plus(Generated_typedefs_Test.s2_);
-        tpv = tpv.plus(Generated_typedefs_Test.s3_);
-        return tpv;
-      }).invoke()).stream().filter(OH.predicate()).sorted(new Comparator<Number>() {
-        public int compare(Number p0, Number p1) {
-          return OH.compare(p1, p0);
-        }
-      }).collect(Collectors.<Number>toList()));
-    }).invoke()), (Object) ((_FunctionTypes._return_P0_E0<TreePVector<Number>>) () -> {
-      TreePVector<Number> tpv = TreePVector.empty();
-      tpv = tpv.plus(Generated_typedefs_Test.s3_);
-      tpv = tpv.plus(Generated_typedefs_Test.s2_);
-      return tpv;
-    }).invoke(), (Object) ((_FunctionTypes._return_P0_E0<PVector<Number>>) () -> {
-      return (PVector<Number>) TreePVector.<Number>from(((PCollection<Number>) ((_FunctionTypes._return_P0_E0<TreePVector<Number>>) () -> {
-        TreePVector<Number> tpv = TreePVector.empty();
-        tpv = tpv.plus(Generated_typedefs_Test.s2_);
-        tpv = tpv.plus(Generated_typedefs_Test.s3_);
-        return tpv;
-      }).invoke()).stream().filter(OH.predicate()).sorted(new Comparator<Number>() {
-        public int compare(Number p0, Number p1) {
-          return OH.compare(p1, p0);
-        }
-      }).collect(Collectors.<Number>toList()));
-    }).invoke());
+    Assert.assertEquals("Expected: " + TreePVector.<Number>empty().plus(Generated_typedefs_Test.s3_).plus(Generated_typedefs_Test.s2_) + ", but was: " + (PVector<Number>) TreePVector.<Number>from(((PCollection<Number>) TreePVector.<Number>empty().plus(Generated_typedefs_Test.s2_).plus(Generated_typedefs_Test.s3_)).stream().filter(OH.predicate()).sorted(new Comparator<Number>() {
+      public int compare(Number p0, Number p1) {
+        return OH.compare(p1, p0);
+      }
+    }).collect(Collectors.<Number>toList())), (Object) TreePVector.<Number>empty().plus(Generated_typedefs_Test.s3_).plus(Generated_typedefs_Test.s2_), (Object) (PVector<Number>) TreePVector.<Number>from(((PCollection<Number>) TreePVector.<Number>empty().plus(Generated_typedefs_Test.s2_).plus(Generated_typedefs_Test.s3_)).stream().filter(OH.predicate()).sorted(new Comparator<Number>() {
+      public int compare(Number p0, Number p1) {
+        return OH.compare(p1, p0);
+      }
+    }).collect(Collectors.<Number>toList())));
   }
 
 

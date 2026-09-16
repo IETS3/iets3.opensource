@@ -6,13 +6,13 @@ import java.util.Comparator;
 import java.util.Vector;
 import java.util.Collections;
 import org.pcollections.PVector;
-import jetbrains.mps.baseLanguage.closures.runtime._FunctionTypes;
 import org.pcollections.TreePVector;
 import org.pcollections.PCollection;
 import org.iets3.core.expr.simpleTypes.runtime.OH;
 import java.util.stream.Collectors;
 import org.junit.Test;
 import org.junit.Assert;
+import jetbrains.mps.baseLanguage.closures.runtime._FunctionTypes;
 import org.pcollections.Empty;
 import java.math.BigInteger;
 import org.iets3.core.expr.genjava.tests.rt.rt.EqualsTestOp;
@@ -46,37 +46,26 @@ public class Generated_enum_sort_Test {
     }
   }
   public static PVector<enumWithoutValue> sort0A(PVector<enumWithoutValue> data) {
-    PVector<enumWithoutValue> res = ((_FunctionTypes._return_P0_E0<PVector<enumWithoutValue>>) () -> {
-      return (PVector<enumWithoutValue>) TreePVector.<enumWithoutValue>from(((PCollection<enumWithoutValue>) data).stream().filter(OH.predicate()).sorted(new Comparator<enumWithoutValue>() {
-        public int compare(enumWithoutValue p0, enumWithoutValue p1) {
-          return OH.compare(p0, p1);
-        }
-      }).collect(Collectors.<enumWithoutValue>toList()));
-    }).invoke();
+    PVector<enumWithoutValue> res = (PVector<enumWithoutValue>) TreePVector.<enumWithoutValue>from(((PCollection<enumWithoutValue>) data).stream().filter(OH.predicate()).sorted(new Comparator<enumWithoutValue>() {
+      public int compare(enumWithoutValue p0, enumWithoutValue p1) {
+        return OH.compare(p0, p1);
+      }
+    }).collect(Collectors.<enumWithoutValue>toList()));
 
     return res;
   }
   public static PVector<enumWithoutValue> sort0D(PVector<enumWithoutValue> data) {
-    PVector<enumWithoutValue> res = ((_FunctionTypes._return_P0_E0<PVector<enumWithoutValue>>) () -> {
-      return (PVector<enumWithoutValue>) TreePVector.<enumWithoutValue>from(((PCollection<enumWithoutValue>) data).stream().filter(OH.predicate()).sorted(new Comparator<enumWithoutValue>() {
-        public int compare(enumWithoutValue p0, enumWithoutValue p1) {
-          return OH.compare(p1, p0);
-        }
-      }).collect(Collectors.<enumWithoutValue>toList()));
-    }).invoke();
+    PVector<enumWithoutValue> res = (PVector<enumWithoutValue>) TreePVector.<enumWithoutValue>from(((PCollection<enumWithoutValue>) data).stream().filter(OH.predicate()).sorted(new Comparator<enumWithoutValue>() {
+      public int compare(enumWithoutValue p0, enumWithoutValue p1) {
+        return OH.compare(p1, p0);
+      }
+    }).collect(Collectors.<enumWithoutValue>toList()));
 
     return res;
   }
   @Test
   public void testEnumWitoutValues_item0_6408647657448885960() throws Throwable {
-    Assert.assertEquals("Expected: " + (((_FunctionTypes._return_P0_E0<TreePVector<enumWithoutValue>>) () -> {
-      TreePVector<enumWithoutValue> tpv = TreePVector.empty();
-      tpv = tpv.plus(enumWithoutValue.lit0);
-      tpv = tpv.plus(enumWithoutValue.lit1);
-      tpv = tpv.plus(enumWithoutValue.lit2);
-      tpv = tpv.plus(enumWithoutValue.lit3);
-      return tpv;
-    }).invoke()) + ", but was: " + (Generated_enum_sort_Test.sort0A(new _FunctionTypes._return_P0_E0<PVector>() {
+    Assert.assertEquals("Expected: " + TreePVector.<enumWithoutValue>empty().plus(enumWithoutValue.lit0).plus(enumWithoutValue.lit1).plus(enumWithoutValue.lit2).plus(enumWithoutValue.lit3) + ", but was: " + Generated_enum_sort_Test.sort0A(new _FunctionTypes._return_P0_E0<PVector>() {
       public PVector invoke() {
         PVector tpv = Empty.vector();
         tpv = tpv.plus(enumWithoutValue.lit1);
@@ -85,14 +74,7 @@ public class Generated_enum_sort_Test {
         tpv = tpv.plus(enumWithoutValue.lit0);
         return tpv;
       }
-    }.invoke())), (Object) ((_FunctionTypes._return_P0_E0<TreePVector<enumWithoutValue>>) () -> {
-      TreePVector<enumWithoutValue> tpv = TreePVector.empty();
-      tpv = tpv.plus(enumWithoutValue.lit0);
-      tpv = tpv.plus(enumWithoutValue.lit1);
-      tpv = tpv.plus(enumWithoutValue.lit2);
-      tpv = tpv.plus(enumWithoutValue.lit3);
-      return tpv;
-    }).invoke(), (Object) Generated_enum_sort_Test.sort0A(new _FunctionTypes._return_P0_E0<PVector>() {
+    }.invoke()), (Object) TreePVector.<enumWithoutValue>empty().plus(enumWithoutValue.lit0).plus(enumWithoutValue.lit1).plus(enumWithoutValue.lit2).plus(enumWithoutValue.lit3), (Object) Generated_enum_sort_Test.sort0A(new _FunctionTypes._return_P0_E0<PVector>() {
       public PVector invoke() {
         PVector tpv = Empty.vector();
         tpv = tpv.plus(enumWithoutValue.lit1);
@@ -105,14 +87,7 @@ public class Generated_enum_sort_Test {
   }
   @Test
   public void testEnumWitoutValues_item1_6408647657449347116() throws Throwable {
-    Assert.assertEquals("Expected: " + (((_FunctionTypes._return_P0_E0<TreePVector<enumWithoutValue>>) () -> {
-      TreePVector<enumWithoutValue> tpv = TreePVector.empty();
-      tpv = tpv.plus(enumWithoutValue.lit3);
-      tpv = tpv.plus(enumWithoutValue.lit2);
-      tpv = tpv.plus(enumWithoutValue.lit1);
-      tpv = tpv.plus(enumWithoutValue.lit0);
-      return tpv;
-    }).invoke()) + ", but was: " + (Generated_enum_sort_Test.sort0D(new _FunctionTypes._return_P0_E0<PVector>() {
+    Assert.assertEquals("Expected: " + TreePVector.<enumWithoutValue>empty().plus(enumWithoutValue.lit3).plus(enumWithoutValue.lit2).plus(enumWithoutValue.lit1).plus(enumWithoutValue.lit0) + ", but was: " + Generated_enum_sort_Test.sort0D(new _FunctionTypes._return_P0_E0<PVector>() {
       public PVector invoke() {
         PVector tpv = Empty.vector();
         tpv = tpv.plus(enumWithoutValue.lit1);
@@ -121,14 +96,7 @@ public class Generated_enum_sort_Test {
         tpv = tpv.plus(enumWithoutValue.lit0);
         return tpv;
       }
-    }.invoke())), (Object) ((_FunctionTypes._return_P0_E0<TreePVector<enumWithoutValue>>) () -> {
-      TreePVector<enumWithoutValue> tpv = TreePVector.empty();
-      tpv = tpv.plus(enumWithoutValue.lit3);
-      tpv = tpv.plus(enumWithoutValue.lit2);
-      tpv = tpv.plus(enumWithoutValue.lit1);
-      tpv = tpv.plus(enumWithoutValue.lit0);
-      return tpv;
-    }).invoke(), (Object) Generated_enum_sort_Test.sort0D(new _FunctionTypes._return_P0_E0<PVector>() {
+    }.invoke()), (Object) TreePVector.<enumWithoutValue>empty().plus(enumWithoutValue.lit3).plus(enumWithoutValue.lit2).plus(enumWithoutValue.lit1).plus(enumWithoutValue.lit0), (Object) Generated_enum_sort_Test.sort0D(new _FunctionTypes._return_P0_E0<PVector>() {
       public PVector invoke() {
         PVector tpv = Empty.vector();
         tpv = tpv.plus(enumWithoutValue.lit1);
@@ -141,11 +109,11 @@ public class Generated_enum_sort_Test {
   }
   @Test
   public void testEnumWitoutValues_item2_1777261460002348926() throws Throwable {
-    Assert.assertTrue("Expected: " + (((Number) new BigInteger("0"))) + ", but was: " + (new BigInteger(enumWithoutValue.lit0.indexOf() + "")), EqualsTestOp.matches(((Number) new BigInteger("0")), new BigInteger(enumWithoutValue.lit0.indexOf() + "")));
+    Assert.assertTrue("Expected: " + (Number) new BigInteger("0") + ", but was: " + new BigInteger(enumWithoutValue.lit0.indexOf() + ""), EqualsTestOp.matches((Number) new BigInteger("0"), new BigInteger(enumWithoutValue.lit0.indexOf() + "")));
   }
   @Test
   public void testEnumWitoutValues_item3_1777261460002884130() throws Throwable {
-    Assert.assertTrue("Expected: " + (((Number) new BigInteger("3"))) + ", but was: " + (new BigInteger(enumWithoutValue.lit3.indexOf() + "")), EqualsTestOp.matches(((Number) new BigInteger("3")), new BigInteger(enumWithoutValue.lit3.indexOf() + "")));
+    Assert.assertTrue("Expected: " + (Number) new BigInteger("3") + ", but was: " + new BigInteger(enumWithoutValue.lit3.indexOf() + ""), EqualsTestOp.matches((Number) new BigInteger("3"), new BigInteger(enumWithoutValue.lit3.indexOf() + "")));
   }
   public enum enumOrderedByDeclaration implements Comparator<enumOrderedByDeclaration> {
     lit1("A1"),
@@ -347,7 +315,7 @@ public class Generated_enum_sort_Test {
       if (!(o instanceof recOrderedByDecl)) {
         return false;
       }
-      recOrderedByDecl rd = ((recOrderedByDecl) o);
+      recOrderedByDecl rd = (recOrderedByDecl) o;
 
       if (!(AH.isEqual(this.mB, rd.getmB()))) {
         return false;
@@ -458,7 +426,7 @@ public class Generated_enum_sort_Test {
       if (!(o instanceof recOrderedByLiteral)) {
         return false;
       }
-      recOrderedByLiteral rd = ((recOrderedByLiteral) o);
+      recOrderedByLiteral rd = (recOrderedByLiteral) o;
 
       if (!(AH.isEqual(this.mB, rd.getmB()))) {
         return false;
@@ -569,7 +537,7 @@ public class Generated_enum_sort_Test {
       if (!(o instanceof recOrderedByValue)) {
         return false;
       }
-      recOrderedByValue rd = ((recOrderedByValue) o);
+      recOrderedByValue rd = (recOrderedByValue) o;
 
       if (!(AH.isEqual(this.mB, rd.getmB()))) {
         return false;
@@ -604,124 +572,76 @@ public class Generated_enum_sort_Test {
     }
   }
   public static PVector<recOrderedByDecl> sort1A(PVector<recOrderedByDecl> data) {
-    PVector<recOrderedByDecl> res = ((_FunctionTypes._return_P0_E0<PVector<recOrderedByDecl>>) () -> {
-      return (PVector<recOrderedByDecl>) TreePVector.<recOrderedByDecl>from(((PCollection<recOrderedByDecl>) data).stream().filter(OH.predicate()).sorted(new Comparator<recOrderedByDecl>() {
-        public int compare(recOrderedByDecl p0, recOrderedByDecl p1) {
-          return OH.compare(p0, p1);
-        }
-      }).collect(Collectors.<recOrderedByDecl>toList()));
-    }).invoke();
+    PVector<recOrderedByDecl> res = (PVector<recOrderedByDecl>) TreePVector.<recOrderedByDecl>from(((PCollection<recOrderedByDecl>) data).stream().filter(OH.predicate()).sorted(new Comparator<recOrderedByDecl>() {
+      public int compare(recOrderedByDecl p0, recOrderedByDecl p1) {
+        return OH.compare(p0, p1);
+      }
+    }).collect(Collectors.<recOrderedByDecl>toList()));
 
     return res;
   }
   public static PVector<recOrderedByLiteral> sort2A(PVector<recOrderedByLiteral> data) {
-    PVector<recOrderedByLiteral> res = ((_FunctionTypes._return_P0_E0<PVector<recOrderedByLiteral>>) () -> {
-      return (PVector<recOrderedByLiteral>) TreePVector.<recOrderedByLiteral>from(((PCollection<recOrderedByLiteral>) data).stream().filter(OH.predicate()).sorted(new Comparator<recOrderedByLiteral>() {
-        public int compare(recOrderedByLiteral p0, recOrderedByLiteral p1) {
-          return OH.compare(p0, p1);
-        }
-      }).collect(Collectors.<recOrderedByLiteral>toList()));
-    }).invoke();
+    PVector<recOrderedByLiteral> res = (PVector<recOrderedByLiteral>) TreePVector.<recOrderedByLiteral>from(((PCollection<recOrderedByLiteral>) data).stream().filter(OH.predicate()).sorted(new Comparator<recOrderedByLiteral>() {
+      public int compare(recOrderedByLiteral p0, recOrderedByLiteral p1) {
+        return OH.compare(p0, p1);
+      }
+    }).collect(Collectors.<recOrderedByLiteral>toList()));
 
     return res;
   }
   public static PVector<recOrderedByValue> sort3A(PVector<recOrderedByValue> data) {
-    PVector<recOrderedByValue> res = ((_FunctionTypes._return_P0_E0<PVector<recOrderedByValue>>) () -> {
-      return (PVector<recOrderedByValue>) TreePVector.<recOrderedByValue>from(((PCollection<recOrderedByValue>) data).stream().filter(OH.predicate()).sorted(new Comparator<recOrderedByValue>() {
-        public int compare(recOrderedByValue p0, recOrderedByValue p1) {
-          return OH.compare(p0, p1);
-        }
-      }).collect(Collectors.<recOrderedByValue>toList()));
-    }).invoke();
+    PVector<recOrderedByValue> res = (PVector<recOrderedByValue>) TreePVector.<recOrderedByValue>from(((PCollection<recOrderedByValue>) data).stream().filter(OH.predicate()).sorted(new Comparator<recOrderedByValue>() {
+      public int compare(recOrderedByValue p0, recOrderedByValue p1) {
+        return OH.compare(p0, p1);
+      }
+    }).collect(Collectors.<recOrderedByValue>toList()));
 
     return res;
   }
   public static PVector<recOrderedByDecl> sort1D(PVector<recOrderedByDecl> data) {
-    PVector<recOrderedByDecl> res = ((_FunctionTypes._return_P0_E0<PVector<recOrderedByDecl>>) () -> {
-      return (PVector<recOrderedByDecl>) TreePVector.<recOrderedByDecl>from(((PCollection<recOrderedByDecl>) data).stream().filter(OH.predicate()).sorted(new Comparator<recOrderedByDecl>() {
-        public int compare(recOrderedByDecl p0, recOrderedByDecl p1) {
-          return OH.compare(p1, p0);
-        }
-      }).collect(Collectors.<recOrderedByDecl>toList()));
-    }).invoke();
+    PVector<recOrderedByDecl> res = (PVector<recOrderedByDecl>) TreePVector.<recOrderedByDecl>from(((PCollection<recOrderedByDecl>) data).stream().filter(OH.predicate()).sorted(new Comparator<recOrderedByDecl>() {
+      public int compare(recOrderedByDecl p0, recOrderedByDecl p1) {
+        return OH.compare(p1, p0);
+      }
+    }).collect(Collectors.<recOrderedByDecl>toList()));
 
     return res;
   }
   public static PVector<recOrderedByLiteral> sort2D(PVector<recOrderedByLiteral> data) {
-    PVector<recOrderedByLiteral> res = ((_FunctionTypes._return_P0_E0<PVector<recOrderedByLiteral>>) () -> {
-      return (PVector<recOrderedByLiteral>) TreePVector.<recOrderedByLiteral>from(((PCollection<recOrderedByLiteral>) data).stream().filter(OH.predicate()).sorted(new Comparator<recOrderedByLiteral>() {
-        public int compare(recOrderedByLiteral p0, recOrderedByLiteral p1) {
-          return OH.compare(p1, p0);
-        }
-      }).collect(Collectors.<recOrderedByLiteral>toList()));
-    }).invoke();
+    PVector<recOrderedByLiteral> res = (PVector<recOrderedByLiteral>) TreePVector.<recOrderedByLiteral>from(((PCollection<recOrderedByLiteral>) data).stream().filter(OH.predicate()).sorted(new Comparator<recOrderedByLiteral>() {
+      public int compare(recOrderedByLiteral p0, recOrderedByLiteral p1) {
+        return OH.compare(p1, p0);
+      }
+    }).collect(Collectors.<recOrderedByLiteral>toList()));
 
     return res;
   }
   public static PVector<recOrderedByValue> sort3D(PVector<recOrderedByValue> data) {
-    PVector<recOrderedByValue> res = ((_FunctionTypes._return_P0_E0<PVector<recOrderedByValue>>) () -> {
-      return (PVector<recOrderedByValue>) TreePVector.<recOrderedByValue>from(((PCollection<recOrderedByValue>) data).stream().filter(OH.predicate()).sorted(new Comparator<recOrderedByValue>() {
-        public int compare(recOrderedByValue p0, recOrderedByValue p1) {
-          return OH.compare(p1, p0);
-        }
-      }).collect(Collectors.<recOrderedByValue>toList()));
-    }).invoke();
+    PVector<recOrderedByValue> res = (PVector<recOrderedByValue>) TreePVector.<recOrderedByValue>from(((PCollection<recOrderedByValue>) data).stream().filter(OH.predicate()).sorted(new Comparator<recOrderedByValue>() {
+      public int compare(recOrderedByValue p0, recOrderedByValue p1) {
+        return OH.compare(p1, p0);
+      }
+    }).collect(Collectors.<recOrderedByValue>toList()));
 
     return res;
   }
-  public static final PVector<recOrderedByDecl> d1_ = ((_FunctionTypes._return_P0_E0<TreePVector<recOrderedByDecl>>) () -> {
-    TreePVector<recOrderedByDecl> tpv = TreePVector.empty();
-    tpv = tpv.plus(new recOrderedByDecl(enumOrderedByDeclaration.lit2, "a2", ((Number) new BigInteger("2"))));
-    tpv = tpv.plus(new recOrderedByDecl(enumOrderedByDeclaration.lit1, "a4", ((Number) new BigInteger("1"))));
-    tpv = tpv.plus(new recOrderedByDecl(enumOrderedByDeclaration.lit3, "a3", ((Number) new BigInteger("3"))));
-    return tpv;
-  }).invoke();
-  public static final PVector<recOrderedByDecl> e1_ = ((_FunctionTypes._return_P0_E0<TreePVector<recOrderedByDecl>>) () -> {
-    TreePVector<recOrderedByDecl> tpv = TreePVector.empty();
-    tpv = tpv.plus(new recOrderedByDecl(enumOrderedByDeclaration.lit1, "a4", ((Number) new BigInteger("1"))));
-    tpv = tpv.plus(new recOrderedByDecl(enumOrderedByDeclaration.lit2, "a2", ((Number) new BigInteger("2"))));
-    tpv = tpv.plus(new recOrderedByDecl(enumOrderedByDeclaration.lit3, "a3", ((Number) new BigInteger("3"))));
-    return tpv;
-  }).invoke();
-  public static final PVector<recOrderedByLiteral> d2_ = ((_FunctionTypes._return_P0_E0<TreePVector<recOrderedByLiteral>>) () -> {
-    TreePVector<recOrderedByLiteral> tpv = TreePVector.empty();
-    tpv = tpv.plus(new recOrderedByLiteral(enumOrderedByLiteral.lit2, "a4", ((Number) new BigInteger("1"))));
-    tpv = tpv.plus(new recOrderedByLiteral(enumOrderedByLiteral.lit1, "a3", ((Number) new BigInteger("3"))));
-    tpv = tpv.plus(new recOrderedByLiteral(enumOrderedByLiteral.lit3, "a2", ((Number) new BigInteger("2"))));
-    return tpv;
-  }).invoke();
-  public static final PVector<recOrderedByLiteral> e2_ = ((_FunctionTypes._return_P0_E0<TreePVector<recOrderedByLiteral>>) () -> {
-    TreePVector<recOrderedByLiteral> tpv = TreePVector.empty();
-    tpv = tpv.plus(new recOrderedByLiteral(enumOrderedByLiteral.lit1, "a3", ((Number) new BigInteger("3"))));
-    tpv = tpv.plus(new recOrderedByLiteral(enumOrderedByLiteral.lit2, "a4", ((Number) new BigInteger("1"))));
-    tpv = tpv.plus(new recOrderedByLiteral(enumOrderedByLiteral.lit3, "a2", ((Number) new BigInteger("2"))));
-    return tpv;
-  }).invoke();
-  public static final PVector<recOrderedByValue> d3_ = ((_FunctionTypes._return_P0_E0<TreePVector<recOrderedByValue>>) () -> {
-    TreePVector<recOrderedByValue> tpv = TreePVector.empty();
-    tpv = tpv.plus(new recOrderedByValue(enumOrderedByValue.lit1, "a1", ((Number) new BigInteger("1"))));
-    tpv = tpv.plus(new recOrderedByValue(enumOrderedByValue.lit2, "a2", ((Number) new BigInteger("2"))));
-    tpv = tpv.plus(new recOrderedByValue(enumOrderedByValue.lit3, "a3", ((Number) new BigInteger("3"))));
-    return tpv;
-  }).invoke();
-  public static final PVector<recOrderedByValue> e3_ = ((_FunctionTypes._return_P0_E0<TreePVector<recOrderedByValue>>) () -> {
-    TreePVector<recOrderedByValue> tpv = TreePVector.empty();
-    tpv = tpv.plus(new recOrderedByValue(enumOrderedByValue.lit3, "a3", ((Number) new BigInteger("3"))));
-    tpv = tpv.plus(new recOrderedByValue(enumOrderedByValue.lit1, "a1", ((Number) new BigInteger("1"))));
-    tpv = tpv.plus(new recOrderedByValue(enumOrderedByValue.lit2, "a2", ((Number) new BigInteger("2"))));
-    return tpv;
-  }).invoke();
+  public static final PVector<recOrderedByDecl> d1_ = TreePVector.<recOrderedByDecl>empty().plus(new recOrderedByDecl(enumOrderedByDeclaration.lit2, "a2", (Number) new BigInteger("2"))).plus(new recOrderedByDecl(enumOrderedByDeclaration.lit1, "a4", (Number) new BigInteger("1"))).plus(new recOrderedByDecl(enumOrderedByDeclaration.lit3, "a3", (Number) new BigInteger("3")));
+  public static final PVector<recOrderedByDecl> e1_ = TreePVector.<recOrderedByDecl>empty().plus(new recOrderedByDecl(enumOrderedByDeclaration.lit1, "a4", (Number) new BigInteger("1"))).plus(new recOrderedByDecl(enumOrderedByDeclaration.lit2, "a2", (Number) new BigInteger("2"))).plus(new recOrderedByDecl(enumOrderedByDeclaration.lit3, "a3", (Number) new BigInteger("3")));
+  public static final PVector<recOrderedByLiteral> d2_ = TreePVector.<recOrderedByLiteral>empty().plus(new recOrderedByLiteral(enumOrderedByLiteral.lit2, "a4", (Number) new BigInteger("1"))).plus(new recOrderedByLiteral(enumOrderedByLiteral.lit1, "a3", (Number) new BigInteger("3"))).plus(new recOrderedByLiteral(enumOrderedByLiteral.lit3, "a2", (Number) new BigInteger("2")));
+  public static final PVector<recOrderedByLiteral> e2_ = TreePVector.<recOrderedByLiteral>empty().plus(new recOrderedByLiteral(enumOrderedByLiteral.lit1, "a3", (Number) new BigInteger("3"))).plus(new recOrderedByLiteral(enumOrderedByLiteral.lit2, "a4", (Number) new BigInteger("1"))).plus(new recOrderedByLiteral(enumOrderedByLiteral.lit3, "a2", (Number) new BigInteger("2")));
+  public static final PVector<recOrderedByValue> d3_ = TreePVector.<recOrderedByValue>empty().plus(new recOrderedByValue(enumOrderedByValue.lit1, "a1", (Number) new BigInteger("1"))).plus(new recOrderedByValue(enumOrderedByValue.lit2, "a2", (Number) new BigInteger("2"))).plus(new recOrderedByValue(enumOrderedByValue.lit3, "a3", (Number) new BigInteger("3")));
+  public static final PVector<recOrderedByValue> e3_ = TreePVector.<recOrderedByValue>empty().plus(new recOrderedByValue(enumOrderedByValue.lit3, "a3", (Number) new BigInteger("3"))).plus(new recOrderedByValue(enumOrderedByValue.lit1, "a1", (Number) new BigInteger("1"))).plus(new recOrderedByValue(enumOrderedByValue.lit2, "a2", (Number) new BigInteger("2")));
   @Test
   public void sort_records_item0_2996389194814646856() throws Throwable {
-    Assert.assertEquals("Expected: " + (Generated_enum_sort_Test.e1_) + ", but was: " + (Generated_enum_sort_Test.sort1A(Generated_enum_sort_Test.d1_)), (Object) Generated_enum_sort_Test.e1_, (Object) Generated_enum_sort_Test.sort1A(Generated_enum_sort_Test.d1_));
+    Assert.assertEquals("Expected: " + Generated_enum_sort_Test.e1_ + ", but was: " + Generated_enum_sort_Test.sort1A(Generated_enum_sort_Test.d1_), (Object) Generated_enum_sort_Test.e1_, (Object) Generated_enum_sort_Test.sort1A(Generated_enum_sort_Test.d1_));
   }
   @Test
   public void sort_records_item1_3568410465300069918() throws Throwable {
-    Assert.assertEquals("Expected: " + (Generated_enum_sort_Test.e2_) + ", but was: " + (Generated_enum_sort_Test.sort2A(Generated_enum_sort_Test.d2_)), (Object) Generated_enum_sort_Test.e2_, (Object) Generated_enum_sort_Test.sort2A(Generated_enum_sort_Test.d2_));
+    Assert.assertEquals("Expected: " + Generated_enum_sort_Test.e2_ + ", but was: " + Generated_enum_sort_Test.sort2A(Generated_enum_sort_Test.d2_), (Object) Generated_enum_sort_Test.e2_, (Object) Generated_enum_sort_Test.sort2A(Generated_enum_sort_Test.d2_));
   }
   @Test
   public void sort_records_item2_3568410465300069935() throws Throwable {
-    Assert.assertEquals("Expected: " + (Generated_enum_sort_Test.e3_) + ", but was: " + (Generated_enum_sort_Test.sort3A(Generated_enum_sort_Test.d3_)), (Object) Generated_enum_sort_Test.e3_, (Object) Generated_enum_sort_Test.sort3A(Generated_enum_sort_Test.d3_));
+    Assert.assertEquals("Expected: " + Generated_enum_sort_Test.e3_ + ", but was: " + Generated_enum_sort_Test.sort3A(Generated_enum_sort_Test.d3_), (Object) Generated_enum_sort_Test.e3_, (Object) Generated_enum_sort_Test.sort3A(Generated_enum_sort_Test.d3_));
   }
   @Test
   public void sort_records_item3_1878529043118673379() throws Throwable {
@@ -731,7 +651,7 @@ public class Generated_enum_sort_Test {
         rev = rev.plus(Generated_enum_sort_Test.e1_.get(i));
       }
       return rev;
-    }).invoke()) + ", but was: " + (Generated_enum_sort_Test.sort1D(Generated_enum_sort_Test.d1_)), (Object) ((_FunctionTypes._return_P0_E0<PVector<recOrderedByDecl>>) () -> {
+    }).invoke()) + ", but was: " + Generated_enum_sort_Test.sort1D(Generated_enum_sort_Test.d1_), (Object) ((_FunctionTypes._return_P0_E0<PVector<recOrderedByDecl>>) () -> {
       PVector<recOrderedByDecl> rev = Empty.vector();
       for (int i = Generated_enum_sort_Test.e1_.size() - 1; i >= 0; i--) {
         rev = rev.plus(Generated_enum_sort_Test.e1_.get(i));
@@ -747,7 +667,7 @@ public class Generated_enum_sort_Test {
         rev = rev.plus(Generated_enum_sort_Test.sort2A(Generated_enum_sort_Test.d2_).get(i));
       }
       return rev;
-    }).invoke()) + ", but was: " + (Generated_enum_sort_Test.sort2D(Generated_enum_sort_Test.d2_)), (Object) ((_FunctionTypes._return_P0_E0<PVector<recOrderedByLiteral>>) () -> {
+    }).invoke()) + ", but was: " + Generated_enum_sort_Test.sort2D(Generated_enum_sort_Test.d2_), (Object) ((_FunctionTypes._return_P0_E0<PVector<recOrderedByLiteral>>) () -> {
       PVector<recOrderedByLiteral> rev = Empty.vector();
       for (int i = Generated_enum_sort_Test.sort2A(Generated_enum_sort_Test.d2_).size() - 1; i >= 0; i--) {
         rev = rev.plus(Generated_enum_sort_Test.sort2A(Generated_enum_sort_Test.d2_).get(i));
@@ -763,7 +683,7 @@ public class Generated_enum_sort_Test {
         rev = rev.plus(Generated_enum_sort_Test.sort3A(Generated_enum_sort_Test.d3_).get(i));
       }
       return rev;
-    }).invoke()) + ", but was: " + (Generated_enum_sort_Test.sort3D(Generated_enum_sort_Test.d3_)), (Object) ((_FunctionTypes._return_P0_E0<PVector<recOrderedByValue>>) () -> {
+    }).invoke()) + ", but was: " + Generated_enum_sort_Test.sort3D(Generated_enum_sort_Test.d3_), (Object) ((_FunctionTypes._return_P0_E0<PVector<recOrderedByValue>>) () -> {
       PVector<recOrderedByValue> rev = Empty.vector();
       for (int i = Generated_enum_sort_Test.sort3A(Generated_enum_sort_Test.d3_).size() - 1; i >= 0; i--) {
         rev = rev.plus(Generated_enum_sort_Test.sort3A(Generated_enum_sort_Test.d3_).get(i));
@@ -800,143 +720,63 @@ public class Generated_enum_sort_Test {
   }.invoke();
   @Test
   public void sort_lists_item0_582633689044676034() throws Throwable {
-    Assert.assertEquals("Expected: " + (((_FunctionTypes._return_P0_E0<TreePVector<enumOrderedByDeclaration>>) () -> {
-      TreePVector<enumOrderedByDeclaration> tpv = TreePVector.empty();
-      tpv = tpv.plus(enumOrderedByDeclaration.lit1);
-      tpv = tpv.plus(enumOrderedByDeclaration.lit2);
-      tpv = tpv.plus(enumOrderedByDeclaration.lit3);
-      return tpv;
-    }).invoke()) + ", but was: " + (((_FunctionTypes._return_P0_E0<PVector<enumOrderedByDeclaration>>) () -> {
-      return (PVector<enumOrderedByDeclaration>) TreePVector.<enumOrderedByDeclaration>from(((PCollection<enumOrderedByDeclaration>) Generated_enum_sort_Test.l0_).stream().filter(OH.predicate()).sorted(new Comparator<enumOrderedByDeclaration>() {
-        public int compare(enumOrderedByDeclaration p0, enumOrderedByDeclaration p1) {
-          return OH.compare(p0, p1);
-        }
-      }).collect(Collectors.<enumOrderedByDeclaration>toList()));
-    }).invoke()), (Object) ((_FunctionTypes._return_P0_E0<TreePVector<enumOrderedByDeclaration>>) () -> {
-      TreePVector<enumOrderedByDeclaration> tpv = TreePVector.empty();
-      tpv = tpv.plus(enumOrderedByDeclaration.lit1);
-      tpv = tpv.plus(enumOrderedByDeclaration.lit2);
-      tpv = tpv.plus(enumOrderedByDeclaration.lit3);
-      return tpv;
-    }).invoke(), (Object) ((_FunctionTypes._return_P0_E0<PVector<enumOrderedByDeclaration>>) () -> {
-      return (PVector<enumOrderedByDeclaration>) TreePVector.<enumOrderedByDeclaration>from(((PCollection<enumOrderedByDeclaration>) Generated_enum_sort_Test.l0_).stream().filter(OH.predicate()).sorted(new Comparator<enumOrderedByDeclaration>() {
-        public int compare(enumOrderedByDeclaration p0, enumOrderedByDeclaration p1) {
-          return OH.compare(p0, p1);
-        }
-      }).collect(Collectors.<enumOrderedByDeclaration>toList()));
-    }).invoke());
+    Assert.assertEquals("Expected: " + TreePVector.<enumOrderedByDeclaration>empty().plus(enumOrderedByDeclaration.lit1).plus(enumOrderedByDeclaration.lit2).plus(enumOrderedByDeclaration.lit3) + ", but was: " + (PVector<enumOrderedByDeclaration>) TreePVector.<enumOrderedByDeclaration>from(((PCollection<enumOrderedByDeclaration>) Generated_enum_sort_Test.l0_).stream().filter(OH.predicate()).sorted(new Comparator<enumOrderedByDeclaration>() {
+      public int compare(enumOrderedByDeclaration p0, enumOrderedByDeclaration p1) {
+        return OH.compare(p0, p1);
+      }
+    }).collect(Collectors.<enumOrderedByDeclaration>toList())), (Object) TreePVector.<enumOrderedByDeclaration>empty().plus(enumOrderedByDeclaration.lit1).plus(enumOrderedByDeclaration.lit2).plus(enumOrderedByDeclaration.lit3), (Object) (PVector<enumOrderedByDeclaration>) TreePVector.<enumOrderedByDeclaration>from(((PCollection<enumOrderedByDeclaration>) Generated_enum_sort_Test.l0_).stream().filter(OH.predicate()).sorted(new Comparator<enumOrderedByDeclaration>() {
+      public int compare(enumOrderedByDeclaration p0, enumOrderedByDeclaration p1) {
+        return OH.compare(p0, p1);
+      }
+    }).collect(Collectors.<enumOrderedByDeclaration>toList())));
   }
   @Test
   public void sort_lists_item1_1878529043118667564() throws Throwable {
-    Assert.assertEquals("Expected: " + (((_FunctionTypes._return_P0_E0<TreePVector<enumOrderedByValue>>) () -> {
-      TreePVector<enumOrderedByValue> tpv = TreePVector.empty();
-      tpv = tpv.plus(enumOrderedByValue.lit3);
-      tpv = tpv.plus(enumOrderedByValue.lit1);
-      tpv = tpv.plus(enumOrderedByValue.lit2);
-      return tpv;
-    }).invoke()) + ", but was: " + (((_FunctionTypes._return_P0_E0<PVector<enumOrderedByValue>>) () -> {
-      return (PVector<enumOrderedByValue>) TreePVector.<enumOrderedByValue>from(((PCollection<enumOrderedByValue>) Generated_enum_sort_Test.l1_).stream().filter(OH.predicate()).sorted(new Comparator<enumOrderedByValue>() {
-        public int compare(enumOrderedByValue p0, enumOrderedByValue p1) {
-          return OH.compare(p0, p1);
-        }
-      }).collect(Collectors.<enumOrderedByValue>toList()));
-    }).invoke()), (Object) ((_FunctionTypes._return_P0_E0<TreePVector<enumOrderedByValue>>) () -> {
-      TreePVector<enumOrderedByValue> tpv = TreePVector.empty();
-      tpv = tpv.plus(enumOrderedByValue.lit3);
-      tpv = tpv.plus(enumOrderedByValue.lit1);
-      tpv = tpv.plus(enumOrderedByValue.lit2);
-      return tpv;
-    }).invoke(), (Object) ((_FunctionTypes._return_P0_E0<PVector<enumOrderedByValue>>) () -> {
-      return (PVector<enumOrderedByValue>) TreePVector.<enumOrderedByValue>from(((PCollection<enumOrderedByValue>) Generated_enum_sort_Test.l1_).stream().filter(OH.predicate()).sorted(new Comparator<enumOrderedByValue>() {
-        public int compare(enumOrderedByValue p0, enumOrderedByValue p1) {
-          return OH.compare(p0, p1);
-        }
-      }).collect(Collectors.<enumOrderedByValue>toList()));
-    }).invoke());
+    Assert.assertEquals("Expected: " + TreePVector.<enumOrderedByValue>empty().plus(enumOrderedByValue.lit3).plus(enumOrderedByValue.lit1).plus(enumOrderedByValue.lit2) + ", but was: " + (PVector<enumOrderedByValue>) TreePVector.<enumOrderedByValue>from(((PCollection<enumOrderedByValue>) Generated_enum_sort_Test.l1_).stream().filter(OH.predicate()).sorted(new Comparator<enumOrderedByValue>() {
+      public int compare(enumOrderedByValue p0, enumOrderedByValue p1) {
+        return OH.compare(p0, p1);
+      }
+    }).collect(Collectors.<enumOrderedByValue>toList())), (Object) TreePVector.<enumOrderedByValue>empty().plus(enumOrderedByValue.lit3).plus(enumOrderedByValue.lit1).plus(enumOrderedByValue.lit2), (Object) (PVector<enumOrderedByValue>) TreePVector.<enumOrderedByValue>from(((PCollection<enumOrderedByValue>) Generated_enum_sort_Test.l1_).stream().filter(OH.predicate()).sorted(new Comparator<enumOrderedByValue>() {
+      public int compare(enumOrderedByValue p0, enumOrderedByValue p1) {
+        return OH.compare(p0, p1);
+      }
+    }).collect(Collectors.<enumOrderedByValue>toList())));
   }
   @Test
   public void sort_lists_item2_582633689044678331() throws Throwable {
-    Assert.assertEquals("Expected: " + (((_FunctionTypes._return_P0_E0<TreePVector<enumOrderedByValue>>) () -> {
-      TreePVector<enumOrderedByValue> tpv = TreePVector.empty();
-      tpv = tpv.plus(enumOrderedByValue.lit2);
-      tpv = tpv.plus(enumOrderedByValue.lit1);
-      tpv = tpv.plus(enumOrderedByValue.lit3);
-      return tpv;
-    }).invoke()) + ", but was: " + (((_FunctionTypes._return_P0_E0<PVector<enumOrderedByValue>>) () -> {
-      return (PVector<enumOrderedByValue>) TreePVector.<enumOrderedByValue>from(((PCollection<enumOrderedByValue>) Generated_enum_sort_Test.l1_).stream().filter(OH.predicate()).sorted(new Comparator<enumOrderedByValue>() {
-        public int compare(enumOrderedByValue p0, enumOrderedByValue p1) {
-          return OH.compare(p1, p0);
-        }
-      }).collect(Collectors.<enumOrderedByValue>toList()));
-    }).invoke()), (Object) ((_FunctionTypes._return_P0_E0<TreePVector<enumOrderedByValue>>) () -> {
-      TreePVector<enumOrderedByValue> tpv = TreePVector.empty();
-      tpv = tpv.plus(enumOrderedByValue.lit2);
-      tpv = tpv.plus(enumOrderedByValue.lit1);
-      tpv = tpv.plus(enumOrderedByValue.lit3);
-      return tpv;
-    }).invoke(), (Object) ((_FunctionTypes._return_P0_E0<PVector<enumOrderedByValue>>) () -> {
-      return (PVector<enumOrderedByValue>) TreePVector.<enumOrderedByValue>from(((PCollection<enumOrderedByValue>) Generated_enum_sort_Test.l1_).stream().filter(OH.predicate()).sorted(new Comparator<enumOrderedByValue>() {
-        public int compare(enumOrderedByValue p0, enumOrderedByValue p1) {
-          return OH.compare(p1, p0);
-        }
-      }).collect(Collectors.<enumOrderedByValue>toList()));
-    }).invoke());
+    Assert.assertEquals("Expected: " + TreePVector.<enumOrderedByValue>empty().plus(enumOrderedByValue.lit2).plus(enumOrderedByValue.lit1).plus(enumOrderedByValue.lit3) + ", but was: " + (PVector<enumOrderedByValue>) TreePVector.<enumOrderedByValue>from(((PCollection<enumOrderedByValue>) Generated_enum_sort_Test.l1_).stream().filter(OH.predicate()).sorted(new Comparator<enumOrderedByValue>() {
+      public int compare(enumOrderedByValue p0, enumOrderedByValue p1) {
+        return OH.compare(p1, p0);
+      }
+    }).collect(Collectors.<enumOrderedByValue>toList())), (Object) TreePVector.<enumOrderedByValue>empty().plus(enumOrderedByValue.lit2).plus(enumOrderedByValue.lit1).plus(enumOrderedByValue.lit3), (Object) (PVector<enumOrderedByValue>) TreePVector.<enumOrderedByValue>from(((PCollection<enumOrderedByValue>) Generated_enum_sort_Test.l1_).stream().filter(OH.predicate()).sorted(new Comparator<enumOrderedByValue>() {
+      public int compare(enumOrderedByValue p0, enumOrderedByValue p1) {
+        return OH.compare(p1, p0);
+      }
+    }).collect(Collectors.<enumOrderedByValue>toList())));
   }
   @Test
   public void sort_lists_item3_582633689044680249() throws Throwable {
-    Assert.assertEquals("Expected: " + (((_FunctionTypes._return_P0_E0<TreePVector<enumOrderedByLiteral>>) () -> {
-      TreePVector<enumOrderedByLiteral> tpv = TreePVector.empty();
-      tpv = tpv.plus(enumOrderedByLiteral.lit1);
-      tpv = tpv.plus(enumOrderedByLiteral.lit2);
-      tpv = tpv.plus(enumOrderedByLiteral.lit3);
-      return tpv;
-    }).invoke()) + ", but was: " + (((_FunctionTypes._return_P0_E0<PVector<enumOrderedByLiteral>>) () -> {
-      return (PVector<enumOrderedByLiteral>) TreePVector.<enumOrderedByLiteral>from(((PCollection<enumOrderedByLiteral>) Generated_enum_sort_Test.l2_).stream().filter(OH.predicate()).sorted(new Comparator<enumOrderedByLiteral>() {
-        public int compare(enumOrderedByLiteral p0, enumOrderedByLiteral p1) {
-          return OH.compare(p0, p1);
-        }
-      }).collect(Collectors.<enumOrderedByLiteral>toList()));
-    }).invoke()), (Object) ((_FunctionTypes._return_P0_E0<TreePVector<enumOrderedByLiteral>>) () -> {
-      TreePVector<enumOrderedByLiteral> tpv = TreePVector.empty();
-      tpv = tpv.plus(enumOrderedByLiteral.lit1);
-      tpv = tpv.plus(enumOrderedByLiteral.lit2);
-      tpv = tpv.plus(enumOrderedByLiteral.lit3);
-      return tpv;
-    }).invoke(), (Object) ((_FunctionTypes._return_P0_E0<PVector<enumOrderedByLiteral>>) () -> {
-      return (PVector<enumOrderedByLiteral>) TreePVector.<enumOrderedByLiteral>from(((PCollection<enumOrderedByLiteral>) Generated_enum_sort_Test.l2_).stream().filter(OH.predicate()).sorted(new Comparator<enumOrderedByLiteral>() {
-        public int compare(enumOrderedByLiteral p0, enumOrderedByLiteral p1) {
-          return OH.compare(p0, p1);
-        }
-      }).collect(Collectors.<enumOrderedByLiteral>toList()));
-    }).invoke());
+    Assert.assertEquals("Expected: " + TreePVector.<enumOrderedByLiteral>empty().plus(enumOrderedByLiteral.lit1).plus(enumOrderedByLiteral.lit2).plus(enumOrderedByLiteral.lit3) + ", but was: " + (PVector<enumOrderedByLiteral>) TreePVector.<enumOrderedByLiteral>from(((PCollection<enumOrderedByLiteral>) Generated_enum_sort_Test.l2_).stream().filter(OH.predicate()).sorted(new Comparator<enumOrderedByLiteral>() {
+      public int compare(enumOrderedByLiteral p0, enumOrderedByLiteral p1) {
+        return OH.compare(p0, p1);
+      }
+    }).collect(Collectors.<enumOrderedByLiteral>toList())), (Object) TreePVector.<enumOrderedByLiteral>empty().plus(enumOrderedByLiteral.lit1).plus(enumOrderedByLiteral.lit2).plus(enumOrderedByLiteral.lit3), (Object) (PVector<enumOrderedByLiteral>) TreePVector.<enumOrderedByLiteral>from(((PCollection<enumOrderedByLiteral>) Generated_enum_sort_Test.l2_).stream().filter(OH.predicate()).sorted(new Comparator<enumOrderedByLiteral>() {
+      public int compare(enumOrderedByLiteral p0, enumOrderedByLiteral p1) {
+        return OH.compare(p0, p1);
+      }
+    }).collect(Collectors.<enumOrderedByLiteral>toList())));
   }
   @Test
   public void sort_lists_item4_582633689044689898() throws Throwable {
-    Assert.assertEquals("Expected: " + (((_FunctionTypes._return_P0_E0<TreePVector<enumOrderedByLiteral>>) () -> {
-      TreePVector<enumOrderedByLiteral> tpv = TreePVector.empty();
-      tpv = tpv.plus(enumOrderedByLiteral.lit3);
-      tpv = tpv.plus(enumOrderedByLiteral.lit2);
-      tpv = tpv.plus(enumOrderedByLiteral.lit1);
-      return tpv;
-    }).invoke()) + ", but was: " + (((_FunctionTypes._return_P0_E0<PVector<enumOrderedByLiteral>>) () -> {
-      return (PVector<enumOrderedByLiteral>) TreePVector.<enumOrderedByLiteral>from(((PCollection<enumOrderedByLiteral>) Generated_enum_sort_Test.l2_).stream().filter(OH.predicate()).sorted(new Comparator<enumOrderedByLiteral>() {
-        public int compare(enumOrderedByLiteral p0, enumOrderedByLiteral p1) {
-          return OH.compare(p1, p0);
-        }
-      }).collect(Collectors.<enumOrderedByLiteral>toList()));
-    }).invoke()), (Object) ((_FunctionTypes._return_P0_E0<TreePVector<enumOrderedByLiteral>>) () -> {
-      TreePVector<enumOrderedByLiteral> tpv = TreePVector.empty();
-      tpv = tpv.plus(enumOrderedByLiteral.lit3);
-      tpv = tpv.plus(enumOrderedByLiteral.lit2);
-      tpv = tpv.plus(enumOrderedByLiteral.lit1);
-      return tpv;
-    }).invoke(), (Object) ((_FunctionTypes._return_P0_E0<PVector<enumOrderedByLiteral>>) () -> {
-      return (PVector<enumOrderedByLiteral>) TreePVector.<enumOrderedByLiteral>from(((PCollection<enumOrderedByLiteral>) Generated_enum_sort_Test.l2_).stream().filter(OH.predicate()).sorted(new Comparator<enumOrderedByLiteral>() {
-        public int compare(enumOrderedByLiteral p0, enumOrderedByLiteral p1) {
-          return OH.compare(p1, p0);
-        }
-      }).collect(Collectors.<enumOrderedByLiteral>toList()));
-    }).invoke());
+    Assert.assertEquals("Expected: " + TreePVector.<enumOrderedByLiteral>empty().plus(enumOrderedByLiteral.lit3).plus(enumOrderedByLiteral.lit2).plus(enumOrderedByLiteral.lit1) + ", but was: " + (PVector<enumOrderedByLiteral>) TreePVector.<enumOrderedByLiteral>from(((PCollection<enumOrderedByLiteral>) Generated_enum_sort_Test.l2_).stream().filter(OH.predicate()).sorted(new Comparator<enumOrderedByLiteral>() {
+      public int compare(enumOrderedByLiteral p0, enumOrderedByLiteral p1) {
+        return OH.compare(p1, p0);
+      }
+    }).collect(Collectors.<enumOrderedByLiteral>toList())), (Object) TreePVector.<enumOrderedByLiteral>empty().plus(enumOrderedByLiteral.lit3).plus(enumOrderedByLiteral.lit2).plus(enumOrderedByLiteral.lit1), (Object) (PVector<enumOrderedByLiteral>) TreePVector.<enumOrderedByLiteral>from(((PCollection<enumOrderedByLiteral>) Generated_enum_sort_Test.l2_).stream().filter(OH.predicate()).sorted(new Comparator<enumOrderedByLiteral>() {
+      public int compare(enumOrderedByLiteral p0, enumOrderedByLiteral p1) {
+        return OH.compare(p1, p0);
+      }
+    }).collect(Collectors.<enumOrderedByLiteral>toList())));
   }
 
 

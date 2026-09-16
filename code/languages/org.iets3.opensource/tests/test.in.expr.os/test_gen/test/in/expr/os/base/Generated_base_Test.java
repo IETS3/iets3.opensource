@@ -26,124 +26,74 @@ public class Generated_base_Test {
 
   @Test
   public void base_item0_3611639268124620153() throws Throwable {
-    Assert.assertTrue("Expected: " + (((Number) new BigInteger("5"))) + ", but was: " + ((((Number) new BigInteger("5")))), EqualsTestOp.matches(((Number) new BigInteger("5")), (((Number) new BigInteger("5")))));
+    Assert.assertTrue("Expected: " + (Number) new BigInteger("5") + ", but was: " + (Number) new BigInteger("5"), EqualsTestOp.matches((Number) new BigInteger("5"), (Number) new BigInteger("5")));
   }
   @Test
   public void base_item1_3611639268124620158() throws Throwable {
-    Assert.assertTrue("Expected: " + (((Number) new BigInteger("5"))) + ", but was: " + (((_FunctionTypes._return_P0_E0<Number>) () -> {
-      if (true) {
-        return ((Number) new BigInteger("5"));
-      } else {
-        return ((Number) new BigInteger("10"));
-      }
-    }).invoke()), EqualsTestOp.matches(((Number) new BigInteger("5")), ((_FunctionTypes._return_P0_E0<Number>) () -> {
-      if (true) {
-        return ((Number) new BigInteger("5"));
-      } else {
-        return ((Number) new BigInteger("10"));
-      }
-    }).invoke()));
+    Assert.assertTrue("Expected: " + (Number) new BigInteger("5") + ", but was: " + (Number) new BigInteger("5"), EqualsTestOp.matches((Number) new BigInteger("5"), (Number) new BigInteger("5")));
   }
   @Test
   public void base_item2_3611639268124620165() throws Throwable {
-    Assert.assertTrue("Expected: " + (((Number) new BigInteger("10"))) + ", but was: " + (((_FunctionTypes._return_P0_E0<Number>) () -> {
-      if (false) {
-        return ((Number) new BigInteger("5"));
-      } else {
-        return ((Number) new BigInteger("10"));
-      }
-    }).invoke()), EqualsTestOp.matches(((Number) new BigInteger("10")), ((_FunctionTypes._return_P0_E0<Number>) () -> {
-      if (false) {
-        return ((Number) new BigInteger("5"));
-      } else {
-        return ((Number) new BigInteger("10"));
-      }
-    }).invoke()));
+    Assert.assertTrue("Expected: " + (Number) new BigInteger("10") + ", but was: " + (Number) new BigInteger("10"), EqualsTestOp.matches((Number) new BigInteger("10"), (Number) new BigInteger("10")));
   }
-  public static final Number constant5_ = ((Number) new BigInteger("5"));
+  public static final Number constant5_ = (Number) new BigInteger("5");
   public static final Number constant5Ref_ = Generated_base_Test.constant5_;
   @Test
   public void constant_item0_3611639268124620461() throws Throwable {
-    Assert.assertTrue("Expected: " + (((Number) new BigInteger("5"))) + ", but was: " + (Generated_base_Test.constant5_), EqualsTestOp.matches(((Number) new BigInteger("5")), Generated_base_Test.constant5_));
+    Assert.assertTrue("Expected: " + (Number) new BigInteger("5") + ", but was: " + Generated_base_Test.constant5_, EqualsTestOp.matches((Number) new BigInteger("5"), Generated_base_Test.constant5_));
   }
   @Test
   public void constant_item1_3611639268124620465() throws Throwable {
-    Assert.assertTrue("Expected: " + (((Number) new BigInteger("5"))) + ", but was: " + (Generated_base_Test.constant5Ref_), EqualsTestOp.matches(((Number) new BigInteger("5")), Generated_base_Test.constant5Ref_));
+    Assert.assertTrue("Expected: " + (Number) new BigInteger("5") + ", but was: " + Generated_base_Test.constant5Ref_, EqualsTestOp.matches((Number) new BigInteger("5"), Generated_base_Test.constant5Ref_));
   }
   @Test
   public void constant_item2_3611639268124620469() throws Throwable {
-    Assert.assertTrue("Expected: " + (Generated_base_Test.constant5_) + ", but was: " + (Generated_base_Test.constant5Ref_), EqualsTestOp.matches(Generated_base_Test.constant5_, Generated_base_Test.constant5Ref_));
+    Assert.assertTrue("Expected: " + Generated_base_Test.constant5_ + ", but was: " + Generated_base_Test.constant5Ref_, EqualsTestOp.matches(Generated_base_Test.constant5_, Generated_base_Test.constant5Ref_));
   }
   @Test
   public void IfElse_item0_3611639268124620475() throws Throwable {
-    Assert.assertTrue("Expected: " + (((Number) new BigInteger("1"))) + ", but was: " + (((_FunctionTypes._return_P0_E0<Number>) () -> {
-      if (true) {
-        return ((Number) new BigInteger("1"));
-      } else {
-        return ((Number) new BigInteger("2"));
-      }
-    }).invoke()), EqualsTestOp.matches(((Number) new BigInteger("1")), ((_FunctionTypes._return_P0_E0<Number>) () -> {
-      if (true) {
-        return ((Number) new BigInteger("1"));
-      } else {
-        return ((Number) new BigInteger("2"));
-      }
-    }).invoke()));
+    Assert.assertTrue("Expected: " + (Number) new BigInteger("1") + ", but was: " + (Number) new BigInteger("1"), EqualsTestOp.matches((Number) new BigInteger("1"), (Number) new BigInteger("1")));
   }
   @Test
   public void IfElse_item1_3611639268124620482() throws Throwable {
-    Assert.assertTrue("Expected: " + (((Number) new BigInteger("2"))) + ", but was: " + (((_FunctionTypes._return_P0_E0<Number>) () -> {
-      if (false) {
-        return ((Number) new BigInteger("1"));
-      } else {
-        return ((Number) new BigInteger("2"));
-      }
-    }).invoke()), EqualsTestOp.matches(((Number) new BigInteger("2")), ((_FunctionTypes._return_P0_E0<Number>) () -> {
-      if (false) {
-        return ((Number) new BigInteger("1"));
-      } else {
-        return ((Number) new BigInteger("2"));
-      }
-    }).invoke()));
+    Assert.assertTrue("Expected: " + (Number) new BigInteger("2") + ", but was: " + (Number) new BigInteger("2"), EqualsTestOp.matches((Number) new BigInteger("2"), (Number) new BigInteger("2")));
   }
   @Test
   public void emptyAndValExpr_item0_3611639268124620491() throws Throwable {
-    Assert.assertEquals("Expected: " + ("blockWithEmptyAndValExpr5") + ", but was: " + (((_FunctionTypes._return_P0_E0<String>) () -> {
-      Number variable = ((Number) new BigInteger("5"));
+    Assert.assertEquals("Expected: " + "blockWithEmptyAndValExpr5" + ", but was: " + (((_FunctionTypes._return_P0_E0<String>) () -> {
+      Number variable = (Number) new BigInteger("5");
       return AH.addString("blockWithEmptyAndValExpr", variable);
     }).invoke()), (Object) "blockWithEmptyAndValExpr5", (Object) ((_FunctionTypes._return_P0_E0<String>) () -> {
-      Number variable = ((Number) new BigInteger("5"));
+      Number variable = (Number) new BigInteger("5");
       return AH.addString("blockWithEmptyAndValExpr", variable);
     }).invoke());
   }
 
   @Test
   public void cast_item0_6124454787039327169() throws Throwable {
-    Assert.assertTrue("Expected: " + (((Number) new BigInteger("5"))) + ", but was: " + (((Number) ((Number) new BigInteger("5")))), EqualsTestOp.matches(((Number) new BigInteger("5")), ((Number) ((Number) new BigInteger("5")))));
+    Assert.assertTrue("Expected: " + (Number) new BigInteger("5") + ", but was: " + (Number) new BigInteger("5"), EqualsTestOp.matches((Number) new BigInteger("5"), (Number) new BigInteger("5")));
   }
   @Test
   public void cast_item1_6953776000506589278() throws Throwable {
-    Assert.assertTrue("Expected: " + (((Number) new BigInteger("5"))) + ", but was: " + (((Number) ((Number) new BigInteger("5")))), EqualsTestOp.matches(((Number) new BigInteger("5")), ((Number) ((Number) new BigInteger("5")))));
+    Assert.assertTrue("Expected: " + (Number) new BigInteger("5") + ", but was: " + (Number) new BigInteger("5"), EqualsTestOp.matches((Number) new BigInteger("5"), (Number) new BigInteger("5")));
   }
   @Test
   public void cast_item2_7255181410606791931() throws Throwable {
     try {
-      ((_FunctionTypes._void_P0_E0) () -> {
-        if (((_FunctionTypes._return_P0_E0<Number>) () -> {
-          Number newValue = ((Number) new BigInteger("5"));
-          {
-            Number it = newValue;
-            if (!(AH.oneOf(it, ((Number) new BigInteger("1")), ((Number) new BigInteger("2")), ((Number) new BigInteger("3"))))) {
-              final Message message = new Message(BuiltinMessageKinds.error(), ContractViolatedException.CONSTRAINT_FAILED + ": " + "it.oneOf[1, 2, 3]").withLocation(new ProgramLocation("r:5c3f8be4-b275-4108-be9a-6a052d5b2428(test.in.expr.os.base@tests)/7255181410606782292", "http://127.0.0.1:63320/node?ref=r%3A5c3f8be4-b275-4108-be9a-6a052d5b2428%28test.in.expr.os.base%40tests%29%2F7255181410606782292")).withAffectedMemberNames(new HashSet<String>(Arrays.<String>asList()));
-              GlobalContext.MESSAGE_LOG.get().collect(message);
-              throw new ContractViolatedException(message);
-            }
+      if (((_FunctionTypes._return_P0_E0<Number>) () -> {
+        Number newValue = (Number) new BigInteger("5");
+        {
+          Number it = newValue;
+          if (!(AH.oneOf(it, (Number) new BigInteger("1"), (Number) new BigInteger("2"), (Number) new BigInteger("3")))) {
+            final Message message = new Message(BuiltinMessageKinds.error(), ContractViolatedException.CONSTRAINT_FAILED + ": " + "it.oneOf[1, 2, 3]").withLocation(new ProgramLocation("r:5c3f8be4-b275-4108-be9a-6a052d5b2428(test.in.expr.os.base@tests)/7255181410606782292", "http://127.0.0.1:63320/node?ref=r%3A5c3f8be4-b275-4108-be9a-6a052d5b2428%28test.in.expr.os.base%40tests%29%2F7255181410606782292")).withAffectedMemberNames(new HashSet<String>(Arrays.<String>asList()));
+            GlobalContext.MESSAGE_LOG.get().collect(message);
+            throw new ContractViolatedException(message);
           }
-          return newValue;
-        }).invoke() == null) {
-          throw new NullPointerException("No Result in Confail Testitem");
         }
-      }).invoke();
+        return newValue;
+      }).invoke() == null) {
+        throw new NullPointerException("No Result in Confail Testitem");
+      }
       Assert.fail("Constraint failed");
     } catch (Exception e) {
       // expected exception
@@ -152,22 +102,20 @@ public class Generated_base_Test {
   @Test
   public void cast_item3_6953776000506589409() throws Throwable {
     try {
-      ((_FunctionTypes._void_P0_E0) () -> {
-        if (((_FunctionTypes._return_P0_E0<Number>) () -> {
-          Number newValue = ((Number) new BigInteger("5"));
-          {
-            Number it = newValue;
-            if (!(AH.oneOf(it, ((Number) new BigInteger("1")), ((Number) new BigInteger("2")), ((Number) new BigInteger("3"))))) {
-              final Message message = new Message(BuiltinMessageKinds.error(), ContractViolatedException.CONSTRAINT_FAILED + ": " + "it.oneOf[1, 2, 3]").withLocation(new ProgramLocation("r:5c3f8be4-b275-4108-be9a-6a052d5b2428(test.in.expr.os.base@tests)/7255181410606782292", "http://127.0.0.1:63320/node?ref=r%3A5c3f8be4-b275-4108-be9a-6a052d5b2428%28test.in.expr.os.base%40tests%29%2F7255181410606782292")).withAffectedMemberNames(new HashSet<String>(Arrays.<String>asList()));
-              GlobalContext.MESSAGE_LOG.get().collect(message);
-              throw new ContractViolatedException(message);
-            }
+      if (((_FunctionTypes._return_P0_E0<Number>) () -> {
+        Number newValue = (Number) new BigInteger("5");
+        {
+          Number it = newValue;
+          if (!(AH.oneOf(it, (Number) new BigInteger("1"), (Number) new BigInteger("2"), (Number) new BigInteger("3")))) {
+            final Message message = new Message(BuiltinMessageKinds.error(), ContractViolatedException.CONSTRAINT_FAILED + ": " + "it.oneOf[1, 2, 3]").withLocation(new ProgramLocation("r:5c3f8be4-b275-4108-be9a-6a052d5b2428(test.in.expr.os.base@tests)/7255181410606782292", "http://127.0.0.1:63320/node?ref=r%3A5c3f8be4-b275-4108-be9a-6a052d5b2428%28test.in.expr.os.base%40tests%29%2F7255181410606782292")).withAffectedMemberNames(new HashSet<String>(Arrays.<String>asList()));
+            GlobalContext.MESSAGE_LOG.get().collect(message);
+            throw new ContractViolatedException(message);
           }
-          return newValue;
-        }).invoke() == null) {
-          throw new NullPointerException("No Result in Confail Testitem");
         }
-      }).invoke();
+        return newValue;
+      }).invoke() == null) {
+        throw new NullPointerException("No Result in Confail Testitem");
+      }
       Assert.fail("Constraint failed");
     } catch (Exception e) {
       // expected exception
@@ -202,7 +150,7 @@ public class Generated_base_Test {
     public void evaluateContracts() {
       {
         Person it = Person.this;
-        if (!(AH.isLess(it.getage(), ((Number) new BigInteger("120"))))) {
+        if (!(AH.isLess(it.getage(), (Number) new BigInteger("120")))) {
           final Message message = new Message(BuiltinMessageKinds.error(), ContractViolatedException.CONSTRAINT_FAILED + ": " + "age < 120").withLocation(new ProgramLocation("r:5c3f8be4-b275-4108-be9a-6a052d5b2428(test.in.expr.os.base@tests)/2662069320759854156", "http://127.0.0.1:63320/node?ref=r%3A5c3f8be4-b275-4108-be9a-6a052d5b2428%28test.in.expr.os.base%40tests%29%2F2662069320759854156")).withAffectedMemberNames(new HashSet<String>(Arrays.<String>asList("test.in.expr.os.base.Person.age")));
           GlobalContext.MESSAGE_LOG.get().collect(message);
           throw new ContractViolatedException(message);
@@ -222,7 +170,7 @@ public class Generated_base_Test {
       if (!(o instanceof Person)) {
         return false;
       }
-      Person rd = ((Person) o);
+      Person rd = (Person) o;
 
       if (!(AH.isEqual(this.age, rd.getage()))) {
         return false;
@@ -258,48 +206,38 @@ public class Generated_base_Test {
   }
   @Test
   public void testPersonConstraints_item0_2662069320759855008() throws Throwable {
-    Assert.assertEquals("Expected: " + (new Person(((Number) new BigInteger("10")))) + ", but was: " + (Generated_base_Test.createPerson(((Number) new BigInteger("10")))), (Object) new Person(((Number) new BigInteger("10"))), (Object) Generated_base_Test.createPerson(((Number) new BigInteger("10"))));
+    Assert.assertEquals("Expected: " + new Person((Number) new BigInteger("10")) + ", but was: " + Generated_base_Test.createPerson((Number) new BigInteger("10")), (Object) new Person((Number) new BigInteger("10")), (Object) Generated_base_Test.createPerson((Number) new BigInteger("10")));
   }
   @Test
   public void testPersonConstraints_item1_2662069320759984594() throws Throwable {
-    Assert.assertTrue("Expected: " + (((Number) new BigInteger("111"))) + ", but was: " + (AH.add(Generated_base_Test.createPerson(((Number) new BigInteger("110"))).getage(), ((Number) new BigInteger("1")))), EqualsTestOp.matches(((Number) new BigInteger("111")), AH.add(Generated_base_Test.createPerson(((Number) new BigInteger("110"))).getage(), ((Number) new BigInteger("1")))));
+    Assert.assertTrue("Expected: " + (Number) new BigInteger("111") + ", but was: " + AH.add(Generated_base_Test.createPerson((Number) new BigInteger("110")).getage(), (Number) new BigInteger("1")), EqualsTestOp.matches((Number) new BigInteger("111"), AH.add(Generated_base_Test.createPerson((Number) new BigInteger("110")).getage(), (Number) new BigInteger("1"))));
   }
   @Test
   public void testPersonConstraints_item2_17508194746085566() throws Throwable {
     try {
-      ((_FunctionTypes._void_P0_E0) () -> {
-        if (Generated_base_Test.createPerson(((Number) new BigInteger("160"))) == null) {
-          throw new NullPointerException("No Result in Confail Testitem");
-        }
-      }).invoke();
+      if (Generated_base_Test.createPerson((Number) new BigInteger("160")) == null) {
+        throw new NullPointerException("No Result in Confail Testitem");
+      }
       Assert.fail("Constraint failed");
     } catch (Exception e) {
       // expected exception
     }
   }
   public static Number failingFun(Boolean f) {
-    Number res = ((_FunctionTypes._return_P0_E0<Number>) () -> ((_FunctionTypes._return_P0_E0<Number>) () -> {
-      if (f) {
-        return FailException.<Number>fail("Test");
-      } else {
-        return ((Number) new BigInteger("10"));
-      }
-    }).invoke()).invoke();
+    Number res = (f ? FailException.<Number>fail("Test") : (Number) new BigInteger("10"));
 
     return res;
   }
   @Test
   public void testFail_item0_6953776000506773593() throws Throwable {
-    Assert.assertTrue("Expected: " + (((Number) new BigInteger("10"))) + ", but was: " + (Generated_base_Test.failingFun(false)), EqualsTestOp.matches(((Number) new BigInteger("10")), Generated_base_Test.failingFun(false)));
+    Assert.assertTrue("Expected: " + (Number) new BigInteger("10") + ", but was: " + Generated_base_Test.failingFun(false), EqualsTestOp.matches((Number) new BigInteger("10"), Generated_base_Test.failingFun(false)));
   }
   @Test
   public void testFail_item1_6953776000506773750() throws Throwable {
     try {
-      ((_FunctionTypes._void_P0_E0) () -> {
-        if (Generated_base_Test.failingFun(true) == null) {
-          throw new NullPointerException("No Result in Confail Testitem");
-        }
-      }).invoke();
+      if (Generated_base_Test.failingFun(true) == null) {
+        throw new NullPointerException("No Result in Confail Testitem");
+      }
       Assert.fail("Constraint failed");
     } catch (Exception e) {
       // expected exception
@@ -310,22 +248,22 @@ public class Generated_base_Test {
 
     return res;
   }
-  public static final Number c1_ = ((Number) new BigInteger("1"));
+  public static final Number c1_ = (Number) new BigInteger("1");
 
   public static Number f2(Number i) {
     Number res = i;
 
     return res;
   }
-  public static final Number c2_ = ((Number) new BigInteger("1"));
-  public static final Number x_ = ((Number) new BigInteger("10"));
+  public static final Number c2_ = (Number) new BigInteger("1");
+  public static final Number x_ = (Number) new BigInteger("10");
 
   public static Number f3(Number r) {
     Number res = r;
 
     return res;
   }
-  public static final Number c3_ = ((Number) new BigInteger("1"));
+  public static final Number c3_ = (Number) new BigInteger("1");
 
   public static String f4(String s) {
     String res = s;
@@ -342,27 +280,27 @@ public class Generated_base_Test {
   public static final Boolean c5_ = true;
   @Test
   public void typedef_item0_8012890279759765527() throws Throwable {
-    Assert.assertTrue("Expected: " + (((Number) new BigInteger("1"))) + ", but was: " + (Generated_base_Test.f1(((Number) new BigInteger("1")))), EqualsTestOp.matches(((Number) new BigInteger("1")), Generated_base_Test.f1(((Number) new BigInteger("1")))));
+    Assert.assertTrue("Expected: " + (Number) new BigInteger("1") + ", but was: " + Generated_base_Test.f1((Number) new BigInteger("1")), EqualsTestOp.matches((Number) new BigInteger("1"), Generated_base_Test.f1((Number) new BigInteger("1"))));
   }
   @Test
   public void typedef_item1_8012890279759765900() throws Throwable {
-    Assert.assertTrue("Expected: " + (((Number) new BigInteger("1"))) + ", but was: " + (Generated_base_Test.f1(Generated_base_Test.c1_)), EqualsTestOp.matches(((Number) new BigInteger("1")), Generated_base_Test.f1(Generated_base_Test.c1_)));
+    Assert.assertTrue("Expected: " + (Number) new BigInteger("1") + ", but was: " + Generated_base_Test.f1(Generated_base_Test.c1_), EqualsTestOp.matches((Number) new BigInteger("1"), Generated_base_Test.f1(Generated_base_Test.c1_)));
   }
   @Test
   public void typedef_item2_8012890279759773088() throws Throwable {
-    Assert.assertTrue("Expected: " + (((Number) new BigInteger("1"))) + ", but was: " + (Generated_base_Test.f2(Generated_base_Test.c2_)), EqualsTestOp.matches(((Number) new BigInteger("1")), Generated_base_Test.f2(Generated_base_Test.c2_)));
+    Assert.assertTrue("Expected: " + (Number) new BigInteger("1") + ", but was: " + Generated_base_Test.f2(Generated_base_Test.c2_), EqualsTestOp.matches((Number) new BigInteger("1"), Generated_base_Test.f2(Generated_base_Test.c2_)));
   }
   @Test
   public void typedef_item3_8012890279759776506() throws Throwable {
-    Assert.assertTrue("Expected: " + (((Number) new BigInteger("1"))) + ", but was: " + (Generated_base_Test.f3(Generated_base_Test.c3_)), EqualsTestOp.matches(((Number) new BigInteger("1")), Generated_base_Test.f3(Generated_base_Test.c3_)));
+    Assert.assertTrue("Expected: " + (Number) new BigInteger("1") + ", but was: " + Generated_base_Test.f3(Generated_base_Test.c3_), EqualsTestOp.matches((Number) new BigInteger("1"), Generated_base_Test.f3(Generated_base_Test.c3_)));
   }
   @Test
   public void typedef_item4_8012890279759799826() throws Throwable {
-    Assert.assertEquals("Expected: " + ("hello") + ", but was: " + (Generated_base_Test.f4(Generated_base_Test.c4_)), (Object) "hello", (Object) Generated_base_Test.f4(Generated_base_Test.c4_));
+    Assert.assertEquals("Expected: " + "hello" + ", but was: " + Generated_base_Test.f4(Generated_base_Test.c4_), (Object) "hello", (Object) Generated_base_Test.f4(Generated_base_Test.c4_));
   }
   @Test
   public void typedef_item5_8012890279759814587() throws Throwable {
-    Assert.assertEquals("Expected: " + (true) + ", but was: " + (Generated_base_Test.f5(Generated_base_Test.c5_)), (Object) true, (Object) Generated_base_Test.f5(Generated_base_Test.c5_));
+    Assert.assertEquals("Expected: " + true + ", but was: " + Generated_base_Test.f5(Generated_base_Test.c5_), (Object) true, (Object) Generated_base_Test.f5(Generated_base_Test.c5_));
   }
 
 

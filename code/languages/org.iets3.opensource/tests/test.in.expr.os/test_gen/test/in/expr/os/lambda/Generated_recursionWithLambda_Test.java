@@ -33,19 +33,17 @@ public class Generated_recursionWithLambda_Test {
   };
   @Test
   public void recursionWithLambda_res_7740953487930954651() throws Throwable {
-    Assert.assertTrue("Expected: " + (((Number) new BigInteger("1327"))) + ", but was: " + (Generated_recursionWithLambda_Test.f(AH.add(((Number) new BigInteger("10")), AH.add(((Number) new BigInteger("30")), AH.add(((Number) new BigInteger("1")), ((Number) new BigInteger("10"))))), Generated_recursionWithLambda_Test.plus_)), EqualsTestOp.matches(((Number) new BigInteger("1327")), Generated_recursionWithLambda_Test.f(AH.add(((Number) new BigInteger("10")), AH.add(((Number) new BigInteger("30")), AH.add(((Number) new BigInteger("1")), ((Number) new BigInteger("10"))))), Generated_recursionWithLambda_Test.plus_)));
+    Assert.assertTrue("Expected: " + (Number) new BigInteger("1327") + ", but was: " + Generated_recursionWithLambda_Test.f(AH.add((Number) new BigInteger("10"), AH.add((Number) new BigInteger("30"), AH.add((Number) new BigInteger("1"), (Number) new BigInteger("10")))), Generated_recursionWithLambda_Test.plus_), EqualsTestOp.matches((Number) new BigInteger("1327"), Generated_recursionWithLambda_Test.f(AH.add((Number) new BigInteger("10"), AH.add((Number) new BigInteger("30"), AH.add((Number) new BigInteger("1"), (Number) new BigInteger("10")))), Generated_recursionWithLambda_Test.plus_)));
   }
-  public static Number f(Number a, Function<ParameterSetWrapper, Number> op) {
+  public static Number f(final Number a, final Function<ParameterSetWrapper, Number> op) {
     Number res = ((_FunctionTypes._return_P0_E0<Number>) () -> {
-      if (AH.isGreater(a, ((Number) new BigInteger("0")))) {
-        return ((_FunctionTypes._return_P0_E0<Number>) () -> {
-          ParameterSetWrapper param = new ParameterSetWrapper();
-          param.parameters.add(a);
-          param.parameters.add(Generated_recursionWithLambda_Test.f(AH.sub(a, ((Number) new BigInteger("1"))), op));
-          return op.apply(param);
-        }).invoke();
-      } else if (AH.isEqual(a, ((Number) new BigInteger("0")))) {
-        return ((Number) new BigInteger("1"));
+      if (AH.isGreater(a, (Number) new BigInteger("0"))) {
+        ParameterSetWrapper param = new ParameterSetWrapper();
+        param.parameters.add(a);
+        param.parameters.add(Generated_recursionWithLambda_Test.f(AH.sub(a, (Number) new BigInteger("1")), op));
+        return op.apply(param);
+      } else if (AH.isEqual(a, (Number) new BigInteger("0"))) {
+        return (Number) new BigInteger("1");
       } else {
         throw new AlternativesException("The proposed alternative does not exist.");
       }

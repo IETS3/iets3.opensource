@@ -39,7 +39,7 @@ public class Generated_collectionDefaultValues_Test {
       if (!(o instanceof Dummy)) {
         return false;
       }
-      Dummy rd = ((Dummy) o);
+      Dummy rd = (Dummy) o;
 
 
 
@@ -63,51 +63,51 @@ public class Generated_collectionDefaultValues_Test {
   }
   @Test
   public void TestDefaultValues_item0_6932772747675577019() throws Throwable {
-    Assert.assertEquals("Expected: " + (TreePVector.<Number>from(new ArrayList<Number>())) + ", but was: " + (TreePVector.<Number>from(new ArrayList<Number>())), (Object) TreePVector.<Number>from(new ArrayList<Number>()), (Object) TreePVector.<Number>from(new ArrayList<Number>()));
+    Assert.assertEquals("Expected: " + TreePVector.<Number>from(new ArrayList<Number>()) + ", but was: " + TreePVector.<Number>from(new ArrayList<Number>()), (Object) TreePVector.<Number>from(new ArrayList<Number>()), (Object) TreePVector.<Number>from(new ArrayList<Number>()));
   }
   @Test
   public void TestDefaultValues_item1_6932772747675577522() throws Throwable {
-    Assert.assertEquals("Expected: " + (TreePVector.<String>from(new ArrayList<String>())) + ", but was: " + (TreePVector.<String>from(new ArrayList<String>())), (Object) TreePVector.<String>from(new ArrayList<String>()), (Object) TreePVector.<String>from(new ArrayList<String>()));
+    Assert.assertEquals("Expected: " + TreePVector.<String>from(new ArrayList<String>()) + ", but was: " + TreePVector.<String>from(new ArrayList<String>()), (Object) TreePVector.<String>from(new ArrayList<String>()), (Object) TreePVector.<String>from(new ArrayList<String>()));
   }
   @Test
   public void TestDefaultValues_item2_3438105021040261423() throws Throwable {
-    Assert.assertEquals("Expected: " + (TreePVector.<Number>from(new ArrayList<Number>())) + ", but was: " + (TreePVector.<Number>from(new ArrayList<Number>())), (Object) TreePVector.<Number>from(new ArrayList<Number>()), (Object) TreePVector.<Number>from(new ArrayList<Number>()));
+    Assert.assertEquals("Expected: " + TreePVector.<Number>from(new ArrayList<Number>()) + ", but was: " + TreePVector.<Number>from(new ArrayList<Number>()), (Object) TreePVector.<Number>from(new ArrayList<Number>()), (Object) TreePVector.<Number>from(new ArrayList<Number>()));
   }
   @Test
   public void TestDefaultValues_item3_3438105021040264034() throws Throwable {
-    Assert.assertEquals("Expected: " + (TreePVector.<Number>from(new ArrayList<Number>())) + ", but was: " + (TreePVector.<Number>from(new ArrayList<Number>())), (Object) TreePVector.<Number>from(new ArrayList<Number>()), (Object) TreePVector.<Number>from(new ArrayList<Number>()));
+    Assert.assertEquals("Expected: " + TreePVector.<Number>from(new ArrayList<Number>()) + ", but was: " + TreePVector.<Number>from(new ArrayList<Number>()), (Object) TreePVector.<Number>from(new ArrayList<Number>()), (Object) TreePVector.<Number>from(new ArrayList<Number>()));
   }
   @Test
   public void TestDefaultValues_item4_3438105021040267969() throws Throwable {
-    Assert.assertEquals("Expected: " + (TreePVector.<Boolean>from(new ArrayList<Boolean>())) + ", but was: " + (TreePVector.<Boolean>from(new ArrayList<Boolean>())), (Object) TreePVector.<Boolean>from(new ArrayList<Boolean>()), (Object) TreePVector.<Boolean>from(new ArrayList<Boolean>()));
+    Assert.assertEquals("Expected: " + TreePVector.<Boolean>from(new ArrayList<Boolean>()) + ", but was: " + TreePVector.<Boolean>from(new ArrayList<Boolean>()), (Object) TreePVector.<Boolean>from(new ArrayList<Boolean>()), (Object) TreePVector.<Boolean>from(new ArrayList<Boolean>()));
   }
   @Test
   public void TestDefaultValues_item5_3438105021040271720() throws Throwable {
-    Assert.assertEquals("Expected: " + (TreePVector.<Dummy>from(new ArrayList<Dummy>())) + ", but was: " + (TreePVector.<Dummy>from(new ArrayList<Dummy>())), (Object) TreePVector.<Dummy>from(new ArrayList<Dummy>()), (Object) TreePVector.<Dummy>from(new ArrayList<Dummy>()));
+    Assert.assertEquals("Expected: " + TreePVector.<Dummy>from(new ArrayList<Dummy>()) + ", but was: " + TreePVector.<Dummy>from(new ArrayList<Dummy>()), (Object) TreePVector.<Dummy>from(new ArrayList<Dummy>()), (Object) TreePVector.<Dummy>from(new ArrayList<Dummy>()));
   }
   @Test
   public void TestDefaultValues_item7_3438105021040274732() throws Throwable {
-    Assert.assertEquals("Expected: " + (HashTreePSet.from(new HashSet<Number>())) + ", but was: " + (HashTreePSet.from(new HashSet<Number>())), (Object) HashTreePSet.from(new HashSet<Number>()), (Object) HashTreePSet.from(new HashSet<Number>()));
+    Assert.assertEquals("Expected: " + HashTreePSet.from(new HashSet<Number>()) + ", but was: " + HashTreePSet.from(new HashSet<Number>()), (Object) HashTreePSet.from(new HashSet<Number>()), (Object) HashTreePSet.from(new HashSet<Number>()));
   }
   @Test
   public void TestDefaultValues_item8_3438105021040277001() throws Throwable {
-    Assert.assertEquals("Expected: " + (HashTreePSet.from(new HashSet<String>())) + ", but was: " + (HashTreePSet.from(new HashSet<String>())), (Object) HashTreePSet.from(new HashSet<String>()), (Object) HashTreePSet.from(new HashSet<String>()));
+    Assert.assertEquals("Expected: " + HashTreePSet.from(new HashSet<String>()) + ", but was: " + HashTreePSet.from(new HashSet<String>()), (Object) HashTreePSet.from(new HashSet<String>()), (Object) HashTreePSet.from(new HashSet<String>()));
   }
   @Test
   public void TestDefaultValues_item9_6932772747675578001() throws Throwable {
-    Assert.assertEquals("Expected: " + (HashTreePSet.from(new HashSet<Number>())) + ", but was: " + (HashTreePSet.from(new HashSet<Number>())), (Object) HashTreePSet.from(new HashSet<Number>()), (Object) HashTreePSet.from(new HashSet<Number>()));
+    Assert.assertEquals("Expected: " + HashTreePSet.from(new HashSet<Number>()) + ", but was: " + HashTreePSet.from(new HashSet<Number>()), (Object) HashTreePSet.from(new HashSet<Number>()), (Object) HashTreePSet.from(new HashSet<Number>()));
   }
   @Test
   public void TestDefaultValues_item10_3438105021040280171() throws Throwable {
-    Assert.assertEquals("Expected: " + (HashTreePSet.from(new HashSet<Number>())) + ", but was: " + (HashTreePSet.from(new HashSet<Number>())), (Object) HashTreePSet.from(new HashSet<Number>()), (Object) HashTreePSet.from(new HashSet<Number>()));
+    Assert.assertEquals("Expected: " + HashTreePSet.from(new HashSet<Number>()) + ", but was: " + HashTreePSet.from(new HashSet<Number>()), (Object) HashTreePSet.from(new HashSet<Number>()), (Object) HashTreePSet.from(new HashSet<Number>()));
   }
   @Test
   public void TestDefaultValues_item11_3438105021040286079() throws Throwable {
-    Assert.assertEquals("Expected: " + (HashTreePSet.from(new HashSet<Boolean>())) + ", but was: " + (HashTreePSet.from(new HashSet<Boolean>())), (Object) HashTreePSet.from(new HashSet<Boolean>()), (Object) HashTreePSet.from(new HashSet<Boolean>()));
+    Assert.assertEquals("Expected: " + HashTreePSet.from(new HashSet<Boolean>()) + ", but was: " + HashTreePSet.from(new HashSet<Boolean>()), (Object) HashTreePSet.from(new HashSet<Boolean>()), (Object) HashTreePSet.from(new HashSet<Boolean>()));
   }
   @Test
   public void TestDefaultValues_item12_6932772747675579713() throws Throwable {
-    Assert.assertEquals("Expected: " + (HashTreePSet.from(new HashSet<Dummy>())) + ", but was: " + (HashTreePSet.from(new HashSet<Dummy>())), (Object) HashTreePSet.from(new HashSet<Dummy>()), (Object) HashTreePSet.from(new HashSet<Dummy>()));
+    Assert.assertEquals("Expected: " + HashTreePSet.from(new HashSet<Dummy>()) + ", but was: " + HashTreePSet.from(new HashSet<Dummy>()), (Object) HashTreePSet.from(new HashSet<Dummy>()), (Object) HashTreePSet.from(new HashSet<Dummy>()));
   }
 
 

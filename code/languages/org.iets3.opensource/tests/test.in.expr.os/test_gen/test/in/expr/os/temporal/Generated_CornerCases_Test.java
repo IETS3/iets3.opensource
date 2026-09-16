@@ -8,9 +8,9 @@ import org.junit.Assert;
 import java.math.BigInteger;
 import org.iets3.core.expr.genjava.tests.rt.rt.EqualsTestOp;
 import org.iets3.core.expr.temporal.runtime.TemporalValue;
-import jetbrains.mps.baseLanguage.closures.runtime._FunctionTypes;
 import org.iets3.core.expr.genjava.temporal.rt.runtime.TemporalValueHelper;
 import org.iets3.core.expr.temporal.runtime.TemporalOps;
+import jetbrains.mps.baseLanguage.closures.runtime._FunctionTypes;
 import org.iets3.core.expr.temporal.runtime.SliceValue;
 import java.math.BigDecimal;
 import java.math.RoundingMode;
@@ -32,98 +32,42 @@ public class Generated_CornerCases_Test {
   public static final LocalDate aDate_ = LocalDate.of(2018, 1, 1);
   @Test
   public void testDateValues_item0_6891143932407595695() throws Throwable {
-    Assert.assertTrue("Expected: " + (((Number) new BigInteger("1"))) + ", but was: " + (new BigInteger(Integer.toString(Generated_CornerCases_Test.aDate_.getDayOfMonth()))), EqualsTestOp.matches(((Number) new BigInteger("1")), new BigInteger(Integer.toString(Generated_CornerCases_Test.aDate_.getDayOfMonth()))));
+    Assert.assertTrue("Expected: " + (Number) new BigInteger("1") + ", but was: " + new BigInteger(Integer.toString(Generated_CornerCases_Test.aDate_.getDayOfMonth())), EqualsTestOp.matches((Number) new BigInteger("1"), new BigInteger(Integer.toString(Generated_CornerCases_Test.aDate_.getDayOfMonth()))));
   }
   @Test
   public void testDateValues_item1_6891143932407622381() throws Throwable {
-    Assert.assertTrue("Expected: " + (((Number) new BigInteger("1"))) + ", but was: " + (new BigInteger(Integer.toString(Generated_CornerCases_Test.aDate_.getMonthValue()))), EqualsTestOp.matches(((Number) new BigInteger("1")), new BigInteger(Integer.toString(Generated_CornerCases_Test.aDate_.getMonthValue()))));
+    Assert.assertTrue("Expected: " + (Number) new BigInteger("1") + ", but was: " + new BigInteger(Integer.toString(Generated_CornerCases_Test.aDate_.getMonthValue())), EqualsTestOp.matches((Number) new BigInteger("1"), new BigInteger(Integer.toString(Generated_CornerCases_Test.aDate_.getMonthValue()))));
   }
   @Test
   public void testDateValues_item2_6891143932407622453() throws Throwable {
-    Assert.assertTrue("Expected: " + (((Number) new BigInteger("2018"))) + ", but was: " + (new BigInteger(Integer.toString(Generated_CornerCases_Test.aDate_.getYear()))), EqualsTestOp.matches(((Number) new BigInteger("2018")), new BigInteger(Integer.toString(Generated_CornerCases_Test.aDate_.getYear()))));
+    Assert.assertTrue("Expected: " + (Number) new BigInteger("2018") + ", but was: " + new BigInteger(Integer.toString(Generated_CornerCases_Test.aDate_.getYear())), EqualsTestOp.matches((Number) new BigInteger("2018"), new BigInteger(Integer.toString(Generated_CornerCases_Test.aDate_.getYear()))));
   }
   public static final LocalDate date01_ = LocalDate.of(2000, 1, 1);
   public static final LocalDate date02_ = LocalDate.of(2000, 2, 1);
-  public static final TemporalValue s1_ = ((_FunctionTypes._return_P0_E0<TemporalValue>) () -> {
-    TemporalValue value = new TemporalValue();
-    value = value.slice(((LocalDate) Generated_CornerCases_Test.date01_), ((Number) new BigInteger("10")));
-    return value;
-  }).invoke();
-  public static final TemporalValue s2_ = ((_FunctionTypes._return_P0_E0<TemporalValue>) () -> {
-    TemporalValue value = new TemporalValue();
-    value = value.slice(((LocalDate) Generated_CornerCases_Test.date01_), ((Number) new BigInteger("10")));
-    return value;
-  }).invoke();
+  public static final TemporalValue s1_ = new TemporalValue().slice((LocalDate) Generated_CornerCases_Test.date01_, (Number) new BigInteger("10"));
+  public static final TemporalValue s2_ = new TemporalValue().slice((LocalDate) Generated_CornerCases_Test.date01_, (Number) new BigInteger("10"));
   @Test
   public void TestSingleSlice_item0_8266215269013071771() throws Throwable {
-    Assert.assertEquals("Expected: " + (((_FunctionTypes._return_P0_E0<TemporalValue>) () -> {
-      TemporalValue value = new TemporalValue();
-      value = value.slice(((LocalDate) Generated_CornerCases_Test.date01_), ((Number) new BigInteger("20")));
-      return value;
-    }).invoke()) + ", but was: " + (TemporalValueHelper.perform(Generated_CornerCases_Test.s1_, Generated_CornerCases_Test.s1_, ((_FunctionTypes._return_P2_E0<Number, Object, Object>) (Object l, Object r) -> TemporalOps.plus(l, r)), null)), (Object) ((_FunctionTypes._return_P0_E0<TemporalValue>) () -> {
-      TemporalValue value = new TemporalValue();
-      value = value.slice(((LocalDate) Generated_CornerCases_Test.date01_), ((Number) new BigInteger("20")));
-      return value;
-    }).invoke(), (Object) TemporalValueHelper.perform(Generated_CornerCases_Test.s1_, Generated_CornerCases_Test.s1_, ((_FunctionTypes._return_P2_E0<Number, Object, Object>) (Object l, Object r) -> TemporalOps.plus(l, r)), null));
+    Assert.assertEquals("Expected: " + new TemporalValue().slice((LocalDate) Generated_CornerCases_Test.date01_, (Number) new BigInteger("20")) + ", but was: " + TemporalValueHelper.perform(Generated_CornerCases_Test.s1_, Generated_CornerCases_Test.s1_, (Object l, Object r) -> TemporalOps.plus(l, r), null), (Object) new TemporalValue().slice((LocalDate) Generated_CornerCases_Test.date01_, (Number) new BigInteger("20")), (Object) TemporalValueHelper.perform(Generated_CornerCases_Test.s1_, Generated_CornerCases_Test.s1_, (Object l, Object r) -> TemporalOps.plus(l, r), null));
   }
   @Test
   public void TestSingleSlice_item1_8266215269022578382() throws Throwable {
-    Assert.assertEquals("Expected: " + (((_FunctionTypes._return_P0_E0<TemporalValue>) () -> {
-      TemporalValue value = new TemporalValue();
-      value = value.slice(((LocalDate) Generated_CornerCases_Test.date01_), ((Number) new BigInteger("100")));
-      return value;
-    }).invoke()) + ", but was: " + (TemporalValueHelper.perform(Generated_CornerCases_Test.s1_, Generated_CornerCases_Test.s1_, ((_FunctionTypes._return_P2_E0<Number, Object, Object>) (Object l, Object r) -> TemporalOps.mul(l, r)), null)), (Object) ((_FunctionTypes._return_P0_E0<TemporalValue>) () -> {
-      TemporalValue value = new TemporalValue();
-      value = value.slice(((LocalDate) Generated_CornerCases_Test.date01_), ((Number) new BigInteger("100")));
-      return value;
-    }).invoke(), (Object) TemporalValueHelper.perform(Generated_CornerCases_Test.s1_, Generated_CornerCases_Test.s1_, ((_FunctionTypes._return_P2_E0<Number, Object, Object>) (Object l, Object r) -> TemporalOps.mul(l, r)), null));
+    Assert.assertEquals("Expected: " + new TemporalValue().slice((LocalDate) Generated_CornerCases_Test.date01_, (Number) new BigInteger("100")) + ", but was: " + TemporalValueHelper.perform(Generated_CornerCases_Test.s1_, Generated_CornerCases_Test.s1_, (Object l, Object r) -> TemporalOps.mul(l, r), null), (Object) new TemporalValue().slice((LocalDate) Generated_CornerCases_Test.date01_, (Number) new BigInteger("100")), (Object) TemporalValueHelper.perform(Generated_CornerCases_Test.s1_, Generated_CornerCases_Test.s1_, (Object l, Object r) -> TemporalOps.mul(l, r), null));
   }
   @Test
   public void TestSingleSlice_item2_8266215269022576688() throws Throwable {
-    Assert.assertEquals("Expected: " + (((_FunctionTypes._return_P0_E0<TemporalValue>) () -> {
-      TemporalValue value = new TemporalValue();
-      value = value.slice(((LocalDate) Generated_CornerCases_Test.date01_), ((Number) new BigInteger("20")));
-      return value;
-    }).invoke()) + ", but was: " + (TemporalValueHelper.perform(Generated_CornerCases_Test.s1_, Generated_CornerCases_Test.s2_, ((_FunctionTypes._return_P2_E0<Number, Object, Object>) (Object l, Object r) -> TemporalOps.plus(l, r)), null)), (Object) ((_FunctionTypes._return_P0_E0<TemporalValue>) () -> {
-      TemporalValue value = new TemporalValue();
-      value = value.slice(((LocalDate) Generated_CornerCases_Test.date01_), ((Number) new BigInteger("20")));
-      return value;
-    }).invoke(), (Object) TemporalValueHelper.perform(Generated_CornerCases_Test.s1_, Generated_CornerCases_Test.s2_, ((_FunctionTypes._return_P2_E0<Number, Object, Object>) (Object l, Object r) -> TemporalOps.plus(l, r)), null));
+    Assert.assertEquals("Expected: " + new TemporalValue().slice((LocalDate) Generated_CornerCases_Test.date01_, (Number) new BigInteger("20")) + ", but was: " + TemporalValueHelper.perform(Generated_CornerCases_Test.s1_, Generated_CornerCases_Test.s2_, (Object l, Object r) -> TemporalOps.plus(l, r), null), (Object) new TemporalValue().slice((LocalDate) Generated_CornerCases_Test.date01_, (Number) new BigInteger("20")), (Object) TemporalValueHelper.perform(Generated_CornerCases_Test.s1_, Generated_CornerCases_Test.s2_, (Object l, Object r) -> TemporalOps.plus(l, r), null));
   }
   @Test
   public void TestSingleSlice_item3_8266215269022574597() throws Throwable {
-    Assert.assertEquals("Expected: " + (((_FunctionTypes._return_P0_E0<TemporalValue>) () -> {
-      TemporalValue value = new TemporalValue();
-      value = value.slice(((LocalDate) Generated_CornerCases_Test.date01_), ((Number) new BigInteger("0")));
-      return value;
-    }).invoke()) + ", but was: " + (TemporalValueHelper.perform(Generated_CornerCases_Test.s1_, Generated_CornerCases_Test.s2_, ((_FunctionTypes._return_P2_E0<Number, Object, Object>) (Object l, Object r) -> TemporalOps.minus(l, r)), null)), (Object) ((_FunctionTypes._return_P0_E0<TemporalValue>) () -> {
-      TemporalValue value = new TemporalValue();
-      value = value.slice(((LocalDate) Generated_CornerCases_Test.date01_), ((Number) new BigInteger("0")));
-      return value;
-    }).invoke(), (Object) TemporalValueHelper.perform(Generated_CornerCases_Test.s1_, Generated_CornerCases_Test.s2_, ((_FunctionTypes._return_P2_E0<Number, Object, Object>) (Object l, Object r) -> TemporalOps.minus(l, r)), null));
+    Assert.assertEquals("Expected: " + new TemporalValue().slice((LocalDate) Generated_CornerCases_Test.date01_, (Number) new BigInteger("0")) + ", but was: " + TemporalValueHelper.perform(Generated_CornerCases_Test.s1_, Generated_CornerCases_Test.s2_, (Object l, Object r) -> TemporalOps.minus(l, r), null), (Object) new TemporalValue().slice((LocalDate) Generated_CornerCases_Test.date01_, (Number) new BigInteger("0")), (Object) TemporalValueHelper.perform(Generated_CornerCases_Test.s1_, Generated_CornerCases_Test.s2_, (Object l, Object r) -> TemporalOps.minus(l, r), null));
   }
   @Test
   public void TestSingleSlice_item4_8266215269022585836() throws Throwable {
-    Assert.assertEquals("Expected: " + (((_FunctionTypes._return_P0_E0<TemporalValue>) () -> {
-      TemporalValue value = new TemporalValue();
-      value = value.slice(((LocalDate) Generated_CornerCases_Test.date01_), ((Number) new BigInteger("20")));
-      return value;
-    }).invoke()) + ", but was: " + (TemporalValueHelper.perform(Generated_CornerCases_Test.s1_, ((Number) new BigInteger("2")), ((_FunctionTypes._return_P2_E0<Number, Object, Object>) (Object l, Object r) -> TemporalOps.mul(l, r)), null)), (Object) ((_FunctionTypes._return_P0_E0<TemporalValue>) () -> {
-      TemporalValue value = new TemporalValue();
-      value = value.slice(((LocalDate) Generated_CornerCases_Test.date01_), ((Number) new BigInteger("20")));
-      return value;
-    }).invoke(), (Object) TemporalValueHelper.perform(Generated_CornerCases_Test.s1_, ((Number) new BigInteger("2")), ((_FunctionTypes._return_P2_E0<Number, Object, Object>) (Object l, Object r) -> TemporalOps.mul(l, r)), null));
+    Assert.assertEquals("Expected: " + new TemporalValue().slice((LocalDate) Generated_CornerCases_Test.date01_, (Number) new BigInteger("20")) + ", but was: " + TemporalValueHelper.perform(Generated_CornerCases_Test.s1_, (Number) new BigInteger("2"), (Object l, Object r) -> TemporalOps.mul(l, r), null), (Object) new TemporalValue().slice((LocalDate) Generated_CornerCases_Test.date01_, (Number) new BigInteger("20")), (Object) TemporalValueHelper.perform(Generated_CornerCases_Test.s1_, (Number) new BigInteger("2"), (Object l, Object r) -> TemporalOps.mul(l, r), null));
   }
-  public static final TemporalValue x1_ = ((_FunctionTypes._return_P0_E0<TemporalValue>) () -> {
-    TemporalValue value = new TemporalValue();
-    value = value.slice(((LocalDate) Generated_CornerCases_Test.date01_), ((Number) new BigInteger("10")));
-    return value;
-  }).invoke();
-  public static final TemporalValue x2_ = ((_FunctionTypes._return_P0_E0<TemporalValue>) () -> {
-    TemporalValue value = new TemporalValue();
-    value = value.slice(((LocalDate) Generated_CornerCases_Test.date02_), ((Number) new BigInteger("10")));
-    return value;
-  }).invoke();
+  public static final TemporalValue x1_ = new TemporalValue().slice((LocalDate) Generated_CornerCases_Test.date01_, (Number) new BigInteger("10"));
+  public static final TemporalValue x2_ = new TemporalValue().slice((LocalDate) Generated_CornerCases_Test.date02_, (Number) new BigInteger("10"));
   @Test
   public void NoOverlap_item0_8266215269023504467() throws Throwable {/* 
      * No overlap; currently throws exception
@@ -133,11 +77,9 @@ public class Generated_CornerCases_Test {
      */
     
     try {
-      ((_FunctionTypes._void_P0_E0) () -> {
-        if (TemporalValueHelper.perform(Generated_CornerCases_Test.x1_, Generated_CornerCases_Test.x2_, ((_FunctionTypes._return_P2_E0<Number, Object, Object>) (Object l, Object r) -> TemporalOps.plus(l, r)), null) == null) {
-          throw new NullPointerException("No Result in Confail Testitem");
-        }
-      }).invoke();
+      if (TemporalValueHelper.perform(Generated_CornerCases_Test.x1_, Generated_CornerCases_Test.x2_, (Object l, Object r) -> TemporalOps.plus(l, r), null) == null) {
+        throw new NullPointerException("No Result in Confail Testitem");
+      }
       Assert.fail("Constraint failed");
     } catch (Exception e) {
       // expected exception
@@ -152,41 +94,23 @@ public class Generated_CornerCases_Test {
      */
     
     try {
-      ((_FunctionTypes._void_P0_E0) () -> {
-        if (TemporalValueHelper.perform(((_FunctionTypes._return_P0_E0<TemporalValue>) () -> {
-          TemporalValue value = new TemporalValue();
-          value = value.slice(((LocalDate) LocalDate.MIN), ((Number) new BigInteger("10")));
-          return value;
-        }).invoke(), Generated_CornerCases_Test.x2_, ((_FunctionTypes._return_P2_E0<Number, Object, Object>) (Object l, Object r) -> TemporalOps.plus(l, r)), null) == null) {
-          throw new NullPointerException("No Result in Confail Testitem");
-        }
-      }).invoke();
+      if (TemporalValueHelper.perform(new TemporalValue().slice((LocalDate) LocalDate.MIN, (Number) new BigInteger("10")), Generated_CornerCases_Test.x2_, (Object l, Object r) -> TemporalOps.plus(l, r), null) == null) {
+        throw new NullPointerException("No Result in Confail Testitem");
+      }
       Assert.fail("Constraint failed");
     } catch (Exception e) {
       // expected exception
     }
   }
-  public static final TemporalValue y1_ = new TemporalValue(LocalDate.MIN, ((Number) new BigInteger("10")));
-  public static final TemporalValue y2_ = ((_FunctionTypes._return_P0_E0<TemporalValue>) () -> {
-    TemporalValue value = new TemporalValue();
-    value = value.slice(((LocalDate) LocalDate.MIN), ((Number) new BigInteger("10")));
-    return value;
-  }).invoke();
+  public static final TemporalValue y1_ = new TemporalValue(LocalDate.MIN, (Number) new BigInteger("10"));
+  public static final TemporalValue y2_ = new TemporalValue().slice((LocalDate) LocalDate.MIN, (Number) new BigInteger("10"));
   @Test
   public void TestBigBang_item0_8266215269023718094() throws Throwable {
-    Assert.assertEquals("Expected: " + (((_FunctionTypes._return_P0_E0<TemporalValue>) () -> {
-      TemporalValue value = new TemporalValue();
-      value = value.slice(((LocalDate) LocalDate.MIN), ((Number) new BigInteger("20")));
-      return value;
-    }).invoke()) + ", but was: " + (TemporalValueHelper.perform(Generated_CornerCases_Test.y1_, Generated_CornerCases_Test.y2_, ((_FunctionTypes._return_P2_E0<Number, Object, Object>) (Object l, Object r) -> TemporalOps.plus(l, r)), null)), (Object) ((_FunctionTypes._return_P0_E0<TemporalValue>) () -> {
-      TemporalValue value = new TemporalValue();
-      value = value.slice(((LocalDate) LocalDate.MIN), ((Number) new BigInteger("20")));
-      return value;
-    }).invoke(), (Object) TemporalValueHelper.perform(Generated_CornerCases_Test.y1_, Generated_CornerCases_Test.y2_, ((_FunctionTypes._return_P2_E0<Number, Object, Object>) (Object l, Object r) -> TemporalOps.plus(l, r)), null));
+    Assert.assertEquals("Expected: " + new TemporalValue().slice((LocalDate) LocalDate.MIN, (Number) new BigInteger("20")) + ", but was: " + TemporalValueHelper.perform(Generated_CornerCases_Test.y1_, Generated_CornerCases_Test.y2_, (Object l, Object r) -> TemporalOps.plus(l, r), null), (Object) new TemporalValue().slice((LocalDate) LocalDate.MIN, (Number) new BigInteger("20")), (Object) TemporalValueHelper.perform(Generated_CornerCases_Test.y1_, Generated_CornerCases_Test.y2_, (Object l, Object r) -> TemporalOps.plus(l, r), null));
   }
   @Test
   public void Overlap_item0_8266215269024533374() throws Throwable {
-    Assert.assertEquals("Expected: " + (true) + ", but was: " + (((_FunctionTypes._return_P0_E0<Boolean>) () -> {
+    Assert.assertEquals("Expected: " + true + ", but was: " + (((_FunctionTypes._return_P0_E0<Boolean>) () -> {
       LocalDate last = null;
       return true;
     }).invoke()), (Object) true, (Object) ((_FunctionTypes._return_P0_E0<Boolean>) () -> {
@@ -196,10 +120,10 @@ public class Generated_CornerCases_Test {
   }
   @Test
   public void Overlap_item1_8266215269024540427() throws Throwable {
-    Assert.assertEquals("Expected: " + (true) + ", but was: " + (((_FunctionTypes._return_P0_E0<Boolean>) () -> {
+    Assert.assertEquals("Expected: " + true + ", but was: " + (((_FunctionTypes._return_P0_E0<Boolean>) () -> {
       LocalDate last = null;
       {
-        TemporalValue tv = ((TemporalValue) Generated_CornerCases_Test.y1_);
+        TemporalValue tv = (TemporalValue) Generated_CornerCases_Test.y1_;
         LocalDate time = tv.firstSlice().time();
         if (last == null) {
           last = time;
@@ -213,7 +137,7 @@ public class Generated_CornerCases_Test {
     }).invoke()), (Object) true, (Object) ((_FunctionTypes._return_P0_E0<Boolean>) () -> {
       LocalDate last = null;
       {
-        TemporalValue tv = ((TemporalValue) Generated_CornerCases_Test.y1_);
+        TemporalValue tv = (TemporalValue) Generated_CornerCases_Test.y1_;
         LocalDate time = tv.firstSlice().time();
         if (last == null) {
           last = time;
@@ -228,10 +152,10 @@ public class Generated_CornerCases_Test {
   }
   @Test
   public void Overlap_item2_8266215269024563791() throws Throwable {
-    Assert.assertEquals("Expected: " + (true) + ", but was: " + (((_FunctionTypes._return_P0_E0<Boolean>) () -> {
+    Assert.assertEquals("Expected: " + true + ", but was: " + (((_FunctionTypes._return_P0_E0<Boolean>) () -> {
       LocalDate last = null;
       {
-        TemporalValue tv = ((TemporalValue) Generated_CornerCases_Test.y1_);
+        TemporalValue tv = (TemporalValue) Generated_CornerCases_Test.y1_;
         LocalDate time = tv.firstSlice().time();
         if (last == null) {
           last = time;
@@ -242,7 +166,7 @@ public class Generated_CornerCases_Test {
         }
       }
       {
-        TemporalValue tv = ((TemporalValue) Generated_CornerCases_Test.y1_);
+        TemporalValue tv = (TemporalValue) Generated_CornerCases_Test.y1_;
         LocalDate time = tv.firstSlice().time();
         if (last == null) {
           last = time;
@@ -256,7 +180,7 @@ public class Generated_CornerCases_Test {
     }).invoke()), (Object) true, (Object) ((_FunctionTypes._return_P0_E0<Boolean>) () -> {
       LocalDate last = null;
       {
-        TemporalValue tv = ((TemporalValue) Generated_CornerCases_Test.y1_);
+        TemporalValue tv = (TemporalValue) Generated_CornerCases_Test.y1_;
         LocalDate time = tv.firstSlice().time();
         if (last == null) {
           last = time;
@@ -267,7 +191,7 @@ public class Generated_CornerCases_Test {
         }
       }
       {
-        TemporalValue tv = ((TemporalValue) Generated_CornerCases_Test.y1_);
+        TemporalValue tv = (TemporalValue) Generated_CornerCases_Test.y1_;
         LocalDate time = tv.firstSlice().time();
         if (last == null) {
           last = time;
@@ -282,10 +206,10 @@ public class Generated_CornerCases_Test {
   }
   @Test
   public void Overlap_item3_8266215269024566003() throws Throwable {
-    Assert.assertEquals("Expected: " + (true) + ", but was: " + (((_FunctionTypes._return_P0_E0<Boolean>) () -> {
+    Assert.assertEquals("Expected: " + true + ", but was: " + (((_FunctionTypes._return_P0_E0<Boolean>) () -> {
       LocalDate last = null;
       {
-        TemporalValue tv = ((TemporalValue) Generated_CornerCases_Test.y1_);
+        TemporalValue tv = (TemporalValue) Generated_CornerCases_Test.y1_;
         LocalDate time = tv.firstSlice().time();
         if (last == null) {
           last = time;
@@ -296,7 +220,7 @@ public class Generated_CornerCases_Test {
         }
       }
       {
-        TemporalValue tv = ((TemporalValue) Generated_CornerCases_Test.y2_);
+        TemporalValue tv = (TemporalValue) Generated_CornerCases_Test.y2_;
         LocalDate time = tv.firstSlice().time();
         if (last == null) {
           last = time;
@@ -310,7 +234,7 @@ public class Generated_CornerCases_Test {
     }).invoke()), (Object) true, (Object) ((_FunctionTypes._return_P0_E0<Boolean>) () -> {
       LocalDate last = null;
       {
-        TemporalValue tv = ((TemporalValue) Generated_CornerCases_Test.y1_);
+        TemporalValue tv = (TemporalValue) Generated_CornerCases_Test.y1_;
         LocalDate time = tv.firstSlice().time();
         if (last == null) {
           last = time;
@@ -321,7 +245,7 @@ public class Generated_CornerCases_Test {
         }
       }
       {
-        TemporalValue tv = ((TemporalValue) Generated_CornerCases_Test.y2_);
+        TemporalValue tv = (TemporalValue) Generated_CornerCases_Test.y2_;
         LocalDate time = tv.firstSlice().time();
         if (last == null) {
           last = time;
@@ -336,10 +260,10 @@ public class Generated_CornerCases_Test {
   }
   @Test
   public void Overlap_item4_8266215269024568424() throws Throwable {
-    Assert.assertEquals("Expected: " + (true) + ", but was: " + (((_FunctionTypes._return_P0_E0<Boolean>) () -> {
+    Assert.assertEquals("Expected: " + true + ", but was: " + (((_FunctionTypes._return_P0_E0<Boolean>) () -> {
       LocalDate last = null;
       {
-        TemporalValue tv = ((TemporalValue) Generated_CornerCases_Test.s1_);
+        TemporalValue tv = (TemporalValue) Generated_CornerCases_Test.s1_;
         LocalDate time = tv.firstSlice().time();
         if (last == null) {
           last = time;
@@ -350,7 +274,7 @@ public class Generated_CornerCases_Test {
         }
       }
       {
-        TemporalValue tv = ((TemporalValue) Generated_CornerCases_Test.s2_);
+        TemporalValue tv = (TemporalValue) Generated_CornerCases_Test.s2_;
         LocalDate time = tv.firstSlice().time();
         if (last == null) {
           last = time;
@@ -364,7 +288,7 @@ public class Generated_CornerCases_Test {
     }).invoke()), (Object) true, (Object) ((_FunctionTypes._return_P0_E0<Boolean>) () -> {
       LocalDate last = null;
       {
-        TemporalValue tv = ((TemporalValue) Generated_CornerCases_Test.s1_);
+        TemporalValue tv = (TemporalValue) Generated_CornerCases_Test.s1_;
         LocalDate time = tv.firstSlice().time();
         if (last == null) {
           last = time;
@@ -375,7 +299,7 @@ public class Generated_CornerCases_Test {
         }
       }
       {
-        TemporalValue tv = ((TemporalValue) Generated_CornerCases_Test.s2_);
+        TemporalValue tv = (TemporalValue) Generated_CornerCases_Test.s2_;
         LocalDate time = tv.firstSlice().time();
         if (last == null) {
           last = time;
@@ -390,10 +314,10 @@ public class Generated_CornerCases_Test {
   }
   @Test
   public void Overlap_item5_8266215269024572846() throws Throwable {
-    Assert.assertEquals("Expected: " + (false) + ", but was: " + (((_FunctionTypes._return_P0_E0<Boolean>) () -> {
+    Assert.assertEquals("Expected: " + false + ", but was: " + (((_FunctionTypes._return_P0_E0<Boolean>) () -> {
       LocalDate last = null;
       {
-        TemporalValue tv = ((TemporalValue) Generated_CornerCases_Test.x1_);
+        TemporalValue tv = (TemporalValue) Generated_CornerCases_Test.x1_;
         LocalDate time = tv.firstSlice().time();
         if (last == null) {
           last = time;
@@ -404,7 +328,7 @@ public class Generated_CornerCases_Test {
         }
       }
       {
-        TemporalValue tv = ((TemporalValue) Generated_CornerCases_Test.x2_);
+        TemporalValue tv = (TemporalValue) Generated_CornerCases_Test.x2_;
         LocalDate time = tv.firstSlice().time();
         if (last == null) {
           last = time;
@@ -418,7 +342,7 @@ public class Generated_CornerCases_Test {
     }).invoke()), (Object) false, (Object) ((_FunctionTypes._return_P0_E0<Boolean>) () -> {
       LocalDate last = null;
       {
-        TemporalValue tv = ((TemporalValue) Generated_CornerCases_Test.x1_);
+        TemporalValue tv = (TemporalValue) Generated_CornerCases_Test.x1_;
         LocalDate time = tv.firstSlice().time();
         if (last == null) {
           last = time;
@@ -429,7 +353,7 @@ public class Generated_CornerCases_Test {
         }
       }
       {
-        TemporalValue tv = ((TemporalValue) Generated_CornerCases_Test.x2_);
+        TemporalValue tv = (TemporalValue) Generated_CornerCases_Test.x2_;
         LocalDate time = tv.firstSlice().time();
         if (last == null) {
           last = time;
@@ -444,10 +368,10 @@ public class Generated_CornerCases_Test {
   }
   @Test
   public void Overlap_item6_8266215269024652134() throws Throwable {
-    Assert.assertEquals("Expected: " + (false) + ", but was: " + (((_FunctionTypes._return_P0_E0<Boolean>) () -> {
+    Assert.assertEquals("Expected: " + false + ", but was: " + (((_FunctionTypes._return_P0_E0<Boolean>) () -> {
       LocalDate last = null;
       {
-        TemporalValue tv = ((TemporalValue) Generated_CornerCases_Test.s1_);
+        TemporalValue tv = (TemporalValue) Generated_CornerCases_Test.s1_;
         LocalDate time = tv.firstSlice().time();
         if (last == null) {
           last = time;
@@ -458,7 +382,7 @@ public class Generated_CornerCases_Test {
         }
       }
       {
-        TemporalValue tv = ((TemporalValue) Generated_CornerCases_Test.x2_);
+        TemporalValue tv = (TemporalValue) Generated_CornerCases_Test.x2_;
         LocalDate time = tv.firstSlice().time();
         if (last == null) {
           last = time;
@@ -472,7 +396,7 @@ public class Generated_CornerCases_Test {
     }).invoke()), (Object) false, (Object) ((_FunctionTypes._return_P0_E0<Boolean>) () -> {
       LocalDate last = null;
       {
-        TemporalValue tv = ((TemporalValue) Generated_CornerCases_Test.s1_);
+        TemporalValue tv = (TemporalValue) Generated_CornerCases_Test.s1_;
         LocalDate time = tv.firstSlice().time();
         if (last == null) {
           last = time;
@@ -483,7 +407,7 @@ public class Generated_CornerCases_Test {
         }
       }
       {
-        TemporalValue tv = ((TemporalValue) Generated_CornerCases_Test.x2_);
+        TemporalValue tv = (TemporalValue) Generated_CornerCases_Test.x2_;
         LocalDate time = tv.firstSlice().time();
         if (last == null) {
           last = time;
@@ -498,10 +422,10 @@ public class Generated_CornerCases_Test {
   }
   @Test
   public void Overlap_item7_8266215269024655861() throws Throwable {
-    Assert.assertEquals("Expected: " + (true) + ", but was: " + (((_FunctionTypes._return_P0_E0<Boolean>) () -> {
+    Assert.assertEquals("Expected: " + true + ", but was: " + (((_FunctionTypes._return_P0_E0<Boolean>) () -> {
       LocalDate last = null;
       {
-        TemporalValue tv = ((TemporalValue) Generated_CornerCases_Test.s1_);
+        TemporalValue tv = (TemporalValue) Generated_CornerCases_Test.s1_;
         LocalDate time = tv.firstSlice().time();
         if (last == null) {
           last = time;
@@ -512,7 +436,7 @@ public class Generated_CornerCases_Test {
         }
       }
       {
-        TemporalValue tv = ((TemporalValue) Generated_CornerCases_Test.s2_);
+        TemporalValue tv = (TemporalValue) Generated_CornerCases_Test.s2_;
         LocalDate time = tv.firstSlice().time();
         if (last == null) {
           last = time;
@@ -523,7 +447,7 @@ public class Generated_CornerCases_Test {
         }
       }
       {
-        TemporalValue tv = ((TemporalValue) Generated_CornerCases_Test.s2_);
+        TemporalValue tv = (TemporalValue) Generated_CornerCases_Test.s2_;
         LocalDate time = tv.firstSlice().time();
         if (last == null) {
           last = time;
@@ -534,7 +458,7 @@ public class Generated_CornerCases_Test {
         }
       }
       {
-        TemporalValue tv = ((TemporalValue) Generated_CornerCases_Test.s2_);
+        TemporalValue tv = (TemporalValue) Generated_CornerCases_Test.s2_;
         LocalDate time = tv.firstSlice().time();
         if (last == null) {
           last = time;
@@ -548,7 +472,7 @@ public class Generated_CornerCases_Test {
     }).invoke()), (Object) true, (Object) ((_FunctionTypes._return_P0_E0<Boolean>) () -> {
       LocalDate last = null;
       {
-        TemporalValue tv = ((TemporalValue) Generated_CornerCases_Test.s1_);
+        TemporalValue tv = (TemporalValue) Generated_CornerCases_Test.s1_;
         LocalDate time = tv.firstSlice().time();
         if (last == null) {
           last = time;
@@ -559,7 +483,7 @@ public class Generated_CornerCases_Test {
         }
       }
       {
-        TemporalValue tv = ((TemporalValue) Generated_CornerCases_Test.s2_);
+        TemporalValue tv = (TemporalValue) Generated_CornerCases_Test.s2_;
         LocalDate time = tv.firstSlice().time();
         if (last == null) {
           last = time;
@@ -570,7 +494,7 @@ public class Generated_CornerCases_Test {
         }
       }
       {
-        TemporalValue tv = ((TemporalValue) Generated_CornerCases_Test.s2_);
+        TemporalValue tv = (TemporalValue) Generated_CornerCases_Test.s2_;
         LocalDate time = tv.firstSlice().time();
         if (last == null) {
           last = time;
@@ -581,7 +505,7 @@ public class Generated_CornerCases_Test {
         }
       }
       {
-        TemporalValue tv = ((TemporalValue) Generated_CornerCases_Test.s2_);
+        TemporalValue tv = (TemporalValue) Generated_CornerCases_Test.s2_;
         LocalDate time = tv.firstSlice().time();
         if (last == null) {
           last = time;
@@ -596,10 +520,10 @@ public class Generated_CornerCases_Test {
   }
   @Test
   public void Overlap_item8_8266215269024669220() throws Throwable {
-    Assert.assertEquals("Expected: " + (true) + ", but was: " + (((_FunctionTypes._return_P0_E0<Boolean>) () -> {
+    Assert.assertEquals("Expected: " + true + ", but was: " + (((_FunctionTypes._return_P0_E0<Boolean>) () -> {
       LocalDate last = null;
       {
-        TemporalValue tv = ((TemporalValue) Generated_CornerCases_Test.s1_);
+        TemporalValue tv = (TemporalValue) Generated_CornerCases_Test.s1_;
         LocalDate time = tv.firstSlice().time();
         if (last == null) {
           last = time;
@@ -610,7 +534,7 @@ public class Generated_CornerCases_Test {
         }
       }
       {
-        TemporalValue tv = ((TemporalValue) Generated_CornerCases_Test.s2_);
+        TemporalValue tv = (TemporalValue) Generated_CornerCases_Test.s2_;
         LocalDate time = tv.firstSlice().time();
         if (last == null) {
           last = time;
@@ -621,7 +545,7 @@ public class Generated_CornerCases_Test {
         }
       }
       {
-        TemporalValue tv = ((TemporalValue) Generated_CornerCases_Test.s2_);
+        TemporalValue tv = (TemporalValue) Generated_CornerCases_Test.s2_;
         LocalDate time = tv.firstSlice().time();
         if (last == null) {
           last = time;
@@ -632,11 +556,7 @@ public class Generated_CornerCases_Test {
         }
       }
       {
-        TemporalValue tv = ((TemporalValue) ((_FunctionTypes._return_P0_E0<TemporalValue>) () -> {
-          TemporalValue value = new TemporalValue();
-          value = value.slice(((LocalDate) Generated_CornerCases_Test.date01_), true);
-          return value;
-        }).invoke());
+        TemporalValue tv = (TemporalValue) new TemporalValue().slice((LocalDate) Generated_CornerCases_Test.date01_, true);
         LocalDate time = tv.firstSlice().time();
         if (last == null) {
           last = time;
@@ -650,7 +570,7 @@ public class Generated_CornerCases_Test {
     }).invoke()), (Object) true, (Object) ((_FunctionTypes._return_P0_E0<Boolean>) () -> {
       LocalDate last = null;
       {
-        TemporalValue tv = ((TemporalValue) Generated_CornerCases_Test.s1_);
+        TemporalValue tv = (TemporalValue) Generated_CornerCases_Test.s1_;
         LocalDate time = tv.firstSlice().time();
         if (last == null) {
           last = time;
@@ -661,7 +581,7 @@ public class Generated_CornerCases_Test {
         }
       }
       {
-        TemporalValue tv = ((TemporalValue) Generated_CornerCases_Test.s2_);
+        TemporalValue tv = (TemporalValue) Generated_CornerCases_Test.s2_;
         LocalDate time = tv.firstSlice().time();
         if (last == null) {
           last = time;
@@ -672,7 +592,7 @@ public class Generated_CornerCases_Test {
         }
       }
       {
-        TemporalValue tv = ((TemporalValue) Generated_CornerCases_Test.s2_);
+        TemporalValue tv = (TemporalValue) Generated_CornerCases_Test.s2_;
         LocalDate time = tv.firstSlice().time();
         if (last == null) {
           last = time;
@@ -683,11 +603,7 @@ public class Generated_CornerCases_Test {
         }
       }
       {
-        TemporalValue tv = ((TemporalValue) ((_FunctionTypes._return_P0_E0<TemporalValue>) () -> {
-          TemporalValue value = new TemporalValue();
-          value = value.slice(((LocalDate) Generated_CornerCases_Test.date01_), true);
-          return value;
-        }).invoke());
+        TemporalValue tv = (TemporalValue) new TemporalValue().slice((LocalDate) Generated_CornerCases_Test.date01_, true);
         LocalDate time = tv.firstSlice().time();
         if (last == null) {
           last = time;
@@ -702,147 +618,63 @@ public class Generated_CornerCases_Test {
   }
   @Test
   public void UseSliceDEfaultValue_item0_3955961678040880124() throws Throwable {
-    Assert.assertEquals("Expected: " + (((_FunctionTypes._return_P0_E0<TemporalValue>) () -> {
-      TemporalValue value = new TemporalValue();
-      value = value.slice(((LocalDate) Generated_CornerCases_Test.date01_), ((Number) new BigInteger("10")));
-      value = value.slice(((LocalDate) Generated_CornerCases_Test.date02_), ((Number) new BigInteger("20")));
-      return value;
-    }).invoke()) + ", but was: " + (TemporalValueHelper.perform(Generated_CornerCases_Test.x1_, Generated_CornerCases_Test.x2_, ((_FunctionTypes._return_P2_E0<Number, Object, Object>) (Object l, Object r) -> TemporalOps.plus(l, r)), ((Number) new BigInteger("0")))), (Object) ((_FunctionTypes._return_P0_E0<TemporalValue>) () -> {
-      TemporalValue value = new TemporalValue();
-      value = value.slice(((LocalDate) Generated_CornerCases_Test.date01_), ((Number) new BigInteger("10")));
-      value = value.slice(((LocalDate) Generated_CornerCases_Test.date02_), ((Number) new BigInteger("20")));
-      return value;
-    }).invoke(), (Object) TemporalValueHelper.perform(Generated_CornerCases_Test.x1_, Generated_CornerCases_Test.x2_, ((_FunctionTypes._return_P2_E0<Number, Object, Object>) (Object l, Object r) -> TemporalOps.plus(l, r)), ((Number) new BigInteger("0"))));
+    Assert.assertEquals("Expected: " + new TemporalValue().slice((LocalDate) Generated_CornerCases_Test.date01_, (Number) new BigInteger("10")).slice((LocalDate) Generated_CornerCases_Test.date02_, (Number) new BigInteger("20")) + ", but was: " + TemporalValueHelper.perform(Generated_CornerCases_Test.x1_, Generated_CornerCases_Test.x2_, (Object l, Object r) -> TemporalOps.plus(l, r), (Number) new BigInteger("0")), (Object) new TemporalValue().slice((LocalDate) Generated_CornerCases_Test.date01_, (Number) new BigInteger("10")).slice((LocalDate) Generated_CornerCases_Test.date02_, (Number) new BigInteger("20")), (Object) TemporalValueHelper.perform(Generated_CornerCases_Test.x1_, Generated_CornerCases_Test.x2_, (Object l, Object r) -> TemporalOps.plus(l, r), (Number) new BigInteger("0")));
   }
   @Test
   public void UseSliceDEfaultValue_item1_3955961678040980932() throws Throwable {
-    Assert.assertEquals("Expected: " + (((_FunctionTypes._return_P0_E0<TemporalValue>) () -> {
-      TemporalValue value = new TemporalValue();
-      value = value.slice(((LocalDate) Generated_CornerCases_Test.date01_), ((Number) new BigInteger("20")));
-      return value;
-    }).invoke()) + ", but was: " + (TemporalValueHelper.perform(Generated_CornerCases_Test.x1_, Generated_CornerCases_Test.x2_, ((_FunctionTypes._return_P2_E0<Number, Object, Object>) (Object l, Object r) -> TemporalOps.plus(l, r)), ((Number) new BigInteger("10")))), (Object) ((_FunctionTypes._return_P0_E0<TemporalValue>) () -> {
-      TemporalValue value = new TemporalValue();
-      value = value.slice(((LocalDate) Generated_CornerCases_Test.date01_), ((Number) new BigInteger("20")));
-      return value;
-    }).invoke(), (Object) TemporalValueHelper.perform(Generated_CornerCases_Test.x1_, Generated_CornerCases_Test.x2_, ((_FunctionTypes._return_P2_E0<Number, Object, Object>) (Object l, Object r) -> TemporalOps.plus(l, r)), ((Number) new BigInteger("10"))));
+    Assert.assertEquals("Expected: " + new TemporalValue().slice((LocalDate) Generated_CornerCases_Test.date01_, (Number) new BigInteger("20")) + ", but was: " + TemporalValueHelper.perform(Generated_CornerCases_Test.x1_, Generated_CornerCases_Test.x2_, (Object l, Object r) -> TemporalOps.plus(l, r), (Number) new BigInteger("10")), (Object) new TemporalValue().slice((LocalDate) Generated_CornerCases_Test.date01_, (Number) new BigInteger("20")), (Object) TemporalValueHelper.perform(Generated_CornerCases_Test.x1_, Generated_CornerCases_Test.x2_, (Object l, Object r) -> TemporalOps.plus(l, r), (Number) new BigInteger("10")));
   }
   @Test
   public void UseSliceDEfaultValue_item2_3955961678040999287() throws Throwable {
-    Assert.assertEquals("Expected: " + (((_FunctionTypes._return_P0_E0<TemporalValue>) () -> {
-      TemporalValue value = new TemporalValue();
-      value = value.slice(((LocalDate) Generated_CornerCases_Test.date01_), ((Number) new BigInteger("30")));
-      return value;
-    }).invoke()) + ", but was: " + (TemporalValueHelper.perform(TemporalValueHelper.perform(Generated_CornerCases_Test.x1_, Generated_CornerCases_Test.x2_, ((_FunctionTypes._return_P2_E0<Number, Object, Object>) (Object l, Object r) -> TemporalOps.plus(l, r)), ((Number) new BigInteger("10"))), Generated_CornerCases_Test.x2_, ((_FunctionTypes._return_P2_E0<Number, Object, Object>) (Object l, Object r) -> TemporalOps.plus(l, r)), ((Number) new BigInteger("10")))), (Object) ((_FunctionTypes._return_P0_E0<TemporalValue>) () -> {
-      TemporalValue value = new TemporalValue();
-      value = value.slice(((LocalDate) Generated_CornerCases_Test.date01_), ((Number) new BigInteger("30")));
-      return value;
-    }).invoke(), (Object) TemporalValueHelper.perform(TemporalValueHelper.perform(Generated_CornerCases_Test.x1_, Generated_CornerCases_Test.x2_, ((_FunctionTypes._return_P2_E0<Number, Object, Object>) (Object l, Object r) -> TemporalOps.plus(l, r)), ((Number) new BigInteger("10"))), Generated_CornerCases_Test.x2_, ((_FunctionTypes._return_P2_E0<Number, Object, Object>) (Object l, Object r) -> TemporalOps.plus(l, r)), ((Number) new BigInteger("10"))));
+    Assert.assertEquals("Expected: " + new TemporalValue().slice((LocalDate) Generated_CornerCases_Test.date01_, (Number) new BigInteger("30")) + ", but was: " + TemporalValueHelper.perform(TemporalValueHelper.perform(Generated_CornerCases_Test.x1_, Generated_CornerCases_Test.x2_, (Object l, Object r) -> TemporalOps.plus(l, r), (Number) new BigInteger("10")), Generated_CornerCases_Test.x2_, (Object l, Object r) -> TemporalOps.plus(l, r), (Number) new BigInteger("10")), (Object) new TemporalValue().slice((LocalDate) Generated_CornerCases_Test.date01_, (Number) new BigInteger("30")), (Object) TemporalValueHelper.perform(TemporalValueHelper.perform(Generated_CornerCases_Test.x1_, Generated_CornerCases_Test.x2_, (Object l, Object r) -> TemporalOps.plus(l, r), (Number) new BigInteger("10")), Generated_CornerCases_Test.x2_, (Object l, Object r) -> TemporalOps.plus(l, r), (Number) new BigInteger("10")));
   }
   @Test
   public void UseSliceDEfaultValue_item3_3955961678041019788() throws Throwable {
-    Assert.assertEquals("Expected: " + (((_FunctionTypes._return_P0_E0<TemporalValue>) () -> {
-      TemporalValue value = new TemporalValue();
-      value = value.slice(((LocalDate) Generated_CornerCases_Test.date01_), ((Number) new BigInteger("22")));
-      return value;
-    }).invoke()) + ", but was: " + (TemporalValueHelper.perform(TemporalValueHelper.perform(Generated_CornerCases_Test.x1_, Generated_CornerCases_Test.x2_, ((_FunctionTypes._return_P2_E0<Number, Object, Object>) (Object l, Object r) -> TemporalOps.plus(l, r)), ((Number) new BigInteger("10"))), ((Number) new BigInteger("2")), ((_FunctionTypes._return_P2_E0<Number, Object, Object>) (Object l, Object r) -> TemporalOps.plus(l, r)), ((Number) new BigInteger("10")))), (Object) ((_FunctionTypes._return_P0_E0<TemporalValue>) () -> {
-      TemporalValue value = new TemporalValue();
-      value = value.slice(((LocalDate) Generated_CornerCases_Test.date01_), ((Number) new BigInteger("22")));
-      return value;
-    }).invoke(), (Object) TemporalValueHelper.perform(TemporalValueHelper.perform(Generated_CornerCases_Test.x1_, Generated_CornerCases_Test.x2_, ((_FunctionTypes._return_P2_E0<Number, Object, Object>) (Object l, Object r) -> TemporalOps.plus(l, r)), ((Number) new BigInteger("10"))), ((Number) new BigInteger("2")), ((_FunctionTypes._return_P2_E0<Number, Object, Object>) (Object l, Object r) -> TemporalOps.plus(l, r)), ((Number) new BigInteger("10"))));
+    Assert.assertEquals("Expected: " + new TemporalValue().slice((LocalDate) Generated_CornerCases_Test.date01_, (Number) new BigInteger("22")) + ", but was: " + TemporalValueHelper.perform(TemporalValueHelper.perform(Generated_CornerCases_Test.x1_, Generated_CornerCases_Test.x2_, (Object l, Object r) -> TemporalOps.plus(l, r), (Number) new BigInteger("10")), (Number) new BigInteger("2"), (Object l, Object r) -> TemporalOps.plus(l, r), (Number) new BigInteger("10")), (Object) new TemporalValue().slice((LocalDate) Generated_CornerCases_Test.date01_, (Number) new BigInteger("22")), (Object) TemporalValueHelper.perform(TemporalValueHelper.perform(Generated_CornerCases_Test.x1_, Generated_CornerCases_Test.x2_, (Object l, Object r) -> TemporalOps.plus(l, r), (Number) new BigInteger("10")), (Number) new BigInteger("2"), (Object l, Object r) -> TemporalOps.plus(l, r), (Number) new BigInteger("10")));
   }
-  public static final TemporalValue salary_ = new TemporalValue(LocalDate.MIN, ((Number) new BigInteger("1000")));
+  public static final TemporalValue salary_ = new TemporalValue(LocalDate.MIN, (Number) new BigInteger("1000"));
   public static final TemporalValue hasChild1_ = ((_FunctionTypes._return_P0_E0<TemporalValue>) () -> {
-    TemporalValue ctxValue = ((TemporalValue) new TemporalValue(LocalDate.MIN, false));
+    TemporalValue ctxValue = (TemporalValue) new TemporalValue(LocalDate.MIN, false);
     TemporalValue newValue = ctxValue.copy();
     newValue.slices().add(new SliceValue(newValue, (LocalDate) LocalDate.of(2000, 1, 1), true));
     return TemporalOps.joinSlices(newValue);
   }).invoke();
-  public static final TemporalValue kindergeld1_ = TemporalValueHelper.perform(TemporalValueHelper.doWithTwoTemporals(Generated_CornerCases_Test.salary_, Generated_CornerCases_Test.hasChild1_, ((_FunctionTypes._return_P2_E0<Object, Object, Object>) (Object l, Object r) -> {
+  public static final TemporalValue kindergeld1_ = TemporalValueHelper.perform(TemporalValueHelper.doWithTwoTemporals(Generated_CornerCases_Test.salary_, Generated_CornerCases_Test.hasChild1_, (Object l, Object r) -> {
     if (r instanceof Boolean && ((Boolean) r).booleanValue()) {
       return l;
     }
-    return ((Number) new BigInteger("0"));
-  }), null), ((Number) (new BigDecimal("0.10").setScale(2, RoundingMode.DOWN))), ((_FunctionTypes._return_P2_E0<Number, Object, Object>) (Object l, Object r) -> TemporalOps.mul(l, r)), null);
-  public static final TemporalValue hasChild2_ = ((_FunctionTypes._return_P0_E0<TemporalValue>) () -> {
-    TemporalValue value = new TemporalValue();
-    value = value.slice(((LocalDate) LocalDate.MIN), false);
-    value = value.slice(((LocalDate) LocalDate.of(2004, 1, 1)), true);
-    value = value.slice(((LocalDate) LocalDate.of(2010, 1, 1)), false);
-    return value;
-  }).invoke();
-  public static final TemporalValue kindergeld2_ = TemporalValueHelper.perform(TemporalValueHelper.doWithTwoTemporals(Generated_CornerCases_Test.salary_, Generated_CornerCases_Test.hasChild2_, ((_FunctionTypes._return_P2_E0<Object, Object, Object>) (Object l, Object r) -> {
+    return (Number) new BigInteger("0");
+  }, null), (Number) new BigDecimal("0.10").setScale(2, RoundingMode.DOWN), (Object l, Object r) -> TemporalOps.mul(l, r), null);
+  public static final TemporalValue hasChild2_ = new TemporalValue().slice((LocalDate) LocalDate.MIN, false).slice((LocalDate) LocalDate.of(2004, 1, 1), true).slice((LocalDate) LocalDate.of(2010, 1, 1), false);
+  public static final TemporalValue kindergeld2_ = TemporalValueHelper.perform(TemporalValueHelper.doWithTwoTemporals(Generated_CornerCases_Test.salary_, Generated_CornerCases_Test.hasChild2_, (Object l, Object r) -> {
     if (r instanceof Boolean && ((Boolean) r).booleanValue()) {
       return l;
     }
-    return ((Number) new BigInteger("0"));
-  }), null), ((Number) (new BigDecimal("0.10").setScale(2, RoundingMode.DOWN))), ((_FunctionTypes._return_P2_E0<Number, Object, Object>) (Object l, Object r) -> TemporalOps.mul(l, r)), null);
-  public static final TemporalValue kindergeld3_ = TemporalValueHelper.perform(TemporalValueHelper.doWithTwoTemporals(Generated_CornerCases_Test.salary_, TemporalValueHelper.perform(Generated_CornerCases_Test.hasChild1_, Generated_CornerCases_Test.hasChild2_, ((_FunctionTypes._return_P2_E0<Boolean, Object, Object>) (Object l, Object r) -> TemporalOps.or(l, r)), null), ((_FunctionTypes._return_P2_E0<Object, Object, Object>) (Object l, Object r) -> {
+    return (Number) new BigInteger("0");
+  }, null), (Number) new BigDecimal("0.10").setScale(2, RoundingMode.DOWN), (Object l, Object r) -> TemporalOps.mul(l, r), null);
+  public static final TemporalValue kindergeld3_ = TemporalValueHelper.perform(TemporalValueHelper.doWithTwoTemporals(Generated_CornerCases_Test.salary_, TemporalValueHelper.perform(Generated_CornerCases_Test.hasChild1_, Generated_CornerCases_Test.hasChild2_, (Object l, Object r) -> TemporalOps.or(l, r), null), (Object l, Object r) -> {
     if (r instanceof Boolean && ((Boolean) r).booleanValue()) {
       return l;
     }
-    return ((Number) new BigInteger("0"));
-  }), null), ((Number) (new BigDecimal("0.10").setScale(2, RoundingMode.DOWN))), ((_FunctionTypes._return_P2_E0<Number, Object, Object>) (Object l, Object r) -> TemporalOps.mul(l, r)), null);
+    return (Number) new BigInteger("0");
+  }, null), (Number) new BigDecimal("0.10").setScale(2, RoundingMode.DOWN), (Object l, Object r) -> TemporalOps.mul(l, r), null);
   @Test
   public void TestMasking_item0_7638810057890682155() throws Throwable {
-    Assert.assertEquals("Expected: " + (((_FunctionTypes._return_P0_E0<TemporalValue>) () -> {
-      TemporalValue value = new TemporalValue();
-      value = value.slice(((LocalDate) LocalDate.MIN), ((Number) (new BigDecimal("0.00").setScale(2, RoundingMode.DOWN))));
-      value = value.slice(((LocalDate) LocalDate.of(2000, 1, 1)), ((Number) (new BigDecimal("100.00").setScale(2, RoundingMode.DOWN))));
-      return value;
-    }).invoke()) + ", but was: " + (Generated_CornerCases_Test.kindergeld1_), (Object) ((_FunctionTypes._return_P0_E0<TemporalValue>) () -> {
-      TemporalValue value = new TemporalValue();
-      value = value.slice(((LocalDate) LocalDate.MIN), ((Number) (new BigDecimal("0.00").setScale(2, RoundingMode.DOWN))));
-      value = value.slice(((LocalDate) LocalDate.of(2000, 1, 1)), ((Number) (new BigDecimal("100.00").setScale(2, RoundingMode.DOWN))));
-      return value;
-    }).invoke(), (Object) Generated_CornerCases_Test.kindergeld1_);
+    Assert.assertEquals("Expected: " + new TemporalValue().slice((LocalDate) LocalDate.MIN, (Number) new BigDecimal("0.00").setScale(2, RoundingMode.DOWN)).slice((LocalDate) LocalDate.of(2000, 1, 1), (Number) new BigDecimal("100.00").setScale(2, RoundingMode.DOWN)) + ", but was: " + Generated_CornerCases_Test.kindergeld1_, (Object) new TemporalValue().slice((LocalDate) LocalDate.MIN, (Number) new BigDecimal("0.00").setScale(2, RoundingMode.DOWN)).slice((LocalDate) LocalDate.of(2000, 1, 1), (Number) new BigDecimal("100.00").setScale(2, RoundingMode.DOWN)), (Object) Generated_CornerCases_Test.kindergeld1_);
   }
   @Test
   public void TestMasking_item1_7638810057890998778() throws Throwable {
-    Assert.assertEquals("Expected: " + (((_FunctionTypes._return_P0_E0<TemporalValue>) () -> {
-      TemporalValue value = new TemporalValue();
-      value = value.slice(((LocalDate) LocalDate.MIN), ((Number) (new BigDecimal("0.00").setScale(2, RoundingMode.DOWN))));
-      value = value.slice(((LocalDate) LocalDate.of(2004, 1, 1)), ((Number) (new BigDecimal("100.00").setScale(2, RoundingMode.DOWN))));
-      value = value.slice(((LocalDate) LocalDate.of(2010, 1, 1)), ((Number) (new BigDecimal("0.00").setScale(2, RoundingMode.DOWN))));
-      return value;
-    }).invoke()) + ", but was: " + (Generated_CornerCases_Test.kindergeld2_), (Object) ((_FunctionTypes._return_P0_E0<TemporalValue>) () -> {
-      TemporalValue value = new TemporalValue();
-      value = value.slice(((LocalDate) LocalDate.MIN), ((Number) (new BigDecimal("0.00").setScale(2, RoundingMode.DOWN))));
-      value = value.slice(((LocalDate) LocalDate.of(2004, 1, 1)), ((Number) (new BigDecimal("100.00").setScale(2, RoundingMode.DOWN))));
-      value = value.slice(((LocalDate) LocalDate.of(2010, 1, 1)), ((Number) (new BigDecimal("0.00").setScale(2, RoundingMode.DOWN))));
-      return value;
-    }).invoke(), (Object) Generated_CornerCases_Test.kindergeld2_);
+    Assert.assertEquals("Expected: " + new TemporalValue().slice((LocalDate) LocalDate.MIN, (Number) new BigDecimal("0.00").setScale(2, RoundingMode.DOWN)).slice((LocalDate) LocalDate.of(2004, 1, 1), (Number) new BigDecimal("100.00").setScale(2, RoundingMode.DOWN)).slice((LocalDate) LocalDate.of(2010, 1, 1), (Number) new BigDecimal("0.00").setScale(2, RoundingMode.DOWN)) + ", but was: " + Generated_CornerCases_Test.kindergeld2_, (Object) new TemporalValue().slice((LocalDate) LocalDate.MIN, (Number) new BigDecimal("0.00").setScale(2, RoundingMode.DOWN)).slice((LocalDate) LocalDate.of(2004, 1, 1), (Number) new BigDecimal("100.00").setScale(2, RoundingMode.DOWN)).slice((LocalDate) LocalDate.of(2010, 1, 1), (Number) new BigDecimal("0.00").setScale(2, RoundingMode.DOWN)), (Object) Generated_CornerCases_Test.kindergeld2_);
   }
   @Test
   public void TestMasking_item2_7638810057891085619() throws Throwable {
-    Assert.assertEquals("Expected: " + (((_FunctionTypes._return_P0_E0<TemporalValue>) () -> {
-      TemporalValue value = new TemporalValue();
-      value = value.slice(((LocalDate) LocalDate.MIN), ((Number) (new BigDecimal("0.00").setScale(2, RoundingMode.DOWN))));
-      value = value.slice(((LocalDate) LocalDate.of(2000, 1, 1)), ((Number) (new BigDecimal("100.00").setScale(2, RoundingMode.DOWN))));
-      return value;
-    }).invoke()) + ", but was: " + (Generated_CornerCases_Test.kindergeld3_), (Object) ((_FunctionTypes._return_P0_E0<TemporalValue>) () -> {
-      TemporalValue value = new TemporalValue();
-      value = value.slice(((LocalDate) LocalDate.MIN), ((Number) (new BigDecimal("0.00").setScale(2, RoundingMode.DOWN))));
-      value = value.slice(((LocalDate) LocalDate.of(2000, 1, 1)), ((Number) (new BigDecimal("100.00").setScale(2, RoundingMode.DOWN))));
-      return value;
-    }).invoke(), (Object) Generated_CornerCases_Test.kindergeld3_);
+    Assert.assertEquals("Expected: " + new TemporalValue().slice((LocalDate) LocalDate.MIN, (Number) new BigDecimal("0.00").setScale(2, RoundingMode.DOWN)).slice((LocalDate) LocalDate.of(2000, 1, 1), (Number) new BigDecimal("100.00").setScale(2, RoundingMode.DOWN)) + ", but was: " + Generated_CornerCases_Test.kindergeld3_, (Object) new TemporalValue().slice((LocalDate) LocalDate.MIN, (Number) new BigDecimal("0.00").setScale(2, RoundingMode.DOWN)).slice((LocalDate) LocalDate.of(2000, 1, 1), (Number) new BigDecimal("100.00").setScale(2, RoundingMode.DOWN)), (Object) Generated_CornerCases_Test.kindergeld3_);
   }
-  public static final TemporalValue salary2_ = ((_FunctionTypes._return_P0_E0<TemporalValue>) () -> {
-    TemporalValue value = new TemporalValue();
-    value = value.slice(((LocalDate) LocalDate.MIN), ((Number) new BigInteger("1000")));
-    value = value.slice(((LocalDate) LocalDate.of(2003, 1, 1)), ((Number) new BigInteger("1100")));
-    value = value.slice(((LocalDate) LocalDate.of(2005, 1, 1)), ((Number) new BigInteger("1200")));
-    return value;
-  }).invoke();
+  public static final TemporalValue salary2_ = new TemporalValue().slice((LocalDate) LocalDate.MIN, (Number) new BigInteger("1000")).slice((LocalDate) LocalDate.of(2003, 1, 1), (Number) new BigInteger("1100")).slice((LocalDate) LocalDate.of(2005, 1, 1), (Number) new BigInteger("1200"));
   public static final Function<ParameterSetWrapper, Number> trueToOne_ = new Function<ParameterSetWrapper, Number>() {
     public Number apply(ParameterSetWrapper param) {
       Boolean it = (Boolean) param.parameters.get(0);
-      return ((_FunctionTypes._return_P0_E0<Number>) () -> {
-        if (it) {
-          return ((Number) new BigInteger("1"));
-        } else {
-          return ((Number) new BigInteger("0"));
-        }
-      }).invoke();
+      return (it ? (Number) new BigInteger("1") : (Number) new BigInteger("0"));
     }
   };
   public static final TemporalValue childCount1_ = ((_FunctionTypes._return_P0_E0<TemporalValue>) () -> {
@@ -867,12 +699,12 @@ public class Generated_CornerCases_Test {
     }
     return result;
   }).invoke();
-  public static final TemporalValue totalChildren_ = TemporalValueHelper.perform(Generated_CornerCases_Test.childCount1_, Generated_CornerCases_Test.childCount2_, ((_FunctionTypes._return_P2_E0<Number, Object, Object>) (Object l, Object r) -> TemporalOps.plus(l, r)), null);
-  public static final TemporalValue kindergeldTotal_ = TemporalValueHelper.perform(Generated_CornerCases_Test.salary2_, (TemporalValueHelper.perform(Generated_CornerCases_Test.totalChildren_, ((Number) (new BigDecimal("0.10").setScale(2, RoundingMode.DOWN))), ((_FunctionTypes._return_P2_E0<Number, Object, Object>) (Object l, Object r) -> TemporalOps.mul(l, r)), null)), ((_FunctionTypes._return_P2_E0<Number, Object, Object>) (Object l, Object r) -> TemporalOps.mul(l, r)), null);
+  public static final TemporalValue totalChildren_ = TemporalValueHelper.perform(Generated_CornerCases_Test.childCount1_, Generated_CornerCases_Test.childCount2_, (Object l, Object r) -> TemporalOps.plus(l, r), null);
+  public static final TemporalValue kindergeldTotal_ = TemporalValueHelper.perform(Generated_CornerCases_Test.salary2_, TemporalValueHelper.perform(Generated_CornerCases_Test.totalChildren_, (Number) new BigDecimal("0.10").setScale(2, RoundingMode.DOWN), (Object l, Object r) -> TemporalOps.mul(l, r), null), (Object l, Object r) -> TemporalOps.mul(l, r), null);
   public static final Function<ParameterSetWrapper, Number> limitKindergeld_ = new Function<ParameterSetWrapper, Number>() {
     public Number apply(ParameterSetWrapper param) {
       Number it = (Number) param.parameters.get(0);
-      return AH.bounds(it, ((Number) (new BigDecimal("0.00").setScale(2, RoundingMode.DOWN))), ((Number) (new BigDecimal("150.00").setScale(2, RoundingMode.DOWN))));
+      return AH.bounds(it, (Number) new BigDecimal("0.00").setScale(2, RoundingMode.DOWN), (Number) new BigDecimal("150.00").setScale(2, RoundingMode.DOWN));
     }
   };
   public static final TemporalValue kindergeldTotalBounded_ = ((_FunctionTypes._return_P0_E0<TemporalValue>) () -> {
@@ -889,152 +721,94 @@ public class Generated_CornerCases_Test {
   @Test
   public void TestChildren2_item0_7638810057892680124() throws Throwable {
     Assert.assertEquals("Expected: " + (((_FunctionTypes._return_P0_E0<TemporalValue>) () -> {
-      TemporalValue ctxValue = ((TemporalValue) ((TemporalValue) new TemporalValue(LocalDate.MIN, ((Number) new BigInteger("0")))));
+      TemporalValue ctxValue = (TemporalValue) new TemporalValue(LocalDate.MIN, (Number) new BigInteger("0"));
       TemporalValue newValue = ctxValue.copy();
-      newValue.slices().add(new SliceValue(newValue, (LocalDate) LocalDate.of(2000, 1, 1), ((Number) new BigInteger("1"))));
+      newValue.slices().add(new SliceValue(newValue, (LocalDate) LocalDate.of(2000, 1, 1), (Number) new BigInteger("1")));
       return TemporalOps.joinSlices(newValue);
-    }).invoke()) + ", but was: " + (Generated_CornerCases_Test.childCount1_), (Object) ((_FunctionTypes._return_P0_E0<TemporalValue>) () -> {
-      TemporalValue ctxValue = ((TemporalValue) ((TemporalValue) new TemporalValue(LocalDate.MIN, ((Number) new BigInteger("0")))));
+    }).invoke()) + ", but was: " + Generated_CornerCases_Test.childCount1_, (Object) ((_FunctionTypes._return_P0_E0<TemporalValue>) () -> {
+      TemporalValue ctxValue = (TemporalValue) new TemporalValue(LocalDate.MIN, (Number) new BigInteger("0"));
       TemporalValue newValue = ctxValue.copy();
-      newValue.slices().add(new SliceValue(newValue, (LocalDate) LocalDate.of(2000, 1, 1), ((Number) new BigInteger("1"))));
+      newValue.slices().add(new SliceValue(newValue, (LocalDate) LocalDate.of(2000, 1, 1), (Number) new BigInteger("1")));
       return TemporalOps.joinSlices(newValue);
     }).invoke(), (Object) Generated_CornerCases_Test.childCount1_);
   }
   @Test
   public void TestChildren2_item1_575162706484443085() throws Throwable {
     Assert.assertEquals("Expected: " + (((_FunctionTypes._return_P0_E0<TemporalValue>) () -> {
-      TemporalValue ctxValue = ((TemporalValue) new _FunctionTypes._return_P0_E0<TemporalValue>() {
+      TemporalValue ctxValue = (TemporalValue) new _FunctionTypes._return_P0_E0<TemporalValue>() {
         public TemporalValue invoke() {
-          TemporalValue ctxValue = ((TemporalValue) ((TemporalValue) new TemporalValue(LocalDate.MIN, ((Number) new BigInteger("0")))));
+          TemporalValue ctxValue = (TemporalValue) new TemporalValue(LocalDate.MIN, (Number) new BigInteger("0"));
           TemporalValue newValue = ctxValue.copy();
-          newValue.slices().add(new SliceValue(newValue, (LocalDate) LocalDate.of(2004, 1, 1), ((Number) new BigInteger("1"))));
+          newValue.slices().add(new SliceValue(newValue, (LocalDate) LocalDate.of(2004, 1, 1), (Number) new BigInteger("1")));
           return TemporalOps.joinSlices(newValue);
         }
-      }.invoke());
+      }.invoke();
       TemporalValue newValue = ctxValue.copy();
-      newValue.slices().add(new SliceValue(newValue, (LocalDate) LocalDate.of(2010, 1, 1), ((Number) new BigInteger("0"))));
+      newValue.slices().add(new SliceValue(newValue, (LocalDate) LocalDate.of(2010, 1, 1), (Number) new BigInteger("0")));
       return TemporalOps.joinSlices(newValue);
-    }).invoke()) + ", but was: " + (Generated_CornerCases_Test.childCount2_), (Object) ((_FunctionTypes._return_P0_E0<TemporalValue>) () -> {
-      TemporalValue ctxValue = ((TemporalValue) new _FunctionTypes._return_P0_E0<TemporalValue>() {
+    }).invoke()) + ", but was: " + Generated_CornerCases_Test.childCount2_, (Object) ((_FunctionTypes._return_P0_E0<TemporalValue>) () -> {
+      TemporalValue ctxValue = (TemporalValue) new _FunctionTypes._return_P0_E0<TemporalValue>() {
         public TemporalValue invoke() {
-          TemporalValue ctxValue = ((TemporalValue) ((TemporalValue) new TemporalValue(LocalDate.MIN, ((Number) new BigInteger("0")))));
+          TemporalValue ctxValue = (TemporalValue) new TemporalValue(LocalDate.MIN, (Number) new BigInteger("0"));
           TemporalValue newValue = ctxValue.copy();
-          newValue.slices().add(new SliceValue(newValue, (LocalDate) LocalDate.of(2004, 1, 1), ((Number) new BigInteger("1"))));
+          newValue.slices().add(new SliceValue(newValue, (LocalDate) LocalDate.of(2004, 1, 1), (Number) new BigInteger("1")));
           return TemporalOps.joinSlices(newValue);
         }
-      }.invoke());
+      }.invoke();
       TemporalValue newValue = ctxValue.copy();
-      newValue.slices().add(new SliceValue(newValue, (LocalDate) LocalDate.of(2010, 1, 1), ((Number) new BigInteger("0"))));
+      newValue.slices().add(new SliceValue(newValue, (LocalDate) LocalDate.of(2010, 1, 1), (Number) new BigInteger("0")));
       return TemporalOps.joinSlices(newValue);
     }).invoke(), (Object) Generated_CornerCases_Test.childCount2_);
   }
   @Test
   public void TestChildren2_item2_575162706484456155() throws Throwable {
-    Assert.assertEquals("Expected: " + (((_FunctionTypes._return_P0_E0<TemporalValue>) () -> {
-      TemporalValue value = new TemporalValue();
-      value = value.slice(((LocalDate) LocalDate.MIN), ((Number) new BigInteger("0")));
-      value = value.slice(((LocalDate) LocalDate.of(2000, 1, 1)), ((Number) new BigInteger("1")));
-      value = value.slice(((LocalDate) LocalDate.of(2004, 1, 1)), ((Number) new BigInteger("2")));
-      value = value.slice(((LocalDate) LocalDate.of(2010, 1, 1)), ((Number) new BigInteger("1")));
-      return value;
-    }).invoke()) + ", but was: " + (Generated_CornerCases_Test.totalChildren_), (Object) ((_FunctionTypes._return_P0_E0<TemporalValue>) () -> {
-      TemporalValue value = new TemporalValue();
-      value = value.slice(((LocalDate) LocalDate.MIN), ((Number) new BigInteger("0")));
-      value = value.slice(((LocalDate) LocalDate.of(2000, 1, 1)), ((Number) new BigInteger("1")));
-      value = value.slice(((LocalDate) LocalDate.of(2004, 1, 1)), ((Number) new BigInteger("2")));
-      value = value.slice(((LocalDate) LocalDate.of(2010, 1, 1)), ((Number) new BigInteger("1")));
-      return value;
-    }).invoke(), (Object) Generated_CornerCases_Test.totalChildren_);
+    Assert.assertEquals("Expected: " + new TemporalValue().slice((LocalDate) LocalDate.MIN, (Number) new BigInteger("0")).slice((LocalDate) LocalDate.of(2000, 1, 1), (Number) new BigInteger("1")).slice((LocalDate) LocalDate.of(2004, 1, 1), (Number) new BigInteger("2")).slice((LocalDate) LocalDate.of(2010, 1, 1), (Number) new BigInteger("1")) + ", but was: " + Generated_CornerCases_Test.totalChildren_, (Object) new TemporalValue().slice((LocalDate) LocalDate.MIN, (Number) new BigInteger("0")).slice((LocalDate) LocalDate.of(2000, 1, 1), (Number) new BigInteger("1")).slice((LocalDate) LocalDate.of(2004, 1, 1), (Number) new BigInteger("2")).slice((LocalDate) LocalDate.of(2010, 1, 1), (Number) new BigInteger("1")), (Object) Generated_CornerCases_Test.totalChildren_);
   }
   @Test
   public void TestChildren2_item3_575162706484514502() throws Throwable {
-    Assert.assertEquals("Expected: " + (((_FunctionTypes._return_P0_E0<TemporalValue>) () -> {
-      TemporalValue value = new TemporalValue();
-      value = value.slice(((LocalDate) LocalDate.MIN), ((Number) (new BigDecimal("0.00").setScale(2, RoundingMode.DOWN))));
-      value = value.slice(((LocalDate) LocalDate.of(2000, 1, 1)), ((Number) (new BigDecimal("100.00").setScale(2, RoundingMode.DOWN))));
-      value = value.slice(((LocalDate) LocalDate.of(2003, 1, 1)), ((Number) (new BigDecimal("110.00").setScale(2, RoundingMode.DOWN))));
-      value = value.slice(((LocalDate) LocalDate.of(2004, 1, 1)), ((Number) (new BigDecimal("220.00").setScale(2, RoundingMode.DOWN))));
-      value = value.slice(((LocalDate) LocalDate.of(2005, 1, 1)), ((Number) (new BigDecimal("240.00").setScale(2, RoundingMode.DOWN))));
-      value = value.slice(((LocalDate) LocalDate.of(2010, 1, 1)), ((Number) (new BigDecimal("120.00").setScale(2, RoundingMode.DOWN))));
-      return value;
-    }).invoke()) + ", but was: " + (Generated_CornerCases_Test.kindergeldTotal_), (Object) ((_FunctionTypes._return_P0_E0<TemporalValue>) () -> {
-      TemporalValue value = new TemporalValue();
-      value = value.slice(((LocalDate) LocalDate.MIN), ((Number) (new BigDecimal("0.00").setScale(2, RoundingMode.DOWN))));
-      value = value.slice(((LocalDate) LocalDate.of(2000, 1, 1)), ((Number) (new BigDecimal("100.00").setScale(2, RoundingMode.DOWN))));
-      value = value.slice(((LocalDate) LocalDate.of(2003, 1, 1)), ((Number) (new BigDecimal("110.00").setScale(2, RoundingMode.DOWN))));
-      value = value.slice(((LocalDate) LocalDate.of(2004, 1, 1)), ((Number) (new BigDecimal("220.00").setScale(2, RoundingMode.DOWN))));
-      value = value.slice(((LocalDate) LocalDate.of(2005, 1, 1)), ((Number) (new BigDecimal("240.00").setScale(2, RoundingMode.DOWN))));
-      value = value.slice(((LocalDate) LocalDate.of(2010, 1, 1)), ((Number) (new BigDecimal("120.00").setScale(2, RoundingMode.DOWN))));
-      return value;
-    }).invoke(), (Object) Generated_CornerCases_Test.kindergeldTotal_);
+    Assert.assertEquals("Expected: " + new TemporalValue().slice((LocalDate) LocalDate.MIN, (Number) new BigDecimal("0.00").setScale(2, RoundingMode.DOWN)).slice((LocalDate) LocalDate.of(2000, 1, 1), (Number) new BigDecimal("100.00").setScale(2, RoundingMode.DOWN)).slice((LocalDate) LocalDate.of(2003, 1, 1), (Number) new BigDecimal("110.00").setScale(2, RoundingMode.DOWN)).slice((LocalDate) LocalDate.of(2004, 1, 1), (Number) new BigDecimal("220.00").setScale(2, RoundingMode.DOWN)).slice((LocalDate) LocalDate.of(2005, 1, 1), (Number) new BigDecimal("240.00").setScale(2, RoundingMode.DOWN)).slice((LocalDate) LocalDate.of(2010, 1, 1), (Number) new BigDecimal("120.00").setScale(2, RoundingMode.DOWN)) + ", but was: " + Generated_CornerCases_Test.kindergeldTotal_, (Object) new TemporalValue().slice((LocalDate) LocalDate.MIN, (Number) new BigDecimal("0.00").setScale(2, RoundingMode.DOWN)).slice((LocalDate) LocalDate.of(2000, 1, 1), (Number) new BigDecimal("100.00").setScale(2, RoundingMode.DOWN)).slice((LocalDate) LocalDate.of(2003, 1, 1), (Number) new BigDecimal("110.00").setScale(2, RoundingMode.DOWN)).slice((LocalDate) LocalDate.of(2004, 1, 1), (Number) new BigDecimal("220.00").setScale(2, RoundingMode.DOWN)).slice((LocalDate) LocalDate.of(2005, 1, 1), (Number) new BigDecimal("240.00").setScale(2, RoundingMode.DOWN)).slice((LocalDate) LocalDate.of(2010, 1, 1), (Number) new BigDecimal("120.00").setScale(2, RoundingMode.DOWN)), (Object) Generated_CornerCases_Test.kindergeldTotal_);
   }
   @Test
   public void TestChildren2_item4_575162706485770135() throws Throwable {
-    Assert.assertEquals("Expected: " + (((_FunctionTypes._return_P0_E0<TemporalValue>) () -> {
-      TemporalValue value = new TemporalValue();
-      value = value.slice(((LocalDate) LocalDate.MIN), ((Number) (new BigDecimal("0.00").setScale(2, RoundingMode.DOWN))));
-      value = value.slice(((LocalDate) LocalDate.of(2000, 1, 1)), ((Number) (new BigDecimal("100.00").setScale(2, RoundingMode.DOWN))));
-      value = value.slice(((LocalDate) LocalDate.of(2003, 1, 1)), ((Number) (new BigDecimal("110.00").setScale(2, RoundingMode.DOWN))));
-      value = value.slice(((LocalDate) LocalDate.of(2004, 1, 1)), ((Number) (new BigDecimal("150.00").setScale(2, RoundingMode.DOWN))));
-      value = value.slice(((LocalDate) LocalDate.of(2010, 1, 1)), ((Number) (new BigDecimal("120.00").setScale(2, RoundingMode.DOWN))));
-      return value;
-    }).invoke()) + ", but was: " + (Generated_CornerCases_Test.kindergeldTotalBounded_), (Object) ((_FunctionTypes._return_P0_E0<TemporalValue>) () -> {
-      TemporalValue value = new TemporalValue();
-      value = value.slice(((LocalDate) LocalDate.MIN), ((Number) (new BigDecimal("0.00").setScale(2, RoundingMode.DOWN))));
-      value = value.slice(((LocalDate) LocalDate.of(2000, 1, 1)), ((Number) (new BigDecimal("100.00").setScale(2, RoundingMode.DOWN))));
-      value = value.slice(((LocalDate) LocalDate.of(2003, 1, 1)), ((Number) (new BigDecimal("110.00").setScale(2, RoundingMode.DOWN))));
-      value = value.slice(((LocalDate) LocalDate.of(2004, 1, 1)), ((Number) (new BigDecimal("150.00").setScale(2, RoundingMode.DOWN))));
-      value = value.slice(((LocalDate) LocalDate.of(2010, 1, 1)), ((Number) (new BigDecimal("120.00").setScale(2, RoundingMode.DOWN))));
-      return value;
-    }).invoke(), (Object) Generated_CornerCases_Test.kindergeldTotalBounded_);
+    Assert.assertEquals("Expected: " + new TemporalValue().slice((LocalDate) LocalDate.MIN, (Number) new BigDecimal("0.00").setScale(2, RoundingMode.DOWN)).slice((LocalDate) LocalDate.of(2000, 1, 1), (Number) new BigDecimal("100.00").setScale(2, RoundingMode.DOWN)).slice((LocalDate) LocalDate.of(2003, 1, 1), (Number) new BigDecimal("110.00").setScale(2, RoundingMode.DOWN)).slice((LocalDate) LocalDate.of(2004, 1, 1), (Number) new BigDecimal("150.00").setScale(2, RoundingMode.DOWN)).slice((LocalDate) LocalDate.of(2010, 1, 1), (Number) new BigDecimal("120.00").setScale(2, RoundingMode.DOWN)) + ", but was: " + Generated_CornerCases_Test.kindergeldTotalBounded_, (Object) new TemporalValue().slice((LocalDate) LocalDate.MIN, (Number) new BigDecimal("0.00").setScale(2, RoundingMode.DOWN)).slice((LocalDate) LocalDate.of(2000, 1, 1), (Number) new BigDecimal("100.00").setScale(2, RoundingMode.DOWN)).slice((LocalDate) LocalDate.of(2003, 1, 1), (Number) new BigDecimal("110.00").setScale(2, RoundingMode.DOWN)).slice((LocalDate) LocalDate.of(2004, 1, 1), (Number) new BigDecimal("150.00").setScale(2, RoundingMode.DOWN)).slice((LocalDate) LocalDate.of(2010, 1, 1), (Number) new BigDecimal("120.00").setScale(2, RoundingMode.DOWN)), (Object) Generated_CornerCases_Test.kindergeldTotalBounded_);
   }
-  public static final TemporalValue toReduce_ = ((_FunctionTypes._return_P0_E0<TemporalValue>) () -> {
-    TemporalValue value = new TemporalValue();
-    value = value.slice(((LocalDate) LocalDate.MIN), ((Number) (new BigDecimal("0.00").setScale(2, RoundingMode.DOWN))));
-    value = value.slice(((LocalDate) LocalDate.of(2000, 1, 1)), ((Number) (new BigDecimal("100.00").setScale(2, RoundingMode.DOWN))));
-    value = value.slice(((LocalDate) LocalDate.of(2000, 2, 1)), ((Number) (new BigDecimal("110.00").setScale(2, RoundingMode.DOWN))));
-    value = value.slice(((LocalDate) LocalDate.of(2000, 6, 1)), ((Number) (new BigDecimal("220.00").setScale(2, RoundingMode.DOWN))));
-    value = value.slice(((LocalDate) LocalDate.of(2004, 1, 1)), ((Number) (new BigDecimal("240.00").setScale(2, RoundingMode.DOWN))));
-    value = value.slice(((LocalDate) LocalDate.of(2004, 1, 5)), ((Number) (new BigDecimal("120.00").setScale(2, RoundingMode.DOWN))));
-    value = value.slice(((LocalDate) LocalDate.of(2004, 1, 7)), ((Number) (new BigDecimal("130.00").setScale(2, RoundingMode.DOWN))));
-    return value;
-  }).invoke();
+  public static final TemporalValue toReduce_ = new TemporalValue().slice((LocalDate) LocalDate.MIN, (Number) new BigDecimal("0.00").setScale(2, RoundingMode.DOWN)).slice((LocalDate) LocalDate.of(2000, 1, 1), (Number) new BigDecimal("100.00").setScale(2, RoundingMode.DOWN)).slice((LocalDate) LocalDate.of(2000, 2, 1), (Number) new BigDecimal("110.00").setScale(2, RoundingMode.DOWN)).slice((LocalDate) LocalDate.of(2000, 6, 1), (Number) new BigDecimal("220.00").setScale(2, RoundingMode.DOWN)).slice((LocalDate) LocalDate.of(2004, 1, 1), (Number) new BigDecimal("240.00").setScale(2, RoundingMode.DOWN)).slice((LocalDate) LocalDate.of(2004, 1, 5), (Number) new BigDecimal("120.00").setScale(2, RoundingMode.DOWN)).slice((LocalDate) LocalDate.of(2004, 1, 7), (Number) new BigDecimal("130.00").setScale(2, RoundingMode.DOWN));
   public static final Number reduceFirstYear_ = ((_FunctionTypes._return_P0_E0<Number>) () -> {
     TemporalValue tv = (TemporalValue) Generated_CornerCases_Test.toReduce_;
-    tv.setDefaultValue(((Number) new BigInteger("0")));
+    tv.setDefaultValue((Number) new BigInteger("0"));
     Object rr;
-    rr = DiscreteDateRangeValue.year(((BigInteger) ((Number) new BigInteger("2000"))).intValue());
+    rr = DiscreteDateRangeValue.year(((BigInteger) (Number) new BigInteger("2000")).intValue());
     if (rr instanceof DiscreteDateRangeValue) {
       DiscreteDateRangeValue range = (DiscreteDateRangeValue) rr;
       TemporalValue between = tv.between(range.begin(), range.end());
       if (between.slices().isEmpty()) {
         return (Number) tv.getDefaultValue();
       }
-      return ((Number) between.firstSlice().value());
+      return (Number) between.firstSlice().value();
     }
     return null;
   }).invoke();
   public static final Number reduceLastYear_ = ((_FunctionTypes._return_P0_E0<Number>) () -> {
     TemporalValue tv = (TemporalValue) Generated_CornerCases_Test.toReduce_;
-    tv.setDefaultValue(((Number) new BigInteger("0")));
+    tv.setDefaultValue((Number) new BigInteger("0"));
     Object rr;
-    rr = DiscreteDateRangeValue.year(((BigInteger) ((Number) new BigInteger("2000"))).intValue());
+    rr = DiscreteDateRangeValue.year(((BigInteger) (Number) new BigInteger("2000")).intValue());
     if (rr instanceof DiscreteDateRangeValue) {
       DiscreteDateRangeValue range = (DiscreteDateRangeValue) rr;
       TemporalValue between = tv.between(range.begin(), range.end());
       if (between.slices().isEmpty()) {
         return (Number) tv.getDefaultValue();
       }
-      return ((Number) between.lastSlice().value());
+      return (Number) between.lastSlice().value();
 
     }
     return null;
   }).invoke();
   public static final Number reduceSumYear_ = ((_FunctionTypes._return_P0_E0<Number>) () -> {
     TemporalValue tv = (TemporalValue) Generated_CornerCases_Test.toReduce_;
-    tv.setDefaultValue(((Number) new BigInteger("0")));
+    tv.setDefaultValue((Number) new BigInteger("0"));
     Object rr;
-    rr = DiscreteDateRangeValue.year(((BigInteger) ((Number) new BigInteger("2000"))).intValue());
+    rr = DiscreteDateRangeValue.year(((BigInteger) (Number) new BigInteger("2000")).intValue());
     if (rr instanceof DiscreteDateRangeValue) {
       DiscreteDateRangeValue range = (DiscreteDateRangeValue) rr;
       TemporalValue between = tv.between(range.begin(), range.end());
@@ -1043,17 +817,17 @@ public class Generated_CornerCases_Test {
       }
       Number res = BigInteger.ZERO;
       for (SliceValue s : ListSequence.fromList(between.slices())) {
-        res = TemporalOps.plus(res, ((Number) s.value()));
+        res = TemporalOps.plus(res, (Number) s.value());
       }
-      return ((Number) res);
+      return (Number) res;
     }
     return null;
   }).invoke();
   public static final Number reduceWeightYear_ = ((_FunctionTypes._return_P0_E0<Number>) () -> {
     TemporalValue tv = (TemporalValue) Generated_CornerCases_Test.toReduce_;
-    tv.setDefaultValue(((Number) new BigInteger("0")));
+    tv.setDefaultValue((Number) new BigInteger("0"));
     Object rr;
-    rr = DiscreteDateRangeValue.year(((BigInteger) ((Number) new BigInteger("2000"))).intValue());
+    rr = DiscreteDateRangeValue.year(((BigInteger) (Number) new BigInteger("2000")).intValue());
     if (rr instanceof DiscreteDateRangeValue) {
       DiscreteDateRangeValue range = (DiscreteDateRangeValue) rr;
       TemporalValue between = tv.between(range.begin(), range.end());
@@ -1068,13 +842,13 @@ public class Generated_CornerCases_Test {
         Number val = (Number) s.value();
         res = TemporalOps.plus(res, TemporalOps.mul(percentage, val));
       }
-      return ((Number) res);
+      return (Number) res;
     }
     return null;
   }).invoke();
   public static final Number reduceFirstMonth_ = ((_FunctionTypes._return_P0_E0<Number>) () -> {
     TemporalValue tv = (TemporalValue) Generated_CornerCases_Test.toReduce_;
-    tv.setDefaultValue(((Number) new BigInteger("0")));
+    tv.setDefaultValue((Number) new BigInteger("0"));
     Object rr;
     rr = DiscreteDateRangeValue.month(2004, 1);
     if (rr instanceof DiscreteDateRangeValue) {
@@ -1083,13 +857,13 @@ public class Generated_CornerCases_Test {
       if (between.slices().isEmpty()) {
         return (Number) tv.getDefaultValue();
       }
-      return ((Number) between.firstSlice().value());
+      return (Number) between.firstSlice().value();
     }
     return null;
   }).invoke();
   public static final Number reduceLastMonth_ = ((_FunctionTypes._return_P0_E0<Number>) () -> {
     TemporalValue tv = (TemporalValue) Generated_CornerCases_Test.toReduce_;
-    tv.setDefaultValue(((Number) new BigInteger("0")));
+    tv.setDefaultValue((Number) new BigInteger("0"));
     Object rr;
     rr = DiscreteDateRangeValue.month(2004, 1);
     if (rr instanceof DiscreteDateRangeValue) {
@@ -1098,14 +872,14 @@ public class Generated_CornerCases_Test {
       if (between.slices().isEmpty()) {
         return (Number) tv.getDefaultValue();
       }
-      return ((Number) between.lastSlice().value());
+      return (Number) between.lastSlice().value();
 
     }
     return null;
   }).invoke();
   public static final Number reduceSumMonth_ = ((_FunctionTypes._return_P0_E0<Number>) () -> {
     TemporalValue tv = (TemporalValue) Generated_CornerCases_Test.toReduce_;
-    tv.setDefaultValue(((Number) new BigInteger("0")));
+    tv.setDefaultValue((Number) new BigInteger("0"));
     Object rr;
     rr = DiscreteDateRangeValue.month(2004, 1);
     if (rr instanceof DiscreteDateRangeValue) {
@@ -1116,15 +890,15 @@ public class Generated_CornerCases_Test {
       }
       Number res = BigInteger.ZERO;
       for (SliceValue s : ListSequence.fromList(between.slices())) {
-        res = TemporalOps.plus(res, ((Number) s.value()));
+        res = TemporalOps.plus(res, (Number) s.value());
       }
-      return ((Number) res);
+      return (Number) res;
     }
     return null;
   }).invoke();
   public static final Number reduceWeightMonth_ = ((_FunctionTypes._return_P0_E0<Number>) () -> {
     TemporalValue tv = (TemporalValue) Generated_CornerCases_Test.toReduce_;
-    tv.setDefaultValue(((Number) new BigInteger("0")));
+    tv.setDefaultValue((Number) new BigInteger("0"));
     Object rr;
     rr = DiscreteDateRangeValue.month(2004, 1);
     if (rr instanceof DiscreteDateRangeValue) {
@@ -1141,70 +915,58 @@ public class Generated_CornerCases_Test {
         Number val = (Number) s.value();
         res = TemporalOps.plus(res, TemporalOps.mul(percentage, val));
       }
-      return ((Number) res);
+      return (Number) res;
     }
     return null;
   }).invoke();
   @Test
   public void reduce_item0_4724093428011110556() throws Throwable {
-    Assert.assertTrue("Expected: " + (((Number) (new BigDecimal("100.00").setScale(2, RoundingMode.DOWN)))) + ", but was: " + (Generated_CornerCases_Test.reduceFirstYear_), EqualsTestOp.matches(((Number) (new BigDecimal("100.00").setScale(2, RoundingMode.DOWN))), Generated_CornerCases_Test.reduceFirstYear_));
+    Assert.assertTrue("Expected: " + (Number) new BigDecimal("100.00").setScale(2, RoundingMode.DOWN) + ", but was: " + Generated_CornerCases_Test.reduceFirstYear_, EqualsTestOp.matches((Number) new BigDecimal("100.00").setScale(2, RoundingMode.DOWN), Generated_CornerCases_Test.reduceFirstYear_));
   }
   @Test
   public void reduce_item1_4724093428012256032() throws Throwable {
-    Assert.assertTrue("Expected: " + (((Number) (new BigDecimal("220.00").setScale(2, RoundingMode.DOWN)))) + ", but was: " + (Generated_CornerCases_Test.reduceLastYear_), EqualsTestOp.matches(((Number) (new BigDecimal("220.00").setScale(2, RoundingMode.DOWN))), Generated_CornerCases_Test.reduceLastYear_));
+    Assert.assertTrue("Expected: " + (Number) new BigDecimal("220.00").setScale(2, RoundingMode.DOWN) + ", but was: " + Generated_CornerCases_Test.reduceLastYear_, EqualsTestOp.matches((Number) new BigDecimal("220.00").setScale(2, RoundingMode.DOWN), Generated_CornerCases_Test.reduceLastYear_));
   }
   @Test
   public void reduce_item2_4724093428012271994() throws Throwable {
-    Assert.assertTrue("Expected: " + (AH.add(AH.add(((Number) (new BigDecimal("100.00").setScale(2, RoundingMode.DOWN))), ((Number) (new BigDecimal("110.00").setScale(2, RoundingMode.DOWN)))), ((Number) (new BigDecimal("220.00").setScale(2, RoundingMode.DOWN))))) + ", but was: " + (Generated_CornerCases_Test.reduceSumYear_), EqualsTestOp.matches(AH.add(AH.add(((Number) (new BigDecimal("100.00").setScale(2, RoundingMode.DOWN))), ((Number) (new BigDecimal("110.00").setScale(2, RoundingMode.DOWN)))), ((Number) (new BigDecimal("220.00").setScale(2, RoundingMode.DOWN)))), Generated_CornerCases_Test.reduceSumYear_));
+    Assert.assertTrue("Expected: " + AH.add(AH.add((Number) new BigDecimal("100.00").setScale(2, RoundingMode.DOWN), (Number) new BigDecimal("110.00").setScale(2, RoundingMode.DOWN)), (Number) new BigDecimal("220.00").setScale(2, RoundingMode.DOWN)) + ", but was: " + Generated_CornerCases_Test.reduceSumYear_, EqualsTestOp.matches(AH.add(AH.add((Number) new BigDecimal("100.00").setScale(2, RoundingMode.DOWN), (Number) new BigDecimal("110.00").setScale(2, RoundingMode.DOWN)), (Number) new BigDecimal("220.00").setScale(2, RoundingMode.DOWN)), Generated_CornerCases_Test.reduceSumYear_));
   }
   @Test
   public void reduce_item3_4724093428012304531() throws Throwable {
-    Assert.assertTrue("Expected: " + (((Number) (new BigDecimal("171.9").setScale(1, RoundingMode.DOWN)))) + ", but was: " + (Generated_CornerCases_Test.reduceWeightYear_), EqualsTestOp.matches(((Number) (new BigDecimal("171.9").setScale(1, RoundingMode.DOWN))), Generated_CornerCases_Test.reduceWeightYear_));
+    Assert.assertTrue("Expected: " + (Number) new BigDecimal("171.9").setScale(1, RoundingMode.DOWN) + ", but was: " + Generated_CornerCases_Test.reduceWeightYear_, EqualsTestOp.matches((Number) new BigDecimal("171.9").setScale(1, RoundingMode.DOWN), Generated_CornerCases_Test.reduceWeightYear_));
   }
   @Test
   public void reduce_item4_4724093428012385621() throws Throwable {
-    Assert.assertTrue("Expected: " + (((Number) new BigInteger("240"))) + ", but was: " + (Generated_CornerCases_Test.reduceFirstMonth_), EqualsTestOp.matches(((Number) new BigInteger("240")), Generated_CornerCases_Test.reduceFirstMonth_));
+    Assert.assertTrue("Expected: " + (Number) new BigInteger("240") + ", but was: " + Generated_CornerCases_Test.reduceFirstMonth_, EqualsTestOp.matches((Number) new BigInteger("240"), Generated_CornerCases_Test.reduceFirstMonth_));
   }
   @Test
   public void reduce_item5_4724093428012393932() throws Throwable {
-    Assert.assertTrue("Expected: " + (((Number) new BigInteger("130"))) + ", but was: " + (Generated_CornerCases_Test.reduceLastMonth_), EqualsTestOp.matches(((Number) new BigInteger("130")), Generated_CornerCases_Test.reduceLastMonth_));
+    Assert.assertTrue("Expected: " + (Number) new BigInteger("130") + ", but was: " + Generated_CornerCases_Test.reduceLastMonth_, EqualsTestOp.matches((Number) new BigInteger("130"), Generated_CornerCases_Test.reduceLastMonth_));
   }
   @Test
   public void reduce_item6_4724093428012402257() throws Throwable {
-    Assert.assertTrue("Expected: " + (AH.add(AH.add(((Number) new BigInteger("240")), ((Number) new BigInteger("120"))), ((Number) new BigInteger("130")))) + ", but was: " + (Generated_CornerCases_Test.reduceSumMonth_), EqualsTestOp.matches(AH.add(AH.add(((Number) new BigInteger("240")), ((Number) new BigInteger("120"))), ((Number) new BigInteger("130"))), Generated_CornerCases_Test.reduceSumMonth_));
+    Assert.assertTrue("Expected: " + AH.add(AH.add((Number) new BigInteger("240"), (Number) new BigInteger("120")), (Number) new BigInteger("130")) + ", but was: " + Generated_CornerCases_Test.reduceSumMonth_, EqualsTestOp.matches(AH.add(AH.add((Number) new BigInteger("240"), (Number) new BigInteger("120")), (Number) new BigInteger("130")), Generated_CornerCases_Test.reduceSumMonth_));
   }
   @Test
   public void reduce_item7_4724093428012411817() throws Throwable {
-    Assert.assertTrue("Expected: " + (((Number) (new BigDecimal("138.5").setScale(1, RoundingMode.DOWN)))) + ", but was: " + (Generated_CornerCases_Test.reduceWeightMonth_), EqualsTestOp.matches(((Number) (new BigDecimal("138.5").setScale(1, RoundingMode.DOWN))), Generated_CornerCases_Test.reduceWeightMonth_));
+    Assert.assertTrue("Expected: " + (Number) new BigDecimal("138.5").setScale(1, RoundingMode.DOWN) + ", but was: " + Generated_CornerCases_Test.reduceWeightMonth_, EqualsTestOp.matches((Number) new BigDecimal("138.5").setScale(1, RoundingMode.DOWN), Generated_CornerCases_Test.reduceWeightMonth_));
   }
-  public static final TemporalValue toReduceWithoutSlices1_ = ((_FunctionTypes._return_P0_E0<TemporalValue>) () -> {
-    TemporalValue value = new TemporalValue();
-    return value;
-  }).invoke();
-  public static final TemporalValue toReduceWithoutSlices2_ = ((_FunctionTypes._return_P0_E0<TemporalValue>) () -> {
-    TemporalValue value = new TemporalValue();
-    return value;
-  }).invoke();
-  public static final TemporalValue toReduceWithoutSlices3_ = ((_FunctionTypes._return_P0_E0<TemporalValue>) () -> {
-    TemporalValue value = new TemporalValue();
-    return value;
-  }).invoke();
-  public static final TemporalValue toReduceWithoutSlices4_ = ((_FunctionTypes._return_P0_E0<TemporalValue>) () -> {
-    TemporalValue value = new TemporalValue();
-    return value;
-  }).invoke();
+  public static final TemporalValue toReduceWithoutSlices1_ = new TemporalValue();
+  public static final TemporalValue toReduceWithoutSlices2_ = new TemporalValue();
+  public static final TemporalValue toReduceWithoutSlices3_ = new TemporalValue();
+  public static final TemporalValue toReduceWithoutSlices4_ = new TemporalValue();
   public static final Number reduceFirstYearWithoutSlices1_ = ((_FunctionTypes._return_P0_E0<Number>) () -> {
     TemporalValue tv = (TemporalValue) Generated_CornerCases_Test.toReduceWithoutSlices1_;
-    tv.setDefaultValue(((Number) new BigInteger("0")));
+    tv.setDefaultValue((Number) new BigInteger("0"));
     Object rr;
-    rr = DiscreteDateRangeValue.year(((BigInteger) ((Number) new BigInteger("2000"))).intValue());
+    rr = DiscreteDateRangeValue.year(((BigInteger) (Number) new BigInteger("2000")).intValue());
     if (rr instanceof DiscreteDateRangeValue) {
       DiscreteDateRangeValue range = (DiscreteDateRangeValue) rr;
       TemporalValue between = tv.between(range.begin(), range.end());
       if (between.slices().isEmpty()) {
         return (Number) tv.getDefaultValue();
       }
-      return ((Number) between.firstSlice().value());
+      return (Number) between.firstSlice().value();
     }
     return null;
   }).invoke();
@@ -1212,44 +974,44 @@ public class Generated_CornerCases_Test {
     TemporalValue tv = (TemporalValue) Generated_CornerCases_Test.toReduceWithoutSlices2_;
     tv.setDefaultValue(TreePVector.<Boolean>from(new ArrayList<Boolean>()));
     Object rr;
-    rr = DiscreteDateRangeValue.year(((BigInteger) ((Number) new BigInteger("2000"))).intValue());
+    rr = DiscreteDateRangeValue.year(((BigInteger) (Number) new BigInteger("2000")).intValue());
     if (rr instanceof DiscreteDateRangeValue) {
       DiscreteDateRangeValue range = (DiscreteDateRangeValue) rr;
       TemporalValue between = tv.between(range.begin(), range.end());
       if (between.slices().isEmpty()) {
         return (PVector<Boolean>) tv.getDefaultValue();
       }
-      return ((PVector<Boolean>) between.firstSlice().value());
+      return (PVector<Boolean>) between.firstSlice().value();
     }
     return null;
   }).invoke();
   public static final Number reduceFirstYearWithoutSlices3_ = ((_FunctionTypes._return_P0_E0<Number>) () -> {
     TemporalValue tv = (TemporalValue) Generated_CornerCases_Test.toReduceWithoutSlices3_;
-    tv.setDefaultValue(((Number) new BigInteger("0")));
+    tv.setDefaultValue((Number) new BigInteger("0"));
     Object rr;
-    rr = DiscreteDateRangeValue.year(((BigInteger) ((Number) new BigInteger("2000"))).intValue());
+    rr = DiscreteDateRangeValue.year(((BigInteger) (Number) new BigInteger("2000")).intValue());
     if (rr instanceof DiscreteDateRangeValue) {
       DiscreteDateRangeValue range = (DiscreteDateRangeValue) rr;
       TemporalValue between = tv.between(range.begin(), range.end());
       if (between.slices().isEmpty()) {
         return (Number) tv.getDefaultValue();
       }
-      return ((Number) between.firstSlice().value());
+      return (Number) between.firstSlice().value();
     }
     return null;
   }).invoke();
   public static final Number reduceFirstYearWithoutSlices4_ = ((_FunctionTypes._return_P0_E0<Number>) () -> {
     TemporalValue tv = (TemporalValue) Generated_CornerCases_Test.toReduceWithoutSlices1_;
-    tv.setDefaultValue(((Number) new BigInteger("0")));
+    tv.setDefaultValue((Number) new BigInteger("0"));
     Object rr;
-    rr = DiscreteDateRangeValue.year(((BigInteger) ((Number) new BigInteger("2000"))).intValue());
+    rr = DiscreteDateRangeValue.year(((BigInteger) (Number) new BigInteger("2000")).intValue());
     if (rr instanceof DiscreteDateRangeValue) {
       DiscreteDateRangeValue range = (DiscreteDateRangeValue) rr;
       TemporalValue between = tv.between(range.begin(), range.end());
       if (between.slices().isEmpty()) {
         return (Number) tv.getDefaultValue();
       }
-      return ((Number) between.lastSlice().value());
+      return (Number) between.lastSlice().value();
 
     }
     return null;
@@ -1258,39 +1020,39 @@ public class Generated_CornerCases_Test {
     TemporalValue tv = (TemporalValue) Generated_CornerCases_Test.toReduceWithoutSlices2_;
     tv.setDefaultValue(TreePVector.<Boolean>from(new ArrayList<Boolean>()));
     Object rr;
-    rr = DiscreteDateRangeValue.year(((BigInteger) ((Number) new BigInteger("2000"))).intValue());
+    rr = DiscreteDateRangeValue.year(((BigInteger) (Number) new BigInteger("2000")).intValue());
     if (rr instanceof DiscreteDateRangeValue) {
       DiscreteDateRangeValue range = (DiscreteDateRangeValue) rr;
       TemporalValue between = tv.between(range.begin(), range.end());
       if (between.slices().isEmpty()) {
         return (PVector<Boolean>) tv.getDefaultValue();
       }
-      return ((PVector<Boolean>) between.lastSlice().value());
+      return (PVector<Boolean>) between.lastSlice().value();
 
     }
     return null;
   }).invoke();
   public static final Number reduceFirstYearWithoutSlices6_ = ((_FunctionTypes._return_P0_E0<Number>) () -> {
     TemporalValue tv = (TemporalValue) Generated_CornerCases_Test.toReduceWithoutSlices3_;
-    tv.setDefaultValue(((Number) new BigInteger("0")));
+    tv.setDefaultValue((Number) new BigInteger("0"));
     Object rr;
-    rr = DiscreteDateRangeValue.year(((BigInteger) ((Number) new BigInteger("2000"))).intValue());
+    rr = DiscreteDateRangeValue.year(((BigInteger) (Number) new BigInteger("2000")).intValue());
     if (rr instanceof DiscreteDateRangeValue) {
       DiscreteDateRangeValue range = (DiscreteDateRangeValue) rr;
       TemporalValue between = tv.between(range.begin(), range.end());
       if (between.slices().isEmpty()) {
         return (Number) tv.getDefaultValue();
       }
-      return ((Number) between.lastSlice().value());
+      return (Number) between.lastSlice().value();
 
     }
     return null;
   }).invoke();
   public static final Number reduceFirstYearWithoutSlices7_ = ((_FunctionTypes._return_P0_E0<Number>) () -> {
     TemporalValue tv = (TemporalValue) Generated_CornerCases_Test.toReduceWithoutSlices1_;
-    tv.setDefaultValue(((Number) new BigInteger("0")));
+    tv.setDefaultValue((Number) new BigInteger("0"));
     Object rr;
-    rr = DiscreteDateRangeValue.year(((BigInteger) ((Number) new BigInteger("2000"))).intValue());
+    rr = DiscreteDateRangeValue.year(((BigInteger) (Number) new BigInteger("2000")).intValue());
     if (rr instanceof DiscreteDateRangeValue) {
       DiscreteDateRangeValue range = (DiscreteDateRangeValue) rr;
       TemporalValue between = tv.between(range.begin(), range.end());
@@ -1299,17 +1061,17 @@ public class Generated_CornerCases_Test {
       }
       Number res = BigInteger.ZERO;
       for (SliceValue s : ListSequence.fromList(between.slices())) {
-        res = TemporalOps.plus(res, ((Number) s.value()));
+        res = TemporalOps.plus(res, (Number) s.value());
       }
-      return ((Number) res);
+      return (Number) res;
     }
     return null;
   }).invoke();
   public static final Number reduceFirstYearWithoutSlices9_ = ((_FunctionTypes._return_P0_E0<Number>) () -> {
     TemporalValue tv = (TemporalValue) Generated_CornerCases_Test.toReduceWithoutSlices3_;
-    tv.setDefaultValue(((Number) new BigInteger("0")));
+    tv.setDefaultValue((Number) new BigInteger("0"));
     Object rr;
-    rr = DiscreteDateRangeValue.year(((BigInteger) ((Number) new BigInteger("2000"))).intValue());
+    rr = DiscreteDateRangeValue.year(((BigInteger) (Number) new BigInteger("2000")).intValue());
     if (rr instanceof DiscreteDateRangeValue) {
       DiscreteDateRangeValue range = (DiscreteDateRangeValue) rr;
       TemporalValue between = tv.between(range.begin(), range.end());
@@ -1318,17 +1080,17 @@ public class Generated_CornerCases_Test {
       }
       Number res = BigInteger.ZERO;
       for (SliceValue s : ListSequence.fromList(between.slices())) {
-        res = TemporalOps.plus(res, ((Number) s.value()));
+        res = TemporalOps.plus(res, (Number) s.value());
       }
-      return ((Number) res);
+      return (Number) res;
     }
     return null;
   }).invoke();
   public static final Number reduceFirstYearWithoutSlices10_ = ((_FunctionTypes._return_P0_E0<Number>) () -> {
     TemporalValue tv = (TemporalValue) Generated_CornerCases_Test.toReduceWithoutSlices1_;
-    tv.setDefaultValue(((Number) new BigInteger("0")));
+    tv.setDefaultValue((Number) new BigInteger("0"));
     Object rr;
-    rr = DiscreteDateRangeValue.year(((BigInteger) ((Number) new BigInteger("2000"))).intValue());
+    rr = DiscreteDateRangeValue.year(((BigInteger) (Number) new BigInteger("2000")).intValue());
     if (rr instanceof DiscreteDateRangeValue) {
       DiscreteDateRangeValue range = (DiscreteDateRangeValue) rr;
       TemporalValue between = tv.between(range.begin(), range.end());
@@ -1343,15 +1105,15 @@ public class Generated_CornerCases_Test {
         Number val = (Number) s.value();
         res = TemporalOps.plus(res, TemporalOps.mul(percentage, val));
       }
-      return ((Number) res);
+      return (Number) res;
     }
     return null;
   }).invoke();
   public static final Number reduceFirstYearWithoutSlices12_ = ((_FunctionTypes._return_P0_E0<Number>) () -> {
     TemporalValue tv = (TemporalValue) Generated_CornerCases_Test.toReduceWithoutSlices3_;
-    tv.setDefaultValue(((Number) new BigInteger("0")));
+    tv.setDefaultValue((Number) new BigInteger("0"));
     Object rr;
-    rr = DiscreteDateRangeValue.year(((BigInteger) ((Number) new BigInteger("2000"))).intValue());
+    rr = DiscreteDateRangeValue.year(((BigInteger) (Number) new BigInteger("2000")).intValue());
     if (rr instanceof DiscreteDateRangeValue) {
       DiscreteDateRangeValue range = (DiscreteDateRangeValue) rr;
       TemporalValue between = tv.between(range.begin(), range.end());
@@ -1366,7 +1128,7 @@ public class Generated_CornerCases_Test {
         Number val = (Number) s.value();
         res = TemporalOps.plus(res, TemporalOps.mul(percentage, val));
       }
-      return ((Number) res);
+      return (Number) res;
     }
     return null;
   }).invoke();
@@ -1374,60 +1136,60 @@ public class Generated_CornerCases_Test {
     TemporalValue tv = (TemporalValue) Generated_CornerCases_Test.toReduceWithoutSlices4_;
     tv.setDefaultValue(null);
     Object rr;
-    rr = DiscreteDateRangeValue.year(((BigInteger) ((Number) new BigInteger("2000"))).intValue());
+    rr = DiscreteDateRangeValue.year(((BigInteger) (Number) new BigInteger("2000")).intValue());
     if (rr instanceof DiscreteDateRangeValue) {
       DiscreteDateRangeValue range = (DiscreteDateRangeValue) rr;
       TemporalValue between = tv.between(range.begin(), range.end());
       if (between.slices().isEmpty()) {
         return (Number) tv.getDefaultValue();
       }
-      return ((Number) between.firstSlice().value());
+      return (Number) between.firstSlice().value();
     }
     return null;
   }).invoke();
   @Test
   public void reduceWithoutSlices_item0_9096867490604592075() throws Throwable {
-    Assert.assertTrue("Expected: " + (((Number) new BigInteger("0"))) + ", but was: " + (Generated_CornerCases_Test.reduceFirstYearWithoutSlices1_), EqualsTestOp.matches(((Number) new BigInteger("0")), Generated_CornerCases_Test.reduceFirstYearWithoutSlices1_));
+    Assert.assertTrue("Expected: " + (Number) new BigInteger("0") + ", but was: " + Generated_CornerCases_Test.reduceFirstYearWithoutSlices1_, EqualsTestOp.matches((Number) new BigInteger("0"), Generated_CornerCases_Test.reduceFirstYearWithoutSlices1_));
   }
   @Test
   public void reduceWithoutSlices_item1_9096867490604612970() throws Throwable {
-    Assert.assertEquals("Expected: " + (TreePVector.<Boolean>from(new ArrayList<Boolean>())) + ", but was: " + (Generated_CornerCases_Test.reduceFirstYearWithoutSlices2_), (Object) TreePVector.<Boolean>from(new ArrayList<Boolean>()), (Object) Generated_CornerCases_Test.reduceFirstYearWithoutSlices2_);
+    Assert.assertEquals("Expected: " + TreePVector.<Boolean>from(new ArrayList<Boolean>()) + ", but was: " + Generated_CornerCases_Test.reduceFirstYearWithoutSlices2_, (Object) TreePVector.<Boolean>from(new ArrayList<Boolean>()), (Object) Generated_CornerCases_Test.reduceFirstYearWithoutSlices2_);
   }
   @Test
   public void reduceWithoutSlices_item2_3394148961387536486() throws Throwable {
-    Assert.assertTrue("Expected: " + (((Number) (new BigDecimal("0.0").setScale(1, RoundingMode.DOWN)))) + ", but was: " + (Generated_CornerCases_Test.reduceFirstYearWithoutSlices3_), EqualsTestOp.matches(((Number) (new BigDecimal("0.0").setScale(1, RoundingMode.DOWN))), Generated_CornerCases_Test.reduceFirstYearWithoutSlices3_));
+    Assert.assertTrue("Expected: " + (Number) new BigDecimal("0.0").setScale(1, RoundingMode.DOWN) + ", but was: " + Generated_CornerCases_Test.reduceFirstYearWithoutSlices3_, EqualsTestOp.matches((Number) new BigDecimal("0.0").setScale(1, RoundingMode.DOWN), Generated_CornerCases_Test.reduceFirstYearWithoutSlices3_));
   }
   @Test
   public void reduceWithoutSlices_item4_3394148961387536490() throws Throwable {
-    Assert.assertTrue("Expected: " + (((Number) new BigInteger("0"))) + ", but was: " + (Generated_CornerCases_Test.reduceFirstYearWithoutSlices4_), EqualsTestOp.matches(((Number) new BigInteger("0")), Generated_CornerCases_Test.reduceFirstYearWithoutSlices4_));
+    Assert.assertTrue("Expected: " + (Number) new BigInteger("0") + ", but was: " + Generated_CornerCases_Test.reduceFirstYearWithoutSlices4_, EqualsTestOp.matches((Number) new BigInteger("0"), Generated_CornerCases_Test.reduceFirstYearWithoutSlices4_));
   }
   @Test
   public void reduceWithoutSlices_item5_3394148961387536546() throws Throwable {
-    Assert.assertEquals("Expected: " + (TreePVector.<Boolean>from(new ArrayList<Boolean>())) + ", but was: " + (Generated_CornerCases_Test.reduceFirstYearWithoutSlices5_), (Object) TreePVector.<Boolean>from(new ArrayList<Boolean>()), (Object) Generated_CornerCases_Test.reduceFirstYearWithoutSlices5_);
+    Assert.assertEquals("Expected: " + TreePVector.<Boolean>from(new ArrayList<Boolean>()) + ", but was: " + Generated_CornerCases_Test.reduceFirstYearWithoutSlices5_, (Object) TreePVector.<Boolean>from(new ArrayList<Boolean>()), (Object) Generated_CornerCases_Test.reduceFirstYearWithoutSlices5_);
   }
   @Test
   public void reduceWithoutSlices_item6_3394148961387536550() throws Throwable {
-    Assert.assertTrue("Expected: " + (((Number) (new BigDecimal("0.0").setScale(1, RoundingMode.DOWN)))) + ", but was: " + (Generated_CornerCases_Test.reduceFirstYearWithoutSlices6_), EqualsTestOp.matches(((Number) (new BigDecimal("0.0").setScale(1, RoundingMode.DOWN))), Generated_CornerCases_Test.reduceFirstYearWithoutSlices6_));
+    Assert.assertTrue("Expected: " + (Number) new BigDecimal("0.0").setScale(1, RoundingMode.DOWN) + ", but was: " + Generated_CornerCases_Test.reduceFirstYearWithoutSlices6_, EqualsTestOp.matches((Number) new BigDecimal("0.0").setScale(1, RoundingMode.DOWN), Generated_CornerCases_Test.reduceFirstYearWithoutSlices6_));
   }
   @Test
   public void reduceWithoutSlices_item8_3394148961387536556() throws Throwable {
-    Assert.assertTrue("Expected: " + (((Number) new BigInteger("0"))) + ", but was: " + (Generated_CornerCases_Test.reduceFirstYearWithoutSlices7_), EqualsTestOp.matches(((Number) new BigInteger("0")), Generated_CornerCases_Test.reduceFirstYearWithoutSlices7_));
+    Assert.assertTrue("Expected: " + (Number) new BigInteger("0") + ", but was: " + Generated_CornerCases_Test.reduceFirstYearWithoutSlices7_, EqualsTestOp.matches((Number) new BigInteger("0"), Generated_CornerCases_Test.reduceFirstYearWithoutSlices7_));
   }
   @Test
   public void reduceWithoutSlices_item9_3394148961387536665() throws Throwable {
-    Assert.assertTrue("Expected: " + (((Number) (new BigDecimal("0.0").setScale(1, RoundingMode.DOWN)))) + ", but was: " + (Generated_CornerCases_Test.reduceFirstYearWithoutSlices9_), EqualsTestOp.matches(((Number) (new BigDecimal("0.0").setScale(1, RoundingMode.DOWN))), Generated_CornerCases_Test.reduceFirstYearWithoutSlices9_));
+    Assert.assertTrue("Expected: " + (Number) new BigDecimal("0.0").setScale(1, RoundingMode.DOWN) + ", but was: " + Generated_CornerCases_Test.reduceFirstYearWithoutSlices9_, EqualsTestOp.matches((Number) new BigDecimal("0.0").setScale(1, RoundingMode.DOWN), Generated_CornerCases_Test.reduceFirstYearWithoutSlices9_));
   }
   @Test
   public void reduceWithoutSlices_item11_3394148961387536669() throws Throwable {
-    Assert.assertTrue("Expected: " + (((Number) new BigInteger("0"))) + ", but was: " + (Generated_CornerCases_Test.reduceFirstYearWithoutSlices10_), EqualsTestOp.matches(((Number) new BigInteger("0")), Generated_CornerCases_Test.reduceFirstYearWithoutSlices10_));
+    Assert.assertTrue("Expected: " + (Number) new BigInteger("0") + ", but was: " + Generated_CornerCases_Test.reduceFirstYearWithoutSlices10_, EqualsTestOp.matches((Number) new BigInteger("0"), Generated_CornerCases_Test.reduceFirstYearWithoutSlices10_));
   }
   @Test
   public void reduceWithoutSlices_item12_3394148961387536679() throws Throwable {
-    Assert.assertTrue("Expected: " + (((Number) (new BigDecimal("0.0").setScale(1, RoundingMode.DOWN)))) + ", but was: " + (Generated_CornerCases_Test.reduceFirstYearWithoutSlices12_), EqualsTestOp.matches(((Number) (new BigDecimal("0.0").setScale(1, RoundingMode.DOWN))), Generated_CornerCases_Test.reduceFirstYearWithoutSlices12_));
+    Assert.assertTrue("Expected: " + (Number) new BigDecimal("0.0").setScale(1, RoundingMode.DOWN) + ", but was: " + Generated_CornerCases_Test.reduceFirstYearWithoutSlices12_, EqualsTestOp.matches((Number) new BigDecimal("0.0").setScale(1, RoundingMode.DOWN), Generated_CornerCases_Test.reduceFirstYearWithoutSlices12_));
   }
   @Test
   public void reduceWithoutSlices_item14_3394148961388097232() throws Throwable {
-    Assert.assertEquals("Expected: " + (null) + ", but was: " + (Generated_CornerCases_Test.reduceFirstYearWithoutSlices13_), (Object) null, (Object) Generated_CornerCases_Test.reduceFirstYearWithoutSlices13_);
+    Assert.assertEquals("Expected: " + null + ", but was: " + Generated_CornerCases_Test.reduceFirstYearWithoutSlices13_, (Object) null, (Object) Generated_CornerCases_Test.reduceFirstYearWithoutSlices13_);
   }
   public static final Function<ParameterSetWrapper, Boolean> mapping1_ = new Function<ParameterSetWrapper, Boolean>() {
     public Boolean apply(ParameterSetWrapper param) {
@@ -1444,142 +1206,90 @@ public class Generated_CornerCases_Test {
   public static final Function<ParameterSetWrapper, Number> mapping3_ = new Function<ParameterSetWrapper, Number>() {
     public Number apply(ParameterSetWrapper param) {
       Number it = (Number) param.parameters.get(0);
-      return AH.add(it, ((Number) new BigInteger("1")));
+      return AH.add(it, (Number) new BigInteger("1"));
     }
   };
   public static final Function<ParameterSetWrapper, Number> mapping4_ = new Function<ParameterSetWrapper, Number>() {
     public Number apply(ParameterSetWrapper param) {
       Number it = (Number) param.parameters.get(0);
-      return AH.add(it, ((Number) new BigInteger("1")));
+      return AH.add(it, (Number) new BigInteger("1"));
     }
   };
   public static final Function<ParameterSetWrapper, Number> mapping5_ = new Function<ParameterSetWrapper, Number>() {
     public Number apply(ParameterSetWrapper param) {
       Number it = (Number) param.parameters.get(0);
-      return AH.sub(it, ((Number) new BigInteger("1")));
+      return AH.sub(it, (Number) new BigInteger("1"));
     }
   };
   public static final Function<ParameterSetWrapper, Number> mapping6_ = new Function<ParameterSetWrapper, Number>() {
     public Number apply(ParameterSetWrapper param) {
       Number it = (Number) param.parameters.get(0);
-      return AH.sub(it, ((Number) new BigInteger("1")));
+      return AH.sub(it, (Number) new BigInteger("1"));
     }
   };
-  public static final Number anInt_ = ((Number) new BigInteger("10"));
-  public static final Number aPseudoInt_ = ((Number) (new BigDecimal("10.00").setScale(2, RoundingMode.DOWN)));
-  public static final Number aReal_ = ((Number) (new BigDecimal("33.33").setScale(2, RoundingMode.DOWN)));
+  public static final Number anInt_ = (Number) new BigInteger("10");
+  public static final Number aPseudoInt_ = (Number) new BigDecimal("10.00").setScale(2, RoundingMode.DOWN);
+  public static final Number aReal_ = (Number) new BigDecimal("33.33").setScale(2, RoundingMode.DOWN);
   public static final String aString_ = "s";
   @Test
   public void Adding_item0_4048497906933923099() throws Throwable {
-    Assert.assertTrue("Expected: " + (((Number) new BigInteger("20"))) + ", but was: " + (AH.add(Generated_CornerCases_Test.anInt_, Generated_CornerCases_Test.anInt_)), EqualsTestOp.matches(((Number) new BigInteger("20")), AH.add(Generated_CornerCases_Test.anInt_, Generated_CornerCases_Test.anInt_)));
+    Assert.assertTrue("Expected: " + (Number) new BigInteger("20") + ", but was: " + AH.add(Generated_CornerCases_Test.anInt_, Generated_CornerCases_Test.anInt_), EqualsTestOp.matches((Number) new BigInteger("20"), AH.add(Generated_CornerCases_Test.anInt_, Generated_CornerCases_Test.anInt_)));
   }
   @Test
   public void Adding_item1_4048497906933935288() throws Throwable {
-    Assert.assertEquals("Expected: " + ("10s") + ", but was: " + (AH.addString(Generated_CornerCases_Test.anInt_, Generated_CornerCases_Test.aString_)), (Object) "10s", (Object) AH.addString(Generated_CornerCases_Test.anInt_, Generated_CornerCases_Test.aString_));
+    Assert.assertEquals("Expected: " + "10s" + ", but was: " + AH.addString(Generated_CornerCases_Test.anInt_, Generated_CornerCases_Test.aString_), (Object) "10s", (Object) AH.addString(Generated_CornerCases_Test.anInt_, Generated_CornerCases_Test.aString_));
   }
   @Test
   public void Adding_item2_4048497906933947704() throws Throwable {
-    Assert.assertTrue("Expected: " + (((Number) (new BigDecimal("20.00").setScale(2, RoundingMode.DOWN)))) + ", but was: " + (AH.add(Generated_CornerCases_Test.aPseudoInt_, Generated_CornerCases_Test.aPseudoInt_)), EqualsTestOp.matches(((Number) (new BigDecimal("20.00").setScale(2, RoundingMode.DOWN))), AH.add(Generated_CornerCases_Test.aPseudoInt_, Generated_CornerCases_Test.aPseudoInt_)));
+    Assert.assertTrue("Expected: " + (Number) new BigDecimal("20.00").setScale(2, RoundingMode.DOWN) + ", but was: " + AH.add(Generated_CornerCases_Test.aPseudoInt_, Generated_CornerCases_Test.aPseudoInt_), EqualsTestOp.matches((Number) new BigDecimal("20.00").setScale(2, RoundingMode.DOWN), AH.add(Generated_CornerCases_Test.aPseudoInt_, Generated_CornerCases_Test.aPseudoInt_)));
   }
   @Test
   public void Adding_item3_4048497906933947698() throws Throwable {
-    Assert.assertEquals("Expected: " + ("10.00s") + ", but was: " + (AH.addString(Generated_CornerCases_Test.aPseudoInt_, Generated_CornerCases_Test.aString_)), (Object) "10.00s", (Object) AH.addString(Generated_CornerCases_Test.aPseudoInt_, Generated_CornerCases_Test.aString_));
+    Assert.assertEquals("Expected: " + "10.00s" + ", but was: " + AH.addString(Generated_CornerCases_Test.aPseudoInt_, Generated_CornerCases_Test.aString_), (Object) "10.00s", (Object) AH.addString(Generated_CornerCases_Test.aPseudoInt_, Generated_CornerCases_Test.aString_));
   }
   @Test
   public void Adding_item4_4048497906933985270() throws Throwable {
-    Assert.assertTrue("Expected: " + (((Number) (new BigDecimal("66.66").setScale(2, RoundingMode.DOWN)))) + ", but was: " + (AH.add(Generated_CornerCases_Test.aReal_, Generated_CornerCases_Test.aReal_)), EqualsTestOp.matches(((Number) (new BigDecimal("66.66").setScale(2, RoundingMode.DOWN))), AH.add(Generated_CornerCases_Test.aReal_, Generated_CornerCases_Test.aReal_)));
+    Assert.assertTrue("Expected: " + (Number) new BigDecimal("66.66").setScale(2, RoundingMode.DOWN) + ", but was: " + AH.add(Generated_CornerCases_Test.aReal_, Generated_CornerCases_Test.aReal_), EqualsTestOp.matches((Number) new BigDecimal("66.66").setScale(2, RoundingMode.DOWN), AH.add(Generated_CornerCases_Test.aReal_, Generated_CornerCases_Test.aReal_)));
   }
   @Test
   public void Adding_item5_4048497906933985264() throws Throwable {
-    Assert.assertEquals("Expected: " + ("33.33s") + ", but was: " + (AH.addString(Generated_CornerCases_Test.aReal_, Generated_CornerCases_Test.aString_)), (Object) "33.33s", (Object) AH.addString(Generated_CornerCases_Test.aReal_, Generated_CornerCases_Test.aString_));
+    Assert.assertEquals("Expected: " + "33.33s" + ", but was: " + AH.addString(Generated_CornerCases_Test.aReal_, Generated_CornerCases_Test.aString_), (Object) "33.33s", (Object) AH.addString(Generated_CornerCases_Test.aReal_, Generated_CornerCases_Test.aString_));
   }
   @Test
   public void Adding_item6_4048497906934011046() throws Throwable {
-    Assert.assertTrue("Expected: " + (((Number) (new BigDecimal("20.00").setScale(2, RoundingMode.DOWN)))) + ", but was: " + (AH.add(Generated_CornerCases_Test.anInt_, Generated_CornerCases_Test.aPseudoInt_)), EqualsTestOp.matches(((Number) (new BigDecimal("20.00").setScale(2, RoundingMode.DOWN))), AH.add(Generated_CornerCases_Test.anInt_, Generated_CornerCases_Test.aPseudoInt_)));
+    Assert.assertTrue("Expected: " + (Number) new BigDecimal("20.00").setScale(2, RoundingMode.DOWN) + ", but was: " + AH.add(Generated_CornerCases_Test.anInt_, Generated_CornerCases_Test.aPseudoInt_), EqualsTestOp.matches((Number) new BigDecimal("20.00").setScale(2, RoundingMode.DOWN), AH.add(Generated_CornerCases_Test.anInt_, Generated_CornerCases_Test.aPseudoInt_)));
   }
   @Test
   public void Adding_item7_4048497906934023907() throws Throwable {
-    Assert.assertTrue("Expected: " + (((Number) (new BigDecimal("43.33").setScale(2, RoundingMode.DOWN)))) + ", but was: " + (AH.add(Generated_CornerCases_Test.anInt_, Generated_CornerCases_Test.aReal_)), EqualsTestOp.matches(((Number) (new BigDecimal("43.33").setScale(2, RoundingMode.DOWN))), AH.add(Generated_CornerCases_Test.anInt_, Generated_CornerCases_Test.aReal_)));
+    Assert.assertTrue("Expected: " + (Number) new BigDecimal("43.33").setScale(2, RoundingMode.DOWN) + ", but was: " + AH.add(Generated_CornerCases_Test.anInt_, Generated_CornerCases_Test.aReal_), EqualsTestOp.matches((Number) new BigDecimal("43.33").setScale(2, RoundingMode.DOWN), AH.add(Generated_CornerCases_Test.anInt_, Generated_CornerCases_Test.aReal_)));
   }
   @Test
   public void Adding_item8_4048497906935668709() throws Throwable {
-    Assert.assertTrue("Expected: " + (((Number) (new BigDecimal("43.33").setScale(2, RoundingMode.DOWN)))) + ", but was: " + (AH.add(Generated_CornerCases_Test.aReal_, Generated_CornerCases_Test.anInt_)), EqualsTestOp.matches(((Number) (new BigDecimal("43.33").setScale(2, RoundingMode.DOWN))), AH.add(Generated_CornerCases_Test.aReal_, Generated_CornerCases_Test.anInt_)));
+    Assert.assertTrue("Expected: " + (Number) new BigDecimal("43.33").setScale(2, RoundingMode.DOWN) + ", but was: " + AH.add(Generated_CornerCases_Test.aReal_, Generated_CornerCases_Test.anInt_), EqualsTestOp.matches((Number) new BigDecimal("43.33").setScale(2, RoundingMode.DOWN), AH.add(Generated_CornerCases_Test.aReal_, Generated_CornerCases_Test.anInt_)));
   }
   public static final LocalDate d_ = LocalDate.MIN;
-  public static final TemporalValue aTTInt_ = ((_FunctionTypes._return_P0_E0<TemporalValue>) () -> {
-    TemporalValue value = new TemporalValue();
-    value = value.slice(((LocalDate) Generated_CornerCases_Test.d_), ((Number) new BigInteger("10")));
-    return value;
-  }).invoke();
-  public static final TemporalValue aTTPseudoInt_ = ((_FunctionTypes._return_P0_E0<TemporalValue>) () -> {
-    TemporalValue value = new TemporalValue();
-    value = value.slice(((LocalDate) Generated_CornerCases_Test.d_), ((Number) (new BigDecimal("10.00").setScale(2, RoundingMode.DOWN))));
-    return value;
-  }).invoke();
-  public static final TemporalValue aTTReal_ = ((_FunctionTypes._return_P0_E0<TemporalValue>) () -> {
-    TemporalValue value = new TemporalValue();
-    value = value.slice(((LocalDate) Generated_CornerCases_Test.d_), ((Number) (new BigDecimal("33.33").setScale(2, RoundingMode.DOWN))));
-    return value;
-  }).invoke();
+  public static final TemporalValue aTTInt_ = new TemporalValue().slice((LocalDate) Generated_CornerCases_Test.d_, (Number) new BigInteger("10"));
+  public static final TemporalValue aTTPseudoInt_ = new TemporalValue().slice((LocalDate) Generated_CornerCases_Test.d_, (Number) new BigDecimal("10.00").setScale(2, RoundingMode.DOWN));
+  public static final TemporalValue aTTReal_ = new TemporalValue().slice((LocalDate) Generated_CornerCases_Test.d_, (Number) new BigDecimal("33.33").setScale(2, RoundingMode.DOWN));
   @Test
   public void AddingTemporal_item0_4048497906934159627() throws Throwable {
-    Assert.assertEquals("Expected: " + (((_FunctionTypes._return_P0_E0<TemporalValue>) () -> {
-      TemporalValue value = new TemporalValue();
-      value = value.slice(((LocalDate) Generated_CornerCases_Test.d_), ((Number) new BigInteger("20")));
-      return value;
-    }).invoke()) + ", but was: " + (TemporalValueHelper.perform(Generated_CornerCases_Test.aTTInt_, Generated_CornerCases_Test.aTTInt_, ((_FunctionTypes._return_P2_E0<Number, Object, Object>) (Object l, Object r) -> TemporalOps.plus(l, r)), null)), (Object) ((_FunctionTypes._return_P0_E0<TemporalValue>) () -> {
-      TemporalValue value = new TemporalValue();
-      value = value.slice(((LocalDate) Generated_CornerCases_Test.d_), ((Number) new BigInteger("20")));
-      return value;
-    }).invoke(), (Object) TemporalValueHelper.perform(Generated_CornerCases_Test.aTTInt_, Generated_CornerCases_Test.aTTInt_, ((_FunctionTypes._return_P2_E0<Number, Object, Object>) (Object l, Object r) -> TemporalOps.plus(l, r)), null));
+    Assert.assertEquals("Expected: " + new TemporalValue().slice((LocalDate) Generated_CornerCases_Test.d_, (Number) new BigInteger("20")) + ", but was: " + TemporalValueHelper.perform(Generated_CornerCases_Test.aTTInt_, Generated_CornerCases_Test.aTTInt_, (Object l, Object r) -> TemporalOps.plus(l, r), null), (Object) new TemporalValue().slice((LocalDate) Generated_CornerCases_Test.d_, (Number) new BigInteger("20")), (Object) TemporalValueHelper.perform(Generated_CornerCases_Test.aTTInt_, Generated_CornerCases_Test.aTTInt_, (Object l, Object r) -> TemporalOps.plus(l, r), null));
   }
   @Test
   public void AddingTemporal_item1_4048497906934159639() throws Throwable {
-    Assert.assertEquals("Expected: " + (((_FunctionTypes._return_P0_E0<TemporalValue>) () -> {
-      TemporalValue value = new TemporalValue();
-      value = value.slice(((LocalDate) Generated_CornerCases_Test.d_), ((Number) (new BigDecimal("20.00").setScale(2, RoundingMode.DOWN))));
-      return value;
-    }).invoke()) + ", but was: " + (TemporalValueHelper.perform(Generated_CornerCases_Test.aTTPseudoInt_, Generated_CornerCases_Test.aTTPseudoInt_, ((_FunctionTypes._return_P2_E0<Number, Object, Object>) (Object l, Object r) -> TemporalOps.plus(l, r)), null)), (Object) ((_FunctionTypes._return_P0_E0<TemporalValue>) () -> {
-      TemporalValue value = new TemporalValue();
-      value = value.slice(((LocalDate) Generated_CornerCases_Test.d_), ((Number) (new BigDecimal("20.00").setScale(2, RoundingMode.DOWN))));
-      return value;
-    }).invoke(), (Object) TemporalValueHelper.perform(Generated_CornerCases_Test.aTTPseudoInt_, Generated_CornerCases_Test.aTTPseudoInt_, ((_FunctionTypes._return_P2_E0<Number, Object, Object>) (Object l, Object r) -> TemporalOps.plus(l, r)), null));
+    Assert.assertEquals("Expected: " + new TemporalValue().slice((LocalDate) Generated_CornerCases_Test.d_, (Number) new BigDecimal("20.00").setScale(2, RoundingMode.DOWN)) + ", but was: " + TemporalValueHelper.perform(Generated_CornerCases_Test.aTTPseudoInt_, Generated_CornerCases_Test.aTTPseudoInt_, (Object l, Object r) -> TemporalOps.plus(l, r), null), (Object) new TemporalValue().slice((LocalDate) Generated_CornerCases_Test.d_, (Number) new BigDecimal("20.00").setScale(2, RoundingMode.DOWN)), (Object) TemporalValueHelper.perform(Generated_CornerCases_Test.aTTPseudoInt_, Generated_CornerCases_Test.aTTPseudoInt_, (Object l, Object r) -> TemporalOps.plus(l, r), null));
   }
   @Test
   public void AddingTemporal_item2_4048497906934159651() throws Throwable {
-    Assert.assertEquals("Expected: " + (((_FunctionTypes._return_P0_E0<TemporalValue>) () -> {
-      TemporalValue value = new TemporalValue();
-      value = value.slice(((LocalDate) Generated_CornerCases_Test.d_), ((Number) (new BigDecimal("66.66").setScale(2, RoundingMode.DOWN))));
-      return value;
-    }).invoke()) + ", but was: " + (TemporalValueHelper.perform(Generated_CornerCases_Test.aTTReal_, Generated_CornerCases_Test.aTTReal_, ((_FunctionTypes._return_P2_E0<Number, Object, Object>) (Object l, Object r) -> TemporalOps.plus(l, r)), null)), (Object) ((_FunctionTypes._return_P0_E0<TemporalValue>) () -> {
-      TemporalValue value = new TemporalValue();
-      value = value.slice(((LocalDate) Generated_CornerCases_Test.d_), ((Number) (new BigDecimal("66.66").setScale(2, RoundingMode.DOWN))));
-      return value;
-    }).invoke(), (Object) TemporalValueHelper.perform(Generated_CornerCases_Test.aTTReal_, Generated_CornerCases_Test.aTTReal_, ((_FunctionTypes._return_P2_E0<Number, Object, Object>) (Object l, Object r) -> TemporalOps.plus(l, r)), null));
+    Assert.assertEquals("Expected: " + new TemporalValue().slice((LocalDate) Generated_CornerCases_Test.d_, (Number) new BigDecimal("66.66").setScale(2, RoundingMode.DOWN)) + ", but was: " + TemporalValueHelper.perform(Generated_CornerCases_Test.aTTReal_, Generated_CornerCases_Test.aTTReal_, (Object l, Object r) -> TemporalOps.plus(l, r), null), (Object) new TemporalValue().slice((LocalDate) Generated_CornerCases_Test.d_, (Number) new BigDecimal("66.66").setScale(2, RoundingMode.DOWN)), (Object) TemporalValueHelper.perform(Generated_CornerCases_Test.aTTReal_, Generated_CornerCases_Test.aTTReal_, (Object l, Object r) -> TemporalOps.plus(l, r), null));
   }
   @Test
   public void AddingTemporal_item3_4048497906934159663() throws Throwable {
-    Assert.assertEquals("Expected: " + (((_FunctionTypes._return_P0_E0<TemporalValue>) () -> {
-      TemporalValue value = new TemporalValue();
-      value = value.slice(((LocalDate) Generated_CornerCases_Test.d_), ((Number) (new BigDecimal("20.00").setScale(2, RoundingMode.DOWN))));
-      return value;
-    }).invoke()) + ", but was: " + (TemporalValueHelper.perform(Generated_CornerCases_Test.aTTInt_, Generated_CornerCases_Test.aTTPseudoInt_, ((_FunctionTypes._return_P2_E0<Number, Object, Object>) (Object l, Object r) -> TemporalOps.plus(l, r)), null)), (Object) ((_FunctionTypes._return_P0_E0<TemporalValue>) () -> {
-      TemporalValue value = new TemporalValue();
-      value = value.slice(((LocalDate) Generated_CornerCases_Test.d_), ((Number) (new BigDecimal("20.00").setScale(2, RoundingMode.DOWN))));
-      return value;
-    }).invoke(), (Object) TemporalValueHelper.perform(Generated_CornerCases_Test.aTTInt_, Generated_CornerCases_Test.aTTPseudoInt_, ((_FunctionTypes._return_P2_E0<Number, Object, Object>) (Object l, Object r) -> TemporalOps.plus(l, r)), null));
+    Assert.assertEquals("Expected: " + new TemporalValue().slice((LocalDate) Generated_CornerCases_Test.d_, (Number) new BigDecimal("20.00").setScale(2, RoundingMode.DOWN)) + ", but was: " + TemporalValueHelper.perform(Generated_CornerCases_Test.aTTInt_, Generated_CornerCases_Test.aTTPseudoInt_, (Object l, Object r) -> TemporalOps.plus(l, r), null), (Object) new TemporalValue().slice((LocalDate) Generated_CornerCases_Test.d_, (Number) new BigDecimal("20.00").setScale(2, RoundingMode.DOWN)), (Object) TemporalValueHelper.perform(Generated_CornerCases_Test.aTTInt_, Generated_CornerCases_Test.aTTPseudoInt_, (Object l, Object r) -> TemporalOps.plus(l, r), null));
   }
   @Test
   public void AddingTemporal_item4_4048497906934159669() throws Throwable {
-    Assert.assertEquals("Expected: " + (((_FunctionTypes._return_P0_E0<TemporalValue>) () -> {
-      TemporalValue value = new TemporalValue();
-      value = value.slice(((LocalDate) Generated_CornerCases_Test.d_), ((Number) (new BigDecimal("43.33").setScale(2, RoundingMode.DOWN))));
-      return value;
-    }).invoke()) + ", but was: " + (TemporalValueHelper.perform(Generated_CornerCases_Test.aTTInt_, Generated_CornerCases_Test.aTTReal_, ((_FunctionTypes._return_P2_E0<Number, Object, Object>) (Object l, Object r) -> TemporalOps.plus(l, r)), null)), (Object) ((_FunctionTypes._return_P0_E0<TemporalValue>) () -> {
-      TemporalValue value = new TemporalValue();
-      value = value.slice(((LocalDate) Generated_CornerCases_Test.d_), ((Number) (new BigDecimal("43.33").setScale(2, RoundingMode.DOWN))));
-      return value;
-    }).invoke(), (Object) TemporalValueHelper.perform(Generated_CornerCases_Test.aTTInt_, Generated_CornerCases_Test.aTTReal_, ((_FunctionTypes._return_P2_E0<Number, Object, Object>) (Object l, Object r) -> TemporalOps.plus(l, r)), null));
+    Assert.assertEquals("Expected: " + new TemporalValue().slice((LocalDate) Generated_CornerCases_Test.d_, (Number) new BigDecimal("43.33").setScale(2, RoundingMode.DOWN)) + ", but was: " + TemporalValueHelper.perform(Generated_CornerCases_Test.aTTInt_, Generated_CornerCases_Test.aTTReal_, (Object l, Object r) -> TemporalOps.plus(l, r), null), (Object) new TemporalValue().slice((LocalDate) Generated_CornerCases_Test.d_, (Number) new BigDecimal("43.33").setScale(2, RoundingMode.DOWN)), (Object) TemporalValueHelper.perform(Generated_CornerCases_Test.aTTInt_, Generated_CornerCases_Test.aTTReal_, (Object l, Object r) -> TemporalOps.plus(l, r), null));
   }
   public static final Function<ParameterSetWrapper, Number> mapPlusInt_ = new Function<ParameterSetWrapper, Number>() {
     public Number apply(ParameterSetWrapper param) {
@@ -1631,11 +1341,7 @@ public class Generated_CornerCases_Test {
   };
   @Test
   public void AddingEach_item0_4048497906934562891() throws Throwable {
-    Assert.assertEquals("Expected: " + (((_FunctionTypes._return_P0_E0<TemporalValue>) () -> {
-      TemporalValue value = new TemporalValue();
-      value = value.slice(((LocalDate) Generated_CornerCases_Test.d_), ((Number) new BigInteger("20")));
-      return value;
-    }).invoke()) + ", but was: " + (((_FunctionTypes._return_P0_E0<TemporalValue>) () -> {
+    Assert.assertEquals("Expected: " + new TemporalValue().slice((LocalDate) Generated_CornerCases_Test.d_, (Number) new BigInteger("20")) + ", but was: " + (((_FunctionTypes._return_P0_E0<TemporalValue>) () -> {
       TemporalValue tv = Generated_CornerCases_Test.aTTInt_;
       TemporalValue result = new TemporalValue();
       for (SliceValue s : ListSequence.fromList(tv.slices())) {
@@ -1645,11 +1351,7 @@ public class Generated_CornerCases_Test {
         }
       }
       return result;
-    }).invoke()), (Object) ((_FunctionTypes._return_P0_E0<TemporalValue>) () -> {
-      TemporalValue value = new TemporalValue();
-      value = value.slice(((LocalDate) Generated_CornerCases_Test.d_), ((Number) new BigInteger("20")));
-      return value;
-    }).invoke(), (Object) ((_FunctionTypes._return_P0_E0<TemporalValue>) () -> {
+    }).invoke()), (Object) new TemporalValue().slice((LocalDate) Generated_CornerCases_Test.d_, (Number) new BigInteger("20")), (Object) ((_FunctionTypes._return_P0_E0<TemporalValue>) () -> {
       TemporalValue tv = Generated_CornerCases_Test.aTTInt_;
       TemporalValue result = new TemporalValue();
       for (SliceValue s : ListSequence.fromList(tv.slices())) {
@@ -1663,11 +1365,7 @@ public class Generated_CornerCases_Test {
   }
   @Test
   public void AddingEach_item1_4048497906934562897() throws Throwable {
-    Assert.assertEquals("Expected: " + (((_FunctionTypes._return_P0_E0<TemporalValue>) () -> {
-      TemporalValue value = new TemporalValue();
-      value = value.slice(((LocalDate) Generated_CornerCases_Test.d_), "10s");
-      return value;
-    }).invoke()) + ", but was: " + (((_FunctionTypes._return_P0_E0<TemporalValue>) () -> {
+    Assert.assertEquals("Expected: " + new TemporalValue().slice((LocalDate) Generated_CornerCases_Test.d_, "10s") + ", but was: " + (((_FunctionTypes._return_P0_E0<TemporalValue>) () -> {
       TemporalValue tv = Generated_CornerCases_Test.aTTInt_;
       TemporalValue result = new TemporalValue();
       for (SliceValue s : ListSequence.fromList(tv.slices())) {
@@ -1677,11 +1375,7 @@ public class Generated_CornerCases_Test {
         }
       }
       return result;
-    }).invoke()), (Object) ((_FunctionTypes._return_P0_E0<TemporalValue>) () -> {
-      TemporalValue value = new TemporalValue();
-      value = value.slice(((LocalDate) Generated_CornerCases_Test.d_), "10s");
-      return value;
-    }).invoke(), (Object) ((_FunctionTypes._return_P0_E0<TemporalValue>) () -> {
+    }).invoke()), (Object) new TemporalValue().slice((LocalDate) Generated_CornerCases_Test.d_, "10s"), (Object) ((_FunctionTypes._return_P0_E0<TemporalValue>) () -> {
       TemporalValue tv = Generated_CornerCases_Test.aTTInt_;
       TemporalValue result = new TemporalValue();
       for (SliceValue s : ListSequence.fromList(tv.slices())) {
@@ -1695,11 +1389,7 @@ public class Generated_CornerCases_Test {
   }
   @Test
   public void AddingEach_item2_4048497906934562903() throws Throwable {
-    Assert.assertEquals("Expected: " + (((_FunctionTypes._return_P0_E0<TemporalValue>) () -> {
-      TemporalValue value = new TemporalValue();
-      value = value.slice(((LocalDate) Generated_CornerCases_Test.d_), ((Number) (new BigDecimal("20.00").setScale(2, RoundingMode.DOWN))));
-      return value;
-    }).invoke()) + ", but was: " + (((_FunctionTypes._return_P0_E0<TemporalValue>) () -> {
+    Assert.assertEquals("Expected: " + new TemporalValue().slice((LocalDate) Generated_CornerCases_Test.d_, (Number) new BigDecimal("20.00").setScale(2, RoundingMode.DOWN)) + ", but was: " + (((_FunctionTypes._return_P0_E0<TemporalValue>) () -> {
       TemporalValue tv = Generated_CornerCases_Test.aTTPseudoInt_;
       TemporalValue result = new TemporalValue();
       for (SliceValue s : ListSequence.fromList(tv.slices())) {
@@ -1709,11 +1399,7 @@ public class Generated_CornerCases_Test {
         }
       }
       return result;
-    }).invoke()), (Object) ((_FunctionTypes._return_P0_E0<TemporalValue>) () -> {
-      TemporalValue value = new TemporalValue();
-      value = value.slice(((LocalDate) Generated_CornerCases_Test.d_), ((Number) (new BigDecimal("20.00").setScale(2, RoundingMode.DOWN))));
-      return value;
-    }).invoke(), (Object) ((_FunctionTypes._return_P0_E0<TemporalValue>) () -> {
+    }).invoke()), (Object) new TemporalValue().slice((LocalDate) Generated_CornerCases_Test.d_, (Number) new BigDecimal("20.00").setScale(2, RoundingMode.DOWN)), (Object) ((_FunctionTypes._return_P0_E0<TemporalValue>) () -> {
       TemporalValue tv = Generated_CornerCases_Test.aTTPseudoInt_;
       TemporalValue result = new TemporalValue();
       for (SliceValue s : ListSequence.fromList(tv.slices())) {
@@ -1727,11 +1413,7 @@ public class Generated_CornerCases_Test {
   }
   @Test
   public void AddingEach_item3_4048497906934562909() throws Throwable {
-    Assert.assertEquals("Expected: " + (((_FunctionTypes._return_P0_E0<TemporalValue>) () -> {
-      TemporalValue value = new TemporalValue();
-      value = value.slice(((LocalDate) Generated_CornerCases_Test.d_), "10.00s");
-      return value;
-    }).invoke()) + ", but was: " + (((_FunctionTypes._return_P0_E0<TemporalValue>) () -> {
+    Assert.assertEquals("Expected: " + new TemporalValue().slice((LocalDate) Generated_CornerCases_Test.d_, "10.00s") + ", but was: " + (((_FunctionTypes._return_P0_E0<TemporalValue>) () -> {
       TemporalValue tv = Generated_CornerCases_Test.aTTPseudoInt_;
       TemporalValue result = new TemporalValue();
       for (SliceValue s : ListSequence.fromList(tv.slices())) {
@@ -1741,11 +1423,7 @@ public class Generated_CornerCases_Test {
         }
       }
       return result;
-    }).invoke()), (Object) ((_FunctionTypes._return_P0_E0<TemporalValue>) () -> {
-      TemporalValue value = new TemporalValue();
-      value = value.slice(((LocalDate) Generated_CornerCases_Test.d_), "10.00s");
-      return value;
-    }).invoke(), (Object) ((_FunctionTypes._return_P0_E0<TemporalValue>) () -> {
+    }).invoke()), (Object) new TemporalValue().slice((LocalDate) Generated_CornerCases_Test.d_, "10.00s"), (Object) ((_FunctionTypes._return_P0_E0<TemporalValue>) () -> {
       TemporalValue tv = Generated_CornerCases_Test.aTTPseudoInt_;
       TemporalValue result = new TemporalValue();
       for (SliceValue s : ListSequence.fromList(tv.slices())) {
@@ -1759,11 +1437,7 @@ public class Generated_CornerCases_Test {
   }
   @Test
   public void AddingEach_item4_4048497906934562915() throws Throwable {
-    Assert.assertEquals("Expected: " + (((_FunctionTypes._return_P0_E0<TemporalValue>) () -> {
-      TemporalValue value = new TemporalValue();
-      value = value.slice(((LocalDate) Generated_CornerCases_Test.d_), ((Number) (new BigDecimal("66.66").setScale(2, RoundingMode.DOWN))));
-      return value;
-    }).invoke()) + ", but was: " + (((_FunctionTypes._return_P0_E0<TemporalValue>) () -> {
+    Assert.assertEquals("Expected: " + new TemporalValue().slice((LocalDate) Generated_CornerCases_Test.d_, (Number) new BigDecimal("66.66").setScale(2, RoundingMode.DOWN)) + ", but was: " + (((_FunctionTypes._return_P0_E0<TemporalValue>) () -> {
       TemporalValue tv = Generated_CornerCases_Test.aTTReal_;
       TemporalValue result = new TemporalValue();
       for (SliceValue s : ListSequence.fromList(tv.slices())) {
@@ -1773,11 +1447,7 @@ public class Generated_CornerCases_Test {
         }
       }
       return result;
-    }).invoke()), (Object) ((_FunctionTypes._return_P0_E0<TemporalValue>) () -> {
-      TemporalValue value = new TemporalValue();
-      value = value.slice(((LocalDate) Generated_CornerCases_Test.d_), ((Number) (new BigDecimal("66.66").setScale(2, RoundingMode.DOWN))));
-      return value;
-    }).invoke(), (Object) ((_FunctionTypes._return_P0_E0<TemporalValue>) () -> {
+    }).invoke()), (Object) new TemporalValue().slice((LocalDate) Generated_CornerCases_Test.d_, (Number) new BigDecimal("66.66").setScale(2, RoundingMode.DOWN)), (Object) ((_FunctionTypes._return_P0_E0<TemporalValue>) () -> {
       TemporalValue tv = Generated_CornerCases_Test.aTTReal_;
       TemporalValue result = new TemporalValue();
       for (SliceValue s : ListSequence.fromList(tv.slices())) {
@@ -1791,11 +1461,7 @@ public class Generated_CornerCases_Test {
   }
   @Test
   public void AddingEach_item5_4048497906934562921() throws Throwable {
-    Assert.assertEquals("Expected: " + (((_FunctionTypes._return_P0_E0<TemporalValue>) () -> {
-      TemporalValue value = new TemporalValue();
-      value = value.slice(((LocalDate) Generated_CornerCases_Test.d_), "33.33s");
-      return value;
-    }).invoke()) + ", but was: " + (((_FunctionTypes._return_P0_E0<TemporalValue>) () -> {
+    Assert.assertEquals("Expected: " + new TemporalValue().slice((LocalDate) Generated_CornerCases_Test.d_, "33.33s") + ", but was: " + (((_FunctionTypes._return_P0_E0<TemporalValue>) () -> {
       TemporalValue tv = Generated_CornerCases_Test.aTTReal_;
       TemporalValue result = new TemporalValue();
       for (SliceValue s : ListSequence.fromList(tv.slices())) {
@@ -1805,11 +1471,7 @@ public class Generated_CornerCases_Test {
         }
       }
       return result;
-    }).invoke()), (Object) ((_FunctionTypes._return_P0_E0<TemporalValue>) () -> {
-      TemporalValue value = new TemporalValue();
-      value = value.slice(((LocalDate) Generated_CornerCases_Test.d_), "33.33s");
-      return value;
-    }).invoke(), (Object) ((_FunctionTypes._return_P0_E0<TemporalValue>) () -> {
+    }).invoke()), (Object) new TemporalValue().slice((LocalDate) Generated_CornerCases_Test.d_, "33.33s"), (Object) ((_FunctionTypes._return_P0_E0<TemporalValue>) () -> {
       TemporalValue tv = Generated_CornerCases_Test.aTTReal_;
       TemporalValue result = new TemporalValue();
       for (SliceValue s : ListSequence.fromList(tv.slices())) {
@@ -1823,11 +1485,7 @@ public class Generated_CornerCases_Test {
   }
   @Test
   public void AddingEach_item6_4048497906934562927() throws Throwable {
-    Assert.assertEquals("Expected: " + (((_FunctionTypes._return_P0_E0<TemporalValue>) () -> {
-      TemporalValue value = new TemporalValue();
-      value = value.slice(((LocalDate) Generated_CornerCases_Test.d_), ((Number) (new BigDecimal("20.00").setScale(2, RoundingMode.DOWN))));
-      return value;
-    }).invoke()) + ", but was: " + (((_FunctionTypes._return_P0_E0<TemporalValue>) () -> {
+    Assert.assertEquals("Expected: " + new TemporalValue().slice((LocalDate) Generated_CornerCases_Test.d_, (Number) new BigDecimal("20.00").setScale(2, RoundingMode.DOWN)) + ", but was: " + (((_FunctionTypes._return_P0_E0<TemporalValue>) () -> {
       TemporalValue tv = Generated_CornerCases_Test.aTTInt_;
       TemporalValue result = new TemporalValue();
       for (SliceValue s : ListSequence.fromList(tv.slices())) {
@@ -1837,11 +1495,7 @@ public class Generated_CornerCases_Test {
         }
       }
       return result;
-    }).invoke()), (Object) ((_FunctionTypes._return_P0_E0<TemporalValue>) () -> {
-      TemporalValue value = new TemporalValue();
-      value = value.slice(((LocalDate) Generated_CornerCases_Test.d_), ((Number) (new BigDecimal("20.00").setScale(2, RoundingMode.DOWN))));
-      return value;
-    }).invoke(), (Object) ((_FunctionTypes._return_P0_E0<TemporalValue>) () -> {
+    }).invoke()), (Object) new TemporalValue().slice((LocalDate) Generated_CornerCases_Test.d_, (Number) new BigDecimal("20.00").setScale(2, RoundingMode.DOWN)), (Object) ((_FunctionTypes._return_P0_E0<TemporalValue>) () -> {
       TemporalValue tv = Generated_CornerCases_Test.aTTInt_;
       TemporalValue result = new TemporalValue();
       for (SliceValue s : ListSequence.fromList(tv.slices())) {
@@ -1855,11 +1509,7 @@ public class Generated_CornerCases_Test {
   }
   @Test
   public void AddingEach_item7_4048497906934562933() throws Throwable {
-    Assert.assertEquals("Expected: " + (((_FunctionTypes._return_P0_E0<TemporalValue>) () -> {
-      TemporalValue value = new TemporalValue();
-      value = value.slice(((LocalDate) Generated_CornerCases_Test.d_), ((Number) (new BigDecimal("43.33").setScale(2, RoundingMode.DOWN))));
-      return value;
-    }).invoke()) + ", but was: " + (((_FunctionTypes._return_P0_E0<TemporalValue>) () -> {
+    Assert.assertEquals("Expected: " + new TemporalValue().slice((LocalDate) Generated_CornerCases_Test.d_, (Number) new BigDecimal("43.33").setScale(2, RoundingMode.DOWN)) + ", but was: " + (((_FunctionTypes._return_P0_E0<TemporalValue>) () -> {
       TemporalValue tv = Generated_CornerCases_Test.aTTInt_;
       TemporalValue result = new TemporalValue();
       for (SliceValue s : ListSequence.fromList(tv.slices())) {
@@ -1869,11 +1519,7 @@ public class Generated_CornerCases_Test {
         }
       }
       return result;
-    }).invoke()), (Object) ((_FunctionTypes._return_P0_E0<TemporalValue>) () -> {
-      TemporalValue value = new TemporalValue();
-      value = value.slice(((LocalDate) Generated_CornerCases_Test.d_), ((Number) (new BigDecimal("43.33").setScale(2, RoundingMode.DOWN))));
-      return value;
-    }).invoke(), (Object) ((_FunctionTypes._return_P0_E0<TemporalValue>) () -> {
+    }).invoke()), (Object) new TemporalValue().slice((LocalDate) Generated_CornerCases_Test.d_, (Number) new BigDecimal("43.33").setScale(2, RoundingMode.DOWN)), (Object) ((_FunctionTypes._return_P0_E0<TemporalValue>) () -> {
       TemporalValue tv = Generated_CornerCases_Test.aTTInt_;
       TemporalValue result = new TemporalValue();
       for (SliceValue s : ListSequence.fromList(tv.slices())) {
@@ -1887,11 +1533,7 @@ public class Generated_CornerCases_Test {
   }
   @Test
   public void AddingEach_item8_4048497906935213408() throws Throwable {
-    Assert.assertEquals("Expected: " + (((_FunctionTypes._return_P0_E0<TemporalValue>) () -> {
-      TemporalValue value = new TemporalValue();
-      value = value.slice(((LocalDate) Generated_CornerCases_Test.d_), ((Number) (new BigDecimal("43.33").setScale(2, RoundingMode.DOWN))));
-      return value;
-    }).invoke()) + ", but was: " + (((_FunctionTypes._return_P0_E0<TemporalValue>) () -> {
+    Assert.assertEquals("Expected: " + new TemporalValue().slice((LocalDate) Generated_CornerCases_Test.d_, (Number) new BigDecimal("43.33").setScale(2, RoundingMode.DOWN)) + ", but was: " + (((_FunctionTypes._return_P0_E0<TemporalValue>) () -> {
       TemporalValue tv = Generated_CornerCases_Test.aTTReal_;
       TemporalValue result = new TemporalValue();
       for (SliceValue s : ListSequence.fromList(tv.slices())) {
@@ -1901,11 +1543,7 @@ public class Generated_CornerCases_Test {
         }
       }
       return result;
-    }).invoke()), (Object) ((_FunctionTypes._return_P0_E0<TemporalValue>) () -> {
-      TemporalValue value = new TemporalValue();
-      value = value.slice(((LocalDate) Generated_CornerCases_Test.d_), ((Number) (new BigDecimal("43.33").setScale(2, RoundingMode.DOWN))));
-      return value;
-    }).invoke(), (Object) ((_FunctionTypes._return_P0_E0<TemporalValue>) () -> {
+    }).invoke()), (Object) new TemporalValue().slice((LocalDate) Generated_CornerCases_Test.d_, (Number) new BigDecimal("43.33").setScale(2, RoundingMode.DOWN)), (Object) ((_FunctionTypes._return_P0_E0<TemporalValue>) () -> {
       TemporalValue tv = Generated_CornerCases_Test.aTTReal_;
       TemporalValue result = new TemporalValue();
       for (SliceValue s : ListSequence.fromList(tv.slices())) {
@@ -1919,11 +1557,7 @@ public class Generated_CornerCases_Test {
   }
   @Test
   public void AddingEachThatFails_item0_4048497906935756272() throws Throwable {
-    Assert.assertEquals("Expected: " + (((_FunctionTypes._return_P0_E0<TemporalValue>) () -> {
-      TemporalValue value = new TemporalValue();
-      value = value.slice(((LocalDate) Generated_CornerCases_Test.d_), ((Number) (new BigDecimal("43.33").setScale(2, RoundingMode.DOWN))));
-      return value;
-    }).invoke()) + ", but was: " + (((_FunctionTypes._return_P0_E0<TemporalValue>) () -> {
+    Assert.assertEquals("Expected: " + new TemporalValue().slice((LocalDate) Generated_CornerCases_Test.d_, (Number) new BigDecimal("43.33").setScale(2, RoundingMode.DOWN)) + ", but was: " + (((_FunctionTypes._return_P0_E0<TemporalValue>) () -> {
       TemporalValue tv = Generated_CornerCases_Test.aTTReal_;
       TemporalValue result = new TemporalValue();
       for (SliceValue s : ListSequence.fromList(tv.slices())) {
@@ -1933,11 +1567,7 @@ public class Generated_CornerCases_Test {
         }
       }
       return result;
-    }).invoke()), (Object) ((_FunctionTypes._return_P0_E0<TemporalValue>) () -> {
-      TemporalValue value = new TemporalValue();
-      value = value.slice(((LocalDate) Generated_CornerCases_Test.d_), ((Number) (new BigDecimal("43.33").setScale(2, RoundingMode.DOWN))));
-      return value;
-    }).invoke(), (Object) ((_FunctionTypes._return_P0_E0<TemporalValue>) () -> {
+    }).invoke()), (Object) new TemporalValue().slice((LocalDate) Generated_CornerCases_Test.d_, (Number) new BigDecimal("43.33").setScale(2, RoundingMode.DOWN)), (Object) ((_FunctionTypes._return_P0_E0<TemporalValue>) () -> {
       TemporalValue tv = Generated_CornerCases_Test.aTTReal_;
       TemporalValue result = new TemporalValue();
       for (SliceValue s : ListSequence.fromList(tv.slices())) {
@@ -1951,21 +1581,8 @@ public class Generated_CornerCases_Test {
   }
   @Test
   public void mapEach_item0_9170514180379288700() throws Throwable {
-    Assert.assertEquals("Expected: " + (((_FunctionTypes._return_P0_E0<TemporalValue>) () -> {
-      TemporalValue value = new TemporalValue();
-      value = value.slice(((LocalDate) LocalDate.MIN), true);
-      return value;
-    }).invoke()) + ", but was: " + (((_FunctionTypes._return_P0_E0<TemporalValue>) () -> {
-      TemporalValue tv = ((_FunctionTypes._return_P0_E0<TemporalValue>) () -> {
-        TemporalValue value = new TemporalValue();
-        value = value.slice(((LocalDate) LocalDate.MIN), ((Number) (new BigDecimal("0.00").setScale(2, RoundingMode.DOWN))));
-        value = value.slice(((LocalDate) LocalDate.of(2000, 1, 1)), ((Number) (new BigDecimal("100.00").setScale(2, RoundingMode.DOWN))));
-        value = value.slice(((LocalDate) LocalDate.of(2003, 1, 1)), ((Number) (new BigDecimal("110.00").setScale(2, RoundingMode.DOWN))));
-        value = value.slice(((LocalDate) LocalDate.of(2004, 1, 1)), ((Number) (new BigDecimal("220.00").setScale(2, RoundingMode.DOWN))));
-        value = value.slice(((LocalDate) LocalDate.of(2005, 1, 1)), ((Number) (new BigDecimal("240.00").setScale(2, RoundingMode.DOWN))));
-        value = value.slice(((LocalDate) LocalDate.of(2010, 1, 1)), ((Number) (new BigDecimal("120.00").setScale(2, RoundingMode.DOWN))));
-        return value;
-      }).invoke();
+    Assert.assertEquals("Expected: " + new TemporalValue().slice((LocalDate) LocalDate.MIN, true) + ", but was: " + (((_FunctionTypes._return_P0_E0<TemporalValue>) () -> {
+      TemporalValue tv = new TemporalValue().slice((LocalDate) LocalDate.MIN, (Number) new BigDecimal("0.00").setScale(2, RoundingMode.DOWN)).slice((LocalDate) LocalDate.of(2000, 1, 1), (Number) new BigDecimal("100.00").setScale(2, RoundingMode.DOWN)).slice((LocalDate) LocalDate.of(2003, 1, 1), (Number) new BigDecimal("110.00").setScale(2, RoundingMode.DOWN)).slice((LocalDate) LocalDate.of(2004, 1, 1), (Number) new BigDecimal("220.00").setScale(2, RoundingMode.DOWN)).slice((LocalDate) LocalDate.of(2005, 1, 1), (Number) new BigDecimal("240.00").setScale(2, RoundingMode.DOWN)).slice((LocalDate) LocalDate.of(2010, 1, 1), (Number) new BigDecimal("120.00").setScale(2, RoundingMode.DOWN));
       TemporalValue result = new TemporalValue();
       for (SliceValue s : ListSequence.fromList(tv.slices())) {
         Object o = Generated_CornerCases_Test.mapping1_.apply(new ParameterSetWrapper(s.value()));
@@ -1974,21 +1591,8 @@ public class Generated_CornerCases_Test {
         }
       }
       return result;
-    }).invoke()), (Object) ((_FunctionTypes._return_P0_E0<TemporalValue>) () -> {
-      TemporalValue value = new TemporalValue();
-      value = value.slice(((LocalDate) LocalDate.MIN), true);
-      return value;
-    }).invoke(), (Object) ((_FunctionTypes._return_P0_E0<TemporalValue>) () -> {
-      TemporalValue tv = ((_FunctionTypes._return_P0_E0<TemporalValue>) () -> {
-        TemporalValue value = new TemporalValue();
-        value = value.slice(((LocalDate) LocalDate.MIN), ((Number) (new BigDecimal("0.00").setScale(2, RoundingMode.DOWN))));
-        value = value.slice(((LocalDate) LocalDate.of(2000, 1, 1)), ((Number) (new BigDecimal("100.00").setScale(2, RoundingMode.DOWN))));
-        value = value.slice(((LocalDate) LocalDate.of(2003, 1, 1)), ((Number) (new BigDecimal("110.00").setScale(2, RoundingMode.DOWN))));
-        value = value.slice(((LocalDate) LocalDate.of(2004, 1, 1)), ((Number) (new BigDecimal("220.00").setScale(2, RoundingMode.DOWN))));
-        value = value.slice(((LocalDate) LocalDate.of(2005, 1, 1)), ((Number) (new BigDecimal("240.00").setScale(2, RoundingMode.DOWN))));
-        value = value.slice(((LocalDate) LocalDate.of(2010, 1, 1)), ((Number) (new BigDecimal("120.00").setScale(2, RoundingMode.DOWN))));
-        return value;
-      }).invoke();
+    }).invoke()), (Object) new TemporalValue().slice((LocalDate) LocalDate.MIN, true), (Object) ((_FunctionTypes._return_P0_E0<TemporalValue>) () -> {
+      TemporalValue tv = new TemporalValue().slice((LocalDate) LocalDate.MIN, (Number) new BigDecimal("0.00").setScale(2, RoundingMode.DOWN)).slice((LocalDate) LocalDate.of(2000, 1, 1), (Number) new BigDecimal("100.00").setScale(2, RoundingMode.DOWN)).slice((LocalDate) LocalDate.of(2003, 1, 1), (Number) new BigDecimal("110.00").setScale(2, RoundingMode.DOWN)).slice((LocalDate) LocalDate.of(2004, 1, 1), (Number) new BigDecimal("220.00").setScale(2, RoundingMode.DOWN)).slice((LocalDate) LocalDate.of(2005, 1, 1), (Number) new BigDecimal("240.00").setScale(2, RoundingMode.DOWN)).slice((LocalDate) LocalDate.of(2010, 1, 1), (Number) new BigDecimal("120.00").setScale(2, RoundingMode.DOWN));
       TemporalValue result = new TemporalValue();
       for (SliceValue s : ListSequence.fromList(tv.slices())) {
         Object o = Generated_CornerCases_Test.mapping1_.apply(new ParameterSetWrapper(s.value()));
@@ -2001,26 +1605,8 @@ public class Generated_CornerCases_Test {
   }
   @Test
   public void mapEach_item1_9170514180379331605() throws Throwable {
-    Assert.assertEquals("Expected: " + (((_FunctionTypes._return_P0_E0<TemporalValue>) () -> {
-      TemporalValue value = new TemporalValue();
-      value = value.slice(((LocalDate) LocalDate.MIN), "0.00a");
-      value = value.slice(((LocalDate) LocalDate.of(2000, 1, 1)), "100.00a");
-      value = value.slice(((LocalDate) LocalDate.of(2003, 1, 1)), "110.00a");
-      value = value.slice(((LocalDate) LocalDate.of(2004, 1, 1)), "220.00a");
-      value = value.slice(((LocalDate) LocalDate.of(2005, 1, 1)), "240.00a");
-      value = value.slice(((LocalDate) LocalDate.of(2010, 1, 1)), "120.00a");
-      return value;
-    }).invoke()) + ", but was: " + (((_FunctionTypes._return_P0_E0<TemporalValue>) () -> {
-      TemporalValue tv = ((_FunctionTypes._return_P0_E0<TemporalValue>) () -> {
-        TemporalValue value = new TemporalValue();
-        value = value.slice(((LocalDate) LocalDate.MIN), ((Number) (new BigDecimal("0.00").setScale(2, RoundingMode.DOWN))));
-        value = value.slice(((LocalDate) LocalDate.of(2000, 1, 1)), ((Number) (new BigDecimal("100.00").setScale(2, RoundingMode.DOWN))));
-        value = value.slice(((LocalDate) LocalDate.of(2003, 1, 1)), ((Number) (new BigDecimal("110.00").setScale(2, RoundingMode.DOWN))));
-        value = value.slice(((LocalDate) LocalDate.of(2004, 1, 1)), ((Number) (new BigDecimal("220.00").setScale(2, RoundingMode.DOWN))));
-        value = value.slice(((LocalDate) LocalDate.of(2005, 1, 1)), ((Number) (new BigDecimal("240.00").setScale(2, RoundingMode.DOWN))));
-        value = value.slice(((LocalDate) LocalDate.of(2010, 1, 1)), ((Number) (new BigDecimal("120.00").setScale(2, RoundingMode.DOWN))));
-        return value;
-      }).invoke();
+    Assert.assertEquals("Expected: " + new TemporalValue().slice((LocalDate) LocalDate.MIN, "0.00a").slice((LocalDate) LocalDate.of(2000, 1, 1), "100.00a").slice((LocalDate) LocalDate.of(2003, 1, 1), "110.00a").slice((LocalDate) LocalDate.of(2004, 1, 1), "220.00a").slice((LocalDate) LocalDate.of(2005, 1, 1), "240.00a").slice((LocalDate) LocalDate.of(2010, 1, 1), "120.00a") + ", but was: " + (((_FunctionTypes._return_P0_E0<TemporalValue>) () -> {
+      TemporalValue tv = new TemporalValue().slice((LocalDate) LocalDate.MIN, (Number) new BigDecimal("0.00").setScale(2, RoundingMode.DOWN)).slice((LocalDate) LocalDate.of(2000, 1, 1), (Number) new BigDecimal("100.00").setScale(2, RoundingMode.DOWN)).slice((LocalDate) LocalDate.of(2003, 1, 1), (Number) new BigDecimal("110.00").setScale(2, RoundingMode.DOWN)).slice((LocalDate) LocalDate.of(2004, 1, 1), (Number) new BigDecimal("220.00").setScale(2, RoundingMode.DOWN)).slice((LocalDate) LocalDate.of(2005, 1, 1), (Number) new BigDecimal("240.00").setScale(2, RoundingMode.DOWN)).slice((LocalDate) LocalDate.of(2010, 1, 1), (Number) new BigDecimal("120.00").setScale(2, RoundingMode.DOWN));
       TemporalValue result = new TemporalValue();
       for (SliceValue s : ListSequence.fromList(tv.slices())) {
         Object o = Generated_CornerCases_Test.mapping2_.apply(new ParameterSetWrapper(s.value()));
@@ -2029,26 +1615,8 @@ public class Generated_CornerCases_Test {
         }
       }
       return result;
-    }).invoke()), (Object) ((_FunctionTypes._return_P0_E0<TemporalValue>) () -> {
-      TemporalValue value = new TemporalValue();
-      value = value.slice(((LocalDate) LocalDate.MIN), "0.00a");
-      value = value.slice(((LocalDate) LocalDate.of(2000, 1, 1)), "100.00a");
-      value = value.slice(((LocalDate) LocalDate.of(2003, 1, 1)), "110.00a");
-      value = value.slice(((LocalDate) LocalDate.of(2004, 1, 1)), "220.00a");
-      value = value.slice(((LocalDate) LocalDate.of(2005, 1, 1)), "240.00a");
-      value = value.slice(((LocalDate) LocalDate.of(2010, 1, 1)), "120.00a");
-      return value;
-    }).invoke(), (Object) ((_FunctionTypes._return_P0_E0<TemporalValue>) () -> {
-      TemporalValue tv = ((_FunctionTypes._return_P0_E0<TemporalValue>) () -> {
-        TemporalValue value = new TemporalValue();
-        value = value.slice(((LocalDate) LocalDate.MIN), ((Number) (new BigDecimal("0.00").setScale(2, RoundingMode.DOWN))));
-        value = value.slice(((LocalDate) LocalDate.of(2000, 1, 1)), ((Number) (new BigDecimal("100.00").setScale(2, RoundingMode.DOWN))));
-        value = value.slice(((LocalDate) LocalDate.of(2003, 1, 1)), ((Number) (new BigDecimal("110.00").setScale(2, RoundingMode.DOWN))));
-        value = value.slice(((LocalDate) LocalDate.of(2004, 1, 1)), ((Number) (new BigDecimal("220.00").setScale(2, RoundingMode.DOWN))));
-        value = value.slice(((LocalDate) LocalDate.of(2005, 1, 1)), ((Number) (new BigDecimal("240.00").setScale(2, RoundingMode.DOWN))));
-        value = value.slice(((LocalDate) LocalDate.of(2010, 1, 1)), ((Number) (new BigDecimal("120.00").setScale(2, RoundingMode.DOWN))));
-        return value;
-      }).invoke();
+    }).invoke()), (Object) new TemporalValue().slice((LocalDate) LocalDate.MIN, "0.00a").slice((LocalDate) LocalDate.of(2000, 1, 1), "100.00a").slice((LocalDate) LocalDate.of(2003, 1, 1), "110.00a").slice((LocalDate) LocalDate.of(2004, 1, 1), "220.00a").slice((LocalDate) LocalDate.of(2005, 1, 1), "240.00a").slice((LocalDate) LocalDate.of(2010, 1, 1), "120.00a"), (Object) ((_FunctionTypes._return_P0_E0<TemporalValue>) () -> {
+      TemporalValue tv = new TemporalValue().slice((LocalDate) LocalDate.MIN, (Number) new BigDecimal("0.00").setScale(2, RoundingMode.DOWN)).slice((LocalDate) LocalDate.of(2000, 1, 1), (Number) new BigDecimal("100.00").setScale(2, RoundingMode.DOWN)).slice((LocalDate) LocalDate.of(2003, 1, 1), (Number) new BigDecimal("110.00").setScale(2, RoundingMode.DOWN)).slice((LocalDate) LocalDate.of(2004, 1, 1), (Number) new BigDecimal("220.00").setScale(2, RoundingMode.DOWN)).slice((LocalDate) LocalDate.of(2005, 1, 1), (Number) new BigDecimal("240.00").setScale(2, RoundingMode.DOWN)).slice((LocalDate) LocalDate.of(2010, 1, 1), (Number) new BigDecimal("120.00").setScale(2, RoundingMode.DOWN));
       TemporalValue result = new TemporalValue();
       for (SliceValue s : ListSequence.fromList(tv.slices())) {
         Object o = Generated_CornerCases_Test.mapping2_.apply(new ParameterSetWrapper(s.value()));
@@ -2061,26 +1629,8 @@ public class Generated_CornerCases_Test {
   }
   @Test
   public void mapEach_item2_9170514180379331708() throws Throwable {
-    Assert.assertEquals("Expected: " + (((_FunctionTypes._return_P0_E0<TemporalValue>) () -> {
-      TemporalValue value = new TemporalValue();
-      value = value.slice(((LocalDate) LocalDate.MIN), ((Number) (new BigDecimal("1.00").setScale(2, RoundingMode.DOWN))));
-      value = value.slice(((LocalDate) LocalDate.of(2000, 1, 1)), ((Number) (new BigDecimal("101.00").setScale(2, RoundingMode.DOWN))));
-      value = value.slice(((LocalDate) LocalDate.of(2003, 1, 1)), ((Number) (new BigDecimal("111.00").setScale(2, RoundingMode.DOWN))));
-      value = value.slice(((LocalDate) LocalDate.of(2004, 1, 1)), ((Number) (new BigDecimal("221.00").setScale(2, RoundingMode.DOWN))));
-      value = value.slice(((LocalDate) LocalDate.of(2005, 1, 1)), ((Number) (new BigDecimal("241.00").setScale(2, RoundingMode.DOWN))));
-      value = value.slice(((LocalDate) LocalDate.of(2010, 1, 1)), ((Number) (new BigDecimal("121.00").setScale(2, RoundingMode.DOWN))));
-      return value;
-    }).invoke()) + ", but was: " + (((_FunctionTypes._return_P0_E0<TemporalValue>) () -> {
-      TemporalValue tv = ((_FunctionTypes._return_P0_E0<TemporalValue>) () -> {
-        TemporalValue value = new TemporalValue();
-        value = value.slice(((LocalDate) LocalDate.MIN), ((Number) (new BigDecimal("0.00").setScale(2, RoundingMode.DOWN))));
-        value = value.slice(((LocalDate) LocalDate.of(2000, 1, 1)), ((Number) (new BigDecimal("100.00").setScale(2, RoundingMode.DOWN))));
-        value = value.slice(((LocalDate) LocalDate.of(2003, 1, 1)), ((Number) (new BigDecimal("110.00").setScale(2, RoundingMode.DOWN))));
-        value = value.slice(((LocalDate) LocalDate.of(2004, 1, 1)), ((Number) (new BigDecimal("220.00").setScale(2, RoundingMode.DOWN))));
-        value = value.slice(((LocalDate) LocalDate.of(2005, 1, 1)), ((Number) (new BigDecimal("240.00").setScale(2, RoundingMode.DOWN))));
-        value = value.slice(((LocalDate) LocalDate.of(2010, 1, 1)), ((Number) (new BigDecimal("120.00").setScale(2, RoundingMode.DOWN))));
-        return value;
-      }).invoke();
+    Assert.assertEquals("Expected: " + new TemporalValue().slice((LocalDate) LocalDate.MIN, (Number) new BigDecimal("1.00").setScale(2, RoundingMode.DOWN)).slice((LocalDate) LocalDate.of(2000, 1, 1), (Number) new BigDecimal("101.00").setScale(2, RoundingMode.DOWN)).slice((LocalDate) LocalDate.of(2003, 1, 1), (Number) new BigDecimal("111.00").setScale(2, RoundingMode.DOWN)).slice((LocalDate) LocalDate.of(2004, 1, 1), (Number) new BigDecimal("221.00").setScale(2, RoundingMode.DOWN)).slice((LocalDate) LocalDate.of(2005, 1, 1), (Number) new BigDecimal("241.00").setScale(2, RoundingMode.DOWN)).slice((LocalDate) LocalDate.of(2010, 1, 1), (Number) new BigDecimal("121.00").setScale(2, RoundingMode.DOWN)) + ", but was: " + (((_FunctionTypes._return_P0_E0<TemporalValue>) () -> {
+      TemporalValue tv = new TemporalValue().slice((LocalDate) LocalDate.MIN, (Number) new BigDecimal("0.00").setScale(2, RoundingMode.DOWN)).slice((LocalDate) LocalDate.of(2000, 1, 1), (Number) new BigDecimal("100.00").setScale(2, RoundingMode.DOWN)).slice((LocalDate) LocalDate.of(2003, 1, 1), (Number) new BigDecimal("110.00").setScale(2, RoundingMode.DOWN)).slice((LocalDate) LocalDate.of(2004, 1, 1), (Number) new BigDecimal("220.00").setScale(2, RoundingMode.DOWN)).slice((LocalDate) LocalDate.of(2005, 1, 1), (Number) new BigDecimal("240.00").setScale(2, RoundingMode.DOWN)).slice((LocalDate) LocalDate.of(2010, 1, 1), (Number) new BigDecimal("120.00").setScale(2, RoundingMode.DOWN));
       TemporalValue result = new TemporalValue();
       for (SliceValue s : ListSequence.fromList(tv.slices())) {
         Object o = Generated_CornerCases_Test.mapping3_.apply(new ParameterSetWrapper(s.value()));
@@ -2089,26 +1639,8 @@ public class Generated_CornerCases_Test {
         }
       }
       return result;
-    }).invoke()), (Object) ((_FunctionTypes._return_P0_E0<TemporalValue>) () -> {
-      TemporalValue value = new TemporalValue();
-      value = value.slice(((LocalDate) LocalDate.MIN), ((Number) (new BigDecimal("1.00").setScale(2, RoundingMode.DOWN))));
-      value = value.slice(((LocalDate) LocalDate.of(2000, 1, 1)), ((Number) (new BigDecimal("101.00").setScale(2, RoundingMode.DOWN))));
-      value = value.slice(((LocalDate) LocalDate.of(2003, 1, 1)), ((Number) (new BigDecimal("111.00").setScale(2, RoundingMode.DOWN))));
-      value = value.slice(((LocalDate) LocalDate.of(2004, 1, 1)), ((Number) (new BigDecimal("221.00").setScale(2, RoundingMode.DOWN))));
-      value = value.slice(((LocalDate) LocalDate.of(2005, 1, 1)), ((Number) (new BigDecimal("241.00").setScale(2, RoundingMode.DOWN))));
-      value = value.slice(((LocalDate) LocalDate.of(2010, 1, 1)), ((Number) (new BigDecimal("121.00").setScale(2, RoundingMode.DOWN))));
-      return value;
-    }).invoke(), (Object) ((_FunctionTypes._return_P0_E0<TemporalValue>) () -> {
-      TemporalValue tv = ((_FunctionTypes._return_P0_E0<TemporalValue>) () -> {
-        TemporalValue value = new TemporalValue();
-        value = value.slice(((LocalDate) LocalDate.MIN), ((Number) (new BigDecimal("0.00").setScale(2, RoundingMode.DOWN))));
-        value = value.slice(((LocalDate) LocalDate.of(2000, 1, 1)), ((Number) (new BigDecimal("100.00").setScale(2, RoundingMode.DOWN))));
-        value = value.slice(((LocalDate) LocalDate.of(2003, 1, 1)), ((Number) (new BigDecimal("110.00").setScale(2, RoundingMode.DOWN))));
-        value = value.slice(((LocalDate) LocalDate.of(2004, 1, 1)), ((Number) (new BigDecimal("220.00").setScale(2, RoundingMode.DOWN))));
-        value = value.slice(((LocalDate) LocalDate.of(2005, 1, 1)), ((Number) (new BigDecimal("240.00").setScale(2, RoundingMode.DOWN))));
-        value = value.slice(((LocalDate) LocalDate.of(2010, 1, 1)), ((Number) (new BigDecimal("120.00").setScale(2, RoundingMode.DOWN))));
-        return value;
-      }).invoke();
+    }).invoke()), (Object) new TemporalValue().slice((LocalDate) LocalDate.MIN, (Number) new BigDecimal("1.00").setScale(2, RoundingMode.DOWN)).slice((LocalDate) LocalDate.of(2000, 1, 1), (Number) new BigDecimal("101.00").setScale(2, RoundingMode.DOWN)).slice((LocalDate) LocalDate.of(2003, 1, 1), (Number) new BigDecimal("111.00").setScale(2, RoundingMode.DOWN)).slice((LocalDate) LocalDate.of(2004, 1, 1), (Number) new BigDecimal("221.00").setScale(2, RoundingMode.DOWN)).slice((LocalDate) LocalDate.of(2005, 1, 1), (Number) new BigDecimal("241.00").setScale(2, RoundingMode.DOWN)).slice((LocalDate) LocalDate.of(2010, 1, 1), (Number) new BigDecimal("121.00").setScale(2, RoundingMode.DOWN)), (Object) ((_FunctionTypes._return_P0_E0<TemporalValue>) () -> {
+      TemporalValue tv = new TemporalValue().slice((LocalDate) LocalDate.MIN, (Number) new BigDecimal("0.00").setScale(2, RoundingMode.DOWN)).slice((LocalDate) LocalDate.of(2000, 1, 1), (Number) new BigDecimal("100.00").setScale(2, RoundingMode.DOWN)).slice((LocalDate) LocalDate.of(2003, 1, 1), (Number) new BigDecimal("110.00").setScale(2, RoundingMode.DOWN)).slice((LocalDate) LocalDate.of(2004, 1, 1), (Number) new BigDecimal("220.00").setScale(2, RoundingMode.DOWN)).slice((LocalDate) LocalDate.of(2005, 1, 1), (Number) new BigDecimal("240.00").setScale(2, RoundingMode.DOWN)).slice((LocalDate) LocalDate.of(2010, 1, 1), (Number) new BigDecimal("120.00").setScale(2, RoundingMode.DOWN));
       TemporalValue result = new TemporalValue();
       for (SliceValue s : ListSequence.fromList(tv.slices())) {
         Object o = Generated_CornerCases_Test.mapping3_.apply(new ParameterSetWrapper(s.value()));
@@ -2121,26 +1653,8 @@ public class Generated_CornerCases_Test {
   }
   @Test
   public void mapEach_item3_8205696982217158180() throws Throwable {
-    Assert.assertEquals("Expected: " + (((_FunctionTypes._return_P0_E0<TemporalValue>) () -> {
-      TemporalValue value = new TemporalValue();
-      value = value.slice(((LocalDate) LocalDate.MIN), ((Number) (new BigDecimal("1.00").setScale(2, RoundingMode.DOWN))));
-      value = value.slice(((LocalDate) LocalDate.of(2000, 1, 1)), ((Number) (new BigDecimal("101.00").setScale(2, RoundingMode.DOWN))));
-      value = value.slice(((LocalDate) LocalDate.of(2003, 1, 1)), ((Number) (new BigDecimal("111.00").setScale(2, RoundingMode.DOWN))));
-      value = value.slice(((LocalDate) LocalDate.of(2004, 1, 1)), ((Number) (new BigDecimal("221.00").setScale(2, RoundingMode.DOWN))));
-      value = value.slice(((LocalDate) LocalDate.of(2005, 1, 1)), ((Number) (new BigDecimal("241.00").setScale(2, RoundingMode.DOWN))));
-      value = value.slice(((LocalDate) LocalDate.of(2010, 1, 1)), ((Number) (new BigDecimal("121.00").setScale(2, RoundingMode.DOWN))));
-      return value;
-    }).invoke()) + ", but was: " + (((_FunctionTypes._return_P0_E0<TemporalValue>) () -> {
-      TemporalValue tv = ((_FunctionTypes._return_P0_E0<TemporalValue>) () -> {
-        TemporalValue value = new TemporalValue();
-        value = value.slice(((LocalDate) LocalDate.MIN), ((Number) (new BigDecimal("0.00").setScale(2, RoundingMode.DOWN))));
-        value = value.slice(((LocalDate) LocalDate.of(2000, 1, 1)), ((Number) (new BigDecimal("100.00").setScale(2, RoundingMode.DOWN))));
-        value = value.slice(((LocalDate) LocalDate.of(2003, 1, 1)), ((Number) (new BigDecimal("110.00").setScale(2, RoundingMode.DOWN))));
-        value = value.slice(((LocalDate) LocalDate.of(2004, 1, 1)), ((Number) (new BigDecimal("220.00").setScale(2, RoundingMode.DOWN))));
-        value = value.slice(((LocalDate) LocalDate.of(2005, 1, 1)), ((Number) (new BigDecimal("240.00").setScale(2, RoundingMode.DOWN))));
-        value = value.slice(((LocalDate) LocalDate.of(2010, 1, 1)), ((Number) (new BigDecimal("120.00").setScale(2, RoundingMode.DOWN))));
-        return value;
-      }).invoke();
+    Assert.assertEquals("Expected: " + new TemporalValue().slice((LocalDate) LocalDate.MIN, (Number) new BigDecimal("1.00").setScale(2, RoundingMode.DOWN)).slice((LocalDate) LocalDate.of(2000, 1, 1), (Number) new BigDecimal("101.00").setScale(2, RoundingMode.DOWN)).slice((LocalDate) LocalDate.of(2003, 1, 1), (Number) new BigDecimal("111.00").setScale(2, RoundingMode.DOWN)).slice((LocalDate) LocalDate.of(2004, 1, 1), (Number) new BigDecimal("221.00").setScale(2, RoundingMode.DOWN)).slice((LocalDate) LocalDate.of(2005, 1, 1), (Number) new BigDecimal("241.00").setScale(2, RoundingMode.DOWN)).slice((LocalDate) LocalDate.of(2010, 1, 1), (Number) new BigDecimal("121.00").setScale(2, RoundingMode.DOWN)) + ", but was: " + (((_FunctionTypes._return_P0_E0<TemporalValue>) () -> {
+      TemporalValue tv = new TemporalValue().slice((LocalDate) LocalDate.MIN, (Number) new BigDecimal("0.00").setScale(2, RoundingMode.DOWN)).slice((LocalDate) LocalDate.of(2000, 1, 1), (Number) new BigDecimal("100.00").setScale(2, RoundingMode.DOWN)).slice((LocalDate) LocalDate.of(2003, 1, 1), (Number) new BigDecimal("110.00").setScale(2, RoundingMode.DOWN)).slice((LocalDate) LocalDate.of(2004, 1, 1), (Number) new BigDecimal("220.00").setScale(2, RoundingMode.DOWN)).slice((LocalDate) LocalDate.of(2005, 1, 1), (Number) new BigDecimal("240.00").setScale(2, RoundingMode.DOWN)).slice((LocalDate) LocalDate.of(2010, 1, 1), (Number) new BigDecimal("120.00").setScale(2, RoundingMode.DOWN));
       TemporalValue result = new TemporalValue();
       for (SliceValue s : ListSequence.fromList(tv.slices())) {
         Object o = Generated_CornerCases_Test.mapping4_.apply(new ParameterSetWrapper(s.value()));
@@ -2149,26 +1663,8 @@ public class Generated_CornerCases_Test {
         }
       }
       return result;
-    }).invoke()), (Object) ((_FunctionTypes._return_P0_E0<TemporalValue>) () -> {
-      TemporalValue value = new TemporalValue();
-      value = value.slice(((LocalDate) LocalDate.MIN), ((Number) (new BigDecimal("1.00").setScale(2, RoundingMode.DOWN))));
-      value = value.slice(((LocalDate) LocalDate.of(2000, 1, 1)), ((Number) (new BigDecimal("101.00").setScale(2, RoundingMode.DOWN))));
-      value = value.slice(((LocalDate) LocalDate.of(2003, 1, 1)), ((Number) (new BigDecimal("111.00").setScale(2, RoundingMode.DOWN))));
-      value = value.slice(((LocalDate) LocalDate.of(2004, 1, 1)), ((Number) (new BigDecimal("221.00").setScale(2, RoundingMode.DOWN))));
-      value = value.slice(((LocalDate) LocalDate.of(2005, 1, 1)), ((Number) (new BigDecimal("241.00").setScale(2, RoundingMode.DOWN))));
-      value = value.slice(((LocalDate) LocalDate.of(2010, 1, 1)), ((Number) (new BigDecimal("121.00").setScale(2, RoundingMode.DOWN))));
-      return value;
-    }).invoke(), (Object) ((_FunctionTypes._return_P0_E0<TemporalValue>) () -> {
-      TemporalValue tv = ((_FunctionTypes._return_P0_E0<TemporalValue>) () -> {
-        TemporalValue value = new TemporalValue();
-        value = value.slice(((LocalDate) LocalDate.MIN), ((Number) (new BigDecimal("0.00").setScale(2, RoundingMode.DOWN))));
-        value = value.slice(((LocalDate) LocalDate.of(2000, 1, 1)), ((Number) (new BigDecimal("100.00").setScale(2, RoundingMode.DOWN))));
-        value = value.slice(((LocalDate) LocalDate.of(2003, 1, 1)), ((Number) (new BigDecimal("110.00").setScale(2, RoundingMode.DOWN))));
-        value = value.slice(((LocalDate) LocalDate.of(2004, 1, 1)), ((Number) (new BigDecimal("220.00").setScale(2, RoundingMode.DOWN))));
-        value = value.slice(((LocalDate) LocalDate.of(2005, 1, 1)), ((Number) (new BigDecimal("240.00").setScale(2, RoundingMode.DOWN))));
-        value = value.slice(((LocalDate) LocalDate.of(2010, 1, 1)), ((Number) (new BigDecimal("120.00").setScale(2, RoundingMode.DOWN))));
-        return value;
-      }).invoke();
+    }).invoke()), (Object) new TemporalValue().slice((LocalDate) LocalDate.MIN, (Number) new BigDecimal("1.00").setScale(2, RoundingMode.DOWN)).slice((LocalDate) LocalDate.of(2000, 1, 1), (Number) new BigDecimal("101.00").setScale(2, RoundingMode.DOWN)).slice((LocalDate) LocalDate.of(2003, 1, 1), (Number) new BigDecimal("111.00").setScale(2, RoundingMode.DOWN)).slice((LocalDate) LocalDate.of(2004, 1, 1), (Number) new BigDecimal("221.00").setScale(2, RoundingMode.DOWN)).slice((LocalDate) LocalDate.of(2005, 1, 1), (Number) new BigDecimal("241.00").setScale(2, RoundingMode.DOWN)).slice((LocalDate) LocalDate.of(2010, 1, 1), (Number) new BigDecimal("121.00").setScale(2, RoundingMode.DOWN)), (Object) ((_FunctionTypes._return_P0_E0<TemporalValue>) () -> {
+      TemporalValue tv = new TemporalValue().slice((LocalDate) LocalDate.MIN, (Number) new BigDecimal("0.00").setScale(2, RoundingMode.DOWN)).slice((LocalDate) LocalDate.of(2000, 1, 1), (Number) new BigDecimal("100.00").setScale(2, RoundingMode.DOWN)).slice((LocalDate) LocalDate.of(2003, 1, 1), (Number) new BigDecimal("110.00").setScale(2, RoundingMode.DOWN)).slice((LocalDate) LocalDate.of(2004, 1, 1), (Number) new BigDecimal("220.00").setScale(2, RoundingMode.DOWN)).slice((LocalDate) LocalDate.of(2005, 1, 1), (Number) new BigDecimal("240.00").setScale(2, RoundingMode.DOWN)).slice((LocalDate) LocalDate.of(2010, 1, 1), (Number) new BigDecimal("120.00").setScale(2, RoundingMode.DOWN));
       TemporalValue result = new TemporalValue();
       for (SliceValue s : ListSequence.fromList(tv.slices())) {
         Object o = Generated_CornerCases_Test.mapping4_.apply(new ParameterSetWrapper(s.value()));
@@ -2181,26 +1677,8 @@ public class Generated_CornerCases_Test {
   }
   @Test
   public void mapEach_item4_8205696982217412243() throws Throwable {
-    Assert.assertEquals("Expected: " + (((_FunctionTypes._return_P0_E0<TemporalValue>) () -> {
-      TemporalValue value = new TemporalValue();
-      value = value.slice(((LocalDate) LocalDate.MIN), ((Number) (new BigDecimal("0.00").setScale(2, RoundingMode.DOWN))));
-      value = value.slice(((LocalDate) LocalDate.of(2000, 1, 1)), ((Number) (new BigDecimal("100.00").setScale(2, RoundingMode.DOWN))));
-      value = value.slice(((LocalDate) LocalDate.of(2003, 1, 1)), ((Number) (new BigDecimal("110.00").setScale(2, RoundingMode.DOWN))));
-      value = value.slice(((LocalDate) LocalDate.of(2004, 1, 1)), ((Number) (new BigDecimal("220.00").setScale(2, RoundingMode.DOWN))));
-      value = value.slice(((LocalDate) LocalDate.of(2005, 1, 1)), ((Number) (new BigDecimal("240.00").setScale(2, RoundingMode.DOWN))));
-      value = value.slice(((LocalDate) LocalDate.of(2010, 1, 1)), ((Number) (new BigDecimal("120.00").setScale(2, RoundingMode.DOWN))));
-      return value;
-    }).invoke()) + ", but was: " + (((_FunctionTypes._return_P0_E0<TemporalValue>) () -> {
-      TemporalValue tv = ((_FunctionTypes._return_P0_E0<TemporalValue>) () -> {
-        TemporalValue value = new TemporalValue();
-        value = value.slice(((LocalDate) LocalDate.MIN), ((Number) (new BigDecimal("1.00").setScale(2, RoundingMode.DOWN))));
-        value = value.slice(((LocalDate) LocalDate.of(2000, 1, 1)), ((Number) (new BigDecimal("101.00").setScale(2, RoundingMode.DOWN))));
-        value = value.slice(((LocalDate) LocalDate.of(2003, 1, 1)), ((Number) (new BigDecimal("111.00").setScale(2, RoundingMode.DOWN))));
-        value = value.slice(((LocalDate) LocalDate.of(2004, 1, 1)), ((Number) (new BigDecimal("221.00").setScale(2, RoundingMode.DOWN))));
-        value = value.slice(((LocalDate) LocalDate.of(2005, 1, 1)), ((Number) (new BigDecimal("241.00").setScale(2, RoundingMode.DOWN))));
-        value = value.slice(((LocalDate) LocalDate.of(2010, 1, 1)), ((Number) (new BigDecimal("121.00").setScale(2, RoundingMode.DOWN))));
-        return value;
-      }).invoke();
+    Assert.assertEquals("Expected: " + new TemporalValue().slice((LocalDate) LocalDate.MIN, (Number) new BigDecimal("0.00").setScale(2, RoundingMode.DOWN)).slice((LocalDate) LocalDate.of(2000, 1, 1), (Number) new BigDecimal("100.00").setScale(2, RoundingMode.DOWN)).slice((LocalDate) LocalDate.of(2003, 1, 1), (Number) new BigDecimal("110.00").setScale(2, RoundingMode.DOWN)).slice((LocalDate) LocalDate.of(2004, 1, 1), (Number) new BigDecimal("220.00").setScale(2, RoundingMode.DOWN)).slice((LocalDate) LocalDate.of(2005, 1, 1), (Number) new BigDecimal("240.00").setScale(2, RoundingMode.DOWN)).slice((LocalDate) LocalDate.of(2010, 1, 1), (Number) new BigDecimal("120.00").setScale(2, RoundingMode.DOWN)) + ", but was: " + (((_FunctionTypes._return_P0_E0<TemporalValue>) () -> {
+      TemporalValue tv = new TemporalValue().slice((LocalDate) LocalDate.MIN, (Number) new BigDecimal("1.00").setScale(2, RoundingMode.DOWN)).slice((LocalDate) LocalDate.of(2000, 1, 1), (Number) new BigDecimal("101.00").setScale(2, RoundingMode.DOWN)).slice((LocalDate) LocalDate.of(2003, 1, 1), (Number) new BigDecimal("111.00").setScale(2, RoundingMode.DOWN)).slice((LocalDate) LocalDate.of(2004, 1, 1), (Number) new BigDecimal("221.00").setScale(2, RoundingMode.DOWN)).slice((LocalDate) LocalDate.of(2005, 1, 1), (Number) new BigDecimal("241.00").setScale(2, RoundingMode.DOWN)).slice((LocalDate) LocalDate.of(2010, 1, 1), (Number) new BigDecimal("121.00").setScale(2, RoundingMode.DOWN));
       TemporalValue result = new TemporalValue();
       for (SliceValue s : ListSequence.fromList(tv.slices())) {
         Object o = Generated_CornerCases_Test.mapping5_.apply(new ParameterSetWrapper(s.value()));
@@ -2209,26 +1687,8 @@ public class Generated_CornerCases_Test {
         }
       }
       return result;
-    }).invoke()), (Object) ((_FunctionTypes._return_P0_E0<TemporalValue>) () -> {
-      TemporalValue value = new TemporalValue();
-      value = value.slice(((LocalDate) LocalDate.MIN), ((Number) (new BigDecimal("0.00").setScale(2, RoundingMode.DOWN))));
-      value = value.slice(((LocalDate) LocalDate.of(2000, 1, 1)), ((Number) (new BigDecimal("100.00").setScale(2, RoundingMode.DOWN))));
-      value = value.slice(((LocalDate) LocalDate.of(2003, 1, 1)), ((Number) (new BigDecimal("110.00").setScale(2, RoundingMode.DOWN))));
-      value = value.slice(((LocalDate) LocalDate.of(2004, 1, 1)), ((Number) (new BigDecimal("220.00").setScale(2, RoundingMode.DOWN))));
-      value = value.slice(((LocalDate) LocalDate.of(2005, 1, 1)), ((Number) (new BigDecimal("240.00").setScale(2, RoundingMode.DOWN))));
-      value = value.slice(((LocalDate) LocalDate.of(2010, 1, 1)), ((Number) (new BigDecimal("120.00").setScale(2, RoundingMode.DOWN))));
-      return value;
-    }).invoke(), (Object) ((_FunctionTypes._return_P0_E0<TemporalValue>) () -> {
-      TemporalValue tv = ((_FunctionTypes._return_P0_E0<TemporalValue>) () -> {
-        TemporalValue value = new TemporalValue();
-        value = value.slice(((LocalDate) LocalDate.MIN), ((Number) (new BigDecimal("1.00").setScale(2, RoundingMode.DOWN))));
-        value = value.slice(((LocalDate) LocalDate.of(2000, 1, 1)), ((Number) (new BigDecimal("101.00").setScale(2, RoundingMode.DOWN))));
-        value = value.slice(((LocalDate) LocalDate.of(2003, 1, 1)), ((Number) (new BigDecimal("111.00").setScale(2, RoundingMode.DOWN))));
-        value = value.slice(((LocalDate) LocalDate.of(2004, 1, 1)), ((Number) (new BigDecimal("221.00").setScale(2, RoundingMode.DOWN))));
-        value = value.slice(((LocalDate) LocalDate.of(2005, 1, 1)), ((Number) (new BigDecimal("241.00").setScale(2, RoundingMode.DOWN))));
-        value = value.slice(((LocalDate) LocalDate.of(2010, 1, 1)), ((Number) (new BigDecimal("121.00").setScale(2, RoundingMode.DOWN))));
-        return value;
-      }).invoke();
+    }).invoke()), (Object) new TemporalValue().slice((LocalDate) LocalDate.MIN, (Number) new BigDecimal("0.00").setScale(2, RoundingMode.DOWN)).slice((LocalDate) LocalDate.of(2000, 1, 1), (Number) new BigDecimal("100.00").setScale(2, RoundingMode.DOWN)).slice((LocalDate) LocalDate.of(2003, 1, 1), (Number) new BigDecimal("110.00").setScale(2, RoundingMode.DOWN)).slice((LocalDate) LocalDate.of(2004, 1, 1), (Number) new BigDecimal("220.00").setScale(2, RoundingMode.DOWN)).slice((LocalDate) LocalDate.of(2005, 1, 1), (Number) new BigDecimal("240.00").setScale(2, RoundingMode.DOWN)).slice((LocalDate) LocalDate.of(2010, 1, 1), (Number) new BigDecimal("120.00").setScale(2, RoundingMode.DOWN)), (Object) ((_FunctionTypes._return_P0_E0<TemporalValue>) () -> {
+      TemporalValue tv = new TemporalValue().slice((LocalDate) LocalDate.MIN, (Number) new BigDecimal("1.00").setScale(2, RoundingMode.DOWN)).slice((LocalDate) LocalDate.of(2000, 1, 1), (Number) new BigDecimal("101.00").setScale(2, RoundingMode.DOWN)).slice((LocalDate) LocalDate.of(2003, 1, 1), (Number) new BigDecimal("111.00").setScale(2, RoundingMode.DOWN)).slice((LocalDate) LocalDate.of(2004, 1, 1), (Number) new BigDecimal("221.00").setScale(2, RoundingMode.DOWN)).slice((LocalDate) LocalDate.of(2005, 1, 1), (Number) new BigDecimal("241.00").setScale(2, RoundingMode.DOWN)).slice((LocalDate) LocalDate.of(2010, 1, 1), (Number) new BigDecimal("121.00").setScale(2, RoundingMode.DOWN));
       TemporalValue result = new TemporalValue();
       for (SliceValue s : ListSequence.fromList(tv.slices())) {
         Object o = Generated_CornerCases_Test.mapping5_.apply(new ParameterSetWrapper(s.value()));
@@ -2241,26 +1701,8 @@ public class Generated_CornerCases_Test {
   }
   @Test
   public void mapEach_item5_8205696982217437446() throws Throwable {
-    Assert.assertEquals("Expected: " + (((_FunctionTypes._return_P0_E0<TemporalValue>) () -> {
-      TemporalValue value = new TemporalValue();
-      value = value.slice(((LocalDate) LocalDate.MIN), ((Number) (new BigDecimal("0.00").setScale(2, RoundingMode.DOWN))));
-      value = value.slice(((LocalDate) LocalDate.of(2000, 1, 1)), ((Number) (new BigDecimal("100.00").setScale(2, RoundingMode.DOWN))));
-      value = value.slice(((LocalDate) LocalDate.of(2003, 1, 1)), ((Number) (new BigDecimal("110.00").setScale(2, RoundingMode.DOWN))));
-      value = value.slice(((LocalDate) LocalDate.of(2004, 1, 1)), ((Number) (new BigDecimal("220.00").setScale(2, RoundingMode.DOWN))));
-      value = value.slice(((LocalDate) LocalDate.of(2005, 1, 1)), ((Number) (new BigDecimal("240.00").setScale(2, RoundingMode.DOWN))));
-      value = value.slice(((LocalDate) LocalDate.of(2010, 1, 1)), ((Number) (new BigDecimal("120.00").setScale(2, RoundingMode.DOWN))));
-      return value;
-    }).invoke()) + ", but was: " + (((_FunctionTypes._return_P0_E0<TemporalValue>) () -> {
-      TemporalValue tv = ((_FunctionTypes._return_P0_E0<TemporalValue>) () -> {
-        TemporalValue value = new TemporalValue();
-        value = value.slice(((LocalDate) LocalDate.MIN), ((Number) (new BigDecimal("1.00").setScale(2, RoundingMode.DOWN))));
-        value = value.slice(((LocalDate) LocalDate.of(2000, 1, 1)), ((Number) (new BigDecimal("101.00").setScale(2, RoundingMode.DOWN))));
-        value = value.slice(((LocalDate) LocalDate.of(2003, 1, 1)), ((Number) (new BigDecimal("111.00").setScale(2, RoundingMode.DOWN))));
-        value = value.slice(((LocalDate) LocalDate.of(2004, 1, 1)), ((Number) (new BigDecimal("221.00").setScale(2, RoundingMode.DOWN))));
-        value = value.slice(((LocalDate) LocalDate.of(2005, 1, 1)), ((Number) (new BigDecimal("241.00").setScale(2, RoundingMode.DOWN))));
-        value = value.slice(((LocalDate) LocalDate.of(2010, 1, 1)), ((Number) (new BigDecimal("121.00").setScale(2, RoundingMode.DOWN))));
-        return value;
-      }).invoke();
+    Assert.assertEquals("Expected: " + new TemporalValue().slice((LocalDate) LocalDate.MIN, (Number) new BigDecimal("0.00").setScale(2, RoundingMode.DOWN)).slice((LocalDate) LocalDate.of(2000, 1, 1), (Number) new BigDecimal("100.00").setScale(2, RoundingMode.DOWN)).slice((LocalDate) LocalDate.of(2003, 1, 1), (Number) new BigDecimal("110.00").setScale(2, RoundingMode.DOWN)).slice((LocalDate) LocalDate.of(2004, 1, 1), (Number) new BigDecimal("220.00").setScale(2, RoundingMode.DOWN)).slice((LocalDate) LocalDate.of(2005, 1, 1), (Number) new BigDecimal("240.00").setScale(2, RoundingMode.DOWN)).slice((LocalDate) LocalDate.of(2010, 1, 1), (Number) new BigDecimal("120.00").setScale(2, RoundingMode.DOWN)) + ", but was: " + (((_FunctionTypes._return_P0_E0<TemporalValue>) () -> {
+      TemporalValue tv = new TemporalValue().slice((LocalDate) LocalDate.MIN, (Number) new BigDecimal("1.00").setScale(2, RoundingMode.DOWN)).slice((LocalDate) LocalDate.of(2000, 1, 1), (Number) new BigDecimal("101.00").setScale(2, RoundingMode.DOWN)).slice((LocalDate) LocalDate.of(2003, 1, 1), (Number) new BigDecimal("111.00").setScale(2, RoundingMode.DOWN)).slice((LocalDate) LocalDate.of(2004, 1, 1), (Number) new BigDecimal("221.00").setScale(2, RoundingMode.DOWN)).slice((LocalDate) LocalDate.of(2005, 1, 1), (Number) new BigDecimal("241.00").setScale(2, RoundingMode.DOWN)).slice((LocalDate) LocalDate.of(2010, 1, 1), (Number) new BigDecimal("121.00").setScale(2, RoundingMode.DOWN));
       TemporalValue result = new TemporalValue();
       for (SliceValue s : ListSequence.fromList(tv.slices())) {
         Object o = Generated_CornerCases_Test.mapping6_.apply(new ParameterSetWrapper(s.value()));
@@ -2269,26 +1711,8 @@ public class Generated_CornerCases_Test {
         }
       }
       return result;
-    }).invoke()), (Object) ((_FunctionTypes._return_P0_E0<TemporalValue>) () -> {
-      TemporalValue value = new TemporalValue();
-      value = value.slice(((LocalDate) LocalDate.MIN), ((Number) (new BigDecimal("0.00").setScale(2, RoundingMode.DOWN))));
-      value = value.slice(((LocalDate) LocalDate.of(2000, 1, 1)), ((Number) (new BigDecimal("100.00").setScale(2, RoundingMode.DOWN))));
-      value = value.slice(((LocalDate) LocalDate.of(2003, 1, 1)), ((Number) (new BigDecimal("110.00").setScale(2, RoundingMode.DOWN))));
-      value = value.slice(((LocalDate) LocalDate.of(2004, 1, 1)), ((Number) (new BigDecimal("220.00").setScale(2, RoundingMode.DOWN))));
-      value = value.slice(((LocalDate) LocalDate.of(2005, 1, 1)), ((Number) (new BigDecimal("240.00").setScale(2, RoundingMode.DOWN))));
-      value = value.slice(((LocalDate) LocalDate.of(2010, 1, 1)), ((Number) (new BigDecimal("120.00").setScale(2, RoundingMode.DOWN))));
-      return value;
-    }).invoke(), (Object) ((_FunctionTypes._return_P0_E0<TemporalValue>) () -> {
-      TemporalValue tv = ((_FunctionTypes._return_P0_E0<TemporalValue>) () -> {
-        TemporalValue value = new TemporalValue();
-        value = value.slice(((LocalDate) LocalDate.MIN), ((Number) (new BigDecimal("1.00").setScale(2, RoundingMode.DOWN))));
-        value = value.slice(((LocalDate) LocalDate.of(2000, 1, 1)), ((Number) (new BigDecimal("101.00").setScale(2, RoundingMode.DOWN))));
-        value = value.slice(((LocalDate) LocalDate.of(2003, 1, 1)), ((Number) (new BigDecimal("111.00").setScale(2, RoundingMode.DOWN))));
-        value = value.slice(((LocalDate) LocalDate.of(2004, 1, 1)), ((Number) (new BigDecimal("221.00").setScale(2, RoundingMode.DOWN))));
-        value = value.slice(((LocalDate) LocalDate.of(2005, 1, 1)), ((Number) (new BigDecimal("241.00").setScale(2, RoundingMode.DOWN))));
-        value = value.slice(((LocalDate) LocalDate.of(2010, 1, 1)), ((Number) (new BigDecimal("121.00").setScale(2, RoundingMode.DOWN))));
-        return value;
-      }).invoke();
+    }).invoke()), (Object) new TemporalValue().slice((LocalDate) LocalDate.MIN, (Number) new BigDecimal("0.00").setScale(2, RoundingMode.DOWN)).slice((LocalDate) LocalDate.of(2000, 1, 1), (Number) new BigDecimal("100.00").setScale(2, RoundingMode.DOWN)).slice((LocalDate) LocalDate.of(2003, 1, 1), (Number) new BigDecimal("110.00").setScale(2, RoundingMode.DOWN)).slice((LocalDate) LocalDate.of(2004, 1, 1), (Number) new BigDecimal("220.00").setScale(2, RoundingMode.DOWN)).slice((LocalDate) LocalDate.of(2005, 1, 1), (Number) new BigDecimal("240.00").setScale(2, RoundingMode.DOWN)).slice((LocalDate) LocalDate.of(2010, 1, 1), (Number) new BigDecimal("120.00").setScale(2, RoundingMode.DOWN)), (Object) ((_FunctionTypes._return_P0_E0<TemporalValue>) () -> {
+      TemporalValue tv = new TemporalValue().slice((LocalDate) LocalDate.MIN, (Number) new BigDecimal("1.00").setScale(2, RoundingMode.DOWN)).slice((LocalDate) LocalDate.of(2000, 1, 1), (Number) new BigDecimal("101.00").setScale(2, RoundingMode.DOWN)).slice((LocalDate) LocalDate.of(2003, 1, 1), (Number) new BigDecimal("111.00").setScale(2, RoundingMode.DOWN)).slice((LocalDate) LocalDate.of(2004, 1, 1), (Number) new BigDecimal("221.00").setScale(2, RoundingMode.DOWN)).slice((LocalDate) LocalDate.of(2005, 1, 1), (Number) new BigDecimal("241.00").setScale(2, RoundingMode.DOWN)).slice((LocalDate) LocalDate.of(2010, 1, 1), (Number) new BigDecimal("121.00").setScale(2, RoundingMode.DOWN));
       TemporalValue result = new TemporalValue();
       for (SliceValue s : ListSequence.fromList(tv.slices())) {
         Object o = Generated_CornerCases_Test.mapping6_.apply(new ParameterSetWrapper(s.value()));
@@ -2301,28 +1725,23 @@ public class Generated_CornerCases_Test {
   }
   @Test
   public void mapEach_item6_8205696982215891542() throws Throwable {
-    Assert.assertTrue("Expected: " + (((Number) (new BigDecimal("2.0").setScale(1, RoundingMode.DOWN)))) + ", but was: " + (AH.add(((Number) (new BigDecimal("1.0").setScale(1, RoundingMode.DOWN))), ((Number) new BigInteger("1")))), EqualsTestOp.matches(((Number) (new BigDecimal("2.0").setScale(1, RoundingMode.DOWN))), AH.add(((Number) (new BigDecimal("1.0").setScale(1, RoundingMode.DOWN))), ((Number) new BigInteger("1")))));
+    Assert.assertTrue("Expected: " + (Number) new BigDecimal("2.0").setScale(1, RoundingMode.DOWN) + ", but was: " + AH.add((Number) new BigDecimal("1.0").setScale(1, RoundingMode.DOWN), (Number) new BigInteger("1")), EqualsTestOp.matches((Number) new BigDecimal("2.0").setScale(1, RoundingMode.DOWN), AH.add((Number) new BigDecimal("1.0").setScale(1, RoundingMode.DOWN), (Number) new BigInteger("1"))));
   }
   @Test
   public void mapEach_item7_8205696982215902156() throws Throwable {
-    Assert.assertTrue("Expected: " + (((Number) (new BigDecimal("2.0").setScale(1, RoundingMode.DOWN)))) + ", but was: " + (AH.add(((Number) (new BigDecimal("1.0").setScale(1, RoundingMode.DOWN))), ((Number) (new BigDecimal("1.0").setScale(1, RoundingMode.DOWN))))), EqualsTestOp.matches(((Number) (new BigDecimal("2.0").setScale(1, RoundingMode.DOWN))), AH.add(((Number) (new BigDecimal("1.0").setScale(1, RoundingMode.DOWN))), ((Number) (new BigDecimal("1.0").setScale(1, RoundingMode.DOWN))))));
+    Assert.assertTrue("Expected: " + (Number) new BigDecimal("2.0").setScale(1, RoundingMode.DOWN) + ", but was: " + AH.add((Number) new BigDecimal("1.0").setScale(1, RoundingMode.DOWN), (Number) new BigDecimal("1.0").setScale(1, RoundingMode.DOWN)), EqualsTestOp.matches((Number) new BigDecimal("2.0").setScale(1, RoundingMode.DOWN), AH.add((Number) new BigDecimal("1.0").setScale(1, RoundingMode.DOWN), (Number) new BigDecimal("1.0").setScale(1, RoundingMode.DOWN))));
   }
   public static final LocalDate date1_ = LocalDate.of(2018, 5, 1);
   public static final LocalDate date2_ = LocalDate.of(2018, 10, 12);
   @Test
   public void TestDateToString_item0_8271636411545319465() throws Throwable {
-    Assert.assertEquals("Expected: " + ("01.05.2018") + ", but was: " + (Generated_CornerCases_Test.date1_.format(DateTimeFormatter.ofPattern("dd.MM.yyyy"))), (Object) "01.05.2018", (Object) Generated_CornerCases_Test.date1_.format(DateTimeFormatter.ofPattern("dd.MM.yyyy")));
+    Assert.assertEquals("Expected: " + "01.05.2018" + ", but was: " + Generated_CornerCases_Test.date1_.format(DateTimeFormatter.ofPattern("dd.MM.yyyy")), (Object) "01.05.2018", (Object) Generated_CornerCases_Test.date1_.format(DateTimeFormatter.ofPattern("dd.MM.yyyy")));
   }
   @Test
   public void TestDateToString_item1_8271636411545774967() throws Throwable {
-    Assert.assertEquals("Expected: " + ("12.10.2018") + ", but was: " + (Generated_CornerCases_Test.date2_.format(DateTimeFormatter.ofPattern("dd.MM.yyyy"))), (Object) "12.10.2018", (Object) Generated_CornerCases_Test.date2_.format(DateTimeFormatter.ofPattern("dd.MM.yyyy")));
+    Assert.assertEquals("Expected: " + "12.10.2018" + ", but was: " + Generated_CornerCases_Test.date2_.format(DateTimeFormatter.ofPattern("dd.MM.yyyy")), (Object) "12.10.2018", (Object) Generated_CornerCases_Test.date2_.format(DateTimeFormatter.ofPattern("dd.MM.yyyy")));
   }
-  public static final TemporalValue boolTT1_ = ((_FunctionTypes._return_P0_E0<TemporalValue>) () -> {
-    TemporalValue value = new TemporalValue();
-    value = value.slice(((LocalDate) LocalDate.of(2000, 1, 1)), true);
-    value = value.slice(((LocalDate) LocalDate.of(2001, 1, 1)), false);
-    return value;
-  }).invoke();
+  public static final TemporalValue boolTT1_ = new TemporalValue().slice((LocalDate) LocalDate.of(2000, 1, 1), true).slice((LocalDate) LocalDate.of(2001, 1, 1), false);
 
 
 

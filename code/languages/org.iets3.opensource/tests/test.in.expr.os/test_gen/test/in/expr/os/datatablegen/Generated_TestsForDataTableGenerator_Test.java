@@ -41,8 +41,8 @@ public class Generated_TestsForDataTableGenerator_Test {
     }
   }
   public static class Table_Table {
-    public static final Table_Table_Entry keyA = new Table_Table_Entry(((Number) ((Number) new BigInteger("1"))), ((Number) ((Number) new BigInteger("2"))));
-    public static final Table_Table_Entry keyB = new Table_Table_Entry(((Number) ((Number) new BigInteger("3"))), ((Number) ((Number) new BigInteger("4"))));
+    public static final Table_Table_Entry keyA = new Table_Table_Entry((Number) new BigInteger("1"), (Number) new BigInteger("2"));
+    public static final Table_Table_Entry keyB = new Table_Table_Entry((Number) new BigInteger("3"), (Number) new BigInteger("4"));
     private static List<Table_Table_Entry> entries = ListSequence.fromList(new ArrayList<Table_Table_Entry>());
     static {
       ListSequence.fromList(entries).addElement(keyA);
@@ -65,19 +65,19 @@ public class Generated_TestsForDataTableGenerator_Test {
   public static final Number number1_ = Table_Table.keyA.val1;
   @Test
   public void Tests_item0_7503962471789840464() throws Throwable {
-    Assert.assertTrue("Expected: " + (((Number) new BigInteger("1"))) + ", but was: " + (Table_Table.keyA.val1), EqualsTestOp.matches(((Number) new BigInteger("1")), Table_Table.keyA.val1));
+    Assert.assertTrue("Expected: " + (Number) new BigInteger("1") + ", but was: " + Table_Table.keyA.val1, EqualsTestOp.matches((Number) new BigInteger("1"), Table_Table.keyA.val1));
   }
   @Test
   public void Tests_item1_7503962471791916850() throws Throwable {
-    Assert.assertEquals("Expected: " + (true) + ", but was: " + (Generated_TestsForDataTableGenerator_Test.aRow_.is(Table_Table.keyA)), (Object) true, (Object) Generated_TestsForDataTableGenerator_Test.aRow_.is(Table_Table.keyA));
+    Assert.assertEquals("Expected: " + true + ", but was: " + Generated_TestsForDataTableGenerator_Test.aRow_.is(Table_Table.keyA), (Object) true, (Object) Generated_TestsForDataTableGenerator_Test.aRow_.is(Table_Table.keyA));
   }
   @Test
   public void Tests_item2_7503962471791947803() throws Throwable {
-    Assert.assertEquals("Expected: " + (true) + ", but was: " + (Generated_TestsForDataTableGenerator_Test.aRow_.is(Table_Table.keyA, Table_Table.keyB)), (Object) true, (Object) Generated_TestsForDataTableGenerator_Test.aRow_.is(Table_Table.keyA, Table_Table.keyB));
+    Assert.assertEquals("Expected: " + true + ", but was: " + Generated_TestsForDataTableGenerator_Test.aRow_.is(Table_Table.keyA, Table_Table.keyB), (Object) true, (Object) Generated_TestsForDataTableGenerator_Test.aRow_.is(Table_Table.keyA, Table_Table.keyB));
   }
   @Test
   public void Tests_item3_7503962471791497471() throws Throwable {
-    Assert.assertTrue("Expected: " + (((Number) new BigInteger("4"))) + ", but was: " + ((Table_Table.lookup(0, ((Number) new BigInteger("3")))).val2), EqualsTestOp.matches(((Number) new BigInteger("4")), (Table_Table.lookup(0, ((Number) new BigInteger("3")))).val2));
+    Assert.assertTrue("Expected: " + (Number) new BigInteger("4") + ", but was: " + Table_Table.lookup(0, (Number) new BigInteger("3")).val2, EqualsTestOp.matches((Number) new BigInteger("4"), Table_Table.lookup(0, (Number) new BigInteger("3")).val2));
   }
 
 

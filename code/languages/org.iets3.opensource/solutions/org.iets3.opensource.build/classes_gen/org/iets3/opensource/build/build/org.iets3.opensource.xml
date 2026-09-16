@@ -1702,6 +1702,112 @@
       <zipfileset dir="${build.tmp}/customProcessors/copyModels/languages-org.iets3.core.expr.genjava.contracts-models" prefix="module/models" />
       <zipfileset dir="${build.tmp}/customProcessors/copyModels/languages-org.iets3.core.expr.genjava.contracts-generator-template" prefix="module/generator/template" />
     </jar>
+    <mkdir dir="${build.tmp}/default/org.iets3.core.expr.genjava.optimizer.jar" />
+    <mkdir dir="${build.tmp}/default/org.iets3.core.expr.genjava.optimizer.jar/META-INF" />
+    <echoxml file="${build.tmp}/default/org.iets3.core.expr.genjava.optimizer.jar/META-INF/module.xml">
+      <module namespace="org.iets3.core.expr.genjava.optimizer" type="language" uuid="3b01f160-a12d-4471-8269-cdf596d4604c">
+        <dependencies>
+          <module ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065(JDK)" kind="rt" />
+          <module ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea(MPS.Core)" kind="rt" />
+          <module ref="4c6a28d1-2c60-478d-b36e-db9b3cbb21fb(closures.runtime)" kind="rt" />
+          <module ref="9b80526e-f0bf-4992-bdf5-cee39c1833f3(collections.runtime)" kind="rt" />
+          <module ref="52b81ac7-93fd-4e9e-b972-4995882da6d4(jetbrains.mps.baseLanguage.references.runtime)" kind="rt" />
+          <module ref="f3061a53-9226-4cc5-a443-f952ceaf5816(jetbrains.mps.baseLanguage)" kind="cl" />
+          <module ref="fd392034-7849-419d-9071-12563d152375(jetbrains.mps.baseLanguage.closures)" kind="cl" />
+          <module ref="83888646-71ce-4f1c-9c53-c54016f6ad4f(jetbrains.mps.baseLanguage.collections)" kind="cl" />
+          <module ref="ceab5195-25ea-4f22-9b92-103b95ca8c0c(jetbrains.mps.lang.core)" kind="cl" />
+        </dependencies>
+        <uses>
+          <language id="l:f3061a53-9226-4cc5-a443-f952ceaf5816:jetbrains.mps.baseLanguage" />
+          <language id="l:fd392034-7849-419d-9071-12563d152375:jetbrains.mps.baseLanguage.closures" />
+          <language id="l:83888646-71ce-4f1c-9c53-c54016f6ad4f:jetbrains.mps.baseLanguage.collections" />
+          <language id="l:df345b11-b8c7-4213-ac66-48d2a9b75d88:jetbrains.mps.baseLanguageInternal" />
+          <language id="l:f4ad079d-bc71-4ffb-9600-9328705cf998:jetbrains.mps.lang.descriptor" />
+          <language id="l:982eb8df-2c96-4bd7-9963-11712ea622e5:jetbrains.mps.lang.resources" />
+          <language id="l:c72da2b9-7cce-4447-8389-f407dc1158b7:jetbrains.mps.lang.structure" />
+        </uses>
+        <classpath>
+          <entry path="." />
+        </classpath>
+        <sources jar="org.iets3.core.expr.genjava.optimizer-src.jar" descriptor="org.iets3.core.expr.genjava.optimizer.mpl" />
+      </module>
+    </echoxml>
+    <jar destfile="${build.layout}/org.iets3.core.expr.genjava/languages/org.iets3.core.expr.genjava/org.iets3.core.expr.genjava.optimizer.jar" duplicate="preserve">
+      <fileset dir="${build.tmp}/java/out/org.iets3.core.expr.genjava.optimizer" />
+      <fileset dir="${iets3.lang.opensource}/languages/org.iets3.core.expr.genjava.optimizer/source_gen" includes="**/trace.info, **/exports, **/*.mps, **/checkpoints" />
+      <fileset dir="${build.tmp}/default/org.iets3.core.expr.genjava.optimizer.jar" />
+    </jar>
+    <mkdir dir="${build.tmp}/default/org.iets3.core.expr.genjava.optimizer-generator.jar" />
+    <mkdir dir="${build.tmp}/default/org.iets3.core.expr.genjava.optimizer-generator.jar/META-INF" />
+    <echoxml file="${build.tmp}/default/org.iets3.core.expr.genjava.optimizer-generator.jar/META-INF/module.xml">
+      <module namespace="org.iets3.core.expr.genjava.optimizer.generator" type="generator" uuid="f7f9c3cc-c195-4117-95ba-cf97608a37e6">
+        <dependencies>
+          <module ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065(JDK)" kind="rt" />
+          <module ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea(MPS.Core)" kind="rt" />
+          <module ref="215c4c45-ba99-49f5-9ab7-4b6901a63cfd(MPS.Generator)" kind="rt" />
+          <module ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34(MPS.OpenAPI)" kind="rt" />
+          <module ref="4c6a28d1-2c60-478d-b36e-db9b3cbb21fb(closures.runtime)" kind="rt" />
+          <module ref="9b80526e-f0bf-4992-bdf5-cee39c1833f3(collections.runtime)" kind="rt" />
+          <module ref="a3e4657f-a76c-45bb-bbda-c764596ecc65(jetbrains.mps.baseLanguage.logging.runtime)" kind="rt" />
+          <module ref="52b81ac7-93fd-4e9e-b972-4995882da6d4(jetbrains.mps.baseLanguage.references.runtime)" kind="rt" />
+          <module ref="d44dab97-aaac-44cb-9745-8a14db674c03(jetbrains.mps.baseLanguage.tuples.runtime)" kind="rt" />
+          <module ref="d936855b-48da-4812-a8a0-2bfddd633ac5(jetbrains.mps.lang.behavior.api)" kind="rt" />
+          <module ref="d936855b-48da-4812-a8a0-2bfddd633ac4(jetbrains.mps.lang.behavior.runtime)" kind="rt" />
+          <module ref="9a4afe51-f114-4595-b5df-048ce3c596be(jetbrains.mps.runtime)" kind="rt" />
+          <module ref="f3061a53-9226-4cc5-a443-f952ceaf5816(jetbrains.mps.baseLanguage)" kind="cl" />
+          <module ref="fd392034-7849-419d-9071-12563d152375(jetbrains.mps.baseLanguage.closures)" kind="cl" />
+          <module ref="83888646-71ce-4f1c-9c53-c54016f6ad4f(jetbrains.mps.baseLanguage.collections)" kind="cl" />
+          <module ref="3b01f160-a12d-4471-8269-cdf596d4604c(org.iets3.core.expr.genjava.optimizer)" kind="cl" />
+        </dependencies>
+        <uses>
+          <language id="l:f3061a53-9226-4cc5-a443-f952ceaf5816:jetbrains.mps.baseLanguage" />
+          <language id="l:fd392034-7849-419d-9071-12563d152375:jetbrains.mps.baseLanguage.closures" />
+          <language id="l:83888646-71ce-4f1c-9c53-c54016f6ad4f:jetbrains.mps.baseLanguage.collections" />
+          <language id="l:f2801650-65d5-424e-bb1b-463a8781b786:jetbrains.mps.baseLanguage.javadoc" />
+          <language id="l:760a0a8c-eabb-4521-8bfd-65db761a9ba3:jetbrains.mps.baseLanguage.logging" />
+          <language id="l:a247e09e-2435-45ba-b8d2-07e93feba96a:jetbrains.mps.baseLanguage.tuples" />
+          <language id="l:b401a680-8325-4110-8fd3-84331ff25bef:jetbrains.mps.lang.generator" />
+          <language id="l:d7706f63-9be2-479c-a3da-ae92af1e64d5:jetbrains.mps.lang.generator.generationContext" />
+          <language id="l:289fcc83-6543-41e8-a5ca-768235715ce4:jetbrains.mps.lang.generator.generationParameters" />
+          <language id="l:3a13115c-633c-4c5c-bbcc-75c4219e9555:jetbrains.mps.lang.quotation" />
+          <language id="l:13744753-c81f-424a-9c1b-cf8943bf4e86:jetbrains.mps.lang.sharedConcepts" />
+          <language id="l:7866978e-a0f0-4cc7-81bc-4d213d9375e1:jetbrains.mps.lang.smodel" />
+          <language id="l:c7fb639f-be78-4307-89b0-b5959c3fa8c8:jetbrains.mps.lang.text" />
+        </uses>
+        <classpath>
+          <entry path="." />
+        </classpath>
+        <sources jar="org.iets3.core.expr.genjava.optimizer-src.jar" descriptor="org.iets3.core.expr.genjava.optimizer.mpl" />
+      </module>
+    </echoxml>
+    <jar destfile="${build.layout}/org.iets3.core.expr.genjava/languages/org.iets3.core.expr.genjava/org.iets3.core.expr.genjava.optimizer-generator.jar" duplicate="preserve">
+      <fileset dir="${build.tmp}/java/out/org.iets3.core.expr.genjava.optimizer.generator" />
+      <fileset dir="${iets3.lang.opensource}/languages/org.iets3.core.expr.genjava.optimizer/generator/source_gen" includes="**/trace.info, **/exports, **/*.mps, **/checkpoints" />
+      <fileset dir="${build.tmp}/default/org.iets3.core.expr.genjava.optimizer-generator.jar" />
+    </jar>
+    <copyModels todir="${build.tmp}/customProcessors/copyModels/languages-org.iets3.core.expr.genjava.optimizer-models">
+      <fileset dir="${iets3.lang.opensource}/languages/org.iets3.core.expr.genjava.optimizer/models" includes="**/*.mps, **/*.mpsr, **/.model" />
+    </copyModels>
+    <copyModels todir="${build.tmp}/customProcessors/copyModels/languages-org.iets3.core.expr.genjava.optimizer-generator-templates">
+      <fileset dir="${iets3.lang.opensource}/languages/org.iets3.core.expr.genjava.optimizer/generator/templates" includes="**/*.mps, **/*.mpsr, **/.model" />
+    </copyModels>
+    <jar destfile="${build.layout}/org.iets3.core.expr.genjava/languages/org.iets3.core.expr.genjava/org.iets3.core.expr.genjava.optimizer-src.jar" duplicate="preserve">
+      <fileset dir="${iets3.lang.opensource}/languages/org.iets3.core.expr.genjava.optimizer/generator/source_gen">
+        <exclude name="**/trace.info" />
+        <exclude name="**/exports" />
+        <exclude name="**/checkpoints" />
+        <exclude name="**/*.mps" />
+      </fileset>
+      <fileset dir="${iets3.lang.opensource}/languages/org.iets3.core.expr.genjava.optimizer/source_gen">
+        <exclude name="**/trace.info" />
+        <exclude name="**/exports" />
+        <exclude name="**/checkpoints" />
+        <exclude name="**/*.mps" />
+      </fileset>
+      <zipfileset file="${iets3.lang.opensource}/languages/org.iets3.core.expr.genjava.optimizer/org.iets3.core.expr.genjava.optimizer.mpl" prefix="module" />
+      <zipfileset dir="${build.tmp}/customProcessors/copyModels/languages-org.iets3.core.expr.genjava.optimizer-models" prefix="module/models" />
+      <zipfileset dir="${build.tmp}/customProcessors/copyModels/languages-org.iets3.core.expr.genjava.optimizer-generator-templates" prefix="module/generator/templates" />
+    </jar>
     <mkdir dir="${build.tmp}/default/org.iets3.core.expr.genjava.messages.jar" />
     <mkdir dir="${build.tmp}/default/org.iets3.core.expr.genjava.messages.jar/META-INF" />
     <echoxml file="${build.tmp}/default/org.iets3.core.expr.genjava.messages.jar/META-INF/module.xml">
@@ -13789,7 +13895,7 @@
     <delete dir="${build.layout}" />
   </target>
   
-  <target name="compileJava" depends="java.compile.org.iets3.contextfilter, java.compile.org.iets3.contextfilter.plugin, java.compile.test.org.iets3.common.base, java.compile.org.iets3.variability.artifacts.base, java.compile.org.iets3.variability.artifacts.baseline, java.compile.org.iets3.variability.artifacts.typesystem, java.compile.org.iets3.variability.artifacts.typesystem.generator, java.compile.org.iets3.variability.artifacts.typesystem.runtime, java.compile.java.modules.cycle.1, java.compile.org.iets3.variability.base, java.compile.org.iets3.variability.base.ide, java.compile.org.iets3.variability.configuration.base, java.compile.org.iets3.variability.featuremodel.base, java.compile.org.iets3.variability.artifacts.vanguard, java.compile.org.iets3.components.hardware, java.compile.org.iets3.core.assessment, java.compile.org.iets3.core.junit.interpreter.run.configuration, java.compile.org.iets3.core.expr.util, java.compile.org.iets3.core.expr.util.interpreter, java.compile.org.iets3.core.expr.math, java.compile.org.iets3.core.expr.math.interpreter, java.compile.org.iets3.core.expr.natlang, java.compile.org.iets3.core.expr.natlang.interpreter, java.compile.org.iets3.core.expr.query, java.compile.org.iets3.core.expr.query.interpreter, java.compile.org.iets3.core.expr.typetags, java.compile.org.iets3.core.expr.typetags#1759375669591494830, java.compile.java.modules.cycle.2, java.compile.org.iets3.core.expr.typetags.units, java.compile.org.iets3.core.expr.typetags.phyunits.si, java.compile.org.iets3.core.expr.typetags.physunits.documentation, java.compile.org.iets3.core.expr.typetags.physunits, java.compile.org.iets3.core.expr.typetags.units.quantity, java.compile.org.iets3.core.expr.typetags.units.si, java.compile.org.iets3.core.expr.typetags.units.interpreter, java.compile.org.iets3.core.expr.typetags.bindingtime, java.compile.org.iets3.core.expr.lookup, java.compile.org.iets3.core.expr.data, java.compile.org.iets3.core.expr.lookup.interpreter, java.compile.java.modules.cycle.3, java.compile.org.iets3.analysis.base, java.compile.org.iets3.analysis.logic.operator, java.compile.org.iets3.analysis.solversupport.util, java.compile.org.iets3.core.expr.base.shared.runtime, java.compile.org.iets3.core.expr.base.runtime, java.compile.org.iets3.core.expr.collections, java.compile.org.iets3.core.expr.collections.rt, java.compile.org.iets3.core.expr.collections.interpreter, java.compile.org.iets3.core.expr.base.collections.stubs, java.compile.org.iets3.core.expr.path, java.compile.org.iets3.core.expr.path.interpreter, java.compile.org.iets3.core.expr.lambda, java.compile.org.iets3.core.expr.doc, java.compile.org.iets3.core.expr.lambda.interpreter, java.compile.org.iets3.core.expr.data.interpreter, java.compile.java.modules.cycle.4, java.compile.org.iets3.core.expr.toplevel, java.compile.org.iets3.core.expr.adt, java.compile.org.iets3.core.expr.toplevel.interpreter, java.compile.org.iets3.core.expr.adt.interpreter, java.compile.org.iets3.core.expr.mutable, java.compile.org.iets3.core.expr.mutable.interpreter, java.compile.org.iets3.core.expr.process, java.compile.org.iets3.core.expr.dataflow, java.compile.org.iets3.core.expr.process.interpreter, java.compile.org.iets3.core.expr.dataflow.interpreter, java.compile.org.iets3.core.attributes, java.compile.org.iets3.core.expr.tests, java.compile.org.iets3.core.expr.tests#543569365052197681, java.compile.org.iets3.core.expr.tests.interpreter, java.compile.org.iets3.core.expr.tests.rt, java.compile.org.iets3.core.expr.metafunction, java.compile.org.iets3.core.expr.metafunction.interpreter, java.compile.org.iets3.core.expr.statemachines, java.compile.org.iets3.core.expr.statemachines.interpreter, java.compile.org.iets3.core.expr.datetime, java.compile.org.iets3.core.expr.datetime.runtime, java.compile.org.iets3.core.expr.datetime.interpreter, java.compile.org.iets3.core.expr.temporal, java.compile.org.iets3.core.expr.temporal.runtime, java.compile.org.iets3.core.expr.temporal.interpreter, java.compile.org.iets3.core.expr.plugin, java.compile.org.iets3.opensource.__spreferences.TestExecutionPreferences, java.compile.org.iets3.core.expr.testExecution, java.compile.org.iets3.core.base, java.compile.org.iets3.core.users, java.compile.org.iets3.core.expr.base, java.compile.org.iets3.core.expr.base.interpreter, java.compile.org.iets3.core.expr.simpleTypes, java.compile.org.iets3.core.expr.simpleTypes.interpreter, java.compile.org.iets3.core.expr.simpleTypes.runtime, java.compile.org.iets3.core.expr.messages, java.compile.org.iets3.core.expr.messages.interpreter, java.compile.org.iets3.core.expr.simpleTypes.tests, java.compile.org.iets3.core.plugin, java.compile.org.iets3.core.expr.doc.plugin, java.compile.org.iets3.core.expr.lambda.plugin, java.compile.org.iets3.core.expr.stringvalidation, java.compile.org.iets3.core.expr.stringvalidation.interpreter, java.compile.org.iets3.core.expr.stringvalidation.runtime, java.compile.org.iets3.internal.modelaccessor, java.compile.org.iets3.internal.modelaccessor.generator, java.compile.java.modules.cycle.5, java.compile.org.iets3.core.expr.tracing, java.compile.org.iets3.core.expr.tracing.plugin, java.compile.org.iets3.core.expr.repl, java.compile.org.iets3.core.expr.repl#1240669143552786950, java.compile.org.iets3.core.expr.repl.interpreter, java.compile.org.iets3.core.expr.repl.plugin, java.compile.org.iets3.core.expr.genjava.stateMachineExample, java.compile.org.iets3.core.expr.genjava.stateMachineExample#01, java.compile.org.iets3.core.expr.genjava.stateMachineExample.genplan, java.compile.org.iets3.core.expr.genjava.stateMachineExample.runtime, java.compile.org.iets3.core.expr.genjava.stateMachineExample.sandbox, java.compile.org.iets3.core.expr.genjava.base, java.compile.org.iets3.core.expr.genjava.base#8286534136181746510, java.compile.org.iets3.core.expr.genjava.contracts, java.compile.org.iets3.core.expr.genjava.contracts#01, java.compile.org.iets3.core.expr.genjava.messages, java.compile.org.iets3.core.expr.genjava.messages#01, java.compile.org.iets3.core.expr.genjava.simpleTypes, java.compile.org.iets3.core.expr.genjava.simpleTypes#8286534136182342700, java.compile.org.iets3.core.expr.genjava.tests, java.compile.org.iets3.core.expr.genjava.tests#8286534136181927906, java.compile.org.iets3.core.expr.genjava.toplevel, java.compile.org.iets3.core.expr.genjava.toplevel#1899408283182158123, java.compile.org.iets3.core.expr.genjava.stringvalidation, java.compile.org.iets3.core.expr.genjava.stringvalidation.generator, java.compile.org.iets3.core.expr.genjava.datetime, java.compile.org.iets3.core.expr.genjava.datetime#01, java.compile.org.iets3.core.expr.genjava.temporal, java.compile.org.iets3.core.expr.genjava.temporal#01, java.compile.org.iets3.core.expr.genjava.base.rt, java.compile.org.iets3.core.expr.genjava.messages.rt, java.compile.org.iets3.core.expr.genjava.tests.rt, java.compile.org.iets3.core.expr.genjava.toplevel.rt, java.compile.org.iets3.core.expr.genjava.temporal.rt, java.compile.org.iets3.core.expr.genjava.util, java.compile.org.iets3.core.expr.genjava.util#01, java.compile.org.iets3.core.expr.genjava.data, java.compile.org.iets3.core.expr.genjava.data.generator, java.compile.org.iets3.core.expr.genjava.core.genplan, java.compile.org.iets3.core.expr.genjava.advanced.genplan, java.compile.org.iets3.components.plugin, java.compile.org.iets3.components.core, java.compile.org.iets3.components.core.interpreter, java.compile.org.iets3.components.req, java.compile.org.iets3.components.functional, java.compile.org.iets3.components.toplevel.adapter, java.compile.org.iets3.core.mapping, java.compile.org.iets3.protocol.transport, java.compile.org.iets3.glossary, java.compile.org.iets3.req.core, java.compile.org.iets3.req.plugin, java.compile.org.iets3.opensource.build, java.compile.org.iets3.opensource.build.gentests, java.compile.org.iets3.opensource.build.gentests#01, java.compile.org.iets3.opensource.build.gentests.rt, java.compile.org.iets3.core.trace, java.compile.org.iets3.safety.attributes" />
+  <target name="compileJava" depends="java.compile.org.iets3.contextfilter, java.compile.org.iets3.contextfilter.plugin, java.compile.test.org.iets3.common.base, java.compile.org.iets3.variability.artifacts.base, java.compile.org.iets3.variability.artifacts.baseline, java.compile.org.iets3.variability.artifacts.typesystem, java.compile.org.iets3.variability.artifacts.typesystem.generator, java.compile.org.iets3.variability.artifacts.typesystem.runtime, java.compile.java.modules.cycle.1, java.compile.org.iets3.variability.base, java.compile.org.iets3.variability.base.ide, java.compile.org.iets3.variability.configuration.base, java.compile.org.iets3.variability.featuremodel.base, java.compile.org.iets3.variability.artifacts.vanguard, java.compile.org.iets3.components.hardware, java.compile.org.iets3.core.assessment, java.compile.org.iets3.core.junit.interpreter.run.configuration, java.compile.org.iets3.core.expr.util, java.compile.org.iets3.core.expr.util.interpreter, java.compile.org.iets3.core.expr.math, java.compile.org.iets3.core.expr.math.interpreter, java.compile.org.iets3.core.expr.natlang, java.compile.org.iets3.core.expr.natlang.interpreter, java.compile.org.iets3.core.expr.query, java.compile.org.iets3.core.expr.query.interpreter, java.compile.org.iets3.core.expr.typetags, java.compile.org.iets3.core.expr.typetags#1759375669591494830, java.compile.java.modules.cycle.2, java.compile.org.iets3.core.expr.typetags.units, java.compile.org.iets3.core.expr.typetags.phyunits.si, java.compile.org.iets3.core.expr.typetags.physunits.documentation, java.compile.org.iets3.core.expr.typetags.physunits, java.compile.org.iets3.core.expr.typetags.units.quantity, java.compile.org.iets3.core.expr.typetags.units.si, java.compile.org.iets3.core.expr.typetags.units.interpreter, java.compile.org.iets3.core.expr.typetags.bindingtime, java.compile.org.iets3.core.expr.lookup, java.compile.org.iets3.core.expr.data, java.compile.org.iets3.core.expr.lookup.interpreter, java.compile.java.modules.cycle.3, java.compile.org.iets3.analysis.base, java.compile.org.iets3.analysis.logic.operator, java.compile.org.iets3.analysis.solversupport.util, java.compile.org.iets3.core.expr.base.shared.runtime, java.compile.org.iets3.core.expr.base.runtime, java.compile.org.iets3.core.expr.collections, java.compile.org.iets3.core.expr.collections.rt, java.compile.org.iets3.core.expr.collections.interpreter, java.compile.org.iets3.core.expr.base.collections.stubs, java.compile.org.iets3.core.expr.path, java.compile.org.iets3.core.expr.path.interpreter, java.compile.org.iets3.core.expr.lambda, java.compile.org.iets3.core.expr.doc, java.compile.org.iets3.core.expr.lambda.interpreter, java.compile.org.iets3.core.expr.data.interpreter, java.compile.java.modules.cycle.4, java.compile.org.iets3.core.expr.toplevel, java.compile.org.iets3.core.expr.adt, java.compile.org.iets3.core.expr.toplevel.interpreter, java.compile.org.iets3.core.expr.adt.interpreter, java.compile.org.iets3.core.expr.mutable, java.compile.org.iets3.core.expr.mutable.interpreter, java.compile.org.iets3.core.expr.process, java.compile.org.iets3.core.expr.dataflow, java.compile.org.iets3.core.expr.process.interpreter, java.compile.org.iets3.core.expr.dataflow.interpreter, java.compile.org.iets3.core.attributes, java.compile.org.iets3.core.expr.tests, java.compile.org.iets3.core.expr.tests#543569365052197681, java.compile.org.iets3.core.expr.tests.interpreter, java.compile.org.iets3.core.expr.tests.rt, java.compile.org.iets3.core.expr.metafunction, java.compile.org.iets3.core.expr.metafunction.interpreter, java.compile.org.iets3.core.expr.statemachines, java.compile.org.iets3.core.expr.statemachines.interpreter, java.compile.org.iets3.core.expr.datetime, java.compile.org.iets3.core.expr.datetime.runtime, java.compile.org.iets3.core.expr.datetime.interpreter, java.compile.org.iets3.core.expr.temporal, java.compile.org.iets3.core.expr.temporal.runtime, java.compile.org.iets3.core.expr.temporal.interpreter, java.compile.org.iets3.core.expr.plugin, java.compile.org.iets3.opensource.__spreferences.TestExecutionPreferences, java.compile.org.iets3.core.expr.testExecution, java.compile.org.iets3.core.base, java.compile.org.iets3.core.users, java.compile.org.iets3.core.expr.base, java.compile.org.iets3.core.expr.base.interpreter, java.compile.org.iets3.core.expr.simpleTypes, java.compile.org.iets3.core.expr.simpleTypes.interpreter, java.compile.org.iets3.core.expr.simpleTypes.runtime, java.compile.org.iets3.core.expr.messages, java.compile.org.iets3.core.expr.messages.interpreter, java.compile.org.iets3.core.expr.simpleTypes.tests, java.compile.org.iets3.core.plugin, java.compile.org.iets3.core.expr.doc.plugin, java.compile.org.iets3.core.expr.lambda.plugin, java.compile.org.iets3.core.expr.stringvalidation, java.compile.org.iets3.core.expr.stringvalidation.interpreter, java.compile.org.iets3.core.expr.stringvalidation.runtime, java.compile.org.iets3.internal.modelaccessor, java.compile.org.iets3.internal.modelaccessor.generator, java.compile.java.modules.cycle.5, java.compile.org.iets3.core.expr.tracing, java.compile.org.iets3.core.expr.tracing.plugin, java.compile.org.iets3.core.expr.repl, java.compile.org.iets3.core.expr.repl#1240669143552786950, java.compile.org.iets3.core.expr.repl.interpreter, java.compile.org.iets3.core.expr.repl.plugin, java.compile.org.iets3.core.expr.genjava.stateMachineExample, java.compile.org.iets3.core.expr.genjava.stateMachineExample#01, java.compile.org.iets3.core.expr.genjava.stateMachineExample.genplan, java.compile.org.iets3.core.expr.genjava.stateMachineExample.runtime, java.compile.org.iets3.core.expr.genjava.stateMachineExample.sandbox, java.compile.org.iets3.core.expr.genjava.base, java.compile.org.iets3.core.expr.genjava.base#8286534136181746510, java.compile.org.iets3.core.expr.genjava.contracts, java.compile.org.iets3.core.expr.genjava.contracts#01, java.compile.org.iets3.core.expr.genjava.optimizer, java.compile.org.iets3.core.expr.genjava.optimizer.generator, java.compile.org.iets3.core.expr.genjava.messages, java.compile.org.iets3.core.expr.genjava.messages#01, java.compile.org.iets3.core.expr.genjava.simpleTypes, java.compile.org.iets3.core.expr.genjava.simpleTypes#8286534136182342700, java.compile.org.iets3.core.expr.genjava.tests, java.compile.org.iets3.core.expr.genjava.tests#8286534136181927906, java.compile.org.iets3.core.expr.genjava.toplevel, java.compile.org.iets3.core.expr.genjava.toplevel#1899408283182158123, java.compile.org.iets3.core.expr.genjava.stringvalidation, java.compile.org.iets3.core.expr.genjava.stringvalidation.generator, java.compile.org.iets3.core.expr.genjava.datetime, java.compile.org.iets3.core.expr.genjava.datetime#01, java.compile.org.iets3.core.expr.genjava.temporal, java.compile.org.iets3.core.expr.genjava.temporal#01, java.compile.org.iets3.core.expr.genjava.base.rt, java.compile.org.iets3.core.expr.genjava.messages.rt, java.compile.org.iets3.core.expr.genjava.tests.rt, java.compile.org.iets3.core.expr.genjava.toplevel.rt, java.compile.org.iets3.core.expr.genjava.temporal.rt, java.compile.org.iets3.core.expr.genjava.util, java.compile.org.iets3.core.expr.genjava.util#01, java.compile.org.iets3.core.expr.genjava.data, java.compile.org.iets3.core.expr.genjava.data.generator, java.compile.org.iets3.core.expr.genjava.core.genplan, java.compile.org.iets3.core.expr.genjava.advanced.genplan, java.compile.org.iets3.components.plugin, java.compile.org.iets3.components.core, java.compile.org.iets3.components.core.interpreter, java.compile.org.iets3.components.req, java.compile.org.iets3.components.functional, java.compile.org.iets3.components.toplevel.adapter, java.compile.org.iets3.core.mapping, java.compile.org.iets3.protocol.transport, java.compile.org.iets3.glossary, java.compile.org.iets3.req.core, java.compile.org.iets3.req.plugin, java.compile.org.iets3.opensource.build, java.compile.org.iets3.opensource.build.gentests, java.compile.org.iets3.opensource.build.gentests#01, java.compile.org.iets3.opensource.build.gentests.rt, java.compile.org.iets3.core.trace, java.compile.org.iets3.safety.attributes" />
   
   <target name="processResources" />
   
@@ -13900,6 +14006,7 @@
         <module file="${iets3.lang.opensource}/solutions/org.iets3.core.expr.genjava.core.genplan/org.iets3.core.expr.genjava.core.genplan.msd" />
         <module file="${iets3.lang.opensource}/solutions/org.iets3.core.expr.genjava.functionalJava/org.iets3.core.expr.genjava.functionalJava.msd" />
         <module file="${iets3.lang.opensource}/solutions/org.iets3.core.expr.genjava.messages.rt/org.iets3.core.expr.genjava.messages.rt.msd" />
+        <module file="${iets3.lang.opensource}/languages/org.iets3.core.expr.genjava.optimizer/org.iets3.core.expr.genjava.optimizer.mpl" />
         <module file="${iets3.lang.opensource}/solutions/org.iets3.core.expr.genjava.stateMachineExample.genplan/org.iets3.core.expr.genjava.stateMachineExample.genplan.msd" />
         <module file="${iets3.lang.opensource}/languages/org.iets3.core.expr.genjava.stateMachineExample/runtime/org.iets3.core.expr.genjava.stateMachineExample.runtime.msd" />
         <module file="${iets3.lang.opensource}/solutions/org.iets3.core.expr.genjava.tests.rt/org.iets3.core.expr.genjava.tests.rt.msd" />
@@ -25597,6 +25704,88 @@
     </copy>
   </target>
   
+  <target name="java.compile.org.iets3.core.expr.genjava.optimizer" depends="fetchDependencies">
+    <mkdir dir="${iets3.lang.opensource}/languages/org.iets3.core.expr.genjava.optimizer/source_gen" />
+    <mkdir dir="${build.tmp}/java/out/org.iets3.core.expr.genjava.optimizer" />
+    <javac2 destdir="${build.tmp}/java/out/org.iets3.core.expr.genjava.optimizer" fork="false" encoding="utf8" includeantruntime="false" debug="true" source="1.8" target="1.8">
+      <compilerarg value="-Xlint:none" />
+      <src>
+        <path location="${iets3.lang.opensource}/languages/org.iets3.core.expr.genjava.optimizer/source_gen" />
+      </src>
+      <classpath>
+        <fileset file="${artifacts.mps}/lib/mps-core.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-annotations.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-behavior-api.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-behavior-runtime.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-closures.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-collections.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-openapi.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-tuples.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-references.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-context.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-constraints-runtime.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-persistence.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-project-check.jar" />
+        <fileset file="${artifacts.mps}/lib/annotations.jar" />
+        <fileset file="${artifacts.mps}/lib/util-8.jar" />
+        <fileset file="${artifacts.mps}/lib/trove.jar" />
+        <fileset file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.jar" />
+        <fileset file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.closures.jar" />
+        <fileset file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.collections.jar" />
+        <fileset file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.scopes.jar" />
+        <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.core.jar" />
+        <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.descriptor.aspects.jar" />
+        <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.traceable.jar" />
+        <path refid="path.jdk.classpath" />
+      </classpath>
+    </javac2>
+    <copy todir="${build.tmp}/java/out/org.iets3.core.expr.genjava.optimizer">
+      <fileset dir="${iets3.lang.opensource}/languages/org.iets3.core.expr.genjava.optimizer/source_gen" excludes="**/*.java" />
+    </copy>
+  </target>
+  
+  <target name="java.compile.org.iets3.core.expr.genjava.optimizer.generator" depends="java.compile.org.iets3.core.expr.genjava.optimizer, fetchDependencies">
+    <mkdir dir="${iets3.lang.opensource}/languages/org.iets3.core.expr.genjava.optimizer/generator/source_gen" />
+    <mkdir dir="${build.tmp}/java/out/org.iets3.core.expr.genjava.optimizer.generator" />
+    <javac2 destdir="${build.tmp}/java/out/org.iets3.core.expr.genjava.optimizer.generator" fork="false" encoding="utf8" includeantruntime="false" debug="true" source="1.8" target="1.8">
+      <compilerarg value="-Xlint:none" />
+      <src>
+        <path location="${iets3.lang.opensource}/languages/org.iets3.core.expr.genjava.optimizer/generator/source_gen" />
+      </src>
+      <classpath>
+        <fileset file="${artifacts.mps}/lib/mps-core.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-annotations.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-behavior-api.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-behavior-runtime.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-closures.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-collections.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-openapi.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-tuples.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-references.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-context.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-constraints-runtime.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-persistence.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-project-check.jar" />
+        <pathelement path="${build.tmp}/java/out/org.iets3.core.expr.genjava.optimizer" />
+        <fileset file="${artifacts.mps}/lib/mps-generator.jar" />
+        <fileset file="${artifacts.mps}/lib/annotations.jar" />
+        <fileset file="${artifacts.mps}/lib/util-8.jar" />
+        <fileset file="${artifacts.mps}/lib/trove.jar" />
+        <fileset file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.jar" />
+        <fileset file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.closures.jar" />
+        <fileset file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.collections.jar" />
+        <fileset file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.logging.runtime.jar" />
+        <fileset file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.scopes.jar" />
+        <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.core.jar" />
+        <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.traceable.jar" />
+        <path refid="path.jdk.classpath" />
+      </classpath>
+    </javac2>
+    <copy todir="${build.tmp}/java/out/org.iets3.core.expr.genjava.optimizer.generator">
+      <fileset dir="${iets3.lang.opensource}/languages/org.iets3.core.expr.genjava.optimizer/generator/source_gen" excludes="**/*.java" />
+    </copy>
+  </target>
+  
   <target name="java.compile.org.iets3.core.expr.genjava.messages" depends="java.compile.org.iets3.analysis.base, java.compile.org.iets3.core.base, java.compile.org.iets3.core.expr.base, java.compile.org.iets3.core.expr.collections, java.compile.org.iets3.core.expr.genjava.base, java.compile.org.iets3.core.expr.genjava.base.rt, java.compile.org.iets3.core.expr.genjava.messages.rt, java.compile.org.iets3.core.expr.lambda, java.compile.org.iets3.core.expr.messages, java.compile.org.iets3.core.expr.path, java.compile.org.iets3.core.expr.toplevel, fetchDependencies">
     <mkdir dir="${iets3.lang.opensource}/languages/org.iets3.core.expr.genjava.messages/source_gen" />
     <mkdir dir="${build.tmp}/java/out/org.iets3.core.expr.genjava.messages" />
@@ -29327,6 +29516,8 @@
     <delete dir="${iets3.lang.opensource}/languages/org.iets3.core.expr.genjava.contracts/generator/source_gen" />
     <delete dir="${iets3.lang.opensource}/solutions/org.iets3.core.expr.genjava.core.genplan/source_gen" />
     <delete dir="${iets3.lang.opensource}/solutions/org.iets3.core.expr.genjava.messages.rt/source_gen" />
+    <delete dir="${iets3.lang.opensource}/languages/org.iets3.core.expr.genjava.optimizer/source_gen" />
+    <delete dir="${iets3.lang.opensource}/languages/org.iets3.core.expr.genjava.optimizer/generator/source_gen" />
     <delete dir="${iets3.lang.opensource}/solutions/org.iets3.core.expr.genjava.stateMachineExample.genplan/source_gen" />
     <delete dir="${iets3.lang.opensource}/languages/org.iets3.core.expr.genjava.stateMachineExample/runtime/source_gen" />
     <delete dir="${iets3.lang.opensource}/solutions/org.iets3.core.expr.genjava.tests.rt/source_gen" />

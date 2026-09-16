@@ -23,11 +23,11 @@ import org.iets3.core.expr.genjava.tests.rt.rt.EqualsTestOp;
  */
 public class Generated_alt_Test {
 
-  public static Boolean alt1ParamA(Number in) {
+  public static Boolean alt1ParamA(final Number in) {
     Boolean res = ((_FunctionTypes._return_P0_E0<Boolean>) () -> {
-      if (AH.isEqual(in, ((Number) new BigInteger("0")))) {
+      if (AH.isEqual(in, (Number) new BigInteger("0"))) {
         return true;
-      } else if (!(AH.isEqual(in, ((Number) new BigInteger("0"))))) {
+      } else if (!(AH.isEqual(in, (Number) new BigInteger("0")))) {
         return false;
       } else {
         throw new AlternativesException("The proposed alternative does not exist.");
@@ -35,7 +35,7 @@ public class Generated_alt_Test {
     }).invoke();
     {
       Boolean it = res;
-      if (!((((AH.isEqual(in, ((Number) new BigInteger("0")))) && it) || (!(AH.isEqual(in, ((Number) new BigInteger("0")))) && !(it))))) {
+      if (!((AH.isEqual(in, (Number) new BigInteger("0")) && it) || (!(AH.isEqual(in, (Number) new BigInteger("0"))) && !(it)))) {
         final Message message = new Message(BuiltinMessageKinds.error(), ContractViolatedException.POST_FAILED + ": " + "(in == 0) <=> res").withLocation(new ProgramLocation("r:857bd1a9-fc6d-4f8f-b9d1-c2f774ee6e86(test.in.expr.os.alt@tests)/4839080874925980391", "http://127.0.0.1:63320/node?ref=r%3A857bd1a9-fc6d-4f8f-b9d1-c2f774ee6e86%28test.in.expr.os.alt%40tests%29%2F4839080874925980391")).withAffectedMemberNames(new HashSet<String>(Arrays.<String>asList()));
         GlobalContext.MESSAGE_LOG.get().collect(message);
         throw new ContractViolatedException(message);
@@ -45,16 +45,10 @@ public class Generated_alt_Test {
     return res;
   }
   public static Boolean alt1ParamB(Number in) {
-    Boolean res = ((_FunctionTypes._return_P0_E0<Boolean>) () -> {
-      if (AH.isEqual(in, ((Number) new BigInteger("0")))) {
-        return true;
-      } else {
-        return false;
-      }
-    }).invoke();
+    Boolean res = (AH.isEqual(in, (Number) new BigInteger("0")) ? true : false);
     {
       Boolean it = res;
-      if (!((((AH.isEqual(in, ((Number) new BigInteger("0")))) && it) || (!(AH.isEqual(in, ((Number) new BigInteger("0")))) && !(it))))) {
+      if (!((AH.isEqual(in, (Number) new BigInteger("0")) && it) || (!(AH.isEqual(in, (Number) new BigInteger("0"))) && !(it)))) {
         final Message message = new Message(BuiltinMessageKinds.error(), ContractViolatedException.POST_FAILED + ": " + "(in == 0) <=> res").withLocation(new ProgramLocation("r:857bd1a9-fc6d-4f8f-b9d1-c2f774ee6e86(test.in.expr.os.alt@tests)/4839080874925983995", "http://127.0.0.1:63320/node?ref=r%3A857bd1a9-fc6d-4f8f-b9d1-c2f774ee6e86%28test.in.expr.os.alt%40tests%29%2F4839080874925983995")).withAffectedMemberNames(new HashSet<String>(Arrays.<String>asList()));
         GlobalContext.MESSAGE_LOG.get().collect(message);
         throw new ContractViolatedException(message);
@@ -63,11 +57,11 @@ public class Generated_alt_Test {
 
     return res;
   }
-  public static Boolean alt1ParamC(Number in) {
+  public static Boolean alt1ParamC(final Number in) {
     Boolean res = ((_FunctionTypes._return_P0_E0<Boolean>) () -> {
-      if (AH.isEqual(in, ((Number) new BigInteger("0")))) {
+      if (AH.isEqual(in, (Number) new BigInteger("0"))) {
         return true;
-      } else if (AH.isEqual(in, ((Number) new BigInteger("1")))) {
+      } else if (AH.isEqual(in, (Number) new BigInteger("1"))) {
         return false;
       } else {
         throw new AlternativesException("The proposed alternative does not exist.");
@@ -76,12 +70,12 @@ public class Generated_alt_Test {
 
     return res;
   }
-  public static Number alt2ParamA(Number in1, String in2) {
+  public static Number alt2ParamA(final Number in1, final String in2) {
     Number res = ((_FunctionTypes._return_P0_E0<Number>) () -> {
-      if (AH.isEqual(in1, ((Number) new BigInteger("0")))) {
-        return ((Number) new BigInteger("1"));
+      if (AH.isEqual(in1, (Number) new BigInteger("0"))) {
+        return (Number) new BigInteger("1");
       } else if (!(Objects.equals(in2, "not_two"))) {
-        return ((Number) new BigInteger("2"));
+        return (Number) new BigInteger("2");
       } else {
         throw new AlternativesException("The proposed alternative does not exist.");
       }
@@ -89,10 +83,10 @@ public class Generated_alt_Test {
     {
       Number it = res;
       if (!(AH.isEqual(it, ((_FunctionTypes._return_P0_E0<Number>) () -> {
-        if (AH.isEqual(in1, ((Number) new BigInteger("0")))) {
-          return ((Number) new BigInteger("1"));
+        if (AH.isEqual(in1, (Number) new BigInteger("0"))) {
+          return (Number) new BigInteger("1");
         } else if (!(Objects.equals(in2, "not_two"))) {
-          return ((Number) new BigInteger("2"));
+          return (Number) new BigInteger("2");
         } else {
           throw new AlternativesException("The proposed alternative does not exist.");
         }
@@ -106,22 +100,10 @@ public class Generated_alt_Test {
     return res;
   }
   public static Number alt2ParamB(Number in1, String in2) {
-    Number res = ((_FunctionTypes._return_P0_E0<Number>) () -> {
-      if (AH.isEqual(in1, ((Number) new BigInteger("0")))) {
-        return ((Number) new BigInteger("1"));
-      } else {
-        return ((Number) new BigInteger("2"));
-      }
-    }).invoke();
+    Number res = (AH.isEqual(in1, (Number) new BigInteger("0")) ? (Number) new BigInteger("1") : (Number) new BigInteger("2"));
     {
       Number it = res;
-      if (!(AH.isEqual(it, ((_FunctionTypes._return_P0_E0<Number>) () -> {
-        if (AH.isEqual(in1, ((Number) new BigInteger("0")))) {
-          return ((Number) new BigInteger("1"));
-        } else {
-          return ((Number) new BigInteger("2"));
-        }
-      }).invoke()))) {
+      if (!(AH.isEqual(it, (AH.isEqual(in1, (Number) new BigInteger("0")) ? (Number) new BigInteger("1") : (Number) new BigInteger("2"))))) {
         final Message message = new Message(BuiltinMessageKinds.error(), ContractViolatedException.POST_FAILED + ": " + "res == if in1 == 0 then 1 else 2").withLocation(new ProgramLocation("r:857bd1a9-fc6d-4f8f-b9d1-c2f774ee6e86(test.in.expr.os.alt@tests)/4839080874925993218", "http://127.0.0.1:63320/node?ref=r%3A857bd1a9-fc6d-4f8f-b9d1-c2f774ee6e86%28test.in.expr.os.alt%40tests%29%2F4839080874925993218")).withAffectedMemberNames(new HashSet<String>(Arrays.<String>asList()));
         GlobalContext.MESSAGE_LOG.get().collect(message);
         throw new ContractViolatedException(message);
@@ -133,19 +115,17 @@ public class Generated_alt_Test {
   @Test
   public void alt_item0_4874335060899225219() throws Throwable {
     try {
-      ((_FunctionTypes._void_P0_E0) () -> {
-        if (((_FunctionTypes._return_P0_E0<String>) () -> {
-          if (AH.isEqual(((Number) new BigInteger("1")), ((Number) new BigInteger("2")))) {
-            return "true";
-          } else if (AH.isEqual(((Number) new BigInteger("2")), ((Number) new BigInteger("1")))) {
-            return "true";
-          } else {
-            throw new AlternativesException("The proposed alternative does not exist.");
-          }
-        }).invoke() == null) {
-          throw new NullPointerException("No Result in Invalid Testitem");
+      if (((_FunctionTypes._return_P0_E0<String>) () -> {
+        if (AH.isEqual((Number) new BigInteger("1"), (Number) new BigInteger("2"))) {
+          return "true";
+        } else if (AH.isEqual((Number) new BigInteger("2"), (Number) new BigInteger("1"))) {
+          return "true";
+        } else {
+          throw new AlternativesException("The proposed alternative does not exist.");
         }
-      }).invoke();
+      }).invoke() == null) {
+        throw new NullPointerException("No Result in Invalid Testitem");
+      }
       Assert.fail("Invalid Value");
     } catch (Exception e) {
       // expected exception
@@ -153,18 +133,18 @@ public class Generated_alt_Test {
   }
   @Test
   public void alt_item1_3611639268124042428() throws Throwable {
-    Assert.assertEquals("Expected: " + ("true") + ", but was: " + (((_FunctionTypes._return_P0_E0<String>) () -> {
-      if (AH.isEqual(((Number) new BigInteger("1")), ((Number) new BigInteger("1")))) {
+    Assert.assertEquals("Expected: " + "true" + ", but was: " + (((_FunctionTypes._return_P0_E0<String>) () -> {
+      if (AH.isEqual((Number) new BigInteger("1"), (Number) new BigInteger("1"))) {
         return "true";
-      } else if (AH.isEqual(((Number) new BigInteger("2")), ((Number) new BigInteger("2")))) {
+      } else if (AH.isEqual((Number) new BigInteger("2"), (Number) new BigInteger("2"))) {
         return "true";
       } else {
         throw new AlternativesException("The proposed alternative does not exist.");
       }
     }).invoke()), (Object) "true", (Object) ((_FunctionTypes._return_P0_E0<String>) () -> {
-      if (AH.isEqual(((Number) new BigInteger("1")), ((Number) new BigInteger("1")))) {
+      if (AH.isEqual((Number) new BigInteger("1"), (Number) new BigInteger("1"))) {
         return "true";
-      } else if (AH.isEqual(((Number) new BigInteger("2")), ((Number) new BigInteger("2")))) {
+      } else if (AH.isEqual((Number) new BigInteger("2"), (Number) new BigInteger("2"))) {
         return "true";
       } else {
         throw new AlternativesException("The proposed alternative does not exist.");
@@ -173,169 +153,107 @@ public class Generated_alt_Test {
   }
   @Test
   public void alt_item3_4421228160174381096() throws Throwable {
-    Assert.assertEquals("Expected: " + (true) + ", but was: " + (Generated_alt_Test.alt1ParamA(((Number) new BigInteger("0")))), (Object) true, (Object) Generated_alt_Test.alt1ParamA(((Number) new BigInteger("0"))));
+    Assert.assertEquals("Expected: " + true + ", but was: " + Generated_alt_Test.alt1ParamA((Number) new BigInteger("0")), (Object) true, (Object) Generated_alt_Test.alt1ParamA((Number) new BigInteger("0")));
   }
   @Test
   public void alt_item4_4421228160174381101() throws Throwable {
-    Assert.assertEquals("Expected: " + (false) + ", but was: " + (Generated_alt_Test.alt1ParamA(((Number) new BigInteger("1")))), (Object) false, (Object) Generated_alt_Test.alt1ParamA(((Number) new BigInteger("1"))));
+    Assert.assertEquals("Expected: " + false + ", but was: " + Generated_alt_Test.alt1ParamA((Number) new BigInteger("1")), (Object) false, (Object) Generated_alt_Test.alt1ParamA((Number) new BigInteger("1")));
   }
   @Test
   public void alt_item5_4421228160174381106() throws Throwable {
-    Assert.assertEquals("Expected: " + (true) + ", but was: " + (Generated_alt_Test.alt1ParamB(((Number) new BigInteger("0")))), (Object) true, (Object) Generated_alt_Test.alt1ParamB(((Number) new BigInteger("0"))));
+    Assert.assertEquals("Expected: " + true + ", but was: " + Generated_alt_Test.alt1ParamB((Number) new BigInteger("0")), (Object) true, (Object) Generated_alt_Test.alt1ParamB((Number) new BigInteger("0")));
   }
   @Test
   public void alt_item6_4421228160174381111() throws Throwable {
-    Assert.assertEquals("Expected: " + (false) + ", but was: " + (Generated_alt_Test.alt1ParamB(((Number) new BigInteger("1")))), (Object) false, (Object) Generated_alt_Test.alt1ParamB(((Number) new BigInteger("1"))));
+    Assert.assertEquals("Expected: " + false + ", but was: " + Generated_alt_Test.alt1ParamB((Number) new BigInteger("1")), (Object) false, (Object) Generated_alt_Test.alt1ParamB((Number) new BigInteger("1")));
   }
   @Test
   public void alt_item8_4421228160199088422() throws Throwable {
-    Assert.assertEquals("Expected: " + ("A") + ", but was: " + (((_FunctionTypes._return_P0_E0<String>) () -> {
-      if (Generated_alt_Test.alt1ParamA(((Number) new BigInteger("0")))) {
-        return "A";
-      } else {
-        return "B";
-      }
-    }).invoke()), (Object) "A", (Object) ((_FunctionTypes._return_P0_E0<String>) () -> {
-      if (Generated_alt_Test.alt1ParamA(((Number) new BigInteger("0")))) {
-        return "A";
-      } else {
-        return "B";
-      }
-    }).invoke());
+    Assert.assertEquals("Expected: " + "A" + ", but was: " + (Generated_alt_Test.alt1ParamA((Number) new BigInteger("0")) ? "A" : "B"), (Object) "A", (Object) ((Generated_alt_Test.alt1ParamA((Number) new BigInteger("0")) ? "A" : "B")));
   }
   @Test
   public void alt_item9_4421228160199841110() throws Throwable {
-    Assert.assertEquals("Expected: " + ("B") + ", but was: " + (((_FunctionTypes._return_P0_E0<String>) () -> {
-      if (Generated_alt_Test.alt1ParamA(((Number) new BigInteger("1")))) {
-        return "A";
-      } else {
-        return "B";
-      }
-    }).invoke()), (Object) "B", (Object) ((_FunctionTypes._return_P0_E0<String>) () -> {
-      if (Generated_alt_Test.alt1ParamA(((Number) new BigInteger("1")))) {
-        return "A";
-      } else {
-        return "B";
-      }
-    }).invoke());
+    Assert.assertEquals("Expected: " + "B" + ", but was: " + (Generated_alt_Test.alt1ParamA((Number) new BigInteger("1")) ? "A" : "B"), (Object) "B", (Object) ((Generated_alt_Test.alt1ParamA((Number) new BigInteger("1")) ? "A" : "B")));
   }
   @Test
   public void alt_item11_4421228160174381118() throws Throwable {
-    Assert.assertTrue("Expected: " + (((Number) new BigInteger("1"))) + ", but was: " + (Generated_alt_Test.alt2ParamA(((Number) new BigInteger("0")), "any")), EqualsTestOp.matches(((Number) new BigInteger("1")), Generated_alt_Test.alt2ParamA(((Number) new BigInteger("0")), "any")));
+    Assert.assertTrue("Expected: " + (Number) new BigInteger("1") + ", but was: " + Generated_alt_Test.alt2ParamA((Number) new BigInteger("0"), "any"), EqualsTestOp.matches((Number) new BigInteger("1"), Generated_alt_Test.alt2ParamA((Number) new BigInteger("0"), "any")));
   }
   @Test
   public void alt_item12_4421228160174381124() throws Throwable {
-    Assert.assertTrue("Expected: " + (((Number) new BigInteger("2"))) + ", but was: " + (Generated_alt_Test.alt2ParamA(((BigInteger) ((Number) new BigInteger("99383"))).negate(), "two")), EqualsTestOp.matches(((Number) new BigInteger("2")), Generated_alt_Test.alt2ParamA(((BigInteger) ((Number) new BigInteger("99383"))).negate(), "two")));
+    Assert.assertTrue("Expected: " + (Number) new BigInteger("2") + ", but was: " + Generated_alt_Test.alt2ParamA(((BigInteger) (Number) new BigInteger("99383")).negate(), "two"), EqualsTestOp.matches((Number) new BigInteger("2"), Generated_alt_Test.alt2ParamA(((BigInteger) (Number) new BigInteger("99383")).negate(), "two")));
   }
   @Test
   public void alt_item13_4421228160174381131() throws Throwable {
-    Assert.assertTrue("Expected: " + (((Number) new BigInteger("1"))) + ", but was: " + (Generated_alt_Test.alt2ParamB(((Number) new BigInteger("0")), "any")), EqualsTestOp.matches(((Number) new BigInteger("1")), Generated_alt_Test.alt2ParamB(((Number) new BigInteger("0")), "any")));
+    Assert.assertTrue("Expected: " + (Number) new BigInteger("1") + ", but was: " + Generated_alt_Test.alt2ParamB((Number) new BigInteger("0"), "any"), EqualsTestOp.matches((Number) new BigInteger("1"), Generated_alt_Test.alt2ParamB((Number) new BigInteger("0"), "any")));
   }
   @Test
   public void alt_item14_4421228160174381137() throws Throwable {
-    Assert.assertTrue("Expected: " + (((Number) new BigInteger("2"))) + ", but was: " + (Generated_alt_Test.alt2ParamA(((BigInteger) ((Number) new BigInteger("99383"))).negate(), "two")), EqualsTestOp.matches(((Number) new BigInteger("2")), Generated_alt_Test.alt2ParamA(((BigInteger) ((Number) new BigInteger("99383"))).negate(), "two")));
+    Assert.assertTrue("Expected: " + (Number) new BigInteger("2") + ", but was: " + Generated_alt_Test.alt2ParamA(((BigInteger) (Number) new BigInteger("99383")).negate(), "two"), EqualsTestOp.matches((Number) new BigInteger("2"), Generated_alt_Test.alt2ParamA(((BigInteger) (Number) new BigInteger("99383")).negate(), "two")));
   }
   @Test
   public void alt_withBlockExpression_item0_8086792206069713103() throws Throwable {
-    Assert.assertEquals("Expected: " + (true) + ", but was: " + (((_FunctionTypes._return_P0_E0<Boolean>) () -> {
-      if (AH.isEqual(((Number) new BigInteger("1")), ((Number) new BigInteger("1")))) {
-        return ((_FunctionTypes._return_P0_E0<Boolean>) () -> {
-          Number v1 = AH.mul(((Number) new BigInteger("5")), ((Number) new BigInteger("2")));
-          return AH.isEqual(v1, ((Number) new BigInteger("10")));
-        }).invoke();
-      } else {
-        return false;
-      }
-    }).invoke()), (Object) true, (Object) ((_FunctionTypes._return_P0_E0<Boolean>) () -> {
-      if (AH.isEqual(((Number) new BigInteger("1")), ((Number) new BigInteger("1")))) {
-        return ((_FunctionTypes._return_P0_E0<Boolean>) () -> {
-          Number v1 = AH.mul(((Number) new BigInteger("5")), ((Number) new BigInteger("2")));
-          return AH.isEqual(v1, ((Number) new BigInteger("10")));
-        }).invoke();
-      } else {
-        return false;
-      }
-    }).invoke());
+    Assert.assertEquals("Expected: " + true + ", but was: " + (AH.isEqual((Number) new BigInteger("1"), (Number) new BigInteger("1")) ? ((_FunctionTypes._return_P0_E0<Boolean>) () -> {
+      Number v1 = AH.mul((Number) new BigInteger("5"), (Number) new BigInteger("2"));
+      return AH.isEqual(v1, (Number) new BigInteger("10"));
+    }).invoke() : false), (Object) true, (Object) ((AH.isEqual((Number) new BigInteger("1"), (Number) new BigInteger("1")) ? ((_FunctionTypes._return_P0_E0<Boolean>) () -> {
+      Number v1 = AH.mul((Number) new BigInteger("5"), (Number) new BigInteger("2"));
+      return AH.isEqual(v1, (Number) new BigInteger("10"));
+    }).invoke() : false)));
   }
   @Test
   public void alt_withBlockExpression_item1_4862176901443507804() throws Throwable {
-    Assert.assertEquals("Expected: " + (false) + ", but was: " + (((_FunctionTypes._return_P0_E0<Boolean>) () -> {
-      if (AH.isEqual(((Number) new BigInteger("1")), ((Number) new BigInteger("2")))) {
-        return true;
-      } else {
-        return ((_FunctionTypes._return_P0_E0<Boolean>) () -> {
-          Number v1 = AH.mul(((Number) new BigInteger("5")), ((Number) new BigInteger("2")));
-          return AH.isEqual(v1, ((Number) new BigInteger("11")));
-        }).invoke();
-      }
-    }).invoke()), (Object) false, (Object) ((_FunctionTypes._return_P0_E0<Boolean>) () -> {
-      if (AH.isEqual(((Number) new BigInteger("1")), ((Number) new BigInteger("2")))) {
-        return true;
-      } else {
-        return ((_FunctionTypes._return_P0_E0<Boolean>) () -> {
-          Number v1 = AH.mul(((Number) new BigInteger("5")), ((Number) new BigInteger("2")));
-          return AH.isEqual(v1, ((Number) new BigInteger("11")));
-        }).invoke();
-      }
-    }).invoke());
+    Assert.assertEquals("Expected: " + false + ", but was: " + (AH.isEqual((Number) new BigInteger("1"), (Number) new BigInteger("2")) ? true : ((_FunctionTypes._return_P0_E0<Boolean>) () -> {
+      Number v1 = AH.mul((Number) new BigInteger("5"), (Number) new BigInteger("2"));
+      return AH.isEqual(v1, (Number) new BigInteger("11"));
+    }).invoke()), (Object) false, (Object) ((AH.isEqual((Number) new BigInteger("1"), (Number) new BigInteger("2")) ? true : ((_FunctionTypes._return_P0_E0<Boolean>) () -> {
+      Number v1 = AH.mul((Number) new BigInteger("5"), (Number) new BigInteger("2"));
+      return AH.isEqual(v1, (Number) new BigInteger("11"));
+    }).invoke())));
   }
   public static Number f1() {
-    Number res = ((Number) new BigInteger("1"));
+    Number res = (Number) new BigInteger("1");
 
     return res;
   }
   @Test
   public void alt_functions_item0_5096151429183367191() throws Throwable {
-    Assert.assertTrue("Expected: " + (((Number) new BigInteger("0"))) + ", but was: " + (((_FunctionTypes._return_P0_E0<Number>) () -> {
-      if (AH.isEqual(Generated_alt_Test.f1(), ((Number) new BigInteger("1")))) {
-        return ((Number) new BigInteger("0"));
-      } else {
-        return Generated_alt_Test.f1();
-      }
-    }).invoke()), EqualsTestOp.matches(((Number) new BigInteger("0")), ((_FunctionTypes._return_P0_E0<Number>) () -> {
-      if (AH.isEqual(Generated_alt_Test.f1(), ((Number) new BigInteger("1")))) {
-        return ((Number) new BigInteger("0"));
-      } else {
-        return Generated_alt_Test.f1();
-      }
-    }).invoke()));
+    Assert.assertTrue("Expected: " + (Number) new BigInteger("0") + ", but was: " + (AH.isEqual(Generated_alt_Test.f1(), (Number) new BigInteger("1")) ? (Number) new BigInteger("0") : Generated_alt_Test.f1()), EqualsTestOp.matches((Number) new BigInteger("0"), (AH.isEqual(Generated_alt_Test.f1(), (Number) new BigInteger("1")) ? (Number) new BigInteger("0") : Generated_alt_Test.f1())));
   }
-  public static final Number a_ = ((Number) new BigInteger("1"));
-  public static final Number b_ = ((Number) new BigInteger("1"));
+  public static final Number a_ = (Number) new BigInteger("1");
+  public static final Number b_ = (Number) new BigInteger("1");
   @Test
   public void utils_alt_c_7740953487931420188() throws Throwable {
-    Assert.assertTrue("Expected: " + (((Number) new BigInteger("1"))) + ", but was: " + (((_FunctionTypes._return_P0_E0<Number>) () -> {
-      if (AH.isLess(Generated_alt_Test.a_, ((Number) new BigInteger("0"))) && AH.isGreater(Generated_alt_Test.b_, ((Number) new BigInteger("1")))) {
-        return ((Number) new BigInteger("2"));
-      } else if (AH.isGreater(Generated_alt_Test.a_, ((Number) new BigInteger("0"))) && AH.isEqual(Generated_alt_Test.b_, ((Number) new BigInteger("1")))) {
-        return ((Number) new BigInteger("1"));
+    Assert.assertTrue("Expected: " + (Number) new BigInteger("1") + ", but was: " + (((_FunctionTypes._return_P0_E0<Number>) () -> {
+      if (AH.isLess(Generated_alt_Test.a_, (Number) new BigInteger("0")) && AH.isGreater(Generated_alt_Test.b_, (Number) new BigInteger("1"))) {
+        return (Number) new BigInteger("2");
+      } else if (AH.isGreater(Generated_alt_Test.a_, (Number) new BigInteger("0")) && AH.isEqual(Generated_alt_Test.b_, (Number) new BigInteger("1"))) {
+        return (Number) new BigInteger("1");
       } else {
         throw new AlternativesException("The proposed alternative does not exist.");
       }
-    }).invoke()), EqualsTestOp.matches(((Number) new BigInteger("1")), ((_FunctionTypes._return_P0_E0<Number>) () -> {
-      if (AH.isLess(Generated_alt_Test.a_, ((Number) new BigInteger("0"))) && AH.isGreater(Generated_alt_Test.b_, ((Number) new BigInteger("1")))) {
-        return ((Number) new BigInteger("2"));
-      } else if (AH.isGreater(Generated_alt_Test.a_, ((Number) new BigInteger("0"))) && AH.isEqual(Generated_alt_Test.b_, ((Number) new BigInteger("1")))) {
-        return ((Number) new BigInteger("1"));
+    }).invoke()), EqualsTestOp.matches((Number) new BigInteger("1"), ((_FunctionTypes._return_P0_E0<Number>) () -> {
+      if (AH.isLess(Generated_alt_Test.a_, (Number) new BigInteger("0")) && AH.isGreater(Generated_alt_Test.b_, (Number) new BigInteger("1"))) {
+        return (Number) new BigInteger("2");
+      } else if (AH.isGreater(Generated_alt_Test.a_, (Number) new BigInteger("0")) && AH.isEqual(Generated_alt_Test.b_, (Number) new BigInteger("1"))) {
+        return (Number) new BigInteger("1");
       } else {
         throw new AlternativesException("The proposed alternative does not exist.");
       }
     }).invoke()));
   }
   public static Number sgnWithVars(Number in) {
-    Number res = ((_FunctionTypes._return_P0_E0<Number>) () -> {
-      Number z = ((Number) new BigInteger("0"));
-      if (AH.isEqual(in, ((Number) new BigInteger("0")))) {
-        z = ((Number) new BigInteger("0"));
-      } else if (AH.isGreater(in, ((Number) new BigInteger("0")))) {
-        z = ((Number) new BigInteger("1"));
-      } else if (AH.isLess(in, ((Number) new BigInteger("0")))) {
-        z = ((BigInteger) ((Number) new BigInteger("1"))).negate();
-      } else {
-        throw new AlternativesException("The proposed alternative does not exist.");
-      }
-      return z;
-    }).invoke();
+    Number z = (Number) new BigInteger("0");
+    if (AH.isEqual(in, (Number) new BigInteger("0"))) {
+      z = (Number) new BigInteger("0");
+    } else if (AH.isGreater(in, (Number) new BigInteger("0"))) {
+      z = (Number) new BigInteger("1");
+    } else if (AH.isLess(in, (Number) new BigInteger("0"))) {
+      z = ((BigInteger) (Number) new BigInteger("1")).negate();
+    } else {
+      throw new AlternativesException("The proposed alternative does not exist.");
+    }
+    Number res = z;
 
     return res;
   }

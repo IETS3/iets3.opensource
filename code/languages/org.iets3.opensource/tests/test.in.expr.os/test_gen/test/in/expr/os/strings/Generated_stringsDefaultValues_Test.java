@@ -12,7 +12,7 @@ public class Generated_stringsDefaultValues_Test {
 
   @Test
   public void TestDefaultValues_item0_6932772747675577671() throws Throwable {
-    Assert.assertEquals("Expected: " + ("") + ", but was: " + (""), (Object) "", (Object) "");
+    Assert.assertEquals("Expected: " + "" + ", but was: " + "", (Object) "", (Object) "");
   }
 
 

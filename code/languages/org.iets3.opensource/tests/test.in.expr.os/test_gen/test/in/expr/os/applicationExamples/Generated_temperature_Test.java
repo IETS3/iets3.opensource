@@ -41,10 +41,10 @@ public class Generated_temperature_Test {
    * carefully.
    */
     public static Number FtoC(Number t) {
-    Number res = AH.limit(AH.truncate(AH.div(AH.mul((AH.sub(t, ((Number) new BigInteger("32")))), ((Number) new BigInteger("5"))), ((Number) new BigInteger("9"))), 1), ((Number) (new BigDecimal("34.0").setScale(1, RoundingMode.DOWN))), ((Number) (new BigDecimal("42.0").setScale(1, RoundingMode.DOWN))));
+    Number res = AH.limit(AH.truncate(AH.div(AH.mul(AH.sub(t, (Number) new BigInteger("32")), (Number) new BigInteger("5")), (Number) new BigInteger("9")), 1), (Number) new BigDecimal("34.0").setScale(1, RoundingMode.DOWN), (Number) new BigDecimal("42.0").setScale(1, RoundingMode.DOWN));
     {
       Number it = res;
-      if (!(AH.isEqual(it, AH.limit(AH.truncate(AH.div(AH.mul((AH.sub(t, ((Number) new BigInteger("32")))), ((Number) new BigInteger("5"))), ((Number) new BigInteger("9"))), 1), ((Number) (new BigDecimal("34.0").setScale(1, RoundingMode.DOWN))), ((Number) (new BigDecimal("42.0").setScale(1, RoundingMode.DOWN))))))) {
+      if (!(AH.isEqual(it, AH.limit(AH.truncate(AH.div(AH.mul(AH.sub(t, (Number) new BigInteger("32")), (Number) new BigInteger("5")), (Number) new BigInteger("9")), 1), (Number) new BigDecimal("34.0").setScale(1, RoundingMode.DOWN), (Number) new BigDecimal("42.0").setScale(1, RoundingMode.DOWN))))) {
         final Message message = new Message(BuiltinMessageKinds.error(), ContractViolatedException.POST_FAILED + ": " + "res == limit<tempInC>(precision<truncate to 1>((t - 32) * 5 / 9))").withLocation(new ProgramLocation("r:206e2f16-1e9d-4dba-a48f-a14d1e82c7a3(test.in.expr.os.applicationExamples@tests)/8224492649637339634", "http://127.0.0.1:63320/node?ref=r%3A206e2f16-1e9d-4dba-a48f-a14d1e82c7a3%28test.in.expr.os.applicationExamples%40tests%29%2F8224492649637339634")).withAffectedMemberNames(new HashSet<String>(Arrays.<String>asList()));
         GlobalContext.MESSAGE_LOG.get().collect(message);
         throw new ContractViolatedException(message);
@@ -118,7 +118,7 @@ public class Generated_temperature_Test {
       if (!(o instanceof TempFromUI)) {
         return false;
       }
-      TempFromUI rd = ((TempFromUI) o);
+      TempFromUI rd = (TempFromUI) o;
 
       if (!(AH.isEqual(this.value, rd.getvalue()))) {
         return false;
@@ -177,26 +177,14 @@ public class Generated_temperature_Test {
    * a runtime error if the value is not in bounds of nullor nullrespectively.
    */
     public static class toC {
-    public static Number toC(TempFromUI this_) {
-      Number res = ((_FunctionTypes._return_P0_E0<Number>) () -> {
-        if (((_FunctionTypes._return_P0_E0<Boolean>) () -> {
-          Boolean b = (this_.getunit() == uiTempUnit.celcius);
-          if (this_.getunit() == null) {
-            return null;
-          }
-          return b;
-        }).invoke()) {
-          return ((_FunctionTypes._return_P0_E0<Number>) () -> {
-            Number newValue = this_.getvalue();
-            return newValue;
-          }).invoke();
-        } else {
-          return Generated_temperature_Test.FtoC(((_FunctionTypes._return_P0_E0<Number>) () -> {
-            Number newValue = this_.getvalue();
-            return newValue;
-          }).invoke());
+    public static Number toC(final TempFromUI this_) {
+      Number res = (((_FunctionTypes._return_P0_E0<Boolean>) () -> {
+        Boolean b = this_.getunit() == uiTempUnit.celcius;
+        if (this_.getunit() == null) {
+          return null;
         }
-      }).invoke();
+        return b;
+      }).invoke() ? this_.getvalue() : Generated_temperature_Test.FtoC(this_.getvalue()));
 
       return res;
     }
@@ -210,20 +198,20 @@ public class Generated_temperature_Test {
    * as an example, we assume this value delivers a temperature from the UI.
    * It uses a TempFromUI record instance and specifies Fahrenheit in this case.
    */
-    public static final TempFromUI someDataFromUI_ = new TempFromUI(((Number) (new BigDecimal("100.0").setScale(1, RoundingMode.DOWN))), uiTempUnit.fahrenheit);
+    public static final TempFromUI someDataFromUI_ = new TempFromUI((Number) new BigDecimal("100.0").setScale(1, RoundingMode.DOWN), uiTempUnit.fahrenheit);
 /* 
    * This demonstrates how we can use the toC() member function. We can call 
    * it on any TempFromUI and it does the conversion, if necessary.
    */
     public static final Number anTempValueInTheStatemachine_ = toC.toC(Generated_temperature_Test.someDataFromUI_);
-  public static final Number validTempInF_ = ((Number) (new BigDecimal("100.0").setScale(1, RoundingMode.DOWN)));
+  public static final Number validTempInF_ = (Number) new BigDecimal("100.0").setScale(1, RoundingMode.DOWN);
   @Test
   public void TempConversion_item0_6527211908667126376() throws Throwable {
-    Assert.assertTrue("Expected: " + (((Number) (new BigDecimal("37.7").setScale(1, RoundingMode.DOWN)))) + ", but was: " + (Generated_temperature_Test.FtoC(((Number) (new BigDecimal("100.0").setScale(1, RoundingMode.DOWN))))), EqualsTestOp.matches(((Number) (new BigDecimal("37.7").setScale(1, RoundingMode.DOWN))), Generated_temperature_Test.FtoC(((Number) (new BigDecimal("100.0").setScale(1, RoundingMode.DOWN))))));
+    Assert.assertTrue("Expected: " + (Number) new BigDecimal("37.7").setScale(1, RoundingMode.DOWN) + ", but was: " + Generated_temperature_Test.FtoC((Number) new BigDecimal("100.0").setScale(1, RoundingMode.DOWN)), EqualsTestOp.matches((Number) new BigDecimal("37.7").setScale(1, RoundingMode.DOWN), Generated_temperature_Test.FtoC((Number) new BigDecimal("100.0").setScale(1, RoundingMode.DOWN))));
   }
   @Test
   public void TempConversion_item2_6527211908667503678() throws Throwable {
-    Assert.assertTrue("Expected: " + (((Number) (new BigDecimal("37.7").setScale(1, RoundingMode.DOWN)))) + ", but was: " + (toC.toC(Generated_temperature_Test.someDataFromUI_)), EqualsTestOp.matches(((Number) (new BigDecimal("37.7").setScale(1, RoundingMode.DOWN))), toC.toC(Generated_temperature_Test.someDataFromUI_)));
+    Assert.assertTrue("Expected: " + (Number) new BigDecimal("37.7").setScale(1, RoundingMode.DOWN) + ", but was: " + toC.toC(Generated_temperature_Test.someDataFromUI_), EqualsTestOp.matches((Number) new BigDecimal("37.7").setScale(1, RoundingMode.DOWN), toC.toC(Generated_temperature_Test.someDataFromUI_)));
   }
 
 

@@ -45,59 +45,59 @@ public class Generated_precision_Test {
   }
   @Test
   public void round_item0_1988438614052606453() throws Throwable {
-    Assert.assertTrue("Expected: " + (((BigInteger) ((Number) new BigInteger("80"))).negate()) + ", but was: " + (AH.truncate(((Number) (new BigDecimal("-80.01").setScale(2, RoundingMode.DOWN))), 0)), EqualsTestOp.matches(((BigInteger) ((Number) new BigInteger("80"))).negate(), AH.truncate(((Number) (new BigDecimal("-80.01").setScale(2, RoundingMode.DOWN))), 0)));
+    Assert.assertTrue("Expected: " + ((BigInteger) (Number) new BigInteger("80")).negate() + ", but was: " + AH.truncate((Number) new BigDecimal("-80.01").setScale(2, RoundingMode.DOWN), 0), EqualsTestOp.matches(((BigInteger) (Number) new BigInteger("80")).negate(), AH.truncate((Number) new BigDecimal("-80.01").setScale(2, RoundingMode.DOWN), 0)));
   }
   @Test
   public void round_item1_1988438614049522133() throws Throwable {
-    Assert.assertTrue("Expected: " + (((Number) new BigInteger("0"))) + ", but was: " + (trunc0.trunc0(((Number) (new BigDecimal("-00.60").setScale(2, RoundingMode.DOWN))))), EqualsTestOp.matches(((Number) new BigInteger("0")), trunc0.trunc0(((Number) (new BigDecimal("-00.60").setScale(2, RoundingMode.DOWN))))));
+    Assert.assertTrue("Expected: " + (Number) new BigInteger("0") + ", but was: " + trunc0.trunc0((Number) new BigDecimal("-00.60").setScale(2, RoundingMode.DOWN)), EqualsTestOp.matches((Number) new BigInteger("0"), trunc0.trunc0((Number) new BigDecimal("-00.60").setScale(2, RoundingMode.DOWN))));
   }
   @Test
   public void round_item2_1988438614049462562() throws Throwable {
-    Assert.assertTrue("Expected: " + (((Number) new BigInteger("0"))) + ", but was: " + (AH.truncate(((Number) (new BigDecimal("00.11").setScale(2, RoundingMode.DOWN))), 0)), EqualsTestOp.matches(((Number) new BigInteger("0")), AH.truncate(((Number) (new BigDecimal("00.11").setScale(2, RoundingMode.DOWN))), 0)));
+    Assert.assertTrue("Expected: " + (Number) new BigInteger("0") + ", but was: " + AH.truncate((Number) new BigDecimal("00.11").setScale(2, RoundingMode.DOWN), 0), EqualsTestOp.matches((Number) new BigInteger("0"), AH.truncate((Number) new BigDecimal("00.11").setScale(2, RoundingMode.DOWN), 0)));
   }
   @Test
   public void round_item4_1988438614053748377() throws Throwable {
-    Assert.assertTrue("Expected: " + (((Number) new BigInteger("0"))) + ", but was: " + (AH.roundDown(((Number) (new BigDecimal("0.1").setScale(1, RoundingMode.DOWN))), 0)), EqualsTestOp.matches(((Number) new BigInteger("0")), AH.roundDown(((Number) (new BigDecimal("0.1").setScale(1, RoundingMode.DOWN))), 0)));
+    Assert.assertTrue("Expected: " + (Number) new BigInteger("0") + ", but was: " + AH.roundDown((Number) new BigDecimal("0.1").setScale(1, RoundingMode.DOWN), 0), EqualsTestOp.matches((Number) new BigInteger("0"), AH.roundDown((Number) new BigDecimal("0.1").setScale(1, RoundingMode.DOWN), 0)));
   }
   @Test
   public void round_item5_3439632435448388330() throws Throwable {
-    Assert.assertTrue("Expected: " + (((Number) new BigInteger("0"))) + ", but was: " + (AH.roundDown(((Number) (new BigDecimal("0.9").setScale(1, RoundingMode.DOWN))), 0)), EqualsTestOp.matches(((Number) new BigInteger("0")), AH.roundDown(((Number) (new BigDecimal("0.9").setScale(1, RoundingMode.DOWN))), 0)));
+    Assert.assertTrue("Expected: " + (Number) new BigInteger("0") + ", but was: " + AH.roundDown((Number) new BigDecimal("0.9").setScale(1, RoundingMode.DOWN), 0), EqualsTestOp.matches((Number) new BigInteger("0"), AH.roundDown((Number) new BigDecimal("0.9").setScale(1, RoundingMode.DOWN), 0)));
   }
   @Test
   public void round_item6_1988438614053833289() throws Throwable {
-    Assert.assertTrue("Expected: " + (((Number) new BigInteger("1"))) + ", but was: " + (AH.roundUp(((Number) (new BigDecimal("0.1").setScale(1, RoundingMode.DOWN))), 0)), EqualsTestOp.matches(((Number) new BigInteger("1")), AH.roundUp(((Number) (new BigDecimal("0.1").setScale(1, RoundingMode.DOWN))), 0)));
+    Assert.assertTrue("Expected: " + (Number) new BigInteger("1") + ", but was: " + AH.roundUp((Number) new BigDecimal("0.1").setScale(1, RoundingMode.DOWN), 0), EqualsTestOp.matches((Number) new BigInteger("1"), AH.roundUp((Number) new BigDecimal("0.1").setScale(1, RoundingMode.DOWN), 0)));
   }
   @Test
   public void round_item7_3439632435448390498() throws Throwable {
-    Assert.assertTrue("Expected: " + (((Number) new BigInteger("1"))) + ", but was: " + (AH.roundUp(((Number) (new BigDecimal("0.9").setScale(1, RoundingMode.DOWN))), 0)), EqualsTestOp.matches(((Number) new BigInteger("1")), AH.roundUp(((Number) (new BigDecimal("0.9").setScale(1, RoundingMode.DOWN))), 0)));
+    Assert.assertTrue("Expected: " + (Number) new BigInteger("1") + ", but was: " + AH.roundUp((Number) new BigDecimal("0.9").setScale(1, RoundingMode.DOWN), 0), EqualsTestOp.matches((Number) new BigInteger("1"), AH.roundUp((Number) new BigDecimal("0.9").setScale(1, RoundingMode.DOWN), 0)));
   }
   @Test
   public void round_item9_2524315536764370449() throws Throwable {
-    Assert.assertTrue("Expected: " + (((Number) new BigInteger("1"))) + ", but was: " + (AH.roundHalfUp(((Number) (new BigDecimal("0.5").setScale(1, RoundingMode.DOWN))), 0)), EqualsTestOp.matches(((Number) new BigInteger("1")), AH.roundHalfUp(((Number) (new BigDecimal("0.5").setScale(1, RoundingMode.DOWN))), 0)));
+    Assert.assertTrue("Expected: " + (Number) new BigInteger("1") + ", but was: " + AH.roundHalfUp((Number) new BigDecimal("0.5").setScale(1, RoundingMode.DOWN), 0), EqualsTestOp.matches((Number) new BigInteger("1"), AH.roundHalfUp((Number) new BigDecimal("0.5").setScale(1, RoundingMode.DOWN), 0)));
   }
   @Test
   public void round_item10_2524315536764370607() throws Throwable {
-    Assert.assertTrue("Expected: " + (((Number) new BigInteger("0"))) + ", but was: " + (AH.roundHalfUp(((Number) (new BigDecimal("0.4").setScale(1, RoundingMode.DOWN))), 0)), EqualsTestOp.matches(((Number) new BigInteger("0")), AH.roundHalfUp(((Number) (new BigDecimal("0.4").setScale(1, RoundingMode.DOWN))), 0)));
+    Assert.assertTrue("Expected: " + (Number) new BigInteger("0") + ", but was: " + AH.roundHalfUp((Number) new BigDecimal("0.4").setScale(1, RoundingMode.DOWN), 0), EqualsTestOp.matches((Number) new BigInteger("0"), AH.roundHalfUp((Number) new BigDecimal("0.4").setScale(1, RoundingMode.DOWN), 0)));
   }
   @Test
   public void limits_item0_1988438614045481348() throws Throwable {
-    Assert.assertTrue("Expected: " + (((Number) new BigInteger("80"))) + ", but was: " + (AH.limit(((Number) new BigInteger("200")), ((Number) new BigInteger("60")), ((Number) new BigInteger("80")))), EqualsTestOp.matches(((Number) new BigInteger("80")), AH.limit(((Number) new BigInteger("200")), ((Number) new BigInteger("60")), ((Number) new BigInteger("80")))));
+    Assert.assertTrue("Expected: " + (Number) new BigInteger("80") + ", but was: " + AH.limit((Number) new BigInteger("200"), (Number) new BigInteger("60"), (Number) new BigInteger("80")), EqualsTestOp.matches((Number) new BigInteger("80"), AH.limit((Number) new BigInteger("200"), (Number) new BigInteger("60"), (Number) new BigInteger("80"))));
   }
   @Test
   public void limits_item1_4723261570620140678() throws Throwable {
-    Assert.assertTrue("Expected: " + (((Number) new BigInteger("60"))) + ", but was: " + (AH.limit(((Number) new BigInteger("20")), ((Number) new BigInteger("60")), ((Number) new BigInteger("80")))), EqualsTestOp.matches(((Number) new BigInteger("60")), AH.limit(((Number) new BigInteger("20")), ((Number) new BigInteger("60")), ((Number) new BigInteger("80")))));
+    Assert.assertTrue("Expected: " + (Number) new BigInteger("60") + ", but was: " + AH.limit((Number) new BigInteger("20"), (Number) new BigInteger("60"), (Number) new BigInteger("80")), EqualsTestOp.matches((Number) new BigInteger("60"), AH.limit((Number) new BigInteger("20"), (Number) new BigInteger("60"), (Number) new BigInteger("80"))));
   }
   @Test
   public void limits_item2_4723261570620556692() throws Throwable {
-    Assert.assertTrue("Expected: " + (((Number) new BigInteger("70"))) + ", but was: " + (AH.limit(((Number) new BigInteger("70")), ((Number) new BigInteger("60")), ((Number) new BigInteger("80")))), EqualsTestOp.matches(((Number) new BigInteger("70")), AH.limit(((Number) new BigInteger("70")), ((Number) new BigInteger("60")), ((Number) new BigInteger("80")))));
+    Assert.assertTrue("Expected: " + (Number) new BigInteger("70") + ", but was: " + AH.limit((Number) new BigInteger("70"), (Number) new BigInteger("60"), (Number) new BigInteger("80")), EqualsTestOp.matches((Number) new BigInteger("70"), AH.limit((Number) new BigInteger("70"), (Number) new BigInteger("60"), (Number) new BigInteger("80"))));
   }
   @Test
   public void limits_item4_1988438614050163049() throws Throwable {
-    Assert.assertEquals("Expected: " + (true) + ", but was: " + (((_FunctionTypes._return_P0_E0<ValidValue>) () -> {
+    Assert.assertEquals("Expected: " + true + ", but was: " + ((_FunctionTypes._return_P0_E0<ValidValue>) () -> {
       Boolean ok = ((_FunctionTypes._return_P0_E0<Boolean>) () -> {
-        Number it = AH.limit(((Number) (new BigDecimal("200.00").setScale(2, RoundingMode.DOWN))), ((Number) new BigInteger("60")), ((Number) new BigInteger("80")));
+        Number it = AH.limit((Number) new BigDecimal("200.00").setScale(2, RoundingMode.DOWN), (Number) new BigInteger("60"), (Number) new BigInteger("80"));
         Boolean res = true;
-        res = (res && !(AH.isLess(it, ((Number) new BigInteger("60")))) && !(AH.isGreater(it, ((Number) new BigInteger("80")))));
+        res = res && !(AH.isLess(it, (Number) new BigInteger("60"))) && !(AH.isGreater(it, (Number) new BigInteger("80")));
         return res;
       }).invoke();
       String msg = null;
@@ -106,11 +106,11 @@ public class Generated_precision_Test {
       }
       ValidValue res = new ValidValue(ok, msg);
       return res;
-    }).invoke().ok), (Object) true, (Object) ((_FunctionTypes._return_P0_E0<ValidValue>) () -> {
+    }).invoke().ok, (Object) true, (Object) ((_FunctionTypes._return_P0_E0<ValidValue>) () -> {
       Boolean ok = ((_FunctionTypes._return_P0_E0<Boolean>) () -> {
-        Number it = AH.limit(((Number) (new BigDecimal("200.00").setScale(2, RoundingMode.DOWN))), ((Number) new BigInteger("60")), ((Number) new BigInteger("80")));
+        Number it = AH.limit((Number) new BigDecimal("200.00").setScale(2, RoundingMode.DOWN), (Number) new BigInteger("60"), (Number) new BigInteger("80"));
         Boolean res = true;
-        res = (res && !(AH.isLess(it, ((Number) new BigInteger("60")))) && !(AH.isGreater(it, ((Number) new BigInteger("80")))));
+        res = res && !(AH.isLess(it, (Number) new BigInteger("60"))) && !(AH.isGreater(it, (Number) new BigInteger("80")));
         return res;
       }).invoke();
       String msg = null;
@@ -123,37 +123,25 @@ public class Generated_precision_Test {
   }
   @Test
   public void limits_item5_1988438614050163055() throws Throwable {
-    Assert.assertTrue("Expected: " + (((Number) new BigInteger("60"))) + ", but was: " + (AH.truncate(AH.limit(((Number) (new BigDecimal("20.00").setScale(2, RoundingMode.DOWN))), ((Number) new BigInteger("60")), ((Number) new BigInteger("80"))), 0)), EqualsTestOp.matches(((Number) new BigInteger("60")), AH.truncate(AH.limit(((Number) (new BigDecimal("20.00").setScale(2, RoundingMode.DOWN))), ((Number) new BigInteger("60")), ((Number) new BigInteger("80"))), 0)));
+    Assert.assertTrue("Expected: " + (Number) new BigInteger("60") + ", but was: " + AH.truncate(AH.limit((Number) new BigDecimal("20.00").setScale(2, RoundingMode.DOWN), (Number) new BigInteger("60"), (Number) new BigInteger("80")), 0), EqualsTestOp.matches((Number) new BigInteger("60"), AH.truncate(AH.limit((Number) new BigDecimal("20.00").setScale(2, RoundingMode.DOWN), (Number) new BigInteger("60"), (Number) new BigInteger("80")), 0)));
   }
   @Test
   public void limits_item6_1988438614050163061() throws Throwable {
-    Assert.assertEquals("Expected: " + (true) + ", but was: " + (!(AH.isGreater(AH.limit(((Number) (new BigDecimal("70.00").setScale(2, RoundingMode.DOWN))), ((Number) new BigInteger("60")), ((Number) new BigInteger("80"))), ((Number) new BigInteger("70"))))), (Object) true, (Object) !(AH.isGreater(AH.limit(((Number) (new BigDecimal("70.00").setScale(2, RoundingMode.DOWN))), ((Number) new BigInteger("60")), ((Number) new BigInteger("80"))), ((Number) new BigInteger("70")))));
+    Assert.assertEquals("Expected: " + true + ", but was: " + (!(AH.isGreater(AH.limit((Number) new BigDecimal("70.00").setScale(2, RoundingMode.DOWN), (Number) new BigInteger("60"), (Number) new BigInteger("80")), (Number) new BigInteger("70")))), (Object) true, (Object) !(AH.isGreater(AH.limit((Number) new BigDecimal("70.00").setScale(2, RoundingMode.DOWN), (Number) new BigInteger("60"), (Number) new BigInteger("80")), (Number) new BigInteger("70"))));
   }
   @Test
   public void numberSpec_item0_1988438614057237861() throws Throwable {
-    Assert.assertTrue("Expected: " + (((Number) new BigInteger("40"))) + ", but was: " + (((_FunctionTypes._return_P0_E0<Number>) () -> {
-      Number blub = ((Number) new BigInteger("40"));
-      return blub;
-    }).invoke()), EqualsTestOp.matches(((Number) new BigInteger("40")), ((_FunctionTypes._return_P0_E0<Number>) () -> {
-      Number blub = ((Number) new BigInteger("40"));
-      return blub;
-    }).invoke()));
+    Assert.assertTrue("Expected: " + (Number) new BigInteger("40") + ", but was: " + (Number) new BigInteger("40"), EqualsTestOp.matches((Number) new BigInteger("40"), (Number) new BigInteger("40")));
   }
   @Test
   public void numberSpec_item1_1988438614057243749() throws Throwable {
-    Assert.assertTrue("Expected: " + (((Number) new BigInteger("40"))) + ", but was: " + (trunc0.trunc0(((_FunctionTypes._return_P0_E0<Number>) () -> {
-      Number blub = ((Number) (new BigDecimal("40.000").setScale(3, RoundingMode.DOWN)));
-      return blub;
-    }).invoke())), EqualsTestOp.matches(((Number) new BigInteger("40")), trunc0.trunc0(((_FunctionTypes._return_P0_E0<Number>) () -> {
-      Number blub = ((Number) (new BigDecimal("40.000").setScale(3, RoundingMode.DOWN)));
-      return blub;
-    }).invoke())));
+    Assert.assertTrue("Expected: " + (Number) new BigInteger("40") + ", but was: " + trunc0.trunc0((Number) new BigDecimal("40.000").setScale(3, RoundingMode.DOWN)), EqualsTestOp.matches((Number) new BigInteger("40"), trunc0.trunc0((Number) new BigDecimal("40.000").setScale(3, RoundingMode.DOWN))));
   }
 
-  public static final Number c1_ = ((Number) new BigInteger("5"));
+  public static final Number c1_ = (Number) new BigInteger("5");
   @Test
   public void testPrecisionTypedefs_item0_6638908032073303181() throws Throwable {
-    Assert.assertTrue("Expected: " + (((Number) new BigInteger("5"))) + ", but was: " + (Generated_precision_Test.c1_), EqualsTestOp.matches(((Number) new BigInteger("5")), Generated_precision_Test.c1_));
+    Assert.assertTrue("Expected: " + (Number) new BigInteger("5") + ", but was: " + Generated_precision_Test.c1_, EqualsTestOp.matches((Number) new BigInteger("5"), Generated_precision_Test.c1_));
   }
 
 

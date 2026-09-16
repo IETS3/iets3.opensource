@@ -4,7 +4,6 @@ package test.in.expr.os.temporal;
 
 import java.time.LocalDate;
 import org.iets3.core.expr.temporal.runtime.TemporalValue;
-import jetbrains.mps.baseLanguage.closures.runtime._FunctionTypes;
 import java.math.BigInteger;
 import java.math.BigDecimal;
 import java.math.RoundingMode;
@@ -19,6 +18,7 @@ import org.iets3.core.expr.genjava.tests.rt.rt.EqualsTestOp;
 import org.iets3.core.expr.temporal.runtime.TemporalOps;
 import org.iets3.core.expr.simpleTypes.runtime.AH;
 import org.pcollections.PCollection;
+import jetbrains.mps.baseLanguage.closures.runtime._FunctionTypes;
 import java.time.temporal.ChronoUnit;
 import java.util.List;
 import jetbrains.mps.internal.collections.runtime.ListSequence;
@@ -43,314 +43,171 @@ public class Generated_TemporalTests_Test {
   public static final LocalDate date10_ = LocalDate.of(2010, 1, 1);
   public static final LocalDate date20_ = LocalDate.of(2020, 1, 1);
   public static final LocalDate date100_ = LocalDate.of(2100, 1, 1);
-  public static final TemporalValue v1_ = ((_FunctionTypes._return_P0_E0<TemporalValue>) () -> {
-    TemporalValue value = new TemporalValue();
-    value = value.slice(((LocalDate) Generated_TemporalTests_Test.date0_), ((Number) new BigInteger("10")));
-    value = value.slice(((LocalDate) Generated_TemporalTests_Test.date05_), ((Number) new BigInteger("20")));
-    return value;
-  }).invoke();
-  public static final TemporalValue v1_float_ = ((_FunctionTypes._return_P0_E0<TemporalValue>) () -> {
-    TemporalValue value = new TemporalValue();
-    value = value.slice(((LocalDate) Generated_TemporalTests_Test.date0_), ((Number) (new BigDecimal("10.").setScale(0, RoundingMode.DOWN))));
-    value = value.slice(((LocalDate) Generated_TemporalTests_Test.date05_), ((Number) (new BigDecimal("20.0").setScale(1, RoundingMode.DOWN))));
-    return value;
-  }).invoke();
-  public static final TemporalValue v2_ = ((_FunctionTypes._return_P0_E0<TemporalValue>) () -> {
-    TemporalValue value = new TemporalValue();
-    value = value.slice(((LocalDate) Generated_TemporalTests_Test.date0_), ((Number) new BigInteger("100")));
-    value = value.slice(((LocalDate) Generated_TemporalTests_Test.date05_), ((Number) new BigInteger("100")));
-    return value;
-  }).invoke();
-  public static final TemporalValue v5_ = ((_FunctionTypes._return_P0_E0<TemporalValue>) () -> {
-    TemporalValue value = new TemporalValue();
-    value = value.slice(((LocalDate) Generated_TemporalTests_Test.date0_), ((Number) new BigInteger("30")));
-    value = value.slice(((LocalDate) Generated_TemporalTests_Test.date05_), ((Number) new BigInteger("20")));
-    return value;
-  }).invoke();
-  public static final PVector<TemporalValue> list_ = ((_FunctionTypes._return_P0_E0<TreePVector<TemporalValue>>) () -> {
-    TreePVector<TemporalValue> tpv = TreePVector.empty();
-    tpv = tpv.plus(((_FunctionTypes._return_P0_E0<TemporalValue>) () -> {
-      TemporalValue value = new TemporalValue();
-      value = value.slice(((LocalDate) LocalDate.of(2000, 1, 1)), ((Number) new BigInteger("10")));
-      return value;
-    }).invoke());
-    tpv = tpv.plus(((_FunctionTypes._return_P0_E0<TemporalValue>) () -> {
-      TemporalValue value = new TemporalValue();
-      value = value.slice(((LocalDate) LocalDate.of(2000, 1, 1)), ((Number) new BigInteger("10")));
-      return value;
-    }).invoke());
-    tpv = tpv.plus(((_FunctionTypes._return_P0_E0<TemporalValue>) () -> {
-      TemporalValue value = new TemporalValue();
-      value = value.slice(((LocalDate) LocalDate.of(2002, 1, 1)), ((Number) new BigInteger("10")));
-      return value;
-    }).invoke());
-    return tpv;
-  }).invoke();
+  public static final TemporalValue v1_ = new TemporalValue().slice((LocalDate) Generated_TemporalTests_Test.date0_, (Number) new BigInteger("10")).slice((LocalDate) Generated_TemporalTests_Test.date05_, (Number) new BigInteger("20"));
+  public static final TemporalValue v1_float_ = new TemporalValue().slice((LocalDate) Generated_TemporalTests_Test.date0_, (Number) new BigDecimal("10.").setScale(0, RoundingMode.DOWN)).slice((LocalDate) Generated_TemporalTests_Test.date05_, (Number) new BigDecimal("20.0").setScale(1, RoundingMode.DOWN));
+  public static final TemporalValue v2_ = new TemporalValue().slice((LocalDate) Generated_TemporalTests_Test.date0_, (Number) new BigInteger("100")).slice((LocalDate) Generated_TemporalTests_Test.date05_, (Number) new BigInteger("100"));
+  public static final TemporalValue v5_ = new TemporalValue().slice((LocalDate) Generated_TemporalTests_Test.date0_, (Number) new BigInteger("30")).slice((LocalDate) Generated_TemporalTests_Test.date05_, (Number) new BigInteger("20"));
+  public static final PVector<TemporalValue> list_ = TreePVector.<TemporalValue>empty().plus(new TemporalValue().slice((LocalDate) LocalDate.of(2000, 1, 1), (Number) new BigInteger("10"))).plus(new TemporalValue().slice((LocalDate) LocalDate.of(2000, 1, 1), (Number) new BigInteger("10"))).plus(new TemporalValue().slice((LocalDate) LocalDate.of(2002, 1, 1), (Number) new BigInteger("10")));
   @Test
   public void Equality_item0_6269766269316067048() throws Throwable {
-    Assert.assertEquals("Expected: " + (Generated_TemporalTests_Test.v1_float_) + ", but was: " + (Generated_TemporalTests_Test.v1_), (Object) Generated_TemporalTests_Test.v1_float_, (Object) Generated_TemporalTests_Test.v1_);
+    Assert.assertEquals("Expected: " + Generated_TemporalTests_Test.v1_float_ + ", but was: " + Generated_TemporalTests_Test.v1_, (Object) Generated_TemporalTests_Test.v1_float_, (Object) Generated_TemporalTests_Test.v1_);
   }
   @Test
   public void Equality_item1_1075037996908311080() throws Throwable {
-    Assert.assertEquals("Expected: " + (true) + ", but was: " + ((TemporalValueHelper.perform(Generated_TemporalTests_Test.v2_, ((Number) new BigInteger("100")), ((_FunctionTypes._return_P2_E0<Boolean, Object, Object>) (Object l, Object r) -> EqualsHelper.equals(l, r)), null)).all()), (Object) true, (Object) (TemporalValueHelper.perform(Generated_TemporalTests_Test.v2_, ((Number) new BigInteger("100")), ((_FunctionTypes._return_P2_E0<Boolean, Object, Object>) (Object l, Object r) -> EqualsHelper.equals(l, r)), null)).all());
+    Assert.assertEquals("Expected: " + true + ", but was: " + TemporalValueHelper.perform(Generated_TemporalTests_Test.v2_, (Number) new BigInteger("100"), (Object l, Object r) -> EqualsHelper.equals(l, r), null).all(), (Object) true, (Object) TemporalValueHelper.perform(Generated_TemporalTests_Test.v2_, (Number) new BigInteger("100"), (Object l, Object r) -> EqualsHelper.equals(l, r), null).all());
   }
   @Test
   public void Equality_item2_1075037996908554101() throws Throwable {
-    Assert.assertEquals("Expected: " + (false) + ", but was: " + ((TemporalValueHelper.perform(Generated_TemporalTests_Test.v2_, ((Number) new BigInteger("100")), ((_FunctionTypes._return_P2_E0<Boolean, Object, Object>) (Object l, Object r) -> EqualsHelper.notEquals(l, r)), null)).all()), (Object) false, (Object) (TemporalValueHelper.perform(Generated_TemporalTests_Test.v2_, ((Number) new BigInteger("100")), ((_FunctionTypes._return_P2_E0<Boolean, Object, Object>) (Object l, Object r) -> EqualsHelper.notEquals(l, r)), null)).all());
+    Assert.assertEquals("Expected: " + false + ", but was: " + TemporalValueHelper.perform(Generated_TemporalTests_Test.v2_, (Number) new BigInteger("100"), (Object l, Object r) -> EqualsHelper.notEquals(l, r), null).all(), (Object) false, (Object) TemporalValueHelper.perform(Generated_TemporalTests_Test.v2_, (Number) new BigInteger("100"), (Object l, Object r) -> EqualsHelper.notEquals(l, r), null).all());
   }
   @Test
   public void Equality_item3_5528978585118230147() throws Throwable {
-    Assert.assertEquals("Expected: " + (true) + ", but was: " + ((TemporalValueHelper.perform(Generated_TemporalTests_Test.v2_, ((Number) new BigInteger("100")), ((_FunctionTypes._return_P2_E0<Boolean, Object, Object>) (Object l, Object r) -> EqualsHelper.notEquals(l, r)), null)).none()), (Object) true, (Object) (TemporalValueHelper.perform(Generated_TemporalTests_Test.v2_, ((Number) new BigInteger("100")), ((_FunctionTypes._return_P2_E0<Boolean, Object, Object>) (Object l, Object r) -> EqualsHelper.notEquals(l, r)), null)).none());
+    Assert.assertEquals("Expected: " + true + ", but was: " + TemporalValueHelper.perform(Generated_TemporalTests_Test.v2_, (Number) new BigInteger("100"), (Object l, Object r) -> EqualsHelper.notEquals(l, r), null).none(), (Object) true, (Object) TemporalValueHelper.perform(Generated_TemporalTests_Test.v2_, (Number) new BigInteger("100"), (Object l, Object r) -> EqualsHelper.notEquals(l, r), null).none());
   }
   @Test
   public void Equality_item5_1075037996908281131() throws Throwable {
-    Assert.assertEquals("Expected: " + (false) + ", but was: " + ((TemporalValueHelper.perform(Generated_TemporalTests_Test.v1_, ((Number) new BigInteger("10")), ((_FunctionTypes._return_P2_E0<Boolean, Object, Object>) (Object l, Object r) -> EqualsHelper.equals(l, r)), null)).all()), (Object) false, (Object) (TemporalValueHelper.perform(Generated_TemporalTests_Test.v1_, ((Number) new BigInteger("10")), ((_FunctionTypes._return_P2_E0<Boolean, Object, Object>) (Object l, Object r) -> EqualsHelper.equals(l, r)), null)).all());
+    Assert.assertEquals("Expected: " + false + ", but was: " + TemporalValueHelper.perform(Generated_TemporalTests_Test.v1_, (Number) new BigInteger("10"), (Object l, Object r) -> EqualsHelper.equals(l, r), null).all(), (Object) false, (Object) TemporalValueHelper.perform(Generated_TemporalTests_Test.v1_, (Number) new BigInteger("10"), (Object l, Object r) -> EqualsHelper.equals(l, r), null).all());
   }
   @Test
   public void Equality_item6_5528978585118290066() throws Throwable {
-    Assert.assertEquals("Expected: " + (true) + ", but was: " + ((TemporalValueHelper.perform(Generated_TemporalTests_Test.v1_, ((Number) new BigInteger("10")), ((_FunctionTypes._return_P2_E0<Boolean, Object, Object>) (Object l, Object r) -> EqualsHelper.equals(l, r)), null)).any()), (Object) true, (Object) (TemporalValueHelper.perform(Generated_TemporalTests_Test.v1_, ((Number) new BigInteger("10")), ((_FunctionTypes._return_P2_E0<Boolean, Object, Object>) (Object l, Object r) -> EqualsHelper.equals(l, r)), null)).any());
+    Assert.assertEquals("Expected: " + true + ", but was: " + TemporalValueHelper.perform(Generated_TemporalTests_Test.v1_, (Number) new BigInteger("10"), (Object l, Object r) -> EqualsHelper.equals(l, r), null).any(), (Object) true, (Object) TemporalValueHelper.perform(Generated_TemporalTests_Test.v1_, (Number) new BigInteger("10"), (Object l, Object r) -> EqualsHelper.equals(l, r), null).any());
   }
   @Test
   public void Equality_item7_1075037996908549159() throws Throwable {
-    Assert.assertEquals("Expected: " + (false) + ", but was: " + ((TemporalValueHelper.perform(Generated_TemporalTests_Test.v1_, ((Number) new BigInteger("10")), ((_FunctionTypes._return_P2_E0<Boolean, Object, Object>) (Object l, Object r) -> EqualsHelper.notEquals(l, r)), null)).all()), (Object) false, (Object) (TemporalValueHelper.perform(Generated_TemporalTests_Test.v1_, ((Number) new BigInteger("10")), ((_FunctionTypes._return_P2_E0<Boolean, Object, Object>) (Object l, Object r) -> EqualsHelper.notEquals(l, r)), null)).all());
+    Assert.assertEquals("Expected: " + false + ", but was: " + TemporalValueHelper.perform(Generated_TemporalTests_Test.v1_, (Number) new BigInteger("10"), (Object l, Object r) -> EqualsHelper.notEquals(l, r), null).all(), (Object) false, (Object) TemporalValueHelper.perform(Generated_TemporalTests_Test.v1_, (Number) new BigInteger("10"), (Object l, Object r) -> EqualsHelper.notEquals(l, r), null).all());
   }
   @Test
   public void Equality_item8_1075037996915953409() throws Throwable {
-    Assert.assertEquals("Expected: " + (true) + ", but was: " + ((TemporalValueHelper.perform(Generated_TemporalTests_Test.v5_, ((Number) new BigInteger("10")), ((_FunctionTypes._return_P2_E0<Boolean, Object, Object>) (Object l, Object r) -> EqualsHelper.notEquals(l, r)), null)).all()), (Object) true, (Object) (TemporalValueHelper.perform(Generated_TemporalTests_Test.v5_, ((Number) new BigInteger("10")), ((_FunctionTypes._return_P2_E0<Boolean, Object, Object>) (Object l, Object r) -> EqualsHelper.notEquals(l, r)), null)).all());
+    Assert.assertEquals("Expected: " + true + ", but was: " + TemporalValueHelper.perform(Generated_TemporalTests_Test.v5_, (Number) new BigInteger("10"), (Object l, Object r) -> EqualsHelper.notEquals(l, r), null).all(), (Object) true, (Object) TemporalValueHelper.perform(Generated_TemporalTests_Test.v5_, (Number) new BigInteger("10"), (Object l, Object r) -> EqualsHelper.notEquals(l, r), null).all());
   }
   @Test
   public void Equality_item10_596258844675551279() throws Throwable {
-    Assert.assertEquals("Expected: " + (((_FunctionTypes._return_P0_E0<TreePVector<TemporalValue>>) () -> {
-      TreePVector<TemporalValue> tpv = TreePVector.empty();
-      tpv = tpv.plus(((_FunctionTypes._return_P0_E0<TemporalValue>) () -> {
-        TemporalValue value = new TemporalValue();
-        value = value.slice(((LocalDate) LocalDate.of(2000, 1, 1)), ((Number) new BigInteger("10")));
-        return value;
-      }).invoke());
-      tpv = tpv.plus(((_FunctionTypes._return_P0_E0<TemporalValue>) () -> {
-        TemporalValue value = new TemporalValue();
-        value = value.slice(((LocalDate) LocalDate.of(2002, 1, 1)), ((Number) new BigInteger("10")));
-        return value;
-      }).invoke());
-      return tpv;
-    }).invoke()) + ", but was: " + (TreePVector.<TemporalValue>from(Generated_TemporalTests_Test.list_.stream().distinct().collect(Collectors.<TemporalValue>toList()))), (Object) ((_FunctionTypes._return_P0_E0<TreePVector<TemporalValue>>) () -> {
-      TreePVector<TemporalValue> tpv = TreePVector.empty();
-      tpv = tpv.plus(((_FunctionTypes._return_P0_E0<TemporalValue>) () -> {
-        TemporalValue value = new TemporalValue();
-        value = value.slice(((LocalDate) LocalDate.of(2000, 1, 1)), ((Number) new BigInteger("10")));
-        return value;
-      }).invoke());
-      tpv = tpv.plus(((_FunctionTypes._return_P0_E0<TemporalValue>) () -> {
-        TemporalValue value = new TemporalValue();
-        value = value.slice(((LocalDate) LocalDate.of(2002, 1, 1)), ((Number) new BigInteger("10")));
-        return value;
-      }).invoke());
-      return tpv;
-    }).invoke(), (Object) TreePVector.<TemporalValue>from(Generated_TemporalTests_Test.list_.stream().distinct().collect(Collectors.<TemporalValue>toList())));
+    Assert.assertEquals("Expected: " + TreePVector.<TemporalValue>empty().plus(new TemporalValue().slice((LocalDate) LocalDate.of(2000, 1, 1), (Number) new BigInteger("10"))).plus(new TemporalValue().slice((LocalDate) LocalDate.of(2002, 1, 1), (Number) new BigInteger("10"))) + ", but was: " + TreePVector.<TemporalValue>from(Generated_TemporalTests_Test.list_.stream().distinct().collect(Collectors.<TemporalValue>toList())), (Object) TreePVector.<TemporalValue>empty().plus(new TemporalValue().slice((LocalDate) LocalDate.of(2000, 1, 1), (Number) new BigInteger("10"))).plus(new TemporalValue().slice((LocalDate) LocalDate.of(2002, 1, 1), (Number) new BigInteger("10"))), (Object) TreePVector.<TemporalValue>from(Generated_TemporalTests_Test.list_.stream().distinct().collect(Collectors.<TemporalValue>toList())));
   }
   @Test
   public void Equality_item11_596258844674470438() throws Throwable {
-    Assert.assertTrue("Expected: " + (((_FunctionTypes._return_P0_E0<TreePVector<TemporalValue>>) () -> {
-      TreePVector<TemporalValue> tpv = TreePVector.empty();
-      tpv = tpv.plus(((_FunctionTypes._return_P0_E0<TemporalValue>) () -> {
-        TemporalValue value = new TemporalValue();
-        value = value.slice(((LocalDate) LocalDate.of(2000, 1, 1)), ((Number) new BigInteger("10")));
-        return value;
-      }).invoke());
-      tpv = tpv.plus(((_FunctionTypes._return_P0_E0<TemporalValue>) () -> {
-        TemporalValue value = new TemporalValue();
-        value = value.slice(((LocalDate) LocalDate.of(2000, 1, 1)), ((Number) new BigInteger("10")));
-        return value;
-      }).invoke());
-      tpv = tpv.plus(((_FunctionTypes._return_P0_E0<TemporalValue>) () -> {
-        TemporalValue value = new TemporalValue();
-        value = value.slice(((LocalDate) LocalDate.of(2002, 1, 1)), ((Number) new BigInteger("10")));
-        return value;
-      }).invoke());
-      return tpv;
-    }).invoke()) + ", but was: " + (TreePVector.<TemporalValue>from(Generated_TemporalTests_Test.list_.stream().distinct().collect(Collectors.<TemporalValue>toList()))), !(EqualsTestOp.matches(TreePVector.<TemporalValue>from(Generated_TemporalTests_Test.list_.stream().distinct().collect(Collectors.<TemporalValue>toList())), ((_FunctionTypes._return_P0_E0<TreePVector<TemporalValue>>) () -> {
-      TreePVector<TemporalValue> tpv = TreePVector.empty();
-      tpv = tpv.plus(((_FunctionTypes._return_P0_E0<TemporalValue>) () -> {
-        TemporalValue value = new TemporalValue();
-        value = value.slice(((LocalDate) LocalDate.of(2000, 1, 1)), ((Number) new BigInteger("10")));
-        return value;
-      }).invoke());
-      tpv = tpv.plus(((_FunctionTypes._return_P0_E0<TemporalValue>) () -> {
-        TemporalValue value = new TemporalValue();
-        value = value.slice(((LocalDate) LocalDate.of(2000, 1, 1)), ((Number) new BigInteger("10")));
-        return value;
-      }).invoke());
-      tpv = tpv.plus(((_FunctionTypes._return_P0_E0<TemporalValue>) () -> {
-        TemporalValue value = new TemporalValue();
-        value = value.slice(((LocalDate) LocalDate.of(2002, 1, 1)), ((Number) new BigInteger("10")));
-        return value;
-      }).invoke());
-      return tpv;
-    }).invoke())));
+    Assert.assertTrue("Expected: " + TreePVector.<TemporalValue>empty().plus(new TemporalValue().slice((LocalDate) LocalDate.of(2000, 1, 1), (Number) new BigInteger("10"))).plus(new TemporalValue().slice((LocalDate) LocalDate.of(2000, 1, 1), (Number) new BigInteger("10"))).plus(new TemporalValue().slice((LocalDate) LocalDate.of(2002, 1, 1), (Number) new BigInteger("10"))) + ", but was: " + TreePVector.<TemporalValue>from(Generated_TemporalTests_Test.list_.stream().distinct().collect(Collectors.<TemporalValue>toList())), !(EqualsTestOp.matches(TreePVector.<TemporalValue>from(Generated_TemporalTests_Test.list_.stream().distinct().collect(Collectors.<TemporalValue>toList())), TreePVector.<TemporalValue>empty().plus(new TemporalValue().slice((LocalDate) LocalDate.of(2000, 1, 1), (Number) new BigInteger("10"))).plus(new TemporalValue().slice((LocalDate) LocalDate.of(2000, 1, 1), (Number) new BigInteger("10"))).plus(new TemporalValue().slice((LocalDate) LocalDate.of(2002, 1, 1), (Number) new BigInteger("10"))))));
   }
-  public static final TemporalValue allTrue_ = ((_FunctionTypes._return_P0_E0<TemporalValue>) () -> {
-    TemporalValue value = new TemporalValue();
-    value = value.slice(((LocalDate) Generated_TemporalTests_Test.date0_), true);
-    value = value.slice(((LocalDate) Generated_TemporalTests_Test.date10_), true);
-    value = value.slice(((LocalDate) Generated_TemporalTests_Test.date100_), true);
-    return value;
-  }).invoke();
-  public static final TemporalValue allFalse_ = ((_FunctionTypes._return_P0_E0<TemporalValue>) () -> {
-    TemporalValue value = new TemporalValue();
-    value = value.slice(((LocalDate) Generated_TemporalTests_Test.date0_), false);
-    value = value.slice(((LocalDate) Generated_TemporalTests_Test.date10_), false);
-    value = value.slice(((LocalDate) Generated_TemporalTests_Test.date100_), false);
-    return value;
-  }).invoke();
-  public static final TemporalValue someTrue_ = ((_FunctionTypes._return_P0_E0<TemporalValue>) () -> {
-    TemporalValue value = new TemporalValue();
-    value = value.slice(((LocalDate) Generated_TemporalTests_Test.date0_), false);
-    value = value.slice(((LocalDate) Generated_TemporalTests_Test.date10_), true);
-    value = value.slice(((LocalDate) Generated_TemporalTests_Test.date100_), false);
-    return value;
-  }).invoke();
+  public static final TemporalValue allTrue_ = new TemporalValue().slice((LocalDate) Generated_TemporalTests_Test.date0_, true).slice((LocalDate) Generated_TemporalTests_Test.date10_, true).slice((LocalDate) Generated_TemporalTests_Test.date100_, true);
+  public static final TemporalValue allFalse_ = new TemporalValue().slice((LocalDate) Generated_TemporalTests_Test.date0_, false).slice((LocalDate) Generated_TemporalTests_Test.date10_, false).slice((LocalDate) Generated_TemporalTests_Test.date100_, false);
+  public static final TemporalValue someTrue_ = new TemporalValue().slice((LocalDate) Generated_TemporalTests_Test.date0_, false).slice((LocalDate) Generated_TemporalTests_Test.date10_, true).slice((LocalDate) Generated_TemporalTests_Test.date100_, false);
   @Test
   public void Quantifiers_item0_8844568486043092570() throws Throwable {
-    Assert.assertEquals("Expected: " + (true) + ", but was: " + (Generated_TemporalTests_Test.allTrue_.all()), (Object) true, (Object) Generated_TemporalTests_Test.allTrue_.all());
+    Assert.assertEquals("Expected: " + true + ", but was: " + Generated_TemporalTests_Test.allTrue_.all(), (Object) true, (Object) Generated_TemporalTests_Test.allTrue_.all());
   }
   @Test
   public void Quantifiers_item1_8844568486043133791() throws Throwable {
-    Assert.assertEquals("Expected: " + (false) + ", but was: " + (Generated_TemporalTests_Test.allTrue_.none()), (Object) false, (Object) Generated_TemporalTests_Test.allTrue_.none());
+    Assert.assertEquals("Expected: " + false + ", but was: " + Generated_TemporalTests_Test.allTrue_.none(), (Object) false, (Object) Generated_TemporalTests_Test.allTrue_.none());
   }
   @Test
   public void Quantifiers_item2_8844568486043139150() throws Throwable {
-    Assert.assertEquals("Expected: " + (true) + ", but was: " + (Generated_TemporalTests_Test.allTrue_.any()), (Object) true, (Object) Generated_TemporalTests_Test.allTrue_.any());
+    Assert.assertEquals("Expected: " + true + ", but was: " + Generated_TemporalTests_Test.allTrue_.any(), (Object) true, (Object) Generated_TemporalTests_Test.allTrue_.any());
   }
   @Test
   public void Quantifiers_item4_8844568486043148134() throws Throwable {
-    Assert.assertEquals("Expected: " + (false) + ", but was: " + (Generated_TemporalTests_Test.allFalse_.all()), (Object) false, (Object) Generated_TemporalTests_Test.allFalse_.all());
+    Assert.assertEquals("Expected: " + false + ", but was: " + Generated_TemporalTests_Test.allFalse_.all(), (Object) false, (Object) Generated_TemporalTests_Test.allFalse_.all());
   }
   @Test
   public void Quantifiers_item5_8844568486043148128() throws Throwable {
-    Assert.assertEquals("Expected: " + (true) + ", but was: " + (Generated_TemporalTests_Test.allFalse_.none()), (Object) true, (Object) Generated_TemporalTests_Test.allFalse_.none());
+    Assert.assertEquals("Expected: " + true + ", but was: " + Generated_TemporalTests_Test.allFalse_.none(), (Object) true, (Object) Generated_TemporalTests_Test.allFalse_.none());
   }
   @Test
   public void Quantifiers_item6_8844568486043148122() throws Throwable {
-    Assert.assertEquals("Expected: " + (false) + ", but was: " + (Generated_TemporalTests_Test.allFalse_.any()), (Object) false, (Object) Generated_TemporalTests_Test.allFalse_.any());
+    Assert.assertEquals("Expected: " + false + ", but was: " + Generated_TemporalTests_Test.allFalse_.any(), (Object) false, (Object) Generated_TemporalTests_Test.allFalse_.any());
   }
   @Test
   public void Quantifiers_item8_8844568486043147968() throws Throwable {
-    Assert.assertEquals("Expected: " + (false) + ", but was: " + (Generated_TemporalTests_Test.someTrue_.all()), (Object) false, (Object) Generated_TemporalTests_Test.someTrue_.all());
+    Assert.assertEquals("Expected: " + false + ", but was: " + Generated_TemporalTests_Test.someTrue_.all(), (Object) false, (Object) Generated_TemporalTests_Test.someTrue_.all());
   }
   @Test
   public void Quantifiers_item9_8844568486043147962() throws Throwable {
-    Assert.assertEquals("Expected: " + (false) + ", but was: " + (Generated_TemporalTests_Test.someTrue_.none()), (Object) false, (Object) Generated_TemporalTests_Test.someTrue_.none());
+    Assert.assertEquals("Expected: " + false + ", but was: " + Generated_TemporalTests_Test.someTrue_.none(), (Object) false, (Object) Generated_TemporalTests_Test.someTrue_.none());
   }
   @Test
   public void Quantifiers_item10_8844568486043147956() throws Throwable {
-    Assert.assertEquals("Expected: " + (true) + ", but was: " + (Generated_TemporalTests_Test.someTrue_.any()), (Object) true, (Object) Generated_TemporalTests_Test.someTrue_.any());
+    Assert.assertEquals("Expected: " + true + ", but was: " + Generated_TemporalTests_Test.someTrue_.any(), (Object) true, (Object) Generated_TemporalTests_Test.someTrue_.any());
   }
   @Test
   public void Quantifiers2_item0_8844568486043255985() throws Throwable {
-    Assert.assertEquals("Expected: " + (false) + ", but was: " + ((TemporalValueHelper.perform(Generated_TemporalTests_Test.allTrue_, Generated_TemporalTests_Test.someTrue_, ((_FunctionTypes._return_P2_E0<Boolean, Object, Object>) (Object l, Object r) -> TemporalOps.and(l, r)), null)).all()), (Object) false, (Object) (TemporalValueHelper.perform(Generated_TemporalTests_Test.allTrue_, Generated_TemporalTests_Test.someTrue_, ((_FunctionTypes._return_P2_E0<Boolean, Object, Object>) (Object l, Object r) -> TemporalOps.and(l, r)), null)).all());
+    Assert.assertEquals("Expected: " + false + ", but was: " + TemporalValueHelper.perform(Generated_TemporalTests_Test.allTrue_, Generated_TemporalTests_Test.someTrue_, (Object l, Object r) -> TemporalOps.and(l, r), null).all(), (Object) false, (Object) TemporalValueHelper.perform(Generated_TemporalTests_Test.allTrue_, Generated_TemporalTests_Test.someTrue_, (Object l, Object r) -> TemporalOps.and(l, r), null).all());
   }
   @Test
   public void Quantifiers2_item1_8844568486043813956() throws Throwable {
-    Assert.assertEquals("Expected: " + (true) + ", but was: " + ((TemporalValueHelper.perform(Generated_TemporalTests_Test.allTrue_, Generated_TemporalTests_Test.allTrue_, ((_FunctionTypes._return_P2_E0<Boolean, Object, Object>) (Object l, Object r) -> TemporalOps.and(l, r)), null)).all()), (Object) true, (Object) (TemporalValueHelper.perform(Generated_TemporalTests_Test.allTrue_, Generated_TemporalTests_Test.allTrue_, ((_FunctionTypes._return_P2_E0<Boolean, Object, Object>) (Object l, Object r) -> TemporalOps.and(l, r)), null)).all());
+    Assert.assertEquals("Expected: " + true + ", but was: " + TemporalValueHelper.perform(Generated_TemporalTests_Test.allTrue_, Generated_TemporalTests_Test.allTrue_, (Object l, Object r) -> TemporalOps.and(l, r), null).all(), (Object) true, (Object) TemporalValueHelper.perform(Generated_TemporalTests_Test.allTrue_, Generated_TemporalTests_Test.allTrue_, (Object l, Object r) -> TemporalOps.and(l, r), null).all());
   }
   @Test
   public void Quantifiers2_item2_8844568486043857640() throws Throwable {
-    Assert.assertEquals("Expected: " + (true) + ", but was: " + ((TemporalValueHelper.perform(Generated_TemporalTests_Test.v1_, ((Number) new BigInteger("10")), ((_FunctionTypes._return_P2_E0<Boolean, Object, Object>) (Object l, Object r) -> TemporalOps.ge(l, r)), null)).all()), (Object) true, (Object) (TemporalValueHelper.perform(Generated_TemporalTests_Test.v1_, ((Number) new BigInteger("10")), ((_FunctionTypes._return_P2_E0<Boolean, Object, Object>) (Object l, Object r) -> TemporalOps.ge(l, r)), null)).all());
+    Assert.assertEquals("Expected: " + true + ", but was: " + TemporalValueHelper.perform(Generated_TemporalTests_Test.v1_, (Number) new BigInteger("10"), (Object l, Object r) -> TemporalOps.ge(l, r), null).all(), (Object) true, (Object) TemporalValueHelper.perform(Generated_TemporalTests_Test.v1_, (Number) new BigInteger("10"), (Object l, Object r) -> TemporalOps.ge(l, r), null).all());
   }
   @Test
   public void Quantifiers2_item3_5528978585118891181() throws Throwable {
-    Assert.assertEquals("Expected: " + (false) + ", but was: " + ((TemporalValueHelper.perform(Generated_TemporalTests_Test.v1_, ((Number) new BigInteger("10")), ((_FunctionTypes._return_P2_E0<Boolean, Object, Object>) (Object l, Object r) -> TemporalOps.lt(l, r)), null)).all()), (Object) false, (Object) (TemporalValueHelper.perform(Generated_TemporalTests_Test.v1_, ((Number) new BigInteger("10")), ((_FunctionTypes._return_P2_E0<Boolean, Object, Object>) (Object l, Object r) -> TemporalOps.lt(l, r)), null)).all());
+    Assert.assertEquals("Expected: " + false + ", but was: " + TemporalValueHelper.perform(Generated_TemporalTests_Test.v1_, (Number) new BigInteger("10"), (Object l, Object r) -> TemporalOps.lt(l, r), null).all(), (Object) false, (Object) TemporalValueHelper.perform(Generated_TemporalTests_Test.v1_, (Number) new BigInteger("10"), (Object l, Object r) -> TemporalOps.lt(l, r), null).all());
   }
   @Test
   public void Quantifiers2_item4_5528978585118937950() throws Throwable {
-    Assert.assertEquals("Expected: " + (true) + ", but was: " + ((TemporalValueHelper.perform(Generated_TemporalTests_Test.v1_, ((Number) new BigInteger("30")), ((_FunctionTypes._return_P2_E0<Boolean, Object, Object>) (Object l, Object r) -> TemporalOps.lt(l, r)), null)).all()), (Object) true, (Object) (TemporalValueHelper.perform(Generated_TemporalTests_Test.v1_, ((Number) new BigInteger("30")), ((_FunctionTypes._return_P2_E0<Boolean, Object, Object>) (Object l, Object r) -> TemporalOps.lt(l, r)), null)).all());
+    Assert.assertEquals("Expected: " + true + ", but was: " + TemporalValueHelper.perform(Generated_TemporalTests_Test.v1_, (Number) new BigInteger("30"), (Object l, Object r) -> TemporalOps.lt(l, r), null).all(), (Object) true, (Object) TemporalValueHelper.perform(Generated_TemporalTests_Test.v1_, (Number) new BigInteger("30"), (Object l, Object r) -> TemporalOps.lt(l, r), null).all());
   }
   @Test
   public void Quantifiers2_item5_5528978585118974561() throws Throwable {
-    Assert.assertEquals("Expected: " + (true) + ", but was: " + ((TemporalValueHelper.perform(Generated_TemporalTests_Test.v1_, ((Number) new BigInteger("20")), ((_FunctionTypes._return_P2_E0<Boolean, Object, Object>) (Object l, Object r) -> TemporalOps.le(l, r)), null)).all()), (Object) true, (Object) (TemporalValueHelper.perform(Generated_TemporalTests_Test.v1_, ((Number) new BigInteger("20")), ((_FunctionTypes._return_P2_E0<Boolean, Object, Object>) (Object l, Object r) -> TemporalOps.le(l, r)), null)).all());
+    Assert.assertEquals("Expected: " + true + ", but was: " + TemporalValueHelper.perform(Generated_TemporalTests_Test.v1_, (Number) new BigInteger("20"), (Object l, Object r) -> TemporalOps.le(l, r), null).all(), (Object) true, (Object) TemporalValueHelper.perform(Generated_TemporalTests_Test.v1_, (Number) new BigInteger("20"), (Object l, Object r) -> TemporalOps.le(l, r), null).all());
   }
-  public static final Number v9_ = ((Number) ((TemporalValue) Generated_TemporalTests_Test.v1_).valueAt(Generated_TemporalTests_Test.date0_));
+  public static final Number v9_ = (Number) ((TemporalValue) Generated_TemporalTests_Test.v1_).valueAt(Generated_TemporalTests_Test.date0_);
   @Test
   public void TestNumbersAndIntervals_item0_8266215269012914544() throws Throwable {
-    Assert.assertTrue("Expected: " + (((Number) new BigInteger("2"))) + ", but was: " + (new BigInteger("" + ((TemporalValue) Generated_TemporalTests_Test.v1_).numberOfSlices())), EqualsTestOp.matches(((Number) new BigInteger("2")), new BigInteger("" + ((TemporalValue) Generated_TemporalTests_Test.v1_).numberOfSlices())));
+    Assert.assertTrue("Expected: " + (Number) new BigInteger("2") + ", but was: " + new BigInteger("" + ((TemporalValue) Generated_TemporalTests_Test.v1_).numberOfSlices()), EqualsTestOp.matches((Number) new BigInteger("2"), new BigInteger("" + ((TemporalValue) Generated_TemporalTests_Test.v1_).numberOfSlices())));
   }
   @Test
   public void TestNumbersAndIntervals_item1_8266215269012914545() throws Throwable {
-    Assert.assertEquals("Expected: " + (((_FunctionTypes._return_P0_E0<TreePVector<LocalDate>>) () -> {
-      TreePVector<LocalDate> tpv = TreePVector.empty();
-      tpv = tpv.plus(Generated_TemporalTests_Test.date0_);
-      tpv = tpv.plus(Generated_TemporalTests_Test.date05_);
-      return tpv;
-    }).invoke()) + ", but was: " + (TreePVector.from(((TemporalValue) Generated_TemporalTests_Test.v1_).intervals())), (Object) ((_FunctionTypes._return_P0_E0<TreePVector<LocalDate>>) () -> {
-      TreePVector<LocalDate> tpv = TreePVector.empty();
-      tpv = tpv.plus(Generated_TemporalTests_Test.date0_);
-      tpv = tpv.plus(Generated_TemporalTests_Test.date05_);
-      return tpv;
-    }).invoke(), (Object) TreePVector.from(((TemporalValue) Generated_TemporalTests_Test.v1_).intervals()));
+    Assert.assertEquals("Expected: " + TreePVector.<LocalDate>empty().plus(Generated_TemporalTests_Test.date0_).plus(Generated_TemporalTests_Test.date05_) + ", but was: " + TreePVector.from(((TemporalValue) Generated_TemporalTests_Test.v1_).intervals()), (Object) TreePVector.<LocalDate>empty().plus(Generated_TemporalTests_Test.date0_).plus(Generated_TemporalTests_Test.date05_), (Object) TreePVector.from(((TemporalValue) Generated_TemporalTests_Test.v1_).intervals()));
   }
   @Test
   public void TestNumbersAndIntervals_item3_8266215269012914547() throws Throwable {
-    Assert.assertTrue("Expected: " + (((Number) new BigInteger("2"))) + ", but was: " + (new BigInteger("" + ((TemporalValue) Generated_TemporalTests_Test.v2_).numberOfSlices())), EqualsTestOp.matches(((Number) new BigInteger("2")), new BigInteger("" + ((TemporalValue) Generated_TemporalTests_Test.v2_).numberOfSlices())));
+    Assert.assertTrue("Expected: " + (Number) new BigInteger("2") + ", but was: " + new BigInteger("" + ((TemporalValue) Generated_TemporalTests_Test.v2_).numberOfSlices()), EqualsTestOp.matches((Number) new BigInteger("2"), new BigInteger("" + ((TemporalValue) Generated_TemporalTests_Test.v2_).numberOfSlices())));
   }
   @Test
   public void TestNumbersAndIntervals_item4_8266215269012914548() throws Throwable {
-    Assert.assertEquals("Expected: " + (((_FunctionTypes._return_P0_E0<TreePVector<LocalDate>>) () -> {
-      TreePVector<LocalDate> tpv = TreePVector.empty();
-      tpv = tpv.plus(Generated_TemporalTests_Test.date0_);
-      tpv = tpv.plus(Generated_TemporalTests_Test.date05_);
-      return tpv;
-    }).invoke()) + ", but was: " + (TreePVector.from(((TemporalValue) Generated_TemporalTests_Test.v2_).intervals())), (Object) ((_FunctionTypes._return_P0_E0<TreePVector<LocalDate>>) () -> {
-      TreePVector<LocalDate> tpv = TreePVector.empty();
-      tpv = tpv.plus(Generated_TemporalTests_Test.date0_);
-      tpv = tpv.plus(Generated_TemporalTests_Test.date05_);
-      return tpv;
-    }).invoke(), (Object) TreePVector.from(((TemporalValue) Generated_TemporalTests_Test.v2_).intervals()));
+    Assert.assertEquals("Expected: " + TreePVector.<LocalDate>empty().plus(Generated_TemporalTests_Test.date0_).plus(Generated_TemporalTests_Test.date05_) + ", but was: " + TreePVector.from(((TemporalValue) Generated_TemporalTests_Test.v2_).intervals()), (Object) TreePVector.<LocalDate>empty().plus(Generated_TemporalTests_Test.date0_).plus(Generated_TemporalTests_Test.date05_), (Object) TreePVector.from(((TemporalValue) Generated_TemporalTests_Test.v2_).intervals()));
   }
   @Test
   public void TestNumbersAndIntervals_item6_8266215269012914550() throws Throwable {
-    Assert.assertTrue("Expected: " + (((Number) new BigInteger("100"))) + ", but was: " + (((Number) ((TemporalValue) Generated_TemporalTests_Test.v2_).valueAt(Generated_TemporalTests_Test.date0_))), EqualsTestOp.matches(((Number) new BigInteger("100")), ((Number) ((TemporalValue) Generated_TemporalTests_Test.v2_).valueAt(Generated_TemporalTests_Test.date0_))));
+    Assert.assertTrue("Expected: " + (Number) new BigInteger("100") + ", but was: " + (Number) ((TemporalValue) Generated_TemporalTests_Test.v2_).valueAt(Generated_TemporalTests_Test.date0_), EqualsTestOp.matches((Number) new BigInteger("100"), (Number) ((TemporalValue) Generated_TemporalTests_Test.v2_).valueAt(Generated_TemporalTests_Test.date0_)));
   }
   @Test
   public void TestNumbersAndIntervals_item7_8266215269012914551() throws Throwable {
-    Assert.assertTrue("Expected: " + (((Number) new BigInteger("100"))) + ", but was: " + (((Number) ((TemporalValue) Generated_TemporalTests_Test.v2_).valueAt(Generated_TemporalTests_Test.date09_))), EqualsTestOp.matches(((Number) new BigInteger("100")), ((Number) ((TemporalValue) Generated_TemporalTests_Test.v2_).valueAt(Generated_TemporalTests_Test.date09_))));
+    Assert.assertTrue("Expected: " + (Number) new BigInteger("100") + ", but was: " + (Number) ((TemporalValue) Generated_TemporalTests_Test.v2_).valueAt(Generated_TemporalTests_Test.date09_), EqualsTestOp.matches((Number) new BigInteger("100"), (Number) ((TemporalValue) Generated_TemporalTests_Test.v2_).valueAt(Generated_TemporalTests_Test.date09_)));
   }
   @Test
   public void TestNumbersAndIntervals_item8_8266215269012914552() throws Throwable {
-    Assert.assertTrue("Expected: " + (((Number) new BigInteger("100"))) + ", but was: " + (((Number) ((TemporalValue) Generated_TemporalTests_Test.v2_).valueAt(Generated_TemporalTests_Test.date10_))), EqualsTestOp.matches(((Number) new BigInteger("100")), ((Number) ((TemporalValue) Generated_TemporalTests_Test.v2_).valueAt(Generated_TemporalTests_Test.date10_))));
+    Assert.assertTrue("Expected: " + (Number) new BigInteger("100") + ", but was: " + (Number) ((TemporalValue) Generated_TemporalTests_Test.v2_).valueAt(Generated_TemporalTests_Test.date10_), EqualsTestOp.matches((Number) new BigInteger("100"), (Number) ((TemporalValue) Generated_TemporalTests_Test.v2_).valueAt(Generated_TemporalTests_Test.date10_)));
   }
   @Test
   public void TestNumbersAndIntervals_item9_8266215269012914553() throws Throwable {
-    Assert.assertTrue("Expected: " + (((Number) new BigInteger("100"))) + ", but was: " + (((Number) ((TemporalValue) Generated_TemporalTests_Test.v2_).valueAt(Generated_TemporalTests_Test.date100_))), EqualsTestOp.matches(((Number) new BigInteger("100")), ((Number) ((TemporalValue) Generated_TemporalTests_Test.v2_).valueAt(Generated_TemporalTests_Test.date100_))));
+    Assert.assertTrue("Expected: " + (Number) new BigInteger("100") + ", but was: " + (Number) ((TemporalValue) Generated_TemporalTests_Test.v2_).valueAt(Generated_TemporalTests_Test.date100_), EqualsTestOp.matches((Number) new BigInteger("100"), (Number) ((TemporalValue) Generated_TemporalTests_Test.v2_).valueAt(Generated_TemporalTests_Test.date100_)));
   }
   @Test
   public void TestNumbersAndIntervals_item11_8266215269012914555() throws Throwable {
-    Assert.assertTrue("Expected: " + (((Number) new BigInteger("10"))) + ", but was: " + (((Number) ((TemporalValue) Generated_TemporalTests_Test.v1_).valueAt(Generated_TemporalTests_Test.date0_))), EqualsTestOp.matches(((Number) new BigInteger("10")), ((Number) ((TemporalValue) Generated_TemporalTests_Test.v1_).valueAt(Generated_TemporalTests_Test.date0_))));
+    Assert.assertTrue("Expected: " + (Number) new BigInteger("10") + ", but was: " + (Number) ((TemporalValue) Generated_TemporalTests_Test.v1_).valueAt(Generated_TemporalTests_Test.date0_), EqualsTestOp.matches((Number) new BigInteger("10"), (Number) ((TemporalValue) Generated_TemporalTests_Test.v1_).valueAt(Generated_TemporalTests_Test.date0_)));
   }
   @Test
   public void TestNumbersAndIntervals_item12_8266215269012914556() throws Throwable {
-    Assert.assertTrue("Expected: " + (((Number) new BigInteger("20"))) + ", but was: " + (((Number) ((TemporalValue) Generated_TemporalTests_Test.v1_).valueAt(Generated_TemporalTests_Test.date05_))), EqualsTestOp.matches(((Number) new BigInteger("20")), ((Number) ((TemporalValue) Generated_TemporalTests_Test.v1_).valueAt(Generated_TemporalTests_Test.date05_))));
+    Assert.assertTrue("Expected: " + (Number) new BigInteger("20") + ", but was: " + (Number) ((TemporalValue) Generated_TemporalTests_Test.v1_).valueAt(Generated_TemporalTests_Test.date05_), EqualsTestOp.matches((Number) new BigInteger("20"), (Number) ((TemporalValue) Generated_TemporalTests_Test.v1_).valueAt(Generated_TemporalTests_Test.date05_)));
   }
   @Test
   public void TestNumbersAndIntervals_item13_8266215269012914557() throws Throwable {
-    Assert.assertTrue("Expected: " + (((Number) new BigInteger("20"))) + ", but was: " + (((Number) ((TemporalValue) Generated_TemporalTests_Test.v1_).valueAt(Generated_TemporalTests_Test.date10_))), EqualsTestOp.matches(((Number) new BigInteger("20")), ((Number) ((TemporalValue) Generated_TemporalTests_Test.v1_).valueAt(Generated_TemporalTests_Test.date10_))));
+    Assert.assertTrue("Expected: " + (Number) new BigInteger("20") + ", but was: " + (Number) ((TemporalValue) Generated_TemporalTests_Test.v1_).valueAt(Generated_TemporalTests_Test.date10_), EqualsTestOp.matches((Number) new BigInteger("20"), (Number) ((TemporalValue) Generated_TemporalTests_Test.v1_).valueAt(Generated_TemporalTests_Test.date10_)));
   }
   @Test
   public void TestNumbersAndIntervals_item15_3003016983186634974() throws Throwable {
-    Assert.assertTrue("Expected: " + (((Number) new BigInteger("10"))) + ", but was: " + (Generated_TemporalTests_Test.v9_), EqualsTestOp.matches(((Number) new BigInteger("10")), Generated_TemporalTests_Test.v9_));
+    Assert.assertTrue("Expected: " + (Number) new BigInteger("10") + ", but was: " + Generated_TemporalTests_Test.v9_, EqualsTestOp.matches((Number) new BigInteger("10"), Generated_TemporalTests_Test.v9_));
   }
-  public static final TemporalValue v3_ = ((_FunctionTypes._return_P0_E0<TemporalValue>) () -> {
-    TemporalValue value = new TemporalValue();
-    value = value.slice(((LocalDate) Generated_TemporalTests_Test.date0_), ((Number) new BigInteger("0")));
-    value = value.slice(((LocalDate) Generated_TemporalTests_Test.date10_), ((Number) new BigInteger("50")));
-    return value;
-  }).invoke();
+  public static final TemporalValue v3_ = new TemporalValue().slice((LocalDate) Generated_TemporalTests_Test.date0_, (Number) new BigInteger("0")).slice((LocalDate) Generated_TemporalTests_Test.date10_, (Number) new BigInteger("50"));
   public static TemporalValue add(TemporalValue v1, TemporalValue v2) {
-    TemporalValue res = TemporalValueHelper.perform(v1, v2, ((_FunctionTypes._return_P2_E0<Number, Object, Object>) (Object l, Object r) -> TemporalOps.plus(l, r)), null);
+    TemporalValue res = TemporalValueHelper.perform(v1, v2, (Object l, Object r) -> TemporalOps.plus(l, r), null);
 
     return res;
   }
   public static TemporalValue sub(TemporalValue v1, TemporalValue v2) {
-    TemporalValue res = TemporalValueHelper.perform(v1, v2, ((_FunctionTypes._return_P2_E0<Number, Object, Object>) (Object l, Object r) -> TemporalOps.minus(l, r)), null);
+    TemporalValue res = TemporalValueHelper.perform(v1, v2, (Object l, Object r) -> TemporalOps.minus(l, r), null);
 
     return res;
   }
@@ -359,7 +216,7 @@ public class Generated_TemporalTests_Test {
    * is directly invoked from the assert.
    */
     public static TemporalValue mul(TemporalValue v1, TemporalValue v2) {
-    TemporalValue res = TemporalValueHelper.perform(v1, v2, ((_FunctionTypes._return_P2_E0<Number, Object, Object>) (Object l, Object r) -> TemporalOps.mul(l, r)), null);
+    TemporalValue res = TemporalValueHelper.perform(v1, v2, (Object l, Object r) -> TemporalOps.mul(l, r), null);
 
     return res;
   }
@@ -370,7 +227,7 @@ public class Generated_TemporalTests_Test {
    */
     @Test
   public void TestArith_item0_8266215269012914572() throws Throwable {
-    Assert.assertTrue("Expected: " + (((Number) new BigInteger("3"))) + ", but was: " + (AH.add(((Number) new BigInteger("1")), ((Number) new BigInteger("2")))), EqualsTestOp.matches(((Number) new BigInteger("3")), AH.add(((Number) new BigInteger("1")), ((Number) new BigInteger("2")))));
+    Assert.assertTrue("Expected: " + (Number) new BigInteger("3") + ", but was: " + AH.add((Number) new BigInteger("1"), (Number) new BigInteger("2")), EqualsTestOp.matches((Number) new BigInteger("3"), AH.add((Number) new BigInteger("1"), (Number) new BigInteger("2"))));
   }
 /* 
    * What do we do if, for a slice, no value exists? 
@@ -379,17 +236,7 @@ public class Generated_TemporalTests_Test {
    */
     @Test
   public void TestArith_item1_8266215269012914573() throws Throwable {
-    Assert.assertEquals("Expected: " + (((_FunctionTypes._return_P0_E0<TemporalValue>) () -> {
-      TemporalValue value = new TemporalValue();
-      value = value.slice(((LocalDate) Generated_TemporalTests_Test.date0_), ((Number) new BigInteger("110")));
-      value = value.slice(((LocalDate) Generated_TemporalTests_Test.date05_), ((Number) new BigInteger("120")));
-      return value;
-    }).invoke()) + ", but was: " + (Generated_TemporalTests_Test.add(Generated_TemporalTests_Test.v1_, Generated_TemporalTests_Test.v2_)), (Object) ((_FunctionTypes._return_P0_E0<TemporalValue>) () -> {
-      TemporalValue value = new TemporalValue();
-      value = value.slice(((LocalDate) Generated_TemporalTests_Test.date0_), ((Number) new BigInteger("110")));
-      value = value.slice(((LocalDate) Generated_TemporalTests_Test.date05_), ((Number) new BigInteger("120")));
-      return value;
-    }).invoke(), (Object) Generated_TemporalTests_Test.add(Generated_TemporalTests_Test.v1_, Generated_TemporalTests_Test.v2_));
+    Assert.assertEquals("Expected: " + new TemporalValue().slice((LocalDate) Generated_TemporalTests_Test.date0_, (Number) new BigInteger("110")).slice((LocalDate) Generated_TemporalTests_Test.date05_, (Number) new BigInteger("120")) + ", but was: " + Generated_TemporalTests_Test.add(Generated_TemporalTests_Test.v1_, Generated_TemporalTests_Test.v2_), (Object) new TemporalValue().slice((LocalDate) Generated_TemporalTests_Test.date0_, (Number) new BigInteger("110")).slice((LocalDate) Generated_TemporalTests_Test.date05_, (Number) new BigInteger("120")), (Object) Generated_TemporalTests_Test.add(Generated_TemporalTests_Test.v1_, Generated_TemporalTests_Test.v2_));
   }
 /* 
    * What do we do if, for a slice, no value exists? 
@@ -398,19 +245,7 @@ public class Generated_TemporalTests_Test {
    */
     @Test
   public void TestArith_item2_8266215269012914574() throws Throwable {
-    Assert.assertEquals("Expected: " + (((_FunctionTypes._return_P0_E0<TemporalValue>) () -> {
-      TemporalValue value = new TemporalValue();
-      value = value.slice(((LocalDate) Generated_TemporalTests_Test.date0_), ((Number) new BigInteger("10")));
-      value = value.slice(((LocalDate) Generated_TemporalTests_Test.date05_), ((Number) new BigInteger("20")));
-      value = value.slice(((LocalDate) Generated_TemporalTests_Test.date10_), ((Number) new BigInteger("70")));
-      return value;
-    }).invoke()) + ", but was: " + (Generated_TemporalTests_Test.add(Generated_TemporalTests_Test.v1_, Generated_TemporalTests_Test.v3_)), (Object) ((_FunctionTypes._return_P0_E0<TemporalValue>) () -> {
-      TemporalValue value = new TemporalValue();
-      value = value.slice(((LocalDate) Generated_TemporalTests_Test.date0_), ((Number) new BigInteger("10")));
-      value = value.slice(((LocalDate) Generated_TemporalTests_Test.date05_), ((Number) new BigInteger("20")));
-      value = value.slice(((LocalDate) Generated_TemporalTests_Test.date10_), ((Number) new BigInteger("70")));
-      return value;
-    }).invoke(), (Object) Generated_TemporalTests_Test.add(Generated_TemporalTests_Test.v1_, Generated_TemporalTests_Test.v3_));
+    Assert.assertEquals("Expected: " + new TemporalValue().slice((LocalDate) Generated_TemporalTests_Test.date0_, (Number) new BigInteger("10")).slice((LocalDate) Generated_TemporalTests_Test.date05_, (Number) new BigInteger("20")).slice((LocalDate) Generated_TemporalTests_Test.date10_, (Number) new BigInteger("70")) + ", but was: " + Generated_TemporalTests_Test.add(Generated_TemporalTests_Test.v1_, Generated_TemporalTests_Test.v3_), (Object) new TemporalValue().slice((LocalDate) Generated_TemporalTests_Test.date0_, (Number) new BigInteger("10")).slice((LocalDate) Generated_TemporalTests_Test.date05_, (Number) new BigInteger("20")).slice((LocalDate) Generated_TemporalTests_Test.date10_, (Number) new BigInteger("70")), (Object) Generated_TemporalTests_Test.add(Generated_TemporalTests_Test.v1_, Generated_TemporalTests_Test.v3_));
   }
 /* 
    * What do we do if, for a slice, no value exists? 
@@ -419,15 +254,7 @@ public class Generated_TemporalTests_Test {
    */
     @Test
   public void TestArith_item3_8266215269012914575() throws Throwable {
-    Assert.assertEquals("Expected: " + (((_FunctionTypes._return_P0_E0<TemporalValue>) () -> {
-      TemporalValue value = new TemporalValue();
-      value = value.slice(((LocalDate) Generated_TemporalTests_Test.date0_), ((Number) new BigInteger("0")));
-      return value;
-    }).invoke()) + ", but was: " + (Generated_TemporalTests_Test.sub(Generated_TemporalTests_Test.v1_, Generated_TemporalTests_Test.v1_)), (Object) ((_FunctionTypes._return_P0_E0<TemporalValue>) () -> {
-      TemporalValue value = new TemporalValue();
-      value = value.slice(((LocalDate) Generated_TemporalTests_Test.date0_), ((Number) new BigInteger("0")));
-      return value;
-    }).invoke(), (Object) Generated_TemporalTests_Test.sub(Generated_TemporalTests_Test.v1_, Generated_TemporalTests_Test.v1_));
+    Assert.assertEquals("Expected: " + new TemporalValue().slice((LocalDate) Generated_TemporalTests_Test.date0_, (Number) new BigInteger("0")) + ", but was: " + Generated_TemporalTests_Test.sub(Generated_TemporalTests_Test.v1_, Generated_TemporalTests_Test.v1_), (Object) new TemporalValue().slice((LocalDate) Generated_TemporalTests_Test.date0_, (Number) new BigInteger("0")), (Object) Generated_TemporalTests_Test.sub(Generated_TemporalTests_Test.v1_, Generated_TemporalTests_Test.v1_));
   }
 /* 
    * What do we do if, for a slice, no value exists? 
@@ -436,19 +263,7 @@ public class Generated_TemporalTests_Test {
    */
     @Test
   public void TestArith_item4_8266215269012914576() throws Throwable {
-    Assert.assertEquals("Expected: " + (((_FunctionTypes._return_P0_E0<TemporalValue>) () -> {
-      TemporalValue value = new TemporalValue();
-      value = value.slice(((LocalDate) Generated_TemporalTests_Test.date0_), ((Number) new BigInteger("10")));
-      value = value.slice(((LocalDate) Generated_TemporalTests_Test.date05_), ((Number) new BigInteger("20")));
-      value = value.slice(((LocalDate) Generated_TemporalTests_Test.date10_), ((Number) new BigInteger("-30")));
-      return value;
-    }).invoke()) + ", but was: " + (Generated_TemporalTests_Test.sub(Generated_TemporalTests_Test.v1_, Generated_TemporalTests_Test.v3_)), (Object) ((_FunctionTypes._return_P0_E0<TemporalValue>) () -> {
-      TemporalValue value = new TemporalValue();
-      value = value.slice(((LocalDate) Generated_TemporalTests_Test.date0_), ((Number) new BigInteger("10")));
-      value = value.slice(((LocalDate) Generated_TemporalTests_Test.date05_), ((Number) new BigInteger("20")));
-      value = value.slice(((LocalDate) Generated_TemporalTests_Test.date10_), ((Number) new BigInteger("-30")));
-      return value;
-    }).invoke(), (Object) Generated_TemporalTests_Test.sub(Generated_TemporalTests_Test.v1_, Generated_TemporalTests_Test.v3_));
+    Assert.assertEquals("Expected: " + new TemporalValue().slice((LocalDate) Generated_TemporalTests_Test.date0_, (Number) new BigInteger("10")).slice((LocalDate) Generated_TemporalTests_Test.date05_, (Number) new BigInteger("20")).slice((LocalDate) Generated_TemporalTests_Test.date10_, (Number) new BigInteger("-30")) + ", but was: " + Generated_TemporalTests_Test.sub(Generated_TemporalTests_Test.v1_, Generated_TemporalTests_Test.v3_), (Object) new TemporalValue().slice((LocalDate) Generated_TemporalTests_Test.date0_, (Number) new BigInteger("10")).slice((LocalDate) Generated_TemporalTests_Test.date05_, (Number) new BigInteger("20")).slice((LocalDate) Generated_TemporalTests_Test.date10_, (Number) new BigInteger("-30")), (Object) Generated_TemporalTests_Test.sub(Generated_TemporalTests_Test.v1_, Generated_TemporalTests_Test.v3_));
   }
 /* 
    * What do we do if, for a slice, no value exists? 
@@ -457,17 +272,7 @@ public class Generated_TemporalTests_Test {
    */
     @Test
   public void TestArith_item5_8266215269012914577() throws Throwable {
-    Assert.assertEquals("Expected: " + (((_FunctionTypes._return_P0_E0<TemporalValue>) () -> {
-      TemporalValue value = new TemporalValue();
-      value = value.slice(((LocalDate) Generated_TemporalTests_Test.date0_), ((Number) new BigInteger("1000")));
-      value = value.slice(((LocalDate) Generated_TemporalTests_Test.date05_), ((Number) new BigInteger("2000")));
-      return value;
-    }).invoke()) + ", but was: " + (Generated_TemporalTests_Test.mul(Generated_TemporalTests_Test.v1_, Generated_TemporalTests_Test.v2_)), (Object) ((_FunctionTypes._return_P0_E0<TemporalValue>) () -> {
-      TemporalValue value = new TemporalValue();
-      value = value.slice(((LocalDate) Generated_TemporalTests_Test.date0_), ((Number) new BigInteger("1000")));
-      value = value.slice(((LocalDate) Generated_TemporalTests_Test.date05_), ((Number) new BigInteger("2000")));
-      return value;
-    }).invoke(), (Object) Generated_TemporalTests_Test.mul(Generated_TemporalTests_Test.v1_, Generated_TemporalTests_Test.v2_));
+    Assert.assertEquals("Expected: " + new TemporalValue().slice((LocalDate) Generated_TemporalTests_Test.date0_, (Number) new BigInteger("1000")).slice((LocalDate) Generated_TemporalTests_Test.date05_, (Number) new BigInteger("2000")) + ", but was: " + Generated_TemporalTests_Test.mul(Generated_TemporalTests_Test.v1_, Generated_TemporalTests_Test.v2_), (Object) new TemporalValue().slice((LocalDate) Generated_TemporalTests_Test.date0_, (Number) new BigInteger("1000")).slice((LocalDate) Generated_TemporalTests_Test.date05_, (Number) new BigInteger("2000")), (Object) Generated_TemporalTests_Test.mul(Generated_TemporalTests_Test.v1_, Generated_TemporalTests_Test.v2_));
   }
 /* 
    * What do we do if, for a slice, no value exists? 
@@ -476,151 +281,44 @@ public class Generated_TemporalTests_Test {
    */
     @Test
   public void TestArith_item6_8266215269012914579() throws Throwable {
-    Assert.assertEquals("Expected: " + (((_FunctionTypes._return_P0_E0<TemporalValue>) () -> {
-      TemporalValue value = new TemporalValue();
-      value = value.slice(((LocalDate) Generated_TemporalTests_Test.date0_), ((Number) new BigInteger("0")));
-      value = value.slice(((LocalDate) Generated_TemporalTests_Test.date10_), ((Number) new BigInteger("25")));
-      return value;
-    }).invoke()) + ", but was: " + (TemporalValueHelper.perform(Generated_TemporalTests_Test.v3_, ((Number) new BigInteger("2")), ((_FunctionTypes._return_P2_E0<Number, Object, Object>) (Object l, Object r) -> TemporalOps.div(l, r)), null)), (Object) ((_FunctionTypes._return_P0_E0<TemporalValue>) () -> {
-      TemporalValue value = new TemporalValue();
-      value = value.slice(((LocalDate) Generated_TemporalTests_Test.date0_), ((Number) new BigInteger("0")));
-      value = value.slice(((LocalDate) Generated_TemporalTests_Test.date10_), ((Number) new BigInteger("25")));
-      return value;
-    }).invoke(), (Object) TemporalValueHelper.perform(Generated_TemporalTests_Test.v3_, ((Number) new BigInteger("2")), ((_FunctionTypes._return_P2_E0<Number, Object, Object>) (Object l, Object r) -> TemporalOps.div(l, r)), null));
+    Assert.assertEquals("Expected: " + new TemporalValue().slice((LocalDate) Generated_TemporalTests_Test.date0_, (Number) new BigInteger("0")).slice((LocalDate) Generated_TemporalTests_Test.date10_, (Number) new BigInteger("25")) + ", but was: " + TemporalValueHelper.perform(Generated_TemporalTests_Test.v3_, (Number) new BigInteger("2"), (Object l, Object r) -> TemporalOps.div(l, r), null), (Object) new TemporalValue().slice((LocalDate) Generated_TemporalTests_Test.date0_, (Number) new BigInteger("0")).slice((LocalDate) Generated_TemporalTests_Test.date10_, (Number) new BigInteger("25")), (Object) TemporalValueHelper.perform(Generated_TemporalTests_Test.v3_, (Number) new BigInteger("2"), (Object l, Object r) -> TemporalOps.div(l, r), null));
   }
-  public static final TemporalValue v4_ = ((_FunctionTypes._return_P0_E0<TemporalValue>) () -> {
-    TemporalValue value = new TemporalValue();
-    value = value.slice(((LocalDate) Generated_TemporalTests_Test.date0_), ((Number) new BigInteger("10")));
-    value = value.slice(((LocalDate) Generated_TemporalTests_Test.date05_), ((Number) new BigInteger("20")));
-    value = value.slice(((LocalDate) Generated_TemporalTests_Test.date10_), ((Number) new BigInteger("30")));
-    value = value.slice(((LocalDate) Generated_TemporalTests_Test.date20_), ((Number) new BigInteger("40")));
-    return value;
-  }).invoke();
+  public static final TemporalValue v4_ = new TemporalValue().slice((LocalDate) Generated_TemporalTests_Test.date0_, (Number) new BigInteger("10")).slice((LocalDate) Generated_TemporalTests_Test.date05_, (Number) new BigInteger("20")).slice((LocalDate) Generated_TemporalTests_Test.date10_, (Number) new BigInteger("30")).slice((LocalDate) Generated_TemporalTests_Test.date20_, (Number) new BigInteger("40"));
   @Test
   public void Test5_item0_8266215269012914582() throws Throwable {
-    Assert.assertTrue("Expected: " + (((Number) new BigInteger("20"))) + ", but was: " + (((Number) ((TemporalValue) Generated_TemporalTests_Test.v4_).valueAt(Generated_TemporalTests_Test.date05_))), EqualsTestOp.matches(((Number) new BigInteger("20")), ((Number) ((TemporalValue) Generated_TemporalTests_Test.v4_).valueAt(Generated_TemporalTests_Test.date05_))));
+    Assert.assertTrue("Expected: " + (Number) new BigInteger("20") + ", but was: " + (Number) ((TemporalValue) Generated_TemporalTests_Test.v4_).valueAt(Generated_TemporalTests_Test.date05_), EqualsTestOp.matches((Number) new BigInteger("20"), (Number) ((TemporalValue) Generated_TemporalTests_Test.v4_).valueAt(Generated_TemporalTests_Test.date05_)));
   }
   @Test
   public void TestSlicing_item0_8266215269012914583() throws Throwable {
-    Assert.assertEquals("Expected: " + (((_FunctionTypes._return_P0_E0<TemporalValue>) () -> {
-      TemporalValue value = new TemporalValue();
-      value = value.slice(((LocalDate) LocalDate.of(2007, 1, 1)), ((Number) new BigInteger("20")));
-      value = value.slice(((LocalDate) Generated_TemporalTests_Test.date10_), ((Number) new BigInteger("30")));
-      value = value.slice(((LocalDate) Generated_TemporalTests_Test.date20_), ((Number) new BigInteger("40")));
-      return value;
-    }).invoke()) + ", but was: " + (((TemporalValue) Generated_TemporalTests_Test.v4_).after(LocalDate.of(2007, 1, 1))), (Object) ((_FunctionTypes._return_P0_E0<TemporalValue>) () -> {
-      TemporalValue value = new TemporalValue();
-      value = value.slice(((LocalDate) LocalDate.of(2007, 1, 1)), ((Number) new BigInteger("20")));
-      value = value.slice(((LocalDate) Generated_TemporalTests_Test.date10_), ((Number) new BigInteger("30")));
-      value = value.slice(((LocalDate) Generated_TemporalTests_Test.date20_), ((Number) new BigInteger("40")));
-      return value;
-    }).invoke(), (Object) ((TemporalValue) Generated_TemporalTests_Test.v4_).after(LocalDate.of(2007, 1, 1)));
+    Assert.assertEquals("Expected: " + new TemporalValue().slice((LocalDate) LocalDate.of(2007, 1, 1), (Number) new BigInteger("20")).slice((LocalDate) Generated_TemporalTests_Test.date10_, (Number) new BigInteger("30")).slice((LocalDate) Generated_TemporalTests_Test.date20_, (Number) new BigInteger("40")) + ", but was: " + ((TemporalValue) Generated_TemporalTests_Test.v4_).after(LocalDate.of(2007, 1, 1)), (Object) new TemporalValue().slice((LocalDate) LocalDate.of(2007, 1, 1), (Number) new BigInteger("20")).slice((LocalDate) Generated_TemporalTests_Test.date10_, (Number) new BigInteger("30")).slice((LocalDate) Generated_TemporalTests_Test.date20_, (Number) new BigInteger("40")), (Object) ((TemporalValue) Generated_TemporalTests_Test.v4_).after(LocalDate.of(2007, 1, 1)));
   }
   @Test
   public void TestSlicing_item1_8266215269012914584() throws Throwable {
-    Assert.assertEquals("Expected: " + (((_FunctionTypes._return_P0_E0<TemporalValue>) () -> {
-      TemporalValue value = new TemporalValue();
-      value = value.slice(((LocalDate) Generated_TemporalTests_Test.date0_), ((Number) new BigInteger("10")));
-      value = value.slice(((LocalDate) Generated_TemporalTests_Test.date05_), ((Number) new BigInteger("20")));
-      return value;
-    }).invoke()) + ", but was: " + (((TemporalValue) Generated_TemporalTests_Test.v4_).before(LocalDate.of(2008, 1, 1))), (Object) ((_FunctionTypes._return_P0_E0<TemporalValue>) () -> {
-      TemporalValue value = new TemporalValue();
-      value = value.slice(((LocalDate) Generated_TemporalTests_Test.date0_), ((Number) new BigInteger("10")));
-      value = value.slice(((LocalDate) Generated_TemporalTests_Test.date05_), ((Number) new BigInteger("20")));
-      return value;
-    }).invoke(), (Object) ((TemporalValue) Generated_TemporalTests_Test.v4_).before(LocalDate.of(2008, 1, 1)));
+    Assert.assertEquals("Expected: " + new TemporalValue().slice((LocalDate) Generated_TemporalTests_Test.date0_, (Number) new BigInteger("10")).slice((LocalDate) Generated_TemporalTests_Test.date05_, (Number) new BigInteger("20")) + ", but was: " + ((TemporalValue) Generated_TemporalTests_Test.v4_).before(LocalDate.of(2008, 1, 1)), (Object) new TemporalValue().slice((LocalDate) Generated_TemporalTests_Test.date0_, (Number) new BigInteger("10")).slice((LocalDate) Generated_TemporalTests_Test.date05_, (Number) new BigInteger("20")), (Object) ((TemporalValue) Generated_TemporalTests_Test.v4_).before(LocalDate.of(2008, 1, 1)));
   }
   @Test
   public void TestSlicing_item2_8266215269012914585() throws Throwable {
-    Assert.assertEquals("Expected: " + (((_FunctionTypes._return_P0_E0<TemporalValue>) () -> {
-      TemporalValue value = new TemporalValue();
-      value = value.slice(((LocalDate) LocalDate.of(2003, 1, 1)), ((Number) new BigInteger("10")));
-      value = value.slice(((LocalDate) Generated_TemporalTests_Test.date05_), ((Number) new BigInteger("20")));
-      value = value.slice(((LocalDate) Generated_TemporalTests_Test.date10_), ((Number) new BigInteger("30")));
-      return value;
-    }).invoke()) + ", but was: " + (((TemporalValue) Generated_TemporalTests_Test.v4_).between(LocalDate.of(2003, 1, 1), LocalDate.of(2015, 1, 1))), (Object) ((_FunctionTypes._return_P0_E0<TemporalValue>) () -> {
-      TemporalValue value = new TemporalValue();
-      value = value.slice(((LocalDate) LocalDate.of(2003, 1, 1)), ((Number) new BigInteger("10")));
-      value = value.slice(((LocalDate) Generated_TemporalTests_Test.date05_), ((Number) new BigInteger("20")));
-      value = value.slice(((LocalDate) Generated_TemporalTests_Test.date10_), ((Number) new BigInteger("30")));
-      return value;
-    }).invoke(), (Object) ((TemporalValue) Generated_TemporalTests_Test.v4_).between(LocalDate.of(2003, 1, 1), LocalDate.of(2015, 1, 1)));
+    Assert.assertEquals("Expected: " + new TemporalValue().slice((LocalDate) LocalDate.of(2003, 1, 1), (Number) new BigInteger("10")).slice((LocalDate) Generated_TemporalTests_Test.date05_, (Number) new BigInteger("20")).slice((LocalDate) Generated_TemporalTests_Test.date10_, (Number) new BigInteger("30")) + ", but was: " + ((TemporalValue) Generated_TemporalTests_Test.v4_).between(LocalDate.of(2003, 1, 1), LocalDate.of(2015, 1, 1)), (Object) new TemporalValue().slice((LocalDate) LocalDate.of(2003, 1, 1), (Number) new BigInteger("10")).slice((LocalDate) Generated_TemporalTests_Test.date05_, (Number) new BigInteger("20")).slice((LocalDate) Generated_TemporalTests_Test.date10_, (Number) new BigInteger("30")), (Object) ((TemporalValue) Generated_TemporalTests_Test.v4_).between(LocalDate.of(2003, 1, 1), LocalDate.of(2015, 1, 1)));
   }
   @Test
   public void TestSlicing_item3_8266215269012914586() throws Throwable {
-    Assert.assertEquals("Expected: " + (((_FunctionTypes._return_P0_E0<TemporalValue>) () -> {
-      TemporalValue value = new TemporalValue();
-      value = value.slice(((LocalDate) Generated_TemporalTests_Test.date0_), ((Number) new BigInteger("10")));
-      value = value.slice(((LocalDate) Generated_TemporalTests_Test.date05_), ((Number) new BigInteger("20")));
-      return value;
-    }).invoke()) + ", but was: " + (((TemporalValue) Generated_TemporalTests_Test.v4_).before(LocalDate.of(2007, 1, 1))), (Object) ((_FunctionTypes._return_P0_E0<TemporalValue>) () -> {
-      TemporalValue value = new TemporalValue();
-      value = value.slice(((LocalDate) Generated_TemporalTests_Test.date0_), ((Number) new BigInteger("10")));
-      value = value.slice(((LocalDate) Generated_TemporalTests_Test.date05_), ((Number) new BigInteger("20")));
-      return value;
-    }).invoke(), (Object) ((TemporalValue) Generated_TemporalTests_Test.v4_).before(LocalDate.of(2007, 1, 1)));
+    Assert.assertEquals("Expected: " + new TemporalValue().slice((LocalDate) Generated_TemporalTests_Test.date0_, (Number) new BigInteger("10")).slice((LocalDate) Generated_TemporalTests_Test.date05_, (Number) new BigInteger("20")) + ", but was: " + ((TemporalValue) Generated_TemporalTests_Test.v4_).before(LocalDate.of(2007, 1, 1)), (Object) new TemporalValue().slice((LocalDate) Generated_TemporalTests_Test.date0_, (Number) new BigInteger("10")).slice((LocalDate) Generated_TemporalTests_Test.date05_, (Number) new BigInteger("20")), (Object) ((TemporalValue) Generated_TemporalTests_Test.v4_).before(LocalDate.of(2007, 1, 1)));
   }
   @Test
   public void TestSlicing_item4_8266215269012914587() throws Throwable {
-    Assert.assertEquals("Expected: " + (((_FunctionTypes._return_P0_E0<TemporalValue>) () -> {
-      TemporalValue value = new TemporalValue();
-      value = value.slice(((LocalDate) LocalDate.of(2004, 1, 1)), ((Number) new BigInteger("10")));
-      value = value.slice(((LocalDate) Generated_TemporalTests_Test.date05_), ((Number) new BigInteger("20")));
-      value = value.slice(((LocalDate) Generated_TemporalTests_Test.date10_), ((Number) new BigInteger("30")));
-      value = value.slice(((LocalDate) Generated_TemporalTests_Test.date20_), ((Number) new BigInteger("40")));
-      return value;
-    }).invoke()) + ", but was: " + (((TemporalValue) Generated_TemporalTests_Test.v4_).after(LocalDate.of(2004, 1, 1))), (Object) ((_FunctionTypes._return_P0_E0<TemporalValue>) () -> {
-      TemporalValue value = new TemporalValue();
-      value = value.slice(((LocalDate) LocalDate.of(2004, 1, 1)), ((Number) new BigInteger("10")));
-      value = value.slice(((LocalDate) Generated_TemporalTests_Test.date05_), ((Number) new BigInteger("20")));
-      value = value.slice(((LocalDate) Generated_TemporalTests_Test.date10_), ((Number) new BigInteger("30")));
-      value = value.slice(((LocalDate) Generated_TemporalTests_Test.date20_), ((Number) new BigInteger("40")));
-      return value;
-    }).invoke(), (Object) ((TemporalValue) Generated_TemporalTests_Test.v4_).after(LocalDate.of(2004, 1, 1)));
+    Assert.assertEquals("Expected: " + new TemporalValue().slice((LocalDate) LocalDate.of(2004, 1, 1), (Number) new BigInteger("10")).slice((LocalDate) Generated_TemporalTests_Test.date05_, (Number) new BigInteger("20")).slice((LocalDate) Generated_TemporalTests_Test.date10_, (Number) new BigInteger("30")).slice((LocalDate) Generated_TemporalTests_Test.date20_, (Number) new BigInteger("40")) + ", but was: " + ((TemporalValue) Generated_TemporalTests_Test.v4_).after(LocalDate.of(2004, 1, 1)), (Object) new TemporalValue().slice((LocalDate) LocalDate.of(2004, 1, 1), (Number) new BigInteger("10")).slice((LocalDate) Generated_TemporalTests_Test.date05_, (Number) new BigInteger("20")).slice((LocalDate) Generated_TemporalTests_Test.date10_, (Number) new BigInteger("30")).slice((LocalDate) Generated_TemporalTests_Test.date20_, (Number) new BigInteger("40")), (Object) ((TemporalValue) Generated_TemporalTests_Test.v4_).after(LocalDate.of(2004, 1, 1)));
   }
   @Test
   public void TestSlicing_item5_8266215269012914588() throws Throwable {
-    Assert.assertEquals("Expected: " + (((_FunctionTypes._return_P0_E0<TemporalValue>) () -> {
-      TemporalValue value = new TemporalValue();
-      value = value.slice(((LocalDate) Generated_TemporalTests_Test.date05_), ((Number) new BigInteger("20")));
-      value = value.slice(((LocalDate) Generated_TemporalTests_Test.date10_), ((Number) new BigInteger("30")));
-      value = value.slice(((LocalDate) Generated_TemporalTests_Test.date20_), ((Number) new BigInteger("40")));
-      return value;
-    }).invoke()) + ", but was: " + (((TemporalValue) Generated_TemporalTests_Test.v4_).after(Generated_TemporalTests_Test.date05_)), (Object) ((_FunctionTypes._return_P0_E0<TemporalValue>) () -> {
-      TemporalValue value = new TemporalValue();
-      value = value.slice(((LocalDate) Generated_TemporalTests_Test.date05_), ((Number) new BigInteger("20")));
-      value = value.slice(((LocalDate) Generated_TemporalTests_Test.date10_), ((Number) new BigInteger("30")));
-      value = value.slice(((LocalDate) Generated_TemporalTests_Test.date20_), ((Number) new BigInteger("40")));
-      return value;
-    }).invoke(), (Object) ((TemporalValue) Generated_TemporalTests_Test.v4_).after(Generated_TemporalTests_Test.date05_));
+    Assert.assertEquals("Expected: " + new TemporalValue().slice((LocalDate) Generated_TemporalTests_Test.date05_, (Number) new BigInteger("20")).slice((LocalDate) Generated_TemporalTests_Test.date10_, (Number) new BigInteger("30")).slice((LocalDate) Generated_TemporalTests_Test.date20_, (Number) new BigInteger("40")) + ", but was: " + ((TemporalValue) Generated_TemporalTests_Test.v4_).after(Generated_TemporalTests_Test.date05_), (Object) new TemporalValue().slice((LocalDate) Generated_TemporalTests_Test.date05_, (Number) new BigInteger("20")).slice((LocalDate) Generated_TemporalTests_Test.date10_, (Number) new BigInteger("30")).slice((LocalDate) Generated_TemporalTests_Test.date20_, (Number) new BigInteger("40")), (Object) ((TemporalValue) Generated_TemporalTests_Test.v4_).after(Generated_TemporalTests_Test.date05_));
   }
   @Test
   public void TestSlicing_item6_8266215269012914589() throws Throwable {
-    Assert.assertEquals("Expected: " + (((_FunctionTypes._return_P0_E0<TemporalValue>) () -> {
-      TemporalValue value = new TemporalValue();
-      value = value.slice(((LocalDate) LocalDate.of(2006, 1, 1)), ((Number) new BigInteger("20")));
-      value = value.slice(((LocalDate) Generated_TemporalTests_Test.date10_), ((Number) new BigInteger("30")));
-      value = value.slice(((LocalDate) Generated_TemporalTests_Test.date20_), ((Number) new BigInteger("40")));
-      return value;
-    }).invoke()) + ", but was: " + (((TemporalValue) Generated_TemporalTests_Test.v4_).after(LocalDate.of(2006, 1, 1))), (Object) ((_FunctionTypes._return_P0_E0<TemporalValue>) () -> {
-      TemporalValue value = new TemporalValue();
-      value = value.slice(((LocalDate) LocalDate.of(2006, 1, 1)), ((Number) new BigInteger("20")));
-      value = value.slice(((LocalDate) Generated_TemporalTests_Test.date10_), ((Number) new BigInteger("30")));
-      value = value.slice(((LocalDate) Generated_TemporalTests_Test.date20_), ((Number) new BigInteger("40")));
-      return value;
-    }).invoke(), (Object) ((TemporalValue) Generated_TemporalTests_Test.v4_).after(LocalDate.of(2006, 1, 1)));
+    Assert.assertEquals("Expected: " + new TemporalValue().slice((LocalDate) LocalDate.of(2006, 1, 1), (Number) new BigInteger("20")).slice((LocalDate) Generated_TemporalTests_Test.date10_, (Number) new BigInteger("30")).slice((LocalDate) Generated_TemporalTests_Test.date20_, (Number) new BigInteger("40")) + ", but was: " + ((TemporalValue) Generated_TemporalTests_Test.v4_).after(LocalDate.of(2006, 1, 1)), (Object) new TemporalValue().slice((LocalDate) LocalDate.of(2006, 1, 1), (Number) new BigInteger("20")).slice((LocalDate) Generated_TemporalTests_Test.date10_, (Number) new BigInteger("30")).slice((LocalDate) Generated_TemporalTests_Test.date20_, (Number) new BigInteger("40")), (Object) ((TemporalValue) Generated_TemporalTests_Test.v4_).after(LocalDate.of(2006, 1, 1)));
   }
   @Test
   public void TestSlicing_item7_8266215269012914590() throws Throwable {
-    Assert.assertEquals("Expected: " + (((_FunctionTypes._return_P0_E0<TemporalValue>) () -> {
-      TemporalValue value = new TemporalValue();
-      value = value.slice(((LocalDate) Generated_TemporalTests_Test.date05_), ((Number) new BigInteger("20")));
-      return value;
-    }).invoke()) + ", but was: " + (((TemporalValue) Generated_TemporalTests_Test.v4_).between(Generated_TemporalTests_Test.date05_, LocalDate.of(2007, 1, 1))), (Object) ((_FunctionTypes._return_P0_E0<TemporalValue>) () -> {
-      TemporalValue value = new TemporalValue();
-      value = value.slice(((LocalDate) Generated_TemporalTests_Test.date05_), ((Number) new BigInteger("20")));
-      return value;
-    }).invoke(), (Object) ((TemporalValue) Generated_TemporalTests_Test.v4_).between(Generated_TemporalTests_Test.date05_, LocalDate.of(2007, 1, 1)));
+    Assert.assertEquals("Expected: " + new TemporalValue().slice((LocalDate) Generated_TemporalTests_Test.date05_, (Number) new BigInteger("20")) + ", but was: " + ((TemporalValue) Generated_TemporalTests_Test.v4_).between(Generated_TemporalTests_Test.date05_, LocalDate.of(2007, 1, 1)), (Object) new TemporalValue().slice((LocalDate) Generated_TemporalTests_Test.date05_, (Number) new BigInteger("20")), (Object) ((TemporalValue) Generated_TemporalTests_Test.v4_).between(Generated_TemporalTests_Test.date05_, LocalDate.of(2007, 1, 1)));
   }
   public static final LocalDate date06_ = LocalDate.of(2006, 1, 1);
   public static final LocalDate date08_ = LocalDate.of(2008, 1, 1);
@@ -638,8 +336,8 @@ public class Generated_TemporalTests_Test {
     LocalDate fromTime;
     LocalDate toTime;
     {
-      fromTime = ((LocalDate) fromValue);
-      toTime = ((LocalDate) Generated_TemporalTests_Test.date08_);
+      fromTime = (LocalDate) fromValue;
+      toTime = (LocalDate) Generated_TemporalTests_Test.date08_;
     }
     if ("DAYS".equals("DAYS")) {
       long totalDays = ChronoUnit.DAYS.between(fromTime, toTime);
@@ -663,11 +361,11 @@ public class Generated_TemporalTests_Test {
   }).invoke();
   @Test
   public void Spreading_item0_8266215269012914595() throws Throwable {
-    Assert.assertTrue("Expected: " + (((Number) new BigInteger("731"))) + ", but was: " + (BigInteger.valueOf(Generated_TemporalTests_Test.days68_.size())), EqualsTestOp.matches(((Number) new BigInteger("731")), BigInteger.valueOf(Generated_TemporalTests_Test.days68_.size())));
+    Assert.assertTrue("Expected: " + (Number) new BigInteger("731") + ", but was: " + BigInteger.valueOf(Generated_TemporalTests_Test.days68_.size()), EqualsTestOp.matches((Number) new BigInteger("731"), BigInteger.valueOf(Generated_TemporalTests_Test.days68_.size())));
   }
   @Test
   public void Spreading_item1_8266215269012914596() throws Throwable {
-    Assert.assertTrue("Expected: " + (((Number) new BigInteger("14620"))) + ", but was: " + (CollectionHelper.sumAsBigInteger(Generated_TemporalTests_Test.days68_)), EqualsTestOp.matches(((Number) new BigInteger("14620")), CollectionHelper.sumAsBigInteger(Generated_TemporalTests_Test.days68_)));
+    Assert.assertTrue("Expected: " + (Number) new BigInteger("14620") + ", but was: " + CollectionHelper.sumAsBigInteger(Generated_TemporalTests_Test.days68_), EqualsTestOp.matches((Number) new BigInteger("14620"), CollectionHelper.sumAsBigInteger(Generated_TemporalTests_Test.days68_)));
   }
 /* 
    * It's kinda strange to be able to distribute something
@@ -685,8 +383,8 @@ public class Generated_TemporalTests_Test {
     LocalDate fromTime;
     LocalDate toTime;
     {
-      fromTime = ((LocalDate) fromValue);
-      toTime = ((LocalDate) Generated_TemporalTests_Test.date08_);
+      fromTime = (LocalDate) fromValue;
+      toTime = (LocalDate) Generated_TemporalTests_Test.date08_;
     }
     if ("MONTHS".equals("DAYS")) {
       long totalDays = ChronoUnit.DAYS.between(fromTime, toTime);
@@ -710,11 +408,11 @@ public class Generated_TemporalTests_Test {
   }).invoke();
   @Test
   public void Spreading1_item0_8266215269012914599() throws Throwable {
-    Assert.assertTrue("Expected: " + (((Number) new BigInteger("37"))) + ", but was: " + (BigInteger.valueOf(Generated_TemporalTests_Test.days58_.size())), EqualsTestOp.matches(((Number) new BigInteger("37")), BigInteger.valueOf(Generated_TemporalTests_Test.days58_.size())));
+    Assert.assertTrue("Expected: " + (Number) new BigInteger("37") + ", but was: " + BigInteger.valueOf(Generated_TemporalTests_Test.days58_.size()), EqualsTestOp.matches((Number) new BigInteger("37"), BigInteger.valueOf(Generated_TemporalTests_Test.days58_.size())));
   }
   @Test
   public void Spreading1_item1_8266215269012914600() throws Throwable {
-    Assert.assertTrue("Expected: " + (((Number) new BigInteger("740"))) + ", but was: " + (CollectionHelper.sumAsBigInteger(Generated_TemporalTests_Test.days58_)), EqualsTestOp.matches(((Number) new BigInteger("740")), CollectionHelper.sumAsBigInteger(Generated_TemporalTests_Test.days58_)));
+    Assert.assertTrue("Expected: " + (Number) new BigInteger("740") + ", but was: " + CollectionHelper.sumAsBigInteger(Generated_TemporalTests_Test.days58_), EqualsTestOp.matches((Number) new BigInteger("740"), CollectionHelper.sumAsBigInteger(Generated_TemporalTests_Test.days58_)));
   }
   public static final PCollection<Number> days712_ = ((_FunctionTypes._return_P0_E0<PVector<Number>>) () -> {
     TemporalValue tv = Generated_TemporalTests_Test.v4_;
@@ -724,8 +422,8 @@ public class Generated_TemporalTests_Test {
     LocalDate fromTime;
     LocalDate toTime;
     {
-      fromTime = ((LocalDate) fromValue);
-      toTime = ((LocalDate) LocalDate.of(2012, 1, 1));
+      fromTime = (LocalDate) fromValue;
+      toTime = (LocalDate) LocalDate.of(2012, 1, 1);
     }
     if ("MONTHS".equals("DAYS")) {
       long totalDays = ChronoUnit.DAYS.between(fromTime, toTime);
@@ -749,21 +447,21 @@ public class Generated_TemporalTests_Test {
   }).invoke();
   @Test
   public void Spreading2_item0_8266215269012914602() throws Throwable {
-    Assert.assertTrue("Expected: " + (((Number) new BigInteger("36"))) + ", but was: " + (BigInteger.valueOf(TreePVector.<Number>from(Generated_TemporalTests_Test.days712_.stream().filter(new Predicate<Number>() {
+    Assert.assertTrue("Expected: " + (Number) new BigInteger("36") + ", but was: " + BigInteger.valueOf(TreePVector.<Number>from(Generated_TemporalTests_Test.days712_.stream().filter(new Predicate<Number>() {
       public boolean test(Number o) {
         return new Function<ParameterSetWrapper, Boolean>() {
           public Boolean apply(ParameterSetWrapper param) {
             Number it = (Number) param.parameters.get(0);
-            return AH.isEqual(it, ((Number) new BigInteger("20")));
+            return AH.isEqual(it, (Number) new BigInteger("20"));
           }
         }.apply(new ParameterSetWrapper(o));
       }
-    }).collect(Collectors.<Number>toList())).size())), EqualsTestOp.matches(((Number) new BigInteger("36")), BigInteger.valueOf(TreePVector.<Number>from(Generated_TemporalTests_Test.days712_.stream().filter(new Predicate<Number>() {
+    }).collect(Collectors.<Number>toList())).size()), EqualsTestOp.matches((Number) new BigInteger("36"), BigInteger.valueOf(TreePVector.<Number>from(Generated_TemporalTests_Test.days712_.stream().filter(new Predicate<Number>() {
       public boolean test(Number o) {
         return new Function<ParameterSetWrapper, Boolean>() {
           public Boolean apply(ParameterSetWrapper param) {
             Number it = (Number) param.parameters.get(0);
-            return AH.isEqual(it, ((Number) new BigInteger("20")));
+            return AH.isEqual(it, (Number) new BigInteger("20"));
           }
         }.apply(new ParameterSetWrapper(o));
       }
@@ -771,21 +469,21 @@ public class Generated_TemporalTests_Test {
   }
   @Test
   public void Spreading2_item1_8266215269012914603() throws Throwable {
-    Assert.assertTrue("Expected: " + (((Number) new BigInteger("25"))) + ", but was: " + (BigInteger.valueOf(TreePVector.<Number>from(Generated_TemporalTests_Test.days712_.stream().filter(new Predicate<Number>() {
+    Assert.assertTrue("Expected: " + (Number) new BigInteger("25") + ", but was: " + BigInteger.valueOf(TreePVector.<Number>from(Generated_TemporalTests_Test.days712_.stream().filter(new Predicate<Number>() {
       public boolean test(Number o) {
         return new Function<ParameterSetWrapper, Boolean>() {
           public Boolean apply(ParameterSetWrapper param) {
             Number it = (Number) param.parameters.get(0);
-            return AH.isEqual(it, ((Number) new BigInteger("30")));
+            return AH.isEqual(it, (Number) new BigInteger("30"));
           }
         }.apply(new ParameterSetWrapper(o));
       }
-    }).collect(Collectors.<Number>toList())).size())), EqualsTestOp.matches(((Number) new BigInteger("25")), BigInteger.valueOf(TreePVector.<Number>from(Generated_TemporalTests_Test.days712_.stream().filter(new Predicate<Number>() {
+    }).collect(Collectors.<Number>toList())).size()), EqualsTestOp.matches((Number) new BigInteger("25"), BigInteger.valueOf(TreePVector.<Number>from(Generated_TemporalTests_Test.days712_.stream().filter(new Predicate<Number>() {
       public boolean test(Number o) {
         return new Function<ParameterSetWrapper, Boolean>() {
           public Boolean apply(ParameterSetWrapper param) {
             Number it = (Number) param.parameters.get(0);
-            return AH.isEqual(it, ((Number) new BigInteger("30")));
+            return AH.isEqual(it, (Number) new BigInteger("30"));
           }
         }.apply(new ParameterSetWrapper(o));
       }
@@ -793,11 +491,11 @@ public class Generated_TemporalTests_Test {
   }
   @Test
   public void Spreading2_item2_8266215269012914604() throws Throwable {
-    Assert.assertTrue("Expected: " + (((Number) new BigInteger("61"))) + ", but was: " + (BigInteger.valueOf(Generated_TemporalTests_Test.days712_.size())), EqualsTestOp.matches(((Number) new BigInteger("61")), BigInteger.valueOf(Generated_TemporalTests_Test.days712_.size())));
+    Assert.assertTrue("Expected: " + (Number) new BigInteger("61") + ", but was: " + BigInteger.valueOf(Generated_TemporalTests_Test.days712_.size()), EqualsTestOp.matches((Number) new BigInteger("61"), BigInteger.valueOf(Generated_TemporalTests_Test.days712_.size())));
   }
   @Test
   public void Spreading2_item3_8266215269012914605() throws Throwable {
-    Assert.assertTrue("Expected: " + (((Number) new BigInteger("1470"))) + ", but was: " + (CollectionHelper.sumAsBigInteger(Generated_TemporalTests_Test.days712_)), EqualsTestOp.matches(((Number) new BigInteger("1470")), CollectionHelper.sumAsBigInteger(Generated_TemporalTests_Test.days712_)));
+    Assert.assertTrue("Expected: " + (Number) new BigInteger("1470") + ", but was: " + CollectionHelper.sumAsBigInteger(Generated_TemporalTests_Test.days712_), EqualsTestOp.matches((Number) new BigInteger("1470"), CollectionHelper.sumAsBigInteger(Generated_TemporalTests_Test.days712_)));
   }
 /* 
    * Yeah, I know, should be 12. But I assume a month to be 30 days :-)
@@ -806,7 +504,7 @@ public class Generated_TemporalTests_Test {
     TemporalValue tv = Generated_TemporalTests_Test.v4_;
     Object fromValue;
 
-    fromValue = DiscreteDateRangeValue.year(((BigInteger) ((Number) new BigInteger("2010"))).intValue());
+    fromValue = DiscreteDateRangeValue.year(((BigInteger) (Number) new BigInteger("2010")).intValue());
     LocalDate fromTime;
     LocalDate toTime;
     {
@@ -836,25 +534,25 @@ public class Generated_TemporalTests_Test {
   }).invoke();
   @Test
   public void Spreading3_item0_8266215269012914608() throws Throwable {
-    Assert.assertTrue("Expected: " + (((Number) new BigInteger("12"))) + ", but was: " + (BigInteger.valueOf(Generated_TemporalTests_Test.monthsIn2010_.size())), EqualsTestOp.matches(((Number) new BigInteger("12")), BigInteger.valueOf(Generated_TemporalTests_Test.monthsIn2010_.size())));
+    Assert.assertTrue("Expected: " + (Number) new BigInteger("12") + ", but was: " + BigInteger.valueOf(Generated_TemporalTests_Test.monthsIn2010_.size()), EqualsTestOp.matches((Number) new BigInteger("12"), BigInteger.valueOf(Generated_TemporalTests_Test.monthsIn2010_.size())));
   }
   @Test
   public void Spreading3_item1_8266215269012914609() throws Throwable {
-    Assert.assertEquals("Expected: " + (true) + ", but was: " + (Generated_TemporalTests_Test.monthsIn2010_.stream().allMatch(new Predicate<Number>() {
+    Assert.assertEquals("Expected: " + true + ", but was: " + Generated_TemporalTests_Test.monthsIn2010_.stream().allMatch(new Predicate<Number>() {
       public boolean test(Number o) {
         return new Function<ParameterSetWrapper, Boolean>() {
           public Boolean apply(ParameterSetWrapper param) {
             Number it = (Number) param.parameters.get(0);
-            return AH.isEqual(it, ((Number) new BigInteger("30")));
+            return AH.isEqual(it, (Number) new BigInteger("30"));
           }
         }.apply(new ParameterSetWrapper(o));
       }
-    })), (Object) true, (Object) Generated_TemporalTests_Test.monthsIn2010_.stream().allMatch(new Predicate<Number>() {
+    }), (Object) true, (Object) Generated_TemporalTests_Test.monthsIn2010_.stream().allMatch(new Predicate<Number>() {
       public boolean test(Number o) {
         return new Function<ParameterSetWrapper, Boolean>() {
           public Boolean apply(ParameterSetWrapper param) {
             Number it = (Number) param.parameters.get(0);
-            return AH.isEqual(it, ((Number) new BigInteger("30")));
+            return AH.isEqual(it, (Number) new BigInteger("30"));
           }
         }.apply(new ParameterSetWrapper(o));
       }
@@ -862,41 +560,16 @@ public class Generated_TemporalTests_Test {
   }
   @Test
   public void Spreading3_item2_8266215269012914610() throws Throwable {
-    Assert.assertTrue("Expected: " + (AH.mul(((Number) new BigInteger("12")), ((Number) new BigInteger("30")))) + ", but was: " + (CollectionHelper.sumAsBigInteger(Generated_TemporalTests_Test.monthsIn2010_)), EqualsTestOp.matches(AH.mul(((Number) new BigInteger("12")), ((Number) new BigInteger("30"))), CollectionHelper.sumAsBigInteger(Generated_TemporalTests_Test.monthsIn2010_)));
+    Assert.assertTrue("Expected: " + AH.mul((Number) new BigInteger("12"), (Number) new BigInteger("30")) + ", but was: " + CollectionHelper.sumAsBigInteger(Generated_TemporalTests_Test.monthsIn2010_), EqualsTestOp.matches(AH.mul((Number) new BigInteger("12"), (Number) new BigInteger("30")), CollectionHelper.sumAsBigInteger(Generated_TemporalTests_Test.monthsIn2010_)));
   }
-  public static final TemporalValue v8_ = ((_FunctionTypes._return_P0_E0<TemporalValue>) () -> {
-    TemporalValue value = new TemporalValue();
-    value = value.slice(((LocalDate) Generated_TemporalTests_Test.date0_), ((Number) (new BigDecimal("10.20").setScale(2, RoundingMode.DOWN))));
-    value = value.slice(((LocalDate) Generated_TemporalTests_Test.date05_), ((Number) (new BigDecimal("20.10").setScale(2, RoundingMode.DOWN))));
-    return value;
-  }).invoke();
+  public static final TemporalValue v8_ = new TemporalValue().slice((LocalDate) Generated_TemporalTests_Test.date0_, (Number) new BigDecimal("10.20").setScale(2, RoundingMode.DOWN)).slice((LocalDate) Generated_TemporalTests_Test.date05_, (Number) new BigDecimal("20.10").setScale(2, RoundingMode.DOWN));
   @Test
   public void Decimals_item0_8266215269012914612() throws Throwable {
-    Assert.assertEquals("Expected: " + (((_FunctionTypes._return_P0_E0<TemporalValue>) () -> {
-      TemporalValue value = new TemporalValue();
-      value = value.slice(((LocalDate) Generated_TemporalTests_Test.date0_), ((Number) (new BigDecimal("12.20").setScale(2, RoundingMode.DOWN))));
-      value = value.slice(((LocalDate) Generated_TemporalTests_Test.date05_), ((Number) (new BigDecimal("22.10").setScale(2, RoundingMode.DOWN))));
-      return value;
-    }).invoke()) + ", but was: " + (TemporalValueHelper.perform(Generated_TemporalTests_Test.v8_, ((Number) new BigInteger("2")), ((_FunctionTypes._return_P2_E0<Number, Object, Object>) (Object l, Object r) -> TemporalOps.plus(l, r)), null)), (Object) ((_FunctionTypes._return_P0_E0<TemporalValue>) () -> {
-      TemporalValue value = new TemporalValue();
-      value = value.slice(((LocalDate) Generated_TemporalTests_Test.date0_), ((Number) (new BigDecimal("12.20").setScale(2, RoundingMode.DOWN))));
-      value = value.slice(((LocalDate) Generated_TemporalTests_Test.date05_), ((Number) (new BigDecimal("22.10").setScale(2, RoundingMode.DOWN))));
-      return value;
-    }).invoke(), (Object) TemporalValueHelper.perform(Generated_TemporalTests_Test.v8_, ((Number) new BigInteger("2")), ((_FunctionTypes._return_P2_E0<Number, Object, Object>) (Object l, Object r) -> TemporalOps.plus(l, r)), null));
+    Assert.assertEquals("Expected: " + new TemporalValue().slice((LocalDate) Generated_TemporalTests_Test.date0_, (Number) new BigDecimal("12.20").setScale(2, RoundingMode.DOWN)).slice((LocalDate) Generated_TemporalTests_Test.date05_, (Number) new BigDecimal("22.10").setScale(2, RoundingMode.DOWN)) + ", but was: " + TemporalValueHelper.perform(Generated_TemporalTests_Test.v8_, (Number) new BigInteger("2"), (Object l, Object r) -> TemporalOps.plus(l, r), null), (Object) new TemporalValue().slice((LocalDate) Generated_TemporalTests_Test.date0_, (Number) new BigDecimal("12.20").setScale(2, RoundingMode.DOWN)).slice((LocalDate) Generated_TemporalTests_Test.date05_, (Number) new BigDecimal("22.10").setScale(2, RoundingMode.DOWN)), (Object) TemporalValueHelper.perform(Generated_TemporalTests_Test.v8_, (Number) new BigInteger("2"), (Object l, Object r) -> TemporalOps.plus(l, r), null));
   }
   @Test
   public void Decimals_item1_8266215269012914613() throws Throwable {
-    Assert.assertEquals("Expected: " + (((_FunctionTypes._return_P0_E0<TemporalValue>) () -> {
-      TemporalValue value = new TemporalValue();
-      value = value.slice(((LocalDate) Generated_TemporalTests_Test.date0_), ((Number) (new BigDecimal("20.40").setScale(2, RoundingMode.DOWN))));
-      value = value.slice(((LocalDate) Generated_TemporalTests_Test.date05_), ((Number) (new BigDecimal("40.20").setScale(2, RoundingMode.DOWN))));
-      return value;
-    }).invoke()) + ", but was: " + (TemporalValueHelper.perform(Generated_TemporalTests_Test.v8_, ((Number) new BigInteger("2")), ((_FunctionTypes._return_P2_E0<Number, Object, Object>) (Object l, Object r) -> TemporalOps.mul(l, r)), null)), (Object) ((_FunctionTypes._return_P0_E0<TemporalValue>) () -> {
-      TemporalValue value = new TemporalValue();
-      value = value.slice(((LocalDate) Generated_TemporalTests_Test.date0_), ((Number) (new BigDecimal("20.40").setScale(2, RoundingMode.DOWN))));
-      value = value.slice(((LocalDate) Generated_TemporalTests_Test.date05_), ((Number) (new BigDecimal("40.20").setScale(2, RoundingMode.DOWN))));
-      return value;
-    }).invoke(), (Object) TemporalValueHelper.perform(Generated_TemporalTests_Test.v8_, ((Number) new BigInteger("2")), ((_FunctionTypes._return_P2_E0<Number, Object, Object>) (Object l, Object r) -> TemporalOps.mul(l, r)), null));
+    Assert.assertEquals("Expected: " + new TemporalValue().slice((LocalDate) Generated_TemporalTests_Test.date0_, (Number) new BigDecimal("20.40").setScale(2, RoundingMode.DOWN)).slice((LocalDate) Generated_TemporalTests_Test.date05_, (Number) new BigDecimal("40.20").setScale(2, RoundingMode.DOWN)) + ", but was: " + TemporalValueHelper.perform(Generated_TemporalTests_Test.v8_, (Number) new BigInteger("2"), (Object l, Object r) -> TemporalOps.mul(l, r), null), (Object) new TemporalValue().slice((LocalDate) Generated_TemporalTests_Test.date0_, (Number) new BigDecimal("20.40").setScale(2, RoundingMode.DOWN)).slice((LocalDate) Generated_TemporalTests_Test.date05_, (Number) new BigDecimal("40.20").setScale(2, RoundingMode.DOWN)), (Object) TemporalValueHelper.perform(Generated_TemporalTests_Test.v8_, (Number) new BigInteger("2"), (Object l, Object r) -> TemporalOps.mul(l, r), null));
   }
   public static class Point implements Comparable<Point> {
     private Boolean x;
@@ -939,7 +612,7 @@ public class Generated_TemporalTests_Test {
       if (!(o instanceof Point)) {
         return false;
       }
-      Point rd = ((Point) o);
+      Point rd = (Point) o;
 
 
       if (this.x != rd.getx()) {
@@ -969,526 +642,170 @@ public class Generated_TemporalTests_Test {
     }
   }
   public static final Point point1_ = new Point(true);
-  public static final TemporalValue tempPoint_ = ((_FunctionTypes._return_P0_E0<TemporalValue>) () -> {
-    TemporalValue value = new TemporalValue();
-    value = value.slice(((LocalDate) Generated_TemporalTests_Test.date0_), Generated_TemporalTests_Test.point1_);
-    return value;
-  }).invoke();
+  public static final TemporalValue tempPoint_ = new TemporalValue().slice((LocalDate) Generated_TemporalTests_Test.date0_, Generated_TemporalTests_Test.point1_);
   @Test
   public void t_item0_7838343651187368705() throws Throwable {
-    Assert.assertEquals("Expected: " + (true) + ", but was: " + (Generated_TemporalTests_Test.point1_.equals(Generated_TemporalTests_Test.point1_)), (Object) true, (Object) Generated_TemporalTests_Test.point1_.equals(Generated_TemporalTests_Test.point1_));
+    Assert.assertEquals("Expected: " + true + ", but was: " + Generated_TemporalTests_Test.point1_.equals(Generated_TemporalTests_Test.point1_), (Object) true, (Object) Generated_TemporalTests_Test.point1_.equals(Generated_TemporalTests_Test.point1_));
   }
   @Test
   public void t_item1_7838343651187714045() throws Throwable {
-    Assert.assertEquals("Expected: " + (((_FunctionTypes._return_P0_E0<TemporalValue>) () -> {
-      TemporalValue value = new TemporalValue();
-      value = value.slice(((LocalDate) Generated_TemporalTests_Test.date0_), true);
-      return value;
-    }).invoke()) + ", but was: " + (TemporalValueHelper.perform(Generated_TemporalTests_Test.tempPoint_, Generated_TemporalTests_Test.tempPoint_, ((_FunctionTypes._return_P2_E0<Boolean, Object, Object>) (Object l, Object r) -> EqualsHelper.equals(l, r)), null)), (Object) ((_FunctionTypes._return_P0_E0<TemporalValue>) () -> {
-      TemporalValue value = new TemporalValue();
-      value = value.slice(((LocalDate) Generated_TemporalTests_Test.date0_), true);
-      return value;
-    }).invoke(), (Object) TemporalValueHelper.perform(Generated_TemporalTests_Test.tempPoint_, Generated_TemporalTests_Test.tempPoint_, ((_FunctionTypes._return_P2_E0<Boolean, Object, Object>) (Object l, Object r) -> EqualsHelper.equals(l, r)), null));
+    Assert.assertEquals("Expected: " + new TemporalValue().slice((LocalDate) Generated_TemporalTests_Test.date0_, true) + ", but was: " + TemporalValueHelper.perform(Generated_TemporalTests_Test.tempPoint_, Generated_TemporalTests_Test.tempPoint_, (Object l, Object r) -> EqualsHelper.equals(l, r), null), (Object) new TemporalValue().slice((LocalDate) Generated_TemporalTests_Test.date0_, true), (Object) TemporalValueHelper.perform(Generated_TemporalTests_Test.tempPoint_, Generated_TemporalTests_Test.tempPoint_, (Object l, Object r) -> EqualsHelper.equals(l, r), null));
   }
   @Test
   public void t_item2_7838343651188144551() throws Throwable {
-    Assert.assertEquals("Expected: " + (false) + ", but was: " + (!(Generated_TemporalTests_Test.point1_.equals(Generated_TemporalTests_Test.point1_))), (Object) false, (Object) !(Generated_TemporalTests_Test.point1_.equals(Generated_TemporalTests_Test.point1_)));
+    Assert.assertEquals("Expected: " + false + ", but was: " + (!(Generated_TemporalTests_Test.point1_.equals(Generated_TemporalTests_Test.point1_))), (Object) false, (Object) !(Generated_TemporalTests_Test.point1_.equals(Generated_TemporalTests_Test.point1_)));
   }
   @Test
   public void t_item3_7838343651188165343() throws Throwable {
-    Assert.assertEquals("Expected: " + (((_FunctionTypes._return_P0_E0<TemporalValue>) () -> {
-      TemporalValue value = new TemporalValue();
-      value = value.slice(((LocalDate) Generated_TemporalTests_Test.date0_), false);
-      return value;
-    }).invoke()) + ", but was: " + (TemporalValueHelper.perform(Generated_TemporalTests_Test.tempPoint_, Generated_TemporalTests_Test.tempPoint_, ((_FunctionTypes._return_P2_E0<Boolean, Object, Object>) (Object l, Object r) -> EqualsHelper.notEquals(l, r)), null)), (Object) ((_FunctionTypes._return_P0_E0<TemporalValue>) () -> {
-      TemporalValue value = new TemporalValue();
-      value = value.slice(((LocalDate) Generated_TemporalTests_Test.date0_), false);
-      return value;
-    }).invoke(), (Object) TemporalValueHelper.perform(Generated_TemporalTests_Test.tempPoint_, Generated_TemporalTests_Test.tempPoint_, ((_FunctionTypes._return_P2_E0<Boolean, Object, Object>) (Object l, Object r) -> EqualsHelper.notEquals(l, r)), null));
+    Assert.assertEquals("Expected: " + new TemporalValue().slice((LocalDate) Generated_TemporalTests_Test.date0_, false) + ", but was: " + TemporalValueHelper.perform(Generated_TemporalTests_Test.tempPoint_, Generated_TemporalTests_Test.tempPoint_, (Object l, Object r) -> EqualsHelper.notEquals(l, r), null), (Object) new TemporalValue().slice((LocalDate) Generated_TemporalTests_Test.date0_, false), (Object) TemporalValueHelper.perform(Generated_TemporalTests_Test.tempPoint_, Generated_TemporalTests_Test.tempPoint_, (Object l, Object r) -> EqualsHelper.notEquals(l, r), null));
   }
-  public static final TemporalValue s1_ = ((_FunctionTypes._return_P0_E0<TemporalValue>) () -> {
-    TemporalValue value = new TemporalValue();
-    value = value.slice(((LocalDate) LocalDate.MIN), ((Number) new BigInteger("10")));
-    value = value.slice(((LocalDate) Generated_TemporalTests_Test.date05_), ((Number) new BigInteger("20")));
-    return value;
-  }).invoke();
-  public static final TemporalValue s2_ = ((_FunctionTypes._return_P0_E0<TemporalValue>) () -> {
-    TemporalValue value = new TemporalValue();
-    value = value.slice(((LocalDate) Generated_TemporalTests_Test.date0_), ((Number) new BigInteger("10")));
-    return value;
-  }).invoke();
-  public static final TemporalValue s3_ = ((_FunctionTypes._return_P0_E0<TemporalValue>) () -> {
-    TemporalValue value = new TemporalValue();
-    value = value.slice(((LocalDate) Generated_TemporalTests_Test.date05_), ((Number) new BigInteger("10")));
-    value = value.slice(((LocalDate) Generated_TemporalTests_Test.date10_), ((Number) new BigInteger("30")));
-    return value;
-  }).invoke();
-  public static final TemporalValue s4_ = ((_FunctionTypes._return_P0_E0<TemporalValue>) () -> {
-    TemporalValue value = new TemporalValue();
-    value = value.slice(((LocalDate) Generated_TemporalTests_Test.date05_), ((Number) new BigInteger("10")));
-    value = value.slice(((LocalDate) Generated_TemporalTests_Test.date10_), ((Number) new BigInteger("30")));
-    value = value.slice(((LocalDate) Generated_TemporalTests_Test.date20_), ((Number) new BigInteger("30")));
-    return value;
-  }).invoke();
+  public static final TemporalValue s1_ = new TemporalValue().slice((LocalDate) LocalDate.MIN, (Number) new BigInteger("10")).slice((LocalDate) Generated_TemporalTests_Test.date05_, (Number) new BigInteger("20"));
+  public static final TemporalValue s2_ = new TemporalValue().slice((LocalDate) Generated_TemporalTests_Test.date0_, (Number) new BigInteger("10"));
+  public static final TemporalValue s3_ = new TemporalValue().slice((LocalDate) Generated_TemporalTests_Test.date05_, (Number) new BigInteger("10")).slice((LocalDate) Generated_TemporalTests_Test.date10_, (Number) new BigInteger("30"));
+  public static final TemporalValue s4_ = new TemporalValue().slice((LocalDate) Generated_TemporalTests_Test.date05_, (Number) new BigInteger("10")).slice((LocalDate) Generated_TemporalTests_Test.date10_, (Number) new BigInteger("30")).slice((LocalDate) Generated_TemporalTests_Test.date20_, (Number) new BigInteger("30"));
   @Test
   public void Sorting_temporalList0_3571762280765721191() throws Throwable {
-    Assert.assertEquals("Expected: " + (TreePVector.<TemporalValue>from(new ArrayList<TemporalValue>())) + ", but was: " + (TreePVector.<TemporalValue>from(new ArrayList<TemporalValue>())), (Object) TreePVector.<TemporalValue>from(new ArrayList<TemporalValue>()), (Object) TreePVector.<TemporalValue>from(new ArrayList<TemporalValue>()));
+    Assert.assertEquals("Expected: " + TreePVector.<TemporalValue>from(new ArrayList<TemporalValue>()) + ", but was: " + TreePVector.<TemporalValue>from(new ArrayList<TemporalValue>()), (Object) TreePVector.<TemporalValue>from(new ArrayList<TemporalValue>()), (Object) TreePVector.<TemporalValue>from(new ArrayList<TemporalValue>()));
   }
   @Test
   public void Sorting_temporalList1_3571762280765721200() throws Throwable {
-    Assert.assertEquals("Expected: " + (((_FunctionTypes._return_P0_E0<TreePVector<TemporalValue>>) () -> {
-      TreePVector<TemporalValue> tpv = TreePVector.empty();
-      tpv = tpv.plus(Generated_TemporalTests_Test.s1_);
-      return tpv;
-    }).invoke()) + ", but was: " + (((_FunctionTypes._return_P0_E0<TreePVector<TemporalValue>>) () -> {
-      TreePVector<TemporalValue> tpv = TreePVector.empty();
-      tpv = tpv.plus(Generated_TemporalTests_Test.s1_);
-      return tpv;
-    }).invoke()), (Object) ((_FunctionTypes._return_P0_E0<TreePVector<TemporalValue>>) () -> {
-      TreePVector<TemporalValue> tpv = TreePVector.empty();
-      tpv = tpv.plus(Generated_TemporalTests_Test.s1_);
-      return tpv;
-    }).invoke(), (Object) ((_FunctionTypes._return_P0_E0<TreePVector<TemporalValue>>) () -> {
-      TreePVector<TemporalValue> tpv = TreePVector.empty();
-      tpv = tpv.plus(Generated_TemporalTests_Test.s1_);
-      return tpv;
-    }).invoke());
+    Assert.assertEquals("Expected: " + TreePVector.<TemporalValue>empty().plus(Generated_TemporalTests_Test.s1_) + ", but was: " + TreePVector.<TemporalValue>empty().plus(Generated_TemporalTests_Test.s1_), (Object) TreePVector.<TemporalValue>empty().plus(Generated_TemporalTests_Test.s1_), (Object) TreePVector.<TemporalValue>empty().plus(Generated_TemporalTests_Test.s1_));
   }
   @Test
   public void Sorting_temporalList2_3571762280765721207() throws Throwable {
-    Assert.assertEquals("Expected: " + (((_FunctionTypes._return_P0_E0<TreePVector<TemporalValue>>) () -> {
-      TreePVector<TemporalValue> tpv = TreePVector.empty();
-      tpv = tpv.plus(Generated_TemporalTests_Test.s1_);
-      tpv = tpv.plus(Generated_TemporalTests_Test.s2_);
-      return tpv;
-    }).invoke()) + ", but was: " + (((_FunctionTypes._return_P0_E0<TreePVector<TemporalValue>>) () -> {
-      TreePVector<TemporalValue> tpv = TreePVector.empty();
-      tpv = tpv.plus(Generated_TemporalTests_Test.s1_);
-      tpv = tpv.plus(Generated_TemporalTests_Test.s2_);
-      return tpv;
-    }).invoke()), (Object) ((_FunctionTypes._return_P0_E0<TreePVector<TemporalValue>>) () -> {
-      TreePVector<TemporalValue> tpv = TreePVector.empty();
-      tpv = tpv.plus(Generated_TemporalTests_Test.s1_);
-      tpv = tpv.plus(Generated_TemporalTests_Test.s2_);
-      return tpv;
-    }).invoke(), (Object) ((_FunctionTypes._return_P0_E0<TreePVector<TemporalValue>>) () -> {
-      TreePVector<TemporalValue> tpv = TreePVector.empty();
-      tpv = tpv.plus(Generated_TemporalTests_Test.s1_);
-      tpv = tpv.plus(Generated_TemporalTests_Test.s2_);
-      return tpv;
-    }).invoke());
+    Assert.assertEquals("Expected: " + TreePVector.<TemporalValue>empty().plus(Generated_TemporalTests_Test.s1_).plus(Generated_TemporalTests_Test.s2_) + ", but was: " + TreePVector.<TemporalValue>empty().plus(Generated_TemporalTests_Test.s1_).plus(Generated_TemporalTests_Test.s2_), (Object) TreePVector.<TemporalValue>empty().plus(Generated_TemporalTests_Test.s1_).plus(Generated_TemporalTests_Test.s2_), (Object) TreePVector.<TemporalValue>empty().plus(Generated_TemporalTests_Test.s1_).plus(Generated_TemporalTests_Test.s2_));
   }
   @Test
   public void Sorting_temporalList3_788506343946576361() throws Throwable {
-    Assert.assertEquals("Expected: " + (((_FunctionTypes._return_P0_E0<TreePVector<TemporalValue>>) () -> {
-      TreePVector<TemporalValue> tpv = TreePVector.empty();
-      tpv = tpv.plus(Generated_TemporalTests_Test.s1_);
-      tpv = tpv.plus(Generated_TemporalTests_Test.s2_);
-      tpv = tpv.plus(Generated_TemporalTests_Test.s3_);
-      return tpv;
-    }).invoke()) + ", but was: " + (((_FunctionTypes._return_P0_E0<TreePVector<TemporalValue>>) () -> {
-      TreePVector<TemporalValue> tpv = TreePVector.empty();
-      tpv = tpv.plus(Generated_TemporalTests_Test.s1_);
-      tpv = tpv.plus(Generated_TemporalTests_Test.s2_);
-      tpv = tpv.plus(Generated_TemporalTests_Test.s3_);
-      return tpv;
-    }).invoke()), (Object) ((_FunctionTypes._return_P0_E0<TreePVector<TemporalValue>>) () -> {
-      TreePVector<TemporalValue> tpv = TreePVector.empty();
-      tpv = tpv.plus(Generated_TemporalTests_Test.s1_);
-      tpv = tpv.plus(Generated_TemporalTests_Test.s2_);
-      tpv = tpv.plus(Generated_TemporalTests_Test.s3_);
-      return tpv;
-    }).invoke(), (Object) ((_FunctionTypes._return_P0_E0<TreePVector<TemporalValue>>) () -> {
-      TreePVector<TemporalValue> tpv = TreePVector.empty();
-      tpv = tpv.plus(Generated_TemporalTests_Test.s1_);
-      tpv = tpv.plus(Generated_TemporalTests_Test.s2_);
-      tpv = tpv.plus(Generated_TemporalTests_Test.s3_);
-      return tpv;
-    }).invoke());
+    Assert.assertEquals("Expected: " + TreePVector.<TemporalValue>empty().plus(Generated_TemporalTests_Test.s1_).plus(Generated_TemporalTests_Test.s2_).plus(Generated_TemporalTests_Test.s3_) + ", but was: " + TreePVector.<TemporalValue>empty().plus(Generated_TemporalTests_Test.s1_).plus(Generated_TemporalTests_Test.s2_).plus(Generated_TemporalTests_Test.s3_), (Object) TreePVector.<TemporalValue>empty().plus(Generated_TemporalTests_Test.s1_).plus(Generated_TemporalTests_Test.s2_).plus(Generated_TemporalTests_Test.s3_), (Object) TreePVector.<TemporalValue>empty().plus(Generated_TemporalTests_Test.s1_).plus(Generated_TemporalTests_Test.s2_).plus(Generated_TemporalTests_Test.s3_));
   }
   @Test
   public void Sorting_temporalList4_8432595092502362009() throws Throwable {
-    Assert.assertEquals("Expected: " + (((_FunctionTypes._return_P0_E0<TreePVector<TemporalValue>>) () -> {
-      TreePVector<TemporalValue> tpv = TreePVector.empty();
-      tpv = tpv.plus(Generated_TemporalTests_Test.s1_);
-      tpv = tpv.plus(Generated_TemporalTests_Test.s2_);
-      tpv = tpv.plus(Generated_TemporalTests_Test.s3_);
-      tpv = tpv.plus(Generated_TemporalTests_Test.s4_);
-      return tpv;
-    }).invoke()) + ", but was: " + (((_FunctionTypes._return_P0_E0<TreePVector<TemporalValue>>) () -> {
-      TreePVector<TemporalValue> tpv = TreePVector.empty();
-      tpv = tpv.plus(Generated_TemporalTests_Test.s1_);
-      tpv = tpv.plus(Generated_TemporalTests_Test.s2_);
-      tpv = tpv.plus(Generated_TemporalTests_Test.s3_);
-      tpv = tpv.plus(Generated_TemporalTests_Test.s4_);
-      return tpv;
-    }).invoke()), (Object) ((_FunctionTypes._return_P0_E0<TreePVector<TemporalValue>>) () -> {
-      TreePVector<TemporalValue> tpv = TreePVector.empty();
-      tpv = tpv.plus(Generated_TemporalTests_Test.s1_);
-      tpv = tpv.plus(Generated_TemporalTests_Test.s2_);
-      tpv = tpv.plus(Generated_TemporalTests_Test.s3_);
-      tpv = tpv.plus(Generated_TemporalTests_Test.s4_);
-      return tpv;
-    }).invoke(), (Object) ((_FunctionTypes._return_P0_E0<TreePVector<TemporalValue>>) () -> {
-      TreePVector<TemporalValue> tpv = TreePVector.empty();
-      tpv = tpv.plus(Generated_TemporalTests_Test.s1_);
-      tpv = tpv.plus(Generated_TemporalTests_Test.s2_);
-      tpv = tpv.plus(Generated_TemporalTests_Test.s3_);
-      tpv = tpv.plus(Generated_TemporalTests_Test.s4_);
-      return tpv;
-    }).invoke());
+    Assert.assertEquals("Expected: " + TreePVector.<TemporalValue>empty().plus(Generated_TemporalTests_Test.s1_).plus(Generated_TemporalTests_Test.s2_).plus(Generated_TemporalTests_Test.s3_).plus(Generated_TemporalTests_Test.s4_) + ", but was: " + TreePVector.<TemporalValue>empty().plus(Generated_TemporalTests_Test.s1_).plus(Generated_TemporalTests_Test.s2_).plus(Generated_TemporalTests_Test.s3_).plus(Generated_TemporalTests_Test.s4_), (Object) TreePVector.<TemporalValue>empty().plus(Generated_TemporalTests_Test.s1_).plus(Generated_TemporalTests_Test.s2_).plus(Generated_TemporalTests_Test.s3_).plus(Generated_TemporalTests_Test.s4_), (Object) TreePVector.<TemporalValue>empty().plus(Generated_TemporalTests_Test.s1_).plus(Generated_TemporalTests_Test.s2_).plus(Generated_TemporalTests_Test.s3_).plus(Generated_TemporalTests_Test.s4_));
   }
   @Test
   public void Sorting_item7_2143211017902290124() throws Throwable {
-    Assert.assertEquals("Expected: " + (TreePVector.<TemporalValue>from(new ArrayList<TemporalValue>())) + ", but was: " + (((_FunctionTypes._return_P0_E0<PVector<TemporalValue>>) () -> {
-      return (PVector<TemporalValue>) TreePVector.<TemporalValue>from(((PCollection<TemporalValue>) TreePVector.<TemporalValue>from(new ArrayList<TemporalValue>())).stream().filter(OH.predicate()).sorted(new Comparator<TemporalValue>() {
-        public int compare(TemporalValue p0, TemporalValue p1) {
-          return OH.compare(p0, p1);
-        }
-      }).collect(Collectors.<TemporalValue>toList()));
-    }).invoke()), (Object) TreePVector.<TemporalValue>from(new ArrayList<TemporalValue>()), (Object) ((_FunctionTypes._return_P0_E0<PVector<TemporalValue>>) () -> {
-      return (PVector<TemporalValue>) TreePVector.<TemporalValue>from(((PCollection<TemporalValue>) TreePVector.<TemporalValue>from(new ArrayList<TemporalValue>())).stream().filter(OH.predicate()).sorted(new Comparator<TemporalValue>() {
-        public int compare(TemporalValue p0, TemporalValue p1) {
-          return OH.compare(p0, p1);
-        }
-      }).collect(Collectors.<TemporalValue>toList()));
-    }).invoke());
+    Assert.assertEquals("Expected: " + TreePVector.<TemporalValue>from(new ArrayList<TemporalValue>()) + ", but was: " + (PVector<TemporalValue>) TreePVector.<TemporalValue>from(((PCollection<TemporalValue>) TreePVector.<TemporalValue>from(new ArrayList<TemporalValue>())).stream().filter(OH.predicate()).sorted(new Comparator<TemporalValue>() {
+      public int compare(TemporalValue p0, TemporalValue p1) {
+        return OH.compare(p0, p1);
+      }
+    }).collect(Collectors.<TemporalValue>toList())), (Object) TreePVector.<TemporalValue>from(new ArrayList<TemporalValue>()), (Object) (PVector<TemporalValue>) TreePVector.<TemporalValue>from(((PCollection<TemporalValue>) TreePVector.<TemporalValue>from(new ArrayList<TemporalValue>())).stream().filter(OH.predicate()).sorted(new Comparator<TemporalValue>() {
+      public int compare(TemporalValue p0, TemporalValue p1) {
+        return OH.compare(p0, p1);
+      }
+    }).collect(Collectors.<TemporalValue>toList())));
   }
   @Test
   public void Sorting_item8_2143211017902291809() throws Throwable {
-    Assert.assertEquals("Expected: " + (((_FunctionTypes._return_P0_E0<TreePVector<TemporalValue>>) () -> {
-      TreePVector<TemporalValue> tpv = TreePVector.empty();
-      tpv = tpv.plus(Generated_TemporalTests_Test.s1_);
-      return tpv;
-    }).invoke()) + ", but was: " + (((_FunctionTypes._return_P0_E0<PVector<TemporalValue>>) () -> {
-      return (PVector<TemporalValue>) TreePVector.<TemporalValue>from(((PCollection<TemporalValue>) ((_FunctionTypes._return_P0_E0<TreePVector<TemporalValue>>) () -> {
-        TreePVector<TemporalValue> tpv = TreePVector.empty();
-        tpv = tpv.plus(Generated_TemporalTests_Test.s1_);
-        return tpv;
-      }).invoke()).stream().filter(OH.predicate()).sorted(new Comparator<TemporalValue>() {
-        public int compare(TemporalValue p0, TemporalValue p1) {
-          return OH.compare(p0, p1);
-        }
-      }).collect(Collectors.<TemporalValue>toList()));
-    }).invoke()), (Object) ((_FunctionTypes._return_P0_E0<TreePVector<TemporalValue>>) () -> {
-      TreePVector<TemporalValue> tpv = TreePVector.empty();
-      tpv = tpv.plus(Generated_TemporalTests_Test.s1_);
-      return tpv;
-    }).invoke(), (Object) ((_FunctionTypes._return_P0_E0<PVector<TemporalValue>>) () -> {
-      return (PVector<TemporalValue>) TreePVector.<TemporalValue>from(((PCollection<TemporalValue>) ((_FunctionTypes._return_P0_E0<TreePVector<TemporalValue>>) () -> {
-        TreePVector<TemporalValue> tpv = TreePVector.empty();
-        tpv = tpv.plus(Generated_TemporalTests_Test.s1_);
-        return tpv;
-      }).invoke()).stream().filter(OH.predicate()).sorted(new Comparator<TemporalValue>() {
-        public int compare(TemporalValue p0, TemporalValue p1) {
-          return OH.compare(p0, p1);
-        }
-      }).collect(Collectors.<TemporalValue>toList()));
-    }).invoke());
+    Assert.assertEquals("Expected: " + TreePVector.<TemporalValue>empty().plus(Generated_TemporalTests_Test.s1_) + ", but was: " + (PVector<TemporalValue>) TreePVector.<TemporalValue>from(((PCollection<TemporalValue>) TreePVector.<TemporalValue>empty().plus(Generated_TemporalTests_Test.s1_)).stream().filter(OH.predicate()).sorted(new Comparator<TemporalValue>() {
+      public int compare(TemporalValue p0, TemporalValue p1) {
+        return OH.compare(p0, p1);
+      }
+    }).collect(Collectors.<TemporalValue>toList())), (Object) TreePVector.<TemporalValue>empty().plus(Generated_TemporalTests_Test.s1_), (Object) (PVector<TemporalValue>) TreePVector.<TemporalValue>from(((PCollection<TemporalValue>) TreePVector.<TemporalValue>empty().plus(Generated_TemporalTests_Test.s1_)).stream().filter(OH.predicate()).sorted(new Comparator<TemporalValue>() {
+      public int compare(TemporalValue p0, TemporalValue p1) {
+        return OH.compare(p0, p1);
+      }
+    }).collect(Collectors.<TemporalValue>toList())));
   }
   @Test
   public void Sorting_item9_5005695164082923047() throws Throwable {
-    Assert.assertEquals("Expected: " + (((_FunctionTypes._return_P0_E0<TreePVector<TemporalValue>>) () -> {
-      TreePVector<TemporalValue> tpv = TreePVector.empty();
-      tpv = tpv.plus(Generated_TemporalTests_Test.s1_);
-      tpv = tpv.plus(Generated_TemporalTests_Test.s2_);
-      return tpv;
-    }).invoke()) + ", but was: " + (((_FunctionTypes._return_P0_E0<PVector<TemporalValue>>) () -> {
-      return (PVector<TemporalValue>) TreePVector.<TemporalValue>from(((PCollection<TemporalValue>) ((_FunctionTypes._return_P0_E0<TreePVector<TemporalValue>>) () -> {
-        TreePVector<TemporalValue> tpv = TreePVector.empty();
-        tpv = tpv.plus(Generated_TemporalTests_Test.s1_);
-        tpv = tpv.plus(Generated_TemporalTests_Test.s2_);
-        return tpv;
-      }).invoke()).stream().filter(OH.predicate()).sorted(new Comparator<TemporalValue>() {
-        public int compare(TemporalValue p0, TemporalValue p1) {
-          return OH.compare(p0, p1);
-        }
-      }).collect(Collectors.<TemporalValue>toList()));
-    }).invoke()), (Object) ((_FunctionTypes._return_P0_E0<TreePVector<TemporalValue>>) () -> {
-      TreePVector<TemporalValue> tpv = TreePVector.empty();
-      tpv = tpv.plus(Generated_TemporalTests_Test.s1_);
-      tpv = tpv.plus(Generated_TemporalTests_Test.s2_);
-      return tpv;
-    }).invoke(), (Object) ((_FunctionTypes._return_P0_E0<PVector<TemporalValue>>) () -> {
-      return (PVector<TemporalValue>) TreePVector.<TemporalValue>from(((PCollection<TemporalValue>) ((_FunctionTypes._return_P0_E0<TreePVector<TemporalValue>>) () -> {
-        TreePVector<TemporalValue> tpv = TreePVector.empty();
-        tpv = tpv.plus(Generated_TemporalTests_Test.s1_);
-        tpv = tpv.plus(Generated_TemporalTests_Test.s2_);
-        return tpv;
-      }).invoke()).stream().filter(OH.predicate()).sorted(new Comparator<TemporalValue>() {
-        public int compare(TemporalValue p0, TemporalValue p1) {
-          return OH.compare(p0, p1);
-        }
-      }).collect(Collectors.<TemporalValue>toList()));
-    }).invoke());
+    Assert.assertEquals("Expected: " + TreePVector.<TemporalValue>empty().plus(Generated_TemporalTests_Test.s1_).plus(Generated_TemporalTests_Test.s2_) + ", but was: " + (PVector<TemporalValue>) TreePVector.<TemporalValue>from(((PCollection<TemporalValue>) TreePVector.<TemporalValue>empty().plus(Generated_TemporalTests_Test.s1_).plus(Generated_TemporalTests_Test.s2_)).stream().filter(OH.predicate()).sorted(new Comparator<TemporalValue>() {
+      public int compare(TemporalValue p0, TemporalValue p1) {
+        return OH.compare(p0, p1);
+      }
+    }).collect(Collectors.<TemporalValue>toList())), (Object) TreePVector.<TemporalValue>empty().plus(Generated_TemporalTests_Test.s1_).plus(Generated_TemporalTests_Test.s2_), (Object) (PVector<TemporalValue>) TreePVector.<TemporalValue>from(((PCollection<TemporalValue>) TreePVector.<TemporalValue>empty().plus(Generated_TemporalTests_Test.s1_).plus(Generated_TemporalTests_Test.s2_)).stream().filter(OH.predicate()).sorted(new Comparator<TemporalValue>() {
+      public int compare(TemporalValue p0, TemporalValue p1) {
+        return OH.compare(p0, p1);
+      }
+    }).collect(Collectors.<TemporalValue>toList())));
   }
   @Test
   public void Sorting_item10_788506343946576606() throws Throwable {
-    Assert.assertEquals("Expected: " + (((_FunctionTypes._return_P0_E0<TreePVector<TemporalValue>>) () -> {
-      TreePVector<TemporalValue> tpv = TreePVector.empty();
-      tpv = tpv.plus(Generated_TemporalTests_Test.s1_);
-      tpv = tpv.plus(Generated_TemporalTests_Test.s2_);
-      tpv = tpv.plus(Generated_TemporalTests_Test.s3_);
-      return tpv;
-    }).invoke()) + ", but was: " + (((_FunctionTypes._return_P0_E0<PVector<TemporalValue>>) () -> {
-      return (PVector<TemporalValue>) TreePVector.<TemporalValue>from(((PCollection<TemporalValue>) ((_FunctionTypes._return_P0_E0<TreePVector<TemporalValue>>) () -> {
-        TreePVector<TemporalValue> tpv = TreePVector.empty();
-        tpv = tpv.plus(Generated_TemporalTests_Test.s1_);
-        tpv = tpv.plus(Generated_TemporalTests_Test.s2_);
-        tpv = tpv.plus(Generated_TemporalTests_Test.s3_);
-        return tpv;
-      }).invoke()).stream().filter(OH.predicate()).sorted(new Comparator<TemporalValue>() {
-        public int compare(TemporalValue p0, TemporalValue p1) {
-          return OH.compare(p0, p1);
-        }
-      }).collect(Collectors.<TemporalValue>toList()));
-    }).invoke()), (Object) ((_FunctionTypes._return_P0_E0<TreePVector<TemporalValue>>) () -> {
-      TreePVector<TemporalValue> tpv = TreePVector.empty();
-      tpv = tpv.plus(Generated_TemporalTests_Test.s1_);
-      tpv = tpv.plus(Generated_TemporalTests_Test.s2_);
-      tpv = tpv.plus(Generated_TemporalTests_Test.s3_);
-      return tpv;
-    }).invoke(), (Object) ((_FunctionTypes._return_P0_E0<PVector<TemporalValue>>) () -> {
-      return (PVector<TemporalValue>) TreePVector.<TemporalValue>from(((PCollection<TemporalValue>) ((_FunctionTypes._return_P0_E0<TreePVector<TemporalValue>>) () -> {
-        TreePVector<TemporalValue> tpv = TreePVector.empty();
-        tpv = tpv.plus(Generated_TemporalTests_Test.s1_);
-        tpv = tpv.plus(Generated_TemporalTests_Test.s2_);
-        tpv = tpv.plus(Generated_TemporalTests_Test.s3_);
-        return tpv;
-      }).invoke()).stream().filter(OH.predicate()).sorted(new Comparator<TemporalValue>() {
-        public int compare(TemporalValue p0, TemporalValue p1) {
-          return OH.compare(p0, p1);
-        }
-      }).collect(Collectors.<TemporalValue>toList()));
-    }).invoke());
+    Assert.assertEquals("Expected: " + TreePVector.<TemporalValue>empty().plus(Generated_TemporalTests_Test.s1_).plus(Generated_TemporalTests_Test.s2_).plus(Generated_TemporalTests_Test.s3_) + ", but was: " + (PVector<TemporalValue>) TreePVector.<TemporalValue>from(((PCollection<TemporalValue>) TreePVector.<TemporalValue>empty().plus(Generated_TemporalTests_Test.s1_).plus(Generated_TemporalTests_Test.s2_).plus(Generated_TemporalTests_Test.s3_)).stream().filter(OH.predicate()).sorted(new Comparator<TemporalValue>() {
+      public int compare(TemporalValue p0, TemporalValue p1) {
+        return OH.compare(p0, p1);
+      }
+    }).collect(Collectors.<TemporalValue>toList())), (Object) TreePVector.<TemporalValue>empty().plus(Generated_TemporalTests_Test.s1_).plus(Generated_TemporalTests_Test.s2_).plus(Generated_TemporalTests_Test.s3_), (Object) (PVector<TemporalValue>) TreePVector.<TemporalValue>from(((PCollection<TemporalValue>) TreePVector.<TemporalValue>empty().plus(Generated_TemporalTests_Test.s1_).plus(Generated_TemporalTests_Test.s2_).plus(Generated_TemporalTests_Test.s3_)).stream().filter(OH.predicate()).sorted(new Comparator<TemporalValue>() {
+      public int compare(TemporalValue p0, TemporalValue p1) {
+        return OH.compare(p0, p1);
+      }
+    }).collect(Collectors.<TemporalValue>toList())));
   }
   @Test
   public void Sorting_item11_8432595092502415844() throws Throwable {
-    Assert.assertEquals("Expected: " + (((_FunctionTypes._return_P0_E0<TreePVector<TemporalValue>>) () -> {
-      TreePVector<TemporalValue> tpv = TreePVector.empty();
-      tpv = tpv.plus(Generated_TemporalTests_Test.s1_);
-      tpv = tpv.plus(Generated_TemporalTests_Test.s2_);
-      tpv = tpv.plus(Generated_TemporalTests_Test.s3_);
-      tpv = tpv.plus(Generated_TemporalTests_Test.s4_);
-      return tpv;
-    }).invoke()) + ", but was: " + (((_FunctionTypes._return_P0_E0<PVector<TemporalValue>>) () -> {
-      return (PVector<TemporalValue>) TreePVector.<TemporalValue>from(((PCollection<TemporalValue>) ((_FunctionTypes._return_P0_E0<TreePVector<TemporalValue>>) () -> {
-        TreePVector<TemporalValue> tpv = TreePVector.empty();
-        tpv = tpv.plus(Generated_TemporalTests_Test.s1_);
-        tpv = tpv.plus(Generated_TemporalTests_Test.s2_);
-        tpv = tpv.plus(Generated_TemporalTests_Test.s3_);
-        tpv = tpv.plus(Generated_TemporalTests_Test.s4_);
-        return tpv;
-      }).invoke()).stream().filter(OH.predicate()).sorted(new Comparator<TemporalValue>() {
-        public int compare(TemporalValue p0, TemporalValue p1) {
-          return OH.compare(p0, p1);
-        }
-      }).collect(Collectors.<TemporalValue>toList()));
-    }).invoke()), (Object) ((_FunctionTypes._return_P0_E0<TreePVector<TemporalValue>>) () -> {
-      TreePVector<TemporalValue> tpv = TreePVector.empty();
-      tpv = tpv.plus(Generated_TemporalTests_Test.s1_);
-      tpv = tpv.plus(Generated_TemporalTests_Test.s2_);
-      tpv = tpv.plus(Generated_TemporalTests_Test.s3_);
-      tpv = tpv.plus(Generated_TemporalTests_Test.s4_);
-      return tpv;
-    }).invoke(), (Object) ((_FunctionTypes._return_P0_E0<PVector<TemporalValue>>) () -> {
-      return (PVector<TemporalValue>) TreePVector.<TemporalValue>from(((PCollection<TemporalValue>) ((_FunctionTypes._return_P0_E0<TreePVector<TemporalValue>>) () -> {
-        TreePVector<TemporalValue> tpv = TreePVector.empty();
-        tpv = tpv.plus(Generated_TemporalTests_Test.s1_);
-        tpv = tpv.plus(Generated_TemporalTests_Test.s2_);
-        tpv = tpv.plus(Generated_TemporalTests_Test.s3_);
-        tpv = tpv.plus(Generated_TemporalTests_Test.s4_);
-        return tpv;
-      }).invoke()).stream().filter(OH.predicate()).sorted(new Comparator<TemporalValue>() {
-        public int compare(TemporalValue p0, TemporalValue p1) {
-          return OH.compare(p0, p1);
-        }
-      }).collect(Collectors.<TemporalValue>toList()));
-    }).invoke());
+    Assert.assertEquals("Expected: " + TreePVector.<TemporalValue>empty().plus(Generated_TemporalTests_Test.s1_).plus(Generated_TemporalTests_Test.s2_).plus(Generated_TemporalTests_Test.s3_).plus(Generated_TemporalTests_Test.s4_) + ", but was: " + (PVector<TemporalValue>) TreePVector.<TemporalValue>from(((PCollection<TemporalValue>) TreePVector.<TemporalValue>empty().plus(Generated_TemporalTests_Test.s1_).plus(Generated_TemporalTests_Test.s2_).plus(Generated_TemporalTests_Test.s3_).plus(Generated_TemporalTests_Test.s4_)).stream().filter(OH.predicate()).sorted(new Comparator<TemporalValue>() {
+      public int compare(TemporalValue p0, TemporalValue p1) {
+        return OH.compare(p0, p1);
+      }
+    }).collect(Collectors.<TemporalValue>toList())), (Object) TreePVector.<TemporalValue>empty().plus(Generated_TemporalTests_Test.s1_).plus(Generated_TemporalTests_Test.s2_).plus(Generated_TemporalTests_Test.s3_).plus(Generated_TemporalTests_Test.s4_), (Object) (PVector<TemporalValue>) TreePVector.<TemporalValue>from(((PCollection<TemporalValue>) TreePVector.<TemporalValue>empty().plus(Generated_TemporalTests_Test.s1_).plus(Generated_TemporalTests_Test.s2_).plus(Generated_TemporalTests_Test.s3_).plus(Generated_TemporalTests_Test.s4_)).stream().filter(OH.predicate()).sorted(new Comparator<TemporalValue>() {
+      public int compare(TemporalValue p0, TemporalValue p1) {
+        return OH.compare(p0, p1);
+      }
+    }).collect(Collectors.<TemporalValue>toList())));
   }
   @Test
   public void Sorting_item13_5005695164083462014() throws Throwable {
-    Assert.assertEquals("Expected: " + (TreePVector.<TemporalValue>from(new ArrayList<TemporalValue>())) + ", but was: " + (((_FunctionTypes._return_P0_E0<PVector<TemporalValue>>) () -> {
-      return (PVector<TemporalValue>) TreePVector.<TemporalValue>from(((PCollection<TemporalValue>) TreePVector.<TemporalValue>from(new ArrayList<TemporalValue>())).stream().filter(OH.predicate()).sorted(new Comparator<TemporalValue>() {
-        public int compare(TemporalValue p0, TemporalValue p1) {
-          return OH.compare(p1, p0);
-        }
-      }).collect(Collectors.<TemporalValue>toList()));
-    }).invoke()), (Object) TreePVector.<TemporalValue>from(new ArrayList<TemporalValue>()), (Object) ((_FunctionTypes._return_P0_E0<PVector<TemporalValue>>) () -> {
-      return (PVector<TemporalValue>) TreePVector.<TemporalValue>from(((PCollection<TemporalValue>) TreePVector.<TemporalValue>from(new ArrayList<TemporalValue>())).stream().filter(OH.predicate()).sorted(new Comparator<TemporalValue>() {
-        public int compare(TemporalValue p0, TemporalValue p1) {
-          return OH.compare(p1, p0);
-        }
-      }).collect(Collectors.<TemporalValue>toList()));
-    }).invoke());
+    Assert.assertEquals("Expected: " + TreePVector.<TemporalValue>from(new ArrayList<TemporalValue>()) + ", but was: " + (PVector<TemporalValue>) TreePVector.<TemporalValue>from(((PCollection<TemporalValue>) TreePVector.<TemporalValue>from(new ArrayList<TemporalValue>())).stream().filter(OH.predicate()).sorted(new Comparator<TemporalValue>() {
+      public int compare(TemporalValue p0, TemporalValue p1) {
+        return OH.compare(p1, p0);
+      }
+    }).collect(Collectors.<TemporalValue>toList())), (Object) TreePVector.<TemporalValue>from(new ArrayList<TemporalValue>()), (Object) (PVector<TemporalValue>) TreePVector.<TemporalValue>from(((PCollection<TemporalValue>) TreePVector.<TemporalValue>from(new ArrayList<TemporalValue>())).stream().filter(OH.predicate()).sorted(new Comparator<TemporalValue>() {
+      public int compare(TemporalValue p0, TemporalValue p1) {
+        return OH.compare(p1, p0);
+      }
+    }).collect(Collectors.<TemporalValue>toList())));
   }
   @Test
   public void Sorting_item14_5005695164083462020() throws Throwable {
-    Assert.assertEquals("Expected: " + (((_FunctionTypes._return_P0_E0<TreePVector<TemporalValue>>) () -> {
-      TreePVector<TemporalValue> tpv = TreePVector.empty();
-      tpv = tpv.plus(Generated_TemporalTests_Test.s1_);
-      return tpv;
-    }).invoke()) + ", but was: " + (((_FunctionTypes._return_P0_E0<PVector<TemporalValue>>) () -> {
-      return (PVector<TemporalValue>) TreePVector.<TemporalValue>from(((PCollection<TemporalValue>) ((_FunctionTypes._return_P0_E0<TreePVector<TemporalValue>>) () -> {
-        TreePVector<TemporalValue> tpv = TreePVector.empty();
-        tpv = tpv.plus(Generated_TemporalTests_Test.s1_);
-        return tpv;
-      }).invoke()).stream().filter(OH.predicate()).sorted(new Comparator<TemporalValue>() {
-        public int compare(TemporalValue p0, TemporalValue p1) {
-          return OH.compare(p1, p0);
-        }
-      }).collect(Collectors.<TemporalValue>toList()));
-    }).invoke()), (Object) ((_FunctionTypes._return_P0_E0<TreePVector<TemporalValue>>) () -> {
-      TreePVector<TemporalValue> tpv = TreePVector.empty();
-      tpv = tpv.plus(Generated_TemporalTests_Test.s1_);
-      return tpv;
-    }).invoke(), (Object) ((_FunctionTypes._return_P0_E0<PVector<TemporalValue>>) () -> {
-      return (PVector<TemporalValue>) TreePVector.<TemporalValue>from(((PCollection<TemporalValue>) ((_FunctionTypes._return_P0_E0<TreePVector<TemporalValue>>) () -> {
-        TreePVector<TemporalValue> tpv = TreePVector.empty();
-        tpv = tpv.plus(Generated_TemporalTests_Test.s1_);
-        return tpv;
-      }).invoke()).stream().filter(OH.predicate()).sorted(new Comparator<TemporalValue>() {
-        public int compare(TemporalValue p0, TemporalValue p1) {
-          return OH.compare(p1, p0);
-        }
-      }).collect(Collectors.<TemporalValue>toList()));
-    }).invoke());
+    Assert.assertEquals("Expected: " + TreePVector.<TemporalValue>empty().plus(Generated_TemporalTests_Test.s1_) + ", but was: " + (PVector<TemporalValue>) TreePVector.<TemporalValue>from(((PCollection<TemporalValue>) TreePVector.<TemporalValue>empty().plus(Generated_TemporalTests_Test.s1_)).stream().filter(OH.predicate()).sorted(new Comparator<TemporalValue>() {
+      public int compare(TemporalValue p0, TemporalValue p1) {
+        return OH.compare(p1, p0);
+      }
+    }).collect(Collectors.<TemporalValue>toList())), (Object) TreePVector.<TemporalValue>empty().plus(Generated_TemporalTests_Test.s1_), (Object) (PVector<TemporalValue>) TreePVector.<TemporalValue>from(((PCollection<TemporalValue>) TreePVector.<TemporalValue>empty().plus(Generated_TemporalTests_Test.s1_)).stream().filter(OH.predicate()).sorted(new Comparator<TemporalValue>() {
+      public int compare(TemporalValue p0, TemporalValue p1) {
+        return OH.compare(p1, p0);
+      }
+    }).collect(Collectors.<TemporalValue>toList())));
   }
   @Test
   public void Sorting_item15_5005695164083462026() throws Throwable {
-    Assert.assertEquals("Expected: " + (((_FunctionTypes._return_P0_E0<TreePVector<TemporalValue>>) () -> {
-      TreePVector<TemporalValue> tpv = TreePVector.empty();
-      tpv = tpv.plus(Generated_TemporalTests_Test.s2_);
-      tpv = tpv.plus(Generated_TemporalTests_Test.s1_);
-      return tpv;
-    }).invoke()) + ", but was: " + (((_FunctionTypes._return_P0_E0<PVector<TemporalValue>>) () -> {
-      return (PVector<TemporalValue>) TreePVector.<TemporalValue>from(((PCollection<TemporalValue>) ((_FunctionTypes._return_P0_E0<TreePVector<TemporalValue>>) () -> {
-        TreePVector<TemporalValue> tpv = TreePVector.empty();
-        tpv = tpv.plus(Generated_TemporalTests_Test.s1_);
-        tpv = tpv.plus(Generated_TemporalTests_Test.s2_);
-        return tpv;
-      }).invoke()).stream().filter(OH.predicate()).sorted(new Comparator<TemporalValue>() {
-        public int compare(TemporalValue p0, TemporalValue p1) {
-          return OH.compare(p1, p0);
-        }
-      }).collect(Collectors.<TemporalValue>toList()));
-    }).invoke()), (Object) ((_FunctionTypes._return_P0_E0<TreePVector<TemporalValue>>) () -> {
-      TreePVector<TemporalValue> tpv = TreePVector.empty();
-      tpv = tpv.plus(Generated_TemporalTests_Test.s2_);
-      tpv = tpv.plus(Generated_TemporalTests_Test.s1_);
-      return tpv;
-    }).invoke(), (Object) ((_FunctionTypes._return_P0_E0<PVector<TemporalValue>>) () -> {
-      return (PVector<TemporalValue>) TreePVector.<TemporalValue>from(((PCollection<TemporalValue>) ((_FunctionTypes._return_P0_E0<TreePVector<TemporalValue>>) () -> {
-        TreePVector<TemporalValue> tpv = TreePVector.empty();
-        tpv = tpv.plus(Generated_TemporalTests_Test.s1_);
-        tpv = tpv.plus(Generated_TemporalTests_Test.s2_);
-        return tpv;
-      }).invoke()).stream().filter(OH.predicate()).sorted(new Comparator<TemporalValue>() {
-        public int compare(TemporalValue p0, TemporalValue p1) {
-          return OH.compare(p1, p0);
-        }
-      }).collect(Collectors.<TemporalValue>toList()));
-    }).invoke());
+    Assert.assertEquals("Expected: " + TreePVector.<TemporalValue>empty().plus(Generated_TemporalTests_Test.s2_).plus(Generated_TemporalTests_Test.s1_) + ", but was: " + (PVector<TemporalValue>) TreePVector.<TemporalValue>from(((PCollection<TemporalValue>) TreePVector.<TemporalValue>empty().plus(Generated_TemporalTests_Test.s1_).plus(Generated_TemporalTests_Test.s2_)).stream().filter(OH.predicate()).sorted(new Comparator<TemporalValue>() {
+      public int compare(TemporalValue p0, TemporalValue p1) {
+        return OH.compare(p1, p0);
+      }
+    }).collect(Collectors.<TemporalValue>toList())), (Object) TreePVector.<TemporalValue>empty().plus(Generated_TemporalTests_Test.s2_).plus(Generated_TemporalTests_Test.s1_), (Object) (PVector<TemporalValue>) TreePVector.<TemporalValue>from(((PCollection<TemporalValue>) TreePVector.<TemporalValue>empty().plus(Generated_TemporalTests_Test.s1_).plus(Generated_TemporalTests_Test.s2_)).stream().filter(OH.predicate()).sorted(new Comparator<TemporalValue>() {
+      public int compare(TemporalValue p0, TemporalValue p1) {
+        return OH.compare(p1, p0);
+      }
+    }).collect(Collectors.<TemporalValue>toList())));
   }
   @Test
   public void Sorting_item16_788506343946576929() throws Throwable {
-    Assert.assertEquals("Expected: " + (((_FunctionTypes._return_P0_E0<TreePVector<TemporalValue>>) () -> {
-      TreePVector<TemporalValue> tpv = TreePVector.empty();
-      tpv = tpv.plus(Generated_TemporalTests_Test.s3_);
-      tpv = tpv.plus(Generated_TemporalTests_Test.s2_);
-      tpv = tpv.plus(Generated_TemporalTests_Test.s1_);
-      return tpv;
-    }).invoke()) + ", but was: " + (((_FunctionTypes._return_P0_E0<PVector<TemporalValue>>) () -> {
-      return (PVector<TemporalValue>) TreePVector.<TemporalValue>from(((PCollection<TemporalValue>) ((_FunctionTypes._return_P0_E0<TreePVector<TemporalValue>>) () -> {
-        TreePVector<TemporalValue> tpv = TreePVector.empty();
-        tpv = tpv.plus(Generated_TemporalTests_Test.s1_);
-        tpv = tpv.plus(Generated_TemporalTests_Test.s2_);
-        tpv = tpv.plus(Generated_TemporalTests_Test.s3_);
-        return tpv;
-      }).invoke()).stream().filter(OH.predicate()).sorted(new Comparator<TemporalValue>() {
-        public int compare(TemporalValue p0, TemporalValue p1) {
-          return OH.compare(p1, p0);
-        }
-      }).collect(Collectors.<TemporalValue>toList()));
-    }).invoke()), (Object) ((_FunctionTypes._return_P0_E0<TreePVector<TemporalValue>>) () -> {
-      TreePVector<TemporalValue> tpv = TreePVector.empty();
-      tpv = tpv.plus(Generated_TemporalTests_Test.s3_);
-      tpv = tpv.plus(Generated_TemporalTests_Test.s2_);
-      tpv = tpv.plus(Generated_TemporalTests_Test.s1_);
-      return tpv;
-    }).invoke(), (Object) ((_FunctionTypes._return_P0_E0<PVector<TemporalValue>>) () -> {
-      return (PVector<TemporalValue>) TreePVector.<TemporalValue>from(((PCollection<TemporalValue>) ((_FunctionTypes._return_P0_E0<TreePVector<TemporalValue>>) () -> {
-        TreePVector<TemporalValue> tpv = TreePVector.empty();
-        tpv = tpv.plus(Generated_TemporalTests_Test.s1_);
-        tpv = tpv.plus(Generated_TemporalTests_Test.s2_);
-        tpv = tpv.plus(Generated_TemporalTests_Test.s3_);
-        return tpv;
-      }).invoke()).stream().filter(OH.predicate()).sorted(new Comparator<TemporalValue>() {
-        public int compare(TemporalValue p0, TemporalValue p1) {
-          return OH.compare(p1, p0);
-        }
-      }).collect(Collectors.<TemporalValue>toList()));
-    }).invoke());
+    Assert.assertEquals("Expected: " + TreePVector.<TemporalValue>empty().plus(Generated_TemporalTests_Test.s3_).plus(Generated_TemporalTests_Test.s2_).plus(Generated_TemporalTests_Test.s1_) + ", but was: " + (PVector<TemporalValue>) TreePVector.<TemporalValue>from(((PCollection<TemporalValue>) TreePVector.<TemporalValue>empty().plus(Generated_TemporalTests_Test.s1_).plus(Generated_TemporalTests_Test.s2_).plus(Generated_TemporalTests_Test.s3_)).stream().filter(OH.predicate()).sorted(new Comparator<TemporalValue>() {
+      public int compare(TemporalValue p0, TemporalValue p1) {
+        return OH.compare(p1, p0);
+      }
+    }).collect(Collectors.<TemporalValue>toList())), (Object) TreePVector.<TemporalValue>empty().plus(Generated_TemporalTests_Test.s3_).plus(Generated_TemporalTests_Test.s2_).plus(Generated_TemporalTests_Test.s1_), (Object) (PVector<TemporalValue>) TreePVector.<TemporalValue>from(((PCollection<TemporalValue>) TreePVector.<TemporalValue>empty().plus(Generated_TemporalTests_Test.s1_).plus(Generated_TemporalTests_Test.s2_).plus(Generated_TemporalTests_Test.s3_)).stream().filter(OH.predicate()).sorted(new Comparator<TemporalValue>() {
+      public int compare(TemporalValue p0, TemporalValue p1) {
+        return OH.compare(p1, p0);
+      }
+    }).collect(Collectors.<TemporalValue>toList())));
   }
   @Test
   public void Sorting_item17_8432595092502443941() throws Throwable {
-    Assert.assertEquals("Expected: " + (((_FunctionTypes._return_P0_E0<TreePVector<TemporalValue>>) () -> {
-      TreePVector<TemporalValue> tpv = TreePVector.empty();
-      tpv = tpv.plus(Generated_TemporalTests_Test.s3_);
-      tpv = tpv.plus(Generated_TemporalTests_Test.s4_);
-      tpv = tpv.plus(Generated_TemporalTests_Test.s2_);
-      tpv = tpv.plus(Generated_TemporalTests_Test.s1_);
-      return tpv;
-    }).invoke()) + ", but was: " + (((_FunctionTypes._return_P0_E0<PVector<TemporalValue>>) () -> {
-      return (PVector<TemporalValue>) TreePVector.<TemporalValue>from(((PCollection<TemporalValue>) ((_FunctionTypes._return_P0_E0<TreePVector<TemporalValue>>) () -> {
-        TreePVector<TemporalValue> tpv = TreePVector.empty();
-        tpv = tpv.plus(Generated_TemporalTests_Test.s1_);
-        tpv = tpv.plus(Generated_TemporalTests_Test.s2_);
-        tpv = tpv.plus(Generated_TemporalTests_Test.s3_);
-        tpv = tpv.plus(Generated_TemporalTests_Test.s4_);
-        return tpv;
-      }).invoke()).stream().filter(OH.predicate()).sorted(new Comparator<TemporalValue>() {
-        public int compare(TemporalValue p0, TemporalValue p1) {
-          return OH.compare(p1, p0);
-        }
-      }).collect(Collectors.<TemporalValue>toList()));
-    }).invoke()), (Object) ((_FunctionTypes._return_P0_E0<TreePVector<TemporalValue>>) () -> {
-      TreePVector<TemporalValue> tpv = TreePVector.empty();
-      tpv = tpv.plus(Generated_TemporalTests_Test.s3_);
-      tpv = tpv.plus(Generated_TemporalTests_Test.s4_);
-      tpv = tpv.plus(Generated_TemporalTests_Test.s2_);
-      tpv = tpv.plus(Generated_TemporalTests_Test.s1_);
-      return tpv;
-    }).invoke(), (Object) ((_FunctionTypes._return_P0_E0<PVector<TemporalValue>>) () -> {
-      return (PVector<TemporalValue>) TreePVector.<TemporalValue>from(((PCollection<TemporalValue>) ((_FunctionTypes._return_P0_E0<TreePVector<TemporalValue>>) () -> {
-        TreePVector<TemporalValue> tpv = TreePVector.empty();
-        tpv = tpv.plus(Generated_TemporalTests_Test.s1_);
-        tpv = tpv.plus(Generated_TemporalTests_Test.s2_);
-        tpv = tpv.plus(Generated_TemporalTests_Test.s3_);
-        tpv = tpv.plus(Generated_TemporalTests_Test.s4_);
-        return tpv;
-      }).invoke()).stream().filter(OH.predicate()).sorted(new Comparator<TemporalValue>() {
-        public int compare(TemporalValue p0, TemporalValue p1) {
-          return OH.compare(p1, p0);
-        }
-      }).collect(Collectors.<TemporalValue>toList()));
-    }).invoke());
+    Assert.assertEquals("Expected: " + TreePVector.<TemporalValue>empty().plus(Generated_TemporalTests_Test.s3_).plus(Generated_TemporalTests_Test.s4_).plus(Generated_TemporalTests_Test.s2_).plus(Generated_TemporalTests_Test.s1_) + ", but was: " + (PVector<TemporalValue>) TreePVector.<TemporalValue>from(((PCollection<TemporalValue>) TreePVector.<TemporalValue>empty().plus(Generated_TemporalTests_Test.s1_).plus(Generated_TemporalTests_Test.s2_).plus(Generated_TemporalTests_Test.s3_).plus(Generated_TemporalTests_Test.s4_)).stream().filter(OH.predicate()).sorted(new Comparator<TemporalValue>() {
+      public int compare(TemporalValue p0, TemporalValue p1) {
+        return OH.compare(p1, p0);
+      }
+    }).collect(Collectors.<TemporalValue>toList())), (Object) TreePVector.<TemporalValue>empty().plus(Generated_TemporalTests_Test.s3_).plus(Generated_TemporalTests_Test.s4_).plus(Generated_TemporalTests_Test.s2_).plus(Generated_TemporalTests_Test.s1_), (Object) (PVector<TemporalValue>) TreePVector.<TemporalValue>from(((PCollection<TemporalValue>) TreePVector.<TemporalValue>empty().plus(Generated_TemporalTests_Test.s1_).plus(Generated_TemporalTests_Test.s2_).plus(Generated_TemporalTests_Test.s3_).plus(Generated_TemporalTests_Test.s4_)).stream().filter(OH.predicate()).sorted(new Comparator<TemporalValue>() {
+      public int compare(TemporalValue p0, TemporalValue p1) {
+        return OH.compare(p1, p0);
+      }
+    }).collect(Collectors.<TemporalValue>toList())));
   }
   @Test
   public void defaultValues_item0_4638701830924688322() throws Throwable {
-    Assert.assertEquals("Expected: " + (((_FunctionTypes._return_P0_E0<TemporalValue>) () -> {
-      TemporalValue value = new TemporalValue();
-      return value;
-    }).invoke()) + ", but was: " + (((_FunctionTypes._return_P0_E0<TemporalValue>) () -> {
-      TemporalValue value = new TemporalValue();
-      return value;
-    }).invoke()), (Object) ((_FunctionTypes._return_P0_E0<TemporalValue>) () -> {
-      TemporalValue value = new TemporalValue();
-      return value;
-    }).invoke(), (Object) ((_FunctionTypes._return_P0_E0<TemporalValue>) () -> {
-      TemporalValue value = new TemporalValue();
-      return value;
-    }).invoke());
+    Assert.assertEquals("Expected: " + new TemporalValue() + ", but was: " + new TemporalValue(), (Object) new TemporalValue(), (Object) new TemporalValue());
   }
 
 

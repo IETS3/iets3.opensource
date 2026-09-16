@@ -63,20 +63,30 @@
           <property role="2V$B1Q" value="org.iets3.core.expr.genjava.contracts" />
         </node>
       </node>
-      <node concept="2Qf6Nf" id="4z0AnX816Zw" role="2Qf7GQ">
-        <node concept="2V$Bhx" id="6ii4I_AaKi7" role="2Qf6Ng">
+    </node>
+    <node concept="2VgMA2" id="7_igWyyzsOZ" role="2VgMA7">
+      <node concept="2Qf6Nf" id="7_igWyyzsP0" role="2Qf7GQ">
+        <node concept="2V$Bhx" id="7_igWyyzsP2" role="2Qf6Ng">
+          <property role="2V$B1T" value="3b01f160-a12d-4471-8269-cdf596d4604c" />
+          <property role="2V$B1Q" value="org.iets3.core.expr.genjava.optimizer" />
+        </node>
+      </node>
+    </node>
+    <node concept="2VgMA2" id="7_igWyyzsP3" role="2VgMA7">
+      <node concept="2Qf6Nf" id="7_igWyyzsP4" role="2Qf7GQ">
+        <node concept="2V$Bhx" id="7_igWyyzsP6" role="2Qf6Ng">
           <property role="2V$B1T" value="fd392034-7849-419d-9071-12563d152375" />
           <property role="2V$B1Q" value="jetbrains.mps.baseLanguage.closures" />
         </node>
       </node>
-      <node concept="2Qf6Nf" id="4z0AnX816Zx" role="2Qf7GQ">
-        <node concept="2V$Bhx" id="4bh_m841Xu2" role="2Qf6Ng">
+      <node concept="2Qf6Nf" id="7_igWyyzsP7" role="2Qf7GQ">
+        <node concept="2V$Bhx" id="7_igWyyzsP9" role="2Qf6Ng">
           <property role="2V$B1T" value="83888646-71ce-4f1c-9c53-c54016f6ad4f" />
           <property role="2V$B1Q" value="jetbrains.mps.baseLanguage.collections" />
         </node>
       </node>
-      <node concept="2Qf6Nf" id="4z0AnX816Zy" role="2Qf7GQ">
-        <node concept="2V$Bhx" id="1URTIF$uG6y" role="2Qf6Ng">
+      <node concept="2Qf6Nf" id="7_igWyyzsPa" role="2Qf7GQ">
+        <node concept="2V$Bhx" id="7_igWyyzsPc" role="2Qf6Ng">
           <property role="2V$B1T" value="f61473f9-130f-42f6-b98d-6c438812c2f6" />
           <property role="2V$B1Q" value="jetbrains.mps.baseLanguage.unitTest" />
         </node>

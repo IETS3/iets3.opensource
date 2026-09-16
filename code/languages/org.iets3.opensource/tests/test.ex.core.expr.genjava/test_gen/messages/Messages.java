@@ -23,7 +23,7 @@ public class Messages {
     return new Message(BuiltinMessageKinds.none(), "failure number 42", _nodeReference, _nodeUrl);
   }
   public static class withStringArgs {
-    public static Message m4(String _nodeReference, String _nodeUrl, String x) {
+    public static Message m4(String _nodeReference, String _nodeUrl, final String x) {
       return new Message(BuiltinMessageKinds.none(), ((_FunctionTypes._return_P0_E0<String>) () -> {
         StringBuilder sb = new StringBuilder();
 
@@ -42,7 +42,7 @@ public class Messages {
     }
   }
   public static class withIntArgs {
-    public static Message m4(String _nodeReference, String _nodeUrl, Number x) {
+    public static Message m4(String _nodeReference, String _nodeUrl, final Number x) {
       return new Message(BuiltinMessageKinds.none(), ((_FunctionTypes._return_P0_E0<String>) () -> {
         StringBuilder sb = new StringBuilder();
 
@@ -60,7 +60,7 @@ public class Messages {
       return new Message(BuiltinMessageKinds.none(), AH.addString("m5", x), _nodeReference, _nodeUrl);
     }
     public static class sub {
-      public static Message m6(String _nodeReference, String _nodeUrl, Number n, Boolean b) {
+      public static Message m6(String _nodeReference, String _nodeUrl, final Number n, final Boolean b) {
         return new Message(BuiltinMessageKinds.none(), ((_FunctionTypes._return_P0_E0<String>) () -> {
           StringBuilder sb = new StringBuilder();
 
@@ -91,7 +91,7 @@ public class Messages {
       return new Message(BuiltinMessageKinds.error("4711"), "e", _nodeReference, _nodeUrl);
     }
   }
-  public static Message mPoint(String _nodeReference, String _nodeUrl, Data.Point p) {
+  public static Message mPoint(String _nodeReference, String _nodeUrl, final Data.Point p) {
     return new Message(BuiltinMessageKinds.none(), ((_FunctionTypes._return_P0_E0<String>) () -> {
       StringBuilder sb = new StringBuilder();
 
@@ -105,7 +105,7 @@ public class Messages {
       return sb.toString();
     }).invoke(), _nodeReference, _nodeUrl);
   }
-  public static Message mMoney(String _nodeReference, String _nodeUrl, Number m) {
+  public static Message mMoney(String _nodeReference, String _nodeUrl, final Number m) {
     return new Message(BuiltinMessageKinds.none(), ((_FunctionTypes._return_P0_E0<String>) () -> {
       StringBuilder sb = new StringBuilder();
 
@@ -119,13 +119,13 @@ public class Messages {
       return sb.toString();
     }).invoke(), _nodeReference, _nodeUrl);
   }
-  public static Message pleaseTakePills(String _nodeReference, String _nodeUrl, Number numPills) {
+  public static Message pleaseTakePills(String _nodeReference, String _nodeUrl, final Number numPills) {
     return new Message(BuiltinMessageKinds.none(), ((_FunctionTypes._return_P0_E0<String>) () -> {
-      if (AH.isEqual(numPills, ((Number) new BigInteger("0")))) {
+      if (AH.isEqual(numPills, (Number) new BigInteger("0"))) {
         return "no pills.";
-      } else if (AH.isEqual(numPills, ((Number) new BigInteger("1")))) {
+      } else if (AH.isEqual(numPills, (Number) new BigInteger("1"))) {
         return "one pill.";
-      } else if (AH.isGreater(numPills, ((Number) new BigInteger("1")))) {
+      } else if (AH.isGreater(numPills, (Number) new BigInteger("1"))) {
         return AH.addString(numPills, " pills.");
       } else {
         throw new AlternativesException("The proposed alternative does not exist.");
