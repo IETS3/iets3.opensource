@@ -7,6 +7,12 @@ The project does _not_ follow Semantic Versioning and the changes are documented
 
 ## September 2026
 
+### Added
+- Variability: New intention "Adapt Extending Configurations to Changes" on abstract feature model configurations. It propagates changes of the abstract configuration to *all* transitively extending configurations in one step (with progress reporting), instead of applying the per-configuration fix "Adapt this Configuration to the extended Configuration" one-by-one.
+
+### Changed
+- Variability: The update-configurations tasks were refactored - the common functionality of the tasks updating one, all, or all extending configurations now lives in the shared base classes `AbstractUpdateConfigsTask` / `ConfigFromFeatureModelUpdater`.
+
 ### Fixed
 - Variability: "Adapt this configuration to the extended configuration" no longer skips sub-configurations whose content is still unspecified (`FeatureModelConfigurationBase`). Such a content is now materialized as an inline configuration derived from the referenced feature model, so the values of the extended configuration are inherited ([#1953](https://github.com/IETS3/iets3.opensource/issues/1953)).
 
