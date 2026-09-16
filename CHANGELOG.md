@@ -6,6 +6,7 @@ Format of the log is _loosely_ based on [Keep a Changelog](https://keepachangelo
 The project does _not_ follow Semantic Versioning and the changes are documented in reverse chronological order, grouped by calendar month.
 
 ## September 2026
+
 ### Changed
 - KernelF: `EnumLiteral` now implements `ISmartReferent` and derives its `resolveInfo` from the same presentation (qualified for a qualified enum, bare otherwise), so completion, the editor cell and `renderReadable()` agree. The hand-written `EnumLiteralRef` substitute menus and the qualified filter in its scope were dropped in favour of the smart-reference machinery MPS generates. The auxiliary concept `QualifierRef` was removed; it had no instances and was never part of a valid model, so no migration is required.
 
@@ -17,6 +18,7 @@ The project does _not_ follow Semantic Versioning and the changes are documented
 - KernelF: a broken reference to a literal of a qualified enum no longer rebinds to a same-named literal of a different enum, because the persisted `resolve=` info now carries the qualified name instead of the simple one.
 - KernelF: entries in the trace explorer are no longer truncated after a very low character limit, which made traces hard to read. The limit was raised and the tooltip now shows the full, untruncated text.
 - KernelF: Consistent usage of indent layout in Expression concepts.
+- KernelF: Added a workaround that allows the deletion of whole number literals nodes by pressing BACKSPACE or DELETE in case that the number literal value is presented in hexadecimal format. This kind of deletion was only possible for decimal number literals before due to an internal implementation problem.
 
 
 ## August 2026
