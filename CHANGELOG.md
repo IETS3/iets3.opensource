@@ -14,13 +14,15 @@ The project does _not_ follow Semantic Versioning and the changes are documented
 - Variability: The update-configurations tasks were refactored - the common functionality of the tasks updating one, all, or all extending configurations now lives in the shared base classes `AbstractUpdateConfigsTask` / `ConfigFromFeatureModelUpdater`.
 
 ### Fixed
-- Variability: "Adapt this configuration to the extended configuration" no longer skips sub-configurations whose content is still unspecified (`FeatureModelConfigurationBase`). Such a content is now materialized as an inline configuration derived from the referenced feature model, so the values of the extended configuration are inherited ([#1953](https://github.com/IETS3/iets3.opensource/issues/1953)).
+- Variability: Intention "Adapt this configuration to the extended configuration" no longer skips sub-configurations whose content is still unspecified. Such a content is now materialized as an inline configuration derived from the referenced feature model, so the values of the extended configuration are inherited.
+
 
 ## August 2026
 
 ### Fixed
 - Improve uniqueness name check of `IFunctionLike` `getUniquelyNamedElements()` behavior to avoid overzealous checking.
 - Variability: Feature attribute values are not overwritten anymore if the value stays the same. This avoids changing the model if not necessary, esp. it avoids merge conflicts.
+
 
 ## July 2026
 
