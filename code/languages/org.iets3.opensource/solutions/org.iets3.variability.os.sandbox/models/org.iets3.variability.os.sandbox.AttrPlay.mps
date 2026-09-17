@@ -50,6 +50,14 @@
         <child id="3470763221648007850" name="value" index="3HYO9C" />
       </concept>
     </language>
+    <language id="cfaa4966-b7d5-4b69-b66a-309a6e1a7290" name="org.iets3.core.expr.base">
+      <concept id="4261931054731905240" name="org.iets3.core.expr.base.structure.IContainExpressionParam" flags="ngI" index="2lDidI">
+        <child id="4261931054731905241" name="expr" index="2lDidJ" />
+      </concept>
+      <concept id="9002563722476995145" name="org.iets3.core.expr.base.structure.DotExpression" flags="ng" index="1QScDb">
+        <child id="9002563722476995147" name="target" index="1QScD9" />
+      </concept>
+    </language>
     <language id="6b277d9a-d52d-416f-a209-1919bd737f50" name="org.iets3.core.expr.simpleTypes">
       <concept id="5115872837157252552" name="org.iets3.core.expr.simpleTypes.structure.StringLiteral" flags="ng" index="30bdrP">
         <property id="5115872837157252555" name="value" index="30bdrQ" />
@@ -67,6 +75,9 @@
       </concept>
     </language>
     <language id="165f1d05-2506-4544-895e-1424f54166ec" name="org.iets3.variability.featuremodel.base">
+      <concept id="8997672845438204620" name="org.iets3.variability.featuremodel.base.structure.SubFeatureDotTarget" flags="ng" index="21mTOb">
+        <reference id="8997672845438204633" name="feature" index="21mTOu" />
+      </concept>
       <concept id="8997672845436117511" name="org.iets3.variability.featuremodel.base.structure.FeatureAttribute" flags="ng" index="21IWn0">
         <child id="8997672845436636231" name="type" index="21GYI0" />
       </concept>
@@ -246,8 +257,13 @@
           <ref role="12iSMH" node="3BzdP7fvTKc" resolve="Trim" />
           <node concept="1lEfCE" id="3BzdP7fvTKm" role="1lESdG">
             <ref role="1lE0rE" node="3BzdP7fvTKe" resolve="p" />
-            <node concept="1lCzJX" id="3BzdP7fvTKn" role="1lE0xT">
-              <ref role="1lCzx9" node="3BzdP7fvTKa" resolve="paint" />
+            <node concept="1QScDb" id="2$hJXZK1Ivz" role="1lE0xT">
+              <node concept="21mTOb" id="2$hJXZK1IyQ" role="1QScD9">
+                <ref role="21mTOu" node="3BzdP7fvTKa" resolve="paint" />
+              </node>
+              <node concept="1lCzJX" id="3BzdP7fvTKn" role="2lDidJ">
+                <ref role="1lCzx9" node="3BzdP7fvTKk" resolve="body" />
+              </node>
             </node>
           </node>
         </node>
