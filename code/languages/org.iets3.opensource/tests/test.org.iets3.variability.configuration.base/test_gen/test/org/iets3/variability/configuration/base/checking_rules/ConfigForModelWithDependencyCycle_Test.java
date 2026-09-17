@@ -25,6 +25,14 @@ public class ConfigForModelWithDependencyCycle_Test extends BaseTransformationTe
   }
 
   @Test
+  public void test_NodeErrorCheck2959357398684401155() throws Throwable {
+    new TestBody(this).test_NodeErrorCheck2959357398684401155();
+  }
+  @Test
+  public void test_NodeErrorCheck2959357398684411767() throws Throwable {
+    new TestBody(this).test_NodeErrorCheck2959357398684411767();
+  }
+  @Test
   public void test_NodeConfigurationCreatedForCheck2918730692166238526() throws Throwable {
     new TestBody(this).test_NodeConfigurationCreatedForCheck2918730692166238526();
   }
@@ -40,6 +48,20 @@ public class ConfigForModelWithDependencyCycle_Test extends BaseTransformationTe
       prepareTestNodes("2918730692166238515");
     }
 
+    public void test_NodeErrorCheck2959357398684401155() throws Exception {
+      initTestNodes();
+      runWithinCommand(() -> {
+        SNode nodeToCheck = getNodeById("2918730692166238519");
+        new CheckExpectedMessageRunnable.CheckAnyMessageRunnable(nodeToCheck, MessageStatus.ERROR, "", myProject.getRepository(), myProject.getPlatform()).run();
+      });
+    }
+    public void test_NodeErrorCheck2959357398684411767() throws Exception {
+      initTestNodes();
+      runWithinCommand(() -> {
+        SNode nodeToCheck = getNodeById("2918730692166238522");
+        new CheckExpectedMessageRunnable.CheckAnyMessageRunnable(nodeToCheck, MessageStatus.ERROR, "", myProject.getRepository(), myProject.getPlatform()).run();
+      });
+    }
     public void test_NodeConfigurationCreatedForCheck2918730692166238526() throws Exception {
       initTestNodes();
       runWithinCommand(() -> {

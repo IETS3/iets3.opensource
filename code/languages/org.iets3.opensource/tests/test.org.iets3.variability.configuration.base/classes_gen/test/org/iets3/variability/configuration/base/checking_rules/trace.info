@@ -12,36 +12,64 @@
   <root nodeRef="r:b52df216-430b-486e-bf75-226dacbbed72(test.org.iets3.variability.configuration.base.checking_rules@tests)/2918730692166238514">
     <file name="ConfigForModelWithDependencyCycle_Test.java">
       <node id="2918730692166238514" at="23,51,24,60" concept="8" />
-      <node id="2918730692166238526" at="28,91,29,82" concept="1" />
-      <node id="2918730692166238514" at="34,52,35,19" concept="8" />
-      <node id="2918730692166238514" at="39,36,40,46" concept="1" />
-      <node id="2918730692166238526" at="43,93,44,22" concept="1" />
-      <node id="2918730692166238526" at="45,30,46,63" concept="3" />
-      <node id="2918730692166238526" at="46,63,47,306" concept="1" />
+      <node id="2959357398684401155" at="28,73,29,64" concept="1" />
+      <node id="2959357398684411767" at="32,73,33,64" concept="1" />
+      <node id="2918730692166238526" at="36,91,37,82" concept="1" />
+      <node id="2918730692166238514" at="42,52,43,19" concept="8" />
+      <node id="2918730692166238514" at="47,36,48,46" concept="1" />
+      <node id="2959357398684401155" at="51,75,52,22" concept="1" />
+      <node id="2959357398684401155" at="53,30,54,63" concept="3" />
+      <node id="2959357398684401155" at="54,63,55,161" concept="1" />
+      <node id="2959357398684411767" at="58,75,59,22" concept="1" />
+      <node id="2959357398684411767" at="60,30,61,63" concept="3" />
+      <node id="2959357398684411767" at="61,63,62,161" concept="1" />
+      <node id="2918730692166238526" at="65,93,66,22" concept="1" />
+      <node id="2918730692166238526" at="67,30,68,63" concept="3" />
+      <node id="2918730692166238526" at="68,63,69,306" concept="1" />
       <node id="2918730692166238514" at="20,0,22,0" concept="7" trace="ourParametersCacheExtension" />
       <node id="2918730692166238514" at="23,0,26,0" concept="0" trace="ConfigForModelWithDependencyCycle_Test#()V" />
-      <node id="2918730692166238514" at="34,0,37,0" concept="0" trace="TestBody#(Ljetbrains/mps/lang/test/runtime/TransformationTest;)V" />
-      <node id="2918730692166238526" at="27,0,31,0" concept="2" trace="test_NodeConfigurationCreatedForCheck2918730692166238526#()V" />
-      <node id="2918730692166238514" at="38,0,42,0" concept="2" trace="initTestNodes#()V" />
-      <node id="2918730692166238526" at="44,22,48,9" concept="1" />
-      <node id="2918730692166238526" at="43,0,50,0" concept="2" trace="test_NodeConfigurationCreatedForCheck2918730692166238526#()V" />
+      <node id="2918730692166238514" at="42,0,45,0" concept="0" trace="TestBody#(Ljetbrains/mps/lang/test/runtime/TransformationTest;)V" />
+      <node id="2959357398684401155" at="27,0,31,0" concept="2" trace="test_NodeErrorCheck2959357398684401155#()V" />
+      <node id="2959357398684411767" at="31,0,35,0" concept="2" trace="test_NodeErrorCheck2959357398684411767#()V" />
+      <node id="2918730692166238526" at="35,0,39,0" concept="2" trace="test_NodeConfigurationCreatedForCheck2918730692166238526#()V" />
+      <node id="2918730692166238514" at="46,0,50,0" concept="2" trace="initTestNodes#()V" />
+      <node id="2959357398684401155" at="52,22,56,9" concept="1" />
+      <node id="2959357398684411767" at="59,22,63,9" concept="1" />
+      <node id="2918730692166238526" at="66,22,70,9" concept="1" />
+      <node id="2959357398684401155" at="51,0,58,0" concept="2" trace="test_NodeErrorCheck2959357398684401155#()V" />
+      <node id="2959357398684411767" at="58,0,65,0" concept="2" trace="test_NodeErrorCheck2959357398684411767#()V" />
+      <node id="2918730692166238526" at="65,0,72,0" concept="2" trace="test_NodeConfigurationCreatedForCheck2918730692166238526#()V" />
       <scope id="2918730692166238514" at="23,51,24,60" />
-      <scope id="2918730692166238526" at="28,91,29,82" />
-      <scope id="2918730692166238514" at="34,52,35,19" />
-      <scope id="2918730692166238514" at="39,36,40,46" />
-      <scope id="2918730692166238526" at="45,30,47,306">
+      <scope id="2959357398684401155" at="28,73,29,64" />
+      <scope id="2959357398684411767" at="32,73,33,64" />
+      <scope id="2918730692166238526" at="36,91,37,82" />
+      <scope id="2918730692166238514" at="42,52,43,19" />
+      <scope id="2918730692166238514" at="47,36,48,46" />
+      <scope id="2959357398684401155" at="53,30,55,161">
+        <var name="nodeToCheck" id="2959357398684401155" />
+      </scope>
+      <scope id="2959357398684411767" at="60,30,62,161">
+        <var name="nodeToCheck" id="2959357398684411767" />
+      </scope>
+      <scope id="2918730692166238526" at="67,30,69,306">
         <var name="nodeToCheck" id="2918730692166238526" />
       </scope>
       <scope id="2918730692166238514" at="23,0,26,0" />
-      <scope id="2918730692166238514" at="34,0,37,0">
+      <scope id="2918730692166238514" at="42,0,45,0">
         <var name="owner" id="2918730692166238514" />
       </scope>
-      <scope id="2918730692166238526" at="27,0,31,0" />
-      <scope id="2918730692166238514" at="38,0,42,0" />
-      <scope id="2918730692166238526" at="43,93,48,9" />
-      <scope id="2918730692166238526" at="43,0,50,0" />
-      <unit id="2918730692166238514" at="32,0,52,0" name="test.org.iets3.variability.configuration.base.checking_rules.ConfigForModelWithDependencyCycle_Test$TestBody" />
-      <unit id="2918730692166238514" at="18,0,53,0" name="test.org.iets3.variability.configuration.base.checking_rules.ConfigForModelWithDependencyCycle_Test" />
+      <scope id="2959357398684401155" at="27,0,31,0" />
+      <scope id="2959357398684411767" at="31,0,35,0" />
+      <scope id="2918730692166238526" at="35,0,39,0" />
+      <scope id="2918730692166238514" at="46,0,50,0" />
+      <scope id="2959357398684401155" at="51,75,56,9" />
+      <scope id="2959357398684411767" at="58,75,63,9" />
+      <scope id="2918730692166238526" at="65,93,70,9" />
+      <scope id="2959357398684401155" at="51,0,58,0" />
+      <scope id="2959357398684411767" at="58,0,65,0" />
+      <scope id="2918730692166238526" at="65,0,72,0" />
+      <unit id="2918730692166238514" at="40,0,74,0" name="test.org.iets3.variability.configuration.base.checking_rules.ConfigForModelWithDependencyCycle_Test$TestBody" />
+      <unit id="2918730692166238514" at="18,0,75,0" name="test.org.iets3.variability.configuration.base.checking_rules.ConfigForModelWithDependencyCycle_Test" />
     </file>
   </root>
   <root nodeRef="r:b52df216-430b-486e-bf75-226dacbbed72(test.org.iets3.variability.configuration.base.checking_rules@tests)/3085753687467509189">
