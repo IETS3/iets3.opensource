@@ -78,22 +78,28 @@
       <node id="3085753687467509189" at="35,70,36,36" concept="1" />
       <node id="3085753687467509189" at="41,52,42,19" concept="8" />
       <node id="3085753687467509189" at="46,51,47,72" concept="1" />
-      <node id="3085753687467621532" at="48,69,49,103" concept="1" />
-      <node id="3085753687467509325" at="49,103,50,49" concept="5" />
-      <node id="3085753687467509357" at="51,318,52,69" concept="1" />
-      <node id="3085753687467509363" at="52,69,53,64" concept="1" />
-      <node id="3085753687467509369" at="53,64,54,70" concept="1" />
-      <node id="3085753687467509189" at="61,0,62,0" concept="7" trace="FeatureModelConfiguration$nE" />
-      <node id="3085753687467509189" at="65,0,66,0" concept="7" trace="__adaptHash$54Is" />
-      <node id="3085753687467509189" at="66,0,67,0" concept="7" trace="__hash$uJSm" />
-      <node id="3085753687467509189" at="67,0,68,0" concept="7" trace="__updateHash$vTMx" />
+      <node id="3085753687467509312" at="47,72,48,164" concept="1" />
+      <node id="8199263169406071659" at="48,164,49,0" concept="6" />
+      <node id="5711804090911860663" at="49,0,50,92" concept="5" />
+      <node id="5711804090911860679" at="50,92,51,91" concept="5" />
+      <node id="5711804090911860695" at="51,91,52,87" concept="5" />
+      <node id="5711804090911069651" at="52,87,53,25" concept="1" />
+      <node id="8199263169406072966" at="53,25,54,0" concept="6" />
+      <node id="5711804090911612359" at="55,69,56,49" concept="5" />
+      <node id="5711804090911612391" at="57,318,58,69" concept="1" />
+      <node id="5711804090911612397" at="58,69,59,64" concept="1" />
+      <node id="5711804090911612403" at="59,64,60,70" concept="1" />
+      <node id="3085753687467509189" at="67,0,68,0" concept="7" trace="FeatureModelConfiguration$nE" />
+      <node id="3085753687467509189" at="71,0,72,0" concept="7" trace="__adaptHash$54Is" />
+      <node id="3085753687467509189" at="72,0,73,0" concept="7" trace="__hash$uJSm" />
+      <node id="3085753687467509189" at="73,0,74,0" concept="7" trace="__updateHash$vTMx" />
       <node id="3085753687467509189" at="27,0,29,0" concept="7" trace="ourParametersCacheExtension" />
       <node id="3085753687467509189" at="30,0,33,0" concept="0" trace="UpdateAllRelatedConfigurations_Test#()V" />
       <node id="3085753687467509189" at="41,0,44,0" concept="0" trace="TestBody#(Ljetbrains/mps/lang/test/runtime/TransformationTest;)V" />
       <node id="3085753687467509189" at="34,0,38,0" concept="2" trace="test_UpdateAllRelatedConfigurations#()V" />
-      <node id="3085753687467509334" at="50,49,55,11" concept="1" />
-      <node id="3085753687467509312" at="47,72,56,9" concept="1" />
-      <node id="3085753687467509189" at="45,0,58,0" concept="2" trace="testMethodImpl#()V" />
+      <node id="5711804090911612368" at="56,49,61,11" concept="1" />
+      <node id="5711804090911612346" at="54,0,62,9" concept="1" />
+      <node id="3085753687467509189" at="45,0,64,0" concept="2" trace="testMethodImpl#()V" />
       <scope id="3085753687467509189" at="30,48,31,60" />
       <scope id="3085753687467509189" at="35,70,36,36" />
       <scope id="3085753687467509189" at="41,52,42,19" />
@@ -101,15 +107,15 @@
       <scope id="3085753687467509189" at="41,0,44,0">
         <var name="owner" id="3085753687467509189" />
       </scope>
-      <scope id="3085753687467509356" at="51,318,54,70" />
+      <scope id="5711804090911612390" at="57,318,60,70" />
       <scope id="3085753687467509189" at="34,0,38,0" />
-      <scope id="3085753687467509314" at="48,69,55,11" />
-      <scope id="3085753687467509189" at="46,51,56,9" />
-      <scope id="3085753687467509189" at="45,0,58,0" />
-      <unit id="3085753687467509189" at="60,0,63,0" name="test.org.iets3.variability.configuration.base.checking_rules.UpdateAllRelatedConfigurations_Test$CONCEPTS" />
-      <unit id="3085753687467509189" at="64,0,69,0" name="test.org.iets3.variability.configuration.base.checking_rules.UpdateAllRelatedConfigurations_Test$PROPS" />
-      <unit id="3085753687467509189" at="39,0,59,0" name="test.org.iets3.variability.configuration.base.checking_rules.UpdateAllRelatedConfigurations_Test$TestBody" />
-      <unit id="3085753687467509189" at="25,0,70,0" name="test.org.iets3.variability.configuration.base.checking_rules.UpdateAllRelatedConfigurations_Test" />
+      <scope id="5711804090911612348" at="55,69,61,11" />
+      <scope id="3085753687467509189" at="46,51,62,9" />
+      <scope id="3085753687467509189" at="45,0,64,0" />
+      <unit id="3085753687467509189" at="66,0,69,0" name="test.org.iets3.variability.configuration.base.checking_rules.UpdateAllRelatedConfigurations_Test$CONCEPTS" />
+      <unit id="3085753687467509189" at="70,0,75,0" name="test.org.iets3.variability.configuration.base.checking_rules.UpdateAllRelatedConfigurations_Test$PROPS" />
+      <unit id="3085753687467509189" at="39,0,65,0" name="test.org.iets3.variability.configuration.base.checking_rules.UpdateAllRelatedConfigurations_Test$TestBody" />
+      <unit id="3085753687467509189" at="25,0,76,0" name="test.org.iets3.variability.configuration.base.checking_rules.UpdateAllRelatedConfigurations_Test" />
     </file>
   </root>
   <root nodeRef="r:b52df216-430b-486e-bf75-226dacbbed72(test.org.iets3.variability.configuration.base.checking_rules@tests)/3414566187111182681">
@@ -801,22 +807,28 @@
       <node id="6995660538498532225" at="35,72,36,36" concept="1" />
       <node id="6995660538498532225" at="41,52,42,19" concept="8" />
       <node id="6995660538498532225" at="46,51,47,72" concept="1" />
-      <node id="6143370505398542125" at="48,69,49,110" concept="1" />
-      <node id="4003275569550875692" at="49,110,50,49" concept="5" />
-      <node id="7057831301193087696" at="51,318,52,69" concept="1" />
-      <node id="7057831301193087702" at="52,69,53,64" concept="1" />
-      <node id="7057831301193087708" at="53,64,54,70" concept="1" />
-      <node id="6995660538498532225" at="61,0,62,0" concept="7" trace="FeatureModelConfiguration$nE" />
-      <node id="6995660538498532225" at="65,0,66,0" concept="7" trace="__adaptHash$54Is" />
-      <node id="6995660538498532225" at="66,0,67,0" concept="7" trace="__hash$uJSm" />
-      <node id="6995660538498532225" at="67,0,68,0" concept="7" trace="__updateHash$vTMx" />
+      <node id="6995660538499323715" at="47,72,48,171" concept="1" />
+      <node id="8199263169406028906" at="48,171,49,0" concept="6" />
+      <node id="5711804090911862987" at="49,0,50,92" concept="5" />
+      <node id="5711804090911863003" at="50,92,51,91" concept="5" />
+      <node id="5711804090911863019" at="51,91,52,87" concept="5" />
+      <node id="5711804090911129314" at="52,87,53,25" concept="1" />
+      <node id="8199263169406030215" at="53,25,54,0" concept="6" />
+      <node id="5711804090911607114" at="55,69,56,49" concept="5" />
+      <node id="5711804090911607146" at="57,318,58,69" concept="1" />
+      <node id="5711804090911607152" at="58,69,59,64" concept="1" />
+      <node id="5711804090911607158" at="59,64,60,70" concept="1" />
+      <node id="6995660538498532225" at="67,0,68,0" concept="7" trace="FeatureModelConfiguration$nE" />
+      <node id="6995660538498532225" at="71,0,72,0" concept="7" trace="__adaptHash$54Is" />
+      <node id="6995660538498532225" at="72,0,73,0" concept="7" trace="__hash$uJSm" />
+      <node id="6995660538498532225" at="73,0,74,0" concept="7" trace="__updateHash$vTMx" />
       <node id="6995660538498532225" at="27,0,29,0" concept="7" trace="ourParametersCacheExtension" />
       <node id="6995660538498532225" at="30,0,33,0" concept="0" trace="UpdateAllExtendingConfigurations_Test#()V" />
       <node id="6995660538498532225" at="41,0,44,0" concept="0" trace="TestBody#(Ljetbrains/mps/lang/test/runtime/TransformationTest;)V" />
       <node id="6995660538498532225" at="34,0,38,0" concept="2" trace="test_UpdateAllExtendingConfigurations#()V" />
-      <node id="7057831301192897876" at="50,49,55,11" concept="1" />
-      <node id="6995660538499323715" at="47,72,56,9" concept="1" />
-      <node id="6995660538498532225" at="45,0,58,0" concept="2" trace="testMethodImpl#()V" />
+      <node id="5711804090911607123" at="56,49,61,11" concept="1" />
+      <node id="5711804090911607101" at="54,0,62,9" concept="1" />
+      <node id="6995660538498532225" at="45,0,64,0" concept="2" trace="testMethodImpl#()V" />
       <scope id="6995660538498532225" at="30,50,31,60" />
       <scope id="6995660538498532225" at="35,72,36,36" />
       <scope id="6995660538498532225" at="41,52,42,19" />
@@ -824,15 +836,15 @@
       <scope id="6995660538498532225" at="41,0,44,0">
         <var name="owner" id="6995660538498532225" />
       </scope>
-      <scope id="7057831301193087695" at="51,318,54,70" />
+      <scope id="5711804090911607145" at="57,318,60,70" />
       <scope id="6995660538498532225" at="34,0,38,0" />
-      <scope id="6995660538499323717" at="48,69,55,11" />
-      <scope id="6995660538498532225" at="46,51,56,9" />
-      <scope id="6995660538498532225" at="45,0,58,0" />
-      <unit id="6995660538498532225" at="60,0,63,0" name="test.org.iets3.variability.configuration.base.checking_rules.UpdateAllExtendingConfigurations_Test$CONCEPTS" />
-      <unit id="6995660538498532225" at="64,0,69,0" name="test.org.iets3.variability.configuration.base.checking_rules.UpdateAllExtendingConfigurations_Test$PROPS" />
-      <unit id="6995660538498532225" at="39,0,59,0" name="test.org.iets3.variability.configuration.base.checking_rules.UpdateAllExtendingConfigurations_Test$TestBody" />
-      <unit id="6995660538498532225" at="25,0,70,0" name="test.org.iets3.variability.configuration.base.checking_rules.UpdateAllExtendingConfigurations_Test" />
+      <scope id="5711804090911607103" at="55,69,61,11" />
+      <scope id="6995660538498532225" at="46,51,62,9" />
+      <scope id="6995660538498532225" at="45,0,64,0" />
+      <unit id="6995660538498532225" at="66,0,69,0" name="test.org.iets3.variability.configuration.base.checking_rules.UpdateAllExtendingConfigurations_Test$CONCEPTS" />
+      <unit id="6995660538498532225" at="70,0,75,0" name="test.org.iets3.variability.configuration.base.checking_rules.UpdateAllExtendingConfigurations_Test$PROPS" />
+      <unit id="6995660538498532225" at="39,0,65,0" name="test.org.iets3.variability.configuration.base.checking_rules.UpdateAllExtendingConfigurations_Test$TestBody" />
+      <unit id="6995660538498532225" at="25,0,76,0" name="test.org.iets3.variability.configuration.base.checking_rules.UpdateAllExtendingConfigurations_Test" />
     </file>
   </root>
   <root nodeRef="r:b52df216-430b-486e-bf75-226dacbbed72(test.org.iets3.variability.configuration.base.checking_rules@tests)/7367925337237323169">
