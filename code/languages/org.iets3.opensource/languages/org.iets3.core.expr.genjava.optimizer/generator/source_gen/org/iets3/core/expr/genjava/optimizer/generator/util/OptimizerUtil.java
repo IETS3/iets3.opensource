@@ -19,11 +19,8 @@ import jetbrains.mps.internal.collections.runtime.Sequence;
 import org.jetbrains.mps.openapi.model.SReference;
 import java.util.Objects;
 import jetbrains.mps.smodel.DynamicReference;
-import org.jetbrains.mps.openapi.model.SModel;
-import jetbrains.mps.lang.smodel.generator.smodelAdapter.SModelOperations;
-import jetbrains.mps.lang.smodel.generator.smodelAdapter.SConceptOperations;
-import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import org.jetbrains.mps.openapi.language.SConcept;
+import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import org.jetbrains.mps.openapi.language.SInterfaceConcept;
 import org.jetbrains.mps.openapi.language.SContainmentLink;
 import org.jetbrains.mps.openapi.language.SReferenceLink;
@@ -159,7 +156,8 @@ public class OptimizerUtil {
     if ((closure == null)) {
       return false;
     }
-    if ((ternaryIfStatement(SLinkOperations.getTarget(statement, LINKS.expression$eJ92)) != null)) {
+    if ((ternaryIfStatement(SLinkOperations.getTarget(statement, LINKS.expression$eJ92)) != null) || (fluentChainVariable(SLinkOperations.getTarget(statement, LINKS.expression$eJ92)) != null)) {
+      // the closure collapses to an expression instead
       return false;
     }
     if (containsYield(SLinkOperations.getTarget(closure, LINKS.body$Ujx2))) {
@@ -174,7 +172,7 @@ public class OptimizerUtil {
   public static boolean canInlineExpressionStatement(SNode statement) {
     // { => body }.invoke(); --> body (nothing is returned)
     SNode closure = iifeClosure(SLinkOperations.getTarget(statement, LINKS.expression$5L7M));
-    if ((closure == null)) {
+    if ((closure == null) || (fluentChainVariable(SLinkOperations.getTarget(statement, LINKS.expression$5L7M)) != null)) {
       return false;
     }
     if (containsYield(SLinkOperations.getTarget(closure, LINKS.body$Ujx2)) || ListSequence.fromList(escapingReturns(SLinkOperations.getTarget(closure, LINKS.body$Ujx2))).isNotEmpty()) {
@@ -189,7 +187,8 @@ public class OptimizerUtil {
       return false;
     }
     SNode closure = iifeClosure(SLinkOperations.getTarget(declaration, LINKS.initializer$2twD));
-    if ((closure == null)) {
+    if ((closure == null) || (fluentChainVariable(SLinkOperations.getTarget(declaration, LINKS.initializer$2twD)) != null)) {
+      // a chain collapses to an expression instead
       return false;
     }
     if (containsYield(SLinkOperations.getTarget(closure, LINKS.body$Ujx2))) {
@@ -630,46 +629,108 @@ public class OptimizerUtil {
     }
     return variable;
   }
-  public static void collapseFluentChains(SModel m) {
-    // { => T v = init; v = v.a(..); v = v.b(..); return v; }.invoke() --> init.a(..).b(..)
-    // rewrites the model in place, so that the moved sub-expressions keep their references
-    List<SNode> chains = new ArrayList<SNode>();
-    for (SNode root : ListSequence.fromList(SModelOperations.roots(m, null))) {
-      for (SNode expr : ListSequence.fromList(SNodeOperations.getNodeDescendants(root, CONCEPTS.Expression$mB, false, new SAbstractConcept[]{}))) {
-        if ((fluentChainVariable(expr) != null)) {
-          ListSequence.fromList(chains).addElement(expr);
-        }
-      }
+  private static SNode invokedClosureOf(SNode body) {
+    // the immediately invoked closure expression whose closure has the body, or null
+    if (!(SNodeOperations.isInstanceOf(body, CONCEPTS.StatementList$m_)) || !(SNodeOperations.isInstanceOf(SNodeOperations.getParent(body), CONCEPTS.ClosureLiteral$rp))) {
+      return null;
     }
-    for (SNode iife : ListSequence.fromList(chains)) {
-      SNode variable = fluentChainVariable(iife);
-      if ((variable == null)) {
-        continue;
-      }
-      List<SNode> statements = bodyStatements(iife);
-      SNode chain = SLinkOperations.getTarget(variable, LINKS.initializer$2twD);
-      SNode genericInit = genericCallWithoutTypeArguments(chain);
-      if ((genericInit != null)) {
-        for (SNode typeArgument : ListSequence.fromList(inferredTypeArguments(genericInit, SLinkOperations.getTarget(variable, LINKS.type$a1UY)))) {
-          ListSequence.fromList(SLinkOperations.getChildren(genericInit, LINKS.typeArgument$jaIN)).addElement(SNodeOperations.copyNode(typeArgument));
-        }
-      }
-      SNodeOperations.deleteNode(chain);
-      if (!(isAtomic(chain))) {
-        SNode parens = SConceptOperations.createNewNode(MetaAdapterFactory.getConcept(0xf3061a5392264cc5L, 0xa443f952ceaf5816L, 0xfb4ed32b7fL, "jetbrains.mps.baseLanguage.structure.ParenthesizedExpression"));
-        SLinkOperations.setTarget(parens, LINKS.expression$TlhM, chain);
-        chain = parens;
-      }
-      for (SNode step : ListSequence.fromList(ListSequence.fromList(statements).page(1, ListSequence.fromList(statements).count() - 1).toList())) {
-        SNode operation = SLinkOperations.getTarget(fluentStep(step, variable), LINKS.operation$gs9E);
-        SNodeOperations.deleteNode(operation);
-        SNode call = SConceptOperations.createNewNode(MetaAdapterFactory.getConcept(0xf3061a5392264cc5L, 0xa443f952ceaf5816L, 0x116b46a08c4L, "jetbrains.mps.baseLanguage.structure.DotExpression"));
-        SLinkOperations.setTarget(call, LINKS.operand$w6IR, chain);
-        SLinkOperations.setTarget(call, LINKS.operation$gs9E, operation);
-        chain = call;
-      }
-      SNodeOperations.replaceWithAnother(iife, chain);
+    SNode closure = SNodeOperations.cast(SNodeOperations.getParent(body), CONCEPTS.ClosureLiteral$rp);
+    SNode invocation = SNodeOperations.getParent(closure);
+    while (SNodeOperations.isInstanceOf(invocation, CONCEPTS.ParenthesizedExpression$Ws)) {
+      invocation = SNodeOperations.getParent(invocation);
     }
+    if (!(SNodeOperations.isInstanceOf(invocation, CONCEPTS.Expression$mB))) {
+      return null;
+    }
+    SNode iife = SNodeOperations.cast(invocation, CONCEPTS.Expression$mB);
+    if (iifeClosure(iife) != closure) {
+      return null;
+    }
+    return iife;
+  }
+  public static SNode fluentChainOf(SNode statement) {
+    // the immediately invoked closure of whose body the statement is a step v = v.a(..), or null
+    SNode iife = invokedClosureOf(SNodeOperations.getParent(statement));
+    if ((iife == null) || (fluentChainVariable(iife) == null)) {
+      return null;
+    }
+    int index = SNodeOperations.getIndexInParent(statement);
+    if (index < 1 || index >= ListSequence.fromList(bodyStatements(iife)).count() - 1) {
+      return null;
+    }
+    return iife;
+  }
+  public static SNode stepCall(SNode statement) {
+    // the call v.a(..) of a step; its receiver v is replaced by the chain up to the step
+    return fluentStep(statement, fluentChainVariable(fluentChainOf(statement)));
+  }
+  public static SNode calledMethod(SNode call) {
+    return SLinkOperations.getTarget(call, LINKS.baseMethodDeclaration$pyYw);
+  }
+  public static SNode stepOfReceiver(SNode reference) {
+    // the step v = v.a(..) whose call the reference is the receiver of, or null
+    SNode call = SNodeOperations.getParent(reference);
+    if (!(SNodeOperations.isInstanceOf(call, CONCEPTS.DotExpression$yW)) || !(SNodeOperations.getContainingLink(reference).equals(LINKS.operand$w6IR))) {
+      return null;
+    }
+    SNode assignment = SNodeOperations.getParent(call);
+    if (!(SNodeOperations.isInstanceOf(assignment, CONCEPTS.AssignmentExpression$SE)) || !(SNodeOperations.getContainingLink(call).equals(LINKS.rValue$spNK))) {
+      return null;
+    }
+    SNode statement = SNodeOperations.getParent(assignment);
+    if (!(SNodeOperations.isInstanceOf(statement, CONCEPTS.ExpressionStatement$O8)) || !(isFluentStep(SNodeOperations.cast(statement, CONCEPTS.Statement$P6)))) {
+      return null;
+    }
+    return SNodeOperations.cast(statement, CONCEPTS.Statement$P6);
+  }
+  public static List<SNode> typeArgumentsFor(SNode call) {
+    return inferredTypeArguments(call, SLinkOperations.getTarget((SNodeOperations.cast(SNodeOperations.getParent(call), CONCEPTS.LocalVariableDeclaration$41)), LINKS.type$a1UY));
+  }
+  public static boolean needsTypeArguments(SNode call) {
+    // the initializer of a chain variable that leaves the type arguments of a generic method to
+    // inference: once the declared type of the variable is gone, inference has no target type
+    // any more and would fall back to Object
+    SNode parent = SNodeOperations.getParent(call);
+    if (!(SNodeOperations.isInstanceOf(parent, CONCEPTS.LocalVariableDeclaration$41))) {
+      return false;
+    }
+    SNode variable = SNodeOperations.cast(parent, CONCEPTS.LocalVariableDeclaration$41);
+    if (SLinkOperations.getTarget(variable, LINKS.initializer$2twD) != call || genericCallWithoutTypeArguments(SLinkOperations.getTarget(variable, LINKS.initializer$2twD)) != call) {
+      return false;
+    }
+    SNode iife = invokedClosureOf(SNodeOperations.getParent(SNodeOperations.getParent(variable)));
+    return (iife != null) && fluentChainVariable(iife) == variable;
+  }
+  public static boolean chainNeedsParens(SNode iife) {
+    // a chain of calls never needs parentheses; a bare initializer might
+    return ListSequence.fromList(bodyStatements(iife)).count() == 2 && needsParens(iife, SLinkOperations.getTarget(fluentChainVariable(iife), LINKS.initializer$2twD));
+  }
+  public static SNode chainTail(SNode iife) {
+    // the input node the whole chain is generated from: the last step, or the initializer alone
+    // when the closure only declares and returns the variable
+    List<SNode> statements = bodyStatements(iife);
+    if (ListSequence.fromList(statements).count() == 2) {
+      return SLinkOperations.getTarget(fluentChainVariable(iife), LINKS.initializer$2twD);
+    }
+    return ListSequence.fromList(statements).page(ListSequence.fromList(statements).count() - 2, ListSequence.fromList(statements).count() - 1).first();
+  }
+  public static boolean receiverNeedsParens(SNode statement) {
+    // only the initializer can be anything; every later receiver is a call
+    return SNodeOperations.getIndexInParent(statement) == 1 && !(isAtomic(SNodeOperations.cast(stepReceiver(statement), CONCEPTS.Expression$mB)));
+  }
+  public static SNode stepReceiver(SNode statement) {
+    // the input node the receiver of the step's call is generated from: the step before it, whose
+    // own reduction is the chain up to there, or the variable's initializer for the first step.
+    // Each step of the chain is hung on its own input node, so that a chain of any length is
+    // built in a single pass: a template cannot nest to a variable depth, and folding one step
+    // per pass would exceed the ten passes a step of the plan is allowed
+    if (SNodeOperations.getIndexInParent(statement) == 1) {
+      return SLinkOperations.getTarget(fluentChainVariable(fluentChainOf(statement)), LINKS.initializer$2twD);
+    }
+    return SNodeOperations.getPrevSibling(statement);
+  }
+  public static boolean isFluentStep(SNode statement) {
+    return (fluentChainOf(statement) != null);
   }
   private static boolean isSubtype(SNode subtype, SNode supertype) {
     if ((subtype == null) || (supertype == null)) {
@@ -956,6 +1017,7 @@ public class OptimizerUtil {
     /*package*/ static final SConcept AssignmentExpression$SE = MetaAdapterFactory.getConcept(0xf3061a5392264cc5L, 0xa443f952ceaf5816L, 0xf8c77f1e96L, "jetbrains.mps.baseLanguage.structure.AssignmentExpression");
     /*package*/ static final SConcept ClassifierType$bL = MetaAdapterFactory.getConcept(0xf3061a5392264cc5L, 0xa443f952ceaf5816L, 0x101de48bf9eL, "jetbrains.mps.baseLanguage.structure.ClassifierType");
     /*package*/ static final SConcept TypeVariableReference$WL = MetaAdapterFactory.getConcept(0xf3061a5392264cc5L, 0xa443f952ceaf5816L, 0x102467229d8L, "jetbrains.mps.baseLanguage.structure.TypeVariableReference");
+    /*package*/ static final SConcept StatementList$m_ = MetaAdapterFactory.getConcept(0xf3061a5392264cc5L, 0xa443f952ceaf5816L, 0xf8cc56b200L, "jetbrains.mps.baseLanguage.structure.StatementList");
     /*package*/ static final SConcept Expression$mB = MetaAdapterFactory.getConcept(0xf3061a5392264cc5L, 0xa443f952ceaf5816L, 0xf8c37f506fL, "jetbrains.mps.baseLanguage.structure.Expression");
     /*package*/ static final SConcept ArrayType$rh = MetaAdapterFactory.getConcept(0xf3061a5392264cc5L, 0xa443f952ceaf5816L, 0xf940d819f7L, "jetbrains.mps.baseLanguage.structure.ArrayType");
     /*package*/ static final SConcept ConstructorDeclaration$yG = MetaAdapterFactory.getConcept(0xf3061a5392264cc5L, 0xa443f952ceaf5816L, 0xf8cc56b204L, "jetbrains.mps.baseLanguage.structure.ConstructorDeclaration");
