@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<debug-info version="2">
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123140:jetbrains.mps.baseLanguage.structure.ConstructorDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123155:jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1144226303539:jetbrains.mps.baseLanguage.structure.ForeachStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123159:jetbrains.mps.baseLanguage.structure.IfStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123165:jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242864:jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/6329021646629104954:jetbrains.mps.baseLanguage.structure.SingleLineComment" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123157:jetbrains.mps.baseLanguage.structure.Statement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1070462154015:jetbrains.mps.baseLanguage.structure.StaticFieldDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1070475587102:jetbrains.mps.baseLanguage.structure.SuperConstructorInvocation" />
+  <root nodeRef="r:11f4114d-159c-4aa2-9cd0-0f082ad2a550(test.org.iets3.core.expr.typetags.physunits.editing@tests)/7083430183627009580">
+    <file name="UnitIsOfferedOnlyOnceInCompletionMenu_Test.java">
+      <node id="7083430183627009580" at="23,55,24,60" concept="9" />
+      <node id="7083430183627009580" at="28,77,29,36" concept="1" />
+      <node id="7083430183627009580" at="34,52,35,19" concept="9" />
+      <node id="7083430183627009580" at="39,51,40,53" concept="1" />
+      <node id="7083430183627458576" at="40,53,41,22" concept="1" />
+      <node id="7486999881017276013" at="41,22,42,0" concept="7" />
+      <node id="7867248897991006182" at="42,0,43,31" concept="5" />
+      <node id="7083430183627458585" at="44,54,45,24" concept="5" />
+      <node id="7083430183627458610" at="47,63,48,34" concept="1" />
+      <node id="7867248897991017307" at="50,9,51,111" concept="1" />
+      <node id="7083430183627009580" at="20,0,22,0" concept="8" trace="ourParametersCacheExtension" />
+      <node id="7083430183627009580" at="23,0,26,0" concept="0" trace="UnitIsOfferedOnlyOnceInCompletionMenu_Test#()V" />
+      <node id="7083430183627009580" at="34,0,37,0" concept="0" trace="TestBody#(Ljetbrains/mps/lang/test/runtime/TransformationTest;)V" />
+      <node id="7083430183627458601" at="46,152,49,11" concept="3" />
+      <node id="7083430183627009580" at="27,0,31,0" concept="4" trace="test_UnitIsOfferedOnlyOnceInCompletionMenu#()V" />
+      <node id="7083430183627458589" at="45,24,50,9" concept="2" />
+      <node id="7083430183627458577" at="43,31,52,9" concept="1" />
+      <node id="7083430183627009580" at="38,0,54,0" concept="4" trace="testMethodImpl#()V" />
+      <scope id="7083430183627009580" at="23,55,24,60" />
+      <scope id="7083430183627009580" at="28,77,29,36" />
+      <scope id="7083430183627009580" at="34,52,35,19" />
+      <scope id="7083430183627458609" at="47,63,48,34" />
+      <scope id="7083430183627009580" at="23,0,26,0" />
+      <scope id="7083430183627009580" at="34,0,37,0">
+        <var name="owner" id="7083430183627009580" />
+      </scope>
+      <scope id="7083430183627458600" at="46,152,49,11" />
+      <scope id="7083430183627009580" at="27,0,31,0" />
+      <scope id="7083430183627458589" at="45,24,50,9">
+        <var name="item" id="7083430183627458590" />
+      </scope>
+      <scope id="7083430183627458584" at="44,54,51,111">
+        <var name="matches" id="7083430183627458586" />
+      </scope>
+      <scope id="7083430183627009580" at="39,51,52,9">
+        <var name="zap" id="7867248897991006185" />
+      </scope>
+      <scope id="7083430183627009580" at="38,0,54,0" />
+      <unit id="7083430183627009580" at="32,0,55,0" name="test.org.iets3.core.expr.typetags.physunits.editing.UnitIsOfferedOnlyOnceInCompletionMenu_Test$TestBody" />
+      <unit id="7083430183627009580" at="18,0,56,0" name="test.org.iets3.core.expr.typetags.physunits.editing.UnitIsOfferedOnlyOnceInCompletionMenu_Test" />
+    </file>
+  </root>
+  <root nodeRef="r:11f4114d-159c-4aa2-9cd0-0f082ad2a550(test.org.iets3.core.expr.typetags.physunits.editing@tests)/7867248897993601236">
+    <file name="QuantityIsStillOfferedInCompletionMenu_Test.java">
+      <node id="7867248897993601236" at="23,56,24,60" concept="9" />
+      <node id="7867248897993601236" at="28,78,29,36" concept="1" />
+      <node id="7867248897993601236" at="34,52,35,19" concept="9" />
+      <node id="7867248897993601236" at="39,51,40,53" concept="1" />
+      <node id="7867248897993601255" at="40,53,41,22" concept="1" />
+      <node id="7867248897993601256" at="41,22,42,0" concept="7" />
+      <node id="7867248897993601257" at="42,0,43,33" concept="5" />
+      <node id="7867248897993601269" at="44,54,45,24" concept="5" />
+      <node id="7867248897993601287" at="47,65,48,34" concept="1" />
+      <node id="7867248897993601299" at="50,9,51,122" concept="1" />
+      <node id="7867248897993601236" at="20,0,22,0" concept="8" trace="ourParametersCacheExtension" />
+      <node id="7867248897993601236" at="23,0,26,0" concept="0" trace="QuantityIsStillOfferedInCompletionMenu_Test#()V" />
+      <node id="7867248897993601236" at="34,0,37,0" concept="0" trace="TestBody#(Ljetbrains/mps/lang/test/runtime/TransformationTest;)V" />
+      <node id="7867248897993601285" at="46,153,49,11" concept="3" />
+      <node id="7867248897993601236" at="27,0,31,0" concept="4" trace="test_QuantityIsStillOfferedInCompletionMenu#()V" />
+      <node id="7867248897993601273" at="45,24,50,9" concept="2" />
+      <node id="7867248897993601261" at="43,33,52,9" concept="1" />
+      <node id="7867248897993601236" at="38,0,54,0" concept="4" trace="testMethodImpl#()V" />
+      <scope id="7867248897993601236" at="23,56,24,60" />
+      <scope id="7867248897993601236" at="28,78,29,36" />
+      <scope id="7867248897993601236" at="34,52,35,19" />
+      <scope id="7867248897993601286" at="47,65,48,34" />
+      <scope id="7867248897993601236" at="23,0,26,0" />
+      <scope id="7867248897993601236" at="34,0,37,0">
+        <var name="owner" id="7867248897993601236" />
+      </scope>
+      <scope id="7867248897993601284" at="46,153,49,11" />
+      <scope id="7867248897993601236" at="27,0,31,0" />
+      <scope id="7867248897993601273" at="45,24,50,9">
+        <var name="item" id="7867248897993601274" />
+      </scope>
+      <scope id="7867248897993601268" at="44,54,51,122">
+        <var name="matches" id="7867248897993601270" />
+      </scope>
+      <scope id="7867248897993601236" at="39,51,52,9">
+        <var name="quax" id="7867248897993601258" />
+      </scope>
+      <scope id="7867248897993601236" at="38,0,54,0" />
+      <unit id="7867248897993601236" at="32,0,55,0" name="test.org.iets3.core.expr.typetags.physunits.editing.QuantityIsStillOfferedInCompletionMenu_Test$TestBody" />
+      <unit id="7867248897993601236" at="18,0,56,0" name="test.org.iets3.core.expr.typetags.physunits.editing.QuantityIsStillOfferedInCompletionMenu_Test" />
+    </file>
+  </root>
+  <root nodeRef="r:11f4114d-159c-4aa2-9cd0-0f082ad2a550(test.org.iets3.core.expr.typetags.physunits.editing@tests)/7867248897993601245">
+    <file name="PrefixedUnitIsStillOfferedInCompletionMenu_Test.java">
+      <node id="7867248897993601245" at="23,60,24,60" concept="9" />
+      <node id="7867248897993601245" at="28,82,29,36" concept="1" />
+      <node id="7867248897993601245" at="34,52,35,19" concept="9" />
+      <node id="7867248897993601245" at="39,51,40,53" concept="1" />
+      <node id="8193022941938127684" at="40,53,41,99" concept="6" />
+      <node id="7867248897993601937" at="41,99,42,22" concept="1" />
+      <node id="7867248897993601938" at="42,22,43,0" concept="7" />
+      <node id="7867248897993601939" at="43,0,44,33" concept="5" />
+      <node id="7867248897993601951" at="45,54,46,24" concept="5" />
+      <node id="7867248897993601969" at="48,65,49,34" concept="1" />
+      <node id="7867248897993601981" at="51,9,52,121" concept="1" />
+      <node id="7867248897993601245" at="20,0,22,0" concept="8" trace="ourParametersCacheExtension" />
+      <node id="7867248897993601245" at="23,0,26,0" concept="0" trace="PrefixedUnitIsStillOfferedInCompletionMenu_Test#()V" />
+      <node id="7867248897993601245" at="34,0,37,0" concept="0" trace="TestBody#(Ljetbrains/mps/lang/test/runtime/TransformationTest;)V" />
+      <node id="7867248897993601967" at="47,153,50,11" concept="3" />
+      <node id="7867248897993601245" at="27,0,31,0" concept="4" trace="test_PrefixedUnitIsStillOfferedInCompletionMenu#()V" />
+      <node id="7867248897993601955" at="46,24,51,9" concept="2" />
+      <node id="7867248897993601943" at="44,33,53,9" concept="1" />
+      <node id="7867248897993601245" at="38,0,55,0" concept="4" trace="testMethodImpl#()V" />
+      <scope id="7867248897993601245" at="23,60,24,60" />
+      <scope id="7867248897993601245" at="28,82,29,36" />
+      <scope id="7867248897993601245" at="34,52,35,19" />
+      <scope id="7867248897993601968" at="48,65,49,34" />
+      <scope id="7867248897993601245" at="23,0,26,0" />
+      <scope id="7867248897993601245" at="34,0,37,0">
+        <var name="owner" id="7867248897993601245" />
+      </scope>
+      <scope id="7867248897993601966" at="47,153,50,11" />
+      <scope id="7867248897993601245" at="27,0,31,0" />
+      <scope id="7867248897993601955" at="46,24,51,9">
+        <var name="item" id="7867248897993601956" />
+      </scope>
+      <scope id="7867248897993601950" at="45,54,52,121">
+        <var name="matches" id="7867248897993601952" />
+      </scope>
+      <scope id="7867248897993601245" at="39,51,53,9">
+        <var name="kqux" id="7867248897993601940" />
+      </scope>
+      <scope id="7867248897993601245" at="38,0,55,0" />
+      <unit id="7867248897993601245" at="32,0,56,0" name="test.org.iets3.core.expr.typetags.physunits.editing.PrefixedUnitIsStillOfferedInCompletionMenu_Test$TestBody" />
+      <unit id="7867248897993601245" at="18,0,57,0" name="test.org.iets3.core.expr.typetags.physunits.editing.PrefixedUnitIsStillOfferedInCompletionMenu_Test" />
+    </file>
+  </root>
+</debug-info>
+

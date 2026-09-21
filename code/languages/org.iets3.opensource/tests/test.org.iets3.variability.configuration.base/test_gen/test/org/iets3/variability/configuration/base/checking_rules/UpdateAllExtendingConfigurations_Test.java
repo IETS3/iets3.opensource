@@ -45,8 +45,14 @@ public class UpdateAllExtendingConfigurations_Test extends BaseTransformationTes
     @Override
     public void testMethodImpl() throws Exception {
       initEditorComponent("6995660538498532227", "6995660538498534456");
+      myModel.getRepository().getModelAccess().runWriteAction(() -> new UpdateAllExtendingConfigs(myProject, myModel, getAnnotatedNode("conf")).run(new DummyIndicator()));
+
+      // Wait for the asynchronous solver runs triggered by the update task to finish before
+      // normalizing the hashes; otherwise they would still run at teardown and fail on the
+      // detached node, logging an error that makes the test unclean (see issue #1965).
+      Thread.sleep(5000);
+
       myModel.getRepository().getModelAccess().runWriteAction(() -> {
-        new UpdateAllExtendingConfigs(myProject, myModel, getAnnotatedNode("conf")).run(new DummyIndicator());
         // Make sure hash values are not compared
         ListSequence.fromList(ListSequence.fromListWithValues(new ArrayList<>(), Arrays.<SNode>asList(getAnnotatedNode("chunkIn"), getAnnotatedNode("chunkOut")))).translate((chunk) -> SNodeOperations.getNodeDescendants(chunk, CONCEPTS.FeatureModelConfiguration$nE, false, new SAbstractConcept[]{})).visitAll((fmc) -> {
           SPropertyOperations.assign(fmc, PROPS.__adaptHash$54Is, 0);
