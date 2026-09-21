@@ -5,7 +5,7 @@ package test.in.expr.os.dectabs;
 import java.math.BigInteger;
 import org.iets3.core.expr.simpleTypes.runtime.AH;
 import java.util.Objects;
-import jetbrains.mps.baseLanguage.closures.runtime._FunctionTypes;
+import java.util.function.Supplier;
 import org.junit.Test;
 import org.junit.Assert;
 import org.iets3.core.expr.genjava.tests.rt.rt.EqualsTestOp;
@@ -38,8 +38,8 @@ public class Generated_utils_dectab_otherwise_Test {
 
     return res;
   }
-  public static Number defaultNoOtherwise(final Number y, final Number x) {
-    Number res = ((_FunctionTypes._return_P0_E0<Number>) () -> {
+  public static Number defaultNoOtherwise(Number y, Number x) {
+    Number res = ((Supplier<Number>) () -> {
       if (AH.isEqual(x, new BigInteger("1"))) {
         if (AH.isEqual(y, new BigInteger("1"))) {
           return (Number) new BigInteger("1");
@@ -59,12 +59,12 @@ public class Generated_utils_dectab_otherwise_Test {
       } else {
         return (Number) new BigInteger("0");
       }
-    }).invoke();
+    }).get();
 
     return res;
   }
-  public static Number defaultWithOtherwise(final Number y, final Number x) {
-    Number res = ((_FunctionTypes._return_P0_E0<Number>) () -> {
+  public static Number defaultWithOtherwise(Number y, Number x) {
+    Number res = ((Supplier<Number>) () -> {
       if (AH.isEqual(x, new BigInteger("1"))) {
         if (AH.isEqual(y, new BigInteger("1"))) {
           return (Number) new BigInteger("1");
@@ -90,12 +90,12 @@ public class Generated_utils_dectab_otherwise_Test {
           return (Number) new BigInteger("9");
         }
       }
-    }).invoke();
+    }).get();
 
     return res;
   }
-  public static Number defaultWithOtherwiseWithPredefXY(final Number y, final Number x) {
-    Number res = ((_FunctionTypes._return_P0_E0<Number>) () -> {
+  public static Number defaultWithOtherwiseWithPredefXY(Number y, Number x) {
+    Number res = ((Supplier<Number>) () -> {
       if (AH.isEqual(x, new BigInteger("1"))) {
         if (AH.isEqual(y, new BigInteger("1"))) {
           return (Number) new BigInteger("1");
@@ -121,7 +121,7 @@ public class Generated_utils_dectab_otherwise_Test {
           return (Number) new BigInteger("9");
         }
       }
-    }).invoke();
+    }).get();
 
     return res;
   }

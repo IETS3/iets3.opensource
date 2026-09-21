@@ -13,7 +13,6 @@ import java.time.format.DateTimeFormatter;
 import org.pcollections.TreePVector;
 import java.util.ArrayList;
 import org.iets3.core.expr.simpleTypes.runtime.OH;
-import java.util.Comparator;
 import java.util.stream.Collectors;
 
 /**
@@ -249,99 +248,35 @@ public class Generated_time_Test {
   }
   @Test
   public void sorting_item5_8432595092503075938() throws Throwable {
-    Assert.assertEquals("Expected: " + TreePVector.<LocalTime>from(new ArrayList<LocalTime>()) + ", but was: " + TreePVector.<LocalTime>from(TreePVector.<LocalTime>from(new ArrayList<LocalTime>()).stream().filter(OH.predicate()).sorted(new Comparator<LocalTime>() {
-      public int compare(LocalTime p0, LocalTime p1) {
-        return OH.compare(p0, p1);
-      }
-    }).collect(Collectors.<LocalTime>toList())), TreePVector.<LocalTime>from(new ArrayList<LocalTime>()), TreePVector.<LocalTime>from(TreePVector.<LocalTime>from(new ArrayList<LocalTime>()).stream().filter(OH.predicate()).sorted(new Comparator<LocalTime>() {
-      public int compare(LocalTime p0, LocalTime p1) {
-        return OH.compare(p0, p1);
-      }
-    }).collect(Collectors.<LocalTime>toList())));
+    Assert.assertEquals("Expected: " + TreePVector.<LocalTime>from(new ArrayList<LocalTime>()) + ", but was: " + TreePVector.<LocalTime>from(TreePVector.<LocalTime>from(new ArrayList<LocalTime>()).stream().filter(OH.predicate()).sorted((LocalTime p0, LocalTime p1) -> OH.compare(p0, p1)).collect(Collectors.<LocalTime>toList())), TreePVector.<LocalTime>from(new ArrayList<LocalTime>()), TreePVector.<LocalTime>from(TreePVector.<LocalTime>from(new ArrayList<LocalTime>()).stream().filter(OH.predicate()).sorted((LocalTime p0, LocalTime p1) -> OH.compare(p0, p1)).collect(Collectors.<LocalTime>toList())));
   }
   @Test
   public void sorting_item6_8432595092503075944() throws Throwable {
-    Assert.assertEquals("Expected: " + TreePVector.<LocalTime>empty().plus(Generated_time_Test.zero_) + ", but was: " + TreePVector.<LocalTime>from(TreePVector.<LocalTime>empty().plus(Generated_time_Test.zero_).stream().filter(OH.predicate()).sorted(new Comparator<LocalTime>() {
-      public int compare(LocalTime p0, LocalTime p1) {
-        return OH.compare(p0, p1);
-      }
-    }).collect(Collectors.<LocalTime>toList())), TreePVector.<LocalTime>empty().plus(Generated_time_Test.zero_), TreePVector.<LocalTime>from(TreePVector.<LocalTime>empty().plus(Generated_time_Test.zero_).stream().filter(OH.predicate()).sorted(new Comparator<LocalTime>() {
-      public int compare(LocalTime p0, LocalTime p1) {
-        return OH.compare(p0, p1);
-      }
-    }).collect(Collectors.<LocalTime>toList())));
+    Assert.assertEquals("Expected: " + TreePVector.<LocalTime>empty().plus(Generated_time_Test.zero_) + ", but was: " + TreePVector.<LocalTime>from(TreePVector.<LocalTime>empty().plus(Generated_time_Test.zero_).stream().filter(OH.predicate()).sorted((LocalTime p0, LocalTime p1) -> OH.compare(p0, p1)).collect(Collectors.<LocalTime>toList())), TreePVector.<LocalTime>empty().plus(Generated_time_Test.zero_), TreePVector.<LocalTime>from(TreePVector.<LocalTime>empty().plus(Generated_time_Test.zero_).stream().filter(OH.predicate()).sorted((LocalTime p0, LocalTime p1) -> OH.compare(p0, p1)).collect(Collectors.<LocalTime>toList())));
   }
   @Test
   public void sorting_item7_8432595092503075950() throws Throwable {
-    Assert.assertEquals("Expected: " + TreePVector.<LocalTime>empty().plus(Generated_time_Test.zero_).plus(Generated_time_Test.lunch_) + ", but was: " + TreePVector.<LocalTime>from(TreePVector.<LocalTime>empty().plus(Generated_time_Test.zero_).plus(Generated_time_Test.lunch_).stream().filter(OH.predicate()).sorted(new Comparator<LocalTime>() {
-      public int compare(LocalTime p0, LocalTime p1) {
-        return OH.compare(p0, p1);
-      }
-    }).collect(Collectors.<LocalTime>toList())), TreePVector.<LocalTime>empty().plus(Generated_time_Test.zero_).plus(Generated_time_Test.lunch_), TreePVector.<LocalTime>from(TreePVector.<LocalTime>empty().plus(Generated_time_Test.zero_).plus(Generated_time_Test.lunch_).stream().filter(OH.predicate()).sorted(new Comparator<LocalTime>() {
-      public int compare(LocalTime p0, LocalTime p1) {
-        return OH.compare(p0, p1);
-      }
-    }).collect(Collectors.<LocalTime>toList())));
+    Assert.assertEquals("Expected: " + TreePVector.<LocalTime>empty().plus(Generated_time_Test.zero_).plus(Generated_time_Test.lunch_) + ", but was: " + TreePVector.<LocalTime>from(TreePVector.<LocalTime>empty().plus(Generated_time_Test.zero_).plus(Generated_time_Test.lunch_).stream().filter(OH.predicate()).sorted((LocalTime p0, LocalTime p1) -> OH.compare(p0, p1)).collect(Collectors.<LocalTime>toList())), TreePVector.<LocalTime>empty().plus(Generated_time_Test.zero_).plus(Generated_time_Test.lunch_), TreePVector.<LocalTime>from(TreePVector.<LocalTime>empty().plus(Generated_time_Test.zero_).plus(Generated_time_Test.lunch_).stream().filter(OH.predicate()).sorted((LocalTime p0, LocalTime p1) -> OH.compare(p0, p1)).collect(Collectors.<LocalTime>toList())));
   }
   @Test
   public void sorting_item8_788506343946576606() throws Throwable {
-    Assert.assertEquals("Expected: " + TreePVector.<LocalTime>empty().plus(Generated_time_Test.zero_).plus(Generated_time_Test.lunch_).plus(Generated_time_Test.max_) + ", but was: " + TreePVector.<LocalTime>from(TreePVector.<LocalTime>empty().plus(Generated_time_Test.zero_).plus(Generated_time_Test.lunch_).plus(Generated_time_Test.max_).stream().filter(OH.predicate()).sorted(new Comparator<LocalTime>() {
-      public int compare(LocalTime p0, LocalTime p1) {
-        return OH.compare(p0, p1);
-      }
-    }).collect(Collectors.<LocalTime>toList())), TreePVector.<LocalTime>empty().plus(Generated_time_Test.zero_).plus(Generated_time_Test.lunch_).plus(Generated_time_Test.max_), TreePVector.<LocalTime>from(TreePVector.<LocalTime>empty().plus(Generated_time_Test.zero_).plus(Generated_time_Test.lunch_).plus(Generated_time_Test.max_).stream().filter(OH.predicate()).sorted(new Comparator<LocalTime>() {
-      public int compare(LocalTime p0, LocalTime p1) {
-        return OH.compare(p0, p1);
-      }
-    }).collect(Collectors.<LocalTime>toList())));
+    Assert.assertEquals("Expected: " + TreePVector.<LocalTime>empty().plus(Generated_time_Test.zero_).plus(Generated_time_Test.lunch_).plus(Generated_time_Test.max_) + ", but was: " + TreePVector.<LocalTime>from(TreePVector.<LocalTime>empty().plus(Generated_time_Test.zero_).plus(Generated_time_Test.lunch_).plus(Generated_time_Test.max_).stream().filter(OH.predicate()).sorted((LocalTime p0, LocalTime p1) -> OH.compare(p0, p1)).collect(Collectors.<LocalTime>toList())), TreePVector.<LocalTime>empty().plus(Generated_time_Test.zero_).plus(Generated_time_Test.lunch_).plus(Generated_time_Test.max_), TreePVector.<LocalTime>from(TreePVector.<LocalTime>empty().plus(Generated_time_Test.zero_).plus(Generated_time_Test.lunch_).plus(Generated_time_Test.max_).stream().filter(OH.predicate()).sorted((LocalTime p0, LocalTime p1) -> OH.compare(p0, p1)).collect(Collectors.<LocalTime>toList())));
   }
   @Test
   public void sorting_item10_8432595092503075957() throws Throwable {
-    Assert.assertEquals("Expected: " + TreePVector.<LocalTime>from(new ArrayList<LocalTime>()) + ", but was: " + TreePVector.<LocalTime>from(TreePVector.<LocalTime>from(new ArrayList<LocalTime>()).stream().filter(OH.predicate()).sorted(new Comparator<LocalTime>() {
-      public int compare(LocalTime p0, LocalTime p1) {
-        return OH.compare(p1, p0);
-      }
-    }).collect(Collectors.<LocalTime>toList())), TreePVector.<LocalTime>from(new ArrayList<LocalTime>()), TreePVector.<LocalTime>from(TreePVector.<LocalTime>from(new ArrayList<LocalTime>()).stream().filter(OH.predicate()).sorted(new Comparator<LocalTime>() {
-      public int compare(LocalTime p0, LocalTime p1) {
-        return OH.compare(p1, p0);
-      }
-    }).collect(Collectors.<LocalTime>toList())));
+    Assert.assertEquals("Expected: " + TreePVector.<LocalTime>from(new ArrayList<LocalTime>()) + ", but was: " + TreePVector.<LocalTime>from(TreePVector.<LocalTime>from(new ArrayList<LocalTime>()).stream().filter(OH.predicate()).sorted((LocalTime p0, LocalTime p1) -> OH.compare(p1, p0)).collect(Collectors.<LocalTime>toList())), TreePVector.<LocalTime>from(new ArrayList<LocalTime>()), TreePVector.<LocalTime>from(TreePVector.<LocalTime>from(new ArrayList<LocalTime>()).stream().filter(OH.predicate()).sorted((LocalTime p0, LocalTime p1) -> OH.compare(p1, p0)).collect(Collectors.<LocalTime>toList())));
   }
   @Test
   public void sorting_item11_8432595092503075963() throws Throwable {
-    Assert.assertEquals("Expected: " + TreePVector.<LocalTime>empty().plus(Generated_time_Test.zero_) + ", but was: " + TreePVector.<LocalTime>from(TreePVector.<LocalTime>empty().plus(Generated_time_Test.zero_).stream().filter(OH.predicate()).sorted(new Comparator<LocalTime>() {
-      public int compare(LocalTime p0, LocalTime p1) {
-        return OH.compare(p1, p0);
-      }
-    }).collect(Collectors.<LocalTime>toList())), TreePVector.<LocalTime>empty().plus(Generated_time_Test.zero_), TreePVector.<LocalTime>from(TreePVector.<LocalTime>empty().plus(Generated_time_Test.zero_).stream().filter(OH.predicate()).sorted(new Comparator<LocalTime>() {
-      public int compare(LocalTime p0, LocalTime p1) {
-        return OH.compare(p1, p0);
-      }
-    }).collect(Collectors.<LocalTime>toList())));
+    Assert.assertEquals("Expected: " + TreePVector.<LocalTime>empty().plus(Generated_time_Test.zero_) + ", but was: " + TreePVector.<LocalTime>from(TreePVector.<LocalTime>empty().plus(Generated_time_Test.zero_).stream().filter(OH.predicate()).sorted((LocalTime p0, LocalTime p1) -> OH.compare(p1, p0)).collect(Collectors.<LocalTime>toList())), TreePVector.<LocalTime>empty().plus(Generated_time_Test.zero_), TreePVector.<LocalTime>from(TreePVector.<LocalTime>empty().plus(Generated_time_Test.zero_).stream().filter(OH.predicate()).sorted((LocalTime p0, LocalTime p1) -> OH.compare(p1, p0)).collect(Collectors.<LocalTime>toList())));
   }
   @Test
   public void sorting_item12_8432595092503075969() throws Throwable {
-    Assert.assertEquals("Expected: " + TreePVector.<LocalTime>empty().plus(Generated_time_Test.lunch_).plus(Generated_time_Test.zero_) + ", but was: " + TreePVector.<LocalTime>from(TreePVector.<LocalTime>empty().plus(Generated_time_Test.zero_).plus(Generated_time_Test.lunch_).stream().filter(OH.predicate()).sorted(new Comparator<LocalTime>() {
-      public int compare(LocalTime p0, LocalTime p1) {
-        return OH.compare(p1, p0);
-      }
-    }).collect(Collectors.<LocalTime>toList())), TreePVector.<LocalTime>empty().plus(Generated_time_Test.lunch_).plus(Generated_time_Test.zero_), TreePVector.<LocalTime>from(TreePVector.<LocalTime>empty().plus(Generated_time_Test.zero_).plus(Generated_time_Test.lunch_).stream().filter(OH.predicate()).sorted(new Comparator<LocalTime>() {
-      public int compare(LocalTime p0, LocalTime p1) {
-        return OH.compare(p1, p0);
-      }
-    }).collect(Collectors.<LocalTime>toList())));
+    Assert.assertEquals("Expected: " + TreePVector.<LocalTime>empty().plus(Generated_time_Test.lunch_).plus(Generated_time_Test.zero_) + ", but was: " + TreePVector.<LocalTime>from(TreePVector.<LocalTime>empty().plus(Generated_time_Test.zero_).plus(Generated_time_Test.lunch_).stream().filter(OH.predicate()).sorted((LocalTime p0, LocalTime p1) -> OH.compare(p1, p0)).collect(Collectors.<LocalTime>toList())), TreePVector.<LocalTime>empty().plus(Generated_time_Test.lunch_).plus(Generated_time_Test.zero_), TreePVector.<LocalTime>from(TreePVector.<LocalTime>empty().plus(Generated_time_Test.zero_).plus(Generated_time_Test.lunch_).stream().filter(OH.predicate()).sorted((LocalTime p0, LocalTime p1) -> OH.compare(p1, p0)).collect(Collectors.<LocalTime>toList())));
   }
   @Test
   public void sorting_item13_788506343946576929() throws Throwable {
-    Assert.assertEquals("Expected: " + TreePVector.<LocalTime>empty().plus(Generated_time_Test.max_).plus(Generated_time_Test.lunch_).plus(Generated_time_Test.zero_) + ", but was: " + TreePVector.<LocalTime>from(TreePVector.<LocalTime>empty().plus(Generated_time_Test.zero_).plus(Generated_time_Test.lunch_).plus(Generated_time_Test.max_).stream().filter(OH.predicate()).sorted(new Comparator<LocalTime>() {
-      public int compare(LocalTime p0, LocalTime p1) {
-        return OH.compare(p1, p0);
-      }
-    }).collect(Collectors.<LocalTime>toList())), TreePVector.<LocalTime>empty().plus(Generated_time_Test.max_).plus(Generated_time_Test.lunch_).plus(Generated_time_Test.zero_), TreePVector.<LocalTime>from(TreePVector.<LocalTime>empty().plus(Generated_time_Test.zero_).plus(Generated_time_Test.lunch_).plus(Generated_time_Test.max_).stream().filter(OH.predicate()).sorted(new Comparator<LocalTime>() {
-      public int compare(LocalTime p0, LocalTime p1) {
-        return OH.compare(p1, p0);
-      }
-    }).collect(Collectors.<LocalTime>toList())));
+    Assert.assertEquals("Expected: " + TreePVector.<LocalTime>empty().plus(Generated_time_Test.max_).plus(Generated_time_Test.lunch_).plus(Generated_time_Test.zero_) + ", but was: " + TreePVector.<LocalTime>from(TreePVector.<LocalTime>empty().plus(Generated_time_Test.zero_).plus(Generated_time_Test.lunch_).plus(Generated_time_Test.max_).stream().filter(OH.predicate()).sorted((LocalTime p0, LocalTime p1) -> OH.compare(p1, p0)).collect(Collectors.<LocalTime>toList())), TreePVector.<LocalTime>empty().plus(Generated_time_Test.max_).plus(Generated_time_Test.lunch_).plus(Generated_time_Test.zero_), TreePVector.<LocalTime>from(TreePVector.<LocalTime>empty().plus(Generated_time_Test.zero_).plus(Generated_time_Test.lunch_).plus(Generated_time_Test.max_).stream().filter(OH.predicate()).sorted((LocalTime p0, LocalTime p1) -> OH.compare(p1, p0)).collect(Collectors.<LocalTime>toList())));
   }
   @Test
   public void defaultValues_item0_6932772747675576602() throws Throwable {

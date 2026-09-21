@@ -16,8 +16,9 @@ import java.math.BigInteger;
 import java.math.BigDecimal;
 import java.math.RoundingMode;
 import org.iets3.core.expr.genjava.tests.rt.rt.EqualsTestOp;
-import jetbrains.mps.baseLanguage.closures.runtime._FunctionTypes;
+import java.util.function.Supplier;
 import org.iets3.core.expr.base.plugin.ValidValue;
+import jetbrains.mps.baseLanguage.closures.runtime._FunctionTypes;
 
 /**
  * 
@@ -93,7 +94,7 @@ public class Generated_precision_Test {
   }
   @Test
   public void limits_item4_1988438614050163049() throws Throwable {
-    Assert.assertEquals("Expected: " + true + ", but was: " + ((_FunctionTypes._return_P0_E0<ValidValue>) () -> {
+    Assert.assertEquals("Expected: " + true + ", but was: " + ((Supplier<ValidValue>) () -> {
       Boolean ok = ((_FunctionTypes._return_P0_E0<Boolean>) () -> {
         Number it = AH.limit(new BigDecimal("200.00").setScale(2, RoundingMode.DOWN), new BigInteger("60"), new BigInteger("80"));
         Boolean res = true;
@@ -106,7 +107,7 @@ public class Generated_precision_Test {
       }
       ValidValue res = new ValidValue(ok, msg);
       return res;
-    }).invoke().ok, (Object) true, (Object) ((_FunctionTypes._return_P0_E0<ValidValue>) () -> {
+    }).get().ok, (Object) true, (Object) ((Supplier<ValidValue>) () -> {
       Boolean ok = ((_FunctionTypes._return_P0_E0<Boolean>) () -> {
         Number it = AH.limit(new BigDecimal("200.00").setScale(2, RoundingMode.DOWN), new BigInteger("60"), new BigInteger("80"));
         Boolean res = true;
@@ -119,7 +120,7 @@ public class Generated_precision_Test {
       }
       ValidValue res = new ValidValue(ok, msg);
       return res;
-    }).invoke().ok);
+    }).get().ok);
   }
   @Test
   public void limits_item5_1988438614050163055() throws Throwable {

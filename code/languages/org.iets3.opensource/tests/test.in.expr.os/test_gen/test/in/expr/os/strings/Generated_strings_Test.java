@@ -8,7 +8,7 @@ import org.junit.Test;
 import org.junit.Assert;
 import org.iets3.core.expr.genjava.tests.rt.rt.EqualsTestOp;
 import java.util.Objects;
-import jetbrains.mps.baseLanguage.closures.runtime._FunctionTypes;
+import java.util.function.Supplier;
 
 /**
  * 
@@ -214,19 +214,19 @@ public class Generated_strings_Test {
   }
   @Test
   public void optionStuff_item1_6859926652475793984() throws Throwable {
-    Assert.assertTrue("Expected: " + new BigInteger("5") + ", but was: " + (((_FunctionTypes._return_P0_E0<Number>) () -> {
+    Assert.assertTrue("Expected: " + new BigInteger("5") + ", but was: " + ((Supplier<Number>) () -> {
       if (org.iets3.core.expr.genjava.base.rt.rt.AH.isSome(AH.stringLength("Hello"))) {
         return AH.stringLength("Hello");
       } else {
         return (Number) new BigInteger("0");
       }
-    }).invoke()), EqualsTestOp.matches(new BigInteger("5"), ((_FunctionTypes._return_P0_E0<Number>) () -> {
+    }).get(), EqualsTestOp.matches(new BigInteger("5"), ((Supplier<Number>) () -> {
       if (org.iets3.core.expr.genjava.base.rt.rt.AH.isSome(AH.stringLength("Hello"))) {
         return AH.stringLength("Hello");
       } else {
         return (Number) new BigInteger("0");
       }
-    }).invoke()));
+    }).get()));
   }
   @Test
   public void optionStuff_item2_6859926652483662086() throws Throwable {
@@ -236,7 +236,7 @@ public class Generated_strings_Test {
   public void optionStuff_item3_6859926652475793868() throws Throwable {
     Assert.assertEquals("Expected: " + null + ", but was: " + AH.stringLength(null), (Object) null, AH.stringLength(null));
   }
-  public static final String i1_ = ((_FunctionTypes._return_P0_E0<String>) () -> {
+  public static final String i1_ = ((Supplier<String>) () -> {
     StringBuilder sb = new StringBuilder();
 
     {
@@ -250,8 +250,8 @@ public class Generated_strings_Test {
       sb.append(" X");
     }
     return sb.toString();
-  }).invoke();
-  public static final String i2_ = ((_FunctionTypes._return_P0_E0<String>) () -> {
+  }).get();
+  public static final String i2_ = ((Supplier<String>) () -> {
     StringBuilder sb = new StringBuilder();
 
     {
@@ -265,8 +265,8 @@ public class Generated_strings_Test {
       sb.append(" and some behind   ");
     }
     return sb.toString();
-  }).invoke();
-  public static final String i3_ = ((_FunctionTypes._return_P0_E0<String>) () -> {
+  }).get();
+  public static final String i3_ = ((Supplier<String>) () -> {
     StringBuilder sb = new StringBuilder();
 
     {
@@ -277,8 +277,8 @@ public class Generated_strings_Test {
       sb.append(" at the beginning");
     }
     return sb.toString();
-  }).invoke();
-  public static final String i4_ = ((_FunctionTypes._return_P0_E0<String>) () -> {
+  }).get();
+  public static final String i4_ = ((Supplier<String>) () -> {
     StringBuilder sb = new StringBuilder();
 
     {
@@ -289,8 +289,8 @@ public class Generated_strings_Test {
       sb.append(content);
     }
     return sb.toString();
-  }).invoke();
-  public static final String i5_ = ((_FunctionTypes._return_P0_E0<String>) () -> {
+  }).get();
+  public static final String i5_ = ((Supplier<String>) () -> {
     StringBuilder sb = new StringBuilder();
 
     {
@@ -298,8 +298,8 @@ public class Generated_strings_Test {
       sb.append(content);
     }
     return sb.toString();
-  }).invoke();
-  public static final String i6_ = ((_FunctionTypes._return_P0_E0<String>) () -> {
+  }).get();
+  public static final String i6_ = ((Supplier<String>) () -> {
     StringBuilder sb = new StringBuilder();
 
     {
@@ -320,7 +320,7 @@ public class Generated_strings_Test {
       sb.append(" spaces   ");
     }
     return sb.toString();
-  }).invoke();
+  }).get();
   @Test
   public void interpolation_item0_8293738266740717945() throws Throwable {
     Assert.assertEquals("Expected: " + "Here Hallo X" + ", but was: " + Generated_strings_Test.i1_, "Here Hallo X", Generated_strings_Test.i1_);

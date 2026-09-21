@@ -8,7 +8,7 @@ import org.junit.Test;
 import org.junit.Assert;
 import org.iets3.core.expr.genjava.tests.rt.rt.EqualsTestOp;
 import java.util.Objects;
-import jetbrains.mps.baseLanguage.closures.runtime._FunctionTypes;
+import java.util.function.Supplier;
 
 /**
  * 
@@ -140,19 +140,19 @@ public class Generated_option_strings_Test {
   }
   @Test
   public void optionStuff_item1_8613480905418735450() throws Throwable {
-    Assert.assertTrue("Expected: " + new BigInteger("5") + ", but was: " + (((_FunctionTypes._return_P0_E0<Number>) () -> {
+    Assert.assertTrue("Expected: " + new BigInteger("5") + ", but was: " + ((Supplier<Number>) () -> {
       if (org.iets3.core.expr.genjava.base.rt.rt.AH.isSome(AH.stringLength("Hello"))) {
         return AH.stringLength("Hello");
       } else {
         return (Number) new BigInteger("0");
       }
-    }).invoke()), EqualsTestOp.matches(new BigInteger("5"), ((_FunctionTypes._return_P0_E0<Number>) () -> {
+    }).get(), EqualsTestOp.matches(new BigInteger("5"), ((Supplier<Number>) () -> {
       if (org.iets3.core.expr.genjava.base.rt.rt.AH.isSome(AH.stringLength("Hello"))) {
         return AH.stringLength("Hello");
       } else {
         return (Number) new BigInteger("0");
       }
-    }).invoke()));
+    }).get()));
   }
   @Test
   public void optionStuff_item2_8613480905418735462() throws Throwable {

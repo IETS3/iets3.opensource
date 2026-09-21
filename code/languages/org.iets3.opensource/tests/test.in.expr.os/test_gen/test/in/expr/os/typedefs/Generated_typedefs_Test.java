@@ -11,7 +11,7 @@ import org.iets3.core.expr.genjava.messages.rt.rt.ProgramLocation;
 import java.util.HashSet;
 import java.util.Arrays;
 import org.iets3.core.expr.genjava.base.rt.rt.GlobalContext;
-import jetbrains.mps.baseLanguage.closures.runtime._FunctionTypes;
+import java.util.function.Supplier;
 import org.junit.Test;
 import org.junit.Assert;
 import org.iets3.core.expr.genjava.tests.rt.rt.EqualsTestOp;
@@ -19,7 +19,6 @@ import org.apache.commons.lang3.builder.HashCodeBuilder;
 import org.iets3.core.expr.simpleTypes.runtime.OH;
 import org.pcollections.TreePVector;
 import java.util.ArrayList;
-import java.util.Comparator;
 import java.util.stream.Collectors;
 
 /**
@@ -29,7 +28,7 @@ public class Generated_typedefs_Test {
 
 
 
-  public static Number f(final Number arg) {
+  public static Number f(Number arg) {
     {
       Number it = arg;
       if (!(!(AH.isLess(it, new BigInteger("0"))))) {
@@ -38,7 +37,7 @@ public class Generated_typedefs_Test {
         throw new ContractViolatedException(message);
       }
     }
-    Number res = ((_FunctionTypes._return_P0_E0<Number>) () -> {
+    Number res = ((Supplier<Number>) () -> {
       Number result = arg;
       {
         Number it = result;
@@ -54,7 +53,7 @@ public class Generated_typedefs_Test {
         }
       }
       return result;
-    }).invoke();
+    }).get();
 
     return res;
   }
@@ -217,26 +216,26 @@ public class Generated_typedefs_Test {
       // expected exception
     }
   }
-  public static Number testSymbol(final Number x, final Number y) {
-    Number res = ((_FunctionTypes._return_P0_E0<Number>) () -> {
+  public static Number testSymbol(Number x, Number y) {
+    Number res = ((Supplier<Number>) () -> {
       if (org.iets3.core.expr.genjava.base.rt.rt.AH.isSome(x) && org.iets3.core.expr.genjava.base.rt.rt.AH.isSome(y)) {
         return AH.add(x, y);
       } else {
         return null;
       }
-    }).invoke();
+    }).get();
 
     return res;
   }
   public static Number testCall() {
-    Number res = ((_FunctionTypes._return_P0_E0<Number>) () -> {
+    Number res = ((Supplier<Number>) () -> {
       Number v = Generated_typedefs_Test.optionize(new BigInteger("10"));
       if (org.iets3.core.expr.genjava.base.rt.rt.AH.isSome(Generated_typedefs_Test.optionize(new BigInteger("10")))) {
         return v;
       } else {
         return null;
       }
-    }).invoke();
+    }).get();
 
     return res;
   }
@@ -346,75 +345,27 @@ public class Generated_typedefs_Test {
   }
   @Test
   public void sorting_item4_2143211017902290124() throws Throwable {
-    Assert.assertEquals("Expected: " + TreePVector.<Number>from(new ArrayList<Number>()) + ", but was: " + TreePVector.<Number>from(TreePVector.<Number>from(new ArrayList<Number>()).stream().filter(OH.predicate()).sorted(new Comparator<Number>() {
-      public int compare(Number p0, Number p1) {
-        return OH.compare(p0, p1);
-      }
-    }).collect(Collectors.<Number>toList())), TreePVector.<Number>from(new ArrayList<Number>()), TreePVector.<Number>from(TreePVector.<Number>from(new ArrayList<Number>()).stream().filter(OH.predicate()).sorted(new Comparator<Number>() {
-      public int compare(Number p0, Number p1) {
-        return OH.compare(p0, p1);
-      }
-    }).collect(Collectors.<Number>toList())));
+    Assert.assertEquals("Expected: " + TreePVector.<Number>from(new ArrayList<Number>()) + ", but was: " + TreePVector.<Number>from(TreePVector.<Number>from(new ArrayList<Number>()).stream().filter(OH.predicate()).sorted((Number p0, Number p1) -> OH.compare(p0, p1)).collect(Collectors.<Number>toList())), TreePVector.<Number>from(new ArrayList<Number>()), TreePVector.<Number>from(TreePVector.<Number>from(new ArrayList<Number>()).stream().filter(OH.predicate()).sorted((Number p0, Number p1) -> OH.compare(p0, p1)).collect(Collectors.<Number>toList())));
   }
   @Test
   public void sorting_item5_2143211017902291809() throws Throwable {
-    Assert.assertEquals("Expected: " + TreePVector.<Number>empty().plus(Generated_typedefs_Test.s2_) + ", but was: " + TreePVector.<Number>from(TreePVector.<Number>empty().plus(Generated_typedefs_Test.s2_).stream().filter(OH.predicate()).sorted(new Comparator<Number>() {
-      public int compare(Number p0, Number p1) {
-        return OH.compare(p0, p1);
-      }
-    }).collect(Collectors.<Number>toList())), TreePVector.<Number>empty().plus(Generated_typedefs_Test.s2_), TreePVector.<Number>from(TreePVector.<Number>empty().plus(Generated_typedefs_Test.s2_).stream().filter(OH.predicate()).sorted(new Comparator<Number>() {
-      public int compare(Number p0, Number p1) {
-        return OH.compare(p0, p1);
-      }
-    }).collect(Collectors.<Number>toList())));
+    Assert.assertEquals("Expected: " + TreePVector.<Number>empty().plus(Generated_typedefs_Test.s2_) + ", but was: " + TreePVector.<Number>from(TreePVector.<Number>empty().plus(Generated_typedefs_Test.s2_).stream().filter(OH.predicate()).sorted((Number p0, Number p1) -> OH.compare(p0, p1)).collect(Collectors.<Number>toList())), TreePVector.<Number>empty().plus(Generated_typedefs_Test.s2_), TreePVector.<Number>from(TreePVector.<Number>empty().plus(Generated_typedefs_Test.s2_).stream().filter(OH.predicate()).sorted((Number p0, Number p1) -> OH.compare(p0, p1)).collect(Collectors.<Number>toList())));
   }
   @Test
   public void sorting_item6_5005695164082923047() throws Throwable {
-    Assert.assertEquals("Expected: " + TreePVector.<Number>empty().plus(Generated_typedefs_Test.s2_).plus(Generated_typedefs_Test.s3_) + ", but was: " + TreePVector.<Number>from(TreePVector.<Number>empty().plus(Generated_typedefs_Test.s2_).plus(Generated_typedefs_Test.s3_).stream().filter(OH.predicate()).sorted(new Comparator<Number>() {
-      public int compare(Number p0, Number p1) {
-        return OH.compare(p0, p1);
-      }
-    }).collect(Collectors.<Number>toList())), TreePVector.<Number>empty().plus(Generated_typedefs_Test.s2_).plus(Generated_typedefs_Test.s3_), TreePVector.<Number>from(TreePVector.<Number>empty().plus(Generated_typedefs_Test.s2_).plus(Generated_typedefs_Test.s3_).stream().filter(OH.predicate()).sorted(new Comparator<Number>() {
-      public int compare(Number p0, Number p1) {
-        return OH.compare(p0, p1);
-      }
-    }).collect(Collectors.<Number>toList())));
+    Assert.assertEquals("Expected: " + TreePVector.<Number>empty().plus(Generated_typedefs_Test.s2_).plus(Generated_typedefs_Test.s3_) + ", but was: " + TreePVector.<Number>from(TreePVector.<Number>empty().plus(Generated_typedefs_Test.s2_).plus(Generated_typedefs_Test.s3_).stream().filter(OH.predicate()).sorted((Number p0, Number p1) -> OH.compare(p0, p1)).collect(Collectors.<Number>toList())), TreePVector.<Number>empty().plus(Generated_typedefs_Test.s2_).plus(Generated_typedefs_Test.s3_), TreePVector.<Number>from(TreePVector.<Number>empty().plus(Generated_typedefs_Test.s2_).plus(Generated_typedefs_Test.s3_).stream().filter(OH.predicate()).sorted((Number p0, Number p1) -> OH.compare(p0, p1)).collect(Collectors.<Number>toList())));
   }
   @Test
   public void sorting_item8_5005695164083462014() throws Throwable {
-    Assert.assertEquals("Expected: " + TreePVector.<Number>from(new ArrayList<Number>()) + ", but was: " + TreePVector.<Number>from(TreePVector.<Number>from(new ArrayList<Number>()).stream().filter(OH.predicate()).sorted(new Comparator<Number>() {
-      public int compare(Number p0, Number p1) {
-        return OH.compare(p1, p0);
-      }
-    }).collect(Collectors.<Number>toList())), TreePVector.<Number>from(new ArrayList<Number>()), TreePVector.<Number>from(TreePVector.<Number>from(new ArrayList<Number>()).stream().filter(OH.predicate()).sorted(new Comparator<Number>() {
-      public int compare(Number p0, Number p1) {
-        return OH.compare(p1, p0);
-      }
-    }).collect(Collectors.<Number>toList())));
+    Assert.assertEquals("Expected: " + TreePVector.<Number>from(new ArrayList<Number>()) + ", but was: " + TreePVector.<Number>from(TreePVector.<Number>from(new ArrayList<Number>()).stream().filter(OH.predicate()).sorted((Number p0, Number p1) -> OH.compare(p1, p0)).collect(Collectors.<Number>toList())), TreePVector.<Number>from(new ArrayList<Number>()), TreePVector.<Number>from(TreePVector.<Number>from(new ArrayList<Number>()).stream().filter(OH.predicate()).sorted((Number p0, Number p1) -> OH.compare(p1, p0)).collect(Collectors.<Number>toList())));
   }
   @Test
   public void sorting_item9_5005695164083462020() throws Throwable {
-    Assert.assertEquals("Expected: " + TreePVector.<Number>empty().plus(Generated_typedefs_Test.s2_) + ", but was: " + TreePVector.<Number>from(TreePVector.<Number>empty().plus(Generated_typedefs_Test.s2_).stream().filter(OH.predicate()).sorted(new Comparator<Number>() {
-      public int compare(Number p0, Number p1) {
-        return OH.compare(p1, p0);
-      }
-    }).collect(Collectors.<Number>toList())), TreePVector.<Number>empty().plus(Generated_typedefs_Test.s2_), TreePVector.<Number>from(TreePVector.<Number>empty().plus(Generated_typedefs_Test.s2_).stream().filter(OH.predicate()).sorted(new Comparator<Number>() {
-      public int compare(Number p0, Number p1) {
-        return OH.compare(p1, p0);
-      }
-    }).collect(Collectors.<Number>toList())));
+    Assert.assertEquals("Expected: " + TreePVector.<Number>empty().plus(Generated_typedefs_Test.s2_) + ", but was: " + TreePVector.<Number>from(TreePVector.<Number>empty().plus(Generated_typedefs_Test.s2_).stream().filter(OH.predicate()).sorted((Number p0, Number p1) -> OH.compare(p1, p0)).collect(Collectors.<Number>toList())), TreePVector.<Number>empty().plus(Generated_typedefs_Test.s2_), TreePVector.<Number>from(TreePVector.<Number>empty().plus(Generated_typedefs_Test.s2_).stream().filter(OH.predicate()).sorted((Number p0, Number p1) -> OH.compare(p1, p0)).collect(Collectors.<Number>toList())));
   }
   @Test
   public void sorting_item10_5005695164083462026() throws Throwable {
-    Assert.assertEquals("Expected: " + TreePVector.<Number>empty().plus(Generated_typedefs_Test.s3_).plus(Generated_typedefs_Test.s2_) + ", but was: " + TreePVector.<Number>from(TreePVector.<Number>empty().plus(Generated_typedefs_Test.s2_).plus(Generated_typedefs_Test.s3_).stream().filter(OH.predicate()).sorted(new Comparator<Number>() {
-      public int compare(Number p0, Number p1) {
-        return OH.compare(p1, p0);
-      }
-    }).collect(Collectors.<Number>toList())), TreePVector.<Number>empty().plus(Generated_typedefs_Test.s3_).plus(Generated_typedefs_Test.s2_), TreePVector.<Number>from(TreePVector.<Number>empty().plus(Generated_typedefs_Test.s2_).plus(Generated_typedefs_Test.s3_).stream().filter(OH.predicate()).sorted(new Comparator<Number>() {
-      public int compare(Number p0, Number p1) {
-        return OH.compare(p1, p0);
-      }
-    }).collect(Collectors.<Number>toList())));
+    Assert.assertEquals("Expected: " + TreePVector.<Number>empty().plus(Generated_typedefs_Test.s3_).plus(Generated_typedefs_Test.s2_) + ", but was: " + TreePVector.<Number>from(TreePVector.<Number>empty().plus(Generated_typedefs_Test.s2_).plus(Generated_typedefs_Test.s3_).stream().filter(OH.predicate()).sorted((Number p0, Number p1) -> OH.compare(p1, p0)).collect(Collectors.<Number>toList())), TreePVector.<Number>empty().plus(Generated_typedefs_Test.s3_).plus(Generated_typedefs_Test.s2_), TreePVector.<Number>from(TreePVector.<Number>empty().plus(Generated_typedefs_Test.s2_).plus(Generated_typedefs_Test.s3_).stream().filter(OH.predicate()).sorted((Number p0, Number p1) -> OH.compare(p1, p0)).collect(Collectors.<Number>toList())));
   }
 
 

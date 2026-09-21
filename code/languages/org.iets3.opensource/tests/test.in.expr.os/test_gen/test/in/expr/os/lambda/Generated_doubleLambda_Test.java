@@ -15,7 +15,7 @@ import org.iets3.core.expr.collections.rt.rt.CollectionHelper;
 import org.junit.Test;
 import org.junit.Assert;
 import org.iets3.core.expr.genjava.tests.rt.rt.EqualsTestOp;
-import jetbrains.mps.baseLanguage.closures.runtime._FunctionTypes;
+import java.util.function.Supplier;
 
 /**
  * 
@@ -184,105 +184,91 @@ public class Generated_doubleLambda_Test {
     }
   }
   public static final PVector<Order> data_ = TreePVector.<Order>empty().plus(new Order(new BigInteger("1"), TreePVector.<Item>empty().plus(new Item(new BigInteger("1"))).plus(new Item(new BigInteger("2"))))).plus(new Order(new BigInteger("2"), TreePVector.<Item>empty().plus(new Item(new BigInteger("3")))));
-  public static final PVector<Number> sums_ = TreePVector.<Number>from(Generated_doubleLambda_Test.data_.stream().map(new Function<Order, Number>() {
-    public Number apply(Order param) {
-      return new Function<ParameterSetWrapper, Number>() {
-        public Number apply(ParameterSetWrapper param) {
-          Order it = (Order) param.parameters.get(0);
-          return new BigInteger("1");
-        }
-      }.apply(new ParameterSetWrapper(param));
-    }
+  public static final PVector<Number> sums_ = TreePVector.<Number>from(Generated_doubleLambda_Test.data_.stream().map((Order param) -> {
+    return new Function<ParameterSetWrapper, Number>() {
+      public Number apply(ParameterSetWrapper param) {
+        Order it = (Order) param.parameters.get(0);
+        return new BigInteger("1");
+      }
+    }.apply(new ParameterSetWrapper(param));
   }).collect(Collectors.<Number>toList()));
   public static final PVector<Number> numbers_ = TreePVector.<Number>empty().plus(new BigInteger("1")).plus(new BigInteger("2")).plus(new BigInteger("3"));
-  public static final PVector<Number> numbers2_ = TreePVector.<Number>from(Generated_doubleLambda_Test.numbers_.stream().map(new Function<Number, Number>() {
-    public Number apply(Number param) {
-      return new Function<ParameterSetWrapper, Number>() {
-        public Number apply(ParameterSetWrapper param) {
-          Number it = (Number) param.parameters.get(0);
-          return AH.add(it, new BigInteger("1"));
-        }
-      }.apply(new ParameterSetWrapper(param));
-    }
+  public static final PVector<Number> numbers2_ = TreePVector.<Number>from(Generated_doubleLambda_Test.numbers_.stream().map((Number param) -> {
+    return new Function<ParameterSetWrapper, Number>() {
+      public Number apply(ParameterSetWrapper param) {
+        Number it = (Number) param.parameters.get(0);
+        return AH.add(it, new BigInteger("1"));
+      }
+    }.apply(new ParameterSetWrapper(param));
   }).collect(Collectors.<Number>toList()));
   public static final Number sum_ = CollectionHelper.sumAsBigInteger(Generated_doubleLambda_Test.numbers_);
   public static final Number sum2_ = CollectionHelper.sumAsBigInteger(Generated_doubleLambda_Test.numbers2_);
-  public static final PVector<Number> mappedItems_ = TreePVector.<Number>from(Generated_doubleLambda_Test.data_.stream().map(new Function<Order, Number>() {
-    public Number apply(Order param) {
-      return new Function<ParameterSetWrapper, Number>() {
-        public Number apply(ParameterSetWrapper param) {
-          Order it = (Order) param.parameters.get(0);
-          return AH.add(it.getid(), new BigInteger("1"));
-        }
-      }.apply(new ParameterSetWrapper(param));
-    }
+  public static final PVector<Number> mappedItems_ = TreePVector.<Number>from(Generated_doubleLambda_Test.data_.stream().map((Order param) -> {
+    return new Function<ParameterSetWrapper, Number>() {
+      public Number apply(ParameterSetWrapper param) {
+        Order it = (Order) param.parameters.get(0);
+        return AH.add(it.getid(), new BigInteger("1"));
+      }
+    }.apply(new ParameterSetWrapper(param));
   }).collect(Collectors.<Number>toList()));
-  public static final Number mappedItemsSum_ = CollectionHelper.sumAsBigInteger(TreePVector.<Number>from(Generated_doubleLambda_Test.data_.stream().map(new Function<Order, Number>() {
-    public Number apply(Order param) {
-      return new Function<ParameterSetWrapper, Number>() {
-        public Number apply(ParameterSetWrapper param) {
-          Order it = (Order) param.parameters.get(0);
-          return AH.add(it.getid(), new BigInteger("1"));
-        }
-      }.apply(new ParameterSetWrapper(param));
-    }
+  public static final Number mappedItemsSum_ = CollectionHelper.sumAsBigInteger(TreePVector.<Number>from(Generated_doubleLambda_Test.data_.stream().map((Order param) -> {
+    return new Function<ParameterSetWrapper, Number>() {
+      public Number apply(ParameterSetWrapper param) {
+        Order it = (Order) param.parameters.get(0);
+        return AH.add(it.getid(), new BigInteger("1"));
+      }
+    }.apply(new ParameterSetWrapper(param));
   }).collect(Collectors.<Number>toList())));
-  public static final PVector<PVector<Number>> nested1_ = TreePVector.<PVector<Number>>from(Generated_doubleLambda_Test.data_.stream().map(new Function<Order, PVector<Number>>() {
-    public PVector<Number> apply(Order param) {
-      return new Function<ParameterSetWrapper, PVector<Number>>() {
-        public PVector<Number> apply(ParameterSetWrapper param) {
-          Order it = (Order) param.parameters.get(0);
-          return TreePVector.<Number>from(it.getitems().stream().map(new Function<Item, Number>() {
-            public Number apply(Item param) {
-              return new Function<ParameterSetWrapper, Number>() {
-                public Number apply(ParameterSetWrapper param) {
-                  Item it = (Item) param.parameters.get(0);
-                  return new BigInteger("1");
-                }
-              }.apply(new ParameterSetWrapper(param));
-            }
-          }).collect(Collectors.<Number>toList()));
-        }
-      }.apply(new ParameterSetWrapper(param));
-    }
+  public static final PVector<PVector<Number>> nested1_ = TreePVector.<PVector<Number>>from(Generated_doubleLambda_Test.data_.stream().map((Order param) -> {
+    return new Function<ParameterSetWrapper, PVector<Number>>() {
+      public PVector<Number> apply(ParameterSetWrapper param) {
+        Order it = (Order) param.parameters.get(0);
+        return TreePVector.<Number>from(it.getitems().stream().map(new Function<Item, Number>() {
+          public Number apply(Item param) {
+            return new Function<ParameterSetWrapper, Number>() {
+              public Number apply(ParameterSetWrapper param) {
+                Item it = (Item) param.parameters.get(0);
+                return new BigInteger("1");
+              }
+            }.apply(new ParameterSetWrapper(param));
+          }
+        }).collect(Collectors.<Number>toList()));
+      }
+    }.apply(new ParameterSetWrapper(param));
   }).collect(Collectors.<PVector<Number>>toList()));
-  public static final PVector<PVector<Number>> nested2a_ = TreePVector.<PVector<Number>>from(Generated_doubleLambda_Test.data_.stream().map(new Function<Order, PVector<Number>>() {
-    public PVector<Number> apply(Order param) {
-      return new Function<ParameterSetWrapper, PVector<Number>>() {
-        public PVector<Number> apply(ParameterSetWrapper param) {
-          Order it = (Order) param.parameters.get(0);
-          return TreePVector.<Number>from(it.getitems().stream().map(new Function<Item, Number>() {
-            public Number apply(Item param) {
-              return new Function<ParameterSetWrapper, Number>() {
-                public Number apply(ParameterSetWrapper param) {
-                  Item it = (Item) param.parameters.get(0);
-                  return it.getid();
-                }
-              }.apply(new ParameterSetWrapper(param));
-            }
-          }).collect(Collectors.<Number>toList()));
-        }
-      }.apply(new ParameterSetWrapper(param));
-    }
+  public static final PVector<PVector<Number>> nested2a_ = TreePVector.<PVector<Number>>from(Generated_doubleLambda_Test.data_.stream().map((Order param) -> {
+    return new Function<ParameterSetWrapper, PVector<Number>>() {
+      public PVector<Number> apply(ParameterSetWrapper param) {
+        Order it = (Order) param.parameters.get(0);
+        return TreePVector.<Number>from(it.getitems().stream().map(new Function<Item, Number>() {
+          public Number apply(Item param) {
+            return new Function<ParameterSetWrapper, Number>() {
+              public Number apply(ParameterSetWrapper param) {
+                Item it = (Item) param.parameters.get(0);
+                return it.getid();
+              }
+            }.apply(new ParameterSetWrapper(param));
+          }
+        }).collect(Collectors.<Number>toList()));
+      }
+    }.apply(new ParameterSetWrapper(param));
   }).collect(Collectors.<PVector<Number>>toList()));
-  public static final PVector<PVector<Number>> nested2b_ = TreePVector.<PVector<Number>>from(Generated_doubleLambda_Test.data_.stream().map(new Function<Order, PVector<Number>>() {
-    public PVector<Number> apply(Order param) {
-      return new Function<ParameterSetWrapper, PVector<Number>>() {
-        public PVector<Number> apply(ParameterSetWrapper param) {
-          Order it = (Order) param.parameters.get(0);
-          return TreePVector.<Number>from(it.getitems().stream().map(new Function<Item, Number>() {
-            public Number apply(Item param) {
-              return new Function<ParameterSetWrapper, Number>() {
-                public Number apply(ParameterSetWrapper param) {
-                  Item x = (Item) param.parameters.get(0);
-                  return x.getid();
-                }
-              }.apply(new ParameterSetWrapper(param));
-            }
-          }).collect(Collectors.<Number>toList()));
-        }
-      }.apply(new ParameterSetWrapper(param));
-    }
+  public static final PVector<PVector<Number>> nested2b_ = TreePVector.<PVector<Number>>from(Generated_doubleLambda_Test.data_.stream().map((Order param) -> {
+    return new Function<ParameterSetWrapper, PVector<Number>>() {
+      public PVector<Number> apply(ParameterSetWrapper param) {
+        Order it = (Order) param.parameters.get(0);
+        return TreePVector.<Number>from(it.getitems().stream().map(new Function<Item, Number>() {
+          public Number apply(Item param) {
+            return new Function<ParameterSetWrapper, Number>() {
+              public Number apply(ParameterSetWrapper param) {
+                Item x = (Item) param.parameters.get(0);
+                return x.getid();
+              }
+            }.apply(new ParameterSetWrapper(param));
+          }
+        }).collect(Collectors.<Number>toList()));
+      }
+    }.apply(new ParameterSetWrapper(param));
   }).collect(Collectors.<PVector<Number>>toList()));
   @Test
   public void resTest_item0_8293738266734930393() throws Throwable {
@@ -318,23 +304,23 @@ public class Generated_doubleLambda_Test {
   }
   @Test
   public void resTest_item8_8293738266735105483() throws Throwable {
-    Assert.assertEquals("Expected: " + TreePVector.<Number>empty().plus(new BigInteger("1")).plus(new BigInteger("2")) + ", but was: " + (((_FunctionTypes._return_P0_E0<PVector<Number>>) () -> {
+    Assert.assertEquals("Expected: " + TreePVector.<Number>empty().plus(new BigInteger("1")).plus(new BigInteger("2")) + ", but was: " + ((Supplier<PVector<Number>>) () -> {
       PVector<PVector<Number>> listResult = Generated_doubleLambda_Test.nested2a_;
       return (listResult.isEmpty() ? null : listResult.get(0));
-    }).invoke()), TreePVector.<Number>empty().plus(new BigInteger("1")).plus(new BigInteger("2")), (Object) ((_FunctionTypes._return_P0_E0<PVector<Number>>) () -> {
+    }).get(), TreePVector.<Number>empty().plus(new BigInteger("1")).plus(new BigInteger("2")), ((Supplier<PVector<Number>>) () -> {
       PVector<PVector<Number>> listResult = Generated_doubleLambda_Test.nested2a_;
       return (listResult.isEmpty() ? null : listResult.get(0));
-    }).invoke());
+    }).get());
   }
   @Test
   public void resTest_item9_8293738266735142596() throws Throwable {
-    Assert.assertEquals("Expected: " + TreePVector.<Number>empty().plus(new BigInteger("1")).plus(new BigInteger("2")) + ", but was: " + (((_FunctionTypes._return_P0_E0<PVector<Number>>) () -> {
+    Assert.assertEquals("Expected: " + TreePVector.<Number>empty().plus(new BigInteger("1")).plus(new BigInteger("2")) + ", but was: " + ((Supplier<PVector<Number>>) () -> {
       PVector<PVector<Number>> listResult = Generated_doubleLambda_Test.nested2b_;
       return (listResult.isEmpty() ? null : listResult.get(0));
-    }).invoke()), TreePVector.<Number>empty().plus(new BigInteger("1")).plus(new BigInteger("2")), (Object) ((_FunctionTypes._return_P0_E0<PVector<Number>>) () -> {
+    }).get(), TreePVector.<Number>empty().plus(new BigInteger("1")).plus(new BigInteger("2")), ((Supplier<PVector<Number>>) () -> {
       PVector<PVector<Number>> listResult = Generated_doubleLambda_Test.nested2b_;
       return (listResult.isEmpty() ? null : listResult.get(0));
-    }).invoke());
+    }).get());
   }
 
 

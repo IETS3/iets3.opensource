@@ -6,10 +6,9 @@ import org.pcollections.PVector;
 import org.pcollections.TreePVector;
 import java.util.Arrays;
 import java.math.BigInteger;
-import jetbrains.mps.baseLanguage.closures.runtime._FunctionTypes;
+import java.util.function.Supplier;
 import org.iets3.core.expr.genjava.base.rt.rt.FailException;
 import java.util.stream.Stream;
-import java.util.function.Supplier;
 import java.util.function.Function;
 import java.util.Collection;
 import java.util.stream.Collectors;
@@ -24,74 +23,34 @@ import org.iets3.core.expr.genjava.tests.rt.rt.EqualsTestOp;
 public class Generated_tuples_Test {
 
   public static final PVector t1_ = (TreePVector) TreePVector.<Object>from(Arrays.<Object>asList((Number) new BigInteger("1"), (Number) new BigInteger("2")));
-  public static final PVector<Number> nCopies1_ = (PVector) ((_FunctionTypes._return_P0_E0<TreePVector<Object>>) () -> {
+  public static final PVector<Number> nCopies1_ = (PVector) ((Supplier<TreePVector<Object>>) () -> {
     int times = new BigInteger("0").intValue();
     if (times <= 0) {
       FailException.fail("the argument must be greater than 0");
     }
-    return TreePVector.from(Stream.generate(new Supplier<Object>() {
-      @Override
-      public Object get() {
-        return (TreePVector) TreePVector.<Object>from(Arrays.<Object>asList((Number) new BigInteger("1")));
-      }
-    }).limit(times).flatMap(new Function<Object, Stream<?>>() {
-      @Override
-      public Stream<?> apply(Object obj) {
-        return ((Collection) obj).stream();
-      }
-    }).collect(Collectors.toList()));
-  }).invoke();
-  public static final PVector<Number> nCopies2_ = (PVector) ((_FunctionTypes._return_P0_E0<TreePVector<Object>>) () -> {
+    return TreePVector.from(Stream.generate((Supplier<Object>) () -> (TreePVector) TreePVector.<Object>from(Arrays.<Object>asList((Number) new BigInteger("1")))).limit(times).flatMap((Function<Object, Stream<?>>) (Object obj) -> ((Collection) obj).stream()).collect(Collectors.toList()));
+  }).get();
+  public static final PVector<Number> nCopies2_ = (PVector) ((Supplier<TreePVector<Object>>) () -> {
     int times = new BigInteger("-1").intValue();
     if (times <= 0) {
       FailException.fail("the argument must be greater than 0");
     }
-    return TreePVector.from(Stream.generate(new Supplier<Object>() {
-      @Override
-      public Object get() {
-        return (TreePVector) TreePVector.<Object>from(Arrays.<Object>asList((Number) new BigInteger("1")));
-      }
-    }).limit(times).flatMap(new Function<Object, Stream<?>>() {
-      @Override
-      public Stream<?> apply(Object obj) {
-        return ((Collection) obj).stream();
-      }
-    }).collect(Collectors.toList()));
-  }).invoke();
-  public static final PVector<Number> nCopies3_ = (PVector) ((_FunctionTypes._return_P0_E0<TreePVector<Object>>) () -> {
+    return TreePVector.from(Stream.generate((Supplier<Object>) () -> (TreePVector) TreePVector.<Object>from(Arrays.<Object>asList((Number) new BigInteger("1")))).limit(times).flatMap((Function<Object, Stream<?>>) (Object obj) -> ((Collection) obj).stream()).collect(Collectors.toList()));
+  }).get();
+  public static final PVector<Number> nCopies3_ = (PVector) ((Supplier<TreePVector<Object>>) () -> {
     int times = AH.add(new BigInteger("1"), new BigInteger("2")).intValue();
     if (times <= 0) {
       FailException.fail("the argument must be greater than 0");
     }
-    return TreePVector.from(Stream.generate(new Supplier<Object>() {
-      @Override
-      public Object get() {
-        return (TreePVector) TreePVector.<Object>from(Arrays.<Object>asList((Number) new BigInteger("1"), (Number) new BigInteger("2")));
-      }
-    }).limit(times).flatMap(new Function<Object, Stream<?>>() {
-      @Override
-      public Stream<?> apply(Object obj) {
-        return ((Collection) obj).stream();
-      }
-    }).collect(Collectors.toList()));
-  }).invoke();
-  public static final PVector<PVector> nCopies4_ = (PVector) ((_FunctionTypes._return_P0_E0<TreePVector<Object>>) () -> {
+    return TreePVector.from(Stream.generate((Supplier<Object>) () -> (TreePVector) TreePVector.<Object>from(Arrays.<Object>asList((Number) new BigInteger("1"), (Number) new BigInteger("2")))).limit(times).flatMap((Function<Object, Stream<?>>) (Object obj) -> ((Collection) obj).stream()).collect(Collectors.toList()));
+  }).get();
+  public static final PVector<PVector> nCopies4_ = (PVector) ((Supplier<TreePVector<Object>>) () -> {
     int times = new BigInteger("20").intValue();
     if (times <= 0) {
       FailException.fail("the argument must be greater than 0");
     }
-    return TreePVector.from(Stream.generate(new Supplier<Object>() {
-      @Override
-      public Object get() {
-        return (TreePVector) TreePVector.<Object>from(Arrays.<Object>asList((TreePVector) TreePVector.<Object>from(Arrays.<Object>asList((Number) new BigInteger("1"), (Number) new BigInteger("2"))), (TreePVector) TreePVector.<Object>from(Arrays.<Object>asList((Number) new BigInteger("3"), (Number) new BigInteger("4")))));
-      }
-    }).limit(times).flatMap(new Function<Object, Stream<?>>() {
-      @Override
-      public Stream<?> apply(Object obj) {
-        return ((Collection) obj).stream();
-      }
-    }).collect(Collectors.toList()));
-  }).invoke();
+    return TreePVector.from(Stream.generate((Supplier<Object>) () -> (TreePVector) TreePVector.<Object>from(Arrays.<Object>asList((TreePVector) TreePVector.<Object>from(Arrays.<Object>asList((Number) new BigInteger("1"), (Number) new BigInteger("2"))), (TreePVector) TreePVector.<Object>from(Arrays.<Object>asList((Number) new BigInteger("3"), (Number) new BigInteger("4")))))).limit(times).flatMap((Function<Object, Stream<?>>) (Object obj) -> ((Collection) obj).stream()).collect(Collectors.toList()));
+  }).get();
   public static final PVector<Number> t_ = (TreePVector) TreePVector.<Object>from(Arrays.<Object>asList((Number) new BigInteger("1"), (Number) new BigInteger("1")));
   @Test
   public void nCopies_item0_329757980708376265() throws Throwable {

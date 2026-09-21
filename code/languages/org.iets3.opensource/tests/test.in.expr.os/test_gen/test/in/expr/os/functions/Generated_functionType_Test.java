@@ -4,15 +4,13 @@ package test.in.expr.os.functions;
 
 import org.pcollections.PVector;
 import org.pcollections.TreePVector;
-import java.util.function.Predicate;
 import java.util.function.Function;
 import org.iets3.core.expr.genjava.base.rt.rt.ParameterSetWrapper;
 import org.iets3.core.expr.simpleTypes.runtime.AH;
 import java.math.BigInteger;
 import java.util.stream.Collectors;
-import jetbrains.mps.baseLanguage.closures.runtime._FunctionTypes;
+import java.util.function.Supplier;
 import org.iets3.core.expr.simpleTypes.runtime.OH;
-import java.util.Comparator;
 import org.pcollections.Empty;
 import org.junit.Test;
 import org.junit.Assert;
@@ -24,60 +22,36 @@ import org.iets3.core.expr.genjava.tests.rt.rt.EqualsTestOp;
 public class Generated_functionType_Test {
 
   public static PVector<Number> test_0(PVector<Number> myList) {
-    PVector<Number> a = TreePVector.<Number>from(myList.stream().filter(new Predicate<Number>() {
-      public boolean test(Number o) {
-        return new Function<ParameterSetWrapper, Boolean>() {
-          public Boolean apply(ParameterSetWrapper param) {
-            Number it = (Number) param.parameters.get(0);
-            return AH.isGreater(it, new BigInteger("0"));
-          }
-        }.apply(new ParameterSetWrapper(o));
-      }
-    }).collect(Collectors.<Number>toList()));
+    PVector<Number> a = TreePVector.<Number>from(myList.stream().filter((Number o) -> ((Function<ParameterSetWrapper, Boolean>) (ParameterSetWrapper param) -> {
+      Number it = (Number) param.parameters.get(0);
+      return AH.isGreater(it, new BigInteger("0"));
+    }).apply(new ParameterSetWrapper(o))).collect(Collectors.<Number>toList()));
     PVector<Number> res = (AH.isGreater(new BigInteger("2"), new BigInteger("1")) ? a : myList);
 
     return res;
   }
-  public static PVector<Number> test_1(final PVector<Number> myList) {
-    PVector<Number> res = ((_FunctionTypes._return_P0_E0<PVector<Number>>) () -> {
+  public static PVector<Number> test_1(PVector<Number> myList) {
+    PVector<Number> res = ((Supplier<PVector<Number>>) () -> {
       if (AH.isGreater(new BigInteger("2"), new BigInteger("1"))) {
-        return TreePVector.<Number>from(myList.stream().filter(new Predicate<Number>() {
-          public boolean test(Number o) {
-            return new Function<ParameterSetWrapper, Boolean>() {
-              public Boolean apply(ParameterSetWrapper param) {
-                Number it = (Number) param.parameters.get(0);
-                return AH.isGreater(it, new BigInteger("0"));
-              }
-            }.apply(new ParameterSetWrapper(o));
-          }
-        }).collect(Collectors.<Number>toList()));
+        return TreePVector.<Number>from(myList.stream().filter((Number o) -> ((Function<ParameterSetWrapper, Boolean>) (ParameterSetWrapper param) -> {
+          Number it = (Number) param.parameters.get(0);
+          return AH.isGreater(it, new BigInteger("0"));
+        }).apply(new ParameterSetWrapper(o))).collect(Collectors.<Number>toList()));
       } else {
         return myList;
       }
-    }).invoke();
+    }).get();
 
     return res;
   }
   public static PVector<Number> test_2(PVector<Number> myList) {
-    PVector<Number> res = (AH.isGreater(new BigInteger("2"), new BigInteger("1")) ? TreePVector.<Number>from(myList.stream().filter(new Predicate<Number>() {
-      public boolean test(Number o) {
-        return new Function<ParameterSetWrapper, Boolean>() {
-          public Boolean apply(ParameterSetWrapper param) {
-            Number it = (Number) param.parameters.get(0);
-            return AH.isGreater(it, new BigInteger("0"));
-          }
-        }.apply(new ParameterSetWrapper(o));
-      }
-    }).collect(Collectors.<Number>toList())) : TreePVector.<Number>from(myList.stream().filter(new Predicate<Number>() {
-      public boolean test(Number o) {
-        return new Function<ParameterSetWrapper, Boolean>() {
-          public Boolean apply(ParameterSetWrapper param) {
-            Number it = (Number) param.parameters.get(0);
-            return AH.isLess(it, new BigInteger("0"));
-          }
-        }.apply(new ParameterSetWrapper(o));
-      }
-    }).collect(Collectors.<Number>toList())));
+    PVector<Number> res = (AH.isGreater(new BigInteger("2"), new BigInteger("1")) ? TreePVector.<Number>from(myList.stream().filter((Number o) -> ((Function<ParameterSetWrapper, Boolean>) (ParameterSetWrapper param) -> {
+      Number it = (Number) param.parameters.get(0);
+      return AH.isGreater(it, new BigInteger("0"));
+    }).apply(new ParameterSetWrapper(o))).collect(Collectors.<Number>toList())) : TreePVector.<Number>from(myList.stream().filter((Number o) -> ((Function<ParameterSetWrapper, Boolean>) (ParameterSetWrapper param) -> {
+      Number it = (Number) param.parameters.get(0);
+      return AH.isLess(it, new BigInteger("0"));
+    }).apply(new ParameterSetWrapper(o))).collect(Collectors.<Number>toList())));
 
     return res;
   }
@@ -87,239 +61,161 @@ public class Generated_functionType_Test {
     return res;
   }
   public static PVector<Number> test_4(PVector<Number> myList) {
-    PVector<Number> res = (AH.isGreater(new BigInteger("2"), new BigInteger("1")) ? TreePVector.<Number>from(myList.stream().filter(new Predicate<Number>() {
-      public boolean test(Number o) {
-        return new Function<ParameterSetWrapper, Boolean>() {
-          public Boolean apply(ParameterSetWrapper param) {
-            Number it = (Number) param.parameters.get(0);
-            return AH.isGreater(it, new BigInteger("0"));
-          }
-        }.apply(new ParameterSetWrapper(o));
-      }
-    }).collect(Collectors.<Number>toList())) : TreePVector.from(myList));
+    PVector<Number> res = (AH.isGreater(new BigInteger("2"), new BigInteger("1")) ? TreePVector.<Number>from(myList.stream().filter((Number o) -> ((Function<ParameterSetWrapper, Boolean>) (ParameterSetWrapper param) -> {
+      Number it = (Number) param.parameters.get(0);
+      return AH.isGreater(it, new BigInteger("0"));
+    }).apply(new ParameterSetWrapper(o))).collect(Collectors.<Number>toList())) : TreePVector.from(myList));
 
     return res;
   }
-  public static PVector<Number> test_a_4(final PVector<Number> myList) {
-    PVector<Number> res = ((_FunctionTypes._return_P0_E0<PVector<Number>>) () -> {
+  public static PVector<Number> test_a_4(PVector<Number> myList) {
+    PVector<Number> res = ((Supplier<PVector<Number>>) () -> {
       if (AH.isGreater(new BigInteger("2"), new BigInteger("1"))) {
-        return TreePVector.<Number>from(myList.stream().filter(new Predicate<Number>() {
-          public boolean test(Number o) {
-            return new Function<ParameterSetWrapper, Boolean>() {
-              public Boolean apply(ParameterSetWrapper param) {
-                Number it = (Number) param.parameters.get(0);
-                return AH.isGreater(it, new BigInteger("0"));
-              }
-            }.apply(new ParameterSetWrapper(o));
-          }
-        }).collect(Collectors.<Number>toList()));
+        return TreePVector.<Number>from(myList.stream().filter((Number o) -> ((Function<ParameterSetWrapper, Boolean>) (ParameterSetWrapper param) -> {
+          Number it = (Number) param.parameters.get(0);
+          return AH.isGreater(it, new BigInteger("0"));
+        }).apply(new ParameterSetWrapper(o))).collect(Collectors.<Number>toList()));
       } else {
         return myList;
       }
-    }).invoke();
+    }).get();
 
     return res;
   }
-  public static PVector<Number> test_b_4(final PVector<Number> myList) {
-    final PVector<Number> b = myList;
-    PVector<Number> res = ((_FunctionTypes._return_P0_E0<PVector<Number>>) () -> {
+  public static PVector<Number> test_b_4(PVector<Number> myList) {
+    PVector<Number> b = myList;
+    PVector<Number> res = ((Supplier<PVector<Number>>) () -> {
       if (AH.isGreater(new BigInteger("2"), new BigInteger("1"))) {
-        return TreePVector.<Number>from(myList.stream().filter(new Predicate<Number>() {
-          public boolean test(Number o) {
-            return new Function<ParameterSetWrapper, Boolean>() {
-              public Boolean apply(ParameterSetWrapper param) {
-                Number it = (Number) param.parameters.get(0);
-                return AH.isGreater(it, new BigInteger("0"));
-              }
-            }.apply(new ParameterSetWrapper(o));
-          }
-        }).collect(Collectors.<Number>toList()));
+        return TreePVector.<Number>from(myList.stream().filter((Number o) -> ((Function<ParameterSetWrapper, Boolean>) (ParameterSetWrapper param) -> {
+          Number it = (Number) param.parameters.get(0);
+          return AH.isGreater(it, new BigInteger("0"));
+        }).apply(new ParameterSetWrapper(o))).collect(Collectors.<Number>toList()));
       } else {
         return b;
       }
-    }).invoke();
+    }).get();
 
     return res;
   }
   public static PVector<Number> test_c_4(PVector<Number> myList) {
     PVector<Number> b = myList;
-    PVector<Number> c = TreePVector.<Number>from(myList.stream().filter(new Predicate<Number>() {
-      public boolean test(Number o) {
-        return new Function<ParameterSetWrapper, Boolean>() {
-          public Boolean apply(ParameterSetWrapper param) {
-            Number it = (Number) param.parameters.get(0);
-            return AH.isGreater(it, new BigInteger("0"));
-          }
-        }.apply(new ParameterSetWrapper(o));
-      }
-    }).collect(Collectors.<Number>toList()));
+    PVector<Number> c = TreePVector.<Number>from(myList.stream().filter((Number o) -> ((Function<ParameterSetWrapper, Boolean>) (ParameterSetWrapper param) -> {
+      Number it = (Number) param.parameters.get(0);
+      return AH.isGreater(it, new BigInteger("0"));
+    }).apply(new ParameterSetWrapper(o))).collect(Collectors.<Number>toList()));
     PVector<Number> res = (AH.isGreater(new BigInteger("2"), new BigInteger("1")) ? c : b);
 
     return res;
   }
   public static PVector<Number> test_sort_4(PVector<Number> myList) {
     PVector<Number> b = myList;
-    PVector<Number> c = TreePVector.<Number>from(TreePVector.<Number>from(myList.stream().filter(OH.predicate()).sorted(new Comparator<Number>() {
-      public int compare(Number p0, Number p1) {
-        return OH.compare(p0, p1);
-      }
-    }).collect(Collectors.<Number>toList())).stream().filter(new Predicate<Number>() {
-      public boolean test(Number o) {
-        return new Function<ParameterSetWrapper, Boolean>() {
-          public Boolean apply(ParameterSetWrapper param) {
-            Number it = (Number) param.parameters.get(0);
-            return AH.isGreater(it, new BigInteger("0"));
-          }
-        }.apply(new ParameterSetWrapper(o));
-      }
-    }).collect(Collectors.<Number>toList()));
+    PVector<Number> c = TreePVector.<Number>from(TreePVector.<Number>from(myList.stream().filter(OH.predicate()).sorted((Number p0, Number p1) -> OH.compare(p0, p1)).collect(Collectors.<Number>toList())).stream().filter((Number o) -> ((Function<ParameterSetWrapper, Boolean>) (ParameterSetWrapper param) -> {
+      Number it = (Number) param.parameters.get(0);
+      return AH.isGreater(it, new BigInteger("0"));
+    }).apply(new ParameterSetWrapper(o))).collect(Collectors.<Number>toList()));
     PVector<Number> res = (AH.isGreater(new BigInteger("2"), new BigInteger("1")) ? c : b);
 
     return res;
   }
-  public static PVector<Number> test_firstN_4(final PVector<Number> myList) {
+  public static PVector<Number> test_firstN_4(PVector<Number> myList) {
     PVector<Number> b = myList;
-    PVector<Number> c = TreePVector.<Number>from(((_FunctionTypes._return_P0_E0<PVector<Number>>) () -> {
+    PVector<Number> c = TreePVector.<Number>from(((Supplier<PVector<Number>>) () -> {
       PVector<Number> origList = myList;
       int noOfElements = new BigInteger("4").intValue();
       if (origList.size() <= noOfElements) {
         return origList;
       }
       return origList.subList(0, noOfElements);
-    }).invoke().stream().filter(new Predicate<Number>() {
-      public boolean test(Number o) {
-        return new Function<ParameterSetWrapper, Boolean>() {
-          public Boolean apply(ParameterSetWrapper param) {
-            Number it = (Number) param.parameters.get(0);
-            return AH.isGreater(it, new BigInteger("0"));
-          }
-        }.apply(new ParameterSetWrapper(o));
-      }
-    }).collect(Collectors.<Number>toList()));
+    }).get().stream().filter((Number o) -> ((Function<ParameterSetWrapper, Boolean>) (ParameterSetWrapper param) -> {
+      Number it = (Number) param.parameters.get(0);
+      return AH.isGreater(it, new BigInteger("0"));
+    }).apply(new ParameterSetWrapper(o))).collect(Collectors.<Number>toList()));
     PVector<Number> res = (AH.isGreater(new BigInteger("2"), new BigInteger("1")) ? c : b);
 
     return res;
   }
-  public static PVector<Number> test_lastN_4(final PVector<Number> myList) {
+  public static PVector<Number> test_lastN_4(PVector<Number> myList) {
     PVector<Number> b = myList;
-    PVector<Number> c = TreePVector.<Number>from(((_FunctionTypes._return_P0_E0<PVector<Number>>) () -> {
+    PVector<Number> c = TreePVector.<Number>from(((Supplier<PVector<Number>>) () -> {
       PVector<Number> origList = myList;
       int noOfElements = new BigInteger("4").intValue();
       if (origList.size() <= noOfElements) {
         return origList;
       }
       return origList.subList(origList.size() - noOfElements, origList.size());
-    }).invoke().stream().filter(new Predicate<Number>() {
-      public boolean test(Number o) {
-        return new Function<ParameterSetWrapper, Boolean>() {
-          public Boolean apply(ParameterSetWrapper param) {
-            Number it = (Number) param.parameters.get(0);
-            return AH.isGreater(it, new BigInteger("0"));
-          }
-        }.apply(new ParameterSetWrapper(o));
-      }
-    }).collect(Collectors.<Number>toList()));
+    }).get().stream().filter((Number o) -> ((Function<ParameterSetWrapper, Boolean>) (ParameterSetWrapper param) -> {
+      Number it = (Number) param.parameters.get(0);
+      return AH.isGreater(it, new BigInteger("0"));
+    }).apply(new ParameterSetWrapper(o))).collect(Collectors.<Number>toList()));
     PVector<Number> res = (AH.isGreater(new BigInteger("2"), new BigInteger("1")) ? c : b);
 
     return res;
   }
   public static PVector<Number> test_map_4(PVector<Number> myList) {
     PVector<Number> b = myList;
-    PVector<Number> c = TreePVector.<Number>from(TreePVector.<Number>from(myList.stream().map(new Function<Number, Number>() {
-      public Number apply(Number param) {
-        return new Function<ParameterSetWrapper, Number>() {
-          public Number apply(ParameterSetWrapper param) {
-            Number it = (Number) param.parameters.get(0);
-            return it;
-          }
-        }.apply(new ParameterSetWrapper(param));
-      }
-    }).collect(Collectors.<Number>toList())).stream().filter(new Predicate<Number>() {
-      public boolean test(Number o) {
-        return new Function<ParameterSetWrapper, Boolean>() {
-          public Boolean apply(ParameterSetWrapper param) {
-            Number it = (Number) param.parameters.get(0);
-            return AH.isGreater(it, new BigInteger("0"));
-          }
-        }.apply(new ParameterSetWrapper(o));
-      }
-    }).collect(Collectors.<Number>toList()));
+    PVector<Number> c = TreePVector.<Number>from(TreePVector.<Number>from(myList.stream().map((Number param) -> {
+      return new Function<ParameterSetWrapper, Number>() {
+        public Number apply(ParameterSetWrapper param) {
+          Number it = (Number) param.parameters.get(0);
+          return it;
+        }
+      }.apply(new ParameterSetWrapper(param));
+    }).collect(Collectors.<Number>toList())).stream().filter((Number o) -> ((Function<ParameterSetWrapper, Boolean>) (ParameterSetWrapper param) -> {
+      Number it = (Number) param.parameters.get(0);
+      return AH.isGreater(it, new BigInteger("0"));
+    }).apply(new ParameterSetWrapper(o))).collect(Collectors.<Number>toList()));
     PVector<Number> res = (AH.isGreater(new BigInteger("2"), new BigInteger("1")) ? c : b);
 
     return res;
   }
-  public static PVector<Number> test_reverse_4(final PVector<Number> myList) {
+  public static PVector<Number> test_reverse_4(PVector<Number> myList) {
     PVector<Number> b = myList;
-    PVector<Number> c = TreePVector.<Number>from(((_FunctionTypes._return_P0_E0<PVector<Number>>) () -> {
+    PVector<Number> c = TreePVector.<Number>from(((Supplier<PVector<Number>>) () -> {
       PVector<Number> rev = Empty.vector();
       for (int i = myList.size() - 1; i >= 0; i--) {
         rev = rev.plus(myList.get(i));
       }
       return rev;
-    }).invoke().stream().filter(new Predicate<Number>() {
-      public boolean test(Number o) {
-        return new Function<ParameterSetWrapper, Boolean>() {
-          public Boolean apply(ParameterSetWrapper param) {
-            Number it = (Number) param.parameters.get(0);
-            return AH.isGreater(it, new BigInteger("0"));
-          }
-        }.apply(new ParameterSetWrapper(o));
-      }
-    }).collect(Collectors.<Number>toList()));
+    }).get().stream().filter((Number o) -> ((Function<ParameterSetWrapper, Boolean>) (ParameterSetWrapper param) -> {
+      Number it = (Number) param.parameters.get(0);
+      return AH.isGreater(it, new BigInteger("0"));
+    }).apply(new ParameterSetWrapper(o))).collect(Collectors.<Number>toList()));
     PVector<Number> res = (AH.isGreater(new BigInteger("2"), new BigInteger("1")) ? c : b);
 
     return res;
   }
-  public static PVector<Number> test_tail_4(final PVector<Number> myList) {
+  public static PVector<Number> test_tail_4(PVector<Number> myList) {
     PVector<Number> b = myList;
-    PVector<Number> c = TreePVector.<Number>from(((_FunctionTypes._return_P0_E0<PVector<Number>>) () -> {
+    PVector<Number> c = TreePVector.<Number>from(((Supplier<PVector<Number>>) () -> {
       if (myList.size() <= 1) {
         return TreePVector.<Number>empty();
       } else {
         return myList.subList(1, myList.size());
       }
-    }).invoke().stream().filter(new Predicate<Number>() {
-      public boolean test(Number o) {
-        return new Function<ParameterSetWrapper, Boolean>() {
-          public Boolean apply(ParameterSetWrapper param) {
-            Number it = (Number) param.parameters.get(0);
-            return AH.isGreater(it, new BigInteger("0"));
-          }
-        }.apply(new ParameterSetWrapper(o));
-      }
-    }).collect(Collectors.<Number>toList()));
+    }).get().stream().filter((Number o) -> ((Function<ParameterSetWrapper, Boolean>) (ParameterSetWrapper param) -> {
+      Number it = (Number) param.parameters.get(0);
+      return AH.isGreater(it, new BigInteger("0"));
+    }).apply(new ParameterSetWrapper(o))).collect(Collectors.<Number>toList()));
     PVector<Number> res = (AH.isGreater(new BigInteger("2"), new BigInteger("1")) ? c : b);
 
     return res;
   }
   public static PVector<Number> test_with100_4(PVector<Number> myList) {
     PVector<Number> b = myList;
-    PVector<Number> c = TreePVector.<Number>from(myList.plus(new BigInteger("100")).stream().filter(new Predicate<Number>() {
-      public boolean test(Number o) {
-        return new Function<ParameterSetWrapper, Boolean>() {
-          public Boolean apply(ParameterSetWrapper param) {
-            Number it = (Number) param.parameters.get(0);
-            return AH.isGreater(it, new BigInteger("0"));
-          }
-        }.apply(new ParameterSetWrapper(o));
-      }
-    }).collect(Collectors.<Number>toList()));
+    PVector<Number> c = TreePVector.<Number>from(myList.plus(new BigInteger("100")).stream().filter((Number o) -> ((Function<ParameterSetWrapper, Boolean>) (ParameterSetWrapper param) -> {
+      Number it = (Number) param.parameters.get(0);
+      return AH.isGreater(it, new BigInteger("0"));
+    }).apply(new ParameterSetWrapper(o))).collect(Collectors.<Number>toList()));
     PVector<Number> res = (AH.isGreater(new BigInteger("2"), new BigInteger("1")) ? c : b);
 
     return res;
   }
   public static PVector<Number> test_without100_4(PVector<Number> myList) {
     PVector<Number> b = myList;
-    PVector<Number> c = TreePVector.<Number>from(myList.minus((Number) new BigInteger("100")).stream().filter(new Predicate<Number>() {
-      public boolean test(Number o) {
-        return new Function<ParameterSetWrapper, Boolean>() {
-          public Boolean apply(ParameterSetWrapper param) {
-            Number it = (Number) param.parameters.get(0);
-            return AH.isGreater(it, new BigInteger("0"));
-          }
-        }.apply(new ParameterSetWrapper(o));
-      }
-    }).collect(Collectors.<Number>toList()));
+    PVector<Number> c = TreePVector.<Number>from(myList.minus((Number) new BigInteger("100")).stream().filter((Number o) -> ((Function<ParameterSetWrapper, Boolean>) (ParameterSetWrapper param) -> {
+      Number it = (Number) param.parameters.get(0);
+      return AH.isGreater(it, new BigInteger("0"));
+    }).apply(new ParameterSetWrapper(o))).collect(Collectors.<Number>toList()));
     PVector<Number> res = (AH.isGreater(new BigInteger("2"), new BigInteger("1")) ? c : b);
 
     return res;
@@ -345,36 +241,24 @@ public class Generated_functionType_Test {
     return res;
   }
   public static PVector<Number> test_5(PVector<Number> myList) {
-    PVector<Number> res = (AH.isGreater(new BigInteger("2"), new BigInteger("1")) ? TreePVector.from(myList) : TreePVector.<Number>from(myList.stream().filter(new Predicate<Number>() {
-      public boolean test(Number o) {
-        return new Function<ParameterSetWrapper, Boolean>() {
-          public Boolean apply(ParameterSetWrapper param) {
-            Number it = (Number) param.parameters.get(0);
-            return AH.isLess(it, new BigInteger("0"));
-          }
-        }.apply(new ParameterSetWrapper(o));
-      }
-    }).collect(Collectors.<Number>toList())));
+    PVector<Number> res = (AH.isGreater(new BigInteger("2"), new BigInteger("1")) ? TreePVector.from(myList) : TreePVector.<Number>from(myList.stream().filter((Number o) -> ((Function<ParameterSetWrapper, Boolean>) (ParameterSetWrapper param) -> {
+      Number it = (Number) param.parameters.get(0);
+      return AH.isLess(it, new BigInteger("0"));
+    }).apply(new ParameterSetWrapper(o))).collect(Collectors.<Number>toList())));
 
     return res;
   }
-  public static PVector<Number> test_a_5(final PVector<Number> myList) {
-    PVector<Number> res = ((_FunctionTypes._return_P0_E0<PVector<Number>>) () -> {
+  public static PVector<Number> test_a_5(PVector<Number> myList) {
+    PVector<Number> res = ((Supplier<PVector<Number>>) () -> {
       if (AH.isGreater(new BigInteger("2"), new BigInteger("1"))) {
         return myList;
       } else {
-        return TreePVector.<Number>from(myList.stream().filter(new Predicate<Number>() {
-          public boolean test(Number o) {
-            return new Function<ParameterSetWrapper, Boolean>() {
-              public Boolean apply(ParameterSetWrapper param) {
-                Number it = (Number) param.parameters.get(0);
-                return AH.isLess(it, new BigInteger("0"));
-              }
-            }.apply(new ParameterSetWrapper(o));
-          }
-        }).collect(Collectors.<Number>toList()));
+        return TreePVector.<Number>from(myList.stream().filter((Number o) -> ((Function<ParameterSetWrapper, Boolean>) (ParameterSetWrapper param) -> {
+          Number it = (Number) param.parameters.get(0);
+          return AH.isLess(it, new BigInteger("0"));
+        }).apply(new ParameterSetWrapper(o))).collect(Collectors.<Number>toList()));
       }
-    }).invoke();
+    }).get();
 
     return res;
   }

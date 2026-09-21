@@ -33,7 +33,7 @@ import org.iets3.core.expr.stringvalidation.runtime.runtime.XLetterMatch;
 import org.iets3.core.expr.stringvalidation.runtime.runtime.XRangeBasedValidationClause;
 import org.iets3.core.expr.stringvalidation.runtime.runtime.XPositionIndicatorFirst;
 import org.iets3.core.expr.stringvalidation.runtime.runtime.XPositionIndicatorLast;
-import jetbrains.mps.baseLanguage.closures.runtime._FunctionTypes;
+import java.util.function.Supplier;
 import org.iets3.core.expr.simpleTypes.runtime.AH;
 import java.math.BigInteger;
 import org.iets3.core.expr.stringvalidation.runtime.runtime.XPositionBasedValidationClause;
@@ -278,8 +278,8 @@ public class Generated_acceptance_tests_Test {
 /* 
    * At least 3 identical consecutive letters at the beginning of the street are not permitted, unless the street starts with "III" and is followed in the 4th place by a dot, which is not the last character of the street, or the street begins with the character string "MMM-Str"
    */
-    public static PVector<String> rule12(final String s) {
-    PVector<String> res = ((_FunctionTypes._return_P0_E0<PVector<String>>) () -> {
+    public static PVector<String> rule12(String s) {
+    PVector<String> res = ((Supplier<PVector<String>>) () -> {
       if (s.startsWith("III.") && AH.isGreater(AH.stringLength(s), new BigInteger("4"))) {
         return Generated_acceptance_tests_Test.ok_;
       } else if (s.startsWith("MMM-Str")) {
@@ -287,7 +287,7 @@ public class Generated_acceptance_tests_Test {
       } else {
         return Generated_acceptance_tests_Test.rule3b(s);
       }
-    }).invoke();
+    }).get();
 
     return res;
   }

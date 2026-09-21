@@ -5,7 +5,7 @@ package messages;
 import org.iets3.core.expr.genjava.messages.rt.rt.Message;
 import org.iets3.core.expr.genjava.messages.rt.rt.BuiltinMessageKinds;
 import org.iets3.core.expr.simpleTypes.runtime.AH;
-import jetbrains.mps.baseLanguage.closures.runtime._FunctionTypes;
+import java.util.function.Supplier;
 import java.math.BigInteger;
 import org.iets3.core.expr.genjava.base.rt.rt.AlternativesException;
 
@@ -23,8 +23,8 @@ public class Messages {
     return new Message(BuiltinMessageKinds.none(), "failure number 42", _nodeReference, _nodeUrl);
   }
   public static class withStringArgs {
-    public static Message m4(String _nodeReference, String _nodeUrl, final String x) {
-      return new Message(BuiltinMessageKinds.none(), ((_FunctionTypes._return_P0_E0<String>) () -> {
+    public static Message m4(String _nodeReference, String _nodeUrl, String x) {
+      return new Message(BuiltinMessageKinds.none(), ((Supplier<String>) () -> {
         StringBuilder sb = new StringBuilder();
 
         {
@@ -35,15 +35,15 @@ public class Messages {
           sb.append(content);
         }
         return sb.toString();
-      }).invoke(), _nodeReference, _nodeUrl);
+      }).get(), _nodeReference, _nodeUrl);
     }
     public static Message m5(String _nodeReference, String _nodeUrl, String x) {
       return new Message(BuiltinMessageKinds.none(), AH.addString("m5", x), _nodeReference, _nodeUrl);
     }
   }
   public static class withIntArgs {
-    public static Message m4(String _nodeReference, String _nodeUrl, final Number x) {
-      return new Message(BuiltinMessageKinds.none(), ((_FunctionTypes._return_P0_E0<String>) () -> {
+    public static Message m4(String _nodeReference, String _nodeUrl, Number x) {
+      return new Message(BuiltinMessageKinds.none(), ((Supplier<String>) () -> {
         StringBuilder sb = new StringBuilder();
 
         {
@@ -54,14 +54,14 @@ public class Messages {
           sb.append(content);
         }
         return sb.toString();
-      }).invoke(), _nodeReference, _nodeUrl);
+      }).get(), _nodeReference, _nodeUrl);
     }
     public static Message m5(String _nodeReference, String _nodeUrl, Number x) {
       return new Message(BuiltinMessageKinds.none(), AH.addString("m5", x), _nodeReference, _nodeUrl);
     }
     public static class sub {
-      public static Message m6(String _nodeReference, String _nodeUrl, final Number n, final Boolean b) {
-        return new Message(BuiltinMessageKinds.none(), ((_FunctionTypes._return_P0_E0<String>) () -> {
+      public static Message m6(String _nodeReference, String _nodeUrl, Number n, Boolean b) {
+        return new Message(BuiltinMessageKinds.none(), ((Supplier<String>) () -> {
           StringBuilder sb = new StringBuilder();
 
           {
@@ -79,7 +79,7 @@ public class Messages {
             sb.append(content);
           }
           return sb.toString();
-        }).invoke(), _nodeReference, _nodeUrl);
+        }).get(), _nodeReference, _nodeUrl);
       }
     }
   }
@@ -91,8 +91,8 @@ public class Messages {
       return new Message(BuiltinMessageKinds.error("4711"), "e", _nodeReference, _nodeUrl);
     }
   }
-  public static Message mPoint(String _nodeReference, String _nodeUrl, final Data.Point p) {
-    return new Message(BuiltinMessageKinds.none(), ((_FunctionTypes._return_P0_E0<String>) () -> {
+  public static Message mPoint(String _nodeReference, String _nodeUrl, Data.Point p) {
+    return new Message(BuiltinMessageKinds.none(), ((Supplier<String>) () -> {
       StringBuilder sb = new StringBuilder();
 
       {
@@ -103,10 +103,10 @@ public class Messages {
         sb.append(content);
       }
       return sb.toString();
-    }).invoke(), _nodeReference, _nodeUrl);
+    }).get(), _nodeReference, _nodeUrl);
   }
-  public static Message mMoney(String _nodeReference, String _nodeUrl, final Number m) {
-    return new Message(BuiltinMessageKinds.none(), ((_FunctionTypes._return_P0_E0<String>) () -> {
+  public static Message mMoney(String _nodeReference, String _nodeUrl, Number m) {
+    return new Message(BuiltinMessageKinds.none(), ((Supplier<String>) () -> {
       StringBuilder sb = new StringBuilder();
 
       {
@@ -117,10 +117,10 @@ public class Messages {
         sb.append(content);
       }
       return sb.toString();
-    }).invoke(), _nodeReference, _nodeUrl);
+    }).get(), _nodeReference, _nodeUrl);
   }
-  public static Message pleaseTakePills(String _nodeReference, String _nodeUrl, final Number numPills) {
-    return new Message(BuiltinMessageKinds.none(), ((_FunctionTypes._return_P0_E0<String>) () -> {
+  public static Message pleaseTakePills(String _nodeReference, String _nodeUrl, Number numPills) {
+    return new Message(BuiltinMessageKinds.none(), ((Supplier<String>) () -> {
       if (AH.isEqual(numPills, new BigInteger("0"))) {
         return "no pills.";
       } else if (AH.isEqual(numPills, new BigInteger("1"))) {
@@ -130,7 +130,7 @@ public class Messages {
       } else {
         throw new AlternativesException("The proposed alternative does not exist.");
       }
-    }).invoke(), _nodeReference, _nodeUrl);
+    }).get(), _nodeReference, _nodeUrl);
   }
 
   public static String coerce_w88nue_a(Data.Point coercionIt) {

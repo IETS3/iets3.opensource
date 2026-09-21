@@ -68,10 +68,10 @@
       <node id="6527211908667104471" at="165,48,166,23" concept="2" />
       <node id="6527211908667104471" at="167,7,168,38" concept="2" />
       <node id="6527211908667104471" at="168,38,169,35" concept="8" />
-      <node id="6527211908668471777" at="181,68,182,58" concept="7" />
+      <node id="6527211908668471777" at="181,48,182,58" concept="7" />
       <node id="6527211908668471777" at="183,38,184,22" concept="8" />
       <node id="6527211908668471777" at="185,9,186,17" concept="8" />
-      <node id="6527211908667104482" at="187,90,188,0" concept="9" />
+      <node id="6527211908667104482" at="187,87,188,0" concept="9" />
       <node id="6527211908667104482" at="188,0,189,17" concept="8" />
       <node id="6527211908667104514" at="201,2,202,0" concept="10" trace="someDataFromUI_" />
       <node id="6527211908667104520" at="206,2,207,0" concept="10" trace="anTempValueInTheStatemachine_" />
@@ -98,7 +98,7 @@
       <node id="6527211908667104475" at="83,0,90,0" concept="6" trace="setvalue#(Ljava/lang/Number;)Ltest/in/expr/os/applicationExamples/Generated_temperature_Test/TempFromUI;" />
       <node id="6527211908667104477" at="90,0,97,0" concept="6" trace="setunit#(Ltest/in/expr/os/applicationExamples/Generated_temperature_Test/uiTempUnit;)Ltest/in/expr/os/applicationExamples/Generated_temperature_Test/TempFromUI;" />
       <node id="6527211908667104474" at="108,0,115,0" concept="6" trace="hashCode#()I" />
-      <node id="6527211908667104482" at="180,54,187,90" concept="7" />
+      <node id="6527211908667104482" at="180,48,187,87" concept="7" />
       <node id="6527211908667104453" at="44,243,52,5" concept="0" />
       <node id="6527211908667104474" at="132,0,140,0" concept="6" trace="toString#()null" />
       <node id="6527211908667104471" at="163,0,171,0" concept="6" trace="indexOf#()I" />
@@ -162,7 +162,7 @@
       <scope id="6527211908667104474" at="133,30,138,20">
         <var name="result" id="6527211908667104474" />
       </scope>
-      <scope id="6527211908668471777" at="181,68,186,17">
+      <scope id="6527211908668471777" at="181,48,186,17">
         <var name="b" id="6527211908668471777" />
       </scope>
       <scope id="6527211908667104453" at="45,5,51,7">
@@ -181,7 +181,7 @@
       <scope id="6527211908667104474" at="132,0,140,0" />
       <scope id="6527211908667104471" at="163,0,171,0" />
       <scope id="6527211908667104474" at="142,45,151,15" />
-      <scope id="6527211908667104482" at="180,54,189,17">
+      <scope id="6527211908667104482" at="180,48,189,17">
         <var name="res" id="6527211908667104482" />
       </scope>
       <scope id="6527211908667104453" at="43,41,54,15">

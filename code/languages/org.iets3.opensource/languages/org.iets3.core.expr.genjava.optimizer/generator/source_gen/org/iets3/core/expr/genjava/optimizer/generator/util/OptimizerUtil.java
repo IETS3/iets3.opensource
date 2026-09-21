@@ -19,8 +19,9 @@ import jetbrains.mps.internal.collections.runtime.Sequence;
 import org.jetbrains.mps.openapi.model.SReference;
 import java.util.Objects;
 import jetbrains.mps.smodel.DynamicReference;
-import org.jetbrains.mps.openapi.language.SConcept;
+import jetbrains.mps.lang.smodel.generator.smodelAdapter.SConceptOperations;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
+import org.jetbrains.mps.openapi.language.SConcept;
 import org.jetbrains.mps.openapi.language.SInterfaceConcept;
 import org.jetbrains.mps.openapi.language.SContainmentLink;
 import org.jetbrains.mps.openapi.language.SReferenceLink;
@@ -228,11 +229,16 @@ public class OptimizerUtil {
     return true;
   }
 
+  private static boolean isFunctionBoundary(SNode node) {
+    // a method, closure or lambda: returns inside it return from it, and its parameters and locals
+    // are its own
+    return SNodeOperations.isInstanceOf(node, CONCEPTS.BaseMethodDeclaration$kD) || SNodeOperations.isInstanceOf(node, CONCEPTS.ClosureLiteral$rp) || SNodeOperations.isInstanceOf(node, CONCEPTS.InternalLambdaExpression$Nz);
+  }
   private static SNode enclosingFunction(SNode node) {
-    // the method or closure whose body the node is in
+    // the method, closure or lambda whose body the node is in
     SNode current = SNodeOperations.getParent(node);
     while ((current != null)) {
-      if (SNodeOperations.isInstanceOf(current, CONCEPTS.BaseMethodDeclaration$kD) || SNodeOperations.isInstanceOf(current, CONCEPTS.ClosureLiteral$rp)) {
+      if (isFunctionBoundary(current)) {
         return current;
       }
       current = SNodeOperations.getParent(current);
@@ -263,7 +269,7 @@ public class OptimizerUtil {
   private static boolean isDirectlyInside(SNode node, SNode body) {
     SNode current = SNodeOperations.getParent(node);
     while ((current != null) && current != body) {
-      if (SNodeOperations.isInstanceOf(current, CONCEPTS.ClosureLiteral$rp) || SNodeOperations.isInstanceOf(current, CONCEPTS.Classifier$Ix) || SNodeOperations.isInstanceOf(current, CONCEPTS.BaseMethodDeclaration$kD)) {
+      if (isFunctionBoundary(current) || SNodeOperations.isInstanceOf(current, CONCEPTS.Classifier$Ix)) {
         return false;
       }
       current = SNodeOperations.getParent(current);
@@ -272,11 +278,14 @@ public class OptimizerUtil {
   }
 
   private static boolean namesClash(SNode closure, SNode target) {
-    // whether a variable declared in the closure body has the name of a variable visible where
-    // the body would be inlined: Java forbids shadowing locals and parameters, and a shadowed
-    // field would silently rebind later references, so any collision blocks the inlining
+    return namesClashIn(SLinkOperations.getTarget(closure, LINKS.body$Ujx2), target);
+  }
+  private static boolean namesClashIn(SNode subtree, SNode target) {
+    // whether a variable declared in the subtree has the name of a variable visible where the
+    // subtree's code would end up: Java forbids shadowing locals and parameters, and a shadowed
+    // field would silently rebind later references, so any collision blocks the transformation
     Set<String> inner = SetSequence.fromSet(new HashSet<String>());
-    for (SNode decl : ListSequence.fromList(SNodeOperations.getNodeDescendants(SLinkOperations.getTarget(closure, LINKS.body$Ujx2), CONCEPTS.VariableDeclaration$Y0, false, new SAbstractConcept[]{}))) {
+    for (SNode decl : ListSequence.fromList(SNodeOperations.getNodeDescendants(subtree, CONCEPTS.VariableDeclaration$Y0, false, new SAbstractConcept[]{}))) {
       SetSequence.fromSet(inner).addElement(SPropertyOperations.getString(decl, PROPS.name$MnvL));
     }
     if (SetSequence.fromSet(inner).isEmpty()) {
@@ -287,7 +296,7 @@ public class OptimizerUtil {
       scope = SNodeOperations.getContainingRoot(target);
     }
     for (SNode decl : ListSequence.fromList(SNodeOperations.getNodeDescendants(scope, CONCEPTS.VariableDeclaration$Y0, false, new SAbstractConcept[]{}))) {
-      if (ListSequence.fromList(SNodeOperations.getNodeAncestors(decl, CONCEPTS.ClosureLiteral$rp, true)).contains(closure)) {
+      if (ListSequence.fromList(SNodeOperations.getNodeAncestors(decl, null, true)).contains(subtree)) {
         continue;
       }
       if (SetSequence.fromSet(inner).contains(SPropertyOperations.getString(decl, PROPS.name$MnvL))) {
@@ -496,11 +505,12 @@ public class OptimizerUtil {
     return false;
   }
   private static boolean shadowedBetween(SNode reference, SNode subtree, String name) {
-    // whether a closure between the reference and the subtree root declares a variable of the name
+    // whether a closure or lambda between the reference and the subtree root declares a variable
+    // of the name
     SNode current = SNodeOperations.getParent(reference);
     while ((current != null) && current != subtree) {
-      if (SNodeOperations.isInstanceOf(current, CONCEPTS.ClosureLiteral$rp)) {
-        for (SNode declaration : ListSequence.fromList(SNodeOperations.getNodeDescendants(current, CONCEPTS.LocalVariableDeclaration$41, false, new SAbstractConcept[]{}))) {
+      if (SNodeOperations.isInstanceOf(current, CONCEPTS.ClosureLiteral$rp) || SNodeOperations.isInstanceOf(current, CONCEPTS.InternalLambdaExpression$Nz)) {
+        for (SNode declaration : ListSequence.fromList(SNodeOperations.getNodeDescendants(current, CONCEPTS.VariableDeclaration$Y0, false, new SAbstractConcept[]{}))) {
           if (Objects.equals(SPropertyOperations.getString(declaration, PROPS.name$MnvL), name)) {
             return true;
           }
@@ -667,6 +677,348 @@ public class OptimizerUtil {
   public static SNode calledMethod(SNode call) {
     return SLinkOperations.getTarget(call, LINKS.baseMethodDeclaration$pyYw);
   }
+  private static void collectMethodKeys(SNode classifier, Set<String> into, Set<String> excluded, Set<SNode> visited, boolean abstractOnly) {
+    // name/arity of the instance methods declared in the classifier and its supertypes: the
+    // abstract ones only, or all of them
+    if ((classifier == null) || SetSequence.fromSet(visited).contains(classifier)) {
+      return;
+    }
+    SetSequence.fromSet(visited).addElement(classifier);
+    for (SNode member : ListSequence.fromList(SLinkOperations.getChildren(classifier, LINKS.member$L_2d))) {
+      if (!(SNodeOperations.isInstanceOf(member, CONCEPTS.InstanceMethodDeclaration$39))) {
+        continue;
+      }
+      SNode method = SNodeOperations.cast(member, CONCEPTS.InstanceMethodDeclaration$39);
+      if (abstractOnly && !(SPropertyOperations.getBoolean(method, PROPS.isAbstract$VtH_))) {
+        continue;
+      }
+      String key = SPropertyOperations.getString(method, PROPS.name$MnvL) + "/" + ListSequence.fromList(SLinkOperations.getChildren(method, LINKS.parameter$5xBj)).count();
+      if (!(SetSequence.fromSet(excluded).contains(key))) {
+        SetSequence.fromSet(into).addElement(key);
+      }
+    }
+    if (SNodeOperations.isInstanceOf(classifier, CONCEPTS.ClassConcept$bK)) {
+      SNode superclass = SLinkOperations.getTarget((SNodeOperations.cast(classifier, CONCEPTS.ClassConcept$bK)), LINKS.superclass$Mp9$);
+      if ((superclass != null)) {
+        collectMethodKeys(SLinkOperations.getTarget(superclass, LINKS.classifier$cxMr), into, excluded, visited, abstractOnly);
+      }
+      for (SNode implemented : ListSequence.fromList(SLinkOperations.getChildren((SNodeOperations.cast(classifier, CONCEPTS.ClassConcept$bK)), LINKS.implementedInterface$rujG))) {
+        collectMethodKeys(SLinkOperations.getTarget(implemented, LINKS.classifier$cxMr), into, excluded, visited, abstractOnly);
+      }
+    } else if (SNodeOperations.isInstanceOf(classifier, CONCEPTS.Interface$db)) {
+      for (SNode extended : ListSequence.fromList(SLinkOperations.getChildren((SNodeOperations.cast(classifier, CONCEPTS.Interface$db)), LINKS.extendedInterface$PDVO))) {
+        collectMethodKeys(SLinkOperations.getTarget(extended, LINKS.classifier$cxMr), into, excluded, visited, abstractOnly);
+      }
+    }
+  }
+  private static boolean isSingleAbstractMethod(SNode functionalInterface, SNode method) {
+    // whether the interface is functional and the method implements its one abstract method:
+    // the abstract methods of the interface and everything it extends, minus those of Object,
+    // which an interface may redeclare (Comparator does), boil down to one of that name and arity
+    Set<String> objectMethods = SetSequence.fromSet(new HashSet<String>());
+    collectMethodKeys(objectClassifier(), objectMethods, SetSequence.fromSet(new HashSet<String>()), SetSequence.fromSet(new HashSet<SNode>()), false);
+    Set<String> abstractMethods = SetSequence.fromSet(new HashSet<String>());
+    collectMethodKeys(functionalInterface, abstractMethods, objectMethods, SetSequence.fromSet(new HashSet<SNode>()), true);
+    if (SetSequence.fromSet(abstractMethods).count() != 1) {
+      return false;
+    }
+    return SetSequence.fromSet(abstractMethods).contains(SPropertyOperations.getString(method, PROPS.name$MnvL) + "/" + ListSequence.fromList(SLinkOperations.getChildren(method, LINKS.parameter$5xBj)).count());
+  }
+  private static SNode classifierOf(SNode type) {
+    if (!(SNodeOperations.isInstanceOf(type, CONCEPTS.ClassifierType$bL))) {
+      return null;
+    }
+    return SLinkOperations.getTarget((SNodeOperations.cast(type, CONCEPTS.ClassifierType$bL)), LINKS.classifier$cxMr);
+  }
+  private static boolean returnsDeclaredType(SNode method) {
+    // whether every value the method returns has exactly its declared return type: then a lambda
+    // made of its body infers the same type where the interface's type argument is inferred
+    for (SNode ret : ListSequence.fromList(escapingReturns(SLinkOperations.getTarget(method, LINKS.body$5xQk)))) {
+      if ((SLinkOperations.getTarget(ret, LINKS.expression$eJ92) == null) || !(structurallyEqual(typeOf(SLinkOperations.getTarget(ret, LINKS.expression$eJ92)), SLinkOperations.getTarget(method, LINKS.returnType$5xoi)))) {
+        return false;
+      }
+    }
+    return true;
+  }
+  private static String lambdaTarget(SNode creation, SNode method) {
+    // "plain" when the surroundings give a lambda the interface as its target type, "cast" when a
+    // cast to the interface has to, null when a lambda cannot stand here at all
+    SNode functionalInterface = lambdaInterface(creation);
+    SNode child = creation;
+    SNode parent = SNodeOperations.getParent(creation);
+    while (SNodeOperations.isInstanceOf(parent, CONCEPTS.ParenthesizedExpression$Ws)) {
+      child = parent;
+      parent = SNodeOperations.getParent(parent);
+    }
+    if ((parent == null)) {
+      return null;
+    }
+    if (SNodeOperations.isInstanceOf(parent, CONCEPTS.VariableDeclaration$Y0)) {
+      return (classifierOf(SLinkOperations.getTarget((SNodeOperations.cast(parent, CONCEPTS.VariableDeclaration$Y0)), LINKS.type$a1UY)) == functionalInterface ? "plain" : "cast");
+    }
+    if (SNodeOperations.isInstanceOf(parent, CONCEPTS.AssignmentExpression$SE) && SNodeOperations.getContainingLink(child).equals(LINKS.rValue$spNK)) {
+      return (classifierOf(typeOf(SLinkOperations.getTarget((SNodeOperations.cast(parent, CONCEPTS.AssignmentExpression$SE)), LINKS.lValue$splI))) == functionalInterface ? "plain" : "cast");
+    }
+    if (SNodeOperations.isInstanceOf(parent, CONCEPTS.ReturnStatement$lt)) {
+      // a closure infers its type from what it returns, and a lambda has no type of its own
+      SNode function = enclosingFunction(parent);
+      if (!(SNodeOperations.isInstanceOf(function, CONCEPTS.BaseMethodDeclaration$kD))) {
+        return null;
+      }
+      return (classifierOf(SLinkOperations.getTarget((SNodeOperations.cast(function, CONCEPTS.BaseMethodDeclaration$kD)), LINKS.returnType$5xoi)) == functionalInterface ? "plain" : "cast");
+    }
+    if (SNodeOperations.isInstanceOf(parent, CONCEPTS.IMethodCall$M9) && SNodeOperations.getContainingLink(child).equals(LINKS.actualArgument$pzdx)) {
+      SNode call = SNodeOperations.cast(parent, CONCEPTS.IMethodCall$M9);
+      if (overloadedCall(call)) {
+        return "cast";
+      }
+      // a generic method infers the interface's type arguments from the lambda, which is only
+      // the same as the anonymous class declared when the body returns exactly that type
+      return (inferringCall(call) && !(returnsDeclaredType(method)) ? "cast" : "plain");
+    }
+    if (SNodeOperations.isInstanceOf(parent, CONCEPTS.DotExpression$yW) && SNodeOperations.getContainingLink(child).equals(LINKS.operand$w6IR)) {
+      // called right away: the lambda needs the cast, and the parentheses that come with it
+      return "cast";
+    }
+    return null;
+  }
+  private static boolean invocationStays(SNode iife) {
+    // whether no rule of this generator is going to do away with the invocation, now or in a later
+    // pass: the inlining rules look at the statement around it, which the passes before may still
+    // be changing, so an invocation right under a statement counts as staying only when the
+    // statement's own rule declines it
+    SNode parent = SNodeOperations.getParent(iife);
+    if (SNodeOperations.isInstanceOf(parent, CONCEPTS.ParenthesizedExpression$Ws)) {
+      // parentheses that are going to be dropped go first, then the statement rules get to see
+      // the invocation; parentheses that stay (around a receiver, say) leave it where it is
+      return !(parensRedundant(SNodeOperations.cast(parent, CONCEPTS.ParenthesizedExpression$Ws)));
+    }
+    if ((singleReturnValue(iife) != null) || (ternaryIfStatement(iife) != null) || (fluentChainVariable(iife) != null)) {
+      return false;
+    }
+    if (SNodeOperations.isInstanceOf(parent, CONCEPTS.ReturnStatement$lt)) {
+      return !(canInlineReturn(SNodeOperations.cast(parent, CONCEPTS.ReturnStatement$lt)));
+    }
+    if (SNodeOperations.isInstanceOf(parent, CONCEPTS.ExpressionStatement$O8)) {
+      return !(canInlineExpressionStatement(SNodeOperations.cast(parent, CONCEPTS.ExpressionStatement$O8)));
+    }
+    if (SNodeOperations.isInstanceOf(parent, CONCEPTS.LocalVariableDeclaration$41)) {
+      return !(canInlineLocalVariable(SNodeOperations.cast(parent, CONCEPTS.LocalVariableDeclaration$41)));
+    }
+    if (SNodeOperations.isInstanceOf(parent, CONCEPTS.TernaryOperatorExpression$aq) && canFoldTernary(SNodeOperations.cast(parent, CONCEPTS.TernaryOperatorExpression$aq))) {
+      return false;
+    }
+    return true;
+  }
+  private static boolean redeclaresNameInScope(SNode body, SNode at) {
+    // whether the body declares a parameter or local of a name already in scope where it stands:
+    // legal in a class body, an error in a lambda body
+    Set<String> taken = namesInScope(at);
+    for (SNode declaration : ListSequence.fromList(SNodeOperations.getNodeDescendants(body, CONCEPTS.VariableDeclaration$Y0, false, new SAbstractConcept[]{}))) {
+      if (SetSequence.fromSet(taken).contains(SPropertyOperations.getString(declaration, PROPS.name$MnvL))) {
+        return true;
+      }
+    }
+    return false;
+  }
+  private static SNode classifierType(SNode classifier) {
+    SNode type = SConceptOperations.createNewNode(MetaAdapterFactory.getConcept(0xf3061a5392264cc5L, 0xa443f952ceaf5816L, 0x101de48bf9eL, "jetbrains.mps.baseLanguage.structure.ClassifierType"));
+    type.setReferenceTarget(LINKS.classifier$cxMr, classifier);
+    return type;
+  }
+  private static SNode closureResultType(SNode iife) {
+    SNode type = typeOf(iifeClosure(iife));
+    if (!(SNodeOperations.isInstanceOf(type, CONCEPTS.FunctionType$9U))) {
+      return null;
+    }
+    return SLinkOperations.getTarget((SNodeOperations.cast(type, CONCEPTS.FunctionType$9U)), LINKS.resultType$2oOC);
+  }
+  public static SNode closureBody(SNode iife) {
+    return SLinkOperations.getTarget(iifeClosure(iife), LINKS.body$Ujx2);
+  }
+  public static boolean canBeRunnable(SNode iife) {
+    // { => body }.invoke() --> ((Runnable) () -> { body }).run() for a closure returning nothing
+    SNode closure = iifeClosure(iife);
+    if ((closure == null) || containsYield(SLinkOperations.getTarget(closure, LINKS.body$Ujx2)) || !(invocationStays(iife)) || redeclaresNameInScope(SLinkOperations.getTarget(closure, LINKS.body$Ujx2), iife)) {
+      return false;
+    }
+    return SNodeOperations.isInstanceOf(closureResultType(iife), CONCEPTS.VoidType$BF);
+  }
+  public static boolean canBeSupplier(SNode iife) {
+    // { => body }.invoke() --> ((Supplier<T>) () -> { body }).get()
+    // for an invocation that stays one: a lambda over a JDK interface instead of a closure over
+    // the MPS closures runtime
+    SNode closure = iifeClosure(iife);
+    if ((closure == null) || containsYield(SLinkOperations.getTarget(closure, LINKS.body$Ujx2)) || !(invocationStays(iife)) || redeclaresNameInScope(SLinkOperations.getTarget(closure, LINKS.body$Ujx2), iife)) {
+      return false;
+    }
+    return (supplierResultType(iife) != null);
+  }
+  public static SNode supplierResultType(SNode iife) {
+    // the type argument of the Supplier an invoked closure becomes, or null for a closure that
+    // returns nothing or whose result type cannot be written down
+    SNode result = closureResultType(iife);
+    if ((result == null) || SNodeOperations.isInstanceOf(result, CONCEPTS.VoidType$BF)) {
+      return null;
+    }
+    return boxed(result);
+  }
+  private static SNode boxed(SNode type) {
+    // the reference type a value of the type can be handed to a Supplier as: the type itself for a
+    // class type, the wrapper for a primitive, java.lang.String for the type system's string,
+    // null when the type is none of these (an unresolved or joined type, say)
+    if (SNodeOperations.isInstanceOf(type, CONCEPTS.StringType$uX)) {
+      return classifierType(SNodeOperations.getNode("6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)", "~String"));
+    }
+    if (SNodeOperations.isInstanceOf(type, CONCEPTS.BooleanType$_u)) {
+      return classifierType(SNodeOperations.getNode("6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)", "~Boolean"));
+    }
+    if (SNodeOperations.isInstanceOf(type, CONCEPTS.IntegerType$7a)) {
+      return classifierType(SNodeOperations.getNode("6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)", "~Integer"));
+    }
+    if (SNodeOperations.isInstanceOf(type, CONCEPTS.LongType$5X)) {
+      return classifierType(SNodeOperations.getNode("6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)", "~Long"));
+    }
+    if (SNodeOperations.isInstanceOf(type, CONCEPTS.DoubleType$x0)) {
+      return classifierType(SNodeOperations.getNode("6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)", "~Double"));
+    }
+    if (SNodeOperations.isInstanceOf(type, CONCEPTS.FloatType$up)) {
+      return classifierType(SNodeOperations.getNode("6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)", "~Float"));
+    }
+    if (SNodeOperations.isInstanceOf(type, CONCEPTS.ShortType$ro)) {
+      return classifierType(SNodeOperations.getNode("6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)", "~Short"));
+    }
+    if (SNodeOperations.isInstanceOf(type, CONCEPTS.ByteType$Ms)) {
+      return classifierType(SNodeOperations.getNode("6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)", "~Byte"));
+    }
+    if (SNodeOperations.isInstanceOf(type, CONCEPTS.CharType$JQ)) {
+      return classifierType(SNodeOperations.getNode("6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)", "~Character"));
+    }
+    if (!(SNodeOperations.isInstanceOf(type, CONCEPTS.ClassifierType$bL)) && !(SNodeOperations.isInstanceOf(type, CONCEPTS.TypeVariableReference$WL))) {
+      return null;
+    }
+    for (SNode part : ListSequence.fromList(SNodeOperations.getNodeDescendants(type, null, true, new SAbstractConcept[]{}))) {
+      if (!(Objects.equals(SNodeOperations.getConcept(part).getLanguage().getQualifiedName(), "jetbrains.mps.baseLanguage"))) {
+        // a type variable of the type system's own has no place in the output
+        return null;
+      }
+    }
+    return SNodeOperations.copyNode((SNodeOperations.cast(type, CONCEPTS.Type$bu)));
+  }
+  public static List<SNode> lambdaTypeArguments(SNode creation) {
+    return SLinkOperations.getChildren(SLinkOperations.getTarget((SNodeOperations.cast(SLinkOperations.getTarget(creation, LINKS.creator$BsHW), CONCEPTS.AnonymousClassCreator$fS)), LINKS.cls$Saf6), LINKS.typeParameter$F9H8);
+  }
+  public static SNode lambdaInterface(SNode creation) {
+    return SLinkOperations.getTarget(SLinkOperations.getTarget((SNodeOperations.cast(SLinkOperations.getTarget(creation, LINKS.creator$BsHW), CONCEPTS.AnonymousClassCreator$fS)), LINKS.cls$Saf6), LINKS.classifier$q_Y$);
+  }
+  public static SNode lambdaReturnType(SNode creation) {
+    return SLinkOperations.getTarget(lambdaMethod(creation), LINKS.returnType$5xoi);
+  }
+  public static SNode lambdaBody(SNode creation) {
+    return SLinkOperations.getTarget(lambdaMethod(creation), LINKS.body$5xQk);
+  }
+  public static List<SNode> lambdaParameters(SNode creation) {
+    return SLinkOperations.getChildren(lambdaMethod(creation), LINKS.parameter$5xBj);
+  }
+  public static boolean lambdaNeedsCast(SNode creation) {
+    return Objects.equals(lambdaTarget(creation, lambdaMethod(creation)), "cast");
+  }
+  private static Set<String> namesInScope(SNode target) {
+    // the names of the parameters and local variables a lambda at the target could not redeclare:
+    // those of every enclosing function and every enclosing block
+    Set<String> names = SetSequence.fromSet(new HashSet<String>());
+    SNode current = SNodeOperations.getParent(target);
+    while ((current != null)) {
+      if (SNodeOperations.isInstanceOf(current, CONCEPTS.BaseMethodDeclaration$kD) || SNodeOperations.isInstanceOf(current, CONCEPTS.ClosureLiteral$rp) || SNodeOperations.isInstanceOf(current, CONCEPTS.InternalLambdaExpression$Nz)) {
+        for (SNode parameter : ListSequence.fromList(SNodeOperations.getChildren(current))) {
+          if (SNodeOperations.isInstanceOf(parameter, CONCEPTS.ParameterDeclaration$RG)) {
+            SetSequence.fromSet(names).addElement(SPropertyOperations.getString((SNodeOperations.cast(parameter, CONCEPTS.ParameterDeclaration$RG)), PROPS.name$MnvL));
+          }
+        }
+      } else if (SNodeOperations.isInstanceOf(current, CONCEPTS.StatementList$m_)) {
+        for (SNode statement : ListSequence.fromList(SLinkOperations.getChildren((SNodeOperations.cast(current, CONCEPTS.StatementList$m_)), LINKS.statement$53DE))) {
+          if (SNodeOperations.isInstanceOf(statement, CONCEPTS.LocalVariableDeclarationStatement$4w)) {
+            SetSequence.fromSet(names).addElement(SPropertyOperations.getString(SLinkOperations.getTarget((SNodeOperations.cast(statement, CONCEPTS.LocalVariableDeclarationStatement$4w)), LINKS.localVariableDeclaration$RpjM), PROPS.name$MnvL));
+          }
+        }
+      } else if (SNodeOperations.isInstanceOf(current, CONCEPTS.ForStatement$qV) || SNodeOperations.isInstanceOf(current, CONCEPTS.ForeachStatement$Po) || SNodeOperations.isInstanceOf(current, CONCEPTS.CatchClause$Ig)) {
+        for (SNode declaration : ListSequence.fromList(SNodeOperations.getChildren(current))) {
+          if (SNodeOperations.isInstanceOf(declaration, CONCEPTS.VariableDeclaration$Y0)) {
+            SetSequence.fromSet(names).addElement(SPropertyOperations.getString((SNodeOperations.cast(declaration, CONCEPTS.VariableDeclaration$Y0)), PROPS.name$MnvL));
+          }
+        }
+      }
+      current = SNodeOperations.getParent(current);
+    }
+    return names;
+  }
+  public static boolean canBeLambda(SNode creation) {
+    // new I() { public R m(A a) { body } } --> (A a) -> { body }
+    SNode method = lambdaMethod(creation);
+    if ((method == null)) {
+      return false;
+    }
+    // this in a lambda is the enclosing instance, and a lambda cannot name itself or its method
+    for (SNode t : ListSequence.fromList(SNodeOperations.getNodeDescendants(SLinkOperations.getTarget(method, LINKS.body$5xQk), CONCEPTS.ThisExpression$$o, false, new SAbstractConcept[]{}))) {
+      if (isDirectlyInside(t, SLinkOperations.getTarget(method, LINKS.body$5xQk))) {
+        return false;
+      }
+    }
+    for (SNode s : ListSequence.fromList(SNodeOperations.getNodeDescendants(SLinkOperations.getTarget(method, LINKS.body$5xQk), CONCEPTS.SuperMethodCall$pW, false, new SAbstractConcept[]{}))) {
+      if (isDirectlyInside(s, SLinkOperations.getTarget(method, LINKS.body$5xQk))) {
+        return false;
+      }
+    }
+    SNode cls = SNodeOperations.getParent(method);
+    for (SNode n : ListSequence.fromList(SNodeOperations.getNodeDescendants(SLinkOperations.getTarget(method, LINKS.body$5xQk), null, true, new SAbstractConcept[]{}))) {
+      SNode sn = n;
+      for (SReference reference : Sequence.fromIterable(sn.getReferences())) {
+        SNode target = reference.getTargetNode();
+        if (target == method || target == cls) {
+          return false;
+        }
+      }
+    }
+    // the parameters and locals of a lambda may not redeclare a name in scope, unlike those of
+    // a class
+    Set<String> taken = namesInScope(creation);
+    for (SNode declaration : ListSequence.fromList(SNodeOperations.getNodeDescendants(method, CONCEPTS.VariableDeclaration$Y0, false, new SAbstractConcept[]{}))) {
+      if (SetSequence.fromSet(taken).contains(SPropertyOperations.getString(declaration, PROPS.name$MnvL))) {
+        return false;
+      }
+    }
+    return lambdaTarget(creation, method) != null;
+  }
+  public static SNode lambdaMethod(SNode creation) {
+    // the single method of an anonymous class that implements a functional interface with
+    // nothing else in its body, or null
+    if (!(SNodeOperations.isInstanceOf(SLinkOperations.getTarget(creation, LINKS.creator$BsHW), CONCEPTS.AnonymousClassCreator$fS))) {
+      return null;
+    }
+    SNode cls = SLinkOperations.getTarget((SNodeOperations.cast(SLinkOperations.getTarget(creation, LINKS.creator$BsHW), CONCEPTS.AnonymousClassCreator$fS)), LINKS.cls$Saf6);
+    if ((cls == null) || !(SNodeOperations.isInstanceOf(SLinkOperations.getTarget(cls, LINKS.classifier$q_Y$), CONCEPTS.Interface$db))) {
+      return null;
+    }
+    SNode method = null;
+    for (SNode child : ListSequence.fromList(SNodeOperations.getChildren(cls))) {
+      String role = SNodeOperations.getContainingLink(child).getName();
+      if (Objects.equals(role, "typeParameter") || Objects.equals(role, "visibility")) {
+        continue;
+      }
+      if (!(Objects.equals(role, "member")) || !(SNodeOperations.isInstanceOf(child, CONCEPTS.InstanceMethodDeclaration$39)) || (method != null)) {
+        // a field, initializer, nested class or second method has no place in a lambda
+        return null;
+      }
+      method = SNodeOperations.cast(child, CONCEPTS.InstanceMethodDeclaration$39);
+    }
+    if ((method == null) || (SLinkOperations.getTarget(method, LINKS.body$5xQk) == null)) {
+      return null;
+    }
+    if (!(isSingleAbstractMethod(SLinkOperations.getTarget(cls, LINKS.classifier$q_Y$), method))) {
+      return null;
+    }
+    return method;
+  }
   public static SNode stepOfReceiver(SNode reference) {
     // the step v = v.a(..) whose call the reference is the receiver of, or null
     SNode call = SNodeOperations.getParent(reference);
@@ -827,9 +1179,9 @@ public class OptimizerUtil {
     Set<SNode> visited = SetSequence.fromSet(new HashSet<SNode>());
     return collectOverloads(classifier, method, signatures, visited) || SetSequence.fromSet(signatures).count() > 1;
   }
-  private static boolean argumentTypeMatters(SNode call) {
-    // whether the static type of an argument takes part in choosing the method or in inferring
-    // its type arguments
+  private static boolean inferringCall(SNode call) {
+    // a call that infers type arguments from its arguments: of a generic method without explicit
+    // type arguments, or of a generic class through the diamond
     SNode method = SLinkOperations.getTarget(call, LINKS.baseMethodDeclaration$pyYw);
     if ((method == null)) {
       return true;
@@ -839,11 +1191,19 @@ public class OptimizerUtil {
     }
     if (SNodeOperations.isInstanceOf(call, CONCEPTS.ClassCreator$ZG)) {
       SNode created = SNodeOperations.getNodeAncestor(method, CONCEPTS.ClassConcept$bK, false, false);
+      return (created == null) || ListSequence.fromList(SLinkOperations.getChildren(created, LINKS.typeVariableDeclaration$Lipp)).isNotEmpty() && ListSequence.fromList(SLinkOperations.getChildren((SNodeOperations.cast(call, CONCEPTS.ClassCreator$ZG)), LINKS.typeParameter$uYiw)).isEmpty();
+    }
+    return false;
+  }
+  private static boolean overloadedCall(SNode call) {
+    // whether the static types of the arguments take part in choosing the method
+    SNode method = SLinkOperations.getTarget(call, LINKS.baseMethodDeclaration$pyYw);
+    if ((method == null)) {
+      return true;
+    }
+    if (SNodeOperations.isInstanceOf(call, CONCEPTS.ClassCreator$ZG)) {
+      SNode created = SNodeOperations.getNodeAncestor(method, CONCEPTS.ClassConcept$bK, false, false);
       if ((created == null)) {
-        return true;
-      }
-      if (ListSequence.fromList(SLinkOperations.getChildren(created, LINKS.typeVariableDeclaration$Lipp)).isNotEmpty() && ListSequence.fromList(SLinkOperations.getChildren((SNodeOperations.cast(call, CONCEPTS.ClassCreator$ZG)), LINKS.typeParameter$uYiw)).isEmpty()) {
-        // the diamond infers the type arguments from the arguments
         return true;
       }
       int constructors = 0;
@@ -864,6 +1224,11 @@ public class OptimizerUtil {
       }
     }
     return (from == null) || overloaded(from, method);
+  }
+  private static boolean argumentTypeMatters(SNode call) {
+    // whether the static type of an argument takes part in choosing the method or in inferring
+    // its type arguments
+    return inferringCall(call) || overloadedCall(call);
   }
   private static boolean upcastRemovable(SNode cast, SNode operandType) {
     // whether the surroundings of the cast are indifferent to the static type of the expression
@@ -982,6 +1347,7 @@ public class OptimizerUtil {
     /*package*/ static final SConcept BlockStatement$u4 = MetaAdapterFactory.getConcept(0xf3061a5392264cc5L, 0xa443f952ceaf5816L, 0xfc092b6b77L, "jetbrains.mps.baseLanguage.structure.BlockStatement");
     /*package*/ static final SConcept LocalVariableDeclarationStatement$4w = MetaAdapterFactory.getConcept(0xf3061a5392264cc5L, 0xa443f952ceaf5816L, 0xf8cc67c7f0L, "jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement");
     /*package*/ static final SConcept BaseMethodDeclaration$kD = MetaAdapterFactory.getConcept(0xf3061a5392264cc5L, 0xa443f952ceaf5816L, 0xf8cc56b1fcL, "jetbrains.mps.baseLanguage.structure.BaseMethodDeclaration");
+    /*package*/ static final SConcept InternalLambdaExpression$Nz = MetaAdapterFactory.getConcept(0xdf345b11b8c74213L, 0xac6648d2a9b75d88L, 0x2e340d59f2201f2cL, "jetbrains.mps.baseLanguageInternal.structure.InternalLambdaExpression");
     /*package*/ static final SConcept YieldStatement$yx = MetaAdapterFactory.getConcept(0xfd3920347849419dL, 0x907112563d152375L, 0x11797183e82L, "jetbrains.mps.baseLanguage.closures.structure.YieldStatement");
     /*package*/ static final SConcept Classifier$Ix = MetaAdapterFactory.getConcept(0xf3061a5392264cc5L, 0xa443f952ceaf5816L, 0x101d9d3ca30L, "jetbrains.mps.baseLanguage.structure.Classifier");
     /*package*/ static final SConcept VariableDeclaration$Y0 = MetaAdapterFactory.getConcept(0xf3061a5392264cc5L, 0xa443f952ceaf5816L, 0xf8c37a7f6eL, "jetbrains.mps.baseLanguage.structure.VariableDeclaration");
@@ -1012,25 +1378,43 @@ public class OptimizerUtil {
     /*package*/ static final SConcept ArrayCreatorWithInitializer$Bs = MetaAdapterFactory.getConcept(0xf3061a5392264cc5L, 0xa443f952ceaf5816L, 0x10cd01b77ddL, "jetbrains.mps.baseLanguage.structure.ArrayCreatorWithInitializer");
     /*package*/ static final SConcept ArrayLiteral$Ey = MetaAdapterFactory.getConcept(0xf3061a5392264cc5L, 0xa443f952ceaf5816L, 0x114a770dc0dL, "jetbrains.mps.baseLanguage.structure.ArrayLiteral");
     /*package*/ static final SConcept BaseAssignmentExpression$PA = MetaAdapterFactory.getConcept(0xf3061a5392264cc5L, 0xa443f952ceaf5816L, 0x11b0d00332cL, "jetbrains.mps.baseLanguage.structure.BaseAssignmentExpression");
-    /*package*/ static final SConcept LocalVariableDeclaration$41 = MetaAdapterFactory.getConcept(0xf3061a5392264cc5L, 0xa443f952ceaf5816L, 0xf8cc67c7efL, "jetbrains.mps.baseLanguage.structure.LocalVariableDeclaration");
     /*package*/ static final SConcept ExpressionStatement$O8 = MetaAdapterFactory.getConcept(0xf3061a5392264cc5L, 0xa443f952ceaf5816L, 0xf8cc56b213L, "jetbrains.mps.baseLanguage.structure.ExpressionStatement");
     /*package*/ static final SConcept AssignmentExpression$SE = MetaAdapterFactory.getConcept(0xf3061a5392264cc5L, 0xa443f952ceaf5816L, 0xf8c77f1e96L, "jetbrains.mps.baseLanguage.structure.AssignmentExpression");
     /*package*/ static final SConcept ClassifierType$bL = MetaAdapterFactory.getConcept(0xf3061a5392264cc5L, 0xa443f952ceaf5816L, 0x101de48bf9eL, "jetbrains.mps.baseLanguage.structure.ClassifierType");
     /*package*/ static final SConcept TypeVariableReference$WL = MetaAdapterFactory.getConcept(0xf3061a5392264cc5L, 0xa443f952ceaf5816L, 0x102467229d8L, "jetbrains.mps.baseLanguage.structure.TypeVariableReference");
     /*package*/ static final SConcept StatementList$m_ = MetaAdapterFactory.getConcept(0xf3061a5392264cc5L, 0xa443f952ceaf5816L, 0xf8cc56b200L, "jetbrains.mps.baseLanguage.structure.StatementList");
     /*package*/ static final SConcept Expression$mB = MetaAdapterFactory.getConcept(0xf3061a5392264cc5L, 0xa443f952ceaf5816L, 0xf8c37f506fL, "jetbrains.mps.baseLanguage.structure.Expression");
+    /*package*/ static final SConcept InstanceMethodDeclaration$39 = MetaAdapterFactory.getConcept(0xf3061a5392264cc5L, 0xa443f952ceaf5816L, 0xf8cc56b21dL, "jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration");
+    /*package*/ static final SConcept ClassConcept$bK = MetaAdapterFactory.getConcept(0xf3061a5392264cc5L, 0xa443f952ceaf5816L, 0xf8c108ca66L, "jetbrains.mps.baseLanguage.structure.ClassConcept");
+    /*package*/ static final SConcept Interface$db = MetaAdapterFactory.getConcept(0xf3061a5392264cc5L, 0xa443f952ceaf5816L, 0x101edd46144L, "jetbrains.mps.baseLanguage.structure.Interface");
+    /*package*/ static final SConcept LocalVariableDeclaration$41 = MetaAdapterFactory.getConcept(0xf3061a5392264cc5L, 0xa443f952ceaf5816L, 0xf8cc67c7efL, "jetbrains.mps.baseLanguage.structure.LocalVariableDeclaration");
+    /*package*/ static final SConcept FunctionType$9U = MetaAdapterFactory.getConcept(0xfd3920347849419dL, 0x907112563d152375L, 0x1174a4d19ffL, "jetbrains.mps.baseLanguage.closures.structure.FunctionType");
+    /*package*/ static final SConcept VoidType$BF = MetaAdapterFactory.getConcept(0xf3061a5392264cc5L, 0xa443f952ceaf5816L, 0xf8cc6bf96dL, "jetbrains.mps.baseLanguage.structure.VoidType");
+    /*package*/ static final SConcept StringType$uX = MetaAdapterFactory.getConcept(0xf3061a5392264cc5L, 0xa443f952ceaf5816L, 0x11d47da71ecL, "jetbrains.mps.baseLanguage.structure.StringType");
+    /*package*/ static final SConcept BooleanType$_u = MetaAdapterFactory.getConcept(0xf3061a5392264cc5L, 0xa443f952ceaf5816L, 0xf940d6513eL, "jetbrains.mps.baseLanguage.structure.BooleanType");
+    /*package*/ static final SConcept IntegerType$7a = MetaAdapterFactory.getConcept(0xf3061a5392264cc5L, 0xa443f952ceaf5816L, 0xf940d22479L, "jetbrains.mps.baseLanguage.structure.IntegerType");
+    /*package*/ static final SConcept LongType$5X = MetaAdapterFactory.getConcept(0xf3061a5392264cc5L, 0xa443f952ceaf5816L, 0xf8cc67c7f3L, "jetbrains.mps.baseLanguage.structure.LongType");
+    /*package*/ static final SConcept DoubleType$x0 = MetaAdapterFactory.getConcept(0xf3061a5392264cc5L, 0xa443f952ceaf5816L, 0xf940d451a6L, "jetbrains.mps.baseLanguage.structure.DoubleType");
+    /*package*/ static final SConcept FloatType$up = MetaAdapterFactory.getConcept(0xf3061a5392264cc5L, 0xa443f952ceaf5816L, 0xf940d327fdL, "jetbrains.mps.baseLanguage.structure.FloatType");
+    /*package*/ static final SConcept ShortType$ro = MetaAdapterFactory.getConcept(0xf3061a5392264cc5L, 0xa443f952ceaf5816L, 0xf940cc380dL, "jetbrains.mps.baseLanguage.structure.ShortType");
+    /*package*/ static final SConcept ByteType$Ms = MetaAdapterFactory.getConcept(0xf3061a5392264cc5L, 0xa443f952ceaf5816L, 0xf940d5b617L, "jetbrains.mps.baseLanguage.structure.ByteType");
+    /*package*/ static final SConcept CharType$JQ = MetaAdapterFactory.getConcept(0xf3061a5392264cc5L, 0xa443f952ceaf5816L, 0xf940d4f826L, "jetbrains.mps.baseLanguage.structure.CharType");
+    /*package*/ static final SConcept Type$bu = MetaAdapterFactory.getConcept(0xf3061a5392264cc5L, 0xa443f952ceaf5816L, 0xf8c37f506dL, "jetbrains.mps.baseLanguage.structure.Type");
+    /*package*/ static final SConcept AnonymousClassCreator$fS = MetaAdapterFactory.getConcept(0xf3061a5392264cc5L, 0xa443f952ceaf5816L, 0x1133e3b449aL, "jetbrains.mps.baseLanguage.structure.AnonymousClassCreator");
+    /*package*/ static final SConcept ParameterDeclaration$RG = MetaAdapterFactory.getConcept(0xf3061a5392264cc5L, 0xa443f952ceaf5816L, 0xf8c77f1e94L, "jetbrains.mps.baseLanguage.structure.ParameterDeclaration");
+    /*package*/ static final SConcept ForStatement$qV = MetaAdapterFactory.getConcept(0xf3061a5392264cc5L, 0xa443f952ceaf5816L, 0x10a698082feL, "jetbrains.mps.baseLanguage.structure.ForStatement");
+    /*package*/ static final SConcept ForeachStatement$Po = MetaAdapterFactory.getConcept(0xf3061a5392264cc5L, 0xa443f952ceaf5816L, 0x10a6933ce33L, "jetbrains.mps.baseLanguage.structure.ForeachStatement");
+    /*package*/ static final SConcept CatchClause$Ig = MetaAdapterFactory.getConcept(0xf3061a5392264cc5L, 0xa443f952ceaf5816L, 0x10f39a56e2fL, "jetbrains.mps.baseLanguage.structure.CatchClause");
+    /*package*/ static final SConcept SuperMethodCall$pW = MetaAdapterFactory.getConcept(0xf3061a5392264cc5L, 0xa443f952ceaf5816L, 0xf9d78b55aaL, "jetbrains.mps.baseLanguage.structure.SuperMethodCall");
     /*package*/ static final SConcept ArrayType$rh = MetaAdapterFactory.getConcept(0xf3061a5392264cc5L, 0xa443f952ceaf5816L, 0xf940d819f7L, "jetbrains.mps.baseLanguage.structure.ArrayType");
     /*package*/ static final SConcept ConstructorDeclaration$yG = MetaAdapterFactory.getConcept(0xf3061a5392264cc5L, 0xa443f952ceaf5816L, 0xf8cc56b204L, "jetbrains.mps.baseLanguage.structure.ConstructorDeclaration");
     /*package*/ static final SConcept VariableArityType$KF = MetaAdapterFactory.getConcept(0xf3061a5392264cc5L, 0xa443f952ceaf5816L, 0x11c08f42e7bL, "jetbrains.mps.baseLanguage.structure.VariableArityType");
-    /*package*/ static final SConcept ClassConcept$bK = MetaAdapterFactory.getConcept(0xf3061a5392264cc5L, 0xa443f952ceaf5816L, 0xf8c108ca66L, "jetbrains.mps.baseLanguage.structure.ClassConcept");
-    /*package*/ static final SConcept Interface$db = MetaAdapterFactory.getConcept(0xf3061a5392264cc5L, 0xa443f952ceaf5816L, 0x101edd46144L, "jetbrains.mps.baseLanguage.structure.Interface");
     /*package*/ static final SConcept ClassCreator$ZG = MetaAdapterFactory.getConcept(0xf3061a5392264cc5L, 0xa443f952ceaf5816L, 0x11a59b0fbceL, "jetbrains.mps.baseLanguage.structure.ClassCreator");
     /*package*/ static final SConcept LocalMethodCall$zT = MetaAdapterFactory.getConcept(0xf3061a5392264cc5L, 0xa443f952ceaf5816L, 0x6c6b6a1e379f9404L, "jetbrains.mps.baseLanguage.structure.LocalMethodCall");
     /*package*/ static final SConcept InstanceMethodCallOperation$uu = MetaAdapterFactory.getConcept(0xf3061a5392264cc5L, 0xa443f952ceaf5816L, 0x118154a6332L, "jetbrains.mps.baseLanguage.structure.InstanceMethodCallOperation");
     /*package*/ static final SConcept PlusExpression$k0 = MetaAdapterFactory.getConcept(0xf3061a5392264cc5L, 0xa443f952ceaf5816L, 0xf8cc67c7fbL, "jetbrains.mps.baseLanguage.structure.PlusExpression");
     /*package*/ static final SConcept EqualsExpression$MF = MetaAdapterFactory.getConcept(0xf3061a5392264cc5L, 0xa443f952ceaf5816L, 0xf8cc56b210L, "jetbrains.mps.baseLanguage.structure.EqualsExpression");
     /*package*/ static final SConcept NotEqualsExpression$aX = MetaAdapterFactory.getConcept(0xf3061a5392264cc5L, 0xa443f952ceaf5816L, 0xf9e20e303fL, "jetbrains.mps.baseLanguage.structure.NotEqualsExpression");
-    /*package*/ static final SConcept StringType$uX = MetaAdapterFactory.getConcept(0xf3061a5392264cc5L, 0xa443f952ceaf5816L, 0x11d47da71ecL, "jetbrains.mps.baseLanguage.structure.StringType");
   }
 
   private static final class LINKS {
@@ -1071,12 +1455,18 @@ public class OptimizerUtil {
     /*package*/ static final SContainmentLink parameter$oqG$ = MetaAdapterFactory.getContainmentLink(0xf3061a5392264cc5L, 0xa443f952ceaf5816L, 0x101de48bf9eL, 0x102419671abL, "parameter");
     /*package*/ static final SReferenceLink typeVariableDeclaration$Lz1I = MetaAdapterFactory.getReferenceLink(0xf3061a5392264cc5L, 0xa443f952ceaf5816L, 0x102467229d8L, 0x1024673a581L, "typeVariableDeclaration");
     /*package*/ static final SContainmentLink type$a1UY = MetaAdapterFactory.getContainmentLink(0xf3061a5392264cc5L, 0xa443f952ceaf5816L, 0x450368d90ce15bc3L, 0x4ed4d318133c80ceL, "type");
-    /*package*/ static final SContainmentLink componentType$F$Gi = MetaAdapterFactory.getContainmentLink(0xf3061a5392264cc5L, 0xa443f952ceaf5816L, 0xf940d819f7L, 0xf940d819f8L, "componentType");
     /*package*/ static final SContainmentLink parameter$5xBj = MetaAdapterFactory.getContainmentLink(0xf3061a5392264cc5L, 0xa443f952ceaf5816L, 0xf8cc56b1fcL, 0xf8cc56b1feL, "parameter");
     /*package*/ static final SContainmentLink member$L_2d = MetaAdapterFactory.getContainmentLink(0xf3061a5392264cc5L, 0xa443f952ceaf5816L, 0x101d9d3ca30L, 0x4a9a46de59132803L, "member");
     /*package*/ static final SContainmentLink superclass$Mp9$ = MetaAdapterFactory.getContainmentLink(0xf3061a5392264cc5L, 0xa443f952ceaf5816L, 0xf8c108ca66L, 0x10f6353296dL, "superclass");
     /*package*/ static final SContainmentLink implementedInterface$rujG = MetaAdapterFactory.getContainmentLink(0xf3061a5392264cc5L, 0xa443f952ceaf5816L, 0xf8c108ca66L, 0xff2ac0b419L, "implementedInterface");
     /*package*/ static final SContainmentLink extendedInterface$PDVO = MetaAdapterFactory.getContainmentLink(0xf3061a5392264cc5L, 0xa443f952ceaf5816L, 0x101edd46144L, 0x101eddadad7L, "extendedInterface");
+    /*package*/ static final SContainmentLink body$5xQk = MetaAdapterFactory.getContainmentLink(0xf3061a5392264cc5L, 0xa443f952ceaf5816L, 0xf8cc56b1fcL, 0xf8cc56b1ffL, "body");
+    /*package*/ static final SContainmentLink resultType$2oOC = MetaAdapterFactory.getContainmentLink(0xfd3920347849419dL, 0x907112563d152375L, 0x1174a4d19ffL, 0x1174a4d5371L, "resultType");
+    /*package*/ static final SContainmentLink creator$BsHW = MetaAdapterFactory.getContainmentLink(0xf3061a5392264cc5L, 0xa443f952ceaf5816L, 0x10ab8473cc5L, 0x10ab847b486L, "creator");
+    /*package*/ static final SContainmentLink cls$Saf6 = MetaAdapterFactory.getContainmentLink(0xf3061a5392264cc5L, 0xa443f952ceaf5816L, 0x1133e3b449aL, 0x1133e3b8b49L, "cls");
+    /*package*/ static final SContainmentLink typeParameter$F9H8 = MetaAdapterFactory.getContainmentLink(0xf3061a5392264cc5L, 0xa443f952ceaf5816L, 0x1107e0cb103L, 0x117ac45a693L, "typeParameter");
+    /*package*/ static final SReferenceLink classifier$q_Y$ = MetaAdapterFactory.getReferenceLink(0xf3061a5392264cc5L, 0xa443f952ceaf5816L, 0x1107e0cb103L, 0x1107e0fd2a0L, "classifier");
+    /*package*/ static final SContainmentLink componentType$F$Gi = MetaAdapterFactory.getContainmentLink(0xf3061a5392264cc5L, 0xa443f952ceaf5816L, 0xf940d819f7L, 0xf940d819f8L, "componentType");
     /*package*/ static final SContainmentLink typeParameter$uYiw = MetaAdapterFactory.getContainmentLink(0xf3061a5392264cc5L, 0xa443f952ceaf5816L, 0x11a59b0fbceL, 0x11a59c8ffe0L, "typeParameter");
     /*package*/ static final SContainmentLink leftExpression$sEj = MetaAdapterFactory.getContainmentLink(0xf3061a5392264cc5L, 0xa443f952ceaf5816L, 0xfbdeb6fecfL, 0xfbdeb7a11cL, "leftExpression");
     /*package*/ static final SContainmentLink rightExpression$nvX = MetaAdapterFactory.getContainmentLink(0xf3061a5392264cc5L, 0xa443f952ceaf5816L, 0xfbdeb6fecfL, 0xfbdeb7a11bL, "rightExpression");
@@ -1085,5 +1475,6 @@ public class OptimizerUtil {
   private static final class PROPS {
     /*package*/ static final SProperty name$MnvL = MetaAdapterFactory.getProperty(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L, 0x110396ec041L, "name");
     /*package*/ static final SProperty value$5y_M = MetaAdapterFactory.getProperty(0xf3061a5392264cc5L, 0xa443f952ceaf5816L, 0xf8cc56b201L, 0xf8cc56b202L, "value");
+    /*package*/ static final SProperty isAbstract$VtH_ = MetaAdapterFactory.getProperty(0xf3061a5392264cc5L, 0xa443f952ceaf5816L, 0xf8cc56b21dL, 0x1126a8d157dL, "isAbstract");
   }
 }

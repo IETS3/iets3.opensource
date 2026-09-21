@@ -73,32 +73,44 @@ public class QueriesGenerated extends QueryProviderBase {
     return OptimizerUtil.needsTypeArguments(_context.getNode());
   }
   public static boolean rule_Condition_0_11(final BaseMappingRuleContext _context) {
-    return (OptimizerUtil.ternaryIfStatement(_context.getNode()) != null);
+    return OptimizerUtil.canBeLambda(_context.getNode()) && !(OptimizerUtil.lambdaNeedsCast(_context.getNode()));
   }
   public static boolean rule_Condition_0_12(final BaseMappingRuleContext _context) {
+    return OptimizerUtil.canBeLambda(_context.getNode()) && OptimizerUtil.lambdaNeedsCast(_context.getNode());
+  }
+  public static boolean rule_Condition_0_13(final BaseMappingRuleContext _context) {
+    return (OptimizerUtil.ternaryIfStatement(_context.getNode()) != null);
+  }
+  public static boolean rule_Condition_0_14(final BaseMappingRuleContext _context) {
     SNode value = OptimizerUtil.singleReturnValue(_context.getNode());
     return (value != null) && !(OptimizerUtil.needsParens(_context.getNode(), value));
   }
-  public static boolean rule_Condition_0_13(final BaseMappingRuleContext _context) {
+  public static boolean rule_Condition_0_15(final BaseMappingRuleContext _context) {
     SNode value = OptimizerUtil.singleReturnValue(_context.getNode());
     return (value != null) && OptimizerUtil.needsParens(_context.getNode(), value);
   }
-  public static boolean rule_Condition_0_14(final BaseMappingRuleContext _context) {
-    return OptimizerUtil.canFoldTernary(_context.getNode()) && !(OptimizerUtil.needsParens(_context.getNode(), OptimizerUtil.foldedTernaryValue(_context.getNode())));
-  }
-  public static boolean rule_Condition_0_15(final BaseMappingRuleContext _context) {
-    return OptimizerUtil.canFoldTernary(_context.getNode()) && OptimizerUtil.needsParens(_context.getNode(), OptimizerUtil.foldedTernaryValue(_context.getNode()));
-  }
   public static boolean rule_Condition_0_16(final BaseMappingRuleContext _context) {
-    return OptimizerUtil.isNestedCast(_context.getNode());
+    return OptimizerUtil.canBeSupplier(_context.getNode());
   }
   public static boolean rule_Condition_0_17(final BaseMappingRuleContext _context) {
-    return OptimizerUtil.castRedundant(_context.getNode()) && !(OptimizerUtil.needsParens(_context.getNode(), SLinkOperations.getTarget(_context.getNode(), LINKS.expression$XDmN)));
+    return OptimizerUtil.canBeRunnable(_context.getNode());
   }
   public static boolean rule_Condition_0_18(final BaseMappingRuleContext _context) {
-    return OptimizerUtil.castRedundant(_context.getNode()) && OptimizerUtil.needsParens(_context.getNode(), SLinkOperations.getTarget(_context.getNode(), LINKS.expression$XDmN));
+    return OptimizerUtil.canFoldTernary(_context.getNode()) && !(OptimizerUtil.needsParens(_context.getNode(), OptimizerUtil.foldedTernaryValue(_context.getNode())));
   }
   public static boolean rule_Condition_0_19(final BaseMappingRuleContext _context) {
+    return OptimizerUtil.canFoldTernary(_context.getNode()) && OptimizerUtil.needsParens(_context.getNode(), OptimizerUtil.foldedTernaryValue(_context.getNode()));
+  }
+  public static boolean rule_Condition_0_20(final BaseMappingRuleContext _context) {
+    return OptimizerUtil.isNestedCast(_context.getNode());
+  }
+  public static boolean rule_Condition_0_21(final BaseMappingRuleContext _context) {
+    return OptimizerUtil.castRedundant(_context.getNode()) && !(OptimizerUtil.needsParens(_context.getNode(), SLinkOperations.getTarget(_context.getNode(), LINKS.expression$XDmN)));
+  }
+  public static boolean rule_Condition_0_22(final BaseMappingRuleContext _context) {
+    return OptimizerUtil.castRedundant(_context.getNode()) && OptimizerUtil.needsParens(_context.getNode(), SLinkOperations.getTarget(_context.getNode(), LINKS.expression$XDmN));
+  }
+  public static boolean rule_Condition_0_23(final BaseMappingRuleContext _context) {
     return OptimizerUtil.parensRedundant(_context.getNode());
   }
   public static Object propertyMacro_GetValue_0_0(final PropertyMacroContext _context) {
@@ -112,6 +124,9 @@ public class QueriesGenerated extends QueryProviderBase {
   }
   public static Object referenceMacro_GetReferent_0_1(final ReferenceMacroContext _context) {
     return OptimizerUtil.calledMethod(_context.getNode());
+  }
+  public static Object referenceMacro_GetReferent_0_2(final ReferenceMacroContext _context) {
+    return OptimizerUtil.lambdaInterface(_context.getNode());
   }
   public static SNode sourceNodeQuery_0_0(final SourceSubstituteMacroNodeContext _context) {
     return SLinkOperations.getTarget(_context.getNode(), LINKS.localVariableDeclaration$RpjM);
@@ -138,39 +153,63 @@ public class QueriesGenerated extends QueryProviderBase {
     return OptimizerUtil.stepReceiver(OptimizerUtil.stepOfReceiver(_context.getNode()));
   }
   public static SNode sourceNodeQuery_0_8(final SourceSubstituteMacroNodeContext _context) {
-    return OptimizerUtil.ternaryCondition(_context.getNode());
+    return OptimizerUtil.lambdaBody(_context.getNode());
   }
   public static SNode sourceNodeQuery_0_9(final SourceSubstituteMacroNodeContext _context) {
-    return OptimizerUtil.ternaryIfTrue(_context.getNode());
+    return OptimizerUtil.lambdaReturnType(_context.getNode());
   }
   public static SNode sourceNodeQuery_0_10(final SourceSubstituteMacroNodeContext _context) {
-    return OptimizerUtil.ternaryIfFalse(_context.getNode());
+    return OptimizerUtil.lambdaBody(_context.getNode());
   }
   public static SNode sourceNodeQuery_0_11(final SourceSubstituteMacroNodeContext _context) {
-    return OptimizerUtil.singleReturnValue(_context.getNode());
+    return OptimizerUtil.lambdaReturnType(_context.getNode());
   }
   public static SNode sourceNodeQuery_0_12(final SourceSubstituteMacroNodeContext _context) {
-    return OptimizerUtil.singleReturnValue(_context.getNode());
+    return OptimizerUtil.ternaryCondition(_context.getNode());
   }
   public static SNode sourceNodeQuery_0_13(final SourceSubstituteMacroNodeContext _context) {
-    return OptimizerUtil.foldedTernaryValue(_context.getNode());
+    return OptimizerUtil.ternaryIfTrue(_context.getNode());
   }
   public static SNode sourceNodeQuery_0_14(final SourceSubstituteMacroNodeContext _context) {
-    return OptimizerUtil.foldedTernaryValue(_context.getNode());
+    return OptimizerUtil.ternaryIfFalse(_context.getNode());
   }
   public static SNode sourceNodeQuery_0_15(final SourceSubstituteMacroNodeContext _context) {
-    return SLinkOperations.getTarget(_context.getNode(), LINKS.type$XD7M);
+    return OptimizerUtil.singleReturnValue(_context.getNode());
   }
   public static SNode sourceNodeQuery_0_16(final SourceSubstituteMacroNodeContext _context) {
-    return OptimizerUtil.innerCastExpression(_context.getNode());
+    return OptimizerUtil.singleReturnValue(_context.getNode());
   }
   public static SNode sourceNodeQuery_0_17(final SourceSubstituteMacroNodeContext _context) {
-    return SLinkOperations.getTarget(_context.getNode(), LINKS.expression$XDmN);
+    return OptimizerUtil.supplierResultType(_context.getNode());
   }
   public static SNode sourceNodeQuery_0_18(final SourceSubstituteMacroNodeContext _context) {
-    return SLinkOperations.getTarget(_context.getNode(), LINKS.expression$XDmN);
+    return OptimizerUtil.closureBody(_context.getNode());
   }
   public static SNode sourceNodeQuery_0_19(final SourceSubstituteMacroNodeContext _context) {
+    return OptimizerUtil.supplierResultType(_context.getNode());
+  }
+  public static SNode sourceNodeQuery_0_20(final SourceSubstituteMacroNodeContext _context) {
+    return OptimizerUtil.closureBody(_context.getNode());
+  }
+  public static SNode sourceNodeQuery_0_21(final SourceSubstituteMacroNodeContext _context) {
+    return OptimizerUtil.foldedTernaryValue(_context.getNode());
+  }
+  public static SNode sourceNodeQuery_0_22(final SourceSubstituteMacroNodeContext _context) {
+    return OptimizerUtil.foldedTernaryValue(_context.getNode());
+  }
+  public static SNode sourceNodeQuery_0_23(final SourceSubstituteMacroNodeContext _context) {
+    return SLinkOperations.getTarget(_context.getNode(), LINKS.type$XD7M);
+  }
+  public static SNode sourceNodeQuery_0_24(final SourceSubstituteMacroNodeContext _context) {
+    return OptimizerUtil.innerCastExpression(_context.getNode());
+  }
+  public static SNode sourceNodeQuery_0_25(final SourceSubstituteMacroNodeContext _context) {
+    return SLinkOperations.getTarget(_context.getNode(), LINKS.expression$XDmN);
+  }
+  public static SNode sourceNodeQuery_0_26(final SourceSubstituteMacroNodeContext _context) {
+    return SLinkOperations.getTarget(_context.getNode(), LINKS.expression$XDmN);
+  }
+  public static SNode sourceNodeQuery_0_27(final SourceSubstituteMacroNodeContext _context) {
     return SLinkOperations.getTarget(_context.getNode(), LINKS.expression$TlhM);
   }
   public static Iterable<SNode> sourceNodesQuery_0_0(final SourceSubstituteMacroNodesContext _context) {
@@ -191,6 +230,15 @@ public class QueriesGenerated extends QueryProviderBase {
   public static Iterable<SNode> sourceNodesQuery_0_5(final SourceSubstituteMacroNodesContext _context) {
     return SLinkOperations.getChildren(_context.getNode(), LINKS.actualArgument$pzdx);
   }
+  public static Iterable<SNode> sourceNodesQuery_0_6(final SourceSubstituteMacroNodesContext _context) {
+    return OptimizerUtil.lambdaParameters(_context.getNode());
+  }
+  public static Iterable<SNode> sourceNodesQuery_0_7(final SourceSubstituteMacroNodesContext _context) {
+    return OptimizerUtil.lambdaTypeArguments(_context.getNode());
+  }
+  public static Iterable<SNode> sourceNodesQuery_0_8(final SourceSubstituteMacroNodesContext _context) {
+    return OptimizerUtil.lambdaParameters(_context.getNode());
+  }
   private final Map<String, ReductionRuleCondition> rrcMethods = new HashMap<String, ReductionRuleCondition>();
   {
     int i = 0;
@@ -205,9 +253,13 @@ public class QueriesGenerated extends QueryProviderBase {
     rrcMethods.put("4098331544840818955", new RRC(i++));
     rrcMethods.put("4098331544841008002", new RRC(i++));
     rrcMethods.put("4098331544842062778", new RRC(i++));
+    rrcMethods.put("4098331544923592871", new RRC(i++));
+    rrcMethods.put("4098331544923748497", new RRC(i++));
     rrcMethods.put("8742124355678179147", new RRC(i++));
     rrcMethods.put("8742124355678179193", new RRC(i++));
     rrcMethods.put("8742124355678179232", new RRC(i++));
+    rrcMethods.put("4098331544924657321", new RRC(i++));
+    rrcMethods.put("4098331544924841302", new RRC(i++));
     rrcMethods.put("8742124355678179271", new RRC(i++));
     rrcMethods.put("8742124355678179300", new RRC(i++));
     rrcMethods.put("8742124355678179329", new RRC(i++));
@@ -269,6 +321,14 @@ public class QueriesGenerated extends QueryProviderBase {
           return QueriesGenerated.rule_Condition_0_18(ctx);
         case 19:
           return QueriesGenerated.rule_Condition_0_19(ctx);
+        case 20:
+          return QueriesGenerated.rule_Condition_0_20(ctx);
+        case 21:
+          return QueriesGenerated.rule_Condition_0_21(ctx);
+        case 22:
+          return QueriesGenerated.rule_Condition_0_22(ctx);
+        case 23:
+          return QueriesGenerated.rule_Condition_0_23(ctx);
         default:
           throw new GenerationFailureException(String.format("Inconsistent QueriesGenerated: there's no condition method for rule %s (key: #%d)", ctx.getTemplateReference(), methodKey));
       }
@@ -285,11 +345,19 @@ public class QueriesGenerated extends QueryProviderBase {
     snqMethods.put("4098331544840742271", new SNQ(i++));
     snqMethods.put("4098331544840818986", new SNQ(i++));
     snqMethods.put("4098331544841008033", new SNQ(i++));
+    snqMethods.put("4098331544923592906", new SNQ(i++));
+    snqMethods.put("4098331544924319764", new SNQ(i++));
+    snqMethods.put("4098331544923748555", new SNQ(i++));
+    snqMethods.put("4098331544924484994", new SNQ(i++));
     snqMethods.put("8742124355678179168", new SNQ(i++));
     snqMethods.put("8742124355678179177", new SNQ(i++));
     snqMethods.put("8742124355678179186", new SNQ(i++));
     snqMethods.put("8742124355678179225", new SNQ(i++));
     snqMethods.put("8742124355678179264", new SNQ(i++));
+    snqMethods.put("4098331544924657343", new SNQ(i++));
+    snqMethods.put("4098331544924657354", new SNQ(i++));
+    snqMethods.put("4098331544924657363", new SNQ(i++));
+    snqMethods.put("4098331544924841326", new SNQ(i++));
     snqMethods.put("8742124355678179293", new SNQ(i++));
     snqMethods.put("8742124355678179322", new SNQ(i++));
     snqMethods.put("8742124355678179345", new SNQ(i++));
@@ -352,6 +420,22 @@ public class QueriesGenerated extends QueryProviderBase {
           return QueriesGenerated.sourceNodeQuery_0_18(ctx);
         case 19:
           return QueriesGenerated.sourceNodeQuery_0_19(ctx);
+        case 20:
+          return QueriesGenerated.sourceNodeQuery_0_20(ctx);
+        case 21:
+          return QueriesGenerated.sourceNodeQuery_0_21(ctx);
+        case 22:
+          return QueriesGenerated.sourceNodeQuery_0_22(ctx);
+        case 23:
+          return QueriesGenerated.sourceNodeQuery_0_23(ctx);
+        case 24:
+          return QueriesGenerated.sourceNodeQuery_0_24(ctx);
+        case 25:
+          return QueriesGenerated.sourceNodeQuery_0_25(ctx);
+        case 26:
+          return QueriesGenerated.sourceNodeQuery_0_26(ctx);
+        case 27:
+          return QueriesGenerated.sourceNodeQuery_0_27(ctx);
         default:
           throw new GenerationFailureException(String.format("Inconsistent QueriesGenerated: there's no method for query %s (key: #%d)", ctx.getTemplateReference(), methodKey));
       }
@@ -366,6 +450,9 @@ public class QueriesGenerated extends QueryProviderBase {
     snsqMethods.put("8742124355678179140", new SNsQ(i++));
     snsqMethods.put("4098331544842062817", new SNsQ(i++));
     snsqMethods.put("4098331544842062828", new SNsQ(i++));
+    snsqMethods.put("4098331544923592897", new SNsQ(i++));
+    snsqMethods.put("4098331544923748531", new SNsQ(i++));
+    snsqMethods.put("4098331544923748546", new SNsQ(i++));
   }
   @NotNull
   @Override
@@ -393,6 +480,12 @@ public class QueriesGenerated extends QueryProviderBase {
           return IterableUtil.asCollection(QueriesGenerated.sourceNodesQuery_0_4(ctx));
         case 5:
           return IterableUtil.asCollection(QueriesGenerated.sourceNodesQuery_0_5(ctx));
+        case 6:
+          return IterableUtil.asCollection(QueriesGenerated.sourceNodesQuery_0_6(ctx));
+        case 7:
+          return IterableUtil.asCollection(QueriesGenerated.sourceNodesQuery_0_7(ctx));
+        case 8:
+          return IterableUtil.asCollection(QueriesGenerated.sourceNodesQuery_0_8(ctx));
         default:
           throw new GenerationFailureException(String.format("Inconsistent QueriesGenerated: there's no method for query %s (key: #%d)", ctx.getTemplateReference(), methodKey));
       }
@@ -432,6 +525,7 @@ public class QueriesGenerated extends QueryProviderBase {
   {
     rtqMethods.put("4098331544842062790", new RTQ(0, "Objects"));
     rtqMethods.put("4098331544842062803", new RTQ(1, "requireNonNull"));
+    rtqMethods.put("4098331544923748517", new RTQ(2, "UnaryOperator"));
   }
   @NotNull
   @Override
@@ -452,6 +546,8 @@ public class QueriesGenerated extends QueryProviderBase {
           return QueriesGenerated.referenceMacro_GetReferent_0_0(ctx);
         case 1:
           return QueriesGenerated.referenceMacro_GetReferent_0_1(ctx);
+        case 2:
+          return QueriesGenerated.referenceMacro_GetReferent_0_2(ctx);
         default:
           throw new GenerationFailureException(String.format("Inconsistent QueriesGenerated: there's no method for query %s (key: #%d)", ctx.getTemplateReference(), methodKey));
       }

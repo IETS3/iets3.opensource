@@ -6,7 +6,7 @@ import java.math.BigInteger;
 import org.junit.Test;
 import org.junit.Assert;
 import org.iets3.core.expr.genjava.tests.rt.rt.EqualsTestOp;
-import jetbrains.mps.baseLanguage.closures.runtime._FunctionTypes;
+import java.util.function.Supplier;
 import org.iets3.core.expr.simpleTypes.runtime.AH;
 import org.iets3.core.expr.genjava.messages.rt.rt.Message;
 import org.iets3.core.expr.genjava.messages.rt.rt.BuiltinMessageKinds;
@@ -107,11 +107,11 @@ public class Generated_functions_Test {
     Assert.assertTrue("Expected: " + new BigInteger("13") + ", but was: " + addExt2.addExt2(Generated_functions_Test.constantNumber_, new BigInteger("2"), new BigInteger("2")), EqualsTestOp.matches(new BigInteger("13"), addExt2.addExt2(Generated_functions_Test.constantNumber_, new BigInteger("2"), new BigInteger("2"))));
   }
   public static Number valFun1() {
-    Number res = ((_FunctionTypes._return_P0_E0<Number>) () -> {
+    Number res = ((Supplier<Number>) () -> {
       Number dummy = new BigInteger("0");
       return dummy;
 
-    }).invoke();
+    }).get();
     {
       Number it = res;
       if (!(AH.isEqual(it, new BigInteger("0")))) {

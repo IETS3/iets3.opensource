@@ -18,7 +18,7 @@ import org.iets3.core.expr.simpleTypes.runtime.OH;
 import java.util.Comparator;
 import java.util.Vector;
 import java.util.Collections;
-import jetbrains.mps.baseLanguage.closures.runtime._FunctionTypes;
+import java.util.function.Supplier;
 import org.junit.Test;
 import org.junit.Assert;
 import org.iets3.core.expr.genjava.tests.rt.rt.EqualsTestOp;
@@ -177,14 +177,14 @@ public class Generated_temperature_Test {
    * a runtime error if the value is not in bounds of nullor nullrespectively.
    */
     public static class toC {
-    public static Number toC(final TempFromUI this_) {
-      Number res = (((_FunctionTypes._return_P0_E0<Boolean>) () -> {
+    public static Number toC(TempFromUI this_) {
+      Number res = (((Supplier<Boolean>) () -> {
         Boolean b = this_.getunit() == uiTempUnit.celcius;
         if (this_.getunit() == null) {
           return null;
         }
         return b;
-      }).invoke() ? this_.getvalue() : Generated_temperature_Test.FtoC(this_.getvalue()));
+      }).get() ? this_.getvalue() : Generated_temperature_Test.FtoC(this_.getvalue()));
 
       return res;
     }

@@ -18,19 +18,17 @@ import org.iets3.core.expr.genjava.tests.rt.rt.EqualsTestOp;
 import org.iets3.core.expr.temporal.runtime.TemporalOps;
 import org.iets3.core.expr.simpleTypes.runtime.AH;
 import org.pcollections.PCollection;
-import jetbrains.mps.baseLanguage.closures.runtime._FunctionTypes;
+import java.util.function.Supplier;
 import java.time.temporal.ChronoUnit;
 import java.util.List;
 import jetbrains.mps.internal.collections.runtime.ListSequence;
 import java.util.ArrayList;
 import org.iets3.core.expr.collections.rt.rt.CollectionHelper;
-import java.util.function.Predicate;
 import java.util.function.Function;
 import org.iets3.core.expr.genjava.base.rt.rt.ParameterSetWrapper;
 import org.iets3.core.expr.datetime.runtime.DiscreteDateRangeValue;
 import org.apache.commons.lang3.builder.HashCodeBuilder;
 import org.iets3.core.expr.simpleTypes.runtime.OH;
-import java.util.Comparator;
 
 /**
  * 
@@ -328,7 +326,7 @@ public class Generated_TemporalTests_Test {
    * and end, because they are assumed to last till the end of
    * time. Good idea? Separate type? Range?
    */
-    public static final PCollection<Number> days68_ = ((_FunctionTypes._return_P0_E0<PVector<Number>>) () -> {
+    public static final PCollection<Number> days68_ = ((Supplier<PVector<Number>>) () -> {
     TemporalValue tv = Generated_TemporalTests_Test.v4_;
     Object fromValue;
 
@@ -358,7 +356,7 @@ public class Generated_TemporalTests_Test {
       return result;
     }
     return null;
-  }).invoke();
+  }).get();
   @Test
   public void Spreading_item0_8266215269012914595() throws Throwable {
     Assert.assertTrue("Expected: " + new BigInteger("731") + ", but was: " + BigInteger.valueOf(Generated_TemporalTests_Test.days68_.size()), EqualsTestOp.matches(new BigInteger("731"), BigInteger.valueOf(Generated_TemporalTests_Test.days68_.size())));
@@ -375,7 +373,7 @@ public class Generated_TemporalTests_Test {
    * MONTHLY number? Spreading will then happen automatically
    * for that resolution.
    */
-    public static final PCollection<Number> days58_ = ((_FunctionTypes._return_P0_E0<PVector<Number>>) () -> {
+    public static final PCollection<Number> days58_ = ((Supplier<PVector<Number>>) () -> {
     TemporalValue tv = Generated_TemporalTests_Test.v4_;
     Object fromValue;
 
@@ -405,7 +403,7 @@ public class Generated_TemporalTests_Test {
       return result;
     }
     return null;
-  }).invoke();
+  }).get();
   @Test
   public void Spreading1_item0_8266215269012914599() throws Throwable {
     Assert.assertTrue("Expected: " + new BigInteger("37") + ", but was: " + BigInteger.valueOf(Generated_TemporalTests_Test.days58_.size()), EqualsTestOp.matches(new BigInteger("37"), BigInteger.valueOf(Generated_TemporalTests_Test.days58_.size())));
@@ -414,7 +412,7 @@ public class Generated_TemporalTests_Test {
   public void Spreading1_item1_8266215269012914600() throws Throwable {
     Assert.assertTrue("Expected: " + new BigInteger("740") + ", but was: " + CollectionHelper.sumAsBigInteger(Generated_TemporalTests_Test.days58_), EqualsTestOp.matches(new BigInteger("740"), CollectionHelper.sumAsBigInteger(Generated_TemporalTests_Test.days58_)));
   }
-  public static final PCollection<Number> days712_ = ((_FunctionTypes._return_P0_E0<PVector<Number>>) () -> {
+  public static final PCollection<Number> days712_ = ((Supplier<PVector<Number>>) () -> {
     TemporalValue tv = Generated_TemporalTests_Test.v4_;
     Object fromValue;
 
@@ -444,50 +442,26 @@ public class Generated_TemporalTests_Test {
       return result;
     }
     return null;
-  }).invoke();
+  }).get();
   @Test
   public void Spreading2_item0_8266215269012914602() throws Throwable {
-    Assert.assertTrue("Expected: " + new BigInteger("36") + ", but was: " + BigInteger.valueOf(TreePVector.<Number>from(Generated_TemporalTests_Test.days712_.stream().filter(new Predicate<Number>() {
-      public boolean test(Number o) {
-        return new Function<ParameterSetWrapper, Boolean>() {
-          public Boolean apply(ParameterSetWrapper param) {
-            Number it = (Number) param.parameters.get(0);
-            return AH.isEqual(it, new BigInteger("20"));
-          }
-        }.apply(new ParameterSetWrapper(o));
-      }
-    }).collect(Collectors.<Number>toList())).size()), EqualsTestOp.matches(new BigInteger("36"), BigInteger.valueOf(TreePVector.<Number>from(Generated_TemporalTests_Test.days712_.stream().filter(new Predicate<Number>() {
-      public boolean test(Number o) {
-        return new Function<ParameterSetWrapper, Boolean>() {
-          public Boolean apply(ParameterSetWrapper param) {
-            Number it = (Number) param.parameters.get(0);
-            return AH.isEqual(it, new BigInteger("20"));
-          }
-        }.apply(new ParameterSetWrapper(o));
-      }
-    }).collect(Collectors.<Number>toList())).size())));
+    Assert.assertTrue("Expected: " + new BigInteger("36") + ", but was: " + BigInteger.valueOf(TreePVector.<Number>from(Generated_TemporalTests_Test.days712_.stream().filter((Number o) -> ((Function<ParameterSetWrapper, Boolean>) (ParameterSetWrapper param) -> {
+      Number it = (Number) param.parameters.get(0);
+      return AH.isEqual(it, new BigInteger("20"));
+    }).apply(new ParameterSetWrapper(o))).collect(Collectors.<Number>toList())).size()), EqualsTestOp.matches(new BigInteger("36"), BigInteger.valueOf(TreePVector.<Number>from(Generated_TemporalTests_Test.days712_.stream().filter((Number o) -> ((Function<ParameterSetWrapper, Boolean>) (ParameterSetWrapper param) -> {
+      Number it = (Number) param.parameters.get(0);
+      return AH.isEqual(it, new BigInteger("20"));
+    }).apply(new ParameterSetWrapper(o))).collect(Collectors.<Number>toList())).size())));
   }
   @Test
   public void Spreading2_item1_8266215269012914603() throws Throwable {
-    Assert.assertTrue("Expected: " + new BigInteger("25") + ", but was: " + BigInteger.valueOf(TreePVector.<Number>from(Generated_TemporalTests_Test.days712_.stream().filter(new Predicate<Number>() {
-      public boolean test(Number o) {
-        return new Function<ParameterSetWrapper, Boolean>() {
-          public Boolean apply(ParameterSetWrapper param) {
-            Number it = (Number) param.parameters.get(0);
-            return AH.isEqual(it, new BigInteger("30"));
-          }
-        }.apply(new ParameterSetWrapper(o));
-      }
-    }).collect(Collectors.<Number>toList())).size()), EqualsTestOp.matches(new BigInteger("25"), BigInteger.valueOf(TreePVector.<Number>from(Generated_TemporalTests_Test.days712_.stream().filter(new Predicate<Number>() {
-      public boolean test(Number o) {
-        return new Function<ParameterSetWrapper, Boolean>() {
-          public Boolean apply(ParameterSetWrapper param) {
-            Number it = (Number) param.parameters.get(0);
-            return AH.isEqual(it, new BigInteger("30"));
-          }
-        }.apply(new ParameterSetWrapper(o));
-      }
-    }).collect(Collectors.<Number>toList())).size())));
+    Assert.assertTrue("Expected: " + new BigInteger("25") + ", but was: " + BigInteger.valueOf(TreePVector.<Number>from(Generated_TemporalTests_Test.days712_.stream().filter((Number o) -> ((Function<ParameterSetWrapper, Boolean>) (ParameterSetWrapper param) -> {
+      Number it = (Number) param.parameters.get(0);
+      return AH.isEqual(it, new BigInteger("30"));
+    }).apply(new ParameterSetWrapper(o))).collect(Collectors.<Number>toList())).size()), EqualsTestOp.matches(new BigInteger("25"), BigInteger.valueOf(TreePVector.<Number>from(Generated_TemporalTests_Test.days712_.stream().filter((Number o) -> ((Function<ParameterSetWrapper, Boolean>) (ParameterSetWrapper param) -> {
+      Number it = (Number) param.parameters.get(0);
+      return AH.isEqual(it, new BigInteger("30"));
+    }).apply(new ParameterSetWrapper(o))).collect(Collectors.<Number>toList())).size())));
   }
   @Test
   public void Spreading2_item2_8266215269012914604() throws Throwable {
@@ -500,7 +474,7 @@ public class Generated_TemporalTests_Test {
 /* 
    * Yeah, I know, should be 12. But I assume a month to be 30 days :-)
    */
-    public static final PCollection<Number> monthsIn2010_ = ((_FunctionTypes._return_P0_E0<PVector<Number>>) () -> {
+    public static final PCollection<Number> monthsIn2010_ = ((Supplier<PVector<Number>>) () -> {
     TemporalValue tv = Generated_TemporalTests_Test.v4_;
     Object fromValue;
 
@@ -531,32 +505,20 @@ public class Generated_TemporalTests_Test {
       return result;
     }
     return null;
-  }).invoke();
+  }).get();
   @Test
   public void Spreading3_item0_8266215269012914608() throws Throwable {
     Assert.assertTrue("Expected: " + new BigInteger("12") + ", but was: " + BigInteger.valueOf(Generated_TemporalTests_Test.monthsIn2010_.size()), EqualsTestOp.matches(new BigInteger("12"), BigInteger.valueOf(Generated_TemporalTests_Test.monthsIn2010_.size())));
   }
   @Test
   public void Spreading3_item1_8266215269012914609() throws Throwable {
-    Assert.assertEquals("Expected: " + true + ", but was: " + Generated_TemporalTests_Test.monthsIn2010_.stream().allMatch(new Predicate<Number>() {
-      public boolean test(Number o) {
-        return new Function<ParameterSetWrapper, Boolean>() {
-          public Boolean apply(ParameterSetWrapper param) {
-            Number it = (Number) param.parameters.get(0);
-            return AH.isEqual(it, new BigInteger("30"));
-          }
-        }.apply(new ParameterSetWrapper(o));
-      }
-    }), (Object) true, (Object) Generated_TemporalTests_Test.monthsIn2010_.stream().allMatch(new Predicate<Number>() {
-      public boolean test(Number o) {
-        return new Function<ParameterSetWrapper, Boolean>() {
-          public Boolean apply(ParameterSetWrapper param) {
-            Number it = (Number) param.parameters.get(0);
-            return AH.isEqual(it, new BigInteger("30"));
-          }
-        }.apply(new ParameterSetWrapper(o));
-      }
-    }));
+    Assert.assertEquals("Expected: " + true + ", but was: " + Generated_TemporalTests_Test.monthsIn2010_.stream().allMatch((Number o) -> ((Function<ParameterSetWrapper, Boolean>) (ParameterSetWrapper param) -> {
+      Number it = (Number) param.parameters.get(0);
+      return AH.isEqual(it, new BigInteger("30"));
+    }).apply(new ParameterSetWrapper(o))), (Object) true, (Object) Generated_TemporalTests_Test.monthsIn2010_.stream().allMatch((Number o) -> ((Function<ParameterSetWrapper, Boolean>) (ParameterSetWrapper param) -> {
+      Number it = (Number) param.parameters.get(0);
+      return AH.isEqual(it, new BigInteger("30"));
+    }).apply(new ParameterSetWrapper(o))));
   }
   @Test
   public void Spreading3_item2_8266215269012914610() throws Throwable {
@@ -685,123 +647,43 @@ public class Generated_TemporalTests_Test {
   }
   @Test
   public void Sorting_item7_2143211017902290124() throws Throwable {
-    Assert.assertEquals("Expected: " + TreePVector.<TemporalValue>from(new ArrayList<TemporalValue>()) + ", but was: " + TreePVector.<TemporalValue>from(TreePVector.<TemporalValue>from(new ArrayList<TemporalValue>()).stream().filter(OH.predicate()).sorted(new Comparator<TemporalValue>() {
-      public int compare(TemporalValue p0, TemporalValue p1) {
-        return OH.compare(p0, p1);
-      }
-    }).collect(Collectors.<TemporalValue>toList())), TreePVector.<TemporalValue>from(new ArrayList<TemporalValue>()), TreePVector.<TemporalValue>from(TreePVector.<TemporalValue>from(new ArrayList<TemporalValue>()).stream().filter(OH.predicate()).sorted(new Comparator<TemporalValue>() {
-      public int compare(TemporalValue p0, TemporalValue p1) {
-        return OH.compare(p0, p1);
-      }
-    }).collect(Collectors.<TemporalValue>toList())));
+    Assert.assertEquals("Expected: " + TreePVector.<TemporalValue>from(new ArrayList<TemporalValue>()) + ", but was: " + TreePVector.<TemporalValue>from(TreePVector.<TemporalValue>from(new ArrayList<TemporalValue>()).stream().filter(OH.predicate()).sorted((TemporalValue p0, TemporalValue p1) -> OH.compare(p0, p1)).collect(Collectors.<TemporalValue>toList())), TreePVector.<TemporalValue>from(new ArrayList<TemporalValue>()), TreePVector.<TemporalValue>from(TreePVector.<TemporalValue>from(new ArrayList<TemporalValue>()).stream().filter(OH.predicate()).sorted((TemporalValue p0, TemporalValue p1) -> OH.compare(p0, p1)).collect(Collectors.<TemporalValue>toList())));
   }
   @Test
   public void Sorting_item8_2143211017902291809() throws Throwable {
-    Assert.assertEquals("Expected: " + TreePVector.<TemporalValue>empty().plus(Generated_TemporalTests_Test.s1_) + ", but was: " + TreePVector.<TemporalValue>from(TreePVector.<TemporalValue>empty().plus(Generated_TemporalTests_Test.s1_).stream().filter(OH.predicate()).sorted(new Comparator<TemporalValue>() {
-      public int compare(TemporalValue p0, TemporalValue p1) {
-        return OH.compare(p0, p1);
-      }
-    }).collect(Collectors.<TemporalValue>toList())), TreePVector.<TemporalValue>empty().plus(Generated_TemporalTests_Test.s1_), TreePVector.<TemporalValue>from(TreePVector.<TemporalValue>empty().plus(Generated_TemporalTests_Test.s1_).stream().filter(OH.predicate()).sorted(new Comparator<TemporalValue>() {
-      public int compare(TemporalValue p0, TemporalValue p1) {
-        return OH.compare(p0, p1);
-      }
-    }).collect(Collectors.<TemporalValue>toList())));
+    Assert.assertEquals("Expected: " + TreePVector.<TemporalValue>empty().plus(Generated_TemporalTests_Test.s1_) + ", but was: " + TreePVector.<TemporalValue>from(TreePVector.<TemporalValue>empty().plus(Generated_TemporalTests_Test.s1_).stream().filter(OH.predicate()).sorted((TemporalValue p0, TemporalValue p1) -> OH.compare(p0, p1)).collect(Collectors.<TemporalValue>toList())), TreePVector.<TemporalValue>empty().plus(Generated_TemporalTests_Test.s1_), TreePVector.<TemporalValue>from(TreePVector.<TemporalValue>empty().plus(Generated_TemporalTests_Test.s1_).stream().filter(OH.predicate()).sorted((TemporalValue p0, TemporalValue p1) -> OH.compare(p0, p1)).collect(Collectors.<TemporalValue>toList())));
   }
   @Test
   public void Sorting_item9_5005695164082923047() throws Throwable {
-    Assert.assertEquals("Expected: " + TreePVector.<TemporalValue>empty().plus(Generated_TemporalTests_Test.s1_).plus(Generated_TemporalTests_Test.s2_) + ", but was: " + TreePVector.<TemporalValue>from(TreePVector.<TemporalValue>empty().plus(Generated_TemporalTests_Test.s1_).plus(Generated_TemporalTests_Test.s2_).stream().filter(OH.predicate()).sorted(new Comparator<TemporalValue>() {
-      public int compare(TemporalValue p0, TemporalValue p1) {
-        return OH.compare(p0, p1);
-      }
-    }).collect(Collectors.<TemporalValue>toList())), TreePVector.<TemporalValue>empty().plus(Generated_TemporalTests_Test.s1_).plus(Generated_TemporalTests_Test.s2_), TreePVector.<TemporalValue>from(TreePVector.<TemporalValue>empty().plus(Generated_TemporalTests_Test.s1_).plus(Generated_TemporalTests_Test.s2_).stream().filter(OH.predicate()).sorted(new Comparator<TemporalValue>() {
-      public int compare(TemporalValue p0, TemporalValue p1) {
-        return OH.compare(p0, p1);
-      }
-    }).collect(Collectors.<TemporalValue>toList())));
+    Assert.assertEquals("Expected: " + TreePVector.<TemporalValue>empty().plus(Generated_TemporalTests_Test.s1_).plus(Generated_TemporalTests_Test.s2_) + ", but was: " + TreePVector.<TemporalValue>from(TreePVector.<TemporalValue>empty().plus(Generated_TemporalTests_Test.s1_).plus(Generated_TemporalTests_Test.s2_).stream().filter(OH.predicate()).sorted((TemporalValue p0, TemporalValue p1) -> OH.compare(p0, p1)).collect(Collectors.<TemporalValue>toList())), TreePVector.<TemporalValue>empty().plus(Generated_TemporalTests_Test.s1_).plus(Generated_TemporalTests_Test.s2_), TreePVector.<TemporalValue>from(TreePVector.<TemporalValue>empty().plus(Generated_TemporalTests_Test.s1_).plus(Generated_TemporalTests_Test.s2_).stream().filter(OH.predicate()).sorted((TemporalValue p0, TemporalValue p1) -> OH.compare(p0, p1)).collect(Collectors.<TemporalValue>toList())));
   }
   @Test
   public void Sorting_item10_788506343946576606() throws Throwable {
-    Assert.assertEquals("Expected: " + TreePVector.<TemporalValue>empty().plus(Generated_TemporalTests_Test.s1_).plus(Generated_TemporalTests_Test.s2_).plus(Generated_TemporalTests_Test.s3_) + ", but was: " + TreePVector.<TemporalValue>from(TreePVector.<TemporalValue>empty().plus(Generated_TemporalTests_Test.s1_).plus(Generated_TemporalTests_Test.s2_).plus(Generated_TemporalTests_Test.s3_).stream().filter(OH.predicate()).sorted(new Comparator<TemporalValue>() {
-      public int compare(TemporalValue p0, TemporalValue p1) {
-        return OH.compare(p0, p1);
-      }
-    }).collect(Collectors.<TemporalValue>toList())), TreePVector.<TemporalValue>empty().plus(Generated_TemporalTests_Test.s1_).plus(Generated_TemporalTests_Test.s2_).plus(Generated_TemporalTests_Test.s3_), TreePVector.<TemporalValue>from(TreePVector.<TemporalValue>empty().plus(Generated_TemporalTests_Test.s1_).plus(Generated_TemporalTests_Test.s2_).plus(Generated_TemporalTests_Test.s3_).stream().filter(OH.predicate()).sorted(new Comparator<TemporalValue>() {
-      public int compare(TemporalValue p0, TemporalValue p1) {
-        return OH.compare(p0, p1);
-      }
-    }).collect(Collectors.<TemporalValue>toList())));
+    Assert.assertEquals("Expected: " + TreePVector.<TemporalValue>empty().plus(Generated_TemporalTests_Test.s1_).plus(Generated_TemporalTests_Test.s2_).plus(Generated_TemporalTests_Test.s3_) + ", but was: " + TreePVector.<TemporalValue>from(TreePVector.<TemporalValue>empty().plus(Generated_TemporalTests_Test.s1_).plus(Generated_TemporalTests_Test.s2_).plus(Generated_TemporalTests_Test.s3_).stream().filter(OH.predicate()).sorted((TemporalValue p0, TemporalValue p1) -> OH.compare(p0, p1)).collect(Collectors.<TemporalValue>toList())), TreePVector.<TemporalValue>empty().plus(Generated_TemporalTests_Test.s1_).plus(Generated_TemporalTests_Test.s2_).plus(Generated_TemporalTests_Test.s3_), TreePVector.<TemporalValue>from(TreePVector.<TemporalValue>empty().plus(Generated_TemporalTests_Test.s1_).plus(Generated_TemporalTests_Test.s2_).plus(Generated_TemporalTests_Test.s3_).stream().filter(OH.predicate()).sorted((TemporalValue p0, TemporalValue p1) -> OH.compare(p0, p1)).collect(Collectors.<TemporalValue>toList())));
   }
   @Test
   public void Sorting_item11_8432595092502415844() throws Throwable {
-    Assert.assertEquals("Expected: " + TreePVector.<TemporalValue>empty().plus(Generated_TemporalTests_Test.s1_).plus(Generated_TemporalTests_Test.s2_).plus(Generated_TemporalTests_Test.s3_).plus(Generated_TemporalTests_Test.s4_) + ", but was: " + TreePVector.<TemporalValue>from(TreePVector.<TemporalValue>empty().plus(Generated_TemporalTests_Test.s1_).plus(Generated_TemporalTests_Test.s2_).plus(Generated_TemporalTests_Test.s3_).plus(Generated_TemporalTests_Test.s4_).stream().filter(OH.predicate()).sorted(new Comparator<TemporalValue>() {
-      public int compare(TemporalValue p0, TemporalValue p1) {
-        return OH.compare(p0, p1);
-      }
-    }).collect(Collectors.<TemporalValue>toList())), TreePVector.<TemporalValue>empty().plus(Generated_TemporalTests_Test.s1_).plus(Generated_TemporalTests_Test.s2_).plus(Generated_TemporalTests_Test.s3_).plus(Generated_TemporalTests_Test.s4_), TreePVector.<TemporalValue>from(TreePVector.<TemporalValue>empty().plus(Generated_TemporalTests_Test.s1_).plus(Generated_TemporalTests_Test.s2_).plus(Generated_TemporalTests_Test.s3_).plus(Generated_TemporalTests_Test.s4_).stream().filter(OH.predicate()).sorted(new Comparator<TemporalValue>() {
-      public int compare(TemporalValue p0, TemporalValue p1) {
-        return OH.compare(p0, p1);
-      }
-    }).collect(Collectors.<TemporalValue>toList())));
+    Assert.assertEquals("Expected: " + TreePVector.<TemporalValue>empty().plus(Generated_TemporalTests_Test.s1_).plus(Generated_TemporalTests_Test.s2_).plus(Generated_TemporalTests_Test.s3_).plus(Generated_TemporalTests_Test.s4_) + ", but was: " + TreePVector.<TemporalValue>from(TreePVector.<TemporalValue>empty().plus(Generated_TemporalTests_Test.s1_).plus(Generated_TemporalTests_Test.s2_).plus(Generated_TemporalTests_Test.s3_).plus(Generated_TemporalTests_Test.s4_).stream().filter(OH.predicate()).sorted((TemporalValue p0, TemporalValue p1) -> OH.compare(p0, p1)).collect(Collectors.<TemporalValue>toList())), TreePVector.<TemporalValue>empty().plus(Generated_TemporalTests_Test.s1_).plus(Generated_TemporalTests_Test.s2_).plus(Generated_TemporalTests_Test.s3_).plus(Generated_TemporalTests_Test.s4_), TreePVector.<TemporalValue>from(TreePVector.<TemporalValue>empty().plus(Generated_TemporalTests_Test.s1_).plus(Generated_TemporalTests_Test.s2_).plus(Generated_TemporalTests_Test.s3_).plus(Generated_TemporalTests_Test.s4_).stream().filter(OH.predicate()).sorted((TemporalValue p0, TemporalValue p1) -> OH.compare(p0, p1)).collect(Collectors.<TemporalValue>toList())));
   }
   @Test
   public void Sorting_item13_5005695164083462014() throws Throwable {
-    Assert.assertEquals("Expected: " + TreePVector.<TemporalValue>from(new ArrayList<TemporalValue>()) + ", but was: " + TreePVector.<TemporalValue>from(TreePVector.<TemporalValue>from(new ArrayList<TemporalValue>()).stream().filter(OH.predicate()).sorted(new Comparator<TemporalValue>() {
-      public int compare(TemporalValue p0, TemporalValue p1) {
-        return OH.compare(p1, p0);
-      }
-    }).collect(Collectors.<TemporalValue>toList())), TreePVector.<TemporalValue>from(new ArrayList<TemporalValue>()), TreePVector.<TemporalValue>from(TreePVector.<TemporalValue>from(new ArrayList<TemporalValue>()).stream().filter(OH.predicate()).sorted(new Comparator<TemporalValue>() {
-      public int compare(TemporalValue p0, TemporalValue p1) {
-        return OH.compare(p1, p0);
-      }
-    }).collect(Collectors.<TemporalValue>toList())));
+    Assert.assertEquals("Expected: " + TreePVector.<TemporalValue>from(new ArrayList<TemporalValue>()) + ", but was: " + TreePVector.<TemporalValue>from(TreePVector.<TemporalValue>from(new ArrayList<TemporalValue>()).stream().filter(OH.predicate()).sorted((TemporalValue p0, TemporalValue p1) -> OH.compare(p1, p0)).collect(Collectors.<TemporalValue>toList())), TreePVector.<TemporalValue>from(new ArrayList<TemporalValue>()), TreePVector.<TemporalValue>from(TreePVector.<TemporalValue>from(new ArrayList<TemporalValue>()).stream().filter(OH.predicate()).sorted((TemporalValue p0, TemporalValue p1) -> OH.compare(p1, p0)).collect(Collectors.<TemporalValue>toList())));
   }
   @Test
   public void Sorting_item14_5005695164083462020() throws Throwable {
-    Assert.assertEquals("Expected: " + TreePVector.<TemporalValue>empty().plus(Generated_TemporalTests_Test.s1_) + ", but was: " + TreePVector.<TemporalValue>from(TreePVector.<TemporalValue>empty().plus(Generated_TemporalTests_Test.s1_).stream().filter(OH.predicate()).sorted(new Comparator<TemporalValue>() {
-      public int compare(TemporalValue p0, TemporalValue p1) {
-        return OH.compare(p1, p0);
-      }
-    }).collect(Collectors.<TemporalValue>toList())), TreePVector.<TemporalValue>empty().plus(Generated_TemporalTests_Test.s1_), TreePVector.<TemporalValue>from(TreePVector.<TemporalValue>empty().plus(Generated_TemporalTests_Test.s1_).stream().filter(OH.predicate()).sorted(new Comparator<TemporalValue>() {
-      public int compare(TemporalValue p0, TemporalValue p1) {
-        return OH.compare(p1, p0);
-      }
-    }).collect(Collectors.<TemporalValue>toList())));
+    Assert.assertEquals("Expected: " + TreePVector.<TemporalValue>empty().plus(Generated_TemporalTests_Test.s1_) + ", but was: " + TreePVector.<TemporalValue>from(TreePVector.<TemporalValue>empty().plus(Generated_TemporalTests_Test.s1_).stream().filter(OH.predicate()).sorted((TemporalValue p0, TemporalValue p1) -> OH.compare(p1, p0)).collect(Collectors.<TemporalValue>toList())), TreePVector.<TemporalValue>empty().plus(Generated_TemporalTests_Test.s1_), TreePVector.<TemporalValue>from(TreePVector.<TemporalValue>empty().plus(Generated_TemporalTests_Test.s1_).stream().filter(OH.predicate()).sorted((TemporalValue p0, TemporalValue p1) -> OH.compare(p1, p0)).collect(Collectors.<TemporalValue>toList())));
   }
   @Test
   public void Sorting_item15_5005695164083462026() throws Throwable {
-    Assert.assertEquals("Expected: " + TreePVector.<TemporalValue>empty().plus(Generated_TemporalTests_Test.s2_).plus(Generated_TemporalTests_Test.s1_) + ", but was: " + TreePVector.<TemporalValue>from(TreePVector.<TemporalValue>empty().plus(Generated_TemporalTests_Test.s1_).plus(Generated_TemporalTests_Test.s2_).stream().filter(OH.predicate()).sorted(new Comparator<TemporalValue>() {
-      public int compare(TemporalValue p0, TemporalValue p1) {
-        return OH.compare(p1, p0);
-      }
-    }).collect(Collectors.<TemporalValue>toList())), TreePVector.<TemporalValue>empty().plus(Generated_TemporalTests_Test.s2_).plus(Generated_TemporalTests_Test.s1_), TreePVector.<TemporalValue>from(TreePVector.<TemporalValue>empty().plus(Generated_TemporalTests_Test.s1_).plus(Generated_TemporalTests_Test.s2_).stream().filter(OH.predicate()).sorted(new Comparator<TemporalValue>() {
-      public int compare(TemporalValue p0, TemporalValue p1) {
-        return OH.compare(p1, p0);
-      }
-    }).collect(Collectors.<TemporalValue>toList())));
+    Assert.assertEquals("Expected: " + TreePVector.<TemporalValue>empty().plus(Generated_TemporalTests_Test.s2_).plus(Generated_TemporalTests_Test.s1_) + ", but was: " + TreePVector.<TemporalValue>from(TreePVector.<TemporalValue>empty().plus(Generated_TemporalTests_Test.s1_).plus(Generated_TemporalTests_Test.s2_).stream().filter(OH.predicate()).sorted((TemporalValue p0, TemporalValue p1) -> OH.compare(p1, p0)).collect(Collectors.<TemporalValue>toList())), TreePVector.<TemporalValue>empty().plus(Generated_TemporalTests_Test.s2_).plus(Generated_TemporalTests_Test.s1_), TreePVector.<TemporalValue>from(TreePVector.<TemporalValue>empty().plus(Generated_TemporalTests_Test.s1_).plus(Generated_TemporalTests_Test.s2_).stream().filter(OH.predicate()).sorted((TemporalValue p0, TemporalValue p1) -> OH.compare(p1, p0)).collect(Collectors.<TemporalValue>toList())));
   }
   @Test
   public void Sorting_item16_788506343946576929() throws Throwable {
-    Assert.assertEquals("Expected: " + TreePVector.<TemporalValue>empty().plus(Generated_TemporalTests_Test.s3_).plus(Generated_TemporalTests_Test.s2_).plus(Generated_TemporalTests_Test.s1_) + ", but was: " + TreePVector.<TemporalValue>from(TreePVector.<TemporalValue>empty().plus(Generated_TemporalTests_Test.s1_).plus(Generated_TemporalTests_Test.s2_).plus(Generated_TemporalTests_Test.s3_).stream().filter(OH.predicate()).sorted(new Comparator<TemporalValue>() {
-      public int compare(TemporalValue p0, TemporalValue p1) {
-        return OH.compare(p1, p0);
-      }
-    }).collect(Collectors.<TemporalValue>toList())), TreePVector.<TemporalValue>empty().plus(Generated_TemporalTests_Test.s3_).plus(Generated_TemporalTests_Test.s2_).plus(Generated_TemporalTests_Test.s1_), TreePVector.<TemporalValue>from(TreePVector.<TemporalValue>empty().plus(Generated_TemporalTests_Test.s1_).plus(Generated_TemporalTests_Test.s2_).plus(Generated_TemporalTests_Test.s3_).stream().filter(OH.predicate()).sorted(new Comparator<TemporalValue>() {
-      public int compare(TemporalValue p0, TemporalValue p1) {
-        return OH.compare(p1, p0);
-      }
-    }).collect(Collectors.<TemporalValue>toList())));
+    Assert.assertEquals("Expected: " + TreePVector.<TemporalValue>empty().plus(Generated_TemporalTests_Test.s3_).plus(Generated_TemporalTests_Test.s2_).plus(Generated_TemporalTests_Test.s1_) + ", but was: " + TreePVector.<TemporalValue>from(TreePVector.<TemporalValue>empty().plus(Generated_TemporalTests_Test.s1_).plus(Generated_TemporalTests_Test.s2_).plus(Generated_TemporalTests_Test.s3_).stream().filter(OH.predicate()).sorted((TemporalValue p0, TemporalValue p1) -> OH.compare(p1, p0)).collect(Collectors.<TemporalValue>toList())), TreePVector.<TemporalValue>empty().plus(Generated_TemporalTests_Test.s3_).plus(Generated_TemporalTests_Test.s2_).plus(Generated_TemporalTests_Test.s1_), TreePVector.<TemporalValue>from(TreePVector.<TemporalValue>empty().plus(Generated_TemporalTests_Test.s1_).plus(Generated_TemporalTests_Test.s2_).plus(Generated_TemporalTests_Test.s3_).stream().filter(OH.predicate()).sorted((TemporalValue p0, TemporalValue p1) -> OH.compare(p1, p0)).collect(Collectors.<TemporalValue>toList())));
   }
   @Test
   public void Sorting_item17_8432595092502443941() throws Throwable {
-    Assert.assertEquals("Expected: " + TreePVector.<TemporalValue>empty().plus(Generated_TemporalTests_Test.s3_).plus(Generated_TemporalTests_Test.s4_).plus(Generated_TemporalTests_Test.s2_).plus(Generated_TemporalTests_Test.s1_) + ", but was: " + TreePVector.<TemporalValue>from(TreePVector.<TemporalValue>empty().plus(Generated_TemporalTests_Test.s1_).plus(Generated_TemporalTests_Test.s2_).plus(Generated_TemporalTests_Test.s3_).plus(Generated_TemporalTests_Test.s4_).stream().filter(OH.predicate()).sorted(new Comparator<TemporalValue>() {
-      public int compare(TemporalValue p0, TemporalValue p1) {
-        return OH.compare(p1, p0);
-      }
-    }).collect(Collectors.<TemporalValue>toList())), TreePVector.<TemporalValue>empty().plus(Generated_TemporalTests_Test.s3_).plus(Generated_TemporalTests_Test.s4_).plus(Generated_TemporalTests_Test.s2_).plus(Generated_TemporalTests_Test.s1_), TreePVector.<TemporalValue>from(TreePVector.<TemporalValue>empty().plus(Generated_TemporalTests_Test.s1_).plus(Generated_TemporalTests_Test.s2_).plus(Generated_TemporalTests_Test.s3_).plus(Generated_TemporalTests_Test.s4_).stream().filter(OH.predicate()).sorted(new Comparator<TemporalValue>() {
-      public int compare(TemporalValue p0, TemporalValue p1) {
-        return OH.compare(p1, p0);
-      }
-    }).collect(Collectors.<TemporalValue>toList())));
+    Assert.assertEquals("Expected: " + TreePVector.<TemporalValue>empty().plus(Generated_TemporalTests_Test.s3_).plus(Generated_TemporalTests_Test.s4_).plus(Generated_TemporalTests_Test.s2_).plus(Generated_TemporalTests_Test.s1_) + ", but was: " + TreePVector.<TemporalValue>from(TreePVector.<TemporalValue>empty().plus(Generated_TemporalTests_Test.s1_).plus(Generated_TemporalTests_Test.s2_).plus(Generated_TemporalTests_Test.s3_).plus(Generated_TemporalTests_Test.s4_).stream().filter(OH.predicate()).sorted((TemporalValue p0, TemporalValue p1) -> OH.compare(p1, p0)).collect(Collectors.<TemporalValue>toList())), TreePVector.<TemporalValue>empty().plus(Generated_TemporalTests_Test.s3_).plus(Generated_TemporalTests_Test.s4_).plus(Generated_TemporalTests_Test.s2_).plus(Generated_TemporalTests_Test.s1_), TreePVector.<TemporalValue>from(TreePVector.<TemporalValue>empty().plus(Generated_TemporalTests_Test.s1_).plus(Generated_TemporalTests_Test.s2_).plus(Generated_TemporalTests_Test.s3_).plus(Generated_TemporalTests_Test.s4_).stream().filter(OH.predicate()).sorted((TemporalValue p0, TemporalValue p1) -> OH.compare(p1, p0)).collect(Collectors.<TemporalValue>toList())));
   }
   @Test
   public void defaultValues_item0_4638701830924688322() throws Throwable {

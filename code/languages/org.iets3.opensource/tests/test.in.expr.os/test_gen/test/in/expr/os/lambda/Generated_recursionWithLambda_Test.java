@@ -9,7 +9,7 @@ import org.junit.Test;
 import org.junit.Assert;
 import java.math.BigInteger;
 import org.iets3.core.expr.genjava.tests.rt.rt.EqualsTestOp;
-import jetbrains.mps.baseLanguage.closures.runtime._FunctionTypes;
+import java.util.function.Supplier;
 import org.iets3.core.expr.genjava.base.rt.rt.AlternativesException;
 
 /**
@@ -17,26 +17,22 @@ import org.iets3.core.expr.genjava.base.rt.rt.AlternativesException;
  */
 public class Generated_recursionWithLambda_Test {
 
-  public static final Function<ParameterSetWrapper, Number> plus_ = new Function<ParameterSetWrapper, Number>() {
-    public Number apply(ParameterSetWrapper param) {
-      Number a = (Number) param.parameters.get(0);
-      Number b = (Number) param.parameters.get(1);
-      return AH.add(a, b);
-    }
+  public static final Function<ParameterSetWrapper, Number> plus_ = (ParameterSetWrapper param) -> {
+    Number a = (Number) param.parameters.get(0);
+    Number b = (Number) param.parameters.get(1);
+    return AH.add(a, b);
   };
-  public static final Function<ParameterSetWrapper, Number> mul_ = new Function<ParameterSetWrapper, Number>() {
-    public Number apply(ParameterSetWrapper param) {
-      Number a = (Number) param.parameters.get(0);
-      Number b = (Number) param.parameters.get(1);
-      return AH.mul(a, b);
-    }
+  public static final Function<ParameterSetWrapper, Number> mul_ = (ParameterSetWrapper param) -> {
+    Number a = (Number) param.parameters.get(0);
+    Number b = (Number) param.parameters.get(1);
+    return AH.mul(a, b);
   };
   @Test
   public void recursionWithLambda_res_7740953487930954651() throws Throwable {
     Assert.assertTrue("Expected: " + new BigInteger("1327") + ", but was: " + Generated_recursionWithLambda_Test.f(AH.add(new BigInteger("10"), AH.add(new BigInteger("30"), AH.add(new BigInteger("1"), new BigInteger("10")))), Generated_recursionWithLambda_Test.plus_), EqualsTestOp.matches(new BigInteger("1327"), Generated_recursionWithLambda_Test.f(AH.add(new BigInteger("10"), AH.add(new BigInteger("30"), AH.add(new BigInteger("1"), new BigInteger("10")))), Generated_recursionWithLambda_Test.plus_)));
   }
-  public static Number f(final Number a, final Function<ParameterSetWrapper, Number> op) {
-    Number res = ((_FunctionTypes._return_P0_E0<Number>) () -> {
+  public static Number f(Number a, Function<ParameterSetWrapper, Number> op) {
+    Number res = ((Supplier<Number>) () -> {
       if (AH.isGreater(a, new BigInteger("0"))) {
         ParameterSetWrapper param = new ParameterSetWrapper();
         param.parameters.add(a);
@@ -47,7 +43,7 @@ public class Generated_recursionWithLambda_Test {
       } else {
         throw new AlternativesException("The proposed alternative does not exist.");
       }
-    }).invoke();
+    }).get();
 
     return res;
   }

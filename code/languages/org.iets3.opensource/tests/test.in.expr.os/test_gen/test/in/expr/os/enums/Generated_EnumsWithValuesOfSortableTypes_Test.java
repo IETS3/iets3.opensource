@@ -7,7 +7,7 @@ import java.time.LocalDate;
 import java.util.Vector;
 import java.util.Collections;
 import java.math.BigInteger;
-import jetbrains.mps.baseLanguage.closures.runtime._FunctionTypes;
+import java.util.function.Supplier;
 import org.iets3.core.expr.simpleTypes.runtime.AH;
 import org.iets3.core.expr.genjava.base.rt.rt.AlternativesException;
 import org.iets3.core.expr.datetime.runtime.DiscreteDateRangeValue;
@@ -66,7 +66,7 @@ public class Generated_EnumsWithValuesOfSortableTypes_Test {
   }
   public static final Number t_ = new BigInteger("1");
   public enum eOpt implements Comparator<eOpt> {
-    aOpt(((_FunctionTypes._return_P0_E0<String>) () -> {
+    aOpt(((Supplier<String>) () -> {
       if (AH.isEqual(new BigInteger("1"), Generated_EnumsWithValuesOfSortableTypes_Test.t_)) {
         return "c";
       } else if (AH.isEqual(new BigInteger("2"), Generated_EnumsWithValuesOfSortableTypes_Test.t_)) {
@@ -74,8 +74,8 @@ public class Generated_EnumsWithValuesOfSortableTypes_Test {
       } else {
         throw new AlternativesException("The proposed alternative does not exist.");
       }
-    }).invoke()),
-    bOpt(((_FunctionTypes._return_P0_E0<String>) () -> {
+    }).get()),
+    bOpt(((Supplier<String>) () -> {
       if (AH.isEqual(new BigInteger("1"), Generated_EnumsWithValuesOfSortableTypes_Test.t_)) {
         return "a";
       } else if (AH.isEqual(new BigInteger("2"), Generated_EnumsWithValuesOfSortableTypes_Test.t_)) {
@@ -83,8 +83,8 @@ public class Generated_EnumsWithValuesOfSortableTypes_Test {
       } else {
         throw new AlternativesException("The proposed alternative does not exist.");
       }
-    }).invoke()),
-    cOpt(((_FunctionTypes._return_P0_E0<String>) () -> {
+    }).get()),
+    cOpt(((Supplier<String>) () -> {
       if (AH.isEqual(new BigInteger("1"), Generated_EnumsWithValuesOfSortableTypes_Test.t_)) {
         return "b";
       } else if (AH.isEqual(new BigInteger("2"), Generated_EnumsWithValuesOfSortableTypes_Test.t_)) {
@@ -92,7 +92,7 @@ public class Generated_EnumsWithValuesOfSortableTypes_Test {
       } else {
         throw new AlternativesException("The proposed alternative does not exist.");
       }
-    }).invoke());
+    }).get());
 
     private final String value;
     public static int order;

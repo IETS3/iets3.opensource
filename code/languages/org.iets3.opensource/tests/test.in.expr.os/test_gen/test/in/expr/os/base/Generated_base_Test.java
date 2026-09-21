@@ -6,7 +6,7 @@ import org.junit.Test;
 import org.junit.Assert;
 import java.math.BigInteger;
 import org.iets3.core.expr.genjava.tests.rt.rt.EqualsTestOp;
-import jetbrains.mps.baseLanguage.closures.runtime._FunctionTypes;
+import java.util.function.Supplier;
 import org.iets3.core.expr.simpleTypes.runtime.AH;
 import org.iets3.core.expr.genjava.messages.rt.rt.Message;
 import org.iets3.core.expr.genjava.messages.rt.rt.BuiltinMessageKinds;
@@ -60,13 +60,13 @@ public class Generated_base_Test {
   }
   @Test
   public void emptyAndValExpr_item0_3611639268124620491() throws Throwable {
-    Assert.assertEquals("Expected: " + "blockWithEmptyAndValExpr5" + ", but was: " + (((_FunctionTypes._return_P0_E0<String>) () -> {
+    Assert.assertEquals("Expected: " + "blockWithEmptyAndValExpr5" + ", but was: " + ((Supplier<String>) () -> {
       Number variable = new BigInteger("5");
       return AH.addString("blockWithEmptyAndValExpr", variable);
-    }).invoke()), "blockWithEmptyAndValExpr5", (Object) ((_FunctionTypes._return_P0_E0<String>) () -> {
+    }).get(), "blockWithEmptyAndValExpr5", ((Supplier<String>) () -> {
       Number variable = new BigInteger("5");
       return AH.addString("blockWithEmptyAndValExpr", variable);
-    }).invoke());
+    }).get());
   }
 
   @Test
@@ -80,7 +80,7 @@ public class Generated_base_Test {
   @Test
   public void cast_item2_7255181410606791931() throws Throwable {
     try {
-      if (((_FunctionTypes._return_P0_E0<Number>) () -> {
+      if (((Supplier<Number>) () -> {
         Number newValue = new BigInteger("5");
         {
           Number it = newValue;
@@ -91,7 +91,7 @@ public class Generated_base_Test {
           }
         }
         return newValue;
-      }).invoke() == null) {
+      }).get() == null) {
         throw new NullPointerException("No Result in Confail Testitem");
       }
       Assert.fail("Constraint failed");
@@ -102,7 +102,7 @@ public class Generated_base_Test {
   @Test
   public void cast_item3_6953776000506589409() throws Throwable {
     try {
-      if (((_FunctionTypes._return_P0_E0<Number>) () -> {
+      if (((Supplier<Number>) () -> {
         Number newValue = new BigInteger("5");
         {
           Number it = newValue;
@@ -113,7 +113,7 @@ public class Generated_base_Test {
           }
         }
         return newValue;
-      }).invoke() == null) {
+      }).get() == null) {
         throw new NullPointerException("No Result in Confail Testitem");
       }
       Assert.fail("Constraint failed");

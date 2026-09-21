@@ -6,7 +6,7 @@ import java.math.BigInteger;
 import org.junit.Test;
 import org.junit.Assert;
 import org.iets3.core.expr.genjava.base.rt.rt.AH;
-import jetbrains.mps.baseLanguage.closures.runtime._FunctionTypes;
+import java.util.function.Supplier;
 import org.iets3.core.expr.genjava.tests.rt.rt.EqualsTestOp;
 import org.iets3.core.expr.genjava.messages.rt.rt.Message;
 import org.iets3.core.expr.genjava.messages.rt.rt.BuiltinMessageKinds;
@@ -18,10 +18,8 @@ import org.iets3.core.expr.genjava.base.rt.rt.GlobalContext;
 import org.pcollections.PVector;
 import org.pcollections.TreePVector;
 import java.util.ArrayList;
-import java.util.function.Predicate;
 import java.util.stream.Collectors;
 import org.iets3.core.expr.simpleTypes.runtime.OH;
-import java.util.Comparator;
 
 /**
  * 
@@ -73,37 +71,37 @@ public class Generated_option_Test {
   }
   @Test
   public void optionDeRef_item1_6390447919123442081() throws Throwable {
-    Assert.assertEquals("Expected: " + null + ", but was: " + (((_FunctionTypes._return_P0_E0<Object>) () -> {
+    Assert.assertEquals("Expected: " + null + ", but was: " + ((Supplier<Object>) () -> {
       if (AH.isSome(Generated_option_Test.noneNone_)) {
         return Generated_option_Test.noneNone_;
       } else {
         return null;
       }
-    }).invoke()), (Object) null, (Object) ((_FunctionTypes._return_P0_E0<Object>) () -> {
+    }).get(), (Object) null, ((Supplier<Object>) () -> {
       if (AH.isSome(Generated_option_Test.noneNone_)) {
         return Generated_option_Test.noneNone_;
       } else {
         return null;
       }
-    }).invoke());
+    }).get());
   }
   @Test
   public void optionDeRef_item2_9212286833106168030() throws Throwable {
-    Assert.assertEquals("Expected: " + null + ", but was: " + (((_FunctionTypes._return_P0_E0<Object>) () -> {
+    Assert.assertEquals("Expected: " + null + ", but was: " + ((Supplier<Object>) () -> {
       Object x = Generated_option_Test.noneNone_;
       if (AH.isSome(Generated_option_Test.noneNone_)) {
         return x;
       } else {
         return null;
       }
-    }).invoke()), (Object) null, (Object) ((_FunctionTypes._return_P0_E0<Object>) () -> {
+    }).get(), (Object) null, ((Supplier<Object>) () -> {
       Object x = Generated_option_Test.noneNone_;
       if (AH.isSome(Generated_option_Test.noneNone_)) {
         return x;
       } else {
         return null;
       }
-    }).invoke());
+    }).get());
   }
   @Test
   public void optionDeRef_optOr_numFive_6390447919083257690() throws Throwable {
@@ -123,35 +121,35 @@ public class Generated_option_Test {
   }
   @Test
   public void optionDeRef_optOr_strText_6390447919151119905() throws Throwable {
-    Assert.assertEquals("Expected: " + "text" + ", but was: " + (((_FunctionTypes._return_P0_E0<String>) () -> {
+    Assert.assertEquals("Expected: " + "text" + ", but was: " + ((Supplier<String>) () -> {
       if (AH.isSome(Generated_option_Test.strText_)) {
         return Generated_option_Test.strText_;
       } else {
         return "";
       }
-    }).invoke()), "text", (Object) ((_FunctionTypes._return_P0_E0<String>) () -> {
+    }).get(), "text", ((Supplier<String>) () -> {
       if (AH.isSome(Generated_option_Test.strText_)) {
         return Generated_option_Test.strText_;
       } else {
         return "";
       }
-    }).invoke());
+    }).get());
   }
   @Test
   public void optionDeRef_optOr_strNone_6390447919151851187() throws Throwable {
-    Assert.assertEquals("Expected: " + "" + ", but was: " + (((_FunctionTypes._return_P0_E0<String>) () -> {
+    Assert.assertEquals("Expected: " + "" + ", but was: " + ((Supplier<String>) () -> {
       if (AH.isSome(Generated_option_Test.strNone_)) {
         return Generated_option_Test.strNone_;
       } else {
         return "";
       }
-    }).invoke()), "", (Object) ((_FunctionTypes._return_P0_E0<String>) () -> {
+    }).get(), "", ((Supplier<String>) () -> {
       if (AH.isSome(Generated_option_Test.strNone_)) {
         return Generated_option_Test.strNone_;
       } else {
         return "";
       }
-    }).invoke());
+    }).get());
   }
   @Test
   public void optionDeRef_if_strText_6390447919153185538() throws Throwable {
@@ -163,19 +161,19 @@ public class Generated_option_Test {
   }
   @Test
   public void optionDeRef_item14_6390447919127077449() throws Throwable {
-    Assert.assertEquals("Expected: " + "text#" + ", but was: " + org.iets3.core.expr.simpleTypes.runtime.AH.addString(((_FunctionTypes._return_P0_E0<String>) () -> {
+    Assert.assertEquals("Expected: " + "text#" + ", but was: " + org.iets3.core.expr.simpleTypes.runtime.AH.addString(((Supplier<String>) () -> {
       if (AH.isSome(Generated_option_Test.strText_)) {
         return Generated_option_Test.strText_;
       } else {
         return "";
       }
-    }).invoke(), "#"), "text#", org.iets3.core.expr.simpleTypes.runtime.AH.addString(((_FunctionTypes._return_P0_E0<String>) () -> {
+    }).get(), "#"), "text#", org.iets3.core.expr.simpleTypes.runtime.AH.addString(((Supplier<String>) () -> {
       if (AH.isSome(Generated_option_Test.strText_)) {
         return Generated_option_Test.strText_;
       } else {
         return "";
       }
-    }).invoke(), "#"));
+    }).get(), "#"));
   }
   @Test
   public void optionDeRef_item15_6390447919109269333() throws Throwable {
@@ -183,85 +181,85 @@ public class Generated_option_Test {
   }
   @Test
   public void optionDeRef_item16_6390447919126015618() throws Throwable {
-    Assert.assertEquals("Expected: " + "text#" + ", but was: " + (((_FunctionTypes._return_P0_E0<String>) () -> {
+    Assert.assertEquals("Expected: " + "text#" + ", but was: " + ((Supplier<String>) () -> {
       String x = Generated_option_Test.strText_;
       if (AH.isSome(Generated_option_Test.strText_)) {
         return org.iets3.core.expr.simpleTypes.runtime.AH.addString(x, "#");
       } else {
         return "#";
       }
-    }).invoke()), "text#", (Object) ((_FunctionTypes._return_P0_E0<String>) () -> {
+    }).get(), "text#", ((Supplier<String>) () -> {
       String x = Generated_option_Test.strText_;
       if (AH.isSome(Generated_option_Test.strText_)) {
         return org.iets3.core.expr.simpleTypes.runtime.AH.addString(x, "#");
       } else {
         return "#";
       }
-    }).invoke());
+    }).get());
   }
   @Test
   public void optionDeRef_item17_5432787881275375659() throws Throwable {
-    Assert.assertEquals("Expected: " + "" + ", but was: " + (((_FunctionTypes._return_P0_E0<String>) () -> {
+    Assert.assertEquals("Expected: " + "" + ", but was: " + ((Supplier<String>) () -> {
       if (AH.isSome(Generated_option_Test.strNone_)) {
         return Generated_option_Test.strNone_;
       } else {
         return "";
       }
-    }).invoke()), "", (Object) ((_FunctionTypes._return_P0_E0<String>) () -> {
+    }).get(), "", ((Supplier<String>) () -> {
       if (AH.isSome(Generated_option_Test.strNone_)) {
         return Generated_option_Test.strNone_;
       } else {
         return "";
       }
-    }).invoke());
+    }).get());
   }
   @Test
   public void optionDeRef_item18_5432787881274806771() throws Throwable {
-    Assert.assertEquals("Expected: " + "#" + ", but was: " + org.iets3.core.expr.simpleTypes.runtime.AH.addString(((_FunctionTypes._return_P0_E0<String>) () -> {
+    Assert.assertEquals("Expected: " + "#" + ", but was: " + org.iets3.core.expr.simpleTypes.runtime.AH.addString(((Supplier<String>) () -> {
       if (AH.isSome(Generated_option_Test.strNone_)) {
         return Generated_option_Test.strNone_;
       } else {
         return "";
       }
-    }).invoke(), "#"), "#", org.iets3.core.expr.simpleTypes.runtime.AH.addString(((_FunctionTypes._return_P0_E0<String>) () -> {
+    }).get(), "#"), "#", org.iets3.core.expr.simpleTypes.runtime.AH.addString(((Supplier<String>) () -> {
       if (AH.isSome(Generated_option_Test.strNone_)) {
         return Generated_option_Test.strNone_;
       } else {
         return "";
       }
-    }).invoke(), "#"));
+    }).get(), "#"));
   }
   @Test
   public void optionDeRef_item19_5432787881269744361() throws Throwable {
-    Assert.assertEquals("Expected: " + "" + ", but was: " + (((_FunctionTypes._return_P0_E0<String>) () -> {
+    Assert.assertEquals("Expected: " + "" + ", but was: " + ((Supplier<String>) () -> {
       if (AH.isSome(Generated_option_Test.strNone_)) {
         return Generated_option_Test.strNone_;
       } else {
         return "";
       }
-    }).invoke()), "", (Object) (((_FunctionTypes._return_P0_E0<String>) () -> {
+    }).get(), "", ((Supplier<String>) () -> {
       if (AH.isSome(Generated_option_Test.strNone_)) {
         return Generated_option_Test.strNone_;
       } else {
         return "";
       }
-    }).invoke()));
+    }).get());
   }
   @Test
   public void optionDeRef_item20_5432787881270055503() throws Throwable {
-    Assert.assertEquals("Expected: " + "#" + ", but was: " + org.iets3.core.expr.simpleTypes.runtime.AH.addString(((_FunctionTypes._return_P0_E0<String>) () -> {
+    Assert.assertEquals("Expected: " + "#" + ", but was: " + org.iets3.core.expr.simpleTypes.runtime.AH.addString(((Supplier<String>) () -> {
       if (AH.isSome(Generated_option_Test.strNone_)) {
         return Generated_option_Test.strNone_;
       } else {
         return "";
       }
-    }).invoke(), "#"), "#", org.iets3.core.expr.simpleTypes.runtime.AH.addString(((_FunctionTypes._return_P0_E0<String>) () -> {
+    }).get(), "#"), "#", org.iets3.core.expr.simpleTypes.runtime.AH.addString(((Supplier<String>) () -> {
       if (AH.isSome(Generated_option_Test.strNone_)) {
         return Generated_option_Test.strNone_;
       } else {
         return "";
       }
-    }).invoke(), "#"));
+    }).get(), "#"));
   }
   @Test
   public void optionDeRef_item21_6390447919134351198() throws Throwable {
@@ -269,21 +267,21 @@ public class Generated_option_Test {
   }
   @Test
   public void optionDeRef_item22_6390447919134351210() throws Throwable {
-    Assert.assertEquals("Expected: " + "#" + ", but was: " + (((_FunctionTypes._return_P0_E0<String>) () -> {
+    Assert.assertEquals("Expected: " + "#" + ", but was: " + ((Supplier<String>) () -> {
       String x = Generated_option_Test.strNone_;
       if (AH.isSome(Generated_option_Test.strNone_)) {
         return org.iets3.core.expr.simpleTypes.runtime.AH.addString(x, "#");
       } else {
         return "#";
       }
-    }).invoke()), "#", (Object) ((_FunctionTypes._return_P0_E0<String>) () -> {
+    }).get(), "#", ((Supplier<String>) () -> {
       String x = Generated_option_Test.strNone_;
       if (AH.isSome(Generated_option_Test.strNone_)) {
         return org.iets3.core.expr.simpleTypes.runtime.AH.addString(x, "#");
       } else {
         return "#";
       }
-    }).invoke());
+    }).get());
   }
   @Test
   public void optionDeRef_item24_6390447919129835491() throws Throwable {
@@ -295,21 +293,21 @@ public class Generated_option_Test {
   }
   @Test
   public void optionDeRef_item26_6390447919130485275() throws Throwable {
-    Assert.assertTrue("Expected: " + new BigInteger("8") + ", but was: " + (((_FunctionTypes._return_P0_E0<Number>) () -> {
+    Assert.assertTrue("Expected: " + new BigInteger("8") + ", but was: " + ((Supplier<Number>) () -> {
       Number x = Generated_option_Test.numFive_;
       if (AH.isSome(Generated_option_Test.numFive_)) {
         return org.iets3.core.expr.simpleTypes.runtime.AH.add(x, new BigInteger("3"));
       } else {
         return (Number) new BigInteger("7");
       }
-    }).invoke()), EqualsTestOp.matches(new BigInteger("8"), ((_FunctionTypes._return_P0_E0<Number>) () -> {
+    }).get(), EqualsTestOp.matches(new BigInteger("8"), ((Supplier<Number>) () -> {
       Number x = Generated_option_Test.numFive_;
       if (AH.isSome(Generated_option_Test.numFive_)) {
         return org.iets3.core.expr.simpleTypes.runtime.AH.add(x, new BigInteger("3"));
       } else {
         return (Number) new BigInteger("7");
       }
-    }).invoke()));
+    }).get()));
   }
   @Test
   public void optionDeRef_item27_6390447919135426371() throws Throwable {
@@ -321,21 +319,21 @@ public class Generated_option_Test {
   }
   @Test
   public void optionDeRef_item29_6390447919135426392() throws Throwable {
-    Assert.assertTrue("Expected: " + new BigInteger("3") + ", but was: " + (((_FunctionTypes._return_P0_E0<Number>) () -> {
+    Assert.assertTrue("Expected: " + new BigInteger("3") + ", but was: " + ((Supplier<Number>) () -> {
       Number x = Generated_option_Test.numNone_;
       if (AH.isSome(Generated_option_Test.numNone_)) {
         return org.iets3.core.expr.simpleTypes.runtime.AH.add(x, new BigInteger("3"));
       } else {
         return (Number) new BigInteger("3");
       }
-    }).invoke()), EqualsTestOp.matches(new BigInteger("3"), ((_FunctionTypes._return_P0_E0<Number>) () -> {
+    }).get(), EqualsTestOp.matches(new BigInteger("3"), ((Supplier<Number>) () -> {
       Number x = Generated_option_Test.numNone_;
       if (AH.isSome(Generated_option_Test.numNone_)) {
         return org.iets3.core.expr.simpleTypes.runtime.AH.add(x, new BigInteger("3"));
       } else {
         return (Number) new BigInteger("3");
       }
-    }).invoke()));
+    }).get()));
   }
   @Test
   public void optionInFunction_give1_7740953487931039468() throws Throwable {
@@ -363,15 +361,15 @@ public class Generated_option_Test {
 
     return res;
   }
-  public static Number anotherFun(final Number i) {
-    Number res = ((_FunctionTypes._return_P0_E0<Number>) () -> {
+  public static Number anotherFun(Number i) {
+    Number res = ((Supplier<Number>) () -> {
       Number x = i;
       if (AH.isSome(i)) {
         return org.iets3.core.expr.simpleTypes.runtime.AH.add(x, new BigInteger("1"));
       } else {
         return (Number) new BigInteger("20");
       }
-    }).invoke();
+    }).get();
 
     return res;
   }
@@ -381,71 +379,39 @@ public class Generated_option_Test {
   public static final PVector<String> optionsListEmpty5_ = TreePVector.<String>empty().plus("S1").plus(null).plus("S2");
   @Test
   public void Unpacking_item0_7787163368317939817() throws Throwable {
-    Assert.assertEquals("Expected: " + TreePVector.<String>from(new ArrayList<String>()) + ", but was: " + TreePVector.<String>from(Generated_option_Test.optionsListEmpty_.stream().filter(new Predicate<String>() {
-      public boolean test(String p0) {
-        return p0 != null;
-      }
-    }).collect(Collectors.<String>toList())), TreePVector.<String>from(new ArrayList<String>()), TreePVector.<String>from(Generated_option_Test.optionsListEmpty_.stream().filter(new Predicate<String>() {
-      public boolean test(String p0) {
-        return p0 != null;
-      }
-    }).collect(Collectors.<String>toList())));
+    Assert.assertEquals("Expected: " + TreePVector.<String>from(new ArrayList<String>()) + ", but was: " + TreePVector.<String>from(Generated_option_Test.optionsListEmpty_.stream().filter((String p0) -> p0 != null).collect(Collectors.<String>toList())), TreePVector.<String>from(new ArrayList<String>()), TreePVector.<String>from(Generated_option_Test.optionsListEmpty_.stream().filter((String p0) -> p0 != null).collect(Collectors.<String>toList())));
   }
   @Test
   public void Unpacking_item1_7787163368317942038() throws Throwable {
-    Assert.assertEquals("Expected: " + TreePVector.<String>empty().plus("S1") + ", but was: " + TreePVector.<String>from(Generated_option_Test.optionsListEmpty1_.stream().filter(new Predicate<String>() {
-      public boolean test(String p0) {
-        return p0 != null;
-      }
-    }).collect(Collectors.<String>toList())), TreePVector.<String>empty().plus("S1"), TreePVector.<String>from(Generated_option_Test.optionsListEmpty1_.stream().filter(new Predicate<String>() {
-      public boolean test(String p0) {
-        return p0 != null;
-      }
-    }).collect(Collectors.<String>toList())));
+    Assert.assertEquals("Expected: " + TreePVector.<String>empty().plus("S1") + ", but was: " + TreePVector.<String>from(Generated_option_Test.optionsListEmpty1_.stream().filter((String p0) -> p0 != null).collect(Collectors.<String>toList())), TreePVector.<String>empty().plus("S1"), TreePVector.<String>from(Generated_option_Test.optionsListEmpty1_.stream().filter((String p0) -> p0 != null).collect(Collectors.<String>toList())));
   }
   @Test
   public void Unpacking_item2_7787163368317942153() throws Throwable {
-    Assert.assertEquals("Expected: " + TreePVector.<String>from(new ArrayList<String>()) + ", but was: " + TreePVector.<String>from(Generated_option_Test.optionsListEmpty1b_.stream().filter(new Predicate<String>() {
-      public boolean test(String p0) {
-        return p0 != null;
-      }
-    }).collect(Collectors.<String>toList())), TreePVector.<String>from(new ArrayList<String>()), TreePVector.<String>from(Generated_option_Test.optionsListEmpty1b_.stream().filter(new Predicate<String>() {
-      public boolean test(String p0) {
-        return p0 != null;
-      }
-    }).collect(Collectors.<String>toList())));
+    Assert.assertEquals("Expected: " + TreePVector.<String>from(new ArrayList<String>()) + ", but was: " + TreePVector.<String>from(Generated_option_Test.optionsListEmpty1b_.stream().filter((String p0) -> p0 != null).collect(Collectors.<String>toList())), TreePVector.<String>from(new ArrayList<String>()), TreePVector.<String>from(Generated_option_Test.optionsListEmpty1b_.stream().filter((String p0) -> p0 != null).collect(Collectors.<String>toList())));
   }
   @Test
   public void Unpacking_item3_7787163368317942277() throws Throwable {
-    Assert.assertEquals("Expected: " + TreePVector.<String>empty().plus("S1").plus("S2") + ", but was: " + TreePVector.<String>from(Generated_option_Test.optionsListEmpty5_.stream().filter(new Predicate<String>() {
-      public boolean test(String p0) {
-        return p0 != null;
-      }
-    }).collect(Collectors.<String>toList())), TreePVector.<String>empty().plus("S1").plus("S2"), TreePVector.<String>from(Generated_option_Test.optionsListEmpty5_.stream().filter(new Predicate<String>() {
-      public boolean test(String p0) {
-        return p0 != null;
-      }
-    }).collect(Collectors.<String>toList())));
+    Assert.assertEquals("Expected: " + TreePVector.<String>empty().plus("S1").plus("S2") + ", but was: " + TreePVector.<String>from(Generated_option_Test.optionsListEmpty5_.stream().filter((String p0) -> p0 != null).collect(Collectors.<String>toList())), TreePVector.<String>empty().plus("S1").plus("S2"), TreePVector.<String>from(Generated_option_Test.optionsListEmpty5_.stream().filter((String p0) -> p0 != null).collect(Collectors.<String>toList())));
   }
-  public static Number mayBeNumber(final Boolean b) {
-    Number res = ((_FunctionTypes._return_P0_E0<Number>) () -> {
+  public static Number mayBeNumber(Boolean b) {
+    Number res = ((Supplier<Number>) () -> {
       if (b) {
         return (Number) new BigInteger("5");
       } else {
         return null;
       }
-    }).invoke();
+    }).get();
 
     return res;
   }
-  public static String mayBeText(final Boolean b) {
-    String res = ((_FunctionTypes._return_P0_E0<String>) () -> {
+  public static String mayBeText(Boolean b) {
+    String res = ((Supplier<String>) () -> {
       if (b) {
         return "T";
       } else {
         return null;
       }
-    }).invoke();
+    }).get();
 
     return res;
   }
@@ -478,21 +444,9 @@ public class Generated_option_Test {
   public static final Number o1_ = new BigInteger("2");
   public static final Number o2_ = new BigInteger("3");
   public static final Number o3_ = null;
-  public static final PVector<Number> l1_ = TreePVector.<Number>from(TreePVector.<Number>singleton(Generated_option_Test.o1_).stream().filter(new Predicate<Number>() {
-    public boolean test(Number p0) {
-      return p0 != null;
-    }
-  }).collect(Collectors.toList()));
-  public static final PVector<Number> l2_ = TreePVector.<Number>from(TreePVector.<Number>singleton(Generated_option_Test.o2_).stream().filter(new Predicate<Number>() {
-    public boolean test(Number p0) {
-      return p0 != null;
-    }
-  }).collect(Collectors.toList()));
-  public static final PVector<Number> l3_ = TreePVector.<Number>from(TreePVector.<Number>singleton(Generated_option_Test.o3_).stream().filter(new Predicate<Number>() {
-    public boolean test(Number p0) {
-      return p0 != null;
-    }
-  }).collect(Collectors.toList()));
+  public static final PVector<Number> l1_ = TreePVector.<Number>from(TreePVector.<Number>singleton(Generated_option_Test.o1_).stream().filter((Number p0) -> p0 != null).collect(Collectors.toList()));
+  public static final PVector<Number> l2_ = TreePVector.<Number>from(TreePVector.<Number>singleton(Generated_option_Test.o2_).stream().filter((Number p0) -> p0 != null).collect(Collectors.toList()));
+  public static final PVector<Number> l3_ = TreePVector.<Number>from(TreePVector.<Number>singleton(Generated_option_Test.o3_).stream().filter((Number p0) -> p0 != null).collect(Collectors.toList()));
   public static final PVector<Object> l_ = TreePVector.<Object>empty().plus(null);
   @Test
   public void ListsWithOptions_item0_6414340278547216752() throws Throwable {
@@ -543,15 +497,7 @@ public class Generated_option_Test {
   }
   @Test
   public void Sorting_item0_5646843372573676470() throws Throwable {
-    Assert.assertEquals("Expected: " + TreePVector.<Number>empty().plus(new BigInteger("1")) + ", but was: " + TreePVector.<Number>from(TreePVector.<Number>empty().plus(new BigInteger("1")).plus(null).stream().filter(OH.predicate()).sorted(new Comparator<Number>() {
-      public int compare(Number p0, Number p1) {
-        return OH.compare(p0, p1);
-      }
-    }).collect(Collectors.<Number>toList())), TreePVector.<Number>empty().plus(new BigInteger("1")), TreePVector.<Number>from(TreePVector.<Number>empty().plus(new BigInteger("1")).plus(null).stream().filter(OH.predicate()).sorted(new Comparator<Number>() {
-      public int compare(Number p0, Number p1) {
-        return OH.compare(p0, p1);
-      }
-    }).collect(Collectors.<Number>toList())));
+    Assert.assertEquals("Expected: " + TreePVector.<Number>empty().plus(new BigInteger("1")) + ", but was: " + TreePVector.<Number>from(TreePVector.<Number>empty().plus(new BigInteger("1")).plus(null).stream().filter(OH.predicate()).sorted((Number p0, Number p1) -> OH.compare(p0, p1)).collect(Collectors.<Number>toList())), TreePVector.<Number>empty().plus(new BigInteger("1")), TreePVector.<Number>from(TreePVector.<Number>empty().plus(new BigInteger("1")).plus(null).stream().filter(OH.predicate()).sorted((Number p0, Number p1) -> OH.compare(p0, p1)).collect(Collectors.<Number>toList())));
   }
   @Test
   public void Sorting_optionList0_3611639268130886204() throws Throwable {
@@ -571,99 +517,35 @@ public class Generated_option_Test {
   }
   @Test
   public void Sorting_item6_2143211017902290124() throws Throwable {
-    Assert.assertEquals("Expected: " + TreePVector.<Number>from(new ArrayList<Number>()) + ", but was: " + TreePVector.<Number>from(TreePVector.<Number>from(new ArrayList<Number>()).stream().filter(OH.predicate()).sorted(new Comparator<Number>() {
-      public int compare(Number p0, Number p1) {
-        return OH.compare(p0, p1);
-      }
-    }).collect(Collectors.<Number>toList())), TreePVector.<Number>from(new ArrayList<Number>()), TreePVector.<Number>from(TreePVector.<Number>from(new ArrayList<Number>()).stream().filter(OH.predicate()).sorted(new Comparator<Number>() {
-      public int compare(Number p0, Number p1) {
-        return OH.compare(p0, p1);
-      }
-    }).collect(Collectors.<Number>toList())));
+    Assert.assertEquals("Expected: " + TreePVector.<Number>from(new ArrayList<Number>()) + ", but was: " + TreePVector.<Number>from(TreePVector.<Number>from(new ArrayList<Number>()).stream().filter(OH.predicate()).sorted((Number p0, Number p1) -> OH.compare(p0, p1)).collect(Collectors.<Number>toList())), TreePVector.<Number>from(new ArrayList<Number>()), TreePVector.<Number>from(TreePVector.<Number>from(new ArrayList<Number>()).stream().filter(OH.predicate()).sorted((Number p0, Number p1) -> OH.compare(p0, p1)).collect(Collectors.<Number>toList())));
   }
   @Test
   public void Sorting_item7_2143211017902291809() throws Throwable {
-    Assert.assertEquals("Expected: " + TreePVector.<Number>empty().plus(new BigInteger("1")) + ", but was: " + TreePVector.<Number>from(TreePVector.<Number>empty().plus(new BigInteger("1")).stream().filter(OH.predicate()).sorted(new Comparator<Number>() {
-      public int compare(Number p0, Number p1) {
-        return OH.compare(p0, p1);
-      }
-    }).collect(Collectors.<Number>toList())), TreePVector.<Number>empty().plus(new BigInteger("1")), TreePVector.<Number>from(TreePVector.<Number>empty().plus(new BigInteger("1")).stream().filter(OH.predicate()).sorted(new Comparator<Number>() {
-      public int compare(Number p0, Number p1) {
-        return OH.compare(p0, p1);
-      }
-    }).collect(Collectors.<Number>toList())));
+    Assert.assertEquals("Expected: " + TreePVector.<Number>empty().plus(new BigInteger("1")) + ", but was: " + TreePVector.<Number>from(TreePVector.<Number>empty().plus(new BigInteger("1")).stream().filter(OH.predicate()).sorted((Number p0, Number p1) -> OH.compare(p0, p1)).collect(Collectors.<Number>toList())), TreePVector.<Number>empty().plus(new BigInteger("1")), TreePVector.<Number>from(TreePVector.<Number>empty().plus(new BigInteger("1")).stream().filter(OH.predicate()).sorted((Number p0, Number p1) -> OH.compare(p0, p1)).collect(Collectors.<Number>toList())));
   }
   @Test
   public void Sorting_item8_5005695164082923047() throws Throwable {
-    Assert.assertEquals("Expected: " + TreePVector.<Number>empty().plus(new BigInteger("1")) + ", but was: " + TreePVector.<Number>from(TreePVector.<Number>empty().plus(null).plus(new BigInteger("1")).stream().filter(OH.predicate()).sorted(new Comparator<Number>() {
-      public int compare(Number p0, Number p1) {
-        return OH.compare(p0, p1);
-      }
-    }).collect(Collectors.<Number>toList())), TreePVector.<Number>empty().plus(new BigInteger("1")), TreePVector.<Number>from(TreePVector.<Number>empty().plus(null).plus(new BigInteger("1")).stream().filter(OH.predicate()).sorted(new Comparator<Number>() {
-      public int compare(Number p0, Number p1) {
-        return OH.compare(p0, p1);
-      }
-    }).collect(Collectors.<Number>toList())));
+    Assert.assertEquals("Expected: " + TreePVector.<Number>empty().plus(new BigInteger("1")) + ", but was: " + TreePVector.<Number>from(TreePVector.<Number>empty().plus(null).plus(new BigInteger("1")).stream().filter(OH.predicate()).sorted((Number p0, Number p1) -> OH.compare(p0, p1)).collect(Collectors.<Number>toList())), TreePVector.<Number>empty().plus(new BigInteger("1")), TreePVector.<Number>from(TreePVector.<Number>empty().plus(null).plus(new BigInteger("1")).stream().filter(OH.predicate()).sorted((Number p0, Number p1) -> OH.compare(p0, p1)).collect(Collectors.<Number>toList())));
   }
   @Test
   public void Sorting_item9_2481710459447909026() throws Throwable {
-    Assert.assertEquals("Expected: " + TreePVector.<Number>empty().plus(new BigInteger("1")).plus(new BigInteger("2")) + ", but was: " + TreePVector.<Number>from(TreePVector.<Number>empty().plus(null).plus(new BigInteger("1")).plus(new BigInteger("2")).stream().filter(OH.predicate()).sorted(new Comparator<Number>() {
-      public int compare(Number p0, Number p1) {
-        return OH.compare(p0, p1);
-      }
-    }).collect(Collectors.<Number>toList())), TreePVector.<Number>empty().plus(new BigInteger("1")).plus(new BigInteger("2")), TreePVector.<Number>from(TreePVector.<Number>empty().plus(null).plus(new BigInteger("1")).plus(new BigInteger("2")).stream().filter(OH.predicate()).sorted(new Comparator<Number>() {
-      public int compare(Number p0, Number p1) {
-        return OH.compare(p0, p1);
-      }
-    }).collect(Collectors.<Number>toList())));
+    Assert.assertEquals("Expected: " + TreePVector.<Number>empty().plus(new BigInteger("1")).plus(new BigInteger("2")) + ", but was: " + TreePVector.<Number>from(TreePVector.<Number>empty().plus(null).plus(new BigInteger("1")).plus(new BigInteger("2")).stream().filter(OH.predicate()).sorted((Number p0, Number p1) -> OH.compare(p0, p1)).collect(Collectors.<Number>toList())), TreePVector.<Number>empty().plus(new BigInteger("1")).plus(new BigInteger("2")), TreePVector.<Number>from(TreePVector.<Number>empty().plus(null).plus(new BigInteger("1")).plus(new BigInteger("2")).stream().filter(OH.predicate()).sorted((Number p0, Number p1) -> OH.compare(p0, p1)).collect(Collectors.<Number>toList())));
   }
   @Test
   public void Sorting_item11_5005695164083462014() throws Throwable {
-    Assert.assertEquals("Expected: " + TreePVector.<Number>from(new ArrayList<Number>()) + ", but was: " + TreePVector.<Number>from(TreePVector.<Number>from(new ArrayList<Number>()).stream().filter(OH.predicate()).sorted(new Comparator<Number>() {
-      public int compare(Number p0, Number p1) {
-        return OH.compare(p1, p0);
-      }
-    }).collect(Collectors.<Number>toList())), TreePVector.<Number>from(new ArrayList<Number>()), TreePVector.<Number>from(TreePVector.<Number>from(new ArrayList<Number>()).stream().filter(OH.predicate()).sorted(new Comparator<Number>() {
-      public int compare(Number p0, Number p1) {
-        return OH.compare(p1, p0);
-      }
-    }).collect(Collectors.<Number>toList())));
+    Assert.assertEquals("Expected: " + TreePVector.<Number>from(new ArrayList<Number>()) + ", but was: " + TreePVector.<Number>from(TreePVector.<Number>from(new ArrayList<Number>()).stream().filter(OH.predicate()).sorted((Number p0, Number p1) -> OH.compare(p1, p0)).collect(Collectors.<Number>toList())), TreePVector.<Number>from(new ArrayList<Number>()), TreePVector.<Number>from(TreePVector.<Number>from(new ArrayList<Number>()).stream().filter(OH.predicate()).sorted((Number p0, Number p1) -> OH.compare(p1, p0)).collect(Collectors.<Number>toList())));
   }
   @Test
   public void Sorting_item12_5005695164083462020() throws Throwable {
-    Assert.assertEquals("Expected: " + TreePVector.<Number>empty().plus(new BigInteger("1")) + ", but was: " + TreePVector.<Number>from(TreePVector.<Number>empty().plus(new BigInteger("1")).stream().filter(OH.predicate()).sorted(new Comparator<Number>() {
-      public int compare(Number p0, Number p1) {
-        return OH.compare(p1, p0);
-      }
-    }).collect(Collectors.<Number>toList())), TreePVector.<Number>empty().plus(new BigInteger("1")), TreePVector.<Number>from(TreePVector.<Number>empty().plus(new BigInteger("1")).stream().filter(OH.predicate()).sorted(new Comparator<Number>() {
-      public int compare(Number p0, Number p1) {
-        return OH.compare(p1, p0);
-      }
-    }).collect(Collectors.<Number>toList())));
+    Assert.assertEquals("Expected: " + TreePVector.<Number>empty().plus(new BigInteger("1")) + ", but was: " + TreePVector.<Number>from(TreePVector.<Number>empty().plus(new BigInteger("1")).stream().filter(OH.predicate()).sorted((Number p0, Number p1) -> OH.compare(p1, p0)).collect(Collectors.<Number>toList())), TreePVector.<Number>empty().plus(new BigInteger("1")), TreePVector.<Number>from(TreePVector.<Number>empty().plus(new BigInteger("1")).stream().filter(OH.predicate()).sorted((Number p0, Number p1) -> OH.compare(p1, p0)).collect(Collectors.<Number>toList())));
   }
   @Test
   public void Sorting_item13_5005695164083462026() throws Throwable {
-    Assert.assertEquals("Expected: " + TreePVector.<Number>empty().plus(new BigInteger("1")) + ", but was: " + TreePVector.<Number>from(TreePVector.<Number>empty().plus(null).plus(new BigInteger("1")).stream().filter(OH.predicate()).sorted(new Comparator<Number>() {
-      public int compare(Number p0, Number p1) {
-        return OH.compare(p1, p0);
-      }
-    }).collect(Collectors.<Number>toList())), TreePVector.<Number>empty().plus(new BigInteger("1")), TreePVector.<Number>from(TreePVector.<Number>empty().plus(null).plus(new BigInteger("1")).stream().filter(OH.predicate()).sorted(new Comparator<Number>() {
-      public int compare(Number p0, Number p1) {
-        return OH.compare(p1, p0);
-      }
-    }).collect(Collectors.<Number>toList())));
+    Assert.assertEquals("Expected: " + TreePVector.<Number>empty().plus(new BigInteger("1")) + ", but was: " + TreePVector.<Number>from(TreePVector.<Number>empty().plus(null).plus(new BigInteger("1")).stream().filter(OH.predicate()).sorted((Number p0, Number p1) -> OH.compare(p1, p0)).collect(Collectors.<Number>toList())), TreePVector.<Number>empty().plus(new BigInteger("1")), TreePVector.<Number>from(TreePVector.<Number>empty().plus(null).plus(new BigInteger("1")).stream().filter(OH.predicate()).sorted((Number p0, Number p1) -> OH.compare(p1, p0)).collect(Collectors.<Number>toList())));
   }
   @Test
   public void Sorting_item14_2481710459447909251() throws Throwable {
-    Assert.assertEquals("Expected: " + TreePVector.<Number>empty().plus(new BigInteger("2")).plus(new BigInteger("1")) + ", but was: " + TreePVector.<Number>from(TreePVector.<Number>empty().plus(null).plus(new BigInteger("1")).plus(new BigInteger("2")).stream().filter(OH.predicate()).sorted(new Comparator<Number>() {
-      public int compare(Number p0, Number p1) {
-        return OH.compare(p1, p0);
-      }
-    }).collect(Collectors.<Number>toList())), TreePVector.<Number>empty().plus(new BigInteger("2")).plus(new BigInteger("1")), TreePVector.<Number>from(TreePVector.<Number>empty().plus(null).plus(new BigInteger("1")).plus(new BigInteger("2")).stream().filter(OH.predicate()).sorted(new Comparator<Number>() {
-      public int compare(Number p0, Number p1) {
-        return OH.compare(p1, p0);
-      }
-    }).collect(Collectors.<Number>toList())));
+    Assert.assertEquals("Expected: " + TreePVector.<Number>empty().plus(new BigInteger("2")).plus(new BigInteger("1")) + ", but was: " + TreePVector.<Number>from(TreePVector.<Number>empty().plus(null).plus(new BigInteger("1")).plus(new BigInteger("2")).stream().filter(OH.predicate()).sorted((Number p0, Number p1) -> OH.compare(p1, p0)).collect(Collectors.<Number>toList())), TreePVector.<Number>empty().plus(new BigInteger("2")).plus(new BigInteger("1")), TreePVector.<Number>from(TreePVector.<Number>empty().plus(null).plus(new BigInteger("1")).plus(new BigInteger("2")).stream().filter(OH.predicate()).sorted((Number p0, Number p1) -> OH.compare(p1, p0)).collect(Collectors.<Number>toList())));
   }
 
 
