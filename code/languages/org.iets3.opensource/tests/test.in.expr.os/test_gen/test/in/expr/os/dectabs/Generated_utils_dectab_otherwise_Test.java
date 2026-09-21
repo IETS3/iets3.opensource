@@ -5,7 +5,6 @@ package test.in.expr.os.dectabs;
 import java.math.BigInteger;
 import org.iets3.core.expr.simpleTypes.runtime.AH;
 import java.util.Objects;
-import java.util.function.Supplier;
 import org.junit.Test;
 import org.junit.Assert;
 import org.iets3.core.expr.genjava.tests.rt.rt.EqualsTestOp;
@@ -19,111 +18,98 @@ public class Generated_utils_dectab_otherwise_Test {
    * otherwise in row/column, with/without predef
    */
     public static Number otherwiseWithoutPredef() {
-    Number res = new BigInteger("111");
 
-    return res;
+    return new BigInteger("111");
   }
   public static Number otherwiseWithPredefXY(Number x, String y) {
-    Number res = (AH.isEqual(x, new BigInteger("0")) ? (Objects.equals(y, "0") ? (Number) new BigInteger("100") : (Number) new BigInteger("110")) : (Objects.equals(y, "0") ? (Number) new BigInteger("101") : (Number) new BigInteger("111")));
 
-    return res;
+    return (AH.isEqual(x, new BigInteger("0")) ? (Objects.equals(y, "0") ? (Number) new BigInteger("100") : (Number) new BigInteger("110")) : (Objects.equals(y, "0") ? (Number) new BigInteger("101") : (Number) new BigInteger("111")));
   }
   public static Number otherwiseWithPredefX(Number x) {
-    Number res = (AH.isEqual(x, new BigInteger("0")) ? ((Number) new BigInteger("110")) : ((Number) new BigInteger("111")));
 
-    return res;
+    return (AH.isEqual(x, new BigInteger("0")) ? ((Number) new BigInteger("110")) : ((Number) new BigInteger("111")));
   }
   public static Number otherwiseWithPredefY(String y) {
-    Number res = (Objects.equals(y, "0") ? (Number) new BigInteger("101") : (Number) new BigInteger("111"));
 
-    return res;
+    return (Objects.equals(y, "0") ? (Number) new BigInteger("101") : (Number) new BigInteger("111"));
   }
   public static Number defaultNoOtherwise(Number y, Number x) {
-    Number res = ((Supplier<Number>) () -> {
-      if (AH.isEqual(x, new BigInteger("1"))) {
-        if (AH.isEqual(y, new BigInteger("1"))) {
-          return (Number) new BigInteger("1");
-        } else if (AH.isEqual(y, new BigInteger("2"))) {
-          return (Number) new BigInteger("3");
-        } else {
-          return (Number) new BigInteger("0");
-        }
-      } else if (AH.isEqual(x, new BigInteger("2"))) {
-        if (AH.isEqual(y, new BigInteger("1"))) {
-          return (Number) new BigInteger("2");
-        } else if (AH.isEqual(y, new BigInteger("2"))) {
-          return (Number) new BigInteger("4");
-        } else {
-          return (Number) new BigInteger("0");
-        }
-      } else {
-        return (Number) new BigInteger("0");
-      }
-    }).get();
 
-    return res;
+    if (AH.isEqual(x, new BigInteger("1"))) {
+      if (AH.isEqual(y, new BigInteger("1"))) {
+        return new BigInteger("1");
+      } else if (AH.isEqual(y, new BigInteger("2"))) {
+        return new BigInteger("3");
+      } else {
+        return new BigInteger("0");
+      }
+    } else if (AH.isEqual(x, new BigInteger("2"))) {
+      if (AH.isEqual(y, new BigInteger("1"))) {
+        return new BigInteger("2");
+      } else if (AH.isEqual(y, new BigInteger("2"))) {
+        return new BigInteger("4");
+      } else {
+        return new BigInteger("0");
+      }
+    } else {
+      return new BigInteger("0");
+    }
   }
   public static Number defaultWithOtherwise(Number y, Number x) {
-    Number res = ((Supplier<Number>) () -> {
-      if (AH.isEqual(x, new BigInteger("1"))) {
-        if (AH.isEqual(y, new BigInteger("1"))) {
-          return (Number) new BigInteger("1");
-        } else if (AH.isEqual(y, new BigInteger("2"))) {
-          return (Number) new BigInteger("4");
-        } else {
-          return (Number) new BigInteger("7");
-        }
-      } else if (AH.isEqual(x, new BigInteger("2"))) {
-        if (AH.isEqual(y, new BigInteger("1"))) {
-          return (Number) new BigInteger("2");
-        } else if (AH.isEqual(y, new BigInteger("2"))) {
-          return (Number) new BigInteger("5");
-        } else {
-          return (Number) new BigInteger("8");
-        }
-      } else {
-        if (AH.isEqual(y, new BigInteger("1"))) {
-          return (Number) new BigInteger("3");
-        } else if (AH.isEqual(y, new BigInteger("2"))) {
-          return (Number) new BigInteger("6");
-        } else {
-          return (Number) new BigInteger("9");
-        }
-      }
-    }).get();
 
-    return res;
+    if (AH.isEqual(x, new BigInteger("1"))) {
+      if (AH.isEqual(y, new BigInteger("1"))) {
+        return new BigInteger("1");
+      } else if (AH.isEqual(y, new BigInteger("2"))) {
+        return new BigInteger("4");
+      } else {
+        return new BigInteger("7");
+      }
+    } else if (AH.isEqual(x, new BigInteger("2"))) {
+      if (AH.isEqual(y, new BigInteger("1"))) {
+        return new BigInteger("2");
+      } else if (AH.isEqual(y, new BigInteger("2"))) {
+        return new BigInteger("5");
+      } else {
+        return new BigInteger("8");
+      }
+    } else {
+      if (AH.isEqual(y, new BigInteger("1"))) {
+        return new BigInteger("3");
+      } else if (AH.isEqual(y, new BigInteger("2"))) {
+        return new BigInteger("6");
+      } else {
+        return new BigInteger("9");
+      }
+    }
   }
   public static Number defaultWithOtherwiseWithPredefXY(Number y, Number x) {
-    Number res = ((Supplier<Number>) () -> {
-      if (AH.isEqual(x, new BigInteger("1"))) {
-        if (AH.isEqual(y, new BigInteger("1"))) {
-          return (Number) new BigInteger("1");
-        } else if (AH.isEqual(y, new BigInteger("2"))) {
-          return (Number) new BigInteger("4");
-        } else {
-          return (Number) new BigInteger("7");
-        }
-      } else if (AH.isEqual(x, new BigInteger("2"))) {
-        if (AH.isEqual(y, new BigInteger("1"))) {
-          return (Number) new BigInteger("2");
-        } else if (AH.isEqual(y, new BigInteger("2"))) {
-          return (Number) new BigInteger("5");
-        } else {
-          return (Number) new BigInteger("8");
-        }
-      } else {
-        if (AH.isEqual(y, new BigInteger("1"))) {
-          return (Number) new BigInteger("3");
-        } else if (AH.isEqual(y, new BigInteger("2"))) {
-          return (Number) new BigInteger("6");
-        } else {
-          return (Number) new BigInteger("9");
-        }
-      }
-    }).get();
 
-    return res;
+    if (AH.isEqual(x, new BigInteger("1"))) {
+      if (AH.isEqual(y, new BigInteger("1"))) {
+        return new BigInteger("1");
+      } else if (AH.isEqual(y, new BigInteger("2"))) {
+        return new BigInteger("4");
+      } else {
+        return new BigInteger("7");
+      }
+    } else if (AH.isEqual(x, new BigInteger("2"))) {
+      if (AH.isEqual(y, new BigInteger("1"))) {
+        return new BigInteger("2");
+      } else if (AH.isEqual(y, new BigInteger("2"))) {
+        return new BigInteger("5");
+      } else {
+        return new BigInteger("8");
+      }
+    } else {
+      if (AH.isEqual(y, new BigInteger("1"))) {
+        return new BigInteger("3");
+      } else if (AH.isEqual(y, new BigInteger("2"))) {
+        return new BigInteger("6");
+      } else {
+        return new BigInteger("9");
+      }
+    }
   }
   @Test
   public void otherwise_item0_7792260915490914525() throws Throwable {

@@ -27,10 +27,7 @@ import java.util.stream.Collectors;
 public class Generated_lambda_Test {
 
   public static final Function<ParameterSetWrapper, Number> l1_ = (ParameterSetWrapper param) -> new BigInteger("12");
-  public static final Function<ParameterSetWrapper, Number> l2_ = (ParameterSetWrapper param) -> {
-    Number i = (Number) param.parameters.get(0);
-    return i;
-  };
+  public static final Function<ParameterSetWrapper, Number> l2_ = (ParameterSetWrapper param) -> (Number) param.parameters.get(0);
   public static final Function<ParameterSetWrapper, Number> l3_ = (ParameterSetWrapper param) -> {
     Number i = (Number) param.parameters.get(0);
     Number j = (Number) param.parameters.get(1);
@@ -244,7 +241,8 @@ public class Generated_lambda_Test {
   }
   public static PVector<PVector<Number>> shortlambdaWithIt() {
     PVector<PVector<Number>> la = TreePVector.<PVector<Number>>empty().plus(TreePVector.<Number>empty().plus(new BigInteger("1")).plus(new BigInteger("2")).plus(new BigInteger("3"))).plus(TreePVector.<Number>empty().plus(new BigInteger("1")).plus(new BigInteger("2")).plus(new BigInteger("3")));
-    PVector<PVector<Number>> res = TreePVector.<PVector<Number>>from(la.stream().map((PVector<Number> param) -> {
+
+    return TreePVector.<PVector<Number>>from(la.stream().map((PVector<Number> param) -> {
       return new Function<ParameterSetWrapper, PVector<Number>>() {
         public PVector<Number> apply(ParameterSetWrapper param) {
           PVector<Number> it = (PVector<Number>) param.parameters.get(0);
@@ -261,12 +259,11 @@ public class Generated_lambda_Test {
         }
       }.apply(new ParameterSetWrapper(param));
     }).collect(Collectors.<PVector<Number>>toList()));
-
-    return res;
   }
   public static PVector<PVector<Number>> lambdaWithoutIt() {
     PVector<PVector<Number>> la = TreePVector.<PVector<Number>>empty().plus(TreePVector.<Number>empty().plus(new BigInteger("1")).plus(new BigInteger("2")).plus(new BigInteger("3"))).plus(TreePVector.<Number>empty().plus(new BigInteger("1")).plus(new BigInteger("2")).plus(new BigInteger("3")));
-    PVector<PVector<Number>> res = TreePVector.<PVector<Number>>from(la.stream().map((PVector<Number> param) -> {
+
+    return TreePVector.<PVector<Number>>from(la.stream().map((PVector<Number> param) -> {
       return new Function<ParameterSetWrapper, PVector<Number>>() {
         public PVector<Number> apply(ParameterSetWrapper param) {
           PVector<Number> li = (PVector<Number>) param.parameters.get(0);
@@ -283,8 +280,6 @@ public class Generated_lambda_Test {
         }
       }.apply(new ParameterSetWrapper(param));
     }).collect(Collectors.<PVector<Number>>toList()));
-
-    return res;
   }
   @Test
   public void checkNestedShortLambda_item0_6746603296756019177() throws Throwable {

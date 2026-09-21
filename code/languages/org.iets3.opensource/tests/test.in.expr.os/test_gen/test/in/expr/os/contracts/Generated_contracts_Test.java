@@ -68,6 +68,7 @@ public class Generated_contracts_Test {
     return res;
   }
   public static Number assignNumberType(Number i) {
+
     Number result = i;
     Number it = result;
     if (!(AH.isGreater(it, new BigInteger("10")))) {
@@ -75,9 +76,7 @@ public class Generated_contracts_Test {
       GlobalContext.MESSAGE_LOG.get().collect(message);
       throw new ContractViolatedException(message);
     }
-    Number res = result;
-
-    return res;
+    return result;
   }
 
   public static Number assignNumberTypeTwenty(Number i) {
@@ -504,6 +503,7 @@ public class Generated_contracts_Test {
     return res;
   }
   public static Number times2MultipleContractItems(Number i, Number dummy) {
+
     Number newValue = AH.mul(new BigInteger("2"), i);
     Number it = newValue;
     if (!(AH.isGreater(i, new BigInteger("1")))) {
@@ -521,9 +521,7 @@ public class Generated_contracts_Test {
       GlobalContext.MESSAGE_LOG.get().collect(message);
       throw new ContractViolatedException(message);
     }
-    Number res = newValue;
-
-    return res;
+    return newValue;
   }
   @Test
   public void testValExprContracts_item0_5096151429186861955() throws Throwable {
@@ -862,8 +860,7 @@ public class Generated_contracts_Test {
     female();
 
     public int compare(Gender a, Gender b) {
-      int result = 0;
-      return result;
+      return 0;
     }
 
     public int indexOf() {
@@ -1050,6 +1047,7 @@ public class Generated_contracts_Test {
       GlobalContext.MESSAGE_LOG.get().collect(message);
       throw new ContractViolatedException(message);
     }
+
     PVector<InlineRecordType> result = TreePVector.empty();
     for (Person it : CollectionSequence.fromCollection(brothers)) {
       InlineRecordType irt = new InlineRecordType();
@@ -1057,9 +1055,7 @@ public class Generated_contracts_Test {
       irt.members.put("age", new InlineRecordTypeMember("age", it.getage()));
       result = result.plus(irt);
     }
-    PCollection<InlineRecordType> res = result;
-
-    return res;
+    return result;
   }
   public static PCollection<InlineRecordType> brotherAges1b(final Person p) {
     PCollection<Person> brothers = TreePVector.<Person>from(p.getsiblings().stream().filter((Person o) -> ((Function<ParameterSetWrapper, Boolean>) (ParameterSetWrapper param) -> {
@@ -1091,6 +1087,7 @@ public class Generated_contracts_Test {
       GlobalContext.MESSAGE_LOG.get().collect(message);
       throw new ContractViolatedException(message);
     }
+
     PVector<InlineRecordType> result = TreePVector.empty();
     for (Person it : CollectionSequence.fromCollection(brothers)) {
       InlineRecordType irt = new InlineRecordType();
@@ -1098,9 +1095,7 @@ public class Generated_contracts_Test {
       irt.members.put("age", new InlineRecordTypeMember("age", it.getage()));
       result = result.plus(irt);
     }
-    PCollection<InlineRecordType> res = result;
-
-    return res;
+    return result;
   }
   public static PCollection<InlineRecordType> brotherAges1c(final Person p) {
     PCollection<Person> brothers = TreePVector.<Person>from(p.getsiblings().stream().filter((Person o) -> ((Function<ParameterSetWrapper, Boolean>) (ParameterSetWrapper param) -> {
@@ -1132,6 +1127,7 @@ public class Generated_contracts_Test {
       GlobalContext.MESSAGE_LOG.get().collect(message);
       throw new ContractViolatedException(message);
     }
+
     PVector<InlineRecordType> result = TreePVector.empty();
     for (Person it : CollectionSequence.fromCollection(brothers)) {
       InlineRecordType irt = new InlineRecordType();
@@ -1139,9 +1135,7 @@ public class Generated_contracts_Test {
       irt.members.put("age", new InlineRecordTypeMember("age", it.getage()));
       result = result.plus(irt);
     }
-    PCollection<InlineRecordType> res = result;
-
-    return res;
+    return result;
   }
   public static PCollection<InlineRecordType> brotherAges2(final Person p) {
     PCollection<Person> brothers = TreePVector.<Person>from(p.getsiblings().stream().filter((Person o) -> ((Function<ParameterSetWrapper, Boolean>) (ParameterSetWrapper param) -> {
@@ -1180,9 +1174,8 @@ public class Generated_contracts_Test {
       irt.members.put("age", new InlineRecordTypeMember("age", it.getage()));
       result = result.plus(irt);
     }
-    PCollection<InlineRecordType> res = result;
 
-    return res;
+    return result;
   }
   public static PCollection<InlineRecordType> brotherAges3(final Person p) {
     PCollection<Person> brothers = TreePVector.<Person>from(p.getsiblings().stream().filter((Person o) -> ((Function<ParameterSetWrapper, Boolean>) (ParameterSetWrapper param) -> {
@@ -1221,9 +1214,8 @@ public class Generated_contracts_Test {
       irt.members.put("age", new InlineRecordTypeMember("age", it.getage()));
       result = result.plus(irt);
     }
-    PCollection<InlineRecordType> res = result;
 
-    return res;
+    return result;
   }
   public static PCollection<InlineRecordType> brotherAges4(final Person p) {
     PCollection<Person> brothers = TreePVector.<Person>from(p.getsiblings().stream().filter((Person o) -> ((Function<ParameterSetWrapper, Boolean>) (ParameterSetWrapper param) -> {
@@ -1603,128 +1595,110 @@ public class Generated_contracts_Test {
   @Test
   public void TestAges_valexpr_item0_8267117108468197962() throws Throwable {
     Assert.assertTrue("Expected: " + new BigInteger("2") + ", but was: " + ((Supplier<BigInteger>) () -> {
-      PCollection<InlineRecordType> v = ((Supplier<PVector<InlineRecordType>>) () -> {
-        PVector<InlineRecordType> result = TreePVector.empty();
-        for (Person it : CollectionSequence.fromCollection(Generated_contracts_Test.p1_.getsiblings())) {
-          InlineRecordType irt = new InlineRecordType();
-          irt.members.put("name", new InlineRecordTypeMember("name", it.getname()));
-          irt.members.put("age", new InlineRecordTypeMember("age", it.getage()));
-          result = result.plus(irt);
-        }
-        return result;
-      }).get();
+      PVector<InlineRecordType> result = TreePVector.empty();
+      for (Person it : CollectionSequence.fromCollection(Generated_contracts_Test.p1_.getsiblings())) {
+        InlineRecordType irt = new InlineRecordType();
+        irt.members.put("name", new InlineRecordTypeMember("name", it.getname()));
+        irt.members.put("age", new InlineRecordTypeMember("age", it.getage()));
+        result = result.plus(irt);
+      }
+      PCollection<InlineRecordType> v = result;
       return BigInteger.valueOf(v.size());
     }).get(), EqualsTestOp.matches(new BigInteger("2"), ((Supplier<BigInteger>) () -> {
-      PCollection<InlineRecordType> v = ((Supplier<PVector<InlineRecordType>>) () -> {
-        PVector<InlineRecordType> result = TreePVector.empty();
-        for (Person it : CollectionSequence.fromCollection(Generated_contracts_Test.p1_.getsiblings())) {
-          InlineRecordType irt = new InlineRecordType();
-          irt.members.put("name", new InlineRecordTypeMember("name", it.getname()));
-          irt.members.put("age", new InlineRecordTypeMember("age", it.getage()));
-          result = result.plus(irt);
-        }
-        return result;
-      }).get();
+      PVector<InlineRecordType> result = TreePVector.empty();
+      for (Person it : CollectionSequence.fromCollection(Generated_contracts_Test.p1_.getsiblings())) {
+        InlineRecordType irt = new InlineRecordType();
+        irt.members.put("name", new InlineRecordTypeMember("name", it.getname()));
+        irt.members.put("age", new InlineRecordTypeMember("age", it.getage()));
+        result = result.plus(irt);
+      }
+      PCollection<InlineRecordType> v = result;
       return BigInteger.valueOf(v.size());
     }).get()));
   }
   @Test
   public void TestAges_valexpr_item1_8267117108469127532() throws Throwable {
     Assert.assertEquals("Expected: " + false + ", but was: " + ((Supplier<Boolean>) () -> {
-      PCollection<InlineRecordType> v = ((Supplier<PVector<InlineRecordType>>) () -> {
-        PVector<InlineRecordType> result = TreePVector.empty();
-        for (Person it : CollectionSequence.fromCollection(Generated_contracts_Test.p1_.getsiblings())) {
-          InlineRecordType irt = new InlineRecordType();
-          irt.members.put("name", new InlineRecordTypeMember("name", it.getname()));
-          irt.members.put("age", new InlineRecordTypeMember("age", it.getage()));
-          result = result.plus(irt);
-        }
-        return result;
-      }).get();
+      PVector<InlineRecordType> result = TreePVector.empty();
+      for (Person it : CollectionSequence.fromCollection(Generated_contracts_Test.p1_.getsiblings())) {
+        InlineRecordType irt = new InlineRecordType();
+        irt.members.put("name", new InlineRecordTypeMember("name", it.getname()));
+        irt.members.put("age", new InlineRecordTypeMember("age", it.getage()));
+        result = result.plus(irt);
+      }
+      PCollection<InlineRecordType> v = result;
       return TreePVector.from(v).isEmpty();
     }).get(), (Object) false, ((Supplier<Boolean>) () -> {
-      PCollection<InlineRecordType> v = ((Supplier<PVector<InlineRecordType>>) () -> {
-        PVector<InlineRecordType> result = TreePVector.empty();
-        for (Person it : CollectionSequence.fromCollection(Generated_contracts_Test.p1_.getsiblings())) {
-          InlineRecordType irt = new InlineRecordType();
-          irt.members.put("name", new InlineRecordTypeMember("name", it.getname()));
-          irt.members.put("age", new InlineRecordTypeMember("age", it.getage()));
-          result = result.plus(irt);
-        }
-        return result;
-      }).get();
+      PVector<InlineRecordType> result = TreePVector.empty();
+      for (Person it : CollectionSequence.fromCollection(Generated_contracts_Test.p1_.getsiblings())) {
+        InlineRecordType irt = new InlineRecordType();
+        irt.members.put("name", new InlineRecordTypeMember("name", it.getname()));
+        irt.members.put("age", new InlineRecordTypeMember("age", it.getage()));
+        result = result.plus(irt);
+      }
+      PCollection<InlineRecordType> v = result;
       return TreePVector.from(v).isEmpty();
     }).get());
   }
   @Test
   public void TestAges_valexpr_item2_8267117108469129994() throws Throwable {
     Assert.assertEquals("Expected: " + true + ", but was: " + ((Supplier<Boolean>) () -> {
-      PCollection<InlineRecordType> v = ((Supplier<PVector<InlineRecordType>>) () -> {
-        PVector<InlineRecordType> result = TreePVector.empty();
-        for (Person it : CollectionSequence.fromCollection(Generated_contracts_Test.p1_.getsiblings())) {
-          InlineRecordType irt = new InlineRecordType();
-          irt.members.put("name", new InlineRecordTypeMember("name", it.getname()));
-          irt.members.put("age", new InlineRecordTypeMember("age", it.getage()));
-          result = result.plus(irt);
-        }
-        return result;
-      }).get();
+      PVector<InlineRecordType> result = TreePVector.empty();
+      for (Person it : CollectionSequence.fromCollection(Generated_contracts_Test.p1_.getsiblings())) {
+        InlineRecordType irt = new InlineRecordType();
+        irt.members.put("name", new InlineRecordTypeMember("name", it.getname()));
+        irt.members.put("age", new InlineRecordTypeMember("age", it.getage()));
+        result = result.plus(irt);
+      }
+      PCollection<InlineRecordType> v = result;
       return !(TreePVector.from(v).isEmpty());
     }).get(), (Object) true, ((Supplier<Boolean>) () -> {
-      PCollection<InlineRecordType> v = ((Supplier<PVector<InlineRecordType>>) () -> {
-        PVector<InlineRecordType> result = TreePVector.empty();
-        for (Person it : CollectionSequence.fromCollection(Generated_contracts_Test.p1_.getsiblings())) {
-          InlineRecordType irt = new InlineRecordType();
-          irt.members.put("name", new InlineRecordTypeMember("name", it.getname()));
-          irt.members.put("age", new InlineRecordTypeMember("age", it.getage()));
-          result = result.plus(irt);
-        }
-        return result;
-      }).get();
+      PVector<InlineRecordType> result = TreePVector.empty();
+      for (Person it : CollectionSequence.fromCollection(Generated_contracts_Test.p1_.getsiblings())) {
+        InlineRecordType irt = new InlineRecordType();
+        irt.members.put("name", new InlineRecordTypeMember("name", it.getname()));
+        irt.members.put("age", new InlineRecordTypeMember("age", it.getage()));
+        result = result.plus(irt);
+      }
+      PCollection<InlineRecordType> v = result;
       return !(TreePVector.from(v).isEmpty());
     }).get());
   }
   @Test
   public void TestAges_valexpr_item3_8267117108469132500() throws Throwable {
     Assert.assertTrue("Expected: " + new BigInteger("1") + ", but was: " + ((Supplier<BigInteger>) () -> {
-      PCollection<InlineRecordType> v = ((Supplier<PVector<InlineRecordType>>) () -> {
-        PVector<InlineRecordType> result = TreePVector.empty();
-        for (Person it : CollectionSequence.fromCollection(Generated_contracts_Test.p1_.getsiblings())) {
-          InlineRecordType irt = new InlineRecordType();
-          irt.members.put("name", new InlineRecordTypeMember("name", it.getname()));
-          irt.members.put("age", new InlineRecordTypeMember("age", it.getage()));
-          result = result.plus(irt);
-        }
-        return result;
-      }).get();
+      PVector<InlineRecordType> result = TreePVector.empty();
+      for (Person it : CollectionSequence.fromCollection(Generated_contracts_Test.p1_.getsiblings())) {
+        InlineRecordType irt = new InlineRecordType();
+        irt.members.put("name", new InlineRecordTypeMember("name", it.getname()));
+        irt.members.put("age", new InlineRecordTypeMember("age", it.getage()));
+        result = result.plus(irt);
+      }
+      PCollection<InlineRecordType> v = result;
       return BigInteger.valueOf(HashTreePSet.from(v).size());
     }).get(), EqualsTestOp.matches(new BigInteger("1"), ((Supplier<BigInteger>) () -> {
-      PCollection<InlineRecordType> v = ((Supplier<PVector<InlineRecordType>>) () -> {
-        PVector<InlineRecordType> result = TreePVector.empty();
-        for (Person it : CollectionSequence.fromCollection(Generated_contracts_Test.p1_.getsiblings())) {
-          InlineRecordType irt = new InlineRecordType();
-          irt.members.put("name", new InlineRecordTypeMember("name", it.getname()));
-          irt.members.put("age", new InlineRecordTypeMember("age", it.getage()));
-          result = result.plus(irt);
-        }
-        return result;
-      }).get();
+      PVector<InlineRecordType> result = TreePVector.empty();
+      for (Person it : CollectionSequence.fromCollection(Generated_contracts_Test.p1_.getsiblings())) {
+        InlineRecordType irt = new InlineRecordType();
+        irt.members.put("name", new InlineRecordTypeMember("name", it.getname()));
+        irt.members.put("age", new InlineRecordTypeMember("age", it.getage()));
+        result = result.plus(irt);
+      }
+      PCollection<InlineRecordType> v = result;
       return BigInteger.valueOf(HashTreePSet.from(v).size());
     }).get()));
   }
   @Test
   public void TestAges_valexpr_item4_8267117108471053523() throws Throwable {
     Assert.assertTrue("Expected: " + new BigInteger("1") + ", but was: " + ((Supplier<BigInteger>) () -> {
-      PCollection<InlineRecordType> v = ((Supplier<PVector<InlineRecordType>>) () -> {
-        PVector<InlineRecordType> result = TreePVector.empty();
-        for (Person it : CollectionSequence.fromCollection(Generated_contracts_Test.p1_.getsiblings())) {
-          InlineRecordType irt = new InlineRecordType();
-          irt.members.put("name", new InlineRecordTypeMember("name", it.getname()));
-          irt.members.put("age", new InlineRecordTypeMember("age", it.getage()));
-          result = result.plus(irt);
-        }
-        return result;
-      }).get();
+      PVector<InlineRecordType> result = TreePVector.empty();
+      for (Person it : CollectionSequence.fromCollection(Generated_contracts_Test.p1_.getsiblings())) {
+        InlineRecordType irt = new InlineRecordType();
+        irt.members.put("name", new InlineRecordTypeMember("name", it.getname()));
+        irt.members.put("age", new InlineRecordTypeMember("age", it.getage()));
+        result = result.plus(irt);
+      }
+      PCollection<InlineRecordType> v = result;
       return BigInteger.valueOf(((Supplier<PVector<InlineRecordType>>) () -> {
         PVector<InlineRecordType> origList = TreePVector.from(v);
         int noOfElements = new BigInteger("1").intValue();
@@ -1734,16 +1708,14 @@ public class Generated_contracts_Test {
         return origList.subList(0, noOfElements);
       }).get().size());
     }).get(), EqualsTestOp.matches(new BigInteger("1"), ((Supplier<BigInteger>) () -> {
-      PCollection<InlineRecordType> v = ((Supplier<PVector<InlineRecordType>>) () -> {
-        PVector<InlineRecordType> result = TreePVector.empty();
-        for (Person it : CollectionSequence.fromCollection(Generated_contracts_Test.p1_.getsiblings())) {
-          InlineRecordType irt = new InlineRecordType();
-          irt.members.put("name", new InlineRecordTypeMember("name", it.getname()));
-          irt.members.put("age", new InlineRecordTypeMember("age", it.getage()));
-          result = result.plus(irt);
-        }
-        return result;
-      }).get();
+      PVector<InlineRecordType> result = TreePVector.empty();
+      for (Person it : CollectionSequence.fromCollection(Generated_contracts_Test.p1_.getsiblings())) {
+        InlineRecordType irt = new InlineRecordType();
+        irt.members.put("name", new InlineRecordTypeMember("name", it.getname()));
+        irt.members.put("age", new InlineRecordTypeMember("age", it.getage()));
+        result = result.plus(irt);
+      }
+      PCollection<InlineRecordType> v = result;
       return BigInteger.valueOf(((Supplier<PVector<InlineRecordType>>) () -> {
         PVector<InlineRecordType> origList = TreePVector.from(v);
         int noOfElements = new BigInteger("1").intValue();
@@ -1757,16 +1729,14 @@ public class Generated_contracts_Test {
   @Test
   public void TestAges_valexpr_item5_8267117108471056149() throws Throwable {
     Assert.assertTrue("Expected: " + new BigInteger("1") + ", but was: " + ((Supplier<BigInteger>) () -> {
-      PCollection<InlineRecordType> v = ((Supplier<PVector<InlineRecordType>>) () -> {
-        PVector<InlineRecordType> result = TreePVector.empty();
-        for (Person it : CollectionSequence.fromCollection(Generated_contracts_Test.p1_.getsiblings())) {
-          InlineRecordType irt = new InlineRecordType();
-          irt.members.put("name", new InlineRecordTypeMember("name", it.getname()));
-          irt.members.put("age", new InlineRecordTypeMember("age", it.getage()));
-          result = result.plus(irt);
-        }
-        return result;
-      }).get();
+      PVector<InlineRecordType> result = TreePVector.empty();
+      for (Person it : CollectionSequence.fromCollection(Generated_contracts_Test.p1_.getsiblings())) {
+        InlineRecordType irt = new InlineRecordType();
+        irt.members.put("name", new InlineRecordTypeMember("name", it.getname()));
+        irt.members.put("age", new InlineRecordTypeMember("age", it.getage()));
+        result = result.plus(irt);
+      }
+      PCollection<InlineRecordType> v = result;
       return BigInteger.valueOf(((Supplier<PVector<InlineRecordType>>) () -> {
         PVector<InlineRecordType> origList = TreePVector.from(v);
         int noOfElements = new BigInteger("1").intValue();
@@ -1776,16 +1746,14 @@ public class Generated_contracts_Test {
         return origList.subList(origList.size() - noOfElements, origList.size());
       }).get().size());
     }).get(), EqualsTestOp.matches(new BigInteger("1"), ((Supplier<BigInteger>) () -> {
-      PCollection<InlineRecordType> v = ((Supplier<PVector<InlineRecordType>>) () -> {
-        PVector<InlineRecordType> result = TreePVector.empty();
-        for (Person it : CollectionSequence.fromCollection(Generated_contracts_Test.p1_.getsiblings())) {
-          InlineRecordType irt = new InlineRecordType();
-          irt.members.put("name", new InlineRecordTypeMember("name", it.getname()));
-          irt.members.put("age", new InlineRecordTypeMember("age", it.getage()));
-          result = result.plus(irt);
-        }
-        return result;
-      }).get();
+      PVector<InlineRecordType> result = TreePVector.empty();
+      for (Person it : CollectionSequence.fromCollection(Generated_contracts_Test.p1_.getsiblings())) {
+        InlineRecordType irt = new InlineRecordType();
+        irt.members.put("name", new InlineRecordTypeMember("name", it.getname()));
+        irt.members.put("age", new InlineRecordTypeMember("age", it.getage()));
+        result = result.plus(irt);
+      }
+      PCollection<InlineRecordType> v = result;
       return BigInteger.valueOf(((Supplier<PVector<InlineRecordType>>) () -> {
         PVector<InlineRecordType> origList = TreePVector.from(v);
         int noOfElements = new BigInteger("1").intValue();
@@ -1799,31 +1767,27 @@ public class Generated_contracts_Test {
   @Test
   public void TestAges_valexpr_item6_8267117108471058819() throws Throwable {
     Assert.assertTrue("Expected: " + new BigInteger("1") + ", but was: " + ((Supplier<BigInteger>) () -> {
-      PCollection<InlineRecordType> v = ((Supplier<PVector<InlineRecordType>>) () -> {
-        PVector<InlineRecordType> result = TreePVector.empty();
-        for (Person it : CollectionSequence.fromCollection(Generated_contracts_Test.p1_.getsiblings())) {
-          InlineRecordType irt = new InlineRecordType();
-          irt.members.put("name", new InlineRecordTypeMember("name", it.getname()));
-          irt.members.put("age", new InlineRecordTypeMember("age", it.getage()));
-          result = result.plus(irt);
-        }
-        return result;
-      }).get();
+      PVector<InlineRecordType> result = TreePVector.empty();
+      for (Person it : CollectionSequence.fromCollection(Generated_contracts_Test.p1_.getsiblings())) {
+        InlineRecordType irt = new InlineRecordType();
+        irt.members.put("name", new InlineRecordTypeMember("name", it.getname()));
+        irt.members.put("age", new InlineRecordTypeMember("age", it.getage()));
+        result = result.plus(irt);
+      }
+      PCollection<InlineRecordType> v = result;
       return BigInteger.valueOf(TreePVector.<Boolean>from(TreePVector.<Boolean>singleton(TreePVector.from(v).stream().allMatch((InlineRecordType o) -> ((Function<ParameterSetWrapper, Boolean>) (ParameterSetWrapper param) -> {
         InlineRecordType it = (InlineRecordType) param.parameters.get(0);
         return Objects.equals((String) it.members.get("name").value, "p2");
       }).apply(new ParameterSetWrapper(o)))).stream().filter((Boolean p0) -> p0 != null).collect(Collectors.toList())).size());
     }).get(), EqualsTestOp.matches(new BigInteger("1"), ((Supplier<BigInteger>) () -> {
-      PCollection<InlineRecordType> v = ((Supplier<PVector<InlineRecordType>>) () -> {
-        PVector<InlineRecordType> result = TreePVector.empty();
-        for (Person it : CollectionSequence.fromCollection(Generated_contracts_Test.p1_.getsiblings())) {
-          InlineRecordType irt = new InlineRecordType();
-          irt.members.put("name", new InlineRecordTypeMember("name", it.getname()));
-          irt.members.put("age", new InlineRecordTypeMember("age", it.getage()));
-          result = result.plus(irt);
-        }
-        return result;
-      }).get();
+      PVector<InlineRecordType> result = TreePVector.empty();
+      for (Person it : CollectionSequence.fromCollection(Generated_contracts_Test.p1_.getsiblings())) {
+        InlineRecordType irt = new InlineRecordType();
+        irt.members.put("name", new InlineRecordTypeMember("name", it.getname()));
+        irt.members.put("age", new InlineRecordTypeMember("age", it.getage()));
+        result = result.plus(irt);
+      }
+      PCollection<InlineRecordType> v = result;
       return BigInteger.valueOf(TreePVector.<Boolean>from(TreePVector.<Boolean>singleton(TreePVector.from(v).stream().allMatch((InlineRecordType o) -> ((Function<ParameterSetWrapper, Boolean>) (ParameterSetWrapper param) -> {
         InlineRecordType it = (InlineRecordType) param.parameters.get(0);
         return Objects.equals((String) it.members.get("name").value, "p2");
@@ -1833,31 +1797,27 @@ public class Generated_contracts_Test {
   @Test
   public void TestAges_valexpr_item7_8267117108472749908() throws Throwable {
     Assert.assertTrue("Expected: " + new BigInteger("1") + ", but was: " + ((Supplier<BigInteger>) () -> {
-      PCollection<InlineRecordType> v = ((Supplier<PVector<InlineRecordType>>) () -> {
-        PVector<InlineRecordType> result = TreePVector.empty();
-        for (Person it : CollectionSequence.fromCollection(Generated_contracts_Test.p1_.getsiblings())) {
-          InlineRecordType irt = new InlineRecordType();
-          irt.members.put("name", new InlineRecordTypeMember("name", it.getname()));
-          irt.members.put("age", new InlineRecordTypeMember("age", it.getage()));
-          result = result.plus(irt);
-        }
-        return result;
-      }).get();
+      PVector<InlineRecordType> result = TreePVector.empty();
+      for (Person it : CollectionSequence.fromCollection(Generated_contracts_Test.p1_.getsiblings())) {
+        InlineRecordType irt = new InlineRecordType();
+        irt.members.put("name", new InlineRecordTypeMember("name", it.getname()));
+        irt.members.put("age", new InlineRecordTypeMember("age", it.getage()));
+        result = result.plus(irt);
+      }
+      PCollection<InlineRecordType> v = result;
       return BigInteger.valueOf(TreePVector.<Boolean>from(TreePVector.<Boolean>singleton(TreePVector.from(v).stream().allMatch((InlineRecordType o) -> ((Function<ParameterSetWrapper, Boolean>) (ParameterSetWrapper param) -> {
         InlineRecordType it = (InlineRecordType) param.parameters.get(0);
         return Objects.equals((String) it.members.get("name").value, "p2");
       }).apply(new ParameterSetWrapper(o)))).stream().filter((Boolean p0) -> p0 != null).collect(Collectors.toList())).size());
     }).get(), EqualsTestOp.matches(new BigInteger("1"), ((Supplier<BigInteger>) () -> {
-      PCollection<InlineRecordType> v = ((Supplier<PVector<InlineRecordType>>) () -> {
-        PVector<InlineRecordType> result = TreePVector.empty();
-        for (Person it : CollectionSequence.fromCollection(Generated_contracts_Test.p1_.getsiblings())) {
-          InlineRecordType irt = new InlineRecordType();
-          irt.members.put("name", new InlineRecordTypeMember("name", it.getname()));
-          irt.members.put("age", new InlineRecordTypeMember("age", it.getage()));
-          result = result.plus(irt);
-        }
-        return result;
-      }).get();
+      PVector<InlineRecordType> result = TreePVector.empty();
+      for (Person it : CollectionSequence.fromCollection(Generated_contracts_Test.p1_.getsiblings())) {
+        InlineRecordType irt = new InlineRecordType();
+        irt.members.put("name", new InlineRecordTypeMember("name", it.getname()));
+        irt.members.put("age", new InlineRecordTypeMember("age", it.getage()));
+        result = result.plus(irt);
+      }
+      PCollection<InlineRecordType> v = result;
       return BigInteger.valueOf(TreePVector.<Boolean>from(TreePVector.<Boolean>singleton(TreePVector.from(v).stream().allMatch((InlineRecordType o) -> ((Function<ParameterSetWrapper, Boolean>) (ParameterSetWrapper param) -> {
         InlineRecordType it = (InlineRecordType) param.parameters.get(0);
         return Objects.equals((String) it.members.get("name").value, "p2");
@@ -1867,31 +1827,27 @@ public class Generated_contracts_Test {
   @Test
   public void TestAges_valexpr_item8_8267117108472752688() throws Throwable {
     Assert.assertTrue("Expected: " + new BigInteger("1") + ", but was: " + ((Supplier<BigInteger>) () -> {
-      PCollection<InlineRecordType> v = ((Supplier<PVector<InlineRecordType>>) () -> {
-        PVector<InlineRecordType> result = TreePVector.empty();
-        for (Person it : CollectionSequence.fromCollection(Generated_contracts_Test.p1_.getsiblings())) {
-          InlineRecordType irt = new InlineRecordType();
-          irt.members.put("name", new InlineRecordTypeMember("name", it.getname()));
-          irt.members.put("age", new InlineRecordTypeMember("age", it.getage()));
-          result = result.plus(irt);
-        }
-        return result;
-      }).get();
+      PVector<InlineRecordType> result = TreePVector.empty();
+      for (Person it : CollectionSequence.fromCollection(Generated_contracts_Test.p1_.getsiblings())) {
+        InlineRecordType irt = new InlineRecordType();
+        irt.members.put("name", new InlineRecordTypeMember("name", it.getname()));
+        irt.members.put("age", new InlineRecordTypeMember("age", it.getage()));
+        result = result.plus(irt);
+      }
+      PCollection<InlineRecordType> v = result;
       return BigInteger.valueOf(TreePVector.<Boolean>from(TreePVector.<Boolean>singleton(TreePVector.from(v).stream().anyMatch((InlineRecordType o) -> ((Function<ParameterSetWrapper, Boolean>) (ParameterSetWrapper param) -> {
         InlineRecordType it = (InlineRecordType) param.parameters.get(0);
         return Objects.equals((String) it.members.get("name").value, "p2");
       }).apply(new ParameterSetWrapper(o)))).stream().filter((Boolean p0) -> p0 != null).collect(Collectors.toList())).size());
     }).get(), EqualsTestOp.matches(new BigInteger("1"), ((Supplier<BigInteger>) () -> {
-      PCollection<InlineRecordType> v = ((Supplier<PVector<InlineRecordType>>) () -> {
-        PVector<InlineRecordType> result = TreePVector.empty();
-        for (Person it : CollectionSequence.fromCollection(Generated_contracts_Test.p1_.getsiblings())) {
-          InlineRecordType irt = new InlineRecordType();
-          irt.members.put("name", new InlineRecordTypeMember("name", it.getname()));
-          irt.members.put("age", new InlineRecordTypeMember("age", it.getage()));
-          result = result.plus(irt);
-        }
-        return result;
-      }).get();
+      PVector<InlineRecordType> result = TreePVector.empty();
+      for (Person it : CollectionSequence.fromCollection(Generated_contracts_Test.p1_.getsiblings())) {
+        InlineRecordType irt = new InlineRecordType();
+        irt.members.put("name", new InlineRecordTypeMember("name", it.getname()));
+        irt.members.put("age", new InlineRecordTypeMember("age", it.getage()));
+        result = result.plus(irt);
+      }
+      PCollection<InlineRecordType> v = result;
       return BigInteger.valueOf(TreePVector.<Boolean>from(TreePVector.<Boolean>singleton(TreePVector.from(v).stream().anyMatch((InlineRecordType o) -> ((Function<ParameterSetWrapper, Boolean>) (ParameterSetWrapper param) -> {
         InlineRecordType it = (InlineRecordType) param.parameters.get(0);
         return Objects.equals((String) it.members.get("name").value, "p2");
@@ -1901,31 +1857,27 @@ public class Generated_contracts_Test {
   @Test
   public void TestAges_valexpr_item9_8267117108472755512() throws Throwable {
     Assert.assertTrue("Expected: " + new BigInteger("1") + ", but was: " + ((Supplier<BigInteger>) () -> {
-      PCollection<InlineRecordType> v = ((Supplier<PVector<InlineRecordType>>) () -> {
-        PVector<InlineRecordType> result = TreePVector.empty();
-        for (Person it : CollectionSequence.fromCollection(Generated_contracts_Test.p1_.getsiblings())) {
-          InlineRecordType irt = new InlineRecordType();
-          irt.members.put("name", new InlineRecordTypeMember("name", it.getname()));
-          irt.members.put("age", new InlineRecordTypeMember("age", it.getage()));
-          result = result.plus(irt);
-        }
-        return result;
-      }).get();
+      PVector<InlineRecordType> result = TreePVector.empty();
+      for (Person it : CollectionSequence.fromCollection(Generated_contracts_Test.p1_.getsiblings())) {
+        InlineRecordType irt = new InlineRecordType();
+        irt.members.put("name", new InlineRecordTypeMember("name", it.getname()));
+        irt.members.put("age", new InlineRecordTypeMember("age", it.getage()));
+        result = result.plus(irt);
+      }
+      PCollection<InlineRecordType> v = result;
       return BigInteger.valueOf(TreePVector.<Boolean>from(TreePVector.<Boolean>singleton(TreePVector.from(v).stream().anyMatch((InlineRecordType o) -> ((Function<ParameterSetWrapper, Boolean>) (ParameterSetWrapper param) -> {
         InlineRecordType it = (InlineRecordType) param.parameters.get(0);
         return Objects.equals((String) it.members.get("name").value, "p2");
       }).apply(new ParameterSetWrapper(o)))).stream().filter((Boolean p0) -> p0 != null).collect(Collectors.toList())).size());
     }).get(), EqualsTestOp.matches(new BigInteger("1"), ((Supplier<BigInteger>) () -> {
-      PCollection<InlineRecordType> v = ((Supplier<PVector<InlineRecordType>>) () -> {
-        PVector<InlineRecordType> result = TreePVector.empty();
-        for (Person it : CollectionSequence.fromCollection(Generated_contracts_Test.p1_.getsiblings())) {
-          InlineRecordType irt = new InlineRecordType();
-          irt.members.put("name", new InlineRecordTypeMember("name", it.getname()));
-          irt.members.put("age", new InlineRecordTypeMember("age", it.getage()));
-          result = result.plus(irt);
-        }
-        return result;
-      }).get();
+      PVector<InlineRecordType> result = TreePVector.empty();
+      for (Person it : CollectionSequence.fromCollection(Generated_contracts_Test.p1_.getsiblings())) {
+        InlineRecordType irt = new InlineRecordType();
+        irt.members.put("name", new InlineRecordTypeMember("name", it.getname()));
+        irt.members.put("age", new InlineRecordTypeMember("age", it.getage()));
+        result = result.plus(irt);
+      }
+      PCollection<InlineRecordType> v = result;
       return BigInteger.valueOf(TreePVector.<Boolean>from(TreePVector.<Boolean>singleton(TreePVector.from(v).stream().anyMatch((InlineRecordType o) -> ((Function<ParameterSetWrapper, Boolean>) (ParameterSetWrapper param) -> {
         InlineRecordType it = (InlineRecordType) param.parameters.get(0);
         return Objects.equals((String) it.members.get("name").value, "p2");
@@ -1935,56 +1887,46 @@ public class Generated_contracts_Test {
   @Test
   public void TestAges_valexpr_item10_8267117108473983910() throws Throwable {
     Assert.assertTrue("Expected: " + new BigInteger("65") + ", but was: " + ((Supplier<Number>) () -> {
-      PCollection<InlineRecordType> v = ((Supplier<PVector<InlineRecordType>>) () -> {
-        PVector<InlineRecordType> result = TreePVector.empty();
-        for (Person it : CollectionSequence.fromCollection(Generated_contracts_Test.p1_.getsiblings())) {
-          InlineRecordType irt = new InlineRecordType();
-          irt.members.put("name", new InlineRecordTypeMember("name", it.getname()));
-          irt.members.put("age", new InlineRecordTypeMember("age", it.getage()));
-          result = result.plus(irt);
-        }
-        return result;
-      }).get();
-      return ((Supplier<Number>) () -> {
-        Number seed = new BigInteger("5");
-        for (InlineRecordType current : ListSequence.fromList(TreePVector.from(v))) {
-          seed = AH.add(seed, (Number) current.members.get("age").value);
-        }
-        return seed;
-      }).get();
+      PVector<InlineRecordType> result = TreePVector.empty();
+      for (Person it : CollectionSequence.fromCollection(Generated_contracts_Test.p1_.getsiblings())) {
+        InlineRecordType irt = new InlineRecordType();
+        irt.members.put("name", new InlineRecordTypeMember("name", it.getname()));
+        irt.members.put("age", new InlineRecordTypeMember("age", it.getage()));
+        result = result.plus(irt);
+      }
+      PCollection<InlineRecordType> v = result;
+      Number seed = new BigInteger("5");
+      for (InlineRecordType current : ListSequence.fromList(TreePVector.from(v))) {
+        seed = AH.add(seed, (Number) current.members.get("age").value);
+      }
+      return seed;
     }).get(), EqualsTestOp.matches(new BigInteger("65"), ((Supplier<Number>) () -> {
-      PCollection<InlineRecordType> v = ((Supplier<PVector<InlineRecordType>>) () -> {
-        PVector<InlineRecordType> result = TreePVector.empty();
-        for (Person it : CollectionSequence.fromCollection(Generated_contracts_Test.p1_.getsiblings())) {
-          InlineRecordType irt = new InlineRecordType();
-          irt.members.put("name", new InlineRecordTypeMember("name", it.getname()));
-          irt.members.put("age", new InlineRecordTypeMember("age", it.getage()));
-          result = result.plus(irt);
-        }
-        return result;
-      }).get();
-      return ((Supplier<Number>) () -> {
-        Number seed = new BigInteger("5");
-        for (InlineRecordType current : ListSequence.fromList(TreePVector.from(v))) {
-          seed = AH.add(seed, (Number) current.members.get("age").value);
-        }
-        return seed;
-      }).get();
+      PVector<InlineRecordType> result = TreePVector.empty();
+      for (Person it : CollectionSequence.fromCollection(Generated_contracts_Test.p1_.getsiblings())) {
+        InlineRecordType irt = new InlineRecordType();
+        irt.members.put("name", new InlineRecordTypeMember("name", it.getname()));
+        irt.members.put("age", new InlineRecordTypeMember("age", it.getage()));
+        result = result.plus(irt);
+      }
+      PCollection<InlineRecordType> v = result;
+      Number seed = new BigInteger("5");
+      for (InlineRecordType current : ListSequence.fromList(TreePVector.from(v))) {
+        seed = AH.add(seed, (Number) current.members.get("age").value);
+      }
+      return seed;
     }).get()));
   }
   @Test
   public void TestAges_valexpr_item11_8267117108473989267() throws Throwable {
     Assert.assertEquals("Expected: " + TreePVector.<Number>empty().plus(new BigInteger("30")).plus(new BigInteger("30")) + ", but was: " + ((Supplier<TreePVector<Number>>) () -> {
-      PCollection<InlineRecordType> v = ((Supplier<PVector<InlineRecordType>>) () -> {
-        PVector<InlineRecordType> result = TreePVector.empty();
-        for (Person it : CollectionSequence.fromCollection(Generated_contracts_Test.p1_.getsiblings())) {
-          InlineRecordType irt = new InlineRecordType();
-          irt.members.put("name", new InlineRecordTypeMember("name", it.getname()));
-          irt.members.put("age", new InlineRecordTypeMember("age", it.getage()));
-          result = result.plus(irt);
-        }
-        return result;
-      }).get();
+      PVector<InlineRecordType> result = TreePVector.empty();
+      for (Person it : CollectionSequence.fromCollection(Generated_contracts_Test.p1_.getsiblings())) {
+        InlineRecordType irt = new InlineRecordType();
+        irt.members.put("name", new InlineRecordTypeMember("name", it.getname()));
+        irt.members.put("age", new InlineRecordTypeMember("age", it.getage()));
+        result = result.plus(irt);
+      }
+      PCollection<InlineRecordType> v = result;
       return TreePVector.<Number>from(TreePVector.from(v).stream().map((InlineRecordType param) -> {
         return new Function<ParameterSetWrapper, Number>() {
           public Number apply(ParameterSetWrapper param) {
@@ -1994,16 +1936,14 @@ public class Generated_contracts_Test {
         }.apply(new ParameterSetWrapper(param));
       }).collect(Collectors.<Number>toList()));
     }).get(), TreePVector.<Number>empty().plus(new BigInteger("30")).plus(new BigInteger("30")), ((Supplier<TreePVector<Number>>) () -> {
-      PCollection<InlineRecordType> v = ((Supplier<PVector<InlineRecordType>>) () -> {
-        PVector<InlineRecordType> result = TreePVector.empty();
-        for (Person it : CollectionSequence.fromCollection(Generated_contracts_Test.p1_.getsiblings())) {
-          InlineRecordType irt = new InlineRecordType();
-          irt.members.put("name", new InlineRecordTypeMember("name", it.getname()));
-          irt.members.put("age", new InlineRecordTypeMember("age", it.getage()));
-          result = result.plus(irt);
-        }
-        return result;
-      }).get();
+      PVector<InlineRecordType> result = TreePVector.empty();
+      for (Person it : CollectionSequence.fromCollection(Generated_contracts_Test.p1_.getsiblings())) {
+        InlineRecordType irt = new InlineRecordType();
+        irt.members.put("name", new InlineRecordTypeMember("name", it.getname()));
+        irt.members.put("age", new InlineRecordTypeMember("age", it.getage()));
+        result = result.plus(irt);
+      }
+      PCollection<InlineRecordType> v = result;
       return TreePVector.<Number>from(TreePVector.from(v).stream().map((InlineRecordType param) -> {
         return new Function<ParameterSetWrapper, Number>() {
           public Number apply(ParameterSetWrapper param) {
@@ -2017,16 +1957,14 @@ public class Generated_contracts_Test {
   @Test
   public void TestAges_valexpr_item12_85313633079609917() throws Throwable {
     Assert.assertEquals("Expected: " + TreePVector.<Number>empty().plus(new BigInteger("30")).plus(new BigInteger("30")) + ", but was: " + ((Supplier<TreePVector<Number>>) () -> {
-      PCollection<InlineRecordType> v = ((Supplier<PVector<InlineRecordType>>) () -> {
-        PVector<InlineRecordType> result = TreePVector.empty();
-        for (Person it : CollectionSequence.fromCollection(Generated_contracts_Test.p1_.getsiblings())) {
-          InlineRecordType irt = new InlineRecordType();
-          irt.members.put("name", new InlineRecordTypeMember("name", it.getname()));
-          irt.members.put("age", new InlineRecordTypeMember("age", it.getage()));
-          result = result.plus(irt);
-        }
-        return result;
-      }).get();
+      PVector<InlineRecordType> result = TreePVector.empty();
+      for (Person it : CollectionSequence.fromCollection(Generated_contracts_Test.p1_.getsiblings())) {
+        InlineRecordType irt = new InlineRecordType();
+        irt.members.put("name", new InlineRecordTypeMember("name", it.getname()));
+        irt.members.put("age", new InlineRecordTypeMember("age", it.getage()));
+        result = result.plus(irt);
+      }
+      PCollection<InlineRecordType> v = result;
       return TreePVector.<Number>from(TreePVector.from(v).stream().map((InlineRecordType param) -> {
         return new Function<ParameterSetWrapper, Number>() {
           public Number apply(ParameterSetWrapper param) {
@@ -2036,16 +1974,14 @@ public class Generated_contracts_Test {
         }.apply(new ParameterSetWrapper(param));
       }).collect(Collectors.<Number>toList()));
     }).get(), TreePVector.<Number>empty().plus(new BigInteger("30")).plus(new BigInteger("30")), ((Supplier<TreePVector<Number>>) () -> {
-      PCollection<InlineRecordType> v = ((Supplier<PVector<InlineRecordType>>) () -> {
-        PVector<InlineRecordType> result = TreePVector.empty();
-        for (Person it : CollectionSequence.fromCollection(Generated_contracts_Test.p1_.getsiblings())) {
-          InlineRecordType irt = new InlineRecordType();
-          irt.members.put("name", new InlineRecordTypeMember("name", it.getname()));
-          irt.members.put("age", new InlineRecordTypeMember("age", it.getage()));
-          result = result.plus(irt);
-        }
-        return result;
-      }).get();
+      PVector<InlineRecordType> result = TreePVector.empty();
+      for (Person it : CollectionSequence.fromCollection(Generated_contracts_Test.p1_.getsiblings())) {
+        InlineRecordType irt = new InlineRecordType();
+        irt.members.put("name", new InlineRecordTypeMember("name", it.getname()));
+        irt.members.put("age", new InlineRecordTypeMember("age", it.getage()));
+        result = result.plus(irt);
+      }
+      PCollection<InlineRecordType> v = result;
       return TreePVector.<Number>from(TreePVector.from(v).stream().map((InlineRecordType param) -> {
         return new Function<ParameterSetWrapper, Number>() {
           public Number apply(ParameterSetWrapper param) {

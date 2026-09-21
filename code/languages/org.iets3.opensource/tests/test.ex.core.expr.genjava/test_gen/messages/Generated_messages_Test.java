@@ -23,9 +23,8 @@ import org.iets3.core.expr.genjava.base.rt.rt.FailException;
 public class Generated_messages_Test {
 
   public static Message funWithMsg() {
-    Message res = Messages.m1("r:cc6f834a-e980-4402-b501-57396f6330a8(messages@tests)/5299123466388782808", "http://127.0.0.1:63320/node?ref=r%3Acc6f834a-e980-4402-b501-57396f6330a8%28messages%40tests%29%2F5299123466388782808");
 
-    return res;
+    return Messages.m1("r:cc6f834a-e980-4402-b501-57396f6330a8(messages@tests)/5299123466388782808", "http://127.0.0.1:63320/node?ref=r%3Acc6f834a-e980-4402-b501-57396f6330a8%28messages%40tests%29%2F5299123466388782808");
   }
   @Test
   public void MessageEval_item0_4026566441522105256() throws Throwable {

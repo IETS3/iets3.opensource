@@ -200,23 +200,20 @@ public class Generated_TemporalTests_Test {
   }
   public static final TemporalValue v3_ = new TemporalValue().slice(Generated_TemporalTests_Test.date0_, new BigInteger("0")).slice(Generated_TemporalTests_Test.date10_, new BigInteger("50"));
   public static TemporalValue add(TemporalValue v1, TemporalValue v2) {
-    TemporalValue res = TemporalValueHelper.perform(v1, v2, (Object l, Object r) -> TemporalOps.plus(l, r), null);
 
-    return res;
+    return TemporalValueHelper.perform(v1, v2, (Object l, Object r) -> TemporalOps.plus(l, r), null);
   }
   public static TemporalValue sub(TemporalValue v1, TemporalValue v2) {
-    TemporalValue res = TemporalValueHelper.perform(v1, v2, (Object l, Object r) -> TemporalOps.minus(l, r), null);
 
-    return res;
+    return TemporalValueHelper.perform(v1, v2, (Object l, Object r) -> TemporalOps.minus(l, r), null);
   }
 /* 
    * This is pretty much a workaround because there seems to be an exception when the expression
    * is directly invoked from the assert.
    */
     public static TemporalValue mul(TemporalValue v1, TemporalValue v2) {
-    TemporalValue res = TemporalValueHelper.perform(v1, v2, (Object l, Object r) -> TemporalOps.mul(l, r), null);
 
-    return res;
+    return TemporalValueHelper.perform(v1, v2, (Object l, Object r) -> TemporalOps.mul(l, r), null);
   }
 /* 
    * What do we do if, for a slice, no value exists? 

@@ -45,9 +45,8 @@ public class Generated_option_defaultValues_Test {
 
     @Override
     public String toString() {
-      String result = "";
 
-      return result;
+      return "";
     }
 
     @Override

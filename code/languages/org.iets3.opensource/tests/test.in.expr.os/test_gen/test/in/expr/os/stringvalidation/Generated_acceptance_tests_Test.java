@@ -33,7 +33,6 @@ import org.iets3.core.expr.stringvalidation.runtime.runtime.XLetterMatch;
 import org.iets3.core.expr.stringvalidation.runtime.runtime.XRangeBasedValidationClause;
 import org.iets3.core.expr.stringvalidation.runtime.runtime.XPositionIndicatorFirst;
 import org.iets3.core.expr.stringvalidation.runtime.runtime.XPositionIndicatorLast;
-import java.util.function.Supplier;
 import org.iets3.core.expr.simpleTypes.runtime.AH;
 import java.math.BigInteger;
 import org.iets3.core.expr.stringvalidation.runtime.runtime.XPositionBasedValidationClause;
@@ -54,18 +53,16 @@ public class Generated_acceptance_tests_Test {
    * The surname contains more than 2 digits
    */
     public static PVector<String> rule6a(String s) {
-    PVector<String> res = Empty.<String>vector().plusAll(new XExecutor(new XValidateStringExpression(s, new LL<XAbstractValidationClause>(new XOccurenceBasedValidationClause(new XIfExistsOccurenceConstraint(), new XSequenceMatch(new XDigitMatch(), 2), new LL<XAbstractOccurenceBasedCheck>(new XFailCheck(new XMustBeCheckKind())).list)).list)).run());
 
-    return res;
+    return Empty.<String>vector().plusAll(new XExecutor(new XValidateStringExpression(s, new LL<XAbstractValidationClause>(new XOccurenceBasedValidationClause(new XIfExistsOccurenceConstraint(), new XSequenceMatch(new XDigitMatch(), 2), new LL<XAbstractOccurenceBasedCheck>(new XFailCheck(new XMustBeCheckKind())).list)).list)).run());
   }
 /* 
    * The family name contains 2 digits that are not immediately after each other -> I don't quite understand that yet.
    * With number = severalDigitsInARow, the number of NUMBERS in string is <= 1
    */
     public static Boolean rule6b(String s) {
-    Boolean res = true;
 
-    return res;
+    return true;
   }
   @Test
   public void T6a_item0_3191633378114612204() throws Throwable {
@@ -84,19 +81,16 @@ public class Generated_acceptance_tests_Test {
     Assert.assertTrue("Expected: " + Generated_acceptance_tests_Test.ok_ + ", but was: " + Generated_acceptance_tests_Test.rule6a("Hall666oDerText"), !(EqualsTestOp.matches(Generated_acceptance_tests_Test.rule6a("Hall666oDerText"), Generated_acceptance_tests_Test.ok_)));
   }
   public static PVector<String> rule6c(String s) {
-    PVector<String> res = Empty.<String>vector().plusAll(new XExecutor(new XValidateStringExpression(s, new LL<XAbstractValidationClause>(new XOccurenceBasedValidationClause(new XIfExistsOccurenceConstraint(), new XDigitMatch(), new LL<XAbstractOccurenceBasedCheck>(new XMaxCountCheck(new XMustBeCheckKind(), 2)).list)).list)).run());
 
-    return res;
+    return Empty.<String>vector().plusAll(new XExecutor(new XValidateStringExpression(s, new LL<XAbstractValidationClause>(new XOccurenceBasedValidationClause(new XIfExistsOccurenceConstraint(), new XDigitMatch(), new LL<XAbstractOccurenceBasedCheck>(new XMaxCountCheck(new XMustBeCheckKind(), 2)).list)).list)).run());
   }
   public static PVector<String> rule6d(String s) {
-    PVector<String> res = Empty.<String>vector().plusAll(new XExecutor(new XValidateStringExpression(s, new LL<XAbstractValidationClause>(new XOccurenceBasedValidationClause(new XIfExistsOccurenceConstraint(), new XDigitMatch(), new LL<XAbstractOccurenceBasedCheck>(new XMaxCountCheck(new XCannotBeCheckKind(), 2)).list)).list)).run());
 
-    return res;
+    return Empty.<String>vector().plusAll(new XExecutor(new XValidateStringExpression(s, new LL<XAbstractValidationClause>(new XOccurenceBasedValidationClause(new XIfExistsOccurenceConstraint(), new XDigitMatch(), new LL<XAbstractOccurenceBasedCheck>(new XMaxCountCheck(new XCannotBeCheckKind(), 2)).list)).list)).run());
   }
   public static PVector<String> rule6e(String s) {
-    PVector<String> res = Empty.<String>vector().plusAll(new XExecutor(new XValidateStringExpression(s, new LL<XAbstractValidationClause>(new XOccurenceBasedValidationClause(new XIfExistsOccurenceConstraint(), new XNumberMatch(), new LL<XAbstractOccurenceBasedCheck>(new XMaxCountCheck(new XCannotBeCheckKind(), 2)).list)).list)).run());
 
-    return res;
+    return Empty.<String>vector().plusAll(new XExecutor(new XValidateStringExpression(s, new LL<XAbstractValidationClause>(new XOccurenceBasedValidationClause(new XIfExistsOccurenceConstraint(), new XNumberMatch(), new LL<XAbstractOccurenceBasedCheck>(new XMaxCountCheck(new XCannotBeCheckKind(), 2)).list)).list)).run());
   }
   @Test
   public void T6c_item0_3709229751378792815() throws Throwable {
@@ -158,9 +152,8 @@ public class Generated_acceptance_tests_Test {
    * A digit or sequence of digits must be preceded by a space (e.g. Maier 3).
    */
     public static List<String> rule7a(String s) {
-    List<String> res = new XExecutor(new XValidateStringExpression(s, new LL<XAbstractValidationClause>(new XOccurenceBasedValidationClause(new XIfExistsOccurenceConstraint(), new XDigitMatch(), new LL<XAbstractOccurenceBasedCheck>(new XPredecessorCheck(new XMustBeCheckKind(), new XOneOfMatch(new LL<XAbstractMatch>(new XSpecificSequenceElementaryMatch(" "), new XDigitMatch()).list))).list)).list)).run();
 
-    return res;
+    return new XExecutor(new XValidateStringExpression(s, new LL<XAbstractValidationClause>(new XOccurenceBasedValidationClause(new XIfExistsOccurenceConstraint(), new XDigitMatch(), new LL<XAbstractOccurenceBasedCheck>(new XPredecessorCheck(new XMustBeCheckKind(), new XOneOfMatch(new LL<XAbstractMatch>(new XSpecificSequenceElementaryMatch(" "), new XDigitMatch()).list))).list)).list)).run();
   }
   @Test
   public void T7a_item0_3191633378145062851() throws Throwable {
@@ -179,9 +172,8 @@ public class Generated_acceptance_tests_Test {
     Assert.assertTrue("Expected: " + Generated_acceptance_tests_Test.ok_ + ", but was: " + Generated_acceptance_tests_Test.rule7a("Hello12"), !(EqualsTestOp.matches(Generated_acceptance_tests_Test.rule7a("Hello12"), Generated_acceptance_tests_Test.ok_)));
   }
   public static List<String> rule7b(String s) {
-    List<String> res = new XExecutor(new XValidateStringExpression(s, new LL<XAbstractValidationClause>(new XOccurenceBasedValidationClause(new XIfExistsOccurenceConstraint(), new XDigitMatch(), new LL<XAbstractOccurenceBasedCheck>(new XSuccessorCheck(new XMustBeCheckKind(), new XOneOfMatch(new LL<XAbstractMatch>(new XSpecificSequenceElementaryMatch(" "), new XDigitMatch()).list))).list)).list)).run();
 
-    return res;
+    return new XExecutor(new XValidateStringExpression(s, new LL<XAbstractValidationClause>(new XOccurenceBasedValidationClause(new XIfExistsOccurenceConstraint(), new XDigitMatch(), new LL<XAbstractOccurenceBasedCheck>(new XSuccessorCheck(new XMustBeCheckKind(), new XOneOfMatch(new LL<XAbstractMatch>(new XSpecificSequenceElementaryMatch(" "), new XDigitMatch()).list))).list)).list)).run();
   }
   @Test
   public void T7b_item0_5216254839084210313() throws Throwable {
@@ -211,9 +203,8 @@ public class Generated_acceptance_tests_Test {
    * A sequence of digits not starting at digit 1 must be preceded by a letter, a space, a hyphen, a slash or a period.
    */
     public static PVector<String> rule13(String s) {
-    PVector<String> res = Empty.<String>vector().plusAll(new XExecutor(new XValidateStringExpression(s, new LL<XAbstractValidationClause>(new XOccurenceBasedValidationClause(new XIfExistsOccurenceConstraint(), new XDigitMatch(), new LL<XAbstractOccurenceBasedCheck>(new XPredecessorCheck(new XMustBeCheckKind(), new XOneOfMatch(new LL<XAbstractMatch>(new XLetterMatch(), new XDigitMatch(), new XSpecificSequenceElementaryMatch(" "), new XSpecificSequenceElementaryMatch("-"), new XSpecificSequenceElementaryMatch("/"), new XSpecificSequenceElementaryMatch(".")).list))).list)).list)).run());
 
-    return res;
+    return Empty.<String>vector().plusAll(new XExecutor(new XValidateStringExpression(s, new LL<XAbstractValidationClause>(new XOccurenceBasedValidationClause(new XIfExistsOccurenceConstraint(), new XDigitMatch(), new LL<XAbstractOccurenceBasedCheck>(new XPredecessorCheck(new XMustBeCheckKind(), new XOneOfMatch(new LL<XAbstractMatch>(new XLetterMatch(), new XDigitMatch(), new XSpecificSequenceElementaryMatch(" "), new XSpecificSequenceElementaryMatch("-"), new XSpecificSequenceElementaryMatch("/"), new XSpecificSequenceElementaryMatch(".")).list))).list)).list)).run());
   }
   @Test
   public void T13_item0_3191633378145637110() throws Throwable {
@@ -251,9 +242,8 @@ public class Generated_acceptance_tests_Test {
    * Allowed are letters, spaces, hyphens, apostrophes, numbers, brackets or dots.
    */
     public static PVector<String> rule5(String s) {
-    PVector<String> res = Empty.<String>vector().plusAll(new XExecutor(new XValidateStringExpression(s, new LL<XAbstractValidationClause>(new XRangeBasedValidationClause(new XPositionIndicatorFirst(), new XPositionIndicatorLast(), new XMustBeCheckKind(), new XOneOfMatch(new LL<XAbstractMatch>(new XLetterMatch(), new XSpecificSequenceElementaryMatch(" "), new XSpecificSequenceElementaryMatch("-"), new XSpecificSequenceElementaryMatch("\""), new XDigitMatch(), new XSpecificSequenceElementaryMatch("("), new XSpecificSequenceElementaryMatch(")"), new XSpecificSequenceElementaryMatch(".")).list))).list)).run());
 
-    return res;
+    return Empty.<String>vector().plusAll(new XExecutor(new XValidateStringExpression(s, new LL<XAbstractValidationClause>(new XRangeBasedValidationClause(new XPositionIndicatorFirst(), new XPositionIndicatorLast(), new XMustBeCheckKind(), new XOneOfMatch(new LL<XAbstractMatch>(new XLetterMatch(), new XSpecificSequenceElementaryMatch(" "), new XSpecificSequenceElementaryMatch("-"), new XSpecificSequenceElementaryMatch("\""), new XDigitMatch(), new XSpecificSequenceElementaryMatch("("), new XSpecificSequenceElementaryMatch(")"), new XSpecificSequenceElementaryMatch(".")).list))).list)).run());
   }
   @Test
   public void T5_item0_3191633378144475220() throws Throwable {
@@ -279,17 +269,14 @@ public class Generated_acceptance_tests_Test {
    * At least 3 identical consecutive letters at the beginning of the street are not permitted, unless the street starts with "III" and is followed in the 4th place by a dot, which is not the last character of the street, or the street begins with the character string "MMM-Str"
    */
     public static PVector<String> rule12(String s) {
-    PVector<String> res = ((Supplier<PVector<String>>) () -> {
-      if (s.startsWith("III.") && AH.isGreater(AH.stringLength(s), new BigInteger("4"))) {
-        return Generated_acceptance_tests_Test.ok_;
-      } else if (s.startsWith("MMM-Str")) {
-        return Generated_acceptance_tests_Test.ok_;
-      } else {
-        return Generated_acceptance_tests_Test.rule3b(s);
-      }
-    }).get();
 
-    return res;
+    if (s.startsWith("III.") && AH.isGreater(AH.stringLength(s), new BigInteger("4"))) {
+      return Generated_acceptance_tests_Test.ok_;
+    } else if (s.startsWith("MMM-Str")) {
+      return Generated_acceptance_tests_Test.ok_;
+    } else {
+      return Generated_acceptance_tests_Test.rule3b(s);
+    }
   }
   @Test
   public void T12_item0_3191633378143359165() throws Throwable {
@@ -311,17 +298,15 @@ public class Generated_acceptance_tests_Test {
    * (made up by me) At least 3 consecutive letters at the beginning of the family name are not allowed.
    */
     public static PVector<String> rule3a(String s) {
-    PVector<String> res = Empty.<String>vector().plusAll(new XExecutor(new XValidateStringExpression(s, new LL<XAbstractValidationClause>(new XPositionBasedValidationClause(new XPositionIndicatorFirst(), new XCannotBeCheckKind(), new XSequenceMatch(new XLetterMatch(), 3))).list)).run());
 
-    return res;
+    return Empty.<String>vector().plusAll(new XExecutor(new XValidateStringExpression(s, new LL<XAbstractValidationClause>(new XPositionBasedValidationClause(new XPositionIndicatorFirst(), new XCannotBeCheckKind(), new XSequenceMatch(new XLetterMatch(), 3))).list)).run());
   }
 /* 
    * At least 3 identical consecutive letters at the beginning of the family name are not allowed.
    */
     public static PVector<String> rule3b(String s) {
-    PVector<String> res = Empty.<String>vector().plusAll(new XExecutor(new XValidateStringExpression(s, new LL<XAbstractValidationClause>(new XPositionBasedValidationClause(new XPositionIndicatorFirst(), new XCannotBeCheckKind(), new XAllSameCharMatcher(new XSequenceMatch(new XLetterMatch(), 3)))).list)).run());
 
-    return res;
+    return Empty.<String>vector().plusAll(new XExecutor(new XValidateStringExpression(s, new LL<XAbstractValidationClause>(new XPositionBasedValidationClause(new XPositionIndicatorFirst(), new XCannotBeCheckKind(), new XAllSameCharMatcher(new XSequenceMatch(new XLetterMatch(), 3)))).list)).run());
   }
   @Test
   public void T3a_item0_3191633378114212706() throws Throwable {
@@ -359,9 +344,8 @@ public class Generated_acceptance_tests_Test {
    * Only a letter other than "ß" or an apostrophe is allowed at the first position of the family name.
    */
     public static PVector<String> rule8(String s) {
-    PVector<String> res = Empty.<String>vector().plusAll(new XExecutor(new XValidateStringExpression(s, new LL<XAbstractValidationClause>(new XPositionBasedValidationClause(new XPositionIndicatorFirst(), new XMustBeCheckKind(), new XOneOfMatch(new LL<XAbstractMatch>(new XLetterMatch(), new XSpecificSequenceElementaryMatch("\"")).list)), new XPositionBasedValidationClause(new XPositionIndicatorFirst(), new XCannotBeCheckKind(), new XSpecificSequenceElementaryMatch("ß"))).list)).run());
 
-    return res;
+    return Empty.<String>vector().plusAll(new XExecutor(new XValidateStringExpression(s, new LL<XAbstractValidationClause>(new XPositionBasedValidationClause(new XPositionIndicatorFirst(), new XMustBeCheckKind(), new XOneOfMatch(new LL<XAbstractMatch>(new XLetterMatch(), new XSpecificSequenceElementaryMatch("\"")).list)), new XPositionBasedValidationClause(new XPositionIndicatorFirst(), new XCannotBeCheckKind(), new XSpecificSequenceElementaryMatch("ß"))).list)).run());
   }
   @Test
   public void T8_item0_7791028896464780547() throws Throwable {
@@ -387,9 +371,8 @@ public class Generated_acceptance_tests_Test {
    * Only a letter, digit, closing parenthesis, period, or apostrophe is allowed as the last digit of the surname.
    */
     public static PVector<String> rule9(String s) {
-    PVector<String> res = Empty.<String>vector().plusAll(new XExecutor(new XValidateStringExpression(s, new LL<XAbstractValidationClause>(new XPositionBasedValidationClause(new XPositionIndicatorLast(), new XMustBeCheckKind(), new XOneOfMatch(new LL<XAbstractMatch>(new XLetterMatch(), new XDigitMatch(), new XSpecificSequenceElementaryMatch("."), new XSpecificSequenceElementaryMatch(")"), new XSpecificSequenceElementaryMatch("\"")).list))).list)).run());
 
-    return res;
+    return Empty.<String>vector().plusAll(new XExecutor(new XValidateStringExpression(s, new LL<XAbstractValidationClause>(new XPositionBasedValidationClause(new XPositionIndicatorLast(), new XMustBeCheckKind(), new XOneOfMatch(new LL<XAbstractMatch>(new XLetterMatch(), new XDigitMatch(), new XSpecificSequenceElementaryMatch("."), new XSpecificSequenceElementaryMatch(")"), new XSpecificSequenceElementaryMatch("\"")).list))).list)).run());
   }
   @Test
   public void T9_item0_7791028896462945848() throws Throwable {
@@ -427,9 +410,8 @@ public class Generated_acceptance_tests_Test {
    * Hyphens must not follow each other more than once.
    */
     public static PVector<String> rule10(String s) {
-    PVector<String> res = Empty.<String>vector().plusAll(new XExecutor(new XValidateStringExpression(s, new LL<XAbstractValidationClause>(new XOccurenceBasedValidationClause(new XIfExistsOccurenceConstraint(), new XSpecificSequenceElementaryMatch("-"), new LL<XAbstractOccurenceBasedCheck>(new XCannotRepeatCheck(new XMustBeCheckKind())).list)).list)).run());
 
-    return res;
+    return Empty.<String>vector().plusAll(new XExecutor(new XValidateStringExpression(s, new LL<XAbstractValidationClause>(new XOccurenceBasedValidationClause(new XIfExistsOccurenceConstraint(), new XSpecificSequenceElementaryMatch("-"), new LL<XAbstractOccurenceBasedCheck>(new XCannotRepeatCheck(new XMustBeCheckKind())).list)).list)).run());
   }
   @Test
   public void T10_item0_7791028896462932455() throws Throwable {
@@ -459,17 +441,15 @@ public class Generated_acceptance_tests_Test {
    * No spaces are allowed before and after hyphens.
    */
     public static PVector<String> rule4(String s) {
-    PVector<String> res = Empty.<String>vector().plusAll(new XExecutor(new XValidateStringExpression(s, new LL<XAbstractValidationClause>(new XOccurenceBasedValidationClause(new XIfExistsOccurenceConstraint(), new XSpecificSequenceElementaryMatch("- "), new LL<XAbstractOccurenceBasedCheck>(new XFailCheck(new XMustBeCheckKind())).list), new XOccurenceBasedValidationClause(new XIfExistsOccurenceConstraint(), new XSpecificSequenceElementaryMatch(" -"), new LL<XAbstractOccurenceBasedCheck>(new XFailCheck(new XMustBeCheckKind())).list), new XOccurenceBasedValidationClause(new XIfExistsOccurenceConstraint(), new XSpecificSequenceElementaryMatch(" - "), new LL<XAbstractOccurenceBasedCheck>(new XFailCheck(new XMustBeCheckKind())).list)).list)).run());
 
-    return res;
+    return Empty.<String>vector().plusAll(new XExecutor(new XValidateStringExpression(s, new LL<XAbstractValidationClause>(new XOccurenceBasedValidationClause(new XIfExistsOccurenceConstraint(), new XSpecificSequenceElementaryMatch("- "), new LL<XAbstractOccurenceBasedCheck>(new XFailCheck(new XMustBeCheckKind())).list), new XOccurenceBasedValidationClause(new XIfExistsOccurenceConstraint(), new XSpecificSequenceElementaryMatch(" -"), new LL<XAbstractOccurenceBasedCheck>(new XFailCheck(new XMustBeCheckKind())).list), new XOccurenceBasedValidationClause(new XIfExistsOccurenceConstraint(), new XSpecificSequenceElementaryMatch(" - "), new LL<XAbstractOccurenceBasedCheck>(new XFailCheck(new XMustBeCheckKind())).list)).list)).run());
   }
 /* 
    * No spaces are allowed before and after hyphens.
    */
     public static Boolean rule4b(String s) {
-    Boolean res = !(s.contains(" -") || s.contains("- ") || s.contains(" - "));
 
-    return res;
+    return !(s.contains(" -") || s.contains("- ") || s.contains(" - "));
   }
   @Test
   public void T4a_item0_7791028896444737449() throws Throwable {
@@ -491,9 +471,8 @@ public class Generated_acceptance_tests_Test {
    * Only one letter, closing parenthesis or period is allowed as the last digit of the place of residence.
    */
     public static PVector<String> rule11(String s) {
-    PVector<String> res = Empty.<String>vector().plusAll(new XExecutor(new XValidateStringExpression(s, new LL<XAbstractValidationClause>(new XPositionBasedValidationClause(new XPositionIndicatorLast(), new XMustBeCheckKind(), new XOneOfMatch(new LL<XAbstractMatch>(new XLetterMatch(), new XSpecificSequenceElementaryMatch("."), new XSpecificSequenceElementaryMatch(")")).list))).list)).run());
 
-    return res;
+    return Empty.<String>vector().plusAll(new XExecutor(new XValidateStringExpression(s, new LL<XAbstractValidationClause>(new XPositionBasedValidationClause(new XPositionIndicatorLast(), new XMustBeCheckKind(), new XOneOfMatch(new LL<XAbstractMatch>(new XLetterMatch(), new XSpecificSequenceElementaryMatch("."), new XSpecificSequenceElementaryMatch(")")).list))).list)).run());
   }
   @Test
   public void T11_item0_7791028896464907570() throws Throwable {
@@ -519,9 +498,8 @@ public class Generated_acceptance_tests_Test {
    * The same special characters and spaces must not follow each other more than once.
    */
     public static PVector<String> rule14(String s) {
-    PVector<String> res = Empty.<String>vector().plusAll(new XExecutor(new XValidateStringExpression(s, new LL<XAbstractValidationClause>(new XOccurenceBasedValidationClause(new XIfExistsOccurenceConstraint(), new XNotLetterOrDigitMatch(), new LL<XAbstractOccurenceBasedCheck>(new XCannotRepeatCheck(new XMustBeCheckKind())).list)).list)).run());
 
-    return res;
+    return Empty.<String>vector().plusAll(new XExecutor(new XValidateStringExpression(s, new LL<XAbstractValidationClause>(new XOccurenceBasedValidationClause(new XIfExistsOccurenceConstraint(), new XNotLetterOrDigitMatch(), new LL<XAbstractOccurenceBasedCheck>(new XCannotRepeatCheck(new XMustBeCheckKind())).list)).list)).run());
   }
   @Test
   public void T14_item0_7791028896444974085() throws Throwable {
@@ -543,9 +521,8 @@ public class Generated_acceptance_tests_Test {
    * The plus sign is only allowed on the first digit and the remaining digits must be home position (space).
    */
     public static PVector<String> rule1(String s) {
-    PVector<String> res = Empty.<String>vector().plusAll(new XExecutor(new XValidateStringExpression(s, new LL<XAbstractValidationClause>(new XOccurenceBasedValidationClause(new XIfExistsOccurenceConstraint(), new XSpecificSequenceElementaryMatch("+"), new LL<XAbstractOccurenceBasedCheck>(new XAtPositionCheck(new XMustBeCheckKind(), new XPositionIndicatorFirst())).list), new XOccurenceBasedValidationClause(new XIfExistsOccurenceConstraint(), new XSpecificSequenceElementaryMatch(" "), new LL<XAbstractOccurenceBasedCheck>(new XAtPositionCheck(new XCannotBeCheckKind(), new XPositionIndicatorIndex(0))).list)).list)).run());
 
-    return res;
+    return Empty.<String>vector().plusAll(new XExecutor(new XValidateStringExpression(s, new LL<XAbstractValidationClause>(new XOccurenceBasedValidationClause(new XIfExistsOccurenceConstraint(), new XSpecificSequenceElementaryMatch("+"), new LL<XAbstractOccurenceBasedCheck>(new XAtPositionCheck(new XMustBeCheckKind(), new XPositionIndicatorFirst())).list), new XOccurenceBasedValidationClause(new XIfExistsOccurenceConstraint(), new XSpecificSequenceElementaryMatch(" "), new LL<XAbstractOccurenceBasedCheck>(new XAtPositionCheck(new XCannotBeCheckKind(), new XPositionIndicatorIndex(0))).list)).list)).run());
   }
   @Test
   public void T1a_item0_5001505504945757348() throws Throwable {
@@ -587,9 +564,8 @@ public class Generated_acceptance_tests_Test {
    * The same special characters and spaces must not follow each other more than once.
    */
     public static List<String> rule2(String s) {
-    List<String> res = new XExecutor(new XValidateStringExpression(s, new LL<XAbstractValidationClause>(new XOccurenceBasedValidationClause(new XIfExistsOccurenceConstraint(), new XNotLetterOrDigitMatch(), new LL<XAbstractOccurenceBasedCheck>(new XCannotRepeatCheck(new XMustBeCheckKind())).list)).list)).run();
 
-    return res;
+    return new XExecutor(new XValidateStringExpression(s, new LL<XAbstractValidationClause>(new XOccurenceBasedValidationClause(new XIfExistsOccurenceConstraint(), new XNotLetterOrDigitMatch(), new LL<XAbstractOccurenceBasedCheck>(new XCannotRepeatCheck(new XMustBeCheckKind())).list)).list)).run();
   }
   @Test
   public void T2_item0_7791028896441412489() throws Throwable {
@@ -619,9 +595,8 @@ public class Generated_acceptance_tests_Test {
    * checking for the last position didn't work - fixed.
    */
     public static List<String> vorname(String s) {
-    List<String> res = new XExecutor(new XValidateStringExpression(s, new LL<XAbstractValidationClause>(new XRangeBasedValidationClause(new XPositionIndicatorFirst(), new XPositionIndicatorLast(), new XMustBeCheckKind(), new XOneOfMatch(new LL<XAbstractMatch>(new XLetterMatch(), new XSpecificSequenceElementaryMatch(" ")).list))).list)).run();
 
-    return res;
+    return new XExecutor(new XValidateStringExpression(s, new LL<XAbstractValidationClause>(new XRangeBasedValidationClause(new XPositionIndicatorFirst(), new XPositionIndicatorLast(), new XMustBeCheckKind(), new XOneOfMatch(new LL<XAbstractMatch>(new XLetterMatch(), new XSpecificSequenceElementaryMatch(" ")).list))).list)).run();
   }
   @Test
   public void T_vorname_item0_5216254839083558561() throws Throwable {
@@ -632,9 +607,8 @@ public class Generated_acceptance_tests_Test {
     Assert.assertTrue("Expected: " + Generated_acceptance_tests_Test.ok_ + ", but was: " + Empty.<String>vector().plusAll(Generated_acceptance_tests_Test.vorname("ad#")), !(EqualsTestOp.matches(Empty.<String>vector().plusAll(Generated_acceptance_tests_Test.vorname("ad#")), Generated_acceptance_tests_Test.ok_)));
   }
   public static List<String> dreiSindIllegal(String s) {
-    List<String> res = new XExecutor(new XValidateStringExpression(s, new LL<XAbstractValidationClause>(new XPositionBasedValidationClause(new XPositionIndicatorFirst(), new XCannotBeCheckKind(), new XAllSameCharMatcher(new XSequenceMatch(new XLetterMatch(), 3)))).list)).run();
 
-    return res;
+    return new XExecutor(new XValidateStringExpression(s, new LL<XAbstractValidationClause>(new XPositionBasedValidationClause(new XPositionIndicatorFirst(), new XCannotBeCheckKind(), new XAllSameCharMatcher(new XSequenceMatch(new XLetterMatch(), 3)))).list)).run();
   }
   @Test
   public void T_dreiSindIllegal_item0_5216254839083972400() throws Throwable {
@@ -657,19 +631,16 @@ public class Generated_acceptance_tests_Test {
     Assert.assertTrue("Expected: " + Generated_acceptance_tests_Test.ok_ + ", but was: " + Empty.<String>vector().plusAll(Generated_acceptance_tests_Test.dreiSindIllegal("aaabcdefg")), !(EqualsTestOp.matches(Empty.<String>vector().plusAll(Generated_acceptance_tests_Test.dreiSindIllegal("aaabcdefg")), Generated_acceptance_tests_Test.ok_)));
   }
   public static Boolean works(String s) {
-    Boolean res = ListSequence.fromList(new XExecutor(new XValidateStringExpression(s, new LL<XAbstractValidationClause>(new XOccurenceBasedValidationClause(new XIfExistsOccurenceConstraint(), new XLetterMatch(), new LL<XAbstractOccurenceBasedCheck>(new XCannotRepeatCheck(new XMustBeCheckKind())).list)).list)).run()).isEmpty();
 
-    return res;
+    return ListSequence.fromList(new XExecutor(new XValidateStringExpression(s, new LL<XAbstractValidationClause>(new XOccurenceBasedValidationClause(new XIfExistsOccurenceConstraint(), new XLetterMatch(), new LL<XAbstractOccurenceBasedCheck>(new XCannotRepeatCheck(new XMustBeCheckKind())).list)).list)).run()).isEmpty();
   }
   public static Boolean worksNot(String s) {
-    Boolean res = ListSequence.fromList(new XExecutor(new XValidateStringExpression(s, new LL<XAbstractValidationClause>(new XOccurenceBasedValidationClause(new XIfExistsOccurenceConstraint(), new XLetterMatch(), new LL<XAbstractOccurenceBasedCheck>(new XCannotRepeatCheck(new XMustBeCheckKind())).list)).list)).run()).isEmpty();
 
-    return res;
+    return ListSequence.fromList(new XExecutor(new XValidateStringExpression(s, new LL<XAbstractValidationClause>(new XOccurenceBasedValidationClause(new XIfExistsOccurenceConstraint(), new XLetterMatch(), new LL<XAbstractOccurenceBasedCheck>(new XCannotRepeatCheck(new XMustBeCheckKind())).list)).list)).run()).isEmpty();
   }
   public static Boolean backslashNotAtBeginning(String s) {
-    Boolean res = ListSequence.fromList(new XExecutor(new XValidateStringExpression(s, new LL<XAbstractValidationClause>(new XPositionBasedValidationClause(new XPositionIndicatorFirst(), new XCannotBeCheckKind(), new XSpecificSequenceElementaryMatch("\\"))).list)).run()).isEmpty();
 
-    return res;
+    return ListSequence.fromList(new XExecutor(new XValidateStringExpression(s, new LL<XAbstractValidationClause>(new XPositionBasedValidationClause(new XPositionIndicatorFirst(), new XCannotBeCheckKind(), new XSpecificSequenceElementaryMatch("\\"))).list)).run()).isEmpty();
   }
   @Test
   public void testBackslash_item0_719289292897828025() throws Throwable {

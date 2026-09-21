@@ -344,9 +344,8 @@ public class Generated_option_Test {
     Assert.assertTrue("Expected: " + new BigInteger("20") + ", but was: " + Generated_option_Test.dontGiveMeAnInt(), EqualsTestOp.matches(new BigInteger("20"), Generated_option_Test.dontGiveMeAnInt()));
   }
   public static Number giveMeAnInt() {
-    Number res = Generated_option_Test.anotherFun(new BigInteger("10"));
 
-    return res;
+    return Generated_option_Test.anotherFun(new BigInteger("10"));
   }
   public static Number dontGiveMeAnInt() {
     Number res = Generated_option_Test.anotherFun(null);
@@ -360,16 +359,13 @@ public class Generated_option_Test {
     return res;
   }
   public static Number anotherFun(Number i) {
-    Number res = ((Supplier<Number>) () -> {
-      Number x = i;
-      if (AH.isSome(i)) {
-        return org.iets3.core.expr.simpleTypes.runtime.AH.add(x, new BigInteger("1"));
-      } else {
-        return (Number) new BigInteger("20");
-      }
-    }).get();
 
-    return res;
+    Number x = i;
+    if (AH.isSome(i)) {
+      return org.iets3.core.expr.simpleTypes.runtime.AH.add(x, new BigInteger("1"));
+    } else {
+      return new BigInteger("20");
+    }
   }
   public static final PVector<String> optionsListEmpty_ = TreePVector.<String>from(new ArrayList<String>());
   public static final PVector<String> optionsListEmpty1_ = TreePVector.<String>empty().plus("S1");
@@ -392,26 +388,20 @@ public class Generated_option_Test {
     Assert.assertEquals("Expected: " + TreePVector.<String>empty().plus("S1").plus("S2") + ", but was: " + TreePVector.<String>from(Generated_option_Test.optionsListEmpty5_.stream().filter((String p0) -> p0 != null).collect(Collectors.<String>toList())), TreePVector.<String>empty().plus("S1").plus("S2"), TreePVector.<String>from(Generated_option_Test.optionsListEmpty5_.stream().filter((String p0) -> p0 != null).collect(Collectors.<String>toList())));
   }
   public static Number mayBeNumber(Boolean b) {
-    Number res = ((Supplier<Number>) () -> {
-      if (b) {
-        return (Number) new BigInteger("5");
-      } else {
-        return null;
-      }
-    }).get();
 
-    return res;
+    if (b) {
+      return new BigInteger("5");
+    } else {
+      return null;
+    }
   }
   public static String mayBeText(Boolean b) {
-    String res = ((Supplier<String>) () -> {
-      if (b) {
-        return "T";
-      } else {
-        return null;
-      }
-    }).get();
 
-    return res;
+    if (b) {
+      return "T";
+    } else {
+      return null;
+    }
   }
   @Test
   public void TestOptionStuff_item0_6380075495170373539() throws Throwable {

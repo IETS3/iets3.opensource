@@ -248,9 +248,8 @@ public class Generated_numbers_Test {
     Assert.assertTrue("Expected: " + new BigDecimal("20.22").setScale(2, RoundingMode.DOWN) + ", but was: " + Generated_numbers_Test.t9_, EqualsTestOp.matches(new BigDecimal("20.22").setScale(2, RoundingMode.DOWN), Generated_numbers_Test.t9_));
   }
   public static Number nix() {
-    Number res = null;
 
-    return res;
+    return null;
   }
   @Test
   public void OptionalNumbers_item0_1801842150043769915() throws Throwable {

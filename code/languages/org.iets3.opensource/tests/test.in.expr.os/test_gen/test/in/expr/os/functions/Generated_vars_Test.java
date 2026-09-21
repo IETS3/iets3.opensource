@@ -79,9 +79,8 @@ public class Generated_vars_Test {
     PVector tupleRight_8270504681824144399 = Generated_vars_Test.tuple_;
     r1 = (Number) tupleRight_8270504681824144399.get(0);
     r2 = (Number) tupleRight_8270504681824144399.get(1);
-    Number res = AH.add(r1, r2);
 
-    return res;
+    return AH.add(r1, r2);
   }
   public static PVector swap() {
     Number r1 = new BigInteger("3");
@@ -89,9 +88,8 @@ public class Generated_vars_Test {
     PVector tupleRight_8888617110175217036 = (TreePVector) TreePVector.<Object>from(Arrays.<Object>asList(r2, r1));
     r1 = (Number) tupleRight_8888617110175217036.get(0);
     r2 = (Number) tupleRight_8888617110175217036.get(1);
-    PVector res = (TreePVector) TreePVector.<Object>from(Arrays.<Object>asList(r1, r2));
 
-    return res;
+    return (TreePVector) TreePVector.<Object>from(Arrays.<Object>asList(r1, r2));
   }
   public static PVector swap1() {
     Number r1 = new BigInteger("3");
@@ -100,9 +98,8 @@ public class Generated_vars_Test {
     PVector tupleRight_6492165038408701204 = myTuple;
     r1 = (Number) tupleRight_6492165038408701204.get(0);
     r2 = (Number) tupleRight_6492165038408701204.get(1);
-    PVector res = (TreePVector) TreePVector.<Object>from(Arrays.<Object>asList(r1, r2));
 
-    return res;
+    return (TreePVector) TreePVector.<Object>from(Arrays.<Object>asList(r1, r2));
   }
   @Test
   public void assigningTuples_i_item0_8270504681824948476() throws Throwable {

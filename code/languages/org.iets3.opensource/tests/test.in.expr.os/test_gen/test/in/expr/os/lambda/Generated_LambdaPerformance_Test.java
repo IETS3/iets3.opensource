@@ -31,20 +31,18 @@ public class Generated_LambdaPerformance_Test {
     return l;
   }).get()));
   public static Number shortlambdatest(PVector<Number> list) {
-    Number res = (AH.isGreater(BigInteger.valueOf(list.size()), new BigInteger("1")) ? Generated_LambdaPerformance_Test.shortlambdatest(TreePVector.<Number>from(list.stream().filter((Number o) -> ((Function<ParameterSetWrapper, Boolean>) (ParameterSetWrapper param) -> {
+
+    return (AH.isGreater(BigInteger.valueOf(list.size()), new BigInteger("1")) ? Generated_LambdaPerformance_Test.shortlambdatest(TreePVector.<Number>from(list.stream().filter((Number o) -> ((Function<ParameterSetWrapper, Boolean>) (ParameterSetWrapper param) -> {
       Number it = (Number) param.parameters.get(0);
       return AH.isGreater(it, (Number) list.get(new BigInteger("0").intValue()));
     }).apply(new ParameterSetWrapper(o))).collect(Collectors.<Number>toList()))) : (Number) list.get(new BigInteger("0").intValue()));
-
-    return res;
   }
   public static Number lambdatest(PVector<Number> list) {
-    Number res = (AH.isGreater(BigInteger.valueOf(list.size()), new BigInteger("1")) ? Generated_LambdaPerformance_Test.lambdatest(TreePVector.<Number>from(list.stream().filter((Number o) -> ((Function<ParameterSetWrapper, Boolean>) (ParameterSetWrapper param) -> {
+
+    return (AH.isGreater(BigInteger.valueOf(list.size()), new BigInteger("1")) ? Generated_LambdaPerformance_Test.lambdatest(TreePVector.<Number>from(list.stream().filter((Number o) -> ((Function<ParameterSetWrapper, Boolean>) (ParameterSetWrapper param) -> {
       Number it = (Number) param.parameters.get(0);
       return AH.isGreater(it, (Number) list.get(new BigInteger("0").intValue()));
     }).apply(new ParameterSetWrapper(o))).collect(Collectors.<Number>toList()))) : (Number) list.get(new BigInteger("0").intValue()));
-
-    return res;
   }
   @Test
   public void test1_item0_2600618336415907373() throws Throwable {

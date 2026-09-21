@@ -37,7 +37,8 @@ public class Generated_typedefs_Test {
         throw new ContractViolatedException(message);
       }
     }
-    Number res = ((Supplier<Number>) () -> {
+
+    return ((Supplier<Number>) () -> {
       Number result = arg;
       Number it = result;
       if (!(AH.isLess(it, new BigInteger("120")))) {
@@ -52,8 +53,6 @@ public class Generated_typedefs_Test {
       }
       return result;
     }).get();
-
-    return res;
   }
   public static Number g(Number arg) {
     Number res = arg;
@@ -83,9 +82,8 @@ public class Generated_typedefs_Test {
       GlobalContext.MESSAGE_LOG.get().collect(message);
       throw new ContractViolatedException(message);
     }
-    Number res = AH.mul(new BigInteger("2"), age);
 
-    return res;
+    return AH.mul(new BigInteger("2"), age);
   }
   @Test
   public void testsForVal_item0_4723261570601131197() throws Throwable {
@@ -195,9 +193,8 @@ public class Generated_typedefs_Test {
     }
   }
   public static Number f2(R r) {
-    Number res = r.geti();
 
-    return res;
+    return r.geti();
   }
   @Test
   public void testsForArguments_item0_4723261570601453356() throws Throwable {
@@ -211,42 +208,33 @@ public class Generated_typedefs_Test {
     }
   }
   public static Number testSymbol(Number x, Number y) {
-    Number res = ((Supplier<Number>) () -> {
-      if (org.iets3.core.expr.genjava.base.rt.rt.AH.isSome(x) && org.iets3.core.expr.genjava.base.rt.rt.AH.isSome(y)) {
-        return AH.add(x, y);
-      } else {
-        return null;
-      }
-    }).get();
 
-    return res;
+    if (org.iets3.core.expr.genjava.base.rt.rt.AH.isSome(x) && org.iets3.core.expr.genjava.base.rt.rt.AH.isSome(y)) {
+      return AH.add(x, y);
+    } else {
+      return null;
+    }
   }
   public static Number testCall() {
-    Number res = ((Supplier<Number>) () -> {
-      Number v = Generated_typedefs_Test.optionize(new BigInteger("10"));
-      if (org.iets3.core.expr.genjava.base.rt.rt.AH.isSome(Generated_typedefs_Test.optionize(new BigInteger("10")))) {
-        return v;
-      } else {
-        return null;
-      }
-    }).get();
 
-    return res;
+    Number v = Generated_typedefs_Test.optionize(new BigInteger("10"));
+    if (org.iets3.core.expr.genjava.base.rt.rt.AH.isSome(Generated_typedefs_Test.optionize(new BigInteger("10")))) {
+      return v;
+    } else {
+      return null;
+    }
   }
   public static Number optionize(Number x) {
-    Number res = x;
 
-    return res;
+    return x;
   }
   public static Number nonify(Number x) {
-    Number res = null;
 
-    return res;
+    return null;
   }
   public static Object empty() {
-    Object res = null;
 
-    return res;
+    return null;
   }
   @Test
   public void TestOptionStuff_item0_5096151429187731971() throws Throwable {
@@ -274,24 +262,20 @@ public class Generated_typedefs_Test {
   public static final Number s2_ = new BigInteger("5");
   public static final Number s3_ = new BigInteger("10");
   public static String f1() {
-    String res = "world";
 
-    return res;
+    return "world";
   }
   public static Number f3() {
-    Number res = new BigInteger("6");
 
-    return res;
+    return new BigInteger("6");
   }
   public static String f4() {
-    String res = Generated_typedefs_Test.s1_;
 
-    return res;
+    return Generated_typedefs_Test.s1_;
   }
   public static Number f5() {
-    Number res = Generated_typedefs_Test.s2_;
 
-    return res;
+    return Generated_typedefs_Test.s2_;
   }
   @Test
   public void simple_item0_5096151429187737276() throws Throwable {

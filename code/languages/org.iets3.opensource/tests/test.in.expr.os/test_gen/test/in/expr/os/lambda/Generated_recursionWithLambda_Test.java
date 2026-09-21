@@ -9,7 +9,6 @@ import org.junit.Test;
 import org.junit.Assert;
 import java.math.BigInteger;
 import org.iets3.core.expr.genjava.tests.rt.rt.EqualsTestOp;
-import java.util.function.Supplier;
 import org.iets3.core.expr.genjava.base.rt.rt.AlternativesException;
 
 /**
@@ -32,20 +31,17 @@ public class Generated_recursionWithLambda_Test {
     Assert.assertTrue("Expected: " + new BigInteger("1327") + ", but was: " + Generated_recursionWithLambda_Test.f(AH.add(new BigInteger("10"), AH.add(new BigInteger("30"), AH.add(new BigInteger("1"), new BigInteger("10")))), Generated_recursionWithLambda_Test.plus_), EqualsTestOp.matches(new BigInteger("1327"), Generated_recursionWithLambda_Test.f(AH.add(new BigInteger("10"), AH.add(new BigInteger("30"), AH.add(new BigInteger("1"), new BigInteger("10")))), Generated_recursionWithLambda_Test.plus_)));
   }
   public static Number f(Number a, Function<ParameterSetWrapper, Number> op) {
-    Number res = ((Supplier<Number>) () -> {
-      if (AH.isGreater(a, new BigInteger("0"))) {
-        ParameterSetWrapper param = new ParameterSetWrapper();
-        param.parameters.add(a);
-        param.parameters.add(Generated_recursionWithLambda_Test.f(AH.sub(a, new BigInteger("1")), op));
-        return op.apply(param);
-      } else if (AH.isEqual(a, new BigInteger("0"))) {
-        return (Number) new BigInteger("1");
-      } else {
-        throw new AlternativesException("The proposed alternative does not exist.");
-      }
-    }).get();
 
-    return res;
+    if (AH.isGreater(a, new BigInteger("0"))) {
+      ParameterSetWrapper param = new ParameterSetWrapper();
+      param.parameters.add(a);
+      param.parameters.add(Generated_recursionWithLambda_Test.f(AH.sub(a, new BigInteger("1")), op));
+      return op.apply(param);
+    } else if (AH.isEqual(a, new BigInteger("0"))) {
+      return new BigInteger("1");
+    } else {
+      throw new AlternativesException("The proposed alternative does not exist.");
+    }
   }
 
 

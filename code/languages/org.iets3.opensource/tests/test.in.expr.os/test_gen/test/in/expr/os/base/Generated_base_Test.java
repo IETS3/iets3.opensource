@@ -194,9 +194,8 @@ public class Generated_base_Test {
     }
   }
   public static Person createPerson(Number a) {
-    Person res = new Person(a);
 
-    return res;
+    return new Person(a);
   }
   @Test
   public void testPersonConstraints_item0_2662069320759855008() throws Throwable {
@@ -218,9 +217,8 @@ public class Generated_base_Test {
     }
   }
   public static Number failingFun(Boolean f) {
-    Number res = (f ? FailException.<Number>fail("Test") : (Number) new BigInteger("10"));
 
-    return res;
+    return (f ? FailException.<Number>fail("Test") : (Number) new BigInteger("10"));
   }
   @Test
   public void testFail_item0_6953776000506773593() throws Throwable {
@@ -238,38 +236,33 @@ public class Generated_base_Test {
     }
   }
   public static Number f1(Number n) {
-    Number res = n;
 
-    return res;
+    return n;
   }
   public static final Number c1_ = new BigInteger("1");
 
   public static Number f2(Number i) {
-    Number res = i;
 
-    return res;
+    return i;
   }
   public static final Number c2_ = new BigInteger("1");
   public static final Number x_ = new BigInteger("10");
 
   public static Number f3(Number r) {
-    Number res = r;
 
-    return res;
+    return r;
   }
   public static final Number c3_ = new BigInteger("1");
 
   public static String f4(String s) {
-    String res = s;
 
-    return res;
+    return s;
   }
   public static final String c4_ = "hello";
 
   public static Boolean f5(Boolean b) {
-    Boolean res = b;
 
-    return res;
+    return b;
   }
   public static final Boolean c5_ = true;
   @Test

@@ -27,8 +27,7 @@ public class Generated_enums_Test {
     blue();
 
     public int compare(Color a, Color b) {
-      int result = 0;
-      return result;
+      return 0;
     }
 
     public int indexOf() {
@@ -46,8 +45,7 @@ public class Generated_enums_Test {
     monster();
 
     public int compare(Starbucks a, Starbucks b) {
-      int result = 0;
-      return result;
+      return 0;
     }
 
     public int indexOf() {
@@ -61,9 +59,8 @@ public class Generated_enums_Test {
   }
   public static final Color ocean_ = Color.blue;
   public static Color getColor() {
-    Color res = Color.red;
 
-    return res;
+    return Color.red;
   }
   @Test
   public void TestEnums_item0_7061117989423813565() throws Throwable {
@@ -491,8 +488,7 @@ public class Generated_enums_Test {
     }
 
     public int compare(StarbuckSizes a, StarbuckSizes b) {
-      int result = 0;
-      return result;
+      return 0;
     }
 
     public int indexOf() {
@@ -624,8 +620,7 @@ public class Generated_enums_Test {
     }
 
     public int compare(Family a, Family b) {
-      int result = 0;
-      return result;
+      return 0;
     }
 
     public int indexOf() {
@@ -648,9 +643,8 @@ public class Generated_enums_Test {
     }
   }
   public static Family getFamilyMember() {
-    Family res = Family.me;
 
-    return res;
+    return Family.me;
   }
   @Test
   public void ValuedEnum_item0_4577412849441838507() throws Throwable {

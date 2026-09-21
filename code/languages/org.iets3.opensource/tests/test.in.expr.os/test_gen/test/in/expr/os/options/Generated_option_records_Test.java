@@ -169,9 +169,8 @@ public class Generated_option_records_Test {
 
     @Override
     public String toString() {
-      String result = "";
 
-      return result;
+      return "";
     }
 
     @Override

@@ -27,7 +27,8 @@ public class Generated_error_Test {
 
 
   public static Validation<KernelFErrorException, String> errorFunc(final Number in) {
-    Validation<KernelFErrorException, String> res = ((_FunctionTypes._return_P0_E0<Validation<KernelFErrorException, String>>) () -> {
+
+    return ((_FunctionTypes._return_P0_E0<Validation<KernelFErrorException, String>>) () -> {
       if (AH.isEqual(in, new BigInteger("1"))) {
         return Validation.success("success");
       } else if (AH.isEqual(in, new BigInteger("2"))) {
@@ -38,8 +39,6 @@ public class Generated_error_Test {
         return Validation.fail(new KernelFErrorException("A"));
       }
     }).invoke();
-
-    return res;
   }
   public static String tryComplete(Number in) {
     String res = ((Supplier<String>) () -> {
@@ -74,7 +73,8 @@ public class Generated_error_Test {
     return res;
   }
   public static Validation<KernelFErrorException, String> tryInComplete(final Number in) {
-    Validation<KernelFErrorException, String> res = ((_FunctionTypes._return_P0_E0<Validation<KernelFErrorException, String>>) () -> {
+
+    return ((_FunctionTypes._return_P0_E0<Validation<KernelFErrorException, String>>) () -> {
       try {
         Generated_error_Test.errorFunc(in).success();
         Validation<KernelFErrorException, String> payload = Generated_error_Test.errorFunc(in);
@@ -87,8 +87,6 @@ public class Generated_error_Test {
 
       }
     }).invoke();
-
-    return res;
   }
   public static final Validation<KernelFErrorException, String> s_ = Generated_error_Test.tryInComplete(new BigInteger("42"));
   @Test
@@ -227,15 +225,14 @@ public class Generated_error_Test {
     Assert.assertTrue("Expected: " + new BigInteger("2") + ", but was: " + Generated_error_Test.attempParamFunc(Generated_error_Test.errorFunc(new BigInteger("4"))), EqualsTestOp.matches(new BigInteger("2"), Generated_error_Test.attempParamFunc(Generated_error_Test.errorFunc(new BigInteger("4")))));
   }
   public static Validation<KernelFErrorException, String> f(final Boolean b) {
-    Validation<KernelFErrorException, String> res = ((_FunctionTypes._return_P0_E0<Validation<KernelFErrorException, String>>) () -> {
+
+    return ((_FunctionTypes._return_P0_E0<Validation<KernelFErrorException, String>>) () -> {
       if (b) {
         return Validation.success("");
       } else {
         return Validation.fail(new KernelFErrorException("X"));
       }
     }).invoke();
-
-    return res;
   }
   @Test
   public void TRY_item0_9212286833126123939() throws Throwable {
@@ -264,15 +261,14 @@ public class Generated_error_Test {
     }).get()));
   }
   public static Validation<KernelFErrorException, Number> div(final Number c, final Number d) {
-    Validation<KernelFErrorException, Number> res = ((_FunctionTypes._return_P0_E0<Validation<KernelFErrorException, Number>>) () -> {
+
+    return ((_FunctionTypes._return_P0_E0<Validation<KernelFErrorException, Number>>) () -> {
       if (AH.isEqual(d, new BigInteger("0"))) {
         return Validation.fail(new KernelFErrorException("DIVBYZERO"));
       } else {
         return Validation.success(AH.div(c, d));
       }
     }).invoke();
-
-    return res;
   }
   public static final Validation<KernelFErrorException, Number> two1_ = Generated_error_Test.div(new BigInteger("4"), new BigInteger("2"));
   public static final Validation<KernelFErrorException, Number> two2_ = Generated_error_Test.div(new BigInteger("4"), new BigInteger("2"));
@@ -301,15 +297,14 @@ public class Generated_error_Test {
     }).get(), new BigInteger("1"))));
   }
   public static Validation<KernelFErrorException, String> strangeString(final Boolean b) {
-    Validation<KernelFErrorException, String> res = ((_FunctionTypes._return_P0_E0<Validation<KernelFErrorException, String>>) () -> {
+
+    return ((_FunctionTypes._return_P0_E0<Validation<KernelFErrorException, String>>) () -> {
       if (b) {
         return Validation.success("STRANGE");
       } else {
         return Validation.fail(new KernelFErrorException("DEAD"));
       }
     }).invoke();
-
-    return res;
   }
   @Test
   public void StringDot_item0_3822903164814416874() throws Throwable {

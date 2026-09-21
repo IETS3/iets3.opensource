@@ -6,7 +6,6 @@ import java.math.BigInteger;
 import org.junit.Test;
 import org.junit.Assert;
 import org.iets3.core.expr.genjava.tests.rt.rt.EqualsTestOp;
-import java.util.function.Supplier;
 import org.iets3.core.expr.simpleTypes.runtime.AH;
 import org.iets3.core.expr.genjava.messages.rt.rt.Message;
 import org.iets3.core.expr.genjava.messages.rt.rt.BuiltinMessageKinds;
@@ -107,11 +106,10 @@ public class Generated_functions_Test {
     Assert.assertTrue("Expected: " + new BigInteger("13") + ", but was: " + addExt2.addExt2(Generated_functions_Test.constantNumber_, new BigInteger("2"), new BigInteger("2")), EqualsTestOp.matches(new BigInteger("13"), addExt2.addExt2(Generated_functions_Test.constantNumber_, new BigInteger("2"), new BigInteger("2"))));
   }
   public static Number valFun1() {
-    Number res = ((Supplier<Number>) () -> {
-      Number dummy = new BigInteger("0");
-      return dummy;
+    Number res;
+    Number dummy = new BigInteger("0");
+    res = dummy;
 
-    }).get();
     Number it = res;
     if (!(AH.isEqual(it, new BigInteger("0")))) {
       final Message message = new Message(BuiltinMessageKinds.error(), ContractViolatedException.POST_FAILED + ": " + "res == 0").withLocation(new ProgramLocation("r:f9a70877-66f3-464b-86cb-67a9d543be8c(test.in.expr.os.functions@tests)/6461809954108788138", "http://127.0.0.1:63320/node?ref=r%3Af9a70877-66f3-464b-86cb-67a9d543be8c%28test.in.expr.os.functions%40tests%29%2F6461809954108788138")).withAffectedMemberNames(new HashSet<String>(Arrays.<String>asList()));

@@ -49,9 +49,8 @@ public class Generated_collectionDefaultValues_Test {
 
     @Override
     public String toString() {
-      String result = "";
 
-      return result;
+      return "";
     }
 
     @Override

@@ -45,14 +45,12 @@ public class Generated_enum_sort_Test {
     }
   }
   public static PVector<enumWithoutValue> sort0A(PVector<enumWithoutValue> data) {
-    PVector<enumWithoutValue> res = TreePVector.<enumWithoutValue>from(data.stream().filter(OH.predicate()).sorted((enumWithoutValue p0, enumWithoutValue p1) -> OH.compare(p0, p1)).collect(Collectors.<enumWithoutValue>toList()));
 
-    return res;
+    return TreePVector.<enumWithoutValue>from(data.stream().filter(OH.predicate()).sorted((enumWithoutValue p0, enumWithoutValue p1) -> OH.compare(p0, p1)).collect(Collectors.<enumWithoutValue>toList()));
   }
   public static PVector<enumWithoutValue> sort0D(PVector<enumWithoutValue> data) {
-    PVector<enumWithoutValue> res = TreePVector.<enumWithoutValue>from(data.stream().filter(OH.predicate()).sorted((enumWithoutValue p0, enumWithoutValue p1) -> OH.compare(p1, p0)).collect(Collectors.<enumWithoutValue>toList()));
 
-    return res;
+    return TreePVector.<enumWithoutValue>from(data.stream().filter(OH.predicate()).sorted((enumWithoutValue p0, enumWithoutValue p1) -> OH.compare(p1, p0)).collect(Collectors.<enumWithoutValue>toList()));
   }
   @Test
   public void testEnumWitoutValues_item0_6408647657448885960() throws Throwable {
@@ -555,34 +553,28 @@ public class Generated_enum_sort_Test {
     }
   }
   public static PVector<recOrderedByDecl> sort1A(PVector<recOrderedByDecl> data) {
-    PVector<recOrderedByDecl> res = TreePVector.<recOrderedByDecl>from(data.stream().filter(OH.predicate()).sorted((recOrderedByDecl p0, recOrderedByDecl p1) -> OH.compare(p0, p1)).collect(Collectors.<recOrderedByDecl>toList()));
 
-    return res;
+    return TreePVector.<recOrderedByDecl>from(data.stream().filter(OH.predicate()).sorted((recOrderedByDecl p0, recOrderedByDecl p1) -> OH.compare(p0, p1)).collect(Collectors.<recOrderedByDecl>toList()));
   }
   public static PVector<recOrderedByLiteral> sort2A(PVector<recOrderedByLiteral> data) {
-    PVector<recOrderedByLiteral> res = TreePVector.<recOrderedByLiteral>from(data.stream().filter(OH.predicate()).sorted((recOrderedByLiteral p0, recOrderedByLiteral p1) -> OH.compare(p0, p1)).collect(Collectors.<recOrderedByLiteral>toList()));
 
-    return res;
+    return TreePVector.<recOrderedByLiteral>from(data.stream().filter(OH.predicate()).sorted((recOrderedByLiteral p0, recOrderedByLiteral p1) -> OH.compare(p0, p1)).collect(Collectors.<recOrderedByLiteral>toList()));
   }
   public static PVector<recOrderedByValue> sort3A(PVector<recOrderedByValue> data) {
-    PVector<recOrderedByValue> res = TreePVector.<recOrderedByValue>from(data.stream().filter(OH.predicate()).sorted((recOrderedByValue p0, recOrderedByValue p1) -> OH.compare(p0, p1)).collect(Collectors.<recOrderedByValue>toList()));
 
-    return res;
+    return TreePVector.<recOrderedByValue>from(data.stream().filter(OH.predicate()).sorted((recOrderedByValue p0, recOrderedByValue p1) -> OH.compare(p0, p1)).collect(Collectors.<recOrderedByValue>toList()));
   }
   public static PVector<recOrderedByDecl> sort1D(PVector<recOrderedByDecl> data) {
-    PVector<recOrderedByDecl> res = TreePVector.<recOrderedByDecl>from(data.stream().filter(OH.predicate()).sorted((recOrderedByDecl p0, recOrderedByDecl p1) -> OH.compare(p1, p0)).collect(Collectors.<recOrderedByDecl>toList()));
 
-    return res;
+    return TreePVector.<recOrderedByDecl>from(data.stream().filter(OH.predicate()).sorted((recOrderedByDecl p0, recOrderedByDecl p1) -> OH.compare(p1, p0)).collect(Collectors.<recOrderedByDecl>toList()));
   }
   public static PVector<recOrderedByLiteral> sort2D(PVector<recOrderedByLiteral> data) {
-    PVector<recOrderedByLiteral> res = TreePVector.<recOrderedByLiteral>from(data.stream().filter(OH.predicate()).sorted((recOrderedByLiteral p0, recOrderedByLiteral p1) -> OH.compare(p1, p0)).collect(Collectors.<recOrderedByLiteral>toList()));
 
-    return res;
+    return TreePVector.<recOrderedByLiteral>from(data.stream().filter(OH.predicate()).sorted((recOrderedByLiteral p0, recOrderedByLiteral p1) -> OH.compare(p1, p0)).collect(Collectors.<recOrderedByLiteral>toList()));
   }
   public static PVector<recOrderedByValue> sort3D(PVector<recOrderedByValue> data) {
-    PVector<recOrderedByValue> res = TreePVector.<recOrderedByValue>from(data.stream().filter(OH.predicate()).sorted((recOrderedByValue p0, recOrderedByValue p1) -> OH.compare(p1, p0)).collect(Collectors.<recOrderedByValue>toList()));
 
-    return res;
+    return TreePVector.<recOrderedByValue>from(data.stream().filter(OH.predicate()).sorted((recOrderedByValue p0, recOrderedByValue p1) -> OH.compare(p1, p0)).collect(Collectors.<recOrderedByValue>toList()));
   }
   public static final PVector<recOrderedByDecl> d1_ = TreePVector.<recOrderedByDecl>empty().plus(new recOrderedByDecl(enumOrderedByDeclaration.lit2, "a2", new BigInteger("2"))).plus(new recOrderedByDecl(enumOrderedByDeclaration.lit1, "a4", new BigInteger("1"))).plus(new recOrderedByDecl(enumOrderedByDeclaration.lit3, "a3", new BigInteger("3")));
   public static final PVector<recOrderedByDecl> e1_ = TreePVector.<recOrderedByDecl>empty().plus(new recOrderedByDecl(enumOrderedByDeclaration.lit1, "a4", new BigInteger("1"))).plus(new recOrderedByDecl(enumOrderedByDeclaration.lit2, "a2", new BigInteger("2"))).plus(new recOrderedByDecl(enumOrderedByDeclaration.lit3, "a3", new BigInteger("3")));

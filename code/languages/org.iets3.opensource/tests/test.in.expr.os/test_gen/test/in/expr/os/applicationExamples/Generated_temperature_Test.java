@@ -154,8 +154,7 @@ public class Generated_temperature_Test {
     celcius();
 
     public int compare(uiTempUnit a, uiTempUnit b) {
-      int result = 0;
-      return result;
+      return 0;
     }
 
     public int indexOf() {
@@ -176,15 +175,14 @@ public class Generated_temperature_Test {
    */
     public static class toC {
     public static Number toC(TempFromUI this_) {
-      Number res = (((Supplier<Boolean>) () -> {
+
+      return (((Supplier<Boolean>) () -> {
         Boolean b = this_.getunit() == uiTempUnit.celcius;
         if (this_.getunit() == null) {
           return null;
         }
         return b;
       }).get() ? this_.getvalue() : Generated_temperature_Test.FtoC(this_.getvalue()));
-
-      return res;
     }
   }
 /* 
