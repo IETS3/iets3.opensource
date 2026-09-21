@@ -29,55 +29,55 @@ public class Generated_messages_Test {
   }
   @Test
   public void MessageEval_item0_4026566441522105256() throws Throwable {
-    Assert.assertEquals("Expected: " + "m1" + ", but was: " + Generated_messages_Test.funWithMsg().textWithKind(), (Object) "m1", (Object) Generated_messages_Test.funWithMsg().textWithKind());
+    Assert.assertEquals("Expected: " + "m1" + ", but was: " + Generated_messages_Test.funWithMsg().textWithKind(), "m1", Generated_messages_Test.funWithMsg().textWithKind());
   }
   @Test
   public void MessageEval_item1_5299123466388783842() throws Throwable {
-    Assert.assertEquals("Expected: " + "m1" + ", but was: " + Messages.m1("r:cc6f834a-e980-4402-b501-57396f6330a8(messages@tests)/5299123466390704284", "http://127.0.0.1:63320/node?ref=r%3Acc6f834a-e980-4402-b501-57396f6330a8%28messages%40tests%29%2F5299123466390704284").textWithKind(), (Object) "m1", (Object) Messages.m1("r:cc6f834a-e980-4402-b501-57396f6330a8(messages@tests)/5299123466390704284", "http://127.0.0.1:63320/node?ref=r%3Acc6f834a-e980-4402-b501-57396f6330a8%28messages%40tests%29%2F5299123466390704284").textWithKind());
+    Assert.assertEquals("Expected: " + "m1" + ", but was: " + Messages.m1("r:cc6f834a-e980-4402-b501-57396f6330a8(messages@tests)/5299123466390704284", "http://127.0.0.1:63320/node?ref=r%3Acc6f834a-e980-4402-b501-57396f6330a8%28messages%40tests%29%2F5299123466390704284").textWithKind(), "m1", Messages.m1("r:cc6f834a-e980-4402-b501-57396f6330a8(messages@tests)/5299123466390704284", "http://127.0.0.1:63320/node?ref=r%3Acc6f834a-e980-4402-b501-57396f6330a8%28messages%40tests%29%2F5299123466390704284").textWithKind());
   }
   @Test
   public void MessageEval_item2_4026566441522197413() throws Throwable {
-    Assert.assertEquals("Expected: " + "m2" + ", but was: " + Messages.m2("r:cc6f834a-e980-4402-b501-57396f6330a8(messages@tests)/4026566441522197415", "http://127.0.0.1:63320/node?ref=r%3Acc6f834a-e980-4402-b501-57396f6330a8%28messages%40tests%29%2F4026566441522197415").textWithKind(), (Object) "m2", (Object) Messages.m2("r:cc6f834a-e980-4402-b501-57396f6330a8(messages@tests)/4026566441522197415", "http://127.0.0.1:63320/node?ref=r%3Acc6f834a-e980-4402-b501-57396f6330a8%28messages%40tests%29%2F4026566441522197415").textWithKind());
+    Assert.assertEquals("Expected: " + "m2" + ", but was: " + Messages.m2("r:cc6f834a-e980-4402-b501-57396f6330a8(messages@tests)/4026566441522197415", "http://127.0.0.1:63320/node?ref=r%3Acc6f834a-e980-4402-b501-57396f6330a8%28messages%40tests%29%2F4026566441522197415").textWithKind(), "m2", Messages.m2("r:cc6f834a-e980-4402-b501-57396f6330a8(messages@tests)/4026566441522197415", "http://127.0.0.1:63320/node?ref=r%3Acc6f834a-e980-4402-b501-57396f6330a8%28messages%40tests%29%2F4026566441522197415").textWithKind());
   }
   @Test
   public void MessageEval_item3_4026566441522197444() throws Throwable {
-    Assert.assertEquals("Expected: " + "m3" + ", but was: " + Messages.m3("r:cc6f834a-e980-4402-b501-57396f6330a8(messages@tests)/4026566441522197446", "http://127.0.0.1:63320/node?ref=r%3Acc6f834a-e980-4402-b501-57396f6330a8%28messages%40tests%29%2F4026566441522197446").textWithKind(), (Object) "m3", (Object) Messages.m3("r:cc6f834a-e980-4402-b501-57396f6330a8(messages@tests)/4026566441522197446", "http://127.0.0.1:63320/node?ref=r%3Acc6f834a-e980-4402-b501-57396f6330a8%28messages%40tests%29%2F4026566441522197446").textWithKind());
+    Assert.assertEquals("Expected: " + "m3" + ", but was: " + Messages.m3("r:cc6f834a-e980-4402-b501-57396f6330a8(messages@tests)/4026566441522197446", "http://127.0.0.1:63320/node?ref=r%3Acc6f834a-e980-4402-b501-57396f6330a8%28messages%40tests%29%2F4026566441522197446").textWithKind(), "m3", Messages.m3("r:cc6f834a-e980-4402-b501-57396f6330a8(messages@tests)/4026566441522197446", "http://127.0.0.1:63320/node?ref=r%3Acc6f834a-e980-4402-b501-57396f6330a8%28messages%40tests%29%2F4026566441522197446").textWithKind());
   }
   @Test
   public void MessageEval_item4_4026566441522197487() throws Throwable {
-    Assert.assertEquals("Expected: " + "m4 42" + ", but was: " + Messages.withStringArgs.m4("r:cc6f834a-e980-4402-b501-57396f6330a8(messages@tests)/4026566441522197489", "http://127.0.0.1:63320/node?ref=r%3Acc6f834a-e980-4402-b501-57396f6330a8%28messages%40tests%29%2F4026566441522197489", "42").textWithKind(), (Object) "m4 42", (Object) Messages.withStringArgs.m4("r:cc6f834a-e980-4402-b501-57396f6330a8(messages@tests)/4026566441522197489", "http://127.0.0.1:63320/node?ref=r%3Acc6f834a-e980-4402-b501-57396f6330a8%28messages%40tests%29%2F4026566441522197489", "42").textWithKind());
+    Assert.assertEquals("Expected: " + "m4 42" + ", but was: " + Messages.withStringArgs.m4("r:cc6f834a-e980-4402-b501-57396f6330a8(messages@tests)/4026566441522197489", "http://127.0.0.1:63320/node?ref=r%3Acc6f834a-e980-4402-b501-57396f6330a8%28messages%40tests%29%2F4026566441522197489", "42").textWithKind(), "m4 42", Messages.withStringArgs.m4("r:cc6f834a-e980-4402-b501-57396f6330a8(messages@tests)/4026566441522197489", "http://127.0.0.1:63320/node?ref=r%3Acc6f834a-e980-4402-b501-57396f6330a8%28messages%40tests%29%2F4026566441522197489", "42").textWithKind());
   }
   @Test
   public void MessageEval_item5_4026566441522197542() throws Throwable {
-    Assert.assertEquals("Expected: " + "m533" + ", but was: " + Messages.withStringArgs.m5("r:cc6f834a-e980-4402-b501-57396f6330a8(messages@tests)/4026566441522197544", "http://127.0.0.1:63320/node?ref=r%3Acc6f834a-e980-4402-b501-57396f6330a8%28messages%40tests%29%2F4026566441522197544", "33").textWithKind(), (Object) "m533", (Object) Messages.withStringArgs.m5("r:cc6f834a-e980-4402-b501-57396f6330a8(messages@tests)/4026566441522197544", "http://127.0.0.1:63320/node?ref=r%3Acc6f834a-e980-4402-b501-57396f6330a8%28messages%40tests%29%2F4026566441522197544", "33").textWithKind());
+    Assert.assertEquals("Expected: " + "m533" + ", but was: " + Messages.withStringArgs.m5("r:cc6f834a-e980-4402-b501-57396f6330a8(messages@tests)/4026566441522197544", "http://127.0.0.1:63320/node?ref=r%3Acc6f834a-e980-4402-b501-57396f6330a8%28messages%40tests%29%2F4026566441522197544", "33").textWithKind(), "m533", Messages.withStringArgs.m5("r:cc6f834a-e980-4402-b501-57396f6330a8(messages@tests)/4026566441522197544", "http://127.0.0.1:63320/node?ref=r%3Acc6f834a-e980-4402-b501-57396f6330a8%28messages%40tests%29%2F4026566441522197544", "33").textWithKind());
   }
   @Test
   public void MessageEval_item6_4026566441522664487() throws Throwable {
-    Assert.assertEquals("Expected: " + "m4 42" + ", but was: " + Messages.withIntArgs.m4("r:cc6f834a-e980-4402-b501-57396f6330a8(messages@tests)/4026566441522664489", "http://127.0.0.1:63320/node?ref=r%3Acc6f834a-e980-4402-b501-57396f6330a8%28messages%40tests%29%2F4026566441522664489", (Number) new BigInteger("42")).textWithKind(), (Object) "m4 42", (Object) Messages.withIntArgs.m4("r:cc6f834a-e980-4402-b501-57396f6330a8(messages@tests)/4026566441522664489", "http://127.0.0.1:63320/node?ref=r%3Acc6f834a-e980-4402-b501-57396f6330a8%28messages%40tests%29%2F4026566441522664489", (Number) new BigInteger("42")).textWithKind());
+    Assert.assertEquals("Expected: " + "m4 42" + ", but was: " + Messages.withIntArgs.m4("r:cc6f834a-e980-4402-b501-57396f6330a8(messages@tests)/4026566441522664489", "http://127.0.0.1:63320/node?ref=r%3Acc6f834a-e980-4402-b501-57396f6330a8%28messages%40tests%29%2F4026566441522664489", new BigInteger("42")).textWithKind(), "m4 42", Messages.withIntArgs.m4("r:cc6f834a-e980-4402-b501-57396f6330a8(messages@tests)/4026566441522664489", "http://127.0.0.1:63320/node?ref=r%3Acc6f834a-e980-4402-b501-57396f6330a8%28messages%40tests%29%2F4026566441522664489", new BigInteger("42")).textWithKind());
   }
   @Test
   public void MessageEval_item7_4026566441522664478() throws Throwable {
-    Assert.assertEquals("Expected: " + "m533" + ", but was: " + Messages.withIntArgs.m5("r:cc6f834a-e980-4402-b501-57396f6330a8(messages@tests)/4026566441522664480", "http://127.0.0.1:63320/node?ref=r%3Acc6f834a-e980-4402-b501-57396f6330a8%28messages%40tests%29%2F4026566441522664480", (Number) new BigInteger("33")).textWithKind(), (Object) "m533", (Object) Messages.withIntArgs.m5("r:cc6f834a-e980-4402-b501-57396f6330a8(messages@tests)/4026566441522664480", "http://127.0.0.1:63320/node?ref=r%3Acc6f834a-e980-4402-b501-57396f6330a8%28messages%40tests%29%2F4026566441522664480", (Number) new BigInteger("33")).textWithKind());
+    Assert.assertEquals("Expected: " + "m533" + ", but was: " + Messages.withIntArgs.m5("r:cc6f834a-e980-4402-b501-57396f6330a8(messages@tests)/4026566441522664480", "http://127.0.0.1:63320/node?ref=r%3Acc6f834a-e980-4402-b501-57396f6330a8%28messages%40tests%29%2F4026566441522664480", new BigInteger("33")).textWithKind(), "m533", Messages.withIntArgs.m5("r:cc6f834a-e980-4402-b501-57396f6330a8(messages@tests)/4026566441522664480", "http://127.0.0.1:63320/node?ref=r%3Acc6f834a-e980-4402-b501-57396f6330a8%28messages%40tests%29%2F4026566441522664480", new BigInteger("33")).textWithKind());
   }
   @Test
   public void MessageEval_item8_4026566441522805704() throws Throwable {
-    Assert.assertEquals("Expected: " + "m6 33 m6 true" + ", but was: " + Messages.withIntArgs.sub.m6("r:cc6f834a-e980-4402-b501-57396f6330a8(messages@tests)/4026566441522805706", "http://127.0.0.1:63320/node?ref=r%3Acc6f834a-e980-4402-b501-57396f6330a8%28messages%40tests%29%2F4026566441522805706", (Number) new BigInteger("33"), true).textWithKind(), (Object) "m6 33 m6 true", (Object) Messages.withIntArgs.sub.m6("r:cc6f834a-e980-4402-b501-57396f6330a8(messages@tests)/4026566441522805706", "http://127.0.0.1:63320/node?ref=r%3Acc6f834a-e980-4402-b501-57396f6330a8%28messages%40tests%29%2F4026566441522805706", (Number) new BigInteger("33"), true).textWithKind());
+    Assert.assertEquals("Expected: " + "m6 33 m6 true" + ", but was: " + Messages.withIntArgs.sub.m6("r:cc6f834a-e980-4402-b501-57396f6330a8(messages@tests)/4026566441522805706", "http://127.0.0.1:63320/node?ref=r%3Acc6f834a-e980-4402-b501-57396f6330a8%28messages%40tests%29%2F4026566441522805706", new BigInteger("33"), true).textWithKind(), "m6 33 m6 true", Messages.withIntArgs.sub.m6("r:cc6f834a-e980-4402-b501-57396f6330a8(messages@tests)/4026566441522805706", "http://127.0.0.1:63320/node?ref=r%3Acc6f834a-e980-4402-b501-57396f6330a8%28messages%40tests%29%2F4026566441522805706", new BigInteger("33"), true).textWithKind());
   }
   @Test
   public void MessageEval_item9_6912784008700874155() throws Throwable {
-    Assert.assertEquals("Expected: " + "WARNING: w" + ", but was: " + Messages.withKinds.w("r:cc6f834a-e980-4402-b501-57396f6330a8(messages@tests)/6912784008700874161", "http://127.0.0.1:63320/node?ref=r%3Acc6f834a-e980-4402-b501-57396f6330a8%28messages%40tests%29%2F6912784008700874161").textWithKind(), (Object) "WARNING: w", (Object) Messages.withKinds.w("r:cc6f834a-e980-4402-b501-57396f6330a8(messages@tests)/6912784008700874161", "http://127.0.0.1:63320/node?ref=r%3Acc6f834a-e980-4402-b501-57396f6330a8%28messages%40tests%29%2F6912784008700874161").textWithKind());
+    Assert.assertEquals("Expected: " + "WARNING: w" + ", but was: " + Messages.withKinds.w("r:cc6f834a-e980-4402-b501-57396f6330a8(messages@tests)/6912784008700874161", "http://127.0.0.1:63320/node?ref=r%3Acc6f834a-e980-4402-b501-57396f6330a8%28messages%40tests%29%2F6912784008700874161").textWithKind(), "WARNING: w", Messages.withKinds.w("r:cc6f834a-e980-4402-b501-57396f6330a8(messages@tests)/6912784008700874161", "http://127.0.0.1:63320/node?ref=r%3Acc6f834a-e980-4402-b501-57396f6330a8%28messages%40tests%29%2F6912784008700874161").textWithKind());
   }
   @Test
   public void MessageEval_item10_6912784008700875808() throws Throwable {
-    Assert.assertEquals("Expected: " + "ERROR 4711: e" + ", but was: " + Messages.withKinds.e("r:cc6f834a-e980-4402-b501-57396f6330a8(messages@tests)/6912784008700875810", "http://127.0.0.1:63320/node?ref=r%3Acc6f834a-e980-4402-b501-57396f6330a8%28messages%40tests%29%2F6912784008700875810").textWithKind(), (Object) "ERROR 4711: e", (Object) Messages.withKinds.e("r:cc6f834a-e980-4402-b501-57396f6330a8(messages@tests)/6912784008700875810", "http://127.0.0.1:63320/node?ref=r%3Acc6f834a-e980-4402-b501-57396f6330a8%28messages%40tests%29%2F6912784008700875810").textWithKind());
+    Assert.assertEquals("Expected: " + "ERROR 4711: e" + ", but was: " + Messages.withKinds.e("r:cc6f834a-e980-4402-b501-57396f6330a8(messages@tests)/6912784008700875810", "http://127.0.0.1:63320/node?ref=r%3Acc6f834a-e980-4402-b501-57396f6330a8%28messages%40tests%29%2F6912784008700875810").textWithKind(), "ERROR 4711: e", Messages.withKinds.e("r:cc6f834a-e980-4402-b501-57396f6330a8(messages@tests)/6912784008700875810", "http://127.0.0.1:63320/node?ref=r%3Acc6f834a-e980-4402-b501-57396f6330a8%28messages%40tests%29%2F6912784008700875810").textWithKind());
   }
   @Test
   public void Coercions_item0_1887965683633945800() throws Throwable {
-    Assert.assertEquals("Expected: " + "This is the point 1/2" + ", but was: " + Messages.mPoint("r:cc6f834a-e980-4402-b501-57396f6330a8(messages@tests)/1887965683633949236", "http://127.0.0.1:63320/node?ref=r%3Acc6f834a-e980-4402-b501-57396f6330a8%28messages%40tests%29%2F1887965683633949236", new Data.Point((Number) new BigInteger("1"), (Number) new BigInteger("2"))).textWithKind(), (Object) "This is the point 1/2", (Object) Messages.mPoint("r:cc6f834a-e980-4402-b501-57396f6330a8(messages@tests)/1887965683633949236", "http://127.0.0.1:63320/node?ref=r%3Acc6f834a-e980-4402-b501-57396f6330a8%28messages%40tests%29%2F1887965683633949236", new Data.Point((Number) new BigInteger("1"), (Number) new BigInteger("2"))).textWithKind());
+    Assert.assertEquals("Expected: " + "This is the point 1/2" + ", but was: " + Messages.mPoint("r:cc6f834a-e980-4402-b501-57396f6330a8(messages@tests)/1887965683633949236", "http://127.0.0.1:63320/node?ref=r%3Acc6f834a-e980-4402-b501-57396f6330a8%28messages%40tests%29%2F1887965683633949236", new Data.Point(new BigInteger("1"), new BigInteger("2"))).textWithKind(), "This is the point 1/2", Messages.mPoint("r:cc6f834a-e980-4402-b501-57396f6330a8(messages@tests)/1887965683633949236", "http://127.0.0.1:63320/node?ref=r%3Acc6f834a-e980-4402-b501-57396f6330a8%28messages%40tests%29%2F1887965683633949236", new Data.Point(new BigInteger("1"), new BigInteger("2"))).textWithKind());
   }
   @Test
   public void Coercions_item1_1887965683634059109() throws Throwable {
-    Assert.assertEquals("Expected: " + "This is a lot of 100 EUR" + ", but was: " + Messages.mMoney("r:cc6f834a-e980-4402-b501-57396f6330a8(messages@tests)/1887965683634059111", "http://127.0.0.1:63320/node?ref=r%3Acc6f834a-e980-4402-b501-57396f6330a8%28messages%40tests%29%2F1887965683634059111", (Number) new BigInteger("100")).textWithKind(), (Object) "This is a lot of 100 EUR", (Object) Messages.mMoney("r:cc6f834a-e980-4402-b501-57396f6330a8(messages@tests)/1887965683634059111", "http://127.0.0.1:63320/node?ref=r%3Acc6f834a-e980-4402-b501-57396f6330a8%28messages%40tests%29%2F1887965683634059111", (Number) new BigInteger("100")).textWithKind());
+    Assert.assertEquals("Expected: " + "This is a lot of 100 EUR" + ", but was: " + Messages.mMoney("r:cc6f834a-e980-4402-b501-57396f6330a8(messages@tests)/1887965683634059111", "http://127.0.0.1:63320/node?ref=r%3Acc6f834a-e980-4402-b501-57396f6330a8%28messages%40tests%29%2F1887965683634059111", new BigInteger("100")).textWithKind(), "This is a lot of 100 EUR", Messages.mMoney("r:cc6f834a-e980-4402-b501-57396f6330a8(messages@tests)/1887965683634059111", "http://127.0.0.1:63320/node?ref=r%3Acc6f834a-e980-4402-b501-57396f6330a8%28messages%40tests%29%2F1887965683634059111", new BigInteger("100")).textWithKind());
   }
   public static class InlineMessages {
     public static Message xeey(String _nodeReference, String _nodeUrl, Number x, Number y) {
@@ -239,7 +239,7 @@ public class Generated_messages_Test {
       }
       {
         Number it = y;
-        if (!(AH.isLess(it, (Number) new BigInteger("100")))) {
+        if (!(AH.isLess(it, new BigInteger("100")))) {
           final Message message = new Message(BuiltinMessageKinds.error(), "y kleiner 100").withLocation(new ProgramLocation("r:cc6f834a-e980-4402-b501-57396f6330a8(messages@tests)/5299123466393430642", "http://127.0.0.1:63320/node?ref=r%3Acc6f834a-e980-4402-b501-57396f6330a8%28messages%40tests%29%2F5299123466393430642")).withAffectedMemberNames(new HashSet<String>(Arrays.<String>asList("messages.Point2.y")));
           GlobalContext.MESSAGE_LOG.get().collect(message);
           throw new ContractViolatedException(message);
@@ -299,7 +299,7 @@ public class Generated_messages_Test {
   @Test
   public void AssertError_item0_5299123466391075129() throws Throwable {
     try {
-      if (new Point1((Number) new BigInteger("1"), (Number) new BigInteger("2")) == null) {
+      if (new Point1(new BigInteger("1"), new BigInteger("2")) == null) {
         throw new NullPointerException("No Result in Confail Testitem");
       }
       Assert.fail("Constraint failed");
@@ -310,7 +310,7 @@ public class Generated_messages_Test {
   @Test
   public void AssertError_item1_5299123466391077273() throws Throwable {
     try {
-      if (new Point2((Number) new BigInteger("1"), (Number) new BigInteger("2")) == null) {
+      if (new Point2(new BigInteger("1"), new BigInteger("2")) == null) {
         throw new NullPointerException("No Result in Confail Testitem");
       }
       Assert.fail("Constraint failed");

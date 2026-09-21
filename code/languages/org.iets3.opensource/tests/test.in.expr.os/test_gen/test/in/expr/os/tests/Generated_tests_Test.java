@@ -22,7 +22,7 @@ public class Generated_tests_Test {
   }
   @Test
   public void equalsError_item0_9212286833123158268() throws Throwable {
-    Assert.assertEquals("Expected: " + "" + ", but was: " + "", (Object) "", (Object) "");
+    Assert.assertEquals("Expected: " + "" + ", but was: " + "", "", "");
   }
   @Test
   public void equalsPrimitive_item0_9212286833111962765() throws Throwable {
@@ -34,11 +34,11 @@ public class Generated_tests_Test {
   }
   @Test
   public void equalsPrimitive_item2_9212286833111904743() throws Throwable {
-    Assert.assertTrue("Expected: " + (Number) new BigInteger("1") + ", but was: " + (Number) new BigInteger("1"), EqualsTestOp.matches((Number) new BigInteger("1"), (Number) new BigInteger("1")));
+    Assert.assertTrue("Expected: " + new BigInteger("1") + ", but was: " + new BigInteger("1"), EqualsTestOp.matches(new BigInteger("1"), new BigInteger("1")));
   }
   @Test
   public void equalsPrimitive_item3_9212286833112076409() throws Throwable {
-    Assert.assertEquals("Expected: " + "text" + ", but was: " + "text", (Object) "text", (Object) "text");
+    Assert.assertEquals("Expected: " + "text" + ", but was: " + "text", "text", "text");
   }
 
 

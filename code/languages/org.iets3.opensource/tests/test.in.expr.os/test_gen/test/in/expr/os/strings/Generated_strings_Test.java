@@ -15,7 +15,7 @@ import jetbrains.mps.baseLanguage.closures.runtime._FunctionTypes;
  */
 public class Generated_strings_Test {
 
-  public static final Number s_ = (Number) new BigInteger("2");
+  public static final Number s_ = new BigInteger("2");
   public static final String empty_ = "";
   public static final String a_ = "Hallo";
   public static final String b_ = AH.addString("Hallo", "Person");
@@ -26,35 +26,35 @@ public class Generated_strings_Test {
   public static final String g_ = "bar";
   public static final String h1_ = AH.addString((Number) new BigInteger("0"), "");
   public static final String h2_ = AH.addString("", (Number) new BigInteger("0"));
-  public static final String h3_ = AH.addString("", ((BigInteger) (Number) new BigInteger("1")).negate());
+  public static final String h3_ = AH.addString("", new BigInteger("1").negate());
   public static final String n1_ = AH.addString("", (Number) new BigInteger("4711"));
   @Test
   public void stringTests_item0_2068731624171318622() throws Throwable {
-    Assert.assertEquals("Expected: " + "Hallo" + ", but was: " + Generated_strings_Test.a_, (Object) "Hallo", (Object) Generated_strings_Test.a_);
+    Assert.assertEquals("Expected: " + "Hallo" + ", but was: " + Generated_strings_Test.a_, "Hallo", Generated_strings_Test.a_);
   }
   @Test
   public void stringTests_item1_2068731624171318675() throws Throwable {
-    Assert.assertEquals("Expected: " + "HalloPerson" + ", but was: " + Generated_strings_Test.b_, (Object) "HalloPerson", (Object) Generated_strings_Test.b_);
+    Assert.assertEquals("Expected: " + "HalloPerson" + ", but was: " + Generated_strings_Test.b_, "HalloPerson", Generated_strings_Test.b_);
   }
   @Test
   public void stringTests_item2_2068731624171318752() throws Throwable {
-    Assert.assertEquals("Expected: " + "Hallo22" + ", but was: " + Generated_strings_Test.c_, (Object) "Hallo22", (Object) Generated_strings_Test.c_);
+    Assert.assertEquals("Expected: " + "Hallo22" + ", but was: " + Generated_strings_Test.c_, "Hallo22", Generated_strings_Test.c_);
   }
   @Test
   public void stringTests_item3_2068731624171318935() throws Throwable {
-    Assert.assertEquals("Expected: " + "42Hallo" + ", but was: " + Generated_strings_Test.d_, (Object) "42Hallo", (Object) Generated_strings_Test.d_);
+    Assert.assertEquals("Expected: " + "42Hallo" + ", but was: " + Generated_strings_Test.d_, "42Hallo", Generated_strings_Test.d_);
   }
   @Test
   public void stringTests_item4_2068731624171319013() throws Throwable {
-    Assert.assertEquals("Expected: " + "42Hallo33" + ", but was: " + Generated_strings_Test.e_, (Object) "42Hallo33", (Object) Generated_strings_Test.e_);
+    Assert.assertEquals("Expected: " + "42Hallo33" + ", but was: " + Generated_strings_Test.e_, "42Hallo33", Generated_strings_Test.e_);
   }
   @Test
   public void stringTests_item5_7787163368318022108() throws Throwable {
-    Assert.assertTrue("Expected: " + (Number) new BigInteger("5") + ", but was: " + AH.stringLength(Generated_strings_Test.a_), EqualsTestOp.matches((Number) new BigInteger("5"), AH.stringLength(Generated_strings_Test.a_)));
+    Assert.assertTrue("Expected: " + new BigInteger("5") + ", but was: " + AH.stringLength(Generated_strings_Test.a_), EqualsTestOp.matches(new BigInteger("5"), AH.stringLength(Generated_strings_Test.a_)));
   }
   @Test
   public void stringTests_item6_7787163368318022551() throws Throwable {
-    Assert.assertTrue("Expected: " + (Number) new BigInteger("0") + ", but was: " + AH.stringLength(Generated_strings_Test.empty_), EqualsTestOp.matches((Number) new BigInteger("0"), AH.stringLength(Generated_strings_Test.empty_)));
+    Assert.assertTrue("Expected: " + new BigInteger("0") + ", but was: " + AH.stringLength(Generated_strings_Test.empty_), EqualsTestOp.matches(new BigInteger("0"), AH.stringLength(Generated_strings_Test.empty_)));
   }
   @Test
   public void stringEquals_item0_1182725744909299183() throws Throwable {
@@ -170,57 +170,57 @@ public class Generated_strings_Test {
   }
   @Test
   public void intToString_item0_4629758030492319807() throws Throwable {
-    Assert.assertEquals("Expected: " + "0" + ", but was: " + Generated_strings_Test.h1_, (Object) "0", (Object) Generated_strings_Test.h1_);
+    Assert.assertEquals("Expected: " + "0" + ", but was: " + Generated_strings_Test.h1_, "0", Generated_strings_Test.h1_);
   }
   @Test
   public void intToString_item1_4629758030492321730() throws Throwable {
-    Assert.assertEquals("Expected: " + "0" + ", but was: " + Generated_strings_Test.h2_, (Object) "0", (Object) Generated_strings_Test.h2_);
+    Assert.assertEquals("Expected: " + "0" + ", but was: " + Generated_strings_Test.h2_, "0", Generated_strings_Test.h2_);
   }
   @Test
   public void intToString_item2_4629758030492326627() throws Throwable {
-    Assert.assertEquals("Expected: " + "-1" + ", but was: " + Generated_strings_Test.h3_, (Object) "-1", (Object) Generated_strings_Test.h3_);
+    Assert.assertEquals("Expected: " + "-1" + ", but was: " + Generated_strings_Test.h3_, "-1", Generated_strings_Test.h3_);
   }
   @Test
   public void parseNumber_item0_4513425716319818016() throws Throwable {
-    Assert.assertTrue("Expected: " + (Number) new BigInteger("0") + ", but was: " + AH.parseInteger("0"), EqualsTestOp.matches((Number) new BigInteger("0"), AH.parseInteger("0")));
+    Assert.assertTrue("Expected: " + new BigInteger("0") + ", but was: " + AH.parseInteger("0"), EqualsTestOp.matches(new BigInteger("0"), AH.parseInteger("0")));
   }
   @Test
   public void parseNumber_item1_4513425716319821286() throws Throwable {
-    Assert.assertTrue("Expected: " + (Number) new BigInteger("1") + ", but was: " + AH.parseInteger("1"), EqualsTestOp.matches((Number) new BigInteger("1"), AH.parseInteger("1")));
+    Assert.assertTrue("Expected: " + new BigInteger("1") + ", but was: " + AH.parseInteger("1"), EqualsTestOp.matches(new BigInteger("1"), AH.parseInteger("1")));
   }
   @Test
   public void parseNumber_item2_4513425716319821351() throws Throwable {
-    Assert.assertTrue("Expected: " + ((BigInteger) (Number) new BigInteger("1")).negate() + ", but was: " + AH.parseInteger("-1"), EqualsTestOp.matches(((BigInteger) (Number) new BigInteger("1")).negate(), AH.parseInteger("-1")));
+    Assert.assertTrue("Expected: " + new BigInteger("1").negate() + ", but was: " + AH.parseInteger("-1"), EqualsTestOp.matches(new BigInteger("1").negate(), AH.parseInteger("-1")));
   }
   @Test
   public void parseNumber_item3_4513425716319843005() throws Throwable {
-    Assert.assertTrue("Expected: " + (Number) new BigInteger("10000000") + ", but was: " + AH.parseInteger("10000000"), EqualsTestOp.matches((Number) new BigInteger("10000000"), AH.parseInteger("10000000")));
+    Assert.assertTrue("Expected: " + new BigInteger("10000000") + ", but was: " + AH.parseInteger("10000000"), EqualsTestOp.matches(new BigInteger("10000000"), AH.parseInteger("10000000")));
   }
   @Test
   public void parseNumber_item4_4513425716319823083() throws Throwable {
-    Assert.assertTrue("Expected: " + (Number) new BigInteger("-10000000") + ", but was: " + AH.parseInteger("-10000000"), EqualsTestOp.matches((Number) new BigInteger("-10000000"), AH.parseInteger("-10000000")));
+    Assert.assertTrue("Expected: " + new BigInteger("-10000000") + ", but was: " + AH.parseInteger("-10000000"), EqualsTestOp.matches(new BigInteger("-10000000"), AH.parseInteger("-10000000")));
   }
   @Test
   public void parseNumber_item5_4112772517251323173() throws Throwable {
-    Assert.assertTrue("Expected: " + (Number) new BigInteger("4711") + ", but was: " + AH.parseInteger(Generated_strings_Test.n1_), EqualsTestOp.matches((Number) new BigInteger("4711"), AH.parseInteger(Generated_strings_Test.n1_)));
+    Assert.assertTrue("Expected: " + new BigInteger("4711") + ", but was: " + AH.parseInteger(Generated_strings_Test.n1_), EqualsTestOp.matches(new BigInteger("4711"), AH.parseInteger(Generated_strings_Test.n1_)));
   }
   @Test
   public void parseNumber_item6_4112772517251340915() throws Throwable {
-    Assert.assertTrue("Expected: " + (Number) new BigInteger("1020") + ", but was: " + AH.parseInteger(AH.addString("0010", "20")), EqualsTestOp.matches((Number) new BigInteger("1020"), AH.parseInteger(AH.addString("0010", "20"))));
+    Assert.assertTrue("Expected: " + new BigInteger("1020") + ", but was: " + AH.parseInteger(AH.addString("0010", "20")), EqualsTestOp.matches(new BigInteger("1020"), AH.parseInteger(AH.addString("0010", "20"))));
   }
   @Test
   public void optionStuff_item0_6859926652466119338() throws Throwable {
-    Assert.assertTrue("Expected: " + (Number) new BigInteger("5") + ", but was: " + AH.stringLength("Hello"), EqualsTestOp.matches((Number) new BigInteger("5"), AH.stringLength("Hello")));
+    Assert.assertTrue("Expected: " + new BigInteger("5") + ", but was: " + AH.stringLength("Hello"), EqualsTestOp.matches(new BigInteger("5"), AH.stringLength("Hello")));
   }
   @Test
   public void optionStuff_item1_6859926652475793984() throws Throwable {
-    Assert.assertTrue("Expected: " + (Number) new BigInteger("5") + ", but was: " + (((_FunctionTypes._return_P0_E0<Number>) () -> {
+    Assert.assertTrue("Expected: " + new BigInteger("5") + ", but was: " + (((_FunctionTypes._return_P0_E0<Number>) () -> {
       if (org.iets3.core.expr.genjava.base.rt.rt.AH.isSome(AH.stringLength("Hello"))) {
         return AH.stringLength("Hello");
       } else {
         return (Number) new BigInteger("0");
       }
-    }).invoke()), EqualsTestOp.matches((Number) new BigInteger("5"), ((_FunctionTypes._return_P0_E0<Number>) () -> {
+    }).invoke()), EqualsTestOp.matches(new BigInteger("5"), ((_FunctionTypes._return_P0_E0<Number>) () -> {
       if (org.iets3.core.expr.genjava.base.rt.rt.AH.isSome(AH.stringLength("Hello"))) {
         return AH.stringLength("Hello");
       } else {
@@ -230,11 +230,11 @@ public class Generated_strings_Test {
   }
   @Test
   public void optionStuff_item2_6859926652483662086() throws Throwable {
-    Assert.assertTrue("Expected: " + (Number) new BigInteger("6") + ", but was: " + (org.iets3.core.expr.genjava.base.rt.rt.AH.isSome(AH.add(AH.stringLength("Hello"), (Number) new BigInteger("1"))) ? AH.add(AH.stringLength("Hello"), (Number) new BigInteger("1")) : (Number) new BigInteger("0")), EqualsTestOp.matches((Number) new BigInteger("6"), (org.iets3.core.expr.genjava.base.rt.rt.AH.isSome(AH.add(AH.stringLength("Hello"), (Number) new BigInteger("1"))) ? AH.add(AH.stringLength("Hello"), (Number) new BigInteger("1")) : (Number) new BigInteger("0"))));
+    Assert.assertTrue("Expected: " + new BigInteger("6") + ", but was: " + (org.iets3.core.expr.genjava.base.rt.rt.AH.isSome(AH.add(AH.stringLength("Hello"), new BigInteger("1"))) ? AH.add(AH.stringLength("Hello"), new BigInteger("1")) : (Number) new BigInteger("0")), EqualsTestOp.matches(new BigInteger("6"), (org.iets3.core.expr.genjava.base.rt.rt.AH.isSome(AH.add(AH.stringLength("Hello"), new BigInteger("1"))) ? AH.add(AH.stringLength("Hello"), new BigInteger("1")) : (Number) new BigInteger("0"))));
   }
   @Test
   public void optionStuff_item3_6859926652475793868() throws Throwable {
-    Assert.assertEquals("Expected: " + null + ", but was: " + AH.stringLength(null), (Object) null, (Object) AH.stringLength(null));
+    Assert.assertEquals("Expected: " + null + ", but was: " + AH.stringLength(null), (Object) null, AH.stringLength(null));
   }
   public static final String i1_ = ((_FunctionTypes._return_P0_E0<String>) () -> {
     StringBuilder sb = new StringBuilder();
@@ -323,27 +323,27 @@ public class Generated_strings_Test {
   }).invoke();
   @Test
   public void interpolation_item0_8293738266740717945() throws Throwable {
-    Assert.assertEquals("Expected: " + "Here Hallo X" + ", but was: " + Generated_strings_Test.i1_, (Object) "Here Hallo X", (Object) Generated_strings_Test.i1_);
+    Assert.assertEquals("Expected: " + "Here Hallo X" + ", but was: " + Generated_strings_Test.i1_, "Here Hallo X", Generated_strings_Test.i1_);
   }
   @Test
   public void interpolation_item1_3626154618965690188() throws Throwable {
-    Assert.assertEquals("Expected: " + "  with some   space   upfront Hallo and some behind   " + ", but was: " + Generated_strings_Test.i2_, (Object) "  with some   space   upfront Hallo and some behind   ", (Object) Generated_strings_Test.i2_);
+    Assert.assertEquals("Expected: " + "  with some   space   upfront Hallo and some behind   " + ", but was: " + Generated_strings_Test.i2_, "  with some   space   upfront Hallo and some behind   ", Generated_strings_Test.i2_);
   }
   @Test
   public void interpolation_item2_3626154618965704802() throws Throwable {
-    Assert.assertEquals("Expected: " + "Hallo at the beginning" + ", but was: " + Generated_strings_Test.i3_, (Object) "Hallo at the beginning", (Object) Generated_strings_Test.i3_);
+    Assert.assertEquals("Expected: " + "Hallo at the beginning" + ", but was: " + Generated_strings_Test.i3_, "Hallo at the beginning", Generated_strings_Test.i3_);
   }
   @Test
   public void interpolation_item3_3626154618965707598() throws Throwable {
-    Assert.assertEquals("Expected: " + "at the end Hallo" + ", but was: " + Generated_strings_Test.i4_, (Object) "at the end Hallo", (Object) Generated_strings_Test.i4_);
+    Assert.assertEquals("Expected: " + "at the end Hallo" + ", but was: " + Generated_strings_Test.i4_, "at the end Hallo", Generated_strings_Test.i4_);
   }
   @Test
   public void interpolation_item4_3626154618965726355() throws Throwable {
-    Assert.assertEquals("Expected: " + "foobar" + ", but was: " + Generated_strings_Test.i5_, (Object) "foobar", (Object) Generated_strings_Test.i5_);
+    Assert.assertEquals("Expected: " + "foobar" + ", but was: " + Generated_strings_Test.i5_, "foobar", Generated_strings_Test.i5_);
   }
   @Test
   public void interpolation_item5_846199900519746715() throws Throwable {
-    Assert.assertEquals("Expected: " + "  with deliberate foo bar spaces   " + ", but was: " + Generated_strings_Test.i6_, (Object) "  with deliberate foo bar spaces   ", (Object) Generated_strings_Test.i6_);
+    Assert.assertEquals("Expected: " + "  with deliberate foo bar spaces   " + ", but was: " + Generated_strings_Test.i6_, "  with deliberate foo bar spaces   ", Generated_strings_Test.i6_);
   }
 
 

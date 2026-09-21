@@ -5,7 +5,7 @@ package test.in.expr.os.base;
 import java.math.BigInteger;
 
 public class dummy1_crossref {
-  public static final Number x_ = (Number) new BigInteger("0");
+  public static final Number x_ = new BigInteger("0");
   public static Number f1(Number i) {
     Number res = i;
 

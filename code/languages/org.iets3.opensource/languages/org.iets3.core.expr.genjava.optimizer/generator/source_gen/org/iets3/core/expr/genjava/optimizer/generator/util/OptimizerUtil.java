@@ -671,6 +671,244 @@ public class OptimizerUtil {
       SNodeOperations.replaceWithAnother(iife, chain);
     }
   }
+  private static boolean isSubtype(SNode subtype, SNode supertype) {
+    if ((subtype == null) || (supertype == null)) {
+      return false;
+    }
+    return TypeChecker.getInstance().getSubtypingManager().isSubtype(subtype, supertype, false);
+  }
+  private static SNode objectClassifier() {
+    // the supertype every class and interface has without naming it
+    return SNodeOperations.getNode("6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)", "~Object");
+  }
+  private static String erasure(SNode type) {
+    if (SNodeOperations.isInstanceOf(type, CONCEPTS.ClassifierType$bL)) {
+      return "" + SLinkOperations.getTarget((SNodeOperations.cast(type, CONCEPTS.ClassifierType$bL)), LINKS.classifier$cxMr).getNodeId();
+    }
+    if (SNodeOperations.isInstanceOf(type, CONCEPTS.TypeVariableReference$WL)) {
+      return "T";
+    }
+    if (SNodeOperations.isInstanceOf(type, CONCEPTS.ArrayType$rh)) {
+      return "[" + erasure(SLinkOperations.getTarget((SNodeOperations.cast(type, CONCEPTS.ArrayType$rh)), LINKS.componentType$F$Gi));
+    }
+    return SNodeOperations.getConcept(type).getName();
+  }
+  private static String erasedSignature(SNode method) {
+    // overriding methods in a hierarchy are one method: tell them apart by the erasure of their
+    // parameter types
+    String result = SPropertyOperations.getString(method, PROPS.name$MnvL) + "(";
+    for (SNode parameter : ListSequence.fromList(SLinkOperations.getChildren(method, LINKS.parameter$5xBj))) {
+      result = result + erasure(SLinkOperations.getTarget(parameter, LINKS.type$a1UY)) + ",";
+    }
+    return result + ")";
+  }
+  private static boolean sameArity(SNode a, SNode b) {
+    return ListSequence.fromList(SLinkOperations.getChildren(a, LINKS.parameter$5xBj)).count() == ListSequence.fromList(SLinkOperations.getChildren(b, LINKS.parameter$5xBj)).count();
+  }
+  private static boolean collectOverloads(SNode classifier, SNode method, Set<String> signatures, Set<SNode> visited) {
+    // collects the erased signatures of the methods of the name and arity declared in the
+    // classifier and its supertypes; true when one of the name takes a variable number of
+    // arguments, which no arity check tells apart
+    if ((classifier == null) || SetSequence.fromSet(visited).contains(classifier)) {
+      return false;
+    }
+    SetSequence.fromSet(visited).addElement(classifier);
+    for (SNode member : ListSequence.fromList(SLinkOperations.getChildren(classifier, LINKS.member$L_2d))) {
+      if (!(SNodeOperations.isInstanceOf(member, CONCEPTS.BaseMethodDeclaration$kD)) || SNodeOperations.isInstanceOf(member, CONCEPTS.ConstructorDeclaration$yG)) {
+        continue;
+      }
+      SNode candidate = SNodeOperations.cast(member, CONCEPTS.BaseMethodDeclaration$kD);
+      if (!(Objects.equals(SPropertyOperations.getString(candidate, PROPS.name$MnvL), SPropertyOperations.getString(method, PROPS.name$MnvL)))) {
+        continue;
+      }
+      for (SNode parameter : ListSequence.fromList(SLinkOperations.getChildren(candidate, LINKS.parameter$5xBj))) {
+        if (SNodeOperations.isInstanceOf(SLinkOperations.getTarget(parameter, LINKS.type$a1UY), CONCEPTS.VariableArityType$KF)) {
+          return true;
+        }
+      }
+      if (sameArity(candidate, method)) {
+        SetSequence.fromSet(signatures).addElement(erasedSignature(candidate));
+      }
+    }
+    List<SNode> inherited = new ArrayList<SNode>();
+    if (SNodeOperations.isInstanceOf(classifier, CONCEPTS.ClassConcept$bK)) {
+      SNode superclass = SLinkOperations.getTarget((SNodeOperations.cast(classifier, CONCEPTS.ClassConcept$bK)), LINKS.superclass$Mp9$);
+      if ((superclass == null)) {
+        ListSequence.fromList(inherited).addElement(objectClassifier());
+      } else {
+        ListSequence.fromList(inherited).addElement(SLinkOperations.getTarget(superclass, LINKS.classifier$cxMr));
+      }
+      for (SNode implemented : ListSequence.fromList(SLinkOperations.getChildren((SNodeOperations.cast(classifier, CONCEPTS.ClassConcept$bK)), LINKS.implementedInterface$rujG))) {
+        ListSequence.fromList(inherited).addElement(SLinkOperations.getTarget(implemented, LINKS.classifier$cxMr));
+      }
+    } else
+    if (SNodeOperations.isInstanceOf(classifier, CONCEPTS.Interface$db)) {
+      // an interface has the public methods of Object as well
+      ListSequence.fromList(inherited).addElement(objectClassifier());
+      for (SNode extended : ListSequence.fromList(SLinkOperations.getChildren((SNodeOperations.cast(classifier, CONCEPTS.Interface$db)), LINKS.extendedInterface$PDVO))) {
+        ListSequence.fromList(inherited).addElement(SLinkOperations.getTarget(extended, LINKS.classifier$cxMr));
+      }
+    }
+    for (SNode parent : ListSequence.fromList(inherited)) {
+      if (collectOverloads(parent, method, signatures, visited)) {
+        return true;
+      }
+    }
+    return false;
+  }
+  private static boolean overloaded(SNode classifier, SNode method) {
+    // whether the classifier, or a type it extends, declares another method of the name that
+    // could be called with as many arguments as the method takes
+    if (SPropertyOperations.getString(method, PROPS.name$MnvL) == null) {
+      return true;
+    }
+    Set<String> signatures = SetSequence.fromSet(new HashSet<String>());
+    Set<SNode> visited = SetSequence.fromSet(new HashSet<SNode>());
+    return collectOverloads(classifier, method, signatures, visited) || SetSequence.fromSet(signatures).count() > 1;
+  }
+  private static boolean argumentTypeMatters(SNode call) {
+    // whether the static type of an argument takes part in choosing the method or in inferring
+    // its type arguments
+    SNode method = SLinkOperations.getTarget(call, LINKS.baseMethodDeclaration$pyYw);
+    if ((method == null)) {
+      return true;
+    }
+    if (ListSequence.fromList(SLinkOperations.getChildren(method, LINKS.typeVariableDeclaration$Lipp)).isNotEmpty() && ListSequence.fromList(SLinkOperations.getChildren(call, LINKS.typeArgument$jaIN)).isEmpty()) {
+      return true;
+    }
+    if (SNodeOperations.isInstanceOf(call, CONCEPTS.ClassCreator$ZG)) {
+      SNode created = SNodeOperations.getNodeAncestor(method, CONCEPTS.ClassConcept$bK, false, false);
+      if ((created == null)) {
+        return true;
+      }
+      if (ListSequence.fromList(SLinkOperations.getChildren(created, LINKS.typeVariableDeclaration$Lipp)).isNotEmpty() && ListSequence.fromList(SLinkOperations.getChildren((SNodeOperations.cast(call, CONCEPTS.ClassCreator$ZG)), LINKS.typeParameter$uYiw)).isEmpty()) {
+        // the diamond infers the type arguments from the arguments
+        return true;
+      }
+      int constructors = 0;
+      for (SNode member : ListSequence.fromList(SLinkOperations.getChildren(created, LINKS.member$L_2d))) {
+        if (SNodeOperations.isInstanceOf(member, CONCEPTS.ConstructorDeclaration$yG) && sameArity(SNodeOperations.cast(member, CONCEPTS.ConstructorDeclaration$yG), method)) {
+          constructors = constructors + 1;
+        }
+      }
+      return constructors > 1;
+    }
+    SNode from = SNodeOperations.getNodeAncestor(method, CONCEPTS.Classifier$Ix, false, false);
+    if (SNodeOperations.isInstanceOf(call, CONCEPTS.LocalMethodCall$zT)) {
+      from = SNodeOperations.getNodeAncestor(call, CONCEPTS.Classifier$Ix, false, false);
+    } else if (SNodeOperations.isInstanceOf(call, CONCEPTS.InstanceMethodCallOperation$uu) && SNodeOperations.isInstanceOf(SNodeOperations.getParent(call), CONCEPTS.DotExpression$yW)) {
+      SNode receiverType = typeOf(SLinkOperations.getTarget((SNodeOperations.cast(SNodeOperations.getParent(call), CONCEPTS.DotExpression$yW)), LINKS.operand$w6IR));
+      if (SNodeOperations.isInstanceOf(receiverType, CONCEPTS.ClassifierType$bL)) {
+        from = SLinkOperations.getTarget((SNodeOperations.cast(receiverType, CONCEPTS.ClassifierType$bL)), LINKS.classifier$cxMr);
+      }
+    }
+    return (from == null) || overloaded(from, method);
+  }
+  private static boolean upcastRemovable(SNode cast, SNode operandType) {
+    // whether the surroundings of the cast are indifferent to the static type of the expression
+    // becoming more specific: not where it picks a method among overloads, drives type
+    // inference, or is joined with another type in a ternary
+    SNode child = cast;
+    SNode parent = SNodeOperations.getParent(cast);
+    while (SNodeOperations.isInstanceOf(parent, CONCEPTS.ParenthesizedExpression$Ws)) {
+      child = parent;
+      parent = SNodeOperations.getParent(parent);
+    }
+    if ((parent == null)) {
+      return false;
+    }
+    if (SNodeOperations.isInstanceOf(parent, CONCEPTS.VariableDeclaration$Y0)) {
+      return (SLinkOperations.getTarget((SNodeOperations.cast(parent, CONCEPTS.VariableDeclaration$Y0)), LINKS.type$a1UY) != null);
+    }
+    if (SNodeOperations.isInstanceOf(parent, CONCEPTS.AssignmentExpression$SE)) {
+      return SNodeOperations.getContainingLink(child).equals(LINKS.rValue$spNK);
+    }
+    if (SNodeOperations.isInstanceOf(parent, CONCEPTS.ReturnStatement$lt)) {
+      // a method declares its return type; a closure infers it from its returns
+      return SNodeOperations.isInstanceOf(enclosingFunction(parent), CONCEPTS.BaseMethodDeclaration$kD);
+    }
+    if (SNodeOperations.isInstanceOf(parent, CONCEPTS.ExpressionStatement$O8)) {
+      return true;
+    }
+    if (SNodeOperations.isInstanceOf(parent, CONCEPTS.CastExpression$$8)) {
+      // (U) (T) e --> (U) e is legal only when U and the type of e are related
+      SNode outer = SLinkOperations.getTarget((SNodeOperations.cast(parent, CONCEPTS.CastExpression$$8)), LINKS.type$XD7M);
+      return SNodeOperations.isInstanceOf(operandType, CONCEPTS.ClassifierType$bL) && (isSubtype(operandType, outer) || isSubtype(outer, operandType));
+    }
+    if (SNodeOperations.isInstanceOf(parent, CONCEPTS.IMethodCall$M9) && SNodeOperations.getContainingLink(child).equals(LINKS.actualArgument$pzdx)) {
+      return !(argumentTypeMatters(SNodeOperations.cast(parent, CONCEPTS.IMethodCall$M9)));
+    }
+    if (SNodeOperations.isInstanceOf(parent, CONCEPTS.DotExpression$yW) && SNodeOperations.getContainingLink(child).equals(LINKS.operand$w6IR)) {
+      SNode operation = SLinkOperations.getTarget((SNodeOperations.cast(parent, CONCEPTS.DotExpression$yW)), LINKS.operation$gs9E);
+      if (!(SNodeOperations.isInstanceOf(operation, CONCEPTS.InstanceMethodCallOperation$uu)) || !(SNodeOperations.isInstanceOf(operandType, CONCEPTS.ClassifierType$bL))) {
+        return false;
+      }
+      SNode method = SLinkOperations.getTarget((SNodeOperations.cast(operation, CONCEPTS.IMethodCall$M9)), LINKS.baseMethodDeclaration$pyYw);
+      return (method != null) && !(overloaded(SLinkOperations.getTarget((SNodeOperations.cast(operandType, CONCEPTS.ClassifierType$bL)), LINKS.classifier$cxMr), method));
+    }
+    if (SNodeOperations.isInstanceOf(parent, CONCEPTS.PlusExpression$k0)) {
+      // string concatenation calls toString either way
+      return isStringType(typeOf(parent));
+    }
+    if (SNodeOperations.isInstanceOf(parent, CONCEPTS.EqualsExpression$MF) || SNodeOperations.isInstanceOf(parent, CONCEPTS.NotEqualsExpression$aX)) {
+      // stays a reference comparison as long as the other side is a related reference type
+      SNode comparison = SNodeOperations.cast(parent, CONCEPTS.BinaryOperation$W1);
+      SNode other = typeOf((SLinkOperations.getTarget(comparison, LINKS.leftExpression$sEj) == child ? SLinkOperations.getTarget(comparison, LINKS.rightExpression$nvX) : SLinkOperations.getTarget(comparison, LINKS.leftExpression$sEj)));
+      return SNodeOperations.isInstanceOf(operandType, CONCEPTS.ClassifierType$bL) && SNodeOperations.isInstanceOf(other, CONCEPTS.ClassifierType$bL) && (isSubtype(operandType, other) || isSubtype(other, operandType));
+    }
+    if (Objects.equals(SNodeOperations.getConcept(parent).getQualifiedName(), "jetbrains.mps.baseLanguage.unitTest.structure.AssertEquals")) {
+      // the unit test generator, which runs after this one, passes both sides as Object. Matched by
+      // name to keep the generator free of a dependency on the unit test language
+      return true;
+    }
+    return false;
+  }
+  private static boolean isStringType(SNode type) {
+    // the type system answers with its own string type as well as with java.lang.String
+    if (SNodeOperations.isInstanceOf(type, CONCEPTS.StringType$uX)) {
+      return true;
+    }
+    return SNodeOperations.isInstanceOf(type, CONCEPTS.ClassifierType$bL) && Objects.equals(SPropertyOperations.getString(SLinkOperations.getTarget((SNodeOperations.cast(type, CONCEPTS.ClassifierType$bL)), LINKS.classifier$cxMr), PROPS.name$MnvL), "String");
+  }
+  public static boolean castRedundant(SNode cast) {
+    // (T) e --> e when e already has the type T, or a subtype of it and the wider static type
+    // makes no difference where the expression stands. Reference types only: a cast between
+    // primitives converts, a cast to a primitive unboxes
+    SNode operand = unwrapParens(SLinkOperations.getTarget(cast, LINKS.expression$XDmN));
+    if ((operand == null) || !(SNodeOperations.isInstanceOf(SLinkOperations.getTarget(cast, LINKS.type$XD7M), CONCEPTS.ClassifierType$bL))) {
+      return false;
+    }
+    if (SNodeOperations.isInstanceOf(operand, CONCEPTS.NullLiteral$QQ) || SNodeOperations.isInstanceOf(operand, CONCEPTS.ClosureLiteral$rp) || isIife(operand)) {
+      // null has every type; a closure's type is inferred from its body; an immediately invoked
+      // closure is about to be replaced by its content
+      return false;
+    }
+    SNode operandType = typeOf(operand);
+    SNode target = SNodeOperations.cast(SLinkOperations.getTarget(cast, LINKS.type$XD7M), CONCEPTS.ClassifierType$bL);
+    String castTo = SPropertyOperations.getString(SLinkOperations.getTarget(target, LINKS.classifier$cxMr), PROPS.name$MnvL);
+    if (SNodeOperations.isInstanceOf(operandType, CONCEPTS.StringType$uX)) {
+      // the type system's own string type stands for java.lang.String
+      if (Objects.equals(castTo, "String")) {
+        return true;
+      }
+      return Objects.equals(castTo, "Object") && upcastRemovable(cast, operandType);
+    }
+    if (!(SNodeOperations.isInstanceOf(operandType, CONCEPTS.ClassifierType$bL))) {
+      return false;
+    }
+    if (structurallyEqual(operandType, SLinkOperations.getTarget(cast, LINKS.type$XD7M))) {
+      return true;
+    }
+    if (ListSequence.fromList(SLinkOperations.getChildren(target, LINKS.parameter$oqG$)).isEmpty() && ListSequence.fromList(SLinkOperations.getChildren(SLinkOperations.getTarget(target, LINKS.classifier$cxMr), LINKS.typeVariableDeclaration$Lipp)).isNotEmpty() && ListSequence.fromList(SLinkOperations.getChildren((SNodeOperations.cast(operandType, CONCEPTS.ClassifierType$bL)), LINKS.parameter$oqG$)).isNotEmpty()) {
+      // a cast to a raw type is an unchecked conversion that lets the value pass as any
+      // parameterization; the parameterized operand would not
+      return false;
+    }
+    if (!(isSubtype(operandType, SLinkOperations.getTarget(cast, LINKS.type$XD7M)))) {
+      return false;
+    }
+    return upcastRemovable(cast, operandType);
+  }
 
   private static final class CONCEPTS {
     /*package*/ static final SConcept CompactInvokeFunctionExpression$_X = MetaAdapterFactory.getConcept(0xfd3920347849419dL, 0x907112563d152375L, 0x11fb8425aa8L, "jetbrains.mps.baseLanguage.closures.structure.CompactInvokeFunctionExpression");
@@ -719,6 +957,18 @@ public class OptimizerUtil {
     /*package*/ static final SConcept ClassifierType$bL = MetaAdapterFactory.getConcept(0xf3061a5392264cc5L, 0xa443f952ceaf5816L, 0x101de48bf9eL, "jetbrains.mps.baseLanguage.structure.ClassifierType");
     /*package*/ static final SConcept TypeVariableReference$WL = MetaAdapterFactory.getConcept(0xf3061a5392264cc5L, 0xa443f952ceaf5816L, 0x102467229d8L, "jetbrains.mps.baseLanguage.structure.TypeVariableReference");
     /*package*/ static final SConcept Expression$mB = MetaAdapterFactory.getConcept(0xf3061a5392264cc5L, 0xa443f952ceaf5816L, 0xf8c37f506fL, "jetbrains.mps.baseLanguage.structure.Expression");
+    /*package*/ static final SConcept ArrayType$rh = MetaAdapterFactory.getConcept(0xf3061a5392264cc5L, 0xa443f952ceaf5816L, 0xf940d819f7L, "jetbrains.mps.baseLanguage.structure.ArrayType");
+    /*package*/ static final SConcept ConstructorDeclaration$yG = MetaAdapterFactory.getConcept(0xf3061a5392264cc5L, 0xa443f952ceaf5816L, 0xf8cc56b204L, "jetbrains.mps.baseLanguage.structure.ConstructorDeclaration");
+    /*package*/ static final SConcept VariableArityType$KF = MetaAdapterFactory.getConcept(0xf3061a5392264cc5L, 0xa443f952ceaf5816L, 0x11c08f42e7bL, "jetbrains.mps.baseLanguage.structure.VariableArityType");
+    /*package*/ static final SConcept ClassConcept$bK = MetaAdapterFactory.getConcept(0xf3061a5392264cc5L, 0xa443f952ceaf5816L, 0xf8c108ca66L, "jetbrains.mps.baseLanguage.structure.ClassConcept");
+    /*package*/ static final SConcept Interface$db = MetaAdapterFactory.getConcept(0xf3061a5392264cc5L, 0xa443f952ceaf5816L, 0x101edd46144L, "jetbrains.mps.baseLanguage.structure.Interface");
+    /*package*/ static final SConcept ClassCreator$ZG = MetaAdapterFactory.getConcept(0xf3061a5392264cc5L, 0xa443f952ceaf5816L, 0x11a59b0fbceL, "jetbrains.mps.baseLanguage.structure.ClassCreator");
+    /*package*/ static final SConcept LocalMethodCall$zT = MetaAdapterFactory.getConcept(0xf3061a5392264cc5L, 0xa443f952ceaf5816L, 0x6c6b6a1e379f9404L, "jetbrains.mps.baseLanguage.structure.LocalMethodCall");
+    /*package*/ static final SConcept InstanceMethodCallOperation$uu = MetaAdapterFactory.getConcept(0xf3061a5392264cc5L, 0xa443f952ceaf5816L, 0x118154a6332L, "jetbrains.mps.baseLanguage.structure.InstanceMethodCallOperation");
+    /*package*/ static final SConcept PlusExpression$k0 = MetaAdapterFactory.getConcept(0xf3061a5392264cc5L, 0xa443f952ceaf5816L, 0xf8cc67c7fbL, "jetbrains.mps.baseLanguage.structure.PlusExpression");
+    /*package*/ static final SConcept EqualsExpression$MF = MetaAdapterFactory.getConcept(0xf3061a5392264cc5L, 0xa443f952ceaf5816L, 0xf8cc56b210L, "jetbrains.mps.baseLanguage.structure.EqualsExpression");
+    /*package*/ static final SConcept NotEqualsExpression$aX = MetaAdapterFactory.getConcept(0xf3061a5392264cc5L, 0xa443f952ceaf5816L, 0xf9e20e303fL, "jetbrains.mps.baseLanguage.structure.NotEqualsExpression");
+    /*package*/ static final SConcept StringType$uX = MetaAdapterFactory.getConcept(0xf3061a5392264cc5L, 0xa443f952ceaf5816L, 0x11d47da71ecL, "jetbrains.mps.baseLanguage.structure.StringType");
   }
 
   private static final class LINKS {
@@ -759,6 +1009,15 @@ public class OptimizerUtil {
     /*package*/ static final SContainmentLink parameter$oqG$ = MetaAdapterFactory.getContainmentLink(0xf3061a5392264cc5L, 0xa443f952ceaf5816L, 0x101de48bf9eL, 0x102419671abL, "parameter");
     /*package*/ static final SReferenceLink typeVariableDeclaration$Lz1I = MetaAdapterFactory.getReferenceLink(0xf3061a5392264cc5L, 0xa443f952ceaf5816L, 0x102467229d8L, 0x1024673a581L, "typeVariableDeclaration");
     /*package*/ static final SContainmentLink type$a1UY = MetaAdapterFactory.getContainmentLink(0xf3061a5392264cc5L, 0xa443f952ceaf5816L, 0x450368d90ce15bc3L, 0x4ed4d318133c80ceL, "type");
+    /*package*/ static final SContainmentLink componentType$F$Gi = MetaAdapterFactory.getContainmentLink(0xf3061a5392264cc5L, 0xa443f952ceaf5816L, 0xf940d819f7L, 0xf940d819f8L, "componentType");
+    /*package*/ static final SContainmentLink parameter$5xBj = MetaAdapterFactory.getContainmentLink(0xf3061a5392264cc5L, 0xa443f952ceaf5816L, 0xf8cc56b1fcL, 0xf8cc56b1feL, "parameter");
+    /*package*/ static final SContainmentLink member$L_2d = MetaAdapterFactory.getContainmentLink(0xf3061a5392264cc5L, 0xa443f952ceaf5816L, 0x101d9d3ca30L, 0x4a9a46de59132803L, "member");
+    /*package*/ static final SContainmentLink superclass$Mp9$ = MetaAdapterFactory.getContainmentLink(0xf3061a5392264cc5L, 0xa443f952ceaf5816L, 0xf8c108ca66L, 0x10f6353296dL, "superclass");
+    /*package*/ static final SContainmentLink implementedInterface$rujG = MetaAdapterFactory.getContainmentLink(0xf3061a5392264cc5L, 0xa443f952ceaf5816L, 0xf8c108ca66L, 0xff2ac0b419L, "implementedInterface");
+    /*package*/ static final SContainmentLink extendedInterface$PDVO = MetaAdapterFactory.getContainmentLink(0xf3061a5392264cc5L, 0xa443f952ceaf5816L, 0x101edd46144L, 0x101eddadad7L, "extendedInterface");
+    /*package*/ static final SContainmentLink typeParameter$uYiw = MetaAdapterFactory.getContainmentLink(0xf3061a5392264cc5L, 0xa443f952ceaf5816L, 0x11a59b0fbceL, 0x11a59c8ffe0L, "typeParameter");
+    /*package*/ static final SContainmentLink leftExpression$sEj = MetaAdapterFactory.getContainmentLink(0xf3061a5392264cc5L, 0xa443f952ceaf5816L, 0xfbdeb6fecfL, 0xfbdeb7a11cL, "leftExpression");
+    /*package*/ static final SContainmentLink rightExpression$nvX = MetaAdapterFactory.getContainmentLink(0xf3061a5392264cc5L, 0xa443f952ceaf5816L, 0xfbdeb6fecfL, 0xfbdeb7a11bL, "rightExpression");
   }
 
   private static final class PROPS {

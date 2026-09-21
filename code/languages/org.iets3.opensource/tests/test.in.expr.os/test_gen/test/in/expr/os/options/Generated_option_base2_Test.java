@@ -12,7 +12,7 @@ import org.iets3.core.expr.simpleTypes.runtime.AH;
  */
 public class Generated_option_base2_Test {
 
-  public static final Number constant_ = (Number) new BigInteger("5");
+  public static final Number constant_ = new BigInteger("5");
   @Test
   public void numberDot_item0_8613480905506515751() throws Throwable {
     Assert.assertEquals("Expected: " + true + ", but was: " + AH.oneOf(Generated_option_base2_Test.constant_, (Number) new BigInteger("5")), (Object) true, (Object) AH.oneOf(Generated_option_base2_Test.constant_, (Number) new BigInteger("5")));
@@ -35,35 +35,35 @@ public class Generated_option_base2_Test {
   }
   @Test
   public void numberDot_item6_8613480905506515793() throws Throwable {
-    Assert.assertEquals("Expected: " + true + ", but was: " + AH.inRange(Generated_option_base2_Test.constant_, (Number) new BigInteger("0"), false, (Number) new BigInteger("5"), false), (Object) true, (Object) AH.inRange(Generated_option_base2_Test.constant_, (Number) new BigInteger("0"), false, (Number) new BigInteger("5"), false));
+    Assert.assertEquals("Expected: " + true + ", but was: " + AH.inRange(Generated_option_base2_Test.constant_, new BigInteger("0"), false, new BigInteger("5"), false), (Object) true, (Object) AH.inRange(Generated_option_base2_Test.constant_, new BigInteger("0"), false, new BigInteger("5"), false));
   }
   @Test
   public void numberDot_item7_8613480905509319660() throws Throwable {
-    Assert.assertEquals("Expected: " + false + ", but was: " + AH.inRange(Generated_option_base2_Test.constant_, (Number) new BigInteger("0"), false, (Number) new BigInteger("4"), false), (Object) false, (Object) AH.inRange(Generated_option_base2_Test.constant_, (Number) new BigInteger("0"), false, (Number) new BigInteger("4"), false));
+    Assert.assertEquals("Expected: " + false + ", but was: " + AH.inRange(Generated_option_base2_Test.constant_, new BigInteger("0"), false, new BigInteger("4"), false), (Object) false, (Object) AH.inRange(Generated_option_base2_Test.constant_, new BigInteger("0"), false, new BigInteger("4"), false));
   }
   @Test
   public void numberDot_item8_8613480905506515809() throws Throwable {
-    Assert.assertEquals("Expected: " + false + ", but was: " + AH.inRange(Generated_option_base2_Test.constant_, (Number) new BigInteger("0"), false, (Number) new BigInteger("5"), true), (Object) false, (Object) AH.inRange(Generated_option_base2_Test.constant_, (Number) new BigInteger("0"), false, (Number) new BigInteger("5"), true));
+    Assert.assertEquals("Expected: " + false + ", but was: " + AH.inRange(Generated_option_base2_Test.constant_, new BigInteger("0"), false, new BigInteger("5"), true), (Object) false, (Object) AH.inRange(Generated_option_base2_Test.constant_, new BigInteger("0"), false, new BigInteger("5"), true));
   }
   @Test
   public void numberDot_item9_8613480905506515817() throws Throwable {
-    Assert.assertEquals("Expected: " + true + ", but was: " + AH.inRange(Generated_option_base2_Test.constant_, (Number) new BigInteger("5"), false, (Number) new BigInteger("10"), false), (Object) true, (Object) AH.inRange(Generated_option_base2_Test.constant_, (Number) new BigInteger("5"), false, (Number) new BigInteger("10"), false));
+    Assert.assertEquals("Expected: " + true + ", but was: " + AH.inRange(Generated_option_base2_Test.constant_, new BigInteger("5"), false, new BigInteger("10"), false), (Object) true, (Object) AH.inRange(Generated_option_base2_Test.constant_, new BigInteger("5"), false, new BigInteger("10"), false));
   }
   @Test
   public void numberDot_item10_8613480905509342651() throws Throwable {
-    Assert.assertEquals("Expected: " + false + ", but was: " + AH.inRange(Generated_option_base2_Test.constant_, (Number) new BigInteger("6"), false, (Number) new BigInteger("10"), false), (Object) false, (Object) AH.inRange(Generated_option_base2_Test.constant_, (Number) new BigInteger("6"), false, (Number) new BigInteger("10"), false));
+    Assert.assertEquals("Expected: " + false + ", but was: " + AH.inRange(Generated_option_base2_Test.constant_, new BigInteger("6"), false, new BigInteger("10"), false), (Object) false, (Object) AH.inRange(Generated_option_base2_Test.constant_, new BigInteger("6"), false, new BigInteger("10"), false));
   }
   @Test
   public void numberDot_item11_8613480905506515833() throws Throwable {
-    Assert.assertEquals("Expected: " + false + ", but was: " + AH.inRange(Generated_option_base2_Test.constant_, (Number) new BigInteger("5"), true, (Number) new BigInteger("10"), false), (Object) false, (Object) AH.inRange(Generated_option_base2_Test.constant_, (Number) new BigInteger("5"), true, (Number) new BigInteger("10"), false));
+    Assert.assertEquals("Expected: " + false + ", but was: " + AH.inRange(Generated_option_base2_Test.constant_, new BigInteger("5"), true, new BigInteger("10"), false), (Object) false, (Object) AH.inRange(Generated_option_base2_Test.constant_, new BigInteger("5"), true, new BigInteger("10"), false));
   }
   @Test
   public void numberDot_item12_8613480905506515841() throws Throwable {
-    Assert.assertEquals("Expected: " + true + ", but was: " + AH.inRange(Generated_option_base2_Test.constant_, (Number) new BigInteger("5"), false, (Number) new BigInteger("5"), false), (Object) true, (Object) AH.inRange(Generated_option_base2_Test.constant_, (Number) new BigInteger("5"), false, (Number) new BigInteger("5"), false));
+    Assert.assertEquals("Expected: " + true + ", but was: " + AH.inRange(Generated_option_base2_Test.constant_, new BigInteger("5"), false, new BigInteger("5"), false), (Object) true, (Object) AH.inRange(Generated_option_base2_Test.constant_, new BigInteger("5"), false, new BigInteger("5"), false));
   }
   @Test
   public void numberDot_item13_8613480905506515849() throws Throwable {
-    Assert.assertEquals("Expected: " + false + ", but was: " + AH.inRange(Generated_option_base2_Test.constant_, (Number) new BigInteger("5"), true, (Number) new BigInteger("5"), true), (Object) false, (Object) AH.inRange(Generated_option_base2_Test.constant_, (Number) new BigInteger("5"), true, (Number) new BigInteger("5"), true));
+    Assert.assertEquals("Expected: " + false + ", but was: " + AH.inRange(Generated_option_base2_Test.constant_, new BigInteger("5"), true, new BigInteger("5"), true), (Object) false, (Object) AH.inRange(Generated_option_base2_Test.constant_, new BigInteger("5"), true, new BigInteger("5"), true));
   }
 
 

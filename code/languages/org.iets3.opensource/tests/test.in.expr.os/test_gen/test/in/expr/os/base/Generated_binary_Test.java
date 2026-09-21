@@ -112,131 +112,131 @@ public class Generated_binary_Test {
   }
   @Test
   public void comparision_item0_2068731624162190110() throws Throwable {
-    Assert.assertEquals("Expected: " + true + ", but was: " + (!(AH.isLess((Number) new BigInteger("1"), (Number) new BigInteger("0")))), (Object) true, (Object) !(AH.isLess((Number) new BigInteger("1"), (Number) new BigInteger("0"))));
+    Assert.assertEquals("Expected: " + true + ", but was: " + (!(AH.isLess(new BigInteger("1"), new BigInteger("0")))), (Object) true, (Object) !(AH.isLess(new BigInteger("1"), new BigInteger("0"))));
   }
   @Test
   public void comparision_item1_2068731624162198554() throws Throwable {
-    Assert.assertEquals("Expected: " + true + ", but was: " + (!(AH.isLess((Number) new BigInteger("1"), (Number) new BigInteger("1")))), (Object) true, (Object) !(AH.isLess((Number) new BigInteger("1"), (Number) new BigInteger("1"))));
+    Assert.assertEquals("Expected: " + true + ", but was: " + (!(AH.isLess(new BigInteger("1"), new BigInteger("1")))), (Object) true, (Object) !(AH.isLess(new BigInteger("1"), new BigInteger("1"))));
   }
   @Test
   public void comparision_item2_2068731624162201416() throws Throwable {
-    Assert.assertEquals("Expected: " + false + ", but was: " + (!(AH.isLess((Number) new BigInteger("1"), (Number) new BigInteger("2")))), (Object) false, (Object) !(AH.isLess((Number) new BigInteger("1"), (Number) new BigInteger("2"))));
+    Assert.assertEquals("Expected: " + false + ", but was: " + (!(AH.isLess(new BigInteger("1"), new BigInteger("2")))), (Object) false, (Object) !(AH.isLess(new BigInteger("1"), new BigInteger("2"))));
   }
   @Test
   public void comparision_item4_2068731624162204302() throws Throwable {
-    Assert.assertEquals("Expected: " + true + ", but was: " + AH.isGreater((Number) new BigInteger("1"), (Number) new BigInteger("0")), (Object) true, (Object) AH.isGreater((Number) new BigInteger("1"), (Number) new BigInteger("0")));
+    Assert.assertEquals("Expected: " + true + ", but was: " + AH.isGreater(new BigInteger("1"), new BigInteger("0")), (Object) true, (Object) AH.isGreater(new BigInteger("1"), new BigInteger("0")));
   }
   @Test
   public void comparision_item5_2068731624162207212() throws Throwable {
-    Assert.assertEquals("Expected: " + false + ", but was: " + AH.isGreater((Number) new BigInteger("1"), (Number) new BigInteger("1")), (Object) false, (Object) AH.isGreater((Number) new BigInteger("1"), (Number) new BigInteger("1")));
+    Assert.assertEquals("Expected: " + false + ", but was: " + AH.isGreater(new BigInteger("1"), new BigInteger("1")), (Object) false, (Object) AH.isGreater(new BigInteger("1"), new BigInteger("1")));
   }
   @Test
   public void comparision_item6_2068731624162212890() throws Throwable {
-    Assert.assertEquals("Expected: " + false + ", but was: " + AH.isGreater((Number) new BigInteger("1"), (Number) new BigInteger("2")), (Object) false, (Object) AH.isGreater((Number) new BigInteger("1"), (Number) new BigInteger("2")));
+    Assert.assertEquals("Expected: " + false + ", but was: " + AH.isGreater(new BigInteger("1"), new BigInteger("2")), (Object) false, (Object) AH.isGreater(new BigInteger("1"), new BigInteger("2")));
   }
   @Test
   public void comparision_item8_2068731624162213104() throws Throwable {
-    Assert.assertEquals("Expected: " + false + ", but was: " + (!(AH.isGreater((Number) new BigInteger("1"), (Number) new BigInteger("0")))), (Object) false, (Object) !(AH.isGreater((Number) new BigInteger("1"), (Number) new BigInteger("0"))));
+    Assert.assertEquals("Expected: " + false + ", but was: " + (!(AH.isGreater(new BigInteger("1"), new BigInteger("0")))), (Object) false, (Object) !(AH.isGreater(new BigInteger("1"), new BigInteger("0"))));
   }
   @Test
   public void comparision_item9_2068731624162213342() throws Throwable {
-    Assert.assertEquals("Expected: " + true + ", but was: " + (!(AH.isGreater((Number) new BigInteger("1"), (Number) new BigInteger("1")))), (Object) true, (Object) !(AH.isGreater((Number) new BigInteger("1"), (Number) new BigInteger("1"))));
+    Assert.assertEquals("Expected: " + true + ", but was: " + (!(AH.isGreater(new BigInteger("1"), new BigInteger("1")))), (Object) true, (Object) !(AH.isGreater(new BigInteger("1"), new BigInteger("1"))));
   }
   @Test
   public void comparision_item10_2068731624162216348() throws Throwable {
-    Assert.assertEquals("Expected: " + true + ", but was: " + (!(AH.isGreater((Number) new BigInteger("1"), (Number) new BigInteger("2")))), (Object) true, (Object) !(AH.isGreater((Number) new BigInteger("1"), (Number) new BigInteger("2"))));
+    Assert.assertEquals("Expected: " + true + ", but was: " + (!(AH.isGreater(new BigInteger("1"), new BigInteger("2")))), (Object) true, (Object) !(AH.isGreater(new BigInteger("1"), new BigInteger("2"))));
   }
   @Test
   public void comparision_item12_2068731624162216634() throws Throwable {
-    Assert.assertEquals("Expected: " + false + ", but was: " + AH.isLess((Number) new BigInteger("1"), (Number) new BigInteger("0")), (Object) false, (Object) AH.isLess((Number) new BigInteger("1"), (Number) new BigInteger("0")));
+    Assert.assertEquals("Expected: " + false + ", but was: " + AH.isLess(new BigInteger("1"), new BigInteger("0")), (Object) false, (Object) AH.isLess(new BigInteger("1"), new BigInteger("0")));
   }
   @Test
   public void comparision_item13_2068731624162418471() throws Throwable {
-    Assert.assertEquals("Expected: " + false + ", but was: " + AH.isLess((Number) new BigInteger("1"), (Number) new BigInteger("1")), (Object) false, (Object) AH.isLess((Number) new BigInteger("1"), (Number) new BigInteger("1")));
+    Assert.assertEquals("Expected: " + false + ", but was: " + AH.isLess(new BigInteger("1"), new BigInteger("1")), (Object) false, (Object) AH.isLess(new BigInteger("1"), new BigInteger("1")));
   }
   @Test
   public void comparision_item14_2068731624162446245() throws Throwable {
-    Assert.assertEquals("Expected: " + true + ", but was: " + AH.isLess((Number) new BigInteger("1"), (Number) new BigInteger("2")), (Object) true, (Object) AH.isLess((Number) new BigInteger("1"), (Number) new BigInteger("2")));
+    Assert.assertEquals("Expected: " + true + ", but was: " + AH.isLess(new BigInteger("1"), new BigInteger("2")), (Object) true, (Object) AH.isLess(new BigInteger("1"), new BigInteger("2")));
   }
   @Test
   public void comparision_item16_2068731624162567858() throws Throwable {
-    Assert.assertEquals("Expected: " + true + ", but was: " + AH.isEqual((Number) new BigInteger("1"), (Number) new BigInteger("1")), (Object) true, (Object) AH.isEqual((Number) new BigInteger("1"), (Number) new BigInteger("1")));
+    Assert.assertEquals("Expected: " + true + ", but was: " + AH.isEqual(new BigInteger("1"), new BigInteger("1")), (Object) true, (Object) AH.isEqual(new BigInteger("1"), new BigInteger("1")));
   }
   @Test
   public void comparision_item17_2068731624162570982() throws Throwable {
-    Assert.assertEquals("Expected: " + false + ", but was: " + AH.isEqual((Number) new BigInteger("1"), (Number) new BigInteger("2")), (Object) false, (Object) AH.isEqual((Number) new BigInteger("1"), (Number) new BigInteger("2")));
+    Assert.assertEquals("Expected: " + false + ", but was: " + AH.isEqual(new BigInteger("1"), new BigInteger("2")), (Object) false, (Object) AH.isEqual(new BigInteger("1"), new BigInteger("2")));
   }
   @Test
   public void comparision_item18_2068731624162609804() throws Throwable {
-    Assert.assertEquals("Expected: " + false + ", but was: " + (!(AH.isEqual((Number) new BigInteger("1"), (Number) new BigInteger("1")))), (Object) false, (Object) !(AH.isEqual((Number) new BigInteger("1"), (Number) new BigInteger("1"))));
+    Assert.assertEquals("Expected: " + false + ", but was: " + (!(AH.isEqual(new BigInteger("1"), new BigInteger("1")))), (Object) false, (Object) !(AH.isEqual(new BigInteger("1"), new BigInteger("1"))));
   }
   @Test
   public void comparision_item19_2068731624162681819() throws Throwable {
-    Assert.assertEquals("Expected: " + true + ", but was: " + (!(AH.isEqual((Number) new BigInteger("1"), (Number) new BigInteger("2")))), (Object) true, (Object) !(AH.isEqual((Number) new BigInteger("1"), (Number) new BigInteger("2"))));
+    Assert.assertEquals("Expected: " + true + ", but was: " + (!(AH.isEqual(new BigInteger("1"), new BigInteger("2")))), (Object) true, (Object) !(AH.isEqual(new BigInteger("1"), new BigInteger("2"))));
   }
   @Test
   public void comparisionReal_item0_2679349324984298322() throws Throwable {
-    Assert.assertEquals("Expected: " + true + ", but was: " + (!(AH.isLess((Number) new BigDecimal("1.1").setScale(1, RoundingMode.DOWN), (Number) new BigInteger("0")))), (Object) true, (Object) !(AH.isLess((Number) new BigDecimal("1.1").setScale(1, RoundingMode.DOWN), (Number) new BigInteger("0"))));
+    Assert.assertEquals("Expected: " + true + ", but was: " + (!(AH.isLess(new BigDecimal("1.1").setScale(1, RoundingMode.DOWN), new BigInteger("0")))), (Object) true, (Object) !(AH.isLess(new BigDecimal("1.1").setScale(1, RoundingMode.DOWN), new BigInteger("0"))));
   }
   @Test
   public void comparisionReal_item1_2679349324984298328() throws Throwable {
-    Assert.assertEquals("Expected: " + true + ", but was: " + (!(AH.isLess((Number) new BigDecimal("1.1").setScale(1, RoundingMode.DOWN), (Number) new BigDecimal("1.1").setScale(1, RoundingMode.DOWN)))), (Object) true, (Object) !(AH.isLess((Number) new BigDecimal("1.1").setScale(1, RoundingMode.DOWN), (Number) new BigDecimal("1.1").setScale(1, RoundingMode.DOWN))));
+    Assert.assertEquals("Expected: " + true + ", but was: " + (!(AH.isLess(new BigDecimal("1.1").setScale(1, RoundingMode.DOWN), new BigDecimal("1.1").setScale(1, RoundingMode.DOWN)))), (Object) true, (Object) !(AH.isLess(new BigDecimal("1.1").setScale(1, RoundingMode.DOWN), new BigDecimal("1.1").setScale(1, RoundingMode.DOWN))));
   }
   @Test
   public void comparisionReal_item2_2679349324984298334() throws Throwable {
-    Assert.assertEquals("Expected: " + false + ", but was: " + (!(AH.isLess((Number) new BigDecimal("1.1").setScale(1, RoundingMode.DOWN), (Number) new BigDecimal("2.1").setScale(1, RoundingMode.DOWN)))), (Object) false, (Object) !(AH.isLess((Number) new BigDecimal("1.1").setScale(1, RoundingMode.DOWN), (Number) new BigDecimal("2.1").setScale(1, RoundingMode.DOWN))));
+    Assert.assertEquals("Expected: " + false + ", but was: " + (!(AH.isLess(new BigDecimal("1.1").setScale(1, RoundingMode.DOWN), new BigDecimal("2.1").setScale(1, RoundingMode.DOWN)))), (Object) false, (Object) !(AH.isLess(new BigDecimal("1.1").setScale(1, RoundingMode.DOWN), new BigDecimal("2.1").setScale(1, RoundingMode.DOWN))));
   }
   @Test
   public void comparisionReal_item4_2679349324984298341() throws Throwable {
-    Assert.assertEquals("Expected: " + true + ", but was: " + AH.isGreater((Number) new BigDecimal("1.1").setScale(1, RoundingMode.DOWN), (Number) new BigInteger("0")), (Object) true, (Object) AH.isGreater((Number) new BigDecimal("1.1").setScale(1, RoundingMode.DOWN), (Number) new BigInteger("0")));
+    Assert.assertEquals("Expected: " + true + ", but was: " + AH.isGreater(new BigDecimal("1.1").setScale(1, RoundingMode.DOWN), new BigInteger("0")), (Object) true, (Object) AH.isGreater(new BigDecimal("1.1").setScale(1, RoundingMode.DOWN), new BigInteger("0")));
   }
   @Test
   public void comparisionReal_item5_2679349324984298347() throws Throwable {
-    Assert.assertEquals("Expected: " + false + ", but was: " + AH.isGreater((Number) new BigDecimal("1.1").setScale(1, RoundingMode.DOWN), (Number) new BigDecimal("1.1").setScale(1, RoundingMode.DOWN)), (Object) false, (Object) AH.isGreater((Number) new BigDecimal("1.1").setScale(1, RoundingMode.DOWN), (Number) new BigDecimal("1.1").setScale(1, RoundingMode.DOWN)));
+    Assert.assertEquals("Expected: " + false + ", but was: " + AH.isGreater(new BigDecimal("1.1").setScale(1, RoundingMode.DOWN), new BigDecimal("1.1").setScale(1, RoundingMode.DOWN)), (Object) false, (Object) AH.isGreater(new BigDecimal("1.1").setScale(1, RoundingMode.DOWN), new BigDecimal("1.1").setScale(1, RoundingMode.DOWN)));
   }
   @Test
   public void comparisionReal_item6_2679349324984298353() throws Throwable {
-    Assert.assertEquals("Expected: " + false + ", but was: " + AH.isGreater((Number) new BigDecimal("1.1").setScale(1, RoundingMode.DOWN), (Number) new BigDecimal("2.1").setScale(1, RoundingMode.DOWN)), (Object) false, (Object) AH.isGreater((Number) new BigDecimal("1.1").setScale(1, RoundingMode.DOWN), (Number) new BigDecimal("2.1").setScale(1, RoundingMode.DOWN)));
+    Assert.assertEquals("Expected: " + false + ", but was: " + AH.isGreater(new BigDecimal("1.1").setScale(1, RoundingMode.DOWN), new BigDecimal("2.1").setScale(1, RoundingMode.DOWN)), (Object) false, (Object) AH.isGreater(new BigDecimal("1.1").setScale(1, RoundingMode.DOWN), new BigDecimal("2.1").setScale(1, RoundingMode.DOWN)));
   }
   @Test
   public void comparisionReal_item8_2679349324984298360() throws Throwable {
-    Assert.assertEquals("Expected: " + false + ", but was: " + (!(AH.isGreater((Number) new BigDecimal("1.1").setScale(1, RoundingMode.DOWN), (Number) new BigInteger("0")))), (Object) false, (Object) !(AH.isGreater((Number) new BigDecimal("1.1").setScale(1, RoundingMode.DOWN), (Number) new BigInteger("0"))));
+    Assert.assertEquals("Expected: " + false + ", but was: " + (!(AH.isGreater(new BigDecimal("1.1").setScale(1, RoundingMode.DOWN), new BigInteger("0")))), (Object) false, (Object) !(AH.isGreater(new BigDecimal("1.1").setScale(1, RoundingMode.DOWN), new BigInteger("0"))));
   }
   @Test
   public void comparisionReal_item9_2679349324984298366() throws Throwable {
-    Assert.assertEquals("Expected: " + true + ", but was: " + (!(AH.isGreater((Number) new BigDecimal("1.1").setScale(1, RoundingMode.DOWN), (Number) new BigDecimal("1.1").setScale(1, RoundingMode.DOWN)))), (Object) true, (Object) !(AH.isGreater((Number) new BigDecimal("1.1").setScale(1, RoundingMode.DOWN), (Number) new BigDecimal("1.1").setScale(1, RoundingMode.DOWN))));
+    Assert.assertEquals("Expected: " + true + ", but was: " + (!(AH.isGreater(new BigDecimal("1.1").setScale(1, RoundingMode.DOWN), new BigDecimal("1.1").setScale(1, RoundingMode.DOWN)))), (Object) true, (Object) !(AH.isGreater(new BigDecimal("1.1").setScale(1, RoundingMode.DOWN), new BigDecimal("1.1").setScale(1, RoundingMode.DOWN))));
   }
   @Test
   public void comparisionReal_item10_2679349324984298372() throws Throwable {
-    Assert.assertEquals("Expected: " + true + ", but was: " + (!(AH.isGreater((Number) new BigDecimal("1.1").setScale(1, RoundingMode.DOWN), (Number) new BigDecimal("2.1").setScale(1, RoundingMode.DOWN)))), (Object) true, (Object) !(AH.isGreater((Number) new BigDecimal("1.1").setScale(1, RoundingMode.DOWN), (Number) new BigDecimal("2.1").setScale(1, RoundingMode.DOWN))));
+    Assert.assertEquals("Expected: " + true + ", but was: " + (!(AH.isGreater(new BigDecimal("1.1").setScale(1, RoundingMode.DOWN), new BigDecimal("2.1").setScale(1, RoundingMode.DOWN)))), (Object) true, (Object) !(AH.isGreater(new BigDecimal("1.1").setScale(1, RoundingMode.DOWN), new BigDecimal("2.1").setScale(1, RoundingMode.DOWN))));
   }
   @Test
   public void comparisionReal_item12_2679349324984298379() throws Throwable {
-    Assert.assertEquals("Expected: " + false + ", but was: " + AH.isLess((Number) new BigDecimal("1.1").setScale(1, RoundingMode.DOWN), (Number) new BigDecimal("0.1").setScale(1, RoundingMode.DOWN)), (Object) false, (Object) AH.isLess((Number) new BigDecimal("1.1").setScale(1, RoundingMode.DOWN), (Number) new BigDecimal("0.1").setScale(1, RoundingMode.DOWN)));
+    Assert.assertEquals("Expected: " + false + ", but was: " + AH.isLess(new BigDecimal("1.1").setScale(1, RoundingMode.DOWN), new BigDecimal("0.1").setScale(1, RoundingMode.DOWN)), (Object) false, (Object) AH.isLess(new BigDecimal("1.1").setScale(1, RoundingMode.DOWN), new BigDecimal("0.1").setScale(1, RoundingMode.DOWN)));
   }
   @Test
   public void comparisionReal_item13_2679349324984298385() throws Throwable {
-    Assert.assertEquals("Expected: " + false + ", but was: " + AH.isLess((Number) new BigDecimal("1.1").setScale(1, RoundingMode.DOWN), (Number) new BigDecimal("1.1").setScale(1, RoundingMode.DOWN)), (Object) false, (Object) AH.isLess((Number) new BigDecimal("1.1").setScale(1, RoundingMode.DOWN), (Number) new BigDecimal("1.1").setScale(1, RoundingMode.DOWN)));
+    Assert.assertEquals("Expected: " + false + ", but was: " + AH.isLess(new BigDecimal("1.1").setScale(1, RoundingMode.DOWN), new BigDecimal("1.1").setScale(1, RoundingMode.DOWN)), (Object) false, (Object) AH.isLess(new BigDecimal("1.1").setScale(1, RoundingMode.DOWN), new BigDecimal("1.1").setScale(1, RoundingMode.DOWN)));
   }
   @Test
   public void comparisionReal_item14_2679349324984298391() throws Throwable {
-    Assert.assertEquals("Expected: " + true + ", but was: " + AH.isLess((Number) new BigDecimal("1.1").setScale(1, RoundingMode.DOWN), (Number) new BigDecimal("2.1").setScale(1, RoundingMode.DOWN)), (Object) true, (Object) AH.isLess((Number) new BigDecimal("1.1").setScale(1, RoundingMode.DOWN), (Number) new BigDecimal("2.1").setScale(1, RoundingMode.DOWN)));
+    Assert.assertEquals("Expected: " + true + ", but was: " + AH.isLess(new BigDecimal("1.1").setScale(1, RoundingMode.DOWN), new BigDecimal("2.1").setScale(1, RoundingMode.DOWN)), (Object) true, (Object) AH.isLess(new BigDecimal("1.1").setScale(1, RoundingMode.DOWN), new BigDecimal("2.1").setScale(1, RoundingMode.DOWN)));
   }
   @Test
   public void comparisionReal_item16_2679349324984298398() throws Throwable {
-    Assert.assertEquals("Expected: " + true + ", but was: " + AH.isEqual((Number) new BigDecimal("1.1").setScale(1, RoundingMode.DOWN), (Number) new BigDecimal("1.1").setScale(1, RoundingMode.DOWN)), (Object) true, (Object) AH.isEqual((Number) new BigDecimal("1.1").setScale(1, RoundingMode.DOWN), (Number) new BigDecimal("1.1").setScale(1, RoundingMode.DOWN)));
+    Assert.assertEquals("Expected: " + true + ", but was: " + AH.isEqual(new BigDecimal("1.1").setScale(1, RoundingMode.DOWN), new BigDecimal("1.1").setScale(1, RoundingMode.DOWN)), (Object) true, (Object) AH.isEqual(new BigDecimal("1.1").setScale(1, RoundingMode.DOWN), new BigDecimal("1.1").setScale(1, RoundingMode.DOWN)));
   }
   @Test
   public void comparisionReal_item17_2679349324984298404() throws Throwable {
-    Assert.assertEquals("Expected: " + false + ", but was: " + AH.isEqual((Number) new BigDecimal("1.1").setScale(1, RoundingMode.DOWN), (Number) new BigDecimal("2.1").setScale(1, RoundingMode.DOWN)), (Object) false, (Object) AH.isEqual((Number) new BigDecimal("1.1").setScale(1, RoundingMode.DOWN), (Number) new BigDecimal("2.1").setScale(1, RoundingMode.DOWN)));
+    Assert.assertEquals("Expected: " + false + ", but was: " + AH.isEqual(new BigDecimal("1.1").setScale(1, RoundingMode.DOWN), new BigDecimal("2.1").setScale(1, RoundingMode.DOWN)), (Object) false, (Object) AH.isEqual(new BigDecimal("1.1").setScale(1, RoundingMode.DOWN), new BigDecimal("2.1").setScale(1, RoundingMode.DOWN)));
   }
   @Test
   public void comparisionReal_item18_2679349324984298410() throws Throwable {
-    Assert.assertEquals("Expected: " + false + ", but was: " + (!(AH.isEqual((Number) new BigDecimal("1.1").setScale(1, RoundingMode.DOWN), (Number) new BigDecimal("1.1").setScale(1, RoundingMode.DOWN)))), (Object) false, (Object) !(AH.isEqual((Number) new BigDecimal("1.1").setScale(1, RoundingMode.DOWN), (Number) new BigDecimal("1.1").setScale(1, RoundingMode.DOWN))));
+    Assert.assertEquals("Expected: " + false + ", but was: " + (!(AH.isEqual(new BigDecimal("1.1").setScale(1, RoundingMode.DOWN), new BigDecimal("1.1").setScale(1, RoundingMode.DOWN)))), (Object) false, (Object) !(AH.isEqual(new BigDecimal("1.1").setScale(1, RoundingMode.DOWN), new BigDecimal("1.1").setScale(1, RoundingMode.DOWN))));
   }
   @Test
   public void comparisionReal_item19_2679349324984298416() throws Throwable {
-    Assert.assertEquals("Expected: " + true + ", but was: " + (!(AH.isEqual((Number) new BigDecimal("1.1").setScale(1, RoundingMode.DOWN), (Number) new BigDecimal("2.1").setScale(1, RoundingMode.DOWN)))), (Object) true, (Object) !(AH.isEqual((Number) new BigDecimal("1.1").setScale(1, RoundingMode.DOWN), (Number) new BigDecimal("2.1").setScale(1, RoundingMode.DOWN))));
+    Assert.assertEquals("Expected: " + true + ", but was: " + (!(AH.isEqual(new BigDecimal("1.1").setScale(1, RoundingMode.DOWN), new BigDecimal("2.1").setScale(1, RoundingMode.DOWN)))), (Object) true, (Object) !(AH.isEqual(new BigDecimal("1.1").setScale(1, RoundingMode.DOWN), new BigDecimal("2.1").setScale(1, RoundingMode.DOWN))));
   }
 
 

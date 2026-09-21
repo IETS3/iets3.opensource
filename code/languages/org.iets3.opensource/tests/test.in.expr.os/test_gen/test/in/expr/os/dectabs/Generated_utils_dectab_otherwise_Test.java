@@ -19,17 +19,17 @@ public class Generated_utils_dectab_otherwise_Test {
    * otherwise in row/column, with/without predef
    */
     public static Number otherwiseWithoutPredef() {
-    Number res = (Number) new BigInteger("111");
+    Number res = new BigInteger("111");
 
     return res;
   }
   public static Number otherwiseWithPredefXY(Number x, String y) {
-    Number res = (AH.isEqual(x, (Number) new BigInteger("0")) ? (Objects.equals(y, "0") ? (Number) new BigInteger("100") : (Number) new BigInteger("110")) : (Objects.equals(y, "0") ? (Number) new BigInteger("101") : (Number) new BigInteger("111")));
+    Number res = (AH.isEqual(x, new BigInteger("0")) ? (Objects.equals(y, "0") ? (Number) new BigInteger("100") : (Number) new BigInteger("110")) : (Objects.equals(y, "0") ? (Number) new BigInteger("101") : (Number) new BigInteger("111")));
 
     return res;
   }
   public static Number otherwiseWithPredefX(Number x) {
-    Number res = (AH.isEqual(x, (Number) new BigInteger("0")) ? ((Number) new BigInteger("110")) : ((Number) new BigInteger("111")));
+    Number res = (AH.isEqual(x, new BigInteger("0")) ? ((Number) new BigInteger("110")) : ((Number) new BigInteger("111")));
 
     return res;
   }
@@ -40,18 +40,18 @@ public class Generated_utils_dectab_otherwise_Test {
   }
   public static Number defaultNoOtherwise(final Number y, final Number x) {
     Number res = ((_FunctionTypes._return_P0_E0<Number>) () -> {
-      if (AH.isEqual(x, (Number) new BigInteger("1"))) {
-        if (AH.isEqual(y, (Number) new BigInteger("1"))) {
+      if (AH.isEqual(x, new BigInteger("1"))) {
+        if (AH.isEqual(y, new BigInteger("1"))) {
           return (Number) new BigInteger("1");
-        } else if (AH.isEqual(y, (Number) new BigInteger("2"))) {
+        } else if (AH.isEqual(y, new BigInteger("2"))) {
           return (Number) new BigInteger("3");
         } else {
           return (Number) new BigInteger("0");
         }
-      } else if (AH.isEqual(x, (Number) new BigInteger("2"))) {
-        if (AH.isEqual(y, (Number) new BigInteger("1"))) {
+      } else if (AH.isEqual(x, new BigInteger("2"))) {
+        if (AH.isEqual(y, new BigInteger("1"))) {
           return (Number) new BigInteger("2");
-        } else if (AH.isEqual(y, (Number) new BigInteger("2"))) {
+        } else if (AH.isEqual(y, new BigInteger("2"))) {
           return (Number) new BigInteger("4");
         } else {
           return (Number) new BigInteger("0");
@@ -65,26 +65,26 @@ public class Generated_utils_dectab_otherwise_Test {
   }
   public static Number defaultWithOtherwise(final Number y, final Number x) {
     Number res = ((_FunctionTypes._return_P0_E0<Number>) () -> {
-      if (AH.isEqual(x, (Number) new BigInteger("1"))) {
-        if (AH.isEqual(y, (Number) new BigInteger("1"))) {
+      if (AH.isEqual(x, new BigInteger("1"))) {
+        if (AH.isEqual(y, new BigInteger("1"))) {
           return (Number) new BigInteger("1");
-        } else if (AH.isEqual(y, (Number) new BigInteger("2"))) {
+        } else if (AH.isEqual(y, new BigInteger("2"))) {
           return (Number) new BigInteger("4");
         } else {
           return (Number) new BigInteger("7");
         }
-      } else if (AH.isEqual(x, (Number) new BigInteger("2"))) {
-        if (AH.isEqual(y, (Number) new BigInteger("1"))) {
+      } else if (AH.isEqual(x, new BigInteger("2"))) {
+        if (AH.isEqual(y, new BigInteger("1"))) {
           return (Number) new BigInteger("2");
-        } else if (AH.isEqual(y, (Number) new BigInteger("2"))) {
+        } else if (AH.isEqual(y, new BigInteger("2"))) {
           return (Number) new BigInteger("5");
         } else {
           return (Number) new BigInteger("8");
         }
       } else {
-        if (AH.isEqual(y, (Number) new BigInteger("1"))) {
+        if (AH.isEqual(y, new BigInteger("1"))) {
           return (Number) new BigInteger("3");
-        } else if (AH.isEqual(y, (Number) new BigInteger("2"))) {
+        } else if (AH.isEqual(y, new BigInteger("2"))) {
           return (Number) new BigInteger("6");
         } else {
           return (Number) new BigInteger("9");
@@ -96,26 +96,26 @@ public class Generated_utils_dectab_otherwise_Test {
   }
   public static Number defaultWithOtherwiseWithPredefXY(final Number y, final Number x) {
     Number res = ((_FunctionTypes._return_P0_E0<Number>) () -> {
-      if (AH.isEqual(x, (Number) new BigInteger("1"))) {
-        if (AH.isEqual(y, (Number) new BigInteger("1"))) {
+      if (AH.isEqual(x, new BigInteger("1"))) {
+        if (AH.isEqual(y, new BigInteger("1"))) {
           return (Number) new BigInteger("1");
-        } else if (AH.isEqual(y, (Number) new BigInteger("2"))) {
+        } else if (AH.isEqual(y, new BigInteger("2"))) {
           return (Number) new BigInteger("4");
         } else {
           return (Number) new BigInteger("7");
         }
-      } else if (AH.isEqual(x, (Number) new BigInteger("2"))) {
-        if (AH.isEqual(y, (Number) new BigInteger("1"))) {
+      } else if (AH.isEqual(x, new BigInteger("2"))) {
+        if (AH.isEqual(y, new BigInteger("1"))) {
           return (Number) new BigInteger("2");
-        } else if (AH.isEqual(y, (Number) new BigInteger("2"))) {
+        } else if (AH.isEqual(y, new BigInteger("2"))) {
           return (Number) new BigInteger("5");
         } else {
           return (Number) new BigInteger("8");
         }
       } else {
-        if (AH.isEqual(y, (Number) new BigInteger("1"))) {
+        if (AH.isEqual(y, new BigInteger("1"))) {
           return (Number) new BigInteger("3");
-        } else if (AH.isEqual(y, (Number) new BigInteger("2"))) {
+        } else if (AH.isEqual(y, new BigInteger("2"))) {
           return (Number) new BigInteger("6");
         } else {
           return (Number) new BigInteger("9");
@@ -127,75 +127,75 @@ public class Generated_utils_dectab_otherwise_Test {
   }
   @Test
   public void otherwise_item0_7792260915490914525() throws Throwable {
-    Assert.assertTrue("Expected: " + (Number) new BigInteger("111") + ", but was: " + Generated_utils_dectab_otherwise_Test.otherwiseWithoutPredef(), EqualsTestOp.matches((Number) new BigInteger("111"), Generated_utils_dectab_otherwise_Test.otherwiseWithoutPredef()));
+    Assert.assertTrue("Expected: " + new BigInteger("111") + ", but was: " + Generated_utils_dectab_otherwise_Test.otherwiseWithoutPredef(), EqualsTestOp.matches(new BigInteger("111"), Generated_utils_dectab_otherwise_Test.otherwiseWithoutPredef()));
   }
   @Test
   public void otherwise_item1_4491089619974906055() throws Throwable {
-    Assert.assertTrue("Expected: " + (Number) new BigInteger("100") + ", but was: " + Generated_utils_dectab_otherwise_Test.otherwiseWithPredefXY((Number) new BigInteger("0"), "0"), EqualsTestOp.matches((Number) new BigInteger("100"), Generated_utils_dectab_otherwise_Test.otherwiseWithPredefXY((Number) new BigInteger("0"), "0")));
+    Assert.assertTrue("Expected: " + new BigInteger("100") + ", but was: " + Generated_utils_dectab_otherwise_Test.otherwiseWithPredefXY(new BigInteger("0"), "0"), EqualsTestOp.matches(new BigInteger("100"), Generated_utils_dectab_otherwise_Test.otherwiseWithPredefXY(new BigInteger("0"), "0")));
   }
   @Test
   public void otherwise_item2_4491089619974906936() throws Throwable {
-    Assert.assertTrue("Expected: " + (Number) new BigInteger("110") + ", but was: " + Generated_utils_dectab_otherwise_Test.otherwiseWithPredefXY((Number) new BigInteger("0"), "1"), EqualsTestOp.matches((Number) new BigInteger("110"), Generated_utils_dectab_otherwise_Test.otherwiseWithPredefXY((Number) new BigInteger("0"), "1")));
+    Assert.assertTrue("Expected: " + new BigInteger("110") + ", but was: " + Generated_utils_dectab_otherwise_Test.otherwiseWithPredefXY(new BigInteger("0"), "1"), EqualsTestOp.matches(new BigInteger("110"), Generated_utils_dectab_otherwise_Test.otherwiseWithPredefXY(new BigInteger("0"), "1")));
   }
   @Test
   public void otherwise_item3_7792260915491661952() throws Throwable {
-    Assert.assertTrue("Expected: " + (Number) new BigInteger("111") + ", but was: " + Generated_utils_dectab_otherwise_Test.otherwiseWithPredefXY((Number) new BigInteger("1"), "1"), EqualsTestOp.matches((Number) new BigInteger("111"), Generated_utils_dectab_otherwise_Test.otherwiseWithPredefXY((Number) new BigInteger("1"), "1")));
+    Assert.assertTrue("Expected: " + new BigInteger("111") + ", but was: " + Generated_utils_dectab_otherwise_Test.otherwiseWithPredefXY(new BigInteger("1"), "1"), EqualsTestOp.matches(new BigInteger("111"), Generated_utils_dectab_otherwise_Test.otherwiseWithPredefXY(new BigInteger("1"), "1")));
   }
   @Test
   public void otherwise_item4_4491089619974788016() throws Throwable {
-    Assert.assertTrue("Expected: " + (Number) new BigInteger("111") + ", but was: " + Generated_utils_dectab_otherwise_Test.otherwiseWithPredefX((Number) new BigInteger("1")), EqualsTestOp.matches((Number) new BigInteger("111"), Generated_utils_dectab_otherwise_Test.otherwiseWithPredefX((Number) new BigInteger("1"))));
+    Assert.assertTrue("Expected: " + new BigInteger("111") + ", but was: " + Generated_utils_dectab_otherwise_Test.otherwiseWithPredefX(new BigInteger("1")), EqualsTestOp.matches(new BigInteger("111"), Generated_utils_dectab_otherwise_Test.otherwiseWithPredefX(new BigInteger("1"))));
   }
   @Test
   public void otherwise_item5_4491089619974788759() throws Throwable {
-    Assert.assertTrue("Expected: " + (Number) new BigInteger("111") + ", but was: " + Generated_utils_dectab_otherwise_Test.otherwiseWithPredefY("1"), EqualsTestOp.matches((Number) new BigInteger("111"), Generated_utils_dectab_otherwise_Test.otherwiseWithPredefY("1")));
+    Assert.assertTrue("Expected: " + new BigInteger("111") + ", but was: " + Generated_utils_dectab_otherwise_Test.otherwiseWithPredefY("1"), EqualsTestOp.matches(new BigInteger("111"), Generated_utils_dectab_otherwise_Test.otherwiseWithPredefY("1")));
   }
   @Test
   public void otherwise_item7_8783792530929432395() throws Throwable {
-    Assert.assertTrue("Expected: " + (Number) new BigInteger("1") + ", but was: " + Generated_utils_dectab_otherwise_Test.defaultNoOtherwise((Number) new BigInteger("1"), (Number) new BigInteger("1")), EqualsTestOp.matches((Number) new BigInteger("1"), Generated_utils_dectab_otherwise_Test.defaultNoOtherwise((Number) new BigInteger("1"), (Number) new BigInteger("1"))));
+    Assert.assertTrue("Expected: " + new BigInteger("1") + ", but was: " + Generated_utils_dectab_otherwise_Test.defaultNoOtherwise(new BigInteger("1"), new BigInteger("1")), EqualsTestOp.matches(new BigInteger("1"), Generated_utils_dectab_otherwise_Test.defaultNoOtherwise(new BigInteger("1"), new BigInteger("1"))));
   }
   @Test
   public void otherwise_item8_8783792530929797125() throws Throwable {
-    Assert.assertTrue("Expected: " + (Number) new BigInteger("1") + ", but was: " + Generated_utils_dectab_otherwise_Test.defaultWithOtherwise((Number) new BigInteger("1"), (Number) new BigInteger("1")), EqualsTestOp.matches((Number) new BigInteger("1"), Generated_utils_dectab_otherwise_Test.defaultWithOtherwise((Number) new BigInteger("1"), (Number) new BigInteger("1"))));
+    Assert.assertTrue("Expected: " + new BigInteger("1") + ", but was: " + Generated_utils_dectab_otherwise_Test.defaultWithOtherwise(new BigInteger("1"), new BigInteger("1")), EqualsTestOp.matches(new BigInteger("1"), Generated_utils_dectab_otherwise_Test.defaultWithOtherwise(new BigInteger("1"), new BigInteger("1"))));
   }
   @Test
   public void otherwise_item9_6965066150162952042() throws Throwable {
-    Assert.assertTrue("Expected: " + (Number) new BigInteger("1") + ", but was: " + Generated_utils_dectab_otherwise_Test.defaultWithOtherwiseWithPredefXY((Number) new BigInteger("1"), (Number) new BigInteger("1")), EqualsTestOp.matches((Number) new BigInteger("1"), Generated_utils_dectab_otherwise_Test.defaultWithOtherwiseWithPredefXY((Number) new BigInteger("1"), (Number) new BigInteger("1"))));
+    Assert.assertTrue("Expected: " + new BigInteger("1") + ", but was: " + Generated_utils_dectab_otherwise_Test.defaultWithOtherwiseWithPredefXY(new BigInteger("1"), new BigInteger("1")), EqualsTestOp.matches(new BigInteger("1"), Generated_utils_dectab_otherwise_Test.defaultWithOtherwiseWithPredefXY(new BigInteger("1"), new BigInteger("1"))));
   }
   @Test
   public void otherwise_item11_8783792530929599814() throws Throwable {
-    Assert.assertTrue("Expected: " + (Number) new BigInteger("0") + ", but was: " + Generated_utils_dectab_otherwise_Test.defaultNoOtherwise((Number) new BigInteger("1"), (Number) new BigInteger("3")), EqualsTestOp.matches((Number) new BigInteger("0"), Generated_utils_dectab_otherwise_Test.defaultNoOtherwise((Number) new BigInteger("1"), (Number) new BigInteger("3"))));
+    Assert.assertTrue("Expected: " + new BigInteger("0") + ", but was: " + Generated_utils_dectab_otherwise_Test.defaultNoOtherwise(new BigInteger("1"), new BigInteger("3")), EqualsTestOp.matches(new BigInteger("0"), Generated_utils_dectab_otherwise_Test.defaultNoOtherwise(new BigInteger("1"), new BigInteger("3"))));
   }
   @Test
   public void otherwise_item12_8783792530929803950() throws Throwable {
-    Assert.assertTrue("Expected: " + (Number) new BigInteger("3") + ", but was: " + Generated_utils_dectab_otherwise_Test.defaultWithOtherwise((Number) new BigInteger("1"), (Number) new BigInteger("3")), EqualsTestOp.matches((Number) new BigInteger("3"), Generated_utils_dectab_otherwise_Test.defaultWithOtherwise((Number) new BigInteger("1"), (Number) new BigInteger("3"))));
+    Assert.assertTrue("Expected: " + new BigInteger("3") + ", but was: " + Generated_utils_dectab_otherwise_Test.defaultWithOtherwise(new BigInteger("1"), new BigInteger("3")), EqualsTestOp.matches(new BigInteger("3"), Generated_utils_dectab_otherwise_Test.defaultWithOtherwise(new BigInteger("1"), new BigInteger("3"))));
   }
   @Test
   public void otherwise_item13_6965066150162956589() throws Throwable {
-    Assert.assertTrue("Expected: " + (Number) new BigInteger("3") + ", but was: " + Generated_utils_dectab_otherwise_Test.defaultWithOtherwiseWithPredefXY((Number) new BigInteger("1"), (Number) new BigInteger("3")), EqualsTestOp.matches((Number) new BigInteger("3"), Generated_utils_dectab_otherwise_Test.defaultWithOtherwiseWithPredefXY((Number) new BigInteger("1"), (Number) new BigInteger("3"))));
+    Assert.assertTrue("Expected: " + new BigInteger("3") + ", but was: " + Generated_utils_dectab_otherwise_Test.defaultWithOtherwiseWithPredefXY(new BigInteger("1"), new BigInteger("3")), EqualsTestOp.matches(new BigInteger("3"), Generated_utils_dectab_otherwise_Test.defaultWithOtherwiseWithPredefXY(new BigInteger("1"), new BigInteger("3"))));
   }
   @Test
   public void otherwise_item15_8783792530929604959() throws Throwable {
-    Assert.assertTrue("Expected: " + (Number) new BigInteger("0") + ", but was: " + Generated_utils_dectab_otherwise_Test.defaultNoOtherwise((Number) new BigInteger("3"), (Number) new BigInteger("1")), EqualsTestOp.matches((Number) new BigInteger("0"), Generated_utils_dectab_otherwise_Test.defaultNoOtherwise((Number) new BigInteger("3"), (Number) new BigInteger("1"))));
+    Assert.assertTrue("Expected: " + new BigInteger("0") + ", but was: " + Generated_utils_dectab_otherwise_Test.defaultNoOtherwise(new BigInteger("3"), new BigInteger("1")), EqualsTestOp.matches(new BigInteger("0"), Generated_utils_dectab_otherwise_Test.defaultNoOtherwise(new BigInteger("3"), new BigInteger("1"))));
   }
   @Test
   public void otherwise_item16_8783792530929806625() throws Throwable {
-    Assert.assertTrue("Expected: " + (Number) new BigInteger("7") + ", but was: " + Generated_utils_dectab_otherwise_Test.defaultWithOtherwise((Number) new BigInteger("3"), (Number) new BigInteger("1")), EqualsTestOp.matches((Number) new BigInteger("7"), Generated_utils_dectab_otherwise_Test.defaultWithOtherwise((Number) new BigInteger("3"), (Number) new BigInteger("1"))));
+    Assert.assertTrue("Expected: " + new BigInteger("7") + ", but was: " + Generated_utils_dectab_otherwise_Test.defaultWithOtherwise(new BigInteger("3"), new BigInteger("1")), EqualsTestOp.matches(new BigInteger("7"), Generated_utils_dectab_otherwise_Test.defaultWithOtherwise(new BigInteger("3"), new BigInteger("1"))));
   }
   @Test
   public void otherwise_item17_6965066150162961803() throws Throwable {
-    Assert.assertTrue("Expected: " + (Number) new BigInteger("7") + ", but was: " + Generated_utils_dectab_otherwise_Test.defaultWithOtherwiseWithPredefXY((Number) new BigInteger("3"), (Number) new BigInteger("1")), EqualsTestOp.matches((Number) new BigInteger("7"), Generated_utils_dectab_otherwise_Test.defaultWithOtherwiseWithPredefXY((Number) new BigInteger("3"), (Number) new BigInteger("1"))));
+    Assert.assertTrue("Expected: " + new BigInteger("7") + ", but was: " + Generated_utils_dectab_otherwise_Test.defaultWithOtherwiseWithPredefXY(new BigInteger("3"), new BigInteger("1")), EqualsTestOp.matches(new BigInteger("7"), Generated_utils_dectab_otherwise_Test.defaultWithOtherwiseWithPredefXY(new BigInteger("3"), new BigInteger("1"))));
   }
   @Test
   public void otherwise_item19_8783792530929773236() throws Throwable {
-    Assert.assertTrue("Expected: " + (Number) new BigInteger("0") + ", but was: " + Generated_utils_dectab_otherwise_Test.defaultNoOtherwise((Number) new BigInteger("3"), (Number) new BigInteger("3")), EqualsTestOp.matches((Number) new BigInteger("0"), Generated_utils_dectab_otherwise_Test.defaultNoOtherwise((Number) new BigInteger("3"), (Number) new BigInteger("3"))));
+    Assert.assertTrue("Expected: " + new BigInteger("0") + ", but was: " + Generated_utils_dectab_otherwise_Test.defaultNoOtherwise(new BigInteger("3"), new BigInteger("3")), EqualsTestOp.matches(new BigInteger("0"), Generated_utils_dectab_otherwise_Test.defaultNoOtherwise(new BigInteger("3"), new BigInteger("3"))));
   }
   @Test
   public void otherwise_item20_8783792530929809353() throws Throwable {
-    Assert.assertTrue("Expected: " + (Number) new BigInteger("9") + ", but was: " + Generated_utils_dectab_otherwise_Test.defaultWithOtherwise((Number) new BigInteger("3"), (Number) new BigInteger("3")), EqualsTestOp.matches((Number) new BigInteger("9"), Generated_utils_dectab_otherwise_Test.defaultWithOtherwise((Number) new BigInteger("3"), (Number) new BigInteger("3"))));
+    Assert.assertTrue("Expected: " + new BigInteger("9") + ", but was: " + Generated_utils_dectab_otherwise_Test.defaultWithOtherwise(new BigInteger("3"), new BigInteger("3")), EqualsTestOp.matches(new BigInteger("9"), Generated_utils_dectab_otherwise_Test.defaultWithOtherwise(new BigInteger("3"), new BigInteger("3"))));
   }
   @Test
   public void otherwise_item21_6965066150162967123() throws Throwable {
-    Assert.assertTrue("Expected: " + (Number) new BigInteger("9") + ", but was: " + Generated_utils_dectab_otherwise_Test.defaultWithOtherwiseWithPredefXY((Number) new BigInteger("3"), (Number) new BigInteger("3")), EqualsTestOp.matches((Number) new BigInteger("9"), Generated_utils_dectab_otherwise_Test.defaultWithOtherwiseWithPredefXY((Number) new BigInteger("3"), (Number) new BigInteger("3"))));
+    Assert.assertTrue("Expected: " + new BigInteger("9") + ", but was: " + Generated_utils_dectab_otherwise_Test.defaultWithOtherwiseWithPredefXY(new BigInteger("3"), new BigInteger("3")), EqualsTestOp.matches(new BigInteger("9"), Generated_utils_dectab_otherwise_Test.defaultWithOtherwiseWithPredefXY(new BigInteger("3"), new BigInteger("3"))));
   }
 
 

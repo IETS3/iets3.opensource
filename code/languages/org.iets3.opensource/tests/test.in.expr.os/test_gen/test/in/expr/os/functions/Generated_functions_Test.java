@@ -21,100 +21,100 @@ import org.iets3.core.expr.genjava.base.rt.rt.GlobalContext;
  */
 public class Generated_functions_Test {
 
-  public static final Number constantNumber_ = (Number) new BigInteger("9");
+  public static final Number constantNumber_ = new BigInteger("9");
   @Test
   public void functions_item1_1922523186434496220() throws Throwable {
-    Assert.assertTrue("Expected: " + (Number) new BigInteger("0") + ", but was: " + Generated_functions_Test.valFun1(), EqualsTestOp.matches((Number) new BigInteger("0"), Generated_functions_Test.valFun1()));
+    Assert.assertTrue("Expected: " + new BigInteger("0") + ", but was: " + Generated_functions_Test.valFun1(), EqualsTestOp.matches(new BigInteger("0"), Generated_functions_Test.valFun1()));
   }
   @Test
   public void functions_item2_1922523186434629327() throws Throwable {
-    Assert.assertTrue("Expected: " + (Number) new BigInteger("0") + ", but was: " + Generated_functions_Test.valFun2(), EqualsTestOp.matches((Number) new BigInteger("0"), Generated_functions_Test.valFun2()));
+    Assert.assertTrue("Expected: " + new BigInteger("0") + ", but was: " + Generated_functions_Test.valFun2(), EqualsTestOp.matches(new BigInteger("0"), Generated_functions_Test.valFun2()));
   }
   @Test
   public void functions_item3_1922523186434798664() throws Throwable {
-    Assert.assertTrue("Expected: " + (Number) new BigInteger("0") + ", but was: " + Generated_functions_Test.valFun3(), EqualsTestOp.matches((Number) new BigInteger("0"), Generated_functions_Test.valFun3()));
+    Assert.assertTrue("Expected: " + new BigInteger("0") + ", but was: " + Generated_functions_Test.valFun3(), EqualsTestOp.matches(new BigInteger("0"), Generated_functions_Test.valFun3()));
   }
   @Test
   public void functions_item5_1783401584936289612() throws Throwable {
-    Assert.assertTrue("Expected: " + (Number) new BigInteger("5") + ", but was: " + Generated_functions_Test.noArg(), EqualsTestOp.matches((Number) new BigInteger("5"), Generated_functions_Test.noArg()));
+    Assert.assertTrue("Expected: " + new BigInteger("5") + ", but was: " + Generated_functions_Test.noArg(), EqualsTestOp.matches(new BigInteger("5"), Generated_functions_Test.noArg()));
   }
   @Test
   public void functions_item6_1783401584936325931() throws Throwable {
-    Assert.assertTrue("Expected: " + (Number) new BigInteger("0") + ", but was: " + Generated_functions_Test.inc((Number) new BigInteger("-1")), EqualsTestOp.matches((Number) new BigInteger("0"), Generated_functions_Test.inc((Number) new BigInteger("-1"))));
+    Assert.assertTrue("Expected: " + new BigInteger("0") + ", but was: " + Generated_functions_Test.inc(new BigInteger("-1")), EqualsTestOp.matches(new BigInteger("0"), Generated_functions_Test.inc(new BigInteger("-1"))));
   }
   @Test
   public void functions_x_7740953487930648664() throws Throwable {
-    Assert.assertTrue("Expected: " + (Number) new BigInteger("3") + ", but was: " + Generated_functions_Test.add((Number) new BigInteger("1"), (Number) new BigInteger("2")), EqualsTestOp.matches((Number) new BigInteger("3"), Generated_functions_Test.add((Number) new BigInteger("1"), (Number) new BigInteger("2"))));
+    Assert.assertTrue("Expected: " + new BigInteger("3") + ", but was: " + Generated_functions_Test.add(new BigInteger("1"), new BigInteger("2")), EqualsTestOp.matches(new BigInteger("3"), Generated_functions_Test.add(new BigInteger("1"), new BigInteger("2"))));
   }
   @Test
   public void functions_y_7740953487930648671() throws Throwable {
-    Assert.assertTrue("Expected: " + (Number) new BigInteger("6") + ", but was: " + addExt.addExt(Generated_functions_Test.add((Number) new BigInteger("1"), (Number) new BigInteger("2")), (Number) new BigInteger("3")), EqualsTestOp.matches((Number) new BigInteger("6"), addExt.addExt(Generated_functions_Test.add((Number) new BigInteger("1"), (Number) new BigInteger("2")), (Number) new BigInteger("3"))));
+    Assert.assertTrue("Expected: " + new BigInteger("6") + ", but was: " + addExt.addExt(Generated_functions_Test.add(new BigInteger("1"), new BigInteger("2")), new BigInteger("3")), EqualsTestOp.matches(new BigInteger("6"), addExt.addExt(Generated_functions_Test.add(new BigInteger("1"), new BigInteger("2")), new BigInteger("3"))));
   }
   @Test
   public void functions_item9_1783401584936398654() throws Throwable {
-    Assert.assertTrue("Expected: " + (Number) new BigInteger("4") + ", but was: " + incExt.incExt(Generated_functions_Test.add((Number) new BigInteger("1"), (Number) new BigInteger("2"))), EqualsTestOp.matches((Number) new BigInteger("4"), incExt.incExt(Generated_functions_Test.add((Number) new BigInteger("1"), (Number) new BigInteger("2")))));
+    Assert.assertTrue("Expected: " + new BigInteger("4") + ", but was: " + incExt.incExt(Generated_functions_Test.add(new BigInteger("1"), new BigInteger("2"))), EqualsTestOp.matches(new BigInteger("4"), incExt.incExt(Generated_functions_Test.add(new BigInteger("1"), new BigInteger("2")))));
   }
   @Test
   public void functions_item10_1783401584937899811() throws Throwable {
-    Assert.assertTrue("Expected: " + (Number) new BigInteger("5") + ", but was: " + Generated_functions_Test.inc(incExt.incExt(Generated_functions_Test.add((Number) new BigInteger("1"), (Number) new BigInteger("2")))), EqualsTestOp.matches((Number) new BigInteger("5"), Generated_functions_Test.inc(incExt.incExt(Generated_functions_Test.add((Number) new BigInteger("1"), (Number) new BigInteger("2"))))));
+    Assert.assertTrue("Expected: " + new BigInteger("5") + ", but was: " + Generated_functions_Test.inc(incExt.incExt(Generated_functions_Test.add(new BigInteger("1"), new BigInteger("2")))), EqualsTestOp.matches(new BigInteger("5"), Generated_functions_Test.inc(incExt.incExt(Generated_functions_Test.add(new BigInteger("1"), new BigInteger("2"))))));
   }
   @Test
   public void functions_item11_1783401584937944147() throws Throwable {
-    Assert.assertTrue("Expected: " + (Number) new BigInteger("5") + ", but was: " + incExt.incExt(incExt.incExt(Generated_functions_Test.add((Number) new BigInteger("1"), (Number) new BigInteger("2")))), EqualsTestOp.matches((Number) new BigInteger("5"), incExt.incExt(incExt.incExt(Generated_functions_Test.add((Number) new BigInteger("1"), (Number) new BigInteger("2"))))));
+    Assert.assertTrue("Expected: " + new BigInteger("5") + ", but was: " + incExt.incExt(incExt.incExt(Generated_functions_Test.add(new BigInteger("1"), new BigInteger("2")))), EqualsTestOp.matches(new BigInteger("5"), incExt.incExt(incExt.incExt(Generated_functions_Test.add(new BigInteger("1"), new BigInteger("2"))))));
   }
   @Test
   public void functions_item12_1783401584938168759() throws Throwable {
-    Assert.assertTrue("Expected: " + (Number) new BigInteger("11") + ", but was: " + Generated_functions_Test.add(incExt.incExt(Generated_functions_Test.add((Number) new BigInteger("1"), (Number) new BigInteger("2"))), incExt.incExt(addExt.addExt(Generated_functions_Test.add((Number) new BigInteger("1"), (Number) new BigInteger("2")), (Number) new BigInteger("3")))), EqualsTestOp.matches((Number) new BigInteger("11"), Generated_functions_Test.add(incExt.incExt(Generated_functions_Test.add((Number) new BigInteger("1"), (Number) new BigInteger("2"))), incExt.incExt(addExt.addExt(Generated_functions_Test.add((Number) new BigInteger("1"), (Number) new BigInteger("2")), (Number) new BigInteger("3"))))));
+    Assert.assertTrue("Expected: " + new BigInteger("11") + ", but was: " + Generated_functions_Test.add(incExt.incExt(Generated_functions_Test.add(new BigInteger("1"), new BigInteger("2"))), incExt.incExt(addExt.addExt(Generated_functions_Test.add(new BigInteger("1"), new BigInteger("2")), new BigInteger("3")))), EqualsTestOp.matches(new BigInteger("11"), Generated_functions_Test.add(incExt.incExt(Generated_functions_Test.add(new BigInteger("1"), new BigInteger("2"))), incExt.incExt(addExt.addExt(Generated_functions_Test.add(new BigInteger("1"), new BigInteger("2")), new BigInteger("3"))))));
   }
   @Test
   public void functions_item13_1783401584938151942() throws Throwable {
-    Assert.assertTrue("Expected: " + (Number) new BigInteger("8") + ", but was: " + addIncExt.addIncExt(Generated_functions_Test.add((Number) new BigInteger("1"), (Number) new BigInteger("2")), (Number) new BigInteger("3")), EqualsTestOp.matches((Number) new BigInteger("8"), addIncExt.addIncExt(Generated_functions_Test.add((Number) new BigInteger("1"), (Number) new BigInteger("2")), (Number) new BigInteger("3"))));
+    Assert.assertTrue("Expected: " + new BigInteger("8") + ", but was: " + addIncExt.addIncExt(Generated_functions_Test.add(new BigInteger("1"), new BigInteger("2")), new BigInteger("3")), EqualsTestOp.matches(new BigInteger("8"), addIncExt.addIncExt(Generated_functions_Test.add(new BigInteger("1"), new BigInteger("2")), new BigInteger("3"))));
   }
   @Test
   public void functions_item14_1922523186430007031() throws Throwable {
-    Assert.assertTrue("Expected: " + (Number) new BigInteger("9") + ", but was: " + Generated_functions_Test.getConstantNumber1(), EqualsTestOp.matches((Number) new BigInteger("9"), Generated_functions_Test.getConstantNumber1()));
+    Assert.assertTrue("Expected: " + new BigInteger("9") + ", but was: " + Generated_functions_Test.getConstantNumber1(), EqualsTestOp.matches(new BigInteger("9"), Generated_functions_Test.getConstantNumber1()));
   }
   @Test
   public void functions_item15_1922523186430121964() throws Throwable {
-    Assert.assertTrue("Expected: " + (Number) new BigInteger("9") + ", but was: " + Generated_functions_Test.getConstantNumber2(), EqualsTestOp.matches((Number) new BigInteger("9"), Generated_functions_Test.getConstantNumber2()));
+    Assert.assertTrue("Expected: " + new BigInteger("9") + ", but was: " + Generated_functions_Test.getConstantNumber2(), EqualsTestOp.matches(new BigInteger("9"), Generated_functions_Test.getConstantNumber2()));
   }
   @Test
   public void functions_item16_1922523186431142423() throws Throwable {
-    Assert.assertTrue("Expected: " + (Number) new BigInteger("9") + ", but was: " + Generated_functions_Test.getConstantNumber3((Number) new BigInteger("1")), EqualsTestOp.matches((Number) new BigInteger("9"), Generated_functions_Test.getConstantNumber3((Number) new BigInteger("1"))));
+    Assert.assertTrue("Expected: " + new BigInteger("9") + ", but was: " + Generated_functions_Test.getConstantNumber3(new BigInteger("1")), EqualsTestOp.matches(new BigInteger("9"), Generated_functions_Test.getConstantNumber3(new BigInteger("1"))));
   }
   @Test
   public void functions_item17_1922523186431439087() throws Throwable {
-    Assert.assertTrue("Expected: " + (Number) new BigInteger("1") + ", but was: " + Generated_functions_Test.getNotConstantNumber((Number) new BigInteger("1")), EqualsTestOp.matches((Number) new BigInteger("1"), Generated_functions_Test.getNotConstantNumber((Number) new BigInteger("1"))));
+    Assert.assertTrue("Expected: " + new BigInteger("1") + ", but was: " + Generated_functions_Test.getNotConstantNumber(new BigInteger("1")), EqualsTestOp.matches(new BigInteger("1"), Generated_functions_Test.getNotConstantNumber(new BigInteger("1"))));
   }
   @Test
   public void functions_item19_1922523186430430514() throws Throwable {
-    Assert.assertTrue("Expected: " + (Number) new BigInteger("2") + ", but was: " + Generated_functions_Test.returnArg((Number) new BigInteger("2")), EqualsTestOp.matches((Number) new BigInteger("2"), Generated_functions_Test.returnArg((Number) new BigInteger("2"))));
+    Assert.assertTrue("Expected: " + new BigInteger("2") + ", but was: " + Generated_functions_Test.returnArg(new BigInteger("2")), EqualsTestOp.matches(new BigInteger("2"), Generated_functions_Test.returnArg(new BigInteger("2"))));
   }
   @Test
   public void functions_item20_1783401584937967827() throws Throwable {
-    Assert.assertTrue("Expected: " + (Number) new BigInteger("7") + ", but was: " + Generated_functions_Test.nested(), EqualsTestOp.matches((Number) new BigInteger("7"), Generated_functions_Test.nested()));
+    Assert.assertTrue("Expected: " + new BigInteger("7") + ", but was: " + Generated_functions_Test.nested(), EqualsTestOp.matches(new BigInteger("7"), Generated_functions_Test.nested()));
   }
   @Test
   public void functions_item21_2143211017906938182() throws Throwable {
-    Assert.assertTrue("Expected: " + (Number) new BigInteger("11") + ", but was: " + addExt.addExt(Generated_functions_Test.constantNumber_, (Number) new BigInteger("2")), EqualsTestOp.matches((Number) new BigInteger("11"), addExt.addExt(Generated_functions_Test.constantNumber_, (Number) new BigInteger("2"))));
+    Assert.assertTrue("Expected: " + new BigInteger("11") + ", but was: " + addExt.addExt(Generated_functions_Test.constantNumber_, new BigInteger("2")), EqualsTestOp.matches(new BigInteger("11"), addExt.addExt(Generated_functions_Test.constantNumber_, new BigInteger("2"))));
   }
   @Test
   public void functions_item22_2143211017907226142() throws Throwable {
-    Assert.assertTrue("Expected: " + (Number) new BigInteger("11") + ", but was: " + addExt1.addExt1(Generated_functions_Test.constantNumber_, (Number) new BigInteger("2")), EqualsTestOp.matches((Number) new BigInteger("11"), addExt1.addExt1(Generated_functions_Test.constantNumber_, (Number) new BigInteger("2"))));
+    Assert.assertTrue("Expected: " + new BigInteger("11") + ", but was: " + addExt1.addExt1(Generated_functions_Test.constantNumber_, new BigInteger("2")), EqualsTestOp.matches(new BigInteger("11"), addExt1.addExt1(Generated_functions_Test.constantNumber_, new BigInteger("2"))));
   }
   @Test
   public void functions_item23_2143211017907385006() throws Throwable {
-    Assert.assertTrue("Expected: " + (Number) new BigInteger("13") + ", but was: " + addExt2.addExt2(Generated_functions_Test.constantNumber_, (Number) new BigInteger("2"), (Number) new BigInteger("2")), EqualsTestOp.matches((Number) new BigInteger("13"), addExt2.addExt2(Generated_functions_Test.constantNumber_, (Number) new BigInteger("2"), (Number) new BigInteger("2"))));
+    Assert.assertTrue("Expected: " + new BigInteger("13") + ", but was: " + addExt2.addExt2(Generated_functions_Test.constantNumber_, new BigInteger("2"), new BigInteger("2")), EqualsTestOp.matches(new BigInteger("13"), addExt2.addExt2(Generated_functions_Test.constantNumber_, new BigInteger("2"), new BigInteger("2"))));
   }
   public static Number valFun1() {
     Number res = ((_FunctionTypes._return_P0_E0<Number>) () -> {
-      Number dummy = (Number) new BigInteger("0");
+      Number dummy = new BigInteger("0");
       return dummy;
 
     }).invoke();
     {
       Number it = res;
-      if (!(AH.isEqual(it, (Number) new BigInteger("0")))) {
+      if (!(AH.isEqual(it, new BigInteger("0")))) {
         final Message message = new Message(BuiltinMessageKinds.error(), ContractViolatedException.POST_FAILED + ": " + "res == 0").withLocation(new ProgramLocation("r:f9a70877-66f3-464b-86cb-67a9d543be8c(test.in.expr.os.functions@tests)/6461809954108788138", "http://127.0.0.1:63320/node?ref=r%3Af9a70877-66f3-464b-86cb-67a9d543be8c%28test.in.expr.os.functions%40tests%29%2F6461809954108788138")).withAffectedMemberNames(new HashSet<String>(Arrays.<String>asList()));
         GlobalContext.MESSAGE_LOG.get().collect(message);
         throw new ContractViolatedException(message);
@@ -124,10 +124,10 @@ public class Generated_functions_Test {
     return res;
   }
   public static Number valFun2() {
-    Number res = (Number) new BigInteger("0");
+    Number res = new BigInteger("0");
     {
       Number it = res;
-      if (!(AH.isEqual(it, (Number) new BigInteger("0")))) {
+      if (!(AH.isEqual(it, new BigInteger("0")))) {
         final Message message = new Message(BuiltinMessageKinds.error(), ContractViolatedException.POST_FAILED + ": " + "res == 0").withLocation(new ProgramLocation("r:f9a70877-66f3-464b-86cb-67a9d543be8c(test.in.expr.os.functions@tests)/6461809954108789213", "http://127.0.0.1:63320/node?ref=r%3Af9a70877-66f3-464b-86cb-67a9d543be8c%28test.in.expr.os.functions%40tests%29%2F6461809954108789213")).withAffectedMemberNames(new HashSet<String>(Arrays.<String>asList()));
         GlobalContext.MESSAGE_LOG.get().collect(message);
         throw new ContractViolatedException(message);
@@ -138,11 +138,11 @@ public class Generated_functions_Test {
   }
   public static Number valFun3() {
 
-    Number dummy = (Number) new BigInteger("0");
+    Number dummy = new BigInteger("0");
     Number res = dummy;
     {
       Number it = res;
-      if (!(AH.isEqual(it, (Number) new BigInteger("0")))) {
+      if (!(AH.isEqual(it, new BigInteger("0")))) {
         final Message message = new Message(BuiltinMessageKinds.error(), ContractViolatedException.POST_FAILED + ": " + "res == 0").withLocation(new ProgramLocation("r:f9a70877-66f3-464b-86cb-67a9d543be8c(test.in.expr.os.functions@tests)/6461809954108790334", "http://127.0.0.1:63320/node?ref=r%3Af9a70877-66f3-464b-86cb-67a9d543be8c%28test.in.expr.os.functions%40tests%29%2F6461809954108790334")).withAffectedMemberNames(new HashSet<String>(Arrays.<String>asList()));
         GlobalContext.MESSAGE_LOG.get().collect(message);
         throw new ContractViolatedException(message);
@@ -152,10 +152,10 @@ public class Generated_functions_Test {
     return res;
   }
   public static Number noArg() {
-    Number res = (Number) new BigInteger("5");
+    Number res = new BigInteger("5");
     {
       Number it = res;
-      if (!(AH.isEqual(it, (Number) new BigInteger("5")))) {
+      if (!(AH.isEqual(it, new BigInteger("5")))) {
         final Message message = new Message(BuiltinMessageKinds.error(), ContractViolatedException.POST_FAILED + ": " + "res == 5").withLocation(new ProgramLocation("r:f9a70877-66f3-464b-86cb-67a9d543be8c(test.in.expr.os.functions@tests)/6461809954108792884", "http://127.0.0.1:63320/node?ref=r%3Af9a70877-66f3-464b-86cb-67a9d543be8c%28test.in.expr.os.functions%40tests%29%2F6461809954108792884")).withAffectedMemberNames(new HashSet<String>(Arrays.<String>asList()));
         GlobalContext.MESSAGE_LOG.get().collect(message);
         throw new ContractViolatedException(message);
@@ -165,10 +165,10 @@ public class Generated_functions_Test {
     return res;
   }
   public static Number inc(Number a) {
-    Number res = AH.add(a, (Number) new BigInteger("1"));
+    Number res = AH.add(a, new BigInteger("1"));
     {
       Number it = res;
-      if (!(AH.isEqual(it, AH.add(a, (Number) new BigInteger("1"))))) {
+      if (!(AH.isEqual(it, AH.add(a, new BigInteger("1"))))) {
         final Message message = new Message(BuiltinMessageKinds.error(), ContractViolatedException.POST_FAILED + ": " + "res == a + 1").withLocation(new ProgramLocation("r:f9a70877-66f3-464b-86cb-67a9d543be8c(test.in.expr.os.functions@tests)/6461809954108798047", "http://127.0.0.1:63320/node?ref=r%3Af9a70877-66f3-464b-86cb-67a9d543be8c%28test.in.expr.os.functions%40tests%29%2F6461809954108798047")).withAffectedMemberNames(new HashSet<String>(Arrays.<String>asList()));
         GlobalContext.MESSAGE_LOG.get().collect(message);
         throw new ContractViolatedException(message);
@@ -179,10 +179,10 @@ public class Generated_functions_Test {
   }
   public static class incExt {
     public static Number incExt(Number this_) {
-      Number res = AH.add(this_, (Number) new BigInteger("1"));
+      Number res = AH.add(this_, new BigInteger("1"));
       {
         Number it = res;
-        if (!(AH.isEqual(it, AH.add(this_, (Number) new BigInteger("1"))))) {
+        if (!(AH.isEqual(it, AH.add(this_, new BigInteger("1"))))) {
           final Message message = new Message(BuiltinMessageKinds.error(), ContractViolatedException.POST_FAILED + ": " + "res == this + 1").withLocation(new ProgramLocation("r:f9a70877-66f3-464b-86cb-67a9d543be8c(test.in.expr.os.functions@tests)/6461809954108807946", "http://127.0.0.1:63320/node?ref=r%3Af9a70877-66f3-464b-86cb-67a9d543be8c%28test.in.expr.os.functions%40tests%29%2F6461809954108807946")).withAffectedMemberNames(new HashSet<String>(Arrays.<String>asList()));
           GlobalContext.MESSAGE_LOG.get().collect(message);
           throw new ContractViolatedException(message);

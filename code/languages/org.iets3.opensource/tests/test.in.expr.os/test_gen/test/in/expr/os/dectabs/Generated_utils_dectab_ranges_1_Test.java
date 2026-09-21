@@ -29,9 +29,9 @@ public class Generated_utils_dectab_ranges_1_Test {
       {
         Number column_a0a0 = a;
         Number column_b0a0 = b;
-        if (AH.isEqual(column_a0a0, (Number) new BigInteger("3")) && AH.inRange(b, (Number) new BigInteger("1"), false, (Number) new BigInteger("7"), false)) {
+        if (AH.isEqual(column_a0a0, new BigInteger("3")) && AH.inRange(b, new BigInteger("1"), false, new BigInteger("7"), false)) {
           return (Number) new BigInteger("2");
-        } else if ((AH.isGreater(a, (Number) new BigInteger("5")) && (AH.isGreater(b, (Number) new BigInteger("5")) || AH.isLess(b, (Number) new BigInteger("2"))))) {
+        } else if ((AH.isGreater(a, new BigInteger("5")) && (AH.isGreater(b, new BigInteger("5")) || AH.isLess(b, new BigInteger("2"))))) {
           return (Number) new BigInteger("5");
         } else {
           return (Number) new BigInteger("0");
@@ -46,9 +46,9 @@ public class Generated_utils_dectab_ranges_1_Test {
       {
         Number column_a0a2 = a;
         Number column_b0a2 = b;
-        if (AH.inRange(b, (Number) new BigDecimal("0.9").setScale(1, RoundingMode.DOWN), false, (Number) new BigDecimal("7.1").setScale(1, RoundingMode.DOWN), false) && AH.isEqual(column_a0a2, (Number) new BigDecimal("3.1").setScale(1, RoundingMode.DOWN))) {
+        if (AH.inRange(b, new BigDecimal("0.9").setScale(1, RoundingMode.DOWN), false, new BigDecimal("7.1").setScale(1, RoundingMode.DOWN), false) && AH.isEqual(column_a0a2, new BigDecimal("3.1").setScale(1, RoundingMode.DOWN))) {
           return (Number) new BigInteger("2");
-        } else if ((AH.isGreater(a, (Number) new BigDecimal("5.1").setScale(1, RoundingMode.DOWN)) && (AH.isGreater(b, (Number) new BigDecimal("5.1").setScale(1, RoundingMode.DOWN)) || AH.isLess(b, (Number) new BigDecimal("2.1").setScale(1, RoundingMode.DOWN))))) {
+        } else if ((AH.isGreater(a, new BigDecimal("5.1").setScale(1, RoundingMode.DOWN)) && (AH.isGreater(b, new BigDecimal("5.1").setScale(1, RoundingMode.DOWN)) || AH.isLess(b, new BigDecimal("2.1").setScale(1, RoundingMode.DOWN))))) {
           return (Number) new BigInteger("5");
         } else {
           return (Number) new BigInteger("0");
@@ -60,59 +60,59 @@ public class Generated_utils_dectab_ranges_1_Test {
   }
   @Test
   public void RangeSpecersInt_item0_7862827458319566405() throws Throwable {
-    Assert.assertTrue("Expected: " + (Number) new BigInteger("2") + ", but was: " + Generated_utils_dectab_ranges_1_Test.testInt((Number) new BigInteger("3"), (Number) new BigInteger("2")), EqualsTestOp.matches((Number) new BigInteger("2"), Generated_utils_dectab_ranges_1_Test.testInt((Number) new BigInteger("3"), (Number) new BigInteger("2"))));
+    Assert.assertTrue("Expected: " + new BigInteger("2") + ", but was: " + Generated_utils_dectab_ranges_1_Test.testInt(new BigInteger("3"), new BigInteger("2")), EqualsTestOp.matches(new BigInteger("2"), Generated_utils_dectab_ranges_1_Test.testInt(new BigInteger("3"), new BigInteger("2"))));
   }
   @Test
   public void RangeSpecersInt_item1_7862827458319573573() throws Throwable {
-    Assert.assertTrue("Expected: " + (Number) new BigInteger("2") + ", but was: " + Generated_utils_dectab_ranges_1_Test.testInt((Number) new BigInteger("3"), (Number) new BigInteger("7")), EqualsTestOp.matches((Number) new BigInteger("2"), Generated_utils_dectab_ranges_1_Test.testInt((Number) new BigInteger("3"), (Number) new BigInteger("7"))));
+    Assert.assertTrue("Expected: " + new BigInteger("2") + ", but was: " + Generated_utils_dectab_ranges_1_Test.testInt(new BigInteger("3"), new BigInteger("7")), EqualsTestOp.matches(new BigInteger("2"), Generated_utils_dectab_ranges_1_Test.testInt(new BigInteger("3"), new BigInteger("7"))));
   }
   @Test
   public void RangeSpecersInt_item2_7862827458319574235() throws Throwable {
-    Assert.assertTrue("Expected: " + (Number) new BigInteger("0") + ", but was: " + Generated_utils_dectab_ranges_1_Test.testInt((Number) new BigInteger("3"), (Number) new BigInteger("8")), EqualsTestOp.matches((Number) new BigInteger("0"), Generated_utils_dectab_ranges_1_Test.testInt((Number) new BigInteger("3"), (Number) new BigInteger("8"))));
+    Assert.assertTrue("Expected: " + new BigInteger("0") + ", but was: " + Generated_utils_dectab_ranges_1_Test.testInt(new BigInteger("3"), new BigInteger("8")), EqualsTestOp.matches(new BigInteger("0"), Generated_utils_dectab_ranges_1_Test.testInt(new BigInteger("3"), new BigInteger("8"))));
   }
   @Test
   public void RangeSpecersInt_item3_7862827458319574758() throws Throwable {
-    Assert.assertTrue("Expected: " + (Number) new BigInteger("0") + ", but was: " + Generated_utils_dectab_ranges_1_Test.testInt((Number) new BigInteger("5"), (Number) new BigInteger("7")), EqualsTestOp.matches((Number) new BigInteger("0"), Generated_utils_dectab_ranges_1_Test.testInt((Number) new BigInteger("5"), (Number) new BigInteger("7"))));
+    Assert.assertTrue("Expected: " + new BigInteger("0") + ", but was: " + Generated_utils_dectab_ranges_1_Test.testInt(new BigInteger("5"), new BigInteger("7")), EqualsTestOp.matches(new BigInteger("0"), Generated_utils_dectab_ranges_1_Test.testInt(new BigInteger("5"), new BigInteger("7"))));
   }
   @Test
   public void RangeSpecersInt_item4_7862827458319577058() throws Throwable {
-    Assert.assertTrue("Expected: " + (Number) new BigInteger("5") + ", but was: " + Generated_utils_dectab_ranges_1_Test.testInt((Number) new BigInteger("6"), (Number) new BigInteger("7")), EqualsTestOp.matches((Number) new BigInteger("5"), Generated_utils_dectab_ranges_1_Test.testInt((Number) new BigInteger("6"), (Number) new BigInteger("7"))));
+    Assert.assertTrue("Expected: " + new BigInteger("5") + ", but was: " + Generated_utils_dectab_ranges_1_Test.testInt(new BigInteger("6"), new BigInteger("7")), EqualsTestOp.matches(new BigInteger("5"), Generated_utils_dectab_ranges_1_Test.testInt(new BigInteger("6"), new BigInteger("7"))));
   }
   @Test
   public void RangeSpecersInt_item5_7862827458319577773() throws Throwable {
-    Assert.assertTrue("Expected: " + (Number) new BigInteger("0") + ", but was: " + Generated_utils_dectab_ranges_1_Test.testInt((Number) new BigInteger("6"), (Number) new BigInteger("4")), EqualsTestOp.matches((Number) new BigInteger("0"), Generated_utils_dectab_ranges_1_Test.testInt((Number) new BigInteger("6"), (Number) new BigInteger("4"))));
+    Assert.assertTrue("Expected: " + new BigInteger("0") + ", but was: " + Generated_utils_dectab_ranges_1_Test.testInt(new BigInteger("6"), new BigInteger("4")), EqualsTestOp.matches(new BigInteger("0"), Generated_utils_dectab_ranges_1_Test.testInt(new BigInteger("6"), new BigInteger("4"))));
   }
   @Test
   public void RangeSpecersInt_item6_7862827458319578584() throws Throwable {
-    Assert.assertTrue("Expected: " + (Number) new BigInteger("5") + ", but was: " + Generated_utils_dectab_ranges_1_Test.testInt((Number) new BigInteger("6"), (Number) new BigInteger("1")), EqualsTestOp.matches((Number) new BigInteger("5"), Generated_utils_dectab_ranges_1_Test.testInt((Number) new BigInteger("6"), (Number) new BigInteger("1"))));
+    Assert.assertTrue("Expected: " + new BigInteger("5") + ", but was: " + Generated_utils_dectab_ranges_1_Test.testInt(new BigInteger("6"), new BigInteger("1")), EqualsTestOp.matches(new BigInteger("5"), Generated_utils_dectab_ranges_1_Test.testInt(new BigInteger("6"), new BigInteger("1"))));
   }
   @Test
   public void RangeSpecersReal_item0_8632484885910921005() throws Throwable {
-    Assert.assertTrue("Expected: " + (Number) new BigInteger("2") + ", but was: " + Generated_utils_dectab_ranges_1_Test.testReal((Number) new BigDecimal("3.1").setScale(1, RoundingMode.DOWN), (Number) new BigDecimal("2.1").setScale(1, RoundingMode.DOWN)), EqualsTestOp.matches((Number) new BigInteger("2"), Generated_utils_dectab_ranges_1_Test.testReal((Number) new BigDecimal("3.1").setScale(1, RoundingMode.DOWN), (Number) new BigDecimal("2.1").setScale(1, RoundingMode.DOWN))));
+    Assert.assertTrue("Expected: " + new BigInteger("2") + ", but was: " + Generated_utils_dectab_ranges_1_Test.testReal(new BigDecimal("3.1").setScale(1, RoundingMode.DOWN), new BigDecimal("2.1").setScale(1, RoundingMode.DOWN)), EqualsTestOp.matches(new BigInteger("2"), Generated_utils_dectab_ranges_1_Test.testReal(new BigDecimal("3.1").setScale(1, RoundingMode.DOWN), new BigDecimal("2.1").setScale(1, RoundingMode.DOWN))));
   }
   @Test
   public void RangeSpecersReal_item1_8632484885910921011() throws Throwable {
-    Assert.assertTrue("Expected: " + (Number) new BigInteger("2") + ", but was: " + Generated_utils_dectab_ranges_1_Test.testReal((Number) new BigDecimal("3.1").setScale(1, RoundingMode.DOWN), (Number) new BigDecimal("7.1").setScale(1, RoundingMode.DOWN)), EqualsTestOp.matches((Number) new BigInteger("2"), Generated_utils_dectab_ranges_1_Test.testReal((Number) new BigDecimal("3.1").setScale(1, RoundingMode.DOWN), (Number) new BigDecimal("7.1").setScale(1, RoundingMode.DOWN))));
+    Assert.assertTrue("Expected: " + new BigInteger("2") + ", but was: " + Generated_utils_dectab_ranges_1_Test.testReal(new BigDecimal("3.1").setScale(1, RoundingMode.DOWN), new BigDecimal("7.1").setScale(1, RoundingMode.DOWN)), EqualsTestOp.matches(new BigInteger("2"), Generated_utils_dectab_ranges_1_Test.testReal(new BigDecimal("3.1").setScale(1, RoundingMode.DOWN), new BigDecimal("7.1").setScale(1, RoundingMode.DOWN))));
   }
   @Test
   public void RangeSpecersReal_item2_8632484885910921017() throws Throwable {
-    Assert.assertTrue("Expected: " + (Number) new BigInteger("0") + ", but was: " + Generated_utils_dectab_ranges_1_Test.testReal((Number) new BigDecimal("3.1").setScale(1, RoundingMode.DOWN), (Number) new BigDecimal("8.1").setScale(1, RoundingMode.DOWN)), EqualsTestOp.matches((Number) new BigInteger("0"), Generated_utils_dectab_ranges_1_Test.testReal((Number) new BigDecimal("3.1").setScale(1, RoundingMode.DOWN), (Number) new BigDecimal("8.1").setScale(1, RoundingMode.DOWN))));
+    Assert.assertTrue("Expected: " + new BigInteger("0") + ", but was: " + Generated_utils_dectab_ranges_1_Test.testReal(new BigDecimal("3.1").setScale(1, RoundingMode.DOWN), new BigDecimal("8.1").setScale(1, RoundingMode.DOWN)), EqualsTestOp.matches(new BigInteger("0"), Generated_utils_dectab_ranges_1_Test.testReal(new BigDecimal("3.1").setScale(1, RoundingMode.DOWN), new BigDecimal("8.1").setScale(1, RoundingMode.DOWN))));
   }
   @Test
   public void RangeSpecersReal_item3_8632484885910921023() throws Throwable {
-    Assert.assertTrue("Expected: " + (Number) new BigInteger("0") + ", but was: " + Generated_utils_dectab_ranges_1_Test.testReal((Number) new BigDecimal("5.1").setScale(1, RoundingMode.DOWN), (Number) new BigDecimal("7.1").setScale(1, RoundingMode.DOWN)), EqualsTestOp.matches((Number) new BigInteger("0"), Generated_utils_dectab_ranges_1_Test.testReal((Number) new BigDecimal("5.1").setScale(1, RoundingMode.DOWN), (Number) new BigDecimal("7.1").setScale(1, RoundingMode.DOWN))));
+    Assert.assertTrue("Expected: " + new BigInteger("0") + ", but was: " + Generated_utils_dectab_ranges_1_Test.testReal(new BigDecimal("5.1").setScale(1, RoundingMode.DOWN), new BigDecimal("7.1").setScale(1, RoundingMode.DOWN)), EqualsTestOp.matches(new BigInteger("0"), Generated_utils_dectab_ranges_1_Test.testReal(new BigDecimal("5.1").setScale(1, RoundingMode.DOWN), new BigDecimal("7.1").setScale(1, RoundingMode.DOWN))));
   }
   @Test
   public void RangeSpecersReal_item4_8632484885910921029() throws Throwable {
-    Assert.assertTrue("Expected: " + (Number) new BigInteger("5") + ", but was: " + Generated_utils_dectab_ranges_1_Test.testReal((Number) new BigDecimal("6.1").setScale(1, RoundingMode.DOWN), (Number) new BigDecimal("7.1").setScale(1, RoundingMode.DOWN)), EqualsTestOp.matches((Number) new BigInteger("5"), Generated_utils_dectab_ranges_1_Test.testReal((Number) new BigDecimal("6.1").setScale(1, RoundingMode.DOWN), (Number) new BigDecimal("7.1").setScale(1, RoundingMode.DOWN))));
+    Assert.assertTrue("Expected: " + new BigInteger("5") + ", but was: " + Generated_utils_dectab_ranges_1_Test.testReal(new BigDecimal("6.1").setScale(1, RoundingMode.DOWN), new BigDecimal("7.1").setScale(1, RoundingMode.DOWN)), EqualsTestOp.matches(new BigInteger("5"), Generated_utils_dectab_ranges_1_Test.testReal(new BigDecimal("6.1").setScale(1, RoundingMode.DOWN), new BigDecimal("7.1").setScale(1, RoundingMode.DOWN))));
   }
   @Test
   public void RangeSpecersReal_item5_8632484885910921035() throws Throwable {
-    Assert.assertTrue("Expected: " + (Number) new BigInteger("0") + ", but was: " + Generated_utils_dectab_ranges_1_Test.testReal((Number) new BigDecimal("6.1").setScale(1, RoundingMode.DOWN), (Number) new BigDecimal("4.1").setScale(1, RoundingMode.DOWN)), EqualsTestOp.matches((Number) new BigInteger("0"), Generated_utils_dectab_ranges_1_Test.testReal((Number) new BigDecimal("6.1").setScale(1, RoundingMode.DOWN), (Number) new BigDecimal("4.1").setScale(1, RoundingMode.DOWN))));
+    Assert.assertTrue("Expected: " + new BigInteger("0") + ", but was: " + Generated_utils_dectab_ranges_1_Test.testReal(new BigDecimal("6.1").setScale(1, RoundingMode.DOWN), new BigDecimal("4.1").setScale(1, RoundingMode.DOWN)), EqualsTestOp.matches(new BigInteger("0"), Generated_utils_dectab_ranges_1_Test.testReal(new BigDecimal("6.1").setScale(1, RoundingMode.DOWN), new BigDecimal("4.1").setScale(1, RoundingMode.DOWN))));
   }
   @Test
   public void RangeSpecersReal_item6_8632484885910921041() throws Throwable {
-    Assert.assertTrue("Expected: " + (Number) new BigInteger("5") + ", but was: " + Generated_utils_dectab_ranges_1_Test.testReal((Number) new BigDecimal("6.1").setScale(1, RoundingMode.DOWN), (Number) new BigDecimal("1.1").setScale(1, RoundingMode.DOWN)), EqualsTestOp.matches((Number) new BigInteger("5"), Generated_utils_dectab_ranges_1_Test.testReal((Number) new BigDecimal("6.1").setScale(1, RoundingMode.DOWN), (Number) new BigDecimal("1.1").setScale(1, RoundingMode.DOWN))));
+    Assert.assertTrue("Expected: " + new BigInteger("5") + ", but was: " + Generated_utils_dectab_ranges_1_Test.testReal(new BigDecimal("6.1").setScale(1, RoundingMode.DOWN), new BigDecimal("1.1").setScale(1, RoundingMode.DOWN)), EqualsTestOp.matches(new BigInteger("5"), Generated_utils_dectab_ranges_1_Test.testReal(new BigDecimal("6.1").setScale(1, RoundingMode.DOWN), new BigDecimal("1.1").setScale(1, RoundingMode.DOWN))));
   }
   public enum BuLand implements Comparator<BuLand> {
     BW(),
@@ -207,11 +207,11 @@ public class Generated_utils_dectab_ranges_1_Test {
     Number column_c0t = age;
     PVector res = new _FunctionTypes._return_P0_E0<TreePVector>() {
       public TreePVector invoke() {
-        if ((column_a0t == BuLand.BW) && (!(AH.isGreater(age, (Number) new BigInteger("5"))))) {
+        if ((column_a0t == BuLand.BW) && (!(AH.isGreater(age, new BigInteger("5"))))) {
           return (TreePVector) TreePVector.<Object>from(Arrays.<Object>asList((Number) new BigDecimal("0.50").setScale(2, RoundingMode.DOWN), (Number) new BigInteger("0")));
-        } else if (((column_a0t == BuLand.BW) && AH.inRange(age, (Number) new BigInteger("7"), false, (Number) new BigInteger("14"), false))) {
+        } else if (((column_a0t == BuLand.BW) && AH.inRange(age, new BigInteger("7"), false, new BigInteger("14"), false))) {
           return (TreePVector) TreePVector.<Object>from(Arrays.<Object>asList((Number) new BigDecimal("0.75").setScale(2, RoundingMode.DOWN), (Number) new BigInteger("0")));
-        } else if (((column_a0t == BuLand.BW) && (!(AH.isLess(age, (Number) new BigInteger("15")))))) {
+        } else if (((column_a0t == BuLand.BW) && (!(AH.isLess(age, new BigInteger("15")))))) {
           return (TreePVector) TreePVector.<Object>from(Arrays.<Object>asList((Number) new BigDecimal("1.00").setScale(2, RoundingMode.DOWN), (Number) new BigInteger("0")));
         } else if ((((column_a0t == BuLand.BY) || column_a0t == BuLand.HE) && (column_b0t == false))) {
           return (TreePVector) TreePVector.<Object>from(Arrays.<Object>asList((Number) new BigDecimal("1.10").setScale(2, RoundingMode.DOWN), (Number) new BigInteger("0")));
@@ -235,11 +235,11 @@ public class Generated_utils_dectab_ranges_1_Test {
     Number column_c0v = age;
     PVector res = new _FunctionTypes._return_P0_E0<TreePVector>() {
       public TreePVector invoke() {
-        if ((column_a0v == BuLand.BW) && (!(AH.isGreater(age, (Number) new BigDecimal("5.1").setScale(1, RoundingMode.DOWN))))) {
+        if ((column_a0v == BuLand.BW) && (!(AH.isGreater(age, new BigDecimal("5.1").setScale(1, RoundingMode.DOWN))))) {
           return (TreePVector) TreePVector.<Object>from(Arrays.<Object>asList((Number) new BigDecimal("0.50").setScale(2, RoundingMode.DOWN), (Number) new BigInteger("0")));
-        } else if (((column_a0v == BuLand.BW) && AH.inRange(age, (Number) new BigDecimal("7.1").setScale(1, RoundingMode.DOWN), false, (Number) new BigDecimal("14.1").setScale(1, RoundingMode.DOWN), false))) {
+        } else if (((column_a0v == BuLand.BW) && AH.inRange(age, new BigDecimal("7.1").setScale(1, RoundingMode.DOWN), false, new BigDecimal("14.1").setScale(1, RoundingMode.DOWN), false))) {
           return (TreePVector) TreePVector.<Object>from(Arrays.<Object>asList((Number) new BigDecimal("0.75").setScale(2, RoundingMode.DOWN), (Number) new BigInteger("0")));
-        } else if (((column_a0v == BuLand.BW) && (!(AH.isLess(age, (Number) new BigDecimal("15.1").setScale(1, RoundingMode.DOWN)))))) {
+        } else if (((column_a0v == BuLand.BW) && (!(AH.isLess(age, new BigDecimal("15.1").setScale(1, RoundingMode.DOWN)))))) {
           return (TreePVector) TreePVector.<Object>from(Arrays.<Object>asList((Number) new BigDecimal("1.00").setScale(2, RoundingMode.DOWN), (Number) new BigInteger("0")));
         } else if ((((column_a0v == BuLand.BY) || column_a0v == BuLand.HE) && (column_b0v == false))) {
           return (TreePVector) TreePVector.<Object>from(Arrays.<Object>asList((Number) new BigDecimal("1.10").setScale(2, RoundingMode.DOWN), (Number) new BigInteger("0")));
@@ -259,32 +259,32 @@ public class Generated_utils_dectab_ranges_1_Test {
   }
   public static Number decideRanges(final Number aLongName, final Number a_yet_LongerName) {
     Number res = ((_FunctionTypes._return_P0_E0<Number>) () -> {
-      if (AH.isGreater(aLongName, (Number) new BigDecimal("0.5").setScale(1, RoundingMode.DOWN))) {
-        if (AH.inRange(a_yet_LongerName, (Number) new BigInteger("1"), false, (Number) new BigInteger("3"), false)) {
+      if (AH.isGreater(aLongName, new BigDecimal("0.5").setScale(1, RoundingMode.DOWN))) {
+        if (AH.inRange(a_yet_LongerName, new BigInteger("1"), false, new BigInteger("3"), false)) {
           return (Number) new BigInteger("1");
-        } else if (!(AH.isGreater(a_yet_LongerName, (Number) new BigInteger("0")))) {
+        } else if (!(AH.isGreater(a_yet_LongerName, new BigInteger("0")))) {
           return (Number) new BigInteger("4");
-        } else if (!(AH.isLess(a_yet_LongerName, (Number) new BigInteger("4")))) {
+        } else if (!(AH.isLess(a_yet_LongerName, new BigInteger("4")))) {
           return (Number) new BigInteger("7");
         } else {
           throw new AlternativesException("The proposed alternative does not exist.");
         }
-      } else if (AH.isLess(aLongName, (Number) new BigDecimal("0.5").setScale(1, RoundingMode.DOWN))) {
-        if (AH.inRange(a_yet_LongerName, (Number) new BigInteger("1"), false, (Number) new BigInteger("3"), false)) {
+      } else if (AH.isLess(aLongName, new BigDecimal("0.5").setScale(1, RoundingMode.DOWN))) {
+        if (AH.inRange(a_yet_LongerName, new BigInteger("1"), false, new BigInteger("3"), false)) {
           return (Number) new BigInteger("2");
-        } else if (!(AH.isGreater(a_yet_LongerName, (Number) new BigInteger("0")))) {
+        } else if (!(AH.isGreater(a_yet_LongerName, new BigInteger("0")))) {
           return (Number) new BigInteger("5");
-        } else if (!(AH.isLess(a_yet_LongerName, (Number) new BigInteger("4")))) {
+        } else if (!(AH.isLess(a_yet_LongerName, new BigInteger("4")))) {
           return (Number) new BigInteger("8");
         } else {
           throw new AlternativesException("The proposed alternative does not exist.");
         }
-      } else if (AH.isEqual(aLongName, (Number) new BigDecimal("0.5").setScale(1, RoundingMode.DOWN))) {
-        if (AH.inRange(a_yet_LongerName, (Number) new BigInteger("1"), false, (Number) new BigInteger("3"), false)) {
+      } else if (AH.isEqual(aLongName, new BigDecimal("0.5").setScale(1, RoundingMode.DOWN))) {
+        if (AH.inRange(a_yet_LongerName, new BigInteger("1"), false, new BigInteger("3"), false)) {
           return (Number) new BigInteger("3");
-        } else if (!(AH.isGreater(a_yet_LongerName, (Number) new BigInteger("0")))) {
+        } else if (!(AH.isGreater(a_yet_LongerName, new BigInteger("0")))) {
           return (Number) new BigInteger("6");
-        } else if (!(AH.isLess(a_yet_LongerName, (Number) new BigInteger("4")))) {
+        } else if (!(AH.isLess(a_yet_LongerName, new BigInteger("4")))) {
           return (Number) new BigInteger("9");
         } else {
           throw new AlternativesException("The proposed alternative does not exist.");
@@ -298,110 +298,110 @@ public class Generated_utils_dectab_ranges_1_Test {
   }
   @Test
   public void AssertPredef_item0_93572354156084135() throws Throwable {
-    Assert.assertTrue("Expected: " + (Number) new BigInteger("1") + ", but was: " + Generated_utils_dectab_ranges_1_Test.decideRanges((Number) new BigInteger("1"), (Number) new BigInteger("3")), EqualsTestOp.matches((Number) new BigInteger("1"), Generated_utils_dectab_ranges_1_Test.decideRanges((Number) new BigInteger("1"), (Number) new BigInteger("3"))));
+    Assert.assertTrue("Expected: " + new BigInteger("1") + ", but was: " + Generated_utils_dectab_ranges_1_Test.decideRanges(new BigInteger("1"), new BigInteger("3")), EqualsTestOp.matches(new BigInteger("1"), Generated_utils_dectab_ranges_1_Test.decideRanges(new BigInteger("1"), new BigInteger("3"))));
   }
   @Test
   public void AssertPredef_item1_93572354156084141() throws Throwable {
-    Assert.assertTrue("Expected: " + (Number) new BigInteger("5") + ", but was: " + Generated_utils_dectab_ranges_1_Test.decideRanges((Number) new BigInteger("-2"), ((BigInteger) (Number) new BigInteger("1")).negate()), EqualsTestOp.matches((Number) new BigInteger("5"), Generated_utils_dectab_ranges_1_Test.decideRanges((Number) new BigInteger("-2"), ((BigInteger) (Number) new BigInteger("1")).negate())));
+    Assert.assertTrue("Expected: " + new BigInteger("5") + ", but was: " + Generated_utils_dectab_ranges_1_Test.decideRanges(new BigInteger("-2"), new BigInteger("1").negate()), EqualsTestOp.matches(new BigInteger("5"), Generated_utils_dectab_ranges_1_Test.decideRanges(new BigInteger("-2"), new BigInteger("1").negate())));
   }
   @Test
   public void AssertPredef_item2_93572354156084148() throws Throwable {
-    Assert.assertTrue("Expected: " + (Number) new BigInteger("9") + ", but was: " + Generated_utils_dectab_ranges_1_Test.decideRanges((Number) new BigDecimal("0.5").setScale(1, RoundingMode.DOWN), (Number) new BigInteger("5")), EqualsTestOp.matches((Number) new BigInteger("9"), Generated_utils_dectab_ranges_1_Test.decideRanges((Number) new BigDecimal("0.5").setScale(1, RoundingMode.DOWN), (Number) new BigInteger("5"))));
+    Assert.assertTrue("Expected: " + new BigInteger("9") + ", but was: " + Generated_utils_dectab_ranges_1_Test.decideRanges(new BigDecimal("0.5").setScale(1, RoundingMode.DOWN), new BigInteger("5")), EqualsTestOp.matches(new BigInteger("9"), Generated_utils_dectab_ranges_1_Test.decideRanges(new BigDecimal("0.5").setScale(1, RoundingMode.DOWN), new BigInteger("5"))));
   }
   public static Number decideRanges2(final Number aLongName, final Number a_yet_LongerName) {
     Number res = ((_FunctionTypes._return_P0_E0<Number>) () -> {
-      if (AH.isEqual(aLongName, (Number) new BigInteger("1"))) {
-        if (AH.isEqual(a_yet_LongerName, (Number) new BigInteger("1"))) {
+      if (AH.isEqual(aLongName, new BigInteger("1"))) {
+        if (AH.isEqual(a_yet_LongerName, new BigInteger("1"))) {
           return (Number) new BigInteger("1");
-        } else if (AH.isEqual(a_yet_LongerName, (Number) new BigInteger("2"))) {
+        } else if (AH.isEqual(a_yet_LongerName, new BigInteger("2"))) {
           return (Number) new BigInteger("1");
-        } else if (AH.isEqual(a_yet_LongerName, (Number) new BigInteger("3"))) {
+        } else if (AH.isEqual(a_yet_LongerName, new BigInteger("3"))) {
           return (Number) new BigInteger("4");
-        } else if (AH.isEqual(a_yet_LongerName, (Number) new BigInteger("4"))) {
+        } else if (AH.isEqual(a_yet_LongerName, new BigInteger("4"))) {
           return (Number) new BigInteger("4");
-        } else if (AH.isEqual(a_yet_LongerName, (Number) new BigInteger("5"))) {
+        } else if (AH.isEqual(a_yet_LongerName, new BigInteger("5"))) {
           return (Number) new BigInteger("7");
-        } else if (AH.isEqual(a_yet_LongerName, (Number) new BigInteger("6"))) {
-          return (Number) new BigInteger("7");
-        } else {
-          throw new AlternativesException("The proposed alternative does not exist.");
-        }
-      } else if (AH.isEqual(aLongName, (Number) new BigInteger("2"))) {
-        if (AH.isEqual(a_yet_LongerName, (Number) new BigInteger("1"))) {
-          return (Number) new BigInteger("1");
-        } else if (AH.isEqual(a_yet_LongerName, (Number) new BigInteger("2"))) {
-          return (Number) new BigInteger("1");
-        } else if (AH.isEqual(a_yet_LongerName, (Number) new BigInteger("3"))) {
-          return (Number) new BigInteger("4");
-        } else if (AH.isEqual(a_yet_LongerName, (Number) new BigInteger("4"))) {
-          return (Number) new BigInteger("4");
-        } else if (AH.isEqual(a_yet_LongerName, (Number) new BigInteger("5"))) {
-          return (Number) new BigInteger("7");
-        } else if (AH.isEqual(a_yet_LongerName, (Number) new BigInteger("6"))) {
+        } else if (AH.isEqual(a_yet_LongerName, new BigInteger("6"))) {
           return (Number) new BigInteger("7");
         } else {
           throw new AlternativesException("The proposed alternative does not exist.");
         }
-      } else if (AH.isEqual(aLongName, (Number) new BigInteger("3"))) {
-        if (AH.isEqual(a_yet_LongerName, (Number) new BigInteger("1"))) {
+      } else if (AH.isEqual(aLongName, new BigInteger("2"))) {
+        if (AH.isEqual(a_yet_LongerName, new BigInteger("1"))) {
+          return (Number) new BigInteger("1");
+        } else if (AH.isEqual(a_yet_LongerName, new BigInteger("2"))) {
+          return (Number) new BigInteger("1");
+        } else if (AH.isEqual(a_yet_LongerName, new BigInteger("3"))) {
+          return (Number) new BigInteger("4");
+        } else if (AH.isEqual(a_yet_LongerName, new BigInteger("4"))) {
+          return (Number) new BigInteger("4");
+        } else if (AH.isEqual(a_yet_LongerName, new BigInteger("5"))) {
+          return (Number) new BigInteger("7");
+        } else if (AH.isEqual(a_yet_LongerName, new BigInteger("6"))) {
+          return (Number) new BigInteger("7");
+        } else {
+          throw new AlternativesException("The proposed alternative does not exist.");
+        }
+      } else if (AH.isEqual(aLongName, new BigInteger("3"))) {
+        if (AH.isEqual(a_yet_LongerName, new BigInteger("1"))) {
           return (Number) new BigInteger("2");
-        } else if (AH.isEqual(a_yet_LongerName, (Number) new BigInteger("2"))) {
+        } else if (AH.isEqual(a_yet_LongerName, new BigInteger("2"))) {
           return (Number) new BigInteger("2");
-        } else if (AH.isEqual(a_yet_LongerName, (Number) new BigInteger("3"))) {
+        } else if (AH.isEqual(a_yet_LongerName, new BigInteger("3"))) {
           return (Number) new BigInteger("5");
-        } else if (AH.isEqual(a_yet_LongerName, (Number) new BigInteger("4"))) {
+        } else if (AH.isEqual(a_yet_LongerName, new BigInteger("4"))) {
           return (Number) new BigInteger("5");
-        } else if (AH.isEqual(a_yet_LongerName, (Number) new BigInteger("5"))) {
+        } else if (AH.isEqual(a_yet_LongerName, new BigInteger("5"))) {
           return (Number) new BigInteger("8");
-        } else if (AH.isEqual(a_yet_LongerName, (Number) new BigInteger("6"))) {
+        } else if (AH.isEqual(a_yet_LongerName, new BigInteger("6"))) {
           return (Number) new BigInteger("8");
         } else {
           throw new AlternativesException("The proposed alternative does not exist.");
         }
-      } else if (AH.isEqual(aLongName, (Number) new BigInteger("4"))) {
-        if (AH.isEqual(a_yet_LongerName, (Number) new BigInteger("1"))) {
+      } else if (AH.isEqual(aLongName, new BigInteger("4"))) {
+        if (AH.isEqual(a_yet_LongerName, new BigInteger("1"))) {
           return (Number) new BigInteger("2");
-        } else if (AH.isEqual(a_yet_LongerName, (Number) new BigInteger("2"))) {
+        } else if (AH.isEqual(a_yet_LongerName, new BigInteger("2"))) {
           return (Number) new BigInteger("2");
-        } else if (AH.isEqual(a_yet_LongerName, (Number) new BigInteger("3"))) {
+        } else if (AH.isEqual(a_yet_LongerName, new BigInteger("3"))) {
           return (Number) new BigInteger("5");
-        } else if (AH.isEqual(a_yet_LongerName, (Number) new BigInteger("4"))) {
+        } else if (AH.isEqual(a_yet_LongerName, new BigInteger("4"))) {
           return (Number) new BigInteger("5");
-        } else if (AH.isEqual(a_yet_LongerName, (Number) new BigInteger("5"))) {
+        } else if (AH.isEqual(a_yet_LongerName, new BigInteger("5"))) {
           return (Number) new BigInteger("8");
-        } else if (AH.isEqual(a_yet_LongerName, (Number) new BigInteger("6"))) {
+        } else if (AH.isEqual(a_yet_LongerName, new BigInteger("6"))) {
           return (Number) new BigInteger("8");
         } else {
           throw new AlternativesException("The proposed alternative does not exist.");
         }
-      } else if (AH.isEqual(aLongName, (Number) new BigInteger("5"))) {
-        if (AH.isEqual(a_yet_LongerName, (Number) new BigInteger("1"))) {
+      } else if (AH.isEqual(aLongName, new BigInteger("5"))) {
+        if (AH.isEqual(a_yet_LongerName, new BigInteger("1"))) {
           return (Number) new BigInteger("3");
-        } else if (AH.isEqual(a_yet_LongerName, (Number) new BigInteger("2"))) {
+        } else if (AH.isEqual(a_yet_LongerName, new BigInteger("2"))) {
           return (Number) new BigInteger("3");
-        } else if (AH.isEqual(a_yet_LongerName, (Number) new BigInteger("3"))) {
+        } else if (AH.isEqual(a_yet_LongerName, new BigInteger("3"))) {
           return (Number) new BigInteger("6");
-        } else if (AH.isEqual(a_yet_LongerName, (Number) new BigInteger("4"))) {
+        } else if (AH.isEqual(a_yet_LongerName, new BigInteger("4"))) {
           return (Number) new BigInteger("6");
-        } else if (AH.isEqual(a_yet_LongerName, (Number) new BigInteger("5"))) {
+        } else if (AH.isEqual(a_yet_LongerName, new BigInteger("5"))) {
           return (Number) new BigInteger("9");
-        } else if (AH.isEqual(a_yet_LongerName, (Number) new BigInteger("6"))) {
+        } else if (AH.isEqual(a_yet_LongerName, new BigInteger("6"))) {
           return (Number) new BigInteger("9");
         } else {
           throw new AlternativesException("The proposed alternative does not exist.");
         }
-      } else if (AH.isEqual(aLongName, (Number) new BigInteger("6"))) {
-        if (AH.isEqual(a_yet_LongerName, (Number) new BigInteger("1"))) {
+      } else if (AH.isEqual(aLongName, new BigInteger("6"))) {
+        if (AH.isEqual(a_yet_LongerName, new BigInteger("1"))) {
           return (Number) new BigInteger("3");
-        } else if (AH.isEqual(a_yet_LongerName, (Number) new BigInteger("2"))) {
+        } else if (AH.isEqual(a_yet_LongerName, new BigInteger("2"))) {
           return (Number) new BigInteger("3");
-        } else if (AH.isEqual(a_yet_LongerName, (Number) new BigInteger("3"))) {
+        } else if (AH.isEqual(a_yet_LongerName, new BigInteger("3"))) {
           return (Number) new BigInteger("6");
-        } else if (AH.isEqual(a_yet_LongerName, (Number) new BigInteger("4"))) {
+        } else if (AH.isEqual(a_yet_LongerName, new BigInteger("4"))) {
           return (Number) new BigInteger("6");
-        } else if (AH.isEqual(a_yet_LongerName, (Number) new BigInteger("5"))) {
+        } else if (AH.isEqual(a_yet_LongerName, new BigInteger("5"))) {
           return (Number) new BigInteger("9");
-        } else if (AH.isEqual(a_yet_LongerName, (Number) new BigInteger("6"))) {
+        } else if (AH.isEqual(a_yet_LongerName, new BigInteger("6"))) {
           return (Number) new BigInteger("9");
         } else {
           throw new AlternativesException("The proposed alternative does not exist.");
@@ -415,15 +415,15 @@ public class Generated_utils_dectab_ranges_1_Test {
   }
   @Test
   public void AssertPredef1_item0_93572354144967295() throws Throwable {
-    Assert.assertTrue("Expected: " + (Number) new BigInteger("1") + ", but was: " + Generated_utils_dectab_ranges_1_Test.decideRanges2((Number) new BigInteger("1"), (Number) new BigInteger("1")), EqualsTestOp.matches((Number) new BigInteger("1"), Generated_utils_dectab_ranges_1_Test.decideRanges2((Number) new BigInteger("1"), (Number) new BigInteger("1"))));
+    Assert.assertTrue("Expected: " + new BigInteger("1") + ", but was: " + Generated_utils_dectab_ranges_1_Test.decideRanges2(new BigInteger("1"), new BigInteger("1")), EqualsTestOp.matches(new BigInteger("1"), Generated_utils_dectab_ranges_1_Test.decideRanges2(new BigInteger("1"), new BigInteger("1"))));
   }
   @Test
   public void AssertPredef1_item1_93572354144967301() throws Throwable {
-    Assert.assertTrue("Expected: " + (Number) new BigInteger("5") + ", but was: " + Generated_utils_dectab_ranges_1_Test.decideRanges2((Number) new BigInteger("3"), (Number) new BigInteger("4")), EqualsTestOp.matches((Number) new BigInteger("5"), Generated_utils_dectab_ranges_1_Test.decideRanges2((Number) new BigInteger("3"), (Number) new BigInteger("4"))));
+    Assert.assertTrue("Expected: " + new BigInteger("5") + ", but was: " + Generated_utils_dectab_ranges_1_Test.decideRanges2(new BigInteger("3"), new BigInteger("4")), EqualsTestOp.matches(new BigInteger("5"), Generated_utils_dectab_ranges_1_Test.decideRanges2(new BigInteger("3"), new BigInteger("4"))));
   }
   @Test
   public void AssertPredef1_item2_93572354144967308() throws Throwable {
-    Assert.assertTrue("Expected: " + (Number) new BigInteger("9") + ", but was: " + Generated_utils_dectab_ranges_1_Test.decideRanges2((Number) new BigInteger("6"), (Number) new BigInteger("5")), EqualsTestOp.matches((Number) new BigInteger("9"), Generated_utils_dectab_ranges_1_Test.decideRanges2((Number) new BigInteger("6"), (Number) new BigInteger("5"))));
+    Assert.assertTrue("Expected: " + new BigInteger("9") + ", but was: " + Generated_utils_dectab_ranges_1_Test.decideRanges2(new BigInteger("6"), new BigInteger("5")), EqualsTestOp.matches(new BigInteger("9"), Generated_utils_dectab_ranges_1_Test.decideRanges2(new BigInteger("6"), new BigInteger("5"))));
   }
   public enum art implements Comparator<art> {
     Wohnhaus(),
@@ -447,7 +447,7 @@ public class Generated_utils_dectab_ranges_1_Test {
   }
   public static Number grundsteuer(final art art, final Number einwohner) {
     Number res = ((_FunctionTypes._return_P0_E0<Number>) () -> {
-      if (AH.isLess(einwohner, (Number) new BigInteger("100000"))) {
+      if (AH.isLess(einwohner, new BigInteger("100000"))) {
         if (art == art.Wohnhaus) {
           return (Number) new BigDecimal("0.24").setScale(2, RoundingMode.DOWN);
         } else if (art == art.Doppelhaus) {
@@ -459,7 +459,7 @@ public class Generated_utils_dectab_ranges_1_Test {
         } else {
           throw new AlternativesException("The proposed alternative does not exist.");
         }
-      } else if (AH.inRange(einwohner, (Number) new BigInteger("100000"), false, (Number) new BigInteger("200000"), false)) {
+      } else if (AH.inRange(einwohner, new BigInteger("100000"), false, new BigInteger("200000"), false)) {
         if (art == art.Wohnhaus) {
           return (Number) new BigDecimal("0.31").setScale(2, RoundingMode.DOWN);
         } else if (art == art.Doppelhaus) {
@@ -471,7 +471,7 @@ public class Generated_utils_dectab_ranges_1_Test {
         } else {
           throw new AlternativesException("The proposed alternative does not exist.");
         }
-      } else if (!(AH.isLess(einwohner, (Number) new BigInteger("200001")))) {
+      } else if (!(AH.isLess(einwohner, new BigInteger("200001")))) {
         if (art == art.Wohnhaus) {
           return (Number) new BigDecimal("0.1").setScale(1, RoundingMode.DOWN);
         } else if (art == art.Doppelhaus) {
@@ -492,27 +492,27 @@ public class Generated_utils_dectab_ranges_1_Test {
   }
   @Test
   public void Grundsteuer_item0_2679810230015595612() throws Throwable {
-    Assert.assertTrue("Expected: " + (Number) new BigDecimal("0.20").setScale(2, RoundingMode.DOWN) + ", but was: " + Generated_utils_dectab_ranges_1_Test.grundsteuer(art.Kirche, (Number) new BigInteger("150000")), EqualsTestOp.matches((Number) new BigDecimal("0.20").setScale(2, RoundingMode.DOWN), Generated_utils_dectab_ranges_1_Test.grundsteuer(art.Kirche, (Number) new BigInteger("150000"))));
+    Assert.assertTrue("Expected: " + new BigDecimal("0.20").setScale(2, RoundingMode.DOWN) + ", but was: " + Generated_utils_dectab_ranges_1_Test.grundsteuer(art.Kirche, new BigInteger("150000")), EqualsTestOp.matches(new BigDecimal("0.20").setScale(2, RoundingMode.DOWN), Generated_utils_dectab_ranges_1_Test.grundsteuer(art.Kirche, new BigInteger("150000"))));
   }
   @Test
   public void Grundsteuer_item1_2679810230015616864() throws Throwable {
-    Assert.assertTrue("Expected: " + (Number) new BigDecimal("0.25").setScale(2, RoundingMode.DOWN) + ", but was: " + Generated_utils_dectab_ranges_1_Test.grundsteuer(art.Kirche, (Number) new BigInteger("90000")), EqualsTestOp.matches((Number) new BigDecimal("0.25").setScale(2, RoundingMode.DOWN), Generated_utils_dectab_ranges_1_Test.grundsteuer(art.Kirche, (Number) new BigInteger("90000"))));
+    Assert.assertTrue("Expected: " + new BigDecimal("0.25").setScale(2, RoundingMode.DOWN) + ", but was: " + Generated_utils_dectab_ranges_1_Test.grundsteuer(art.Kirche, new BigInteger("90000")), EqualsTestOp.matches(new BigDecimal("0.25").setScale(2, RoundingMode.DOWN), Generated_utils_dectab_ranges_1_Test.grundsteuer(art.Kirche, new BigInteger("90000"))));
   }
   @Test
   public void Grundsteuer_item2_2679810230015618169() throws Throwable {
-    Assert.assertTrue("Expected: " + (Number) new BigDecimal("0.1").setScale(1, RoundingMode.DOWN) + ", but was: " + Generated_utils_dectab_ranges_1_Test.grundsteuer(art.Doppelhaus, (Number) new BigInteger("200001")), EqualsTestOp.matches((Number) new BigDecimal("0.1").setScale(1, RoundingMode.DOWN), Generated_utils_dectab_ranges_1_Test.grundsteuer(art.Doppelhaus, (Number) new BigInteger("200001"))));
+    Assert.assertTrue("Expected: " + new BigDecimal("0.1").setScale(1, RoundingMode.DOWN) + ", but was: " + Generated_utils_dectab_ranges_1_Test.grundsteuer(art.Doppelhaus, new BigInteger("200001")), EqualsTestOp.matches(new BigDecimal("0.1").setScale(1, RoundingMode.DOWN), Generated_utils_dectab_ranges_1_Test.grundsteuer(art.Doppelhaus, new BigInteger("200001"))));
   }
   public static Number negate(Number v1, String v2) {
     final Number column_a0lb = v1;
     final String column_b0lb = v2;
     Number res = ((_FunctionTypes._return_P0_E0<Number>) () -> {
-      if (AH.isEqual(column_a0lb, (Number) new BigInteger("10")) && Objects.equals(column_b0lb, "Hello")) {
+      if (AH.isEqual(column_a0lb, new BigInteger("10")) && Objects.equals(column_b0lb, "Hello")) {
         return (Number) new BigInteger("1");
-      } else if ((AH.isEqual(column_a0lb, (Number) new BigInteger("10")) && !(Objects.equals(column_b0lb, "Hello")))) {
+      } else if ((AH.isEqual(column_a0lb, new BigInteger("10")) && !(Objects.equals(column_b0lb, "Hello")))) {
         return (Number) new BigInteger("2");
-      } else if (((AH.isEqual(column_a0lb, (Number) new BigInteger("11")) || AH.isEqual(column_a0lb, (Number) new BigInteger("22"))) && Objects.equals(column_b0lb, "X"))) {
+      } else if (((AH.isEqual(column_a0lb, new BigInteger("11")) || AH.isEqual(column_a0lb, new BigInteger("22"))) && Objects.equals(column_b0lb, "X"))) {
         return (Number) new BigInteger("3");
-      } else if (((!(AH.isEqual(column_a0lb, (Number) new BigInteger("11")) || AH.isEqual(column_a0lb, (Number) new BigInteger("22")))) && Objects.equals(column_b0lb, "X"))) {
+      } else if (((!(AH.isEqual(column_a0lb, new BigInteger("11")) || AH.isEqual(column_a0lb, new BigInteger("22")))) && Objects.equals(column_b0lb, "X"))) {
         return (Number) new BigInteger("4");
       } else {
         return (Number) new BigInteger("99");
@@ -523,36 +523,36 @@ public class Generated_utils_dectab_ranges_1_Test {
   }
   @Test
   public void negation_item0_3084582384761101244() throws Throwable {
-    Assert.assertTrue("Expected: " + (Number) new BigInteger("1") + ", but was: " + Generated_utils_dectab_ranges_1_Test.negate((Number) new BigInteger("10"), "Hello"), EqualsTestOp.matches((Number) new BigInteger("1"), Generated_utils_dectab_ranges_1_Test.negate((Number) new BigInteger("10"), "Hello")));
+    Assert.assertTrue("Expected: " + new BigInteger("1") + ", but was: " + Generated_utils_dectab_ranges_1_Test.negate(new BigInteger("10"), "Hello"), EqualsTestOp.matches(new BigInteger("1"), Generated_utils_dectab_ranges_1_Test.negate(new BigInteger("10"), "Hello")));
   }
   @Test
   public void negation_item1_3084582384761119174() throws Throwable {
-    Assert.assertTrue("Expected: " + (Number) new BigInteger("2") + ", but was: " + Generated_utils_dectab_ranges_1_Test.negate((Number) new BigInteger("10"), "World"), EqualsTestOp.matches((Number) new BigInteger("2"), Generated_utils_dectab_ranges_1_Test.negate((Number) new BigInteger("10"), "World")));
+    Assert.assertTrue("Expected: " + new BigInteger("2") + ", but was: " + Generated_utils_dectab_ranges_1_Test.negate(new BigInteger("10"), "World"), EqualsTestOp.matches(new BigInteger("2"), Generated_utils_dectab_ranges_1_Test.negate(new BigInteger("10"), "World")));
   }
   @Test
   public void negation_item2_3084582384761135030() throws Throwable {
-    Assert.assertTrue("Expected: " + (Number) new BigInteger("3") + ", but was: " + Generated_utils_dectab_ranges_1_Test.negate((Number) new BigInteger("11"), "X"), EqualsTestOp.matches((Number) new BigInteger("3"), Generated_utils_dectab_ranges_1_Test.negate((Number) new BigInteger("11"), "X")));
+    Assert.assertTrue("Expected: " + new BigInteger("3") + ", but was: " + Generated_utils_dectab_ranges_1_Test.negate(new BigInteger("11"), "X"), EqualsTestOp.matches(new BigInteger("3"), Generated_utils_dectab_ranges_1_Test.negate(new BigInteger("11"), "X")));
   }
   @Test
   public void negation_item3_3084582384761160647() throws Throwable {
-    Assert.assertTrue("Expected: " + (Number) new BigInteger("3") + ", but was: " + Generated_utils_dectab_ranges_1_Test.negate((Number) new BigInteger("22"), "X"), EqualsTestOp.matches((Number) new BigInteger("3"), Generated_utils_dectab_ranges_1_Test.negate((Number) new BigInteger("22"), "X")));
+    Assert.assertTrue("Expected: " + new BigInteger("3") + ", but was: " + Generated_utils_dectab_ranges_1_Test.negate(new BigInteger("22"), "X"), EqualsTestOp.matches(new BigInteger("3"), Generated_utils_dectab_ranges_1_Test.negate(new BigInteger("22"), "X")));
   }
   @Test
   public void negation_item4_3084582384761176327() throws Throwable {
-    Assert.assertTrue("Expected: " + (Number) new BigInteger("4") + ", but was: " + Generated_utils_dectab_ranges_1_Test.negate((Number) new BigInteger("42"), "X"), EqualsTestOp.matches((Number) new BigInteger("4"), Generated_utils_dectab_ranges_1_Test.negate((Number) new BigInteger("42"), "X")));
+    Assert.assertTrue("Expected: " + new BigInteger("4") + ", but was: " + Generated_utils_dectab_ranges_1_Test.negate(new BigInteger("42"), "X"), EqualsTestOp.matches(new BigInteger("4"), Generated_utils_dectab_ranges_1_Test.negate(new BigInteger("42"), "X")));
   }
   @Test
   public void negation_item5_3084582384761230912() throws Throwable {
-    Assert.assertTrue("Expected: " + (Number) new BigInteger("99") + ", but was: " + Generated_utils_dectab_ranges_1_Test.negate((Number) new BigInteger("11"), "Z"), EqualsTestOp.matches((Number) new BigInteger("99"), Generated_utils_dectab_ranges_1_Test.negate((Number) new BigInteger("11"), "Z")));
+    Assert.assertTrue("Expected: " + new BigInteger("99") + ", but was: " + Generated_utils_dectab_ranges_1_Test.negate(new BigInteger("11"), "Z"), EqualsTestOp.matches(new BigInteger("99"), Generated_utils_dectab_ranges_1_Test.negate(new BigInteger("11"), "Z")));
   }
   public static PVector simpleMulteResults(Boolean v1, Number v2) {
     final Boolean column_a0pb = v1;
     final Number column_b0pb = v2;
     PVector res = new _FunctionTypes._return_P0_E0<TreePVector>() {
       public TreePVector invoke() {
-        if ((column_a0pb == true) && AH.isEqual(column_b0pb, (Number) new BigInteger("1"))) {
+        if ((column_a0pb == true) && AH.isEqual(column_b0pb, new BigInteger("1"))) {
           return (TreePVector) TreePVector.<Object>from(Arrays.<Object>asList((TreePVector) TreePVector.<Object>from(Arrays.<Object>asList(true, true, true)), "done"));
-        } else if (((column_a0pb == false) && AH.isEqual(column_b0pb, (Number) new BigInteger("2")))) {
+        } else if (((column_a0pb == false) && AH.isEqual(column_b0pb, new BigInteger("2")))) {
           return (TreePVector) TreePVector.<Object>from(Arrays.<Object>asList((TreePVector) TreePVector.<Object>from(Arrays.<Object>asList(false, false, false)), "not done"));
         } else {
           throw new AlternativesException("The proposed alternative does not exist.");
@@ -562,8 +562,8 @@ public class Generated_utils_dectab_ranges_1_Test {
 
     return res;
   }
-  public static final PVector res1_ = Generated_utils_dectab_ranges_1_Test.simpleMulteResults(true, (Number) new BigInteger("1"));
-  public static final PVector res2_ = Generated_utils_dectab_ranges_1_Test.simpleMulteResults(false, (Number) new BigInteger("2"));
+  public static final PVector res1_ = Generated_utils_dectab_ranges_1_Test.simpleMulteResults(true, new BigInteger("1"));
+  public static final PVector res2_ = Generated_utils_dectab_ranges_1_Test.simpleMulteResults(false, new BigInteger("2"));
   public static final PVector<Boolean> a_ = (PVector) Generated_utils_dectab_ranges_1_Test.res1_.get(0);
   @Test
   public void multiDecTableResultAccess_item0_1370861100487789635() throws Throwable {/* 
@@ -573,19 +573,19 @@ public class Generated_utils_dectab_ranges_1_Test {
      * index access
      */
     
-    Assert.assertEquals("Expected: " + true + ", but was: " + ((PVector) Generated_utils_dectab_ranges_1_Test.res1_.get(0)).get(((Number) new BigInteger("0")).intValue()), (Object) true, (Object) ((PVector) Generated_utils_dectab_ranges_1_Test.res1_.get(0)).get(((Number) new BigInteger("0")).intValue()));
+    Assert.assertEquals("Expected: " + true + ", but was: " + ((PVector) Generated_utils_dectab_ranges_1_Test.res1_.get(0)).get(new BigInteger("0").intValue()), (Object) true, (Object) ((PVector) Generated_utils_dectab_ranges_1_Test.res1_.get(0)).get(new BigInteger("0").intValue()));
   }
   @Test
   public void multiDecTableResultAccess_item1_1370861100487826820() throws Throwable {
-    Assert.assertEquals("Expected: " + "done" + ", but was: " + (String) Generated_utils_dectab_ranges_1_Test.res1_.get(1), (Object) "done", (Object) (String) Generated_utils_dectab_ranges_1_Test.res1_.get(1));
+    Assert.assertEquals("Expected: " + "done" + ", but was: " + (String) Generated_utils_dectab_ranges_1_Test.res1_.get(1), "done", (String) Generated_utils_dectab_ranges_1_Test.res1_.get(1));
   }
   @Test
   public void multiDecTableResultAccess_item2_1370861100487828796() throws Throwable {
-    Assert.assertEquals("Expected: " + false + ", but was: " + ((PVector) Generated_utils_dectab_ranges_1_Test.res2_.get(0)).get(((Number) new BigInteger("0")).intValue()), (Object) false, (Object) ((PVector) Generated_utils_dectab_ranges_1_Test.res2_.get(0)).get(((Number) new BigInteger("0")).intValue()));
+    Assert.assertEquals("Expected: " + false + ", but was: " + ((PVector) Generated_utils_dectab_ranges_1_Test.res2_.get(0)).get(new BigInteger("0").intValue()), (Object) false, (Object) ((PVector) Generated_utils_dectab_ranges_1_Test.res2_.get(0)).get(new BigInteger("0").intValue()));
   }
   @Test
   public void multiDecTableResultAccess_item3_1370861100487810701() throws Throwable {
-    Assert.assertEquals("Expected: " + "not done" + ", but was: " + (String) Generated_utils_dectab_ranges_1_Test.res2_.get(1), (Object) "not done", (Object) (String) Generated_utils_dectab_ranges_1_Test.res2_.get(1));
+    Assert.assertEquals("Expected: " + "not done" + ", but was: " + (String) Generated_utils_dectab_ranges_1_Test.res2_.get(1), "not done", (String) Generated_utils_dectab_ranges_1_Test.res2_.get(1));
   }
   @Test
   public void multiDecTableResultAccess_item5_1370861100487826175() throws Throwable {/* 
@@ -595,19 +595,19 @@ public class Generated_utils_dectab_ranges_1_Test {
      * named access
      */
     
-    Assert.assertEquals("Expected: " + true + ", but was: " + ((PVector) Generated_utils_dectab_ranges_1_Test.res1_.get(0)).get(((Number) new BigInteger("0")).intValue()), (Object) true, (Object) ((PVector) Generated_utils_dectab_ranges_1_Test.res1_.get(0)).get(((Number) new BigInteger("0")).intValue()));
+    Assert.assertEquals("Expected: " + true + ", but was: " + ((PVector) Generated_utils_dectab_ranges_1_Test.res1_.get(0)).get(new BigInteger("0").intValue()), (Object) true, (Object) ((PVector) Generated_utils_dectab_ranges_1_Test.res1_.get(0)).get(new BigInteger("0").intValue()));
   }
   @Test
   public void multiDecTableResultAccess_item6_1370861100487826769() throws Throwable {
-    Assert.assertEquals("Expected: " + "done" + ", but was: " + (String) Generated_utils_dectab_ranges_1_Test.res1_.get(1), (Object) "done", (Object) (String) Generated_utils_dectab_ranges_1_Test.res1_.get(1));
+    Assert.assertEquals("Expected: " + "done" + ", but was: " + (String) Generated_utils_dectab_ranges_1_Test.res1_.get(1), "done", (String) Generated_utils_dectab_ranges_1_Test.res1_.get(1));
   }
   @Test
   public void multiDecTableResultAccess_item7_1370861100487842175() throws Throwable {
-    Assert.assertEquals("Expected: " + false + ", but was: " + ((PVector) Generated_utils_dectab_ranges_1_Test.res2_.get(0)).get(((Number) new BigInteger("0")).intValue()), (Object) false, (Object) ((PVector) Generated_utils_dectab_ranges_1_Test.res2_.get(0)).get(((Number) new BigInteger("0")).intValue()));
+    Assert.assertEquals("Expected: " + false + ", but was: " + ((PVector) Generated_utils_dectab_ranges_1_Test.res2_.get(0)).get(new BigInteger("0").intValue()), (Object) false, (Object) ((PVector) Generated_utils_dectab_ranges_1_Test.res2_.get(0)).get(new BigInteger("0").intValue()));
   }
   @Test
   public void multiDecTableResultAccess_item8_1370861100487842180() throws Throwable {
-    Assert.assertEquals("Expected: " + "not done" + ", but was: " + (String) Generated_utils_dectab_ranges_1_Test.res2_.get(1), (Object) "not done", (Object) (String) Generated_utils_dectab_ranges_1_Test.res2_.get(1));
+    Assert.assertEquals("Expected: " + "not done" + ", but was: " + (String) Generated_utils_dectab_ranges_1_Test.res2_.get(1), "not done", (String) Generated_utils_dectab_ranges_1_Test.res2_.get(1));
   }
   @Test
   public void multiDecTableResultAccess_item10_1370861100488678472() throws Throwable {/* 
@@ -617,23 +617,23 @@ public class Generated_utils_dectab_ranges_1_Test {
      * both ways of access are identical
      */
     
-    Assert.assertEquals("Expected: " + (PVector) Generated_utils_dectab_ranges_1_Test.res1_.get(0) + ", but was: " + (PVector) Generated_utils_dectab_ranges_1_Test.res1_.get(0), (Object) (PVector) Generated_utils_dectab_ranges_1_Test.res1_.get(0), (Object) (PVector) Generated_utils_dectab_ranges_1_Test.res1_.get(0));
+    Assert.assertEquals("Expected: " + (PVector) Generated_utils_dectab_ranges_1_Test.res1_.get(0) + ", but was: " + (PVector) Generated_utils_dectab_ranges_1_Test.res1_.get(0), (PVector) Generated_utils_dectab_ranges_1_Test.res1_.get(0), (PVector) Generated_utils_dectab_ranges_1_Test.res1_.get(0));
   }
   @Test
   public void multiDecTableResultAccess_item11_1370861100488685931() throws Throwable {
-    Assert.assertEquals("Expected: " + (String) Generated_utils_dectab_ranges_1_Test.res1_.get(1) + ", but was: " + (String) Generated_utils_dectab_ranges_1_Test.res1_.get(1), (Object) (String) Generated_utils_dectab_ranges_1_Test.res1_.get(1), (Object) (String) Generated_utils_dectab_ranges_1_Test.res1_.get(1));
+    Assert.assertEquals("Expected: " + (String) Generated_utils_dectab_ranges_1_Test.res1_.get(1) + ", but was: " + (String) Generated_utils_dectab_ranges_1_Test.res1_.get(1), (String) Generated_utils_dectab_ranges_1_Test.res1_.get(1), (String) Generated_utils_dectab_ranges_1_Test.res1_.get(1));
   }
   @Test
   public void multiDecTableResultAccess_item12_1370861100488685936() throws Throwable {
-    Assert.assertEquals("Expected: " + (PVector) Generated_utils_dectab_ranges_1_Test.res2_.get(0) + ", but was: " + (PVector) Generated_utils_dectab_ranges_1_Test.res2_.get(0), (Object) (PVector) Generated_utils_dectab_ranges_1_Test.res2_.get(0), (Object) (PVector) Generated_utils_dectab_ranges_1_Test.res2_.get(0));
+    Assert.assertEquals("Expected: " + (PVector) Generated_utils_dectab_ranges_1_Test.res2_.get(0) + ", but was: " + (PVector) Generated_utils_dectab_ranges_1_Test.res2_.get(0), (PVector) Generated_utils_dectab_ranges_1_Test.res2_.get(0), (PVector) Generated_utils_dectab_ranges_1_Test.res2_.get(0));
   }
   @Test
   public void multiDecTableResultAccess_item13_1370861100488685941() throws Throwable {
-    Assert.assertEquals("Expected: " + (String) Generated_utils_dectab_ranges_1_Test.res2_.get(1) + ", but was: " + (String) Generated_utils_dectab_ranges_1_Test.res2_.get(1), (Object) (String) Generated_utils_dectab_ranges_1_Test.res2_.get(1), (Object) (String) Generated_utils_dectab_ranges_1_Test.res2_.get(1));
+    Assert.assertEquals("Expected: " + (String) Generated_utils_dectab_ranges_1_Test.res2_.get(1) + ", but was: " + (String) Generated_utils_dectab_ranges_1_Test.res2_.get(1), (String) Generated_utils_dectab_ranges_1_Test.res2_.get(1), (String) Generated_utils_dectab_ranges_1_Test.res2_.get(1));
   }
   @Test
   public void multiDecTableResultAccess_item15_1370861100487756862() throws Throwable {
-    Assert.assertEquals("Expected: " + Generated_utils_dectab_ranges_1_Test.res1_ + ", but was: " + Generated_utils_dectab_ranges_1_Test.simpleMulteResults(true, (Number) new BigInteger("1")), (Object) Generated_utils_dectab_ranges_1_Test.res1_, (Object) Generated_utils_dectab_ranges_1_Test.simpleMulteResults(true, (Number) new BigInteger("1")));
+    Assert.assertEquals("Expected: " + Generated_utils_dectab_ranges_1_Test.res1_ + ", but was: " + Generated_utils_dectab_ranges_1_Test.simpleMulteResults(true, new BigInteger("1")), Generated_utils_dectab_ranges_1_Test.res1_, Generated_utils_dectab_ranges_1_Test.simpleMulteResults(true, new BigInteger("1")));
   }
 
 

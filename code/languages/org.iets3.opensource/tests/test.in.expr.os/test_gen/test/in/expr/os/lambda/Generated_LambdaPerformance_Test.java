@@ -22,40 +22,40 @@ import org.iets3.core.expr.genjava.tests.rt.rt.EqualsTestOp;
  */
 public class Generated_LambdaPerformance_Test {
 
-  public static final Number max_ = (Number) new BigInteger("50");
+  public static final Number max_ = new BigInteger("50");
   public static final PVector<Number> numbers_ = TreePVector.from(TreePVector.<Number>from(((_FunctionTypes._return_P0_E0<List<Number>>) () -> {
     List<Number> l = new ArrayList<Number>();
-    for (int i = ((Number) new BigInteger("1")).intValue(); i < AH.add(Generated_LambdaPerformance_Test.max_, (Number) new BigInteger("1")).intValue(); i++) {
+    for (int i = new BigInteger("1").intValue(); i < AH.add(Generated_LambdaPerformance_Test.max_, new BigInteger("1")).intValue(); i++) {
       l.add(BigInteger.valueOf(i));
     }
 
     return l;
   }).invoke()));
   public static Number shortlambdatest(PVector<Number> list) {
-    Number res = (AH.isGreater(BigInteger.valueOf(list.size()), (Number) new BigInteger("1")) ? Generated_LambdaPerformance_Test.shortlambdatest(TreePVector.<Number>from(list.stream().filter(new Predicate<Number>() {
+    Number res = (AH.isGreater(BigInteger.valueOf(list.size()), new BigInteger("1")) ? Generated_LambdaPerformance_Test.shortlambdatest(TreePVector.<Number>from(list.stream().filter(new Predicate<Number>() {
       public boolean test(Number o) {
         return new Function<ParameterSetWrapper, Boolean>() {
           public Boolean apply(ParameterSetWrapper param) {
             Number it = (Number) param.parameters.get(0);
-            return AH.isGreater(it, (Number) list.get(((Number) new BigInteger("0")).intValue()));
+            return AH.isGreater(it, (Number) list.get(new BigInteger("0").intValue()));
           }
         }.apply(new ParameterSetWrapper(o));
       }
-    }).collect(Collectors.<Number>toList()))) : (Number) list.get(((Number) new BigInteger("0")).intValue()));
+    }).collect(Collectors.<Number>toList()))) : (Number) list.get(new BigInteger("0").intValue()));
 
     return res;
   }
   public static Number lambdatest(PVector<Number> list) {
-    Number res = (AH.isGreater(BigInteger.valueOf(list.size()), (Number) new BigInteger("1")) ? Generated_LambdaPerformance_Test.lambdatest(TreePVector.<Number>from(list.stream().filter(new Predicate<Number>() {
+    Number res = (AH.isGreater(BigInteger.valueOf(list.size()), new BigInteger("1")) ? Generated_LambdaPerformance_Test.lambdatest(TreePVector.<Number>from(list.stream().filter(new Predicate<Number>() {
       public boolean test(Number o) {
         return new Function<ParameterSetWrapper, Boolean>() {
           public Boolean apply(ParameterSetWrapper param) {
             Number it = (Number) param.parameters.get(0);
-            return AH.isGreater(it, (Number) list.get(((Number) new BigInteger("0")).intValue()));
+            return AH.isGreater(it, (Number) list.get(new BigInteger("0").intValue()));
           }
         }.apply(new ParameterSetWrapper(o));
       }
-    }).collect(Collectors.<Number>toList()))) : (Number) list.get(((Number) new BigInteger("0")).intValue()));
+    }).collect(Collectors.<Number>toList()))) : (Number) list.get(new BigInteger("0").intValue()));
 
     return res;
   }
@@ -77,7 +77,7 @@ public class Generated_LambdaPerformance_Test {
         return new Function<ParameterSetWrapper, Boolean>() {
           public Boolean apply(ParameterSetWrapper param) {
             Number it = (Number) param.parameters.get(0);
-            return AH.isGreater(it, (Number) new BigInteger("0")) && AH.isGreater(it, (Number) new BigInteger("-1")) && AH.isGreater(it, (Number) new BigInteger("-2")) && AH.isGreater(it, (Number) new BigInteger("-3")) && AH.isGreater(it, (Number) new BigInteger("-4"));
+            return AH.isGreater(it, new BigInteger("0")) && AH.isGreater(it, new BigInteger("-1")) && AH.isGreater(it, new BigInteger("-2")) && AH.isGreater(it, new BigInteger("-3")) && AH.isGreater(it, new BigInteger("-4"));
           }
         }.apply(new ParameterSetWrapper(o));
       }
@@ -86,7 +86,7 @@ public class Generated_LambdaPerformance_Test {
         return new Function<ParameterSetWrapper, Boolean>() {
           public Boolean apply(ParameterSetWrapper param) {
             Number it = (Number) param.parameters.get(0);
-            return AH.isGreater(it, (Number) new BigInteger("0")) && AH.isGreater(it, (Number) new BigInteger("-1")) && AH.isGreater(it, (Number) new BigInteger("-2")) && AH.isGreater(it, (Number) new BigInteger("-3")) && AH.isGreater(it, (Number) new BigInteger("-4"));
+            return AH.isGreater(it, new BigInteger("0")) && AH.isGreater(it, new BigInteger("-1")) && AH.isGreater(it, new BigInteger("-2")) && AH.isGreater(it, new BigInteger("-3")) && AH.isGreater(it, new BigInteger("-4"));
           }
         }.apply(new ParameterSetWrapper(o));
       }
@@ -102,7 +102,7 @@ public class Generated_LambdaPerformance_Test {
         return new Function<ParameterSetWrapper, Boolean>() {
           public Boolean apply(ParameterSetWrapper param) {
             Number it = (Number) param.parameters.get(0);
-            return AH.isGreater(it, (Number) new BigInteger("0")) && AH.isGreater(it, (Number) new BigInteger("-1")) && AH.isGreater(it, (Number) new BigInteger("-2")) && AH.isGreater(it, (Number) new BigInteger("-3")) && AH.isGreater(it, (Number) new BigInteger("-4"));
+            return AH.isGreater(it, new BigInteger("0")) && AH.isGreater(it, new BigInteger("-1")) && AH.isGreater(it, new BigInteger("-2")) && AH.isGreater(it, new BigInteger("-3")) && AH.isGreater(it, new BigInteger("-4"));
           }
         }.apply(new ParameterSetWrapper(o));
       }
@@ -111,7 +111,7 @@ public class Generated_LambdaPerformance_Test {
         return new Function<ParameterSetWrapper, Boolean>() {
           public Boolean apply(ParameterSetWrapper param) {
             Number it = (Number) param.parameters.get(0);
-            return AH.isGreater(it, (Number) new BigInteger("0")) && AH.isGreater(it, (Number) new BigInteger("-1")) && AH.isGreater(it, (Number) new BigInteger("-2")) && AH.isGreater(it, (Number) new BigInteger("-3")) && AH.isGreater(it, (Number) new BigInteger("-4"));
+            return AH.isGreater(it, new BigInteger("0")) && AH.isGreater(it, new BigInteger("-1")) && AH.isGreater(it, new BigInteger("-2")) && AH.isGreater(it, new BigInteger("-3")) && AH.isGreater(it, new BigInteger("-4"));
           }
         }.apply(new ParameterSetWrapper(o));
       }
@@ -127,7 +127,7 @@ public class Generated_LambdaPerformance_Test {
         return new Function<ParameterSetWrapper, Boolean>() {
           public Boolean apply(ParameterSetWrapper param) {
             Number it = (Number) param.parameters.get(0);
-            return AH.isGreater(it, (Number) new BigInteger("0")) && AH.isGreater(it, (Number) new BigInteger("-1")) && AH.isGreater(it, (Number) new BigInteger("-2")) && AH.isGreater(it, (Number) new BigInteger("-3")) && AH.isGreater(it, (Number) new BigInteger("-4"));
+            return AH.isGreater(it, new BigInteger("0")) && AH.isGreater(it, new BigInteger("-1")) && AH.isGreater(it, new BigInteger("-2")) && AH.isGreater(it, new BigInteger("-3")) && AH.isGreater(it, new BigInteger("-4"));
           }
         }.apply(new ParameterSetWrapper(o));
       }
@@ -136,7 +136,7 @@ public class Generated_LambdaPerformance_Test {
         return new Function<ParameterSetWrapper, Boolean>() {
           public Boolean apply(ParameterSetWrapper param) {
             Number it = (Number) param.parameters.get(0);
-            return AH.isGreater(it, (Number) new BigInteger("0")) && AH.isGreater(it, (Number) new BigInteger("-1")) && AH.isGreater(it, (Number) new BigInteger("-2")) && AH.isGreater(it, (Number) new BigInteger("-3")) && AH.isGreater(it, (Number) new BigInteger("-4"));
+            return AH.isGreater(it, new BigInteger("0")) && AH.isGreater(it, new BigInteger("-1")) && AH.isGreater(it, new BigInteger("-2")) && AH.isGreater(it, new BigInteger("-3")) && AH.isGreater(it, new BigInteger("-4"));
           }
         }.apply(new ParameterSetWrapper(o));
       }
@@ -152,7 +152,7 @@ public class Generated_LambdaPerformance_Test {
         return new Function<ParameterSetWrapper, Boolean>() {
           public Boolean apply(ParameterSetWrapper param) {
             Number it = (Number) param.parameters.get(0);
-            return AH.isGreater(it, (Number) new BigInteger("0")) && AH.isGreater(it, (Number) new BigInteger("-1")) && AH.isGreater(it, (Number) new BigInteger("-2")) && AH.isGreater(it, (Number) new BigInteger("-3")) && AH.isGreater(it, (Number) new BigInteger("-4"));
+            return AH.isGreater(it, new BigInteger("0")) && AH.isGreater(it, new BigInteger("-1")) && AH.isGreater(it, new BigInteger("-2")) && AH.isGreater(it, new BigInteger("-3")) && AH.isGreater(it, new BigInteger("-4"));
           }
         }.apply(new ParameterSetWrapper(o));
       }
@@ -161,7 +161,7 @@ public class Generated_LambdaPerformance_Test {
         return new Function<ParameterSetWrapper, Boolean>() {
           public Boolean apply(ParameterSetWrapper param) {
             Number it = (Number) param.parameters.get(0);
-            return AH.isGreater(it, (Number) new BigInteger("0")) && AH.isGreater(it, (Number) new BigInteger("-1")) && AH.isGreater(it, (Number) new BigInteger("-2")) && AH.isGreater(it, (Number) new BigInteger("-3")) && AH.isGreater(it, (Number) new BigInteger("-4"));
+            return AH.isGreater(it, new BigInteger("0")) && AH.isGreater(it, new BigInteger("-1")) && AH.isGreater(it, new BigInteger("-2")) && AH.isGreater(it, new BigInteger("-3")) && AH.isGreater(it, new BigInteger("-4"));
           }
         }.apply(new ParameterSetWrapper(o));
       }

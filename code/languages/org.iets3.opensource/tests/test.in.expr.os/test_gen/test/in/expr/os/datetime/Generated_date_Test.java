@@ -24,8 +24,6 @@ import java.util.ArrayList;
 import org.iets3.core.expr.datetime.runtime.FromUptoHelper;
 import org.pcollections.TreePVector;
 import org.iets3.core.expr.datetime.runtime.TimeDeltaValue;
-import org.pcollections.PVector;
-import org.pcollections.PCollection;
 import org.iets3.core.expr.simpleTypes.runtime.OH;
 import java.util.Comparator;
 import java.util.stream.Collectors;
@@ -39,9 +37,9 @@ public class Generated_date_Test {
   public static final LocalDate jan_1_2017_ = LocalDate.of(2017, 1, 1);
   public static final DiscreteDateRangeValue feb2017_ = DiscreteDateRangeValue.month(2017, 2);
   public static final DiscreteDateRangeValue jan2017_ = DiscreteDateRangeValue.month(2017, 1);
-  public static final LocalDate maxDate_ = DiscreteDateRangeValue.year(((BigInteger) (Number) new BigInteger("999999999")).intValue()).end();
-  public static final DiscreteDateRangeValue y2018_ = DiscreteDateRangeValue.year(((BigInteger) (Number) new BigInteger("2018")).intValue());
-  public static final DiscreteDateRangeValue y2017_ = DiscreteDateRangeValue.year(((BigInteger) (Number) new BigInteger("2017")).intValue());
+  public static final LocalDate maxDate_ = DiscreteDateRangeValue.year(new BigInteger("999999999").intValue()).end();
+  public static final DiscreteDateRangeValue y2018_ = DiscreteDateRangeValue.year(new BigInteger("2018").intValue());
+  public static final DiscreteDateRangeValue y2017_ = DiscreteDateRangeValue.year(new BigInteger("2017").intValue());
   public static final Boolean a_ = Generated_date_Test.feb2017_.isGreater(Generated_date_Test.jan2017_);
   public static final Boolean a2_ = Generated_date_Test.jan2017_.isLess(Generated_date_Test.feb2017_);
   public static final Boolean a3_ = Generated_date_Test.jan2017_.isLess(Generated_date_Test.feb2017_) || Generated_date_Test.jan2017_.isEqual(Generated_date_Test.feb2017_);
@@ -108,75 +106,75 @@ public class Generated_date_Test {
   }
   @Test
   public void dateComparison_item18_2744118490429313054() throws Throwable {
-    Assert.assertEquals("Expected: " + Generated_date_Test.maxDate_ + ", but was: " + DiscreteDateRangeValue.month(YearMonth.from(Generated_date_Test.maxDate_)).end(), (Object) Generated_date_Test.maxDate_, (Object) DiscreteDateRangeValue.month(YearMonth.from(Generated_date_Test.maxDate_)).end());
+    Assert.assertEquals("Expected: " + Generated_date_Test.maxDate_ + ", but was: " + DiscreteDateRangeValue.month(YearMonth.from(Generated_date_Test.maxDate_)).end(), Generated_date_Test.maxDate_, DiscreteDateRangeValue.month(YearMonth.from(Generated_date_Test.maxDate_)).end());
   }
   @Test
   public void dateDeltas_item0_8266215269006406384() throws Throwable {
-    Assert.assertEquals("Expected: " + LocalDate.of(2017, 2, 2) + ", but was: " + DateDeltaValue.ofDays((BigInteger) (Number) new BigInteger("1")).addTo(Generated_date_Test.feb_1_2017_), (Object) LocalDate.of(2017, 2, 2), (Object) DateDeltaValue.ofDays((BigInteger) (Number) new BigInteger("1")).addTo(Generated_date_Test.feb_1_2017_));
+    Assert.assertEquals("Expected: " + LocalDate.of(2017, 2, 2) + ", but was: " + DateDeltaValue.ofDays(new BigInteger("1")).addTo(Generated_date_Test.feb_1_2017_), LocalDate.of(2017, 2, 2), DateDeltaValue.ofDays(new BigInteger("1")).addTo(Generated_date_Test.feb_1_2017_));
   }
   @Test
   public void dateDeltas_item1_8266215269007988671() throws Throwable {
-    Assert.assertEquals("Expected: " + LocalDate.of(2017, 1, 31) + ", but was: " + DateDeltaValue.ofDays((BigInteger) (Number) new BigInteger("1")).subtractFrom(Generated_date_Test.feb_1_2017_), (Object) LocalDate.of(2017, 1, 31), (Object) DateDeltaValue.ofDays((BigInteger) (Number) new BigInteger("1")).subtractFrom(Generated_date_Test.feb_1_2017_));
+    Assert.assertEquals("Expected: " + LocalDate.of(2017, 1, 31) + ", but was: " + DateDeltaValue.ofDays(new BigInteger("1")).subtractFrom(Generated_date_Test.feb_1_2017_), LocalDate.of(2017, 1, 31), DateDeltaValue.ofDays(new BigInteger("1")).subtractFrom(Generated_date_Test.feb_1_2017_));
   }
   @Test
   public void dateDeltas_item2_8266215269008038385() throws Throwable {
-    Assert.assertEquals("Expected: " + LocalDate.of(2018, 1, 2) + ", but was: " + DateDeltaValue.ofDays((BigInteger) (Number) new BigInteger("2")).addTo(LocalDate.of(2017, 12, 31)), (Object) LocalDate.of(2018, 1, 2), (Object) DateDeltaValue.ofDays((BigInteger) (Number) new BigInteger("2")).addTo(LocalDate.of(2017, 12, 31)));
+    Assert.assertEquals("Expected: " + LocalDate.of(2018, 1, 2) + ", but was: " + DateDeltaValue.ofDays(new BigInteger("2")).addTo(LocalDate.of(2017, 12, 31)), LocalDate.of(2018, 1, 2), DateDeltaValue.ofDays(new BigInteger("2")).addTo(LocalDate.of(2017, 12, 31)));
   }
   @Test
   public void dateDeltas_item4_8266215269009185148() throws Throwable {
-    Assert.assertEquals("Expected: " + LocalDate.of(2017, 2, 8) + ", but was: " + DateDeltaValue.ofWeeks((BigInteger) (Number) new BigInteger("1")).addTo(Generated_date_Test.feb_1_2017_), (Object) LocalDate.of(2017, 2, 8), (Object) DateDeltaValue.ofWeeks((BigInteger) (Number) new BigInteger("1")).addTo(Generated_date_Test.feb_1_2017_));
+    Assert.assertEquals("Expected: " + LocalDate.of(2017, 2, 8) + ", but was: " + DateDeltaValue.ofWeeks(new BigInteger("1")).addTo(Generated_date_Test.feb_1_2017_), LocalDate.of(2017, 2, 8), DateDeltaValue.ofWeeks(new BigInteger("1")).addTo(Generated_date_Test.feb_1_2017_));
   }
   @Test
   public void dateDeltas_item5_8266215269009185155() throws Throwable {
-    Assert.assertEquals("Expected: " + LocalDate.of(2017, 1, 25) + ", but was: " + DateDeltaValue.ofWeeks((BigInteger) (Number) new BigInteger("1")).subtractFrom(Generated_date_Test.feb_1_2017_), (Object) LocalDate.of(2017, 1, 25), (Object) DateDeltaValue.ofWeeks((BigInteger) (Number) new BigInteger("1")).subtractFrom(Generated_date_Test.feb_1_2017_));
+    Assert.assertEquals("Expected: " + LocalDate.of(2017, 1, 25) + ", but was: " + DateDeltaValue.ofWeeks(new BigInteger("1")).subtractFrom(Generated_date_Test.feb_1_2017_), LocalDate.of(2017, 1, 25), DateDeltaValue.ofWeeks(new BigInteger("1")).subtractFrom(Generated_date_Test.feb_1_2017_));
   }
   @Test
   public void dateDeltas_item6_8266215269009185162() throws Throwable {
-    Assert.assertEquals("Expected: " + LocalDate.of(2018, 2, 15) + ", but was: " + DateDeltaValue.ofWeeks((BigInteger) (Number) new BigInteger("2")).addTo(LocalDate.of(2018, 2, 1)), (Object) LocalDate.of(2018, 2, 15), (Object) DateDeltaValue.ofWeeks((BigInteger) (Number) new BigInteger("2")).addTo(LocalDate.of(2018, 2, 1)));
+    Assert.assertEquals("Expected: " + LocalDate.of(2018, 2, 15) + ", but was: " + DateDeltaValue.ofWeeks(new BigInteger("2")).addTo(LocalDate.of(2018, 2, 1)), LocalDate.of(2018, 2, 15), DateDeltaValue.ofWeeks(new BigInteger("2")).addTo(LocalDate.of(2018, 2, 1)));
   }
   @Test
   public void dateDeltas_item7_8266215269009194978() throws Throwable {
-    Assert.assertEquals("Expected: " + LocalDate.of(2018, 1, 14) + ", but was: " + DateDeltaValue.ofWeeks((BigInteger) (Number) new BigInteger("2")).addTo(LocalDate.of(2017, 12, 31)), (Object) LocalDate.of(2018, 1, 14), (Object) DateDeltaValue.ofWeeks((BigInteger) (Number) new BigInteger("2")).addTo(LocalDate.of(2017, 12, 31)));
+    Assert.assertEquals("Expected: " + LocalDate.of(2018, 1, 14) + ", but was: " + DateDeltaValue.ofWeeks(new BigInteger("2")).addTo(LocalDate.of(2017, 12, 31)), LocalDate.of(2018, 1, 14), DateDeltaValue.ofWeeks(new BigInteger("2")).addTo(LocalDate.of(2017, 12, 31)));
   }
   @Test
   public void dateDeltas_item9_8266215269009847073() throws Throwable {
-    Assert.assertEquals("Expected: " + LocalDate.of(2017, 3, 1) + ", but was: " + DateDeltaValue.ofMonths((BigInteger) (Number) new BigInteger("1")).addTo(Generated_date_Test.feb_1_2017_), (Object) LocalDate.of(2017, 3, 1), (Object) DateDeltaValue.ofMonths((BigInteger) (Number) new BigInteger("1")).addTo(Generated_date_Test.feb_1_2017_));
+    Assert.assertEquals("Expected: " + LocalDate.of(2017, 3, 1) + ", but was: " + DateDeltaValue.ofMonths(new BigInteger("1")).addTo(Generated_date_Test.feb_1_2017_), LocalDate.of(2017, 3, 1), DateDeltaValue.ofMonths(new BigInteger("1")).addTo(Generated_date_Test.feb_1_2017_));
   }
   @Test
   public void dateDeltas_item10_8266215269009847066() throws Throwable {
-    Assert.assertEquals("Expected: " + LocalDate.of(2017, 1, 1) + ", but was: " + DateDeltaValue.ofMonths((BigInteger) (Number) new BigInteger("1")).subtractFrom(Generated_date_Test.feb_1_2017_), (Object) LocalDate.of(2017, 1, 1), (Object) DateDeltaValue.ofMonths((BigInteger) (Number) new BigInteger("1")).subtractFrom(Generated_date_Test.feb_1_2017_));
+    Assert.assertEquals("Expected: " + LocalDate.of(2017, 1, 1) + ", but was: " + DateDeltaValue.ofMonths(new BigInteger("1")).subtractFrom(Generated_date_Test.feb_1_2017_), LocalDate.of(2017, 1, 1), DateDeltaValue.ofMonths(new BigInteger("1")).subtractFrom(Generated_date_Test.feb_1_2017_));
   }
   @Test
   public void dateDeltas_item11_8266215269009847059() throws Throwable {
-    Assert.assertEquals("Expected: " + LocalDate.of(2018, 4, 1) + ", but was: " + DateDeltaValue.ofMonths((BigInteger) (Number) new BigInteger("2")).addTo(LocalDate.of(2018, 2, 1)), (Object) LocalDate.of(2018, 4, 1), (Object) DateDeltaValue.ofMonths((BigInteger) (Number) new BigInteger("2")).addTo(LocalDate.of(2018, 2, 1)));
+    Assert.assertEquals("Expected: " + LocalDate.of(2018, 4, 1) + ", but was: " + DateDeltaValue.ofMonths(new BigInteger("2")).addTo(LocalDate.of(2018, 2, 1)), LocalDate.of(2018, 4, 1), DateDeltaValue.ofMonths(new BigInteger("2")).addTo(LocalDate.of(2018, 2, 1)));
   }
   @Test
   public void dateDeltas_item12_8266215269009847052() throws Throwable {
-    Assert.assertEquals("Expected: " + LocalDate.of(2018, 2, 28) + ", but was: " + DateDeltaValue.ofMonths((BigInteger) (Number) new BigInteger("2")).addTo(LocalDate.of(2017, 12, 31)), (Object) LocalDate.of(2018, 2, 28), (Object) DateDeltaValue.ofMonths((BigInteger) (Number) new BigInteger("2")).addTo(LocalDate.of(2017, 12, 31)));
+    Assert.assertEquals("Expected: " + LocalDate.of(2018, 2, 28) + ", but was: " + DateDeltaValue.ofMonths(new BigInteger("2")).addTo(LocalDate.of(2017, 12, 31)), LocalDate.of(2018, 2, 28), DateDeltaValue.ofMonths(new BigInteger("2")).addTo(LocalDate.of(2017, 12, 31)));
   }
   @Test
   public void dateDeltas_item14_8266215269008907302() throws Throwable {
-    Assert.assertEquals("Expected: " + LocalDate.of(2018, 2, 1) + ", but was: " + DateDeltaValue.ofYears((BigInteger) (Number) new BigInteger("1")).addTo(Generated_date_Test.feb_1_2017_), (Object) LocalDate.of(2018, 2, 1), (Object) DateDeltaValue.ofYears((BigInteger) (Number) new BigInteger("1")).addTo(Generated_date_Test.feb_1_2017_));
+    Assert.assertEquals("Expected: " + LocalDate.of(2018, 2, 1) + ", but was: " + DateDeltaValue.ofYears(new BigInteger("1")).addTo(Generated_date_Test.feb_1_2017_), LocalDate.of(2018, 2, 1), DateDeltaValue.ofYears(new BigInteger("1")).addTo(Generated_date_Test.feb_1_2017_));
   }
   @Test
   public void dateDeltas_item15_8266215269008907309() throws Throwable {
-    Assert.assertEquals("Expected: " + LocalDate.of(2016, 2, 1) + ", but was: " + DateDeltaValue.ofYears((BigInteger) (Number) new BigInteger("1")).subtractFrom(Generated_date_Test.feb_1_2017_), (Object) LocalDate.of(2016, 2, 1), (Object) DateDeltaValue.ofYears((BigInteger) (Number) new BigInteger("1")).subtractFrom(Generated_date_Test.feb_1_2017_));
+    Assert.assertEquals("Expected: " + LocalDate.of(2016, 2, 1) + ", but was: " + DateDeltaValue.ofYears(new BigInteger("1")).subtractFrom(Generated_date_Test.feb_1_2017_), LocalDate.of(2016, 2, 1), DateDeltaValue.ofYears(new BigInteger("1")).subtractFrom(Generated_date_Test.feb_1_2017_));
   }
   @Test
   public void dateDeltas_item16_8266215269008907316() throws Throwable {
-    Assert.assertEquals("Expected: " + LocalDate.of(2019, 12, 31) + ", but was: " + DateDeltaValue.ofYears((BigInteger) (Number) new BigInteger("2")).addTo(LocalDate.of(2017, 12, 31)), (Object) LocalDate.of(2019, 12, 31), (Object) DateDeltaValue.ofYears((BigInteger) (Number) new BigInteger("2")).addTo(LocalDate.of(2017, 12, 31)));
+    Assert.assertEquals("Expected: " + LocalDate.of(2019, 12, 31) + ", but was: " + DateDeltaValue.ofYears(new BigInteger("2")).addTo(LocalDate.of(2017, 12, 31)), LocalDate.of(2019, 12, 31), DateDeltaValue.ofYears(new BigInteger("2")).addTo(LocalDate.of(2017, 12, 31)));
   }
   @Test
   public void negativeDateDeltas_item0_9073836608781456196() throws Throwable {
-    Assert.assertEquals("Expected: " + LocalDate.of(2017, 2, 2) + ", but was: " + DateDeltaValue.ofDays((BigInteger) ((BigInteger) (Number) new BigInteger("1")).negate()).subtractFrom(Generated_date_Test.feb_1_2017_), (Object) LocalDate.of(2017, 2, 2), (Object) DateDeltaValue.ofDays((BigInteger) ((BigInteger) (Number) new BigInteger("1")).negate()).subtractFrom(Generated_date_Test.feb_1_2017_));
+    Assert.assertEquals("Expected: " + LocalDate.of(2017, 2, 2) + ", but was: " + DateDeltaValue.ofDays(new BigInteger("1").negate()).subtractFrom(Generated_date_Test.feb_1_2017_), LocalDate.of(2017, 2, 2), DateDeltaValue.ofDays(new BigInteger("1").negate()).subtractFrom(Generated_date_Test.feb_1_2017_));
   }
   @Test
   public void negativeDateDeltas_item1_9073836608781493597() throws Throwable {
-    Assert.assertEquals("Expected: " + LocalDate.of(2017, 1, 31) + ", but was: " + DateDeltaValue.ofDays((BigInteger) ((BigInteger) (Number) new BigInteger("1")).negate()).addTo(Generated_date_Test.feb_1_2017_), (Object) LocalDate.of(2017, 1, 31), (Object) DateDeltaValue.ofDays((BigInteger) ((BigInteger) (Number) new BigInteger("1")).negate()).addTo(Generated_date_Test.feb_1_2017_));
+    Assert.assertEquals("Expected: " + LocalDate.of(2017, 1, 31) + ", but was: " + DateDeltaValue.ofDays(new BigInteger("1").negate()).addTo(Generated_date_Test.feb_1_2017_), LocalDate.of(2017, 1, 31), DateDeltaValue.ofDays(new BigInteger("1").negate()).addTo(Generated_date_Test.feb_1_2017_));
   }
   @Test
   public void negativeDateDeltas_item2_9073836608781502319() throws Throwable {
-    Assert.assertEquals("Expected: " + DateDeltaValue.ofDays((BigInteger) ((BigInteger) (Number) new BigInteger("5")).negate()) + ", but was: " + DateDeltaValue.ofDays((BigInteger) (Number) new BigInteger("5")).negate(), (Object) DateDeltaValue.ofDays((BigInteger) ((BigInteger) (Number) new BigInteger("5")).negate()), (Object) DateDeltaValue.ofDays((BigInteger) (Number) new BigInteger("5")).negate());
+    Assert.assertEquals("Expected: " + DateDeltaValue.ofDays(new BigInteger("5").negate()) + ", but was: " + DateDeltaValue.ofDays(new BigInteger("5")).negate(), DateDeltaValue.ofDays(new BigInteger("5").negate()), DateDeltaValue.ofDays(new BigInteger("5")).negate());
   }
 /* 
    * We should also be able to add/substract deltas from 
@@ -184,7 +182,7 @@ public class Generated_date_Test {
    */
     @Test
   public void deltaArith_item0_8266215269006883262() throws Throwable {
-    Assert.assertEquals("Expected: " + DateDeltaValue.ofDays((BigInteger) (Number) new BigInteger("5")) + ", but was: " + DateDeltaValue.ofDays((BigInteger) (Number) new BigInteger("4")).plus(DateDeltaValue.ofDays((BigInteger) (Number) new BigInteger("1"))), (Object) DateDeltaValue.ofDays((BigInteger) (Number) new BigInteger("5")), (Object) DateDeltaValue.ofDays((BigInteger) (Number) new BigInteger("4")).plus(DateDeltaValue.ofDays((BigInteger) (Number) new BigInteger("1"))));
+    Assert.assertEquals("Expected: " + DateDeltaValue.ofDays(new BigInteger("5")) + ", but was: " + DateDeltaValue.ofDays(new BigInteger("4")).plus(DateDeltaValue.ofDays(new BigInteger("1"))), DateDeltaValue.ofDays(new BigInteger("5")), DateDeltaValue.ofDays(new BigInteger("4")).plus(DateDeltaValue.ofDays(new BigInteger("1"))));
   }
 /* 
    * We should also be able to add/substract deltas from 
@@ -192,7 +190,7 @@ public class Generated_date_Test {
    */
     @Test
   public void deltaArith_item1_8266215269007849737() throws Throwable {
-    Assert.assertEquals("Expected: " + DateDeltaValue.ofDays((BigInteger) (Number) new BigInteger("3")) + ", but was: " + DateDeltaValue.ofDays((BigInteger) (Number) new BigInteger("4")).minus(DateDeltaValue.ofDays((BigInteger) (Number) new BigInteger("1"))), (Object) DateDeltaValue.ofDays((BigInteger) (Number) new BigInteger("3")), (Object) DateDeltaValue.ofDays((BigInteger) (Number) new BigInteger("4")).minus(DateDeltaValue.ofDays((BigInteger) (Number) new BigInteger("1"))));
+    Assert.assertEquals("Expected: " + DateDeltaValue.ofDays(new BigInteger("3")) + ", but was: " + DateDeltaValue.ofDays(new BigInteger("4")).minus(DateDeltaValue.ofDays(new BigInteger("1"))), DateDeltaValue.ofDays(new BigInteger("3")), DateDeltaValue.ofDays(new BigInteger("4")).minus(DateDeltaValue.ofDays(new BigInteger("1"))));
   }
 /* 
    * We should also be able to add/substract deltas from 
@@ -200,7 +198,7 @@ public class Generated_date_Test {
    */
     @Test
   public void deltaArith_item2_8266215269007894200() throws Throwable {
-    Assert.assertEquals("Expected: " + DateDeltaValue.ofDays((BigInteger) (Number) new BigInteger("8")) + ", but was: " + DateDeltaValue.ofDays((BigInteger) (Number) new BigInteger("4")).multipliedBy((BigInteger) (Number) new BigInteger("2")), (Object) DateDeltaValue.ofDays((BigInteger) (Number) new BigInteger("8")), (Object) DateDeltaValue.ofDays((BigInteger) (Number) new BigInteger("4")).multipliedBy((BigInteger) (Number) new BigInteger("2")));
+    Assert.assertEquals("Expected: " + DateDeltaValue.ofDays(new BigInteger("8")) + ", but was: " + DateDeltaValue.ofDays(new BigInteger("4")).multipliedBy(new BigInteger("2")), DateDeltaValue.ofDays(new BigInteger("8")), DateDeltaValue.ofDays(new BigInteger("4")).multipliedBy(new BigInteger("2")));
   }
 /* 
    * We should also be able to add/substract deltas from 
@@ -208,7 +206,7 @@ public class Generated_date_Test {
    */
     @Test
   public void deltaArith_item3_8266215269007984298() throws Throwable {
-    Assert.assertEquals("Expected: " + DateDeltaValue.ofDays((BigInteger) (Number) new BigInteger("2")) + ", but was: " + DateDeltaValue.ofDays((BigInteger) (Number) new BigInteger("4")).dividedBy((BigInteger) (Number) new BigInteger("2")), (Object) DateDeltaValue.ofDays((BigInteger) (Number) new BigInteger("2")), (Object) DateDeltaValue.ofDays((BigInteger) (Number) new BigInteger("4")).dividedBy((BigInteger) (Number) new BigInteger("2")));
+    Assert.assertEquals("Expected: " + DateDeltaValue.ofDays(new BigInteger("2")) + ", but was: " + DateDeltaValue.ofDays(new BigInteger("4")).dividedBy(new BigInteger("2")), DateDeltaValue.ofDays(new BigInteger("2")), DateDeltaValue.ofDays(new BigInteger("4")).dividedBy(new BigInteger("2")));
   }
 /* 
    * We should also be able to add/substract deltas from 
@@ -216,7 +214,7 @@ public class Generated_date_Test {
    */
     @Test
   public void deltaArith_item5_8266215269009207370() throws Throwable {
-    Assert.assertEquals("Expected: " + DateDeltaValue.ofWeeks((BigInteger) (Number) new BigInteger("5")) + ", but was: " + DateDeltaValue.ofWeeks((BigInteger) (Number) new BigInteger("4")).plus(DateDeltaValue.ofWeeks((BigInteger) (Number) new BigInteger("1"))), (Object) DateDeltaValue.ofWeeks((BigInteger) (Number) new BigInteger("5")), (Object) DateDeltaValue.ofWeeks((BigInteger) (Number) new BigInteger("4")).plus(DateDeltaValue.ofWeeks((BigInteger) (Number) new BigInteger("1"))));
+    Assert.assertEquals("Expected: " + DateDeltaValue.ofWeeks(new BigInteger("5")) + ", but was: " + DateDeltaValue.ofWeeks(new BigInteger("4")).plus(DateDeltaValue.ofWeeks(new BigInteger("1"))), DateDeltaValue.ofWeeks(new BigInteger("5")), DateDeltaValue.ofWeeks(new BigInteger("4")).plus(DateDeltaValue.ofWeeks(new BigInteger("1"))));
   }
 /* 
    * We should also be able to add/substract deltas from 
@@ -224,7 +222,7 @@ public class Generated_date_Test {
    */
     @Test
   public void deltaArith_item6_8266215269009207361() throws Throwable {
-    Assert.assertEquals("Expected: " + DateDeltaValue.ofWeeks((BigInteger) (Number) new BigInteger("3")) + ", but was: " + DateDeltaValue.ofWeeks((BigInteger) (Number) new BigInteger("4")).minus(DateDeltaValue.ofWeeks((BigInteger) (Number) new BigInteger("1"))), (Object) DateDeltaValue.ofWeeks((BigInteger) (Number) new BigInteger("3")), (Object) DateDeltaValue.ofWeeks((BigInteger) (Number) new BigInteger("4")).minus(DateDeltaValue.ofWeeks((BigInteger) (Number) new BigInteger("1"))));
+    Assert.assertEquals("Expected: " + DateDeltaValue.ofWeeks(new BigInteger("3")) + ", but was: " + DateDeltaValue.ofWeeks(new BigInteger("4")).minus(DateDeltaValue.ofWeeks(new BigInteger("1"))), DateDeltaValue.ofWeeks(new BigInteger("3")), DateDeltaValue.ofWeeks(new BigInteger("4")).minus(DateDeltaValue.ofWeeks(new BigInteger("1"))));
   }
 /* 
    * We should also be able to add/substract deltas from 
@@ -232,7 +230,7 @@ public class Generated_date_Test {
    */
     @Test
   public void deltaArith_item7_8266215269009207353() throws Throwable {
-    Assert.assertEquals("Expected: " + DateDeltaValue.ofWeeks((BigInteger) (Number) new BigInteger("8")) + ", but was: " + DateDeltaValue.ofWeeks((BigInteger) (Number) new BigInteger("4")).multipliedBy((BigInteger) (Number) new BigInteger("2")), (Object) DateDeltaValue.ofWeeks((BigInteger) (Number) new BigInteger("8")), (Object) DateDeltaValue.ofWeeks((BigInteger) (Number) new BigInteger("4")).multipliedBy((BigInteger) (Number) new BigInteger("2")));
+    Assert.assertEquals("Expected: " + DateDeltaValue.ofWeeks(new BigInteger("8")) + ", but was: " + DateDeltaValue.ofWeeks(new BigInteger("4")).multipliedBy(new BigInteger("2")), DateDeltaValue.ofWeeks(new BigInteger("8")), DateDeltaValue.ofWeeks(new BigInteger("4")).multipliedBy(new BigInteger("2")));
   }
 /* 
    * We should also be able to add/substract deltas from 
@@ -240,7 +238,7 @@ public class Generated_date_Test {
    */
     @Test
   public void deltaArith_item8_8266215269009207345() throws Throwable {
-    Assert.assertEquals("Expected: " + DateDeltaValue.ofWeeks((BigInteger) (Number) new BigInteger("2")) + ", but was: " + DateDeltaValue.ofWeeks((BigInteger) (Number) new BigInteger("4")).dividedBy((BigInteger) (Number) new BigInteger("2")), (Object) DateDeltaValue.ofWeeks((BigInteger) (Number) new BigInteger("2")), (Object) DateDeltaValue.ofWeeks((BigInteger) (Number) new BigInteger("4")).dividedBy((BigInteger) (Number) new BigInteger("2")));
+    Assert.assertEquals("Expected: " + DateDeltaValue.ofWeeks(new BigInteger("2")) + ", but was: " + DateDeltaValue.ofWeeks(new BigInteger("4")).dividedBy(new BigInteger("2")), DateDeltaValue.ofWeeks(new BigInteger("2")), DateDeltaValue.ofWeeks(new BigInteger("4")).dividedBy(new BigInteger("2")));
   }
 /* 
    * We should also be able to add/substract deltas from 
@@ -248,7 +246,7 @@ public class Generated_date_Test {
    */
     @Test
   public void deltaArith_item10_8266215269009841256() throws Throwable {
-    Assert.assertEquals("Expected: " + DateDeltaValue.ofMonths((BigInteger) (Number) new BigInteger("5")) + ", but was: " + DateDeltaValue.ofMonths((BigInteger) (Number) new BigInteger("4")).plus(DateDeltaValue.ofMonths((BigInteger) (Number) new BigInteger("1"))), (Object) DateDeltaValue.ofMonths((BigInteger) (Number) new BigInteger("5")), (Object) DateDeltaValue.ofMonths((BigInteger) (Number) new BigInteger("4")).plus(DateDeltaValue.ofMonths((BigInteger) (Number) new BigInteger("1"))));
+    Assert.assertEquals("Expected: " + DateDeltaValue.ofMonths(new BigInteger("5")) + ", but was: " + DateDeltaValue.ofMonths(new BigInteger("4")).plus(DateDeltaValue.ofMonths(new BigInteger("1"))), DateDeltaValue.ofMonths(new BigInteger("5")), DateDeltaValue.ofMonths(new BigInteger("4")).plus(DateDeltaValue.ofMonths(new BigInteger("1"))));
   }
 /* 
    * We should also be able to add/substract deltas from 
@@ -256,7 +254,7 @@ public class Generated_date_Test {
    */
     @Test
   public void deltaArith_item11_8266215269009841247() throws Throwable {
-    Assert.assertEquals("Expected: " + DateDeltaValue.ofMonths((BigInteger) (Number) new BigInteger("3")) + ", but was: " + DateDeltaValue.ofMonths((BigInteger) (Number) new BigInteger("4")).minus(DateDeltaValue.ofMonths((BigInteger) (Number) new BigInteger("1"))), (Object) DateDeltaValue.ofMonths((BigInteger) (Number) new BigInteger("3")), (Object) DateDeltaValue.ofMonths((BigInteger) (Number) new BigInteger("4")).minus(DateDeltaValue.ofMonths((BigInteger) (Number) new BigInteger("1"))));
+    Assert.assertEquals("Expected: " + DateDeltaValue.ofMonths(new BigInteger("3")) + ", but was: " + DateDeltaValue.ofMonths(new BigInteger("4")).minus(DateDeltaValue.ofMonths(new BigInteger("1"))), DateDeltaValue.ofMonths(new BigInteger("3")), DateDeltaValue.ofMonths(new BigInteger("4")).minus(DateDeltaValue.ofMonths(new BigInteger("1"))));
   }
 /* 
    * We should also be able to add/substract deltas from 
@@ -264,7 +262,7 @@ public class Generated_date_Test {
    */
     @Test
   public void deltaArith_item12_8266215269009841239() throws Throwable {
-    Assert.assertEquals("Expected: " + DateDeltaValue.ofMonths((BigInteger) (Number) new BigInteger("8")) + ", but was: " + DateDeltaValue.ofMonths((BigInteger) (Number) new BigInteger("4")).multipliedBy((BigInteger) (Number) new BigInteger("2")), (Object) DateDeltaValue.ofMonths((BigInteger) (Number) new BigInteger("8")), (Object) DateDeltaValue.ofMonths((BigInteger) (Number) new BigInteger("4")).multipliedBy((BigInteger) (Number) new BigInteger("2")));
+    Assert.assertEquals("Expected: " + DateDeltaValue.ofMonths(new BigInteger("8")) + ", but was: " + DateDeltaValue.ofMonths(new BigInteger("4")).multipliedBy(new BigInteger("2")), DateDeltaValue.ofMonths(new BigInteger("8")), DateDeltaValue.ofMonths(new BigInteger("4")).multipliedBy(new BigInteger("2")));
   }
 /* 
    * We should also be able to add/substract deltas from 
@@ -272,7 +270,7 @@ public class Generated_date_Test {
    */
     @Test
   public void deltaArith_item13_8266215269009841231() throws Throwable {
-    Assert.assertEquals("Expected: " + DateDeltaValue.ofMonths((BigInteger) (Number) new BigInteger("2")) + ", but was: " + DateDeltaValue.ofMonths((BigInteger) (Number) new BigInteger("4")).dividedBy((BigInteger) (Number) new BigInteger("2")), (Object) DateDeltaValue.ofMonths((BigInteger) (Number) new BigInteger("2")), (Object) DateDeltaValue.ofMonths((BigInteger) (Number) new BigInteger("4")).dividedBy((BigInteger) (Number) new BigInteger("2")));
+    Assert.assertEquals("Expected: " + DateDeltaValue.ofMonths(new BigInteger("2")) + ", but was: " + DateDeltaValue.ofMonths(new BigInteger("4")).dividedBy(new BigInteger("2")), DateDeltaValue.ofMonths(new BigInteger("2")), DateDeltaValue.ofMonths(new BigInteger("4")).dividedBy(new BigInteger("2")));
   }
 /* 
    * We should also be able to add/substract deltas from 
@@ -280,7 +278,7 @@ public class Generated_date_Test {
    */
     @Test
   public void deltaArith_item15_8266215269009311706() throws Throwable {
-    Assert.assertEquals("Expected: " + DateDeltaValue.ofYears((BigInteger) (Number) new BigInteger("5")) + ", but was: " + DateDeltaValue.ofYears((BigInteger) (Number) new BigInteger("4")).plus(DateDeltaValue.ofYears((BigInteger) (Number) new BigInteger("1"))), (Object) DateDeltaValue.ofYears((BigInteger) (Number) new BigInteger("5")), (Object) DateDeltaValue.ofYears((BigInteger) (Number) new BigInteger("4")).plus(DateDeltaValue.ofYears((BigInteger) (Number) new BigInteger("1"))));
+    Assert.assertEquals("Expected: " + DateDeltaValue.ofYears(new BigInteger("5")) + ", but was: " + DateDeltaValue.ofYears(new BigInteger("4")).plus(DateDeltaValue.ofYears(new BigInteger("1"))), DateDeltaValue.ofYears(new BigInteger("5")), DateDeltaValue.ofYears(new BigInteger("4")).plus(DateDeltaValue.ofYears(new BigInteger("1"))));
   }
 /* 
    * We should also be able to add/substract deltas from 
@@ -288,7 +286,7 @@ public class Generated_date_Test {
    */
     @Test
   public void deltaArith_item16_8266215269009311697() throws Throwable {
-    Assert.assertEquals("Expected: " + DateDeltaValue.ofYears((BigInteger) (Number) new BigInteger("3")) + ", but was: " + DateDeltaValue.ofYears((BigInteger) (Number) new BigInteger("4")).minus(DateDeltaValue.ofYears((BigInteger) (Number) new BigInteger("1"))), (Object) DateDeltaValue.ofYears((BigInteger) (Number) new BigInteger("3")), (Object) DateDeltaValue.ofYears((BigInteger) (Number) new BigInteger("4")).minus(DateDeltaValue.ofYears((BigInteger) (Number) new BigInteger("1"))));
+    Assert.assertEquals("Expected: " + DateDeltaValue.ofYears(new BigInteger("3")) + ", but was: " + DateDeltaValue.ofYears(new BigInteger("4")).minus(DateDeltaValue.ofYears(new BigInteger("1"))), DateDeltaValue.ofYears(new BigInteger("3")), DateDeltaValue.ofYears(new BigInteger("4")).minus(DateDeltaValue.ofYears(new BigInteger("1"))));
   }
 /* 
    * We should also be able to add/substract deltas from 
@@ -296,7 +294,7 @@ public class Generated_date_Test {
    */
     @Test
   public void deltaArith_item17_8266215269009311689() throws Throwable {
-    Assert.assertEquals("Expected: " + DateDeltaValue.ofYears((BigInteger) (Number) new BigInteger("8")) + ", but was: " + DateDeltaValue.ofYears((BigInteger) (Number) new BigInteger("4")).multipliedBy((BigInteger) (Number) new BigInteger("2")), (Object) DateDeltaValue.ofYears((BigInteger) (Number) new BigInteger("8")), (Object) DateDeltaValue.ofYears((BigInteger) (Number) new BigInteger("4")).multipliedBy((BigInteger) (Number) new BigInteger("2")));
+    Assert.assertEquals("Expected: " + DateDeltaValue.ofYears(new BigInteger("8")) + ", but was: " + DateDeltaValue.ofYears(new BigInteger("4")).multipliedBy(new BigInteger("2")), DateDeltaValue.ofYears(new BigInteger("8")), DateDeltaValue.ofYears(new BigInteger("4")).multipliedBy(new BigInteger("2")));
   }
 /* 
    * We should also be able to add/substract deltas from 
@@ -304,11 +302,11 @@ public class Generated_date_Test {
    */
     @Test
   public void deltaArith_item18_8266215269009311681() throws Throwable {
-    Assert.assertEquals("Expected: " + DateDeltaValue.ofYears((BigInteger) (Number) new BigInteger("2")) + ", but was: " + DateDeltaValue.ofYears((BigInteger) (Number) new BigInteger("4")).dividedBy((BigInteger) (Number) new BigInteger("2")), (Object) DateDeltaValue.ofYears((BigInteger) (Number) new BigInteger("2")), (Object) DateDeltaValue.ofYears((BigInteger) (Number) new BigInteger("4")).dividedBy((BigInteger) (Number) new BigInteger("2")));
+    Assert.assertEquals("Expected: " + DateDeltaValue.ofYears(new BigInteger("2")) + ", but was: " + DateDeltaValue.ofYears(new BigInteger("4")).dividedBy(new BigInteger("2")), DateDeltaValue.ofYears(new BigInteger("2")), DateDeltaValue.ofYears(new BigInteger("4")).dividedBy(new BigInteger("2")));
   }
   @Test
   public void deltaArithMixed_item0_1101779037717235198() throws Throwable {
-    Assert.assertEquals("Expected: " + DateDeltaValue.ofDays((BigInteger) (Number) new BigInteger("10")).plus(DateDeltaValue.ofMonths((BigInteger) (Number) new BigInteger("2"))) + ", but was: " + DateDeltaValue.ofDays((BigInteger) (Number) new BigInteger("5")).plus(DateDeltaValue.ofMonths((BigInteger) (Number) new BigInteger("1"))).multipliedBy((BigInteger) (Number) new BigInteger("2")), (Object) DateDeltaValue.ofDays((BigInteger) (Number) new BigInteger("10")).plus(DateDeltaValue.ofMonths((BigInteger) (Number) new BigInteger("2"))), (Object) DateDeltaValue.ofDays((BigInteger) (Number) new BigInteger("5")).plus(DateDeltaValue.ofMonths((BigInteger) (Number) new BigInteger("1"))).multipliedBy((BigInteger) (Number) new BigInteger("2")));
+    Assert.assertEquals("Expected: " + DateDeltaValue.ofDays(new BigInteger("10")).plus(DateDeltaValue.ofMonths(new BigInteger("2"))) + ", but was: " + DateDeltaValue.ofDays(new BigInteger("5")).plus(DateDeltaValue.ofMonths(new BigInteger("1"))).multipliedBy(new BigInteger("2")), DateDeltaValue.ofDays(new BigInteger("10")).plus(DateDeltaValue.ofMonths(new BigInteger("2"))), DateDeltaValue.ofDays(new BigInteger("5")).plus(DateDeltaValue.ofMonths(new BigInteger("1"))).multipliedBy(new BigInteger("2")));
   }
   @Test
   public void monthRangeComparison_item0_7205027067670697401() throws Throwable {
@@ -380,142 +378,142 @@ public class Generated_date_Test {
   }
   @Test
   public void dateRangeBounds_item0_8266215269007060782() throws Throwable {
-    Assert.assertEquals("Expected: " + LocalDate.of(2017, 2, 1) + ", but was: " + Generated_date_Test.feb2017_.begin(), (Object) LocalDate.of(2017, 2, 1), (Object) Generated_date_Test.feb2017_.begin());
+    Assert.assertEquals("Expected: " + LocalDate.of(2017, 2, 1) + ", but was: " + Generated_date_Test.feb2017_.begin(), LocalDate.of(2017, 2, 1), Generated_date_Test.feb2017_.begin());
   }
   @Test
   public void dateRangeBounds_item1_8266215269007069648() throws Throwable {
-    Assert.assertEquals("Expected: " + LocalDate.of(2017, 2, 28) + ", but was: " + Generated_date_Test.feb2017_.end(), (Object) LocalDate.of(2017, 2, 28), (Object) Generated_date_Test.feb2017_.end());
+    Assert.assertEquals("Expected: " + LocalDate.of(2017, 2, 28) + ", but was: " + Generated_date_Test.feb2017_.end(), LocalDate.of(2017, 2, 28), Generated_date_Test.feb2017_.end());
   }
   @Test
   public void dateRangeBounds_item2_8266215269010165243() throws Throwable {
-    Assert.assertEquals("Expected: " + Generated_date_Test.feb2017_ + ", but was: " + DiscreteDateRangeValue.month(YearMonth.from(Generated_date_Test.feb2017_.begin())), (Object) Generated_date_Test.feb2017_, (Object) DiscreteDateRangeValue.month(YearMonth.from(Generated_date_Test.feb2017_.begin())));
+    Assert.assertEquals("Expected: " + Generated_date_Test.feb2017_ + ", but was: " + DiscreteDateRangeValue.month(YearMonth.from(Generated_date_Test.feb2017_.begin())), Generated_date_Test.feb2017_, DiscreteDateRangeValue.month(YearMonth.from(Generated_date_Test.feb2017_.begin())));
   }
   @Test
   public void dateRangeBounds_item3_8266215269010184013() throws Throwable {
-    Assert.assertEquals("Expected: " + Generated_date_Test.feb2017_ + ", but was: " + DiscreteDateRangeValue.month(YearMonth.from(Generated_date_Test.feb2017_.end())), (Object) Generated_date_Test.feb2017_, (Object) DiscreteDateRangeValue.month(YearMonth.from(Generated_date_Test.feb2017_.end())));
+    Assert.assertEquals("Expected: " + Generated_date_Test.feb2017_ + ", but was: " + DiscreteDateRangeValue.month(YearMonth.from(Generated_date_Test.feb2017_.end())), Generated_date_Test.feb2017_, DiscreteDateRangeValue.month(YearMonth.from(Generated_date_Test.feb2017_.end())));
   }
   @Test
   public void dateRangeBounds_item4_2744118490428638012() throws Throwable {
-    Assert.assertEquals("Expected: " + Generated_date_Test.feb2017_ + ", but was: " + DiscreteDateRangeValue.month(YearMonth.from(Generated_date_Test.feb2017_.end())), (Object) Generated_date_Test.feb2017_, (Object) DiscreteDateRangeValue.month(YearMonth.from(Generated_date_Test.feb2017_.end())));
+    Assert.assertEquals("Expected: " + Generated_date_Test.feb2017_ + ", but was: " + DiscreteDateRangeValue.month(YearMonth.from(Generated_date_Test.feb2017_.end())), Generated_date_Test.feb2017_, DiscreteDateRangeValue.month(YearMonth.from(Generated_date_Test.feb2017_.end())));
   }
   @Test
   public void dateRangeIteration_item0_8266215269007161853() throws Throwable {
-    Assert.assertEquals("Expected: " + Generated_date_Test.feb2017_ + ", but was: " + Generated_date_Test.jan2017_.next(), (Object) Generated_date_Test.feb2017_, (Object) Generated_date_Test.jan2017_.next());
+    Assert.assertEquals("Expected: " + Generated_date_Test.feb2017_ + ", but was: " + Generated_date_Test.jan2017_.next(), Generated_date_Test.feb2017_, Generated_date_Test.jan2017_.next());
   }
   @Test
   public void dateRangeIteration_item1_8266215269007835736() throws Throwable {
-    Assert.assertEquals("Expected: " + DiscreteDateRangeValue.month(2016, 12) + ", but was: " + Generated_date_Test.jan2017_.prev(), (Object) DiscreteDateRangeValue.month(2016, 12), (Object) Generated_date_Test.jan2017_.prev());
+    Assert.assertEquals("Expected: " + DiscreteDateRangeValue.month(2016, 12) + ", but was: " + Generated_date_Test.jan2017_.prev(), DiscreteDateRangeValue.month(2016, 12), Generated_date_Test.jan2017_.prev());
   }
   @Test
   public void dateRangeIteration_item2_8266215269007469626() throws Throwable {
-    Assert.assertEquals("Expected: " + Generated_date_Test.y2018_ + ", but was: " + Generated_date_Test.y2017_.next(), (Object) Generated_date_Test.y2018_, (Object) Generated_date_Test.y2017_.next());
+    Assert.assertEquals("Expected: " + Generated_date_Test.y2018_ + ", but was: " + Generated_date_Test.y2017_.next(), Generated_date_Test.y2018_, Generated_date_Test.y2017_.next());
   }
   @Test
   public void dateRangeIteration_item3_8266215269007838501() throws Throwable {
-    Assert.assertEquals("Expected: " + DiscreteDateRangeValue.year(((BigInteger) (Number) new BigInteger("2016")).intValue()) + ", but was: " + Generated_date_Test.y2017_.prev(), (Object) DiscreteDateRangeValue.year(((BigInteger) (Number) new BigInteger("2016")).intValue()), (Object) Generated_date_Test.y2017_.prev());
+    Assert.assertEquals("Expected: " + DiscreteDateRangeValue.year(new BigInteger("2016").intValue()) + ", but was: " + Generated_date_Test.y2017_.prev(), DiscreteDateRangeValue.year(new BigInteger("2016").intValue()), Generated_date_Test.y2017_.prev());
   }
   @Test
   public void dateToRange_item0_8266215269010028818() throws Throwable {
-    Assert.assertEquals("Expected: " + DiscreteDateRangeValue.year(((BigInteger) (Number) new BigInteger("2017")).intValue()) + ", but was: " + DiscreteDateRangeValue.year(Generated_date_Test.feb_1_2017_.getYear()), (Object) DiscreteDateRangeValue.year(((BigInteger) (Number) new BigInteger("2017")).intValue()), (Object) DiscreteDateRangeValue.year(Generated_date_Test.feb_1_2017_.getYear()));
+    Assert.assertEquals("Expected: " + DiscreteDateRangeValue.year(new BigInteger("2017").intValue()) + ", but was: " + DiscreteDateRangeValue.year(Generated_date_Test.feb_1_2017_.getYear()), DiscreteDateRangeValue.year(new BigInteger("2017").intValue()), DiscreteDateRangeValue.year(Generated_date_Test.feb_1_2017_.getYear()));
   }
   @Test
   public void dateToRange_item1_8266215269010035859() throws Throwable {
-    Assert.assertEquals("Expected: " + DiscreteDateRangeValue.month(2017, 2) + ", but was: " + DiscreteDateRangeValue.month(YearMonth.from(Generated_date_Test.feb_1_2017_)), (Object) DiscreteDateRangeValue.month(2017, 2), (Object) DiscreteDateRangeValue.month(YearMonth.from(Generated_date_Test.feb_1_2017_)));
+    Assert.assertEquals("Expected: " + DiscreteDateRangeValue.month(2017, 2) + ", but was: " + DiscreteDateRangeValue.month(YearMonth.from(Generated_date_Test.feb_1_2017_)), DiscreteDateRangeValue.month(2017, 2), DiscreteDateRangeValue.month(YearMonth.from(Generated_date_Test.feb_1_2017_)));
   }
   @Test
   public void rangeConversions_item0_8266215269010449379() throws Throwable {
-    Assert.assertEquals("Expected: " + Generated_date_Test.y2017_ + ", but was: " + Generated_date_Test.feb2017_.year(), (Object) Generated_date_Test.y2017_, (Object) Generated_date_Test.feb2017_.year());
+    Assert.assertEquals("Expected: " + Generated_date_Test.y2017_ + ", but was: " + Generated_date_Test.feb2017_.year(), Generated_date_Test.y2017_, Generated_date_Test.feb2017_.year());
   }
   @Test
   public void toString_item1_8211901717732237681() throws Throwable {
-    Assert.assertEquals("Expected: " + "01.01.2018" + ", but was: " + LocalDate.of(2018, 1, 1).format(DateTimeFormatter.ofPattern("dd.MM.yyyy")), (Object) "01.01.2018", (Object) LocalDate.of(2018, 1, 1).format(DateTimeFormatter.ofPattern("dd.MM.yyyy")));
+    Assert.assertEquals("Expected: " + "01.01.2018" + ", but was: " + LocalDate.of(2018, 1, 1).format(DateTimeFormatter.ofPattern("dd.MM.yyyy")), "01.01.2018", LocalDate.of(2018, 1, 1).format(DateTimeFormatter.ofPattern("dd.MM.yyyy")));
   }
   @Test
   public void toString_item2_8211901717732253974() throws Throwable {
-    Assert.assertEquals("Expected: " + "31.12.2018" + ", but was: " + LocalDate.of(2018, 12, 31).format(DateTimeFormatter.ofPattern("dd.MM.yyyy")), (Object) "31.12.2018", (Object) LocalDate.of(2018, 12, 31).format(DateTimeFormatter.ofPattern("dd.MM.yyyy")));
+    Assert.assertEquals("Expected: " + "31.12.2018" + ", but was: " + LocalDate.of(2018, 12, 31).format(DateTimeFormatter.ofPattern("dd.MM.yyyy")), "31.12.2018", LocalDate.of(2018, 12, 31).format(DateTimeFormatter.ofPattern("dd.MM.yyyy")));
   }
   @Test
   public void toString_item3_343859178846697677() throws Throwable {
-    Assert.assertEquals("Expected: " + "01.02.2017" + ", but was: " + Generated_date_Test.feb_1_2017_.format(DateTimeFormatter.ofPattern("dd.MM.yyyy")), (Object) "01.02.2017", (Object) Generated_date_Test.feb_1_2017_.format(DateTimeFormatter.ofPattern("dd.MM.yyyy")));
+    Assert.assertEquals("Expected: " + "01.02.2017" + ", but was: " + Generated_date_Test.feb_1_2017_.format(DateTimeFormatter.ofPattern("dd.MM.yyyy")), "01.02.2017", Generated_date_Test.feb_1_2017_.format(DateTimeFormatter.ofPattern("dd.MM.yyyy")));
   }
-  public static final DateDeltaValue dday_ = DateDeltaValue.ofDays((BigInteger) (Number) new BigInteger("3"));
-  public static final DateDeltaValue dweek_ = DateDeltaValue.ofWeeks((BigInteger) (Number) new BigInteger("3"));
-  public static final DateDeltaValue dmonth_ = DateDeltaValue.ofMonths((BigInteger) (Number) new BigInteger("3"));
-  public static final DateDeltaValue dyear_ = DateDeltaValue.ofYears((BigInteger) (Number) new BigInteger("3"));
+  public static final DateDeltaValue dday_ = DateDeltaValue.ofDays(new BigInteger("3"));
+  public static final DateDeltaValue dweek_ = DateDeltaValue.ofWeeks(new BigInteger("3"));
+  public static final DateDeltaValue dmonth_ = DateDeltaValue.ofMonths(new BigInteger("3"));
+  public static final DateDeltaValue dyear_ = DateDeltaValue.ofYears(new BigInteger("3"));
   public static final LocalDate start_ = LocalDate.of(2018, 1, 1);
   @Test
   public void deltaAdding_item0_8211901717732311634() throws Throwable {
-    Assert.assertEquals("Expected: " + LocalDate.of(2018, 1, 4) + ", but was: " + Generated_date_Test.dday_.addTo(Generated_date_Test.start_), (Object) LocalDate.of(2018, 1, 4), (Object) Generated_date_Test.dday_.addTo(Generated_date_Test.start_));
+    Assert.assertEquals("Expected: " + LocalDate.of(2018, 1, 4) + ", but was: " + Generated_date_Test.dday_.addTo(Generated_date_Test.start_), LocalDate.of(2018, 1, 4), Generated_date_Test.dday_.addTo(Generated_date_Test.start_));
   }
   @Test
   public void deltaAdding_item1_8211901717732340014() throws Throwable {
-    Assert.assertEquals("Expected: " + LocalDate.of(2018, 1, 31) + ", but was: " + Generated_date_Test.dday_.multipliedBy((BigInteger) (Number) new BigInteger("10")).addTo(Generated_date_Test.start_), (Object) LocalDate.of(2018, 1, 31), (Object) Generated_date_Test.dday_.multipliedBy((BigInteger) (Number) new BigInteger("10")).addTo(Generated_date_Test.start_));
+    Assert.assertEquals("Expected: " + LocalDate.of(2018, 1, 31) + ", but was: " + Generated_date_Test.dday_.multipliedBy(new BigInteger("10")).addTo(Generated_date_Test.start_), LocalDate.of(2018, 1, 31), Generated_date_Test.dday_.multipliedBy(new BigInteger("10")).addTo(Generated_date_Test.start_));
   }
   @Test
   public void deltaAdding_item2_8211901717732344639() throws Throwable {
-    Assert.assertEquals("Expected: " + LocalDate.of(2018, 2, 3) + ", but was: " + Generated_date_Test.dday_.multipliedBy((BigInteger) (Number) new BigInteger("11")).addTo(Generated_date_Test.start_), (Object) LocalDate.of(2018, 2, 3), (Object) Generated_date_Test.dday_.multipliedBy((BigInteger) (Number) new BigInteger("11")).addTo(Generated_date_Test.start_));
+    Assert.assertEquals("Expected: " + LocalDate.of(2018, 2, 3) + ", but was: " + Generated_date_Test.dday_.multipliedBy(new BigInteger("11")).addTo(Generated_date_Test.start_), LocalDate.of(2018, 2, 3), Generated_date_Test.dday_.multipliedBy(new BigInteger("11")).addTo(Generated_date_Test.start_));
   }
   @Test
   public void deltaAdding_item3_8211901717732318400() throws Throwable {
-    Assert.assertEquals("Expected: " + LocalDate.of(2018, 1, 22) + ", but was: " + Generated_date_Test.dweek_.addTo(Generated_date_Test.start_), (Object) LocalDate.of(2018, 1, 22), (Object) Generated_date_Test.dweek_.addTo(Generated_date_Test.start_));
+    Assert.assertEquals("Expected: " + LocalDate.of(2018, 1, 22) + ", but was: " + Generated_date_Test.dweek_.addTo(Generated_date_Test.start_), LocalDate.of(2018, 1, 22), Generated_date_Test.dweek_.addTo(Generated_date_Test.start_));
   }
   @Test
   public void deltaAdding_item4_8211901717732325094() throws Throwable {
-    Assert.assertEquals("Expected: " + LocalDate.of(2018, 4, 1) + ", but was: " + Generated_date_Test.dmonth_.addTo(Generated_date_Test.start_), (Object) LocalDate.of(2018, 4, 1), (Object) Generated_date_Test.dmonth_.addTo(Generated_date_Test.start_));
+    Assert.assertEquals("Expected: " + LocalDate.of(2018, 4, 1) + ", but was: " + Generated_date_Test.dmonth_.addTo(Generated_date_Test.start_), LocalDate.of(2018, 4, 1), Generated_date_Test.dmonth_.addTo(Generated_date_Test.start_));
   }
   @Test
   public void deltaAdding_item5_8211901717732329744() throws Throwable {
-    Assert.assertEquals("Expected: " + LocalDate.of(2021, 1, 1) + ", but was: " + Generated_date_Test.dyear_.addTo(Generated_date_Test.start_), (Object) LocalDate.of(2021, 1, 1), (Object) Generated_date_Test.dyear_.addTo(Generated_date_Test.start_));
+    Assert.assertEquals("Expected: " + LocalDate.of(2021, 1, 1) + ", but was: " + Generated_date_Test.dyear_.addTo(Generated_date_Test.start_), LocalDate.of(2021, 1, 1), Generated_date_Test.dyear_.addTo(Generated_date_Test.start_));
   }
   @Test
   public void values_item0_8211901717732368933() throws Throwable {
-    Assert.assertTrue("Expected: " + (Number) new BigInteger("1") + ", but was: " + new BigInteger(Integer.toString(Generated_date_Test.start_.getDayOfMonth())), EqualsTestOp.matches((Number) new BigInteger("1"), new BigInteger(Integer.toString(Generated_date_Test.start_.getDayOfMonth()))));
+    Assert.assertTrue("Expected: " + new BigInteger("1") + ", but was: " + new BigInteger(Integer.toString(Generated_date_Test.start_.getDayOfMonth())), EqualsTestOp.matches(new BigInteger("1"), new BigInteger(Integer.toString(Generated_date_Test.start_.getDayOfMonth()))));
   }
   @Test
   public void values_item1_8211901717732373141() throws Throwable {
-    Assert.assertTrue("Expected: " + (Number) new BigInteger("1") + ", but was: " + new BigInteger(Integer.toString(Generated_date_Test.start_.getMonthValue())), EqualsTestOp.matches((Number) new BigInteger("1"), new BigInteger(Integer.toString(Generated_date_Test.start_.getMonthValue()))));
+    Assert.assertTrue("Expected: " + new BigInteger("1") + ", but was: " + new BigInteger(Integer.toString(Generated_date_Test.start_.getMonthValue())), EqualsTestOp.matches(new BigInteger("1"), new BigInteger(Integer.toString(Generated_date_Test.start_.getMonthValue()))));
   }
   @Test
   public void values_item2_8211901717732373201() throws Throwable {
-    Assert.assertTrue("Expected: " + (Number) new BigInteger("2018") + ", but was: " + new BigInteger(Integer.toString(Generated_date_Test.start_.getYear())), EqualsTestOp.matches((Number) new BigInteger("2018"), new BigInteger(Integer.toString(Generated_date_Test.start_.getYear()))));
+    Assert.assertTrue("Expected: " + new BigInteger("2018") + ", but was: " + new BigInteger(Integer.toString(Generated_date_Test.start_.getYear())), EqualsTestOp.matches(new BigInteger("2018"), new BigInteger(Integer.toString(Generated_date_Test.start_.getYear()))));
   }
   public static final DiscreteDateRangeValue monthRange_ = DiscreteDateRangeValue.month(2018, 1);
-  public static final DiscreteDateRangeValue yearRange_ = DiscreteDateRangeValue.year(((BigInteger) (Number) new BigInteger("2018")).intValue());
+  public static final DiscreteDateRangeValue yearRange_ = DiscreteDateRangeValue.year(new BigInteger("2018").intValue());
   public static final DiscreteDateRangeValue x_ = Generated_date_Test.monthRange_;
   public static final DiscreteDateRangeValue january2018_ = DiscreteDateRangeValue.month(2018, 1);
   public static final DiscreteDateRangeValue february2018_ = DiscreteDateRangeValue.month(2018, 2);
-  public static final DiscreteDateRangeValue year2016_ = DiscreteDateRangeValue.year(((BigInteger) (Number) new BigInteger("2016")).intValue());
-  public static final DiscreteDateRangeValue year2017_ = DiscreteDateRangeValue.year(((BigInteger) (Number) new BigInteger("2017")).intValue());
-  public static final DiscreteDateRangeValue year2018_ = DiscreteDateRangeValue.year(((BigInteger) (Number) new BigInteger("2018")).intValue());
-  public static final DiscreteDateRangeValue year2019_ = DiscreteDateRangeValue.year(((BigInteger) (Number) new BigInteger("2019")).intValue());
+  public static final DiscreteDateRangeValue year2016_ = DiscreteDateRangeValue.year(new BigInteger("2016").intValue());
+  public static final DiscreteDateRangeValue year2017_ = DiscreteDateRangeValue.year(new BigInteger("2017").intValue());
+  public static final DiscreteDateRangeValue year2018_ = DiscreteDateRangeValue.year(new BigInteger("2018").intValue());
+  public static final DiscreteDateRangeValue year2019_ = DiscreteDateRangeValue.year(new BigInteger("2019").intValue());
   @Test
   public void prevNext_item0_6347439425534268891() throws Throwable {
-    Assert.assertEquals("Expected: " + Generated_date_Test.february2018_ + ", but was: " + Generated_date_Test.january2018_.next(), (Object) Generated_date_Test.february2018_, (Object) Generated_date_Test.january2018_.next());
+    Assert.assertEquals("Expected: " + Generated_date_Test.february2018_ + ", but was: " + Generated_date_Test.january2018_.next(), Generated_date_Test.february2018_, Generated_date_Test.january2018_.next());
   }
   @Test
   public void prevNext_item1_6347439425534274786() throws Throwable {
-    Assert.assertEquals("Expected: " + Generated_date_Test.january2018_ + ", but was: " + Generated_date_Test.february2018_.prev(), (Object) Generated_date_Test.january2018_, (Object) Generated_date_Test.february2018_.prev());
+    Assert.assertEquals("Expected: " + Generated_date_Test.january2018_ + ", but was: " + Generated_date_Test.february2018_.prev(), Generated_date_Test.january2018_, Generated_date_Test.february2018_.prev());
   }
   @Test
   public void prevNext_item3_6347439425534291185() throws Throwable {
-    Assert.assertEquals("Expected: " + Generated_date_Test.year2017_ + ", but was: " + Generated_date_Test.year2016_.next(), (Object) Generated_date_Test.year2017_, (Object) Generated_date_Test.year2016_.next());
+    Assert.assertEquals("Expected: " + Generated_date_Test.year2017_ + ", but was: " + Generated_date_Test.year2016_.next(), Generated_date_Test.year2017_, Generated_date_Test.year2016_.next());
   }
   @Test
   public void prevNext_item4_6347439425534295756() throws Throwable {
-    Assert.assertEquals("Expected: " + Generated_date_Test.year2016_ + ", but was: " + Generated_date_Test.year2017_.prev(), (Object) Generated_date_Test.year2016_, (Object) Generated_date_Test.year2017_.prev());
+    Assert.assertEquals("Expected: " + Generated_date_Test.year2016_ + ", but was: " + Generated_date_Test.year2017_.prev(), Generated_date_Test.year2016_, Generated_date_Test.year2017_.prev());
   }
-  public static final Number aYear_ = (Number) new BigInteger("1900");
+  public static final Number aYear_ = new BigInteger("1900");
   @Test
   public void MakeDates_item0_8435714728543559018() throws Throwable {
-    Assert.assertEquals("Expected: " + LocalDate.of(2019, 1, 1) + ", but was: " + LocalDate.of(((Number) new BigInteger("2019")).intValue(), ((Number) new BigInteger("1")).intValue(), ((Number) new BigInteger("1")).intValue()), (Object) LocalDate.of(2019, 1, 1), (Object) LocalDate.of(((Number) new BigInteger("2019")).intValue(), ((Number) new BigInteger("1")).intValue(), ((Number) new BigInteger("1")).intValue()));
+    Assert.assertEquals("Expected: " + LocalDate.of(2019, 1, 1) + ", but was: " + LocalDate.of(new BigInteger("2019").intValue(), new BigInteger("1").intValue(), new BigInteger("1").intValue()), LocalDate.of(2019, 1, 1), LocalDate.of(new BigInteger("2019").intValue(), new BigInteger("1").intValue(), new BigInteger("1").intValue()));
   }
   @Test
   public void MakeDates_item1_8435714728543592040() throws Throwable {
-    Assert.assertEquals("Expected: " + LocalDate.of(2019, 3, 1) + ", but was: " + LocalDate.of(((Number) new BigInteger("2019")).intValue(), AH.add((Number) new BigInteger("1"), (Number) new BigInteger("2")).intValue(), ((Number) new BigInteger("1")).intValue()), (Object) LocalDate.of(2019, 3, 1), (Object) LocalDate.of(((Number) new BigInteger("2019")).intValue(), AH.add((Number) new BigInteger("1"), (Number) new BigInteger("2")).intValue(), ((Number) new BigInteger("1")).intValue()));
+    Assert.assertEquals("Expected: " + LocalDate.of(2019, 3, 1) + ", but was: " + LocalDate.of(new BigInteger("2019").intValue(), AH.add(new BigInteger("1"), new BigInteger("2")).intValue(), new BigInteger("1").intValue()), LocalDate.of(2019, 3, 1), LocalDate.of(new BigInteger("2019").intValue(), AH.add(new BigInteger("1"), new BigInteger("2")).intValue(), new BigInteger("1").intValue()));
   }
   @Test
   public void MakeDates_item2_8435714728543602534() throws Throwable {
-    Assert.assertEquals("Expected: " + LocalDate.of(1900, 5, 1) + ", but was: " + LocalDate.of(Generated_date_Test.aYear_.intValue(), AH.sub(Generated_date_Test.aYear_, (Number) new BigInteger("1895")).intValue(), ((Number) new BigInteger("1")).intValue()), (Object) LocalDate.of(1900, 5, 1), (Object) LocalDate.of(Generated_date_Test.aYear_.intValue(), AH.sub(Generated_date_Test.aYear_, (Number) new BigInteger("1895")).intValue(), ((Number) new BigInteger("1")).intValue()));
+    Assert.assertEquals("Expected: " + LocalDate.of(1900, 5, 1) + ", but was: " + LocalDate.of(Generated_date_Test.aYear_.intValue(), AH.sub(Generated_date_Test.aYear_, new BigInteger("1895")).intValue(), new BigInteger("1").intValue()), LocalDate.of(1900, 5, 1), LocalDate.of(Generated_date_Test.aYear_.intValue(), AH.sub(Generated_date_Test.aYear_, new BigInteger("1895")).intValue(), new BigInteger("1").intValue()));
   }
   public static final DiscreteDateRangeValue october2019_ = DiscreteDateRangeValue.month(2019, 10);
   public static final ArbitraryDateRangeValue october15toNov152019_ = ArbitraryDateRangeValue.make(LocalDate.of(2019, 10, 15), LocalDate.of(2019, 11, 15));
@@ -606,19 +604,19 @@ public class Generated_date_Test {
   }
   @Test
   public void TestDiscreteAndArbitraryRanges_item0_2822673123449411652() throws Throwable {
-    Assert.assertEquals("Expected: " + ArbitraryDateRangeValue.make(LocalDate.of(2019, 1, 1), LocalDate.of(2019, 12, 31)) + ", but was: " + DiscreteDateRangeValue.year(((BigInteger) (Number) new BigInteger("2019")).intValue()), (Object) ArbitraryDateRangeValue.make(LocalDate.of(2019, 1, 1), LocalDate.of(2019, 12, 31)), (Object) DiscreteDateRangeValue.year(((BigInteger) (Number) new BigInteger("2019")).intValue()));
+    Assert.assertEquals("Expected: " + ArbitraryDateRangeValue.make(LocalDate.of(2019, 1, 1), LocalDate.of(2019, 12, 31)) + ", but was: " + DiscreteDateRangeValue.year(new BigInteger("2019").intValue()), ArbitraryDateRangeValue.make(LocalDate.of(2019, 1, 1), LocalDate.of(2019, 12, 31)), DiscreteDateRangeValue.year(new BigInteger("2019").intValue()));
   }
   @Test
   public void TestDiscreteAndArbitraryRanges_item1_2822673123449411853() throws Throwable {
-    Assert.assertEquals("Expected: " + DiscreteDateRangeValue.year(((BigInteger) (Number) new BigInteger("2019")).intValue()) + ", but was: " + ArbitraryDateRangeValue.make(LocalDate.of(2019, 1, 1), LocalDate.of(2019, 12, 31)), (Object) DiscreteDateRangeValue.year(((BigInteger) (Number) new BigInteger("2019")).intValue()), (Object) ArbitraryDateRangeValue.make(LocalDate.of(2019, 1, 1), LocalDate.of(2019, 12, 31)));
+    Assert.assertEquals("Expected: " + DiscreteDateRangeValue.year(new BigInteger("2019").intValue()) + ", but was: " + ArbitraryDateRangeValue.make(LocalDate.of(2019, 1, 1), LocalDate.of(2019, 12, 31)), DiscreteDateRangeValue.year(new BigInteger("2019").intValue()), ArbitraryDateRangeValue.make(LocalDate.of(2019, 1, 1), LocalDate.of(2019, 12, 31)));
   }
   @Test
   public void TestDiscreteAndArbitraryRanges_item3_2822673123448866543() throws Throwable {
-    Assert.assertEquals("Expected: " + ArbitraryDateRangeValue.make(LocalDate.of(2019, 10, 1), LocalDate.of(2019, 10, 31)) + ", but was: " + DiscreteDateRangeValue.month(2019, 10), (Object) ArbitraryDateRangeValue.make(LocalDate.of(2019, 10, 1), LocalDate.of(2019, 10, 31)), (Object) DiscreteDateRangeValue.month(2019, 10));
+    Assert.assertEquals("Expected: " + ArbitraryDateRangeValue.make(LocalDate.of(2019, 10, 1), LocalDate.of(2019, 10, 31)) + ", but was: " + DiscreteDateRangeValue.month(2019, 10), ArbitraryDateRangeValue.make(LocalDate.of(2019, 10, 1), LocalDate.of(2019, 10, 31)), DiscreteDateRangeValue.month(2019, 10));
   }
   @Test
   public void TestDiscreteAndArbitraryRanges_item4_2822673123448988617() throws Throwable {
-    Assert.assertEquals("Expected: " + DiscreteDateRangeValue.month(2019, 10) + ", but was: " + ArbitraryDateRangeValue.make(LocalDate.of(2019, 10, 1), LocalDate.of(2019, 10, 31)), (Object) DiscreteDateRangeValue.month(2019, 10), (Object) ArbitraryDateRangeValue.make(LocalDate.of(2019, 10, 1), LocalDate.of(2019, 10, 31)));
+    Assert.assertEquals("Expected: " + DiscreteDateRangeValue.month(2019, 10) + ", but was: " + ArbitraryDateRangeValue.make(LocalDate.of(2019, 10, 1), LocalDate.of(2019, 10, 31)), DiscreteDateRangeValue.month(2019, 10), ArbitraryDateRangeValue.make(LocalDate.of(2019, 10, 1), LocalDate.of(2019, 10, 31)));
   }
   @Test
   public void Intersection_item0_6714160048304245058() throws Throwable {
@@ -630,51 +628,51 @@ public class Generated_date_Test {
   }
   @Test
   public void Intersection_item3_2822673123431120199() throws Throwable {
-    Assert.assertEquals("Expected: " + ArbitraryDateRangeValue.make(LocalDate.of(2019, 10, 1), LocalDate.of(2019, 10, 1)) + ", but was: " + Generated_date_Test.october2019_.intersect(ArbitraryDateRangeValue.make(LocalDate.of(2019, 9, 15), LocalDate.of(2019, 10, 1))), (Object) ArbitraryDateRangeValue.make(LocalDate.of(2019, 10, 1), LocalDate.of(2019, 10, 1)), (Object) Generated_date_Test.october2019_.intersect(ArbitraryDateRangeValue.make(LocalDate.of(2019, 9, 15), LocalDate.of(2019, 10, 1))));
+    Assert.assertEquals("Expected: " + ArbitraryDateRangeValue.make(LocalDate.of(2019, 10, 1), LocalDate.of(2019, 10, 1)) + ", but was: " + Generated_date_Test.october2019_.intersect(ArbitraryDateRangeValue.make(LocalDate.of(2019, 9, 15), LocalDate.of(2019, 10, 1))), ArbitraryDateRangeValue.make(LocalDate.of(2019, 10, 1), LocalDate.of(2019, 10, 1)), Generated_date_Test.october2019_.intersect(ArbitraryDateRangeValue.make(LocalDate.of(2019, 9, 15), LocalDate.of(2019, 10, 1))));
   }
   @Test
   public void Intersection_item4_2822673123432577563() throws Throwable {
-    Assert.assertEquals("Expected: " + ArbitraryDateRangeValue.make(LocalDate.of(2019, 10, 1), LocalDate.of(2019, 10, 15)) + ", but was: " + Generated_date_Test.october2019_.intersect(ArbitraryDateRangeValue.make(LocalDate.of(2019, 9, 15), LocalDate.of(2019, 10, 15))), (Object) ArbitraryDateRangeValue.make(LocalDate.of(2019, 10, 1), LocalDate.of(2019, 10, 15)), (Object) Generated_date_Test.october2019_.intersect(ArbitraryDateRangeValue.make(LocalDate.of(2019, 9, 15), LocalDate.of(2019, 10, 15))));
+    Assert.assertEquals("Expected: " + ArbitraryDateRangeValue.make(LocalDate.of(2019, 10, 1), LocalDate.of(2019, 10, 15)) + ", but was: " + Generated_date_Test.october2019_.intersect(ArbitraryDateRangeValue.make(LocalDate.of(2019, 9, 15), LocalDate.of(2019, 10, 15))), ArbitraryDateRangeValue.make(LocalDate.of(2019, 10, 1), LocalDate.of(2019, 10, 15)), Generated_date_Test.october2019_.intersect(ArbitraryDateRangeValue.make(LocalDate.of(2019, 9, 15), LocalDate.of(2019, 10, 15))));
   }
   @Test
   public void Intersection_item5_6714160048304289206() throws Throwable {
-    Assert.assertEquals("Expected: " + ArbitraryDateRangeValue.make(LocalDate.of(2019, 10, 15), LocalDate.of(2019, 10, 31)) + ", but was: " + Generated_date_Test.october2019_.intersect(ArbitraryDateRangeValue.make(LocalDate.of(2019, 10, 15), LocalDate.of(2019, 12, 31))), (Object) ArbitraryDateRangeValue.make(LocalDate.of(2019, 10, 15), LocalDate.of(2019, 10, 31)), (Object) Generated_date_Test.october2019_.intersect(ArbitraryDateRangeValue.make(LocalDate.of(2019, 10, 15), LocalDate.of(2019, 12, 31))));
+    Assert.assertEquals("Expected: " + ArbitraryDateRangeValue.make(LocalDate.of(2019, 10, 15), LocalDate.of(2019, 10, 31)) + ", but was: " + Generated_date_Test.october2019_.intersect(ArbitraryDateRangeValue.make(LocalDate.of(2019, 10, 15), LocalDate.of(2019, 12, 31))), ArbitraryDateRangeValue.make(LocalDate.of(2019, 10, 15), LocalDate.of(2019, 10, 31)), Generated_date_Test.october2019_.intersect(ArbitraryDateRangeValue.make(LocalDate.of(2019, 10, 15), LocalDate.of(2019, 12, 31))));
   }
   @Test
   public void Intersection_item6_2822673123432592376() throws Throwable {
-    Assert.assertEquals("Expected: " + ArbitraryDateRangeValue.make(LocalDate.of(2019, 10, 31), LocalDate.of(2019, 10, 31)) + ", but was: " + Generated_date_Test.october2019_.intersect(ArbitraryDateRangeValue.make(LocalDate.of(2019, 10, 31), LocalDate.of(2019, 12, 31))), (Object) ArbitraryDateRangeValue.make(LocalDate.of(2019, 10, 31), LocalDate.of(2019, 10, 31)), (Object) Generated_date_Test.october2019_.intersect(ArbitraryDateRangeValue.make(LocalDate.of(2019, 10, 31), LocalDate.of(2019, 12, 31))));
+    Assert.assertEquals("Expected: " + ArbitraryDateRangeValue.make(LocalDate.of(2019, 10, 31), LocalDate.of(2019, 10, 31)) + ", but was: " + Generated_date_Test.october2019_.intersect(ArbitraryDateRangeValue.make(LocalDate.of(2019, 10, 31), LocalDate.of(2019, 12, 31))), ArbitraryDateRangeValue.make(LocalDate.of(2019, 10, 31), LocalDate.of(2019, 10, 31)), Generated_date_Test.october2019_.intersect(ArbitraryDateRangeValue.make(LocalDate.of(2019, 10, 31), LocalDate.of(2019, 12, 31))));
   }
   @Test
   public void Intersection_item8_2822673123431122860() throws Throwable {
-    Assert.assertEquals("Expected: " + ArbitraryDateRangeValue.make(LocalDate.of(2019, 10, 15), LocalDate.of(2019, 10, 20)) + ", but was: " + Generated_date_Test.october2019_.intersect(ArbitraryDateRangeValue.make(LocalDate.of(2019, 10, 15), LocalDate.of(2019, 10, 20))), (Object) ArbitraryDateRangeValue.make(LocalDate.of(2019, 10, 15), LocalDate.of(2019, 10, 20)), (Object) Generated_date_Test.october2019_.intersect(ArbitraryDateRangeValue.make(LocalDate.of(2019, 10, 15), LocalDate.of(2019, 10, 20))));
+    Assert.assertEquals("Expected: " + ArbitraryDateRangeValue.make(LocalDate.of(2019, 10, 15), LocalDate.of(2019, 10, 20)) + ", but was: " + Generated_date_Test.october2019_.intersect(ArbitraryDateRangeValue.make(LocalDate.of(2019, 10, 15), LocalDate.of(2019, 10, 20))), ArbitraryDateRangeValue.make(LocalDate.of(2019, 10, 15), LocalDate.of(2019, 10, 20)), Generated_date_Test.october2019_.intersect(ArbitraryDateRangeValue.make(LocalDate.of(2019, 10, 15), LocalDate.of(2019, 10, 20))));
   }
   @Test
   public void Intersection_item9_2822673123432606641() throws Throwable {
-    Assert.assertEquals("Expected: " + ArbitraryDateRangeValue.make(LocalDate.of(2019, 10, 15), LocalDate.of(2019, 10, 31)) + ", but was: " + Generated_date_Test.october2019_.intersect(ArbitraryDateRangeValue.make(LocalDate.of(2019, 10, 15), LocalDate.of(2019, 10, 31))), (Object) ArbitraryDateRangeValue.make(LocalDate.of(2019, 10, 15), LocalDate.of(2019, 10, 31)), (Object) Generated_date_Test.october2019_.intersect(ArbitraryDateRangeValue.make(LocalDate.of(2019, 10, 15), LocalDate.of(2019, 10, 31))));
+    Assert.assertEquals("Expected: " + ArbitraryDateRangeValue.make(LocalDate.of(2019, 10, 15), LocalDate.of(2019, 10, 31)) + ", but was: " + Generated_date_Test.october2019_.intersect(ArbitraryDateRangeValue.make(LocalDate.of(2019, 10, 15), LocalDate.of(2019, 10, 31))), ArbitraryDateRangeValue.make(LocalDate.of(2019, 10, 15), LocalDate.of(2019, 10, 31)), Generated_date_Test.october2019_.intersect(ArbitraryDateRangeValue.make(LocalDate.of(2019, 10, 15), LocalDate.of(2019, 10, 31))));
   }
   @Test
   public void Intersection_item10_2822673123432607514() throws Throwable {
-    Assert.assertEquals("Expected: " + ArbitraryDateRangeValue.make(LocalDate.of(2019, 10, 1), LocalDate.of(2019, 10, 15)) + ", but was: " + Generated_date_Test.october2019_.intersect(ArbitraryDateRangeValue.make(LocalDate.of(2019, 10, 1), LocalDate.of(2019, 10, 15))), (Object) ArbitraryDateRangeValue.make(LocalDate.of(2019, 10, 1), LocalDate.of(2019, 10, 15)), (Object) Generated_date_Test.october2019_.intersect(ArbitraryDateRangeValue.make(LocalDate.of(2019, 10, 1), LocalDate.of(2019, 10, 15))));
+    Assert.assertEquals("Expected: " + ArbitraryDateRangeValue.make(LocalDate.of(2019, 10, 1), LocalDate.of(2019, 10, 15)) + ", but was: " + Generated_date_Test.october2019_.intersect(ArbitraryDateRangeValue.make(LocalDate.of(2019, 10, 1), LocalDate.of(2019, 10, 15))), ArbitraryDateRangeValue.make(LocalDate.of(2019, 10, 1), LocalDate.of(2019, 10, 15)), Generated_date_Test.october2019_.intersect(ArbitraryDateRangeValue.make(LocalDate.of(2019, 10, 1), LocalDate.of(2019, 10, 15))));
   }
   @Test
   public void Intersection_item11_2822673123432609082() throws Throwable {
-    Assert.assertEquals("Expected: " + Generated_date_Test.october2019_ + ", but was: " + Generated_date_Test.october2019_.intersect(ArbitraryDateRangeValue.make(LocalDate.of(2019, 10, 1), LocalDate.of(2019, 10, 31))), (Object) Generated_date_Test.october2019_, (Object) Generated_date_Test.october2019_.intersect(ArbitraryDateRangeValue.make(LocalDate.of(2019, 10, 1), LocalDate.of(2019, 10, 31))));
+    Assert.assertEquals("Expected: " + Generated_date_Test.october2019_ + ", but was: " + Generated_date_Test.october2019_.intersect(ArbitraryDateRangeValue.make(LocalDate.of(2019, 10, 1), LocalDate.of(2019, 10, 31))), Generated_date_Test.october2019_, Generated_date_Test.october2019_.intersect(ArbitraryDateRangeValue.make(LocalDate.of(2019, 10, 1), LocalDate.of(2019, 10, 31))));
   }
   @Test
   public void Intersection_item13_2822673123431124174() throws Throwable {
-    Assert.assertEquals("Expected: " + Generated_date_Test.october2019_ + ", but was: " + Generated_date_Test.october2019_.intersect(ArbitraryDateRangeValue.make(LocalDate.of(2019, 9, 15), LocalDate.of(2019, 11, 15))), (Object) Generated_date_Test.october2019_, (Object) Generated_date_Test.october2019_.intersect(ArbitraryDateRangeValue.make(LocalDate.of(2019, 9, 15), LocalDate.of(2019, 11, 15))));
+    Assert.assertEquals("Expected: " + Generated_date_Test.october2019_ + ", but was: " + Generated_date_Test.october2019_.intersect(ArbitraryDateRangeValue.make(LocalDate.of(2019, 9, 15), LocalDate.of(2019, 11, 15))), Generated_date_Test.october2019_, Generated_date_Test.october2019_.intersect(ArbitraryDateRangeValue.make(LocalDate.of(2019, 9, 15), LocalDate.of(2019, 11, 15))));
   }
   @Test
   public void Intersection_item14_2822673123432610257() throws Throwable {
-    Assert.assertEquals("Expected: " + Generated_date_Test.october2019_ + ", but was: " + Generated_date_Test.october2019_.intersect(ArbitraryDateRangeValue.make(LocalDate.of(2019, 10, 1), LocalDate.of(2019, 11, 15))), (Object) Generated_date_Test.october2019_, (Object) Generated_date_Test.october2019_.intersect(ArbitraryDateRangeValue.make(LocalDate.of(2019, 10, 1), LocalDate.of(2019, 11, 15))));
+    Assert.assertEquals("Expected: " + Generated_date_Test.october2019_ + ", but was: " + Generated_date_Test.october2019_.intersect(ArbitraryDateRangeValue.make(LocalDate.of(2019, 10, 1), LocalDate.of(2019, 11, 15))), Generated_date_Test.october2019_, Generated_date_Test.october2019_.intersect(ArbitraryDateRangeValue.make(LocalDate.of(2019, 10, 1), LocalDate.of(2019, 11, 15))));
   }
   @Test
   public void Intersection_item15_2822673123432611920() throws Throwable {
-    Assert.assertEquals("Expected: " + Generated_date_Test.october2019_ + ", but was: " + Generated_date_Test.october2019_.intersect(ArbitraryDateRangeValue.make(LocalDate.of(2019, 9, 15), LocalDate.of(2019, 10, 31))), (Object) Generated_date_Test.october2019_, (Object) Generated_date_Test.october2019_.intersect(ArbitraryDateRangeValue.make(LocalDate.of(2019, 9, 15), LocalDate.of(2019, 10, 31))));
+    Assert.assertEquals("Expected: " + Generated_date_Test.october2019_ + ", but was: " + Generated_date_Test.october2019_.intersect(ArbitraryDateRangeValue.make(LocalDate.of(2019, 9, 15), LocalDate.of(2019, 10, 31))), Generated_date_Test.october2019_, Generated_date_Test.october2019_.intersect(ArbitraryDateRangeValue.make(LocalDate.of(2019, 9, 15), LocalDate.of(2019, 10, 31))));
   }
   @Test
   public void Intersection_item17_5551088970759620623() throws Throwable {
-    Assert.assertEquals("Expected: " + Generated_date_Test.october2019_ + ", but was: " + Generated_date_Test.year2019_.intersect(Generated_date_Test.october2019_), (Object) Generated_date_Test.october2019_, (Object) Generated_date_Test.year2019_.intersect(Generated_date_Test.october2019_));
+    Assert.assertEquals("Expected: " + Generated_date_Test.october2019_ + ", but was: " + Generated_date_Test.year2019_.intersect(Generated_date_Test.october2019_), Generated_date_Test.october2019_, Generated_date_Test.year2019_.intersect(Generated_date_Test.october2019_));
   }
   @Test
   public void Intersection_item18_5551088970758688147() throws Throwable {
@@ -682,164 +680,164 @@ public class Generated_date_Test {
   }
   @Test
   public void Intersection_item19_5609113211162147717() throws Throwable {
-    Assert.assertEquals("Expected: " + ArbitraryDateRangeValue.make(LocalDate.of(2019, 1, 1), LocalDate.of(2019, 12, 31)) + ", but was: " + ArbitraryDateRangeValue.make(LocalDate.of(2019, 1, 1), LocalDate.of(2022, 1, 1)).intersect(ArbitraryDateRangeValue.make(LocalDate.of(2019, 1, 1), LocalDate.of(2019, 12, 31))), (Object) ArbitraryDateRangeValue.make(LocalDate.of(2019, 1, 1), LocalDate.of(2019, 12, 31)), (Object) ArbitraryDateRangeValue.make(LocalDate.of(2019, 1, 1), LocalDate.of(2022, 1, 1)).intersect(ArbitraryDateRangeValue.make(LocalDate.of(2019, 1, 1), LocalDate.of(2019, 12, 31))));
+    Assert.assertEquals("Expected: " + ArbitraryDateRangeValue.make(LocalDate.of(2019, 1, 1), LocalDate.of(2019, 12, 31)) + ", but was: " + ArbitraryDateRangeValue.make(LocalDate.of(2019, 1, 1), LocalDate.of(2022, 1, 1)).intersect(ArbitraryDateRangeValue.make(LocalDate.of(2019, 1, 1), LocalDate.of(2019, 12, 31))), ArbitraryDateRangeValue.make(LocalDate.of(2019, 1, 1), LocalDate.of(2019, 12, 31)), ArbitraryDateRangeValue.make(LocalDate.of(2019, 1, 1), LocalDate.of(2022, 1, 1)).intersect(ArbitraryDateRangeValue.make(LocalDate.of(2019, 1, 1), LocalDate.of(2019, 12, 31))));
   }
   @Test
   public void Intersection_item20_5609113211162187832() throws Throwable {
-    Assert.assertEquals("Expected: " + ArbitraryDateRangeValue.make(LocalDate.of(2019, 1, 1), LocalDate.of(2019, 1, 1)) + ", but was: " + ArbitraryDateRangeValue.make(LocalDate.of(2019, 1, 1), LocalDate.of(2019, 1, 1)).intersect(ArbitraryDateRangeValue.make(LocalDate.of(2019, 1, 1), LocalDate.of(2022, 12, 31))), (Object) ArbitraryDateRangeValue.make(LocalDate.of(2019, 1, 1), LocalDate.of(2019, 1, 1)), (Object) ArbitraryDateRangeValue.make(LocalDate.of(2019, 1, 1), LocalDate.of(2019, 1, 1)).intersect(ArbitraryDateRangeValue.make(LocalDate.of(2019, 1, 1), LocalDate.of(2022, 12, 31))));
+    Assert.assertEquals("Expected: " + ArbitraryDateRangeValue.make(LocalDate.of(2019, 1, 1), LocalDate.of(2019, 1, 1)) + ", but was: " + ArbitraryDateRangeValue.make(LocalDate.of(2019, 1, 1), LocalDate.of(2019, 1, 1)).intersect(ArbitraryDateRangeValue.make(LocalDate.of(2019, 1, 1), LocalDate.of(2022, 12, 31))), ArbitraryDateRangeValue.make(LocalDate.of(2019, 1, 1), LocalDate.of(2019, 1, 1)), ArbitraryDateRangeValue.make(LocalDate.of(2019, 1, 1), LocalDate.of(2019, 1, 1)).intersect(ArbitraryDateRangeValue.make(LocalDate.of(2019, 1, 1), LocalDate.of(2022, 12, 31))));
   }
   @Test
   public void Intersection_item21_6714160048302746247() throws Throwable {
-    Assert.assertEquals("Expected: " + ArbitraryDateRangeValue.make(LocalDate.of(2018, 1, 7), LocalDate.of(2018, 12, 31)) + ", but was: " + ArbitraryDateRangeValue.make(LocalDate.of(2018, 1, 7), LocalDate.of(2019, 2, 5)).intersect(Generated_date_Test.year2018_), (Object) ArbitraryDateRangeValue.make(LocalDate.of(2018, 1, 7), LocalDate.of(2018, 12, 31)), (Object) ArbitraryDateRangeValue.make(LocalDate.of(2018, 1, 7), LocalDate.of(2019, 2, 5)).intersect(Generated_date_Test.year2018_));
+    Assert.assertEquals("Expected: " + ArbitraryDateRangeValue.make(LocalDate.of(2018, 1, 7), LocalDate.of(2018, 12, 31)) + ", but was: " + ArbitraryDateRangeValue.make(LocalDate.of(2018, 1, 7), LocalDate.of(2019, 2, 5)).intersect(Generated_date_Test.year2018_), ArbitraryDateRangeValue.make(LocalDate.of(2018, 1, 7), LocalDate.of(2018, 12, 31)), ArbitraryDateRangeValue.make(LocalDate.of(2018, 1, 7), LocalDate.of(2019, 2, 5)).intersect(Generated_date_Test.year2018_));
   }
   @Test
   public void Intersection_item22_6714160048302765711() throws Throwable {
-    Assert.assertEquals("Expected: " + ArbitraryDateRangeValue.make(LocalDate.of(2018, 1, 7), LocalDate.of(2018, 12, 31)) + ", but was: " + Generated_date_Test.year2018_.intersect(ArbitraryDateRangeValue.make(LocalDate.of(2018, 1, 7), LocalDate.of(2019, 2, 5))), (Object) ArbitraryDateRangeValue.make(LocalDate.of(2018, 1, 7), LocalDate.of(2018, 12, 31)), (Object) Generated_date_Test.year2018_.intersect(ArbitraryDateRangeValue.make(LocalDate.of(2018, 1, 7), LocalDate.of(2019, 2, 5))));
+    Assert.assertEquals("Expected: " + ArbitraryDateRangeValue.make(LocalDate.of(2018, 1, 7), LocalDate.of(2018, 12, 31)) + ", but was: " + Generated_date_Test.year2018_.intersect(ArbitraryDateRangeValue.make(LocalDate.of(2018, 1, 7), LocalDate.of(2019, 2, 5))), ArbitraryDateRangeValue.make(LocalDate.of(2018, 1, 7), LocalDate.of(2018, 12, 31)), Generated_date_Test.year2018_.intersect(ArbitraryDateRangeValue.make(LocalDate.of(2018, 1, 7), LocalDate.of(2019, 2, 5))));
   }
   public static final ArbitraryDateRangeValue fullMonth_ = ArbitraryDateRangeValue.make(LocalDate.of(2019, 4, 16), LocalDate.of(2019, 5, 15));
   @Test
   public void FullMonth_item0_2822673123452688856() throws Throwable {
-    Assert.assertTrue("Expected: " + (Number) new BigInteger("1") + ", but was: " + new BigInteger(ArbitraryDateRangeValue.make(LocalDate.of(2019, 10, 1), LocalDate.of(2019, 10, 31)).countMonths(false) + ""), EqualsTestOp.matches((Number) new BigInteger("1"), new BigInteger(ArbitraryDateRangeValue.make(LocalDate.of(2019, 10, 1), LocalDate.of(2019, 10, 31)).countMonths(false) + "")));
+    Assert.assertTrue("Expected: " + new BigInteger("1") + ", but was: " + new BigInteger(ArbitraryDateRangeValue.make(LocalDate.of(2019, 10, 1), LocalDate.of(2019, 10, 31)).countMonths(false) + ""), EqualsTestOp.matches(new BigInteger("1"), new BigInteger(ArbitraryDateRangeValue.make(LocalDate.of(2019, 10, 1), LocalDate.of(2019, 10, 31)).countMonths(false) + "")));
   }
   @Test
   public void FullMonth_item1_8435714728548749665() throws Throwable {
-    Assert.assertEquals("Expected: " + LocalDate.of(2019, 4, 16) + ", but was: " + Generated_date_Test.fullMonth_.begin(), (Object) LocalDate.of(2019, 4, 16), (Object) Generated_date_Test.fullMonth_.begin());
+    Assert.assertEquals("Expected: " + LocalDate.of(2019, 4, 16) + ", but was: " + Generated_date_Test.fullMonth_.begin(), LocalDate.of(2019, 4, 16), Generated_date_Test.fullMonth_.begin());
   }
   @Test
   public void FullMonth_item2_8435714728549050348() throws Throwable {
-    Assert.assertEquals("Expected: " + LocalDate.of(2019, 5, 15) + ", but was: " + Generated_date_Test.fullMonth_.end(), (Object) LocalDate.of(2019, 5, 15), (Object) Generated_date_Test.fullMonth_.end());
+    Assert.assertEquals("Expected: " + LocalDate.of(2019, 5, 15) + ", but was: " + Generated_date_Test.fullMonth_.end(), LocalDate.of(2019, 5, 15), Generated_date_Test.fullMonth_.end());
   }
   @Test
   public void FullMonth_item3_8435714728549050379() throws Throwable {
-    Assert.assertTrue("Expected: " + (Number) new BigInteger("30") + ", but was: " + new BigInteger(Generated_date_Test.fullMonth_.countDays() + ""), EqualsTestOp.matches((Number) new BigInteger("30"), new BigInteger(Generated_date_Test.fullMonth_.countDays() + "")));
+    Assert.assertTrue("Expected: " + new BigInteger("30") + ", but was: " + new BigInteger(Generated_date_Test.fullMonth_.countDays() + ""), EqualsTestOp.matches(new BigInteger("30"), new BigInteger(Generated_date_Test.fullMonth_.countDays() + "")));
   }
   @Test
   public void FullMonth_item4_8435714728549008913() throws Throwable {
-    Assert.assertTrue("Expected: " + (Number) new BigInteger("1") + ", but was: " + new BigInteger(Generated_date_Test.fullMonth_.countMonths(false) + ""), EqualsTestOp.matches((Number) new BigInteger("1"), new BigInteger(Generated_date_Test.fullMonth_.countMonths(false) + "")));
+    Assert.assertTrue("Expected: " + new BigInteger("1") + ", but was: " + new BigInteger(Generated_date_Test.fullMonth_.countMonths(false) + ""), EqualsTestOp.matches(new BigInteger("1"), new BigInteger(Generated_date_Test.fullMonth_.countMonths(false) + "")));
   }
   @Test
   public void FullMonth_item5_8435714728549013786() throws Throwable {
-    Assert.assertTrue("Expected: " + (Number) new BigInteger("1") + ", but was: " + new BigInteger(Generated_date_Test.fullMonth_.countMonths(true) + ""), EqualsTestOp.matches((Number) new BigInteger("1"), new BigInteger(Generated_date_Test.fullMonth_.countMonths(true) + "")));
+    Assert.assertTrue("Expected: " + new BigInteger("1") + ", but was: " + new BigInteger(Generated_date_Test.fullMonth_.countMonths(true) + ""), EqualsTestOp.matches(new BigInteger("1"), new BigInteger(Generated_date_Test.fullMonth_.countMonths(true) + "")));
   }
   @Test
   public void FullMonth_item6_8234204258353176407() throws Throwable {
-    Assert.assertTrue("Expected: " + (Number) new BigInteger("3") + ", but was: " + new BigInteger(ArbitraryDateRangeValue.make(LocalDate.of(2018, 4, 5), LocalDate.of(2018, 7, 4)).countMonths(true) + ""), EqualsTestOp.matches((Number) new BigInteger("3"), new BigInteger(ArbitraryDateRangeValue.make(LocalDate.of(2018, 4, 5), LocalDate.of(2018, 7, 4)).countMonths(true) + "")));
+    Assert.assertTrue("Expected: " + new BigInteger("3") + ", but was: " + new BigInteger(ArbitraryDateRangeValue.make(LocalDate.of(2018, 4, 5), LocalDate.of(2018, 7, 4)).countMonths(true) + ""), EqualsTestOp.matches(new BigInteger("3"), new BigInteger(ArbitraryDateRangeValue.make(LocalDate.of(2018, 4, 5), LocalDate.of(2018, 7, 4)).countMonths(true) + "")));
   }
   @Test
   public void FullMonth_item7_8234204258353181519() throws Throwable {
-    Assert.assertTrue("Expected: " + (Number) new BigInteger("3") + ", but was: " + new BigInteger(ArbitraryDateRangeValue.make(LocalDate.of(2018, 4, 5), LocalDate.of(2018, 7, 4)).countMonths(false) + ""), EqualsTestOp.matches((Number) new BigInteger("3"), new BigInteger(ArbitraryDateRangeValue.make(LocalDate.of(2018, 4, 5), LocalDate.of(2018, 7, 4)).countMonths(false) + "")));
+    Assert.assertTrue("Expected: " + new BigInteger("3") + ", but was: " + new BigInteger(ArbitraryDateRangeValue.make(LocalDate.of(2018, 4, 5), LocalDate.of(2018, 7, 4)).countMonths(false) + ""), EqualsTestOp.matches(new BigInteger("3"), new BigInteger(ArbitraryDateRangeValue.make(LocalDate.of(2018, 4, 5), LocalDate.of(2018, 7, 4)).countMonths(false) + "")));
   }
   @Test
   public void FullMonth_item8_2822673123456579118() throws Throwable {
-    Assert.assertTrue("Expected: " + (Number) new BigInteger("14") + ", but was: " + new BigInteger(ArbitraryDateRangeValue.make(LocalDate.of(2019, 1, 1), LocalDate.of(2020, 2, 29)).countMonths(true) + ""), EqualsTestOp.matches((Number) new BigInteger("14"), new BigInteger(ArbitraryDateRangeValue.make(LocalDate.of(2019, 1, 1), LocalDate.of(2020, 2, 29)).countMonths(true) + "")));
+    Assert.assertTrue("Expected: " + new BigInteger("14") + ", but was: " + new BigInteger(ArbitraryDateRangeValue.make(LocalDate.of(2019, 1, 1), LocalDate.of(2020, 2, 29)).countMonths(true) + ""), EqualsTestOp.matches(new BigInteger("14"), new BigInteger(ArbitraryDateRangeValue.make(LocalDate.of(2019, 1, 1), LocalDate.of(2020, 2, 29)).countMonths(true) + "")));
   }
   @Test
   public void FullMonth_item9_2822673123456663592() throws Throwable {
-    Assert.assertTrue("Expected: " + (Number) new BigInteger("14") + ", but was: " + new BigInteger(ArbitraryDateRangeValue.make(LocalDate.of(2019, 1, 1), LocalDate.of(2020, 2, 29)).countMonths(false) + ""), EqualsTestOp.matches((Number) new BigInteger("14"), new BigInteger(ArbitraryDateRangeValue.make(LocalDate.of(2019, 1, 1), LocalDate.of(2020, 2, 29)).countMonths(false) + "")));
+    Assert.assertTrue("Expected: " + new BigInteger("14") + ", but was: " + new BigInteger(ArbitraryDateRangeValue.make(LocalDate.of(2019, 1, 1), LocalDate.of(2020, 2, 29)).countMonths(false) + ""), EqualsTestOp.matches(new BigInteger("14"), new BigInteger(ArbitraryDateRangeValue.make(LocalDate.of(2019, 1, 1), LocalDate.of(2020, 2, 29)).countMonths(false) + "")));
   }
   public static final ArbitraryDateRangeValue fullMonthPlus1Day_ = ArbitraryDateRangeValue.make(LocalDate.of(2019, 4, 16), LocalDate.of(2019, 5, 16));
   @Test
   public void FullMonthPlus1Day_item0_2822673123456386150() throws Throwable {
-    Assert.assertEquals("Expected: " + LocalDate.of(2019, 4, 16) + ", but was: " + Generated_date_Test.fullMonthPlus1Day_.begin(), (Object) LocalDate.of(2019, 4, 16), (Object) Generated_date_Test.fullMonthPlus1Day_.begin());
+    Assert.assertEquals("Expected: " + LocalDate.of(2019, 4, 16) + ", but was: " + Generated_date_Test.fullMonthPlus1Day_.begin(), LocalDate.of(2019, 4, 16), Generated_date_Test.fullMonthPlus1Day_.begin());
   }
   @Test
   public void FullMonthPlus1Day_item1_2822673123456386156() throws Throwable {
-    Assert.assertEquals("Expected: " + LocalDate.of(2019, 5, 16) + ", but was: " + Generated_date_Test.fullMonthPlus1Day_.end(), (Object) LocalDate.of(2019, 5, 16), (Object) Generated_date_Test.fullMonthPlus1Day_.end());
+    Assert.assertEquals("Expected: " + LocalDate.of(2019, 5, 16) + ", but was: " + Generated_date_Test.fullMonthPlus1Day_.end(), LocalDate.of(2019, 5, 16), Generated_date_Test.fullMonthPlus1Day_.end());
   }
   @Test
   public void FullMonthPlus1Day_item2_2822673123456386162() throws Throwable {
-    Assert.assertTrue("Expected: " + (Number) new BigInteger("31") + ", but was: " + new BigInteger(Generated_date_Test.fullMonthPlus1Day_.countDays() + ""), EqualsTestOp.matches((Number) new BigInteger("31"), new BigInteger(Generated_date_Test.fullMonthPlus1Day_.countDays() + "")));
+    Assert.assertTrue("Expected: " + new BigInteger("31") + ", but was: " + new BigInteger(Generated_date_Test.fullMonthPlus1Day_.countDays() + ""), EqualsTestOp.matches(new BigInteger("31"), new BigInteger(Generated_date_Test.fullMonthPlus1Day_.countDays() + "")));
   }
   @Test
   public void FullMonthPlus1Day_item3_2822673123456386168() throws Throwable {
-    Assert.assertTrue("Expected: " + (Number) new BigInteger("2") + ", but was: " + new BigInteger(Generated_date_Test.fullMonthPlus1Day_.countMonths(false) + ""), EqualsTestOp.matches((Number) new BigInteger("2"), new BigInteger(Generated_date_Test.fullMonthPlus1Day_.countMonths(false) + "")));
+    Assert.assertTrue("Expected: " + new BigInteger("2") + ", but was: " + new BigInteger(Generated_date_Test.fullMonthPlus1Day_.countMonths(false) + ""), EqualsTestOp.matches(new BigInteger("2"), new BigInteger(Generated_date_Test.fullMonthPlus1Day_.countMonths(false) + "")));
   }
   @Test
   public void FullMonthPlus1Day_item4_2822673123456386174() throws Throwable {
-    Assert.assertTrue("Expected: " + (Number) new BigInteger("1") + ", but was: " + new BigInteger(Generated_date_Test.fullMonthPlus1Day_.countMonths(true) + ""), EqualsTestOp.matches((Number) new BigInteger("1"), new BigInteger(Generated_date_Test.fullMonthPlus1Day_.countMonths(true) + "")));
+    Assert.assertTrue("Expected: " + new BigInteger("1") + ", but was: " + new BigInteger(Generated_date_Test.fullMonthPlus1Day_.countMonths(true) + ""), EqualsTestOp.matches(new BigInteger("1"), new BigInteger(Generated_date_Test.fullMonthPlus1Day_.countMonths(true) + "")));
   }
   @Test
   public void FullMonthPlus1Day_item5_2822673123456386198() throws Throwable {
-    Assert.assertTrue("Expected: " + (Number) new BigInteger("3") + ", but was: " + new BigInteger(ArbitraryDateRangeValue.make(LocalDate.of(2018, 4, 5), LocalDate.of(2018, 7, 5)).countMonths(true) + ""), EqualsTestOp.matches((Number) new BigInteger("3"), new BigInteger(ArbitraryDateRangeValue.make(LocalDate.of(2018, 4, 5), LocalDate.of(2018, 7, 5)).countMonths(true) + "")));
+    Assert.assertTrue("Expected: " + new BigInteger("3") + ", but was: " + new BigInteger(ArbitraryDateRangeValue.make(LocalDate.of(2018, 4, 5), LocalDate.of(2018, 7, 5)).countMonths(true) + ""), EqualsTestOp.matches(new BigInteger("3"), new BigInteger(ArbitraryDateRangeValue.make(LocalDate.of(2018, 4, 5), LocalDate.of(2018, 7, 5)).countMonths(true) + "")));
   }
   @Test
   public void FullMonthPlus1Day_item6_2822673123456386213() throws Throwable {
-    Assert.assertTrue("Expected: " + (Number) new BigInteger("4") + ", but was: " + new BigInteger(ArbitraryDateRangeValue.make(LocalDate.of(2018, 4, 5), LocalDate.of(2018, 7, 5)).countMonths(false) + ""), EqualsTestOp.matches((Number) new BigInteger("4"), new BigInteger(ArbitraryDateRangeValue.make(LocalDate.of(2018, 4, 5), LocalDate.of(2018, 7, 5)).countMonths(false) + "")));
+    Assert.assertTrue("Expected: " + new BigInteger("4") + ", but was: " + new BigInteger(ArbitraryDateRangeValue.make(LocalDate.of(2018, 4, 5), LocalDate.of(2018, 7, 5)).countMonths(false) + ""), EqualsTestOp.matches(new BigInteger("4"), new BigInteger(ArbitraryDateRangeValue.make(LocalDate.of(2018, 4, 5), LocalDate.of(2018, 7, 5)).countMonths(false) + "")));
   }
   public static final ArbitraryDateRangeValue oneYear_ = ArbitraryDateRangeValue.make(LocalDate.of(2019, 4, 16), LocalDate.of(2020, 4, 15));
   @Test
   public void OneYear_item0_8435714728550263676() throws Throwable {
-    Assert.assertEquals("Expected: " + LocalDate.of(2019, 4, 16) + ", but was: " + Generated_date_Test.oneYear_.begin(), (Object) LocalDate.of(2019, 4, 16), (Object) Generated_date_Test.oneYear_.begin());
+    Assert.assertEquals("Expected: " + LocalDate.of(2019, 4, 16) + ", but was: " + Generated_date_Test.oneYear_.begin(), LocalDate.of(2019, 4, 16), Generated_date_Test.oneYear_.begin());
   }
   @Test
   public void OneYear_item1_8435714728549044764() throws Throwable {
-    Assert.assertEquals("Expected: " + LocalDate.of(2020, 4, 15) + ", but was: " + Generated_date_Test.oneYear_.end(), (Object) LocalDate.of(2020, 4, 15), (Object) Generated_date_Test.oneYear_.end());
+    Assert.assertEquals("Expected: " + LocalDate.of(2020, 4, 15) + ", but was: " + Generated_date_Test.oneYear_.end(), LocalDate.of(2020, 4, 15), Generated_date_Test.oneYear_.end());
   }
   @Test
   public void OneYear_item2_8435714728549045050() throws Throwable {
-    Assert.assertTrue("Expected: " + (Number) new BigInteger("366") + ", but was: " + new BigInteger(Generated_date_Test.oneYear_.countDays() + ""), EqualsTestOp.matches((Number) new BigInteger("366"), new BigInteger(Generated_date_Test.oneYear_.countDays() + "")));
+    Assert.assertTrue("Expected: " + new BigInteger("366") + ", but was: " + new BigInteger(Generated_date_Test.oneYear_.countDays() + ""), EqualsTestOp.matches(new BigInteger("366"), new BigInteger(Generated_date_Test.oneYear_.countDays() + "")));
   }
   @Test
   public void OneYear_item3_8435714728549025385() throws Throwable {
-    Assert.assertTrue("Expected: " + (Number) new BigInteger("12") + ", but was: " + new BigInteger(Generated_date_Test.oneYear_.countMonths(true) + ""), EqualsTestOp.matches((Number) new BigInteger("12"), new BigInteger(Generated_date_Test.oneYear_.countMonths(true) + "")));
+    Assert.assertTrue("Expected: " + new BigInteger("12") + ", but was: " + new BigInteger(Generated_date_Test.oneYear_.countMonths(true) + ""), EqualsTestOp.matches(new BigInteger("12"), new BigInteger(Generated_date_Test.oneYear_.countMonths(true) + "")));
   }
   @Test
   public void OneYear_item4_8435714728549025379() throws Throwable {
-    Assert.assertTrue("Expected: " + (Number) new BigInteger("12") + ", but was: " + new BigInteger(Generated_date_Test.oneYear_.countMonths(false) + ""), EqualsTestOp.matches((Number) new BigInteger("12"), new BigInteger(Generated_date_Test.oneYear_.countMonths(false) + "")));
+    Assert.assertTrue("Expected: " + new BigInteger("12") + ", but was: " + new BigInteger(Generated_date_Test.oneYear_.countMonths(false) + ""), EqualsTestOp.matches(new BigInteger("12"), new BigInteger(Generated_date_Test.oneYear_.countMonths(false) + "")));
   }
   @Test
   public void OneYear_item5_8435714728549034280() throws Throwable {
-    Assert.assertTrue("Expected: " + (Number) new BigInteger("1") + ", but was: " + new BigInteger(Generated_date_Test.oneYear_.countYears(true) + ""), EqualsTestOp.matches((Number) new BigInteger("1"), new BigInteger(Generated_date_Test.oneYear_.countYears(true) + "")));
+    Assert.assertTrue("Expected: " + new BigInteger("1") + ", but was: " + new BigInteger(Generated_date_Test.oneYear_.countYears(true) + ""), EqualsTestOp.matches(new BigInteger("1"), new BigInteger(Generated_date_Test.oneYear_.countYears(true) + "")));
   }
   @Test
   public void OneYear_item6_8435714728549034311() throws Throwable {
-    Assert.assertTrue("Expected: " + (Number) new BigInteger("1") + ", but was: " + new BigInteger(Generated_date_Test.oneYear_.countYears(false) + ""), EqualsTestOp.matches((Number) new BigInteger("1"), new BigInteger(Generated_date_Test.oneYear_.countYears(false) + "")));
+    Assert.assertTrue("Expected: " + new BigInteger("1") + ", but was: " + new BigInteger(Generated_date_Test.oneYear_.countYears(false) + ""), EqualsTestOp.matches(new BigInteger("1"), new BigInteger(Generated_date_Test.oneYear_.countYears(false) + "")));
   }
   @Test
   public void OneYear_item7_6714160048306726581() throws Throwable {
-    Assert.assertTrue("Expected: " + (Number) new BigInteger("1") + ", but was: " + new BigInteger(ArbitraryDateRangeValue.make(LocalDate.of(2018, 1, 1), LocalDate.of(2018, 12, 31)).countYears(true) + ""), EqualsTestOp.matches((Number) new BigInteger("1"), new BigInteger(ArbitraryDateRangeValue.make(LocalDate.of(2018, 1, 1), LocalDate.of(2018, 12, 31)).countYears(true) + "")));
+    Assert.assertTrue("Expected: " + new BigInteger("1") + ", but was: " + new BigInteger(ArbitraryDateRangeValue.make(LocalDate.of(2018, 1, 1), LocalDate.of(2018, 12, 31)).countYears(true) + ""), EqualsTestOp.matches(new BigInteger("1"), new BigInteger(ArbitraryDateRangeValue.make(LocalDate.of(2018, 1, 1), LocalDate.of(2018, 12, 31)).countYears(true) + "")));
   }
   @Test
   public void OneYear_item8_8234204258353049798() throws Throwable {
-    Assert.assertTrue("Expected: " + (Number) new BigInteger("1") + ", but was: " + new BigInteger(ArbitraryDateRangeValue.make(LocalDate.of(2018, 1, 1), LocalDate.of(2018, 12, 31)).countYears(false) + ""), EqualsTestOp.matches((Number) new BigInteger("1"), new BigInteger(ArbitraryDateRangeValue.make(LocalDate.of(2018, 1, 1), LocalDate.of(2018, 12, 31)).countYears(false) + "")));
+    Assert.assertTrue("Expected: " + new BigInteger("1") + ", but was: " + new BigInteger(ArbitraryDateRangeValue.make(LocalDate.of(2018, 1, 1), LocalDate.of(2018, 12, 31)).countYears(false) + ""), EqualsTestOp.matches(new BigInteger("1"), new BigInteger(ArbitraryDateRangeValue.make(LocalDate.of(2018, 1, 1), LocalDate.of(2018, 12, 31)).countYears(false) + "")));
   }
   public static final ArbitraryDateRangeValue oneYearPlus1Day_ = ArbitraryDateRangeValue.make(LocalDate.of(2019, 4, 16), LocalDate.of(2020, 4, 16));
   @Test
   public void OneYearPlus1Day_item0_2822673123452832568() throws Throwable {
-    Assert.assertEquals("Expected: " + LocalDate.of(2019, 4, 16) + ", but was: " + Generated_date_Test.oneYearPlus1Day_.begin(), (Object) LocalDate.of(2019, 4, 16), (Object) Generated_date_Test.oneYearPlus1Day_.begin());
+    Assert.assertEquals("Expected: " + LocalDate.of(2019, 4, 16) + ", but was: " + Generated_date_Test.oneYearPlus1Day_.begin(), LocalDate.of(2019, 4, 16), Generated_date_Test.oneYearPlus1Day_.begin());
   }
   @Test
   public void OneYearPlus1Day_item1_2822673123452832574() throws Throwable {
-    Assert.assertEquals("Expected: " + LocalDate.of(2020, 4, 16) + ", but was: " + Generated_date_Test.oneYearPlus1Day_.end(), (Object) LocalDate.of(2020, 4, 16), (Object) Generated_date_Test.oneYearPlus1Day_.end());
+    Assert.assertEquals("Expected: " + LocalDate.of(2020, 4, 16) + ", but was: " + Generated_date_Test.oneYearPlus1Day_.end(), LocalDate.of(2020, 4, 16), Generated_date_Test.oneYearPlus1Day_.end());
   }
   @Test
   public void OneYearPlus1Day_item2_2822673123452832580() throws Throwable {
-    Assert.assertTrue("Expected: " + (Number) new BigInteger("367") + ", but was: " + new BigInteger(Generated_date_Test.oneYearPlus1Day_.countDays() + ""), EqualsTestOp.matches((Number) new BigInteger("367"), new BigInteger(Generated_date_Test.oneYearPlus1Day_.countDays() + "")));
+    Assert.assertTrue("Expected: " + new BigInteger("367") + ", but was: " + new BigInteger(Generated_date_Test.oneYearPlus1Day_.countDays() + ""), EqualsTestOp.matches(new BigInteger("367"), new BigInteger(Generated_date_Test.oneYearPlus1Day_.countDays() + "")));
   }
   @Test
   public void OneYearPlus1Day_item3_2822673123452832586() throws Throwable {
-    Assert.assertTrue("Expected: " + (Number) new BigInteger("12") + ", but was: " + new BigInteger(Generated_date_Test.oneYearPlus1Day_.countMonths(true) + ""), EqualsTestOp.matches((Number) new BigInteger("12"), new BigInteger(Generated_date_Test.oneYearPlus1Day_.countMonths(true) + "")));
+    Assert.assertTrue("Expected: " + new BigInteger("12") + ", but was: " + new BigInteger(Generated_date_Test.oneYearPlus1Day_.countMonths(true) + ""), EqualsTestOp.matches(new BigInteger("12"), new BigInteger(Generated_date_Test.oneYearPlus1Day_.countMonths(true) + "")));
   }
   @Test
   public void OneYearPlus1Day_item4_2822673123452832592() throws Throwable {
-    Assert.assertTrue("Expected: " + (Number) new BigInteger("1") + ", but was: " + new BigInteger(Generated_date_Test.oneYearPlus1Day_.countYears(true) + ""), EqualsTestOp.matches((Number) new BigInteger("1"), new BigInteger(Generated_date_Test.oneYearPlus1Day_.countYears(true) + "")));
+    Assert.assertTrue("Expected: " + new BigInteger("1") + ", but was: " + new BigInteger(Generated_date_Test.oneYearPlus1Day_.countYears(true) + ""), EqualsTestOp.matches(new BigInteger("1"), new BigInteger(Generated_date_Test.oneYearPlus1Day_.countYears(true) + "")));
   }
   @Test
   public void OneYearPlus1Day_item5_2822673123452832598() throws Throwable {
-    Assert.assertTrue("Expected: " + (Number) new BigInteger("2") + ", but was: " + new BigInteger(Generated_date_Test.oneYearPlus1Day_.countYears(false) + ""), EqualsTestOp.matches((Number) new BigInteger("2"), new BigInteger(Generated_date_Test.oneYearPlus1Day_.countYears(false) + "")));
+    Assert.assertTrue("Expected: " + new BigInteger("2") + ", but was: " + new BigInteger(Generated_date_Test.oneYearPlus1Day_.countYears(false) + ""), EqualsTestOp.matches(new BigInteger("2"), new BigInteger(Generated_date_Test.oneYearPlus1Day_.countYears(false) + "")));
   }
   @Test
   public void OneYearPlus1Day_item6_2822673123452832622() throws Throwable {
-    Assert.assertTrue("Expected: " + (Number) new BigInteger("1") + ", but was: " + new BigInteger(ArbitraryDateRangeValue.make(LocalDate.of(2018, 1, 1), LocalDate.of(2019, 1, 1)).countYears(true) + ""), EqualsTestOp.matches((Number) new BigInteger("1"), new BigInteger(ArbitraryDateRangeValue.make(LocalDate.of(2018, 1, 1), LocalDate.of(2019, 1, 1)).countYears(true) + "")));
+    Assert.assertTrue("Expected: " + new BigInteger("1") + ", but was: " + new BigInteger(ArbitraryDateRangeValue.make(LocalDate.of(2018, 1, 1), LocalDate.of(2019, 1, 1)).countYears(true) + ""), EqualsTestOp.matches(new BigInteger("1"), new BigInteger(ArbitraryDateRangeValue.make(LocalDate.of(2018, 1, 1), LocalDate.of(2019, 1, 1)).countYears(true) + "")));
   }
   @Test
   public void OneYearPlus1Day_item7_2822673123452832631() throws Throwable {
-    Assert.assertTrue("Expected: " + (Number) new BigInteger("2") + ", but was: " + new BigInteger(ArbitraryDateRangeValue.make(LocalDate.of(2018, 1, 1), LocalDate.of(2019, 1, 1)).countYears(false) + ""), EqualsTestOp.matches((Number) new BigInteger("2"), new BigInteger(ArbitraryDateRangeValue.make(LocalDate.of(2018, 1, 1), LocalDate.of(2019, 1, 1)).countYears(false) + "")));
+    Assert.assertTrue("Expected: " + new BigInteger("2") + ", but was: " + new BigInteger(ArbitraryDateRangeValue.make(LocalDate.of(2018, 1, 1), LocalDate.of(2019, 1, 1)).countYears(false) + ""), EqualsTestOp.matches(new BigInteger("2"), new BigInteger(ArbitraryDateRangeValue.make(LocalDate.of(2018, 1, 1), LocalDate.of(2019, 1, 1)).countYears(false) + "")));
   }
-  public static final DiscreteDateRangeValue theYear2019_ = DiscreteDateRangeValue.year(((BigInteger) (Number) new BigInteger("2019")).intValue());
+  public static final DiscreteDateRangeValue theYear2019_ = DiscreteDateRangeValue.year(new BigInteger("2019").intValue());
   @Test
   public void TheYear_item0_8435714728550284226() throws Throwable {
-    Assert.assertTrue("Expected: " + (Number) new BigInteger("365") + ", but was: " + new BigInteger(Generated_date_Test.theYear2019_.countDays() + ""), EqualsTestOp.matches((Number) new BigInteger("365"), new BigInteger(Generated_date_Test.theYear2019_.countDays() + "")));
+    Assert.assertTrue("Expected: " + new BigInteger("365") + ", but was: " + new BigInteger(Generated_date_Test.theYear2019_.countDays() + ""), EqualsTestOp.matches(new BigInteger("365"), new BigInteger(Generated_date_Test.theYear2019_.countDays() + "")));
   }
   public static final AbstractDateRangeValue emptyRange_ = ArbitraryDateRangeValue.make(LocalDate.of(2018, 1, 1), LocalDate.of(2018, 1, 1)).intersect(ArbitraryDateRangeValue.make(LocalDate.of(2018, 1, 2), LocalDate.of(2018, 1, 2)));
   @Test
@@ -848,93 +846,93 @@ public class Generated_date_Test {
   }
   @Test
   public void EmptyRange_item1_2822673123452882332() throws Throwable {
-    Assert.assertTrue("Expected: " + (Number) new BigInteger("0") + ", but was: " + new BigInteger(Generated_date_Test.emptyRange_.countYears(false) + ""), EqualsTestOp.matches((Number) new BigInteger("0"), new BigInteger(Generated_date_Test.emptyRange_.countYears(false) + "")));
+    Assert.assertTrue("Expected: " + new BigInteger("0") + ", but was: " + new BigInteger(Generated_date_Test.emptyRange_.countYears(false) + ""), EqualsTestOp.matches(new BigInteger("0"), new BigInteger(Generated_date_Test.emptyRange_.countYears(false) + "")));
   }
   @Test
   public void EmptyRange_item2_2822673123456374693() throws Throwable {
-    Assert.assertTrue("Expected: " + (Number) new BigInteger("0") + ", but was: " + new BigInteger(Generated_date_Test.emptyRange_.countMonths(false) + ""), EqualsTestOp.matches((Number) new BigInteger("0"), new BigInteger(Generated_date_Test.emptyRange_.countMonths(false) + "")));
+    Assert.assertTrue("Expected: " + new BigInteger("0") + ", but was: " + new BigInteger(Generated_date_Test.emptyRange_.countMonths(false) + ""), EqualsTestOp.matches(new BigInteger("0"), new BigInteger(Generated_date_Test.emptyRange_.countMonths(false) + "")));
   }
   public static final ArbitraryDateRangeValue full13Months_ = ArbitraryDateRangeValue.make(LocalDate.of(2019, 4, 16), LocalDate.of(2020, 5, 15));
   @Test
   public void Full13Months_item0_8435714728549118924() throws Throwable {
-    Assert.assertEquals("Expected: " + LocalDate.of(2019, 4, 16) + ", but was: " + Generated_date_Test.full13Months_.begin(), (Object) LocalDate.of(2019, 4, 16), (Object) Generated_date_Test.full13Months_.begin());
+    Assert.assertEquals("Expected: " + LocalDate.of(2019, 4, 16) + ", but was: " + Generated_date_Test.full13Months_.begin(), LocalDate.of(2019, 4, 16), Generated_date_Test.full13Months_.begin());
   }
   @Test
   public void Full13Months_item1_8435714728549118930() throws Throwable {
-    Assert.assertEquals("Expected: " + LocalDate.of(2020, 5, 15) + ", but was: " + Generated_date_Test.full13Months_.end(), (Object) LocalDate.of(2020, 5, 15), (Object) Generated_date_Test.full13Months_.end());
+    Assert.assertEquals("Expected: " + LocalDate.of(2020, 5, 15) + ", but was: " + Generated_date_Test.full13Months_.end(), LocalDate.of(2020, 5, 15), Generated_date_Test.full13Months_.end());
   }
   @Test
   public void Full13Months_item2_8435714728549118936() throws Throwable {
-    Assert.assertTrue("Expected: " + (Number) new BigInteger("396") + ", but was: " + new BigInteger(Generated_date_Test.full13Months_.countDays() + ""), EqualsTestOp.matches((Number) new BigInteger("396"), new BigInteger(Generated_date_Test.full13Months_.countDays() + "")));
+    Assert.assertTrue("Expected: " + new BigInteger("396") + ", but was: " + new BigInteger(Generated_date_Test.full13Months_.countDays() + ""), EqualsTestOp.matches(new BigInteger("396"), new BigInteger(Generated_date_Test.full13Months_.countDays() + "")));
   }
   @Test
   public void Full13Months_item3_8435714728549118942() throws Throwable {
-    Assert.assertTrue("Expected: " + (Number) new BigInteger("13") + ", but was: " + new BigInteger(Generated_date_Test.full13Months_.countMonths(false) + ""), EqualsTestOp.matches((Number) new BigInteger("13"), new BigInteger(Generated_date_Test.full13Months_.countMonths(false) + "")));
+    Assert.assertTrue("Expected: " + new BigInteger("13") + ", but was: " + new BigInteger(Generated_date_Test.full13Months_.countMonths(false) + ""), EqualsTestOp.matches(new BigInteger("13"), new BigInteger(Generated_date_Test.full13Months_.countMonths(false) + "")));
   }
   @Test
   public void Full13Months_item4_8435714728549118948() throws Throwable {
-    Assert.assertTrue("Expected: " + (Number) new BigInteger("13") + ", but was: " + new BigInteger(Generated_date_Test.full13Months_.countMonths(true) + ""), EqualsTestOp.matches((Number) new BigInteger("13"), new BigInteger(Generated_date_Test.full13Months_.countMonths(true) + "")));
+    Assert.assertTrue("Expected: " + new BigInteger("13") + ", but was: " + new BigInteger(Generated_date_Test.full13Months_.countMonths(true) + ""), EqualsTestOp.matches(new BigInteger("13"), new BigInteger(Generated_date_Test.full13Months_.countMonths(true) + "")));
   }
   @Test
   public void Full13Months_item5_8435714728549118954() throws Throwable {
-    Assert.assertTrue("Expected: " + (Number) new BigInteger("1") + ", but was: " + new BigInteger(Generated_date_Test.full13Months_.countYears(true) + ""), EqualsTestOp.matches((Number) new BigInteger("1"), new BigInteger(Generated_date_Test.full13Months_.countYears(true) + "")));
+    Assert.assertTrue("Expected: " + new BigInteger("1") + ", but was: " + new BigInteger(Generated_date_Test.full13Months_.countYears(true) + ""), EqualsTestOp.matches(new BigInteger("1"), new BigInteger(Generated_date_Test.full13Months_.countYears(true) + "")));
   }
   @Test
   public void Full13Months_item6_8435714728549118960() throws Throwable {
-    Assert.assertTrue("Expected: " + (Number) new BigInteger("2") + ", but was: " + new BigInteger(Generated_date_Test.full13Months_.countYears(false) + ""), EqualsTestOp.matches((Number) new BigInteger("2"), new BigInteger(Generated_date_Test.full13Months_.countYears(false) + "")));
+    Assert.assertTrue("Expected: " + new BigInteger("2") + ", but was: " + new BigInteger(Generated_date_Test.full13Months_.countYears(false) + ""), EqualsTestOp.matches(new BigInteger("2"), new BigInteger(Generated_date_Test.full13Months_.countYears(false) + "")));
   }
   public static final ArbitraryDateRangeValue d13MonthsAndThreeDays_ = ArbitraryDateRangeValue.make(LocalDate.of(2019, 4, 16), LocalDate.of(2020, 5, 20));
   @Test
   public void D13MonthsAndThreeDays_item0_8435714728549135075() throws Throwable {
-    Assert.assertEquals("Expected: " + LocalDate.of(2019, 4, 16) + ", but was: " + Generated_date_Test.d13MonthsAndThreeDays_.begin(), (Object) LocalDate.of(2019, 4, 16), (Object) Generated_date_Test.d13MonthsAndThreeDays_.begin());
+    Assert.assertEquals("Expected: " + LocalDate.of(2019, 4, 16) + ", but was: " + Generated_date_Test.d13MonthsAndThreeDays_.begin(), LocalDate.of(2019, 4, 16), Generated_date_Test.d13MonthsAndThreeDays_.begin());
   }
   @Test
   public void D13MonthsAndThreeDays_item1_8435714728549135081() throws Throwable {
-    Assert.assertEquals("Expected: " + LocalDate.of(2020, 5, 20) + ", but was: " + Generated_date_Test.d13MonthsAndThreeDays_.end(), (Object) LocalDate.of(2020, 5, 20), (Object) Generated_date_Test.d13MonthsAndThreeDays_.end());
+    Assert.assertEquals("Expected: " + LocalDate.of(2020, 5, 20) + ", but was: " + Generated_date_Test.d13MonthsAndThreeDays_.end(), LocalDate.of(2020, 5, 20), Generated_date_Test.d13MonthsAndThreeDays_.end());
   }
   @Test
   public void D13MonthsAndThreeDays_item2_8435714728549135087() throws Throwable {
-    Assert.assertTrue("Expected: " + (Number) new BigInteger("401") + ", but was: " + new BigInteger(Generated_date_Test.d13MonthsAndThreeDays_.countDays() + ""), EqualsTestOp.matches((Number) new BigInteger("401"), new BigInteger(Generated_date_Test.d13MonthsAndThreeDays_.countDays() + "")));
+    Assert.assertTrue("Expected: " + new BigInteger("401") + ", but was: " + new BigInteger(Generated_date_Test.d13MonthsAndThreeDays_.countDays() + ""), EqualsTestOp.matches(new BigInteger("401"), new BigInteger(Generated_date_Test.d13MonthsAndThreeDays_.countDays() + "")));
   }
   @Test
   public void D13MonthsAndThreeDays_item3_8435714728549135093() throws Throwable {
-    Assert.assertTrue("Expected: " + (Number) new BigInteger("14") + ", but was: " + new BigInteger(Generated_date_Test.d13MonthsAndThreeDays_.countMonths(false) + ""), EqualsTestOp.matches((Number) new BigInteger("14"), new BigInteger(Generated_date_Test.d13MonthsAndThreeDays_.countMonths(false) + "")));
+    Assert.assertTrue("Expected: " + new BigInteger("14") + ", but was: " + new BigInteger(Generated_date_Test.d13MonthsAndThreeDays_.countMonths(false) + ""), EqualsTestOp.matches(new BigInteger("14"), new BigInteger(Generated_date_Test.d13MonthsAndThreeDays_.countMonths(false) + "")));
   }
   @Test
   public void D13MonthsAndThreeDays_item4_8435714728549135099() throws Throwable {
-    Assert.assertTrue("Expected: " + (Number) new BigInteger("13") + ", but was: " + new BigInteger(Generated_date_Test.d13MonthsAndThreeDays_.countMonths(true) + ""), EqualsTestOp.matches((Number) new BigInteger("13"), new BigInteger(Generated_date_Test.d13MonthsAndThreeDays_.countMonths(true) + "")));
+    Assert.assertTrue("Expected: " + new BigInteger("13") + ", but was: " + new BigInteger(Generated_date_Test.d13MonthsAndThreeDays_.countMonths(true) + ""), EqualsTestOp.matches(new BigInteger("13"), new BigInteger(Generated_date_Test.d13MonthsAndThreeDays_.countMonths(true) + "")));
   }
   @Test
   public void D13MonthsAndThreeDays_item5_8435714728549135105() throws Throwable {
-    Assert.assertTrue("Expected: " + (Number) new BigInteger("1") + ", but was: " + new BigInteger(Generated_date_Test.d13MonthsAndThreeDays_.countYears(true) + ""), EqualsTestOp.matches((Number) new BigInteger("1"), new BigInteger(Generated_date_Test.d13MonthsAndThreeDays_.countYears(true) + "")));
+    Assert.assertTrue("Expected: " + new BigInteger("1") + ", but was: " + new BigInteger(Generated_date_Test.d13MonthsAndThreeDays_.countYears(true) + ""), EqualsTestOp.matches(new BigInteger("1"), new BigInteger(Generated_date_Test.d13MonthsAndThreeDays_.countYears(true) + "")));
   }
   @Test
   public void D13MonthsAndThreeDays_item6_8435714728549135111() throws Throwable {
-    Assert.assertTrue("Expected: " + (Number) new BigInteger("2") + ", but was: " + new BigInteger(Generated_date_Test.d13MonthsAndThreeDays_.countYears(false) + ""), EqualsTestOp.matches((Number) new BigInteger("2"), new BigInteger(Generated_date_Test.d13MonthsAndThreeDays_.countYears(false) + "")));
+    Assert.assertTrue("Expected: " + new BigInteger("2") + ", but was: " + new BigInteger(Generated_date_Test.d13MonthsAndThreeDays_.countYears(false) + ""), EqualsTestOp.matches(new BigInteger("2"), new BigInteger(Generated_date_Test.d13MonthsAndThreeDays_.countYears(false) + "")));
   }
-  public static final DateDeltaValue fiveYears_ = DateDeltaValue.ofYears((BigInteger) (Number) new BigInteger("5"));
-  public static final DateDeltaValue fiveMonths_ = DateDeltaValue.ofMonths((BigInteger) (Number) new BigInteger("5"));
-  public static final DateDeltaValue fiveWeeks_ = DateDeltaValue.ofWeeks((BigInteger) (Number) new BigInteger("5"));
-  public static final DateDeltaValue fiveDays_ = DateDeltaValue.ofDays((BigInteger) (Number) new BigInteger("5"));
+  public static final DateDeltaValue fiveYears_ = DateDeltaValue.ofYears(new BigInteger("5"));
+  public static final DateDeltaValue fiveMonths_ = DateDeltaValue.ofMonths(new BigInteger("5"));
+  public static final DateDeltaValue fiveWeeks_ = DateDeltaValue.ofWeeks(new BigInteger("5"));
+  public static final DateDeltaValue fiveDays_ = DateDeltaValue.ofDays(new BigInteger("5"));
   @Test
   public void ToNumber_item0_5674727352060224918() throws Throwable {
-    Assert.assertTrue("Expected: " + (Number) new BigInteger("5") + ", but was: " + Generated_date_Test.fiveYears_.toNumber(), EqualsTestOp.matches((Number) new BigInteger("5"), Generated_date_Test.fiveYears_.toNumber()));
+    Assert.assertTrue("Expected: " + new BigInteger("5") + ", but was: " + Generated_date_Test.fiveYears_.toNumber(), EqualsTestOp.matches(new BigInteger("5"), Generated_date_Test.fiveYears_.toNumber()));
   }
   @Test
   public void ToNumber_item1_5674727352060756455() throws Throwable {
-    Assert.assertTrue("Expected: " + (Number) new BigInteger("5") + ", but was: " + Generated_date_Test.fiveMonths_.toNumber(), EqualsTestOp.matches((Number) new BigInteger("5"), Generated_date_Test.fiveMonths_.toNumber()));
+    Assert.assertTrue("Expected: " + new BigInteger("5") + ", but was: " + Generated_date_Test.fiveMonths_.toNumber(), EqualsTestOp.matches(new BigInteger("5"), Generated_date_Test.fiveMonths_.toNumber()));
   }
   @Test
   public void ToNumber_item2_5674727352060756486() throws Throwable {
-    Assert.assertTrue("Expected: " + (Number) new BigInteger("5") + ", but was: " + Generated_date_Test.fiveWeeks_.toNumber(), EqualsTestOp.matches((Number) new BigInteger("5"), Generated_date_Test.fiveWeeks_.toNumber()));
+    Assert.assertTrue("Expected: " + new BigInteger("5") + ", but was: " + Generated_date_Test.fiveWeeks_.toNumber(), EqualsTestOp.matches(new BigInteger("5"), Generated_date_Test.fiveWeeks_.toNumber()));
   }
   @Test
   public void ToNumber_item3_5674727352060756529() throws Throwable {
-    Assert.assertTrue("Expected: " + (Number) new BigInteger("5") + ", but was: " + Generated_date_Test.fiveDays_.toNumber(), EqualsTestOp.matches((Number) new BigInteger("5"), Generated_date_Test.fiveDays_.toNumber()));
+    Assert.assertTrue("Expected: " + new BigInteger("5") + ", but was: " + Generated_date_Test.fiveDays_.toNumber(), EqualsTestOp.matches(new BigInteger("5"), Generated_date_Test.fiveDays_.toNumber()));
   }
   @Test
   public void ToNumber_item4_5674727352060776608() throws Throwable {
-    Assert.assertTrue("Expected: " + (Number) new BigInteger("4") + ", but was: " + AH.div((Number) new BigInteger("20"), Generated_date_Test.fiveDays_.toNumber()), EqualsTestOp.matches((Number) new BigInteger("4"), AH.div((Number) new BigInteger("20"), Generated_date_Test.fiveDays_.toNumber())));
+    Assert.assertTrue("Expected: " + new BigInteger("4") + ", but was: " + AH.div(new BigInteger("20"), Generated_date_Test.fiveDays_.toNumber()), EqualsTestOp.matches(new BigInteger("4"), AH.div(new BigInteger("20"), Generated_date_Test.fiveDays_.toNumber())));
   }
   public static final LocalDate jan2019_ = LocalDate.of(2019, 1, 1);
   public static final LocalDate feb2019_ = LocalDate.of(2019, 2, 1);
@@ -945,7 +943,7 @@ public class Generated_date_Test {
       List<LocalDate> l = ListSequence.fromList(new ArrayList<LocalDate>());
       ListSequence.fromList(l).addElement(Generated_date_Test.jan2019_);
       return l;
-    }).invoke()), (Object) Generated_date_Test.jan2019_, (Object) EarlyLateHelper.earliest(((_FunctionTypes._return_P0_E0<List<LocalDate>>) () -> {
+    }).invoke()), Generated_date_Test.jan2019_, EarlyLateHelper.earliest(((_FunctionTypes._return_P0_E0<List<LocalDate>>) () -> {
       List<LocalDate> l = ListSequence.fromList(new ArrayList<LocalDate>());
       ListSequence.fromList(l).addElement(Generated_date_Test.jan2019_);
       return l;
@@ -958,7 +956,7 @@ public class Generated_date_Test {
       ListSequence.fromList(l).addElement(Generated_date_Test.jan2019_);
       ListSequence.fromList(l).addElement(Generated_date_Test.feb2019_);
       return l;
-    }).invoke()), (Object) Generated_date_Test.jan2019_, (Object) EarlyLateHelper.earliest(((_FunctionTypes._return_P0_E0<List<LocalDate>>) () -> {
+    }).invoke()), Generated_date_Test.jan2019_, EarlyLateHelper.earliest(((_FunctionTypes._return_P0_E0<List<LocalDate>>) () -> {
       List<LocalDate> l = ListSequence.fromList(new ArrayList<LocalDate>());
       ListSequence.fromList(l).addElement(Generated_date_Test.jan2019_);
       ListSequence.fromList(l).addElement(Generated_date_Test.feb2019_);
@@ -973,7 +971,7 @@ public class Generated_date_Test {
       ListSequence.fromList(l).addElement(Generated_date_Test.feb2019_);
       ListSequence.fromList(l).addElement(Generated_date_Test.mar2019_);
       return l;
-    }).invoke()), (Object) Generated_date_Test.jan2019_, (Object) EarlyLateHelper.earliest(((_FunctionTypes._return_P0_E0<List<LocalDate>>) () -> {
+    }).invoke()), Generated_date_Test.jan2019_, EarlyLateHelper.earliest(((_FunctionTypes._return_P0_E0<List<LocalDate>>) () -> {
       List<LocalDate> l = ListSequence.fromList(new ArrayList<LocalDate>());
       ListSequence.fromList(l).addElement(Generated_date_Test.jan2019_);
       ListSequence.fromList(l).addElement(Generated_date_Test.feb2019_);
@@ -987,7 +985,7 @@ public class Generated_date_Test {
       List<LocalDate> l = ListSequence.fromList(new ArrayList<LocalDate>());
       ListSequence.fromList(l).addElement(Generated_date_Test.jan2019_);
       return l;
-    }).invoke()), (Object) Generated_date_Test.jan2019_, (Object) EarlyLateHelper.latest(((_FunctionTypes._return_P0_E0<List<LocalDate>>) () -> {
+    }).invoke()), Generated_date_Test.jan2019_, EarlyLateHelper.latest(((_FunctionTypes._return_P0_E0<List<LocalDate>>) () -> {
       List<LocalDate> l = ListSequence.fromList(new ArrayList<LocalDate>());
       ListSequence.fromList(l).addElement(Generated_date_Test.jan2019_);
       return l;
@@ -1000,7 +998,7 @@ public class Generated_date_Test {
       ListSequence.fromList(l).addElement(Generated_date_Test.jan2019_);
       ListSequence.fromList(l).addElement(Generated_date_Test.feb2019_);
       return l;
-    }).invoke()), (Object) Generated_date_Test.feb2019_, (Object) EarlyLateHelper.latest(((_FunctionTypes._return_P0_E0<List<LocalDate>>) () -> {
+    }).invoke()), Generated_date_Test.feb2019_, EarlyLateHelper.latest(((_FunctionTypes._return_P0_E0<List<LocalDate>>) () -> {
       List<LocalDate> l = ListSequence.fromList(new ArrayList<LocalDate>());
       ListSequence.fromList(l).addElement(Generated_date_Test.jan2019_);
       ListSequence.fromList(l).addElement(Generated_date_Test.feb2019_);
@@ -1015,7 +1013,7 @@ public class Generated_date_Test {
       ListSequence.fromList(l).addElement(Generated_date_Test.feb2019_);
       ListSequence.fromList(l).addElement(Generated_date_Test.mar2019_);
       return l;
-    }).invoke()), (Object) Generated_date_Test.mar2019_, (Object) EarlyLateHelper.latest(((_FunctionTypes._return_P0_E0<List<LocalDate>>) () -> {
+    }).invoke()), Generated_date_Test.mar2019_, EarlyLateHelper.latest(((_FunctionTypes._return_P0_E0<List<LocalDate>>) () -> {
       List<LocalDate> l = ListSequence.fromList(new ArrayList<LocalDate>());
       ListSequence.fromList(l).addElement(Generated_date_Test.jan2019_);
       ListSequence.fromList(l).addElement(Generated_date_Test.feb2019_);
@@ -1025,11 +1023,11 @@ public class Generated_date_Test {
   }
   @Test
   public void dateOptionEquality_item0_644325295120846114() throws Throwable {
-    Assert.assertEquals("Expected: " + LocalDate.of(2019, 1, 1) + ", but was: " + LocalDate.of(2019, 1, 1), (Object) LocalDate.of(2019, 1, 1), (Object) LocalDate.of(2019, 1, 1));
+    Assert.assertEquals("Expected: " + LocalDate.of(2019, 1, 1) + ", but was: " + LocalDate.of(2019, 1, 1), LocalDate.of(2019, 1, 1), LocalDate.of(2019, 1, 1));
   }
   @Test
   public void dateOptionEquality_item1_665001244858329978() throws Throwable {
-    Assert.assertEquals("Expected: " + LocalDate.of(2019, 1, 1) + ", but was: " + LocalDate.of(2019, 1, 1), (Object) LocalDate.of(2019, 1, 1), (Object) LocalDate.of(2019, 1, 1));
+    Assert.assertEquals("Expected: " + LocalDate.of(2019, 1, 1) + ", but was: " + LocalDate.of(2019, 1, 1), LocalDate.of(2019, 1, 1), LocalDate.of(2019, 1, 1));
   }
   @Test
   public void dateOptionEquality_item2_665001244858330118() throws Throwable {
@@ -1037,7 +1035,7 @@ public class Generated_date_Test {
   }
   @Test
   public void dateOptionEquality_item3_665001244856404899() throws Throwable {
-    Assert.assertEquals("Expected: " + LocalDate.of(2019, 1, 1) + ", but was: " + LocalDate.of(2019, 1, 1), (Object) LocalDate.of(2019, 1, 1), (Object) LocalDate.of(2019, 1, 1));
+    Assert.assertEquals("Expected: " + LocalDate.of(2019, 1, 1) + ", but was: " + LocalDate.of(2019, 1, 1), LocalDate.of(2019, 1, 1), LocalDate.of(2019, 1, 1));
   }
   @Test
   public void dateOptionEquality_item4_644325295120854990() throws Throwable {
@@ -1057,44 +1055,44 @@ public class Generated_date_Test {
   }
   @Test
   public void dateOptionEquality_item10_665001244856327583() throws Throwable {
-    Assert.assertEquals("Expected: " + ArbitraryDateRangeValue.make(LocalDate.of(2019, 1, 1), LocalDate.of(2019, 1, 31)) + ", but was: " + DiscreteDateRangeValue.month(2019, 1), (Object) ArbitraryDateRangeValue.make(LocalDate.of(2019, 1, 1), LocalDate.of(2019, 1, 31)), (Object) DiscreteDateRangeValue.month(2019, 1));
+    Assert.assertEquals("Expected: " + ArbitraryDateRangeValue.make(LocalDate.of(2019, 1, 1), LocalDate.of(2019, 1, 31)) + ", but was: " + DiscreteDateRangeValue.month(2019, 1), ArbitraryDateRangeValue.make(LocalDate.of(2019, 1, 1), LocalDate.of(2019, 1, 31)), DiscreteDateRangeValue.month(2019, 1));
   }
   @Test
   public void dateOptionEquality_item11_665001244856386945() throws Throwable {
-    Assert.assertEquals("Expected: " + DiscreteDateRangeValue.month(2019, 1) + ", but was: " + ArbitraryDateRangeValue.make(LocalDate.of(2019, 1, 1), LocalDate.of(2019, 1, 31)), (Object) DiscreteDateRangeValue.month(2019, 1), (Object) ArbitraryDateRangeValue.make(LocalDate.of(2019, 1, 1), LocalDate.of(2019, 1, 31)));
+    Assert.assertEquals("Expected: " + DiscreteDateRangeValue.month(2019, 1) + ", but was: " + ArbitraryDateRangeValue.make(LocalDate.of(2019, 1, 1), LocalDate.of(2019, 1, 31)), DiscreteDateRangeValue.month(2019, 1), ArbitraryDateRangeValue.make(LocalDate.of(2019, 1, 1), LocalDate.of(2019, 1, 31)));
   }
   @Test
   public void dateOptionEquality_item12_665001244856302453() throws Throwable {
-    Assert.assertEquals("Expected: " + DiscreteDateRangeValue.month(2019, 1) + ", but was: " + DiscreteDateRangeValue.month(2019, 1), (Object) DiscreteDateRangeValue.month(2019, 1), (Object) DiscreteDateRangeValue.month(2019, 1));
+    Assert.assertEquals("Expected: " + DiscreteDateRangeValue.month(2019, 1) + ", but was: " + DiscreteDateRangeValue.month(2019, 1), DiscreteDateRangeValue.month(2019, 1), DiscreteDateRangeValue.month(2019, 1));
   }
   @Test
   public void dateOptionEquality_item13_665001244856311500() throws Throwable {
     Assert.assertTrue("Expected: " + DiscreteDateRangeValue.month(2019, 2) + ", but was: " + DiscreteDateRangeValue.month(2019, 1), !(EqualsTestOp.matches(DiscreteDateRangeValue.month(2019, 1), DiscreteDateRangeValue.month(2019, 2))));
   }
-  public static final DiscreteDateRangeValue year2020_ = DiscreteDateRangeValue.year(((BigInteger) (Number) new BigInteger("2020")).intValue());
+  public static final DiscreteDateRangeValue year2020_ = DiscreteDateRangeValue.year(new BigInteger("2020").intValue());
   @Test
   public void FromAndUpTo_item0_6663978461012616780() throws Throwable {
-    Assert.assertEquals("Expected: " + ArbitraryDateRangeValue.make(LocalDate.of(2020, 6, 1), LocalDate.of(2020, 12, 31)) + ", but was: " + FromUptoHelper.from(Generated_date_Test.year2020_, LocalDate.of(2020, 6, 1)), (Object) ArbitraryDateRangeValue.make(LocalDate.of(2020, 6, 1), LocalDate.of(2020, 12, 31)), (Object) FromUptoHelper.from(Generated_date_Test.year2020_, LocalDate.of(2020, 6, 1)));
+    Assert.assertEquals("Expected: " + ArbitraryDateRangeValue.make(LocalDate.of(2020, 6, 1), LocalDate.of(2020, 12, 31)) + ", but was: " + FromUptoHelper.from(Generated_date_Test.year2020_, LocalDate.of(2020, 6, 1)), ArbitraryDateRangeValue.make(LocalDate.of(2020, 6, 1), LocalDate.of(2020, 12, 31)), FromUptoHelper.from(Generated_date_Test.year2020_, LocalDate.of(2020, 6, 1)));
   }
   @Test
   public void FromAndUpTo_item1_6663978461012707044() throws Throwable {
-    Assert.assertEquals("Expected: " + ArbitraryDateRangeValue.make(LocalDate.of(2020, 1, 1), LocalDate.of(2020, 6, 1)) + ", but was: " + FromUptoHelper.upto(Generated_date_Test.year2020_, LocalDate.of(2020, 6, 1)), (Object) ArbitraryDateRangeValue.make(LocalDate.of(2020, 1, 1), LocalDate.of(2020, 6, 1)), (Object) FromUptoHelper.upto(Generated_date_Test.year2020_, LocalDate.of(2020, 6, 1)));
+    Assert.assertEquals("Expected: " + ArbitraryDateRangeValue.make(LocalDate.of(2020, 1, 1), LocalDate.of(2020, 6, 1)) + ", but was: " + FromUptoHelper.upto(Generated_date_Test.year2020_, LocalDate.of(2020, 6, 1)), ArbitraryDateRangeValue.make(LocalDate.of(2020, 1, 1), LocalDate.of(2020, 6, 1)), FromUptoHelper.upto(Generated_date_Test.year2020_, LocalDate.of(2020, 6, 1)));
   }
   @Test
   public void FromAndUpTo_item2_6663978461012707453() throws Throwable {
-    Assert.assertEquals("Expected: " + new EmptyDateRangeValue() + ", but was: " + FromUptoHelper.upto(Generated_date_Test.year2020_, LocalDate.of(2010, 1, 1)), (Object) new EmptyDateRangeValue(), (Object) FromUptoHelper.upto(Generated_date_Test.year2020_, LocalDate.of(2010, 1, 1)));
+    Assert.assertEquals("Expected: " + new EmptyDateRangeValue() + ", but was: " + FromUptoHelper.upto(Generated_date_Test.year2020_, LocalDate.of(2010, 1, 1)), new EmptyDateRangeValue(), FromUptoHelper.upto(Generated_date_Test.year2020_, LocalDate.of(2010, 1, 1)));
   }
   @Test
   public void FromAndUpTo_item3_6663978461012707816() throws Throwable {
-    Assert.assertEquals("Expected: " + new EmptyDateRangeValue() + ", but was: " + FromUptoHelper.from(Generated_date_Test.year2020_, LocalDate.of(2021, 1, 1)), (Object) new EmptyDateRangeValue(), (Object) FromUptoHelper.from(Generated_date_Test.year2020_, LocalDate.of(2021, 1, 1)));
+    Assert.assertEquals("Expected: " + new EmptyDateRangeValue() + ", but was: " + FromUptoHelper.from(Generated_date_Test.year2020_, LocalDate.of(2021, 1, 1)), new EmptyDateRangeValue(), FromUptoHelper.from(Generated_date_Test.year2020_, LocalDate.of(2021, 1, 1)));
   }
   @Test
   public void FromAndUpTo_item4_6663978461012708740() throws Throwable {
-    Assert.assertEquals("Expected: " + Generated_date_Test.year2020_ + ", but was: " + FromUptoHelper.from(Generated_date_Test.year2020_, LocalDate.of(2019, 1, 1)), (Object) Generated_date_Test.year2020_, (Object) FromUptoHelper.from(Generated_date_Test.year2020_, LocalDate.of(2019, 1, 1)));
+    Assert.assertEquals("Expected: " + Generated_date_Test.year2020_ + ", but was: " + FromUptoHelper.from(Generated_date_Test.year2020_, LocalDate.of(2019, 1, 1)), Generated_date_Test.year2020_, FromUptoHelper.from(Generated_date_Test.year2020_, LocalDate.of(2019, 1, 1)));
   }
   @Test
   public void FromAndUpTo_item5_6663978461012786931() throws Throwable {
-    Assert.assertEquals("Expected: " + Generated_date_Test.year2020_ + ", but was: " + FromUptoHelper.upto(Generated_date_Test.year2020_, LocalDate.of(2021, 2, 1)), (Object) Generated_date_Test.year2020_, (Object) FromUptoHelper.upto(Generated_date_Test.year2020_, LocalDate.of(2021, 2, 1)));
+    Assert.assertEquals("Expected: " + Generated_date_Test.year2020_ + ", but was: " + FromUptoHelper.upto(Generated_date_Test.year2020_, LocalDate.of(2021, 2, 1)), Generated_date_Test.year2020_, FromUptoHelper.upto(Generated_date_Test.year2020_, LocalDate.of(2021, 2, 1)));
   }
   @Test
   public void UntilReverseDates_item0_8093720994906934055() throws Throwable {
@@ -1102,23 +1100,23 @@ public class Generated_date_Test {
   }
   @Test
   public void sorting_secondsDeltaList0_7492452870508001876() throws Throwable {
-    Assert.assertEquals("Expected: " + TreePVector.<TimeDeltaValue>from(new ArrayList<TimeDeltaValue>()) + ", but was: " + TreePVector.<TimeDeltaValue>from(new ArrayList<TimeDeltaValue>()), (Object) TreePVector.<TimeDeltaValue>from(new ArrayList<TimeDeltaValue>()), (Object) TreePVector.<TimeDeltaValue>from(new ArrayList<TimeDeltaValue>()));
+    Assert.assertEquals("Expected: " + TreePVector.<TimeDeltaValue>from(new ArrayList<TimeDeltaValue>()) + ", but was: " + TreePVector.<TimeDeltaValue>from(new ArrayList<TimeDeltaValue>()), TreePVector.<TimeDeltaValue>from(new ArrayList<TimeDeltaValue>()), TreePVector.<TimeDeltaValue>from(new ArrayList<TimeDeltaValue>()));
   }
   @Test
   public void sorting_secondsDeltaList1_7492452870508001885() throws Throwable {
-    Assert.assertEquals("Expected: " + TreePVector.<TimeDeltaValue>empty().plus(TimeDeltaValue.ofSeconds((BigInteger) (Number) new BigInteger("1"))) + ", but was: " + TreePVector.<TimeDeltaValue>empty().plus(TimeDeltaValue.ofSeconds((BigInteger) (Number) new BigInteger("1"))), (Object) TreePVector.<TimeDeltaValue>empty().plus(TimeDeltaValue.ofSeconds((BigInteger) (Number) new BigInteger("1"))), (Object) TreePVector.<TimeDeltaValue>empty().plus(TimeDeltaValue.ofSeconds((BigInteger) (Number) new BigInteger("1"))));
+    Assert.assertEquals("Expected: " + TreePVector.<TimeDeltaValue>empty().plus(TimeDeltaValue.ofSeconds(new BigInteger("1"))) + ", but was: " + TreePVector.<TimeDeltaValue>empty().plus(TimeDeltaValue.ofSeconds(new BigInteger("1"))), TreePVector.<TimeDeltaValue>empty().plus(TimeDeltaValue.ofSeconds(new BigInteger("1"))), TreePVector.<TimeDeltaValue>empty().plus(TimeDeltaValue.ofSeconds(new BigInteger("1"))));
   }
   @Test
   public void sorting_secondsDeltaList2_7492452870508001894() throws Throwable {
-    Assert.assertEquals("Expected: " + TreePVector.<TimeDeltaValue>empty().plus(TimeDeltaValue.ofSeconds((BigInteger) (Number) new BigInteger("1"))).plus(TimeDeltaValue.ofSeconds((BigInteger) (Number) new BigInteger("2"))) + ", but was: " + TreePVector.<TimeDeltaValue>empty().plus(TimeDeltaValue.ofSeconds((BigInteger) (Number) new BigInteger("1"))).plus(TimeDeltaValue.ofSeconds((BigInteger) (Number) new BigInteger("2"))), (Object) TreePVector.<TimeDeltaValue>empty().plus(TimeDeltaValue.ofSeconds((BigInteger) (Number) new BigInteger("1"))).plus(TimeDeltaValue.ofSeconds((BigInteger) (Number) new BigInteger("2"))), (Object) TreePVector.<TimeDeltaValue>empty().plus(TimeDeltaValue.ofSeconds((BigInteger) (Number) new BigInteger("1"))).plus(TimeDeltaValue.ofSeconds((BigInteger) (Number) new BigInteger("2"))));
+    Assert.assertEquals("Expected: " + TreePVector.<TimeDeltaValue>empty().plus(TimeDeltaValue.ofSeconds(new BigInteger("1"))).plus(TimeDeltaValue.ofSeconds(new BigInteger("2"))) + ", but was: " + TreePVector.<TimeDeltaValue>empty().plus(TimeDeltaValue.ofSeconds(new BigInteger("1"))).plus(TimeDeltaValue.ofSeconds(new BigInteger("2"))), TreePVector.<TimeDeltaValue>empty().plus(TimeDeltaValue.ofSeconds(new BigInteger("1"))).plus(TimeDeltaValue.ofSeconds(new BigInteger("2"))), TreePVector.<TimeDeltaValue>empty().plus(TimeDeltaValue.ofSeconds(new BigInteger("1"))).plus(TimeDeltaValue.ofSeconds(new BigInteger("2"))));
   }
   @Test
   public void sorting_item4_7492452870508001908() throws Throwable {
-    Assert.assertEquals("Expected: " + TreePVector.<TimeDeltaValue>from(new ArrayList<TimeDeltaValue>()) + ", but was: " + (PVector<TimeDeltaValue>) TreePVector.<TimeDeltaValue>from(((PCollection<TimeDeltaValue>) TreePVector.<TimeDeltaValue>from(new ArrayList<TimeDeltaValue>())).stream().filter(OH.predicate()).sorted(new Comparator<TimeDeltaValue>() {
+    Assert.assertEquals("Expected: " + TreePVector.<TimeDeltaValue>from(new ArrayList<TimeDeltaValue>()) + ", but was: " + TreePVector.<TimeDeltaValue>from(TreePVector.<TimeDeltaValue>from(new ArrayList<TimeDeltaValue>()).stream().filter(OH.predicate()).sorted(new Comparator<TimeDeltaValue>() {
       public int compare(TimeDeltaValue p0, TimeDeltaValue p1) {
         return OH.compare(p0, p1);
       }
-    }).collect(Collectors.<TimeDeltaValue>toList())), (Object) TreePVector.<TimeDeltaValue>from(new ArrayList<TimeDeltaValue>()), (Object) (PVector<TimeDeltaValue>) TreePVector.<TimeDeltaValue>from(((PCollection<TimeDeltaValue>) TreePVector.<TimeDeltaValue>from(new ArrayList<TimeDeltaValue>())).stream().filter(OH.predicate()).sorted(new Comparator<TimeDeltaValue>() {
+    }).collect(Collectors.<TimeDeltaValue>toList())), TreePVector.<TimeDeltaValue>from(new ArrayList<TimeDeltaValue>()), TreePVector.<TimeDeltaValue>from(TreePVector.<TimeDeltaValue>from(new ArrayList<TimeDeltaValue>()).stream().filter(OH.predicate()).sorted(new Comparator<TimeDeltaValue>() {
       public int compare(TimeDeltaValue p0, TimeDeltaValue p1) {
         return OH.compare(p0, p1);
       }
@@ -1126,11 +1124,11 @@ public class Generated_date_Test {
   }
   @Test
   public void sorting_item5_7492452870508001914() throws Throwable {
-    Assert.assertEquals("Expected: " + TreePVector.<TimeDeltaValue>empty().plus(TimeDeltaValue.ofSeconds((BigInteger) (Number) new BigInteger("1"))) + ", but was: " + (PVector<TimeDeltaValue>) TreePVector.<TimeDeltaValue>from(((PCollection<TimeDeltaValue>) TreePVector.<TimeDeltaValue>empty().plus(TimeDeltaValue.ofSeconds((BigInteger) (Number) new BigInteger("1")))).stream().filter(OH.predicate()).sorted(new Comparator<TimeDeltaValue>() {
+    Assert.assertEquals("Expected: " + TreePVector.<TimeDeltaValue>empty().plus(TimeDeltaValue.ofSeconds(new BigInteger("1"))) + ", but was: " + TreePVector.<TimeDeltaValue>from(TreePVector.<TimeDeltaValue>empty().plus(TimeDeltaValue.ofSeconds(new BigInteger("1"))).stream().filter(OH.predicate()).sorted(new Comparator<TimeDeltaValue>() {
       public int compare(TimeDeltaValue p0, TimeDeltaValue p1) {
         return OH.compare(p0, p1);
       }
-    }).collect(Collectors.<TimeDeltaValue>toList())), (Object) TreePVector.<TimeDeltaValue>empty().plus(TimeDeltaValue.ofSeconds((BigInteger) (Number) new BigInteger("1"))), (Object) (PVector<TimeDeltaValue>) TreePVector.<TimeDeltaValue>from(((PCollection<TimeDeltaValue>) TreePVector.<TimeDeltaValue>empty().plus(TimeDeltaValue.ofSeconds((BigInteger) (Number) new BigInteger("1")))).stream().filter(OH.predicate()).sorted(new Comparator<TimeDeltaValue>() {
+    }).collect(Collectors.<TimeDeltaValue>toList())), TreePVector.<TimeDeltaValue>empty().plus(TimeDeltaValue.ofSeconds(new BigInteger("1"))), TreePVector.<TimeDeltaValue>from(TreePVector.<TimeDeltaValue>empty().plus(TimeDeltaValue.ofSeconds(new BigInteger("1"))).stream().filter(OH.predicate()).sorted(new Comparator<TimeDeltaValue>() {
       public int compare(TimeDeltaValue p0, TimeDeltaValue p1) {
         return OH.compare(p0, p1);
       }
@@ -1138,11 +1136,11 @@ public class Generated_date_Test {
   }
   @Test
   public void sorting_item6_7492452870508001920() throws Throwable {
-    Assert.assertEquals("Expected: " + TreePVector.<TimeDeltaValue>empty().plus(TimeDeltaValue.ofSeconds((BigInteger) (Number) new BigInteger("1"))).plus(TimeDeltaValue.ofSeconds((BigInteger) (Number) new BigInteger("2"))) + ", but was: " + (PVector<TimeDeltaValue>) TreePVector.<TimeDeltaValue>from(((PCollection<TimeDeltaValue>) TreePVector.<TimeDeltaValue>empty().plus(TimeDeltaValue.ofSeconds((BigInteger) (Number) new BigInteger("1"))).plus(TimeDeltaValue.ofSeconds((BigInteger) (Number) new BigInteger("2")))).stream().filter(OH.predicate()).sorted(new Comparator<TimeDeltaValue>() {
+    Assert.assertEquals("Expected: " + TreePVector.<TimeDeltaValue>empty().plus(TimeDeltaValue.ofSeconds(new BigInteger("1"))).plus(TimeDeltaValue.ofSeconds(new BigInteger("2"))) + ", but was: " + TreePVector.<TimeDeltaValue>from(TreePVector.<TimeDeltaValue>empty().plus(TimeDeltaValue.ofSeconds(new BigInteger("1"))).plus(TimeDeltaValue.ofSeconds(new BigInteger("2"))).stream().filter(OH.predicate()).sorted(new Comparator<TimeDeltaValue>() {
       public int compare(TimeDeltaValue p0, TimeDeltaValue p1) {
         return OH.compare(p0, p1);
       }
-    }).collect(Collectors.<TimeDeltaValue>toList())), (Object) TreePVector.<TimeDeltaValue>empty().plus(TimeDeltaValue.ofSeconds((BigInteger) (Number) new BigInteger("1"))).plus(TimeDeltaValue.ofSeconds((BigInteger) (Number) new BigInteger("2"))), (Object) (PVector<TimeDeltaValue>) TreePVector.<TimeDeltaValue>from(((PCollection<TimeDeltaValue>) TreePVector.<TimeDeltaValue>empty().plus(TimeDeltaValue.ofSeconds((BigInteger) (Number) new BigInteger("1"))).plus(TimeDeltaValue.ofSeconds((BigInteger) (Number) new BigInteger("2")))).stream().filter(OH.predicate()).sorted(new Comparator<TimeDeltaValue>() {
+    }).collect(Collectors.<TimeDeltaValue>toList())), TreePVector.<TimeDeltaValue>empty().plus(TimeDeltaValue.ofSeconds(new BigInteger("1"))).plus(TimeDeltaValue.ofSeconds(new BigInteger("2"))), TreePVector.<TimeDeltaValue>from(TreePVector.<TimeDeltaValue>empty().plus(TimeDeltaValue.ofSeconds(new BigInteger("1"))).plus(TimeDeltaValue.ofSeconds(new BigInteger("2"))).stream().filter(OH.predicate()).sorted(new Comparator<TimeDeltaValue>() {
       public int compare(TimeDeltaValue p0, TimeDeltaValue p1) {
         return OH.compare(p0, p1);
       }
@@ -1150,11 +1148,11 @@ public class Generated_date_Test {
   }
   @Test
   public void sorting_item8_7492452870508001927() throws Throwable {
-    Assert.assertEquals("Expected: " + TreePVector.<TimeDeltaValue>from(new ArrayList<TimeDeltaValue>()) + ", but was: " + (PVector<TimeDeltaValue>) TreePVector.<TimeDeltaValue>from(((PCollection<TimeDeltaValue>) TreePVector.<TimeDeltaValue>from(new ArrayList<TimeDeltaValue>())).stream().filter(OH.predicate()).sorted(new Comparator<TimeDeltaValue>() {
+    Assert.assertEquals("Expected: " + TreePVector.<TimeDeltaValue>from(new ArrayList<TimeDeltaValue>()) + ", but was: " + TreePVector.<TimeDeltaValue>from(TreePVector.<TimeDeltaValue>from(new ArrayList<TimeDeltaValue>()).stream().filter(OH.predicate()).sorted(new Comparator<TimeDeltaValue>() {
       public int compare(TimeDeltaValue p0, TimeDeltaValue p1) {
         return OH.compare(p1, p0);
       }
-    }).collect(Collectors.<TimeDeltaValue>toList())), (Object) TreePVector.<TimeDeltaValue>from(new ArrayList<TimeDeltaValue>()), (Object) (PVector<TimeDeltaValue>) TreePVector.<TimeDeltaValue>from(((PCollection<TimeDeltaValue>) TreePVector.<TimeDeltaValue>from(new ArrayList<TimeDeltaValue>())).stream().filter(OH.predicate()).sorted(new Comparator<TimeDeltaValue>() {
+    }).collect(Collectors.<TimeDeltaValue>toList())), TreePVector.<TimeDeltaValue>from(new ArrayList<TimeDeltaValue>()), TreePVector.<TimeDeltaValue>from(TreePVector.<TimeDeltaValue>from(new ArrayList<TimeDeltaValue>()).stream().filter(OH.predicate()).sorted(new Comparator<TimeDeltaValue>() {
       public int compare(TimeDeltaValue p0, TimeDeltaValue p1) {
         return OH.compare(p1, p0);
       }
@@ -1162,11 +1160,11 @@ public class Generated_date_Test {
   }
   @Test
   public void sorting_item9_7492452870508001933() throws Throwable {
-    Assert.assertEquals("Expected: " + TreePVector.<TimeDeltaValue>empty().plus(TimeDeltaValue.ofSeconds((BigInteger) (Number) new BigInteger("1"))) + ", but was: " + (PVector<TimeDeltaValue>) TreePVector.<TimeDeltaValue>from(((PCollection<TimeDeltaValue>) TreePVector.<TimeDeltaValue>empty().plus(TimeDeltaValue.ofSeconds((BigInteger) (Number) new BigInteger("1")))).stream().filter(OH.predicate()).sorted(new Comparator<TimeDeltaValue>() {
+    Assert.assertEquals("Expected: " + TreePVector.<TimeDeltaValue>empty().plus(TimeDeltaValue.ofSeconds(new BigInteger("1"))) + ", but was: " + TreePVector.<TimeDeltaValue>from(TreePVector.<TimeDeltaValue>empty().plus(TimeDeltaValue.ofSeconds(new BigInteger("1"))).stream().filter(OH.predicate()).sorted(new Comparator<TimeDeltaValue>() {
       public int compare(TimeDeltaValue p0, TimeDeltaValue p1) {
         return OH.compare(p1, p0);
       }
-    }).collect(Collectors.<TimeDeltaValue>toList())), (Object) TreePVector.<TimeDeltaValue>empty().plus(TimeDeltaValue.ofSeconds((BigInteger) (Number) new BigInteger("1"))), (Object) (PVector<TimeDeltaValue>) TreePVector.<TimeDeltaValue>from(((PCollection<TimeDeltaValue>) TreePVector.<TimeDeltaValue>empty().plus(TimeDeltaValue.ofSeconds((BigInteger) (Number) new BigInteger("1")))).stream().filter(OH.predicate()).sorted(new Comparator<TimeDeltaValue>() {
+    }).collect(Collectors.<TimeDeltaValue>toList())), TreePVector.<TimeDeltaValue>empty().plus(TimeDeltaValue.ofSeconds(new BigInteger("1"))), TreePVector.<TimeDeltaValue>from(TreePVector.<TimeDeltaValue>empty().plus(TimeDeltaValue.ofSeconds(new BigInteger("1"))).stream().filter(OH.predicate()).sorted(new Comparator<TimeDeltaValue>() {
       public int compare(TimeDeltaValue p0, TimeDeltaValue p1) {
         return OH.compare(p1, p0);
       }
@@ -1174,11 +1172,11 @@ public class Generated_date_Test {
   }
   @Test
   public void sorting_item10_7492452870508001939() throws Throwable {
-    Assert.assertEquals("Expected: " + TreePVector.<TimeDeltaValue>empty().plus(TimeDeltaValue.ofSeconds((BigInteger) (Number) new BigInteger("2"))).plus(TimeDeltaValue.ofSeconds((BigInteger) (Number) new BigInteger("1"))) + ", but was: " + (PVector<TimeDeltaValue>) TreePVector.<TimeDeltaValue>from(((PCollection<TimeDeltaValue>) TreePVector.<TimeDeltaValue>empty().plus(TimeDeltaValue.ofSeconds((BigInteger) (Number) new BigInteger("1"))).plus(TimeDeltaValue.ofSeconds((BigInteger) (Number) new BigInteger("2")))).stream().filter(OH.predicate()).sorted(new Comparator<TimeDeltaValue>() {
+    Assert.assertEquals("Expected: " + TreePVector.<TimeDeltaValue>empty().plus(TimeDeltaValue.ofSeconds(new BigInteger("2"))).plus(TimeDeltaValue.ofSeconds(new BigInteger("1"))) + ", but was: " + TreePVector.<TimeDeltaValue>from(TreePVector.<TimeDeltaValue>empty().plus(TimeDeltaValue.ofSeconds(new BigInteger("1"))).plus(TimeDeltaValue.ofSeconds(new BigInteger("2"))).stream().filter(OH.predicate()).sorted(new Comparator<TimeDeltaValue>() {
       public int compare(TimeDeltaValue p0, TimeDeltaValue p1) {
         return OH.compare(p1, p0);
       }
-    }).collect(Collectors.<TimeDeltaValue>toList())), (Object) TreePVector.<TimeDeltaValue>empty().plus(TimeDeltaValue.ofSeconds((BigInteger) (Number) new BigInteger("2"))).plus(TimeDeltaValue.ofSeconds((BigInteger) (Number) new BigInteger("1"))), (Object) (PVector<TimeDeltaValue>) TreePVector.<TimeDeltaValue>from(((PCollection<TimeDeltaValue>) TreePVector.<TimeDeltaValue>empty().plus(TimeDeltaValue.ofSeconds((BigInteger) (Number) new BigInteger("1"))).plus(TimeDeltaValue.ofSeconds((BigInteger) (Number) new BigInteger("2")))).stream().filter(OH.predicate()).sorted(new Comparator<TimeDeltaValue>() {
+    }).collect(Collectors.<TimeDeltaValue>toList())), TreePVector.<TimeDeltaValue>empty().plus(TimeDeltaValue.ofSeconds(new BigInteger("2"))).plus(TimeDeltaValue.ofSeconds(new BigInteger("1"))), TreePVector.<TimeDeltaValue>from(TreePVector.<TimeDeltaValue>empty().plus(TimeDeltaValue.ofSeconds(new BigInteger("1"))).plus(TimeDeltaValue.ofSeconds(new BigInteger("2"))).stream().filter(OH.predicate()).sorted(new Comparator<TimeDeltaValue>() {
       public int compare(TimeDeltaValue p0, TimeDeltaValue p1) {
         return OH.compare(p1, p0);
       }
@@ -1186,23 +1184,23 @@ public class Generated_date_Test {
   }
   @Test
   public void sorting_minutesDeltaList0_7492452870508560340() throws Throwable {
-    Assert.assertEquals("Expected: " + TreePVector.<TimeDeltaValue>from(new ArrayList<TimeDeltaValue>()) + ", but was: " + TreePVector.<TimeDeltaValue>from(new ArrayList<TimeDeltaValue>()), (Object) TreePVector.<TimeDeltaValue>from(new ArrayList<TimeDeltaValue>()), (Object) TreePVector.<TimeDeltaValue>from(new ArrayList<TimeDeltaValue>()));
+    Assert.assertEquals("Expected: " + TreePVector.<TimeDeltaValue>from(new ArrayList<TimeDeltaValue>()) + ", but was: " + TreePVector.<TimeDeltaValue>from(new ArrayList<TimeDeltaValue>()), TreePVector.<TimeDeltaValue>from(new ArrayList<TimeDeltaValue>()), TreePVector.<TimeDeltaValue>from(new ArrayList<TimeDeltaValue>()));
   }
   @Test
   public void sorting_minutesDeltaList1_7492452870508560349() throws Throwable {
-    Assert.assertEquals("Expected: " + TreePVector.<TimeDeltaValue>empty().plus(TimeDeltaValue.ofMinutes((BigInteger) (Number) new BigInteger("1"))) + ", but was: " + TreePVector.<TimeDeltaValue>empty().plus(TimeDeltaValue.ofMinutes((BigInteger) (Number) new BigInteger("1"))), (Object) TreePVector.<TimeDeltaValue>empty().plus(TimeDeltaValue.ofMinutes((BigInteger) (Number) new BigInteger("1"))), (Object) TreePVector.<TimeDeltaValue>empty().plus(TimeDeltaValue.ofMinutes((BigInteger) (Number) new BigInteger("1"))));
+    Assert.assertEquals("Expected: " + TreePVector.<TimeDeltaValue>empty().plus(TimeDeltaValue.ofMinutes(new BigInteger("1"))) + ", but was: " + TreePVector.<TimeDeltaValue>empty().plus(TimeDeltaValue.ofMinutes(new BigInteger("1"))), TreePVector.<TimeDeltaValue>empty().plus(TimeDeltaValue.ofMinutes(new BigInteger("1"))), TreePVector.<TimeDeltaValue>empty().plus(TimeDeltaValue.ofMinutes(new BigInteger("1"))));
   }
   @Test
   public void sorting_minutesDeltaList2_7492452870508560358() throws Throwable {
-    Assert.assertEquals("Expected: " + TreePVector.<TimeDeltaValue>empty().plus(TimeDeltaValue.ofMinutes((BigInteger) (Number) new BigInteger("1"))).plus(TimeDeltaValue.ofMinutes((BigInteger) (Number) new BigInteger("2"))) + ", but was: " + TreePVector.<TimeDeltaValue>empty().plus(TimeDeltaValue.ofMinutes((BigInteger) (Number) new BigInteger("1"))).plus(TimeDeltaValue.ofMinutes((BigInteger) (Number) new BigInteger("2"))), (Object) TreePVector.<TimeDeltaValue>empty().plus(TimeDeltaValue.ofMinutes((BigInteger) (Number) new BigInteger("1"))).plus(TimeDeltaValue.ofMinutes((BigInteger) (Number) new BigInteger("2"))), (Object) TreePVector.<TimeDeltaValue>empty().plus(TimeDeltaValue.ofMinutes((BigInteger) (Number) new BigInteger("1"))).plus(TimeDeltaValue.ofMinutes((BigInteger) (Number) new BigInteger("2"))));
+    Assert.assertEquals("Expected: " + TreePVector.<TimeDeltaValue>empty().plus(TimeDeltaValue.ofMinutes(new BigInteger("1"))).plus(TimeDeltaValue.ofMinutes(new BigInteger("2"))) + ", but was: " + TreePVector.<TimeDeltaValue>empty().plus(TimeDeltaValue.ofMinutes(new BigInteger("1"))).plus(TimeDeltaValue.ofMinutes(new BigInteger("2"))), TreePVector.<TimeDeltaValue>empty().plus(TimeDeltaValue.ofMinutes(new BigInteger("1"))).plus(TimeDeltaValue.ofMinutes(new BigInteger("2"))), TreePVector.<TimeDeltaValue>empty().plus(TimeDeltaValue.ofMinutes(new BigInteger("1"))).plus(TimeDeltaValue.ofMinutes(new BigInteger("2"))));
   }
   @Test
   public void sorting_item16_7492452870508560372() throws Throwable {
-    Assert.assertEquals("Expected: " + TreePVector.<TimeDeltaValue>from(new ArrayList<TimeDeltaValue>()) + ", but was: " + (PVector<TimeDeltaValue>) TreePVector.<TimeDeltaValue>from(((PCollection<TimeDeltaValue>) TreePVector.<TimeDeltaValue>from(new ArrayList<TimeDeltaValue>())).stream().filter(OH.predicate()).sorted(new Comparator<TimeDeltaValue>() {
+    Assert.assertEquals("Expected: " + TreePVector.<TimeDeltaValue>from(new ArrayList<TimeDeltaValue>()) + ", but was: " + TreePVector.<TimeDeltaValue>from(TreePVector.<TimeDeltaValue>from(new ArrayList<TimeDeltaValue>()).stream().filter(OH.predicate()).sorted(new Comparator<TimeDeltaValue>() {
       public int compare(TimeDeltaValue p0, TimeDeltaValue p1) {
         return OH.compare(p0, p1);
       }
-    }).collect(Collectors.<TimeDeltaValue>toList())), (Object) TreePVector.<TimeDeltaValue>from(new ArrayList<TimeDeltaValue>()), (Object) (PVector<TimeDeltaValue>) TreePVector.<TimeDeltaValue>from(((PCollection<TimeDeltaValue>) TreePVector.<TimeDeltaValue>from(new ArrayList<TimeDeltaValue>())).stream().filter(OH.predicate()).sorted(new Comparator<TimeDeltaValue>() {
+    }).collect(Collectors.<TimeDeltaValue>toList())), TreePVector.<TimeDeltaValue>from(new ArrayList<TimeDeltaValue>()), TreePVector.<TimeDeltaValue>from(TreePVector.<TimeDeltaValue>from(new ArrayList<TimeDeltaValue>()).stream().filter(OH.predicate()).sorted(new Comparator<TimeDeltaValue>() {
       public int compare(TimeDeltaValue p0, TimeDeltaValue p1) {
         return OH.compare(p0, p1);
       }
@@ -1210,11 +1208,11 @@ public class Generated_date_Test {
   }
   @Test
   public void sorting_item17_7492452870508560378() throws Throwable {
-    Assert.assertEquals("Expected: " + TreePVector.<TimeDeltaValue>empty().plus(TimeDeltaValue.ofMinutes((BigInteger) (Number) new BigInteger("1"))) + ", but was: " + (PVector<TimeDeltaValue>) TreePVector.<TimeDeltaValue>from(((PCollection<TimeDeltaValue>) TreePVector.<TimeDeltaValue>empty().plus(TimeDeltaValue.ofMinutes((BigInteger) (Number) new BigInteger("1")))).stream().filter(OH.predicate()).sorted(new Comparator<TimeDeltaValue>() {
+    Assert.assertEquals("Expected: " + TreePVector.<TimeDeltaValue>empty().plus(TimeDeltaValue.ofMinutes(new BigInteger("1"))) + ", but was: " + TreePVector.<TimeDeltaValue>from(TreePVector.<TimeDeltaValue>empty().plus(TimeDeltaValue.ofMinutes(new BigInteger("1"))).stream().filter(OH.predicate()).sorted(new Comparator<TimeDeltaValue>() {
       public int compare(TimeDeltaValue p0, TimeDeltaValue p1) {
         return OH.compare(p0, p1);
       }
-    }).collect(Collectors.<TimeDeltaValue>toList())), (Object) TreePVector.<TimeDeltaValue>empty().plus(TimeDeltaValue.ofMinutes((BigInteger) (Number) new BigInteger("1"))), (Object) (PVector<TimeDeltaValue>) TreePVector.<TimeDeltaValue>from(((PCollection<TimeDeltaValue>) TreePVector.<TimeDeltaValue>empty().plus(TimeDeltaValue.ofMinutes((BigInteger) (Number) new BigInteger("1")))).stream().filter(OH.predicate()).sorted(new Comparator<TimeDeltaValue>() {
+    }).collect(Collectors.<TimeDeltaValue>toList())), TreePVector.<TimeDeltaValue>empty().plus(TimeDeltaValue.ofMinutes(new BigInteger("1"))), TreePVector.<TimeDeltaValue>from(TreePVector.<TimeDeltaValue>empty().plus(TimeDeltaValue.ofMinutes(new BigInteger("1"))).stream().filter(OH.predicate()).sorted(new Comparator<TimeDeltaValue>() {
       public int compare(TimeDeltaValue p0, TimeDeltaValue p1) {
         return OH.compare(p0, p1);
       }
@@ -1222,11 +1220,11 @@ public class Generated_date_Test {
   }
   @Test
   public void sorting_item18_7492452870508560384() throws Throwable {
-    Assert.assertEquals("Expected: " + TreePVector.<TimeDeltaValue>empty().plus(TimeDeltaValue.ofMinutes((BigInteger) (Number) new BigInteger("1"))).plus(TimeDeltaValue.ofMinutes((BigInteger) (Number) new BigInteger("2"))) + ", but was: " + (PVector<TimeDeltaValue>) TreePVector.<TimeDeltaValue>from(((PCollection<TimeDeltaValue>) TreePVector.<TimeDeltaValue>empty().plus(TimeDeltaValue.ofMinutes((BigInteger) (Number) new BigInteger("1"))).plus(TimeDeltaValue.ofMinutes((BigInteger) (Number) new BigInteger("2")))).stream().filter(OH.predicate()).sorted(new Comparator<TimeDeltaValue>() {
+    Assert.assertEquals("Expected: " + TreePVector.<TimeDeltaValue>empty().plus(TimeDeltaValue.ofMinutes(new BigInteger("1"))).plus(TimeDeltaValue.ofMinutes(new BigInteger("2"))) + ", but was: " + TreePVector.<TimeDeltaValue>from(TreePVector.<TimeDeltaValue>empty().plus(TimeDeltaValue.ofMinutes(new BigInteger("1"))).plus(TimeDeltaValue.ofMinutes(new BigInteger("2"))).stream().filter(OH.predicate()).sorted(new Comparator<TimeDeltaValue>() {
       public int compare(TimeDeltaValue p0, TimeDeltaValue p1) {
         return OH.compare(p0, p1);
       }
-    }).collect(Collectors.<TimeDeltaValue>toList())), (Object) TreePVector.<TimeDeltaValue>empty().plus(TimeDeltaValue.ofMinutes((BigInteger) (Number) new BigInteger("1"))).plus(TimeDeltaValue.ofMinutes((BigInteger) (Number) new BigInteger("2"))), (Object) (PVector<TimeDeltaValue>) TreePVector.<TimeDeltaValue>from(((PCollection<TimeDeltaValue>) TreePVector.<TimeDeltaValue>empty().plus(TimeDeltaValue.ofMinutes((BigInteger) (Number) new BigInteger("1"))).plus(TimeDeltaValue.ofMinutes((BigInteger) (Number) new BigInteger("2")))).stream().filter(OH.predicate()).sorted(new Comparator<TimeDeltaValue>() {
+    }).collect(Collectors.<TimeDeltaValue>toList())), TreePVector.<TimeDeltaValue>empty().plus(TimeDeltaValue.ofMinutes(new BigInteger("1"))).plus(TimeDeltaValue.ofMinutes(new BigInteger("2"))), TreePVector.<TimeDeltaValue>from(TreePVector.<TimeDeltaValue>empty().plus(TimeDeltaValue.ofMinutes(new BigInteger("1"))).plus(TimeDeltaValue.ofMinutes(new BigInteger("2"))).stream().filter(OH.predicate()).sorted(new Comparator<TimeDeltaValue>() {
       public int compare(TimeDeltaValue p0, TimeDeltaValue p1) {
         return OH.compare(p0, p1);
       }
@@ -1234,11 +1232,11 @@ public class Generated_date_Test {
   }
   @Test
   public void sorting_item20_7492452870508560391() throws Throwable {
-    Assert.assertEquals("Expected: " + TreePVector.<TimeDeltaValue>from(new ArrayList<TimeDeltaValue>()) + ", but was: " + (PVector<TimeDeltaValue>) TreePVector.<TimeDeltaValue>from(((PCollection<TimeDeltaValue>) TreePVector.<TimeDeltaValue>from(new ArrayList<TimeDeltaValue>())).stream().filter(OH.predicate()).sorted(new Comparator<TimeDeltaValue>() {
+    Assert.assertEquals("Expected: " + TreePVector.<TimeDeltaValue>from(new ArrayList<TimeDeltaValue>()) + ", but was: " + TreePVector.<TimeDeltaValue>from(TreePVector.<TimeDeltaValue>from(new ArrayList<TimeDeltaValue>()).stream().filter(OH.predicate()).sorted(new Comparator<TimeDeltaValue>() {
       public int compare(TimeDeltaValue p0, TimeDeltaValue p1) {
         return OH.compare(p1, p0);
       }
-    }).collect(Collectors.<TimeDeltaValue>toList())), (Object) TreePVector.<TimeDeltaValue>from(new ArrayList<TimeDeltaValue>()), (Object) (PVector<TimeDeltaValue>) TreePVector.<TimeDeltaValue>from(((PCollection<TimeDeltaValue>) TreePVector.<TimeDeltaValue>from(new ArrayList<TimeDeltaValue>())).stream().filter(OH.predicate()).sorted(new Comparator<TimeDeltaValue>() {
+    }).collect(Collectors.<TimeDeltaValue>toList())), TreePVector.<TimeDeltaValue>from(new ArrayList<TimeDeltaValue>()), TreePVector.<TimeDeltaValue>from(TreePVector.<TimeDeltaValue>from(new ArrayList<TimeDeltaValue>()).stream().filter(OH.predicate()).sorted(new Comparator<TimeDeltaValue>() {
       public int compare(TimeDeltaValue p0, TimeDeltaValue p1) {
         return OH.compare(p1, p0);
       }
@@ -1246,11 +1244,11 @@ public class Generated_date_Test {
   }
   @Test
   public void sorting_item21_7492452870508560397() throws Throwable {
-    Assert.assertEquals("Expected: " + TreePVector.<TimeDeltaValue>empty().plus(TimeDeltaValue.ofMinutes((BigInteger) (Number) new BigInteger("1"))) + ", but was: " + (PVector<TimeDeltaValue>) TreePVector.<TimeDeltaValue>from(((PCollection<TimeDeltaValue>) TreePVector.<TimeDeltaValue>empty().plus(TimeDeltaValue.ofMinutes((BigInteger) (Number) new BigInteger("1")))).stream().filter(OH.predicate()).sorted(new Comparator<TimeDeltaValue>() {
+    Assert.assertEquals("Expected: " + TreePVector.<TimeDeltaValue>empty().plus(TimeDeltaValue.ofMinutes(new BigInteger("1"))) + ", but was: " + TreePVector.<TimeDeltaValue>from(TreePVector.<TimeDeltaValue>empty().plus(TimeDeltaValue.ofMinutes(new BigInteger("1"))).stream().filter(OH.predicate()).sorted(new Comparator<TimeDeltaValue>() {
       public int compare(TimeDeltaValue p0, TimeDeltaValue p1) {
         return OH.compare(p1, p0);
       }
-    }).collect(Collectors.<TimeDeltaValue>toList())), (Object) TreePVector.<TimeDeltaValue>empty().plus(TimeDeltaValue.ofMinutes((BigInteger) (Number) new BigInteger("1"))), (Object) (PVector<TimeDeltaValue>) TreePVector.<TimeDeltaValue>from(((PCollection<TimeDeltaValue>) TreePVector.<TimeDeltaValue>empty().plus(TimeDeltaValue.ofMinutes((BigInteger) (Number) new BigInteger("1")))).stream().filter(OH.predicate()).sorted(new Comparator<TimeDeltaValue>() {
+    }).collect(Collectors.<TimeDeltaValue>toList())), TreePVector.<TimeDeltaValue>empty().plus(TimeDeltaValue.ofMinutes(new BigInteger("1"))), TreePVector.<TimeDeltaValue>from(TreePVector.<TimeDeltaValue>empty().plus(TimeDeltaValue.ofMinutes(new BigInteger("1"))).stream().filter(OH.predicate()).sorted(new Comparator<TimeDeltaValue>() {
       public int compare(TimeDeltaValue p0, TimeDeltaValue p1) {
         return OH.compare(p1, p0);
       }
@@ -1258,11 +1256,11 @@ public class Generated_date_Test {
   }
   @Test
   public void sorting_item22_7492452870508560403() throws Throwable {
-    Assert.assertEquals("Expected: " + TreePVector.<TimeDeltaValue>empty().plus(TimeDeltaValue.ofMinutes((BigInteger) (Number) new BigInteger("2"))).plus(TimeDeltaValue.ofMinutes((BigInteger) (Number) new BigInteger("1"))) + ", but was: " + (PVector<TimeDeltaValue>) TreePVector.<TimeDeltaValue>from(((PCollection<TimeDeltaValue>) TreePVector.<TimeDeltaValue>empty().plus(TimeDeltaValue.ofMinutes((BigInteger) (Number) new BigInteger("1"))).plus(TimeDeltaValue.ofMinutes((BigInteger) (Number) new BigInteger("2")))).stream().filter(OH.predicate()).sorted(new Comparator<TimeDeltaValue>() {
+    Assert.assertEquals("Expected: " + TreePVector.<TimeDeltaValue>empty().plus(TimeDeltaValue.ofMinutes(new BigInteger("2"))).plus(TimeDeltaValue.ofMinutes(new BigInteger("1"))) + ", but was: " + TreePVector.<TimeDeltaValue>from(TreePVector.<TimeDeltaValue>empty().plus(TimeDeltaValue.ofMinutes(new BigInteger("1"))).plus(TimeDeltaValue.ofMinutes(new BigInteger("2"))).stream().filter(OH.predicate()).sorted(new Comparator<TimeDeltaValue>() {
       public int compare(TimeDeltaValue p0, TimeDeltaValue p1) {
         return OH.compare(p1, p0);
       }
-    }).collect(Collectors.<TimeDeltaValue>toList())), (Object) TreePVector.<TimeDeltaValue>empty().plus(TimeDeltaValue.ofMinutes((BigInteger) (Number) new BigInteger("2"))).plus(TimeDeltaValue.ofMinutes((BigInteger) (Number) new BigInteger("1"))), (Object) (PVector<TimeDeltaValue>) TreePVector.<TimeDeltaValue>from(((PCollection<TimeDeltaValue>) TreePVector.<TimeDeltaValue>empty().plus(TimeDeltaValue.ofMinutes((BigInteger) (Number) new BigInteger("1"))).plus(TimeDeltaValue.ofMinutes((BigInteger) (Number) new BigInteger("2")))).stream().filter(OH.predicate()).sorted(new Comparator<TimeDeltaValue>() {
+    }).collect(Collectors.<TimeDeltaValue>toList())), TreePVector.<TimeDeltaValue>empty().plus(TimeDeltaValue.ofMinutes(new BigInteger("2"))).plus(TimeDeltaValue.ofMinutes(new BigInteger("1"))), TreePVector.<TimeDeltaValue>from(TreePVector.<TimeDeltaValue>empty().plus(TimeDeltaValue.ofMinutes(new BigInteger("1"))).plus(TimeDeltaValue.ofMinutes(new BigInteger("2"))).stream().filter(OH.predicate()).sorted(new Comparator<TimeDeltaValue>() {
       public int compare(TimeDeltaValue p0, TimeDeltaValue p1) {
         return OH.compare(p1, p0);
       }
@@ -1270,23 +1268,23 @@ public class Generated_date_Test {
   }
   @Test
   public void sorting_hoursDeltaList0_7492452870508563812() throws Throwable {
-    Assert.assertEquals("Expected: " + TreePVector.<TimeDeltaValue>from(new ArrayList<TimeDeltaValue>()) + ", but was: " + TreePVector.<TimeDeltaValue>from(new ArrayList<TimeDeltaValue>()), (Object) TreePVector.<TimeDeltaValue>from(new ArrayList<TimeDeltaValue>()), (Object) TreePVector.<TimeDeltaValue>from(new ArrayList<TimeDeltaValue>()));
+    Assert.assertEquals("Expected: " + TreePVector.<TimeDeltaValue>from(new ArrayList<TimeDeltaValue>()) + ", but was: " + TreePVector.<TimeDeltaValue>from(new ArrayList<TimeDeltaValue>()), TreePVector.<TimeDeltaValue>from(new ArrayList<TimeDeltaValue>()), TreePVector.<TimeDeltaValue>from(new ArrayList<TimeDeltaValue>()));
   }
   @Test
   public void sorting_hoursDeltaList1_7492452870508563821() throws Throwable {
-    Assert.assertEquals("Expected: " + TreePVector.<TimeDeltaValue>empty().plus(TimeDeltaValue.ofHours((BigInteger) (Number) new BigInteger("1"))) + ", but was: " + TreePVector.<TimeDeltaValue>empty().plus(TimeDeltaValue.ofHours((BigInteger) (Number) new BigInteger("1"))), (Object) TreePVector.<TimeDeltaValue>empty().plus(TimeDeltaValue.ofHours((BigInteger) (Number) new BigInteger("1"))), (Object) TreePVector.<TimeDeltaValue>empty().plus(TimeDeltaValue.ofHours((BigInteger) (Number) new BigInteger("1"))));
+    Assert.assertEquals("Expected: " + TreePVector.<TimeDeltaValue>empty().plus(TimeDeltaValue.ofHours(new BigInteger("1"))) + ", but was: " + TreePVector.<TimeDeltaValue>empty().plus(TimeDeltaValue.ofHours(new BigInteger("1"))), TreePVector.<TimeDeltaValue>empty().plus(TimeDeltaValue.ofHours(new BigInteger("1"))), TreePVector.<TimeDeltaValue>empty().plus(TimeDeltaValue.ofHours(new BigInteger("1"))));
   }
   @Test
   public void sorting_hoursDeltaList2_7492452870508563830() throws Throwable {
-    Assert.assertEquals("Expected: " + TreePVector.<TimeDeltaValue>empty().plus(TimeDeltaValue.ofHours((BigInteger) (Number) new BigInteger("1"))).plus(TimeDeltaValue.ofHours((BigInteger) (Number) new BigInteger("2"))) + ", but was: " + TreePVector.<TimeDeltaValue>empty().plus(TimeDeltaValue.ofHours((BigInteger) (Number) new BigInteger("1"))).plus(TimeDeltaValue.ofHours((BigInteger) (Number) new BigInteger("2"))), (Object) TreePVector.<TimeDeltaValue>empty().plus(TimeDeltaValue.ofHours((BigInteger) (Number) new BigInteger("1"))).plus(TimeDeltaValue.ofHours((BigInteger) (Number) new BigInteger("2"))), (Object) TreePVector.<TimeDeltaValue>empty().plus(TimeDeltaValue.ofHours((BigInteger) (Number) new BigInteger("1"))).plus(TimeDeltaValue.ofHours((BigInteger) (Number) new BigInteger("2"))));
+    Assert.assertEquals("Expected: " + TreePVector.<TimeDeltaValue>empty().plus(TimeDeltaValue.ofHours(new BigInteger("1"))).plus(TimeDeltaValue.ofHours(new BigInteger("2"))) + ", but was: " + TreePVector.<TimeDeltaValue>empty().plus(TimeDeltaValue.ofHours(new BigInteger("1"))).plus(TimeDeltaValue.ofHours(new BigInteger("2"))), TreePVector.<TimeDeltaValue>empty().plus(TimeDeltaValue.ofHours(new BigInteger("1"))).plus(TimeDeltaValue.ofHours(new BigInteger("2"))), TreePVector.<TimeDeltaValue>empty().plus(TimeDeltaValue.ofHours(new BigInteger("1"))).plus(TimeDeltaValue.ofHours(new BigInteger("2"))));
   }
   @Test
   public void sorting_item28_7492452870508563844() throws Throwable {
-    Assert.assertEquals("Expected: " + TreePVector.<TimeDeltaValue>from(new ArrayList<TimeDeltaValue>()) + ", but was: " + (PVector<TimeDeltaValue>) TreePVector.<TimeDeltaValue>from(((PCollection<TimeDeltaValue>) TreePVector.<TimeDeltaValue>from(new ArrayList<TimeDeltaValue>())).stream().filter(OH.predicate()).sorted(new Comparator<TimeDeltaValue>() {
+    Assert.assertEquals("Expected: " + TreePVector.<TimeDeltaValue>from(new ArrayList<TimeDeltaValue>()) + ", but was: " + TreePVector.<TimeDeltaValue>from(TreePVector.<TimeDeltaValue>from(new ArrayList<TimeDeltaValue>()).stream().filter(OH.predicate()).sorted(new Comparator<TimeDeltaValue>() {
       public int compare(TimeDeltaValue p0, TimeDeltaValue p1) {
         return OH.compare(p0, p1);
       }
-    }).collect(Collectors.<TimeDeltaValue>toList())), (Object) TreePVector.<TimeDeltaValue>from(new ArrayList<TimeDeltaValue>()), (Object) (PVector<TimeDeltaValue>) TreePVector.<TimeDeltaValue>from(((PCollection<TimeDeltaValue>) TreePVector.<TimeDeltaValue>from(new ArrayList<TimeDeltaValue>())).stream().filter(OH.predicate()).sorted(new Comparator<TimeDeltaValue>() {
+    }).collect(Collectors.<TimeDeltaValue>toList())), TreePVector.<TimeDeltaValue>from(new ArrayList<TimeDeltaValue>()), TreePVector.<TimeDeltaValue>from(TreePVector.<TimeDeltaValue>from(new ArrayList<TimeDeltaValue>()).stream().filter(OH.predicate()).sorted(new Comparator<TimeDeltaValue>() {
       public int compare(TimeDeltaValue p0, TimeDeltaValue p1) {
         return OH.compare(p0, p1);
       }
@@ -1294,11 +1292,11 @@ public class Generated_date_Test {
   }
   @Test
   public void sorting_item29_7492452870508563850() throws Throwable {
-    Assert.assertEquals("Expected: " + TreePVector.<TimeDeltaValue>empty().plus(TimeDeltaValue.ofHours((BigInteger) (Number) new BigInteger("1"))) + ", but was: " + (PVector<TimeDeltaValue>) TreePVector.<TimeDeltaValue>from(((PCollection<TimeDeltaValue>) TreePVector.<TimeDeltaValue>empty().plus(TimeDeltaValue.ofHours((BigInteger) (Number) new BigInteger("1")))).stream().filter(OH.predicate()).sorted(new Comparator<TimeDeltaValue>() {
+    Assert.assertEquals("Expected: " + TreePVector.<TimeDeltaValue>empty().plus(TimeDeltaValue.ofHours(new BigInteger("1"))) + ", but was: " + TreePVector.<TimeDeltaValue>from(TreePVector.<TimeDeltaValue>empty().plus(TimeDeltaValue.ofHours(new BigInteger("1"))).stream().filter(OH.predicate()).sorted(new Comparator<TimeDeltaValue>() {
       public int compare(TimeDeltaValue p0, TimeDeltaValue p1) {
         return OH.compare(p0, p1);
       }
-    }).collect(Collectors.<TimeDeltaValue>toList())), (Object) TreePVector.<TimeDeltaValue>empty().plus(TimeDeltaValue.ofHours((BigInteger) (Number) new BigInteger("1"))), (Object) (PVector<TimeDeltaValue>) TreePVector.<TimeDeltaValue>from(((PCollection<TimeDeltaValue>) TreePVector.<TimeDeltaValue>empty().plus(TimeDeltaValue.ofHours((BigInteger) (Number) new BigInteger("1")))).stream().filter(OH.predicate()).sorted(new Comparator<TimeDeltaValue>() {
+    }).collect(Collectors.<TimeDeltaValue>toList())), TreePVector.<TimeDeltaValue>empty().plus(TimeDeltaValue.ofHours(new BigInteger("1"))), TreePVector.<TimeDeltaValue>from(TreePVector.<TimeDeltaValue>empty().plus(TimeDeltaValue.ofHours(new BigInteger("1"))).stream().filter(OH.predicate()).sorted(new Comparator<TimeDeltaValue>() {
       public int compare(TimeDeltaValue p0, TimeDeltaValue p1) {
         return OH.compare(p0, p1);
       }
@@ -1306,11 +1304,11 @@ public class Generated_date_Test {
   }
   @Test
   public void sorting_item30_7492452870508563856() throws Throwable {
-    Assert.assertEquals("Expected: " + TreePVector.<TimeDeltaValue>empty().plus(TimeDeltaValue.ofHours((BigInteger) (Number) new BigInteger("1"))).plus(TimeDeltaValue.ofHours((BigInteger) (Number) new BigInteger("2"))) + ", but was: " + (PVector<TimeDeltaValue>) TreePVector.<TimeDeltaValue>from(((PCollection<TimeDeltaValue>) TreePVector.<TimeDeltaValue>empty().plus(TimeDeltaValue.ofHours((BigInteger) (Number) new BigInteger("1"))).plus(TimeDeltaValue.ofHours((BigInteger) (Number) new BigInteger("2")))).stream().filter(OH.predicate()).sorted(new Comparator<TimeDeltaValue>() {
+    Assert.assertEquals("Expected: " + TreePVector.<TimeDeltaValue>empty().plus(TimeDeltaValue.ofHours(new BigInteger("1"))).plus(TimeDeltaValue.ofHours(new BigInteger("2"))) + ", but was: " + TreePVector.<TimeDeltaValue>from(TreePVector.<TimeDeltaValue>empty().plus(TimeDeltaValue.ofHours(new BigInteger("1"))).plus(TimeDeltaValue.ofHours(new BigInteger("2"))).stream().filter(OH.predicate()).sorted(new Comparator<TimeDeltaValue>() {
       public int compare(TimeDeltaValue p0, TimeDeltaValue p1) {
         return OH.compare(p0, p1);
       }
-    }).collect(Collectors.<TimeDeltaValue>toList())), (Object) TreePVector.<TimeDeltaValue>empty().plus(TimeDeltaValue.ofHours((BigInteger) (Number) new BigInteger("1"))).plus(TimeDeltaValue.ofHours((BigInteger) (Number) new BigInteger("2"))), (Object) (PVector<TimeDeltaValue>) TreePVector.<TimeDeltaValue>from(((PCollection<TimeDeltaValue>) TreePVector.<TimeDeltaValue>empty().plus(TimeDeltaValue.ofHours((BigInteger) (Number) new BigInteger("1"))).plus(TimeDeltaValue.ofHours((BigInteger) (Number) new BigInteger("2")))).stream().filter(OH.predicate()).sorted(new Comparator<TimeDeltaValue>() {
+    }).collect(Collectors.<TimeDeltaValue>toList())), TreePVector.<TimeDeltaValue>empty().plus(TimeDeltaValue.ofHours(new BigInteger("1"))).plus(TimeDeltaValue.ofHours(new BigInteger("2"))), TreePVector.<TimeDeltaValue>from(TreePVector.<TimeDeltaValue>empty().plus(TimeDeltaValue.ofHours(new BigInteger("1"))).plus(TimeDeltaValue.ofHours(new BigInteger("2"))).stream().filter(OH.predicate()).sorted(new Comparator<TimeDeltaValue>() {
       public int compare(TimeDeltaValue p0, TimeDeltaValue p1) {
         return OH.compare(p0, p1);
       }
@@ -1318,11 +1316,11 @@ public class Generated_date_Test {
   }
   @Test
   public void sorting_item32_7492452870508563863() throws Throwable {
-    Assert.assertEquals("Expected: " + TreePVector.<TimeDeltaValue>from(new ArrayList<TimeDeltaValue>()) + ", but was: " + (PVector<TimeDeltaValue>) TreePVector.<TimeDeltaValue>from(((PCollection<TimeDeltaValue>) TreePVector.<TimeDeltaValue>from(new ArrayList<TimeDeltaValue>())).stream().filter(OH.predicate()).sorted(new Comparator<TimeDeltaValue>() {
+    Assert.assertEquals("Expected: " + TreePVector.<TimeDeltaValue>from(new ArrayList<TimeDeltaValue>()) + ", but was: " + TreePVector.<TimeDeltaValue>from(TreePVector.<TimeDeltaValue>from(new ArrayList<TimeDeltaValue>()).stream().filter(OH.predicate()).sorted(new Comparator<TimeDeltaValue>() {
       public int compare(TimeDeltaValue p0, TimeDeltaValue p1) {
         return OH.compare(p1, p0);
       }
-    }).collect(Collectors.<TimeDeltaValue>toList())), (Object) TreePVector.<TimeDeltaValue>from(new ArrayList<TimeDeltaValue>()), (Object) (PVector<TimeDeltaValue>) TreePVector.<TimeDeltaValue>from(((PCollection<TimeDeltaValue>) TreePVector.<TimeDeltaValue>from(new ArrayList<TimeDeltaValue>())).stream().filter(OH.predicate()).sorted(new Comparator<TimeDeltaValue>() {
+    }).collect(Collectors.<TimeDeltaValue>toList())), TreePVector.<TimeDeltaValue>from(new ArrayList<TimeDeltaValue>()), TreePVector.<TimeDeltaValue>from(TreePVector.<TimeDeltaValue>from(new ArrayList<TimeDeltaValue>()).stream().filter(OH.predicate()).sorted(new Comparator<TimeDeltaValue>() {
       public int compare(TimeDeltaValue p0, TimeDeltaValue p1) {
         return OH.compare(p1, p0);
       }
@@ -1330,11 +1328,11 @@ public class Generated_date_Test {
   }
   @Test
   public void sorting_item33_7492452870508563869() throws Throwable {
-    Assert.assertEquals("Expected: " + TreePVector.<TimeDeltaValue>empty().plus(TimeDeltaValue.ofHours((BigInteger) (Number) new BigInteger("1"))) + ", but was: " + (PVector<TimeDeltaValue>) TreePVector.<TimeDeltaValue>from(((PCollection<TimeDeltaValue>) TreePVector.<TimeDeltaValue>empty().plus(TimeDeltaValue.ofHours((BigInteger) (Number) new BigInteger("1")))).stream().filter(OH.predicate()).sorted(new Comparator<TimeDeltaValue>() {
+    Assert.assertEquals("Expected: " + TreePVector.<TimeDeltaValue>empty().plus(TimeDeltaValue.ofHours(new BigInteger("1"))) + ", but was: " + TreePVector.<TimeDeltaValue>from(TreePVector.<TimeDeltaValue>empty().plus(TimeDeltaValue.ofHours(new BigInteger("1"))).stream().filter(OH.predicate()).sorted(new Comparator<TimeDeltaValue>() {
       public int compare(TimeDeltaValue p0, TimeDeltaValue p1) {
         return OH.compare(p1, p0);
       }
-    }).collect(Collectors.<TimeDeltaValue>toList())), (Object) TreePVector.<TimeDeltaValue>empty().plus(TimeDeltaValue.ofHours((BigInteger) (Number) new BigInteger("1"))), (Object) (PVector<TimeDeltaValue>) TreePVector.<TimeDeltaValue>from(((PCollection<TimeDeltaValue>) TreePVector.<TimeDeltaValue>empty().plus(TimeDeltaValue.ofHours((BigInteger) (Number) new BigInteger("1")))).stream().filter(OH.predicate()).sorted(new Comparator<TimeDeltaValue>() {
+    }).collect(Collectors.<TimeDeltaValue>toList())), TreePVector.<TimeDeltaValue>empty().plus(TimeDeltaValue.ofHours(new BigInteger("1"))), TreePVector.<TimeDeltaValue>from(TreePVector.<TimeDeltaValue>empty().plus(TimeDeltaValue.ofHours(new BigInteger("1"))).stream().filter(OH.predicate()).sorted(new Comparator<TimeDeltaValue>() {
       public int compare(TimeDeltaValue p0, TimeDeltaValue p1) {
         return OH.compare(p1, p0);
       }
@@ -1342,11 +1340,11 @@ public class Generated_date_Test {
   }
   @Test
   public void sorting_item34_7492452870508563875() throws Throwable {
-    Assert.assertEquals("Expected: " + TreePVector.<TimeDeltaValue>empty().plus(TimeDeltaValue.ofHours((BigInteger) (Number) new BigInteger("2"))).plus(TimeDeltaValue.ofHours((BigInteger) (Number) new BigInteger("1"))) + ", but was: " + (PVector<TimeDeltaValue>) TreePVector.<TimeDeltaValue>from(((PCollection<TimeDeltaValue>) TreePVector.<TimeDeltaValue>empty().plus(TimeDeltaValue.ofHours((BigInteger) (Number) new BigInteger("1"))).plus(TimeDeltaValue.ofHours((BigInteger) (Number) new BigInteger("2")))).stream().filter(OH.predicate()).sorted(new Comparator<TimeDeltaValue>() {
+    Assert.assertEquals("Expected: " + TreePVector.<TimeDeltaValue>empty().plus(TimeDeltaValue.ofHours(new BigInteger("2"))).plus(TimeDeltaValue.ofHours(new BigInteger("1"))) + ", but was: " + TreePVector.<TimeDeltaValue>from(TreePVector.<TimeDeltaValue>empty().plus(TimeDeltaValue.ofHours(new BigInteger("1"))).plus(TimeDeltaValue.ofHours(new BigInteger("2"))).stream().filter(OH.predicate()).sorted(new Comparator<TimeDeltaValue>() {
       public int compare(TimeDeltaValue p0, TimeDeltaValue p1) {
         return OH.compare(p1, p0);
       }
-    }).collect(Collectors.<TimeDeltaValue>toList())), (Object) TreePVector.<TimeDeltaValue>empty().plus(TimeDeltaValue.ofHours((BigInteger) (Number) new BigInteger("2"))).plus(TimeDeltaValue.ofHours((BigInteger) (Number) new BigInteger("1"))), (Object) (PVector<TimeDeltaValue>) TreePVector.<TimeDeltaValue>from(((PCollection<TimeDeltaValue>) TreePVector.<TimeDeltaValue>empty().plus(TimeDeltaValue.ofHours((BigInteger) (Number) new BigInteger("1"))).plus(TimeDeltaValue.ofHours((BigInteger) (Number) new BigInteger("2")))).stream().filter(OH.predicate()).sorted(new Comparator<TimeDeltaValue>() {
+    }).collect(Collectors.<TimeDeltaValue>toList())), TreePVector.<TimeDeltaValue>empty().plus(TimeDeltaValue.ofHours(new BigInteger("2"))).plus(TimeDeltaValue.ofHours(new BigInteger("1"))), TreePVector.<TimeDeltaValue>from(TreePVector.<TimeDeltaValue>empty().plus(TimeDeltaValue.ofHours(new BigInteger("1"))).plus(TimeDeltaValue.ofHours(new BigInteger("2"))).stream().filter(OH.predicate()).sorted(new Comparator<TimeDeltaValue>() {
       public int compare(TimeDeltaValue p0, TimeDeltaValue p1) {
         return OH.compare(p1, p0);
       }
@@ -1354,23 +1352,23 @@ public class Generated_date_Test {
   }
   @Test
   public void sorting_daysDeltaList0_3571762280765721191() throws Throwable {
-    Assert.assertEquals("Expected: " + TreePVector.<DateDeltaValue>from(new ArrayList<DateDeltaValue>()) + ", but was: " + TreePVector.<DateDeltaValue>from(new ArrayList<DateDeltaValue>()), (Object) TreePVector.<DateDeltaValue>from(new ArrayList<DateDeltaValue>()), (Object) TreePVector.<DateDeltaValue>from(new ArrayList<DateDeltaValue>()));
+    Assert.assertEquals("Expected: " + TreePVector.<DateDeltaValue>from(new ArrayList<DateDeltaValue>()) + ", but was: " + TreePVector.<DateDeltaValue>from(new ArrayList<DateDeltaValue>()), TreePVector.<DateDeltaValue>from(new ArrayList<DateDeltaValue>()), TreePVector.<DateDeltaValue>from(new ArrayList<DateDeltaValue>()));
   }
   @Test
   public void sorting_daysDeltaList1_3571762280765721200() throws Throwable {
-    Assert.assertEquals("Expected: " + TreePVector.<DateDeltaValue>empty().plus(DateDeltaValue.ofDays((BigInteger) (Number) new BigInteger("1"))) + ", but was: " + TreePVector.<DateDeltaValue>empty().plus(DateDeltaValue.ofDays((BigInteger) (Number) new BigInteger("1"))), (Object) TreePVector.<DateDeltaValue>empty().plus(DateDeltaValue.ofDays((BigInteger) (Number) new BigInteger("1"))), (Object) TreePVector.<DateDeltaValue>empty().plus(DateDeltaValue.ofDays((BigInteger) (Number) new BigInteger("1"))));
+    Assert.assertEquals("Expected: " + TreePVector.<DateDeltaValue>empty().plus(DateDeltaValue.ofDays(new BigInteger("1"))) + ", but was: " + TreePVector.<DateDeltaValue>empty().plus(DateDeltaValue.ofDays(new BigInteger("1"))), TreePVector.<DateDeltaValue>empty().plus(DateDeltaValue.ofDays(new BigInteger("1"))), TreePVector.<DateDeltaValue>empty().plus(DateDeltaValue.ofDays(new BigInteger("1"))));
   }
   @Test
   public void sorting_daysDeltaList2_3571762280765721207() throws Throwable {
-    Assert.assertEquals("Expected: " + TreePVector.<DateDeltaValue>empty().plus(DateDeltaValue.ofDays((BigInteger) (Number) new BigInteger("1"))).plus(DateDeltaValue.ofDays((BigInteger) (Number) new BigInteger("2"))) + ", but was: " + TreePVector.<DateDeltaValue>empty().plus(DateDeltaValue.ofDays((BigInteger) (Number) new BigInteger("1"))).plus(DateDeltaValue.ofDays((BigInteger) (Number) new BigInteger("2"))), (Object) TreePVector.<DateDeltaValue>empty().plus(DateDeltaValue.ofDays((BigInteger) (Number) new BigInteger("1"))).plus(DateDeltaValue.ofDays((BigInteger) (Number) new BigInteger("2"))), (Object) TreePVector.<DateDeltaValue>empty().plus(DateDeltaValue.ofDays((BigInteger) (Number) new BigInteger("1"))).plus(DateDeltaValue.ofDays((BigInteger) (Number) new BigInteger("2"))));
+    Assert.assertEquals("Expected: " + TreePVector.<DateDeltaValue>empty().plus(DateDeltaValue.ofDays(new BigInteger("1"))).plus(DateDeltaValue.ofDays(new BigInteger("2"))) + ", but was: " + TreePVector.<DateDeltaValue>empty().plus(DateDeltaValue.ofDays(new BigInteger("1"))).plus(DateDeltaValue.ofDays(new BigInteger("2"))), TreePVector.<DateDeltaValue>empty().plus(DateDeltaValue.ofDays(new BigInteger("1"))).plus(DateDeltaValue.ofDays(new BigInteger("2"))), TreePVector.<DateDeltaValue>empty().plus(DateDeltaValue.ofDays(new BigInteger("1"))).plus(DateDeltaValue.ofDays(new BigInteger("2"))));
   }
   @Test
   public void sorting_item41_2143211017902290124() throws Throwable {
-    Assert.assertEquals("Expected: " + TreePVector.<DateDeltaValue>from(new ArrayList<DateDeltaValue>()) + ", but was: " + (PVector<DateDeltaValue>) TreePVector.<DateDeltaValue>from(((PCollection<DateDeltaValue>) TreePVector.<DateDeltaValue>from(new ArrayList<DateDeltaValue>())).stream().filter(OH.predicate()).sorted(new Comparator<DateDeltaValue>() {
+    Assert.assertEquals("Expected: " + TreePVector.<DateDeltaValue>from(new ArrayList<DateDeltaValue>()) + ", but was: " + TreePVector.<DateDeltaValue>from(TreePVector.<DateDeltaValue>from(new ArrayList<DateDeltaValue>()).stream().filter(OH.predicate()).sorted(new Comparator<DateDeltaValue>() {
       public int compare(DateDeltaValue p0, DateDeltaValue p1) {
         return OH.compare(p0, p1);
       }
-    }).collect(Collectors.<DateDeltaValue>toList())), (Object) TreePVector.<DateDeltaValue>from(new ArrayList<DateDeltaValue>()), (Object) (PVector<DateDeltaValue>) TreePVector.<DateDeltaValue>from(((PCollection<DateDeltaValue>) TreePVector.<DateDeltaValue>from(new ArrayList<DateDeltaValue>())).stream().filter(OH.predicate()).sorted(new Comparator<DateDeltaValue>() {
+    }).collect(Collectors.<DateDeltaValue>toList())), TreePVector.<DateDeltaValue>from(new ArrayList<DateDeltaValue>()), TreePVector.<DateDeltaValue>from(TreePVector.<DateDeltaValue>from(new ArrayList<DateDeltaValue>()).stream().filter(OH.predicate()).sorted(new Comparator<DateDeltaValue>() {
       public int compare(DateDeltaValue p0, DateDeltaValue p1) {
         return OH.compare(p0, p1);
       }
@@ -1378,11 +1376,11 @@ public class Generated_date_Test {
   }
   @Test
   public void sorting_item42_2143211017902291809() throws Throwable {
-    Assert.assertEquals("Expected: " + TreePVector.<DateDeltaValue>empty().plus(DateDeltaValue.ofDays((BigInteger) (Number) new BigInteger("1"))) + ", but was: " + (PVector<DateDeltaValue>) TreePVector.<DateDeltaValue>from(((PCollection<DateDeltaValue>) TreePVector.<DateDeltaValue>empty().plus(DateDeltaValue.ofDays((BigInteger) (Number) new BigInteger("1")))).stream().filter(OH.predicate()).sorted(new Comparator<DateDeltaValue>() {
+    Assert.assertEquals("Expected: " + TreePVector.<DateDeltaValue>empty().plus(DateDeltaValue.ofDays(new BigInteger("1"))) + ", but was: " + TreePVector.<DateDeltaValue>from(TreePVector.<DateDeltaValue>empty().plus(DateDeltaValue.ofDays(new BigInteger("1"))).stream().filter(OH.predicate()).sorted(new Comparator<DateDeltaValue>() {
       public int compare(DateDeltaValue p0, DateDeltaValue p1) {
         return OH.compare(p0, p1);
       }
-    }).collect(Collectors.<DateDeltaValue>toList())), (Object) TreePVector.<DateDeltaValue>empty().plus(DateDeltaValue.ofDays((BigInteger) (Number) new BigInteger("1"))), (Object) (PVector<DateDeltaValue>) TreePVector.<DateDeltaValue>from(((PCollection<DateDeltaValue>) TreePVector.<DateDeltaValue>empty().plus(DateDeltaValue.ofDays((BigInteger) (Number) new BigInteger("1")))).stream().filter(OH.predicate()).sorted(new Comparator<DateDeltaValue>() {
+    }).collect(Collectors.<DateDeltaValue>toList())), TreePVector.<DateDeltaValue>empty().plus(DateDeltaValue.ofDays(new BigInteger("1"))), TreePVector.<DateDeltaValue>from(TreePVector.<DateDeltaValue>empty().plus(DateDeltaValue.ofDays(new BigInteger("1"))).stream().filter(OH.predicate()).sorted(new Comparator<DateDeltaValue>() {
       public int compare(DateDeltaValue p0, DateDeltaValue p1) {
         return OH.compare(p0, p1);
       }
@@ -1390,11 +1388,11 @@ public class Generated_date_Test {
   }
   @Test
   public void sorting_item43_5005695164082923047() throws Throwable {
-    Assert.assertEquals("Expected: " + TreePVector.<DateDeltaValue>empty().plus(DateDeltaValue.ofDays((BigInteger) (Number) new BigInteger("1"))).plus(DateDeltaValue.ofDays((BigInteger) (Number) new BigInteger("2"))) + ", but was: " + (PVector<DateDeltaValue>) TreePVector.<DateDeltaValue>from(((PCollection<DateDeltaValue>) TreePVector.<DateDeltaValue>empty().plus(DateDeltaValue.ofDays((BigInteger) (Number) new BigInteger("1"))).plus(DateDeltaValue.ofDays((BigInteger) (Number) new BigInteger("2")))).stream().filter(OH.predicate()).sorted(new Comparator<DateDeltaValue>() {
+    Assert.assertEquals("Expected: " + TreePVector.<DateDeltaValue>empty().plus(DateDeltaValue.ofDays(new BigInteger("1"))).plus(DateDeltaValue.ofDays(new BigInteger("2"))) + ", but was: " + TreePVector.<DateDeltaValue>from(TreePVector.<DateDeltaValue>empty().plus(DateDeltaValue.ofDays(new BigInteger("1"))).plus(DateDeltaValue.ofDays(new BigInteger("2"))).stream().filter(OH.predicate()).sorted(new Comparator<DateDeltaValue>() {
       public int compare(DateDeltaValue p0, DateDeltaValue p1) {
         return OH.compare(p0, p1);
       }
-    }).collect(Collectors.<DateDeltaValue>toList())), (Object) TreePVector.<DateDeltaValue>empty().plus(DateDeltaValue.ofDays((BigInteger) (Number) new BigInteger("1"))).plus(DateDeltaValue.ofDays((BigInteger) (Number) new BigInteger("2"))), (Object) (PVector<DateDeltaValue>) TreePVector.<DateDeltaValue>from(((PCollection<DateDeltaValue>) TreePVector.<DateDeltaValue>empty().plus(DateDeltaValue.ofDays((BigInteger) (Number) new BigInteger("1"))).plus(DateDeltaValue.ofDays((BigInteger) (Number) new BigInteger("2")))).stream().filter(OH.predicate()).sorted(new Comparator<DateDeltaValue>() {
+    }).collect(Collectors.<DateDeltaValue>toList())), TreePVector.<DateDeltaValue>empty().plus(DateDeltaValue.ofDays(new BigInteger("1"))).plus(DateDeltaValue.ofDays(new BigInteger("2"))), TreePVector.<DateDeltaValue>from(TreePVector.<DateDeltaValue>empty().plus(DateDeltaValue.ofDays(new BigInteger("1"))).plus(DateDeltaValue.ofDays(new BigInteger("2"))).stream().filter(OH.predicate()).sorted(new Comparator<DateDeltaValue>() {
       public int compare(DateDeltaValue p0, DateDeltaValue p1) {
         return OH.compare(p0, p1);
       }
@@ -1402,11 +1400,11 @@ public class Generated_date_Test {
   }
   @Test
   public void sorting_item45_5005695164083462014() throws Throwable {
-    Assert.assertEquals("Expected: " + TreePVector.<DateDeltaValue>from(new ArrayList<DateDeltaValue>()) + ", but was: " + (PVector<DateDeltaValue>) TreePVector.<DateDeltaValue>from(((PCollection<DateDeltaValue>) TreePVector.<DateDeltaValue>from(new ArrayList<DateDeltaValue>())).stream().filter(OH.predicate()).sorted(new Comparator<DateDeltaValue>() {
+    Assert.assertEquals("Expected: " + TreePVector.<DateDeltaValue>from(new ArrayList<DateDeltaValue>()) + ", but was: " + TreePVector.<DateDeltaValue>from(TreePVector.<DateDeltaValue>from(new ArrayList<DateDeltaValue>()).stream().filter(OH.predicate()).sorted(new Comparator<DateDeltaValue>() {
       public int compare(DateDeltaValue p0, DateDeltaValue p1) {
         return OH.compare(p1, p0);
       }
-    }).collect(Collectors.<DateDeltaValue>toList())), (Object) TreePVector.<DateDeltaValue>from(new ArrayList<DateDeltaValue>()), (Object) (PVector<DateDeltaValue>) TreePVector.<DateDeltaValue>from(((PCollection<DateDeltaValue>) TreePVector.<DateDeltaValue>from(new ArrayList<DateDeltaValue>())).stream().filter(OH.predicate()).sorted(new Comparator<DateDeltaValue>() {
+    }).collect(Collectors.<DateDeltaValue>toList())), TreePVector.<DateDeltaValue>from(new ArrayList<DateDeltaValue>()), TreePVector.<DateDeltaValue>from(TreePVector.<DateDeltaValue>from(new ArrayList<DateDeltaValue>()).stream().filter(OH.predicate()).sorted(new Comparator<DateDeltaValue>() {
       public int compare(DateDeltaValue p0, DateDeltaValue p1) {
         return OH.compare(p1, p0);
       }
@@ -1414,11 +1412,11 @@ public class Generated_date_Test {
   }
   @Test
   public void sorting_item46_5005695164083462020() throws Throwable {
-    Assert.assertEquals("Expected: " + TreePVector.<DateDeltaValue>empty().plus(DateDeltaValue.ofDays((BigInteger) (Number) new BigInteger("1"))) + ", but was: " + (PVector<DateDeltaValue>) TreePVector.<DateDeltaValue>from(((PCollection<DateDeltaValue>) TreePVector.<DateDeltaValue>empty().plus(DateDeltaValue.ofDays((BigInteger) (Number) new BigInteger("1")))).stream().filter(OH.predicate()).sorted(new Comparator<DateDeltaValue>() {
+    Assert.assertEquals("Expected: " + TreePVector.<DateDeltaValue>empty().plus(DateDeltaValue.ofDays(new BigInteger("1"))) + ", but was: " + TreePVector.<DateDeltaValue>from(TreePVector.<DateDeltaValue>empty().plus(DateDeltaValue.ofDays(new BigInteger("1"))).stream().filter(OH.predicate()).sorted(new Comparator<DateDeltaValue>() {
       public int compare(DateDeltaValue p0, DateDeltaValue p1) {
         return OH.compare(p1, p0);
       }
-    }).collect(Collectors.<DateDeltaValue>toList())), (Object) TreePVector.<DateDeltaValue>empty().plus(DateDeltaValue.ofDays((BigInteger) (Number) new BigInteger("1"))), (Object) (PVector<DateDeltaValue>) TreePVector.<DateDeltaValue>from(((PCollection<DateDeltaValue>) TreePVector.<DateDeltaValue>empty().plus(DateDeltaValue.ofDays((BigInteger) (Number) new BigInteger("1")))).stream().filter(OH.predicate()).sorted(new Comparator<DateDeltaValue>() {
+    }).collect(Collectors.<DateDeltaValue>toList())), TreePVector.<DateDeltaValue>empty().plus(DateDeltaValue.ofDays(new BigInteger("1"))), TreePVector.<DateDeltaValue>from(TreePVector.<DateDeltaValue>empty().plus(DateDeltaValue.ofDays(new BigInteger("1"))).stream().filter(OH.predicate()).sorted(new Comparator<DateDeltaValue>() {
       public int compare(DateDeltaValue p0, DateDeltaValue p1) {
         return OH.compare(p1, p0);
       }
@@ -1426,11 +1424,11 @@ public class Generated_date_Test {
   }
   @Test
   public void sorting_item47_5005695164083462026() throws Throwable {
-    Assert.assertEquals("Expected: " + TreePVector.<DateDeltaValue>empty().plus(DateDeltaValue.ofDays((BigInteger) (Number) new BigInteger("2"))).plus(DateDeltaValue.ofDays((BigInteger) (Number) new BigInteger("1"))) + ", but was: " + (PVector<DateDeltaValue>) TreePVector.<DateDeltaValue>from(((PCollection<DateDeltaValue>) TreePVector.<DateDeltaValue>empty().plus(DateDeltaValue.ofDays((BigInteger) (Number) new BigInteger("1"))).plus(DateDeltaValue.ofDays((BigInteger) (Number) new BigInteger("2")))).stream().filter(OH.predicate()).sorted(new Comparator<DateDeltaValue>() {
+    Assert.assertEquals("Expected: " + TreePVector.<DateDeltaValue>empty().plus(DateDeltaValue.ofDays(new BigInteger("2"))).plus(DateDeltaValue.ofDays(new BigInteger("1"))) + ", but was: " + TreePVector.<DateDeltaValue>from(TreePVector.<DateDeltaValue>empty().plus(DateDeltaValue.ofDays(new BigInteger("1"))).plus(DateDeltaValue.ofDays(new BigInteger("2"))).stream().filter(OH.predicate()).sorted(new Comparator<DateDeltaValue>() {
       public int compare(DateDeltaValue p0, DateDeltaValue p1) {
         return OH.compare(p1, p0);
       }
-    }).collect(Collectors.<DateDeltaValue>toList())), (Object) TreePVector.<DateDeltaValue>empty().plus(DateDeltaValue.ofDays((BigInteger) (Number) new BigInteger("2"))).plus(DateDeltaValue.ofDays((BigInteger) (Number) new BigInteger("1"))), (Object) (PVector<DateDeltaValue>) TreePVector.<DateDeltaValue>from(((PCollection<DateDeltaValue>) TreePVector.<DateDeltaValue>empty().plus(DateDeltaValue.ofDays((BigInteger) (Number) new BigInteger("1"))).plus(DateDeltaValue.ofDays((BigInteger) (Number) new BigInteger("2")))).stream().filter(OH.predicate()).sorted(new Comparator<DateDeltaValue>() {
+    }).collect(Collectors.<DateDeltaValue>toList())), TreePVector.<DateDeltaValue>empty().plus(DateDeltaValue.ofDays(new BigInteger("2"))).plus(DateDeltaValue.ofDays(new BigInteger("1"))), TreePVector.<DateDeltaValue>from(TreePVector.<DateDeltaValue>empty().plus(DateDeltaValue.ofDays(new BigInteger("1"))).plus(DateDeltaValue.ofDays(new BigInteger("2"))).stream().filter(OH.predicate()).sorted(new Comparator<DateDeltaValue>() {
       public int compare(DateDeltaValue p0, DateDeltaValue p1) {
         return OH.compare(p1, p0);
       }
@@ -1438,23 +1436,23 @@ public class Generated_date_Test {
   }
   @Test
   public void sorting_weeksDeltaList0_7492452870505519483() throws Throwable {
-    Assert.assertEquals("Expected: " + TreePVector.<DateDeltaValue>from(new ArrayList<DateDeltaValue>()) + ", but was: " + TreePVector.<DateDeltaValue>from(new ArrayList<DateDeltaValue>()), (Object) TreePVector.<DateDeltaValue>from(new ArrayList<DateDeltaValue>()), (Object) TreePVector.<DateDeltaValue>from(new ArrayList<DateDeltaValue>()));
+    Assert.assertEquals("Expected: " + TreePVector.<DateDeltaValue>from(new ArrayList<DateDeltaValue>()) + ", but was: " + TreePVector.<DateDeltaValue>from(new ArrayList<DateDeltaValue>()), TreePVector.<DateDeltaValue>from(new ArrayList<DateDeltaValue>()), TreePVector.<DateDeltaValue>from(new ArrayList<DateDeltaValue>()));
   }
   @Test
   public void sorting_weeksDeltaList1_7492452870505519492() throws Throwable {
-    Assert.assertEquals("Expected: " + TreePVector.<DateDeltaValue>empty().plus(DateDeltaValue.ofWeeks((BigInteger) (Number) new BigInteger("1"))) + ", but was: " + TreePVector.<DateDeltaValue>empty().plus(DateDeltaValue.ofWeeks((BigInteger) (Number) new BigInteger("1"))), (Object) TreePVector.<DateDeltaValue>empty().plus(DateDeltaValue.ofWeeks((BigInteger) (Number) new BigInteger("1"))), (Object) TreePVector.<DateDeltaValue>empty().plus(DateDeltaValue.ofWeeks((BigInteger) (Number) new BigInteger("1"))));
+    Assert.assertEquals("Expected: " + TreePVector.<DateDeltaValue>empty().plus(DateDeltaValue.ofWeeks(new BigInteger("1"))) + ", but was: " + TreePVector.<DateDeltaValue>empty().plus(DateDeltaValue.ofWeeks(new BigInteger("1"))), TreePVector.<DateDeltaValue>empty().plus(DateDeltaValue.ofWeeks(new BigInteger("1"))), TreePVector.<DateDeltaValue>empty().plus(DateDeltaValue.ofWeeks(new BigInteger("1"))));
   }
   @Test
   public void sorting_weeksDeltaList2_7492452870505519501() throws Throwable {
-    Assert.assertEquals("Expected: " + TreePVector.<DateDeltaValue>empty().plus(DateDeltaValue.ofWeeks((BigInteger) (Number) new BigInteger("1"))).plus(DateDeltaValue.ofWeeks((BigInteger) (Number) new BigInteger("2"))) + ", but was: " + TreePVector.<DateDeltaValue>empty().plus(DateDeltaValue.ofWeeks((BigInteger) (Number) new BigInteger("1"))).plus(DateDeltaValue.ofWeeks((BigInteger) (Number) new BigInteger("2"))), (Object) TreePVector.<DateDeltaValue>empty().plus(DateDeltaValue.ofWeeks((BigInteger) (Number) new BigInteger("1"))).plus(DateDeltaValue.ofWeeks((BigInteger) (Number) new BigInteger("2"))), (Object) TreePVector.<DateDeltaValue>empty().plus(DateDeltaValue.ofWeeks((BigInteger) (Number) new BigInteger("1"))).plus(DateDeltaValue.ofWeeks((BigInteger) (Number) new BigInteger("2"))));
+    Assert.assertEquals("Expected: " + TreePVector.<DateDeltaValue>empty().plus(DateDeltaValue.ofWeeks(new BigInteger("1"))).plus(DateDeltaValue.ofWeeks(new BigInteger("2"))) + ", but was: " + TreePVector.<DateDeltaValue>empty().plus(DateDeltaValue.ofWeeks(new BigInteger("1"))).plus(DateDeltaValue.ofWeeks(new BigInteger("2"))), TreePVector.<DateDeltaValue>empty().plus(DateDeltaValue.ofWeeks(new BigInteger("1"))).plus(DateDeltaValue.ofWeeks(new BigInteger("2"))), TreePVector.<DateDeltaValue>empty().plus(DateDeltaValue.ofWeeks(new BigInteger("1"))).plus(DateDeltaValue.ofWeeks(new BigInteger("2"))));
   }
   @Test
   public void sorting_item53_7492452870505519515() throws Throwable {
-    Assert.assertEquals("Expected: " + TreePVector.<DateDeltaValue>from(new ArrayList<DateDeltaValue>()) + ", but was: " + (PVector<DateDeltaValue>) TreePVector.<DateDeltaValue>from(((PCollection<DateDeltaValue>) TreePVector.<DateDeltaValue>from(new ArrayList<DateDeltaValue>())).stream().filter(OH.predicate()).sorted(new Comparator<DateDeltaValue>() {
+    Assert.assertEquals("Expected: " + TreePVector.<DateDeltaValue>from(new ArrayList<DateDeltaValue>()) + ", but was: " + TreePVector.<DateDeltaValue>from(TreePVector.<DateDeltaValue>from(new ArrayList<DateDeltaValue>()).stream().filter(OH.predicate()).sorted(new Comparator<DateDeltaValue>() {
       public int compare(DateDeltaValue p0, DateDeltaValue p1) {
         return OH.compare(p0, p1);
       }
-    }).collect(Collectors.<DateDeltaValue>toList())), (Object) TreePVector.<DateDeltaValue>from(new ArrayList<DateDeltaValue>()), (Object) (PVector<DateDeltaValue>) TreePVector.<DateDeltaValue>from(((PCollection<DateDeltaValue>) TreePVector.<DateDeltaValue>from(new ArrayList<DateDeltaValue>())).stream().filter(OH.predicate()).sorted(new Comparator<DateDeltaValue>() {
+    }).collect(Collectors.<DateDeltaValue>toList())), TreePVector.<DateDeltaValue>from(new ArrayList<DateDeltaValue>()), TreePVector.<DateDeltaValue>from(TreePVector.<DateDeltaValue>from(new ArrayList<DateDeltaValue>()).stream().filter(OH.predicate()).sorted(new Comparator<DateDeltaValue>() {
       public int compare(DateDeltaValue p0, DateDeltaValue p1) {
         return OH.compare(p0, p1);
       }
@@ -1462,11 +1460,11 @@ public class Generated_date_Test {
   }
   @Test
   public void sorting_item54_7492452870505519521() throws Throwable {
-    Assert.assertEquals("Expected: " + TreePVector.<DateDeltaValue>empty().plus(DateDeltaValue.ofWeeks((BigInteger) (Number) new BigInteger("1"))) + ", but was: " + (PVector<DateDeltaValue>) TreePVector.<DateDeltaValue>from(((PCollection<DateDeltaValue>) TreePVector.<DateDeltaValue>empty().plus(DateDeltaValue.ofWeeks((BigInteger) (Number) new BigInteger("1")))).stream().filter(OH.predicate()).sorted(new Comparator<DateDeltaValue>() {
+    Assert.assertEquals("Expected: " + TreePVector.<DateDeltaValue>empty().plus(DateDeltaValue.ofWeeks(new BigInteger("1"))) + ", but was: " + TreePVector.<DateDeltaValue>from(TreePVector.<DateDeltaValue>empty().plus(DateDeltaValue.ofWeeks(new BigInteger("1"))).stream().filter(OH.predicate()).sorted(new Comparator<DateDeltaValue>() {
       public int compare(DateDeltaValue p0, DateDeltaValue p1) {
         return OH.compare(p0, p1);
       }
-    }).collect(Collectors.<DateDeltaValue>toList())), (Object) TreePVector.<DateDeltaValue>empty().plus(DateDeltaValue.ofWeeks((BigInteger) (Number) new BigInteger("1"))), (Object) (PVector<DateDeltaValue>) TreePVector.<DateDeltaValue>from(((PCollection<DateDeltaValue>) TreePVector.<DateDeltaValue>empty().plus(DateDeltaValue.ofWeeks((BigInteger) (Number) new BigInteger("1")))).stream().filter(OH.predicate()).sorted(new Comparator<DateDeltaValue>() {
+    }).collect(Collectors.<DateDeltaValue>toList())), TreePVector.<DateDeltaValue>empty().plus(DateDeltaValue.ofWeeks(new BigInteger("1"))), TreePVector.<DateDeltaValue>from(TreePVector.<DateDeltaValue>empty().plus(DateDeltaValue.ofWeeks(new BigInteger("1"))).stream().filter(OH.predicate()).sorted(new Comparator<DateDeltaValue>() {
       public int compare(DateDeltaValue p0, DateDeltaValue p1) {
         return OH.compare(p0, p1);
       }
@@ -1474,11 +1472,11 @@ public class Generated_date_Test {
   }
   @Test
   public void sorting_item55_7492452870505519527() throws Throwable {
-    Assert.assertEquals("Expected: " + TreePVector.<DateDeltaValue>empty().plus(DateDeltaValue.ofWeeks((BigInteger) (Number) new BigInteger("1"))).plus(DateDeltaValue.ofWeeks((BigInteger) (Number) new BigInteger("2"))) + ", but was: " + (PVector<DateDeltaValue>) TreePVector.<DateDeltaValue>from(((PCollection<DateDeltaValue>) TreePVector.<DateDeltaValue>empty().plus(DateDeltaValue.ofWeeks((BigInteger) (Number) new BigInteger("1"))).plus(DateDeltaValue.ofWeeks((BigInteger) (Number) new BigInteger("2")))).stream().filter(OH.predicate()).sorted(new Comparator<DateDeltaValue>() {
+    Assert.assertEquals("Expected: " + TreePVector.<DateDeltaValue>empty().plus(DateDeltaValue.ofWeeks(new BigInteger("1"))).plus(DateDeltaValue.ofWeeks(new BigInteger("2"))) + ", but was: " + TreePVector.<DateDeltaValue>from(TreePVector.<DateDeltaValue>empty().plus(DateDeltaValue.ofWeeks(new BigInteger("1"))).plus(DateDeltaValue.ofWeeks(new BigInteger("2"))).stream().filter(OH.predicate()).sorted(new Comparator<DateDeltaValue>() {
       public int compare(DateDeltaValue p0, DateDeltaValue p1) {
         return OH.compare(p0, p1);
       }
-    }).collect(Collectors.<DateDeltaValue>toList())), (Object) TreePVector.<DateDeltaValue>empty().plus(DateDeltaValue.ofWeeks((BigInteger) (Number) new BigInteger("1"))).plus(DateDeltaValue.ofWeeks((BigInteger) (Number) new BigInteger("2"))), (Object) (PVector<DateDeltaValue>) TreePVector.<DateDeltaValue>from(((PCollection<DateDeltaValue>) TreePVector.<DateDeltaValue>empty().plus(DateDeltaValue.ofWeeks((BigInteger) (Number) new BigInteger("1"))).plus(DateDeltaValue.ofWeeks((BigInteger) (Number) new BigInteger("2")))).stream().filter(OH.predicate()).sorted(new Comparator<DateDeltaValue>() {
+    }).collect(Collectors.<DateDeltaValue>toList())), TreePVector.<DateDeltaValue>empty().plus(DateDeltaValue.ofWeeks(new BigInteger("1"))).plus(DateDeltaValue.ofWeeks(new BigInteger("2"))), TreePVector.<DateDeltaValue>from(TreePVector.<DateDeltaValue>empty().plus(DateDeltaValue.ofWeeks(new BigInteger("1"))).plus(DateDeltaValue.ofWeeks(new BigInteger("2"))).stream().filter(OH.predicate()).sorted(new Comparator<DateDeltaValue>() {
       public int compare(DateDeltaValue p0, DateDeltaValue p1) {
         return OH.compare(p0, p1);
       }
@@ -1486,11 +1484,11 @@ public class Generated_date_Test {
   }
   @Test
   public void sorting_item57_7492452870505519534() throws Throwable {
-    Assert.assertEquals("Expected: " + TreePVector.<DateDeltaValue>from(new ArrayList<DateDeltaValue>()) + ", but was: " + (PVector<DateDeltaValue>) TreePVector.<DateDeltaValue>from(((PCollection<DateDeltaValue>) TreePVector.<DateDeltaValue>from(new ArrayList<DateDeltaValue>())).stream().filter(OH.predicate()).sorted(new Comparator<DateDeltaValue>() {
+    Assert.assertEquals("Expected: " + TreePVector.<DateDeltaValue>from(new ArrayList<DateDeltaValue>()) + ", but was: " + TreePVector.<DateDeltaValue>from(TreePVector.<DateDeltaValue>from(new ArrayList<DateDeltaValue>()).stream().filter(OH.predicate()).sorted(new Comparator<DateDeltaValue>() {
       public int compare(DateDeltaValue p0, DateDeltaValue p1) {
         return OH.compare(p1, p0);
       }
-    }).collect(Collectors.<DateDeltaValue>toList())), (Object) TreePVector.<DateDeltaValue>from(new ArrayList<DateDeltaValue>()), (Object) (PVector<DateDeltaValue>) TreePVector.<DateDeltaValue>from(((PCollection<DateDeltaValue>) TreePVector.<DateDeltaValue>from(new ArrayList<DateDeltaValue>())).stream().filter(OH.predicate()).sorted(new Comparator<DateDeltaValue>() {
+    }).collect(Collectors.<DateDeltaValue>toList())), TreePVector.<DateDeltaValue>from(new ArrayList<DateDeltaValue>()), TreePVector.<DateDeltaValue>from(TreePVector.<DateDeltaValue>from(new ArrayList<DateDeltaValue>()).stream().filter(OH.predicate()).sorted(new Comparator<DateDeltaValue>() {
       public int compare(DateDeltaValue p0, DateDeltaValue p1) {
         return OH.compare(p1, p0);
       }
@@ -1498,11 +1496,11 @@ public class Generated_date_Test {
   }
   @Test
   public void sorting_item58_7492452870505519540() throws Throwable {
-    Assert.assertEquals("Expected: " + TreePVector.<DateDeltaValue>empty().plus(DateDeltaValue.ofWeeks((BigInteger) (Number) new BigInteger("1"))) + ", but was: " + (PVector<DateDeltaValue>) TreePVector.<DateDeltaValue>from(((PCollection<DateDeltaValue>) TreePVector.<DateDeltaValue>empty().plus(DateDeltaValue.ofWeeks((BigInteger) (Number) new BigInteger("1")))).stream().filter(OH.predicate()).sorted(new Comparator<DateDeltaValue>() {
+    Assert.assertEquals("Expected: " + TreePVector.<DateDeltaValue>empty().plus(DateDeltaValue.ofWeeks(new BigInteger("1"))) + ", but was: " + TreePVector.<DateDeltaValue>from(TreePVector.<DateDeltaValue>empty().plus(DateDeltaValue.ofWeeks(new BigInteger("1"))).stream().filter(OH.predicate()).sorted(new Comparator<DateDeltaValue>() {
       public int compare(DateDeltaValue p0, DateDeltaValue p1) {
         return OH.compare(p1, p0);
       }
-    }).collect(Collectors.<DateDeltaValue>toList())), (Object) TreePVector.<DateDeltaValue>empty().plus(DateDeltaValue.ofWeeks((BigInteger) (Number) new BigInteger("1"))), (Object) (PVector<DateDeltaValue>) TreePVector.<DateDeltaValue>from(((PCollection<DateDeltaValue>) TreePVector.<DateDeltaValue>empty().plus(DateDeltaValue.ofWeeks((BigInteger) (Number) new BigInteger("1")))).stream().filter(OH.predicate()).sorted(new Comparator<DateDeltaValue>() {
+    }).collect(Collectors.<DateDeltaValue>toList())), TreePVector.<DateDeltaValue>empty().plus(DateDeltaValue.ofWeeks(new BigInteger("1"))), TreePVector.<DateDeltaValue>from(TreePVector.<DateDeltaValue>empty().plus(DateDeltaValue.ofWeeks(new BigInteger("1"))).stream().filter(OH.predicate()).sorted(new Comparator<DateDeltaValue>() {
       public int compare(DateDeltaValue p0, DateDeltaValue p1) {
         return OH.compare(p1, p0);
       }
@@ -1510,11 +1508,11 @@ public class Generated_date_Test {
   }
   @Test
   public void sorting_item59_7492452870505519546() throws Throwable {
-    Assert.assertEquals("Expected: " + TreePVector.<DateDeltaValue>empty().plus(DateDeltaValue.ofWeeks((BigInteger) (Number) new BigInteger("2"))).plus(DateDeltaValue.ofWeeks((BigInteger) (Number) new BigInteger("1"))) + ", but was: " + (PVector<DateDeltaValue>) TreePVector.<DateDeltaValue>from(((PCollection<DateDeltaValue>) TreePVector.<DateDeltaValue>empty().plus(DateDeltaValue.ofWeeks((BigInteger) (Number) new BigInteger("1"))).plus(DateDeltaValue.ofWeeks((BigInteger) (Number) new BigInteger("2")))).stream().filter(OH.predicate()).sorted(new Comparator<DateDeltaValue>() {
+    Assert.assertEquals("Expected: " + TreePVector.<DateDeltaValue>empty().plus(DateDeltaValue.ofWeeks(new BigInteger("2"))).plus(DateDeltaValue.ofWeeks(new BigInteger("1"))) + ", but was: " + TreePVector.<DateDeltaValue>from(TreePVector.<DateDeltaValue>empty().plus(DateDeltaValue.ofWeeks(new BigInteger("1"))).plus(DateDeltaValue.ofWeeks(new BigInteger("2"))).stream().filter(OH.predicate()).sorted(new Comparator<DateDeltaValue>() {
       public int compare(DateDeltaValue p0, DateDeltaValue p1) {
         return OH.compare(p1, p0);
       }
-    }).collect(Collectors.<DateDeltaValue>toList())), (Object) TreePVector.<DateDeltaValue>empty().plus(DateDeltaValue.ofWeeks((BigInteger) (Number) new BigInteger("2"))).plus(DateDeltaValue.ofWeeks((BigInteger) (Number) new BigInteger("1"))), (Object) (PVector<DateDeltaValue>) TreePVector.<DateDeltaValue>from(((PCollection<DateDeltaValue>) TreePVector.<DateDeltaValue>empty().plus(DateDeltaValue.ofWeeks((BigInteger) (Number) new BigInteger("1"))).plus(DateDeltaValue.ofWeeks((BigInteger) (Number) new BigInteger("2")))).stream().filter(OH.predicate()).sorted(new Comparator<DateDeltaValue>() {
+    }).collect(Collectors.<DateDeltaValue>toList())), TreePVector.<DateDeltaValue>empty().plus(DateDeltaValue.ofWeeks(new BigInteger("2"))).plus(DateDeltaValue.ofWeeks(new BigInteger("1"))), TreePVector.<DateDeltaValue>from(TreePVector.<DateDeltaValue>empty().plus(DateDeltaValue.ofWeeks(new BigInteger("1"))).plus(DateDeltaValue.ofWeeks(new BigInteger("2"))).stream().filter(OH.predicate()).sorted(new Comparator<DateDeltaValue>() {
       public int compare(DateDeltaValue p0, DateDeltaValue p1) {
         return OH.compare(p1, p0);
       }
@@ -1522,23 +1520,23 @@ public class Generated_date_Test {
   }
   @Test
   public void sorting_monthsDeltaList0_7492452870505517072() throws Throwable {
-    Assert.assertEquals("Expected: " + TreePVector.<DateDeltaValue>from(new ArrayList<DateDeltaValue>()) + ", but was: " + TreePVector.<DateDeltaValue>from(new ArrayList<DateDeltaValue>()), (Object) TreePVector.<DateDeltaValue>from(new ArrayList<DateDeltaValue>()), (Object) TreePVector.<DateDeltaValue>from(new ArrayList<DateDeltaValue>()));
+    Assert.assertEquals("Expected: " + TreePVector.<DateDeltaValue>from(new ArrayList<DateDeltaValue>()) + ", but was: " + TreePVector.<DateDeltaValue>from(new ArrayList<DateDeltaValue>()), TreePVector.<DateDeltaValue>from(new ArrayList<DateDeltaValue>()), TreePVector.<DateDeltaValue>from(new ArrayList<DateDeltaValue>()));
   }
   @Test
   public void sorting_monthsDeltaList1_7492452870505517081() throws Throwable {
-    Assert.assertEquals("Expected: " + TreePVector.<DateDeltaValue>empty().plus(DateDeltaValue.ofMonths((BigInteger) (Number) new BigInteger("1"))) + ", but was: " + TreePVector.<DateDeltaValue>empty().plus(DateDeltaValue.ofMonths((BigInteger) (Number) new BigInteger("1"))), (Object) TreePVector.<DateDeltaValue>empty().plus(DateDeltaValue.ofMonths((BigInteger) (Number) new BigInteger("1"))), (Object) TreePVector.<DateDeltaValue>empty().plus(DateDeltaValue.ofMonths((BigInteger) (Number) new BigInteger("1"))));
+    Assert.assertEquals("Expected: " + TreePVector.<DateDeltaValue>empty().plus(DateDeltaValue.ofMonths(new BigInteger("1"))) + ", but was: " + TreePVector.<DateDeltaValue>empty().plus(DateDeltaValue.ofMonths(new BigInteger("1"))), TreePVector.<DateDeltaValue>empty().plus(DateDeltaValue.ofMonths(new BigInteger("1"))), TreePVector.<DateDeltaValue>empty().plus(DateDeltaValue.ofMonths(new BigInteger("1"))));
   }
   @Test
   public void sorting_monthsDeltaList2_7492452870505517090() throws Throwable {
-    Assert.assertEquals("Expected: " + TreePVector.<DateDeltaValue>empty().plus(DateDeltaValue.ofMonths((BigInteger) (Number) new BigInteger("1"))).plus(DateDeltaValue.ofMonths((BigInteger) (Number) new BigInteger("2"))) + ", but was: " + TreePVector.<DateDeltaValue>empty().plus(DateDeltaValue.ofMonths((BigInteger) (Number) new BigInteger("1"))).plus(DateDeltaValue.ofMonths((BigInteger) (Number) new BigInteger("2"))), (Object) TreePVector.<DateDeltaValue>empty().plus(DateDeltaValue.ofMonths((BigInteger) (Number) new BigInteger("1"))).plus(DateDeltaValue.ofMonths((BigInteger) (Number) new BigInteger("2"))), (Object) TreePVector.<DateDeltaValue>empty().plus(DateDeltaValue.ofMonths((BigInteger) (Number) new BigInteger("1"))).plus(DateDeltaValue.ofMonths((BigInteger) (Number) new BigInteger("2"))));
+    Assert.assertEquals("Expected: " + TreePVector.<DateDeltaValue>empty().plus(DateDeltaValue.ofMonths(new BigInteger("1"))).plus(DateDeltaValue.ofMonths(new BigInteger("2"))) + ", but was: " + TreePVector.<DateDeltaValue>empty().plus(DateDeltaValue.ofMonths(new BigInteger("1"))).plus(DateDeltaValue.ofMonths(new BigInteger("2"))), TreePVector.<DateDeltaValue>empty().plus(DateDeltaValue.ofMonths(new BigInteger("1"))).plus(DateDeltaValue.ofMonths(new BigInteger("2"))), TreePVector.<DateDeltaValue>empty().plus(DateDeltaValue.ofMonths(new BigInteger("1"))).plus(DateDeltaValue.ofMonths(new BigInteger("2"))));
   }
   @Test
   public void sorting_item65_7492452870505517104() throws Throwable {
-    Assert.assertEquals("Expected: " + TreePVector.<DateDeltaValue>from(new ArrayList<DateDeltaValue>()) + ", but was: " + (PVector<DateDeltaValue>) TreePVector.<DateDeltaValue>from(((PCollection<DateDeltaValue>) TreePVector.<DateDeltaValue>from(new ArrayList<DateDeltaValue>())).stream().filter(OH.predicate()).sorted(new Comparator<DateDeltaValue>() {
+    Assert.assertEquals("Expected: " + TreePVector.<DateDeltaValue>from(new ArrayList<DateDeltaValue>()) + ", but was: " + TreePVector.<DateDeltaValue>from(TreePVector.<DateDeltaValue>from(new ArrayList<DateDeltaValue>()).stream().filter(OH.predicate()).sorted(new Comparator<DateDeltaValue>() {
       public int compare(DateDeltaValue p0, DateDeltaValue p1) {
         return OH.compare(p0, p1);
       }
-    }).collect(Collectors.<DateDeltaValue>toList())), (Object) TreePVector.<DateDeltaValue>from(new ArrayList<DateDeltaValue>()), (Object) (PVector<DateDeltaValue>) TreePVector.<DateDeltaValue>from(((PCollection<DateDeltaValue>) TreePVector.<DateDeltaValue>from(new ArrayList<DateDeltaValue>())).stream().filter(OH.predicate()).sorted(new Comparator<DateDeltaValue>() {
+    }).collect(Collectors.<DateDeltaValue>toList())), TreePVector.<DateDeltaValue>from(new ArrayList<DateDeltaValue>()), TreePVector.<DateDeltaValue>from(TreePVector.<DateDeltaValue>from(new ArrayList<DateDeltaValue>()).stream().filter(OH.predicate()).sorted(new Comparator<DateDeltaValue>() {
       public int compare(DateDeltaValue p0, DateDeltaValue p1) {
         return OH.compare(p0, p1);
       }
@@ -1546,11 +1544,11 @@ public class Generated_date_Test {
   }
   @Test
   public void sorting_item66_7492452870505517110() throws Throwable {
-    Assert.assertEquals("Expected: " + TreePVector.<DateDeltaValue>empty().plus(DateDeltaValue.ofMonths((BigInteger) (Number) new BigInteger("1"))) + ", but was: " + (PVector<DateDeltaValue>) TreePVector.<DateDeltaValue>from(((PCollection<DateDeltaValue>) TreePVector.<DateDeltaValue>empty().plus(DateDeltaValue.ofMonths((BigInteger) (Number) new BigInteger("1")))).stream().filter(OH.predicate()).sorted(new Comparator<DateDeltaValue>() {
+    Assert.assertEquals("Expected: " + TreePVector.<DateDeltaValue>empty().plus(DateDeltaValue.ofMonths(new BigInteger("1"))) + ", but was: " + TreePVector.<DateDeltaValue>from(TreePVector.<DateDeltaValue>empty().plus(DateDeltaValue.ofMonths(new BigInteger("1"))).stream().filter(OH.predicate()).sorted(new Comparator<DateDeltaValue>() {
       public int compare(DateDeltaValue p0, DateDeltaValue p1) {
         return OH.compare(p0, p1);
       }
-    }).collect(Collectors.<DateDeltaValue>toList())), (Object) TreePVector.<DateDeltaValue>empty().plus(DateDeltaValue.ofMonths((BigInteger) (Number) new BigInteger("1"))), (Object) (PVector<DateDeltaValue>) TreePVector.<DateDeltaValue>from(((PCollection<DateDeltaValue>) TreePVector.<DateDeltaValue>empty().plus(DateDeltaValue.ofMonths((BigInteger) (Number) new BigInteger("1")))).stream().filter(OH.predicate()).sorted(new Comparator<DateDeltaValue>() {
+    }).collect(Collectors.<DateDeltaValue>toList())), TreePVector.<DateDeltaValue>empty().plus(DateDeltaValue.ofMonths(new BigInteger("1"))), TreePVector.<DateDeltaValue>from(TreePVector.<DateDeltaValue>empty().plus(DateDeltaValue.ofMonths(new BigInteger("1"))).stream().filter(OH.predicate()).sorted(new Comparator<DateDeltaValue>() {
       public int compare(DateDeltaValue p0, DateDeltaValue p1) {
         return OH.compare(p0, p1);
       }
@@ -1558,11 +1556,11 @@ public class Generated_date_Test {
   }
   @Test
   public void sorting_item67_7492452870505517116() throws Throwable {
-    Assert.assertEquals("Expected: " + TreePVector.<DateDeltaValue>empty().plus(DateDeltaValue.ofMonths((BigInteger) (Number) new BigInteger("1"))).plus(DateDeltaValue.ofMonths((BigInteger) (Number) new BigInteger("2"))) + ", but was: " + (PVector<DateDeltaValue>) TreePVector.<DateDeltaValue>from(((PCollection<DateDeltaValue>) TreePVector.<DateDeltaValue>empty().plus(DateDeltaValue.ofMonths((BigInteger) (Number) new BigInteger("1"))).plus(DateDeltaValue.ofMonths((BigInteger) (Number) new BigInteger("2")))).stream().filter(OH.predicate()).sorted(new Comparator<DateDeltaValue>() {
+    Assert.assertEquals("Expected: " + TreePVector.<DateDeltaValue>empty().plus(DateDeltaValue.ofMonths(new BigInteger("1"))).plus(DateDeltaValue.ofMonths(new BigInteger("2"))) + ", but was: " + TreePVector.<DateDeltaValue>from(TreePVector.<DateDeltaValue>empty().plus(DateDeltaValue.ofMonths(new BigInteger("1"))).plus(DateDeltaValue.ofMonths(new BigInteger("2"))).stream().filter(OH.predicate()).sorted(new Comparator<DateDeltaValue>() {
       public int compare(DateDeltaValue p0, DateDeltaValue p1) {
         return OH.compare(p0, p1);
       }
-    }).collect(Collectors.<DateDeltaValue>toList())), (Object) TreePVector.<DateDeltaValue>empty().plus(DateDeltaValue.ofMonths((BigInteger) (Number) new BigInteger("1"))).plus(DateDeltaValue.ofMonths((BigInteger) (Number) new BigInteger("2"))), (Object) (PVector<DateDeltaValue>) TreePVector.<DateDeltaValue>from(((PCollection<DateDeltaValue>) TreePVector.<DateDeltaValue>empty().plus(DateDeltaValue.ofMonths((BigInteger) (Number) new BigInteger("1"))).plus(DateDeltaValue.ofMonths((BigInteger) (Number) new BigInteger("2")))).stream().filter(OH.predicate()).sorted(new Comparator<DateDeltaValue>() {
+    }).collect(Collectors.<DateDeltaValue>toList())), TreePVector.<DateDeltaValue>empty().plus(DateDeltaValue.ofMonths(new BigInteger("1"))).plus(DateDeltaValue.ofMonths(new BigInteger("2"))), TreePVector.<DateDeltaValue>from(TreePVector.<DateDeltaValue>empty().plus(DateDeltaValue.ofMonths(new BigInteger("1"))).plus(DateDeltaValue.ofMonths(new BigInteger("2"))).stream().filter(OH.predicate()).sorted(new Comparator<DateDeltaValue>() {
       public int compare(DateDeltaValue p0, DateDeltaValue p1) {
         return OH.compare(p0, p1);
       }
@@ -1570,11 +1568,11 @@ public class Generated_date_Test {
   }
   @Test
   public void sorting_item69_7492452870505517123() throws Throwable {
-    Assert.assertEquals("Expected: " + TreePVector.<DateDeltaValue>from(new ArrayList<DateDeltaValue>()) + ", but was: " + (PVector<DateDeltaValue>) TreePVector.<DateDeltaValue>from(((PCollection<DateDeltaValue>) TreePVector.<DateDeltaValue>from(new ArrayList<DateDeltaValue>())).stream().filter(OH.predicate()).sorted(new Comparator<DateDeltaValue>() {
+    Assert.assertEquals("Expected: " + TreePVector.<DateDeltaValue>from(new ArrayList<DateDeltaValue>()) + ", but was: " + TreePVector.<DateDeltaValue>from(TreePVector.<DateDeltaValue>from(new ArrayList<DateDeltaValue>()).stream().filter(OH.predicate()).sorted(new Comparator<DateDeltaValue>() {
       public int compare(DateDeltaValue p0, DateDeltaValue p1) {
         return OH.compare(p1, p0);
       }
-    }).collect(Collectors.<DateDeltaValue>toList())), (Object) TreePVector.<DateDeltaValue>from(new ArrayList<DateDeltaValue>()), (Object) (PVector<DateDeltaValue>) TreePVector.<DateDeltaValue>from(((PCollection<DateDeltaValue>) TreePVector.<DateDeltaValue>from(new ArrayList<DateDeltaValue>())).stream().filter(OH.predicate()).sorted(new Comparator<DateDeltaValue>() {
+    }).collect(Collectors.<DateDeltaValue>toList())), TreePVector.<DateDeltaValue>from(new ArrayList<DateDeltaValue>()), TreePVector.<DateDeltaValue>from(TreePVector.<DateDeltaValue>from(new ArrayList<DateDeltaValue>()).stream().filter(OH.predicate()).sorted(new Comparator<DateDeltaValue>() {
       public int compare(DateDeltaValue p0, DateDeltaValue p1) {
         return OH.compare(p1, p0);
       }
@@ -1582,11 +1580,11 @@ public class Generated_date_Test {
   }
   @Test
   public void sorting_item70_7492452870505517129() throws Throwable {
-    Assert.assertEquals("Expected: " + TreePVector.<DateDeltaValue>empty().plus(DateDeltaValue.ofMonths((BigInteger) (Number) new BigInteger("1"))) + ", but was: " + (PVector<DateDeltaValue>) TreePVector.<DateDeltaValue>from(((PCollection<DateDeltaValue>) TreePVector.<DateDeltaValue>empty().plus(DateDeltaValue.ofMonths((BigInteger) (Number) new BigInteger("1")))).stream().filter(OH.predicate()).sorted(new Comparator<DateDeltaValue>() {
+    Assert.assertEquals("Expected: " + TreePVector.<DateDeltaValue>empty().plus(DateDeltaValue.ofMonths(new BigInteger("1"))) + ", but was: " + TreePVector.<DateDeltaValue>from(TreePVector.<DateDeltaValue>empty().plus(DateDeltaValue.ofMonths(new BigInteger("1"))).stream().filter(OH.predicate()).sorted(new Comparator<DateDeltaValue>() {
       public int compare(DateDeltaValue p0, DateDeltaValue p1) {
         return OH.compare(p1, p0);
       }
-    }).collect(Collectors.<DateDeltaValue>toList())), (Object) TreePVector.<DateDeltaValue>empty().plus(DateDeltaValue.ofMonths((BigInteger) (Number) new BigInteger("1"))), (Object) (PVector<DateDeltaValue>) TreePVector.<DateDeltaValue>from(((PCollection<DateDeltaValue>) TreePVector.<DateDeltaValue>empty().plus(DateDeltaValue.ofMonths((BigInteger) (Number) new BigInteger("1")))).stream().filter(OH.predicate()).sorted(new Comparator<DateDeltaValue>() {
+    }).collect(Collectors.<DateDeltaValue>toList())), TreePVector.<DateDeltaValue>empty().plus(DateDeltaValue.ofMonths(new BigInteger("1"))), TreePVector.<DateDeltaValue>from(TreePVector.<DateDeltaValue>empty().plus(DateDeltaValue.ofMonths(new BigInteger("1"))).stream().filter(OH.predicate()).sorted(new Comparator<DateDeltaValue>() {
       public int compare(DateDeltaValue p0, DateDeltaValue p1) {
         return OH.compare(p1, p0);
       }
@@ -1594,11 +1592,11 @@ public class Generated_date_Test {
   }
   @Test
   public void sorting_item71_7492452870505517135() throws Throwable {
-    Assert.assertEquals("Expected: " + TreePVector.<DateDeltaValue>empty().plus(DateDeltaValue.ofMonths((BigInteger) (Number) new BigInteger("2"))).plus(DateDeltaValue.ofMonths((BigInteger) (Number) new BigInteger("1"))) + ", but was: " + (PVector<DateDeltaValue>) TreePVector.<DateDeltaValue>from(((PCollection<DateDeltaValue>) TreePVector.<DateDeltaValue>empty().plus(DateDeltaValue.ofMonths((BigInteger) (Number) new BigInteger("1"))).plus(DateDeltaValue.ofMonths((BigInteger) (Number) new BigInteger("2")))).stream().filter(OH.predicate()).sorted(new Comparator<DateDeltaValue>() {
+    Assert.assertEquals("Expected: " + TreePVector.<DateDeltaValue>empty().plus(DateDeltaValue.ofMonths(new BigInteger("2"))).plus(DateDeltaValue.ofMonths(new BigInteger("1"))) + ", but was: " + TreePVector.<DateDeltaValue>from(TreePVector.<DateDeltaValue>empty().plus(DateDeltaValue.ofMonths(new BigInteger("1"))).plus(DateDeltaValue.ofMonths(new BigInteger("2"))).stream().filter(OH.predicate()).sorted(new Comparator<DateDeltaValue>() {
       public int compare(DateDeltaValue p0, DateDeltaValue p1) {
         return OH.compare(p1, p0);
       }
-    }).collect(Collectors.<DateDeltaValue>toList())), (Object) TreePVector.<DateDeltaValue>empty().plus(DateDeltaValue.ofMonths((BigInteger) (Number) new BigInteger("2"))).plus(DateDeltaValue.ofMonths((BigInteger) (Number) new BigInteger("1"))), (Object) (PVector<DateDeltaValue>) TreePVector.<DateDeltaValue>from(((PCollection<DateDeltaValue>) TreePVector.<DateDeltaValue>empty().plus(DateDeltaValue.ofMonths((BigInteger) (Number) new BigInteger("1"))).plus(DateDeltaValue.ofMonths((BigInteger) (Number) new BigInteger("2")))).stream().filter(OH.predicate()).sorted(new Comparator<DateDeltaValue>() {
+    }).collect(Collectors.<DateDeltaValue>toList())), TreePVector.<DateDeltaValue>empty().plus(DateDeltaValue.ofMonths(new BigInteger("2"))).plus(DateDeltaValue.ofMonths(new BigInteger("1"))), TreePVector.<DateDeltaValue>from(TreePVector.<DateDeltaValue>empty().plus(DateDeltaValue.ofMonths(new BigInteger("1"))).plus(DateDeltaValue.ofMonths(new BigInteger("2"))).stream().filter(OH.predicate()).sorted(new Comparator<DateDeltaValue>() {
       public int compare(DateDeltaValue p0, DateDeltaValue p1) {
         return OH.compare(p1, p0);
       }
@@ -1606,23 +1604,23 @@ public class Generated_date_Test {
   }
   @Test
   public void sorting_yearsDeltaList0_7492452870505521590() throws Throwable {
-    Assert.assertEquals("Expected: " + TreePVector.<DateDeltaValue>from(new ArrayList<DateDeltaValue>()) + ", but was: " + TreePVector.<DateDeltaValue>from(new ArrayList<DateDeltaValue>()), (Object) TreePVector.<DateDeltaValue>from(new ArrayList<DateDeltaValue>()), (Object) TreePVector.<DateDeltaValue>from(new ArrayList<DateDeltaValue>()));
+    Assert.assertEquals("Expected: " + TreePVector.<DateDeltaValue>from(new ArrayList<DateDeltaValue>()) + ", but was: " + TreePVector.<DateDeltaValue>from(new ArrayList<DateDeltaValue>()), TreePVector.<DateDeltaValue>from(new ArrayList<DateDeltaValue>()), TreePVector.<DateDeltaValue>from(new ArrayList<DateDeltaValue>()));
   }
   @Test
   public void sorting_yearsDeltaList1_7492452870505521599() throws Throwable {
-    Assert.assertEquals("Expected: " + TreePVector.<DateDeltaValue>empty().plus(DateDeltaValue.ofYears((BigInteger) (Number) new BigInteger("1"))) + ", but was: " + TreePVector.<DateDeltaValue>empty().plus(DateDeltaValue.ofYears((BigInteger) (Number) new BigInteger("1"))), (Object) TreePVector.<DateDeltaValue>empty().plus(DateDeltaValue.ofYears((BigInteger) (Number) new BigInteger("1"))), (Object) TreePVector.<DateDeltaValue>empty().plus(DateDeltaValue.ofYears((BigInteger) (Number) new BigInteger("1"))));
+    Assert.assertEquals("Expected: " + TreePVector.<DateDeltaValue>empty().plus(DateDeltaValue.ofYears(new BigInteger("1"))) + ", but was: " + TreePVector.<DateDeltaValue>empty().plus(DateDeltaValue.ofYears(new BigInteger("1"))), TreePVector.<DateDeltaValue>empty().plus(DateDeltaValue.ofYears(new BigInteger("1"))), TreePVector.<DateDeltaValue>empty().plus(DateDeltaValue.ofYears(new BigInteger("1"))));
   }
   @Test
   public void sorting_yearsDeltaList2_7492452870505521608() throws Throwable {
-    Assert.assertEquals("Expected: " + TreePVector.<DateDeltaValue>empty().plus(DateDeltaValue.ofYears((BigInteger) (Number) new BigInteger("1"))).plus(DateDeltaValue.ofYears((BigInteger) (Number) new BigInteger("2"))) + ", but was: " + TreePVector.<DateDeltaValue>empty().plus(DateDeltaValue.ofYears((BigInteger) (Number) new BigInteger("1"))).plus(DateDeltaValue.ofYears((BigInteger) (Number) new BigInteger("2"))), (Object) TreePVector.<DateDeltaValue>empty().plus(DateDeltaValue.ofYears((BigInteger) (Number) new BigInteger("1"))).plus(DateDeltaValue.ofYears((BigInteger) (Number) new BigInteger("2"))), (Object) TreePVector.<DateDeltaValue>empty().plus(DateDeltaValue.ofYears((BigInteger) (Number) new BigInteger("1"))).plus(DateDeltaValue.ofYears((BigInteger) (Number) new BigInteger("2"))));
+    Assert.assertEquals("Expected: " + TreePVector.<DateDeltaValue>empty().plus(DateDeltaValue.ofYears(new BigInteger("1"))).plus(DateDeltaValue.ofYears(new BigInteger("2"))) + ", but was: " + TreePVector.<DateDeltaValue>empty().plus(DateDeltaValue.ofYears(new BigInteger("1"))).plus(DateDeltaValue.ofYears(new BigInteger("2"))), TreePVector.<DateDeltaValue>empty().plus(DateDeltaValue.ofYears(new BigInteger("1"))).plus(DateDeltaValue.ofYears(new BigInteger("2"))), TreePVector.<DateDeltaValue>empty().plus(DateDeltaValue.ofYears(new BigInteger("1"))).plus(DateDeltaValue.ofYears(new BigInteger("2"))));
   }
   @Test
   public void sorting_item77_7492452870505521622() throws Throwable {
-    Assert.assertEquals("Expected: " + TreePVector.<DateDeltaValue>from(new ArrayList<DateDeltaValue>()) + ", but was: " + (PVector<DateDeltaValue>) TreePVector.<DateDeltaValue>from(((PCollection<DateDeltaValue>) TreePVector.<DateDeltaValue>from(new ArrayList<DateDeltaValue>())).stream().filter(OH.predicate()).sorted(new Comparator<DateDeltaValue>() {
+    Assert.assertEquals("Expected: " + TreePVector.<DateDeltaValue>from(new ArrayList<DateDeltaValue>()) + ", but was: " + TreePVector.<DateDeltaValue>from(TreePVector.<DateDeltaValue>from(new ArrayList<DateDeltaValue>()).stream().filter(OH.predicate()).sorted(new Comparator<DateDeltaValue>() {
       public int compare(DateDeltaValue p0, DateDeltaValue p1) {
         return OH.compare(p0, p1);
       }
-    }).collect(Collectors.<DateDeltaValue>toList())), (Object) TreePVector.<DateDeltaValue>from(new ArrayList<DateDeltaValue>()), (Object) (PVector<DateDeltaValue>) TreePVector.<DateDeltaValue>from(((PCollection<DateDeltaValue>) TreePVector.<DateDeltaValue>from(new ArrayList<DateDeltaValue>())).stream().filter(OH.predicate()).sorted(new Comparator<DateDeltaValue>() {
+    }).collect(Collectors.<DateDeltaValue>toList())), TreePVector.<DateDeltaValue>from(new ArrayList<DateDeltaValue>()), TreePVector.<DateDeltaValue>from(TreePVector.<DateDeltaValue>from(new ArrayList<DateDeltaValue>()).stream().filter(OH.predicate()).sorted(new Comparator<DateDeltaValue>() {
       public int compare(DateDeltaValue p0, DateDeltaValue p1) {
         return OH.compare(p0, p1);
       }
@@ -1630,11 +1628,11 @@ public class Generated_date_Test {
   }
   @Test
   public void sorting_item78_7492452870505521628() throws Throwable {
-    Assert.assertEquals("Expected: " + TreePVector.<DateDeltaValue>empty().plus(DateDeltaValue.ofYears((BigInteger) (Number) new BigInteger("1"))) + ", but was: " + (PVector<DateDeltaValue>) TreePVector.<DateDeltaValue>from(((PCollection<DateDeltaValue>) TreePVector.<DateDeltaValue>empty().plus(DateDeltaValue.ofYears((BigInteger) (Number) new BigInteger("1")))).stream().filter(OH.predicate()).sorted(new Comparator<DateDeltaValue>() {
+    Assert.assertEquals("Expected: " + TreePVector.<DateDeltaValue>empty().plus(DateDeltaValue.ofYears(new BigInteger("1"))) + ", but was: " + TreePVector.<DateDeltaValue>from(TreePVector.<DateDeltaValue>empty().plus(DateDeltaValue.ofYears(new BigInteger("1"))).stream().filter(OH.predicate()).sorted(new Comparator<DateDeltaValue>() {
       public int compare(DateDeltaValue p0, DateDeltaValue p1) {
         return OH.compare(p0, p1);
       }
-    }).collect(Collectors.<DateDeltaValue>toList())), (Object) TreePVector.<DateDeltaValue>empty().plus(DateDeltaValue.ofYears((BigInteger) (Number) new BigInteger("1"))), (Object) (PVector<DateDeltaValue>) TreePVector.<DateDeltaValue>from(((PCollection<DateDeltaValue>) TreePVector.<DateDeltaValue>empty().plus(DateDeltaValue.ofYears((BigInteger) (Number) new BigInteger("1")))).stream().filter(OH.predicate()).sorted(new Comparator<DateDeltaValue>() {
+    }).collect(Collectors.<DateDeltaValue>toList())), TreePVector.<DateDeltaValue>empty().plus(DateDeltaValue.ofYears(new BigInteger("1"))), TreePVector.<DateDeltaValue>from(TreePVector.<DateDeltaValue>empty().plus(DateDeltaValue.ofYears(new BigInteger("1"))).stream().filter(OH.predicate()).sorted(new Comparator<DateDeltaValue>() {
       public int compare(DateDeltaValue p0, DateDeltaValue p1) {
         return OH.compare(p0, p1);
       }
@@ -1642,11 +1640,11 @@ public class Generated_date_Test {
   }
   @Test
   public void sorting_item79_7492452870505521634() throws Throwable {
-    Assert.assertEquals("Expected: " + TreePVector.<DateDeltaValue>empty().plus(DateDeltaValue.ofYears((BigInteger) (Number) new BigInteger("1"))).plus(DateDeltaValue.ofYears((BigInteger) (Number) new BigInteger("2"))) + ", but was: " + (PVector<DateDeltaValue>) TreePVector.<DateDeltaValue>from(((PCollection<DateDeltaValue>) TreePVector.<DateDeltaValue>empty().plus(DateDeltaValue.ofYears((BigInteger) (Number) new BigInteger("1"))).plus(DateDeltaValue.ofYears((BigInteger) (Number) new BigInteger("2")))).stream().filter(OH.predicate()).sorted(new Comparator<DateDeltaValue>() {
+    Assert.assertEquals("Expected: " + TreePVector.<DateDeltaValue>empty().plus(DateDeltaValue.ofYears(new BigInteger("1"))).plus(DateDeltaValue.ofYears(new BigInteger("2"))) + ", but was: " + TreePVector.<DateDeltaValue>from(TreePVector.<DateDeltaValue>empty().plus(DateDeltaValue.ofYears(new BigInteger("1"))).plus(DateDeltaValue.ofYears(new BigInteger("2"))).stream().filter(OH.predicate()).sorted(new Comparator<DateDeltaValue>() {
       public int compare(DateDeltaValue p0, DateDeltaValue p1) {
         return OH.compare(p0, p1);
       }
-    }).collect(Collectors.<DateDeltaValue>toList())), (Object) TreePVector.<DateDeltaValue>empty().plus(DateDeltaValue.ofYears((BigInteger) (Number) new BigInteger("1"))).plus(DateDeltaValue.ofYears((BigInteger) (Number) new BigInteger("2"))), (Object) (PVector<DateDeltaValue>) TreePVector.<DateDeltaValue>from(((PCollection<DateDeltaValue>) TreePVector.<DateDeltaValue>empty().plus(DateDeltaValue.ofYears((BigInteger) (Number) new BigInteger("1"))).plus(DateDeltaValue.ofYears((BigInteger) (Number) new BigInteger("2")))).stream().filter(OH.predicate()).sorted(new Comparator<DateDeltaValue>() {
+    }).collect(Collectors.<DateDeltaValue>toList())), TreePVector.<DateDeltaValue>empty().plus(DateDeltaValue.ofYears(new BigInteger("1"))).plus(DateDeltaValue.ofYears(new BigInteger("2"))), TreePVector.<DateDeltaValue>from(TreePVector.<DateDeltaValue>empty().plus(DateDeltaValue.ofYears(new BigInteger("1"))).plus(DateDeltaValue.ofYears(new BigInteger("2"))).stream().filter(OH.predicate()).sorted(new Comparator<DateDeltaValue>() {
       public int compare(DateDeltaValue p0, DateDeltaValue p1) {
         return OH.compare(p0, p1);
       }
@@ -1654,11 +1652,11 @@ public class Generated_date_Test {
   }
   @Test
   public void sorting_item81_7492452870505521641() throws Throwable {
-    Assert.assertEquals("Expected: " + TreePVector.<DateDeltaValue>from(new ArrayList<DateDeltaValue>()) + ", but was: " + (PVector<DateDeltaValue>) TreePVector.<DateDeltaValue>from(((PCollection<DateDeltaValue>) TreePVector.<DateDeltaValue>from(new ArrayList<DateDeltaValue>())).stream().filter(OH.predicate()).sorted(new Comparator<DateDeltaValue>() {
+    Assert.assertEquals("Expected: " + TreePVector.<DateDeltaValue>from(new ArrayList<DateDeltaValue>()) + ", but was: " + TreePVector.<DateDeltaValue>from(TreePVector.<DateDeltaValue>from(new ArrayList<DateDeltaValue>()).stream().filter(OH.predicate()).sorted(new Comparator<DateDeltaValue>() {
       public int compare(DateDeltaValue p0, DateDeltaValue p1) {
         return OH.compare(p1, p0);
       }
-    }).collect(Collectors.<DateDeltaValue>toList())), (Object) TreePVector.<DateDeltaValue>from(new ArrayList<DateDeltaValue>()), (Object) (PVector<DateDeltaValue>) TreePVector.<DateDeltaValue>from(((PCollection<DateDeltaValue>) TreePVector.<DateDeltaValue>from(new ArrayList<DateDeltaValue>())).stream().filter(OH.predicate()).sorted(new Comparator<DateDeltaValue>() {
+    }).collect(Collectors.<DateDeltaValue>toList())), TreePVector.<DateDeltaValue>from(new ArrayList<DateDeltaValue>()), TreePVector.<DateDeltaValue>from(TreePVector.<DateDeltaValue>from(new ArrayList<DateDeltaValue>()).stream().filter(OH.predicate()).sorted(new Comparator<DateDeltaValue>() {
       public int compare(DateDeltaValue p0, DateDeltaValue p1) {
         return OH.compare(p1, p0);
       }
@@ -1666,11 +1664,11 @@ public class Generated_date_Test {
   }
   @Test
   public void sorting_item82_7492452870505521647() throws Throwable {
-    Assert.assertEquals("Expected: " + TreePVector.<DateDeltaValue>empty().plus(DateDeltaValue.ofYears((BigInteger) (Number) new BigInteger("1"))) + ", but was: " + (PVector<DateDeltaValue>) TreePVector.<DateDeltaValue>from(((PCollection<DateDeltaValue>) TreePVector.<DateDeltaValue>empty().plus(DateDeltaValue.ofYears((BigInteger) (Number) new BigInteger("1")))).stream().filter(OH.predicate()).sorted(new Comparator<DateDeltaValue>() {
+    Assert.assertEquals("Expected: " + TreePVector.<DateDeltaValue>empty().plus(DateDeltaValue.ofYears(new BigInteger("1"))) + ", but was: " + TreePVector.<DateDeltaValue>from(TreePVector.<DateDeltaValue>empty().plus(DateDeltaValue.ofYears(new BigInteger("1"))).stream().filter(OH.predicate()).sorted(new Comparator<DateDeltaValue>() {
       public int compare(DateDeltaValue p0, DateDeltaValue p1) {
         return OH.compare(p1, p0);
       }
-    }).collect(Collectors.<DateDeltaValue>toList())), (Object) TreePVector.<DateDeltaValue>empty().plus(DateDeltaValue.ofYears((BigInteger) (Number) new BigInteger("1"))), (Object) (PVector<DateDeltaValue>) TreePVector.<DateDeltaValue>from(((PCollection<DateDeltaValue>) TreePVector.<DateDeltaValue>empty().plus(DateDeltaValue.ofYears((BigInteger) (Number) new BigInteger("1")))).stream().filter(OH.predicate()).sorted(new Comparator<DateDeltaValue>() {
+    }).collect(Collectors.<DateDeltaValue>toList())), TreePVector.<DateDeltaValue>empty().plus(DateDeltaValue.ofYears(new BigInteger("1"))), TreePVector.<DateDeltaValue>from(TreePVector.<DateDeltaValue>empty().plus(DateDeltaValue.ofYears(new BigInteger("1"))).stream().filter(OH.predicate()).sorted(new Comparator<DateDeltaValue>() {
       public int compare(DateDeltaValue p0, DateDeltaValue p1) {
         return OH.compare(p1, p0);
       }
@@ -1678,11 +1676,11 @@ public class Generated_date_Test {
   }
   @Test
   public void sorting_item83_7492452870505521653() throws Throwable {
-    Assert.assertEquals("Expected: " + TreePVector.<DateDeltaValue>empty().plus(DateDeltaValue.ofYears((BigInteger) (Number) new BigInteger("2"))).plus(DateDeltaValue.ofYears((BigInteger) (Number) new BigInteger("1"))) + ", but was: " + (PVector<DateDeltaValue>) TreePVector.<DateDeltaValue>from(((PCollection<DateDeltaValue>) TreePVector.<DateDeltaValue>empty().plus(DateDeltaValue.ofYears((BigInteger) (Number) new BigInteger("1"))).plus(DateDeltaValue.ofYears((BigInteger) (Number) new BigInteger("2")))).stream().filter(OH.predicate()).sorted(new Comparator<DateDeltaValue>() {
+    Assert.assertEquals("Expected: " + TreePVector.<DateDeltaValue>empty().plus(DateDeltaValue.ofYears(new BigInteger("2"))).plus(DateDeltaValue.ofYears(new BigInteger("1"))) + ", but was: " + TreePVector.<DateDeltaValue>from(TreePVector.<DateDeltaValue>empty().plus(DateDeltaValue.ofYears(new BigInteger("1"))).plus(DateDeltaValue.ofYears(new BigInteger("2"))).stream().filter(OH.predicate()).sorted(new Comparator<DateDeltaValue>() {
       public int compare(DateDeltaValue p0, DateDeltaValue p1) {
         return OH.compare(p1, p0);
       }
-    }).collect(Collectors.<DateDeltaValue>toList())), (Object) TreePVector.<DateDeltaValue>empty().plus(DateDeltaValue.ofYears((BigInteger) (Number) new BigInteger("2"))).plus(DateDeltaValue.ofYears((BigInteger) (Number) new BigInteger("1"))), (Object) (PVector<DateDeltaValue>) TreePVector.<DateDeltaValue>from(((PCollection<DateDeltaValue>) TreePVector.<DateDeltaValue>empty().plus(DateDeltaValue.ofYears((BigInteger) (Number) new BigInteger("1"))).plus(DateDeltaValue.ofYears((BigInteger) (Number) new BigInteger("2")))).stream().filter(OH.predicate()).sorted(new Comparator<DateDeltaValue>() {
+    }).collect(Collectors.<DateDeltaValue>toList())), TreePVector.<DateDeltaValue>empty().plus(DateDeltaValue.ofYears(new BigInteger("2"))).plus(DateDeltaValue.ofYears(new BigInteger("1"))), TreePVector.<DateDeltaValue>from(TreePVector.<DateDeltaValue>empty().plus(DateDeltaValue.ofYears(new BigInteger("1"))).plus(DateDeltaValue.ofYears(new BigInteger("2"))).stream().filter(OH.predicate()).sorted(new Comparator<DateDeltaValue>() {
       public int compare(DateDeltaValue p0, DateDeltaValue p1) {
         return OH.compare(p1, p0);
       }
@@ -1690,23 +1688,23 @@ public class Generated_date_Test {
   }
   @Test
   public void sorting_date0_7492452870505550074() throws Throwable {
-    Assert.assertEquals("Expected: " + TreePVector.<LocalDate>from(new ArrayList<LocalDate>()) + ", but was: " + TreePVector.<LocalDate>from(new ArrayList<LocalDate>()), (Object) TreePVector.<LocalDate>from(new ArrayList<LocalDate>()), (Object) TreePVector.<LocalDate>from(new ArrayList<LocalDate>()));
+    Assert.assertEquals("Expected: " + TreePVector.<LocalDate>from(new ArrayList<LocalDate>()) + ", but was: " + TreePVector.<LocalDate>from(new ArrayList<LocalDate>()), TreePVector.<LocalDate>from(new ArrayList<LocalDate>()), TreePVector.<LocalDate>from(new ArrayList<LocalDate>()));
   }
   @Test
   public void sorting_date1_7492452870505550083() throws Throwable {
-    Assert.assertEquals("Expected: " + TreePVector.<LocalDate>empty().plus(LocalDate.of(2017, 1, 1)) + ", but was: " + TreePVector.<LocalDate>empty().plus(LocalDate.of(2017, 1, 1)), (Object) TreePVector.<LocalDate>empty().plus(LocalDate.of(2017, 1, 1)), (Object) TreePVector.<LocalDate>empty().plus(LocalDate.of(2017, 1, 1)));
+    Assert.assertEquals("Expected: " + TreePVector.<LocalDate>empty().plus(LocalDate.of(2017, 1, 1)) + ", but was: " + TreePVector.<LocalDate>empty().plus(LocalDate.of(2017, 1, 1)), TreePVector.<LocalDate>empty().plus(LocalDate.of(2017, 1, 1)), TreePVector.<LocalDate>empty().plus(LocalDate.of(2017, 1, 1)));
   }
   @Test
   public void sorting_date2_7492452870505550092() throws Throwable {
-    Assert.assertEquals("Expected: " + TreePVector.<LocalDate>empty().plus(LocalDate.of(2017, 1, 1)).plus(LocalDate.of(2017, 2, 1)) + ", but was: " + TreePVector.<LocalDate>empty().plus(LocalDate.of(2017, 1, 1)).plus(LocalDate.of(2017, 2, 1)), (Object) TreePVector.<LocalDate>empty().plus(LocalDate.of(2017, 1, 1)).plus(LocalDate.of(2017, 2, 1)), (Object) TreePVector.<LocalDate>empty().plus(LocalDate.of(2017, 1, 1)).plus(LocalDate.of(2017, 2, 1)));
+    Assert.assertEquals("Expected: " + TreePVector.<LocalDate>empty().plus(LocalDate.of(2017, 1, 1)).plus(LocalDate.of(2017, 2, 1)) + ", but was: " + TreePVector.<LocalDate>empty().plus(LocalDate.of(2017, 1, 1)).plus(LocalDate.of(2017, 2, 1)), TreePVector.<LocalDate>empty().plus(LocalDate.of(2017, 1, 1)).plus(LocalDate.of(2017, 2, 1)), TreePVector.<LocalDate>empty().plus(LocalDate.of(2017, 1, 1)).plus(LocalDate.of(2017, 2, 1)));
   }
   @Test
   public void sorting_item89_7492452870505550106() throws Throwable {
-    Assert.assertEquals("Expected: " + TreePVector.<LocalDate>from(new ArrayList<LocalDate>()) + ", but was: " + (PVector<LocalDate>) TreePVector.<LocalDate>from(((PCollection<LocalDate>) TreePVector.<LocalDate>from(new ArrayList<LocalDate>())).stream().filter(OH.predicate()).sorted(new Comparator<LocalDate>() {
+    Assert.assertEquals("Expected: " + TreePVector.<LocalDate>from(new ArrayList<LocalDate>()) + ", but was: " + TreePVector.<LocalDate>from(TreePVector.<LocalDate>from(new ArrayList<LocalDate>()).stream().filter(OH.predicate()).sorted(new Comparator<LocalDate>() {
       public int compare(LocalDate p0, LocalDate p1) {
         return OH.compare(p0, p1);
       }
-    }).collect(Collectors.<LocalDate>toList())), (Object) TreePVector.<LocalDate>from(new ArrayList<LocalDate>()), (Object) (PVector<LocalDate>) TreePVector.<LocalDate>from(((PCollection<LocalDate>) TreePVector.<LocalDate>from(new ArrayList<LocalDate>())).stream().filter(OH.predicate()).sorted(new Comparator<LocalDate>() {
+    }).collect(Collectors.<LocalDate>toList())), TreePVector.<LocalDate>from(new ArrayList<LocalDate>()), TreePVector.<LocalDate>from(TreePVector.<LocalDate>from(new ArrayList<LocalDate>()).stream().filter(OH.predicate()).sorted(new Comparator<LocalDate>() {
       public int compare(LocalDate p0, LocalDate p1) {
         return OH.compare(p0, p1);
       }
@@ -1714,11 +1712,11 @@ public class Generated_date_Test {
   }
   @Test
   public void sorting_item90_7492452870505550112() throws Throwable {
-    Assert.assertEquals("Expected: " + TreePVector.<LocalDate>empty().plus(LocalDate.of(2017, 1, 1)) + ", but was: " + (PVector<LocalDate>) TreePVector.<LocalDate>from(((PCollection<LocalDate>) TreePVector.<LocalDate>empty().plus(LocalDate.of(2017, 1, 1))).stream().filter(OH.predicate()).sorted(new Comparator<LocalDate>() {
+    Assert.assertEquals("Expected: " + TreePVector.<LocalDate>empty().plus(LocalDate.of(2017, 1, 1)) + ", but was: " + TreePVector.<LocalDate>from(TreePVector.<LocalDate>empty().plus(LocalDate.of(2017, 1, 1)).stream().filter(OH.predicate()).sorted(new Comparator<LocalDate>() {
       public int compare(LocalDate p0, LocalDate p1) {
         return OH.compare(p0, p1);
       }
-    }).collect(Collectors.<LocalDate>toList())), (Object) TreePVector.<LocalDate>empty().plus(LocalDate.of(2017, 1, 1)), (Object) (PVector<LocalDate>) TreePVector.<LocalDate>from(((PCollection<LocalDate>) TreePVector.<LocalDate>empty().plus(LocalDate.of(2017, 1, 1))).stream().filter(OH.predicate()).sorted(new Comparator<LocalDate>() {
+    }).collect(Collectors.<LocalDate>toList())), TreePVector.<LocalDate>empty().plus(LocalDate.of(2017, 1, 1)), TreePVector.<LocalDate>from(TreePVector.<LocalDate>empty().plus(LocalDate.of(2017, 1, 1)).stream().filter(OH.predicate()).sorted(new Comparator<LocalDate>() {
       public int compare(LocalDate p0, LocalDate p1) {
         return OH.compare(p0, p1);
       }
@@ -1726,11 +1724,11 @@ public class Generated_date_Test {
   }
   @Test
   public void sorting_item91_7492452870505550118() throws Throwable {
-    Assert.assertEquals("Expected: " + TreePVector.<LocalDate>empty().plus(LocalDate.of(2017, 1, 1)).plus(LocalDate.of(2017, 2, 1)) + ", but was: " + (PVector<LocalDate>) TreePVector.<LocalDate>from(((PCollection<LocalDate>) TreePVector.<LocalDate>empty().plus(LocalDate.of(2017, 1, 1)).plus(LocalDate.of(2017, 2, 1))).stream().filter(OH.predicate()).sorted(new Comparator<LocalDate>() {
+    Assert.assertEquals("Expected: " + TreePVector.<LocalDate>empty().plus(LocalDate.of(2017, 1, 1)).plus(LocalDate.of(2017, 2, 1)) + ", but was: " + TreePVector.<LocalDate>from(TreePVector.<LocalDate>empty().plus(LocalDate.of(2017, 1, 1)).plus(LocalDate.of(2017, 2, 1)).stream().filter(OH.predicate()).sorted(new Comparator<LocalDate>() {
       public int compare(LocalDate p0, LocalDate p1) {
         return OH.compare(p0, p1);
       }
-    }).collect(Collectors.<LocalDate>toList())), (Object) TreePVector.<LocalDate>empty().plus(LocalDate.of(2017, 1, 1)).plus(LocalDate.of(2017, 2, 1)), (Object) (PVector<LocalDate>) TreePVector.<LocalDate>from(((PCollection<LocalDate>) TreePVector.<LocalDate>empty().plus(LocalDate.of(2017, 1, 1)).plus(LocalDate.of(2017, 2, 1))).stream().filter(OH.predicate()).sorted(new Comparator<LocalDate>() {
+    }).collect(Collectors.<LocalDate>toList())), TreePVector.<LocalDate>empty().plus(LocalDate.of(2017, 1, 1)).plus(LocalDate.of(2017, 2, 1)), TreePVector.<LocalDate>from(TreePVector.<LocalDate>empty().plus(LocalDate.of(2017, 1, 1)).plus(LocalDate.of(2017, 2, 1)).stream().filter(OH.predicate()).sorted(new Comparator<LocalDate>() {
       public int compare(LocalDate p0, LocalDate p1) {
         return OH.compare(p0, p1);
       }
@@ -1738,11 +1736,11 @@ public class Generated_date_Test {
   }
   @Test
   public void sorting_item93_7492452870505550125() throws Throwable {
-    Assert.assertEquals("Expected: " + TreePVector.<LocalDate>from(new ArrayList<LocalDate>()) + ", but was: " + (PVector<LocalDate>) TreePVector.<LocalDate>from(((PCollection<LocalDate>) TreePVector.<LocalDate>from(new ArrayList<LocalDate>())).stream().filter(OH.predicate()).sorted(new Comparator<LocalDate>() {
+    Assert.assertEquals("Expected: " + TreePVector.<LocalDate>from(new ArrayList<LocalDate>()) + ", but was: " + TreePVector.<LocalDate>from(TreePVector.<LocalDate>from(new ArrayList<LocalDate>()).stream().filter(OH.predicate()).sorted(new Comparator<LocalDate>() {
       public int compare(LocalDate p0, LocalDate p1) {
         return OH.compare(p1, p0);
       }
-    }).collect(Collectors.<LocalDate>toList())), (Object) TreePVector.<LocalDate>from(new ArrayList<LocalDate>()), (Object) (PVector<LocalDate>) TreePVector.<LocalDate>from(((PCollection<LocalDate>) TreePVector.<LocalDate>from(new ArrayList<LocalDate>())).stream().filter(OH.predicate()).sorted(new Comparator<LocalDate>() {
+    }).collect(Collectors.<LocalDate>toList())), TreePVector.<LocalDate>from(new ArrayList<LocalDate>()), TreePVector.<LocalDate>from(TreePVector.<LocalDate>from(new ArrayList<LocalDate>()).stream().filter(OH.predicate()).sorted(new Comparator<LocalDate>() {
       public int compare(LocalDate p0, LocalDate p1) {
         return OH.compare(p1, p0);
       }
@@ -1750,11 +1748,11 @@ public class Generated_date_Test {
   }
   @Test
   public void sorting_item94_7492452870505550131() throws Throwable {
-    Assert.assertEquals("Expected: " + TreePVector.<LocalDate>empty().plus(LocalDate.of(2017, 1, 1)) + ", but was: " + (PVector<LocalDate>) TreePVector.<LocalDate>from(((PCollection<LocalDate>) TreePVector.<LocalDate>empty().plus(LocalDate.of(2017, 1, 1))).stream().filter(OH.predicate()).sorted(new Comparator<LocalDate>() {
+    Assert.assertEquals("Expected: " + TreePVector.<LocalDate>empty().plus(LocalDate.of(2017, 1, 1)) + ", but was: " + TreePVector.<LocalDate>from(TreePVector.<LocalDate>empty().plus(LocalDate.of(2017, 1, 1)).stream().filter(OH.predicate()).sorted(new Comparator<LocalDate>() {
       public int compare(LocalDate p0, LocalDate p1) {
         return OH.compare(p1, p0);
       }
-    }).collect(Collectors.<LocalDate>toList())), (Object) TreePVector.<LocalDate>empty().plus(LocalDate.of(2017, 1, 1)), (Object) (PVector<LocalDate>) TreePVector.<LocalDate>from(((PCollection<LocalDate>) TreePVector.<LocalDate>empty().plus(LocalDate.of(2017, 1, 1))).stream().filter(OH.predicate()).sorted(new Comparator<LocalDate>() {
+    }).collect(Collectors.<LocalDate>toList())), TreePVector.<LocalDate>empty().plus(LocalDate.of(2017, 1, 1)), TreePVector.<LocalDate>from(TreePVector.<LocalDate>empty().plus(LocalDate.of(2017, 1, 1)).stream().filter(OH.predicate()).sorted(new Comparator<LocalDate>() {
       public int compare(LocalDate p0, LocalDate p1) {
         return OH.compare(p1, p0);
       }
@@ -1762,11 +1760,11 @@ public class Generated_date_Test {
   }
   @Test
   public void sorting_item95_7492452870505550137() throws Throwable {
-    Assert.assertEquals("Expected: " + TreePVector.<LocalDate>empty().plus(LocalDate.of(2017, 2, 1)).plus(LocalDate.of(2017, 1, 1)) + ", but was: " + (PVector<LocalDate>) TreePVector.<LocalDate>from(((PCollection<LocalDate>) TreePVector.<LocalDate>empty().plus(LocalDate.of(2017, 1, 1)).plus(LocalDate.of(2017, 2, 1))).stream().filter(OH.predicate()).sorted(new Comparator<LocalDate>() {
+    Assert.assertEquals("Expected: " + TreePVector.<LocalDate>empty().plus(LocalDate.of(2017, 2, 1)).plus(LocalDate.of(2017, 1, 1)) + ", but was: " + TreePVector.<LocalDate>from(TreePVector.<LocalDate>empty().plus(LocalDate.of(2017, 1, 1)).plus(LocalDate.of(2017, 2, 1)).stream().filter(OH.predicate()).sorted(new Comparator<LocalDate>() {
       public int compare(LocalDate p0, LocalDate p1) {
         return OH.compare(p1, p0);
       }
-    }).collect(Collectors.<LocalDate>toList())), (Object) TreePVector.<LocalDate>empty().plus(LocalDate.of(2017, 2, 1)).plus(LocalDate.of(2017, 1, 1)), (Object) (PVector<LocalDate>) TreePVector.<LocalDate>from(((PCollection<LocalDate>) TreePVector.<LocalDate>empty().plus(LocalDate.of(2017, 1, 1)).plus(LocalDate.of(2017, 2, 1))).stream().filter(OH.predicate()).sorted(new Comparator<LocalDate>() {
+    }).collect(Collectors.<LocalDate>toList())), TreePVector.<LocalDate>empty().plus(LocalDate.of(2017, 2, 1)).plus(LocalDate.of(2017, 1, 1)), TreePVector.<LocalDate>from(TreePVector.<LocalDate>empty().plus(LocalDate.of(2017, 1, 1)).plus(LocalDate.of(2017, 2, 1)).stream().filter(OH.predicate()).sorted(new Comparator<LocalDate>() {
       public int compare(LocalDate p0, LocalDate p1) {
         return OH.compare(p1, p0);
       }
@@ -1774,23 +1772,23 @@ public class Generated_date_Test {
   }
   @Test
   public void sorting_months0_7492452870505644195() throws Throwable {
-    Assert.assertEquals("Expected: " + TreePVector.<DateDeltaValue>from(new ArrayList<DateDeltaValue>()) + ", but was: " + TreePVector.<DateDeltaValue>from(new ArrayList<DateDeltaValue>()), (Object) TreePVector.<DateDeltaValue>from(new ArrayList<DateDeltaValue>()), (Object) TreePVector.<DateDeltaValue>from(new ArrayList<DateDeltaValue>()));
+    Assert.assertEquals("Expected: " + TreePVector.<DateDeltaValue>from(new ArrayList<DateDeltaValue>()) + ", but was: " + TreePVector.<DateDeltaValue>from(new ArrayList<DateDeltaValue>()), TreePVector.<DateDeltaValue>from(new ArrayList<DateDeltaValue>()), TreePVector.<DateDeltaValue>from(new ArrayList<DateDeltaValue>()));
   }
   @Test
   public void sorting_months1_7492452870505644204() throws Throwable {
-    Assert.assertEquals("Expected: " + TreePVector.<DiscreteDateRangeValue>empty().plus(DiscreteDateRangeValue.month(2017, 1)) + ", but was: " + TreePVector.<DiscreteDateRangeValue>empty().plus(DiscreteDateRangeValue.month(2017, 1)), (Object) TreePVector.<DiscreteDateRangeValue>empty().plus(DiscreteDateRangeValue.month(2017, 1)), (Object) TreePVector.<DiscreteDateRangeValue>empty().plus(DiscreteDateRangeValue.month(2017, 1)));
+    Assert.assertEquals("Expected: " + TreePVector.<DiscreteDateRangeValue>empty().plus(DiscreteDateRangeValue.month(2017, 1)) + ", but was: " + TreePVector.<DiscreteDateRangeValue>empty().plus(DiscreteDateRangeValue.month(2017, 1)), TreePVector.<DiscreteDateRangeValue>empty().plus(DiscreteDateRangeValue.month(2017, 1)), TreePVector.<DiscreteDateRangeValue>empty().plus(DiscreteDateRangeValue.month(2017, 1)));
   }
   @Test
   public void sorting_months2_7492452870505644211() throws Throwable {
-    Assert.assertEquals("Expected: " + TreePVector.<DiscreteDateRangeValue>empty().plus(DiscreteDateRangeValue.month(2017, 1)).plus(DiscreteDateRangeValue.month(2017, 2)) + ", but was: " + TreePVector.<DiscreteDateRangeValue>empty().plus(DiscreteDateRangeValue.month(2017, 1)).plus(DiscreteDateRangeValue.month(2017, 2)), (Object) TreePVector.<DiscreteDateRangeValue>empty().plus(DiscreteDateRangeValue.month(2017, 1)).plus(DiscreteDateRangeValue.month(2017, 2)), (Object) TreePVector.<DiscreteDateRangeValue>empty().plus(DiscreteDateRangeValue.month(2017, 1)).plus(DiscreteDateRangeValue.month(2017, 2)));
+    Assert.assertEquals("Expected: " + TreePVector.<DiscreteDateRangeValue>empty().plus(DiscreteDateRangeValue.month(2017, 1)).plus(DiscreteDateRangeValue.month(2017, 2)) + ", but was: " + TreePVector.<DiscreteDateRangeValue>empty().plus(DiscreteDateRangeValue.month(2017, 1)).plus(DiscreteDateRangeValue.month(2017, 2)), TreePVector.<DiscreteDateRangeValue>empty().plus(DiscreteDateRangeValue.month(2017, 1)).plus(DiscreteDateRangeValue.month(2017, 2)), TreePVector.<DiscreteDateRangeValue>empty().plus(DiscreteDateRangeValue.month(2017, 1)).plus(DiscreteDateRangeValue.month(2017, 2)));
   }
   @Test
   public void sorting_item101_7492452870505644221() throws Throwable {
-    Assert.assertEquals("Expected: " + TreePVector.<DateDeltaValue>from(new ArrayList<DateDeltaValue>()) + ", but was: " + (PVector<DateDeltaValue>) TreePVector.<DateDeltaValue>from(((PCollection<DateDeltaValue>) TreePVector.<DateDeltaValue>from(new ArrayList<DateDeltaValue>())).stream().filter(OH.predicate()).sorted(new Comparator<DateDeltaValue>() {
+    Assert.assertEquals("Expected: " + TreePVector.<DateDeltaValue>from(new ArrayList<DateDeltaValue>()) + ", but was: " + TreePVector.<DateDeltaValue>from(TreePVector.<DateDeltaValue>from(new ArrayList<DateDeltaValue>()).stream().filter(OH.predicate()).sorted(new Comparator<DateDeltaValue>() {
       public int compare(DateDeltaValue p0, DateDeltaValue p1) {
         return OH.compare(p0, p1);
       }
-    }).collect(Collectors.<DateDeltaValue>toList())), (Object) TreePVector.<DateDeltaValue>from(new ArrayList<DateDeltaValue>()), (Object) (PVector<DateDeltaValue>) TreePVector.<DateDeltaValue>from(((PCollection<DateDeltaValue>) TreePVector.<DateDeltaValue>from(new ArrayList<DateDeltaValue>())).stream().filter(OH.predicate()).sorted(new Comparator<DateDeltaValue>() {
+    }).collect(Collectors.<DateDeltaValue>toList())), TreePVector.<DateDeltaValue>from(new ArrayList<DateDeltaValue>()), TreePVector.<DateDeltaValue>from(TreePVector.<DateDeltaValue>from(new ArrayList<DateDeltaValue>()).stream().filter(OH.predicate()).sorted(new Comparator<DateDeltaValue>() {
       public int compare(DateDeltaValue p0, DateDeltaValue p1) {
         return OH.compare(p0, p1);
       }
@@ -1798,11 +1796,11 @@ public class Generated_date_Test {
   }
   @Test
   public void sorting_item102_7492452870505644227() throws Throwable {
-    Assert.assertEquals("Expected: " + TreePVector.<DiscreteDateRangeValue>empty().plus(DiscreteDateRangeValue.month(2017, 1)) + ", but was: " + (PVector<DiscreteDateRangeValue>) TreePVector.<DiscreteDateRangeValue>from(((PCollection<DiscreteDateRangeValue>) TreePVector.<DiscreteDateRangeValue>empty().plus(DiscreteDateRangeValue.month(2017, 1))).stream().filter(OH.predicate()).sorted(new Comparator<DiscreteDateRangeValue>() {
+    Assert.assertEquals("Expected: " + TreePVector.<DiscreteDateRangeValue>empty().plus(DiscreteDateRangeValue.month(2017, 1)) + ", but was: " + TreePVector.<DiscreteDateRangeValue>from(TreePVector.<DiscreteDateRangeValue>empty().plus(DiscreteDateRangeValue.month(2017, 1)).stream().filter(OH.predicate()).sorted(new Comparator<DiscreteDateRangeValue>() {
       public int compare(DiscreteDateRangeValue p0, DiscreteDateRangeValue p1) {
         return OH.compare(p0, p1);
       }
-    }).collect(Collectors.<DiscreteDateRangeValue>toList())), (Object) TreePVector.<DiscreteDateRangeValue>empty().plus(DiscreteDateRangeValue.month(2017, 1)), (Object) (PVector<DiscreteDateRangeValue>) TreePVector.<DiscreteDateRangeValue>from(((PCollection<DiscreteDateRangeValue>) TreePVector.<DiscreteDateRangeValue>empty().plus(DiscreteDateRangeValue.month(2017, 1))).stream().filter(OH.predicate()).sorted(new Comparator<DiscreteDateRangeValue>() {
+    }).collect(Collectors.<DiscreteDateRangeValue>toList())), TreePVector.<DiscreteDateRangeValue>empty().plus(DiscreteDateRangeValue.month(2017, 1)), TreePVector.<DiscreteDateRangeValue>from(TreePVector.<DiscreteDateRangeValue>empty().plus(DiscreteDateRangeValue.month(2017, 1)).stream().filter(OH.predicate()).sorted(new Comparator<DiscreteDateRangeValue>() {
       public int compare(DiscreteDateRangeValue p0, DiscreteDateRangeValue p1) {
         return OH.compare(p0, p1);
       }
@@ -1810,11 +1808,11 @@ public class Generated_date_Test {
   }
   @Test
   public void sorting_item103_7492452870505644233() throws Throwable {
-    Assert.assertEquals("Expected: " + TreePVector.<DiscreteDateRangeValue>empty().plus(DiscreteDateRangeValue.month(2017, 1)).plus(DiscreteDateRangeValue.month(2017, 2)) + ", but was: " + (PVector<DiscreteDateRangeValue>) TreePVector.<DiscreteDateRangeValue>from(((PCollection<DiscreteDateRangeValue>) TreePVector.<DiscreteDateRangeValue>empty().plus(DiscreteDateRangeValue.month(2017, 1)).plus(DiscreteDateRangeValue.month(2017, 2))).stream().filter(OH.predicate()).sorted(new Comparator<DiscreteDateRangeValue>() {
+    Assert.assertEquals("Expected: " + TreePVector.<DiscreteDateRangeValue>empty().plus(DiscreteDateRangeValue.month(2017, 1)).plus(DiscreteDateRangeValue.month(2017, 2)) + ", but was: " + TreePVector.<DiscreteDateRangeValue>from(TreePVector.<DiscreteDateRangeValue>empty().plus(DiscreteDateRangeValue.month(2017, 1)).plus(DiscreteDateRangeValue.month(2017, 2)).stream().filter(OH.predicate()).sorted(new Comparator<DiscreteDateRangeValue>() {
       public int compare(DiscreteDateRangeValue p0, DiscreteDateRangeValue p1) {
         return OH.compare(p0, p1);
       }
-    }).collect(Collectors.<DiscreteDateRangeValue>toList())), (Object) TreePVector.<DiscreteDateRangeValue>empty().plus(DiscreteDateRangeValue.month(2017, 1)).plus(DiscreteDateRangeValue.month(2017, 2)), (Object) (PVector<DiscreteDateRangeValue>) TreePVector.<DiscreteDateRangeValue>from(((PCollection<DiscreteDateRangeValue>) TreePVector.<DiscreteDateRangeValue>empty().plus(DiscreteDateRangeValue.month(2017, 1)).plus(DiscreteDateRangeValue.month(2017, 2))).stream().filter(OH.predicate()).sorted(new Comparator<DiscreteDateRangeValue>() {
+    }).collect(Collectors.<DiscreteDateRangeValue>toList())), TreePVector.<DiscreteDateRangeValue>empty().plus(DiscreteDateRangeValue.month(2017, 1)).plus(DiscreteDateRangeValue.month(2017, 2)), TreePVector.<DiscreteDateRangeValue>from(TreePVector.<DiscreteDateRangeValue>empty().plus(DiscreteDateRangeValue.month(2017, 1)).plus(DiscreteDateRangeValue.month(2017, 2)).stream().filter(OH.predicate()).sorted(new Comparator<DiscreteDateRangeValue>() {
       public int compare(DiscreteDateRangeValue p0, DiscreteDateRangeValue p1) {
         return OH.compare(p0, p1);
       }
@@ -1822,11 +1820,11 @@ public class Generated_date_Test {
   }
   @Test
   public void sorting_item105_7492452870505644240() throws Throwable {
-    Assert.assertEquals("Expected: " + TreePVector.<DateDeltaValue>from(new ArrayList<DateDeltaValue>()) + ", but was: " + (PVector<DateDeltaValue>) TreePVector.<DateDeltaValue>from(((PCollection<DateDeltaValue>) TreePVector.<DateDeltaValue>from(new ArrayList<DateDeltaValue>())).stream().filter(OH.predicate()).sorted(new Comparator<DateDeltaValue>() {
+    Assert.assertEquals("Expected: " + TreePVector.<DateDeltaValue>from(new ArrayList<DateDeltaValue>()) + ", but was: " + TreePVector.<DateDeltaValue>from(TreePVector.<DateDeltaValue>from(new ArrayList<DateDeltaValue>()).stream().filter(OH.predicate()).sorted(new Comparator<DateDeltaValue>() {
       public int compare(DateDeltaValue p0, DateDeltaValue p1) {
         return OH.compare(p1, p0);
       }
-    }).collect(Collectors.<DateDeltaValue>toList())), (Object) TreePVector.<DateDeltaValue>from(new ArrayList<DateDeltaValue>()), (Object) (PVector<DateDeltaValue>) TreePVector.<DateDeltaValue>from(((PCollection<DateDeltaValue>) TreePVector.<DateDeltaValue>from(new ArrayList<DateDeltaValue>())).stream().filter(OH.predicate()).sorted(new Comparator<DateDeltaValue>() {
+    }).collect(Collectors.<DateDeltaValue>toList())), TreePVector.<DateDeltaValue>from(new ArrayList<DateDeltaValue>()), TreePVector.<DateDeltaValue>from(TreePVector.<DateDeltaValue>from(new ArrayList<DateDeltaValue>()).stream().filter(OH.predicate()).sorted(new Comparator<DateDeltaValue>() {
       public int compare(DateDeltaValue p0, DateDeltaValue p1) {
         return OH.compare(p1, p0);
       }
@@ -1834,11 +1832,11 @@ public class Generated_date_Test {
   }
   @Test
   public void sorting_item106_7492452870505644246() throws Throwable {
-    Assert.assertEquals("Expected: " + TreePVector.<DiscreteDateRangeValue>empty().plus(DiscreteDateRangeValue.month(2017, 1)) + ", but was: " + (PVector<DiscreteDateRangeValue>) TreePVector.<DiscreteDateRangeValue>from(((PCollection<DiscreteDateRangeValue>) TreePVector.<DiscreteDateRangeValue>empty().plus(DiscreteDateRangeValue.month(2017, 1))).stream().filter(OH.predicate()).sorted(new Comparator<DiscreteDateRangeValue>() {
+    Assert.assertEquals("Expected: " + TreePVector.<DiscreteDateRangeValue>empty().plus(DiscreteDateRangeValue.month(2017, 1)) + ", but was: " + TreePVector.<DiscreteDateRangeValue>from(TreePVector.<DiscreteDateRangeValue>empty().plus(DiscreteDateRangeValue.month(2017, 1)).stream().filter(OH.predicate()).sorted(new Comparator<DiscreteDateRangeValue>() {
       public int compare(DiscreteDateRangeValue p0, DiscreteDateRangeValue p1) {
         return OH.compare(p1, p0);
       }
-    }).collect(Collectors.<DiscreteDateRangeValue>toList())), (Object) TreePVector.<DiscreteDateRangeValue>empty().plus(DiscreteDateRangeValue.month(2017, 1)), (Object) (PVector<DiscreteDateRangeValue>) TreePVector.<DiscreteDateRangeValue>from(((PCollection<DiscreteDateRangeValue>) TreePVector.<DiscreteDateRangeValue>empty().plus(DiscreteDateRangeValue.month(2017, 1))).stream().filter(OH.predicate()).sorted(new Comparator<DiscreteDateRangeValue>() {
+    }).collect(Collectors.<DiscreteDateRangeValue>toList())), TreePVector.<DiscreteDateRangeValue>empty().plus(DiscreteDateRangeValue.month(2017, 1)), TreePVector.<DiscreteDateRangeValue>from(TreePVector.<DiscreteDateRangeValue>empty().plus(DiscreteDateRangeValue.month(2017, 1)).stream().filter(OH.predicate()).sorted(new Comparator<DiscreteDateRangeValue>() {
       public int compare(DiscreteDateRangeValue p0, DiscreteDateRangeValue p1) {
         return OH.compare(p1, p0);
       }
@@ -1846,11 +1844,11 @@ public class Generated_date_Test {
   }
   @Test
   public void sorting_item107_7492452870505644252() throws Throwable {
-    Assert.assertEquals("Expected: " + TreePVector.<DiscreteDateRangeValue>empty().plus(DiscreteDateRangeValue.month(2017, 2)).plus(DiscreteDateRangeValue.month(2017, 1)) + ", but was: " + (PVector<DiscreteDateRangeValue>) TreePVector.<DiscreteDateRangeValue>from(((PCollection<DiscreteDateRangeValue>) TreePVector.<DiscreteDateRangeValue>empty().plus(DiscreteDateRangeValue.month(2017, 1)).plus(DiscreteDateRangeValue.month(2017, 2))).stream().filter(OH.predicate()).sorted(new Comparator<DiscreteDateRangeValue>() {
+    Assert.assertEquals("Expected: " + TreePVector.<DiscreteDateRangeValue>empty().plus(DiscreteDateRangeValue.month(2017, 2)).plus(DiscreteDateRangeValue.month(2017, 1)) + ", but was: " + TreePVector.<DiscreteDateRangeValue>from(TreePVector.<DiscreteDateRangeValue>empty().plus(DiscreteDateRangeValue.month(2017, 1)).plus(DiscreteDateRangeValue.month(2017, 2)).stream().filter(OH.predicate()).sorted(new Comparator<DiscreteDateRangeValue>() {
       public int compare(DiscreteDateRangeValue p0, DiscreteDateRangeValue p1) {
         return OH.compare(p1, p0);
       }
-    }).collect(Collectors.<DiscreteDateRangeValue>toList())), (Object) TreePVector.<DiscreteDateRangeValue>empty().plus(DiscreteDateRangeValue.month(2017, 2)).plus(DiscreteDateRangeValue.month(2017, 1)), (Object) (PVector<DiscreteDateRangeValue>) TreePVector.<DiscreteDateRangeValue>from(((PCollection<DiscreteDateRangeValue>) TreePVector.<DiscreteDateRangeValue>empty().plus(DiscreteDateRangeValue.month(2017, 1)).plus(DiscreteDateRangeValue.month(2017, 2))).stream().filter(OH.predicate()).sorted(new Comparator<DiscreteDateRangeValue>() {
+    }).collect(Collectors.<DiscreteDateRangeValue>toList())), TreePVector.<DiscreteDateRangeValue>empty().plus(DiscreteDateRangeValue.month(2017, 2)).plus(DiscreteDateRangeValue.month(2017, 1)), TreePVector.<DiscreteDateRangeValue>from(TreePVector.<DiscreteDateRangeValue>empty().plus(DiscreteDateRangeValue.month(2017, 1)).plus(DiscreteDateRangeValue.month(2017, 2)).stream().filter(OH.predicate()).sorted(new Comparator<DiscreteDateRangeValue>() {
       public int compare(DiscreteDateRangeValue p0, DiscreteDateRangeValue p1) {
         return OH.compare(p1, p0);
       }
@@ -1858,23 +1856,23 @@ public class Generated_date_Test {
   }
   @Test
   public void sorting_years0_7492452870505658865() throws Throwable {
-    Assert.assertEquals("Expected: " + TreePVector.<DateDeltaValue>from(new ArrayList<DateDeltaValue>()) + ", but was: " + TreePVector.<DateDeltaValue>from(new ArrayList<DateDeltaValue>()), (Object) TreePVector.<DateDeltaValue>from(new ArrayList<DateDeltaValue>()), (Object) TreePVector.<DateDeltaValue>from(new ArrayList<DateDeltaValue>()));
+    Assert.assertEquals("Expected: " + TreePVector.<DateDeltaValue>from(new ArrayList<DateDeltaValue>()) + ", but was: " + TreePVector.<DateDeltaValue>from(new ArrayList<DateDeltaValue>()), TreePVector.<DateDeltaValue>from(new ArrayList<DateDeltaValue>()), TreePVector.<DateDeltaValue>from(new ArrayList<DateDeltaValue>()));
   }
   @Test
   public void sorting_years1_7492452870505658874() throws Throwable {
-    Assert.assertEquals("Expected: " + TreePVector.<DiscreteDateRangeValue>empty().plus(DiscreteDateRangeValue.year(((BigInteger) (Number) new BigInteger("2017")).intValue())) + ", but was: " + TreePVector.<DiscreteDateRangeValue>empty().plus(DiscreteDateRangeValue.year(((BigInteger) (Number) new BigInteger("2017")).intValue())), (Object) TreePVector.<DiscreteDateRangeValue>empty().plus(DiscreteDateRangeValue.year(((BigInteger) (Number) new BigInteger("2017")).intValue())), (Object) TreePVector.<DiscreteDateRangeValue>empty().plus(DiscreteDateRangeValue.year(((BigInteger) (Number) new BigInteger("2017")).intValue())));
+    Assert.assertEquals("Expected: " + TreePVector.<DiscreteDateRangeValue>empty().plus(DiscreteDateRangeValue.year(new BigInteger("2017").intValue())) + ", but was: " + TreePVector.<DiscreteDateRangeValue>empty().plus(DiscreteDateRangeValue.year(new BigInteger("2017").intValue())), TreePVector.<DiscreteDateRangeValue>empty().plus(DiscreteDateRangeValue.year(new BigInteger("2017").intValue())), TreePVector.<DiscreteDateRangeValue>empty().plus(DiscreteDateRangeValue.year(new BigInteger("2017").intValue())));
   }
   @Test
   public void sorting_years2_7492452870505658885() throws Throwable {
-    Assert.assertEquals("Expected: " + TreePVector.<DiscreteDateRangeValue>empty().plus(DiscreteDateRangeValue.year(((BigInteger) (Number) new BigInteger("2017")).intValue())).plus(DiscreteDateRangeValue.year(((BigInteger) (Number) new BigInteger("2018")).intValue())) + ", but was: " + TreePVector.<DiscreteDateRangeValue>empty().plus(DiscreteDateRangeValue.year(((BigInteger) (Number) new BigInteger("2017")).intValue())).plus(DiscreteDateRangeValue.year(((BigInteger) (Number) new BigInteger("2018")).intValue())), (Object) TreePVector.<DiscreteDateRangeValue>empty().plus(DiscreteDateRangeValue.year(((BigInteger) (Number) new BigInteger("2017")).intValue())).plus(DiscreteDateRangeValue.year(((BigInteger) (Number) new BigInteger("2018")).intValue())), (Object) TreePVector.<DiscreteDateRangeValue>empty().plus(DiscreteDateRangeValue.year(((BigInteger) (Number) new BigInteger("2017")).intValue())).plus(DiscreteDateRangeValue.year(((BigInteger) (Number) new BigInteger("2018")).intValue())));
+    Assert.assertEquals("Expected: " + TreePVector.<DiscreteDateRangeValue>empty().plus(DiscreteDateRangeValue.year(new BigInteger("2017").intValue())).plus(DiscreteDateRangeValue.year(new BigInteger("2018").intValue())) + ", but was: " + TreePVector.<DiscreteDateRangeValue>empty().plus(DiscreteDateRangeValue.year(new BigInteger("2017").intValue())).plus(DiscreteDateRangeValue.year(new BigInteger("2018").intValue())), TreePVector.<DiscreteDateRangeValue>empty().plus(DiscreteDateRangeValue.year(new BigInteger("2017").intValue())).plus(DiscreteDateRangeValue.year(new BigInteger("2018").intValue())), TreePVector.<DiscreteDateRangeValue>empty().plus(DiscreteDateRangeValue.year(new BigInteger("2017").intValue())).plus(DiscreteDateRangeValue.year(new BigInteger("2018").intValue())));
   }
   @Test
   public void sorting_item113_7492452870505658903() throws Throwable {
-    Assert.assertEquals("Expected: " + TreePVector.<DateDeltaValue>from(new ArrayList<DateDeltaValue>()) + ", but was: " + (PVector<DateDeltaValue>) TreePVector.<DateDeltaValue>from(((PCollection<DateDeltaValue>) TreePVector.<DateDeltaValue>from(new ArrayList<DateDeltaValue>())).stream().filter(OH.predicate()).sorted(new Comparator<DateDeltaValue>() {
+    Assert.assertEquals("Expected: " + TreePVector.<DateDeltaValue>from(new ArrayList<DateDeltaValue>()) + ", but was: " + TreePVector.<DateDeltaValue>from(TreePVector.<DateDeltaValue>from(new ArrayList<DateDeltaValue>()).stream().filter(OH.predicate()).sorted(new Comparator<DateDeltaValue>() {
       public int compare(DateDeltaValue p0, DateDeltaValue p1) {
         return OH.compare(p0, p1);
       }
-    }).collect(Collectors.<DateDeltaValue>toList())), (Object) TreePVector.<DateDeltaValue>from(new ArrayList<DateDeltaValue>()), (Object) (PVector<DateDeltaValue>) TreePVector.<DateDeltaValue>from(((PCollection<DateDeltaValue>) TreePVector.<DateDeltaValue>from(new ArrayList<DateDeltaValue>())).stream().filter(OH.predicate()).sorted(new Comparator<DateDeltaValue>() {
+    }).collect(Collectors.<DateDeltaValue>toList())), TreePVector.<DateDeltaValue>from(new ArrayList<DateDeltaValue>()), TreePVector.<DateDeltaValue>from(TreePVector.<DateDeltaValue>from(new ArrayList<DateDeltaValue>()).stream().filter(OH.predicate()).sorted(new Comparator<DateDeltaValue>() {
       public int compare(DateDeltaValue p0, DateDeltaValue p1) {
         return OH.compare(p0, p1);
       }
@@ -1882,11 +1880,11 @@ public class Generated_date_Test {
   }
   @Test
   public void sorting_item114_7492452870505658909() throws Throwable {
-    Assert.assertEquals("Expected: " + TreePVector.<DiscreteDateRangeValue>empty().plus(DiscreteDateRangeValue.year(((BigInteger) (Number) new BigInteger("2017")).intValue())) + ", but was: " + (PVector<DiscreteDateRangeValue>) TreePVector.<DiscreteDateRangeValue>from(((PCollection<DiscreteDateRangeValue>) TreePVector.<DiscreteDateRangeValue>empty().plus(DiscreteDateRangeValue.year(((BigInteger) (Number) new BigInteger("2017")).intValue()))).stream().filter(OH.predicate()).sorted(new Comparator<DiscreteDateRangeValue>() {
+    Assert.assertEquals("Expected: " + TreePVector.<DiscreteDateRangeValue>empty().plus(DiscreteDateRangeValue.year(new BigInteger("2017").intValue())) + ", but was: " + TreePVector.<DiscreteDateRangeValue>from(TreePVector.<DiscreteDateRangeValue>empty().plus(DiscreteDateRangeValue.year(new BigInteger("2017").intValue())).stream().filter(OH.predicate()).sorted(new Comparator<DiscreteDateRangeValue>() {
       public int compare(DiscreteDateRangeValue p0, DiscreteDateRangeValue p1) {
         return OH.compare(p0, p1);
       }
-    }).collect(Collectors.<DiscreteDateRangeValue>toList())), (Object) TreePVector.<DiscreteDateRangeValue>empty().plus(DiscreteDateRangeValue.year(((BigInteger) (Number) new BigInteger("2017")).intValue())), (Object) (PVector<DiscreteDateRangeValue>) TreePVector.<DiscreteDateRangeValue>from(((PCollection<DiscreteDateRangeValue>) TreePVector.<DiscreteDateRangeValue>empty().plus(DiscreteDateRangeValue.year(((BigInteger) (Number) new BigInteger("2017")).intValue()))).stream().filter(OH.predicate()).sorted(new Comparator<DiscreteDateRangeValue>() {
+    }).collect(Collectors.<DiscreteDateRangeValue>toList())), TreePVector.<DiscreteDateRangeValue>empty().plus(DiscreteDateRangeValue.year(new BigInteger("2017").intValue())), TreePVector.<DiscreteDateRangeValue>from(TreePVector.<DiscreteDateRangeValue>empty().plus(DiscreteDateRangeValue.year(new BigInteger("2017").intValue())).stream().filter(OH.predicate()).sorted(new Comparator<DiscreteDateRangeValue>() {
       public int compare(DiscreteDateRangeValue p0, DiscreteDateRangeValue p1) {
         return OH.compare(p0, p1);
       }
@@ -1894,11 +1892,11 @@ public class Generated_date_Test {
   }
   @Test
   public void sorting_item115_7492452870505658915() throws Throwable {
-    Assert.assertEquals("Expected: " + TreePVector.<DiscreteDateRangeValue>empty().plus(DiscreteDateRangeValue.year(((BigInteger) (Number) new BigInteger("2017")).intValue())).plus(DiscreteDateRangeValue.year(((BigInteger) (Number) new BigInteger("2018")).intValue())) + ", but was: " + (PVector<DiscreteDateRangeValue>) TreePVector.<DiscreteDateRangeValue>from(((PCollection<DiscreteDateRangeValue>) TreePVector.<DiscreteDateRangeValue>empty().plus(DiscreteDateRangeValue.year(((BigInteger) (Number) new BigInteger("2017")).intValue())).plus(DiscreteDateRangeValue.year(((BigInteger) (Number) new BigInteger("2018")).intValue()))).stream().filter(OH.predicate()).sorted(new Comparator<DiscreteDateRangeValue>() {
+    Assert.assertEquals("Expected: " + TreePVector.<DiscreteDateRangeValue>empty().plus(DiscreteDateRangeValue.year(new BigInteger("2017").intValue())).plus(DiscreteDateRangeValue.year(new BigInteger("2018").intValue())) + ", but was: " + TreePVector.<DiscreteDateRangeValue>from(TreePVector.<DiscreteDateRangeValue>empty().plus(DiscreteDateRangeValue.year(new BigInteger("2017").intValue())).plus(DiscreteDateRangeValue.year(new BigInteger("2018").intValue())).stream().filter(OH.predicate()).sorted(new Comparator<DiscreteDateRangeValue>() {
       public int compare(DiscreteDateRangeValue p0, DiscreteDateRangeValue p1) {
         return OH.compare(p0, p1);
       }
-    }).collect(Collectors.<DiscreteDateRangeValue>toList())), (Object) TreePVector.<DiscreteDateRangeValue>empty().plus(DiscreteDateRangeValue.year(((BigInteger) (Number) new BigInteger("2017")).intValue())).plus(DiscreteDateRangeValue.year(((BigInteger) (Number) new BigInteger("2018")).intValue())), (Object) (PVector<DiscreteDateRangeValue>) TreePVector.<DiscreteDateRangeValue>from(((PCollection<DiscreteDateRangeValue>) TreePVector.<DiscreteDateRangeValue>empty().plus(DiscreteDateRangeValue.year(((BigInteger) (Number) new BigInteger("2017")).intValue())).plus(DiscreteDateRangeValue.year(((BigInteger) (Number) new BigInteger("2018")).intValue()))).stream().filter(OH.predicate()).sorted(new Comparator<DiscreteDateRangeValue>() {
+    }).collect(Collectors.<DiscreteDateRangeValue>toList())), TreePVector.<DiscreteDateRangeValue>empty().plus(DiscreteDateRangeValue.year(new BigInteger("2017").intValue())).plus(DiscreteDateRangeValue.year(new BigInteger("2018").intValue())), TreePVector.<DiscreteDateRangeValue>from(TreePVector.<DiscreteDateRangeValue>empty().plus(DiscreteDateRangeValue.year(new BigInteger("2017").intValue())).plus(DiscreteDateRangeValue.year(new BigInteger("2018").intValue())).stream().filter(OH.predicate()).sorted(new Comparator<DiscreteDateRangeValue>() {
       public int compare(DiscreteDateRangeValue p0, DiscreteDateRangeValue p1) {
         return OH.compare(p0, p1);
       }
@@ -1906,11 +1904,11 @@ public class Generated_date_Test {
   }
   @Test
   public void sorting_item117_7492452870505658922() throws Throwable {
-    Assert.assertEquals("Expected: " + TreePVector.<DateDeltaValue>from(new ArrayList<DateDeltaValue>()) + ", but was: " + (PVector<DateDeltaValue>) TreePVector.<DateDeltaValue>from(((PCollection<DateDeltaValue>) TreePVector.<DateDeltaValue>from(new ArrayList<DateDeltaValue>())).stream().filter(OH.predicate()).sorted(new Comparator<DateDeltaValue>() {
+    Assert.assertEquals("Expected: " + TreePVector.<DateDeltaValue>from(new ArrayList<DateDeltaValue>()) + ", but was: " + TreePVector.<DateDeltaValue>from(TreePVector.<DateDeltaValue>from(new ArrayList<DateDeltaValue>()).stream().filter(OH.predicate()).sorted(new Comparator<DateDeltaValue>() {
       public int compare(DateDeltaValue p0, DateDeltaValue p1) {
         return OH.compare(p1, p0);
       }
-    }).collect(Collectors.<DateDeltaValue>toList())), (Object) TreePVector.<DateDeltaValue>from(new ArrayList<DateDeltaValue>()), (Object) (PVector<DateDeltaValue>) TreePVector.<DateDeltaValue>from(((PCollection<DateDeltaValue>) TreePVector.<DateDeltaValue>from(new ArrayList<DateDeltaValue>())).stream().filter(OH.predicate()).sorted(new Comparator<DateDeltaValue>() {
+    }).collect(Collectors.<DateDeltaValue>toList())), TreePVector.<DateDeltaValue>from(new ArrayList<DateDeltaValue>()), TreePVector.<DateDeltaValue>from(TreePVector.<DateDeltaValue>from(new ArrayList<DateDeltaValue>()).stream().filter(OH.predicate()).sorted(new Comparator<DateDeltaValue>() {
       public int compare(DateDeltaValue p0, DateDeltaValue p1) {
         return OH.compare(p1, p0);
       }
@@ -1918,11 +1916,11 @@ public class Generated_date_Test {
   }
   @Test
   public void sorting_item118_7492452870505658928() throws Throwable {
-    Assert.assertEquals("Expected: " + TreePVector.<DiscreteDateRangeValue>empty().plus(DiscreteDateRangeValue.year(((BigInteger) (Number) new BigInteger("2017")).intValue())) + ", but was: " + (PVector<DiscreteDateRangeValue>) TreePVector.<DiscreteDateRangeValue>from(((PCollection<DiscreteDateRangeValue>) TreePVector.<DiscreteDateRangeValue>empty().plus(DiscreteDateRangeValue.year(((BigInteger) (Number) new BigInteger("2017")).intValue()))).stream().filter(OH.predicate()).sorted(new Comparator<DiscreteDateRangeValue>() {
+    Assert.assertEquals("Expected: " + TreePVector.<DiscreteDateRangeValue>empty().plus(DiscreteDateRangeValue.year(new BigInteger("2017").intValue())) + ", but was: " + TreePVector.<DiscreteDateRangeValue>from(TreePVector.<DiscreteDateRangeValue>empty().plus(DiscreteDateRangeValue.year(new BigInteger("2017").intValue())).stream().filter(OH.predicate()).sorted(new Comparator<DiscreteDateRangeValue>() {
       public int compare(DiscreteDateRangeValue p0, DiscreteDateRangeValue p1) {
         return OH.compare(p1, p0);
       }
-    }).collect(Collectors.<DiscreteDateRangeValue>toList())), (Object) TreePVector.<DiscreteDateRangeValue>empty().plus(DiscreteDateRangeValue.year(((BigInteger) (Number) new BigInteger("2017")).intValue())), (Object) (PVector<DiscreteDateRangeValue>) TreePVector.<DiscreteDateRangeValue>from(((PCollection<DiscreteDateRangeValue>) TreePVector.<DiscreteDateRangeValue>empty().plus(DiscreteDateRangeValue.year(((BigInteger) (Number) new BigInteger("2017")).intValue()))).stream().filter(OH.predicate()).sorted(new Comparator<DiscreteDateRangeValue>() {
+    }).collect(Collectors.<DiscreteDateRangeValue>toList())), TreePVector.<DiscreteDateRangeValue>empty().plus(DiscreteDateRangeValue.year(new BigInteger("2017").intValue())), TreePVector.<DiscreteDateRangeValue>from(TreePVector.<DiscreteDateRangeValue>empty().plus(DiscreteDateRangeValue.year(new BigInteger("2017").intValue())).stream().filter(OH.predicate()).sorted(new Comparator<DiscreteDateRangeValue>() {
       public int compare(DiscreteDateRangeValue p0, DiscreteDateRangeValue p1) {
         return OH.compare(p1, p0);
       }
@@ -1930,11 +1928,11 @@ public class Generated_date_Test {
   }
   @Test
   public void sorting_item119_7492452870505658934() throws Throwable {
-    Assert.assertEquals("Expected: " + TreePVector.<DiscreteDateRangeValue>empty().plus(DiscreteDateRangeValue.year(((BigInteger) (Number) new BigInteger("2018")).intValue())).plus(DiscreteDateRangeValue.year(((BigInteger) (Number) new BigInteger("2017")).intValue())) + ", but was: " + (PVector<DiscreteDateRangeValue>) TreePVector.<DiscreteDateRangeValue>from(((PCollection<DiscreteDateRangeValue>) TreePVector.<DiscreteDateRangeValue>empty().plus(DiscreteDateRangeValue.year(((BigInteger) (Number) new BigInteger("2017")).intValue())).plus(DiscreteDateRangeValue.year(((BigInteger) (Number) new BigInteger("2018")).intValue()))).stream().filter(OH.predicate()).sorted(new Comparator<DiscreteDateRangeValue>() {
+    Assert.assertEquals("Expected: " + TreePVector.<DiscreteDateRangeValue>empty().plus(DiscreteDateRangeValue.year(new BigInteger("2018").intValue())).plus(DiscreteDateRangeValue.year(new BigInteger("2017").intValue())) + ", but was: " + TreePVector.<DiscreteDateRangeValue>from(TreePVector.<DiscreteDateRangeValue>empty().plus(DiscreteDateRangeValue.year(new BigInteger("2017").intValue())).plus(DiscreteDateRangeValue.year(new BigInteger("2018").intValue())).stream().filter(OH.predicate()).sorted(new Comparator<DiscreteDateRangeValue>() {
       public int compare(DiscreteDateRangeValue p0, DiscreteDateRangeValue p1) {
         return OH.compare(p1, p0);
       }
-    }).collect(Collectors.<DiscreteDateRangeValue>toList())), (Object) TreePVector.<DiscreteDateRangeValue>empty().plus(DiscreteDateRangeValue.year(((BigInteger) (Number) new BigInteger("2018")).intValue())).plus(DiscreteDateRangeValue.year(((BigInteger) (Number) new BigInteger("2017")).intValue())), (Object) (PVector<DiscreteDateRangeValue>) TreePVector.<DiscreteDateRangeValue>from(((PCollection<DiscreteDateRangeValue>) TreePVector.<DiscreteDateRangeValue>empty().plus(DiscreteDateRangeValue.year(((BigInteger) (Number) new BigInteger("2017")).intValue())).plus(DiscreteDateRangeValue.year(((BigInteger) (Number) new BigInteger("2018")).intValue()))).stream().filter(OH.predicate()).sorted(new Comparator<DiscreteDateRangeValue>() {
+    }).collect(Collectors.<DiscreteDateRangeValue>toList())), TreePVector.<DiscreteDateRangeValue>empty().plus(DiscreteDateRangeValue.year(new BigInteger("2018").intValue())).plus(DiscreteDateRangeValue.year(new BigInteger("2017").intValue())), TreePVector.<DiscreteDateRangeValue>from(TreePVector.<DiscreteDateRangeValue>empty().plus(DiscreteDateRangeValue.year(new BigInteger("2017").intValue())).plus(DiscreteDateRangeValue.year(new BigInteger("2018").intValue())).stream().filter(OH.predicate()).sorted(new Comparator<DiscreteDateRangeValue>() {
       public int compare(DiscreteDateRangeValue p0, DiscreteDateRangeValue p1) {
         return OH.compare(p1, p0);
       }
@@ -1942,15 +1940,15 @@ public class Generated_date_Test {
   }
   @Test
   public void sorting_timespan0_7492452870506357893() throws Throwable {
-    Assert.assertEquals("Expected: " + TreePVector.<ArbitraryDateRangeValue>from(new ArrayList<ArbitraryDateRangeValue>()) + ", but was: " + TreePVector.<ArbitraryDateRangeValue>from(new ArrayList<ArbitraryDateRangeValue>()), (Object) TreePVector.<ArbitraryDateRangeValue>from(new ArrayList<ArbitraryDateRangeValue>()), (Object) TreePVector.<ArbitraryDateRangeValue>from(new ArrayList<ArbitraryDateRangeValue>()));
+    Assert.assertEquals("Expected: " + TreePVector.<ArbitraryDateRangeValue>from(new ArrayList<ArbitraryDateRangeValue>()) + ", but was: " + TreePVector.<ArbitraryDateRangeValue>from(new ArrayList<ArbitraryDateRangeValue>()), TreePVector.<ArbitraryDateRangeValue>from(new ArrayList<ArbitraryDateRangeValue>()), TreePVector.<ArbitraryDateRangeValue>from(new ArrayList<ArbitraryDateRangeValue>()));
   }
   @Test
   public void sorting_timespan1_7492452870506357902() throws Throwable {
-    Assert.assertEquals("Expected: " + TreePVector.<ArbitraryDateRangeValue>empty().plus(ArbitraryDateRangeValue.make(LocalDate.of(2019, 1, 1), LocalDate.of(2019, 1, 31))) + ", but was: " + TreePVector.<ArbitraryDateRangeValue>empty().plus(ArbitraryDateRangeValue.make(LocalDate.of(2019, 1, 1), LocalDate.of(2019, 1, 31))), (Object) TreePVector.<ArbitraryDateRangeValue>empty().plus(ArbitraryDateRangeValue.make(LocalDate.of(2019, 1, 1), LocalDate.of(2019, 1, 31))), (Object) TreePVector.<ArbitraryDateRangeValue>empty().plus(ArbitraryDateRangeValue.make(LocalDate.of(2019, 1, 1), LocalDate.of(2019, 1, 31))));
+    Assert.assertEquals("Expected: " + TreePVector.<ArbitraryDateRangeValue>empty().plus(ArbitraryDateRangeValue.make(LocalDate.of(2019, 1, 1), LocalDate.of(2019, 1, 31))) + ", but was: " + TreePVector.<ArbitraryDateRangeValue>empty().plus(ArbitraryDateRangeValue.make(LocalDate.of(2019, 1, 1), LocalDate.of(2019, 1, 31))), TreePVector.<ArbitraryDateRangeValue>empty().plus(ArbitraryDateRangeValue.make(LocalDate.of(2019, 1, 1), LocalDate.of(2019, 1, 31))), TreePVector.<ArbitraryDateRangeValue>empty().plus(ArbitraryDateRangeValue.make(LocalDate.of(2019, 1, 1), LocalDate.of(2019, 1, 31))));
   }
   @Test
   public void sorting_timespan2_7492452870506357911() throws Throwable {
-    Assert.assertEquals("Expected: " + TreePVector.<ArbitraryDateRangeValue>empty().plus(ArbitraryDateRangeValue.make(LocalDate.of(2019, 1, 1), LocalDate.of(2019, 1, 31))).plus(ArbitraryDateRangeValue.make(LocalDate.of(2020, 1, 1), LocalDate.of(2020, 1, 31))) + ", but was: " + TreePVector.<ArbitraryDateRangeValue>empty().plus(ArbitraryDateRangeValue.make(LocalDate.of(2019, 1, 1), LocalDate.of(2019, 1, 31))).plus(ArbitraryDateRangeValue.make(LocalDate.of(2020, 1, 1), LocalDate.of(2020, 1, 31))), (Object) TreePVector.<ArbitraryDateRangeValue>empty().plus(ArbitraryDateRangeValue.make(LocalDate.of(2019, 1, 1), LocalDate.of(2019, 1, 31))).plus(ArbitraryDateRangeValue.make(LocalDate.of(2020, 1, 1), LocalDate.of(2020, 1, 31))), (Object) TreePVector.<ArbitraryDateRangeValue>empty().plus(ArbitraryDateRangeValue.make(LocalDate.of(2019, 1, 1), LocalDate.of(2019, 1, 31))).plus(ArbitraryDateRangeValue.make(LocalDate.of(2020, 1, 1), LocalDate.of(2020, 1, 31))));
+    Assert.assertEquals("Expected: " + TreePVector.<ArbitraryDateRangeValue>empty().plus(ArbitraryDateRangeValue.make(LocalDate.of(2019, 1, 1), LocalDate.of(2019, 1, 31))).plus(ArbitraryDateRangeValue.make(LocalDate.of(2020, 1, 1), LocalDate.of(2020, 1, 31))) + ", but was: " + TreePVector.<ArbitraryDateRangeValue>empty().plus(ArbitraryDateRangeValue.make(LocalDate.of(2019, 1, 1), LocalDate.of(2019, 1, 31))).plus(ArbitraryDateRangeValue.make(LocalDate.of(2020, 1, 1), LocalDate.of(2020, 1, 31))), TreePVector.<ArbitraryDateRangeValue>empty().plus(ArbitraryDateRangeValue.make(LocalDate.of(2019, 1, 1), LocalDate.of(2019, 1, 31))).plus(ArbitraryDateRangeValue.make(LocalDate.of(2020, 1, 1), LocalDate.of(2020, 1, 31))), TreePVector.<ArbitraryDateRangeValue>empty().plus(ArbitraryDateRangeValue.make(LocalDate.of(2019, 1, 1), LocalDate.of(2019, 1, 31))).plus(ArbitraryDateRangeValue.make(LocalDate.of(2020, 1, 1), LocalDate.of(2020, 1, 31))));
   }
   @Test
   public void sorting_timespan3_3737467311581390125() throws Throwable {/* 
@@ -1960,11 +1958,11 @@ public class Generated_date_Test {
      * start date identical --> use end date fpr comparison and sorting
      */
     
-    Assert.assertEquals("Expected: " + TreePVector.<ArbitraryDateRangeValue>empty().plus(ArbitraryDateRangeValue.make(LocalDate.of(2021, 1, 1), LocalDate.of(2022, 1, 1))).plus(ArbitraryDateRangeValue.make(LocalDate.of(2021, 1, 1), LocalDate.of(2023, 1, 1))) + ", but was: " + (PVector<ArbitraryDateRangeValue>) TreePVector.<ArbitraryDateRangeValue>from(((PCollection<ArbitraryDateRangeValue>) TreePVector.<ArbitraryDateRangeValue>empty().plus(ArbitraryDateRangeValue.make(LocalDate.of(2021, 1, 1), LocalDate.of(2023, 1, 1))).plus(ArbitraryDateRangeValue.make(LocalDate.of(2021, 1, 1), LocalDate.of(2022, 1, 1)))).stream().filter(OH.predicate()).sorted(new Comparator<ArbitraryDateRangeValue>() {
+    Assert.assertEquals("Expected: " + TreePVector.<ArbitraryDateRangeValue>empty().plus(ArbitraryDateRangeValue.make(LocalDate.of(2021, 1, 1), LocalDate.of(2022, 1, 1))).plus(ArbitraryDateRangeValue.make(LocalDate.of(2021, 1, 1), LocalDate.of(2023, 1, 1))) + ", but was: " + TreePVector.<ArbitraryDateRangeValue>from(TreePVector.<ArbitraryDateRangeValue>empty().plus(ArbitraryDateRangeValue.make(LocalDate.of(2021, 1, 1), LocalDate.of(2023, 1, 1))).plus(ArbitraryDateRangeValue.make(LocalDate.of(2021, 1, 1), LocalDate.of(2022, 1, 1))).stream().filter(OH.predicate()).sorted(new Comparator<ArbitraryDateRangeValue>() {
       public int compare(ArbitraryDateRangeValue p0, ArbitraryDateRangeValue p1) {
         return OH.compare(p0, p1);
       }
-    }).collect(Collectors.<ArbitraryDateRangeValue>toList())), (Object) TreePVector.<ArbitraryDateRangeValue>empty().plus(ArbitraryDateRangeValue.make(LocalDate.of(2021, 1, 1), LocalDate.of(2022, 1, 1))).plus(ArbitraryDateRangeValue.make(LocalDate.of(2021, 1, 1), LocalDate.of(2023, 1, 1))), (Object) (PVector<ArbitraryDateRangeValue>) TreePVector.<ArbitraryDateRangeValue>from(((PCollection<ArbitraryDateRangeValue>) TreePVector.<ArbitraryDateRangeValue>empty().plus(ArbitraryDateRangeValue.make(LocalDate.of(2021, 1, 1), LocalDate.of(2023, 1, 1))).plus(ArbitraryDateRangeValue.make(LocalDate.of(2021, 1, 1), LocalDate.of(2022, 1, 1)))).stream().filter(OH.predicate()).sorted(new Comparator<ArbitraryDateRangeValue>() {
+    }).collect(Collectors.<ArbitraryDateRangeValue>toList())), TreePVector.<ArbitraryDateRangeValue>empty().plus(ArbitraryDateRangeValue.make(LocalDate.of(2021, 1, 1), LocalDate.of(2022, 1, 1))).plus(ArbitraryDateRangeValue.make(LocalDate.of(2021, 1, 1), LocalDate.of(2023, 1, 1))), TreePVector.<ArbitraryDateRangeValue>from(TreePVector.<ArbitraryDateRangeValue>empty().plus(ArbitraryDateRangeValue.make(LocalDate.of(2021, 1, 1), LocalDate.of(2023, 1, 1))).plus(ArbitraryDateRangeValue.make(LocalDate.of(2021, 1, 1), LocalDate.of(2022, 1, 1))).stream().filter(OH.predicate()).sorted(new Comparator<ArbitraryDateRangeValue>() {
       public int compare(ArbitraryDateRangeValue p0, ArbitraryDateRangeValue p1) {
         return OH.compare(p0, p1);
       }
@@ -1972,11 +1970,11 @@ public class Generated_date_Test {
   }
   @Test
   public void sorting_item126_7492452870506357925() throws Throwable {
-    Assert.assertEquals("Expected: " + TreePVector.<ArbitraryDateRangeValue>from(new ArrayList<ArbitraryDateRangeValue>()) + ", but was: " + (PVector<ArbitraryDateRangeValue>) TreePVector.<ArbitraryDateRangeValue>from(((PCollection<ArbitraryDateRangeValue>) TreePVector.<ArbitraryDateRangeValue>from(new ArrayList<ArbitraryDateRangeValue>())).stream().filter(OH.predicate()).sorted(new Comparator<ArbitraryDateRangeValue>() {
+    Assert.assertEquals("Expected: " + TreePVector.<ArbitraryDateRangeValue>from(new ArrayList<ArbitraryDateRangeValue>()) + ", but was: " + TreePVector.<ArbitraryDateRangeValue>from(TreePVector.<ArbitraryDateRangeValue>from(new ArrayList<ArbitraryDateRangeValue>()).stream().filter(OH.predicate()).sorted(new Comparator<ArbitraryDateRangeValue>() {
       public int compare(ArbitraryDateRangeValue p0, ArbitraryDateRangeValue p1) {
         return OH.compare(p0, p1);
       }
-    }).collect(Collectors.<ArbitraryDateRangeValue>toList())), (Object) TreePVector.<ArbitraryDateRangeValue>from(new ArrayList<ArbitraryDateRangeValue>()), (Object) (PVector<ArbitraryDateRangeValue>) TreePVector.<ArbitraryDateRangeValue>from(((PCollection<ArbitraryDateRangeValue>) TreePVector.<ArbitraryDateRangeValue>from(new ArrayList<ArbitraryDateRangeValue>())).stream().filter(OH.predicate()).sorted(new Comparator<ArbitraryDateRangeValue>() {
+    }).collect(Collectors.<ArbitraryDateRangeValue>toList())), TreePVector.<ArbitraryDateRangeValue>from(new ArrayList<ArbitraryDateRangeValue>()), TreePVector.<ArbitraryDateRangeValue>from(TreePVector.<ArbitraryDateRangeValue>from(new ArrayList<ArbitraryDateRangeValue>()).stream().filter(OH.predicate()).sorted(new Comparator<ArbitraryDateRangeValue>() {
       public int compare(ArbitraryDateRangeValue p0, ArbitraryDateRangeValue p1) {
         return OH.compare(p0, p1);
       }
@@ -1984,11 +1982,11 @@ public class Generated_date_Test {
   }
   @Test
   public void sorting_item127_7492452870506357931() throws Throwable {
-    Assert.assertEquals("Expected: " + TreePVector.<ArbitraryDateRangeValue>empty().plus(ArbitraryDateRangeValue.make(LocalDate.of(2019, 1, 1), LocalDate.of(2019, 1, 31))) + ", but was: " + (PVector<ArbitraryDateRangeValue>) TreePVector.<ArbitraryDateRangeValue>from(((PCollection<ArbitraryDateRangeValue>) TreePVector.<ArbitraryDateRangeValue>empty().plus(ArbitraryDateRangeValue.make(LocalDate.of(2019, 1, 1), LocalDate.of(2019, 1, 31)))).stream().filter(OH.predicate()).sorted(new Comparator<ArbitraryDateRangeValue>() {
+    Assert.assertEquals("Expected: " + TreePVector.<ArbitraryDateRangeValue>empty().plus(ArbitraryDateRangeValue.make(LocalDate.of(2019, 1, 1), LocalDate.of(2019, 1, 31))) + ", but was: " + TreePVector.<ArbitraryDateRangeValue>from(TreePVector.<ArbitraryDateRangeValue>empty().plus(ArbitraryDateRangeValue.make(LocalDate.of(2019, 1, 1), LocalDate.of(2019, 1, 31))).stream().filter(OH.predicate()).sorted(new Comparator<ArbitraryDateRangeValue>() {
       public int compare(ArbitraryDateRangeValue p0, ArbitraryDateRangeValue p1) {
         return OH.compare(p0, p1);
       }
-    }).collect(Collectors.<ArbitraryDateRangeValue>toList())), (Object) TreePVector.<ArbitraryDateRangeValue>empty().plus(ArbitraryDateRangeValue.make(LocalDate.of(2019, 1, 1), LocalDate.of(2019, 1, 31))), (Object) (PVector<ArbitraryDateRangeValue>) TreePVector.<ArbitraryDateRangeValue>from(((PCollection<ArbitraryDateRangeValue>) TreePVector.<ArbitraryDateRangeValue>empty().plus(ArbitraryDateRangeValue.make(LocalDate.of(2019, 1, 1), LocalDate.of(2019, 1, 31)))).stream().filter(OH.predicate()).sorted(new Comparator<ArbitraryDateRangeValue>() {
+    }).collect(Collectors.<ArbitraryDateRangeValue>toList())), TreePVector.<ArbitraryDateRangeValue>empty().plus(ArbitraryDateRangeValue.make(LocalDate.of(2019, 1, 1), LocalDate.of(2019, 1, 31))), TreePVector.<ArbitraryDateRangeValue>from(TreePVector.<ArbitraryDateRangeValue>empty().plus(ArbitraryDateRangeValue.make(LocalDate.of(2019, 1, 1), LocalDate.of(2019, 1, 31))).stream().filter(OH.predicate()).sorted(new Comparator<ArbitraryDateRangeValue>() {
       public int compare(ArbitraryDateRangeValue p0, ArbitraryDateRangeValue p1) {
         return OH.compare(p0, p1);
       }
@@ -1996,11 +1994,11 @@ public class Generated_date_Test {
   }
   @Test
   public void sorting_item128_7492452870506357937() throws Throwable {
-    Assert.assertEquals("Expected: " + TreePVector.<ArbitraryDateRangeValue>empty().plus(ArbitraryDateRangeValue.make(LocalDate.of(2019, 1, 1), LocalDate.of(2019, 1, 31))).plus(ArbitraryDateRangeValue.make(LocalDate.of(2020, 1, 1), LocalDate.of(2020, 1, 31))) + ", but was: " + (PVector<ArbitraryDateRangeValue>) TreePVector.<ArbitraryDateRangeValue>from(((PCollection<ArbitraryDateRangeValue>) TreePVector.<ArbitraryDateRangeValue>empty().plus(ArbitraryDateRangeValue.make(LocalDate.of(2019, 1, 1), LocalDate.of(2019, 1, 31))).plus(ArbitraryDateRangeValue.make(LocalDate.of(2020, 1, 1), LocalDate.of(2020, 1, 31)))).stream().filter(OH.predicate()).sorted(new Comparator<ArbitraryDateRangeValue>() {
+    Assert.assertEquals("Expected: " + TreePVector.<ArbitraryDateRangeValue>empty().plus(ArbitraryDateRangeValue.make(LocalDate.of(2019, 1, 1), LocalDate.of(2019, 1, 31))).plus(ArbitraryDateRangeValue.make(LocalDate.of(2020, 1, 1), LocalDate.of(2020, 1, 31))) + ", but was: " + TreePVector.<ArbitraryDateRangeValue>from(TreePVector.<ArbitraryDateRangeValue>empty().plus(ArbitraryDateRangeValue.make(LocalDate.of(2019, 1, 1), LocalDate.of(2019, 1, 31))).plus(ArbitraryDateRangeValue.make(LocalDate.of(2020, 1, 1), LocalDate.of(2020, 1, 31))).stream().filter(OH.predicate()).sorted(new Comparator<ArbitraryDateRangeValue>() {
       public int compare(ArbitraryDateRangeValue p0, ArbitraryDateRangeValue p1) {
         return OH.compare(p0, p1);
       }
-    }).collect(Collectors.<ArbitraryDateRangeValue>toList())), (Object) TreePVector.<ArbitraryDateRangeValue>empty().plus(ArbitraryDateRangeValue.make(LocalDate.of(2019, 1, 1), LocalDate.of(2019, 1, 31))).plus(ArbitraryDateRangeValue.make(LocalDate.of(2020, 1, 1), LocalDate.of(2020, 1, 31))), (Object) (PVector<ArbitraryDateRangeValue>) TreePVector.<ArbitraryDateRangeValue>from(((PCollection<ArbitraryDateRangeValue>) TreePVector.<ArbitraryDateRangeValue>empty().plus(ArbitraryDateRangeValue.make(LocalDate.of(2019, 1, 1), LocalDate.of(2019, 1, 31))).plus(ArbitraryDateRangeValue.make(LocalDate.of(2020, 1, 1), LocalDate.of(2020, 1, 31)))).stream().filter(OH.predicate()).sorted(new Comparator<ArbitraryDateRangeValue>() {
+    }).collect(Collectors.<ArbitraryDateRangeValue>toList())), TreePVector.<ArbitraryDateRangeValue>empty().plus(ArbitraryDateRangeValue.make(LocalDate.of(2019, 1, 1), LocalDate.of(2019, 1, 31))).plus(ArbitraryDateRangeValue.make(LocalDate.of(2020, 1, 1), LocalDate.of(2020, 1, 31))), TreePVector.<ArbitraryDateRangeValue>from(TreePVector.<ArbitraryDateRangeValue>empty().plus(ArbitraryDateRangeValue.make(LocalDate.of(2019, 1, 1), LocalDate.of(2019, 1, 31))).plus(ArbitraryDateRangeValue.make(LocalDate.of(2020, 1, 1), LocalDate.of(2020, 1, 31))).stream().filter(OH.predicate()).sorted(new Comparator<ArbitraryDateRangeValue>() {
       public int compare(ArbitraryDateRangeValue p0, ArbitraryDateRangeValue p1) {
         return OH.compare(p0, p1);
       }
@@ -2008,11 +2006,11 @@ public class Generated_date_Test {
   }
   @Test
   public void sorting_item130_7492452870506357944() throws Throwable {
-    Assert.assertEquals("Expected: " + TreePVector.<ArbitraryDateRangeValue>from(new ArrayList<ArbitraryDateRangeValue>()) + ", but was: " + (PVector<ArbitraryDateRangeValue>) TreePVector.<ArbitraryDateRangeValue>from(((PCollection<ArbitraryDateRangeValue>) TreePVector.<ArbitraryDateRangeValue>from(new ArrayList<ArbitraryDateRangeValue>())).stream().filter(OH.predicate()).sorted(new Comparator<ArbitraryDateRangeValue>() {
+    Assert.assertEquals("Expected: " + TreePVector.<ArbitraryDateRangeValue>from(new ArrayList<ArbitraryDateRangeValue>()) + ", but was: " + TreePVector.<ArbitraryDateRangeValue>from(TreePVector.<ArbitraryDateRangeValue>from(new ArrayList<ArbitraryDateRangeValue>()).stream().filter(OH.predicate()).sorted(new Comparator<ArbitraryDateRangeValue>() {
       public int compare(ArbitraryDateRangeValue p0, ArbitraryDateRangeValue p1) {
         return OH.compare(p1, p0);
       }
-    }).collect(Collectors.<ArbitraryDateRangeValue>toList())), (Object) TreePVector.<ArbitraryDateRangeValue>from(new ArrayList<ArbitraryDateRangeValue>()), (Object) (PVector<ArbitraryDateRangeValue>) TreePVector.<ArbitraryDateRangeValue>from(((PCollection<ArbitraryDateRangeValue>) TreePVector.<ArbitraryDateRangeValue>from(new ArrayList<ArbitraryDateRangeValue>())).stream().filter(OH.predicate()).sorted(new Comparator<ArbitraryDateRangeValue>() {
+    }).collect(Collectors.<ArbitraryDateRangeValue>toList())), TreePVector.<ArbitraryDateRangeValue>from(new ArrayList<ArbitraryDateRangeValue>()), TreePVector.<ArbitraryDateRangeValue>from(TreePVector.<ArbitraryDateRangeValue>from(new ArrayList<ArbitraryDateRangeValue>()).stream().filter(OH.predicate()).sorted(new Comparator<ArbitraryDateRangeValue>() {
       public int compare(ArbitraryDateRangeValue p0, ArbitraryDateRangeValue p1) {
         return OH.compare(p1, p0);
       }
@@ -2020,11 +2018,11 @@ public class Generated_date_Test {
   }
   @Test
   public void sorting_item131_7492452870506357950() throws Throwable {
-    Assert.assertEquals("Expected: " + TreePVector.<ArbitraryDateRangeValue>empty().plus(ArbitraryDateRangeValue.make(LocalDate.of(2019, 1, 1), LocalDate.of(2019, 1, 31))) + ", but was: " + (PVector<ArbitraryDateRangeValue>) TreePVector.<ArbitraryDateRangeValue>from(((PCollection<ArbitraryDateRangeValue>) TreePVector.<ArbitraryDateRangeValue>empty().plus(ArbitraryDateRangeValue.make(LocalDate.of(2019, 1, 1), LocalDate.of(2019, 1, 31)))).stream().filter(OH.predicate()).sorted(new Comparator<ArbitraryDateRangeValue>() {
+    Assert.assertEquals("Expected: " + TreePVector.<ArbitraryDateRangeValue>empty().plus(ArbitraryDateRangeValue.make(LocalDate.of(2019, 1, 1), LocalDate.of(2019, 1, 31))) + ", but was: " + TreePVector.<ArbitraryDateRangeValue>from(TreePVector.<ArbitraryDateRangeValue>empty().plus(ArbitraryDateRangeValue.make(LocalDate.of(2019, 1, 1), LocalDate.of(2019, 1, 31))).stream().filter(OH.predicate()).sorted(new Comparator<ArbitraryDateRangeValue>() {
       public int compare(ArbitraryDateRangeValue p0, ArbitraryDateRangeValue p1) {
         return OH.compare(p1, p0);
       }
-    }).collect(Collectors.<ArbitraryDateRangeValue>toList())), (Object) TreePVector.<ArbitraryDateRangeValue>empty().plus(ArbitraryDateRangeValue.make(LocalDate.of(2019, 1, 1), LocalDate.of(2019, 1, 31))), (Object) (PVector<ArbitraryDateRangeValue>) TreePVector.<ArbitraryDateRangeValue>from(((PCollection<ArbitraryDateRangeValue>) TreePVector.<ArbitraryDateRangeValue>empty().plus(ArbitraryDateRangeValue.make(LocalDate.of(2019, 1, 1), LocalDate.of(2019, 1, 31)))).stream().filter(OH.predicate()).sorted(new Comparator<ArbitraryDateRangeValue>() {
+    }).collect(Collectors.<ArbitraryDateRangeValue>toList())), TreePVector.<ArbitraryDateRangeValue>empty().plus(ArbitraryDateRangeValue.make(LocalDate.of(2019, 1, 1), LocalDate.of(2019, 1, 31))), TreePVector.<ArbitraryDateRangeValue>from(TreePVector.<ArbitraryDateRangeValue>empty().plus(ArbitraryDateRangeValue.make(LocalDate.of(2019, 1, 1), LocalDate.of(2019, 1, 31))).stream().filter(OH.predicate()).sorted(new Comparator<ArbitraryDateRangeValue>() {
       public int compare(ArbitraryDateRangeValue p0, ArbitraryDateRangeValue p1) {
         return OH.compare(p1, p0);
       }
@@ -2032,11 +2030,11 @@ public class Generated_date_Test {
   }
   @Test
   public void sorting_item132_7492452870506357956() throws Throwable {
-    Assert.assertEquals("Expected: " + TreePVector.<ArbitraryDateRangeValue>empty().plus(ArbitraryDateRangeValue.make(LocalDate.of(2020, 1, 1), LocalDate.of(2020, 1, 31))).plus(ArbitraryDateRangeValue.make(LocalDate.of(2019, 1, 1), LocalDate.of(2019, 1, 31))) + ", but was: " + (PVector<ArbitraryDateRangeValue>) TreePVector.<ArbitraryDateRangeValue>from(((PCollection<ArbitraryDateRangeValue>) TreePVector.<ArbitraryDateRangeValue>empty().plus(ArbitraryDateRangeValue.make(LocalDate.of(2019, 1, 1), LocalDate.of(2019, 1, 31))).plus(ArbitraryDateRangeValue.make(LocalDate.of(2020, 1, 1), LocalDate.of(2020, 1, 31)))).stream().filter(OH.predicate()).sorted(new Comparator<ArbitraryDateRangeValue>() {
+    Assert.assertEquals("Expected: " + TreePVector.<ArbitraryDateRangeValue>empty().plus(ArbitraryDateRangeValue.make(LocalDate.of(2020, 1, 1), LocalDate.of(2020, 1, 31))).plus(ArbitraryDateRangeValue.make(LocalDate.of(2019, 1, 1), LocalDate.of(2019, 1, 31))) + ", but was: " + TreePVector.<ArbitraryDateRangeValue>from(TreePVector.<ArbitraryDateRangeValue>empty().plus(ArbitraryDateRangeValue.make(LocalDate.of(2019, 1, 1), LocalDate.of(2019, 1, 31))).plus(ArbitraryDateRangeValue.make(LocalDate.of(2020, 1, 1), LocalDate.of(2020, 1, 31))).stream().filter(OH.predicate()).sorted(new Comparator<ArbitraryDateRangeValue>() {
       public int compare(ArbitraryDateRangeValue p0, ArbitraryDateRangeValue p1) {
         return OH.compare(p1, p0);
       }
-    }).collect(Collectors.<ArbitraryDateRangeValue>toList())), (Object) TreePVector.<ArbitraryDateRangeValue>empty().plus(ArbitraryDateRangeValue.make(LocalDate.of(2020, 1, 1), LocalDate.of(2020, 1, 31))).plus(ArbitraryDateRangeValue.make(LocalDate.of(2019, 1, 1), LocalDate.of(2019, 1, 31))), (Object) (PVector<ArbitraryDateRangeValue>) TreePVector.<ArbitraryDateRangeValue>from(((PCollection<ArbitraryDateRangeValue>) TreePVector.<ArbitraryDateRangeValue>empty().plus(ArbitraryDateRangeValue.make(LocalDate.of(2019, 1, 1), LocalDate.of(2019, 1, 31))).plus(ArbitraryDateRangeValue.make(LocalDate.of(2020, 1, 1), LocalDate.of(2020, 1, 31)))).stream().filter(OH.predicate()).sorted(new Comparator<ArbitraryDateRangeValue>() {
+    }).collect(Collectors.<ArbitraryDateRangeValue>toList())), TreePVector.<ArbitraryDateRangeValue>empty().plus(ArbitraryDateRangeValue.make(LocalDate.of(2020, 1, 1), LocalDate.of(2020, 1, 31))).plus(ArbitraryDateRangeValue.make(LocalDate.of(2019, 1, 1), LocalDate.of(2019, 1, 31))), TreePVector.<ArbitraryDateRangeValue>from(TreePVector.<ArbitraryDateRangeValue>empty().plus(ArbitraryDateRangeValue.make(LocalDate.of(2019, 1, 1), LocalDate.of(2019, 1, 31))).plus(ArbitraryDateRangeValue.make(LocalDate.of(2020, 1, 1), LocalDate.of(2020, 1, 31))).stream().filter(OH.predicate()).sorted(new Comparator<ArbitraryDateRangeValue>() {
       public int compare(ArbitraryDateRangeValue p0, ArbitraryDateRangeValue p1) {
         return OH.compare(p1, p0);
       }
@@ -2044,23 +2042,23 @@ public class Generated_date_Test {
   }
   @Test
   public void sorting_empty0_7492452870506507566() throws Throwable {
-    Assert.assertEquals("Expected: " + TreePVector.<AbstractDateRangeValue>from(new ArrayList<AbstractDateRangeValue>()) + ", but was: " + TreePVector.<AbstractDateRangeValue>from(new ArrayList<AbstractDateRangeValue>()), (Object) TreePVector.<AbstractDateRangeValue>from(new ArrayList<AbstractDateRangeValue>()), (Object) TreePVector.<AbstractDateRangeValue>from(new ArrayList<AbstractDateRangeValue>()));
+    Assert.assertEquals("Expected: " + TreePVector.<AbstractDateRangeValue>from(new ArrayList<AbstractDateRangeValue>()) + ", but was: " + TreePVector.<AbstractDateRangeValue>from(new ArrayList<AbstractDateRangeValue>()), TreePVector.<AbstractDateRangeValue>from(new ArrayList<AbstractDateRangeValue>()), TreePVector.<AbstractDateRangeValue>from(new ArrayList<AbstractDateRangeValue>()));
   }
   @Test
   public void sorting_empty1_7492452870506507575() throws Throwable {
-    Assert.assertEquals("Expected: " + TreePVector.<AbstractDateRangeValue>empty().plus(new EmptyDateRangeValue()) + ", but was: " + TreePVector.<AbstractDateRangeValue>empty().plus(new EmptyDateRangeValue()), (Object) TreePVector.<AbstractDateRangeValue>empty().plus(new EmptyDateRangeValue()), (Object) TreePVector.<AbstractDateRangeValue>empty().plus(new EmptyDateRangeValue()));
+    Assert.assertEquals("Expected: " + TreePVector.<AbstractDateRangeValue>empty().plus(new EmptyDateRangeValue()) + ", but was: " + TreePVector.<AbstractDateRangeValue>empty().plus(new EmptyDateRangeValue()), TreePVector.<AbstractDateRangeValue>empty().plus(new EmptyDateRangeValue()), TreePVector.<AbstractDateRangeValue>empty().plus(new EmptyDateRangeValue()));
   }
   @Test
   public void sorting_empty2_7492452870506507588() throws Throwable {
-    Assert.assertEquals("Expected: " + TreePVector.<AbstractDateRangeValue>empty().plus(new EmptyDateRangeValue()).plus(new EmptyDateRangeValue()) + ", but was: " + TreePVector.<AbstractDateRangeValue>empty().plus(new EmptyDateRangeValue()).plus(new EmptyDateRangeValue()), (Object) TreePVector.<AbstractDateRangeValue>empty().plus(new EmptyDateRangeValue()).plus(new EmptyDateRangeValue()), (Object) TreePVector.<AbstractDateRangeValue>empty().plus(new EmptyDateRangeValue()).plus(new EmptyDateRangeValue()));
+    Assert.assertEquals("Expected: " + TreePVector.<AbstractDateRangeValue>empty().plus(new EmptyDateRangeValue()).plus(new EmptyDateRangeValue()) + ", but was: " + TreePVector.<AbstractDateRangeValue>empty().plus(new EmptyDateRangeValue()).plus(new EmptyDateRangeValue()), TreePVector.<AbstractDateRangeValue>empty().plus(new EmptyDateRangeValue()).plus(new EmptyDateRangeValue()), TreePVector.<AbstractDateRangeValue>empty().plus(new EmptyDateRangeValue()).plus(new EmptyDateRangeValue()));
   }
   @Test
   public void sorting_item138_7492452870506507610() throws Throwable {
-    Assert.assertEquals("Expected: " + TreePVector.<AbstractDateRangeValue>from(new ArrayList<AbstractDateRangeValue>()) + ", but was: " + (PVector<AbstractDateRangeValue>) TreePVector.<AbstractDateRangeValue>from(((PCollection<AbstractDateRangeValue>) TreePVector.<AbstractDateRangeValue>from(new ArrayList<AbstractDateRangeValue>())).stream().filter(OH.predicate()).sorted(new Comparator<AbstractDateRangeValue>() {
+    Assert.assertEquals("Expected: " + TreePVector.<AbstractDateRangeValue>from(new ArrayList<AbstractDateRangeValue>()) + ", but was: " + TreePVector.<AbstractDateRangeValue>from(TreePVector.<AbstractDateRangeValue>from(new ArrayList<AbstractDateRangeValue>()).stream().filter(OH.predicate()).sorted(new Comparator<AbstractDateRangeValue>() {
       public int compare(AbstractDateRangeValue p0, AbstractDateRangeValue p1) {
         return OH.compare(p0, p1);
       }
-    }).collect(Collectors.<AbstractDateRangeValue>toList())), (Object) TreePVector.<AbstractDateRangeValue>from(new ArrayList<AbstractDateRangeValue>()), (Object) (PVector<AbstractDateRangeValue>) TreePVector.<AbstractDateRangeValue>from(((PCollection<AbstractDateRangeValue>) TreePVector.<AbstractDateRangeValue>from(new ArrayList<AbstractDateRangeValue>())).stream().filter(OH.predicate()).sorted(new Comparator<AbstractDateRangeValue>() {
+    }).collect(Collectors.<AbstractDateRangeValue>toList())), TreePVector.<AbstractDateRangeValue>from(new ArrayList<AbstractDateRangeValue>()), TreePVector.<AbstractDateRangeValue>from(TreePVector.<AbstractDateRangeValue>from(new ArrayList<AbstractDateRangeValue>()).stream().filter(OH.predicate()).sorted(new Comparator<AbstractDateRangeValue>() {
       public int compare(AbstractDateRangeValue p0, AbstractDateRangeValue p1) {
         return OH.compare(p0, p1);
       }
@@ -2068,11 +2066,11 @@ public class Generated_date_Test {
   }
   @Test
   public void sorting_item139_7492452870506507616() throws Throwable {
-    Assert.assertEquals("Expected: " + TreePVector.<AbstractDateRangeValue>empty().plus(new EmptyDateRangeValue()) + ", but was: " + (PVector<AbstractDateRangeValue>) TreePVector.<AbstractDateRangeValue>from(((PCollection<AbstractDateRangeValue>) TreePVector.<AbstractDateRangeValue>empty().plus(new EmptyDateRangeValue())).stream().filter(OH.predicate()).sorted(new Comparator<AbstractDateRangeValue>() {
+    Assert.assertEquals("Expected: " + TreePVector.<AbstractDateRangeValue>empty().plus(new EmptyDateRangeValue()) + ", but was: " + TreePVector.<AbstractDateRangeValue>from(TreePVector.<AbstractDateRangeValue>empty().plus(new EmptyDateRangeValue()).stream().filter(OH.predicate()).sorted(new Comparator<AbstractDateRangeValue>() {
       public int compare(AbstractDateRangeValue p0, AbstractDateRangeValue p1) {
         return OH.compare(p0, p1);
       }
-    }).collect(Collectors.<AbstractDateRangeValue>toList())), (Object) TreePVector.<AbstractDateRangeValue>empty().plus(new EmptyDateRangeValue()), (Object) (PVector<AbstractDateRangeValue>) TreePVector.<AbstractDateRangeValue>from(((PCollection<AbstractDateRangeValue>) TreePVector.<AbstractDateRangeValue>empty().plus(new EmptyDateRangeValue())).stream().filter(OH.predicate()).sorted(new Comparator<AbstractDateRangeValue>() {
+    }).collect(Collectors.<AbstractDateRangeValue>toList())), TreePVector.<AbstractDateRangeValue>empty().plus(new EmptyDateRangeValue()), TreePVector.<AbstractDateRangeValue>from(TreePVector.<AbstractDateRangeValue>empty().plus(new EmptyDateRangeValue()).stream().filter(OH.predicate()).sorted(new Comparator<AbstractDateRangeValue>() {
       public int compare(AbstractDateRangeValue p0, AbstractDateRangeValue p1) {
         return OH.compare(p0, p1);
       }
@@ -2080,11 +2078,11 @@ public class Generated_date_Test {
   }
   @Test
   public void sorting_item140_7492452870506507622() throws Throwable {
-    Assert.assertEquals("Expected: " + TreePVector.<AbstractDateRangeValue>empty().plus(new EmptyDateRangeValue()).plus(new EmptyDateRangeValue()) + ", but was: " + (PVector<AbstractDateRangeValue>) TreePVector.<AbstractDateRangeValue>from(((PCollection<AbstractDateRangeValue>) TreePVector.<AbstractDateRangeValue>empty().plus(new EmptyDateRangeValue()).plus(new EmptyDateRangeValue())).stream().filter(OH.predicate()).sorted(new Comparator<AbstractDateRangeValue>() {
+    Assert.assertEquals("Expected: " + TreePVector.<AbstractDateRangeValue>empty().plus(new EmptyDateRangeValue()).plus(new EmptyDateRangeValue()) + ", but was: " + TreePVector.<AbstractDateRangeValue>from(TreePVector.<AbstractDateRangeValue>empty().plus(new EmptyDateRangeValue()).plus(new EmptyDateRangeValue()).stream().filter(OH.predicate()).sorted(new Comparator<AbstractDateRangeValue>() {
       public int compare(AbstractDateRangeValue p0, AbstractDateRangeValue p1) {
         return OH.compare(p0, p1);
       }
-    }).collect(Collectors.<AbstractDateRangeValue>toList())), (Object) TreePVector.<AbstractDateRangeValue>empty().plus(new EmptyDateRangeValue()).plus(new EmptyDateRangeValue()), (Object) (PVector<AbstractDateRangeValue>) TreePVector.<AbstractDateRangeValue>from(((PCollection<AbstractDateRangeValue>) TreePVector.<AbstractDateRangeValue>empty().plus(new EmptyDateRangeValue()).plus(new EmptyDateRangeValue())).stream().filter(OH.predicate()).sorted(new Comparator<AbstractDateRangeValue>() {
+    }).collect(Collectors.<AbstractDateRangeValue>toList())), TreePVector.<AbstractDateRangeValue>empty().plus(new EmptyDateRangeValue()).plus(new EmptyDateRangeValue()), TreePVector.<AbstractDateRangeValue>from(TreePVector.<AbstractDateRangeValue>empty().plus(new EmptyDateRangeValue()).plus(new EmptyDateRangeValue()).stream().filter(OH.predicate()).sorted(new Comparator<AbstractDateRangeValue>() {
       public int compare(AbstractDateRangeValue p0, AbstractDateRangeValue p1) {
         return OH.compare(p0, p1);
       }
@@ -2092,11 +2090,11 @@ public class Generated_date_Test {
   }
   @Test
   public void sorting_item142_7492452870506507629() throws Throwable {
-    Assert.assertEquals("Expected: " + TreePVector.<AbstractDateRangeValue>from(new ArrayList<AbstractDateRangeValue>()) + ", but was: " + (PVector<AbstractDateRangeValue>) TreePVector.<AbstractDateRangeValue>from(((PCollection<AbstractDateRangeValue>) TreePVector.<AbstractDateRangeValue>from(new ArrayList<AbstractDateRangeValue>())).stream().filter(OH.predicate()).sorted(new Comparator<AbstractDateRangeValue>() {
+    Assert.assertEquals("Expected: " + TreePVector.<AbstractDateRangeValue>from(new ArrayList<AbstractDateRangeValue>()) + ", but was: " + TreePVector.<AbstractDateRangeValue>from(TreePVector.<AbstractDateRangeValue>from(new ArrayList<AbstractDateRangeValue>()).stream().filter(OH.predicate()).sorted(new Comparator<AbstractDateRangeValue>() {
       public int compare(AbstractDateRangeValue p0, AbstractDateRangeValue p1) {
         return OH.compare(p1, p0);
       }
-    }).collect(Collectors.<AbstractDateRangeValue>toList())), (Object) TreePVector.<AbstractDateRangeValue>from(new ArrayList<AbstractDateRangeValue>()), (Object) (PVector<AbstractDateRangeValue>) TreePVector.<AbstractDateRangeValue>from(((PCollection<AbstractDateRangeValue>) TreePVector.<AbstractDateRangeValue>from(new ArrayList<AbstractDateRangeValue>())).stream().filter(OH.predicate()).sorted(new Comparator<AbstractDateRangeValue>() {
+    }).collect(Collectors.<AbstractDateRangeValue>toList())), TreePVector.<AbstractDateRangeValue>from(new ArrayList<AbstractDateRangeValue>()), TreePVector.<AbstractDateRangeValue>from(TreePVector.<AbstractDateRangeValue>from(new ArrayList<AbstractDateRangeValue>()).stream().filter(OH.predicate()).sorted(new Comparator<AbstractDateRangeValue>() {
       public int compare(AbstractDateRangeValue p0, AbstractDateRangeValue p1) {
         return OH.compare(p1, p0);
       }
@@ -2104,11 +2102,11 @@ public class Generated_date_Test {
   }
   @Test
   public void sorting_item143_7492452870506507635() throws Throwable {
-    Assert.assertEquals("Expected: " + TreePVector.<AbstractDateRangeValue>empty().plus(new EmptyDateRangeValue()) + ", but was: " + (PVector<AbstractDateRangeValue>) TreePVector.<AbstractDateRangeValue>from(((PCollection<AbstractDateRangeValue>) TreePVector.<AbstractDateRangeValue>empty().plus(new EmptyDateRangeValue())).stream().filter(OH.predicate()).sorted(new Comparator<AbstractDateRangeValue>() {
+    Assert.assertEquals("Expected: " + TreePVector.<AbstractDateRangeValue>empty().plus(new EmptyDateRangeValue()) + ", but was: " + TreePVector.<AbstractDateRangeValue>from(TreePVector.<AbstractDateRangeValue>empty().plus(new EmptyDateRangeValue()).stream().filter(OH.predicate()).sorted(new Comparator<AbstractDateRangeValue>() {
       public int compare(AbstractDateRangeValue p0, AbstractDateRangeValue p1) {
         return OH.compare(p1, p0);
       }
-    }).collect(Collectors.<AbstractDateRangeValue>toList())), (Object) TreePVector.<AbstractDateRangeValue>empty().plus(new EmptyDateRangeValue()), (Object) (PVector<AbstractDateRangeValue>) TreePVector.<AbstractDateRangeValue>from(((PCollection<AbstractDateRangeValue>) TreePVector.<AbstractDateRangeValue>empty().plus(new EmptyDateRangeValue())).stream().filter(OH.predicate()).sorted(new Comparator<AbstractDateRangeValue>() {
+    }).collect(Collectors.<AbstractDateRangeValue>toList())), TreePVector.<AbstractDateRangeValue>empty().plus(new EmptyDateRangeValue()), TreePVector.<AbstractDateRangeValue>from(TreePVector.<AbstractDateRangeValue>empty().plus(new EmptyDateRangeValue()).stream().filter(OH.predicate()).sorted(new Comparator<AbstractDateRangeValue>() {
       public int compare(AbstractDateRangeValue p0, AbstractDateRangeValue p1) {
         return OH.compare(p1, p0);
       }
@@ -2116,11 +2114,11 @@ public class Generated_date_Test {
   }
   @Test
   public void sorting_item144_7492452870506507641() throws Throwable {
-    Assert.assertEquals("Expected: " + TreePVector.<AbstractDateRangeValue>empty().plus(new EmptyDateRangeValue()).plus(new EmptyDateRangeValue()) + ", but was: " + (PVector<AbstractDateRangeValue>) TreePVector.<AbstractDateRangeValue>from(((PCollection<AbstractDateRangeValue>) TreePVector.<AbstractDateRangeValue>empty().plus(new EmptyDateRangeValue()).plus(new EmptyDateRangeValue())).stream().filter(OH.predicate()).sorted(new Comparator<AbstractDateRangeValue>() {
+    Assert.assertEquals("Expected: " + TreePVector.<AbstractDateRangeValue>empty().plus(new EmptyDateRangeValue()).plus(new EmptyDateRangeValue()) + ", but was: " + TreePVector.<AbstractDateRangeValue>from(TreePVector.<AbstractDateRangeValue>empty().plus(new EmptyDateRangeValue()).plus(new EmptyDateRangeValue()).stream().filter(OH.predicate()).sorted(new Comparator<AbstractDateRangeValue>() {
       public int compare(AbstractDateRangeValue p0, AbstractDateRangeValue p1) {
         return OH.compare(p1, p0);
       }
-    }).collect(Collectors.<AbstractDateRangeValue>toList())), (Object) TreePVector.<AbstractDateRangeValue>empty().plus(new EmptyDateRangeValue()).plus(new EmptyDateRangeValue()), (Object) (PVector<AbstractDateRangeValue>) TreePVector.<AbstractDateRangeValue>from(((PCollection<AbstractDateRangeValue>) TreePVector.<AbstractDateRangeValue>empty().plus(new EmptyDateRangeValue()).plus(new EmptyDateRangeValue())).stream().filter(OH.predicate()).sorted(new Comparator<AbstractDateRangeValue>() {
+    }).collect(Collectors.<AbstractDateRangeValue>toList())), TreePVector.<AbstractDateRangeValue>empty().plus(new EmptyDateRangeValue()).plus(new EmptyDateRangeValue()), TreePVector.<AbstractDateRangeValue>from(TreePVector.<AbstractDateRangeValue>empty().plus(new EmptyDateRangeValue()).plus(new EmptyDateRangeValue()).stream().filter(OH.predicate()).sorted(new Comparator<AbstractDateRangeValue>() {
       public int compare(AbstractDateRangeValue p0, AbstractDateRangeValue p1) {
         return OH.compare(p1, p0);
       }
@@ -2128,11 +2126,11 @@ public class Generated_date_Test {
   }
   @Test
   public void Now_item0_8988735099053853397() throws Throwable {
-    Assert.assertEquals("Expected: " + LocalDate.now() + ", but was: " + LocalDate.now(), (Object) LocalDate.now(), (Object) LocalDate.now());
+    Assert.assertEquals("Expected: " + LocalDate.now() + ", but was: " + LocalDate.now(), LocalDate.now(), LocalDate.now());
   }
   @Test
   public void Now_item1_8988735099054068698() throws Throwable {
-    Assert.assertEquals("Expected: " + true + ", but was: " + (!(AH.isLess(new BigInteger(Integer.toString(LocalDate.now().getYear())), (Number) new BigInteger("2023")))), (Object) true, (Object) !(AH.isLess(new BigInteger(Integer.toString(LocalDate.now().getYear())), (Number) new BigInteger("2023"))));
+    Assert.assertEquals("Expected: " + true + ", but was: " + (!(AH.isLess(new BigInteger(Integer.toString(LocalDate.now().getYear())), new BigInteger("2023")))), (Object) true, (Object) !(AH.isLess(new BigInteger(Integer.toString(LocalDate.now().getYear())), new BigInteger("2023"))));
   }
 
 

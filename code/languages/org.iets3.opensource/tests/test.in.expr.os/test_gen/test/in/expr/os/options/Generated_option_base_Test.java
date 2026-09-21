@@ -21,40 +21,40 @@ import org.iets3.core.expr.genjava.base.rt.rt.GlobalContext;
  */
 public class Generated_option_base_Test {
 
-  public static final Number constant5_ = (Number) new BigInteger("5");
+  public static final Number constant5_ = new BigInteger("5");
   public static final Number constant5Ref_ = Generated_option_base_Test.constant5_;
   @Test
   public void constant_item0_8613480905495570574() throws Throwable {
-    Assert.assertTrue("Expected: " + (Number) new BigInteger("5") + ", but was: " + Generated_option_base_Test.constant5_, EqualsTestOp.matches((Number) new BigInteger("5"), Generated_option_base_Test.constant5_));
+    Assert.assertTrue("Expected: " + new BigInteger("5") + ", but was: " + Generated_option_base_Test.constant5_, EqualsTestOp.matches(new BigInteger("5"), Generated_option_base_Test.constant5_));
   }
   @Test
   public void constant_item1_8613480905495570578() throws Throwable {
-    Assert.assertTrue("Expected: " + (Number) new BigInteger("5") + ", but was: " + Generated_option_base_Test.constant5Ref_, EqualsTestOp.matches((Number) new BigInteger("5"), Generated_option_base_Test.constant5Ref_));
+    Assert.assertTrue("Expected: " + new BigInteger("5") + ", but was: " + Generated_option_base_Test.constant5Ref_, EqualsTestOp.matches(new BigInteger("5"), Generated_option_base_Test.constant5Ref_));
   }
   @Test
   public void constant_item2_8613480905495570582() throws Throwable {
-    Assert.assertEquals("Expected: " + Generated_option_base_Test.constant5_ + ", but was: " + Generated_option_base_Test.constant5Ref_, (Object) Generated_option_base_Test.constant5_, (Object) Generated_option_base_Test.constant5Ref_);
+    Assert.assertEquals("Expected: " + Generated_option_base_Test.constant5_ + ", but was: " + Generated_option_base_Test.constant5Ref_, Generated_option_base_Test.constant5_, Generated_option_base_Test.constant5Ref_);
   }
   @Test
   public void emptyAndValExpr_item0_8613480905495570606() throws Throwable {
     Assert.assertEquals("Expected: " + "blockWithEmptyAndValExpr5" + ", but was: " + (((_FunctionTypes._return_P0_E0<String>) () -> {
-      Number variable = (Number) new BigInteger("5");
+      Number variable = new BigInteger("5");
       return AH.addString("blockWithEmptyAndValExpr", variable);
-    }).invoke()), (Object) "blockWithEmptyAndValExpr5", (Object) ((_FunctionTypes._return_P0_E0<String>) () -> {
-      Number variable = (Number) new BigInteger("5");
+    }).invoke()), "blockWithEmptyAndValExpr5", (Object) ((_FunctionTypes._return_P0_E0<String>) () -> {
+      Number variable = new BigInteger("5");
       return AH.addString("blockWithEmptyAndValExpr", variable);
     }).invoke());
   }
 
   @Test
   public void cast_item0_8613480905495570628() throws Throwable {
-    Assert.assertTrue("Expected: " + (Number) new BigInteger("5") + ", but was: " + (Number) new BigInteger("5"), EqualsTestOp.matches((Number) new BigInteger("5"), (Number) new BigInteger("5")));
+    Assert.assertTrue("Expected: " + new BigInteger("5") + ", but was: " + new BigInteger("5"), EqualsTestOp.matches(new BigInteger("5"), new BigInteger("5")));
   }
   @Test
   public void cast_item1_8613480905495570634() throws Throwable {
     try {
       if (((_FunctionTypes._return_P0_E0<Number>) () -> {
-        Number newValue = (Number) new BigInteger("5");
+        Number newValue = new BigInteger("5");
         {
           Number it = newValue;
           if (!(AH.oneOf(it, (Number) new BigInteger("1"), (Number) new BigInteger("2"), (Number) new BigInteger("3")))) {

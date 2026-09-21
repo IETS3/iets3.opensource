@@ -67,7 +67,7 @@ public class Generated_enums_Test {
   }
   @Test
   public void TestEnums_item0_7061117989423813565() throws Throwable {
-    Assert.assertEquals("Expected: " + Color.blue + ", but was: " + Generated_enums_Test.ocean_, (Object) Color.blue, (Object) Generated_enums_Test.ocean_);
+    Assert.assertEquals("Expected: " + Color.blue + ", but was: " + Generated_enums_Test.ocean_, Color.blue, Generated_enums_Test.ocean_);
   }
   @Test
   public void IsOneOf_item0_3952549543412668864() throws Throwable {
@@ -461,23 +461,23 @@ public class Generated_enums_Test {
       return !(b);
     }).invoke());
   }
-  public static final PVector<Number> listWithThree_ = TreePVector.<Number>empty().plus((Number) new BigInteger("10")).plus((Number) new BigInteger("20")).plus((Number) new BigInteger("30"));
+  public static final PVector<Number> listWithThree_ = TreePVector.<Number>empty().plus(new BigInteger("10")).plus(new BigInteger("20")).plus(new BigInteger("30"));
   @Test
   public void ListIndexByEnum_item0_217046401488934820() throws Throwable {
-    Assert.assertTrue("Expected: " + (Number) new BigInteger("10") + ", but was: " + (Number) Generated_enums_Test.listWithThree_.get(new BigInteger(Color.red.indexOf() + "").intValue()), EqualsTestOp.matches((Number) new BigInteger("10"), (Number) Generated_enums_Test.listWithThree_.get(new BigInteger(Color.red.indexOf() + "").intValue())));
+    Assert.assertTrue("Expected: " + new BigInteger("10") + ", but was: " + Generated_enums_Test.listWithThree_.get(new BigInteger(Color.red.indexOf() + "").intValue()), EqualsTestOp.matches(new BigInteger("10"), Generated_enums_Test.listWithThree_.get(new BigInteger(Color.red.indexOf() + "").intValue())));
   }
   @Test
   public void ListIndexByEnum_item1_217046401488938551() throws Throwable {
-    Assert.assertTrue("Expected: " + (Number) new BigInteger("20") + ", but was: " + (Number) Generated_enums_Test.listWithThree_.get(new BigInteger(Color.green.indexOf() + "").intValue()), EqualsTestOp.matches((Number) new BigInteger("20"), (Number) Generated_enums_Test.listWithThree_.get(new BigInteger(Color.green.indexOf() + "").intValue())));
+    Assert.assertTrue("Expected: " + new BigInteger("20") + ", but was: " + Generated_enums_Test.listWithThree_.get(new BigInteger(Color.green.indexOf() + "").intValue()), EqualsTestOp.matches(new BigInteger("20"), Generated_enums_Test.listWithThree_.get(new BigInteger(Color.green.indexOf() + "").intValue())));
   }
   @Test
   public void ListIndexByEnum_item2_217046401488938573() throws Throwable {
-    Assert.assertTrue("Expected: " + (Number) new BigInteger("30") + ", but was: " + (Number) Generated_enums_Test.listWithThree_.get(new BigInteger(Color.blue.indexOf() + "").intValue()), EqualsTestOp.matches((Number) new BigInteger("30"), (Number) Generated_enums_Test.listWithThree_.get(new BigInteger(Color.blue.indexOf() + "").intValue())));
+    Assert.assertTrue("Expected: " + new BigInteger("30") + ", but was: " + Generated_enums_Test.listWithThree_.get(new BigInteger(Color.blue.indexOf() + "").intValue()), EqualsTestOp.matches(new BigInteger("30"), Generated_enums_Test.listWithThree_.get(new BigInteger(Color.blue.indexOf() + "").intValue())));
   }
   public enum StarbuckSizes implements Comparator<StarbuckSizes> {
-    big((Number) new BigInteger("100")),
-    venti((Number) new BigInteger("200")),
-    mega((Number) new BigInteger("300"));
+    big(new BigInteger("100")),
+    venti(new BigInteger("200")),
+    mega(new BigInteger("300"));
 
     private final Number value;
     public static int order;
@@ -654,15 +654,15 @@ public class Generated_enums_Test {
   }
   @Test
   public void ValuedEnum_item0_4577412849441838507() throws Throwable {
-    Assert.assertEquals("Expected: " + "Markus" + ", but was: " + Family.me.getValue().getfirstName(), (Object) "Markus", (Object) Family.me.getValue().getfirstName());
+    Assert.assertEquals("Expected: " + "Markus" + ", but was: " + Family.me.getValue().getfirstName(), "Markus", Family.me.getValue().getfirstName());
   }
   @Test
   public void ValuedEnum_item1_4577412849441887710() throws Throwable {
-    Assert.assertTrue("Expected: " + (Number) new BigInteger("100") + ", but was: " + StarbuckSizes.big.getValue(), EqualsTestOp.matches((Number) new BigInteger("100"), StarbuckSizes.big.getValue()));
+    Assert.assertTrue("Expected: " + new BigInteger("100") + ", but was: " + StarbuckSizes.big.getValue(), EqualsTestOp.matches(new BigInteger("100"), StarbuckSizes.big.getValue()));
   }
   @Test
   public void ValuedEnum_item2_4577412849442214412() throws Throwable {
-    Assert.assertEquals("Expected: " + "Markus" + ", but was: " + Generated_enums_Test.getFamilyMember().getValue().getfirstName(), (Object) "Markus", (Object) Generated_enums_Test.getFamilyMember().getValue().getfirstName());
+    Assert.assertEquals("Expected: " + "Markus" + ", but was: " + Generated_enums_Test.getFamilyMember().getValue().getfirstName(), "Markus", Generated_enums_Test.getFamilyMember().getValue().getfirstName());
   }
   public static final PVector<Color> colors_ = new _FunctionTypes._return_P0_E0<PVector>() {
     public PVector invoke() {
@@ -675,7 +675,7 @@ public class Generated_enums_Test {
   }.invoke();
   @Test
   public void TestColorList_item0_2945473592443637603() throws Throwable {
-    Assert.assertTrue("Expected: " + (Number) new BigInteger("3") + ", but was: " + BigInteger.valueOf(Generated_enums_Test.colors_.size()), EqualsTestOp.matches((Number) new BigInteger("3"), BigInteger.valueOf(Generated_enums_Test.colors_.size())));
+    Assert.assertTrue("Expected: " + new BigInteger("3") + ", but was: " + BigInteger.valueOf(Generated_enums_Test.colors_.size()), EqualsTestOp.matches(new BigInteger("3"), BigInteger.valueOf(Generated_enums_Test.colors_.size())));
   }
   @Test
   public void TestColorList_item1_2945473592443638627() throws Throwable {
@@ -735,7 +735,7 @@ public class Generated_enums_Test {
   }
   @Test
   public void TestColorList_item3_2945473592443642093() throws Throwable {
-    Assert.assertEquals("Expected: " + Color.green + ", but was: " + (Color) Generated_enums_Test.colors_.get(((Number) new BigInteger("1")).intValue()), (Object) Color.green, (Object) (Color) Generated_enums_Test.colors_.get(((Number) new BigInteger("1")).intValue()));
+    Assert.assertEquals("Expected: " + Color.green + ", but was: " + Generated_enums_Test.colors_.get(new BigInteger("1").intValue()), Color.green, Generated_enums_Test.colors_.get(new BigInteger("1").intValue()));
   }
 
 

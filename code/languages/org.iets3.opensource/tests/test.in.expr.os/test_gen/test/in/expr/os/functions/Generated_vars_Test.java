@@ -25,13 +25,13 @@ public class Generated_vars_Test {
   public static Number add(Number a, Number b) {
     Number x = a;
     Number y = b;
-    x = AH.add(x, (Number) new BigInteger("1"));
-    x = AH.add(x, (Number) new BigInteger("1"));
-    y = AH.add(y, (Number) new BigInteger("2"));
+    x = AH.add(x, new BigInteger("1"));
+    x = AH.add(x, new BigInteger("1"));
+    y = AH.add(y, new BigInteger("2"));
     Number res = AH.add(x, y);
     {
       Number it = res;
-      if (!(AH.isEqual(it, AH.add(AH.add(a, b), (Number) new BigInteger("4"))))) {
+      if (!(AH.isEqual(it, AH.add(AH.add(a, b), new BigInteger("4"))))) {
         final Message message = new Message(BuiltinMessageKinds.error(), ContractViolatedException.POST_FAILED + ": " + "res == a + b + 4").withLocation(new ProgramLocation("r:f9a70877-66f3-464b-86cb-67a9d543be8c(test.in.expr.os.functions@tests)/4009737334841631926", "http://127.0.0.1:63320/node?ref=r%3Af9a70877-66f3-464b-86cb-67a9d543be8c%28test.in.expr.os.functions%40tests%29%2F4009737334841631926")).withAffectedMemberNames(new HashSet<String>(Arrays.<String>asList()));
         GlobalContext.MESSAGE_LOG.get().collect(message);
         throw new ContractViolatedException(message);
@@ -68,20 +68,20 @@ public class Generated_vars_Test {
   }
   @Test
   public void testLocalVar_item0_2222228766295551315() throws Throwable {
-    Assert.assertTrue("Expected: " + (Number) new BigInteger("7") + ", but was: " + Generated_vars_Test.add((Number) new BigInteger("1"), (Number) new BigInteger("2")), EqualsTestOp.matches((Number) new BigInteger("7"), Generated_vars_Test.add((Number) new BigInteger("1"), (Number) new BigInteger("2"))));
+    Assert.assertTrue("Expected: " + new BigInteger("7") + ", but was: " + Generated_vars_Test.add(new BigInteger("1"), new BigInteger("2")), EqualsTestOp.matches(new BigInteger("7"), Generated_vars_Test.add(new BigInteger("1"), new BigInteger("2"))));
   }
   @Test
   public void testLocalVar_item1_2222228766308450141() throws Throwable {
-    Assert.assertTrue("Expected: " + (Number) new BigInteger("3") + ", but was: " + Generated_vars_Test.assignVal((Number) new BigInteger("3")), EqualsTestOp.matches((Number) new BigInteger("3"), Generated_vars_Test.assignVal((Number) new BigInteger("3"))));
+    Assert.assertTrue("Expected: " + new BigInteger("3") + ", but was: " + Generated_vars_Test.assignVal(new BigInteger("3")), EqualsTestOp.matches(new BigInteger("3"), Generated_vars_Test.assignVal(new BigInteger("3"))));
   }
   @Test
   public void testLocalVar_item2_2222228766308454615() throws Throwable {
-    Assert.assertTrue("Expected: " + (Number) new BigInteger("3") + ", but was: " + Generated_vars_Test.readVal((Number) new BigInteger("3")), EqualsTestOp.matches((Number) new BigInteger("3"), Generated_vars_Test.readVal((Number) new BigInteger("3"))));
+    Assert.assertTrue("Expected: " + new BigInteger("3") + ", but was: " + Generated_vars_Test.readVal(new BigInteger("3")), EqualsTestOp.matches(new BigInteger("3"), Generated_vars_Test.readVal(new BigInteger("3"))));
   }
   public static final PVector tuple_ = (TreePVector) TreePVector.<Object>from(Arrays.<Object>asList((Number) new BigInteger("1"), (Number) new BigInteger("2")));
   public static Number assign() {
-    Number r1 = (Number) new BigInteger("0");
-    Number r2 = (Number) new BigInteger("0");
+    Number r1 = new BigInteger("0");
+    Number r2 = new BigInteger("0");
     PVector tupleRight_8270504681824144399 = Generated_vars_Test.tuple_;
     r1 = (Number) tupleRight_8270504681824144399.get(0);
     r2 = (Number) tupleRight_8270504681824144399.get(1);
@@ -90,8 +90,8 @@ public class Generated_vars_Test {
     return res;
   }
   public static PVector swap() {
-    Number r1 = (Number) new BigInteger("3");
-    Number r2 = (Number) new BigInteger("5");
+    Number r1 = new BigInteger("3");
+    Number r2 = new BigInteger("5");
     PVector tupleRight_8888617110175217036 = (TreePVector) TreePVector.<Object>from(Arrays.<Object>asList(r2, r1));
     r1 = (Number) tupleRight_8888617110175217036.get(0);
     r2 = (Number) tupleRight_8888617110175217036.get(1);
@@ -100,8 +100,8 @@ public class Generated_vars_Test {
     return res;
   }
   public static PVector swap1() {
-    Number r1 = (Number) new BigInteger("3");
-    Number r2 = (Number) new BigInteger("5");
+    Number r1 = new BigInteger("3");
+    Number r2 = new BigInteger("5");
     PVector myTuple = (TreePVector) TreePVector.<Object>from(Arrays.<Object>asList(r2, r1));
     PVector tupleRight_6492165038408701204 = myTuple;
     r1 = (Number) tupleRight_6492165038408701204.get(0);
@@ -112,15 +112,15 @@ public class Generated_vars_Test {
   }
   @Test
   public void assigningTuples_i_item0_8270504681824948476() throws Throwable {
-    Assert.assertTrue("Expected: " + (Number) new BigInteger("3") + ", but was: " + Generated_vars_Test.assign(), EqualsTestOp.matches((Number) new BigInteger("3"), Generated_vars_Test.assign()));
+    Assert.assertTrue("Expected: " + new BigInteger("3") + ", but was: " + Generated_vars_Test.assign(), EqualsTestOp.matches(new BigInteger("3"), Generated_vars_Test.assign()));
   }
   @Test
   public void assigningTuples_i_item1_8888617110175219471() throws Throwable {
-    Assert.assertEquals("Expected: " + (TreePVector) TreePVector.<Object>from(Arrays.<Object>asList((Number) new BigInteger("5"), (Number) new BigInteger("3"))) + ", but was: " + Generated_vars_Test.swap(), (Object) (TreePVector) TreePVector.<Object>from(Arrays.<Object>asList((Number) new BigInteger("5"), (Number) new BigInteger("3"))), (Object) Generated_vars_Test.swap());
+    Assert.assertEquals("Expected: " + (TreePVector) TreePVector.<Object>from(Arrays.<Object>asList((Number) new BigInteger("5"), (Number) new BigInteger("3"))) + ", but was: " + Generated_vars_Test.swap(), (TreePVector) TreePVector.<Object>from(Arrays.<Object>asList((Number) new BigInteger("5"), (Number) new BigInteger("3"))), Generated_vars_Test.swap());
   }
   @Test
   public void assigningTuples_i_item2_6492165038408703061() throws Throwable {
-    Assert.assertEquals("Expected: " + (TreePVector) TreePVector.<Object>from(Arrays.<Object>asList((Number) new BigInteger("5"), (Number) new BigInteger("3"))) + ", but was: " + Generated_vars_Test.swap1(), (Object) (TreePVector) TreePVector.<Object>from(Arrays.<Object>asList((Number) new BigInteger("5"), (Number) new BigInteger("3"))), (Object) Generated_vars_Test.swap1());
+    Assert.assertEquals("Expected: " + (TreePVector) TreePVector.<Object>from(Arrays.<Object>asList((Number) new BigInteger("5"), (Number) new BigInteger("3"))) + ", but was: " + Generated_vars_Test.swap1(), (TreePVector) TreePVector.<Object>from(Arrays.<Object>asList((Number) new BigInteger("5"), (Number) new BigInteger("3"))), Generated_vars_Test.swap1());
   }
 
 

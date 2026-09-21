@@ -30,7 +30,7 @@ public class Generated_logic_Test {
   }
   @Test
   public void logic_b5_7740953487930548369() throws Throwable {
-    Assert.assertTrue("Expected: " + (Number) new BigInteger("12") + ", but was: " + (Number) new BigInteger("12"), EqualsTestOp.matches((Number) new BigInteger("12"), (Number) new BigInteger("12")));
+    Assert.assertTrue("Expected: " + new BigInteger("12") + ", but was: " + new BigInteger("12"), EqualsTestOp.matches(new BigInteger("12"), new BigInteger("12")));
   }
 
 

@@ -27,11 +27,11 @@ public class Generated_error_Test {
 
   public static Validation<KernelFErrorException, String> errorFunc(final Number in) {
     Validation<KernelFErrorException, String> res = ((_FunctionTypes._return_P0_E0<Validation<KernelFErrorException, String>>) () -> {
-      if (AH.isEqual(in, (Number) new BigInteger("1"))) {
+      if (AH.isEqual(in, new BigInteger("1"))) {
         return Validation.success("success");
-      } else if (AH.isEqual(in, (Number) new BigInteger("2"))) {
+      } else if (AH.isEqual(in, new BigInteger("2"))) {
         return Validation.fail(new KernelFErrorException("A"));
-      } else if (AH.isEqual(in, (Number) new BigInteger("3"))) {
+      } else if (AH.isEqual(in, new BigInteger("3"))) {
         return Validation.fail(new KernelFErrorException("B"));
       } else {
         return Validation.fail(new KernelFErrorException("A"));
@@ -58,9 +58,9 @@ public class Generated_error_Test {
     {
       String it = res;
       if (!(Objects.equals(it, ((_FunctionTypes._return_P0_E0<String>) () -> {
-        if (AH.isEqual(in, (Number) new BigInteger("1"))) {
+        if (AH.isEqual(in, new BigInteger("1"))) {
           return "success";
-        } else if (AH.isEqual(in, (Number) new BigInteger("3"))) {
+        } else if (AH.isEqual(in, new BigInteger("3"))) {
           return "B";
         } else {
           return "A";
@@ -91,42 +91,42 @@ public class Generated_error_Test {
 
     return res;
   }
-  public static final Validation<KernelFErrorException, String> s_ = Generated_error_Test.tryInComplete((Number) new BigInteger("42"));
+  public static final Validation<KernelFErrorException, String> s_ = Generated_error_Test.tryInComplete(new BigInteger("42"));
   @Test
   public void try_item0_9212286833127726445() throws Throwable {
-    Assert.assertEquals("Expected: " + "success" + ", but was: " + Generated_error_Test.tryComplete((Number) new BigInteger("1")), (Object) "success", (Object) Generated_error_Test.tryComplete((Number) new BigInteger("1")));
+    Assert.assertEquals("Expected: " + "success" + ", but was: " + Generated_error_Test.tryComplete(new BigInteger("1")), "success", Generated_error_Test.tryComplete(new BigInteger("1")));
   }
   @Test
   public void try_item1_9212286833127767694() throws Throwable {
-    Assert.assertEquals("Expected: " + "A" + ", but was: " + Generated_error_Test.tryComplete((Number) new BigInteger("2")), (Object) "A", (Object) Generated_error_Test.tryComplete((Number) new BigInteger("2")));
+    Assert.assertEquals("Expected: " + "A" + ", but was: " + Generated_error_Test.tryComplete(new BigInteger("2")), "A", Generated_error_Test.tryComplete(new BigInteger("2")));
   }
   @Test
   public void try_item2_9212286833127849796() throws Throwable {
-    Assert.assertEquals("Expected: " + "B" + ", but was: " + Generated_error_Test.tryComplete((Number) new BigInteger("3")), (Object) "B", (Object) Generated_error_Test.tryComplete((Number) new BigInteger("3")));
+    Assert.assertEquals("Expected: " + "B" + ", but was: " + Generated_error_Test.tryComplete(new BigInteger("3")), "B", Generated_error_Test.tryComplete(new BigInteger("3")));
   }
   @Test
   public void try_item3_9212286833128031377() throws Throwable {
-    Assert.assertEquals("Expected: " + "A" + ", but was: " + Generated_error_Test.tryComplete((Number) new BigInteger("4")), (Object) "A", (Object) Generated_error_Test.tryComplete((Number) new BigInteger("4")));
+    Assert.assertEquals("Expected: " + "A" + ", but was: " + Generated_error_Test.tryComplete(new BigInteger("4")), "A", Generated_error_Test.tryComplete(new BigInteger("4")));
   }
   @Test
   public void try_item4_9212286833130292821() throws Throwable {
     Assert.assertEquals("Expected: " + "B" + ", but was: " + (((_FunctionTypes._return_P0_E0<String>) () -> {
       try {
-        Generated_error_Test.tryInComplete((Number) new BigInteger("3")).success();
+        Generated_error_Test.tryInComplete(new BigInteger("3")).success();
         return "nope";
       } catch (Error e) {
-        if (Generated_error_Test.tryInComplete((Number) new BigInteger("3")).fail().getErrorLiteral().equals("B")) {
+        if (Generated_error_Test.tryInComplete(new BigInteger("3")).fail().getErrorLiteral().equals("B")) {
           return "B";
         }
         throw new RuntimeException("Try failed");
 
       }
-    }).invoke()), (Object) "B", (Object) ((_FunctionTypes._return_P0_E0<String>) () -> {
+    }).invoke()), "B", (Object) ((_FunctionTypes._return_P0_E0<String>) () -> {
       try {
-        Generated_error_Test.tryInComplete((Number) new BigInteger("3")).success();
+        Generated_error_Test.tryInComplete(new BigInteger("3")).success();
         return "nope";
       } catch (Error e) {
-        if (Generated_error_Test.tryInComplete((Number) new BigInteger("3")).fail().getErrorLiteral().equals("B")) {
+        if (Generated_error_Test.tryInComplete(new BigInteger("3")).fail().getErrorLiteral().equals("B")) {
           return "B";
         }
         throw new RuntimeException("Try failed");
@@ -138,21 +138,21 @@ public class Generated_error_Test {
   public void try_item5_9212286833134230082() throws Throwable {
     Assert.assertEquals("Expected: " + "nope" + ", but was: " + (((_FunctionTypes._return_P0_E0<String>) () -> {
       try {
-        Generated_error_Test.tryInComplete((Number) new BigInteger("4")).success();
+        Generated_error_Test.tryInComplete(new BigInteger("4")).success();
         return "nope";
       } catch (Error e) {
-        if (Generated_error_Test.tryInComplete((Number) new BigInteger("4")).fail().getErrorLiteral().equals("B")) {
+        if (Generated_error_Test.tryInComplete(new BigInteger("4")).fail().getErrorLiteral().equals("B")) {
           return "B";
         }
         return "Z";
 
       }
-    }).invoke()), (Object) "nope", (Object) ((_FunctionTypes._return_P0_E0<String>) () -> {
+    }).invoke()), "nope", (Object) ((_FunctionTypes._return_P0_E0<String>) () -> {
       try {
-        Generated_error_Test.tryInComplete((Number) new BigInteger("4")).success();
+        Generated_error_Test.tryInComplete(new BigInteger("4")).success();
         return "nope";
       } catch (Error e) {
-        if (Generated_error_Test.tryInComplete((Number) new BigInteger("4")).fail().getErrorLiteral().equals("B")) {
+        if (Generated_error_Test.tryInComplete(new BigInteger("4")).fail().getErrorLiteral().equals("B")) {
           return "B";
         }
         return "Z";
@@ -203,31 +203,31 @@ public class Generated_error_Test {
   }
   @Test
   public void attemptParam_item0_5424171137900326645() throws Throwable {
-    Assert.assertTrue("Expected: " + (Number) new BigInteger("1") + ", but was: " + Generated_error_Test.attempParamFunc(Validation.success("success")), EqualsTestOp.matches((Number) new BigInteger("1"), Generated_error_Test.attempParamFunc(Validation.success("success"))));
+    Assert.assertTrue("Expected: " + new BigInteger("1") + ", but was: " + Generated_error_Test.attempParamFunc(Validation.success("success")), EqualsTestOp.matches(new BigInteger("1"), Generated_error_Test.attempParamFunc(Validation.success("success"))));
   }
   @Test
   public void attemptParam_item1_5424171137900326651() throws Throwable {
-    Assert.assertTrue("Expected: " + (Number) new BigInteger("2") + ", but was: " + Generated_error_Test.attempParamFunc(Validation.fail(new KernelFErrorException("A"))), EqualsTestOp.matches((Number) new BigInteger("2"), Generated_error_Test.attempParamFunc(Validation.fail(new KernelFErrorException("A")))));
+    Assert.assertTrue("Expected: " + new BigInteger("2") + ", but was: " + Generated_error_Test.attempParamFunc(Validation.fail(new KernelFErrorException("A"))), EqualsTestOp.matches(new BigInteger("2"), Generated_error_Test.attempParamFunc(Validation.fail(new KernelFErrorException("A")))));
   }
   @Test
   public void attemptParam_item2_5424171137900326657() throws Throwable {
-    Assert.assertTrue("Expected: " + (Number) new BigInteger("3") + ", but was: " + Generated_error_Test.attempParamFunc(Validation.fail(new KernelFErrorException("B"))), EqualsTestOp.matches((Number) new BigInteger("3"), Generated_error_Test.attempParamFunc(Validation.fail(new KernelFErrorException("B")))));
+    Assert.assertTrue("Expected: " + new BigInteger("3") + ", but was: " + Generated_error_Test.attempParamFunc(Validation.fail(new KernelFErrorException("B"))), EqualsTestOp.matches(new BigInteger("3"), Generated_error_Test.attempParamFunc(Validation.fail(new KernelFErrorException("B")))));
   }
   @Test
   public void attemptParam_item3_3611639268121069848() throws Throwable {
-    Assert.assertTrue("Expected: " + (Number) new BigInteger("1") + ", but was: " + Generated_error_Test.attempParamFunc(Generated_error_Test.errorFunc((Number) new BigInteger("1"))), EqualsTestOp.matches((Number) new BigInteger("1"), Generated_error_Test.attempParamFunc(Generated_error_Test.errorFunc((Number) new BigInteger("1")))));
+    Assert.assertTrue("Expected: " + new BigInteger("1") + ", but was: " + Generated_error_Test.attempParamFunc(Generated_error_Test.errorFunc(new BigInteger("1"))), EqualsTestOp.matches(new BigInteger("1"), Generated_error_Test.attempParamFunc(Generated_error_Test.errorFunc(new BigInteger("1")))));
   }
   @Test
   public void attemptParam_item4_3611639268121069854() throws Throwable {
-    Assert.assertTrue("Expected: " + (Number) new BigInteger("2") + ", but was: " + Generated_error_Test.attempParamFunc(Generated_error_Test.errorFunc((Number) new BigInteger("2"))), EqualsTestOp.matches((Number) new BigInteger("2"), Generated_error_Test.attempParamFunc(Generated_error_Test.errorFunc((Number) new BigInteger("2")))));
+    Assert.assertTrue("Expected: " + new BigInteger("2") + ", but was: " + Generated_error_Test.attempParamFunc(Generated_error_Test.errorFunc(new BigInteger("2"))), EqualsTestOp.matches(new BigInteger("2"), Generated_error_Test.attempParamFunc(Generated_error_Test.errorFunc(new BigInteger("2")))));
   }
   @Test
   public void attemptParam_item5_3611639268121069860() throws Throwable {
-    Assert.assertTrue("Expected: " + (Number) new BigInteger("3") + ", but was: " + Generated_error_Test.attempParamFunc(Generated_error_Test.errorFunc((Number) new BigInteger("3"))), EqualsTestOp.matches((Number) new BigInteger("3"), Generated_error_Test.attempParamFunc(Generated_error_Test.errorFunc((Number) new BigInteger("3")))));
+    Assert.assertTrue("Expected: " + new BigInteger("3") + ", but was: " + Generated_error_Test.attempParamFunc(Generated_error_Test.errorFunc(new BigInteger("3"))), EqualsTestOp.matches(new BigInteger("3"), Generated_error_Test.attempParamFunc(Generated_error_Test.errorFunc(new BigInteger("3")))));
   }
   @Test
   public void attemptParam_item6_3611639268121069866() throws Throwable {
-    Assert.assertTrue("Expected: " + (Number) new BigInteger("2") + ", but was: " + Generated_error_Test.attempParamFunc(Generated_error_Test.errorFunc((Number) new BigInteger("4"))), EqualsTestOp.matches((Number) new BigInteger("2"), Generated_error_Test.attempParamFunc(Generated_error_Test.errorFunc((Number) new BigInteger("4")))));
+    Assert.assertTrue("Expected: " + new BigInteger("2") + ", but was: " + Generated_error_Test.attempParamFunc(Generated_error_Test.errorFunc(new BigInteger("4"))), EqualsTestOp.matches(new BigInteger("2"), Generated_error_Test.attempParamFunc(Generated_error_Test.errorFunc(new BigInteger("4")))));
   }
   public static Validation<KernelFErrorException, String> f(final Boolean b) {
     Validation<KernelFErrorException, String> res = ((_FunctionTypes._return_P0_E0<Validation<KernelFErrorException, String>>) () -> {
@@ -242,7 +242,7 @@ public class Generated_error_Test {
   }
   @Test
   public void TRY_item0_9212286833126123939() throws Throwable {
-    Assert.assertTrue("Expected: " + (Number) new BigInteger("10") + ", but was: " + (((_FunctionTypes._return_P0_E0<Number>) () -> {
+    Assert.assertTrue("Expected: " + new BigInteger("10") + ", but was: " + (((_FunctionTypes._return_P0_E0<Number>) () -> {
       try {
         Generated_error_Test.f(true).success();
         return (Number) new BigInteger("10");
@@ -253,7 +253,7 @@ public class Generated_error_Test {
         throw new RuntimeException("Try failed");
 
       }
-    }).invoke()), EqualsTestOp.matches((Number) new BigInteger("10"), ((_FunctionTypes._return_P0_E0<Number>) () -> {
+    }).invoke()), EqualsTestOp.matches(new BigInteger("10"), ((_FunctionTypes._return_P0_E0<Number>) () -> {
       try {
         Generated_error_Test.f(true).success();
         return (Number) new BigInteger("10");
@@ -268,7 +268,7 @@ public class Generated_error_Test {
   }
   public static Validation<KernelFErrorException, Number> div(final Number c, final Number d) {
     Validation<KernelFErrorException, Number> res = ((_FunctionTypes._return_P0_E0<Validation<KernelFErrorException, Number>>) () -> {
-      if (AH.isEqual(d, (Number) new BigInteger("0"))) {
+      if (AH.isEqual(d, new BigInteger("0"))) {
         return Validation.fail(new KernelFErrorException("DIVBYZERO"));
       } else {
         return Validation.success(AH.div(c, d));
@@ -277,31 +277,31 @@ public class Generated_error_Test {
 
     return res;
   }
-  public static final Validation<KernelFErrorException, Number> two1_ = Generated_error_Test.div((Number) new BigInteger("4"), (Number) new BigInteger("2"));
-  public static final Validation<KernelFErrorException, Number> two2_ = Generated_error_Test.div((Number) new BigInteger("4"), (Number) new BigInteger("2"));
+  public static final Validation<KernelFErrorException, Number> two1_ = Generated_error_Test.div(new BigInteger("4"), new BigInteger("2"));
+  public static final Validation<KernelFErrorException, Number> two2_ = Generated_error_Test.div(new BigInteger("4"), new BigInteger("2"));
   @Test
   public void testDivision_item0_3822903164807978076() throws Throwable {
-    Assert.assertTrue("Expected: " + (Number) new BigInteger("3") + ", but was: " + AH.add(((_FunctionTypes._return_P0_E0<Number>) () -> {
+    Assert.assertTrue("Expected: " + new BigInteger("3") + ", but was: " + AH.add(((_FunctionTypes._return_P0_E0<Number>) () -> {
       try {
         Number res = Generated_error_Test.two1_.success();
         return res;
       } catch (Error e) {
         if (Generated_error_Test.two1_.fail().getErrorLiteral().equals("DIVBYZERO")) {
-          return ((BigInteger) (Number) new BigInteger("1")).negate();
+          return new BigInteger("1").negate();
         }
         throw new RuntimeException("Try failed");
       }
-    }).invoke(), (Number) new BigInteger("1")), EqualsTestOp.matches((Number) new BigInteger("3"), AH.add(((_FunctionTypes._return_P0_E0<Number>) () -> {
+    }).invoke(), new BigInteger("1")), EqualsTestOp.matches(new BigInteger("3"), AH.add(((_FunctionTypes._return_P0_E0<Number>) () -> {
       try {
         Number res = Generated_error_Test.two1_.success();
         return res;
       } catch (Error e) {
         if (Generated_error_Test.two1_.fail().getErrorLiteral().equals("DIVBYZERO")) {
-          return ((BigInteger) (Number) new BigInteger("1")).negate();
+          return new BigInteger("1").negate();
         }
         throw new RuntimeException("Try failed");
       }
-    }).invoke(), (Number) new BigInteger("1"))));
+    }).invoke(), new BigInteger("1"))));
   }
   public static Validation<KernelFErrorException, String> strangeString(final Boolean b) {
     Validation<KernelFErrorException, String> res = ((_FunctionTypes._return_P0_E0<Validation<KernelFErrorException, String>>) () -> {
@@ -327,7 +327,7 @@ public class Generated_error_Test {
         throw new RuntimeException("Try failed");
 
       }
-    }).invoke()), (Object) "STRANGEX", (Object) ((_FunctionTypes._return_P0_E0<String>) () -> {
+    }).invoke()), "STRANGEX", (Object) ((_FunctionTypes._return_P0_E0<String>) () -> {
       try {
         Generated_error_Test.strangeString(true).success();
         return AH.addString(Generated_error_Test.strangeString(true).success(), "X");
@@ -353,7 +353,7 @@ public class Generated_error_Test {
         throw new RuntimeException("Try failed");
 
       }
-    }).invoke()), (Object) "err", (Object) ((_FunctionTypes._return_P0_E0<String>) () -> {
+    }).invoke()), "err", (Object) ((_FunctionTypes._return_P0_E0<String>) () -> {
       try {
         Generated_error_Test.strangeString(false).success();
         return Generated_error_Test.strangeString(false).success();
@@ -368,7 +368,7 @@ public class Generated_error_Test {
   }
   @Test
   public void StringDot_item2_7030748110942108459() throws Throwable {
-    Assert.assertTrue("Expected: " + (Number) new BigInteger("7") + ", but was: " + AH.stringLength(((_FunctionTypes._return_P0_E0<String>) () -> {
+    Assert.assertTrue("Expected: " + new BigInteger("7") + ", but was: " + AH.stringLength(((_FunctionTypes._return_P0_E0<String>) () -> {
       try {
         String res = Generated_error_Test.strangeString(true).success();
         return res;
@@ -378,7 +378,7 @@ public class Generated_error_Test {
         }
         throw new RuntimeException("Try failed");
       }
-    }).invoke()), EqualsTestOp.matches((Number) new BigInteger("7"), AH.stringLength(((_FunctionTypes._return_P0_E0<String>) () -> {
+    }).invoke()), EqualsTestOp.matches(new BigInteger("7"), AH.stringLength(((_FunctionTypes._return_P0_E0<String>) () -> {
       try {
         String res = Generated_error_Test.strangeString(true).success();
         return res;
@@ -392,7 +392,7 @@ public class Generated_error_Test {
   }
   @Test
   public void StringDot_item3_3822903164808064355() throws Throwable {
-    Assert.assertTrue("Expected: " + (Number) new BigInteger("8") + ", but was: " + AH.add(AH.stringLength(((_FunctionTypes._return_P0_E0<String>) () -> {
+    Assert.assertTrue("Expected: " + new BigInteger("8") + ", but was: " + AH.add(AH.stringLength(((_FunctionTypes._return_P0_E0<String>) () -> {
       try {
         String res = Generated_error_Test.strangeString(true).success();
         return res;
@@ -402,7 +402,7 @@ public class Generated_error_Test {
         }
         throw new RuntimeException("Try failed");
       }
-    }).invoke()), (Number) new BigInteger("1")), EqualsTestOp.matches((Number) new BigInteger("8"), AH.add(AH.stringLength(((_FunctionTypes._return_P0_E0<String>) () -> {
+    }).invoke()), new BigInteger("1")), EqualsTestOp.matches(new BigInteger("8"), AH.add(AH.stringLength(((_FunctionTypes._return_P0_E0<String>) () -> {
       try {
         String res = Generated_error_Test.strangeString(true).success();
         return res;
@@ -412,7 +412,7 @@ public class Generated_error_Test {
         }
         throw new RuntimeException("Try failed");
       }
-    }).invoke()), (Number) new BigInteger("1"))));
+    }).invoke()), new BigInteger("1"))));
   }
   @Test
   public void StringDot_item4_5096151429187155313() throws Throwable {
@@ -427,7 +427,7 @@ public class Generated_error_Test {
         throw new RuntimeException("Try failed");
 
       }
-    }).invoke()), (Object) "STRANGEX", (Object) ((_FunctionTypes._return_P0_E0<String>) () -> {
+    }).invoke()), "STRANGEX", (Object) ((_FunctionTypes._return_P0_E0<String>) () -> {
       try {
         Generated_error_Test.strangeString(true).success();
         return AH.addString(Generated_error_Test.strangeString(true).success(), "X");
@@ -453,7 +453,7 @@ public class Generated_error_Test {
         throw new RuntimeException("Try failed");
 
       }
-    }).invoke()), (Object) "err", (Object) ((_FunctionTypes._return_P0_E0<String>) () -> {
+    }).invoke()), "err", (Object) ((_FunctionTypes._return_P0_E0<String>) () -> {
       try {
         Generated_error_Test.strangeString(false).success();
         return Generated_error_Test.strangeString(false).success();
@@ -479,7 +479,7 @@ public class Generated_error_Test {
         throw new RuntimeException("Try failed");
 
       }
-    }).invoke()), (Object) "STRANGEX", (Object) ((_FunctionTypes._return_P0_E0<String>) () -> {
+    }).invoke()), "STRANGEX", (Object) ((_FunctionTypes._return_P0_E0<String>) () -> {
       try {
         Generated_error_Test.strangeString(true).success();
         return AH.addString(Generated_error_Test.strangeString(true).success(), "X");
@@ -505,7 +505,7 @@ public class Generated_error_Test {
         throw new RuntimeException("Try failed");
 
       }
-    }).invoke()), (Object) "err", (Object) ((_FunctionTypes._return_P0_E0<String>) () -> {
+    }).invoke()), "err", (Object) ((_FunctionTypes._return_P0_E0<String>) () -> {
       try {
         Generated_error_Test.strangeString(false).success();
         return Generated_error_Test.strangeString(false).success();
@@ -520,11 +520,11 @@ public class Generated_error_Test {
   }
   @Test
   public void defaultValues_item0_6932772747675576602() throws Throwable {
-    Assert.assertEquals("Expected: " + Validation.success("") + ", but was: " + Validation.success(""), (Object) Validation.success(""), (Object) Validation.success(""));
+    Assert.assertEquals("Expected: " + Validation.success("") + ", but was: " + Validation.success(""), Validation.success(""), Validation.success(""));
   }
   @Test
   public void defaultValues_item1_4638701830924825909() throws Throwable {
-    Assert.assertEquals("Expected: " + Validation.fail(new KernelFErrorException("A")) + ", but was: " + Validation.fail(new KernelFErrorException("A")), (Object) Validation.fail(new KernelFErrorException("A")), (Object) Validation.fail(new KernelFErrorException("A")));
+    Assert.assertEquals("Expected: " + Validation.fail(new KernelFErrorException("A")) + ", but was: " + Validation.fail(new KernelFErrorException("A")), Validation.fail(new KernelFErrorException("A")), Validation.fail(new KernelFErrorException("A")));
   }
 
 

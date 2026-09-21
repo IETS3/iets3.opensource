@@ -30,7 +30,6 @@ import org.iets3.core.expr.genjava.tests.rt.rt.RealEqualsTestOp;
 import jetbrains.mps.internal.collections.runtime.ListSequence;
 import org.pcollections.HashTreePSet;
 import org.pcollections.Empty;
-import org.pcollections.PCollection;
 import org.iets3.core.expr.simpleTypes.runtime.OH;
 import java.util.Comparator;
 import org.pcollections.HashTreePMap;
@@ -45,6 +44,7 @@ import org.iets3.core.expr.genjava.toplevel.rt.rt.InlineRecordType;
 import org.iets3.core.expr.genjava.toplevel.rt.rt.InlineRecordTypeMember;
 import org.pcollections.MapPSet;
 import java.util.Iterator;
+import org.pcollections.PCollection;
 import jetbrains.mps.internal.collections.runtime.CollectionSequence;
 
 /**
@@ -54,9 +54,9 @@ public class Generated_collections_Test {
 
   @Test
   public void Upto_item0_3989687177013977976() throws Throwable {
-    Assert.assertTrue("Expected: " + (Number) new BigInteger("475") + ", but was: " + BigInteger.valueOf(TreePVector.<Number>from(TreePVector.<Number>from(TreePVector.<Number>from(((_FunctionTypes._return_P0_E0<List<Number>>) () -> {
+    Assert.assertTrue("Expected: " + new BigInteger("475") + ", but was: " + BigInteger.valueOf(TreePVector.<Number>from(TreePVector.<Number>from(TreePVector.<Number>from(((_FunctionTypes._return_P0_E0<List<Number>>) () -> {
       List<Number> l = new ArrayList<Number>();
-      for (int i = ((Number) new BigInteger("10")).intValue(); i < ((Number) new BigInteger("500")).intValue(); i++) {
+      for (int i = new BigInteger("10").intValue(); i < new BigInteger("500").intValue(); i++) {
         l.add(BigInteger.valueOf(i));
       }
 
@@ -66,7 +66,7 @@ public class Generated_collections_Test {
         return new Function<ParameterSetWrapper, Number>() {
           public Number apply(ParameterSetWrapper param) {
             Number it = (Number) param.parameters.get(0);
-            return AH.mul(it, (Number) new BigInteger("2"));
+            return AH.mul(it, new BigInteger("2"));
           }
         }.apply(new ParameterSetWrapper(param));
       }
@@ -75,13 +75,13 @@ public class Generated_collections_Test {
         return new Function<ParameterSetWrapper, Boolean>() {
           public Boolean apply(ParameterSetWrapper param) {
             Number it = (Number) param.parameters.get(0);
-            return !(AH.isLess(it, (Number) new BigInteger("50")));
+            return !(AH.isLess(it, new BigInteger("50")));
           }
         }.apply(new ParameterSetWrapper(o));
       }
-    }).collect(Collectors.<Number>toList())).size()), EqualsTestOp.matches((Number) new BigInteger("475"), BigInteger.valueOf(TreePVector.<Number>from(TreePVector.<Number>from(TreePVector.<Number>from(((_FunctionTypes._return_P0_E0<List<Number>>) () -> {
+    }).collect(Collectors.<Number>toList())).size()), EqualsTestOp.matches(new BigInteger("475"), BigInteger.valueOf(TreePVector.<Number>from(TreePVector.<Number>from(TreePVector.<Number>from(((_FunctionTypes._return_P0_E0<List<Number>>) () -> {
       List<Number> l = new ArrayList<Number>();
-      for (int i = ((Number) new BigInteger("10")).intValue(); i < ((Number) new BigInteger("500")).intValue(); i++) {
+      for (int i = new BigInteger("10").intValue(); i < new BigInteger("500").intValue(); i++) {
         l.add(BigInteger.valueOf(i));
       }
 
@@ -91,7 +91,7 @@ public class Generated_collections_Test {
         return new Function<ParameterSetWrapper, Number>() {
           public Number apply(ParameterSetWrapper param) {
             Number it = (Number) param.parameters.get(0);
-            return AH.mul(it, (Number) new BigInteger("2"));
+            return AH.mul(it, new BigInteger("2"));
           }
         }.apply(new ParameterSetWrapper(param));
       }
@@ -100,7 +100,7 @@ public class Generated_collections_Test {
         return new Function<ParameterSetWrapper, Boolean>() {
           public Boolean apply(ParameterSetWrapper param) {
             Number it = (Number) param.parameters.get(0);
-            return !(AH.isLess(it, (Number) new BigInteger("50")));
+            return !(AH.isLess(it, new BigInteger("50")));
           }
         }.apply(new ParameterSetWrapper(o));
       }
@@ -108,16 +108,16 @@ public class Generated_collections_Test {
   }
   @Test
   public void Upto_item1_3989687177019705535() throws Throwable {
-    Assert.assertTrue("Expected: " + (Number) new BigInteger("900") + ", but was: " + BigInteger.valueOf(TreePVector.<Number>from(((_FunctionTypes._return_P0_E0<List<Number>>) () -> {
+    Assert.assertTrue("Expected: " + new BigInteger("900") + ", but was: " + BigInteger.valueOf(TreePVector.<Number>from(((_FunctionTypes._return_P0_E0<List<Number>>) () -> {
       List<Number> l = new ArrayList<Number>();
-      for (int i = ((Number) new BigInteger("100")).intValue(); i < ((Number) new BigInteger("1000")).intValue(); i++) {
+      for (int i = new BigInteger("100").intValue(); i < new BigInteger("1000").intValue(); i++) {
         l.add(BigInteger.valueOf(i));
       }
 
       return l;
-    }).invoke()).size()), EqualsTestOp.matches((Number) new BigInteger("900"), BigInteger.valueOf(TreePVector.<Number>from(((_FunctionTypes._return_P0_E0<List<Number>>) () -> {
+    }).invoke()).size()), EqualsTestOp.matches(new BigInteger("900"), BigInteger.valueOf(TreePVector.<Number>from(((_FunctionTypes._return_P0_E0<List<Number>>) () -> {
       List<Number> l = new ArrayList<Number>();
-      for (int i = ((Number) new BigInteger("100")).intValue(); i < ((Number) new BigInteger("1000")).intValue(); i++) {
+      for (int i = new BigInteger("100").intValue(); i < new BigInteger("1000").intValue(); i++) {
         l.add(BigInteger.valueOf(i));
       }
 
@@ -126,9 +126,9 @@ public class Generated_collections_Test {
   }
   @Test
   public void Upto_item2_3989687177019760391() throws Throwable {
-    Assert.assertTrue("Expected: " + (Number) new BigInteger("900") + ", but was: " + BigInteger.valueOf(TreePVector.<Number>from(TreePVector.<Number>from(TreePVector.<Number>from(TreePVector.<Number>from(((_FunctionTypes._return_P0_E0<List<Number>>) () -> {
+    Assert.assertTrue("Expected: " + new BigInteger("900") + ", but was: " + BigInteger.valueOf(TreePVector.<Number>from(TreePVector.<Number>from(TreePVector.<Number>from(TreePVector.<Number>from(((_FunctionTypes._return_P0_E0<List<Number>>) () -> {
       List<Number> l = new ArrayList<Number>();
-      for (int i = ((Number) new BigInteger("100")).intValue(); i < ((Number) new BigInteger("1000")).intValue(); i++) {
+      for (int i = new BigInteger("100").intValue(); i < new BigInteger("1000").intValue(); i++) {
         l.add(BigInteger.valueOf(i));
       }
 
@@ -138,7 +138,7 @@ public class Generated_collections_Test {
         return new Function<ParameterSetWrapper, Boolean>() {
           public Boolean apply(ParameterSetWrapper param) {
             Number it = (Number) param.parameters.get(0);
-            return AH.isGreater(it, (Number) new BigInteger("20"));
+            return AH.isGreater(it, new BigInteger("20"));
           }
         }.apply(new ParameterSetWrapper(o));
       }
@@ -147,7 +147,7 @@ public class Generated_collections_Test {
         return new Function<ParameterSetWrapper, Boolean>() {
           public Boolean apply(ParameterSetWrapper param) {
             Number it = (Number) param.parameters.get(0);
-            return AH.isGreater(it, (Number) new BigInteger("20"));
+            return AH.isGreater(it, new BigInteger("20"));
           }
         }.apply(new ParameterSetWrapper(o));
       }
@@ -156,13 +156,13 @@ public class Generated_collections_Test {
         return new Function<ParameterSetWrapper, Boolean>() {
           public Boolean apply(ParameterSetWrapper param) {
             Number it = (Number) param.parameters.get(0);
-            return AH.isGreater(it, (Number) new BigInteger("20"));
+            return AH.isGreater(it, new BigInteger("20"));
           }
         }.apply(new ParameterSetWrapper(o));
       }
-    }).collect(Collectors.<Number>toList())).size()), EqualsTestOp.matches((Number) new BigInteger("900"), BigInteger.valueOf(TreePVector.<Number>from(TreePVector.<Number>from(TreePVector.<Number>from(TreePVector.<Number>from(((_FunctionTypes._return_P0_E0<List<Number>>) () -> {
+    }).collect(Collectors.<Number>toList())).size()), EqualsTestOp.matches(new BigInteger("900"), BigInteger.valueOf(TreePVector.<Number>from(TreePVector.<Number>from(TreePVector.<Number>from(TreePVector.<Number>from(((_FunctionTypes._return_P0_E0<List<Number>>) () -> {
       List<Number> l = new ArrayList<Number>();
-      for (int i = ((Number) new BigInteger("100")).intValue(); i < ((Number) new BigInteger("1000")).intValue(); i++) {
+      for (int i = new BigInteger("100").intValue(); i < new BigInteger("1000").intValue(); i++) {
         l.add(BigInteger.valueOf(i));
       }
 
@@ -172,7 +172,7 @@ public class Generated_collections_Test {
         return new Function<ParameterSetWrapper, Boolean>() {
           public Boolean apply(ParameterSetWrapper param) {
             Number it = (Number) param.parameters.get(0);
-            return AH.isGreater(it, (Number) new BigInteger("20"));
+            return AH.isGreater(it, new BigInteger("20"));
           }
         }.apply(new ParameterSetWrapper(o));
       }
@@ -181,7 +181,7 @@ public class Generated_collections_Test {
         return new Function<ParameterSetWrapper, Boolean>() {
           public Boolean apply(ParameterSetWrapper param) {
             Number it = (Number) param.parameters.get(0);
-            return AH.isGreater(it, (Number) new BigInteger("20"));
+            return AH.isGreater(it, new BigInteger("20"));
           }
         }.apply(new ParameterSetWrapper(o));
       }
@@ -190,7 +190,7 @@ public class Generated_collections_Test {
         return new Function<ParameterSetWrapper, Boolean>() {
           public Boolean apply(ParameterSetWrapper param) {
             Number it = (Number) param.parameters.get(0);
-            return AH.isGreater(it, (Number) new BigInteger("20"));
+            return AH.isGreater(it, new BigInteger("20"));
           }
         }.apply(new ParameterSetWrapper(o));
       }
@@ -199,16 +199,16 @@ public class Generated_collections_Test {
 
   public static final PVector<Number> l_ = TreePVector.<Number>from(new ArrayList<Number>());
 
-  public static final PVector<Number> x_ = Generated_collections_Test.l_.plus((Number) new BigInteger("1")).plus((Number) new BigInteger("2")).plus((Number) new BigInteger("3")).plus((Number) new BigInteger("4"));
+  public static final PVector<Number> x_ = Generated_collections_Test.l_.plus(new BigInteger("1")).plus(new BigInteger("2")).plus(new BigInteger("3")).plus(new BigInteger("4"));
   public static final PVector<Number> y_ = Generated_collections_Test.x_;
   @Test
   public void ListCrap_item0_7135291922108869100() throws Throwable {
     try {
       if (((_FunctionTypes._return_P0_E0<PVector<Number>>) () -> {
-        PVector<Number> newValue = Generated_collections_Test.l_.plus((Number) new BigInteger("1")).plus((Number) new BigInteger("2")).plus((Number) new BigInteger("3")).plus((Number) new BigInteger("4"));
+        PVector<Number> newValue = Generated_collections_Test.l_.plus(new BigInteger("1")).plus(new BigInteger("2")).plus(new BigInteger("3")).plus(new BigInteger("4"));
         {
           PVector<Number> it = newValue;
-          if (!(AH.inRange(BigInteger.valueOf(it.size()), (Number) new BigInteger("0"), false, (Number) new BigInteger("3"), false))) {
+          if (!(AH.inRange(BigInteger.valueOf(it.size()), new BigInteger("0"), false, new BigInteger("3"), false))) {
             final Message message = new Message(BuiltinMessageKinds.error(), ContractViolatedException.CONSTRAINT_FAILED + ": " + "it.size.range[0..3]").withLocation(new ProgramLocation("r:2309ed17-e7b4-45b5-b25e-2c0f3ea87e8b(test.in.expr.os.collections@tests)/7135291922107336391", "http://127.0.0.1:63320/node?ref=r%3A2309ed17-e7b4-45b5-b25e-2c0f3ea87e8b%28test.in.expr.os.collections%40tests%29%2F7135291922107336391")).withAffectedMemberNames(new HashSet<String>(Arrays.<String>asList()));
             GlobalContext.MESSAGE_LOG.get().collect(message);
             throw new ContractViolatedException(message);
@@ -227,10 +227,10 @@ public class Generated_collections_Test {
   public void ListCrap_item1_6953776000506625477() throws Throwable {
     try {
       if (((_FunctionTypes._return_P0_E0<PVector<Number>>) () -> {
-        PVector<Number> newValue = Generated_collections_Test.l_.plus((Number) new BigInteger("1")).plus((Number) new BigInteger("2")).plus((Number) new BigInteger("3")).plus((Number) new BigInteger("4"));
+        PVector<Number> newValue = Generated_collections_Test.l_.plus(new BigInteger("1")).plus(new BigInteger("2")).plus(new BigInteger("3")).plus(new BigInteger("4"));
         {
           PVector<Number> it = newValue;
-          if (!(AH.inRange(BigInteger.valueOf(it.size()), (Number) new BigInteger("0"), false, (Number) new BigInteger("3"), false))) {
+          if (!(AH.inRange(BigInteger.valueOf(it.size()), new BigInteger("0"), false, new BigInteger("3"), false))) {
             final Message message = new Message(BuiltinMessageKinds.error(), ContractViolatedException.CONSTRAINT_FAILED + ": " + "it.size.range[0..3]").withLocation(new ProgramLocation("r:2309ed17-e7b4-45b5-b25e-2c0f3ea87e8b(test.in.expr.os.collections@tests)/7135291922107336391", "http://127.0.0.1:63320/node?ref=r%3A2309ed17-e7b4-45b5-b25e-2c0f3ea87e8b%28test.in.expr.os.collections%40tests%29%2F7135291922107336391")).withAffectedMemberNames(new HashSet<String>(Arrays.<String>asList()));
             GlobalContext.MESSAGE_LOG.get().collect(message);
             throw new ContractViolatedException(message);
@@ -247,30 +247,30 @@ public class Generated_collections_Test {
   }
 
   public static Number inc(Number i) {
-    Number res = (AH.isGreater(i, (Number) new BigInteger("0")) ? Generated_collections_Test.inc(AH.limit(AH.sub(i, (Number) new BigInteger("1")), (Number) new BigInteger("0"), (Number) new BigInteger("5"))) : (Number) new BigInteger("0"));
+    Number res = (AH.isGreater(i, new BigInteger("0")) ? Generated_collections_Test.inc(AH.limit(AH.sub(i, new BigInteger("1")), new BigInteger("0"), new BigInteger("5"))) : (Number) new BigInteger("0"));
 
     return res;
   }
   public static final PVector<Number> realList0_ = TreePVector.<Number>from(new ArrayList<Number>());
-  public static final PVector<Number> realList1_ = TreePVector.<Number>empty().plus((Number) new BigDecimal("1.00").setScale(2, RoundingMode.DOWN));
-  public static final PVector<Number> realList2_ = TreePVector.<Number>empty().plus((Number) new BigDecimal("1.00").setScale(2, RoundingMode.DOWN)).plus((Number) new BigDecimal("2.00").setScale(2, RoundingMode.DOWN));
-  public static final Number bigInt_ = (Number) new BigInteger("218451428715391236519283451294612983612948162498164918");
-  public static final Number bigReal_ = (Number) new BigDecimal("1294861208461204712049179072349862406102496104971429017769897124981209721313648751240972430917209172234294238942652983652352352353346309725927509273592352342352380562394762984362398452938623984562398465234982549825492734652984623395823498264238946239834239425498236489237598236508236502394729846294623985263498237498236508236498142975914298.0").setScale(1, RoundingMode.DOWN);
+  public static final PVector<Number> realList1_ = TreePVector.<Number>empty().plus(new BigDecimal("1.00").setScale(2, RoundingMode.DOWN));
+  public static final PVector<Number> realList2_ = TreePVector.<Number>empty().plus(new BigDecimal("1.00").setScale(2, RoundingMode.DOWN)).plus(new BigDecimal("2.00").setScale(2, RoundingMode.DOWN));
+  public static final Number bigInt_ = new BigInteger("218451428715391236519283451294612983612948162498164918");
+  public static final Number bigReal_ = new BigDecimal("1294861208461204712049179072349862406102496104971429017769897124981209721313648751240972430917209172234294238942652983652352352353346309725927509273592352342352380562394762984362398452938623984562398465234982549825492734652984623395823498264238946239834239425498236489237598236508236502394729846294623985263498237498236508236498142975914298.0").setScale(1, RoundingMode.DOWN);
   @Test
   public void list_collection_int_intList0_3611639268130886204() throws Throwable {
-    Assert.assertEquals("Expected: " + TreePVector.<Number>from(new ArrayList<Number>()) + ", but was: " + TreePVector.<Number>from(new ArrayList<Number>()), (Object) TreePVector.<Number>from(new ArrayList<Number>()), (Object) TreePVector.<Number>from(new ArrayList<Number>()));
+    Assert.assertEquals("Expected: " + TreePVector.<Number>from(new ArrayList<Number>()) + ", but was: " + TreePVector.<Number>from(new ArrayList<Number>()), TreePVector.<Number>from(new ArrayList<Number>()), TreePVector.<Number>from(new ArrayList<Number>()));
   }
   @Test
   public void list_collection_int_intList1_3611639268130902599() throws Throwable {
-    Assert.assertEquals("Expected: " + TreePVector.<Number>empty().plus((Number) new BigInteger("1")) + ", but was: " + TreePVector.<Number>empty().plus((Number) new BigInteger("1")), (Object) TreePVector.<Number>empty().plus((Number) new BigInteger("1")), (Object) TreePVector.<Number>empty().plus((Number) new BigInteger("1")));
+    Assert.assertEquals("Expected: " + TreePVector.<Number>empty().plus(new BigInteger("1")) + ", but was: " + TreePVector.<Number>empty().plus(new BigInteger("1")), TreePVector.<Number>empty().plus(new BigInteger("1")), TreePVector.<Number>empty().plus(new BigInteger("1")));
   }
   @Test
   public void list_collection_int_intList2_3611639268132453224() throws Throwable {
-    Assert.assertEquals("Expected: " + TreePVector.<Number>empty().plus((Number) new BigInteger("1")).plus((Number) new BigInteger("2")) + ", but was: " + TreePVector.<Number>empty().plus((Number) new BigInteger("1")).plus((Number) new BigInteger("2")), (Object) TreePVector.<Number>empty().plus((Number) new BigInteger("1")).plus((Number) new BigInteger("2")), (Object) TreePVector.<Number>empty().plus((Number) new BigInteger("1")).plus((Number) new BigInteger("2")));
+    Assert.assertEquals("Expected: " + TreePVector.<Number>empty().plus(new BigInteger("1")).plus(new BigInteger("2")) + ", but was: " + TreePVector.<Number>empty().plus(new BigInteger("1")).plus(new BigInteger("2")), TreePVector.<Number>empty().plus(new BigInteger("1")).plus(new BigInteger("2")), TreePVector.<Number>empty().plus(new BigInteger("1")).plus(new BigInteger("2")));
   }
   @Test
   public void list_collection_int_intList3_4951196709609035644() throws Throwable {
-    Assert.assertEquals("Expected: " + TreePVector.<Number>empty().plus((Number) new BigInteger("1")).plus((Number) new BigInteger("3")) + ", but was: " + TreePVector.<Number>empty().plus((Number) new BigInteger("1")).plus((Number) new BigInteger("3")), (Object) TreePVector.<Number>empty().plus((Number) new BigInteger("1")).plus((Number) new BigInteger("3")), (Object) TreePVector.<Number>empty().plus((Number) new BigInteger("1")).plus((Number) new BigInteger("3")));
+    Assert.assertEquals("Expected: " + TreePVector.<Number>empty().plus(new BigInteger("1")).plus(new BigInteger("3")) + ", but was: " + TreePVector.<Number>empty().plus(new BigInteger("1")).plus(new BigInteger("3")), TreePVector.<Number>empty().plus(new BigInteger("1")).plus(new BigInteger("3")), TreePVector.<Number>empty().plus(new BigInteger("1")).plus(new BigInteger("3")));
   }
   @Test
   public void list_collection_int_item5_3611639268140442888() throws Throwable {
@@ -278,11 +278,11 @@ public class Generated_collections_Test {
   }
   @Test
   public void list_collection_int_item6_3611639268140327965() throws Throwable {
-    Assert.assertEquals("Expected: " + false + ", but was: " + TreePVector.<Number>empty().plus((Number) new BigInteger("1")).isEmpty(), (Object) false, (Object) TreePVector.<Number>empty().plus((Number) new BigInteger("1")).isEmpty());
+    Assert.assertEquals("Expected: " + false + ", but was: " + TreePVector.<Number>empty().plus(new BigInteger("1")).isEmpty(), (Object) false, (Object) TreePVector.<Number>empty().plus(new BigInteger("1")).isEmpty());
   }
   @Test
   public void list_collection_int_item7_3611639268141475691() throws Throwable {
-    Assert.assertEquals("Expected: " + false + ", but was: " + TreePVector.<Number>empty().plus((Number) new BigInteger("1")).plus((Number) new BigInteger("2")).isEmpty(), (Object) false, (Object) TreePVector.<Number>empty().plus((Number) new BigInteger("1")).plus((Number) new BigInteger("2")).isEmpty());
+    Assert.assertEquals("Expected: " + false + ", but was: " + TreePVector.<Number>empty().plus(new BigInteger("1")).plus(new BigInteger("2")).isEmpty(), (Object) false, (Object) TreePVector.<Number>empty().plus(new BigInteger("1")).plus(new BigInteger("2")).isEmpty());
   }
   @Test
   public void list_collection_int_item9_2098022166926305315() throws Throwable {
@@ -290,11 +290,11 @@ public class Generated_collections_Test {
   }
   @Test
   public void list_collection_int_item10_2098022166926305309() throws Throwable {
-    Assert.assertEquals("Expected: " + true + ", but was: " + (!(TreePVector.<Number>empty().plus((Number) new BigInteger("1")).isEmpty())), (Object) true, (Object) !(TreePVector.<Number>empty().plus((Number) new BigInteger("1")).isEmpty()));
+    Assert.assertEquals("Expected: " + true + ", but was: " + (!(TreePVector.<Number>empty().plus(new BigInteger("1")).isEmpty())), (Object) true, (Object) !(TreePVector.<Number>empty().plus(new BigInteger("1")).isEmpty()));
   }
   @Test
   public void list_collection_int_item11_2098022166926305303() throws Throwable {
-    Assert.assertEquals("Expected: " + true + ", but was: " + (!(TreePVector.<Number>empty().plus((Number) new BigInteger("1")).plus((Number) new BigInteger("2")).isEmpty())), (Object) true, (Object) !(TreePVector.<Number>empty().plus((Number) new BigInteger("1")).plus((Number) new BigInteger("2")).isEmpty()));
+    Assert.assertEquals("Expected: " + true + ", but was: " + (!(TreePVector.<Number>empty().plus(new BigInteger("1")).plus(new BigInteger("2")).isEmpty())), (Object) true, (Object) !(TreePVector.<Number>empty().plus(new BigInteger("1")).plus(new BigInteger("2")).isEmpty()));
   }
   @Test
   public void list_collection_int_item13_2143211017886414419() throws Throwable {
@@ -309,11 +309,11 @@ public class Generated_collections_Test {
   }
   @Test
   public void list_collection_int_item14_2143211017886397788() throws Throwable {
-    Assert.assertTrue("Expected: " + (Number) new BigInteger("1") + ", but was: " + CollectionHelper.max(TreePVector.<Number>empty().plus((Number) new BigInteger("1"))), EqualsTestOp.matches((Number) new BigInteger("1"), CollectionHelper.max(TreePVector.<Number>empty().plus((Number) new BigInteger("1")))));
+    Assert.assertTrue("Expected: " + new BigInteger("1") + ", but was: " + CollectionHelper.max(TreePVector.<Number>empty().plus(new BigInteger("1"))), EqualsTestOp.matches(new BigInteger("1"), CollectionHelper.max(TreePVector.<Number>empty().plus(new BigInteger("1")))));
   }
   @Test
   public void list_collection_int_item15_3611639268141606630() throws Throwable {
-    Assert.assertTrue("Expected: " + (Number) new BigInteger("2") + ", but was: " + CollectionHelper.max(TreePVector.<Number>empty().plus((Number) new BigInteger("1")).plus((Number) new BigInteger("2"))), EqualsTestOp.matches((Number) new BigInteger("2"), CollectionHelper.max(TreePVector.<Number>empty().plus((Number) new BigInteger("1")).plus((Number) new BigInteger("2")))));
+    Assert.assertTrue("Expected: " + new BigInteger("2") + ", but was: " + CollectionHelper.max(TreePVector.<Number>empty().plus(new BigInteger("1")).plus(new BigInteger("2"))), EqualsTestOp.matches(new BigInteger("2"), CollectionHelper.max(TreePVector.<Number>empty().plus(new BigInteger("1")).plus(new BigInteger("2")))));
   }
   @Test
   public void list_collection_int_item17_2143211017886529065() throws Throwable {
@@ -328,11 +328,11 @@ public class Generated_collections_Test {
   }
   @Test
   public void list_collection_int_item18_2143211017886498928() throws Throwable {
-    Assert.assertTrue("Expected: " + (Number) new BigDecimal("1.00").setScale(2, RoundingMode.DOWN) + ", but was: " + CollectionHelper.max(Generated_collections_Test.realList1_), RealEqualsTestOp.matches(CollectionHelper.max(Generated_collections_Test.realList1_), (Number) new BigDecimal("1.00").setScale(2, RoundingMode.DOWN), 2));
+    Assert.assertTrue("Expected: " + new BigDecimal("1.00").setScale(2, RoundingMode.DOWN) + ", but was: " + CollectionHelper.max(Generated_collections_Test.realList1_), RealEqualsTestOp.matches(CollectionHelper.max(Generated_collections_Test.realList1_), new BigDecimal("1.00").setScale(2, RoundingMode.DOWN), 2));
   }
   @Test
   public void list_collection_int_item19_7255181410618991732() throws Throwable {
-    Assert.assertTrue("Expected: " + (Number) new BigDecimal("2.00").setScale(2, RoundingMode.DOWN) + ", but was: " + CollectionHelper.max(Generated_collections_Test.realList2_), RealEqualsTestOp.matches(CollectionHelper.max(Generated_collections_Test.realList2_), (Number) new BigDecimal("2.00").setScale(2, RoundingMode.DOWN), 2));
+    Assert.assertTrue("Expected: " + new BigDecimal("2.00").setScale(2, RoundingMode.DOWN) + ", but was: " + CollectionHelper.max(Generated_collections_Test.realList2_), RealEqualsTestOp.matches(CollectionHelper.max(Generated_collections_Test.realList2_), new BigDecimal("2.00").setScale(2, RoundingMode.DOWN), 2));
   }
   @Test
   public void list_collection_int_item21_2143211017886545599() throws Throwable {
@@ -347,11 +347,11 @@ public class Generated_collections_Test {
   }
   @Test
   public void list_collection_int_item22_2143211017886530263() throws Throwable {
-    Assert.assertTrue("Expected: " + (Number) new BigDecimal("1.00").setScale(2, RoundingMode.DOWN) + ", but was: " + CollectionHelper.min(Generated_collections_Test.realList1_), RealEqualsTestOp.matches(CollectionHelper.min(Generated_collections_Test.realList1_), (Number) new BigDecimal("1.00").setScale(2, RoundingMode.DOWN), 2));
+    Assert.assertTrue("Expected: " + new BigDecimal("1.00").setScale(2, RoundingMode.DOWN) + ", but was: " + CollectionHelper.min(Generated_collections_Test.realList1_), RealEqualsTestOp.matches(CollectionHelper.min(Generated_collections_Test.realList1_), new BigDecimal("1.00").setScale(2, RoundingMode.DOWN), 2));
   }
   @Test
   public void list_collection_int_item23_2774400345157392627() throws Throwable {
-    Assert.assertTrue("Expected: " + (Number) new BigDecimal("1.00").setScale(2, RoundingMode.DOWN) + ", but was: " + CollectionHelper.min(Generated_collections_Test.realList2_), RealEqualsTestOp.matches(CollectionHelper.min(Generated_collections_Test.realList2_), (Number) new BigDecimal("1.00").setScale(2, RoundingMode.DOWN), 2));
+    Assert.assertTrue("Expected: " + new BigDecimal("1.00").setScale(2, RoundingMode.DOWN) + ", but was: " + CollectionHelper.min(Generated_collections_Test.realList2_), RealEqualsTestOp.matches(CollectionHelper.min(Generated_collections_Test.realList2_), new BigDecimal("1.00").setScale(2, RoundingMode.DOWN), 2));
   }
   @Test
   public void list_collection_int_item25_2143211017886563757() throws Throwable {
@@ -366,35 +366,35 @@ public class Generated_collections_Test {
   }
   @Test
   public void list_collection_int_item26_2143211017886546875() throws Throwable {
-    Assert.assertTrue("Expected: " + (Number) new BigInteger("1") + ", but was: " + CollectionHelper.min(TreePVector.<Number>empty().plus((Number) new BigInteger("1"))), EqualsTestOp.matches((Number) new BigInteger("1"), CollectionHelper.min(TreePVector.<Number>empty().plus((Number) new BigInteger("1")))));
+    Assert.assertTrue("Expected: " + new BigInteger("1") + ", but was: " + CollectionHelper.min(TreePVector.<Number>empty().plus(new BigInteger("1"))), EqualsTestOp.matches(new BigInteger("1"), CollectionHelper.min(TreePVector.<Number>empty().plus(new BigInteger("1")))));
   }
   @Test
   public void list_collection_int_item27_3611639268143815060() throws Throwable {
-    Assert.assertTrue("Expected: " + (Number) new BigInteger("1") + ", but was: " + CollectionHelper.min(TreePVector.<Number>empty().plus((Number) new BigInteger("1")).plus((Number) new BigInteger("2"))), EqualsTestOp.matches((Number) new BigInteger("1"), CollectionHelper.min(TreePVector.<Number>empty().plus((Number) new BigInteger("1")).plus((Number) new BigInteger("2")))));
+    Assert.assertTrue("Expected: " + new BigInteger("1") + ", but was: " + CollectionHelper.min(TreePVector.<Number>empty().plus(new BigInteger("1")).plus(new BigInteger("2"))), EqualsTestOp.matches(new BigInteger("1"), CollectionHelper.min(TreePVector.<Number>empty().plus(new BigInteger("1")).plus(new BigInteger("2")))));
   }
   @Test
   public void list_collection_int_item29_3611639268145927078() throws Throwable {
-    Assert.assertTrue("Expected: " + (Number) new BigInteger("0") + ", but was: " + CollectionHelper.sumAsBigInteger(TreePVector.<Number>from(new ArrayList<Number>())), EqualsTestOp.matches((Number) new BigInteger("0"), CollectionHelper.sumAsBigInteger(TreePVector.<Number>from(new ArrayList<Number>()))));
+    Assert.assertTrue("Expected: " + new BigInteger("0") + ", but was: " + CollectionHelper.sumAsBigInteger(TreePVector.<Number>from(new ArrayList<Number>())), EqualsTestOp.matches(new BigInteger("0"), CollectionHelper.sumAsBigInteger(TreePVector.<Number>from(new ArrayList<Number>()))));
   }
   @Test
   public void list_collection_int_item30_3611639268145927084() throws Throwable {
-    Assert.assertTrue("Expected: " + (Number) new BigInteger("1") + ", but was: " + CollectionHelper.sumAsBigInteger(TreePVector.<Number>empty().plus((Number) new BigInteger("1"))), EqualsTestOp.matches((Number) new BigInteger("1"), CollectionHelper.sumAsBigInteger(TreePVector.<Number>empty().plus((Number) new BigInteger("1")))));
+    Assert.assertTrue("Expected: " + new BigInteger("1") + ", but was: " + CollectionHelper.sumAsBigInteger(TreePVector.<Number>empty().plus(new BigInteger("1"))), EqualsTestOp.matches(new BigInteger("1"), CollectionHelper.sumAsBigInteger(TreePVector.<Number>empty().plus(new BigInteger("1")))));
   }
   @Test
   public void list_collection_int_item31_3611639268145927090() throws Throwable {
-    Assert.assertTrue("Expected: " + (Number) new BigInteger("3") + ", but was: " + CollectionHelper.sumAsBigInteger(TreePVector.<Number>empty().plus((Number) new BigInteger("1")).plus((Number) new BigInteger("2"))), EqualsTestOp.matches((Number) new BigInteger("3"), CollectionHelper.sumAsBigInteger(TreePVector.<Number>empty().plus((Number) new BigInteger("1")).plus((Number) new BigInteger("2")))));
+    Assert.assertTrue("Expected: " + new BigInteger("3") + ", but was: " + CollectionHelper.sumAsBigInteger(TreePVector.<Number>empty().plus(new BigInteger("1")).plus(new BigInteger("2"))), EqualsTestOp.matches(new BigInteger("3"), CollectionHelper.sumAsBigInteger(TreePVector.<Number>empty().plus(new BigInteger("1")).plus(new BigInteger("2")))));
   }
   @Test
   public void list_collection_int_item33_2774400345157430522() throws Throwable {
-    Assert.assertTrue("Expected: " + (Number) new BigDecimal("0.00").setScale(2, RoundingMode.DOWN) + ", but was: " + CollectionHelper.sumAsBigDecimal(Generated_collections_Test.realList0_), RealEqualsTestOp.matches(CollectionHelper.sumAsBigDecimal(Generated_collections_Test.realList0_), (Number) new BigDecimal("0.00").setScale(2, RoundingMode.DOWN), 2));
+    Assert.assertTrue("Expected: " + new BigDecimal("0.00").setScale(2, RoundingMode.DOWN) + ", but was: " + CollectionHelper.sumAsBigDecimal(Generated_collections_Test.realList0_), RealEqualsTestOp.matches(CollectionHelper.sumAsBigDecimal(Generated_collections_Test.realList0_), new BigDecimal("0.00").setScale(2, RoundingMode.DOWN), 2));
   }
   @Test
   public void list_collection_int_item34_2774400345157430516() throws Throwable {
-    Assert.assertTrue("Expected: " + (Number) new BigDecimal("1.00").setScale(2, RoundingMode.DOWN) + ", but was: " + CollectionHelper.sumAsBigDecimal(Generated_collections_Test.realList1_), RealEqualsTestOp.matches(CollectionHelper.sumAsBigDecimal(Generated_collections_Test.realList1_), (Number) new BigDecimal("1.00").setScale(2, RoundingMode.DOWN), 2));
+    Assert.assertTrue("Expected: " + new BigDecimal("1.00").setScale(2, RoundingMode.DOWN) + ", but was: " + CollectionHelper.sumAsBigDecimal(Generated_collections_Test.realList1_), RealEqualsTestOp.matches(CollectionHelper.sumAsBigDecimal(Generated_collections_Test.realList1_), new BigDecimal("1.00").setScale(2, RoundingMode.DOWN), 2));
   }
   @Test
   public void list_collection_int_item35_2774400345157430510() throws Throwable {
-    Assert.assertTrue("Expected: " + (Number) new BigDecimal("3.00").setScale(2, RoundingMode.DOWN) + ", but was: " + CollectionHelper.sumAsBigDecimal(Generated_collections_Test.realList2_), RealEqualsTestOp.matches(CollectionHelper.sumAsBigDecimal(Generated_collections_Test.realList2_), (Number) new BigDecimal("3.00").setScale(2, RoundingMode.DOWN), 2));
+    Assert.assertTrue("Expected: " + new BigDecimal("3.00").setScale(2, RoundingMode.DOWN) + ", but was: " + CollectionHelper.sumAsBigDecimal(Generated_collections_Test.realList2_), RealEqualsTestOp.matches(CollectionHelper.sumAsBigDecimal(Generated_collections_Test.realList2_), new BigDecimal("3.00").setScale(2, RoundingMode.DOWN), 2));
   }
   @Test
   public void list_collection_int_item37_3611639268149489096() throws Throwable {
@@ -403,7 +403,7 @@ public class Generated_collections_Test {
         return new Function<ParameterSetWrapper, Boolean>() {
           public Boolean apply(ParameterSetWrapper param) {
             Number it = (Number) param.parameters.get(0);
-            return AH.inRange(it, (Number) new BigInteger("0"), false, (Number) new BigInteger("1"), false);
+            return AH.inRange(it, new BigInteger("0"), false, new BigInteger("1"), false);
           }
         }.apply(new ParameterSetWrapper(o));
       }
@@ -412,7 +412,7 @@ public class Generated_collections_Test {
         return new Function<ParameterSetWrapper, Boolean>() {
           public Boolean apply(ParameterSetWrapper param) {
             Number it = (Number) param.parameters.get(0);
-            return AH.inRange(it, (Number) new BigInteger("0"), false, (Number) new BigInteger("1"), false);
+            return AH.inRange(it, new BigInteger("0"), false, new BigInteger("1"), false);
           }
         }.apply(new ParameterSetWrapper(o));
       }
@@ -420,21 +420,21 @@ public class Generated_collections_Test {
   }
   @Test
   public void list_collection_int_item38_3611639268150447327() throws Throwable {
-    Assert.assertEquals("Expected: " + true + ", but was: " + TreePVector.<Number>empty().plus((Number) new BigInteger("1")).stream().allMatch(new Predicate<Number>() {
+    Assert.assertEquals("Expected: " + true + ", but was: " + TreePVector.<Number>empty().plus(new BigInteger("1")).stream().allMatch(new Predicate<Number>() {
       public boolean test(Number o) {
         return new Function<ParameterSetWrapper, Boolean>() {
           public Boolean apply(ParameterSetWrapper param) {
             Number it = (Number) param.parameters.get(0);
-            return AH.inRange(it, (Number) new BigInteger("0"), false, (Number) new BigInteger("1"), false);
+            return AH.inRange(it, new BigInteger("0"), false, new BigInteger("1"), false);
           }
         }.apply(new ParameterSetWrapper(o));
       }
-    }), (Object) true, (Object) TreePVector.<Number>empty().plus((Number) new BigInteger("1")).stream().allMatch(new Predicate<Number>() {
+    }), (Object) true, (Object) TreePVector.<Number>empty().plus(new BigInteger("1")).stream().allMatch(new Predicate<Number>() {
       public boolean test(Number o) {
         return new Function<ParameterSetWrapper, Boolean>() {
           public Boolean apply(ParameterSetWrapper param) {
             Number it = (Number) param.parameters.get(0);
-            return AH.inRange(it, (Number) new BigInteger("0"), false, (Number) new BigInteger("1"), false);
+            return AH.inRange(it, new BigInteger("0"), false, new BigInteger("1"), false);
           }
         }.apply(new ParameterSetWrapper(o));
       }
@@ -442,21 +442,21 @@ public class Generated_collections_Test {
   }
   @Test
   public void list_collection_int_item39_3611639268150619264() throws Throwable {
-    Assert.assertEquals("Expected: " + false + ", but was: " + TreePVector.<Number>empty().plus((Number) new BigInteger("1")).plus((Number) new BigInteger("2")).stream().allMatch(new Predicate<Number>() {
+    Assert.assertEquals("Expected: " + false + ", but was: " + TreePVector.<Number>empty().plus(new BigInteger("1")).plus(new BigInteger("2")).stream().allMatch(new Predicate<Number>() {
       public boolean test(Number o) {
         return new Function<ParameterSetWrapper, Boolean>() {
           public Boolean apply(ParameterSetWrapper param) {
             Number it = (Number) param.parameters.get(0);
-            return AH.inRange(it, (Number) new BigInteger("0"), false, (Number) new BigInteger("1"), false);
+            return AH.inRange(it, new BigInteger("0"), false, new BigInteger("1"), false);
           }
         }.apply(new ParameterSetWrapper(o));
       }
-    }), (Object) false, (Object) TreePVector.<Number>empty().plus((Number) new BigInteger("1")).plus((Number) new BigInteger("2")).stream().allMatch(new Predicate<Number>() {
+    }), (Object) false, (Object) TreePVector.<Number>empty().plus(new BigInteger("1")).plus(new BigInteger("2")).stream().allMatch(new Predicate<Number>() {
       public boolean test(Number o) {
         return new Function<ParameterSetWrapper, Boolean>() {
           public Boolean apply(ParameterSetWrapper param) {
             Number it = (Number) param.parameters.get(0);
-            return AH.inRange(it, (Number) new BigInteger("0"), false, (Number) new BigInteger("1"), false);
+            return AH.inRange(it, new BigInteger("0"), false, new BigInteger("1"), false);
           }
         }.apply(new ParameterSetWrapper(o));
       }
@@ -469,7 +469,7 @@ public class Generated_collections_Test {
         return new Function<ParameterSetWrapper, Boolean>() {
           public Boolean apply(ParameterSetWrapper param) {
             Number it = (Number) param.parameters.get(0);
-            return AH.isEqual(it, (Number) new BigInteger("2"));
+            return AH.isEqual(it, new BigInteger("2"));
           }
         }.apply(new ParameterSetWrapper(o));
       }
@@ -478,7 +478,7 @@ public class Generated_collections_Test {
         return new Function<ParameterSetWrapper, Boolean>() {
           public Boolean apply(ParameterSetWrapper param) {
             Number it = (Number) param.parameters.get(0);
-            return AH.isEqual(it, (Number) new BigInteger("2"));
+            return AH.isEqual(it, new BigInteger("2"));
           }
         }.apply(new ParameterSetWrapper(o));
       }
@@ -486,21 +486,21 @@ public class Generated_collections_Test {
   }
   @Test
   public void list_collection_int_item42_3611639268154278096() throws Throwable {
-    Assert.assertEquals("Expected: " + false + ", but was: " + TreePVector.<Number>empty().plus((Number) new BigInteger("1")).stream().anyMatch(new Predicate<Number>() {
+    Assert.assertEquals("Expected: " + false + ", but was: " + TreePVector.<Number>empty().plus(new BigInteger("1")).stream().anyMatch(new Predicate<Number>() {
       public boolean test(Number o) {
         return new Function<ParameterSetWrapper, Boolean>() {
           public Boolean apply(ParameterSetWrapper param) {
             Number it = (Number) param.parameters.get(0);
-            return AH.isEqual(it, (Number) new BigInteger("2"));
+            return AH.isEqual(it, new BigInteger("2"));
           }
         }.apply(new ParameterSetWrapper(o));
       }
-    }), (Object) false, (Object) TreePVector.<Number>empty().plus((Number) new BigInteger("1")).stream().anyMatch(new Predicate<Number>() {
+    }), (Object) false, (Object) TreePVector.<Number>empty().plus(new BigInteger("1")).stream().anyMatch(new Predicate<Number>() {
       public boolean test(Number o) {
         return new Function<ParameterSetWrapper, Boolean>() {
           public Boolean apply(ParameterSetWrapper param) {
             Number it = (Number) param.parameters.get(0);
-            return AH.isEqual(it, (Number) new BigInteger("2"));
+            return AH.isEqual(it, new BigInteger("2"));
           }
         }.apply(new ParameterSetWrapper(o));
       }
@@ -508,21 +508,21 @@ public class Generated_collections_Test {
   }
   @Test
   public void list_collection_int_item43_3611639268154516119() throws Throwable {
-    Assert.assertEquals("Expected: " + true + ", but was: " + TreePVector.<Number>empty().plus((Number) new BigInteger("1")).plus((Number) new BigInteger("2")).stream().anyMatch(new Predicate<Number>() {
+    Assert.assertEquals("Expected: " + true + ", but was: " + TreePVector.<Number>empty().plus(new BigInteger("1")).plus(new BigInteger("2")).stream().anyMatch(new Predicate<Number>() {
       public boolean test(Number o) {
         return new Function<ParameterSetWrapper, Boolean>() {
           public Boolean apply(ParameterSetWrapper param) {
             Number it = (Number) param.parameters.get(0);
-            return AH.isEqual(it, (Number) new BigInteger("2"));
+            return AH.isEqual(it, new BigInteger("2"));
           }
         }.apply(new ParameterSetWrapper(o));
       }
-    }), (Object) true, (Object) TreePVector.<Number>empty().plus((Number) new BigInteger("1")).plus((Number) new BigInteger("2")).stream().anyMatch(new Predicate<Number>() {
+    }), (Object) true, (Object) TreePVector.<Number>empty().plus(new BigInteger("1")).plus(new BigInteger("2")).stream().anyMatch(new Predicate<Number>() {
       public boolean test(Number o) {
         return new Function<ParameterSetWrapper, Boolean>() {
           public Boolean apply(ParameterSetWrapper param) {
             Number it = (Number) param.parameters.get(0);
-            return AH.isEqual(it, (Number) new BigInteger("2"));
+            return AH.isEqual(it, new BigInteger("2"));
           }
         }.apply(new ParameterSetWrapper(o));
       }
@@ -530,39 +530,39 @@ public class Generated_collections_Test {
   }
   @Test
   public void list_collection_int_item45_3611639268155353364() throws Throwable {
-    Assert.assertEquals("Expected: " + false + ", but was: " + TreePVector.<Number>from(new ArrayList<Number>()).contains((Number) new BigInteger("2")), (Object) false, (Object) TreePVector.<Number>from(new ArrayList<Number>()).contains((Number) new BigInteger("2")));
+    Assert.assertEquals("Expected: " + false + ", but was: " + TreePVector.<Number>from(new ArrayList<Number>()).contains(new BigInteger("2")), (Object) false, (Object) TreePVector.<Number>from(new ArrayList<Number>()).contains(new BigInteger("2")));
   }
   @Test
   public void list_collection_int_item46_3611639268155872661() throws Throwable {
-    Assert.assertEquals("Expected: " + true + ", but was: " + TreePVector.<Number>empty().plus((Number) new BigInteger("1")).contains((Number) new BigInteger("1")), (Object) true, (Object) TreePVector.<Number>empty().plus((Number) new BigInteger("1")).contains((Number) new BigInteger("1")));
+    Assert.assertEquals("Expected: " + true + ", but was: " + TreePVector.<Number>empty().plus(new BigInteger("1")).contains(new BigInteger("1")), (Object) true, (Object) TreePVector.<Number>empty().plus(new BigInteger("1")).contains(new BigInteger("1")));
   }
   @Test
   public void list_collection_int_item47_3611639268156003731() throws Throwable {
-    Assert.assertEquals("Expected: " + true + ", but was: " + TreePVector.<Number>empty().plus((Number) new BigInteger("1")).plus((Number) new BigInteger("2")).contains((Number) new BigInteger("2")), (Object) true, (Object) TreePVector.<Number>empty().plus((Number) new BigInteger("1")).plus((Number) new BigInteger("2")).contains((Number) new BigInteger("2")));
+    Assert.assertEquals("Expected: " + true + ", but was: " + TreePVector.<Number>empty().plus(new BigInteger("1")).plus(new BigInteger("2")).contains(new BigInteger("2")), (Object) true, (Object) TreePVector.<Number>empty().plus(new BigInteger("1")).plus(new BigInteger("2")).contains(new BigInteger("2")));
   }
   @Test
   public void list_collection_int_item49_3611639268156793635() throws Throwable {
-    Assert.assertEquals("Expected: " + TreePVector.<Number>from(new ArrayList<Number>()) + ", but was: " + TreePVector.<Number>from(TreePVector.<Number>from(new ArrayList<Number>()).stream().distinct().collect(Collectors.<Number>toList())), (Object) TreePVector.<Number>from(new ArrayList<Number>()), (Object) TreePVector.<Number>from(TreePVector.<Number>from(new ArrayList<Number>()).stream().distinct().collect(Collectors.<Number>toList())));
+    Assert.assertEquals("Expected: " + TreePVector.<Number>from(new ArrayList<Number>()) + ", but was: " + TreePVector.<Number>from(TreePVector.<Number>from(new ArrayList<Number>()).stream().distinct().collect(Collectors.<Number>toList())), TreePVector.<Number>from(new ArrayList<Number>()), TreePVector.<Number>from(TreePVector.<Number>from(new ArrayList<Number>()).stream().distinct().collect(Collectors.<Number>toList())));
   }
   @Test
   public void list_collection_int_item50_3611639268157131244() throws Throwable {
-    Assert.assertEquals("Expected: " + TreePVector.<Number>empty().plus((Number) new BigInteger("1")) + ", but was: " + TreePVector.<Number>from(TreePVector.<Number>empty().plus((Number) new BigInteger("1")).stream().distinct().collect(Collectors.<Number>toList())), (Object) TreePVector.<Number>empty().plus((Number) new BigInteger("1")), (Object) TreePVector.<Number>from(TreePVector.<Number>empty().plus((Number) new BigInteger("1")).stream().distinct().collect(Collectors.<Number>toList())));
+    Assert.assertEquals("Expected: " + TreePVector.<Number>empty().plus(new BigInteger("1")) + ", but was: " + TreePVector.<Number>from(TreePVector.<Number>empty().plus(new BigInteger("1")).stream().distinct().collect(Collectors.<Number>toList())), TreePVector.<Number>empty().plus(new BigInteger("1")), TreePVector.<Number>from(TreePVector.<Number>empty().plus(new BigInteger("1")).stream().distinct().collect(Collectors.<Number>toList())));
   }
   @Test
   public void list_collection_int_item51_3611639268157328127() throws Throwable {
-    Assert.assertEquals("Expected: " + TreePVector.<Number>empty().plus((Number) new BigInteger("1")).plus((Number) new BigInteger("2")) + ", but was: " + TreePVector.<Number>from(TreePVector.<Number>empty().plus((Number) new BigInteger("1")).plus((Number) new BigInteger("2")).plus((Number) new BigInteger("2")).stream().distinct().collect(Collectors.<Number>toList())), (Object) TreePVector.<Number>empty().plus((Number) new BigInteger("1")).plus((Number) new BigInteger("2")), (Object) TreePVector.<Number>from(TreePVector.<Number>empty().plus((Number) new BigInteger("1")).plus((Number) new BigInteger("2")).plus((Number) new BigInteger("2")).stream().distinct().collect(Collectors.<Number>toList())));
+    Assert.assertEquals("Expected: " + TreePVector.<Number>empty().plus(new BigInteger("1")).plus(new BigInteger("2")) + ", but was: " + TreePVector.<Number>from(TreePVector.<Number>empty().plus(new BigInteger("1")).plus(new BigInteger("2")).plus(new BigInteger("2")).stream().distinct().collect(Collectors.<Number>toList())), TreePVector.<Number>empty().plus(new BigInteger("1")).plus(new BigInteger("2")), TreePVector.<Number>from(TreePVector.<Number>empty().plus(new BigInteger("1")).plus(new BigInteger("2")).plus(new BigInteger("2")).stream().distinct().collect(Collectors.<Number>toList())));
   }
   @Test
   public void list_collection_int_item53_3611639268158908029() throws Throwable {
-    Assert.assertTrue("Expected: " + (Number) new BigInteger("0") + ", but was: " + BigInteger.valueOf(TreePVector.<Number>from(new ArrayList<Number>()).size()), EqualsTestOp.matches((Number) new BigInteger("0"), BigInteger.valueOf(TreePVector.<Number>from(new ArrayList<Number>()).size())));
+    Assert.assertTrue("Expected: " + new BigInteger("0") + ", but was: " + BigInteger.valueOf(TreePVector.<Number>from(new ArrayList<Number>()).size()), EqualsTestOp.matches(new BigInteger("0"), BigInteger.valueOf(TreePVector.<Number>from(new ArrayList<Number>()).size())));
   }
   @Test
   public void list_collection_int_item54_3611639268159172485() throws Throwable {
-    Assert.assertTrue("Expected: " + (Number) new BigInteger("1") + ", but was: " + BigInteger.valueOf(TreePVector.<Number>empty().plus((Number) new BigInteger("1")).size()), EqualsTestOp.matches((Number) new BigInteger("1"), BigInteger.valueOf(TreePVector.<Number>empty().plus((Number) new BigInteger("1")).size())));
+    Assert.assertTrue("Expected: " + new BigInteger("1") + ", but was: " + BigInteger.valueOf(TreePVector.<Number>empty().plus(new BigInteger("1")).size()), EqualsTestOp.matches(new BigInteger("1"), BigInteger.valueOf(TreePVector.<Number>empty().plus(new BigInteger("1")).size())));
   }
   @Test
   public void list_collection_int_item55_3611639268159271416() throws Throwable {
-    Assert.assertTrue("Expected: " + (Number) new BigInteger("2") + ", but was: " + BigInteger.valueOf(TreePVector.<Number>empty().plus((Number) new BigInteger("1")).plus((Number) new BigInteger("2")).size()), EqualsTestOp.matches((Number) new BigInteger("2"), BigInteger.valueOf(TreePVector.<Number>empty().plus((Number) new BigInteger("1")).plus((Number) new BigInteger("2")).size())));
+    Assert.assertTrue("Expected: " + new BigInteger("2") + ", but was: " + BigInteger.valueOf(TreePVector.<Number>empty().plus(new BigInteger("1")).plus(new BigInteger("2")).size()), EqualsTestOp.matches(new BigInteger("2"), BigInteger.valueOf(TreePVector.<Number>empty().plus(new BigInteger("1")).plus(new BigInteger("2")).size())));
   }
   @Test
   public void list_collection_int_item57_3611639268160503050() throws Throwable {
@@ -571,16 +571,16 @@ public class Generated_collections_Test {
         return new Function<ParameterSetWrapper, Number>() {
           public Number apply(ParameterSetWrapper param) {
             Number it = (Number) param.parameters.get(0);
-            return AH.add(it, (Number) new BigInteger("1"));
+            return AH.add(it, new BigInteger("1"));
           }
         }.apply(new ParameterSetWrapper(param));
       }
-    }).collect(Collectors.<Number>toList())), (Object) TreePVector.<Number>from(new ArrayList<Number>()), (Object) TreePVector.<Number>from(TreePVector.<Number>from(new ArrayList<Number>()).stream().map(new Function<Number, Number>() {
+    }).collect(Collectors.<Number>toList())), TreePVector.<Number>from(new ArrayList<Number>()), TreePVector.<Number>from(TreePVector.<Number>from(new ArrayList<Number>()).stream().map(new Function<Number, Number>() {
       public Number apply(Number param) {
         return new Function<ParameterSetWrapper, Number>() {
           public Number apply(ParameterSetWrapper param) {
             Number it = (Number) param.parameters.get(0);
-            return AH.add(it, (Number) new BigInteger("1"));
+            return AH.add(it, new BigInteger("1"));
           }
         }.apply(new ParameterSetWrapper(param));
       }
@@ -588,21 +588,21 @@ public class Generated_collections_Test {
   }
   @Test
   public void list_collection_int_item58_3611639268161695962() throws Throwable {
-    Assert.assertEquals("Expected: " + TreePVector.<Number>empty().plus((Number) new BigInteger("2")) + ", but was: " + TreePVector.<Number>from(TreePVector.<Number>empty().plus((Number) new BigInteger("1")).stream().map(new Function<Number, Number>() {
+    Assert.assertEquals("Expected: " + TreePVector.<Number>empty().plus(new BigInteger("2")) + ", but was: " + TreePVector.<Number>from(TreePVector.<Number>empty().plus(new BigInteger("1")).stream().map(new Function<Number, Number>() {
       public Number apply(Number param) {
         return new Function<ParameterSetWrapper, Number>() {
           public Number apply(ParameterSetWrapper param) {
             Number it = (Number) param.parameters.get(0);
-            return AH.add(it, (Number) new BigInteger("1"));
+            return AH.add(it, new BigInteger("1"));
           }
         }.apply(new ParameterSetWrapper(param));
       }
-    }).collect(Collectors.<Number>toList())), (Object) TreePVector.<Number>empty().plus((Number) new BigInteger("2")), (Object) TreePVector.<Number>from(TreePVector.<Number>empty().plus((Number) new BigInteger("1")).stream().map(new Function<Number, Number>() {
+    }).collect(Collectors.<Number>toList())), TreePVector.<Number>empty().plus(new BigInteger("2")), TreePVector.<Number>from(TreePVector.<Number>empty().plus(new BigInteger("1")).stream().map(new Function<Number, Number>() {
       public Number apply(Number param) {
         return new Function<ParameterSetWrapper, Number>() {
           public Number apply(ParameterSetWrapper param) {
             Number it = (Number) param.parameters.get(0);
-            return AH.add(it, (Number) new BigInteger("1"));
+            return AH.add(it, new BigInteger("1"));
           }
         }.apply(new ParameterSetWrapper(param));
       }
@@ -610,21 +610,21 @@ public class Generated_collections_Test {
   }
   @Test
   public void list_collection_int_item59_3611639268161876331() throws Throwable {
-    Assert.assertEquals("Expected: " + TreePVector.<Number>empty().plus((Number) new BigInteger("2")).plus((Number) new BigInteger("3")) + ", but was: " + TreePVector.<Number>from(TreePVector.<Number>empty().plus((Number) new BigInteger("1")).plus((Number) new BigInteger("2")).stream().map(new Function<Number, Number>() {
+    Assert.assertEquals("Expected: " + TreePVector.<Number>empty().plus(new BigInteger("2")).plus(new BigInteger("3")) + ", but was: " + TreePVector.<Number>from(TreePVector.<Number>empty().plus(new BigInteger("1")).plus(new BigInteger("2")).stream().map(new Function<Number, Number>() {
       public Number apply(Number param) {
         return new Function<ParameterSetWrapper, Number>() {
           public Number apply(ParameterSetWrapper param) {
             Number it = (Number) param.parameters.get(0);
-            return AH.add(it, (Number) new BigInteger("1"));
+            return AH.add(it, new BigInteger("1"));
           }
         }.apply(new ParameterSetWrapper(param));
       }
-    }).collect(Collectors.<Number>toList())), (Object) TreePVector.<Number>empty().plus((Number) new BigInteger("2")).plus((Number) new BigInteger("3")), (Object) TreePVector.<Number>from(TreePVector.<Number>empty().plus((Number) new BigInteger("1")).plus((Number) new BigInteger("2")).stream().map(new Function<Number, Number>() {
+    }).collect(Collectors.<Number>toList())), TreePVector.<Number>empty().plus(new BigInteger("2")).plus(new BigInteger("3")), TreePVector.<Number>from(TreePVector.<Number>empty().plus(new BigInteger("1")).plus(new BigInteger("2")).stream().map(new Function<Number, Number>() {
       public Number apply(Number param) {
         return new Function<ParameterSetWrapper, Number>() {
           public Number apply(ParameterSetWrapper param) {
             Number it = (Number) param.parameters.get(0);
-            return AH.add(it, (Number) new BigInteger("1"));
+            return AH.add(it, new BigInteger("1"));
           }
         }.apply(new ParameterSetWrapper(param));
       }
@@ -637,16 +637,16 @@ public class Generated_collections_Test {
         return new Function<ParameterSetWrapper, Boolean>() {
           public Boolean apply(ParameterSetWrapper param) {
             Number it = (Number) param.parameters.get(0);
-            return AH.isEqual(it, (Number) new BigInteger("2"));
+            return AH.isEqual(it, new BigInteger("2"));
           }
         }.apply(new ParameterSetWrapper(o));
       }
-    }).collect(Collectors.<Number>toList())), (Object) TreePVector.<Number>from(new ArrayList<Number>()), (Object) TreePVector.<Number>from(TreePVector.<Number>from(new ArrayList<Number>()).stream().filter(new Predicate<Number>() {
+    }).collect(Collectors.<Number>toList())), TreePVector.<Number>from(new ArrayList<Number>()), TreePVector.<Number>from(TreePVector.<Number>from(new ArrayList<Number>()).stream().filter(new Predicate<Number>() {
       public boolean test(Number o) {
         return new Function<ParameterSetWrapper, Boolean>() {
           public Boolean apply(ParameterSetWrapper param) {
             Number it = (Number) param.parameters.get(0);
-            return AH.isEqual(it, (Number) new BigInteger("2"));
+            return AH.isEqual(it, new BigInteger("2"));
           }
         }.apply(new ParameterSetWrapper(o));
       }
@@ -654,21 +654,21 @@ public class Generated_collections_Test {
   }
   @Test
   public void list_collection_int_item62_3611639268164129514() throws Throwable {
-    Assert.assertEquals("Expected: " + TreePVector.<Number>from(new ArrayList<Number>()) + ", but was: " + TreePVector.<Number>from(TreePVector.<Number>empty().plus((Number) new BigInteger("1")).stream().filter(new Predicate<Number>() {
+    Assert.assertEquals("Expected: " + TreePVector.<Number>from(new ArrayList<Number>()) + ", but was: " + TreePVector.<Number>from(TreePVector.<Number>empty().plus(new BigInteger("1")).stream().filter(new Predicate<Number>() {
       public boolean test(Number o) {
         return new Function<ParameterSetWrapper, Boolean>() {
           public Boolean apply(ParameterSetWrapper param) {
             Number it = (Number) param.parameters.get(0);
-            return AH.isEqual(it, (Number) new BigInteger("2"));
+            return AH.isEqual(it, new BigInteger("2"));
           }
         }.apply(new ParameterSetWrapper(o));
       }
-    }).collect(Collectors.<Number>toList())), (Object) TreePVector.<Number>from(new ArrayList<Number>()), (Object) TreePVector.<Number>from(TreePVector.<Number>empty().plus((Number) new BigInteger("1")).stream().filter(new Predicate<Number>() {
+    }).collect(Collectors.<Number>toList())), TreePVector.<Number>from(new ArrayList<Number>()), TreePVector.<Number>from(TreePVector.<Number>empty().plus(new BigInteger("1")).stream().filter(new Predicate<Number>() {
       public boolean test(Number o) {
         return new Function<ParameterSetWrapper, Boolean>() {
           public Boolean apply(ParameterSetWrapper param) {
             Number it = (Number) param.parameters.get(0);
-            return AH.isEqual(it, (Number) new BigInteger("2"));
+            return AH.isEqual(it, new BigInteger("2"));
           }
         }.apply(new ParameterSetWrapper(o));
       }
@@ -676,21 +676,21 @@ public class Generated_collections_Test {
   }
   @Test
   public void list_collection_int_item63_3611639268164318107() throws Throwable {
-    Assert.assertEquals("Expected: " + TreePVector.<Number>empty().plus((Number) new BigInteger("2")) + ", but was: " + TreePVector.<Number>from(TreePVector.<Number>empty().plus((Number) new BigInteger("1")).plus((Number) new BigInteger("2")).stream().filter(new Predicate<Number>() {
+    Assert.assertEquals("Expected: " + TreePVector.<Number>empty().plus(new BigInteger("2")) + ", but was: " + TreePVector.<Number>from(TreePVector.<Number>empty().plus(new BigInteger("1")).plus(new BigInteger("2")).stream().filter(new Predicate<Number>() {
       public boolean test(Number o) {
         return new Function<ParameterSetWrapper, Boolean>() {
           public Boolean apply(ParameterSetWrapper param) {
             Number it = (Number) param.parameters.get(0);
-            return AH.isEqual(it, (Number) new BigInteger("2"));
+            return AH.isEqual(it, new BigInteger("2"));
           }
         }.apply(new ParameterSetWrapper(o));
       }
-    }).collect(Collectors.<Number>toList())), (Object) TreePVector.<Number>empty().plus((Number) new BigInteger("2")), (Object) TreePVector.<Number>from(TreePVector.<Number>empty().plus((Number) new BigInteger("1")).plus((Number) new BigInteger("2")).stream().filter(new Predicate<Number>() {
+    }).collect(Collectors.<Number>toList())), TreePVector.<Number>empty().plus(new BigInteger("2")), TreePVector.<Number>from(TreePVector.<Number>empty().plus(new BigInteger("1")).plus(new BigInteger("2")).stream().filter(new Predicate<Number>() {
       public boolean test(Number o) {
         return new Function<ParameterSetWrapper, Boolean>() {
           public Boolean apply(ParameterSetWrapper param) {
             Number it = (Number) param.parameters.get(0);
-            return AH.isEqual(it, (Number) new BigInteger("2"));
+            return AH.isEqual(it, new BigInteger("2"));
           }
         }.apply(new ParameterSetWrapper(o));
       }
@@ -698,14 +698,14 @@ public class Generated_collections_Test {
   }
   @Test
   public void list_collection_int_item65_4931785860350932129() throws Throwable {
-    Assert.assertTrue("Expected: " + (Number) new BigInteger("5") + ", but was: " + (((_FunctionTypes._return_P0_E0<Number>) () -> {
-      Number seed = (Number) new BigInteger("5");
+    Assert.assertTrue("Expected: " + new BigInteger("5") + ", but was: " + (((_FunctionTypes._return_P0_E0<Number>) () -> {
+      Number seed = new BigInteger("5");
       for (Number current : ListSequence.fromList(TreePVector.<Number>from(new ArrayList<Number>()))) {
         seed = AH.add(seed, current);
       }
       return seed;
-    }).invoke()), EqualsTestOp.matches((Number) new BigInteger("5"), ((_FunctionTypes._return_P0_E0<Number>) () -> {
-      Number seed = (Number) new BigInteger("5");
+    }).invoke()), EqualsTestOp.matches(new BigInteger("5"), ((_FunctionTypes._return_P0_E0<Number>) () -> {
+      Number seed = new BigInteger("5");
       for (Number current : ListSequence.fromList(TreePVector.<Number>from(new ArrayList<Number>()))) {
         seed = AH.add(seed, current);
       }
@@ -714,15 +714,15 @@ public class Generated_collections_Test {
   }
   @Test
   public void list_collection_int_item66_4931785860350999217() throws Throwable {
-    Assert.assertTrue("Expected: " + (Number) new BigInteger("6") + ", but was: " + (((_FunctionTypes._return_P0_E0<Number>) () -> {
-      Number seed = (Number) new BigInteger("5");
-      for (Number current : ListSequence.fromList(TreePVector.<Number>empty().plus((Number) new BigInteger("1")))) {
+    Assert.assertTrue("Expected: " + new BigInteger("6") + ", but was: " + (((_FunctionTypes._return_P0_E0<Number>) () -> {
+      Number seed = new BigInteger("5");
+      for (Number current : ListSequence.fromList(TreePVector.<Number>empty().plus(new BigInteger("1")))) {
         seed = AH.add(seed, current);
       }
       return seed;
-    }).invoke()), EqualsTestOp.matches((Number) new BigInteger("6"), ((_FunctionTypes._return_P0_E0<Number>) () -> {
-      Number seed = (Number) new BigInteger("5");
-      for (Number current : ListSequence.fromList(TreePVector.<Number>empty().plus((Number) new BigInteger("1")))) {
+    }).invoke()), EqualsTestOp.matches(new BigInteger("6"), ((_FunctionTypes._return_P0_E0<Number>) () -> {
+      Number seed = new BigInteger("5");
+      for (Number current : ListSequence.fromList(TreePVector.<Number>empty().plus(new BigInteger("1")))) {
         seed = AH.add(seed, current);
       }
       return seed;
@@ -730,15 +730,15 @@ public class Generated_collections_Test {
   }
   @Test
   public void list_collection_int_item67_4931785860351000720() throws Throwable {
-    Assert.assertTrue("Expected: " + (Number) new BigInteger("8") + ", but was: " + (((_FunctionTypes._return_P0_E0<Number>) () -> {
-      Number seed = (Number) new BigInteger("5");
-      for (Number current : ListSequence.fromList(TreePVector.<Number>empty().plus((Number) new BigInteger("1")).plus((Number) new BigInteger("2")))) {
+    Assert.assertTrue("Expected: " + new BigInteger("8") + ", but was: " + (((_FunctionTypes._return_P0_E0<Number>) () -> {
+      Number seed = new BigInteger("5");
+      for (Number current : ListSequence.fromList(TreePVector.<Number>empty().plus(new BigInteger("1")).plus(new BigInteger("2")))) {
         seed = AH.add(seed, current);
       }
       return seed;
-    }).invoke()), EqualsTestOp.matches((Number) new BigInteger("8"), ((_FunctionTypes._return_P0_E0<Number>) () -> {
-      Number seed = (Number) new BigInteger("5");
-      for (Number current : ListSequence.fromList(TreePVector.<Number>empty().plus((Number) new BigInteger("1")).plus((Number) new BigInteger("2")))) {
+    }).invoke()), EqualsTestOp.matches(new BigInteger("8"), ((_FunctionTypes._return_P0_E0<Number>) () -> {
+      Number seed = new BigInteger("5");
+      for (Number current : ListSequence.fromList(TreePVector.<Number>empty().plus(new BigInteger("1")).plus(new BigInteger("2")))) {
         seed = AH.add(seed, current);
       }
       return seed;
@@ -746,32 +746,32 @@ public class Generated_collections_Test {
   }
   @Test
   public void list_collection_int_item70_3611639268166547040() throws Throwable {
-    Assert.assertEquals("Expected: " + TreePVector.<Number>from(new ArrayList<Number>()) + ", but was: " + TreePVector.from(TreePVector.<Number>from(new ArrayList<Number>())), (Object) TreePVector.<Number>from(new ArrayList<Number>()), (Object) TreePVector.from(TreePVector.<Number>from(new ArrayList<Number>())));
+    Assert.assertEquals("Expected: " + TreePVector.<Number>from(new ArrayList<Number>()) + ", but was: " + TreePVector.from(TreePVector.<Number>from(new ArrayList<Number>())), TreePVector.<Number>from(new ArrayList<Number>()), TreePVector.from(TreePVector.<Number>from(new ArrayList<Number>())));
   }
   @Test
   public void list_collection_int_item71_3611639268167287590() throws Throwable {
-    Assert.assertEquals("Expected: " + TreePVector.<Number>empty().plus((Number) new BigInteger("1")) + ", but was: " + TreePVector.from(TreePVector.<Number>empty().plus((Number) new BigInteger("1"))), (Object) TreePVector.<Number>empty().plus((Number) new BigInteger("1")), (Object) TreePVector.from(TreePVector.<Number>empty().plus((Number) new BigInteger("1"))));
+    Assert.assertEquals("Expected: " + TreePVector.<Number>empty().plus(new BigInteger("1")) + ", but was: " + TreePVector.from(TreePVector.<Number>empty().plus(new BigInteger("1"))), TreePVector.<Number>empty().plus(new BigInteger("1")), TreePVector.from(TreePVector.<Number>empty().plus(new BigInteger("1"))));
   }
   @Test
   public void list_collection_int_item72_3611639268167313373() throws Throwable {
-    Assert.assertEquals("Expected: " + TreePVector.<Number>empty().plus((Number) new BigInteger("1")).plus((Number) new BigInteger("2")) + ", but was: " + TreePVector.from(TreePVector.<Number>empty().plus((Number) new BigInteger("1")).plus((Number) new BigInteger("2"))), (Object) TreePVector.<Number>empty().plus((Number) new BigInteger("1")).plus((Number) new BigInteger("2")), (Object) TreePVector.from(TreePVector.<Number>empty().plus((Number) new BigInteger("1")).plus((Number) new BigInteger("2"))));
+    Assert.assertEquals("Expected: " + TreePVector.<Number>empty().plus(new BigInteger("1")).plus(new BigInteger("2")) + ", but was: " + TreePVector.from(TreePVector.<Number>empty().plus(new BigInteger("1")).plus(new BigInteger("2"))), TreePVector.<Number>empty().plus(new BigInteger("1")).plus(new BigInteger("2")), TreePVector.from(TreePVector.<Number>empty().plus(new BigInteger("1")).plus(new BigInteger("2"))));
   }
   @Test
   public void list_collection_int_item74_3611639268168065530() throws Throwable {
-    Assert.assertEquals("Expected: " + HashTreePSet.from(new HashSet<Number>()) + ", but was: " + HashTreePSet.from(TreePVector.<Number>from(new ArrayList<Number>())), (Object) HashTreePSet.from(new HashSet<Number>()), (Object) HashTreePSet.from(TreePVector.<Number>from(new ArrayList<Number>())));
+    Assert.assertEquals("Expected: " + HashTreePSet.from(new HashSet<Number>()) + ", but was: " + HashTreePSet.from(TreePVector.<Number>from(new ArrayList<Number>())), HashTreePSet.from(new HashSet<Number>()), HashTreePSet.from(TreePVector.<Number>from(new ArrayList<Number>())));
   }
   @Test
   public void list_collection_int_item75_3611639268168757253() throws Throwable {
-    Assert.assertEquals("Expected: " + HashTreePSet.from(Arrays.asList((Number) new BigInteger("1"))) + ", but was: " + HashTreePSet.from(TreePVector.<Number>empty().plus((Number) new BigInteger("1"))), (Object) HashTreePSet.from(Arrays.asList((Number) new BigInteger("1"))), (Object) HashTreePSet.from(TreePVector.<Number>empty().plus((Number) new BigInteger("1"))));
+    Assert.assertEquals("Expected: " + HashTreePSet.from(Arrays.asList((Number) new BigInteger("1"))) + ", but was: " + HashTreePSet.from(TreePVector.<Number>empty().plus(new BigInteger("1"))), HashTreePSet.from(Arrays.asList((Number) new BigInteger("1"))), HashTreePSet.from(TreePVector.<Number>empty().plus(new BigInteger("1"))));
   }
   @Test
   public void list_collection_int_item76_3611639268169035759() throws Throwable {
-    Assert.assertEquals("Expected: " + HashTreePSet.from(Arrays.asList((Number) new BigInteger("1"), (Number) new BigInteger("2"))) + ", but was: " + HashTreePSet.from(TreePVector.<Number>empty().plus((Number) new BigInteger("1")).plus((Number) new BigInteger("2")).plus((Number) new BigInteger("2"))), (Object) HashTreePSet.from(Arrays.asList((Number) new BigInteger("1"), (Number) new BigInteger("2"))), (Object) HashTreePSet.from(TreePVector.<Number>empty().plus((Number) new BigInteger("1")).plus((Number) new BigInteger("2")).plus((Number) new BigInteger("2"))));
+    Assert.assertEquals("Expected: " + HashTreePSet.from(Arrays.asList((Number) new BigInteger("1"), (Number) new BigInteger("2"))) + ", but was: " + HashTreePSet.from(TreePVector.<Number>empty().plus(new BigInteger("1")).plus(new BigInteger("2")).plus(new BigInteger("2"))), HashTreePSet.from(Arrays.asList((Number) new BigInteger("1"), (Number) new BigInteger("2"))), HashTreePSet.from(TreePVector.<Number>empty().plus(new BigInteger("1")).plus(new BigInteger("2")).plus(new BigInteger("2"))));
   }
   @Test
   public void list_collection_int_item78_2143211017889387420() throws Throwable {
     try {
-      if ((Number) TreePVector.<Number>from(new ArrayList<Number>()).get(((Number) new BigInteger("0")).intValue()) == null) {
+      if (TreePVector.<Number>from(new ArrayList<Number>()).get(new BigInteger("0").intValue()) == null) {
         throw new NullPointerException("No Result in Confail Testitem");
       }
       Assert.fail("Constraint failed");
@@ -781,16 +781,16 @@ public class Generated_collections_Test {
   }
   @Test
   public void list_collection_int_item79_2143211017889370569() throws Throwable {
-    Assert.assertTrue("Expected: " + (Number) new BigInteger("1") + ", but was: " + (Number) TreePVector.<Number>empty().plus((Number) new BigInteger("1")).get(((Number) new BigInteger("0")).intValue()), EqualsTestOp.matches((Number) new BigInteger("1"), (Number) TreePVector.<Number>empty().plus((Number) new BigInteger("1")).get(((Number) new BigInteger("0")).intValue())));
+    Assert.assertTrue("Expected: " + new BigInteger("1") + ", but was: " + TreePVector.<Number>empty().plus(new BigInteger("1")).get(new BigInteger("0").intValue()), EqualsTestOp.matches(new BigInteger("1"), TreePVector.<Number>empty().plus(new BigInteger("1")).get(new BigInteger("0").intValue())));
   }
   @Test
   public void list_collection_int_item80_3611639268179362190() throws Throwable {
-    Assert.assertTrue("Expected: " + (Number) new BigInteger("2") + ", but was: " + (Number) TreePVector.<Number>empty().plus((Number) new BigInteger("1")).plus((Number) new BigInteger("2")).get(((Number) new BigInteger("1")).intValue()), EqualsTestOp.matches((Number) new BigInteger("2"), (Number) TreePVector.<Number>empty().plus((Number) new BigInteger("1")).plus((Number) new BigInteger("2")).get(((Number) new BigInteger("1")).intValue())));
+    Assert.assertTrue("Expected: " + new BigInteger("2") + ", but was: " + TreePVector.<Number>empty().plus(new BigInteger("1")).plus(new BigInteger("2")).get(new BigInteger("1").intValue()), EqualsTestOp.matches(new BigInteger("2"), TreePVector.<Number>empty().plus(new BigInteger("1")).plus(new BigInteger("2")).get(new BigInteger("1").intValue())));
   }
   @Test
   public void list_collection_int_item81_2143211017889405723() throws Throwable {
     try {
-      if ((Number) TreePVector.<Number>empty().plus((Number) new BigInteger("1")).plus((Number) new BigInteger("2")).get(((Number) new BigInteger("7")).intValue()) == null) {
+      if (TreePVector.<Number>empty().plus(new BigInteger("1")).plus(new BigInteger("2")).get(new BigInteger("7").intValue()) == null) {
         throw new NullPointerException("No Result in Confail Testitem");
       }
       Assert.fail("Constraint failed");
@@ -801,7 +801,7 @@ public class Generated_collections_Test {
   @Test
   public void list_collection_int_item83_2143211017889445531() throws Throwable {
     try {
-      if ((Number) TreePVector.<Number>from(new ArrayList<Number>()).get(((Number) new BigInteger("0")).intValue()) == null) {
+      if (TreePVector.<Number>from(new ArrayList<Number>()).get(new BigInteger("0").intValue()) == null) {
         throw new NullPointerException("No Result in Confail Testitem");
       }
       Assert.fail("Constraint failed");
@@ -811,16 +811,16 @@ public class Generated_collections_Test {
   }
   @Test
   public void list_collection_int_item84_2143211017889445524() throws Throwable {
-    Assert.assertTrue("Expected: " + (Number) new BigInteger("1") + ", but was: " + (Number) TreePVector.<Number>empty().plus((Number) new BigInteger("1")).get(((Number) new BigInteger("0")).intValue()), EqualsTestOp.matches((Number) new BigInteger("1"), (Number) TreePVector.<Number>empty().plus((Number) new BigInteger("1")).get(((Number) new BigInteger("0")).intValue())));
+    Assert.assertTrue("Expected: " + new BigInteger("1") + ", but was: " + TreePVector.<Number>empty().plus(new BigInteger("1")).get(new BigInteger("0").intValue()), EqualsTestOp.matches(new BigInteger("1"), TreePVector.<Number>empty().plus(new BigInteger("1")).get(new BigInteger("0").intValue())));
   }
   @Test
   public void list_collection_int_item85_2143211017889445517() throws Throwable {
-    Assert.assertTrue("Expected: " + (Number) new BigInteger("2") + ", but was: " + (Number) TreePVector.<Number>empty().plus((Number) new BigInteger("1")).plus((Number) new BigInteger("2")).get(((Number) new BigInteger("1")).intValue()), EqualsTestOp.matches((Number) new BigInteger("2"), (Number) TreePVector.<Number>empty().plus((Number) new BigInteger("1")).plus((Number) new BigInteger("2")).get(((Number) new BigInteger("1")).intValue())));
+    Assert.assertTrue("Expected: " + new BigInteger("2") + ", but was: " + TreePVector.<Number>empty().plus(new BigInteger("1")).plus(new BigInteger("2")).get(new BigInteger("1").intValue()), EqualsTestOp.matches(new BigInteger("2"), TreePVector.<Number>empty().plus(new BigInteger("1")).plus(new BigInteger("2")).get(new BigInteger("1").intValue())));
   }
   @Test
   public void list_collection_int_item86_2143211017889445512() throws Throwable {
     try {
-      if ((Number) TreePVector.<Number>empty().plus((Number) new BigInteger("1")).plus((Number) new BigInteger("2")).get(((Number) new BigInteger("7")).intValue()) == null) {
+      if (TreePVector.<Number>empty().plus(new BigInteger("1")).plus(new BigInteger("2")).get(new BigInteger("7").intValue()) == null) {
         throw new NullPointerException("No Result in Confail Testitem");
       }
       Assert.fail("Constraint failed");
@@ -840,21 +840,21 @@ public class Generated_collections_Test {
   }
   @Test
   public void list_collection_int_item89_2143211017886140602() throws Throwable {
-    Assert.assertTrue("Expected: " + (Number) new BigInteger("1") + ", but was: " + (((_FunctionTypes._return_P0_E0<Number>) () -> {
-      PVector<Number> listResult = TreePVector.<Number>empty().plus((Number) new BigInteger("1"));
+    Assert.assertTrue("Expected: " + new BigInteger("1") + ", but was: " + (((_FunctionTypes._return_P0_E0<Number>) () -> {
+      PVector<Number> listResult = TreePVector.<Number>empty().plus(new BigInteger("1"));
       return (listResult.isEmpty() ? null : listResult.get(0));
-    }).invoke()), EqualsTestOp.matches((Number) new BigInteger("1"), ((_FunctionTypes._return_P0_E0<Number>) () -> {
-      PVector<Number> listResult = TreePVector.<Number>empty().plus((Number) new BigInteger("1"));
+    }).invoke()), EqualsTestOp.matches(new BigInteger("1"), ((_FunctionTypes._return_P0_E0<Number>) () -> {
+      PVector<Number> listResult = TreePVector.<Number>empty().plus(new BigInteger("1"));
       return (listResult.isEmpty() ? null : listResult.get(0));
     }).invoke()));
   }
   @Test
   public void list_collection_int_item90_3611639268182490791() throws Throwable {
-    Assert.assertTrue("Expected: " + (Number) new BigInteger("1") + ", but was: " + (((_FunctionTypes._return_P0_E0<Number>) () -> {
-      PVector<Number> listResult = TreePVector.<Number>empty().plus((Number) new BigInteger("1")).plus((Number) new BigInteger("2"));
+    Assert.assertTrue("Expected: " + new BigInteger("1") + ", but was: " + (((_FunctionTypes._return_P0_E0<Number>) () -> {
+      PVector<Number> listResult = TreePVector.<Number>empty().plus(new BigInteger("1")).plus(new BigInteger("2"));
       return (listResult.isEmpty() ? null : listResult.get(0));
-    }).invoke()), EqualsTestOp.matches((Number) new BigInteger("1"), ((_FunctionTypes._return_P0_E0<Number>) () -> {
-      PVector<Number> listResult = TreePVector.<Number>empty().plus((Number) new BigInteger("1")).plus((Number) new BigInteger("2"));
+    }).invoke()), EqualsTestOp.matches(new BigInteger("1"), ((_FunctionTypes._return_P0_E0<Number>) () -> {
+      PVector<Number> listResult = TreePVector.<Number>empty().plus(new BigInteger("1")).plus(new BigInteger("2"));
       return (listResult.isEmpty() ? null : listResult.get(0));
     }).invoke()));
   }
@@ -870,21 +870,21 @@ public class Generated_collections_Test {
   }
   @Test
   public void list_collection_int_item93_2143211017886257478() throws Throwable {
-    Assert.assertTrue("Expected: " + (Number) new BigInteger("1") + ", but was: " + (((_FunctionTypes._return_P0_E0<Number>) () -> {
-      PVector<Number> listResult = TreePVector.<Number>empty().plus((Number) new BigInteger("1"));
+    Assert.assertTrue("Expected: " + new BigInteger("1") + ", but was: " + (((_FunctionTypes._return_P0_E0<Number>) () -> {
+      PVector<Number> listResult = TreePVector.<Number>empty().plus(new BigInteger("1"));
       return (listResult.isEmpty() ? null : listResult.get(listResult.size() - 1));
-    }).invoke()), EqualsTestOp.matches((Number) new BigInteger("1"), ((_FunctionTypes._return_P0_E0<Number>) () -> {
-      PVector<Number> listResult = TreePVector.<Number>empty().plus((Number) new BigInteger("1"));
+    }).invoke()), EqualsTestOp.matches(new BigInteger("1"), ((_FunctionTypes._return_P0_E0<Number>) () -> {
+      PVector<Number> listResult = TreePVector.<Number>empty().plus(new BigInteger("1"));
       return (listResult.isEmpty() ? null : listResult.get(listResult.size() - 1));
     }).invoke()));
   }
   @Test
   public void list_collection_int_item94_3611639268183653169() throws Throwable {
-    Assert.assertTrue("Expected: " + (Number) new BigInteger("2") + ", but was: " + (((_FunctionTypes._return_P0_E0<Number>) () -> {
-      PVector<Number> listResult = TreePVector.<Number>empty().plus((Number) new BigInteger("1")).plus((Number) new BigInteger("2"));
+    Assert.assertTrue("Expected: " + new BigInteger("2") + ", but was: " + (((_FunctionTypes._return_P0_E0<Number>) () -> {
+      PVector<Number> listResult = TreePVector.<Number>empty().plus(new BigInteger("1")).plus(new BigInteger("2"));
       return (listResult.isEmpty() ? null : listResult.get(listResult.size() - 1));
-    }).invoke()), EqualsTestOp.matches((Number) new BigInteger("2"), ((_FunctionTypes._return_P0_E0<Number>) () -> {
-      PVector<Number> listResult = TreePVector.<Number>empty().plus((Number) new BigInteger("1")).plus((Number) new BigInteger("2"));
+    }).invoke()), EqualsTestOp.matches(new BigInteger("2"), ((_FunctionTypes._return_P0_E0<Number>) () -> {
+      PVector<Number> listResult = TreePVector.<Number>empty().plus(new BigInteger("1")).plus(new BigInteger("2"));
       return (listResult.isEmpty() ? null : listResult.get(listResult.size() - 1));
     }).invoke()));
   }
@@ -892,14 +892,14 @@ public class Generated_collections_Test {
   public void list_collection_int_item96_3611639268192447335() throws Throwable {
     Assert.assertEquals("Expected: " + TreePVector.<Number>from(new ArrayList<Number>()) + ", but was: " + (((_FunctionTypes._return_P0_E0<PVector<Number>>) () -> {
       PVector<Number> origList = TreePVector.<Number>from(new ArrayList<Number>());
-      int noOfElements = ((Number) new BigInteger("5")).intValue();
+      int noOfElements = new BigInteger("5").intValue();
       if (origList.size() <= noOfElements) {
         return origList;
       }
       return origList.subList(0, noOfElements);
-    }).invoke()), (Object) TreePVector.<Number>from(new ArrayList<Number>()), (Object) ((_FunctionTypes._return_P0_E0<PVector<Number>>) () -> {
+    }).invoke()), TreePVector.<Number>from(new ArrayList<Number>()), (Object) ((_FunctionTypes._return_P0_E0<PVector<Number>>) () -> {
       PVector<Number> origList = TreePVector.<Number>from(new ArrayList<Number>());
-      int noOfElements = ((Number) new BigInteger("5")).intValue();
+      int noOfElements = new BigInteger("5").intValue();
       if (origList.size() <= noOfElements) {
         return origList;
       }
@@ -909,15 +909,15 @@ public class Generated_collections_Test {
   @Test
   public void list_collection_int_item97_3611639268184000287() throws Throwable {
     Assert.assertEquals("Expected: " + TreePVector.<Number>from(new ArrayList<Number>()) + ", but was: " + (((_FunctionTypes._return_P0_E0<PVector<Number>>) () -> {
-      PVector<Number> origList = TreePVector.<Number>empty().plus((Number) new BigInteger("1"));
-      int noOfElements = ((Number) new BigInteger("0")).intValue();
+      PVector<Number> origList = TreePVector.<Number>empty().plus(new BigInteger("1"));
+      int noOfElements = new BigInteger("0").intValue();
       if (origList.size() <= noOfElements) {
         return origList;
       }
       return origList.subList(0, noOfElements);
-    }).invoke()), (Object) TreePVector.<Number>from(new ArrayList<Number>()), (Object) ((_FunctionTypes._return_P0_E0<PVector<Number>>) () -> {
-      PVector<Number> origList = TreePVector.<Number>empty().plus((Number) new BigInteger("1"));
-      int noOfElements = ((Number) new BigInteger("0")).intValue();
+    }).invoke()), TreePVector.<Number>from(new ArrayList<Number>()), (Object) ((_FunctionTypes._return_P0_E0<PVector<Number>>) () -> {
+      PVector<Number> origList = TreePVector.<Number>empty().plus(new BigInteger("1"));
+      int noOfElements = new BigInteger("0").intValue();
       if (origList.size() <= noOfElements) {
         return origList;
       }
@@ -926,16 +926,16 @@ public class Generated_collections_Test {
   }
   @Test
   public void list_collection_int_item98_3611639268189353363() throws Throwable {
-    Assert.assertEquals("Expected: " + TreePVector.<Number>empty().plus((Number) new BigInteger("1")) + ", but was: " + (((_FunctionTypes._return_P0_E0<PVector<Number>>) () -> {
-      PVector<Number> origList = TreePVector.<Number>empty().plus((Number) new BigInteger("1"));
-      int noOfElements = ((Number) new BigInteger("1")).intValue();
+    Assert.assertEquals("Expected: " + TreePVector.<Number>empty().plus(new BigInteger("1")) + ", but was: " + (((_FunctionTypes._return_P0_E0<PVector<Number>>) () -> {
+      PVector<Number> origList = TreePVector.<Number>empty().plus(new BigInteger("1"));
+      int noOfElements = new BigInteger("1").intValue();
       if (origList.size() <= noOfElements) {
         return origList;
       }
       return origList.subList(0, noOfElements);
-    }).invoke()), (Object) TreePVector.<Number>empty().plus((Number) new BigInteger("1")), (Object) ((_FunctionTypes._return_P0_E0<PVector<Number>>) () -> {
-      PVector<Number> origList = TreePVector.<Number>empty().plus((Number) new BigInteger("1"));
-      int noOfElements = ((Number) new BigInteger("1")).intValue();
+    }).invoke()), TreePVector.<Number>empty().plus(new BigInteger("1")), (Object) ((_FunctionTypes._return_P0_E0<PVector<Number>>) () -> {
+      PVector<Number> origList = TreePVector.<Number>empty().plus(new BigInteger("1"));
+      int noOfElements = new BigInteger("1").intValue();
       if (origList.size() <= noOfElements) {
         return origList;
       }
@@ -944,16 +944,16 @@ public class Generated_collections_Test {
   }
   @Test
   public void list_collection_int_item99_3611639268184406886() throws Throwable {
-    Assert.assertEquals("Expected: " + TreePVector.<Number>empty().plus((Number) new BigInteger("1")).plus((Number) new BigInteger("2")) + ", but was: " + (((_FunctionTypes._return_P0_E0<PVector<Number>>) () -> {
-      PVector<Number> origList = TreePVector.<Number>empty().plus((Number) new BigInteger("1")).plus((Number) new BigInteger("2"));
-      int noOfElements = ((Number) new BigInteger("2")).intValue();
+    Assert.assertEquals("Expected: " + TreePVector.<Number>empty().plus(new BigInteger("1")).plus(new BigInteger("2")) + ", but was: " + (((_FunctionTypes._return_P0_E0<PVector<Number>>) () -> {
+      PVector<Number> origList = TreePVector.<Number>empty().plus(new BigInteger("1")).plus(new BigInteger("2"));
+      int noOfElements = new BigInteger("2").intValue();
       if (origList.size() <= noOfElements) {
         return origList;
       }
       return origList.subList(0, noOfElements);
-    }).invoke()), (Object) TreePVector.<Number>empty().plus((Number) new BigInteger("1")).plus((Number) new BigInteger("2")), (Object) ((_FunctionTypes._return_P0_E0<PVector<Number>>) () -> {
-      PVector<Number> origList = TreePVector.<Number>empty().plus((Number) new BigInteger("1")).plus((Number) new BigInteger("2"));
-      int noOfElements = ((Number) new BigInteger("2")).intValue();
+    }).invoke()), TreePVector.<Number>empty().plus(new BigInteger("1")).plus(new BigInteger("2")), (Object) ((_FunctionTypes._return_P0_E0<PVector<Number>>) () -> {
+      PVector<Number> origList = TreePVector.<Number>empty().plus(new BigInteger("1")).plus(new BigInteger("2"));
+      int noOfElements = new BigInteger("2").intValue();
       if (origList.size() <= noOfElements) {
         return origList;
       }
@@ -962,16 +962,16 @@ public class Generated_collections_Test {
   }
   @Test
   public void list_collection_int_item100_3438641468560460048() throws Throwable {
-    Assert.assertEquals("Expected: " + TreePVector.<Number>empty().plus((Number) new BigInteger("1")) + ", but was: " + (((_FunctionTypes._return_P0_E0<PVector<Number>>) () -> {
-      PVector<Number> origList = TreePVector.<Number>empty().plus((Number) new BigInteger("1"));
-      int noOfElements = ((Number) new BigInteger("2")).intValue();
+    Assert.assertEquals("Expected: " + TreePVector.<Number>empty().plus(new BigInteger("1")) + ", but was: " + (((_FunctionTypes._return_P0_E0<PVector<Number>>) () -> {
+      PVector<Number> origList = TreePVector.<Number>empty().plus(new BigInteger("1"));
+      int noOfElements = new BigInteger("2").intValue();
       if (origList.size() <= noOfElements) {
         return origList;
       }
       return origList.subList(0, noOfElements);
-    }).invoke()), (Object) TreePVector.<Number>empty().plus((Number) new BigInteger("1")), (Object) ((_FunctionTypes._return_P0_E0<PVector<Number>>) () -> {
-      PVector<Number> origList = TreePVector.<Number>empty().plus((Number) new BigInteger("1"));
-      int noOfElements = ((Number) new BigInteger("2")).intValue();
+    }).invoke()), TreePVector.<Number>empty().plus(new BigInteger("1")), (Object) ((_FunctionTypes._return_P0_E0<PVector<Number>>) () -> {
+      PVector<Number> origList = TreePVector.<Number>empty().plus(new BigInteger("1"));
+      int noOfElements = new BigInteger("2").intValue();
       if (origList.size() <= noOfElements) {
         return origList;
       }
@@ -982,14 +982,14 @@ public class Generated_collections_Test {
   public void list_collection_int_item102_3611639268194838554() throws Throwable {
     Assert.assertEquals("Expected: " + TreePVector.<Number>from(new ArrayList<Number>()) + ", but was: " + (((_FunctionTypes._return_P0_E0<PVector<Number>>) () -> {
       PVector<Number> origList = TreePVector.<Number>from(new ArrayList<Number>());
-      int noOfElements = ((Number) new BigInteger("2")).intValue();
+      int noOfElements = new BigInteger("2").intValue();
       if (origList.size() <= noOfElements) {
         return origList;
       }
       return origList.subList(origList.size() - noOfElements, origList.size());
-    }).invoke()), (Object) TreePVector.<Number>from(new ArrayList<Number>()), (Object) ((_FunctionTypes._return_P0_E0<PVector<Number>>) () -> {
+    }).invoke()), TreePVector.<Number>from(new ArrayList<Number>()), (Object) ((_FunctionTypes._return_P0_E0<PVector<Number>>) () -> {
       PVector<Number> origList = TreePVector.<Number>from(new ArrayList<Number>());
-      int noOfElements = ((Number) new BigInteger("2")).intValue();
+      int noOfElements = new BigInteger("2").intValue();
       if (origList.size() <= noOfElements) {
         return origList;
       }
@@ -1002,92 +1002,92 @@ public class Generated_collections_Test {
       if (TreePVector.<Number>from(new ArrayList<Number>()).size() <= 1) {
         return TreePVector.<Number>empty();
       } else {
-        return ((PVector<Number>) TreePVector.<Number>from(new ArrayList<Number>())).subList(1, TreePVector.<Number>from(new ArrayList<Number>()).size());
+        return TreePVector.<Number>from(new ArrayList<Number>()).subList(1, TreePVector.<Number>from(new ArrayList<Number>()).size());
       }
-    }).invoke()), (Object) TreePVector.<Number>from(new ArrayList<Number>()), (Object) ((_FunctionTypes._return_P0_E0<PVector<Number>>) () -> {
+    }).invoke()), TreePVector.<Number>from(new ArrayList<Number>()), (Object) ((_FunctionTypes._return_P0_E0<PVector<Number>>) () -> {
       if (TreePVector.<Number>from(new ArrayList<Number>()).size() <= 1) {
         return TreePVector.<Number>empty();
       } else {
-        return ((PVector<Number>) TreePVector.<Number>from(new ArrayList<Number>())).subList(1, TreePVector.<Number>from(new ArrayList<Number>()).size());
+        return TreePVector.<Number>from(new ArrayList<Number>()).subList(1, TreePVector.<Number>from(new ArrayList<Number>()).size());
       }
     }).invoke());
   }
   @Test
   public void list_collection_int_item104_393796118210525122() throws Throwable {
     Assert.assertEquals("Expected: " + TreePVector.<Number>from(new ArrayList<Number>()) + ", but was: " + (((_FunctionTypes._return_P0_E0<PVector<Number>>) () -> {
-      if (TreePVector.<Number>empty().plus((Number) new BigInteger("1")).size() <= 1) {
+      if (TreePVector.<Number>empty().plus(new BigInteger("1")).size() <= 1) {
         return TreePVector.<Number>empty();
       } else {
-        return ((PVector<Number>) TreePVector.<Number>empty().plus((Number) new BigInteger("1"))).subList(1, TreePVector.<Number>empty().plus((Number) new BigInteger("1")).size());
+        return TreePVector.<Number>empty().plus(new BigInteger("1")).subList(1, TreePVector.<Number>empty().plus(new BigInteger("1")).size());
       }
-    }).invoke()), (Object) TreePVector.<Number>from(new ArrayList<Number>()), (Object) ((_FunctionTypes._return_P0_E0<PVector<Number>>) () -> {
-      if (TreePVector.<Number>empty().plus((Number) new BigInteger("1")).size() <= 1) {
+    }).invoke()), TreePVector.<Number>from(new ArrayList<Number>()), (Object) ((_FunctionTypes._return_P0_E0<PVector<Number>>) () -> {
+      if (TreePVector.<Number>empty().plus(new BigInteger("1")).size() <= 1) {
         return TreePVector.<Number>empty();
       } else {
-        return ((PVector<Number>) TreePVector.<Number>empty().plus((Number) new BigInteger("1"))).subList(1, TreePVector.<Number>empty().plus((Number) new BigInteger("1")).size());
+        return TreePVector.<Number>empty().plus(new BigInteger("1")).subList(1, TreePVector.<Number>empty().plus(new BigInteger("1")).size());
       }
     }).invoke());
   }
   @Test
   public void list_collection_int_item105_393796118210527605() throws Throwable {
-    Assert.assertEquals("Expected: " + TreePVector.<Number>empty().plus((Number) new BigInteger("2")) + ", but was: " + (((_FunctionTypes._return_P0_E0<PVector<Number>>) () -> {
-      if (TreePVector.<Number>empty().plus((Number) new BigInteger("1")).plus((Number) new BigInteger("2")).size() <= 1) {
+    Assert.assertEquals("Expected: " + TreePVector.<Number>empty().plus(new BigInteger("2")) + ", but was: " + (((_FunctionTypes._return_P0_E0<PVector<Number>>) () -> {
+      if (TreePVector.<Number>empty().plus(new BigInteger("1")).plus(new BigInteger("2")).size() <= 1) {
         return TreePVector.<Number>empty();
       } else {
-        return ((PVector<Number>) TreePVector.<Number>empty().plus((Number) new BigInteger("1")).plus((Number) new BigInteger("2"))).subList(1, TreePVector.<Number>empty().plus((Number) new BigInteger("1")).plus((Number) new BigInteger("2")).size());
+        return TreePVector.<Number>empty().plus(new BigInteger("1")).plus(new BigInteger("2")).subList(1, TreePVector.<Number>empty().plus(new BigInteger("1")).plus(new BigInteger("2")).size());
       }
-    }).invoke()), (Object) TreePVector.<Number>empty().plus((Number) new BigInteger("2")), (Object) ((_FunctionTypes._return_P0_E0<PVector<Number>>) () -> {
-      if (TreePVector.<Number>empty().plus((Number) new BigInteger("1")).plus((Number) new BigInteger("2")).size() <= 1) {
+    }).invoke()), TreePVector.<Number>empty().plus(new BigInteger("2")), (Object) ((_FunctionTypes._return_P0_E0<PVector<Number>>) () -> {
+      if (TreePVector.<Number>empty().plus(new BigInteger("1")).plus(new BigInteger("2")).size() <= 1) {
         return TreePVector.<Number>empty();
       } else {
-        return ((PVector<Number>) TreePVector.<Number>empty().plus((Number) new BigInteger("1")).plus((Number) new BigInteger("2"))).subList(1, TreePVector.<Number>empty().plus((Number) new BigInteger("1")).plus((Number) new BigInteger("2")).size());
+        return TreePVector.<Number>empty().plus(new BigInteger("1")).plus(new BigInteger("2")).subList(1, TreePVector.<Number>empty().plus(new BigInteger("1")).plus(new BigInteger("2")).size());
       }
     }).invoke());
   }
   @Test
   public void list_collection_int_item106_393796118210534797() throws Throwable {
-    Assert.assertEquals("Expected: " + TreePVector.<Number>empty().plus((Number) new BigInteger("2")).plus((Number) new BigInteger("3")) + ", but was: " + (((_FunctionTypes._return_P0_E0<PVector<Number>>) () -> {
-      if (TreePVector.<Number>empty().plus((Number) new BigInteger("1")).plus((Number) new BigInteger("2")).plus((Number) new BigInteger("3")).size() <= 1) {
+    Assert.assertEquals("Expected: " + TreePVector.<Number>empty().plus(new BigInteger("2")).plus(new BigInteger("3")) + ", but was: " + (((_FunctionTypes._return_P0_E0<PVector<Number>>) () -> {
+      if (TreePVector.<Number>empty().plus(new BigInteger("1")).plus(new BigInteger("2")).plus(new BigInteger("3")).size() <= 1) {
         return TreePVector.<Number>empty();
       } else {
-        return ((PVector<Number>) TreePVector.<Number>empty().plus((Number) new BigInteger("1")).plus((Number) new BigInteger("2")).plus((Number) new BigInteger("3"))).subList(1, TreePVector.<Number>empty().plus((Number) new BigInteger("1")).plus((Number) new BigInteger("2")).plus((Number) new BigInteger("3")).size());
+        return TreePVector.<Number>empty().plus(new BigInteger("1")).plus(new BigInteger("2")).plus(new BigInteger("3")).subList(1, TreePVector.<Number>empty().plus(new BigInteger("1")).plus(new BigInteger("2")).plus(new BigInteger("3")).size());
       }
-    }).invoke()), (Object) TreePVector.<Number>empty().plus((Number) new BigInteger("2")).plus((Number) new BigInteger("3")), (Object) ((_FunctionTypes._return_P0_E0<PVector<Number>>) () -> {
-      if (TreePVector.<Number>empty().plus((Number) new BigInteger("1")).plus((Number) new BigInteger("2")).plus((Number) new BigInteger("3")).size() <= 1) {
+    }).invoke()), TreePVector.<Number>empty().plus(new BigInteger("2")).plus(new BigInteger("3")), (Object) ((_FunctionTypes._return_P0_E0<PVector<Number>>) () -> {
+      if (TreePVector.<Number>empty().plus(new BigInteger("1")).plus(new BigInteger("2")).plus(new BigInteger("3")).size() <= 1) {
         return TreePVector.<Number>empty();
       } else {
-        return ((PVector<Number>) TreePVector.<Number>empty().plus((Number) new BigInteger("1")).plus((Number) new BigInteger("2")).plus((Number) new BigInteger("3"))).subList(1, TreePVector.<Number>empty().plus((Number) new BigInteger("1")).plus((Number) new BigInteger("2")).plus((Number) new BigInteger("3")).size());
+        return TreePVector.<Number>empty().plus(new BigInteger("1")).plus(new BigInteger("2")).plus(new BigInteger("3")).subList(1, TreePVector.<Number>empty().plus(new BigInteger("1")).plus(new BigInteger("2")).plus(new BigInteger("3")).size());
       }
     }).invoke());
   }
   @Test
   public void list_collection_int_item107_393796118210861849() throws Throwable {
-    Assert.assertEquals("Expected: " + TreePVector.<Number>empty().plus((Number) new BigInteger("2")).plus((Number) new BigInteger("3")).plus((Number) new BigInteger("4")) + ", but was: " + (((_FunctionTypes._return_P0_E0<PVector<Number>>) () -> {
-      if (TreePVector.<Number>empty().plus((Number) new BigInteger("1")).plus((Number) new BigInteger("2")).plus((Number) new BigInteger("3")).plus((Number) new BigInteger("4")).size() <= 1) {
+    Assert.assertEquals("Expected: " + TreePVector.<Number>empty().plus(new BigInteger("2")).plus(new BigInteger("3")).plus(new BigInteger("4")) + ", but was: " + (((_FunctionTypes._return_P0_E0<PVector<Number>>) () -> {
+      if (TreePVector.<Number>empty().plus(new BigInteger("1")).plus(new BigInteger("2")).plus(new BigInteger("3")).plus(new BigInteger("4")).size() <= 1) {
         return TreePVector.<Number>empty();
       } else {
-        return ((PVector<Number>) TreePVector.<Number>empty().plus((Number) new BigInteger("1")).plus((Number) new BigInteger("2")).plus((Number) new BigInteger("3")).plus((Number) new BigInteger("4"))).subList(1, TreePVector.<Number>empty().plus((Number) new BigInteger("1")).plus((Number) new BigInteger("2")).plus((Number) new BigInteger("3")).plus((Number) new BigInteger("4")).size());
+        return TreePVector.<Number>empty().plus(new BigInteger("1")).plus(new BigInteger("2")).plus(new BigInteger("3")).plus(new BigInteger("4")).subList(1, TreePVector.<Number>empty().plus(new BigInteger("1")).plus(new BigInteger("2")).plus(new BigInteger("3")).plus(new BigInteger("4")).size());
       }
-    }).invoke()), (Object) TreePVector.<Number>empty().plus((Number) new BigInteger("2")).plus((Number) new BigInteger("3")).plus((Number) new BigInteger("4")), (Object) ((_FunctionTypes._return_P0_E0<PVector<Number>>) () -> {
-      if (TreePVector.<Number>empty().plus((Number) new BigInteger("1")).plus((Number) new BigInteger("2")).plus((Number) new BigInteger("3")).plus((Number) new BigInteger("4")).size() <= 1) {
+    }).invoke()), TreePVector.<Number>empty().plus(new BigInteger("2")).plus(new BigInteger("3")).plus(new BigInteger("4")), (Object) ((_FunctionTypes._return_P0_E0<PVector<Number>>) () -> {
+      if (TreePVector.<Number>empty().plus(new BigInteger("1")).plus(new BigInteger("2")).plus(new BigInteger("3")).plus(new BigInteger("4")).size() <= 1) {
         return TreePVector.<Number>empty();
       } else {
-        return ((PVector<Number>) TreePVector.<Number>empty().plus((Number) new BigInteger("1")).plus((Number) new BigInteger("2")).plus((Number) new BigInteger("3")).plus((Number) new BigInteger("4"))).subList(1, TreePVector.<Number>empty().plus((Number) new BigInteger("1")).plus((Number) new BigInteger("2")).plus((Number) new BigInteger("3")).plus((Number) new BigInteger("4")).size());
+        return TreePVector.<Number>empty().plus(new BigInteger("1")).plus(new BigInteger("2")).plus(new BigInteger("3")).plus(new BigInteger("4")).subList(1, TreePVector.<Number>empty().plus(new BigInteger("1")).plus(new BigInteger("2")).plus(new BigInteger("3")).plus(new BigInteger("4")).size());
       }
     }).invoke());
   }
   @Test
   public void list_collection_int_item108_3611639268191187941() throws Throwable {
     Assert.assertEquals("Expected: " + TreePVector.<Number>from(new ArrayList<Number>()) + ", but was: " + (((_FunctionTypes._return_P0_E0<PVector<Number>>) () -> {
-      PVector<Number> origList = TreePVector.<Number>empty().plus((Number) new BigInteger("1"));
-      int noOfElements = ((Number) new BigInteger("0")).intValue();
+      PVector<Number> origList = TreePVector.<Number>empty().plus(new BigInteger("1"));
+      int noOfElements = new BigInteger("0").intValue();
       if (origList.size() <= noOfElements) {
         return origList;
       }
       return origList.subList(origList.size() - noOfElements, origList.size());
-    }).invoke()), (Object) TreePVector.<Number>from(new ArrayList<Number>()), (Object) ((_FunctionTypes._return_P0_E0<PVector<Number>>) () -> {
-      PVector<Number> origList = TreePVector.<Number>empty().plus((Number) new BigInteger("1"));
-      int noOfElements = ((Number) new BigInteger("0")).intValue();
+    }).invoke()), TreePVector.<Number>from(new ArrayList<Number>()), (Object) ((_FunctionTypes._return_P0_E0<PVector<Number>>) () -> {
+      PVector<Number> origList = TreePVector.<Number>empty().plus(new BigInteger("1"));
+      int noOfElements = new BigInteger("0").intValue();
       if (origList.size() <= noOfElements) {
         return origList;
       }
@@ -1096,16 +1096,16 @@ public class Generated_collections_Test {
   }
   @Test
   public void list_collection_int_item109_3611639268190225640() throws Throwable {
-    Assert.assertEquals("Expected: " + TreePVector.<Number>empty().plus((Number) new BigInteger("1")) + ", but was: " + (((_FunctionTypes._return_P0_E0<PVector<Number>>) () -> {
-      PVector<Number> origList = TreePVector.<Number>empty().plus((Number) new BigInteger("1"));
-      int noOfElements = ((Number) new BigInteger("1")).intValue();
+    Assert.assertEquals("Expected: " + TreePVector.<Number>empty().plus(new BigInteger("1")) + ", but was: " + (((_FunctionTypes._return_P0_E0<PVector<Number>>) () -> {
+      PVector<Number> origList = TreePVector.<Number>empty().plus(new BigInteger("1"));
+      int noOfElements = new BigInteger("1").intValue();
       if (origList.size() <= noOfElements) {
         return origList;
       }
       return origList.subList(origList.size() - noOfElements, origList.size());
-    }).invoke()), (Object) TreePVector.<Number>empty().plus((Number) new BigInteger("1")), (Object) ((_FunctionTypes._return_P0_E0<PVector<Number>>) () -> {
-      PVector<Number> origList = TreePVector.<Number>empty().plus((Number) new BigInteger("1"));
-      int noOfElements = ((Number) new BigInteger("1")).intValue();
+    }).invoke()), TreePVector.<Number>empty().plus(new BigInteger("1")), (Object) ((_FunctionTypes._return_P0_E0<PVector<Number>>) () -> {
+      PVector<Number> origList = TreePVector.<Number>empty().plus(new BigInteger("1"));
+      int noOfElements = new BigInteger("1").intValue();
       if (origList.size() <= noOfElements) {
         return origList;
       }
@@ -1114,16 +1114,16 @@ public class Generated_collections_Test {
   }
   @Test
   public void list_collection_int_item110_3611639268191758241() throws Throwable {
-    Assert.assertEquals("Expected: " + TreePVector.<Number>empty().plus((Number) new BigInteger("1")).plus((Number) new BigInteger("2")) + ", but was: " + (((_FunctionTypes._return_P0_E0<PVector<Number>>) () -> {
-      PVector<Number> origList = TreePVector.<Number>empty().plus((Number) new BigInteger("1")).plus((Number) new BigInteger("2"));
-      int noOfElements = ((Number) new BigInteger("2")).intValue();
+    Assert.assertEquals("Expected: " + TreePVector.<Number>empty().plus(new BigInteger("1")).plus(new BigInteger("2")) + ", but was: " + (((_FunctionTypes._return_P0_E0<PVector<Number>>) () -> {
+      PVector<Number> origList = TreePVector.<Number>empty().plus(new BigInteger("1")).plus(new BigInteger("2"));
+      int noOfElements = new BigInteger("2").intValue();
       if (origList.size() <= noOfElements) {
         return origList;
       }
       return origList.subList(origList.size() - noOfElements, origList.size());
-    }).invoke()), (Object) TreePVector.<Number>empty().plus((Number) new BigInteger("1")).plus((Number) new BigInteger("2")), (Object) ((_FunctionTypes._return_P0_E0<PVector<Number>>) () -> {
-      PVector<Number> origList = TreePVector.<Number>empty().plus((Number) new BigInteger("1")).plus((Number) new BigInteger("2"));
-      int noOfElements = ((Number) new BigInteger("2")).intValue();
+    }).invoke()), TreePVector.<Number>empty().plus(new BigInteger("1")).plus(new BigInteger("2")), (Object) ((_FunctionTypes._return_P0_E0<PVector<Number>>) () -> {
+      PVector<Number> origList = TreePVector.<Number>empty().plus(new BigInteger("1")).plus(new BigInteger("2"));
+      int noOfElements = new BigInteger("2").intValue();
       if (origList.size() <= noOfElements) {
         return origList;
       }
@@ -1132,16 +1132,16 @@ public class Generated_collections_Test {
   }
   @Test
   public void list_collection_int_item111_3438641468565411444() throws Throwable {
-    Assert.assertEquals("Expected: " + TreePVector.<Number>empty().plus((Number) new BigInteger("1")) + ", but was: " + (((_FunctionTypes._return_P0_E0<PVector<Number>>) () -> {
-      PVector<Number> origList = TreePVector.<Number>empty().plus((Number) new BigInteger("1"));
-      int noOfElements = ((Number) new BigInteger("2")).intValue();
+    Assert.assertEquals("Expected: " + TreePVector.<Number>empty().plus(new BigInteger("1")) + ", but was: " + (((_FunctionTypes._return_P0_E0<PVector<Number>>) () -> {
+      PVector<Number> origList = TreePVector.<Number>empty().plus(new BigInteger("1"));
+      int noOfElements = new BigInteger("2").intValue();
       if (origList.size() <= noOfElements) {
         return origList;
       }
       return origList.subList(origList.size() - noOfElements, origList.size());
-    }).invoke()), (Object) TreePVector.<Number>empty().plus((Number) new BigInteger("1")), (Object) ((_FunctionTypes._return_P0_E0<PVector<Number>>) () -> {
-      PVector<Number> origList = TreePVector.<Number>empty().plus((Number) new BigInteger("1"));
-      int noOfElements = ((Number) new BigInteger("2")).intValue();
+    }).invoke()), TreePVector.<Number>empty().plus(new BigInteger("1")), (Object) ((_FunctionTypes._return_P0_E0<PVector<Number>>) () -> {
+      PVector<Number> origList = TreePVector.<Number>empty().plus(new BigInteger("1"));
+      int noOfElements = new BigInteger("2").intValue();
       if (origList.size() <= noOfElements) {
         return origList;
       }
@@ -1156,7 +1156,7 @@ public class Generated_collections_Test {
         rev = rev.plus(TreePVector.<Number>from(new ArrayList<Number>()).get(i));
       }
       return rev;
-    }).invoke()), (Object) TreePVector.<Number>from(new ArrayList<Number>()), (Object) ((_FunctionTypes._return_P0_E0<PVector<Number>>) () -> {
+    }).invoke()), TreePVector.<Number>from(new ArrayList<Number>()), (Object) ((_FunctionTypes._return_P0_E0<PVector<Number>>) () -> {
       PVector<Number> rev = Empty.vector();
       for (int i = TreePVector.<Number>from(new ArrayList<Number>()).size() - 1; i >= 0; i--) {
         rev = rev.plus(TreePVector.<Number>from(new ArrayList<Number>()).get(i));
@@ -1166,16 +1166,16 @@ public class Generated_collections_Test {
   }
   @Test
   public void list_collection_int_item114_5396945261023856908() throws Throwable {
-    Assert.assertEquals("Expected: " + TreePVector.<Number>empty().plus((Number) new BigInteger("3")).plus((Number) new BigInteger("1")) + ", but was: " + (((_FunctionTypes._return_P0_E0<PVector<Number>>) () -> {
+    Assert.assertEquals("Expected: " + TreePVector.<Number>empty().plus(new BigInteger("3")).plus(new BigInteger("1")) + ", but was: " + (((_FunctionTypes._return_P0_E0<PVector<Number>>) () -> {
       PVector<Number> rev = Empty.vector();
-      for (int i = TreePVector.<Number>empty().plus((Number) new BigInteger("1")).plus((Number) new BigInteger("3")).size() - 1; i >= 0; i--) {
-        rev = rev.plus(TreePVector.<Number>empty().plus((Number) new BigInteger("1")).plus((Number) new BigInteger("3")).get(i));
+      for (int i = TreePVector.<Number>empty().plus(new BigInteger("1")).plus(new BigInteger("3")).size() - 1; i >= 0; i--) {
+        rev = rev.plus(TreePVector.<Number>empty().plus(new BigInteger("1")).plus(new BigInteger("3")).get(i));
       }
       return rev;
-    }).invoke()), (Object) TreePVector.<Number>empty().plus((Number) new BigInteger("3")).plus((Number) new BigInteger("1")), (Object) ((_FunctionTypes._return_P0_E0<PVector<Number>>) () -> {
+    }).invoke()), TreePVector.<Number>empty().plus(new BigInteger("3")).plus(new BigInteger("1")), (Object) ((_FunctionTypes._return_P0_E0<PVector<Number>>) () -> {
       PVector<Number> rev = Empty.vector();
-      for (int i = TreePVector.<Number>empty().plus((Number) new BigInteger("1")).plus((Number) new BigInteger("3")).size() - 1; i >= 0; i--) {
-        rev = rev.plus(TreePVector.<Number>empty().plus((Number) new BigInteger("1")).plus((Number) new BigInteger("3")).get(i));
+      for (int i = TreePVector.<Number>empty().plus(new BigInteger("1")).plus(new BigInteger("3")).size() - 1; i >= 0; i--) {
+        rev = rev.plus(TreePVector.<Number>empty().plus(new BigInteger("1")).plus(new BigInteger("3")).get(i));
       }
       return rev;
     }).invoke());
@@ -1198,25 +1198,25 @@ public class Generated_collections_Test {
   }
   @Test
   public void list_collection_int_item120_4481921169622491541() throws Throwable {
-    Assert.assertEquals("Expected: " + false + ", but was: " + AH.isGreater(CollectionHelper.max(TreePVector.<Number>empty().plus(((BigDecimal) (Number) new BigDecimal("2.0").setScale(1, RoundingMode.DOWN)).negate()).plus(((BigDecimal) (Number) new BigDecimal("3.0").setScale(1, RoundingMode.DOWN)).negate())), (Number) new BigDecimal("0.0").setScale(1, RoundingMode.DOWN)), (Object) false, (Object) AH.isGreater(CollectionHelper.max(TreePVector.<Number>empty().plus(((BigDecimal) (Number) new BigDecimal("2.0").setScale(1, RoundingMode.DOWN)).negate()).plus(((BigDecimal) (Number) new BigDecimal("3.0").setScale(1, RoundingMode.DOWN)).negate())), (Number) new BigDecimal("0.0").setScale(1, RoundingMode.DOWN)));
+    Assert.assertEquals("Expected: " + false + ", but was: " + AH.isGreater(CollectionHelper.max(TreePVector.<Number>empty().plus(new BigDecimal("2.0").setScale(1, RoundingMode.DOWN).negate()).plus(new BigDecimal("3.0").setScale(1, RoundingMode.DOWN).negate())), new BigDecimal("0.0").setScale(1, RoundingMode.DOWN)), (Object) false, (Object) AH.isGreater(CollectionHelper.max(TreePVector.<Number>empty().plus(new BigDecimal("2.0").setScale(1, RoundingMode.DOWN).negate()).plus(new BigDecimal("3.0").setScale(1, RoundingMode.DOWN).negate())), new BigDecimal("0.0").setScale(1, RoundingMode.DOWN)));
   }
   @Test
   public void list_collection_int_item122_3181031335810530432() throws Throwable {
-    Assert.assertEquals("Expected: " + true + ", but was: " + TreePVector.<Number>empty().plus((Number) new BigInteger("1")).plus((Number) new BigInteger("2")).plus((Number) new BigInteger("3")).plus((Number) new BigInteger("4")).stream().anyMatch(new Predicate<Number>() {
+    Assert.assertEquals("Expected: " + true + ", but was: " + TreePVector.<Number>empty().plus(new BigInteger("1")).plus(new BigInteger("2")).plus(new BigInteger("3")).plus(new BigInteger("4")).stream().anyMatch(new Predicate<Number>() {
       public boolean test(Number o) {
         return new Function<ParameterSetWrapper, Boolean>() {
           public Boolean apply(ParameterSetWrapper param) {
             Number a = (Number) param.parameters.get(0);
-            return AH.isGreater(a, (Number) new BigInteger("3"));
+            return AH.isGreater(a, new BigInteger("3"));
           }
         }.apply(new ParameterSetWrapper(o));
       }
-    }), (Object) true, (Object) TreePVector.<Number>empty().plus((Number) new BigInteger("1")).plus((Number) new BigInteger("2")).plus((Number) new BigInteger("3")).plus((Number) new BigInteger("4")).stream().anyMatch(new Predicate<Number>() {
+    }), (Object) true, (Object) TreePVector.<Number>empty().plus(new BigInteger("1")).plus(new BigInteger("2")).plus(new BigInteger("3")).plus(new BigInteger("4")).stream().anyMatch(new Predicate<Number>() {
       public boolean test(Number o) {
         return new Function<ParameterSetWrapper, Boolean>() {
           public Boolean apply(ParameterSetWrapper param) {
             Number a = (Number) param.parameters.get(0);
-            return AH.isGreater(a, (Number) new BigInteger("3"));
+            return AH.isGreater(a, new BigInteger("3"));
           }
         }.apply(new ParameterSetWrapper(o));
       }
@@ -1224,21 +1224,21 @@ public class Generated_collections_Test {
   }
   @Test
   public void list_collection_int_item123_3181031335813571589() throws Throwable {
-    Assert.assertEquals("Expected: " + true + ", but was: " + TreePVector.<Number>empty().plus((Number) new BigInteger("1")).plus((Number) new BigInteger("2")).plus((Number) new BigInteger("3")).plus((Number) new BigInteger("4")).stream().anyMatch(new Predicate<Number>() {
+    Assert.assertEquals("Expected: " + true + ", but was: " + TreePVector.<Number>empty().plus(new BigInteger("1")).plus(new BigInteger("2")).plus(new BigInteger("3")).plus(new BigInteger("4")).stream().anyMatch(new Predicate<Number>() {
       public boolean test(Number o) {
         return new Function<ParameterSetWrapper, Boolean>() {
           public Boolean apply(ParameterSetWrapper param) {
             Number it = (Number) param.parameters.get(0);
-            return AH.isGreater(it, (Number) new BigInteger("3"));
+            return AH.isGreater(it, new BigInteger("3"));
           }
         }.apply(new ParameterSetWrapper(o));
       }
-    }), (Object) true, (Object) TreePVector.<Number>empty().plus((Number) new BigInteger("1")).plus((Number) new BigInteger("2")).plus((Number) new BigInteger("3")).plus((Number) new BigInteger("4")).stream().anyMatch(new Predicate<Number>() {
+    }), (Object) true, (Object) TreePVector.<Number>empty().plus(new BigInteger("1")).plus(new BigInteger("2")).plus(new BigInteger("3")).plus(new BigInteger("4")).stream().anyMatch(new Predicate<Number>() {
       public boolean test(Number o) {
         return new Function<ParameterSetWrapper, Boolean>() {
           public Boolean apply(ParameterSetWrapper param) {
             Number it = (Number) param.parameters.get(0);
-            return AH.isGreater(it, (Number) new BigInteger("3"));
+            return AH.isGreater(it, new BigInteger("3"));
           }
         }.apply(new ParameterSetWrapper(o));
       }
@@ -1246,7 +1246,7 @@ public class Generated_collections_Test {
   }
   @Test
   public void list_collection_int_item124_3181031335813966615() throws Throwable {
-    Assert.assertEquals("Expected: " + true + ", but was: " + TreePVector.<Number>empty().plus((Number) new BigInteger("1")).plus((Number) new BigInteger("2")).plus((Number) new BigInteger("3")).plus((Number) new BigInteger("4")).stream().anyMatch(new Predicate<Number>() {
+    Assert.assertEquals("Expected: " + true + ", but was: " + TreePVector.<Number>empty().plus(new BigInteger("1")).plus(new BigInteger("2")).plus(new BigInteger("3")).plus(new BigInteger("4")).stream().anyMatch(new Predicate<Number>() {
       public boolean test(Number o) {
         return new Function<ParameterSetWrapper, Boolean>() {
           public Boolean apply(ParameterSetWrapper param) {
@@ -1254,7 +1254,7 @@ public class Generated_collections_Test {
           }
         }.apply(new ParameterSetWrapper(o));
       }
-    }), (Object) true, (Object) TreePVector.<Number>empty().plus((Number) new BigInteger("1")).plus((Number) new BigInteger("2")).plus((Number) new BigInteger("3")).plus((Number) new BigInteger("4")).stream().anyMatch(new Predicate<Number>() {
+    }), (Object) true, (Object) TreePVector.<Number>empty().plus(new BigInteger("1")).plus(new BigInteger("2")).plus(new BigInteger("3")).plus(new BigInteger("4")).stream().anyMatch(new Predicate<Number>() {
       public boolean test(Number o) {
         return new Function<ParameterSetWrapper, Boolean>() {
           public Boolean apply(ParameterSetWrapper param) {
@@ -1266,21 +1266,21 @@ public class Generated_collections_Test {
   }
   @Test
   public void list_collection_int_item126_3181031335814663365() throws Throwable {
-    Assert.assertEquals("Expected: " + true + ", but was: " + TreePVector.<Number>empty().plus((Number) new BigInteger("1")).plus((Number) new BigInteger("2")).plus((Number) new BigInteger("3")).plus((Number) new BigInteger("4")).stream().allMatch(new Predicate<Number>() {
+    Assert.assertEquals("Expected: " + true + ", but was: " + TreePVector.<Number>empty().plus(new BigInteger("1")).plus(new BigInteger("2")).plus(new BigInteger("3")).plus(new BigInteger("4")).stream().allMatch(new Predicate<Number>() {
       public boolean test(Number o) {
         return new Function<ParameterSetWrapper, Boolean>() {
           public Boolean apply(ParameterSetWrapper param) {
             Number a = (Number) param.parameters.get(0);
-            return AH.isGreater(a, (Number) new BigInteger("0"));
+            return AH.isGreater(a, new BigInteger("0"));
           }
         }.apply(new ParameterSetWrapper(o));
       }
-    }), (Object) true, (Object) TreePVector.<Number>empty().plus((Number) new BigInteger("1")).plus((Number) new BigInteger("2")).plus((Number) new BigInteger("3")).plus((Number) new BigInteger("4")).stream().allMatch(new Predicate<Number>() {
+    }), (Object) true, (Object) TreePVector.<Number>empty().plus(new BigInteger("1")).plus(new BigInteger("2")).plus(new BigInteger("3")).plus(new BigInteger("4")).stream().allMatch(new Predicate<Number>() {
       public boolean test(Number o) {
         return new Function<ParameterSetWrapper, Boolean>() {
           public Boolean apply(ParameterSetWrapper param) {
             Number a = (Number) param.parameters.get(0);
-            return AH.isGreater(a, (Number) new BigInteger("0"));
+            return AH.isGreater(a, new BigInteger("0"));
           }
         }.apply(new ParameterSetWrapper(o));
       }
@@ -1288,21 +1288,21 @@ public class Generated_collections_Test {
   }
   @Test
   public void list_collection_int_item127_3181031335814663382() throws Throwable {
-    Assert.assertEquals("Expected: " + true + ", but was: " + TreePVector.<Number>empty().plus((Number) new BigInteger("1")).plus((Number) new BigInteger("2")).plus((Number) new BigInteger("3")).plus((Number) new BigInteger("4")).stream().allMatch(new Predicate<Number>() {
+    Assert.assertEquals("Expected: " + true + ", but was: " + TreePVector.<Number>empty().plus(new BigInteger("1")).plus(new BigInteger("2")).plus(new BigInteger("3")).plus(new BigInteger("4")).stream().allMatch(new Predicate<Number>() {
       public boolean test(Number o) {
         return new Function<ParameterSetWrapper, Boolean>() {
           public Boolean apply(ParameterSetWrapper param) {
             Number it = (Number) param.parameters.get(0);
-            return AH.isGreater(it, (Number) new BigInteger("0"));
+            return AH.isGreater(it, new BigInteger("0"));
           }
         }.apply(new ParameterSetWrapper(o));
       }
-    }), (Object) true, (Object) TreePVector.<Number>empty().plus((Number) new BigInteger("1")).plus((Number) new BigInteger("2")).plus((Number) new BigInteger("3")).plus((Number) new BigInteger("4")).stream().allMatch(new Predicate<Number>() {
+    }), (Object) true, (Object) TreePVector.<Number>empty().plus(new BigInteger("1")).plus(new BigInteger("2")).plus(new BigInteger("3")).plus(new BigInteger("4")).stream().allMatch(new Predicate<Number>() {
       public boolean test(Number o) {
         return new Function<ParameterSetWrapper, Boolean>() {
           public Boolean apply(ParameterSetWrapper param) {
             Number it = (Number) param.parameters.get(0);
-            return AH.isGreater(it, (Number) new BigInteger("0"));
+            return AH.isGreater(it, new BigInteger("0"));
           }
         }.apply(new ParameterSetWrapper(o));
       }
@@ -1310,7 +1310,7 @@ public class Generated_collections_Test {
   }
   @Test
   public void list_collection_int_item128_3181031335814663396() throws Throwable {
-    Assert.assertEquals("Expected: " + false + ", but was: " + TreePVector.<Number>empty().plus((Number) new BigInteger("1")).plus((Number) new BigInteger("2")).plus((Number) new BigInteger("3")).plus((Number) new BigInteger("4")).stream().allMatch(new Predicate<Number>() {
+    Assert.assertEquals("Expected: " + false + ", but was: " + TreePVector.<Number>empty().plus(new BigInteger("1")).plus(new BigInteger("2")).plus(new BigInteger("3")).plus(new BigInteger("4")).stream().allMatch(new Predicate<Number>() {
       public boolean test(Number o) {
         return new Function<ParameterSetWrapper, Boolean>() {
           public Boolean apply(ParameterSetWrapper param) {
@@ -1318,7 +1318,7 @@ public class Generated_collections_Test {
           }
         }.apply(new ParameterSetWrapper(o));
       }
-    }), (Object) false, (Object) TreePVector.<Number>empty().plus((Number) new BigInteger("1")).plus((Number) new BigInteger("2")).plus((Number) new BigInteger("3")).plus((Number) new BigInteger("4")).stream().allMatch(new Predicate<Number>() {
+    }), (Object) false, (Object) TreePVector.<Number>empty().plus(new BigInteger("1")).plus(new BigInteger("2")).plus(new BigInteger("3")).plus(new BigInteger("4")).stream().allMatch(new Predicate<Number>() {
       public boolean test(Number o) {
         return new Function<ParameterSetWrapper, Boolean>() {
           public Boolean apply(ParameterSetWrapper param) {
@@ -1329,34 +1329,34 @@ public class Generated_collections_Test {
     }));
   }
   public static final PVector<Number> intList0_ = TreePVector.<Number>from(new ArrayList<Number>());
-  public static final PVector<Number> intList1_ = TreePVector.<Number>empty().plus((Number) new BigInteger("1"));
-  public static final PVector<Number> intList2_ = TreePVector.<Number>empty().plus((Number) new BigInteger("1")).plus((Number) new BigInteger("2"));
-  public static final PVector<Number> intList0ASC_ = (PVector<Number>) TreePVector.<Number>from(((PCollection<Number>) Generated_collections_Test.intList0_).stream().filter(OH.predicate()).sorted(new Comparator<Number>() {
+  public static final PVector<Number> intList1_ = TreePVector.<Number>empty().plus(new BigInteger("1"));
+  public static final PVector<Number> intList2_ = TreePVector.<Number>empty().plus(new BigInteger("1")).plus(new BigInteger("2"));
+  public static final PVector<Number> intList0ASC_ = TreePVector.<Number>from(Generated_collections_Test.intList0_.stream().filter(OH.predicate()).sorted(new Comparator<Number>() {
     public int compare(Number p0, Number p1) {
       return OH.compare(p0, p1);
     }
   }).collect(Collectors.<Number>toList()));
-  public static final PVector<Number> intList1ASC_ = (PVector<Number>) TreePVector.<Number>from(((PCollection<Number>) Generated_collections_Test.intList1_).stream().filter(OH.predicate()).sorted(new Comparator<Number>() {
+  public static final PVector<Number> intList1ASC_ = TreePVector.<Number>from(Generated_collections_Test.intList1_.stream().filter(OH.predicate()).sorted(new Comparator<Number>() {
     public int compare(Number p0, Number p1) {
       return OH.compare(p0, p1);
     }
   }).collect(Collectors.<Number>toList()));
-  public static final PVector<Number> intList2ASC_ = (PVector<Number>) TreePVector.<Number>from(((PCollection<Number>) Generated_collections_Test.intList2_).stream().filter(OH.predicate()).sorted(new Comparator<Number>() {
+  public static final PVector<Number> intList2ASC_ = TreePVector.<Number>from(Generated_collections_Test.intList2_.stream().filter(OH.predicate()).sorted(new Comparator<Number>() {
     public int compare(Number p0, Number p1) {
       return OH.compare(p0, p1);
     }
   }).collect(Collectors.<Number>toList()));
-  public static final PVector<Number> intList0DESC_ = (PVector<Number>) TreePVector.<Number>from(((PCollection<Number>) Generated_collections_Test.intList0_).stream().filter(OH.predicate()).sorted(new Comparator<Number>() {
+  public static final PVector<Number> intList0DESC_ = TreePVector.<Number>from(Generated_collections_Test.intList0_.stream().filter(OH.predicate()).sorted(new Comparator<Number>() {
     public int compare(Number p0, Number p1) {
       return OH.compare(p1, p0);
     }
   }).collect(Collectors.<Number>toList()));
-  public static final PVector<Number> intList1DESC_ = (PVector<Number>) TreePVector.<Number>from(((PCollection<Number>) Generated_collections_Test.intList1_).stream().filter(OH.predicate()).sorted(new Comparator<Number>() {
+  public static final PVector<Number> intList1DESC_ = TreePVector.<Number>from(Generated_collections_Test.intList1_.stream().filter(OH.predicate()).sorted(new Comparator<Number>() {
     public int compare(Number p0, Number p1) {
       return OH.compare(p1, p0);
     }
   }).collect(Collectors.<Number>toList()));
-  public static final PVector<Number> intList2DESC_ = (PVector<Number>) TreePVector.<Number>from(((PCollection<Number>) Generated_collections_Test.intList2_).stream().filter(OH.predicate()).sorted(new Comparator<Number>() {
+  public static final PVector<Number> intList2DESC_ = TreePVector.<Number>from(Generated_collections_Test.intList2_.stream().filter(OH.predicate()).sorted(new Comparator<Number>() {
     public int compare(Number p0, Number p1) {
       return OH.compare(p1, p0);
     }
@@ -1364,67 +1364,67 @@ public class Generated_collections_Test {
   public static final PVector<String> stringList0_ = TreePVector.<String>from(new ArrayList<String>());
   public static final PVector<String> stringList1_ = TreePVector.<String>empty().plus("a");
   public static final PVector<String> stringList2_ = TreePVector.<String>empty().plus("a").plus("b");
-  public static final PVector<String> stringList0ASC_ = (PVector<String>) TreePVector.<String>from(((PCollection<String>) Generated_collections_Test.stringList0_).stream().filter(OH.predicate()).sorted(new Comparator<String>() {
+  public static final PVector<String> stringList0ASC_ = TreePVector.<String>from(Generated_collections_Test.stringList0_.stream().filter(OH.predicate()).sorted(new Comparator<String>() {
     public int compare(String p0, String p1) {
       return OH.compare(p0, p1);
     }
   }).collect(Collectors.<String>toList()));
-  public static final PVector<String> stringList1ASC_ = (PVector<String>) TreePVector.<String>from(((PCollection<String>) Generated_collections_Test.stringList1_).stream().filter(OH.predicate()).sorted(new Comparator<String>() {
+  public static final PVector<String> stringList1ASC_ = TreePVector.<String>from(Generated_collections_Test.stringList1_.stream().filter(OH.predicate()).sorted(new Comparator<String>() {
     public int compare(String p0, String p1) {
       return OH.compare(p0, p1);
     }
   }).collect(Collectors.<String>toList()));
-  public static final PVector<String> stringList2ASC_ = (PVector<String>) TreePVector.<String>from(((PCollection<String>) Generated_collections_Test.stringList2_).stream().filter(OH.predicate()).sorted(new Comparator<String>() {
+  public static final PVector<String> stringList2ASC_ = TreePVector.<String>from(Generated_collections_Test.stringList2_.stream().filter(OH.predicate()).sorted(new Comparator<String>() {
     public int compare(String p0, String p1) {
       return OH.compare(p0, p1);
     }
   }).collect(Collectors.<String>toList()));
-  public static final PVector<String> stringList0DESC_ = (PVector<String>) TreePVector.<String>from(((PCollection<String>) Generated_collections_Test.stringList0_).stream().filter(OH.predicate()).sorted(new Comparator<String>() {
+  public static final PVector<String> stringList0DESC_ = TreePVector.<String>from(Generated_collections_Test.stringList0_.stream().filter(OH.predicate()).sorted(new Comparator<String>() {
     public int compare(String p0, String p1) {
       return OH.compare(p1, p0);
     }
   }).collect(Collectors.<String>toList()));
-  public static final PVector<String> stringList1DESC_ = (PVector<String>) TreePVector.<String>from(((PCollection<String>) Generated_collections_Test.stringList1_).stream().filter(OH.predicate()).sorted(new Comparator<String>() {
+  public static final PVector<String> stringList1DESC_ = TreePVector.<String>from(Generated_collections_Test.stringList1_.stream().filter(OH.predicate()).sorted(new Comparator<String>() {
     public int compare(String p0, String p1) {
       return OH.compare(p1, p0);
     }
   }).collect(Collectors.<String>toList()));
-  public static final PVector<String> stringList2DESC_ = (PVector<String>) TreePVector.<String>from(((PCollection<String>) Generated_collections_Test.stringList2_).stream().filter(OH.predicate()).sorted(new Comparator<String>() {
+  public static final PVector<String> stringList2DESC_ = TreePVector.<String>from(Generated_collections_Test.stringList2_.stream().filter(OH.predicate()).sorted(new Comparator<String>() {
     public int compare(String p0, String p1) {
       return OH.compare(p1, p0);
     }
   }).collect(Collectors.<String>toList()));
   @Test
   public void sorting_item1_2143211017902290124() throws Throwable {
-    Assert.assertEquals("Expected: " + Generated_collections_Test.intList0_ + ", but was: " + Generated_collections_Test.intList0ASC_, (Object) Generated_collections_Test.intList0_, (Object) Generated_collections_Test.intList0ASC_);
+    Assert.assertEquals("Expected: " + Generated_collections_Test.intList0_ + ", but was: " + Generated_collections_Test.intList0ASC_, Generated_collections_Test.intList0_, Generated_collections_Test.intList0ASC_);
   }
   @Test
   public void sorting_item2_2143211017902291809() throws Throwable {
-    Assert.assertEquals("Expected: " + Generated_collections_Test.intList1_ + ", but was: " + Generated_collections_Test.intList1ASC_, (Object) Generated_collections_Test.intList1_, (Object) Generated_collections_Test.intList1ASC_);
+    Assert.assertEquals("Expected: " + Generated_collections_Test.intList1_ + ", but was: " + Generated_collections_Test.intList1ASC_, Generated_collections_Test.intList1_, Generated_collections_Test.intList1ASC_);
   }
   @Test
   public void sorting_item3_5005695164082923047() throws Throwable {
-    Assert.assertEquals("Expected: " + Generated_collections_Test.intList2_ + ", but was: " + Generated_collections_Test.intList2ASC_, (Object) Generated_collections_Test.intList2_, (Object) Generated_collections_Test.intList2ASC_);
+    Assert.assertEquals("Expected: " + Generated_collections_Test.intList2_ + ", but was: " + Generated_collections_Test.intList2ASC_, Generated_collections_Test.intList2_, Generated_collections_Test.intList2ASC_);
   }
   @Test
   public void sorting_item5_5005695164083462014() throws Throwable {
-    Assert.assertEquals("Expected: " + Generated_collections_Test.intList0_ + ", but was: " + Generated_collections_Test.intList0DESC_, (Object) Generated_collections_Test.intList0_, (Object) Generated_collections_Test.intList0DESC_);
+    Assert.assertEquals("Expected: " + Generated_collections_Test.intList0_ + ", but was: " + Generated_collections_Test.intList0DESC_, Generated_collections_Test.intList0_, Generated_collections_Test.intList0DESC_);
   }
   @Test
   public void sorting_item6_5005695164083462020() throws Throwable {
-    Assert.assertEquals("Expected: " + Generated_collections_Test.intList1_ + ", but was: " + Generated_collections_Test.intList1DESC_, (Object) Generated_collections_Test.intList1_, (Object) Generated_collections_Test.intList1DESC_);
+    Assert.assertEquals("Expected: " + Generated_collections_Test.intList1_ + ", but was: " + Generated_collections_Test.intList1DESC_, Generated_collections_Test.intList1_, Generated_collections_Test.intList1DESC_);
   }
   @Test
   public void sorting_item7_5005695164083462026() throws Throwable {
-    Assert.assertEquals("Expected: " + TreePVector.<Number>empty().plus((Number) new BigInteger("2")).plus((Number) new BigInteger("1")) + ", but was: " + Generated_collections_Test.intList2DESC_, (Object) TreePVector.<Number>empty().plus((Number) new BigInteger("2")).plus((Number) new BigInteger("1")), (Object) Generated_collections_Test.intList2DESC_);
+    Assert.assertEquals("Expected: " + TreePVector.<Number>empty().plus(new BigInteger("2")).plus(new BigInteger("1")) + ", but was: " + Generated_collections_Test.intList2DESC_, TreePVector.<Number>empty().plus(new BigInteger("2")).plus(new BigInteger("1")), Generated_collections_Test.intList2DESC_);
   }
   @Test
   public void sorting_item9_3571762280779364032() throws Throwable {
-    Assert.assertEquals("Expected: " + Generated_collections_Test.realList0_ + ", but was: " + (PVector<Number>) TreePVector.<Number>from(((PCollection<Number>) Generated_collections_Test.realList0_).stream().filter(OH.predicate()).sorted(new Comparator<Number>() {
+    Assert.assertEquals("Expected: " + Generated_collections_Test.realList0_ + ", but was: " + TreePVector.<Number>from(Generated_collections_Test.realList0_.stream().filter(OH.predicate()).sorted(new Comparator<Number>() {
       public int compare(Number p0, Number p1) {
         return OH.compare(p0, p1);
       }
-    }).collect(Collectors.<Number>toList())), (Object) Generated_collections_Test.realList0_, (Object) (PVector<Number>) TreePVector.<Number>from(((PCollection<Number>) Generated_collections_Test.realList0_).stream().filter(OH.predicate()).sorted(new Comparator<Number>() {
+    }).collect(Collectors.<Number>toList())), Generated_collections_Test.realList0_, TreePVector.<Number>from(Generated_collections_Test.realList0_.stream().filter(OH.predicate()).sorted(new Comparator<Number>() {
       public int compare(Number p0, Number p1) {
         return OH.compare(p0, p1);
       }
@@ -1432,11 +1432,11 @@ public class Generated_collections_Test {
   }
   @Test
   public void sorting_item10_3571762280779364038() throws Throwable {
-    Assert.assertEquals("Expected: " + Generated_collections_Test.realList1_ + ", but was: " + (PVector<Number>) TreePVector.<Number>from(((PCollection<Number>) Generated_collections_Test.realList1_).stream().filter(OH.predicate()).sorted(new Comparator<Number>() {
+    Assert.assertEquals("Expected: " + Generated_collections_Test.realList1_ + ", but was: " + TreePVector.<Number>from(Generated_collections_Test.realList1_.stream().filter(OH.predicate()).sorted(new Comparator<Number>() {
       public int compare(Number p0, Number p1) {
         return OH.compare(p0, p1);
       }
-    }).collect(Collectors.<Number>toList())), (Object) Generated_collections_Test.realList1_, (Object) (PVector<Number>) TreePVector.<Number>from(((PCollection<Number>) Generated_collections_Test.realList1_).stream().filter(OH.predicate()).sorted(new Comparator<Number>() {
+    }).collect(Collectors.<Number>toList())), Generated_collections_Test.realList1_, TreePVector.<Number>from(Generated_collections_Test.realList1_.stream().filter(OH.predicate()).sorted(new Comparator<Number>() {
       public int compare(Number p0, Number p1) {
         return OH.compare(p0, p1);
       }
@@ -1444,11 +1444,11 @@ public class Generated_collections_Test {
   }
   @Test
   public void sorting_item11_3571762280779364044() throws Throwable {
-    Assert.assertEquals("Expected: " + Generated_collections_Test.realList2_ + ", but was: " + (PVector<Number>) TreePVector.<Number>from(((PCollection<Number>) Generated_collections_Test.realList2_).stream().filter(OH.predicate()).sorted(new Comparator<Number>() {
+    Assert.assertEquals("Expected: " + Generated_collections_Test.realList2_ + ", but was: " + TreePVector.<Number>from(Generated_collections_Test.realList2_.stream().filter(OH.predicate()).sorted(new Comparator<Number>() {
       public int compare(Number p0, Number p1) {
         return OH.compare(p0, p1);
       }
-    }).collect(Collectors.<Number>toList())), (Object) Generated_collections_Test.realList2_, (Object) (PVector<Number>) TreePVector.<Number>from(((PCollection<Number>) Generated_collections_Test.realList2_).stream().filter(OH.predicate()).sorted(new Comparator<Number>() {
+    }).collect(Collectors.<Number>toList())), Generated_collections_Test.realList2_, TreePVector.<Number>from(Generated_collections_Test.realList2_.stream().filter(OH.predicate()).sorted(new Comparator<Number>() {
       public int compare(Number p0, Number p1) {
         return OH.compare(p0, p1);
       }
@@ -1456,11 +1456,11 @@ public class Generated_collections_Test {
   }
   @Test
   public void sorting_item13_3571762280779364051() throws Throwable {
-    Assert.assertEquals("Expected: " + Generated_collections_Test.realList0_ + ", but was: " + (PVector<Number>) TreePVector.<Number>from(((PCollection<Number>) Generated_collections_Test.realList0_).stream().filter(OH.predicate()).sorted(new Comparator<Number>() {
+    Assert.assertEquals("Expected: " + Generated_collections_Test.realList0_ + ", but was: " + TreePVector.<Number>from(Generated_collections_Test.realList0_.stream().filter(OH.predicate()).sorted(new Comparator<Number>() {
       public int compare(Number p0, Number p1) {
         return OH.compare(p1, p0);
       }
-    }).collect(Collectors.<Number>toList())), (Object) Generated_collections_Test.realList0_, (Object) (PVector<Number>) TreePVector.<Number>from(((PCollection<Number>) Generated_collections_Test.realList0_).stream().filter(OH.predicate()).sorted(new Comparator<Number>() {
+    }).collect(Collectors.<Number>toList())), Generated_collections_Test.realList0_, TreePVector.<Number>from(Generated_collections_Test.realList0_.stream().filter(OH.predicate()).sorted(new Comparator<Number>() {
       public int compare(Number p0, Number p1) {
         return OH.compare(p1, p0);
       }
@@ -1468,11 +1468,11 @@ public class Generated_collections_Test {
   }
   @Test
   public void sorting_item14_3571762280779364057() throws Throwable {
-    Assert.assertEquals("Expected: " + Generated_collections_Test.realList1_ + ", but was: " + (PVector<Number>) TreePVector.<Number>from(((PCollection<Number>) Generated_collections_Test.realList1_).stream().filter(OH.predicate()).sorted(new Comparator<Number>() {
+    Assert.assertEquals("Expected: " + Generated_collections_Test.realList1_ + ", but was: " + TreePVector.<Number>from(Generated_collections_Test.realList1_.stream().filter(OH.predicate()).sorted(new Comparator<Number>() {
       public int compare(Number p0, Number p1) {
         return OH.compare(p1, p0);
       }
-    }).collect(Collectors.<Number>toList())), (Object) Generated_collections_Test.realList1_, (Object) (PVector<Number>) TreePVector.<Number>from(((PCollection<Number>) Generated_collections_Test.realList1_).stream().filter(OH.predicate()).sorted(new Comparator<Number>() {
+    }).collect(Collectors.<Number>toList())), Generated_collections_Test.realList1_, TreePVector.<Number>from(Generated_collections_Test.realList1_.stream().filter(OH.predicate()).sorted(new Comparator<Number>() {
       public int compare(Number p0, Number p1) {
         return OH.compare(p1, p0);
       }
@@ -1480,11 +1480,11 @@ public class Generated_collections_Test {
   }
   @Test
   public void sorting_item15_3571762280779364063() throws Throwable {
-    Assert.assertEquals("Expected: " + TreePVector.<Number>empty().plus((Number) new BigDecimal("2.00").setScale(2, RoundingMode.DOWN)).plus((Number) new BigDecimal("1.00").setScale(2, RoundingMode.DOWN)) + ", but was: " + (PVector<Number>) TreePVector.<Number>from(((PCollection<Number>) Generated_collections_Test.realList2_).stream().filter(OH.predicate()).sorted(new Comparator<Number>() {
+    Assert.assertEquals("Expected: " + TreePVector.<Number>empty().plus(new BigDecimal("2.00").setScale(2, RoundingMode.DOWN)).plus(new BigDecimal("1.00").setScale(2, RoundingMode.DOWN)) + ", but was: " + TreePVector.<Number>from(Generated_collections_Test.realList2_.stream().filter(OH.predicate()).sorted(new Comparator<Number>() {
       public int compare(Number p0, Number p1) {
         return OH.compare(p1, p0);
       }
-    }).collect(Collectors.<Number>toList())), (Object) TreePVector.<Number>empty().plus((Number) new BigDecimal("2.00").setScale(2, RoundingMode.DOWN)).plus((Number) new BigDecimal("1.00").setScale(2, RoundingMode.DOWN)), (Object) (PVector<Number>) TreePVector.<Number>from(((PCollection<Number>) Generated_collections_Test.realList2_).stream().filter(OH.predicate()).sorted(new Comparator<Number>() {
+    }).collect(Collectors.<Number>toList())), TreePVector.<Number>empty().plus(new BigDecimal("2.00").setScale(2, RoundingMode.DOWN)).plus(new BigDecimal("1.00").setScale(2, RoundingMode.DOWN)), TreePVector.<Number>from(Generated_collections_Test.realList2_.stream().filter(OH.predicate()).sorted(new Comparator<Number>() {
       public int compare(Number p0, Number p1) {
         return OH.compare(p1, p0);
       }
@@ -1492,47 +1492,47 @@ public class Generated_collections_Test {
   }
   @Test
   public void sorting_item18_3571762280765784690() throws Throwable {
-    Assert.assertEquals("Expected: " + Generated_collections_Test.stringList0_ + ", but was: " + Generated_collections_Test.stringList0ASC_, (Object) Generated_collections_Test.stringList0_, (Object) Generated_collections_Test.stringList0ASC_);
+    Assert.assertEquals("Expected: " + Generated_collections_Test.stringList0_ + ", but was: " + Generated_collections_Test.stringList0ASC_, Generated_collections_Test.stringList0_, Generated_collections_Test.stringList0ASC_);
   }
   @Test
   public void sorting_item19_3571762280765784696() throws Throwable {
-    Assert.assertEquals("Expected: " + Generated_collections_Test.stringList1_ + ", but was: " + Generated_collections_Test.stringList1ASC_, (Object) Generated_collections_Test.stringList1_, (Object) Generated_collections_Test.stringList1ASC_);
+    Assert.assertEquals("Expected: " + Generated_collections_Test.stringList1_ + ", but was: " + Generated_collections_Test.stringList1ASC_, Generated_collections_Test.stringList1_, Generated_collections_Test.stringList1ASC_);
   }
   @Test
   public void sorting_item20_3571762280765784702() throws Throwable {
-    Assert.assertEquals("Expected: " + Generated_collections_Test.stringList2_ + ", but was: " + Generated_collections_Test.stringList2ASC_, (Object) Generated_collections_Test.stringList2_, (Object) Generated_collections_Test.stringList2ASC_);
+    Assert.assertEquals("Expected: " + Generated_collections_Test.stringList2_ + ", but was: " + Generated_collections_Test.stringList2ASC_, Generated_collections_Test.stringList2_, Generated_collections_Test.stringList2ASC_);
   }
   @Test
   public void sorting_item22_3571762280765784709() throws Throwable {
-    Assert.assertEquals("Expected: " + Generated_collections_Test.stringList0_ + ", but was: " + Generated_collections_Test.stringList0DESC_, (Object) Generated_collections_Test.stringList0_, (Object) Generated_collections_Test.stringList0DESC_);
+    Assert.assertEquals("Expected: " + Generated_collections_Test.stringList0_ + ", but was: " + Generated_collections_Test.stringList0DESC_, Generated_collections_Test.stringList0_, Generated_collections_Test.stringList0DESC_);
   }
   @Test
   public void sorting_item23_3571762280765784715() throws Throwable {
-    Assert.assertEquals("Expected: " + Generated_collections_Test.stringList1_ + ", but was: " + Generated_collections_Test.stringList1DESC_, (Object) Generated_collections_Test.stringList1_, (Object) Generated_collections_Test.stringList1DESC_);
+    Assert.assertEquals("Expected: " + Generated_collections_Test.stringList1_ + ", but was: " + Generated_collections_Test.stringList1DESC_, Generated_collections_Test.stringList1_, Generated_collections_Test.stringList1DESC_);
   }
   @Test
   public void sorting_item24_3571762280765784721() throws Throwable {
-    Assert.assertEquals("Expected: " + TreePVector.<String>empty().plus("b").plus("a") + ", but was: " + Generated_collections_Test.stringList2DESC_, (Object) TreePVector.<String>empty().plus("b").plus("a"), (Object) Generated_collections_Test.stringList2DESC_);
+    Assert.assertEquals("Expected: " + TreePVector.<String>empty().plus("b").plus("a") + ", but was: " + Generated_collections_Test.stringList2DESC_, TreePVector.<String>empty().plus("b").plus("a"), Generated_collections_Test.stringList2DESC_);
   }
   @Test
   public void sorting_booleanList0_3571762280776314742() throws Throwable {
-    Assert.assertEquals("Expected: " + TreePVector.<Boolean>from(new ArrayList<Boolean>()) + ", but was: " + TreePVector.<Boolean>from(new ArrayList<Boolean>()), (Object) TreePVector.<Boolean>from(new ArrayList<Boolean>()), (Object) TreePVector.<Boolean>from(new ArrayList<Boolean>()));
+    Assert.assertEquals("Expected: " + TreePVector.<Boolean>from(new ArrayList<Boolean>()) + ", but was: " + TreePVector.<Boolean>from(new ArrayList<Boolean>()), TreePVector.<Boolean>from(new ArrayList<Boolean>()), TreePVector.<Boolean>from(new ArrayList<Boolean>()));
   }
   @Test
   public void sorting_booleanList1_3571762280776314751() throws Throwable {
-    Assert.assertEquals("Expected: " + TreePVector.<Boolean>empty().plus(false) + ", but was: " + TreePVector.<Boolean>empty().plus(false), (Object) TreePVector.<Boolean>empty().plus(false), (Object) TreePVector.<Boolean>empty().plus(false));
+    Assert.assertEquals("Expected: " + TreePVector.<Boolean>empty().plus(false) + ", but was: " + TreePVector.<Boolean>empty().plus(false), TreePVector.<Boolean>empty().plus(false), TreePVector.<Boolean>empty().plus(false));
   }
   @Test
   public void sorting_booleanList2_3571762280776314758() throws Throwable {
-    Assert.assertEquals("Expected: " + TreePVector.<Boolean>empty().plus(false).plus(true) + ", but was: " + TreePVector.<Boolean>empty().plus(false).plus(true), (Object) TreePVector.<Boolean>empty().plus(false).plus(true), (Object) TreePVector.<Boolean>empty().plus(false).plus(true));
+    Assert.assertEquals("Expected: " + TreePVector.<Boolean>empty().plus(false).plus(true) + ", but was: " + TreePVector.<Boolean>empty().plus(false).plus(true), TreePVector.<Boolean>empty().plus(false).plus(true), TreePVector.<Boolean>empty().plus(false).plus(true));
   }
   @Test
   public void sorting_item30_3571762280776327057() throws Throwable {
-    Assert.assertEquals("Expected: " + TreePVector.<Boolean>from(new ArrayList<Boolean>()) + ", but was: " + (PVector<Boolean>) TreePVector.<Boolean>from(((PCollection<Boolean>) TreePVector.<Boolean>from(new ArrayList<Boolean>())).stream().filter(OH.predicate()).sorted(new Comparator<Boolean>() {
+    Assert.assertEquals("Expected: " + TreePVector.<Boolean>from(new ArrayList<Boolean>()) + ", but was: " + TreePVector.<Boolean>from(TreePVector.<Boolean>from(new ArrayList<Boolean>()).stream().filter(OH.predicate()).sorted(new Comparator<Boolean>() {
       public int compare(Boolean p0, Boolean p1) {
         return OH.compare(p0, p1);
       }
-    }).collect(Collectors.<Boolean>toList())), (Object) TreePVector.<Boolean>from(new ArrayList<Boolean>()), (Object) (PVector<Boolean>) TreePVector.<Boolean>from(((PCollection<Boolean>) TreePVector.<Boolean>from(new ArrayList<Boolean>())).stream().filter(OH.predicate()).sorted(new Comparator<Boolean>() {
+    }).collect(Collectors.<Boolean>toList())), TreePVector.<Boolean>from(new ArrayList<Boolean>()), TreePVector.<Boolean>from(TreePVector.<Boolean>from(new ArrayList<Boolean>()).stream().filter(OH.predicate()).sorted(new Comparator<Boolean>() {
       public int compare(Boolean p0, Boolean p1) {
         return OH.compare(p0, p1);
       }
@@ -1540,11 +1540,11 @@ public class Generated_collections_Test {
   }
   @Test
   public void sorting_item31_3571762280776327063() throws Throwable {
-    Assert.assertEquals("Expected: " + TreePVector.<Boolean>empty().plus(false) + ", but was: " + (PVector<Boolean>) TreePVector.<Boolean>from(((PCollection<Boolean>) TreePVector.<Boolean>empty().plus(false)).stream().filter(OH.predicate()).sorted(new Comparator<Boolean>() {
+    Assert.assertEquals("Expected: " + TreePVector.<Boolean>empty().plus(false) + ", but was: " + TreePVector.<Boolean>from(TreePVector.<Boolean>empty().plus(false).stream().filter(OH.predicate()).sorted(new Comparator<Boolean>() {
       public int compare(Boolean p0, Boolean p1) {
         return OH.compare(p0, p1);
       }
-    }).collect(Collectors.<Boolean>toList())), (Object) TreePVector.<Boolean>empty().plus(false), (Object) (PVector<Boolean>) TreePVector.<Boolean>from(((PCollection<Boolean>) TreePVector.<Boolean>empty().plus(false)).stream().filter(OH.predicate()).sorted(new Comparator<Boolean>() {
+    }).collect(Collectors.<Boolean>toList())), TreePVector.<Boolean>empty().plus(false), TreePVector.<Boolean>from(TreePVector.<Boolean>empty().plus(false).stream().filter(OH.predicate()).sorted(new Comparator<Boolean>() {
       public int compare(Boolean p0, Boolean p1) {
         return OH.compare(p0, p1);
       }
@@ -1552,11 +1552,11 @@ public class Generated_collections_Test {
   }
   @Test
   public void sorting_item32_3571762280776327069() throws Throwable {
-    Assert.assertEquals("Expected: " + TreePVector.<Boolean>empty().plus(false).plus(true) + ", but was: " + (PVector<Boolean>) TreePVector.<Boolean>from(((PCollection<Boolean>) TreePVector.<Boolean>empty().plus(false).plus(true)).stream().filter(OH.predicate()).sorted(new Comparator<Boolean>() {
+    Assert.assertEquals("Expected: " + TreePVector.<Boolean>empty().plus(false).plus(true) + ", but was: " + TreePVector.<Boolean>from(TreePVector.<Boolean>empty().plus(false).plus(true).stream().filter(OH.predicate()).sorted(new Comparator<Boolean>() {
       public int compare(Boolean p0, Boolean p1) {
         return OH.compare(p0, p1);
       }
-    }).collect(Collectors.<Boolean>toList())), (Object) TreePVector.<Boolean>empty().plus(false).plus(true), (Object) (PVector<Boolean>) TreePVector.<Boolean>from(((PCollection<Boolean>) TreePVector.<Boolean>empty().plus(false).plus(true)).stream().filter(OH.predicate()).sorted(new Comparator<Boolean>() {
+    }).collect(Collectors.<Boolean>toList())), TreePVector.<Boolean>empty().plus(false).plus(true), TreePVector.<Boolean>from(TreePVector.<Boolean>empty().plus(false).plus(true).stream().filter(OH.predicate()).sorted(new Comparator<Boolean>() {
       public int compare(Boolean p0, Boolean p1) {
         return OH.compare(p0, p1);
       }
@@ -1564,11 +1564,11 @@ public class Generated_collections_Test {
   }
   @Test
   public void sorting_item34_3571762280776327076() throws Throwable {
-    Assert.assertEquals("Expected: " + TreePVector.<Boolean>from(new ArrayList<Boolean>()) + ", but was: " + (PVector<Boolean>) TreePVector.<Boolean>from(((PCollection<Boolean>) TreePVector.<Boolean>from(new ArrayList<Boolean>())).stream().filter(OH.predicate()).sorted(new Comparator<Boolean>() {
+    Assert.assertEquals("Expected: " + TreePVector.<Boolean>from(new ArrayList<Boolean>()) + ", but was: " + TreePVector.<Boolean>from(TreePVector.<Boolean>from(new ArrayList<Boolean>()).stream().filter(OH.predicate()).sorted(new Comparator<Boolean>() {
       public int compare(Boolean p0, Boolean p1) {
         return OH.compare(p1, p0);
       }
-    }).collect(Collectors.<Boolean>toList())), (Object) TreePVector.<Boolean>from(new ArrayList<Boolean>()), (Object) (PVector<Boolean>) TreePVector.<Boolean>from(((PCollection<Boolean>) TreePVector.<Boolean>from(new ArrayList<Boolean>())).stream().filter(OH.predicate()).sorted(new Comparator<Boolean>() {
+    }).collect(Collectors.<Boolean>toList())), TreePVector.<Boolean>from(new ArrayList<Boolean>()), TreePVector.<Boolean>from(TreePVector.<Boolean>from(new ArrayList<Boolean>()).stream().filter(OH.predicate()).sorted(new Comparator<Boolean>() {
       public int compare(Boolean p0, Boolean p1) {
         return OH.compare(p1, p0);
       }
@@ -1576,11 +1576,11 @@ public class Generated_collections_Test {
   }
   @Test
   public void sorting_item35_3571762280776327082() throws Throwable {
-    Assert.assertEquals("Expected: " + TreePVector.<Boolean>empty().plus(false) + ", but was: " + (PVector<Boolean>) TreePVector.<Boolean>from(((PCollection<Boolean>) TreePVector.<Boolean>empty().plus(false)).stream().filter(OH.predicate()).sorted(new Comparator<Boolean>() {
+    Assert.assertEquals("Expected: " + TreePVector.<Boolean>empty().plus(false) + ", but was: " + TreePVector.<Boolean>from(TreePVector.<Boolean>empty().plus(false).stream().filter(OH.predicate()).sorted(new Comparator<Boolean>() {
       public int compare(Boolean p0, Boolean p1) {
         return OH.compare(p1, p0);
       }
-    }).collect(Collectors.<Boolean>toList())), (Object) TreePVector.<Boolean>empty().plus(false), (Object) (PVector<Boolean>) TreePVector.<Boolean>from(((PCollection<Boolean>) TreePVector.<Boolean>empty().plus(false)).stream().filter(OH.predicate()).sorted(new Comparator<Boolean>() {
+    }).collect(Collectors.<Boolean>toList())), TreePVector.<Boolean>empty().plus(false), TreePVector.<Boolean>from(TreePVector.<Boolean>empty().plus(false).stream().filter(OH.predicate()).sorted(new Comparator<Boolean>() {
       public int compare(Boolean p0, Boolean p1) {
         return OH.compare(p1, p0);
       }
@@ -1588,36 +1588,36 @@ public class Generated_collections_Test {
   }
   @Test
   public void sorting_item36_3571762280776327088() throws Throwable {
-    Assert.assertEquals("Expected: " + TreePVector.<Boolean>empty().plus(true).plus(false) + ", but was: " + (PVector<Boolean>) TreePVector.<Boolean>from(((PCollection<Boolean>) TreePVector.<Boolean>empty().plus(false).plus(true)).stream().filter(OH.predicate()).sorted(new Comparator<Boolean>() {
+    Assert.assertEquals("Expected: " + TreePVector.<Boolean>empty().plus(true).plus(false) + ", but was: " + TreePVector.<Boolean>from(TreePVector.<Boolean>empty().plus(false).plus(true).stream().filter(OH.predicate()).sorted(new Comparator<Boolean>() {
       public int compare(Boolean p0, Boolean p1) {
         return OH.compare(p1, p0);
       }
-    }).collect(Collectors.<Boolean>toList())), (Object) TreePVector.<Boolean>empty().plus(true).plus(false), (Object) (PVector<Boolean>) TreePVector.<Boolean>from(((PCollection<Boolean>) TreePVector.<Boolean>empty().plus(false).plus(true)).stream().filter(OH.predicate()).sorted(new Comparator<Boolean>() {
+    }).collect(Collectors.<Boolean>toList())), TreePVector.<Boolean>empty().plus(true).plus(false), TreePVector.<Boolean>from(TreePVector.<Boolean>empty().plus(false).plus(true).stream().filter(OH.predicate()).sorted(new Comparator<Boolean>() {
       public int compare(Boolean p0, Boolean p1) {
         return OH.compare(p1, p0);
       }
     }).collect(Collectors.<Boolean>toList())));
   }
   public static Boolean foo(Number i) {
-    Boolean res = AH.isGreater(i, (Number) new BigInteger("3"));
+    Boolean res = AH.isGreater(i, new BigInteger("3"));
 
     return res;
   }
   @Test
   public void set_collection_set0_2441310435551176620() throws Throwable {
-    Assert.assertEquals("Expected: " + HashTreePSet.from(new HashSet<Number>()) + ", but was: " + HashTreePSet.from(new HashSet<Number>()), (Object) HashTreePSet.from(new HashSet<Number>()), (Object) HashTreePSet.from(new HashSet<Number>()));
+    Assert.assertEquals("Expected: " + HashTreePSet.from(new HashSet<Number>()) + ", but was: " + HashTreePSet.from(new HashSet<Number>()), HashTreePSet.from(new HashSet<Number>()), HashTreePSet.from(new HashSet<Number>()));
   }
   @Test
   public void set_collection_set1_2441310435551176629() throws Throwable {
-    Assert.assertEquals("Expected: " + HashTreePSet.from(Arrays.asList((Number) new BigInteger("1"))) + ", but was: " + HashTreePSet.from(Arrays.asList((Number) new BigInteger("1"))), (Object) HashTreePSet.from(Arrays.asList((Number) new BigInteger("1"))), (Object) HashTreePSet.from(Arrays.asList((Number) new BigInteger("1"))));
+    Assert.assertEquals("Expected: " + HashTreePSet.from(Arrays.asList((Number) new BigInteger("1"))) + ", but was: " + HashTreePSet.from(Arrays.asList((Number) new BigInteger("1"))), HashTreePSet.from(Arrays.asList((Number) new BigInteger("1"))), HashTreePSet.from(Arrays.asList((Number) new BigInteger("1"))));
   }
   @Test
   public void set_collection_set2_2441310435551176636() throws Throwable {
-    Assert.assertEquals("Expected: " + HashTreePSet.from(Arrays.asList((Number) new BigInteger("1"), (Number) new BigInteger("2"))) + ", but was: " + HashTreePSet.from(Arrays.asList((Number) new BigInteger("1"), (Number) new BigInteger("2"))), (Object) HashTreePSet.from(Arrays.asList((Number) new BigInteger("1"), (Number) new BigInteger("2"))), (Object) HashTreePSet.from(Arrays.asList((Number) new BigInteger("1"), (Number) new BigInteger("2"))));
+    Assert.assertEquals("Expected: " + HashTreePSet.from(Arrays.asList((Number) new BigInteger("1"), (Number) new BigInteger("2"))) + ", but was: " + HashTreePSet.from(Arrays.asList((Number) new BigInteger("1"), (Number) new BigInteger("2"))), HashTreePSet.from(Arrays.asList((Number) new BigInteger("1"), (Number) new BigInteger("2"))), HashTreePSet.from(Arrays.asList((Number) new BigInteger("1"), (Number) new BigInteger("2"))));
   }
   @Test
   public void set_collection_set3_5005695164084793944() throws Throwable {
-    Assert.assertEquals("Expected: " + HashTreePSet.from(Arrays.asList((Number) new BigInteger("1"))) + ", but was: " + HashTreePSet.from(Arrays.asList((Number) new BigInteger("1"))), (Object) HashTreePSet.from(Arrays.asList((Number) new BigInteger("1"))), (Object) HashTreePSet.from(Arrays.asList((Number) new BigInteger("1"))));
+    Assert.assertEquals("Expected: " + HashTreePSet.from(Arrays.asList((Number) new BigInteger("1"))) + ", but was: " + HashTreePSet.from(Arrays.asList((Number) new BigInteger("1"))), HashTreePSet.from(Arrays.asList((Number) new BigInteger("1"))), HashTreePSet.from(Arrays.asList((Number) new BigInteger("1"))));
   }
   @Test
   public void set_collection_item5_5005695164083975801() throws Throwable {
@@ -1644,11 +1644,11 @@ public class Generated_collections_Test {
   }
   @Test
   public void set_collection_item11_5005695164083975899() throws Throwable {
-    Assert.assertTrue("Expected: " + (Number) new BigInteger("1") + ", but was: " + CollectionHelper.max(HashTreePSet.from(Arrays.asList((Number) new BigInteger("1")))), EqualsTestOp.matches((Number) new BigInteger("1"), CollectionHelper.max(HashTreePSet.from(Arrays.asList((Number) new BigInteger("1"))))));
+    Assert.assertTrue("Expected: " + new BigInteger("1") + ", but was: " + CollectionHelper.max(HashTreePSet.from(Arrays.asList((Number) new BigInteger("1")))), EqualsTestOp.matches(new BigInteger("1"), CollectionHelper.max(HashTreePSet.from(Arrays.asList((Number) new BigInteger("1"))))));
   }
   @Test
   public void set_collection_item12_5005695164083975905() throws Throwable {
-    Assert.assertTrue("Expected: " + (Number) new BigInteger("2") + ", but was: " + CollectionHelper.max(HashTreePSet.from(Arrays.asList((Number) new BigInteger("1"), (Number) new BigInteger("2")))), EqualsTestOp.matches((Number) new BigInteger("2"), CollectionHelper.max(HashTreePSet.from(Arrays.asList((Number) new BigInteger("1"), (Number) new BigInteger("2"))))));
+    Assert.assertTrue("Expected: " + new BigInteger("2") + ", but was: " + CollectionHelper.max(HashTreePSet.from(Arrays.asList((Number) new BigInteger("1"), (Number) new BigInteger("2")))), EqualsTestOp.matches(new BigInteger("2"), CollectionHelper.max(HashTreePSet.from(Arrays.asList((Number) new BigInteger("1"), (Number) new BigInteger("2"))))));
   }
   @Test
   public void set_collection_item16_5005695164083975914() throws Throwable {
@@ -1663,75 +1663,75 @@ public class Generated_collections_Test {
   }
   @Test
   public void set_collection_item17_5005695164083975918() throws Throwable {
-    Assert.assertTrue("Expected: " + (Number) new BigInteger("1") + ", but was: " + CollectionHelper.min(HashTreePSet.from(Arrays.asList((Number) new BigInteger("1")))), EqualsTestOp.matches((Number) new BigInteger("1"), CollectionHelper.min(HashTreePSet.from(Arrays.asList((Number) new BigInteger("1"))))));
+    Assert.assertTrue("Expected: " + new BigInteger("1") + ", but was: " + CollectionHelper.min(HashTreePSet.from(Arrays.asList((Number) new BigInteger("1")))), EqualsTestOp.matches(new BigInteger("1"), CollectionHelper.min(HashTreePSet.from(Arrays.asList((Number) new BigInteger("1"))))));
   }
   @Test
   public void set_collection_item18_5005695164083975924() throws Throwable {
-    Assert.assertTrue("Expected: " + (Number) new BigInteger("1") + ", but was: " + CollectionHelper.min(HashTreePSet.from(Arrays.asList((Number) new BigInteger("1"), (Number) new BigInteger("2")))), EqualsTestOp.matches((Number) new BigInteger("1"), CollectionHelper.min(HashTreePSet.from(Arrays.asList((Number) new BigInteger("1"), (Number) new BigInteger("2"))))));
+    Assert.assertTrue("Expected: " + new BigInteger("1") + ", but was: " + CollectionHelper.min(HashTreePSet.from(Arrays.asList((Number) new BigInteger("1"), (Number) new BigInteger("2")))), EqualsTestOp.matches(new BigInteger("1"), CollectionHelper.min(HashTreePSet.from(Arrays.asList((Number) new BigInteger("1"), (Number) new BigInteger("2"))))));
   }
   @Test
   public void set_collection_item20_5005695164083975931() throws Throwable {
-    Assert.assertTrue("Expected: " + (Number) new BigInteger("0") + ", but was: " + CollectionHelper.sumAsBigInteger(HashTreePSet.from(new HashSet<Number>())), EqualsTestOp.matches((Number) new BigInteger("0"), CollectionHelper.sumAsBigInteger(HashTreePSet.from(new HashSet<Number>()))));
+    Assert.assertTrue("Expected: " + new BigInteger("0") + ", but was: " + CollectionHelper.sumAsBigInteger(HashTreePSet.from(new HashSet<Number>())), EqualsTestOp.matches(new BigInteger("0"), CollectionHelper.sumAsBigInteger(HashTreePSet.from(new HashSet<Number>()))));
   }
   @Test
   public void set_collection_item21_5005695164083975937() throws Throwable {
-    Assert.assertTrue("Expected: " + (Number) new BigInteger("1") + ", but was: " + CollectionHelper.sumAsBigInteger(HashTreePSet.from(Arrays.asList((Number) new BigInteger("1")))), EqualsTestOp.matches((Number) new BigInteger("1"), CollectionHelper.sumAsBigInteger(HashTreePSet.from(Arrays.asList((Number) new BigInteger("1"))))));
+    Assert.assertTrue("Expected: " + new BigInteger("1") + ", but was: " + CollectionHelper.sumAsBigInteger(HashTreePSet.from(Arrays.asList((Number) new BigInteger("1")))), EqualsTestOp.matches(new BigInteger("1"), CollectionHelper.sumAsBigInteger(HashTreePSet.from(Arrays.asList((Number) new BigInteger("1"))))));
   }
   @Test
   public void set_collection_item22_5005695164083975943() throws Throwable {
-    Assert.assertTrue("Expected: " + (Number) new BigInteger("3") + ", but was: " + CollectionHelper.sumAsBigInteger(HashTreePSet.from(Arrays.asList((Number) new BigInteger("1"), (Number) new BigInteger("2")))), EqualsTestOp.matches((Number) new BigInteger("3"), CollectionHelper.sumAsBigInteger(HashTreePSet.from(Arrays.asList((Number) new BigInteger("1"), (Number) new BigInteger("2"))))));
+    Assert.assertTrue("Expected: " + new BigInteger("3") + ", but was: " + CollectionHelper.sumAsBigInteger(HashTreePSet.from(Arrays.asList((Number) new BigInteger("1"), (Number) new BigInteger("2")))), EqualsTestOp.matches(new BigInteger("3"), CollectionHelper.sumAsBigInteger(HashTreePSet.from(Arrays.asList((Number) new BigInteger("1"), (Number) new BigInteger("2"))))));
   }
   @Test
   public void set_collection_item24_5005695164083975950() throws Throwable {
-    Assert.assertEquals("Expected: " + false + ", but was: " + HashTreePSet.from(new HashSet<Number>()).contains((Number) new BigInteger("2")), (Object) false, (Object) HashTreePSet.from(new HashSet<Number>()).contains((Number) new BigInteger("2")));
+    Assert.assertEquals("Expected: " + false + ", but was: " + HashTreePSet.from(new HashSet<Number>()).contains(new BigInteger("2")), (Object) false, (Object) HashTreePSet.from(new HashSet<Number>()).contains(new BigInteger("2")));
   }
   @Test
   public void set_collection_item25_5005695164083975957() throws Throwable {
-    Assert.assertEquals("Expected: " + true + ", but was: " + HashTreePSet.from(Arrays.asList((Number) new BigInteger("1"))).contains((Number) new BigInteger("1")), (Object) true, (Object) HashTreePSet.from(Arrays.asList((Number) new BigInteger("1"))).contains((Number) new BigInteger("1")));
+    Assert.assertEquals("Expected: " + true + ", but was: " + HashTreePSet.from(Arrays.asList((Number) new BigInteger("1"))).contains(new BigInteger("1")), (Object) true, (Object) HashTreePSet.from(Arrays.asList((Number) new BigInteger("1"))).contains(new BigInteger("1")));
   }
   @Test
   public void set_collection_item26_5005695164083975964() throws Throwable {
-    Assert.assertEquals("Expected: " + true + ", but was: " + HashTreePSet.from(Arrays.asList((Number) new BigInteger("1"), (Number) new BigInteger("2"))).contains((Number) new BigInteger("2")), (Object) true, (Object) HashTreePSet.from(Arrays.asList((Number) new BigInteger("1"), (Number) new BigInteger("2"))).contains((Number) new BigInteger("2")));
+    Assert.assertEquals("Expected: " + true + ", but was: " + HashTreePSet.from(Arrays.asList((Number) new BigInteger("1"), (Number) new BigInteger("2"))).contains(new BigInteger("2")), (Object) true, (Object) HashTreePSet.from(Arrays.asList((Number) new BigInteger("1"), (Number) new BigInteger("2"))).contains(new BigInteger("2")));
   }
   @Test
   public void set_collection_item28_5005695164084959822() throws Throwable {
-    Assert.assertEquals("Expected: " + HashTreePSet.from(Arrays.asList((Number) new BigInteger("1"), (Number) new BigInteger("2"), (Number) new BigInteger("3"))) + ", but was: " + HashTreePSet.from(Arrays.asList((Number) new BigInteger("1"), (Number) new BigInteger("3"))).plus((Number) new BigInteger("2")), (Object) HashTreePSet.from(Arrays.asList((Number) new BigInteger("1"), (Number) new BigInteger("2"), (Number) new BigInteger("3"))), (Object) HashTreePSet.from(Arrays.asList((Number) new BigInteger("1"), (Number) new BigInteger("3"))).plus((Number) new BigInteger("2")));
+    Assert.assertEquals("Expected: " + HashTreePSet.from(Arrays.asList((Number) new BigInteger("1"), (Number) new BigInteger("2"), (Number) new BigInteger("3"))) + ", but was: " + HashTreePSet.from(Arrays.asList((Number) new BigInteger("1"), (Number) new BigInteger("3"))).plus(new BigInteger("2")), HashTreePSet.from(Arrays.asList((Number) new BigInteger("1"), (Number) new BigInteger("2"), (Number) new BigInteger("3"))), HashTreePSet.from(Arrays.asList((Number) new BigInteger("1"), (Number) new BigInteger("3"))).plus(new BigInteger("2")));
   }
   @Test
   public void set_collection_item29_5005695164085960640() throws Throwable {
-    Assert.assertEquals("Expected: " + HashTreePSet.from(Arrays.asList((Number) new BigInteger("1"), (Number) new BigInteger("3"))) + ", but was: " + HashTreePSet.from(Arrays.asList((Number) new BigInteger("1"), (Number) new BigInteger("2"), (Number) new BigInteger("3"))).minus((Number) new BigInteger("2")), (Object) HashTreePSet.from(Arrays.asList((Number) new BigInteger("1"), (Number) new BigInteger("3"))), (Object) HashTreePSet.from(Arrays.asList((Number) new BigInteger("1"), (Number) new BigInteger("2"), (Number) new BigInteger("3"))).minus((Number) new BigInteger("2")));
+    Assert.assertEquals("Expected: " + HashTreePSet.from(Arrays.asList((Number) new BigInteger("1"), (Number) new BigInteger("3"))) + ", but was: " + HashTreePSet.from(Arrays.asList((Number) new BigInteger("1"), (Number) new BigInteger("2"), (Number) new BigInteger("3"))).minus(new BigInteger("2")), HashTreePSet.from(Arrays.asList((Number) new BigInteger("1"), (Number) new BigInteger("3"))), HashTreePSet.from(Arrays.asList((Number) new BigInteger("1"), (Number) new BigInteger("2"), (Number) new BigInteger("3"))).minus(new BigInteger("2")));
   }
   @Test
   public void set_collection_item31_5005695164086460310() throws Throwable {
-    Assert.assertEquals("Expected: " + TreePVector.<Number>empty().plus((Number) new BigInteger("1")).plus((Number) new BigInteger("2")).plus((Number) new BigInteger("3")) + ", but was: " + TreePVector.from(HashTreePSet.from(Arrays.asList((Number) new BigInteger("1"), (Number) new BigInteger("2"), (Number) new BigInteger("3")))), (Object) TreePVector.<Number>empty().plus((Number) new BigInteger("1")).plus((Number) new BigInteger("2")).plus((Number) new BigInteger("3")), (Object) TreePVector.from(HashTreePSet.from(Arrays.asList((Number) new BigInteger("1"), (Number) new BigInteger("2"), (Number) new BigInteger("3")))));
+    Assert.assertEquals("Expected: " + TreePVector.<Number>empty().plus(new BigInteger("1")).plus(new BigInteger("2")).plus(new BigInteger("3")) + ", but was: " + TreePVector.from(HashTreePSet.from(Arrays.asList((Number) new BigInteger("1"), (Number) new BigInteger("2"), (Number) new BigInteger("3")))), TreePVector.<Number>empty().plus(new BigInteger("1")).plus(new BigInteger("2")).plus(new BigInteger("3")), TreePVector.from(HashTreePSet.from(Arrays.asList((Number) new BigInteger("1"), (Number) new BigInteger("2"), (Number) new BigInteger("3")))));
   }
   @Test
   public void set_collection_item33_5396945261032663334() throws Throwable {
-    Assert.assertEquals("Expected: " + HashTreePSet.from(new HashSet<String>()) + ", but was: " + HashTreePSet.from(new HashSet<String>()).plusAll(HashTreePSet.from(new HashSet<String>())), (Object) HashTreePSet.from(new HashSet<String>()), (Object) HashTreePSet.from(new HashSet<String>()).plusAll(HashTreePSet.from(new HashSet<String>())));
+    Assert.assertEquals("Expected: " + HashTreePSet.from(new HashSet<String>()) + ", but was: " + HashTreePSet.from(new HashSet<String>()).plusAll(HashTreePSet.from(new HashSet<String>())), HashTreePSet.from(new HashSet<String>()), HashTreePSet.from(new HashSet<String>()).plusAll(HashTreePSet.from(new HashSet<String>())));
   }
   @Test
   public void set_collection_item34_5396945261030851450() throws Throwable {
-    Assert.assertEquals("Expected: " + HashTreePSet.from(Arrays.asList((Number) new BigInteger("1"), (Number) new BigInteger("2"), (Number) new BigInteger("3"))) + ", but was: " + HashTreePSet.from(Arrays.asList((Number) new BigInteger("1"), (Number) new BigInteger("2"))).plusAll(HashTreePSet.from(Arrays.asList((Number) new BigInteger("3"), (Number) new BigInteger("2")))), (Object) HashTreePSet.from(Arrays.asList((Number) new BigInteger("1"), (Number) new BigInteger("2"), (Number) new BigInteger("3"))), (Object) HashTreePSet.from(Arrays.asList((Number) new BigInteger("1"), (Number) new BigInteger("2"))).plusAll(HashTreePSet.from(Arrays.asList((Number) new BigInteger("3"), (Number) new BigInteger("2")))));
+    Assert.assertEquals("Expected: " + HashTreePSet.from(Arrays.asList((Number) new BigInteger("1"), (Number) new BigInteger("2"), (Number) new BigInteger("3"))) + ", but was: " + HashTreePSet.from(Arrays.asList((Number) new BigInteger("1"), (Number) new BigInteger("2"))).plusAll(HashTreePSet.from(Arrays.asList((Number) new BigInteger("3"), (Number) new BigInteger("2")))), HashTreePSet.from(Arrays.asList((Number) new BigInteger("1"), (Number) new BigInteger("2"), (Number) new BigInteger("3"))), HashTreePSet.from(Arrays.asList((Number) new BigInteger("1"), (Number) new BigInteger("2"))).plusAll(HashTreePSet.from(Arrays.asList((Number) new BigInteger("3"), (Number) new BigInteger("2")))));
   }
   @Test
   public void set_collection_item35_5396945261033645014() throws Throwable {
-    Assert.assertEquals("Expected: " + HashTreePSet.from(Arrays.asList((Number) new BigInteger("1"), (Number) new BigInteger("2"))) + ", but was: " + HashTreePSet.from(Arrays.asList((Number) new BigInteger("1"), (Number) new BigInteger("2"))).plusAll(HashTreePSet.from(Arrays.asList((Number) new BigInteger("1"), (Number) new BigInteger("2")))), (Object) HashTreePSet.from(Arrays.asList((Number) new BigInteger("1"), (Number) new BigInteger("2"))), (Object) HashTreePSet.from(Arrays.asList((Number) new BigInteger("1"), (Number) new BigInteger("2"))).plusAll(HashTreePSet.from(Arrays.asList((Number) new BigInteger("1"), (Number) new BigInteger("2")))));
+    Assert.assertEquals("Expected: " + HashTreePSet.from(Arrays.asList((Number) new BigInteger("1"), (Number) new BigInteger("2"))) + ", but was: " + HashTreePSet.from(Arrays.asList((Number) new BigInteger("1"), (Number) new BigInteger("2"))).plusAll(HashTreePSet.from(Arrays.asList((Number) new BigInteger("1"), (Number) new BigInteger("2")))), HashTreePSet.from(Arrays.asList((Number) new BigInteger("1"), (Number) new BigInteger("2"))), HashTreePSet.from(Arrays.asList((Number) new BigInteger("1"), (Number) new BigInteger("2"))).plusAll(HashTreePSet.from(Arrays.asList((Number) new BigInteger("1"), (Number) new BigInteger("2")))));
   }
   @Test
   public void set_collection_item36_5396945261034308898() throws Throwable {
-    Assert.assertEquals("Expected: " + HashTreePSet.from(Arrays.asList((Number) new BigInteger("1"))) + ", but was: " + HashTreePSet.from(Arrays.asList((Number) new BigInteger("1"))).plusAll(HashTreePSet.from(Arrays.asList((Number) new BigInteger("1")))), (Object) HashTreePSet.from(Arrays.asList((Number) new BigInteger("1"))), (Object) HashTreePSet.from(Arrays.asList((Number) new BigInteger("1"))).plusAll(HashTreePSet.from(Arrays.asList((Number) new BigInteger("1")))));
+    Assert.assertEquals("Expected: " + HashTreePSet.from(Arrays.asList((Number) new BigInteger("1"))) + ", but was: " + HashTreePSet.from(Arrays.asList((Number) new BigInteger("1"))).plusAll(HashTreePSet.from(Arrays.asList((Number) new BigInteger("1")))), HashTreePSet.from(Arrays.asList((Number) new BigInteger("1"))), HashTreePSet.from(Arrays.asList((Number) new BigInteger("1"))).plusAll(HashTreePSet.from(Arrays.asList((Number) new BigInteger("1")))));
   }
   @Test
   public void set_collection_item38_5396945261038805448() throws Throwable {
-    Assert.assertEquals("Expected: " + HashTreePSet.from(new HashSet<String>()) + ", but was: " + HashTreePSet.from(new HashSet<String>()).minusAll(HashTreePSet.from(new HashSet<String>())), (Object) HashTreePSet.from(new HashSet<String>()), (Object) HashTreePSet.from(new HashSet<String>()).minusAll(HashTreePSet.from(new HashSet<String>())));
+    Assert.assertEquals("Expected: " + HashTreePSet.from(new HashSet<String>()) + ", but was: " + HashTreePSet.from(new HashSet<String>()).minusAll(HashTreePSet.from(new HashSet<String>())), HashTreePSet.from(new HashSet<String>()), HashTreePSet.from(new HashSet<String>()).minusAll(HashTreePSet.from(new HashSet<String>())));
   }
   @Test
   public void set_collection_item39_5396945261038805461() throws Throwable {
-    Assert.assertEquals("Expected: " + HashTreePSet.from(Arrays.asList((Number) new BigInteger("1"))) + ", but was: " + HashTreePSet.from(Arrays.asList((Number) new BigInteger("1"), (Number) new BigInteger("2"))).minusAll(HashTreePSet.from(Arrays.asList((Number) new BigInteger("3"), (Number) new BigInteger("2")))), (Object) HashTreePSet.from(Arrays.asList((Number) new BigInteger("1"))), (Object) HashTreePSet.from(Arrays.asList((Number) new BigInteger("1"), (Number) new BigInteger("2"))).minusAll(HashTreePSet.from(Arrays.asList((Number) new BigInteger("3"), (Number) new BigInteger("2")))));
+    Assert.assertEquals("Expected: " + HashTreePSet.from(Arrays.asList((Number) new BigInteger("1"))) + ", but was: " + HashTreePSet.from(Arrays.asList((Number) new BigInteger("1"), (Number) new BigInteger("2"))).minusAll(HashTreePSet.from(Arrays.asList((Number) new BigInteger("3"), (Number) new BigInteger("2")))), HashTreePSet.from(Arrays.asList((Number) new BigInteger("1"))), HashTreePSet.from(Arrays.asList((Number) new BigInteger("1"), (Number) new BigInteger("2"))).minusAll(HashTreePSet.from(Arrays.asList((Number) new BigInteger("3"), (Number) new BigInteger("2")))));
   }
   @Test
   public void set_collection_item40_5396945261038805477() throws Throwable {
-    Assert.assertEquals("Expected: " + HashTreePSet.from(new HashSet<Number>()) + ", but was: " + HashTreePSet.from(Arrays.asList((Number) new BigInteger("1"), (Number) new BigInteger("2"))).minusAll(HashTreePSet.from(Arrays.asList((Number) new BigInteger("1"), (Number) new BigInteger("2")))), (Object) HashTreePSet.from(new HashSet<Number>()), (Object) HashTreePSet.from(Arrays.asList((Number) new BigInteger("1"), (Number) new BigInteger("2"))).minusAll(HashTreePSet.from(Arrays.asList((Number) new BigInteger("1"), (Number) new BigInteger("2")))));
+    Assert.assertEquals("Expected: " + HashTreePSet.from(new HashSet<Number>()) + ", but was: " + HashTreePSet.from(Arrays.asList((Number) new BigInteger("1"), (Number) new BigInteger("2"))).minusAll(HashTreePSet.from(Arrays.asList((Number) new BigInteger("1"), (Number) new BigInteger("2")))), HashTreePSet.from(new HashSet<Number>()), HashTreePSet.from(Arrays.asList((Number) new BigInteger("1"), (Number) new BigInteger("2"))).minusAll(HashTreePSet.from(Arrays.asList((Number) new BigInteger("1"), (Number) new BigInteger("2")))));
   }
   @Test
   public void map_collection_item0_6352670906778482658() throws Throwable {
@@ -1771,32 +1771,32 @@ public class Generated_collections_Test {
   }
   @Test
   public void map_collection_item3_4951196709609841418() throws Throwable {
-    Assert.assertEquals("Expected: " + HashTreePMap.from(new HashMap<String, String>()) + ", but was: " + HashTreePMap.from(new HashMap<String, String>()), (Object) HashTreePMap.from(new HashMap<String, String>()), (Object) HashTreePMap.from(new HashMap<String, String>()));
+    Assert.assertEquals("Expected: " + HashTreePMap.from(new HashMap<String, String>()) + ", but was: " + HashTreePMap.from(new HashMap<String, String>()), HashTreePMap.from(new HashMap<String, String>()), HashTreePMap.from(new HashMap<String, String>()));
   }
   @Test
   public void map_collection_item4_4951196709609851584() throws Throwable {
     Assert.assertEquals("Expected: " + HashTreePMap.from(new _FunctionTypes._return_P0_E0<Map>() {
       public Map invoke() {
         Map result = new HashMap();
-        result.put((Number) new BigInteger("1"), (Number) new BigInteger("2"));
+        result.put(new BigInteger("1"), new BigInteger("2"));
         return result;
       }
     }.invoke()) + ", but was: " + HashTreePMap.from(new _FunctionTypes._return_P0_E0<Map>() {
       public Map invoke() {
         Map result = new HashMap();
-        result.put((Number) new BigInteger("1"), (Number) new BigInteger("2"));
+        result.put(new BigInteger("1"), new BigInteger("2"));
         return result;
       }
     }.invoke()), (Object) HashTreePMap.from(new _FunctionTypes._return_P0_E0<Map>() {
       public Map invoke() {
         Map result = new HashMap();
-        result.put((Number) new BigInteger("1"), (Number) new BigInteger("2"));
+        result.put(new BigInteger("1"), new BigInteger("2"));
         return result;
       }
     }.invoke()), (Object) HashTreePMap.from(new _FunctionTypes._return_P0_E0<Map>() {
       public Map invoke() {
         Map result = new HashMap();
-        result.put((Number) new BigInteger("1"), (Number) new BigInteger("2"));
+        result.put(new BigInteger("1"), new BigInteger("2"));
         return result;
       }
     }.invoke()));
@@ -1806,29 +1806,29 @@ public class Generated_collections_Test {
     Assert.assertEquals("Expected: " + HashTreePMap.from(new _FunctionTypes._return_P0_E0<Map>() {
       public Map invoke() {
         Map result = new HashMap();
-        result.put((Number) new BigInteger("1"), (Number) new BigInteger("2"));
-        result.put((Number) new BigInteger("3"), (Number) new BigInteger("4"));
+        result.put(new BigInteger("1"), new BigInteger("2"));
+        result.put(new BigInteger("3"), new BigInteger("4"));
         return result;
       }
     }.invoke()) + ", but was: " + HashTreePMap.from(new _FunctionTypes._return_P0_E0<Map>() {
       public Map invoke() {
         Map result = new HashMap();
-        result.put((Number) new BigInteger("1"), (Number) new BigInteger("2"));
-        result.put((Number) new BigInteger("3"), (Number) new BigInteger("4"));
+        result.put(new BigInteger("1"), new BigInteger("2"));
+        result.put(new BigInteger("3"), new BigInteger("4"));
         return result;
       }
     }.invoke()), (Object) HashTreePMap.from(new _FunctionTypes._return_P0_E0<Map>() {
       public Map invoke() {
         Map result = new HashMap();
-        result.put((Number) new BigInteger("1"), (Number) new BigInteger("2"));
-        result.put((Number) new BigInteger("3"), (Number) new BigInteger("4"));
+        result.put(new BigInteger("1"), new BigInteger("2"));
+        result.put(new BigInteger("3"), new BigInteger("4"));
         return result;
       }
     }.invoke()), (Object) HashTreePMap.from(new _FunctionTypes._return_P0_E0<Map>() {
       public Map invoke() {
         Map result = new HashMap();
-        result.put((Number) new BigInteger("1"), (Number) new BigInteger("2"));
-        result.put((Number) new BigInteger("3"), (Number) new BigInteger("4"));
+        result.put(new BigInteger("1"), new BigInteger("2"));
+        result.put(new BigInteger("3"), new BigInteger("4"));
         return result;
       }
     }.invoke()));
@@ -1836,20 +1836,20 @@ public class Generated_collections_Test {
   public static final Function<ParameterSetWrapper, Number> play_ = new Function<ParameterSetWrapper, Number>() {
     public Number apply(ParameterSetWrapper param) {
       Number it = (Number) param.parameters.get(0);
-      return (Number) new BigInteger("2");
+      return new BigInteger("2");
     }
   };
   @Test
   public void collections_intList_7740953487930558700() throws Throwable {
-    Assert.assertEquals("Expected: " + TreePVector.<Number>empty().plus((Number) new BigInteger("1")).plus((Number) new BigInteger("2")).plus((Number) new BigInteger("3")) + ", but was: " + TreePVector.<Number>empty().plus((Number) new BigInteger("1")).plus((Number) new BigInteger("2")).plus((Number) new BigInteger("3")), (Object) TreePVector.<Number>empty().plus((Number) new BigInteger("1")).plus((Number) new BigInteger("2")).plus((Number) new BigInteger("3")), (Object) TreePVector.<Number>empty().plus((Number) new BigInteger("1")).plus((Number) new BigInteger("2")).plus((Number) new BigInteger("3")));
+    Assert.assertEquals("Expected: " + TreePVector.<Number>empty().plus(new BigInteger("1")).plus(new BigInteger("2")).plus(new BigInteger("3")) + ", but was: " + TreePVector.<Number>empty().plus(new BigInteger("1")).plus(new BigInteger("2")).plus(new BigInteger("3")), TreePVector.<Number>empty().plus(new BigInteger("1")).plus(new BigInteger("2")).plus(new BigInteger("3")), TreePVector.<Number>empty().plus(new BigInteger("1")).plus(new BigInteger("2")).plus(new BigInteger("3")));
   }
   @Test
   public void collections_sortedDESC_7740953487930558711() throws Throwable {
-    Assert.assertEquals("Expected: " + TreePVector.<Number>empty().plus((Number) new BigInteger("3")).plus((Number) new BigInteger("2")).plus((Number) new BigInteger("1")) + ", but was: " + (PVector<Number>) TreePVector.<Number>from(((PCollection<Number>) TreePVector.<Number>empty().plus((Number) new BigInteger("1")).plus((Number) new BigInteger("2")).plus((Number) new BigInteger("3"))).stream().filter(OH.predicate()).sorted(new Comparator<Number>() {
+    Assert.assertEquals("Expected: " + TreePVector.<Number>empty().plus(new BigInteger("3")).plus(new BigInteger("2")).plus(new BigInteger("1")) + ", but was: " + TreePVector.<Number>from(TreePVector.<Number>empty().plus(new BigInteger("1")).plus(new BigInteger("2")).plus(new BigInteger("3")).stream().filter(OH.predicate()).sorted(new Comparator<Number>() {
       public int compare(Number p0, Number p1) {
         return OH.compare(p1, p0);
       }
-    }).collect(Collectors.<Number>toList())), (Object) TreePVector.<Number>empty().plus((Number) new BigInteger("3")).plus((Number) new BigInteger("2")).plus((Number) new BigInteger("1")), (Object) (PVector<Number>) TreePVector.<Number>from(((PCollection<Number>) TreePVector.<Number>empty().plus((Number) new BigInteger("1")).plus((Number) new BigInteger("2")).plus((Number) new BigInteger("3"))).stream().filter(OH.predicate()).sorted(new Comparator<Number>() {
+    }).collect(Collectors.<Number>toList())), TreePVector.<Number>empty().plus(new BigInteger("3")).plus(new BigInteger("2")).plus(new BigInteger("1")), TreePVector.<Number>from(TreePVector.<Number>empty().plus(new BigInteger("1")).plus(new BigInteger("2")).plus(new BigInteger("3")).stream().filter(OH.predicate()).sorted(new Comparator<Number>() {
       public int compare(Number p0, Number p1) {
         return OH.compare(p1, p0);
       }
@@ -1857,11 +1857,11 @@ public class Generated_collections_Test {
   }
   @Test
   public void collections_sortedASC_2143211017902284029() throws Throwable {
-    Assert.assertEquals("Expected: " + TreePVector.<Number>empty().plus((Number) new BigInteger("1")).plus((Number) new BigInteger("2")).plus((Number) new BigInteger("3")) + ", but was: " + (PVector<Number>) TreePVector.<Number>from(((PCollection<Number>) TreePVector.<Number>empty().plus((Number) new BigInteger("1")).plus((Number) new BigInteger("2")).plus((Number) new BigInteger("3"))).stream().filter(OH.predicate()).sorted(new Comparator<Number>() {
+    Assert.assertEquals("Expected: " + TreePVector.<Number>empty().plus(new BigInteger("1")).plus(new BigInteger("2")).plus(new BigInteger("3")) + ", but was: " + TreePVector.<Number>from(TreePVector.<Number>empty().plus(new BigInteger("1")).plus(new BigInteger("2")).plus(new BigInteger("3")).stream().filter(OH.predicate()).sorted(new Comparator<Number>() {
       public int compare(Number p0, Number p1) {
         return OH.compare(p0, p1);
       }
-    }).collect(Collectors.<Number>toList())), (Object) TreePVector.<Number>empty().plus((Number) new BigInteger("1")).plus((Number) new BigInteger("2")).plus((Number) new BigInteger("3")), (Object) (PVector<Number>) TreePVector.<Number>from(((PCollection<Number>) TreePVector.<Number>empty().plus((Number) new BigInteger("1")).plus((Number) new BigInteger("2")).plus((Number) new BigInteger("3"))).stream().filter(OH.predicate()).sorted(new Comparator<Number>() {
+    }).collect(Collectors.<Number>toList())), TreePVector.<Number>empty().plus(new BigInteger("1")).plus(new BigInteger("2")).plus(new BigInteger("3")), TreePVector.<Number>from(TreePVector.<Number>empty().plus(new BigInteger("1")).plus(new BigInteger("2")).plus(new BigInteger("3")).stream().filter(OH.predicate()).sorted(new Comparator<Number>() {
       public int compare(Number p0, Number p1) {
         return OH.compare(p0, p1);
       }
@@ -1869,32 +1869,32 @@ public class Generated_collections_Test {
   }
   @Test
   public void collections_maxIsThree_7740953487930558721() throws Throwable {
-    Assert.assertTrue("Expected: " + (Number) new BigInteger("3") + ", but was: " + CollectionHelper.max(TreePVector.<Number>empty().plus((Number) new BigInteger("1")).plus((Number) new BigInteger("2")).plus((Number) new BigInteger("3"))), EqualsTestOp.matches((Number) new BigInteger("3"), CollectionHelper.max(TreePVector.<Number>empty().plus((Number) new BigInteger("1")).plus((Number) new BigInteger("2")).plus((Number) new BigInteger("3")))));
+    Assert.assertTrue("Expected: " + new BigInteger("3") + ", but was: " + CollectionHelper.max(TreePVector.<Number>empty().plus(new BigInteger("1")).plus(new BigInteger("2")).plus(new BigInteger("3"))), EqualsTestOp.matches(new BigInteger("3"), CollectionHelper.max(TreePVector.<Number>empty().plus(new BigInteger("1")).plus(new BigInteger("2")).plus(new BigInteger("3")))));
   }
   @Test
   public void collections_minIsOne_6124454787017226400() throws Throwable {
-    Assert.assertTrue("Expected: " + (Number) new BigInteger("1") + ", but was: " + CollectionHelper.min(TreePVector.<Number>empty().plus((Number) new BigInteger("1")).plus((Number) new BigInteger("2")).plus((Number) new BigInteger("3"))), EqualsTestOp.matches((Number) new BigInteger("1"), CollectionHelper.min(TreePVector.<Number>empty().plus((Number) new BigInteger("1")).plus((Number) new BigInteger("2")).plus((Number) new BigInteger("3")))));
+    Assert.assertTrue("Expected: " + new BigInteger("1") + ", but was: " + CollectionHelper.min(TreePVector.<Number>empty().plus(new BigInteger("1")).plus(new BigInteger("2")).plus(new BigInteger("3"))), EqualsTestOp.matches(new BigInteger("1"), CollectionHelper.min(TreePVector.<Number>empty().plus(new BigInteger("1")).plus(new BigInteger("2")).plus(new BigInteger("3")))));
   }
   @Test
   public void collections_sumIsSix_7740953487930558728() throws Throwable {
-    Assert.assertTrue("Expected: " + (Number) new BigInteger("6") + ", but was: " + CollectionHelper.sumAsBigInteger(TreePVector.<Number>empty().plus((Number) new BigInteger("1")).plus((Number) new BigInteger("2")).plus((Number) new BigInteger("3"))), EqualsTestOp.matches((Number) new BigInteger("6"), CollectionHelper.sumAsBigInteger(TreePVector.<Number>empty().plus((Number) new BigInteger("1")).plus((Number) new BigInteger("2")).plus((Number) new BigInteger("3")))));
+    Assert.assertTrue("Expected: " + new BigInteger("6") + ", but was: " + CollectionHelper.sumAsBigInteger(TreePVector.<Number>empty().plus(new BigInteger("1")).plus(new BigInteger("2")).plus(new BigInteger("3"))), EqualsTestOp.matches(new BigInteger("6"), CollectionHelper.sumAsBigInteger(TreePVector.<Number>empty().plus(new BigInteger("1")).plus(new BigInteger("2")).plus(new BigInteger("3")))));
   }
   @Test
   public void collections_longerList_7740953487930558735() throws Throwable {
-    Assert.assertEquals("Expected: " + TreePVector.<Number>empty().plus((Number) new BigInteger("1")).plus((Number) new BigInteger("2")).plus((Number) new BigInteger("3")).plus((Number) new BigInteger("4")).plus((Number) new BigInteger("5")).plus((Number) new BigInteger("6")).plus((Number) new BigInteger("7")) + ", but was: " + TreePVector.<Number>empty().plus((Number) new BigInteger("1")).plus((Number) new BigInteger("2")).plus((Number) new BigInteger("3")).plus((Number) new BigInteger("4")).plus((Number) new BigInteger("5")).plus((Number) new BigInteger("6")).plus((Number) new BigInteger("7")), (Object) TreePVector.<Number>empty().plus((Number) new BigInteger("1")).plus((Number) new BigInteger("2")).plus((Number) new BigInteger("3")).plus((Number) new BigInteger("4")).plus((Number) new BigInteger("5")).plus((Number) new BigInteger("6")).plus((Number) new BigInteger("7")), (Object) TreePVector.<Number>empty().plus((Number) new BigInteger("1")).plus((Number) new BigInteger("2")).plus((Number) new BigInteger("3")).plus((Number) new BigInteger("4")).plus((Number) new BigInteger("5")).plus((Number) new BigInteger("6")).plus((Number) new BigInteger("7")));
+    Assert.assertEquals("Expected: " + TreePVector.<Number>empty().plus(new BigInteger("1")).plus(new BigInteger("2")).plus(new BigInteger("3")).plus(new BigInteger("4")).plus(new BigInteger("5")).plus(new BigInteger("6")).plus(new BigInteger("7")) + ", but was: " + TreePVector.<Number>empty().plus(new BigInteger("1")).plus(new BigInteger("2")).plus(new BigInteger("3")).plus(new BigInteger("4")).plus(new BigInteger("5")).plus(new BigInteger("6")).plus(new BigInteger("7")), TreePVector.<Number>empty().plus(new BigInteger("1")).plus(new BigInteger("2")).plus(new BigInteger("3")).plus(new BigInteger("4")).plus(new BigInteger("5")).plus(new BigInteger("6")).plus(new BigInteger("7")), TreePVector.<Number>empty().plus(new BigInteger("1")).plus(new BigInteger("2")).plus(new BigInteger("3")).plus(new BigInteger("4")).plus(new BigInteger("5")).plus(new BigInteger("6")).plus(new BigInteger("7")));
   }
   @Test
   public void collections_headList_7740953487930558754() throws Throwable {
-    Assert.assertEquals("Expected: " + TreePVector.<Number>empty().plus((Number) new BigInteger("1")).plus((Number) new BigInteger("2")).plus((Number) new BigInteger("3")) + ", but was: " + (((_FunctionTypes._return_P0_E0<PVector<Number>>) () -> {
-      PVector<Number> origList = TreePVector.<Number>empty().plus((Number) new BigInteger("1")).plus((Number) new BigInteger("2")).plus((Number) new BigInteger("3")).plus((Number) new BigInteger("4")).plus((Number) new BigInteger("5")).plus((Number) new BigInteger("6")).plus((Number) new BigInteger("7"));
-      int noOfElements = ((Number) new BigInteger("3")).intValue();
+    Assert.assertEquals("Expected: " + TreePVector.<Number>empty().plus(new BigInteger("1")).plus(new BigInteger("2")).plus(new BigInteger("3")) + ", but was: " + (((_FunctionTypes._return_P0_E0<PVector<Number>>) () -> {
+      PVector<Number> origList = TreePVector.<Number>empty().plus(new BigInteger("1")).plus(new BigInteger("2")).plus(new BigInteger("3")).plus(new BigInteger("4")).plus(new BigInteger("5")).plus(new BigInteger("6")).plus(new BigInteger("7"));
+      int noOfElements = new BigInteger("3").intValue();
       if (origList.size() <= noOfElements) {
         return origList;
       }
       return origList.subList(0, noOfElements);
-    }).invoke()), (Object) TreePVector.<Number>empty().plus((Number) new BigInteger("1")).plus((Number) new BigInteger("2")).plus((Number) new BigInteger("3")), (Object) ((_FunctionTypes._return_P0_E0<PVector<Number>>) () -> {
-      PVector<Number> origList = TreePVector.<Number>empty().plus((Number) new BigInteger("1")).plus((Number) new BigInteger("2")).plus((Number) new BigInteger("3")).plus((Number) new BigInteger("4")).plus((Number) new BigInteger("5")).plus((Number) new BigInteger("6")).plus((Number) new BigInteger("7"));
-      int noOfElements = ((Number) new BigInteger("3")).intValue();
+    }).invoke()), TreePVector.<Number>empty().plus(new BigInteger("1")).plus(new BigInteger("2")).plus(new BigInteger("3")), (Object) ((_FunctionTypes._return_P0_E0<PVector<Number>>) () -> {
+      PVector<Number> origList = TreePVector.<Number>empty().plus(new BigInteger("1")).plus(new BigInteger("2")).plus(new BigInteger("3")).plus(new BigInteger("4")).plus(new BigInteger("5")).plus(new BigInteger("6")).plus(new BigInteger("7"));
+      int noOfElements = new BigInteger("3").intValue();
       if (origList.size() <= noOfElements) {
         return origList;
       }
@@ -1903,16 +1903,16 @@ public class Generated_collections_Test {
   }
   @Test
   public void collections_tailList_7740953487930558765() throws Throwable {
-    Assert.assertEquals("Expected: " + TreePVector.<Number>empty().plus((Number) new BigInteger("6")).plus((Number) new BigInteger("7")) + ", but was: " + (((_FunctionTypes._return_P0_E0<PVector<Number>>) () -> {
-      PVector<Number> origList = TreePVector.<Number>empty().plus((Number) new BigInteger("1")).plus((Number) new BigInteger("2")).plus((Number) new BigInteger("3")).plus((Number) new BigInteger("4")).plus((Number) new BigInteger("5")).plus((Number) new BigInteger("6")).plus((Number) new BigInteger("7"));
-      int noOfElements = ((Number) new BigInteger("2")).intValue();
+    Assert.assertEquals("Expected: " + TreePVector.<Number>empty().plus(new BigInteger("6")).plus(new BigInteger("7")) + ", but was: " + (((_FunctionTypes._return_P0_E0<PVector<Number>>) () -> {
+      PVector<Number> origList = TreePVector.<Number>empty().plus(new BigInteger("1")).plus(new BigInteger("2")).plus(new BigInteger("3")).plus(new BigInteger("4")).plus(new BigInteger("5")).plus(new BigInteger("6")).plus(new BigInteger("7"));
+      int noOfElements = new BigInteger("2").intValue();
       if (origList.size() <= noOfElements) {
         return origList;
       }
       return origList.subList(origList.size() - noOfElements, origList.size());
-    }).invoke()), (Object) TreePVector.<Number>empty().plus((Number) new BigInteger("6")).plus((Number) new BigInteger("7")), (Object) ((_FunctionTypes._return_P0_E0<PVector<Number>>) () -> {
-      PVector<Number> origList = TreePVector.<Number>empty().plus((Number) new BigInteger("1")).plus((Number) new BigInteger("2")).plus((Number) new BigInteger("3")).plus((Number) new BigInteger("4")).plus((Number) new BigInteger("5")).plus((Number) new BigInteger("6")).plus((Number) new BigInteger("7"));
-      int noOfElements = ((Number) new BigInteger("2")).intValue();
+    }).invoke()), TreePVector.<Number>empty().plus(new BigInteger("6")).plus(new BigInteger("7")), (Object) ((_FunctionTypes._return_P0_E0<PVector<Number>>) () -> {
+      PVector<Number> origList = TreePVector.<Number>empty().plus(new BigInteger("1")).plus(new BigInteger("2")).plus(new BigInteger("3")).plus(new BigInteger("4")).plus(new BigInteger("5")).plus(new BigInteger("6")).plus(new BigInteger("7"));
+      int noOfElements = new BigInteger("2").intValue();
       if (origList.size() <= noOfElements) {
         return origList;
       }
@@ -1921,65 +1921,65 @@ public class Generated_collections_Test {
   }
   @Test
   public void collections_intCol_7740953487930558775() throws Throwable {
-    Assert.assertEquals("Expected: " + TreePVector.<Number>empty().plus((Number) new BigInteger("1")).plus((Number) new BigInteger("2")).plus((Number) new BigInteger("3")) + ", but was: " + TreePVector.<Number>empty().plus((Number) new BigInteger("1")).plus((Number) new BigInteger("2")).plus((Number) new BigInteger("3")), (Object) TreePVector.<Number>empty().plus((Number) new BigInteger("1")).plus((Number) new BigInteger("2")).plus((Number) new BigInteger("3")), (Object) TreePVector.<Number>empty().plus((Number) new BigInteger("1")).plus((Number) new BigInteger("2")).plus((Number) new BigInteger("3")));
+    Assert.assertEquals("Expected: " + TreePVector.<Number>empty().plus(new BigInteger("1")).plus(new BigInteger("2")).plus(new BigInteger("3")) + ", but was: " + TreePVector.<Number>empty().plus(new BigInteger("1")).plus(new BigInteger("2")).plus(new BigInteger("3")), TreePVector.<Number>empty().plus(new BigInteger("1")).plus(new BigInteger("2")).plus(new BigInteger("3")), TreePVector.<Number>empty().plus(new BigInteger("1")).plus(new BigInteger("2")).plus(new BigInteger("3")));
   }
   @Test
   public void collections_size_7740953487930558786() throws Throwable {
-    Assert.assertTrue("Expected: " + (Number) new BigInteger("3") + ", but was: " + BigInteger.valueOf(TreePVector.<Number>empty().plus((Number) new BigInteger("1")).plus((Number) new BigInteger("2")).plus((Number) new BigInteger("3")).size()), EqualsTestOp.matches((Number) new BigInteger("3"), BigInteger.valueOf(TreePVector.<Number>empty().plus((Number) new BigInteger("1")).plus((Number) new BigInteger("2")).plus((Number) new BigInteger("3")).size())));
+    Assert.assertTrue("Expected: " + new BigInteger("3") + ", but was: " + BigInteger.valueOf(TreePVector.<Number>empty().plus(new BigInteger("1")).plus(new BigInteger("2")).plus(new BigInteger("3")).size()), EqualsTestOp.matches(new BigInteger("3"), BigInteger.valueOf(TreePVector.<Number>empty().plus(new BigInteger("1")).plus(new BigInteger("2")).plus(new BigInteger("3")).size())));
   }
   @Test
   public void collections_empty_7740953487930558796() throws Throwable {
-    Assert.assertEquals("Expected: " + false + ", but was: " + TreePVector.<Number>empty().plus((Number) new BigInteger("1")).plus((Number) new BigInteger("2")).plus((Number) new BigInteger("3")).isEmpty(), (Object) false, (Object) TreePVector.<Number>empty().plus((Number) new BigInteger("1")).plus((Number) new BigInteger("2")).plus((Number) new BigInteger("3")).isEmpty());
+    Assert.assertEquals("Expected: " + false + ", but was: " + TreePVector.<Number>empty().plus(new BigInteger("1")).plus(new BigInteger("2")).plus(new BigInteger("3")).isEmpty(), (Object) false, (Object) TreePVector.<Number>empty().plus(new BigInteger("1")).plus(new BigInteger("2")).plus(new BigInteger("3")).isEmpty());
   }
   @Test
   public void collections_one_7740953487930558803() throws Throwable {
-    Assert.assertTrue("Expected: " + (Number) new BigInteger("1") + ", but was: " + (((_FunctionTypes._return_P0_E0<Number>) () -> {
-      PVector<Number> listResult = TreePVector.<Number>empty().plus((Number) new BigInteger("1")).plus((Number) new BigInteger("2")).plus((Number) new BigInteger("3"));
+    Assert.assertTrue("Expected: " + new BigInteger("1") + ", but was: " + (((_FunctionTypes._return_P0_E0<Number>) () -> {
+      PVector<Number> listResult = TreePVector.<Number>empty().plus(new BigInteger("1")).plus(new BigInteger("2")).plus(new BigInteger("3"));
       return (listResult.isEmpty() ? null : listResult.get(0));
-    }).invoke()), EqualsTestOp.matches((Number) new BigInteger("1"), ((_FunctionTypes._return_P0_E0<Number>) () -> {
-      PVector<Number> listResult = TreePVector.<Number>empty().plus((Number) new BigInteger("1")).plus((Number) new BigInteger("2")).plus((Number) new BigInteger("3"));
+    }).invoke()), EqualsTestOp.matches(new BigInteger("1"), ((_FunctionTypes._return_P0_E0<Number>) () -> {
+      PVector<Number> listResult = TreePVector.<Number>empty().plus(new BigInteger("1")).plus(new BigInteger("2")).plus(new BigInteger("3"));
       return (listResult.isEmpty() ? null : listResult.get(0));
     }).invoke()));
   }
   @Test
   public void collections_three_7740953487930558810() throws Throwable {
-    Assert.assertTrue("Expected: " + (Number) new BigInteger("3") + ", but was: " + (((_FunctionTypes._return_P0_E0<Number>) () -> {
-      PVector<Number> listResult = TreePVector.<Number>empty().plus((Number) new BigInteger("1")).plus((Number) new BigInteger("2")).plus((Number) new BigInteger("3"));
+    Assert.assertTrue("Expected: " + new BigInteger("3") + ", but was: " + (((_FunctionTypes._return_P0_E0<Number>) () -> {
+      PVector<Number> listResult = TreePVector.<Number>empty().plus(new BigInteger("1")).plus(new BigInteger("2")).plus(new BigInteger("3"));
       return (listResult.isEmpty() ? null : listResult.get(listResult.size() - 1));
-    }).invoke()), EqualsTestOp.matches((Number) new BigInteger("3"), ((_FunctionTypes._return_P0_E0<Number>) () -> {
-      PVector<Number> listResult = TreePVector.<Number>empty().plus((Number) new BigInteger("1")).plus((Number) new BigInteger("2")).plus((Number) new BigInteger("3"));
+    }).invoke()), EqualsTestOp.matches(new BigInteger("3"), ((_FunctionTypes._return_P0_E0<Number>) () -> {
+      PVector<Number> listResult = TreePVector.<Number>empty().plus(new BigInteger("1")).plus(new BigInteger("2")).plus(new BigInteger("3"));
       return (listResult.isEmpty() ? null : listResult.get(listResult.size() - 1));
     }).invoke()));
   }
   @Test
   public void collections_strings_7740953487930558817() throws Throwable {
-    Assert.assertEquals("Expected: " + TreePVector.<String>empty().plus("1").plus("2") + ", but was: " + TreePVector.<String>empty().plus("1").plus("2"), (Object) TreePVector.<String>empty().plus("1").plus("2"), (Object) TreePVector.<String>empty().plus("1").plus("2"));
+    Assert.assertEquals("Expected: " + TreePVector.<String>empty().plus("1").plus("2") + ", but was: " + TreePVector.<String>empty().plus("1").plus("2"), TreePVector.<String>empty().plus("1").plus("2"), TreePVector.<String>empty().plus("1").plus("2"));
   }
   @Test
   public void collections_ONE_7740953487930558826() throws Throwable {
     Assert.assertEquals("Expected: " + "1" + ", but was: " + (((_FunctionTypes._return_P0_E0<String>) () -> {
       PVector<String> listResult = TreePVector.<String>empty().plus("1").plus("2");
       return (listResult.isEmpty() ? null : listResult.get(0));
-    }).invoke()), (Object) "1", (Object) ((_FunctionTypes._return_P0_E0<String>) () -> {
+    }).invoke()), "1", (Object) ((_FunctionTypes._return_P0_E0<String>) () -> {
       PVector<String> listResult = TreePVector.<String>empty().plus("1").plus("2");
       return (listResult.isEmpty() ? null : listResult.get(0));
     }).invoke());
   }
   @Test
   public void collections_TWO_7740953487930558833() throws Throwable {
-    Assert.assertEquals("Expected: " + "2" + ", but was: " + (String) TreePVector.<String>empty().plus("1").plus("2").get(((Number) new BigInteger("1")).intValue()), (Object) "2", (Object) (String) TreePVector.<String>empty().plus("1").plus("2").get(((Number) new BigInteger("1")).intValue()));
+    Assert.assertEquals("Expected: " + "2" + ", but was: " + TreePVector.<String>empty().plus("1").plus("2").get(new BigInteger("1").intValue()), "2", TreePVector.<String>empty().plus("1").plus("2").get(new BigInteger("1").intValue()));
   }
   @Test
   public void collections_TWOTOO_7740953487930558841() throws Throwable {
-    Assert.assertEquals("Expected: " + "2" + ", but was: " + (String) TreePVector.<String>empty().plus("1").plus("2").get(((Number) new BigInteger("1")).intValue()), (Object) "2", (Object) (String) TreePVector.<String>empty().plus("1").plus("2").get(((Number) new BigInteger("1")).intValue()));
+    Assert.assertEquals("Expected: " + "2" + ", but was: " + TreePVector.<String>empty().plus("1").plus("2").get(new BigInteger("1").intValue()), "2", TreePVector.<String>empty().plus("1").plus("2").get(new BigInteger("1").intValue()));
   }
   @Test
   public void collections_newStrings_7740953487930558848() throws Throwable {
-    Assert.assertEquals("Expected: " + TreePVector.<String>empty().plus("1").plus("2").plus("3") + ", but was: " + TreePVector.<String>empty().plus("1").plus("2").plus("3"), (Object) TreePVector.<String>empty().plus("1").plus("2").plus("3"), (Object) TreePVector.<String>empty().plus("1").plus("2").plus("3"));
+    Assert.assertEquals("Expected: " + TreePVector.<String>empty().plus("1").plus("2").plus("3") + ", but was: " + TreePVector.<String>empty().plus("1").plus("2").plus("3"), TreePVector.<String>empty().plus("1").plus("2").plus("3"), TreePVector.<String>empty().plus("1").plus("2").plus("3"));
   }
   @Test
   public void collections_res_7740953487930558859() throws Throwable {
-    Assert.assertEquals("Expected: " + TreePVector.<String>empty().plus("1Hello").plus("2Hello").plus("3Hello") + ", but was: " + TreePVector.<String>from(TreePVector.<Number>empty().plus((Number) new BigInteger("1")).plus((Number) new BigInteger("2")).plus((Number) new BigInteger("3")).stream().map(new Function<Number, String>() {
+    Assert.assertEquals("Expected: " + TreePVector.<String>empty().plus("1Hello").plus("2Hello").plus("3Hello") + ", but was: " + TreePVector.<String>from(TreePVector.<Number>empty().plus(new BigInteger("1")).plus(new BigInteger("2")).plus(new BigInteger("3")).stream().map(new Function<Number, String>() {
       public String apply(Number param) {
         return new Function<ParameterSetWrapper, String>() {
           public String apply(ParameterSetWrapper param) {
@@ -1988,7 +1988,7 @@ public class Generated_collections_Test {
           }
         }.apply(new ParameterSetWrapper(param));
       }
-    }).collect(Collectors.<String>toList())), (Object) TreePVector.<String>empty().plus("1Hello").plus("2Hello").plus("3Hello"), (Object) TreePVector.<String>from(TreePVector.<Number>empty().plus((Number) new BigInteger("1")).plus((Number) new BigInteger("2")).plus((Number) new BigInteger("3")).stream().map(new Function<Number, String>() {
+    }).collect(Collectors.<String>toList())), TreePVector.<String>empty().plus("1Hello").plus("2Hello").plus("3Hello"), TreePVector.<String>from(TreePVector.<Number>empty().plus(new BigInteger("1")).plus(new BigInteger("2")).plus(new BigInteger("3")).stream().map(new Function<Number, String>() {
       public String apply(Number param) {
         return new Function<ParameterSetWrapper, String>() {
           public String apply(ParameterSetWrapper param) {
@@ -2001,7 +2001,7 @@ public class Generated_collections_Test {
   }
   @Test
   public void collections_resShort_7740953487930558875() throws Throwable {
-    Assert.assertEquals("Expected: " + TreePVector.<String>empty().plus("1You").plus("2You").plus("3You") + ", but was: " + TreePVector.<String>from(TreePVector.<Number>empty().plus((Number) new BigInteger("1")).plus((Number) new BigInteger("2")).plus((Number) new BigInteger("3")).stream().map(new Function<Number, String>() {
+    Assert.assertEquals("Expected: " + TreePVector.<String>empty().plus("1You").plus("2You").plus("3You") + ", but was: " + TreePVector.<String>from(TreePVector.<Number>empty().plus(new BigInteger("1")).plus(new BigInteger("2")).plus(new BigInteger("3")).stream().map(new Function<Number, String>() {
       public String apply(Number param) {
         return new Function<ParameterSetWrapper, String>() {
           public String apply(ParameterSetWrapper param) {
@@ -2010,7 +2010,7 @@ public class Generated_collections_Test {
           }
         }.apply(new ParameterSetWrapper(param));
       }
-    }).collect(Collectors.<String>toList())), (Object) TreePVector.<String>empty().plus("1You").plus("2You").plus("3You"), (Object) TreePVector.<String>from(TreePVector.<Number>empty().plus((Number) new BigInteger("1")).plus((Number) new BigInteger("2")).plus((Number) new BigInteger("3")).stream().map(new Function<Number, String>() {
+    }).collect(Collectors.<String>toList())), TreePVector.<String>empty().plus("1You").plus("2You").plus("3You"), TreePVector.<String>from(TreePVector.<Number>empty().plus(new BigInteger("1")).plus(new BigInteger("2")).plus(new BigInteger("3")).stream().map(new Function<Number, String>() {
       public String apply(Number param) {
         return new Function<ParameterSetWrapper, String>() {
           public String apply(ParameterSetWrapper param) {
@@ -2023,21 +2023,21 @@ public class Generated_collections_Test {
   }
   @Test
   public void collections_res2_7740953487930558889() throws Throwable {
-    Assert.assertEquals("Expected: " + TreePVector.<Number>empty().plus((Number) new BigInteger("2")).plus((Number) new BigInteger("3")) + ", but was: " + TreePVector.<Number>from(TreePVector.<Number>empty().plus((Number) new BigInteger("1")).plus((Number) new BigInteger("2")).plus((Number) new BigInteger("3")).stream().filter(new Predicate<Number>() {
+    Assert.assertEquals("Expected: " + TreePVector.<Number>empty().plus(new BigInteger("2")).plus(new BigInteger("3")) + ", but was: " + TreePVector.<Number>from(TreePVector.<Number>empty().plus(new BigInteger("1")).plus(new BigInteger("2")).plus(new BigInteger("3")).stream().filter(new Predicate<Number>() {
       public boolean test(Number o) {
         return new Function<ParameterSetWrapper, Boolean>() {
           public Boolean apply(ParameterSetWrapper param) {
             Number i = (Number) param.parameters.get(0);
-            return AH.isGreater(i, (Number) new BigInteger("1"));
+            return AH.isGreater(i, new BigInteger("1"));
           }
         }.apply(new ParameterSetWrapper(o));
       }
-    }).collect(Collectors.<Number>toList())), (Object) TreePVector.<Number>empty().plus((Number) new BigInteger("2")).plus((Number) new BigInteger("3")), (Object) TreePVector.<Number>from(TreePVector.<Number>empty().plus((Number) new BigInteger("1")).plus((Number) new BigInteger("2")).plus((Number) new BigInteger("3")).stream().filter(new Predicate<Number>() {
+    }).collect(Collectors.<Number>toList())), TreePVector.<Number>empty().plus(new BigInteger("2")).plus(new BigInteger("3")), TreePVector.<Number>from(TreePVector.<Number>empty().plus(new BigInteger("1")).plus(new BigInteger("2")).plus(new BigInteger("3")).stream().filter(new Predicate<Number>() {
       public boolean test(Number o) {
         return new Function<ParameterSetWrapper, Boolean>() {
           public Boolean apply(ParameterSetWrapper param) {
             Number i = (Number) param.parameters.get(0);
-            return AH.isGreater(i, (Number) new BigInteger("1"));
+            return AH.isGreater(i, new BigInteger("1"));
           }
         }.apply(new ParameterSetWrapper(o));
       }
@@ -2045,21 +2045,21 @@ public class Generated_collections_Test {
   }
   @Test
   public void collections_res3_7787163368318178897() throws Throwable {
-    Assert.assertEquals("Expected: " + TreePVector.<Number>empty().plus((Number) new BigInteger("1")).plus((Number) new BigInteger("3")).plus((Number) new BigInteger("5")) + ", but was: " + TreePVector.<Number>from(TreePVector.<Number>empty().plus((Number) new BigInteger("1")).plus((Number) new BigInteger("2")).plus((Number) new BigInteger("3")).stream().map(new Function<Number, Number>() {
+    Assert.assertEquals("Expected: " + TreePVector.<Number>empty().plus(new BigInteger("1")).plus(new BigInteger("3")).plus(new BigInteger("5")) + ", but was: " + TreePVector.<Number>from(TreePVector.<Number>empty().plus(new BigInteger("1")).plus(new BigInteger("2")).plus(new BigInteger("3")).stream().map(new Function<Number, Number>() {
       public Number apply(Number param) {
         return new Function<ParameterSetWrapper, Number>() {
           public Number apply(ParameterSetWrapper param) {
             Number it = (Number) param.parameters.get(0);
-            return AH.add(it, BigInteger.valueOf(TreePVector.<Object>from(TreePVector.<Number>empty().plus((Number) new BigInteger("1")).plus((Number) new BigInteger("2")).plus((Number) new BigInteger("3"))).indexOf(it)));
+            return AH.add(it, BigInteger.valueOf(TreePVector.<Object>from(TreePVector.<Number>empty().plus(new BigInteger("1")).plus(new BigInteger("2")).plus(new BigInteger("3"))).indexOf(it)));
           }
         }.apply(new ParameterSetWrapper(param));
       }
-    }).collect(Collectors.<Number>toList())), (Object) TreePVector.<Number>empty().plus((Number) new BigInteger("1")).plus((Number) new BigInteger("3")).plus((Number) new BigInteger("5")), (Object) TreePVector.<Number>from(TreePVector.<Number>empty().plus((Number) new BigInteger("1")).plus((Number) new BigInteger("2")).plus((Number) new BigInteger("3")).stream().map(new Function<Number, Number>() {
+    }).collect(Collectors.<Number>toList())), TreePVector.<Number>empty().plus(new BigInteger("1")).plus(new BigInteger("3")).plus(new BigInteger("5")), TreePVector.<Number>from(TreePVector.<Number>empty().plus(new BigInteger("1")).plus(new BigInteger("2")).plus(new BigInteger("3")).stream().map(new Function<Number, Number>() {
       public Number apply(Number param) {
         return new Function<ParameterSetWrapper, Number>() {
           public Number apply(ParameterSetWrapper param) {
             Number it = (Number) param.parameters.get(0);
-            return AH.add(it, BigInteger.valueOf(TreePVector.<Object>from(TreePVector.<Number>empty().plus((Number) new BigInteger("1")).plus((Number) new BigInteger("2")).plus((Number) new BigInteger("3"))).indexOf(it)));
+            return AH.add(it, BigInteger.valueOf(TreePVector.<Object>from(TreePVector.<Number>empty().plus(new BigInteger("1")).plus(new BigInteger("2")).plus(new BigInteger("3"))).indexOf(it)));
           }
         }.apply(new ParameterSetWrapper(param));
       }
@@ -2067,21 +2067,21 @@ public class Generated_collections_Test {
   }
   @Test
   public void collections_res4_7787163368318246403() throws Throwable {
-    Assert.assertEquals("Expected: " + TreePVector.<Number>empty().plus((Number) new BigInteger("0")).plus((Number) new BigInteger("1")).plus((Number) new BigInteger("2")) + ", but was: " + TreePVector.<Number>from(TreePVector.<Number>empty().plus((Number) new BigInteger("1")).plus((Number) new BigInteger("2")).plus((Number) new BigInteger("3")).stream().map(new Function<Number, Number>() {
+    Assert.assertEquals("Expected: " + TreePVector.<Number>empty().plus(new BigInteger("0")).plus(new BigInteger("1")).plus(new BigInteger("2")) + ", but was: " + TreePVector.<Number>from(TreePVector.<Number>empty().plus(new BigInteger("1")).plus(new BigInteger("2")).plus(new BigInteger("3")).stream().map(new Function<Number, Number>() {
       public Number apply(Number param) {
         return new Function<ParameterSetWrapper, Number>() {
           public Number apply(ParameterSetWrapper param) {
             Number it = (Number) param.parameters.get(0);
-            return BigInteger.valueOf(TreePVector.<Object>from(TreePVector.<Number>empty().plus((Number) new BigInteger("1")).plus((Number) new BigInteger("2")).plus((Number) new BigInteger("3"))).indexOf(it));
+            return BigInteger.valueOf(TreePVector.<Object>from(TreePVector.<Number>empty().plus(new BigInteger("1")).plus(new BigInteger("2")).plus(new BigInteger("3"))).indexOf(it));
           }
         }.apply(new ParameterSetWrapper(param));
       }
-    }).collect(Collectors.<Number>toList())), (Object) TreePVector.<Number>empty().plus((Number) new BigInteger("0")).plus((Number) new BigInteger("1")).plus((Number) new BigInteger("2")), (Object) TreePVector.<Number>from(TreePVector.<Number>empty().plus((Number) new BigInteger("1")).plus((Number) new BigInteger("2")).plus((Number) new BigInteger("3")).stream().map(new Function<Number, Number>() {
+    }).collect(Collectors.<Number>toList())), TreePVector.<Number>empty().plus(new BigInteger("0")).plus(new BigInteger("1")).plus(new BigInteger("2")), TreePVector.<Number>from(TreePVector.<Number>empty().plus(new BigInteger("1")).plus(new BigInteger("2")).plus(new BigInteger("3")).stream().map(new Function<Number, Number>() {
       public Number apply(Number param) {
         return new Function<ParameterSetWrapper, Number>() {
           public Number apply(ParameterSetWrapper param) {
             Number it = (Number) param.parameters.get(0);
-            return BigInteger.valueOf(TreePVector.<Object>from(TreePVector.<Number>empty().plus((Number) new BigInteger("1")).plus((Number) new BigInteger("2")).plus((Number) new BigInteger("3"))).indexOf(it));
+            return BigInteger.valueOf(TreePVector.<Object>from(TreePVector.<Number>empty().plus(new BigInteger("1")).plus(new BigInteger("2")).plus(new BigInteger("3"))).indexOf(it));
           }
         }.apply(new ParameterSetWrapper(param));
       }
@@ -2089,21 +2089,21 @@ public class Generated_collections_Test {
   }
   @Test
   public void collections_t2_7740953487930558904() throws Throwable {
-    Assert.assertEquals("Expected: " + TreePVector.<Number>empty().plus((Number) new BigInteger("3")) + ", but was: " + TreePVector.<Number>from(TreePVector.<Number>empty().plus((Number) new BigInteger("1")).plus((Number) new BigInteger("2")).plus((Number) new BigInteger("3")).stream().filter(new Predicate<Number>() {
+    Assert.assertEquals("Expected: " + TreePVector.<Number>empty().plus(new BigInteger("3")) + ", but was: " + TreePVector.<Number>from(TreePVector.<Number>empty().plus(new BigInteger("1")).plus(new BigInteger("2")).plus(new BigInteger("3")).stream().filter(new Predicate<Number>() {
       public boolean test(Number o) {
         return new Function<ParameterSetWrapper, Boolean>() {
           public Boolean apply(ParameterSetWrapper param) {
             Number it = (Number) param.parameters.get(0);
-            return AH.isGreater(it, (Number) new BigInteger("2"));
+            return AH.isGreater(it, new BigInteger("2"));
           }
         }.apply(new ParameterSetWrapper(o));
       }
-    }).collect(Collectors.<Number>toList())), (Object) TreePVector.<Number>empty().plus((Number) new BigInteger("3")), (Object) TreePVector.<Number>from(TreePVector.<Number>empty().plus((Number) new BigInteger("1")).plus((Number) new BigInteger("2")).plus((Number) new BigInteger("3")).stream().filter(new Predicate<Number>() {
+    }).collect(Collectors.<Number>toList())), TreePVector.<Number>empty().plus(new BigInteger("3")), TreePVector.<Number>from(TreePVector.<Number>empty().plus(new BigInteger("1")).plus(new BigInteger("2")).plus(new BigInteger("3")).stream().filter(new Predicate<Number>() {
       public boolean test(Number o) {
         return new Function<ParameterSetWrapper, Boolean>() {
           public Boolean apply(ParameterSetWrapper param) {
             Number it = (Number) param.parameters.get(0);
-            return AH.isGreater(it, (Number) new BigInteger("2"));
+            return AH.isGreater(it, new BigInteger("2"));
           }
         }.apply(new ParameterSetWrapper(o));
       }
@@ -2111,33 +2111,33 @@ public class Generated_collections_Test {
   }
   @Test
   public void collections_duplicateList_7740953487930558916() throws Throwable {
-    Assert.assertEquals("Expected: " + TreePVector.<Number>empty().plus((Number) new BigInteger("1")).plus((Number) new BigInteger("2")).plus((Number) new BigInteger("2")).plus((Number) new BigInteger("3")) + ", but was: " + TreePVector.<Number>empty().plus((Number) new BigInteger("1")).plus((Number) new BigInteger("2")).plus((Number) new BigInteger("2")).plus((Number) new BigInteger("3")), (Object) TreePVector.<Number>empty().plus((Number) new BigInteger("1")).plus((Number) new BigInteger("2")).plus((Number) new BigInteger("2")).plus((Number) new BigInteger("3")), (Object) TreePVector.<Number>empty().plus((Number) new BigInteger("1")).plus((Number) new BigInteger("2")).plus((Number) new BigInteger("2")).plus((Number) new BigInteger("3")));
+    Assert.assertEquals("Expected: " + TreePVector.<Number>empty().plus(new BigInteger("1")).plus(new BigInteger("2")).plus(new BigInteger("2")).plus(new BigInteger("3")) + ", but was: " + TreePVector.<Number>empty().plus(new BigInteger("1")).plus(new BigInteger("2")).plus(new BigInteger("2")).plus(new BigInteger("3")), TreePVector.<Number>empty().plus(new BigInteger("1")).plus(new BigInteger("2")).plus(new BigInteger("2")).plus(new BigInteger("3")), TreePVector.<Number>empty().plus(new BigInteger("1")).plus(new BigInteger("2")).plus(new BigInteger("2")).plus(new BigInteger("3")));
   }
   @Test
   public void collections_duplicatesDistinct_7740953487930558929() throws Throwable {
-    Assert.assertEquals("Expected: " + TreePVector.<Number>empty().plus((Number) new BigInteger("1")).plus((Number) new BigInteger("2")).plus((Number) new BigInteger("3")) + ", but was: " + TreePVector.from(TreePVector.<Number>from(TreePVector.<Number>empty().plus((Number) new BigInteger("1")).plus((Number) new BigInteger("2")).plus((Number) new BigInteger("2")).plus((Number) new BigInteger("3")).stream().distinct().collect(Collectors.<Number>toList()))), (Object) TreePVector.<Number>empty().plus((Number) new BigInteger("1")).plus((Number) new BigInteger("2")).plus((Number) new BigInteger("3")), (Object) TreePVector.from(TreePVector.<Number>from(TreePVector.<Number>empty().plus((Number) new BigInteger("1")).plus((Number) new BigInteger("2")).plus((Number) new BigInteger("2")).plus((Number) new BigInteger("3")).stream().distinct().collect(Collectors.<Number>toList()))));
+    Assert.assertEquals("Expected: " + TreePVector.<Number>empty().plus(new BigInteger("1")).plus(new BigInteger("2")).plus(new BigInteger("3")) + ", but was: " + TreePVector.from(TreePVector.<Number>from(TreePVector.<Number>empty().plus(new BigInteger("1")).plus(new BigInteger("2")).plus(new BigInteger("2")).plus(new BigInteger("3")).stream().distinct().collect(Collectors.<Number>toList()))), TreePVector.<Number>empty().plus(new BigInteger("1")).plus(new BigInteger("2")).plus(new BigInteger("3")), TreePVector.from(TreePVector.<Number>from(TreePVector.<Number>empty().plus(new BigInteger("1")).plus(new BigInteger("2")).plus(new BigInteger("2")).plus(new BigInteger("3")).stream().distinct().collect(Collectors.<Number>toList()))));
   }
   @Test
   public void collections_contains_7740953487930558949() throws Throwable {
-    Assert.assertEquals("Expected: " + true + ", but was: " + TreePVector.<Number>empty().plus((Number) new BigInteger("1")).plus((Number) new BigInteger("2")).plus((Number) new BigInteger("2")).plus((Number) new BigInteger("3")).contains((Number) new BigInteger("2")), (Object) true, (Object) TreePVector.<Number>empty().plus((Number) new BigInteger("1")).plus((Number) new BigInteger("2")).plus((Number) new BigInteger("2")).plus((Number) new BigInteger("3")).contains((Number) new BigInteger("2")));
+    Assert.assertEquals("Expected: " + true + ", but was: " + TreePVector.<Number>empty().plus(new BigInteger("1")).plus(new BigInteger("2")).plus(new BigInteger("2")).plus(new BigInteger("3")).contains(new BigInteger("2")), (Object) true, (Object) TreePVector.<Number>empty().plus(new BigInteger("1")).plus(new BigInteger("2")).plus(new BigInteger("2")).plus(new BigInteger("3")).contains(new BigInteger("2")));
   }
   @Test
   public void collections_anyEl_7740953487930558957() throws Throwable {
-    Assert.assertEquals("Expected: " + true + ", but was: " + TreePVector.<Number>empty().plus((Number) new BigInteger("1")).plus((Number) new BigInteger("2")).plus((Number) new BigInteger("2")).plus((Number) new BigInteger("3")).stream().anyMatch(new Predicate<Number>() {
+    Assert.assertEquals("Expected: " + true + ", but was: " + TreePVector.<Number>empty().plus(new BigInteger("1")).plus(new BigInteger("2")).plus(new BigInteger("2")).plus(new BigInteger("3")).stream().anyMatch(new Predicate<Number>() {
       public boolean test(Number o) {
         return new Function<ParameterSetWrapper, Boolean>() {
           public Boolean apply(ParameterSetWrapper param) {
             Number it = (Number) param.parameters.get(0);
-            return AH.isGreater(it, (Number) new BigInteger("2"));
+            return AH.isGreater(it, new BigInteger("2"));
           }
         }.apply(new ParameterSetWrapper(o));
       }
-    }), (Object) true, (Object) TreePVector.<Number>empty().plus((Number) new BigInteger("1")).plus((Number) new BigInteger("2")).plus((Number) new BigInteger("2")).plus((Number) new BigInteger("3")).stream().anyMatch(new Predicate<Number>() {
+    }), (Object) true, (Object) TreePVector.<Number>empty().plus(new BigInteger("1")).plus(new BigInteger("2")).plus(new BigInteger("2")).plus(new BigInteger("3")).stream().anyMatch(new Predicate<Number>() {
       public boolean test(Number o) {
         return new Function<ParameterSetWrapper, Boolean>() {
           public Boolean apply(ParameterSetWrapper param) {
             Number it = (Number) param.parameters.get(0);
-            return AH.isGreater(it, (Number) new BigInteger("2"));
+            return AH.isGreater(it, new BigInteger("2"));
           }
         }.apply(new ParameterSetWrapper(o));
       }
@@ -2145,21 +2145,21 @@ public class Generated_collections_Test {
   }
   @Test
   public void collections_NotAnyEl_7740953487930558968() throws Throwable {
-    Assert.assertEquals("Expected: " + false + ", but was: " + TreePVector.<Number>empty().plus((Number) new BigInteger("1")).plus((Number) new BigInteger("2")).plus((Number) new BigInteger("2")).plus((Number) new BigInteger("3")).stream().anyMatch(new Predicate<Number>() {
+    Assert.assertEquals("Expected: " + false + ", but was: " + TreePVector.<Number>empty().plus(new BigInteger("1")).plus(new BigInteger("2")).plus(new BigInteger("2")).plus(new BigInteger("3")).stream().anyMatch(new Predicate<Number>() {
       public boolean test(Number o) {
         return new Function<ParameterSetWrapper, Boolean>() {
           public Boolean apply(ParameterSetWrapper param) {
             Number it = (Number) param.parameters.get(0);
-            return AH.isGreater(it, (Number) new BigInteger("12"));
+            return AH.isGreater(it, new BigInteger("12"));
           }
         }.apply(new ParameterSetWrapper(o));
       }
-    }), (Object) false, (Object) TreePVector.<Number>empty().plus((Number) new BigInteger("1")).plus((Number) new BigInteger("2")).plus((Number) new BigInteger("2")).plus((Number) new BigInteger("3")).stream().anyMatch(new Predicate<Number>() {
+    }), (Object) false, (Object) TreePVector.<Number>empty().plus(new BigInteger("1")).plus(new BigInteger("2")).plus(new BigInteger("2")).plus(new BigInteger("3")).stream().anyMatch(new Predicate<Number>() {
       public boolean test(Number o) {
         return new Function<ParameterSetWrapper, Boolean>() {
           public Boolean apply(ParameterSetWrapper param) {
             Number it = (Number) param.parameters.get(0);
-            return AH.isGreater(it, (Number) new BigInteger("12"));
+            return AH.isGreater(it, new BigInteger("12"));
           }
         }.apply(new ParameterSetWrapper(o));
       }
@@ -2167,21 +2167,21 @@ public class Generated_collections_Test {
   }
   @Test
   public void collections_allEl_7740953487930558979() throws Throwable {
-    Assert.assertEquals("Expected: " + true + ", but was: " + TreePVector.<Number>empty().plus((Number) new BigInteger("1")).plus((Number) new BigInteger("2")).plus((Number) new BigInteger("2")).plus((Number) new BigInteger("3")).stream().allMatch(new Predicate<Number>() {
+    Assert.assertEquals("Expected: " + true + ", but was: " + TreePVector.<Number>empty().plus(new BigInteger("1")).plus(new BigInteger("2")).plus(new BigInteger("2")).plus(new BigInteger("3")).stream().allMatch(new Predicate<Number>() {
       public boolean test(Number o) {
         return new Function<ParameterSetWrapper, Boolean>() {
           public Boolean apply(ParameterSetWrapper param) {
             Number it = (Number) param.parameters.get(0);
-            return AH.isGreater(it, (Number) new BigInteger("0"));
+            return AH.isGreater(it, new BigInteger("0"));
           }
         }.apply(new ParameterSetWrapper(o));
       }
-    }), (Object) true, (Object) TreePVector.<Number>empty().plus((Number) new BigInteger("1")).plus((Number) new BigInteger("2")).plus((Number) new BigInteger("2")).plus((Number) new BigInteger("3")).stream().allMatch(new Predicate<Number>() {
+    }), (Object) true, (Object) TreePVector.<Number>empty().plus(new BigInteger("1")).plus(new BigInteger("2")).plus(new BigInteger("2")).plus(new BigInteger("3")).stream().allMatch(new Predicate<Number>() {
       public boolean test(Number o) {
         return new Function<ParameterSetWrapper, Boolean>() {
           public Boolean apply(ParameterSetWrapper param) {
             Number it = (Number) param.parameters.get(0);
-            return AH.isGreater(it, (Number) new BigInteger("0"));
+            return AH.isGreater(it, new BigInteger("0"));
           }
         }.apply(new ParameterSetWrapper(o));
       }
@@ -2189,21 +2189,21 @@ public class Generated_collections_Test {
   }
   @Test
   public void collections_notAllEl_7740953487930558990() throws Throwable {
-    Assert.assertEquals("Expected: " + false + ", but was: " + TreePVector.<Number>empty().plus((Number) new BigInteger("1")).plus((Number) new BigInteger("2")).plus((Number) new BigInteger("2")).plus((Number) new BigInteger("3")).stream().allMatch(new Predicate<Number>() {
+    Assert.assertEquals("Expected: " + false + ", but was: " + TreePVector.<Number>empty().plus(new BigInteger("1")).plus(new BigInteger("2")).plus(new BigInteger("2")).plus(new BigInteger("3")).stream().allMatch(new Predicate<Number>() {
       public boolean test(Number o) {
         return new Function<ParameterSetWrapper, Boolean>() {
           public Boolean apply(ParameterSetWrapper param) {
             Number it = (Number) param.parameters.get(0);
-            return AH.isGreater(it, (Number) new BigInteger("2"));
+            return AH.isGreater(it, new BigInteger("2"));
           }
         }.apply(new ParameterSetWrapper(o));
       }
-    }), (Object) false, (Object) TreePVector.<Number>empty().plus((Number) new BigInteger("1")).plus((Number) new BigInteger("2")).plus((Number) new BigInteger("2")).plus((Number) new BigInteger("3")).stream().allMatch(new Predicate<Number>() {
+    }), (Object) false, (Object) TreePVector.<Number>empty().plus(new BigInteger("1")).plus(new BigInteger("2")).plus(new BigInteger("2")).plus(new BigInteger("3")).stream().allMatch(new Predicate<Number>() {
       public boolean test(Number o) {
         return new Function<ParameterSetWrapper, Boolean>() {
           public Boolean apply(ParameterSetWrapper param) {
             Number it = (Number) param.parameters.get(0);
-            return AH.isGreater(it, (Number) new BigInteger("2"));
+            return AH.isGreater(it, new BigInteger("2"));
           }
         }.apply(new ParameterSetWrapper(o));
       }
@@ -2211,19 +2211,19 @@ public class Generated_collections_Test {
   }
   @Test
   public void collections_stringSet_7740953487930559001() throws Throwable {
-    Assert.assertEquals("Expected: " + HashTreePSet.from(Arrays.asList("1", "2", "3")) + ", but was: " + HashTreePSet.from(Arrays.asList("2", "1", "3", "3")), (Object) HashTreePSet.from(Arrays.asList("1", "2", "3")), (Object) HashTreePSet.from(Arrays.asList("2", "1", "3", "3")));
+    Assert.assertEquals("Expected: " + HashTreePSet.from(Arrays.asList("1", "2", "3")) + ", but was: " + HashTreePSet.from(Arrays.asList("2", "1", "3", "3")), HashTreePSet.from(Arrays.asList("1", "2", "3")), HashTreePSet.from(Arrays.asList("2", "1", "3", "3")));
   }
   @Test
   public void collections_stringSet2_7740953487930559013() throws Throwable {
-    Assert.assertEquals("Expected: " + HashTreePSet.from(Arrays.asList("1", "2", "3", "4")) + ", but was: " + HashTreePSet.from(Arrays.asList("2", "1", "3", "3")).plus("4"), (Object) HashTreePSet.from(Arrays.asList("1", "2", "3", "4")), (Object) HashTreePSet.from(Arrays.asList("2", "1", "3", "3")).plus("4"));
+    Assert.assertEquals("Expected: " + HashTreePSet.from(Arrays.asList("1", "2", "3", "4")) + ", but was: " + HashTreePSet.from(Arrays.asList("2", "1", "3", "3")).plus("4"), HashTreePSet.from(Arrays.asList("1", "2", "3", "4")), HashTreePSet.from(Arrays.asList("2", "1", "3", "3")).plus("4"));
   }
   @Test
   public void collections_stringSet3_7740953487930559025() throws Throwable {
-    Assert.assertEquals("Expected: " + HashTreePSet.from(Arrays.asList("1", "2", "3")) + ", but was: " + HashTreePSet.from(Arrays.asList("2", "1", "3", "3")).plus("1"), (Object) HashTreePSet.from(Arrays.asList("1", "2", "3")), (Object) HashTreePSet.from(Arrays.asList("2", "1", "3", "3")).plus("1"));
+    Assert.assertEquals("Expected: " + HashTreePSet.from(Arrays.asList("1", "2", "3")) + ", but was: " + HashTreePSet.from(Arrays.asList("2", "1", "3", "3")).plus("1"), HashTreePSet.from(Arrays.asList("1", "2", "3")), HashTreePSet.from(Arrays.asList("2", "1", "3", "3")).plus("1"));
   }
   @Test
   public void collections_stringSet4_7740953487930559036() throws Throwable {
-    Assert.assertEquals("Expected: " + HashTreePSet.from(Arrays.asList((Number) new BigInteger("1"), (Number) new BigInteger("2"), (Number) new BigInteger("3"))) + ", but was: " + HashTreePSet.from(TreePVector.<Number>empty().plus((Number) new BigInteger("1")).plus((Number) new BigInteger("2")).plus((Number) new BigInteger("2")).plus((Number) new BigInteger("3"))), (Object) HashTreePSet.from(Arrays.asList((Number) new BigInteger("1"), (Number) new BigInteger("2"), (Number) new BigInteger("3"))), (Object) HashTreePSet.from(TreePVector.<Number>empty().plus((Number) new BigInteger("1")).plus((Number) new BigInteger("2")).plus((Number) new BigInteger("2")).plus((Number) new BigInteger("3"))));
+    Assert.assertEquals("Expected: " + HashTreePSet.from(Arrays.asList((Number) new BigInteger("1"), (Number) new BigInteger("2"), (Number) new BigInteger("3"))) + ", but was: " + HashTreePSet.from(TreePVector.<Number>empty().plus(new BigInteger("1")).plus(new BigInteger("2")).plus(new BigInteger("2")).plus(new BigInteger("3"))), HashTreePSet.from(Arrays.asList((Number) new BigInteger("1"), (Number) new BigInteger("2"), (Number) new BigInteger("3"))), HashTreePSet.from(TreePVector.<Number>empty().plus(new BigInteger("1")).plus(new BigInteger("2")).plus(new BigInteger("2")).plus(new BigInteger("3"))));
   }
   @Test
   public void collections_stringSet5_4723261570607350446() throws Throwable {
@@ -2236,7 +2236,7 @@ public class Generated_collections_Test {
           }
         }.apply(new ParameterSetWrapper(param));
       }
-    }).collect(Collectors.<String>toList()))), (Object) HashTreePSet.from(Arrays.asList("1X", "2X", "3X")), (Object) HashTreePSet.from(TreePVector.<String>from(HashTreePSet.from(Arrays.asList("2", "1", "3", "3")).stream().map(new Function<String, String>() {
+    }).collect(Collectors.<String>toList()))), HashTreePSet.from(Arrays.asList("1X", "2X", "3X")), HashTreePSet.from(TreePVector.<String>from(HashTreePSet.from(Arrays.asList("2", "1", "3", "3")).stream().map(new Function<String, String>() {
       public String apply(String param) {
         return new Function<ParameterSetWrapper, String>() {
           public String apply(ParameterSetWrapper param) {
@@ -2249,23 +2249,23 @@ public class Generated_collections_Test {
   }
   @Test
   public void collections_stringSet6_3831047747134200192() throws Throwable {
-    Assert.assertEquals("Expected: " + HashTreePSet.from(Arrays.asList("1", "2", "3")) + ", but was: " + HashTreePSet.from(Arrays.asList("2", "1", "3", "3")).minus("4"), (Object) HashTreePSet.from(Arrays.asList("1", "2", "3")), (Object) HashTreePSet.from(Arrays.asList("2", "1", "3", "3")).minus("4"));
+    Assert.assertEquals("Expected: " + HashTreePSet.from(Arrays.asList("1", "2", "3")) + ", but was: " + HashTreePSet.from(Arrays.asList("2", "1", "3", "3")).minus("4"), HashTreePSet.from(Arrays.asList("1", "2", "3")), HashTreePSet.from(Arrays.asList("2", "1", "3", "3")).minus("4"));
   }
   @Test
   public void collections_stringSet7_3831047747134201573() throws Throwable {
-    Assert.assertEquals("Expected: " + HashTreePSet.from(Arrays.asList("1", "2")) + ", but was: " + HashTreePSet.from(Arrays.asList("2", "1", "3", "3")).minus("3"), (Object) HashTreePSet.from(Arrays.asList("1", "2")), (Object) HashTreePSet.from(Arrays.asList("2", "1", "3", "3")).minus("3"));
+    Assert.assertEquals("Expected: " + HashTreePSet.from(Arrays.asList("1", "2")) + ", but was: " + HashTreePSet.from(Arrays.asList("2", "1", "3", "3")).minus("3"), HashTreePSet.from(Arrays.asList("1", "2")), HashTreePSet.from(Arrays.asList("2", "1", "3", "3")).minus("3"));
   }
   @Test
   public void collections_threeAgain_7740953487930559050() throws Throwable {
-    Assert.assertTrue("Expected: " + (Number) new BigInteger("3") + ", but was: " + (Number) ((PVector<Number>) TreePVector.<Number>from(((PCollection<Number>) HashTreePSet.from(TreePVector.<Number>empty().plus((Number) new BigInteger("1")).plus((Number) new BigInteger("2")).plus((Number) new BigInteger("2")).plus((Number) new BigInteger("3")))).stream().filter(OH.predicate()).sorted(new Comparator<Number>() {
+    Assert.assertTrue("Expected: " + new BigInteger("3") + ", but was: " + TreePVector.<Number>from(HashTreePSet.from(TreePVector.<Number>empty().plus(new BigInteger("1")).plus(new BigInteger("2")).plus(new BigInteger("2")).plus(new BigInteger("3"))).stream().filter(OH.predicate()).sorted(new Comparator<Number>() {
       public int compare(Number p0, Number p1) {
         return OH.compare(p0, p1);
       }
-    }).collect(Collectors.<Number>toList()))).get(((Number) new BigInteger("2")).intValue()), EqualsTestOp.matches((Number) new BigInteger("3"), (Number) ((PVector<Number>) TreePVector.<Number>from(((PCollection<Number>) HashTreePSet.from(TreePVector.<Number>empty().plus((Number) new BigInteger("1")).plus((Number) new BigInteger("2")).plus((Number) new BigInteger("2")).plus((Number) new BigInteger("3")))).stream().filter(OH.predicate()).sorted(new Comparator<Number>() {
+    }).collect(Collectors.<Number>toList())).get(new BigInteger("2").intValue()), EqualsTestOp.matches(new BigInteger("3"), TreePVector.<Number>from(HashTreePSet.from(TreePVector.<Number>empty().plus(new BigInteger("1")).plus(new BigInteger("2")).plus(new BigInteger("2")).plus(new BigInteger("3"))).stream().filter(OH.predicate()).sorted(new Comparator<Number>() {
       public int compare(Number p0, Number p1) {
         return OH.compare(p0, p1);
       }
-    }).collect(Collectors.<Number>toList()))).get(((Number) new BigInteger("2")).intValue())));
+    }).collect(Collectors.<Number>toList())).get(new BigInteger("2").intValue())));
   }
   @Test
   public void collections_capitals_7740953487930559060() throws Throwable {
@@ -2313,7 +2313,7 @@ public class Generated_collections_Test {
         result.put("c", "C");
         return result;
       }
-    }.invoke()).get("a"), (Object) "A", (Object) HashTreePMap.from(new _FunctionTypes._return_P0_E0<Map>() {
+    }.invoke()).get("a"), "A", (Object) HashTreePMap.from(new _FunctionTypes._return_P0_E0<Map>() {
       public Map invoke() {
         Map result = new HashMap();
         result.put("a", "A");
@@ -2399,7 +2399,7 @@ public class Generated_collections_Test {
   }
   @Test
   public void collections_emptyMap_2143211017891326455() throws Throwable {
-    Assert.assertEquals("Expected: " + HashTreePMap.from(new HashMap<String, String>()) + ", but was: " + HashTreePMap.from(new HashMap<String, String>()), (Object) HashTreePMap.from(new HashMap<String, String>()), (Object) HashTreePMap.from(new HashMap<String, String>()));
+    Assert.assertEquals("Expected: " + HashTreePMap.from(new HashMap<String, String>()) + ", but was: " + HashTreePMap.from(new HashMap<String, String>()), HashTreePMap.from(new HashMap<String, String>()), HashTreePMap.from(new HashMap<String, String>()));
   }
   @Test
   public void collections_item46_2143211017891341861() throws Throwable {
@@ -2448,7 +2448,7 @@ public class Generated_collections_Test {
         result.put("BW", "Stuttgart");
         return result;
       }
-    }.invoke()).get("BW"), (Object) "Stuttgart", (Object) HashTreePMap.from(new _FunctionTypes._return_P0_E0<Map>() {
+    }.invoke()).get("BW"), "Stuttgart", (Object) HashTreePMap.from(new _FunctionTypes._return_P0_E0<Map>() {
       public Map invoke() {
         Map result = new HashMap();
         result.put("BW", "Stuttgart");
@@ -2456,8 +2456,8 @@ public class Generated_collections_Test {
       }
     }.invoke()).get("BW"));
   }
-  public static final PVector<Number> many_ = TreePVector.<Number>empty().plus((Number) new BigInteger("1")).plus((Number) new BigInteger("2")).plus((Number) new BigInteger("3")).plus((Number) new BigInteger("4")).plus((Number) new BigInteger("5")).plus((Number) new BigInteger("6")).plus((Number) new BigInteger("7")).plus((Number) new BigInteger("8")).plus((Number) new BigInteger("9"));
-  public static final PVector<PVector<Number>> data_ = TreePVector.<PVector<Number>>empty().plus(TreePVector.<Number>empty().plus((Number) new BigInteger("2")).plus((Number) new BigInteger("3")).plus((Number) new BigInteger("12"))).plus(TreePVector.<Number>empty().plus((Number) new BigInteger("0")).plus((Number) new BigInteger("7"))).plus(TreePVector.<Number>empty().plus((Number) new BigInteger("1")).plus((Number) new BigInteger("3")));
+  public static final PVector<Number> many_ = TreePVector.<Number>empty().plus(new BigInteger("1")).plus(new BigInteger("2")).plus(new BigInteger("3")).plus(new BigInteger("4")).plus(new BigInteger("5")).plus(new BigInteger("6")).plus(new BigInteger("7")).plus(new BigInteger("8")).plus(new BigInteger("9"));
+  public static final PVector<PVector<Number>> data_ = TreePVector.<PVector<Number>>empty().plus(TreePVector.<Number>empty().plus(new BigInteger("2")).plus(new BigInteger("3")).plus(new BigInteger("12"))).plus(TreePVector.<Number>empty().plus(new BigInteger("0")).plus(new BigInteger("7"))).plus(TreePVector.<Number>empty().plus(new BigInteger("1")).plus(new BigInteger("3")));
   public static final Boolean hasAThree_ = Generated_collections_Test.data_.stream().allMatch(new Predicate<PVector<Number>>() {
     public boolean test(PVector<Number> o) {
       return new Function<ParameterSetWrapper, Boolean>() {
@@ -2479,15 +2479,15 @@ public class Generated_collections_Test {
   });
   @Test
   public void nestedLambdas_item0_1043318945012345437() throws Throwable {
-    Assert.assertEquals("Expected: " + false + ", but was: " + Generated_collections_Test.hasAThree_, (Object) false, (Object) Generated_collections_Test.hasAThree_);
+    Assert.assertEquals("Expected: " + false + ", but was: " + Generated_collections_Test.hasAThree_, (Object) false, Generated_collections_Test.hasAThree_);
   }
 
   public static final PMap<Number, Number> map5_ = HashTreePMap.from(new HashMap<Number, Number>());
   @Test
   public void MapFailures_item0_2143211017899278283() throws Throwable {
-    Assert.assertTrue("Expected: " + (Number) new BigInteger("3") + ", but was: " + Generated_collections_Test.map5_.plus((Number) new BigInteger("3"), (Number) new BigInteger("3")).get((Number) new BigInteger("3")), EqualsTestOp.matches((Number) new BigInteger("3"), Generated_collections_Test.map5_.plus((Number) new BigInteger("3"), (Number) new BigInteger("3")).get((Number) new BigInteger("3"))));
+    Assert.assertTrue("Expected: " + new BigInteger("3") + ", but was: " + Generated_collections_Test.map5_.plus(new BigInteger("3"), new BigInteger("3")).get(new BigInteger("3")), EqualsTestOp.matches(new BigInteger("3"), Generated_collections_Test.map5_.plus(new BigInteger("3"), new BigInteger("3")).get(new BigInteger("3"))));
   }
-  public static final PVector<PVector<Number>> nestedList_ = TreePVector.<PVector<Number>>empty().plus(TreePVector.<Number>empty().plus((Number) new BigInteger("1")).plus((Number) new BigInteger("2"))).plus(TreePVector.<Number>empty().plus((Number) new BigInteger("1")).plus((Number) new BigInteger("2"))).plus(TreePVector.<Number>empty().plus((Number) new BigInteger("1")).plus((Number) new BigInteger("2")));
+  public static final PVector<PVector<Number>> nestedList_ = TreePVector.<PVector<Number>>empty().plus(TreePVector.<Number>empty().plus(new BigInteger("1")).plus(new BigInteger("2"))).plus(TreePVector.<Number>empty().plus(new BigInteger("1")).plus(new BigInteger("2"))).plus(TreePVector.<Number>empty().plus(new BigInteger("1")).plus(new BigInteger("2")));
   public static final PVector<Number> flattened_ = ((_FunctionTypes._return_P0_E0<PVector<Number>>) () -> {
     List<Number> r = new ArrayList<Number>();
     for (PVector<Number> coll : ListSequence.fromList(Generated_collections_Test.nestedList_)) {
@@ -2498,7 +2498,7 @@ public class Generated_collections_Test {
   }).invoke();
   @Test
   public void flattening_item0_2554784455265112713() throws Throwable {
-    Assert.assertEquals("Expected: " + TreePVector.<Number>empty().plus((Number) new BigInteger("1")).plus((Number) new BigInteger("2")).plus((Number) new BigInteger("1")).plus((Number) new BigInteger("2")).plus((Number) new BigInteger("1")).plus((Number) new BigInteger("2")) + ", but was: " + Generated_collections_Test.flattened_, (Object) TreePVector.<Number>empty().plus((Number) new BigInteger("1")).plus((Number) new BigInteger("2")).plus((Number) new BigInteger("1")).plus((Number) new BigInteger("2")).plus((Number) new BigInteger("1")).plus((Number) new BigInteger("2")), (Object) Generated_collections_Test.flattened_);
+    Assert.assertEquals("Expected: " + TreePVector.<Number>empty().plus(new BigInteger("1")).plus(new BigInteger("2")).plus(new BigInteger("1")).plus(new BigInteger("2")).plus(new BigInteger("1")).plus(new BigInteger("2")) + ", but was: " + Generated_collections_Test.flattened_, TreePVector.<Number>empty().plus(new BigInteger("1")).plus(new BigInteger("2")).plus(new BigInteger("1")).plus(new BigInteger("2")).plus(new BigInteger("1")).plus(new BigInteger("2")), Generated_collections_Test.flattened_);
   }
   public static final PVector<PVector> aListOfTuples_ = TreePVector.<PVector>empty().plus((TreePVector) TreePVector.<Object>from(Arrays.<Object>asList("one", "1"))).plus((TreePVector) TreePVector.<Object>from(Arrays.<Object>asList("two", "2"))).plus((TreePVector) TreePVector.<Object>from(Arrays.<Object>asList("three", "3")));
   public static final PMap<String, String> aMap_ = ((_FunctionTypes._return_P0_E0<PMap<String, String>>) () -> {
@@ -2511,19 +2511,19 @@ public class Generated_collections_Test {
   public static final PMap<String, String> emptyMap_ = HashTreePMap.from(new HashMap<String, String>());
   @Test
   public void TuplesASMaps_item0_24388123215014941() throws Throwable {
-    Assert.assertEquals("Expected: " + "1" + ", but was: " + Generated_collections_Test.aMap_.get("one"), (Object) "1", (Object) Generated_collections_Test.aMap_.get("one"));
+    Assert.assertEquals("Expected: " + "1" + ", but was: " + Generated_collections_Test.aMap_.get("one"), "1", Generated_collections_Test.aMap_.get("one"));
   }
   @Test
   public void TuplesASMaps_item1_24388123215076847() throws Throwable {
-    Assert.assertEquals("Expected: " + "2" + ", but was: " + Generated_collections_Test.aMap_.get("two"), (Object) "2", (Object) Generated_collections_Test.aMap_.get("two"));
+    Assert.assertEquals("Expected: " + "2" + ", but was: " + Generated_collections_Test.aMap_.get("two"), "2", Generated_collections_Test.aMap_.get("two"));
   }
   @Test
   public void TuplesASMaps_item2_24388123215076912() throws Throwable {
-    Assert.assertEquals("Expected: " + "3" + ", but was: " + Generated_collections_Test.aMap_.get("three"), (Object) "3", (Object) Generated_collections_Test.aMap_.get("three"));
+    Assert.assertEquals("Expected: " + "3" + ", but was: " + Generated_collections_Test.aMap_.get("three"), "3", Generated_collections_Test.aMap_.get("three"));
   }
   @Test
   public void TuplesASMaps_item3_24388123215108475() throws Throwable {
-    Assert.assertTrue("Expected: " + (Number) new BigInteger("3") + ", but was: " + BigInteger.valueOf(Generated_collections_Test.aMap_.size()), EqualsTestOp.matches((Number) new BigInteger("3"), BigInteger.valueOf(Generated_collections_Test.aMap_.size())));
+    Assert.assertTrue("Expected: " + new BigInteger("3") + ", but was: " + BigInteger.valueOf(Generated_collections_Test.aMap_.size()), EqualsTestOp.matches(new BigInteger("3"), BigInteger.valueOf(Generated_collections_Test.aMap_.size())));
   }
   @Test
   public void TuplesASMaps_item4_1777352991474888116() throws Throwable {
@@ -2535,19 +2535,19 @@ public class Generated_collections_Test {
   }
   @Test
   public void TuplesASMaps_item6_1777352991475315555() throws Throwable {
-    Assert.assertEquals("Expected: " + TreePVector.<String>empty().plus("1").plus("2").plus("3") + ", but was: " + TreePVector.from(Generated_collections_Test.aMap_.values()), (Object) TreePVector.<String>empty().plus("1").plus("2").plus("3"), (Object) TreePVector.from(Generated_collections_Test.aMap_.values()));
+    Assert.assertEquals("Expected: " + TreePVector.<String>empty().plus("1").plus("2").plus("3") + ", but was: " + TreePVector.from(Generated_collections_Test.aMap_.values()), TreePVector.<String>empty().plus("1").plus("2").plus("3"), TreePVector.from(Generated_collections_Test.aMap_.values()));
   }
   @Test
   public void TuplesASMaps_item7_1777352991475570926() throws Throwable {
-    Assert.assertEquals("Expected: " + TreePVector.<String>empty().plus("one").plus("two").plus("three") + ", but was: " + TreePVector.from(Generated_collections_Test.aMap_.keySet()), (Object) TreePVector.<String>empty().plus("one").plus("two").plus("three"), (Object) TreePVector.from(Generated_collections_Test.aMap_.keySet()));
+    Assert.assertEquals("Expected: " + TreePVector.<String>empty().plus("one").plus("two").plus("three") + ", but was: " + TreePVector.from(Generated_collections_Test.aMap_.keySet()), TreePVector.<String>empty().plus("one").plus("two").plus("three"), TreePVector.from(Generated_collections_Test.aMap_.keySet()));
   }
   @Test
   public void TuplesASMaps_item8_1777352991475765108() throws Throwable {
-    Assert.assertEquals("Expected: " + TreePVector.<String>from(new ArrayList<String>()) + ", but was: " + TreePVector.from(Generated_collections_Test.emptyMap_.keySet()), (Object) TreePVector.<String>from(new ArrayList<String>()), (Object) TreePVector.from(Generated_collections_Test.emptyMap_.keySet()));
+    Assert.assertEquals("Expected: " + TreePVector.<String>from(new ArrayList<String>()) + ", but was: " + TreePVector.from(Generated_collections_Test.emptyMap_.keySet()), TreePVector.<String>from(new ArrayList<String>()), TreePVector.from(Generated_collections_Test.emptyMap_.keySet()));
   }
   @Test
   public void TuplesASMaps_item9_1777352991475766103() throws Throwable {
-    Assert.assertEquals("Expected: " + TreePVector.<String>from(new ArrayList<String>()) + ", but was: " + TreePVector.from(Generated_collections_Test.emptyMap_.values()), (Object) TreePVector.<String>from(new ArrayList<String>()), (Object) TreePVector.from(Generated_collections_Test.emptyMap_.values()));
+    Assert.assertEquals("Expected: " + TreePVector.<String>from(new ArrayList<String>()) + ", but was: " + TreePVector.from(Generated_collections_Test.emptyMap_.values()), TreePVector.<String>from(new ArrayList<String>()), TreePVector.from(Generated_collections_Test.emptyMap_.values()));
   }
   @Test
   public void TuplesASMaps_item10_1777352991475803069() throws Throwable {
@@ -2589,7 +2589,7 @@ public class Generated_collections_Test {
         result = result.plus((String) e.get(0), (String) e.get(1));
       }
       return result;
-    }).invoke()), (Object) HashTreePMap.from(new HashMap<String, String>()), (Object) ((_FunctionTypes._return_P0_E0<PMap<String, String>>) () -> {
+    }).invoke()), HashTreePMap.from(new HashMap<String, String>()), (Object) ((_FunctionTypes._return_P0_E0<PMap<String, String>>) () -> {
       PMap<String, String> result = HashTreePMap.empty();
       for (PVector e : ListSequence.fromList(TreePVector.<PVector>from(new ArrayList<PVector>()))) {
         result = result.plus((String) e.get(0), (String) e.get(1));
@@ -2605,7 +2605,7 @@ public class Generated_collections_Test {
         return new Function<ParameterSetWrapper, Boolean>() {
           public Boolean apply(ParameterSetWrapper param) {
             Number it = (Number) param.parameters.get(0);
-            return AH.isEqual(it, (Number) new BigInteger("1"));
+            return AH.isEqual(it, new BigInteger("1"));
           }
         }.apply(new ParameterSetWrapper(o));
       }
@@ -2618,7 +2618,7 @@ public class Generated_collections_Test {
         return new Function<ParameterSetWrapper, Boolean>() {
           public Boolean apply(ParameterSetWrapper param) {
             Number it = (Number) param.parameters.get(0);
-            return AH.isEqual(it, (Number) new BigInteger("5"));
+            return AH.isEqual(it, new BigInteger("5"));
           }
         }.apply(new ParameterSetWrapper(o));
       }
@@ -2631,7 +2631,7 @@ public class Generated_collections_Test {
         return new Function<ParameterSetWrapper, Boolean>() {
           public Boolean apply(ParameterSetWrapper param) {
             Number it = (Number) param.parameters.get(0);
-            return AH.isEqual(it, (Number) new BigInteger("12"));
+            return AH.isEqual(it, new BigInteger("12"));
           }
         }.apply(new ParameterSetWrapper(o));
       }
@@ -2639,12 +2639,12 @@ public class Generated_collections_Test {
   }
   @Test
   public void TestFindFirst_item3_8476278531305105717() throws Throwable {
-    Assert.assertTrue("Expected: " + (Number) new BigInteger("4") + ", but was: " + (org.iets3.core.expr.genjava.base.rt.rt.AH.isSome(Generated_collections_Test.many_.stream().filter(new Predicate<Number>() {
+    Assert.assertTrue("Expected: " + new BigInteger("4") + ", but was: " + (org.iets3.core.expr.genjava.base.rt.rt.AH.isSome(Generated_collections_Test.many_.stream().filter(new Predicate<Number>() {
       public boolean test(Number o) {
         return new Function<ParameterSetWrapper, Boolean>() {
           public Boolean apply(ParameterSetWrapper param) {
             Number it = (Number) param.parameters.get(0);
-            return AH.isGreater(it, (Number) new BigInteger("3"));
+            return AH.isGreater(it, new BigInteger("3"));
           }
         }.apply(new ParameterSetWrapper(o));
       }
@@ -2653,16 +2653,16 @@ public class Generated_collections_Test {
         return new Function<ParameterSetWrapper, Boolean>() {
           public Boolean apply(ParameterSetWrapper param) {
             Number it = (Number) param.parameters.get(0);
-            return AH.isGreater(it, (Number) new BigInteger("3"));
+            return AH.isGreater(it, new BigInteger("3"));
           }
         }.apply(new ParameterSetWrapper(o));
       }
-    }).findFirst().orElse(null) : (Number) new BigInteger("9")), EqualsTestOp.matches((Number) new BigInteger("4"), (org.iets3.core.expr.genjava.base.rt.rt.AH.isSome(Generated_collections_Test.many_.stream().filter(new Predicate<Number>() {
+    }).findFirst().orElse(null) : (Number) new BigInteger("9")), EqualsTestOp.matches(new BigInteger("4"), (org.iets3.core.expr.genjava.base.rt.rt.AH.isSome(Generated_collections_Test.many_.stream().filter(new Predicate<Number>() {
       public boolean test(Number o) {
         return new Function<ParameterSetWrapper, Boolean>() {
           public Boolean apply(ParameterSetWrapper param) {
             Number it = (Number) param.parameters.get(0);
-            return AH.isGreater(it, (Number) new BigInteger("3"));
+            return AH.isGreater(it, new BigInteger("3"));
           }
         }.apply(new ParameterSetWrapper(o));
       }
@@ -2671,7 +2671,7 @@ public class Generated_collections_Test {
         return new Function<ParameterSetWrapper, Boolean>() {
           public Boolean apply(ParameterSetWrapper param) {
             Number it = (Number) param.parameters.get(0);
-            return AH.isGreater(it, (Number) new BigInteger("3"));
+            return AH.isGreater(it, new BigInteger("3"));
           }
         }.apply(new ParameterSetWrapper(o));
       }
@@ -2679,12 +2679,12 @@ public class Generated_collections_Test {
   }
   @Test
   public void TestFindFirst_item4_8476278531306523539() throws Throwable {
-    Assert.assertTrue("Expected: " + (Number) new BigInteger("9") + ", but was: " + (org.iets3.core.expr.genjava.base.rt.rt.AH.isSome(Generated_collections_Test.many_.stream().filter(new Predicate<Number>() {
+    Assert.assertTrue("Expected: " + new BigInteger("9") + ", but was: " + (org.iets3.core.expr.genjava.base.rt.rt.AH.isSome(Generated_collections_Test.many_.stream().filter(new Predicate<Number>() {
       public boolean test(Number o) {
         return new Function<ParameterSetWrapper, Boolean>() {
           public Boolean apply(ParameterSetWrapper param) {
             Number it = (Number) param.parameters.get(0);
-            return AH.isGreater(it, (Number) new BigInteger("8"));
+            return AH.isGreater(it, new BigInteger("8"));
           }
         }.apply(new ParameterSetWrapper(o));
       }
@@ -2693,16 +2693,16 @@ public class Generated_collections_Test {
         return new Function<ParameterSetWrapper, Boolean>() {
           public Boolean apply(ParameterSetWrapper param) {
             Number it = (Number) param.parameters.get(0);
-            return AH.isGreater(it, (Number) new BigInteger("8"));
+            return AH.isGreater(it, new BigInteger("8"));
           }
         }.apply(new ParameterSetWrapper(o));
       }
-    }).findFirst().orElse(null) : (Number) new BigInteger("1")), EqualsTestOp.matches((Number) new BigInteger("9"), (org.iets3.core.expr.genjava.base.rt.rt.AH.isSome(Generated_collections_Test.many_.stream().filter(new Predicate<Number>() {
+    }).findFirst().orElse(null) : (Number) new BigInteger("1")), EqualsTestOp.matches(new BigInteger("9"), (org.iets3.core.expr.genjava.base.rt.rt.AH.isSome(Generated_collections_Test.many_.stream().filter(new Predicate<Number>() {
       public boolean test(Number o) {
         return new Function<ParameterSetWrapper, Boolean>() {
           public Boolean apply(ParameterSetWrapper param) {
             Number it = (Number) param.parameters.get(0);
-            return AH.isGreater(it, (Number) new BigInteger("8"));
+            return AH.isGreater(it, new BigInteger("8"));
           }
         }.apply(new ParameterSetWrapper(o));
       }
@@ -2711,7 +2711,7 @@ public class Generated_collections_Test {
         return new Function<ParameterSetWrapper, Boolean>() {
           public Boolean apply(ParameterSetWrapper param) {
             Number it = (Number) param.parameters.get(0);
-            return AH.isGreater(it, (Number) new BigInteger("8"));
+            return AH.isGreater(it, new BigInteger("8"));
           }
         }.apply(new ParameterSetWrapper(o));
       }
@@ -2719,12 +2719,12 @@ public class Generated_collections_Test {
   }
   @Test
   public void TestFindFirst_item5_8476278531306598789() throws Throwable {
-    Assert.assertTrue("Expected: " + (Number) new BigInteger("1") + ", but was: " + (org.iets3.core.expr.genjava.base.rt.rt.AH.isSome(Generated_collections_Test.many_.stream().filter(new Predicate<Number>() {
+    Assert.assertTrue("Expected: " + new BigInteger("1") + ", but was: " + (org.iets3.core.expr.genjava.base.rt.rt.AH.isSome(Generated_collections_Test.many_.stream().filter(new Predicate<Number>() {
       public boolean test(Number o) {
         return new Function<ParameterSetWrapper, Boolean>() {
           public Boolean apply(ParameterSetWrapper param) {
             Number it = (Number) param.parameters.get(0);
-            return AH.isGreater(it, (Number) new BigInteger("18"));
+            return AH.isGreater(it, new BigInteger("18"));
           }
         }.apply(new ParameterSetWrapper(o));
       }
@@ -2733,16 +2733,16 @@ public class Generated_collections_Test {
         return new Function<ParameterSetWrapper, Boolean>() {
           public Boolean apply(ParameterSetWrapper param) {
             Number it = (Number) param.parameters.get(0);
-            return AH.isGreater(it, (Number) new BigInteger("18"));
+            return AH.isGreater(it, new BigInteger("18"));
           }
         }.apply(new ParameterSetWrapper(o));
       }
-    }).findFirst().orElse(null) : (Number) new BigInteger("1")), EqualsTestOp.matches((Number) new BigInteger("1"), (org.iets3.core.expr.genjava.base.rt.rt.AH.isSome(Generated_collections_Test.many_.stream().filter(new Predicate<Number>() {
+    }).findFirst().orElse(null) : (Number) new BigInteger("1")), EqualsTestOp.matches(new BigInteger("1"), (org.iets3.core.expr.genjava.base.rt.rt.AH.isSome(Generated_collections_Test.many_.stream().filter(new Predicate<Number>() {
       public boolean test(Number o) {
         return new Function<ParameterSetWrapper, Boolean>() {
           public Boolean apply(ParameterSetWrapper param) {
             Number it = (Number) param.parameters.get(0);
-            return AH.isGreater(it, (Number) new BigInteger("18"));
+            return AH.isGreater(it, new BigInteger("18"));
           }
         }.apply(new ParameterSetWrapper(o));
       }
@@ -2751,7 +2751,7 @@ public class Generated_collections_Test {
         return new Function<ParameterSetWrapper, Boolean>() {
           public Boolean apply(ParameterSetWrapper param) {
             Number it = (Number) param.parameters.get(0);
-            return AH.isGreater(it, (Number) new BigInteger("18"));
+            return AH.isGreater(it, new BigInteger("18"));
           }
         }.apply(new ParameterSetWrapper(o));
       }
@@ -2759,21 +2759,21 @@ public class Generated_collections_Test {
   }
   @Test
   public void TestFindFirst_item6_8476278531305598182() throws Throwable {
-    Assert.assertTrue("Expected: " + (Number) new BigInteger("6") + ", but was: " + BigInteger.valueOf(TreePVector.<Number>from(Generated_collections_Test.many_.stream().filter(new Predicate<Number>() {
+    Assert.assertTrue("Expected: " + new BigInteger("6") + ", but was: " + BigInteger.valueOf(TreePVector.<Number>from(Generated_collections_Test.many_.stream().filter(new Predicate<Number>() {
       public boolean test(Number o) {
         return new Function<ParameterSetWrapper, Boolean>() {
           public Boolean apply(ParameterSetWrapper param) {
             Number it = (Number) param.parameters.get(0);
-            return AH.isGreater(it, (Number) new BigInteger("3"));
+            return AH.isGreater(it, new BigInteger("3"));
           }
         }.apply(new ParameterSetWrapper(o));
       }
-    }).collect(Collectors.<Number>toList())).size()), EqualsTestOp.matches((Number) new BigInteger("6"), BigInteger.valueOf(TreePVector.<Number>from(Generated_collections_Test.many_.stream().filter(new Predicate<Number>() {
+    }).collect(Collectors.<Number>toList())).size()), EqualsTestOp.matches(new BigInteger("6"), BigInteger.valueOf(TreePVector.<Number>from(Generated_collections_Test.many_.stream().filter(new Predicate<Number>() {
       public boolean test(Number o) {
         return new Function<ParameterSetWrapper, Boolean>() {
           public Boolean apply(ParameterSetWrapper param) {
             Number it = (Number) param.parameters.get(0);
-            return AH.isGreater(it, (Number) new BigInteger("3"));
+            return AH.isGreater(it, new BigInteger("3"));
           }
         }.apply(new ParameterSetWrapper(o));
       }
@@ -2781,21 +2781,21 @@ public class Generated_collections_Test {
   }
   @Test
   public void TestFindFirst_item7_2098022166924643195() throws Throwable {
-    Assert.assertTrue("Expected: " + (Number) new BigInteger("1") + ", but was: " + TreePVector.<Number>empty().plus((Number) new BigInteger("1")).stream().filter(new Predicate<Number>() {
+    Assert.assertTrue("Expected: " + new BigInteger("1") + ", but was: " + TreePVector.<Number>empty().plus(new BigInteger("1")).stream().filter(new Predicate<Number>() {
       public boolean test(Number o) {
         return new Function<ParameterSetWrapper, Boolean>() {
           public Boolean apply(ParameterSetWrapper param) {
             Number it = (Number) param.parameters.get(0);
-            return !(AH.isLess(it, (Number) new BigInteger("1")));
+            return !(AH.isLess(it, new BigInteger("1")));
           }
         }.apply(new ParameterSetWrapper(o));
       }
-    }).findFirst().orElse(null), EqualsTestOp.matches((Number) new BigInteger("1"), TreePVector.<Number>empty().plus((Number) new BigInteger("1")).stream().filter(new Predicate<Number>() {
+    }).findFirst().orElse(null), EqualsTestOp.matches(new BigInteger("1"), TreePVector.<Number>empty().plus(new BigInteger("1")).stream().filter(new Predicate<Number>() {
       public boolean test(Number o) {
         return new Function<ParameterSetWrapper, Boolean>() {
           public Boolean apply(ParameterSetWrapper param) {
             Number it = (Number) param.parameters.get(0);
-            return !(AH.isLess(it, (Number) new BigInteger("1")));
+            return !(AH.isLess(it, new BigInteger("1")));
           }
         }.apply(new ParameterSetWrapper(o));
       }
@@ -2803,21 +2803,21 @@ public class Generated_collections_Test {
   }
   @Test
   public void TestFindFirst_item8_2098022166924841112() throws Throwable {
-    Assert.assertTrue("Expected: " + (Number) new BigInteger("1") + ", but was: " + TreePVector.<Number>empty().plus((Number) new BigInteger("1")).stream().filter(new Predicate<Number>() {
+    Assert.assertTrue("Expected: " + new BigInteger("1") + ", but was: " + TreePVector.<Number>empty().plus(new BigInteger("1")).stream().filter(new Predicate<Number>() {
       public boolean test(Number o) {
         return new Function<ParameterSetWrapper, Boolean>() {
           public Boolean apply(ParameterSetWrapper param) {
             Number it = (Number) param.parameters.get(0);
-            return AH.isEqual(it, (Number) new BigInteger("1"));
+            return AH.isEqual(it, new BigInteger("1"));
           }
         }.apply(new ParameterSetWrapper(o));
       }
-    }).findFirst().orElse(null), EqualsTestOp.matches((Number) new BigInteger("1"), TreePVector.<Number>empty().plus((Number) new BigInteger("1")).stream().filter(new Predicate<Number>() {
+    }).findFirst().orElse(null), EqualsTestOp.matches(new BigInteger("1"), TreePVector.<Number>empty().plus(new BigInteger("1")).stream().filter(new Predicate<Number>() {
       public boolean test(Number o) {
         return new Function<ParameterSetWrapper, Boolean>() {
           public Boolean apply(ParameterSetWrapper param) {
             Number it = (Number) param.parameters.get(0);
-            return AH.isEqual(it, (Number) new BigInteger("1"));
+            return AH.isEqual(it, new BigInteger("1"));
           }
         }.apply(new ParameterSetWrapper(o));
       }
@@ -2830,16 +2830,16 @@ public class Generated_collections_Test {
         return new Function<ParameterSetWrapper, Boolean>() {
           public Boolean apply(ParameterSetWrapper param) {
             Number it = (Number) param.parameters.get(0);
-            return AH.isEqual(it, (Number) new BigInteger("1"));
+            return AH.isEqual(it, new BigInteger("1"));
           }
         }.apply(new ParameterSetWrapper(o));
       }
-    }).findFirst().orElse(null), (Object) null, (Object) TreePVector.<Number>from(new ArrayList<Number>()).stream().filter(new Predicate<Number>() {
+    }).findFirst().orElse(null), (Object) null, TreePVector.<Number>from(new ArrayList<Number>()).stream().filter(new Predicate<Number>() {
       public boolean test(Number o) {
         return new Function<ParameterSetWrapper, Boolean>() {
           public Boolean apply(ParameterSetWrapper param) {
             Number it = (Number) param.parameters.get(0);
-            return AH.isEqual(it, (Number) new BigInteger("1"));
+            return AH.isEqual(it, new BigInteger("1"));
           }
         }.apply(new ParameterSetWrapper(o));
       }
@@ -2852,7 +2852,7 @@ public class Generated_collections_Test {
         return new Function<ParameterSetWrapper, Boolean>() {
           public Boolean apply(ParameterSetWrapper param) {
             Number it = (Number) param.parameters.get(0);
-            return AH.isEqual(it, (Number) new BigInteger("12"));
+            return AH.isEqual(it, new BigInteger("12"));
           }
         }.apply(new ParameterSetWrapper(o));
       }
@@ -2865,7 +2865,7 @@ public class Generated_collections_Test {
         return new Function<ParameterSetWrapper, Boolean>() {
           public Boolean apply(ParameterSetWrapper param) {
             Number it = (Number) param.parameters.get(0);
-            return AH.isEqual(it, (Number) new BigInteger("1"));
+            return AH.isEqual(it, new BigInteger("1"));
           }
         }.apply(new ParameterSetWrapper(o));
       }
@@ -2878,7 +2878,7 @@ public class Generated_collections_Test {
         return new Function<ParameterSetWrapper, Boolean>() {
           public Boolean apply(ParameterSetWrapper param) {
             Number it = (Number) param.parameters.get(0);
-            return AH.isEqual(it, (Number) new BigInteger("5"));
+            return AH.isEqual(it, new BigInteger("5"));
           }
         }.apply(new ParameterSetWrapper(o));
       }
@@ -2886,12 +2886,12 @@ public class Generated_collections_Test {
   }
   @Test
   public void TestFindFirst_item14_3863896640930529253() throws Throwable {
-    Assert.assertTrue("Expected: " + (Number) new BigInteger("4") + ", but was: " + (org.iets3.core.expr.genjava.base.rt.rt.AH.isSome(Generated_collections_Test.many_.stream().filter(new Predicate<Number>() {
+    Assert.assertTrue("Expected: " + new BigInteger("4") + ", but was: " + (org.iets3.core.expr.genjava.base.rt.rt.AH.isSome(Generated_collections_Test.many_.stream().filter(new Predicate<Number>() {
       public boolean test(Number o) {
         return new Function<ParameterSetWrapper, Boolean>() {
           public Boolean apply(ParameterSetWrapper param) {
             Number it = (Number) param.parameters.get(0);
-            return AH.isGreater(it, (Number) new BigInteger("3"));
+            return AH.isGreater(it, new BigInteger("3"));
           }
         }.apply(new ParameterSetWrapper(o));
       }
@@ -2900,16 +2900,16 @@ public class Generated_collections_Test {
         return new Function<ParameterSetWrapper, Boolean>() {
           public Boolean apply(ParameterSetWrapper param) {
             Number it = (Number) param.parameters.get(0);
-            return AH.isGreater(it, (Number) new BigInteger("3"));
+            return AH.isGreater(it, new BigInteger("3"));
           }
         }.apply(new ParameterSetWrapper(o));
       }
-    }).findFirst().orElse(null) : (Number) new BigInteger("9")), EqualsTestOp.matches((Number) new BigInteger("4"), (org.iets3.core.expr.genjava.base.rt.rt.AH.isSome(Generated_collections_Test.many_.stream().filter(new Predicate<Number>() {
+    }).findFirst().orElse(null) : (Number) new BigInteger("9")), EqualsTestOp.matches(new BigInteger("4"), (org.iets3.core.expr.genjava.base.rt.rt.AH.isSome(Generated_collections_Test.many_.stream().filter(new Predicate<Number>() {
       public boolean test(Number o) {
         return new Function<ParameterSetWrapper, Boolean>() {
           public Boolean apply(ParameterSetWrapper param) {
             Number it = (Number) param.parameters.get(0);
-            return AH.isGreater(it, (Number) new BigInteger("3"));
+            return AH.isGreater(it, new BigInteger("3"));
           }
         }.apply(new ParameterSetWrapper(o));
       }
@@ -2918,7 +2918,7 @@ public class Generated_collections_Test {
         return new Function<ParameterSetWrapper, Boolean>() {
           public Boolean apply(ParameterSetWrapper param) {
             Number it = (Number) param.parameters.get(0);
-            return AH.isGreater(it, (Number) new BigInteger("3"));
+            return AH.isGreater(it, new BigInteger("3"));
           }
         }.apply(new ParameterSetWrapper(o));
       }
@@ -2926,12 +2926,12 @@ public class Generated_collections_Test {
   }
   @Test
   public void TestFindFirst_item15_3863896640930529268() throws Throwable {
-    Assert.assertTrue("Expected: " + (Number) new BigInteger("9") + ", but was: " + (org.iets3.core.expr.genjava.base.rt.rt.AH.isSome(Generated_collections_Test.many_.stream().filter(new Predicate<Number>() {
+    Assert.assertTrue("Expected: " + new BigInteger("9") + ", but was: " + (org.iets3.core.expr.genjava.base.rt.rt.AH.isSome(Generated_collections_Test.many_.stream().filter(new Predicate<Number>() {
       public boolean test(Number o) {
         return new Function<ParameterSetWrapper, Boolean>() {
           public Boolean apply(ParameterSetWrapper param) {
             Number it = (Number) param.parameters.get(0);
-            return AH.isGreater(it, (Number) new BigInteger("8"));
+            return AH.isGreater(it, new BigInteger("8"));
           }
         }.apply(new ParameterSetWrapper(o));
       }
@@ -2940,16 +2940,16 @@ public class Generated_collections_Test {
         return new Function<ParameterSetWrapper, Boolean>() {
           public Boolean apply(ParameterSetWrapper param) {
             Number it = (Number) param.parameters.get(0);
-            return AH.isGreater(it, (Number) new BigInteger("8"));
+            return AH.isGreater(it, new BigInteger("8"));
           }
         }.apply(new ParameterSetWrapper(o));
       }
-    }).findFirst().orElse(null) : (Number) new BigInteger("1")), EqualsTestOp.matches((Number) new BigInteger("9"), (org.iets3.core.expr.genjava.base.rt.rt.AH.isSome(Generated_collections_Test.many_.stream().filter(new Predicate<Number>() {
+    }).findFirst().orElse(null) : (Number) new BigInteger("1")), EqualsTestOp.matches(new BigInteger("9"), (org.iets3.core.expr.genjava.base.rt.rt.AH.isSome(Generated_collections_Test.many_.stream().filter(new Predicate<Number>() {
       public boolean test(Number o) {
         return new Function<ParameterSetWrapper, Boolean>() {
           public Boolean apply(ParameterSetWrapper param) {
             Number it = (Number) param.parameters.get(0);
-            return AH.isGreater(it, (Number) new BigInteger("8"));
+            return AH.isGreater(it, new BigInteger("8"));
           }
         }.apply(new ParameterSetWrapper(o));
       }
@@ -2958,7 +2958,7 @@ public class Generated_collections_Test {
         return new Function<ParameterSetWrapper, Boolean>() {
           public Boolean apply(ParameterSetWrapper param) {
             Number it = (Number) param.parameters.get(0);
-            return AH.isGreater(it, (Number) new BigInteger("8"));
+            return AH.isGreater(it, new BigInteger("8"));
           }
         }.apply(new ParameterSetWrapper(o));
       }
@@ -2966,12 +2966,12 @@ public class Generated_collections_Test {
   }
   @Test
   public void TestFindFirst_item16_3863896640930529283() throws Throwable {
-    Assert.assertTrue("Expected: " + (Number) new BigInteger("1") + ", but was: " + (org.iets3.core.expr.genjava.base.rt.rt.AH.isSome(Generated_collections_Test.many_.stream().filter(new Predicate<Number>() {
+    Assert.assertTrue("Expected: " + new BigInteger("1") + ", but was: " + (org.iets3.core.expr.genjava.base.rt.rt.AH.isSome(Generated_collections_Test.many_.stream().filter(new Predicate<Number>() {
       public boolean test(Number o) {
         return new Function<ParameterSetWrapper, Boolean>() {
           public Boolean apply(ParameterSetWrapper param) {
             Number it = (Number) param.parameters.get(0);
-            return AH.isGreater(it, (Number) new BigInteger("18"));
+            return AH.isGreater(it, new BigInteger("18"));
           }
         }.apply(new ParameterSetWrapper(o));
       }
@@ -2980,16 +2980,16 @@ public class Generated_collections_Test {
         return new Function<ParameterSetWrapper, Boolean>() {
           public Boolean apply(ParameterSetWrapper param) {
             Number it = (Number) param.parameters.get(0);
-            return AH.isGreater(it, (Number) new BigInteger("18"));
+            return AH.isGreater(it, new BigInteger("18"));
           }
         }.apply(new ParameterSetWrapper(o));
       }
-    }).findFirst().orElse(null) : (Number) new BigInteger("1")), EqualsTestOp.matches((Number) new BigInteger("1"), (org.iets3.core.expr.genjava.base.rt.rt.AH.isSome(Generated_collections_Test.many_.stream().filter(new Predicate<Number>() {
+    }).findFirst().orElse(null) : (Number) new BigInteger("1")), EqualsTestOp.matches(new BigInteger("1"), (org.iets3.core.expr.genjava.base.rt.rt.AH.isSome(Generated_collections_Test.many_.stream().filter(new Predicate<Number>() {
       public boolean test(Number o) {
         return new Function<ParameterSetWrapper, Boolean>() {
           public Boolean apply(ParameterSetWrapper param) {
             Number it = (Number) param.parameters.get(0);
-            return AH.isGreater(it, (Number) new BigInteger("18"));
+            return AH.isGreater(it, new BigInteger("18"));
           }
         }.apply(new ParameterSetWrapper(o));
       }
@@ -2998,7 +2998,7 @@ public class Generated_collections_Test {
         return new Function<ParameterSetWrapper, Boolean>() {
           public Boolean apply(ParameterSetWrapper param) {
             Number it = (Number) param.parameters.get(0);
-            return AH.isGreater(it, (Number) new BigInteger("18"));
+            return AH.isGreater(it, new BigInteger("18"));
           }
         }.apply(new ParameterSetWrapper(o));
       }
@@ -3006,21 +3006,21 @@ public class Generated_collections_Test {
   }
   @Test
   public void TestFindFirst_item17_3863896640930529298() throws Throwable {
-    Assert.assertTrue("Expected: " + (Number) new BigInteger("6") + ", but was: " + BigInteger.valueOf(TreePVector.<Number>from(Generated_collections_Test.many_.stream().filter(new Predicate<Number>() {
+    Assert.assertTrue("Expected: " + new BigInteger("6") + ", but was: " + BigInteger.valueOf(TreePVector.<Number>from(Generated_collections_Test.many_.stream().filter(new Predicate<Number>() {
       public boolean test(Number o) {
         return new Function<ParameterSetWrapper, Boolean>() {
           public Boolean apply(ParameterSetWrapper param) {
             Number it = (Number) param.parameters.get(0);
-            return AH.isGreater(it, (Number) new BigInteger("3"));
+            return AH.isGreater(it, new BigInteger("3"));
           }
         }.apply(new ParameterSetWrapper(o));
       }
-    }).collect(Collectors.<Number>toList())).size()), EqualsTestOp.matches((Number) new BigInteger("6"), BigInteger.valueOf(TreePVector.<Number>from(Generated_collections_Test.many_.stream().filter(new Predicate<Number>() {
+    }).collect(Collectors.<Number>toList())).size()), EqualsTestOp.matches(new BigInteger("6"), BigInteger.valueOf(TreePVector.<Number>from(Generated_collections_Test.many_.stream().filter(new Predicate<Number>() {
       public boolean test(Number o) {
         return new Function<ParameterSetWrapper, Boolean>() {
           public Boolean apply(ParameterSetWrapper param) {
             Number it = (Number) param.parameters.get(0);
-            return AH.isGreater(it, (Number) new BigInteger("3"));
+            return AH.isGreater(it, new BigInteger("3"));
           }
         }.apply(new ParameterSetWrapper(o));
       }
@@ -3033,7 +3033,7 @@ public class Generated_collections_Test {
         return new Function<ParameterSetWrapper, Boolean>() {
           public Boolean apply(ParameterSetWrapper param) {
             Number it = (Number) param.parameters.get(0);
-            return AH.isEqual(it, (Number) new BigInteger("12"));
+            return AH.isEqual(it, new BigInteger("12"));
           }
         }.apply(new ParameterSetWrapper(o));
       }
@@ -3046,7 +3046,7 @@ public class Generated_collections_Test {
         return new Function<ParameterSetWrapper, Boolean>() {
           public Boolean apply(ParameterSetWrapper param) {
             Number it = (Number) param.parameters.get(0);
-            return AH.isEqual(it, (Number) new BigInteger("1"));
+            return AH.isEqual(it, new BigInteger("1"));
           }
         }.apply(new ParameterSetWrapper(o));
       }
@@ -3059,7 +3059,7 @@ public class Generated_collections_Test {
         return new Function<ParameterSetWrapper, Boolean>() {
           public Boolean apply(ParameterSetWrapper param) {
             Number it = (Number) param.parameters.get(0);
-            return AH.isEqual(it, (Number) new BigInteger("5"));
+            return AH.isEqual(it, new BigInteger("5"));
           }
         }.apply(new ParameterSetWrapper(o));
       }
@@ -3067,12 +3067,12 @@ public class Generated_collections_Test {
   }
   @Test
   public void TestFindFirst_item22_3863896640930331051() throws Throwable {
-    Assert.assertTrue("Expected: " + (Number) new BigInteger("4") + ", but was: " + (org.iets3.core.expr.genjava.base.rt.rt.AH.isSome(Generated_collections_Test.set1_.stream().filter(new Predicate<Number>() {
+    Assert.assertTrue("Expected: " + new BigInteger("4") + ", but was: " + (org.iets3.core.expr.genjava.base.rt.rt.AH.isSome(Generated_collections_Test.set1_.stream().filter(new Predicate<Number>() {
       public boolean test(Number o) {
         return new Function<ParameterSetWrapper, Boolean>() {
           public Boolean apply(ParameterSetWrapper param) {
             Number it = (Number) param.parameters.get(0);
-            return AH.isGreater(it, (Number) new BigInteger("3"));
+            return AH.isGreater(it, new BigInteger("3"));
           }
         }.apply(new ParameterSetWrapper(o));
       }
@@ -3081,16 +3081,16 @@ public class Generated_collections_Test {
         return new Function<ParameterSetWrapper, Boolean>() {
           public Boolean apply(ParameterSetWrapper param) {
             Number it = (Number) param.parameters.get(0);
-            return AH.isGreater(it, (Number) new BigInteger("3"));
+            return AH.isGreater(it, new BigInteger("3"));
           }
         }.apply(new ParameterSetWrapper(o));
       }
-    }).findFirst().orElse(null) : (Number) new BigInteger("9")), EqualsTestOp.matches((Number) new BigInteger("4"), (org.iets3.core.expr.genjava.base.rt.rt.AH.isSome(Generated_collections_Test.set1_.stream().filter(new Predicate<Number>() {
+    }).findFirst().orElse(null) : (Number) new BigInteger("9")), EqualsTestOp.matches(new BigInteger("4"), (org.iets3.core.expr.genjava.base.rt.rt.AH.isSome(Generated_collections_Test.set1_.stream().filter(new Predicate<Number>() {
       public boolean test(Number o) {
         return new Function<ParameterSetWrapper, Boolean>() {
           public Boolean apply(ParameterSetWrapper param) {
             Number it = (Number) param.parameters.get(0);
-            return AH.isGreater(it, (Number) new BigInteger("3"));
+            return AH.isGreater(it, new BigInteger("3"));
           }
         }.apply(new ParameterSetWrapper(o));
       }
@@ -3099,7 +3099,7 @@ public class Generated_collections_Test {
         return new Function<ParameterSetWrapper, Boolean>() {
           public Boolean apply(ParameterSetWrapper param) {
             Number it = (Number) param.parameters.get(0);
-            return AH.isGreater(it, (Number) new BigInteger("3"));
+            return AH.isGreater(it, new BigInteger("3"));
           }
         }.apply(new ParameterSetWrapper(o));
       }
@@ -3107,12 +3107,12 @@ public class Generated_collections_Test {
   }
   @Test
   public void TestFindFirst_item23_3863896640930331063() throws Throwable {
-    Assert.assertTrue("Expected: " + (Number) new BigInteger("9") + ", but was: " + (org.iets3.core.expr.genjava.base.rt.rt.AH.isSome(Generated_collections_Test.set1_.stream().filter(new Predicate<Number>() {
+    Assert.assertTrue("Expected: " + new BigInteger("9") + ", but was: " + (org.iets3.core.expr.genjava.base.rt.rt.AH.isSome(Generated_collections_Test.set1_.stream().filter(new Predicate<Number>() {
       public boolean test(Number o) {
         return new Function<ParameterSetWrapper, Boolean>() {
           public Boolean apply(ParameterSetWrapper param) {
             Number it = (Number) param.parameters.get(0);
-            return AH.isGreater(it, (Number) new BigInteger("8"));
+            return AH.isGreater(it, new BigInteger("8"));
           }
         }.apply(new ParameterSetWrapper(o));
       }
@@ -3121,16 +3121,16 @@ public class Generated_collections_Test {
         return new Function<ParameterSetWrapper, Boolean>() {
           public Boolean apply(ParameterSetWrapper param) {
             Number it = (Number) param.parameters.get(0);
-            return AH.isGreater(it, (Number) new BigInteger("8"));
+            return AH.isGreater(it, new BigInteger("8"));
           }
         }.apply(new ParameterSetWrapper(o));
       }
-    }).findFirst().orElse(null) : (Number) new BigInteger("1")), EqualsTestOp.matches((Number) new BigInteger("9"), (org.iets3.core.expr.genjava.base.rt.rt.AH.isSome(Generated_collections_Test.set1_.stream().filter(new Predicate<Number>() {
+    }).findFirst().orElse(null) : (Number) new BigInteger("1")), EqualsTestOp.matches(new BigInteger("9"), (org.iets3.core.expr.genjava.base.rt.rt.AH.isSome(Generated_collections_Test.set1_.stream().filter(new Predicate<Number>() {
       public boolean test(Number o) {
         return new Function<ParameterSetWrapper, Boolean>() {
           public Boolean apply(ParameterSetWrapper param) {
             Number it = (Number) param.parameters.get(0);
-            return AH.isGreater(it, (Number) new BigInteger("8"));
+            return AH.isGreater(it, new BigInteger("8"));
           }
         }.apply(new ParameterSetWrapper(o));
       }
@@ -3139,7 +3139,7 @@ public class Generated_collections_Test {
         return new Function<ParameterSetWrapper, Boolean>() {
           public Boolean apply(ParameterSetWrapper param) {
             Number it = (Number) param.parameters.get(0);
-            return AH.isGreater(it, (Number) new BigInteger("8"));
+            return AH.isGreater(it, new BigInteger("8"));
           }
         }.apply(new ParameterSetWrapper(o));
       }
@@ -3147,12 +3147,12 @@ public class Generated_collections_Test {
   }
   @Test
   public void TestFindFirst_item24_3863896640930331075() throws Throwable {
-    Assert.assertTrue("Expected: " + (Number) new BigInteger("1") + ", but was: " + (org.iets3.core.expr.genjava.base.rt.rt.AH.isSome(Generated_collections_Test.set1_.stream().filter(new Predicate<Number>() {
+    Assert.assertTrue("Expected: " + new BigInteger("1") + ", but was: " + (org.iets3.core.expr.genjava.base.rt.rt.AH.isSome(Generated_collections_Test.set1_.stream().filter(new Predicate<Number>() {
       public boolean test(Number o) {
         return new Function<ParameterSetWrapper, Boolean>() {
           public Boolean apply(ParameterSetWrapper param) {
             Number it = (Number) param.parameters.get(0);
-            return AH.isGreater(it, (Number) new BigInteger("18"));
+            return AH.isGreater(it, new BigInteger("18"));
           }
         }.apply(new ParameterSetWrapper(o));
       }
@@ -3161,16 +3161,16 @@ public class Generated_collections_Test {
         return new Function<ParameterSetWrapper, Boolean>() {
           public Boolean apply(ParameterSetWrapper param) {
             Number it = (Number) param.parameters.get(0);
-            return AH.isGreater(it, (Number) new BigInteger("18"));
+            return AH.isGreater(it, new BigInteger("18"));
           }
         }.apply(new ParameterSetWrapper(o));
       }
-    }).findFirst().orElse(null) : (Number) new BigInteger("1")), EqualsTestOp.matches((Number) new BigInteger("1"), (org.iets3.core.expr.genjava.base.rt.rt.AH.isSome(Generated_collections_Test.set1_.stream().filter(new Predicate<Number>() {
+    }).findFirst().orElse(null) : (Number) new BigInteger("1")), EqualsTestOp.matches(new BigInteger("1"), (org.iets3.core.expr.genjava.base.rt.rt.AH.isSome(Generated_collections_Test.set1_.stream().filter(new Predicate<Number>() {
       public boolean test(Number o) {
         return new Function<ParameterSetWrapper, Boolean>() {
           public Boolean apply(ParameterSetWrapper param) {
             Number it = (Number) param.parameters.get(0);
-            return AH.isGreater(it, (Number) new BigInteger("18"));
+            return AH.isGreater(it, new BigInteger("18"));
           }
         }.apply(new ParameterSetWrapper(o));
       }
@@ -3179,7 +3179,7 @@ public class Generated_collections_Test {
         return new Function<ParameterSetWrapper, Boolean>() {
           public Boolean apply(ParameterSetWrapper param) {
             Number it = (Number) param.parameters.get(0);
-            return AH.isGreater(it, (Number) new BigInteger("18"));
+            return AH.isGreater(it, new BigInteger("18"));
           }
         }.apply(new ParameterSetWrapper(o));
       }
@@ -3187,21 +3187,21 @@ public class Generated_collections_Test {
   }
   @Test
   public void TestFindFirst_item25_3863896640930331087() throws Throwable {
-    Assert.assertTrue("Expected: " + (Number) new BigInteger("6") + ", but was: " + BigInteger.valueOf(TreePVector.<Number>from(Generated_collections_Test.set1_.stream().filter(new Predicate<Number>() {
+    Assert.assertTrue("Expected: " + new BigInteger("6") + ", but was: " + BigInteger.valueOf(TreePVector.<Number>from(Generated_collections_Test.set1_.stream().filter(new Predicate<Number>() {
       public boolean test(Number o) {
         return new Function<ParameterSetWrapper, Boolean>() {
           public Boolean apply(ParameterSetWrapper param) {
             Number it = (Number) param.parameters.get(0);
-            return AH.isGreater(it, (Number) new BigInteger("3"));
+            return AH.isGreater(it, new BigInteger("3"));
           }
         }.apply(new ParameterSetWrapper(o));
       }
-    }).collect(Collectors.<Number>toList())).size()), EqualsTestOp.matches((Number) new BigInteger("6"), BigInteger.valueOf(TreePVector.<Number>from(Generated_collections_Test.set1_.stream().filter(new Predicate<Number>() {
+    }).collect(Collectors.<Number>toList())).size()), EqualsTestOp.matches(new BigInteger("6"), BigInteger.valueOf(TreePVector.<Number>from(Generated_collections_Test.set1_.stream().filter(new Predicate<Number>() {
       public boolean test(Number o) {
         return new Function<ParameterSetWrapper, Boolean>() {
           public Boolean apply(ParameterSetWrapper param) {
             Number it = (Number) param.parameters.get(0);
-            return AH.isGreater(it, (Number) new BigInteger("3"));
+            return AH.isGreater(it, new BigInteger("3"));
           }
         }.apply(new ParameterSetWrapper(o));
       }
@@ -3214,7 +3214,7 @@ public class Generated_collections_Test {
         return new Function<ParameterSetWrapper, Boolean>() {
           public Boolean apply(ParameterSetWrapper param) {
             Number it = (Number) param.parameters.get(0);
-            return AH.isEqual(it, (Number) new BigInteger("12"));
+            return AH.isEqual(it, new BigInteger("12"));
           }
         }.apply(new ParameterSetWrapper(o));
       }
@@ -3227,7 +3227,7 @@ public class Generated_collections_Test {
         return new Function<ParameterSetWrapper, Boolean>() {
           public Boolean apply(ParameterSetWrapper param) {
             Number it = (Number) param.parameters.get(0);
-            return AH.isEqual(it, (Number) new BigInteger("1"));
+            return AH.isEqual(it, new BigInteger("1"));
           }
         }.apply(new ParameterSetWrapper(o));
       }
@@ -3240,7 +3240,7 @@ public class Generated_collections_Test {
         return new Function<ParameterSetWrapper, Boolean>() {
           public Boolean apply(ParameterSetWrapper param) {
             Number it = (Number) param.parameters.get(0);
-            return AH.isEqual(it, (Number) new BigInteger("5"));
+            return AH.isEqual(it, new BigInteger("5"));
           }
         }.apply(new ParameterSetWrapper(o));
       }
@@ -3248,12 +3248,12 @@ public class Generated_collections_Test {
   }
   @Test
   public void TestFindFirst_item30_3863896640930385936() throws Throwable {
-    Assert.assertTrue("Expected: " + (Number) new BigInteger("4") + ", but was: " + (org.iets3.core.expr.genjava.base.rt.rt.AH.isSome(Generated_collections_Test.set1_.stream().filter(new Predicate<Number>() {
+    Assert.assertTrue("Expected: " + new BigInteger("4") + ", but was: " + (org.iets3.core.expr.genjava.base.rt.rt.AH.isSome(Generated_collections_Test.set1_.stream().filter(new Predicate<Number>() {
       public boolean test(Number o) {
         return new Function<ParameterSetWrapper, Boolean>() {
           public Boolean apply(ParameterSetWrapper param) {
             Number it = (Number) param.parameters.get(0);
-            return AH.isGreater(it, (Number) new BigInteger("3"));
+            return AH.isGreater(it, new BigInteger("3"));
           }
         }.apply(new ParameterSetWrapper(o));
       }
@@ -3262,16 +3262,16 @@ public class Generated_collections_Test {
         return new Function<ParameterSetWrapper, Boolean>() {
           public Boolean apply(ParameterSetWrapper param) {
             Number it = (Number) param.parameters.get(0);
-            return AH.isGreater(it, (Number) new BigInteger("3"));
+            return AH.isGreater(it, new BigInteger("3"));
           }
         }.apply(new ParameterSetWrapper(o));
       }
-    }).findFirst().orElse(null) : (Number) new BigInteger("9")), EqualsTestOp.matches((Number) new BigInteger("4"), (org.iets3.core.expr.genjava.base.rt.rt.AH.isSome(Generated_collections_Test.set1_.stream().filter(new Predicate<Number>() {
+    }).findFirst().orElse(null) : (Number) new BigInteger("9")), EqualsTestOp.matches(new BigInteger("4"), (org.iets3.core.expr.genjava.base.rt.rt.AH.isSome(Generated_collections_Test.set1_.stream().filter(new Predicate<Number>() {
       public boolean test(Number o) {
         return new Function<ParameterSetWrapper, Boolean>() {
           public Boolean apply(ParameterSetWrapper param) {
             Number it = (Number) param.parameters.get(0);
-            return AH.isGreater(it, (Number) new BigInteger("3"));
+            return AH.isGreater(it, new BigInteger("3"));
           }
         }.apply(new ParameterSetWrapper(o));
       }
@@ -3280,7 +3280,7 @@ public class Generated_collections_Test {
         return new Function<ParameterSetWrapper, Boolean>() {
           public Boolean apply(ParameterSetWrapper param) {
             Number it = (Number) param.parameters.get(0);
-            return AH.isGreater(it, (Number) new BigInteger("3"));
+            return AH.isGreater(it, new BigInteger("3"));
           }
         }.apply(new ParameterSetWrapper(o));
       }
@@ -3288,12 +3288,12 @@ public class Generated_collections_Test {
   }
   @Test
   public void TestFindFirst_item31_3863896640930385951() throws Throwable {
-    Assert.assertTrue("Expected: " + (Number) new BigInteger("9") + ", but was: " + (org.iets3.core.expr.genjava.base.rt.rt.AH.isSome(Generated_collections_Test.set1_.stream().filter(new Predicate<Number>() {
+    Assert.assertTrue("Expected: " + new BigInteger("9") + ", but was: " + (org.iets3.core.expr.genjava.base.rt.rt.AH.isSome(Generated_collections_Test.set1_.stream().filter(new Predicate<Number>() {
       public boolean test(Number o) {
         return new Function<ParameterSetWrapper, Boolean>() {
           public Boolean apply(ParameterSetWrapper param) {
             Number it = (Number) param.parameters.get(0);
-            return AH.isGreater(it, (Number) new BigInteger("8"));
+            return AH.isGreater(it, new BigInteger("8"));
           }
         }.apply(new ParameterSetWrapper(o));
       }
@@ -3302,16 +3302,16 @@ public class Generated_collections_Test {
         return new Function<ParameterSetWrapper, Boolean>() {
           public Boolean apply(ParameterSetWrapper param) {
             Number it = (Number) param.parameters.get(0);
-            return AH.isGreater(it, (Number) new BigInteger("8"));
+            return AH.isGreater(it, new BigInteger("8"));
           }
         }.apply(new ParameterSetWrapper(o));
       }
-    }).findFirst().orElse(null) : (Number) new BigInteger("1")), EqualsTestOp.matches((Number) new BigInteger("9"), (org.iets3.core.expr.genjava.base.rt.rt.AH.isSome(Generated_collections_Test.set1_.stream().filter(new Predicate<Number>() {
+    }).findFirst().orElse(null) : (Number) new BigInteger("1")), EqualsTestOp.matches(new BigInteger("9"), (org.iets3.core.expr.genjava.base.rt.rt.AH.isSome(Generated_collections_Test.set1_.stream().filter(new Predicate<Number>() {
       public boolean test(Number o) {
         return new Function<ParameterSetWrapper, Boolean>() {
           public Boolean apply(ParameterSetWrapper param) {
             Number it = (Number) param.parameters.get(0);
-            return AH.isGreater(it, (Number) new BigInteger("8"));
+            return AH.isGreater(it, new BigInteger("8"));
           }
         }.apply(new ParameterSetWrapper(o));
       }
@@ -3320,7 +3320,7 @@ public class Generated_collections_Test {
         return new Function<ParameterSetWrapper, Boolean>() {
           public Boolean apply(ParameterSetWrapper param) {
             Number it = (Number) param.parameters.get(0);
-            return AH.isGreater(it, (Number) new BigInteger("8"));
+            return AH.isGreater(it, new BigInteger("8"));
           }
         }.apply(new ParameterSetWrapper(o));
       }
@@ -3328,12 +3328,12 @@ public class Generated_collections_Test {
   }
   @Test
   public void TestFindFirst_item32_3863896640930385966() throws Throwable {
-    Assert.assertTrue("Expected: " + (Number) new BigInteger("1") + ", but was: " + (org.iets3.core.expr.genjava.base.rt.rt.AH.isSome(Generated_collections_Test.set1_.stream().filter(new Predicate<Number>() {
+    Assert.assertTrue("Expected: " + new BigInteger("1") + ", but was: " + (org.iets3.core.expr.genjava.base.rt.rt.AH.isSome(Generated_collections_Test.set1_.stream().filter(new Predicate<Number>() {
       public boolean test(Number o) {
         return new Function<ParameterSetWrapper, Boolean>() {
           public Boolean apply(ParameterSetWrapper param) {
             Number it = (Number) param.parameters.get(0);
-            return AH.isGreater(it, (Number) new BigInteger("18"));
+            return AH.isGreater(it, new BigInteger("18"));
           }
         }.apply(new ParameterSetWrapper(o));
       }
@@ -3342,16 +3342,16 @@ public class Generated_collections_Test {
         return new Function<ParameterSetWrapper, Boolean>() {
           public Boolean apply(ParameterSetWrapper param) {
             Number it = (Number) param.parameters.get(0);
-            return AH.isGreater(it, (Number) new BigInteger("18"));
+            return AH.isGreater(it, new BigInteger("18"));
           }
         }.apply(new ParameterSetWrapper(o));
       }
-    }).findFirst().orElse(null) : (Number) new BigInteger("1")), EqualsTestOp.matches((Number) new BigInteger("1"), (org.iets3.core.expr.genjava.base.rt.rt.AH.isSome(Generated_collections_Test.set1_.stream().filter(new Predicate<Number>() {
+    }).findFirst().orElse(null) : (Number) new BigInteger("1")), EqualsTestOp.matches(new BigInteger("1"), (org.iets3.core.expr.genjava.base.rt.rt.AH.isSome(Generated_collections_Test.set1_.stream().filter(new Predicate<Number>() {
       public boolean test(Number o) {
         return new Function<ParameterSetWrapper, Boolean>() {
           public Boolean apply(ParameterSetWrapper param) {
             Number it = (Number) param.parameters.get(0);
-            return AH.isGreater(it, (Number) new BigInteger("18"));
+            return AH.isGreater(it, new BigInteger("18"));
           }
         }.apply(new ParameterSetWrapper(o));
       }
@@ -3360,7 +3360,7 @@ public class Generated_collections_Test {
         return new Function<ParameterSetWrapper, Boolean>() {
           public Boolean apply(ParameterSetWrapper param) {
             Number it = (Number) param.parameters.get(0);
-            return AH.isGreater(it, (Number) new BigInteger("18"));
+            return AH.isGreater(it, new BigInteger("18"));
           }
         }.apply(new ParameterSetWrapper(o));
       }
@@ -3368,94 +3368,94 @@ public class Generated_collections_Test {
   }
   @Test
   public void TestFindFirst_item33_3863896640930385981() throws Throwable {
-    Assert.assertTrue("Expected: " + (Number) new BigInteger("6") + ", but was: " + BigInteger.valueOf(TreePVector.<Number>from(Generated_collections_Test.set1_.stream().filter(new Predicate<Number>() {
+    Assert.assertTrue("Expected: " + new BigInteger("6") + ", but was: " + BigInteger.valueOf(TreePVector.<Number>from(Generated_collections_Test.set1_.stream().filter(new Predicate<Number>() {
       public boolean test(Number o) {
         return new Function<ParameterSetWrapper, Boolean>() {
           public Boolean apply(ParameterSetWrapper param) {
             Number it = (Number) param.parameters.get(0);
-            return AH.isGreater(it, (Number) new BigInteger("3"));
+            return AH.isGreater(it, new BigInteger("3"));
           }
         }.apply(new ParameterSetWrapper(o));
       }
-    }).collect(Collectors.<Number>toList())).size()), EqualsTestOp.matches((Number) new BigInteger("6"), BigInteger.valueOf(TreePVector.<Number>from(Generated_collections_Test.set1_.stream().filter(new Predicate<Number>() {
+    }).collect(Collectors.<Number>toList())).size()), EqualsTestOp.matches(new BigInteger("6"), BigInteger.valueOf(TreePVector.<Number>from(Generated_collections_Test.set1_.stream().filter(new Predicate<Number>() {
       public boolean test(Number o) {
         return new Function<ParameterSetWrapper, Boolean>() {
           public Boolean apply(ParameterSetWrapper param) {
             Number it = (Number) param.parameters.get(0);
-            return AH.isGreater(it, (Number) new BigInteger("3"));
+            return AH.isGreater(it, new BigInteger("3"));
           }
         }.apply(new ParameterSetWrapper(o));
       }
     }).collect(Collectors.<Number>toList())).size())));
   }
-  public static final PVector<Number> lllist1_ = TreePVector.<Number>empty().plus((Number) new BigInteger("1")).plus((Number) new BigInteger("2")).plus((Number) new BigInteger("3"));
+  public static final PVector<Number> lllist1_ = TreePVector.<Number>empty().plus(new BigInteger("1")).plus(new BigInteger("2")).plus(new BigInteger("3"));
   public static final PVector<Number> lllist2_ = TreePVector.<Number>from(new ArrayList<Number>());
   public static final PSet<Number> ssset1_ = HashTreePSet.from(Arrays.asList((Number) new BigInteger("1"), (Number) new BigInteger("2"), (Number) new BigInteger("3")));
   public static final PSet<Number> ssset1b_ = HashTreePSet.from(Arrays.asList((Number) new BigInteger("1"), (Number) new BigInteger("1"), (Number) new BigInteger("3")));
   public static final PSet<Number> ssset2_ = HashTreePSet.from(new HashSet<Number>());
   @Test
   public void WithAndInsert_item0_1054099405301525590() throws Throwable {
-    Assert.assertEquals("Expected: " + TreePVector.<Number>empty().plus((Number) new BigInteger("1")).plus((Number) new BigInteger("2")).plus((Number) new BigInteger("3")) + ", but was: " + TreePVector.<Number>from(Generated_collections_Test.ssset1_.stream().distinct().collect(Collectors.<Number>toList())), (Object) TreePVector.<Number>empty().plus((Number) new BigInteger("1")).plus((Number) new BigInteger("2")).plus((Number) new BigInteger("3")), (Object) TreePVector.<Number>from(Generated_collections_Test.ssset1_.stream().distinct().collect(Collectors.<Number>toList())));
+    Assert.assertEquals("Expected: " + TreePVector.<Number>empty().plus(new BigInteger("1")).plus(new BigInteger("2")).plus(new BigInteger("3")) + ", but was: " + TreePVector.<Number>from(Generated_collections_Test.ssset1_.stream().distinct().collect(Collectors.<Number>toList())), TreePVector.<Number>empty().plus(new BigInteger("1")).plus(new BigInteger("2")).plus(new BigInteger("3")), TreePVector.<Number>from(Generated_collections_Test.ssset1_.stream().distinct().collect(Collectors.<Number>toList())));
   }
   @Test
   public void WithAndInsert_item1_1054099405301645044() throws Throwable {
-    Assert.assertEquals("Expected: " + TreePVector.<Number>empty().plus((Number) new BigInteger("1")).plus((Number) new BigInteger("3")) + ", but was: " + TreePVector.<Number>from(Generated_collections_Test.ssset1b_.stream().distinct().collect(Collectors.<Number>toList())), (Object) TreePVector.<Number>empty().plus((Number) new BigInteger("1")).plus((Number) new BigInteger("3")), (Object) TreePVector.<Number>from(Generated_collections_Test.ssset1b_.stream().distinct().collect(Collectors.<Number>toList())));
+    Assert.assertEquals("Expected: " + TreePVector.<Number>empty().plus(new BigInteger("1")).plus(new BigInteger("3")) + ", but was: " + TreePVector.<Number>from(Generated_collections_Test.ssset1b_.stream().distinct().collect(Collectors.<Number>toList())), TreePVector.<Number>empty().plus(new BigInteger("1")).plus(new BigInteger("3")), TreePVector.<Number>from(Generated_collections_Test.ssset1b_.stream().distinct().collect(Collectors.<Number>toList())));
   }
   @Test
   public void WithAndInsert_item2_362871314063246487() throws Throwable {
-    Assert.assertEquals("Expected: " + TreePVector.<Number>empty().plus((Number) new BigInteger("1")).plus((Number) new BigInteger("3")) + ", but was: " + Generated_collections_Test.lllist1_.minus((Number) new BigInteger("2")), (Object) TreePVector.<Number>empty().plus((Number) new BigInteger("1")).plus((Number) new BigInteger("3")), (Object) Generated_collections_Test.lllist1_.minus((Number) new BigInteger("2")));
+    Assert.assertEquals("Expected: " + TreePVector.<Number>empty().plus(new BigInteger("1")).plus(new BigInteger("3")) + ", but was: " + Generated_collections_Test.lllist1_.minus((Number) new BigInteger("2")), TreePVector.<Number>empty().plus(new BigInteger("1")).plus(new BigInteger("3")), Generated_collections_Test.lllist1_.minus((Number) new BigInteger("2")));
   }
   @Test
   public void WithAndInsert_item3_1777352991476340545() throws Throwable {
-    Assert.assertEquals("Expected: " + TreePVector.<Number>empty().plus((Number) new BigInteger("2")).plus((Number) new BigInteger("3")) + ", but was: " + Generated_collections_Test.lllist1_.minus((Number) new BigInteger("1")), (Object) TreePVector.<Number>empty().plus((Number) new BigInteger("2")).plus((Number) new BigInteger("3")), (Object) Generated_collections_Test.lllist1_.minus((Number) new BigInteger("1")));
+    Assert.assertEquals("Expected: " + TreePVector.<Number>empty().plus(new BigInteger("2")).plus(new BigInteger("3")) + ", but was: " + Generated_collections_Test.lllist1_.minus((Number) new BigInteger("1")), TreePVector.<Number>empty().plus(new BigInteger("2")).plus(new BigInteger("3")), Generated_collections_Test.lllist1_.minus((Number) new BigInteger("1")));
   }
   @Test
   public void WithAndInsert_item4_1777352991476342807() throws Throwable {
-    Assert.assertEquals("Expected: " + TreePVector.<Number>empty().plus((Number) new BigInteger("1")).plus((Number) new BigInteger("2")) + ", but was: " + Generated_collections_Test.lllist1_.minus((Number) new BigInteger("3")), (Object) TreePVector.<Number>empty().plus((Number) new BigInteger("1")).plus((Number) new BigInteger("2")), (Object) Generated_collections_Test.lllist1_.minus((Number) new BigInteger("3")));
+    Assert.assertEquals("Expected: " + TreePVector.<Number>empty().plus(new BigInteger("1")).plus(new BigInteger("2")) + ", but was: " + Generated_collections_Test.lllist1_.minus((Number) new BigInteger("3")), TreePVector.<Number>empty().plus(new BigInteger("1")).plus(new BigInteger("2")), Generated_collections_Test.lllist1_.minus((Number) new BigInteger("3")));
   }
   @Test
   public void WithAndInsert_item5_1777352991476343669() throws Throwable {
-    Assert.assertEquals("Expected: " + TreePVector.<String>from(new ArrayList<String>()) + ", but was: " + TreePVector.<String>from(new ArrayList<String>()).minus("hello"), (Object) TreePVector.<String>from(new ArrayList<String>()), (Object) TreePVector.<String>from(new ArrayList<String>()).minus("hello"));
+    Assert.assertEquals("Expected: " + TreePVector.<String>from(new ArrayList<String>()) + ", but was: " + TreePVector.<String>from(new ArrayList<String>()).minus("hello"), TreePVector.<String>from(new ArrayList<String>()), TreePVector.<String>from(new ArrayList<String>()).minus("hello"));
   }
   @Test
   public void WithAndInsert_item6_1777352991476488554() throws Throwable {
-    Assert.assertEquals("Expected: " + TreePVector.<Number>empty().plus((Number) new BigInteger("0")).plus((Number) new BigInteger("1")).plus((Number) new BigInteger("2")).plus((Number) new BigInteger("3")) + ", but was: " + Generated_collections_Test.lllist1_.plus(((Number) new BigInteger("0")).intValue(), (Number) new BigInteger("0")), (Object) TreePVector.<Number>empty().plus((Number) new BigInteger("0")).plus((Number) new BigInteger("1")).plus((Number) new BigInteger("2")).plus((Number) new BigInteger("3")), (Object) Generated_collections_Test.lllist1_.plus(((Number) new BigInteger("0")).intValue(), (Number) new BigInteger("0")));
+    Assert.assertEquals("Expected: " + TreePVector.<Number>empty().plus(new BigInteger("0")).plus(new BigInteger("1")).plus(new BigInteger("2")).plus(new BigInteger("3")) + ", but was: " + Generated_collections_Test.lllist1_.plus(new BigInteger("0").intValue(), new BigInteger("0")), TreePVector.<Number>empty().plus(new BigInteger("0")).plus(new BigInteger("1")).plus(new BigInteger("2")).plus(new BigInteger("3")), Generated_collections_Test.lllist1_.plus(new BigInteger("0").intValue(), new BigInteger("0")));
   }
   @Test
   public void WithAndInsert_item7_1777352991476637997() throws Throwable {
-    Assert.assertEquals("Expected: " + TreePVector.<Number>empty().plus((Number) new BigInteger("1")).plus((Number) new BigInteger("2")).plus((Number) new BigInteger("5")).plus((Number) new BigInteger("3")) + ", but was: " + Generated_collections_Test.lllist1_.plus(((Number) new BigInteger("2")).intValue(), (Number) new BigInteger("5")), (Object) TreePVector.<Number>empty().plus((Number) new BigInteger("1")).plus((Number) new BigInteger("2")).plus((Number) new BigInteger("5")).plus((Number) new BigInteger("3")), (Object) Generated_collections_Test.lllist1_.plus(((Number) new BigInteger("2")).intValue(), (Number) new BigInteger("5")));
+    Assert.assertEquals("Expected: " + TreePVector.<Number>empty().plus(new BigInteger("1")).plus(new BigInteger("2")).plus(new BigInteger("5")).plus(new BigInteger("3")) + ", but was: " + Generated_collections_Test.lllist1_.plus(new BigInteger("2").intValue(), new BigInteger("5")), TreePVector.<Number>empty().plus(new BigInteger("1")).plus(new BigInteger("2")).plus(new BigInteger("5")).plus(new BigInteger("3")), Generated_collections_Test.lllist1_.plus(new BigInteger("2").intValue(), new BigInteger("5")));
   }
   @Test
   public void WithAndInsert_item8_2098022166927788904() throws Throwable {
-    Assert.assertEquals("Expected: " + TreePVector.<Number>empty().plus((Number) new BigInteger("42")).plus((Number) new BigInteger("1")) + ", but was: " + TreePVector.<Number>empty().plus((Number) new BigInteger("1")).plus(((Number) new BigInteger("0")).intValue(), (Number) new BigInteger("42")), (Object) TreePVector.<Number>empty().plus((Number) new BigInteger("42")).plus((Number) new BigInteger("1")), (Object) TreePVector.<Number>empty().plus((Number) new BigInteger("1")).plus(((Number) new BigInteger("0")).intValue(), (Number) new BigInteger("42")));
+    Assert.assertEquals("Expected: " + TreePVector.<Number>empty().plus(new BigInteger("42")).plus(new BigInteger("1")) + ", but was: " + TreePVector.<Number>empty().plus(new BigInteger("1")).plus(new BigInteger("0").intValue(), new BigInteger("42")), TreePVector.<Number>empty().plus(new BigInteger("42")).plus(new BigInteger("1")), TreePVector.<Number>empty().plus(new BigInteger("1")).plus(new BigInteger("0").intValue(), new BigInteger("42")));
   }
   @Test
   public void WithAll_item0_1777352991476102669() throws Throwable {
-    Assert.assertEquals("Expected: " + TreePVector.<Number>empty().plus((Number) new BigInteger("1")).plus((Number) new BigInteger("2")).plus((Number) new BigInteger("3")).plus((Number) new BigInteger("1")).plus((Number) new BigInteger("2")).plus((Number) new BigInteger("3")) + ", but was: " + Generated_collections_Test.lllist1_.plusAll(Generated_collections_Test.lllist1_), (Object) TreePVector.<Number>empty().plus((Number) new BigInteger("1")).plus((Number) new BigInteger("2")).plus((Number) new BigInteger("3")).plus((Number) new BigInteger("1")).plus((Number) new BigInteger("2")).plus((Number) new BigInteger("3")), (Object) Generated_collections_Test.lllist1_.plusAll(Generated_collections_Test.lllist1_));
+    Assert.assertEquals("Expected: " + TreePVector.<Number>empty().plus(new BigInteger("1")).plus(new BigInteger("2")).plus(new BigInteger("3")).plus(new BigInteger("1")).plus(new BigInteger("2")).plus(new BigInteger("3")) + ", but was: " + Generated_collections_Test.lllist1_.plusAll(Generated_collections_Test.lllist1_), TreePVector.<Number>empty().plus(new BigInteger("1")).plus(new BigInteger("2")).plus(new BigInteger("3")).plus(new BigInteger("1")).plus(new BigInteger("2")).plus(new BigInteger("3")), Generated_collections_Test.lllist1_.plusAll(Generated_collections_Test.lllist1_));
   }
   @Test
   public void WithAll_item1_1777352991476102682() throws Throwable {
-    Assert.assertEquals("Expected: " + TreePVector.<Number>empty().plus((Number) new BigInteger("1")).plus((Number) new BigInteger("2")).plus((Number) new BigInteger("3")) + ", but was: " + Generated_collections_Test.lllist1_.plusAll(Generated_collections_Test.lllist2_), (Object) TreePVector.<Number>empty().plus((Number) new BigInteger("1")).plus((Number) new BigInteger("2")).plus((Number) new BigInteger("3")), (Object) Generated_collections_Test.lllist1_.plusAll(Generated_collections_Test.lllist2_));
+    Assert.assertEquals("Expected: " + TreePVector.<Number>empty().plus(new BigInteger("1")).plus(new BigInteger("2")).plus(new BigInteger("3")) + ", but was: " + Generated_collections_Test.lllist1_.plusAll(Generated_collections_Test.lllist2_), TreePVector.<Number>empty().plus(new BigInteger("1")).plus(new BigInteger("2")).plus(new BigInteger("3")), Generated_collections_Test.lllist1_.plusAll(Generated_collections_Test.lllist2_));
   }
   @Test
   public void WithAll_item2_1777352991476102692() throws Throwable {
-    Assert.assertEquals("Expected: " + TreePVector.<Number>from(new ArrayList<Number>()) + ", but was: " + Generated_collections_Test.lllist2_.plusAll(Generated_collections_Test.lllist2_), (Object) TreePVector.<Number>from(new ArrayList<Number>()), (Object) Generated_collections_Test.lllist2_.plusAll(Generated_collections_Test.lllist2_));
+    Assert.assertEquals("Expected: " + TreePVector.<Number>from(new ArrayList<Number>()) + ", but was: " + Generated_collections_Test.lllist2_.plusAll(Generated_collections_Test.lllist2_), TreePVector.<Number>from(new ArrayList<Number>()), Generated_collections_Test.lllist2_.plusAll(Generated_collections_Test.lllist2_));
   }
   @Test
   public void WithAll_item3_1777352991476102701() throws Throwable {
-    Assert.assertEquals("Expected: " + TreePVector.<Number>empty().plus((Number) new BigInteger("1")).plus((Number) new BigInteger("2")).plus((Number) new BigInteger("3")) + ", but was: " + Generated_collections_Test.lllist2_.plusAll(Generated_collections_Test.lllist1_), (Object) TreePVector.<Number>empty().plus((Number) new BigInteger("1")).plus((Number) new BigInteger("2")).plus((Number) new BigInteger("3")), (Object) Generated_collections_Test.lllist2_.plusAll(Generated_collections_Test.lllist1_));
+    Assert.assertEquals("Expected: " + TreePVector.<Number>empty().plus(new BigInteger("1")).plus(new BigInteger("2")).plus(new BigInteger("3")) + ", but was: " + Generated_collections_Test.lllist2_.plusAll(Generated_collections_Test.lllist1_), TreePVector.<Number>empty().plus(new BigInteger("1")).plus(new BigInteger("2")).plus(new BigInteger("3")), Generated_collections_Test.lllist2_.plusAll(Generated_collections_Test.lllist1_));
   }
 
 
-  public static final PVector<Number> list5_ = TreePVector.<Number>empty().plus((Number) new BigInteger("1")).plus((Number) new BigInteger("2")).plus((Number) new BigInteger("3"));
-  public static final PVector<Number> list10_ = TreePVector.<Number>empty().plus((Number) new BigInteger("7")).plus((Number) new BigInteger("8")).plus((Number) new BigInteger("9"));
+  public static final PVector<Number> list5_ = TreePVector.<Number>empty().plus(new BigInteger("1")).plus(new BigInteger("2")).plus(new BigInteger("3"));
+  public static final PVector<Number> list10_ = TreePVector.<Number>empty().plus(new BigInteger("7")).plus(new BigInteger("8")).plus(new BigInteger("9"));
   @Test
   public void explicitSetTypes_item0_2850607030361625139() throws Throwable {
-    Assert.assertEquals("Expected: " + HashTreePSet.from(Arrays.asList((Number) new BigInteger("1"), (Number) new BigInteger("2"), (Number) new BigInteger("3"), (Number) new BigInteger("4"))) + ", but was: " + HashTreePSet.from(Arrays.asList((Number) new BigInteger("1"), (Number) new BigInteger("2"), (Number) new BigInteger("3"))).plus((Number) new BigInteger("4")), (Object) HashTreePSet.from(Arrays.asList((Number) new BigInteger("1"), (Number) new BigInteger("2"), (Number) new BigInteger("3"), (Number) new BigInteger("4"))), (Object) HashTreePSet.from(Arrays.asList((Number) new BigInteger("1"), (Number) new BigInteger("2"), (Number) new BigInteger("3"))).plus((Number) new BigInteger("4")));
+    Assert.assertEquals("Expected: " + HashTreePSet.from(Arrays.asList((Number) new BigInteger("1"), (Number) new BigInteger("2"), (Number) new BigInteger("3"), (Number) new BigInteger("4"))) + ", but was: " + HashTreePSet.from(Arrays.asList((Number) new BigInteger("1"), (Number) new BigInteger("2"), (Number) new BigInteger("3"))).plus(new BigInteger("4")), HashTreePSet.from(Arrays.asList((Number) new BigInteger("1"), (Number) new BigInteger("2"), (Number) new BigInteger("3"), (Number) new BigInteger("4"))), HashTreePSet.from(Arrays.asList((Number) new BigInteger("1"), (Number) new BigInteger("2"), (Number) new BigInteger("3"))).plus(new BigInteger("4")));
   }
   @Test
   public void explicitListTypes_item0_2850607030363218481() throws Throwable {
-    Assert.assertEquals("Expected: " + TreePVector.<Number>empty().plus((Number) new BigInteger("1")).plus((Number) new BigInteger("2")).plus((Number) new BigInteger("3")).plus((Number) new BigInteger("4")) + ", but was: " + TreePVector.<Number>empty().plus((Number) new BigInteger("1")).plus((Number) new BigInteger("2")).plus((Number) new BigInteger("3")).plus((Number) new BigInteger("4")), (Object) TreePVector.<Number>empty().plus((Number) new BigInteger("1")).plus((Number) new BigInteger("2")).plus((Number) new BigInteger("3")).plus((Number) new BigInteger("4")), (Object) TreePVector.<Number>empty().plus((Number) new BigInteger("1")).plus((Number) new BigInteger("2")).plus((Number) new BigInteger("3")).plus((Number) new BigInteger("4")));
+    Assert.assertEquals("Expected: " + TreePVector.<Number>empty().plus(new BigInteger("1")).plus(new BigInteger("2")).plus(new BigInteger("3")).plus(new BigInteger("4")) + ", but was: " + TreePVector.<Number>empty().plus(new BigInteger("1")).plus(new BigInteger("2")).plus(new BigInteger("3")).plus(new BigInteger("4")), TreePVector.<Number>empty().plus(new BigInteger("1")).plus(new BigInteger("2")).plus(new BigInteger("3")).plus(new BigInteger("4")), TreePVector.<Number>empty().plus(new BigInteger("1")).plus(new BigInteger("2")).plus(new BigInteger("3")).plus(new BigInteger("4")));
   }
   public static class AbrechnungMonat implements Comparable<AbrechnungMonat> {
     private Number b;
@@ -3527,16 +3527,16 @@ public class Generated_collections_Test {
       return 0;
     }
   }
-  public static final PVector<AbrechnungMonat> abrechungen_ = TreePVector.<AbrechnungMonat>empty().plus(new AbrechnungMonat((Number) new BigInteger("10"))).plus(new AbrechnungMonat((Number) new BigInteger("20"))).plus(new AbrechnungMonat((Number) new BigInteger("30")));
+  public static final PVector<AbrechnungMonat> abrechungen_ = TreePVector.<AbrechnungMonat>empty().plus(new AbrechnungMonat(new BigInteger("10"))).plus(new AbrechnungMonat(new BigInteger("20"))).plus(new AbrechnungMonat(new BigInteger("30")));
   @Test
   public void testMultiDot_item0_6705156381603513026() throws Throwable {
-    Assert.assertTrue("Expected: " + (Number) new BigInteger("60") + ", but was: " + CollectionHelper.sumAsBigInteger(((_FunctionTypes._return_P0_E0<TreePVector<Number>>) () -> {
+    Assert.assertTrue("Expected: " + new BigInteger("60") + ", but was: " + CollectionHelper.sumAsBigInteger(((_FunctionTypes._return_P0_E0<TreePVector<Number>>) () -> {
       List<Number> result = new ArrayList<Number>();
       for (AbrechnungMonat e : ListSequence.fromList(Generated_collections_Test.abrechungen_)) {
         result.add(e.getb());
       }
       return TreePVector.<Number>from(result);
-    }).invoke()), EqualsTestOp.matches((Number) new BigInteger("60"), CollectionHelper.sumAsBigInteger(((_FunctionTypes._return_P0_E0<TreePVector<Number>>) () -> {
+    }).invoke()), EqualsTestOp.matches(new BigInteger("60"), CollectionHelper.sumAsBigInteger(((_FunctionTypes._return_P0_E0<TreePVector<Number>>) () -> {
       List<Number> result = new ArrayList<Number>();
       for (AbrechnungMonat e : ListSequence.fromList(Generated_collections_Test.abrechungen_)) {
         result.add(e.getb());
@@ -3546,25 +3546,25 @@ public class Generated_collections_Test {
   }
   @Test
   public void TestCounterExpr_intList_3863896640951021184() throws Throwable {
-    Assert.assertEquals("Expected: " + TreePVector.<Number>empty().plus((Number) new BigInteger("1")).plus((Number) new BigInteger("2")).plus((Number) new BigInteger("3")) + ", but was: " + TreePVector.<Number>empty().plus((Number) new BigInteger("1")).plus((Number) new BigInteger("2")).plus((Number) new BigInteger("3")), (Object) TreePVector.<Number>empty().plus((Number) new BigInteger("1")).plus((Number) new BigInteger("2")).plus((Number) new BigInteger("3")), (Object) TreePVector.<Number>empty().plus((Number) new BigInteger("1")).plus((Number) new BigInteger("2")).plus((Number) new BigInteger("3")));
+    Assert.assertEquals("Expected: " + TreePVector.<Number>empty().plus(new BigInteger("1")).plus(new BigInteger("2")).plus(new BigInteger("3")) + ", but was: " + TreePVector.<Number>empty().plus(new BigInteger("1")).plus(new BigInteger("2")).plus(new BigInteger("3")), TreePVector.<Number>empty().plus(new BigInteger("1")).plus(new BigInteger("2")).plus(new BigInteger("3")), TreePVector.<Number>empty().plus(new BigInteger("1")).plus(new BigInteger("2")).plus(new BigInteger("3")));
   }
   @Test
   public void TestCounterExpr_res3_3863896640951021197() throws Throwable {
-    Assert.assertEquals("Expected: " + TreePVector.<Number>empty().plus((Number) new BigInteger("1")).plus((Number) new BigInteger("3")).plus((Number) new BigInteger("5")) + ", but was: " + TreePVector.<Number>from(TreePVector.<Number>empty().plus((Number) new BigInteger("1")).plus((Number) new BigInteger("2")).plus((Number) new BigInteger("3")).stream().map(new Function<Number, Number>() {
+    Assert.assertEquals("Expected: " + TreePVector.<Number>empty().plus(new BigInteger("1")).plus(new BigInteger("3")).plus(new BigInteger("5")) + ", but was: " + TreePVector.<Number>from(TreePVector.<Number>empty().plus(new BigInteger("1")).plus(new BigInteger("2")).plus(new BigInteger("3")).stream().map(new Function<Number, Number>() {
       public Number apply(Number param) {
         return new Function<ParameterSetWrapper, Number>() {
           public Number apply(ParameterSetWrapper param) {
             Number it = (Number) param.parameters.get(0);
-            return AH.add(it, BigInteger.valueOf(TreePVector.<Object>from(TreePVector.<Number>empty().plus((Number) new BigInteger("1")).plus((Number) new BigInteger("2")).plus((Number) new BigInteger("3"))).indexOf(it)));
+            return AH.add(it, BigInteger.valueOf(TreePVector.<Object>from(TreePVector.<Number>empty().plus(new BigInteger("1")).plus(new BigInteger("2")).plus(new BigInteger("3"))).indexOf(it)));
           }
         }.apply(new ParameterSetWrapper(param));
       }
-    }).collect(Collectors.<Number>toList())), (Object) TreePVector.<Number>empty().plus((Number) new BigInteger("1")).plus((Number) new BigInteger("3")).plus((Number) new BigInteger("5")), (Object) TreePVector.<Number>from(TreePVector.<Number>empty().plus((Number) new BigInteger("1")).plus((Number) new BigInteger("2")).plus((Number) new BigInteger("3")).stream().map(new Function<Number, Number>() {
+    }).collect(Collectors.<Number>toList())), TreePVector.<Number>empty().plus(new BigInteger("1")).plus(new BigInteger("3")).plus(new BigInteger("5")), TreePVector.<Number>from(TreePVector.<Number>empty().plus(new BigInteger("1")).plus(new BigInteger("2")).plus(new BigInteger("3")).stream().map(new Function<Number, Number>() {
       public Number apply(Number param) {
         return new Function<ParameterSetWrapper, Number>() {
           public Number apply(ParameterSetWrapper param) {
             Number it = (Number) param.parameters.get(0);
-            return AH.add(it, BigInteger.valueOf(TreePVector.<Object>from(TreePVector.<Number>empty().plus((Number) new BigInteger("1")).plus((Number) new BigInteger("2")).plus((Number) new BigInteger("3"))).indexOf(it)));
+            return AH.add(it, BigInteger.valueOf(TreePVector.<Object>from(TreePVector.<Number>empty().plus(new BigInteger("1")).plus(new BigInteger("2")).plus(new BigInteger("3"))).indexOf(it)));
           }
         }.apply(new ParameterSetWrapper(param));
       }
@@ -3572,21 +3572,21 @@ public class Generated_collections_Test {
   }
   @Test
   public void TestCounterExpr_res4_3863896640951021211() throws Throwable {
-    Assert.assertEquals("Expected: " + TreePVector.<Number>empty().plus((Number) new BigInteger("0")).plus((Number) new BigInteger("1")).plus((Number) new BigInteger("2")) + ", but was: " + TreePVector.<Number>from(TreePVector.<Number>empty().plus((Number) new BigInteger("1")).plus((Number) new BigInteger("2")).plus((Number) new BigInteger("3")).stream().map(new Function<Number, Number>() {
+    Assert.assertEquals("Expected: " + TreePVector.<Number>empty().plus(new BigInteger("0")).plus(new BigInteger("1")).plus(new BigInteger("2")) + ", but was: " + TreePVector.<Number>from(TreePVector.<Number>empty().plus(new BigInteger("1")).plus(new BigInteger("2")).plus(new BigInteger("3")).stream().map(new Function<Number, Number>() {
       public Number apply(Number param) {
         return new Function<ParameterSetWrapper, Number>() {
           public Number apply(ParameterSetWrapper param) {
             Number it = (Number) param.parameters.get(0);
-            return BigInteger.valueOf(TreePVector.<Object>from(TreePVector.<Number>empty().plus((Number) new BigInteger("1")).plus((Number) new BigInteger("2")).plus((Number) new BigInteger("3"))).indexOf(it));
+            return BigInteger.valueOf(TreePVector.<Object>from(TreePVector.<Number>empty().plus(new BigInteger("1")).plus(new BigInteger("2")).plus(new BigInteger("3"))).indexOf(it));
           }
         }.apply(new ParameterSetWrapper(param));
       }
-    }).collect(Collectors.<Number>toList())), (Object) TreePVector.<Number>empty().plus((Number) new BigInteger("0")).plus((Number) new BigInteger("1")).plus((Number) new BigInteger("2")), (Object) TreePVector.<Number>from(TreePVector.<Number>empty().plus((Number) new BigInteger("1")).plus((Number) new BigInteger("2")).plus((Number) new BigInteger("3")).stream().map(new Function<Number, Number>() {
+    }).collect(Collectors.<Number>toList())), TreePVector.<Number>empty().plus(new BigInteger("0")).plus(new BigInteger("1")).plus(new BigInteger("2")), TreePVector.<Number>from(TreePVector.<Number>empty().plus(new BigInteger("1")).plus(new BigInteger("2")).plus(new BigInteger("3")).stream().map(new Function<Number, Number>() {
       public Number apply(Number param) {
         return new Function<ParameterSetWrapper, Number>() {
           public Number apply(ParameterSetWrapper param) {
             Number it = (Number) param.parameters.get(0);
-            return BigInteger.valueOf(TreePVector.<Object>from(TreePVector.<Number>empty().plus((Number) new BigInteger("1")).plus((Number) new BigInteger("2")).plus((Number) new BigInteger("3"))).indexOf(it));
+            return BigInteger.valueOf(TreePVector.<Object>from(TreePVector.<Number>empty().plus(new BigInteger("1")).plus(new BigInteger("2")).plus(new BigInteger("3"))).indexOf(it));
           }
         }.apply(new ParameterSetWrapper(param));
       }
@@ -3594,21 +3594,21 @@ public class Generated_collections_Test {
   }
   @Test
   public void TestCounterExpr_item4_3863896640949757382() throws Throwable {
-    Assert.assertEquals("Expected: " + TreePVector.<Number>empty().plus((Number) new BigInteger("1")).plus((Number) new BigInteger("3")).plus((Number) new BigInteger("5")) + ", but was: " + TreePVector.<Number>from(TreePVector.<Number>empty().plus((Number) new BigInteger("1")).plus((Number) new BigInteger("2")).plus((Number) new BigInteger("3")).stream().map(new Function<Number, Number>() {
+    Assert.assertEquals("Expected: " + TreePVector.<Number>empty().plus(new BigInteger("1")).plus(new BigInteger("3")).plus(new BigInteger("5")) + ", but was: " + TreePVector.<Number>from(TreePVector.<Number>empty().plus(new BigInteger("1")).plus(new BigInteger("2")).plus(new BigInteger("3")).stream().map(new Function<Number, Number>() {
       public Number apply(Number param) {
         return new Function<ParameterSetWrapper, Number>() {
           public Number apply(ParameterSetWrapper param) {
             Number a = (Number) param.parameters.get(0);
-            return AH.add(a, BigInteger.valueOf(TreePVector.<Object>from(TreePVector.<Number>empty().plus((Number) new BigInteger("1")).plus((Number) new BigInteger("2")).plus((Number) new BigInteger("3"))).indexOf(a)));
+            return AH.add(a, BigInteger.valueOf(TreePVector.<Object>from(TreePVector.<Number>empty().plus(new BigInteger("1")).plus(new BigInteger("2")).plus(new BigInteger("3"))).indexOf(a)));
           }
         }.apply(new ParameterSetWrapper(param));
       }
-    }).collect(Collectors.<Number>toList())), (Object) TreePVector.<Number>empty().plus((Number) new BigInteger("1")).plus((Number) new BigInteger("3")).plus((Number) new BigInteger("5")), (Object) TreePVector.<Number>from(TreePVector.<Number>empty().plus((Number) new BigInteger("1")).plus((Number) new BigInteger("2")).plus((Number) new BigInteger("3")).stream().map(new Function<Number, Number>() {
+    }).collect(Collectors.<Number>toList())), TreePVector.<Number>empty().plus(new BigInteger("1")).plus(new BigInteger("3")).plus(new BigInteger("5")), TreePVector.<Number>from(TreePVector.<Number>empty().plus(new BigInteger("1")).plus(new BigInteger("2")).plus(new BigInteger("3")).stream().map(new Function<Number, Number>() {
       public Number apply(Number param) {
         return new Function<ParameterSetWrapper, Number>() {
           public Number apply(ParameterSetWrapper param) {
             Number a = (Number) param.parameters.get(0);
-            return AH.add(a, BigInteger.valueOf(TreePVector.<Object>from(TreePVector.<Number>empty().plus((Number) new BigInteger("1")).plus((Number) new BigInteger("2")).plus((Number) new BigInteger("3"))).indexOf(a)));
+            return AH.add(a, BigInteger.valueOf(TreePVector.<Object>from(TreePVector.<Number>empty().plus(new BigInteger("1")).plus(new BigInteger("2")).plus(new BigInteger("3"))).indexOf(a)));
           }
         }.apply(new ParameterSetWrapper(param));
       }
@@ -3616,21 +3616,21 @@ public class Generated_collections_Test {
   }
   @Test
   public void TestCounterExpr_item6_3863896640944346231() throws Throwable {
-    Assert.assertEquals("Expected: " + TreePVector.<Number>empty().plus((Number) new BigInteger("1")).plus((Number) new BigInteger("2")) + ", but was: " + TreePVector.<Number>from(TreePVector.<Number>empty().plus((Number) new BigInteger("1")).plus((Number) new BigInteger("2")).plus((Number) new BigInteger("3")).stream().filter(new Predicate<Number>() {
+    Assert.assertEquals("Expected: " + TreePVector.<Number>empty().plus(new BigInteger("1")).plus(new BigInteger("2")) + ", but was: " + TreePVector.<Number>from(TreePVector.<Number>empty().plus(new BigInteger("1")).plus(new BigInteger("2")).plus(new BigInteger("3")).stream().filter(new Predicate<Number>() {
       public boolean test(Number o) {
         return new Function<ParameterSetWrapper, Boolean>() {
           public Boolean apply(ParameterSetWrapper param) {
             Number it = (Number) param.parameters.get(0);
-            return AH.isLess(AH.add(it, BigInteger.valueOf(TreePVector.<Object>from(TreePVector.<Number>empty().plus((Number) new BigInteger("1")).plus((Number) new BigInteger("2")).plus((Number) new BigInteger("3"))).indexOf(it))), (Number) new BigInteger("5"));
+            return AH.isLess(AH.add(it, BigInteger.valueOf(TreePVector.<Object>from(TreePVector.<Number>empty().plus(new BigInteger("1")).plus(new BigInteger("2")).plus(new BigInteger("3"))).indexOf(it))), new BigInteger("5"));
           }
         }.apply(new ParameterSetWrapper(o));
       }
-    }).collect(Collectors.<Number>toList())), (Object) TreePVector.<Number>empty().plus((Number) new BigInteger("1")).plus((Number) new BigInteger("2")), (Object) TreePVector.<Number>from(TreePVector.<Number>empty().plus((Number) new BigInteger("1")).plus((Number) new BigInteger("2")).plus((Number) new BigInteger("3")).stream().filter(new Predicate<Number>() {
+    }).collect(Collectors.<Number>toList())), TreePVector.<Number>empty().plus(new BigInteger("1")).plus(new BigInteger("2")), TreePVector.<Number>from(TreePVector.<Number>empty().plus(new BigInteger("1")).plus(new BigInteger("2")).plus(new BigInteger("3")).stream().filter(new Predicate<Number>() {
       public boolean test(Number o) {
         return new Function<ParameterSetWrapper, Boolean>() {
           public Boolean apply(ParameterSetWrapper param) {
             Number it = (Number) param.parameters.get(0);
-            return AH.isLess(AH.add(it, BigInteger.valueOf(TreePVector.<Object>from(TreePVector.<Number>empty().plus((Number) new BigInteger("1")).plus((Number) new BigInteger("2")).plus((Number) new BigInteger("3"))).indexOf(it))), (Number) new BigInteger("5"));
+            return AH.isLess(AH.add(it, BigInteger.valueOf(TreePVector.<Object>from(TreePVector.<Number>empty().plus(new BigInteger("1")).plus(new BigInteger("2")).plus(new BigInteger("3"))).indexOf(it))), new BigInteger("5"));
           }
         }.apply(new ParameterSetWrapper(o));
       }
@@ -3638,21 +3638,21 @@ public class Generated_collections_Test {
   }
   @Test
   public void TestCounterExpr_item7_3863896640949739884() throws Throwable {
-    Assert.assertEquals("Expected: " + TreePVector.<Number>empty().plus((Number) new BigInteger("1")).plus((Number) new BigInteger("2")) + ", but was: " + TreePVector.<Number>from(TreePVector.<Number>empty().plus((Number) new BigInteger("1")).plus((Number) new BigInteger("2")).plus((Number) new BigInteger("3")).stream().filter(new Predicate<Number>() {
+    Assert.assertEquals("Expected: " + TreePVector.<Number>empty().plus(new BigInteger("1")).plus(new BigInteger("2")) + ", but was: " + TreePVector.<Number>from(TreePVector.<Number>empty().plus(new BigInteger("1")).plus(new BigInteger("2")).plus(new BigInteger("3")).stream().filter(new Predicate<Number>() {
       public boolean test(Number o) {
         return new Function<ParameterSetWrapper, Boolean>() {
           public Boolean apply(ParameterSetWrapper param) {
             Number a = (Number) param.parameters.get(0);
-            return AH.isLess(AH.add(a, BigInteger.valueOf(TreePVector.<Object>from(TreePVector.<Number>empty().plus((Number) new BigInteger("1")).plus((Number) new BigInteger("2")).plus((Number) new BigInteger("3"))).indexOf(a))), (Number) new BigInteger("5"));
+            return AH.isLess(AH.add(a, BigInteger.valueOf(TreePVector.<Object>from(TreePVector.<Number>empty().plus(new BigInteger("1")).plus(new BigInteger("2")).plus(new BigInteger("3"))).indexOf(a))), new BigInteger("5"));
           }
         }.apply(new ParameterSetWrapper(o));
       }
-    }).collect(Collectors.<Number>toList())), (Object) TreePVector.<Number>empty().plus((Number) new BigInteger("1")).plus((Number) new BigInteger("2")), (Object) TreePVector.<Number>from(TreePVector.<Number>empty().plus((Number) new BigInteger("1")).plus((Number) new BigInteger("2")).plus((Number) new BigInteger("3")).stream().filter(new Predicate<Number>() {
+    }).collect(Collectors.<Number>toList())), TreePVector.<Number>empty().plus(new BigInteger("1")).plus(new BigInteger("2")), TreePVector.<Number>from(TreePVector.<Number>empty().plus(new BigInteger("1")).plus(new BigInteger("2")).plus(new BigInteger("3")).stream().filter(new Predicate<Number>() {
       public boolean test(Number o) {
         return new Function<ParameterSetWrapper, Boolean>() {
           public Boolean apply(ParameterSetWrapper param) {
             Number a = (Number) param.parameters.get(0);
-            return AH.isLess(AH.add(a, BigInteger.valueOf(TreePVector.<Object>from(TreePVector.<Number>empty().plus((Number) new BigInteger("1")).plus((Number) new BigInteger("2")).plus((Number) new BigInteger("3"))).indexOf(a))), (Number) new BigInteger("5"));
+            return AH.isLess(AH.add(a, BigInteger.valueOf(TreePVector.<Object>from(TreePVector.<Number>empty().plus(new BigInteger("1")).plus(new BigInteger("2")).plus(new BigInteger("3"))).indexOf(a))), new BigInteger("5"));
           }
         }.apply(new ParameterSetWrapper(o));
       }
@@ -3660,27 +3660,27 @@ public class Generated_collections_Test {
   }
   @Test
   public void TestCounterExpr_item9_3863896640949774707() throws Throwable {
-    Assert.assertTrue("Expected: " + (Number) new BigInteger("8") + ", but was: " + (((_FunctionTypes._return_P0_E0<Number>) () -> {
-      Number seed = (Number) new BigInteger("5");
-      for (Number current : ListSequence.fromList(TreePVector.<Number>empty().plus((Number) new BigInteger("1")).plus((Number) new BigInteger("2")).plus((Number) new BigInteger("3")))) {
-        seed = AH.add(seed, BigInteger.valueOf(TreePVector.<Object>from(TreePVector.<Number>empty().plus((Number) new BigInteger("1")).plus((Number) new BigInteger("2")).plus((Number) new BigInteger("3"))).indexOf(current)));
+    Assert.assertTrue("Expected: " + new BigInteger("8") + ", but was: " + (((_FunctionTypes._return_P0_E0<Number>) () -> {
+      Number seed = new BigInteger("5");
+      for (Number current : ListSequence.fromList(TreePVector.<Number>empty().plus(new BigInteger("1")).plus(new BigInteger("2")).plus(new BigInteger("3")))) {
+        seed = AH.add(seed, BigInteger.valueOf(TreePVector.<Object>from(TreePVector.<Number>empty().plus(new BigInteger("1")).plus(new BigInteger("2")).plus(new BigInteger("3"))).indexOf(current)));
       }
       return seed;
-    }).invoke()), EqualsTestOp.matches((Number) new BigInteger("8"), ((_FunctionTypes._return_P0_E0<Number>) () -> {
-      Number seed = (Number) new BigInteger("5");
-      for (Number current : ListSequence.fromList(TreePVector.<Number>empty().plus((Number) new BigInteger("1")).plus((Number) new BigInteger("2")).plus((Number) new BigInteger("3")))) {
-        seed = AH.add(seed, BigInteger.valueOf(TreePVector.<Object>from(TreePVector.<Number>empty().plus((Number) new BigInteger("1")).plus((Number) new BigInteger("2")).plus((Number) new BigInteger("3"))).indexOf(current)));
+    }).invoke()), EqualsTestOp.matches(new BigInteger("8"), ((_FunctionTypes._return_P0_E0<Number>) () -> {
+      Number seed = new BigInteger("5");
+      for (Number current : ListSequence.fromList(TreePVector.<Number>empty().plus(new BigInteger("1")).plus(new BigInteger("2")).plus(new BigInteger("3")))) {
+        seed = AH.add(seed, BigInteger.valueOf(TreePVector.<Object>from(TreePVector.<Number>empty().plus(new BigInteger("1")).plus(new BigInteger("2")).plus(new BigInteger("3"))).indexOf(current)));
       }
       return seed;
     }).invoke()));
   }
   public static Boolean collectionListLiteralFoo1(Number x) {
-    Boolean res = AH.isLess(x, (Number) new BigInteger("11"));
+    Boolean res = AH.isLess(x, new BigInteger("11"));
 
     return res;
   }
   public static Number collectionListLiteralFoo2(Number x) {
-    Number res = AH.add(x, (Number) new BigInteger("1"));
+    Number res = AH.add(x, new BigInteger("1"));
 
     return res;
   }
@@ -3788,21 +3788,21 @@ public class Generated_collections_Test {
    */
     @Test
   public void collectionListLiteral_item0_9070044578385612030() throws Throwable {
-    Assert.assertEquals("Expected: " + false + ", but was: " + TreePVector.<Number>empty().plus((Number) new BigInteger("1")).plus((Number) new BigInteger("2")).plus((Number) new BigInteger("3")).plus((Number) new BigInteger("4")).plus((Number) new BigInteger("5")).plus((Number) new BigInteger("6")).plus((Number) new BigInteger("7")).plus((Number) new BigInteger("8")).plus((Number) new BigInteger("9")).plus((Number) new BigInteger("10")).stream().allMatch(new Predicate<Number>() {
+    Assert.assertEquals("Expected: " + false + ", but was: " + TreePVector.<Number>empty().plus(new BigInteger("1")).plus(new BigInteger("2")).plus(new BigInteger("3")).plus(new BigInteger("4")).plus(new BigInteger("5")).plus(new BigInteger("6")).plus(new BigInteger("7")).plus(new BigInteger("8")).plus(new BigInteger("9")).plus(new BigInteger("10")).stream().allMatch(new Predicate<Number>() {
       public boolean test(Number o) {
         return new Function<ParameterSetWrapper, Boolean>() {
           public Boolean apply(ParameterSetWrapper param) {
             Number it = (Number) param.parameters.get(0);
-            return AH.isLess(it, (Number) new BigInteger("3"));
+            return AH.isLess(it, new BigInteger("3"));
           }
         }.apply(new ParameterSetWrapper(o));
       }
-    }), (Object) false, (Object) TreePVector.<Number>empty().plus((Number) new BigInteger("1")).plus((Number) new BigInteger("2")).plus((Number) new BigInteger("3")).plus((Number) new BigInteger("4")).plus((Number) new BigInteger("5")).plus((Number) new BigInteger("6")).plus((Number) new BigInteger("7")).plus((Number) new BigInteger("8")).plus((Number) new BigInteger("9")).plus((Number) new BigInteger("10")).stream().allMatch(new Predicate<Number>() {
+    }), (Object) false, (Object) TreePVector.<Number>empty().plus(new BigInteger("1")).plus(new BigInteger("2")).plus(new BigInteger("3")).plus(new BigInteger("4")).plus(new BigInteger("5")).plus(new BigInteger("6")).plus(new BigInteger("7")).plus(new BigInteger("8")).plus(new BigInteger("9")).plus(new BigInteger("10")).stream().allMatch(new Predicate<Number>() {
       public boolean test(Number o) {
         return new Function<ParameterSetWrapper, Boolean>() {
           public Boolean apply(ParameterSetWrapper param) {
             Number it = (Number) param.parameters.get(0);
-            return AH.isLess(it, (Number) new BigInteger("3"));
+            return AH.isLess(it, new BigInteger("3"));
           }
         }.apply(new ParameterSetWrapper(o));
       }
@@ -3813,21 +3813,21 @@ public class Generated_collections_Test {
    */
     @Test
   public void collectionListLiteral_item1_9070044578385612050() throws Throwable {
-    Assert.assertEquals("Expected: " + true + ", but was: " + TreePVector.<Number>empty().plus((Number) new BigInteger("1")).plus((Number) new BigInteger("2")).plus((Number) new BigInteger("3")).plus((Number) new BigInteger("4")).plus((Number) new BigInteger("5")).plus((Number) new BigInteger("6")).plus((Number) new BigInteger("7")).plus((Number) new BigInteger("8")).plus((Number) new BigInteger("9")).plus((Number) new BigInteger("10")).stream().allMatch(new Predicate<Number>() {
+    Assert.assertEquals("Expected: " + true + ", but was: " + TreePVector.<Number>empty().plus(new BigInteger("1")).plus(new BigInteger("2")).plus(new BigInteger("3")).plus(new BigInteger("4")).plus(new BigInteger("5")).plus(new BigInteger("6")).plus(new BigInteger("7")).plus(new BigInteger("8")).plus(new BigInteger("9")).plus(new BigInteger("10")).stream().allMatch(new Predicate<Number>() {
       public boolean test(Number o) {
         return new Function<ParameterSetWrapper, Boolean>() {
           public Boolean apply(ParameterSetWrapper param) {
             Number a = (Number) param.parameters.get(0);
-            return AH.isLess(a, (Number) new BigInteger("11"));
+            return AH.isLess(a, new BigInteger("11"));
           }
         }.apply(new ParameterSetWrapper(o));
       }
-    }), (Object) true, (Object) TreePVector.<Number>empty().plus((Number) new BigInteger("1")).plus((Number) new BigInteger("2")).plus((Number) new BigInteger("3")).plus((Number) new BigInteger("4")).plus((Number) new BigInteger("5")).plus((Number) new BigInteger("6")).plus((Number) new BigInteger("7")).plus((Number) new BigInteger("8")).plus((Number) new BigInteger("9")).plus((Number) new BigInteger("10")).stream().allMatch(new Predicate<Number>() {
+    }), (Object) true, (Object) TreePVector.<Number>empty().plus(new BigInteger("1")).plus(new BigInteger("2")).plus(new BigInteger("3")).plus(new BigInteger("4")).plus(new BigInteger("5")).plus(new BigInteger("6")).plus(new BigInteger("7")).plus(new BigInteger("8")).plus(new BigInteger("9")).plus(new BigInteger("10")).stream().allMatch(new Predicate<Number>() {
       public boolean test(Number o) {
         return new Function<ParameterSetWrapper, Boolean>() {
           public Boolean apply(ParameterSetWrapper param) {
             Number a = (Number) param.parameters.get(0);
-            return AH.isLess(a, (Number) new BigInteger("11"));
+            return AH.isLess(a, new BigInteger("11"));
           }
         }.apply(new ParameterSetWrapper(o));
       }
@@ -3838,7 +3838,7 @@ public class Generated_collections_Test {
    */
     @Test
   public void collectionListLiteral_item2_9070044578385612073() throws Throwable {
-    Assert.assertEquals("Expected: " + true + ", but was: " + TreePVector.<Number>empty().plus((Number) new BigInteger("1")).plus((Number) new BigInteger("2")).plus((Number) new BigInteger("3")).plus((Number) new BigInteger("4")).plus((Number) new BigInteger("5")).plus((Number) new BigInteger("6")).plus((Number) new BigInteger("7")).plus((Number) new BigInteger("8")).plus((Number) new BigInteger("9")).plus((Number) new BigInteger("10")).stream().allMatch(new Predicate<Number>() {
+    Assert.assertEquals("Expected: " + true + ", but was: " + TreePVector.<Number>empty().plus(new BigInteger("1")).plus(new BigInteger("2")).plus(new BigInteger("3")).plus(new BigInteger("4")).plus(new BigInteger("5")).plus(new BigInteger("6")).plus(new BigInteger("7")).plus(new BigInteger("8")).plus(new BigInteger("9")).plus(new BigInteger("10")).stream().allMatch(new Predicate<Number>() {
       public boolean test(Number o) {
         return new Function<ParameterSetWrapper, Boolean>() {
           public Boolean apply(ParameterSetWrapper param) {
@@ -3846,7 +3846,7 @@ public class Generated_collections_Test {
           }
         }.apply(new ParameterSetWrapper(o));
       }
-    }), (Object) true, (Object) TreePVector.<Number>empty().plus((Number) new BigInteger("1")).plus((Number) new BigInteger("2")).plus((Number) new BigInteger("3")).plus((Number) new BigInteger("4")).plus((Number) new BigInteger("5")).plus((Number) new BigInteger("6")).plus((Number) new BigInteger("7")).plus((Number) new BigInteger("8")).plus((Number) new BigInteger("9")).plus((Number) new BigInteger("10")).stream().allMatch(new Predicate<Number>() {
+    }), (Object) true, (Object) TreePVector.<Number>empty().plus(new BigInteger("1")).plus(new BigInteger("2")).plus(new BigInteger("3")).plus(new BigInteger("4")).plus(new BigInteger("5")).plus(new BigInteger("6")).plus(new BigInteger("7")).plus(new BigInteger("8")).plus(new BigInteger("9")).plus(new BigInteger("10")).stream().allMatch(new Predicate<Number>() {
       public boolean test(Number o) {
         return new Function<ParameterSetWrapper, Boolean>() {
           public Boolean apply(ParameterSetWrapper param) {
@@ -3861,21 +3861,21 @@ public class Generated_collections_Test {
    */
     @Test
   public void collectionListLiteral_item3_9070044578385612090() throws Throwable {
-    Assert.assertEquals("Expected: " + true + ", but was: " + TreePVector.<Number>empty().plus((Number) new BigInteger("1")).plus((Number) new BigInteger("2")).plus((Number) new BigInteger("3")).plus((Number) new BigInteger("4")).plus((Number) new BigInteger("5")).plus((Number) new BigInteger("6")).plus((Number) new BigInteger("7")).plus((Number) new BigInteger("8")).plus((Number) new BigInteger("9")).plus((Number) new BigInteger("10")).stream().anyMatch(new Predicate<Number>() {
+    Assert.assertEquals("Expected: " + true + ", but was: " + TreePVector.<Number>empty().plus(new BigInteger("1")).plus(new BigInteger("2")).plus(new BigInteger("3")).plus(new BigInteger("4")).plus(new BigInteger("5")).plus(new BigInteger("6")).plus(new BigInteger("7")).plus(new BigInteger("8")).plus(new BigInteger("9")).plus(new BigInteger("10")).stream().anyMatch(new Predicate<Number>() {
       public boolean test(Number o) {
         return new Function<ParameterSetWrapper, Boolean>() {
           public Boolean apply(ParameterSetWrapper param) {
             Number it = (Number) param.parameters.get(0);
-            return AH.isLess(it, (Number) new BigInteger("3"));
+            return AH.isLess(it, new BigInteger("3"));
           }
         }.apply(new ParameterSetWrapper(o));
       }
-    }), (Object) true, (Object) TreePVector.<Number>empty().plus((Number) new BigInteger("1")).plus((Number) new BigInteger("2")).plus((Number) new BigInteger("3")).plus((Number) new BigInteger("4")).plus((Number) new BigInteger("5")).plus((Number) new BigInteger("6")).plus((Number) new BigInteger("7")).plus((Number) new BigInteger("8")).plus((Number) new BigInteger("9")).plus((Number) new BigInteger("10")).stream().anyMatch(new Predicate<Number>() {
+    }), (Object) true, (Object) TreePVector.<Number>empty().plus(new BigInteger("1")).plus(new BigInteger("2")).plus(new BigInteger("3")).plus(new BigInteger("4")).plus(new BigInteger("5")).plus(new BigInteger("6")).plus(new BigInteger("7")).plus(new BigInteger("8")).plus(new BigInteger("9")).plus(new BigInteger("10")).stream().anyMatch(new Predicate<Number>() {
       public boolean test(Number o) {
         return new Function<ParameterSetWrapper, Boolean>() {
           public Boolean apply(ParameterSetWrapper param) {
             Number it = (Number) param.parameters.get(0);
-            return AH.isLess(it, (Number) new BigInteger("3"));
+            return AH.isLess(it, new BigInteger("3"));
           }
         }.apply(new ParameterSetWrapper(o));
       }
@@ -3886,21 +3886,21 @@ public class Generated_collections_Test {
    */
     @Test
   public void collectionListLiteral_item4_9070044578385612110() throws Throwable {
-    Assert.assertEquals("Expected: " + false + ", but was: " + TreePVector.<Number>empty().plus((Number) new BigInteger("1")).plus((Number) new BigInteger("2")).plus((Number) new BigInteger("3")).plus((Number) new BigInteger("4")).plus((Number) new BigInteger("5")).plus((Number) new BigInteger("6")).plus((Number) new BigInteger("7")).plus((Number) new BigInteger("8")).plus((Number) new BigInteger("9")).plus((Number) new BigInteger("10")).stream().anyMatch(new Predicate<Number>() {
+    Assert.assertEquals("Expected: " + false + ", but was: " + TreePVector.<Number>empty().plus(new BigInteger("1")).plus(new BigInteger("2")).plus(new BigInteger("3")).plus(new BigInteger("4")).plus(new BigInteger("5")).plus(new BigInteger("6")).plus(new BigInteger("7")).plus(new BigInteger("8")).plus(new BigInteger("9")).plus(new BigInteger("10")).stream().anyMatch(new Predicate<Number>() {
       public boolean test(Number o) {
         return new Function<ParameterSetWrapper, Boolean>() {
           public Boolean apply(ParameterSetWrapper param) {
             Number a = (Number) param.parameters.get(0);
-            return AH.isGreater(a, (Number) new BigInteger("11"));
+            return AH.isGreater(a, new BigInteger("11"));
           }
         }.apply(new ParameterSetWrapper(o));
       }
-    }), (Object) false, (Object) TreePVector.<Number>empty().plus((Number) new BigInteger("1")).plus((Number) new BigInteger("2")).plus((Number) new BigInteger("3")).plus((Number) new BigInteger("4")).plus((Number) new BigInteger("5")).plus((Number) new BigInteger("6")).plus((Number) new BigInteger("7")).plus((Number) new BigInteger("8")).plus((Number) new BigInteger("9")).plus((Number) new BigInteger("10")).stream().anyMatch(new Predicate<Number>() {
+    }), (Object) false, (Object) TreePVector.<Number>empty().plus(new BigInteger("1")).plus(new BigInteger("2")).plus(new BigInteger("3")).plus(new BigInteger("4")).plus(new BigInteger("5")).plus(new BigInteger("6")).plus(new BigInteger("7")).plus(new BigInteger("8")).plus(new BigInteger("9")).plus(new BigInteger("10")).stream().anyMatch(new Predicate<Number>() {
       public boolean test(Number o) {
         return new Function<ParameterSetWrapper, Boolean>() {
           public Boolean apply(ParameterSetWrapper param) {
             Number a = (Number) param.parameters.get(0);
-            return AH.isGreater(a, (Number) new BigInteger("11"));
+            return AH.isGreater(a, new BigInteger("11"));
           }
         }.apply(new ParameterSetWrapper(o));
       }
@@ -3911,7 +3911,7 @@ public class Generated_collections_Test {
    */
     @Test
   public void collectionListLiteral_item5_9070044578385612133() throws Throwable {
-    Assert.assertEquals("Expected: " + true + ", but was: " + TreePVector.<Number>empty().plus((Number) new BigInteger("1")).plus((Number) new BigInteger("2")).plus((Number) new BigInteger("3")).plus((Number) new BigInteger("4")).plus((Number) new BigInteger("5")).plus((Number) new BigInteger("6")).plus((Number) new BigInteger("7")).plus((Number) new BigInteger("8")).plus((Number) new BigInteger("9")).plus((Number) new BigInteger("10")).stream().anyMatch(new Predicate<Number>() {
+    Assert.assertEquals("Expected: " + true + ", but was: " + TreePVector.<Number>empty().plus(new BigInteger("1")).plus(new BigInteger("2")).plus(new BigInteger("3")).plus(new BigInteger("4")).plus(new BigInteger("5")).plus(new BigInteger("6")).plus(new BigInteger("7")).plus(new BigInteger("8")).plus(new BigInteger("9")).plus(new BigInteger("10")).stream().anyMatch(new Predicate<Number>() {
       public boolean test(Number o) {
         return new Function<ParameterSetWrapper, Boolean>() {
           public Boolean apply(ParameterSetWrapper param) {
@@ -3919,7 +3919,7 @@ public class Generated_collections_Test {
           }
         }.apply(new ParameterSetWrapper(o));
       }
-    }), (Object) true, (Object) TreePVector.<Number>empty().plus((Number) new BigInteger("1")).plus((Number) new BigInteger("2")).plus((Number) new BigInteger("3")).plus((Number) new BigInteger("4")).plus((Number) new BigInteger("5")).plus((Number) new BigInteger("6")).plus((Number) new BigInteger("7")).plus((Number) new BigInteger("8")).plus((Number) new BigInteger("9")).plus((Number) new BigInteger("10")).stream().anyMatch(new Predicate<Number>() {
+    }), (Object) true, (Object) TreePVector.<Number>empty().plus(new BigInteger("1")).plus(new BigInteger("2")).plus(new BigInteger("3")).plus(new BigInteger("4")).plus(new BigInteger("5")).plus(new BigInteger("6")).plus(new BigInteger("7")).plus(new BigInteger("8")).plus(new BigInteger("9")).plus(new BigInteger("10")).stream().anyMatch(new Predicate<Number>() {
       public boolean test(Number o) {
         return new Function<ParameterSetWrapper, Boolean>() {
           public Boolean apply(ParameterSetWrapper param) {
@@ -3934,42 +3934,42 @@ public class Generated_collections_Test {
    */
     @Test
   public void collectionListLiteral_item6_9070044578385612150() throws Throwable {
-    Assert.assertTrue("Expected: " + (Number) new BigInteger("6") + ", but was: " + (Number) TreePVector.<Number>empty().plus((Number) new BigInteger("1")).plus((Number) new BigInteger("2")).plus((Number) new BigInteger("3")).plus((Number) new BigInteger("4")).plus((Number) new BigInteger("5")).plus((Number) new BigInteger("6")).plus((Number) new BigInteger("7")).plus((Number) new BigInteger("8")).plus((Number) new BigInteger("9")).plus((Number) new BigInteger("10")).get(((Number) new BigInteger("5")).intValue()), EqualsTestOp.matches((Number) new BigInteger("6"), (Number) TreePVector.<Number>empty().plus((Number) new BigInteger("1")).plus((Number) new BigInteger("2")).plus((Number) new BigInteger("3")).plus((Number) new BigInteger("4")).plus((Number) new BigInteger("5")).plus((Number) new BigInteger("6")).plus((Number) new BigInteger("7")).plus((Number) new BigInteger("8")).plus((Number) new BigInteger("9")).plus((Number) new BigInteger("10")).get(((Number) new BigInteger("5")).intValue())));
+    Assert.assertTrue("Expected: " + new BigInteger("6") + ", but was: " + TreePVector.<Number>empty().plus(new BigInteger("1")).plus(new BigInteger("2")).plus(new BigInteger("3")).plus(new BigInteger("4")).plus(new BigInteger("5")).plus(new BigInteger("6")).plus(new BigInteger("7")).plus(new BigInteger("8")).plus(new BigInteger("9")).plus(new BigInteger("10")).get(new BigInteger("5").intValue()), EqualsTestOp.matches(new BigInteger("6"), TreePVector.<Number>empty().plus(new BigInteger("1")).plus(new BigInteger("2")).plus(new BigInteger("3")).plus(new BigInteger("4")).plus(new BigInteger("5")).plus(new BigInteger("6")).plus(new BigInteger("7")).plus(new BigInteger("8")).plus(new BigInteger("9")).plus(new BigInteger("10")).get(new BigInteger("5").intValue())));
   }
 /* 
    * foreach is still missing, as well as insert and remove
    */
     @Test
   public void collectionListLiteral_item7_9070044578385612167() throws Throwable {
-    Assert.assertEquals("Expected: " + true + ", but was: " + TreePVector.<Number>empty().plus((Number) new BigInteger("1")).plus((Number) new BigInteger("2")).plus((Number) new BigInteger("3")).plus((Number) new BigInteger("4")).plus((Number) new BigInteger("5")).plus((Number) new BigInteger("6")).plus((Number) new BigInteger("7")).plus((Number) new BigInteger("8")).plus((Number) new BigInteger("9")).plus((Number) new BigInteger("10")).contains((Number) new BigInteger("6")), (Object) true, (Object) TreePVector.<Number>empty().plus((Number) new BigInteger("1")).plus((Number) new BigInteger("2")).plus((Number) new BigInteger("3")).plus((Number) new BigInteger("4")).plus((Number) new BigInteger("5")).plus((Number) new BigInteger("6")).plus((Number) new BigInteger("7")).plus((Number) new BigInteger("8")).plus((Number) new BigInteger("9")).plus((Number) new BigInteger("10")).contains((Number) new BigInteger("6")));
+    Assert.assertEquals("Expected: " + true + ", but was: " + TreePVector.<Number>empty().plus(new BigInteger("1")).plus(new BigInteger("2")).plus(new BigInteger("3")).plus(new BigInteger("4")).plus(new BigInteger("5")).plus(new BigInteger("6")).plus(new BigInteger("7")).plus(new BigInteger("8")).plus(new BigInteger("9")).plus(new BigInteger("10")).contains(new BigInteger("6")), (Object) true, (Object) TreePVector.<Number>empty().plus(new BigInteger("1")).plus(new BigInteger("2")).plus(new BigInteger("3")).plus(new BigInteger("4")).plus(new BigInteger("5")).plus(new BigInteger("6")).plus(new BigInteger("7")).plus(new BigInteger("8")).plus(new BigInteger("9")).plus(new BigInteger("10")).contains(new BigInteger("6")));
   }
 /* 
    * foreach is still missing, as well as insert and remove
    */
     @Test
   public void collectionListLiteral_item8_9070044578385612184() throws Throwable {
-    Assert.assertEquals("Expected: " + TreePVector.<Number>empty().plus((Number) new BigInteger("1")).plus((Number) new BigInteger("2")).plus((Number) new BigInteger("3")).plus((Number) new BigInteger("4")).plus((Number) new BigInteger("5")).plus((Number) new BigInteger("6")).plus((Number) new BigInteger("7")).plus((Number) new BigInteger("8")).plus((Number) new BigInteger("9")).plus((Number) new BigInteger("10")) + ", but was: " + TreePVector.<Number>from(TreePVector.<Number>empty().plus((Number) new BigInteger("1")).plus((Number) new BigInteger("2")).plus((Number) new BigInteger("3")).plus((Number) new BigInteger("4")).plus((Number) new BigInteger("5")).plus((Number) new BigInteger("6")).plus((Number) new BigInteger("7")).plus((Number) new BigInteger("8")).plus((Number) new BigInteger("9")).plus((Number) new BigInteger("10")).stream().distinct().collect(Collectors.<Number>toList())), (Object) TreePVector.<Number>empty().plus((Number) new BigInteger("1")).plus((Number) new BigInteger("2")).plus((Number) new BigInteger("3")).plus((Number) new BigInteger("4")).plus((Number) new BigInteger("5")).plus((Number) new BigInteger("6")).plus((Number) new BigInteger("7")).plus((Number) new BigInteger("8")).plus((Number) new BigInteger("9")).plus((Number) new BigInteger("10")), (Object) TreePVector.<Number>from(TreePVector.<Number>empty().plus((Number) new BigInteger("1")).plus((Number) new BigInteger("2")).plus((Number) new BigInteger("3")).plus((Number) new BigInteger("4")).plus((Number) new BigInteger("5")).plus((Number) new BigInteger("6")).plus((Number) new BigInteger("7")).plus((Number) new BigInteger("8")).plus((Number) new BigInteger("9")).plus((Number) new BigInteger("10")).stream().distinct().collect(Collectors.<Number>toList())));
+    Assert.assertEquals("Expected: " + TreePVector.<Number>empty().plus(new BigInteger("1")).plus(new BigInteger("2")).plus(new BigInteger("3")).plus(new BigInteger("4")).plus(new BigInteger("5")).plus(new BigInteger("6")).plus(new BigInteger("7")).plus(new BigInteger("8")).plus(new BigInteger("9")).plus(new BigInteger("10")) + ", but was: " + TreePVector.<Number>from(TreePVector.<Number>empty().plus(new BigInteger("1")).plus(new BigInteger("2")).plus(new BigInteger("3")).plus(new BigInteger("4")).plus(new BigInteger("5")).plus(new BigInteger("6")).plus(new BigInteger("7")).plus(new BigInteger("8")).plus(new BigInteger("9")).plus(new BigInteger("10")).stream().distinct().collect(Collectors.<Number>toList())), TreePVector.<Number>empty().plus(new BigInteger("1")).plus(new BigInteger("2")).plus(new BigInteger("3")).plus(new BigInteger("4")).plus(new BigInteger("5")).plus(new BigInteger("6")).plus(new BigInteger("7")).plus(new BigInteger("8")).plus(new BigInteger("9")).plus(new BigInteger("10")), TreePVector.<Number>from(TreePVector.<Number>empty().plus(new BigInteger("1")).plus(new BigInteger("2")).plus(new BigInteger("3")).plus(new BigInteger("4")).plus(new BigInteger("5")).plus(new BigInteger("6")).plus(new BigInteger("7")).plus(new BigInteger("8")).plus(new BigInteger("9")).plus(new BigInteger("10")).stream().distinct().collect(Collectors.<Number>toList())));
   }
 /* 
    * foreach is still missing, as well as insert and remove
    */
     @Test
   public void collectionListLiteral_item9_9070044578385612210() throws Throwable {
-    Assert.assertTrue("Expected: " + (Number) new BigInteger("3") + ", but was: " + TreePVector.<Number>empty().plus((Number) new BigInteger("1")).plus((Number) new BigInteger("2")).plus((Number) new BigInteger("3")).plus((Number) new BigInteger("4")).plus((Number) new BigInteger("5")).plus((Number) new BigInteger("6")).plus((Number) new BigInteger("7")).plus((Number) new BigInteger("8")).plus((Number) new BigInteger("9")).plus((Number) new BigInteger("10")).stream().filter(new Predicate<Number>() {
+    Assert.assertTrue("Expected: " + new BigInteger("3") + ", but was: " + TreePVector.<Number>empty().plus(new BigInteger("1")).plus(new BigInteger("2")).plus(new BigInteger("3")).plus(new BigInteger("4")).plus(new BigInteger("5")).plus(new BigInteger("6")).plus(new BigInteger("7")).plus(new BigInteger("8")).plus(new BigInteger("9")).plus(new BigInteger("10")).stream().filter(new Predicate<Number>() {
       public boolean test(Number o) {
         return new Function<ParameterSetWrapper, Boolean>() {
           public Boolean apply(ParameterSetWrapper param) {
             Number it = (Number) param.parameters.get(0);
-            return AH.isEqual(it, (Number) new BigInteger("3"));
+            return AH.isEqual(it, new BigInteger("3"));
           }
         }.apply(new ParameterSetWrapper(o));
       }
-    }).findFirst().orElse(null), EqualsTestOp.matches((Number) new BigInteger("3"), TreePVector.<Number>empty().plus((Number) new BigInteger("1")).plus((Number) new BigInteger("2")).plus((Number) new BigInteger("3")).plus((Number) new BigInteger("4")).plus((Number) new BigInteger("5")).plus((Number) new BigInteger("6")).plus((Number) new BigInteger("7")).plus((Number) new BigInteger("8")).plus((Number) new BigInteger("9")).plus((Number) new BigInteger("10")).stream().filter(new Predicate<Number>() {
+    }).findFirst().orElse(null), EqualsTestOp.matches(new BigInteger("3"), TreePVector.<Number>empty().plus(new BigInteger("1")).plus(new BigInteger("2")).plus(new BigInteger("3")).plus(new BigInteger("4")).plus(new BigInteger("5")).plus(new BigInteger("6")).plus(new BigInteger("7")).plus(new BigInteger("8")).plus(new BigInteger("9")).plus(new BigInteger("10")).stream().filter(new Predicate<Number>() {
       public boolean test(Number o) {
         return new Function<ParameterSetWrapper, Boolean>() {
           public Boolean apply(ParameterSetWrapper param) {
             Number it = (Number) param.parameters.get(0);
-            return AH.isEqual(it, (Number) new BigInteger("3"));
+            return AH.isEqual(it, new BigInteger("3"));
           }
         }.apply(new ParameterSetWrapper(o));
       }
@@ -3980,21 +3980,21 @@ public class Generated_collections_Test {
    */
     @Test
   public void collectionListLiteral_item10_9070044578385612230() throws Throwable {
-    Assert.assertTrue("Expected: " + (Number) new BigInteger("1") + ", but was: " + TreePVector.<Number>empty().plus((Number) new BigInteger("1")).plus((Number) new BigInteger("2")).plus((Number) new BigInteger("3")).plus((Number) new BigInteger("4")).plus((Number) new BigInteger("5")).plus((Number) new BigInteger("6")).plus((Number) new BigInteger("7")).plus((Number) new BigInteger("8")).plus((Number) new BigInteger("9")).plus((Number) new BigInteger("10")).stream().filter(new Predicate<Number>() {
+    Assert.assertTrue("Expected: " + new BigInteger("1") + ", but was: " + TreePVector.<Number>empty().plus(new BigInteger("1")).plus(new BigInteger("2")).plus(new BigInteger("3")).plus(new BigInteger("4")).plus(new BigInteger("5")).plus(new BigInteger("6")).plus(new BigInteger("7")).plus(new BigInteger("8")).plus(new BigInteger("9")).plus(new BigInteger("10")).stream().filter(new Predicate<Number>() {
       public boolean test(Number o) {
         return new Function<ParameterSetWrapper, Boolean>() {
           public Boolean apply(ParameterSetWrapper param) {
             Number a = (Number) param.parameters.get(0);
-            return AH.isLess(a, (Number) new BigInteger("11"));
+            return AH.isLess(a, new BigInteger("11"));
           }
         }.apply(new ParameterSetWrapper(o));
       }
-    }).findFirst().orElse(null), EqualsTestOp.matches((Number) new BigInteger("1"), TreePVector.<Number>empty().plus((Number) new BigInteger("1")).plus((Number) new BigInteger("2")).plus((Number) new BigInteger("3")).plus((Number) new BigInteger("4")).plus((Number) new BigInteger("5")).plus((Number) new BigInteger("6")).plus((Number) new BigInteger("7")).plus((Number) new BigInteger("8")).plus((Number) new BigInteger("9")).plus((Number) new BigInteger("10")).stream().filter(new Predicate<Number>() {
+    }).findFirst().orElse(null), EqualsTestOp.matches(new BigInteger("1"), TreePVector.<Number>empty().plus(new BigInteger("1")).plus(new BigInteger("2")).plus(new BigInteger("3")).plus(new BigInteger("4")).plus(new BigInteger("5")).plus(new BigInteger("6")).plus(new BigInteger("7")).plus(new BigInteger("8")).plus(new BigInteger("9")).plus(new BigInteger("10")).stream().filter(new Predicate<Number>() {
       public boolean test(Number o) {
         return new Function<ParameterSetWrapper, Boolean>() {
           public Boolean apply(ParameterSetWrapper param) {
             Number a = (Number) param.parameters.get(0);
-            return AH.isLess(a, (Number) new BigInteger("11"));
+            return AH.isLess(a, new BigInteger("11"));
           }
         }.apply(new ParameterSetWrapper(o));
       }
@@ -4005,7 +4005,7 @@ public class Generated_collections_Test {
    */
     @Test
   public void collectionListLiteral_item11_9070044578385612253() throws Throwable {
-    Assert.assertTrue("Expected: " + (Number) new BigInteger("1") + ", but was: " + TreePVector.<Number>empty().plus((Number) new BigInteger("1")).plus((Number) new BigInteger("2")).plus((Number) new BigInteger("3")).plus((Number) new BigInteger("4")).plus((Number) new BigInteger("5")).plus((Number) new BigInteger("6")).plus((Number) new BigInteger("7")).plus((Number) new BigInteger("8")).plus((Number) new BigInteger("9")).plus((Number) new BigInteger("10")).stream().filter(new Predicate<Number>() {
+    Assert.assertTrue("Expected: " + new BigInteger("1") + ", but was: " + TreePVector.<Number>empty().plus(new BigInteger("1")).plus(new BigInteger("2")).plus(new BigInteger("3")).plus(new BigInteger("4")).plus(new BigInteger("5")).plus(new BigInteger("6")).plus(new BigInteger("7")).plus(new BigInteger("8")).plus(new BigInteger("9")).plus(new BigInteger("10")).stream().filter(new Predicate<Number>() {
       public boolean test(Number o) {
         return new Function<ParameterSetWrapper, Boolean>() {
           public Boolean apply(ParameterSetWrapper param) {
@@ -4013,7 +4013,7 @@ public class Generated_collections_Test {
           }
         }.apply(new ParameterSetWrapper(o));
       }
-    }).findFirst().orElse(null), EqualsTestOp.matches((Number) new BigInteger("1"), TreePVector.<Number>empty().plus((Number) new BigInteger("1")).plus((Number) new BigInteger("2")).plus((Number) new BigInteger("3")).plus((Number) new BigInteger("4")).plus((Number) new BigInteger("5")).plus((Number) new BigInteger("6")).plus((Number) new BigInteger("7")).plus((Number) new BigInteger("8")).plus((Number) new BigInteger("9")).plus((Number) new BigInteger("10")).stream().filter(new Predicate<Number>() {
+    }).findFirst().orElse(null), EqualsTestOp.matches(new BigInteger("1"), TreePVector.<Number>empty().plus(new BigInteger("1")).plus(new BigInteger("2")).plus(new BigInteger("3")).plus(new BigInteger("4")).plus(new BigInteger("5")).plus(new BigInteger("6")).plus(new BigInteger("7")).plus(new BigInteger("8")).plus(new BigInteger("9")).plus(new BigInteger("10")).stream().filter(new Predicate<Number>() {
       public boolean test(Number o) {
         return new Function<ParameterSetWrapper, Boolean>() {
           public Boolean apply(ParameterSetWrapper param) {
@@ -4028,11 +4028,11 @@ public class Generated_collections_Test {
    */
     @Test
   public void collectionListLiteral_item12_9070044578385612270() throws Throwable {
-    Assert.assertTrue("Expected: " + (Number) new BigInteger("1") + ", but was: " + (((_FunctionTypes._return_P0_E0<Number>) () -> {
-      PVector<Number> listResult = TreePVector.<Number>empty().plus((Number) new BigInteger("1")).plus((Number) new BigInteger("2")).plus((Number) new BigInteger("3")).plus((Number) new BigInteger("4")).plus((Number) new BigInteger("5")).plus((Number) new BigInteger("6")).plus((Number) new BigInteger("7")).plus((Number) new BigInteger("8")).plus((Number) new BigInteger("9")).plus((Number) new BigInteger("10"));
+    Assert.assertTrue("Expected: " + new BigInteger("1") + ", but was: " + (((_FunctionTypes._return_P0_E0<Number>) () -> {
+      PVector<Number> listResult = TreePVector.<Number>empty().plus(new BigInteger("1")).plus(new BigInteger("2")).plus(new BigInteger("3")).plus(new BigInteger("4")).plus(new BigInteger("5")).plus(new BigInteger("6")).plus(new BigInteger("7")).plus(new BigInteger("8")).plus(new BigInteger("9")).plus(new BigInteger("10"));
       return (listResult.isEmpty() ? null : listResult.get(0));
-    }).invoke()), EqualsTestOp.matches((Number) new BigInteger("1"), ((_FunctionTypes._return_P0_E0<Number>) () -> {
-      PVector<Number> listResult = TreePVector.<Number>empty().plus((Number) new BigInteger("1")).plus((Number) new BigInteger("2")).plus((Number) new BigInteger("3")).plus((Number) new BigInteger("4")).plus((Number) new BigInteger("5")).plus((Number) new BigInteger("6")).plus((Number) new BigInteger("7")).plus((Number) new BigInteger("8")).plus((Number) new BigInteger("9")).plus((Number) new BigInteger("10"));
+    }).invoke()), EqualsTestOp.matches(new BigInteger("1"), ((_FunctionTypes._return_P0_E0<Number>) () -> {
+      PVector<Number> listResult = TreePVector.<Number>empty().plus(new BigInteger("1")).plus(new BigInteger("2")).plus(new BigInteger("3")).plus(new BigInteger("4")).plus(new BigInteger("5")).plus(new BigInteger("6")).plus(new BigInteger("7")).plus(new BigInteger("8")).plus(new BigInteger("9")).plus(new BigInteger("10"));
       return (listResult.isEmpty() ? null : listResult.get(0));
     }).invoke()));
   }
@@ -4041,16 +4041,16 @@ public class Generated_collections_Test {
    */
     @Test
   public void collectionListLiteral_item13_9070044578385612286() throws Throwable {
-    Assert.assertEquals("Expected: " + TreePVector.<Number>empty().plus((Number) new BigInteger("1")).plus((Number) new BigInteger("2")).plus((Number) new BigInteger("3")).plus((Number) new BigInteger("4")) + ", but was: " + (((_FunctionTypes._return_P0_E0<PVector<Number>>) () -> {
+    Assert.assertEquals("Expected: " + TreePVector.<Number>empty().plus(new BigInteger("1")).plus(new BigInteger("2")).plus(new BigInteger("3")).plus(new BigInteger("4")) + ", but was: " + (((_FunctionTypes._return_P0_E0<PVector<Number>>) () -> {
       List<Number> r = new ArrayList<Number>();
-      for (PVector<Number> coll : ListSequence.fromList(TreePVector.<PVector<Number>>empty().plus(TreePVector.<Number>empty().plus((Number) new BigInteger("1"))).plus(TreePVector.<Number>empty().plus((Number) new BigInteger("2"))).plus(TreePVector.<Number>empty().plus((Number) new BigInteger("3"))).plus(TreePVector.<Number>empty().plus((Number) new BigInteger("4"))))) {
+      for (PVector<Number> coll : ListSequence.fromList(TreePVector.<PVector<Number>>empty().plus(TreePVector.<Number>empty().plus(new BigInteger("1"))).plus(TreePVector.<Number>empty().plus(new BigInteger("2"))).plus(TreePVector.<Number>empty().plus(new BigInteger("3"))).plus(TreePVector.<Number>empty().plus(new BigInteger("4"))))) {
         r.addAll(coll);
       }
       PVector<Number> result = TreePVector.<Number>from(r);
       return result;
-    }).invoke()), (Object) TreePVector.<Number>empty().plus((Number) new BigInteger("1")).plus((Number) new BigInteger("2")).plus((Number) new BigInteger("3")).plus((Number) new BigInteger("4")), (Object) ((_FunctionTypes._return_P0_E0<PVector<Number>>) () -> {
+    }).invoke()), TreePVector.<Number>empty().plus(new BigInteger("1")).plus(new BigInteger("2")).plus(new BigInteger("3")).plus(new BigInteger("4")), (Object) ((_FunctionTypes._return_P0_E0<PVector<Number>>) () -> {
       List<Number> r = new ArrayList<Number>();
-      for (PVector<Number> coll : ListSequence.fromList(TreePVector.<PVector<Number>>empty().plus(TreePVector.<Number>empty().plus((Number) new BigInteger("1"))).plus(TreePVector.<Number>empty().plus((Number) new BigInteger("2"))).plus(TreePVector.<Number>empty().plus((Number) new BigInteger("3"))).plus(TreePVector.<Number>empty().plus((Number) new BigInteger("4"))))) {
+      for (PVector<Number> coll : ListSequence.fromList(TreePVector.<PVector<Number>>empty().plus(TreePVector.<Number>empty().plus(new BigInteger("1"))).plus(TreePVector.<Number>empty().plus(new BigInteger("2"))).plus(TreePVector.<Number>empty().plus(new BigInteger("3"))).plus(TreePVector.<Number>empty().plus(new BigInteger("4"))))) {
         r.addAll(coll);
       }
       PVector<Number> result = TreePVector.<Number>from(r);
@@ -4062,15 +4062,15 @@ public class Generated_collections_Test {
    */
     @Test
   public void collectionListLiteral_item14_9070044578385612304() throws Throwable {
-    Assert.assertTrue("Expected: " + (Number) new BigInteger("55") + ", but was: " + (((_FunctionTypes._return_P0_E0<Number>) () -> {
-      Number seed = (Number) new BigInteger("0");
-      for (Number current : ListSequence.fromList(TreePVector.<Number>empty().plus((Number) new BigInteger("1")).plus((Number) new BigInteger("2")).plus((Number) new BigInteger("3")).plus((Number) new BigInteger("4")).plus((Number) new BigInteger("5")).plus((Number) new BigInteger("6")).plus((Number) new BigInteger("7")).plus((Number) new BigInteger("8")).plus((Number) new BigInteger("9")).plus((Number) new BigInteger("10")))) {
+    Assert.assertTrue("Expected: " + new BigInteger("55") + ", but was: " + (((_FunctionTypes._return_P0_E0<Number>) () -> {
+      Number seed = new BigInteger("0");
+      for (Number current : ListSequence.fromList(TreePVector.<Number>empty().plus(new BigInteger("1")).plus(new BigInteger("2")).plus(new BigInteger("3")).plus(new BigInteger("4")).plus(new BigInteger("5")).plus(new BigInteger("6")).plus(new BigInteger("7")).plus(new BigInteger("8")).plus(new BigInteger("9")).plus(new BigInteger("10")))) {
         seed = AH.add(seed, current);
       }
       return seed;
-    }).invoke()), EqualsTestOp.matches((Number) new BigInteger("55"), ((_FunctionTypes._return_P0_E0<Number>) () -> {
-      Number seed = (Number) new BigInteger("0");
-      for (Number current : ListSequence.fromList(TreePVector.<Number>empty().plus((Number) new BigInteger("1")).plus((Number) new BigInteger("2")).plus((Number) new BigInteger("3")).plus((Number) new BigInteger("4")).plus((Number) new BigInteger("5")).plus((Number) new BigInteger("6")).plus((Number) new BigInteger("7")).plus((Number) new BigInteger("8")).plus((Number) new BigInteger("9")).plus((Number) new BigInteger("10")))) {
+    }).invoke()), EqualsTestOp.matches(new BigInteger("55"), ((_FunctionTypes._return_P0_E0<Number>) () -> {
+      Number seed = new BigInteger("0");
+      for (Number current : ListSequence.fromList(TreePVector.<Number>empty().plus(new BigInteger("1")).plus(new BigInteger("2")).plus(new BigInteger("3")).plus(new BigInteger("4")).plus(new BigInteger("5")).plus(new BigInteger("6")).plus(new BigInteger("7")).plus(new BigInteger("8")).plus(new BigInteger("9")).plus(new BigInteger("10")))) {
         seed = AH.add(seed, current);
       }
       return seed;
@@ -4081,10 +4081,10 @@ public class Generated_collections_Test {
    */
     @Test
   public void collectionListLiteral_item15_9070044578385612330() throws Throwable {
-    Assert.assertTrue("Expected: " + (Number) new BigInteger("2") + ", but was: " + BigInteger.valueOf(((_FunctionTypes._return_P0_E0<PVector<GroupValue>>) () -> {
-      Map<Number, List<item>> grouped = TreePVector.<item>empty().plus(new item((Number) new BigInteger("1"), "1")).plus(new item((Number) new BigInteger("1"), "1a")).plus(new item((Number) new BigInteger("2"), "2")).stream().collect(Collectors.groupingBy(new Function<item, Number>() {
+    Assert.assertTrue("Expected: " + new BigInteger("2") + ", but was: " + BigInteger.valueOf(((_FunctionTypes._return_P0_E0<PVector<GroupValue>>) () -> {
+      Map<Number, List<item>> grouped = TreePVector.<item>empty().plus(new item(new BigInteger("1"), "1")).plus(new item(new BigInteger("1"), "1a")).plus(new item(new BigInteger("2"), "2")).stream().collect(Collectors.groupingBy(new Function<item, Number>() {
         public Number apply(item param) {
-          return (Number) new Function<ParameterSetWrapper, Number>() {
+          return new Function<ParameterSetWrapper, Number>() {
             public Number apply(ParameterSetWrapper param) {
               item it = (item) param.parameters.get(0);
               return it.getn();
@@ -4099,10 +4099,10 @@ public class Generated_collections_Test {
         result = result.plus(g);
       }
       return result;
-    }).invoke().size()), EqualsTestOp.matches((Number) new BigInteger("2"), BigInteger.valueOf(((_FunctionTypes._return_P0_E0<PVector<GroupValue>>) () -> {
-      Map<Number, List<item>> grouped = TreePVector.<item>empty().plus(new item((Number) new BigInteger("1"), "1")).plus(new item((Number) new BigInteger("1"), "1a")).plus(new item((Number) new BigInteger("2"), "2")).stream().collect(Collectors.groupingBy(new Function<item, Number>() {
+    }).invoke().size()), EqualsTestOp.matches(new BigInteger("2"), BigInteger.valueOf(((_FunctionTypes._return_P0_E0<PVector<GroupValue>>) () -> {
+      Map<Number, List<item>> grouped = TreePVector.<item>empty().plus(new item(new BigInteger("1"), "1")).plus(new item(new BigInteger("1"), "1a")).plus(new item(new BigInteger("2"), "2")).stream().collect(Collectors.groupingBy(new Function<item, Number>() {
         public Number apply(item param) {
-          return (Number) new Function<ParameterSetWrapper, Number>() {
+          return new Function<ParameterSetWrapper, Number>() {
             public Number apply(ParameterSetWrapper param) {
               item it = (item) param.parameters.get(0);
               return it.getn();
@@ -4124,10 +4124,10 @@ public class Generated_collections_Test {
    */
     @Test
   public void collectionListLiteral_item16_9070044578385612354() throws Throwable {
-    Assert.assertTrue("Expected: " + (Number) new BigInteger("2") + ", but was: " + BigInteger.valueOf(((_FunctionTypes._return_P0_E0<PVector<GroupValue>>) () -> {
-      Map<Number, List<item>> grouped = TreePVector.<item>empty().plus(new item((Number) new BigInteger("1"), "1")).plus(new item((Number) new BigInteger("1"), "1a")).plus(new item((Number) new BigInteger("2"), "2")).stream().collect(Collectors.groupingBy(new Function<item, Number>() {
+    Assert.assertTrue("Expected: " + new BigInteger("2") + ", but was: " + BigInteger.valueOf(((_FunctionTypes._return_P0_E0<PVector<GroupValue>>) () -> {
+      Map<Number, List<item>> grouped = TreePVector.<item>empty().plus(new item(new BigInteger("1"), "1")).plus(new item(new BigInteger("1"), "1a")).plus(new item(new BigInteger("2"), "2")).stream().collect(Collectors.groupingBy(new Function<item, Number>() {
         public Number apply(item param) {
-          return (Number) new Function<ParameterSetWrapper, Number>() {
+          return new Function<ParameterSetWrapper, Number>() {
             public Number apply(ParameterSetWrapper param) {
               item i = (item) param.parameters.get(0);
               return i.getn();
@@ -4142,10 +4142,10 @@ public class Generated_collections_Test {
         result = result.plus(g);
       }
       return result;
-    }).invoke().size()), EqualsTestOp.matches((Number) new BigInteger("2"), BigInteger.valueOf(((_FunctionTypes._return_P0_E0<PVector<GroupValue>>) () -> {
-      Map<Number, List<item>> grouped = TreePVector.<item>empty().plus(new item((Number) new BigInteger("1"), "1")).plus(new item((Number) new BigInteger("1"), "1a")).plus(new item((Number) new BigInteger("2"), "2")).stream().collect(Collectors.groupingBy(new Function<item, Number>() {
+    }).invoke().size()), EqualsTestOp.matches(new BigInteger("2"), BigInteger.valueOf(((_FunctionTypes._return_P0_E0<PVector<GroupValue>>) () -> {
+      Map<Number, List<item>> grouped = TreePVector.<item>empty().plus(new item(new BigInteger("1"), "1")).plus(new item(new BigInteger("1"), "1a")).plus(new item(new BigInteger("2"), "2")).stream().collect(Collectors.groupingBy(new Function<item, Number>() {
         public Number apply(item param) {
-          return (Number) new Function<ParameterSetWrapper, Number>() {
+          return new Function<ParameterSetWrapper, Number>() {
             public Number apply(ParameterSetWrapper param) {
               item i = (item) param.parameters.get(0);
               return i.getn();
@@ -4167,10 +4167,10 @@ public class Generated_collections_Test {
    */
     @Test
   public void collectionListLiteral_item17_9070044578385612380() throws Throwable {
-    Assert.assertTrue("Expected: " + (Number) new BigInteger("2") + ", but was: " + BigInteger.valueOf(((_FunctionTypes._return_P0_E0<PVector<GroupValue>>) () -> {
-      Map<Number, List<item>> grouped = TreePVector.<item>empty().plus(new item((Number) new BigInteger("1"), "1")).plus(new item((Number) new BigInteger("1"), "1a")).plus(new item((Number) new BigInteger("2"), "2")).stream().collect(Collectors.groupingBy(new Function<item, Number>() {
+    Assert.assertTrue("Expected: " + new BigInteger("2") + ", but was: " + BigInteger.valueOf(((_FunctionTypes._return_P0_E0<PVector<GroupValue>>) () -> {
+      Map<Number, List<item>> grouped = TreePVector.<item>empty().plus(new item(new BigInteger("1"), "1")).plus(new item(new BigInteger("1"), "1a")).plus(new item(new BigInteger("2"), "2")).stream().collect(Collectors.groupingBy(new Function<item, Number>() {
         public Number apply(item param) {
-          return (Number) new Function<ParameterSetWrapper, Number>() {
+          return new Function<ParameterSetWrapper, Number>() {
             public Number apply(ParameterSetWrapper param) {
               return collectionListLiteralFoo3((item) param.parameters.get(0));
             }
@@ -4184,10 +4184,10 @@ public class Generated_collections_Test {
         result = result.plus(g);
       }
       return result;
-    }).invoke().size()), EqualsTestOp.matches((Number) new BigInteger("2"), BigInteger.valueOf(((_FunctionTypes._return_P0_E0<PVector<GroupValue>>) () -> {
-      Map<Number, List<item>> grouped = TreePVector.<item>empty().plus(new item((Number) new BigInteger("1"), "1")).plus(new item((Number) new BigInteger("1"), "1a")).plus(new item((Number) new BigInteger("2"), "2")).stream().collect(Collectors.groupingBy(new Function<item, Number>() {
+    }).invoke().size()), EqualsTestOp.matches(new BigInteger("2"), BigInteger.valueOf(((_FunctionTypes._return_P0_E0<PVector<GroupValue>>) () -> {
+      Map<Number, List<item>> grouped = TreePVector.<item>empty().plus(new item(new BigInteger("1"), "1")).plus(new item(new BigInteger("1"), "1a")).plus(new item(new BigInteger("2"), "2")).stream().collect(Collectors.groupingBy(new Function<item, Number>() {
         public Number apply(item param) {
-          return (Number) new Function<ParameterSetWrapper, Number>() {
+          return new Function<ParameterSetWrapper, Number>() {
             public Number apply(ParameterSetWrapper param) {
               return collectionListLiteralFoo3((item) param.parameters.get(0));
             }
@@ -4208,16 +4208,16 @@ public class Generated_collections_Test {
    */
     @Test
   public void collectionListLiteral_item18_9070044578385612401() throws Throwable {
-    Assert.assertEquals("Expected: " + TreePVector.<Number>empty().plus((Number) new BigInteger("1")) + ", but was: " + (((_FunctionTypes._return_P0_E0<PVector<Number>>) () -> {
-      PVector<Number> origList = TreePVector.<Number>empty().plus((Number) new BigInteger("1")).plus((Number) new BigInteger("2")).plus((Number) new BigInteger("3")).plus((Number) new BigInteger("4")).plus((Number) new BigInteger("5")).plus((Number) new BigInteger("6")).plus((Number) new BigInteger("7")).plus((Number) new BigInteger("8")).plus((Number) new BigInteger("9")).plus((Number) new BigInteger("10"));
-      int noOfElements = ((Number) new BigInteger("1")).intValue();
+    Assert.assertEquals("Expected: " + TreePVector.<Number>empty().plus(new BigInteger("1")) + ", but was: " + (((_FunctionTypes._return_P0_E0<PVector<Number>>) () -> {
+      PVector<Number> origList = TreePVector.<Number>empty().plus(new BigInteger("1")).plus(new BigInteger("2")).plus(new BigInteger("3")).plus(new BigInteger("4")).plus(new BigInteger("5")).plus(new BigInteger("6")).plus(new BigInteger("7")).plus(new BigInteger("8")).plus(new BigInteger("9")).plus(new BigInteger("10"));
+      int noOfElements = new BigInteger("1").intValue();
       if (origList.size() <= noOfElements) {
         return origList;
       }
       return origList.subList(0, noOfElements);
-    }).invoke()), (Object) TreePVector.<Number>empty().plus((Number) new BigInteger("1")), (Object) ((_FunctionTypes._return_P0_E0<PVector<Number>>) () -> {
-      PVector<Number> origList = TreePVector.<Number>empty().plus((Number) new BigInteger("1")).plus((Number) new BigInteger("2")).plus((Number) new BigInteger("3")).plus((Number) new BigInteger("4")).plus((Number) new BigInteger("5")).plus((Number) new BigInteger("6")).plus((Number) new BigInteger("7")).plus((Number) new BigInteger("8")).plus((Number) new BigInteger("9")).plus((Number) new BigInteger("10"));
-      int noOfElements = ((Number) new BigInteger("1")).intValue();
+    }).invoke()), TreePVector.<Number>empty().plus(new BigInteger("1")), (Object) ((_FunctionTypes._return_P0_E0<PVector<Number>>) () -> {
+      PVector<Number> origList = TreePVector.<Number>empty().plus(new BigInteger("1")).plus(new BigInteger("2")).plus(new BigInteger("3")).plus(new BigInteger("4")).plus(new BigInteger("5")).plus(new BigInteger("6")).plus(new BigInteger("7")).plus(new BigInteger("8")).plus(new BigInteger("9")).plus(new BigInteger("10"));
+      int noOfElements = new BigInteger("1").intValue();
       if (origList.size() <= noOfElements) {
         return origList;
       }
@@ -4229,25 +4229,25 @@ public class Generated_collections_Test {
    */
     @Test
   public void collectionListLiteral_item19_9070044578385612419() throws Throwable {
-    Assert.assertEquals("Expected: " + false + ", but was: " + TreePVector.<Number>empty().plus((Number) new BigInteger("1")).plus((Number) new BigInteger("2")).plus((Number) new BigInteger("3")).plus((Number) new BigInteger("4")).plus((Number) new BigInteger("5")).plus((Number) new BigInteger("6")).plus((Number) new BigInteger("7")).plus((Number) new BigInteger("8")).plus((Number) new BigInteger("9")).plus((Number) new BigInteger("10")).isEmpty(), (Object) false, (Object) TreePVector.<Number>empty().plus((Number) new BigInteger("1")).plus((Number) new BigInteger("2")).plus((Number) new BigInteger("3")).plus((Number) new BigInteger("4")).plus((Number) new BigInteger("5")).plus((Number) new BigInteger("6")).plus((Number) new BigInteger("7")).plus((Number) new BigInteger("8")).plus((Number) new BigInteger("9")).plus((Number) new BigInteger("10")).isEmpty());
+    Assert.assertEquals("Expected: " + false + ", but was: " + TreePVector.<Number>empty().plus(new BigInteger("1")).plus(new BigInteger("2")).plus(new BigInteger("3")).plus(new BigInteger("4")).plus(new BigInteger("5")).plus(new BigInteger("6")).plus(new BigInteger("7")).plus(new BigInteger("8")).plus(new BigInteger("9")).plus(new BigInteger("10")).isEmpty(), (Object) false, (Object) TreePVector.<Number>empty().plus(new BigInteger("1")).plus(new BigInteger("2")).plus(new BigInteger("3")).plus(new BigInteger("4")).plus(new BigInteger("5")).plus(new BigInteger("6")).plus(new BigInteger("7")).plus(new BigInteger("8")).plus(new BigInteger("9")).plus(new BigInteger("10")).isEmpty());
   }
 /* 
    * foreach is still missing, as well as insert and remove
    */
     @Test
   public void collectionListLiteral_item20_9070044578385612435() throws Throwable {
-    Assert.assertEquals("Expected: " + true + ", but was: " + (!(TreePVector.<Number>empty().plus((Number) new BigInteger("1")).plus((Number) new BigInteger("2")).plus((Number) new BigInteger("3")).plus((Number) new BigInteger("4")).plus((Number) new BigInteger("5")).plus((Number) new BigInteger("6")).plus((Number) new BigInteger("7")).plus((Number) new BigInteger("8")).plus((Number) new BigInteger("9")).plus((Number) new BigInteger("10")).isEmpty())), (Object) true, (Object) !(TreePVector.<Number>empty().plus((Number) new BigInteger("1")).plus((Number) new BigInteger("2")).plus((Number) new BigInteger("3")).plus((Number) new BigInteger("4")).plus((Number) new BigInteger("5")).plus((Number) new BigInteger("6")).plus((Number) new BigInteger("7")).plus((Number) new BigInteger("8")).plus((Number) new BigInteger("9")).plus((Number) new BigInteger("10")).isEmpty()));
+    Assert.assertEquals("Expected: " + true + ", but was: " + (!(TreePVector.<Number>empty().plus(new BigInteger("1")).plus(new BigInteger("2")).plus(new BigInteger("3")).plus(new BigInteger("4")).plus(new BigInteger("5")).plus(new BigInteger("6")).plus(new BigInteger("7")).plus(new BigInteger("8")).plus(new BigInteger("9")).plus(new BigInteger("10")).isEmpty())), (Object) true, (Object) !(TreePVector.<Number>empty().plus(new BigInteger("1")).plus(new BigInteger("2")).plus(new BigInteger("3")).plus(new BigInteger("4")).plus(new BigInteger("5")).plus(new BigInteger("6")).plus(new BigInteger("7")).plus(new BigInteger("8")).plus(new BigInteger("9")).plus(new BigInteger("10")).isEmpty()));
   }
 /* 
    * foreach is still missing, as well as insert and remove
    */
     @Test
   public void collectionListLiteral_item21_5396945261019208181() throws Throwable {
-    Assert.assertTrue("Expected: " + (Number) new BigInteger("10") + ", but was: " + (((_FunctionTypes._return_P0_E0<Number>) () -> {
-      PVector<Number> listResult = TreePVector.<Number>empty().plus((Number) new BigInteger("1")).plus((Number) new BigInteger("2")).plus((Number) new BigInteger("3")).plus((Number) new BigInteger("4")).plus((Number) new BigInteger("5")).plus((Number) new BigInteger("6")).plus((Number) new BigInteger("7")).plus((Number) new BigInteger("8")).plus((Number) new BigInteger("9")).plus((Number) new BigInteger("10"));
+    Assert.assertTrue("Expected: " + new BigInteger("10") + ", but was: " + (((_FunctionTypes._return_P0_E0<Number>) () -> {
+      PVector<Number> listResult = TreePVector.<Number>empty().plus(new BigInteger("1")).plus(new BigInteger("2")).plus(new BigInteger("3")).plus(new BigInteger("4")).plus(new BigInteger("5")).plus(new BigInteger("6")).plus(new BigInteger("7")).plus(new BigInteger("8")).plus(new BigInteger("9")).plus(new BigInteger("10"));
       return (listResult.isEmpty() ? null : listResult.get(listResult.size() - 1));
-    }).invoke()), EqualsTestOp.matches((Number) new BigInteger("10"), ((_FunctionTypes._return_P0_E0<Number>) () -> {
-      PVector<Number> listResult = TreePVector.<Number>empty().plus((Number) new BigInteger("1")).plus((Number) new BigInteger("2")).plus((Number) new BigInteger("3")).plus((Number) new BigInteger("4")).plus((Number) new BigInteger("5")).plus((Number) new BigInteger("6")).plus((Number) new BigInteger("7")).plus((Number) new BigInteger("8")).plus((Number) new BigInteger("9")).plus((Number) new BigInteger("10"));
+    }).invoke()), EqualsTestOp.matches(new BigInteger("10"), ((_FunctionTypes._return_P0_E0<Number>) () -> {
+      PVector<Number> listResult = TreePVector.<Number>empty().plus(new BigInteger("1")).plus(new BigInteger("2")).plus(new BigInteger("3")).plus(new BigInteger("4")).plus(new BigInteger("5")).plus(new BigInteger("6")).plus(new BigInteger("7")).plus(new BigInteger("8")).plus(new BigInteger("9")).plus(new BigInteger("10"));
       return (listResult.isEmpty() ? null : listResult.get(listResult.size() - 1));
     }).invoke()));
   }
@@ -4256,16 +4256,16 @@ public class Generated_collections_Test {
    */
     @Test
   public void collectionListLiteral_item22_9070044578385612451() throws Throwable {
-    Assert.assertEquals("Expected: " + TreePVector.<Number>empty().plus((Number) new BigInteger("10")).plus((Number) new BigInteger("9")).plus((Number) new BigInteger("8")).plus((Number) new BigInteger("7")).plus((Number) new BigInteger("6")).plus((Number) new BigInteger("5")).plus((Number) new BigInteger("4")).plus((Number) new BigInteger("3")).plus((Number) new BigInteger("2")).plus((Number) new BigInteger("1")) + ", but was: " + (((_FunctionTypes._return_P0_E0<PVector<Number>>) () -> {
+    Assert.assertEquals("Expected: " + TreePVector.<Number>empty().plus(new BigInteger("10")).plus(new BigInteger("9")).plus(new BigInteger("8")).plus(new BigInteger("7")).plus(new BigInteger("6")).plus(new BigInteger("5")).plus(new BigInteger("4")).plus(new BigInteger("3")).plus(new BigInteger("2")).plus(new BigInteger("1")) + ", but was: " + (((_FunctionTypes._return_P0_E0<PVector<Number>>) () -> {
       PVector<Number> rev = Empty.vector();
-      for (int i = TreePVector.<Number>empty().plus((Number) new BigInteger("1")).plus((Number) new BigInteger("2")).plus((Number) new BigInteger("3")).plus((Number) new BigInteger("4")).plus((Number) new BigInteger("5")).plus((Number) new BigInteger("6")).plus((Number) new BigInteger("7")).plus((Number) new BigInteger("8")).plus((Number) new BigInteger("9")).plus((Number) new BigInteger("10")).size() - 1; i >= 0; i--) {
-        rev = rev.plus(TreePVector.<Number>empty().plus((Number) new BigInteger("1")).plus((Number) new BigInteger("2")).plus((Number) new BigInteger("3")).plus((Number) new BigInteger("4")).plus((Number) new BigInteger("5")).plus((Number) new BigInteger("6")).plus((Number) new BigInteger("7")).plus((Number) new BigInteger("8")).plus((Number) new BigInteger("9")).plus((Number) new BigInteger("10")).get(i));
+      for (int i = TreePVector.<Number>empty().plus(new BigInteger("1")).plus(new BigInteger("2")).plus(new BigInteger("3")).plus(new BigInteger("4")).plus(new BigInteger("5")).plus(new BigInteger("6")).plus(new BigInteger("7")).plus(new BigInteger("8")).plus(new BigInteger("9")).plus(new BigInteger("10")).size() - 1; i >= 0; i--) {
+        rev = rev.plus(TreePVector.<Number>empty().plus(new BigInteger("1")).plus(new BigInteger("2")).plus(new BigInteger("3")).plus(new BigInteger("4")).plus(new BigInteger("5")).plus(new BigInteger("6")).plus(new BigInteger("7")).plus(new BigInteger("8")).plus(new BigInteger("9")).plus(new BigInteger("10")).get(i));
       }
       return rev;
-    }).invoke()), (Object) TreePVector.<Number>empty().plus((Number) new BigInteger("10")).plus((Number) new BigInteger("9")).plus((Number) new BigInteger("8")).plus((Number) new BigInteger("7")).plus((Number) new BigInteger("6")).plus((Number) new BigInteger("5")).plus((Number) new BigInteger("4")).plus((Number) new BigInteger("3")).plus((Number) new BigInteger("2")).plus((Number) new BigInteger("1")), (Object) ((_FunctionTypes._return_P0_E0<PVector<Number>>) () -> {
+    }).invoke()), TreePVector.<Number>empty().plus(new BigInteger("10")).plus(new BigInteger("9")).plus(new BigInteger("8")).plus(new BigInteger("7")).plus(new BigInteger("6")).plus(new BigInteger("5")).plus(new BigInteger("4")).plus(new BigInteger("3")).plus(new BigInteger("2")).plus(new BigInteger("1")), (Object) ((_FunctionTypes._return_P0_E0<PVector<Number>>) () -> {
       PVector<Number> rev = Empty.vector();
-      for (int i = TreePVector.<Number>empty().plus((Number) new BigInteger("1")).plus((Number) new BigInteger("2")).plus((Number) new BigInteger("3")).plus((Number) new BigInteger("4")).plus((Number) new BigInteger("5")).plus((Number) new BigInteger("6")).plus((Number) new BigInteger("7")).plus((Number) new BigInteger("8")).plus((Number) new BigInteger("9")).plus((Number) new BigInteger("10")).size() - 1; i >= 0; i--) {
-        rev = rev.plus(TreePVector.<Number>empty().plus((Number) new BigInteger("1")).plus((Number) new BigInteger("2")).plus((Number) new BigInteger("3")).plus((Number) new BigInteger("4")).plus((Number) new BigInteger("5")).plus((Number) new BigInteger("6")).plus((Number) new BigInteger("7")).plus((Number) new BigInteger("8")).plus((Number) new BigInteger("9")).plus((Number) new BigInteger("10")).get(i));
+      for (int i = TreePVector.<Number>empty().plus(new BigInteger("1")).plus(new BigInteger("2")).plus(new BigInteger("3")).plus(new BigInteger("4")).plus(new BigInteger("5")).plus(new BigInteger("6")).plus(new BigInteger("7")).plus(new BigInteger("8")).plus(new BigInteger("9")).plus(new BigInteger("10")).size() - 1; i >= 0; i--) {
+        rev = rev.plus(TreePVector.<Number>empty().plus(new BigInteger("1")).plus(new BigInteger("2")).plus(new BigInteger("3")).plus(new BigInteger("4")).plus(new BigInteger("5")).plus(new BigInteger("6")).plus(new BigInteger("7")).plus(new BigInteger("8")).plus(new BigInteger("9")).plus(new BigInteger("10")).get(i));
       }
       return rev;
     }).invoke());
@@ -4275,21 +4275,21 @@ public class Generated_collections_Test {
    */
     @Test
   public void collectionListLiteral_item23_9070044578385612467() throws Throwable {
-    Assert.assertEquals("Expected: " + TreePVector.<Number>empty().plus((Number) new BigInteger("2")).plus((Number) new BigInteger("3")).plus((Number) new BigInteger("4")).plus((Number) new BigInteger("5")).plus((Number) new BigInteger("6")).plus((Number) new BigInteger("7")).plus((Number) new BigInteger("8")).plus((Number) new BigInteger("9")).plus((Number) new BigInteger("10")).plus((Number) new BigInteger("11")) + ", but was: " + TreePVector.<Number>from(TreePVector.<Number>empty().plus((Number) new BigInteger("1")).plus((Number) new BigInteger("2")).plus((Number) new BigInteger("3")).plus((Number) new BigInteger("4")).plus((Number) new BigInteger("5")).plus((Number) new BigInteger("6")).plus((Number) new BigInteger("7")).plus((Number) new BigInteger("8")).plus((Number) new BigInteger("9")).plus((Number) new BigInteger("10")).stream().map(new Function<Number, Number>() {
+    Assert.assertEquals("Expected: " + TreePVector.<Number>empty().plus(new BigInteger("2")).plus(new BigInteger("3")).plus(new BigInteger("4")).plus(new BigInteger("5")).plus(new BigInteger("6")).plus(new BigInteger("7")).plus(new BigInteger("8")).plus(new BigInteger("9")).plus(new BigInteger("10")).plus(new BigInteger("11")) + ", but was: " + TreePVector.<Number>from(TreePVector.<Number>empty().plus(new BigInteger("1")).plus(new BigInteger("2")).plus(new BigInteger("3")).plus(new BigInteger("4")).plus(new BigInteger("5")).plus(new BigInteger("6")).plus(new BigInteger("7")).plus(new BigInteger("8")).plus(new BigInteger("9")).plus(new BigInteger("10")).stream().map(new Function<Number, Number>() {
       public Number apply(Number param) {
         return new Function<ParameterSetWrapper, Number>() {
           public Number apply(ParameterSetWrapper param) {
             Number it = (Number) param.parameters.get(0);
-            return AH.add(it, (Number) new BigInteger("1"));
+            return AH.add(it, new BigInteger("1"));
           }
         }.apply(new ParameterSetWrapper(param));
       }
-    }).collect(Collectors.<Number>toList())), (Object) TreePVector.<Number>empty().plus((Number) new BigInteger("2")).plus((Number) new BigInteger("3")).plus((Number) new BigInteger("4")).plus((Number) new BigInteger("5")).plus((Number) new BigInteger("6")).plus((Number) new BigInteger("7")).plus((Number) new BigInteger("8")).plus((Number) new BigInteger("9")).plus((Number) new BigInteger("10")).plus((Number) new BigInteger("11")), (Object) TreePVector.<Number>from(TreePVector.<Number>empty().plus((Number) new BigInteger("1")).plus((Number) new BigInteger("2")).plus((Number) new BigInteger("3")).plus((Number) new BigInteger("4")).plus((Number) new BigInteger("5")).plus((Number) new BigInteger("6")).plus((Number) new BigInteger("7")).plus((Number) new BigInteger("8")).plus((Number) new BigInteger("9")).plus((Number) new BigInteger("10")).stream().map(new Function<Number, Number>() {
+    }).collect(Collectors.<Number>toList())), TreePVector.<Number>empty().plus(new BigInteger("2")).plus(new BigInteger("3")).plus(new BigInteger("4")).plus(new BigInteger("5")).plus(new BigInteger("6")).plus(new BigInteger("7")).plus(new BigInteger("8")).plus(new BigInteger("9")).plus(new BigInteger("10")).plus(new BigInteger("11")), TreePVector.<Number>from(TreePVector.<Number>empty().plus(new BigInteger("1")).plus(new BigInteger("2")).plus(new BigInteger("3")).plus(new BigInteger("4")).plus(new BigInteger("5")).plus(new BigInteger("6")).plus(new BigInteger("7")).plus(new BigInteger("8")).plus(new BigInteger("9")).plus(new BigInteger("10")).stream().map(new Function<Number, Number>() {
       public Number apply(Number param) {
         return new Function<ParameterSetWrapper, Number>() {
           public Number apply(ParameterSetWrapper param) {
             Number it = (Number) param.parameters.get(0);
-            return AH.add(it, (Number) new BigInteger("1"));
+            return AH.add(it, new BigInteger("1"));
           }
         }.apply(new ParameterSetWrapper(param));
       }
@@ -4300,21 +4300,21 @@ public class Generated_collections_Test {
    */
     @Test
   public void collectionListLiteral_item24_9070044578385612497() throws Throwable {
-    Assert.assertEquals("Expected: " + TreePVector.<Number>empty().plus((Number) new BigInteger("2")).plus((Number) new BigInteger("3")).plus((Number) new BigInteger("4")).plus((Number) new BigInteger("5")).plus((Number) new BigInteger("6")).plus((Number) new BigInteger("7")).plus((Number) new BigInteger("8")).plus((Number) new BigInteger("9")).plus((Number) new BigInteger("10")).plus((Number) new BigInteger("11")) + ", but was: " + TreePVector.<Number>from(TreePVector.<Number>empty().plus((Number) new BigInteger("1")).plus((Number) new BigInteger("2")).plus((Number) new BigInteger("3")).plus((Number) new BigInteger("4")).plus((Number) new BigInteger("5")).plus((Number) new BigInteger("6")).plus((Number) new BigInteger("7")).plus((Number) new BigInteger("8")).plus((Number) new BigInteger("9")).plus((Number) new BigInteger("10")).stream().map(new Function<Number, Number>() {
+    Assert.assertEquals("Expected: " + TreePVector.<Number>empty().plus(new BigInteger("2")).plus(new BigInteger("3")).plus(new BigInteger("4")).plus(new BigInteger("5")).plus(new BigInteger("6")).plus(new BigInteger("7")).plus(new BigInteger("8")).plus(new BigInteger("9")).plus(new BigInteger("10")).plus(new BigInteger("11")) + ", but was: " + TreePVector.<Number>from(TreePVector.<Number>empty().plus(new BigInteger("1")).plus(new BigInteger("2")).plus(new BigInteger("3")).plus(new BigInteger("4")).plus(new BigInteger("5")).plus(new BigInteger("6")).plus(new BigInteger("7")).plus(new BigInteger("8")).plus(new BigInteger("9")).plus(new BigInteger("10")).stream().map(new Function<Number, Number>() {
       public Number apply(Number param) {
         return new Function<ParameterSetWrapper, Number>() {
           public Number apply(ParameterSetWrapper param) {
             Number a = (Number) param.parameters.get(0);
-            return AH.add(a, (Number) new BigInteger("1"));
+            return AH.add(a, new BigInteger("1"));
           }
         }.apply(new ParameterSetWrapper(param));
       }
-    }).collect(Collectors.<Number>toList())), (Object) TreePVector.<Number>empty().plus((Number) new BigInteger("2")).plus((Number) new BigInteger("3")).plus((Number) new BigInteger("4")).plus((Number) new BigInteger("5")).plus((Number) new BigInteger("6")).plus((Number) new BigInteger("7")).plus((Number) new BigInteger("8")).plus((Number) new BigInteger("9")).plus((Number) new BigInteger("10")).plus((Number) new BigInteger("11")), (Object) TreePVector.<Number>from(TreePVector.<Number>empty().plus((Number) new BigInteger("1")).plus((Number) new BigInteger("2")).plus((Number) new BigInteger("3")).plus((Number) new BigInteger("4")).plus((Number) new BigInteger("5")).plus((Number) new BigInteger("6")).plus((Number) new BigInteger("7")).plus((Number) new BigInteger("8")).plus((Number) new BigInteger("9")).plus((Number) new BigInteger("10")).stream().map(new Function<Number, Number>() {
+    }).collect(Collectors.<Number>toList())), TreePVector.<Number>empty().plus(new BigInteger("2")).plus(new BigInteger("3")).plus(new BigInteger("4")).plus(new BigInteger("5")).plus(new BigInteger("6")).plus(new BigInteger("7")).plus(new BigInteger("8")).plus(new BigInteger("9")).plus(new BigInteger("10")).plus(new BigInteger("11")), TreePVector.<Number>from(TreePVector.<Number>empty().plus(new BigInteger("1")).plus(new BigInteger("2")).plus(new BigInteger("3")).plus(new BigInteger("4")).plus(new BigInteger("5")).plus(new BigInteger("6")).plus(new BigInteger("7")).plus(new BigInteger("8")).plus(new BigInteger("9")).plus(new BigInteger("10")).stream().map(new Function<Number, Number>() {
       public Number apply(Number param) {
         return new Function<ParameterSetWrapper, Number>() {
           public Number apply(ParameterSetWrapper param) {
             Number a = (Number) param.parameters.get(0);
-            return AH.add(a, (Number) new BigInteger("1"));
+            return AH.add(a, new BigInteger("1"));
           }
         }.apply(new ParameterSetWrapper(param));
       }
@@ -4325,7 +4325,7 @@ public class Generated_collections_Test {
    */
     @Test
   public void collectionListLiteral_item25_9070044578385612530() throws Throwable {
-    Assert.assertEquals("Expected: " + TreePVector.<Number>empty().plus((Number) new BigInteger("2")).plus((Number) new BigInteger("3")).plus((Number) new BigInteger("4")).plus((Number) new BigInteger("5")).plus((Number) new BigInteger("6")).plus((Number) new BigInteger("7")).plus((Number) new BigInteger("8")).plus((Number) new BigInteger("9")).plus((Number) new BigInteger("10")).plus((Number) new BigInteger("11")) + ", but was: " + TreePVector.<Number>from(TreePVector.<Number>empty().plus((Number) new BigInteger("1")).plus((Number) new BigInteger("2")).plus((Number) new BigInteger("3")).plus((Number) new BigInteger("4")).plus((Number) new BigInteger("5")).plus((Number) new BigInteger("6")).plus((Number) new BigInteger("7")).plus((Number) new BigInteger("8")).plus((Number) new BigInteger("9")).plus((Number) new BigInteger("10")).stream().map(new Function<Number, Number>() {
+    Assert.assertEquals("Expected: " + TreePVector.<Number>empty().plus(new BigInteger("2")).plus(new BigInteger("3")).plus(new BigInteger("4")).plus(new BigInteger("5")).plus(new BigInteger("6")).plus(new BigInteger("7")).plus(new BigInteger("8")).plus(new BigInteger("9")).plus(new BigInteger("10")).plus(new BigInteger("11")) + ", but was: " + TreePVector.<Number>from(TreePVector.<Number>empty().plus(new BigInteger("1")).plus(new BigInteger("2")).plus(new BigInteger("3")).plus(new BigInteger("4")).plus(new BigInteger("5")).plus(new BigInteger("6")).plus(new BigInteger("7")).plus(new BigInteger("8")).plus(new BigInteger("9")).plus(new BigInteger("10")).stream().map(new Function<Number, Number>() {
       public Number apply(Number param) {
         return new Function<ParameterSetWrapper, Number>() {
           public Number apply(ParameterSetWrapper param) {
@@ -4333,7 +4333,7 @@ public class Generated_collections_Test {
           }
         }.apply(new ParameterSetWrapper(param));
       }
-    }).collect(Collectors.<Number>toList())), (Object) TreePVector.<Number>empty().plus((Number) new BigInteger("2")).plus((Number) new BigInteger("3")).plus((Number) new BigInteger("4")).plus((Number) new BigInteger("5")).plus((Number) new BigInteger("6")).plus((Number) new BigInteger("7")).plus((Number) new BigInteger("8")).plus((Number) new BigInteger("9")).plus((Number) new BigInteger("10")).plus((Number) new BigInteger("11")), (Object) TreePVector.<Number>from(TreePVector.<Number>empty().plus((Number) new BigInteger("1")).plus((Number) new BigInteger("2")).plus((Number) new BigInteger("3")).plus((Number) new BigInteger("4")).plus((Number) new BigInteger("5")).plus((Number) new BigInteger("6")).plus((Number) new BigInteger("7")).plus((Number) new BigInteger("8")).plus((Number) new BigInteger("9")).plus((Number) new BigInteger("10")).stream().map(new Function<Number, Number>() {
+    }).collect(Collectors.<Number>toList())), TreePVector.<Number>empty().plus(new BigInteger("2")).plus(new BigInteger("3")).plus(new BigInteger("4")).plus(new BigInteger("5")).plus(new BigInteger("6")).plus(new BigInteger("7")).plus(new BigInteger("8")).plus(new BigInteger("9")).plus(new BigInteger("10")).plus(new BigInteger("11")), TreePVector.<Number>from(TreePVector.<Number>empty().plus(new BigInteger("1")).plus(new BigInteger("2")).plus(new BigInteger("3")).plus(new BigInteger("4")).plus(new BigInteger("5")).plus(new BigInteger("6")).plus(new BigInteger("7")).plus(new BigInteger("8")).plus(new BigInteger("9")).plus(new BigInteger("10")).stream().map(new Function<Number, Number>() {
       public Number apply(Number param) {
         return new Function<ParameterSetWrapper, Number>() {
           public Number apply(ParameterSetWrapper param) {
@@ -4348,24 +4348,24 @@ public class Generated_collections_Test {
    */
     @Test
   public void collectionListLiteral_item26_9070044578385612557() throws Throwable {
-    Assert.assertTrue("Expected: " + (Number) new BigInteger("10") + ", but was: " + CollectionHelper.max(TreePVector.<Number>empty().plus((Number) new BigInteger("1")).plus((Number) new BigInteger("2")).plus((Number) new BigInteger("3")).plus((Number) new BigInteger("4")).plus((Number) new BigInteger("5")).plus((Number) new BigInteger("6")).plus((Number) new BigInteger("7")).plus((Number) new BigInteger("8")).plus((Number) new BigInteger("9")).plus((Number) new BigInteger("10"))), EqualsTestOp.matches((Number) new BigInteger("10"), CollectionHelper.max(TreePVector.<Number>empty().plus((Number) new BigInteger("1")).plus((Number) new BigInteger("2")).plus((Number) new BigInteger("3")).plus((Number) new BigInteger("4")).plus((Number) new BigInteger("5")).plus((Number) new BigInteger("6")).plus((Number) new BigInteger("7")).plus((Number) new BigInteger("8")).plus((Number) new BigInteger("9")).plus((Number) new BigInteger("10")))));
+    Assert.assertTrue("Expected: " + new BigInteger("10") + ", but was: " + CollectionHelper.max(TreePVector.<Number>empty().plus(new BigInteger("1")).plus(new BigInteger("2")).plus(new BigInteger("3")).plus(new BigInteger("4")).plus(new BigInteger("5")).plus(new BigInteger("6")).plus(new BigInteger("7")).plus(new BigInteger("8")).plus(new BigInteger("9")).plus(new BigInteger("10"))), EqualsTestOp.matches(new BigInteger("10"), CollectionHelper.max(TreePVector.<Number>empty().plus(new BigInteger("1")).plus(new BigInteger("2")).plus(new BigInteger("3")).plus(new BigInteger("4")).plus(new BigInteger("5")).plus(new BigInteger("6")).plus(new BigInteger("7")).plus(new BigInteger("8")).plus(new BigInteger("9")).plus(new BigInteger("10")))));
   }
 /* 
    * foreach is still missing, as well as insert and remove
    */
     @Test
   public void collectionListLiteral_item27_9070044578385612573() throws Throwable {
-    Assert.assertTrue("Expected: " + (Number) new BigInteger("1") + ", but was: " + CollectionHelper.min(TreePVector.<Number>empty().plus((Number) new BigInteger("1")).plus((Number) new BigInteger("2")).plus((Number) new BigInteger("3")).plus((Number) new BigInteger("4")).plus((Number) new BigInteger("5")).plus((Number) new BigInteger("6")).plus((Number) new BigInteger("7")).plus((Number) new BigInteger("8")).plus((Number) new BigInteger("9")).plus((Number) new BigInteger("10"))), EqualsTestOp.matches((Number) new BigInteger("1"), CollectionHelper.min(TreePVector.<Number>empty().plus((Number) new BigInteger("1")).plus((Number) new BigInteger("2")).plus((Number) new BigInteger("3")).plus((Number) new BigInteger("4")).plus((Number) new BigInteger("5")).plus((Number) new BigInteger("6")).plus((Number) new BigInteger("7")).plus((Number) new BigInteger("8")).plus((Number) new BigInteger("9")).plus((Number) new BigInteger("10")))));
+    Assert.assertTrue("Expected: " + new BigInteger("1") + ", but was: " + CollectionHelper.min(TreePVector.<Number>empty().plus(new BigInteger("1")).plus(new BigInteger("2")).plus(new BigInteger("3")).plus(new BigInteger("4")).plus(new BigInteger("5")).plus(new BigInteger("6")).plus(new BigInteger("7")).plus(new BigInteger("8")).plus(new BigInteger("9")).plus(new BigInteger("10"))), EqualsTestOp.matches(new BigInteger("1"), CollectionHelper.min(TreePVector.<Number>empty().plus(new BigInteger("1")).plus(new BigInteger("2")).plus(new BigInteger("3")).plus(new BigInteger("4")).plus(new BigInteger("5")).plus(new BigInteger("6")).plus(new BigInteger("7")).plus(new BigInteger("8")).plus(new BigInteger("9")).plus(new BigInteger("10")))));
   }
 /* 
    * foreach is still missing, as well as insert and remove
    */
     @Test
   public void collectionListLiteral_item28_9070044578385612589() throws Throwable {
-    Assert.assertTrue("Expected: " + (Number) new BigInteger("1") + ", but was: " + (Number) (((_FunctionTypes._return_P0_E0<InlineRecordType>) () -> {
+    Assert.assertTrue("Expected: " + new BigInteger("1") + ", but was: " + (Number) (((_FunctionTypes._return_P0_E0<InlineRecordType>) () -> {
       PVector<InlineRecordType> listResult = ((_FunctionTypes._return_P0_E0<PVector<InlineRecordType>>) () -> {
         PVector<InlineRecordType> result = TreePVector.empty();
-        for (item it : ListSequence.fromList(TreePVector.<item>empty().plus(new item((Number) new BigInteger("1"), "1")).plus(new item((Number) new BigInteger("2"), "2")))) {
+        for (item it : ListSequence.fromList(TreePVector.<item>empty().plus(new item(new BigInteger("1"), "1")).plus(new item(new BigInteger("2"), "2")))) {
           InlineRecordType irt = new InlineRecordType();
           irt.members.put("num", new InlineRecordTypeMember("num", it.getn()));
           result = result.plus(irt);
@@ -4373,10 +4373,10 @@ public class Generated_collections_Test {
         return result;
       }).invoke();
       return (listResult.isEmpty() ? null : listResult.get(0));
-    }).invoke()).members.get("num").value, EqualsTestOp.matches((Number) new BigInteger("1"), (Number) (((_FunctionTypes._return_P0_E0<InlineRecordType>) () -> {
+    }).invoke()).members.get("num").value, EqualsTestOp.matches(new BigInteger("1"), (Number) (((_FunctionTypes._return_P0_E0<InlineRecordType>) () -> {
       PVector<InlineRecordType> listResult = ((_FunctionTypes._return_P0_E0<PVector<InlineRecordType>>) () -> {
         PVector<InlineRecordType> result = TreePVector.empty();
-        for (item it : ListSequence.fromList(TreePVector.<item>empty().plus(new item((Number) new BigInteger("1"), "1")).plus(new item((Number) new BigInteger("2"), "2")))) {
+        for (item it : ListSequence.fromList(TreePVector.<item>empty().plus(new item(new BigInteger("1"), "1")).plus(new item(new BigInteger("2"), "2")))) {
           InlineRecordType irt = new InlineRecordType();
           irt.members.put("num", new InlineRecordTypeMember("num", it.getn()));
           result = result.plus(irt);
@@ -4391,18 +4391,18 @@ public class Generated_collections_Test {
    */
     @Test
   public void collectionListLiteral_item29_9070044578385612611() throws Throwable {
-    Assert.assertTrue("Expected: " + (Number) new BigInteger("10") + ", but was: " + BigInteger.valueOf(TreePVector.<Number>empty().plus((Number) new BigInteger("1")).plus((Number) new BigInteger("2")).plus((Number) new BigInteger("3")).plus((Number) new BigInteger("4")).plus((Number) new BigInteger("5")).plus((Number) new BigInteger("6")).plus((Number) new BigInteger("7")).plus((Number) new BigInteger("8")).plus((Number) new BigInteger("9")).plus((Number) new BigInteger("10")).size()), EqualsTestOp.matches((Number) new BigInteger("10"), BigInteger.valueOf(TreePVector.<Number>empty().plus((Number) new BigInteger("1")).plus((Number) new BigInteger("2")).plus((Number) new BigInteger("3")).plus((Number) new BigInteger("4")).plus((Number) new BigInteger("5")).plus((Number) new BigInteger("6")).plus((Number) new BigInteger("7")).plus((Number) new BigInteger("8")).plus((Number) new BigInteger("9")).plus((Number) new BigInteger("10")).size())));
+    Assert.assertTrue("Expected: " + new BigInteger("10") + ", but was: " + BigInteger.valueOf(TreePVector.<Number>empty().plus(new BigInteger("1")).plus(new BigInteger("2")).plus(new BigInteger("3")).plus(new BigInteger("4")).plus(new BigInteger("5")).plus(new BigInteger("6")).plus(new BigInteger("7")).plus(new BigInteger("8")).plus(new BigInteger("9")).plus(new BigInteger("10")).size()), EqualsTestOp.matches(new BigInteger("10"), BigInteger.valueOf(TreePVector.<Number>empty().plus(new BigInteger("1")).plus(new BigInteger("2")).plus(new BigInteger("3")).plus(new BigInteger("4")).plus(new BigInteger("5")).plus(new BigInteger("6")).plus(new BigInteger("7")).plus(new BigInteger("8")).plus(new BigInteger("9")).plus(new BigInteger("10")).size())));
   }
 /* 
    * foreach is still missing, as well as insert and remove
    */
     @Test
   public void collectionListLiteral_item30_9070044578385612627() throws Throwable {
-    Assert.assertEquals("Expected: " + TreePVector.<Number>empty().plus((Number) new BigInteger("1")).plus((Number) new BigInteger("2")).plus((Number) new BigInteger("3")).plus((Number) new BigInteger("4")).plus((Number) new BigInteger("5")).plus((Number) new BigInteger("6")).plus((Number) new BigInteger("7")).plus((Number) new BigInteger("8")).plus((Number) new BigInteger("9")).plus((Number) new BigInteger("10")) + ", but was: " + (PVector<Number>) TreePVector.<Number>from(((PCollection<Number>) TreePVector.<Number>empty().plus((Number) new BigInteger("1")).plus((Number) new BigInteger("3")).plus((Number) new BigInteger("2")).plus((Number) new BigInteger("4")).plus((Number) new BigInteger("5")).plus((Number) new BigInteger("6")).plus((Number) new BigInteger("7")).plus((Number) new BigInteger("8")).plus((Number) new BigInteger("9")).plus((Number) new BigInteger("10"))).stream().filter(OH.predicate()).sorted(new Comparator<Number>() {
+    Assert.assertEquals("Expected: " + TreePVector.<Number>empty().plus(new BigInteger("1")).plus(new BigInteger("2")).plus(new BigInteger("3")).plus(new BigInteger("4")).plus(new BigInteger("5")).plus(new BigInteger("6")).plus(new BigInteger("7")).plus(new BigInteger("8")).plus(new BigInteger("9")).plus(new BigInteger("10")) + ", but was: " + TreePVector.<Number>from(TreePVector.<Number>empty().plus(new BigInteger("1")).plus(new BigInteger("3")).plus(new BigInteger("2")).plus(new BigInteger("4")).plus(new BigInteger("5")).plus(new BigInteger("6")).plus(new BigInteger("7")).plus(new BigInteger("8")).plus(new BigInteger("9")).plus(new BigInteger("10")).stream().filter(OH.predicate()).sorted(new Comparator<Number>() {
       public int compare(Number p0, Number p1) {
         return OH.compare(p0, p1);
       }
-    }).collect(Collectors.<Number>toList())), (Object) TreePVector.<Number>empty().plus((Number) new BigInteger("1")).plus((Number) new BigInteger("2")).plus((Number) new BigInteger("3")).plus((Number) new BigInteger("4")).plus((Number) new BigInteger("5")).plus((Number) new BigInteger("6")).plus((Number) new BigInteger("7")).plus((Number) new BigInteger("8")).plus((Number) new BigInteger("9")).plus((Number) new BigInteger("10")), (Object) (PVector<Number>) TreePVector.<Number>from(((PCollection<Number>) TreePVector.<Number>empty().plus((Number) new BigInteger("1")).plus((Number) new BigInteger("3")).plus((Number) new BigInteger("2")).plus((Number) new BigInteger("4")).plus((Number) new BigInteger("5")).plus((Number) new BigInteger("6")).plus((Number) new BigInteger("7")).plus((Number) new BigInteger("8")).plus((Number) new BigInteger("9")).plus((Number) new BigInteger("10"))).stream().filter(OH.predicate()).sorted(new Comparator<Number>() {
+    }).collect(Collectors.<Number>toList())), TreePVector.<Number>empty().plus(new BigInteger("1")).plus(new BigInteger("2")).plus(new BigInteger("3")).plus(new BigInteger("4")).plus(new BigInteger("5")).plus(new BigInteger("6")).plus(new BigInteger("7")).plus(new BigInteger("8")).plus(new BigInteger("9")).plus(new BigInteger("10")), TreePVector.<Number>from(TreePVector.<Number>empty().plus(new BigInteger("1")).plus(new BigInteger("3")).plus(new BigInteger("2")).plus(new BigInteger("4")).plus(new BigInteger("5")).plus(new BigInteger("6")).plus(new BigInteger("7")).plus(new BigInteger("8")).plus(new BigInteger("9")).plus(new BigInteger("10")).stream().filter(OH.predicate()).sorted(new Comparator<Number>() {
       public int compare(Number p0, Number p1) {
         return OH.compare(p0, p1);
       }
@@ -4413,11 +4413,11 @@ public class Generated_collections_Test {
    */
     @Test
   public void collectionListLiteral_item31_9070044578385612653() throws Throwable {
-    Assert.assertEquals("Expected: " + TreePVector.<Number>empty().plus((Number) new BigInteger("10")).plus((Number) new BigInteger("9")).plus((Number) new BigInteger("8")).plus((Number) new BigInteger("7")).plus((Number) new BigInteger("6")).plus((Number) new BigInteger("5")).plus((Number) new BigInteger("4")).plus((Number) new BigInteger("3")).plus((Number) new BigInteger("2")).plus((Number) new BigInteger("1")) + ", but was: " + (PVector<Number>) TreePVector.<Number>from(((PCollection<Number>) TreePVector.<Number>empty().plus((Number) new BigInteger("1")).plus((Number) new BigInteger("2")).plus((Number) new BigInteger("3")).plus((Number) new BigInteger("4")).plus((Number) new BigInteger("5")).plus((Number) new BigInteger("6")).plus((Number) new BigInteger("7")).plus((Number) new BigInteger("8")).plus((Number) new BigInteger("9")).plus((Number) new BigInteger("10"))).stream().filter(OH.predicate()).sorted(new Comparator<Number>() {
+    Assert.assertEquals("Expected: " + TreePVector.<Number>empty().plus(new BigInteger("10")).plus(new BigInteger("9")).plus(new BigInteger("8")).plus(new BigInteger("7")).plus(new BigInteger("6")).plus(new BigInteger("5")).plus(new BigInteger("4")).plus(new BigInteger("3")).plus(new BigInteger("2")).plus(new BigInteger("1")) + ", but was: " + TreePVector.<Number>from(TreePVector.<Number>empty().plus(new BigInteger("1")).plus(new BigInteger("2")).plus(new BigInteger("3")).plus(new BigInteger("4")).plus(new BigInteger("5")).plus(new BigInteger("6")).plus(new BigInteger("7")).plus(new BigInteger("8")).plus(new BigInteger("9")).plus(new BigInteger("10")).stream().filter(OH.predicate()).sorted(new Comparator<Number>() {
       public int compare(Number p0, Number p1) {
         return OH.compare(p1, p0);
       }
-    }).collect(Collectors.<Number>toList())), (Object) TreePVector.<Number>empty().plus((Number) new BigInteger("10")).plus((Number) new BigInteger("9")).plus((Number) new BigInteger("8")).plus((Number) new BigInteger("7")).plus((Number) new BigInteger("6")).plus((Number) new BigInteger("5")).plus((Number) new BigInteger("4")).plus((Number) new BigInteger("3")).plus((Number) new BigInteger("2")).plus((Number) new BigInteger("1")), (Object) (PVector<Number>) TreePVector.<Number>from(((PCollection<Number>) TreePVector.<Number>empty().plus((Number) new BigInteger("1")).plus((Number) new BigInteger("2")).plus((Number) new BigInteger("3")).plus((Number) new BigInteger("4")).plus((Number) new BigInteger("5")).plus((Number) new BigInteger("6")).plus((Number) new BigInteger("7")).plus((Number) new BigInteger("8")).plus((Number) new BigInteger("9")).plus((Number) new BigInteger("10"))).stream().filter(OH.predicate()).sorted(new Comparator<Number>() {
+    }).collect(Collectors.<Number>toList())), TreePVector.<Number>empty().plus(new BigInteger("10")).plus(new BigInteger("9")).plus(new BigInteger("8")).plus(new BigInteger("7")).plus(new BigInteger("6")).plus(new BigInteger("5")).plus(new BigInteger("4")).plus(new BigInteger("3")).plus(new BigInteger("2")).plus(new BigInteger("1")), TreePVector.<Number>from(TreePVector.<Number>empty().plus(new BigInteger("1")).plus(new BigInteger("2")).plus(new BigInteger("3")).plus(new BigInteger("4")).plus(new BigInteger("5")).plus(new BigInteger("6")).plus(new BigInteger("7")).plus(new BigInteger("8")).plus(new BigInteger("9")).plus(new BigInteger("10")).stream().filter(OH.predicate()).sorted(new Comparator<Number>() {
       public int compare(Number p0, Number p1) {
         return OH.compare(p1, p0);
       }
@@ -4428,23 +4428,23 @@ public class Generated_collections_Test {
    */
     @Test
   public void collectionListLiteral_item32_9070044578385612679() throws Throwable {
-    Assert.assertTrue("Expected: " + (Number) new BigInteger("55") + ", but was: " + CollectionHelper.sumAsBigInteger(TreePVector.<Number>empty().plus((Number) new BigInteger("1")).plus((Number) new BigInteger("2")).plus((Number) new BigInteger("3")).plus((Number) new BigInteger("4")).plus((Number) new BigInteger("5")).plus((Number) new BigInteger("6")).plus((Number) new BigInteger("7")).plus((Number) new BigInteger("8")).plus((Number) new BigInteger("9")).plus((Number) new BigInteger("10"))), EqualsTestOp.matches((Number) new BigInteger("55"), CollectionHelper.sumAsBigInteger(TreePVector.<Number>empty().plus((Number) new BigInteger("1")).plus((Number) new BigInteger("2")).plus((Number) new BigInteger("3")).plus((Number) new BigInteger("4")).plus((Number) new BigInteger("5")).plus((Number) new BigInteger("6")).plus((Number) new BigInteger("7")).plus((Number) new BigInteger("8")).plus((Number) new BigInteger("9")).plus((Number) new BigInteger("10")))));
+    Assert.assertTrue("Expected: " + new BigInteger("55") + ", but was: " + CollectionHelper.sumAsBigInteger(TreePVector.<Number>empty().plus(new BigInteger("1")).plus(new BigInteger("2")).plus(new BigInteger("3")).plus(new BigInteger("4")).plus(new BigInteger("5")).plus(new BigInteger("6")).plus(new BigInteger("7")).plus(new BigInteger("8")).plus(new BigInteger("9")).plus(new BigInteger("10"))), EqualsTestOp.matches(new BigInteger("55"), CollectionHelper.sumAsBigInteger(TreePVector.<Number>empty().plus(new BigInteger("1")).plus(new BigInteger("2")).plus(new BigInteger("3")).plus(new BigInteger("4")).plus(new BigInteger("5")).plus(new BigInteger("6")).plus(new BigInteger("7")).plus(new BigInteger("8")).plus(new BigInteger("9")).plus(new BigInteger("10")))));
   }
 /* 
    * foreach is still missing, as well as insert and remove
    */
     @Test
   public void collectionListLiteral_item33_9070044578385612695() throws Throwable {
-    Assert.assertEquals("Expected: " + TreePVector.<Number>empty().plus((Number) new BigInteger("10")) + ", but was: " + (((_FunctionTypes._return_P0_E0<PVector<Number>>) () -> {
-      PVector<Number> origList = TreePVector.<Number>empty().plus((Number) new BigInteger("1")).plus((Number) new BigInteger("2")).plus((Number) new BigInteger("3")).plus((Number) new BigInteger("4")).plus((Number) new BigInteger("5")).plus((Number) new BigInteger("6")).plus((Number) new BigInteger("7")).plus((Number) new BigInteger("8")).plus((Number) new BigInteger("9")).plus((Number) new BigInteger("10"));
-      int noOfElements = ((Number) new BigInteger("1")).intValue();
+    Assert.assertEquals("Expected: " + TreePVector.<Number>empty().plus(new BigInteger("10")) + ", but was: " + (((_FunctionTypes._return_P0_E0<PVector<Number>>) () -> {
+      PVector<Number> origList = TreePVector.<Number>empty().plus(new BigInteger("1")).plus(new BigInteger("2")).plus(new BigInteger("3")).plus(new BigInteger("4")).plus(new BigInteger("5")).plus(new BigInteger("6")).plus(new BigInteger("7")).plus(new BigInteger("8")).plus(new BigInteger("9")).plus(new BigInteger("10"));
+      int noOfElements = new BigInteger("1").intValue();
       if (origList.size() <= noOfElements) {
         return origList;
       }
       return origList.subList(origList.size() - noOfElements, origList.size());
-    }).invoke()), (Object) TreePVector.<Number>empty().plus((Number) new BigInteger("10")), (Object) ((_FunctionTypes._return_P0_E0<PVector<Number>>) () -> {
-      PVector<Number> origList = TreePVector.<Number>empty().plus((Number) new BigInteger("1")).plus((Number) new BigInteger("2")).plus((Number) new BigInteger("3")).plus((Number) new BigInteger("4")).plus((Number) new BigInteger("5")).plus((Number) new BigInteger("6")).plus((Number) new BigInteger("7")).plus((Number) new BigInteger("8")).plus((Number) new BigInteger("9")).plus((Number) new BigInteger("10"));
-      int noOfElements = ((Number) new BigInteger("1")).intValue();
+    }).invoke()), TreePVector.<Number>empty().plus(new BigInteger("10")), (Object) ((_FunctionTypes._return_P0_E0<PVector<Number>>) () -> {
+      PVector<Number> origList = TreePVector.<Number>empty().plus(new BigInteger("1")).plus(new BigInteger("2")).plus(new BigInteger("3")).plus(new BigInteger("4")).plus(new BigInteger("5")).plus(new BigInteger("6")).plus(new BigInteger("7")).plus(new BigInteger("8")).plus(new BigInteger("9")).plus(new BigInteger("10"));
+      int noOfElements = new BigInteger("1").intValue();
       if (origList.size() <= noOfElements) {
         return origList;
       }
@@ -4456,25 +4456,25 @@ public class Generated_collections_Test {
    */
     @Test
   public void collectionListLiteral_item34_9070044578385612713() throws Throwable {
-    Assert.assertEquals("Expected: " + TreePVector.<Number>empty().plus((Number) new BigInteger("1")).plus((Number) new BigInteger("2")).plus((Number) new BigInteger("3")).plus((Number) new BigInteger("4")).plus((Number) new BigInteger("5")).plus((Number) new BigInteger("6")).plus((Number) new BigInteger("7")).plus((Number) new BigInteger("8")).plus((Number) new BigInteger("9")).plus((Number) new BigInteger("10")) + ", but was: " + TreePVector.from(TreePVector.<Number>empty().plus((Number) new BigInteger("1")).plus((Number) new BigInteger("2")).plus((Number) new BigInteger("3")).plus((Number) new BigInteger("4")).plus((Number) new BigInteger("5")).plus((Number) new BigInteger("6")).plus((Number) new BigInteger("7")).plus((Number) new BigInteger("8")).plus((Number) new BigInteger("9")).plus((Number) new BigInteger("10"))), (Object) TreePVector.<Number>empty().plus((Number) new BigInteger("1")).plus((Number) new BigInteger("2")).plus((Number) new BigInteger("3")).plus((Number) new BigInteger("4")).plus((Number) new BigInteger("5")).plus((Number) new BigInteger("6")).plus((Number) new BigInteger("7")).plus((Number) new BigInteger("8")).plus((Number) new BigInteger("9")).plus((Number) new BigInteger("10")), (Object) TreePVector.from(TreePVector.<Number>empty().plus((Number) new BigInteger("1")).plus((Number) new BigInteger("2")).plus((Number) new BigInteger("3")).plus((Number) new BigInteger("4")).plus((Number) new BigInteger("5")).plus((Number) new BigInteger("6")).plus((Number) new BigInteger("7")).plus((Number) new BigInteger("8")).plus((Number) new BigInteger("9")).plus((Number) new BigInteger("10"))));
+    Assert.assertEquals("Expected: " + TreePVector.<Number>empty().plus(new BigInteger("1")).plus(new BigInteger("2")).plus(new BigInteger("3")).plus(new BigInteger("4")).plus(new BigInteger("5")).plus(new BigInteger("6")).plus(new BigInteger("7")).plus(new BigInteger("8")).plus(new BigInteger("9")).plus(new BigInteger("10")) + ", but was: " + TreePVector.from(TreePVector.<Number>empty().plus(new BigInteger("1")).plus(new BigInteger("2")).plus(new BigInteger("3")).plus(new BigInteger("4")).plus(new BigInteger("5")).plus(new BigInteger("6")).plus(new BigInteger("7")).plus(new BigInteger("8")).plus(new BigInteger("9")).plus(new BigInteger("10"))), TreePVector.<Number>empty().plus(new BigInteger("1")).plus(new BigInteger("2")).plus(new BigInteger("3")).plus(new BigInteger("4")).plus(new BigInteger("5")).plus(new BigInteger("6")).plus(new BigInteger("7")).plus(new BigInteger("8")).plus(new BigInteger("9")).plus(new BigInteger("10")), TreePVector.from(TreePVector.<Number>empty().plus(new BigInteger("1")).plus(new BigInteger("2")).plus(new BigInteger("3")).plus(new BigInteger("4")).plus(new BigInteger("5")).plus(new BigInteger("6")).plus(new BigInteger("7")).plus(new BigInteger("8")).plus(new BigInteger("9")).plus(new BigInteger("10"))));
   }
 /* 
    * foreach is still missing, as well as insert and remove
    */
     @Test
   public void collectionListLiteral_item35_9070044578385612739() throws Throwable {
-    Assert.assertEquals("Expected: " + HashTreePSet.from(Arrays.asList((Number) new BigInteger("1"), (Number) new BigInteger("2"), (Number) new BigInteger("3"), (Number) new BigInteger("4"), (Number) new BigInteger("5"), (Number) new BigInteger("6"), (Number) new BigInteger("7"), (Number) new BigInteger("8"), (Number) new BigInteger("9"), (Number) new BigInteger("10"))) + ", but was: " + HashTreePSet.from(TreePVector.<Number>empty().plus((Number) new BigInteger("1")).plus((Number) new BigInteger("2")).plus((Number) new BigInteger("3")).plus((Number) new BigInteger("4")).plus((Number) new BigInteger("5")).plus((Number) new BigInteger("6")).plus((Number) new BigInteger("7")).plus((Number) new BigInteger("8")).plus((Number) new BigInteger("9")).plus((Number) new BigInteger("10"))), (Object) HashTreePSet.from(Arrays.asList((Number) new BigInteger("1"), (Number) new BigInteger("2"), (Number) new BigInteger("3"), (Number) new BigInteger("4"), (Number) new BigInteger("5"), (Number) new BigInteger("6"), (Number) new BigInteger("7"), (Number) new BigInteger("8"), (Number) new BigInteger("9"), (Number) new BigInteger("10"))), (Object) HashTreePSet.from(TreePVector.<Number>empty().plus((Number) new BigInteger("1")).plus((Number) new BigInteger("2")).plus((Number) new BigInteger("3")).plus((Number) new BigInteger("4")).plus((Number) new BigInteger("5")).plus((Number) new BigInteger("6")).plus((Number) new BigInteger("7")).plus((Number) new BigInteger("8")).plus((Number) new BigInteger("9")).plus((Number) new BigInteger("10"))));
+    Assert.assertEquals("Expected: " + HashTreePSet.from(Arrays.asList((Number) new BigInteger("1"), (Number) new BigInteger("2"), (Number) new BigInteger("3"), (Number) new BigInteger("4"), (Number) new BigInteger("5"), (Number) new BigInteger("6"), (Number) new BigInteger("7"), (Number) new BigInteger("8"), (Number) new BigInteger("9"), (Number) new BigInteger("10"))) + ", but was: " + HashTreePSet.from(TreePVector.<Number>empty().plus(new BigInteger("1")).plus(new BigInteger("2")).plus(new BigInteger("3")).plus(new BigInteger("4")).plus(new BigInteger("5")).plus(new BigInteger("6")).plus(new BigInteger("7")).plus(new BigInteger("8")).plus(new BigInteger("9")).plus(new BigInteger("10"))), HashTreePSet.from(Arrays.asList((Number) new BigInteger("1"), (Number) new BigInteger("2"), (Number) new BigInteger("3"), (Number) new BigInteger("4"), (Number) new BigInteger("5"), (Number) new BigInteger("6"), (Number) new BigInteger("7"), (Number) new BigInteger("8"), (Number) new BigInteger("9"), (Number) new BigInteger("10"))), HashTreePSet.from(TreePVector.<Number>empty().plus(new BigInteger("1")).plus(new BigInteger("2")).plus(new BigInteger("3")).plus(new BigInteger("4")).plus(new BigInteger("5")).plus(new BigInteger("6")).plus(new BigInteger("7")).plus(new BigInteger("8")).plus(new BigInteger("9")).plus(new BigInteger("10"))));
   }
 /* 
    * foreach is still missing, as well as insert and remove
    */
     @Test
   public void collectionListLiteral_item36_9070044578385612765() throws Throwable {
-    Assert.assertEquals("Expected: " + TreePVector.<Number>empty().plus((Number) new BigInteger("1")).plus((Number) new BigInteger("2")) + ", but was: " + TreePVector.<Number>from(TreePVector.<Number>empty().plus((Number) new BigInteger("1")).plus((Number) new BigInteger("2")).stream().filter(new Predicate<Number>() {
+    Assert.assertEquals("Expected: " + TreePVector.<Number>empty().plus(new BigInteger("1")).plus(new BigInteger("2")) + ", but was: " + TreePVector.<Number>from(TreePVector.<Number>empty().plus(new BigInteger("1")).plus(new BigInteger("2")).stream().filter(new Predicate<Number>() {
       public boolean test(Number p0) {
         return p0 != null;
       }
-    }).collect(Collectors.<Number>toList())), (Object) TreePVector.<Number>empty().plus((Number) new BigInteger("1")).plus((Number) new BigInteger("2")), (Object) TreePVector.<Number>from(TreePVector.<Number>empty().plus((Number) new BigInteger("1")).plus((Number) new BigInteger("2")).stream().filter(new Predicate<Number>() {
+    }).collect(Collectors.<Number>toList())), TreePVector.<Number>empty().plus(new BigInteger("1")).plus(new BigInteger("2")), TreePVector.<Number>from(TreePVector.<Number>empty().plus(new BigInteger("1")).plus(new BigInteger("2")).stream().filter(new Predicate<Number>() {
       public boolean test(Number p0) {
         return p0 != null;
       }
@@ -4485,21 +4485,21 @@ public class Generated_collections_Test {
    */
     @Test
   public void collectionListLiteral_item37_9070044578385612777() throws Throwable {
-    Assert.assertEquals("Expected: " + TreePVector.<Number>empty().plus((Number) new BigInteger("1")).plus((Number) new BigInteger("2")) + ", but was: " + TreePVector.<Number>from(TreePVector.<Number>empty().plus((Number) new BigInteger("1")).plus((Number) new BigInteger("2")).plus((Number) new BigInteger("3")).plus((Number) new BigInteger("4")).plus((Number) new BigInteger("5")).plus((Number) new BigInteger("6")).plus((Number) new BigInteger("7")).plus((Number) new BigInteger("8")).plus((Number) new BigInteger("9")).plus((Number) new BigInteger("10")).stream().filter(new Predicate<Number>() {
+    Assert.assertEquals("Expected: " + TreePVector.<Number>empty().plus(new BigInteger("1")).plus(new BigInteger("2")) + ", but was: " + TreePVector.<Number>from(TreePVector.<Number>empty().plus(new BigInteger("1")).plus(new BigInteger("2")).plus(new BigInteger("3")).plus(new BigInteger("4")).plus(new BigInteger("5")).plus(new BigInteger("6")).plus(new BigInteger("7")).plus(new BigInteger("8")).plus(new BigInteger("9")).plus(new BigInteger("10")).stream().filter(new Predicate<Number>() {
       public boolean test(Number o) {
         return new Function<ParameterSetWrapper, Boolean>() {
           public Boolean apply(ParameterSetWrapper param) {
             Number it = (Number) param.parameters.get(0);
-            return AH.isLess(it, (Number) new BigInteger("3"));
+            return AH.isLess(it, new BigInteger("3"));
           }
         }.apply(new ParameterSetWrapper(o));
       }
-    }).collect(Collectors.<Number>toList())), (Object) TreePVector.<Number>empty().plus((Number) new BigInteger("1")).plus((Number) new BigInteger("2")), (Object) TreePVector.<Number>from(TreePVector.<Number>empty().plus((Number) new BigInteger("1")).plus((Number) new BigInteger("2")).plus((Number) new BigInteger("3")).plus((Number) new BigInteger("4")).plus((Number) new BigInteger("5")).plus((Number) new BigInteger("6")).plus((Number) new BigInteger("7")).plus((Number) new BigInteger("8")).plus((Number) new BigInteger("9")).plus((Number) new BigInteger("10")).stream().filter(new Predicate<Number>() {
+    }).collect(Collectors.<Number>toList())), TreePVector.<Number>empty().plus(new BigInteger("1")).plus(new BigInteger("2")), TreePVector.<Number>from(TreePVector.<Number>empty().plus(new BigInteger("1")).plus(new BigInteger("2")).plus(new BigInteger("3")).plus(new BigInteger("4")).plus(new BigInteger("5")).plus(new BigInteger("6")).plus(new BigInteger("7")).plus(new BigInteger("8")).plus(new BigInteger("9")).plus(new BigInteger("10")).stream().filter(new Predicate<Number>() {
       public boolean test(Number o) {
         return new Function<ParameterSetWrapper, Boolean>() {
           public Boolean apply(ParameterSetWrapper param) {
             Number it = (Number) param.parameters.get(0);
-            return AH.isLess(it, (Number) new BigInteger("3"));
+            return AH.isLess(it, new BigInteger("3"));
           }
         }.apply(new ParameterSetWrapper(o));
       }
@@ -4510,21 +4510,21 @@ public class Generated_collections_Test {
    */
     @Test
   public void collectionListLiteral_item38_9070044578385612799() throws Throwable {
-    Assert.assertEquals("Expected: " + TreePVector.<Number>empty().plus((Number) new BigInteger("1")).plus((Number) new BigInteger("2")) + ", but was: " + TreePVector.<Number>from(TreePVector.<Number>empty().plus((Number) new BigInteger("1")).plus((Number) new BigInteger("2")).plus((Number) new BigInteger("3")).plus((Number) new BigInteger("4")).plus((Number) new BigInteger("5")).plus((Number) new BigInteger("6")).plus((Number) new BigInteger("7")).plus((Number) new BigInteger("8")).plus((Number) new BigInteger("9")).plus((Number) new BigInteger("10")).stream().filter(new Predicate<Number>() {
+    Assert.assertEquals("Expected: " + TreePVector.<Number>empty().plus(new BigInteger("1")).plus(new BigInteger("2")) + ", but was: " + TreePVector.<Number>from(TreePVector.<Number>empty().plus(new BigInteger("1")).plus(new BigInteger("2")).plus(new BigInteger("3")).plus(new BigInteger("4")).plus(new BigInteger("5")).plus(new BigInteger("6")).plus(new BigInteger("7")).plus(new BigInteger("8")).plus(new BigInteger("9")).plus(new BigInteger("10")).stream().filter(new Predicate<Number>() {
       public boolean test(Number o) {
         return new Function<ParameterSetWrapper, Boolean>() {
           public Boolean apply(ParameterSetWrapper param) {
             Number a = (Number) param.parameters.get(0);
-            return AH.isLess(a, (Number) new BigInteger("3"));
+            return AH.isLess(a, new BigInteger("3"));
           }
         }.apply(new ParameterSetWrapper(o));
       }
-    }).collect(Collectors.<Number>toList())), (Object) TreePVector.<Number>empty().plus((Number) new BigInteger("1")).plus((Number) new BigInteger("2")), (Object) TreePVector.<Number>from(TreePVector.<Number>empty().plus((Number) new BigInteger("1")).plus((Number) new BigInteger("2")).plus((Number) new BigInteger("3")).plus((Number) new BigInteger("4")).plus((Number) new BigInteger("5")).plus((Number) new BigInteger("6")).plus((Number) new BigInteger("7")).plus((Number) new BigInteger("8")).plus((Number) new BigInteger("9")).plus((Number) new BigInteger("10")).stream().filter(new Predicate<Number>() {
+    }).collect(Collectors.<Number>toList())), TreePVector.<Number>empty().plus(new BigInteger("1")).plus(new BigInteger("2")), TreePVector.<Number>from(TreePVector.<Number>empty().plus(new BigInteger("1")).plus(new BigInteger("2")).plus(new BigInteger("3")).plus(new BigInteger("4")).plus(new BigInteger("5")).plus(new BigInteger("6")).plus(new BigInteger("7")).plus(new BigInteger("8")).plus(new BigInteger("9")).plus(new BigInteger("10")).stream().filter(new Predicate<Number>() {
       public boolean test(Number o) {
         return new Function<ParameterSetWrapper, Boolean>() {
           public Boolean apply(ParameterSetWrapper param) {
             Number a = (Number) param.parameters.get(0);
-            return AH.isLess(a, (Number) new BigInteger("3"));
+            return AH.isLess(a, new BigInteger("3"));
           }
         }.apply(new ParameterSetWrapper(o));
       }
@@ -4535,7 +4535,7 @@ public class Generated_collections_Test {
    */
     @Test
   public void collectionListLiteral_item39_9070044578385612824() throws Throwable {
-    Assert.assertEquals("Expected: " + TreePVector.<Number>empty().plus((Number) new BigInteger("1")).plus((Number) new BigInteger("2")).plus((Number) new BigInteger("3")).plus((Number) new BigInteger("4")).plus((Number) new BigInteger("5")).plus((Number) new BigInteger("6")).plus((Number) new BigInteger("7")).plus((Number) new BigInteger("8")).plus((Number) new BigInteger("9")).plus((Number) new BigInteger("10")) + ", but was: " + TreePVector.<Number>from(TreePVector.<Number>empty().plus((Number) new BigInteger("1")).plus((Number) new BigInteger("2")).plus((Number) new BigInteger("3")).plus((Number) new BigInteger("4")).plus((Number) new BigInteger("5")).plus((Number) new BigInteger("6")).plus((Number) new BigInteger("7")).plus((Number) new BigInteger("8")).plus((Number) new BigInteger("9")).plus((Number) new BigInteger("10")).stream().filter(new Predicate<Number>() {
+    Assert.assertEquals("Expected: " + TreePVector.<Number>empty().plus(new BigInteger("1")).plus(new BigInteger("2")).plus(new BigInteger("3")).plus(new BigInteger("4")).plus(new BigInteger("5")).plus(new BigInteger("6")).plus(new BigInteger("7")).plus(new BigInteger("8")).plus(new BigInteger("9")).plus(new BigInteger("10")) + ", but was: " + TreePVector.<Number>from(TreePVector.<Number>empty().plus(new BigInteger("1")).plus(new BigInteger("2")).plus(new BigInteger("3")).plus(new BigInteger("4")).plus(new BigInteger("5")).plus(new BigInteger("6")).plus(new BigInteger("7")).plus(new BigInteger("8")).plus(new BigInteger("9")).plus(new BigInteger("10")).stream().filter(new Predicate<Number>() {
       public boolean test(Number o) {
         return new Function<ParameterSetWrapper, Boolean>() {
           public Boolean apply(ParameterSetWrapper param) {
@@ -4543,7 +4543,7 @@ public class Generated_collections_Test {
           }
         }.apply(new ParameterSetWrapper(o));
       }
-    }).collect(Collectors.<Number>toList())), (Object) TreePVector.<Number>empty().plus((Number) new BigInteger("1")).plus((Number) new BigInteger("2")).plus((Number) new BigInteger("3")).plus((Number) new BigInteger("4")).plus((Number) new BigInteger("5")).plus((Number) new BigInteger("6")).plus((Number) new BigInteger("7")).plus((Number) new BigInteger("8")).plus((Number) new BigInteger("9")).plus((Number) new BigInteger("10")), (Object) TreePVector.<Number>from(TreePVector.<Number>empty().plus((Number) new BigInteger("1")).plus((Number) new BigInteger("2")).plus((Number) new BigInteger("3")).plus((Number) new BigInteger("4")).plus((Number) new BigInteger("5")).plus((Number) new BigInteger("6")).plus((Number) new BigInteger("7")).plus((Number) new BigInteger("8")).plus((Number) new BigInteger("9")).plus((Number) new BigInteger("10")).stream().filter(new Predicate<Number>() {
+    }).collect(Collectors.<Number>toList())), TreePVector.<Number>empty().plus(new BigInteger("1")).plus(new BigInteger("2")).plus(new BigInteger("3")).plus(new BigInteger("4")).plus(new BigInteger("5")).plus(new BigInteger("6")).plus(new BigInteger("7")).plus(new BigInteger("8")).plus(new BigInteger("9")).plus(new BigInteger("10")), TreePVector.<Number>from(TreePVector.<Number>empty().plus(new BigInteger("1")).plus(new BigInteger("2")).plus(new BigInteger("3")).plus(new BigInteger("4")).plus(new BigInteger("5")).plus(new BigInteger("6")).plus(new BigInteger("7")).plus(new BigInteger("8")).plus(new BigInteger("9")).plus(new BigInteger("10")).stream().filter(new Predicate<Number>() {
       public boolean test(Number o) {
         return new Function<ParameterSetWrapper, Boolean>() {
           public Boolean apply(ParameterSetWrapper param) {
@@ -4558,21 +4558,21 @@ public class Generated_collections_Test {
    */
     @Test
   public void collectionListLiteral_item40_9070044578385612851() throws Throwable {
-    Assert.assertEquals("Expected: " + TreePVector.<Number>empty().plus((Number) new BigInteger("1")).plus((Number) new BigInteger("2")).plus((Number) new BigInteger("3")).plus((Number) new BigInteger("4")).plus((Number) new BigInteger("5")).plus((Number) new BigInteger("6")).plus((Number) new BigInteger("7")).plus((Number) new BigInteger("8")).plus((Number) new BigInteger("9")).plus((Number) new BigInteger("10")).plus((Number) new BigInteger("11")) + ", but was: " + TreePVector.<Number>empty().plus((Number) new BigInteger("1")).plus((Number) new BigInteger("2")).plus((Number) new BigInteger("3")).plus((Number) new BigInteger("4")).plus((Number) new BigInteger("5")).plus((Number) new BigInteger("6")).plus((Number) new BigInteger("7")).plus((Number) new BigInteger("8")).plus((Number) new BigInteger("9")).plus((Number) new BigInteger("10")).plus((Number) new BigInteger("11")), (Object) TreePVector.<Number>empty().plus((Number) new BigInteger("1")).plus((Number) new BigInteger("2")).plus((Number) new BigInteger("3")).plus((Number) new BigInteger("4")).plus((Number) new BigInteger("5")).plus((Number) new BigInteger("6")).plus((Number) new BigInteger("7")).plus((Number) new BigInteger("8")).plus((Number) new BigInteger("9")).plus((Number) new BigInteger("10")).plus((Number) new BigInteger("11")), (Object) TreePVector.<Number>empty().plus((Number) new BigInteger("1")).plus((Number) new BigInteger("2")).plus((Number) new BigInteger("3")).plus((Number) new BigInteger("4")).plus((Number) new BigInteger("5")).plus((Number) new BigInteger("6")).plus((Number) new BigInteger("7")).plus((Number) new BigInteger("8")).plus((Number) new BigInteger("9")).plus((Number) new BigInteger("10")).plus((Number) new BigInteger("11")));
+    Assert.assertEquals("Expected: " + TreePVector.<Number>empty().plus(new BigInteger("1")).plus(new BigInteger("2")).plus(new BigInteger("3")).plus(new BigInteger("4")).plus(new BigInteger("5")).plus(new BigInteger("6")).plus(new BigInteger("7")).plus(new BigInteger("8")).plus(new BigInteger("9")).plus(new BigInteger("10")).plus(new BigInteger("11")) + ", but was: " + TreePVector.<Number>empty().plus(new BigInteger("1")).plus(new BigInteger("2")).plus(new BigInteger("3")).plus(new BigInteger("4")).plus(new BigInteger("5")).plus(new BigInteger("6")).plus(new BigInteger("7")).plus(new BigInteger("8")).plus(new BigInteger("9")).plus(new BigInteger("10")).plus(new BigInteger("11")), TreePVector.<Number>empty().plus(new BigInteger("1")).plus(new BigInteger("2")).plus(new BigInteger("3")).plus(new BigInteger("4")).plus(new BigInteger("5")).plus(new BigInteger("6")).plus(new BigInteger("7")).plus(new BigInteger("8")).plus(new BigInteger("9")).plus(new BigInteger("10")).plus(new BigInteger("11")), TreePVector.<Number>empty().plus(new BigInteger("1")).plus(new BigInteger("2")).plus(new BigInteger("3")).plus(new BigInteger("4")).plus(new BigInteger("5")).plus(new BigInteger("6")).plus(new BigInteger("7")).plus(new BigInteger("8")).plus(new BigInteger("9")).plus(new BigInteger("10")).plus(new BigInteger("11")));
   }
 /* 
    * foreach is still missing, as well as insert and remove
    */
     @Test
   public void collectionListLiteral_item41_9070044578385612882() throws Throwable {
-    Assert.assertEquals("Expected: " + TreePVector.<Number>empty().plus((Number) new BigInteger("1")).plus((Number) new BigInteger("2")).plus((Number) new BigInteger("3")).plus((Number) new BigInteger("4")).plus((Number) new BigInteger("5")).plus((Number) new BigInteger("6")).plus((Number) new BigInteger("7")).plus((Number) new BigInteger("8")).plus((Number) new BigInteger("9")).plus((Number) new BigInteger("10")).plus((Number) new BigInteger("11")).plus((Number) new BigInteger("12")) + ", but was: " + TreePVector.<Number>empty().plus((Number) new BigInteger("1")).plus((Number) new BigInteger("2")).plus((Number) new BigInteger("3")).plus((Number) new BigInteger("4")).plus((Number) new BigInteger("5")).plus((Number) new BigInteger("6")).plus((Number) new BigInteger("7")).plus((Number) new BigInteger("8")).plus((Number) new BigInteger("9")).plus((Number) new BigInteger("10")).plusAll(TreePVector.<Number>empty().plus((Number) new BigInteger("11")).plus((Number) new BigInteger("12"))), (Object) TreePVector.<Number>empty().plus((Number) new BigInteger("1")).plus((Number) new BigInteger("2")).plus((Number) new BigInteger("3")).plus((Number) new BigInteger("4")).plus((Number) new BigInteger("5")).plus((Number) new BigInteger("6")).plus((Number) new BigInteger("7")).plus((Number) new BigInteger("8")).plus((Number) new BigInteger("9")).plus((Number) new BigInteger("10")).plus((Number) new BigInteger("11")).plus((Number) new BigInteger("12")), (Object) TreePVector.<Number>empty().plus((Number) new BigInteger("1")).plus((Number) new BigInteger("2")).plus((Number) new BigInteger("3")).plus((Number) new BigInteger("4")).plus((Number) new BigInteger("5")).plus((Number) new BigInteger("6")).plus((Number) new BigInteger("7")).plus((Number) new BigInteger("8")).plus((Number) new BigInteger("9")).plus((Number) new BigInteger("10")).plusAll(TreePVector.<Number>empty().plus((Number) new BigInteger("11")).plus((Number) new BigInteger("12"))));
+    Assert.assertEquals("Expected: " + TreePVector.<Number>empty().plus(new BigInteger("1")).plus(new BigInteger("2")).plus(new BigInteger("3")).plus(new BigInteger("4")).plus(new BigInteger("5")).plus(new BigInteger("6")).plus(new BigInteger("7")).plus(new BigInteger("8")).plus(new BigInteger("9")).plus(new BigInteger("10")).plus(new BigInteger("11")).plus(new BigInteger("12")) + ", but was: " + TreePVector.<Number>empty().plus(new BigInteger("1")).plus(new BigInteger("2")).plus(new BigInteger("3")).plus(new BigInteger("4")).plus(new BigInteger("5")).plus(new BigInteger("6")).plus(new BigInteger("7")).plus(new BigInteger("8")).plus(new BigInteger("9")).plus(new BigInteger("10")).plusAll(TreePVector.<Number>empty().plus(new BigInteger("11")).plus(new BigInteger("12"))), TreePVector.<Number>empty().plus(new BigInteger("1")).plus(new BigInteger("2")).plus(new BigInteger("3")).plus(new BigInteger("4")).plus(new BigInteger("5")).plus(new BigInteger("6")).plus(new BigInteger("7")).plus(new BigInteger("8")).plus(new BigInteger("9")).plus(new BigInteger("10")).plus(new BigInteger("11")).plus(new BigInteger("12")), TreePVector.<Number>empty().plus(new BigInteger("1")).plus(new BigInteger("2")).plus(new BigInteger("3")).plus(new BigInteger("4")).plus(new BigInteger("5")).plus(new BigInteger("6")).plus(new BigInteger("7")).plus(new BigInteger("8")).plus(new BigInteger("9")).plus(new BigInteger("10")).plusAll(TreePVector.<Number>empty().plus(new BigInteger("11")).plus(new BigInteger("12"))));
   }
 /* 
    * foreach is still missing, as well as insert and remove
    */
     @Test
   public void collectionListLiteral_item42_32857128010993567() throws Throwable {
-    Assert.assertEquals("Expected: " + TreePVector.<Number>empty().plus((Number) new BigInteger("1")).plus((Number) new BigInteger("2")).plus((Number) new BigInteger("3")).plus((Number) new BigInteger("4")).plus((Number) new BigInteger("5")).plus((Number) new BigInteger("6")).plus((Number) new BigInteger("7")).plus((Number) new BigInteger("8")).plus((Number) new BigInteger("9")) + ", but was: " + TreePVector.<Number>empty().plus((Number) new BigInteger("1")).plus((Number) new BigInteger("2")).plus((Number) new BigInteger("3")).plus((Number) new BigInteger("4")).plus((Number) new BigInteger("5")).plus((Number) new BigInteger("6")).plus((Number) new BigInteger("7")).plus((Number) new BigInteger("8")).plus((Number) new BigInteger("9")).plus((Number) new BigInteger("10")).minus((Number) new BigInteger("10")), (Object) TreePVector.<Number>empty().plus((Number) new BigInteger("1")).plus((Number) new BigInteger("2")).plus((Number) new BigInteger("3")).plus((Number) new BigInteger("4")).plus((Number) new BigInteger("5")).plus((Number) new BigInteger("6")).plus((Number) new BigInteger("7")).plus((Number) new BigInteger("8")).plus((Number) new BigInteger("9")), (Object) TreePVector.<Number>empty().plus((Number) new BigInteger("1")).plus((Number) new BigInteger("2")).plus((Number) new BigInteger("3")).plus((Number) new BigInteger("4")).plus((Number) new BigInteger("5")).plus((Number) new BigInteger("6")).plus((Number) new BigInteger("7")).plus((Number) new BigInteger("8")).plus((Number) new BigInteger("9")).plus((Number) new BigInteger("10")).minus((Number) new BigInteger("10")));
+    Assert.assertEquals("Expected: " + TreePVector.<Number>empty().plus(new BigInteger("1")).plus(new BigInteger("2")).plus(new BigInteger("3")).plus(new BigInteger("4")).plus(new BigInteger("5")).plus(new BigInteger("6")).plus(new BigInteger("7")).plus(new BigInteger("8")).plus(new BigInteger("9")) + ", but was: " + TreePVector.<Number>empty().plus(new BigInteger("1")).plus(new BigInteger("2")).plus(new BigInteger("3")).plus(new BigInteger("4")).plus(new BigInteger("5")).plus(new BigInteger("6")).plus(new BigInteger("7")).plus(new BigInteger("8")).plus(new BigInteger("9")).plus(new BigInteger("10")).minus((Number) new BigInteger("10")), TreePVector.<Number>empty().plus(new BigInteger("1")).plus(new BigInteger("2")).plus(new BigInteger("3")).plus(new BigInteger("4")).plus(new BigInteger("5")).plus(new BigInteger("6")).plus(new BigInteger("7")).plus(new BigInteger("8")).plus(new BigInteger("9")), TreePVector.<Number>empty().plus(new BigInteger("1")).plus(new BigInteger("2")).plus(new BigInteger("3")).plus(new BigInteger("4")).plus(new BigInteger("5")).plus(new BigInteger("6")).plus(new BigInteger("7")).plus(new BigInteger("8")).plus(new BigInteger("9")).plus(new BigInteger("10")).minus((Number) new BigInteger("10")));
   }
 /* 
    * what about first and distinct
@@ -4584,7 +4584,7 @@ public class Generated_collections_Test {
         return new Function<ParameterSetWrapper, Boolean>() {
           public Boolean apply(ParameterSetWrapper param) {
             Number it = (Number) param.parameters.get(0);
-            return AH.isLess(it, (Number) new BigInteger("3"));
+            return AH.isLess(it, new BigInteger("3"));
           }
         }.apply(new ParameterSetWrapper(o));
       }
@@ -4593,7 +4593,7 @@ public class Generated_collections_Test {
         return new Function<ParameterSetWrapper, Boolean>() {
           public Boolean apply(ParameterSetWrapper param) {
             Number it = (Number) param.parameters.get(0);
-            return AH.isLess(it, (Number) new BigInteger("3"));
+            return AH.isLess(it, new BigInteger("3"));
           }
         }.apply(new ParameterSetWrapper(o));
       }
@@ -4609,7 +4609,7 @@ public class Generated_collections_Test {
         return new Function<ParameterSetWrapper, Boolean>() {
           public Boolean apply(ParameterSetWrapper param) {
             Number a = (Number) param.parameters.get(0);
-            return AH.isLess(a, (Number) new BigInteger("11"));
+            return AH.isLess(a, new BigInteger("11"));
           }
         }.apply(new ParameterSetWrapper(o));
       }
@@ -4618,7 +4618,7 @@ public class Generated_collections_Test {
         return new Function<ParameterSetWrapper, Boolean>() {
           public Boolean apply(ParameterSetWrapper param) {
             Number a = (Number) param.parameters.get(0);
-            return AH.isLess(a, (Number) new BigInteger("11"));
+            return AH.isLess(a, new BigInteger("11"));
           }
         }.apply(new ParameterSetWrapper(o));
       }
@@ -4657,7 +4657,7 @@ public class Generated_collections_Test {
         return new Function<ParameterSetWrapper, Boolean>() {
           public Boolean apply(ParameterSetWrapper param) {
             Number it = (Number) param.parameters.get(0);
-            return AH.isLess(it, (Number) new BigInteger("3"));
+            return AH.isLess(it, new BigInteger("3"));
           }
         }.apply(new ParameterSetWrapper(o));
       }
@@ -4666,7 +4666,7 @@ public class Generated_collections_Test {
         return new Function<ParameterSetWrapper, Boolean>() {
           public Boolean apply(ParameterSetWrapper param) {
             Number it = (Number) param.parameters.get(0);
-            return AH.isLess(it, (Number) new BigInteger("3"));
+            return AH.isLess(it, new BigInteger("3"));
           }
         }.apply(new ParameterSetWrapper(o));
       }
@@ -4682,7 +4682,7 @@ public class Generated_collections_Test {
         return new Function<ParameterSetWrapper, Boolean>() {
           public Boolean apply(ParameterSetWrapper param) {
             Number a = (Number) param.parameters.get(0);
-            return AH.isGreater(a, (Number) new BigInteger("11"));
+            return AH.isGreater(a, new BigInteger("11"));
           }
         }.apply(new ParameterSetWrapper(o));
       }
@@ -4691,7 +4691,7 @@ public class Generated_collections_Test {
         return new Function<ParameterSetWrapper, Boolean>() {
           public Boolean apply(ParameterSetWrapper param) {
             Number a = (Number) param.parameters.get(0);
-            return AH.isGreater(a, (Number) new BigInteger("11"));
+            return AH.isGreater(a, new BigInteger("11"));
           }
         }.apply(new ParameterSetWrapper(o));
       }
@@ -4725,28 +4725,28 @@ public class Generated_collections_Test {
    */
     @Test
   public void collectionSetLiteral_item6_9070044578385613045() throws Throwable {
-    Assert.assertEquals("Expected: " + true + ", but was: " + HashTreePSet.from(Arrays.asList((Number) new BigInteger("1"), (Number) new BigInteger("2"), (Number) new BigInteger("3"), (Number) new BigInteger("4"), (Number) new BigInteger("5"), (Number) new BigInteger("6"), (Number) new BigInteger("7"), (Number) new BigInteger("8"), (Number) new BigInteger("9"), (Number) new BigInteger("10"))).contains((Number) new BigInteger("6")), (Object) true, (Object) HashTreePSet.from(Arrays.asList((Number) new BigInteger("1"), (Number) new BigInteger("2"), (Number) new BigInteger("3"), (Number) new BigInteger("4"), (Number) new BigInteger("5"), (Number) new BigInteger("6"), (Number) new BigInteger("7"), (Number) new BigInteger("8"), (Number) new BigInteger("9"), (Number) new BigInteger("10"))).contains((Number) new BigInteger("6")));
+    Assert.assertEquals("Expected: " + true + ", but was: " + HashTreePSet.from(Arrays.asList((Number) new BigInteger("1"), (Number) new BigInteger("2"), (Number) new BigInteger("3"), (Number) new BigInteger("4"), (Number) new BigInteger("5"), (Number) new BigInteger("6"), (Number) new BigInteger("7"), (Number) new BigInteger("8"), (Number) new BigInteger("9"), (Number) new BigInteger("10"))).contains(new BigInteger("6")), (Object) true, (Object) HashTreePSet.from(Arrays.asList((Number) new BigInteger("1"), (Number) new BigInteger("2"), (Number) new BigInteger("3"), (Number) new BigInteger("4"), (Number) new BigInteger("5"), (Number) new BigInteger("6"), (Number) new BigInteger("7"), (Number) new BigInteger("8"), (Number) new BigInteger("9"), (Number) new BigInteger("10"))).contains(new BigInteger("6")));
   }
 /* 
    * what about first and distinct
    */
     @Test
   public void collectionSetLiteral_item7_9070044578385613062() throws Throwable {
-    Assert.assertTrue("Expected: " + (Number) new BigInteger("3") + ", but was: " + HashTreePSet.from(Arrays.asList((Number) new BigInteger("1"), (Number) new BigInteger("2"), (Number) new BigInteger("3"), (Number) new BigInteger("4"), (Number) new BigInteger("5"), (Number) new BigInteger("6"), (Number) new BigInteger("7"), (Number) new BigInteger("8"), (Number) new BigInteger("9"), (Number) new BigInteger("10"))).stream().filter(new Predicate<Number>() {
+    Assert.assertTrue("Expected: " + new BigInteger("3") + ", but was: " + HashTreePSet.from(Arrays.asList((Number) new BigInteger("1"), (Number) new BigInteger("2"), (Number) new BigInteger("3"), (Number) new BigInteger("4"), (Number) new BigInteger("5"), (Number) new BigInteger("6"), (Number) new BigInteger("7"), (Number) new BigInteger("8"), (Number) new BigInteger("9"), (Number) new BigInteger("10"))).stream().filter(new Predicate<Number>() {
       public boolean test(Number o) {
         return new Function<ParameterSetWrapper, Boolean>() {
           public Boolean apply(ParameterSetWrapper param) {
             Number it = (Number) param.parameters.get(0);
-            return AH.isEqual(it, (Number) new BigInteger("3"));
+            return AH.isEqual(it, new BigInteger("3"));
           }
         }.apply(new ParameterSetWrapper(o));
       }
-    }).findFirst().orElse(null), EqualsTestOp.matches((Number) new BigInteger("3"), HashTreePSet.from(Arrays.asList((Number) new BigInteger("1"), (Number) new BigInteger("2"), (Number) new BigInteger("3"), (Number) new BigInteger("4"), (Number) new BigInteger("5"), (Number) new BigInteger("6"), (Number) new BigInteger("7"), (Number) new BigInteger("8"), (Number) new BigInteger("9"), (Number) new BigInteger("10"))).stream().filter(new Predicate<Number>() {
+    }).findFirst().orElse(null), EqualsTestOp.matches(new BigInteger("3"), HashTreePSet.from(Arrays.asList((Number) new BigInteger("1"), (Number) new BigInteger("2"), (Number) new BigInteger("3"), (Number) new BigInteger("4"), (Number) new BigInteger("5"), (Number) new BigInteger("6"), (Number) new BigInteger("7"), (Number) new BigInteger("8"), (Number) new BigInteger("9"), (Number) new BigInteger("10"))).stream().filter(new Predicate<Number>() {
       public boolean test(Number o) {
         return new Function<ParameterSetWrapper, Boolean>() {
           public Boolean apply(ParameterSetWrapper param) {
             Number it = (Number) param.parameters.get(0);
-            return AH.isEqual(it, (Number) new BigInteger("3"));
+            return AH.isEqual(it, new BigInteger("3"));
           }
         }.apply(new ParameterSetWrapper(o));
       }
@@ -4757,21 +4757,21 @@ public class Generated_collections_Test {
    */
     @Test
   public void collectionSetLiteral_item8_9070044578385613082() throws Throwable {
-    Assert.assertTrue("Expected: " + (Number) new BigInteger("1") + ", but was: " + HashTreePSet.from(Arrays.asList((Number) new BigInteger("1"), (Number) new BigInteger("2"), (Number) new BigInteger("3"), (Number) new BigInteger("4"), (Number) new BigInteger("5"), (Number) new BigInteger("6"), (Number) new BigInteger("7"), (Number) new BigInteger("8"), (Number) new BigInteger("9"), (Number) new BigInteger("10"))).stream().filter(new Predicate<Number>() {
+    Assert.assertTrue("Expected: " + new BigInteger("1") + ", but was: " + HashTreePSet.from(Arrays.asList((Number) new BigInteger("1"), (Number) new BigInteger("2"), (Number) new BigInteger("3"), (Number) new BigInteger("4"), (Number) new BigInteger("5"), (Number) new BigInteger("6"), (Number) new BigInteger("7"), (Number) new BigInteger("8"), (Number) new BigInteger("9"), (Number) new BigInteger("10"))).stream().filter(new Predicate<Number>() {
       public boolean test(Number o) {
         return new Function<ParameterSetWrapper, Boolean>() {
           public Boolean apply(ParameterSetWrapper param) {
             Number a = (Number) param.parameters.get(0);
-            return AH.isLess(a, (Number) new BigInteger("11"));
+            return AH.isLess(a, new BigInteger("11"));
           }
         }.apply(new ParameterSetWrapper(o));
       }
-    }).findFirst().orElse(null), EqualsTestOp.matches((Number) new BigInteger("1"), HashTreePSet.from(Arrays.asList((Number) new BigInteger("1"), (Number) new BigInteger("2"), (Number) new BigInteger("3"), (Number) new BigInteger("4"), (Number) new BigInteger("5"), (Number) new BigInteger("6"), (Number) new BigInteger("7"), (Number) new BigInteger("8"), (Number) new BigInteger("9"), (Number) new BigInteger("10"))).stream().filter(new Predicate<Number>() {
+    }).findFirst().orElse(null), EqualsTestOp.matches(new BigInteger("1"), HashTreePSet.from(Arrays.asList((Number) new BigInteger("1"), (Number) new BigInteger("2"), (Number) new BigInteger("3"), (Number) new BigInteger("4"), (Number) new BigInteger("5"), (Number) new BigInteger("6"), (Number) new BigInteger("7"), (Number) new BigInteger("8"), (Number) new BigInteger("9"), (Number) new BigInteger("10"))).stream().filter(new Predicate<Number>() {
       public boolean test(Number o) {
         return new Function<ParameterSetWrapper, Boolean>() {
           public Boolean apply(ParameterSetWrapper param) {
             Number a = (Number) param.parameters.get(0);
-            return AH.isLess(a, (Number) new BigInteger("11"));
+            return AH.isLess(a, new BigInteger("11"));
           }
         }.apply(new ParameterSetWrapper(o));
       }
@@ -4782,7 +4782,7 @@ public class Generated_collections_Test {
    */
     @Test
   public void collectionSetLiteral_item9_9070044578385613105() throws Throwable {
-    Assert.assertTrue("Expected: " + (Number) new BigInteger("1") + ", but was: " + HashTreePSet.from(Arrays.asList((Number) new BigInteger("1"), (Number) new BigInteger("2"), (Number) new BigInteger("3"), (Number) new BigInteger("4"), (Number) new BigInteger("5"), (Number) new BigInteger("6"), (Number) new BigInteger("7"), (Number) new BigInteger("8"), (Number) new BigInteger("9"), (Number) new BigInteger("10"))).stream().filter(new Predicate<Number>() {
+    Assert.assertTrue("Expected: " + new BigInteger("1") + ", but was: " + HashTreePSet.from(Arrays.asList((Number) new BigInteger("1"), (Number) new BigInteger("2"), (Number) new BigInteger("3"), (Number) new BigInteger("4"), (Number) new BigInteger("5"), (Number) new BigInteger("6"), (Number) new BigInteger("7"), (Number) new BigInteger("8"), (Number) new BigInteger("9"), (Number) new BigInteger("10"))).stream().filter(new Predicate<Number>() {
       public boolean test(Number o) {
         return new Function<ParameterSetWrapper, Boolean>() {
           public Boolean apply(ParameterSetWrapper param) {
@@ -4790,7 +4790,7 @@ public class Generated_collections_Test {
           }
         }.apply(new ParameterSetWrapper(o));
       }
-    }).findFirst().orElse(null), EqualsTestOp.matches((Number) new BigInteger("1"), HashTreePSet.from(Arrays.asList((Number) new BigInteger("1"), (Number) new BigInteger("2"), (Number) new BigInteger("3"), (Number) new BigInteger("4"), (Number) new BigInteger("5"), (Number) new BigInteger("6"), (Number) new BigInteger("7"), (Number) new BigInteger("8"), (Number) new BigInteger("9"), (Number) new BigInteger("10"))).stream().filter(new Predicate<Number>() {
+    }).findFirst().orElse(null), EqualsTestOp.matches(new BigInteger("1"), HashTreePSet.from(Arrays.asList((Number) new BigInteger("1"), (Number) new BigInteger("2"), (Number) new BigInteger("3"), (Number) new BigInteger("4"), (Number) new BigInteger("5"), (Number) new BigInteger("6"), (Number) new BigInteger("7"), (Number) new BigInteger("8"), (Number) new BigInteger("9"), (Number) new BigInteger("10"))).stream().filter(new Predicate<Number>() {
       public boolean test(Number o) {
         return new Function<ParameterSetWrapper, Boolean>() {
           public Boolean apply(ParameterSetWrapper param) {
@@ -4805,14 +4805,14 @@ public class Generated_collections_Test {
    */
     @Test
   public void collectionSetLiteral_item10_9070044578385613122() throws Throwable {
-    Assert.assertEquals("Expected: " + TreePVector.<Number>empty().plus((Number) new BigInteger("1")).plus((Number) new BigInteger("2")).plus((Number) new BigInteger("3")).plus((Number) new BigInteger("4")) + ", but was: " + (((_FunctionTypes._return_P0_E0<PVector<Number>>) () -> {
+    Assert.assertEquals("Expected: " + TreePVector.<Number>empty().plus(new BigInteger("1")).plus(new BigInteger("2")).plus(new BigInteger("3")).plus(new BigInteger("4")) + ", but was: " + (((_FunctionTypes._return_P0_E0<PVector<Number>>) () -> {
       List<Number> r = new ArrayList<Number>();
       for (MapPSet<Number> coll : SetSequence.fromSet(HashTreePSet.from(Arrays.asList(HashTreePSet.from(Arrays.asList((Number) new BigInteger("1"))), HashTreePSet.from(Arrays.asList((Number) new BigInteger("2"))), HashTreePSet.from(Arrays.asList((Number) new BigInteger("3"))), HashTreePSet.from(Arrays.asList((Number) new BigInteger("4"))))))) {
         r.addAll(coll);
       }
       PVector<Number> result = TreePVector.<Number>from(r);
       return result;
-    }).invoke()), (Object) TreePVector.<Number>empty().plus((Number) new BigInteger("1")).plus((Number) new BigInteger("2")).plus((Number) new BigInteger("3")).plus((Number) new BigInteger("4")), (Object) ((_FunctionTypes._return_P0_E0<PVector<Number>>) () -> {
+    }).invoke()), TreePVector.<Number>empty().plus(new BigInteger("1")).plus(new BigInteger("2")).plus(new BigInteger("3")).plus(new BigInteger("4")), (Object) ((_FunctionTypes._return_P0_E0<PVector<Number>>) () -> {
       List<Number> r = new ArrayList<Number>();
       for (MapPSet<Number> coll : SetSequence.fromSet(HashTreePSet.from(Arrays.asList(HashTreePSet.from(Arrays.asList((Number) new BigInteger("1"))), HashTreePSet.from(Arrays.asList((Number) new BigInteger("2"))), HashTreePSet.from(Arrays.asList((Number) new BigInteger("3"))), HashTreePSet.from(Arrays.asList((Number) new BigInteger("4"))))))) {
         r.addAll(coll);
@@ -4826,14 +4826,14 @@ public class Generated_collections_Test {
    */
     @Test
   public void collectionSetLiteral_item11_9070044578385613140() throws Throwable {
-    Assert.assertTrue("Expected: " + (Number) new BigInteger("55") + ", but was: " + (((_FunctionTypes._return_P0_E0<Number>) () -> {
-      Number seed = (Number) new BigInteger("0");
+    Assert.assertTrue("Expected: " + new BigInteger("55") + ", but was: " + (((_FunctionTypes._return_P0_E0<Number>) () -> {
+      Number seed = new BigInteger("0");
       for (Number current : SetSequence.fromSet(HashTreePSet.from(Arrays.asList((Number) new BigInteger("1"), (Number) new BigInteger("2"), (Number) new BigInteger("3"), (Number) new BigInteger("4"), (Number) new BigInteger("5"), (Number) new BigInteger("6"), (Number) new BigInteger("7"), (Number) new BigInteger("8"), (Number) new BigInteger("9"), (Number) new BigInteger("10"))))) {
         seed = AH.add(seed, current);
       }
       return seed;
-    }).invoke()), EqualsTestOp.matches((Number) new BigInteger("55"), ((_FunctionTypes._return_P0_E0<Number>) () -> {
-      Number seed = (Number) new BigInteger("0");
+    }).invoke()), EqualsTestOp.matches(new BigInteger("55"), ((_FunctionTypes._return_P0_E0<Number>) () -> {
+      Number seed = new BigInteger("0");
       for (Number current : SetSequence.fromSet(HashTreePSet.from(Arrays.asList((Number) new BigInteger("1"), (Number) new BigInteger("2"), (Number) new BigInteger("3"), (Number) new BigInteger("4"), (Number) new BigInteger("5"), (Number) new BigInteger("6"), (Number) new BigInteger("7"), (Number) new BigInteger("8"), (Number) new BigInteger("9"), (Number) new BigInteger("10"))))) {
         seed = AH.add(seed, current);
       }
@@ -4845,10 +4845,10 @@ public class Generated_collections_Test {
    */
     @Test
   public void collectionSetLiteral_item12_9070044578385613166() throws Throwable {
-    Assert.assertTrue("Expected: " + (Number) new BigInteger("2") + ", but was: " + BigInteger.valueOf(((_FunctionTypes._return_P0_E0<PVector<GroupValue>>) () -> {
-      Map<Number, List<item>> grouped = HashTreePSet.from(Arrays.asList(new item((Number) new BigInteger("1"), "1"), new item((Number) new BigInteger("1"), "1a"), new item((Number) new BigInteger("2"), "2"))).stream().collect(Collectors.groupingBy(new Function<item, Number>() {
+    Assert.assertTrue("Expected: " + new BigInteger("2") + ", but was: " + BigInteger.valueOf(((_FunctionTypes._return_P0_E0<PVector<GroupValue>>) () -> {
+      Map<Number, List<item>> grouped = HashTreePSet.from(Arrays.asList(new item(new BigInteger("1"), "1"), new item(new BigInteger("1"), "1a"), new item(new BigInteger("2"), "2"))).stream().collect(Collectors.groupingBy(new Function<item, Number>() {
         public Number apply(item param) {
-          return (Number) new Function<ParameterSetWrapper, Number>() {
+          return new Function<ParameterSetWrapper, Number>() {
             public Number apply(ParameterSetWrapper param) {
               item it = (item) param.parameters.get(0);
               return it.getn();
@@ -4863,10 +4863,10 @@ public class Generated_collections_Test {
         result = result.plus(g);
       }
       return result;
-    }).invoke().size()), EqualsTestOp.matches((Number) new BigInteger("2"), BigInteger.valueOf(((_FunctionTypes._return_P0_E0<PVector<GroupValue>>) () -> {
-      Map<Number, List<item>> grouped = HashTreePSet.from(Arrays.asList(new item((Number) new BigInteger("1"), "1"), new item((Number) new BigInteger("1"), "1a"), new item((Number) new BigInteger("2"), "2"))).stream().collect(Collectors.groupingBy(new Function<item, Number>() {
+    }).invoke().size()), EqualsTestOp.matches(new BigInteger("2"), BigInteger.valueOf(((_FunctionTypes._return_P0_E0<PVector<GroupValue>>) () -> {
+      Map<Number, List<item>> grouped = HashTreePSet.from(Arrays.asList(new item(new BigInteger("1"), "1"), new item(new BigInteger("1"), "1a"), new item(new BigInteger("2"), "2"))).stream().collect(Collectors.groupingBy(new Function<item, Number>() {
         public Number apply(item param) {
-          return (Number) new Function<ParameterSetWrapper, Number>() {
+          return new Function<ParameterSetWrapper, Number>() {
             public Number apply(ParameterSetWrapper param) {
               item it = (item) param.parameters.get(0);
               return it.getn();
@@ -4888,10 +4888,10 @@ public class Generated_collections_Test {
    */
     @Test
   public void collectionSetLiteral_item13_9070044578385613190() throws Throwable {
-    Assert.assertTrue("Expected: " + (Number) new BigInteger("2") + ", but was: " + BigInteger.valueOf(((_FunctionTypes._return_P0_E0<PVector<GroupValue>>) () -> {
-      Map<Number, List<item>> grouped = HashTreePSet.from(Arrays.asList(new item((Number) new BigInteger("1"), "1"), new item((Number) new BigInteger("1"), "1a"), new item((Number) new BigInteger("2"), "2"))).stream().collect(Collectors.groupingBy(new Function<item, Number>() {
+    Assert.assertTrue("Expected: " + new BigInteger("2") + ", but was: " + BigInteger.valueOf(((_FunctionTypes._return_P0_E0<PVector<GroupValue>>) () -> {
+      Map<Number, List<item>> grouped = HashTreePSet.from(Arrays.asList(new item(new BigInteger("1"), "1"), new item(new BigInteger("1"), "1a"), new item(new BigInteger("2"), "2"))).stream().collect(Collectors.groupingBy(new Function<item, Number>() {
         public Number apply(item param) {
-          return (Number) new Function<ParameterSetWrapper, Number>() {
+          return new Function<ParameterSetWrapper, Number>() {
             public Number apply(ParameterSetWrapper param) {
               item i = (item) param.parameters.get(0);
               return i.getn();
@@ -4906,10 +4906,10 @@ public class Generated_collections_Test {
         result = result.plus(g);
       }
       return result;
-    }).invoke().size()), EqualsTestOp.matches((Number) new BigInteger("2"), BigInteger.valueOf(((_FunctionTypes._return_P0_E0<PVector<GroupValue>>) () -> {
-      Map<Number, List<item>> grouped = HashTreePSet.from(Arrays.asList(new item((Number) new BigInteger("1"), "1"), new item((Number) new BigInteger("1"), "1a"), new item((Number) new BigInteger("2"), "2"))).stream().collect(Collectors.groupingBy(new Function<item, Number>() {
+    }).invoke().size()), EqualsTestOp.matches(new BigInteger("2"), BigInteger.valueOf(((_FunctionTypes._return_P0_E0<PVector<GroupValue>>) () -> {
+      Map<Number, List<item>> grouped = HashTreePSet.from(Arrays.asList(new item(new BigInteger("1"), "1"), new item(new BigInteger("1"), "1a"), new item(new BigInteger("2"), "2"))).stream().collect(Collectors.groupingBy(new Function<item, Number>() {
         public Number apply(item param) {
-          return (Number) new Function<ParameterSetWrapper, Number>() {
+          return new Function<ParameterSetWrapper, Number>() {
             public Number apply(ParameterSetWrapper param) {
               item i = (item) param.parameters.get(0);
               return i.getn();
@@ -4931,10 +4931,10 @@ public class Generated_collections_Test {
    */
     @Test
   public void collectionSetLiteral_item14_9070044578385613216() throws Throwable {
-    Assert.assertTrue("Expected: " + (Number) new BigInteger("2") + ", but was: " + BigInteger.valueOf(((_FunctionTypes._return_P0_E0<PVector<GroupValue>>) () -> {
-      Map<Number, List<item>> grouped = HashTreePSet.from(Arrays.asList(new item((Number) new BigInteger("1"), "1"), new item((Number) new BigInteger("1"), "1a"), new item((Number) new BigInteger("2"), "2"))).stream().collect(Collectors.groupingBy(new Function<item, Number>() {
+    Assert.assertTrue("Expected: " + new BigInteger("2") + ", but was: " + BigInteger.valueOf(((_FunctionTypes._return_P0_E0<PVector<GroupValue>>) () -> {
+      Map<Number, List<item>> grouped = HashTreePSet.from(Arrays.asList(new item(new BigInteger("1"), "1"), new item(new BigInteger("1"), "1a"), new item(new BigInteger("2"), "2"))).stream().collect(Collectors.groupingBy(new Function<item, Number>() {
         public Number apply(item param) {
-          return (Number) new Function<ParameterSetWrapper, Number>() {
+          return new Function<ParameterSetWrapper, Number>() {
             public Number apply(ParameterSetWrapper param) {
               return collectionListLiteralFoo3((item) param.parameters.get(0));
             }
@@ -4948,10 +4948,10 @@ public class Generated_collections_Test {
         result = result.plus(g);
       }
       return result;
-    }).invoke().size()), EqualsTestOp.matches((Number) new BigInteger("2"), BigInteger.valueOf(((_FunctionTypes._return_P0_E0<PVector<GroupValue>>) () -> {
-      Map<Number, List<item>> grouped = HashTreePSet.from(Arrays.asList(new item((Number) new BigInteger("1"), "1"), new item((Number) new BigInteger("1"), "1a"), new item((Number) new BigInteger("2"), "2"))).stream().collect(Collectors.groupingBy(new Function<item, Number>() {
+    }).invoke().size()), EqualsTestOp.matches(new BigInteger("2"), BigInteger.valueOf(((_FunctionTypes._return_P0_E0<PVector<GroupValue>>) () -> {
+      Map<Number, List<item>> grouped = HashTreePSet.from(Arrays.asList(new item(new BigInteger("1"), "1"), new item(new BigInteger("1"), "1a"), new item(new BigInteger("2"), "2"))).stream().collect(Collectors.groupingBy(new Function<item, Number>() {
         public Number apply(item param) {
-          return (Number) new Function<ParameterSetWrapper, Number>() {
+          return new Function<ParameterSetWrapper, Number>() {
             public Number apply(ParameterSetWrapper param) {
               return collectionListLiteralFoo3((item) param.parameters.get(0));
             }
@@ -4986,21 +4986,21 @@ public class Generated_collections_Test {
    */
     @Test
   public void collectionSetLiteral_item17_9070044578385613269() throws Throwable {
-    Assert.assertEquals("Expected: " + TreePVector.<Number>empty().plus((Number) new BigInteger("2")).plus((Number) new BigInteger("3")).plus((Number) new BigInteger("4")).plus((Number) new BigInteger("5")).plus((Number) new BigInteger("6")).plus((Number) new BigInteger("7")).plus((Number) new BigInteger("8")).plus((Number) new BigInteger("9")).plus((Number) new BigInteger("10")).plus((Number) new BigInteger("11")) + ", but was: " + TreePVector.<Number>from(HashTreePSet.from(Arrays.asList((Number) new BigInteger("1"), (Number) new BigInteger("2"), (Number) new BigInteger("3"), (Number) new BigInteger("4"), (Number) new BigInteger("5"), (Number) new BigInteger("6"), (Number) new BigInteger("7"), (Number) new BigInteger("8"), (Number) new BigInteger("9"), (Number) new BigInteger("10"))).stream().map(new Function<Number, Number>() {
+    Assert.assertEquals("Expected: " + TreePVector.<Number>empty().plus(new BigInteger("2")).plus(new BigInteger("3")).plus(new BigInteger("4")).plus(new BigInteger("5")).plus(new BigInteger("6")).plus(new BigInteger("7")).plus(new BigInteger("8")).plus(new BigInteger("9")).plus(new BigInteger("10")).plus(new BigInteger("11")) + ", but was: " + TreePVector.<Number>from(HashTreePSet.from(Arrays.asList((Number) new BigInteger("1"), (Number) new BigInteger("2"), (Number) new BigInteger("3"), (Number) new BigInteger("4"), (Number) new BigInteger("5"), (Number) new BigInteger("6"), (Number) new BigInteger("7"), (Number) new BigInteger("8"), (Number) new BigInteger("9"), (Number) new BigInteger("10"))).stream().map(new Function<Number, Number>() {
       public Number apply(Number param) {
         return new Function<ParameterSetWrapper, Number>() {
           public Number apply(ParameterSetWrapper param) {
             Number it = (Number) param.parameters.get(0);
-            return AH.add(it, (Number) new BigInteger("1"));
+            return AH.add(it, new BigInteger("1"));
           }
         }.apply(new ParameterSetWrapper(param));
       }
-    }).collect(Collectors.<Number>toList())), (Object) TreePVector.<Number>empty().plus((Number) new BigInteger("2")).plus((Number) new BigInteger("3")).plus((Number) new BigInteger("4")).plus((Number) new BigInteger("5")).plus((Number) new BigInteger("6")).plus((Number) new BigInteger("7")).plus((Number) new BigInteger("8")).plus((Number) new BigInteger("9")).plus((Number) new BigInteger("10")).plus((Number) new BigInteger("11")), (Object) TreePVector.<Number>from(HashTreePSet.from(Arrays.asList((Number) new BigInteger("1"), (Number) new BigInteger("2"), (Number) new BigInteger("3"), (Number) new BigInteger("4"), (Number) new BigInteger("5"), (Number) new BigInteger("6"), (Number) new BigInteger("7"), (Number) new BigInteger("8"), (Number) new BigInteger("9"), (Number) new BigInteger("10"))).stream().map(new Function<Number, Number>() {
+    }).collect(Collectors.<Number>toList())), TreePVector.<Number>empty().plus(new BigInteger("2")).plus(new BigInteger("3")).plus(new BigInteger("4")).plus(new BigInteger("5")).plus(new BigInteger("6")).plus(new BigInteger("7")).plus(new BigInteger("8")).plus(new BigInteger("9")).plus(new BigInteger("10")).plus(new BigInteger("11")), TreePVector.<Number>from(HashTreePSet.from(Arrays.asList((Number) new BigInteger("1"), (Number) new BigInteger("2"), (Number) new BigInteger("3"), (Number) new BigInteger("4"), (Number) new BigInteger("5"), (Number) new BigInteger("6"), (Number) new BigInteger("7"), (Number) new BigInteger("8"), (Number) new BigInteger("9"), (Number) new BigInteger("10"))).stream().map(new Function<Number, Number>() {
       public Number apply(Number param) {
         return new Function<ParameterSetWrapper, Number>() {
           public Number apply(ParameterSetWrapper param) {
             Number it = (Number) param.parameters.get(0);
-            return AH.add(it, (Number) new BigInteger("1"));
+            return AH.add(it, new BigInteger("1"));
           }
         }.apply(new ParameterSetWrapper(param));
       }
@@ -5011,21 +5011,21 @@ public class Generated_collections_Test {
    */
     @Test
   public void collectionSetLiteral_item18_9070044578385613299() throws Throwable {
-    Assert.assertEquals("Expected: " + TreePVector.<Number>empty().plus((Number) new BigInteger("2")).plus((Number) new BigInteger("3")).plus((Number) new BigInteger("4")).plus((Number) new BigInteger("5")).plus((Number) new BigInteger("6")).plus((Number) new BigInteger("7")).plus((Number) new BigInteger("8")).plus((Number) new BigInteger("9")).plus((Number) new BigInteger("10")).plus((Number) new BigInteger("11")) + ", but was: " + TreePVector.<Number>from(HashTreePSet.from(Arrays.asList((Number) new BigInteger("1"), (Number) new BigInteger("2"), (Number) new BigInteger("3"), (Number) new BigInteger("4"), (Number) new BigInteger("5"), (Number) new BigInteger("6"), (Number) new BigInteger("7"), (Number) new BigInteger("8"), (Number) new BigInteger("9"), (Number) new BigInteger("10"))).stream().map(new Function<Number, Number>() {
+    Assert.assertEquals("Expected: " + TreePVector.<Number>empty().plus(new BigInteger("2")).plus(new BigInteger("3")).plus(new BigInteger("4")).plus(new BigInteger("5")).plus(new BigInteger("6")).plus(new BigInteger("7")).plus(new BigInteger("8")).plus(new BigInteger("9")).plus(new BigInteger("10")).plus(new BigInteger("11")) + ", but was: " + TreePVector.<Number>from(HashTreePSet.from(Arrays.asList((Number) new BigInteger("1"), (Number) new BigInteger("2"), (Number) new BigInteger("3"), (Number) new BigInteger("4"), (Number) new BigInteger("5"), (Number) new BigInteger("6"), (Number) new BigInteger("7"), (Number) new BigInteger("8"), (Number) new BigInteger("9"), (Number) new BigInteger("10"))).stream().map(new Function<Number, Number>() {
       public Number apply(Number param) {
         return new Function<ParameterSetWrapper, Number>() {
           public Number apply(ParameterSetWrapper param) {
             Number a = (Number) param.parameters.get(0);
-            return AH.add(a, (Number) new BigInteger("1"));
+            return AH.add(a, new BigInteger("1"));
           }
         }.apply(new ParameterSetWrapper(param));
       }
-    }).collect(Collectors.<Number>toList())), (Object) TreePVector.<Number>empty().plus((Number) new BigInteger("2")).plus((Number) new BigInteger("3")).plus((Number) new BigInteger("4")).plus((Number) new BigInteger("5")).plus((Number) new BigInteger("6")).plus((Number) new BigInteger("7")).plus((Number) new BigInteger("8")).plus((Number) new BigInteger("9")).plus((Number) new BigInteger("10")).plus((Number) new BigInteger("11")), (Object) TreePVector.<Number>from(HashTreePSet.from(Arrays.asList((Number) new BigInteger("1"), (Number) new BigInteger("2"), (Number) new BigInteger("3"), (Number) new BigInteger("4"), (Number) new BigInteger("5"), (Number) new BigInteger("6"), (Number) new BigInteger("7"), (Number) new BigInteger("8"), (Number) new BigInteger("9"), (Number) new BigInteger("10"))).stream().map(new Function<Number, Number>() {
+    }).collect(Collectors.<Number>toList())), TreePVector.<Number>empty().plus(new BigInteger("2")).plus(new BigInteger("3")).plus(new BigInteger("4")).plus(new BigInteger("5")).plus(new BigInteger("6")).plus(new BigInteger("7")).plus(new BigInteger("8")).plus(new BigInteger("9")).plus(new BigInteger("10")).plus(new BigInteger("11")), TreePVector.<Number>from(HashTreePSet.from(Arrays.asList((Number) new BigInteger("1"), (Number) new BigInteger("2"), (Number) new BigInteger("3"), (Number) new BigInteger("4"), (Number) new BigInteger("5"), (Number) new BigInteger("6"), (Number) new BigInteger("7"), (Number) new BigInteger("8"), (Number) new BigInteger("9"), (Number) new BigInteger("10"))).stream().map(new Function<Number, Number>() {
       public Number apply(Number param) {
         return new Function<ParameterSetWrapper, Number>() {
           public Number apply(ParameterSetWrapper param) {
             Number a = (Number) param.parameters.get(0);
-            return AH.add(a, (Number) new BigInteger("1"));
+            return AH.add(a, new BigInteger("1"));
           }
         }.apply(new ParameterSetWrapper(param));
       }
@@ -5036,7 +5036,7 @@ public class Generated_collections_Test {
    */
     @Test
   public void collectionSetLiteral_item19_9070044578385613332() throws Throwable {
-    Assert.assertEquals("Expected: " + TreePVector.<Number>empty().plus((Number) new BigInteger("2")).plus((Number) new BigInteger("3")).plus((Number) new BigInteger("4")).plus((Number) new BigInteger("5")).plus((Number) new BigInteger("6")).plus((Number) new BigInteger("7")).plus((Number) new BigInteger("8")).plus((Number) new BigInteger("9")).plus((Number) new BigInteger("10")).plus((Number) new BigInteger("11")) + ", but was: " + TreePVector.<Number>from(HashTreePSet.from(Arrays.asList((Number) new BigInteger("1"), (Number) new BigInteger("2"), (Number) new BigInteger("3"), (Number) new BigInteger("4"), (Number) new BigInteger("5"), (Number) new BigInteger("6"), (Number) new BigInteger("7"), (Number) new BigInteger("8"), (Number) new BigInteger("9"), (Number) new BigInteger("10"))).stream().map(new Function<Number, Number>() {
+    Assert.assertEquals("Expected: " + TreePVector.<Number>empty().plus(new BigInteger("2")).plus(new BigInteger("3")).plus(new BigInteger("4")).plus(new BigInteger("5")).plus(new BigInteger("6")).plus(new BigInteger("7")).plus(new BigInteger("8")).plus(new BigInteger("9")).plus(new BigInteger("10")).plus(new BigInteger("11")) + ", but was: " + TreePVector.<Number>from(HashTreePSet.from(Arrays.asList((Number) new BigInteger("1"), (Number) new BigInteger("2"), (Number) new BigInteger("3"), (Number) new BigInteger("4"), (Number) new BigInteger("5"), (Number) new BigInteger("6"), (Number) new BigInteger("7"), (Number) new BigInteger("8"), (Number) new BigInteger("9"), (Number) new BigInteger("10"))).stream().map(new Function<Number, Number>() {
       public Number apply(Number param) {
         return new Function<ParameterSetWrapper, Number>() {
           public Number apply(ParameterSetWrapper param) {
@@ -5044,7 +5044,7 @@ public class Generated_collections_Test {
           }
         }.apply(new ParameterSetWrapper(param));
       }
-    }).collect(Collectors.<Number>toList())), (Object) TreePVector.<Number>empty().plus((Number) new BigInteger("2")).plus((Number) new BigInteger("3")).plus((Number) new BigInteger("4")).plus((Number) new BigInteger("5")).plus((Number) new BigInteger("6")).plus((Number) new BigInteger("7")).plus((Number) new BigInteger("8")).plus((Number) new BigInteger("9")).plus((Number) new BigInteger("10")).plus((Number) new BigInteger("11")), (Object) TreePVector.<Number>from(HashTreePSet.from(Arrays.asList((Number) new BigInteger("1"), (Number) new BigInteger("2"), (Number) new BigInteger("3"), (Number) new BigInteger("4"), (Number) new BigInteger("5"), (Number) new BigInteger("6"), (Number) new BigInteger("7"), (Number) new BigInteger("8"), (Number) new BigInteger("9"), (Number) new BigInteger("10"))).stream().map(new Function<Number, Number>() {
+    }).collect(Collectors.<Number>toList())), TreePVector.<Number>empty().plus(new BigInteger("2")).plus(new BigInteger("3")).plus(new BigInteger("4")).plus(new BigInteger("5")).plus(new BigInteger("6")).plus(new BigInteger("7")).plus(new BigInteger("8")).plus(new BigInteger("9")).plus(new BigInteger("10")).plus(new BigInteger("11")), TreePVector.<Number>from(HashTreePSet.from(Arrays.asList((Number) new BigInteger("1"), (Number) new BigInteger("2"), (Number) new BigInteger("3"), (Number) new BigInteger("4"), (Number) new BigInteger("5"), (Number) new BigInteger("6"), (Number) new BigInteger("7"), (Number) new BigInteger("8"), (Number) new BigInteger("9"), (Number) new BigInteger("10"))).stream().map(new Function<Number, Number>() {
       public Number apply(Number param) {
         return new Function<ParameterSetWrapper, Number>() {
           public Number apply(ParameterSetWrapper param) {
@@ -5059,31 +5059,31 @@ public class Generated_collections_Test {
    */
     @Test
   public void collectionSetLiteral_item20_9070044578385613359() throws Throwable {
-    Assert.assertTrue("Expected: " + (Number) new BigInteger("10") + ", but was: " + CollectionHelper.max(HashTreePSet.from(Arrays.asList((Number) new BigInteger("1"), (Number) new BigInteger("2"), (Number) new BigInteger("3"), (Number) new BigInteger("4"), (Number) new BigInteger("5"), (Number) new BigInteger("6"), (Number) new BigInteger("7"), (Number) new BigInteger("8"), (Number) new BigInteger("9"), (Number) new BigInteger("10")))), EqualsTestOp.matches((Number) new BigInteger("10"), CollectionHelper.max(HashTreePSet.from(Arrays.asList((Number) new BigInteger("1"), (Number) new BigInteger("2"), (Number) new BigInteger("3"), (Number) new BigInteger("4"), (Number) new BigInteger("5"), (Number) new BigInteger("6"), (Number) new BigInteger("7"), (Number) new BigInteger("8"), (Number) new BigInteger("9"), (Number) new BigInteger("10"))))));
+    Assert.assertTrue("Expected: " + new BigInteger("10") + ", but was: " + CollectionHelper.max(HashTreePSet.from(Arrays.asList((Number) new BigInteger("1"), (Number) new BigInteger("2"), (Number) new BigInteger("3"), (Number) new BigInteger("4"), (Number) new BigInteger("5"), (Number) new BigInteger("6"), (Number) new BigInteger("7"), (Number) new BigInteger("8"), (Number) new BigInteger("9"), (Number) new BigInteger("10")))), EqualsTestOp.matches(new BigInteger("10"), CollectionHelper.max(HashTreePSet.from(Arrays.asList((Number) new BigInteger("1"), (Number) new BigInteger("2"), (Number) new BigInteger("3"), (Number) new BigInteger("4"), (Number) new BigInteger("5"), (Number) new BigInteger("6"), (Number) new BigInteger("7"), (Number) new BigInteger("8"), (Number) new BigInteger("9"), (Number) new BigInteger("10"))))));
   }
 /* 
    * what about first and distinct
    */
     @Test
   public void collectionSetLiteral_item21_9070044578385613375() throws Throwable {
-    Assert.assertTrue("Expected: " + (Number) new BigInteger("1") + ", but was: " + CollectionHelper.min(HashTreePSet.from(Arrays.asList((Number) new BigInteger("1"), (Number) new BigInteger("2"), (Number) new BigInteger("3"), (Number) new BigInteger("4"), (Number) new BigInteger("5"), (Number) new BigInteger("6"), (Number) new BigInteger("7"), (Number) new BigInteger("8"), (Number) new BigInteger("9"), (Number) new BigInteger("10")))), EqualsTestOp.matches((Number) new BigInteger("1"), CollectionHelper.min(HashTreePSet.from(Arrays.asList((Number) new BigInteger("1"), (Number) new BigInteger("2"), (Number) new BigInteger("3"), (Number) new BigInteger("4"), (Number) new BigInteger("5"), (Number) new BigInteger("6"), (Number) new BigInteger("7"), (Number) new BigInteger("8"), (Number) new BigInteger("9"), (Number) new BigInteger("10"))))));
+    Assert.assertTrue("Expected: " + new BigInteger("1") + ", but was: " + CollectionHelper.min(HashTreePSet.from(Arrays.asList((Number) new BigInteger("1"), (Number) new BigInteger("2"), (Number) new BigInteger("3"), (Number) new BigInteger("4"), (Number) new BigInteger("5"), (Number) new BigInteger("6"), (Number) new BigInteger("7"), (Number) new BigInteger("8"), (Number) new BigInteger("9"), (Number) new BigInteger("10")))), EqualsTestOp.matches(new BigInteger("1"), CollectionHelper.min(HashTreePSet.from(Arrays.asList((Number) new BigInteger("1"), (Number) new BigInteger("2"), (Number) new BigInteger("3"), (Number) new BigInteger("4"), (Number) new BigInteger("5"), (Number) new BigInteger("6"), (Number) new BigInteger("7"), (Number) new BigInteger("8"), (Number) new BigInteger("9"), (Number) new BigInteger("10"))))));
   }
 /* 
    * what about first and distinct
    */
     @Test
   public void collectionSetLiteral_item22_9070044578385613391() throws Throwable {
-    Assert.assertTrue("Expected: " + (Number) new BigInteger("2") + ", but was: " + BigInteger.valueOf(((_FunctionTypes._return_P0_E0<PVector<InlineRecordType>>) () -> {
+    Assert.assertTrue("Expected: " + new BigInteger("2") + ", but was: " + BigInteger.valueOf(((_FunctionTypes._return_P0_E0<PVector<InlineRecordType>>) () -> {
       PVector<InlineRecordType> result = TreePVector.empty();
-      for (item it : SetSequence.fromSet(HashTreePSet.from(Arrays.asList(new item((Number) new BigInteger("1"), "1"), new item((Number) new BigInteger("2"), "2"))))) {
+      for (item it : SetSequence.fromSet(HashTreePSet.from(Arrays.asList(new item(new BigInteger("1"), "1"), new item(new BigInteger("2"), "2"))))) {
         InlineRecordType irt = new InlineRecordType();
         irt.members.put("num", new InlineRecordTypeMember("num", it.getn()));
         result = result.plus(irt);
       }
       return result;
-    }).invoke().size()), EqualsTestOp.matches((Number) new BigInteger("2"), BigInteger.valueOf(((_FunctionTypes._return_P0_E0<PVector<InlineRecordType>>) () -> {
+    }).invoke().size()), EqualsTestOp.matches(new BigInteger("2"), BigInteger.valueOf(((_FunctionTypes._return_P0_E0<PVector<InlineRecordType>>) () -> {
       PVector<InlineRecordType> result = TreePVector.empty();
-      for (item it : SetSequence.fromSet(HashTreePSet.from(Arrays.asList(new item((Number) new BigInteger("1"), "1"), new item((Number) new BigInteger("2"), "2"))))) {
+      for (item it : SetSequence.fromSet(HashTreePSet.from(Arrays.asList(new item(new BigInteger("1"), "1"), new item(new BigInteger("2"), "2"))))) {
         InlineRecordType irt = new InlineRecordType();
         irt.members.put("num", new InlineRecordTypeMember("num", it.getn()));
         result = result.plus(irt);
@@ -5096,18 +5096,18 @@ public class Generated_collections_Test {
    */
     @Test
   public void collectionSetLiteral_item23_9070044578385613413() throws Throwable {
-    Assert.assertTrue("Expected: " + (Number) new BigInteger("10") + ", but was: " + BigInteger.valueOf(HashTreePSet.from(Arrays.asList((Number) new BigInteger("1"), (Number) new BigInteger("2"), (Number) new BigInteger("3"), (Number) new BigInteger("4"), (Number) new BigInteger("5"), (Number) new BigInteger("6"), (Number) new BigInteger("7"), (Number) new BigInteger("8"), (Number) new BigInteger("9"), (Number) new BigInteger("10"))).size()), EqualsTestOp.matches((Number) new BigInteger("10"), BigInteger.valueOf(HashTreePSet.from(Arrays.asList((Number) new BigInteger("1"), (Number) new BigInteger("2"), (Number) new BigInteger("3"), (Number) new BigInteger("4"), (Number) new BigInteger("5"), (Number) new BigInteger("6"), (Number) new BigInteger("7"), (Number) new BigInteger("8"), (Number) new BigInteger("9"), (Number) new BigInteger("10"))).size())));
+    Assert.assertTrue("Expected: " + new BigInteger("10") + ", but was: " + BigInteger.valueOf(HashTreePSet.from(Arrays.asList((Number) new BigInteger("1"), (Number) new BigInteger("2"), (Number) new BigInteger("3"), (Number) new BigInteger("4"), (Number) new BigInteger("5"), (Number) new BigInteger("6"), (Number) new BigInteger("7"), (Number) new BigInteger("8"), (Number) new BigInteger("9"), (Number) new BigInteger("10"))).size()), EqualsTestOp.matches(new BigInteger("10"), BigInteger.valueOf(HashTreePSet.from(Arrays.asList((Number) new BigInteger("1"), (Number) new BigInteger("2"), (Number) new BigInteger("3"), (Number) new BigInteger("4"), (Number) new BigInteger("5"), (Number) new BigInteger("6"), (Number) new BigInteger("7"), (Number) new BigInteger("8"), (Number) new BigInteger("9"), (Number) new BigInteger("10"))).size())));
   }
 /* 
    * what about first and distinct
    */
     @Test
   public void collectionSetLiteral_item24_9070044578385613429() throws Throwable {
-    Assert.assertEquals("Expected: " + TreePVector.<Number>empty().plus((Number) new BigInteger("1")).plus((Number) new BigInteger("2")).plus((Number) new BigInteger("3")).plus((Number) new BigInteger("4")).plus((Number) new BigInteger("5")).plus((Number) new BigInteger("6")).plus((Number) new BigInteger("7")).plus((Number) new BigInteger("8")).plus((Number) new BigInteger("9")).plus((Number) new BigInteger("10")) + ", but was: " + (PVector<Number>) TreePVector.<Number>from(((PCollection<Number>) HashTreePSet.from(Arrays.asList((Number) new BigInteger("1"), (Number) new BigInteger("2"), (Number) new BigInteger("3"), (Number) new BigInteger("4"), (Number) new BigInteger("5"), (Number) new BigInteger("6"), (Number) new BigInteger("7"), (Number) new BigInteger("8"), (Number) new BigInteger("9"), (Number) new BigInteger("10")))).stream().filter(OH.predicate()).sorted(new Comparator<Number>() {
+    Assert.assertEquals("Expected: " + TreePVector.<Number>empty().plus(new BigInteger("1")).plus(new BigInteger("2")).plus(new BigInteger("3")).plus(new BigInteger("4")).plus(new BigInteger("5")).plus(new BigInteger("6")).plus(new BigInteger("7")).plus(new BigInteger("8")).plus(new BigInteger("9")).plus(new BigInteger("10")) + ", but was: " + TreePVector.<Number>from(HashTreePSet.from(Arrays.asList((Number) new BigInteger("1"), (Number) new BigInteger("2"), (Number) new BigInteger("3"), (Number) new BigInteger("4"), (Number) new BigInteger("5"), (Number) new BigInteger("6"), (Number) new BigInteger("7"), (Number) new BigInteger("8"), (Number) new BigInteger("9"), (Number) new BigInteger("10"))).stream().filter(OH.predicate()).sorted(new Comparator<Number>() {
       public int compare(Number p0, Number p1) {
         return OH.compare(p0, p1);
       }
-    }).collect(Collectors.<Number>toList())), (Object) TreePVector.<Number>empty().plus((Number) new BigInteger("1")).plus((Number) new BigInteger("2")).plus((Number) new BigInteger("3")).plus((Number) new BigInteger("4")).plus((Number) new BigInteger("5")).plus((Number) new BigInteger("6")).plus((Number) new BigInteger("7")).plus((Number) new BigInteger("8")).plus((Number) new BigInteger("9")).plus((Number) new BigInteger("10")), (Object) (PVector<Number>) TreePVector.<Number>from(((PCollection<Number>) HashTreePSet.from(Arrays.asList((Number) new BigInteger("1"), (Number) new BigInteger("2"), (Number) new BigInteger("3"), (Number) new BigInteger("4"), (Number) new BigInteger("5"), (Number) new BigInteger("6"), (Number) new BigInteger("7"), (Number) new BigInteger("8"), (Number) new BigInteger("9"), (Number) new BigInteger("10")))).stream().filter(OH.predicate()).sorted(new Comparator<Number>() {
+    }).collect(Collectors.<Number>toList())), TreePVector.<Number>empty().plus(new BigInteger("1")).plus(new BigInteger("2")).plus(new BigInteger("3")).plus(new BigInteger("4")).plus(new BigInteger("5")).plus(new BigInteger("6")).plus(new BigInteger("7")).plus(new BigInteger("8")).plus(new BigInteger("9")).plus(new BigInteger("10")), TreePVector.<Number>from(HashTreePSet.from(Arrays.asList((Number) new BigInteger("1"), (Number) new BigInteger("2"), (Number) new BigInteger("3"), (Number) new BigInteger("4"), (Number) new BigInteger("5"), (Number) new BigInteger("6"), (Number) new BigInteger("7"), (Number) new BigInteger("8"), (Number) new BigInteger("9"), (Number) new BigInteger("10"))).stream().filter(OH.predicate()).sorted(new Comparator<Number>() {
       public int compare(Number p0, Number p1) {
         return OH.compare(p0, p1);
       }
@@ -5118,11 +5118,11 @@ public class Generated_collections_Test {
    */
     @Test
   public void collectionSetLiteral_item25_9070044578385613455() throws Throwable {
-    Assert.assertEquals("Expected: " + TreePVector.<Number>empty().plus((Number) new BigInteger("10")).plus((Number) new BigInteger("9")).plus((Number) new BigInteger("8")).plus((Number) new BigInteger("7")).plus((Number) new BigInteger("6")).plus((Number) new BigInteger("5")).plus((Number) new BigInteger("4")).plus((Number) new BigInteger("3")).plus((Number) new BigInteger("2")).plus((Number) new BigInteger("1")) + ", but was: " + (PVector<Number>) TreePVector.<Number>from(((PCollection<Number>) HashTreePSet.from(Arrays.asList((Number) new BigInteger("1"), (Number) new BigInteger("2"), (Number) new BigInteger("3"), (Number) new BigInteger("4"), (Number) new BigInteger("5"), (Number) new BigInteger("6"), (Number) new BigInteger("7"), (Number) new BigInteger("8"), (Number) new BigInteger("9"), (Number) new BigInteger("10")))).stream().filter(OH.predicate()).sorted(new Comparator<Number>() {
+    Assert.assertEquals("Expected: " + TreePVector.<Number>empty().plus(new BigInteger("10")).plus(new BigInteger("9")).plus(new BigInteger("8")).plus(new BigInteger("7")).plus(new BigInteger("6")).plus(new BigInteger("5")).plus(new BigInteger("4")).plus(new BigInteger("3")).plus(new BigInteger("2")).plus(new BigInteger("1")) + ", but was: " + TreePVector.<Number>from(HashTreePSet.from(Arrays.asList((Number) new BigInteger("1"), (Number) new BigInteger("2"), (Number) new BigInteger("3"), (Number) new BigInteger("4"), (Number) new BigInteger("5"), (Number) new BigInteger("6"), (Number) new BigInteger("7"), (Number) new BigInteger("8"), (Number) new BigInteger("9"), (Number) new BigInteger("10"))).stream().filter(OH.predicate()).sorted(new Comparator<Number>() {
       public int compare(Number p0, Number p1) {
         return OH.compare(p1, p0);
       }
-    }).collect(Collectors.<Number>toList())), (Object) TreePVector.<Number>empty().plus((Number) new BigInteger("10")).plus((Number) new BigInteger("9")).plus((Number) new BigInteger("8")).plus((Number) new BigInteger("7")).plus((Number) new BigInteger("6")).plus((Number) new BigInteger("5")).plus((Number) new BigInteger("4")).plus((Number) new BigInteger("3")).plus((Number) new BigInteger("2")).plus((Number) new BigInteger("1")), (Object) (PVector<Number>) TreePVector.<Number>from(((PCollection<Number>) HashTreePSet.from(Arrays.asList((Number) new BigInteger("1"), (Number) new BigInteger("2"), (Number) new BigInteger("3"), (Number) new BigInteger("4"), (Number) new BigInteger("5"), (Number) new BigInteger("6"), (Number) new BigInteger("7"), (Number) new BigInteger("8"), (Number) new BigInteger("9"), (Number) new BigInteger("10")))).stream().filter(OH.predicate()).sorted(new Comparator<Number>() {
+    }).collect(Collectors.<Number>toList())), TreePVector.<Number>empty().plus(new BigInteger("10")).plus(new BigInteger("9")).plus(new BigInteger("8")).plus(new BigInteger("7")).plus(new BigInteger("6")).plus(new BigInteger("5")).plus(new BigInteger("4")).plus(new BigInteger("3")).plus(new BigInteger("2")).plus(new BigInteger("1")), TreePVector.<Number>from(HashTreePSet.from(Arrays.asList((Number) new BigInteger("1"), (Number) new BigInteger("2"), (Number) new BigInteger("3"), (Number) new BigInteger("4"), (Number) new BigInteger("5"), (Number) new BigInteger("6"), (Number) new BigInteger("7"), (Number) new BigInteger("8"), (Number) new BigInteger("9"), (Number) new BigInteger("10"))).stream().filter(OH.predicate()).sorted(new Comparator<Number>() {
       public int compare(Number p0, Number p1) {
         return OH.compare(p1, p0);
       }
@@ -5133,32 +5133,32 @@ public class Generated_collections_Test {
    */
     @Test
   public void collectionSetLiteral_item26_9070044578385613481() throws Throwable {
-    Assert.assertTrue("Expected: " + (Number) new BigInteger("55") + ", but was: " + CollectionHelper.sumAsBigInteger(HashTreePSet.from(Arrays.asList((Number) new BigInteger("1"), (Number) new BigInteger("2"), (Number) new BigInteger("3"), (Number) new BigInteger("4"), (Number) new BigInteger("5"), (Number) new BigInteger("6"), (Number) new BigInteger("7"), (Number) new BigInteger("8"), (Number) new BigInteger("9"), (Number) new BigInteger("10")))), EqualsTestOp.matches((Number) new BigInteger("55"), CollectionHelper.sumAsBigInteger(HashTreePSet.from(Arrays.asList((Number) new BigInteger("1"), (Number) new BigInteger("2"), (Number) new BigInteger("3"), (Number) new BigInteger("4"), (Number) new BigInteger("5"), (Number) new BigInteger("6"), (Number) new BigInteger("7"), (Number) new BigInteger("8"), (Number) new BigInteger("9"), (Number) new BigInteger("10"))))));
+    Assert.assertTrue("Expected: " + new BigInteger("55") + ", but was: " + CollectionHelper.sumAsBigInteger(HashTreePSet.from(Arrays.asList((Number) new BigInteger("1"), (Number) new BigInteger("2"), (Number) new BigInteger("3"), (Number) new BigInteger("4"), (Number) new BigInteger("5"), (Number) new BigInteger("6"), (Number) new BigInteger("7"), (Number) new BigInteger("8"), (Number) new BigInteger("9"), (Number) new BigInteger("10")))), EqualsTestOp.matches(new BigInteger("55"), CollectionHelper.sumAsBigInteger(HashTreePSet.from(Arrays.asList((Number) new BigInteger("1"), (Number) new BigInteger("2"), (Number) new BigInteger("3"), (Number) new BigInteger("4"), (Number) new BigInteger("5"), (Number) new BigInteger("6"), (Number) new BigInteger("7"), (Number) new BigInteger("8"), (Number) new BigInteger("9"), (Number) new BigInteger("10"))))));
   }
 /* 
    * what about first and distinct
    */
     @Test
   public void collectionSetLiteral_item27_9070044578385613497() throws Throwable {
-    Assert.assertEquals("Expected: " + TreePVector.<Number>empty().plus((Number) new BigInteger("1")).plus((Number) new BigInteger("2")).plus((Number) new BigInteger("3")).plus((Number) new BigInteger("4")).plus((Number) new BigInteger("5")).plus((Number) new BigInteger("6")).plus((Number) new BigInteger("7")).plus((Number) new BigInteger("8")).plus((Number) new BigInteger("9")).plus((Number) new BigInteger("10")) + ", but was: " + TreePVector.from(HashTreePSet.from(Arrays.asList((Number) new BigInteger("1"), (Number) new BigInteger("2"), (Number) new BigInteger("3"), (Number) new BigInteger("4"), (Number) new BigInteger("5"), (Number) new BigInteger("6"), (Number) new BigInteger("7"), (Number) new BigInteger("8"), (Number) new BigInteger("9"), (Number) new BigInteger("10")))), (Object) TreePVector.<Number>empty().plus((Number) new BigInteger("1")).plus((Number) new BigInteger("2")).plus((Number) new BigInteger("3")).plus((Number) new BigInteger("4")).plus((Number) new BigInteger("5")).plus((Number) new BigInteger("6")).plus((Number) new BigInteger("7")).plus((Number) new BigInteger("8")).plus((Number) new BigInteger("9")).plus((Number) new BigInteger("10")), (Object) TreePVector.from(HashTreePSet.from(Arrays.asList((Number) new BigInteger("1"), (Number) new BigInteger("2"), (Number) new BigInteger("3"), (Number) new BigInteger("4"), (Number) new BigInteger("5"), (Number) new BigInteger("6"), (Number) new BigInteger("7"), (Number) new BigInteger("8"), (Number) new BigInteger("9"), (Number) new BigInteger("10")))));
+    Assert.assertEquals("Expected: " + TreePVector.<Number>empty().plus(new BigInteger("1")).plus(new BigInteger("2")).plus(new BigInteger("3")).plus(new BigInteger("4")).plus(new BigInteger("5")).plus(new BigInteger("6")).plus(new BigInteger("7")).plus(new BigInteger("8")).plus(new BigInteger("9")).plus(new BigInteger("10")) + ", but was: " + TreePVector.from(HashTreePSet.from(Arrays.asList((Number) new BigInteger("1"), (Number) new BigInteger("2"), (Number) new BigInteger("3"), (Number) new BigInteger("4"), (Number) new BigInteger("5"), (Number) new BigInteger("6"), (Number) new BigInteger("7"), (Number) new BigInteger("8"), (Number) new BigInteger("9"), (Number) new BigInteger("10")))), TreePVector.<Number>empty().plus(new BigInteger("1")).plus(new BigInteger("2")).plus(new BigInteger("3")).plus(new BigInteger("4")).plus(new BigInteger("5")).plus(new BigInteger("6")).plus(new BigInteger("7")).plus(new BigInteger("8")).plus(new BigInteger("9")).plus(new BigInteger("10")), TreePVector.from(HashTreePSet.from(Arrays.asList((Number) new BigInteger("1"), (Number) new BigInteger("2"), (Number) new BigInteger("3"), (Number) new BigInteger("4"), (Number) new BigInteger("5"), (Number) new BigInteger("6"), (Number) new BigInteger("7"), (Number) new BigInteger("8"), (Number) new BigInteger("9"), (Number) new BigInteger("10")))));
   }
 /* 
    * what about first and distinct
    */
     @Test
   public void collectionSetLiteral_item28_9070044578385613523() throws Throwable {
-    Assert.assertEquals("Expected: " + HashTreePSet.from(Arrays.asList((Number) new BigInteger("1"), (Number) new BigInteger("2"), (Number) new BigInteger("3"), (Number) new BigInteger("4"), (Number) new BigInteger("5"), (Number) new BigInteger("6"), (Number) new BigInteger("7"), (Number) new BigInteger("8"), (Number) new BigInteger("9"), (Number) new BigInteger("10"))) + ", but was: " + HashTreePSet.from(HashTreePSet.from(Arrays.asList((Number) new BigInteger("1"), (Number) new BigInteger("2"), (Number) new BigInteger("3"), (Number) new BigInteger("4"), (Number) new BigInteger("5"), (Number) new BigInteger("6"), (Number) new BigInteger("7"), (Number) new BigInteger("8"), (Number) new BigInteger("9"), (Number) new BigInteger("10")))), (Object) HashTreePSet.from(Arrays.asList((Number) new BigInteger("1"), (Number) new BigInteger("2"), (Number) new BigInteger("3"), (Number) new BigInteger("4"), (Number) new BigInteger("5"), (Number) new BigInteger("6"), (Number) new BigInteger("7"), (Number) new BigInteger("8"), (Number) new BigInteger("9"), (Number) new BigInteger("10"))), (Object) HashTreePSet.from(HashTreePSet.from(Arrays.asList((Number) new BigInteger("1"), (Number) new BigInteger("2"), (Number) new BigInteger("3"), (Number) new BigInteger("4"), (Number) new BigInteger("5"), (Number) new BigInteger("6"), (Number) new BigInteger("7"), (Number) new BigInteger("8"), (Number) new BigInteger("9"), (Number) new BigInteger("10")))));
+    Assert.assertEquals("Expected: " + HashTreePSet.from(Arrays.asList((Number) new BigInteger("1"), (Number) new BigInteger("2"), (Number) new BigInteger("3"), (Number) new BigInteger("4"), (Number) new BigInteger("5"), (Number) new BigInteger("6"), (Number) new BigInteger("7"), (Number) new BigInteger("8"), (Number) new BigInteger("9"), (Number) new BigInteger("10"))) + ", but was: " + HashTreePSet.from(HashTreePSet.from(Arrays.asList((Number) new BigInteger("1"), (Number) new BigInteger("2"), (Number) new BigInteger("3"), (Number) new BigInteger("4"), (Number) new BigInteger("5"), (Number) new BigInteger("6"), (Number) new BigInteger("7"), (Number) new BigInteger("8"), (Number) new BigInteger("9"), (Number) new BigInteger("10")))), HashTreePSet.from(Arrays.asList((Number) new BigInteger("1"), (Number) new BigInteger("2"), (Number) new BigInteger("3"), (Number) new BigInteger("4"), (Number) new BigInteger("5"), (Number) new BigInteger("6"), (Number) new BigInteger("7"), (Number) new BigInteger("8"), (Number) new BigInteger("9"), (Number) new BigInteger("10"))), HashTreePSet.from(HashTreePSet.from(Arrays.asList((Number) new BigInteger("1"), (Number) new BigInteger("2"), (Number) new BigInteger("3"), (Number) new BigInteger("4"), (Number) new BigInteger("5"), (Number) new BigInteger("6"), (Number) new BigInteger("7"), (Number) new BigInteger("8"), (Number) new BigInteger("9"), (Number) new BigInteger("10")))));
   }
 /* 
    * what about first and distinct
    */
     @Test
   public void collectionSetLiteral_item29_9070044578385613549() throws Throwable {
-    Assert.assertEquals("Expected: " + TreePVector.<Number>empty().plus((Number) new BigInteger("1")).plus((Number) new BigInteger("2")) + ", but was: " + TreePVector.<Number>from(HashTreePSet.from(Arrays.asList((Number) new BigInteger("1"), (Number) new BigInteger("2"))).stream().filter(new Predicate<Number>() {
+    Assert.assertEquals("Expected: " + TreePVector.<Number>empty().plus(new BigInteger("1")).plus(new BigInteger("2")) + ", but was: " + TreePVector.<Number>from(HashTreePSet.from(Arrays.asList((Number) new BigInteger("1"), (Number) new BigInteger("2"))).stream().filter(new Predicate<Number>() {
       public boolean test(Number p0) {
         return p0 != null;
       }
-    }).collect(Collectors.<Number>toList())), (Object) TreePVector.<Number>empty().plus((Number) new BigInteger("1")).plus((Number) new BigInteger("2")), (Object) TreePVector.<Number>from(HashTreePSet.from(Arrays.asList((Number) new BigInteger("1"), (Number) new BigInteger("2"))).stream().filter(new Predicate<Number>() {
+    }).collect(Collectors.<Number>toList())), TreePVector.<Number>empty().plus(new BigInteger("1")).plus(new BigInteger("2")), TreePVector.<Number>from(HashTreePSet.from(Arrays.asList((Number) new BigInteger("1"), (Number) new BigInteger("2"))).stream().filter(new Predicate<Number>() {
       public boolean test(Number p0) {
         return p0 != null;
       }
@@ -5169,21 +5169,21 @@ public class Generated_collections_Test {
    */
     @Test
   public void collectionSetLiteral_item30_9070044578385613561() throws Throwable {
-    Assert.assertEquals("Expected: " + TreePVector.<Number>empty().plus((Number) new BigInteger("1")).plus((Number) new BigInteger("2")) + ", but was: " + TreePVector.<Number>from(HashTreePSet.from(Arrays.asList((Number) new BigInteger("1"), (Number) new BigInteger("2"), (Number) new BigInteger("3"), (Number) new BigInteger("4"), (Number) new BigInteger("5"), (Number) new BigInteger("6"), (Number) new BigInteger("7"), (Number) new BigInteger("8"), (Number) new BigInteger("9"), (Number) new BigInteger("10"))).stream().filter(new Predicate<Number>() {
+    Assert.assertEquals("Expected: " + TreePVector.<Number>empty().plus(new BigInteger("1")).plus(new BigInteger("2")) + ", but was: " + TreePVector.<Number>from(HashTreePSet.from(Arrays.asList((Number) new BigInteger("1"), (Number) new BigInteger("2"), (Number) new BigInteger("3"), (Number) new BigInteger("4"), (Number) new BigInteger("5"), (Number) new BigInteger("6"), (Number) new BigInteger("7"), (Number) new BigInteger("8"), (Number) new BigInteger("9"), (Number) new BigInteger("10"))).stream().filter(new Predicate<Number>() {
       public boolean test(Number o) {
         return new Function<ParameterSetWrapper, Boolean>() {
           public Boolean apply(ParameterSetWrapper param) {
             Number it = (Number) param.parameters.get(0);
-            return AH.isLess(it, (Number) new BigInteger("3"));
+            return AH.isLess(it, new BigInteger("3"));
           }
         }.apply(new ParameterSetWrapper(o));
       }
-    }).collect(Collectors.<Number>toList())), (Object) TreePVector.<Number>empty().plus((Number) new BigInteger("1")).plus((Number) new BigInteger("2")), (Object) TreePVector.<Number>from(HashTreePSet.from(Arrays.asList((Number) new BigInteger("1"), (Number) new BigInteger("2"), (Number) new BigInteger("3"), (Number) new BigInteger("4"), (Number) new BigInteger("5"), (Number) new BigInteger("6"), (Number) new BigInteger("7"), (Number) new BigInteger("8"), (Number) new BigInteger("9"), (Number) new BigInteger("10"))).stream().filter(new Predicate<Number>() {
+    }).collect(Collectors.<Number>toList())), TreePVector.<Number>empty().plus(new BigInteger("1")).plus(new BigInteger("2")), TreePVector.<Number>from(HashTreePSet.from(Arrays.asList((Number) new BigInteger("1"), (Number) new BigInteger("2"), (Number) new BigInteger("3"), (Number) new BigInteger("4"), (Number) new BigInteger("5"), (Number) new BigInteger("6"), (Number) new BigInteger("7"), (Number) new BigInteger("8"), (Number) new BigInteger("9"), (Number) new BigInteger("10"))).stream().filter(new Predicate<Number>() {
       public boolean test(Number o) {
         return new Function<ParameterSetWrapper, Boolean>() {
           public Boolean apply(ParameterSetWrapper param) {
             Number it = (Number) param.parameters.get(0);
-            return AH.isLess(it, (Number) new BigInteger("3"));
+            return AH.isLess(it, new BigInteger("3"));
           }
         }.apply(new ParameterSetWrapper(o));
       }
@@ -5194,21 +5194,21 @@ public class Generated_collections_Test {
    */
     @Test
   public void collectionSetLiteral_item31_9070044578385613583() throws Throwable {
-    Assert.assertEquals("Expected: " + TreePVector.<Number>empty().plus((Number) new BigInteger("1")).plus((Number) new BigInteger("2")) + ", but was: " + TreePVector.<Number>from(HashTreePSet.from(Arrays.asList((Number) new BigInteger("1"), (Number) new BigInteger("2"), (Number) new BigInteger("3"), (Number) new BigInteger("4"), (Number) new BigInteger("5"), (Number) new BigInteger("6"), (Number) new BigInteger("7"), (Number) new BigInteger("8"), (Number) new BigInteger("9"), (Number) new BigInteger("10"))).stream().filter(new Predicate<Number>() {
+    Assert.assertEquals("Expected: " + TreePVector.<Number>empty().plus(new BigInteger("1")).plus(new BigInteger("2")) + ", but was: " + TreePVector.<Number>from(HashTreePSet.from(Arrays.asList((Number) new BigInteger("1"), (Number) new BigInteger("2"), (Number) new BigInteger("3"), (Number) new BigInteger("4"), (Number) new BigInteger("5"), (Number) new BigInteger("6"), (Number) new BigInteger("7"), (Number) new BigInteger("8"), (Number) new BigInteger("9"), (Number) new BigInteger("10"))).stream().filter(new Predicate<Number>() {
       public boolean test(Number o) {
         return new Function<ParameterSetWrapper, Boolean>() {
           public Boolean apply(ParameterSetWrapper param) {
             Number a = (Number) param.parameters.get(0);
-            return AH.isLess(a, (Number) new BigInteger("3"));
+            return AH.isLess(a, new BigInteger("3"));
           }
         }.apply(new ParameterSetWrapper(o));
       }
-    }).collect(Collectors.<Number>toList())), (Object) TreePVector.<Number>empty().plus((Number) new BigInteger("1")).plus((Number) new BigInteger("2")), (Object) TreePVector.<Number>from(HashTreePSet.from(Arrays.asList((Number) new BigInteger("1"), (Number) new BigInteger("2"), (Number) new BigInteger("3"), (Number) new BigInteger("4"), (Number) new BigInteger("5"), (Number) new BigInteger("6"), (Number) new BigInteger("7"), (Number) new BigInteger("8"), (Number) new BigInteger("9"), (Number) new BigInteger("10"))).stream().filter(new Predicate<Number>() {
+    }).collect(Collectors.<Number>toList())), TreePVector.<Number>empty().plus(new BigInteger("1")).plus(new BigInteger("2")), TreePVector.<Number>from(HashTreePSet.from(Arrays.asList((Number) new BigInteger("1"), (Number) new BigInteger("2"), (Number) new BigInteger("3"), (Number) new BigInteger("4"), (Number) new BigInteger("5"), (Number) new BigInteger("6"), (Number) new BigInteger("7"), (Number) new BigInteger("8"), (Number) new BigInteger("9"), (Number) new BigInteger("10"))).stream().filter(new Predicate<Number>() {
       public boolean test(Number o) {
         return new Function<ParameterSetWrapper, Boolean>() {
           public Boolean apply(ParameterSetWrapper param) {
             Number a = (Number) param.parameters.get(0);
-            return AH.isLess(a, (Number) new BigInteger("3"));
+            return AH.isLess(a, new BigInteger("3"));
           }
         }.apply(new ParameterSetWrapper(o));
       }
@@ -5219,7 +5219,7 @@ public class Generated_collections_Test {
    */
     @Test
   public void collectionSetLiteral_item32_9070044578385613608() throws Throwable {
-    Assert.assertEquals("Expected: " + TreePVector.<Number>empty().plus((Number) new BigInteger("1")).plus((Number) new BigInteger("2")).plus((Number) new BigInteger("3")).plus((Number) new BigInteger("4")).plus((Number) new BigInteger("5")).plus((Number) new BigInteger("6")).plus((Number) new BigInteger("7")).plus((Number) new BigInteger("8")).plus((Number) new BigInteger("9")).plus((Number) new BigInteger("10")) + ", but was: " + TreePVector.<Number>from(HashTreePSet.from(Arrays.asList((Number) new BigInteger("1"), (Number) new BigInteger("2"), (Number) new BigInteger("3"), (Number) new BigInteger("4"), (Number) new BigInteger("5"), (Number) new BigInteger("6"), (Number) new BigInteger("7"), (Number) new BigInteger("8"), (Number) new BigInteger("9"), (Number) new BigInteger("10"))).stream().filter(new Predicate<Number>() {
+    Assert.assertEquals("Expected: " + TreePVector.<Number>empty().plus(new BigInteger("1")).plus(new BigInteger("2")).plus(new BigInteger("3")).plus(new BigInteger("4")).plus(new BigInteger("5")).plus(new BigInteger("6")).plus(new BigInteger("7")).plus(new BigInteger("8")).plus(new BigInteger("9")).plus(new BigInteger("10")) + ", but was: " + TreePVector.<Number>from(HashTreePSet.from(Arrays.asList((Number) new BigInteger("1"), (Number) new BigInteger("2"), (Number) new BigInteger("3"), (Number) new BigInteger("4"), (Number) new BigInteger("5"), (Number) new BigInteger("6"), (Number) new BigInteger("7"), (Number) new BigInteger("8"), (Number) new BigInteger("9"), (Number) new BigInteger("10"))).stream().filter(new Predicate<Number>() {
       public boolean test(Number o) {
         return new Function<ParameterSetWrapper, Boolean>() {
           public Boolean apply(ParameterSetWrapper param) {
@@ -5227,7 +5227,7 @@ public class Generated_collections_Test {
           }
         }.apply(new ParameterSetWrapper(o));
       }
-    }).collect(Collectors.<Number>toList())), (Object) TreePVector.<Number>empty().plus((Number) new BigInteger("1")).plus((Number) new BigInteger("2")).plus((Number) new BigInteger("3")).plus((Number) new BigInteger("4")).plus((Number) new BigInteger("5")).plus((Number) new BigInteger("6")).plus((Number) new BigInteger("7")).plus((Number) new BigInteger("8")).plus((Number) new BigInteger("9")).plus((Number) new BigInteger("10")), (Object) TreePVector.<Number>from(HashTreePSet.from(Arrays.asList((Number) new BigInteger("1"), (Number) new BigInteger("2"), (Number) new BigInteger("3"), (Number) new BigInteger("4"), (Number) new BigInteger("5"), (Number) new BigInteger("6"), (Number) new BigInteger("7"), (Number) new BigInteger("8"), (Number) new BigInteger("9"), (Number) new BigInteger("10"))).stream().filter(new Predicate<Number>() {
+    }).collect(Collectors.<Number>toList())), TreePVector.<Number>empty().plus(new BigInteger("1")).plus(new BigInteger("2")).plus(new BigInteger("3")).plus(new BigInteger("4")).plus(new BigInteger("5")).plus(new BigInteger("6")).plus(new BigInteger("7")).plus(new BigInteger("8")).plus(new BigInteger("9")).plus(new BigInteger("10")), TreePVector.<Number>from(HashTreePSet.from(Arrays.asList((Number) new BigInteger("1"), (Number) new BigInteger("2"), (Number) new BigInteger("3"), (Number) new BigInteger("4"), (Number) new BigInteger("5"), (Number) new BigInteger("6"), (Number) new BigInteger("7"), (Number) new BigInteger("8"), (Number) new BigInteger("9"), (Number) new BigInteger("10"))).stream().filter(new Predicate<Number>() {
       public boolean test(Number o) {
         return new Function<ParameterSetWrapper, Boolean>() {
           public Boolean apply(ParameterSetWrapper param) {
@@ -5242,22 +5242,22 @@ public class Generated_collections_Test {
    */
     @Test
   public void collectionSetLiteral_item33_32857128011297516() throws Throwable {
-    Assert.assertEquals("Expected: " + HashTreePSet.from(Arrays.asList((Number) new BigInteger("1"), (Number) new BigInteger("2"), (Number) new BigInteger("3"), (Number) new BigInteger("4"), (Number) new BigInteger("5"), (Number) new BigInteger("6"), (Number) new BigInteger("7"), (Number) new BigInteger("8"), (Number) new BigInteger("9"), (Number) new BigInteger("10"), (Number) new BigInteger("11"))) + ", but was: " + HashTreePSet.from(Arrays.asList((Number) new BigInteger("1"), (Number) new BigInteger("2"), (Number) new BigInteger("3"), (Number) new BigInteger("4"), (Number) new BigInteger("5"), (Number) new BigInteger("6"), (Number) new BigInteger("7"), (Number) new BigInteger("8"), (Number) new BigInteger("9"), (Number) new BigInteger("10"))).plus((Number) new BigInteger("11")), (Object) HashTreePSet.from(Arrays.asList((Number) new BigInteger("1"), (Number) new BigInteger("2"), (Number) new BigInteger("3"), (Number) new BigInteger("4"), (Number) new BigInteger("5"), (Number) new BigInteger("6"), (Number) new BigInteger("7"), (Number) new BigInteger("8"), (Number) new BigInteger("9"), (Number) new BigInteger("10"), (Number) new BigInteger("11"))), (Object) HashTreePSet.from(Arrays.asList((Number) new BigInteger("1"), (Number) new BigInteger("2"), (Number) new BigInteger("3"), (Number) new BigInteger("4"), (Number) new BigInteger("5"), (Number) new BigInteger("6"), (Number) new BigInteger("7"), (Number) new BigInteger("8"), (Number) new BigInteger("9"), (Number) new BigInteger("10"))).plus((Number) new BigInteger("11")));
+    Assert.assertEquals("Expected: " + HashTreePSet.from(Arrays.asList((Number) new BigInteger("1"), (Number) new BigInteger("2"), (Number) new BigInteger("3"), (Number) new BigInteger("4"), (Number) new BigInteger("5"), (Number) new BigInteger("6"), (Number) new BigInteger("7"), (Number) new BigInteger("8"), (Number) new BigInteger("9"), (Number) new BigInteger("10"), (Number) new BigInteger("11"))) + ", but was: " + HashTreePSet.from(Arrays.asList((Number) new BigInteger("1"), (Number) new BigInteger("2"), (Number) new BigInteger("3"), (Number) new BigInteger("4"), (Number) new BigInteger("5"), (Number) new BigInteger("6"), (Number) new BigInteger("7"), (Number) new BigInteger("8"), (Number) new BigInteger("9"), (Number) new BigInteger("10"))).plus(new BigInteger("11")), HashTreePSet.from(Arrays.asList((Number) new BigInteger("1"), (Number) new BigInteger("2"), (Number) new BigInteger("3"), (Number) new BigInteger("4"), (Number) new BigInteger("5"), (Number) new BigInteger("6"), (Number) new BigInteger("7"), (Number) new BigInteger("8"), (Number) new BigInteger("9"), (Number) new BigInteger("10"), (Number) new BigInteger("11"))), HashTreePSet.from(Arrays.asList((Number) new BigInteger("1"), (Number) new BigInteger("2"), (Number) new BigInteger("3"), (Number) new BigInteger("4"), (Number) new BigInteger("5"), (Number) new BigInteger("6"), (Number) new BigInteger("7"), (Number) new BigInteger("8"), (Number) new BigInteger("9"), (Number) new BigInteger("10"))).plus(new BigInteger("11")));
   }
 /* 
    * what about first and distinct
    */
     @Test
   public void collectionSetLiteral_item34_32857128012438387() throws Throwable {
-    Assert.assertEquals("Expected: " + HashTreePSet.from(Arrays.asList((Number) new BigInteger("1"), (Number) new BigInteger("2"), (Number) new BigInteger("3"), (Number) new BigInteger("4"), (Number) new BigInteger("5"), (Number) new BigInteger("6"), (Number) new BigInteger("7"), (Number) new BigInteger("8"), (Number) new BigInteger("9"))) + ", but was: " + HashTreePSet.from(Arrays.asList((Number) new BigInteger("1"), (Number) new BigInteger("2"), (Number) new BigInteger("3"), (Number) new BigInteger("4"), (Number) new BigInteger("5"), (Number) new BigInteger("6"), (Number) new BigInteger("7"), (Number) new BigInteger("8"), (Number) new BigInteger("9"), (Number) new BigInteger("10"))).minus((Number) new BigInteger("10")), (Object) HashTreePSet.from(Arrays.asList((Number) new BigInteger("1"), (Number) new BigInteger("2"), (Number) new BigInteger("3"), (Number) new BigInteger("4"), (Number) new BigInteger("5"), (Number) new BigInteger("6"), (Number) new BigInteger("7"), (Number) new BigInteger("8"), (Number) new BigInteger("9"))), (Object) HashTreePSet.from(Arrays.asList((Number) new BigInteger("1"), (Number) new BigInteger("2"), (Number) new BigInteger("3"), (Number) new BigInteger("4"), (Number) new BigInteger("5"), (Number) new BigInteger("6"), (Number) new BigInteger("7"), (Number) new BigInteger("8"), (Number) new BigInteger("9"), (Number) new BigInteger("10"))).minus((Number) new BigInteger("10")));
+    Assert.assertEquals("Expected: " + HashTreePSet.from(Arrays.asList((Number) new BigInteger("1"), (Number) new BigInteger("2"), (Number) new BigInteger("3"), (Number) new BigInteger("4"), (Number) new BigInteger("5"), (Number) new BigInteger("6"), (Number) new BigInteger("7"), (Number) new BigInteger("8"), (Number) new BigInteger("9"))) + ", but was: " + HashTreePSet.from(Arrays.asList((Number) new BigInteger("1"), (Number) new BigInteger("2"), (Number) new BigInteger("3"), (Number) new BigInteger("4"), (Number) new BigInteger("5"), (Number) new BigInteger("6"), (Number) new BigInteger("7"), (Number) new BigInteger("8"), (Number) new BigInteger("9"), (Number) new BigInteger("10"))).minus(new BigInteger("10")), HashTreePSet.from(Arrays.asList((Number) new BigInteger("1"), (Number) new BigInteger("2"), (Number) new BigInteger("3"), (Number) new BigInteger("4"), (Number) new BigInteger("5"), (Number) new BigInteger("6"), (Number) new BigInteger("7"), (Number) new BigInteger("8"), (Number) new BigInteger("9"))), HashTreePSet.from(Arrays.asList((Number) new BigInteger("1"), (Number) new BigInteger("2"), (Number) new BigInteger("3"), (Number) new BigInteger("4"), (Number) new BigInteger("5"), (Number) new BigInteger("6"), (Number) new BigInteger("7"), (Number) new BigInteger("8"), (Number) new BigInteger("9"), (Number) new BigInteger("10"))).minus(new BigInteger("10")));
   }
-  public static final PVector<Number> l1_ = TreePVector.<Number>empty().plus((Number) new BigInteger("1")).plus((Number) new BigInteger("2")).plus((Number) new BigInteger("3")).plus((Number) new BigInteger("4")).plus((Number) new BigInteger("5")).plus((Number) new BigInteger("6")).plus((Number) new BigInteger("7")).plus((Number) new BigInteger("8")).plus((Number) new BigInteger("9")).plus((Number) new BigInteger("10"));
-  public static final PVector<item> l2_ = TreePVector.<item>empty().plus(new item((Number) new BigInteger("1"), "1")).plus(new item((Number) new BigInteger("1"), "1a")).plus(new item((Number) new BigInteger("2"), "2"));
-  public static final PVector<PVector<Number>> l3_ = TreePVector.<PVector<Number>>empty().plus(TreePVector.<Number>empty().plus((Number) new BigInteger("1"))).plus(TreePVector.<Number>empty().plus((Number) new BigInteger("2"))).plus(TreePVector.<Number>empty().plus((Number) new BigInteger("3"))).plus(TreePVector.<Number>empty().plus((Number) new BigInteger("4")));
-  public static final PVector<item> l4_ = TreePVector.<item>empty().plus(new item((Number) new BigInteger("1"), "1")).plus(new item((Number) new BigInteger("2"), "2"));
-  public static final PVector<Number> l5_ = TreePVector.<Number>empty().plus((Number) new BigInteger("1")).plus((Number) new BigInteger("2"));
-  public static final PVector<Number> l6_ = TreePVector.<Number>empty().plus((Number) new BigInteger("1")).plus((Number) new BigInteger("2")).plus((Number) new BigInteger("3")).plus((Number) new BigInteger("4")).plus((Number) new BigInteger("5")).plus((Number) new BigInteger("6")).plus((Number) new BigInteger("7")).plus((Number) new BigInteger("8")).plus((Number) new BigInteger("9")).plus((Number) new BigInteger("10"));
-  public static final PVector<Number> l7_ = TreePVector.<Number>empty().plus((Number) new BigInteger("1")).plus((Number) new BigInteger("2")).plus((Number) new BigInteger("3")).plus((Number) new BigInteger("4")).plus((Number) new BigInteger("5")).plus((Number) new BigInteger("6")).plus((Number) new BigInteger("7")).plus((Number) new BigInteger("8")).plus((Number) new BigInteger("9")).plus((Number) new BigInteger("10"));
+  public static final PVector<Number> l1_ = TreePVector.<Number>empty().plus(new BigInteger("1")).plus(new BigInteger("2")).plus(new BigInteger("3")).plus(new BigInteger("4")).plus(new BigInteger("5")).plus(new BigInteger("6")).plus(new BigInteger("7")).plus(new BigInteger("8")).plus(new BigInteger("9")).plus(new BigInteger("10"));
+  public static final PVector<item> l2_ = TreePVector.<item>empty().plus(new item(new BigInteger("1"), "1")).plus(new item(new BigInteger("1"), "1a")).plus(new item(new BigInteger("2"), "2"));
+  public static final PVector<PVector<Number>> l3_ = TreePVector.<PVector<Number>>empty().plus(TreePVector.<Number>empty().plus(new BigInteger("1"))).plus(TreePVector.<Number>empty().plus(new BigInteger("2"))).plus(TreePVector.<Number>empty().plus(new BigInteger("3"))).plus(TreePVector.<Number>empty().plus(new BigInteger("4")));
+  public static final PVector<item> l4_ = TreePVector.<item>empty().plus(new item(new BigInteger("1"), "1")).plus(new item(new BigInteger("2"), "2"));
+  public static final PVector<Number> l5_ = TreePVector.<Number>empty().plus(new BigInteger("1")).plus(new BigInteger("2"));
+  public static final PVector<Number> l6_ = TreePVector.<Number>empty().plus(new BigInteger("1")).plus(new BigInteger("2")).plus(new BigInteger("3")).plus(new BigInteger("4")).plus(new BigInteger("5")).plus(new BigInteger("6")).plus(new BigInteger("7")).plus(new BigInteger("8")).plus(new BigInteger("9")).plus(new BigInteger("10"));
+  public static final PVector<Number> l7_ = TreePVector.<Number>empty().plus(new BigInteger("1")).plus(new BigInteger("2")).plus(new BigInteger("3")).plus(new BigInteger("4")).plus(new BigInteger("5")).plus(new BigInteger("6")).plus(new BigInteger("7")).plus(new BigInteger("8")).plus(new BigInteger("9")).plus(new BigInteger("10"));
 /* 
    * foreach is still missing, as well as insert and remove
    */
@@ -5268,7 +5268,7 @@ public class Generated_collections_Test {
         return new Function<ParameterSetWrapper, Boolean>() {
           public Boolean apply(ParameterSetWrapper param) {
             Number it = (Number) param.parameters.get(0);
-            return AH.isLess(it, (Number) new BigInteger("3"));
+            return AH.isLess(it, new BigInteger("3"));
           }
         }.apply(new ParameterSetWrapper(o));
       }
@@ -5277,7 +5277,7 @@ public class Generated_collections_Test {
         return new Function<ParameterSetWrapper, Boolean>() {
           public Boolean apply(ParameterSetWrapper param) {
             Number it = (Number) param.parameters.get(0);
-            return AH.isLess(it, (Number) new BigInteger("3"));
+            return AH.isLess(it, new BigInteger("3"));
           }
         }.apply(new ParameterSetWrapper(o));
       }
@@ -5293,7 +5293,7 @@ public class Generated_collections_Test {
         return new Function<ParameterSetWrapper, Boolean>() {
           public Boolean apply(ParameterSetWrapper param) {
             Number a = (Number) param.parameters.get(0);
-            return AH.isLess(a, (Number) new BigInteger("11"));
+            return AH.isLess(a, new BigInteger("11"));
           }
         }.apply(new ParameterSetWrapper(o));
       }
@@ -5302,7 +5302,7 @@ public class Generated_collections_Test {
         return new Function<ParameterSetWrapper, Boolean>() {
           public Boolean apply(ParameterSetWrapper param) {
             Number a = (Number) param.parameters.get(0);
-            return AH.isLess(a, (Number) new BigInteger("11"));
+            return AH.isLess(a, new BigInteger("11"));
           }
         }.apply(new ParameterSetWrapper(o));
       }
@@ -5341,7 +5341,7 @@ public class Generated_collections_Test {
         return new Function<ParameterSetWrapper, Boolean>() {
           public Boolean apply(ParameterSetWrapper param) {
             Number it = (Number) param.parameters.get(0);
-            return AH.isLess(it, (Number) new BigInteger("3"));
+            return AH.isLess(it, new BigInteger("3"));
           }
         }.apply(new ParameterSetWrapper(o));
       }
@@ -5350,7 +5350,7 @@ public class Generated_collections_Test {
         return new Function<ParameterSetWrapper, Boolean>() {
           public Boolean apply(ParameterSetWrapper param) {
             Number it = (Number) param.parameters.get(0);
-            return AH.isLess(it, (Number) new BigInteger("3"));
+            return AH.isLess(it, new BigInteger("3"));
           }
         }.apply(new ParameterSetWrapper(o));
       }
@@ -5366,7 +5366,7 @@ public class Generated_collections_Test {
         return new Function<ParameterSetWrapper, Boolean>() {
           public Boolean apply(ParameterSetWrapper param) {
             Number a = (Number) param.parameters.get(0);
-            return AH.isGreater(a, (Number) new BigInteger("11"));
+            return AH.isGreater(a, new BigInteger("11"));
           }
         }.apply(new ParameterSetWrapper(o));
       }
@@ -5375,7 +5375,7 @@ public class Generated_collections_Test {
         return new Function<ParameterSetWrapper, Boolean>() {
           public Boolean apply(ParameterSetWrapper param) {
             Number a = (Number) param.parameters.get(0);
-            return AH.isGreater(a, (Number) new BigInteger("11"));
+            return AH.isGreater(a, new BigInteger("11"));
           }
         }.apply(new ParameterSetWrapper(o));
       }
@@ -5409,42 +5409,42 @@ public class Generated_collections_Test {
    */
     @Test
   public void collectionListConstant_item6_9070044578388155048() throws Throwable {
-    Assert.assertTrue("Expected: " + (Number) new BigInteger("6") + ", but was: " + (Number) Generated_collections_Test.l1_.get(((Number) new BigInteger("5")).intValue()), EqualsTestOp.matches((Number) new BigInteger("6"), (Number) Generated_collections_Test.l1_.get(((Number) new BigInteger("5")).intValue())));
+    Assert.assertTrue("Expected: " + new BigInteger("6") + ", but was: " + Generated_collections_Test.l1_.get(new BigInteger("5").intValue()), EqualsTestOp.matches(new BigInteger("6"), Generated_collections_Test.l1_.get(new BigInteger("5").intValue())));
   }
 /* 
    * foreach is still missing, as well as insert and remove
    */
     @Test
   public void collectionListConstant_item7_9070044578388155065() throws Throwable {
-    Assert.assertEquals("Expected: " + true + ", but was: " + Generated_collections_Test.l1_.contains((Number) new BigInteger("6")), (Object) true, (Object) Generated_collections_Test.l1_.contains((Number) new BigInteger("6")));
+    Assert.assertEquals("Expected: " + true + ", but was: " + Generated_collections_Test.l1_.contains(new BigInteger("6")), (Object) true, (Object) Generated_collections_Test.l1_.contains(new BigInteger("6")));
   }
 /* 
    * foreach is still missing, as well as insert and remove
    */
     @Test
   public void collectionListConstant_item8_9070044578388155082() throws Throwable {
-    Assert.assertEquals("Expected: " + TreePVector.<Number>empty().plus((Number) new BigInteger("1")).plus((Number) new BigInteger("2")).plus((Number) new BigInteger("3")).plus((Number) new BigInteger("4")).plus((Number) new BigInteger("5")).plus((Number) new BigInteger("6")).plus((Number) new BigInteger("7")).plus((Number) new BigInteger("8")).plus((Number) new BigInteger("9")).plus((Number) new BigInteger("10")) + ", but was: " + TreePVector.<Number>from(Generated_collections_Test.l1_.stream().distinct().collect(Collectors.<Number>toList())), (Object) TreePVector.<Number>empty().plus((Number) new BigInteger("1")).plus((Number) new BigInteger("2")).plus((Number) new BigInteger("3")).plus((Number) new BigInteger("4")).plus((Number) new BigInteger("5")).plus((Number) new BigInteger("6")).plus((Number) new BigInteger("7")).plus((Number) new BigInteger("8")).plus((Number) new BigInteger("9")).plus((Number) new BigInteger("10")), (Object) TreePVector.<Number>from(Generated_collections_Test.l1_.stream().distinct().collect(Collectors.<Number>toList())));
+    Assert.assertEquals("Expected: " + TreePVector.<Number>empty().plus(new BigInteger("1")).plus(new BigInteger("2")).plus(new BigInteger("3")).plus(new BigInteger("4")).plus(new BigInteger("5")).plus(new BigInteger("6")).plus(new BigInteger("7")).plus(new BigInteger("8")).plus(new BigInteger("9")).plus(new BigInteger("10")) + ", but was: " + TreePVector.<Number>from(Generated_collections_Test.l1_.stream().distinct().collect(Collectors.<Number>toList())), TreePVector.<Number>empty().plus(new BigInteger("1")).plus(new BigInteger("2")).plus(new BigInteger("3")).plus(new BigInteger("4")).plus(new BigInteger("5")).plus(new BigInteger("6")).plus(new BigInteger("7")).plus(new BigInteger("8")).plus(new BigInteger("9")).plus(new BigInteger("10")), TreePVector.<Number>from(Generated_collections_Test.l1_.stream().distinct().collect(Collectors.<Number>toList())));
   }
 /* 
    * foreach is still missing, as well as insert and remove
    */
     @Test
   public void collectionListConstant_item9_9070044578388155108() throws Throwable {
-    Assert.assertTrue("Expected: " + (Number) new BigInteger("3") + ", but was: " + Generated_collections_Test.l1_.stream().filter(new Predicate<Number>() {
+    Assert.assertTrue("Expected: " + new BigInteger("3") + ", but was: " + Generated_collections_Test.l1_.stream().filter(new Predicate<Number>() {
       public boolean test(Number o) {
         return new Function<ParameterSetWrapper, Boolean>() {
           public Boolean apply(ParameterSetWrapper param) {
             Number it = (Number) param.parameters.get(0);
-            return AH.isEqual(it, (Number) new BigInteger("3"));
+            return AH.isEqual(it, new BigInteger("3"));
           }
         }.apply(new ParameterSetWrapper(o));
       }
-    }).findFirst().orElse(null), EqualsTestOp.matches((Number) new BigInteger("3"), Generated_collections_Test.l1_.stream().filter(new Predicate<Number>() {
+    }).findFirst().orElse(null), EqualsTestOp.matches(new BigInteger("3"), Generated_collections_Test.l1_.stream().filter(new Predicate<Number>() {
       public boolean test(Number o) {
         return new Function<ParameterSetWrapper, Boolean>() {
           public Boolean apply(ParameterSetWrapper param) {
             Number it = (Number) param.parameters.get(0);
-            return AH.isEqual(it, (Number) new BigInteger("3"));
+            return AH.isEqual(it, new BigInteger("3"));
           }
         }.apply(new ParameterSetWrapper(o));
       }
@@ -5455,21 +5455,21 @@ public class Generated_collections_Test {
    */
     @Test
   public void collectionListConstant_item10_9070044578388155128() throws Throwable {
-    Assert.assertTrue("Expected: " + (Number) new BigInteger("1") + ", but was: " + Generated_collections_Test.l1_.stream().filter(new Predicate<Number>() {
+    Assert.assertTrue("Expected: " + new BigInteger("1") + ", but was: " + Generated_collections_Test.l1_.stream().filter(new Predicate<Number>() {
       public boolean test(Number o) {
         return new Function<ParameterSetWrapper, Boolean>() {
           public Boolean apply(ParameterSetWrapper param) {
             Number a = (Number) param.parameters.get(0);
-            return AH.isLess(a, (Number) new BigInteger("11"));
+            return AH.isLess(a, new BigInteger("11"));
           }
         }.apply(new ParameterSetWrapper(o));
       }
-    }).findFirst().orElse(null), EqualsTestOp.matches((Number) new BigInteger("1"), Generated_collections_Test.l1_.stream().filter(new Predicate<Number>() {
+    }).findFirst().orElse(null), EqualsTestOp.matches(new BigInteger("1"), Generated_collections_Test.l1_.stream().filter(new Predicate<Number>() {
       public boolean test(Number o) {
         return new Function<ParameterSetWrapper, Boolean>() {
           public Boolean apply(ParameterSetWrapper param) {
             Number a = (Number) param.parameters.get(0);
-            return AH.isLess(a, (Number) new BigInteger("11"));
+            return AH.isLess(a, new BigInteger("11"));
           }
         }.apply(new ParameterSetWrapper(o));
       }
@@ -5480,7 +5480,7 @@ public class Generated_collections_Test {
    */
     @Test
   public void collectionListConstant_item11_9070044578388155151() throws Throwable {
-    Assert.assertTrue("Expected: " + (Number) new BigInteger("1") + ", but was: " + Generated_collections_Test.l1_.stream().filter(new Predicate<Number>() {
+    Assert.assertTrue("Expected: " + new BigInteger("1") + ", but was: " + Generated_collections_Test.l1_.stream().filter(new Predicate<Number>() {
       public boolean test(Number o) {
         return new Function<ParameterSetWrapper, Boolean>() {
           public Boolean apply(ParameterSetWrapper param) {
@@ -5488,7 +5488,7 @@ public class Generated_collections_Test {
           }
         }.apply(new ParameterSetWrapper(o));
       }
-    }).findFirst().orElse(null), EqualsTestOp.matches((Number) new BigInteger("1"), Generated_collections_Test.l1_.stream().filter(new Predicate<Number>() {
+    }).findFirst().orElse(null), EqualsTestOp.matches(new BigInteger("1"), Generated_collections_Test.l1_.stream().filter(new Predicate<Number>() {
       public boolean test(Number o) {
         return new Function<ParameterSetWrapper, Boolean>() {
           public Boolean apply(ParameterSetWrapper param) {
@@ -5503,10 +5503,10 @@ public class Generated_collections_Test {
    */
     @Test
   public void collectionListConstant_item12_9070044578388155168() throws Throwable {
-    Assert.assertTrue("Expected: " + (Number) new BigInteger("1") + ", but was: " + (((_FunctionTypes._return_P0_E0<Number>) () -> {
+    Assert.assertTrue("Expected: " + new BigInteger("1") + ", but was: " + (((_FunctionTypes._return_P0_E0<Number>) () -> {
       PVector<Number> listResult = Generated_collections_Test.l1_;
       return (listResult.isEmpty() ? null : listResult.get(0));
-    }).invoke()), EqualsTestOp.matches((Number) new BigInteger("1"), ((_FunctionTypes._return_P0_E0<Number>) () -> {
+    }).invoke()), EqualsTestOp.matches(new BigInteger("1"), ((_FunctionTypes._return_P0_E0<Number>) () -> {
       PVector<Number> listResult = Generated_collections_Test.l1_;
       return (listResult.isEmpty() ? null : listResult.get(0));
     }).invoke()));
@@ -5516,14 +5516,14 @@ public class Generated_collections_Test {
    */
     @Test
   public void collectionListConstant_item13_9070044578388155184() throws Throwable {
-    Assert.assertEquals("Expected: " + TreePVector.<Number>empty().plus((Number) new BigInteger("1")).plus((Number) new BigInteger("2")).plus((Number) new BigInteger("3")).plus((Number) new BigInteger("4")) + ", but was: " + (((_FunctionTypes._return_P0_E0<PVector<Number>>) () -> {
+    Assert.assertEquals("Expected: " + TreePVector.<Number>empty().plus(new BigInteger("1")).plus(new BigInteger("2")).plus(new BigInteger("3")).plus(new BigInteger("4")) + ", but was: " + (((_FunctionTypes._return_P0_E0<PVector<Number>>) () -> {
       List<Number> r = new ArrayList<Number>();
       for (PVector<Number> coll : ListSequence.fromList(Generated_collections_Test.l3_)) {
         r.addAll(coll);
       }
       PVector<Number> result = TreePVector.<Number>from(r);
       return result;
-    }).invoke()), (Object) TreePVector.<Number>empty().plus((Number) new BigInteger("1")).plus((Number) new BigInteger("2")).plus((Number) new BigInteger("3")).plus((Number) new BigInteger("4")), (Object) ((_FunctionTypes._return_P0_E0<PVector<Number>>) () -> {
+    }).invoke()), TreePVector.<Number>empty().plus(new BigInteger("1")).plus(new BigInteger("2")).plus(new BigInteger("3")).plus(new BigInteger("4")), (Object) ((_FunctionTypes._return_P0_E0<PVector<Number>>) () -> {
       List<Number> r = new ArrayList<Number>();
       for (PVector<Number> coll : ListSequence.fromList(Generated_collections_Test.l3_)) {
         r.addAll(coll);
@@ -5537,14 +5537,14 @@ public class Generated_collections_Test {
    */
     @Test
   public void collectionListConstant_item14_9070044578388155202() throws Throwable {
-    Assert.assertTrue("Expected: " + (Number) new BigInteger("55") + ", but was: " + (((_FunctionTypes._return_P0_E0<Number>) () -> {
-      Number seed = (Number) new BigInteger("0");
+    Assert.assertTrue("Expected: " + new BigInteger("55") + ", but was: " + (((_FunctionTypes._return_P0_E0<Number>) () -> {
+      Number seed = new BigInteger("0");
       for (Number current : ListSequence.fromList(Generated_collections_Test.l1_)) {
         seed = AH.add(seed, current);
       }
       return seed;
-    }).invoke()), EqualsTestOp.matches((Number) new BigInteger("55"), ((_FunctionTypes._return_P0_E0<Number>) () -> {
-      Number seed = (Number) new BigInteger("0");
+    }).invoke()), EqualsTestOp.matches(new BigInteger("55"), ((_FunctionTypes._return_P0_E0<Number>) () -> {
+      Number seed = new BigInteger("0");
       for (Number current : ListSequence.fromList(Generated_collections_Test.l1_)) {
         seed = AH.add(seed, current);
       }
@@ -5556,10 +5556,10 @@ public class Generated_collections_Test {
    */
     @Test
   public void collectionListConstant_item15_9070044578388155228() throws Throwable {
-    Assert.assertTrue("Expected: " + (Number) new BigInteger("2") + ", but was: " + BigInteger.valueOf(((_FunctionTypes._return_P0_E0<PVector<GroupValue>>) () -> {
+    Assert.assertTrue("Expected: " + new BigInteger("2") + ", but was: " + BigInteger.valueOf(((_FunctionTypes._return_P0_E0<PVector<GroupValue>>) () -> {
       Map<Number, List<item>> grouped = Generated_collections_Test.l2_.stream().collect(Collectors.groupingBy(new Function<item, Number>() {
         public Number apply(item param) {
-          return (Number) new Function<ParameterSetWrapper, Number>() {
+          return new Function<ParameterSetWrapper, Number>() {
             public Number apply(ParameterSetWrapper param) {
               item it = (item) param.parameters.get(0);
               return it.getn();
@@ -5574,10 +5574,10 @@ public class Generated_collections_Test {
         result = result.plus(g);
       }
       return result;
-    }).invoke().size()), EqualsTestOp.matches((Number) new BigInteger("2"), BigInteger.valueOf(((_FunctionTypes._return_P0_E0<PVector<GroupValue>>) () -> {
+    }).invoke().size()), EqualsTestOp.matches(new BigInteger("2"), BigInteger.valueOf(((_FunctionTypes._return_P0_E0<PVector<GroupValue>>) () -> {
       Map<Number, List<item>> grouped = Generated_collections_Test.l2_.stream().collect(Collectors.groupingBy(new Function<item, Number>() {
         public Number apply(item param) {
-          return (Number) new Function<ParameterSetWrapper, Number>() {
+          return new Function<ParameterSetWrapper, Number>() {
             public Number apply(ParameterSetWrapper param) {
               item it = (item) param.parameters.get(0);
               return it.getn();
@@ -5599,10 +5599,10 @@ public class Generated_collections_Test {
    */
     @Test
   public void collectionListConstant_item16_9070044578388155252() throws Throwable {
-    Assert.assertTrue("Expected: " + (Number) new BigInteger("2") + ", but was: " + BigInteger.valueOf(((_FunctionTypes._return_P0_E0<PVector<GroupValue>>) () -> {
+    Assert.assertTrue("Expected: " + new BigInteger("2") + ", but was: " + BigInteger.valueOf(((_FunctionTypes._return_P0_E0<PVector<GroupValue>>) () -> {
       Map<Number, List<item>> grouped = Generated_collections_Test.l2_.stream().collect(Collectors.groupingBy(new Function<item, Number>() {
         public Number apply(item param) {
-          return (Number) new Function<ParameterSetWrapper, Number>() {
+          return new Function<ParameterSetWrapper, Number>() {
             public Number apply(ParameterSetWrapper param) {
               item i = (item) param.parameters.get(0);
               return i.getn();
@@ -5617,10 +5617,10 @@ public class Generated_collections_Test {
         result = result.plus(g);
       }
       return result;
-    }).invoke().size()), EqualsTestOp.matches((Number) new BigInteger("2"), BigInteger.valueOf(((_FunctionTypes._return_P0_E0<PVector<GroupValue>>) () -> {
+    }).invoke().size()), EqualsTestOp.matches(new BigInteger("2"), BigInteger.valueOf(((_FunctionTypes._return_P0_E0<PVector<GroupValue>>) () -> {
       Map<Number, List<item>> grouped = Generated_collections_Test.l2_.stream().collect(Collectors.groupingBy(new Function<item, Number>() {
         public Number apply(item param) {
-          return (Number) new Function<ParameterSetWrapper, Number>() {
+          return new Function<ParameterSetWrapper, Number>() {
             public Number apply(ParameterSetWrapper param) {
               item i = (item) param.parameters.get(0);
               return i.getn();
@@ -5642,10 +5642,10 @@ public class Generated_collections_Test {
    */
     @Test
   public void collectionListConstant_item17_9070044578388155278() throws Throwable {
-    Assert.assertTrue("Expected: " + (Number) new BigInteger("2") + ", but was: " + BigInteger.valueOf(((_FunctionTypes._return_P0_E0<PVector<GroupValue>>) () -> {
+    Assert.assertTrue("Expected: " + new BigInteger("2") + ", but was: " + BigInteger.valueOf(((_FunctionTypes._return_P0_E0<PVector<GroupValue>>) () -> {
       Map<Number, List<item>> grouped = Generated_collections_Test.l2_.stream().collect(Collectors.groupingBy(new Function<item, Number>() {
         public Number apply(item param) {
-          return (Number) new Function<ParameterSetWrapper, Number>() {
+          return new Function<ParameterSetWrapper, Number>() {
             public Number apply(ParameterSetWrapper param) {
               return collectionListLiteralFoo3((item) param.parameters.get(0));
             }
@@ -5659,10 +5659,10 @@ public class Generated_collections_Test {
         result = result.plus(g);
       }
       return result;
-    }).invoke().size()), EqualsTestOp.matches((Number) new BigInteger("2"), BigInteger.valueOf(((_FunctionTypes._return_P0_E0<PVector<GroupValue>>) () -> {
+    }).invoke().size()), EqualsTestOp.matches(new BigInteger("2"), BigInteger.valueOf(((_FunctionTypes._return_P0_E0<PVector<GroupValue>>) () -> {
       Map<Number, List<item>> grouped = Generated_collections_Test.l2_.stream().collect(Collectors.groupingBy(new Function<item, Number>() {
         public Number apply(item param) {
-          return (Number) new Function<ParameterSetWrapper, Number>() {
+          return new Function<ParameterSetWrapper, Number>() {
             public Number apply(ParameterSetWrapper param) {
               return collectionListLiteralFoo3((item) param.parameters.get(0));
             }
@@ -5683,16 +5683,16 @@ public class Generated_collections_Test {
    */
     @Test
   public void collectionListConstant_item18_9070044578388155299() throws Throwable {
-    Assert.assertEquals("Expected: " + TreePVector.<Number>empty().plus((Number) new BigInteger("1")) + ", but was: " + (((_FunctionTypes._return_P0_E0<PVector<Number>>) () -> {
+    Assert.assertEquals("Expected: " + TreePVector.<Number>empty().plus(new BigInteger("1")) + ", but was: " + (((_FunctionTypes._return_P0_E0<PVector<Number>>) () -> {
       PVector<Number> origList = Generated_collections_Test.l1_;
-      int noOfElements = ((Number) new BigInteger("1")).intValue();
+      int noOfElements = new BigInteger("1").intValue();
       if (origList.size() <= noOfElements) {
         return origList;
       }
       return origList.subList(0, noOfElements);
-    }).invoke()), (Object) TreePVector.<Number>empty().plus((Number) new BigInteger("1")), (Object) ((_FunctionTypes._return_P0_E0<PVector<Number>>) () -> {
+    }).invoke()), TreePVector.<Number>empty().plus(new BigInteger("1")), (Object) ((_FunctionTypes._return_P0_E0<PVector<Number>>) () -> {
       PVector<Number> origList = Generated_collections_Test.l1_;
-      int noOfElements = ((Number) new BigInteger("1")).intValue();
+      int noOfElements = new BigInteger("1").intValue();
       if (origList.size() <= noOfElements) {
         return origList;
       }
@@ -5704,13 +5704,13 @@ public class Generated_collections_Test {
    */
     @Test
   public void collectionListConstant_item19_5396945261021040762() throws Throwable {
-    Assert.assertEquals("Expected: " + TreePVector.<Number>empty().plus((Number) new BigInteger("10")).plus((Number) new BigInteger("9")).plus((Number) new BigInteger("8")).plus((Number) new BigInteger("7")).plus((Number) new BigInteger("6")).plus((Number) new BigInteger("5")).plus((Number) new BigInteger("4")).plus((Number) new BigInteger("3")).plus((Number) new BigInteger("2")).plus((Number) new BigInteger("1")) + ", but was: " + (((_FunctionTypes._return_P0_E0<PVector<Number>>) () -> {
+    Assert.assertEquals("Expected: " + TreePVector.<Number>empty().plus(new BigInteger("10")).plus(new BigInteger("9")).plus(new BigInteger("8")).plus(new BigInteger("7")).plus(new BigInteger("6")).plus(new BigInteger("5")).plus(new BigInteger("4")).plus(new BigInteger("3")).plus(new BigInteger("2")).plus(new BigInteger("1")) + ", but was: " + (((_FunctionTypes._return_P0_E0<PVector<Number>>) () -> {
       PVector<Number> rev = Empty.vector();
       for (int i = Generated_collections_Test.l1_.size() - 1; i >= 0; i--) {
         rev = rev.plus(Generated_collections_Test.l1_.get(i));
       }
       return rev;
-    }).invoke()), (Object) TreePVector.<Number>empty().plus((Number) new BigInteger("10")).plus((Number) new BigInteger("9")).plus((Number) new BigInteger("8")).plus((Number) new BigInteger("7")).plus((Number) new BigInteger("6")).plus((Number) new BigInteger("5")).plus((Number) new BigInteger("4")).plus((Number) new BigInteger("3")).plus((Number) new BigInteger("2")).plus((Number) new BigInteger("1")), (Object) ((_FunctionTypes._return_P0_E0<PVector<Number>>) () -> {
+    }).invoke()), TreePVector.<Number>empty().plus(new BigInteger("10")).plus(new BigInteger("9")).plus(new BigInteger("8")).plus(new BigInteger("7")).plus(new BigInteger("6")).plus(new BigInteger("5")).plus(new BigInteger("4")).plus(new BigInteger("3")).plus(new BigInteger("2")).plus(new BigInteger("1")), (Object) ((_FunctionTypes._return_P0_E0<PVector<Number>>) () -> {
       PVector<Number> rev = Empty.vector();
       for (int i = Generated_collections_Test.l1_.size() - 1; i >= 0; i--) {
         rev = rev.plus(Generated_collections_Test.l1_.get(i));
@@ -5745,7 +5745,7 @@ public class Generated_collections_Test {
         }.invoke().get(i));
       }
       return rev;
-    }).invoke()), (Object) Generated_collections_Test.l4_, (Object) ((_FunctionTypes._return_P0_E0<PVector<item>>) () -> {
+    }).invoke()), Generated_collections_Test.l4_, (Object) ((_FunctionTypes._return_P0_E0<PVector<item>>) () -> {
       PVector<item> rev = Empty.vector();
       for (int i = new _FunctionTypes._return_P0_E0<PVector<item>>() {
         public PVector<item> invoke() {
@@ -5788,10 +5788,10 @@ public class Generated_collections_Test {
    */
     @Test
   public void collectionListConstant_item23_9070044578388155349() throws Throwable {
-    Assert.assertTrue("Expected: " + (Number) new BigInteger("10") + ", but was: " + (((_FunctionTypes._return_P0_E0<Number>) () -> {
+    Assert.assertTrue("Expected: " + new BigInteger("10") + ", but was: " + (((_FunctionTypes._return_P0_E0<Number>) () -> {
       PVector<Number> listResult = Generated_collections_Test.l1_;
       return (listResult.isEmpty() ? null : listResult.get(listResult.size() - 1));
-    }).invoke()), EqualsTestOp.matches((Number) new BigInteger("10"), ((_FunctionTypes._return_P0_E0<Number>) () -> {
+    }).invoke()), EqualsTestOp.matches(new BigInteger("10"), ((_FunctionTypes._return_P0_E0<Number>) () -> {
       PVector<Number> listResult = Generated_collections_Test.l1_;
       return (listResult.isEmpty() ? null : listResult.get(listResult.size() - 1));
     }).invoke()));
@@ -5801,21 +5801,21 @@ public class Generated_collections_Test {
    */
     @Test
   public void collectionListConstant_item24_9070044578388155365() throws Throwable {
-    Assert.assertEquals("Expected: " + TreePVector.<Number>empty().plus((Number) new BigInteger("2")).plus((Number) new BigInteger("3")).plus((Number) new BigInteger("4")).plus((Number) new BigInteger("5")).plus((Number) new BigInteger("6")).plus((Number) new BigInteger("7")).plus((Number) new BigInteger("8")).plus((Number) new BigInteger("9")).plus((Number) new BigInteger("10")).plus((Number) new BigInteger("11")) + ", but was: " + TreePVector.<Number>from(Generated_collections_Test.l1_.stream().map(new Function<Number, Number>() {
+    Assert.assertEquals("Expected: " + TreePVector.<Number>empty().plus(new BigInteger("2")).plus(new BigInteger("3")).plus(new BigInteger("4")).plus(new BigInteger("5")).plus(new BigInteger("6")).plus(new BigInteger("7")).plus(new BigInteger("8")).plus(new BigInteger("9")).plus(new BigInteger("10")).plus(new BigInteger("11")) + ", but was: " + TreePVector.<Number>from(Generated_collections_Test.l1_.stream().map(new Function<Number, Number>() {
       public Number apply(Number param) {
         return new Function<ParameterSetWrapper, Number>() {
           public Number apply(ParameterSetWrapper param) {
             Number it = (Number) param.parameters.get(0);
-            return AH.add(it, (Number) new BigInteger("1"));
+            return AH.add(it, new BigInteger("1"));
           }
         }.apply(new ParameterSetWrapper(param));
       }
-    }).collect(Collectors.<Number>toList())), (Object) TreePVector.<Number>empty().plus((Number) new BigInteger("2")).plus((Number) new BigInteger("3")).plus((Number) new BigInteger("4")).plus((Number) new BigInteger("5")).plus((Number) new BigInteger("6")).plus((Number) new BigInteger("7")).plus((Number) new BigInteger("8")).plus((Number) new BigInteger("9")).plus((Number) new BigInteger("10")).plus((Number) new BigInteger("11")), (Object) TreePVector.<Number>from(Generated_collections_Test.l1_.stream().map(new Function<Number, Number>() {
+    }).collect(Collectors.<Number>toList())), TreePVector.<Number>empty().plus(new BigInteger("2")).plus(new BigInteger("3")).plus(new BigInteger("4")).plus(new BigInteger("5")).plus(new BigInteger("6")).plus(new BigInteger("7")).plus(new BigInteger("8")).plus(new BigInteger("9")).plus(new BigInteger("10")).plus(new BigInteger("11")), TreePVector.<Number>from(Generated_collections_Test.l1_.stream().map(new Function<Number, Number>() {
       public Number apply(Number param) {
         return new Function<ParameterSetWrapper, Number>() {
           public Number apply(ParameterSetWrapper param) {
             Number it = (Number) param.parameters.get(0);
-            return AH.add(it, (Number) new BigInteger("1"));
+            return AH.add(it, new BigInteger("1"));
           }
         }.apply(new ParameterSetWrapper(param));
       }
@@ -5826,21 +5826,21 @@ public class Generated_collections_Test {
    */
     @Test
   public void collectionListConstant_item25_9070044578388155395() throws Throwable {
-    Assert.assertEquals("Expected: " + TreePVector.<Number>empty().plus((Number) new BigInteger("2")).plus((Number) new BigInteger("3")).plus((Number) new BigInteger("4")).plus((Number) new BigInteger("5")).plus((Number) new BigInteger("6")).plus((Number) new BigInteger("7")).plus((Number) new BigInteger("8")).plus((Number) new BigInteger("9")).plus((Number) new BigInteger("10")).plus((Number) new BigInteger("11")) + ", but was: " + TreePVector.<Number>from(Generated_collections_Test.l1_.stream().map(new Function<Number, Number>() {
+    Assert.assertEquals("Expected: " + TreePVector.<Number>empty().plus(new BigInteger("2")).plus(new BigInteger("3")).plus(new BigInteger("4")).plus(new BigInteger("5")).plus(new BigInteger("6")).plus(new BigInteger("7")).plus(new BigInteger("8")).plus(new BigInteger("9")).plus(new BigInteger("10")).plus(new BigInteger("11")) + ", but was: " + TreePVector.<Number>from(Generated_collections_Test.l1_.stream().map(new Function<Number, Number>() {
       public Number apply(Number param) {
         return new Function<ParameterSetWrapper, Number>() {
           public Number apply(ParameterSetWrapper param) {
             Number a = (Number) param.parameters.get(0);
-            return AH.add(a, (Number) new BigInteger("1"));
+            return AH.add(a, new BigInteger("1"));
           }
         }.apply(new ParameterSetWrapper(param));
       }
-    }).collect(Collectors.<Number>toList())), (Object) TreePVector.<Number>empty().plus((Number) new BigInteger("2")).plus((Number) new BigInteger("3")).plus((Number) new BigInteger("4")).plus((Number) new BigInteger("5")).plus((Number) new BigInteger("6")).plus((Number) new BigInteger("7")).plus((Number) new BigInteger("8")).plus((Number) new BigInteger("9")).plus((Number) new BigInteger("10")).plus((Number) new BigInteger("11")), (Object) TreePVector.<Number>from(Generated_collections_Test.l1_.stream().map(new Function<Number, Number>() {
+    }).collect(Collectors.<Number>toList())), TreePVector.<Number>empty().plus(new BigInteger("2")).plus(new BigInteger("3")).plus(new BigInteger("4")).plus(new BigInteger("5")).plus(new BigInteger("6")).plus(new BigInteger("7")).plus(new BigInteger("8")).plus(new BigInteger("9")).plus(new BigInteger("10")).plus(new BigInteger("11")), TreePVector.<Number>from(Generated_collections_Test.l1_.stream().map(new Function<Number, Number>() {
       public Number apply(Number param) {
         return new Function<ParameterSetWrapper, Number>() {
           public Number apply(ParameterSetWrapper param) {
             Number a = (Number) param.parameters.get(0);
-            return AH.add(a, (Number) new BigInteger("1"));
+            return AH.add(a, new BigInteger("1"));
           }
         }.apply(new ParameterSetWrapper(param));
       }
@@ -5851,7 +5851,7 @@ public class Generated_collections_Test {
    */
     @Test
   public void collectionListConstant_item26_9070044578388155428() throws Throwable {
-    Assert.assertEquals("Expected: " + TreePVector.<Number>empty().plus((Number) new BigInteger("2")).plus((Number) new BigInteger("3")).plus((Number) new BigInteger("4")).plus((Number) new BigInteger("5")).plus((Number) new BigInteger("6")).plus((Number) new BigInteger("7")).plus((Number) new BigInteger("8")).plus((Number) new BigInteger("9")).plus((Number) new BigInteger("10")).plus((Number) new BigInteger("11")) + ", but was: " + TreePVector.<Number>from(Generated_collections_Test.l1_.stream().map(new Function<Number, Number>() {
+    Assert.assertEquals("Expected: " + TreePVector.<Number>empty().plus(new BigInteger("2")).plus(new BigInteger("3")).plus(new BigInteger("4")).plus(new BigInteger("5")).plus(new BigInteger("6")).plus(new BigInteger("7")).plus(new BigInteger("8")).plus(new BigInteger("9")).plus(new BigInteger("10")).plus(new BigInteger("11")) + ", but was: " + TreePVector.<Number>from(Generated_collections_Test.l1_.stream().map(new Function<Number, Number>() {
       public Number apply(Number param) {
         return new Function<ParameterSetWrapper, Number>() {
           public Number apply(ParameterSetWrapper param) {
@@ -5859,7 +5859,7 @@ public class Generated_collections_Test {
           }
         }.apply(new ParameterSetWrapper(param));
       }
-    }).collect(Collectors.<Number>toList())), (Object) TreePVector.<Number>empty().plus((Number) new BigInteger("2")).plus((Number) new BigInteger("3")).plus((Number) new BigInteger("4")).plus((Number) new BigInteger("5")).plus((Number) new BigInteger("6")).plus((Number) new BigInteger("7")).plus((Number) new BigInteger("8")).plus((Number) new BigInteger("9")).plus((Number) new BigInteger("10")).plus((Number) new BigInteger("11")), (Object) TreePVector.<Number>from(Generated_collections_Test.l1_.stream().map(new Function<Number, Number>() {
+    }).collect(Collectors.<Number>toList())), TreePVector.<Number>empty().plus(new BigInteger("2")).plus(new BigInteger("3")).plus(new BigInteger("4")).plus(new BigInteger("5")).plus(new BigInteger("6")).plus(new BigInteger("7")).plus(new BigInteger("8")).plus(new BigInteger("9")).plus(new BigInteger("10")).plus(new BigInteger("11")), TreePVector.<Number>from(Generated_collections_Test.l1_.stream().map(new Function<Number, Number>() {
       public Number apply(Number param) {
         return new Function<ParameterSetWrapper, Number>() {
           public Number apply(ParameterSetWrapper param) {
@@ -5874,21 +5874,21 @@ public class Generated_collections_Test {
    */
     @Test
   public void collectionListConstant_item27_9070044578388155455() throws Throwable {
-    Assert.assertTrue("Expected: " + (Number) new BigInteger("10") + ", but was: " + CollectionHelper.max(Generated_collections_Test.l1_), EqualsTestOp.matches((Number) new BigInteger("10"), CollectionHelper.max(Generated_collections_Test.l1_)));
+    Assert.assertTrue("Expected: " + new BigInteger("10") + ", but was: " + CollectionHelper.max(Generated_collections_Test.l1_), EqualsTestOp.matches(new BigInteger("10"), CollectionHelper.max(Generated_collections_Test.l1_)));
   }
 /* 
    * foreach is still missing, as well as insert and remove
    */
     @Test
   public void collectionListConstant_item28_9070044578388155471() throws Throwable {
-    Assert.assertTrue("Expected: " + (Number) new BigInteger("1") + ", but was: " + CollectionHelper.min(Generated_collections_Test.l1_), EqualsTestOp.matches((Number) new BigInteger("1"), CollectionHelper.min(Generated_collections_Test.l1_)));
+    Assert.assertTrue("Expected: " + new BigInteger("1") + ", but was: " + CollectionHelper.min(Generated_collections_Test.l1_), EqualsTestOp.matches(new BigInteger("1"), CollectionHelper.min(Generated_collections_Test.l1_)));
   }
 /* 
    * foreach is still missing, as well as insert and remove
    */
     @Test
   public void collectionListConstant_item29_9070044578388155487() throws Throwable {
-    Assert.assertTrue("Expected: " + (Number) new BigInteger("1") + ", but was: " + (Number) (((_FunctionTypes._return_P0_E0<InlineRecordType>) () -> {
+    Assert.assertTrue("Expected: " + new BigInteger("1") + ", but was: " + (Number) (((_FunctionTypes._return_P0_E0<InlineRecordType>) () -> {
       PVector<InlineRecordType> listResult = ((_FunctionTypes._return_P0_E0<PVector<InlineRecordType>>) () -> {
         PVector<InlineRecordType> result = TreePVector.empty();
         for (item it : ListSequence.fromList(Generated_collections_Test.l4_)) {
@@ -5899,7 +5899,7 @@ public class Generated_collections_Test {
         return result;
       }).invoke();
       return (listResult.isEmpty() ? null : listResult.get(0));
-    }).invoke()).members.get("num").value, EqualsTestOp.matches((Number) new BigInteger("1"), (Number) (((_FunctionTypes._return_P0_E0<InlineRecordType>) () -> {
+    }).invoke()).members.get("num").value, EqualsTestOp.matches(new BigInteger("1"), (Number) (((_FunctionTypes._return_P0_E0<InlineRecordType>) () -> {
       PVector<InlineRecordType> listResult = ((_FunctionTypes._return_P0_E0<PVector<InlineRecordType>>) () -> {
         PVector<InlineRecordType> result = TreePVector.empty();
         for (item it : ListSequence.fromList(Generated_collections_Test.l4_)) {
@@ -5917,18 +5917,18 @@ public class Generated_collections_Test {
    */
     @Test
   public void collectionListConstant_item30_9070044578388155509() throws Throwable {
-    Assert.assertTrue("Expected: " + (Number) new BigInteger("10") + ", but was: " + BigInteger.valueOf(Generated_collections_Test.l1_.size()), EqualsTestOp.matches((Number) new BigInteger("10"), BigInteger.valueOf(Generated_collections_Test.l1_.size())));
+    Assert.assertTrue("Expected: " + new BigInteger("10") + ", but was: " + BigInteger.valueOf(Generated_collections_Test.l1_.size()), EqualsTestOp.matches(new BigInteger("10"), BigInteger.valueOf(Generated_collections_Test.l1_.size())));
   }
 /* 
    * foreach is still missing, as well as insert and remove
    */
     @Test
   public void collectionListConstant_item31_9070044578388155525() throws Throwable {
-    Assert.assertEquals("Expected: " + TreePVector.<Number>empty().plus((Number) new BigInteger("1")).plus((Number) new BigInteger("2")).plus((Number) new BigInteger("3")).plus((Number) new BigInteger("4")).plus((Number) new BigInteger("5")).plus((Number) new BigInteger("6")).plus((Number) new BigInteger("7")).plus((Number) new BigInteger("8")).plus((Number) new BigInteger("9")).plus((Number) new BigInteger("10")) + ", but was: " + (PVector<Number>) TreePVector.<Number>from(((PCollection<Number>) Generated_collections_Test.l1_).stream().filter(OH.predicate()).sorted(new Comparator<Number>() {
+    Assert.assertEquals("Expected: " + TreePVector.<Number>empty().plus(new BigInteger("1")).plus(new BigInteger("2")).plus(new BigInteger("3")).plus(new BigInteger("4")).plus(new BigInteger("5")).plus(new BigInteger("6")).plus(new BigInteger("7")).plus(new BigInteger("8")).plus(new BigInteger("9")).plus(new BigInteger("10")) + ", but was: " + TreePVector.<Number>from(Generated_collections_Test.l1_.stream().filter(OH.predicate()).sorted(new Comparator<Number>() {
       public int compare(Number p0, Number p1) {
         return OH.compare(p0, p1);
       }
-    }).collect(Collectors.<Number>toList())), (Object) TreePVector.<Number>empty().plus((Number) new BigInteger("1")).plus((Number) new BigInteger("2")).plus((Number) new BigInteger("3")).plus((Number) new BigInteger("4")).plus((Number) new BigInteger("5")).plus((Number) new BigInteger("6")).plus((Number) new BigInteger("7")).plus((Number) new BigInteger("8")).plus((Number) new BigInteger("9")).plus((Number) new BigInteger("10")), (Object) (PVector<Number>) TreePVector.<Number>from(((PCollection<Number>) Generated_collections_Test.l1_).stream().filter(OH.predicate()).sorted(new Comparator<Number>() {
+    }).collect(Collectors.<Number>toList())), TreePVector.<Number>empty().plus(new BigInteger("1")).plus(new BigInteger("2")).plus(new BigInteger("3")).plus(new BigInteger("4")).plus(new BigInteger("5")).plus(new BigInteger("6")).plus(new BigInteger("7")).plus(new BigInteger("8")).plus(new BigInteger("9")).plus(new BigInteger("10")), TreePVector.<Number>from(Generated_collections_Test.l1_.stream().filter(OH.predicate()).sorted(new Comparator<Number>() {
       public int compare(Number p0, Number p1) {
         return OH.compare(p0, p1);
       }
@@ -5939,11 +5939,11 @@ public class Generated_collections_Test {
    */
     @Test
   public void collectionListConstant_item32_9070044578388155551() throws Throwable {
-    Assert.assertEquals("Expected: " + TreePVector.<Number>empty().plus((Number) new BigInteger("10")).plus((Number) new BigInteger("9")).plus((Number) new BigInteger("8")).plus((Number) new BigInteger("7")).plus((Number) new BigInteger("6")).plus((Number) new BigInteger("5")).plus((Number) new BigInteger("4")).plus((Number) new BigInteger("3")).plus((Number) new BigInteger("2")).plus((Number) new BigInteger("1")) + ", but was: " + (PVector<Number>) TreePVector.<Number>from(((PCollection<Number>) Generated_collections_Test.l1_).stream().filter(OH.predicate()).sorted(new Comparator<Number>() {
+    Assert.assertEquals("Expected: " + TreePVector.<Number>empty().plus(new BigInteger("10")).plus(new BigInteger("9")).plus(new BigInteger("8")).plus(new BigInteger("7")).plus(new BigInteger("6")).plus(new BigInteger("5")).plus(new BigInteger("4")).plus(new BigInteger("3")).plus(new BigInteger("2")).plus(new BigInteger("1")) + ", but was: " + TreePVector.<Number>from(Generated_collections_Test.l1_.stream().filter(OH.predicate()).sorted(new Comparator<Number>() {
       public int compare(Number p0, Number p1) {
         return OH.compare(p1, p0);
       }
-    }).collect(Collectors.<Number>toList())), (Object) TreePVector.<Number>empty().plus((Number) new BigInteger("10")).plus((Number) new BigInteger("9")).plus((Number) new BigInteger("8")).plus((Number) new BigInteger("7")).plus((Number) new BigInteger("6")).plus((Number) new BigInteger("5")).plus((Number) new BigInteger("4")).plus((Number) new BigInteger("3")).plus((Number) new BigInteger("2")).plus((Number) new BigInteger("1")), (Object) (PVector<Number>) TreePVector.<Number>from(((PCollection<Number>) Generated_collections_Test.l1_).stream().filter(OH.predicate()).sorted(new Comparator<Number>() {
+    }).collect(Collectors.<Number>toList())), TreePVector.<Number>empty().plus(new BigInteger("10")).plus(new BigInteger("9")).plus(new BigInteger("8")).plus(new BigInteger("7")).plus(new BigInteger("6")).plus(new BigInteger("5")).plus(new BigInteger("4")).plus(new BigInteger("3")).plus(new BigInteger("2")).plus(new BigInteger("1")), TreePVector.<Number>from(Generated_collections_Test.l1_.stream().filter(OH.predicate()).sorted(new Comparator<Number>() {
       public int compare(Number p0, Number p1) {
         return OH.compare(p1, p0);
       }
@@ -5954,23 +5954,23 @@ public class Generated_collections_Test {
    */
     @Test
   public void collectionListConstant_item33_9070044578388155577() throws Throwable {
-    Assert.assertTrue("Expected: " + (Number) new BigInteger("55") + ", but was: " + CollectionHelper.sumAsBigInteger(Generated_collections_Test.l1_), EqualsTestOp.matches((Number) new BigInteger("55"), CollectionHelper.sumAsBigInteger(Generated_collections_Test.l1_)));
+    Assert.assertTrue("Expected: " + new BigInteger("55") + ", but was: " + CollectionHelper.sumAsBigInteger(Generated_collections_Test.l1_), EqualsTestOp.matches(new BigInteger("55"), CollectionHelper.sumAsBigInteger(Generated_collections_Test.l1_)));
   }
 /* 
    * foreach is still missing, as well as insert and remove
    */
     @Test
   public void collectionListConstant_item34_9070044578388155593() throws Throwable {
-    Assert.assertEquals("Expected: " + TreePVector.<Number>empty().plus((Number) new BigInteger("10")) + ", but was: " + (((_FunctionTypes._return_P0_E0<PVector<Number>>) () -> {
+    Assert.assertEquals("Expected: " + TreePVector.<Number>empty().plus(new BigInteger("10")) + ", but was: " + (((_FunctionTypes._return_P0_E0<PVector<Number>>) () -> {
       PVector<Number> origList = Generated_collections_Test.l1_;
-      int noOfElements = ((Number) new BigInteger("1")).intValue();
+      int noOfElements = new BigInteger("1").intValue();
       if (origList.size() <= noOfElements) {
         return origList;
       }
       return origList.subList(origList.size() - noOfElements, origList.size());
-    }).invoke()), (Object) TreePVector.<Number>empty().plus((Number) new BigInteger("10")), (Object) ((_FunctionTypes._return_P0_E0<PVector<Number>>) () -> {
+    }).invoke()), TreePVector.<Number>empty().plus(new BigInteger("10")), (Object) ((_FunctionTypes._return_P0_E0<PVector<Number>>) () -> {
       PVector<Number> origList = Generated_collections_Test.l1_;
-      int noOfElements = ((Number) new BigInteger("1")).intValue();
+      int noOfElements = new BigInteger("1").intValue();
       if (origList.size() <= noOfElements) {
         return origList;
       }
@@ -5982,25 +5982,25 @@ public class Generated_collections_Test {
    */
     @Test
   public void collectionListConstant_item35_9070044578388155611() throws Throwable {
-    Assert.assertEquals("Expected: " + TreePVector.<Number>empty().plus((Number) new BigInteger("1")).plus((Number) new BigInteger("2")).plus((Number) new BigInteger("3")).plus((Number) new BigInteger("4")).plus((Number) new BigInteger("5")).plus((Number) new BigInteger("6")).plus((Number) new BigInteger("7")).plus((Number) new BigInteger("8")).plus((Number) new BigInteger("9")).plus((Number) new BigInteger("10")) + ", but was: " + TreePVector.from(Generated_collections_Test.l1_), (Object) TreePVector.<Number>empty().plus((Number) new BigInteger("1")).plus((Number) new BigInteger("2")).plus((Number) new BigInteger("3")).plus((Number) new BigInteger("4")).plus((Number) new BigInteger("5")).plus((Number) new BigInteger("6")).plus((Number) new BigInteger("7")).plus((Number) new BigInteger("8")).plus((Number) new BigInteger("9")).plus((Number) new BigInteger("10")), (Object) TreePVector.from(Generated_collections_Test.l1_));
+    Assert.assertEquals("Expected: " + TreePVector.<Number>empty().plus(new BigInteger("1")).plus(new BigInteger("2")).plus(new BigInteger("3")).plus(new BigInteger("4")).plus(new BigInteger("5")).plus(new BigInteger("6")).plus(new BigInteger("7")).plus(new BigInteger("8")).plus(new BigInteger("9")).plus(new BigInteger("10")) + ", but was: " + TreePVector.from(Generated_collections_Test.l1_), TreePVector.<Number>empty().plus(new BigInteger("1")).plus(new BigInteger("2")).plus(new BigInteger("3")).plus(new BigInteger("4")).plus(new BigInteger("5")).plus(new BigInteger("6")).plus(new BigInteger("7")).plus(new BigInteger("8")).plus(new BigInteger("9")).plus(new BigInteger("10")), TreePVector.from(Generated_collections_Test.l1_));
   }
 /* 
    * foreach is still missing, as well as insert and remove
    */
     @Test
   public void collectionListConstant_item36_9070044578388155637() throws Throwable {
-    Assert.assertEquals("Expected: " + HashTreePSet.from(Arrays.asList((Number) new BigInteger("1"), (Number) new BigInteger("2"), (Number) new BigInteger("3"), (Number) new BigInteger("4"), (Number) new BigInteger("5"), (Number) new BigInteger("6"), (Number) new BigInteger("7"), (Number) new BigInteger("8"), (Number) new BigInteger("9"), (Number) new BigInteger("10"))) + ", but was: " + HashTreePSet.from(Generated_collections_Test.l1_), (Object) HashTreePSet.from(Arrays.asList((Number) new BigInteger("1"), (Number) new BigInteger("2"), (Number) new BigInteger("3"), (Number) new BigInteger("4"), (Number) new BigInteger("5"), (Number) new BigInteger("6"), (Number) new BigInteger("7"), (Number) new BigInteger("8"), (Number) new BigInteger("9"), (Number) new BigInteger("10"))), (Object) HashTreePSet.from(Generated_collections_Test.l1_));
+    Assert.assertEquals("Expected: " + HashTreePSet.from(Arrays.asList((Number) new BigInteger("1"), (Number) new BigInteger("2"), (Number) new BigInteger("3"), (Number) new BigInteger("4"), (Number) new BigInteger("5"), (Number) new BigInteger("6"), (Number) new BigInteger("7"), (Number) new BigInteger("8"), (Number) new BigInteger("9"), (Number) new BigInteger("10"))) + ", but was: " + HashTreePSet.from(Generated_collections_Test.l1_), HashTreePSet.from(Arrays.asList((Number) new BigInteger("1"), (Number) new BigInteger("2"), (Number) new BigInteger("3"), (Number) new BigInteger("4"), (Number) new BigInteger("5"), (Number) new BigInteger("6"), (Number) new BigInteger("7"), (Number) new BigInteger("8"), (Number) new BigInteger("9"), (Number) new BigInteger("10"))), HashTreePSet.from(Generated_collections_Test.l1_));
   }
 /* 
    * foreach is still missing, as well as insert and remove
    */
     @Test
   public void collectionListConstant_item37_9070044578388155663() throws Throwable {
-    Assert.assertEquals("Expected: " + TreePVector.<Number>empty().plus((Number) new BigInteger("1")).plus((Number) new BigInteger("2")) + ", but was: " + TreePVector.<Number>from(Generated_collections_Test.l5_.stream().filter(new Predicate<Number>() {
+    Assert.assertEquals("Expected: " + TreePVector.<Number>empty().plus(new BigInteger("1")).plus(new BigInteger("2")) + ", but was: " + TreePVector.<Number>from(Generated_collections_Test.l5_.stream().filter(new Predicate<Number>() {
       public boolean test(Number p0) {
         return p0 != null;
       }
-    }).collect(Collectors.<Number>toList())), (Object) TreePVector.<Number>empty().plus((Number) new BigInteger("1")).plus((Number) new BigInteger("2")), (Object) TreePVector.<Number>from(Generated_collections_Test.l5_.stream().filter(new Predicate<Number>() {
+    }).collect(Collectors.<Number>toList())), TreePVector.<Number>empty().plus(new BigInteger("1")).plus(new BigInteger("2")), TreePVector.<Number>from(Generated_collections_Test.l5_.stream().filter(new Predicate<Number>() {
       public boolean test(Number p0) {
         return p0 != null;
       }
@@ -6011,21 +6011,21 @@ public class Generated_collections_Test {
    */
     @Test
   public void collectionListConstant_item38_9070044578388155675() throws Throwable {
-    Assert.assertEquals("Expected: " + TreePVector.<Number>empty().plus((Number) new BigInteger("1")).plus((Number) new BigInteger("2")) + ", but was: " + TreePVector.<Number>from(Generated_collections_Test.l1_.stream().filter(new Predicate<Number>() {
+    Assert.assertEquals("Expected: " + TreePVector.<Number>empty().plus(new BigInteger("1")).plus(new BigInteger("2")) + ", but was: " + TreePVector.<Number>from(Generated_collections_Test.l1_.stream().filter(new Predicate<Number>() {
       public boolean test(Number o) {
         return new Function<ParameterSetWrapper, Boolean>() {
           public Boolean apply(ParameterSetWrapper param) {
             Number it = (Number) param.parameters.get(0);
-            return AH.isLess(it, (Number) new BigInteger("3"));
+            return AH.isLess(it, new BigInteger("3"));
           }
         }.apply(new ParameterSetWrapper(o));
       }
-    }).collect(Collectors.<Number>toList())), (Object) TreePVector.<Number>empty().plus((Number) new BigInteger("1")).plus((Number) new BigInteger("2")), (Object) TreePVector.<Number>from(Generated_collections_Test.l1_.stream().filter(new Predicate<Number>() {
+    }).collect(Collectors.<Number>toList())), TreePVector.<Number>empty().plus(new BigInteger("1")).plus(new BigInteger("2")), TreePVector.<Number>from(Generated_collections_Test.l1_.stream().filter(new Predicate<Number>() {
       public boolean test(Number o) {
         return new Function<ParameterSetWrapper, Boolean>() {
           public Boolean apply(ParameterSetWrapper param) {
             Number it = (Number) param.parameters.get(0);
-            return AH.isLess(it, (Number) new BigInteger("3"));
+            return AH.isLess(it, new BigInteger("3"));
           }
         }.apply(new ParameterSetWrapper(o));
       }
@@ -6036,21 +6036,21 @@ public class Generated_collections_Test {
    */
     @Test
   public void collectionListConstant_item39_9070044578388155697() throws Throwable {
-    Assert.assertEquals("Expected: " + TreePVector.<Number>empty().plus((Number) new BigInteger("1")).plus((Number) new BigInteger("2")) + ", but was: " + TreePVector.<Number>from(Generated_collections_Test.l1_.stream().filter(new Predicate<Number>() {
+    Assert.assertEquals("Expected: " + TreePVector.<Number>empty().plus(new BigInteger("1")).plus(new BigInteger("2")) + ", but was: " + TreePVector.<Number>from(Generated_collections_Test.l1_.stream().filter(new Predicate<Number>() {
       public boolean test(Number o) {
         return new Function<ParameterSetWrapper, Boolean>() {
           public Boolean apply(ParameterSetWrapper param) {
             Number a = (Number) param.parameters.get(0);
-            return AH.isLess(a, (Number) new BigInteger("3"));
+            return AH.isLess(a, new BigInteger("3"));
           }
         }.apply(new ParameterSetWrapper(o));
       }
-    }).collect(Collectors.<Number>toList())), (Object) TreePVector.<Number>empty().plus((Number) new BigInteger("1")).plus((Number) new BigInteger("2")), (Object) TreePVector.<Number>from(Generated_collections_Test.l1_.stream().filter(new Predicate<Number>() {
+    }).collect(Collectors.<Number>toList())), TreePVector.<Number>empty().plus(new BigInteger("1")).plus(new BigInteger("2")), TreePVector.<Number>from(Generated_collections_Test.l1_.stream().filter(new Predicate<Number>() {
       public boolean test(Number o) {
         return new Function<ParameterSetWrapper, Boolean>() {
           public Boolean apply(ParameterSetWrapper param) {
             Number a = (Number) param.parameters.get(0);
-            return AH.isLess(a, (Number) new BigInteger("3"));
+            return AH.isLess(a, new BigInteger("3"));
           }
         }.apply(new ParameterSetWrapper(o));
       }
@@ -6061,7 +6061,7 @@ public class Generated_collections_Test {
    */
     @Test
   public void collectionListConstant_item40_9070044578388155722() throws Throwable {
-    Assert.assertEquals("Expected: " + TreePVector.<Number>empty().plus((Number) new BigInteger("1")).plus((Number) new BigInteger("2")).plus((Number) new BigInteger("3")).plus((Number) new BigInteger("4")).plus((Number) new BigInteger("5")).plus((Number) new BigInteger("6")).plus((Number) new BigInteger("7")).plus((Number) new BigInteger("8")).plus((Number) new BigInteger("9")).plus((Number) new BigInteger("10")) + ", but was: " + TreePVector.<Number>from(Generated_collections_Test.l1_.stream().filter(new Predicate<Number>() {
+    Assert.assertEquals("Expected: " + TreePVector.<Number>empty().plus(new BigInteger("1")).plus(new BigInteger("2")).plus(new BigInteger("3")).plus(new BigInteger("4")).plus(new BigInteger("5")).plus(new BigInteger("6")).plus(new BigInteger("7")).plus(new BigInteger("8")).plus(new BigInteger("9")).plus(new BigInteger("10")) + ", but was: " + TreePVector.<Number>from(Generated_collections_Test.l1_.stream().filter(new Predicate<Number>() {
       public boolean test(Number o) {
         return new Function<ParameterSetWrapper, Boolean>() {
           public Boolean apply(ParameterSetWrapper param) {
@@ -6069,7 +6069,7 @@ public class Generated_collections_Test {
           }
         }.apply(new ParameterSetWrapper(o));
       }
-    }).collect(Collectors.<Number>toList())), (Object) TreePVector.<Number>empty().plus((Number) new BigInteger("1")).plus((Number) new BigInteger("2")).plus((Number) new BigInteger("3")).plus((Number) new BigInteger("4")).plus((Number) new BigInteger("5")).plus((Number) new BigInteger("6")).plus((Number) new BigInteger("7")).plus((Number) new BigInteger("8")).plus((Number) new BigInteger("9")).plus((Number) new BigInteger("10")), (Object) TreePVector.<Number>from(Generated_collections_Test.l1_.stream().filter(new Predicate<Number>() {
+    }).collect(Collectors.<Number>toList())), TreePVector.<Number>empty().plus(new BigInteger("1")).plus(new BigInteger("2")).plus(new BigInteger("3")).plus(new BigInteger("4")).plus(new BigInteger("5")).plus(new BigInteger("6")).plus(new BigInteger("7")).plus(new BigInteger("8")).plus(new BigInteger("9")).plus(new BigInteger("10")), TreePVector.<Number>from(Generated_collections_Test.l1_.stream().filter(new Predicate<Number>() {
       public boolean test(Number o) {
         return new Function<ParameterSetWrapper, Boolean>() {
           public Boolean apply(ParameterSetWrapper param) {
@@ -6084,26 +6084,26 @@ public class Generated_collections_Test {
    */
     @Test
   public void collectionListConstant_item41_9070044578388155749() throws Throwable {
-    Assert.assertEquals("Expected: " + TreePVector.<Number>empty().plus((Number) new BigInteger("1")).plus((Number) new BigInteger("2")).plus((Number) new BigInteger("3")).plus((Number) new BigInteger("4")).plus((Number) new BigInteger("5")).plus((Number) new BigInteger("6")).plus((Number) new BigInteger("7")).plus((Number) new BigInteger("8")).plus((Number) new BigInteger("9")).plus((Number) new BigInteger("10")).plus((Number) new BigInteger("11")) + ", but was: " + Generated_collections_Test.l6_.plus((Number) new BigInteger("11")), (Object) TreePVector.<Number>empty().plus((Number) new BigInteger("1")).plus((Number) new BigInteger("2")).plus((Number) new BigInteger("3")).plus((Number) new BigInteger("4")).plus((Number) new BigInteger("5")).plus((Number) new BigInteger("6")).plus((Number) new BigInteger("7")).plus((Number) new BigInteger("8")).plus((Number) new BigInteger("9")).plus((Number) new BigInteger("10")).plus((Number) new BigInteger("11")), (Object) Generated_collections_Test.l6_.plus((Number) new BigInteger("11")));
+    Assert.assertEquals("Expected: " + TreePVector.<Number>empty().plus(new BigInteger("1")).plus(new BigInteger("2")).plus(new BigInteger("3")).plus(new BigInteger("4")).plus(new BigInteger("5")).plus(new BigInteger("6")).plus(new BigInteger("7")).plus(new BigInteger("8")).plus(new BigInteger("9")).plus(new BigInteger("10")).plus(new BigInteger("11")) + ", but was: " + Generated_collections_Test.l6_.plus(new BigInteger("11")), TreePVector.<Number>empty().plus(new BigInteger("1")).plus(new BigInteger("2")).plus(new BigInteger("3")).plus(new BigInteger("4")).plus(new BigInteger("5")).plus(new BigInteger("6")).plus(new BigInteger("7")).plus(new BigInteger("8")).plus(new BigInteger("9")).plus(new BigInteger("10")).plus(new BigInteger("11")), Generated_collections_Test.l6_.plus(new BigInteger("11")));
   }
 /* 
    * foreach is still missing, as well as insert and remove
    */
     @Test
   public void collectionListConstant_item42_9070044578388155780() throws Throwable {
-    Assert.assertEquals("Expected: " + TreePVector.<Number>empty().plus((Number) new BigInteger("1")).plus((Number) new BigInteger("2")).plus((Number) new BigInteger("3")).plus((Number) new BigInteger("4")).plus((Number) new BigInteger("5")).plus((Number) new BigInteger("6")).plus((Number) new BigInteger("7")).plus((Number) new BigInteger("8")).plus((Number) new BigInteger("9")).plus((Number) new BigInteger("10")).plus((Number) new BigInteger("11")).plus((Number) new BigInteger("12")) + ", but was: " + Generated_collections_Test.l7_.plusAll(TreePVector.<Number>empty().plus((Number) new BigInteger("11")).plus((Number) new BigInteger("12"))), (Object) TreePVector.<Number>empty().plus((Number) new BigInteger("1")).plus((Number) new BigInteger("2")).plus((Number) new BigInteger("3")).plus((Number) new BigInteger("4")).plus((Number) new BigInteger("5")).plus((Number) new BigInteger("6")).plus((Number) new BigInteger("7")).plus((Number) new BigInteger("8")).plus((Number) new BigInteger("9")).plus((Number) new BigInteger("10")).plus((Number) new BigInteger("11")).plus((Number) new BigInteger("12")), (Object) Generated_collections_Test.l7_.plusAll(TreePVector.<Number>empty().plus((Number) new BigInteger("11")).plus((Number) new BigInteger("12"))));
+    Assert.assertEquals("Expected: " + TreePVector.<Number>empty().plus(new BigInteger("1")).plus(new BigInteger("2")).plus(new BigInteger("3")).plus(new BigInteger("4")).plus(new BigInteger("5")).plus(new BigInteger("6")).plus(new BigInteger("7")).plus(new BigInteger("8")).plus(new BigInteger("9")).plus(new BigInteger("10")).plus(new BigInteger("11")).plus(new BigInteger("12")) + ", but was: " + Generated_collections_Test.l7_.plusAll(TreePVector.<Number>empty().plus(new BigInteger("11")).plus(new BigInteger("12"))), TreePVector.<Number>empty().plus(new BigInteger("1")).plus(new BigInteger("2")).plus(new BigInteger("3")).plus(new BigInteger("4")).plus(new BigInteger("5")).plus(new BigInteger("6")).plus(new BigInteger("7")).plus(new BigInteger("8")).plus(new BigInteger("9")).plus(new BigInteger("10")).plus(new BigInteger("11")).plus(new BigInteger("12")), Generated_collections_Test.l7_.plusAll(TreePVector.<Number>empty().plus(new BigInteger("11")).plus(new BigInteger("12"))));
   }
 /* 
    * foreach is still missing, as well as insert and remove
    */
     @Test
   public void collectionListConstant_item43_32857128012622657() throws Throwable {
-    Assert.assertEquals("Expected: " + TreePVector.<Number>empty().plus((Number) new BigInteger("1")).plus((Number) new BigInteger("2")).plus((Number) new BigInteger("3")).plus((Number) new BigInteger("4")).plus((Number) new BigInteger("5")).plus((Number) new BigInteger("6")).plus((Number) new BigInteger("7")).plus((Number) new BigInteger("8")).plus((Number) new BigInteger("9")) + ", but was: " + Generated_collections_Test.l1_.minus((Number) new BigInteger("10")), (Object) TreePVector.<Number>empty().plus((Number) new BigInteger("1")).plus((Number) new BigInteger("2")).plus((Number) new BigInteger("3")).plus((Number) new BigInteger("4")).plus((Number) new BigInteger("5")).plus((Number) new BigInteger("6")).plus((Number) new BigInteger("7")).plus((Number) new BigInteger("8")).plus((Number) new BigInteger("9")), (Object) Generated_collections_Test.l1_.minus((Number) new BigInteger("10")));
+    Assert.assertEquals("Expected: " + TreePVector.<Number>empty().plus(new BigInteger("1")).plus(new BigInteger("2")).plus(new BigInteger("3")).plus(new BigInteger("4")).plus(new BigInteger("5")).plus(new BigInteger("6")).plus(new BigInteger("7")).plus(new BigInteger("8")).plus(new BigInteger("9")) + ", but was: " + Generated_collections_Test.l1_.minus((Number) new BigInteger("10")), TreePVector.<Number>empty().plus(new BigInteger("1")).plus(new BigInteger("2")).plus(new BigInteger("3")).plus(new BigInteger("4")).plus(new BigInteger("5")).plus(new BigInteger("6")).plus(new BigInteger("7")).plus(new BigInteger("8")).plus(new BigInteger("9")), Generated_collections_Test.l1_.minus((Number) new BigInteger("10")));
   }
   public static final PSet<Number> s1_ = HashTreePSet.from(Arrays.asList((Number) new BigInteger("1"), (Number) new BigInteger("2"), (Number) new BigInteger("3"), (Number) new BigInteger("4"), (Number) new BigInteger("5"), (Number) new BigInteger("6"), (Number) new BigInteger("7"), (Number) new BigInteger("8"), (Number) new BigInteger("9"), (Number) new BigInteger("10")));
   public static final PSet<PSet<Number>> s2_ = HashTreePSet.from(Arrays.asList(HashTreePSet.from(Arrays.asList((Number) new BigInteger("1"))), HashTreePSet.from(Arrays.asList((Number) new BigInteger("2"))), HashTreePSet.from(Arrays.asList((Number) new BigInteger("3"))), HashTreePSet.from(Arrays.asList((Number) new BigInteger("4")))));
-  public static final PSet<item> s3_ = HashTreePSet.from(Arrays.asList(new item((Number) new BigInteger("1"), "1"), new item((Number) new BigInteger("1"), "1a"), new item((Number) new BigInteger("2"), "2")));
-  public static final PSet<item> s4_ = HashTreePSet.from(Arrays.asList(new item((Number) new BigInteger("1"), "1"), new item((Number) new BigInteger("2"), "2")));
+  public static final PSet<item> s3_ = HashTreePSet.from(Arrays.asList(new item(new BigInteger("1"), "1"), new item(new BigInteger("1"), "1a"), new item(new BigInteger("2"), "2")));
+  public static final PSet<item> s4_ = HashTreePSet.from(Arrays.asList(new item(new BigInteger("1"), "1"), new item(new BigInteger("2"), "2")));
   public static final PSet<Number> s5_ = HashTreePSet.from(Arrays.asList((Number) new BigInteger("1"), (Number) new BigInteger("2")));
   public static final PSet<Number> s6_ = HashTreePSet.from(Arrays.asList((Number) new BigInteger("1"), (Number) new BigInteger("2"), (Number) new BigInteger("3"), (Number) new BigInteger("4"), (Number) new BigInteger("5"), (Number) new BigInteger("6"), (Number) new BigInteger("7"), (Number) new BigInteger("8"), (Number) new BigInteger("9"), (Number) new BigInteger("10")));
 /* 
@@ -6116,7 +6116,7 @@ public class Generated_collections_Test {
         return new Function<ParameterSetWrapper, Boolean>() {
           public Boolean apply(ParameterSetWrapper param) {
             Number it = (Number) param.parameters.get(0);
-            return AH.isLess(it, (Number) new BigInteger("3"));
+            return AH.isLess(it, new BigInteger("3"));
           }
         }.apply(new ParameterSetWrapper(o));
       }
@@ -6125,7 +6125,7 @@ public class Generated_collections_Test {
         return new Function<ParameterSetWrapper, Boolean>() {
           public Boolean apply(ParameterSetWrapper param) {
             Number it = (Number) param.parameters.get(0);
-            return AH.isLess(it, (Number) new BigInteger("3"));
+            return AH.isLess(it, new BigInteger("3"));
           }
         }.apply(new ParameterSetWrapper(o));
       }
@@ -6141,7 +6141,7 @@ public class Generated_collections_Test {
         return new Function<ParameterSetWrapper, Boolean>() {
           public Boolean apply(ParameterSetWrapper param) {
             Number a = (Number) param.parameters.get(0);
-            return AH.isLess(a, (Number) new BigInteger("11"));
+            return AH.isLess(a, new BigInteger("11"));
           }
         }.apply(new ParameterSetWrapper(o));
       }
@@ -6150,7 +6150,7 @@ public class Generated_collections_Test {
         return new Function<ParameterSetWrapper, Boolean>() {
           public Boolean apply(ParameterSetWrapper param) {
             Number a = (Number) param.parameters.get(0);
-            return AH.isLess(a, (Number) new BigInteger("11"));
+            return AH.isLess(a, new BigInteger("11"));
           }
         }.apply(new ParameterSetWrapper(o));
       }
@@ -6189,7 +6189,7 @@ public class Generated_collections_Test {
         return new Function<ParameterSetWrapper, Boolean>() {
           public Boolean apply(ParameterSetWrapper param) {
             Number it = (Number) param.parameters.get(0);
-            return AH.isLess(it, (Number) new BigInteger("3"));
+            return AH.isLess(it, new BigInteger("3"));
           }
         }.apply(new ParameterSetWrapper(o));
       }
@@ -6198,7 +6198,7 @@ public class Generated_collections_Test {
         return new Function<ParameterSetWrapper, Boolean>() {
           public Boolean apply(ParameterSetWrapper param) {
             Number it = (Number) param.parameters.get(0);
-            return AH.isLess(it, (Number) new BigInteger("3"));
+            return AH.isLess(it, new BigInteger("3"));
           }
         }.apply(new ParameterSetWrapper(o));
       }
@@ -6214,7 +6214,7 @@ public class Generated_collections_Test {
         return new Function<ParameterSetWrapper, Boolean>() {
           public Boolean apply(ParameterSetWrapper param) {
             Number a = (Number) param.parameters.get(0);
-            return AH.isGreater(a, (Number) new BigInteger("11"));
+            return AH.isGreater(a, new BigInteger("11"));
           }
         }.apply(new ParameterSetWrapper(o));
       }
@@ -6223,7 +6223,7 @@ public class Generated_collections_Test {
         return new Function<ParameterSetWrapper, Boolean>() {
           public Boolean apply(ParameterSetWrapper param) {
             Number a = (Number) param.parameters.get(0);
-            return AH.isGreater(a, (Number) new BigInteger("11"));
+            return AH.isGreater(a, new BigInteger("11"));
           }
         }.apply(new ParameterSetWrapper(o));
       }
@@ -6257,28 +6257,28 @@ public class Generated_collections_Test {
    */
     @Test
   public void collectionSetConstant_item6_9070044578388200820() throws Throwable {
-    Assert.assertEquals("Expected: " + true + ", but was: " + Generated_collections_Test.s1_.contains((Number) new BigInteger("6")), (Object) true, (Object) Generated_collections_Test.s1_.contains((Number) new BigInteger("6")));
+    Assert.assertEquals("Expected: " + true + ", but was: " + Generated_collections_Test.s1_.contains(new BigInteger("6")), (Object) true, (Object) Generated_collections_Test.s1_.contains(new BigInteger("6")));
   }
 /* 
    * what about first and distinct
    */
     @Test
   public void collectionSetConstant_item7_9070044578388200837() throws Throwable {
-    Assert.assertTrue("Expected: " + (Number) new BigInteger("3") + ", but was: " + Generated_collections_Test.s1_.stream().filter(new Predicate<Number>() {
+    Assert.assertTrue("Expected: " + new BigInteger("3") + ", but was: " + Generated_collections_Test.s1_.stream().filter(new Predicate<Number>() {
       public boolean test(Number o) {
         return new Function<ParameterSetWrapper, Boolean>() {
           public Boolean apply(ParameterSetWrapper param) {
             Number it = (Number) param.parameters.get(0);
-            return AH.isEqual(it, (Number) new BigInteger("3"));
+            return AH.isEqual(it, new BigInteger("3"));
           }
         }.apply(new ParameterSetWrapper(o));
       }
-    }).findFirst().orElse(null), EqualsTestOp.matches((Number) new BigInteger("3"), Generated_collections_Test.s1_.stream().filter(new Predicate<Number>() {
+    }).findFirst().orElse(null), EqualsTestOp.matches(new BigInteger("3"), Generated_collections_Test.s1_.stream().filter(new Predicate<Number>() {
       public boolean test(Number o) {
         return new Function<ParameterSetWrapper, Boolean>() {
           public Boolean apply(ParameterSetWrapper param) {
             Number it = (Number) param.parameters.get(0);
-            return AH.isEqual(it, (Number) new BigInteger("3"));
+            return AH.isEqual(it, new BigInteger("3"));
           }
         }.apply(new ParameterSetWrapper(o));
       }
@@ -6289,21 +6289,21 @@ public class Generated_collections_Test {
    */
     @Test
   public void collectionSetConstant_item8_9070044578388200857() throws Throwable {
-    Assert.assertTrue("Expected: " + (Number) new BigInteger("1") + ", but was: " + Generated_collections_Test.s1_.stream().filter(new Predicate<Number>() {
+    Assert.assertTrue("Expected: " + new BigInteger("1") + ", but was: " + Generated_collections_Test.s1_.stream().filter(new Predicate<Number>() {
       public boolean test(Number o) {
         return new Function<ParameterSetWrapper, Boolean>() {
           public Boolean apply(ParameterSetWrapper param) {
             Number a = (Number) param.parameters.get(0);
-            return AH.isLess(a, (Number) new BigInteger("11"));
+            return AH.isLess(a, new BigInteger("11"));
           }
         }.apply(new ParameterSetWrapper(o));
       }
-    }).findFirst().orElse(null), EqualsTestOp.matches((Number) new BigInteger("1"), Generated_collections_Test.s1_.stream().filter(new Predicate<Number>() {
+    }).findFirst().orElse(null), EqualsTestOp.matches(new BigInteger("1"), Generated_collections_Test.s1_.stream().filter(new Predicate<Number>() {
       public boolean test(Number o) {
         return new Function<ParameterSetWrapper, Boolean>() {
           public Boolean apply(ParameterSetWrapper param) {
             Number a = (Number) param.parameters.get(0);
-            return AH.isLess(a, (Number) new BigInteger("11"));
+            return AH.isLess(a, new BigInteger("11"));
           }
         }.apply(new ParameterSetWrapper(o));
       }
@@ -6314,7 +6314,7 @@ public class Generated_collections_Test {
    */
     @Test
   public void collectionSetConstant_item9_9070044578388200880() throws Throwable {
-    Assert.assertTrue("Expected: " + (Number) new BigInteger("1") + ", but was: " + Generated_collections_Test.s1_.stream().filter(new Predicate<Number>() {
+    Assert.assertTrue("Expected: " + new BigInteger("1") + ", but was: " + Generated_collections_Test.s1_.stream().filter(new Predicate<Number>() {
       public boolean test(Number o) {
         return new Function<ParameterSetWrapper, Boolean>() {
           public Boolean apply(ParameterSetWrapper param) {
@@ -6322,7 +6322,7 @@ public class Generated_collections_Test {
           }
         }.apply(new ParameterSetWrapper(o));
       }
-    }).findFirst().orElse(null), EqualsTestOp.matches((Number) new BigInteger("1"), Generated_collections_Test.s1_.stream().filter(new Predicate<Number>() {
+    }).findFirst().orElse(null), EqualsTestOp.matches(new BigInteger("1"), Generated_collections_Test.s1_.stream().filter(new Predicate<Number>() {
       public boolean test(Number o) {
         return new Function<ParameterSetWrapper, Boolean>() {
           public Boolean apply(ParameterSetWrapper param) {
@@ -6337,14 +6337,14 @@ public class Generated_collections_Test {
    */
     @Test
   public void collectionSetConstant_item10_9070044578388200897() throws Throwable {
-    Assert.assertEquals("Expected: " + TreePVector.<Number>empty().plus((Number) new BigInteger("1")).plus((Number) new BigInteger("2")).plus((Number) new BigInteger("3")).plus((Number) new BigInteger("4")) + ", but was: " + (((_FunctionTypes._return_P0_E0<PVector<Number>>) () -> {
+    Assert.assertEquals("Expected: " + TreePVector.<Number>empty().plus(new BigInteger("1")).plus(new BigInteger("2")).plus(new BigInteger("3")).plus(new BigInteger("4")) + ", but was: " + (((_FunctionTypes._return_P0_E0<PVector<Number>>) () -> {
       List<Number> r = new ArrayList<Number>();
       for (PSet<Number> coll : SetSequence.fromSet(Generated_collections_Test.s2_)) {
         r.addAll(coll);
       }
       PVector<Number> result = TreePVector.<Number>from(r);
       return result;
-    }).invoke()), (Object) TreePVector.<Number>empty().plus((Number) new BigInteger("1")).plus((Number) new BigInteger("2")).plus((Number) new BigInteger("3")).plus((Number) new BigInteger("4")), (Object) ((_FunctionTypes._return_P0_E0<PVector<Number>>) () -> {
+    }).invoke()), TreePVector.<Number>empty().plus(new BigInteger("1")).plus(new BigInteger("2")).plus(new BigInteger("3")).plus(new BigInteger("4")), (Object) ((_FunctionTypes._return_P0_E0<PVector<Number>>) () -> {
       List<Number> r = new ArrayList<Number>();
       for (PSet<Number> coll : SetSequence.fromSet(Generated_collections_Test.s2_)) {
         r.addAll(coll);
@@ -6358,14 +6358,14 @@ public class Generated_collections_Test {
    */
     @Test
   public void collectionSetConstant_item11_9070044578388200915() throws Throwable {
-    Assert.assertTrue("Expected: " + (Number) new BigInteger("55") + ", but was: " + (((_FunctionTypes._return_P0_E0<Number>) () -> {
-      Number seed = (Number) new BigInteger("0");
+    Assert.assertTrue("Expected: " + new BigInteger("55") + ", but was: " + (((_FunctionTypes._return_P0_E0<Number>) () -> {
+      Number seed = new BigInteger("0");
       for (Number current : SetSequence.fromSet(Generated_collections_Test.s1_)) {
         seed = AH.add(seed, current);
       }
       return seed;
-    }).invoke()), EqualsTestOp.matches((Number) new BigInteger("55"), ((_FunctionTypes._return_P0_E0<Number>) () -> {
-      Number seed = (Number) new BigInteger("0");
+    }).invoke()), EqualsTestOp.matches(new BigInteger("55"), ((_FunctionTypes._return_P0_E0<Number>) () -> {
+      Number seed = new BigInteger("0");
       for (Number current : SetSequence.fromSet(Generated_collections_Test.s1_)) {
         seed = AH.add(seed, current);
       }
@@ -6377,10 +6377,10 @@ public class Generated_collections_Test {
    */
     @Test
   public void collectionSetConstant_item12_9070044578388200941() throws Throwable {
-    Assert.assertTrue("Expected: " + (Number) new BigInteger("2") + ", but was: " + BigInteger.valueOf(((_FunctionTypes._return_P0_E0<PVector<GroupValue>>) () -> {
+    Assert.assertTrue("Expected: " + new BigInteger("2") + ", but was: " + BigInteger.valueOf(((_FunctionTypes._return_P0_E0<PVector<GroupValue>>) () -> {
       Map<Number, List<item>> grouped = Generated_collections_Test.s3_.stream().collect(Collectors.groupingBy(new Function<item, Number>() {
         public Number apply(item param) {
-          return (Number) new Function<ParameterSetWrapper, Number>() {
+          return new Function<ParameterSetWrapper, Number>() {
             public Number apply(ParameterSetWrapper param) {
               item it = (item) param.parameters.get(0);
               return it.getn();
@@ -6395,10 +6395,10 @@ public class Generated_collections_Test {
         result = result.plus(g);
       }
       return result;
-    }).invoke().size()), EqualsTestOp.matches((Number) new BigInteger("2"), BigInteger.valueOf(((_FunctionTypes._return_P0_E0<PVector<GroupValue>>) () -> {
+    }).invoke().size()), EqualsTestOp.matches(new BigInteger("2"), BigInteger.valueOf(((_FunctionTypes._return_P0_E0<PVector<GroupValue>>) () -> {
       Map<Number, List<item>> grouped = Generated_collections_Test.s3_.stream().collect(Collectors.groupingBy(new Function<item, Number>() {
         public Number apply(item param) {
-          return (Number) new Function<ParameterSetWrapper, Number>() {
+          return new Function<ParameterSetWrapper, Number>() {
             public Number apply(ParameterSetWrapper param) {
               item it = (item) param.parameters.get(0);
               return it.getn();
@@ -6420,10 +6420,10 @@ public class Generated_collections_Test {
    */
     @Test
   public void collectionSetConstant_item13_9070044578388200965() throws Throwable {
-    Assert.assertTrue("Expected: " + (Number) new BigInteger("2") + ", but was: " + BigInteger.valueOf(((_FunctionTypes._return_P0_E0<PVector<GroupValue>>) () -> {
+    Assert.assertTrue("Expected: " + new BigInteger("2") + ", but was: " + BigInteger.valueOf(((_FunctionTypes._return_P0_E0<PVector<GroupValue>>) () -> {
       Map<Number, List<item>> grouped = Generated_collections_Test.s3_.stream().collect(Collectors.groupingBy(new Function<item, Number>() {
         public Number apply(item param) {
-          return (Number) new Function<ParameterSetWrapper, Number>() {
+          return new Function<ParameterSetWrapper, Number>() {
             public Number apply(ParameterSetWrapper param) {
               item i = (item) param.parameters.get(0);
               return i.getn();
@@ -6438,10 +6438,10 @@ public class Generated_collections_Test {
         result = result.plus(g);
       }
       return result;
-    }).invoke().size()), EqualsTestOp.matches((Number) new BigInteger("2"), BigInteger.valueOf(((_FunctionTypes._return_P0_E0<PVector<GroupValue>>) () -> {
+    }).invoke().size()), EqualsTestOp.matches(new BigInteger("2"), BigInteger.valueOf(((_FunctionTypes._return_P0_E0<PVector<GroupValue>>) () -> {
       Map<Number, List<item>> grouped = Generated_collections_Test.s3_.stream().collect(Collectors.groupingBy(new Function<item, Number>() {
         public Number apply(item param) {
-          return (Number) new Function<ParameterSetWrapper, Number>() {
+          return new Function<ParameterSetWrapper, Number>() {
             public Number apply(ParameterSetWrapper param) {
               item i = (item) param.parameters.get(0);
               return i.getn();
@@ -6463,10 +6463,10 @@ public class Generated_collections_Test {
    */
     @Test
   public void collectionSetConstant_item14_9070044578388200991() throws Throwable {
-    Assert.assertTrue("Expected: " + (Number) new BigInteger("2") + ", but was: " + BigInteger.valueOf(((_FunctionTypes._return_P0_E0<PVector<GroupValue>>) () -> {
+    Assert.assertTrue("Expected: " + new BigInteger("2") + ", but was: " + BigInteger.valueOf(((_FunctionTypes._return_P0_E0<PVector<GroupValue>>) () -> {
       Map<Number, List<item>> grouped = Generated_collections_Test.s3_.stream().collect(Collectors.groupingBy(new Function<item, Number>() {
         public Number apply(item param) {
-          return (Number) new Function<ParameterSetWrapper, Number>() {
+          return new Function<ParameterSetWrapper, Number>() {
             public Number apply(ParameterSetWrapper param) {
               return collectionListLiteralFoo3((item) param.parameters.get(0));
             }
@@ -6480,10 +6480,10 @@ public class Generated_collections_Test {
         result = result.plus(g);
       }
       return result;
-    }).invoke().size()), EqualsTestOp.matches((Number) new BigInteger("2"), BigInteger.valueOf(((_FunctionTypes._return_P0_E0<PVector<GroupValue>>) () -> {
+    }).invoke().size()), EqualsTestOp.matches(new BigInteger("2"), BigInteger.valueOf(((_FunctionTypes._return_P0_E0<PVector<GroupValue>>) () -> {
       Map<Number, List<item>> grouped = Generated_collections_Test.s3_.stream().collect(Collectors.groupingBy(new Function<item, Number>() {
         public Number apply(item param) {
-          return (Number) new Function<ParameterSetWrapper, Number>() {
+          return new Function<ParameterSetWrapper, Number>() {
             public Number apply(ParameterSetWrapper param) {
               return collectionListLiteralFoo3((item) param.parameters.get(0));
             }
@@ -6518,21 +6518,21 @@ public class Generated_collections_Test {
    */
     @Test
   public void collectionSetConstant_item17_9070044578388201044() throws Throwable {
-    Assert.assertEquals("Expected: " + TreePVector.<Number>empty().plus((Number) new BigInteger("2")).plus((Number) new BigInteger("3")).plus((Number) new BigInteger("4")).plus((Number) new BigInteger("5")).plus((Number) new BigInteger("6")).plus((Number) new BigInteger("7")).plus((Number) new BigInteger("8")).plus((Number) new BigInteger("9")).plus((Number) new BigInteger("10")).plus((Number) new BigInteger("11")) + ", but was: " + TreePVector.<Number>from(Generated_collections_Test.s1_.stream().map(new Function<Number, Number>() {
+    Assert.assertEquals("Expected: " + TreePVector.<Number>empty().plus(new BigInteger("2")).plus(new BigInteger("3")).plus(new BigInteger("4")).plus(new BigInteger("5")).plus(new BigInteger("6")).plus(new BigInteger("7")).plus(new BigInteger("8")).plus(new BigInteger("9")).plus(new BigInteger("10")).plus(new BigInteger("11")) + ", but was: " + TreePVector.<Number>from(Generated_collections_Test.s1_.stream().map(new Function<Number, Number>() {
       public Number apply(Number param) {
         return new Function<ParameterSetWrapper, Number>() {
           public Number apply(ParameterSetWrapper param) {
             Number it = (Number) param.parameters.get(0);
-            return AH.add(it, (Number) new BigInteger("1"));
+            return AH.add(it, new BigInteger("1"));
           }
         }.apply(new ParameterSetWrapper(param));
       }
-    }).collect(Collectors.<Number>toList())), (Object) TreePVector.<Number>empty().plus((Number) new BigInteger("2")).plus((Number) new BigInteger("3")).plus((Number) new BigInteger("4")).plus((Number) new BigInteger("5")).plus((Number) new BigInteger("6")).plus((Number) new BigInteger("7")).plus((Number) new BigInteger("8")).plus((Number) new BigInteger("9")).plus((Number) new BigInteger("10")).plus((Number) new BigInteger("11")), (Object) TreePVector.<Number>from(Generated_collections_Test.s1_.stream().map(new Function<Number, Number>() {
+    }).collect(Collectors.<Number>toList())), TreePVector.<Number>empty().plus(new BigInteger("2")).plus(new BigInteger("3")).plus(new BigInteger("4")).plus(new BigInteger("5")).plus(new BigInteger("6")).plus(new BigInteger("7")).plus(new BigInteger("8")).plus(new BigInteger("9")).plus(new BigInteger("10")).plus(new BigInteger("11")), TreePVector.<Number>from(Generated_collections_Test.s1_.stream().map(new Function<Number, Number>() {
       public Number apply(Number param) {
         return new Function<ParameterSetWrapper, Number>() {
           public Number apply(ParameterSetWrapper param) {
             Number it = (Number) param.parameters.get(0);
-            return AH.add(it, (Number) new BigInteger("1"));
+            return AH.add(it, new BigInteger("1"));
           }
         }.apply(new ParameterSetWrapper(param));
       }
@@ -6543,21 +6543,21 @@ public class Generated_collections_Test {
    */
     @Test
   public void collectionSetConstant_item18_9070044578388201074() throws Throwable {
-    Assert.assertEquals("Expected: " + TreePVector.<Number>empty().plus((Number) new BigInteger("2")).plus((Number) new BigInteger("3")).plus((Number) new BigInteger("4")).plus((Number) new BigInteger("5")).plus((Number) new BigInteger("6")).plus((Number) new BigInteger("7")).plus((Number) new BigInteger("8")).plus((Number) new BigInteger("9")).plus((Number) new BigInteger("10")).plus((Number) new BigInteger("11")) + ", but was: " + TreePVector.<Number>from(Generated_collections_Test.s1_.stream().map(new Function<Number, Number>() {
+    Assert.assertEquals("Expected: " + TreePVector.<Number>empty().plus(new BigInteger("2")).plus(new BigInteger("3")).plus(new BigInteger("4")).plus(new BigInteger("5")).plus(new BigInteger("6")).plus(new BigInteger("7")).plus(new BigInteger("8")).plus(new BigInteger("9")).plus(new BigInteger("10")).plus(new BigInteger("11")) + ", but was: " + TreePVector.<Number>from(Generated_collections_Test.s1_.stream().map(new Function<Number, Number>() {
       public Number apply(Number param) {
         return new Function<ParameterSetWrapper, Number>() {
           public Number apply(ParameterSetWrapper param) {
             Number a = (Number) param.parameters.get(0);
-            return AH.add(a, (Number) new BigInteger("1"));
+            return AH.add(a, new BigInteger("1"));
           }
         }.apply(new ParameterSetWrapper(param));
       }
-    }).collect(Collectors.<Number>toList())), (Object) TreePVector.<Number>empty().plus((Number) new BigInteger("2")).plus((Number) new BigInteger("3")).plus((Number) new BigInteger("4")).plus((Number) new BigInteger("5")).plus((Number) new BigInteger("6")).plus((Number) new BigInteger("7")).plus((Number) new BigInteger("8")).plus((Number) new BigInteger("9")).plus((Number) new BigInteger("10")).plus((Number) new BigInteger("11")), (Object) TreePVector.<Number>from(Generated_collections_Test.s1_.stream().map(new Function<Number, Number>() {
+    }).collect(Collectors.<Number>toList())), TreePVector.<Number>empty().plus(new BigInteger("2")).plus(new BigInteger("3")).plus(new BigInteger("4")).plus(new BigInteger("5")).plus(new BigInteger("6")).plus(new BigInteger("7")).plus(new BigInteger("8")).plus(new BigInteger("9")).plus(new BigInteger("10")).plus(new BigInteger("11")), TreePVector.<Number>from(Generated_collections_Test.s1_.stream().map(new Function<Number, Number>() {
       public Number apply(Number param) {
         return new Function<ParameterSetWrapper, Number>() {
           public Number apply(ParameterSetWrapper param) {
             Number a = (Number) param.parameters.get(0);
-            return AH.add(a, (Number) new BigInteger("1"));
+            return AH.add(a, new BigInteger("1"));
           }
         }.apply(new ParameterSetWrapper(param));
       }
@@ -6568,7 +6568,7 @@ public class Generated_collections_Test {
    */
     @Test
   public void collectionSetConstant_item19_9070044578388201107() throws Throwable {
-    Assert.assertEquals("Expected: " + TreePVector.<Number>empty().plus((Number) new BigInteger("2")).plus((Number) new BigInteger("3")).plus((Number) new BigInteger("4")).plus((Number) new BigInteger("5")).plus((Number) new BigInteger("6")).plus((Number) new BigInteger("7")).plus((Number) new BigInteger("8")).plus((Number) new BigInteger("9")).plus((Number) new BigInteger("10")).plus((Number) new BigInteger("11")) + ", but was: " + TreePVector.<Number>from(Generated_collections_Test.s1_.stream().map(new Function<Number, Number>() {
+    Assert.assertEquals("Expected: " + TreePVector.<Number>empty().plus(new BigInteger("2")).plus(new BigInteger("3")).plus(new BigInteger("4")).plus(new BigInteger("5")).plus(new BigInteger("6")).plus(new BigInteger("7")).plus(new BigInteger("8")).plus(new BigInteger("9")).plus(new BigInteger("10")).plus(new BigInteger("11")) + ", but was: " + TreePVector.<Number>from(Generated_collections_Test.s1_.stream().map(new Function<Number, Number>() {
       public Number apply(Number param) {
         return new Function<ParameterSetWrapper, Number>() {
           public Number apply(ParameterSetWrapper param) {
@@ -6576,7 +6576,7 @@ public class Generated_collections_Test {
           }
         }.apply(new ParameterSetWrapper(param));
       }
-    }).collect(Collectors.<Number>toList())), (Object) TreePVector.<Number>empty().plus((Number) new BigInteger("2")).plus((Number) new BigInteger("3")).plus((Number) new BigInteger("4")).plus((Number) new BigInteger("5")).plus((Number) new BigInteger("6")).plus((Number) new BigInteger("7")).plus((Number) new BigInteger("8")).plus((Number) new BigInteger("9")).plus((Number) new BigInteger("10")).plus((Number) new BigInteger("11")), (Object) TreePVector.<Number>from(Generated_collections_Test.s1_.stream().map(new Function<Number, Number>() {
+    }).collect(Collectors.<Number>toList())), TreePVector.<Number>empty().plus(new BigInteger("2")).plus(new BigInteger("3")).plus(new BigInteger("4")).plus(new BigInteger("5")).plus(new BigInteger("6")).plus(new BigInteger("7")).plus(new BigInteger("8")).plus(new BigInteger("9")).plus(new BigInteger("10")).plus(new BigInteger("11")), TreePVector.<Number>from(Generated_collections_Test.s1_.stream().map(new Function<Number, Number>() {
       public Number apply(Number param) {
         return new Function<ParameterSetWrapper, Number>() {
           public Number apply(ParameterSetWrapper param) {
@@ -6591,21 +6591,21 @@ public class Generated_collections_Test {
    */
     @Test
   public void collectionSetConstant_item20_9070044578388201134() throws Throwable {
-    Assert.assertTrue("Expected: " + (Number) new BigInteger("10") + ", but was: " + CollectionHelper.max(Generated_collections_Test.s1_), EqualsTestOp.matches((Number) new BigInteger("10"), CollectionHelper.max(Generated_collections_Test.s1_)));
+    Assert.assertTrue("Expected: " + new BigInteger("10") + ", but was: " + CollectionHelper.max(Generated_collections_Test.s1_), EqualsTestOp.matches(new BigInteger("10"), CollectionHelper.max(Generated_collections_Test.s1_)));
   }
 /* 
    * what about first and distinct
    */
     @Test
   public void collectionSetConstant_item21_9070044578388201150() throws Throwable {
-    Assert.assertTrue("Expected: " + (Number) new BigInteger("1") + ", but was: " + CollectionHelper.min(Generated_collections_Test.s1_), EqualsTestOp.matches((Number) new BigInteger("1"), CollectionHelper.min(Generated_collections_Test.s1_)));
+    Assert.assertTrue("Expected: " + new BigInteger("1") + ", but was: " + CollectionHelper.min(Generated_collections_Test.s1_), EqualsTestOp.matches(new BigInteger("1"), CollectionHelper.min(Generated_collections_Test.s1_)));
   }
 /* 
    * what about first and distinct
    */
     @Test
   public void collectionSetConstant_item22_9070044578388201166() throws Throwable {
-    Assert.assertTrue("Expected: " + (Number) new BigInteger("2") + ", but was: " + BigInteger.valueOf(((_FunctionTypes._return_P0_E0<PVector<InlineRecordType>>) () -> {
+    Assert.assertTrue("Expected: " + new BigInteger("2") + ", but was: " + BigInteger.valueOf(((_FunctionTypes._return_P0_E0<PVector<InlineRecordType>>) () -> {
       PVector<InlineRecordType> result = TreePVector.empty();
       for (item it : SetSequence.fromSet(Generated_collections_Test.s4_)) {
         InlineRecordType irt = new InlineRecordType();
@@ -6613,7 +6613,7 @@ public class Generated_collections_Test {
         result = result.plus(irt);
       }
       return result;
-    }).invoke().size()), EqualsTestOp.matches((Number) new BigInteger("2"), BigInteger.valueOf(((_FunctionTypes._return_P0_E0<PVector<InlineRecordType>>) () -> {
+    }).invoke().size()), EqualsTestOp.matches(new BigInteger("2"), BigInteger.valueOf(((_FunctionTypes._return_P0_E0<PVector<InlineRecordType>>) () -> {
       PVector<InlineRecordType> result = TreePVector.empty();
       for (item it : SetSequence.fromSet(Generated_collections_Test.s4_)) {
         InlineRecordType irt = new InlineRecordType();
@@ -6628,18 +6628,18 @@ public class Generated_collections_Test {
    */
     @Test
   public void collectionSetConstant_item23_9070044578388201188() throws Throwable {
-    Assert.assertTrue("Expected: " + (Number) new BigInteger("10") + ", but was: " + BigInteger.valueOf(Generated_collections_Test.s1_.size()), EqualsTestOp.matches((Number) new BigInteger("10"), BigInteger.valueOf(Generated_collections_Test.s1_.size())));
+    Assert.assertTrue("Expected: " + new BigInteger("10") + ", but was: " + BigInteger.valueOf(Generated_collections_Test.s1_.size()), EqualsTestOp.matches(new BigInteger("10"), BigInteger.valueOf(Generated_collections_Test.s1_.size())));
   }
 /* 
    * what about first and distinct
    */
     @Test
   public void collectionSetConstant_item24_9070044578388201204() throws Throwable {
-    Assert.assertEquals("Expected: " + TreePVector.<Number>empty().plus((Number) new BigInteger("1")).plus((Number) new BigInteger("2")).plus((Number) new BigInteger("3")).plus((Number) new BigInteger("4")).plus((Number) new BigInteger("5")).plus((Number) new BigInteger("6")).plus((Number) new BigInteger("7")).plus((Number) new BigInteger("8")).plus((Number) new BigInteger("9")).plus((Number) new BigInteger("10")) + ", but was: " + (PVector<Number>) TreePVector.<Number>from(((PCollection<Number>) Generated_collections_Test.s1_).stream().filter(OH.predicate()).sorted(new Comparator<Number>() {
+    Assert.assertEquals("Expected: " + TreePVector.<Number>empty().plus(new BigInteger("1")).plus(new BigInteger("2")).plus(new BigInteger("3")).plus(new BigInteger("4")).plus(new BigInteger("5")).plus(new BigInteger("6")).plus(new BigInteger("7")).plus(new BigInteger("8")).plus(new BigInteger("9")).plus(new BigInteger("10")) + ", but was: " + TreePVector.<Number>from(Generated_collections_Test.s1_.stream().filter(OH.predicate()).sorted(new Comparator<Number>() {
       public int compare(Number p0, Number p1) {
         return OH.compare(p0, p1);
       }
-    }).collect(Collectors.<Number>toList())), (Object) TreePVector.<Number>empty().plus((Number) new BigInteger("1")).plus((Number) new BigInteger("2")).plus((Number) new BigInteger("3")).plus((Number) new BigInteger("4")).plus((Number) new BigInteger("5")).plus((Number) new BigInteger("6")).plus((Number) new BigInteger("7")).plus((Number) new BigInteger("8")).plus((Number) new BigInteger("9")).plus((Number) new BigInteger("10")), (Object) (PVector<Number>) TreePVector.<Number>from(((PCollection<Number>) Generated_collections_Test.s1_).stream().filter(OH.predicate()).sorted(new Comparator<Number>() {
+    }).collect(Collectors.<Number>toList())), TreePVector.<Number>empty().plus(new BigInteger("1")).plus(new BigInteger("2")).plus(new BigInteger("3")).plus(new BigInteger("4")).plus(new BigInteger("5")).plus(new BigInteger("6")).plus(new BigInteger("7")).plus(new BigInteger("8")).plus(new BigInteger("9")).plus(new BigInteger("10")), TreePVector.<Number>from(Generated_collections_Test.s1_.stream().filter(OH.predicate()).sorted(new Comparator<Number>() {
       public int compare(Number p0, Number p1) {
         return OH.compare(p0, p1);
       }
@@ -6650,11 +6650,11 @@ public class Generated_collections_Test {
    */
     @Test
   public void collectionSetConstant_item25_9070044578388201230() throws Throwable {
-    Assert.assertEquals("Expected: " + TreePVector.<Number>empty().plus((Number) new BigInteger("10")).plus((Number) new BigInteger("9")).plus((Number) new BigInteger("8")).plus((Number) new BigInteger("7")).plus((Number) new BigInteger("6")).plus((Number) new BigInteger("5")).plus((Number) new BigInteger("4")).plus((Number) new BigInteger("3")).plus((Number) new BigInteger("2")).plus((Number) new BigInteger("1")) + ", but was: " + (PVector<Number>) TreePVector.<Number>from(((PCollection<Number>) Generated_collections_Test.s1_).stream().filter(OH.predicate()).sorted(new Comparator<Number>() {
+    Assert.assertEquals("Expected: " + TreePVector.<Number>empty().plus(new BigInteger("10")).plus(new BigInteger("9")).plus(new BigInteger("8")).plus(new BigInteger("7")).plus(new BigInteger("6")).plus(new BigInteger("5")).plus(new BigInteger("4")).plus(new BigInteger("3")).plus(new BigInteger("2")).plus(new BigInteger("1")) + ", but was: " + TreePVector.<Number>from(Generated_collections_Test.s1_.stream().filter(OH.predicate()).sorted(new Comparator<Number>() {
       public int compare(Number p0, Number p1) {
         return OH.compare(p1, p0);
       }
-    }).collect(Collectors.<Number>toList())), (Object) TreePVector.<Number>empty().plus((Number) new BigInteger("10")).plus((Number) new BigInteger("9")).plus((Number) new BigInteger("8")).plus((Number) new BigInteger("7")).plus((Number) new BigInteger("6")).plus((Number) new BigInteger("5")).plus((Number) new BigInteger("4")).plus((Number) new BigInteger("3")).plus((Number) new BigInteger("2")).plus((Number) new BigInteger("1")), (Object) (PVector<Number>) TreePVector.<Number>from(((PCollection<Number>) Generated_collections_Test.s1_).stream().filter(OH.predicate()).sorted(new Comparator<Number>() {
+    }).collect(Collectors.<Number>toList())), TreePVector.<Number>empty().plus(new BigInteger("10")).plus(new BigInteger("9")).plus(new BigInteger("8")).plus(new BigInteger("7")).plus(new BigInteger("6")).plus(new BigInteger("5")).plus(new BigInteger("4")).plus(new BigInteger("3")).plus(new BigInteger("2")).plus(new BigInteger("1")), TreePVector.<Number>from(Generated_collections_Test.s1_.stream().filter(OH.predicate()).sorted(new Comparator<Number>() {
       public int compare(Number p0, Number p1) {
         return OH.compare(p1, p0);
       }
@@ -6665,32 +6665,32 @@ public class Generated_collections_Test {
    */
     @Test
   public void collectionSetConstant_item26_9070044578388201256() throws Throwable {
-    Assert.assertTrue("Expected: " + (Number) new BigInteger("55") + ", but was: " + CollectionHelper.sumAsBigInteger(Generated_collections_Test.s1_), EqualsTestOp.matches((Number) new BigInteger("55"), CollectionHelper.sumAsBigInteger(Generated_collections_Test.s1_)));
+    Assert.assertTrue("Expected: " + new BigInteger("55") + ", but was: " + CollectionHelper.sumAsBigInteger(Generated_collections_Test.s1_), EqualsTestOp.matches(new BigInteger("55"), CollectionHelper.sumAsBigInteger(Generated_collections_Test.s1_)));
   }
 /* 
    * what about first and distinct
    */
     @Test
   public void collectionSetConstant_item27_9070044578388201272() throws Throwable {
-    Assert.assertEquals("Expected: " + TreePVector.<Number>empty().plus((Number) new BigInteger("1")).plus((Number) new BigInteger("2")).plus((Number) new BigInteger("3")).plus((Number) new BigInteger("4")).plus((Number) new BigInteger("5")).plus((Number) new BigInteger("6")).plus((Number) new BigInteger("7")).plus((Number) new BigInteger("8")).plus((Number) new BigInteger("9")).plus((Number) new BigInteger("10")) + ", but was: " + TreePVector.from(Generated_collections_Test.s1_), (Object) TreePVector.<Number>empty().plus((Number) new BigInteger("1")).plus((Number) new BigInteger("2")).plus((Number) new BigInteger("3")).plus((Number) new BigInteger("4")).plus((Number) new BigInteger("5")).plus((Number) new BigInteger("6")).plus((Number) new BigInteger("7")).plus((Number) new BigInteger("8")).plus((Number) new BigInteger("9")).plus((Number) new BigInteger("10")), (Object) TreePVector.from(Generated_collections_Test.s1_));
+    Assert.assertEquals("Expected: " + TreePVector.<Number>empty().plus(new BigInteger("1")).plus(new BigInteger("2")).plus(new BigInteger("3")).plus(new BigInteger("4")).plus(new BigInteger("5")).plus(new BigInteger("6")).plus(new BigInteger("7")).plus(new BigInteger("8")).plus(new BigInteger("9")).plus(new BigInteger("10")) + ", but was: " + TreePVector.from(Generated_collections_Test.s1_), TreePVector.<Number>empty().plus(new BigInteger("1")).plus(new BigInteger("2")).plus(new BigInteger("3")).plus(new BigInteger("4")).plus(new BigInteger("5")).plus(new BigInteger("6")).plus(new BigInteger("7")).plus(new BigInteger("8")).plus(new BigInteger("9")).plus(new BigInteger("10")), TreePVector.from(Generated_collections_Test.s1_));
   }
 /* 
    * what about first and distinct
    */
     @Test
   public void collectionSetConstant_item28_9070044578388201298() throws Throwable {
-    Assert.assertEquals("Expected: " + HashTreePSet.from(Arrays.asList((Number) new BigInteger("1"), (Number) new BigInteger("2"), (Number) new BigInteger("3"), (Number) new BigInteger("4"), (Number) new BigInteger("5"), (Number) new BigInteger("6"), (Number) new BigInteger("7"), (Number) new BigInteger("8"), (Number) new BigInteger("9"), (Number) new BigInteger("10"))) + ", but was: " + HashTreePSet.from(Generated_collections_Test.s1_), (Object) HashTreePSet.from(Arrays.asList((Number) new BigInteger("1"), (Number) new BigInteger("2"), (Number) new BigInteger("3"), (Number) new BigInteger("4"), (Number) new BigInteger("5"), (Number) new BigInteger("6"), (Number) new BigInteger("7"), (Number) new BigInteger("8"), (Number) new BigInteger("9"), (Number) new BigInteger("10"))), (Object) HashTreePSet.from(Generated_collections_Test.s1_));
+    Assert.assertEquals("Expected: " + HashTreePSet.from(Arrays.asList((Number) new BigInteger("1"), (Number) new BigInteger("2"), (Number) new BigInteger("3"), (Number) new BigInteger("4"), (Number) new BigInteger("5"), (Number) new BigInteger("6"), (Number) new BigInteger("7"), (Number) new BigInteger("8"), (Number) new BigInteger("9"), (Number) new BigInteger("10"))) + ", but was: " + HashTreePSet.from(Generated_collections_Test.s1_), HashTreePSet.from(Arrays.asList((Number) new BigInteger("1"), (Number) new BigInteger("2"), (Number) new BigInteger("3"), (Number) new BigInteger("4"), (Number) new BigInteger("5"), (Number) new BigInteger("6"), (Number) new BigInteger("7"), (Number) new BigInteger("8"), (Number) new BigInteger("9"), (Number) new BigInteger("10"))), HashTreePSet.from(Generated_collections_Test.s1_));
   }
 /* 
    * what about first and distinct
    */
     @Test
   public void collectionSetConstant_item29_9070044578388201324() throws Throwable {
-    Assert.assertEquals("Expected: " + TreePVector.<Number>empty().plus((Number) new BigInteger("1")).plus((Number) new BigInteger("2")) + ", but was: " + TreePVector.<Number>from(Generated_collections_Test.s5_.stream().filter(new Predicate<Number>() {
+    Assert.assertEquals("Expected: " + TreePVector.<Number>empty().plus(new BigInteger("1")).plus(new BigInteger("2")) + ", but was: " + TreePVector.<Number>from(Generated_collections_Test.s5_.stream().filter(new Predicate<Number>() {
       public boolean test(Number p0) {
         return p0 != null;
       }
-    }).collect(Collectors.<Number>toList())), (Object) TreePVector.<Number>empty().plus((Number) new BigInteger("1")).plus((Number) new BigInteger("2")), (Object) TreePVector.<Number>from(Generated_collections_Test.s5_.stream().filter(new Predicate<Number>() {
+    }).collect(Collectors.<Number>toList())), TreePVector.<Number>empty().plus(new BigInteger("1")).plus(new BigInteger("2")), TreePVector.<Number>from(Generated_collections_Test.s5_.stream().filter(new Predicate<Number>() {
       public boolean test(Number p0) {
         return p0 != null;
       }
@@ -6701,21 +6701,21 @@ public class Generated_collections_Test {
    */
     @Test
   public void collectionSetConstant_item30_9070044578388201336() throws Throwable {
-    Assert.assertEquals("Expected: " + TreePVector.<Number>empty().plus((Number) new BigInteger("1")).plus((Number) new BigInteger("2")) + ", but was: " + TreePVector.<Number>from(Generated_collections_Test.s1_.stream().filter(new Predicate<Number>() {
+    Assert.assertEquals("Expected: " + TreePVector.<Number>empty().plus(new BigInteger("1")).plus(new BigInteger("2")) + ", but was: " + TreePVector.<Number>from(Generated_collections_Test.s1_.stream().filter(new Predicate<Number>() {
       public boolean test(Number o) {
         return new Function<ParameterSetWrapper, Boolean>() {
           public Boolean apply(ParameterSetWrapper param) {
             Number it = (Number) param.parameters.get(0);
-            return AH.isLess(it, (Number) new BigInteger("3"));
+            return AH.isLess(it, new BigInteger("3"));
           }
         }.apply(new ParameterSetWrapper(o));
       }
-    }).collect(Collectors.<Number>toList())), (Object) TreePVector.<Number>empty().plus((Number) new BigInteger("1")).plus((Number) new BigInteger("2")), (Object) TreePVector.<Number>from(Generated_collections_Test.s1_.stream().filter(new Predicate<Number>() {
+    }).collect(Collectors.<Number>toList())), TreePVector.<Number>empty().plus(new BigInteger("1")).plus(new BigInteger("2")), TreePVector.<Number>from(Generated_collections_Test.s1_.stream().filter(new Predicate<Number>() {
       public boolean test(Number o) {
         return new Function<ParameterSetWrapper, Boolean>() {
           public Boolean apply(ParameterSetWrapper param) {
             Number it = (Number) param.parameters.get(0);
-            return AH.isLess(it, (Number) new BigInteger("3"));
+            return AH.isLess(it, new BigInteger("3"));
           }
         }.apply(new ParameterSetWrapper(o));
       }
@@ -6726,21 +6726,21 @@ public class Generated_collections_Test {
    */
     @Test
   public void collectionSetConstant_item31_9070044578388201358() throws Throwable {
-    Assert.assertEquals("Expected: " + TreePVector.<Number>empty().plus((Number) new BigInteger("1")).plus((Number) new BigInteger("2")) + ", but was: " + TreePVector.<Number>from(Generated_collections_Test.s1_.stream().filter(new Predicate<Number>() {
+    Assert.assertEquals("Expected: " + TreePVector.<Number>empty().plus(new BigInteger("1")).plus(new BigInteger("2")) + ", but was: " + TreePVector.<Number>from(Generated_collections_Test.s1_.stream().filter(new Predicate<Number>() {
       public boolean test(Number o) {
         return new Function<ParameterSetWrapper, Boolean>() {
           public Boolean apply(ParameterSetWrapper param) {
             Number a = (Number) param.parameters.get(0);
-            return AH.isLess(a, (Number) new BigInteger("3"));
+            return AH.isLess(a, new BigInteger("3"));
           }
         }.apply(new ParameterSetWrapper(o));
       }
-    }).collect(Collectors.<Number>toList())), (Object) TreePVector.<Number>empty().plus((Number) new BigInteger("1")).plus((Number) new BigInteger("2")), (Object) TreePVector.<Number>from(Generated_collections_Test.s1_.stream().filter(new Predicate<Number>() {
+    }).collect(Collectors.<Number>toList())), TreePVector.<Number>empty().plus(new BigInteger("1")).plus(new BigInteger("2")), TreePVector.<Number>from(Generated_collections_Test.s1_.stream().filter(new Predicate<Number>() {
       public boolean test(Number o) {
         return new Function<ParameterSetWrapper, Boolean>() {
           public Boolean apply(ParameterSetWrapper param) {
             Number a = (Number) param.parameters.get(0);
-            return AH.isLess(a, (Number) new BigInteger("3"));
+            return AH.isLess(a, new BigInteger("3"));
           }
         }.apply(new ParameterSetWrapper(o));
       }
@@ -6751,7 +6751,7 @@ public class Generated_collections_Test {
    */
     @Test
   public void collectionSetConstant_item32_9070044578388201383() throws Throwable {
-    Assert.assertEquals("Expected: " + TreePVector.<Number>empty().plus((Number) new BigInteger("1")).plus((Number) new BigInteger("2")).plus((Number) new BigInteger("3")).plus((Number) new BigInteger("4")).plus((Number) new BigInteger("5")).plus((Number) new BigInteger("6")).plus((Number) new BigInteger("7")).plus((Number) new BigInteger("8")).plus((Number) new BigInteger("9")).plus((Number) new BigInteger("10")) + ", but was: " + TreePVector.<Number>from(Generated_collections_Test.s1_.stream().filter(new Predicate<Number>() {
+    Assert.assertEquals("Expected: " + TreePVector.<Number>empty().plus(new BigInteger("1")).plus(new BigInteger("2")).plus(new BigInteger("3")).plus(new BigInteger("4")).plus(new BigInteger("5")).plus(new BigInteger("6")).plus(new BigInteger("7")).plus(new BigInteger("8")).plus(new BigInteger("9")).plus(new BigInteger("10")) + ", but was: " + TreePVector.<Number>from(Generated_collections_Test.s1_.stream().filter(new Predicate<Number>() {
       public boolean test(Number o) {
         return new Function<ParameterSetWrapper, Boolean>() {
           public Boolean apply(ParameterSetWrapper param) {
@@ -6759,7 +6759,7 @@ public class Generated_collections_Test {
           }
         }.apply(new ParameterSetWrapper(o));
       }
-    }).collect(Collectors.<Number>toList())), (Object) TreePVector.<Number>empty().plus((Number) new BigInteger("1")).plus((Number) new BigInteger("2")).plus((Number) new BigInteger("3")).plus((Number) new BigInteger("4")).plus((Number) new BigInteger("5")).plus((Number) new BigInteger("6")).plus((Number) new BigInteger("7")).plus((Number) new BigInteger("8")).plus((Number) new BigInteger("9")).plus((Number) new BigInteger("10")), (Object) TreePVector.<Number>from(Generated_collections_Test.s1_.stream().filter(new Predicate<Number>() {
+    }).collect(Collectors.<Number>toList())), TreePVector.<Number>empty().plus(new BigInteger("1")).plus(new BigInteger("2")).plus(new BigInteger("3")).plus(new BigInteger("4")).plus(new BigInteger("5")).plus(new BigInteger("6")).plus(new BigInteger("7")).plus(new BigInteger("8")).plus(new BigInteger("9")).plus(new BigInteger("10")), TreePVector.<Number>from(Generated_collections_Test.s1_.stream().filter(new Predicate<Number>() {
       public boolean test(Number o) {
         return new Function<ParameterSetWrapper, Boolean>() {
           public Boolean apply(ParameterSetWrapper param) {
@@ -6774,14 +6774,14 @@ public class Generated_collections_Test {
    */
     @Test
   public void collectionSetConstant_item33_32857128013219999() throws Throwable {
-    Assert.assertEquals("Expected: " + HashTreePSet.from(Arrays.asList((Number) new BigInteger("1"), (Number) new BigInteger("2"), (Number) new BigInteger("3"), (Number) new BigInteger("4"), (Number) new BigInteger("5"), (Number) new BigInteger("6"), (Number) new BigInteger("7"), (Number) new BigInteger("8"), (Number) new BigInteger("9"), (Number) new BigInteger("10"), (Number) new BigInteger("11"))) + ", but was: " + Generated_collections_Test.s6_.plus((Number) new BigInteger("11")), (Object) HashTreePSet.from(Arrays.asList((Number) new BigInteger("1"), (Number) new BigInteger("2"), (Number) new BigInteger("3"), (Number) new BigInteger("4"), (Number) new BigInteger("5"), (Number) new BigInteger("6"), (Number) new BigInteger("7"), (Number) new BigInteger("8"), (Number) new BigInteger("9"), (Number) new BigInteger("10"), (Number) new BigInteger("11"))), (Object) Generated_collections_Test.s6_.plus((Number) new BigInteger("11")));
+    Assert.assertEquals("Expected: " + HashTreePSet.from(Arrays.asList((Number) new BigInteger("1"), (Number) new BigInteger("2"), (Number) new BigInteger("3"), (Number) new BigInteger("4"), (Number) new BigInteger("5"), (Number) new BigInteger("6"), (Number) new BigInteger("7"), (Number) new BigInteger("8"), (Number) new BigInteger("9"), (Number) new BigInteger("10"), (Number) new BigInteger("11"))) + ", but was: " + Generated_collections_Test.s6_.plus(new BigInteger("11")), HashTreePSet.from(Arrays.asList((Number) new BigInteger("1"), (Number) new BigInteger("2"), (Number) new BigInteger("3"), (Number) new BigInteger("4"), (Number) new BigInteger("5"), (Number) new BigInteger("6"), (Number) new BigInteger("7"), (Number) new BigInteger("8"), (Number) new BigInteger("9"), (Number) new BigInteger("10"), (Number) new BigInteger("11"))), Generated_collections_Test.s6_.plus(new BigInteger("11")));
   }
 /* 
    * what about first and distinct
    */
     @Test
   public void collectionSetConstant_item34_32857128013407627() throws Throwable {
-    Assert.assertEquals("Expected: " + HashTreePSet.from(Arrays.asList((Number) new BigInteger("1"), (Number) new BigInteger("2"), (Number) new BigInteger("3"), (Number) new BigInteger("4"), (Number) new BigInteger("5"), (Number) new BigInteger("6"), (Number) new BigInteger("7"), (Number) new BigInteger("8"), (Number) new BigInteger("9"))) + ", but was: " + Generated_collections_Test.s1_.minus((Number) new BigInteger("10")), (Object) HashTreePSet.from(Arrays.asList((Number) new BigInteger("1"), (Number) new BigInteger("2"), (Number) new BigInteger("3"), (Number) new BigInteger("4"), (Number) new BigInteger("5"), (Number) new BigInteger("6"), (Number) new BigInteger("7"), (Number) new BigInteger("8"), (Number) new BigInteger("9"))), (Object) Generated_collections_Test.s1_.minus((Number) new BigInteger("10")));
+    Assert.assertEquals("Expected: " + HashTreePSet.from(Arrays.asList((Number) new BigInteger("1"), (Number) new BigInteger("2"), (Number) new BigInteger("3"), (Number) new BigInteger("4"), (Number) new BigInteger("5"), (Number) new BigInteger("6"), (Number) new BigInteger("7"), (Number) new BigInteger("8"), (Number) new BigInteger("9"))) + ", but was: " + Generated_collections_Test.s1_.minus(new BigInteger("10")), HashTreePSet.from(Arrays.asList((Number) new BigInteger("1"), (Number) new BigInteger("2"), (Number) new BigInteger("3"), (Number) new BigInteger("4"), (Number) new BigInteger("5"), (Number) new BigInteger("6"), (Number) new BigInteger("7"), (Number) new BigInteger("8"), (Number) new BigInteger("9"))), Generated_collections_Test.s1_.minus(new BigInteger("10")));
   }
 /* 
    * foreach is still missing, as well as insert and remove
@@ -6789,25 +6789,25 @@ public class Generated_collections_Test {
     @Test
   public void collectionListVal_item0_8273018919111564194() throws Throwable {
     Assert.assertEquals("Expected: " + false + ", but was: " + (((_FunctionTypes._return_P0_E0<Boolean>) () -> {
-      PVector<Number> v1 = TreePVector.<Number>empty().plus((Number) new BigInteger("1")).plus((Number) new BigInteger("2")).plus((Number) new BigInteger("3")).plus((Number) new BigInteger("4")).plus((Number) new BigInteger("5")).plus((Number) new BigInteger("6")).plus((Number) new BigInteger("7")).plus((Number) new BigInteger("8")).plus((Number) new BigInteger("9")).plus((Number) new BigInteger("10"));
+      PVector<Number> v1 = TreePVector.<Number>empty().plus(new BigInteger("1")).plus(new BigInteger("2")).plus(new BigInteger("3")).plus(new BigInteger("4")).plus(new BigInteger("5")).plus(new BigInteger("6")).plus(new BigInteger("7")).plus(new BigInteger("8")).plus(new BigInteger("9")).plus(new BigInteger("10"));
       return v1.stream().allMatch(new Predicate<Number>() {
         public boolean test(Number o) {
           return new Function<ParameterSetWrapper, Boolean>() {
             public Boolean apply(ParameterSetWrapper param) {
               Number it = (Number) param.parameters.get(0);
-              return AH.isLess(it, (Number) new BigInteger("3"));
+              return AH.isLess(it, new BigInteger("3"));
             }
           }.apply(new ParameterSetWrapper(o));
         }
       });
     }).invoke()), (Object) false, (Object) ((_FunctionTypes._return_P0_E0<Boolean>) () -> {
-      PVector<Number> v1 = TreePVector.<Number>empty().plus((Number) new BigInteger("1")).plus((Number) new BigInteger("2")).plus((Number) new BigInteger("3")).plus((Number) new BigInteger("4")).plus((Number) new BigInteger("5")).plus((Number) new BigInteger("6")).plus((Number) new BigInteger("7")).plus((Number) new BigInteger("8")).plus((Number) new BigInteger("9")).plus((Number) new BigInteger("10"));
+      PVector<Number> v1 = TreePVector.<Number>empty().plus(new BigInteger("1")).plus(new BigInteger("2")).plus(new BigInteger("3")).plus(new BigInteger("4")).plus(new BigInteger("5")).plus(new BigInteger("6")).plus(new BigInteger("7")).plus(new BigInteger("8")).plus(new BigInteger("9")).plus(new BigInteger("10"));
       return v1.stream().allMatch(new Predicate<Number>() {
         public boolean test(Number o) {
           return new Function<ParameterSetWrapper, Boolean>() {
             public Boolean apply(ParameterSetWrapper param) {
               Number it = (Number) param.parameters.get(0);
-              return AH.isLess(it, (Number) new BigInteger("3"));
+              return AH.isLess(it, new BigInteger("3"));
             }
           }.apply(new ParameterSetWrapper(o));
         }
@@ -6820,25 +6820,25 @@ public class Generated_collections_Test {
     @Test
   public void collectionListVal_item1_8273018919111564204() throws Throwable {
     Assert.assertEquals("Expected: " + true + ", but was: " + (((_FunctionTypes._return_P0_E0<Boolean>) () -> {
-      PVector<Number> v1 = TreePVector.<Number>empty().plus((Number) new BigInteger("1")).plus((Number) new BigInteger("2")).plus((Number) new BigInteger("3")).plus((Number) new BigInteger("4")).plus((Number) new BigInteger("5")).plus((Number) new BigInteger("6")).plus((Number) new BigInteger("7")).plus((Number) new BigInteger("8")).plus((Number) new BigInteger("9")).plus((Number) new BigInteger("10"));
+      PVector<Number> v1 = TreePVector.<Number>empty().plus(new BigInteger("1")).plus(new BigInteger("2")).plus(new BigInteger("3")).plus(new BigInteger("4")).plus(new BigInteger("5")).plus(new BigInteger("6")).plus(new BigInteger("7")).plus(new BigInteger("8")).plus(new BigInteger("9")).plus(new BigInteger("10"));
       return v1.stream().allMatch(new Predicate<Number>() {
         public boolean test(Number o) {
           return new Function<ParameterSetWrapper, Boolean>() {
             public Boolean apply(ParameterSetWrapper param) {
               Number a = (Number) param.parameters.get(0);
-              return AH.isLess(a, (Number) new BigInteger("11"));
+              return AH.isLess(a, new BigInteger("11"));
             }
           }.apply(new ParameterSetWrapper(o));
         }
       });
     }).invoke()), (Object) true, (Object) ((_FunctionTypes._return_P0_E0<Boolean>) () -> {
-      PVector<Number> v1 = TreePVector.<Number>empty().plus((Number) new BigInteger("1")).plus((Number) new BigInteger("2")).plus((Number) new BigInteger("3")).plus((Number) new BigInteger("4")).plus((Number) new BigInteger("5")).plus((Number) new BigInteger("6")).plus((Number) new BigInteger("7")).plus((Number) new BigInteger("8")).plus((Number) new BigInteger("9")).plus((Number) new BigInteger("10"));
+      PVector<Number> v1 = TreePVector.<Number>empty().plus(new BigInteger("1")).plus(new BigInteger("2")).plus(new BigInteger("3")).plus(new BigInteger("4")).plus(new BigInteger("5")).plus(new BigInteger("6")).plus(new BigInteger("7")).plus(new BigInteger("8")).plus(new BigInteger("9")).plus(new BigInteger("10"));
       return v1.stream().allMatch(new Predicate<Number>() {
         public boolean test(Number o) {
           return new Function<ParameterSetWrapper, Boolean>() {
             public Boolean apply(ParameterSetWrapper param) {
               Number a = (Number) param.parameters.get(0);
-              return AH.isLess(a, (Number) new BigInteger("11"));
+              return AH.isLess(a, new BigInteger("11"));
             }
           }.apply(new ParameterSetWrapper(o));
         }
@@ -6851,7 +6851,7 @@ public class Generated_collections_Test {
     @Test
   public void collectionListVal_item2_8273018919111564217() throws Throwable {
     Assert.assertEquals("Expected: " + true + ", but was: " + (((_FunctionTypes._return_P0_E0<Boolean>) () -> {
-      PVector<Number> v1 = TreePVector.<Number>empty().plus((Number) new BigInteger("1")).plus((Number) new BigInteger("2")).plus((Number) new BigInteger("3")).plus((Number) new BigInteger("4")).plus((Number) new BigInteger("5")).plus((Number) new BigInteger("6")).plus((Number) new BigInteger("7")).plus((Number) new BigInteger("8")).plus((Number) new BigInteger("9")).plus((Number) new BigInteger("10"));
+      PVector<Number> v1 = TreePVector.<Number>empty().plus(new BigInteger("1")).plus(new BigInteger("2")).plus(new BigInteger("3")).plus(new BigInteger("4")).plus(new BigInteger("5")).plus(new BigInteger("6")).plus(new BigInteger("7")).plus(new BigInteger("8")).plus(new BigInteger("9")).plus(new BigInteger("10"));
       return v1.stream().allMatch(new Predicate<Number>() {
         public boolean test(Number o) {
           return new Function<ParameterSetWrapper, Boolean>() {
@@ -6862,7 +6862,7 @@ public class Generated_collections_Test {
         }
       });
     }).invoke()), (Object) true, (Object) ((_FunctionTypes._return_P0_E0<Boolean>) () -> {
-      PVector<Number> v1 = TreePVector.<Number>empty().plus((Number) new BigInteger("1")).plus((Number) new BigInteger("2")).plus((Number) new BigInteger("3")).plus((Number) new BigInteger("4")).plus((Number) new BigInteger("5")).plus((Number) new BigInteger("6")).plus((Number) new BigInteger("7")).plus((Number) new BigInteger("8")).plus((Number) new BigInteger("9")).plus((Number) new BigInteger("10"));
+      PVector<Number> v1 = TreePVector.<Number>empty().plus(new BigInteger("1")).plus(new BigInteger("2")).plus(new BigInteger("3")).plus(new BigInteger("4")).plus(new BigInteger("5")).plus(new BigInteger("6")).plus(new BigInteger("7")).plus(new BigInteger("8")).plus(new BigInteger("9")).plus(new BigInteger("10"));
       return v1.stream().allMatch(new Predicate<Number>() {
         public boolean test(Number o) {
           return new Function<ParameterSetWrapper, Boolean>() {
@@ -6880,25 +6880,25 @@ public class Generated_collections_Test {
     @Test
   public void collectionListVal_item3_8273018919111564224() throws Throwable {
     Assert.assertEquals("Expected: " + true + ", but was: " + (((_FunctionTypes._return_P0_E0<Boolean>) () -> {
-      PVector<Number> v1 = TreePVector.<Number>empty().plus((Number) new BigInteger("1")).plus((Number) new BigInteger("2")).plus((Number) new BigInteger("3")).plus((Number) new BigInteger("4")).plus((Number) new BigInteger("5")).plus((Number) new BigInteger("6")).plus((Number) new BigInteger("7")).plus((Number) new BigInteger("8")).plus((Number) new BigInteger("9")).plus((Number) new BigInteger("10"));
+      PVector<Number> v1 = TreePVector.<Number>empty().plus(new BigInteger("1")).plus(new BigInteger("2")).plus(new BigInteger("3")).plus(new BigInteger("4")).plus(new BigInteger("5")).plus(new BigInteger("6")).plus(new BigInteger("7")).plus(new BigInteger("8")).plus(new BigInteger("9")).plus(new BigInteger("10"));
       return v1.stream().anyMatch(new Predicate<Number>() {
         public boolean test(Number o) {
           return new Function<ParameterSetWrapper, Boolean>() {
             public Boolean apply(ParameterSetWrapper param) {
               Number it = (Number) param.parameters.get(0);
-              return AH.isLess(it, (Number) new BigInteger("3"));
+              return AH.isLess(it, new BigInteger("3"));
             }
           }.apply(new ParameterSetWrapper(o));
         }
       });
     }).invoke()), (Object) true, (Object) ((_FunctionTypes._return_P0_E0<Boolean>) () -> {
-      PVector<Number> v1 = TreePVector.<Number>empty().plus((Number) new BigInteger("1")).plus((Number) new BigInteger("2")).plus((Number) new BigInteger("3")).plus((Number) new BigInteger("4")).plus((Number) new BigInteger("5")).plus((Number) new BigInteger("6")).plus((Number) new BigInteger("7")).plus((Number) new BigInteger("8")).plus((Number) new BigInteger("9")).plus((Number) new BigInteger("10"));
+      PVector<Number> v1 = TreePVector.<Number>empty().plus(new BigInteger("1")).plus(new BigInteger("2")).plus(new BigInteger("3")).plus(new BigInteger("4")).plus(new BigInteger("5")).plus(new BigInteger("6")).plus(new BigInteger("7")).plus(new BigInteger("8")).plus(new BigInteger("9")).plus(new BigInteger("10"));
       return v1.stream().anyMatch(new Predicate<Number>() {
         public boolean test(Number o) {
           return new Function<ParameterSetWrapper, Boolean>() {
             public Boolean apply(ParameterSetWrapper param) {
               Number it = (Number) param.parameters.get(0);
-              return AH.isLess(it, (Number) new BigInteger("3"));
+              return AH.isLess(it, new BigInteger("3"));
             }
           }.apply(new ParameterSetWrapper(o));
         }
@@ -6911,25 +6911,25 @@ public class Generated_collections_Test {
     @Test
   public void collectionListVal_item4_8273018919111564234() throws Throwable {
     Assert.assertEquals("Expected: " + false + ", but was: " + (((_FunctionTypes._return_P0_E0<Boolean>) () -> {
-      PVector<Number> v1 = TreePVector.<Number>empty().plus((Number) new BigInteger("1")).plus((Number) new BigInteger("2")).plus((Number) new BigInteger("3")).plus((Number) new BigInteger("4")).plus((Number) new BigInteger("5")).plus((Number) new BigInteger("6")).plus((Number) new BigInteger("7")).plus((Number) new BigInteger("8")).plus((Number) new BigInteger("9")).plus((Number) new BigInteger("10"));
+      PVector<Number> v1 = TreePVector.<Number>empty().plus(new BigInteger("1")).plus(new BigInteger("2")).plus(new BigInteger("3")).plus(new BigInteger("4")).plus(new BigInteger("5")).plus(new BigInteger("6")).plus(new BigInteger("7")).plus(new BigInteger("8")).plus(new BigInteger("9")).plus(new BigInteger("10"));
       return v1.stream().anyMatch(new Predicate<Number>() {
         public boolean test(Number o) {
           return new Function<ParameterSetWrapper, Boolean>() {
             public Boolean apply(ParameterSetWrapper param) {
               Number a = (Number) param.parameters.get(0);
-              return AH.isGreater(a, (Number) new BigInteger("11"));
+              return AH.isGreater(a, new BigInteger("11"));
             }
           }.apply(new ParameterSetWrapper(o));
         }
       });
     }).invoke()), (Object) false, (Object) ((_FunctionTypes._return_P0_E0<Boolean>) () -> {
-      PVector<Number> v1 = TreePVector.<Number>empty().plus((Number) new BigInteger("1")).plus((Number) new BigInteger("2")).plus((Number) new BigInteger("3")).plus((Number) new BigInteger("4")).plus((Number) new BigInteger("5")).plus((Number) new BigInteger("6")).plus((Number) new BigInteger("7")).plus((Number) new BigInteger("8")).plus((Number) new BigInteger("9")).plus((Number) new BigInteger("10"));
+      PVector<Number> v1 = TreePVector.<Number>empty().plus(new BigInteger("1")).plus(new BigInteger("2")).plus(new BigInteger("3")).plus(new BigInteger("4")).plus(new BigInteger("5")).plus(new BigInteger("6")).plus(new BigInteger("7")).plus(new BigInteger("8")).plus(new BigInteger("9")).plus(new BigInteger("10"));
       return v1.stream().anyMatch(new Predicate<Number>() {
         public boolean test(Number o) {
           return new Function<ParameterSetWrapper, Boolean>() {
             public Boolean apply(ParameterSetWrapper param) {
               Number a = (Number) param.parameters.get(0);
-              return AH.isGreater(a, (Number) new BigInteger("11"));
+              return AH.isGreater(a, new BigInteger("11"));
             }
           }.apply(new ParameterSetWrapper(o));
         }
@@ -6942,7 +6942,7 @@ public class Generated_collections_Test {
     @Test
   public void collectionListVal_item5_8273018919111564247() throws Throwable {
     Assert.assertEquals("Expected: " + true + ", but was: " + (((_FunctionTypes._return_P0_E0<Boolean>) () -> {
-      PVector<Number> v1 = TreePVector.<Number>empty().plus((Number) new BigInteger("1")).plus((Number) new BigInteger("2")).plus((Number) new BigInteger("3")).plus((Number) new BigInteger("4")).plus((Number) new BigInteger("5")).plus((Number) new BigInteger("6")).plus((Number) new BigInteger("7")).plus((Number) new BigInteger("8")).plus((Number) new BigInteger("9")).plus((Number) new BigInteger("10"));
+      PVector<Number> v1 = TreePVector.<Number>empty().plus(new BigInteger("1")).plus(new BigInteger("2")).plus(new BigInteger("3")).plus(new BigInteger("4")).plus(new BigInteger("5")).plus(new BigInteger("6")).plus(new BigInteger("7")).plus(new BigInteger("8")).plus(new BigInteger("9")).plus(new BigInteger("10"));
       return v1.stream().anyMatch(new Predicate<Number>() {
         public boolean test(Number o) {
           return new Function<ParameterSetWrapper, Boolean>() {
@@ -6953,7 +6953,7 @@ public class Generated_collections_Test {
         }
       });
     }).invoke()), (Object) true, (Object) ((_FunctionTypes._return_P0_E0<Boolean>) () -> {
-      PVector<Number> v1 = TreePVector.<Number>empty().plus((Number) new BigInteger("1")).plus((Number) new BigInteger("2")).plus((Number) new BigInteger("3")).plus((Number) new BigInteger("4")).plus((Number) new BigInteger("5")).plus((Number) new BigInteger("6")).plus((Number) new BigInteger("7")).plus((Number) new BigInteger("8")).plus((Number) new BigInteger("9")).plus((Number) new BigInteger("10"));
+      PVector<Number> v1 = TreePVector.<Number>empty().plus(new BigInteger("1")).plus(new BigInteger("2")).plus(new BigInteger("3")).plus(new BigInteger("4")).plus(new BigInteger("5")).plus(new BigInteger("6")).plus(new BigInteger("7")).plus(new BigInteger("8")).plus(new BigInteger("9")).plus(new BigInteger("10"));
       return v1.stream().anyMatch(new Predicate<Number>() {
         public boolean test(Number o) {
           return new Function<ParameterSetWrapper, Boolean>() {
@@ -6970,12 +6970,12 @@ public class Generated_collections_Test {
    */
     @Test
   public void collectionListVal_item6_8273018919111564254() throws Throwable {
-    Assert.assertTrue("Expected: " + (Number) new BigInteger("6") + ", but was: " + (((_FunctionTypes._return_P0_E0<Number>) () -> {
-      PVector<Number> v1 = TreePVector.<Number>empty().plus((Number) new BigInteger("1")).plus((Number) new BigInteger("2")).plus((Number) new BigInteger("3")).plus((Number) new BigInteger("4")).plus((Number) new BigInteger("5")).plus((Number) new BigInteger("6")).plus((Number) new BigInteger("7")).plus((Number) new BigInteger("8")).plus((Number) new BigInteger("9")).plus((Number) new BigInteger("10"));
-      return (Number) v1.get(((Number) new BigInteger("5")).intValue());
-    }).invoke()), EqualsTestOp.matches((Number) new BigInteger("6"), ((_FunctionTypes._return_P0_E0<Number>) () -> {
-      PVector<Number> v1 = TreePVector.<Number>empty().plus((Number) new BigInteger("1")).plus((Number) new BigInteger("2")).plus((Number) new BigInteger("3")).plus((Number) new BigInteger("4")).plus((Number) new BigInteger("5")).plus((Number) new BigInteger("6")).plus((Number) new BigInteger("7")).plus((Number) new BigInteger("8")).plus((Number) new BigInteger("9")).plus((Number) new BigInteger("10"));
-      return (Number) v1.get(((Number) new BigInteger("5")).intValue());
+    Assert.assertTrue("Expected: " + new BigInteger("6") + ", but was: " + (((_FunctionTypes._return_P0_E0<Number>) () -> {
+      PVector<Number> v1 = TreePVector.<Number>empty().plus(new BigInteger("1")).plus(new BigInteger("2")).plus(new BigInteger("3")).plus(new BigInteger("4")).plus(new BigInteger("5")).plus(new BigInteger("6")).plus(new BigInteger("7")).plus(new BigInteger("8")).plus(new BigInteger("9")).plus(new BigInteger("10"));
+      return v1.get(new BigInteger("5").intValue());
+    }).invoke()), EqualsTestOp.matches(new BigInteger("6"), ((_FunctionTypes._return_P0_E0<Number>) () -> {
+      PVector<Number> v1 = TreePVector.<Number>empty().plus(new BigInteger("1")).plus(new BigInteger("2")).plus(new BigInteger("3")).plus(new BigInteger("4")).plus(new BigInteger("5")).plus(new BigInteger("6")).plus(new BigInteger("7")).plus(new BigInteger("8")).plus(new BigInteger("9")).plus(new BigInteger("10"));
+      return v1.get(new BigInteger("5").intValue());
     }).invoke()));
   }
 /* 
@@ -6984,11 +6984,11 @@ public class Generated_collections_Test {
     @Test
   public void collectionListVal_item7_8273018919111564261() throws Throwable {
     Assert.assertEquals("Expected: " + true + ", but was: " + (((_FunctionTypes._return_P0_E0<Boolean>) () -> {
-      PVector<Number> v1 = TreePVector.<Number>empty().plus((Number) new BigInteger("1")).plus((Number) new BigInteger("2")).plus((Number) new BigInteger("3")).plus((Number) new BigInteger("4")).plus((Number) new BigInteger("5")).plus((Number) new BigInteger("6")).plus((Number) new BigInteger("7")).plus((Number) new BigInteger("8")).plus((Number) new BigInteger("9")).plus((Number) new BigInteger("10"));
-      return v1.contains((Number) new BigInteger("6"));
+      PVector<Number> v1 = TreePVector.<Number>empty().plus(new BigInteger("1")).plus(new BigInteger("2")).plus(new BigInteger("3")).plus(new BigInteger("4")).plus(new BigInteger("5")).plus(new BigInteger("6")).plus(new BigInteger("7")).plus(new BigInteger("8")).plus(new BigInteger("9")).plus(new BigInteger("10"));
+      return v1.contains(new BigInteger("6"));
     }).invoke()), (Object) true, (Object) ((_FunctionTypes._return_P0_E0<Boolean>) () -> {
-      PVector<Number> v1 = TreePVector.<Number>empty().plus((Number) new BigInteger("1")).plus((Number) new BigInteger("2")).plus((Number) new BigInteger("3")).plus((Number) new BigInteger("4")).plus((Number) new BigInteger("5")).plus((Number) new BigInteger("6")).plus((Number) new BigInteger("7")).plus((Number) new BigInteger("8")).plus((Number) new BigInteger("9")).plus((Number) new BigInteger("10"));
-      return v1.contains((Number) new BigInteger("6"));
+      PVector<Number> v1 = TreePVector.<Number>empty().plus(new BigInteger("1")).plus(new BigInteger("2")).plus(new BigInteger("3")).plus(new BigInteger("4")).plus(new BigInteger("5")).plus(new BigInteger("6")).plus(new BigInteger("7")).plus(new BigInteger("8")).plus(new BigInteger("9")).plus(new BigInteger("10"));
+      return v1.contains(new BigInteger("6"));
     }).invoke());
   }
 /* 
@@ -6996,11 +6996,11 @@ public class Generated_collections_Test {
    */
     @Test
   public void collectionListVal_item8_8273018919111564268() throws Throwable {
-    Assert.assertEquals("Expected: " + TreePVector.<Number>empty().plus((Number) new BigInteger("1")).plus((Number) new BigInteger("2")).plus((Number) new BigInteger("3")).plus((Number) new BigInteger("4")).plus((Number) new BigInteger("5")).plus((Number) new BigInteger("6")).plus((Number) new BigInteger("7")).plus((Number) new BigInteger("8")).plus((Number) new BigInteger("9")).plus((Number) new BigInteger("10")) + ", but was: " + (((_FunctionTypes._return_P0_E0<TreePVector<Number>>) () -> {
-      PVector<Number> v1 = TreePVector.<Number>empty().plus((Number) new BigInteger("1")).plus((Number) new BigInteger("2")).plus((Number) new BigInteger("3")).plus((Number) new BigInteger("4")).plus((Number) new BigInteger("5")).plus((Number) new BigInteger("6")).plus((Number) new BigInteger("7")).plus((Number) new BigInteger("8")).plus((Number) new BigInteger("9")).plus((Number) new BigInteger("10"));
+    Assert.assertEquals("Expected: " + TreePVector.<Number>empty().plus(new BigInteger("1")).plus(new BigInteger("2")).plus(new BigInteger("3")).plus(new BigInteger("4")).plus(new BigInteger("5")).plus(new BigInteger("6")).plus(new BigInteger("7")).plus(new BigInteger("8")).plus(new BigInteger("9")).plus(new BigInteger("10")) + ", but was: " + (((_FunctionTypes._return_P0_E0<TreePVector<Number>>) () -> {
+      PVector<Number> v1 = TreePVector.<Number>empty().plus(new BigInteger("1")).plus(new BigInteger("2")).plus(new BigInteger("3")).plus(new BigInteger("4")).plus(new BigInteger("5")).plus(new BigInteger("6")).plus(new BigInteger("7")).plus(new BigInteger("8")).plus(new BigInteger("9")).plus(new BigInteger("10"));
       return TreePVector.<Number>from(v1.stream().distinct().collect(Collectors.<Number>toList()));
-    }).invoke()), (Object) TreePVector.<Number>empty().plus((Number) new BigInteger("1")).plus((Number) new BigInteger("2")).plus((Number) new BigInteger("3")).plus((Number) new BigInteger("4")).plus((Number) new BigInteger("5")).plus((Number) new BigInteger("6")).plus((Number) new BigInteger("7")).plus((Number) new BigInteger("8")).plus((Number) new BigInteger("9")).plus((Number) new BigInteger("10")), (Object) ((_FunctionTypes._return_P0_E0<TreePVector<Number>>) () -> {
-      PVector<Number> v1 = TreePVector.<Number>empty().plus((Number) new BigInteger("1")).plus((Number) new BigInteger("2")).plus((Number) new BigInteger("3")).plus((Number) new BigInteger("4")).plus((Number) new BigInteger("5")).plus((Number) new BigInteger("6")).plus((Number) new BigInteger("7")).plus((Number) new BigInteger("8")).plus((Number) new BigInteger("9")).plus((Number) new BigInteger("10"));
+    }).invoke()), TreePVector.<Number>empty().plus(new BigInteger("1")).plus(new BigInteger("2")).plus(new BigInteger("3")).plus(new BigInteger("4")).plus(new BigInteger("5")).plus(new BigInteger("6")).plus(new BigInteger("7")).plus(new BigInteger("8")).plus(new BigInteger("9")).plus(new BigInteger("10")), (Object) ((_FunctionTypes._return_P0_E0<TreePVector<Number>>) () -> {
+      PVector<Number> v1 = TreePVector.<Number>empty().plus(new BigInteger("1")).plus(new BigInteger("2")).plus(new BigInteger("3")).plus(new BigInteger("4")).plus(new BigInteger("5")).plus(new BigInteger("6")).plus(new BigInteger("7")).plus(new BigInteger("8")).plus(new BigInteger("9")).plus(new BigInteger("10"));
       return TreePVector.<Number>from(v1.stream().distinct().collect(Collectors.<Number>toList()));
     }).invoke());
   }
@@ -7009,26 +7009,26 @@ public class Generated_collections_Test {
    */
     @Test
   public void collectionListVal_item9_8273018919111564284() throws Throwable {
-    Assert.assertTrue("Expected: " + (Number) new BigInteger("3") + ", but was: " + (((_FunctionTypes._return_P0_E0<Number>) () -> {
-      PVector<Number> v1 = TreePVector.<Number>empty().plus((Number) new BigInteger("1")).plus((Number) new BigInteger("2")).plus((Number) new BigInteger("3")).plus((Number) new BigInteger("4")).plus((Number) new BigInteger("5")).plus((Number) new BigInteger("6")).plus((Number) new BigInteger("7")).plus((Number) new BigInteger("8")).plus((Number) new BigInteger("9")).plus((Number) new BigInteger("10"));
+    Assert.assertTrue("Expected: " + new BigInteger("3") + ", but was: " + (((_FunctionTypes._return_P0_E0<Number>) () -> {
+      PVector<Number> v1 = TreePVector.<Number>empty().plus(new BigInteger("1")).plus(new BigInteger("2")).plus(new BigInteger("3")).plus(new BigInteger("4")).plus(new BigInteger("5")).plus(new BigInteger("6")).plus(new BigInteger("7")).plus(new BigInteger("8")).plus(new BigInteger("9")).plus(new BigInteger("10"));
       return v1.stream().filter(new Predicate<Number>() {
         public boolean test(Number o) {
           return new Function<ParameterSetWrapper, Boolean>() {
             public Boolean apply(ParameterSetWrapper param) {
               Number it = (Number) param.parameters.get(0);
-              return AH.isEqual(it, (Number) new BigInteger("3"));
+              return AH.isEqual(it, new BigInteger("3"));
             }
           }.apply(new ParameterSetWrapper(o));
         }
       }).findFirst().orElse(null);
-    }).invoke()), EqualsTestOp.matches((Number) new BigInteger("3"), ((_FunctionTypes._return_P0_E0<Number>) () -> {
-      PVector<Number> v1 = TreePVector.<Number>empty().plus((Number) new BigInteger("1")).plus((Number) new BigInteger("2")).plus((Number) new BigInteger("3")).plus((Number) new BigInteger("4")).plus((Number) new BigInteger("5")).plus((Number) new BigInteger("6")).plus((Number) new BigInteger("7")).plus((Number) new BigInteger("8")).plus((Number) new BigInteger("9")).plus((Number) new BigInteger("10"));
+    }).invoke()), EqualsTestOp.matches(new BigInteger("3"), ((_FunctionTypes._return_P0_E0<Number>) () -> {
+      PVector<Number> v1 = TreePVector.<Number>empty().plus(new BigInteger("1")).plus(new BigInteger("2")).plus(new BigInteger("3")).plus(new BigInteger("4")).plus(new BigInteger("5")).plus(new BigInteger("6")).plus(new BigInteger("7")).plus(new BigInteger("8")).plus(new BigInteger("9")).plus(new BigInteger("10"));
       return v1.stream().filter(new Predicate<Number>() {
         public boolean test(Number o) {
           return new Function<ParameterSetWrapper, Boolean>() {
             public Boolean apply(ParameterSetWrapper param) {
               Number it = (Number) param.parameters.get(0);
-              return AH.isEqual(it, (Number) new BigInteger("3"));
+              return AH.isEqual(it, new BigInteger("3"));
             }
           }.apply(new ParameterSetWrapper(o));
         }
@@ -7040,26 +7040,26 @@ public class Generated_collections_Test {
    */
     @Test
   public void collectionListVal_item10_8273018919111564294() throws Throwable {
-    Assert.assertTrue("Expected: " + (Number) new BigInteger("1") + ", but was: " + (((_FunctionTypes._return_P0_E0<Number>) () -> {
-      PVector<Number> v1 = TreePVector.<Number>empty().plus((Number) new BigInteger("1")).plus((Number) new BigInteger("2")).plus((Number) new BigInteger("3")).plus((Number) new BigInteger("4")).plus((Number) new BigInteger("5")).plus((Number) new BigInteger("6")).plus((Number) new BigInteger("7")).plus((Number) new BigInteger("8")).plus((Number) new BigInteger("9")).plus((Number) new BigInteger("10"));
+    Assert.assertTrue("Expected: " + new BigInteger("1") + ", but was: " + (((_FunctionTypes._return_P0_E0<Number>) () -> {
+      PVector<Number> v1 = TreePVector.<Number>empty().plus(new BigInteger("1")).plus(new BigInteger("2")).plus(new BigInteger("3")).plus(new BigInteger("4")).plus(new BigInteger("5")).plus(new BigInteger("6")).plus(new BigInteger("7")).plus(new BigInteger("8")).plus(new BigInteger("9")).plus(new BigInteger("10"));
       return v1.stream().filter(new Predicate<Number>() {
         public boolean test(Number o) {
           return new Function<ParameterSetWrapper, Boolean>() {
             public Boolean apply(ParameterSetWrapper param) {
               Number a = (Number) param.parameters.get(0);
-              return AH.isLess(a, (Number) new BigInteger("11"));
+              return AH.isLess(a, new BigInteger("11"));
             }
           }.apply(new ParameterSetWrapper(o));
         }
       }).findFirst().orElse(null);
-    }).invoke()), EqualsTestOp.matches((Number) new BigInteger("1"), ((_FunctionTypes._return_P0_E0<Number>) () -> {
-      PVector<Number> v1 = TreePVector.<Number>empty().plus((Number) new BigInteger("1")).plus((Number) new BigInteger("2")).plus((Number) new BigInteger("3")).plus((Number) new BigInteger("4")).plus((Number) new BigInteger("5")).plus((Number) new BigInteger("6")).plus((Number) new BigInteger("7")).plus((Number) new BigInteger("8")).plus((Number) new BigInteger("9")).plus((Number) new BigInteger("10"));
+    }).invoke()), EqualsTestOp.matches(new BigInteger("1"), ((_FunctionTypes._return_P0_E0<Number>) () -> {
+      PVector<Number> v1 = TreePVector.<Number>empty().plus(new BigInteger("1")).plus(new BigInteger("2")).plus(new BigInteger("3")).plus(new BigInteger("4")).plus(new BigInteger("5")).plus(new BigInteger("6")).plus(new BigInteger("7")).plus(new BigInteger("8")).plus(new BigInteger("9")).plus(new BigInteger("10"));
       return v1.stream().filter(new Predicate<Number>() {
         public boolean test(Number o) {
           return new Function<ParameterSetWrapper, Boolean>() {
             public Boolean apply(ParameterSetWrapper param) {
               Number a = (Number) param.parameters.get(0);
-              return AH.isLess(a, (Number) new BigInteger("11"));
+              return AH.isLess(a, new BigInteger("11"));
             }
           }.apply(new ParameterSetWrapper(o));
         }
@@ -7071,8 +7071,8 @@ public class Generated_collections_Test {
    */
     @Test
   public void collectionListVal_item11_8273018919111564307() throws Throwable {
-    Assert.assertTrue("Expected: " + (Number) new BigInteger("1") + ", but was: " + (((_FunctionTypes._return_P0_E0<Number>) () -> {
-      PVector<Number> v1 = TreePVector.<Number>empty().plus((Number) new BigInteger("1")).plus((Number) new BigInteger("2")).plus((Number) new BigInteger("3")).plus((Number) new BigInteger("4")).plus((Number) new BigInteger("5")).plus((Number) new BigInteger("6")).plus((Number) new BigInteger("7")).plus((Number) new BigInteger("8")).plus((Number) new BigInteger("9")).plus((Number) new BigInteger("10"));
+    Assert.assertTrue("Expected: " + new BigInteger("1") + ", but was: " + (((_FunctionTypes._return_P0_E0<Number>) () -> {
+      PVector<Number> v1 = TreePVector.<Number>empty().plus(new BigInteger("1")).plus(new BigInteger("2")).plus(new BigInteger("3")).plus(new BigInteger("4")).plus(new BigInteger("5")).plus(new BigInteger("6")).plus(new BigInteger("7")).plus(new BigInteger("8")).plus(new BigInteger("9")).plus(new BigInteger("10"));
       return v1.stream().filter(new Predicate<Number>() {
         public boolean test(Number o) {
           return new Function<ParameterSetWrapper, Boolean>() {
@@ -7082,8 +7082,8 @@ public class Generated_collections_Test {
           }.apply(new ParameterSetWrapper(o));
         }
       }).findFirst().orElse(null);
-    }).invoke()), EqualsTestOp.matches((Number) new BigInteger("1"), ((_FunctionTypes._return_P0_E0<Number>) () -> {
-      PVector<Number> v1 = TreePVector.<Number>empty().plus((Number) new BigInteger("1")).plus((Number) new BigInteger("2")).plus((Number) new BigInteger("3")).plus((Number) new BigInteger("4")).plus((Number) new BigInteger("5")).plus((Number) new BigInteger("6")).plus((Number) new BigInteger("7")).plus((Number) new BigInteger("8")).plus((Number) new BigInteger("9")).plus((Number) new BigInteger("10"));
+    }).invoke()), EqualsTestOp.matches(new BigInteger("1"), ((_FunctionTypes._return_P0_E0<Number>) () -> {
+      PVector<Number> v1 = TreePVector.<Number>empty().plus(new BigInteger("1")).plus(new BigInteger("2")).plus(new BigInteger("3")).plus(new BigInteger("4")).plus(new BigInteger("5")).plus(new BigInteger("6")).plus(new BigInteger("7")).plus(new BigInteger("8")).plus(new BigInteger("9")).plus(new BigInteger("10"));
       return v1.stream().filter(new Predicate<Number>() {
         public boolean test(Number o) {
           return new Function<ParameterSetWrapper, Boolean>() {
@@ -7100,14 +7100,14 @@ public class Generated_collections_Test {
    */
     @Test
   public void collectionListVal_item12_8273018919111564314() throws Throwable {
-    Assert.assertTrue("Expected: " + (Number) new BigInteger("1") + ", but was: " + (((_FunctionTypes._return_P0_E0<Number>) () -> {
-      final PVector<Number> v1 = TreePVector.<Number>empty().plus((Number) new BigInteger("1")).plus((Number) new BigInteger("2")).plus((Number) new BigInteger("3")).plus((Number) new BigInteger("4")).plus((Number) new BigInteger("5")).plus((Number) new BigInteger("6")).plus((Number) new BigInteger("7")).plus((Number) new BigInteger("8")).plus((Number) new BigInteger("9")).plus((Number) new BigInteger("10"));
+    Assert.assertTrue("Expected: " + new BigInteger("1") + ", but was: " + (((_FunctionTypes._return_P0_E0<Number>) () -> {
+      final PVector<Number> v1 = TreePVector.<Number>empty().plus(new BigInteger("1")).plus(new BigInteger("2")).plus(new BigInteger("3")).plus(new BigInteger("4")).plus(new BigInteger("5")).plus(new BigInteger("6")).plus(new BigInteger("7")).plus(new BigInteger("8")).plus(new BigInteger("9")).plus(new BigInteger("10"));
       return ((_FunctionTypes._return_P0_E0<Number>) () -> {
         PVector<Number> listResult = v1;
         return (listResult.isEmpty() ? null : listResult.get(0));
       }).invoke();
-    }).invoke()), EqualsTestOp.matches((Number) new BigInteger("1"), ((_FunctionTypes._return_P0_E0<Number>) () -> {
-      final PVector<Number> v1 = TreePVector.<Number>empty().plus((Number) new BigInteger("1")).plus((Number) new BigInteger("2")).plus((Number) new BigInteger("3")).plus((Number) new BigInteger("4")).plus((Number) new BigInteger("5")).plus((Number) new BigInteger("6")).plus((Number) new BigInteger("7")).plus((Number) new BigInteger("8")).plus((Number) new BigInteger("9")).plus((Number) new BigInteger("10"));
+    }).invoke()), EqualsTestOp.matches(new BigInteger("1"), ((_FunctionTypes._return_P0_E0<Number>) () -> {
+      final PVector<Number> v1 = TreePVector.<Number>empty().plus(new BigInteger("1")).plus(new BigInteger("2")).plus(new BigInteger("3")).plus(new BigInteger("4")).plus(new BigInteger("5")).plus(new BigInteger("6")).plus(new BigInteger("7")).plus(new BigInteger("8")).plus(new BigInteger("9")).plus(new BigInteger("10"));
       return ((_FunctionTypes._return_P0_E0<Number>) () -> {
         PVector<Number> listResult = v1;
         return (listResult.isEmpty() ? null : listResult.get(0));
@@ -7119,8 +7119,8 @@ public class Generated_collections_Test {
    */
     @Test
   public void collectionListVal_item13_8273018919111564320() throws Throwable {
-    Assert.assertEquals("Expected: " + TreePVector.<Number>empty().plus((Number) new BigInteger("1")).plus((Number) new BigInteger("2")).plus((Number) new BigInteger("3")).plus((Number) new BigInteger("4")) + ", but was: " + (((_FunctionTypes._return_P0_E0<PVector<Number>>) () -> {
-      final PVector<PVector<Number>> v3 = TreePVector.<PVector<Number>>empty().plus(TreePVector.<Number>empty().plus((Number) new BigInteger("1"))).plus(TreePVector.<Number>empty().plus((Number) new BigInteger("2"))).plus(TreePVector.<Number>empty().plus((Number) new BigInteger("3"))).plus(TreePVector.<Number>empty().plus((Number) new BigInteger("4")));
+    Assert.assertEquals("Expected: " + TreePVector.<Number>empty().plus(new BigInteger("1")).plus(new BigInteger("2")).plus(new BigInteger("3")).plus(new BigInteger("4")) + ", but was: " + (((_FunctionTypes._return_P0_E0<PVector<Number>>) () -> {
+      final PVector<PVector<Number>> v3 = TreePVector.<PVector<Number>>empty().plus(TreePVector.<Number>empty().plus(new BigInteger("1"))).plus(TreePVector.<Number>empty().plus(new BigInteger("2"))).plus(TreePVector.<Number>empty().plus(new BigInteger("3"))).plus(TreePVector.<Number>empty().plus(new BigInteger("4")));
       return ((_FunctionTypes._return_P0_E0<PVector<Number>>) () -> {
         List<Number> r = new ArrayList<Number>();
         for (PVector<Number> coll : ListSequence.fromList(v3)) {
@@ -7129,8 +7129,8 @@ public class Generated_collections_Test {
         PVector<Number> result = TreePVector.<Number>from(r);
         return result;
       }).invoke();
-    }).invoke()), (Object) TreePVector.<Number>empty().plus((Number) new BigInteger("1")).plus((Number) new BigInteger("2")).plus((Number) new BigInteger("3")).plus((Number) new BigInteger("4")), (Object) ((_FunctionTypes._return_P0_E0<PVector<Number>>) () -> {
-      final PVector<PVector<Number>> v3 = TreePVector.<PVector<Number>>empty().plus(TreePVector.<Number>empty().plus((Number) new BigInteger("1"))).plus(TreePVector.<Number>empty().plus((Number) new BigInteger("2"))).plus(TreePVector.<Number>empty().plus((Number) new BigInteger("3"))).plus(TreePVector.<Number>empty().plus((Number) new BigInteger("4")));
+    }).invoke()), TreePVector.<Number>empty().plus(new BigInteger("1")).plus(new BigInteger("2")).plus(new BigInteger("3")).plus(new BigInteger("4")), (Object) ((_FunctionTypes._return_P0_E0<PVector<Number>>) () -> {
+      final PVector<PVector<Number>> v3 = TreePVector.<PVector<Number>>empty().plus(TreePVector.<Number>empty().plus(new BigInteger("1"))).plus(TreePVector.<Number>empty().plus(new BigInteger("2"))).plus(TreePVector.<Number>empty().plus(new BigInteger("3"))).plus(TreePVector.<Number>empty().plus(new BigInteger("4")));
       return ((_FunctionTypes._return_P0_E0<PVector<Number>>) () -> {
         List<Number> r = new ArrayList<Number>();
         for (PVector<Number> coll : ListSequence.fromList(v3)) {
@@ -7146,19 +7146,19 @@ public class Generated_collections_Test {
    */
     @Test
   public void collectionListVal_item14_8273018919111564330() throws Throwable {
-    Assert.assertTrue("Expected: " + (Number) new BigInteger("55") + ", but was: " + (((_FunctionTypes._return_P0_E0<Number>) () -> {
-      final PVector<Number> v1 = TreePVector.<Number>empty().plus((Number) new BigInteger("1")).plus((Number) new BigInteger("2")).plus((Number) new BigInteger("3")).plus((Number) new BigInteger("4")).plus((Number) new BigInteger("5")).plus((Number) new BigInteger("6")).plus((Number) new BigInteger("7")).plus((Number) new BigInteger("8")).plus((Number) new BigInteger("9")).plus((Number) new BigInteger("10"));
+    Assert.assertTrue("Expected: " + new BigInteger("55") + ", but was: " + (((_FunctionTypes._return_P0_E0<Number>) () -> {
+      final PVector<Number> v1 = TreePVector.<Number>empty().plus(new BigInteger("1")).plus(new BigInteger("2")).plus(new BigInteger("3")).plus(new BigInteger("4")).plus(new BigInteger("5")).plus(new BigInteger("6")).plus(new BigInteger("7")).plus(new BigInteger("8")).plus(new BigInteger("9")).plus(new BigInteger("10"));
       return ((_FunctionTypes._return_P0_E0<Number>) () -> {
-        Number seed = (Number) new BigInteger("0");
+        Number seed = new BigInteger("0");
         for (Number current : ListSequence.fromList(v1)) {
           seed = AH.add(seed, current);
         }
         return seed;
       }).invoke();
-    }).invoke()), EqualsTestOp.matches((Number) new BigInteger("55"), ((_FunctionTypes._return_P0_E0<Number>) () -> {
-      final PVector<Number> v1 = TreePVector.<Number>empty().plus((Number) new BigInteger("1")).plus((Number) new BigInteger("2")).plus((Number) new BigInteger("3")).plus((Number) new BigInteger("4")).plus((Number) new BigInteger("5")).plus((Number) new BigInteger("6")).plus((Number) new BigInteger("7")).plus((Number) new BigInteger("8")).plus((Number) new BigInteger("9")).plus((Number) new BigInteger("10"));
+    }).invoke()), EqualsTestOp.matches(new BigInteger("55"), ((_FunctionTypes._return_P0_E0<Number>) () -> {
+      final PVector<Number> v1 = TreePVector.<Number>empty().plus(new BigInteger("1")).plus(new BigInteger("2")).plus(new BigInteger("3")).plus(new BigInteger("4")).plus(new BigInteger("5")).plus(new BigInteger("6")).plus(new BigInteger("7")).plus(new BigInteger("8")).plus(new BigInteger("9")).plus(new BigInteger("10"));
       return ((_FunctionTypes._return_P0_E0<Number>) () -> {
-        Number seed = (Number) new BigInteger("0");
+        Number seed = new BigInteger("0");
         for (Number current : ListSequence.fromList(v1)) {
           seed = AH.add(seed, current);
         }
@@ -7171,12 +7171,12 @@ public class Generated_collections_Test {
    */
     @Test
   public void collectionListVal_item15_8273018919111564346() throws Throwable {
-    Assert.assertTrue("Expected: " + (Number) new BigInteger("2") + ", but was: " + (((_FunctionTypes._return_P0_E0<BigInteger>) () -> {
-      final PVector<item> v2 = TreePVector.<item>empty().plus(new item((Number) new BigInteger("1"), "1")).plus(new item((Number) new BigInteger("1"), "1a")).plus(new item((Number) new BigInteger("2"), "2"));
+    Assert.assertTrue("Expected: " + new BigInteger("2") + ", but was: " + (((_FunctionTypes._return_P0_E0<BigInteger>) () -> {
+      final PVector<item> v2 = TreePVector.<item>empty().plus(new item(new BigInteger("1"), "1")).plus(new item(new BigInteger("1"), "1a")).plus(new item(new BigInteger("2"), "2"));
       return BigInteger.valueOf(((_FunctionTypes._return_P0_E0<PVector<GroupValue>>) () -> {
         Map<Number, List<item>> grouped = v2.stream().collect(Collectors.groupingBy(new Function<item, Number>() {
           public Number apply(item param) {
-            return (Number) new Function<ParameterSetWrapper, Number>() {
+            return new Function<ParameterSetWrapper, Number>() {
               public Number apply(ParameterSetWrapper param) {
                 item it = (item) param.parameters.get(0);
                 return it.getn();
@@ -7192,12 +7192,12 @@ public class Generated_collections_Test {
         }
         return result;
       }).invoke().size());
-    }).invoke()), EqualsTestOp.matches((Number) new BigInteger("2"), ((_FunctionTypes._return_P0_E0<BigInteger>) () -> {
-      final PVector<item> v2 = TreePVector.<item>empty().plus(new item((Number) new BigInteger("1"), "1")).plus(new item((Number) new BigInteger("1"), "1a")).plus(new item((Number) new BigInteger("2"), "2"));
+    }).invoke()), EqualsTestOp.matches(new BigInteger("2"), ((_FunctionTypes._return_P0_E0<BigInteger>) () -> {
+      final PVector<item> v2 = TreePVector.<item>empty().plus(new item(new BigInteger("1"), "1")).plus(new item(new BigInteger("1"), "1a")).plus(new item(new BigInteger("2"), "2"));
       return BigInteger.valueOf(((_FunctionTypes._return_P0_E0<PVector<GroupValue>>) () -> {
         Map<Number, List<item>> grouped = v2.stream().collect(Collectors.groupingBy(new Function<item, Number>() {
           public Number apply(item param) {
-            return (Number) new Function<ParameterSetWrapper, Number>() {
+            return new Function<ParameterSetWrapper, Number>() {
               public Number apply(ParameterSetWrapper param) {
                 item it = (item) param.parameters.get(0);
                 return it.getn();
@@ -7220,12 +7220,12 @@ public class Generated_collections_Test {
    */
     @Test
   public void collectionListVal_item16_8273018919111564358() throws Throwable {
-    Assert.assertTrue("Expected: " + (Number) new BigInteger("2") + ", but was: " + (((_FunctionTypes._return_P0_E0<BigInteger>) () -> {
-      final PVector<item> v2 = TreePVector.<item>empty().plus(new item((Number) new BigInteger("1"), "1")).plus(new item((Number) new BigInteger("1"), "1a")).plus(new item((Number) new BigInteger("2"), "2"));
+    Assert.assertTrue("Expected: " + new BigInteger("2") + ", but was: " + (((_FunctionTypes._return_P0_E0<BigInteger>) () -> {
+      final PVector<item> v2 = TreePVector.<item>empty().plus(new item(new BigInteger("1"), "1")).plus(new item(new BigInteger("1"), "1a")).plus(new item(new BigInteger("2"), "2"));
       return BigInteger.valueOf(((_FunctionTypes._return_P0_E0<PVector<GroupValue>>) () -> {
         Map<Number, List<item>> grouped = v2.stream().collect(Collectors.groupingBy(new Function<item, Number>() {
           public Number apply(item param) {
-            return (Number) new Function<ParameterSetWrapper, Number>() {
+            return new Function<ParameterSetWrapper, Number>() {
               public Number apply(ParameterSetWrapper param) {
                 item i = (item) param.parameters.get(0);
                 return i.getn();
@@ -7241,12 +7241,12 @@ public class Generated_collections_Test {
         }
         return result;
       }).invoke().size());
-    }).invoke()), EqualsTestOp.matches((Number) new BigInteger("2"), ((_FunctionTypes._return_P0_E0<BigInteger>) () -> {
-      final PVector<item> v2 = TreePVector.<item>empty().plus(new item((Number) new BigInteger("1"), "1")).plus(new item((Number) new BigInteger("1"), "1a")).plus(new item((Number) new BigInteger("2"), "2"));
+    }).invoke()), EqualsTestOp.matches(new BigInteger("2"), ((_FunctionTypes._return_P0_E0<BigInteger>) () -> {
+      final PVector<item> v2 = TreePVector.<item>empty().plus(new item(new BigInteger("1"), "1")).plus(new item(new BigInteger("1"), "1a")).plus(new item(new BigInteger("2"), "2"));
       return BigInteger.valueOf(((_FunctionTypes._return_P0_E0<PVector<GroupValue>>) () -> {
         Map<Number, List<item>> grouped = v2.stream().collect(Collectors.groupingBy(new Function<item, Number>() {
           public Number apply(item param) {
-            return (Number) new Function<ParameterSetWrapper, Number>() {
+            return new Function<ParameterSetWrapper, Number>() {
               public Number apply(ParameterSetWrapper param) {
                 item i = (item) param.parameters.get(0);
                 return i.getn();
@@ -7269,12 +7269,12 @@ public class Generated_collections_Test {
    */
     @Test
   public void collectionListVal_item17_8273018919111564372() throws Throwable {
-    Assert.assertTrue("Expected: " + (Number) new BigInteger("2") + ", but was: " + (((_FunctionTypes._return_P0_E0<BigInteger>) () -> {
-      final PVector<item> v2 = TreePVector.<item>empty().plus(new item((Number) new BigInteger("1"), "1")).plus(new item((Number) new BigInteger("1"), "1a")).plus(new item((Number) new BigInteger("2"), "2"));
+    Assert.assertTrue("Expected: " + new BigInteger("2") + ", but was: " + (((_FunctionTypes._return_P0_E0<BigInteger>) () -> {
+      final PVector<item> v2 = TreePVector.<item>empty().plus(new item(new BigInteger("1"), "1")).plus(new item(new BigInteger("1"), "1a")).plus(new item(new BigInteger("2"), "2"));
       return BigInteger.valueOf(((_FunctionTypes._return_P0_E0<PVector<GroupValue>>) () -> {
         Map<Number, List<item>> grouped = v2.stream().collect(Collectors.groupingBy(new Function<item, Number>() {
           public Number apply(item param) {
-            return (Number) new Function<ParameterSetWrapper, Number>() {
+            return new Function<ParameterSetWrapper, Number>() {
               public Number apply(ParameterSetWrapper param) {
                 return collectionListLiteralFoo3((item) param.parameters.get(0));
               }
@@ -7289,12 +7289,12 @@ public class Generated_collections_Test {
         }
         return result;
       }).invoke().size());
-    }).invoke()), EqualsTestOp.matches((Number) new BigInteger("2"), ((_FunctionTypes._return_P0_E0<BigInteger>) () -> {
-      final PVector<item> v2 = TreePVector.<item>empty().plus(new item((Number) new BigInteger("1"), "1")).plus(new item((Number) new BigInteger("1"), "1a")).plus(new item((Number) new BigInteger("2"), "2"));
+    }).invoke()), EqualsTestOp.matches(new BigInteger("2"), ((_FunctionTypes._return_P0_E0<BigInteger>) () -> {
+      final PVector<item> v2 = TreePVector.<item>empty().plus(new item(new BigInteger("1"), "1")).plus(new item(new BigInteger("1"), "1a")).plus(new item(new BigInteger("2"), "2"));
       return BigInteger.valueOf(((_FunctionTypes._return_P0_E0<PVector<GroupValue>>) () -> {
         Map<Number, List<item>> grouped = v2.stream().collect(Collectors.groupingBy(new Function<item, Number>() {
           public Number apply(item param) {
-            return (Number) new Function<ParameterSetWrapper, Number>() {
+            return new Function<ParameterSetWrapper, Number>() {
               public Number apply(ParameterSetWrapper param) {
                 return collectionListLiteralFoo3((item) param.parameters.get(0));
               }
@@ -7316,21 +7316,21 @@ public class Generated_collections_Test {
    */
     @Test
   public void collectionListVal_item18_8273018919111564381() throws Throwable {
-    Assert.assertEquals("Expected: " + TreePVector.<Number>empty().plus((Number) new BigInteger("1")) + ", but was: " + (((_FunctionTypes._return_P0_E0<PVector<Number>>) () -> {
-      final PVector<Number> v1 = TreePVector.<Number>empty().plus((Number) new BigInteger("1")).plus((Number) new BigInteger("2")).plus((Number) new BigInteger("3")).plus((Number) new BigInteger("4")).plus((Number) new BigInteger("5")).plus((Number) new BigInteger("6")).plus((Number) new BigInteger("7")).plus((Number) new BigInteger("8")).plus((Number) new BigInteger("9")).plus((Number) new BigInteger("10"));
+    Assert.assertEquals("Expected: " + TreePVector.<Number>empty().plus(new BigInteger("1")) + ", but was: " + (((_FunctionTypes._return_P0_E0<PVector<Number>>) () -> {
+      final PVector<Number> v1 = TreePVector.<Number>empty().plus(new BigInteger("1")).plus(new BigInteger("2")).plus(new BigInteger("3")).plus(new BigInteger("4")).plus(new BigInteger("5")).plus(new BigInteger("6")).plus(new BigInteger("7")).plus(new BigInteger("8")).plus(new BigInteger("9")).plus(new BigInteger("10"));
       return ((_FunctionTypes._return_P0_E0<PVector<Number>>) () -> {
         PVector<Number> origList = v1;
-        int noOfElements = ((Number) new BigInteger("1")).intValue();
+        int noOfElements = new BigInteger("1").intValue();
         if (origList.size() <= noOfElements) {
           return origList;
         }
         return origList.subList(0, noOfElements);
       }).invoke();
-    }).invoke()), (Object) TreePVector.<Number>empty().plus((Number) new BigInteger("1")), (Object) ((_FunctionTypes._return_P0_E0<PVector<Number>>) () -> {
-      final PVector<Number> v1 = TreePVector.<Number>empty().plus((Number) new BigInteger("1")).plus((Number) new BigInteger("2")).plus((Number) new BigInteger("3")).plus((Number) new BigInteger("4")).plus((Number) new BigInteger("5")).plus((Number) new BigInteger("6")).plus((Number) new BigInteger("7")).plus((Number) new BigInteger("8")).plus((Number) new BigInteger("9")).plus((Number) new BigInteger("10"));
+    }).invoke()), TreePVector.<Number>empty().plus(new BigInteger("1")), (Object) ((_FunctionTypes._return_P0_E0<PVector<Number>>) () -> {
+      final PVector<Number> v1 = TreePVector.<Number>empty().plus(new BigInteger("1")).plus(new BigInteger("2")).plus(new BigInteger("3")).plus(new BigInteger("4")).plus(new BigInteger("5")).plus(new BigInteger("6")).plus(new BigInteger("7")).plus(new BigInteger("8")).plus(new BigInteger("9")).plus(new BigInteger("10"));
       return ((_FunctionTypes._return_P0_E0<PVector<Number>>) () -> {
         PVector<Number> origList = v1;
-        int noOfElements = ((Number) new BigInteger("1")).intValue();
+        int noOfElements = new BigInteger("1").intValue();
         if (origList.size() <= noOfElements) {
           return origList;
         }
@@ -7344,10 +7344,10 @@ public class Generated_collections_Test {
     @Test
   public void collectionListVal_item19_8273018919111564389() throws Throwable {
     Assert.assertEquals("Expected: " + false + ", but was: " + (((_FunctionTypes._return_P0_E0<Boolean>) () -> {
-      PVector<Number> v1 = TreePVector.<Number>empty().plus((Number) new BigInteger("1")).plus((Number) new BigInteger("2")).plus((Number) new BigInteger("3")).plus((Number) new BigInteger("4")).plus((Number) new BigInteger("5")).plus((Number) new BigInteger("6")).plus((Number) new BigInteger("7")).plus((Number) new BigInteger("8")).plus((Number) new BigInteger("9")).plus((Number) new BigInteger("10"));
+      PVector<Number> v1 = TreePVector.<Number>empty().plus(new BigInteger("1")).plus(new BigInteger("2")).plus(new BigInteger("3")).plus(new BigInteger("4")).plus(new BigInteger("5")).plus(new BigInteger("6")).plus(new BigInteger("7")).plus(new BigInteger("8")).plus(new BigInteger("9")).plus(new BigInteger("10"));
       return v1.isEmpty();
     }).invoke()), (Object) false, (Object) ((_FunctionTypes._return_P0_E0<Boolean>) () -> {
-      PVector<Number> v1 = TreePVector.<Number>empty().plus((Number) new BigInteger("1")).plus((Number) new BigInteger("2")).plus((Number) new BigInteger("3")).plus((Number) new BigInteger("4")).plus((Number) new BigInteger("5")).plus((Number) new BigInteger("6")).plus((Number) new BigInteger("7")).plus((Number) new BigInteger("8")).plus((Number) new BigInteger("9")).plus((Number) new BigInteger("10"));
+      PVector<Number> v1 = TreePVector.<Number>empty().plus(new BigInteger("1")).plus(new BigInteger("2")).plus(new BigInteger("3")).plus(new BigInteger("4")).plus(new BigInteger("5")).plus(new BigInteger("6")).plus(new BigInteger("7")).plus(new BigInteger("8")).plus(new BigInteger("9")).plus(new BigInteger("10"));
       return v1.isEmpty();
     }).invoke());
   }
@@ -7357,10 +7357,10 @@ public class Generated_collections_Test {
     @Test
   public void collectionListVal_item20_8273018919111564395() throws Throwable {
     Assert.assertEquals("Expected: " + true + ", but was: " + (((_FunctionTypes._return_P0_E0<Boolean>) () -> {
-      PVector<Number> v1 = TreePVector.<Number>empty().plus((Number) new BigInteger("1")).plus((Number) new BigInteger("2")).plus((Number) new BigInteger("3")).plus((Number) new BigInteger("4")).plus((Number) new BigInteger("5")).plus((Number) new BigInteger("6")).plus((Number) new BigInteger("7")).plus((Number) new BigInteger("8")).plus((Number) new BigInteger("9")).plus((Number) new BigInteger("10"));
+      PVector<Number> v1 = TreePVector.<Number>empty().plus(new BigInteger("1")).plus(new BigInteger("2")).plus(new BigInteger("3")).plus(new BigInteger("4")).plus(new BigInteger("5")).plus(new BigInteger("6")).plus(new BigInteger("7")).plus(new BigInteger("8")).plus(new BigInteger("9")).plus(new BigInteger("10"));
       return !(v1.isEmpty());
     }).invoke()), (Object) true, (Object) ((_FunctionTypes._return_P0_E0<Boolean>) () -> {
-      PVector<Number> v1 = TreePVector.<Number>empty().plus((Number) new BigInteger("1")).plus((Number) new BigInteger("2")).plus((Number) new BigInteger("3")).plus((Number) new BigInteger("4")).plus((Number) new BigInteger("5")).plus((Number) new BigInteger("6")).plus((Number) new BigInteger("7")).plus((Number) new BigInteger("8")).plus((Number) new BigInteger("9")).plus((Number) new BigInteger("10"));
+      PVector<Number> v1 = TreePVector.<Number>empty().plus(new BigInteger("1")).plus(new BigInteger("2")).plus(new BigInteger("3")).plus(new BigInteger("4")).plus(new BigInteger("5")).plus(new BigInteger("6")).plus(new BigInteger("7")).plus(new BigInteger("8")).plus(new BigInteger("9")).plus(new BigInteger("10"));
       return !(v1.isEmpty());
     }).invoke());
   }
@@ -7369,14 +7369,14 @@ public class Generated_collections_Test {
    */
     @Test
   public void collectionListVal_item21_8273018919111564401() throws Throwable {
-    Assert.assertTrue("Expected: " + (Number) new BigInteger("10") + ", but was: " + (((_FunctionTypes._return_P0_E0<Number>) () -> {
-      final PVector<Number> v1 = TreePVector.<Number>empty().plus((Number) new BigInteger("1")).plus((Number) new BigInteger("2")).plus((Number) new BigInteger("3")).plus((Number) new BigInteger("4")).plus((Number) new BigInteger("5")).plus((Number) new BigInteger("6")).plus((Number) new BigInteger("7")).plus((Number) new BigInteger("8")).plus((Number) new BigInteger("9")).plus((Number) new BigInteger("10"));
+    Assert.assertTrue("Expected: " + new BigInteger("10") + ", but was: " + (((_FunctionTypes._return_P0_E0<Number>) () -> {
+      final PVector<Number> v1 = TreePVector.<Number>empty().plus(new BigInteger("1")).plus(new BigInteger("2")).plus(new BigInteger("3")).plus(new BigInteger("4")).plus(new BigInteger("5")).plus(new BigInteger("6")).plus(new BigInteger("7")).plus(new BigInteger("8")).plus(new BigInteger("9")).plus(new BigInteger("10"));
       return ((_FunctionTypes._return_P0_E0<Number>) () -> {
         PVector<Number> listResult = v1;
         return (listResult.isEmpty() ? null : listResult.get(listResult.size() - 1));
       }).invoke();
-    }).invoke()), EqualsTestOp.matches((Number) new BigInteger("10"), ((_FunctionTypes._return_P0_E0<Number>) () -> {
-      final PVector<Number> v1 = TreePVector.<Number>empty().plus((Number) new BigInteger("1")).plus((Number) new BigInteger("2")).plus((Number) new BigInteger("3")).plus((Number) new BigInteger("4")).plus((Number) new BigInteger("5")).plus((Number) new BigInteger("6")).plus((Number) new BigInteger("7")).plus((Number) new BigInteger("8")).plus((Number) new BigInteger("9")).plus((Number) new BigInteger("10"));
+    }).invoke()), EqualsTestOp.matches(new BigInteger("10"), ((_FunctionTypes._return_P0_E0<Number>) () -> {
+      final PVector<Number> v1 = TreePVector.<Number>empty().plus(new BigInteger("1")).plus(new BigInteger("2")).plus(new BigInteger("3")).plus(new BigInteger("4")).plus(new BigInteger("5")).plus(new BigInteger("6")).plus(new BigInteger("7")).plus(new BigInteger("8")).plus(new BigInteger("9")).plus(new BigInteger("10"));
       return ((_FunctionTypes._return_P0_E0<Number>) () -> {
         PVector<Number> listResult = v1;
         return (listResult.isEmpty() ? null : listResult.get(listResult.size() - 1));
@@ -7388,26 +7388,26 @@ public class Generated_collections_Test {
    */
     @Test
   public void collectionListVal_item22_8273018919111564407() throws Throwable {
-    Assert.assertEquals("Expected: " + TreePVector.<Number>empty().plus((Number) new BigInteger("2")).plus((Number) new BigInteger("3")).plus((Number) new BigInteger("4")).plus((Number) new BigInteger("5")).plus((Number) new BigInteger("6")).plus((Number) new BigInteger("7")).plus((Number) new BigInteger("8")).plus((Number) new BigInteger("9")).plus((Number) new BigInteger("10")).plus((Number) new BigInteger("11")) + ", but was: " + (((_FunctionTypes._return_P0_E0<TreePVector<Number>>) () -> {
-      PVector<Number> v1 = TreePVector.<Number>empty().plus((Number) new BigInteger("1")).plus((Number) new BigInteger("2")).plus((Number) new BigInteger("3")).plus((Number) new BigInteger("4")).plus((Number) new BigInteger("5")).plus((Number) new BigInteger("6")).plus((Number) new BigInteger("7")).plus((Number) new BigInteger("8")).plus((Number) new BigInteger("9")).plus((Number) new BigInteger("10"));
+    Assert.assertEquals("Expected: " + TreePVector.<Number>empty().plus(new BigInteger("2")).plus(new BigInteger("3")).plus(new BigInteger("4")).plus(new BigInteger("5")).plus(new BigInteger("6")).plus(new BigInteger("7")).plus(new BigInteger("8")).plus(new BigInteger("9")).plus(new BigInteger("10")).plus(new BigInteger("11")) + ", but was: " + (((_FunctionTypes._return_P0_E0<TreePVector<Number>>) () -> {
+      PVector<Number> v1 = TreePVector.<Number>empty().plus(new BigInteger("1")).plus(new BigInteger("2")).plus(new BigInteger("3")).plus(new BigInteger("4")).plus(new BigInteger("5")).plus(new BigInteger("6")).plus(new BigInteger("7")).plus(new BigInteger("8")).plus(new BigInteger("9")).plus(new BigInteger("10"));
       return TreePVector.<Number>from(v1.stream().map(new Function<Number, Number>() {
         public Number apply(Number param) {
           return new Function<ParameterSetWrapper, Number>() {
             public Number apply(ParameterSetWrapper param) {
               Number it = (Number) param.parameters.get(0);
-              return AH.add(it, (Number) new BigInteger("1"));
+              return AH.add(it, new BigInteger("1"));
             }
           }.apply(new ParameterSetWrapper(param));
         }
       }).collect(Collectors.<Number>toList()));
-    }).invoke()), (Object) TreePVector.<Number>empty().plus((Number) new BigInteger("2")).plus((Number) new BigInteger("3")).plus((Number) new BigInteger("4")).plus((Number) new BigInteger("5")).plus((Number) new BigInteger("6")).plus((Number) new BigInteger("7")).plus((Number) new BigInteger("8")).plus((Number) new BigInteger("9")).plus((Number) new BigInteger("10")).plus((Number) new BigInteger("11")), (Object) ((_FunctionTypes._return_P0_E0<TreePVector<Number>>) () -> {
-      PVector<Number> v1 = TreePVector.<Number>empty().plus((Number) new BigInteger("1")).plus((Number) new BigInteger("2")).plus((Number) new BigInteger("3")).plus((Number) new BigInteger("4")).plus((Number) new BigInteger("5")).plus((Number) new BigInteger("6")).plus((Number) new BigInteger("7")).plus((Number) new BigInteger("8")).plus((Number) new BigInteger("9")).plus((Number) new BigInteger("10"));
+    }).invoke()), TreePVector.<Number>empty().plus(new BigInteger("2")).plus(new BigInteger("3")).plus(new BigInteger("4")).plus(new BigInteger("5")).plus(new BigInteger("6")).plus(new BigInteger("7")).plus(new BigInteger("8")).plus(new BigInteger("9")).plus(new BigInteger("10")).plus(new BigInteger("11")), (Object) ((_FunctionTypes._return_P0_E0<TreePVector<Number>>) () -> {
+      PVector<Number> v1 = TreePVector.<Number>empty().plus(new BigInteger("1")).plus(new BigInteger("2")).plus(new BigInteger("3")).plus(new BigInteger("4")).plus(new BigInteger("5")).plus(new BigInteger("6")).plus(new BigInteger("7")).plus(new BigInteger("8")).plus(new BigInteger("9")).plus(new BigInteger("10"));
       return TreePVector.<Number>from(v1.stream().map(new Function<Number, Number>() {
         public Number apply(Number param) {
           return new Function<ParameterSetWrapper, Number>() {
             public Number apply(ParameterSetWrapper param) {
               Number it = (Number) param.parameters.get(0);
-              return AH.add(it, (Number) new BigInteger("1"));
+              return AH.add(it, new BigInteger("1"));
             }
           }.apply(new ParameterSetWrapper(param));
         }
@@ -7419,26 +7419,26 @@ public class Generated_collections_Test {
    */
     @Test
   public void collectionListVal_item23_8273018919111564427() throws Throwable {
-    Assert.assertEquals("Expected: " + TreePVector.<Number>empty().plus((Number) new BigInteger("2")).plus((Number) new BigInteger("3")).plus((Number) new BigInteger("4")).plus((Number) new BigInteger("5")).plus((Number) new BigInteger("6")).plus((Number) new BigInteger("7")).plus((Number) new BigInteger("8")).plus((Number) new BigInteger("9")).plus((Number) new BigInteger("10")).plus((Number) new BigInteger("11")) + ", but was: " + (((_FunctionTypes._return_P0_E0<TreePVector<Number>>) () -> {
-      PVector<Number> v1 = TreePVector.<Number>empty().plus((Number) new BigInteger("1")).plus((Number) new BigInteger("2")).plus((Number) new BigInteger("3")).plus((Number) new BigInteger("4")).plus((Number) new BigInteger("5")).plus((Number) new BigInteger("6")).plus((Number) new BigInteger("7")).plus((Number) new BigInteger("8")).plus((Number) new BigInteger("9")).plus((Number) new BigInteger("10"));
+    Assert.assertEquals("Expected: " + TreePVector.<Number>empty().plus(new BigInteger("2")).plus(new BigInteger("3")).plus(new BigInteger("4")).plus(new BigInteger("5")).plus(new BigInteger("6")).plus(new BigInteger("7")).plus(new BigInteger("8")).plus(new BigInteger("9")).plus(new BigInteger("10")).plus(new BigInteger("11")) + ", but was: " + (((_FunctionTypes._return_P0_E0<TreePVector<Number>>) () -> {
+      PVector<Number> v1 = TreePVector.<Number>empty().plus(new BigInteger("1")).plus(new BigInteger("2")).plus(new BigInteger("3")).plus(new BigInteger("4")).plus(new BigInteger("5")).plus(new BigInteger("6")).plus(new BigInteger("7")).plus(new BigInteger("8")).plus(new BigInteger("9")).plus(new BigInteger("10"));
       return TreePVector.<Number>from(v1.stream().map(new Function<Number, Number>() {
         public Number apply(Number param) {
           return new Function<ParameterSetWrapper, Number>() {
             public Number apply(ParameterSetWrapper param) {
               Number a = (Number) param.parameters.get(0);
-              return AH.add(a, (Number) new BigInteger("1"));
+              return AH.add(a, new BigInteger("1"));
             }
           }.apply(new ParameterSetWrapper(param));
         }
       }).collect(Collectors.<Number>toList()));
-    }).invoke()), (Object) TreePVector.<Number>empty().plus((Number) new BigInteger("2")).plus((Number) new BigInteger("3")).plus((Number) new BigInteger("4")).plus((Number) new BigInteger("5")).plus((Number) new BigInteger("6")).plus((Number) new BigInteger("7")).plus((Number) new BigInteger("8")).plus((Number) new BigInteger("9")).plus((Number) new BigInteger("10")).plus((Number) new BigInteger("11")), (Object) ((_FunctionTypes._return_P0_E0<TreePVector<Number>>) () -> {
-      PVector<Number> v1 = TreePVector.<Number>empty().plus((Number) new BigInteger("1")).plus((Number) new BigInteger("2")).plus((Number) new BigInteger("3")).plus((Number) new BigInteger("4")).plus((Number) new BigInteger("5")).plus((Number) new BigInteger("6")).plus((Number) new BigInteger("7")).plus((Number) new BigInteger("8")).plus((Number) new BigInteger("9")).plus((Number) new BigInteger("10"));
+    }).invoke()), TreePVector.<Number>empty().plus(new BigInteger("2")).plus(new BigInteger("3")).plus(new BigInteger("4")).plus(new BigInteger("5")).plus(new BigInteger("6")).plus(new BigInteger("7")).plus(new BigInteger("8")).plus(new BigInteger("9")).plus(new BigInteger("10")).plus(new BigInteger("11")), (Object) ((_FunctionTypes._return_P0_E0<TreePVector<Number>>) () -> {
+      PVector<Number> v1 = TreePVector.<Number>empty().plus(new BigInteger("1")).plus(new BigInteger("2")).plus(new BigInteger("3")).plus(new BigInteger("4")).plus(new BigInteger("5")).plus(new BigInteger("6")).plus(new BigInteger("7")).plus(new BigInteger("8")).plus(new BigInteger("9")).plus(new BigInteger("10"));
       return TreePVector.<Number>from(v1.stream().map(new Function<Number, Number>() {
         public Number apply(Number param) {
           return new Function<ParameterSetWrapper, Number>() {
             public Number apply(ParameterSetWrapper param) {
               Number a = (Number) param.parameters.get(0);
-              return AH.add(a, (Number) new BigInteger("1"));
+              return AH.add(a, new BigInteger("1"));
             }
           }.apply(new ParameterSetWrapper(param));
         }
@@ -7450,8 +7450,8 @@ public class Generated_collections_Test {
    */
     @Test
   public void collectionListVal_item24_8273018919111564450() throws Throwable {
-    Assert.assertEquals("Expected: " + TreePVector.<Number>empty().plus((Number) new BigInteger("2")).plus((Number) new BigInteger("3")).plus((Number) new BigInteger("4")).plus((Number) new BigInteger("5")).plus((Number) new BigInteger("6")).plus((Number) new BigInteger("7")).plus((Number) new BigInteger("8")).plus((Number) new BigInteger("9")).plus((Number) new BigInteger("10")).plus((Number) new BigInteger("11")) + ", but was: " + (((_FunctionTypes._return_P0_E0<TreePVector<Number>>) () -> {
-      PVector<Number> v1 = TreePVector.<Number>empty().plus((Number) new BigInteger("1")).plus((Number) new BigInteger("2")).plus((Number) new BigInteger("3")).plus((Number) new BigInteger("4")).plus((Number) new BigInteger("5")).plus((Number) new BigInteger("6")).plus((Number) new BigInteger("7")).plus((Number) new BigInteger("8")).plus((Number) new BigInteger("9")).plus((Number) new BigInteger("10"));
+    Assert.assertEquals("Expected: " + TreePVector.<Number>empty().plus(new BigInteger("2")).plus(new BigInteger("3")).plus(new BigInteger("4")).plus(new BigInteger("5")).plus(new BigInteger("6")).plus(new BigInteger("7")).plus(new BigInteger("8")).plus(new BigInteger("9")).plus(new BigInteger("10")).plus(new BigInteger("11")) + ", but was: " + (((_FunctionTypes._return_P0_E0<TreePVector<Number>>) () -> {
+      PVector<Number> v1 = TreePVector.<Number>empty().plus(new BigInteger("1")).plus(new BigInteger("2")).plus(new BigInteger("3")).plus(new BigInteger("4")).plus(new BigInteger("5")).plus(new BigInteger("6")).plus(new BigInteger("7")).plus(new BigInteger("8")).plus(new BigInteger("9")).plus(new BigInteger("10"));
       return TreePVector.<Number>from(v1.stream().map(new Function<Number, Number>() {
         public Number apply(Number param) {
           return new Function<ParameterSetWrapper, Number>() {
@@ -7461,8 +7461,8 @@ public class Generated_collections_Test {
           }.apply(new ParameterSetWrapper(param));
         }
       }).collect(Collectors.<Number>toList()));
-    }).invoke()), (Object) TreePVector.<Number>empty().plus((Number) new BigInteger("2")).plus((Number) new BigInteger("3")).plus((Number) new BigInteger("4")).plus((Number) new BigInteger("5")).plus((Number) new BigInteger("6")).plus((Number) new BigInteger("7")).plus((Number) new BigInteger("8")).plus((Number) new BigInteger("9")).plus((Number) new BigInteger("10")).plus((Number) new BigInteger("11")), (Object) ((_FunctionTypes._return_P0_E0<TreePVector<Number>>) () -> {
-      PVector<Number> v1 = TreePVector.<Number>empty().plus((Number) new BigInteger("1")).plus((Number) new BigInteger("2")).plus((Number) new BigInteger("3")).plus((Number) new BigInteger("4")).plus((Number) new BigInteger("5")).plus((Number) new BigInteger("6")).plus((Number) new BigInteger("7")).plus((Number) new BigInteger("8")).plus((Number) new BigInteger("9")).plus((Number) new BigInteger("10"));
+    }).invoke()), TreePVector.<Number>empty().plus(new BigInteger("2")).plus(new BigInteger("3")).plus(new BigInteger("4")).plus(new BigInteger("5")).plus(new BigInteger("6")).plus(new BigInteger("7")).plus(new BigInteger("8")).plus(new BigInteger("9")).plus(new BigInteger("10")).plus(new BigInteger("11")), (Object) ((_FunctionTypes._return_P0_E0<TreePVector<Number>>) () -> {
+      PVector<Number> v1 = TreePVector.<Number>empty().plus(new BigInteger("1")).plus(new BigInteger("2")).plus(new BigInteger("3")).plus(new BigInteger("4")).plus(new BigInteger("5")).plus(new BigInteger("6")).plus(new BigInteger("7")).plus(new BigInteger("8")).plus(new BigInteger("9")).plus(new BigInteger("10"));
       return TreePVector.<Number>from(v1.stream().map(new Function<Number, Number>() {
         public Number apply(Number param) {
           return new Function<ParameterSetWrapper, Number>() {
@@ -7479,11 +7479,11 @@ public class Generated_collections_Test {
    */
     @Test
   public void collectionListVal_item25_8273018919111564467() throws Throwable {
-    Assert.assertTrue("Expected: " + (Number) new BigInteger("10") + ", but was: " + (((_FunctionTypes._return_P0_E0<Number>) () -> {
-      PVector<Number> v1 = TreePVector.<Number>empty().plus((Number) new BigInteger("1")).plus((Number) new BigInteger("2")).plus((Number) new BigInteger("3")).plus((Number) new BigInteger("4")).plus((Number) new BigInteger("5")).plus((Number) new BigInteger("6")).plus((Number) new BigInteger("7")).plus((Number) new BigInteger("8")).plus((Number) new BigInteger("9")).plus((Number) new BigInteger("10"));
+    Assert.assertTrue("Expected: " + new BigInteger("10") + ", but was: " + (((_FunctionTypes._return_P0_E0<Number>) () -> {
+      PVector<Number> v1 = TreePVector.<Number>empty().plus(new BigInteger("1")).plus(new BigInteger("2")).plus(new BigInteger("3")).plus(new BigInteger("4")).plus(new BigInteger("5")).plus(new BigInteger("6")).plus(new BigInteger("7")).plus(new BigInteger("8")).plus(new BigInteger("9")).plus(new BigInteger("10"));
       return CollectionHelper.max(v1);
-    }).invoke()), EqualsTestOp.matches((Number) new BigInteger("10"), ((_FunctionTypes._return_P0_E0<Number>) () -> {
-      PVector<Number> v1 = TreePVector.<Number>empty().plus((Number) new BigInteger("1")).plus((Number) new BigInteger("2")).plus((Number) new BigInteger("3")).plus((Number) new BigInteger("4")).plus((Number) new BigInteger("5")).plus((Number) new BigInteger("6")).plus((Number) new BigInteger("7")).plus((Number) new BigInteger("8")).plus((Number) new BigInteger("9")).plus((Number) new BigInteger("10"));
+    }).invoke()), EqualsTestOp.matches(new BigInteger("10"), ((_FunctionTypes._return_P0_E0<Number>) () -> {
+      PVector<Number> v1 = TreePVector.<Number>empty().plus(new BigInteger("1")).plus(new BigInteger("2")).plus(new BigInteger("3")).plus(new BigInteger("4")).plus(new BigInteger("5")).plus(new BigInteger("6")).plus(new BigInteger("7")).plus(new BigInteger("8")).plus(new BigInteger("9")).plus(new BigInteger("10"));
       return CollectionHelper.max(v1);
     }).invoke()));
   }
@@ -7492,11 +7492,11 @@ public class Generated_collections_Test {
    */
     @Test
   public void collectionListVal_item26_8273018919111564473() throws Throwable {
-    Assert.assertTrue("Expected: " + (Number) new BigInteger("1") + ", but was: " + (((_FunctionTypes._return_P0_E0<Number>) () -> {
-      PVector<Number> v1 = TreePVector.<Number>empty().plus((Number) new BigInteger("1")).plus((Number) new BigInteger("2")).plus((Number) new BigInteger("3")).plus((Number) new BigInteger("4")).plus((Number) new BigInteger("5")).plus((Number) new BigInteger("6")).plus((Number) new BigInteger("7")).plus((Number) new BigInteger("8")).plus((Number) new BigInteger("9")).plus((Number) new BigInteger("10"));
+    Assert.assertTrue("Expected: " + new BigInteger("1") + ", but was: " + (((_FunctionTypes._return_P0_E0<Number>) () -> {
+      PVector<Number> v1 = TreePVector.<Number>empty().plus(new BigInteger("1")).plus(new BigInteger("2")).plus(new BigInteger("3")).plus(new BigInteger("4")).plus(new BigInteger("5")).plus(new BigInteger("6")).plus(new BigInteger("7")).plus(new BigInteger("8")).plus(new BigInteger("9")).plus(new BigInteger("10"));
       return CollectionHelper.min(v1);
-    }).invoke()), EqualsTestOp.matches((Number) new BigInteger("1"), ((_FunctionTypes._return_P0_E0<Number>) () -> {
-      PVector<Number> v1 = TreePVector.<Number>empty().plus((Number) new BigInteger("1")).plus((Number) new BigInteger("2")).plus((Number) new BigInteger("3")).plus((Number) new BigInteger("4")).plus((Number) new BigInteger("5")).plus((Number) new BigInteger("6")).plus((Number) new BigInteger("7")).plus((Number) new BigInteger("8")).plus((Number) new BigInteger("9")).plus((Number) new BigInteger("10"));
+    }).invoke()), EqualsTestOp.matches(new BigInteger("1"), ((_FunctionTypes._return_P0_E0<Number>) () -> {
+      PVector<Number> v1 = TreePVector.<Number>empty().plus(new BigInteger("1")).plus(new BigInteger("2")).plus(new BigInteger("3")).plus(new BigInteger("4")).plus(new BigInteger("5")).plus(new BigInteger("6")).plus(new BigInteger("7")).plus(new BigInteger("8")).plus(new BigInteger("9")).plus(new BigInteger("10"));
       return CollectionHelper.min(v1);
     }).invoke()));
   }
@@ -7505,8 +7505,8 @@ public class Generated_collections_Test {
    */
     @Test
   public void collectionListVal_item27_8273018919111564479() throws Throwable {
-    Assert.assertTrue("Expected: " + (Number) new BigInteger("1") + ", but was: " + (((_FunctionTypes._return_P0_E0<Number>) () -> {
-      final PVector<item> v4 = TreePVector.<item>empty().plus(new item((Number) new BigInteger("1"), "1")).plus(new item((Number) new BigInteger("2"), "2"));
+    Assert.assertTrue("Expected: " + new BigInteger("1") + ", but was: " + (((_FunctionTypes._return_P0_E0<Number>) () -> {
+      final PVector<item> v4 = TreePVector.<item>empty().plus(new item(new BigInteger("1"), "1")).plus(new item(new BigInteger("2"), "2"));
       return (Number) (((_FunctionTypes._return_P0_E0<InlineRecordType>) () -> {
         PVector<InlineRecordType> listResult = ((_FunctionTypes._return_P0_E0<PVector<InlineRecordType>>) () -> {
           PVector<InlineRecordType> result = TreePVector.empty();
@@ -7519,8 +7519,8 @@ public class Generated_collections_Test {
         }).invoke();
         return (listResult.isEmpty() ? null : listResult.get(0));
       }).invoke()).members.get("num").value;
-    }).invoke()), EqualsTestOp.matches((Number) new BigInteger("1"), ((_FunctionTypes._return_P0_E0<Number>) () -> {
-      final PVector<item> v4 = TreePVector.<item>empty().plus(new item((Number) new BigInteger("1"), "1")).plus(new item((Number) new BigInteger("2"), "2"));
+    }).invoke()), EqualsTestOp.matches(new BigInteger("1"), ((_FunctionTypes._return_P0_E0<Number>) () -> {
+      final PVector<item> v4 = TreePVector.<item>empty().plus(new item(new BigInteger("1"), "1")).plus(new item(new BigInteger("2"), "2"));
       return (Number) (((_FunctionTypes._return_P0_E0<InlineRecordType>) () -> {
         PVector<InlineRecordType> listResult = ((_FunctionTypes._return_P0_E0<PVector<InlineRecordType>>) () -> {
           PVector<InlineRecordType> result = TreePVector.empty();
@@ -7540,11 +7540,11 @@ public class Generated_collections_Test {
    */
     @Test
   public void collectionListVal_item28_8273018919111564493() throws Throwable {
-    Assert.assertTrue("Expected: " + (Number) new BigInteger("10") + ", but was: " + (((_FunctionTypes._return_P0_E0<BigInteger>) () -> {
-      PVector<Number> v1 = TreePVector.<Number>empty().plus((Number) new BigInteger("1")).plus((Number) new BigInteger("2")).plus((Number) new BigInteger("3")).plus((Number) new BigInteger("4")).plus((Number) new BigInteger("5")).plus((Number) new BigInteger("6")).plus((Number) new BigInteger("7")).plus((Number) new BigInteger("8")).plus((Number) new BigInteger("9")).plus((Number) new BigInteger("10"));
+    Assert.assertTrue("Expected: " + new BigInteger("10") + ", but was: " + (((_FunctionTypes._return_P0_E0<BigInteger>) () -> {
+      PVector<Number> v1 = TreePVector.<Number>empty().plus(new BigInteger("1")).plus(new BigInteger("2")).plus(new BigInteger("3")).plus(new BigInteger("4")).plus(new BigInteger("5")).plus(new BigInteger("6")).plus(new BigInteger("7")).plus(new BigInteger("8")).plus(new BigInteger("9")).plus(new BigInteger("10"));
       return BigInteger.valueOf(v1.size());
-    }).invoke()), EqualsTestOp.matches((Number) new BigInteger("10"), ((_FunctionTypes._return_P0_E0<BigInteger>) () -> {
-      PVector<Number> v1 = TreePVector.<Number>empty().plus((Number) new BigInteger("1")).plus((Number) new BigInteger("2")).plus((Number) new BigInteger("3")).plus((Number) new BigInteger("4")).plus((Number) new BigInteger("5")).plus((Number) new BigInteger("6")).plus((Number) new BigInteger("7")).plus((Number) new BigInteger("8")).plus((Number) new BigInteger("9")).plus((Number) new BigInteger("10"));
+    }).invoke()), EqualsTestOp.matches(new BigInteger("10"), ((_FunctionTypes._return_P0_E0<BigInteger>) () -> {
+      PVector<Number> v1 = TreePVector.<Number>empty().plus(new BigInteger("1")).plus(new BigInteger("2")).plus(new BigInteger("3")).plus(new BigInteger("4")).plus(new BigInteger("5")).plus(new BigInteger("6")).plus(new BigInteger("7")).plus(new BigInteger("8")).plus(new BigInteger("9")).plus(new BigInteger("10"));
       return BigInteger.valueOf(v1.size());
     }).invoke()));
   }
@@ -7553,16 +7553,16 @@ public class Generated_collections_Test {
    */
     @Test
   public void collectionListVal_item29_8273018919111564499() throws Throwable {
-    Assert.assertEquals("Expected: " + TreePVector.<Number>empty().plus((Number) new BigInteger("1")).plus((Number) new BigInteger("2")).plus((Number) new BigInteger("3")).plus((Number) new BigInteger("4")).plus((Number) new BigInteger("5")).plus((Number) new BigInteger("6")).plus((Number) new BigInteger("7")).plus((Number) new BigInteger("8")).plus((Number) new BigInteger("9")).plus((Number) new BigInteger("10")) + ", but was: " + (((_FunctionTypes._return_P0_E0<PVector<Number>>) () -> {
-      PVector<Number> v1 = TreePVector.<Number>empty().plus((Number) new BigInteger("1")).plus((Number) new BigInteger("2")).plus((Number) new BigInteger("3")).plus((Number) new BigInteger("4")).plus((Number) new BigInteger("5")).plus((Number) new BigInteger("6")).plus((Number) new BigInteger("7")).plus((Number) new BigInteger("8")).plus((Number) new BigInteger("9")).plus((Number) new BigInteger("10"));
-      return (PVector<Number>) TreePVector.<Number>from(((PCollection<Number>) v1).stream().filter(OH.predicate()).sorted(new Comparator<Number>() {
+    Assert.assertEquals("Expected: " + TreePVector.<Number>empty().plus(new BigInteger("1")).plus(new BigInteger("2")).plus(new BigInteger("3")).plus(new BigInteger("4")).plus(new BigInteger("5")).plus(new BigInteger("6")).plus(new BigInteger("7")).plus(new BigInteger("8")).plus(new BigInteger("9")).plus(new BigInteger("10")) + ", but was: " + (((_FunctionTypes._return_P0_E0<PVector<Number>>) () -> {
+      PVector<Number> v1 = TreePVector.<Number>empty().plus(new BigInteger("1")).plus(new BigInteger("2")).plus(new BigInteger("3")).plus(new BigInteger("4")).plus(new BigInteger("5")).plus(new BigInteger("6")).plus(new BigInteger("7")).plus(new BigInteger("8")).plus(new BigInteger("9")).plus(new BigInteger("10"));
+      return (PVector<Number>) TreePVector.<Number>from(v1.stream().filter(OH.predicate()).sorted(new Comparator<Number>() {
         public int compare(Number p0, Number p1) {
           return OH.compare(p0, p1);
         }
       }).collect(Collectors.<Number>toList()));
-    }).invoke()), (Object) TreePVector.<Number>empty().plus((Number) new BigInteger("1")).plus((Number) new BigInteger("2")).plus((Number) new BigInteger("3")).plus((Number) new BigInteger("4")).plus((Number) new BigInteger("5")).plus((Number) new BigInteger("6")).plus((Number) new BigInteger("7")).plus((Number) new BigInteger("8")).plus((Number) new BigInteger("9")).plus((Number) new BigInteger("10")), (Object) ((_FunctionTypes._return_P0_E0<PVector<Number>>) () -> {
-      PVector<Number> v1 = TreePVector.<Number>empty().plus((Number) new BigInteger("1")).plus((Number) new BigInteger("2")).plus((Number) new BigInteger("3")).plus((Number) new BigInteger("4")).plus((Number) new BigInteger("5")).plus((Number) new BigInteger("6")).plus((Number) new BigInteger("7")).plus((Number) new BigInteger("8")).plus((Number) new BigInteger("9")).plus((Number) new BigInteger("10"));
-      return (PVector<Number>) TreePVector.<Number>from(((PCollection<Number>) v1).stream().filter(OH.predicate()).sorted(new Comparator<Number>() {
+    }).invoke()), TreePVector.<Number>empty().plus(new BigInteger("1")).plus(new BigInteger("2")).plus(new BigInteger("3")).plus(new BigInteger("4")).plus(new BigInteger("5")).plus(new BigInteger("6")).plus(new BigInteger("7")).plus(new BigInteger("8")).plus(new BigInteger("9")).plus(new BigInteger("10")), (Object) ((_FunctionTypes._return_P0_E0<PVector<Number>>) () -> {
+      PVector<Number> v1 = TreePVector.<Number>empty().plus(new BigInteger("1")).plus(new BigInteger("2")).plus(new BigInteger("3")).plus(new BigInteger("4")).plus(new BigInteger("5")).plus(new BigInteger("6")).plus(new BigInteger("7")).plus(new BigInteger("8")).plus(new BigInteger("9")).plus(new BigInteger("10"));
+      return (PVector<Number>) TreePVector.<Number>from(v1.stream().filter(OH.predicate()).sorted(new Comparator<Number>() {
         public int compare(Number p0, Number p1) {
           return OH.compare(p0, p1);
         }
@@ -7574,16 +7574,16 @@ public class Generated_collections_Test {
    */
     @Test
   public void collectionListVal_item30_8273018919111564515() throws Throwable {
-    Assert.assertEquals("Expected: " + TreePVector.<Number>empty().plus((Number) new BigInteger("10")).plus((Number) new BigInteger("9")).plus((Number) new BigInteger("8")).plus((Number) new BigInteger("7")).plus((Number) new BigInteger("6")).plus((Number) new BigInteger("5")).plus((Number) new BigInteger("4")).plus((Number) new BigInteger("3")).plus((Number) new BigInteger("2")).plus((Number) new BigInteger("1")) + ", but was: " + (((_FunctionTypes._return_P0_E0<PVector<Number>>) () -> {
-      PVector<Number> v1 = TreePVector.<Number>empty().plus((Number) new BigInteger("1")).plus((Number) new BigInteger("2")).plus((Number) new BigInteger("3")).plus((Number) new BigInteger("4")).plus((Number) new BigInteger("5")).plus((Number) new BigInteger("6")).plus((Number) new BigInteger("7")).plus((Number) new BigInteger("8")).plus((Number) new BigInteger("9")).plus((Number) new BigInteger("10"));
-      return (PVector<Number>) TreePVector.<Number>from(((PCollection<Number>) v1).stream().filter(OH.predicate()).sorted(new Comparator<Number>() {
+    Assert.assertEquals("Expected: " + TreePVector.<Number>empty().plus(new BigInteger("10")).plus(new BigInteger("9")).plus(new BigInteger("8")).plus(new BigInteger("7")).plus(new BigInteger("6")).plus(new BigInteger("5")).plus(new BigInteger("4")).plus(new BigInteger("3")).plus(new BigInteger("2")).plus(new BigInteger("1")) + ", but was: " + (((_FunctionTypes._return_P0_E0<PVector<Number>>) () -> {
+      PVector<Number> v1 = TreePVector.<Number>empty().plus(new BigInteger("1")).plus(new BigInteger("2")).plus(new BigInteger("3")).plus(new BigInteger("4")).plus(new BigInteger("5")).plus(new BigInteger("6")).plus(new BigInteger("7")).plus(new BigInteger("8")).plus(new BigInteger("9")).plus(new BigInteger("10"));
+      return (PVector<Number>) TreePVector.<Number>from(v1.stream().filter(OH.predicate()).sorted(new Comparator<Number>() {
         public int compare(Number p0, Number p1) {
           return OH.compare(p1, p0);
         }
       }).collect(Collectors.<Number>toList()));
-    }).invoke()), (Object) TreePVector.<Number>empty().plus((Number) new BigInteger("10")).plus((Number) new BigInteger("9")).plus((Number) new BigInteger("8")).plus((Number) new BigInteger("7")).plus((Number) new BigInteger("6")).plus((Number) new BigInteger("5")).plus((Number) new BigInteger("4")).plus((Number) new BigInteger("3")).plus((Number) new BigInteger("2")).plus((Number) new BigInteger("1")), (Object) ((_FunctionTypes._return_P0_E0<PVector<Number>>) () -> {
-      PVector<Number> v1 = TreePVector.<Number>empty().plus((Number) new BigInteger("1")).plus((Number) new BigInteger("2")).plus((Number) new BigInteger("3")).plus((Number) new BigInteger("4")).plus((Number) new BigInteger("5")).plus((Number) new BigInteger("6")).plus((Number) new BigInteger("7")).plus((Number) new BigInteger("8")).plus((Number) new BigInteger("9")).plus((Number) new BigInteger("10"));
-      return (PVector<Number>) TreePVector.<Number>from(((PCollection<Number>) v1).stream().filter(OH.predicate()).sorted(new Comparator<Number>() {
+    }).invoke()), TreePVector.<Number>empty().plus(new BigInteger("10")).plus(new BigInteger("9")).plus(new BigInteger("8")).plus(new BigInteger("7")).plus(new BigInteger("6")).plus(new BigInteger("5")).plus(new BigInteger("4")).plus(new BigInteger("3")).plus(new BigInteger("2")).plus(new BigInteger("1")), (Object) ((_FunctionTypes._return_P0_E0<PVector<Number>>) () -> {
+      PVector<Number> v1 = TreePVector.<Number>empty().plus(new BigInteger("1")).plus(new BigInteger("2")).plus(new BigInteger("3")).plus(new BigInteger("4")).plus(new BigInteger("5")).plus(new BigInteger("6")).plus(new BigInteger("7")).plus(new BigInteger("8")).plus(new BigInteger("9")).plus(new BigInteger("10"));
+      return (PVector<Number>) TreePVector.<Number>from(v1.stream().filter(OH.predicate()).sorted(new Comparator<Number>() {
         public int compare(Number p0, Number p1) {
           return OH.compare(p1, p0);
         }
@@ -7595,11 +7595,11 @@ public class Generated_collections_Test {
    */
     @Test
   public void collectionListVal_item31_8273018919111564531() throws Throwable {
-    Assert.assertTrue("Expected: " + (Number) new BigInteger("55") + ", but was: " + (((_FunctionTypes._return_P0_E0<Number>) () -> {
-      PVector<Number> v1 = TreePVector.<Number>empty().plus((Number) new BigInteger("1")).plus((Number) new BigInteger("2")).plus((Number) new BigInteger("3")).plus((Number) new BigInteger("4")).plus((Number) new BigInteger("5")).plus((Number) new BigInteger("6")).plus((Number) new BigInteger("7")).plus((Number) new BigInteger("8")).plus((Number) new BigInteger("9")).plus((Number) new BigInteger("10"));
+    Assert.assertTrue("Expected: " + new BigInteger("55") + ", but was: " + (((_FunctionTypes._return_P0_E0<Number>) () -> {
+      PVector<Number> v1 = TreePVector.<Number>empty().plus(new BigInteger("1")).plus(new BigInteger("2")).plus(new BigInteger("3")).plus(new BigInteger("4")).plus(new BigInteger("5")).plus(new BigInteger("6")).plus(new BigInteger("7")).plus(new BigInteger("8")).plus(new BigInteger("9")).plus(new BigInteger("10"));
       return CollectionHelper.sumAsBigInteger(v1);
-    }).invoke()), EqualsTestOp.matches((Number) new BigInteger("55"), ((_FunctionTypes._return_P0_E0<Number>) () -> {
-      PVector<Number> v1 = TreePVector.<Number>empty().plus((Number) new BigInteger("1")).plus((Number) new BigInteger("2")).plus((Number) new BigInteger("3")).plus((Number) new BigInteger("4")).plus((Number) new BigInteger("5")).plus((Number) new BigInteger("6")).plus((Number) new BigInteger("7")).plus((Number) new BigInteger("8")).plus((Number) new BigInteger("9")).plus((Number) new BigInteger("10"));
+    }).invoke()), EqualsTestOp.matches(new BigInteger("55"), ((_FunctionTypes._return_P0_E0<Number>) () -> {
+      PVector<Number> v1 = TreePVector.<Number>empty().plus(new BigInteger("1")).plus(new BigInteger("2")).plus(new BigInteger("3")).plus(new BigInteger("4")).plus(new BigInteger("5")).plus(new BigInteger("6")).plus(new BigInteger("7")).plus(new BigInteger("8")).plus(new BigInteger("9")).plus(new BigInteger("10"));
       return CollectionHelper.sumAsBigInteger(v1);
     }).invoke()));
   }
@@ -7608,21 +7608,21 @@ public class Generated_collections_Test {
    */
     @Test
   public void collectionListVal_item32_8273018919111564537() throws Throwable {
-    Assert.assertEquals("Expected: " + TreePVector.<Number>empty().plus((Number) new BigInteger("10")) + ", but was: " + (((_FunctionTypes._return_P0_E0<PVector<Number>>) () -> {
-      final PVector<Number> v1 = TreePVector.<Number>empty().plus((Number) new BigInteger("1")).plus((Number) new BigInteger("2")).plus((Number) new BigInteger("3")).plus((Number) new BigInteger("4")).plus((Number) new BigInteger("5")).plus((Number) new BigInteger("6")).plus((Number) new BigInteger("7")).plus((Number) new BigInteger("8")).plus((Number) new BigInteger("9")).plus((Number) new BigInteger("10"));
+    Assert.assertEquals("Expected: " + TreePVector.<Number>empty().plus(new BigInteger("10")) + ", but was: " + (((_FunctionTypes._return_P0_E0<PVector<Number>>) () -> {
+      final PVector<Number> v1 = TreePVector.<Number>empty().plus(new BigInteger("1")).plus(new BigInteger("2")).plus(new BigInteger("3")).plus(new BigInteger("4")).plus(new BigInteger("5")).plus(new BigInteger("6")).plus(new BigInteger("7")).plus(new BigInteger("8")).plus(new BigInteger("9")).plus(new BigInteger("10"));
       return ((_FunctionTypes._return_P0_E0<PVector<Number>>) () -> {
         PVector<Number> origList = v1;
-        int noOfElements = ((Number) new BigInteger("1")).intValue();
+        int noOfElements = new BigInteger("1").intValue();
         if (origList.size() <= noOfElements) {
           return origList;
         }
         return origList.subList(origList.size() - noOfElements, origList.size());
       }).invoke();
-    }).invoke()), (Object) TreePVector.<Number>empty().plus((Number) new BigInteger("10")), (Object) ((_FunctionTypes._return_P0_E0<PVector<Number>>) () -> {
-      final PVector<Number> v1 = TreePVector.<Number>empty().plus((Number) new BigInteger("1")).plus((Number) new BigInteger("2")).plus((Number) new BigInteger("3")).plus((Number) new BigInteger("4")).plus((Number) new BigInteger("5")).plus((Number) new BigInteger("6")).plus((Number) new BigInteger("7")).plus((Number) new BigInteger("8")).plus((Number) new BigInteger("9")).plus((Number) new BigInteger("10"));
+    }).invoke()), TreePVector.<Number>empty().plus(new BigInteger("10")), (Object) ((_FunctionTypes._return_P0_E0<PVector<Number>>) () -> {
+      final PVector<Number> v1 = TreePVector.<Number>empty().plus(new BigInteger("1")).plus(new BigInteger("2")).plus(new BigInteger("3")).plus(new BigInteger("4")).plus(new BigInteger("5")).plus(new BigInteger("6")).plus(new BigInteger("7")).plus(new BigInteger("8")).plus(new BigInteger("9")).plus(new BigInteger("10"));
       return ((_FunctionTypes._return_P0_E0<PVector<Number>>) () -> {
         PVector<Number> origList = v1;
-        int noOfElements = ((Number) new BigInteger("1")).intValue();
+        int noOfElements = new BigInteger("1").intValue();
         if (origList.size() <= noOfElements) {
           return origList;
         }
@@ -7635,11 +7635,11 @@ public class Generated_collections_Test {
    */
     @Test
   public void collectionListVal_item33_8273018919111564545() throws Throwable {
-    Assert.assertEquals("Expected: " + TreePVector.<Number>empty().plus((Number) new BigInteger("1")).plus((Number) new BigInteger("2")).plus((Number) new BigInteger("3")).plus((Number) new BigInteger("4")).plus((Number) new BigInteger("5")).plus((Number) new BigInteger("6")).plus((Number) new BigInteger("7")).plus((Number) new BigInteger("8")).plus((Number) new BigInteger("9")).plus((Number) new BigInteger("10")) + ", but was: " + (((_FunctionTypes._return_P0_E0<TreePVector<Number>>) () -> {
-      PVector<Number> v1 = TreePVector.<Number>empty().plus((Number) new BigInteger("1")).plus((Number) new BigInteger("2")).plus((Number) new BigInteger("3")).plus((Number) new BigInteger("4")).plus((Number) new BigInteger("5")).plus((Number) new BigInteger("6")).plus((Number) new BigInteger("7")).plus((Number) new BigInteger("8")).plus((Number) new BigInteger("9")).plus((Number) new BigInteger("10"));
+    Assert.assertEquals("Expected: " + TreePVector.<Number>empty().plus(new BigInteger("1")).plus(new BigInteger("2")).plus(new BigInteger("3")).plus(new BigInteger("4")).plus(new BigInteger("5")).plus(new BigInteger("6")).plus(new BigInteger("7")).plus(new BigInteger("8")).plus(new BigInteger("9")).plus(new BigInteger("10")) + ", but was: " + (((_FunctionTypes._return_P0_E0<TreePVector<Number>>) () -> {
+      PVector<Number> v1 = TreePVector.<Number>empty().plus(new BigInteger("1")).plus(new BigInteger("2")).plus(new BigInteger("3")).plus(new BigInteger("4")).plus(new BigInteger("5")).plus(new BigInteger("6")).plus(new BigInteger("7")).plus(new BigInteger("8")).plus(new BigInteger("9")).plus(new BigInteger("10"));
       return TreePVector.from(v1);
-    }).invoke()), (Object) TreePVector.<Number>empty().plus((Number) new BigInteger("1")).plus((Number) new BigInteger("2")).plus((Number) new BigInteger("3")).plus((Number) new BigInteger("4")).plus((Number) new BigInteger("5")).plus((Number) new BigInteger("6")).plus((Number) new BigInteger("7")).plus((Number) new BigInteger("8")).plus((Number) new BigInteger("9")).plus((Number) new BigInteger("10")), (Object) ((_FunctionTypes._return_P0_E0<TreePVector<Number>>) () -> {
-      PVector<Number> v1 = TreePVector.<Number>empty().plus((Number) new BigInteger("1")).plus((Number) new BigInteger("2")).plus((Number) new BigInteger("3")).plus((Number) new BigInteger("4")).plus((Number) new BigInteger("5")).plus((Number) new BigInteger("6")).plus((Number) new BigInteger("7")).plus((Number) new BigInteger("8")).plus((Number) new BigInteger("9")).plus((Number) new BigInteger("10"));
+    }).invoke()), TreePVector.<Number>empty().plus(new BigInteger("1")).plus(new BigInteger("2")).plus(new BigInteger("3")).plus(new BigInteger("4")).plus(new BigInteger("5")).plus(new BigInteger("6")).plus(new BigInteger("7")).plus(new BigInteger("8")).plus(new BigInteger("9")).plus(new BigInteger("10")), (Object) ((_FunctionTypes._return_P0_E0<TreePVector<Number>>) () -> {
+      PVector<Number> v1 = TreePVector.<Number>empty().plus(new BigInteger("1")).plus(new BigInteger("2")).plus(new BigInteger("3")).plus(new BigInteger("4")).plus(new BigInteger("5")).plus(new BigInteger("6")).plus(new BigInteger("7")).plus(new BigInteger("8")).plus(new BigInteger("9")).plus(new BigInteger("10"));
       return TreePVector.from(v1);
     }).invoke());
   }
@@ -7649,10 +7649,10 @@ public class Generated_collections_Test {
     @Test
   public void collectionListVal_item34_8273018919111564561() throws Throwable {
     Assert.assertEquals("Expected: " + HashTreePSet.from(Arrays.asList((Number) new BigInteger("1"), (Number) new BigInteger("2"), (Number) new BigInteger("3"), (Number) new BigInteger("4"), (Number) new BigInteger("5"), (Number) new BigInteger("6"), (Number) new BigInteger("7"), (Number) new BigInteger("8"), (Number) new BigInteger("9"), (Number) new BigInteger("10"))) + ", but was: " + (((_FunctionTypes._return_P0_E0<MapPSet<Number>>) () -> {
-      PVector<Number> v1 = TreePVector.<Number>empty().plus((Number) new BigInteger("1")).plus((Number) new BigInteger("2")).plus((Number) new BigInteger("3")).plus((Number) new BigInteger("4")).plus((Number) new BigInteger("5")).plus((Number) new BigInteger("6")).plus((Number) new BigInteger("7")).plus((Number) new BigInteger("8")).plus((Number) new BigInteger("9")).plus((Number) new BigInteger("10"));
+      PVector<Number> v1 = TreePVector.<Number>empty().plus(new BigInteger("1")).plus(new BigInteger("2")).plus(new BigInteger("3")).plus(new BigInteger("4")).plus(new BigInteger("5")).plus(new BigInteger("6")).plus(new BigInteger("7")).plus(new BigInteger("8")).plus(new BigInteger("9")).plus(new BigInteger("10"));
       return HashTreePSet.from(v1);
-    }).invoke()), (Object) HashTreePSet.from(Arrays.asList((Number) new BigInteger("1"), (Number) new BigInteger("2"), (Number) new BigInteger("3"), (Number) new BigInteger("4"), (Number) new BigInteger("5"), (Number) new BigInteger("6"), (Number) new BigInteger("7"), (Number) new BigInteger("8"), (Number) new BigInteger("9"), (Number) new BigInteger("10"))), (Object) ((_FunctionTypes._return_P0_E0<MapPSet<Number>>) () -> {
-      PVector<Number> v1 = TreePVector.<Number>empty().plus((Number) new BigInteger("1")).plus((Number) new BigInteger("2")).plus((Number) new BigInteger("3")).plus((Number) new BigInteger("4")).plus((Number) new BigInteger("5")).plus((Number) new BigInteger("6")).plus((Number) new BigInteger("7")).plus((Number) new BigInteger("8")).plus((Number) new BigInteger("9")).plus((Number) new BigInteger("10"));
+    }).invoke()), HashTreePSet.from(Arrays.asList((Number) new BigInteger("1"), (Number) new BigInteger("2"), (Number) new BigInteger("3"), (Number) new BigInteger("4"), (Number) new BigInteger("5"), (Number) new BigInteger("6"), (Number) new BigInteger("7"), (Number) new BigInteger("8"), (Number) new BigInteger("9"), (Number) new BigInteger("10"))), (Object) ((_FunctionTypes._return_P0_E0<MapPSet<Number>>) () -> {
+      PVector<Number> v1 = TreePVector.<Number>empty().plus(new BigInteger("1")).plus(new BigInteger("2")).plus(new BigInteger("3")).plus(new BigInteger("4")).plus(new BigInteger("5")).plus(new BigInteger("6")).plus(new BigInteger("7")).plus(new BigInteger("8")).plus(new BigInteger("9")).plus(new BigInteger("10"));
       return HashTreePSet.from(v1);
     }).invoke());
   }
@@ -7661,15 +7661,15 @@ public class Generated_collections_Test {
    */
     @Test
   public void collectionListVal_item35_8273018919111564577() throws Throwable {
-    Assert.assertEquals("Expected: " + TreePVector.<Number>empty().plus((Number) new BigInteger("1")).plus((Number) new BigInteger("2")) + ", but was: " + (((_FunctionTypes._return_P0_E0<TreePVector<Number>>) () -> {
-      PVector<Number> v5 = TreePVector.<Number>empty().plus((Number) new BigInteger("1")).plus((Number) new BigInteger("2"));
+    Assert.assertEquals("Expected: " + TreePVector.<Number>empty().plus(new BigInteger("1")).plus(new BigInteger("2")) + ", but was: " + (((_FunctionTypes._return_P0_E0<TreePVector<Number>>) () -> {
+      PVector<Number> v5 = TreePVector.<Number>empty().plus(new BigInteger("1")).plus(new BigInteger("2"));
       return TreePVector.<Number>from(v5.stream().filter(new Predicate<Number>() {
         public boolean test(Number p0) {
           return p0 != null;
         }
       }).collect(Collectors.<Number>toList()));
-    }).invoke()), (Object) TreePVector.<Number>empty().plus((Number) new BigInteger("1")).plus((Number) new BigInteger("2")), (Object) ((_FunctionTypes._return_P0_E0<TreePVector<Number>>) () -> {
-      PVector<Number> v5 = TreePVector.<Number>empty().plus((Number) new BigInteger("1")).plus((Number) new BigInteger("2"));
+    }).invoke()), TreePVector.<Number>empty().plus(new BigInteger("1")).plus(new BigInteger("2")), (Object) ((_FunctionTypes._return_P0_E0<TreePVector<Number>>) () -> {
+      PVector<Number> v5 = TreePVector.<Number>empty().plus(new BigInteger("1")).plus(new BigInteger("2"));
       return TreePVector.<Number>from(v5.stream().filter(new Predicate<Number>() {
         public boolean test(Number p0) {
           return p0 != null;
@@ -7682,26 +7682,26 @@ public class Generated_collections_Test {
    */
     @Test
   public void collectionListVal_item36_8273018919111564585() throws Throwable {
-    Assert.assertEquals("Expected: " + TreePVector.<Number>empty().plus((Number) new BigInteger("1")).plus((Number) new BigInteger("2")) + ", but was: " + (((_FunctionTypes._return_P0_E0<TreePVector<Number>>) () -> {
-      PVector<Number> v1 = TreePVector.<Number>empty().plus((Number) new BigInteger("1")).plus((Number) new BigInteger("2")).plus((Number) new BigInteger("3")).plus((Number) new BigInteger("4")).plus((Number) new BigInteger("5")).plus((Number) new BigInteger("6")).plus((Number) new BigInteger("7")).plus((Number) new BigInteger("8")).plus((Number) new BigInteger("9")).plus((Number) new BigInteger("10"));
+    Assert.assertEquals("Expected: " + TreePVector.<Number>empty().plus(new BigInteger("1")).plus(new BigInteger("2")) + ", but was: " + (((_FunctionTypes._return_P0_E0<TreePVector<Number>>) () -> {
+      PVector<Number> v1 = TreePVector.<Number>empty().plus(new BigInteger("1")).plus(new BigInteger("2")).plus(new BigInteger("3")).plus(new BigInteger("4")).plus(new BigInteger("5")).plus(new BigInteger("6")).plus(new BigInteger("7")).plus(new BigInteger("8")).plus(new BigInteger("9")).plus(new BigInteger("10"));
       return TreePVector.<Number>from(v1.stream().filter(new Predicate<Number>() {
         public boolean test(Number o) {
           return new Function<ParameterSetWrapper, Boolean>() {
             public Boolean apply(ParameterSetWrapper param) {
               Number it = (Number) param.parameters.get(0);
-              return AH.isLess(it, (Number) new BigInteger("3"));
+              return AH.isLess(it, new BigInteger("3"));
             }
           }.apply(new ParameterSetWrapper(o));
         }
       }).collect(Collectors.<Number>toList()));
-    }).invoke()), (Object) TreePVector.<Number>empty().plus((Number) new BigInteger("1")).plus((Number) new BigInteger("2")), (Object) ((_FunctionTypes._return_P0_E0<TreePVector<Number>>) () -> {
-      PVector<Number> v1 = TreePVector.<Number>empty().plus((Number) new BigInteger("1")).plus((Number) new BigInteger("2")).plus((Number) new BigInteger("3")).plus((Number) new BigInteger("4")).plus((Number) new BigInteger("5")).plus((Number) new BigInteger("6")).plus((Number) new BigInteger("7")).plus((Number) new BigInteger("8")).plus((Number) new BigInteger("9")).plus((Number) new BigInteger("10"));
+    }).invoke()), TreePVector.<Number>empty().plus(new BigInteger("1")).plus(new BigInteger("2")), (Object) ((_FunctionTypes._return_P0_E0<TreePVector<Number>>) () -> {
+      PVector<Number> v1 = TreePVector.<Number>empty().plus(new BigInteger("1")).plus(new BigInteger("2")).plus(new BigInteger("3")).plus(new BigInteger("4")).plus(new BigInteger("5")).plus(new BigInteger("6")).plus(new BigInteger("7")).plus(new BigInteger("8")).plus(new BigInteger("9")).plus(new BigInteger("10"));
       return TreePVector.<Number>from(v1.stream().filter(new Predicate<Number>() {
         public boolean test(Number o) {
           return new Function<ParameterSetWrapper, Boolean>() {
             public Boolean apply(ParameterSetWrapper param) {
               Number it = (Number) param.parameters.get(0);
-              return AH.isLess(it, (Number) new BigInteger("3"));
+              return AH.isLess(it, new BigInteger("3"));
             }
           }.apply(new ParameterSetWrapper(o));
         }
@@ -7713,26 +7713,26 @@ public class Generated_collections_Test {
    */
     @Test
   public void collectionListVal_item37_8273018919111564597() throws Throwable {
-    Assert.assertEquals("Expected: " + TreePVector.<Number>empty().plus((Number) new BigInteger("1")).plus((Number) new BigInteger("2")) + ", but was: " + (((_FunctionTypes._return_P0_E0<TreePVector<Number>>) () -> {
-      PVector<Number> v1 = TreePVector.<Number>empty().plus((Number) new BigInteger("1")).plus((Number) new BigInteger("2")).plus((Number) new BigInteger("3")).plus((Number) new BigInteger("4")).plus((Number) new BigInteger("5")).plus((Number) new BigInteger("6")).plus((Number) new BigInteger("7")).plus((Number) new BigInteger("8")).plus((Number) new BigInteger("9")).plus((Number) new BigInteger("10"));
+    Assert.assertEquals("Expected: " + TreePVector.<Number>empty().plus(new BigInteger("1")).plus(new BigInteger("2")) + ", but was: " + (((_FunctionTypes._return_P0_E0<TreePVector<Number>>) () -> {
+      PVector<Number> v1 = TreePVector.<Number>empty().plus(new BigInteger("1")).plus(new BigInteger("2")).plus(new BigInteger("3")).plus(new BigInteger("4")).plus(new BigInteger("5")).plus(new BigInteger("6")).plus(new BigInteger("7")).plus(new BigInteger("8")).plus(new BigInteger("9")).plus(new BigInteger("10"));
       return TreePVector.<Number>from(v1.stream().filter(new Predicate<Number>() {
         public boolean test(Number o) {
           return new Function<ParameterSetWrapper, Boolean>() {
             public Boolean apply(ParameterSetWrapper param) {
               Number a = (Number) param.parameters.get(0);
-              return AH.isLess(a, (Number) new BigInteger("3"));
+              return AH.isLess(a, new BigInteger("3"));
             }
           }.apply(new ParameterSetWrapper(o));
         }
       }).collect(Collectors.<Number>toList()));
-    }).invoke()), (Object) TreePVector.<Number>empty().plus((Number) new BigInteger("1")).plus((Number) new BigInteger("2")), (Object) ((_FunctionTypes._return_P0_E0<TreePVector<Number>>) () -> {
-      PVector<Number> v1 = TreePVector.<Number>empty().plus((Number) new BigInteger("1")).plus((Number) new BigInteger("2")).plus((Number) new BigInteger("3")).plus((Number) new BigInteger("4")).plus((Number) new BigInteger("5")).plus((Number) new BigInteger("6")).plus((Number) new BigInteger("7")).plus((Number) new BigInteger("8")).plus((Number) new BigInteger("9")).plus((Number) new BigInteger("10"));
+    }).invoke()), TreePVector.<Number>empty().plus(new BigInteger("1")).plus(new BigInteger("2")), (Object) ((_FunctionTypes._return_P0_E0<TreePVector<Number>>) () -> {
+      PVector<Number> v1 = TreePVector.<Number>empty().plus(new BigInteger("1")).plus(new BigInteger("2")).plus(new BigInteger("3")).plus(new BigInteger("4")).plus(new BigInteger("5")).plus(new BigInteger("6")).plus(new BigInteger("7")).plus(new BigInteger("8")).plus(new BigInteger("9")).plus(new BigInteger("10"));
       return TreePVector.<Number>from(v1.stream().filter(new Predicate<Number>() {
         public boolean test(Number o) {
           return new Function<ParameterSetWrapper, Boolean>() {
             public Boolean apply(ParameterSetWrapper param) {
               Number a = (Number) param.parameters.get(0);
-              return AH.isLess(a, (Number) new BigInteger("3"));
+              return AH.isLess(a, new BigInteger("3"));
             }
           }.apply(new ParameterSetWrapper(o));
         }
@@ -7744,8 +7744,8 @@ public class Generated_collections_Test {
    */
     @Test
   public void collectionListVal_item38_8273018919111564612() throws Throwable {
-    Assert.assertEquals("Expected: " + TreePVector.<Number>empty().plus((Number) new BigInteger("1")).plus((Number) new BigInteger("2")).plus((Number) new BigInteger("3")).plus((Number) new BigInteger("4")).plus((Number) new BigInteger("5")).plus((Number) new BigInteger("6")).plus((Number) new BigInteger("7")).plus((Number) new BigInteger("8")).plus((Number) new BigInteger("9")).plus((Number) new BigInteger("10")) + ", but was: " + (((_FunctionTypes._return_P0_E0<TreePVector<Number>>) () -> {
-      PVector<Number> v1 = TreePVector.<Number>empty().plus((Number) new BigInteger("1")).plus((Number) new BigInteger("2")).plus((Number) new BigInteger("3")).plus((Number) new BigInteger("4")).plus((Number) new BigInteger("5")).plus((Number) new BigInteger("6")).plus((Number) new BigInteger("7")).plus((Number) new BigInteger("8")).plus((Number) new BigInteger("9")).plus((Number) new BigInteger("10"));
+    Assert.assertEquals("Expected: " + TreePVector.<Number>empty().plus(new BigInteger("1")).plus(new BigInteger("2")).plus(new BigInteger("3")).plus(new BigInteger("4")).plus(new BigInteger("5")).plus(new BigInteger("6")).plus(new BigInteger("7")).plus(new BigInteger("8")).plus(new BigInteger("9")).plus(new BigInteger("10")) + ", but was: " + (((_FunctionTypes._return_P0_E0<TreePVector<Number>>) () -> {
+      PVector<Number> v1 = TreePVector.<Number>empty().plus(new BigInteger("1")).plus(new BigInteger("2")).plus(new BigInteger("3")).plus(new BigInteger("4")).plus(new BigInteger("5")).plus(new BigInteger("6")).plus(new BigInteger("7")).plus(new BigInteger("8")).plus(new BigInteger("9")).plus(new BigInteger("10"));
       return TreePVector.<Number>from(v1.stream().filter(new Predicate<Number>() {
         public boolean test(Number o) {
           return new Function<ParameterSetWrapper, Boolean>() {
@@ -7755,8 +7755,8 @@ public class Generated_collections_Test {
           }.apply(new ParameterSetWrapper(o));
         }
       }).collect(Collectors.<Number>toList()));
-    }).invoke()), (Object) TreePVector.<Number>empty().plus((Number) new BigInteger("1")).plus((Number) new BigInteger("2")).plus((Number) new BigInteger("3")).plus((Number) new BigInteger("4")).plus((Number) new BigInteger("5")).plus((Number) new BigInteger("6")).plus((Number) new BigInteger("7")).plus((Number) new BigInteger("8")).plus((Number) new BigInteger("9")).plus((Number) new BigInteger("10")), (Object) ((_FunctionTypes._return_P0_E0<TreePVector<Number>>) () -> {
-      PVector<Number> v1 = TreePVector.<Number>empty().plus((Number) new BigInteger("1")).plus((Number) new BigInteger("2")).plus((Number) new BigInteger("3")).plus((Number) new BigInteger("4")).plus((Number) new BigInteger("5")).plus((Number) new BigInteger("6")).plus((Number) new BigInteger("7")).plus((Number) new BigInteger("8")).plus((Number) new BigInteger("9")).plus((Number) new BigInteger("10"));
+    }).invoke()), TreePVector.<Number>empty().plus(new BigInteger("1")).plus(new BigInteger("2")).plus(new BigInteger("3")).plus(new BigInteger("4")).plus(new BigInteger("5")).plus(new BigInteger("6")).plus(new BigInteger("7")).plus(new BigInteger("8")).plus(new BigInteger("9")).plus(new BigInteger("10")), (Object) ((_FunctionTypes._return_P0_E0<TreePVector<Number>>) () -> {
+      PVector<Number> v1 = TreePVector.<Number>empty().plus(new BigInteger("1")).plus(new BigInteger("2")).plus(new BigInteger("3")).plus(new BigInteger("4")).plus(new BigInteger("5")).plus(new BigInteger("6")).plus(new BigInteger("7")).plus(new BigInteger("8")).plus(new BigInteger("9")).plus(new BigInteger("10"));
       return TreePVector.<Number>from(v1.stream().filter(new Predicate<Number>() {
         public boolean test(Number o) {
           return new Function<ParameterSetWrapper, Boolean>() {
@@ -7773,12 +7773,12 @@ public class Generated_collections_Test {
    */
     @Test
   public void collectionListVal_item39_8273018919111564629() throws Throwable {
-    Assert.assertEquals("Expected: " + TreePVector.<Number>empty().plus((Number) new BigInteger("1")).plus((Number) new BigInteger("2")).plus((Number) new BigInteger("3")).plus((Number) new BigInteger("4")).plus((Number) new BigInteger("5")).plus((Number) new BigInteger("6")).plus((Number) new BigInteger("7")).plus((Number) new BigInteger("8")).plus((Number) new BigInteger("9")).plus((Number) new BigInteger("10")).plus((Number) new BigInteger("11")) + ", but was: " + (((_FunctionTypes._return_P0_E0<PVector<Number>>) () -> {
-      PVector<Number> v6 = TreePVector.<Number>empty().plus((Number) new BigInteger("1")).plus((Number) new BigInteger("2")).plus((Number) new BigInteger("3")).plus((Number) new BigInteger("4")).plus((Number) new BigInteger("5")).plus((Number) new BigInteger("6")).plus((Number) new BigInteger("7")).plus((Number) new BigInteger("8")).plus((Number) new BigInteger("9")).plus((Number) new BigInteger("10"));
-      return v6.plus((Number) new BigInteger("11"));
-    }).invoke()), (Object) TreePVector.<Number>empty().plus((Number) new BigInteger("1")).plus((Number) new BigInteger("2")).plus((Number) new BigInteger("3")).plus((Number) new BigInteger("4")).plus((Number) new BigInteger("5")).plus((Number) new BigInteger("6")).plus((Number) new BigInteger("7")).plus((Number) new BigInteger("8")).plus((Number) new BigInteger("9")).plus((Number) new BigInteger("10")).plus((Number) new BigInteger("11")), (Object) ((_FunctionTypes._return_P0_E0<PVector<Number>>) () -> {
-      PVector<Number> v6 = TreePVector.<Number>empty().plus((Number) new BigInteger("1")).plus((Number) new BigInteger("2")).plus((Number) new BigInteger("3")).plus((Number) new BigInteger("4")).plus((Number) new BigInteger("5")).plus((Number) new BigInteger("6")).plus((Number) new BigInteger("7")).plus((Number) new BigInteger("8")).plus((Number) new BigInteger("9")).plus((Number) new BigInteger("10"));
-      return v6.plus((Number) new BigInteger("11"));
+    Assert.assertEquals("Expected: " + TreePVector.<Number>empty().plus(new BigInteger("1")).plus(new BigInteger("2")).plus(new BigInteger("3")).plus(new BigInteger("4")).plus(new BigInteger("5")).plus(new BigInteger("6")).plus(new BigInteger("7")).plus(new BigInteger("8")).plus(new BigInteger("9")).plus(new BigInteger("10")).plus(new BigInteger("11")) + ", but was: " + (((_FunctionTypes._return_P0_E0<PVector<Number>>) () -> {
+      PVector<Number> v6 = TreePVector.<Number>empty().plus(new BigInteger("1")).plus(new BigInteger("2")).plus(new BigInteger("3")).plus(new BigInteger("4")).plus(new BigInteger("5")).plus(new BigInteger("6")).plus(new BigInteger("7")).plus(new BigInteger("8")).plus(new BigInteger("9")).plus(new BigInteger("10"));
+      return v6.plus(new BigInteger("11"));
+    }).invoke()), TreePVector.<Number>empty().plus(new BigInteger("1")).plus(new BigInteger("2")).plus(new BigInteger("3")).plus(new BigInteger("4")).plus(new BigInteger("5")).plus(new BigInteger("6")).plus(new BigInteger("7")).plus(new BigInteger("8")).plus(new BigInteger("9")).plus(new BigInteger("10")).plus(new BigInteger("11")), (Object) ((_FunctionTypes._return_P0_E0<PVector<Number>>) () -> {
+      PVector<Number> v6 = TreePVector.<Number>empty().plus(new BigInteger("1")).plus(new BigInteger("2")).plus(new BigInteger("3")).plus(new BigInteger("4")).plus(new BigInteger("5")).plus(new BigInteger("6")).plus(new BigInteger("7")).plus(new BigInteger("8")).plus(new BigInteger("9")).plus(new BigInteger("10"));
+      return v6.plus(new BigInteger("11"));
     }).invoke());
   }
 /* 
@@ -7786,12 +7786,12 @@ public class Generated_collections_Test {
    */
     @Test
   public void collectionListVal_item40_8273018919111564647() throws Throwable {
-    Assert.assertEquals("Expected: " + TreePVector.<Number>empty().plus((Number) new BigInteger("1")).plus((Number) new BigInteger("2")).plus((Number) new BigInteger("3")).plus((Number) new BigInteger("4")).plus((Number) new BigInteger("5")).plus((Number) new BigInteger("6")).plus((Number) new BigInteger("7")).plus((Number) new BigInteger("8")).plus((Number) new BigInteger("9")).plus((Number) new BigInteger("10")).plus((Number) new BigInteger("11")).plus((Number) new BigInteger("12")) + ", but was: " + (((_FunctionTypes._return_P0_E0<PVector<Number>>) () -> {
-      PVector<Number> v7 = TreePVector.<Number>empty().plus((Number) new BigInteger("1")).plus((Number) new BigInteger("2")).plus((Number) new BigInteger("3")).plus((Number) new BigInteger("4")).plus((Number) new BigInteger("5")).plus((Number) new BigInteger("6")).plus((Number) new BigInteger("7")).plus((Number) new BigInteger("8")).plus((Number) new BigInteger("9")).plus((Number) new BigInteger("10"));
-      return v7.plusAll(TreePVector.<Number>empty().plus((Number) new BigInteger("11")).plus((Number) new BigInteger("12")));
-    }).invoke()), (Object) TreePVector.<Number>empty().plus((Number) new BigInteger("1")).plus((Number) new BigInteger("2")).plus((Number) new BigInteger("3")).plus((Number) new BigInteger("4")).plus((Number) new BigInteger("5")).plus((Number) new BigInteger("6")).plus((Number) new BigInteger("7")).plus((Number) new BigInteger("8")).plus((Number) new BigInteger("9")).plus((Number) new BigInteger("10")).plus((Number) new BigInteger("11")).plus((Number) new BigInteger("12")), (Object) ((_FunctionTypes._return_P0_E0<PVector<Number>>) () -> {
-      PVector<Number> v7 = TreePVector.<Number>empty().plus((Number) new BigInteger("1")).plus((Number) new BigInteger("2")).plus((Number) new BigInteger("3")).plus((Number) new BigInteger("4")).plus((Number) new BigInteger("5")).plus((Number) new BigInteger("6")).plus((Number) new BigInteger("7")).plus((Number) new BigInteger("8")).plus((Number) new BigInteger("9")).plus((Number) new BigInteger("10"));
-      return v7.plusAll(TreePVector.<Number>empty().plus((Number) new BigInteger("11")).plus((Number) new BigInteger("12")));
+    Assert.assertEquals("Expected: " + TreePVector.<Number>empty().plus(new BigInteger("1")).plus(new BigInteger("2")).plus(new BigInteger("3")).plus(new BigInteger("4")).plus(new BigInteger("5")).plus(new BigInteger("6")).plus(new BigInteger("7")).plus(new BigInteger("8")).plus(new BigInteger("9")).plus(new BigInteger("10")).plus(new BigInteger("11")).plus(new BigInteger("12")) + ", but was: " + (((_FunctionTypes._return_P0_E0<PVector<Number>>) () -> {
+      PVector<Number> v7 = TreePVector.<Number>empty().plus(new BigInteger("1")).plus(new BigInteger("2")).plus(new BigInteger("3")).plus(new BigInteger("4")).plus(new BigInteger("5")).plus(new BigInteger("6")).plus(new BigInteger("7")).plus(new BigInteger("8")).plus(new BigInteger("9")).plus(new BigInteger("10"));
+      return v7.plusAll(TreePVector.<Number>empty().plus(new BigInteger("11")).plus(new BigInteger("12")));
+    }).invoke()), TreePVector.<Number>empty().plus(new BigInteger("1")).plus(new BigInteger("2")).plus(new BigInteger("3")).plus(new BigInteger("4")).plus(new BigInteger("5")).plus(new BigInteger("6")).plus(new BigInteger("7")).plus(new BigInteger("8")).plus(new BigInteger("9")).plus(new BigInteger("10")).plus(new BigInteger("11")).plus(new BigInteger("12")), (Object) ((_FunctionTypes._return_P0_E0<PVector<Number>>) () -> {
+      PVector<Number> v7 = TreePVector.<Number>empty().plus(new BigInteger("1")).plus(new BigInteger("2")).plus(new BigInteger("3")).plus(new BigInteger("4")).plus(new BigInteger("5")).plus(new BigInteger("6")).plus(new BigInteger("7")).plus(new BigInteger("8")).plus(new BigInteger("9")).plus(new BigInteger("10"));
+      return v7.plusAll(TreePVector.<Number>empty().plus(new BigInteger("11")).plus(new BigInteger("12")));
     }).invoke());
   }
 /* 
@@ -7799,11 +7799,11 @@ public class Generated_collections_Test {
    */
     @Test
   public void collectionListVal_item41_32857128013764853() throws Throwable {
-    Assert.assertEquals("Expected: " + TreePVector.<Number>empty().plus((Number) new BigInteger("1")).plus((Number) new BigInteger("2")).plus((Number) new BigInteger("3")).plus((Number) new BigInteger("4")).plus((Number) new BigInteger("5")).plus((Number) new BigInteger("6")).plus((Number) new BigInteger("7")).plus((Number) new BigInteger("8")).plus((Number) new BigInteger("9")) + ", but was: " + (((_FunctionTypes._return_P0_E0<PVector<Number>>) () -> {
-      PVector<Number> v1 = TreePVector.<Number>empty().plus((Number) new BigInteger("1")).plus((Number) new BigInteger("2")).plus((Number) new BigInteger("3")).plus((Number) new BigInteger("4")).plus((Number) new BigInteger("5")).plus((Number) new BigInteger("6")).plus((Number) new BigInteger("7")).plus((Number) new BigInteger("8")).plus((Number) new BigInteger("9")).plus((Number) new BigInteger("10"));
+    Assert.assertEquals("Expected: " + TreePVector.<Number>empty().plus(new BigInteger("1")).plus(new BigInteger("2")).plus(new BigInteger("3")).plus(new BigInteger("4")).plus(new BigInteger("5")).plus(new BigInteger("6")).plus(new BigInteger("7")).plus(new BigInteger("8")).plus(new BigInteger("9")) + ", but was: " + (((_FunctionTypes._return_P0_E0<PVector<Number>>) () -> {
+      PVector<Number> v1 = TreePVector.<Number>empty().plus(new BigInteger("1")).plus(new BigInteger("2")).plus(new BigInteger("3")).plus(new BigInteger("4")).plus(new BigInteger("5")).plus(new BigInteger("6")).plus(new BigInteger("7")).plus(new BigInteger("8")).plus(new BigInteger("9")).plus(new BigInteger("10"));
       return v1.minus((Number) new BigInteger("10"));
-    }).invoke()), (Object) TreePVector.<Number>empty().plus((Number) new BigInteger("1")).plus((Number) new BigInteger("2")).plus((Number) new BigInteger("3")).plus((Number) new BigInteger("4")).plus((Number) new BigInteger("5")).plus((Number) new BigInteger("6")).plus((Number) new BigInteger("7")).plus((Number) new BigInteger("8")).plus((Number) new BigInteger("9")), (Object) ((_FunctionTypes._return_P0_E0<PVector<Number>>) () -> {
-      PVector<Number> v1 = TreePVector.<Number>empty().plus((Number) new BigInteger("1")).plus((Number) new BigInteger("2")).plus((Number) new BigInteger("3")).plus((Number) new BigInteger("4")).plus((Number) new BigInteger("5")).plus((Number) new BigInteger("6")).plus((Number) new BigInteger("7")).plus((Number) new BigInteger("8")).plus((Number) new BigInteger("9")).plus((Number) new BigInteger("10"));
+    }).invoke()), TreePVector.<Number>empty().plus(new BigInteger("1")).plus(new BigInteger("2")).plus(new BigInteger("3")).plus(new BigInteger("4")).plus(new BigInteger("5")).plus(new BigInteger("6")).plus(new BigInteger("7")).plus(new BigInteger("8")).plus(new BigInteger("9")), (Object) ((_FunctionTypes._return_P0_E0<PVector<Number>>) () -> {
+      PVector<Number> v1 = TreePVector.<Number>empty().plus(new BigInteger("1")).plus(new BigInteger("2")).plus(new BigInteger("3")).plus(new BigInteger("4")).plus(new BigInteger("5")).plus(new BigInteger("6")).plus(new BigInteger("7")).plus(new BigInteger("8")).plus(new BigInteger("9")).plus(new BigInteger("10"));
       return v1.minus((Number) new BigInteger("10"));
     }).invoke());
   }
@@ -7819,7 +7819,7 @@ public class Generated_collections_Test {
           return new Function<ParameterSetWrapper, Boolean>() {
             public Boolean apply(ParameterSetWrapper param) {
               Number it = (Number) param.parameters.get(0);
-              return AH.isLess(it, (Number) new BigInteger("3"));
+              return AH.isLess(it, new BigInteger("3"));
             }
           }.apply(new ParameterSetWrapper(o));
         }
@@ -7831,7 +7831,7 @@ public class Generated_collections_Test {
           return new Function<ParameterSetWrapper, Boolean>() {
             public Boolean apply(ParameterSetWrapper param) {
               Number it = (Number) param.parameters.get(0);
-              return AH.isLess(it, (Number) new BigInteger("3"));
+              return AH.isLess(it, new BigInteger("3"));
             }
           }.apply(new ParameterSetWrapper(o));
         }
@@ -7850,7 +7850,7 @@ public class Generated_collections_Test {
           return new Function<ParameterSetWrapper, Boolean>() {
             public Boolean apply(ParameterSetWrapper param) {
               Number a = (Number) param.parameters.get(0);
-              return AH.isLess(a, (Number) new BigInteger("11"));
+              return AH.isLess(a, new BigInteger("11"));
             }
           }.apply(new ParameterSetWrapper(o));
         }
@@ -7862,7 +7862,7 @@ public class Generated_collections_Test {
           return new Function<ParameterSetWrapper, Boolean>() {
             public Boolean apply(ParameterSetWrapper param) {
               Number a = (Number) param.parameters.get(0);
-              return AH.isLess(a, (Number) new BigInteger("11"));
+              return AH.isLess(a, new BigInteger("11"));
             }
           }.apply(new ParameterSetWrapper(o));
         }
@@ -7910,7 +7910,7 @@ public class Generated_collections_Test {
           return new Function<ParameterSetWrapper, Boolean>() {
             public Boolean apply(ParameterSetWrapper param) {
               Number it = (Number) param.parameters.get(0);
-              return AH.isLess(it, (Number) new BigInteger("3"));
+              return AH.isLess(it, new BigInteger("3"));
             }
           }.apply(new ParameterSetWrapper(o));
         }
@@ -7922,7 +7922,7 @@ public class Generated_collections_Test {
           return new Function<ParameterSetWrapper, Boolean>() {
             public Boolean apply(ParameterSetWrapper param) {
               Number it = (Number) param.parameters.get(0);
-              return AH.isLess(it, (Number) new BigInteger("3"));
+              return AH.isLess(it, new BigInteger("3"));
             }
           }.apply(new ParameterSetWrapper(o));
         }
@@ -7941,7 +7941,7 @@ public class Generated_collections_Test {
           return new Function<ParameterSetWrapper, Boolean>() {
             public Boolean apply(ParameterSetWrapper param) {
               Number a = (Number) param.parameters.get(0);
-              return AH.isGreater(a, (Number) new BigInteger("11"));
+              return AH.isGreater(a, new BigInteger("11"));
             }
           }.apply(new ParameterSetWrapper(o));
         }
@@ -7953,7 +7953,7 @@ public class Generated_collections_Test {
           return new Function<ParameterSetWrapper, Boolean>() {
             public Boolean apply(ParameterSetWrapper param) {
               Number a = (Number) param.parameters.get(0);
-              return AH.isGreater(a, (Number) new BigInteger("11"));
+              return AH.isGreater(a, new BigInteger("11"));
             }
           }.apply(new ParameterSetWrapper(o));
         }
@@ -7996,10 +7996,10 @@ public class Generated_collections_Test {
   public void collectionSetVal_item6_2222610632219047485() throws Throwable {
     Assert.assertEquals("Expected: " + true + ", but was: " + (((_FunctionTypes._return_P0_E0<Boolean>) () -> {
       PSet<Number> v1 = HashTreePSet.from(Arrays.asList((Number) new BigInteger("1"), (Number) new BigInteger("2"), (Number) new BigInteger("3"), (Number) new BigInteger("4"), (Number) new BigInteger("5"), (Number) new BigInteger("6"), (Number) new BigInteger("7"), (Number) new BigInteger("8"), (Number) new BigInteger("9"), (Number) new BigInteger("10")));
-      return v1.contains((Number) new BigInteger("6"));
+      return v1.contains(new BigInteger("6"));
     }).invoke()), (Object) true, (Object) ((_FunctionTypes._return_P0_E0<Boolean>) () -> {
       PSet<Number> v1 = HashTreePSet.from(Arrays.asList((Number) new BigInteger("1"), (Number) new BigInteger("2"), (Number) new BigInteger("3"), (Number) new BigInteger("4"), (Number) new BigInteger("5"), (Number) new BigInteger("6"), (Number) new BigInteger("7"), (Number) new BigInteger("8"), (Number) new BigInteger("9"), (Number) new BigInteger("10")));
-      return v1.contains((Number) new BigInteger("6"));
+      return v1.contains(new BigInteger("6"));
     }).invoke());
   }
 /* 
@@ -8007,10 +8007,10 @@ public class Generated_collections_Test {
    */
     @Test
   public void collectionSetVal_item7_2222610632219047505() throws Throwable {
-    Assert.assertEquals("Expected: " + TreePVector.<Number>empty().plus((Number) new BigInteger("1")).plus((Number) new BigInteger("2")).plus((Number) new BigInteger("3")).plus((Number) new BigInteger("4")).plus((Number) new BigInteger("5")).plus((Number) new BigInteger("6")).plus((Number) new BigInteger("7")).plus((Number) new BigInteger("8")).plus((Number) new BigInteger("9")).plus((Number) new BigInteger("10")) + ", but was: " + (((_FunctionTypes._return_P0_E0<TreePVector<Number>>) () -> {
+    Assert.assertEquals("Expected: " + TreePVector.<Number>empty().plus(new BigInteger("1")).plus(new BigInteger("2")).plus(new BigInteger("3")).plus(new BigInteger("4")).plus(new BigInteger("5")).plus(new BigInteger("6")).plus(new BigInteger("7")).plus(new BigInteger("8")).plus(new BigInteger("9")).plus(new BigInteger("10")) + ", but was: " + (((_FunctionTypes._return_P0_E0<TreePVector<Number>>) () -> {
       PSet<Number> v1 = HashTreePSet.from(Arrays.asList((Number) new BigInteger("1"), (Number) new BigInteger("2"), (Number) new BigInteger("3"), (Number) new BigInteger("4"), (Number) new BigInteger("5"), (Number) new BigInteger("6"), (Number) new BigInteger("7"), (Number) new BigInteger("8"), (Number) new BigInteger("9"), (Number) new BigInteger("10")));
       return TreePVector.<Number>from(v1.stream().distinct().collect(Collectors.<Number>toList()));
-    }).invoke()), (Object) TreePVector.<Number>empty().plus((Number) new BigInteger("1")).plus((Number) new BigInteger("2")).plus((Number) new BigInteger("3")).plus((Number) new BigInteger("4")).plus((Number) new BigInteger("5")).plus((Number) new BigInteger("6")).plus((Number) new BigInteger("7")).plus((Number) new BigInteger("8")).plus((Number) new BigInteger("9")).plus((Number) new BigInteger("10")), (Object) ((_FunctionTypes._return_P0_E0<TreePVector<Number>>) () -> {
+    }).invoke()), TreePVector.<Number>empty().plus(new BigInteger("1")).plus(new BigInteger("2")).plus(new BigInteger("3")).plus(new BigInteger("4")).plus(new BigInteger("5")).plus(new BigInteger("6")).plus(new BigInteger("7")).plus(new BigInteger("8")).plus(new BigInteger("9")).plus(new BigInteger("10")), (Object) ((_FunctionTypes._return_P0_E0<TreePVector<Number>>) () -> {
       PSet<Number> v1 = HashTreePSet.from(Arrays.asList((Number) new BigInteger("1"), (Number) new BigInteger("2"), (Number) new BigInteger("3"), (Number) new BigInteger("4"), (Number) new BigInteger("5"), (Number) new BigInteger("6"), (Number) new BigInteger("7"), (Number) new BigInteger("8"), (Number) new BigInteger("9"), (Number) new BigInteger("10")));
       return TreePVector.<Number>from(v1.stream().distinct().collect(Collectors.<Number>toList()));
     }).invoke());
@@ -8020,8 +8020,8 @@ public class Generated_collections_Test {
    */
     @Test
   public void collectionSetVal_item8_2222610632219047622() throws Throwable {
-    Assert.assertEquals("Expected: " + TreePVector.<Number>empty().plus((Number) new BigInteger("1")).plus((Number) new BigInteger("2")).plus((Number) new BigInteger("3")).plus((Number) new BigInteger("4")) + ", but was: " + (((_FunctionTypes._return_P0_E0<PVector<Number>>) () -> {
-      final PVector<PVector<Number>> v3 = TreePVector.<PVector<Number>>empty().plus(TreePVector.<Number>empty().plus((Number) new BigInteger("1"))).plus(TreePVector.<Number>empty().plus((Number) new BigInteger("2"))).plus(TreePVector.<Number>empty().plus((Number) new BigInteger("3"))).plus(TreePVector.<Number>empty().plus((Number) new BigInteger("4")));
+    Assert.assertEquals("Expected: " + TreePVector.<Number>empty().plus(new BigInteger("1")).plus(new BigInteger("2")).plus(new BigInteger("3")).plus(new BigInteger("4")) + ", but was: " + (((_FunctionTypes._return_P0_E0<PVector<Number>>) () -> {
+      final PVector<PVector<Number>> v3 = TreePVector.<PVector<Number>>empty().plus(TreePVector.<Number>empty().plus(new BigInteger("1"))).plus(TreePVector.<Number>empty().plus(new BigInteger("2"))).plus(TreePVector.<Number>empty().plus(new BigInteger("3"))).plus(TreePVector.<Number>empty().plus(new BigInteger("4")));
       return ((_FunctionTypes._return_P0_E0<PVector<Number>>) () -> {
         List<Number> r = new ArrayList<Number>();
         for (PVector<Number> coll : ListSequence.fromList(v3)) {
@@ -8030,8 +8030,8 @@ public class Generated_collections_Test {
         PVector<Number> result = TreePVector.<Number>from(r);
         return result;
       }).invoke();
-    }).invoke()), (Object) TreePVector.<Number>empty().plus((Number) new BigInteger("1")).plus((Number) new BigInteger("2")).plus((Number) new BigInteger("3")).plus((Number) new BigInteger("4")), (Object) ((_FunctionTypes._return_P0_E0<PVector<Number>>) () -> {
-      final PVector<PVector<Number>> v3 = TreePVector.<PVector<Number>>empty().plus(TreePVector.<Number>empty().plus((Number) new BigInteger("1"))).plus(TreePVector.<Number>empty().plus((Number) new BigInteger("2"))).plus(TreePVector.<Number>empty().plus((Number) new BigInteger("3"))).plus(TreePVector.<Number>empty().plus((Number) new BigInteger("4")));
+    }).invoke()), TreePVector.<Number>empty().plus(new BigInteger("1")).plus(new BigInteger("2")).plus(new BigInteger("3")).plus(new BigInteger("4")), (Object) ((_FunctionTypes._return_P0_E0<PVector<Number>>) () -> {
+      final PVector<PVector<Number>> v3 = TreePVector.<PVector<Number>>empty().plus(TreePVector.<Number>empty().plus(new BigInteger("1"))).plus(TreePVector.<Number>empty().plus(new BigInteger("2"))).plus(TreePVector.<Number>empty().plus(new BigInteger("3"))).plus(TreePVector.<Number>empty().plus(new BigInteger("4")));
       return ((_FunctionTypes._return_P0_E0<PVector<Number>>) () -> {
         List<Number> r = new ArrayList<Number>();
         for (PVector<Number> coll : ListSequence.fromList(v3)) {
@@ -8047,19 +8047,19 @@ public class Generated_collections_Test {
    */
     @Test
   public void collectionSetVal_item9_2222610632219047643() throws Throwable {
-    Assert.assertTrue("Expected: " + (Number) new BigInteger("55") + ", but was: " + (((_FunctionTypes._return_P0_E0<Number>) () -> {
+    Assert.assertTrue("Expected: " + new BigInteger("55") + ", but was: " + (((_FunctionTypes._return_P0_E0<Number>) () -> {
       final PSet<Number> v1 = HashTreePSet.from(Arrays.asList((Number) new BigInteger("1"), (Number) new BigInteger("2"), (Number) new BigInteger("3"), (Number) new BigInteger("4"), (Number) new BigInteger("5"), (Number) new BigInteger("6"), (Number) new BigInteger("7"), (Number) new BigInteger("8"), (Number) new BigInteger("9"), (Number) new BigInteger("10")));
       return ((_FunctionTypes._return_P0_E0<Number>) () -> {
-        Number seed = (Number) new BigInteger("0");
+        Number seed = new BigInteger("0");
         for (Number current : SetSequence.fromSet(v1)) {
           seed = AH.add(seed, current);
         }
         return seed;
       }).invoke();
-    }).invoke()), EqualsTestOp.matches((Number) new BigInteger("55"), ((_FunctionTypes._return_P0_E0<Number>) () -> {
+    }).invoke()), EqualsTestOp.matches(new BigInteger("55"), ((_FunctionTypes._return_P0_E0<Number>) () -> {
       final PSet<Number> v1 = HashTreePSet.from(Arrays.asList((Number) new BigInteger("1"), (Number) new BigInteger("2"), (Number) new BigInteger("3"), (Number) new BigInteger("4"), (Number) new BigInteger("5"), (Number) new BigInteger("6"), (Number) new BigInteger("7"), (Number) new BigInteger("8"), (Number) new BigInteger("9"), (Number) new BigInteger("10")));
       return ((_FunctionTypes._return_P0_E0<Number>) () -> {
-        Number seed = (Number) new BigInteger("0");
+        Number seed = new BigInteger("0");
         for (Number current : SetSequence.fromSet(v1)) {
           seed = AH.add(seed, current);
         }
@@ -8072,12 +8072,12 @@ public class Generated_collections_Test {
    */
     @Test
   public void collectionSetVal_item10_2222610632219047672() throws Throwable {
-    Assert.assertTrue("Expected: " + (Number) new BigInteger("2") + ", but was: " + (((_FunctionTypes._return_P0_E0<BigInteger>) () -> {
-      final PSet<item> v2 = HashTreePSet.from(Arrays.asList(new item((Number) new BigInteger("1"), "1"), new item((Number) new BigInteger("1"), "1a"), new item((Number) new BigInteger("2"), "2")));
+    Assert.assertTrue("Expected: " + new BigInteger("2") + ", but was: " + (((_FunctionTypes._return_P0_E0<BigInteger>) () -> {
+      final PSet<item> v2 = HashTreePSet.from(Arrays.asList(new item(new BigInteger("1"), "1"), new item(new BigInteger("1"), "1a"), new item(new BigInteger("2"), "2")));
       return BigInteger.valueOf(((_FunctionTypes._return_P0_E0<PVector<GroupValue>>) () -> {
         Map<Number, List<item>> grouped = v2.stream().collect(Collectors.groupingBy(new Function<item, Number>() {
           public Number apply(item param) {
-            return (Number) new Function<ParameterSetWrapper, Number>() {
+            return new Function<ParameterSetWrapper, Number>() {
               public Number apply(ParameterSetWrapper param) {
                 item it = (item) param.parameters.get(0);
                 return it.getn();
@@ -8093,12 +8093,12 @@ public class Generated_collections_Test {
         }
         return result;
       }).invoke().size());
-    }).invoke()), EqualsTestOp.matches((Number) new BigInteger("2"), ((_FunctionTypes._return_P0_E0<BigInteger>) () -> {
-      final PSet<item> v2 = HashTreePSet.from(Arrays.asList(new item((Number) new BigInteger("1"), "1"), new item((Number) new BigInteger("1"), "1a"), new item((Number) new BigInteger("2"), "2")));
+    }).invoke()), EqualsTestOp.matches(new BigInteger("2"), ((_FunctionTypes._return_P0_E0<BigInteger>) () -> {
+      final PSet<item> v2 = HashTreePSet.from(Arrays.asList(new item(new BigInteger("1"), "1"), new item(new BigInteger("1"), "1a"), new item(new BigInteger("2"), "2")));
       return BigInteger.valueOf(((_FunctionTypes._return_P0_E0<PVector<GroupValue>>) () -> {
         Map<Number, List<item>> grouped = v2.stream().collect(Collectors.groupingBy(new Function<item, Number>() {
           public Number apply(item param) {
-            return (Number) new Function<ParameterSetWrapper, Number>() {
+            return new Function<ParameterSetWrapper, Number>() {
               public Number apply(ParameterSetWrapper param) {
                 item it = (item) param.parameters.get(0);
                 return it.getn();
@@ -8121,12 +8121,12 @@ public class Generated_collections_Test {
    */
     @Test
   public void collectionSetVal_item11_2222610632219047699() throws Throwable {
-    Assert.assertTrue("Expected: " + (Number) new BigInteger("2") + ", but was: " + (((_FunctionTypes._return_P0_E0<BigInteger>) () -> {
-      final PSet<item> v2 = HashTreePSet.from(Arrays.asList(new item((Number) new BigInteger("1"), "1"), new item((Number) new BigInteger("1"), "1a"), new item((Number) new BigInteger("2"), "2")));
+    Assert.assertTrue("Expected: " + new BigInteger("2") + ", but was: " + (((_FunctionTypes._return_P0_E0<BigInteger>) () -> {
+      final PSet<item> v2 = HashTreePSet.from(Arrays.asList(new item(new BigInteger("1"), "1"), new item(new BigInteger("1"), "1a"), new item(new BigInteger("2"), "2")));
       return BigInteger.valueOf(((_FunctionTypes._return_P0_E0<PVector<GroupValue>>) () -> {
         Map<Number, List<item>> grouped = v2.stream().collect(Collectors.groupingBy(new Function<item, Number>() {
           public Number apply(item param) {
-            return (Number) new Function<ParameterSetWrapper, Number>() {
+            return new Function<ParameterSetWrapper, Number>() {
               public Number apply(ParameterSetWrapper param) {
                 item i = (item) param.parameters.get(0);
                 return i.getn();
@@ -8142,12 +8142,12 @@ public class Generated_collections_Test {
         }
         return result;
       }).invoke().size());
-    }).invoke()), EqualsTestOp.matches((Number) new BigInteger("2"), ((_FunctionTypes._return_P0_E0<BigInteger>) () -> {
-      final PSet<item> v2 = HashTreePSet.from(Arrays.asList(new item((Number) new BigInteger("1"), "1"), new item((Number) new BigInteger("1"), "1a"), new item((Number) new BigInteger("2"), "2")));
+    }).invoke()), EqualsTestOp.matches(new BigInteger("2"), ((_FunctionTypes._return_P0_E0<BigInteger>) () -> {
+      final PSet<item> v2 = HashTreePSet.from(Arrays.asList(new item(new BigInteger("1"), "1"), new item(new BigInteger("1"), "1a"), new item(new BigInteger("2"), "2")));
       return BigInteger.valueOf(((_FunctionTypes._return_P0_E0<PVector<GroupValue>>) () -> {
         Map<Number, List<item>> grouped = v2.stream().collect(Collectors.groupingBy(new Function<item, Number>() {
           public Number apply(item param) {
-            return (Number) new Function<ParameterSetWrapper, Number>() {
+            return new Function<ParameterSetWrapper, Number>() {
               public Number apply(ParameterSetWrapper param) {
                 item i = (item) param.parameters.get(0);
                 return i.getn();
@@ -8170,12 +8170,12 @@ public class Generated_collections_Test {
    */
     @Test
   public void collectionSetVal_item12_2222610632219047728() throws Throwable {
-    Assert.assertTrue("Expected: " + (Number) new BigInteger("2") + ", but was: " + (((_FunctionTypes._return_P0_E0<BigInteger>) () -> {
-      final PSet<item> v2 = HashTreePSet.from(Arrays.asList(new item((Number) new BigInteger("1"), "1"), new item((Number) new BigInteger("1"), "1a"), new item((Number) new BigInteger("2"), "2")));
+    Assert.assertTrue("Expected: " + new BigInteger("2") + ", but was: " + (((_FunctionTypes._return_P0_E0<BigInteger>) () -> {
+      final PSet<item> v2 = HashTreePSet.from(Arrays.asList(new item(new BigInteger("1"), "1"), new item(new BigInteger("1"), "1a"), new item(new BigInteger("2"), "2")));
       return BigInteger.valueOf(((_FunctionTypes._return_P0_E0<PVector<GroupValue>>) () -> {
         Map<Number, List<item>> grouped = v2.stream().collect(Collectors.groupingBy(new Function<item, Number>() {
           public Number apply(item param) {
-            return (Number) new Function<ParameterSetWrapper, Number>() {
+            return new Function<ParameterSetWrapper, Number>() {
               public Number apply(ParameterSetWrapper param) {
                 return collectionListLiteralFoo3((item) param.parameters.get(0));
               }
@@ -8190,12 +8190,12 @@ public class Generated_collections_Test {
         }
         return result;
       }).invoke().size());
-    }).invoke()), EqualsTestOp.matches((Number) new BigInteger("2"), ((_FunctionTypes._return_P0_E0<BigInteger>) () -> {
-      final PSet<item> v2 = HashTreePSet.from(Arrays.asList(new item((Number) new BigInteger("1"), "1"), new item((Number) new BigInteger("1"), "1a"), new item((Number) new BigInteger("2"), "2")));
+    }).invoke()), EqualsTestOp.matches(new BigInteger("2"), ((_FunctionTypes._return_P0_E0<BigInteger>) () -> {
+      final PSet<item> v2 = HashTreePSet.from(Arrays.asList(new item(new BigInteger("1"), "1"), new item(new BigInteger("1"), "1a"), new item(new BigInteger("2"), "2")));
       return BigInteger.valueOf(((_FunctionTypes._return_P0_E0<PVector<GroupValue>>) () -> {
         Map<Number, List<item>> grouped = v2.stream().collect(Collectors.groupingBy(new Function<item, Number>() {
           public Number apply(item param) {
-            return (Number) new Function<ParameterSetWrapper, Number>() {
+            return new Function<ParameterSetWrapper, Number>() {
               public Number apply(ParameterSetWrapper param) {
                 return collectionListLiteralFoo3((item) param.parameters.get(0));
               }
@@ -8243,26 +8243,26 @@ public class Generated_collections_Test {
    */
     @Test
   public void collectionSetVal_item15_2222610632219047830() throws Throwable {
-    Assert.assertEquals("Expected: " + TreePVector.<Number>empty().plus((Number) new BigInteger("2")).plus((Number) new BigInteger("3")).plus((Number) new BigInteger("4")).plus((Number) new BigInteger("5")).plus((Number) new BigInteger("6")).plus((Number) new BigInteger("7")).plus((Number) new BigInteger("8")).plus((Number) new BigInteger("9")).plus((Number) new BigInteger("10")).plus((Number) new BigInteger("11")) + ", but was: " + (((_FunctionTypes._return_P0_E0<TreePVector<Number>>) () -> {
+    Assert.assertEquals("Expected: " + TreePVector.<Number>empty().plus(new BigInteger("2")).plus(new BigInteger("3")).plus(new BigInteger("4")).plus(new BigInteger("5")).plus(new BigInteger("6")).plus(new BigInteger("7")).plus(new BigInteger("8")).plus(new BigInteger("9")).plus(new BigInteger("10")).plus(new BigInteger("11")) + ", but was: " + (((_FunctionTypes._return_P0_E0<TreePVector<Number>>) () -> {
       PSet<Number> v1 = HashTreePSet.from(Arrays.asList((Number) new BigInteger("1"), (Number) new BigInteger("2"), (Number) new BigInteger("3"), (Number) new BigInteger("4"), (Number) new BigInteger("5"), (Number) new BigInteger("6"), (Number) new BigInteger("7"), (Number) new BigInteger("8"), (Number) new BigInteger("9"), (Number) new BigInteger("10")));
       return TreePVector.<Number>from(v1.stream().map(new Function<Number, Number>() {
         public Number apply(Number param) {
           return new Function<ParameterSetWrapper, Number>() {
             public Number apply(ParameterSetWrapper param) {
               Number it = (Number) param.parameters.get(0);
-              return AH.add(it, (Number) new BigInteger("1"));
+              return AH.add(it, new BigInteger("1"));
             }
           }.apply(new ParameterSetWrapper(param));
         }
       }).collect(Collectors.<Number>toList()));
-    }).invoke()), (Object) TreePVector.<Number>empty().plus((Number) new BigInteger("2")).plus((Number) new BigInteger("3")).plus((Number) new BigInteger("4")).plus((Number) new BigInteger("5")).plus((Number) new BigInteger("6")).plus((Number) new BigInteger("7")).plus((Number) new BigInteger("8")).plus((Number) new BigInteger("9")).plus((Number) new BigInteger("10")).plus((Number) new BigInteger("11")), (Object) ((_FunctionTypes._return_P0_E0<TreePVector<Number>>) () -> {
+    }).invoke()), TreePVector.<Number>empty().plus(new BigInteger("2")).plus(new BigInteger("3")).plus(new BigInteger("4")).plus(new BigInteger("5")).plus(new BigInteger("6")).plus(new BigInteger("7")).plus(new BigInteger("8")).plus(new BigInteger("9")).plus(new BigInteger("10")).plus(new BigInteger("11")), (Object) ((_FunctionTypes._return_P0_E0<TreePVector<Number>>) () -> {
       PSet<Number> v1 = HashTreePSet.from(Arrays.asList((Number) new BigInteger("1"), (Number) new BigInteger("2"), (Number) new BigInteger("3"), (Number) new BigInteger("4"), (Number) new BigInteger("5"), (Number) new BigInteger("6"), (Number) new BigInteger("7"), (Number) new BigInteger("8"), (Number) new BigInteger("9"), (Number) new BigInteger("10")));
       return TreePVector.<Number>from(v1.stream().map(new Function<Number, Number>() {
         public Number apply(Number param) {
           return new Function<ParameterSetWrapper, Number>() {
             public Number apply(ParameterSetWrapper param) {
               Number it = (Number) param.parameters.get(0);
-              return AH.add(it, (Number) new BigInteger("1"));
+              return AH.add(it, new BigInteger("1"));
             }
           }.apply(new ParameterSetWrapper(param));
         }
@@ -8274,26 +8274,26 @@ public class Generated_collections_Test {
    */
     @Test
   public void collectionSetVal_item16_2222610632219047863() throws Throwable {
-    Assert.assertEquals("Expected: " + TreePVector.<Number>empty().plus((Number) new BigInteger("2")).plus((Number) new BigInteger("3")).plus((Number) new BigInteger("4")).plus((Number) new BigInteger("5")).plus((Number) new BigInteger("6")).plus((Number) new BigInteger("7")).plus((Number) new BigInteger("8")).plus((Number) new BigInteger("9")).plus((Number) new BigInteger("10")).plus((Number) new BigInteger("11")) + ", but was: " + (((_FunctionTypes._return_P0_E0<TreePVector<Number>>) () -> {
+    Assert.assertEquals("Expected: " + TreePVector.<Number>empty().plus(new BigInteger("2")).plus(new BigInteger("3")).plus(new BigInteger("4")).plus(new BigInteger("5")).plus(new BigInteger("6")).plus(new BigInteger("7")).plus(new BigInteger("8")).plus(new BigInteger("9")).plus(new BigInteger("10")).plus(new BigInteger("11")) + ", but was: " + (((_FunctionTypes._return_P0_E0<TreePVector<Number>>) () -> {
       PSet<Number> v1 = HashTreePSet.from(Arrays.asList((Number) new BigInteger("1"), (Number) new BigInteger("2"), (Number) new BigInteger("3"), (Number) new BigInteger("4"), (Number) new BigInteger("5"), (Number) new BigInteger("6"), (Number) new BigInteger("7"), (Number) new BigInteger("8"), (Number) new BigInteger("9"), (Number) new BigInteger("10")));
       return TreePVector.<Number>from(v1.stream().map(new Function<Number, Number>() {
         public Number apply(Number param) {
           return new Function<ParameterSetWrapper, Number>() {
             public Number apply(ParameterSetWrapper param) {
               Number a = (Number) param.parameters.get(0);
-              return AH.add(a, (Number) new BigInteger("1"));
+              return AH.add(a, new BigInteger("1"));
             }
           }.apply(new ParameterSetWrapper(param));
         }
       }).collect(Collectors.<Number>toList()));
-    }).invoke()), (Object) TreePVector.<Number>empty().plus((Number) new BigInteger("2")).plus((Number) new BigInteger("3")).plus((Number) new BigInteger("4")).plus((Number) new BigInteger("5")).plus((Number) new BigInteger("6")).plus((Number) new BigInteger("7")).plus((Number) new BigInteger("8")).plus((Number) new BigInteger("9")).plus((Number) new BigInteger("10")).plus((Number) new BigInteger("11")), (Object) ((_FunctionTypes._return_P0_E0<TreePVector<Number>>) () -> {
+    }).invoke()), TreePVector.<Number>empty().plus(new BigInteger("2")).plus(new BigInteger("3")).plus(new BigInteger("4")).plus(new BigInteger("5")).plus(new BigInteger("6")).plus(new BigInteger("7")).plus(new BigInteger("8")).plus(new BigInteger("9")).plus(new BigInteger("10")).plus(new BigInteger("11")), (Object) ((_FunctionTypes._return_P0_E0<TreePVector<Number>>) () -> {
       PSet<Number> v1 = HashTreePSet.from(Arrays.asList((Number) new BigInteger("1"), (Number) new BigInteger("2"), (Number) new BigInteger("3"), (Number) new BigInteger("4"), (Number) new BigInteger("5"), (Number) new BigInteger("6"), (Number) new BigInteger("7"), (Number) new BigInteger("8"), (Number) new BigInteger("9"), (Number) new BigInteger("10")));
       return TreePVector.<Number>from(v1.stream().map(new Function<Number, Number>() {
         public Number apply(Number param) {
           return new Function<ParameterSetWrapper, Number>() {
             public Number apply(ParameterSetWrapper param) {
               Number a = (Number) param.parameters.get(0);
-              return AH.add(a, (Number) new BigInteger("1"));
+              return AH.add(a, new BigInteger("1"));
             }
           }.apply(new ParameterSetWrapper(param));
         }
@@ -8305,7 +8305,7 @@ public class Generated_collections_Test {
    */
     @Test
   public void collectionSetVal_item17_2222610632219047899() throws Throwable {
-    Assert.assertEquals("Expected: " + TreePVector.<Number>empty().plus((Number) new BigInteger("2")).plus((Number) new BigInteger("3")).plus((Number) new BigInteger("4")).plus((Number) new BigInteger("5")).plus((Number) new BigInteger("6")).plus((Number) new BigInteger("7")).plus((Number) new BigInteger("8")).plus((Number) new BigInteger("9")).plus((Number) new BigInteger("10")).plus((Number) new BigInteger("11")) + ", but was: " + (((_FunctionTypes._return_P0_E0<TreePVector<Number>>) () -> {
+    Assert.assertEquals("Expected: " + TreePVector.<Number>empty().plus(new BigInteger("2")).plus(new BigInteger("3")).plus(new BigInteger("4")).plus(new BigInteger("5")).plus(new BigInteger("6")).plus(new BigInteger("7")).plus(new BigInteger("8")).plus(new BigInteger("9")).plus(new BigInteger("10")).plus(new BigInteger("11")) + ", but was: " + (((_FunctionTypes._return_P0_E0<TreePVector<Number>>) () -> {
       PSet<Number> v1 = HashTreePSet.from(Arrays.asList((Number) new BigInteger("1"), (Number) new BigInteger("2"), (Number) new BigInteger("3"), (Number) new BigInteger("4"), (Number) new BigInteger("5"), (Number) new BigInteger("6"), (Number) new BigInteger("7"), (Number) new BigInteger("8"), (Number) new BigInteger("9"), (Number) new BigInteger("10")));
       return TreePVector.<Number>from(v1.stream().map(new Function<Number, Number>() {
         public Number apply(Number param) {
@@ -8316,7 +8316,7 @@ public class Generated_collections_Test {
           }.apply(new ParameterSetWrapper(param));
         }
       }).collect(Collectors.<Number>toList()));
-    }).invoke()), (Object) TreePVector.<Number>empty().plus((Number) new BigInteger("2")).plus((Number) new BigInteger("3")).plus((Number) new BigInteger("4")).plus((Number) new BigInteger("5")).plus((Number) new BigInteger("6")).plus((Number) new BigInteger("7")).plus((Number) new BigInteger("8")).plus((Number) new BigInteger("9")).plus((Number) new BigInteger("10")).plus((Number) new BigInteger("11")), (Object) ((_FunctionTypes._return_P0_E0<TreePVector<Number>>) () -> {
+    }).invoke()), TreePVector.<Number>empty().plus(new BigInteger("2")).plus(new BigInteger("3")).plus(new BigInteger("4")).plus(new BigInteger("5")).plus(new BigInteger("6")).plus(new BigInteger("7")).plus(new BigInteger("8")).plus(new BigInteger("9")).plus(new BigInteger("10")).plus(new BigInteger("11")), (Object) ((_FunctionTypes._return_P0_E0<TreePVector<Number>>) () -> {
       PSet<Number> v1 = HashTreePSet.from(Arrays.asList((Number) new BigInteger("1"), (Number) new BigInteger("2"), (Number) new BigInteger("3"), (Number) new BigInteger("4"), (Number) new BigInteger("5"), (Number) new BigInteger("6"), (Number) new BigInteger("7"), (Number) new BigInteger("8"), (Number) new BigInteger("9"), (Number) new BigInteger("10")));
       return TreePVector.<Number>from(v1.stream().map(new Function<Number, Number>() {
         public Number apply(Number param) {
@@ -8334,10 +8334,10 @@ public class Generated_collections_Test {
    */
     @Test
   public void collectionSetVal_item18_2222610632219047929() throws Throwable {
-    Assert.assertTrue("Expected: " + (Number) new BigInteger("10") + ", but was: " + (((_FunctionTypes._return_P0_E0<Number>) () -> {
+    Assert.assertTrue("Expected: " + new BigInteger("10") + ", but was: " + (((_FunctionTypes._return_P0_E0<Number>) () -> {
       PSet<Number> v1 = HashTreePSet.from(Arrays.asList((Number) new BigInteger("1"), (Number) new BigInteger("2"), (Number) new BigInteger("3"), (Number) new BigInteger("4"), (Number) new BigInteger("5"), (Number) new BigInteger("6"), (Number) new BigInteger("7"), (Number) new BigInteger("8"), (Number) new BigInteger("9"), (Number) new BigInteger("10")));
       return CollectionHelper.max(v1);
-    }).invoke()), EqualsTestOp.matches((Number) new BigInteger("10"), ((_FunctionTypes._return_P0_E0<Number>) () -> {
+    }).invoke()), EqualsTestOp.matches(new BigInteger("10"), ((_FunctionTypes._return_P0_E0<Number>) () -> {
       PSet<Number> v1 = HashTreePSet.from(Arrays.asList((Number) new BigInteger("1"), (Number) new BigInteger("2"), (Number) new BigInteger("3"), (Number) new BigInteger("4"), (Number) new BigInteger("5"), (Number) new BigInteger("6"), (Number) new BigInteger("7"), (Number) new BigInteger("8"), (Number) new BigInteger("9"), (Number) new BigInteger("10")));
       return CollectionHelper.max(v1);
     }).invoke()));
@@ -8347,10 +8347,10 @@ public class Generated_collections_Test {
    */
     @Test
   public void collectionSetVal_item19_2222610632219047948() throws Throwable {
-    Assert.assertTrue("Expected: " + (Number) new BigInteger("1") + ", but was: " + (((_FunctionTypes._return_P0_E0<Number>) () -> {
+    Assert.assertTrue("Expected: " + new BigInteger("1") + ", but was: " + (((_FunctionTypes._return_P0_E0<Number>) () -> {
       PSet<Number> v1 = HashTreePSet.from(Arrays.asList((Number) new BigInteger("1"), (Number) new BigInteger("2"), (Number) new BigInteger("3"), (Number) new BigInteger("4"), (Number) new BigInteger("5"), (Number) new BigInteger("6"), (Number) new BigInteger("7"), (Number) new BigInteger("8"), (Number) new BigInteger("9"), (Number) new BigInteger("10")));
       return CollectionHelper.min(v1);
-    }).invoke()), EqualsTestOp.matches((Number) new BigInteger("1"), ((_FunctionTypes._return_P0_E0<Number>) () -> {
+    }).invoke()), EqualsTestOp.matches(new BigInteger("1"), ((_FunctionTypes._return_P0_E0<Number>) () -> {
       PSet<Number> v1 = HashTreePSet.from(Arrays.asList((Number) new BigInteger("1"), (Number) new BigInteger("2"), (Number) new BigInteger("3"), (Number) new BigInteger("4"), (Number) new BigInteger("5"), (Number) new BigInteger("6"), (Number) new BigInteger("7"), (Number) new BigInteger("8"), (Number) new BigInteger("9"), (Number) new BigInteger("10")));
       return CollectionHelper.min(v1);
     }).invoke()));
@@ -8360,8 +8360,8 @@ public class Generated_collections_Test {
    */
     @Test
   public void collectionSetVal_item20_2222610632219047967() throws Throwable {
-    Assert.assertTrue("Expected: " + (Number) new BigInteger("2") + ", but was: " + (((_FunctionTypes._return_P0_E0<BigInteger>) () -> {
-      final PSet<item> v4 = HashTreePSet.from(Arrays.asList(new item((Number) new BigInteger("1"), "1"), new item((Number) new BigInteger("2"), "2")));
+    Assert.assertTrue("Expected: " + new BigInteger("2") + ", but was: " + (((_FunctionTypes._return_P0_E0<BigInteger>) () -> {
+      final PSet<item> v4 = HashTreePSet.from(Arrays.asList(new item(new BigInteger("1"), "1"), new item(new BigInteger("2"), "2")));
       return BigInteger.valueOf(((_FunctionTypes._return_P0_E0<PVector<InlineRecordType>>) () -> {
         PVector<InlineRecordType> result = TreePVector.empty();
         for (item it : SetSequence.fromSet(v4)) {
@@ -8371,8 +8371,8 @@ public class Generated_collections_Test {
         }
         return result;
       }).invoke().size());
-    }).invoke()), EqualsTestOp.matches((Number) new BigInteger("2"), ((_FunctionTypes._return_P0_E0<BigInteger>) () -> {
-      final PSet<item> v4 = HashTreePSet.from(Arrays.asList(new item((Number) new BigInteger("1"), "1"), new item((Number) new BigInteger("2"), "2")));
+    }).invoke()), EqualsTestOp.matches(new BigInteger("2"), ((_FunctionTypes._return_P0_E0<BigInteger>) () -> {
+      final PSet<item> v4 = HashTreePSet.from(Arrays.asList(new item(new BigInteger("1"), "1"), new item(new BigInteger("2"), "2")));
       return BigInteger.valueOf(((_FunctionTypes._return_P0_E0<PVector<InlineRecordType>>) () -> {
         PVector<InlineRecordType> result = TreePVector.empty();
         for (item it : SetSequence.fromSet(v4)) {
@@ -8389,10 +8389,10 @@ public class Generated_collections_Test {
    */
     @Test
   public void collectionSetVal_item21_2222610632219047992() throws Throwable {
-    Assert.assertTrue("Expected: " + (Number) new BigInteger("10") + ", but was: " + (((_FunctionTypes._return_P0_E0<BigInteger>) () -> {
+    Assert.assertTrue("Expected: " + new BigInteger("10") + ", but was: " + (((_FunctionTypes._return_P0_E0<BigInteger>) () -> {
       PSet<Number> v1 = HashTreePSet.from(Arrays.asList((Number) new BigInteger("1"), (Number) new BigInteger("2"), (Number) new BigInteger("3"), (Number) new BigInteger("4"), (Number) new BigInteger("5"), (Number) new BigInteger("6"), (Number) new BigInteger("7"), (Number) new BigInteger("8"), (Number) new BigInteger("9"), (Number) new BigInteger("10")));
       return BigInteger.valueOf(v1.size());
-    }).invoke()), EqualsTestOp.matches((Number) new BigInteger("10"), ((_FunctionTypes._return_P0_E0<BigInteger>) () -> {
+    }).invoke()), EqualsTestOp.matches(new BigInteger("10"), ((_FunctionTypes._return_P0_E0<BigInteger>) () -> {
       PSet<Number> v1 = HashTreePSet.from(Arrays.asList((Number) new BigInteger("1"), (Number) new BigInteger("2"), (Number) new BigInteger("3"), (Number) new BigInteger("4"), (Number) new BigInteger("5"), (Number) new BigInteger("6"), (Number) new BigInteger("7"), (Number) new BigInteger("8"), (Number) new BigInteger("9"), (Number) new BigInteger("10")));
       return BigInteger.valueOf(v1.size());
     }).invoke()));
@@ -8402,16 +8402,16 @@ public class Generated_collections_Test {
    */
     @Test
   public void collectionSetVal_item22_2222610632219048011() throws Throwable {
-    Assert.assertEquals("Expected: " + TreePVector.<Number>empty().plus((Number) new BigInteger("1")).plus((Number) new BigInteger("2")).plus((Number) new BigInteger("3")).plus((Number) new BigInteger("4")).plus((Number) new BigInteger("5")).plus((Number) new BigInteger("6")).plus((Number) new BigInteger("7")).plus((Number) new BigInteger("8")).plus((Number) new BigInteger("9")).plus((Number) new BigInteger("10")) + ", but was: " + (((_FunctionTypes._return_P0_E0<PVector<Number>>) () -> {
+    Assert.assertEquals("Expected: " + TreePVector.<Number>empty().plus(new BigInteger("1")).plus(new BigInteger("2")).plus(new BigInteger("3")).plus(new BigInteger("4")).plus(new BigInteger("5")).plus(new BigInteger("6")).plus(new BigInteger("7")).plus(new BigInteger("8")).plus(new BigInteger("9")).plus(new BigInteger("10")) + ", but was: " + (((_FunctionTypes._return_P0_E0<PVector<Number>>) () -> {
       PSet<Number> v1 = HashTreePSet.from(Arrays.asList((Number) new BigInteger("1"), (Number) new BigInteger("2"), (Number) new BigInteger("3"), (Number) new BigInteger("4"), (Number) new BigInteger("5"), (Number) new BigInteger("6"), (Number) new BigInteger("7"), (Number) new BigInteger("8"), (Number) new BigInteger("9"), (Number) new BigInteger("10")));
-      return (PVector<Number>) TreePVector.<Number>from(((PCollection<Number>) v1).stream().filter(OH.predicate()).sorted(new Comparator<Number>() {
+      return (PVector<Number>) TreePVector.<Number>from(v1.stream().filter(OH.predicate()).sorted(new Comparator<Number>() {
         public int compare(Number p0, Number p1) {
           return OH.compare(p0, p1);
         }
       }).collect(Collectors.<Number>toList()));
-    }).invoke()), (Object) TreePVector.<Number>empty().plus((Number) new BigInteger("1")).plus((Number) new BigInteger("2")).plus((Number) new BigInteger("3")).plus((Number) new BigInteger("4")).plus((Number) new BigInteger("5")).plus((Number) new BigInteger("6")).plus((Number) new BigInteger("7")).plus((Number) new BigInteger("8")).plus((Number) new BigInteger("9")).plus((Number) new BigInteger("10")), (Object) ((_FunctionTypes._return_P0_E0<PVector<Number>>) () -> {
+    }).invoke()), TreePVector.<Number>empty().plus(new BigInteger("1")).plus(new BigInteger("2")).plus(new BigInteger("3")).plus(new BigInteger("4")).plus(new BigInteger("5")).plus(new BigInteger("6")).plus(new BigInteger("7")).plus(new BigInteger("8")).plus(new BigInteger("9")).plus(new BigInteger("10")), (Object) ((_FunctionTypes._return_P0_E0<PVector<Number>>) () -> {
       PSet<Number> v1 = HashTreePSet.from(Arrays.asList((Number) new BigInteger("1"), (Number) new BigInteger("2"), (Number) new BigInteger("3"), (Number) new BigInteger("4"), (Number) new BigInteger("5"), (Number) new BigInteger("6"), (Number) new BigInteger("7"), (Number) new BigInteger("8"), (Number) new BigInteger("9"), (Number) new BigInteger("10")));
-      return (PVector<Number>) TreePVector.<Number>from(((PCollection<Number>) v1).stream().filter(OH.predicate()).sorted(new Comparator<Number>() {
+      return (PVector<Number>) TreePVector.<Number>from(v1.stream().filter(OH.predicate()).sorted(new Comparator<Number>() {
         public int compare(Number p0, Number p1) {
           return OH.compare(p0, p1);
         }
@@ -8423,16 +8423,16 @@ public class Generated_collections_Test {
    */
     @Test
   public void collectionSetVal_item23_2222610632219048040() throws Throwable {
-    Assert.assertEquals("Expected: " + TreePVector.<Number>empty().plus((Number) new BigInteger("10")).plus((Number) new BigInteger("9")).plus((Number) new BigInteger("8")).plus((Number) new BigInteger("7")).plus((Number) new BigInteger("6")).plus((Number) new BigInteger("5")).plus((Number) new BigInteger("4")).plus((Number) new BigInteger("3")).plus((Number) new BigInteger("2")).plus((Number) new BigInteger("1")) + ", but was: " + (((_FunctionTypes._return_P0_E0<PVector<Number>>) () -> {
+    Assert.assertEquals("Expected: " + TreePVector.<Number>empty().plus(new BigInteger("10")).plus(new BigInteger("9")).plus(new BigInteger("8")).plus(new BigInteger("7")).plus(new BigInteger("6")).plus(new BigInteger("5")).plus(new BigInteger("4")).plus(new BigInteger("3")).plus(new BigInteger("2")).plus(new BigInteger("1")) + ", but was: " + (((_FunctionTypes._return_P0_E0<PVector<Number>>) () -> {
       PSet<Number> v1 = HashTreePSet.from(Arrays.asList((Number) new BigInteger("1"), (Number) new BigInteger("2"), (Number) new BigInteger("3"), (Number) new BigInteger("4"), (Number) new BigInteger("5"), (Number) new BigInteger("6"), (Number) new BigInteger("7"), (Number) new BigInteger("8"), (Number) new BigInteger("9"), (Number) new BigInteger("10")));
-      return (PVector<Number>) TreePVector.<Number>from(((PCollection<Number>) v1).stream().filter(OH.predicate()).sorted(new Comparator<Number>() {
+      return (PVector<Number>) TreePVector.<Number>from(v1.stream().filter(OH.predicate()).sorted(new Comparator<Number>() {
         public int compare(Number p0, Number p1) {
           return OH.compare(p1, p0);
         }
       }).collect(Collectors.<Number>toList()));
-    }).invoke()), (Object) TreePVector.<Number>empty().plus((Number) new BigInteger("10")).plus((Number) new BigInteger("9")).plus((Number) new BigInteger("8")).plus((Number) new BigInteger("7")).plus((Number) new BigInteger("6")).plus((Number) new BigInteger("5")).plus((Number) new BigInteger("4")).plus((Number) new BigInteger("3")).plus((Number) new BigInteger("2")).plus((Number) new BigInteger("1")), (Object) ((_FunctionTypes._return_P0_E0<PVector<Number>>) () -> {
+    }).invoke()), TreePVector.<Number>empty().plus(new BigInteger("10")).plus(new BigInteger("9")).plus(new BigInteger("8")).plus(new BigInteger("7")).plus(new BigInteger("6")).plus(new BigInteger("5")).plus(new BigInteger("4")).plus(new BigInteger("3")).plus(new BigInteger("2")).plus(new BigInteger("1")), (Object) ((_FunctionTypes._return_P0_E0<PVector<Number>>) () -> {
       PSet<Number> v1 = HashTreePSet.from(Arrays.asList((Number) new BigInteger("1"), (Number) new BigInteger("2"), (Number) new BigInteger("3"), (Number) new BigInteger("4"), (Number) new BigInteger("5"), (Number) new BigInteger("6"), (Number) new BigInteger("7"), (Number) new BigInteger("8"), (Number) new BigInteger("9"), (Number) new BigInteger("10")));
-      return (PVector<Number>) TreePVector.<Number>from(((PCollection<Number>) v1).stream().filter(OH.predicate()).sorted(new Comparator<Number>() {
+      return (PVector<Number>) TreePVector.<Number>from(v1.stream().filter(OH.predicate()).sorted(new Comparator<Number>() {
         public int compare(Number p0, Number p1) {
           return OH.compare(p1, p0);
         }
@@ -8444,10 +8444,10 @@ public class Generated_collections_Test {
    */
     @Test
   public void collectionSetVal_item24_2222610632219048069() throws Throwable {
-    Assert.assertTrue("Expected: " + (Number) new BigInteger("55") + ", but was: " + (((_FunctionTypes._return_P0_E0<Number>) () -> {
+    Assert.assertTrue("Expected: " + new BigInteger("55") + ", but was: " + (((_FunctionTypes._return_P0_E0<Number>) () -> {
       PSet<Number> v1 = HashTreePSet.from(Arrays.asList((Number) new BigInteger("1"), (Number) new BigInteger("2"), (Number) new BigInteger("3"), (Number) new BigInteger("4"), (Number) new BigInteger("5"), (Number) new BigInteger("6"), (Number) new BigInteger("7"), (Number) new BigInteger("8"), (Number) new BigInteger("9"), (Number) new BigInteger("10")));
       return CollectionHelper.sumAsBigInteger(v1);
-    }).invoke()), EqualsTestOp.matches((Number) new BigInteger("55"), ((_FunctionTypes._return_P0_E0<Number>) () -> {
+    }).invoke()), EqualsTestOp.matches(new BigInteger("55"), ((_FunctionTypes._return_P0_E0<Number>) () -> {
       PSet<Number> v1 = HashTreePSet.from(Arrays.asList((Number) new BigInteger("1"), (Number) new BigInteger("2"), (Number) new BigInteger("3"), (Number) new BigInteger("4"), (Number) new BigInteger("5"), (Number) new BigInteger("6"), (Number) new BigInteger("7"), (Number) new BigInteger("8"), (Number) new BigInteger("9"), (Number) new BigInteger("10")));
       return CollectionHelper.sumAsBigInteger(v1);
     }).invoke()));
@@ -8457,10 +8457,10 @@ public class Generated_collections_Test {
    */
     @Test
   public void collectionSetVal_item25_2222610632219048109() throws Throwable {
-    Assert.assertEquals("Expected: " + TreePVector.<Number>empty().plus((Number) new BigInteger("1")).plus((Number) new BigInteger("2")).plus((Number) new BigInteger("3")).plus((Number) new BigInteger("4")).plus((Number) new BigInteger("5")).plus((Number) new BigInteger("6")).plus((Number) new BigInteger("7")).plus((Number) new BigInteger("8")).plus((Number) new BigInteger("9")).plus((Number) new BigInteger("10")) + ", but was: " + (((_FunctionTypes._return_P0_E0<TreePVector<Number>>) () -> {
+    Assert.assertEquals("Expected: " + TreePVector.<Number>empty().plus(new BigInteger("1")).plus(new BigInteger("2")).plus(new BigInteger("3")).plus(new BigInteger("4")).plus(new BigInteger("5")).plus(new BigInteger("6")).plus(new BigInteger("7")).plus(new BigInteger("8")).plus(new BigInteger("9")).plus(new BigInteger("10")) + ", but was: " + (((_FunctionTypes._return_P0_E0<TreePVector<Number>>) () -> {
       PSet<Number> v1 = HashTreePSet.from(Arrays.asList((Number) new BigInteger("1"), (Number) new BigInteger("2"), (Number) new BigInteger("3"), (Number) new BigInteger("4"), (Number) new BigInteger("5"), (Number) new BigInteger("6"), (Number) new BigInteger("7"), (Number) new BigInteger("8"), (Number) new BigInteger("9"), (Number) new BigInteger("10")));
       return TreePVector.from(v1);
-    }).invoke()), (Object) TreePVector.<Number>empty().plus((Number) new BigInteger("1")).plus((Number) new BigInteger("2")).plus((Number) new BigInteger("3")).plus((Number) new BigInteger("4")).plus((Number) new BigInteger("5")).plus((Number) new BigInteger("6")).plus((Number) new BigInteger("7")).plus((Number) new BigInteger("8")).plus((Number) new BigInteger("9")).plus((Number) new BigInteger("10")), (Object) ((_FunctionTypes._return_P0_E0<TreePVector<Number>>) () -> {
+    }).invoke()), TreePVector.<Number>empty().plus(new BigInteger("1")).plus(new BigInteger("2")).plus(new BigInteger("3")).plus(new BigInteger("4")).plus(new BigInteger("5")).plus(new BigInteger("6")).plus(new BigInteger("7")).plus(new BigInteger("8")).plus(new BigInteger("9")).plus(new BigInteger("10")), (Object) ((_FunctionTypes._return_P0_E0<TreePVector<Number>>) () -> {
       PSet<Number> v1 = HashTreePSet.from(Arrays.asList((Number) new BigInteger("1"), (Number) new BigInteger("2"), (Number) new BigInteger("3"), (Number) new BigInteger("4"), (Number) new BigInteger("5"), (Number) new BigInteger("6"), (Number) new BigInteger("7"), (Number) new BigInteger("8"), (Number) new BigInteger("9"), (Number) new BigInteger("10")));
       return TreePVector.from(v1);
     }).invoke());
@@ -8473,7 +8473,7 @@ public class Generated_collections_Test {
     Assert.assertEquals("Expected: " + HashTreePSet.from(Arrays.asList((Number) new BigInteger("1"), (Number) new BigInteger("2"), (Number) new BigInteger("3"), (Number) new BigInteger("4"), (Number) new BigInteger("5"), (Number) new BigInteger("6"), (Number) new BigInteger("7"), (Number) new BigInteger("8"), (Number) new BigInteger("9"), (Number) new BigInteger("10"))) + ", but was: " + (((_FunctionTypes._return_P0_E0<MapPSet<Number>>) () -> {
       PSet<Number> v1 = HashTreePSet.from(Arrays.asList((Number) new BigInteger("1"), (Number) new BigInteger("2"), (Number) new BigInteger("3"), (Number) new BigInteger("4"), (Number) new BigInteger("5"), (Number) new BigInteger("6"), (Number) new BigInteger("7"), (Number) new BigInteger("8"), (Number) new BigInteger("9"), (Number) new BigInteger("10")));
       return HashTreePSet.from(v1);
-    }).invoke()), (Object) HashTreePSet.from(Arrays.asList((Number) new BigInteger("1"), (Number) new BigInteger("2"), (Number) new BigInteger("3"), (Number) new BigInteger("4"), (Number) new BigInteger("5"), (Number) new BigInteger("6"), (Number) new BigInteger("7"), (Number) new BigInteger("8"), (Number) new BigInteger("9"), (Number) new BigInteger("10"))), (Object) ((_FunctionTypes._return_P0_E0<MapPSet<Number>>) () -> {
+    }).invoke()), HashTreePSet.from(Arrays.asList((Number) new BigInteger("1"), (Number) new BigInteger("2"), (Number) new BigInteger("3"), (Number) new BigInteger("4"), (Number) new BigInteger("5"), (Number) new BigInteger("6"), (Number) new BigInteger("7"), (Number) new BigInteger("8"), (Number) new BigInteger("9"), (Number) new BigInteger("10"))), (Object) ((_FunctionTypes._return_P0_E0<MapPSet<Number>>) () -> {
       PSet<Number> v1 = HashTreePSet.from(Arrays.asList((Number) new BigInteger("1"), (Number) new BigInteger("2"), (Number) new BigInteger("3"), (Number) new BigInteger("4"), (Number) new BigInteger("5"), (Number) new BigInteger("6"), (Number) new BigInteger("7"), (Number) new BigInteger("8"), (Number) new BigInteger("9"), (Number) new BigInteger("10")));
       return HashTreePSet.from(v1);
     }).invoke());
@@ -8483,14 +8483,14 @@ public class Generated_collections_Test {
    */
     @Test
   public void collectionSetVal_item27_2222610632219048167() throws Throwable {
-    Assert.assertEquals("Expected: " + TreePVector.<Number>empty().plus((Number) new BigInteger("1")).plus((Number) new BigInteger("2")) + ", but was: " + (((_FunctionTypes._return_P0_E0<TreePVector<Number>>) () -> {
+    Assert.assertEquals("Expected: " + TreePVector.<Number>empty().plus(new BigInteger("1")).plus(new BigInteger("2")) + ", but was: " + (((_FunctionTypes._return_P0_E0<TreePVector<Number>>) () -> {
       PSet<Number> v5 = HashTreePSet.from(Arrays.asList((Number) new BigInteger("1"), (Number) new BigInteger("2")));
       return TreePVector.<Number>from(v5.stream().filter(new Predicate<Number>() {
         public boolean test(Number p0) {
           return p0 != null;
         }
       }).collect(Collectors.<Number>toList()));
-    }).invoke()), (Object) TreePVector.<Number>empty().plus((Number) new BigInteger("1")).plus((Number) new BigInteger("2")), (Object) ((_FunctionTypes._return_P0_E0<TreePVector<Number>>) () -> {
+    }).invoke()), TreePVector.<Number>empty().plus(new BigInteger("1")).plus(new BigInteger("2")), (Object) ((_FunctionTypes._return_P0_E0<TreePVector<Number>>) () -> {
       PSet<Number> v5 = HashTreePSet.from(Arrays.asList((Number) new BigInteger("1"), (Number) new BigInteger("2")));
       return TreePVector.<Number>from(v5.stream().filter(new Predicate<Number>() {
         public boolean test(Number p0) {
@@ -8504,26 +8504,26 @@ public class Generated_collections_Test {
    */
     @Test
   public void collectionSetVal_item28_2222610632219048182() throws Throwable {
-    Assert.assertEquals("Expected: " + TreePVector.<Number>empty().plus((Number) new BigInteger("1")).plus((Number) new BigInteger("2")) + ", but was: " + (((_FunctionTypes._return_P0_E0<TreePVector<Number>>) () -> {
+    Assert.assertEquals("Expected: " + TreePVector.<Number>empty().plus(new BigInteger("1")).plus(new BigInteger("2")) + ", but was: " + (((_FunctionTypes._return_P0_E0<TreePVector<Number>>) () -> {
       PSet<Number> v1 = HashTreePSet.from(Arrays.asList((Number) new BigInteger("1"), (Number) new BigInteger("2"), (Number) new BigInteger("3"), (Number) new BigInteger("4"), (Number) new BigInteger("5"), (Number) new BigInteger("6"), (Number) new BigInteger("7"), (Number) new BigInteger("8"), (Number) new BigInteger("9"), (Number) new BigInteger("10")));
       return TreePVector.<Number>from(v1.stream().filter(new Predicate<Number>() {
         public boolean test(Number o) {
           return new Function<ParameterSetWrapper, Boolean>() {
             public Boolean apply(ParameterSetWrapper param) {
               Number it = (Number) param.parameters.get(0);
-              return AH.isLess(it, (Number) new BigInteger("3"));
+              return AH.isLess(it, new BigInteger("3"));
             }
           }.apply(new ParameterSetWrapper(o));
         }
       }).collect(Collectors.<Number>toList()));
-    }).invoke()), (Object) TreePVector.<Number>empty().plus((Number) new BigInteger("1")).plus((Number) new BigInteger("2")), (Object) ((_FunctionTypes._return_P0_E0<TreePVector<Number>>) () -> {
+    }).invoke()), TreePVector.<Number>empty().plus(new BigInteger("1")).plus(new BigInteger("2")), (Object) ((_FunctionTypes._return_P0_E0<TreePVector<Number>>) () -> {
       PSet<Number> v1 = HashTreePSet.from(Arrays.asList((Number) new BigInteger("1"), (Number) new BigInteger("2"), (Number) new BigInteger("3"), (Number) new BigInteger("4"), (Number) new BigInteger("5"), (Number) new BigInteger("6"), (Number) new BigInteger("7"), (Number) new BigInteger("8"), (Number) new BigInteger("9"), (Number) new BigInteger("10")));
       return TreePVector.<Number>from(v1.stream().filter(new Predicate<Number>() {
         public boolean test(Number o) {
           return new Function<ParameterSetWrapper, Boolean>() {
             public Boolean apply(ParameterSetWrapper param) {
               Number it = (Number) param.parameters.get(0);
-              return AH.isLess(it, (Number) new BigInteger("3"));
+              return AH.isLess(it, new BigInteger("3"));
             }
           }.apply(new ParameterSetWrapper(o));
         }
@@ -8535,26 +8535,26 @@ public class Generated_collections_Test {
    */
     @Test
   public void collectionSetVal_item29_2222610632219048207() throws Throwable {
-    Assert.assertEquals("Expected: " + TreePVector.<Number>empty().plus((Number) new BigInteger("1")).plus((Number) new BigInteger("2")) + ", but was: " + (((_FunctionTypes._return_P0_E0<TreePVector<Number>>) () -> {
+    Assert.assertEquals("Expected: " + TreePVector.<Number>empty().plus(new BigInteger("1")).plus(new BigInteger("2")) + ", but was: " + (((_FunctionTypes._return_P0_E0<TreePVector<Number>>) () -> {
       PSet<Number> v1 = HashTreePSet.from(Arrays.asList((Number) new BigInteger("1"), (Number) new BigInteger("2"), (Number) new BigInteger("3"), (Number) new BigInteger("4"), (Number) new BigInteger("5"), (Number) new BigInteger("6"), (Number) new BigInteger("7"), (Number) new BigInteger("8"), (Number) new BigInteger("9"), (Number) new BigInteger("10")));
       return TreePVector.<Number>from(v1.stream().filter(new Predicate<Number>() {
         public boolean test(Number o) {
           return new Function<ParameterSetWrapper, Boolean>() {
             public Boolean apply(ParameterSetWrapper param) {
               Number a = (Number) param.parameters.get(0);
-              return AH.isLess(a, (Number) new BigInteger("3"));
+              return AH.isLess(a, new BigInteger("3"));
             }
           }.apply(new ParameterSetWrapper(o));
         }
       }).collect(Collectors.<Number>toList()));
-    }).invoke()), (Object) TreePVector.<Number>empty().plus((Number) new BigInteger("1")).plus((Number) new BigInteger("2")), (Object) ((_FunctionTypes._return_P0_E0<TreePVector<Number>>) () -> {
+    }).invoke()), TreePVector.<Number>empty().plus(new BigInteger("1")).plus(new BigInteger("2")), (Object) ((_FunctionTypes._return_P0_E0<TreePVector<Number>>) () -> {
       PSet<Number> v1 = HashTreePSet.from(Arrays.asList((Number) new BigInteger("1"), (Number) new BigInteger("2"), (Number) new BigInteger("3"), (Number) new BigInteger("4"), (Number) new BigInteger("5"), (Number) new BigInteger("6"), (Number) new BigInteger("7"), (Number) new BigInteger("8"), (Number) new BigInteger("9"), (Number) new BigInteger("10")));
       return TreePVector.<Number>from(v1.stream().filter(new Predicate<Number>() {
         public boolean test(Number o) {
           return new Function<ParameterSetWrapper, Boolean>() {
             public Boolean apply(ParameterSetWrapper param) {
               Number a = (Number) param.parameters.get(0);
-              return AH.isLess(a, (Number) new BigInteger("3"));
+              return AH.isLess(a, new BigInteger("3"));
             }
           }.apply(new ParameterSetWrapper(o));
         }
@@ -8566,7 +8566,7 @@ public class Generated_collections_Test {
    */
     @Test
   public void collectionSetVal_item30_2222610632219048235() throws Throwable {
-    Assert.assertEquals("Expected: " + TreePVector.<Number>empty().plus((Number) new BigInteger("1")).plus((Number) new BigInteger("2")).plus((Number) new BigInteger("3")).plus((Number) new BigInteger("4")).plus((Number) new BigInteger("5")).plus((Number) new BigInteger("6")).plus((Number) new BigInteger("7")).plus((Number) new BigInteger("8")).plus((Number) new BigInteger("9")).plus((Number) new BigInteger("10")) + ", but was: " + (((_FunctionTypes._return_P0_E0<TreePVector<Number>>) () -> {
+    Assert.assertEquals("Expected: " + TreePVector.<Number>empty().plus(new BigInteger("1")).plus(new BigInteger("2")).plus(new BigInteger("3")).plus(new BigInteger("4")).plus(new BigInteger("5")).plus(new BigInteger("6")).plus(new BigInteger("7")).plus(new BigInteger("8")).plus(new BigInteger("9")).plus(new BigInteger("10")) + ", but was: " + (((_FunctionTypes._return_P0_E0<TreePVector<Number>>) () -> {
       PSet<Number> v1 = HashTreePSet.from(Arrays.asList((Number) new BigInteger("1"), (Number) new BigInteger("2"), (Number) new BigInteger("3"), (Number) new BigInteger("4"), (Number) new BigInteger("5"), (Number) new BigInteger("6"), (Number) new BigInteger("7"), (Number) new BigInteger("8"), (Number) new BigInteger("9"), (Number) new BigInteger("10")));
       return TreePVector.<Number>from(v1.stream().filter(new Predicate<Number>() {
         public boolean test(Number o) {
@@ -8577,7 +8577,7 @@ public class Generated_collections_Test {
           }.apply(new ParameterSetWrapper(o));
         }
       }).collect(Collectors.<Number>toList()));
-    }).invoke()), (Object) TreePVector.<Number>empty().plus((Number) new BigInteger("1")).plus((Number) new BigInteger("2")).plus((Number) new BigInteger("3")).plus((Number) new BigInteger("4")).plus((Number) new BigInteger("5")).plus((Number) new BigInteger("6")).plus((Number) new BigInteger("7")).plus((Number) new BigInteger("8")).plus((Number) new BigInteger("9")).plus((Number) new BigInteger("10")), (Object) ((_FunctionTypes._return_P0_E0<TreePVector<Number>>) () -> {
+    }).invoke()), TreePVector.<Number>empty().plus(new BigInteger("1")).plus(new BigInteger("2")).plus(new BigInteger("3")).plus(new BigInteger("4")).plus(new BigInteger("5")).plus(new BigInteger("6")).plus(new BigInteger("7")).plus(new BigInteger("8")).plus(new BigInteger("9")).plus(new BigInteger("10")), (Object) ((_FunctionTypes._return_P0_E0<TreePVector<Number>>) () -> {
       PSet<Number> v1 = HashTreePSet.from(Arrays.asList((Number) new BigInteger("1"), (Number) new BigInteger("2"), (Number) new BigInteger("3"), (Number) new BigInteger("4"), (Number) new BigInteger("5"), (Number) new BigInteger("6"), (Number) new BigInteger("7"), (Number) new BigInteger("8"), (Number) new BigInteger("9"), (Number) new BigInteger("10")));
       return TreePVector.<Number>from(v1.stream().filter(new Predicate<Number>() {
         public boolean test(Number o) {
@@ -8597,10 +8597,10 @@ public class Generated_collections_Test {
   public void collectionSetVal_item31_2222610632219048265() throws Throwable {
     Assert.assertEquals("Expected: " + HashTreePSet.from(Arrays.asList((Number) new BigInteger("1"), (Number) new BigInteger("2"), (Number) new BigInteger("3"), (Number) new BigInteger("4"), (Number) new BigInteger("5"), (Number) new BigInteger("6"), (Number) new BigInteger("7"), (Number) new BigInteger("8"), (Number) new BigInteger("9"), (Number) new BigInteger("10"), (Number) new BigInteger("11"))) + ", but was: " + (((_FunctionTypes._return_P0_E0<PSet<Number>>) () -> {
       PSet<Number> v6 = HashTreePSet.from(Arrays.asList((Number) new BigInteger("1"), (Number) new BigInteger("2"), (Number) new BigInteger("3"), (Number) new BigInteger("4"), (Number) new BigInteger("5"), (Number) new BigInteger("6"), (Number) new BigInteger("7"), (Number) new BigInteger("8"), (Number) new BigInteger("9"), (Number) new BigInteger("10")));
-      return v6.plus((Number) new BigInteger("11"));
-    }).invoke()), (Object) HashTreePSet.from(Arrays.asList((Number) new BigInteger("1"), (Number) new BigInteger("2"), (Number) new BigInteger("3"), (Number) new BigInteger("4"), (Number) new BigInteger("5"), (Number) new BigInteger("6"), (Number) new BigInteger("7"), (Number) new BigInteger("8"), (Number) new BigInteger("9"), (Number) new BigInteger("10"), (Number) new BigInteger("11"))), (Object) ((_FunctionTypes._return_P0_E0<PSet<Number>>) () -> {
+      return v6.plus(new BigInteger("11"));
+    }).invoke()), HashTreePSet.from(Arrays.asList((Number) new BigInteger("1"), (Number) new BigInteger("2"), (Number) new BigInteger("3"), (Number) new BigInteger("4"), (Number) new BigInteger("5"), (Number) new BigInteger("6"), (Number) new BigInteger("7"), (Number) new BigInteger("8"), (Number) new BigInteger("9"), (Number) new BigInteger("10"), (Number) new BigInteger("11"))), (Object) ((_FunctionTypes._return_P0_E0<PSet<Number>>) () -> {
       PSet<Number> v6 = HashTreePSet.from(Arrays.asList((Number) new BigInteger("1"), (Number) new BigInteger("2"), (Number) new BigInteger("3"), (Number) new BigInteger("4"), (Number) new BigInteger("5"), (Number) new BigInteger("6"), (Number) new BigInteger("7"), (Number) new BigInteger("8"), (Number) new BigInteger("9"), (Number) new BigInteger("10")));
-      return v6.plus((Number) new BigInteger("11"));
+      return v6.plus(new BigInteger("11"));
     }).invoke());
   }
 /* 
@@ -8610,17 +8610,17 @@ public class Generated_collections_Test {
   public void collectionSetVal_item32_32857128014100768() throws Throwable {
     Assert.assertEquals("Expected: " + HashTreePSet.from(Arrays.asList((Number) new BigInteger("1"), (Number) new BigInteger("2"), (Number) new BigInteger("3"), (Number) new BigInteger("4"), (Number) new BigInteger("5"), (Number) new BigInteger("6"), (Number) new BigInteger("7"), (Number) new BigInteger("8"), (Number) new BigInteger("9"))) + ", but was: " + (((_FunctionTypes._return_P0_E0<PSet<Number>>) () -> {
       PSet<Number> v1 = HashTreePSet.from(Arrays.asList((Number) new BigInteger("1"), (Number) new BigInteger("2"), (Number) new BigInteger("3"), (Number) new BigInteger("4"), (Number) new BigInteger("5"), (Number) new BigInteger("6"), (Number) new BigInteger("7"), (Number) new BigInteger("8"), (Number) new BigInteger("9"), (Number) new BigInteger("10")));
-      return v1.minus((Number) new BigInteger("10"));
-    }).invoke()), (Object) HashTreePSet.from(Arrays.asList((Number) new BigInteger("1"), (Number) new BigInteger("2"), (Number) new BigInteger("3"), (Number) new BigInteger("4"), (Number) new BigInteger("5"), (Number) new BigInteger("6"), (Number) new BigInteger("7"), (Number) new BigInteger("8"), (Number) new BigInteger("9"))), (Object) ((_FunctionTypes._return_P0_E0<PSet<Number>>) () -> {
+      return v1.minus(new BigInteger("10"));
+    }).invoke()), HashTreePSet.from(Arrays.asList((Number) new BigInteger("1"), (Number) new BigInteger("2"), (Number) new BigInteger("3"), (Number) new BigInteger("4"), (Number) new BigInteger("5"), (Number) new BigInteger("6"), (Number) new BigInteger("7"), (Number) new BigInteger("8"), (Number) new BigInteger("9"))), (Object) ((_FunctionTypes._return_P0_E0<PSet<Number>>) () -> {
       PSet<Number> v1 = HashTreePSet.from(Arrays.asList((Number) new BigInteger("1"), (Number) new BigInteger("2"), (Number) new BigInteger("3"), (Number) new BigInteger("4"), (Number) new BigInteger("5"), (Number) new BigInteger("6"), (Number) new BigInteger("7"), (Number) new BigInteger("8"), (Number) new BigInteger("9"), (Number) new BigInteger("10")));
-      return v1.minus((Number) new BigInteger("10"));
+      return v1.minus(new BigInteger("10"));
     }).invoke());
   }
-  public static final PVector<Number> zahlen_ = TreePVector.<Number>empty().plus((Number) new BigInteger("100")).plus((Number) new BigInteger("200")).plus((Number) new BigInteger("300")).plus((Number) new BigInteger("400")).plus((Number) new BigInteger("500"));
+  public static final PVector<Number> zahlen_ = TreePVector.<Number>empty().plus(new BigInteger("100")).plus(new BigInteger("200")).plus(new BigInteger("300")).plus(new BigInteger("400")).plus(new BigInteger("500"));
   public static final PVector<Number> zahlenErsteDrei_ = TreePVector.<Number>from(((_FunctionTypes._return_P0_E0<List<Number>>) () -> {
     List<Number> res = new ArrayList<Number>();
     PVector source = Generated_collections_Test.zahlen_;
-    PVector selectors = TreePVector.<Number>empty().plus((Number) new BigInteger("0")).plus((Number) new BigInteger("1")).plus((Number) new BigInteger("2"));
+    PVector selectors = TreePVector.<Number>empty().plus(new BigInteger("0")).plus(new BigInteger("1")).plus(new BigInteger("2"));
     Iterator<Object> iter = selectors.iterator();
     while (iter.hasNext()) {
       BigInteger s = (BigInteger) iter.next();
@@ -8631,7 +8631,7 @@ public class Generated_collections_Test {
   public static final PVector<Number> zahlen135_ = TreePVector.<Number>from(((_FunctionTypes._return_P0_E0<List<Number>>) () -> {
     List<Number> res = new ArrayList<Number>();
     PVector source = Generated_collections_Test.zahlen_;
-    PVector selectors = TreePVector.<Number>empty().plus((Number) new BigInteger("0")).plus((Number) new BigInteger("2")).plus((Number) new BigInteger("4"));
+    PVector selectors = TreePVector.<Number>empty().plus(new BigInteger("0")).plus(new BigInteger("2")).plus(new BigInteger("4"));
     Iterator<Object> iter = selectors.iterator();
     while (iter.hasNext()) {
       BigInteger s = (BigInteger) iter.next();
@@ -8642,7 +8642,7 @@ public class Generated_collections_Test {
   public static final PVector<Number> zahlen1_ = TreePVector.<Number>from(((_FunctionTypes._return_P0_E0<List<Number>>) () -> {
     List<Number> res = new ArrayList<Number>();
     PVector source = Generated_collections_Test.zahlen_;
-    PVector selectors = TreePVector.<Number>empty().plus((Number) new BigInteger("0"));
+    PVector selectors = TreePVector.<Number>empty().plus(new BigInteger("0"));
     Iterator<Object> iter = selectors.iterator();
     while (iter.hasNext()) {
       BigInteger s = (BigInteger) iter.next();
@@ -8663,19 +8663,19 @@ public class Generated_collections_Test {
   }).invoke());
   @Test
   public void Picking_item0_531692237849318884() throws Throwable {
-    Assert.assertEquals("Expected: " + TreePVector.<Number>empty().plus((Number) new BigInteger("100")).plus((Number) new BigInteger("200")).plus((Number) new BigInteger("300")) + ", but was: " + Generated_collections_Test.zahlenErsteDrei_, (Object) TreePVector.<Number>empty().plus((Number) new BigInteger("100")).plus((Number) new BigInteger("200")).plus((Number) new BigInteger("300")), (Object) Generated_collections_Test.zahlenErsteDrei_);
+    Assert.assertEquals("Expected: " + TreePVector.<Number>empty().plus(new BigInteger("100")).plus(new BigInteger("200")).plus(new BigInteger("300")) + ", but was: " + Generated_collections_Test.zahlenErsteDrei_, TreePVector.<Number>empty().plus(new BigInteger("100")).plus(new BigInteger("200")).plus(new BigInteger("300")), Generated_collections_Test.zahlenErsteDrei_);
   }
   @Test
   public void Picking_item1_531692237850355925() throws Throwable {
-    Assert.assertTrue("Expected: " + (Number) new BigInteger("900") + ", but was: " + CollectionHelper.sumAsBigInteger(Generated_collections_Test.zahlen135_), EqualsTestOp.matches((Number) new BigInteger("900"), CollectionHelper.sumAsBigInteger(Generated_collections_Test.zahlen135_)));
+    Assert.assertTrue("Expected: " + new BigInteger("900") + ", but was: " + CollectionHelper.sumAsBigInteger(Generated_collections_Test.zahlen135_), EqualsTestOp.matches(new BigInteger("900"), CollectionHelper.sumAsBigInteger(Generated_collections_Test.zahlen135_)));
   }
   @Test
   public void Picking_item2_531692237849342686() throws Throwable {
-    Assert.assertEquals("Expected: " + TreePVector.<Number>empty().plus((Number) new BigInteger("100")) + ", but was: " + Generated_collections_Test.zahlen1_, (Object) TreePVector.<Number>empty().plus((Number) new BigInteger("100")), (Object) Generated_collections_Test.zahlen1_);
+    Assert.assertEquals("Expected: " + TreePVector.<Number>empty().plus(new BigInteger("100")) + ", but was: " + Generated_collections_Test.zahlen1_, TreePVector.<Number>empty().plus(new BigInteger("100")), Generated_collections_Test.zahlen1_);
   }
   @Test
   public void Picking_item3_531692237850336579() throws Throwable {
-    Assert.assertTrue("Expected: " + (Number) new BigInteger("0") + ", but was: " + BigInteger.valueOf(Generated_collections_Test.zahlenNix_.size()), EqualsTestOp.matches((Number) new BigInteger("0"), BigInteger.valueOf(Generated_collections_Test.zahlenNix_.size())));
+    Assert.assertTrue("Expected: " + new BigInteger("0") + ", but was: " + BigInteger.valueOf(Generated_collections_Test.zahlenNix_.size()), EqualsTestOp.matches(new BigInteger("0"), BigInteger.valueOf(Generated_collections_Test.zahlenNix_.size())));
   }
   @Test
   public void Picking_item4_531692237851362666() throws Throwable {
@@ -8683,7 +8683,7 @@ public class Generated_collections_Test {
       if (TreePVector.<Number>from(((_FunctionTypes._return_P0_E0<List<Number>>) () -> {
         List<Number> res = new ArrayList<Number>();
         PVector source = Generated_collections_Test.zahlen_;
-        PVector selectors = TreePVector.<Number>empty().plus(((BigInteger) (Number) new BigInteger("1")).negate());
+        PVector selectors = TreePVector.<Number>empty().plus(new BigInteger("1").negate());
         Iterator<Object> iter = selectors.iterator();
         while (iter.hasNext()) {
           BigInteger s = (BigInteger) iter.next();
@@ -8704,7 +8704,7 @@ public class Generated_collections_Test {
       if (TreePVector.<Number>from(((_FunctionTypes._return_P0_E0<List<Number>>) () -> {
         List<Number> res = new ArrayList<Number>();
         PVector source = Generated_collections_Test.zahlen_;
-        PVector selectors = TreePVector.<Number>empty().plus((Number) new BigInteger("100"));
+        PVector selectors = TreePVector.<Number>empty().plus(new BigInteger("100"));
         Iterator<Object> iter = selectors.iterator();
         while (iter.hasNext()) {
           BigInteger s = (BigInteger) iter.next();
@@ -8721,16 +8721,16 @@ public class Generated_collections_Test {
   }
   @Test
   public void firstNLastN_item0_860225163414287127() throws Throwable {
-    Assert.assertEquals("Expected: " + TreePVector.<Number>empty().plus((Number) new BigInteger("100")).plus((Number) new BigInteger("200")).plus((Number) new BigInteger("300")).plus((Number) new BigInteger("400")) + ", but was: " + (((_FunctionTypes._return_P0_E0<PVector<Number>>) () -> {
+    Assert.assertEquals("Expected: " + TreePVector.<Number>empty().plus(new BigInteger("100")).plus(new BigInteger("200")).plus(new BigInteger("300")).plus(new BigInteger("400")) + ", but was: " + (((_FunctionTypes._return_P0_E0<PVector<Number>>) () -> {
       PVector<Number> origList = Generated_collections_Test.zahlen_;
-      int noOfElements = ((Number) new BigInteger("4")).intValue();
+      int noOfElements = new BigInteger("4").intValue();
       if (origList.size() <= noOfElements) {
         return origList;
       }
       return origList.subList(0, noOfElements);
-    }).invoke()), (Object) TreePVector.<Number>empty().plus((Number) new BigInteger("100")).plus((Number) new BigInteger("200")).plus((Number) new BigInteger("300")).plus((Number) new BigInteger("400")), (Object) ((_FunctionTypes._return_P0_E0<PVector<Number>>) () -> {
+    }).invoke()), TreePVector.<Number>empty().plus(new BigInteger("100")).plus(new BigInteger("200")).plus(new BigInteger("300")).plus(new BigInteger("400")), (Object) ((_FunctionTypes._return_P0_E0<PVector<Number>>) () -> {
       PVector<Number> origList = Generated_collections_Test.zahlen_;
-      int noOfElements = ((Number) new BigInteger("4")).intValue();
+      int noOfElements = new BigInteger("4").intValue();
       if (origList.size() <= noOfElements) {
         return origList;
       }
@@ -8739,16 +8739,16 @@ public class Generated_collections_Test {
   }
   @Test
   public void firstNLastN_item1_860225163415384554() throws Throwable {
-    Assert.assertEquals("Expected: " + TreePVector.<Number>empty().plus((Number) new BigInteger("300")).plus((Number) new BigInteger("400")) + ", but was: " + (((_FunctionTypes._return_P0_E0<PVector<Number>>) () -> {
-      PVector<Number> origList = TreePVector.<Number>empty().plus((Number) new BigInteger("100")).plus((Number) new BigInteger("200")).plus((Number) new BigInteger("300")).plus((Number) new BigInteger("400"));
-      int noOfElements = ((Number) new BigInteger("2")).intValue();
+    Assert.assertEquals("Expected: " + TreePVector.<Number>empty().plus(new BigInteger("300")).plus(new BigInteger("400")) + ", but was: " + (((_FunctionTypes._return_P0_E0<PVector<Number>>) () -> {
+      PVector<Number> origList = TreePVector.<Number>empty().plus(new BigInteger("100")).plus(new BigInteger("200")).plus(new BigInteger("300")).plus(new BigInteger("400"));
+      int noOfElements = new BigInteger("2").intValue();
       if (origList.size() <= noOfElements) {
         return origList;
       }
       return origList.subList(origList.size() - noOfElements, origList.size());
-    }).invoke()), (Object) TreePVector.<Number>empty().plus((Number) new BigInteger("300")).plus((Number) new BigInteger("400")), (Object) ((_FunctionTypes._return_P0_E0<PVector<Number>>) () -> {
-      PVector<Number> origList = TreePVector.<Number>empty().plus((Number) new BigInteger("100")).plus((Number) new BigInteger("200")).plus((Number) new BigInteger("300")).plus((Number) new BigInteger("400"));
-      int noOfElements = ((Number) new BigInteger("2")).intValue();
+    }).invoke()), TreePVector.<Number>empty().plus(new BigInteger("300")).plus(new BigInteger("400")), (Object) ((_FunctionTypes._return_P0_E0<PVector<Number>>) () -> {
+      PVector<Number> origList = TreePVector.<Number>empty().plus(new BigInteger("100")).plus(new BigInteger("200")).plus(new BigInteger("300")).plus(new BigInteger("400"));
+      int noOfElements = new BigInteger("2").intValue();
       if (origList.size() <= noOfElements) {
         return origList;
       }
@@ -8757,34 +8757,34 @@ public class Generated_collections_Test {
   }
   @Test
   public void firstNLastN_item2_860225163416645782() throws Throwable {
-    Assert.assertEquals("Expected: " + TreePVector.<Number>empty().plus((Number) new BigInteger("300")).plus((Number) new BigInteger("400")) + ", but was: " + (((_FunctionTypes._return_P0_E0<PVector<Number>>) () -> {
+    Assert.assertEquals("Expected: " + TreePVector.<Number>empty().plus(new BigInteger("300")).plus(new BigInteger("400")) + ", but was: " + (((_FunctionTypes._return_P0_E0<PVector<Number>>) () -> {
       PVector<Number> origList = new _FunctionTypes._return_P0_E0<PVector<Number>>() {
         public PVector<Number> invoke() {
           PVector<Number> origList = Generated_collections_Test.zahlen_;
-          int noOfElements = ((Number) new BigInteger("4")).intValue();
+          int noOfElements = new BigInteger("4").intValue();
           if (origList.size() <= noOfElements) {
             return origList;
           }
           return origList.subList(0, noOfElements);
         }
       }.invoke();
-      int noOfElements = ((Number) new BigInteger("2")).intValue();
+      int noOfElements = new BigInteger("2").intValue();
       if (origList.size() <= noOfElements) {
         return origList;
       }
       return origList.subList(origList.size() - noOfElements, origList.size());
-    }).invoke()), (Object) TreePVector.<Number>empty().plus((Number) new BigInteger("300")).plus((Number) new BigInteger("400")), (Object) ((_FunctionTypes._return_P0_E0<PVector<Number>>) () -> {
+    }).invoke()), TreePVector.<Number>empty().plus(new BigInteger("300")).plus(new BigInteger("400")), (Object) ((_FunctionTypes._return_P0_E0<PVector<Number>>) () -> {
       PVector<Number> origList = new _FunctionTypes._return_P0_E0<PVector<Number>>() {
         public PVector<Number> invoke() {
           PVector<Number> origList = Generated_collections_Test.zahlen_;
-          int noOfElements = ((Number) new BigInteger("4")).intValue();
+          int noOfElements = new BigInteger("4").intValue();
           if (origList.size() <= noOfElements) {
             return origList;
           }
           return origList.subList(0, noOfElements);
         }
       }.invoke();
-      int noOfElements = ((Number) new BigInteger("2")).intValue();
+      int noOfElements = new BigInteger("2").intValue();
       if (origList.size() <= noOfElements) {
         return origList;
       }
@@ -8886,14 +8886,14 @@ public class Generated_collections_Test {
       return 0;
     }
   }
-  public static final PVector<Punkt> punkte_ = TreePVector.<Punkt>empty().plus(new Punkt((Number) new BigInteger("0"), (Number) new BigInteger("0"))).plus(new Punkt((Number) new BigInteger("1"), (Number) new BigInteger("1"))).plus(new Punkt((Number) new BigInteger("2"), (Number) new BigInteger("2")));
-  public static final PVector<Number> lista3_ = TreePVector.<Number>empty().plus((Number) new BigInteger("1")).plus((Number) new BigInteger("2")).plus((Number) new BigInteger("3"));
-  public static final PVector<Number> listb3_ = TreePVector.<Number>empty().plus((Number) new BigInteger("10")).plus((Number) new BigInteger("12")).plus((Number) new BigInteger("13"));
-  public static final PVector<Number> listc3_ = TreePVector.<Number>empty().plus((Number) new BigInteger("100")).plus((Number) new BigInteger("120")).plus((Number) new BigInteger("130"));
+  public static final PVector<Punkt> punkte_ = TreePVector.<Punkt>empty().plus(new Punkt(new BigInteger("0"), new BigInteger("0"))).plus(new Punkt(new BigInteger("1"), new BigInteger("1"))).plus(new Punkt(new BigInteger("2"), new BigInteger("2")));
+  public static final PVector<Number> lista3_ = TreePVector.<Number>empty().plus(new BigInteger("1")).plus(new BigInteger("2")).plus(new BigInteger("3"));
+  public static final PVector<Number> listb3_ = TreePVector.<Number>empty().plus(new BigInteger("10")).plus(new BigInteger("12")).plus(new BigInteger("13"));
+  public static final PVector<Number> listc3_ = TreePVector.<Number>empty().plus(new BigInteger("100")).plus(new BigInteger("120")).plus(new BigInteger("130"));
   @Test
   public void indexOf_item0_1406572792885283205() throws Throwable {
-    Assert.assertTrue("Expected: " + (Number) new BigInteger("0") + ", but was: " + (((_FunctionTypes._return_P0_E0<BigInteger>) () -> {
-      Object candidate = (Number) new BigInteger("100");
+    Assert.assertTrue("Expected: " + new BigInteger("0") + ", but was: " + (((_FunctionTypes._return_P0_E0<BigInteger>) () -> {
+      Object candidate = new BigInteger("100");
       Iterator it = Generated_collections_Test.zahlen_.iterator();
       int p = -1;
       while (it.hasNext()) {
@@ -8903,8 +8903,8 @@ public class Generated_collections_Test {
         }
       }
       return BigInteger.valueOf(-1);
-    }).invoke()), EqualsTestOp.matches((Number) new BigInteger("0"), ((_FunctionTypes._return_P0_E0<BigInteger>) () -> {
-      Object candidate = (Number) new BigInteger("100");
+    }).invoke()), EqualsTestOp.matches(new BigInteger("0"), ((_FunctionTypes._return_P0_E0<BigInteger>) () -> {
+      Object candidate = new BigInteger("100");
       Iterator it = Generated_collections_Test.zahlen_.iterator();
       int p = -1;
       while (it.hasNext()) {
@@ -8918,8 +8918,8 @@ public class Generated_collections_Test {
   }
   @Test
   public void indexOf_item1_1406572792885301968() throws Throwable {
-    Assert.assertTrue("Expected: " + (Number) new BigInteger("2") + ", but was: " + (((_FunctionTypes._return_P0_E0<BigInteger>) () -> {
-      Object candidate = (Number) new BigInteger("300");
+    Assert.assertTrue("Expected: " + new BigInteger("2") + ", but was: " + (((_FunctionTypes._return_P0_E0<BigInteger>) () -> {
+      Object candidate = new BigInteger("300");
       Iterator it = Generated_collections_Test.zahlen_.iterator();
       int p = -1;
       while (it.hasNext()) {
@@ -8929,8 +8929,8 @@ public class Generated_collections_Test {
         }
       }
       return BigInteger.valueOf(-1);
-    }).invoke()), EqualsTestOp.matches((Number) new BigInteger("2"), ((_FunctionTypes._return_P0_E0<BigInteger>) () -> {
-      Object candidate = (Number) new BigInteger("300");
+    }).invoke()), EqualsTestOp.matches(new BigInteger("2"), ((_FunctionTypes._return_P0_E0<BigInteger>) () -> {
+      Object candidate = new BigInteger("300");
       Iterator it = Generated_collections_Test.zahlen_.iterator();
       int p = -1;
       while (it.hasNext()) {
@@ -8944,8 +8944,8 @@ public class Generated_collections_Test {
   }
   @Test
   public void indexOf_item2_1406572792885302080() throws Throwable {
-    Assert.assertTrue("Expected: " + (Number) new BigInteger("-1") + ", but was: " + (((_FunctionTypes._return_P0_E0<BigInteger>) () -> {
-      Object candidate = (Number) new BigInteger("1300");
+    Assert.assertTrue("Expected: " + new BigInteger("-1") + ", but was: " + (((_FunctionTypes._return_P0_E0<BigInteger>) () -> {
+      Object candidate = new BigInteger("1300");
       Iterator it = Generated_collections_Test.zahlen_.iterator();
       int p = -1;
       while (it.hasNext()) {
@@ -8955,8 +8955,8 @@ public class Generated_collections_Test {
         }
       }
       return BigInteger.valueOf(-1);
-    }).invoke()), EqualsTestOp.matches((Number) new BigInteger("-1"), ((_FunctionTypes._return_P0_E0<BigInteger>) () -> {
-      Object candidate = (Number) new BigInteger("1300");
+    }).invoke()), EqualsTestOp.matches(new BigInteger("-1"), ((_FunctionTypes._return_P0_E0<BigInteger>) () -> {
+      Object candidate = new BigInteger("1300");
       Iterator it = Generated_collections_Test.zahlen_.iterator();
       int p = -1;
       while (it.hasNext()) {
@@ -8970,7 +8970,7 @@ public class Generated_collections_Test {
   }
   @Test
   public void indexOf_item3_1406572792886042608() throws Throwable {
-    Assert.assertTrue("Expected: " + (Number) new BigInteger("2") + ", but was: " + (((_FunctionTypes._return_P0_E0<BigInteger>) () -> {
+    Assert.assertTrue("Expected: " + new BigInteger("2") + ", but was: " + (((_FunctionTypes._return_P0_E0<BigInteger>) () -> {
       Object candidate = "drei";
       Iterator it = Generated_collections_Test.woerter_.iterator();
       int p = -1;
@@ -8981,7 +8981,7 @@ public class Generated_collections_Test {
         }
       }
       return BigInteger.valueOf(-1);
-    }).invoke()), EqualsTestOp.matches((Number) new BigInteger("2"), ((_FunctionTypes._return_P0_E0<BigInteger>) () -> {
+    }).invoke()), EqualsTestOp.matches(new BigInteger("2"), ((_FunctionTypes._return_P0_E0<BigInteger>) () -> {
       Object candidate = "drei";
       Iterator it = Generated_collections_Test.woerter_.iterator();
       int p = -1;
@@ -8996,8 +8996,8 @@ public class Generated_collections_Test {
   }
   @Test
   public void indexOf_item4_1406572792886316360() throws Throwable {
-    Assert.assertTrue("Expected: " + (Number) new BigInteger("1") + ", but was: " + (((_FunctionTypes._return_P0_E0<BigInteger>) () -> {
-      Object candidate = new Punkt((Number) new BigInteger("1"), (Number) new BigInteger("1"));
+    Assert.assertTrue("Expected: " + new BigInteger("1") + ", but was: " + (((_FunctionTypes._return_P0_E0<BigInteger>) () -> {
+      Object candidate = new Punkt(new BigInteger("1"), new BigInteger("1"));
       Iterator it = Generated_collections_Test.punkte_.iterator();
       int p = -1;
       while (it.hasNext()) {
@@ -9007,8 +9007,8 @@ public class Generated_collections_Test {
         }
       }
       return BigInteger.valueOf(-1);
-    }).invoke()), EqualsTestOp.matches((Number) new BigInteger("1"), ((_FunctionTypes._return_P0_E0<BigInteger>) () -> {
-      Object candidate = new Punkt((Number) new BigInteger("1"), (Number) new BigInteger("1"));
+    }).invoke()), EqualsTestOp.matches(new BigInteger("1"), ((_FunctionTypes._return_P0_E0<BigInteger>) () -> {
+      Object candidate = new Punkt(new BigInteger("1"), new BigInteger("1"));
       Iterator it = Generated_collections_Test.punkte_.iterator();
       int p = -1;
       while (it.hasNext()) {
@@ -9022,21 +9022,21 @@ public class Generated_collections_Test {
   }
   @Test
   public void indexOf_item6_8864456479286478131() throws Throwable {
-    Assert.assertEquals("Expected: " + TreePVector.<Number>empty().plus((Number) new BigInteger("10")).plus((Number) new BigInteger("12")).plus((Number) new BigInteger("13")) + ", but was: " + TreePVector.<Number>from(Generated_collections_Test.lista3_.stream().map(new Function<Number, Number>() {
+    Assert.assertEquals("Expected: " + TreePVector.<Number>empty().plus(new BigInteger("10")).plus(new BigInteger("12")).plus(new BigInteger("13")) + ", but was: " + TreePVector.<Number>from(Generated_collections_Test.lista3_.stream().map(new Function<Number, Number>() {
       public Number apply(Number param) {
         return new Function<ParameterSetWrapper, Number>() {
           public Number apply(ParameterSetWrapper param) {
             Number it = (Number) param.parameters.get(0);
-            return (Number) Generated_collections_Test.listb3_.get(BigInteger.valueOf(TreePVector.<Object>from(Generated_collections_Test.lista3_).indexOf(it)).intValue());
+            return Generated_collections_Test.listb3_.get(BigInteger.valueOf(TreePVector.<Object>from(Generated_collections_Test.lista3_).indexOf(it)).intValue());
           }
         }.apply(new ParameterSetWrapper(param));
       }
-    }).collect(Collectors.<Number>toList())), (Object) TreePVector.<Number>empty().plus((Number) new BigInteger("10")).plus((Number) new BigInteger("12")).plus((Number) new BigInteger("13")), (Object) TreePVector.<Number>from(Generated_collections_Test.lista3_.stream().map(new Function<Number, Number>() {
+    }).collect(Collectors.<Number>toList())), TreePVector.<Number>empty().plus(new BigInteger("10")).plus(new BigInteger("12")).plus(new BigInteger("13")), TreePVector.<Number>from(Generated_collections_Test.lista3_.stream().map(new Function<Number, Number>() {
       public Number apply(Number param) {
         return new Function<ParameterSetWrapper, Number>() {
           public Number apply(ParameterSetWrapper param) {
             Number it = (Number) param.parameters.get(0);
-            return (Number) Generated_collections_Test.listb3_.get(BigInteger.valueOf(TreePVector.<Object>from(Generated_collections_Test.lista3_).indexOf(it)).intValue());
+            return Generated_collections_Test.listb3_.get(BigInteger.valueOf(TreePVector.<Object>from(Generated_collections_Test.lista3_).indexOf(it)).intValue());
           }
         }.apply(new ParameterSetWrapper(param));
       }
@@ -9044,21 +9044,21 @@ public class Generated_collections_Test {
   }
   @Test
   public void indexOf_item7_8864456479289491690() throws Throwable {
-    Assert.assertEquals("Expected: " + TreePVector.<Number>empty().plus((Number) new BigInteger("10")).plus((Number) new BigInteger("12")).plus((Number) new BigInteger("13")) + ", but was: " + TreePVector.<Number>from(Generated_collections_Test.lista3_.stream().map(new Function<Number, Number>() {
+    Assert.assertEquals("Expected: " + TreePVector.<Number>empty().plus(new BigInteger("10")).plus(new BigInteger("12")).plus(new BigInteger("13")) + ", but was: " + TreePVector.<Number>from(Generated_collections_Test.lista3_.stream().map(new Function<Number, Number>() {
       public Number apply(Number param) {
         return new Function<ParameterSetWrapper, Number>() {
           public Number apply(ParameterSetWrapper param) {
             Number it = (Number) param.parameters.get(0);
-            return (Number) Generated_collections_Test.listb3_.get(BigInteger.valueOf(TreePVector.<Object>from(Generated_collections_Test.lista3_).indexOf(it)).intValue());
+            return Generated_collections_Test.listb3_.get(BigInteger.valueOf(TreePVector.<Object>from(Generated_collections_Test.lista3_).indexOf(it)).intValue());
           }
         }.apply(new ParameterSetWrapper(param));
       }
-    }).collect(Collectors.<Number>toList())), (Object) TreePVector.<Number>empty().plus((Number) new BigInteger("10")).plus((Number) new BigInteger("12")).plus((Number) new BigInteger("13")), (Object) TreePVector.<Number>from(Generated_collections_Test.lista3_.stream().map(new Function<Number, Number>() {
+    }).collect(Collectors.<Number>toList())), TreePVector.<Number>empty().plus(new BigInteger("10")).plus(new BigInteger("12")).plus(new BigInteger("13")), TreePVector.<Number>from(Generated_collections_Test.lista3_.stream().map(new Function<Number, Number>() {
       public Number apply(Number param) {
         return new Function<ParameterSetWrapper, Number>() {
           public Number apply(ParameterSetWrapper param) {
             Number it = (Number) param.parameters.get(0);
-            return (Number) Generated_collections_Test.listb3_.get(BigInteger.valueOf(TreePVector.<Object>from(Generated_collections_Test.lista3_).indexOf(it)).intValue());
+            return Generated_collections_Test.listb3_.get(BigInteger.valueOf(TreePVector.<Object>from(Generated_collections_Test.lista3_).indexOf(it)).intValue());
           }
         }.apply(new ParameterSetWrapper(param));
       }
@@ -9066,21 +9066,21 @@ public class Generated_collections_Test {
   }
   @Test
   public void indexOf_item8_8864456479301639353() throws Throwable {
-    Assert.assertEquals("Expected: " + TreePVector.<Number>empty().plus((Number) new BigInteger("10")).plus((Number) new BigInteger("12")).plus((Number) new BigInteger("13")) + ", but was: " + TreePVector.<Number>from(Generated_collections_Test.listc3_.stream().map(new Function<Number, Number>() {
+    Assert.assertEquals("Expected: " + TreePVector.<Number>empty().plus(new BigInteger("10")).plus(new BigInteger("12")).plus(new BigInteger("13")) + ", but was: " + TreePVector.<Number>from(Generated_collections_Test.listc3_.stream().map(new Function<Number, Number>() {
       public Number apply(Number param) {
         return new Function<ParameterSetWrapper, Number>() {
           public Number apply(ParameterSetWrapper param) {
             Number it = (Number) param.parameters.get(0);
-            return (Number) Generated_collections_Test.listb3_.get(BigInteger.valueOf(TreePVector.<Object>from(Generated_collections_Test.listc3_).indexOf(it)).intValue());
+            return Generated_collections_Test.listb3_.get(BigInteger.valueOf(TreePVector.<Object>from(Generated_collections_Test.listc3_).indexOf(it)).intValue());
           }
         }.apply(new ParameterSetWrapper(param));
       }
-    }).collect(Collectors.<Number>toList())), (Object) TreePVector.<Number>empty().plus((Number) new BigInteger("10")).plus((Number) new BigInteger("12")).plus((Number) new BigInteger("13")), (Object) TreePVector.<Number>from(Generated_collections_Test.listc3_.stream().map(new Function<Number, Number>() {
+    }).collect(Collectors.<Number>toList())), TreePVector.<Number>empty().plus(new BigInteger("10")).plus(new BigInteger("12")).plus(new BigInteger("13")), TreePVector.<Number>from(Generated_collections_Test.listc3_.stream().map(new Function<Number, Number>() {
       public Number apply(Number param) {
         return new Function<ParameterSetWrapper, Number>() {
           public Number apply(ParameterSetWrapper param) {
             Number it = (Number) param.parameters.get(0);
-            return (Number) Generated_collections_Test.listb3_.get(BigInteger.valueOf(TreePVector.<Object>from(Generated_collections_Test.listc3_).indexOf(it)).intValue());
+            return Generated_collections_Test.listb3_.get(BigInteger.valueOf(TreePVector.<Object>from(Generated_collections_Test.listc3_).indexOf(it)).intValue());
           }
         }.apply(new ParameterSetWrapper(param));
       }
@@ -9088,21 +9088,21 @@ public class Generated_collections_Test {
   }
   @Test
   public void indexOf_item9_8864456479304569276() throws Throwable {
-    Assert.assertEquals("Expected: " + TreePVector.<Number>empty().plus((Number) new BigInteger("10")).plus((Number) new BigInteger("12")).plus((Number) new BigInteger("13")) + ", but was: " + TreePVector.<Number>from(Generated_collections_Test.listc3_.stream().map(new Function<Number, Number>() {
+    Assert.assertEquals("Expected: " + TreePVector.<Number>empty().plus(new BigInteger("10")).plus(new BigInteger("12")).plus(new BigInteger("13")) + ", but was: " + TreePVector.<Number>from(Generated_collections_Test.listc3_.stream().map(new Function<Number, Number>() {
       public Number apply(Number param) {
         return new Function<ParameterSetWrapper, Number>() {
           public Number apply(ParameterSetWrapper param) {
             Number it = (Number) param.parameters.get(0);
-            return (Number) Generated_collections_Test.listb3_.get(BigInteger.valueOf(TreePVector.<Object>from(Generated_collections_Test.listc3_).indexOf(it)).intValue());
+            return Generated_collections_Test.listb3_.get(BigInteger.valueOf(TreePVector.<Object>from(Generated_collections_Test.listc3_).indexOf(it)).intValue());
           }
         }.apply(new ParameterSetWrapper(param));
       }
-    }).collect(Collectors.<Number>toList())), (Object) TreePVector.<Number>empty().plus((Number) new BigInteger("10")).plus((Number) new BigInteger("12")).plus((Number) new BigInteger("13")), (Object) TreePVector.<Number>from(Generated_collections_Test.listc3_.stream().map(new Function<Number, Number>() {
+    }).collect(Collectors.<Number>toList())), TreePVector.<Number>empty().plus(new BigInteger("10")).plus(new BigInteger("12")).plus(new BigInteger("13")), TreePVector.<Number>from(Generated_collections_Test.listc3_.stream().map(new Function<Number, Number>() {
       public Number apply(Number param) {
         return new Function<ParameterSetWrapper, Number>() {
           public Number apply(ParameterSetWrapper param) {
             Number it = (Number) param.parameters.get(0);
-            return (Number) Generated_collections_Test.listb3_.get(BigInteger.valueOf(TreePVector.<Object>from(Generated_collections_Test.listc3_).indexOf(it)).intValue());
+            return Generated_collections_Test.listb3_.get(BigInteger.valueOf(TreePVector.<Object>from(Generated_collections_Test.listc3_).indexOf(it)).intValue());
           }
         }.apply(new ParameterSetWrapper(param));
       }
@@ -9110,21 +9110,21 @@ public class Generated_collections_Test {
   }
   @Test
   public void indexOf_item10_8864456479304574168() throws Throwable {
-    Assert.assertEquals("Expected: " + TreePVector.<Number>empty().plus((Number) new BigInteger("2")).plus((Number) new BigInteger("4")).plus((Number) new BigInteger("6")) + ", but was: " + TreePVector.<Number>from(Generated_collections_Test.lista3_.stream().map(new Function<Number, Number>() {
+    Assert.assertEquals("Expected: " + TreePVector.<Number>empty().plus(new BigInteger("2")).plus(new BigInteger("4")).plus(new BigInteger("6")) + ", but was: " + TreePVector.<Number>from(Generated_collections_Test.lista3_.stream().map(new Function<Number, Number>() {
       public Number apply(Number param) {
         return new Function<ParameterSetWrapper, Number>() {
           public Number apply(ParameterSetWrapper param) {
             Number it = (Number) param.parameters.get(0);
-            return AH.add(AH.add(it, (Number) new BigInteger("1")), BigInteger.valueOf(TreePVector.<Object>from(Generated_collections_Test.lista3_).indexOf(it)));
+            return AH.add(AH.add(it, new BigInteger("1")), BigInteger.valueOf(TreePVector.<Object>from(Generated_collections_Test.lista3_).indexOf(it)));
           }
         }.apply(new ParameterSetWrapper(param));
       }
-    }).collect(Collectors.<Number>toList())), (Object) TreePVector.<Number>empty().plus((Number) new BigInteger("2")).plus((Number) new BigInteger("4")).plus((Number) new BigInteger("6")), (Object) TreePVector.<Number>from(Generated_collections_Test.lista3_.stream().map(new Function<Number, Number>() {
+    }).collect(Collectors.<Number>toList())), TreePVector.<Number>empty().plus(new BigInteger("2")).plus(new BigInteger("4")).plus(new BigInteger("6")), TreePVector.<Number>from(Generated_collections_Test.lista3_.stream().map(new Function<Number, Number>() {
       public Number apply(Number param) {
         return new Function<ParameterSetWrapper, Number>() {
           public Number apply(ParameterSetWrapper param) {
             Number it = (Number) param.parameters.get(0);
-            return AH.add(AH.add(it, (Number) new BigInteger("1")), BigInteger.valueOf(TreePVector.<Object>from(Generated_collections_Test.lista3_).indexOf(it)));
+            return AH.add(AH.add(it, new BigInteger("1")), BigInteger.valueOf(TreePVector.<Object>from(Generated_collections_Test.lista3_).indexOf(it)));
           }
         }.apply(new ParameterSetWrapper(param));
       }
@@ -9132,12 +9132,12 @@ public class Generated_collections_Test {
   }
   @Test
   public void indexOf_item11_8864456479305749196() throws Throwable {
-    Assert.assertEquals("Expected: " + TreePVector.<Number>empty().plus((Number) new BigInteger("0")).plus((Number) new BigInteger("1")).plus((Number) new BigInteger("2")) + ", but was: " + TreePVector.<Number>from(Generated_collections_Test.listc3_.stream().map(new Function<Number, Number>() {
+    Assert.assertEquals("Expected: " + TreePVector.<Number>empty().plus(new BigInteger("0")).plus(new BigInteger("1")).plus(new BigInteger("2")) + ", but was: " + TreePVector.<Number>from(Generated_collections_Test.listc3_.stream().map(new Function<Number, Number>() {
       public Number apply(Number param) {
         return new Function<ParameterSetWrapper, Number>() {
           public Number apply(ParameterSetWrapper param) {
             Number it = (Number) param.parameters.get(0);
-            return (Number) TreePVector.<Number>from(Generated_collections_Test.lista3_.stream().map(new Function<Number, Number>() {
+            return TreePVector.<Number>from(Generated_collections_Test.lista3_.stream().map(new Function<Number, Number>() {
               public Number apply(Number param) {
                 return new Function<ParameterSetWrapper, Number>() {
                   public Number apply(ParameterSetWrapper param) {
@@ -9150,12 +9150,12 @@ public class Generated_collections_Test {
           }
         }.apply(new ParameterSetWrapper(param));
       }
-    }).collect(Collectors.<Number>toList())), (Object) TreePVector.<Number>empty().plus((Number) new BigInteger("0")).plus((Number) new BigInteger("1")).plus((Number) new BigInteger("2")), (Object) TreePVector.<Number>from(Generated_collections_Test.listc3_.stream().map(new Function<Number, Number>() {
+    }).collect(Collectors.<Number>toList())), TreePVector.<Number>empty().plus(new BigInteger("0")).plus(new BigInteger("1")).plus(new BigInteger("2")), TreePVector.<Number>from(Generated_collections_Test.listc3_.stream().map(new Function<Number, Number>() {
       public Number apply(Number param) {
         return new Function<ParameterSetWrapper, Number>() {
           public Number apply(ParameterSetWrapper param) {
             Number it = (Number) param.parameters.get(0);
-            return (Number) TreePVector.<Number>from(Generated_collections_Test.lista3_.stream().map(new Function<Number, Number>() {
+            return TreePVector.<Number>from(Generated_collections_Test.lista3_.stream().map(new Function<Number, Number>() {
               public Number apply(Number param) {
                 return new Function<ParameterSetWrapper, Number>() {
                   public Number apply(ParameterSetWrapper param) {
@@ -9172,17 +9172,17 @@ public class Generated_collections_Test {
   }
   @Test
   public void indexOf_item12_8864456479305012598() throws Throwable {
-    Assert.assertEquals("Expected: " + TreePVector.<Number>empty().plus((Number) new BigInteger("112")).plus((Number) new BigInteger("136")).plus((Number) new BigInteger("149")) + ", but was: " + TreePVector.<Number>from(Generated_collections_Test.listc3_.stream().map(new Function<Number, Number>() {
+    Assert.assertEquals("Expected: " + TreePVector.<Number>empty().plus(new BigInteger("112")).plus(new BigInteger("136")).plus(new BigInteger("149")) + ", but was: " + TreePVector.<Number>from(Generated_collections_Test.listc3_.stream().map(new Function<Number, Number>() {
       public Number apply(Number param) {
         return new Function<ParameterSetWrapper, Number>() {
           public Number apply(ParameterSetWrapper param) {
             Number it = (Number) param.parameters.get(0);
-            return AH.add(AH.add(it, (Number) Generated_collections_Test.listb3_.get(BigInteger.valueOf(TreePVector.<Object>from(Generated_collections_Test.listc3_).indexOf(it)).intValue())), (Number) TreePVector.<Number>from(Generated_collections_Test.lista3_.stream().map(new Function<Number, Number>() {
+            return AH.add(AH.add(it, Generated_collections_Test.listb3_.get(BigInteger.valueOf(TreePVector.<Object>from(Generated_collections_Test.listc3_).indexOf(it)).intValue())), TreePVector.<Number>from(Generated_collections_Test.lista3_.stream().map(new Function<Number, Number>() {
               public Number apply(Number param) {
                 return new Function<ParameterSetWrapper, Number>() {
                   public Number apply(ParameterSetWrapper param) {
                     Number it = (Number) param.parameters.get(0);
-                    return AH.add(AH.add(it, (Number) new BigInteger("1")), BigInteger.valueOf(TreePVector.<Object>from(Generated_collections_Test.lista3_).indexOf(it)));
+                    return AH.add(AH.add(it, new BigInteger("1")), BigInteger.valueOf(TreePVector.<Object>from(Generated_collections_Test.lista3_).indexOf(it)));
                   }
                 }.apply(new ParameterSetWrapper(param));
               }
@@ -9190,17 +9190,17 @@ public class Generated_collections_Test {
           }
         }.apply(new ParameterSetWrapper(param));
       }
-    }).collect(Collectors.<Number>toList())), (Object) TreePVector.<Number>empty().plus((Number) new BigInteger("112")).plus((Number) new BigInteger("136")).plus((Number) new BigInteger("149")), (Object) TreePVector.<Number>from(Generated_collections_Test.listc3_.stream().map(new Function<Number, Number>() {
+    }).collect(Collectors.<Number>toList())), TreePVector.<Number>empty().plus(new BigInteger("112")).plus(new BigInteger("136")).plus(new BigInteger("149")), TreePVector.<Number>from(Generated_collections_Test.listc3_.stream().map(new Function<Number, Number>() {
       public Number apply(Number param) {
         return new Function<ParameterSetWrapper, Number>() {
           public Number apply(ParameterSetWrapper param) {
             Number it = (Number) param.parameters.get(0);
-            return AH.add(AH.add(it, (Number) Generated_collections_Test.listb3_.get(BigInteger.valueOf(TreePVector.<Object>from(Generated_collections_Test.listc3_).indexOf(it)).intValue())), (Number) TreePVector.<Number>from(Generated_collections_Test.lista3_.stream().map(new Function<Number, Number>() {
+            return AH.add(AH.add(it, Generated_collections_Test.listb3_.get(BigInteger.valueOf(TreePVector.<Object>from(Generated_collections_Test.listc3_).indexOf(it)).intValue())), TreePVector.<Number>from(Generated_collections_Test.lista3_.stream().map(new Function<Number, Number>() {
               public Number apply(Number param) {
                 return new Function<ParameterSetWrapper, Number>() {
                   public Number apply(ParameterSetWrapper param) {
                     Number it = (Number) param.parameters.get(0);
-                    return AH.add(AH.add(it, (Number) new BigInteger("1")), BigInteger.valueOf(TreePVector.<Object>from(Generated_collections_Test.lista3_).indexOf(it)));
+                    return AH.add(AH.add(it, new BigInteger("1")), BigInteger.valueOf(TreePVector.<Object>from(Generated_collections_Test.lista3_).indexOf(it)));
                   }
                 }.apply(new ParameterSetWrapper(param));
               }
@@ -9217,7 +9217,7 @@ public class Generated_collections_Test {
         return new Function<ParameterSetWrapper, Boolean>() {
           public Boolean apply(ParameterSetWrapper param) {
             Number it = (Number) param.parameters.get(0);
-            return AH.isEqual(it, AH.add(BigInteger.valueOf(TreePVector.<Object>from(Generated_collections_Test.lista3_).indexOf(it)), (Number) new BigInteger("1")));
+            return AH.isEqual(it, AH.add(BigInteger.valueOf(TreePVector.<Object>from(Generated_collections_Test.lista3_).indexOf(it)), new BigInteger("1")));
           }
         }.apply(new ParameterSetWrapper(o));
       }
@@ -9226,7 +9226,7 @@ public class Generated_collections_Test {
         return new Function<ParameterSetWrapper, Boolean>() {
           public Boolean apply(ParameterSetWrapper param) {
             Number it = (Number) param.parameters.get(0);
-            return AH.isEqual(it, AH.add(BigInteger.valueOf(TreePVector.<Object>from(Generated_collections_Test.lista3_).indexOf(it)), (Number) new BigInteger("1")));
+            return AH.isEqual(it, AH.add(BigInteger.valueOf(TreePVector.<Object>from(Generated_collections_Test.lista3_).indexOf(it)), new BigInteger("1")));
           }
         }.apply(new ParameterSetWrapper(o));
       }
@@ -9239,7 +9239,7 @@ public class Generated_collections_Test {
         return new Function<ParameterSetWrapper, Boolean>() {
           public Boolean apply(ParameterSetWrapper param) {
             Number it = (Number) param.parameters.get(0);
-            return AH.isEqual(it, AH.add(BigInteger.valueOf(TreePVector.<Object>from(Generated_collections_Test.lista3_).indexOf(it)), (Number) new BigInteger("1")));
+            return AH.isEqual(it, AH.add(BigInteger.valueOf(TreePVector.<Object>from(Generated_collections_Test.lista3_).indexOf(it)), new BigInteger("1")));
           }
         }.apply(new ParameterSetWrapper(o));
       }
@@ -9248,7 +9248,7 @@ public class Generated_collections_Test {
         return new Function<ParameterSetWrapper, Boolean>() {
           public Boolean apply(ParameterSetWrapper param) {
             Number it = (Number) param.parameters.get(0);
-            return AH.isEqual(it, AH.add(BigInteger.valueOf(TreePVector.<Object>from(Generated_collections_Test.lista3_).indexOf(it)), (Number) new BigInteger("1")));
+            return AH.isEqual(it, AH.add(BigInteger.valueOf(TreePVector.<Object>from(Generated_collections_Test.lista3_).indexOf(it)), new BigInteger("1")));
           }
         }.apply(new ParameterSetWrapper(o));
       }
@@ -9261,7 +9261,7 @@ public class Generated_collections_Test {
         return new Function<ParameterSetWrapper, Boolean>() {
           public Boolean apply(ParameterSetWrapper param) {
             Number it = (Number) param.parameters.get(0);
-            return AH.isEqual(it, AH.add(BigInteger.valueOf(TreePVector.<Object>from(Generated_collections_Test.lista3_).indexOf(it)), (Number) new BigInteger("1")));
+            return AH.isEqual(it, AH.add(BigInteger.valueOf(TreePVector.<Object>from(Generated_collections_Test.lista3_).indexOf(it)), new BigInteger("1")));
           }
         }.apply(new ParameterSetWrapper(o));
       }
@@ -9270,7 +9270,7 @@ public class Generated_collections_Test {
         return new Function<ParameterSetWrapper, Boolean>() {
           public Boolean apply(ParameterSetWrapper param) {
             Number it = (Number) param.parameters.get(0);
-            return AH.isEqual(it, AH.add(BigInteger.valueOf(TreePVector.<Object>from(Generated_collections_Test.lista3_).indexOf(it)), (Number) new BigInteger("1")));
+            return AH.isEqual(it, AH.add(BigInteger.valueOf(TreePVector.<Object>from(Generated_collections_Test.lista3_).indexOf(it)), new BigInteger("1")));
           }
         }.apply(new ParameterSetWrapper(o));
       }
@@ -9283,7 +9283,7 @@ public class Generated_collections_Test {
         return new Function<ParameterSetWrapper, Boolean>() {
           public Boolean apply(ParameterSetWrapper param) {
             Number it = (Number) param.parameters.get(0);
-            return AH.isEqual(it, AH.add(BigInteger.valueOf(TreePVector.<Object>from(Generated_collections_Test.lista3_).indexOf(it)), (Number) new BigInteger("1")));
+            return AH.isEqual(it, AH.add(BigInteger.valueOf(TreePVector.<Object>from(Generated_collections_Test.lista3_).indexOf(it)), new BigInteger("1")));
           }
         }.apply(new ParameterSetWrapper(o));
       }
@@ -9292,7 +9292,7 @@ public class Generated_collections_Test {
         return new Function<ParameterSetWrapper, Boolean>() {
           public Boolean apply(ParameterSetWrapper param) {
             Number it = (Number) param.parameters.get(0);
-            return AH.isEqual(it, AH.add(BigInteger.valueOf(TreePVector.<Object>from(Generated_collections_Test.lista3_).indexOf(it)), (Number) new BigInteger("1")));
+            return AH.isEqual(it, AH.add(BigInteger.valueOf(TreePVector.<Object>from(Generated_collections_Test.lista3_).indexOf(it)), new BigInteger("1")));
           }
         }.apply(new ParameterSetWrapper(o));
       }
@@ -9300,7 +9300,7 @@ public class Generated_collections_Test {
   }
   @Test
   public void indexOf_item18_8864456479319443524() throws Throwable {
-    Assert.assertEquals("Expected: " + TreePVector.<Number>empty().plus((Number) new BigInteger("0")).plus((Number) new BigInteger("1")).plus((Number) new BigInteger("2")) + ", but was: " + TreePVector.<Number>from(Generated_collections_Test.listb3_.stream().map(new Function<Number, Number>() {
+    Assert.assertEquals("Expected: " + TreePVector.<Number>empty().plus(new BigInteger("0")).plus(new BigInteger("1")).plus(new BigInteger("2")) + ", but was: " + TreePVector.<Number>from(Generated_collections_Test.listb3_.stream().map(new Function<Number, Number>() {
       public Number apply(Number param) {
         return new Function<ParameterSetWrapper, Number>() {
           public Number apply(ParameterSetWrapper param) {
@@ -9311,7 +9311,7 @@ public class Generated_collections_Test {
                   return new Function<ParameterSetWrapper, Boolean>() {
                     public Boolean apply(ParameterSetWrapper param) {
                       Number it = (Number) param.parameters.get(0);
-                      return AH.isEqual(it, AH.add(BigInteger.valueOf(TreePVector.<Object>from(Generated_collections_Test.lista3_).indexOf(it)), (Number) new BigInteger("1")));
+                      return AH.isEqual(it, AH.add(BigInteger.valueOf(TreePVector.<Object>from(Generated_collections_Test.lista3_).indexOf(it)), new BigInteger("1")));
                     }
                   }.apply(new ParameterSetWrapper(o));
                 }
@@ -9324,7 +9324,7 @@ public class Generated_collections_Test {
           }
         }.apply(new ParameterSetWrapper(param));
       }
-    }).collect(Collectors.<Number>toList())), (Object) TreePVector.<Number>empty().plus((Number) new BigInteger("0")).plus((Number) new BigInteger("1")).plus((Number) new BigInteger("2")), (Object) TreePVector.<Number>from(Generated_collections_Test.listb3_.stream().map(new Function<Number, Number>() {
+    }).collect(Collectors.<Number>toList())), TreePVector.<Number>empty().plus(new BigInteger("0")).plus(new BigInteger("1")).plus(new BigInteger("2")), TreePVector.<Number>from(Generated_collections_Test.listb3_.stream().map(new Function<Number, Number>() {
       public Number apply(Number param) {
         return new Function<ParameterSetWrapper, Number>() {
           public Number apply(ParameterSetWrapper param) {
@@ -9335,7 +9335,7 @@ public class Generated_collections_Test {
                   return new Function<ParameterSetWrapper, Boolean>() {
                     public Boolean apply(ParameterSetWrapper param) {
                       Number it = (Number) param.parameters.get(0);
-                      return AH.isEqual(it, AH.add(BigInteger.valueOf(TreePVector.<Object>from(Generated_collections_Test.lista3_).indexOf(it)), (Number) new BigInteger("1")));
+                      return AH.isEqual(it, AH.add(BigInteger.valueOf(TreePVector.<Object>from(Generated_collections_Test.lista3_).indexOf(it)), new BigInteger("1")));
                     }
                   }.apply(new ParameterSetWrapper(o));
                 }
@@ -9352,7 +9352,7 @@ public class Generated_collections_Test {
   }
   @Test
   public void indexOf_item19_8864456479322519675() throws Throwable {
-    Assert.assertEquals("Expected: " + TreePVector.<Number>empty().plus((Number) new BigInteger("0")).plus((Number) new BigInteger("1")).plus((Number) new BigInteger("2")) + ", but was: " + TreePVector.<Number>from(Generated_collections_Test.listb3_.stream().map(new Function<Number, Number>() {
+    Assert.assertEquals("Expected: " + TreePVector.<Number>empty().plus(new BigInteger("0")).plus(new BigInteger("1")).plus(new BigInteger("2")) + ", but was: " + TreePVector.<Number>from(Generated_collections_Test.listb3_.stream().map(new Function<Number, Number>() {
       public Number apply(Number param) {
         return new Function<ParameterSetWrapper, Number>() {
           public Number apply(ParameterSetWrapper param) {
@@ -9363,7 +9363,7 @@ public class Generated_collections_Test {
                   return new Function<ParameterSetWrapper, Boolean>() {
                     public Boolean apply(ParameterSetWrapper param) {
                       Number it = (Number) param.parameters.get(0);
-                      return AH.isEqual(it, AH.add(BigInteger.valueOf(TreePVector.<Object>from(Generated_collections_Test.lista3_).indexOf(it)), (Number) new BigInteger("1")));
+                      return AH.isEqual(it, AH.add(BigInteger.valueOf(TreePVector.<Object>from(Generated_collections_Test.lista3_).indexOf(it)), new BigInteger("1")));
                     }
                   }.apply(new ParameterSetWrapper(o));
                 }
@@ -9376,7 +9376,7 @@ public class Generated_collections_Test {
           }
         }.apply(new ParameterSetWrapper(param));
       }
-    }).collect(Collectors.<Number>toList())), (Object) TreePVector.<Number>empty().plus((Number) new BigInteger("0")).plus((Number) new BigInteger("1")).plus((Number) new BigInteger("2")), (Object) TreePVector.<Number>from(Generated_collections_Test.listb3_.stream().map(new Function<Number, Number>() {
+    }).collect(Collectors.<Number>toList())), TreePVector.<Number>empty().plus(new BigInteger("0")).plus(new BigInteger("1")).plus(new BigInteger("2")), TreePVector.<Number>from(Generated_collections_Test.listb3_.stream().map(new Function<Number, Number>() {
       public Number apply(Number param) {
         return new Function<ParameterSetWrapper, Number>() {
           public Number apply(ParameterSetWrapper param) {
@@ -9387,7 +9387,7 @@ public class Generated_collections_Test {
                   return new Function<ParameterSetWrapper, Boolean>() {
                     public Boolean apply(ParameterSetWrapper param) {
                       Number it = (Number) param.parameters.get(0);
-                      return AH.isEqual(it, AH.add(BigInteger.valueOf(TreePVector.<Object>from(Generated_collections_Test.lista3_).indexOf(it)), (Number) new BigInteger("1")));
+                      return AH.isEqual(it, AH.add(BigInteger.valueOf(TreePVector.<Object>from(Generated_collections_Test.lista3_).indexOf(it)), new BigInteger("1")));
                     }
                   }.apply(new ParameterSetWrapper(o));
                 }
@@ -9404,7 +9404,7 @@ public class Generated_collections_Test {
   }
   @Test
   public void indexOf_item20_8864456479319469477() throws Throwable {
-    Assert.assertEquals("Expected: " + TreePVector.<Number>empty().plus((Number) new BigInteger("0")).plus((Number) new BigInteger("0")).plus((Number) new BigInteger("0")) + ", but was: " + TreePVector.<Number>from(Generated_collections_Test.listb3_.stream().map(new Function<Number, Number>() {
+    Assert.assertEquals("Expected: " + TreePVector.<Number>empty().plus(new BigInteger("0")).plus(new BigInteger("0")).plus(new BigInteger("0")) + ", but was: " + TreePVector.<Number>from(Generated_collections_Test.listb3_.stream().map(new Function<Number, Number>() {
       public Number apply(Number param) {
         return new Function<ParameterSetWrapper, Number>() {
           public Number apply(ParameterSetWrapper param) {
@@ -9428,7 +9428,7 @@ public class Generated_collections_Test {
           }
         }.apply(new ParameterSetWrapper(param));
       }
-    }).collect(Collectors.<Number>toList())), (Object) TreePVector.<Number>empty().plus((Number) new BigInteger("0")).plus((Number) new BigInteger("0")).plus((Number) new BigInteger("0")), (Object) TreePVector.<Number>from(Generated_collections_Test.listb3_.stream().map(new Function<Number, Number>() {
+    }).collect(Collectors.<Number>toList())), TreePVector.<Number>empty().plus(new BigInteger("0")).plus(new BigInteger("0")).plus(new BigInteger("0")), TreePVector.<Number>from(Generated_collections_Test.listb3_.stream().map(new Function<Number, Number>() {
       public Number apply(Number param) {
         return new Function<ParameterSetWrapper, Number>() {
           public Number apply(ParameterSetWrapper param) {
@@ -9456,7 +9456,7 @@ public class Generated_collections_Test {
   }
   @Test
   public void indexOf_item21_8864456479322528313() throws Throwable {
-    Assert.assertEquals("Expected: " + TreePVector.<Number>empty().plus((Number) new BigInteger("0")).plus((Number) new BigInteger("0")).plus((Number) new BigInteger("0")) + ", but was: " + TreePVector.<Number>from(Generated_collections_Test.listb3_.stream().map(new Function<Number, Number>() {
+    Assert.assertEquals("Expected: " + TreePVector.<Number>empty().plus(new BigInteger("0")).plus(new BigInteger("0")).plus(new BigInteger("0")) + ", but was: " + TreePVector.<Number>from(Generated_collections_Test.listb3_.stream().map(new Function<Number, Number>() {
       public Number apply(Number param) {
         return new Function<ParameterSetWrapper, Number>() {
           public Number apply(ParameterSetWrapper param) {
@@ -9480,7 +9480,7 @@ public class Generated_collections_Test {
           }
         }.apply(new ParameterSetWrapper(param));
       }
-    }).collect(Collectors.<Number>toList())), (Object) TreePVector.<Number>empty().plus((Number) new BigInteger("0")).plus((Number) new BigInteger("0")).plus((Number) new BigInteger("0")), (Object) TreePVector.<Number>from(Generated_collections_Test.listb3_.stream().map(new Function<Number, Number>() {
+    }).collect(Collectors.<Number>toList())), TreePVector.<Number>empty().plus(new BigInteger("0")).plus(new BigInteger("0")).plus(new BigInteger("0")), TreePVector.<Number>from(Generated_collections_Test.listb3_.stream().map(new Function<Number, Number>() {
       public Number apply(Number param) {
         return new Function<ParameterSetWrapper, Number>() {
           public Number apply(ParameterSetWrapper param) {
@@ -9506,12 +9506,12 @@ public class Generated_collections_Test {
       }
     }).collect(Collectors.<Number>toList())));
   }
-  public static final PCollection<Number> indexCollection_ = TreePVector.<Number>empty().plus((Number) new BigInteger("1")).plus((Number) new BigInteger("2")).plus((Number) new BigInteger("3"));
-  public static final PVector<Number> indexList_ = TreePVector.<Number>empty().plus((Number) new BigInteger("1")).plus((Number) new BigInteger("2")).plus((Number) new BigInteger("3"));
+  public static final PCollection<Number> indexCollection_ = TreePVector.<Number>empty().plus(new BigInteger("1")).plus(new BigInteger("2")).plus(new BigInteger("3"));
+  public static final PVector<Number> indexList_ = TreePVector.<Number>empty().plus(new BigInteger("1")).plus(new BigInteger("2")).plus(new BigInteger("3"));
   public static final PSet<Number> indexSet_ = HashTreePSet.from(Arrays.asList((Number) new BigInteger("1"), (Number) new BigInteger("2"), (Number) new BigInteger("3")));
   @Test
   public void index_item0_4477765208251141547() throws Throwable {
-    Assert.assertEquals("Expected: " + TreePVector.<Number>empty().plus((Number) new BigInteger("0")).plus((Number) new BigInteger("1")).plus((Number) new BigInteger("2")) + ", but was: " + TreePVector.<Number>from(Generated_collections_Test.indexCollection_.stream().map(new Function<Number, Number>() {
+    Assert.assertEquals("Expected: " + TreePVector.<Number>empty().plus(new BigInteger("0")).plus(new BigInteger("1")).plus(new BigInteger("2")) + ", but was: " + TreePVector.<Number>from(Generated_collections_Test.indexCollection_.stream().map(new Function<Number, Number>() {
       public Number apply(Number param) {
         return new Function<ParameterSetWrapper, Number>() {
           public Number apply(ParameterSetWrapper param) {
@@ -9520,7 +9520,7 @@ public class Generated_collections_Test {
           }
         }.apply(new ParameterSetWrapper(param));
       }
-    }).collect(Collectors.<Number>toList())), (Object) TreePVector.<Number>empty().plus((Number) new BigInteger("0")).plus((Number) new BigInteger("1")).plus((Number) new BigInteger("2")), (Object) TreePVector.<Number>from(Generated_collections_Test.indexCollection_.stream().map(new Function<Number, Number>() {
+    }).collect(Collectors.<Number>toList())), TreePVector.<Number>empty().plus(new BigInteger("0")).plus(new BigInteger("1")).plus(new BigInteger("2")), TreePVector.<Number>from(Generated_collections_Test.indexCollection_.stream().map(new Function<Number, Number>() {
       public Number apply(Number param) {
         return new Function<ParameterSetWrapper, Number>() {
           public Number apply(ParameterSetWrapper param) {
@@ -9533,14 +9533,14 @@ public class Generated_collections_Test {
   }
   @Test
   public void index_item1_4477765208256205332() throws Throwable {
-    Assert.assertTrue("Expected: " + (Number) new BigInteger("3") + ", but was: " + (((_FunctionTypes._return_P0_E0<Number>) () -> {
-      Number seed = (Number) new BigInteger("0");
+    Assert.assertTrue("Expected: " + new BigInteger("3") + ", but was: " + (((_FunctionTypes._return_P0_E0<Number>) () -> {
+      Number seed = new BigInteger("0");
       for (Number current : CollectionSequence.fromCollection(Generated_collections_Test.indexCollection_)) {
         seed = AH.add(seed, BigInteger.valueOf(TreePVector.<Object>from(Generated_collections_Test.indexCollection_).indexOf(current)));
       }
       return seed;
-    }).invoke()), EqualsTestOp.matches((Number) new BigInteger("3"), ((_FunctionTypes._return_P0_E0<Number>) () -> {
-      Number seed = (Number) new BigInteger("0");
+    }).invoke()), EqualsTestOp.matches(new BigInteger("3"), ((_FunctionTypes._return_P0_E0<Number>) () -> {
+      Number seed = new BigInteger("0");
       for (Number current : CollectionSequence.fromCollection(Generated_collections_Test.indexCollection_)) {
         seed = AH.add(seed, BigInteger.valueOf(TreePVector.<Object>from(Generated_collections_Test.indexCollection_).indexOf(current)));
       }
@@ -9549,21 +9549,21 @@ public class Generated_collections_Test {
   }
   @Test
   public void index_item2_4477765208256209366() throws Throwable {
-    Assert.assertEquals("Expected: " + TreePVector.<Number>empty().plus((Number) new BigInteger("2")) + ", but was: " + TreePVector.<Number>from(Generated_collections_Test.indexCollection_.stream().filter(new Predicate<Number>() {
+    Assert.assertEquals("Expected: " + TreePVector.<Number>empty().plus(new BigInteger("2")) + ", but was: " + TreePVector.<Number>from(Generated_collections_Test.indexCollection_.stream().filter(new Predicate<Number>() {
       public boolean test(Number o) {
         return new Function<ParameterSetWrapper, Boolean>() {
           public Boolean apply(ParameterSetWrapper param) {
             Number it = (Number) param.parameters.get(0);
-            return AH.isEqual(BigInteger.valueOf(TreePVector.<Object>from(Generated_collections_Test.indexCollection_).indexOf(it)), (Number) new BigInteger("1"));
+            return AH.isEqual(BigInteger.valueOf(TreePVector.<Object>from(Generated_collections_Test.indexCollection_).indexOf(it)), new BigInteger("1"));
           }
         }.apply(new ParameterSetWrapper(o));
       }
-    }).collect(Collectors.<Number>toList())), (Object) TreePVector.<Number>empty().plus((Number) new BigInteger("2")), (Object) TreePVector.<Number>from(Generated_collections_Test.indexCollection_.stream().filter(new Predicate<Number>() {
+    }).collect(Collectors.<Number>toList())), TreePVector.<Number>empty().plus(new BigInteger("2")), TreePVector.<Number>from(Generated_collections_Test.indexCollection_.stream().filter(new Predicate<Number>() {
       public boolean test(Number o) {
         return new Function<ParameterSetWrapper, Boolean>() {
           public Boolean apply(ParameterSetWrapper param) {
             Number it = (Number) param.parameters.get(0);
-            return AH.isEqual(BigInteger.valueOf(TreePVector.<Object>from(Generated_collections_Test.indexCollection_).indexOf(it)), (Number) new BigInteger("1"));
+            return AH.isEqual(BigInteger.valueOf(TreePVector.<Object>from(Generated_collections_Test.indexCollection_).indexOf(it)), new BigInteger("1"));
           }
         }.apply(new ParameterSetWrapper(o));
       }
@@ -9571,21 +9571,21 @@ public class Generated_collections_Test {
   }
   @Test
   public void index_item3_1112371725636843389() throws Throwable {
-    Assert.assertTrue("Expected: " + (Number) new BigInteger("2") + ", but was: " + Generated_collections_Test.indexCollection_.stream().filter(new Predicate<Number>() {
+    Assert.assertTrue("Expected: " + new BigInteger("2") + ", but was: " + Generated_collections_Test.indexCollection_.stream().filter(new Predicate<Number>() {
       public boolean test(Number o) {
         return new Function<ParameterSetWrapper, Boolean>() {
           public Boolean apply(ParameterSetWrapper param) {
             Number it = (Number) param.parameters.get(0);
-            return AH.isEqual(BigInteger.valueOf(TreePVector.<Object>from(Generated_collections_Test.indexCollection_).indexOf(it)), (Number) new BigInteger("1"));
+            return AH.isEqual(BigInteger.valueOf(TreePVector.<Object>from(Generated_collections_Test.indexCollection_).indexOf(it)), new BigInteger("1"));
           }
         }.apply(new ParameterSetWrapper(o));
       }
-    }).findFirst().orElse(null), EqualsTestOp.matches((Number) new BigInteger("2"), Generated_collections_Test.indexCollection_.stream().filter(new Predicate<Number>() {
+    }).findFirst().orElse(null), EqualsTestOp.matches(new BigInteger("2"), Generated_collections_Test.indexCollection_.stream().filter(new Predicate<Number>() {
       public boolean test(Number o) {
         return new Function<ParameterSetWrapper, Boolean>() {
           public Boolean apply(ParameterSetWrapper param) {
             Number it = (Number) param.parameters.get(0);
-            return AH.isEqual(BigInteger.valueOf(TreePVector.<Object>from(Generated_collections_Test.indexCollection_).indexOf(it)), (Number) new BigInteger("1"));
+            return AH.isEqual(BigInteger.valueOf(TreePVector.<Object>from(Generated_collections_Test.indexCollection_).indexOf(it)), new BigInteger("1"));
           }
         }.apply(new ParameterSetWrapper(o));
       }
@@ -9593,7 +9593,7 @@ public class Generated_collections_Test {
   }
   @Test
   public void index_item5_4477765208256214847() throws Throwable {
-    Assert.assertEquals("Expected: " + TreePVector.<Number>empty().plus((Number) new BigInteger("0")).plus((Number) new BigInteger("1")).plus((Number) new BigInteger("2")) + ", but was: " + TreePVector.<Number>from(Generated_collections_Test.indexList_.stream().map(new Function<Number, Number>() {
+    Assert.assertEquals("Expected: " + TreePVector.<Number>empty().plus(new BigInteger("0")).plus(new BigInteger("1")).plus(new BigInteger("2")) + ", but was: " + TreePVector.<Number>from(Generated_collections_Test.indexList_.stream().map(new Function<Number, Number>() {
       public Number apply(Number param) {
         return new Function<ParameterSetWrapper, Number>() {
           public Number apply(ParameterSetWrapper param) {
@@ -9602,7 +9602,7 @@ public class Generated_collections_Test {
           }
         }.apply(new ParameterSetWrapper(param));
       }
-    }).collect(Collectors.<Number>toList())), (Object) TreePVector.<Number>empty().plus((Number) new BigInteger("0")).plus((Number) new BigInteger("1")).plus((Number) new BigInteger("2")), (Object) TreePVector.<Number>from(Generated_collections_Test.indexList_.stream().map(new Function<Number, Number>() {
+    }).collect(Collectors.<Number>toList())), TreePVector.<Number>empty().plus(new BigInteger("0")).plus(new BigInteger("1")).plus(new BigInteger("2")), TreePVector.<Number>from(Generated_collections_Test.indexList_.stream().map(new Function<Number, Number>() {
       public Number apply(Number param) {
         return new Function<ParameterSetWrapper, Number>() {
           public Number apply(ParameterSetWrapper param) {
@@ -9615,14 +9615,14 @@ public class Generated_collections_Test {
   }
   @Test
   public void index_item6_4477765208256214858() throws Throwable {
-    Assert.assertTrue("Expected: " + (Number) new BigInteger("3") + ", but was: " + (((_FunctionTypes._return_P0_E0<Number>) () -> {
-      Number seed = (Number) new BigInteger("0");
+    Assert.assertTrue("Expected: " + new BigInteger("3") + ", but was: " + (((_FunctionTypes._return_P0_E0<Number>) () -> {
+      Number seed = new BigInteger("0");
       for (Number current : ListSequence.fromList(Generated_collections_Test.indexList_)) {
         seed = AH.add(seed, BigInteger.valueOf(TreePVector.<Object>from(Generated_collections_Test.indexList_).indexOf(current)));
       }
       return seed;
-    }).invoke()), EqualsTestOp.matches((Number) new BigInteger("3"), ((_FunctionTypes._return_P0_E0<Number>) () -> {
-      Number seed = (Number) new BigInteger("0");
+    }).invoke()), EqualsTestOp.matches(new BigInteger("3"), ((_FunctionTypes._return_P0_E0<Number>) () -> {
+      Number seed = new BigInteger("0");
       for (Number current : ListSequence.fromList(Generated_collections_Test.indexList_)) {
         seed = AH.add(seed, BigInteger.valueOf(TreePVector.<Object>from(Generated_collections_Test.indexList_).indexOf(current)));
       }
@@ -9631,21 +9631,21 @@ public class Generated_collections_Test {
   }
   @Test
   public void index_item7_4477765208256214871() throws Throwable {
-    Assert.assertEquals("Expected: " + TreePVector.<Number>empty().plus((Number) new BigInteger("2")) + ", but was: " + TreePVector.<Number>from(Generated_collections_Test.indexList_.stream().filter(new Predicate<Number>() {
+    Assert.assertEquals("Expected: " + TreePVector.<Number>empty().plus(new BigInteger("2")) + ", but was: " + TreePVector.<Number>from(Generated_collections_Test.indexList_.stream().filter(new Predicate<Number>() {
       public boolean test(Number o) {
         return new Function<ParameterSetWrapper, Boolean>() {
           public Boolean apply(ParameterSetWrapper param) {
             Number it = (Number) param.parameters.get(0);
-            return AH.isEqual(BigInteger.valueOf(TreePVector.<Object>from(Generated_collections_Test.indexList_).indexOf(it)), (Number) new BigInteger("1"));
+            return AH.isEqual(BigInteger.valueOf(TreePVector.<Object>from(Generated_collections_Test.indexList_).indexOf(it)), new BigInteger("1"));
           }
         }.apply(new ParameterSetWrapper(o));
       }
-    }).collect(Collectors.<Number>toList())), (Object) TreePVector.<Number>empty().plus((Number) new BigInteger("2")), (Object) TreePVector.<Number>from(Generated_collections_Test.indexList_.stream().filter(new Predicate<Number>() {
+    }).collect(Collectors.<Number>toList())), TreePVector.<Number>empty().plus(new BigInteger("2")), TreePVector.<Number>from(Generated_collections_Test.indexList_.stream().filter(new Predicate<Number>() {
       public boolean test(Number o) {
         return new Function<ParameterSetWrapper, Boolean>() {
           public Boolean apply(ParameterSetWrapper param) {
             Number it = (Number) param.parameters.get(0);
-            return AH.isEqual(BigInteger.valueOf(TreePVector.<Object>from(Generated_collections_Test.indexList_).indexOf(it)), (Number) new BigInteger("1"));
+            return AH.isEqual(BigInteger.valueOf(TreePVector.<Object>from(Generated_collections_Test.indexList_).indexOf(it)), new BigInteger("1"));
           }
         }.apply(new ParameterSetWrapper(o));
       }
@@ -9653,21 +9653,21 @@ public class Generated_collections_Test {
   }
   @Test
   public void index_item8_1112371725636848192() throws Throwable {
-    Assert.assertTrue("Expected: " + (Number) new BigInteger("2") + ", but was: " + Generated_collections_Test.indexList_.stream().filter(new Predicate<Number>() {
+    Assert.assertTrue("Expected: " + new BigInteger("2") + ", but was: " + Generated_collections_Test.indexList_.stream().filter(new Predicate<Number>() {
       public boolean test(Number o) {
         return new Function<ParameterSetWrapper, Boolean>() {
           public Boolean apply(ParameterSetWrapper param) {
             Number it = (Number) param.parameters.get(0);
-            return AH.isEqual(BigInteger.valueOf(TreePVector.<Object>from(Generated_collections_Test.indexList_).indexOf(it)), (Number) new BigInteger("1"));
+            return AH.isEqual(BigInteger.valueOf(TreePVector.<Object>from(Generated_collections_Test.indexList_).indexOf(it)), new BigInteger("1"));
           }
         }.apply(new ParameterSetWrapper(o));
       }
-    }).findFirst().orElse(null), EqualsTestOp.matches((Number) new BigInteger("2"), Generated_collections_Test.indexList_.stream().filter(new Predicate<Number>() {
+    }).findFirst().orElse(null), EqualsTestOp.matches(new BigInteger("2"), Generated_collections_Test.indexList_.stream().filter(new Predicate<Number>() {
       public boolean test(Number o) {
         return new Function<ParameterSetWrapper, Boolean>() {
           public Boolean apply(ParameterSetWrapper param) {
             Number it = (Number) param.parameters.get(0);
-            return AH.isEqual(BigInteger.valueOf(TreePVector.<Object>from(Generated_collections_Test.indexList_).indexOf(it)), (Number) new BigInteger("1"));
+            return AH.isEqual(BigInteger.valueOf(TreePVector.<Object>from(Generated_collections_Test.indexList_).indexOf(it)), new BigInteger("1"));
           }
         }.apply(new ParameterSetWrapper(o));
       }
@@ -9675,7 +9675,7 @@ public class Generated_collections_Test {
   }
   @Test
   public void index_item10_4477765208256799896() throws Throwable {
-    Assert.assertEquals("Expected: " + TreePVector.<Number>empty().plus((Number) new BigInteger("0")).plus((Number) new BigInteger("1")).plus((Number) new BigInteger("2")) + ", but was: " + TreePVector.<Number>from(Generated_collections_Test.indexSet_.stream().map(new Function<Number, Number>() {
+    Assert.assertEquals("Expected: " + TreePVector.<Number>empty().plus(new BigInteger("0")).plus(new BigInteger("1")).plus(new BigInteger("2")) + ", but was: " + TreePVector.<Number>from(Generated_collections_Test.indexSet_.stream().map(new Function<Number, Number>() {
       public Number apply(Number param) {
         return new Function<ParameterSetWrapper, Number>() {
           public Number apply(ParameterSetWrapper param) {
@@ -9684,7 +9684,7 @@ public class Generated_collections_Test {
           }
         }.apply(new ParameterSetWrapper(param));
       }
-    }).collect(Collectors.<Number>toList())), (Object) TreePVector.<Number>empty().plus((Number) new BigInteger("0")).plus((Number) new BigInteger("1")).plus((Number) new BigInteger("2")), (Object) TreePVector.<Number>from(Generated_collections_Test.indexSet_.stream().map(new Function<Number, Number>() {
+    }).collect(Collectors.<Number>toList())), TreePVector.<Number>empty().plus(new BigInteger("0")).plus(new BigInteger("1")).plus(new BigInteger("2")), TreePVector.<Number>from(Generated_collections_Test.indexSet_.stream().map(new Function<Number, Number>() {
       public Number apply(Number param) {
         return new Function<ParameterSetWrapper, Number>() {
           public Number apply(ParameterSetWrapper param) {
@@ -9697,14 +9697,14 @@ public class Generated_collections_Test {
   }
   @Test
   public void index_item11_4477765208256799907() throws Throwable {
-    Assert.assertTrue("Expected: " + (Number) new BigInteger("3") + ", but was: " + (((_FunctionTypes._return_P0_E0<Number>) () -> {
-      Number seed = (Number) new BigInteger("0");
+    Assert.assertTrue("Expected: " + new BigInteger("3") + ", but was: " + (((_FunctionTypes._return_P0_E0<Number>) () -> {
+      Number seed = new BigInteger("0");
       for (Number current : SetSequence.fromSet(Generated_collections_Test.indexSet_)) {
         seed = AH.add(seed, BigInteger.valueOf(TreePVector.<Object>from(Generated_collections_Test.indexSet_).indexOf(current)));
       }
       return seed;
-    }).invoke()), EqualsTestOp.matches((Number) new BigInteger("3"), ((_FunctionTypes._return_P0_E0<Number>) () -> {
-      Number seed = (Number) new BigInteger("0");
+    }).invoke()), EqualsTestOp.matches(new BigInteger("3"), ((_FunctionTypes._return_P0_E0<Number>) () -> {
+      Number seed = new BigInteger("0");
       for (Number current : SetSequence.fromSet(Generated_collections_Test.indexSet_)) {
         seed = AH.add(seed, BigInteger.valueOf(TreePVector.<Object>from(Generated_collections_Test.indexSet_).indexOf(current)));
       }
@@ -9713,21 +9713,21 @@ public class Generated_collections_Test {
   }
   @Test
   public void index_item12_4477765208256799922() throws Throwable {
-    Assert.assertEquals("Expected: " + TreePVector.<Number>empty().plus((Number) new BigInteger("2")) + ", but was: " + TreePVector.<Number>from(Generated_collections_Test.indexSet_.stream().filter(new Predicate<Number>() {
+    Assert.assertEquals("Expected: " + TreePVector.<Number>empty().plus(new BigInteger("2")) + ", but was: " + TreePVector.<Number>from(Generated_collections_Test.indexSet_.stream().filter(new Predicate<Number>() {
       public boolean test(Number o) {
         return new Function<ParameterSetWrapper, Boolean>() {
           public Boolean apply(ParameterSetWrapper param) {
             Number it = (Number) param.parameters.get(0);
-            return AH.isEqual(BigInteger.valueOf(TreePVector.<Object>from(Generated_collections_Test.indexSet_).indexOf(it)), (Number) new BigInteger("1"));
+            return AH.isEqual(BigInteger.valueOf(TreePVector.<Object>from(Generated_collections_Test.indexSet_).indexOf(it)), new BigInteger("1"));
           }
         }.apply(new ParameterSetWrapper(o));
       }
-    }).collect(Collectors.<Number>toList())), (Object) TreePVector.<Number>empty().plus((Number) new BigInteger("2")), (Object) TreePVector.<Number>from(Generated_collections_Test.indexSet_.stream().filter(new Predicate<Number>() {
+    }).collect(Collectors.<Number>toList())), TreePVector.<Number>empty().plus(new BigInteger("2")), TreePVector.<Number>from(Generated_collections_Test.indexSet_.stream().filter(new Predicate<Number>() {
       public boolean test(Number o) {
         return new Function<ParameterSetWrapper, Boolean>() {
           public Boolean apply(ParameterSetWrapper param) {
             Number it = (Number) param.parameters.get(0);
-            return AH.isEqual(BigInteger.valueOf(TreePVector.<Object>from(Generated_collections_Test.indexSet_).indexOf(it)), (Number) new BigInteger("1"));
+            return AH.isEqual(BigInteger.valueOf(TreePVector.<Object>from(Generated_collections_Test.indexSet_).indexOf(it)), new BigInteger("1"));
           }
         }.apply(new ParameterSetWrapper(o));
       }
@@ -9735,21 +9735,21 @@ public class Generated_collections_Test {
   }
   @Test
   public void index_item13_1112371725636852998() throws Throwable {
-    Assert.assertTrue("Expected: " + (Number) new BigInteger("2") + ", but was: " + Generated_collections_Test.indexSet_.stream().filter(new Predicate<Number>() {
+    Assert.assertTrue("Expected: " + new BigInteger("2") + ", but was: " + Generated_collections_Test.indexSet_.stream().filter(new Predicate<Number>() {
       public boolean test(Number o) {
         return new Function<ParameterSetWrapper, Boolean>() {
           public Boolean apply(ParameterSetWrapper param) {
             Number it = (Number) param.parameters.get(0);
-            return AH.isEqual(BigInteger.valueOf(TreePVector.<Object>from(Generated_collections_Test.indexSet_).indexOf(it)), (Number) new BigInteger("1"));
+            return AH.isEqual(BigInteger.valueOf(TreePVector.<Object>from(Generated_collections_Test.indexSet_).indexOf(it)), new BigInteger("1"));
           }
         }.apply(new ParameterSetWrapper(o));
       }
-    }).findFirst().orElse(null), EqualsTestOp.matches((Number) new BigInteger("2"), Generated_collections_Test.indexSet_.stream().filter(new Predicate<Number>() {
+    }).findFirst().orElse(null), EqualsTestOp.matches(new BigInteger("2"), Generated_collections_Test.indexSet_.stream().filter(new Predicate<Number>() {
       public boolean test(Number o) {
         return new Function<ParameterSetWrapper, Boolean>() {
           public Boolean apply(ParameterSetWrapper param) {
             Number it = (Number) param.parameters.get(0);
-            return AH.isEqual(BigInteger.valueOf(TreePVector.<Object>from(Generated_collections_Test.indexSet_).indexOf(it)), (Number) new BigInteger("1"));
+            return AH.isEqual(BigInteger.valueOf(TreePVector.<Object>from(Generated_collections_Test.indexSet_).indexOf(it)), new BigInteger("1"));
           }
         }.apply(new ParameterSetWrapper(o));
       }

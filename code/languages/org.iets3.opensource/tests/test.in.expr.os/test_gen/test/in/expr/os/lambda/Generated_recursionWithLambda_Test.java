@@ -33,16 +33,16 @@ public class Generated_recursionWithLambda_Test {
   };
   @Test
   public void recursionWithLambda_res_7740953487930954651() throws Throwable {
-    Assert.assertTrue("Expected: " + (Number) new BigInteger("1327") + ", but was: " + Generated_recursionWithLambda_Test.f(AH.add((Number) new BigInteger("10"), AH.add((Number) new BigInteger("30"), AH.add((Number) new BigInteger("1"), (Number) new BigInteger("10")))), Generated_recursionWithLambda_Test.plus_), EqualsTestOp.matches((Number) new BigInteger("1327"), Generated_recursionWithLambda_Test.f(AH.add((Number) new BigInteger("10"), AH.add((Number) new BigInteger("30"), AH.add((Number) new BigInteger("1"), (Number) new BigInteger("10")))), Generated_recursionWithLambda_Test.plus_)));
+    Assert.assertTrue("Expected: " + new BigInteger("1327") + ", but was: " + Generated_recursionWithLambda_Test.f(AH.add(new BigInteger("10"), AH.add(new BigInteger("30"), AH.add(new BigInteger("1"), new BigInteger("10")))), Generated_recursionWithLambda_Test.plus_), EqualsTestOp.matches(new BigInteger("1327"), Generated_recursionWithLambda_Test.f(AH.add(new BigInteger("10"), AH.add(new BigInteger("30"), AH.add(new BigInteger("1"), new BigInteger("10")))), Generated_recursionWithLambda_Test.plus_)));
   }
   public static Number f(final Number a, final Function<ParameterSetWrapper, Number> op) {
     Number res = ((_FunctionTypes._return_P0_E0<Number>) () -> {
-      if (AH.isGreater(a, (Number) new BigInteger("0"))) {
+      if (AH.isGreater(a, new BigInteger("0"))) {
         ParameterSetWrapper param = new ParameterSetWrapper();
         param.parameters.add(a);
-        param.parameters.add(Generated_recursionWithLambda_Test.f(AH.sub(a, (Number) new BigInteger("1")), op));
+        param.parameters.add(Generated_recursionWithLambda_Test.f(AH.sub(a, new BigInteger("1")), op));
         return op.apply(param);
-      } else if (AH.isEqual(a, (Number) new BigInteger("0"))) {
+      } else if (AH.isEqual(a, new BigInteger("0"))) {
         return (Number) new BigInteger("1");
       } else {
         throw new AlternativesException("The proposed alternative does not exist.");

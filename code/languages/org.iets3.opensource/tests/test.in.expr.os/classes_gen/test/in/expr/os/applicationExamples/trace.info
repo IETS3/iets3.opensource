@@ -15,9 +15,9 @@
   <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1164991038168:jetbrains.mps.baseLanguage.structure.ThrowStatement" />
   <root nodeRef="r:206e2f16-1e9d-4dba-a48f-a14d1e82c7a3(test.in.expr.os.applicationExamples@tests)/6527211908667104441">
     <file name="Generated_temperature_Test.java">
-      <node id="6527211908667104453" at="43,41,44,288" concept="7" />
+      <node id="6527211908667104453" at="43,41,44,243" concept="7" />
       <node id="6527211908667104453" at="45,5,46,22" concept="7" />
-      <node id="8224492649637339634" at="47,302,48,545" concept="7" />
+      <node id="8224492649637339634" at="47,257,48,545" concept="7" />
       <node id="8224492649637339634" at="48,545,49,57" concept="2" />
       <node id="8224492649637339634" at="49,57,50,53" concept="12" />
       <node id="6527211908667104453" at="52,5,53,0" concept="9" />
@@ -76,8 +76,8 @@
       <node id="6527211908667104514" at="201,2,202,0" concept="10" trace="someDataFromUI_" />
       <node id="6527211908667104520" at="206,2,207,0" concept="10" trace="anTempValueInTheStatemachine_" />
       <node id="6527211908667115037" at="207,0,208,0" concept="10" trace="validTempInF_" />
-      <node id="6527211908667126376" at="209,75,210,400" concept="2" />
-      <node id="6527211908667503678" at="213,75,214,310" concept="2" />
+      <node id="6527211908667126376" at="209,75,210,364" concept="2" />
+      <node id="6527211908667503678" at="213,75,214,292" concept="2" />
       <node id="6527211908667104474" at="73,0,75,0" concept="1" trace="TempFromUI#()V" />
       <node id="6527211908667104474" at="105,0,107,0" concept="6" trace="evaluateContracts#()V" />
       <node id="6527211908667104475" at="76,0,79,0" concept="6" trace="getvalue#()Ljava/lang/Number;" />
@@ -99,7 +99,7 @@
       <node id="6527211908667104477" at="90,0,97,0" concept="6" trace="setunit#(Ltest/in/expr/os/applicationExamples/Generated_temperature_Test/uiTempUnit;)Ltest/in/expr/os/applicationExamples/Generated_temperature_Test/TempFromUI;" />
       <node id="6527211908667104474" at="108,0,115,0" concept="6" trace="hashCode#()I" />
       <node id="6527211908667104482" at="180,54,187,90" concept="7" />
-      <node id="6527211908667104453" at="44,288,52,5" concept="0" />
+      <node id="6527211908667104453" at="44,243,52,5" concept="0" />
       <node id="6527211908667104474" at="132,0,140,0" concept="6" trace="toString#()null" />
       <node id="6527211908667104471" at="163,0,171,0" concept="6" trace="indexOf#()I" />
       <node id="6527211908667104482" at="180,0,191,0" concept="11" trace="toC#(Ltest/in/expr/os/applicationExamples/Generated_temperature_Test/TempFromUI;)Ljava/lang/Number;" />
@@ -118,14 +118,14 @@
       <scope id="6527211908667104477" at="147,52,148,50" />
       <scope id="6527211908667104471" at="165,48,166,23" />
       <scope id="6527211908668471777" at="183,38,184,22" />
-      <scope id="6527211908667126376" at="209,75,210,400" />
-      <scope id="6527211908667503678" at="213,75,214,310" />
+      <scope id="6527211908667126376" at="209,75,210,364" />
+      <scope id="6527211908667503678" at="213,75,214,292" />
       <scope id="6527211908667104474" at="73,0,75,0" />
       <scope id="6527211908667104474" at="105,0,107,0" />
       <scope id="6527211908667104471" at="158,52,160,20">
         <var name="result" id="6527211908667104471" />
       </scope>
-      <scope id="8224492649637339634" at="47,302,50,53">
+      <scope id="8224492649637339634" at="47,257,50,53">
         <var name="message" id="8224492649637339634" />
       </scope>
       <scope id="6527211908667104474" at="67,54,70,26" />

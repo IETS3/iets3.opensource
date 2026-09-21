@@ -50,7 +50,7 @@ public class Generated_contracts_Test {
       Number result = i;
       {
         Number it = result;
-        if (!(AH.isGreater(it, (Number) new BigInteger("10")))) {
+        if (!(AH.isGreater(it, new BigInteger("10")))) {
           final Message message = new Message(BuiltinMessageKinds.error(), ContractViolatedException.CONSTRAINT_FAILED + ": " + "it > 10").withLocation(new ProgramLocation("r:01a6c2ec-8e8f-4bd1-bb81-7468b52febee(test.in.expr.os.contracts@tests)/1922523186437509729", "http://127.0.0.1:63320/node?ref=r%3A01a6c2ec-8e8f-4bd1-bb81-7468b52febee%28test.in.expr.os.contracts%40tests%29%2F1922523186437509729")).withAffectedMemberNames(new HashSet<String>(Arrays.<String>asList()));
           GlobalContext.MESSAGE_LOG.get().collect(message);
           throw new ContractViolatedException(message);
@@ -73,7 +73,7 @@ public class Generated_contracts_Test {
     Number result = i;
     {
       Number it = result;
-      if (!(AH.isGreater(it, (Number) new BigInteger("10")))) {
+      if (!(AH.isGreater(it, new BigInteger("10")))) {
         final Message message = new Message(BuiltinMessageKinds.error(), ContractViolatedException.CONSTRAINT_FAILED + ": " + "it > 10").withLocation(new ProgramLocation("r:01a6c2ec-8e8f-4bd1-bb81-7468b52febee(test.in.expr.os.contracts@tests)/1922523186437509729", "http://127.0.0.1:63320/node?ref=r%3A01a6c2ec-8e8f-4bd1-bb81-7468b52febee%28test.in.expr.os.contracts%40tests%29%2F1922523186437509729")).withAffectedMemberNames(new HashSet<String>(Arrays.<String>asList()));
         GlobalContext.MESSAGE_LOG.get().collect(message);
         throw new ContractViolatedException(message);
@@ -89,7 +89,7 @@ public class Generated_contracts_Test {
       Number result = i;
       {
         Number it = result;
-        if (!(AH.isGreater(it, (Number) new BigInteger("20")))) {
+        if (!(AH.isGreater(it, new BigInteger("20")))) {
           final Message message = new Message(BuiltinMessageKinds.error(), "must be > 20").withLocation(new ProgramLocation("r:01a6c2ec-8e8f-4bd1-bb81-7468b52febee(test.in.expr.os.contracts@tests)/5299123466398141595", "http://127.0.0.1:63320/node?ref=r%3A01a6c2ec-8e8f-4bd1-bb81-7468b52febee%28test.in.expr.os.contracts%40tests%29%2F5299123466398141595")).withAffectedMemberNames(new HashSet<String>(Arrays.<String>asList()));
           GlobalContext.MESSAGE_LOG.get().collect(message);
           throw new ContractViolatedException(message);
@@ -114,7 +114,7 @@ public class Generated_contracts_Test {
       Number result = i;
       {
         Number it = result;
-        if (!(AH.isGreater(it, (Number) new BigInteger("30")))) {
+        if (!(AH.isGreater(it, new BigInteger("30")))) {
           final Message message = new Message(BuiltinMessageKinds.error(), ContractViolatedException.CONSTRAINT_FAILED + ": " + "it > 30").withLocation(new ProgramLocation("r:01a6c2ec-8e8f-4bd1-bb81-7468b52febee(test.in.expr.os.contracts@tests)/5299123466399132000", "http://127.0.0.1:63320/node?ref=r%3A01a6c2ec-8e8f-4bd1-bb81-7468b52febee%28test.in.expr.os.contracts%40tests%29%2F5299123466399132000")).withAffectedMemberNames(new HashSet<String>(Arrays.<String>asList()));
           GlobalContext.MESSAGE_LOG.get().collect(message);
           throw new ContractViolatedException(message);
@@ -136,7 +136,7 @@ public class Generated_contracts_Test {
   @Test
   public void testTypeDef_item0_1847768634666769063() throws Throwable {
     try {
-      if (Generated_contracts_Test.assignNumberType((Number) new BigInteger("1")) == null) {
+      if (Generated_contracts_Test.assignNumberType(new BigInteger("1")) == null) {
         throw new NullPointerException("No Result in Confail Testitem");
       }
       Assert.fail("Constraint failed");
@@ -148,9 +148,9 @@ public class Generated_contracts_Test {
   public void testTypeDef_item1_1847768634666769066() throws Throwable {
     Assert.assertEquals("Expected: " + false + ", but was: " + ((_FunctionTypes._return_P0_E0<ValidValue>) () -> {
       Boolean ok = ((_FunctionTypes._return_P0_E0<Boolean>) () -> {
-        Number it = (Number) new BigInteger("1");
+        Number it = new BigInteger("1");
         Boolean res = true;
-        res = res && AH.isGreater(it, (Number) new BigInteger("10"));
+        res = res && AH.isGreater(it, new BigInteger("10"));
         return res;
       }).invoke();
       String msg = null;
@@ -161,9 +161,9 @@ public class Generated_contracts_Test {
       return res;
     }).invoke().ok, (Object) false, (Object) ((_FunctionTypes._return_P0_E0<ValidValue>) () -> {
       Boolean ok = ((_FunctionTypes._return_P0_E0<Boolean>) () -> {
-        Number it = (Number) new BigInteger("1");
+        Number it = new BigInteger("1");
         Boolean res = true;
-        res = res && AH.isGreater(it, (Number) new BigInteger("10"));
+        res = res && AH.isGreater(it, new BigInteger("10"));
         return res;
       }).invoke();
       String msg = null;
@@ -176,15 +176,15 @@ public class Generated_contracts_Test {
   }
   @Test
   public void testTypeDef_item3_1847768634666769083() throws Throwable {
-    Assert.assertTrue("Expected: " + (Number) new BigInteger("12") + ", but was: " + Generated_contracts_Test.assignNumberType((Number) new BigInteger("12")), EqualsTestOp.matches((Number) new BigInteger("12"), Generated_contracts_Test.assignNumberType((Number) new BigInteger("12"))));
+    Assert.assertTrue("Expected: " + new BigInteger("12") + ", but was: " + Generated_contracts_Test.assignNumberType(new BigInteger("12")), EqualsTestOp.matches(new BigInteger("12"), Generated_contracts_Test.assignNumberType(new BigInteger("12"))));
   }
   @Test
   public void testTypeDef_item4_1847768634666769088() throws Throwable {
     Assert.assertEquals("Expected: " + true + ", but was: " + ((_FunctionTypes._return_P0_E0<ValidValue>) () -> {
       Boolean ok = ((_FunctionTypes._return_P0_E0<Boolean>) () -> {
-        Number it = (Number) new BigInteger("12");
+        Number it = new BigInteger("12");
         Boolean res = true;
-        res = res && AH.isGreater(it, (Number) new BigInteger("10"));
+        res = res && AH.isGreater(it, new BigInteger("10"));
         return res;
       }).invoke();
       String msg = null;
@@ -195,9 +195,9 @@ public class Generated_contracts_Test {
       return res;
     }).invoke().ok, (Object) true, (Object) ((_FunctionTypes._return_P0_E0<ValidValue>) () -> {
       Boolean ok = ((_FunctionTypes._return_P0_E0<Boolean>) () -> {
-        Number it = (Number) new BigInteger("12");
+        Number it = new BigInteger("12");
         Boolean res = true;
-        res = res && AH.isGreater(it, (Number) new BigInteger("10"));
+        res = res && AH.isGreater(it, new BigInteger("10"));
         return res;
       }).invoke();
       String msg = null;
@@ -212,9 +212,9 @@ public class Generated_contracts_Test {
   public void testTypeDef_item5_1847768634666769096() throws Throwable {
     Assert.assertEquals("Expected: " + true + ", but was: " + (((_FunctionTypes._return_P0_E0<Boolean>) () -> {
       Boolean ok = ((_FunctionTypes._return_P0_E0<Boolean>) () -> {
-        Number it = (Number) new BigInteger("12");
+        Number it = new BigInteger("12");
         Boolean res = true;
-        res = res && AH.isGreater(it, (Number) new BigInteger("10"));
+        res = res && AH.isGreater(it, new BigInteger("10"));
         return res;
       }).invoke();
       String msg = null;
@@ -225,9 +225,9 @@ public class Generated_contracts_Test {
       return res.ok;
     }).invoke() ? true : false), (Object) true, (Object) ((((_FunctionTypes._return_P0_E0<Boolean>) () -> {
       Boolean ok = ((_FunctionTypes._return_P0_E0<Boolean>) () -> {
-        Number it = (Number) new BigInteger("12");
+        Number it = new BigInteger("12");
         Boolean res = true;
-        res = res && AH.isGreater(it, (Number) new BigInteger("10"));
+        res = res && AH.isGreater(it, new BigInteger("10"));
         return res;
       }).invoke();
       String msg = null;
@@ -242,9 +242,9 @@ public class Generated_contracts_Test {
   public void testTypeDef_item6_1847768634666769106() throws Throwable {
     Assert.assertEquals("Expected: " + false + ", but was: " + (((_FunctionTypes._return_P0_E0<Boolean>) () -> {
       Boolean ok = ((_FunctionTypes._return_P0_E0<Boolean>) () -> {
-        Number it = (Number) new BigInteger("5");
+        Number it = new BigInteger("5");
         Boolean res = true;
-        res = res && AH.isGreater(it, (Number) new BigInteger("10"));
+        res = res && AH.isGreater(it, new BigInteger("10"));
         return res;
       }).invoke();
       String msg = null;
@@ -255,9 +255,9 @@ public class Generated_contracts_Test {
       return res.ok;
     }).invoke() ? true : false), (Object) false, (Object) ((((_FunctionTypes._return_P0_E0<Boolean>) () -> {
       Boolean ok = ((_FunctionTypes._return_P0_E0<Boolean>) () -> {
-        Number it = (Number) new BigInteger("5");
+        Number it = new BigInteger("5");
         Boolean res = true;
-        res = res && AH.isGreater(it, (Number) new BigInteger("10"));
+        res = res && AH.isGreater(it, new BigInteger("10"));
         return res;
       }).invoke();
       String msg = null;
@@ -272,9 +272,9 @@ public class Generated_contracts_Test {
   public void testTypeDef_item7_1847768634666769116() throws Throwable {
     Assert.assertEquals("Expected: " + null + ", but was: " + ((_FunctionTypes._return_P0_E0<ValidValue>) () -> {
       Boolean ok = ((_FunctionTypes._return_P0_E0<Boolean>) () -> {
-        Number it = (Number) new BigInteger("12");
+        Number it = new BigInteger("12");
         Boolean res = true;
-        res = res && AH.isGreater(it, (Number) new BigInteger("10"));
+        res = res && AH.isGreater(it, new BigInteger("10"));
         return res;
       }).invoke();
       String msg = null;
@@ -283,11 +283,11 @@ public class Generated_contracts_Test {
       }
       ValidValue res = new ValidValue(ok, msg);
       return res;
-    }).invoke().msg, (Object) null, (Object) ((_FunctionTypes._return_P0_E0<ValidValue>) () -> {
+    }).invoke().msg, (Object) null, ((_FunctionTypes._return_P0_E0<ValidValue>) () -> {
       Boolean ok = ((_FunctionTypes._return_P0_E0<Boolean>) () -> {
-        Number it = (Number) new BigInteger("12");
+        Number it = new BigInteger("12");
         Boolean res = true;
-        res = res && AH.isGreater(it, (Number) new BigInteger("10"));
+        res = res && AH.isGreater(it, new BigInteger("10"));
         return res;
       }).invoke();
       String msg = null;
@@ -304,10 +304,10 @@ public class Generated_contracts_Test {
   public void nestedTypedefs_item0_1847768634676496203() throws Throwable {
     Assert.assertEquals("Expected: " + false + ", but was: " + ((_FunctionTypes._return_P0_E0<ValidValue>) () -> {
       Boolean ok = ((_FunctionTypes._return_P0_E0<Boolean>) () -> {
-        Number it = (Number) new BigInteger("1");
+        Number it = new BigInteger("1");
         Boolean res = true;
-        res = res && AH.isLess(it, (Number) new BigInteger("5"));
-        res = res && AH.isGreater(it, (Number) new BigInteger("1"));
+        res = res && AH.isLess(it, new BigInteger("5"));
+        res = res && AH.isGreater(it, new BigInteger("1"));
         return res;
       }).invoke();
       String msg = null;
@@ -318,10 +318,10 @@ public class Generated_contracts_Test {
       return res;
     }).invoke().ok, (Object) false, (Object) ((_FunctionTypes._return_P0_E0<ValidValue>) () -> {
       Boolean ok = ((_FunctionTypes._return_P0_E0<Boolean>) () -> {
-        Number it = (Number) new BigInteger("1");
+        Number it = new BigInteger("1");
         Boolean res = true;
-        res = res && AH.isLess(it, (Number) new BigInteger("5"));
-        res = res && AH.isGreater(it, (Number) new BigInteger("1"));
+        res = res && AH.isLess(it, new BigInteger("5"));
+        res = res && AH.isGreater(it, new BigInteger("1"));
         return res;
       }).invoke();
       String msg = null;
@@ -336,10 +336,10 @@ public class Generated_contracts_Test {
   public void nestedTypedefs_item1_1847768634676496806() throws Throwable {
     Assert.assertEquals("Expected: " + false + ", but was: " + ((_FunctionTypes._return_P0_E0<ValidValue>) () -> {
       Boolean ok = ((_FunctionTypes._return_P0_E0<Boolean>) () -> {
-        Number it = (Number) new BigInteger("6");
+        Number it = new BigInteger("6");
         Boolean res = true;
-        res = res && AH.isLess(it, (Number) new BigInteger("5"));
-        res = res && AH.isGreater(it, (Number) new BigInteger("1"));
+        res = res && AH.isLess(it, new BigInteger("5"));
+        res = res && AH.isGreater(it, new BigInteger("1"));
         return res;
       }).invoke();
       String msg = null;
@@ -350,10 +350,10 @@ public class Generated_contracts_Test {
       return res;
     }).invoke().ok, (Object) false, (Object) ((_FunctionTypes._return_P0_E0<ValidValue>) () -> {
       Boolean ok = ((_FunctionTypes._return_P0_E0<Boolean>) () -> {
-        Number it = (Number) new BigInteger("6");
+        Number it = new BigInteger("6");
         Boolean res = true;
-        res = res && AH.isLess(it, (Number) new BigInteger("5"));
-        res = res && AH.isGreater(it, (Number) new BigInteger("1"));
+        res = res && AH.isLess(it, new BigInteger("5"));
+        res = res && AH.isGreater(it, new BigInteger("1"));
         return res;
       }).invoke();
       String msg = null;
@@ -368,10 +368,10 @@ public class Generated_contracts_Test {
   public void nestedTypedefs_item2_1847768634682372750() throws Throwable {
     Assert.assertEquals("Expected: " + false + ", but was: " + (((_FunctionTypes._return_P0_E0<Boolean>) () -> {
       Boolean ok = ((_FunctionTypes._return_P0_E0<Boolean>) () -> {
-        Number it = (Number) new BigInteger("1");
+        Number it = new BigInteger("1");
         Boolean res = true;
-        res = res && AH.isLess(it, (Number) new BigInteger("5"));
-        res = res && AH.isGreater(it, (Number) new BigInteger("1"));
+        res = res && AH.isLess(it, new BigInteger("5"));
+        res = res && AH.isGreater(it, new BigInteger("1"));
         return res;
       }).invoke();
       String msg = null;
@@ -382,10 +382,10 @@ public class Generated_contracts_Test {
       return res.ok;
     }).invoke() ? true : false), (Object) false, (Object) ((((_FunctionTypes._return_P0_E0<Boolean>) () -> {
       Boolean ok = ((_FunctionTypes._return_P0_E0<Boolean>) () -> {
-        Number it = (Number) new BigInteger("1");
+        Number it = new BigInteger("1");
         Boolean res = true;
-        res = res && AH.isLess(it, (Number) new BigInteger("5"));
-        res = res && AH.isGreater(it, (Number) new BigInteger("1"));
+        res = res && AH.isLess(it, new BigInteger("5"));
+        res = res && AH.isGreater(it, new BigInteger("1"));
         return res;
       }).invoke();
       String msg = null;
@@ -400,10 +400,10 @@ public class Generated_contracts_Test {
   public void nestedTypedefs_item3_1847768634682483562() throws Throwable {
     Assert.assertEquals("Expected: " + false + ", but was: " + (((_FunctionTypes._return_P0_E0<Boolean>) () -> {
       Boolean ok = ((_FunctionTypes._return_P0_E0<Boolean>) () -> {
-        Number it = (Number) new BigInteger("6");
+        Number it = new BigInteger("6");
         Boolean res = true;
-        res = res && AH.isLess(it, (Number) new BigInteger("5"));
-        res = res && AH.isGreater(it, (Number) new BigInteger("1"));
+        res = res && AH.isLess(it, new BigInteger("5"));
+        res = res && AH.isGreater(it, new BigInteger("1"));
         return res;
       }).invoke();
       String msg = null;
@@ -414,10 +414,10 @@ public class Generated_contracts_Test {
       return res.ok;
     }).invoke() ? true : false), (Object) false, (Object) ((((_FunctionTypes._return_P0_E0<Boolean>) () -> {
       Boolean ok = ((_FunctionTypes._return_P0_E0<Boolean>) () -> {
-        Number it = (Number) new BigInteger("6");
+        Number it = new BigInteger("6");
         Boolean res = true;
-        res = res && AH.isLess(it, (Number) new BigInteger("5"));
-        res = res && AH.isGreater(it, (Number) new BigInteger("1"));
+        res = res && AH.isLess(it, new BigInteger("5"));
+        res = res && AH.isGreater(it, new BigInteger("1"));
         return res;
       }).invoke();
       String msg = null;
@@ -433,10 +433,10 @@ public class Generated_contracts_Test {
    */
     public static Number times2(final Number i) {
     Number res = ((_FunctionTypes._return_P0_E0<Number>) () -> {
-      Number newValue = AH.mul((Number) new BigInteger("2"), i);
+      Number newValue = AH.mul(new BigInteger("2"), i);
       {
         Number it = newValue;
-        if (!(AH.isGreater(it, (Number) new BigInteger("10")))) {
+        if (!(AH.isGreater(it, new BigInteger("10")))) {
           final Message message = new Message(BuiltinMessageKinds.error(), ContractViolatedException.CONSTRAINT_FAILED + ": " + "it > 10").withLocation(new ProgramLocation("r:01a6c2ec-8e8f-4bd1-bb81-7468b52febee(test.in.expr.os.contracts@tests)/410396733648213593", "http://127.0.0.1:63320/node?ref=r%3A01a6c2ec-8e8f-4bd1-bb81-7468b52febee%28test.in.expr.os.contracts%40tests%29%2F410396733648213593")).withAffectedMemberNames(new HashSet<String>(Arrays.<String>asList()));
           GlobalContext.MESSAGE_LOG.get().collect(message);
           throw new ContractViolatedException(message);
@@ -446,7 +446,7 @@ public class Generated_contracts_Test {
     }).invoke();
     {
       Number it = res;
-      if (!(AH.isEqual(it, AH.mul((Number) new BigInteger("2"), i)))) {
+      if (!(AH.isEqual(it, AH.mul(new BigInteger("2"), i)))) {
         final Message message = new Message(BuiltinMessageKinds.error(), ContractViolatedException.POST_FAILED + ": " + "res == 2 * i").withLocation(new ProgramLocation("r:01a6c2ec-8e8f-4bd1-bb81-7468b52febee(test.in.expr.os.contracts@tests)/1222381916464423823", "http://127.0.0.1:63320/node?ref=r%3A01a6c2ec-8e8f-4bd1-bb81-7468b52febee%28test.in.expr.os.contracts%40tests%29%2F1222381916464423823")).withAffectedMemberNames(new HashSet<String>(Arrays.<String>asList()));
         GlobalContext.MESSAGE_LOG.get().collect(message);
         throw new ContractViolatedException(message);
@@ -460,16 +460,16 @@ public class Generated_contracts_Test {
    */
     public static Number times3(Number i) {
     {
-      if (!(AH.isGreater(i, (Number) new BigInteger("10")))) {
+      if (!(AH.isGreater(i, new BigInteger("10")))) {
         final Message message = new Message(BuiltinMessageKinds.error(), ContractViolatedException.PRE_FAILED + ": " + "i > 10").withLocation(new ProgramLocation("r:01a6c2ec-8e8f-4bd1-bb81-7468b52febee(test.in.expr.os.contracts@tests)/867786408880429061", "http://127.0.0.1:63320/node?ref=r%3A01a6c2ec-8e8f-4bd1-bb81-7468b52febee%28test.in.expr.os.contracts%40tests%29%2F867786408880429061")).withAffectedMemberNames(new HashSet<String>(Arrays.<String>asList()));
         GlobalContext.MESSAGE_LOG.get().collect(message);
         throw new ContractViolatedException(message);
       }
     }
-    Number res = AH.mul((Number) new BigInteger("3"), i);
+    Number res = AH.mul(new BigInteger("3"), i);
     {
       Number it = res;
-      if (!(AH.isGreater(it, (Number) new BigInteger("100")) && AH.isEqual(it, AH.mul((Number) new BigInteger("3"), i)))) {
+      if (!(AH.isGreater(it, new BigInteger("100")) && AH.isEqual(it, AH.mul(new BigInteger("3"), i)))) {
         final Message message = new Message(BuiltinMessageKinds.error(), ContractViolatedException.POST_FAILED + ": " + "res > 100 && res == 3 * i").withLocation(new ProgramLocation("r:01a6c2ec-8e8f-4bd1-bb81-7468b52febee(test.in.expr.os.contracts@tests)/867786408880429144", "http://127.0.0.1:63320/node?ref=r%3A01a6c2ec-8e8f-4bd1-bb81-7468b52febee%28test.in.expr.os.contracts%40tests%29%2F867786408880429144")).withAffectedMemberNames(new HashSet<String>(Arrays.<String>asList()));
         GlobalContext.MESSAGE_LOG.get().collect(message);
         throw new ContractViolatedException(message);
@@ -483,16 +483,16 @@ public class Generated_contracts_Test {
    */
     public static Number times3block(Number i) {
     {
-      if (!(AH.isGreater(i, (Number) new BigInteger("10")))) {
+      if (!(AH.isGreater(i, new BigInteger("10")))) {
         final Message message = new Message(BuiltinMessageKinds.error(), ContractViolatedException.PRE_FAILED + ": " + "i > 10").withLocation(new ProgramLocation("r:01a6c2ec-8e8f-4bd1-bb81-7468b52febee(test.in.expr.os.contracts@tests)/7981304192351666667", "http://127.0.0.1:63320/node?ref=r%3A01a6c2ec-8e8f-4bd1-bb81-7468b52febee%28test.in.expr.os.contracts%40tests%29%2F7981304192351666667")).withAffectedMemberNames(new HashSet<String>(Arrays.<String>asList()));
         GlobalContext.MESSAGE_LOG.get().collect(message);
         throw new ContractViolatedException(message);
       }
     }
-    Number res = AH.mul((Number) new BigInteger("3"), i);
+    Number res = AH.mul(new BigInteger("3"), i);
     {
       Number it = res;
-      if (!(AH.isGreater(it, (Number) new BigInteger("100")) && AH.isEqual(it, AH.mul((Number) new BigInteger("3"), i)))) {
+      if (!(AH.isGreater(it, new BigInteger("100")) && AH.isEqual(it, AH.mul(new BigInteger("3"), i)))) {
         final Message message = new Message(BuiltinMessageKinds.error(), ContractViolatedException.POST_FAILED + ": " + "res > 100 && res == 3 * i").withLocation(new ProgramLocation("r:01a6c2ec-8e8f-4bd1-bb81-7468b52febee(test.in.expr.os.contracts@tests)/7981304192351666671", "http://127.0.0.1:63320/node?ref=r%3A01a6c2ec-8e8f-4bd1-bb81-7468b52febee%28test.in.expr.os.contracts%40tests%29%2F7981304192351666671")).withAffectedMemberNames(new HashSet<String>(Arrays.<String>asList()));
         GlobalContext.MESSAGE_LOG.get().collect(message);
         throw new ContractViolatedException(message);
@@ -505,18 +505,18 @@ public class Generated_contracts_Test {
    * Function Contracts BlockExpressions
    */
     public static Number times3ContractsBlock(Number i) {
-    Boolean b = AH.isGreater(i, (Number) new BigInteger("10"));
+    Boolean b = AH.isGreater(i, new BigInteger("10"));
     {
-      if (!(AH.isGreater(i, (Number) new BigInteger("10")))) {
+      if (!(AH.isGreater(i, new BigInteger("10")))) {
         final Message message = new Message(BuiltinMessageKinds.error(), ContractViolatedException.PRE_FAILED + ": " + "{\n  val b = i > 10\n  b\n}\n").withLocation(new ProgramLocation("r:01a6c2ec-8e8f-4bd1-bb81-7468b52febee(test.in.expr.os.contracts@tests)/3914984864457226592", "http://127.0.0.1:63320/node?ref=r%3A01a6c2ec-8e8f-4bd1-bb81-7468b52febee%28test.in.expr.os.contracts%40tests%29%2F3914984864457226592")).withAffectedMemberNames(new HashSet<String>(Arrays.<String>asList()));
         GlobalContext.MESSAGE_LOG.get().collect(message);
         throw new ContractViolatedException(message);
       }
     }
-    Number res = AH.mul((Number) new BigInteger("3"), i);
+    Number res = AH.mul(new BigInteger("3"), i);
     {
       Number it = res;
-      if (!(AH.isGreater(it, (Number) new BigInteger("100")))) {
+      if (!(AH.isGreater(it, new BigInteger("100")))) {
         final Message message = new Message(BuiltinMessageKinds.error(), ContractViolatedException.POST_FAILED + ": " + "{\n  val b = res > 100\n  b\n}\n").withLocation(new ProgramLocation("r:01a6c2ec-8e8f-4bd1-bb81-7468b52febee(test.in.expr.os.contracts@tests)/3914984864457226596", "http://127.0.0.1:63320/node?ref=r%3A01a6c2ec-8e8f-4bd1-bb81-7468b52febee%28test.in.expr.os.contracts%40tests%29%2F3914984864457226596")).withAffectedMemberNames(new HashSet<String>(Arrays.<String>asList()));
         GlobalContext.MESSAGE_LOG.get().collect(message);
         throw new ContractViolatedException(message);
@@ -526,20 +526,20 @@ public class Generated_contracts_Test {
     return res;
   }
   public static Number times2MultipleContractItems(Number i, Number dummy) {
-    Number newValue = AH.mul((Number) new BigInteger("2"), i);
+    Number newValue = AH.mul(new BigInteger("2"), i);
     {
       Number it = newValue;
-      if (!(AH.isGreater(i, (Number) new BigInteger("1")))) {
+      if (!(AH.isGreater(i, new BigInteger("1")))) {
         final Message message = new Message(BuiltinMessageKinds.error(), ContractViolatedException.CONSTRAINT_FAILED + ": " + "i > 1").withLocation(new ProgramLocation("r:01a6c2ec-8e8f-4bd1-bb81-7468b52febee(test.in.expr.os.contracts@tests)/3914984864476251742", "http://127.0.0.1:63320/node?ref=r%3A01a6c2ec-8e8f-4bd1-bb81-7468b52febee%28test.in.expr.os.contracts%40tests%29%2F3914984864476251742")).withAffectedMemberNames(new HashSet<String>(Arrays.<String>asList()));
         GlobalContext.MESSAGE_LOG.get().collect(message);
         throw new ContractViolatedException(message);
       }
-      if (!(AH.isGreater(dummy, (Number) new BigInteger("1")))) {
+      if (!(AH.isGreater(dummy, new BigInteger("1")))) {
         final Message message = new Message(BuiltinMessageKinds.error(), ContractViolatedException.CONSTRAINT_FAILED + ": " + "dummy > 1").withLocation(new ProgramLocation("r:01a6c2ec-8e8f-4bd1-bb81-7468b52febee(test.in.expr.os.contracts@tests)/3914984864476306445", "http://127.0.0.1:63320/node?ref=r%3A01a6c2ec-8e8f-4bd1-bb81-7468b52febee%28test.in.expr.os.contracts%40tests%29%2F3914984864476306445")).withAffectedMemberNames(new HashSet<String>(Arrays.<String>asList()));
         GlobalContext.MESSAGE_LOG.get().collect(message);
         throw new ContractViolatedException(message);
       }
-      if (!(AH.isGreater(it, (Number) new BigInteger("10")))) {
+      if (!(AH.isGreater(it, new BigInteger("10")))) {
         final Message message = new Message(BuiltinMessageKinds.error(), ContractViolatedException.CONSTRAINT_FAILED + ": " + "it > 10").withLocation(new ProgramLocation("r:01a6c2ec-8e8f-4bd1-bb81-7468b52febee(test.in.expr.os.contracts@tests)/3914984864476969452", "http://127.0.0.1:63320/node?ref=r%3A01a6c2ec-8e8f-4bd1-bb81-7468b52febee%28test.in.expr.os.contracts%40tests%29%2F3914984864476969452")).withAffectedMemberNames(new HashSet<String>(Arrays.<String>asList()));
         GlobalContext.MESSAGE_LOG.get().collect(message);
         throw new ContractViolatedException(message);
@@ -551,12 +551,12 @@ public class Generated_contracts_Test {
   }
   @Test
   public void testValExprContracts_item0_5096151429186861955() throws Throwable {
-    Assert.assertTrue("Expected: " + (Number) new BigInteger("12") + ", but was: " + Generated_contracts_Test.times2((Number) new BigInteger("6")), EqualsTestOp.matches((Number) new BigInteger("12"), Generated_contracts_Test.times2((Number) new BigInteger("6"))));
+    Assert.assertTrue("Expected: " + new BigInteger("12") + ", but was: " + Generated_contracts_Test.times2(new BigInteger("6")), EqualsTestOp.matches(new BigInteger("12"), Generated_contracts_Test.times2(new BigInteger("6"))));
   }
   @Test
   public void testValExprContracts_item1_5096151429186861960() throws Throwable {
     try {
-      if (Generated_contracts_Test.times2((Number) new BigInteger("5")) == null) {
+      if (Generated_contracts_Test.times2(new BigInteger("5")) == null) {
         throw new NullPointerException("No Result in Confail Testitem");
       }
       Assert.fail("Constraint failed");
@@ -566,12 +566,12 @@ public class Generated_contracts_Test {
   }
   @Test
   public void testValExprContracts_item2_3914984864476470988() throws Throwable {
-    Assert.assertTrue("Expected: " + (Number) new BigInteger("22") + ", but was: " + Generated_contracts_Test.times2MultipleContractItems((Number) new BigInteger("11"), (Number) new BigInteger("20")), EqualsTestOp.matches((Number) new BigInteger("22"), Generated_contracts_Test.times2MultipleContractItems((Number) new BigInteger("11"), (Number) new BigInteger("20"))));
+    Assert.assertTrue("Expected: " + new BigInteger("22") + ", but was: " + Generated_contracts_Test.times2MultipleContractItems(new BigInteger("11"), new BigInteger("20")), EqualsTestOp.matches(new BigInteger("22"), Generated_contracts_Test.times2MultipleContractItems(new BigInteger("11"), new BigInteger("20"))));
   }
   @Test
   public void testValExprContracts_item3_3914984864476802088() throws Throwable {
     try {
-      if (Generated_contracts_Test.times2MultipleContractItems((Number) new BigInteger("1"), (Number) new BigInteger("20")) == null) {
+      if (Generated_contracts_Test.times2MultipleContractItems(new BigInteger("1"), new BigInteger("20")) == null) {
         throw new NullPointerException("No Result in Confail Testitem");
       }
       Assert.fail("Constraint failed");
@@ -582,7 +582,7 @@ public class Generated_contracts_Test {
   @Test
   public void testValExprContracts_item4_3914984864476857489() throws Throwable {
     try {
-      if (Generated_contracts_Test.times2MultipleContractItems((Number) new BigInteger("20"), (Number) new BigInteger("1")) == null) {
+      if (Generated_contracts_Test.times2MultipleContractItems(new BigInteger("20"), new BigInteger("1")) == null) {
         throw new NullPointerException("No Result in Confail Testitem");
       }
       Assert.fail("Constraint failed");
@@ -593,7 +593,7 @@ public class Generated_contracts_Test {
   @Test
   public void testValExprContracts_item5_3914984864476913628() throws Throwable {
     try {
-      if (Generated_contracts_Test.times2MultipleContractItems((Number) new BigInteger("1"), (Number) new BigInteger("1")) == null) {
+      if (Generated_contracts_Test.times2MultipleContractItems(new BigInteger("1"), new BigInteger("1")) == null) {
         throw new NullPointerException("No Result in Confail Testitem");
       }
       Assert.fail("Constraint failed");
@@ -604,7 +604,7 @@ public class Generated_contracts_Test {
   @Test
   public void testValExprContracts_item6_3914984864477026838() throws Throwable {
     try {
-      if (Generated_contracts_Test.times2MultipleContractItems((Number) new BigInteger("2"), (Number) new BigInteger("2")) == null) {
+      if (Generated_contracts_Test.times2MultipleContractItems(new BigInteger("2"), new BigInteger("2")) == null) {
         throw new NullPointerException("No Result in Confail Testitem");
       }
       Assert.fail("Constraint failed");
@@ -614,12 +614,12 @@ public class Generated_contracts_Test {
   }
   @Test
   public void functionContracts_item0_5096151429186647023() throws Throwable {
-    Assert.assertTrue("Expected: " + (Number) new BigInteger("150") + ", but was: " + Generated_contracts_Test.times3((Number) new BigInteger("50")), EqualsTestOp.matches((Number) new BigInteger("150"), Generated_contracts_Test.times3((Number) new BigInteger("50"))));
+    Assert.assertTrue("Expected: " + new BigInteger("150") + ", but was: " + Generated_contracts_Test.times3(new BigInteger("50")), EqualsTestOp.matches(new BigInteger("150"), Generated_contracts_Test.times3(new BigInteger("50"))));
   }
   @Test
   public void functionContracts_item1_5096151429186647028() throws Throwable {
     try {
-      if (Generated_contracts_Test.times3((Number) new BigInteger("3")) == null) {
+      if (Generated_contracts_Test.times3(new BigInteger("3")) == null) {
         throw new NullPointerException("No Result in Confail Testitem");
       }
       Assert.fail("Constraint failed");
@@ -630,7 +630,7 @@ public class Generated_contracts_Test {
   @Test
   public void functionContracts_item2_5096151429186647031() throws Throwable {
     try {
-      if (Generated_contracts_Test.times3((Number) new BigInteger("20")) == null) {
+      if (Generated_contracts_Test.times3(new BigInteger("20")) == null) {
         throw new NullPointerException("No Result in Confail Testitem");
       }
       Assert.fail("Constraint failed");
@@ -641,7 +641,7 @@ public class Generated_contracts_Test {
   @Test
   public void functionContracts_item3_2143273692309626397() throws Throwable {
     try {
-      if (Generated_contracts_Test.times3block((Number) new BigInteger("3")) == null) {
+      if (Generated_contracts_Test.times3block(new BigInteger("3")) == null) {
         throw new NullPointerException("No Result in Confail Testitem");
       }
       Assert.fail("Constraint failed");
@@ -652,7 +652,7 @@ public class Generated_contracts_Test {
   @Test
   public void functionContracts_item4_2143273692309629780() throws Throwable {
     try {
-      if (Generated_contracts_Test.times3block((Number) new BigInteger("20")) == null) {
+      if (Generated_contracts_Test.times3block(new BigInteger("20")) == null) {
         throw new NullPointerException("No Result in Confail Testitem");
       }
       Assert.fail("Constraint failed");
@@ -662,16 +662,16 @@ public class Generated_contracts_Test {
   }
   @Test
   public void functionContracts_item5_2143273692309631895() throws Throwable {
-    Assert.assertTrue("Expected: " + (Number) new BigInteger("150") + ", but was: " + Generated_contracts_Test.times3block((Number) new BigInteger("50")), EqualsTestOp.matches((Number) new BigInteger("150"), Generated_contracts_Test.times3block((Number) new BigInteger("50"))));
+    Assert.assertTrue("Expected: " + new BigInteger("150") + ", but was: " + Generated_contracts_Test.times3block(new BigInteger("50")), EqualsTestOp.matches(new BigInteger("150"), Generated_contracts_Test.times3block(new BigInteger("50"))));
   }
   @Test
   public void functionContracts_item6_3914984864459020100() throws Throwable {
-    Assert.assertTrue("Expected: " + (Number) new BigInteger("150") + ", but was: " + Generated_contracts_Test.times3ContractsBlock((Number) new BigInteger("50")), EqualsTestOp.matches((Number) new BigInteger("150"), Generated_contracts_Test.times3ContractsBlock((Number) new BigInteger("50"))));
+    Assert.assertTrue("Expected: " + new BigInteger("150") + ", but was: " + Generated_contracts_Test.times3ContractsBlock(new BigInteger("50")), EqualsTestOp.matches(new BigInteger("150"), Generated_contracts_Test.times3ContractsBlock(new BigInteger("50"))));
   }
   @Test
   public void functionContracts_item7_3914984864459020105() throws Throwable {
     try {
-      if (Generated_contracts_Test.times3ContractsBlock((Number) new BigInteger("3")) == null) {
+      if (Generated_contracts_Test.times3ContractsBlock(new BigInteger("3")) == null) {
         throw new NullPointerException("No Result in Confail Testitem");
       }
       Assert.fail("Constraint failed");
@@ -682,7 +682,7 @@ public class Generated_contracts_Test {
   @Test
   public void functionContracts_item8_3914984864459020108() throws Throwable {
     try {
-      if (Generated_contracts_Test.times3ContractsBlock((Number) new BigInteger("20")) == null) {
+      if (Generated_contracts_Test.times3ContractsBlock(new BigInteger("20")) == null) {
         throw new NullPointerException("No Result in Confail Testitem");
       }
       Assert.fail("Constraint failed");
@@ -692,26 +692,26 @@ public class Generated_contracts_Test {
   }
   @Test
   public void testInvariant_item0_6124454787022488152() throws Throwable {
-    Assert.assertTrue("Expected: " + (Number) new BigInteger("12") + ", but was: " + Generated_contracts_Test.times2((Number) new BigInteger("6")), EqualsTestOp.matches((Number) new BigInteger("12"), Generated_contracts_Test.times2((Number) new BigInteger("6"))));
+    Assert.assertTrue("Expected: " + new BigInteger("12") + ", but was: " + Generated_contracts_Test.times2(new BigInteger("6")), EqualsTestOp.matches(new BigInteger("12"), Generated_contracts_Test.times2(new BigInteger("6"))));
   }
   @Test
   public void testInvariant_item1_1988438614040143157() throws Throwable {
-    Assert.assertTrue("Expected: " + (Number) new BigInteger("12") + ", but was: " + (((_FunctionTypes._return_P0_E0<Number>) () -> {
-      Number newValue = AH.mul((Number) new BigInteger("2"), (Number) new BigInteger("6"));
+    Assert.assertTrue("Expected: " + new BigInteger("12") + ", but was: " + (((_FunctionTypes._return_P0_E0<Number>) () -> {
+      Number newValue = AH.mul(new BigInteger("2"), new BigInteger("6"));
       {
         Number it = newValue;
-        if (!(AH.isGreater(it, (Number) new BigInteger("10")))) {
+        if (!(AH.isGreater(it, new BigInteger("10")))) {
           final Message message = new Message(BuiltinMessageKinds.error(), ContractViolatedException.CONSTRAINT_FAILED + ": " + "it > 10").withLocation(new ProgramLocation("r:01a6c2ec-8e8f-4bd1-bb81-7468b52febee(test.in.expr.os.contracts@tests)/1988438614040156729", "http://127.0.0.1:63320/node?ref=r%3A01a6c2ec-8e8f-4bd1-bb81-7468b52febee%28test.in.expr.os.contracts%40tests%29%2F1988438614040156729")).withAffectedMemberNames(new HashSet<String>(Arrays.<String>asList()));
           GlobalContext.MESSAGE_LOG.get().collect(message);
           throw new ContractViolatedException(message);
         }
       }
       return newValue;
-    }).invoke()), EqualsTestOp.matches((Number) new BigInteger("12"), ((_FunctionTypes._return_P0_E0<Number>) () -> {
-      Number newValue = AH.mul((Number) new BigInteger("2"), (Number) new BigInteger("6"));
+    }).invoke()), EqualsTestOp.matches(new BigInteger("12"), ((_FunctionTypes._return_P0_E0<Number>) () -> {
+      Number newValue = AH.mul(new BigInteger("2"), new BigInteger("6"));
       {
         Number it = newValue;
-        if (!(AH.isGreater(it, (Number) new BigInteger("10")))) {
+        if (!(AH.isGreater(it, new BigInteger("10")))) {
           final Message message = new Message(BuiltinMessageKinds.error(), ContractViolatedException.CONSTRAINT_FAILED + ": " + "it > 10").withLocation(new ProgramLocation("r:01a6c2ec-8e8f-4bd1-bb81-7468b52febee(test.in.expr.os.contracts@tests)/1988438614040156729", "http://127.0.0.1:63320/node?ref=r%3A01a6c2ec-8e8f-4bd1-bb81-7468b52febee%28test.in.expr.os.contracts%40tests%29%2F1988438614040156729")).withAffectedMemberNames(new HashSet<String>(Arrays.<String>asList()));
           GlobalContext.MESSAGE_LOG.get().collect(message);
           throw new ContractViolatedException(message);
@@ -723,7 +723,7 @@ public class Generated_contracts_Test {
   @Test
   public void testInvariant_item2_1035519324646140405() throws Throwable {
     try {
-      if (Generated_contracts_Test.times2((Number) new BigInteger("5")) == null) {
+      if (Generated_contracts_Test.times2(new BigInteger("5")) == null) {
         throw new NullPointerException("No Result in Confail Testitem");
       }
       Assert.fail("Constraint failed");
@@ -735,10 +735,10 @@ public class Generated_contracts_Test {
   public void testInvariant_item3_1988438614040275742() throws Throwable {
     try {
       if ((((_FunctionTypes._return_P0_E0<Number>) () -> {
-        Number newValue = AH.mul((Number) new BigInteger("2"), (Number) new BigInteger("5"));
+        Number newValue = AH.mul(new BigInteger("2"), new BigInteger("5"));
         {
           Number it = newValue;
-          if (!(AH.isGreater(it, (Number) new BigInteger("10")))) {
+          if (!(AH.isGreater(it, new BigInteger("10")))) {
             final Message message = new Message(BuiltinMessageKinds.error(), ContractViolatedException.CONSTRAINT_FAILED + ": " + "it > 10").withLocation(new ProgramLocation("r:01a6c2ec-8e8f-4bd1-bb81-7468b52febee(test.in.expr.os.contracts@tests)/1988438614040245420", "http://127.0.0.1:63320/node?ref=r%3A01a6c2ec-8e8f-4bd1-bb81-7468b52febee%28test.in.expr.os.contracts%40tests%29%2F1988438614040245420")).withAffectedMemberNames(new HashSet<String>(Arrays.<String>asList()));
             GlobalContext.MESSAGE_LOG.get().collect(message);
             throw new ContractViolatedException(message);
@@ -755,12 +755,12 @@ public class Generated_contracts_Test {
   }
   @Test
   public void testInvariant_item6_6124454787022553788() throws Throwable {
-    Assert.assertTrue("Expected: " + (Number) new BigInteger("150") + ", but was: " + Generated_contracts_Test.times3((Number) new BigInteger("50")), EqualsTestOp.matches((Number) new BigInteger("150"), Generated_contracts_Test.times3((Number) new BigInteger("50"))));
+    Assert.assertTrue("Expected: " + new BigInteger("150") + ", but was: " + Generated_contracts_Test.times3(new BigInteger("50")), EqualsTestOp.matches(new BigInteger("150"), Generated_contracts_Test.times3(new BigInteger("50"))));
   }
   @Test
   public void testInvariant_item7_1035519324646150226() throws Throwable {
     try {
-      if (Generated_contracts_Test.times3((Number) new BigInteger("3")) == null) {
+      if (Generated_contracts_Test.times3(new BigInteger("3")) == null) {
         throw new NullPointerException("No Result in Confail Testitem");
       }
       Assert.fail("Constraint failed");
@@ -771,7 +771,7 @@ public class Generated_contracts_Test {
   @Test
   public void testInvariant_item8_1988438614037905300() throws Throwable {
     try {
-      if (Generated_contracts_Test.times3((Number) new BigInteger("20")) == null) {
+      if (Generated_contracts_Test.times3(new BigInteger("20")) == null) {
         throw new NullPointerException("No Result in Confail Testitem");
       }
       Assert.fail("Constraint failed");
@@ -884,10 +884,10 @@ public class Generated_contracts_Test {
       return 0;
     }
   }
-  public static final Pair validPair_ = new Pair((Number) new BigInteger("3"), (Number) new BigInteger("2"));
+  public static final Pair validPair_ = new Pair(new BigInteger("3"), new BigInteger("2"));
   @Test
   public void Persons_item0_6124454787025689469() throws Throwable {
-    Assert.assertTrue("Expected: " + (Number) new BigInteger("3") + ", but was: " + Generated_contracts_Test.validPair_.geta(), EqualsTestOp.matches((Number) new BigInteger("3"), Generated_contracts_Test.validPair_.geta()));
+    Assert.assertTrue("Expected: " + new BigInteger("3") + ", but was: " + Generated_contracts_Test.validPair_.geta(), EqualsTestOp.matches(new BigInteger("3"), Generated_contracts_Test.validPair_.geta()));
   }
   public enum Gender implements Comparator<Gender> {
     male(),
@@ -1049,9 +1049,9 @@ public class Generated_contracts_Test {
       return 0;
     }
   }
-  public static final Person p2_ = new Person("p1", (Number) new BigInteger("30"), Gender.male, TreePVector.<Person>from(new ArrayList<Person>()));
-  public static final Person p3_ = new Person("p1", (Number) new BigInteger("30"), Gender.male, TreePVector.<Person>from(new ArrayList<Person>()));
-  public static final Person p1_ = new Person("p1", (Number) new BigInteger("30"), Gender.male, TreePVector.<Person>empty().plus(Generated_contracts_Test.p2_).plus(Generated_contracts_Test.p3_));
+  public static final Person p2_ = new Person("p1", new BigInteger("30"), Gender.male, TreePVector.<Person>from(new ArrayList<Person>()));
+  public static final Person p3_ = new Person("p1", new BigInteger("30"), Gender.male, TreePVector.<Person>from(new ArrayList<Person>()));
+  public static final Person p1_ = new Person("p1", new BigInteger("30"), Gender.male, TreePVector.<Person>empty().plus(Generated_contracts_Test.p2_).plus(Generated_contracts_Test.p3_));
   public static PCollection<InlineRecordType> brotherAges1a(final Person p) {
     PCollection<Person> brothers = TreePVector.<Person>from(p.getsiblings().stream().filter(new Predicate<Person>() {
       public boolean test(Person o) {
@@ -1392,42 +1392,42 @@ public class Generated_contracts_Test {
   }
   @Test
   public void TestAges_item0_5989109240583951551() throws Throwable {
-    Assert.assertEquals("Expected: " + Generated_contracts_Test.p3_ + ", but was: " + Generated_contracts_Test.p2_, (Object) Generated_contracts_Test.p3_, (Object) Generated_contracts_Test.p2_);
+    Assert.assertEquals("Expected: " + Generated_contracts_Test.p3_ + ", but was: " + Generated_contracts_Test.p2_, Generated_contracts_Test.p3_, Generated_contracts_Test.p2_);
   }
   @Test
   public void TestAges_item1_6095949300274821586() throws Throwable {
-    Assert.assertTrue("Expected: " + (Number) new BigInteger("2") + ", but was: " + BigInteger.valueOf(Generated_contracts_Test.brotherAges1a(Generated_contracts_Test.p1_).size()), EqualsTestOp.matches((Number) new BigInteger("2"), BigInteger.valueOf(Generated_contracts_Test.brotherAges1a(Generated_contracts_Test.p1_).size())));
+    Assert.assertTrue("Expected: " + new BigInteger("2") + ", but was: " + BigInteger.valueOf(Generated_contracts_Test.brotherAges1a(Generated_contracts_Test.p1_).size()), EqualsTestOp.matches(new BigInteger("2"), BigInteger.valueOf(Generated_contracts_Test.brotherAges1a(Generated_contracts_Test.p1_).size())));
   }
   @Test
   public void TestAges_item2_6095949300274949442() throws Throwable {
-    Assert.assertTrue("Expected: " + (Number) new BigInteger("2") + ", but was: " + BigInteger.valueOf(Generated_contracts_Test.brotherAges1a(Generated_contracts_Test.p1_).size()), EqualsTestOp.matches((Number) new BigInteger("2"), BigInteger.valueOf(Generated_contracts_Test.brotherAges1a(Generated_contracts_Test.p1_).size())));
+    Assert.assertTrue("Expected: " + new BigInteger("2") + ", but was: " + BigInteger.valueOf(Generated_contracts_Test.brotherAges1a(Generated_contracts_Test.p1_).size()), EqualsTestOp.matches(new BigInteger("2"), BigInteger.valueOf(Generated_contracts_Test.brotherAges1a(Generated_contracts_Test.p1_).size())));
   }
   @Test
   public void TestAges_item3_6095949300274840614() throws Throwable {
-    Assert.assertTrue("Expected: " + (Number) new BigInteger("2") + ", but was: " + BigInteger.valueOf(Generated_contracts_Test.brotherAges1b(Generated_contracts_Test.p1_).size()), EqualsTestOp.matches((Number) new BigInteger("2"), BigInteger.valueOf(Generated_contracts_Test.brotherAges1b(Generated_contracts_Test.p1_).size())));
+    Assert.assertTrue("Expected: " + new BigInteger("2") + ", but was: " + BigInteger.valueOf(Generated_contracts_Test.brotherAges1b(Generated_contracts_Test.p1_).size()), EqualsTestOp.matches(new BigInteger("2"), BigInteger.valueOf(Generated_contracts_Test.brotherAges1b(Generated_contracts_Test.p1_).size())));
   }
   @Test
   public void TestAges_item4_6095949300275829890() throws Throwable {
-    Assert.assertTrue("Expected: " + (Number) new BigInteger("2") + ", but was: " + BigInteger.valueOf(Generated_contracts_Test.brotherAges1c(Generated_contracts_Test.p1_).size()), EqualsTestOp.matches((Number) new BigInteger("2"), BigInteger.valueOf(Generated_contracts_Test.brotherAges1c(Generated_contracts_Test.p1_).size())));
+    Assert.assertTrue("Expected: " + new BigInteger("2") + ", but was: " + BigInteger.valueOf(Generated_contracts_Test.brotherAges1c(Generated_contracts_Test.p1_).size()), EqualsTestOp.matches(new BigInteger("2"), BigInteger.valueOf(Generated_contracts_Test.brotherAges1c(Generated_contracts_Test.p1_).size())));
   }
   @Test
   public void TestAges_item5_6095949300274840946() throws Throwable {
-    Assert.assertTrue("Expected: " + (Number) new BigInteger("2") + ", but was: " + BigInteger.valueOf(Generated_contracts_Test.brotherAges2(Generated_contracts_Test.p1_).size()), EqualsTestOp.matches((Number) new BigInteger("2"), BigInteger.valueOf(Generated_contracts_Test.brotherAges2(Generated_contracts_Test.p1_).size())));
+    Assert.assertTrue("Expected: " + new BigInteger("2") + ", but was: " + BigInteger.valueOf(Generated_contracts_Test.brotherAges2(Generated_contracts_Test.p1_).size()), EqualsTestOp.matches(new BigInteger("2"), BigInteger.valueOf(Generated_contracts_Test.brotherAges2(Generated_contracts_Test.p1_).size())));
   }
   @Test
   public void TestAges_item6_6095949300274840996() throws Throwable {
-    Assert.assertTrue("Expected: " + (Number) new BigInteger("2") + ", but was: " + BigInteger.valueOf(Generated_contracts_Test.brotherAges3(Generated_contracts_Test.p1_).size()), EqualsTestOp.matches((Number) new BigInteger("2"), BigInteger.valueOf(Generated_contracts_Test.brotherAges3(Generated_contracts_Test.p1_).size())));
+    Assert.assertTrue("Expected: " + new BigInteger("2") + ", but was: " + BigInteger.valueOf(Generated_contracts_Test.brotherAges3(Generated_contracts_Test.p1_).size()), EqualsTestOp.matches(new BigInteger("2"), BigInteger.valueOf(Generated_contracts_Test.brotherAges3(Generated_contracts_Test.p1_).size())));
   }
   @Test
   public void TestAges_item7_6095949300274841060() throws Throwable {
-    Assert.assertTrue("Expected: " + (Number) new BigInteger("2") + ", but was: " + BigInteger.valueOf(Generated_contracts_Test.brotherAges4(Generated_contracts_Test.p1_).size()), EqualsTestOp.matches((Number) new BigInteger("2"), BigInteger.valueOf(Generated_contracts_Test.brotherAges4(Generated_contracts_Test.p1_).size())));
+    Assert.assertTrue("Expected: " + new BigInteger("2") + ", but was: " + BigInteger.valueOf(Generated_contracts_Test.brotherAges4(Generated_contracts_Test.p1_).size()), EqualsTestOp.matches(new BigInteger("2"), BigInteger.valueOf(Generated_contracts_Test.brotherAges4(Generated_contracts_Test.p1_).size())));
   }
   @Test
   public void TestAges_item8_6095949300274974243() throws Throwable {
     Assert.assertEquals("Expected: " + "p1" + ", but was: " + (String) (((_FunctionTypes._return_P0_E0<InlineRecordType>) () -> {
       PVector<InlineRecordType> listResult = TreePVector.from(Generated_contracts_Test.brotherAges4(Generated_contracts_Test.p1_));
       return (listResult.isEmpty() ? null : listResult.get(0));
-    }).invoke()).members.get("name").value, (Object) "p1", (Object) (String) (((_FunctionTypes._return_P0_E0<InlineRecordType>) () -> {
+    }).invoke()).members.get("name").value, "p1", (String) (((_FunctionTypes._return_P0_E0<InlineRecordType>) () -> {
       PVector<InlineRecordType> listResult = TreePVector.from(Generated_contracts_Test.brotherAges4(Generated_contracts_Test.p1_));
       return (listResult.isEmpty() ? null : listResult.get(0));
     }).invoke()).members.get("name").value);
@@ -1442,7 +1442,7 @@ public class Generated_contracts_Test {
   }
   @Test
   public void TestAges_item11_5989109240576104939() throws Throwable {
-    Assert.assertTrue("Expected: " + (Number) new BigInteger("1") + ", but was: " + BigInteger.valueOf(HashTreePSet.from(((_FunctionTypes._return_P0_E0<PVector<InlineRecordType>>) () -> {
+    Assert.assertTrue("Expected: " + new BigInteger("1") + ", but was: " + BigInteger.valueOf(HashTreePSet.from(((_FunctionTypes._return_P0_E0<PVector<InlineRecordType>>) () -> {
       PVector<InlineRecordType> result = TreePVector.empty();
       for (Person it : ListSequence.fromList(TreePVector.<Person>empty().plus(Generated_contracts_Test.p2_).plus(Generated_contracts_Test.p3_))) {
         InlineRecordType irt = new InlineRecordType();
@@ -1451,7 +1451,7 @@ public class Generated_contracts_Test {
         result = result.plus(irt);
       }
       return result;
-    }).invoke()).size()), EqualsTestOp.matches((Number) new BigInteger("1"), BigInteger.valueOf(HashTreePSet.from(((_FunctionTypes._return_P0_E0<PVector<InlineRecordType>>) () -> {
+    }).invoke()).size()), EqualsTestOp.matches(new BigInteger("1"), BigInteger.valueOf(HashTreePSet.from(((_FunctionTypes._return_P0_E0<PVector<InlineRecordType>>) () -> {
       PVector<InlineRecordType> result = TreePVector.empty();
       for (Person it : ListSequence.fromList(TreePVector.<Person>empty().plus(Generated_contracts_Test.p2_).plus(Generated_contracts_Test.p3_))) {
         InlineRecordType irt = new InlineRecordType();
@@ -1464,24 +1464,24 @@ public class Generated_contracts_Test {
   }
   @Test
   public void TestAges_item12_5989109240583834297() throws Throwable {
-    Assert.assertTrue("Expected: " + (Number) new BigInteger("1") + ", but was: " + BigInteger.valueOf(HashTreePSet.from(TreePVector.<Person>empty().plus(Generated_contracts_Test.p2_).plus(Generated_contracts_Test.p3_)).size()), EqualsTestOp.matches((Number) new BigInteger("1"), BigInteger.valueOf(HashTreePSet.from(TreePVector.<Person>empty().plus(Generated_contracts_Test.p2_).plus(Generated_contracts_Test.p3_)).size())));
+    Assert.assertTrue("Expected: " + new BigInteger("1") + ", but was: " + BigInteger.valueOf(HashTreePSet.from(TreePVector.<Person>empty().plus(Generated_contracts_Test.p2_).plus(Generated_contracts_Test.p3_)).size()), EqualsTestOp.matches(new BigInteger("1"), BigInteger.valueOf(HashTreePSet.from(TreePVector.<Person>empty().plus(Generated_contracts_Test.p2_).plus(Generated_contracts_Test.p3_)).size())));
   }
   @Test
   public void TestAges_item13_8380233918275344816() throws Throwable {
-    Assert.assertTrue("Expected: " + (Number) new BigInteger("1") + ", but was: " + BigInteger.valueOf(HashTreePSet.from(Generated_contracts_Test.brotherAges4(Generated_contracts_Test.p1_)).size()), EqualsTestOp.matches((Number) new BigInteger("1"), BigInteger.valueOf(HashTreePSet.from(Generated_contracts_Test.brotherAges4(Generated_contracts_Test.p1_)).size())));
+    Assert.assertTrue("Expected: " + new BigInteger("1") + ", but was: " + BigInteger.valueOf(HashTreePSet.from(Generated_contracts_Test.brotherAges4(Generated_contracts_Test.p1_)).size()), EqualsTestOp.matches(new BigInteger("1"), BigInteger.valueOf(HashTreePSet.from(Generated_contracts_Test.brotherAges4(Generated_contracts_Test.p1_)).size())));
   }
   @Test
   public void TestAges_item14_8380233918275550393() throws Throwable {
-    Assert.assertTrue("Expected: " + (Number) new BigInteger("1") + ", but was: " + BigInteger.valueOf(((_FunctionTypes._return_P0_E0<PVector<InlineRecordType>>) () -> {
+    Assert.assertTrue("Expected: " + new BigInteger("1") + ", but was: " + BigInteger.valueOf(((_FunctionTypes._return_P0_E0<PVector<InlineRecordType>>) () -> {
       PVector<InlineRecordType> origList = TreePVector.from(Generated_contracts_Test.brotherAges4(Generated_contracts_Test.p1_));
-      int noOfElements = ((Number) new BigInteger("1")).intValue();
+      int noOfElements = new BigInteger("1").intValue();
       if (origList.size() <= noOfElements) {
         return origList;
       }
       return origList.subList(0, noOfElements);
-    }).invoke().size()), EqualsTestOp.matches((Number) new BigInteger("1"), BigInteger.valueOf(((_FunctionTypes._return_P0_E0<PVector<InlineRecordType>>) () -> {
+    }).invoke().size()), EqualsTestOp.matches(new BigInteger("1"), BigInteger.valueOf(((_FunctionTypes._return_P0_E0<PVector<InlineRecordType>>) () -> {
       PVector<InlineRecordType> origList = TreePVector.from(Generated_contracts_Test.brotherAges4(Generated_contracts_Test.p1_));
-      int noOfElements = ((Number) new BigInteger("1")).intValue();
+      int noOfElements = new BigInteger("1").intValue();
       if (origList.size() <= noOfElements) {
         return origList;
       }
@@ -1490,16 +1490,16 @@ public class Generated_contracts_Test {
   }
   @Test
   public void TestAges_item15_8380233918277031880() throws Throwable {
-    Assert.assertTrue("Expected: " + (Number) new BigInteger("1") + ", but was: " + BigInteger.valueOf(((_FunctionTypes._return_P0_E0<PVector<InlineRecordType>>) () -> {
+    Assert.assertTrue("Expected: " + new BigInteger("1") + ", but was: " + BigInteger.valueOf(((_FunctionTypes._return_P0_E0<PVector<InlineRecordType>>) () -> {
       PVector<InlineRecordType> origList = TreePVector.from(Generated_contracts_Test.brotherAges4(Generated_contracts_Test.p1_));
-      int noOfElements = ((Number) new BigInteger("1")).intValue();
+      int noOfElements = new BigInteger("1").intValue();
       if (origList.size() <= noOfElements) {
         return origList;
       }
       return origList.subList(origList.size() - noOfElements, origList.size());
-    }).invoke().size()), EqualsTestOp.matches((Number) new BigInteger("1"), BigInteger.valueOf(((_FunctionTypes._return_P0_E0<PVector<InlineRecordType>>) () -> {
+    }).invoke().size()), EqualsTestOp.matches(new BigInteger("1"), BigInteger.valueOf(((_FunctionTypes._return_P0_E0<PVector<InlineRecordType>>) () -> {
       PVector<InlineRecordType> origList = TreePVector.from(Generated_contracts_Test.brotherAges4(Generated_contracts_Test.p1_));
-      int noOfElements = ((Number) new BigInteger("1")).intValue();
+      int noOfElements = new BigInteger("1").intValue();
       if (origList.size() <= noOfElements) {
         return origList;
       }
@@ -1508,7 +1508,7 @@ public class Generated_contracts_Test {
   }
   @Test
   public void TestAges_item16_8380233918277211835() throws Throwable {
-    Assert.assertTrue("Expected: " + (Number) new BigInteger("1") + ", but was: " + BigInteger.valueOf(TreePVector.<Boolean>from(TreePVector.<Boolean>singleton(TreePVector.from(Generated_contracts_Test.brotherAges4(Generated_contracts_Test.p1_)).stream().allMatch(new Predicate<InlineRecordType>() {
+    Assert.assertTrue("Expected: " + new BigInteger("1") + ", but was: " + BigInteger.valueOf(TreePVector.<Boolean>from(TreePVector.<Boolean>singleton(TreePVector.from(Generated_contracts_Test.brotherAges4(Generated_contracts_Test.p1_)).stream().allMatch(new Predicate<InlineRecordType>() {
       public boolean test(InlineRecordType o) {
         return new Function<ParameterSetWrapper, Boolean>() {
           public Boolean apply(ParameterSetWrapper param) {
@@ -1521,7 +1521,7 @@ public class Generated_contracts_Test {
       public boolean test(Boolean p0) {
         return p0 != null;
       }
-    }).collect(Collectors.toList())).size()), EqualsTestOp.matches((Number) new BigInteger("1"), BigInteger.valueOf(TreePVector.<Boolean>from(TreePVector.<Boolean>singleton(TreePVector.from(Generated_contracts_Test.brotherAges4(Generated_contracts_Test.p1_)).stream().allMatch(new Predicate<InlineRecordType>() {
+    }).collect(Collectors.toList())).size()), EqualsTestOp.matches(new BigInteger("1"), BigInteger.valueOf(TreePVector.<Boolean>from(TreePVector.<Boolean>singleton(TreePVector.from(Generated_contracts_Test.brotherAges4(Generated_contracts_Test.p1_)).stream().allMatch(new Predicate<InlineRecordType>() {
       public boolean test(InlineRecordType o) {
         return new Function<ParameterSetWrapper, Boolean>() {
           public Boolean apply(ParameterSetWrapper param) {
@@ -1538,7 +1538,7 @@ public class Generated_contracts_Test {
   }
   @Test
   public void TestAges_item17_2815449023147548706() throws Throwable {
-    Assert.assertTrue("Expected: " + (Number) new BigInteger("1") + ", but was: " + BigInteger.valueOf(TreePVector.<Boolean>from(TreePVector.<Boolean>singleton(TreePVector.from(Generated_contracts_Test.brotherAges4(Generated_contracts_Test.p1_)).stream().allMatch(new Predicate<InlineRecordType>() {
+    Assert.assertTrue("Expected: " + new BigInteger("1") + ", but was: " + BigInteger.valueOf(TreePVector.<Boolean>from(TreePVector.<Boolean>singleton(TreePVector.from(Generated_contracts_Test.brotherAges4(Generated_contracts_Test.p1_)).stream().allMatch(new Predicate<InlineRecordType>() {
       public boolean test(InlineRecordType o) {
         return new Function<ParameterSetWrapper, Boolean>() {
           public Boolean apply(ParameterSetWrapper param) {
@@ -1551,7 +1551,7 @@ public class Generated_contracts_Test {
       public boolean test(Boolean p0) {
         return p0 != null;
       }
-    }).collect(Collectors.toList())).size()), EqualsTestOp.matches((Number) new BigInteger("1"), BigInteger.valueOf(TreePVector.<Boolean>from(TreePVector.<Boolean>singleton(TreePVector.from(Generated_contracts_Test.brotherAges4(Generated_contracts_Test.p1_)).stream().allMatch(new Predicate<InlineRecordType>() {
+    }).collect(Collectors.toList())).size()), EqualsTestOp.matches(new BigInteger("1"), BigInteger.valueOf(TreePVector.<Boolean>from(TreePVector.<Boolean>singleton(TreePVector.from(Generated_contracts_Test.brotherAges4(Generated_contracts_Test.p1_)).stream().allMatch(new Predicate<InlineRecordType>() {
       public boolean test(InlineRecordType o) {
         return new Function<ParameterSetWrapper, Boolean>() {
           public Boolean apply(ParameterSetWrapper param) {
@@ -1568,7 +1568,7 @@ public class Generated_contracts_Test {
   }
   @Test
   public void TestAges_item18_2815449023149657736() throws Throwable {
-    Assert.assertTrue("Expected: " + (Number) new BigInteger("1") + ", but was: " + BigInteger.valueOf(TreePVector.<Boolean>from(TreePVector.<Boolean>singleton(TreePVector.from(Generated_contracts_Test.brotherAges4(Generated_contracts_Test.p1_)).stream().anyMatch(new Predicate<InlineRecordType>() {
+    Assert.assertTrue("Expected: " + new BigInteger("1") + ", but was: " + BigInteger.valueOf(TreePVector.<Boolean>from(TreePVector.<Boolean>singleton(TreePVector.from(Generated_contracts_Test.brotherAges4(Generated_contracts_Test.p1_)).stream().anyMatch(new Predicate<InlineRecordType>() {
       public boolean test(InlineRecordType o) {
         return new Function<ParameterSetWrapper, Boolean>() {
           public Boolean apply(ParameterSetWrapper param) {
@@ -1581,7 +1581,7 @@ public class Generated_contracts_Test {
       public boolean test(Boolean p0) {
         return p0 != null;
       }
-    }).collect(Collectors.toList())).size()), EqualsTestOp.matches((Number) new BigInteger("1"), BigInteger.valueOf(TreePVector.<Boolean>from(TreePVector.<Boolean>singleton(TreePVector.from(Generated_contracts_Test.brotherAges4(Generated_contracts_Test.p1_)).stream().anyMatch(new Predicate<InlineRecordType>() {
+    }).collect(Collectors.toList())).size()), EqualsTestOp.matches(new BigInteger("1"), BigInteger.valueOf(TreePVector.<Boolean>from(TreePVector.<Boolean>singleton(TreePVector.from(Generated_contracts_Test.brotherAges4(Generated_contracts_Test.p1_)).stream().anyMatch(new Predicate<InlineRecordType>() {
       public boolean test(InlineRecordType o) {
         return new Function<ParameterSetWrapper, Boolean>() {
           public Boolean apply(ParameterSetWrapper param) {
@@ -1598,7 +1598,7 @@ public class Generated_contracts_Test {
   }
   @Test
   public void TestAges_item19_2815449023149657755() throws Throwable {
-    Assert.assertTrue("Expected: " + (Number) new BigInteger("1") + ", but was: " + BigInteger.valueOf(TreePVector.<Boolean>from(TreePVector.<Boolean>singleton(TreePVector.from(Generated_contracts_Test.brotherAges4(Generated_contracts_Test.p1_)).stream().anyMatch(new Predicate<InlineRecordType>() {
+    Assert.assertTrue("Expected: " + new BigInteger("1") + ", but was: " + BigInteger.valueOf(TreePVector.<Boolean>from(TreePVector.<Boolean>singleton(TreePVector.from(Generated_contracts_Test.brotherAges4(Generated_contracts_Test.p1_)).stream().anyMatch(new Predicate<InlineRecordType>() {
       public boolean test(InlineRecordType o) {
         return new Function<ParameterSetWrapper, Boolean>() {
           public Boolean apply(ParameterSetWrapper param) {
@@ -1611,7 +1611,7 @@ public class Generated_contracts_Test {
       public boolean test(Boolean p0) {
         return p0 != null;
       }
-    }).collect(Collectors.toList())).size()), EqualsTestOp.matches((Number) new BigInteger("1"), BigInteger.valueOf(TreePVector.<Boolean>from(TreePVector.<Boolean>singleton(TreePVector.from(Generated_contracts_Test.brotherAges4(Generated_contracts_Test.p1_)).stream().anyMatch(new Predicate<InlineRecordType>() {
+    }).collect(Collectors.toList())).size()), EqualsTestOp.matches(new BigInteger("1"), BigInteger.valueOf(TreePVector.<Boolean>from(TreePVector.<Boolean>singleton(TreePVector.from(Generated_contracts_Test.brotherAges4(Generated_contracts_Test.p1_)).stream().anyMatch(new Predicate<InlineRecordType>() {
       public boolean test(InlineRecordType o) {
         return new Function<ParameterSetWrapper, Boolean>() {
           public Boolean apply(ParameterSetWrapper param) {
@@ -1628,14 +1628,14 @@ public class Generated_contracts_Test {
   }
   @Test
   public void TestAges_item20_2815449023152853193() throws Throwable {
-    Assert.assertTrue("Expected: " + (Number) new BigInteger("65") + ", but was: " + (((_FunctionTypes._return_P0_E0<Number>) () -> {
-      Number seed = (Number) new BigInteger("5");
+    Assert.assertTrue("Expected: " + new BigInteger("65") + ", but was: " + (((_FunctionTypes._return_P0_E0<Number>) () -> {
+      Number seed = new BigInteger("5");
       for (InlineRecordType current : ListSequence.fromList(TreePVector.from(Generated_contracts_Test.brotherAges4(Generated_contracts_Test.p1_)))) {
         seed = AH.add(seed, (Number) current.members.get("age").value);
       }
       return seed;
-    }).invoke()), EqualsTestOp.matches((Number) new BigInteger("65"), ((_FunctionTypes._return_P0_E0<Number>) () -> {
-      Number seed = (Number) new BigInteger("5");
+    }).invoke()), EqualsTestOp.matches(new BigInteger("65"), ((_FunctionTypes._return_P0_E0<Number>) () -> {
+      Number seed = new BigInteger("5");
       for (InlineRecordType current : ListSequence.fromList(TreePVector.from(Generated_contracts_Test.brotherAges4(Generated_contracts_Test.p1_)))) {
         seed = AH.add(seed, (Number) current.members.get("age").value);
       }
@@ -1644,7 +1644,7 @@ public class Generated_contracts_Test {
   }
   @Test
   public void TestAges_item21_2815449023156696641() throws Throwable {
-    Assert.assertEquals("Expected: " + TreePVector.<Number>empty().plus((Number) new BigInteger("30")).plus((Number) new BigInteger("30")) + ", but was: " + TreePVector.<Number>from(TreePVector.from(Generated_contracts_Test.brotherAges4(Generated_contracts_Test.p1_)).stream().map(new Function<InlineRecordType, Number>() {
+    Assert.assertEquals("Expected: " + TreePVector.<Number>empty().plus(new BigInteger("30")).plus(new BigInteger("30")) + ", but was: " + TreePVector.<Number>from(TreePVector.from(Generated_contracts_Test.brotherAges4(Generated_contracts_Test.p1_)).stream().map(new Function<InlineRecordType, Number>() {
       public Number apply(InlineRecordType param) {
         return new Function<ParameterSetWrapper, Number>() {
           public Number apply(ParameterSetWrapper param) {
@@ -1653,7 +1653,7 @@ public class Generated_contracts_Test {
           }
         }.apply(new ParameterSetWrapper(param));
       }
-    }).collect(Collectors.<Number>toList())), (Object) TreePVector.<Number>empty().plus((Number) new BigInteger("30")).plus((Number) new BigInteger("30")), (Object) TreePVector.<Number>from(TreePVector.from(Generated_contracts_Test.brotherAges4(Generated_contracts_Test.p1_)).stream().map(new Function<InlineRecordType, Number>() {
+    }).collect(Collectors.<Number>toList())), TreePVector.<Number>empty().plus(new BigInteger("30")).plus(new BigInteger("30")), TreePVector.<Number>from(TreePVector.from(Generated_contracts_Test.brotherAges4(Generated_contracts_Test.p1_)).stream().map(new Function<InlineRecordType, Number>() {
       public Number apply(InlineRecordType param) {
         return new Function<ParameterSetWrapper, Number>() {
           public Number apply(ParameterSetWrapper param) {
@@ -1676,7 +1676,7 @@ public class Generated_contracts_Test {
   }).invoke();
   @Test
   public void TestAges_constant_item0_2815449023161484088() throws Throwable {
-    Assert.assertTrue("Expected: " + (Number) new BigInteger("2") + ", but was: " + BigInteger.valueOf(Generated_contracts_Test.c_.size()), EqualsTestOp.matches((Number) new BigInteger("2"), BigInteger.valueOf(Generated_contracts_Test.c_.size())));
+    Assert.assertTrue("Expected: " + new BigInteger("2") + ", but was: " + BigInteger.valueOf(Generated_contracts_Test.c_.size()), EqualsTestOp.matches(new BigInteger("2"), BigInteger.valueOf(Generated_contracts_Test.c_.size())));
   }
   @Test
   public void TestAges_constant_item1_8267117108450013671() throws Throwable {
@@ -1688,20 +1688,20 @@ public class Generated_contracts_Test {
   }
   @Test
   public void TestAges_constant_item3_8267117108450367493() throws Throwable {
-    Assert.assertTrue("Expected: " + (Number) new BigInteger("1") + ", but was: " + BigInteger.valueOf(HashTreePSet.from(Generated_contracts_Test.c_).size()), EqualsTestOp.matches((Number) new BigInteger("1"), BigInteger.valueOf(HashTreePSet.from(Generated_contracts_Test.c_).size())));
+    Assert.assertTrue("Expected: " + new BigInteger("1") + ", but was: " + BigInteger.valueOf(HashTreePSet.from(Generated_contracts_Test.c_).size()), EqualsTestOp.matches(new BigInteger("1"), BigInteger.valueOf(HashTreePSet.from(Generated_contracts_Test.c_).size())));
   }
   @Test
   public void TestAges_constant_item4_8267117108450548566() throws Throwable {
-    Assert.assertTrue("Expected: " + (Number) new BigInteger("1") + ", but was: " + BigInteger.valueOf(((_FunctionTypes._return_P0_E0<PVector<InlineRecordType>>) () -> {
+    Assert.assertTrue("Expected: " + new BigInteger("1") + ", but was: " + BigInteger.valueOf(((_FunctionTypes._return_P0_E0<PVector<InlineRecordType>>) () -> {
       PVector<InlineRecordType> origList = TreePVector.from(Generated_contracts_Test.c_);
-      int noOfElements = ((Number) new BigInteger("1")).intValue();
+      int noOfElements = new BigInteger("1").intValue();
       if (origList.size() <= noOfElements) {
         return origList;
       }
       return origList.subList(0, noOfElements);
-    }).invoke().size()), EqualsTestOp.matches((Number) new BigInteger("1"), BigInteger.valueOf(((_FunctionTypes._return_P0_E0<PVector<InlineRecordType>>) () -> {
+    }).invoke().size()), EqualsTestOp.matches(new BigInteger("1"), BigInteger.valueOf(((_FunctionTypes._return_P0_E0<PVector<InlineRecordType>>) () -> {
       PVector<InlineRecordType> origList = TreePVector.from(Generated_contracts_Test.c_);
-      int noOfElements = ((Number) new BigInteger("1")).intValue();
+      int noOfElements = new BigInteger("1").intValue();
       if (origList.size() <= noOfElements) {
         return origList;
       }
@@ -1710,16 +1710,16 @@ public class Generated_contracts_Test {
   }
   @Test
   public void TestAges_constant_item5_8267117108450800942() throws Throwable {
-    Assert.assertTrue("Expected: " + (Number) new BigInteger("1") + ", but was: " + BigInteger.valueOf(((_FunctionTypes._return_P0_E0<PVector<InlineRecordType>>) () -> {
+    Assert.assertTrue("Expected: " + new BigInteger("1") + ", but was: " + BigInteger.valueOf(((_FunctionTypes._return_P0_E0<PVector<InlineRecordType>>) () -> {
       PVector<InlineRecordType> origList = TreePVector.from(Generated_contracts_Test.c_);
-      int noOfElements = ((Number) new BigInteger("1")).intValue();
+      int noOfElements = new BigInteger("1").intValue();
       if (origList.size() <= noOfElements) {
         return origList;
       }
       return origList.subList(origList.size() - noOfElements, origList.size());
-    }).invoke().size()), EqualsTestOp.matches((Number) new BigInteger("1"), BigInteger.valueOf(((_FunctionTypes._return_P0_E0<PVector<InlineRecordType>>) () -> {
+    }).invoke().size()), EqualsTestOp.matches(new BigInteger("1"), BigInteger.valueOf(((_FunctionTypes._return_P0_E0<PVector<InlineRecordType>>) () -> {
       PVector<InlineRecordType> origList = TreePVector.from(Generated_contracts_Test.c_);
-      int noOfElements = ((Number) new BigInteger("1")).intValue();
+      int noOfElements = new BigInteger("1").intValue();
       if (origList.size() <= noOfElements) {
         return origList;
       }
@@ -1728,7 +1728,7 @@ public class Generated_contracts_Test {
   }
   @Test
   public void TestAges_constant_item6_8267117108455804085() throws Throwable {
-    Assert.assertTrue("Expected: " + (Number) new BigInteger("1") + ", but was: " + BigInteger.valueOf(TreePVector.<Boolean>from(TreePVector.<Boolean>singleton(TreePVector.from(Generated_contracts_Test.c_).stream().allMatch(new Predicate<InlineRecordType>() {
+    Assert.assertTrue("Expected: " + new BigInteger("1") + ", but was: " + BigInteger.valueOf(TreePVector.<Boolean>from(TreePVector.<Boolean>singleton(TreePVector.from(Generated_contracts_Test.c_).stream().allMatch(new Predicate<InlineRecordType>() {
       public boolean test(InlineRecordType o) {
         return new Function<ParameterSetWrapper, Boolean>() {
           public Boolean apply(ParameterSetWrapper param) {
@@ -1741,7 +1741,7 @@ public class Generated_contracts_Test {
       public boolean test(Boolean p0) {
         return p0 != null;
       }
-    }).collect(Collectors.toList())).size()), EqualsTestOp.matches((Number) new BigInteger("1"), BigInteger.valueOf(TreePVector.<Boolean>from(TreePVector.<Boolean>singleton(TreePVector.from(Generated_contracts_Test.c_).stream().allMatch(new Predicate<InlineRecordType>() {
+    }).collect(Collectors.toList())).size()), EqualsTestOp.matches(new BigInteger("1"), BigInteger.valueOf(TreePVector.<Boolean>from(TreePVector.<Boolean>singleton(TreePVector.from(Generated_contracts_Test.c_).stream().allMatch(new Predicate<InlineRecordType>() {
       public boolean test(InlineRecordType o) {
         return new Function<ParameterSetWrapper, Boolean>() {
           public Boolean apply(ParameterSetWrapper param) {
@@ -1758,7 +1758,7 @@ public class Generated_contracts_Test {
   }
   @Test
   public void TestAges_constant_item7_8267117108456173571() throws Throwable {
-    Assert.assertTrue("Expected: " + (Number) new BigInteger("1") + ", but was: " + BigInteger.valueOf(TreePVector.<Boolean>from(TreePVector.<Boolean>singleton(TreePVector.from(Generated_contracts_Test.c_).stream().allMatch(new Predicate<InlineRecordType>() {
+    Assert.assertTrue("Expected: " + new BigInteger("1") + ", but was: " + BigInteger.valueOf(TreePVector.<Boolean>from(TreePVector.<Boolean>singleton(TreePVector.from(Generated_contracts_Test.c_).stream().allMatch(new Predicate<InlineRecordType>() {
       public boolean test(InlineRecordType o) {
         return new Function<ParameterSetWrapper, Boolean>() {
           public Boolean apply(ParameterSetWrapper param) {
@@ -1771,7 +1771,7 @@ public class Generated_contracts_Test {
       public boolean test(Boolean p0) {
         return p0 != null;
       }
-    }).collect(Collectors.toList())).size()), EqualsTestOp.matches((Number) new BigInteger("1"), BigInteger.valueOf(TreePVector.<Boolean>from(TreePVector.<Boolean>singleton(TreePVector.from(Generated_contracts_Test.c_).stream().allMatch(new Predicate<InlineRecordType>() {
+    }).collect(Collectors.toList())).size()), EqualsTestOp.matches(new BigInteger("1"), BigInteger.valueOf(TreePVector.<Boolean>from(TreePVector.<Boolean>singleton(TreePVector.from(Generated_contracts_Test.c_).stream().allMatch(new Predicate<InlineRecordType>() {
       public boolean test(InlineRecordType o) {
         return new Function<ParameterSetWrapper, Boolean>() {
           public Boolean apply(ParameterSetWrapper param) {
@@ -1788,7 +1788,7 @@ public class Generated_contracts_Test {
   }
   @Test
   public void TestAges_constant_item8_8267117108456174710() throws Throwable {
-    Assert.assertTrue("Expected: " + (Number) new BigInteger("1") + ", but was: " + BigInteger.valueOf(TreePVector.<Boolean>from(TreePVector.<Boolean>singleton(TreePVector.from(Generated_contracts_Test.c_).stream().anyMatch(new Predicate<InlineRecordType>() {
+    Assert.assertTrue("Expected: " + new BigInteger("1") + ", but was: " + BigInteger.valueOf(TreePVector.<Boolean>from(TreePVector.<Boolean>singleton(TreePVector.from(Generated_contracts_Test.c_).stream().anyMatch(new Predicate<InlineRecordType>() {
       public boolean test(InlineRecordType o) {
         return new Function<ParameterSetWrapper, Boolean>() {
           public Boolean apply(ParameterSetWrapper param) {
@@ -1801,7 +1801,7 @@ public class Generated_contracts_Test {
       public boolean test(Boolean p0) {
         return p0 != null;
       }
-    }).collect(Collectors.toList())).size()), EqualsTestOp.matches((Number) new BigInteger("1"), BigInteger.valueOf(TreePVector.<Boolean>from(TreePVector.<Boolean>singleton(TreePVector.from(Generated_contracts_Test.c_).stream().anyMatch(new Predicate<InlineRecordType>() {
+    }).collect(Collectors.toList())).size()), EqualsTestOp.matches(new BigInteger("1"), BigInteger.valueOf(TreePVector.<Boolean>from(TreePVector.<Boolean>singleton(TreePVector.from(Generated_contracts_Test.c_).stream().anyMatch(new Predicate<InlineRecordType>() {
       public boolean test(InlineRecordType o) {
         return new Function<ParameterSetWrapper, Boolean>() {
           public Boolean apply(ParameterSetWrapper param) {
@@ -1818,7 +1818,7 @@ public class Generated_contracts_Test {
   }
   @Test
   public void TestAges_constant_item9_8267117108456175879() throws Throwable {
-    Assert.assertTrue("Expected: " + (Number) new BigInteger("1") + ", but was: " + BigInteger.valueOf(TreePVector.<Boolean>from(TreePVector.<Boolean>singleton(TreePVector.from(Generated_contracts_Test.c_).stream().anyMatch(new Predicate<InlineRecordType>() {
+    Assert.assertTrue("Expected: " + new BigInteger("1") + ", but was: " + BigInteger.valueOf(TreePVector.<Boolean>from(TreePVector.<Boolean>singleton(TreePVector.from(Generated_contracts_Test.c_).stream().anyMatch(new Predicate<InlineRecordType>() {
       public boolean test(InlineRecordType o) {
         return new Function<ParameterSetWrapper, Boolean>() {
           public Boolean apply(ParameterSetWrapper param) {
@@ -1831,7 +1831,7 @@ public class Generated_contracts_Test {
       public boolean test(Boolean p0) {
         return p0 != null;
       }
-    }).collect(Collectors.toList())).size()), EqualsTestOp.matches((Number) new BigInteger("1"), BigInteger.valueOf(TreePVector.<Boolean>from(TreePVector.<Boolean>singleton(TreePVector.from(Generated_contracts_Test.c_).stream().anyMatch(new Predicate<InlineRecordType>() {
+    }).collect(Collectors.toList())).size()), EqualsTestOp.matches(new BigInteger("1"), BigInteger.valueOf(TreePVector.<Boolean>from(TreePVector.<Boolean>singleton(TreePVector.from(Generated_contracts_Test.c_).stream().anyMatch(new Predicate<InlineRecordType>() {
       public boolean test(InlineRecordType o) {
         return new Function<ParameterSetWrapper, Boolean>() {
           public Boolean apply(ParameterSetWrapper param) {
@@ -1848,14 +1848,14 @@ public class Generated_contracts_Test {
   }
   @Test
   public void TestAges_constant_item10_8267117108466345252() throws Throwable {
-    Assert.assertTrue("Expected: " + (Number) new BigInteger("65") + ", but was: " + (((_FunctionTypes._return_P0_E0<Number>) () -> {
-      Number seed = (Number) new BigInteger("5");
+    Assert.assertTrue("Expected: " + new BigInteger("65") + ", but was: " + (((_FunctionTypes._return_P0_E0<Number>) () -> {
+      Number seed = new BigInteger("5");
       for (InlineRecordType current : ListSequence.fromList(TreePVector.from(Generated_contracts_Test.c_))) {
         seed = AH.add(seed, (Number) current.members.get("age").value);
       }
       return seed;
-    }).invoke()), EqualsTestOp.matches((Number) new BigInteger("65"), ((_FunctionTypes._return_P0_E0<Number>) () -> {
-      Number seed = (Number) new BigInteger("5");
+    }).invoke()), EqualsTestOp.matches(new BigInteger("65"), ((_FunctionTypes._return_P0_E0<Number>) () -> {
+      Number seed = new BigInteger("5");
       for (InlineRecordType current : ListSequence.fromList(TreePVector.from(Generated_contracts_Test.c_))) {
         seed = AH.add(seed, (Number) current.members.get("age").value);
       }
@@ -1864,7 +1864,7 @@ public class Generated_contracts_Test {
   }
   @Test
   public void TestAges_constant_item11_8267117108466345290() throws Throwable {
-    Assert.assertEquals("Expected: " + TreePVector.<Number>empty().plus((Number) new BigInteger("30")).plus((Number) new BigInteger("30")) + ", but was: " + TreePVector.<Number>from(TreePVector.from(Generated_contracts_Test.c_).stream().map(new Function<InlineRecordType, Number>() {
+    Assert.assertEquals("Expected: " + TreePVector.<Number>empty().plus(new BigInteger("30")).plus(new BigInteger("30")) + ", but was: " + TreePVector.<Number>from(TreePVector.from(Generated_contracts_Test.c_).stream().map(new Function<InlineRecordType, Number>() {
       public Number apply(InlineRecordType param) {
         return new Function<ParameterSetWrapper, Number>() {
           public Number apply(ParameterSetWrapper param) {
@@ -1873,7 +1873,7 @@ public class Generated_contracts_Test {
           }
         }.apply(new ParameterSetWrapper(param));
       }
-    }).collect(Collectors.<Number>toList())), (Object) TreePVector.<Number>empty().plus((Number) new BigInteger("30")).plus((Number) new BigInteger("30")), (Object) TreePVector.<Number>from(TreePVector.from(Generated_contracts_Test.c_).stream().map(new Function<InlineRecordType, Number>() {
+    }).collect(Collectors.<Number>toList())), TreePVector.<Number>empty().plus(new BigInteger("30")).plus(new BigInteger("30")), TreePVector.<Number>from(TreePVector.from(Generated_contracts_Test.c_).stream().map(new Function<InlineRecordType, Number>() {
       public Number apply(InlineRecordType param) {
         return new Function<ParameterSetWrapper, Number>() {
           public Number apply(ParameterSetWrapper param) {
@@ -1886,7 +1886,7 @@ public class Generated_contracts_Test {
   }
   @Test
   public void TestAges_valexpr_item0_8267117108468197962() throws Throwable {
-    Assert.assertTrue("Expected: " + (Number) new BigInteger("2") + ", but was: " + (((_FunctionTypes._return_P0_E0<BigInteger>) () -> {
+    Assert.assertTrue("Expected: " + new BigInteger("2") + ", but was: " + (((_FunctionTypes._return_P0_E0<BigInteger>) () -> {
       PCollection<InlineRecordType> v = ((_FunctionTypes._return_P0_E0<PVector<InlineRecordType>>) () -> {
         PVector<InlineRecordType> result = TreePVector.empty();
         for (Person it : CollectionSequence.fromCollection(Generated_contracts_Test.p1_.getsiblings())) {
@@ -1898,7 +1898,7 @@ public class Generated_contracts_Test {
         return result;
       }).invoke();
       return BigInteger.valueOf(v.size());
-    }).invoke()), EqualsTestOp.matches((Number) new BigInteger("2"), ((_FunctionTypes._return_P0_E0<BigInteger>) () -> {
+    }).invoke()), EqualsTestOp.matches(new BigInteger("2"), ((_FunctionTypes._return_P0_E0<BigInteger>) () -> {
       PCollection<InlineRecordType> v = ((_FunctionTypes._return_P0_E0<PVector<InlineRecordType>>) () -> {
         PVector<InlineRecordType> result = TreePVector.empty();
         for (Person it : CollectionSequence.fromCollection(Generated_contracts_Test.p1_.getsiblings())) {
@@ -1970,7 +1970,7 @@ public class Generated_contracts_Test {
   }
   @Test
   public void TestAges_valexpr_item3_8267117108469132500() throws Throwable {
-    Assert.assertTrue("Expected: " + (Number) new BigInteger("1") + ", but was: " + (((_FunctionTypes._return_P0_E0<BigInteger>) () -> {
+    Assert.assertTrue("Expected: " + new BigInteger("1") + ", but was: " + (((_FunctionTypes._return_P0_E0<BigInteger>) () -> {
       PCollection<InlineRecordType> v = ((_FunctionTypes._return_P0_E0<PVector<InlineRecordType>>) () -> {
         PVector<InlineRecordType> result = TreePVector.empty();
         for (Person it : CollectionSequence.fromCollection(Generated_contracts_Test.p1_.getsiblings())) {
@@ -1982,7 +1982,7 @@ public class Generated_contracts_Test {
         return result;
       }).invoke();
       return BigInteger.valueOf(HashTreePSet.from(v).size());
-    }).invoke()), EqualsTestOp.matches((Number) new BigInteger("1"), ((_FunctionTypes._return_P0_E0<BigInteger>) () -> {
+    }).invoke()), EqualsTestOp.matches(new BigInteger("1"), ((_FunctionTypes._return_P0_E0<BigInteger>) () -> {
       PCollection<InlineRecordType> v = ((_FunctionTypes._return_P0_E0<PVector<InlineRecordType>>) () -> {
         PVector<InlineRecordType> result = TreePVector.empty();
         for (Person it : CollectionSequence.fromCollection(Generated_contracts_Test.p1_.getsiblings())) {
@@ -1998,7 +1998,7 @@ public class Generated_contracts_Test {
   }
   @Test
   public void TestAges_valexpr_item4_8267117108471053523() throws Throwable {
-    Assert.assertTrue("Expected: " + (Number) new BigInteger("1") + ", but was: " + (((_FunctionTypes._return_P0_E0<BigInteger>) () -> {
+    Assert.assertTrue("Expected: " + new BigInteger("1") + ", but was: " + (((_FunctionTypes._return_P0_E0<BigInteger>) () -> {
       final PCollection<InlineRecordType> v = ((_FunctionTypes._return_P0_E0<PVector<InlineRecordType>>) () -> {
         PVector<InlineRecordType> result = TreePVector.empty();
         for (Person it : CollectionSequence.fromCollection(Generated_contracts_Test.p1_.getsiblings())) {
@@ -2011,13 +2011,13 @@ public class Generated_contracts_Test {
       }).invoke();
       return BigInteger.valueOf(((_FunctionTypes._return_P0_E0<PVector<InlineRecordType>>) () -> {
         PVector<InlineRecordType> origList = TreePVector.from(v);
-        int noOfElements = ((Number) new BigInteger("1")).intValue();
+        int noOfElements = new BigInteger("1").intValue();
         if (origList.size() <= noOfElements) {
           return origList;
         }
         return origList.subList(0, noOfElements);
       }).invoke().size());
-    }).invoke()), EqualsTestOp.matches((Number) new BigInteger("1"), ((_FunctionTypes._return_P0_E0<BigInteger>) () -> {
+    }).invoke()), EqualsTestOp.matches(new BigInteger("1"), ((_FunctionTypes._return_P0_E0<BigInteger>) () -> {
       final PCollection<InlineRecordType> v = ((_FunctionTypes._return_P0_E0<PVector<InlineRecordType>>) () -> {
         PVector<InlineRecordType> result = TreePVector.empty();
         for (Person it : CollectionSequence.fromCollection(Generated_contracts_Test.p1_.getsiblings())) {
@@ -2030,7 +2030,7 @@ public class Generated_contracts_Test {
       }).invoke();
       return BigInteger.valueOf(((_FunctionTypes._return_P0_E0<PVector<InlineRecordType>>) () -> {
         PVector<InlineRecordType> origList = TreePVector.from(v);
-        int noOfElements = ((Number) new BigInteger("1")).intValue();
+        int noOfElements = new BigInteger("1").intValue();
         if (origList.size() <= noOfElements) {
           return origList;
         }
@@ -2040,7 +2040,7 @@ public class Generated_contracts_Test {
   }
   @Test
   public void TestAges_valexpr_item5_8267117108471056149() throws Throwable {
-    Assert.assertTrue("Expected: " + (Number) new BigInteger("1") + ", but was: " + (((_FunctionTypes._return_P0_E0<BigInteger>) () -> {
+    Assert.assertTrue("Expected: " + new BigInteger("1") + ", but was: " + (((_FunctionTypes._return_P0_E0<BigInteger>) () -> {
       final PCollection<InlineRecordType> v = ((_FunctionTypes._return_P0_E0<PVector<InlineRecordType>>) () -> {
         PVector<InlineRecordType> result = TreePVector.empty();
         for (Person it : CollectionSequence.fromCollection(Generated_contracts_Test.p1_.getsiblings())) {
@@ -2053,13 +2053,13 @@ public class Generated_contracts_Test {
       }).invoke();
       return BigInteger.valueOf(((_FunctionTypes._return_P0_E0<PVector<InlineRecordType>>) () -> {
         PVector<InlineRecordType> origList = TreePVector.from(v);
-        int noOfElements = ((Number) new BigInteger("1")).intValue();
+        int noOfElements = new BigInteger("1").intValue();
         if (origList.size() <= noOfElements) {
           return origList;
         }
         return origList.subList(origList.size() - noOfElements, origList.size());
       }).invoke().size());
-    }).invoke()), EqualsTestOp.matches((Number) new BigInteger("1"), ((_FunctionTypes._return_P0_E0<BigInteger>) () -> {
+    }).invoke()), EqualsTestOp.matches(new BigInteger("1"), ((_FunctionTypes._return_P0_E0<BigInteger>) () -> {
       final PCollection<InlineRecordType> v = ((_FunctionTypes._return_P0_E0<PVector<InlineRecordType>>) () -> {
         PVector<InlineRecordType> result = TreePVector.empty();
         for (Person it : CollectionSequence.fromCollection(Generated_contracts_Test.p1_.getsiblings())) {
@@ -2072,7 +2072,7 @@ public class Generated_contracts_Test {
       }).invoke();
       return BigInteger.valueOf(((_FunctionTypes._return_P0_E0<PVector<InlineRecordType>>) () -> {
         PVector<InlineRecordType> origList = TreePVector.from(v);
-        int noOfElements = ((Number) new BigInteger("1")).intValue();
+        int noOfElements = new BigInteger("1").intValue();
         if (origList.size() <= noOfElements) {
           return origList;
         }
@@ -2082,7 +2082,7 @@ public class Generated_contracts_Test {
   }
   @Test
   public void TestAges_valexpr_item6_8267117108471058819() throws Throwable {
-    Assert.assertTrue("Expected: " + (Number) new BigInteger("1") + ", but was: " + (((_FunctionTypes._return_P0_E0<BigInteger>) () -> {
+    Assert.assertTrue("Expected: " + new BigInteger("1") + ", but was: " + (((_FunctionTypes._return_P0_E0<BigInteger>) () -> {
       PCollection<InlineRecordType> v = ((_FunctionTypes._return_P0_E0<PVector<InlineRecordType>>) () -> {
         PVector<InlineRecordType> result = TreePVector.empty();
         for (Person it : CollectionSequence.fromCollection(Generated_contracts_Test.p1_.getsiblings())) {
@@ -2107,7 +2107,7 @@ public class Generated_contracts_Test {
           return p0 != null;
         }
       }).collect(Collectors.toList())).size());
-    }).invoke()), EqualsTestOp.matches((Number) new BigInteger("1"), ((_FunctionTypes._return_P0_E0<BigInteger>) () -> {
+    }).invoke()), EqualsTestOp.matches(new BigInteger("1"), ((_FunctionTypes._return_P0_E0<BigInteger>) () -> {
       PCollection<InlineRecordType> v = ((_FunctionTypes._return_P0_E0<PVector<InlineRecordType>>) () -> {
         PVector<InlineRecordType> result = TreePVector.empty();
         for (Person it : CollectionSequence.fromCollection(Generated_contracts_Test.p1_.getsiblings())) {
@@ -2136,7 +2136,7 @@ public class Generated_contracts_Test {
   }
   @Test
   public void TestAges_valexpr_item7_8267117108472749908() throws Throwable {
-    Assert.assertTrue("Expected: " + (Number) new BigInteger("1") + ", but was: " + (((_FunctionTypes._return_P0_E0<BigInteger>) () -> {
+    Assert.assertTrue("Expected: " + new BigInteger("1") + ", but was: " + (((_FunctionTypes._return_P0_E0<BigInteger>) () -> {
       PCollection<InlineRecordType> v = ((_FunctionTypes._return_P0_E0<PVector<InlineRecordType>>) () -> {
         PVector<InlineRecordType> result = TreePVector.empty();
         for (Person it : CollectionSequence.fromCollection(Generated_contracts_Test.p1_.getsiblings())) {
@@ -2161,7 +2161,7 @@ public class Generated_contracts_Test {
           return p0 != null;
         }
       }).collect(Collectors.toList())).size());
-    }).invoke()), EqualsTestOp.matches((Number) new BigInteger("1"), ((_FunctionTypes._return_P0_E0<BigInteger>) () -> {
+    }).invoke()), EqualsTestOp.matches(new BigInteger("1"), ((_FunctionTypes._return_P0_E0<BigInteger>) () -> {
       PCollection<InlineRecordType> v = ((_FunctionTypes._return_P0_E0<PVector<InlineRecordType>>) () -> {
         PVector<InlineRecordType> result = TreePVector.empty();
         for (Person it : CollectionSequence.fromCollection(Generated_contracts_Test.p1_.getsiblings())) {
@@ -2190,7 +2190,7 @@ public class Generated_contracts_Test {
   }
   @Test
   public void TestAges_valexpr_item8_8267117108472752688() throws Throwable {
-    Assert.assertTrue("Expected: " + (Number) new BigInteger("1") + ", but was: " + (((_FunctionTypes._return_P0_E0<BigInteger>) () -> {
+    Assert.assertTrue("Expected: " + new BigInteger("1") + ", but was: " + (((_FunctionTypes._return_P0_E0<BigInteger>) () -> {
       PCollection<InlineRecordType> v = ((_FunctionTypes._return_P0_E0<PVector<InlineRecordType>>) () -> {
         PVector<InlineRecordType> result = TreePVector.empty();
         for (Person it : CollectionSequence.fromCollection(Generated_contracts_Test.p1_.getsiblings())) {
@@ -2215,7 +2215,7 @@ public class Generated_contracts_Test {
           return p0 != null;
         }
       }).collect(Collectors.toList())).size());
-    }).invoke()), EqualsTestOp.matches((Number) new BigInteger("1"), ((_FunctionTypes._return_P0_E0<BigInteger>) () -> {
+    }).invoke()), EqualsTestOp.matches(new BigInteger("1"), ((_FunctionTypes._return_P0_E0<BigInteger>) () -> {
       PCollection<InlineRecordType> v = ((_FunctionTypes._return_P0_E0<PVector<InlineRecordType>>) () -> {
         PVector<InlineRecordType> result = TreePVector.empty();
         for (Person it : CollectionSequence.fromCollection(Generated_contracts_Test.p1_.getsiblings())) {
@@ -2244,7 +2244,7 @@ public class Generated_contracts_Test {
   }
   @Test
   public void TestAges_valexpr_item9_8267117108472755512() throws Throwable {
-    Assert.assertTrue("Expected: " + (Number) new BigInteger("1") + ", but was: " + (((_FunctionTypes._return_P0_E0<BigInteger>) () -> {
+    Assert.assertTrue("Expected: " + new BigInteger("1") + ", but was: " + (((_FunctionTypes._return_P0_E0<BigInteger>) () -> {
       PCollection<InlineRecordType> v = ((_FunctionTypes._return_P0_E0<PVector<InlineRecordType>>) () -> {
         PVector<InlineRecordType> result = TreePVector.empty();
         for (Person it : CollectionSequence.fromCollection(Generated_contracts_Test.p1_.getsiblings())) {
@@ -2269,7 +2269,7 @@ public class Generated_contracts_Test {
           return p0 != null;
         }
       }).collect(Collectors.toList())).size());
-    }).invoke()), EqualsTestOp.matches((Number) new BigInteger("1"), ((_FunctionTypes._return_P0_E0<BigInteger>) () -> {
+    }).invoke()), EqualsTestOp.matches(new BigInteger("1"), ((_FunctionTypes._return_P0_E0<BigInteger>) () -> {
       PCollection<InlineRecordType> v = ((_FunctionTypes._return_P0_E0<PVector<InlineRecordType>>) () -> {
         PVector<InlineRecordType> result = TreePVector.empty();
         for (Person it : CollectionSequence.fromCollection(Generated_contracts_Test.p1_.getsiblings())) {
@@ -2298,7 +2298,7 @@ public class Generated_contracts_Test {
   }
   @Test
   public void TestAges_valexpr_item10_8267117108473983910() throws Throwable {
-    Assert.assertTrue("Expected: " + (Number) new BigInteger("65") + ", but was: " + (((_FunctionTypes._return_P0_E0<Number>) () -> {
+    Assert.assertTrue("Expected: " + new BigInteger("65") + ", but was: " + (((_FunctionTypes._return_P0_E0<Number>) () -> {
       final PCollection<InlineRecordType> v = ((_FunctionTypes._return_P0_E0<PVector<InlineRecordType>>) () -> {
         PVector<InlineRecordType> result = TreePVector.empty();
         for (Person it : CollectionSequence.fromCollection(Generated_contracts_Test.p1_.getsiblings())) {
@@ -2310,13 +2310,13 @@ public class Generated_contracts_Test {
         return result;
       }).invoke();
       return ((_FunctionTypes._return_P0_E0<Number>) () -> {
-        Number seed = (Number) new BigInteger("5");
+        Number seed = new BigInteger("5");
         for (InlineRecordType current : ListSequence.fromList(TreePVector.from(v))) {
           seed = AH.add(seed, (Number) current.members.get("age").value);
         }
         return seed;
       }).invoke();
-    }).invoke()), EqualsTestOp.matches((Number) new BigInteger("65"), ((_FunctionTypes._return_P0_E0<Number>) () -> {
+    }).invoke()), EqualsTestOp.matches(new BigInteger("65"), ((_FunctionTypes._return_P0_E0<Number>) () -> {
       final PCollection<InlineRecordType> v = ((_FunctionTypes._return_P0_E0<PVector<InlineRecordType>>) () -> {
         PVector<InlineRecordType> result = TreePVector.empty();
         for (Person it : CollectionSequence.fromCollection(Generated_contracts_Test.p1_.getsiblings())) {
@@ -2328,7 +2328,7 @@ public class Generated_contracts_Test {
         return result;
       }).invoke();
       return ((_FunctionTypes._return_P0_E0<Number>) () -> {
-        Number seed = (Number) new BigInteger("5");
+        Number seed = new BigInteger("5");
         for (InlineRecordType current : ListSequence.fromList(TreePVector.from(v))) {
           seed = AH.add(seed, (Number) current.members.get("age").value);
         }
@@ -2338,7 +2338,7 @@ public class Generated_contracts_Test {
   }
   @Test
   public void TestAges_valexpr_item11_8267117108473989267() throws Throwable {
-    Assert.assertEquals("Expected: " + TreePVector.<Number>empty().plus((Number) new BigInteger("30")).plus((Number) new BigInteger("30")) + ", but was: " + (((_FunctionTypes._return_P0_E0<TreePVector<Number>>) () -> {
+    Assert.assertEquals("Expected: " + TreePVector.<Number>empty().plus(new BigInteger("30")).plus(new BigInteger("30")) + ", but was: " + (((_FunctionTypes._return_P0_E0<TreePVector<Number>>) () -> {
       PCollection<InlineRecordType> v = ((_FunctionTypes._return_P0_E0<PVector<InlineRecordType>>) () -> {
         PVector<InlineRecordType> result = TreePVector.empty();
         for (Person it : CollectionSequence.fromCollection(Generated_contracts_Test.p1_.getsiblings())) {
@@ -2359,7 +2359,7 @@ public class Generated_contracts_Test {
           }.apply(new ParameterSetWrapper(param));
         }
       }).collect(Collectors.<Number>toList()));
-    }).invoke()), (Object) TreePVector.<Number>empty().plus((Number) new BigInteger("30")).plus((Number) new BigInteger("30")), (Object) ((_FunctionTypes._return_P0_E0<TreePVector<Number>>) () -> {
+    }).invoke()), TreePVector.<Number>empty().plus(new BigInteger("30")).plus(new BigInteger("30")), (Object) ((_FunctionTypes._return_P0_E0<TreePVector<Number>>) () -> {
       PCollection<InlineRecordType> v = ((_FunctionTypes._return_P0_E0<PVector<InlineRecordType>>) () -> {
         PVector<InlineRecordType> result = TreePVector.empty();
         for (Person it : CollectionSequence.fromCollection(Generated_contracts_Test.p1_.getsiblings())) {
@@ -2384,7 +2384,7 @@ public class Generated_contracts_Test {
   }
   @Test
   public void TestAges_valexpr_item12_85313633079609917() throws Throwable {
-    Assert.assertEquals("Expected: " + TreePVector.<Number>empty().plus((Number) new BigInteger("30")).plus((Number) new BigInteger("30")) + ", but was: " + (((_FunctionTypes._return_P0_E0<TreePVector<Number>>) () -> {
+    Assert.assertEquals("Expected: " + TreePVector.<Number>empty().plus(new BigInteger("30")).plus(new BigInteger("30")) + ", but was: " + (((_FunctionTypes._return_P0_E0<TreePVector<Number>>) () -> {
       PCollection<InlineRecordType> v = ((_FunctionTypes._return_P0_E0<PVector<InlineRecordType>>) () -> {
         PVector<InlineRecordType> result = TreePVector.empty();
         for (Person it : CollectionSequence.fromCollection(Generated_contracts_Test.p1_.getsiblings())) {
@@ -2405,7 +2405,7 @@ public class Generated_contracts_Test {
           }.apply(new ParameterSetWrapper(param));
         }
       }).collect(Collectors.<Number>toList()));
-    }).invoke()), (Object) TreePVector.<Number>empty().plus((Number) new BigInteger("30")).plus((Number) new BigInteger("30")), (Object) ((_FunctionTypes._return_P0_E0<TreePVector<Number>>) () -> {
+    }).invoke()), TreePVector.<Number>empty().plus(new BigInteger("30")).plus(new BigInteger("30")), (Object) ((_FunctionTypes._return_P0_E0<TreePVector<Number>>) () -> {
       PCollection<InlineRecordType> v = ((_FunctionTypes._return_P0_E0<PVector<InlineRecordType>>) () -> {
         PVector<InlineRecordType> result = TreePVector.empty();
         for (Person it : CollectionSequence.fromCollection(Generated_contracts_Test.p1_.getsiblings())) {

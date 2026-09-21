@@ -17,42 +17,42 @@ public class Generated_utils_dectab_ranges_Test {
 
   public static Number decideRanges(final Number aLongName, final Number a_yet_LongerName) {
     Number res = ((_FunctionTypes._return_P0_E0<Number>) () -> {
-      if (!(AH.isLess(aLongName, (Number) new BigInteger("0")))) {
-        if (AH.isEqual(a_yet_LongerName, (Number) new BigInteger("3"))) {
+      if (!(AH.isLess(aLongName, new BigInteger("0")))) {
+        if (AH.isEqual(a_yet_LongerName, new BigInteger("3"))) {
           return (Number) new BigInteger("1");
-        } else if (AH.isEqual(a_yet_LongerName, ((BigInteger) (Number) new BigInteger("1")).negate())) {
+        } else if (AH.isEqual(a_yet_LongerName, new BigInteger("1").negate())) {
           return (Number) new BigInteger("4");
-        } else if (AH.isEqual(a_yet_LongerName, (Number) new BigInteger("5"))) {
+        } else if (AH.isEqual(a_yet_LongerName, new BigInteger("5"))) {
           return (Number) new BigInteger("7");
         } else {
           throw new AlternativesException("The proposed alternative does not exist.");
         }
-      } else if (AH.isEqual(aLongName, ((BigInteger) (Number) new BigInteger("1")).negate())) {
-        if (AH.isEqual(a_yet_LongerName, (Number) new BigInteger("3"))) {
+      } else if (AH.isEqual(aLongName, new BigInteger("1").negate())) {
+        if (AH.isEqual(a_yet_LongerName, new BigInteger("3"))) {
           return (Number) new BigInteger("2");
-        } else if (AH.isEqual(a_yet_LongerName, ((BigInteger) (Number) new BigInteger("1")).negate())) {
+        } else if (AH.isEqual(a_yet_LongerName, new BigInteger("1").negate())) {
           return (Number) new BigInteger("5");
-        } else if (AH.isEqual(a_yet_LongerName, (Number) new BigInteger("5"))) {
+        } else if (AH.isEqual(a_yet_LongerName, new BigInteger("5"))) {
           return (Number) new BigInteger("8");
         } else {
           throw new AlternativesException("The proposed alternative does not exist.");
         }
-      } else if (AH.isEqual(aLongName, (Number) new BigInteger("-2"))) {
-        if (AH.isEqual(a_yet_LongerName, (Number) new BigInteger("3"))) {
+      } else if (AH.isEqual(aLongName, new BigInteger("-2"))) {
+        if (AH.isEqual(a_yet_LongerName, new BigInteger("3"))) {
           return (Number) new BigInteger("2");
-        } else if (AH.isEqual(a_yet_LongerName, ((BigInteger) (Number) new BigInteger("1")).negate())) {
+        } else if (AH.isEqual(a_yet_LongerName, new BigInteger("1").negate())) {
           return (Number) new BigInteger("5");
-        } else if (AH.isEqual(a_yet_LongerName, (Number) new BigInteger("5"))) {
+        } else if (AH.isEqual(a_yet_LongerName, new BigInteger("5"))) {
           return (Number) new BigInteger("8");
         } else {
           throw new AlternativesException("The proposed alternative does not exist.");
         }
-      } else if (AH.isEqual(aLongName, ((BigInteger) (Number) new BigInteger("3")).negate())) {
-        if (AH.isEqual(a_yet_LongerName, (Number) new BigInteger("3"))) {
+      } else if (AH.isEqual(aLongName, new BigInteger("3").negate())) {
+        if (AH.isEqual(a_yet_LongerName, new BigInteger("3"))) {
           return (Number) new BigInteger("3");
-        } else if (AH.isEqual(a_yet_LongerName, ((BigInteger) (Number) new BigInteger("1")).negate())) {
+        } else if (AH.isEqual(a_yet_LongerName, new BigInteger("1").negate())) {
           return (Number) new BigInteger("6");
-        } else if (AH.isEqual(a_yet_LongerName, (Number) new BigInteger("5"))) {
+        } else if (AH.isEqual(a_yet_LongerName, new BigInteger("5"))) {
           return (Number) new BigInteger("9");
         } else {
           throw new AlternativesException("The proposed alternative does not exist.");
@@ -66,15 +66,15 @@ public class Generated_utils_dectab_ranges_Test {
   }
   @Test
   public void AssertPredef_item0_93572354141657378() throws Throwable {
-    Assert.assertTrue("Expected: " + (Number) new BigInteger("1") + ", but was: " + Generated_utils_dectab_ranges_Test.decideRanges((Number) new BigInteger("0"), (Number) new BigInteger("3")), EqualsTestOp.matches((Number) new BigInteger("1"), Generated_utils_dectab_ranges_Test.decideRanges((Number) new BigInteger("0"), (Number) new BigInteger("3"))));
+    Assert.assertTrue("Expected: " + new BigInteger("1") + ", but was: " + Generated_utils_dectab_ranges_Test.decideRanges(new BigInteger("0"), new BigInteger("3")), EqualsTestOp.matches(new BigInteger("1"), Generated_utils_dectab_ranges_Test.decideRanges(new BigInteger("0"), new BigInteger("3"))));
   }
   @Test
   public void AssertPredef_item1_93572354141657384() throws Throwable {
-    Assert.assertTrue("Expected: " + (Number) new BigInteger("5") + ", but was: " + Generated_utils_dectab_ranges_Test.decideRanges((Number) new BigInteger("-2"), ((BigInteger) (Number) new BigInteger("1")).negate()), EqualsTestOp.matches((Number) new BigInteger("5"), Generated_utils_dectab_ranges_Test.decideRanges((Number) new BigInteger("-2"), ((BigInteger) (Number) new BigInteger("1")).negate())));
+    Assert.assertTrue("Expected: " + new BigInteger("5") + ", but was: " + Generated_utils_dectab_ranges_Test.decideRanges(new BigInteger("-2"), new BigInteger("1").negate()), EqualsTestOp.matches(new BigInteger("5"), Generated_utils_dectab_ranges_Test.decideRanges(new BigInteger("-2"), new BigInteger("1").negate())));
   }
   @Test
   public void AssertPredef_item2_93572354141657390() throws Throwable {
-    Assert.assertTrue("Expected: " + (Number) new BigInteger("7") + ", but was: " + Generated_utils_dectab_ranges_Test.decideRanges((Number) new BigInteger("0"), (Number) new BigInteger("5")), EqualsTestOp.matches((Number) new BigInteger("7"), Generated_utils_dectab_ranges_Test.decideRanges((Number) new BigInteger("0"), (Number) new BigInteger("5"))));
+    Assert.assertTrue("Expected: " + new BigInteger("7") + ", but was: " + Generated_utils_dectab_ranges_Test.decideRanges(new BigInteger("0"), new BigInteger("5")), EqualsTestOp.matches(new BigInteger("7"), Generated_utils_dectab_ranges_Test.decideRanges(new BigInteger("0"), new BigInteger("5"))));
   }
 
 

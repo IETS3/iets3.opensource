@@ -11,7 +11,6 @@ import org.iets3.core.expr.simpleTypes.runtime.AH;
 import java.math.BigInteger;
 import java.util.stream.Collectors;
 import jetbrains.mps.baseLanguage.closures.runtime._FunctionTypes;
-import org.pcollections.PCollection;
 import org.iets3.core.expr.simpleTypes.runtime.OH;
 import java.util.Comparator;
 import org.pcollections.Empty;
@@ -30,24 +29,24 @@ public class Generated_functionType_Test {
         return new Function<ParameterSetWrapper, Boolean>() {
           public Boolean apply(ParameterSetWrapper param) {
             Number it = (Number) param.parameters.get(0);
-            return AH.isGreater(it, (Number) new BigInteger("0"));
+            return AH.isGreater(it, new BigInteger("0"));
           }
         }.apply(new ParameterSetWrapper(o));
       }
     }).collect(Collectors.<Number>toList()));
-    PVector<Number> res = (AH.isGreater((Number) new BigInteger("2"), (Number) new BigInteger("1")) ? a : myList);
+    PVector<Number> res = (AH.isGreater(new BigInteger("2"), new BigInteger("1")) ? a : myList);
 
     return res;
   }
   public static PVector<Number> test_1(final PVector<Number> myList) {
     PVector<Number> res = ((_FunctionTypes._return_P0_E0<PVector<Number>>) () -> {
-      if (AH.isGreater((Number) new BigInteger("2"), (Number) new BigInteger("1"))) {
+      if (AH.isGreater(new BigInteger("2"), new BigInteger("1"))) {
         return TreePVector.<Number>from(myList.stream().filter(new Predicate<Number>() {
           public boolean test(Number o) {
             return new Function<ParameterSetWrapper, Boolean>() {
               public Boolean apply(ParameterSetWrapper param) {
                 Number it = (Number) param.parameters.get(0);
-                return AH.isGreater(it, (Number) new BigInteger("0"));
+                return AH.isGreater(it, new BigInteger("0"));
               }
             }.apply(new ParameterSetWrapper(o));
           }
@@ -60,12 +59,12 @@ public class Generated_functionType_Test {
     return res;
   }
   public static PVector<Number> test_2(PVector<Number> myList) {
-    PVector<Number> res = (AH.isGreater((Number) new BigInteger("2"), (Number) new BigInteger("1")) ? TreePVector.<Number>from(myList.stream().filter(new Predicate<Number>() {
+    PVector<Number> res = (AH.isGreater(new BigInteger("2"), new BigInteger("1")) ? TreePVector.<Number>from(myList.stream().filter(new Predicate<Number>() {
       public boolean test(Number o) {
         return new Function<ParameterSetWrapper, Boolean>() {
           public Boolean apply(ParameterSetWrapper param) {
             Number it = (Number) param.parameters.get(0);
-            return AH.isGreater(it, (Number) new BigInteger("0"));
+            return AH.isGreater(it, new BigInteger("0"));
           }
         }.apply(new ParameterSetWrapper(o));
       }
@@ -74,7 +73,7 @@ public class Generated_functionType_Test {
         return new Function<ParameterSetWrapper, Boolean>() {
           public Boolean apply(ParameterSetWrapper param) {
             Number it = (Number) param.parameters.get(0);
-            return AH.isLess(it, (Number) new BigInteger("0"));
+            return AH.isLess(it, new BigInteger("0"));
           }
         }.apply(new ParameterSetWrapper(o));
       }
@@ -83,17 +82,17 @@ public class Generated_functionType_Test {
     return res;
   }
   public static PVector<Number> test_3(PVector<Number> myList) {
-    PVector<Number> res = (AH.isGreater((Number) new BigInteger("2"), (Number) new BigInteger("1")) ? myList : myList);
+    PVector<Number> res = (AH.isGreater(new BigInteger("2"), new BigInteger("1")) ? myList : myList);
 
     return res;
   }
   public static PVector<Number> test_4(PVector<Number> myList) {
-    PVector<Number> res = (AH.isGreater((Number) new BigInteger("2"), (Number) new BigInteger("1")) ? TreePVector.<Number>from(myList.stream().filter(new Predicate<Number>() {
+    PVector<Number> res = (AH.isGreater(new BigInteger("2"), new BigInteger("1")) ? TreePVector.<Number>from(myList.stream().filter(new Predicate<Number>() {
       public boolean test(Number o) {
         return new Function<ParameterSetWrapper, Boolean>() {
           public Boolean apply(ParameterSetWrapper param) {
             Number it = (Number) param.parameters.get(0);
-            return AH.isGreater(it, (Number) new BigInteger("0"));
+            return AH.isGreater(it, new BigInteger("0"));
           }
         }.apply(new ParameterSetWrapper(o));
       }
@@ -103,13 +102,13 @@ public class Generated_functionType_Test {
   }
   public static PVector<Number> test_a_4(final PVector<Number> myList) {
     PVector<Number> res = ((_FunctionTypes._return_P0_E0<PVector<Number>>) () -> {
-      if (AH.isGreater((Number) new BigInteger("2"), (Number) new BigInteger("1"))) {
+      if (AH.isGreater(new BigInteger("2"), new BigInteger("1"))) {
         return TreePVector.<Number>from(myList.stream().filter(new Predicate<Number>() {
           public boolean test(Number o) {
             return new Function<ParameterSetWrapper, Boolean>() {
               public Boolean apply(ParameterSetWrapper param) {
                 Number it = (Number) param.parameters.get(0);
-                return AH.isGreater(it, (Number) new BigInteger("0"));
+                return AH.isGreater(it, new BigInteger("0"));
               }
             }.apply(new ParameterSetWrapper(o));
           }
@@ -124,13 +123,13 @@ public class Generated_functionType_Test {
   public static PVector<Number> test_b_4(final PVector<Number> myList) {
     final PVector<Number> b = myList;
     PVector<Number> res = ((_FunctionTypes._return_P0_E0<PVector<Number>>) () -> {
-      if (AH.isGreater((Number) new BigInteger("2"), (Number) new BigInteger("1"))) {
+      if (AH.isGreater(new BigInteger("2"), new BigInteger("1"))) {
         return TreePVector.<Number>from(myList.stream().filter(new Predicate<Number>() {
           public boolean test(Number o) {
             return new Function<ParameterSetWrapper, Boolean>() {
               public Boolean apply(ParameterSetWrapper param) {
                 Number it = (Number) param.parameters.get(0);
-                return AH.isGreater(it, (Number) new BigInteger("0"));
+                return AH.isGreater(it, new BigInteger("0"));
               }
             }.apply(new ParameterSetWrapper(o));
           }
@@ -149,32 +148,32 @@ public class Generated_functionType_Test {
         return new Function<ParameterSetWrapper, Boolean>() {
           public Boolean apply(ParameterSetWrapper param) {
             Number it = (Number) param.parameters.get(0);
-            return AH.isGreater(it, (Number) new BigInteger("0"));
+            return AH.isGreater(it, new BigInteger("0"));
           }
         }.apply(new ParameterSetWrapper(o));
       }
     }).collect(Collectors.<Number>toList()));
-    PVector<Number> res = (AH.isGreater((Number) new BigInteger("2"), (Number) new BigInteger("1")) ? c : b);
+    PVector<Number> res = (AH.isGreater(new BigInteger("2"), new BigInteger("1")) ? c : b);
 
     return res;
   }
   public static PVector<Number> test_sort_4(PVector<Number> myList) {
     PVector<Number> b = myList;
-    PVector<Number> c = TreePVector.<Number>from(((PVector<Number>) TreePVector.<Number>from(((PCollection<Number>) myList).stream().filter(OH.predicate()).sorted(new Comparator<Number>() {
+    PVector<Number> c = TreePVector.<Number>from(TreePVector.<Number>from(myList.stream().filter(OH.predicate()).sorted(new Comparator<Number>() {
       public int compare(Number p0, Number p1) {
         return OH.compare(p0, p1);
       }
-    }).collect(Collectors.<Number>toList()))).stream().filter(new Predicate<Number>() {
+    }).collect(Collectors.<Number>toList())).stream().filter(new Predicate<Number>() {
       public boolean test(Number o) {
         return new Function<ParameterSetWrapper, Boolean>() {
           public Boolean apply(ParameterSetWrapper param) {
             Number it = (Number) param.parameters.get(0);
-            return AH.isGreater(it, (Number) new BigInteger("0"));
+            return AH.isGreater(it, new BigInteger("0"));
           }
         }.apply(new ParameterSetWrapper(o));
       }
     }).collect(Collectors.<Number>toList()));
-    PVector<Number> res = (AH.isGreater((Number) new BigInteger("2"), (Number) new BigInteger("1")) ? c : b);
+    PVector<Number> res = (AH.isGreater(new BigInteger("2"), new BigInteger("1")) ? c : b);
 
     return res;
   }
@@ -182,7 +181,7 @@ public class Generated_functionType_Test {
     PVector<Number> b = myList;
     PVector<Number> c = TreePVector.<Number>from(((_FunctionTypes._return_P0_E0<PVector<Number>>) () -> {
       PVector<Number> origList = myList;
-      int noOfElements = ((Number) new BigInteger("4")).intValue();
+      int noOfElements = new BigInteger("4").intValue();
       if (origList.size() <= noOfElements) {
         return origList;
       }
@@ -192,12 +191,12 @@ public class Generated_functionType_Test {
         return new Function<ParameterSetWrapper, Boolean>() {
           public Boolean apply(ParameterSetWrapper param) {
             Number it = (Number) param.parameters.get(0);
-            return AH.isGreater(it, (Number) new BigInteger("0"));
+            return AH.isGreater(it, new BigInteger("0"));
           }
         }.apply(new ParameterSetWrapper(o));
       }
     }).collect(Collectors.<Number>toList()));
-    PVector<Number> res = (AH.isGreater((Number) new BigInteger("2"), (Number) new BigInteger("1")) ? c : b);
+    PVector<Number> res = (AH.isGreater(new BigInteger("2"), new BigInteger("1")) ? c : b);
 
     return res;
   }
@@ -205,7 +204,7 @@ public class Generated_functionType_Test {
     PVector<Number> b = myList;
     PVector<Number> c = TreePVector.<Number>from(((_FunctionTypes._return_P0_E0<PVector<Number>>) () -> {
       PVector<Number> origList = myList;
-      int noOfElements = ((Number) new BigInteger("4")).intValue();
+      int noOfElements = new BigInteger("4").intValue();
       if (origList.size() <= noOfElements) {
         return origList;
       }
@@ -215,12 +214,12 @@ public class Generated_functionType_Test {
         return new Function<ParameterSetWrapper, Boolean>() {
           public Boolean apply(ParameterSetWrapper param) {
             Number it = (Number) param.parameters.get(0);
-            return AH.isGreater(it, (Number) new BigInteger("0"));
+            return AH.isGreater(it, new BigInteger("0"));
           }
         }.apply(new ParameterSetWrapper(o));
       }
     }).collect(Collectors.<Number>toList()));
-    PVector<Number> res = (AH.isGreater((Number) new BigInteger("2"), (Number) new BigInteger("1")) ? c : b);
+    PVector<Number> res = (AH.isGreater(new BigInteger("2"), new BigInteger("1")) ? c : b);
 
     return res;
   }
@@ -240,12 +239,12 @@ public class Generated_functionType_Test {
         return new Function<ParameterSetWrapper, Boolean>() {
           public Boolean apply(ParameterSetWrapper param) {
             Number it = (Number) param.parameters.get(0);
-            return AH.isGreater(it, (Number) new BigInteger("0"));
+            return AH.isGreater(it, new BigInteger("0"));
           }
         }.apply(new ParameterSetWrapper(o));
       }
     }).collect(Collectors.<Number>toList()));
-    PVector<Number> res = (AH.isGreater((Number) new BigInteger("2"), (Number) new BigInteger("1")) ? c : b);
+    PVector<Number> res = (AH.isGreater(new BigInteger("2"), new BigInteger("1")) ? c : b);
 
     return res;
   }
@@ -262,12 +261,12 @@ public class Generated_functionType_Test {
         return new Function<ParameterSetWrapper, Boolean>() {
           public Boolean apply(ParameterSetWrapper param) {
             Number it = (Number) param.parameters.get(0);
-            return AH.isGreater(it, (Number) new BigInteger("0"));
+            return AH.isGreater(it, new BigInteger("0"));
           }
         }.apply(new ParameterSetWrapper(o));
       }
     }).collect(Collectors.<Number>toList()));
-    PVector<Number> res = (AH.isGreater((Number) new BigInteger("2"), (Number) new BigInteger("1")) ? c : b);
+    PVector<Number> res = (AH.isGreater(new BigInteger("2"), new BigInteger("1")) ? c : b);
 
     return res;
   }
@@ -277,35 +276,35 @@ public class Generated_functionType_Test {
       if (myList.size() <= 1) {
         return TreePVector.<Number>empty();
       } else {
-        return ((PVector<Number>) myList).subList(1, myList.size());
+        return myList.subList(1, myList.size());
       }
     }).invoke().stream().filter(new Predicate<Number>() {
       public boolean test(Number o) {
         return new Function<ParameterSetWrapper, Boolean>() {
           public Boolean apply(ParameterSetWrapper param) {
             Number it = (Number) param.parameters.get(0);
-            return AH.isGreater(it, (Number) new BigInteger("0"));
+            return AH.isGreater(it, new BigInteger("0"));
           }
         }.apply(new ParameterSetWrapper(o));
       }
     }).collect(Collectors.<Number>toList()));
-    PVector<Number> res = (AH.isGreater((Number) new BigInteger("2"), (Number) new BigInteger("1")) ? c : b);
+    PVector<Number> res = (AH.isGreater(new BigInteger("2"), new BigInteger("1")) ? c : b);
 
     return res;
   }
   public static PVector<Number> test_with100_4(PVector<Number> myList) {
     PVector<Number> b = myList;
-    PVector<Number> c = TreePVector.<Number>from(myList.plus((Number) new BigInteger("100")).stream().filter(new Predicate<Number>() {
+    PVector<Number> c = TreePVector.<Number>from(myList.plus(new BigInteger("100")).stream().filter(new Predicate<Number>() {
       public boolean test(Number o) {
         return new Function<ParameterSetWrapper, Boolean>() {
           public Boolean apply(ParameterSetWrapper param) {
             Number it = (Number) param.parameters.get(0);
-            return AH.isGreater(it, (Number) new BigInteger("0"));
+            return AH.isGreater(it, new BigInteger("0"));
           }
         }.apply(new ParameterSetWrapper(o));
       }
     }).collect(Collectors.<Number>toList()));
-    PVector<Number> res = (AH.isGreater((Number) new BigInteger("2"), (Number) new BigInteger("1")) ? c : b);
+    PVector<Number> res = (AH.isGreater(new BigInteger("2"), new BigInteger("1")) ? c : b);
 
     return res;
   }
@@ -316,42 +315,42 @@ public class Generated_functionType_Test {
         return new Function<ParameterSetWrapper, Boolean>() {
           public Boolean apply(ParameterSetWrapper param) {
             Number it = (Number) param.parameters.get(0);
-            return AH.isGreater(it, (Number) new BigInteger("0"));
+            return AH.isGreater(it, new BigInteger("0"));
           }
         }.apply(new ParameterSetWrapper(o));
       }
     }).collect(Collectors.<Number>toList()));
-    PVector<Number> res = (AH.isGreater((Number) new BigInteger("2"), (Number) new BigInteger("1")) ? c : b);
+    PVector<Number> res = (AH.isGreater(new BigInteger("2"), new BigInteger("1")) ? c : b);
 
     return res;
   }
   public static PVector<Number> test_listFlatteningByAlt(PVector<PVector<Number>> myListOfList) {
-    PVector<Number> res = (AH.isGreater(BigInteger.valueOf(myListOfList.size()), (Number) new BigInteger("1")) ? ((PVector<Number>) myListOfList.get(((Number) new BigInteger("0")).intValue())).plusAll((PVector<Number>) myListOfList.get(((Number) new BigInteger("1")).intValue())) : (PVector<Number>) myListOfList.get(((Number) new BigInteger("0")).intValue()));
+    PVector<Number> res = (AH.isGreater(BigInteger.valueOf(myListOfList.size()), new BigInteger("1")) ? ((PVector<Number>) myListOfList.get(new BigInteger("0").intValue())).plusAll((PVector<Number>) myListOfList.get(new BigInteger("1").intValue())) : (PVector<Number>) myListOfList.get(new BigInteger("0").intValue()));
 
     return res;
   }
   public static PVector<Number> test_listFlatteningByIf(PVector<PVector<Number>> myListOfList) {
-    PVector<Number> res = (AH.isGreater(BigInteger.valueOf(myListOfList.size()), (Number) new BigInteger("1")) ? ((PVector<Number>) myListOfList.get(((Number) new BigInteger("0")).intValue())).plusAll((PVector<Number>) myListOfList.get(((Number) new BigInteger("1")).intValue())) : (PVector<Number>) myListOfList.get(((Number) new BigInteger("0")).intValue()));
+    PVector<Number> res = (AH.isGreater(BigInteger.valueOf(myListOfList.size()), new BigInteger("1")) ? ((PVector<Number>) myListOfList.get(new BigInteger("0").intValue())).plusAll((PVector<Number>) myListOfList.get(new BigInteger("1").intValue())) : (PVector<Number>) myListOfList.get(new BigInteger("0").intValue()));
 
     return res;
   }
   public static Number test_listChoiceByAlt(PVector<Number> myListOfList) {
-    Number res = (AH.isGreater(BigInteger.valueOf(myListOfList.size()), (Number) new BigInteger("1")) ? (Number) myListOfList.get(((Number) new BigInteger("1")).intValue()) : (Number) myListOfList.get(((Number) new BigInteger("0")).intValue()));
+    Number res = (AH.isGreater(BigInteger.valueOf(myListOfList.size()), new BigInteger("1")) ? (Number) myListOfList.get(new BigInteger("1").intValue()) : (Number) myListOfList.get(new BigInteger("0").intValue()));
 
     return res;
   }
   public static Number test_listChoiceByIf(PVector<Number> myListOfList) {
-    Number res = (AH.isGreater(BigInteger.valueOf(myListOfList.size()), (Number) new BigInteger("1")) ? (Number) myListOfList.get(((Number) new BigInteger("1")).intValue()) : (Number) myListOfList.get(((Number) new BigInteger("0")).intValue()));
+    Number res = (AH.isGreater(BigInteger.valueOf(myListOfList.size()), new BigInteger("1")) ? (Number) myListOfList.get(new BigInteger("1").intValue()) : (Number) myListOfList.get(new BigInteger("0").intValue()));
 
     return res;
   }
   public static PVector<Number> test_5(PVector<Number> myList) {
-    PVector<Number> res = (AH.isGreater((Number) new BigInteger("2"), (Number) new BigInteger("1")) ? TreePVector.from(myList) : TreePVector.<Number>from(myList.stream().filter(new Predicate<Number>() {
+    PVector<Number> res = (AH.isGreater(new BigInteger("2"), new BigInteger("1")) ? TreePVector.from(myList) : TreePVector.<Number>from(myList.stream().filter(new Predicate<Number>() {
       public boolean test(Number o) {
         return new Function<ParameterSetWrapper, Boolean>() {
           public Boolean apply(ParameterSetWrapper param) {
             Number it = (Number) param.parameters.get(0);
-            return AH.isLess(it, (Number) new BigInteger("0"));
+            return AH.isLess(it, new BigInteger("0"));
           }
         }.apply(new ParameterSetWrapper(o));
       }
@@ -361,7 +360,7 @@ public class Generated_functionType_Test {
   }
   public static PVector<Number> test_a_5(final PVector<Number> myList) {
     PVector<Number> res = ((_FunctionTypes._return_P0_E0<PVector<Number>>) () -> {
-      if (AH.isGreater((Number) new BigInteger("2"), (Number) new BigInteger("1"))) {
+      if (AH.isGreater(new BigInteger("2"), new BigInteger("1"))) {
         return myList;
       } else {
         return TreePVector.<Number>from(myList.stream().filter(new Predicate<Number>() {
@@ -369,7 +368,7 @@ public class Generated_functionType_Test {
             return new Function<ParameterSetWrapper, Boolean>() {
               public Boolean apply(ParameterSetWrapper param) {
                 Number it = (Number) param.parameters.get(0);
-                return AH.isLess(it, (Number) new BigInteger("0"));
+                return AH.isLess(it, new BigInteger("0"));
               }
             }.apply(new ParameterSetWrapper(o));
           }
@@ -381,91 +380,91 @@ public class Generated_functionType_Test {
   }
   @Test
   public void checkAllFunctionsCanBeExecuted_item0_6228467984864988025() throws Throwable {
-    Assert.assertEquals("Expected: " + TreePVector.<Number>empty().plus((Number) new BigInteger("1")).plus((Number) new BigInteger("2")).plus((Number) new BigInteger("3")) + ", but was: " + Generated_functionType_Test.test_0(TreePVector.<Number>empty().plus((Number) new BigInteger("1")).plus((Number) new BigInteger("2")).plus((Number) new BigInteger("3"))), (Object) TreePVector.<Number>empty().plus((Number) new BigInteger("1")).plus((Number) new BigInteger("2")).plus((Number) new BigInteger("3")), (Object) Generated_functionType_Test.test_0(TreePVector.<Number>empty().plus((Number) new BigInteger("1")).plus((Number) new BigInteger("2")).plus((Number) new BigInteger("3"))));
+    Assert.assertEquals("Expected: " + TreePVector.<Number>empty().plus(new BigInteger("1")).plus(new BigInteger("2")).plus(new BigInteger("3")) + ", but was: " + Generated_functionType_Test.test_0(TreePVector.<Number>empty().plus(new BigInteger("1")).plus(new BigInteger("2")).plus(new BigInteger("3"))), TreePVector.<Number>empty().plus(new BigInteger("1")).plus(new BigInteger("2")).plus(new BigInteger("3")), Generated_functionType_Test.test_0(TreePVector.<Number>empty().plus(new BigInteger("1")).plus(new BigInteger("2")).plus(new BigInteger("3"))));
   }
   @Test
   public void checkAllFunctionsCanBeExecuted_item1_6228467984864990841() throws Throwable {
-    Assert.assertEquals("Expected: " + TreePVector.<Number>empty().plus((Number) new BigInteger("1")).plus((Number) new BigInteger("2")).plus((Number) new BigInteger("3")) + ", but was: " + Generated_functionType_Test.test_1(TreePVector.<Number>empty().plus((Number) new BigInteger("1")).plus((Number) new BigInteger("2")).plus((Number) new BigInteger("3"))), (Object) TreePVector.<Number>empty().plus((Number) new BigInteger("1")).plus((Number) new BigInteger("2")).plus((Number) new BigInteger("3")), (Object) Generated_functionType_Test.test_1(TreePVector.<Number>empty().plus((Number) new BigInteger("1")).plus((Number) new BigInteger("2")).plus((Number) new BigInteger("3"))));
+    Assert.assertEquals("Expected: " + TreePVector.<Number>empty().plus(new BigInteger("1")).plus(new BigInteger("2")).plus(new BigInteger("3")) + ", but was: " + Generated_functionType_Test.test_1(TreePVector.<Number>empty().plus(new BigInteger("1")).plus(new BigInteger("2")).plus(new BigInteger("3"))), TreePVector.<Number>empty().plus(new BigInteger("1")).plus(new BigInteger("2")).plus(new BigInteger("3")), Generated_functionType_Test.test_1(TreePVector.<Number>empty().plus(new BigInteger("1")).plus(new BigInteger("2")).plus(new BigInteger("3"))));
   }
   @Test
   public void checkAllFunctionsCanBeExecuted_item2_6228467984864990876() throws Throwable {
-    Assert.assertEquals("Expected: " + TreePVector.<Number>empty().plus((Number) new BigInteger("1")).plus((Number) new BigInteger("2")).plus((Number) new BigInteger("3")) + ", but was: " + Generated_functionType_Test.test_2(TreePVector.<Number>empty().plus((Number) new BigInteger("1")).plus((Number) new BigInteger("2")).plus((Number) new BigInteger("3"))), (Object) TreePVector.<Number>empty().plus((Number) new BigInteger("1")).plus((Number) new BigInteger("2")).plus((Number) new BigInteger("3")), (Object) Generated_functionType_Test.test_2(TreePVector.<Number>empty().plus((Number) new BigInteger("1")).plus((Number) new BigInteger("2")).plus((Number) new BigInteger("3"))));
+    Assert.assertEquals("Expected: " + TreePVector.<Number>empty().plus(new BigInteger("1")).plus(new BigInteger("2")).plus(new BigInteger("3")) + ", but was: " + Generated_functionType_Test.test_2(TreePVector.<Number>empty().plus(new BigInteger("1")).plus(new BigInteger("2")).plus(new BigInteger("3"))), TreePVector.<Number>empty().plus(new BigInteger("1")).plus(new BigInteger("2")).plus(new BigInteger("3")), Generated_functionType_Test.test_2(TreePVector.<Number>empty().plus(new BigInteger("1")).plus(new BigInteger("2")).plus(new BigInteger("3"))));
   }
   @Test
   public void checkAllFunctionsCanBeExecuted_item3_6228467984864990922() throws Throwable {
-    Assert.assertEquals("Expected: " + TreePVector.<Number>empty().plus((Number) new BigInteger("1")).plus((Number) new BigInteger("2")).plus((Number) new BigInteger("3")) + ", but was: " + Generated_functionType_Test.test_3(TreePVector.<Number>empty().plus((Number) new BigInteger("1")).plus((Number) new BigInteger("2")).plus((Number) new BigInteger("3"))), (Object) TreePVector.<Number>empty().plus((Number) new BigInteger("1")).plus((Number) new BigInteger("2")).plus((Number) new BigInteger("3")), (Object) Generated_functionType_Test.test_3(TreePVector.<Number>empty().plus((Number) new BigInteger("1")).plus((Number) new BigInteger("2")).plus((Number) new BigInteger("3"))));
+    Assert.assertEquals("Expected: " + TreePVector.<Number>empty().plus(new BigInteger("1")).plus(new BigInteger("2")).plus(new BigInteger("3")) + ", but was: " + Generated_functionType_Test.test_3(TreePVector.<Number>empty().plus(new BigInteger("1")).plus(new BigInteger("2")).plus(new BigInteger("3"))), TreePVector.<Number>empty().plus(new BigInteger("1")).plus(new BigInteger("2")).plus(new BigInteger("3")), Generated_functionType_Test.test_3(TreePVector.<Number>empty().plus(new BigInteger("1")).plus(new BigInteger("2")).plus(new BigInteger("3"))));
   }
   @Test
   public void checkAllFunctionsCanBeExecuted_item4_6228467984864999818() throws Throwable {
-    Assert.assertEquals("Expected: " + TreePVector.<Number>empty().plus((Number) new BigInteger("1")).plus((Number) new BigInteger("2")).plus((Number) new BigInteger("3")) + ", but was: " + Generated_functionType_Test.test_4(TreePVector.<Number>empty().plus((Number) new BigInteger("1")).plus((Number) new BigInteger("2")).plus((Number) new BigInteger("3"))), (Object) TreePVector.<Number>empty().plus((Number) new BigInteger("1")).plus((Number) new BigInteger("2")).plus((Number) new BigInteger("3")), (Object) Generated_functionType_Test.test_4(TreePVector.<Number>empty().plus((Number) new BigInteger("1")).plus((Number) new BigInteger("2")).plus((Number) new BigInteger("3"))));
+    Assert.assertEquals("Expected: " + TreePVector.<Number>empty().plus(new BigInteger("1")).plus(new BigInteger("2")).plus(new BigInteger("3")) + ", but was: " + Generated_functionType_Test.test_4(TreePVector.<Number>empty().plus(new BigInteger("1")).plus(new BigInteger("2")).plus(new BigInteger("3"))), TreePVector.<Number>empty().plus(new BigInteger("1")).plus(new BigInteger("2")).plus(new BigInteger("3")), Generated_functionType_Test.test_4(TreePVector.<Number>empty().plus(new BigInteger("1")).plus(new BigInteger("2")).plus(new BigInteger("3"))));
   }
   @Test
   public void checkAllFunctionsCanBeExecuted_item5_6228467984865003306() throws Throwable {
-    Assert.assertEquals("Expected: " + TreePVector.<Number>empty().plus((Number) new BigInteger("1")).plus((Number) new BigInteger("2")).plus((Number) new BigInteger("3")) + ", but was: " + Generated_functionType_Test.test_a_4(TreePVector.<Number>empty().plus((Number) new BigInteger("1")).plus((Number) new BigInteger("2")).plus((Number) new BigInteger("3"))), (Object) TreePVector.<Number>empty().plus((Number) new BigInteger("1")).plus((Number) new BigInteger("2")).plus((Number) new BigInteger("3")), (Object) Generated_functionType_Test.test_a_4(TreePVector.<Number>empty().plus((Number) new BigInteger("1")).plus((Number) new BigInteger("2")).plus((Number) new BigInteger("3"))));
+    Assert.assertEquals("Expected: " + TreePVector.<Number>empty().plus(new BigInteger("1")).plus(new BigInteger("2")).plus(new BigInteger("3")) + ", but was: " + Generated_functionType_Test.test_a_4(TreePVector.<Number>empty().plus(new BigInteger("1")).plus(new BigInteger("2")).plus(new BigInteger("3"))), TreePVector.<Number>empty().plus(new BigInteger("1")).plus(new BigInteger("2")).plus(new BigInteger("3")), Generated_functionType_Test.test_a_4(TreePVector.<Number>empty().plus(new BigInteger("1")).plus(new BigInteger("2")).plus(new BigInteger("3"))));
   }
   @Test
   public void checkAllFunctionsCanBeExecuted_item6_6228467984865003628() throws Throwable {
-    Assert.assertEquals("Expected: " + TreePVector.<Number>empty().plus((Number) new BigInteger("1")).plus((Number) new BigInteger("2")).plus((Number) new BigInteger("3")) + ", but was: " + Generated_functionType_Test.test_b_4(TreePVector.<Number>empty().plus((Number) new BigInteger("1")).plus((Number) new BigInteger("2")).plus((Number) new BigInteger("3"))), (Object) TreePVector.<Number>empty().plus((Number) new BigInteger("1")).plus((Number) new BigInteger("2")).plus((Number) new BigInteger("3")), (Object) Generated_functionType_Test.test_b_4(TreePVector.<Number>empty().plus((Number) new BigInteger("1")).plus((Number) new BigInteger("2")).plus((Number) new BigInteger("3"))));
+    Assert.assertEquals("Expected: " + TreePVector.<Number>empty().plus(new BigInteger("1")).plus(new BigInteger("2")).plus(new BigInteger("3")) + ", but was: " + Generated_functionType_Test.test_b_4(TreePVector.<Number>empty().plus(new BigInteger("1")).plus(new BigInteger("2")).plus(new BigInteger("3"))), TreePVector.<Number>empty().plus(new BigInteger("1")).plus(new BigInteger("2")).plus(new BigInteger("3")), Generated_functionType_Test.test_b_4(TreePVector.<Number>empty().plus(new BigInteger("1")).plus(new BigInteger("2")).plus(new BigInteger("3"))));
   }
   @Test
   public void checkAllFunctionsCanBeExecuted_item7_6228467984865003733() throws Throwable {
-    Assert.assertEquals("Expected: " + TreePVector.<Number>empty().plus((Number) new BigInteger("1")).plus((Number) new BigInteger("2")).plus((Number) new BigInteger("3")) + ", but was: " + Generated_functionType_Test.test_c_4(TreePVector.<Number>empty().plus((Number) new BigInteger("1")).plus((Number) new BigInteger("2")).plus((Number) new BigInteger("3"))), (Object) TreePVector.<Number>empty().plus((Number) new BigInteger("1")).plus((Number) new BigInteger("2")).plus((Number) new BigInteger("3")), (Object) Generated_functionType_Test.test_c_4(TreePVector.<Number>empty().plus((Number) new BigInteger("1")).plus((Number) new BigInteger("2")).plus((Number) new BigInteger("3"))));
+    Assert.assertEquals("Expected: " + TreePVector.<Number>empty().plus(new BigInteger("1")).plus(new BigInteger("2")).plus(new BigInteger("3")) + ", but was: " + Generated_functionType_Test.test_c_4(TreePVector.<Number>empty().plus(new BigInteger("1")).plus(new BigInteger("2")).plus(new BigInteger("3"))), TreePVector.<Number>empty().plus(new BigInteger("1")).plus(new BigInteger("2")).plus(new BigInteger("3")), Generated_functionType_Test.test_c_4(TreePVector.<Number>empty().plus(new BigInteger("1")).plus(new BigInteger("2")).plus(new BigInteger("3"))));
   }
   @Test
   public void checkAllFunctionsCanBeExecuted_item8_4707892895167795394() throws Throwable {
-    Assert.assertEquals("Expected: " + TreePVector.<Number>empty().plus((Number) new BigInteger("1")).plus((Number) new BigInteger("2")).plus((Number) new BigInteger("3")) + ", but was: " + Generated_functionType_Test.test_sort_4(TreePVector.<Number>empty().plus((Number) new BigInteger("3")).plus((Number) new BigInteger("1")).plus((Number) new BigInteger("2"))), (Object) TreePVector.<Number>empty().plus((Number) new BigInteger("1")).plus((Number) new BigInteger("2")).plus((Number) new BigInteger("3")), (Object) Generated_functionType_Test.test_sort_4(TreePVector.<Number>empty().plus((Number) new BigInteger("3")).plus((Number) new BigInteger("1")).plus((Number) new BigInteger("2"))));
+    Assert.assertEquals("Expected: " + TreePVector.<Number>empty().plus(new BigInteger("1")).plus(new BigInteger("2")).plus(new BigInteger("3")) + ", but was: " + Generated_functionType_Test.test_sort_4(TreePVector.<Number>empty().plus(new BigInteger("3")).plus(new BigInteger("1")).plus(new BigInteger("2"))), TreePVector.<Number>empty().plus(new BigInteger("1")).plus(new BigInteger("2")).plus(new BigInteger("3")), Generated_functionType_Test.test_sort_4(TreePVector.<Number>empty().plus(new BigInteger("3")).plus(new BigInteger("1")).plus(new BigInteger("2"))));
   }
   @Test
   public void checkAllFunctionsCanBeExecuted_item9_4707892895167512481() throws Throwable {
-    Assert.assertEquals("Expected: " + TreePVector.<Number>empty().plus((Number) new BigInteger("1")).plus((Number) new BigInteger("2")).plus((Number) new BigInteger("3")).plus((Number) new BigInteger("4")) + ", but was: " + Generated_functionType_Test.test_firstN_4(TreePVector.<Number>empty().plus((Number) new BigInteger("1")).plus((Number) new BigInteger("2")).plus((Number) new BigInteger("3")).plus((Number) new BigInteger("4")).plus((Number) new BigInteger("5")).plus((Number) new BigInteger("6"))), (Object) TreePVector.<Number>empty().plus((Number) new BigInteger("1")).plus((Number) new BigInteger("2")).plus((Number) new BigInteger("3")).plus((Number) new BigInteger("4")), (Object) Generated_functionType_Test.test_firstN_4(TreePVector.<Number>empty().plus((Number) new BigInteger("1")).plus((Number) new BigInteger("2")).plus((Number) new BigInteger("3")).plus((Number) new BigInteger("4")).plus((Number) new BigInteger("5")).plus((Number) new BigInteger("6"))));
+    Assert.assertEquals("Expected: " + TreePVector.<Number>empty().plus(new BigInteger("1")).plus(new BigInteger("2")).plus(new BigInteger("3")).plus(new BigInteger("4")) + ", but was: " + Generated_functionType_Test.test_firstN_4(TreePVector.<Number>empty().plus(new BigInteger("1")).plus(new BigInteger("2")).plus(new BigInteger("3")).plus(new BigInteger("4")).plus(new BigInteger("5")).plus(new BigInteger("6"))), TreePVector.<Number>empty().plus(new BigInteger("1")).plus(new BigInteger("2")).plus(new BigInteger("3")).plus(new BigInteger("4")), Generated_functionType_Test.test_firstN_4(TreePVector.<Number>empty().plus(new BigInteger("1")).plus(new BigInteger("2")).plus(new BigInteger("3")).plus(new BigInteger("4")).plus(new BigInteger("5")).plus(new BigInteger("6"))));
   }
   @Test
   public void checkAllFunctionsCanBeExecuted_item10_4707892895167650826() throws Throwable {
-    Assert.assertEquals("Expected: " + TreePVector.<Number>empty().plus((Number) new BigInteger("3")).plus((Number) new BigInteger("4")).plus((Number) new BigInteger("5")).plus((Number) new BigInteger("6")) + ", but was: " + Generated_functionType_Test.test_lastN_4(TreePVector.<Number>empty().plus((Number) new BigInteger("1")).plus((Number) new BigInteger("2")).plus((Number) new BigInteger("3")).plus((Number) new BigInteger("4")).plus((Number) new BigInteger("5")).plus((Number) new BigInteger("6"))), (Object) TreePVector.<Number>empty().plus((Number) new BigInteger("3")).plus((Number) new BigInteger("4")).plus((Number) new BigInteger("5")).plus((Number) new BigInteger("6")), (Object) Generated_functionType_Test.test_lastN_4(TreePVector.<Number>empty().plus((Number) new BigInteger("1")).plus((Number) new BigInteger("2")).plus((Number) new BigInteger("3")).plus((Number) new BigInteger("4")).plus((Number) new BigInteger("5")).plus((Number) new BigInteger("6"))));
+    Assert.assertEquals("Expected: " + TreePVector.<Number>empty().plus(new BigInteger("3")).plus(new BigInteger("4")).plus(new BigInteger("5")).plus(new BigInteger("6")) + ", but was: " + Generated_functionType_Test.test_lastN_4(TreePVector.<Number>empty().plus(new BigInteger("1")).plus(new BigInteger("2")).plus(new BigInteger("3")).plus(new BigInteger("4")).plus(new BigInteger("5")).plus(new BigInteger("6"))), TreePVector.<Number>empty().plus(new BigInteger("3")).plus(new BigInteger("4")).plus(new BigInteger("5")).plus(new BigInteger("6")), Generated_functionType_Test.test_lastN_4(TreePVector.<Number>empty().plus(new BigInteger("1")).plus(new BigInteger("2")).plus(new BigInteger("3")).plus(new BigInteger("4")).plus(new BigInteger("5")).plus(new BigInteger("6"))));
   }
   @Test
   public void checkAllFunctionsCanBeExecuted_item11_4707892895167652105() throws Throwable {
-    Assert.assertEquals("Expected: " + TreePVector.<Number>empty().plus((Number) new BigInteger("1")).plus((Number) new BigInteger("2")).plus((Number) new BigInteger("3")) + ", but was: " + Generated_functionType_Test.test_map_4(TreePVector.<Number>empty().plus((Number) new BigInteger("1")).plus((Number) new BigInteger("2")).plus((Number) new BigInteger("3"))), (Object) TreePVector.<Number>empty().plus((Number) new BigInteger("1")).plus((Number) new BigInteger("2")).plus((Number) new BigInteger("3")), (Object) Generated_functionType_Test.test_map_4(TreePVector.<Number>empty().plus((Number) new BigInteger("1")).plus((Number) new BigInteger("2")).plus((Number) new BigInteger("3"))));
+    Assert.assertEquals("Expected: " + TreePVector.<Number>empty().plus(new BigInteger("1")).plus(new BigInteger("2")).plus(new BigInteger("3")) + ", but was: " + Generated_functionType_Test.test_map_4(TreePVector.<Number>empty().plus(new BigInteger("1")).plus(new BigInteger("2")).plus(new BigInteger("3"))), TreePVector.<Number>empty().plus(new BigInteger("1")).plus(new BigInteger("2")).plus(new BigInteger("3")), Generated_functionType_Test.test_map_4(TreePVector.<Number>empty().plus(new BigInteger("1")).plus(new BigInteger("2")).plus(new BigInteger("3"))));
   }
   @Test
   public void checkAllFunctionsCanBeExecuted_item12_4707892895167794193() throws Throwable {
-    Assert.assertEquals("Expected: " + TreePVector.<Number>empty().plus((Number) new BigInteger("3")).plus((Number) new BigInteger("2")).plus((Number) new BigInteger("1")) + ", but was: " + Generated_functionType_Test.test_reverse_4(TreePVector.<Number>empty().plus((Number) new BigInteger("1")).plus((Number) new BigInteger("2")).plus((Number) new BigInteger("3"))), (Object) TreePVector.<Number>empty().plus((Number) new BigInteger("3")).plus((Number) new BigInteger("2")).plus((Number) new BigInteger("1")), (Object) Generated_functionType_Test.test_reverse_4(TreePVector.<Number>empty().plus((Number) new BigInteger("1")).plus((Number) new BigInteger("2")).plus((Number) new BigInteger("3"))));
+    Assert.assertEquals("Expected: " + TreePVector.<Number>empty().plus(new BigInteger("3")).plus(new BigInteger("2")).plus(new BigInteger("1")) + ", but was: " + Generated_functionType_Test.test_reverse_4(TreePVector.<Number>empty().plus(new BigInteger("1")).plus(new BigInteger("2")).plus(new BigInteger("3"))), TreePVector.<Number>empty().plus(new BigInteger("3")).plus(new BigInteger("2")).plus(new BigInteger("1")), Generated_functionType_Test.test_reverse_4(TreePVector.<Number>empty().plus(new BigInteger("1")).plus(new BigInteger("2")).plus(new BigInteger("3"))));
   }
   @Test
   public void checkAllFunctionsCanBeExecuted_item13_4707892895168081875() throws Throwable {
-    Assert.assertEquals("Expected: " + TreePVector.<Number>empty().plus((Number) new BigInteger("2")).plus((Number) new BigInteger("3")).plus((Number) new BigInteger("4")).plus((Number) new BigInteger("5")).plus((Number) new BigInteger("6")) + ", but was: " + Generated_functionType_Test.test_tail_4(TreePVector.<Number>empty().plus((Number) new BigInteger("1")).plus((Number) new BigInteger("2")).plus((Number) new BigInteger("3")).plus((Number) new BigInteger("4")).plus((Number) new BigInteger("5")).plus((Number) new BigInteger("6"))), (Object) TreePVector.<Number>empty().plus((Number) new BigInteger("2")).plus((Number) new BigInteger("3")).plus((Number) new BigInteger("4")).plus((Number) new BigInteger("5")).plus((Number) new BigInteger("6")), (Object) Generated_functionType_Test.test_tail_4(TreePVector.<Number>empty().plus((Number) new BigInteger("1")).plus((Number) new BigInteger("2")).plus((Number) new BigInteger("3")).plus((Number) new BigInteger("4")).plus((Number) new BigInteger("5")).plus((Number) new BigInteger("6"))));
+    Assert.assertEquals("Expected: " + TreePVector.<Number>empty().plus(new BigInteger("2")).plus(new BigInteger("3")).plus(new BigInteger("4")).plus(new BigInteger("5")).plus(new BigInteger("6")) + ", but was: " + Generated_functionType_Test.test_tail_4(TreePVector.<Number>empty().plus(new BigInteger("1")).plus(new BigInteger("2")).plus(new BigInteger("3")).plus(new BigInteger("4")).plus(new BigInteger("5")).plus(new BigInteger("6"))), TreePVector.<Number>empty().plus(new BigInteger("2")).plus(new BigInteger("3")).plus(new BigInteger("4")).plus(new BigInteger("5")).plus(new BigInteger("6")), Generated_functionType_Test.test_tail_4(TreePVector.<Number>empty().plus(new BigInteger("1")).plus(new BigInteger("2")).plus(new BigInteger("3")).plus(new BigInteger("4")).plus(new BigInteger("5")).plus(new BigInteger("6"))));
   }
   @Test
   public void checkAllFunctionsCanBeExecuted_item14_4707892895168083116() throws Throwable {
-    Assert.assertEquals("Expected: " + TreePVector.<Number>empty().plus((Number) new BigInteger("1")).plus((Number) new BigInteger("2")).plus((Number) new BigInteger("3")).plus((Number) new BigInteger("100")) + ", but was: " + Generated_functionType_Test.test_with100_4(TreePVector.<Number>empty().plus((Number) new BigInteger("1")).plus((Number) new BigInteger("2")).plus((Number) new BigInteger("3"))), (Object) TreePVector.<Number>empty().plus((Number) new BigInteger("1")).plus((Number) new BigInteger("2")).plus((Number) new BigInteger("3")).plus((Number) new BigInteger("100")), (Object) Generated_functionType_Test.test_with100_4(TreePVector.<Number>empty().plus((Number) new BigInteger("1")).plus((Number) new BigInteger("2")).plus((Number) new BigInteger("3"))));
+    Assert.assertEquals("Expected: " + TreePVector.<Number>empty().plus(new BigInteger("1")).plus(new BigInteger("2")).plus(new BigInteger("3")).plus(new BigInteger("100")) + ", but was: " + Generated_functionType_Test.test_with100_4(TreePVector.<Number>empty().plus(new BigInteger("1")).plus(new BigInteger("2")).plus(new BigInteger("3"))), TreePVector.<Number>empty().plus(new BigInteger("1")).plus(new BigInteger("2")).plus(new BigInteger("3")).plus(new BigInteger("100")), Generated_functionType_Test.test_with100_4(TreePVector.<Number>empty().plus(new BigInteger("1")).plus(new BigInteger("2")).plus(new BigInteger("3"))));
   }
   @Test
   public void checkAllFunctionsCanBeExecuted_item15_4707892895168086056() throws Throwable {
-    Assert.assertEquals("Expected: " + TreePVector.<Number>empty().plus((Number) new BigInteger("2")).plus((Number) new BigInteger("3")) + ", but was: " + Generated_functionType_Test.test_without100_4(TreePVector.<Number>empty().plus((Number) new BigInteger("100")).plus((Number) new BigInteger("2")).plus((Number) new BigInteger("3"))), (Object) TreePVector.<Number>empty().plus((Number) new BigInteger("2")).plus((Number) new BigInteger("3")), (Object) Generated_functionType_Test.test_without100_4(TreePVector.<Number>empty().plus((Number) new BigInteger("100")).plus((Number) new BigInteger("2")).plus((Number) new BigInteger("3"))));
+    Assert.assertEquals("Expected: " + TreePVector.<Number>empty().plus(new BigInteger("2")).plus(new BigInteger("3")) + ", but was: " + Generated_functionType_Test.test_without100_4(TreePVector.<Number>empty().plus(new BigInteger("100")).plus(new BigInteger("2")).plus(new BigInteger("3"))), TreePVector.<Number>empty().plus(new BigInteger("2")).plus(new BigInteger("3")), Generated_functionType_Test.test_without100_4(TreePVector.<Number>empty().plus(new BigInteger("100")).plus(new BigInteger("2")).plus(new BigInteger("3"))));
   }
   @Test
   public void checkAllFunctionsCanBeExecuted_item16_6228467984864990983() throws Throwable {
-    Assert.assertEquals("Expected: " + TreePVector.<Number>empty().plus((Number) new BigInteger("1")).plus((Number) new BigInteger("2")).plus((Number) new BigInteger("3")) + ", but was: " + Generated_functionType_Test.test_5(TreePVector.<Number>empty().plus((Number) new BigInteger("1")).plus((Number) new BigInteger("2")).plus((Number) new BigInteger("3"))), (Object) TreePVector.<Number>empty().plus((Number) new BigInteger("1")).plus((Number) new BigInteger("2")).plus((Number) new BigInteger("3")), (Object) Generated_functionType_Test.test_5(TreePVector.<Number>empty().plus((Number) new BigInteger("1")).plus((Number) new BigInteger("2")).plus((Number) new BigInteger("3"))));
+    Assert.assertEquals("Expected: " + TreePVector.<Number>empty().plus(new BigInteger("1")).plus(new BigInteger("2")).plus(new BigInteger("3")) + ", but was: " + Generated_functionType_Test.test_5(TreePVector.<Number>empty().plus(new BigInteger("1")).plus(new BigInteger("2")).plus(new BigInteger("3"))), TreePVector.<Number>empty().plus(new BigInteger("1")).plus(new BigInteger("2")).plus(new BigInteger("3")), Generated_functionType_Test.test_5(TreePVector.<Number>empty().plus(new BigInteger("1")).plus(new BigInteger("2")).plus(new BigInteger("3"))));
   }
   @Test
   public void checkAllFunctionsCanBeExecuted_item17_6228467984865004306() throws Throwable {
-    Assert.assertEquals("Expected: " + TreePVector.<Number>empty().plus((Number) new BigInteger("1")).plus((Number) new BigInteger("2")).plus((Number) new BigInteger("3")) + ", but was: " + Generated_functionType_Test.test_a_5(TreePVector.<Number>empty().plus((Number) new BigInteger("1")).plus((Number) new BigInteger("2")).plus((Number) new BigInteger("3"))), (Object) TreePVector.<Number>empty().plus((Number) new BigInteger("1")).plus((Number) new BigInteger("2")).plus((Number) new BigInteger("3")), (Object) Generated_functionType_Test.test_a_5(TreePVector.<Number>empty().plus((Number) new BigInteger("1")).plus((Number) new BigInteger("2")).plus((Number) new BigInteger("3"))));
+    Assert.assertEquals("Expected: " + TreePVector.<Number>empty().plus(new BigInteger("1")).plus(new BigInteger("2")).plus(new BigInteger("3")) + ", but was: " + Generated_functionType_Test.test_a_5(TreePVector.<Number>empty().plus(new BigInteger("1")).plus(new BigInteger("2")).plus(new BigInteger("3"))), TreePVector.<Number>empty().plus(new BigInteger("1")).plus(new BigInteger("2")).plus(new BigInteger("3")), Generated_functionType_Test.test_a_5(TreePVector.<Number>empty().plus(new BigInteger("1")).plus(new BigInteger("2")).plus(new BigInteger("3"))));
   }
   @Test
   public void checkAllFunctionsCanBeExecuted_item18_7525807922155791505() throws Throwable {
-    Assert.assertEquals("Expected: " + TreePVector.<Number>empty().plus((Number) new BigInteger("1")).plus((Number) new BigInteger("2")).plus((Number) new BigInteger("3")).plus((Number) new BigInteger("4")) + ", but was: " + Generated_functionType_Test.test_listFlatteningByAlt(TreePVector.<PVector<Number>>empty().plus(TreePVector.<Number>empty().plus((Number) new BigInteger("1")).plus((Number) new BigInteger("2"))).plus(TreePVector.<Number>empty().plus((Number) new BigInteger("3")).plus((Number) new BigInteger("4")))), (Object) TreePVector.<Number>empty().plus((Number) new BigInteger("1")).plus((Number) new BigInteger("2")).plus((Number) new BigInteger("3")).plus((Number) new BigInteger("4")), (Object) Generated_functionType_Test.test_listFlatteningByAlt(TreePVector.<PVector<Number>>empty().plus(TreePVector.<Number>empty().plus((Number) new BigInteger("1")).plus((Number) new BigInteger("2"))).plus(TreePVector.<Number>empty().plus((Number) new BigInteger("3")).plus((Number) new BigInteger("4")))));
+    Assert.assertEquals("Expected: " + TreePVector.<Number>empty().plus(new BigInteger("1")).plus(new BigInteger("2")).plus(new BigInteger("3")).plus(new BigInteger("4")) + ", but was: " + Generated_functionType_Test.test_listFlatteningByAlt(TreePVector.<PVector<Number>>empty().plus(TreePVector.<Number>empty().plus(new BigInteger("1")).plus(new BigInteger("2"))).plus(TreePVector.<Number>empty().plus(new BigInteger("3")).plus(new BigInteger("4")))), TreePVector.<Number>empty().plus(new BigInteger("1")).plus(new BigInteger("2")).plus(new BigInteger("3")).plus(new BigInteger("4")), Generated_functionType_Test.test_listFlatteningByAlt(TreePVector.<PVector<Number>>empty().plus(TreePVector.<Number>empty().plus(new BigInteger("1")).plus(new BigInteger("2"))).plus(TreePVector.<Number>empty().plus(new BigInteger("3")).plus(new BigInteger("4")))));
   }
   @Test
   public void checkAllFunctionsCanBeExecuted_item19_9198858277398001283() throws Throwable {
-    Assert.assertEquals("Expected: " + TreePVector.<Number>empty().plus((Number) new BigInteger("1")).plus((Number) new BigInteger("2")).plus((Number) new BigInteger("3")).plus((Number) new BigInteger("4")) + ", but was: " + Generated_functionType_Test.test_listFlatteningByIf(TreePVector.<PVector<Number>>empty().plus(TreePVector.<Number>empty().plus((Number) new BigInteger("1")).plus((Number) new BigInteger("2"))).plus(TreePVector.<Number>empty().plus((Number) new BigInteger("3")).plus((Number) new BigInteger("4")))), (Object) TreePVector.<Number>empty().plus((Number) new BigInteger("1")).plus((Number) new BigInteger("2")).plus((Number) new BigInteger("3")).plus((Number) new BigInteger("4")), (Object) Generated_functionType_Test.test_listFlatteningByIf(TreePVector.<PVector<Number>>empty().plus(TreePVector.<Number>empty().plus((Number) new BigInteger("1")).plus((Number) new BigInteger("2"))).plus(TreePVector.<Number>empty().plus((Number) new BigInteger("3")).plus((Number) new BigInteger("4")))));
+    Assert.assertEquals("Expected: " + TreePVector.<Number>empty().plus(new BigInteger("1")).plus(new BigInteger("2")).plus(new BigInteger("3")).plus(new BigInteger("4")) + ", but was: " + Generated_functionType_Test.test_listFlatteningByIf(TreePVector.<PVector<Number>>empty().plus(TreePVector.<Number>empty().plus(new BigInteger("1")).plus(new BigInteger("2"))).plus(TreePVector.<Number>empty().plus(new BigInteger("3")).plus(new BigInteger("4")))), TreePVector.<Number>empty().plus(new BigInteger("1")).plus(new BigInteger("2")).plus(new BigInteger("3")).plus(new BigInteger("4")), Generated_functionType_Test.test_listFlatteningByIf(TreePVector.<PVector<Number>>empty().plus(TreePVector.<Number>empty().plus(new BigInteger("1")).plus(new BigInteger("2"))).plus(TreePVector.<Number>empty().plus(new BigInteger("3")).plus(new BigInteger("4")))));
   }
   @Test
   public void checkAllFunctionsCanBeExecuted_item20_9198858277398011830() throws Throwable {
-    Assert.assertTrue("Expected: " + (Number) new BigInteger("2") + ", but was: " + Generated_functionType_Test.test_listChoiceByAlt(TreePVector.<Number>empty().plus((Number) new BigInteger("1")).plus((Number) new BigInteger("2"))), EqualsTestOp.matches((Number) new BigInteger("2"), Generated_functionType_Test.test_listChoiceByAlt(TreePVector.<Number>empty().plus((Number) new BigInteger("1")).plus((Number) new BigInteger("2")))));
+    Assert.assertTrue("Expected: " + new BigInteger("2") + ", but was: " + Generated_functionType_Test.test_listChoiceByAlt(TreePVector.<Number>empty().plus(new BigInteger("1")).plus(new BigInteger("2"))), EqualsTestOp.matches(new BigInteger("2"), Generated_functionType_Test.test_listChoiceByAlt(TreePVector.<Number>empty().plus(new BigInteger("1")).plus(new BigInteger("2")))));
   }
   @Test
   public void checkAllFunctionsCanBeExecuted_item21_9198858277398022160() throws Throwable {
-    Assert.assertTrue("Expected: " + (Number) new BigInteger("2") + ", but was: " + Generated_functionType_Test.test_listChoiceByIf(TreePVector.<Number>empty().plus((Number) new BigInteger("1")).plus((Number) new BigInteger("2"))), EqualsTestOp.matches((Number) new BigInteger("2"), Generated_functionType_Test.test_listChoiceByIf(TreePVector.<Number>empty().plus((Number) new BigInteger("1")).plus((Number) new BigInteger("2")))));
+    Assert.assertTrue("Expected: " + new BigInteger("2") + ", but was: " + Generated_functionType_Test.test_listChoiceByIf(TreePVector.<Number>empty().plus(new BigInteger("1")).plus(new BigInteger("2"))), EqualsTestOp.matches(new BigInteger("2"), Generated_functionType_Test.test_listChoiceByIf(TreePVector.<Number>empty().plus(new BigInteger("1")).plus(new BigInteger("2")))));
   }
 
 

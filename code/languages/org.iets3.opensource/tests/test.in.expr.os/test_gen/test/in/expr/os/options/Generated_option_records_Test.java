@@ -21,31 +21,31 @@ public class Generated_option_records_Test {
   public static final Empty e_ = new Empty();
   @Test
   public void records_hdh_8613480905440585685() throws Throwable {
-    Assert.assertEquals("Expected: " + "Heidenheim" + ", but was: " + Generated_option_records_Test.a_.getcity(), (Object) "Heidenheim", (Object) Generated_option_records_Test.a_.getcity());
+    Assert.assertEquals("Expected: " + "Heidenheim" + ", but was: " + Generated_option_records_Test.a_.getcity(), "Heidenheim", Generated_option_records_Test.a_.getcity());
   }
   @Test
   public void records_item1_8613480905440585692() throws Throwable {
-    Assert.assertEquals("Expected: " + "hasChanged" + ", but was: " + Generated_option_records_Test.a_.setcity("hasChanged").getcity(), (Object) "hasChanged", (Object) Generated_option_records_Test.a_.setcity("hasChanged").getcity());
+    Assert.assertEquals("Expected: " + "hasChanged" + ", but was: " + Generated_option_records_Test.a_.setcity("hasChanged").getcity(), "hasChanged", Generated_option_records_Test.a_.setcity("hasChanged").getcity());
   }
   @Test
   public void records_item2_8613480905440585702() throws Throwable {
-    Assert.assertEquals("Expected: " + "z2" + ", but was: " + Generated_option_records_Test.a_.setcity("hasChanged").setzip("z2").getzip(), (Object) "z2", (Object) Generated_option_records_Test.a_.setcity("hasChanged").setzip("z2").getzip());
+    Assert.assertEquals("Expected: " + "z2" + ", but was: " + Generated_option_records_Test.a_.setcity("hasChanged").setzip("z2").getzip(), "z2", Generated_option_records_Test.a_.setcity("hasChanged").setzip("z2").getzip());
   }
   @Test
   public void records_item3_8613480905440585714() throws Throwable {
-    Assert.assertEquals("Expected: " + "Heidenheim" + ", but was: " + Generated_option_records_Test.a_.getcity(), (Object) "Heidenheim", (Object) Generated_option_records_Test.a_.getcity());
+    Assert.assertEquals("Expected: " + "Heidenheim" + ", but was: " + Generated_option_records_Test.a_.getcity(), "Heidenheim", Generated_option_records_Test.a_.getcity());
   }
   @Test
   public void records_item4_8613480905440585722() throws Throwable {
-    Assert.assertEquals("Expected: " + "HeidenheimX" + ", but was: " + Generated_option_records_Test.a_.setcity(AH.addString(Generated_option_records_Test.a_.getcity(), "X")).getcity(), (Object) "HeidenheimX", (Object) Generated_option_records_Test.a_.setcity(AH.addString(Generated_option_records_Test.a_.getcity(), "X")).getcity());
+    Assert.assertEquals("Expected: " + "HeidenheimX" + ", but was: " + Generated_option_records_Test.a_.setcity(AH.addString(Generated_option_records_Test.a_.getcity(), "X")).getcity(), "HeidenheimX", Generated_option_records_Test.a_.setcity(AH.addString(Generated_option_records_Test.a_.getcity(), "X")).getcity());
   }
   @Test
   public void records_item5_8613480905440585734() throws Throwable {
-    Assert.assertEquals("Expected: " + "89555X" + ", but was: " + Generated_option_records_Test.a_.setcity(AH.addString(Generated_option_records_Test.a_.getzip(), "X")).getcity(), (Object) "89555X", (Object) Generated_option_records_Test.a_.setcity(AH.addString(Generated_option_records_Test.a_.getzip(), "X")).getcity());
+    Assert.assertEquals("Expected: " + "89555X" + ", but was: " + Generated_option_records_Test.a_.setcity(AH.addString(Generated_option_records_Test.a_.getzip(), "X")).getcity(), "89555X", Generated_option_records_Test.a_.setcity(AH.addString(Generated_option_records_Test.a_.getzip(), "X")).getcity());
   }
   @Test
   public void records_item6_8613480905440585746() throws Throwable {
-    Assert.assertEquals("Expected: " + new Empty() + ", but was: " + Generated_option_records_Test.e_, (Object) new Empty(), (Object) Generated_option_records_Test.e_);
+    Assert.assertEquals("Expected: " + new Empty() + ", but was: " + Generated_option_records_Test.e_, new Empty(), Generated_option_records_Test.e_);
   }
   public static class AgeRange implements Comparable<AgeRange> {
     private Number from;
@@ -408,12 +408,12 @@ public class Generated_option_records_Test {
   public static final Person1 markus_ = new Person1("Voelter", "Markus", "M", TreePVector.<Address>empty().plus(new Address("70565", "Stuttgart")).plus(new Address("70327", "Stuttgart")));
   @Test
   public void Builder_item0_8613480905440585815() throws Throwable {
-    Assert.assertEquals("Expected: " + "Voelter" + ", but was: " + Generated_option_records_Test.markus_.getname(), (Object) "Voelter", (Object) Generated_option_records_Test.markus_.getname());
+    Assert.assertEquals("Expected: " + "Voelter" + ", but was: " + Generated_option_records_Test.markus_.getname(), "Voelter", Generated_option_records_Test.markus_.getname());
   }
   public static final Person1 o1_ = new Person1("Voelter", "Markus", null, TreePVector.<Address>empty().plus(new Address("89555", "Heidenheim")));
   @Test
   public void opt_item0_8613480905455083315() throws Throwable {
-    Assert.assertEquals("Expected: " + "Markus" + ", but was: " + Generated_option_records_Test.o1_.getfirstName(), (Object) "Markus", (Object) Generated_option_records_Test.o1_.getfirstName());
+    Assert.assertEquals("Expected: " + "Markus" + ", but was: " + Generated_option_records_Test.o1_.getfirstName(), "Markus", Generated_option_records_Test.o1_.getfirstName());
   }
 
 

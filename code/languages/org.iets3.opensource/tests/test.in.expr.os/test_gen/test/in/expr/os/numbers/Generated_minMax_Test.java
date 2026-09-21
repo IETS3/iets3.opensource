@@ -17,11 +17,11 @@ import org.iets3.core.expr.genjava.tests.rt.rt.EqualsTestOp;
  */
 public class Generated_minMax_Test {
 
-  public static final Number m_ = ((BigInteger) (Number) new BigInteger("10")).negate();
-  public static final Number a_ = (Number) new BigInteger("10");
-  public static final Number b_ = (Number) new BigInteger("20");
-  public static final Number c_ = (Number) new BigInteger("30");
-  public static final Number d_ = (Number) new BigInteger("255");
+  public static final Number m_ = new BigInteger("10").negate();
+  public static final Number a_ = new BigInteger("10");
+  public static final Number b_ = new BigInteger("20");
+  public static final Number c_ = new BigInteger("30");
+  public static final Number d_ = new BigInteger("255");
   @Test
   public void testMax_item0_2152957725070759621() throws Throwable {
     Assert.assertTrue("Expected: " + Generated_minMax_Test.a_ + ", but was: " + SharedMinMaxHelper.max(((_FunctionTypes._return_P0_E0<List<BigInteger>>) () -> {

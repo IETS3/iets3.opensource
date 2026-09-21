@@ -121,11 +121,11 @@ public class Messages {
   }
   public static Message pleaseTakePills(String _nodeReference, String _nodeUrl, final Number numPills) {
     return new Message(BuiltinMessageKinds.none(), ((_FunctionTypes._return_P0_E0<String>) () -> {
-      if (AH.isEqual(numPills, (Number) new BigInteger("0"))) {
+      if (AH.isEqual(numPills, new BigInteger("0"))) {
         return "no pills.";
-      } else if (AH.isEqual(numPills, (Number) new BigInteger("1"))) {
+      } else if (AH.isEqual(numPills, new BigInteger("1"))) {
         return "one pill.";
-      } else if (AH.isGreater(numPills, (Number) new BigInteger("1"))) {
+      } else if (AH.isGreater(numPills, new BigInteger("1"))) {
         return AH.addString(numPills, " pills.");
       } else {
         throw new AlternativesException("The proposed alternative does not exist.");

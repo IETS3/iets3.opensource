@@ -19,34 +19,34 @@ public class Generated_NonNumbers_Test {
   public static final LocalDate date01_ = LocalDate.of(2000, 1, 1);
   public static final LocalDate date02_ = LocalDate.of(2000, 2, 1);
   public static final TemporalValue alwaysTrue_ = new TemporalValue(LocalDate.MIN, true);
-  public static final TemporalValue sometimesTrue_ = new TemporalValue().slice((LocalDate) LocalDate.MIN, false).slice((LocalDate) Generated_NonNumbers_Test.date01_, true);
-  public static final TemporalValue n_ = new TemporalValue().slice((LocalDate) Generated_NonNumbers_Test.date01_, (Number) new BigInteger("10"));
+  public static final TemporalValue sometimesTrue_ = new TemporalValue().slice(LocalDate.MIN, false).slice(Generated_NonNumbers_Test.date01_, true);
+  public static final TemporalValue n_ = new TemporalValue().slice(Generated_NonNumbers_Test.date01_, new BigInteger("10"));
   @Test
   public void testBooleans_item0_7638810057883393166() throws Throwable {
-    Assert.assertEquals("Expected: " + Generated_NonNumbers_Test.alwaysTrue_ + ", but was: " + TemporalValueHelper.perform(Generated_NonNumbers_Test.alwaysTrue_, Generated_NonNumbers_Test.alwaysTrue_, (Object l, Object r) -> TemporalOps.and(l, r), null), (Object) Generated_NonNumbers_Test.alwaysTrue_, (Object) TemporalValueHelper.perform(Generated_NonNumbers_Test.alwaysTrue_, Generated_NonNumbers_Test.alwaysTrue_, (Object l, Object r) -> TemporalOps.and(l, r), null));
+    Assert.assertEquals("Expected: " + Generated_NonNumbers_Test.alwaysTrue_ + ", but was: " + TemporalValueHelper.perform(Generated_NonNumbers_Test.alwaysTrue_, Generated_NonNumbers_Test.alwaysTrue_, (Object l, Object r) -> TemporalOps.and(l, r), null), Generated_NonNumbers_Test.alwaysTrue_, TemporalValueHelper.perform(Generated_NonNumbers_Test.alwaysTrue_, Generated_NonNumbers_Test.alwaysTrue_, (Object l, Object r) -> TemporalOps.and(l, r), null));
   }
   @Test
   public void testBooleans_item1_7638810057883565883() throws Throwable {
-    Assert.assertEquals("Expected: " + Generated_NonNumbers_Test.alwaysTrue_ + ", but was: " + TemporalValueHelper.perform(Generated_NonNumbers_Test.alwaysTrue_, Generated_NonNumbers_Test.alwaysTrue_, (Object l, Object r) -> TemporalOps.or(l, r), null), (Object) Generated_NonNumbers_Test.alwaysTrue_, (Object) TemporalValueHelper.perform(Generated_NonNumbers_Test.alwaysTrue_, Generated_NonNumbers_Test.alwaysTrue_, (Object l, Object r) -> TemporalOps.or(l, r), null));
+    Assert.assertEquals("Expected: " + Generated_NonNumbers_Test.alwaysTrue_ + ", but was: " + TemporalValueHelper.perform(Generated_NonNumbers_Test.alwaysTrue_, Generated_NonNumbers_Test.alwaysTrue_, (Object l, Object r) -> TemporalOps.or(l, r), null), Generated_NonNumbers_Test.alwaysTrue_, TemporalValueHelper.perform(Generated_NonNumbers_Test.alwaysTrue_, Generated_NonNumbers_Test.alwaysTrue_, (Object l, Object r) -> TemporalOps.or(l, r), null));
   }
   @Test
   public void testBooleans_item2_7638810057883566025() throws Throwable {
-    Assert.assertEquals("Expected: " + new TemporalValue().slice((LocalDate) LocalDate.MIN, false).slice((LocalDate) Generated_NonNumbers_Test.date01_, true) + ", but was: " + TemporalValueHelper.perform(Generated_NonNumbers_Test.alwaysTrue_, Generated_NonNumbers_Test.sometimesTrue_, (Object l, Object r) -> TemporalOps.and(l, r), null), (Object) new TemporalValue().slice((LocalDate) LocalDate.MIN, false).slice((LocalDate) Generated_NonNumbers_Test.date01_, true), (Object) TemporalValueHelper.perform(Generated_NonNumbers_Test.alwaysTrue_, Generated_NonNumbers_Test.sometimesTrue_, (Object l, Object r) -> TemporalOps.and(l, r), null));
+    Assert.assertEquals("Expected: " + new TemporalValue().slice(LocalDate.MIN, false).slice(Generated_NonNumbers_Test.date01_, true) + ", but was: " + TemporalValueHelper.perform(Generated_NonNumbers_Test.alwaysTrue_, Generated_NonNumbers_Test.sometimesTrue_, (Object l, Object r) -> TemporalOps.and(l, r), null), new TemporalValue().slice(LocalDate.MIN, false).slice(Generated_NonNumbers_Test.date01_, true), TemporalValueHelper.perform(Generated_NonNumbers_Test.alwaysTrue_, Generated_NonNumbers_Test.sometimesTrue_, (Object l, Object r) -> TemporalOps.and(l, r), null));
   }
   @Test
   public void testBooleans_item3_7638810057883567516() throws Throwable {
-    Assert.assertEquals("Expected: " + new TemporalValue().slice((LocalDate) LocalDate.MIN, true) + ", but was: " + TemporalValueHelper.perform(Generated_NonNumbers_Test.alwaysTrue_, Generated_NonNumbers_Test.sometimesTrue_, (Object l, Object r) -> TemporalOps.or(l, r), null), (Object) new TemporalValue().slice((LocalDate) LocalDate.MIN, true), (Object) TemporalValueHelper.perform(Generated_NonNumbers_Test.alwaysTrue_, Generated_NonNumbers_Test.sometimesTrue_, (Object l, Object r) -> TemporalOps.or(l, r), null));
+    Assert.assertEquals("Expected: " + new TemporalValue().slice(LocalDate.MIN, true) + ", but was: " + TemporalValueHelper.perform(Generated_NonNumbers_Test.alwaysTrue_, Generated_NonNumbers_Test.sometimesTrue_, (Object l, Object r) -> TemporalOps.or(l, r), null), new TemporalValue().slice(LocalDate.MIN, true), TemporalValueHelper.perform(Generated_NonNumbers_Test.alwaysTrue_, Generated_NonNumbers_Test.sometimesTrue_, (Object l, Object r) -> TemporalOps.or(l, r), null));
   }
   @Test
   public void testBooleans_item4_7638810057883729267() throws Throwable {
-    Assert.assertEquals("Expected: " + Generated_NonNumbers_Test.alwaysTrue_ + ", but was: " + TemporalValueHelper.perform(Generated_NonNumbers_Test.alwaysTrue_, Generated_NonNumbers_Test.sometimesTrue_, (Object l, Object r) -> TemporalOps.or(l, r), null), (Object) Generated_NonNumbers_Test.alwaysTrue_, (Object) TemporalValueHelper.perform(Generated_NonNumbers_Test.alwaysTrue_, Generated_NonNumbers_Test.sometimesTrue_, (Object l, Object r) -> TemporalOps.or(l, r), null));
+    Assert.assertEquals("Expected: " + Generated_NonNumbers_Test.alwaysTrue_ + ", but was: " + TemporalValueHelper.perform(Generated_NonNumbers_Test.alwaysTrue_, Generated_NonNumbers_Test.sometimesTrue_, (Object l, Object r) -> TemporalOps.or(l, r), null), Generated_NonNumbers_Test.alwaysTrue_, TemporalValueHelper.perform(Generated_NonNumbers_Test.alwaysTrue_, Generated_NonNumbers_Test.sometimesTrue_, (Object l, Object r) -> TemporalOps.or(l, r), null));
   }
   @Test
   public void testBooleans_item5_7638810057883648812() throws Throwable {
-    Assert.assertEquals("Expected: " + Generated_NonNumbers_Test.alwaysTrue_ + ", but was: " + TemporalValueHelper.perform(Generated_NonNumbers_Test.alwaysTrue_, Generated_NonNumbers_Test.sometimesTrue_, (Object l, Object r) -> TemporalOps.or(l, r), null), (Object) Generated_NonNumbers_Test.alwaysTrue_, (Object) TemporalValueHelper.perform(Generated_NonNumbers_Test.alwaysTrue_, Generated_NonNumbers_Test.sometimesTrue_, (Object l, Object r) -> TemporalOps.or(l, r), null));
+    Assert.assertEquals("Expected: " + Generated_NonNumbers_Test.alwaysTrue_ + ", but was: " + TemporalValueHelper.perform(Generated_NonNumbers_Test.alwaysTrue_, Generated_NonNumbers_Test.sometimesTrue_, (Object l, Object r) -> TemporalOps.or(l, r), null), Generated_NonNumbers_Test.alwaysTrue_, TemporalValueHelper.perform(Generated_NonNumbers_Test.alwaysTrue_, Generated_NonNumbers_Test.sometimesTrue_, (Object l, Object r) -> TemporalOps.or(l, r), null));
   }
-  public static final TemporalValue helloWorld_ = new TemporalValue().slice((LocalDate) Generated_NonNumbers_Test.date01_, "hello").slice((LocalDate) Generated_NonNumbers_Test.date02_, "world");
-  public static final TemporalValue a_ = new TemporalValue().slice((LocalDate) Generated_NonNumbers_Test.date01_, "A");
+  public static final TemporalValue helloWorld_ = new TemporalValue().slice(Generated_NonNumbers_Test.date01_, "hello").slice(Generated_NonNumbers_Test.date02_, "world");
+  public static final TemporalValue a_ = new TemporalValue().slice(Generated_NonNumbers_Test.date01_, "A");
   public static final TemporalValue b_ = TemporalValueHelper.perform(Generated_NonNumbers_Test.a_, "B", (Object l, Object r) -> EqualsHelper.notEquals(l, r), null);
   public static final TemporalValue c_ = TemporalValueHelper.perform(Generated_NonNumbers_Test.a_, "A", (Object l, Object r) -> EqualsHelper.equals(l, r), null);
   @Test

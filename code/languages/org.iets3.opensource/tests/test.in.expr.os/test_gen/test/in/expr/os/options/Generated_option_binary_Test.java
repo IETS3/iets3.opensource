@@ -159,67 +159,67 @@ public class Generated_option_binary_Test {
   }
   @Test
   public void comparision_item0_3577803897277449167() throws Throwable {
-    Assert.assertEquals("Expected: " + true + ", but was: " + (!(AH.isLess((Number) new BigInteger("1"), (Number) new BigInteger("0")))), (Object) true, (Object) !(AH.isLess((Number) new BigInteger("1"), (Number) new BigInteger("0"))));
+    Assert.assertEquals("Expected: " + true + ", but was: " + (!(AH.isLess(new BigInteger("1"), new BigInteger("0")))), (Object) true, (Object) !(AH.isLess(new BigInteger("1"), new BigInteger("0"))));
   }
   @Test
   public void comparision_item1_3577803897277449173() throws Throwable {
-    Assert.assertEquals("Expected: " + true + ", but was: " + (!(AH.isLess((Number) new BigInteger("1"), (Number) new BigInteger("1")))), (Object) true, (Object) !(AH.isLess((Number) new BigInteger("1"), (Number) new BigInteger("1"))));
+    Assert.assertEquals("Expected: " + true + ", but was: " + (!(AH.isLess(new BigInteger("1"), new BigInteger("1")))), (Object) true, (Object) !(AH.isLess(new BigInteger("1"), new BigInteger("1"))));
   }
   @Test
   public void comparision_item2_3577803897277449179() throws Throwable {
-    Assert.assertEquals("Expected: " + false + ", but was: " + (!(AH.isLess((Number) new BigInteger("1"), (Number) new BigInteger("2")))), (Object) false, (Object) !(AH.isLess((Number) new BigInteger("1"), (Number) new BigInteger("2"))));
+    Assert.assertEquals("Expected: " + false + ", but was: " + (!(AH.isLess(new BigInteger("1"), new BigInteger("2")))), (Object) false, (Object) !(AH.isLess(new BigInteger("1"), new BigInteger("2"))));
   }
   @Test
   public void comparision_item4_3577803897277449186() throws Throwable {
-    Assert.assertEquals("Expected: " + true + ", but was: " + AH.isGreater((Number) new BigInteger("1"), (Number) new BigInteger("0")), (Object) true, (Object) AH.isGreater((Number) new BigInteger("1"), (Number) new BigInteger("0")));
+    Assert.assertEquals("Expected: " + true + ", but was: " + AH.isGreater(new BigInteger("1"), new BigInteger("0")), (Object) true, (Object) AH.isGreater(new BigInteger("1"), new BigInteger("0")));
   }
   @Test
   public void comparision_item5_3577803897277449192() throws Throwable {
-    Assert.assertEquals("Expected: " + false + ", but was: " + AH.isGreater((Number) new BigInteger("1"), (Number) new BigInteger("1")), (Object) false, (Object) AH.isGreater((Number) new BigInteger("1"), (Number) new BigInteger("1")));
+    Assert.assertEquals("Expected: " + false + ", but was: " + AH.isGreater(new BigInteger("1"), new BigInteger("1")), (Object) false, (Object) AH.isGreater(new BigInteger("1"), new BigInteger("1")));
   }
   @Test
   public void comparision_item6_3577803897277449198() throws Throwable {
-    Assert.assertEquals("Expected: " + false + ", but was: " + AH.isGreater((Number) new BigInteger("1"), (Number) new BigInteger("2")), (Object) false, (Object) AH.isGreater((Number) new BigInteger("1"), (Number) new BigInteger("2")));
+    Assert.assertEquals("Expected: " + false + ", but was: " + AH.isGreater(new BigInteger("1"), new BigInteger("2")), (Object) false, (Object) AH.isGreater(new BigInteger("1"), new BigInteger("2")));
   }
   @Test
   public void comparision_item8_3577803897277449205() throws Throwable {
-    Assert.assertEquals("Expected: " + false + ", but was: " + (!(AH.isGreater((Number) new BigInteger("1"), (Number) new BigInteger("0")))), (Object) false, (Object) !(AH.isGreater((Number) new BigInteger("1"), (Number) new BigInteger("0"))));
+    Assert.assertEquals("Expected: " + false + ", but was: " + (!(AH.isGreater(new BigInteger("1"), new BigInteger("0")))), (Object) false, (Object) !(AH.isGreater(new BigInteger("1"), new BigInteger("0"))));
   }
   @Test
   public void comparision_item9_3577803897277449211() throws Throwable {
-    Assert.assertEquals("Expected: " + true + ", but was: " + (!(AH.isGreater((Number) new BigInteger("1"), (Number) new BigInteger("1")))), (Object) true, (Object) !(AH.isGreater((Number) new BigInteger("1"), (Number) new BigInteger("1"))));
+    Assert.assertEquals("Expected: " + true + ", but was: " + (!(AH.isGreater(new BigInteger("1"), new BigInteger("1")))), (Object) true, (Object) !(AH.isGreater(new BigInteger("1"), new BigInteger("1"))));
   }
   @Test
   public void comparision_item10_3577803897277449217() throws Throwable {
-    Assert.assertEquals("Expected: " + true + ", but was: " + (!(AH.isGreater((Number) new BigInteger("1"), (Number) new BigInteger("2")))), (Object) true, (Object) !(AH.isGreater((Number) new BigInteger("1"), (Number) new BigInteger("2"))));
+    Assert.assertEquals("Expected: " + true + ", but was: " + (!(AH.isGreater(new BigInteger("1"), new BigInteger("2")))), (Object) true, (Object) !(AH.isGreater(new BigInteger("1"), new BigInteger("2"))));
   }
   @Test
   public void comparision_item12_3577803897277449224() throws Throwable {
-    Assert.assertEquals("Expected: " + false + ", but was: " + AH.isLess((Number) new BigInteger("1"), (Number) new BigInteger("0")), (Object) false, (Object) AH.isLess((Number) new BigInteger("1"), (Number) new BigInteger("0")));
+    Assert.assertEquals("Expected: " + false + ", but was: " + AH.isLess(new BigInteger("1"), new BigInteger("0")), (Object) false, (Object) AH.isLess(new BigInteger("1"), new BigInteger("0")));
   }
   @Test
   public void comparision_item13_3577803897277449230() throws Throwable {
-    Assert.assertEquals("Expected: " + false + ", but was: " + AH.isLess((Number) new BigInteger("1"), (Number) new BigInteger("1")), (Object) false, (Object) AH.isLess((Number) new BigInteger("1"), (Number) new BigInteger("1")));
+    Assert.assertEquals("Expected: " + false + ", but was: " + AH.isLess(new BigInteger("1"), new BigInteger("1")), (Object) false, (Object) AH.isLess(new BigInteger("1"), new BigInteger("1")));
   }
   @Test
   public void comparision_item14_3577803897277449236() throws Throwable {
-    Assert.assertEquals("Expected: " + true + ", but was: " + AH.isLess((Number) new BigInteger("1"), (Number) new BigInteger("2")), (Object) true, (Object) AH.isLess((Number) new BigInteger("1"), (Number) new BigInteger("2")));
+    Assert.assertEquals("Expected: " + true + ", but was: " + AH.isLess(new BigInteger("1"), new BigInteger("2")), (Object) true, (Object) AH.isLess(new BigInteger("1"), new BigInteger("2")));
   }
   @Test
   public void comparision_item16_3577803897277449243() throws Throwable {
-    Assert.assertEquals("Expected: " + true + ", but was: " + AH.isEqual((Number) new BigInteger("1"), (Number) new BigInteger("1")), (Object) true, (Object) AH.isEqual((Number) new BigInteger("1"), (Number) new BigInteger("1")));
+    Assert.assertEquals("Expected: " + true + ", but was: " + AH.isEqual(new BigInteger("1"), new BigInteger("1")), (Object) true, (Object) AH.isEqual(new BigInteger("1"), new BigInteger("1")));
   }
   @Test
   public void comparision_item17_3577803897277449249() throws Throwable {
-    Assert.assertEquals("Expected: " + false + ", but was: " + AH.isEqual((Number) new BigInteger("1"), (Number) new BigInteger("2")), (Object) false, (Object) AH.isEqual((Number) new BigInteger("1"), (Number) new BigInteger("2")));
+    Assert.assertEquals("Expected: " + false + ", but was: " + AH.isEqual(new BigInteger("1"), new BigInteger("2")), (Object) false, (Object) AH.isEqual(new BigInteger("1"), new BigInteger("2")));
   }
   @Test
   public void comparision_item18_3577803897277449255() throws Throwable {
-    Assert.assertEquals("Expected: " + false + ", but was: " + (!(AH.isEqual((Number) new BigInteger("1"), (Number) new BigInteger("1")))), (Object) false, (Object) !(AH.isEqual((Number) new BigInteger("1"), (Number) new BigInteger("1"))));
+    Assert.assertEquals("Expected: " + false + ", but was: " + (!(AH.isEqual(new BigInteger("1"), new BigInteger("1")))), (Object) false, (Object) !(AH.isEqual(new BigInteger("1"), new BigInteger("1"))));
   }
   @Test
   public void comparision_item19_3577803897277449261() throws Throwable {
-    Assert.assertEquals("Expected: " + true + ", but was: " + (!(AH.isEqual((Number) new BigInteger("1"), (Number) new BigInteger("2")))), (Object) true, (Object) !(AH.isEqual((Number) new BigInteger("1"), (Number) new BigInteger("2"))));
+    Assert.assertEquals("Expected: " + true + ", but was: " + (!(AH.isEqual(new BigInteger("1"), new BigInteger("2")))), (Object) true, (Object) !(AH.isEqual(new BigInteger("1"), new BigInteger("2"))));
   }
 
 
