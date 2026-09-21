@@ -10,6 +10,9 @@
     <import index="w824" ref="r:edae7384-9851-4eb2-a7ff-b35acf8558a0(org.iets3.contextfilter.structure)" />
   </imports>
   <registry>
+    <language id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior">
+      <concept id="3235159848334022093" name="jetbrains.mps.lang.behavior.structure.Node_ConceptMethodCall" flags="nn" index="3zqWPK" />
+    </language>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
       <concept id="1197027756228" name="jetbrains.mps.baseLanguage.structure.DotExpression" flags="nn" index="2OqwBi">
         <child id="1197027771414" name="operand" index="2Oq$k0" />
@@ -49,7 +52,6 @@
       <concept id="1138411891628" name="jetbrains.mps.lang.smodel.structure.SNodeOperation" flags="nn" index="eCIE_">
         <child id="1144104376918" name="parameter" index="1xVPHs" />
       </concept>
-      <concept id="1179409122411" name="jetbrains.mps.lang.smodel.structure.Node_ConceptMethodCall" flags="nn" index="2qgKlT" />
       <concept id="1171407110247" name="jetbrains.mps.lang.smodel.structure.Node_GetAncestorOperation" flags="nn" index="2Xjw5R" />
       <concept id="1144101972840" name="jetbrains.mps.lang.smodel.structure.OperationParm_Concept" flags="ng" index="1xMEDy">
         <child id="1207343664468" name="conceptArgument" index="ri$Ld" />
@@ -99,12 +101,12 @@
         </node>
         <node concept="3clFbF" id="4QhQc5k8ojA" role="3cqZAp">
           <node concept="2OqwBi" id="4QhQc5k8pxS" role="3clFbG">
-            <node concept="2qgKlT" id="4QhQc5k8pMW" role="2OqNvi">
+            <node concept="3zqWPK" id="5DJjBfj0c2p" role="2OqNvi">
               <ref role="37wK5l" to="9mzm:h84Hs_YCIm" resolve="updateSelection" />
-              <node concept="37vLTw" id="4QhQc5k8qNQ" role="37wK5m">
+              <node concept="37vLTw" id="5DJjBfj0c2r" role="37wK5m">
                 <ref role="3cqZAo" node="4QhQc5k8qBe" resolve="contextOwner" />
               </node>
-              <node concept="37vLTw" id="4QhQc5k8vIb" role="37wK5m">
+              <node concept="37vLTw" id="5DJjBfj0c2s" role="37wK5m">
                 <ref role="3cqZAo" node="4QhQc5k8qBe" resolve="contextOwner" />
               </node>
             </node>
