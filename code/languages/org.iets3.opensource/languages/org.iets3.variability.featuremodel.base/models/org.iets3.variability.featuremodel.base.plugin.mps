@@ -41,6 +41,7 @@
     <import index="lzb2" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.ui(MPS.IDEA/)" />
     <import index="rmn3" ref="r:2f587aa6-2d3f-4726-9564-7648183caf97(org.iets3.variability.base.structure)" />
     <import index="o8zo" ref="r:314576fc-3aee-4386-a0a5-a38348ac317d(jetbrains.mps.scope)" />
+    <import index="2rbz" ref="r:aeef8772-8af4-45c3-a762-623d4009d953(org.iets3.variability.base.plugin)" />
   </imports>
   <registry>
     <language id="28f9e497-3b42-4291-aeba-0a1039153ab1" name="jetbrains.mps.lang.plugin">
@@ -76,9 +77,14 @@
       </concept>
       <concept id="1188207840427" name="jetbrains.mps.baseLanguage.structure.AnnotationInstance" flags="nn" index="2AHcQZ">
         <reference id="1188208074048" name="annotation" index="2AI5Lk" />
+        <child id="1188214630783" name="value" index="2B76xF" />
       </concept>
       <concept id="1188208481402" name="jetbrains.mps.baseLanguage.structure.HasAnnotation" flags="ngI" index="2AJDlI">
         <child id="1188208488637" name="annotation" index="2AJF6D" />
+      </concept>
+      <concept id="1188214545140" name="jetbrains.mps.baseLanguage.structure.AnnotationInstanceValue" flags="ng" index="2B6LJw">
+        <reference id="1188214555875" name="key" index="2B6OnR" />
+        <child id="1188214607812" name="value" index="2B70Vg" />
       </concept>
       <concept id="1095950406618" name="jetbrains.mps.baseLanguage.structure.DivExpression" flags="nn" index="FJ1c_" />
       <concept id="1154032098014" name="jetbrains.mps.baseLanguage.structure.AbstractLoopStatement" flags="nn" index="2LF5Ji">
@@ -133,6 +139,7 @@
       <concept id="1068390468198" name="jetbrains.mps.baseLanguage.structure.ClassConcept" flags="ig" index="312cEu">
         <property id="1075300953594" name="abstractClass" index="1sVAO0" />
         <property id="1221565133444" name="isFinal" index="1EXbeo" />
+        <child id="1095933932569" name="implementedInterface" index="EKbjA" />
         <child id="1165602531693" name="superclass" index="1zkMxy" />
       </concept>
       <concept id="1068431474542" name="jetbrains.mps.baseLanguage.structure.VariableDeclaration" flags="ng" index="33uBYm">
@@ -296,6 +303,9 @@
       </concept>
       <concept id="8465538089690331500" name="jetbrains.mps.baseLanguage.javadoc.structure.CommentLine" flags="ng" index="TZ5HA">
         <child id="8970989240999019149" name="part" index="1dT_Ay" />
+      </concept>
+      <concept id="8465538089690331492" name="jetbrains.mps.baseLanguage.javadoc.structure.DeprecatedBlockDocTag" flags="ng" index="TZ5HI">
+        <child id="2667874559098216723" name="text" index="3HnX3l" />
       </concept>
       <concept id="8970989240999019143" name="jetbrains.mps.baseLanguage.javadoc.structure.TextCommentLinePart" flags="ng" index="1dT_AC">
         <property id="8970989240999019144" name="text" index="1dT_AB" />
@@ -6287,10 +6297,108 @@
     <node concept="2tJIrI" id="307NTAcZrTN" role="jymVt" />
     <node concept="3clFb_" id="26cjRACVPUy" role="jymVt">
       <property role="TrG5h" value="getPriorityLevel" />
-      <property role="1EzhhJ" value="true" />
       <node concept="10Oyi0" id="26cjRACVPUz" role="3clF45" />
       <node concept="3Tm1VV" id="26cjRACVPU$" role="1B3o_S" />
-      <node concept="3clFbS" id="26cjRACVPU_" role="3clF47" />
+      <node concept="3clFbS" id="26cjRACVPU_" role="3clF47">
+        <node concept="3clFbF" id="7Sbg4UjQsVA" role="3cqZAp">
+          <node concept="37vLTw" id="7Sbg4UjQsV_" role="3clFbG">
+            <ref role="3cqZAo" to="2rbz:7Sbg4UjOCYU" resolve="DEFAULT_PRIORITY" />
+          </node>
+        </node>
+      </node>
+      <node concept="P$JXv" id="7Sbg4UjQlit" role="lGtFl">
+        <node concept="TZ5HI" id="7Sbg4UjQliu" role="3nqlJM">
+          <node concept="TZ5HA" id="7Sbg4UjQliv" role="3HnX3l">
+            <node concept="1dT_AC" id="7Sbg4UjQoWe" role="1dT_Ay">
+              <property role="1dT_AB" value="Replaced by IExtensionWithPriority.priority()" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="2AHcQZ" id="7Sbg4UjQliw" role="2AJF6D">
+        <ref role="2AI5Lk" to="wyt6:~Deprecated" resolve="Deprecated" />
+        <node concept="2B6LJw" id="7Sbg4UjQlog" role="2B76xF">
+          <ref role="2B6OnR" to="wyt6:~Deprecated.since()" resolve="since" />
+          <node concept="Xl_RD" id="7Sbg4UjQoVd" role="2B70Vg">
+            <property role="Xl_RC" value="2026-05-21" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="2tJIrI" id="7Sbg4UjQts4" role="jymVt" />
+    <node concept="3clFb_" id="7Sbg4UjQtyE" role="jymVt">
+      <property role="TrG5h" value="priority" />
+      <node concept="10Oyi0" id="7Sbg4UjQtyF" role="3clF45" />
+      <node concept="3Tm1VV" id="7Sbg4UjQtyG" role="1B3o_S" />
+      <node concept="2AHcQZ" id="7Sbg4UjQtyK" role="2AJF6D">
+        <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
+      </node>
+      <node concept="3clFbS" id="7Sbg4UjQtyL" role="3clF47">
+        <node concept="3SKdUt" id="7Sbg4UjQEJJ" role="3cqZAp">
+          <node concept="1PaTwC" id="7Sbg4UjQEJK" role="1aUNEU">
+            <node concept="3oM_SD" id="7Sbg4UjQESL" role="1PaTwD">
+              <property role="3oM_SC" value="forward" />
+            </node>
+            <node concept="3oM_SD" id="7Sbg4UjQET2" role="1PaTwD">
+              <property role="3oM_SC" value="to" />
+            </node>
+            <node concept="3oM_SD" id="7Sbg4UjQET4" role="1PaTwD">
+              <property role="3oM_SC" value="old" />
+            </node>
+            <node concept="3oM_SD" id="7Sbg4UjQETl" role="1PaTwD">
+              <property role="3oM_SC" value="method" />
+            </node>
+            <node concept="3oM_SD" id="7Sbg4UjQETm" role="1PaTwD">
+              <property role="3oM_SC" value="as" />
+            </node>
+            <node concept="3oM_SD" id="7Sbg4UjQETB" role="1PaTwD">
+              <property role="3oM_SC" value="some" />
+            </node>
+            <node concept="3oM_SD" id="7Sbg4UjQETC" role="1PaTwD">
+              <property role="3oM_SC" value="extension" />
+            </node>
+            <node concept="3oM_SD" id="7Sbg4UjQETT" role="1PaTwD">
+              <property role="3oM_SC" value="points" />
+            </node>
+            <node concept="3oM_SD" id="7Sbg4UjQEUa" role="1PaTwD">
+              <property role="3oM_SC" value="might" />
+            </node>
+            <node concept="3oM_SD" id="7Sbg4UjQEUr" role="1PaTwD">
+              <property role="3oM_SC" value="override" />
+            </node>
+            <node concept="3oM_SD" id="7Sbg4UjQEUW" role="1PaTwD">
+              <property role="3oM_SC" value="it" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="7Sbg4UjQEbu" role="3cqZAp">
+          <node concept="1rXfSq" id="7Sbg4UjQEbt" role="3clFbG">
+            <ref role="37wK5l" node="26cjRACVPUy" resolve="getPriorityLevel" />
+          </node>
+        </node>
+      </node>
+      <node concept="P$JXv" id="7Sbg4UjQG3Y" role="lGtFl">
+        <node concept="TZ5HA" id="7Sbg4UjQG3Z" role="TZ5H$">
+          <node concept="1dT_AC" id="7Sbg4UjQG40" role="1dT_Ay">
+            <property role="1dT_AB" value="Newer extensions of this class can override priority()." />
+          </node>
+        </node>
+        <node concept="TZ5HA" id="7Sbg4UjQGmD" role="TZ5H$">
+          <node concept="1dT_AC" id="7Sbg4UjQGmE" role="1dT_Ay">
+            <property role="1dT_AB" value="Older extensions still can use getPriorityLevel(), but should migrate to the new one." />
+          </node>
+        </node>
+        <node concept="TZ5HA" id="7Sbg4UjQGwB" role="TZ5H$">
+          <node concept="1dT_AC" id="7Sbg4UjQGwC" role="1dT_Ay">
+            <property role="1dT_AB" value="" />
+          </node>
+        </node>
+        <node concept="TZ5HA" id="7Sbg4UjQGwD" role="TZ5H$">
+          <node concept="1dT_AC" id="7Sbg4UjQGwE" role="1dT_Ay">
+            <property role="1dT_AB" value="TODO: Delete this implementation as soon as deprecation window for getPriorityLevel() closes." />
+          </node>
+        </node>
+      </node>
     </node>
     <node concept="2tJIrI" id="307NTAd047q" role="jymVt" />
     <node concept="3clFb_" id="307NTAcZu5B" role="jymVt">
@@ -6388,29 +6496,19 @@
         <node concept="1dT_AC" id="7SixFixkY7U" role="1dT_Ay" />
       </node>
     </node>
+    <node concept="3uibUv" id="7Sbg4UjQl5y" role="EKbjA">
+      <ref role="3uigEE" to="2rbz:7Sbg4UjPubL" resolve="IExtensionWithPriority" />
+    </node>
+    <node concept="3uibUv" id="7Sbg4UjQpBC" role="1zkMxy">
+      <ref role="3uigEE" to="2rbz:7Sbg4UjPvkH" resolve="AbstractExtensionWithPriority" />
+    </node>
   </node>
   <node concept="312cEu" id="307NTAcZvpY">
     <property role="3GE5qa" value="tailoring" />
     <property role="TrG5h" value="DefaultIETS3VariabilitySettings" />
-    <node concept="2tJIrI" id="307NTAd04rZ" role="jymVt" />
     <node concept="3Tm1VV" id="307NTAcZvpZ" role="1B3o_S" />
     <node concept="3uibUv" id="307NTAcZvrW" role="1zkMxy">
       <ref role="3uigEE" node="307NTAcYTHv" resolve="IETS3VariabilitySettings" />
-    </node>
-    <node concept="3clFb_" id="26cjRACVSeU" role="jymVt">
-      <property role="TrG5h" value="getPriorityLevel" />
-      <node concept="10Oyi0" id="26cjRACVSeV" role="3clF45" />
-      <node concept="3Tm1VV" id="26cjRACVSeW" role="1B3o_S" />
-      <node concept="3clFbS" id="26cjRACVSeY" role="3clF47">
-        <node concept="3clFbF" id="26cjRACVSxu" role="3cqZAp">
-          <node concept="3cmrfG" id="26cjRACVSxt" role="3clFbG">
-            <property role="3cmrfH" value="0" />
-          </node>
-        </node>
-      </node>
-      <node concept="2AHcQZ" id="26cjRACVSeZ" role="2AJF6D">
-        <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
-      </node>
     </node>
     <node concept="2tJIrI" id="307NTAd04ui" role="jymVt" />
     <node concept="3clFb_" id="307NTAdNFOi" role="jymVt">

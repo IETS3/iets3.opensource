@@ -124,10 +124,15 @@
     <echo message="generating" />
     <generate fork="true" logLevel="${mps.ant.log}">      
       <settings refid="m2m-0" />
+      <plugin path="${artifacts.com.mbeddr.platform}/com.mbeddr.mpsutil.common" id="com.mbeddr.mpsutil.common" />
       <plugin path="${artifacts.com.mbeddr.platform}/com.mbeddr.platform.build" id="com.mbeddr.platform.build" />
       <plugin path="${artifacts.com.mbeddr.platform}/de.itemis.mps.extensions.build" id="de.itemis.mps.extensions.build" />
+      <plugin path="${artifacts.com.mbeddr.platform}/mps-apache-commons" id="org.apache.commons" />
+      <plugin path="${artifacts.mps}/lib/mps-workbench.jar" id="com.intellij.modules.mps" />
       <plugin path="${artifacts.mps}/plugins/mps-build" id="jetbrains.mps.build" />
       <plugin path="${artifacts.mps}/plugins/mps-core" id="jetbrains.mps.core" />
+      <plugin path="${artifacts.mps}/plugins/mps-junit5" id="jetbrains.mps.junit5" />
+      <plugin path="${artifacts.mps}/plugins/mps-testing" id="jetbrains.mps.testing" />
       <chunk>
         <module file="${iets3.lang.opensource}/languages/org.iets3.opensource.build.gentests/org.iets3.opensource.build.gentests.mpl" />
         <module file="${iets3.lang.opensource}/solutions/org.iets3.opensource.build.gentests.rt/org.iets3.opensource.build.gentests.rt.msd" />
@@ -222,6 +227,7 @@
         <fileset file="${artifacts.mps}/lib/stats.jar" />
         <fileset file="${artifacts.mps}/lib/platform-loader.jar" />
         <fileset file="${artifacts.mps}/lib/trove.jar" />
+        <fileset file="${artifacts.com.mbeddr.platform}/com.mbeddr.mpsutil.common/languages/group.common/com.mbeddr.mpsutil.common.jar" />
         <fileset file="${artifacts.mps}/languages/runtimes/jetbrains.mps.analyzers.runtime.jar" />
         <fileset file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.logging.runtime.jar" />
         <fileset file="${artifacts.mps}/plugins/mps-build/languages/build/jetbrains.mps.build.jar" />

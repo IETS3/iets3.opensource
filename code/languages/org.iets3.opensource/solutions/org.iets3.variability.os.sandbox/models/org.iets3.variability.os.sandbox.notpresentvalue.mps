@@ -30,6 +30,7 @@
       </concept>
     </language>
     <language id="9b66c5c9-38bf-4315-a96f-9f4e212c69cb" name="org.iets3.variability.base">
+      <concept id="3989254429232912648" name="org.iets3.variability.base.structure.EmptyVariabilityContent" flags="ng" index="12i7jc" />
       <concept id="3989254429232883574" name="org.iets3.variability.base.structure.VariabilityModelChunk" flags="ng" index="12icEM">
         <child id="3989254429232890937" name="contents" index="12i2BX" />
       </concept>
@@ -61,6 +62,9 @@
       <concept id="3989254429233029649" name="org.iets3.variability.featuremodel.base.structure.FeatureModel" flags="ng" index="12iwZl">
         <child id="3989254429233029900" name="root" index="12iwV8" />
         <child id="5504663836844191437" name="constraints" index="1Rrh1l" />
+      </concept>
+      <concept id="3989254429233062248" name="org.iets3.variability.featuremodel.base.structure.FeatureModelInclude" flags="ng" index="12iSMG">
+        <reference id="3989254429233062249" name="fm" index="12iSMH" />
       </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
@@ -130,6 +134,22 @@
           <node concept="21IWn0" id="3TeKUdPfWqn" role="21GevL">
             <property role="TrG5h" value="d" />
             <node concept="30bXR$" id="3TeKUdPfWql" role="21GYI0" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="12i7jc" id="5miEvCz_XOR" role="12i2BX" />
+    <node concept="12i7jc" id="5miEvCz_XOS" role="12i2BX" />
+    <node concept="12i7jc" id="5miEvCz_XOT" role="12i2BX" />
+    <node concept="12iwZl" id="5miEvCz_XSd" role="12i2BX">
+      <property role="bVyBI" value="1011413737" />
+      <node concept="12iwV3" id="5miEvCz_XSe" role="12iwV8">
+        <property role="TrG5h" value="M" />
+        <node concept="12iwV3" id="$eFy4P3JKT" role="12iwVe">
+          <property role="TrG5h" value="f" />
+          <node concept="12iSMG" id="3uwMEO1m_IF" role="12iwVe">
+            <property role="TrG5h" value="g" />
+            <ref role="12iSMH" node="3TeKUdOiNIJ" resolve="V" />
           </node>
         </node>
       </node>

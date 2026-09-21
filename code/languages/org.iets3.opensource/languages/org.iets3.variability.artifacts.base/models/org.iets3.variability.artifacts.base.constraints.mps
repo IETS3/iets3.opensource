@@ -639,25 +639,5 @@
       </node>
     </node>
   </node>
-  <node concept="1M2fIO" id="3iKj9$PPObE">
-    <property role="3GE5qa" value="configExpr" />
-    <ref role="1M2myG" to="i9mv:4zfp5i3JX6h" resolve="GlobalFeatureModelConfiguration" />
-    <node concept="9S07l" id="3iKj9$PPOdj" role="9Vyp8">
-      <node concept="3clFbS" id="3iKj9$PPOdk" role="2VODD2">
-        <node concept="3clFbF" id="3iKj9$PPOkB" role="3cqZAp">
-          <node concept="3fqX7Q" id="3iKj9$PPOY9" role="3clFbG">
-            <node concept="2OqwBi" id="3iKj9$PPOYb" role="3fr31v">
-              <node concept="nLn13" id="3iKj9$PPOYc" role="2Oq$k0" />
-              <node concept="1mIQ4w" id="3iKj9$PPOYd" role="2OqNvi">
-                <node concept="chp4Y" id="3iKj9$PPOYe" role="cj9EA">
-                  <ref role="cht4Q" to="rmn3:3tsFshP56tQ" resolve="VariabilityModelChunk" />
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
-      </node>
-    </node>
-  </node>
 </model>
 
