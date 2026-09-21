@@ -12346,6 +12346,11 @@
               <ref role="3bR37D" to="ffeo:7Kfy9QB6L0h" resolve="jetbrains.mps.baseLanguage.collections" />
             </node>
           </node>
+          <node concept="1SiIV0" id="7_igWy_fyqW" role="3bR37C">
+            <node concept="3bR9La" id="7_igWy_fyqX" role="1SiIV1">
+              <ref role="3bR37D" to="ffeo:7Kfy9QB6KZ0" resolve="jetbrains.mps.baseLanguageInternal" />
+            </node>
+          </node>
           <node concept="1BupzO" id="7_igWy_fyr1" role="3bR31x">
             <property role="3ZfqAx" value="generator/templates" />
             <property role="1Hdu6h" value="true" />

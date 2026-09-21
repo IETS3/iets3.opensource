@@ -107,7 +107,7 @@ The project is separated into the following virtual packages:
 
 ### expr
 
-The package _genjava_ contains interpreters for generating Java code from KernelF. It also included an example for generating Java code from state machines. The language `org.iets3.core.expr.genjava.optimizer` is a separate, readability-only generator that the Java generation plans run between the KernelF generators and the closures/collections generators: it inlines immediately invoked closures, folds constant conditions, drops redundant casts and parentheses and collapses builder-style closures into method chains, so that the semantics-oriented generators can stay simple.
+The package _genjava_ contains interpreters for generating Java code from KernelF. It also included an example for generating Java code from state machines. The language `org.iets3.core.expr.genjava.optimizer` is a separate, readability-only generator that the Java generation plans run between the KernelF generators and the closures/collections generators: it inlines immediately invoked closures, folds constant conditions, drops redundant casts and parentheses, collapses builder-style closures into method chains and turns anonymous classes over functional interfaces and the remaining closures into Java lambdas over JDK interfaces, so that the semantics-oriented generators can stay simple.
 
 #### Core language constructs (lang-core)
 
