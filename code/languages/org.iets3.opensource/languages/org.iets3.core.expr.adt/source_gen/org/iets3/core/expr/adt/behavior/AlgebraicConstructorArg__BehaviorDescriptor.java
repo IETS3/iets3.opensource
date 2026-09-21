@@ -7,7 +7,6 @@ import org.jetbrains.mps.openapi.language.SAbstractConcept;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import org.jetbrains.mps.openapi.model.SNode;
 import java.util.List;
@@ -15,7 +14,6 @@ import java.util.Arrays;
 import org.jetbrains.annotations.NotNull;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
-import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 import jetbrains.mps.smodel.builder.SNodeBuilder;
@@ -25,13 +23,11 @@ import org.jetbrains.mps.openapi.language.SConcept;
 public final class AlgebraicConstructorArg__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getConcept(0x5fe6cb132fbd4e21L, 0x9842785bdd6fc5b1L, 0x2224c74e27a1de64L, "org.iets3.core.expr.adt.structure.AlgebraicConstructorArg");
 
-  public static final SMethod<Boolean> isMulti_id28$LOSBI7yJ = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("isMulti").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(2460310434938910895L).languageId(0x9842785bdd6fc5b1L, 0x5fe6cb132fbd4e21L).build2();
-  public static final SMethod<SNode> effectiveType_id28$LOSBIpqT = new SMethodBuilder<SNode>(new SJavaCompoundTypeImpl((Class<SNode>) ((Class) Object.class))).name("effectiveType").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(2460310434938984121L).languageId(0x9842785bdd6fc5b1L, 0x5fe6cb132fbd4e21L).build2();
+  public static final SMethod<Boolean> isMulti_id28$LOSBI7yJ = new SMethodBuilder<>(Boolean.TYPE).name("isMulti").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(2460310434938910895L).languageId(0x9842785bdd6fc5b1L, 0x5fe6cb132fbd4e21L).build2();
+  public static final SMethod<SNode> effectiveType_id28$LOSBIpqT = new SMethodBuilder<>(SNode.class).name("effectiveType").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(2460310434938984121L).languageId(0x9842785bdd6fc5b1L, 0x5fe6cb132fbd4e21L).build2();
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(isMulti_id28$LOSBI7yJ, effectiveType_id28$LOSBIpqT);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(isMulti_id28$LOSBI7yJ, effectiveType_id28$LOSBIpqT);
 
-  private static void ___init___(@NotNull SNode __thisNode__) {
-  }
 
   /*package*/ static boolean isMulti_id28$LOSBI7yJ(@NotNull SNode __thisNode__) {
     return SLinkOperations.getTarget(__thisNode__, LINKS.multi$QO6u) != null;
@@ -47,10 +43,6 @@ public final class AlgebraicConstructorArg__BehaviorDescriptor extends BaseBHDes
   /*package*/ AlgebraicConstructorArg__BehaviorDescriptor() {
   }
 
-  @Override
-  protected void initNode(@NotNull SNode node, @NotNull SConstructor constructor, @Nullable Object[] parameters) {
-    ___init___(node);
-  }
 
   @Override
   protected <T> T invokeSpecial0(@NotNull SNode node, @NotNull SMethod<T> method, @Nullable Object[] parameters) {

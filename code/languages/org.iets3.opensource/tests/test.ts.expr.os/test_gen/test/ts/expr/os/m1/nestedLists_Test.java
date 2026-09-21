@@ -43,10 +43,6 @@ public class nestedLists_Test extends BaseTransformationTest {
     new TestBody(this).test_NodeEmptyListsRequireTypeCheck812622131363746495();
   }
   @Test
-  public void test_NodeTypeSystemWarningCheck812622131363746497() throws Throwable {
-    new TestBody(this).test_NodeTypeSystemWarningCheck812622131363746497();
-  }
-  @Test
   public void test_ErrorMessagesCheck8674017619090661648() throws Throwable {
     new TestBody(this).test_ErrorMessagesCheck8674017619090661648();
   }
@@ -100,13 +96,6 @@ public class nestedLists_Test extends BaseTransformationTest {
       runWithinCommand(() -> {
         SNode nodeToCheck = getNodeById("812622131363744447");
         new CheckExpectedMessageRunnable.CheckExpectedRuleMessageRunnable(nodeToCheck, MessageStatus.ERROR, new SNodePointer("r:1fd78142-d7d8-42c9-9cbb-0609b1bc5311(org.iets3.core.expr.collections.typesystem)", "2850607030363008863"), "", myProject.getRepository(), myProject.getPlatform()).run();
-      });
-    }
-    public void test_NodeTypeSystemWarningCheck812622131363746497() throws Exception {
-      initTestNodes();
-      runWithinCommand(() -> {
-        SNode nodeToCheck = getNodeById("812622131363744447");
-        new CheckExpectedMessageRunnable.CheckExpectedTypesystemMessageRunnable(nodeToCheck, MessageStatus.WARNING, "", myProject.getRepository(), myProject.getPlatform()).run();
       });
     }
     public void test_ErrorMessagesCheck8674017619090661648() throws Exception {

@@ -7,25 +7,21 @@ import org.jetbrains.mps.openapi.language.SAbstractConcept;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import java.util.List;
 import java.util.Arrays;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.mps.openapi.model.SNode;
-import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 
 public final class EthernetPortType__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getInterfaceConcept(0xc35abfa80db04d42L, 0xbb3ff46112aeb888L, 0x952418520a525adL, "org.iets3.components.hardware.structure.EthernetPortType");
 
-  public static final SMethod<String> defaultPortName_idcJpacq4Df4 = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("defaultPortName").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(229512757699056580L).languageId(0xb6713d118449c6e7L, 0xf0fd486f857743e9L).build2();
+  public static final SMethod<String> defaultPortName_idcJpacq4Df4 = new SMethodBuilder<>(String.class).name("defaultPortName").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(229512757699056580L).languageId(0xb6713d118449c6e7L, 0xf0fd486f857743e9L).build2();
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(defaultPortName_idcJpacq4Df4);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(defaultPortName_idcJpacq4Df4);
 
-  private static void ___init___(@NotNull SNode __thisNode__) {
-  }
 
   /*package*/ static String defaultPortName_idcJpacq4Df4(@NotNull SNode __thisNode__) {
     return "eth";
@@ -34,10 +30,6 @@ public final class EthernetPortType__BehaviorDescriptor extends BaseBHDescriptor
   /*package*/ EthernetPortType__BehaviorDescriptor() {
   }
 
-  @Override
-  protected void initNode(@NotNull SNode node, @NotNull SConstructor constructor, @Nullable Object[] parameters) {
-    ___init___(node);
-  }
 
   @Override
   protected <T> T invokeSpecial0(@NotNull SNode node, @NotNull SMethod<T> method, @Nullable Object[] parameters) {

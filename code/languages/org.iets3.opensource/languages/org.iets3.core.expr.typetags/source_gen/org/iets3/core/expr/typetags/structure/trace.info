@@ -13,7 +13,7 @@
       <unit at="11,0,131,0" name="org.iets3.core.expr.typetags.structure.ConceptPresentationAspectImpl" />
     </file>
     <file name="LanguageConceptSwitch.java">
-      <unit at="10,0,52,0" name="org.iets3.core.expr.typetags.structure.LanguageConceptSwitch" />
+      <unit at="12,0,60,0" name="org.iets3.core.expr.typetags.structure.LanguageConceptSwitch" />
     </file>
     <file name="StructureAspectDescriptor.java">
       <unit at="15,0,209,0" name="org.iets3.core.expr.typetags.structure.StructureAspectDescriptor" />
@@ -34,8 +34,8 @@
       <scope id="1759375669591494838" at="112,44,119,32" />
     </file>
     <file name="LanguageConceptSwitch.java">
-      <node id="1759375669591494838" at="23,0,24,0" concept="6" trace="TaggedType" />
-      <node id="1759375669591494838" at="38,55,39,49" concept="0" />
+      <node id="1759375669591494838" at="25,0,26,0" concept="6" trace="TaggedType" />
+      <node id="1759375669591494838" at="40,55,41,49" concept="0" />
     </file>
     <file name="StructureAspectDescriptor.java">
       <node id="1759375669591494838" at="27,0,28,0" concept="1" trace="myConceptTaggedType" />
@@ -71,8 +71,8 @@
       <scope id="2147137078513725388" at="120,42,126,30" />
     </file>
     <file name="LanguageConceptSwitch.java">
-      <node id="2147137078513725388" at="24,0,25,0" concept="6" trace="UnaryTag" />
-      <node id="2147137078513725388" at="39,49,40,47" concept="0" />
+      <node id="2147137078513725388" at="26,0,27,0" concept="6" trace="UnaryTag" />
+      <node id="2147137078513725388" at="41,49,42,47" concept="0" />
     </file>
     <file name="StructureAspectDescriptor.java">
       <node id="2147137078513725388" at="28,0,29,0" concept="1" trace="myConceptUnaryTag" />
@@ -105,8 +105,8 @@
       <scope id="2147137078514310913" at="95,45,102,33" />
     </file>
     <file name="LanguageConceptSwitch.java">
-      <node id="2147137078514310913" at="21,0,22,0" concept="6" trace="TagNegation" />
-      <node id="2147137078514310913" at="36,46,37,50" concept="0" />
+      <node id="2147137078514310913" at="23,0,24,0" concept="6" trace="TagNegation" />
+      <node id="2147137078514310913" at="38,46,39,50" concept="0" />
     </file>
     <file name="StructureAspectDescriptor.java">
       <node id="2147137078514310913" at="25,0,26,0" concept="1" trace="myConceptTagNegation" />
@@ -139,8 +139,8 @@
       <scope id="2247268800682302515" at="88,41,94,29" />
     </file>
     <file name="LanguageConceptSwitch.java">
-      <node id="2247268800682302515" at="20,0,21,0" concept="6" trace="NAryTag" />
-      <node id="2247268800682302515" at="35,48,36,46" concept="0" />
+      <node id="2247268800682302515" at="22,0,23,0" concept="6" trace="NAryTag" />
+      <node id="2247268800682302515" at="37,48,38,46" concept="0" />
     </file>
     <file name="StructureAspectDescriptor.java">
       <node id="2247268800682302515" at="24,0,25,0" concept="1" trace="myConceptNAryTag" />
@@ -174,8 +174,8 @@
       <scope id="3359996257534647723" at="103,50,111,38" />
     </file>
     <file name="LanguageConceptSwitch.java">
-      <node id="3359996257534647723" at="22,0,23,0" concept="6" trace="TaggedExpression" />
-      <node id="3359996257534647723" at="37,50,38,55" concept="0" />
+      <node id="3359996257534647723" at="24,0,25,0" concept="6" trace="TaggedExpression" />
+      <node id="3359996257534647723" at="39,50,40,55" concept="0" />
     </file>
     <file name="StructureAspectDescriptor.java">
       <node id="3359996257534647723" at="26,0,27,0" concept="1" trace="myConceptTaggedExpression" />
@@ -212,8 +212,8 @@
       <scope id="4715641174722179316" at="54,42,61,30" />
     </file>
     <file name="LanguageConceptSwitch.java">
-      <node id="4715641174722179316" at="15,0,16,0" concept="6" trace="EmptyTag" />
-      <node id="4715641174722179316" at="30,48,31,47" concept="0" />
+      <node id="4715641174722179316" at="17,0,18,0" concept="6" trace="EmptyTag" />
+      <node id="4715641174722179316" at="32,48,33,47" concept="0" />
     </file>
     <file name="StructureAspectDescriptor.java">
       <node id="4715641174722179316" at="19,0,20,0" concept="1" trace="myConceptEmptyTag" />
@@ -245,8 +245,8 @@
       <scope id="5431729334750431585" at="70,38,75,26" />
     </file>
     <file name="LanguageConceptSwitch.java">
-      <node id="5431729334750431585" at="17,0,18,0" concept="6" trace="ITag" />
-      <node id="5431729334750431585" at="32,47,33,43" concept="0" />
+      <node id="5431729334750431585" at="19,0,20,0" concept="6" trace="ITag" />
+      <node id="5431729334750431585" at="34,47,35,43" concept="0" />
     </file>
     <file name="StructureAspectDescriptor.java">
       <node id="5431729334750431585" at="21,0,22,0" concept="1" trace="myConceptITag" />
@@ -286,8 +286,8 @@
       <scope id="5431729334750544242" at="62,42,69,30" />
     </file>
     <file name="LanguageConceptSwitch.java">
-      <node id="5431729334750544242" at="16,0,17,0" concept="6" trace="ErrorTag" />
-      <node id="5431729334750544242" at="31,47,32,47" concept="0" />
+      <node id="5431729334750544242" at="18,0,19,0" concept="6" trace="ErrorTag" />
+      <node id="5431729334750544242" at="33,47,34,47" concept="0" />
     </file>
     <file name="StructureAspectDescriptor.java">
       <node id="5431729334750544242" at="20,0,21,0" concept="1" trace="myConceptErrorTag" />
@@ -321,8 +321,8 @@
       <scope id="5431729334750902514" at="31,52,37,40" />
     </file>
     <file name="LanguageConceptSwitch.java">
-      <node id="5431729334750902514" at="12,0,13,0" concept="6" trace="AbstractTaggedType" />
-      <node id="5431729334750902514" at="27,116,28,57" concept="0" />
+      <node id="5431729334750902514" at="14,0,15,0" concept="6" trace="AbstractTaggedType" />
+      <node id="5431729334750902514" at="29,116,30,57" concept="0" />
     </file>
     <file name="StructureAspectDescriptor.java">
       <node id="5431729334750902514" at="16,0,17,0" concept="1" trace="myConceptAbstractTaggedType" />
@@ -355,8 +355,8 @@
       <scope id="5805388625439268916" at="76,46,81,34" />
     </file>
     <file name="LanguageConceptSwitch.java">
-      <node id="5805388625439268916" at="18,0,19,0" concept="6" trace="ITagModifier" />
-      <node id="5805388625439268916" at="33,43,34,51" concept="0" />
+      <node id="5805388625439268916" at="20,0,21,0" concept="6" trace="ITagModifier" />
+      <node id="5805388625439268916" at="35,43,36,51" concept="0" />
     </file>
     <file name="StructureAspectDescriptor.java">
       <node id="5805388625439268916" at="22,0,23,0" concept="1" trace="myConceptITagModifier" />
@@ -393,8 +393,8 @@
       <scope id="5805388625439269019" at="38,44,45,32" />
     </file>
     <file name="LanguageConceptSwitch.java">
-      <node id="5805388625439269019" at="13,0,14,0" concept="6" trace="AtLeastTag" />
-      <node id="5805388625439269019" at="28,57,29,49" concept="0" />
+      <node id="5805388625439269019" at="15,0,16,0" concept="6" trace="AtLeastTag" />
+      <node id="5805388625439269019" at="30,57,31,49" concept="0" />
     </file>
     <file name="StructureAspectDescriptor.java">
       <node id="5805388625439269019" at="17,0,18,0" concept="1" trace="myConceptAtLeastTag" />
@@ -427,8 +427,8 @@
       <scope id="5805388625439269020" at="46,43,53,31" />
     </file>
     <file name="LanguageConceptSwitch.java">
-      <node id="5805388625439269020" at="14,0,15,0" concept="6" trace="AtMostTag" />
-      <node id="5805388625439269020" at="29,49,30,48" concept="0" />
+      <node id="5805388625439269020" at="16,0,17,0" concept="6" trace="AtMostTag" />
+      <node id="5805388625439269020" at="31,49,32,48" concept="0" />
     </file>
     <file name="StructureAspectDescriptor.java">
       <node id="5805388625439269020" at="18,0,19,0" concept="1" trace="myConceptAtMostTag" />
@@ -459,8 +459,8 @@
       <scope id="8196347919645043518" at="82,43,87,31" />
     </file>
     <file name="LanguageConceptSwitch.java">
-      <node id="8196347919645043518" at="19,0,20,0" concept="6" trace="IWithTags" />
-      <node id="8196347919645043518" at="34,51,35,48" concept="0" />
+      <node id="8196347919645043518" at="21,0,22,0" concept="6" trace="IWithTags" />
+      <node id="8196347919645043518" at="36,51,37,48" concept="0" />
     </file>
     <file name="StructureAspectDescriptor.java">
       <node id="8196347919645043518" at="23,0,24,0" concept="1" trace="myConceptIWithTags" />

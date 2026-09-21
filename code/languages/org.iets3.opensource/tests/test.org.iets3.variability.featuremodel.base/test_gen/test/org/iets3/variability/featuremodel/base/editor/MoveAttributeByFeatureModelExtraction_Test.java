@@ -53,7 +53,7 @@ public class MoveAttributeByFeatureModelExtraction_Test extends BaseTransformati
         ExtractFeatureModelHelper.split(getAnnotatedNode("featA"));
         List<SNode> attrAssigments = Sequence.fromIterable(AbstractFeatureConfigurationContent__BehaviorDescriptor.attributeAssignments_id30ECcbtQl70.invoke(SLinkOperations.getTarget(getAnnotatedNode("configFeatA"), LINKS.content$Wdfq))).toList();
 
-        Assert.assertEquals(1, ListSequence.fromList(attrAssigments).count());
+        Assert.assertEquals(Integer.valueOf(1), Integer.valueOf(ListSequence.fromList(attrAssigments).count()));
         SNode attrAssignment = ListSequence.fromList(attrAssigments).first();
 
         Assert.assertEquals(getAnnotatedNode("attrZ"), SLinkOperations.getTarget(attrAssignment, LINKS.attribute$J5jI));

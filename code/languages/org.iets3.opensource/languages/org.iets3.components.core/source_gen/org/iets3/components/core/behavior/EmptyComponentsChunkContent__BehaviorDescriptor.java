@@ -8,25 +8,21 @@ import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import org.jetbrains.mps.openapi.model.SNode;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import java.util.List;
 import java.util.Arrays;
 import org.jetbrains.annotations.NotNull;
 import java.util.ArrayList;
-import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 
 public final class EmptyComponentsChunkContent__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getConcept(0xf0fd486f857743e9L, 0xb6713d118449c6e7L, 0x6c4f9fd23e49f86eL, "org.iets3.components.core.structure.EmptyComponentsChunkContent");
 
-  public static final SMethod<Iterable<SNode>> dependencies_id1WCh2the5Vh = new SMethodBuilder<Iterable<SNode>>(new SJavaCompoundTypeImpl((Class<Iterable<SNode>>) ((Class) Object.class))).name("dependencies").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(2245119349901254353L).languageId(0xb6713d118449c6e7L, 0xf0fd486f857743e9L).build2();
+  public static final SMethod<Iterable<SNode>> dependencies_id1WCh2the5Vh = new SMethodBuilder<>((Class<Iterable<SNode>>) ((Class) Object.class)).name("dependencies").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(2245119349901254353L).languageId(0xb6713d118449c6e7L, 0xf0fd486f857743e9L).build2();
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(dependencies_id1WCh2the5Vh);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(dependencies_id1WCh2the5Vh);
 
-  private static void ___init___(@NotNull SNode __thisNode__) {
-  }
 
   /*package*/ static Iterable<SNode> dependencies_id1WCh2the5Vh(@NotNull SNode __thisNode__) {
     return new ArrayList<SNode>();
@@ -35,10 +31,6 @@ public final class EmptyComponentsChunkContent__BehaviorDescriptor extends BaseB
   /*package*/ EmptyComponentsChunkContent__BehaviorDescriptor() {
   }
 
-  @Override
-  protected void initNode(@NotNull SNode node, @NotNull SConstructor constructor, @Nullable Object[] parameters) {
-    ___init___(node);
-  }
 
   @Override
   protected <T> T invokeSpecial0(@NotNull SNode node, @NotNull SMethod<T> method, @Nullable Object[] parameters) {

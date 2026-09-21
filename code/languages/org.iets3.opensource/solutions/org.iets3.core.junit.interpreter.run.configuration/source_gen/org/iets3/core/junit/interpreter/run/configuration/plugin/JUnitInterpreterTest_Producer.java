@@ -25,6 +25,7 @@ import org.jetbrains.mps.openapi.model.SNode;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
 import org.iets3.core.expr.plugin.plugin.ExecutionModePreference;
 import jetbrains.mps.baseLanguage.unitTest.execution.client.TestNodeWrapperFactory;
+import jetbrains.mps.ide.project.ProjectHelper;
 import jetbrains.mps.baseLanguage.unitTest.execution.client.ITestNodeWrapper;
 import jetbrains.mps.internal.collections.runtime.Sequence;
 import jetbrains.mps.execution.lib.PointerUtils;
@@ -201,21 +202,21 @@ public final class JUnitInterpreterTest_Producer {
       JUnitInterpreterTest_Configuration configuration = null;
       try (AutoResetTestExecutionWorkspaceSetting setting = new AutoResetTestExecutionWorkspaceSetting(ExecutionModePreference.INTERPRETER)) {
         // this is a producer for root; below you can find the producer for a test method
-        SNode testableMethod = TestNodeWrapperFactory.findWrappableAncestor(source, false);
+        TestNodeWrapperFactory tnf = new TestNodeWrapperFactory(ProjectHelper.fromIdeaProjectOrFail(getContext().getProject()).getPlatform());
+
+        SNode testableMethod = tnf.findWrappableAncestor(source, false);
         if (testableMethod != null) {
-          ITestNodeWrapper testWrapper = TestNodeWrapperFactory.tryToWrap(testableMethod);
+          ITestNodeWrapper testWrapper = tnf.tryToWrap(testableMethod);
           if (testWrapper != null && !(testWrapper.isTestCase())) {
             // no need to run the whole test case if we are inside a test method
             return null;
           }
         }
-
-        SNode testRoot = TestNodeWrapperFactory.findWrappableAncestor(source, true);
+        SNode testRoot = tnf.findWrappableAncestor(source, true);
         if (testRoot == null) {
           return null;
         }
-
-        ITestNodeWrapper wrapper = TestNodeWrapperFactory.tryToWrap(testRoot);
+        ITestNodeWrapper wrapper = tnf.tryToWrap(testRoot);
         if (wrapper == null || Sequence.fromIterable(wrapper.getTestMethods()).isEmpty()) {
           return null;
         }
@@ -247,16 +248,20 @@ public final class JUnitInterpreterTest_Producer {
       if (settings.getJUnitRunType() != JUnitInterpreterRunTypes.NODE) {
         return false;
       }
+
       if (context.getPsiLocation() instanceof MPSPsiElement) {
         final MPSPsiElement element = (MPSPsiElement) context.getPsiLocation();
-        ModelAccessHelper mah = new ModelAccessHelper(element.getMPSProject().getRepository());
+        MPSProject mpsProject = element.getMPSProject();
+        ModelAccessHelper mah = new ModelAccessHelper(mpsProject.getRepository());
+        final TestNodeWrapperFactory tnf = new TestNodeWrapperFactory(mpsProject.getPlatform());
+
         Object mpsItem = mah.runReadAction(() -> element.getMPSItem());
         if (!(mpsItem instanceof SNode)) {
           return false;
         }
         final SNode sourceNode = (SNode) mpsItem;
         // no test for testableMethod since the run type are different for these two producers
-        SNode testableRoot = mah.runReadAction(() -> TestNodeWrapperFactory.findWrappableAncestor(sourceNode, true));
+        SNode testableRoot = mah.runReadAction(() -> tnf.findWrappableAncestor(sourceNode, true));
         if (testableRoot == null) {
           return false;
         }
@@ -285,11 +290,12 @@ public final class JUnitInterpreterTest_Producer {
     protected JUnitInterpreterTest_Configuration doCreateConfiguration(final SNode source) {
       setSourceElement(MPSPsiElement.createFor(source, getMpsProject()));
       // this is a producer for test method
-      SNode method = TestNodeWrapperFactory.findWrappableAncestor(source, false);
+      final TestNodeWrapperFactory tnf = new TestNodeWrapperFactory(ProjectHelper.fromIdeaProjectOrFail(getContext().getProject()).getPlatform());
+      SNode method = tnf.findWrappableAncestor(source, false);
       if (method == null) {
         return null;
       }
-      ITestNodeWrapper wrapper = TestNodeWrapperFactory.tryToWrap(method);
+      ITestNodeWrapper wrapper = tnf.tryToWrap(method);
       if (wrapper == null || wrapper.isTestCase()) {
         return null;
       }
@@ -315,13 +321,15 @@ public final class JUnitInterpreterTest_Producer {
       }
       if (context.getPsiLocation() instanceof MPSPsiElement) {
         final MPSPsiElement element = (MPSPsiElement) context.getPsiLocation();
-        ModelAccessHelper mah = new ModelAccessHelper(element.getMPSProject().getRepository());
+        MPSProject mpsProject = element.getMPSProject();
+        ModelAccessHelper mah = new ModelAccessHelper(mpsProject.getRepository());
+        final TestNodeWrapperFactory tnf = new TestNodeWrapperFactory(mpsProject.getPlatform());
         Object mpsItem = mah.runReadAction(() -> element.getMPSItem());
         if (!(mpsItem instanceof SNode)) {
           return false;
         }
         final SNode sourceNode = (SNode) mpsItem;
-        SNode testableMethod = mah.runReadAction(() -> TestNodeWrapperFactory.findWrappableAncestor(sourceNode, false));
+        SNode testableMethod = mah.runReadAction(() -> tnf.findWrappableAncestor(sourceNode, false));
         if (testableMethod == null) {
           return false;
         }

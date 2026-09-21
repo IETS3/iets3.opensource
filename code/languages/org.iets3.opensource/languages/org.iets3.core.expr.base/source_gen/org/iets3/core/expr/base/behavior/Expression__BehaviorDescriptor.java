@@ -7,7 +7,6 @@ import org.jetbrains.mps.openapi.language.SAbstractConcept;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import org.jetbrains.mps.openapi.model.SNode;
 import java.util.List;
@@ -20,7 +19,6 @@ import jetbrains.mps.lang.core.behavior.BaseConcept__BehaviorDescriptor;
 import org.jetbrains.mps.openapi.model.SNodeReference;
 import java.util.ArrayList;
 import java.util.Objects;
-import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 import org.jetbrains.mps.openapi.language.SInterfaceConcept;
@@ -28,21 +26,19 @@ import org.jetbrains.mps.openapi.language.SInterfaceConcept;
 public final class Expression__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getConcept(0xcfaa4966b7d54b69L, 0xb66a309a6e1a7290L, 0x670d5e92f854a047L, "org.iets3.core.expr.base.structure.Expression");
 
-  public static final SMethod<String> renderReadable_id4Y0vh0cfqjE = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("renderReadable").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5728716233893586154L).languageId(0xb66a309a6e1a7290L, 0xcfaa4966b7d54b69L).build2();
-  public static final SMethod<Boolean> isStaticallyEvaluatable_id3NBP8_O4e8l = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("isStaticallyEvaluatable").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(4388710048718709269L).languageId(0xb66a309a6e1a7290L, 0xcfaa4966b7d54b69L).build2();
-  public static final SMethod<Boolean> isSameAs_id7GwCuf2r4g6 = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("isSameAs").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(8872269265511400454L).languageId(0xb66a309a6e1a7290L, 0xcfaa4966b7d54b69L).build2(SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""));
-  public static final SMethod<Boolean> isDocumentationAllowed_id3ni3WiduMNJ = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("isDocumentationAllowed").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(3878179565981084911L).languageId(0xaa41d1b2bffa7eb1L, 0xd4280a54f6df4383L).build2();
-  public static final SMethod<List<String>> getContainmentStack_id6iqfHNBPmu8 = new SMethodBuilder<List<String>>(new SJavaCompoundTypeImpl((Class<List<String>>) ((Class) Object.class))).name("getContainmentStack").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(7249175668709484424L).languageId(0xb66a309a6e1a7290L, 0xcfaa4966b7d54b69L).build2();
-  public static final SMethod<String> getContainmentStackAsString_id6iqfHNBPqvB = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("getContainmentStackAsString").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(7249175668709500903L).languageId(0xb66a309a6e1a7290L, 0xcfaa4966b7d54b69L).build2(SMethodBuilder.createJavaParameter(String.class, ""));
-  public static final SMethod<String> commaSeparatedRR_idHywGhj7zY_ = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("commaSeparatedRR").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(820361861854543781L).languageId(0xb66a309a6e1a7290L, 0xcfaa4966b7d54b69L).build2(SMethodBuilder.createJavaParameter((Class<Iterable<SNode>>) ((Class) Object.class), ""));
-  public static final SMethod<String> commaSeparatedGP_idHywGhj7Cp$ = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("commaSeparatedGP").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(820361861854561892L).languageId(0xb66a309a6e1a7290L, 0xcfaa4966b7d54b69L).build2(SMethodBuilder.createJavaParameter((Class<Iterable<SNode>>) ((Class) Object.class), ""));
-  public static final SMethod<String> getPresentation_idhEwIMiw = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("getPresentation").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(1213877396640L).languageId(0x9b92103b95ca8c0cL, 0xceab519525ea4f22L).build2();
-  public static final SMethod<List<SNode>> getPathConstraintsToThis_id3QFQUsNJoQq = new SMethodBuilder<List<SNode>>(new SJavaCompoundTypeImpl((Class<List<SNode>>) ((Class) Object.class))).name("getPathConstraintsToThis").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(4443886968505208218L).languageId(0xb66a309a6e1a7290L, 0xcfaa4966b7d54b69L).build2(SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""));
+  public static final SMethod<String> renderReadable_id4Y0vh0cfqjE = new SMethodBuilder<>(String.class).name("renderReadable").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5728716233893586154L).languageId(0xb66a309a6e1a7290L, 0xcfaa4966b7d54b69L).build2();
+  public static final SMethod<Boolean> isStaticallyEvaluatable_id3NBP8_O4e8l = new SMethodBuilder<>(Boolean.TYPE).name("isStaticallyEvaluatable").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(4388710048718709269L).languageId(0xb66a309a6e1a7290L, 0xcfaa4966b7d54b69L).build2();
+  public static final SMethod<Boolean> isSameAs_id7GwCuf2r4g6 = new SMethodBuilder<>(Boolean.TYPE).name("isSameAs").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(8872269265511400454L).languageId(0xb66a309a6e1a7290L, 0xcfaa4966b7d54b69L).build2(SMethodBuilder.createJavaParameter(SNode.class, "other"));
+  public static final SMethod<Boolean> isDocumentationAllowed_id3ni3WiduMNJ = new SMethodBuilder<>(Boolean.TYPE).name("isDocumentationAllowed").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(3878179565981084911L).languageId(0xaa41d1b2bffa7eb1L, 0xd4280a54f6df4383L).build2();
+  public static final SMethod<List<String>> getContainmentStack_id6iqfHNBPmu8 = new SMethodBuilder<>((Class<List<String>>) ((Class) Object.class)).name("getContainmentStack").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(7249175668709484424L).languageId(0xb66a309a6e1a7290L, 0xcfaa4966b7d54b69L).build2();
+  public static final SMethod<String> getContainmentStackAsString_id6iqfHNBPqvB = new SMethodBuilder<>(String.class).name("getContainmentStackAsString").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(7249175668709500903L).languageId(0xb66a309a6e1a7290L, 0xcfaa4966b7d54b69L).build2(SMethodBuilder.createJavaParameter(String.class, "indent"));
+  public static final SMethod<String> commaSeparatedRR_idHywGhj7zY_ = new SMethodBuilder<>(String.class).name("commaSeparatedRR").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(820361861854543781L).languageId(0xb66a309a6e1a7290L, 0xcfaa4966b7d54b69L).build2(SMethodBuilder.createJavaParameter((Class<Iterable<SNode>>) ((Class) Object.class), "exprs"));
+  public static final SMethod<String> commaSeparatedGP_idHywGhj7Cp$ = new SMethodBuilder<>(String.class).name("commaSeparatedGP").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(820361861854561892L).languageId(0xb66a309a6e1a7290L, 0xcfaa4966b7d54b69L).build2(SMethodBuilder.createJavaParameter((Class<Iterable<SNode>>) ((Class) Object.class), "nodes"));
+  public static final SMethod<String> getPresentation_idhEwIMiw = new SMethodBuilder<>(String.class).name("getPresentation").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(1213877396640L).languageId(0x9b92103b95ca8c0cL, 0xceab519525ea4f22L).build2();
+  public static final SMethod<List<SNode>> getPathConstraintsToThis_id3QFQUsNJoQq = new SMethodBuilder<>((Class<List<SNode>>) ((Class) Object.class)).name("getPathConstraintsToThis").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(4443886968505208218L).languageId(0xb66a309a6e1a7290L, 0xcfaa4966b7d54b69L).build2(SMethodBuilder.createJavaParameter(SNode.class, "start"));
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(renderReadable_id4Y0vh0cfqjE, isStaticallyEvaluatable_id3NBP8_O4e8l, isSameAs_id7GwCuf2r4g6, isDocumentationAllowed_id3ni3WiduMNJ, getContainmentStack_id6iqfHNBPmu8, getContainmentStackAsString_id6iqfHNBPqvB, commaSeparatedRR_idHywGhj7zY_, commaSeparatedGP_idHywGhj7Cp$, getPresentation_idhEwIMiw, getPathConstraintsToThis_id3QFQUsNJoQq);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(renderReadable_id4Y0vh0cfqjE, isStaticallyEvaluatable_id3NBP8_O4e8l, isSameAs_id7GwCuf2r4g6, isDocumentationAllowed_id3ni3WiduMNJ, getContainmentStack_id6iqfHNBPmu8, getContainmentStackAsString_id6iqfHNBPqvB, commaSeparatedRR_idHywGhj7zY_, commaSeparatedGP_idHywGhj7Cp$, getPresentation_idhEwIMiw, getPathConstraintsToThis_id3QFQUsNJoQq);
 
-  private static void ___init___(@NotNull SNode __thisNode__) {
-  }
 
   /*package*/ static String renderReadable_id4Y0vh0cfqjE(@NotNull SNode __thisNode__) {
     return "<" + SNodeOperations.getConcept(__thisNode__).getName() + ">";
@@ -125,10 +121,6 @@ public final class Expression__BehaviorDescriptor extends BaseBHDescriptor {
   /*package*/ Expression__BehaviorDescriptor() {
   }
 
-  @Override
-  protected void initNode(@NotNull SNode node, @NotNull SConstructor constructor, @Nullable Object[] parameters) {
-    ___init___(node);
-  }
 
   @Override
   protected <T> T invokeSpecial0(@NotNull SNode node, @NotNull SMethod<T> method, @Nullable Object[] parameters) {

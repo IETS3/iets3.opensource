@@ -3,7 +3,7 @@
   <persistence version="9" />
   <languages>
     <use id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior" version="2" />
-    <use id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc" version="2" />
+    <use id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc" version="3" />
     <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="12" />
     <devkit ref="2677cb18-f558-4e33-bc38-a5139cee06dc(jetbrains.mps.devkit.language-design)" />
   </languages>
@@ -40,6 +40,7 @@
         <reference id="1225194472831" name="overriddenMethod" index="13i0hy" />
       </concept>
       <concept id="1225194691553" name="jetbrains.mps.lang.behavior.structure.ThisNodeExpression" flags="nn" index="13iPFW" />
+      <concept id="3235159848334022093" name="jetbrains.mps.lang.behavior.structure.Node_ConceptMethodCall" flags="nn" index="3zqWPK" />
     </language>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
       <concept id="1082485599095" name="jetbrains.mps.baseLanguage.structure.BlockStatement" flags="nn" index="9aQIb">
@@ -177,6 +178,9 @@
         <child id="5383422241790532083" name="tags" index="3nqlJM" />
       </concept>
       <concept id="5349172909345532724" name="jetbrains.mps.baseLanguage.javadoc.structure.MethodDocComment" flags="ng" index="P$JXv" />
+      <concept id="5085607816302529296" name="jetbrains.mps.baseLanguage.javadoc.structure.IHoldCommentLines" flags="ngI" index="1VezTd">
+        <child id="5085607816302529587" name="commentBody" index="1Vez_I" />
+      </concept>
     </language>
     <language id="c7d5b9dd-a05f-4be2-bc73-f2e16994cc67" name="jetbrains.mps.baseLanguage.lightweightdsl">
       <concept id="8880393040217246788" name="jetbrains.mps.baseLanguage.lightweightdsl.structure.MethodParameterInstance" flags="ig" index="ffn8J">
@@ -190,7 +194,6 @@
       <concept id="1138411891628" name="jetbrains.mps.lang.smodel.structure.SNodeOperation" flags="nn" index="eCIE_">
         <child id="1144104376918" name="parameter" index="1xVPHs" />
       </concept>
-      <concept id="1179409122411" name="jetbrains.mps.lang.smodel.structure.Node_ConceptMethodCall" flags="nn" index="2qgKlT" />
       <concept id="4693937538533521280" name="jetbrains.mps.lang.smodel.structure.OfConceptOperation" flags="ng" index="v3k3i">
         <child id="4693937538533538124" name="requestedConcept" index="v3oSu" />
       </concept>
@@ -336,7 +339,54 @@
       </node>
       <node concept="P$JXv" id="JbnHRllK7Y" role="lGtFl">
         <node concept="x79VA" id="JbnHRllK81" role="3nqlJM">
-          <property role="x79VB" value="the RefExpr which is used in mappingsource that points to an instance inside the mappingconfig" />
+          <property role="x79VB" value="" />
+          <node concept="1PaTwC" id="3MzwgoR0T1A" role="1Vez_I">
+            <node concept="3oM_SD" id="3MzwgoR0T1B" role="1PaTwD">
+              <property role="3oM_SC" value="the" />
+            </node>
+            <node concept="3oM_SD" id="3MzwgoR0T1C" role="1PaTwD">
+              <property role="3oM_SC" value="RefExpr" />
+            </node>
+            <node concept="3oM_SD" id="3MzwgoR0T1D" role="1PaTwD">
+              <property role="3oM_SC" value="which" />
+            </node>
+            <node concept="3oM_SD" id="3MzwgoR0T1E" role="1PaTwD">
+              <property role="3oM_SC" value="is" />
+            </node>
+            <node concept="3oM_SD" id="3MzwgoR0T1F" role="1PaTwD">
+              <property role="3oM_SC" value="used" />
+            </node>
+            <node concept="3oM_SD" id="3MzwgoR0T1G" role="1PaTwD">
+              <property role="3oM_SC" value="in" />
+            </node>
+            <node concept="3oM_SD" id="3MzwgoR0T1H" role="1PaTwD">
+              <property role="3oM_SC" value="mappingsource" />
+            </node>
+            <node concept="3oM_SD" id="3MzwgoR0T1I" role="1PaTwD">
+              <property role="3oM_SC" value="that" />
+            </node>
+            <node concept="3oM_SD" id="3MzwgoR0T1J" role="1PaTwD">
+              <property role="3oM_SC" value="points" />
+            </node>
+            <node concept="3oM_SD" id="3MzwgoR0T1K" role="1PaTwD">
+              <property role="3oM_SC" value="to" />
+            </node>
+            <node concept="3oM_SD" id="3MzwgoR0T1L" role="1PaTwD">
+              <property role="3oM_SC" value="an" />
+            </node>
+            <node concept="3oM_SD" id="3MzwgoR0T1M" role="1PaTwD">
+              <property role="3oM_SC" value="instance" />
+            </node>
+            <node concept="3oM_SD" id="3MzwgoR0T1N" role="1PaTwD">
+              <property role="3oM_SC" value="inside" />
+            </node>
+            <node concept="3oM_SD" id="3MzwgoR0T1O" role="1PaTwD">
+              <property role="3oM_SC" value="the" />
+            </node>
+            <node concept="3oM_SD" id="3MzwgoR0T1P" role="1PaTwD">
+              <property role="3oM_SC" value="mappingconfig" />
+            </node>
+          </node>
         </node>
       </node>
     </node>
@@ -390,7 +440,54 @@
       </node>
       <node concept="P$JXv" id="JbnHRllKYY" role="lGtFl">
         <node concept="x79VA" id="JbnHRllKZ1" role="3nqlJM">
-          <property role="x79VB" value="the RefExpr which is used in mappingtarget that points to an instance inside the mappingconfig" />
+          <property role="x79VB" value="" />
+          <node concept="1PaTwC" id="3MzwgoR0T1Q" role="1Vez_I">
+            <node concept="3oM_SD" id="3MzwgoR0T1R" role="1PaTwD">
+              <property role="3oM_SC" value="the" />
+            </node>
+            <node concept="3oM_SD" id="3MzwgoR0T1S" role="1PaTwD">
+              <property role="3oM_SC" value="RefExpr" />
+            </node>
+            <node concept="3oM_SD" id="3MzwgoR0T1T" role="1PaTwD">
+              <property role="3oM_SC" value="which" />
+            </node>
+            <node concept="3oM_SD" id="3MzwgoR0T1U" role="1PaTwD">
+              <property role="3oM_SC" value="is" />
+            </node>
+            <node concept="3oM_SD" id="3MzwgoR0T1V" role="1PaTwD">
+              <property role="3oM_SC" value="used" />
+            </node>
+            <node concept="3oM_SD" id="3MzwgoR0T1W" role="1PaTwD">
+              <property role="3oM_SC" value="in" />
+            </node>
+            <node concept="3oM_SD" id="3MzwgoR0T1X" role="1PaTwD">
+              <property role="3oM_SC" value="mappingtarget" />
+            </node>
+            <node concept="3oM_SD" id="3MzwgoR0T1Y" role="1PaTwD">
+              <property role="3oM_SC" value="that" />
+            </node>
+            <node concept="3oM_SD" id="3MzwgoR0T1Z" role="1PaTwD">
+              <property role="3oM_SC" value="points" />
+            </node>
+            <node concept="3oM_SD" id="3MzwgoR0T20" role="1PaTwD">
+              <property role="3oM_SC" value="to" />
+            </node>
+            <node concept="3oM_SD" id="3MzwgoR0T21" role="1PaTwD">
+              <property role="3oM_SC" value="an" />
+            </node>
+            <node concept="3oM_SD" id="3MzwgoR0T22" role="1PaTwD">
+              <property role="3oM_SC" value="instance" />
+            </node>
+            <node concept="3oM_SD" id="3MzwgoR0T23" role="1PaTwD">
+              <property role="3oM_SC" value="inside" />
+            </node>
+            <node concept="3oM_SD" id="3MzwgoR0T24" role="1PaTwD">
+              <property role="3oM_SC" value="the" />
+            </node>
+            <node concept="3oM_SD" id="3MzwgoR0T25" role="1PaTwD">
+              <property role="3oM_SC" value="mappingconfig" />
+            </node>
+          </node>
         </node>
       </node>
     </node>
@@ -608,7 +705,7 @@
                                 <ref role="3Tt5mk" to="w9y2:6LfBX8YiQvJ" resolve="ref" />
                               </node>
                             </node>
-                            <node concept="2qgKlT" id="6FL_GAh6JPZ" role="2OqNvi">
+                            <node concept="3zqWPK" id="5DJjBfj0bB0" role="2OqNvi">
                               <ref role="37wK5l" to="3eba:6JtAeCuZNxl" resolve="nestedComponents" />
                             </node>
                           </node>
@@ -621,11 +718,11 @@
                                       <node concept="37vLTw" id="6FL_GAh80CH" role="2Oq$k0">
                                         <ref role="3cqZAo" node="2r1kIC$yAaN" resolve="it" />
                                       </node>
-                                      <node concept="2qgKlT" id="6FL_GAh80CI" role="2OqNvi">
+                                      <node concept="3zqWPK" id="5DJjBfj0bB2" role="2OqNvi">
                                         <ref role="37wK5l" to="3eba:x8tpSA1cCO" resolve="compInterface" />
                                       </node>
                                     </node>
-                                    <node concept="2qgKlT" id="6FL_GAh80CJ" role="2OqNvi">
+                                    <node concept="3zqWPK" id="5DJjBfj0bB4" role="2OqNvi">
                                       <ref role="37wK5l" to="3eba:x8tpSA8agB" resolve="ports" />
                                     </node>
                                   </node>
@@ -860,7 +957,7 @@
                         <node concept="37vLTw" id="6FL_GAh3ODa" role="2Oq$k0">
                           <ref role="3cqZAo" node="6rCppI9I9mi" resolve="target" />
                         </node>
-                        <node concept="2qgKlT" id="6FL_GAh41E8" role="2OqNvi">
+                        <node concept="3zqWPK" id="5DJjBfj0bB6" role="2OqNvi">
                           <ref role="37wK5l" to="pbu6:6zmBjqUivyF" resolve="contextExpression" />
                         </node>
                       </node>
@@ -1524,7 +1621,7 @@
                 <node concept="2OqwBi" id="3GbuJrdLILh" role="2Oq$k0">
                   <node concept="2OqwBi" id="3GbuJrdLILi" role="2Oq$k0">
                     <node concept="13iPFW" id="3GbuJrdLILj" role="2Oq$k0" />
-                    <node concept="2qgKlT" id="3GbuJrdLILk" role="2OqNvi">
+                    <node concept="3zqWPK" id="5DJjBfj0bB8" role="2OqNvi">
                       <ref role="37wK5l" node="3GbuJrdLq2$" resolve="instanceSection" />
                     </node>
                   </node>
@@ -1969,7 +2066,7 @@
             <node concept="2OqwBi" id="7lLcPFJzHC1" role="2Oq$k0">
               <node concept="2OqwBi" id="7lLcPFJzHBZ" role="2Oq$k0">
                 <node concept="13iPFW" id="7lLcPFJzHBJ" role="2Oq$k0" />
-                <node concept="2qgKlT" id="7lLcPFJzHBL" role="2OqNvi">
+                <node concept="3zqWPK" id="5DJjBfj0bBa" role="2OqNvi">
                   <ref role="37wK5l" node="JbnHRltPt6" resolve="getAllDirectlyMappedFuncCompInst" />
                 </node>
               </node>
@@ -2028,7 +2125,7 @@
                             <node concept="37vLTw" id="JbnHRllTzi" role="2Oq$k0">
                               <ref role="3cqZAo" node="2r1kIC$yAaX" resolve="it" />
                             </node>
-                            <node concept="2qgKlT" id="JbnHRllTzj" role="2OqNvi">
+                            <node concept="3zqWPK" id="5DJjBfj0bBc" role="2OqNvi">
                               <ref role="37wK5l" node="JbnHRljhvc" resolve="getTopLevelMappingSource" />
                             </node>
                           </node>
@@ -2078,7 +2175,7 @@
                             <node concept="37vLTw" id="JbnHRllV1g" role="2Oq$k0">
                               <ref role="3cqZAo" node="2r1kIC$yAaZ" resolve="it" />
                             </node>
-                            <node concept="2qgKlT" id="JbnHRllVJO" role="2OqNvi">
+                            <node concept="3zqWPK" id="5DJjBfj0bBe" role="2OqNvi">
                               <ref role="37wK5l" node="JbnHRljrx6" resolve="getTopLevelMappingTarget" />
                             </node>
                           </node>
@@ -2196,7 +2293,7 @@
             <node concept="X8dFx" id="78PuqNXfKQd" role="2OqNvi">
               <node concept="2OqwBi" id="78PuqNXfMvJ" role="25WWJ7">
                 <node concept="13iPFW" id="78PuqNXfLBF" role="2Oq$k0" />
-                <node concept="2qgKlT" id="78PuqNXfN3F" role="2OqNvi">
+                <node concept="3zqWPK" id="5DJjBfj0bBg" role="2OqNvi">
                   <ref role="37wK5l" node="JbnHRltPt6" resolve="getAllDirectlyMappedFuncCompInst" />
                 </node>
               </node>
@@ -2233,7 +2330,7 @@
                           <node concept="2OqwBi" id="3YMkkvO3lx2" role="3clFbG">
                             <node concept="2OqwBi" id="3YMkkvO2Ql1" role="2Oq$k0">
                               <node concept="13iPFW" id="3YMkkvO2Q2F" role="2Oq$k0" />
-                              <node concept="2qgKlT" id="3YMkkvO2STH" role="2OqNvi">
+                              <node concept="3zqWPK" id="5DJjBfj0bBi" role="2OqNvi">
                                 <ref role="37wK5l" node="JbnHRllLTe" resolve="getUsedRootCompInstInSourceMapping" />
                               </node>
                             </node>
@@ -2275,7 +2372,7 @@
             <node concept="X8dFx" id="3YMkkvO2Dwu" role="2OqNvi">
               <node concept="2OqwBi" id="3YMkkvO2Dwv" role="25WWJ7">
                 <node concept="13iPFW" id="3YMkkvO2Dww" role="2Oq$k0" />
-                <node concept="2qgKlT" id="3YMkkvO2Dwx" role="2OqNvi">
+                <node concept="3zqWPK" id="5DJjBfj0bBk" role="2OqNvi">
                   <ref role="37wK5l" node="JbnHRltPt6" resolve="getAllDirectlyMappedFuncCompInst" />
                 </node>
               </node>
@@ -2302,7 +2399,7 @@
             <node concept="2OqwBi" id="7lLcPFJm6b6" role="2Oq$k0">
               <node concept="2OqwBi" id="7lLcPFJm2l2" role="2Oq$k0">
                 <node concept="13iPFW" id="7lLcPFJm29l" role="2Oq$k0" />
-                <node concept="2qgKlT" id="7lLcPFJm2Nl" role="2OqNvi">
+                <node concept="3zqWPK" id="5DJjBfj0bBm" role="2OqNvi">
                   <ref role="37wK5l" node="JbnHRltPt6" resolve="getAllDirectlyMappedFuncCompInst" />
                 </node>
               </node>
@@ -2423,7 +2520,7 @@
                             <node concept="37vLTw" id="5am5hXlv9Qp" role="2Oq$k0">
                               <ref role="3cqZAo" node="2r1kIC$yAb5" resolve="it" />
                             </node>
-                            <node concept="2qgKlT" id="5am5hXlv9Qq" role="2OqNvi">
+                            <node concept="3zqWPK" id="5DJjBfj0bBo" role="2OqNvi">
                               <ref role="37wK5l" node="JbnHRljhvc" resolve="getTopLevelMappingSource" />
                             </node>
                           </node>
@@ -2457,7 +2554,7 @@
                         <node concept="37vLTw" id="5am5hXlvcr8" role="2Oq$k0">
                           <ref role="3cqZAo" node="2r1kIC$yAb7" resolve="it" />
                         </node>
-                        <node concept="2qgKlT" id="5am5hXlvcUr" role="2OqNvi">
+                        <node concept="3zqWPK" id="5DJjBfj0bBq" role="2OqNvi">
                           <ref role="37wK5l" node="5am5hXls2Kw" resolve="getTreeNodeFromSourceExpr" />
                         </node>
                       </node>
@@ -2553,7 +2650,7 @@
                         <node concept="37vLTw" id="3hobjyQhyA9" role="2Oq$k0">
                           <ref role="3cqZAo" node="2r1kIC$yAb9" resolve="it" />
                         </node>
-                        <node concept="2qgKlT" id="3hobjyQhyAa" role="2OqNvi">
+                        <node concept="3zqWPK" id="5DJjBfj0bBs" role="2OqNvi">
                           <ref role="37wK5l" to="tpcu:hEwIMiw" resolve="getPresentation" />
                         </node>
                       </node>

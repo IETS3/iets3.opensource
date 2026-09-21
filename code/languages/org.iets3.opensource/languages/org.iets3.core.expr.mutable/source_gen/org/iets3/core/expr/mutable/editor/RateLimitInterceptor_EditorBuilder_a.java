@@ -56,7 +56,7 @@ import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
     editorCell.addEditorCell(createConstant_2());
     editorCell.addEditorCell(createRefNode_1());
     editorCell.addEditorCell(createConstant_3());
-    editorCell.addEditorCell(createBooleanText_1());
+    editorCell.addEditorCell(createBooleanText_0());
     editorCell.addEditorCell(createConstant_4());
     return editorCell;
   }
@@ -206,14 +206,14 @@ import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
     editorCell.setDefaultText("");
     return editorCell;
   }
-  private EditorCell createBooleanText_0(EditorContext editorContext, SNode node) {
+  private EditorCell createBooleanText_0() {
     SProperty property = PROPS.commandsOnly$FpqO;
-    BooleanTextCellProvider provider = new BooleanTextCellProvider(node, property, editorContext);
+    BooleanTextCellProvider provider = new BooleanTextCellProvider(getNode(), property, getEditorContext());
     provider.setTrueText("commands-only");
     provider.setFalseText("every interaction");
     provider.setNoTargetText("<no commandsOnly>");
     EditorCell editorCell;
-    editorCell = provider.createEditorCell(editorContext);
+    editorCell = provider.createEditorCell(getEditorContext());
     editorCell.setCellId("property_commandsOnly");
     Style style = new StyleImpl();
     style.set(StyleAttributes.FONT_STYLE, MPSFonts.BOLD);
@@ -224,9 +224,6 @@ import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
       return getUpdateSession().updateAttributeCell(provider.getRoleAttributeKind(), editorCell, attributeConcept);
     } else
     return editorCell;
-  }
-  private EditorCell createBooleanText_1() {
-    return createBooleanText_0(getEditorContext(), myNode);
   }
   private EditorCell createConstant_4() {
     EditorCell_Constant editorCell = new EditorCell_Constant(getEditorContext(), myNode, ")");

@@ -27,9 +27,6 @@ public class supertypeOf_ArtificialClockType_SubtypingRule extends SubtypingRule
   public boolean isWeak() {
     return false;
   }
-  public boolean surelyKeepsConcept() {
-    return true;
-  }
   private static SNode createClockType_wdvmsn_a0a1() {
     SNodeBuilder n0 = new SNodeBuilder().init(CONCEPTS.ClockType$2F);
     return n0.getResult();

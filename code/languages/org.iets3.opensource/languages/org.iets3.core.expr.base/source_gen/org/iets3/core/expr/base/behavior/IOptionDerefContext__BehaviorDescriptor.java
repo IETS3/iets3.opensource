@@ -7,7 +7,6 @@ import org.jetbrains.mps.openapi.language.SAbstractConcept;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import org.jetbrains.mps.openapi.model.SNode;
 import java.util.List;
@@ -18,7 +17,6 @@ import java.util.ArrayList;
 import jetbrains.mps.internal.collections.runtime.Sequence;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
 import jetbrains.mps.internal.collections.runtime.ListSequence;
-import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 import org.jetbrains.mps.openapi.language.SConcept;
@@ -28,15 +26,13 @@ import org.jetbrains.mps.openapi.language.SContainmentLink;
 public final class IOptionDerefContext__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getInterfaceConcept(0xcfaa4966b7d54b69L, 0xb66a309a6e1a7290L, 0x588e25ed5b40bd76L, "org.iets3.core.expr.base.structure.IOptionDerefContext");
 
-  public static final SMethod<String> invalidUseErrorMessage_id5ye9uPrgjJa = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("invalidUseErrorMessage").modifiers(12, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(6381079423399050186L).languageId(0xb66a309a6e1a7290L, 0xcfaa4966b7d54b69L).build2(SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""));
-  public static final SMethod<Iterable<SNode>> findTheSomeQueries_id5ye9uPrkFwU = new SMethodBuilder<Iterable<SNode>>(new SJavaCompoundTypeImpl((Class<Iterable<SNode>>) ((Class) Object.class))).name("findTheSomeQueries").modifiers(12, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(6381079423400196154L).languageId(0xb66a309a6e1a7290L, 0xcfaa4966b7d54b69L).build2();
-  public static final SMethod<Boolean> isValExpressionUsedLegally_id5ye9uPrkHVH = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("isValExpressionUsedLegally").modifiers(12, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(6381079423400206061L).languageId(0xb66a309a6e1a7290L, 0xcfaa4966b7d54b69L).build2(SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""));
-  public static final SMethod<Iterable<SNode>> filter_id3kzwyUOs0DA = new SMethodBuilder<Iterable<SNode>>(new SJavaCompoundTypeImpl((Class<Iterable<SNode>>) ((Class) Object.class))).name("filter").modifiers(8, AccessPrivileges.PROTECTED).concept(CONCEPT).baseMethodId(3829047245302401638L).languageId(0xb66a309a6e1a7290L, 0xcfaa4966b7d54b69L).build2(SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""), SMethodBuilder.createJavaParameter((Class<Iterable<SNode>>) ((Class) Object.class), ""));
+  public static final SMethod<String> invalidUseErrorMessage_id5ye9uPrgjJa = new SMethodBuilder<>(String.class).name("invalidUseErrorMessage").modifiers(12, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(6381079423399050186L).languageId(0xb66a309a6e1a7290L, 0xcfaa4966b7d54b69L).build2(SMethodBuilder.createJavaParameter(SNode.class, "some"));
+  public static final SMethod<Iterable<SNode>> findTheSomeQueries_id5ye9uPrkFwU = new SMethodBuilder<>((Class<Iterable<SNode>>) ((Class) Object.class)).name("findTheSomeQueries").modifiers(12, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(6381079423400196154L).languageId(0xb66a309a6e1a7290L, 0xcfaa4966b7d54b69L).build2();
+  public static final SMethod<Boolean> isValExpressionUsedLegally_id5ye9uPrkHVH = new SMethodBuilder<>(Boolean.TYPE).name("isValExpressionUsedLegally").modifiers(12, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(6381079423400206061L).languageId(0xb66a309a6e1a7290L, 0xcfaa4966b7d54b69L).build2(SMethodBuilder.createJavaParameter(SNode.class, "someVal"));
+  public static final SMethod<Iterable<SNode>> filter_id3kzwyUOs0DA = new SMethodBuilder<>((Class<Iterable<SNode>>) ((Class) Object.class)).name("filter").modifiers(8, AccessPrivileges.PROTECTED).concept(CONCEPT).baseMethodId(3829047245302401638L).languageId(0xb66a309a6e1a7290L, 0xcfaa4966b7d54b69L).build2(SMethodBuilder.createJavaParameter(SNode.class, "enclosingNode"), SMethodBuilder.createJavaParameter((Class<Iterable<SNode>>) ((Class) Object.class), "rawScope"));
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(invalidUseErrorMessage_id5ye9uPrgjJa, findTheSomeQueries_id5ye9uPrkFwU, isValExpressionUsedLegally_id5ye9uPrkHVH, filter_id3kzwyUOs0DA);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(invalidUseErrorMessage_id5ye9uPrgjJa, findTheSomeQueries_id5ye9uPrkFwU, isValExpressionUsedLegally_id5ye9uPrkHVH, filter_id3kzwyUOs0DA);
 
-  private static void ___init___(@NotNull SNode __thisNode__) {
-  }
 
   /*package*/ static Iterable<SNode> filter_id3kzwyUOs0DA(@NotNull SNode __thisNode__, SNode enclosingNode, Iterable<SNode> rawScope) {
     if (SNodeOperations.isInstanceOf(enclosingNode, CONCEPTS.IsSomeExpression$Ae)) {
@@ -66,10 +62,6 @@ public final class IOptionDerefContext__BehaviorDescriptor extends BaseBHDescrip
   /*package*/ IOptionDerefContext__BehaviorDescriptor() {
   }
 
-  @Override
-  protected void initNode(@NotNull SNode node, @NotNull SConstructor constructor, @Nullable Object[] parameters) {
-    ___init___(node);
-  }
 
   @Override
   protected <T> T invokeSpecial0(@NotNull SNode node, @NotNull SMethod<T> method, @Nullable Object[] parameters) {

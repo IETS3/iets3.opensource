@@ -8,13 +8,11 @@ import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import org.jetbrains.mps.openapi.model.SNode;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import java.util.List;
 import java.util.Arrays;
 import org.jetbrains.annotations.NotNull;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
-import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 import org.jetbrains.mps.openapi.language.SInterfaceConcept;
@@ -22,13 +20,11 @@ import org.jetbrains.mps.openapi.language.SInterfaceConcept;
 public final class IScopeFilterer__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getInterfaceConcept(0xcfaa4966b7d54b69L, 0xb66a309a6e1a7290L, 0x3523822eb4700a4aL, "org.iets3.core.expr.base.structure.IScopeFilterer");
 
-  public static final SMethod<Iterable<SNode>> filter_id3kzwyUOs0DA = new SMethodBuilder<Iterable<SNode>>(new SJavaCompoundTypeImpl((Class<Iterable<SNode>>) ((Class) Object.class))).name("filter").modifiers(12, AccessPrivileges.PROTECTED).concept(CONCEPT).baseMethodId(3829047245302401638L).languageId(0xb66a309a6e1a7290L, 0xcfaa4966b7d54b69L).build2(SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""), SMethodBuilder.createJavaParameter((Class<Iterable<SNode>>) ((Class) Object.class), ""));
-  public static final SMethod<Iterable<SNode>> filterScope_id3kzwyUOtyTv = new SMethodBuilder<Iterable<SNode>>(new SJavaCompoundTypeImpl((Class<Iterable<SNode>>) ((Class) Object.class))).name("filterScope").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(3829047245302804063L).languageId(0xb66a309a6e1a7290L, 0xcfaa4966b7d54b69L).build2(SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""), SMethodBuilder.createJavaParameter((Class<Iterable<SNode>>) ((Class) Object.class), ""));
+  public static final SMethod<Iterable<SNode>> filter_id3kzwyUOs0DA = new SMethodBuilder<>((Class<Iterable<SNode>>) ((Class) Object.class)).name("filter").modifiers(12, AccessPrivileges.PROTECTED).concept(CONCEPT).baseMethodId(3829047245302401638L).languageId(0xb66a309a6e1a7290L, 0xcfaa4966b7d54b69L).build2(SMethodBuilder.createJavaParameter(SNode.class, "enclosingNode"), SMethodBuilder.createJavaParameter((Class<Iterable<SNode>>) ((Class) Object.class), "rawScope"));
+  public static final SMethod<Iterable<SNode>> filterScope_id3kzwyUOtyTv = new SMethodBuilder<>((Class<Iterable<SNode>>) ((Class) Object.class)).name("filterScope").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(3829047245302804063L).languageId(0xb66a309a6e1a7290L, 0xcfaa4966b7d54b69L).build2(SMethodBuilder.createJavaParameter(SNode.class, "enclosingNode"), SMethodBuilder.createJavaParameter((Class<Iterable<SNode>>) ((Class) Object.class), "rawScope"));
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(filter_id3kzwyUOs0DA, filterScope_id3kzwyUOtyTv);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(filter_id3kzwyUOs0DA, filterScope_id3kzwyUOtyTv);
 
-  private static void ___init___(@NotNull SNode __thisNode__) {
-  }
 
   /*package*/ static Iterable<SNode> filterScope_id3kzwyUOtyTv(@NotNull SNode __thisNode__, SNode enclosingNode, Iterable<SNode> rawScope) {
     Iterable<SNode> filtered = IScopeFilterer__BehaviorDescriptor.filter_id3kzwyUOs0DA.invoke(__thisNode__, enclosingNode, rawScope);
@@ -43,10 +39,6 @@ public final class IScopeFilterer__BehaviorDescriptor extends BaseBHDescriptor {
   /*package*/ IScopeFilterer__BehaviorDescriptor() {
   }
 
-  @Override
-  protected void initNode(@NotNull SNode node, @NotNull SConstructor constructor, @Nullable Object[] parameters) {
-    ___init___(node);
-  }
 
   @Override
   protected <T> T invokeSpecial0(@NotNull SNode node, @NotNull SMethod<T> method, @Nullable Object[] parameters) {

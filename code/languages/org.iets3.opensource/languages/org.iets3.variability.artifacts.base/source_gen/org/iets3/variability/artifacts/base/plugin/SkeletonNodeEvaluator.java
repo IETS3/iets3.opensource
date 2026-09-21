@@ -8,14 +8,14 @@ import org.iets3.analysis.solversupport.util.plugin.ExprBuilders;
 import org.iets3.variability.artifacts.base.behavior.ArtifactPath;
 
 /**
- * Some SkeletonNodes will have a SkeletonNodeEvaluator attached. This evaluator 
- * is used to evaluate the PresenceValue of the SkeletonNode depending on some 
+ * Some SkeletonNodes will have a SkeletonNodeEvaluator attached. This evaluator
+ * is used to evaluate the PresenceValue of the SkeletonNode depending on some
  * expression which expresses structural dependency to some of its inner nodes.
  */
 public interface SkeletonNodeEvaluator {
 
   /**
-   * Computes the PresenceConditionValue of the SkeletonNode which has this evaluator 
+   * Computes the PresenceConditionValue of the SkeletonNode which has this evaluator
    * 
    * @param pvp pvp
    * @return PresenceConditionValue

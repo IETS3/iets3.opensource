@@ -8,7 +8,6 @@ import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import org.jetbrains.mps.openapi.model.SNode;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import jetbrains.mps.scope.Scope;
 import java.util.List;
@@ -23,7 +22,6 @@ import jetbrains.mps.internal.collections.runtime.ListSequence;
 import jetbrains.mps.typesystem.inference.TypeChecker;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
 import java.util.Objects;
-import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 import org.jetbrains.mps.openapi.language.SConcept;
@@ -32,18 +30,16 @@ import org.jetbrains.mps.openapi.language.SContainmentLink;
 public final class MessageContainer__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getConcept(0x553a35c5ccd640baL, 0x99235e3b354d0c76L, 0x37e13cd84b31c24fL, "org.iets3.core.expr.messages.structure.MessageContainer");
 
-  public static final SMethod<Iterable<SNode>> dependencies_id6clJcrJYPM5 = new SMethodBuilder<Iterable<SNode>>(new SJavaCompoundTypeImpl((Class<Iterable<SNode>>) ((Class) Object.class))).name("dependencies").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(7139820346881563781L).languageId(0xaa41d1b2bffa7eb1L, 0xd4280a54f6df4383L).build2();
-  public static final SMethod<Iterable<SNode>> visibleContentsOfType_id6clJcrJXo2_ = new SMethodBuilder<Iterable<SNode>>(new SJavaCompoundTypeImpl((Class<Iterable<SNode>>) ((Class) Object.class))).name("visibleContentsOfType").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(7139820346881179813L).languageId(0xaa41d1b2bffa7eb1L, 0xd4280a54f6df4383L).build2(SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""));
-  public static final SMethod<Scope> visibleContentsOfType_id79$zShlSHxZ = new SMethodBuilder<Scope>(new SJavaCompoundTypeImpl(Scope.class)).name("visibleContentsOfType").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(8242871016534235263L).languageId(0xaa41d1b2bffa7eb1L, 0xd4280a54f6df4383L).build2(SMethodBuilder.createJavaParameter((Class<SAbstractConcept>) ((Class) Object.class), ""));
-  public static final SMethod<Iterable<SNode>> allReferenceableContentsInChunk_id6clJcrKmVSn = new SMethodBuilder<Iterable<SNode>>(new SJavaCompoundTypeImpl((Class<Iterable<SNode>>) ((Class) Object.class))).name("allReferenceableContentsInChunk").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(7139820346887880215L).languageId(0xaa41d1b2bffa7eb1L, 0xd4280a54f6df4383L).build2();
-  public static final SMethod<Iterable<SNode>> externallyReferenceableContentsInChunk_id6clJcrKmX4x = new SMethodBuilder<Iterable<SNode>>(new SJavaCompoundTypeImpl((Class<Iterable<SNode>>) ((Class) Object.class))).name("externallyReferenceableContentsInChunk").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(7139820346887885089L).languageId(0xaa41d1b2bffa7eb1L, 0xd4280a54f6df4383L).build2();
-  public static final SMethod<Void> addGenericChunkDependency_id94IdDK$n_l = new SMethodBuilder<Void>(new SJavaCompoundTypeImpl(Void.class)).name("addGenericDependecy").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(163458734823143765L).languageId(0xaa41d1b2bffa7eb1L, 0xd4280a54f6df4383L).build2(SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""));
-  public static final SMethod<SNode> findCoercion_id1CNpG_h8hXQ = new SMethodBuilder<SNode>(new SJavaCompoundTypeImpl((Class<SNode>) ((Class) Object.class))).name("findCoercion").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(1887965683633954678L).languageId(0x99235e3b354d0c76L, 0x553a35c5ccd640baL).build2(SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""), SMethodBuilder.createJavaParameter(Boolean.TYPE, ""));
+  public static final SMethod<Iterable<SNode>> dependencies_id6clJcrJYPM5 = new SMethodBuilder<>((Class<Iterable<SNode>>) ((Class) Object.class)).name("dependencies").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(7139820346881563781L).languageId(0xaa41d1b2bffa7eb1L, 0xd4280a54f6df4383L).build2();
+  public static final SMethod<Iterable<SNode>> visibleContentsOfType_id6clJcrJXo2_ = new SMethodBuilder<>((Class<Iterable<SNode>>) ((Class) Object.class)).name("visibleContentsOfType").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(7139820346881179813L).languageId(0xaa41d1b2bffa7eb1L, 0xd4280a54f6df4383L).build2(SMethodBuilder.createJavaParameter(SNode.class, "targetConcept"));
+  public static final SMethod<Scope> visibleContentsOfType_id79$zShlSHxZ = new SMethodBuilder<>(Scope.class).name("visibleContentsOfType").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(8242871016534235263L).languageId(0xaa41d1b2bffa7eb1L, 0xd4280a54f6df4383L).build2(SMethodBuilder.createJavaParameter(SAbstractConcept.class, "targetConcept"));
+  public static final SMethod<Iterable<SNode>> allReferenceableContentsInChunk_id6clJcrKmVSn = new SMethodBuilder<>((Class<Iterable<SNode>>) ((Class) Object.class)).name("allReferenceableContentsInChunk").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(7139820346887880215L).languageId(0xaa41d1b2bffa7eb1L, 0xd4280a54f6df4383L).build2();
+  public static final SMethod<Iterable<SNode>> externallyReferenceableContentsInChunk_id6clJcrKmX4x = new SMethodBuilder<>((Class<Iterable<SNode>>) ((Class) Object.class)).name("externallyReferenceableContentsInChunk").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(7139820346887885089L).languageId(0xaa41d1b2bffa7eb1L, 0xd4280a54f6df4383L).build2();
+  public static final SMethod<Void> addGenericChunkDependency_id94IdDK$n_l = new SMethodBuilder<>(Void.TYPE).name("addGenericDependecy").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(163458734823143765L).languageId(0xaa41d1b2bffa7eb1L, 0xd4280a54f6df4383L).build2(SMethodBuilder.createJavaParameter(SNode.class, "dep"));
+  public static final SMethod<SNode> findCoercion_id1CNpG_h8hXQ = new SMethodBuilder<>(SNode.class).name("findCoercion").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(1887965683633954678L).languageId(0x99235e3b354d0c76L, 0x553a35c5ccd640baL).build2(SMethodBuilder.createJavaParameter(SNode.class, "t"), SMethodBuilder.createJavaParameter(Boolean.TYPE, "allowSuptypes"));
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(dependencies_id6clJcrJYPM5, visibleContentsOfType_id6clJcrJXo2_, visibleContentsOfType_id79$zShlSHxZ, allReferenceableContentsInChunk_id6clJcrKmVSn, externallyReferenceableContentsInChunk_id6clJcrKmX4x, addGenericChunkDependency_id94IdDK$n_l, findCoercion_id1CNpG_h8hXQ);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(dependencies_id6clJcrJYPM5, visibleContentsOfType_id6clJcrJXo2_, visibleContentsOfType_id79$zShlSHxZ, allReferenceableContentsInChunk_id6clJcrKmVSn, externallyReferenceableContentsInChunk_id6clJcrKmX4x, addGenericChunkDependency_id94IdDK$n_l, findCoercion_id1CNpG_h8hXQ);
 
-  private static void ___init___(@NotNull SNode __thisNode__) {
-  }
 
   /*package*/ static Iterable<SNode> dependencies_id6clJcrJYPM5(@NotNull SNode __thisNode__) {
     return new ArrayList<SNode>();
@@ -74,10 +70,6 @@ public final class MessageContainer__BehaviorDescriptor extends BaseBHDescriptor
   /*package*/ MessageContainer__BehaviorDescriptor() {
   }
 
-  @Override
-  protected void initNode(@NotNull SNode node, @NotNull SConstructor constructor, @Nullable Object[] parameters) {
-    ___init___(node);
-  }
 
   @Override
   protected <T> T invokeSpecial0(@NotNull SNode node, @NotNull SMethod<T> method, @Nullable Object[] parameters) {

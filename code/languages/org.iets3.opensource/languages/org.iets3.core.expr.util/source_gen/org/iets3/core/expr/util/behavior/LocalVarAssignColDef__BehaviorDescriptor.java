@@ -7,7 +7,6 @@ import org.jetbrains.mps.openapi.language.SAbstractConcept;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import com.mbeddr.mpsutil.interpreter.rt.IEnvironment;
 import java.util.List;
@@ -15,7 +14,6 @@ import java.util.Arrays;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.mps.openapi.model.SNode;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
-import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 import org.jetbrains.mps.openapi.language.SContainmentLink;
@@ -24,12 +22,10 @@ import org.jetbrains.mps.openapi.language.SReferenceLink;
 public final class LocalVarAssignColDef__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getConcept(0x8bb1251eeae547abL, 0x984333adfae8edaaL, 0x6d1e5fea0ef8f949L, "org.iets3.core.expr.util.structure.LocalVarAssignColDef");
 
-  public static final SMethod<Void> assign_id6OunYCeYf_J = new SMethodBuilder<Void>(new SJavaCompoundTypeImpl(Void.class)).name("assign").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(7862827458313648495L).languageId(0x984333adfae8edaaL, 0x8bb1251eeae547abL).build2(SMethodBuilder.createJavaParameter(Object.class, ""), SMethodBuilder.createJavaParameter(IEnvironment.class, ""));
+  public static final SMethod<Void> assign_id6OunYCeYf_J = new SMethodBuilder<>(Void.TYPE).name("assign").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(7862827458313648495L).languageId(0x984333adfae8edaaL, 0x8bb1251eeae547abL).build2(SMethodBuilder.createJavaParameter(Object.class, "value"), SMethodBuilder.createJavaParameter(IEnvironment.class, "env"));
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(assign_id6OunYCeYf_J);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(assign_id6OunYCeYf_J);
 
-  private static void ___init___(@NotNull SNode __thisNode__) {
-  }
 
   /*package*/ static void assign_id6OunYCeYf_J(@NotNull SNode __thisNode__, Object value, IEnvironment env) {
     env.put(SLinkOperations.getTarget(SLinkOperations.getTarget(__thisNode__, LINKS.varref$YBHY), LINKS.var$naai), value);
@@ -38,10 +34,6 @@ public final class LocalVarAssignColDef__BehaviorDescriptor extends BaseBHDescri
   /*package*/ LocalVarAssignColDef__BehaviorDescriptor() {
   }
 
-  @Override
-  protected void initNode(@NotNull SNode node, @NotNull SConstructor constructor, @Nullable Object[] parameters) {
-    ___init___(node);
-  }
 
   @Override
   protected <T> T invokeSpecial0(@NotNull SNode node, @NotNull SMethod<T> method, @Nullable Object[] parameters) {

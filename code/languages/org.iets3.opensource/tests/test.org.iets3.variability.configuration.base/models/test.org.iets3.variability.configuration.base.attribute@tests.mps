@@ -18,8 +18,8 @@
     <import index="4ndm" ref="r:a9fe59d7-0b4f-42b0-925a-71cc04f93df1(org.iets3.variability.configuration.base.structure)" />
     <import index="hm2y" ref="r:66e07cb4-a4b0-4bf3-a36d-5e9ed1ff1bd3(org.iets3.core.expr.base.structure)" />
     <import index="5qo5" ref="r:6d93ddb1-b0b0-4eee-8079-51303666672a(org.iets3.core.expr.simpleTypes.structure)" />
-    <import index="1qo3" ref="b0f8641f-bd77-4421-8425-30d9088a82f7/java:org.apache.commons.lang3.tuple(org.apache.commons/)" />
     <import index="ch50" ref="r:83d54567-d361-47ca-a949-7374ea89921d(org.iets3.variability.configuration.base.plugin)" />
+    <import index="1qo3" ref="b0f8641f-bd77-4421-8425-30d9088a82f7/java:org.apache.commons.lang3.tuple(org.apache.commons/)" />
   </imports>
   <registry>
     <language id="8585453e-6bfb-4d80-98de-b16074f1d86c" name="jetbrains.mps.lang.test">
@@ -41,6 +41,9 @@
         <reference id="1210674534086" name="declaration" index="3xOPvv" />
       </concept>
       <concept id="1225978065297" name="jetbrains.mps.lang.test.structure.SimpleNodeTest" flags="ng" index="1LZb2c" />
+    </language>
+    <language id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior">
+      <concept id="3235159848334022093" name="jetbrains.mps.lang.behavior.structure.Node_ConceptMethodCall" flags="nn" index="3zqWPK" />
     </language>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
       <concept id="1219920932475" name="jetbrains.mps.baseLanguage.structure.VariableArityType" flags="in" index="8X2XB">
@@ -235,7 +238,6 @@
       </concept>
     </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
-      <concept id="1179409122411" name="jetbrains.mps.lang.smodel.structure.Node_ConceptMethodCall" flags="nn" index="2qgKlT" />
       <concept id="1145383075378" name="jetbrains.mps.lang.smodel.structure.SNodeListType" flags="in" index="2I9FWS">
         <reference id="1145383142433" name="elementConcept" index="2I9WkF" />
       </concept>
@@ -405,7 +407,7 @@
                 <node concept="37vLTw" id="5Bs7u20Pzn_" role="2Oq$k0">
                   <ref role="3cqZAo" node="5Bs7u20L7VW" resolve="afc" />
                 </node>
-                <node concept="2qgKlT" id="5Bs7u20P$wT" role="2OqNvi">
+                <node concept="3zqWPK" id="5DJjBfj0ac_" role="2OqNvi">
                   <ref role="37wK5l" to="lte6:30ECcbtQkN2" resolve="attributeAssignments" />
                 </node>
               </node>
@@ -443,7 +445,7 @@
                     <ref role="3cqZAo" node="5Bs7u20PzlF" resolve="faas" />
                   </node>
                 </node>
-                <node concept="2qgKlT" id="5Bs7u20QQTB" role="2OqNvi">
+                <node concept="3zqWPK" id="5DJjBfj0acB" role="2OqNvi">
                   <ref role="37wK5l" to="lte6:5Bs7u20FcLE" resolve="getValue" />
                 </node>
               </node>

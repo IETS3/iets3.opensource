@@ -728,38 +728,34 @@
       <node id="7032718916298918458" at="26,50,27,37" concept="7" />
       <node id="7032718916298918458" at="29,68,30,102" concept="7" />
       <node id="7032718916298918458" at="32,27,33,17" concept="7" />
-      <node id="7032718916298918458" at="35,39,36,16" concept="7" />
-      <node id="7032718916298918458" at="40,0,41,0" concept="9" trace="table$tErP" />
-      <node id="7032718916298918458" at="44,0,45,0" concept="9" trace="DataTableType$eA" />
+      <node id="7032718916298918458" at="37,0,38,0" concept="9" trace="table$tErP" />
+      <node id="7032718916298918458" at="41,0,42,0" concept="9" trace="DataTableType$eA" />
       <node id="7032718916298918458" at="18,0,20,0" concept="1" trace="supertypeof_DataTableTyle_SubtypingRule#()V" />
       <node id="8219602584748255929" at="20,113,23,5" concept="4" />
       <node id="7032718916298918458" at="26,0,29,0" concept="5" trace="getApplicableConcept#()Lorg/jetbrains/mps/openapi/language/SAbstractConcept;" />
       <node id="7032718916298918458" at="29,0,32,0" concept="5" trace="isApplicableAndPattern#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljetbrains/mps/lang/typesystem/runtime/IsApplicableStatus;" />
       <node id="7032718916298918458" at="32,0,35,0" concept="5" trace="isWeak#()Z" />
-      <node id="7032718916298918458" at="35,0,38,0" concept="5" trace="surelyKeepsConcept#()Z" />
       <node id="7032718916298918458" at="20,0,26,0" concept="5" trace="getSubOrSuperType#(Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/typesystem/inference/TypeCheckingContext;Ljetbrains/mps/lang/typesystem/runtime/IsApplicableStatus;)Lorg/jetbrains/mps/openapi/model/SNode;" />
       <scope id="7032718916298918458" at="18,52,18,52" />
       <scope id="8219602584748255931" at="21,67,22,191" />
       <scope id="7032718916298918458" at="26,50,27,37" />
       <scope id="7032718916298918458" at="29,68,30,102" />
       <scope id="7032718916298918458" at="32,27,33,17" />
-      <scope id="7032718916298918458" at="35,39,36,16" />
       <scope id="7032718916298918458" at="18,0,20,0" />
       <scope id="7032718916298918458" at="26,0,29,0" />
       <scope id="7032718916298918458" at="29,0,32,0">
         <var name="argument" id="7032718916298918458" />
       </scope>
       <scope id="7032718916298918458" at="32,0,35,0" />
-      <scope id="7032718916298918458" at="35,0,38,0" />
       <scope id="7032718916298918459" at="20,113,24,16" />
       <scope id="7032718916298918458" at="20,0,26,0">
         <var name="dtt" id="7032718916298918458" />
         <var name="status" id="7032718916298918458" />
         <var name="typeCheckingContext" id="7032718916298918458" />
       </scope>
-      <unit id="7032718916298918458" at="39,0,42,0" name="org.iets3.core.expr.data.typesystem.supertypeof_DataTableTyle_SubtypingRule$LINKS" />
-      <unit id="7032718916298918458" at="43,0,46,0" name="org.iets3.core.expr.data.typesystem.supertypeof_DataTableTyle_SubtypingRule$CONCEPTS" />
-      <unit id="7032718916298918458" at="17,0,47,0" name="org.iets3.core.expr.data.typesystem.supertypeof_DataTableTyle_SubtypingRule" />
+      <unit id="7032718916298918458" at="36,0,39,0" name="org.iets3.core.expr.data.typesystem.supertypeof_DataTableTyle_SubtypingRule$LINKS" />
+      <unit id="7032718916298918458" at="40,0,43,0" name="org.iets3.core.expr.data.typesystem.supertypeof_DataTableTyle_SubtypingRule$CONCEPTS" />
+      <unit id="7032718916298918458" at="17,0,44,0" name="org.iets3.core.expr.data.typesystem.supertypeof_DataTableTyle_SubtypingRule" />
     </file>
   </root>
 </debug-info>

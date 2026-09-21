@@ -7,7 +7,6 @@ import org.jetbrains.mps.openapi.language.SAbstractConcept;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import org.iets3.core.expr.stringvalidation.runtime.runtime.XAbstractValidationClause;
 import java.util.List;
@@ -26,10 +25,10 @@ import org.jetbrains.mps.openapi.language.SConcept;
 public final class RangeBasedValidationClause__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getConcept(0xf003a0fec14041d7L, 0xa145ea42368e581cL, 0x2c4af5a5bd90c4f9L, "org.iets3.core.expr.stringvalidation.structure.RangeBasedValidationClause");
 
-  public static final SMethod<String> getPresentation_idhEwIMiw = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("getPresentation").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(1213877396640L).languageId(0x9b92103b95ca8c0cL, 0xceab519525ea4f22L).build2();
-  public static final SMethod<XAbstractValidationClause> makeX_id5wF$o0BEPkN = new SMethodBuilder<XAbstractValidationClause>(new SJavaCompoundTypeImpl(XAbstractValidationClause.class)).name("makeX").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(6353331678943597875L).languageId(0xa145ea42368e581cL, 0xf003a0fec14041d7L).build2();
+  public static final SMethod<String> getPresentation_idhEwIMiw = new SMethodBuilder<>(String.class).name("getPresentation").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(1213877396640L).languageId(0x9b92103b95ca8c0cL, 0xceab519525ea4f22L).build2();
+  public static final SMethod<XAbstractValidationClause> makeX_id5wF$o0BEPkN = new SMethodBuilder<>(XAbstractValidationClause.class).name("makeX").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(6353331678943597875L).languageId(0xa145ea42368e581cL, 0xf003a0fec14041d7L).build2();
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(getPresentation_idhEwIMiw, makeX_id5wF$o0BEPkN);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(getPresentation_idhEwIMiw, makeX_id5wF$o0BEPkN);
 
   private static void ___init___(@NotNull SNode __thisNode__) {
     SLinkOperations.setNewChild(__thisNode__, LINKS.kind$KPbr, CONCEPTS.MustBeCheckKind$MM);

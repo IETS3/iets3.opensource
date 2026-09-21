@@ -26,7 +26,7 @@ public class EnumerationDescriptor_FeatureSelectionState extends EnumerationDesc
   private final EnumerationDescriptor.MemberDescriptor myMember_forceFalse_0 = new EnumerationDescriptor.MemberDescriptor("forceFalse", "forceFalse", 0x78984985077f0b76L, "r:a7e2f963-3e46-49e0-a385-e8c7f33c91b7(org.iets3.variability.featuremodel.base.structure)/8689776316716616566");
 
   private final EnumerationLiteralsIndex myIndex = EnumerationLiteralsIndex.build(0x165f1d0525064544L, 0x895e1424f54166ecL, 0x5db06c237c250a73L, 0x5db06c237c250a74L, 0x5db06c237c250a75L, 0x5db06c237c250a78L, 0x5db06c237c250a7cL, 0x5db06c237c250a81L, 0x283134ce3ea4cb79L, 0x283134ce3ea4cb80L, 0x78984985077f0b6dL, 0x78984985077f0b76L);
-  private final List<EnumerationDescriptor.MemberDescriptor> myMembers = new EnumerationDescriptorBase.MembersList(myIndex, myMember_untouched_0, myMember_autoTrue_0, myMember_autoFalse_0, myMember_userTrue_0, myMember_userFalse_0, myMember_inheritedTrue_0, myMember_inheritedFalse_0, myMember_forceTrue_0, myMember_forceFalse_0);
+  private final List<EnumerationDescriptor.MemberDescriptor> myMembers = new EnumerationDescriptorBase.MembersList0(myIndex, myMember_untouched_0, myMember_autoTrue_0, myMember_autoFalse_0, myMember_userTrue_0, myMember_userFalse_0, myMember_inheritedTrue_0, myMember_inheritedFalse_0, myMember_forceTrue_0, myMember_forceFalse_0);
 
   @Nullable
   @Override

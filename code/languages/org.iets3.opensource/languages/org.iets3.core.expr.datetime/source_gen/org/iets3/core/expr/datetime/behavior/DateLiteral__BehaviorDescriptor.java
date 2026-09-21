@@ -7,7 +7,6 @@ import org.jetbrains.mps.openapi.language.SAbstractConcept;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import org.jetbrains.mps.openapi.model.SNode;
 import java.time.LocalDate;
@@ -17,7 +16,6 @@ import java.util.Arrays;
 import org.jetbrains.annotations.NotNull;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
-import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 import jetbrains.mps.smodel.builder.SNodeBuilder;
@@ -27,20 +25,18 @@ import org.jetbrains.mps.openapi.language.SConcept;
 public final class DateLiteral__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getConcept(0x289fb12b7f534ef7L, 0xbc2e1ed2c6a7c998L, 0x35ec8ca87adca111L, "org.iets3.core.expr.datetime.structure.DateLiteral");
 
-  public static final SMethod<String> renderReadable_id4Y0vh0cfqjE = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("renderReadable").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5728716233893586154L).languageId(0xb66a309a6e1a7290L, 0xcfaa4966b7d54b69L).build2();
-  public static final SMethod<SNode> ofLocalDate_id26CArgU3T0X = new SMethodBuilder<SNode>(new SJavaCompoundTypeImpl((Class<SNode>) ((Class) Object.class))).name("ofLocalDate").modifiers(1, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(2425357398686273597L).languageId(0xbc2e1ed2c6a7c998L, 0x289fb12b7f534ef7L).build2(SMethodBuilder.createJavaParameter(LocalDate.class, ""));
-  public static final SMethod<String> leadingZero_id3C_9jV2tj$ = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("leadingZero").modifiers(1, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(65465562184668388L).languageId(0xbc2e1ed2c6a7c998L, 0x289fb12b7f534ef7L).build2(SMethodBuilder.createJavaParameter(String.class, ""));
-  public static final SMethod<LocalDate> toDate_id26CArgU4p85 = new SMethodBuilder<LocalDate>(new SJavaCompoundTypeImpl(LocalDate.class)).name("toDate").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(2425357398686405125L).languageId(0xbc2e1ed2c6a7c998L, 0x289fb12b7f534ef7L).build2();
-  public static final SMethod<BigInteger> toNumber_id3nGzaxURahk = new SMethodBuilder<BigInteger>(new SJavaCompoundTypeImpl(BigInteger.class)).name("toNumber").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(3885635233757570132L).languageId(0xbc2e1ed2c6a7c998L, 0x289fb12b7f534ef7L).build2();
-  public static final SMethod<Integer> yearNumber_id3C_9jV2mVw = new SMethodBuilder<Integer>(new SJavaCompoundTypeImpl(Integer.TYPE)).name("yearNumber").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(65465562184642272L).languageId(0xbc2e1ed2c6a7c998L, 0x289fb12b7f534ef7L).build2();
-  public static final SMethod<Integer> monthNumber_id3C_9jV2p6z = new SMethodBuilder<Integer>(new SJavaCompoundTypeImpl(Integer.TYPE)).name("monthNumber").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(65465562184651171L).languageId(0xbc2e1ed2c6a7c998L, 0x289fb12b7f534ef7L).build2();
-  public static final SMethod<Integer> dayNumber_id3C_9jV2pNI = new SMethodBuilder<Integer>(new SJavaCompoundTypeImpl(Integer.TYPE)).name("dayNumber").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(65465562184654062L).languageId(0xbc2e1ed2c6a7c998L, 0x289fb12b7f534ef7L).build2();
-  public static final SMethod<Boolean> isSameAs_id7GwCuf2r4g6 = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("isSameAs").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(8872269265511400454L).languageId(0xb66a309a6e1a7290L, 0xcfaa4966b7d54b69L).build2(SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""));
+  public static final SMethod<String> renderReadable_id4Y0vh0cfqjE = new SMethodBuilder<>(String.class).name("renderReadable").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5728716233893586154L).languageId(0xb66a309a6e1a7290L, 0xcfaa4966b7d54b69L).build2();
+  public static final SMethod<SNode> ofLocalDate_id26CArgU3T0X = new SMethodBuilder<>(SNode.class).name("ofLocalDate").modifiers(1, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(2425357398686273597L).languageId(0xbc2e1ed2c6a7c998L, 0x289fb12b7f534ef7L).build2(SMethodBuilder.createJavaParameter(LocalDate.class, "date"));
+  public static final SMethod<String> leadingZero_id3C_9jV2tj$ = new SMethodBuilder<>(String.class).name("leadingZero").modifiers(1, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(65465562184668388L).languageId(0xbc2e1ed2c6a7c998L, 0x289fb12b7f534ef7L).build2(SMethodBuilder.createJavaParameter(String.class, "v"));
+  public static final SMethod<LocalDate> toDate_id26CArgU4p85 = new SMethodBuilder<>(LocalDate.class).name("toDate").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(2425357398686405125L).languageId(0xbc2e1ed2c6a7c998L, 0x289fb12b7f534ef7L).build2();
+  public static final SMethod<BigInteger> toNumber_id3nGzaxURahk = new SMethodBuilder<>(BigInteger.class).name("toNumber").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(3885635233757570132L).languageId(0xbc2e1ed2c6a7c998L, 0x289fb12b7f534ef7L).build2();
+  public static final SMethod<Integer> yearNumber_id3C_9jV2mVw = new SMethodBuilder<>(Integer.TYPE).name("yearNumber").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(65465562184642272L).languageId(0xbc2e1ed2c6a7c998L, 0x289fb12b7f534ef7L).build2();
+  public static final SMethod<Integer> monthNumber_id3C_9jV2p6z = new SMethodBuilder<>(Integer.TYPE).name("monthNumber").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(65465562184651171L).languageId(0xbc2e1ed2c6a7c998L, 0x289fb12b7f534ef7L).build2();
+  public static final SMethod<Integer> dayNumber_id3C_9jV2pNI = new SMethodBuilder<>(Integer.TYPE).name("dayNumber").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(65465562184654062L).languageId(0xbc2e1ed2c6a7c998L, 0x289fb12b7f534ef7L).build2();
+  public static final SMethod<Boolean> isSameAs_id7GwCuf2r4g6 = new SMethodBuilder<>(Boolean.TYPE).name("isSameAs").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(8872269265511400454L).languageId(0xb66a309a6e1a7290L, 0xcfaa4966b7d54b69L).build2(SMethodBuilder.createJavaParameter(SNode.class, "other"));
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(renderReadable_id4Y0vh0cfqjE, ofLocalDate_id26CArgU3T0X, leadingZero_id3C_9jV2tj$, toDate_id26CArgU4p85, toNumber_id3nGzaxURahk, yearNumber_id3C_9jV2mVw, monthNumber_id3C_9jV2p6z, dayNumber_id3C_9jV2pNI, isSameAs_id7GwCuf2r4g6);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(renderReadable_id4Y0vh0cfqjE, ofLocalDate_id26CArgU3T0X, leadingZero_id3C_9jV2tj$, toDate_id26CArgU4p85, toNumber_id3nGzaxURahk, yearNumber_id3C_9jV2mVw, monthNumber_id3C_9jV2p6z, dayNumber_id3C_9jV2pNI, isSameAs_id7GwCuf2r4g6);
 
-  private static void ___init___(@NotNull SNode __thisNode__) {
-  }
 
   /*package*/ static String renderReadable_id4Y0vh0cfqjE(@NotNull SNode __thisNode__) {
     return "/" + SPropertyOperations.getString(__thisNode__, PROPS.yyyy$p88n) + " " + SPropertyOperations.getString(__thisNode__, PROPS.mm$p7Tm) + " " + SPropertyOperations.getString(__thisNode__, PROPS.dd$p7El) + "/";
@@ -97,10 +93,6 @@ public final class DateLiteral__BehaviorDescriptor extends BaseBHDescriptor {
   /*package*/ DateLiteral__BehaviorDescriptor() {
   }
 
-  @Override
-  protected void initNode(@NotNull SNode node, @NotNull SConstructor constructor, @Nullable Object[] parameters) {
-    ___init___(node);
-  }
 
   @Override
   protected <T> T invokeSpecial0(@NotNull SNode node, @NotNull SMethod<T> method, @Nullable Object[] parameters) {

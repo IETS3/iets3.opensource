@@ -7,7 +7,6 @@ import org.jetbrains.mps.openapi.language.SAbstractConcept;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import org.jetbrains.mps.openapi.model.SNode;
 import java.util.List;
@@ -26,7 +25,6 @@ import org.iets3.core.expr.base.plugin.InfHelper;
 import org.iets3.core.expr.base.runtime.runtime.PTF;
 import org.iets3.core.expr.base.behavior.DefaultConstraintAndError;
 import org.iets3.core.expr.base.behavior.IHasBaseType__BehaviorDescriptor;
-import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 import jetbrains.mps.smodel.builder.SNodeBuilder;
@@ -38,28 +36,26 @@ import org.jetbrains.mps.openapi.language.SProperty;
 public final class CollectionType__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getConcept(0x2f7e2e356e744c43L, 0x9fa52465d68f5996L, 0x68d69d36ba495885L, "org.iets3.core.expr.collections.structure.CollectionType");
 
-  public static final SMethod<Boolean> isCovariant_id6zmBjqUilyz = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("isCovariant").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(7554398283339749539L).languageId(0x9fa52465d68f5996L, 0x2f7e2e356e744c43L).build2();
-  public static final SMethod<Boolean> isReadOnly_id1RHynufnzD2 = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("isReadOnly").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(2156530943179766338L).languageId(0x9fa52465d68f5996L, 0x2f7e2e356e744c43L).build2();
-  public static final SMethod<String> getPresentation_idhEwIMiw = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("getPresentation").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(1213877396640L).languageId(0x9b92103b95ca8c0cL, 0xceab519525ea4f22L).build2();
-  public static final SMethod<SNode> bottomType_id6LLGpXJ675K = new SMethodBuilder<SNode>(new SJavaCompoundTypeImpl((Class<SNode>) ((Class) Object.class))).name("bottomType").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(7814222126786310512L).languageId(0x9fa52465d68f5996L, 0x2f7e2e356e744c43L).build2();
-  public static final SMethod<SNode> createActualCollectionType_id46cplYxehRg = new SMethodBuilder<SNode>(new SJavaCompoundTypeImpl((Class<SNode>) ((Class) Object.class))).name("createActualCollectionType").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(4723261570605981136L).languageId(0x9fa52465d68f5996L, 0x2f7e2e356e744c43L).build2();
-  public static final SMethod<SNode> createListOrCollectionType_id2D48zR6ryTu = new SMethodBuilder<SNode>(new SJavaCompoundTypeImpl((Class<SNode>) ((Class) Object.class))).name("createListOrCollectionType").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(3045596896726756958L).languageId(0x9fa52465d68f5996L, 0x2f7e2e356e744c43L).build2();
-  public static final SMethod<List<SNode>> allSupertypes_id4Q4DxjDsh$t = new SMethodBuilder<List<SNode>>(new SJavaCompoundTypeImpl((Class<List<SNode>>) ((Class) Object.class))).name("allSupertypes").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5585772046592317725L).languageId(0xb66a309a6e1a7290L, 0xcfaa4966b7d54b69L).build2();
-  public static final SMethod<Boolean> isComparableTo_id6xvNSEj6BML = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("isComparableTo").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(7520958096812440753L).languageId(0xb66a309a6e1a7290L, 0xcfaa4966b7d54b69L).build2(SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""));
-  public static final SMethod<Iterable<ConstraintAndError>> applicableConstraints_id2S3ZC$oEyBR = new SMethodBuilder<Iterable<ConstraintAndError>>(new SJavaCompoundTypeImpl((Class<Iterable<ConstraintAndError>>) ((Class) Object.class))).name("applicableConstraints").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(3315773615452596727L).languageId(0xb66a309a6e1a7290L, 0xcfaa4966b7d54b69L).build2();
-  public static final SMethod<Boolean> isSubsizeOf_id6eglc2$albb = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("isSubsizeOf").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(7174327392765825739L).languageId(0x9fa52465d68f5996L, 0x2f7e2e356e744c43L).build2(SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""));
-  public static final SMethod<SNode> asGenericCollectionType_id5HLmk5Hpcl_ = new SMethodBuilder<SNode>(new SJavaCompoundTypeImpl((Class<SNode>) ((Class) Object.class))).name("asGenericCollectionType").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(6589145867362813285L).languageId(0x9fa52465d68f5996L, 0x2f7e2e356e744c43L).build2();
-  public static final SMethod<Boolean> canBeEmpty_id6aONDO94596 = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("canBeEmpty").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(7112536885382107718L).languageId(0x9fa52465d68f5996L, 0x2f7e2e356e744c43L).build2();
-  public static final SMethod<Boolean> canBeMultiple_id6aONDO9azgq = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("canBeMultiple").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(7112536885383803930L).languageId(0x9fa52465d68f5996L, 0x2f7e2e356e744c43L).build2();
-  public static final SMethod<SNode> getBaseType_id3oWFox95OZf = new SMethodBuilder<SNode>(new SJavaCompoundTypeImpl((Class<SNode>) ((Class) Object.class))).name("getBaseType").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(3908189377504169935L).languageId(0xb66a309a6e1a7290L, 0xcfaa4966b7d54b69L).build2();
-  public static final SMethod<SNode> baseType_idXhdFKv3UAU = new SMethodBuilder<SNode>(new SJavaCompoundTypeImpl((Class<SNode>) ((Class) Object.class))).name("baseType").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(1103723565285353914L).languageId(0xb66a309a6e1a7290L, 0xcfaa4966b7d54b69L).build2();
-  public static final SMethod<Boolean> isSameAs_idfIXgjlt4VE = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("isSameAs").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(283433227680763626L).languageId(0xb66a309a6e1a7290L, 0xcfaa4966b7d54b69L).build2(SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""));
-  public static final SMethod<SNode> createDefaultVarExpr_id60Qa1k_nI2O = new SMethodBuilder<SNode>(new SJavaCompoundTypeImpl((Class<SNode>) ((Class) Object.class))).name("createDefaultVarExpr").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(6932772747669856436L).languageId(0xb66a309a6e1a7290L, 0xcfaa4966b7d54b69L).build2();
+  public static final SMethod<Boolean> isCovariant_id6zmBjqUilyz = new SMethodBuilder<>(Boolean.TYPE).name("isCovariant").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(7554398283339749539L).languageId(0x9fa52465d68f5996L, 0x2f7e2e356e744c43L).build2();
+  public static final SMethod<Boolean> isReadOnly_id1RHynufnzD2 = new SMethodBuilder<>(Boolean.TYPE).name("isReadOnly").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(2156530943179766338L).languageId(0x9fa52465d68f5996L, 0x2f7e2e356e744c43L).build2();
+  public static final SMethod<String> getPresentation_idhEwIMiw = new SMethodBuilder<>(String.class).name("getPresentation").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(1213877396640L).languageId(0x9b92103b95ca8c0cL, 0xceab519525ea4f22L).build2();
+  public static final SMethod<SNode> bottomType_id6LLGpXJ675K = new SMethodBuilder<>(SNode.class).name("bottomType").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(7814222126786310512L).languageId(0x9fa52465d68f5996L, 0x2f7e2e356e744c43L).build2();
+  public static final SMethod<SNode> createActualCollectionType_id46cplYxehRg = new SMethodBuilder<>(SNode.class).name("createActualCollectionType").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(4723261570605981136L).languageId(0x9fa52465d68f5996L, 0x2f7e2e356e744c43L).build2();
+  public static final SMethod<SNode> createListOrCollectionType_id2D48zR6ryTu = new SMethodBuilder<>(SNode.class).name("createListOrCollectionType").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(3045596896726756958L).languageId(0x9fa52465d68f5996L, 0x2f7e2e356e744c43L).build2();
+  public static final SMethod<List<SNode>> allSupertypes_id4Q4DxjDsh$t = new SMethodBuilder<>((Class<List<SNode>>) ((Class) Object.class)).name("allSupertypes").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5585772046592317725L).languageId(0xb66a309a6e1a7290L, 0xcfaa4966b7d54b69L).build2();
+  public static final SMethod<Boolean> isComparableTo_id6xvNSEj6BML = new SMethodBuilder<>(Boolean.TYPE).name("isComparableTo").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(7520958096812440753L).languageId(0xb66a309a6e1a7290L, 0xcfaa4966b7d54b69L).build2(SMethodBuilder.createJavaParameter(SNode.class, "other"));
+  public static final SMethod<Iterable<ConstraintAndError>> applicableConstraints_id2S3ZC$oEyBR = new SMethodBuilder<>((Class<Iterable<ConstraintAndError>>) ((Class) Object.class)).name("applicableConstraints").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(3315773615452596727L).languageId(0xb66a309a6e1a7290L, 0xcfaa4966b7d54b69L).build2();
+  public static final SMethod<Boolean> isSubsizeOf_id6eglc2$albb = new SMethodBuilder<>(Boolean.TYPE).name("isSubsizeOf").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(7174327392765825739L).languageId(0x9fa52465d68f5996L, 0x2f7e2e356e744c43L).build2(SMethodBuilder.createJavaParameter(SNode.class, "sup"));
+  public static final SMethod<SNode> asGenericCollectionType_id5HLmk5Hpcl_ = new SMethodBuilder<>(SNode.class).name("asGenericCollectionType").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(6589145867362813285L).languageId(0x9fa52465d68f5996L, 0x2f7e2e356e744c43L).build2();
+  public static final SMethod<Boolean> canBeEmpty_id6aONDO94596 = new SMethodBuilder<>(Boolean.TYPE).name("canBeEmpty").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(7112536885382107718L).languageId(0x9fa52465d68f5996L, 0x2f7e2e356e744c43L).build2();
+  public static final SMethod<Boolean> canBeMultiple_id6aONDO9azgq = new SMethodBuilder<>(Boolean.TYPE).name("canBeMultiple").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(7112536885383803930L).languageId(0x9fa52465d68f5996L, 0x2f7e2e356e744c43L).build2();
+  public static final SMethod<SNode> getBaseType_id3oWFox95OZf = new SMethodBuilder<>(SNode.class).name("getBaseType").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(3908189377504169935L).languageId(0xb66a309a6e1a7290L, 0xcfaa4966b7d54b69L).build2();
+  public static final SMethod<SNode> baseType_idXhdFKv3UAU = new SMethodBuilder<>(SNode.class).name("baseType").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(1103723565285353914L).languageId(0xb66a309a6e1a7290L, 0xcfaa4966b7d54b69L).build2();
+  public static final SMethod<Boolean> isSameAs_idfIXgjlt4VE = new SMethodBuilder<>(Boolean.TYPE).name("isSameAs").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(283433227680763626L).languageId(0xb66a309a6e1a7290L, 0xcfaa4966b7d54b69L).build2(SMethodBuilder.createJavaParameter(SNode.class, "other"));
+  public static final SMethod<SNode> createDefaultVarExpr_id60Qa1k_nI2O = new SMethodBuilder<>(SNode.class).name("createDefaultVarExpr").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(6932772747669856436L).languageId(0xb66a309a6e1a7290L, 0xcfaa4966b7d54b69L).build2();
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(isCovariant_id6zmBjqUilyz, isReadOnly_id1RHynufnzD2, getPresentation_idhEwIMiw, bottomType_id6LLGpXJ675K, createActualCollectionType_id46cplYxehRg, createListOrCollectionType_id2D48zR6ryTu, allSupertypes_id4Q4DxjDsh$t, isComparableTo_id6xvNSEj6BML, applicableConstraints_id2S3ZC$oEyBR, isSubsizeOf_id6eglc2$albb, asGenericCollectionType_id5HLmk5Hpcl_, canBeEmpty_id6aONDO94596, canBeMultiple_id6aONDO9azgq, getBaseType_id3oWFox95OZf, baseType_idXhdFKv3UAU, isSameAs_idfIXgjlt4VE, createDefaultVarExpr_id60Qa1k_nI2O);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(isCovariant_id6zmBjqUilyz, isReadOnly_id1RHynufnzD2, getPresentation_idhEwIMiw, bottomType_id6LLGpXJ675K, createActualCollectionType_id46cplYxehRg, createListOrCollectionType_id2D48zR6ryTu, allSupertypes_id4Q4DxjDsh$t, isComparableTo_id6xvNSEj6BML, applicableConstraints_id2S3ZC$oEyBR, isSubsizeOf_id6eglc2$albb, asGenericCollectionType_id5HLmk5Hpcl_, canBeEmpty_id6aONDO94596, canBeMultiple_id6aONDO9azgq, getBaseType_id3oWFox95OZf, baseType_idXhdFKv3UAU, isSameAs_idfIXgjlt4VE, createDefaultVarExpr_id60Qa1k_nI2O);
 
-  private static void ___init___(@NotNull SNode __thisNode__) {
-  }
 
   /*package*/ static boolean isCovariant_id6zmBjqUilyz(@NotNull SNode __thisNode__) {
     return true;
@@ -179,10 +175,6 @@ public final class CollectionType__BehaviorDescriptor extends BaseBHDescriptor {
   /*package*/ CollectionType__BehaviorDescriptor() {
   }
 
-  @Override
-  protected void initNode(@NotNull SNode node, @NotNull SConstructor constructor, @Nullable Object[] parameters) {
-    ___init___(node);
-  }
 
   @Override
   protected <T> T invokeSpecial0(@NotNull SNode node, @NotNull SMethod<T> method, @Nullable Object[] parameters) {

@@ -8,7 +8,6 @@ import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import org.jetbrains.mps.openapi.model.SNode;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import java.util.Set;
 import org.jetbrains.mps.openapi.module.SRepository;
@@ -26,7 +25,6 @@ import jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations;
 import org.jetbrains.mps.openapi.language.SEnumerationLiteral;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SEnumOperations;
 import org.iets3.core.expr.typetags.physunits.typesystem.GroupHelper;
-import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 import org.jetbrains.mps.openapi.language.SContainmentLink;
@@ -37,22 +35,20 @@ import org.jetbrains.mps.openapi.language.SProperty;
 public final class Unit__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getConcept(0x7ee265bd59864709L, 0x86ed2c6daa33cd8cL, 0x73b48a125b0d373fL, "org.iets3.core.expr.typetags.physunits.structure.Unit");
 
-  public static final SMethod<SNode> specification_id1KUmgSF_6QP = new SMethodBuilder<SNode>(new SJavaCompoundTypeImpl((Class<SNode>) ((Class) Object.class))).name("specification").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(2034036099106762165L).languageId(0x86ed2c6daa33cd8cL, 0x7ee265bd59864709L).build2();
-  public static final SMethod<String> getDescriptionText_id69Qfsw3IqwE = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("getDescriptionText").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(7094926192234047530L).languageId(0x9b92103b95ca8c0cL, 0xceab519525ea4f22L).build2(SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""));
-  public static final SMethod<String> getPresentation_idhEwIMiw = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("getPresentation").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(1213877396640L).languageId(0x9b92103b95ca8c0cL, 0xceab519525ea4f22L).build2();
-  public static final SMethod<Iterable<SNode>> getDependenciesRelevantForCycleDetection_id59HbAIOYveX = new SMethodBuilder<Iterable<SNode>>(new SJavaCompoundTypeImpl((Class<Iterable<SNode>>) ((Class) Object.class))).name("getDependenciesRelevantForCycleDetection").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5939454523704210365L).languageId(0xaa41d1b2bffa7eb1L, 0xd4280a54f6df4383L).build2();
-  public static final SMethod<Set<SNode>> traceBackElementInCycle_id17fjvcLF7UR = new SMethodBuilder<Set<SNode>>(new SJavaCompoundTypeImpl((Class<Set<SNode>>) ((Class) Object.class))).name("traceBackElementInCycle").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(1283330125729660599L).languageId(0xaa41d1b2bffa7eb1L, 0xd4280a54f6df4383L).build2(SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""));
-  public static final SMethod<String> getSymbolName_id3NjH4t$gBp1 = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("getSymbolName").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(4383045081079379521L).languageId(0x86ed2c6daa33cd8cL, 0x7ee265bd59864709L).build2();
-  public static final SMethod<String> getQualifiedName_id4yaQL1YaUNL = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("getQualifiedName").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5227231181399633137L).languageId(0xaa41d1b2bffa7eb1L, 0xd4280a54f6df4383L).build2();
-  public static final SMethod<String> getUnitName_id3NjH4t$gD8C = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("getUnitName").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(4383045081079386664L).languageId(0x86ed2c6daa33cd8cL, 0x7ee265bd59864709L).build2();
-  public static final SMethod<Boolean> hasScaling_id2hbaSyAVW8s = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("hasScaling").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(2615231874534982172L).languageId(0x86ed2c6daa33cd8cL, 0x7ee265bd59864709L).build2();
-  public static final SMethod<SNode> getSIBaseUnitEquivalentExpression_id6rBnJAoowM2 = new SMethodBuilder<SNode>(new SJavaCompoundTypeImpl((Class<SNode>) ((Class) Object.class))).name("getSIBaseUnitEquivalentExpression").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(7414999737585241218L).languageId(0x86ed2c6daa33cd8cL, 0x7ee265bd59864709L).build2(SMethodBuilder.createJavaParameter(SRepository.class, ""));
-  public static final SMethod<SNode> quantity_id7JDqwWRWT0R = new SMethodBuilder<SNode>(new SJavaCompoundTypeImpl((Class<SNode>) ((Class) Object.class))).name("quantity").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(8928784349834481719L).languageId(0x86ed2c6daa33cd8cL, 0x7ee265bd59864709L).build2();
+  public static final SMethod<SNode> specification_id1KUmgSF_6QP = new SMethodBuilder<>(SNode.class).name("specification").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(2034036099106762165L).languageId(0x86ed2c6daa33cd8cL, 0x7ee265bd59864709L).build2();
+  public static final SMethod<String> getDescriptionText_id69Qfsw3IqwE = new SMethodBuilder<>(String.class).name("getDescriptionText").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(7094926192234047530L).languageId(0x9b92103b95ca8c0cL, 0xceab519525ea4f22L).build2(SMethodBuilder.createJavaParameter(SNode.class, "reference"));
+  public static final SMethod<String> getPresentation_idhEwIMiw = new SMethodBuilder<>(String.class).name("getPresentation").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(1213877396640L).languageId(0x9b92103b95ca8c0cL, 0xceab519525ea4f22L).build2();
+  public static final SMethod<Iterable<SNode>> getDependenciesRelevantForCycleDetection_id59HbAIOYveX = new SMethodBuilder<>((Class<Iterable<SNode>>) ((Class) Object.class)).name("getDependenciesRelevantForCycleDetection").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5939454523704210365L).languageId(0xaa41d1b2bffa7eb1L, 0xd4280a54f6df4383L).build2();
+  public static final SMethod<Set<SNode>> traceBackElementInCycle_id17fjvcLF7UR = new SMethodBuilder<>((Class<Set<SNode>>) ((Class) Object.class)).name("traceBackElementInCycle").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(1283330125729660599L).languageId(0xaa41d1b2bffa7eb1L, 0xd4280a54f6df4383L).build2(SMethodBuilder.createJavaParameter(SNode.class, "dependency"));
+  public static final SMethod<String> getSymbolName_id3NjH4t$gBp1 = new SMethodBuilder<>(String.class).name("getSymbolName").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(4383045081079379521L).languageId(0x86ed2c6daa33cd8cL, 0x7ee265bd59864709L).build2();
+  public static final SMethod<String> getQualifiedName_id4yaQL1YaUNL = new SMethodBuilder<>(String.class).name("getQualifiedName").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5227231181399633137L).languageId(0xaa41d1b2bffa7eb1L, 0xd4280a54f6df4383L).build2();
+  public static final SMethod<String> getUnitName_id3NjH4t$gD8C = new SMethodBuilder<>(String.class).name("getUnitName").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(4383045081079386664L).languageId(0x86ed2c6daa33cd8cL, 0x7ee265bd59864709L).build2();
+  public static final SMethod<Boolean> hasScaling_id2hbaSyAVW8s = new SMethodBuilder<>(Boolean.TYPE).name("hasScaling").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(2615231874534982172L).languageId(0x86ed2c6daa33cd8cL, 0x7ee265bd59864709L).build2();
+  public static final SMethod<SNode> getSIBaseUnitEquivalentExpression_id6rBnJAoowM2 = new SMethodBuilder<>(SNode.class).name("getSIBaseUnitEquivalentExpression").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(7414999737585241218L).languageId(0x86ed2c6daa33cd8cL, 0x7ee265bd59864709L).build2(SMethodBuilder.createJavaParameter(SRepository.class, "repository"));
+  public static final SMethod<SNode> quantity_id7JDqwWRWT0R = new SMethodBuilder<>(SNode.class).name("quantity").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(8928784349834481719L).languageId(0x86ed2c6daa33cd8cL, 0x7ee265bd59864709L).build2();
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(specification_id1KUmgSF_6QP, getDescriptionText_id69Qfsw3IqwE, getPresentation_idhEwIMiw, getDependenciesRelevantForCycleDetection_id59HbAIOYveX, traceBackElementInCycle_id17fjvcLF7UR, getSymbolName_id3NjH4t$gBp1, getQualifiedName_id4yaQL1YaUNL, getUnitName_id3NjH4t$gD8C, hasScaling_id2hbaSyAVW8s, getSIBaseUnitEquivalentExpression_id6rBnJAoowM2, quantity_id7JDqwWRWT0R);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(specification_id1KUmgSF_6QP, getDescriptionText_id69Qfsw3IqwE, getPresentation_idhEwIMiw, getDependenciesRelevantForCycleDetection_id59HbAIOYveX, traceBackElementInCycle_id17fjvcLF7UR, getSymbolName_id3NjH4t$gBp1, getQualifiedName_id4yaQL1YaUNL, getUnitName_id3NjH4t$gD8C, hasScaling_id2hbaSyAVW8s, getSIBaseUnitEquivalentExpression_id6rBnJAoowM2, quantity_id7JDqwWRWT0R);
 
-  private static void ___init___(@NotNull SNode __thisNode__) {
-  }
 
   /*package*/ static SNode specification_id1KUmgSF_6QP(@NotNull SNode __thisNode__) {
     return SLinkOperations.getTarget(__thisNode__, LINKS.specification$Tp$k);
@@ -94,10 +90,6 @@ public final class Unit__BehaviorDescriptor extends BaseBHDescriptor {
   /*package*/ Unit__BehaviorDescriptor() {
   }
 
-  @Override
-  protected void initNode(@NotNull SNode node, @NotNull SConstructor constructor, @Nullable Object[] parameters) {
-    ___init___(node);
-  }
 
   @Override
   protected <T> T invokeSpecial0(@NotNull SNode node, @NotNull SMethod<T> method, @Nullable Object[] parameters) {

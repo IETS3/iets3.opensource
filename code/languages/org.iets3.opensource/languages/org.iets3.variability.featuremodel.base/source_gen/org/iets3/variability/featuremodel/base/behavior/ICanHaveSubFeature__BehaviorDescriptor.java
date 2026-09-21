@@ -7,37 +7,29 @@ import org.jetbrains.mps.openapi.language.SAbstractConcept;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import org.jetbrains.mps.openapi.model.SNode;
 import java.util.List;
 import java.util.Arrays;
 import org.jetbrains.annotations.NotNull;
-import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 
 public final class ICanHaveSubFeature__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getInterfaceConcept(0x165f1d0525064544L, 0x895e1424f54166ecL, 0x1b324167a470b175L, "org.iets3.variability.featuremodel.base.structure.ICanHaveSubFeature");
 
-  public static final SMethod<Void> clearSubFeatures_id5U58I912QvU = new SMethodBuilder<Void>(new SJavaCompoundTypeImpl(Void.class)).name("clearSubFeatures").modifiers(12, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(6810888366616963066L).languageId(0x895e1424f54166ecL, 0x165f1d0525064544L).build2();
-  public static final SMethod<Void> addSubFeature_id1GMgmu$sb6j = new SMethodBuilder<Void>(new SJavaCompoundTypeImpl(Void.class)).name("addSubFeature").modifiers(12, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(1959700701255872915L).languageId(0x895e1424f54166ecL, 0x165f1d0525064544L).build2(SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""));
-  public static final SMethod<Void> addSubFeatures_id5U58I90Qhsq = new SMethodBuilder<Void>(new SJavaCompoundTypeImpl(Void.class)).name("addSubFeatures").modifiers(12, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(6810888366613665562L).languageId(0x895e1424f54166ecL, 0x165f1d0525064544L).build2(SMethodBuilder.createJavaParameter((Class<Iterable<SNode>>) ((Class) Object.class), ""));
-  public static final SMethod<Iterable<SNode>> getSubFeatures_id2vXsO5ZrqkY = new SMethodBuilder<Iterable<SNode>>(new SJavaCompoundTypeImpl((Class<Iterable<SNode>>) ((Class) Object.class))).name("getSubFeatures").modifiers(12, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(2881586061734946110L).languageId(0x895e1424f54166ecL, 0x165f1d0525064544L).build2();
+  public static final SMethod<Void> clearSubFeatures_id5U58I912QvU = new SMethodBuilder<>(Void.TYPE).name("clearSubFeatures").modifiers(12, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(6810888366616963066L).languageId(0x895e1424f54166ecL, 0x165f1d0525064544L).build2();
+  public static final SMethod<Void> addSubFeature_id1GMgmu$sb6j = new SMethodBuilder<>(Void.TYPE).name("addSubFeature").modifiers(12, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(1959700701255872915L).languageId(0x895e1424f54166ecL, 0x165f1d0525064544L).build2(SMethodBuilder.createJavaParameter(SNode.class, "subFeature"));
+  public static final SMethod<Void> addSubFeatures_id5U58I90Qhsq = new SMethodBuilder<>(Void.TYPE).name("addSubFeatures").modifiers(12, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(6810888366613665562L).languageId(0x895e1424f54166ecL, 0x165f1d0525064544L).build2(SMethodBuilder.createJavaParameter((Class<Iterable<SNode>>) ((Class) Object.class), "subFeatures"));
+  public static final SMethod<Iterable<SNode>> getSubFeatures_id2vXsO5ZrqkY = new SMethodBuilder<>((Class<Iterable<SNode>>) ((Class) Object.class)).name("getSubFeatures").modifiers(12, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(2881586061734946110L).languageId(0x895e1424f54166ecL, 0x165f1d0525064544L).build2();
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(clearSubFeatures_id5U58I912QvU, addSubFeature_id1GMgmu$sb6j, addSubFeatures_id5U58I90Qhsq, getSubFeatures_id2vXsO5ZrqkY);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(clearSubFeatures_id5U58I912QvU, addSubFeature_id1GMgmu$sb6j, addSubFeatures_id5U58I90Qhsq, getSubFeatures_id2vXsO5ZrqkY);
 
-  private static void ___init___(@NotNull SNode __thisNode__) {
-  }
 
 
   /*package*/ ICanHaveSubFeature__BehaviorDescriptor() {
   }
 
-  @Override
-  protected void initNode(@NotNull SNode node, @NotNull SConstructor constructor, @Nullable Object[] parameters) {
-    ___init___(node);
-  }
 
   @Override
   protected <T> T invokeSpecial0(@NotNull SNode node, @NotNull SMethod<T> method, @Nullable Object[] parameters) {

@@ -7,7 +7,6 @@ import org.jetbrains.mps.openapi.language.SAbstractConcept;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import org.jetbrains.mps.openapi.model.SNode;
 import java.util.List;
@@ -17,7 +16,6 @@ import jetbrains.mps.internal.collections.runtime.ListSequence;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
 import jetbrains.mps.lang.core.behavior.BaseConcept__BehaviorDescriptor;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations;
-import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 import org.jetbrains.mps.openapi.language.SContainmentLink;
@@ -26,15 +24,13 @@ import org.jetbrains.mps.openapi.language.SProperty;
 public final class InlineRecordType__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getConcept(0x71934284d7d145eeL, 0xa0548c072591085fL, 0x73194702f12a0ccfL, "org.iets3.core.expr.toplevel.structure.InlineRecordType");
 
-  public static final SMethod<String> getPresentation_idhEwIMiw = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("getPresentation").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(1213877396640L).languageId(0x9b92103b95ca8c0cL, 0xceab519525ea4f22L).build2();
-  public static final SMethod<Boolean> isSynthesized_id7_$HJtBs0P$ = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("isSynthesized").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(8747317549968919908L).languageId(0xb66a309a6e1a7290L, 0xcfaa4966b7d54b69L).build2();
-  public static final SMethod<SNode> getMemberByName_id1Ic1PAvG0C = new SMethodBuilder<SNode>(new SJavaCompoundTypeImpl((Class<SNode>) ((Class) Object.class))).name("getMemberByName").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(31015150269939752L).languageId(0xa0548c072591085fL, 0x71934284d7d145eeL).build2(SMethodBuilder.createJavaParameter(String.class, ""));
-  public static final SMethod<Boolean> hasMemberNamed_id1Ic1PAvFGj = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("hasMemberNamed").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(31015150269938451L).languageId(0xa0548c072591085fL, 0x71934284d7d145eeL).build2(SMethodBuilder.createJavaParameter(String.class, ""));
+  public static final SMethod<String> getPresentation_idhEwIMiw = new SMethodBuilder<>(String.class).name("getPresentation").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(1213877396640L).languageId(0x9b92103b95ca8c0cL, 0xceab519525ea4f22L).build2();
+  public static final SMethod<Boolean> isSynthesized_id7_$HJtBs0P$ = new SMethodBuilder<>(Boolean.TYPE).name("isSynthesized").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(8747317549968919908L).languageId(0xb66a309a6e1a7290L, 0xcfaa4966b7d54b69L).build2();
+  public static final SMethod<SNode> getMemberByName_id1Ic1PAvG0C = new SMethodBuilder<>(SNode.class).name("getMemberByName").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(31015150269939752L).languageId(0xa0548c072591085fL, 0x71934284d7d145eeL).build2(SMethodBuilder.createJavaParameter(String.class, "name"));
+  public static final SMethod<Boolean> hasMemberNamed_id1Ic1PAvFGj = new SMethodBuilder<>(Boolean.TYPE).name("hasMemberNamed").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(31015150269938451L).languageId(0xa0548c072591085fL, 0x71934284d7d145eeL).build2(SMethodBuilder.createJavaParameter(String.class, "name"));
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(getPresentation_idhEwIMiw, isSynthesized_id7_$HJtBs0P$, getMemberByName_id1Ic1PAvG0C, hasMemberNamed_id1Ic1PAvFGj);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(getPresentation_idhEwIMiw, isSynthesized_id7_$HJtBs0P$, getMemberByName_id1Ic1PAvG0C, hasMemberNamed_id1Ic1PAvFGj);
 
-  private static void ___init___(@NotNull SNode __thisNode__) {
-  }
 
   /*package*/ static String getPresentation_idhEwIMiw(@NotNull SNode __thisNode__) {
     return "record{" + ListSequence.fromList(SLinkOperations.getChildren(__thisNode__, LINKS.members$CyZq)).select((it) -> (String) BaseConcept__BehaviorDescriptor.getPresentation_idhEwIMiw.invoke(it)) + "}";
@@ -52,10 +48,6 @@ public final class InlineRecordType__BehaviorDescriptor extends BaseBHDescriptor
   /*package*/ InlineRecordType__BehaviorDescriptor() {
   }
 
-  @Override
-  protected void initNode(@NotNull SNode node, @NotNull SConstructor constructor, @Nullable Object[] parameters) {
-    ___init___(node);
-  }
 
   @Override
   protected <T> T invokeSpecial0(@NotNull SNode node, @NotNull SMethod<T> method, @Nullable Object[] parameters) {

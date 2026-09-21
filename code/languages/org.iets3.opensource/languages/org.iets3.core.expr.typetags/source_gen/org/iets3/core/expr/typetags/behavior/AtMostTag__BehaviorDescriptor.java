@@ -7,7 +7,6 @@ import org.jetbrains.mps.openapi.language.SAbstractConcept;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import org.jetbrains.mps.openapi.model.SNode;
 import java.util.List;
@@ -15,7 +14,6 @@ import java.util.Arrays;
 import org.jetbrains.annotations.NotNull;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
 import jetbrains.mps.lang.core.behavior.BaseConcept__BehaviorDescriptor;
-import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 import org.jetbrains.mps.openapi.language.SContainmentLink;
@@ -23,14 +21,12 @@ import org.jetbrains.mps.openapi.language.SContainmentLink;
 public final class AtMostTag__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getConcept(0x5186c6ce428c4f09L, 0xa9df73d9e86c27d3L, 0x5090e2325266a09cL, "org.iets3.core.expr.typetags.structure.AtMostTag");
 
-  public static final SMethod<Boolean> IsAtMost_id52gSz9iqREL = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("IsAtMost").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5805388625439586993L).languageId(0xa9df73d9e86c27d3L, 0x5186c6ce428c4f09L).build2();
-  public static final SMethod<SNode> getBaseTag_id1RcasK0UAlt = new SMethodBuilder<SNode>(new SJavaCompoundTypeImpl((Class<SNode>) ((Class) Object.class))).name("getBaseTag").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(2147137078514312541L).languageId(0xa9df73d9e86c27d3L, 0x5186c6ce428c4f09L).build2();
-  public static final SMethod<String> getPresentation_idhEwIMiw = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("getPresentation").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(1213877396640L).languageId(0x9b92103b95ca8c0cL, 0xceab519525ea4f22L).build2();
+  public static final SMethod<Boolean> IsAtMost_id52gSz9iqREL = new SMethodBuilder<>(Boolean.TYPE).name("IsAtMost").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5805388625439586993L).languageId(0xa9df73d9e86c27d3L, 0x5186c6ce428c4f09L).build2();
+  public static final SMethod<SNode> getBaseTag_id1RcasK0UAlt = new SMethodBuilder<>(SNode.class).name("getBaseTag").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(2147137078514312541L).languageId(0xa9df73d9e86c27d3L, 0x5186c6ce428c4f09L).build2();
+  public static final SMethod<String> getPresentation_idhEwIMiw = new SMethodBuilder<>(String.class).name("getPresentation").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(1213877396640L).languageId(0x9b92103b95ca8c0cL, 0xceab519525ea4f22L).build2();
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(IsAtMost_id52gSz9iqREL, getBaseTag_id1RcasK0UAlt, getPresentation_idhEwIMiw);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(IsAtMost_id52gSz9iqREL, getBaseTag_id1RcasK0UAlt, getPresentation_idhEwIMiw);
 
-  private static void ___init___(@NotNull SNode __thisNode__) {
-  }
 
   /*package*/ static boolean IsAtMost_id52gSz9iqREL(@NotNull SNode __thisNode__) {
     return true;
@@ -45,10 +41,6 @@ public final class AtMostTag__BehaviorDescriptor extends BaseBHDescriptor {
   /*package*/ AtMostTag__BehaviorDescriptor() {
   }
 
-  @Override
-  protected void initNode(@NotNull SNode node, @NotNull SConstructor constructor, @Nullable Object[] parameters) {
-    ___init___(node);
-  }
 
   @Override
   protected <T> T invokeSpecial0(@NotNull SNode node, @NotNull SMethod<T> method, @Nullable Object[] parameters) {

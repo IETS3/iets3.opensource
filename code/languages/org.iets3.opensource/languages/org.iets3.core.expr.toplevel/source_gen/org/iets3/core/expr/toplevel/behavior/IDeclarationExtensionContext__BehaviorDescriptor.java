@@ -8,33 +8,25 @@ import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import org.jetbrains.mps.openapi.model.SNode;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import java.util.List;
 import java.util.Arrays;
 import org.jetbrains.annotations.NotNull;
-import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 
 public final class IDeclarationExtensionContext__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getInterfaceConcept(0x71934284d7d145eeL, 0xa0548c072591085fL, 0x6157905d6177b58L, "org.iets3.core.expr.toplevel.structure.IDeclarationExtensionContext");
 
-  public static final SMethod<Iterable<SNode>> effectiveMembers_idolugnm5RHX = new SMethodBuilder<Iterable<SNode>>(new SJavaCompoundTypeImpl((Class<Iterable<SNode>>) ((Class) Object.class))).name("effectiveMembers").modifiers(12, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(438389604712151933L).languageId(0xa0548c072591085fL, 0x71934284d7d145eeL).build2(SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""));
+  public static final SMethod<Iterable<SNode>> effectiveMembers_idolugnm5RHX = new SMethodBuilder<>((Class<Iterable<SNode>>) ((Class) Object.class)).name("effectiveMembers").modifiers(12, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(438389604712151933L).languageId(0xa0548c072591085fL, 0x71934284d7d145eeL).build2(SMethodBuilder.createJavaParameter(SNode.class, "declaration"));
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(effectiveMembers_idolugnm5RHX);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(effectiveMembers_idolugnm5RHX);
 
-  private static void ___init___(@NotNull SNode __thisNode__) {
-  }
 
 
   /*package*/ IDeclarationExtensionContext__BehaviorDescriptor() {
   }
 
-  @Override
-  protected void initNode(@NotNull SNode node, @NotNull SConstructor constructor, @Nullable Object[] parameters) {
-    ___init___(node);
-  }
 
   @Override
   protected <T> T invokeSpecial0(@NotNull SNode node, @NotNull SMethod<T> method, @Nullable Object[] parameters) {
