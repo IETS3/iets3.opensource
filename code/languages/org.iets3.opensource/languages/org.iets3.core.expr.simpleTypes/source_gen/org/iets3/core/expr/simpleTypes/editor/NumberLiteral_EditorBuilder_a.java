@@ -10,6 +10,9 @@ import jetbrains.mps.openapi.editor.cells.EditorCell;
 import jetbrains.mps.nodeEditor.cells.EditorCell_Collection;
 import jetbrains.mps.nodeEditor.cellLayout.CellLayout_Indent;
 import jetbrains.mps.baseLanguage.closures.runtime._FunctionTypes;
+import jetbrains.mps.openapi.editor.cells.CellActionType;
+import jetbrains.mps.editor.runtime.impl.cellActions.CellAction_DeleteSmart;
+import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
 import org.jetbrains.mps.openapi.language.SProperty;
 import jetbrains.mps.openapi.editor.menus.transformation.SPropertyInfo;
 import jetbrains.mps.nodeEditor.cellProviders.CellProviderWithRole;
@@ -77,12 +80,28 @@ import org.jetbrains.mps.openapi.language.SConcept;
   private EditorCell createCustomFactory_2(final EditorContext editorContext, final SNode node) {
 
 
-    final EditorCell cell = createSplittableCell_0();
+    final EditorCell cell = createCustomFactory_5();
     EditorCell editorCell = ((_FunctionTypes._return_P0_E0<EditorCell>) () -> cell).invoke();
     return editorCell;
   }
   private EditorCell createCustomFactory_3() {
     return createCustomFactory_2(getEditorContext(), myNode);
+  }
+  private EditorCell createCustomFactory_4(final EditorContext editorContext, final SNode node) {
+
+
+    final EditorCell cell = createSplittableCell_0();
+    EditorCell editorCell = ((_FunctionTypes._return_P0_E0<EditorCell>) () -> {
+      // Of some reason (which is not totally clear yet) the cell provider for splittable property cells registers `CellAction_DeleteSPropertyOrNode` as delete action for `BACKSPACE` and `DELETE` when a number literal value is presented in hexadecimal format. But this delete action does not allow the user to remove a whole number literal node with `BACKSPACE` or `DELETE`. This problem seems to occur when a `splittable` grammar cell is used and an arbitrary attribute is attached to the represented model node (which is the case for hexadecimal number literals).
+      // At least as a workaround, we explicitly replace the delete action registrations by `CellAction_DeleteSmart` in this post-processing step. This delete action seems to properly fulfill all requirements.
+      cell.setAction(CellActionType.DELETE, new CellAction_DeleteSmart(SNodeOperations.getParent(myNode), SNodeOperations.getContainingLink(myNode), myNode));
+      cell.setAction(CellActionType.BACKSPACE, new CellAction_DeleteSmart(SNodeOperations.getParent(myNode), SNodeOperations.getContainingLink(myNode), myNode));
+      return cell;
+    }).invoke();
+    return editorCell;
+  }
+  private EditorCell createCustomFactory_5() {
+    return createCustomFactory_4(getEditorContext(), myNode);
   }
   private EditorCell createSplittableCell_0() {
     // (*): lines added to the factory method from reduce_CellModel_Property (originally used for SplittableCell: reduce_CellModel_WithRole)
@@ -96,7 +115,7 @@ import org.jetbrains.mps.openapi.language.SConcept;
       CellProviderWithRole provider = new SplittablePropertyCellProvider(myNode, PROPS.value$iWTK, getEditorContext(), new NumberLiteralTokenizer()) {
         @Override
         protected ModelAccessor createModelAccessor() {
-          ModelAccessor result = createModelAccessor_h1m3wb_a0a0a0a0a0e0d0n(getSNode(), getProperty(), getEditorContext(), false, false);
+          ModelAccessor result = createModelAccessor_h1m3wb_a0a0a0a0a0e0d0p(getSNode(), getProperty(), getEditorContext(), false, false);
           if (result != null) {
             return result;
           }
@@ -113,7 +132,7 @@ import org.jetbrains.mps.openapi.language.SConcept;
       style.set(StyleAttributes.AUTO_DELETABLE, true);
       style.set(StyleAttributes.DEFAULT_CARET_POSITION, CaretPosition.LAST);
       editorCell.getStyle().putAll(style);
-      editorCell.setSubstituteInfo(new CompositeSubstituteInfo(getEditorContext(), provider.getCellContext(), new SubstituteInfoPartExt[]{new ReplaceWith_Expression_cellMenu_5vqr8z_a0a0a0(), new SChildSubstituteInfoPartEx(editorCell)}));
+      editorCell.setSubstituteInfo(new CompositeSubstituteInfo(getEditorContext(), provider.getCellContext(), new SubstituteInfoPartExt[]{new ReplaceWith_Expression_cellMenu_5vqr8z_a0a0a0a(), new SChildSubstituteInfoPartEx(editorCell)}));
 
       // (*) store cell context for the new cell
       setCellContext(editorCell);
@@ -130,8 +149,8 @@ import org.jetbrains.mps.openapi.language.SConcept;
       getCellFactory().popCellContext();
     }
   }
-  public static class ReplaceWith_Expression_cellMenu_5vqr8z_a0a0a0 extends AbstractCellMenuPart_ReplaceNode_CustomNodeConcept {
-    public ReplaceWith_Expression_cellMenu_5vqr8z_a0a0a0() {
+  public static class ReplaceWith_Expression_cellMenu_5vqr8z_a0a0a0a extends AbstractCellMenuPart_ReplaceNode_CustomNodeConcept {
+    public ReplaceWith_Expression_cellMenu_5vqr8z_a0a0a0a() {
     }
     public SAbstractConcept getReplacementConcept() {
       return CONCEPTS.Expression$D_;
@@ -141,7 +160,7 @@ import org.jetbrains.mps.openapi.language.SConcept;
       return new EditorMenuDescriptorBase("replace node (custom node concept: " + "Expression" + ")", new SNodePointer("r:6d94c93d-1ff8-4e1f-8fca-b92e9d42f070(org.iets3.core.expr.simpleTypes.editor)", "7070869963735806143"));
     }
   }
-  public static ModelAccessor createModelAccessor_h1m3wb_a0a0a0a0a0e0d0n(SNode node, SProperty property, EditorContext editorContext, boolean readOnly, boolean allowEmptyText) {
+  public static ModelAccessor createModelAccessor_h1m3wb_a0a0a0a0a0e0d0p(SNode node, SProperty property, EditorContext editorContext, boolean readOnly, boolean allowEmptyText) {
     if (PTF.areHexadecimalNumbersSupported(node)) {
       return new HexPropertyAccessor(node, PROPS.value$iWTK, readOnly, allowEmptyText);
     }
