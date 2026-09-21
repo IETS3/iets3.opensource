@@ -123,29 +123,25 @@ public class Generated_CornerCases_Test {
   public void Overlap_item1_8266215269024540427() throws Throwable {
     Assert.assertEquals("Expected: " + true + ", but was: " + ((Supplier<Boolean>) () -> {
       LocalDate last = null;
-      {
-        TemporalValue tv = Generated_CornerCases_Test.y1_;
-        LocalDate time = tv.firstSlice().time();
-        if (last == null) {
-          last = time;
-        } else {
-          if (!(last.equals(time))) {
-            return false;
-          }
+      TemporalValue tv = Generated_CornerCases_Test.y1_;
+      LocalDate time = tv.firstSlice().time();
+      if (last == null) {
+        last = time;
+      } else {
+        if (!(last.equals(time))) {
+          return false;
         }
       }
       return true;
     }).get(), (Object) true, ((Supplier<Boolean>) () -> {
       LocalDate last = null;
-      {
-        TemporalValue tv = Generated_CornerCases_Test.y1_;
-        LocalDate time = tv.firstSlice().time();
-        if (last == null) {
-          last = time;
-        } else {
-          if (!(last.equals(time))) {
-            return false;
-          }
+      TemporalValue tv = Generated_CornerCases_Test.y1_;
+      LocalDate time = tv.firstSlice().time();
+      if (last == null) {
+        last = time;
+      } else {
+        if (!(last.equals(time))) {
+          return false;
         }
       }
       return true;
@@ -731,7 +727,7 @@ public class Generated_CornerCases_Test {
   }
   @Test
   public void TestChildren2_item1_575162706484443085() throws Throwable {
-    Assert.assertEquals("Expected: " + ((Supplier<TemporalValue>) () -> {
+    Assert.assertEquals("Expected: " + (((_FunctionTypes._return_P0_E0<TemporalValue>) () -> {
       TemporalValue ctxValue = (TemporalValue) new _FunctionTypes._return_P0_E0<TemporalValue>() {
         public TemporalValue invoke() {
           TemporalValue ctxValue = new TemporalValue(LocalDate.MIN, new BigInteger("0"));
@@ -743,7 +739,7 @@ public class Generated_CornerCases_Test {
       TemporalValue newValue = ctxValue.copy();
       newValue.slices().add(new SliceValue(newValue, LocalDate.of(2010, 1, 1), new BigInteger("0")));
       return TemporalOps.joinSlices(newValue);
-    }).get() + ", but was: " + Generated_CornerCases_Test.childCount2_, ((Supplier<TemporalValue>) () -> {
+    }).invoke()) + ", but was: " + Generated_CornerCases_Test.childCount2_, (Object) ((_FunctionTypes._return_P0_E0<TemporalValue>) () -> {
       TemporalValue ctxValue = (TemporalValue) new _FunctionTypes._return_P0_E0<TemporalValue>() {
         public TemporalValue invoke() {
           TemporalValue ctxValue = new TemporalValue(LocalDate.MIN, new BigInteger("0"));
@@ -755,7 +751,7 @@ public class Generated_CornerCases_Test {
       TemporalValue newValue = ctxValue.copy();
       newValue.slices().add(new SliceValue(newValue, LocalDate.of(2010, 1, 1), new BigInteger("0")));
       return TemporalOps.joinSlices(newValue);
-    }).get(), Generated_CornerCases_Test.childCount2_);
+    }).invoke(), Generated_CornerCases_Test.childCount2_);
   }
   @Test
   public void TestChildren2_item2_575162706484456155() throws Throwable {

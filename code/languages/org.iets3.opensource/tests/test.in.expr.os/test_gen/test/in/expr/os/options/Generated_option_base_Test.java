@@ -55,13 +55,11 @@ public class Generated_option_base_Test {
     try {
       if (((Supplier<Number>) () -> {
         Number newValue = new BigInteger("5");
-        {
-          Number it = newValue;
-          if (!(AH.oneOf(it, (Number) new BigInteger("1"), (Number) new BigInteger("2"), (Number) new BigInteger("3")))) {
-            final Message message = new Message(BuiltinMessageKinds.error(), ContractViolatedException.CONSTRAINT_FAILED + ": " + "it.oneOf[1, 2, 3]").withLocation(new ProgramLocation("r:ea293304-2b79-4cc3-9b45-e3362a713a17(test.in.expr.os.options@tests)/8613480905495570620", "http://127.0.0.1:63320/node?ref=r%3Aea293304-2b79-4cc3-9b45-e3362a713a17%28test.in.expr.os.options%40tests%29%2F8613480905495570620")).withAffectedMemberNames(new HashSet<String>(Arrays.<String>asList()));
-            GlobalContext.MESSAGE_LOG.get().collect(message);
-            throw new ContractViolatedException(message);
-          }
+        Number it = newValue;
+        if (!(AH.oneOf(it, (Number) new BigInteger("1"), (Number) new BigInteger("2"), (Number) new BigInteger("3")))) {
+          final Message message = new Message(BuiltinMessageKinds.error(), ContractViolatedException.CONSTRAINT_FAILED + ": " + "it.oneOf[1, 2, 3]").withLocation(new ProgramLocation("r:ea293304-2b79-4cc3-9b45-e3362a713a17(test.in.expr.os.options@tests)/8613480905495570620", "http://127.0.0.1:63320/node?ref=r%3Aea293304-2b79-4cc3-9b45-e3362a713a17%28test.in.expr.os.options%40tests%29%2F8613480905495570620")).withAffectedMemberNames(new HashSet<String>(Arrays.<String>asList()));
+          GlobalContext.MESSAGE_LOG.get().collect(message);
+          throw new ContractViolatedException(message);
         }
         return newValue;
       }).get() == null) {

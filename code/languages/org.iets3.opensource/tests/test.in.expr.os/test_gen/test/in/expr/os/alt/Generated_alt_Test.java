@@ -33,26 +33,22 @@ public class Generated_alt_Test {
         throw new AlternativesException("The proposed alternative does not exist.");
       }
     }).get();
-    {
-      Boolean it = res;
-      if (!((AH.isEqual(in, new BigInteger("0")) && it) || (!(AH.isEqual(in, new BigInteger("0"))) && !(it)))) {
-        final Message message = new Message(BuiltinMessageKinds.error(), ContractViolatedException.POST_FAILED + ": " + "(in == 0) <=> res").withLocation(new ProgramLocation("r:857bd1a9-fc6d-4f8f-b9d1-c2f774ee6e86(test.in.expr.os.alt@tests)/4839080874925980391", "http://127.0.0.1:63320/node?ref=r%3A857bd1a9-fc6d-4f8f-b9d1-c2f774ee6e86%28test.in.expr.os.alt%40tests%29%2F4839080874925980391")).withAffectedMemberNames(new HashSet<String>(Arrays.<String>asList()));
-        GlobalContext.MESSAGE_LOG.get().collect(message);
-        throw new ContractViolatedException(message);
-      }
+    Boolean it = res;
+    if (!((AH.isEqual(in, new BigInteger("0")) && it) || (!(AH.isEqual(in, new BigInteger("0"))) && !(it)))) {
+      final Message message = new Message(BuiltinMessageKinds.error(), ContractViolatedException.POST_FAILED + ": " + "(in == 0) <=> res").withLocation(new ProgramLocation("r:857bd1a9-fc6d-4f8f-b9d1-c2f774ee6e86(test.in.expr.os.alt@tests)/4839080874925980391", "http://127.0.0.1:63320/node?ref=r%3A857bd1a9-fc6d-4f8f-b9d1-c2f774ee6e86%28test.in.expr.os.alt%40tests%29%2F4839080874925980391")).withAffectedMemberNames(new HashSet<String>(Arrays.<String>asList()));
+      GlobalContext.MESSAGE_LOG.get().collect(message);
+      throw new ContractViolatedException(message);
     }
 
     return res;
   }
   public static Boolean alt1ParamB(Number in) {
     Boolean res = (AH.isEqual(in, new BigInteger("0")) ? true : false);
-    {
-      Boolean it = res;
-      if (!((AH.isEqual(in, new BigInteger("0")) && it) || (!(AH.isEqual(in, new BigInteger("0"))) && !(it)))) {
-        final Message message = new Message(BuiltinMessageKinds.error(), ContractViolatedException.POST_FAILED + ": " + "(in == 0) <=> res").withLocation(new ProgramLocation("r:857bd1a9-fc6d-4f8f-b9d1-c2f774ee6e86(test.in.expr.os.alt@tests)/4839080874925983995", "http://127.0.0.1:63320/node?ref=r%3A857bd1a9-fc6d-4f8f-b9d1-c2f774ee6e86%28test.in.expr.os.alt%40tests%29%2F4839080874925983995")).withAffectedMemberNames(new HashSet<String>(Arrays.<String>asList()));
-        GlobalContext.MESSAGE_LOG.get().collect(message);
-        throw new ContractViolatedException(message);
-      }
+    Boolean it = res;
+    if (!((AH.isEqual(in, new BigInteger("0")) && it) || (!(AH.isEqual(in, new BigInteger("0"))) && !(it)))) {
+      final Message message = new Message(BuiltinMessageKinds.error(), ContractViolatedException.POST_FAILED + ": " + "(in == 0) <=> res").withLocation(new ProgramLocation("r:857bd1a9-fc6d-4f8f-b9d1-c2f774ee6e86(test.in.expr.os.alt@tests)/4839080874925983995", "http://127.0.0.1:63320/node?ref=r%3A857bd1a9-fc6d-4f8f-b9d1-c2f774ee6e86%28test.in.expr.os.alt%40tests%29%2F4839080874925983995")).withAffectedMemberNames(new HashSet<String>(Arrays.<String>asList()));
+      GlobalContext.MESSAGE_LOG.get().collect(message);
+      throw new ContractViolatedException(message);
     }
 
     return res;
@@ -80,34 +76,30 @@ public class Generated_alt_Test {
         throw new AlternativesException("The proposed alternative does not exist.");
       }
     }).get();
-    {
-      Number it = res;
-      if (!(AH.isEqual(it, ((Supplier<Number>) () -> {
-        if (AH.isEqual(in1, new BigInteger("0"))) {
-          return (Number) new BigInteger("1");
-        } else if (!(Objects.equals(in2, "not_two"))) {
-          return (Number) new BigInteger("2");
-        } else {
-          throw new AlternativesException("The proposed alternative does not exist.");
-        }
-      }).get()))) {
-        final Message message = new Message(BuiltinMessageKinds.error(), ContractViolatedException.POST_FAILED + ": " + "res == alt |in1 == 0 => 1|\n    |in2 != \"not_two\" => 2|").withLocation(new ProgramLocation("r:857bd1a9-fc6d-4f8f-b9d1-c2f774ee6e86(test.in.expr.os.alt@tests)/8224492649636629125", "http://127.0.0.1:63320/node?ref=r%3A857bd1a9-fc6d-4f8f-b9d1-c2f774ee6e86%28test.in.expr.os.alt%40tests%29%2F8224492649636629125")).withAffectedMemberNames(new HashSet<String>(Arrays.<String>asList()));
-        GlobalContext.MESSAGE_LOG.get().collect(message);
-        throw new ContractViolatedException(message);
+    Number it = res;
+    if (!(AH.isEqual(it, ((Supplier<Number>) () -> {
+      if (AH.isEqual(in1, new BigInteger("0"))) {
+        return (Number) new BigInteger("1");
+      } else if (!(Objects.equals(in2, "not_two"))) {
+        return (Number) new BigInteger("2");
+      } else {
+        throw new AlternativesException("The proposed alternative does not exist.");
       }
+    }).get()))) {
+      final Message message = new Message(BuiltinMessageKinds.error(), ContractViolatedException.POST_FAILED + ": " + "res == alt |in1 == 0 => 1|\n    |in2 != \"not_two\" => 2|").withLocation(new ProgramLocation("r:857bd1a9-fc6d-4f8f-b9d1-c2f774ee6e86(test.in.expr.os.alt@tests)/8224492649636629125", "http://127.0.0.1:63320/node?ref=r%3A857bd1a9-fc6d-4f8f-b9d1-c2f774ee6e86%28test.in.expr.os.alt%40tests%29%2F8224492649636629125")).withAffectedMemberNames(new HashSet<String>(Arrays.<String>asList()));
+      GlobalContext.MESSAGE_LOG.get().collect(message);
+      throw new ContractViolatedException(message);
     }
 
     return res;
   }
   public static Number alt2ParamB(Number in1, String in2) {
     Number res = (AH.isEqual(in1, new BigInteger("0")) ? (Number) new BigInteger("1") : (Number) new BigInteger("2"));
-    {
-      Number it = res;
-      if (!(AH.isEqual(it, (AH.isEqual(in1, new BigInteger("0")) ? (Number) new BigInteger("1") : (Number) new BigInteger("2"))))) {
-        final Message message = new Message(BuiltinMessageKinds.error(), ContractViolatedException.POST_FAILED + ": " + "res == if in1 == 0 then 1 else 2").withLocation(new ProgramLocation("r:857bd1a9-fc6d-4f8f-b9d1-c2f774ee6e86(test.in.expr.os.alt@tests)/4839080874925993218", "http://127.0.0.1:63320/node?ref=r%3A857bd1a9-fc6d-4f8f-b9d1-c2f774ee6e86%28test.in.expr.os.alt%40tests%29%2F4839080874925993218")).withAffectedMemberNames(new HashSet<String>(Arrays.<String>asList()));
-        GlobalContext.MESSAGE_LOG.get().collect(message);
-        throw new ContractViolatedException(message);
-      }
+    Number it = res;
+    if (!(AH.isEqual(it, (AH.isEqual(in1, new BigInteger("0")) ? (Number) new BigInteger("1") : (Number) new BigInteger("2"))))) {
+      final Message message = new Message(BuiltinMessageKinds.error(), ContractViolatedException.POST_FAILED + ": " + "res == if in1 == 0 then 1 else 2").withLocation(new ProgramLocation("r:857bd1a9-fc6d-4f8f-b9d1-c2f774ee6e86(test.in.expr.os.alt@tests)/4839080874925993218", "http://127.0.0.1:63320/node?ref=r%3A857bd1a9-fc6d-4f8f-b9d1-c2f774ee6e86%28test.in.expr.os.alt%40tests%29%2F4839080874925993218")).withAffectedMemberNames(new HashSet<String>(Arrays.<String>asList()));
+      GlobalContext.MESSAGE_LOG.get().collect(message);
+      throw new ContractViolatedException(message);
     }
 
     return res;

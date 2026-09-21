@@ -26,16 +26,14 @@ public class Generated_utils_dectab_ranges_1_Test {
 
   public static Number testInt(Number a, Number b) {
     Number res = ((Supplier<Number>) () -> {
-      {
-        Number column_a0a0 = a;
-        Number column_b0a0 = b;
-        if (AH.isEqual(column_a0a0, new BigInteger("3")) && AH.inRange(b, new BigInteger("1"), false, new BigInteger("7"), false)) {
-          return (Number) new BigInteger("2");
-        } else if ((AH.isGreater(a, new BigInteger("5")) && (AH.isGreater(b, new BigInteger("5")) || AH.isLess(b, new BigInteger("2"))))) {
-          return (Number) new BigInteger("5");
-        } else {
-          return (Number) new BigInteger("0");
-        }
+      Number column_a0a0 = a;
+      Number column_b0a0 = b;
+      if (AH.isEqual(column_a0a0, new BigInteger("3")) && AH.inRange(b, new BigInteger("1"), false, new BigInteger("7"), false)) {
+        return (Number) new BigInteger("2");
+      } else if ((AH.isGreater(a, new BigInteger("5")) && (AH.isGreater(b, new BigInteger("5")) || AH.isLess(b, new BigInteger("2"))))) {
+        return (Number) new BigInteger("5");
+      } else {
+        return (Number) new BigInteger("0");
       }
     }).get();
 
@@ -43,16 +41,14 @@ public class Generated_utils_dectab_ranges_1_Test {
   }
   public static Number testReal(Number a, Number b) {
     Number res = ((Supplier<Number>) () -> {
-      {
-        Number column_a0a2 = a;
-        Number column_b0a2 = b;
-        if (AH.inRange(b, new BigDecimal("0.9").setScale(1, RoundingMode.DOWN), false, new BigDecimal("7.1").setScale(1, RoundingMode.DOWN), false) && AH.isEqual(column_a0a2, new BigDecimal("3.1").setScale(1, RoundingMode.DOWN))) {
-          return (Number) new BigInteger("2");
-        } else if ((AH.isGreater(a, new BigDecimal("5.1").setScale(1, RoundingMode.DOWN)) && (AH.isGreater(b, new BigDecimal("5.1").setScale(1, RoundingMode.DOWN)) || AH.isLess(b, new BigDecimal("2.1").setScale(1, RoundingMode.DOWN))))) {
-          return (Number) new BigInteger("5");
-        } else {
-          return (Number) new BigInteger("0");
-        }
+      Number column_a0a2 = a;
+      Number column_b0a2 = b;
+      if (AH.inRange(b, new BigDecimal("0.9").setScale(1, RoundingMode.DOWN), false, new BigDecimal("7.1").setScale(1, RoundingMode.DOWN), false) && AH.isEqual(column_a0a2, new BigDecimal("3.1").setScale(1, RoundingMode.DOWN))) {
+        return (Number) new BigInteger("2");
+      } else if ((AH.isGreater(a, new BigDecimal("5.1").setScale(1, RoundingMode.DOWN)) && (AH.isGreater(b, new BigDecimal("5.1").setScale(1, RoundingMode.DOWN)) || AH.isLess(b, new BigDecimal("2.1").setScale(1, RoundingMode.DOWN))))) {
+        return (Number) new BigInteger("5");
+      } else {
+        return (Number) new BigInteger("0");
       }
     }).get();
 

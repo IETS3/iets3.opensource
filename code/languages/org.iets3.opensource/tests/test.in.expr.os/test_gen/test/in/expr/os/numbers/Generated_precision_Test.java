@@ -16,9 +16,8 @@ import java.math.BigInteger;
 import java.math.BigDecimal;
 import java.math.RoundingMode;
 import org.iets3.core.expr.genjava.tests.rt.rt.EqualsTestOp;
-import java.util.function.Supplier;
-import org.iets3.core.expr.base.plugin.ValidValue;
 import jetbrains.mps.baseLanguage.closures.runtime._FunctionTypes;
+import org.iets3.core.expr.base.plugin.ValidValue;
 
 /**
  * 
@@ -32,13 +31,11 @@ public class Generated_precision_Test {
   public static class trunc0 {
     public static Number trunc0(Number this_) {
       Number res = AH.truncate(this_, 0);
-      {
-        Number it = res;
-        if (!(AH.isEqual(it, AH.truncate(this_, 0)))) {
-          final Message message = new Message(BuiltinMessageKinds.error(), ContractViolatedException.POST_FAILED + ": " + "res == precision<truncate to 0>(this)").withLocation(new ProgramLocation("r:136a38b9-9b4d-4cdb-82ce-de7f17f13658(test.in.expr.os.numbers@tests)/4009737334841580239", "http://127.0.0.1:63320/node?ref=r%3A136a38b9-9b4d-4cdb-82ce-de7f17f13658%28test.in.expr.os.numbers%40tests%29%2F4009737334841580239")).withAffectedMemberNames(new HashSet<String>(Arrays.<String>asList()));
-          GlobalContext.MESSAGE_LOG.get().collect(message);
-          throw new ContractViolatedException(message);
-        }
+      Number it = res;
+      if (!(AH.isEqual(it, AH.truncate(this_, 0)))) {
+        final Message message = new Message(BuiltinMessageKinds.error(), ContractViolatedException.POST_FAILED + ": " + "res == precision<truncate to 0>(this)").withLocation(new ProgramLocation("r:136a38b9-9b4d-4cdb-82ce-de7f17f13658(test.in.expr.os.numbers@tests)/4009737334841580239", "http://127.0.0.1:63320/node?ref=r%3A136a38b9-9b4d-4cdb-82ce-de7f17f13658%28test.in.expr.os.numbers%40tests%29%2F4009737334841580239")).withAffectedMemberNames(new HashSet<String>(Arrays.<String>asList()));
+        GlobalContext.MESSAGE_LOG.get().collect(message);
+        throw new ContractViolatedException(message);
       }
 
       return res;
@@ -94,7 +91,7 @@ public class Generated_precision_Test {
   }
   @Test
   public void limits_item4_1988438614050163049() throws Throwable {
-    Assert.assertEquals("Expected: " + true + ", but was: " + ((Supplier<ValidValue>) () -> {
+    Assert.assertEquals("Expected: " + true + ", but was: " + ((_FunctionTypes._return_P0_E0<ValidValue>) () -> {
       Boolean ok = ((_FunctionTypes._return_P0_E0<Boolean>) () -> {
         Number it = AH.limit(new BigDecimal("200.00").setScale(2, RoundingMode.DOWN), new BigInteger("60"), new BigInteger("80"));
         Boolean res = true;
@@ -107,7 +104,7 @@ public class Generated_precision_Test {
       }
       ValidValue res = new ValidValue(ok, msg);
       return res;
-    }).get().ok, (Object) true, (Object) ((Supplier<ValidValue>) () -> {
+    }).invoke().ok, (Object) true, (Object) ((_FunctionTypes._return_P0_E0<ValidValue>) () -> {
       Boolean ok = ((_FunctionTypes._return_P0_E0<Boolean>) () -> {
         Number it = AH.limit(new BigDecimal("200.00").setScale(2, RoundingMode.DOWN), new BigInteger("60"), new BigInteger("80"));
         Boolean res = true;
@@ -120,7 +117,7 @@ public class Generated_precision_Test {
       }
       ValidValue res = new ValidValue(ok, msg);
       return res;
-    }).get().ok);
+    }).invoke().ok);
   }
   @Test
   public void limits_item5_1988438614050163055() throws Throwable {

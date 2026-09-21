@@ -127,13 +127,11 @@ public class Generated_messages_Test {
     }
 
     public void evaluateContracts() {
-      {
-        Point1 it = Point1.this;
-        if (!(AH.isEqual(it.getx(), it.gety()))) {
-          final Message message = Messages.m1("r:cc6f834a-e980-4402-b501-57396f6330a8(messages@tests)/5299123466390644792", "http://127.0.0.1:63320/node?ref=r%3Acc6f834a-e980-4402-b501-57396f6330a8%28messages%40tests%29%2F5299123466390644792").withLocation(new ProgramLocation("r:cc6f834a-e980-4402-b501-57396f6330a8(messages@tests)/5299123466390647551", "http://127.0.0.1:63320/node?ref=r%3Acc6f834a-e980-4402-b501-57396f6330a8%28messages%40tests%29%2F5299123466390647551")).withAffectedMemberNames(new HashSet<String>(Arrays.<String>asList("messages.Point1.y", "messages.Point1.x")));
-          GlobalContext.MESSAGE_LOG.get().collect(message);
-          throw new ContractViolatedException(message);
-        }
+      Point1 it = Point1.this;
+      if (!(AH.isEqual(it.getx(), it.gety()))) {
+        final Message message = Messages.m1("r:cc6f834a-e980-4402-b501-57396f6330a8(messages@tests)/5299123466390644792", "http://127.0.0.1:63320/node?ref=r%3Acc6f834a-e980-4402-b501-57396f6330a8%28messages%40tests%29%2F5299123466390644792").withLocation(new ProgramLocation("r:cc6f834a-e980-4402-b501-57396f6330a8(messages@tests)/5299123466390647551", "http://127.0.0.1:63320/node?ref=r%3Acc6f834a-e980-4402-b501-57396f6330a8%28messages%40tests%29%2F5299123466390647551")).withAffectedMemberNames(new HashSet<String>(Arrays.<String>asList("messages.Point1.y", "messages.Point1.x")));
+        GlobalContext.MESSAGE_LOG.get().collect(message);
+        throw new ContractViolatedException(message);
       }
     }
 

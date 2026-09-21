@@ -236,91 +236,12 @@ public class Generated_strings_Test {
   public void optionStuff_item3_6859926652475793868() throws Throwable {
     Assert.assertEquals("Expected: " + null + ", but was: " + AH.stringLength(null), (Object) null, AH.stringLength(null));
   }
-  public static final String i1_ = ((Supplier<String>) () -> {
-    StringBuilder sb = new StringBuilder();
-
-    {
-      sb.append("Here ");
-    }
-    {
-      final String content = String.valueOf(Generated_strings_Test.a_);
-      sb.append(content);
-    }
-    {
-      sb.append(" X");
-    }
-    return sb.toString();
-  }).get();
-  public static final String i2_ = ((Supplier<String>) () -> {
-    StringBuilder sb = new StringBuilder();
-
-    {
-      sb.append("  with some   space   upfront ");
-    }
-    {
-      final String content = String.valueOf(Generated_strings_Test.a_);
-      sb.append(content);
-    }
-    {
-      sb.append(" and some behind   ");
-    }
-    return sb.toString();
-  }).get();
-  public static final String i3_ = ((Supplier<String>) () -> {
-    StringBuilder sb = new StringBuilder();
-
-    {
-      final String content = String.valueOf(Generated_strings_Test.a_);
-      sb.append(content);
-    }
-    {
-      sb.append(" at the beginning");
-    }
-    return sb.toString();
-  }).get();
-  public static final String i4_ = ((Supplier<String>) () -> {
-    StringBuilder sb = new StringBuilder();
-
-    {
-      sb.append("at the end ");
-    }
-    {
-      final String content = String.valueOf(Generated_strings_Test.a_);
-      sb.append(content);
-    }
-    return sb.toString();
-  }).get();
-  public static final String i5_ = ((Supplier<String>) () -> {
-    StringBuilder sb = new StringBuilder();
-
-    {
-      final String content = String.valueOf(AH.addString(Generated_strings_Test.f_, Generated_strings_Test.g_));
-      sb.append(content);
-    }
-    return sb.toString();
-  }).get();
-  public static final String i6_ = ((Supplier<String>) () -> {
-    StringBuilder sb = new StringBuilder();
-
-    {
-      sb.append("  with deliberate ");
-    }
-    {
-      final String content = String.valueOf(Generated_strings_Test.f_);
-      sb.append(content);
-    }
-    {
-      sb.append(" ");
-    }
-    {
-      final String content = String.valueOf(Generated_strings_Test.g_);
-      sb.append(content);
-    }
-    {
-      sb.append(" spaces   ");
-    }
-    return sb.toString();
-  }).get();
+  public static final String i1_ = "Here " + Generated_strings_Test.a_ + " X";
+  public static final String i2_ = "  with some   space   upfront " + Generated_strings_Test.a_ + " and some behind   ";
+  public static final String i3_ = Generated_strings_Test.a_ + " at the beginning";
+  public static final String i4_ = "at the end " + Generated_strings_Test.a_;
+  public static final String i5_ = String.valueOf(AH.addString(Generated_strings_Test.f_, Generated_strings_Test.g_));
+  public static final String i6_ = "  with deliberate " + Generated_strings_Test.f_ + " " + String.valueOf(Generated_strings_Test.g_) + " spaces   ";
   @Test
   public void interpolation_item0_8293738266740717945() throws Throwable {
     Assert.assertEquals("Expected: " + "Here Hallo X" + ", but was: " + Generated_strings_Test.i1_, "Here Hallo X", Generated_strings_Test.i1_);

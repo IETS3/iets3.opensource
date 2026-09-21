@@ -112,26 +112,22 @@ public class Generated_functions_Test {
       return dummy;
 
     }).get();
-    {
-      Number it = res;
-      if (!(AH.isEqual(it, new BigInteger("0")))) {
-        final Message message = new Message(BuiltinMessageKinds.error(), ContractViolatedException.POST_FAILED + ": " + "res == 0").withLocation(new ProgramLocation("r:f9a70877-66f3-464b-86cb-67a9d543be8c(test.in.expr.os.functions@tests)/6461809954108788138", "http://127.0.0.1:63320/node?ref=r%3Af9a70877-66f3-464b-86cb-67a9d543be8c%28test.in.expr.os.functions%40tests%29%2F6461809954108788138")).withAffectedMemberNames(new HashSet<String>(Arrays.<String>asList()));
-        GlobalContext.MESSAGE_LOG.get().collect(message);
-        throw new ContractViolatedException(message);
-      }
+    Number it = res;
+    if (!(AH.isEqual(it, new BigInteger("0")))) {
+      final Message message = new Message(BuiltinMessageKinds.error(), ContractViolatedException.POST_FAILED + ": " + "res == 0").withLocation(new ProgramLocation("r:f9a70877-66f3-464b-86cb-67a9d543be8c(test.in.expr.os.functions@tests)/6461809954108788138", "http://127.0.0.1:63320/node?ref=r%3Af9a70877-66f3-464b-86cb-67a9d543be8c%28test.in.expr.os.functions%40tests%29%2F6461809954108788138")).withAffectedMemberNames(new HashSet<String>(Arrays.<String>asList()));
+      GlobalContext.MESSAGE_LOG.get().collect(message);
+      throw new ContractViolatedException(message);
     }
 
     return res;
   }
   public static Number valFun2() {
     Number res = new BigInteger("0");
-    {
-      Number it = res;
-      if (!(AH.isEqual(it, new BigInteger("0")))) {
-        final Message message = new Message(BuiltinMessageKinds.error(), ContractViolatedException.POST_FAILED + ": " + "res == 0").withLocation(new ProgramLocation("r:f9a70877-66f3-464b-86cb-67a9d543be8c(test.in.expr.os.functions@tests)/6461809954108789213", "http://127.0.0.1:63320/node?ref=r%3Af9a70877-66f3-464b-86cb-67a9d543be8c%28test.in.expr.os.functions%40tests%29%2F6461809954108789213")).withAffectedMemberNames(new HashSet<String>(Arrays.<String>asList()));
-        GlobalContext.MESSAGE_LOG.get().collect(message);
-        throw new ContractViolatedException(message);
-      }
+    Number it = res;
+    if (!(AH.isEqual(it, new BigInteger("0")))) {
+      final Message message = new Message(BuiltinMessageKinds.error(), ContractViolatedException.POST_FAILED + ": " + "res == 0").withLocation(new ProgramLocation("r:f9a70877-66f3-464b-86cb-67a9d543be8c(test.in.expr.os.functions@tests)/6461809954108789213", "http://127.0.0.1:63320/node?ref=r%3Af9a70877-66f3-464b-86cb-67a9d543be8c%28test.in.expr.os.functions%40tests%29%2F6461809954108789213")).withAffectedMemberNames(new HashSet<String>(Arrays.<String>asList()));
+      GlobalContext.MESSAGE_LOG.get().collect(message);
+      throw new ContractViolatedException(message);
     }
 
     return res;
@@ -140,39 +136,33 @@ public class Generated_functions_Test {
 
     Number dummy = new BigInteger("0");
     Number res = dummy;
-    {
-      Number it = res;
-      if (!(AH.isEqual(it, new BigInteger("0")))) {
-        final Message message = new Message(BuiltinMessageKinds.error(), ContractViolatedException.POST_FAILED + ": " + "res == 0").withLocation(new ProgramLocation("r:f9a70877-66f3-464b-86cb-67a9d543be8c(test.in.expr.os.functions@tests)/6461809954108790334", "http://127.0.0.1:63320/node?ref=r%3Af9a70877-66f3-464b-86cb-67a9d543be8c%28test.in.expr.os.functions%40tests%29%2F6461809954108790334")).withAffectedMemberNames(new HashSet<String>(Arrays.<String>asList()));
-        GlobalContext.MESSAGE_LOG.get().collect(message);
-        throw new ContractViolatedException(message);
-      }
+    Number it = res;
+    if (!(AH.isEqual(it, new BigInteger("0")))) {
+      final Message message = new Message(BuiltinMessageKinds.error(), ContractViolatedException.POST_FAILED + ": " + "res == 0").withLocation(new ProgramLocation("r:f9a70877-66f3-464b-86cb-67a9d543be8c(test.in.expr.os.functions@tests)/6461809954108790334", "http://127.0.0.1:63320/node?ref=r%3Af9a70877-66f3-464b-86cb-67a9d543be8c%28test.in.expr.os.functions%40tests%29%2F6461809954108790334")).withAffectedMemberNames(new HashSet<String>(Arrays.<String>asList()));
+      GlobalContext.MESSAGE_LOG.get().collect(message);
+      throw new ContractViolatedException(message);
     }
 
     return res;
   }
   public static Number noArg() {
     Number res = new BigInteger("5");
-    {
-      Number it = res;
-      if (!(AH.isEqual(it, new BigInteger("5")))) {
-        final Message message = new Message(BuiltinMessageKinds.error(), ContractViolatedException.POST_FAILED + ": " + "res == 5").withLocation(new ProgramLocation("r:f9a70877-66f3-464b-86cb-67a9d543be8c(test.in.expr.os.functions@tests)/6461809954108792884", "http://127.0.0.1:63320/node?ref=r%3Af9a70877-66f3-464b-86cb-67a9d543be8c%28test.in.expr.os.functions%40tests%29%2F6461809954108792884")).withAffectedMemberNames(new HashSet<String>(Arrays.<String>asList()));
-        GlobalContext.MESSAGE_LOG.get().collect(message);
-        throw new ContractViolatedException(message);
-      }
+    Number it = res;
+    if (!(AH.isEqual(it, new BigInteger("5")))) {
+      final Message message = new Message(BuiltinMessageKinds.error(), ContractViolatedException.POST_FAILED + ": " + "res == 5").withLocation(new ProgramLocation("r:f9a70877-66f3-464b-86cb-67a9d543be8c(test.in.expr.os.functions@tests)/6461809954108792884", "http://127.0.0.1:63320/node?ref=r%3Af9a70877-66f3-464b-86cb-67a9d543be8c%28test.in.expr.os.functions%40tests%29%2F6461809954108792884")).withAffectedMemberNames(new HashSet<String>(Arrays.<String>asList()));
+      GlobalContext.MESSAGE_LOG.get().collect(message);
+      throw new ContractViolatedException(message);
     }
 
     return res;
   }
   public static Number inc(Number a) {
     Number res = AH.add(a, new BigInteger("1"));
-    {
-      Number it = res;
-      if (!(AH.isEqual(it, AH.add(a, new BigInteger("1"))))) {
-        final Message message = new Message(BuiltinMessageKinds.error(), ContractViolatedException.POST_FAILED + ": " + "res == a + 1").withLocation(new ProgramLocation("r:f9a70877-66f3-464b-86cb-67a9d543be8c(test.in.expr.os.functions@tests)/6461809954108798047", "http://127.0.0.1:63320/node?ref=r%3Af9a70877-66f3-464b-86cb-67a9d543be8c%28test.in.expr.os.functions%40tests%29%2F6461809954108798047")).withAffectedMemberNames(new HashSet<String>(Arrays.<String>asList()));
-        GlobalContext.MESSAGE_LOG.get().collect(message);
-        throw new ContractViolatedException(message);
-      }
+    Number it = res;
+    if (!(AH.isEqual(it, AH.add(a, new BigInteger("1"))))) {
+      final Message message = new Message(BuiltinMessageKinds.error(), ContractViolatedException.POST_FAILED + ": " + "res == a + 1").withLocation(new ProgramLocation("r:f9a70877-66f3-464b-86cb-67a9d543be8c(test.in.expr.os.functions@tests)/6461809954108798047", "http://127.0.0.1:63320/node?ref=r%3Af9a70877-66f3-464b-86cb-67a9d543be8c%28test.in.expr.os.functions%40tests%29%2F6461809954108798047")).withAffectedMemberNames(new HashSet<String>(Arrays.<String>asList()));
+      GlobalContext.MESSAGE_LOG.get().collect(message);
+      throw new ContractViolatedException(message);
     }
 
     return res;
@@ -180,13 +170,11 @@ public class Generated_functions_Test {
   public static class incExt {
     public static Number incExt(Number this_) {
       Number res = AH.add(this_, new BigInteger("1"));
-      {
-        Number it = res;
-        if (!(AH.isEqual(it, AH.add(this_, new BigInteger("1"))))) {
-          final Message message = new Message(BuiltinMessageKinds.error(), ContractViolatedException.POST_FAILED + ": " + "res == this + 1").withLocation(new ProgramLocation("r:f9a70877-66f3-464b-86cb-67a9d543be8c(test.in.expr.os.functions@tests)/6461809954108807946", "http://127.0.0.1:63320/node?ref=r%3Af9a70877-66f3-464b-86cb-67a9d543be8c%28test.in.expr.os.functions%40tests%29%2F6461809954108807946")).withAffectedMemberNames(new HashSet<String>(Arrays.<String>asList()));
-          GlobalContext.MESSAGE_LOG.get().collect(message);
-          throw new ContractViolatedException(message);
-        }
+      Number it = res;
+      if (!(AH.isEqual(it, AH.add(this_, new BigInteger("1"))))) {
+        final Message message = new Message(BuiltinMessageKinds.error(), ContractViolatedException.POST_FAILED + ": " + "res == this + 1").withLocation(new ProgramLocation("r:f9a70877-66f3-464b-86cb-67a9d543be8c(test.in.expr.os.functions@tests)/6461809954108807946", "http://127.0.0.1:63320/node?ref=r%3Af9a70877-66f3-464b-86cb-67a9d543be8c%28test.in.expr.os.functions%40tests%29%2F6461809954108807946")).withAffectedMemberNames(new HashSet<String>(Arrays.<String>asList()));
+        GlobalContext.MESSAGE_LOG.get().collect(message);
+        throw new ContractViolatedException(message);
       }
 
       return res;
@@ -195,13 +183,11 @@ public class Generated_functions_Test {
   public static class addExt1 {
     public static Number addExt1(Number this_, Number arg) {
       Number res = AH.add(this_, arg);
-      {
-        Number it = res;
-        if (!(AH.isEqual(it, AH.add(this_, arg)))) {
-          final Message message = new Message(BuiltinMessageKinds.error(), ContractViolatedException.POST_FAILED + ": " + "res == this + arg").withLocation(new ProgramLocation("r:f9a70877-66f3-464b-86cb-67a9d543be8c(test.in.expr.os.functions@tests)/6461809954108815895", "http://127.0.0.1:63320/node?ref=r%3Af9a70877-66f3-464b-86cb-67a9d543be8c%28test.in.expr.os.functions%40tests%29%2F6461809954108815895")).withAffectedMemberNames(new HashSet<String>(Arrays.<String>asList()));
-          GlobalContext.MESSAGE_LOG.get().collect(message);
-          throw new ContractViolatedException(message);
-        }
+      Number it = res;
+      if (!(AH.isEqual(it, AH.add(this_, arg)))) {
+        final Message message = new Message(BuiltinMessageKinds.error(), ContractViolatedException.POST_FAILED + ": " + "res == this + arg").withLocation(new ProgramLocation("r:f9a70877-66f3-464b-86cb-67a9d543be8c(test.in.expr.os.functions@tests)/6461809954108815895", "http://127.0.0.1:63320/node?ref=r%3Af9a70877-66f3-464b-86cb-67a9d543be8c%28test.in.expr.os.functions%40tests%29%2F6461809954108815895")).withAffectedMemberNames(new HashSet<String>(Arrays.<String>asList()));
+        GlobalContext.MESSAGE_LOG.get().collect(message);
+        throw new ContractViolatedException(message);
       }
 
       return res;
@@ -210,13 +196,11 @@ public class Generated_functions_Test {
   public static class addExt2 {
     public static Number addExt2(Number this_, Number arg1, Number arg2) {
       Number res = AH.add(AH.add(this_, arg1), arg2);
-      {
-        Number it = res;
-        if (!(AH.isEqual(it, AH.add(AH.add(this_, arg1), arg2)))) {
-          final Message message = new Message(BuiltinMessageKinds.error(), ContractViolatedException.POST_FAILED + ": " + "res == this + arg1 + arg2").withLocation(new ProgramLocation("r:f9a70877-66f3-464b-86cb-67a9d543be8c(test.in.expr.os.functions@tests)/6461809954108828098", "http://127.0.0.1:63320/node?ref=r%3Af9a70877-66f3-464b-86cb-67a9d543be8c%28test.in.expr.os.functions%40tests%29%2F6461809954108828098")).withAffectedMemberNames(new HashSet<String>(Arrays.<String>asList()));
-          GlobalContext.MESSAGE_LOG.get().collect(message);
-          throw new ContractViolatedException(message);
-        }
+      Number it = res;
+      if (!(AH.isEqual(it, AH.add(AH.add(this_, arg1), arg2)))) {
+        final Message message = new Message(BuiltinMessageKinds.error(), ContractViolatedException.POST_FAILED + ": " + "res == this + arg1 + arg2").withLocation(new ProgramLocation("r:f9a70877-66f3-464b-86cb-67a9d543be8c(test.in.expr.os.functions@tests)/6461809954108828098", "http://127.0.0.1:63320/node?ref=r%3Af9a70877-66f3-464b-86cb-67a9d543be8c%28test.in.expr.os.functions%40tests%29%2F6461809954108828098")).withAffectedMemberNames(new HashSet<String>(Arrays.<String>asList()));
+        GlobalContext.MESSAGE_LOG.get().collect(message);
+        throw new ContractViolatedException(message);
       }
 
       return res;
@@ -224,13 +208,11 @@ public class Generated_functions_Test {
   }
   public static Number add(Number a, Number b) {
     Number res = AH.add(a, b);
-    {
-      Number it = res;
-      if (!(AH.isEqual(it, AH.add(a, b)))) {
-        final Message message = new Message(BuiltinMessageKinds.error(), ContractViolatedException.POST_FAILED + ": " + "res == a + b").withLocation(new ProgramLocation("r:f9a70877-66f3-464b-86cb-67a9d543be8c(test.in.expr.os.functions@tests)/6461809954108844994", "http://127.0.0.1:63320/node?ref=r%3Af9a70877-66f3-464b-86cb-67a9d543be8c%28test.in.expr.os.functions%40tests%29%2F6461809954108844994")).withAffectedMemberNames(new HashSet<String>(Arrays.<String>asList()));
-        GlobalContext.MESSAGE_LOG.get().collect(message);
-        throw new ContractViolatedException(message);
-      }
+    Number it = res;
+    if (!(AH.isEqual(it, AH.add(a, b)))) {
+      final Message message = new Message(BuiltinMessageKinds.error(), ContractViolatedException.POST_FAILED + ": " + "res == a + b").withLocation(new ProgramLocation("r:f9a70877-66f3-464b-86cb-67a9d543be8c(test.in.expr.os.functions@tests)/6461809954108844994", "http://127.0.0.1:63320/node?ref=r%3Af9a70877-66f3-464b-86cb-67a9d543be8c%28test.in.expr.os.functions%40tests%29%2F6461809954108844994")).withAffectedMemberNames(new HashSet<String>(Arrays.<String>asList()));
+      GlobalContext.MESSAGE_LOG.get().collect(message);
+      throw new ContractViolatedException(message);
     }
 
     return res;
@@ -238,13 +220,11 @@ public class Generated_functions_Test {
   public static class addExt {
     public static Number addExt(Number this_, Number b) {
       Number res = AH.add(this_, b);
-      {
-        Number it = res;
-        if (!(AH.isEqual(it, AH.add(this_, b)))) {
-          final Message message = new Message(BuiltinMessageKinds.error(), ContractViolatedException.POST_FAILED + ": " + "res == this + b").withLocation(new ProgramLocation("r:f9a70877-66f3-464b-86cb-67a9d543be8c(test.in.expr.os.functions@tests)/6461809954108858061", "http://127.0.0.1:63320/node?ref=r%3Af9a70877-66f3-464b-86cb-67a9d543be8c%28test.in.expr.os.functions%40tests%29%2F6461809954108858061")).withAffectedMemberNames(new HashSet<String>(Arrays.<String>asList()));
-          GlobalContext.MESSAGE_LOG.get().collect(message);
-          throw new ContractViolatedException(message);
-        }
+      Number it = res;
+      if (!(AH.isEqual(it, AH.add(this_, b)))) {
+        final Message message = new Message(BuiltinMessageKinds.error(), ContractViolatedException.POST_FAILED + ": " + "res == this + b").withLocation(new ProgramLocation("r:f9a70877-66f3-464b-86cb-67a9d543be8c(test.in.expr.os.functions@tests)/6461809954108858061", "http://127.0.0.1:63320/node?ref=r%3Af9a70877-66f3-464b-86cb-67a9d543be8c%28test.in.expr.os.functions%40tests%29%2F6461809954108858061")).withAffectedMemberNames(new HashSet<String>(Arrays.<String>asList()));
+        GlobalContext.MESSAGE_LOG.get().collect(message);
+        throw new ContractViolatedException(message);
       }
 
       return res;
@@ -253,13 +233,11 @@ public class Generated_functions_Test {
   public static class addIncExt {
     public static Number addIncExt(Number this_, Number b) {
       Number res = addExt.addExt(incExt.incExt(this_), incExt.incExt(b));
-      {
-        Number it = res;
-        if (!(AH.isEqual(it, addExt.addExt(incExt.incExt(this_), incExt.incExt(b))))) {
-          final Message message = new Message(BuiltinMessageKinds.error(), ContractViolatedException.POST_FAILED + ": " + "res == this.incExt([]).addExt([(instance of DotExpression)])").withLocation(new ProgramLocation("r:f9a70877-66f3-464b-86cb-67a9d543be8c(test.in.expr.os.functions@tests)/6461809954108882268", "http://127.0.0.1:63320/node?ref=r%3Af9a70877-66f3-464b-86cb-67a9d543be8c%28test.in.expr.os.functions%40tests%29%2F6461809954108882268")).withAffectedMemberNames(new HashSet<String>(Arrays.<String>asList()));
-          GlobalContext.MESSAGE_LOG.get().collect(message);
-          throw new ContractViolatedException(message);
-        }
+      Number it = res;
+      if (!(AH.isEqual(it, addExt.addExt(incExt.incExt(this_), incExt.incExt(b))))) {
+        final Message message = new Message(BuiltinMessageKinds.error(), ContractViolatedException.POST_FAILED + ": " + "res == this.incExt([]).addExt([(instance of DotExpression)])").withLocation(new ProgramLocation("r:f9a70877-66f3-464b-86cb-67a9d543be8c(test.in.expr.os.functions@tests)/6461809954108882268", "http://127.0.0.1:63320/node?ref=r%3Af9a70877-66f3-464b-86cb-67a9d543be8c%28test.in.expr.os.functions%40tests%29%2F6461809954108882268")).withAffectedMemberNames(new HashSet<String>(Arrays.<String>asList()));
+        GlobalContext.MESSAGE_LOG.get().collect(message);
+        throw new ContractViolatedException(message);
       }
 
       return res;
@@ -267,78 +245,66 @@ public class Generated_functions_Test {
   }
   public static Number getConstantNumber1() {
     Number res = Generated_functions_Test.constantNumber_;
-    {
-      Number it = res;
-      if (!(AH.isEqual(it, Generated_functions_Test.constantNumber_))) {
-        final Message message = new Message(BuiltinMessageKinds.error(), ContractViolatedException.POST_FAILED + ": " + "res == constantNumber").withLocation(new ProgramLocation("r:f9a70877-66f3-464b-86cb-67a9d543be8c(test.in.expr.os.functions@tests)/6461809954108915983", "http://127.0.0.1:63320/node?ref=r%3Af9a70877-66f3-464b-86cb-67a9d543be8c%28test.in.expr.os.functions%40tests%29%2F6461809954108915983")).withAffectedMemberNames(new HashSet<String>(Arrays.<String>asList()));
-        GlobalContext.MESSAGE_LOG.get().collect(message);
-        throw new ContractViolatedException(message);
-      }
+    Number it = res;
+    if (!(AH.isEqual(it, Generated_functions_Test.constantNumber_))) {
+      final Message message = new Message(BuiltinMessageKinds.error(), ContractViolatedException.POST_FAILED + ": " + "res == constantNumber").withLocation(new ProgramLocation("r:f9a70877-66f3-464b-86cb-67a9d543be8c(test.in.expr.os.functions@tests)/6461809954108915983", "http://127.0.0.1:63320/node?ref=r%3Af9a70877-66f3-464b-86cb-67a9d543be8c%28test.in.expr.os.functions%40tests%29%2F6461809954108915983")).withAffectedMemberNames(new HashSet<String>(Arrays.<String>asList()));
+      GlobalContext.MESSAGE_LOG.get().collect(message);
+      throw new ContractViolatedException(message);
     }
 
     return res;
   }
   public static Number getConstantNumber2() {
     Number res = Generated_functions_Test.constantNumber_;
-    {
-      Number it = res;
-      if (!(AH.isEqual(it, Generated_functions_Test.constantNumber_))) {
-        final Message message = new Message(BuiltinMessageKinds.error(), ContractViolatedException.POST_FAILED + ": " + "res == constantNumber").withLocation(new ProgramLocation("r:f9a70877-66f3-464b-86cb-67a9d543be8c(test.in.expr.os.functions@tests)/6461809954108926365", "http://127.0.0.1:63320/node?ref=r%3Af9a70877-66f3-464b-86cb-67a9d543be8c%28test.in.expr.os.functions%40tests%29%2F6461809954108926365")).withAffectedMemberNames(new HashSet<String>(Arrays.<String>asList()));
-        GlobalContext.MESSAGE_LOG.get().collect(message);
-        throw new ContractViolatedException(message);
-      }
+    Number it = res;
+    if (!(AH.isEqual(it, Generated_functions_Test.constantNumber_))) {
+      final Message message = new Message(BuiltinMessageKinds.error(), ContractViolatedException.POST_FAILED + ": " + "res == constantNumber").withLocation(new ProgramLocation("r:f9a70877-66f3-464b-86cb-67a9d543be8c(test.in.expr.os.functions@tests)/6461809954108926365", "http://127.0.0.1:63320/node?ref=r%3Af9a70877-66f3-464b-86cb-67a9d543be8c%28test.in.expr.os.functions%40tests%29%2F6461809954108926365")).withAffectedMemberNames(new HashSet<String>(Arrays.<String>asList()));
+      GlobalContext.MESSAGE_LOG.get().collect(message);
+      throw new ContractViolatedException(message);
     }
 
     return res;
   }
   public static Number getConstantNumber3(Number constantNumber) {
     Number res = Generated_functions_Test.constantNumber_;
-    {
-      Number it = res;
-      if (!(AH.isEqual(it, Generated_functions_Test.constantNumber_))) {
-        final Message message = new Message(BuiltinMessageKinds.error(), ContractViolatedException.POST_FAILED + ": " + "res == constantNumber").withLocation(new ProgramLocation("r:f9a70877-66f3-464b-86cb-67a9d543be8c(test.in.expr.os.functions@tests)/6461809954108934116", "http://127.0.0.1:63320/node?ref=r%3Af9a70877-66f3-464b-86cb-67a9d543be8c%28test.in.expr.os.functions%40tests%29%2F6461809954108934116")).withAffectedMemberNames(new HashSet<String>(Arrays.<String>asList()));
-        GlobalContext.MESSAGE_LOG.get().collect(message);
-        throw new ContractViolatedException(message);
-      }
+    Number it = res;
+    if (!(AH.isEqual(it, Generated_functions_Test.constantNumber_))) {
+      final Message message = new Message(BuiltinMessageKinds.error(), ContractViolatedException.POST_FAILED + ": " + "res == constantNumber").withLocation(new ProgramLocation("r:f9a70877-66f3-464b-86cb-67a9d543be8c(test.in.expr.os.functions@tests)/6461809954108934116", "http://127.0.0.1:63320/node?ref=r%3Af9a70877-66f3-464b-86cb-67a9d543be8c%28test.in.expr.os.functions%40tests%29%2F6461809954108934116")).withAffectedMemberNames(new HashSet<String>(Arrays.<String>asList()));
+      GlobalContext.MESSAGE_LOG.get().collect(message);
+      throw new ContractViolatedException(message);
     }
 
     return res;
   }
   public static Number getNotConstantNumber(Number constantNumber) {
     Number res = constantNumber;
-    {
-      Number it = res;
-      if (!(AH.isEqual(it, constantNumber))) {
-        final Message message = new Message(BuiltinMessageKinds.error(), ContractViolatedException.POST_FAILED + ": " + "res == constantNumber").withLocation(new ProgramLocation("r:f9a70877-66f3-464b-86cb-67a9d543be8c(test.in.expr.os.functions@tests)/6461809954108947352", "http://127.0.0.1:63320/node?ref=r%3Af9a70877-66f3-464b-86cb-67a9d543be8c%28test.in.expr.os.functions%40tests%29%2F6461809954108947352")).withAffectedMemberNames(new HashSet<String>(Arrays.<String>asList()));
-        GlobalContext.MESSAGE_LOG.get().collect(message);
-        throw new ContractViolatedException(message);
-      }
+    Number it = res;
+    if (!(AH.isEqual(it, constantNumber))) {
+      final Message message = new Message(BuiltinMessageKinds.error(), ContractViolatedException.POST_FAILED + ": " + "res == constantNumber").withLocation(new ProgramLocation("r:f9a70877-66f3-464b-86cb-67a9d543be8c(test.in.expr.os.functions@tests)/6461809954108947352", "http://127.0.0.1:63320/node?ref=r%3Af9a70877-66f3-464b-86cb-67a9d543be8c%28test.in.expr.os.functions%40tests%29%2F6461809954108947352")).withAffectedMemberNames(new HashSet<String>(Arrays.<String>asList()));
+      GlobalContext.MESSAGE_LOG.get().collect(message);
+      throw new ContractViolatedException(message);
     }
 
     return res;
   }
   public static Number returnArg(Number arg) {
     Number res = arg;
-    {
-      Number it = res;
-      if (!(AH.isEqual(it, arg))) {
-        final Message message = new Message(BuiltinMessageKinds.error(), ContractViolatedException.POST_FAILED + ": " + "res == arg").withLocation(new ProgramLocation("r:f9a70877-66f3-464b-86cb-67a9d543be8c(test.in.expr.os.functions@tests)/6461809954108950776", "http://127.0.0.1:63320/node?ref=r%3Af9a70877-66f3-464b-86cb-67a9d543be8c%28test.in.expr.os.functions%40tests%29%2F6461809954108950776")).withAffectedMemberNames(new HashSet<String>(Arrays.<String>asList()));
-        GlobalContext.MESSAGE_LOG.get().collect(message);
-        throw new ContractViolatedException(message);
-      }
+    Number it = res;
+    if (!(AH.isEqual(it, arg))) {
+      final Message message = new Message(BuiltinMessageKinds.error(), ContractViolatedException.POST_FAILED + ": " + "res == arg").withLocation(new ProgramLocation("r:f9a70877-66f3-464b-86cb-67a9d543be8c(test.in.expr.os.functions@tests)/6461809954108950776", "http://127.0.0.1:63320/node?ref=r%3Af9a70877-66f3-464b-86cb-67a9d543be8c%28test.in.expr.os.functions%40tests%29%2F6461809954108950776")).withAffectedMemberNames(new HashSet<String>(Arrays.<String>asList()));
+      GlobalContext.MESSAGE_LOG.get().collect(message);
+      throw new ContractViolatedException(message);
     }
 
     return res;
   }
   public static Number nested() {
     Number res = Generated_functions_Test.inc(incExt.incExt(Generated_functions_Test.noArg()));
-    {
-      Number it = res;
-      if (!(AH.isEqual(it, Generated_functions_Test.inc(incExt.incExt(Generated_functions_Test.noArg()))))) {
-        final Message message = new Message(BuiltinMessageKinds.error(), ContractViolatedException.POST_FAILED + ": " + "res == inc(noArg().incExt([]))").withLocation(new ProgramLocation("r:f9a70877-66f3-464b-86cb-67a9d543be8c(test.in.expr.os.functions@tests)/6461809954108956523", "http://127.0.0.1:63320/node?ref=r%3Af9a70877-66f3-464b-86cb-67a9d543be8c%28test.in.expr.os.functions%40tests%29%2F6461809954108956523")).withAffectedMemberNames(new HashSet<String>(Arrays.<String>asList()));
-        GlobalContext.MESSAGE_LOG.get().collect(message);
-        throw new ContractViolatedException(message);
-      }
+    Number it = res;
+    if (!(AH.isEqual(it, Generated_functions_Test.inc(incExt.incExt(Generated_functions_Test.noArg()))))) {
+      final Message message = new Message(BuiltinMessageKinds.error(), ContractViolatedException.POST_FAILED + ": " + "res == inc(noArg().incExt([]))").withLocation(new ProgramLocation("r:f9a70877-66f3-464b-86cb-67a9d543be8c(test.in.expr.os.functions@tests)/6461809954108956523", "http://127.0.0.1:63320/node?ref=r%3Af9a70877-66f3-464b-86cb-67a9d543be8c%28test.in.expr.os.functions%40tests%29%2F6461809954108956523")).withAffectedMemberNames(new HashSet<String>(Arrays.<String>asList()));
+      GlobalContext.MESSAGE_LOG.get().collect(message);
+      throw new ContractViolatedException(message);
     }
 
     return res;

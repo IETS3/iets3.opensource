@@ -4,9 +4,10 @@ package test.in.expr.os.error;
 
 import fj.data.Validation;
 import org.iets3.core.expr.genjava.base.rt.rt.KernelFErrorException;
-import java.util.function.Supplier;
+import jetbrains.mps.baseLanguage.closures.runtime._FunctionTypes;
 import org.iets3.core.expr.simpleTypes.runtime.AH;
 import java.math.BigInteger;
+import java.util.function.Supplier;
 import java.util.Objects;
 import org.iets3.core.expr.genjava.messages.rt.rt.Message;
 import org.iets3.core.expr.genjava.messages.rt.rt.BuiltinMessageKinds;
@@ -25,8 +26,8 @@ import org.iets3.core.expr.genjava.tests.rt.rt.EqualsTestOp;
 public class Generated_error_Test {
 
 
-  public static Validation<KernelFErrorException, String> errorFunc(Number in) {
-    Validation<KernelFErrorException, String> res = ((Supplier<Validation<KernelFErrorException, String>>) () -> {
+  public static Validation<KernelFErrorException, String> errorFunc(final Number in) {
+    Validation<KernelFErrorException, String> res = ((_FunctionTypes._return_P0_E0<Validation<KernelFErrorException, String>>) () -> {
       if (AH.isEqual(in, new BigInteger("1"))) {
         return Validation.success("success");
       } else if (AH.isEqual(in, new BigInteger("2"))) {
@@ -36,7 +37,7 @@ public class Generated_error_Test {
       } else {
         return Validation.fail(new KernelFErrorException("A"));
       }
-    }).get();
+    }).invoke();
 
     return res;
   }
@@ -55,27 +56,25 @@ public class Generated_error_Test {
         return "X";
       }
     }).get();
-    {
-      String it = res;
-      if (!(Objects.equals(it, ((Supplier<String>) () -> {
-        if (AH.isEqual(in, new BigInteger("1"))) {
-          return "success";
-        } else if (AH.isEqual(in, new BigInteger("3"))) {
-          return "B";
-        } else {
-          return "A";
-        }
-      }).get()))) {
-        final Message message = new Message(BuiltinMessageKinds.error(), ContractViolatedException.POST_FAILED + ": " + "res == alt |in == 1 => \"success\"|\n    |in == 3 => \"B\"|\n    |otherwise => \"A\"|").withLocation(new ProgramLocation("r:88ec7cd5-2a4a-4f67-acf4-2cc4711c1bed(test.in.expr.os.error@tests)/4009737334845336444", "http://127.0.0.1:63320/node?ref=r%3A88ec7cd5-2a4a-4f67-acf4-2cc4711c1bed%28test.in.expr.os.error%40tests%29%2F4009737334845336444")).withAffectedMemberNames(new HashSet<String>(Arrays.<String>asList()));
-        GlobalContext.MESSAGE_LOG.get().collect(message);
-        throw new ContractViolatedException(message);
+    String it = res;
+    if (!(Objects.equals(it, ((Supplier<String>) () -> {
+      if (AH.isEqual(in, new BigInteger("1"))) {
+        return "success";
+      } else if (AH.isEqual(in, new BigInteger("3"))) {
+        return "B";
+      } else {
+        return "A";
       }
+    }).get()))) {
+      final Message message = new Message(BuiltinMessageKinds.error(), ContractViolatedException.POST_FAILED + ": " + "res == alt |in == 1 => \"success\"|\n    |in == 3 => \"B\"|\n    |otherwise => \"A\"|").withLocation(new ProgramLocation("r:88ec7cd5-2a4a-4f67-acf4-2cc4711c1bed(test.in.expr.os.error@tests)/4009737334845336444", "http://127.0.0.1:63320/node?ref=r%3A88ec7cd5-2a4a-4f67-acf4-2cc4711c1bed%28test.in.expr.os.error%40tests%29%2F4009737334845336444")).withAffectedMemberNames(new HashSet<String>(Arrays.<String>asList()));
+      GlobalContext.MESSAGE_LOG.get().collect(message);
+      throw new ContractViolatedException(message);
     }
 
     return res;
   }
-  public static Validation<KernelFErrorException, String> tryInComplete(Number in) {
-    Validation<KernelFErrorException, String> res = ((Supplier<Validation<KernelFErrorException, String>>) () -> {
+  public static Validation<KernelFErrorException, String> tryInComplete(final Number in) {
+    Validation<KernelFErrorException, String> res = ((_FunctionTypes._return_P0_E0<Validation<KernelFErrorException, String>>) () -> {
       try {
         Generated_error_Test.errorFunc(in).success();
         Validation<KernelFErrorException, String> payload = Generated_error_Test.errorFunc(in);
@@ -87,7 +86,7 @@ public class Generated_error_Test {
         return Generated_error_Test.errorFunc(in);
 
       }
-    }).get();
+    }).invoke();
 
     return res;
   }
@@ -176,27 +175,25 @@ public class Generated_error_Test {
 
       }
     }).get();
-    {
-      Number it = res;
-      if (!(AH.isEqual(it, ((Supplier<Number>) () -> {
-        try {
-          in.success();
-          return (Number) new BigInteger("1");
-        } catch (Error e) {
-          if (in.fail().getErrorLiteral().equals("A")) {
-            return (Number) new BigInteger("2");
-          }
-          if (in.fail().getErrorLiteral().equals("B")) {
-            return (Number) new BigInteger("3");
-          }
-          return (Number) new BigInteger("4");
-
+    Number it = res;
+    if (!(AH.isEqual(it, ((Supplier<Number>) () -> {
+      try {
+        in.success();
+        return (Number) new BigInteger("1");
+      } catch (Error e) {
+        if (in.fail().getErrorLiteral().equals("A")) {
+          return (Number) new BigInteger("2");
         }
-      }).get()))) {
-        final Message message = new Message(BuiltinMessageKinds.error(), ContractViolatedException.POST_FAILED + ": " + "res == try in => 1\n  error(A)2\n  error(B)3\n  error4").withLocation(new ProgramLocation("r:88ec7cd5-2a4a-4f67-acf4-2cc4711c1bed(test.in.expr.os.error@tests)/401176299922686981", "http://127.0.0.1:63320/node?ref=r%3A88ec7cd5-2a4a-4f67-acf4-2cc4711c1bed%28test.in.expr.os.error%40tests%29%2F401176299922686981")).withAffectedMemberNames(new HashSet<String>(Arrays.<String>asList()));
-        GlobalContext.MESSAGE_LOG.get().collect(message);
-        throw new ContractViolatedException(message);
+        if (in.fail().getErrorLiteral().equals("B")) {
+          return (Number) new BigInteger("3");
+        }
+        return (Number) new BigInteger("4");
+
       }
+    }).get()))) {
+      final Message message = new Message(BuiltinMessageKinds.error(), ContractViolatedException.POST_FAILED + ": " + "res == try in => 1\n  error(A)2\n  error(B)3\n  error4").withLocation(new ProgramLocation("r:88ec7cd5-2a4a-4f67-acf4-2cc4711c1bed(test.in.expr.os.error@tests)/401176299922686981", "http://127.0.0.1:63320/node?ref=r%3A88ec7cd5-2a4a-4f67-acf4-2cc4711c1bed%28test.in.expr.os.error%40tests%29%2F401176299922686981")).withAffectedMemberNames(new HashSet<String>(Arrays.<String>asList()));
+      GlobalContext.MESSAGE_LOG.get().collect(message);
+      throw new ContractViolatedException(message);
     }
 
     return res;
@@ -229,14 +226,14 @@ public class Generated_error_Test {
   public void attemptParam_item6_3611639268121069866() throws Throwable {
     Assert.assertTrue("Expected: " + new BigInteger("2") + ", but was: " + Generated_error_Test.attempParamFunc(Generated_error_Test.errorFunc(new BigInteger("4"))), EqualsTestOp.matches(new BigInteger("2"), Generated_error_Test.attempParamFunc(Generated_error_Test.errorFunc(new BigInteger("4")))));
   }
-  public static Validation<KernelFErrorException, String> f(Boolean b) {
-    Validation<KernelFErrorException, String> res = ((Supplier<Validation<KernelFErrorException, String>>) () -> {
+  public static Validation<KernelFErrorException, String> f(final Boolean b) {
+    Validation<KernelFErrorException, String> res = ((_FunctionTypes._return_P0_E0<Validation<KernelFErrorException, String>>) () -> {
       if (b) {
         return Validation.success("");
       } else {
         return Validation.fail(new KernelFErrorException("X"));
       }
-    }).get();
+    }).invoke();
 
     return res;
   }
@@ -266,14 +263,14 @@ public class Generated_error_Test {
       }
     }).get()));
   }
-  public static Validation<KernelFErrorException, Number> div(Number c, Number d) {
-    Validation<KernelFErrorException, Number> res = ((Supplier<Validation<KernelFErrorException, Number>>) () -> {
+  public static Validation<KernelFErrorException, Number> div(final Number c, final Number d) {
+    Validation<KernelFErrorException, Number> res = ((_FunctionTypes._return_P0_E0<Validation<KernelFErrorException, Number>>) () -> {
       if (AH.isEqual(d, new BigInteger("0"))) {
         return Validation.fail(new KernelFErrorException("DIVBYZERO"));
       } else {
         return Validation.success(AH.div(c, d));
       }
-    }).get();
+    }).invoke();
 
     return res;
   }
@@ -303,14 +300,14 @@ public class Generated_error_Test {
       }
     }).get(), new BigInteger("1"))));
   }
-  public static Validation<KernelFErrorException, String> strangeString(Boolean b) {
-    Validation<KernelFErrorException, String> res = ((Supplier<Validation<KernelFErrorException, String>>) () -> {
+  public static Validation<KernelFErrorException, String> strangeString(final Boolean b) {
+    Validation<KernelFErrorException, String> res = ((_FunctionTypes._return_P0_E0<Validation<KernelFErrorException, String>>) () -> {
       if (b) {
         return Validation.success("STRANGE");
       } else {
         return Validation.fail(new KernelFErrorException("DEAD"));
       }
-    }).get();
+    }).invoke();
 
     return res;
   }

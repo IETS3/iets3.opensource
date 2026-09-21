@@ -157,7 +157,7 @@ public class OptimizerUtil {
     if ((closure == null)) {
       return false;
     }
-    if ((ternaryIfStatement(SLinkOperations.getTarget(statement, LINKS.expression$eJ92)) != null) || (fluentChainVariable(SLinkOperations.getTarget(statement, LINKS.expression$eJ92)) != null)) {
+    if ((ternaryIfStatement(SLinkOperations.getTarget(statement, LINKS.expression$eJ92)) != null) || (fluentChainVariable(SLinkOperations.getTarget(statement, LINKS.expression$eJ92)) != null) || (stringBuilderVariable(SLinkOperations.getTarget(statement, LINKS.expression$eJ92)) != null)) {
       // the closure collapses to an expression instead
       return false;
     }
@@ -173,7 +173,7 @@ public class OptimizerUtil {
   public static boolean canInlineExpressionStatement(SNode statement) {
     // { => body }.invoke(); --> body (nothing is returned)
     SNode closure = iifeClosure(SLinkOperations.getTarget(statement, LINKS.expression$5L7M));
-    if ((closure == null) || (fluentChainVariable(SLinkOperations.getTarget(statement, LINKS.expression$5L7M)) != null)) {
+    if ((closure == null) || (fluentChainVariable(SLinkOperations.getTarget(statement, LINKS.expression$5L7M)) != null) || (stringBuilderVariable(SLinkOperations.getTarget(statement, LINKS.expression$5L7M)) != null)) {
       return false;
     }
     if (containsYield(SLinkOperations.getTarget(closure, LINKS.body$Ujx2)) || ListSequence.fromList(escapingReturns(SLinkOperations.getTarget(closure, LINKS.body$Ujx2))).isNotEmpty()) {
@@ -188,7 +188,7 @@ public class OptimizerUtil {
       return false;
     }
     SNode closure = iifeClosure(SLinkOperations.getTarget(declaration, LINKS.initializer$2twD));
-    if ((closure == null) || (fluentChainVariable(SLinkOperations.getTarget(declaration, LINKS.initializer$2twD)) != null)) {
+    if ((closure == null) || (fluentChainVariable(SLinkOperations.getTarget(declaration, LINKS.initializer$2twD)) != null) || (stringBuilderVariable(SLinkOperations.getTarget(declaration, LINKS.initializer$2twD)) != null)) {
       // a chain collapses to an expression instead
       return false;
     }
@@ -782,18 +782,50 @@ public class OptimizerUtil {
     }
     return null;
   }
+  private static boolean bodySettled(SNode closure) {
+    // whether no rule of this generator is going to change the shape of the closure body any more:
+    // the shape is what decides between the rules that do away with an invocation, so a body
+    // still being flattened, inlined or folded is not yet the one to decide on
+    for (SNode statement : ListSequence.fromList(SNodeOperations.getNodeDescendants(SLinkOperations.getTarget(closure, LINKS.body$Ujx2), CONCEPTS.Statement$P6, false, new SAbstractConcept[]{}))) {
+      if (SNodeOperations.isInstanceOf(statement, CONCEPTS.BlockStatement$u4) && canFlattenBlock(SNodeOperations.cast(statement, CONCEPTS.BlockStatement$u4))) {
+        return false;
+      }
+      if (SNodeOperations.isInstanceOf(statement, CONCEPTS.LocalVariableDeclarationStatement$4w) && (isInlinableTemporaryStatement(SNodeOperations.cast(statement, CONCEPTS.LocalVariableDeclarationStatement$4w)) || canInlineLocalVariableStatement(SNodeOperations.cast(statement, CONCEPTS.LocalVariableDeclarationStatement$4w)))) {
+        return false;
+      }
+      if (SNodeOperations.isInstanceOf(statement, CONCEPTS.ReturnStatement$lt) && canInlineReturn(SNodeOperations.cast(statement, CONCEPTS.ReturnStatement$lt))) {
+        return false;
+      }
+      if (SNodeOperations.isInstanceOf(statement, CONCEPTS.ExpressionStatement$O8) && canInlineExpressionStatement(SNodeOperations.cast(statement, CONCEPTS.ExpressionStatement$O8))) {
+        return false;
+      }
+      if (SNodeOperations.isInstanceOf(statement, CONCEPTS.IfStatement$Q4) && canFoldIf(SNodeOperations.cast(statement, CONCEPTS.IfStatement$Q4))) {
+        return false;
+      }
+    }
+    for (SNode expr : ListSequence.fromList(SNodeOperations.getNodeDescendants(SLinkOperations.getTarget(closure, LINKS.body$Ujx2), CONCEPTS.Expression$mB, false, new SAbstractConcept[]{}))) {
+      if (isIife(expr)) {
+        // an invocation inside goes first, whatever becomes of it
+        return false;
+      }
+    }
+    return true;
+  }
   private static boolean invocationStays(SNode iife) {
     // whether no rule of this generator is going to do away with the invocation, now or in a later
     // pass: the inlining rules look at the statement around it, which the passes before may still
     // be changing, so an invocation right under a statement counts as staying only when the
     // statement's own rule declines it
+    if (!(bodySettled(iifeClosure(iife)))) {
+      return false;
+    }
     SNode parent = SNodeOperations.getParent(iife);
     if (SNodeOperations.isInstanceOf(parent, CONCEPTS.ParenthesizedExpression$Ws)) {
       // parentheses that are going to be dropped go first, then the statement rules get to see
       // the invocation; parentheses that stay (around a receiver, say) leave it where it is
       return !(parensRedundant(SNodeOperations.cast(parent, CONCEPTS.ParenthesizedExpression$Ws)));
     }
-    if ((singleReturnValue(iife) != null) || (ternaryIfStatement(iife) != null) || (fluentChainVariable(iife) != null)) {
+    if ((singleReturnValue(iife) != null) || (ternaryIfStatement(iife) != null) || (fluentChainVariable(iife) != null) || (stringBuilderVariable(iife) != null)) {
       return false;
     }
     if (SNodeOperations.isInstanceOf(parent, CONCEPTS.ReturnStatement$lt)) {
@@ -827,11 +859,45 @@ public class OptimizerUtil {
     return type;
   }
   private static SNode closureResultType(SNode iife) {
-    SNode type = typeOf(iifeClosure(iife));
-    if (!(SNodeOperations.isInstanceOf(type, CONCEPTS.FunctionType$9U))) {
+    // the type of what the closure returns, from its own returns: the type system also counts the
+    // returns of lambdas nested inside, which it does not know as a boundary, and answers Object.
+    // The widest of the returned types when every other is a subtype of it; a void type when
+    // nothing is returned; null when the types do not line up
+    SNode closure = iifeClosure(iife);
+    List<SNode> types = new ArrayList<SNode>();
+    boolean returnsNothing = false;
+    for (SNode ret : ListSequence.fromList(escapingReturns(SLinkOperations.getTarget(closure, LINKS.body$Ujx2)))) {
+      if ((SLinkOperations.getTarget(ret, LINKS.expression$eJ92) == null)) {
+        returnsNothing = true;
+        continue;
+      }
+      if (SNodeOperations.isInstanceOf(SLinkOperations.getTarget(ret, LINKS.expression$eJ92), CONCEPTS.NullLiteral$QQ)) {
+        continue;
+      }
+      SNode type = boxed(typeOf(SLinkOperations.getTarget(ret, LINKS.expression$eJ92)));
+      if ((type == null)) {
+        return null;
+      }
+      ListSequence.fromList(types).addElement(type);
+    }
+    if (ListSequence.fromList(types).isEmpty()) {
+      return (returnsNothing || ListSequence.fromList(escapingReturns(SLinkOperations.getTarget(closure, LINKS.body$Ujx2))).isEmpty() ? SConceptOperations.createNewNode(MetaAdapterFactory.getConcept(0xf3061a5392264cc5L, 0xa443f952ceaf5816L, 0xf8cc6bf96dL, "jetbrains.mps.baseLanguage.structure.VoidType")) : null);
+    }
+    if (returnsNothing) {
       return null;
     }
-    return SLinkOperations.getTarget((SNodeOperations.cast(type, CONCEPTS.FunctionType$9U)), LINKS.resultType$2oOC);
+    for (SNode candidate : ListSequence.fromList(types)) {
+      boolean widest = true;
+      for (SNode other : ListSequence.fromList(types)) {
+        if (other != candidate && !(structurallyEqual(other, candidate)) && !(isSubtype(other, candidate))) {
+          widest = false;
+        }
+      }
+      if (widest) {
+        return candidate;
+      }
+    }
+    return null;
   }
   public static SNode closureBody(SNode iife) {
     return SLinkOperations.getTarget(iifeClosure(iife), LINKS.body$Ujx2);
@@ -843,6 +909,242 @@ public class OptimizerUtil {
       return false;
     }
     return SNodeOperations.isInstanceOf(closureResultType(iife), CONCEPTS.VoidType$BF);
+  }
+  private static boolean isPureRead(SNode n) {
+    // an expression node whose evaluation has no effect anyone could observe, so that an
+    // expression may be evaluated after it instead of before it
+    return SNodeOperations.isInstanceOf(n, CONCEPTS.VariableReference$TC) || SNodeOperations.isInstanceOf(n, CONCEPTS.StringLiteral$xu) || SNodeOperations.isInstanceOf(n, CONCEPTS.IntegerConstant$Na) || SNodeOperations.isInstanceOf(n, CONCEPTS.BooleanConstant$n4) || SNodeOperations.isInstanceOf(n, CONCEPTS.NullLiteral$QQ) || SNodeOperations.isInstanceOf(n, CONCEPTS.CharConstant$Y4) || SNodeOperations.isInstanceOf(n, CONCEPTS.FloatingPointConstant$3o) || SNodeOperations.isInstanceOf(n, CONCEPTS.AbstractLongLiteral$g_) || SNodeOperations.isInstanceOf(n, CONCEPTS.ThisExpression$$o) || SNodeOperations.isInstanceOf(n, CONCEPTS.DotExpression$yW) || SNodeOperations.isInstanceOf(n, CONCEPTS.FieldReferenceOperation$fU) || SNodeOperations.isInstanceOf(n, CONCEPTS.StaticFieldReference$cU) || SNodeOperations.isInstanceOf(n, CONCEPTS.EnumConstantReference$kA) || SNodeOperations.isInstanceOf(n, CONCEPTS.ClassifierClassExpression$lN) || SNodeOperations.isInstanceOf(n, CONCEPTS.ParenthesizedExpression$Ws) || SNodeOperations.isInstanceOf(n, CONCEPTS.BinaryOperation$W1) || SNodeOperations.isInstanceOf(n, CONCEPTS.CastExpression$$8) || SNodeOperations.isInstanceOf(n, CONCEPTS.NotExpression$Pc) || SNodeOperations.isInstanceOf(n, CONCEPTS.AbstractUnaryNumberOperation$Q6) || SNodeOperations.isInstanceOf(n, CONCEPTS.Type$bu);
+  }
+  private static boolean nothingImpureBefore(SNode use, SNode statement) {
+    // whether everything the statement evaluates before it reaches the use is a plain read, so
+    // that the value used may be computed there instead of before the statement. The nodes are
+    // visited in evaluation order; a node the use is inside of does its work after its operands
+    for (SNode n : ListSequence.fromList(SNodeOperations.getNodeDescendants(statement, null, true, new SAbstractConcept[]{}))) {
+      if (n == use) {
+        return true;
+      }
+      if (ListSequence.fromList(SNodeOperations.getNodeAncestors(use, null, true)).contains(n) || SNodeOperations.isInstanceOf(n, CONCEPTS.Statement$P6)) {
+        continue;
+      }
+      if (!(isPureRead(n))) {
+        return false;
+      }
+    }
+    return false;
+  }
+  private static SNode appendedString(SNode statement, SNode builder) {
+    // the string s of a statement builder.append(s), or null
+    if (!(SNodeOperations.isInstanceOf(statement, CONCEPTS.ExpressionStatement$O8))) {
+      return null;
+    }
+    SNode expr = SLinkOperations.getTarget((SNodeOperations.cast(statement, CONCEPTS.ExpressionStatement$O8)), LINKS.expression$5L7M);
+    if (!(SNodeOperations.isInstanceOf(expr, CONCEPTS.DotExpression$yW))) {
+      return null;
+    }
+    SNode call = SNodeOperations.cast(expr, CONCEPTS.DotExpression$yW);
+    if (!(isReferenceTo(SLinkOperations.getTarget(call, LINKS.operand$w6IR), builder)) || !(SNodeOperations.isInstanceOf(SLinkOperations.getTarget(call, LINKS.operation$gs9E), CONCEPTS.InstanceMethodCallOperation$uu))) {
+      return null;
+    }
+    SNode append = SNodeOperations.cast(SLinkOperations.getTarget(call, LINKS.operation$gs9E), CONCEPTS.IMethodCall$M9);
+    if ((SLinkOperations.getTarget(append, LINKS.baseMethodDeclaration$pyYw) == null) || !(Objects.equals(SPropertyOperations.getString(SLinkOperations.getTarget(append, LINKS.baseMethodDeclaration$pyYw), PROPS.name$MnvL), "append")) || ListSequence.fromList(SLinkOperations.getChildren(append, LINKS.actualArgument$pzdx)).count() != 1) {
+      return null;
+    }
+    SNode argument = ListSequence.fromList(SLinkOperations.getChildren(append, LINKS.actualArgument$pzdx)).first();
+    if (referencesVariable(argument, builder) || !(isStringType(typeOf(argument)))) {
+      return null;
+    }
+    return argument;
+  }
+  public static SNode previousAppend(SNode statement) {
+    // the step before, whose own reduction is the concatenation up to there
+    List<SNode> steps = appendSteps(concatenationOf(statement));
+    return ListSequence.fromList(steps).page(steps.indexOf(statement) - 1, ListSequence.fromList(steps).indexOf(statement)).first();
+  }
+  public static SNode valueOfArgument(SNode call) {
+    // "..." + String.valueOf(x) --> "..." + x: the concatenation converts the same way. The other
+    // operand has to be a string literal, so that the + stays a concatenation whatever else this
+    // pass turns the operand into; a char[] is spelled out by valueOf but not by +
+    SNode method = SLinkOperations.getTarget((SNodeOperations.cast(call, CONCEPTS.IMethodCall$M9)), LINKS.baseMethodDeclaration$pyYw);
+    if ((method == null) || !(Objects.equals(SPropertyOperations.getString(method, PROPS.name$MnvL), "valueOf")) || (SLinkOperations.getTarget(call, LINKS.classConcept$M5BC) == null) || !(Objects.equals(SPropertyOperations.getString(SLinkOperations.getTarget(call, LINKS.classConcept$M5BC), PROPS.name$MnvL), "String")) || ListSequence.fromList(SLinkOperations.getChildren((SNodeOperations.cast(call, CONCEPTS.IMethodCall$M9)), LINKS.actualArgument$pzdx)).count() != 1) {
+      return null;
+    }
+    SNode parent = SNodeOperations.getParent(call);
+    if (!(SNodeOperations.isInstanceOf(parent, CONCEPTS.PlusExpression$k0))) {
+      return null;
+    }
+    SNode plus = SNodeOperations.cast(parent, CONCEPTS.BinaryOperation$W1);
+    SNode other = (SLinkOperations.getTarget(plus, LINKS.leftExpression$sEj) == call ? SLinkOperations.getTarget(plus, LINKS.rightExpression$nvX) : SLinkOperations.getTarget(plus, LINKS.leftExpression$sEj));
+    if (!(SNodeOperations.isInstanceOf(other, CONCEPTS.StringLiteral$xu))) {
+      return null;
+    }
+    SNode argument = ListSequence.fromList(SLinkOperations.getChildren((SNodeOperations.cast(call, CONCEPTS.IMethodCall$M9)), LINKS.actualArgument$pzdx)).first();
+    if (SNodeOperations.isInstanceOf(typeOf(argument), CONCEPTS.ArrayType$rh)) {
+      return null;
+    }
+    return argument;
+  }
+  public static boolean concatenationNeedsParens(SNode iife) {
+    // a single appended string keeps its own shape; more than one becomes a + chain
+    if (ListSequence.fromList(appendSteps(iife)).count() == 1) {
+      return needsParens(iife, appendedString(concatenationTail(iife)));
+    }
+    return !(isDelimitedSlot(iife));
+  }
+  public static SNode concatenationTail(SNode iife) {
+    // the last sb.append(s) step, whose reduction is the whole concatenation
+    return ListSequence.fromList(appendSteps(iife)).last();
+  }
+  public static boolean appendedStringNeedsParens(SNode statement) {
+    // as an operand of + the string has to bind tighter than +
+    return !(isAtomic(appendedString(statement)));
+  }
+  public static SNode appendedString(SNode statement) {
+    return appendedString(statement, stringBuilderVariable(concatenationOf(statement)));
+  }
+  public static boolean isLaterAppend(SNode statement) {
+    SNode iife = concatenationOf(statement);
+    return (iife != null) && ListSequence.fromList(appendSteps(iife)).first() != statement;
+  }
+  public static boolean isFirstAppend(SNode statement) {
+    SNode iife = concatenationOf(statement);
+    return (iife != null) && ListSequence.fromList(appendSteps(iife)).first() == statement;
+  }
+  public static List<SNode> appendSteps(SNode iife) {
+    // the sb.append(s) statements of a concatenation closure, in order
+    List<SNode> statements = meaningfulStatements(SLinkOperations.getTarget(iifeClosure(iife), LINKS.body$Ujx2));
+    return ListSequence.fromList(statements).page(1, ListSequence.fromList(statements).count() - 1).toList();
+  }
+  public static SNode concatenationOf(SNode statement) {
+    // the invoked closure of whose body the statement is one of the sb.append(s) steps, or null
+    SNode iife = invokedClosureOf(SNodeOperations.getParent(statement));
+    if ((iife == null) || (stringBuilderVariable(iife) == null) || !(ListSequence.fromList(appendSteps(iife)).contains(statement))) {
+      return null;
+    }
+    return iife;
+  }
+  private static List<SNode> meaningfulStatements(SNode list) {
+    // the statements without the empty ones a template's blank lines leave behind
+    List<SNode> result = new ArrayList<SNode>();
+    for (SNode statement : ListSequence.fromList(SLinkOperations.getChildren(list, LINKS.statement$53DE))) {
+      if (!(SNodeOperations.getConcept(statement).equals(CONCEPTS.Statement$P6))) {
+        ListSequence.fromList(result).addElement(statement);
+      }
+    }
+    return result;
+  }
+  public static SNode stringBuilderVariable(SNode iife) {
+    // the builder of a closure body of the shape StringBuilder sb =
+    new StringBuilder();
+    // sb.append(s1); ...; return sb.toString(); with only strings appended, or null
+    SNode closure = iifeClosure(iife);
+    if ((closure == null)) {
+      return null;
+    }
+    List<SNode> statements = meaningfulStatements(SLinkOperations.getTarget(closure, LINKS.body$Ujx2));
+    if (ListSequence.fromList(statements).count() < 3 || !(SNodeOperations.isInstanceOf(ListSequence.fromList(statements).first(), CONCEPTS.LocalVariableDeclarationStatement$4w)) || !(SNodeOperations.isInstanceOf(ListSequence.fromList(statements).last(), CONCEPTS.ReturnStatement$lt))) {
+      return null;
+    }
+    SNode builder = SLinkOperations.getTarget((SNodeOperations.cast(ListSequence.fromList(statements).first(), CONCEPTS.LocalVariableDeclarationStatement$4w)), LINKS.localVariableDeclaration$RpjM);
+    if ((builder == null) || (classifierOf(SLinkOperations.getTarget(builder, LINKS.type$a1UY)) == null) || !(Objects.equals(SPropertyOperations.getString(classifierOf(SLinkOperations.getTarget(builder, LINKS.type$a1UY)), PROPS.name$MnvL), "StringBuilder"))) {
+      return null;
+    }
+    SNode init = SLinkOperations.getTarget(builder, LINKS.initializer$2twD);
+    if (!(SNodeOperations.isInstanceOf(init, CONCEPTS.GenericNewExpression$Fh)) || !(SNodeOperations.isInstanceOf(SLinkOperations.getTarget((SNodeOperations.cast(init, CONCEPTS.GenericNewExpression$Fh)), LINKS.creator$BsHW), CONCEPTS.ClassCreator$ZG)) || ListSequence.fromList(SLinkOperations.getChildren((SNodeOperations.cast(SLinkOperations.getTarget((SNodeOperations.cast(init, CONCEPTS.GenericNewExpression$Fh)), LINKS.creator$BsHW), CONCEPTS.IMethodCall$M9)), LINKS.actualArgument$pzdx)).isNotEmpty()) {
+      return null;
+    }
+    SNode returned = SLinkOperations.getTarget((SNodeOperations.cast(ListSequence.fromList(statements).last(), CONCEPTS.ReturnStatement$lt)), LINKS.expression$eJ92);
+    if (!(SNodeOperations.isInstanceOf(returned, CONCEPTS.DotExpression$yW))) {
+      return null;
+    }
+    SNode toString = SNodeOperations.cast(returned, CONCEPTS.DotExpression$yW);
+    if (!(isReferenceTo(SLinkOperations.getTarget(toString, LINKS.operand$w6IR), builder)) || !(SNodeOperations.isInstanceOf(SLinkOperations.getTarget(toString, LINKS.operation$gs9E), CONCEPTS.InstanceMethodCallOperation$uu)) || !(Objects.equals(SPropertyOperations.getString(SLinkOperations.getTarget((SNodeOperations.cast(SLinkOperations.getTarget(toString, LINKS.operation$gs9E), CONCEPTS.IMethodCall$M9)), LINKS.baseMethodDeclaration$pyYw), PROPS.name$MnvL), "toString"))) {
+      return null;
+    }
+    for (SNode step : ListSequence.fromList(statements).page(1, ListSequence.fromList(statements).count() - 1)) {
+      if ((appendedString(step, builder) == null)) {
+        return null;
+      }
+    }
+    return builder;
+  }
+  public static List<SNode> noStatements() {
+    return new ArrayList<SNode>();
+  }
+  public static boolean isInlinableTemporaryStatement(SNode statement) {
+    return (SLinkOperations.getTarget(statement, LINKS.localVariableDeclaration$RpjM) != null) && isInlinableTemporary(SLinkOperations.getTarget(statement, LINKS.localVariableDeclaration$RpjM));
+  }
+  public static SNode inlinedTemporaryValue(SNode reference) {
+    // the initializer that takes the place of a reference to an inlinable temporary, or null
+    SNode target = SLinkOperations.getTarget(reference, LINKS.variableDeclaration$N1XG);
+    if (!(SNodeOperations.isInstanceOf(target, CONCEPTS.LocalVariableDeclaration$41)) || !(isInlinableTemporary(SNodeOperations.cast(target, CONCEPTS.LocalVariableDeclaration$41)))) {
+      return null;
+    }
+    return SLinkOperations.getTarget(target, LINKS.initializer$2twD);
+  }
+  public static boolean isInlinableTemporary(SNode declaration) {
+    // { final T v = e; use(v); } --> { use(e); }
+    // a final local that the last statement of a bare block, right after its declaration, uses
+    // once, with only plain reads evaluated before the use: what loop macros of the upstream
+    // generators make of an item; locals in real method bodies are left for the reader
+    SNode statement = SNodeOperations.getParent(declaration);
+    if (!(SNodeOperations.isInstanceOf(statement, CONCEPTS.LocalVariableDeclarationStatement$4w)) || !(SPropertyOperations.getBoolean(declaration, PROPS.isFinal$gvTP)) || (SLinkOperations.getTarget(declaration, LINKS.initializer$2twD) == null) || isIife(SLinkOperations.getTarget(declaration, LINKS.initializer$2twD))) {
+      return false;
+    }
+    SNode list = SNodeOperations.getParent(statement);
+    if (!(SNodeOperations.isInstanceOf(list, CONCEPTS.StatementList$m_)) || !(SNodeOperations.isInstanceOf(SNodeOperations.getParent(list), CONCEPTS.BlockStatement$u4))) {
+      return false;
+    }
+    SNode next = SNodeOperations.getNextSibling(statement);
+    if ((next == null) || (SNodeOperations.getNextSibling(next) != null)) {
+      return false;
+    }
+    SNode use = null;
+    for (SNode reference : ListSequence.fromList(SNodeOperations.getNodeDescendants(list, CONCEPTS.VariableReference$TC, false, new SAbstractConcept[]{}))) {
+      if (SLinkOperations.getTarget(reference, LINKS.variableDeclaration$N1XG) == declaration) {
+        if ((use != null)) {
+          return false;
+        }
+        use = reference;
+      }
+    }
+    if ((use == null) || !(ListSequence.fromList(SNodeOperations.getNodeAncestors(use, null, true)).contains(next)) || enclosingFunction(use) != enclosingFunction(declaration)) {
+      return false;
+    }
+    return nothingImpureBefore(use, SNodeOperations.cast(next, CONCEPTS.Statement$P6));
+  }
+  public static List<SNode> blockStatements(SNode block) {
+    return SLinkOperations.getChildren(SLinkOperations.getTarget(block, LINKS.statements$q65M), LINKS.statement$53DE);
+  }
+  public static boolean canFlattenBlock(SNode block) {
+    // { a; b; } --> a; b;
+    // a bare block, as loop macros of the upstream generators leave behind one per item; its
+    // statements move into the surrounding block, so what it declares may not clash with a name
+    // in scope there or declared anywhere else in that block. A temporary that is inlined in the
+    // same pass declares nothing any more
+    if ((SLinkOperations.getTarget(block, LINKS.statements$q65M) == null) || !(SNodeOperations.isInstanceOf(SNodeOperations.getParent(block), CONCEPTS.StatementList$m_))) {
+      return false;
+    }
+    Set<String> declared = SetSequence.fromSet(new HashSet<String>());
+    for (SNode statement : ListSequence.fromList(SLinkOperations.getChildren(SLinkOperations.getTarget(block, LINKS.statements$q65M), LINKS.statement$53DE))) {
+      if (SNodeOperations.isInstanceOf(statement, CONCEPTS.LocalVariableDeclarationStatement$4w) && !(isInlinableTemporaryStatement(SNodeOperations.cast(statement, CONCEPTS.LocalVariableDeclarationStatement$4w)))) {
+        SetSequence.fromSet(declared).addElement(SPropertyOperations.getString(SLinkOperations.getTarget((SNodeOperations.cast(statement, CONCEPTS.LocalVariableDeclarationStatement$4w)), LINKS.localVariableDeclaration$RpjM), PROPS.name$MnvL));
+      }
+    }
+    if (SetSequence.fromSet(declared).isEmpty()) {
+      return true;
+    }
+    Set<String> taken = namesInScope(block);
+    for (SNode declaration : ListSequence.fromList(SNodeOperations.getNodeDescendants(SNodeOperations.getParent(block), CONCEPTS.VariableDeclaration$Y0, false, new SAbstractConcept[]{}))) {
+      if (!(ListSequence.fromList(SNodeOperations.getNodeAncestors(declaration, null, true)).contains(block))) {
+        SetSequence.fromSet(taken).addElement(SPropertyOperations.getString(declaration, PROPS.name$MnvL));
+      }
+    }
+    for (String name : declared) {
+      if (SetSequence.fromSet(taken).contains(name)) {
+        return false;
+      }
+    }
+    return true;
   }
   public static boolean canBeSupplier(SNode iife) {
     // { => body }.invoke() --> ((Supplier<T>) () -> { body }).get()
@@ -1388,8 +1690,14 @@ public class OptimizerUtil {
     /*package*/ static final SConcept ClassConcept$bK = MetaAdapterFactory.getConcept(0xf3061a5392264cc5L, 0xa443f952ceaf5816L, 0xf8c108ca66L, "jetbrains.mps.baseLanguage.structure.ClassConcept");
     /*package*/ static final SConcept Interface$db = MetaAdapterFactory.getConcept(0xf3061a5392264cc5L, 0xa443f952ceaf5816L, 0x101edd46144L, "jetbrains.mps.baseLanguage.structure.Interface");
     /*package*/ static final SConcept LocalVariableDeclaration$41 = MetaAdapterFactory.getConcept(0xf3061a5392264cc5L, 0xa443f952ceaf5816L, 0xf8cc67c7efL, "jetbrains.mps.baseLanguage.structure.LocalVariableDeclaration");
-    /*package*/ static final SConcept FunctionType$9U = MetaAdapterFactory.getConcept(0xfd3920347849419dL, 0x907112563d152375L, 0x1174a4d19ffL, "jetbrains.mps.baseLanguage.closures.structure.FunctionType");
     /*package*/ static final SConcept VoidType$BF = MetaAdapterFactory.getConcept(0xf3061a5392264cc5L, 0xa443f952ceaf5816L, 0xf8cc6bf96dL, "jetbrains.mps.baseLanguage.structure.VoidType");
+    /*package*/ static final SConcept FieldReferenceOperation$fU = MetaAdapterFactory.getConcept(0xf3061a5392264cc5L, 0xa443f952ceaf5816L, 0x116b483d77aL, "jetbrains.mps.baseLanguage.structure.FieldReferenceOperation");
+    /*package*/ static final SConcept StaticFieldReference$cU = MetaAdapterFactory.getConcept(0xf3061a5392264cc5L, 0xa443f952ceaf5816L, 0xf940c80846L, "jetbrains.mps.baseLanguage.structure.StaticFieldReference");
+    /*package*/ static final SConcept Type$bu = MetaAdapterFactory.getConcept(0xf3061a5392264cc5L, 0xa443f952ceaf5816L, 0xf8c37f506dL, "jetbrains.mps.baseLanguage.structure.Type");
+    /*package*/ static final SConcept InstanceMethodCallOperation$uu = MetaAdapterFactory.getConcept(0xf3061a5392264cc5L, 0xa443f952ceaf5816L, 0x118154a6332L, "jetbrains.mps.baseLanguage.structure.InstanceMethodCallOperation");
+    /*package*/ static final SConcept PlusExpression$k0 = MetaAdapterFactory.getConcept(0xf3061a5392264cc5L, 0xa443f952ceaf5816L, 0xf8cc67c7fbL, "jetbrains.mps.baseLanguage.structure.PlusExpression");
+    /*package*/ static final SConcept ArrayType$rh = MetaAdapterFactory.getConcept(0xf3061a5392264cc5L, 0xa443f952ceaf5816L, 0xf940d819f7L, "jetbrains.mps.baseLanguage.structure.ArrayType");
+    /*package*/ static final SConcept ClassCreator$ZG = MetaAdapterFactory.getConcept(0xf3061a5392264cc5L, 0xa443f952ceaf5816L, 0x11a59b0fbceL, "jetbrains.mps.baseLanguage.structure.ClassCreator");
     /*package*/ static final SConcept StringType$uX = MetaAdapterFactory.getConcept(0xf3061a5392264cc5L, 0xa443f952ceaf5816L, 0x11d47da71ecL, "jetbrains.mps.baseLanguage.structure.StringType");
     /*package*/ static final SConcept BooleanType$_u = MetaAdapterFactory.getConcept(0xf3061a5392264cc5L, 0xa443f952ceaf5816L, 0xf940d6513eL, "jetbrains.mps.baseLanguage.structure.BooleanType");
     /*package*/ static final SConcept IntegerType$7a = MetaAdapterFactory.getConcept(0xf3061a5392264cc5L, 0xa443f952ceaf5816L, 0xf940d22479L, "jetbrains.mps.baseLanguage.structure.IntegerType");
@@ -1399,20 +1707,15 @@ public class OptimizerUtil {
     /*package*/ static final SConcept ShortType$ro = MetaAdapterFactory.getConcept(0xf3061a5392264cc5L, 0xa443f952ceaf5816L, 0xf940cc380dL, "jetbrains.mps.baseLanguage.structure.ShortType");
     /*package*/ static final SConcept ByteType$Ms = MetaAdapterFactory.getConcept(0xf3061a5392264cc5L, 0xa443f952ceaf5816L, 0xf940d5b617L, "jetbrains.mps.baseLanguage.structure.ByteType");
     /*package*/ static final SConcept CharType$JQ = MetaAdapterFactory.getConcept(0xf3061a5392264cc5L, 0xa443f952ceaf5816L, 0xf940d4f826L, "jetbrains.mps.baseLanguage.structure.CharType");
-    /*package*/ static final SConcept Type$bu = MetaAdapterFactory.getConcept(0xf3061a5392264cc5L, 0xa443f952ceaf5816L, 0xf8c37f506dL, "jetbrains.mps.baseLanguage.structure.Type");
     /*package*/ static final SConcept AnonymousClassCreator$fS = MetaAdapterFactory.getConcept(0xf3061a5392264cc5L, 0xa443f952ceaf5816L, 0x1133e3b449aL, "jetbrains.mps.baseLanguage.structure.AnonymousClassCreator");
     /*package*/ static final SConcept ParameterDeclaration$RG = MetaAdapterFactory.getConcept(0xf3061a5392264cc5L, 0xa443f952ceaf5816L, 0xf8c77f1e94L, "jetbrains.mps.baseLanguage.structure.ParameterDeclaration");
     /*package*/ static final SConcept ForStatement$qV = MetaAdapterFactory.getConcept(0xf3061a5392264cc5L, 0xa443f952ceaf5816L, 0x10a698082feL, "jetbrains.mps.baseLanguage.structure.ForStatement");
     /*package*/ static final SConcept ForeachStatement$Po = MetaAdapterFactory.getConcept(0xf3061a5392264cc5L, 0xa443f952ceaf5816L, 0x10a6933ce33L, "jetbrains.mps.baseLanguage.structure.ForeachStatement");
     /*package*/ static final SConcept CatchClause$Ig = MetaAdapterFactory.getConcept(0xf3061a5392264cc5L, 0xa443f952ceaf5816L, 0x10f39a56e2fL, "jetbrains.mps.baseLanguage.structure.CatchClause");
     /*package*/ static final SConcept SuperMethodCall$pW = MetaAdapterFactory.getConcept(0xf3061a5392264cc5L, 0xa443f952ceaf5816L, 0xf9d78b55aaL, "jetbrains.mps.baseLanguage.structure.SuperMethodCall");
-    /*package*/ static final SConcept ArrayType$rh = MetaAdapterFactory.getConcept(0xf3061a5392264cc5L, 0xa443f952ceaf5816L, 0xf940d819f7L, "jetbrains.mps.baseLanguage.structure.ArrayType");
     /*package*/ static final SConcept ConstructorDeclaration$yG = MetaAdapterFactory.getConcept(0xf3061a5392264cc5L, 0xa443f952ceaf5816L, 0xf8cc56b204L, "jetbrains.mps.baseLanguage.structure.ConstructorDeclaration");
     /*package*/ static final SConcept VariableArityType$KF = MetaAdapterFactory.getConcept(0xf3061a5392264cc5L, 0xa443f952ceaf5816L, 0x11c08f42e7bL, "jetbrains.mps.baseLanguage.structure.VariableArityType");
-    /*package*/ static final SConcept ClassCreator$ZG = MetaAdapterFactory.getConcept(0xf3061a5392264cc5L, 0xa443f952ceaf5816L, 0x11a59b0fbceL, "jetbrains.mps.baseLanguage.structure.ClassCreator");
     /*package*/ static final SConcept LocalMethodCall$zT = MetaAdapterFactory.getConcept(0xf3061a5392264cc5L, 0xa443f952ceaf5816L, 0x6c6b6a1e379f9404L, "jetbrains.mps.baseLanguage.structure.LocalMethodCall");
-    /*package*/ static final SConcept InstanceMethodCallOperation$uu = MetaAdapterFactory.getConcept(0xf3061a5392264cc5L, 0xa443f952ceaf5816L, 0x118154a6332L, "jetbrains.mps.baseLanguage.structure.InstanceMethodCallOperation");
-    /*package*/ static final SConcept PlusExpression$k0 = MetaAdapterFactory.getConcept(0xf3061a5392264cc5L, 0xa443f952ceaf5816L, 0xf8cc67c7fbL, "jetbrains.mps.baseLanguage.structure.PlusExpression");
     /*package*/ static final SConcept EqualsExpression$MF = MetaAdapterFactory.getConcept(0xf3061a5392264cc5L, 0xa443f952ceaf5816L, 0xf8cc56b210L, "jetbrains.mps.baseLanguage.structure.EqualsExpression");
     /*package*/ static final SConcept NotEqualsExpression$aX = MetaAdapterFactory.getConcept(0xf3061a5392264cc5L, 0xa443f952ceaf5816L, 0xf9e20e303fL, "jetbrains.mps.baseLanguage.structure.NotEqualsExpression");
   }
@@ -1461,20 +1764,21 @@ public class OptimizerUtil {
     /*package*/ static final SContainmentLink implementedInterface$rujG = MetaAdapterFactory.getContainmentLink(0xf3061a5392264cc5L, 0xa443f952ceaf5816L, 0xf8c108ca66L, 0xff2ac0b419L, "implementedInterface");
     /*package*/ static final SContainmentLink extendedInterface$PDVO = MetaAdapterFactory.getContainmentLink(0xf3061a5392264cc5L, 0xa443f952ceaf5816L, 0x101edd46144L, 0x101eddadad7L, "extendedInterface");
     /*package*/ static final SContainmentLink body$5xQk = MetaAdapterFactory.getContainmentLink(0xf3061a5392264cc5L, 0xa443f952ceaf5816L, 0xf8cc56b1fcL, 0xf8cc56b1ffL, "body");
-    /*package*/ static final SContainmentLink resultType$2oOC = MetaAdapterFactory.getContainmentLink(0xfd3920347849419dL, 0x907112563d152375L, 0x1174a4d19ffL, 0x1174a4d5371L, "resultType");
+    /*package*/ static final SReferenceLink classConcept$M5BC = MetaAdapterFactory.getReferenceLink(0xf3061a5392264cc5L, 0xa443f952ceaf5816L, 0xfbbebabf09L, 0x10a7588b546L, "classConcept");
+    /*package*/ static final SContainmentLink leftExpression$sEj = MetaAdapterFactory.getContainmentLink(0xf3061a5392264cc5L, 0xa443f952ceaf5816L, 0xfbdeb6fecfL, 0xfbdeb7a11cL, "leftExpression");
+    /*package*/ static final SContainmentLink rightExpression$nvX = MetaAdapterFactory.getContainmentLink(0xf3061a5392264cc5L, 0xa443f952ceaf5816L, 0xfbdeb6fecfL, 0xfbdeb7a11bL, "rightExpression");
     /*package*/ static final SContainmentLink creator$BsHW = MetaAdapterFactory.getContainmentLink(0xf3061a5392264cc5L, 0xa443f952ceaf5816L, 0x10ab8473cc5L, 0x10ab847b486L, "creator");
     /*package*/ static final SContainmentLink cls$Saf6 = MetaAdapterFactory.getContainmentLink(0xf3061a5392264cc5L, 0xa443f952ceaf5816L, 0x1133e3b449aL, 0x1133e3b8b49L, "cls");
     /*package*/ static final SContainmentLink typeParameter$F9H8 = MetaAdapterFactory.getContainmentLink(0xf3061a5392264cc5L, 0xa443f952ceaf5816L, 0x1107e0cb103L, 0x117ac45a693L, "typeParameter");
     /*package*/ static final SReferenceLink classifier$q_Y$ = MetaAdapterFactory.getReferenceLink(0xf3061a5392264cc5L, 0xa443f952ceaf5816L, 0x1107e0cb103L, 0x1107e0fd2a0L, "classifier");
     /*package*/ static final SContainmentLink componentType$F$Gi = MetaAdapterFactory.getContainmentLink(0xf3061a5392264cc5L, 0xa443f952ceaf5816L, 0xf940d819f7L, 0xf940d819f8L, "componentType");
     /*package*/ static final SContainmentLink typeParameter$uYiw = MetaAdapterFactory.getContainmentLink(0xf3061a5392264cc5L, 0xa443f952ceaf5816L, 0x11a59b0fbceL, 0x11a59c8ffe0L, "typeParameter");
-    /*package*/ static final SContainmentLink leftExpression$sEj = MetaAdapterFactory.getContainmentLink(0xf3061a5392264cc5L, 0xa443f952ceaf5816L, 0xfbdeb6fecfL, 0xfbdeb7a11cL, "leftExpression");
-    /*package*/ static final SContainmentLink rightExpression$nvX = MetaAdapterFactory.getContainmentLink(0xf3061a5392264cc5L, 0xa443f952ceaf5816L, 0xfbdeb6fecfL, 0xfbdeb7a11bL, "rightExpression");
   }
 
   private static final class PROPS {
     /*package*/ static final SProperty name$MnvL = MetaAdapterFactory.getProperty(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L, 0x110396ec041L, "name");
     /*package*/ static final SProperty value$5y_M = MetaAdapterFactory.getProperty(0xf3061a5392264cc5L, 0xa443f952ceaf5816L, 0xf8cc56b201L, 0xf8cc56b202L, "value");
     /*package*/ static final SProperty isAbstract$VtH_ = MetaAdapterFactory.getProperty(0xf3061a5392264cc5L, 0xa443f952ceaf5816L, 0xf8cc56b21dL, 0x1126a8d157dL, "isAbstract");
+    /*package*/ static final SProperty isFinal$gvTP = MetaAdapterFactory.getProperty(0xf3061a5392264cc5L, 0xa443f952ceaf5816L, 0xf8c37a7f6eL, 0x111f9e9f00cL, "isFinal");
   }
 }

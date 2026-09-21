@@ -82,13 +82,11 @@ public class Generated_base_Test {
     try {
       if (((Supplier<Number>) () -> {
         Number newValue = new BigInteger("5");
-        {
-          Number it = newValue;
-          if (!(AH.oneOf(it, (Number) new BigInteger("1"), (Number) new BigInteger("2"), (Number) new BigInteger("3")))) {
-            final Message message = new Message(BuiltinMessageKinds.error(), ContractViolatedException.CONSTRAINT_FAILED + ": " + "it.oneOf[1, 2, 3]").withLocation(new ProgramLocation("r:5c3f8be4-b275-4108-be9a-6a052d5b2428(test.in.expr.os.base@tests)/7255181410606782292", "http://127.0.0.1:63320/node?ref=r%3A5c3f8be4-b275-4108-be9a-6a052d5b2428%28test.in.expr.os.base%40tests%29%2F7255181410606782292")).withAffectedMemberNames(new HashSet<String>(Arrays.<String>asList()));
-            GlobalContext.MESSAGE_LOG.get().collect(message);
-            throw new ContractViolatedException(message);
-          }
+        Number it = newValue;
+        if (!(AH.oneOf(it, (Number) new BigInteger("1"), (Number) new BigInteger("2"), (Number) new BigInteger("3")))) {
+          final Message message = new Message(BuiltinMessageKinds.error(), ContractViolatedException.CONSTRAINT_FAILED + ": " + "it.oneOf[1, 2, 3]").withLocation(new ProgramLocation("r:5c3f8be4-b275-4108-be9a-6a052d5b2428(test.in.expr.os.base@tests)/7255181410606782292", "http://127.0.0.1:63320/node?ref=r%3A5c3f8be4-b275-4108-be9a-6a052d5b2428%28test.in.expr.os.base%40tests%29%2F7255181410606782292")).withAffectedMemberNames(new HashSet<String>(Arrays.<String>asList()));
+          GlobalContext.MESSAGE_LOG.get().collect(message);
+          throw new ContractViolatedException(message);
         }
         return newValue;
       }).get() == null) {
@@ -104,13 +102,11 @@ public class Generated_base_Test {
     try {
       if (((Supplier<Number>) () -> {
         Number newValue = new BigInteger("5");
-        {
-          Number it = newValue;
-          if (!(AH.oneOf(it, (Number) new BigInteger("1"), (Number) new BigInteger("2"), (Number) new BigInteger("3")))) {
-            final Message message = new Message(BuiltinMessageKinds.error(), ContractViolatedException.CONSTRAINT_FAILED + ": " + "it.oneOf[1, 2, 3]").withLocation(new ProgramLocation("r:5c3f8be4-b275-4108-be9a-6a052d5b2428(test.in.expr.os.base@tests)/7255181410606782292", "http://127.0.0.1:63320/node?ref=r%3A5c3f8be4-b275-4108-be9a-6a052d5b2428%28test.in.expr.os.base%40tests%29%2F7255181410606782292")).withAffectedMemberNames(new HashSet<String>(Arrays.<String>asList()));
-            GlobalContext.MESSAGE_LOG.get().collect(message);
-            throw new ContractViolatedException(message);
-          }
+        Number it = newValue;
+        if (!(AH.oneOf(it, (Number) new BigInteger("1"), (Number) new BigInteger("2"), (Number) new BigInteger("3")))) {
+          final Message message = new Message(BuiltinMessageKinds.error(), ContractViolatedException.CONSTRAINT_FAILED + ": " + "it.oneOf[1, 2, 3]").withLocation(new ProgramLocation("r:5c3f8be4-b275-4108-be9a-6a052d5b2428(test.in.expr.os.base@tests)/7255181410606782292", "http://127.0.0.1:63320/node?ref=r%3A5c3f8be4-b275-4108-be9a-6a052d5b2428%28test.in.expr.os.base%40tests%29%2F7255181410606782292")).withAffectedMemberNames(new HashSet<String>(Arrays.<String>asList()));
+          GlobalContext.MESSAGE_LOG.get().collect(message);
+          throw new ContractViolatedException(message);
         }
         return newValue;
       }).get() == null) {
@@ -148,13 +144,11 @@ public class Generated_base_Test {
     }
 
     public void evaluateContracts() {
-      {
-        Person it = Person.this;
-        if (!(AH.isLess(it.getage(), new BigInteger("120")))) {
-          final Message message = new Message(BuiltinMessageKinds.error(), ContractViolatedException.CONSTRAINT_FAILED + ": " + "age < 120").withLocation(new ProgramLocation("r:5c3f8be4-b275-4108-be9a-6a052d5b2428(test.in.expr.os.base@tests)/2662069320759854156", "http://127.0.0.1:63320/node?ref=r%3A5c3f8be4-b275-4108-be9a-6a052d5b2428%28test.in.expr.os.base%40tests%29%2F2662069320759854156")).withAffectedMemberNames(new HashSet<String>(Arrays.<String>asList("test.in.expr.os.base.Person.age")));
-          GlobalContext.MESSAGE_LOG.get().collect(message);
-          throw new ContractViolatedException(message);
-        }
+      Person it = Person.this;
+      if (!(AH.isLess(it.getage(), new BigInteger("120")))) {
+        final Message message = new Message(BuiltinMessageKinds.error(), ContractViolatedException.CONSTRAINT_FAILED + ": " + "age < 120").withLocation(new ProgramLocation("r:5c3f8be4-b275-4108-be9a-6a052d5b2428(test.in.expr.os.base@tests)/2662069320759854156", "http://127.0.0.1:63320/node?ref=r%3A5c3f8be4-b275-4108-be9a-6a052d5b2428%28test.in.expr.os.base%40tests%29%2F2662069320759854156")).withAffectedMemberNames(new HashSet<String>(Arrays.<String>asList("test.in.expr.os.base.Person.age")));
+        GlobalContext.MESSAGE_LOG.get().collect(message);
+        throw new ContractViolatedException(message);
       }
     }
 

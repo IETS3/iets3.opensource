@@ -333,10 +333,8 @@ public class Generated_TemporalTests_Test {
     fromValue = Generated_TemporalTests_Test.date06_;
     LocalDate fromTime;
     LocalDate toTime;
-    {
-      fromTime = (LocalDate) fromValue;
-      toTime = Generated_TemporalTests_Test.date08_;
-    }
+    fromTime = (LocalDate) fromValue;
+    toTime = Generated_TemporalTests_Test.date08_;
     if ("DAYS".equals("DAYS")) {
       long totalDays = ChronoUnit.DAYS.between(fromTime, toTime);
       List<Number> spreaded = ListSequence.fromList(new ArrayList<Number>((int) totalDays));
@@ -380,10 +378,8 @@ public class Generated_TemporalTests_Test {
     fromValue = Generated_TemporalTests_Test.date05_;
     LocalDate fromTime;
     LocalDate toTime;
-    {
-      fromTime = (LocalDate) fromValue;
-      toTime = Generated_TemporalTests_Test.date08_;
-    }
+    fromTime = (LocalDate) fromValue;
+    toTime = Generated_TemporalTests_Test.date08_;
     if ("MONTHS".equals("DAYS")) {
       long totalDays = ChronoUnit.DAYS.between(fromTime, toTime);
       List<Number> spreaded = ListSequence.fromList(new ArrayList<Number>((int) totalDays));
@@ -419,10 +415,8 @@ public class Generated_TemporalTests_Test {
     fromValue = LocalDate.of(2007, 1, 1);
     LocalDate fromTime;
     LocalDate toTime;
-    {
-      fromTime = (LocalDate) fromValue;
-      toTime = LocalDate.of(2012, 1, 1);
-    }
+    fromTime = (LocalDate) fromValue;
+    toTime = LocalDate.of(2012, 1, 1);
     if ("MONTHS".equals("DAYS")) {
       long totalDays = ChronoUnit.DAYS.between(fromTime, toTime);
       List<Number> spreaded = ListSequence.fromList(new ArrayList<Number>((int) totalDays));
@@ -481,11 +475,9 @@ public class Generated_TemporalTests_Test {
     fromValue = DiscreteDateRangeValue.year(new BigInteger("2010").intValue());
     LocalDate fromTime;
     LocalDate toTime;
-    {
-      DiscreteDateRangeValue range = (DiscreteDateRangeValue) fromValue;
-      fromTime = range.begin();
-      toTime = range.end();
-    }
+    DiscreteDateRangeValue range = (DiscreteDateRangeValue) fromValue;
+    fromTime = range.begin();
+    toTime = range.end();
     if ("MONTHS".equals("DAYS")) {
       long totalDays = ChronoUnit.DAYS.between(fromTime, toTime);
       List<Number> spreaded = ListSequence.fromList(new ArrayList<Number>((int) totalDays));

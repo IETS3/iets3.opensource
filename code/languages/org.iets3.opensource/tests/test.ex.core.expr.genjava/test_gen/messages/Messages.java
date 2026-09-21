@@ -24,18 +24,7 @@ public class Messages {
   }
   public static class withStringArgs {
     public static Message m4(String _nodeReference, String _nodeUrl, String x) {
-      return new Message(BuiltinMessageKinds.none(), ((Supplier<String>) () -> {
-        StringBuilder sb = new StringBuilder();
-
-        {
-          sb.append("m4 ");
-        }
-        {
-          final String content = String.valueOf(x);
-          sb.append(content);
-        }
-        return sb.toString();
-      }).get(), _nodeReference, _nodeUrl);
+      return new Message(BuiltinMessageKinds.none(), "m4 " + x, _nodeReference, _nodeUrl);
     }
     public static Message m5(String _nodeReference, String _nodeUrl, String x) {
       return new Message(BuiltinMessageKinds.none(), AH.addString("m5", x), _nodeReference, _nodeUrl);
@@ -43,43 +32,14 @@ public class Messages {
   }
   public static class withIntArgs {
     public static Message m4(String _nodeReference, String _nodeUrl, Number x) {
-      return new Message(BuiltinMessageKinds.none(), ((Supplier<String>) () -> {
-        StringBuilder sb = new StringBuilder();
-
-        {
-          sb.append("m4 ");
-        }
-        {
-          final String content = String.valueOf(x);
-          sb.append(content);
-        }
-        return sb.toString();
-      }).get(), _nodeReference, _nodeUrl);
+      return new Message(BuiltinMessageKinds.none(), "m4 " + x, _nodeReference, _nodeUrl);
     }
     public static Message m5(String _nodeReference, String _nodeUrl, Number x) {
       return new Message(BuiltinMessageKinds.none(), AH.addString("m5", x), _nodeReference, _nodeUrl);
     }
     public static class sub {
       public static Message m6(String _nodeReference, String _nodeUrl, Number n, Boolean b) {
-        return new Message(BuiltinMessageKinds.none(), ((Supplier<String>) () -> {
-          StringBuilder sb = new StringBuilder();
-
-          {
-            sb.append("m6 ");
-          }
-          {
-            final String content = String.valueOf(n);
-            sb.append(content);
-          }
-          {
-            sb.append(" m6 ");
-          }
-          {
-            final String content = String.valueOf(b);
-            sb.append(content);
-          }
-          return sb.toString();
-        }).get(), _nodeReference, _nodeUrl);
+        return new Message(BuiltinMessageKinds.none(), "m6 " + n + " m6 " + String.valueOf(b), _nodeReference, _nodeUrl);
       }
     }
   }
@@ -92,32 +52,10 @@ public class Messages {
     }
   }
   public static Message mPoint(String _nodeReference, String _nodeUrl, Data.Point p) {
-    return new Message(BuiltinMessageKinds.none(), ((Supplier<String>) () -> {
-      StringBuilder sb = new StringBuilder();
-
-      {
-        sb.append("This is the ");
-      }
-      {
-        final String content = String.valueOf(coerce_w88nue_a(p));
-        sb.append(content);
-      }
-      return sb.toString();
-    }).get(), _nodeReference, _nodeUrl);
+    return new Message(BuiltinMessageKinds.none(), "This is the " + coerce_w88nue_a(p), _nodeReference, _nodeUrl);
   }
   public static Message mMoney(String _nodeReference, String _nodeUrl, Number m) {
-    return new Message(BuiltinMessageKinds.none(), ((Supplier<String>) () -> {
-      StringBuilder sb = new StringBuilder();
-
-      {
-        sb.append("This is a lot of ");
-      }
-      {
-        final String content = String.valueOf(coerce_w88nue_b(m));
-        sb.append(content);
-      }
-      return sb.toString();
-    }).get(), _nodeReference, _nodeUrl);
+    return new Message(BuiltinMessageKinds.none(), "This is a lot of " + coerce_w88nue_b(m), _nodeReference, _nodeUrl);
   }
   public static Message pleaseTakePills(String _nodeReference, String _nodeUrl, Number numPills) {
     return new Message(BuiltinMessageKinds.none(), ((Supplier<String>) () -> {

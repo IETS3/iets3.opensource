@@ -106,13 +106,11 @@ public class Generated_lambda_Test {
   }
   public static Number add(Number a, Number b) {
     Number res = AH.add(a, b);
-    {
-      Number it = res;
-      if (!(AH.isEqual(it, AH.add(a, b)))) {
-        final Message message = new Message(BuiltinMessageKinds.error(), ContractViolatedException.POST_FAILED + ": " + "res == a + b").withLocation(new ProgramLocation("r:f6b93d14-1af1-4f84-a11b-cbe2d8c5efff(test.in.expr.os.lambda@tests)/401176299921428741", "http://127.0.0.1:63320/node?ref=r%3Af6b93d14-1af1-4f84-a11b-cbe2d8c5efff%28test.in.expr.os.lambda%40tests%29%2F401176299921428741")).withAffectedMemberNames(new HashSet<String>(Arrays.<String>asList()));
-        GlobalContext.MESSAGE_LOG.get().collect(message);
-        throw new ContractViolatedException(message);
-      }
+    Number it = res;
+    if (!(AH.isEqual(it, AH.add(a, b)))) {
+      final Message message = new Message(BuiltinMessageKinds.error(), ContractViolatedException.POST_FAILED + ": " + "res == a + b").withLocation(new ProgramLocation("r:f6b93d14-1af1-4f84-a11b-cbe2d8c5efff(test.in.expr.os.lambda@tests)/401176299921428741", "http://127.0.0.1:63320/node?ref=r%3Af6b93d14-1af1-4f84-a11b-cbe2d8c5efff%28test.in.expr.os.lambda%40tests%29%2F401176299921428741")).withAffectedMemberNames(new HashSet<String>(Arrays.<String>asList()));
+      GlobalContext.MESSAGE_LOG.get().collect(message);
+      throw new ContractViolatedException(message);
     }
 
     return res;
@@ -124,18 +122,16 @@ public class Generated_lambda_Test {
       param.parameters.add(b);
       return fun.apply(param);
     }).get();
-    {
-      Number it = res;
-      if (!(AH.isEqual(it, ((Supplier<Number>) () -> {
-        ParameterSetWrapper param = new ParameterSetWrapper();
-        param.parameters.add(a);
-        param.parameters.add(b);
-        return fun.apply(param);
-      }).get()))) {
-        final Message message = new Message(BuiltinMessageKinds.error(), ContractViolatedException.POST_FAILED + ": " + "res == fun.exec[a, b]").withLocation(new ProgramLocation("r:f6b93d14-1af1-4f84-a11b-cbe2d8c5efff(test.in.expr.os.lambda@tests)/401176299903976102", "http://127.0.0.1:63320/node?ref=r%3Af6b93d14-1af1-4f84-a11b-cbe2d8c5efff%28test.in.expr.os.lambda%40tests%29%2F401176299903976102")).withAffectedMemberNames(new HashSet<String>(Arrays.<String>asList()));
-        GlobalContext.MESSAGE_LOG.get().collect(message);
-        throw new ContractViolatedException(message);
-      }
+    Number it = res;
+    if (!(AH.isEqual(it, ((Supplier<Number>) () -> {
+      ParameterSetWrapper param = new ParameterSetWrapper();
+      param.parameters.add(a);
+      param.parameters.add(b);
+      return fun.apply(param);
+    }).get()))) {
+      final Message message = new Message(BuiltinMessageKinds.error(), ContractViolatedException.POST_FAILED + ": " + "res == fun.exec[a, b]").withLocation(new ProgramLocation("r:f6b93d14-1af1-4f84-a11b-cbe2d8c5efff(test.in.expr.os.lambda@tests)/401176299903976102", "http://127.0.0.1:63320/node?ref=r%3Af6b93d14-1af1-4f84-a11b-cbe2d8c5efff%28test.in.expr.os.lambda%40tests%29%2F401176299903976102")).withAffectedMemberNames(new HashSet<String>(Arrays.<String>asList()));
+      GlobalContext.MESSAGE_LOG.get().collect(message);
+      throw new ContractViolatedException(message);
     }
 
     return res;
@@ -144,13 +140,11 @@ public class Generated_lambda_Test {
     Number a2 = AH.mul(new BigInteger("2"), a);
     Number b2 = AH.mul(new BigInteger("2"), b);
     Number res = AH.add(a2, b2);
-    {
-      Number it = res;
-      if (!(AH.isEqual(it, AH.add(AH.mul(new BigInteger("2"), a), AH.mul(new BigInteger("2"), b))))) {
-        final Message message = new Message(BuiltinMessageKinds.error(), ContractViolatedException.POST_FAILED + ": " + "res == (2 * a) + (2 * b)").withLocation(new ProgramLocation("r:f6b93d14-1af1-4f84-a11b-cbe2d8c5efff(test.in.expr.os.lambda@tests)/401176299921437243", "http://127.0.0.1:63320/node?ref=r%3Af6b93d14-1af1-4f84-a11b-cbe2d8c5efff%28test.in.expr.os.lambda%40tests%29%2F401176299921437243")).withAffectedMemberNames(new HashSet<String>(Arrays.<String>asList()));
-        GlobalContext.MESSAGE_LOG.get().collect(message);
-        throw new ContractViolatedException(message);
-      }
+    Number it = res;
+    if (!(AH.isEqual(it, AH.add(AH.mul(new BigInteger("2"), a), AH.mul(new BigInteger("2"), b))))) {
+      final Message message = new Message(BuiltinMessageKinds.error(), ContractViolatedException.POST_FAILED + ": " + "res == (2 * a) + (2 * b)").withLocation(new ProgramLocation("r:f6b93d14-1af1-4f84-a11b-cbe2d8c5efff(test.in.expr.os.lambda@tests)/401176299921437243", "http://127.0.0.1:63320/node?ref=r%3Af6b93d14-1af1-4f84-a11b-cbe2d8c5efff%28test.in.expr.os.lambda%40tests%29%2F401176299921437243")).withAffectedMemberNames(new HashSet<String>(Arrays.<String>asList()));
+      GlobalContext.MESSAGE_LOG.get().collect(message);
+      throw new ContractViolatedException(message);
     }
 
     return res;

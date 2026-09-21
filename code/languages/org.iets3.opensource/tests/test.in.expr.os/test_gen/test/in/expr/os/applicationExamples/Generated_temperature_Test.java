@@ -42,13 +42,11 @@ public class Generated_temperature_Test {
    */
     public static Number FtoC(Number t) {
     Number res = AH.limit(AH.truncate(AH.div(AH.mul(AH.sub(t, new BigInteger("32")), new BigInteger("5")), new BigInteger("9")), 1), new BigDecimal("34.0").setScale(1, RoundingMode.DOWN), new BigDecimal("42.0").setScale(1, RoundingMode.DOWN));
-    {
-      Number it = res;
-      if (!(AH.isEqual(it, AH.limit(AH.truncate(AH.div(AH.mul(AH.sub(t, new BigInteger("32")), new BigInteger("5")), new BigInteger("9")), 1), new BigDecimal("34.0").setScale(1, RoundingMode.DOWN), new BigDecimal("42.0").setScale(1, RoundingMode.DOWN))))) {
-        final Message message = new Message(BuiltinMessageKinds.error(), ContractViolatedException.POST_FAILED + ": " + "res == limit<tempInC>(precision<truncate to 1>((t - 32) * 5 / 9))").withLocation(new ProgramLocation("r:206e2f16-1e9d-4dba-a48f-a14d1e82c7a3(test.in.expr.os.applicationExamples@tests)/8224492649637339634", "http://127.0.0.1:63320/node?ref=r%3A206e2f16-1e9d-4dba-a48f-a14d1e82c7a3%28test.in.expr.os.applicationExamples%40tests%29%2F8224492649637339634")).withAffectedMemberNames(new HashSet<String>(Arrays.<String>asList()));
-        GlobalContext.MESSAGE_LOG.get().collect(message);
-        throw new ContractViolatedException(message);
-      }
+    Number it = res;
+    if (!(AH.isEqual(it, AH.limit(AH.truncate(AH.div(AH.mul(AH.sub(t, new BigInteger("32")), new BigInteger("5")), new BigInteger("9")), 1), new BigDecimal("34.0").setScale(1, RoundingMode.DOWN), new BigDecimal("42.0").setScale(1, RoundingMode.DOWN))))) {
+      final Message message = new Message(BuiltinMessageKinds.error(), ContractViolatedException.POST_FAILED + ": " + "res == limit<tempInC>(precision<truncate to 1>((t - 32) * 5 / 9))").withLocation(new ProgramLocation("r:206e2f16-1e9d-4dba-a48f-a14d1e82c7a3(test.in.expr.os.applicationExamples@tests)/8224492649637339634", "http://127.0.0.1:63320/node?ref=r%3A206e2f16-1e9d-4dba-a48f-a14d1e82c7a3%28test.in.expr.os.applicationExamples%40tests%29%2F8224492649637339634")).withAffectedMemberNames(new HashSet<String>(Arrays.<String>asList()));
+      GlobalContext.MESSAGE_LOG.get().collect(message);
+      throw new ContractViolatedException(message);
     }
 
     return res;

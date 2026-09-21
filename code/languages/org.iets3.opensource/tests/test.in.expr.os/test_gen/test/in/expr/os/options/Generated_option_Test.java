@@ -350,13 +350,11 @@ public class Generated_option_Test {
   }
   public static Number dontGiveMeAnInt() {
     Number res = Generated_option_Test.anotherFun(null);
-    {
-      Number it = res;
-      if (!(org.iets3.core.expr.simpleTypes.runtime.AH.isEqual(it, new BigInteger("20")))) {
-        final Message message = new Message(BuiltinMessageKinds.error(), ContractViolatedException.POST_FAILED + ": " + "res == 20").withLocation(new ProgramLocation("r:ea293304-2b79-4cc3-9b45-e3362a713a17(test.in.expr.os.options@tests)/401176299904075305", "http://127.0.0.1:63320/node?ref=r%3Aea293304-2b79-4cc3-9b45-e3362a713a17%28test.in.expr.os.options%40tests%29%2F401176299904075305")).withAffectedMemberNames(new HashSet<String>(Arrays.<String>asList()));
-        GlobalContext.MESSAGE_LOG.get().collect(message);
-        throw new ContractViolatedException(message);
-      }
+    Number it = res;
+    if (!(org.iets3.core.expr.simpleTypes.runtime.AH.isEqual(it, new BigInteger("20")))) {
+      final Message message = new Message(BuiltinMessageKinds.error(), ContractViolatedException.POST_FAILED + ": " + "res == 20").withLocation(new ProgramLocation("r:ea293304-2b79-4cc3-9b45-e3362a713a17(test.in.expr.os.options@tests)/401176299904075305", "http://127.0.0.1:63320/node?ref=r%3Aea293304-2b79-4cc3-9b45-e3362a713a17%28test.in.expr.os.options%40tests%29%2F401176299904075305")).withAffectedMemberNames(new HashSet<String>(Arrays.<String>asList()));
+      GlobalContext.MESSAGE_LOG.get().collect(message);
+      throw new ContractViolatedException(message);
     }
 
     return res;

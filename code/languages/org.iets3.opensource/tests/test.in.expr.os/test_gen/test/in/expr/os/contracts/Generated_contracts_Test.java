@@ -14,8 +14,8 @@ import java.util.Arrays;
 import org.iets3.core.expr.genjava.base.rt.rt.GlobalContext;
 import org.junit.Test;
 import org.junit.Assert;
-import org.iets3.core.expr.base.plugin.ValidValue;
 import jetbrains.mps.baseLanguage.closures.runtime._FunctionTypes;
+import org.iets3.core.expr.base.plugin.ValidValue;
 import org.iets3.core.expr.genjava.tests.rt.rt.EqualsTestOp;
 import org.apache.commons.lang3.builder.HashCodeBuilder;
 import org.iets3.core.expr.simpleTypes.runtime.OH;
@@ -48,13 +48,11 @@ public class Generated_contracts_Test {
   public static Number assignNumberTypeTen(Number i) {
     Number res = ((Supplier<Number>) () -> {
       Number result = i;
-      {
-        Number it = result;
-        if (!(AH.isGreater(it, new BigInteger("10")))) {
-          final Message message = new Message(BuiltinMessageKinds.error(), ContractViolatedException.CONSTRAINT_FAILED + ": " + "it > 10").withLocation(new ProgramLocation("r:01a6c2ec-8e8f-4bd1-bb81-7468b52febee(test.in.expr.os.contracts@tests)/1922523186437509729", "http://127.0.0.1:63320/node?ref=r%3A01a6c2ec-8e8f-4bd1-bb81-7468b52febee%28test.in.expr.os.contracts%40tests%29%2F1922523186437509729")).withAffectedMemberNames(new HashSet<String>(Arrays.<String>asList()));
-          GlobalContext.MESSAGE_LOG.get().collect(message);
-          throw new ContractViolatedException(message);
-        }
+      Number it = result;
+      if (!(AH.isGreater(it, new BigInteger("10")))) {
+        final Message message = new Message(BuiltinMessageKinds.error(), ContractViolatedException.CONSTRAINT_FAILED + ": " + "it > 10").withLocation(new ProgramLocation("r:01a6c2ec-8e8f-4bd1-bb81-7468b52febee(test.in.expr.os.contracts@tests)/1922523186437509729", "http://127.0.0.1:63320/node?ref=r%3A01a6c2ec-8e8f-4bd1-bb81-7468b52febee%28test.in.expr.os.contracts%40tests%29%2F1922523186437509729")).withAffectedMemberNames(new HashSet<String>(Arrays.<String>asList()));
+        GlobalContext.MESSAGE_LOG.get().collect(message);
+        throw new ContractViolatedException(message);
       }
       return result;
     }).get();
@@ -71,13 +69,11 @@ public class Generated_contracts_Test {
   }
   public static Number assignNumberType(Number i) {
     Number result = i;
-    {
-      Number it = result;
-      if (!(AH.isGreater(it, new BigInteger("10")))) {
-        final Message message = new Message(BuiltinMessageKinds.error(), ContractViolatedException.CONSTRAINT_FAILED + ": " + "it > 10").withLocation(new ProgramLocation("r:01a6c2ec-8e8f-4bd1-bb81-7468b52febee(test.in.expr.os.contracts@tests)/1922523186437509729", "http://127.0.0.1:63320/node?ref=r%3A01a6c2ec-8e8f-4bd1-bb81-7468b52febee%28test.in.expr.os.contracts%40tests%29%2F1922523186437509729")).withAffectedMemberNames(new HashSet<String>(Arrays.<String>asList()));
-        GlobalContext.MESSAGE_LOG.get().collect(message);
-        throw new ContractViolatedException(message);
-      }
+    Number it = result;
+    if (!(AH.isGreater(it, new BigInteger("10")))) {
+      final Message message = new Message(BuiltinMessageKinds.error(), ContractViolatedException.CONSTRAINT_FAILED + ": " + "it > 10").withLocation(new ProgramLocation("r:01a6c2ec-8e8f-4bd1-bb81-7468b52febee(test.in.expr.os.contracts@tests)/1922523186437509729", "http://127.0.0.1:63320/node?ref=r%3A01a6c2ec-8e8f-4bd1-bb81-7468b52febee%28test.in.expr.os.contracts%40tests%29%2F1922523186437509729")).withAffectedMemberNames(new HashSet<String>(Arrays.<String>asList()));
+      GlobalContext.MESSAGE_LOG.get().collect(message);
+      throw new ContractViolatedException(message);
     }
     Number res = result;
 
@@ -87,13 +83,11 @@ public class Generated_contracts_Test {
   public static Number assignNumberTypeTwenty(Number i) {
     Number res = ((Supplier<Number>) () -> {
       Number result = i;
-      {
-        Number it = result;
-        if (!(AH.isGreater(it, new BigInteger("20")))) {
-          final Message message = new Message(BuiltinMessageKinds.error(), "must be > 20").withLocation(new ProgramLocation("r:01a6c2ec-8e8f-4bd1-bb81-7468b52febee(test.in.expr.os.contracts@tests)/5299123466398141595", "http://127.0.0.1:63320/node?ref=r%3A01a6c2ec-8e8f-4bd1-bb81-7468b52febee%28test.in.expr.os.contracts%40tests%29%2F5299123466398141595")).withAffectedMemberNames(new HashSet<String>(Arrays.<String>asList()));
-          GlobalContext.MESSAGE_LOG.get().collect(message);
-          throw new ContractViolatedException(message);
-        }
+      Number it = result;
+      if (!(AH.isGreater(it, new BigInteger("20")))) {
+        final Message message = new Message(BuiltinMessageKinds.error(), "must be > 20").withLocation(new ProgramLocation("r:01a6c2ec-8e8f-4bd1-bb81-7468b52febee(test.in.expr.os.contracts@tests)/5299123466398141595", "http://127.0.0.1:63320/node?ref=r%3A01a6c2ec-8e8f-4bd1-bb81-7468b52febee%28test.in.expr.os.contracts%40tests%29%2F5299123466398141595")).withAffectedMemberNames(new HashSet<String>(Arrays.<String>asList()));
+        GlobalContext.MESSAGE_LOG.get().collect(message);
+        throw new ContractViolatedException(message);
       }
       return result;
     }).get();
@@ -112,13 +106,11 @@ public class Generated_contracts_Test {
   public static Number assignNumberTypeThirty(Number i) {
     Number res = ((Supplier<Number>) () -> {
       Number result = i;
-      {
-        Number it = result;
-        if (!(AH.isGreater(it, new BigInteger("30")))) {
-          final Message message = new Message(BuiltinMessageKinds.error(), ContractViolatedException.CONSTRAINT_FAILED + ": " + "it > 30").withLocation(new ProgramLocation("r:01a6c2ec-8e8f-4bd1-bb81-7468b52febee(test.in.expr.os.contracts@tests)/5299123466399132000", "http://127.0.0.1:63320/node?ref=r%3A01a6c2ec-8e8f-4bd1-bb81-7468b52febee%28test.in.expr.os.contracts%40tests%29%2F5299123466399132000")).withAffectedMemberNames(new HashSet<String>(Arrays.<String>asList()));
-          GlobalContext.MESSAGE_LOG.get().collect(message);
-          throw new ContractViolatedException(message);
-        }
+      Number it = result;
+      if (!(AH.isGreater(it, new BigInteger("30")))) {
+        final Message message = new Message(BuiltinMessageKinds.error(), ContractViolatedException.CONSTRAINT_FAILED + ": " + "it > 30").withLocation(new ProgramLocation("r:01a6c2ec-8e8f-4bd1-bb81-7468b52febee(test.in.expr.os.contracts@tests)/5299123466399132000", "http://127.0.0.1:63320/node?ref=r%3A01a6c2ec-8e8f-4bd1-bb81-7468b52febee%28test.in.expr.os.contracts%40tests%29%2F5299123466399132000")).withAffectedMemberNames(new HashSet<String>(Arrays.<String>asList()));
+        GlobalContext.MESSAGE_LOG.get().collect(message);
+        throw new ContractViolatedException(message);
       }
       return result;
     }).get();
@@ -146,7 +138,7 @@ public class Generated_contracts_Test {
   }
   @Test
   public void testTypeDef_item1_1847768634666769066() throws Throwable {
-    Assert.assertEquals("Expected: " + false + ", but was: " + ((Supplier<ValidValue>) () -> {
+    Assert.assertEquals("Expected: " + false + ", but was: " + ((_FunctionTypes._return_P0_E0<ValidValue>) () -> {
       Boolean ok = ((_FunctionTypes._return_P0_E0<Boolean>) () -> {
         Number it = new BigInteger("1");
         Boolean res = true;
@@ -159,7 +151,7 @@ public class Generated_contracts_Test {
       }
       ValidValue res = new ValidValue(ok, msg);
       return res;
-    }).get().ok, (Object) false, (Object) ((Supplier<ValidValue>) () -> {
+    }).invoke().ok, (Object) false, (Object) ((_FunctionTypes._return_P0_E0<ValidValue>) () -> {
       Boolean ok = ((_FunctionTypes._return_P0_E0<Boolean>) () -> {
         Number it = new BigInteger("1");
         Boolean res = true;
@@ -172,7 +164,7 @@ public class Generated_contracts_Test {
       }
       ValidValue res = new ValidValue(ok, msg);
       return res;
-    }).get().ok);
+    }).invoke().ok);
   }
   @Test
   public void testTypeDef_item3_1847768634666769083() throws Throwable {
@@ -180,7 +172,7 @@ public class Generated_contracts_Test {
   }
   @Test
   public void testTypeDef_item4_1847768634666769088() throws Throwable {
-    Assert.assertEquals("Expected: " + true + ", but was: " + ((Supplier<ValidValue>) () -> {
+    Assert.assertEquals("Expected: " + true + ", but was: " + ((_FunctionTypes._return_P0_E0<ValidValue>) () -> {
       Boolean ok = ((_FunctionTypes._return_P0_E0<Boolean>) () -> {
         Number it = new BigInteger("12");
         Boolean res = true;
@@ -193,7 +185,7 @@ public class Generated_contracts_Test {
       }
       ValidValue res = new ValidValue(ok, msg);
       return res;
-    }).get().ok, (Object) true, (Object) ((Supplier<ValidValue>) () -> {
+    }).invoke().ok, (Object) true, (Object) ((_FunctionTypes._return_P0_E0<ValidValue>) () -> {
       Boolean ok = ((_FunctionTypes._return_P0_E0<Boolean>) () -> {
         Number it = new BigInteger("12");
         Boolean res = true;
@@ -206,11 +198,11 @@ public class Generated_contracts_Test {
       }
       ValidValue res = new ValidValue(ok, msg);
       return res;
-    }).get().ok);
+    }).invoke().ok);
   }
   @Test
   public void testTypeDef_item5_1847768634666769096() throws Throwable {
-    Assert.assertEquals("Expected: " + true + ", but was: " + (((Supplier<Boolean>) () -> {
+    Assert.assertEquals("Expected: " + true + ", but was: " + (((_FunctionTypes._return_P0_E0<Boolean>) () -> {
       Boolean ok = ((_FunctionTypes._return_P0_E0<Boolean>) () -> {
         Number it = new BigInteger("12");
         Boolean res = true;
@@ -223,7 +215,7 @@ public class Generated_contracts_Test {
       }
       ValidValue res = new ValidValue(ok, msg);
       return res.ok;
-    }).get() ? true : false), (Object) true, (Object) ((((Supplier<Boolean>) () -> {
+    }).invoke() ? true : false), (Object) true, (Object) ((((_FunctionTypes._return_P0_E0<Boolean>) () -> {
       Boolean ok = ((_FunctionTypes._return_P0_E0<Boolean>) () -> {
         Number it = new BigInteger("12");
         Boolean res = true;
@@ -236,11 +228,11 @@ public class Generated_contracts_Test {
       }
       ValidValue res = new ValidValue(ok, msg);
       return res.ok;
-    }).get() ? true : false)));
+    }).invoke() ? true : false)));
   }
   @Test
   public void testTypeDef_item6_1847768634666769106() throws Throwable {
-    Assert.assertEquals("Expected: " + false + ", but was: " + (((Supplier<Boolean>) () -> {
+    Assert.assertEquals("Expected: " + false + ", but was: " + (((_FunctionTypes._return_P0_E0<Boolean>) () -> {
       Boolean ok = ((_FunctionTypes._return_P0_E0<Boolean>) () -> {
         Number it = new BigInteger("5");
         Boolean res = true;
@@ -253,7 +245,7 @@ public class Generated_contracts_Test {
       }
       ValidValue res = new ValidValue(ok, msg);
       return res.ok;
-    }).get() ? true : false), (Object) false, (Object) ((((Supplier<Boolean>) () -> {
+    }).invoke() ? true : false), (Object) false, (Object) ((((_FunctionTypes._return_P0_E0<Boolean>) () -> {
       Boolean ok = ((_FunctionTypes._return_P0_E0<Boolean>) () -> {
         Number it = new BigInteger("5");
         Boolean res = true;
@@ -266,11 +258,11 @@ public class Generated_contracts_Test {
       }
       ValidValue res = new ValidValue(ok, msg);
       return res.ok;
-    }).get() ? true : false)));
+    }).invoke() ? true : false)));
   }
   @Test
   public void testTypeDef_item7_1847768634666769116() throws Throwable {
-    Assert.assertEquals("Expected: " + null + ", but was: " + ((Supplier<ValidValue>) () -> {
+    Assert.assertEquals("Expected: " + null + ", but was: " + ((_FunctionTypes._return_P0_E0<ValidValue>) () -> {
       Boolean ok = ((_FunctionTypes._return_P0_E0<Boolean>) () -> {
         Number it = new BigInteger("12");
         Boolean res = true;
@@ -283,7 +275,7 @@ public class Generated_contracts_Test {
       }
       ValidValue res = new ValidValue(ok, msg);
       return res;
-    }).get().msg, (Object) null, ((Supplier<ValidValue>) () -> {
+    }).invoke().msg, (Object) null, ((_FunctionTypes._return_P0_E0<ValidValue>) () -> {
       Boolean ok = ((_FunctionTypes._return_P0_E0<Boolean>) () -> {
         Number it = new BigInteger("12");
         Boolean res = true;
@@ -296,13 +288,13 @@ public class Generated_contracts_Test {
       }
       ValidValue res = new ValidValue(ok, msg);
       return res;
-    }).get().msg);
+    }).invoke().msg);
   }
 
 
   @Test
   public void nestedTypedefs_item0_1847768634676496203() throws Throwable {
-    Assert.assertEquals("Expected: " + false + ", but was: " + ((Supplier<ValidValue>) () -> {
+    Assert.assertEquals("Expected: " + false + ", but was: " + ((_FunctionTypes._return_P0_E0<ValidValue>) () -> {
       Boolean ok = ((_FunctionTypes._return_P0_E0<Boolean>) () -> {
         Number it = new BigInteger("1");
         Boolean res = true;
@@ -316,7 +308,7 @@ public class Generated_contracts_Test {
       }
       ValidValue res = new ValidValue(ok, msg);
       return res;
-    }).get().ok, (Object) false, (Object) ((Supplier<ValidValue>) () -> {
+    }).invoke().ok, (Object) false, (Object) ((_FunctionTypes._return_P0_E0<ValidValue>) () -> {
       Boolean ok = ((_FunctionTypes._return_P0_E0<Boolean>) () -> {
         Number it = new BigInteger("1");
         Boolean res = true;
@@ -330,11 +322,11 @@ public class Generated_contracts_Test {
       }
       ValidValue res = new ValidValue(ok, msg);
       return res;
-    }).get().ok);
+    }).invoke().ok);
   }
   @Test
   public void nestedTypedefs_item1_1847768634676496806() throws Throwable {
-    Assert.assertEquals("Expected: " + false + ", but was: " + ((Supplier<ValidValue>) () -> {
+    Assert.assertEquals("Expected: " + false + ", but was: " + ((_FunctionTypes._return_P0_E0<ValidValue>) () -> {
       Boolean ok = ((_FunctionTypes._return_P0_E0<Boolean>) () -> {
         Number it = new BigInteger("6");
         Boolean res = true;
@@ -348,7 +340,7 @@ public class Generated_contracts_Test {
       }
       ValidValue res = new ValidValue(ok, msg);
       return res;
-    }).get().ok, (Object) false, (Object) ((Supplier<ValidValue>) () -> {
+    }).invoke().ok, (Object) false, (Object) ((_FunctionTypes._return_P0_E0<ValidValue>) () -> {
       Boolean ok = ((_FunctionTypes._return_P0_E0<Boolean>) () -> {
         Number it = new BigInteger("6");
         Boolean res = true;
@@ -362,11 +354,11 @@ public class Generated_contracts_Test {
       }
       ValidValue res = new ValidValue(ok, msg);
       return res;
-    }).get().ok);
+    }).invoke().ok);
   }
   @Test
   public void nestedTypedefs_item2_1847768634682372750() throws Throwable {
-    Assert.assertEquals("Expected: " + false + ", but was: " + (((Supplier<Boolean>) () -> {
+    Assert.assertEquals("Expected: " + false + ", but was: " + (((_FunctionTypes._return_P0_E0<Boolean>) () -> {
       Boolean ok = ((_FunctionTypes._return_P0_E0<Boolean>) () -> {
         Number it = new BigInteger("1");
         Boolean res = true;
@@ -380,7 +372,7 @@ public class Generated_contracts_Test {
       }
       ValidValue res = new ValidValue(ok, msg);
       return res.ok;
-    }).get() ? true : false), (Object) false, (Object) ((((Supplier<Boolean>) () -> {
+    }).invoke() ? true : false), (Object) false, (Object) ((((_FunctionTypes._return_P0_E0<Boolean>) () -> {
       Boolean ok = ((_FunctionTypes._return_P0_E0<Boolean>) () -> {
         Number it = new BigInteger("1");
         Boolean res = true;
@@ -394,11 +386,11 @@ public class Generated_contracts_Test {
       }
       ValidValue res = new ValidValue(ok, msg);
       return res.ok;
-    }).get() ? true : false)));
+    }).invoke() ? true : false)));
   }
   @Test
   public void nestedTypedefs_item3_1847768634682483562() throws Throwable {
-    Assert.assertEquals("Expected: " + false + ", but was: " + (((Supplier<Boolean>) () -> {
+    Assert.assertEquals("Expected: " + false + ", but was: " + (((_FunctionTypes._return_P0_E0<Boolean>) () -> {
       Boolean ok = ((_FunctionTypes._return_P0_E0<Boolean>) () -> {
         Number it = new BigInteger("6");
         Boolean res = true;
@@ -412,7 +404,7 @@ public class Generated_contracts_Test {
       }
       ValidValue res = new ValidValue(ok, msg);
       return res.ok;
-    }).get() ? true : false), (Object) false, (Object) ((((Supplier<Boolean>) () -> {
+    }).invoke() ? true : false), (Object) false, (Object) ((((_FunctionTypes._return_P0_E0<Boolean>) () -> {
       Boolean ok = ((_FunctionTypes._return_P0_E0<Boolean>) () -> {
         Number it = new BigInteger("6");
         Boolean res = true;
@@ -426,7 +418,7 @@ public class Generated_contracts_Test {
       }
       ValidValue res = new ValidValue(ok, msg);
       return res.ok;
-    }).get() ? true : false)));
+    }).invoke() ? true : false)));
   }
 /* 
    * ValExpression
@@ -434,13 +426,11 @@ public class Generated_contracts_Test {
     public static Number times2(Number i) {
     Number res = ((Supplier<Number>) () -> {
       Number newValue = AH.mul(new BigInteger("2"), i);
-      {
-        Number it = newValue;
-        if (!(AH.isGreater(it, new BigInteger("10")))) {
-          final Message message = new Message(BuiltinMessageKinds.error(), ContractViolatedException.CONSTRAINT_FAILED + ": " + "it > 10").withLocation(new ProgramLocation("r:01a6c2ec-8e8f-4bd1-bb81-7468b52febee(test.in.expr.os.contracts@tests)/410396733648213593", "http://127.0.0.1:63320/node?ref=r%3A01a6c2ec-8e8f-4bd1-bb81-7468b52febee%28test.in.expr.os.contracts%40tests%29%2F410396733648213593")).withAffectedMemberNames(new HashSet<String>(Arrays.<String>asList()));
-          GlobalContext.MESSAGE_LOG.get().collect(message);
-          throw new ContractViolatedException(message);
-        }
+      Number it = newValue;
+      if (!(AH.isGreater(it, new BigInteger("10")))) {
+        final Message message = new Message(BuiltinMessageKinds.error(), ContractViolatedException.CONSTRAINT_FAILED + ": " + "it > 10").withLocation(new ProgramLocation("r:01a6c2ec-8e8f-4bd1-bb81-7468b52febee(test.in.expr.os.contracts@tests)/410396733648213593", "http://127.0.0.1:63320/node?ref=r%3A01a6c2ec-8e8f-4bd1-bb81-7468b52febee%28test.in.expr.os.contracts%40tests%29%2F410396733648213593")).withAffectedMemberNames(new HashSet<String>(Arrays.<String>asList()));
+        GlobalContext.MESSAGE_LOG.get().collect(message);
+        throw new ContractViolatedException(message);
       }
       return newValue;
     }).get();
@@ -459,21 +449,17 @@ public class Generated_contracts_Test {
    * Function
    */
     public static Number times3(Number i) {
-    {
-      if (!(AH.isGreater(i, new BigInteger("10")))) {
-        final Message message = new Message(BuiltinMessageKinds.error(), ContractViolatedException.PRE_FAILED + ": " + "i > 10").withLocation(new ProgramLocation("r:01a6c2ec-8e8f-4bd1-bb81-7468b52febee(test.in.expr.os.contracts@tests)/867786408880429061", "http://127.0.0.1:63320/node?ref=r%3A01a6c2ec-8e8f-4bd1-bb81-7468b52febee%28test.in.expr.os.contracts%40tests%29%2F867786408880429061")).withAffectedMemberNames(new HashSet<String>(Arrays.<String>asList()));
-        GlobalContext.MESSAGE_LOG.get().collect(message);
-        throw new ContractViolatedException(message);
-      }
+    if (!(AH.isGreater(i, new BigInteger("10")))) {
+      final Message message = new Message(BuiltinMessageKinds.error(), ContractViolatedException.PRE_FAILED + ": " + "i > 10").withLocation(new ProgramLocation("r:01a6c2ec-8e8f-4bd1-bb81-7468b52febee(test.in.expr.os.contracts@tests)/867786408880429061", "http://127.0.0.1:63320/node?ref=r%3A01a6c2ec-8e8f-4bd1-bb81-7468b52febee%28test.in.expr.os.contracts%40tests%29%2F867786408880429061")).withAffectedMemberNames(new HashSet<String>(Arrays.<String>asList()));
+      GlobalContext.MESSAGE_LOG.get().collect(message);
+      throw new ContractViolatedException(message);
     }
     Number res = AH.mul(new BigInteger("3"), i);
-    {
-      Number it = res;
-      if (!(AH.isGreater(it, new BigInteger("100")) && AH.isEqual(it, AH.mul(new BigInteger("3"), i)))) {
-        final Message message = new Message(BuiltinMessageKinds.error(), ContractViolatedException.POST_FAILED + ": " + "res > 100 && res == 3 * i").withLocation(new ProgramLocation("r:01a6c2ec-8e8f-4bd1-bb81-7468b52febee(test.in.expr.os.contracts@tests)/867786408880429144", "http://127.0.0.1:63320/node?ref=r%3A01a6c2ec-8e8f-4bd1-bb81-7468b52febee%28test.in.expr.os.contracts%40tests%29%2F867786408880429144")).withAffectedMemberNames(new HashSet<String>(Arrays.<String>asList()));
-        GlobalContext.MESSAGE_LOG.get().collect(message);
-        throw new ContractViolatedException(message);
-      }
+    Number it = res;
+    if (!(AH.isGreater(it, new BigInteger("100")) && AH.isEqual(it, AH.mul(new BigInteger("3"), i)))) {
+      final Message message = new Message(BuiltinMessageKinds.error(), ContractViolatedException.POST_FAILED + ": " + "res > 100 && res == 3 * i").withLocation(new ProgramLocation("r:01a6c2ec-8e8f-4bd1-bb81-7468b52febee(test.in.expr.os.contracts@tests)/867786408880429144", "http://127.0.0.1:63320/node?ref=r%3A01a6c2ec-8e8f-4bd1-bb81-7468b52febee%28test.in.expr.os.contracts%40tests%29%2F867786408880429144")).withAffectedMemberNames(new HashSet<String>(Arrays.<String>asList()));
+      GlobalContext.MESSAGE_LOG.get().collect(message);
+      throw new ContractViolatedException(message);
     }
 
     return res;
@@ -482,21 +468,17 @@ public class Generated_contracts_Test {
    * Function
    */
     public static Number times3block(Number i) {
-    {
-      if (!(AH.isGreater(i, new BigInteger("10")))) {
-        final Message message = new Message(BuiltinMessageKinds.error(), ContractViolatedException.PRE_FAILED + ": " + "i > 10").withLocation(new ProgramLocation("r:01a6c2ec-8e8f-4bd1-bb81-7468b52febee(test.in.expr.os.contracts@tests)/7981304192351666667", "http://127.0.0.1:63320/node?ref=r%3A01a6c2ec-8e8f-4bd1-bb81-7468b52febee%28test.in.expr.os.contracts%40tests%29%2F7981304192351666667")).withAffectedMemberNames(new HashSet<String>(Arrays.<String>asList()));
-        GlobalContext.MESSAGE_LOG.get().collect(message);
-        throw new ContractViolatedException(message);
-      }
+    if (!(AH.isGreater(i, new BigInteger("10")))) {
+      final Message message = new Message(BuiltinMessageKinds.error(), ContractViolatedException.PRE_FAILED + ": " + "i > 10").withLocation(new ProgramLocation("r:01a6c2ec-8e8f-4bd1-bb81-7468b52febee(test.in.expr.os.contracts@tests)/7981304192351666667", "http://127.0.0.1:63320/node?ref=r%3A01a6c2ec-8e8f-4bd1-bb81-7468b52febee%28test.in.expr.os.contracts%40tests%29%2F7981304192351666667")).withAffectedMemberNames(new HashSet<String>(Arrays.<String>asList()));
+      GlobalContext.MESSAGE_LOG.get().collect(message);
+      throw new ContractViolatedException(message);
     }
     Number res = AH.mul(new BigInteger("3"), i);
-    {
-      Number it = res;
-      if (!(AH.isGreater(it, new BigInteger("100")) && AH.isEqual(it, AH.mul(new BigInteger("3"), i)))) {
-        final Message message = new Message(BuiltinMessageKinds.error(), ContractViolatedException.POST_FAILED + ": " + "res > 100 && res == 3 * i").withLocation(new ProgramLocation("r:01a6c2ec-8e8f-4bd1-bb81-7468b52febee(test.in.expr.os.contracts@tests)/7981304192351666671", "http://127.0.0.1:63320/node?ref=r%3A01a6c2ec-8e8f-4bd1-bb81-7468b52febee%28test.in.expr.os.contracts%40tests%29%2F7981304192351666671")).withAffectedMemberNames(new HashSet<String>(Arrays.<String>asList()));
-        GlobalContext.MESSAGE_LOG.get().collect(message);
-        throw new ContractViolatedException(message);
-      }
+    Number it = res;
+    if (!(AH.isGreater(it, new BigInteger("100")) && AH.isEqual(it, AH.mul(new BigInteger("3"), i)))) {
+      final Message message = new Message(BuiltinMessageKinds.error(), ContractViolatedException.POST_FAILED + ": " + "res > 100 && res == 3 * i").withLocation(new ProgramLocation("r:01a6c2ec-8e8f-4bd1-bb81-7468b52febee(test.in.expr.os.contracts@tests)/7981304192351666671", "http://127.0.0.1:63320/node?ref=r%3A01a6c2ec-8e8f-4bd1-bb81-7468b52febee%28test.in.expr.os.contracts%40tests%29%2F7981304192351666671")).withAffectedMemberNames(new HashSet<String>(Arrays.<String>asList()));
+      GlobalContext.MESSAGE_LOG.get().collect(message);
+      throw new ContractViolatedException(message);
     }
 
     return res;
@@ -506,44 +488,38 @@ public class Generated_contracts_Test {
    */
     public static Number times3ContractsBlock(Number i) {
     Boolean b = AH.isGreater(i, new BigInteger("10"));
-    {
-      if (!(AH.isGreater(i, new BigInteger("10")))) {
-        final Message message = new Message(BuiltinMessageKinds.error(), ContractViolatedException.PRE_FAILED + ": " + "{\n  val b = i > 10\n  b\n}\n").withLocation(new ProgramLocation("r:01a6c2ec-8e8f-4bd1-bb81-7468b52febee(test.in.expr.os.contracts@tests)/3914984864457226592", "http://127.0.0.1:63320/node?ref=r%3A01a6c2ec-8e8f-4bd1-bb81-7468b52febee%28test.in.expr.os.contracts%40tests%29%2F3914984864457226592")).withAffectedMemberNames(new HashSet<String>(Arrays.<String>asList()));
-        GlobalContext.MESSAGE_LOG.get().collect(message);
-        throw new ContractViolatedException(message);
-      }
+    if (!(AH.isGreater(i, new BigInteger("10")))) {
+      final Message message = new Message(BuiltinMessageKinds.error(), ContractViolatedException.PRE_FAILED + ": " + "{\n  val b = i > 10\n  b\n}\n").withLocation(new ProgramLocation("r:01a6c2ec-8e8f-4bd1-bb81-7468b52febee(test.in.expr.os.contracts@tests)/3914984864457226592", "http://127.0.0.1:63320/node?ref=r%3A01a6c2ec-8e8f-4bd1-bb81-7468b52febee%28test.in.expr.os.contracts%40tests%29%2F3914984864457226592")).withAffectedMemberNames(new HashSet<String>(Arrays.<String>asList()));
+      GlobalContext.MESSAGE_LOG.get().collect(message);
+      throw new ContractViolatedException(message);
     }
     Number res = AH.mul(new BigInteger("3"), i);
-    {
-      Number it = res;
-      if (!(AH.isGreater(it, new BigInteger("100")))) {
-        final Message message = new Message(BuiltinMessageKinds.error(), ContractViolatedException.POST_FAILED + ": " + "{\n  val b = res > 100\n  b\n}\n").withLocation(new ProgramLocation("r:01a6c2ec-8e8f-4bd1-bb81-7468b52febee(test.in.expr.os.contracts@tests)/3914984864457226596", "http://127.0.0.1:63320/node?ref=r%3A01a6c2ec-8e8f-4bd1-bb81-7468b52febee%28test.in.expr.os.contracts%40tests%29%2F3914984864457226596")).withAffectedMemberNames(new HashSet<String>(Arrays.<String>asList()));
-        GlobalContext.MESSAGE_LOG.get().collect(message);
-        throw new ContractViolatedException(message);
-      }
+    Number it = res;
+    if (!(AH.isGreater(it, new BigInteger("100")))) {
+      final Message message = new Message(BuiltinMessageKinds.error(), ContractViolatedException.POST_FAILED + ": " + "{\n  val b = res > 100\n  b\n}\n").withLocation(new ProgramLocation("r:01a6c2ec-8e8f-4bd1-bb81-7468b52febee(test.in.expr.os.contracts@tests)/3914984864457226596", "http://127.0.0.1:63320/node?ref=r%3A01a6c2ec-8e8f-4bd1-bb81-7468b52febee%28test.in.expr.os.contracts%40tests%29%2F3914984864457226596")).withAffectedMemberNames(new HashSet<String>(Arrays.<String>asList()));
+      GlobalContext.MESSAGE_LOG.get().collect(message);
+      throw new ContractViolatedException(message);
     }
 
     return res;
   }
   public static Number times2MultipleContractItems(Number i, Number dummy) {
     Number newValue = AH.mul(new BigInteger("2"), i);
-    {
-      Number it = newValue;
-      if (!(AH.isGreater(i, new BigInteger("1")))) {
-        final Message message = new Message(BuiltinMessageKinds.error(), ContractViolatedException.CONSTRAINT_FAILED + ": " + "i > 1").withLocation(new ProgramLocation("r:01a6c2ec-8e8f-4bd1-bb81-7468b52febee(test.in.expr.os.contracts@tests)/3914984864476251742", "http://127.0.0.1:63320/node?ref=r%3A01a6c2ec-8e8f-4bd1-bb81-7468b52febee%28test.in.expr.os.contracts%40tests%29%2F3914984864476251742")).withAffectedMemberNames(new HashSet<String>(Arrays.<String>asList()));
-        GlobalContext.MESSAGE_LOG.get().collect(message);
-        throw new ContractViolatedException(message);
-      }
-      if (!(AH.isGreater(dummy, new BigInteger("1")))) {
-        final Message message = new Message(BuiltinMessageKinds.error(), ContractViolatedException.CONSTRAINT_FAILED + ": " + "dummy > 1").withLocation(new ProgramLocation("r:01a6c2ec-8e8f-4bd1-bb81-7468b52febee(test.in.expr.os.contracts@tests)/3914984864476306445", "http://127.0.0.1:63320/node?ref=r%3A01a6c2ec-8e8f-4bd1-bb81-7468b52febee%28test.in.expr.os.contracts%40tests%29%2F3914984864476306445")).withAffectedMemberNames(new HashSet<String>(Arrays.<String>asList()));
-        GlobalContext.MESSAGE_LOG.get().collect(message);
-        throw new ContractViolatedException(message);
-      }
-      if (!(AH.isGreater(it, new BigInteger("10")))) {
-        final Message message = new Message(BuiltinMessageKinds.error(), ContractViolatedException.CONSTRAINT_FAILED + ": " + "it > 10").withLocation(new ProgramLocation("r:01a6c2ec-8e8f-4bd1-bb81-7468b52febee(test.in.expr.os.contracts@tests)/3914984864476969452", "http://127.0.0.1:63320/node?ref=r%3A01a6c2ec-8e8f-4bd1-bb81-7468b52febee%28test.in.expr.os.contracts%40tests%29%2F3914984864476969452")).withAffectedMemberNames(new HashSet<String>(Arrays.<String>asList()));
-        GlobalContext.MESSAGE_LOG.get().collect(message);
-        throw new ContractViolatedException(message);
-      }
+    Number it = newValue;
+    if (!(AH.isGreater(i, new BigInteger("1")))) {
+      final Message message = new Message(BuiltinMessageKinds.error(), ContractViolatedException.CONSTRAINT_FAILED + ": " + "i > 1").withLocation(new ProgramLocation("r:01a6c2ec-8e8f-4bd1-bb81-7468b52febee(test.in.expr.os.contracts@tests)/3914984864476251742", "http://127.0.0.1:63320/node?ref=r%3A01a6c2ec-8e8f-4bd1-bb81-7468b52febee%28test.in.expr.os.contracts%40tests%29%2F3914984864476251742")).withAffectedMemberNames(new HashSet<String>(Arrays.<String>asList()));
+      GlobalContext.MESSAGE_LOG.get().collect(message);
+      throw new ContractViolatedException(message);
+    }
+    if (!(AH.isGreater(dummy, new BigInteger("1")))) {
+      final Message message = new Message(BuiltinMessageKinds.error(), ContractViolatedException.CONSTRAINT_FAILED + ": " + "dummy > 1").withLocation(new ProgramLocation("r:01a6c2ec-8e8f-4bd1-bb81-7468b52febee(test.in.expr.os.contracts@tests)/3914984864476306445", "http://127.0.0.1:63320/node?ref=r%3A01a6c2ec-8e8f-4bd1-bb81-7468b52febee%28test.in.expr.os.contracts%40tests%29%2F3914984864476306445")).withAffectedMemberNames(new HashSet<String>(Arrays.<String>asList()));
+      GlobalContext.MESSAGE_LOG.get().collect(message);
+      throw new ContractViolatedException(message);
+    }
+    if (!(AH.isGreater(it, new BigInteger("10")))) {
+      final Message message = new Message(BuiltinMessageKinds.error(), ContractViolatedException.CONSTRAINT_FAILED + ": " + "it > 10").withLocation(new ProgramLocation("r:01a6c2ec-8e8f-4bd1-bb81-7468b52febee(test.in.expr.os.contracts@tests)/3914984864476969452", "http://127.0.0.1:63320/node?ref=r%3A01a6c2ec-8e8f-4bd1-bb81-7468b52febee%28test.in.expr.os.contracts%40tests%29%2F3914984864476969452")).withAffectedMemberNames(new HashSet<String>(Arrays.<String>asList()));
+      GlobalContext.MESSAGE_LOG.get().collect(message);
+      throw new ContractViolatedException(message);
     }
     Number res = newValue;
 
@@ -698,24 +674,20 @@ public class Generated_contracts_Test {
   public void testInvariant_item1_1988438614040143157() throws Throwable {
     Assert.assertTrue("Expected: " + new BigInteger("12") + ", but was: " + ((Supplier<Number>) () -> {
       Number newValue = AH.mul(new BigInteger("2"), new BigInteger("6"));
-      {
-        Number it = newValue;
-        if (!(AH.isGreater(it, new BigInteger("10")))) {
-          final Message message = new Message(BuiltinMessageKinds.error(), ContractViolatedException.CONSTRAINT_FAILED + ": " + "it > 10").withLocation(new ProgramLocation("r:01a6c2ec-8e8f-4bd1-bb81-7468b52febee(test.in.expr.os.contracts@tests)/1988438614040156729", "http://127.0.0.1:63320/node?ref=r%3A01a6c2ec-8e8f-4bd1-bb81-7468b52febee%28test.in.expr.os.contracts%40tests%29%2F1988438614040156729")).withAffectedMemberNames(new HashSet<String>(Arrays.<String>asList()));
-          GlobalContext.MESSAGE_LOG.get().collect(message);
-          throw new ContractViolatedException(message);
-        }
+      Number it = newValue;
+      if (!(AH.isGreater(it, new BigInteger("10")))) {
+        final Message message = new Message(BuiltinMessageKinds.error(), ContractViolatedException.CONSTRAINT_FAILED + ": " + "it > 10").withLocation(new ProgramLocation("r:01a6c2ec-8e8f-4bd1-bb81-7468b52febee(test.in.expr.os.contracts@tests)/1988438614040156729", "http://127.0.0.1:63320/node?ref=r%3A01a6c2ec-8e8f-4bd1-bb81-7468b52febee%28test.in.expr.os.contracts%40tests%29%2F1988438614040156729")).withAffectedMemberNames(new HashSet<String>(Arrays.<String>asList()));
+        GlobalContext.MESSAGE_LOG.get().collect(message);
+        throw new ContractViolatedException(message);
       }
       return newValue;
     }).get(), EqualsTestOp.matches(new BigInteger("12"), ((Supplier<Number>) () -> {
       Number newValue = AH.mul(new BigInteger("2"), new BigInteger("6"));
-      {
-        Number it = newValue;
-        if (!(AH.isGreater(it, new BigInteger("10")))) {
-          final Message message = new Message(BuiltinMessageKinds.error(), ContractViolatedException.CONSTRAINT_FAILED + ": " + "it > 10").withLocation(new ProgramLocation("r:01a6c2ec-8e8f-4bd1-bb81-7468b52febee(test.in.expr.os.contracts@tests)/1988438614040156729", "http://127.0.0.1:63320/node?ref=r%3A01a6c2ec-8e8f-4bd1-bb81-7468b52febee%28test.in.expr.os.contracts%40tests%29%2F1988438614040156729")).withAffectedMemberNames(new HashSet<String>(Arrays.<String>asList()));
-          GlobalContext.MESSAGE_LOG.get().collect(message);
-          throw new ContractViolatedException(message);
-        }
+      Number it = newValue;
+      if (!(AH.isGreater(it, new BigInteger("10")))) {
+        final Message message = new Message(BuiltinMessageKinds.error(), ContractViolatedException.CONSTRAINT_FAILED + ": " + "it > 10").withLocation(new ProgramLocation("r:01a6c2ec-8e8f-4bd1-bb81-7468b52febee(test.in.expr.os.contracts@tests)/1988438614040156729", "http://127.0.0.1:63320/node?ref=r%3A01a6c2ec-8e8f-4bd1-bb81-7468b52febee%28test.in.expr.os.contracts%40tests%29%2F1988438614040156729")).withAffectedMemberNames(new HashSet<String>(Arrays.<String>asList()));
+        GlobalContext.MESSAGE_LOG.get().collect(message);
+        throw new ContractViolatedException(message);
       }
       return newValue;
     }).get()));
@@ -736,13 +708,11 @@ public class Generated_contracts_Test {
     try {
       if (((Supplier<Number>) () -> {
         Number newValue = AH.mul(new BigInteger("2"), new BigInteger("5"));
-        {
-          Number it = newValue;
-          if (!(AH.isGreater(it, new BigInteger("10")))) {
-            final Message message = new Message(BuiltinMessageKinds.error(), ContractViolatedException.CONSTRAINT_FAILED + ": " + "it > 10").withLocation(new ProgramLocation("r:01a6c2ec-8e8f-4bd1-bb81-7468b52febee(test.in.expr.os.contracts@tests)/1988438614040245420", "http://127.0.0.1:63320/node?ref=r%3A01a6c2ec-8e8f-4bd1-bb81-7468b52febee%28test.in.expr.os.contracts%40tests%29%2F1988438614040245420")).withAffectedMemberNames(new HashSet<String>(Arrays.<String>asList()));
-            GlobalContext.MESSAGE_LOG.get().collect(message);
-            throw new ContractViolatedException(message);
-          }
+        Number it = newValue;
+        if (!(AH.isGreater(it, new BigInteger("10")))) {
+          final Message message = new Message(BuiltinMessageKinds.error(), ContractViolatedException.CONSTRAINT_FAILED + ": " + "it > 10").withLocation(new ProgramLocation("r:01a6c2ec-8e8f-4bd1-bb81-7468b52febee(test.in.expr.os.contracts@tests)/1988438614040245420", "http://127.0.0.1:63320/node?ref=r%3A01a6c2ec-8e8f-4bd1-bb81-7468b52febee%28test.in.expr.os.contracts%40tests%29%2F1988438614040245420")).withAffectedMemberNames(new HashSet<String>(Arrays.<String>asList()));
+          GlobalContext.MESSAGE_LOG.get().collect(message);
+          throw new ContractViolatedException(message);
         }
         return newValue;
       }).get() == null) {
@@ -825,13 +795,11 @@ public class Generated_contracts_Test {
     }
 
     public void evaluateContracts() {
-      {
-        Pair it = Pair.this;
-        if (!(AH.isGreater(it.geta(), it.getb()))) {
-          final Message message = new Message(BuiltinMessageKinds.error(), ContractViolatedException.CONSTRAINT_FAILED + ": " + "a > b").withLocation(new ProgramLocation("r:01a6c2ec-8e8f-4bd1-bb81-7468b52febee(test.in.expr.os.contracts@tests)/1249392911697978216", "http://127.0.0.1:63320/node?ref=r%3A01a6c2ec-8e8f-4bd1-bb81-7468b52febee%28test.in.expr.os.contracts%40tests%29%2F1249392911697978216")).withAffectedMemberNames(new HashSet<String>(Arrays.<String>asList("test.in.expr.os.contracts.Pair.b", "test.in.expr.os.contracts.Pair.a")));
-          GlobalContext.MESSAGE_LOG.get().collect(message);
-          throw new ContractViolatedException(message);
-        }
+      Pair it = Pair.this;
+      if (!(AH.isGreater(it.geta(), it.getb()))) {
+        final Message message = new Message(BuiltinMessageKinds.error(), ContractViolatedException.CONSTRAINT_FAILED + ": " + "a > b").withLocation(new ProgramLocation("r:01a6c2ec-8e8f-4bd1-bb81-7468b52febee(test.in.expr.os.contracts@tests)/1249392911697978216", "http://127.0.0.1:63320/node?ref=r%3A01a6c2ec-8e8f-4bd1-bb81-7468b52febee%28test.in.expr.os.contracts%40tests%29%2F1249392911697978216")).withAffectedMemberNames(new HashSet<String>(Arrays.<String>asList("test.in.expr.os.contracts.Pair.b", "test.in.expr.os.contracts.Pair.a")));
+        GlobalContext.MESSAGE_LOG.get().collect(message);
+        throw new ContractViolatedException(message);
       }
     }
 
@@ -1063,26 +1031,24 @@ public class Generated_contracts_Test {
         return b;
       }).get();
     }).apply(new ParameterSetWrapper(o))).collect(Collectors.<Person>toList()));
-    {
-      if (!(new _FunctionTypes._return_P0_E0<Boolean>() {
-        public Boolean invoke() {
-          PCollection<Person> brothers = TreePVector.<Person>from(p.getsiblings().stream().filter((Person o) -> ((Function<ParameterSetWrapper, Boolean>) (ParameterSetWrapper param) -> {
-            Person it = (Person) param.parameters.get(0);
-            return ((Supplier<Boolean>) () -> {
-              Boolean b = it.getgender() == Gender.male;
-              if (it.getgender() == null) {
-                return null;
-              }
-              return b;
-            }).get();
-          }).apply(new ParameterSetWrapper(o))).collect(Collectors.<Person>toList()));
-          return true;
-        }
-      }.invoke())) {
-        final Message message = new Message(BuiltinMessageKinds.error(), ContractViolatedException.PRE_FAILED + ": " + "{\n  val brothers = p.siblings.where(|it.gender.is(male)|)\n  true\n}\n").withLocation(new ProgramLocation("r:01a6c2ec-8e8f-4bd1-bb81-7468b52febee(test.in.expr.os.contracts@tests)/6095949300274625235", "http://127.0.0.1:63320/node?ref=r%3A01a6c2ec-8e8f-4bd1-bb81-7468b52febee%28test.in.expr.os.contracts%40tests%29%2F6095949300274625235")).withAffectedMemberNames(new HashSet<String>(Arrays.<String>asList("test.in.expr.os.contracts.Person.gender", "test.in.expr.os.contracts.Person.siblings")));
-        GlobalContext.MESSAGE_LOG.get().collect(message);
-        throw new ContractViolatedException(message);
+    if (!(new _FunctionTypes._return_P0_E0<Boolean>() {
+      public Boolean invoke() {
+        PCollection<Person> brothers = TreePVector.<Person>from(p.getsiblings().stream().filter((Person o) -> ((Function<ParameterSetWrapper, Boolean>) (ParameterSetWrapper param) -> {
+          Person it = (Person) param.parameters.get(0);
+          return ((Supplier<Boolean>) () -> {
+            Boolean b = it.getgender() == Gender.male;
+            if (it.getgender() == null) {
+              return null;
+            }
+            return b;
+          }).get();
+        }).apply(new ParameterSetWrapper(o))).collect(Collectors.<Person>toList()));
+        return true;
       }
+    }.invoke())) {
+      final Message message = new Message(BuiltinMessageKinds.error(), ContractViolatedException.PRE_FAILED + ": " + "{\n  val brothers = p.siblings.where(|it.gender.is(male)|)\n  true\n}\n").withLocation(new ProgramLocation("r:01a6c2ec-8e8f-4bd1-bb81-7468b52febee(test.in.expr.os.contracts@tests)/6095949300274625235", "http://127.0.0.1:63320/node?ref=r%3A01a6c2ec-8e8f-4bd1-bb81-7468b52febee%28test.in.expr.os.contracts%40tests%29%2F6095949300274625235")).withAffectedMemberNames(new HashSet<String>(Arrays.<String>asList("test.in.expr.os.contracts.Person.gender", "test.in.expr.os.contracts.Person.siblings")));
+      GlobalContext.MESSAGE_LOG.get().collect(message);
+      throw new ContractViolatedException(message);
     }
     PVector<InlineRecordType> result = TreePVector.empty();
     for (Person it : CollectionSequence.fromCollection(brothers)) {
@@ -1106,26 +1072,24 @@ public class Generated_contracts_Test {
         return b;
       }).get();
     }).apply(new ParameterSetWrapper(o))).collect(Collectors.<Person>toList()));
-    {
-      if (!(new _FunctionTypes._return_P0_E0<Boolean>() {
-        public Boolean invoke() {
-          PCollection<Person> brothers = TreePVector.<Person>from(p.getsiblings().stream().filter((Person o) -> ((Function<ParameterSetWrapper, Boolean>) (ParameterSetWrapper param) -> {
-            Person it = (Person) param.parameters.get(0);
-            return ((Supplier<Boolean>) () -> {
-              Boolean b = it.getgender() == Gender.male;
-              if (it.getgender() == null) {
-                return null;
-              }
-              return b;
-            }).get();
-          }).apply(new ParameterSetWrapper(o))).collect(Collectors.<Person>toList()));
-          return true;
-        }
-      }.invoke())) {
-        final Message message = new Message(BuiltinMessageKinds.error(), ContractViolatedException.PRE_FAILED + ": " + "{\n  val brothers = p.siblings.where(|it.gender.is(male)|)\n  true\n}\n").withLocation(new ProgramLocation("r:01a6c2ec-8e8f-4bd1-bb81-7468b52febee(test.in.expr.os.contracts@tests)/6095949300274625268", "http://127.0.0.1:63320/node?ref=r%3A01a6c2ec-8e8f-4bd1-bb81-7468b52febee%28test.in.expr.os.contracts%40tests%29%2F6095949300274625268")).withAffectedMemberNames(new HashSet<String>(Arrays.<String>asList("test.in.expr.os.contracts.Person.gender", "test.in.expr.os.contracts.Person.siblings")));
-        GlobalContext.MESSAGE_LOG.get().collect(message);
-        throw new ContractViolatedException(message);
+    if (!(new _FunctionTypes._return_P0_E0<Boolean>() {
+      public Boolean invoke() {
+        PCollection<Person> brothers = TreePVector.<Person>from(p.getsiblings().stream().filter((Person o) -> ((Function<ParameterSetWrapper, Boolean>) (ParameterSetWrapper param) -> {
+          Person it = (Person) param.parameters.get(0);
+          return ((Supplier<Boolean>) () -> {
+            Boolean b = it.getgender() == Gender.male;
+            if (it.getgender() == null) {
+              return null;
+            }
+            return b;
+          }).get();
+        }).apply(new ParameterSetWrapper(o))).collect(Collectors.<Person>toList()));
+        return true;
       }
+    }.invoke())) {
+      final Message message = new Message(BuiltinMessageKinds.error(), ContractViolatedException.PRE_FAILED + ": " + "{\n  val brothers = p.siblings.where(|it.gender.is(male)|)\n  true\n}\n").withLocation(new ProgramLocation("r:01a6c2ec-8e8f-4bd1-bb81-7468b52febee(test.in.expr.os.contracts@tests)/6095949300274625268", "http://127.0.0.1:63320/node?ref=r%3A01a6c2ec-8e8f-4bd1-bb81-7468b52febee%28test.in.expr.os.contracts%40tests%29%2F6095949300274625268")).withAffectedMemberNames(new HashSet<String>(Arrays.<String>asList("test.in.expr.os.contracts.Person.gender", "test.in.expr.os.contracts.Person.siblings")));
+      GlobalContext.MESSAGE_LOG.get().collect(message);
+      throw new ContractViolatedException(message);
     }
     PVector<InlineRecordType> result = TreePVector.empty();
     for (Person it : CollectionSequence.fromCollection(brothers)) {
@@ -1149,26 +1113,24 @@ public class Generated_contracts_Test {
         return b;
       }).get();
     }).apply(new ParameterSetWrapper(o))).collect(Collectors.<Person>toList()));
-    {
-      if (!(new _FunctionTypes._return_P0_E0<Boolean>() {
-        public Boolean invoke() {
-          PCollection<Person> brothers = TreePVector.<Person>from(p.getsiblings().stream().filter((Person o) -> ((Function<ParameterSetWrapper, Boolean>) (ParameterSetWrapper param) -> {
-            Person it = (Person) param.parameters.get(0);
-            return ((Supplier<Boolean>) () -> {
-              Boolean b = it.getgender() == Gender.male;
-              if (it.getgender() == null) {
-                return null;
-              }
-              return b;
-            }).get();
-          }).apply(new ParameterSetWrapper(o))).collect(Collectors.<Person>toList()));
-          return !(brothers.isEmpty());
-        }
-      }.invoke())) {
-        final Message message = new Message(BuiltinMessageKinds.error(), ContractViolatedException.PRE_FAILED + ": " + "{\n  val brothers = p.siblings.where(|it.gender.is(male)|)\n  brothers.isNotEmpty\n}\n").withLocation(new ProgramLocation("r:01a6c2ec-8e8f-4bd1-bb81-7468b52febee(test.in.expr.os.contracts@tests)/6095949300275804617", "http://127.0.0.1:63320/node?ref=r%3A01a6c2ec-8e8f-4bd1-bb81-7468b52febee%28test.in.expr.os.contracts%40tests%29%2F6095949300275804617")).withAffectedMemberNames(new HashSet<String>(Arrays.<String>asList("test.in.expr.os.contracts.Person.gender", "test.in.expr.os.contracts.Person.siblings")));
-        GlobalContext.MESSAGE_LOG.get().collect(message);
-        throw new ContractViolatedException(message);
+    if (!(new _FunctionTypes._return_P0_E0<Boolean>() {
+      public Boolean invoke() {
+        PCollection<Person> brothers = TreePVector.<Person>from(p.getsiblings().stream().filter((Person o) -> ((Function<ParameterSetWrapper, Boolean>) (ParameterSetWrapper param) -> {
+          Person it = (Person) param.parameters.get(0);
+          return ((Supplier<Boolean>) () -> {
+            Boolean b = it.getgender() == Gender.male;
+            if (it.getgender() == null) {
+              return null;
+            }
+            return b;
+          }).get();
+        }).apply(new ParameterSetWrapper(o))).collect(Collectors.<Person>toList()));
+        return !(brothers.isEmpty());
       }
+    }.invoke())) {
+      final Message message = new Message(BuiltinMessageKinds.error(), ContractViolatedException.PRE_FAILED + ": " + "{\n  val brothers = p.siblings.where(|it.gender.is(male)|)\n  brothers.isNotEmpty\n}\n").withLocation(new ProgramLocation("r:01a6c2ec-8e8f-4bd1-bb81-7468b52febee(test.in.expr.os.contracts@tests)/6095949300275804617", "http://127.0.0.1:63320/node?ref=r%3A01a6c2ec-8e8f-4bd1-bb81-7468b52febee%28test.in.expr.os.contracts%40tests%29%2F6095949300275804617")).withAffectedMemberNames(new HashSet<String>(Arrays.<String>asList("test.in.expr.os.contracts.Person.gender", "test.in.expr.os.contracts.Person.siblings")));
+      GlobalContext.MESSAGE_LOG.get().collect(message);
+      throw new ContractViolatedException(message);
     }
     PVector<InlineRecordType> result = TreePVector.empty();
     for (Person it : CollectionSequence.fromCollection(brothers)) {
@@ -1192,26 +1154,24 @@ public class Generated_contracts_Test {
         return b;
       }).get();
     }).apply(new ParameterSetWrapper(o))).collect(Collectors.<Person>toList()));
-    {
-      if (!(new _FunctionTypes._return_P0_E0<Boolean>() {
-        public Boolean invoke() {
-          PCollection<Person> brothers = TreePVector.<Person>from(p.getsiblings().stream().filter((Person o) -> ((Function<ParameterSetWrapper, Boolean>) (ParameterSetWrapper param) -> {
-            Person it = (Person) param.parameters.get(0);
-            return ((Supplier<Boolean>) () -> {
-              Boolean b = it.getgender() == Gender.male;
-              if (it.getgender() == null) {
-                return null;
-              }
-              return b;
-            }).get();
-          }).apply(new ParameterSetWrapper(o))).collect(Collectors.<Person>toList()));
-          return true;
-        }
-      }.invoke())) {
-        final Message message = new Message(BuiltinMessageKinds.error(), ContractViolatedException.PRE_FAILED + ": " + "{\n  val brothers = p.siblings.where(|it.gender.is(male)|)\n  true\n}\n").withLocation(new ProgramLocation("r:01a6c2ec-8e8f-4bd1-bb81-7468b52febee(test.in.expr.os.contracts@tests)/6095949300274625301", "http://127.0.0.1:63320/node?ref=r%3A01a6c2ec-8e8f-4bd1-bb81-7468b52febee%28test.in.expr.os.contracts%40tests%29%2F6095949300274625301")).withAffectedMemberNames(new HashSet<String>(Arrays.<String>asList("test.in.expr.os.contracts.Person.gender", "test.in.expr.os.contracts.Person.siblings")));
-        GlobalContext.MESSAGE_LOG.get().collect(message);
-        throw new ContractViolatedException(message);
+    if (!(new _FunctionTypes._return_P0_E0<Boolean>() {
+      public Boolean invoke() {
+        PCollection<Person> brothers = TreePVector.<Person>from(p.getsiblings().stream().filter((Person o) -> ((Function<ParameterSetWrapper, Boolean>) (ParameterSetWrapper param) -> {
+          Person it = (Person) param.parameters.get(0);
+          return ((Supplier<Boolean>) () -> {
+            Boolean b = it.getgender() == Gender.male;
+            if (it.getgender() == null) {
+              return null;
+            }
+            return b;
+          }).get();
+        }).apply(new ParameterSetWrapper(o))).collect(Collectors.<Person>toList()));
+        return true;
       }
+    }.invoke())) {
+      final Message message = new Message(BuiltinMessageKinds.error(), ContractViolatedException.PRE_FAILED + ": " + "{\n  val brothers = p.siblings.where(|it.gender.is(male)|)\n  true\n}\n").withLocation(new ProgramLocation("r:01a6c2ec-8e8f-4bd1-bb81-7468b52febee(test.in.expr.os.contracts@tests)/6095949300274625301", "http://127.0.0.1:63320/node?ref=r%3A01a6c2ec-8e8f-4bd1-bb81-7468b52febee%28test.in.expr.os.contracts%40tests%29%2F6095949300274625301")).withAffectedMemberNames(new HashSet<String>(Arrays.<String>asList("test.in.expr.os.contracts.Person.gender", "test.in.expr.os.contracts.Person.siblings")));
+      GlobalContext.MESSAGE_LOG.get().collect(message);
+      throw new ContractViolatedException(message);
     }
     PVector<InlineRecordType> result = TreePVector.empty();
     for (Person it : CollectionSequence.fromCollection(brothers)) {
@@ -1235,26 +1195,24 @@ public class Generated_contracts_Test {
         return b;
       }).get();
     }).apply(new ParameterSetWrapper(o))).collect(Collectors.<Person>toList()));
-    {
-      if (!(new _FunctionTypes._return_P0_E0<Boolean>() {
-        public Boolean invoke() {
-          PCollection<Person> brothers = TreePVector.<Person>from(p.getsiblings().stream().filter((Person o) -> ((Function<ParameterSetWrapper, Boolean>) (ParameterSetWrapper param) -> {
-            Person it = (Person) param.parameters.get(0);
-            return ((Supplier<Boolean>) () -> {
-              Boolean b = it.getgender() == Gender.male;
-              if (it.getgender() == null) {
-                return null;
-              }
-              return b;
-            }).get();
-          }).apply(new ParameterSetWrapper(o))).collect(Collectors.<Person>toList()));
-          return true;
-        }
-      }.invoke())) {
-        final Message message = new Message(BuiltinMessageKinds.error(), ContractViolatedException.PRE_FAILED + ": " + "{\n  val brothers = p.siblings.where(|it.gender.is(male)|)\n  true\n}\n").withLocation(new ProgramLocation("r:01a6c2ec-8e8f-4bd1-bb81-7468b52febee(test.in.expr.os.contracts@tests)/6095949300274625332", "http://127.0.0.1:63320/node?ref=r%3A01a6c2ec-8e8f-4bd1-bb81-7468b52febee%28test.in.expr.os.contracts%40tests%29%2F6095949300274625332")).withAffectedMemberNames(new HashSet<String>(Arrays.<String>asList("test.in.expr.os.contracts.Person.gender", "test.in.expr.os.contracts.Person.siblings")));
-        GlobalContext.MESSAGE_LOG.get().collect(message);
-        throw new ContractViolatedException(message);
+    if (!(new _FunctionTypes._return_P0_E0<Boolean>() {
+      public Boolean invoke() {
+        PCollection<Person> brothers = TreePVector.<Person>from(p.getsiblings().stream().filter((Person o) -> ((Function<ParameterSetWrapper, Boolean>) (ParameterSetWrapper param) -> {
+          Person it = (Person) param.parameters.get(0);
+          return ((Supplier<Boolean>) () -> {
+            Boolean b = it.getgender() == Gender.male;
+            if (it.getgender() == null) {
+              return null;
+            }
+            return b;
+          }).get();
+        }).apply(new ParameterSetWrapper(o))).collect(Collectors.<Person>toList()));
+        return true;
       }
+    }.invoke())) {
+      final Message message = new Message(BuiltinMessageKinds.error(), ContractViolatedException.PRE_FAILED + ": " + "{\n  val brothers = p.siblings.where(|it.gender.is(male)|)\n  true\n}\n").withLocation(new ProgramLocation("r:01a6c2ec-8e8f-4bd1-bb81-7468b52febee(test.in.expr.os.contracts@tests)/6095949300274625332", "http://127.0.0.1:63320/node?ref=r%3A01a6c2ec-8e8f-4bd1-bb81-7468b52febee%28test.in.expr.os.contracts%40tests%29%2F6095949300274625332")).withAffectedMemberNames(new HashSet<String>(Arrays.<String>asList("test.in.expr.os.contracts.Person.gender", "test.in.expr.os.contracts.Person.siblings")));
+      GlobalContext.MESSAGE_LOG.get().collect(message);
+      throw new ContractViolatedException(message);
     }
     PVector<InlineRecordType> result = TreePVector.empty();
     for (Person it : CollectionSequence.fromCollection(brothers)) {
@@ -1278,26 +1236,24 @@ public class Generated_contracts_Test {
         return b;
       }).get();
     }).apply(new ParameterSetWrapper(o))).collect(Collectors.<Person>toList()));
-    {
-      if (!(new _FunctionTypes._return_P0_E0<Boolean>() {
-        public Boolean invoke() {
-          PCollection<Person> brothers = TreePVector.<Person>from(p.getsiblings().stream().filter((Person o) -> ((Function<ParameterSetWrapper, Boolean>) (ParameterSetWrapper param) -> {
-            Person it = (Person) param.parameters.get(0);
-            return ((Supplier<Boolean>) () -> {
-              Boolean b = it.getgender() == Gender.male;
-              if (it.getgender() == null) {
-                return null;
-              }
-              return b;
-            }).get();
-          }).apply(new ParameterSetWrapper(o))).collect(Collectors.<Person>toList()));
-          return true;
-        }
-      }.invoke())) {
-        final Message message = new Message(BuiltinMessageKinds.error(), ContractViolatedException.PRE_FAILED + ": " + "{\n  val brothers = p.siblings.where(|it.gender.is(male)|)\n  true\n}\n").withLocation(new ProgramLocation("r:01a6c2ec-8e8f-4bd1-bb81-7468b52febee(test.in.expr.os.contracts@tests)/6095949300274625362", "http://127.0.0.1:63320/node?ref=r%3A01a6c2ec-8e8f-4bd1-bb81-7468b52febee%28test.in.expr.os.contracts%40tests%29%2F6095949300274625362")).withAffectedMemberNames(new HashSet<String>(Arrays.<String>asList("test.in.expr.os.contracts.Person.gender", "test.in.expr.os.contracts.Person.siblings")));
-        GlobalContext.MESSAGE_LOG.get().collect(message);
-        throw new ContractViolatedException(message);
+    if (!(new _FunctionTypes._return_P0_E0<Boolean>() {
+      public Boolean invoke() {
+        PCollection<Person> brothers = TreePVector.<Person>from(p.getsiblings().stream().filter((Person o) -> ((Function<ParameterSetWrapper, Boolean>) (ParameterSetWrapper param) -> {
+          Person it = (Person) param.parameters.get(0);
+          return ((Supplier<Boolean>) () -> {
+            Boolean b = it.getgender() == Gender.male;
+            if (it.getgender() == null) {
+              return null;
+            }
+            return b;
+          }).get();
+        }).apply(new ParameterSetWrapper(o))).collect(Collectors.<Person>toList()));
+        return true;
       }
+    }.invoke())) {
+      final Message message = new Message(BuiltinMessageKinds.error(), ContractViolatedException.PRE_FAILED + ": " + "{\n  val brothers = p.siblings.where(|it.gender.is(male)|)\n  true\n}\n").withLocation(new ProgramLocation("r:01a6c2ec-8e8f-4bd1-bb81-7468b52febee(test.in.expr.os.contracts@tests)/6095949300274625362", "http://127.0.0.1:63320/node?ref=r%3A01a6c2ec-8e8f-4bd1-bb81-7468b52febee%28test.in.expr.os.contracts%40tests%29%2F6095949300274625362")).withAffectedMemberNames(new HashSet<String>(Arrays.<String>asList("test.in.expr.os.contracts.Person.gender", "test.in.expr.os.contracts.Person.siblings")));
+      GlobalContext.MESSAGE_LOG.get().collect(message);
+      throw new ContractViolatedException(message);
     }
     PVector<InlineRecordType> result = TreePVector.empty();
     for (Person it : CollectionSequence.fromCollection(brothers)) {

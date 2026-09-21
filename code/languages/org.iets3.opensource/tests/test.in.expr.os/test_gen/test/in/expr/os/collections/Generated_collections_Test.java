@@ -154,13 +154,11 @@ public class Generated_collections_Test {
     try {
       if (((Supplier<PVector<Number>>) () -> {
         PVector<Number> newValue = Generated_collections_Test.l_.plus(new BigInteger("1")).plus(new BigInteger("2")).plus(new BigInteger("3")).plus(new BigInteger("4"));
-        {
-          PVector<Number> it = newValue;
-          if (!(AH.inRange(BigInteger.valueOf(it.size()), new BigInteger("0"), false, new BigInteger("3"), false))) {
-            final Message message = new Message(BuiltinMessageKinds.error(), ContractViolatedException.CONSTRAINT_FAILED + ": " + "it.size.range[0..3]").withLocation(new ProgramLocation("r:2309ed17-e7b4-45b5-b25e-2c0f3ea87e8b(test.in.expr.os.collections@tests)/7135291922107336391", "http://127.0.0.1:63320/node?ref=r%3A2309ed17-e7b4-45b5-b25e-2c0f3ea87e8b%28test.in.expr.os.collections%40tests%29%2F7135291922107336391")).withAffectedMemberNames(new HashSet<String>(Arrays.<String>asList()));
-            GlobalContext.MESSAGE_LOG.get().collect(message);
-            throw new ContractViolatedException(message);
-          }
+        PVector<Number> it = newValue;
+        if (!(AH.inRange(BigInteger.valueOf(it.size()), new BigInteger("0"), false, new BigInteger("3"), false))) {
+          final Message message = new Message(BuiltinMessageKinds.error(), ContractViolatedException.CONSTRAINT_FAILED + ": " + "it.size.range[0..3]").withLocation(new ProgramLocation("r:2309ed17-e7b4-45b5-b25e-2c0f3ea87e8b(test.in.expr.os.collections@tests)/7135291922107336391", "http://127.0.0.1:63320/node?ref=r%3A2309ed17-e7b4-45b5-b25e-2c0f3ea87e8b%28test.in.expr.os.collections%40tests%29%2F7135291922107336391")).withAffectedMemberNames(new HashSet<String>(Arrays.<String>asList()));
+          GlobalContext.MESSAGE_LOG.get().collect(message);
+          throw new ContractViolatedException(message);
         }
         return newValue;
       }).get() == null) {
@@ -176,13 +174,11 @@ public class Generated_collections_Test {
     try {
       if (((Supplier<PVector<Number>>) () -> {
         PVector<Number> newValue = Generated_collections_Test.l_.plus(new BigInteger("1")).plus(new BigInteger("2")).plus(new BigInteger("3")).plus(new BigInteger("4"));
-        {
-          PVector<Number> it = newValue;
-          if (!(AH.inRange(BigInteger.valueOf(it.size()), new BigInteger("0"), false, new BigInteger("3"), false))) {
-            final Message message = new Message(BuiltinMessageKinds.error(), ContractViolatedException.CONSTRAINT_FAILED + ": " + "it.size.range[0..3]").withLocation(new ProgramLocation("r:2309ed17-e7b4-45b5-b25e-2c0f3ea87e8b(test.in.expr.os.collections@tests)/7135291922107336391", "http://127.0.0.1:63320/node?ref=r%3A2309ed17-e7b4-45b5-b25e-2c0f3ea87e8b%28test.in.expr.os.collections%40tests%29%2F7135291922107336391")).withAffectedMemberNames(new HashSet<String>(Arrays.<String>asList()));
-            GlobalContext.MESSAGE_LOG.get().collect(message);
-            throw new ContractViolatedException(message);
-          }
+        PVector<Number> it = newValue;
+        if (!(AH.inRange(BigInteger.valueOf(it.size()), new BigInteger("0"), false, new BigInteger("3"), false))) {
+          final Message message = new Message(BuiltinMessageKinds.error(), ContractViolatedException.CONSTRAINT_FAILED + ": " + "it.size.range[0..3]").withLocation(new ProgramLocation("r:2309ed17-e7b4-45b5-b25e-2c0f3ea87e8b(test.in.expr.os.collections@tests)/7135291922107336391", "http://127.0.0.1:63320/node?ref=r%3A2309ed17-e7b4-45b5-b25e-2c0f3ea87e8b%28test.in.expr.os.collections%40tests%29%2F7135291922107336391")).withAffectedMemberNames(new HashSet<String>(Arrays.<String>asList()));
+          GlobalContext.MESSAGE_LOG.get().collect(message);
+          throw new ContractViolatedException(message);
         }
         return newValue;
       }).get() == null) {
@@ -4111,7 +4107,7 @@ public class Generated_collections_Test {
    */
     @Test
   public void collectionListConstant_item20_5396945261022634781() throws Throwable {
-    Assert.assertEquals("Expected: " + Generated_collections_Test.l4_ + ", but was: " + ((Supplier<PVector<item>>) () -> {
+    Assert.assertEquals("Expected: " + Generated_collections_Test.l4_ + ", but was: " + (((_FunctionTypes._return_P0_E0<PVector<item>>) () -> {
       PVector<item> rev = Empty.vector();
       for (int i = new _FunctionTypes._return_P0_E0<PVector<item>>() {
         public PVector<item> invoke() {
@@ -4133,7 +4129,7 @@ public class Generated_collections_Test {
         }.invoke().get(i));
       }
       return rev;
-    }).get(), Generated_collections_Test.l4_, ((Supplier<PVector<item>>) () -> {
+    }).invoke()), Generated_collections_Test.l4_, (Object) ((_FunctionTypes._return_P0_E0<PVector<item>>) () -> {
       PVector<item> rev = Empty.vector();
       for (int i = new _FunctionTypes._return_P0_E0<PVector<item>>() {
         public PVector<item> invoke() {
@@ -4155,7 +4151,7 @@ public class Generated_collections_Test {
         }.invoke().get(i));
       }
       return rev;
-    }).get());
+    }).invoke());
   }
 /* 
    * foreach is still missing, as well as insert and remove
@@ -6485,7 +6481,7 @@ public class Generated_collections_Test {
   }
   @Test
   public void firstNLastN_item2_860225163416645782() throws Throwable {
-    Assert.assertEquals("Expected: " + TreePVector.<Number>empty().plus(new BigInteger("300")).plus(new BigInteger("400")) + ", but was: " + ((Supplier<PVector<Number>>) () -> {
+    Assert.assertEquals("Expected: " + TreePVector.<Number>empty().plus(new BigInteger("300")).plus(new BigInteger("400")) + ", but was: " + (((_FunctionTypes._return_P0_E0<PVector<Number>>) () -> {
       PVector<Number> origList = new _FunctionTypes._return_P0_E0<PVector<Number>>() {
         public PVector<Number> invoke() {
           PVector<Number> origList = Generated_collections_Test.zahlen_;
@@ -6501,7 +6497,7 @@ public class Generated_collections_Test {
         return origList;
       }
       return origList.subList(origList.size() - noOfElements, origList.size());
-    }).get(), TreePVector.<Number>empty().plus(new BigInteger("300")).plus(new BigInteger("400")), ((Supplier<PVector<Number>>) () -> {
+    }).invoke()), TreePVector.<Number>empty().plus(new BigInteger("300")).plus(new BigInteger("400")), (Object) ((_FunctionTypes._return_P0_E0<PVector<Number>>) () -> {
       PVector<Number> origList = new _FunctionTypes._return_P0_E0<PVector<Number>>() {
         public PVector<Number> invoke() {
           PVector<Number> origList = Generated_collections_Test.zahlen_;
@@ -6517,7 +6513,7 @@ public class Generated_collections_Test {
         return origList;
       }
       return origList.subList(origList.size() - noOfElements, origList.size());
-    }).get());
+    }).invoke());
   }
   public static final PVector<String> woerter_ = TreePVector.<String>empty().plus("eins").plus("zwei").plus("drei");
   public static class Punkt implements Comparable<Punkt> {

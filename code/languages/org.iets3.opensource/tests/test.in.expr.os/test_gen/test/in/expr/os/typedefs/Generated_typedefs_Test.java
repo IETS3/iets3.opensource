@@ -39,18 +39,16 @@ public class Generated_typedefs_Test {
     }
     Number res = ((Supplier<Number>) () -> {
       Number result = arg;
-      {
-        Number it = result;
-        if (!(AH.isLess(it, new BigInteger("120")))) {
-          final Message message = new Message(BuiltinMessageKinds.error(), ContractViolatedException.CONSTRAINT_FAILED + ": " + "it < 120").withLocation(new ProgramLocation("r:7d3e9570-276c-4dee-986d-52b72d41755a(test.in.expr.os.typedefs@tests)/2396718651921061475", "http://127.0.0.1:63320/node?ref=r%3A7d3e9570-276c-4dee-986d-52b72d41755a%28test.in.expr.os.typedefs%40tests%29%2F2396718651921061475")).withAffectedMemberNames(new HashSet<String>(Arrays.<String>asList()));
-          GlobalContext.MESSAGE_LOG.get().collect(message);
-          throw new ContractViolatedException(message);
-        }
-        if (!(!(AH.isLess(it, new BigInteger("0"))))) {
-          final Message message = new Message(BuiltinMessageKinds.error(), ContractViolatedException.CONSTRAINT_FAILED + ": " + "it >= 0").withLocation(new ProgramLocation("r:7d3e9570-276c-4dee-986d-52b72d41755a(test.in.expr.os.typedefs@tests)/2396718651920987243", "http://127.0.0.1:63320/node?ref=r%3A7d3e9570-276c-4dee-986d-52b72d41755a%28test.in.expr.os.typedefs%40tests%29%2F2396718651920987243")).withAffectedMemberNames(new HashSet<String>(Arrays.<String>asList()));
-          GlobalContext.MESSAGE_LOG.get().collect(message);
-          throw new ContractViolatedException(message);
-        }
+      Number it = result;
+      if (!(AH.isLess(it, new BigInteger("120")))) {
+        final Message message = new Message(BuiltinMessageKinds.error(), ContractViolatedException.CONSTRAINT_FAILED + ": " + "it < 120").withLocation(new ProgramLocation("r:7d3e9570-276c-4dee-986d-52b72d41755a(test.in.expr.os.typedefs@tests)/2396718651921061475", "http://127.0.0.1:63320/node?ref=r%3A7d3e9570-276c-4dee-986d-52b72d41755a%28test.in.expr.os.typedefs%40tests%29%2F2396718651921061475")).withAffectedMemberNames(new HashSet<String>(Arrays.<String>asList()));
+        GlobalContext.MESSAGE_LOG.get().collect(message);
+        throw new ContractViolatedException(message);
+      }
+      if (!(!(AH.isLess(it, new BigInteger("0"))))) {
+        final Message message = new Message(BuiltinMessageKinds.error(), ContractViolatedException.CONSTRAINT_FAILED + ": " + "it >= 0").withLocation(new ProgramLocation("r:7d3e9570-276c-4dee-986d-52b72d41755a(test.in.expr.os.typedefs@tests)/2396718651920987243", "http://127.0.0.1:63320/node?ref=r%3A7d3e9570-276c-4dee-986d-52b72d41755a%28test.in.expr.os.typedefs%40tests%29%2F2396718651920987243")).withAffectedMemberNames(new HashSet<String>(Arrays.<String>asList()));
+        GlobalContext.MESSAGE_LOG.get().collect(message);
+        throw new ContractViolatedException(message);
       }
       return result;
     }).get();
@@ -59,35 +57,31 @@ public class Generated_typedefs_Test {
   }
   public static Number g(Number arg) {
     Number res = arg;
-    {
-      Number it = res;
-      if (!(AH.isLess(it, new BigInteger("120")))) {
-        final Message message = new Message(BuiltinMessageKinds.error(), ContractViolatedException.CONSTRAINT_FAILED + ": " + "it < 120").withLocation(new ProgramLocation("r:7d3e9570-276c-4dee-986d-52b72d41755a(test.in.expr.os.typedefs@tests)/2396718651921061475", "http://127.0.0.1:63320/node?ref=r%3A7d3e9570-276c-4dee-986d-52b72d41755a%28test.in.expr.os.typedefs%40tests%29%2F2396718651921061475")).withAffectedMemberNames(new HashSet<String>(Arrays.<String>asList()));
-        GlobalContext.MESSAGE_LOG.get().collect(message);
-        throw new ContractViolatedException(message);
-      }
-      if (!(!(AH.isLess(it, new BigInteger("0"))))) {
-        final Message message = new Message(BuiltinMessageKinds.error(), ContractViolatedException.CONSTRAINT_FAILED + ": " + "it >= 0").withLocation(new ProgramLocation("r:7d3e9570-276c-4dee-986d-52b72d41755a(test.in.expr.os.typedefs@tests)/2396718651920987243", "http://127.0.0.1:63320/node?ref=r%3A7d3e9570-276c-4dee-986d-52b72d41755a%28test.in.expr.os.typedefs%40tests%29%2F2396718651920987243")).withAffectedMemberNames(new HashSet<String>(Arrays.<String>asList()));
-        GlobalContext.MESSAGE_LOG.get().collect(message);
-        throw new ContractViolatedException(message);
-      }
+    Number it = res;
+    if (!(AH.isLess(it, new BigInteger("120")))) {
+      final Message message = new Message(BuiltinMessageKinds.error(), ContractViolatedException.CONSTRAINT_FAILED + ": " + "it < 120").withLocation(new ProgramLocation("r:7d3e9570-276c-4dee-986d-52b72d41755a(test.in.expr.os.typedefs@tests)/2396718651921061475", "http://127.0.0.1:63320/node?ref=r%3A7d3e9570-276c-4dee-986d-52b72d41755a%28test.in.expr.os.typedefs%40tests%29%2F2396718651921061475")).withAffectedMemberNames(new HashSet<String>(Arrays.<String>asList()));
+      GlobalContext.MESSAGE_LOG.get().collect(message);
+      throw new ContractViolatedException(message);
+    }
+    if (!(!(AH.isLess(it, new BigInteger("0"))))) {
+      final Message message = new Message(BuiltinMessageKinds.error(), ContractViolatedException.CONSTRAINT_FAILED + ": " + "it >= 0").withLocation(new ProgramLocation("r:7d3e9570-276c-4dee-986d-52b72d41755a(test.in.expr.os.typedefs@tests)/2396718651920987243", "http://127.0.0.1:63320/node?ref=r%3A7d3e9570-276c-4dee-986d-52b72d41755a%28test.in.expr.os.typedefs%40tests%29%2F2396718651920987243")).withAffectedMemberNames(new HashSet<String>(Arrays.<String>asList()));
+      GlobalContext.MESSAGE_LOG.get().collect(message);
+      throw new ContractViolatedException(message);
     }
 
     return res;
   }
   public static Number h(Number age) {
-    {
-      Number it = age;
-      if (!(AH.isLess(it, new BigInteger("120")))) {
-        final Message message = new Message(BuiltinMessageKinds.error(), ContractViolatedException.CONSTRAINT_FAILED + ": " + "it < 120").withLocation(new ProgramLocation("r:7d3e9570-276c-4dee-986d-52b72d41755a(test.in.expr.os.typedefs@tests)/2396718651921061475", "http://127.0.0.1:63320/node?ref=r%3A7d3e9570-276c-4dee-986d-52b72d41755a%28test.in.expr.os.typedefs%40tests%29%2F2396718651921061475")).withAffectedMemberNames(new HashSet<String>(Arrays.<String>asList()));
-        GlobalContext.MESSAGE_LOG.get().collect(message);
-        throw new ContractViolatedException(message);
-      }
-      if (!(!(AH.isLess(it, new BigInteger("0"))))) {
-        final Message message = new Message(BuiltinMessageKinds.error(), ContractViolatedException.CONSTRAINT_FAILED + ": " + "it >= 0").withLocation(new ProgramLocation("r:7d3e9570-276c-4dee-986d-52b72d41755a(test.in.expr.os.typedefs@tests)/2396718651920987243", "http://127.0.0.1:63320/node?ref=r%3A7d3e9570-276c-4dee-986d-52b72d41755a%28test.in.expr.os.typedefs%40tests%29%2F2396718651920987243")).withAffectedMemberNames(new HashSet<String>(Arrays.<String>asList()));
-        GlobalContext.MESSAGE_LOG.get().collect(message);
-        throw new ContractViolatedException(message);
-      }
+    Number it = age;
+    if (!(AH.isLess(it, new BigInteger("120")))) {
+      final Message message = new Message(BuiltinMessageKinds.error(), ContractViolatedException.CONSTRAINT_FAILED + ": " + "it < 120").withLocation(new ProgramLocation("r:7d3e9570-276c-4dee-986d-52b72d41755a(test.in.expr.os.typedefs@tests)/2396718651921061475", "http://127.0.0.1:63320/node?ref=r%3A7d3e9570-276c-4dee-986d-52b72d41755a%28test.in.expr.os.typedefs%40tests%29%2F2396718651921061475")).withAffectedMemberNames(new HashSet<String>(Arrays.<String>asList()));
+      GlobalContext.MESSAGE_LOG.get().collect(message);
+      throw new ContractViolatedException(message);
+    }
+    if (!(!(AH.isLess(it, new BigInteger("0"))))) {
+      final Message message = new Message(BuiltinMessageKinds.error(), ContractViolatedException.CONSTRAINT_FAILED + ": " + "it >= 0").withLocation(new ProgramLocation("r:7d3e9570-276c-4dee-986d-52b72d41755a(test.in.expr.os.typedefs@tests)/2396718651920987243", "http://127.0.0.1:63320/node?ref=r%3A7d3e9570-276c-4dee-986d-52b72d41755a%28test.in.expr.os.typedefs%40tests%29%2F2396718651920987243")).withAffectedMemberNames(new HashSet<String>(Arrays.<String>asList()));
+      GlobalContext.MESSAGE_LOG.get().collect(message);
+      throw new ContractViolatedException(message);
     }
     Number res = AH.mul(new BigInteger("2"), age);
 
