@@ -22,6 +22,7 @@
     <import index="s6b7" ref="r:a7e2f963-3e46-49e0-a385-e8c7f33c91b7(org.iets3.variability.featuremodel.base.structure)" />
     <import index="8w4h" ref="r:47440061-d7b2-45b0-8507-64028fc49a72(test.org.iets3.common.base.util)" />
     <import index="nzwl" ref="r:dfaa2422-aef5-456d-a8cd-942c81b870e6(org.iets3.variability.configuration.base.intentions)" />
+    <import index="tp5g" ref="r:00000000-0000-4000-0000-011c89590388(jetbrains.mps.lang.test.structure)" />
   </imports>
   <registry>
     <language id="8585453e-6bfb-4d80-98de-b16074f1d86c" name="jetbrains.mps.lang.test">
@@ -35,6 +36,8 @@
         <child id="1215604436604" name="nodeOperations" index="7EUXB" />
       </concept>
       <concept id="1215607067978" name="jetbrains.mps.lang.test.structure.CheckNodeForErrorMessagesOperation" flags="ng" index="7OXhh">
+        <property id="852155438140865198" name="allowWarnings" index="G7GLP" />
+        <property id="852155438140865197" name="allowErrors" index="G7GLQ" />
         <property id="3743352646565420194" name="includeSelf" index="GvXf4" />
       </concept>
       <concept id="7691029917083872157" name="jetbrains.mps.lang.test.structure.IRuleReference" flags="ngI" index="2u4UPC">
@@ -146,6 +149,7 @@
         <property id="4791626744562666548" name="initiallyChecked" index="1n_0Gn" />
         <property id="4791626744558055097" name="complete" index="1nQUAq" />
         <child id="5050560734061908085" name="extendedFMC" index="30ne9f" />
+        <child id="9038024733918345127" name="usedConfigs" index="1l23gV" />
       </concept>
       <concept id="6698472021570799901" name="org.iets3.variability.configuration.base.structure.FeatureConfiguration" flags="ng" index="rqKBd" />
       <concept id="6698472021570809194" name="org.iets3.variability.configuration.base.structure.FeatureModelConfigurationRef" flags="ng" index="rqMQU">
@@ -155,6 +159,10 @@
         <reference id="5050560734061908041" name="config" index="30ne9N" />
       </concept>
       <concept id="3329517093767171467" name="org.iets3.variability.configuration.base.structure.FeatureModelConfigurationBase" flags="ng" index="3hCpYG" />
+      <concept id="9038024733918343481" name="org.iets3.variability.configuration.base.structure.FMConfigActualParam" flags="ng" index="1l23a_">
+        <reference id="9038024733918408566" name="param" index="1l2MNE" />
+        <reference id="9038024733918409166" name="config" index="1l2N9i" />
+      </concept>
       <concept id="3470763221645494592" name="org.iets3.variability.configuration.base.structure.AbstractFeatureConfiguration" flags="ng" index="3HwiA2">
         <property id="5939066662398655707" name="selectionState" index="3BMj5M" />
         <reference id="6698472021570799902" name="targetFeature" index="rqKBe" />
@@ -168,11 +176,17 @@
       </concept>
     </language>
     <language id="cfaa4966-b7d5-4b69-b66a-309a6e1a7290" name="org.iets3.core.expr.base">
+      <concept id="4261931054731905240" name="org.iets3.core.expr.base.structure.IContainExpressionParam" flags="ngI" index="2lDidI">
+        <child id="4261931054731905241" name="expr" index="2lDidJ" />
+      </concept>
       <concept id="5115872837156576277" name="org.iets3.core.expr.base.structure.BinaryExpression" flags="ng" index="30dEsC">
         <child id="5115872837156576280" name="right" index="30dEs_" />
         <child id="5115872837156576278" name="left" index="30dEsF" />
       </concept>
       <concept id="1514143479005139333" name="org.iets3.core.expr.base.structure.LogicalImpliesExpression" flags="ng" index="3o403X" />
+      <concept id="9002563722476995145" name="org.iets3.core.expr.base.structure.DotExpression" flags="ng" index="1QScDb">
+        <child id="9002563722476995147" name="target" index="1QScD9" />
+      </concept>
     </language>
     <language id="6b277d9a-d52d-416f-a209-1919bd737f50" name="org.iets3.core.expr.simpleTypes">
       <concept id="8219602584782245544" name="org.iets3.core.expr.simpleTypes.structure.NumberType" flags="ng" index="mLuIC" />
@@ -216,6 +230,9 @@
       </concept>
     </language>
     <language id="165f1d05-2506-4544-895e-1424f54166ec" name="org.iets3.variability.featuremodel.base">
+      <concept id="8997672845438204620" name="org.iets3.variability.featuremodel.base.structure.SubFeatureDotTarget" flags="ng" index="21mTOb">
+        <reference id="8997672845438204633" name="feature" index="21mTOu" />
+      </concept>
       <concept id="8997672845437948654" name="org.iets3.variability.featuremodel.base.structure.FeatureRefExpr" flags="ng" index="21nZkD">
         <reference id="8997672845437948664" name="feature" index="21nZkZ" />
       </concept>
@@ -229,12 +246,16 @@
       <concept id="3414566187106618468" name="org.iets3.variability.featuremodel.base.structure.ICalculateHashForUpdateWarning" flags="ngI" index="bVzmZ">
         <property id="3414566187106619445" name="__updateHash" index="bVyBI" />
       </concept>
+      <concept id="7725497592275044117" name="org.iets3.variability.featuremodel.base.structure.FMParam" flags="ng" index="2vxJKP">
+        <reference id="7725497592275220872" name="fm" index="2vxkaC" />
+      </concept>
       <concept id="3989254429233029895" name="org.iets3.variability.featuremodel.base.structure.Feature" flags="ng" index="12iwV3">
         <child id="8997672845436698678" name="attributes" index="21GevL" />
         <child id="3989254429233029898" name="subFeatures" index="12iwVe" />
       </concept>
       <concept id="3989254429233029649" name="org.iets3.variability.featuremodel.base.structure.FeatureModel" flags="ng" index="12iwZl">
         <child id="3989254429233029900" name="root" index="12iwV8" />
+        <child id="9038024733911849114" name="using" index="1lrLG6" />
       </concept>
       <concept id="3989254429233062247" name="org.iets3.variability.featuremodel.base.structure.FeatureTreeNode" flags="ng" index="12iSMz">
         <property id="3989254429233130870" name="isMandatory" index="12h82M" />
@@ -242,6 +263,17 @@
       </concept>
       <concept id="3989254429233062248" name="org.iets3.variability.featuremodel.base.structure.FeatureModelInclude" flags="ng" index="12iSMG">
         <reference id="3989254429233062249" name="fm" index="12iSMH" />
+        <child id="9038024733924655344" name="actualParams" index="1lESdG" />
+      </concept>
+      <concept id="9038024733911845702" name="org.iets3.variability.featuremodel.base.structure.UsingSection" flags="ng" index="1lrKzq">
+        <child id="7725497592275220946" name="params" index="2vxkbM" />
+      </concept>
+      <concept id="9038024733925292129" name="org.iets3.variability.featuremodel.base.structure.FMIncludeRefExpr" flags="ng" index="1lCzJX">
+        <reference id="9038024733925293013" name="fmInclude" index="1lCzx9" />
+      </concept>
+      <concept id="9038024733924620726" name="org.iets3.variability.featuremodel.base.structure.FMActualParam" flags="ng" index="1lEfCE">
+        <reference id="9038024733924623734" name="param" index="1lE0rE" />
+        <child id="9038024733924625381" name="rhs" index="1lE0xT" />
       </concept>
     </language>
     <language id="f47b95d4-5e73-4c04-9204-18076950153b" name="de.itemis.mps.compare">
@@ -8554,6 +8586,188 @@
             <node concept="3xONca" id="1$h4UJ1tBlw" role="37wK5m">
               <ref role="3xOPvv" node="1$h4UJ1tBlp" resolve="expected" />
             </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="1lH9Xt" id="1HFAdoMUU4t">
+    <property role="3DII0k" value="2hh8MJdVwqX/command" />
+    <property role="TrG5h" value="UsingWithFeatueModelConfigurationRef" />
+    <node concept="1qefOq" id="1HFAdoMUU$S" role="1SKRRt">
+      <node concept="12icEM" id="1HFAdoMUUBO" role="1qenE9">
+        <property role="TrG5h" value="V" />
+        <node concept="12iwZl" id="3BzdP7fvTK3" role="12i2BX">
+          <property role="bVyBI" value="-133127856" />
+          <node concept="12iwV3" id="3BzdP7fvTK4" role="12iwV8">
+            <property role="TrG5h" value="Palette" />
+            <node concept="12iwV3" id="3BzdP7fvTK5" role="12iwVe">
+              <property role="TrG5h" value="Red" />
+            </node>
+            <node concept="12iwV3" id="3BzdP7fvTK6" role="12iwVe">
+              <property role="TrG5h" value="Blue" />
+            </node>
+          </node>
+        </node>
+        <node concept="12i7jc" id="3BzdP7fvTK7" role="12i2BX" />
+        <node concept="12iwZl" id="3BzdP7fvTK8" role="12i2BX">
+          <property role="bVyBI" value="1777998991" />
+          <node concept="12iwV3" id="3BzdP7fvTK9" role="12iwV8">
+            <property role="TrG5h" value="Body" />
+            <node concept="12iSMG" id="3BzdP7fvTKa" role="12iwVe">
+              <property role="TrG5h" value="paint" />
+              <ref role="12iSMH" node="3BzdP7fvTK3" resolve="Palette" />
+            </node>
+          </node>
+        </node>
+        <node concept="12i7jc" id="3BzdP7fvTKb" role="12i2BX" />
+        <node concept="12iwZl" id="3BzdP7fvTKc" role="12i2BX">
+          <property role="bVyBI" value="-241440055" />
+          <node concept="1lrKzq" id="3BzdP7fvTKd" role="1lrLG6">
+            <node concept="2vxJKP" id="3BzdP7fvTKe" role="2vxkbM">
+              <property role="TrG5h" value="p" />
+              <ref role="2vxkaC" node="3BzdP7fvTK3" resolve="Palette" />
+            </node>
+          </node>
+          <node concept="12iwV3" id="3BzdP7fvTKf" role="12iwV8">
+            <property role="TrG5h" value="Trim" />
+            <node concept="12iwV3" id="3BzdP7fvTKg" role="12iwVe">
+              <property role="TrG5h" value="Stripes" />
+            </node>
+          </node>
+        </node>
+        <node concept="12i7jc" id="3BzdP7fvTKh" role="12i2BX" />
+        <node concept="12iwZl" id="3BzdP7fvTKi" role="12i2BX">
+          <property role="bVyBI" value="1584906178" />
+          <node concept="12iwV3" id="3BzdP7fvTKj" role="12iwV8">
+            <property role="TrG5h" value="Car" />
+            <node concept="12iSMG" id="3BzdP7fvTKk" role="12iwVe">
+              <property role="TrG5h" value="body" />
+              <ref role="12iSMH" node="3BzdP7fvTK8" resolve="Body" />
+            </node>
+            <node concept="12iSMG" id="3BzdP7fvTKl" role="12iwVe">
+              <property role="TrG5h" value="trim" />
+              <ref role="12iSMH" node="3BzdP7fvTKc" resolve="Trim" />
+              <node concept="1lEfCE" id="3BzdP7fvTKm" role="1lESdG">
+                <ref role="1lE0rE" node="3BzdP7fvTKe" resolve="p" />
+                <node concept="1QScDb" id="1HFAdoMvfQ8" role="1lE0xT">
+                  <node concept="21mTOb" id="1HFAdoMvfTJ" role="1QScD9">
+                    <ref role="21mTOu" node="3BzdP7fvTKa" resolve="paint" />
+                  </node>
+                  <node concept="1lCzJX" id="1HFAdoMvfNS" role="2lDidJ">
+                    <ref role="1lCzx9" node="3BzdP7fvTKk" resolve="body" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="12i7jc" id="1HFAdoMvflj" role="12i2BX" />
+        <node concept="12i7jc" id="3BzdP7fvTKo" role="12i2BX" />
+        <node concept="rqKB5" id="3BzdP7fvTKp" role="12i2BX">
+          <property role="TrG5h" value="CPalette" />
+          <property role="33ZQ4u" value="true" />
+          <property role="bVyBI" value="1002357483" />
+          <property role="bROok" value="-133127856" />
+          <property role="1n_0Gn" value="true" />
+          <property role="1nQUAq" value="true" />
+          <ref role="rqKBe" node="3BzdP7fvTK4" resolve="Palette" />
+          <node concept="rqCGG" id="3BzdP7fvTKq" role="rqCGo">
+            <node concept="rqKBd" id="3BzdP7fvTKr" role="rqKBa">
+              <ref role="rqKBe" node="3BzdP7fvTK5" resolve="Red" />
+              <node concept="rqCGG" id="3BzdP7fvTKs" role="rqCGo" />
+            </node>
+            <node concept="rqKBd" id="3BzdP7fvTKt" role="rqKBa">
+              <ref role="rqKBe" node="3BzdP7fvTK6" resolve="Blue" />
+              <node concept="rqCGG" id="3BzdP7fvTKu" role="rqCGo" />
+            </node>
+          </node>
+        </node>
+        <node concept="12i7jc" id="3BzdP7fvTKv" role="12i2BX" />
+        <node concept="rqKB5" id="3BzdP7fvTKw" role="12i2BX">
+          <property role="TrG5h" value="CBodyBase" />
+          <property role="33ZQ4u" value="true" />
+          <property role="bVyBI" value="936030010" />
+          <property role="bROok" value="1777998991" />
+          <property role="1n_0Gn" value="true" />
+          <property role="1nQUAq" value="true" />
+          <ref role="rqKBe" node="3BzdP7fvTK9" resolve="Body" />
+          <node concept="rqCGG" id="3BzdP7fvTKx" role="rqCGo">
+            <node concept="rqKBd" id="3BzdP7fvTKy" role="rqKBa">
+              <ref role="rqKBe" node="3BzdP7fvTKa" resolve="paint" />
+              <node concept="rqMQU" id="3BzdP7fvTKz" role="rqCGo">
+                <ref role="rqMQV" node="3BzdP7fvTKp" resolve="CPalette" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="12i7jc" id="3BzdP7fvTK$" role="12i2BX" />
+        <node concept="rqKB5" id="3BzdP7fvTK_" role="12i2BX">
+          <property role="TrG5h" value="CBody" />
+          <property role="33ZQ4u" value="true" />
+          <property role="bVyBI" value="973706343" />
+          <property role="bROok" value="936030010" />
+          <property role="1n_0Gn" value="true" />
+          <property role="26YOJW" value="" />
+          <property role="1nQUAq" value="true" />
+          <ref role="rqKBe" node="3BzdP7fvTK9" resolve="Body" />
+          <node concept="rqCGG" id="3BzdP7fvTKB" role="rqCGo" />
+          <node concept="30ne8c" id="3BzdP7fvTSS" role="30ne9f">
+            <ref role="30ne9N" node="3BzdP7fvTKw" resolve="CBodyBase" />
+          </node>
+        </node>
+        <node concept="12i7jc" id="3BzdP7fvTKC" role="12i2BX" />
+        <node concept="rqKB5" id="3BzdP7fvTKD" role="12i2BX">
+          <property role="TrG5h" value="CTrim" />
+          <property role="33ZQ4u" value="true" />
+          <property role="bVyBI" value="1153031246" />
+          <property role="bROok" value="-241440055" />
+          <property role="1n_0Gn" value="true" />
+          <property role="1nQUAq" value="true" />
+          <ref role="rqKBe" node="3BzdP7fvTKf" resolve="Trim" />
+          <node concept="1l23a_" id="3BzdP7fvTKE" role="1l23gV">
+            <ref role="1l2MNE" node="3BzdP7fvTKe" resolve="p" />
+            <ref role="1l2N9i" node="3BzdP7fvTKp" resolve="CPalette" />
+          </node>
+          <node concept="rqCGG" id="3BzdP7fvTKF" role="rqCGo">
+            <node concept="rqKBd" id="3BzdP7fvTKG" role="rqKBa">
+              <ref role="rqKBe" node="3BzdP7fvTKg" resolve="Stripes" />
+              <node concept="rqCGG" id="3BzdP7fvTKH" role="rqCGo" />
+            </node>
+          </node>
+        </node>
+        <node concept="12i7jc" id="3BzdP7fvTKI" role="12i2BX" />
+        <node concept="rqKB5" id="3BzdP7fvTKJ" role="12i2BX">
+          <property role="TrG5h" value="CCar" />
+          <property role="bVyBI" value="1517283164" />
+          <property role="bROok" value="1584906178" />
+          <property role="1n_0Gn" value="true" />
+          <property role="33ZQ4u" value="true" />
+          <property role="26YOJW" value="" />
+          <property role="0Rz4W" value="810915878" />
+          <property role="1nQUAq" value="true" />
+          <ref role="rqKBe" node="3BzdP7fvTKj" resolve="Car" />
+          <node concept="rqCGG" id="3BzdP7fvTKK" role="rqCGo">
+            <node concept="rqKBd" id="3BzdP7fvTKL" role="rqKBa">
+              <ref role="rqKBe" node="3BzdP7fvTKk" resolve="body" />
+              <node concept="rqMQU" id="3BzdP7fvTKM" role="rqCGo">
+                <ref role="rqMQV" node="3BzdP7fvTK_" resolve="CBody" />
+              </node>
+            </node>
+            <node concept="rqKBd" id="3BzdP7fvTKN" role="rqKBa">
+              <ref role="rqKBe" node="3BzdP7fvTKl" resolve="trim" />
+              <node concept="rqMQU" id="3BzdP7fvTKO" role="rqCGo">
+                <ref role="rqMQV" node="3BzdP7fvTKD" resolve="CTrim" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="12i7jc" id="3BzdP7fvTKP" role="12i2BX" />
+        <node concept="12i7jc" id="1HFAdoMUUBP" role="12i2BX" />
+        <node concept="7CXmI" id="1HFAdoMZLxg" role="lGtFl">
+          <node concept="7OXhh" id="1HFAdoN0cr6" role="7EUXB">
+            <property role="G7GLQ" value="false" />
+            <property role="G7GLP" value="false" />
           </node>
         </node>
       </node>
