@@ -182,7 +182,7 @@ public class SimpleTypesPrimitiveTypeMapper extends PrimitiveTypeMapper {
     resultTypes.value = removeStringTypeWithConstraint(resultTypes.value);
 
     // The next part is a hack:
-    // Because '''DotExpression'''  does only operate on sets containing 2 elements,
+    // Because '''mgr.leastCommonSupertypes(set, false)'''  does only operate on sets containing 2 elements,
     // we need to extract the elements from  '''[List<SNode>]([<no instanceType>]resultTypes.value)'''  and pass them to the function successively.
     // s.a.: https://youtrack.jetbrains.com/issue/MPSI-45/leastCommonSupertypes-does-not-calculate-correctly-on-tuples-with-multiple-values
     Set<SNode> set = SetSequence.fromSet(new HashSet<SNode>());
