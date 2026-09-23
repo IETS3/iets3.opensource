@@ -104,7 +104,7 @@
         <property role="TrG5h" value="Bicycle" />
         <node concept="12iwV3" id="47N6Ml8JdEp" role="12iwVe">
           <property role="TrG5h" value="Frame" />
-          <property role="12h82W" value="xor" />
+          <property role="12h82W" value="3tsFshP62P5/xor" />
           <node concept="12iwV3" id="47N6Ml8JdEq" role="12iwVe">
             <property role="TrG5h" value="Steel" />
           </node>
@@ -114,7 +114,7 @@
         </node>
         <node concept="12iwV3" id="47N6Ml8JdEs" role="12iwVe">
           <property role="TrG5h" value="Gearing" />
-          <property role="12h82W" value="xor" />
+          <property role="12h82W" value="3tsFshP62P5/xor" />
           <node concept="12iwV3" id="47N6Ml8JdEt" role="12iwVe">
             <property role="TrG5h" value="Derailleur" />
           </node>
@@ -137,7 +137,7 @@
       <property role="TrG5h" value="CityBase" />
       <property role="33ZQ4u" value="true" />
       <property role="1n_0Gn" value="true" />
-      <property role="bVyBI" value="1219862790" />
+      <property role="bVyBI" value="1831666134" />
       <property role="bROok" value="-1570823761" />
       <property role="26YOJW" value="" />
       <property role="0Rz4W" value="240486924" />
@@ -158,32 +158,32 @@
           </node>
         </node>
         <node concept="rqKBd" id="47N6Ml8JdEE" role="rqKBa">
-          <property role="3BMj5M" value="userTrue" />
+          <property role="3BMj5M" value="5QKr2dW9gDW/userTrue" />
           <ref role="rqKBe" node="47N6Ml8JdEs" resolve="Gearing" />
           <node concept="rqCGG" id="47N6Ml8JdEF" role="rqCGo">
             <node concept="rqKBd" id="47N6Ml8JdEG" role="rqKBa">
-              <property role="3BMj5M" value="userFalse" />
+              <property role="3BMj5M" value="5QKr2dW9gE1/userFalse" />
               <ref role="rqKBe" node="47N6Ml8JdEt" resolve="Derailleur" />
               <node concept="rqCGG" id="47N6Ml8JdEH" role="rqCGo" />
             </node>
             <node concept="rqKBd" id="47N6Ml8JdEI" role="rqKBa">
-              <property role="3BMj5M" value="userTrue" />
+              <property role="3BMj5M" value="5QKr2dW9gDW/userTrue" />
               <ref role="rqKBe" node="47N6Ml8JdEu" resolve="HubGear" />
               <node concept="rqCGG" id="47N6Ml8JdEJ" role="rqCGo" />
             </node>
           </node>
         </node>
         <node concept="rqKBd" id="47N6Ml8JdEK" role="rqKBa">
-          <property role="3BMj5M" value="userTrue" />
+          <property role="3BMj5M" value="5QKr2dW9gDW/userTrue" />
           <ref role="rqKBe" node="47N6Ml8JdEv" resolve="Lighting" />
           <node concept="rqCGG" id="47N6Ml8JdEL" role="rqCGo">
             <node concept="rqKBd" id="47N6Ml8JdEM" role="rqKBa">
-              <property role="3BMj5M" value="userTrue" />
+              <property role="3BMj5M" value="5QKr2dW9gDW/userTrue" />
               <ref role="rqKBe" node="47N6Ml8JdEw" resolve="Dynamo" />
               <node concept="rqCGG" id="47N6Ml8JdEN" role="rqCGo" />
             </node>
             <node concept="rqKBd" id="47N6Ml8JdEO" role="rqKBa">
-              <property role="3BMj5M" value="userFalse" />
+              <property role="3BMj5M" value="5QKr2dW9gE1/userFalse" />
               <ref role="rqKBe" node="47N6Ml8JdEx" resolve="BatteryLight" />
               <node concept="rqCGG" id="47N6Ml8JdEP" role="rqCGo" />
             </node>
@@ -194,7 +194,7 @@
     <node concept="rqKB5" id="47N6Ml8JdEQ" role="12i2BX">
       <property role="TrG5h" value="DutchBike" />
       <property role="1n_0Gn" value="true" />
-      <property role="bVyBI" value="-616026317" />
+      <property role="bVyBI" value="1528189821" />
       <property role="26YOJW" value="" />
       <property role="bROok" value="1219862790" />
       <property role="0Rz4W" value="-761411075" />
@@ -202,16 +202,16 @@
       <ref role="rqKBe" node="47N6Ml8JdEo" resolve="Bicycle" />
       <node concept="rqCGG" id="47N6Ml8JdES" role="rqCGo">
         <node concept="rqKBd" id="47N6Ml8JdET" role="rqKBa">
-          <property role="3BMj5M" value="userTrue" />
+          <property role="3BMj5M" value="5QKr2dW9gDW/userTrue" />
           <ref role="rqKBe" node="47N6Ml8JdEp" resolve="Frame" />
           <node concept="rqCGG" id="47N6Ml8JdEU" role="rqCGo">
             <node concept="rqKBd" id="47N6Ml8JdEV" role="rqKBa">
-              <property role="3BMj5M" value="userTrue" />
+              <property role="3BMj5M" value="5QKr2dW9gDW/userTrue" />
               <ref role="rqKBe" node="47N6Ml8JdEq" resolve="Steel" />
               <node concept="rqCGG" id="47N6Ml8JdEW" role="rqCGo" />
             </node>
             <node concept="rqKBd" id="47N6Ml8JdEX" role="rqKBa">
-              <property role="3BMj5M" value="userFalse" />
+              <property role="3BMj5M" value="5QKr2dW9gE1/userFalse" />
               <ref role="rqKBe" node="47N6Ml8JdEr" resolve="Carbon" />
               <node concept="rqCGG" id="47N6Ml8JdEY" role="rqCGo" />
             </node>
@@ -230,7 +230,7 @@
       <property role="bVyBI" value="1375833672" />
       <node concept="12iwV3" id="47N6Ml8QRzQ" role="12iwV8">
         <property role="TrG5h" value="Gears" />
-        <property role="12h82W" value="xor" />
+        <property role="12h82W" value="3tsFshP62P5/xor" />
         <node concept="12iwV3" id="47N6Ml8QRzR" role="12iwVe">
           <property role="TrG5h" value="Derailleur" />
         </node>
@@ -296,7 +296,7 @@
       <property role="TrG5h" value="CGears" />
       <property role="33ZQ4u" value="true" />
       <property role="1n_0Gn" value="true" />
-      <property role="bVyBI" value="235545649" />
+      <property role="bVyBI" value="2037535311" />
       <property role="bROok" value="1375833672" />
       <property role="26YOJW" value="" />
       <property role="0Rz4W" value="99072878" />
@@ -304,12 +304,12 @@
       <ref role="rqKBe" node="47N6Ml8QRzQ" resolve="Gears" />
       <node concept="rqCGG" id="47N6Ml8QR$a" role="rqCGo">
         <node concept="rqKBd" id="47N6Ml8QR$d" role="rqKBa">
-          <property role="3BMj5M" value="userFalse" />
+          <property role="3BMj5M" value="5QKr2dW9gE1/userFalse" />
           <ref role="rqKBe" node="47N6Ml8QRzR" resolve="Derailleur" />
           <node concept="rqCGG" id="47N6Ml8QR$e" role="rqCGo" />
         </node>
         <node concept="rqKBd" id="47N6Ml8QR$b" role="rqKBa">
-          <property role="3BMj5M" value="userTrue" />
+          <property role="3BMj5M" value="5QKr2dW9gDW/userTrue" />
           <ref role="rqKBe" node="47N6Ml8QRzS" resolve="HubGear" />
           <node concept="rqCGG" id="47N6Ml8QR$c" role="rqCGo" />
         </node>
@@ -335,7 +335,7 @@
       <property role="33ZQ4u" value="true" />
       <property role="1n_0Gn" value="true" />
       <property role="26YOJW" value="" />
-      <property role="bVyBI" value="-2018095652" />
+      <property role="bVyBI" value="85837955" />
       <property role="0Rz4W" value="-1398535347" />
       <property role="bROok" value="-1623735750" />
       <property role="1nQUAq" value="true" />
@@ -346,7 +346,7 @@
       </node>
       <node concept="rqCGG" id="47N6Ml8QR$l" role="rqCGo">
         <node concept="rqKBd" id="47N6Ml8QR$m" role="rqKBa">
-          <property role="3BMj5M" value="userTrue" />
+          <property role="3BMj5M" value="5QKr2dW9gDW/userTrue" />
           <ref role="rqKBe" node="47N6Ml8QR$0" resolve="Trigger" />
           <node concept="rqCGG" id="47N6Ml8QR$n" role="rqCGo" />
         </node>
@@ -356,7 +356,7 @@
       <property role="TrG5h" value="CBikeBase" />
       <property role="33ZQ4u" value="true" />
       <property role="1n_0Gn" value="true" />
-      <property role="bVyBI" value="-997122014" />
+      <property role="bVyBI" value="771891302" />
       <property role="26YOJW" value="" />
       <property role="0Rz4W" value="198934730" />
       <property role="bROok" value="-1397969575" />
@@ -364,14 +364,14 @@
       <ref role="rqKBe" node="47N6Ml8QR$2" resolve="Bike" />
       <node concept="rqCGG" id="47N6Ml8QR$p" role="rqCGo">
         <node concept="rqKBd" id="47N6Ml8QR$q" role="rqKBa">
-          <property role="3BMj5M" value="userTrue" />
+          <property role="3BMj5M" value="5QKr2dW9gDW/userTrue" />
           <ref role="rqKBe" node="47N6Ml8QR$3" resolve="drivetrain" />
           <node concept="rqMQU" id="47N6Ml8QR$r" role="rqCGo">
             <ref role="rqMQV" node="47N6Ml8QR$f" resolve="CDrivetrain" />
           </node>
         </node>
         <node concept="rqKBd" id="47N6Ml8QR$s" role="rqKBa">
-          <property role="3BMj5M" value="userTrue" />
+          <property role="3BMj5M" value="5QKr2dW9gDW/userTrue" />
           <ref role="rqKBe" node="47N6Ml8QR$4" resolve="shifter" />
           <node concept="rqMQU" id="47N6Ml8QR$t" role="rqCGo">
             <ref role="rqMQV" node="47N6Ml8QR$j" resolve="CShifter" />
@@ -394,7 +394,7 @@
       </node>
       <node concept="rqCGG" id="47N6Ml8QR$w" role="rqCGo">
         <node concept="rqKBd" id="47N6Ml8QR$x" role="rqKBa">
-          <property role="3BMj5M" value="userTrue" />
+          <property role="3BMj5M" value="5QKr2dW9gDW/userTrue" />
           <ref role="rqKBe" node="47N6Ml8QR$4" resolve="shifter" />
           <node concept="rqMQU" id="47N6Ml8QR$y" role="rqCGo">
             <ref role="rqMQV" node="47N6Ml8QR$j" resolve="CShifter" />
@@ -414,7 +414,6 @@
       <ref role="rqKBe" node="47N6Ml8QRzU" resolve="Drivetrain" />
       <node concept="rqCGG" id="47N6Ml8Yp$i" role="rqCGo">
         <node concept="rqKBd" id="47N6Ml8Yp$j" role="rqKBa">
-          <property role="3BMj5M" value="untouched" />
           <ref role="rqKBe" node="47N6Ml8QRzV" resolve="gears" />
           <node concept="rqMQU" id="47N6Ml8Yp$k" role="rqCGo">
             <ref role="rqMQV" node="47N6Ml8QR$9" resolve="CGears" />
@@ -434,7 +433,7 @@
       <ref role="rqKBe" node="47N6Ml8QR$2" resolve="Bike" />
       <node concept="rqCGG" id="1HFAdoLiV51" role="rqCGo">
         <node concept="rqKBd" id="1HFAdoLiV52" role="rqKBa">
-          <property role="3BMj5M" value="userTrue" />
+          <property role="3BMj5M" value="5QKr2dW9gDW/userTrue" />
           <ref role="rqKBe" node="47N6Ml8QR$4" resolve="shifter" />
           <node concept="rqMQU" id="1HFAdoLiV53" role="rqCGo">
             <ref role="rqMQV" node="47N6Ml8QR$j" resolve="CShifter" />
