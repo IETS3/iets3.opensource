@@ -1523,8 +1523,8 @@
                 <node concept="3clFbF" id="1HFAdoMdq_G" role="3cqZAp">
                   <node concept="2OqwBi" id="1HFAdoMdq_D" role="3clFbG">
                     <node concept="10M0yZ" id="1HFAdoMdq_E" role="2Oq$k0">
-                      <ref role="1PxDUh" to="wyt6:~System" />
-                      <ref role="3cqZAo" to="wyt6:~System.out" />
+                      <ref role="1PxDUh" to="wyt6:~System" resolve="System" />
+                      <ref role="3cqZAo" to="wyt6:~System.out" resolve="out" />
                     </node>
                     <node concept="liA8E" id="1HFAdoMdq_F" role="2OqNvi">
                       <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String)" resolve="println" />
@@ -1564,11 +1564,26 @@
                     </node>
                   </node>
                 </node>
-                <node concept="3cpWs6" id="D08dLZ1$sz" role="3cqZAp">
-                  <node concept="2YIFZM" id="6F0PTEeOwnU" role="3cqZAk">
-                    <ref role="37wK5l" to="33ny:~Optional.of(java.lang.Object)" resolve="of" />
-                    <ref role="1Pybhc" to="33ny:~Optional" resolve="Optional" />
-                    <node concept="13iPFW" id="6F0PTEeOx4m" role="37wK5m" />
+                <node concept="3clFbJ" id="1HFAdoNZCRh" role="3cqZAp">
+                  <node concept="3clFbS" id="1HFAdoNZCRj" role="3clFbx">
+                    <node concept="3cpWs6" id="D08dLZ1$sz" role="3cqZAp">
+                      <node concept="2YIFZM" id="6F0PTEeOwnU" role="3cqZAk">
+                        <ref role="37wK5l" to="33ny:~Optional.of(java.lang.Object)" resolve="of" />
+                        <ref role="1Pybhc" to="33ny:~Optional" resolve="Optional" />
+                        <node concept="13iPFW" id="6F0PTEeOx4m" role="37wK5m" />
+                      </node>
+                    </node>
+                  </node>
+                  <node concept="17R0WA" id="1HFAdoO07r9" role="3clFbw">
+                    <node concept="37vLTw" id="1HFAdoO0eAW" role="3uHU7w">
+                      <ref role="3cqZAo" node="4UXd9usJRew" resolve="ftn" />
+                    </node>
+                    <node concept="2OqwBi" id="1HFAdoNZQJI" role="3uHU7B">
+                      <node concept="13iPFW" id="1HFAdoNZJxh" role="2Oq$k0" />
+                      <node concept="3TrEf2" id="1HFAdoNZY3N" role="2OqNvi">
+                        <ref role="3Tt5mk" to="4ndm:5NPKd17BG$u" resolve="targetFeature" />
+                      </node>
+                    </node>
                   </node>
                 </node>
               </node>
