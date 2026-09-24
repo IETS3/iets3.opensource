@@ -1229,9 +1229,6 @@
       <node concept="m$f5U" id="7yHH$DDpJeL" role="m$_yh">
         <ref role="m$f5T" node="7yHH$DDowpI" resolve="org.iets3.variability.base.devkit" />
       </node>
-      <node concept="m$_yC" id="1kjmNSX4xMS" role="m$_yJ">
-        <ref role="m$_y1" node="7uAdOXgkZjG" resolve="org.iets3.core.expr.tracing" />
-      </node>
       <node concept="m$_yC" id="7yHH$DDpO3f" role="m$_yJ">
         <ref role="m$_y1" to="al5i:3Ol24ijlxoL" resolve="com.mbeddr.mpsutil.editor.displayControl" />
       </node>
