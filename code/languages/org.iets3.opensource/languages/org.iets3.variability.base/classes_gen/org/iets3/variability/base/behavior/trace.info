@@ -745,42 +745,42 @@
   </root>
   <root nodeRef="r:452e57fa-fd4c-45a8-b9ba-964614a5a66e(org.iets3.variability.base.behavior)/8552288321720113455">
     <file name="TreeWalker.java">
-      <node id="8552288321720226731" at="19,194,20,48" concept="7" />
-      <node id="8552288321720226737" at="20,48,21,55" concept="7" />
-      <node id="8552288321720226743" at="21,55,22,56" concept="7" />
-      <node id="8552288321720226749" at="22,56,23,0" concept="10" />
-      <node id="8552288321720226750" at="23,0,24,53" concept="2" />
-      <node id="8552288321720226754" at="24,53,25,0" concept="10" />
-      <node id="8552288321720226757" at="26,35,27,74" concept="7" />
-      <node id="8552288321720226763" at="27,74,28,57" concept="2" />
-      <node id="2650150252039866507" at="28,57,29,138" concept="2" />
-      <node id="8552288321720226768" at="29,138,30,58" concept="2" />
-      <node id="2650150252036369837" at="30,58,31,55" concept="7" />
-      <node id="2650150252036618026" at="31,55,32,235" concept="2" />
-      <node id="8552288321720226803" at="34,117,35,60" concept="2" />
-      <node id="8552288321720226816" at="38,5,39,18" concept="8" />
-      <node id="8552288321720226784" at="33,74,36,9" concept="5" />
-      <node id="8552288321720226773" at="32,235,37,9" concept="2" />
-      <node id="8552288321720226755" at="25,0,38,5" concept="15" />
-      <node id="8552288321720218619" at="19,0,41,0" concept="12" trace="gatherChildren#(Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/language/SAbstractConcept;Lorg/jetbrains/mps/openapi/language/SAbstractConcept;Ljetbrains/mps/baseLanguage/closures/runtime/_FunctionTypes/_return_P1_E0;)Ljava/util/List;" />
-      <scope id="8552288321720226802" at="34,117,35,60" />
-      <scope id="8552288321720226783" at="33,74,36,9" />
-      <scope id="8552288321720226756" at="26,35,37,9">
+      <node id="8552288321720226731" at="22,194,23,48" concept="7" />
+      <node id="8552288321720226737" at="23,48,24,55" concept="7" />
+      <node id="8552288321720226743" at="24,55,25,56" concept="7" />
+      <node id="8552288321720226749" at="25,56,26,0" concept="10" />
+      <node id="8552288321720226750" at="26,0,27,53" concept="2" />
+      <node id="8552288321720226754" at="27,53,28,0" concept="10" />
+      <node id="8552288321720226757" at="29,35,30,74" concept="7" />
+      <node id="8552288321720226763" at="30,74,31,57" concept="2" />
+      <node id="2650150252039866507" at="31,57,32,138" concept="2" />
+      <node id="8552288321720226768" at="32,138,33,58" concept="2" />
+      <node id="2650150252036369837" at="33,58,34,55" concept="7" />
+      <node id="2650150252036618026" at="34,55,35,235" concept="2" />
+      <node id="8552288321720226803" at="37,117,38,60" concept="2" />
+      <node id="8552288321720226816" at="41,5,42,18" concept="8" />
+      <node id="8552288321720226784" at="36,74,39,9" concept="5" />
+      <node id="8552288321720226773" at="35,235,40,9" concept="2" />
+      <node id="8552288321720226755" at="28,0,41,5" concept="15" />
+      <node id="8552288321720218619" at="21,0,44,0" concept="12" trace="gatherChildren#(Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/language/SAbstractConcept;Lorg/jetbrains/mps/openapi/language/SAbstractConcept;Ljetbrains/mps/baseLanguage/closures/runtime/_FunctionTypes/_return_P1_E0;)Ljava/util/List;" />
+      <scope id="8552288321720226802" at="37,117,38,60" />
+      <scope id="8552288321720226783" at="36,74,39,9" />
+      <scope id="8552288321720226756" at="29,35,40,9">
         <var name="currNode" id="8552288321720226758" />
         <var name="descendants" id="2650150252036369840" />
       </scope>
-      <scope id="8552288321720218622" at="19,194,39,18">
+      <scope id="8552288321720218622" at="22,194,42,18">
         <var name="models" id="8552288321720226732" />
         <var name="visited" id="8552288321720226738" />
         <var name="worklist" id="8552288321720226744" />
       </scope>
-      <scope id="8552288321720218619" at="19,0,41,0">
+      <scope id="8552288321720218619" at="21,0,44,0">
         <var name="childType" id="2650150252036274170" />
         <var name="extractor" id="8552288321720297594" />
         <var name="referenceType" id="8552288321720220858" />
         <var name="root" id="8552288321720253243" />
       </scope>
-      <unit id="8552288321720113455" at="14,0,42,0" name="org.iets3.variability.base.behavior.TreeWalker" />
+      <unit id="8552288321720113455" at="14,0,45,0" name="org.iets3.variability.base.behavior.TreeWalker" />
     </file>
   </root>
 </debug-info>
