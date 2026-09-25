@@ -15,8 +15,8 @@
     <import index="m999" ref="r:1d6bd88a-7393-4b32-b0e6-2d8b3094776e(org.iets3.core.expr.toplevel.editor)" />
     <import index="z60i" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.awt(JDK/)" />
     <import index="hm2y" ref="r:66e07cb4-a4b0-4bf3-a36d-5e9ed1ff1bd3(org.iets3.core.expr.base.structure)" />
+    <import index="qlm2" ref="r:c0482758-b46b-48c3-8482-fa4a3115b53b(org.iets3.core.expr.typetags.behavior)" />
     <import index="tpco" ref="r:00000000-0000-4000-0000-011c89590284(jetbrains.mps.lang.core.editor)" implicit="true" />
-    <import index="qlm2" ref="r:c0482758-b46b-48c3-8482-fa4a3115b53b(org.iets3.core.expr.typetags.behavior)" implicit="true" />
     <import index="c17a" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.language(MPS.OpenAPI/)" implicit="true" />
     <import index="cj4x" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.openapi.editor(MPS.Editor/)" implicit="true" />
     <import index="mhbf" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.model(MPS.OpenAPI/)" implicit="true" />
@@ -1052,12 +1052,22 @@
                     <node concept="1bVj0M" id="76ZhK6Y0HRa" role="23t8la">
                       <node concept="3clFbS" id="76ZhK6Y0HRb" role="1bW5cS">
                         <node concept="3clFbF" id="76ZhK6Y0I6v" role="3cqZAp">
-                          <node concept="2OqwBi" id="76ZhK6Y0IqU" role="3clFbG">
-                            <node concept="37vLTw" id="76ZhK6Y0I6u" role="2Oq$k0">
-                              <ref role="3cqZAo" node="4z0AnX817jK" resolve="it" />
+                          <node concept="1Wc70l" id="6OI5j2OmcQE" role="3clFbG">
+                            <node concept="2OqwBi" id="6OI5j2OmcQF" role="3uHU7B">
+                              <node concept="37vLTw" id="6OI5j2OmcQG" role="2Oq$k0">
+                                <ref role="3cqZAo" node="4z0AnX817jK" resolve="it" />
+                              </node>
+                              <node concept="2qgKlT" id="6OI5j2OmcQH" role="2OqNvi">
+                                <ref role="37wK5l" to="qlm2:2Ux6GHgZEiG" resolve="canTagExpression" />
+                              </node>
                             </node>
-                            <node concept="2qgKlT" id="76ZhK6Y0J$O" role="2OqNvi">
-                              <ref role="37wK5l" to="qlm2:2Ux6GHgZEiG" resolve="canTagExpression" />
+                            <node concept="2OqwBi" id="6OI5j2OmcQI" role="3uHU7w">
+                              <node concept="37vLTw" id="6OI5j2OmcQJ" role="2Oq$k0">
+                                <ref role="3cqZAo" node="4z0AnX817jK" resolve="it" />
+                              </node>
+                              <node concept="2qgKlT" id="6OI5j2OmcQK" role="2OqNvi">
+                                <ref role="37wK5l" to="qlm2:6OI5j2OlTY_" resolve="contributesToLiteralSideTransform" />
+                              </node>
                             </node>
                           </node>
                         </node>
