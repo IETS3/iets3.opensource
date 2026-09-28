@@ -126,12 +126,8 @@
       <concept id="1178549954367" name="jetbrains.mps.baseLanguage.structure.IVisible" flags="ngI" index="1B3ioH">
         <child id="1178549979242" name="visibility" index="1B3o_S" />
       </concept>
-      <concept id="6329021646629104957" name="jetbrains.mps.baseLanguage.structure.TextCommentPart" flags="nn" index="3SKdUq">
-        <property id="6329021646629104958" name="text" index="3SKdUp" />
-      </concept>
       <concept id="6329021646629104954" name="jetbrains.mps.baseLanguage.structure.SingleLineComment" flags="nn" index="3SKdUt">
         <child id="8356039341262087992" name="line" index="1aUNEU" />
-        <child id="6329021646629175155" name="commentPart" index="3SKWNk" />
       </concept>
       <concept id="1146644602865" name="jetbrains.mps.baseLanguage.structure.PublicVisibility" flags="nn" index="3Tm1VV" />
       <concept id="1146644623116" name="jetbrains.mps.baseLanguage.structure.PrivateVisibility" flags="nn" index="3Tm6S6" />
@@ -8781,7 +8777,7 @@
   </node>
   <node concept="1lH9Xt" id="5plP6f7IDDH">
     <property role="TrG5h" value="FindConfigurationThroughFeatureModelInclude" />
-    <property role="3DII0k" value="command" />
+    <property role="3DII0k" value="2hh8MJdVwqX/command" />
     <node concept="1qefOq" id="5plP6f7IDDI" role="1SKRRt">
       <node concept="12icEM" id="5plP6f7IDDJ" role="1qenE9">
         <property role="TrG5h" value="V" />
@@ -8843,8 +8839,67 @@
       <node concept="3cqZAl" id="5plP6f7IDE2" role="3clF45" />
       <node concept="3clFbS" id="5plP6f7IDE3" role="3clF47">
         <node concept="3SKdUt" id="5plP6f7IDE4" role="3cqZAp">
-          <node concept="3SKdUq" id="5plP6f7IDE5" role="3SKWNk">
-            <property role="3SKdUp" value="Path from Car to Red is [body, Body, Red], but the configuration has no node for the included root 'Body'" />
+          <node concept="1PaTwC" id="3iHQ4zcI6d$" role="1aUNEU">
+            <node concept="3oM_SD" id="3iHQ4zcI6d_" role="1PaTwD">
+              <property role="3oM_SC" value="Path" />
+            </node>
+            <node concept="3oM_SD" id="3iHQ4zcI6dA" role="1PaTwD">
+              <property role="3oM_SC" value="from" />
+            </node>
+            <node concept="3oM_SD" id="3iHQ4zcI6dB" role="1PaTwD">
+              <property role="3oM_SC" value="Car" />
+            </node>
+            <node concept="3oM_SD" id="3iHQ4zcI6dC" role="1PaTwD">
+              <property role="3oM_SC" value="to" />
+            </node>
+            <node concept="3oM_SD" id="3iHQ4zcI6dD" role="1PaTwD">
+              <property role="3oM_SC" value="Red" />
+            </node>
+            <node concept="3oM_SD" id="3iHQ4zcI6dE" role="1PaTwD">
+              <property role="3oM_SC" value="is" />
+            </node>
+            <node concept="3oM_SD" id="3iHQ4zcI6dF" role="1PaTwD">
+              <property role="3oM_SC" value="[body," />
+            </node>
+            <node concept="3oM_SD" id="3iHQ4zcI6dG" role="1PaTwD">
+              <property role="3oM_SC" value="Body," />
+            </node>
+            <node concept="3oM_SD" id="3iHQ4zcI6dH" role="1PaTwD">
+              <property role="3oM_SC" value="Red]," />
+            </node>
+            <node concept="3oM_SD" id="3iHQ4zcI6dI" role="1PaTwD">
+              <property role="3oM_SC" value="but" />
+            </node>
+            <node concept="3oM_SD" id="3iHQ4zcI6dJ" role="1PaTwD">
+              <property role="3oM_SC" value="the" />
+            </node>
+            <node concept="3oM_SD" id="3iHQ4zcI6dK" role="1PaTwD">
+              <property role="3oM_SC" value="configuration" />
+            </node>
+            <node concept="3oM_SD" id="3iHQ4zcI6dL" role="1PaTwD">
+              <property role="3oM_SC" value="has" />
+            </node>
+            <node concept="3oM_SD" id="3iHQ4zcI6dM" role="1PaTwD">
+              <property role="3oM_SC" value="no" />
+            </node>
+            <node concept="3oM_SD" id="3iHQ4zcI6dN" role="1PaTwD">
+              <property role="3oM_SC" value="node" />
+            </node>
+            <node concept="3oM_SD" id="3iHQ4zcI6dO" role="1PaTwD">
+              <property role="3oM_SC" value="for" />
+            </node>
+            <node concept="3oM_SD" id="3iHQ4zcI6dP" role="1PaTwD">
+              <property role="3oM_SC" value="the" />
+            </node>
+            <node concept="3oM_SD" id="3iHQ4zcI6dQ" role="1PaTwD">
+              <property role="3oM_SC" value="included" />
+            </node>
+            <node concept="3oM_SD" id="3iHQ4zcI6dR" role="1PaTwD">
+              <property role="3oM_SC" value="root" />
+            </node>
+            <node concept="3oM_SD" id="3iHQ4zcI6dS" role="1PaTwD">
+              <property role="3oM_SC" value="'Body'" />
+            </node>
           </node>
         </node>
         <node concept="3vMLTj" id="5plP6f7IDE6" role="3cqZAp">
