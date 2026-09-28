@@ -316,10 +316,10 @@ public final class FeatureModelConfiguration__BehaviorDescriptor extends BaseBHD
     return (ListSequence.fromList(allFMs).count() == 1 ? SPropertyOperations.getInteger(ListSequence.fromList(allFMs).getElement(0), PROPS.__updateHash$vTMx) : Objects.hashCode(ListSequence.fromList(allFMs).select((it) -> SPropertyOperations.getInteger(it, PROPS.__updateHash$vTMx)).toList()));
   }
   /*package*/ static int computeHashOfSolverRelevantData_id2SUMz4mKzNq(@NotNull SNode __thisNode__) {
-    return FeatureModelConfHashUtil.computeHashOfSolverRelevantData(__thisNode__);
+    return SolverRelevantDataHashing.of(__thisNode__).computeHash();
   }
   /*package*/ static int hashOfSolverRelevantData_id2SUMz4mMQjh(@NotNull SNode __thisNode__) {
-    return FeatureModelConfHashUtil.hashOfSolverRelevantData(__thisNode__);
+    return SolverRelevantDataHashing.of(__thisNode__).getHash();
   }
   /*package*/ static Supplier<Integer> hashCodeOfFMIncludes_id4JQgrqutDCZ(@NotNull final SNode __thisNode__) {
     return LazyInitWithCheck.lazy(() -> Sequence.fromIterable(FeatureModelConfiguration__BehaviorDescriptor.featureModelsOfTransientIncludes_id4rT4o_xpj5A.invoke(__thisNode__, __thisNode__)).union(Sequence.fromIterable(Sequence.<SNode>singleton(FeatureModelConfiguration__BehaviorDescriptor.getFeatureModel_id7PHwTKCuj99.invoke(__thisNode__)))).toList(), (List<SNode> fms) -> ((Integer) FeatureModelConfiguration__BehaviorDescriptor.hashCodeOf_id30ZRnWjrKuf.invokeSpecial(__thisNode__, fms)));

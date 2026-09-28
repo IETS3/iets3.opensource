@@ -13,6 +13,7 @@ import jetbrains.mps.lang.test.runtime.TransformationTest;
 import org.jetbrains.mps.openapi.model.SNode;
 import jetbrains.mps.lang.test.runtime.CheckExpectedMessageRunnable;
 import jetbrains.mps.errors.MessageStatus;
+import jetbrains.mps.smodel.SNodePointer;
 import jetbrains.mps.lang.test.runtime.CheckErrorMessagesRunnable;
 import java.util.Arrays;
 
@@ -38,8 +39,40 @@ public class vars_Test extends BaseTransformationTest {
     new TestBody(this).test_NodeErrorCheck2222228766295151679();
   }
   @Test
-  public void test_ErrorMessagesCheck2222228766292970007() throws Throwable {
-    new TestBody(this).test_ErrorMessagesCheck2222228766292970007();
+  public void test_NodeDuplicateNameCheck10776330437877009() throws Throwable {
+    new TestBody(this).test_NodeDuplicateNameCheck10776330437877009();
+  }
+  @Test
+  public void test_NodeDuplicateNameCheck8023881294611347339() throws Throwable {
+    new TestBody(this).test_NodeDuplicateNameCheck8023881294611347339();
+  }
+  @Test
+  public void test_NodeDuplicateNameCheck1009015249984651285() throws Throwable {
+    new TestBody(this).test_NodeDuplicateNameCheck1009015249984651285();
+  }
+  @Test
+  public void test_NodeDuplicateNameCheck1009015249984652877() throws Throwable {
+    new TestBody(this).test_NodeDuplicateNameCheck1009015249984652877();
+  }
+  @Test
+  public void test_NodeDuplicateNameCheck1009015249984652879() throws Throwable {
+    new TestBody(this).test_NodeDuplicateNameCheck1009015249984652879();
+  }
+  @Test
+  public void test_ErrorMessagesCheck9005873059232256215() throws Throwable {
+    new TestBody(this).test_ErrorMessagesCheck9005873059232256215();
+  }
+  @Test
+  public void test_NodeDuplicateNameCheck7401509881541028152() throws Throwable {
+    new TestBody(this).test_NodeDuplicateNameCheck7401509881541028152();
+  }
+  @Test
+  public void test_NodeDuplicateNameCheck7401509881541026050() throws Throwable {
+    new TestBody(this).test_NodeDuplicateNameCheck7401509881541026050();
+  }
+  @Test
+  public void test_NodeDuplicateNameCheck7401509881541035061() throws Throwable {
+    new TestBody(this).test_NodeDuplicateNameCheck7401509881541035061();
   }
 
   /*package*/ static class TestBody extends BaseTestBody {
@@ -74,11 +107,67 @@ public class vars_Test extends BaseTransformationTest {
         new CheckExpectedMessageRunnable.CheckAnyMessageRunnable(nodeToCheck, MessageStatus.ERROR, "", myProject.getRepository(), myProject.getPlatform()).run();
       });
     }
-    public void test_ErrorMessagesCheck2222228766292970007() throws Exception {
+    public void test_NodeDuplicateNameCheck10776330437877009() throws Exception {
       initTestNodes();
       runWithinCommand(() -> {
-        SNode nodeToCheck = getNodeById("8261554835615345187");
-        new CheckErrorMessagesRunnable(nodeToCheck, false, false, myProject.getPlatform()).includeSelf(false).exclude(Arrays.<CheckExpectedMessageRunnable>asList(new CheckExpectedMessageRunnable.CheckAnyMessageRunnable(getNodeById("2222228766294924322"), MessageStatus.ERROR, "", myProject.getRepository(), myProject.getPlatform()), new CheckExpectedMessageRunnable.CheckAnyMessageRunnable(getNodeById("2222228766295148994"), MessageStatus.ERROR, "", myProject.getRepository(), myProject.getPlatform()), new CheckExpectedMessageRunnable.CheckAnyMessageRunnable(getNodeById("2222228766295149489"), MessageStatus.ERROR, "", myProject.getRepository(), myProject.getPlatform()))).run();
+        SNode nodeToCheck = getNodeById("10776330435992948");
+        new CheckExpectedMessageRunnable.CheckExpectedRuleMessageRunnable(nodeToCheck, MessageStatus.ERROR, new SNodePointer("r:1b0f275e-bd62-4f6e-8c4b-51b05d651a63(com.mbeddr.core.base.typesystem)", "5095889050031059992"), "", myProject.getRepository(), myProject.getPlatform()).run();
+      });
+    }
+    public void test_NodeDuplicateNameCheck8023881294611347339() throws Exception {
+      initTestNodes();
+      runWithinCommand(() -> {
+        SNode nodeToCheck = getNodeById("8023881294611347196");
+        new CheckExpectedMessageRunnable.CheckExpectedRuleMessageRunnable(nodeToCheck, MessageStatus.ERROR, new SNodePointer("r:1b0f275e-bd62-4f6e-8c4b-51b05d651a63(com.mbeddr.core.base.typesystem)", "5095889050031059992"), "", myProject.getRepository(), myProject.getPlatform()).run();
+      });
+    }
+    public void test_NodeDuplicateNameCheck1009015249984651285() throws Exception {
+      initTestNodes();
+      runWithinCommand(() -> {
+        SNode nodeToCheck = getNodeById("8378532079463728897");
+        new CheckExpectedMessageRunnable.CheckExpectedRuleMessageRunnable(nodeToCheck, MessageStatus.ERROR, new SNodePointer("r:1b0f275e-bd62-4f6e-8c4b-51b05d651a63(com.mbeddr.core.base.typesystem)", "5095889050031059992"), "", myProject.getRepository(), myProject.getPlatform()).run();
+      });
+    }
+    public void test_NodeDuplicateNameCheck1009015249984652877() throws Exception {
+      initTestNodes();
+      runWithinCommand(() -> {
+        SNode nodeToCheck = getNodeById("8378532079463729824");
+        new CheckExpectedMessageRunnable.CheckExpectedRuleMessageRunnable(nodeToCheck, MessageStatus.ERROR, new SNodePointer("r:1b0f275e-bd62-4f6e-8c4b-51b05d651a63(com.mbeddr.core.base.typesystem)", "5095889050031059992"), "", myProject.getRepository(), myProject.getPlatform()).run();
+      });
+    }
+    public void test_NodeDuplicateNameCheck1009015249984652879() throws Exception {
+      initTestNodes();
+      runWithinCommand(() -> {
+        SNode nodeToCheck = getNodeById("8378532079463729824");
+        new CheckExpectedMessageRunnable.CheckExpectedRuleMessageRunnable(nodeToCheck, MessageStatus.ERROR, new SNodePointer("r:1b0f275e-bd62-4f6e-8c4b-51b05d651a63(com.mbeddr.core.base.typesystem)", "5095889050031059992"), "", myProject.getRepository(), myProject.getPlatform()).run();
+      });
+    }
+    public void test_ErrorMessagesCheck9005873059232256215() throws Exception {
+      initTestNodes();
+      runWithinCommand(() -> {
+        SNode nodeToCheck = getNodeById("4125643222385388365");
+        new CheckErrorMessagesRunnable(nodeToCheck, true, false, myProject.getPlatform()).includeSelf(true).exclude(Arrays.<CheckExpectedMessageRunnable>asList()).run();
+      });
+    }
+    public void test_NodeDuplicateNameCheck7401509881541028152() throws Exception {
+      initTestNodes();
+      runWithinCommand(() -> {
+        SNode nodeToCheck = getNodeById("7401509881541028150");
+        new CheckExpectedMessageRunnable.CheckExpectedRuleMessageRunnable(nodeToCheck, MessageStatus.ERROR, new SNodePointer("r:1b0f275e-bd62-4f6e-8c4b-51b05d651a63(com.mbeddr.core.base.typesystem)", "5095889050031059992"), "", myProject.getRepository(), myProject.getPlatform()).run();
+      });
+    }
+    public void test_NodeDuplicateNameCheck7401509881541026050() throws Exception {
+      initTestNodes();
+      runWithinCommand(() -> {
+        SNode nodeToCheck = getNodeById("7401509881541026048");
+        new CheckExpectedMessageRunnable.CheckExpectedRuleMessageRunnable(nodeToCheck, MessageStatus.ERROR, new SNodePointer("r:1b0f275e-bd62-4f6e-8c4b-51b05d651a63(com.mbeddr.core.base.typesystem)", "5095889050031059992"), "", myProject.getRepository(), myProject.getPlatform()).run();
+      });
+    }
+    public void test_NodeDuplicateNameCheck7401509881541035061() throws Exception {
+      initTestNodes();
+      runWithinCommand(() -> {
+        SNode nodeToCheck = getNodeById("7401509881541035059");
+        new CheckExpectedMessageRunnable.CheckExpectedRuleMessageRunnable(nodeToCheck, MessageStatus.ERROR, new SNodePointer("r:1b0f275e-bd62-4f6e-8c4b-51b05d651a63(com.mbeddr.core.base.typesystem)", "5095889050031059992"), "", myProject.getRepository(), myProject.getPlatform()).run();
       });
     }
 

@@ -10,6 +10,7 @@ import com.mbeddr.mpsutil.interpreter.rt.IContext;
 import jetbrains.mps.internal.collections.runtime.Sequence;
 import org.iets3.variability.artifacts.base.behavior.IVariabilityAwareArtifact__BehaviorDescriptor;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
+import com.mbeddr.mpsutil.logicalChild.behavior.ILogicalChildOwner__BehaviorDescriptor;
 import org.jetbrains.mps.openapi.language.SAbstractConcept;
 import org.iets3.variability.artifacts.base.behavior.IVariationPointBase__BehaviorDescriptor;
 import com.google.common.cache.Cache;
@@ -63,11 +64,28 @@ public final class EvalVarPointCache {
     return cache.valueOf(config, context);
   }
 
+  /**
+   * Invalidates all cached variation-point evaluation results associated with the given artifact.
+   * It also handles nested IVAAs and logical children.
+   * 
+   * @param mainIVAA the root variability-aware artifact (IVAA) whose evaluation caches should be flushed
+   */
   public static void flushCaches(SNode mainIVAA) {
     Iterable<SNode> ivaas = Sequence.fromIterable(Sequence.<SNode>singleton(mainIVAA)).concat(Sequence.fromIterable(IVariabilityAwareArtifact__BehaviorDescriptor.getDependenciesTransitivePlain_id3hajdyqDQD6.invoke(mainIVAA)));
     for (SNode ivaa : Sequence.fromIterable(ivaas)) {
-      ListSequence.fromList(SNodeOperations.getNodeDescendants(ivaa, CONCEPTS.IVariationPointBase$F1, false, new SAbstractConcept[]{})).visitAll((vp) -> vp.putUserObject(VP_KEY, null));
+      SNode artifact = IVariabilityAwareArtifact__BehaviorDescriptor.artifactRoot_id3q2wVeorTKs.invoke(ivaa);
+      flushCachesAux(artifact);
+      {
+        final SNode logicalChildOwner = artifact;
+        if (SNodeOperations.isInstanceOf(logicalChildOwner, CONCEPTS.ILogicalChildOwner$nQ)) {
+          Sequence.fromIterable(ILogicalChildOwner__BehaviorDescriptor.findLogicalChildren_id7c93VeVMIYV.invoke(logicalChildOwner)).visitAll((it) -> flushCachesAux(it));
+        }
+      }
     }
+  }
+
+  private static void flushCachesAux(SNode top) {
+    ListSequence.fromList(SNodeOperations.getNodeDescendants(top, CONCEPTS.IVariationPointBase$F1, false, new SAbstractConcept[]{})).visitAll((vp) -> vp.putUserObject(VP_KEY, null));
   }
 
   public static ICacheStatistics statistics() {
@@ -147,7 +165,7 @@ public final class EvalVarPointCache {
   private static int getConfigHash(SNode config) {
     Object hash = config.getUserObject(CONFIG_HASH);
     if (hash != null) {
-      return as_57uu7y_a0a0b0x(hash, Integer.class);
+      return as_57uu7y_a0a0b0z(hash, Integer.class);
     }
 
     // cache miss, compute
@@ -167,11 +185,12 @@ public final class EvalVarPointCache {
     return s.getXMLAsString().hashCode();
   }
 
-  private static <T> T as_57uu7y_a0a0b0x(Object o, Class<T> type) {
+  private static <T> T as_57uu7y_a0a0b0z(Object o, Class<T> type) {
     return (type.isInstance(o) ? (T) o : null);
   }
 
   private static final class CONCEPTS {
+    /*package*/ static final SInterfaceConcept ILogicalChildOwner$nQ = MetaAdapterFactory.getInterfaceConcept(0x85a9bace37a140afL, 0x956a7bb1b081a77cL, 0x4d47311ce8608adL, "com.mbeddr.mpsutil.logicalChild.structure.ILogicalChildOwner");
     /*package*/ static final SInterfaceConcept IVariationPointBase$F1 = MetaAdapterFactory.getInterfaceConcept(0xf08835038eaa4bc8L, 0x8846eb63220ab1ddL, 0x19503178dec840e6L, "org.iets3.variability.artifacts.base.structure.IVariationPointBase");
     /*package*/ static final SConcept FeatureModelConfiguration$nE = MetaAdapterFactory.getConcept(0x71226ee2bbc445d2L, 0xa41d20b97237156cL, 0x5cf5c0d0479ec915L, "org.iets3.variability.configuration.base.structure.FeatureModelConfiguration");
   }

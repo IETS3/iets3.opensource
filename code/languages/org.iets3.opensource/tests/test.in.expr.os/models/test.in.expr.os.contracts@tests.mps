@@ -173,9 +173,7 @@
         <reference id="543569365051789114" name="constant" index="_emDf" />
       </concept>
       <concept id="543569365052765011" name="org.iets3.core.expr.toplevel.structure.EmptyToplevelContent" flags="ng" index="_ixoA" />
-      <concept id="6527211908667934109" name="org.iets3.core.expr.toplevel.structure.EnumIsTarget" flags="ng" index="2JjPkS">
-        <reference id="6527211908668528862" name="literal" index="2Jt$xV" />
-      </concept>
+      <concept id="6527211908667934109" name="org.iets3.core.expr.toplevel.structure.EnumIsTarget" flags="ng" index="2JjPkS" />
       <concept id="3315773615451992747" name="org.iets3.core.expr.toplevel.structure.TypedefContractValExpr" flags="ng" index="QCKKy" />
       <concept id="8811147530085329320" name="org.iets3.core.expr.toplevel.structure.RecordLiteral" flags="ng" index="2S399m">
         <child id="8811147530085329323" name="memberValues" index="2S399l" />
@@ -195,6 +193,9 @@
       </concept>
       <concept id="4790956042240570348" name="org.iets3.core.expr.toplevel.structure.FunctionCall" flags="ng" index="1af_rf" />
       <concept id="4790956042240148643" name="org.iets3.core.expr.toplevel.structure.Function" flags="ng" index="1aga60" />
+      <concept id="3733519373265811331" name="org.iets3.core.expr.toplevel.structure.AbstractEnumSingleInTarget" flags="ng" index="3Qn1ul">
+        <reference id="3859154905221301135" name="literal" index="2ZoBHZ" />
+      </concept>
       <concept id="7740953487936183912" name="org.iets3.core.expr.toplevel.structure.Typedef" flags="ng" index="1WbbD7">
         <child id="7740953487936183915" name="originalType" index="1WbbD4" />
       </concept>
@@ -1428,7 +1429,7 @@
                   <node concept="3izI60" id="5ipapt3EfFo" role="2lDidJ">
                     <node concept="1QScDb" id="5ipapt3EfFp" role="2lDidJ">
                       <node concept="2JjPkS" id="5ipapt3EfFq" role="1QScD9">
-                        <ref role="2Jt$xV" node="5ipapt3EfET" resolve="male" />
+                        <ref role="2ZoBHZ" node="5ipapt3EfET" resolve="male" />
                       </node>
                       <node concept="1QScDb" id="5ipapt3EfFr" role="2lDidJ">
                         <node concept="3o_JK" id="5ipapt3EfFs" role="1QScD9">
@@ -1505,7 +1506,7 @@
                   <node concept="3izI60" id="5ipapt3EfFT" role="2lDidJ">
                     <node concept="1QScDb" id="5ipapt3EfFU" role="2lDidJ">
                       <node concept="2JjPkS" id="5ipapt3EfFV" role="1QScD9">
-                        <ref role="2Jt$xV" node="5ipapt3EfET" resolve="male" />
+                        <ref role="2ZoBHZ" node="5ipapt3EfET" resolve="male" />
                       </node>
                       <node concept="1QScDb" id="5ipapt3EfFW" role="2lDidJ">
                         <node concept="3o_JK" id="5ipapt3EfFX" role="1QScD9">
@@ -1581,7 +1582,7 @@
                   <node concept="3izI60" id="5ipapt3IJBe" role="2lDidJ">
                     <node concept="1QScDb" id="5ipapt3IJBf" role="2lDidJ">
                       <node concept="2JjPkS" id="5ipapt3IJBg" role="1QScD9">
-                        <ref role="2Jt$xV" node="5ipapt3EfET" resolve="male" />
+                        <ref role="2ZoBHZ" node="5ipapt3EfET" resolve="male" />
                       </node>
                       <node concept="1QScDb" id="5ipapt3IJBh" role="2lDidJ">
                         <node concept="3o_JK" id="5ipapt3IJBi" role="1QScD9">
@@ -1663,7 +1664,7 @@
                   <node concept="3izI60" id="5ipapt3EfGq" role="2lDidJ">
                     <node concept="1QScDb" id="5ipapt3EfGr" role="2lDidJ">
                       <node concept="2JjPkS" id="5ipapt3EfGs" role="1QScD9">
-                        <ref role="2Jt$xV" node="5ipapt3EfET" resolve="male" />
+                        <ref role="2ZoBHZ" node="5ipapt3EfET" resolve="male" />
                       </node>
                       <node concept="1QScDb" id="5ipapt3EfGt" role="2lDidJ">
                         <node concept="3o_JK" id="5ipapt3EfGu" role="1QScD9">
@@ -1735,7 +1736,7 @@
                   <node concept="3izI60" id="5ipapt3EfGT" role="2lDidJ">
                     <node concept="1QScDb" id="5ipapt3EfGU" role="2lDidJ">
                       <node concept="2JjPkS" id="5ipapt3EfGV" role="1QScD9">
-                        <ref role="2Jt$xV" node="5ipapt3EfET" resolve="male" />
+                        <ref role="2ZoBHZ" node="5ipapt3EfET" resolve="male" />
                       </node>
                       <node concept="1QScDb" id="5ipapt3EfGW" role="2lDidJ">
                         <node concept="3o_JK" id="5ipapt3EfGX" role="1QScD9">
@@ -1805,7 +1806,7 @@
                   <node concept="3izI60" id="5ipapt3EfHn" role="2lDidJ">
                     <node concept="1QScDb" id="5ipapt3EfHo" role="2lDidJ">
                       <node concept="2JjPkS" id="5ipapt3EfHp" role="1QScD9">
-                        <ref role="2Jt$xV" node="5ipapt3EfET" resolve="male" />
+                        <ref role="2ZoBHZ" node="5ipapt3EfET" resolve="male" />
                       </node>
                       <node concept="1QScDb" id="5ipapt3EfHq" role="2lDidJ">
                         <node concept="3o_JK" id="5ipapt3EfHr" role="1QScD9">

@@ -32,7 +32,7 @@ public final class EnumIsTarget__BehaviorDescriptor extends BaseBHDescriptor {
   }
 
   /*package*/ static String renderReadable_id6kR0qIbI2yi(@NotNull SNode __thisNode__) {
-    return "is(" + SPropertyOperations.getString(SLinkOperations.getTarget(__thisNode__, LINKS.literal$lbzw), PROPS.name$MnvL) + ")";
+    return "is(" + SPropertyOperations.getString(SLinkOperations.getTarget(__thisNode__, LINKS.literal$7Jlb), PROPS.name$MnvL) + ")";
   }
 
   /*package*/ EnumIsTarget__BehaviorDescriptor() {
@@ -82,7 +82,7 @@ public final class EnumIsTarget__BehaviorDescriptor extends BaseBHDescriptor {
   }
 
   private static final class LINKS {
-    /*package*/ static final SReferenceLink literal$lbzw = MetaAdapterFactory.getReferenceLink(0x71934284d7d145eeL, 0xa0548c072591085fL, 0x5a9550a5f5da059dL, 0x5a9550a5f5e318deL, "literal");
+    /*package*/ static final SReferenceLink literal$7Jlb = MetaAdapterFactory.getReferenceLink(0x71934284d7d145eeL, 0xa0548c072591085fL, 0x33d02016c58c3783L, 0x358e78f08aec038fL, "literal");
   }
 
   private static final class PROPS {

@@ -14,8 +14,11 @@ import java.util.Objects;
 public class TreeWalker {
 
   /**
-   * TODO: Replace this method's body by some method from class "Traversal" (from mpsutil) and deprecate it.
+   * 
+   * 
+   * @deprecated Use com.mbeddr.mpsutil.common.util.Traversal instead.
    */
+  @Deprecated(since = "2026-09-25")
   public static List<SNode> gatherChildren(SNode root, SAbstractConcept childType, SAbstractConcept referenceType, final _FunctionTypes._return_P1_E0<? extends SNode, ? super SNode> extractor) {
     List<SNode> models = new ArrayList<SNode>();
     final List<SNode> visited = new ArrayList<SNode>();

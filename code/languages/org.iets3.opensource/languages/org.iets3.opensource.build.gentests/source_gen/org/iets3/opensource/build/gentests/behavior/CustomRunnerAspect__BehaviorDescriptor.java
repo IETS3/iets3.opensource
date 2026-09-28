@@ -17,30 +17,52 @@ import org.jetbrains.annotations.NotNull;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SConceptOperations;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
 import jetbrains.mps.lang.core.behavior.ScopeProvider__BehaviorDescriptor;
+import jetbrains.mps.scope.EmptyScope;
 import jetbrains.mps.build.util.DescendantsScope;
+import jetbrains.mps.internal.collections.runtime.ListSequence;
+import jetbrains.mps.scope.CompositeScope;
+import com.mbeddr.mpsutil.common.util.Traversal;
+import jetbrains.mps.internal.collections.runtime.Sequence;
+import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
 import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 import org.jetbrains.mps.openapi.language.SInterfaceConcept;
 import org.jetbrains.mps.openapi.language.SConcept;
 import org.jetbrains.mps.openapi.language.SContainmentLink;
+import org.jetbrains.mps.openapi.language.SReferenceLink;
 
 public final class CustomRunnerAspect__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getConcept(0x9d000fbdbdca4a46L, 0xb39bc5ba9e79b38cL, 0x7c5d762302e2d174L, "org.iets3.opensource.build.gentests.structure.CustomRunnerAspect");
 
   public static final SMethod<Scope> getScope_id52_Geb4QDV$ = new SMethodBuilder<Scope>(new SJavaCompoundTypeImpl(Scope.class)).name("getScope").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5811245382203252452L).languageId(0x9b92103b95ca8c0cL, 0xceab519525ea4f22L).build2(SMethodBuilder.createJavaParameter((Class<SAbstractConcept>) ((Class) Object.class), ""), SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""));
+  /*package*/ static final SMethod<List<SNode>> tarnsitiveBuildProjects_idBt8sbO6rFd = new SMethodBuilder<List<SNode>>(new SJavaCompoundTypeImpl((Class<List<SNode>>) ((Class) Object.class))).name("tarnsitiveBuildProjects").modifiers(0, AccessPrivileges.PRIVATE).concept(CONCEPT).baseMethodId(710761437397105357L).languageId(0xb39bc5ba9e79b38cL, 0x9d000fbdbdca4a46L).build2(SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""));
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(getScope_id52_Geb4QDV$);
+  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(getScope_id52_Geb4QDV$, tarnsitiveBuildProjects_idBt8sbO6rFd);
 
   private static void ___init___(@NotNull SNode __thisNode__) {
   }
 
-  /*package*/ static Scope getScope_id52_Geb4QDV$(@NotNull SNode __thisNode__, SAbstractConcept kind, SNode child) {
+  /*package*/ static Scope getScope_id52_Geb4QDV$(@NotNull SNode __thisNode__, final SAbstractConcept kind, SNode child) {
     if (SConceptOperations.isSubConceptOf(SNodeOperations.asSConcept(kind), CONCEPTS.BuildMacro$qd)) {
       return ScopeProvider__BehaviorDescriptor.getScope_id52_Geb4QDV$.invoke(SNodeOperations.getNodeAncestor(__thisNode__, CONCEPTS.ScopeProvider$aq, false, false), kind, child);
     }
+    SNode buildProject = SNodeOperations.getNodeAncestor(__thisNode__, CONCEPTS.BuildProject$ae, false, false);
+    if (buildProject == null) {
+      return new EmptyScope();
+    }
 
-    return DescendantsScope.forNamedElements(SNodeOperations.getNodeAncestor(__thisNode__, CONCEPTS.BuildProject$ae, false, false), LINKS.parts$mGDj, kind);
+    List<DescendantsScope> scopes = ListSequence.fromList(CustomRunnerAspect__BehaviorDescriptor.tarnsitiveBuildProjects_idBt8sbO6rFd.invokeSpecial(__thisNode__, buildProject)).select((it) -> DescendantsScope.forNamedElements(it, LINKS.parts$mGDj, kind)).toList();
+
+    final CompositeScope compositeScope = new CompositeScope();
+    ListSequence.fromList(scopes).visitAll((scope) -> compositeScope.addScope(scope));
+    return compositeScope;
+  }
+  /*package*/ static List<SNode> tarnsitiveBuildProjects_idBt8sbO6rFd(@NotNull SNode __thisNode__, SNode buildProject) {
+    Traversal<SNode> traversal = Traversal.<SNode>create((buildProjectParam) -> Sequence.fromIterable(SNodeOperations.ofConcept(SLinkOperations.getChildren(buildProjectParam, LINKS.dependencies$redY), CONCEPTS.BuildProjectDependency$sN)).select((it) -> SLinkOperations.getTarget(it, LINKS.script$6Ehy)));
+    traversal.doBreadthFirst(buildProject);
+
+    return Sequence.fromIterable(traversal.getVisited()).toList();
   }
 
   /*package*/ CustomRunnerAspect__BehaviorDescriptor() {
@@ -60,6 +82,8 @@ public final class CustomRunnerAspect__BehaviorDescriptor extends BaseBHDescript
     switch (methodIndex) {
       case 0:
         return (T) ((Scope) getScope_id52_Geb4QDV$(node, (SAbstractConcept) parameters[0], (SNode) parameters[1]));
+      case 1:
+        return (T) ((List<SNode>) tarnsitiveBuildProjects_idBt8sbO6rFd(node, (SNode) parameters[0]));
       default:
         throw new BHMethodNotFoundException(this, method);
     }
@@ -93,9 +117,12 @@ public final class CustomRunnerAspect__BehaviorDescriptor extends BaseBHDescript
     /*package*/ static final SInterfaceConcept ScopeProvider$aq = MetaAdapterFactory.getInterfaceConcept(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x33d23ee961a0cbf3L, "jetbrains.mps.lang.core.structure.ScopeProvider");
     /*package*/ static final SConcept BuildMacro$qd = MetaAdapterFactory.getConcept(0x798100da4f0a421aL, 0xb99171f8c50ce5d2L, 0x4df58c6f18f84a1fL, "jetbrains.mps.build.structure.BuildMacro");
     /*package*/ static final SConcept BuildProject$ae = MetaAdapterFactory.getConcept(0x798100da4f0a421aL, 0xb99171f8c50ce5d2L, 0x4df58c6f18f84a13L, "jetbrains.mps.build.structure.BuildProject");
+    /*package*/ static final SConcept BuildProjectDependency$sN = MetaAdapterFactory.getConcept(0x798100da4f0a421aL, 0xb99171f8c50ce5d2L, 0x454b730dd908c220L, "jetbrains.mps.build.structure.BuildProjectDependency");
   }
 
   private static final class LINKS {
     /*package*/ static final SContainmentLink parts$mGDj = MetaAdapterFactory.getContainmentLink(0x798100da4f0a421aL, 0xb99171f8c50ce5d2L, 0x4df58c6f18f84a13L, 0x668c6cfbafacf6f2L, "parts");
+    /*package*/ static final SContainmentLink dependencies$redY = MetaAdapterFactory.getContainmentLink(0x798100da4f0a421aL, 0xb99171f8c50ce5d2L, 0x4df58c6f18f84a13L, 0x4df58c6f18f84a25L, "dependencies");
+    /*package*/ static final SReferenceLink script$6Ehy = MetaAdapterFactory.getReferenceLink(0x798100da4f0a421aL, 0xb99171f8c50ce5d2L, 0x454b730dd908c220L, 0x4df58c6f18f84a24L, "script");
   }
 }

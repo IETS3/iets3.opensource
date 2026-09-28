@@ -118,9 +118,7 @@
         <reference id="543569365051789114" name="constant" index="_emDf" />
       </concept>
       <concept id="543569365052765011" name="org.iets3.core.expr.toplevel.structure.EmptyToplevelContent" flags="ng" index="_ixoA" />
-      <concept id="6527211908667934109" name="org.iets3.core.expr.toplevel.structure.EnumIsTarget" flags="ng" index="2JjPkS">
-        <reference id="6527211908668528862" name="literal" index="2Jt$xV" />
-      </concept>
+      <concept id="6527211908667934109" name="org.iets3.core.expr.toplevel.structure.EnumIsTarget" flags="ng" index="2JjPkS" />
       <concept id="8811147530085329320" name="org.iets3.core.expr.toplevel.structure.RecordLiteral" flags="ng" index="2S399m">
         <child id="8811147530085329323" name="memberValues" index="2S399l" />
       </concept>
@@ -136,6 +134,9 @@
       <concept id="4790956042240148643" name="org.iets3.core.expr.toplevel.structure.Function" flags="ng" index="1aga60" />
       <concept id="2861782275883762391" name="org.iets3.core.expr.toplevel.structure.ExtensionFunctionCall" flags="ng" index="1He9k6">
         <reference id="2861782275883762408" name="extFun" index="1He9kT" />
+      </concept>
+      <concept id="3733519373265811331" name="org.iets3.core.expr.toplevel.structure.AbstractEnumSingleInTarget" flags="ng" index="3Qn1ul">
+        <reference id="3859154905221301135" name="literal" index="2ZoBHZ" />
       </concept>
       <concept id="7740953487936183912" name="org.iets3.core.expr.toplevel.structure.Typedef" flags="ng" index="1WbbD7">
         <child id="7740953487936183915" name="originalType" index="1WbbD4" />
@@ -370,7 +371,7 @@
         <node concept="2fGnzd" id="5ElkanPNlNB" role="2fGnxs">
           <node concept="1QScDb" id="5ElkanPSzBx" role="2fGnzS">
             <node concept="2JjPkS" id="5ElkanPTdh4" role="1QScD9">
-              <ref role="2Jt$xV" node="5ElkanPNlNp" resolve="celcius" />
+              <ref role="2ZoBHZ" node="5ElkanPNlNp" resolve="celcius" />
             </node>
             <node concept="1QScDb" id="5ElkanPNlNE" role="2lDidJ">
               <node concept="3o_JK" id="5ElkanPNlNF" role="1QScD9">

@@ -23,6 +23,7 @@ import jetbrains.mps.internal.collections.runtime.ListSequence;
 import jetbrains.mps.errors.BaseQuickFixProvider;
 import java.util.List;
 import org.apache.commons.lang3.tuple.Pair;
+import org.iets3.variability.configuration.base.plugin.ConfigCombinationLogic;
 import org.jetbrains.mps.openapi.language.SAbstractConcept;
 import org.jetbrains.mps.openapi.language.SInterfaceConcept;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
@@ -172,20 +173,23 @@ public class check_FeatureModelConfiguration_NonTypesystemRule extends AbstractN
     }
 
     if (!((boolean) FeatureModelConfiguration__BehaviorDescriptor.isAbstractConfig_id4onczE5Z3D9.invoke(fmc))) {
-      // If a abstract config is referenced the config itself must be abstract
-      SNode abstractFMI = ListSequence.fromList(SNodeOperations.getNodeDescendants(fmc, CONCEPTS.FeatureModelConfigurationRef$kq, false, new SAbstractConcept[]{})).findFirst((it) -> SPropertyOperations.getBoolean(SLinkOperations.getTarget(it, LINKS.config$VWuN), PROPS.abstract$Wu4W));
-      if (abstractFMI != null) {
-        {
-          final MessageTarget errorTarget = new NodeMessageTarget();
-          IErrorReporter _reporter_2309309498 = typeCheckingContext.reportTypeError(fmc, "Needs to be abstract, at least one abstract Feature Model Configuration referenced. " + SPropertyOperations.getString(SLinkOperations.getTarget(abstractFMI, LINKS.config$VWuN), PROPS.name$MnvL), "r:791971f5-b094-4342-a75c-0ce6c1b43e9d(org.iets3.variability.configuration.base.typesystem)", "4999651317681596651", null, errorTarget);
+      if (!(ConfigCombinationLogic.instance().allowAbstractSubConfigs())) {
+        // If a abstract config is referenced the config itself must be abstract
+        SNode abstractFMI = ListSequence.fromList(SNodeOperations.getNodeDescendants(fmc, CONCEPTS.FeatureModelConfigurationRef$kq, false, new SAbstractConcept[]{})).findFirst((it) -> SPropertyOperations.getBoolean(SLinkOperations.getTarget(it, LINKS.config$VWuN), PROPS.abstract$Wu4W));
+        if (abstractFMI != null) {
           {
-            BaseQuickFixProvider intentionProvider = new BaseQuickFixProvider("org.iets3.variability.configuration.base.typesystem.fix_MakeConfigAbstract_QuickFix", "4999651317689220572", false);
-            intentionProvider.putArgument("fmc", fmc);
-            _reporter_2309309498.addIntentionProvider(intentionProvider);
+            final MessageTarget errorTarget = new NodeMessageTarget();
+            IErrorReporter _reporter_2309309498 = typeCheckingContext.reportTypeError(fmc, "Needs to be abstract, at least one abstract Feature Model Configuration referenced. " + SPropertyOperations.getString(SLinkOperations.getTarget(abstractFMI, LINKS.config$VWuN), PROPS.name$MnvL), "r:791971f5-b094-4342-a75c-0ce6c1b43e9d(org.iets3.variability.configuration.base.typesystem)", "4999651317681596651", null, errorTarget);
+            {
+              BaseQuickFixProvider intentionProvider = new BaseQuickFixProvider("org.iets3.variability.configuration.base.typesystem.fix_MakeConfigAbstract_QuickFix", "4999651317689220572", false);
+              intentionProvider.putArgument("fmc", fmc);
+              _reporter_2309309498.addIntentionProvider(intentionProvider);
+            }
           }
+          return;
         }
-        return;
       }
+
       // Show warnings for missing attributes
       CheckFeatureModelConfigurationUtil.handleAttributes(fmc, (String msg, SNode n) -> {
         {

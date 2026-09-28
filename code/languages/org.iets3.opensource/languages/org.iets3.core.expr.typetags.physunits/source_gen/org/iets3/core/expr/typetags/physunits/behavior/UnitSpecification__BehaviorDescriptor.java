@@ -48,8 +48,9 @@ public final class UnitSpecification__BehaviorDescriptor extends BaseBHDescripto
   public static final SMethod<List<SNode>> components_id1KUmgSF_6Sp = new SMethodBuilder<List<SNode>>(new SJavaCompoundTypeImpl((Class<List<SNode>>) ((Class) Object.class))).name("components").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(2034036099106762265L).languageId(0x86ed2c6daa33cd8cL, 0x7ee265bd59864709L).build2();
   public static final SMethod<Boolean> isSameAs_id4HxogODPWaJ = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("isSameAs").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5431729334750003887L).languageId(0xa9df73d9e86c27d3L, 0x5186c6ce428c4f09L).build2(SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""));
   public static final SMethod<Boolean> requireBraces_id3wrpJuuH6pN = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("requireBraces").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(4042938304200730227L).languageId(0xa9df73d9e86c27d3L, 0x5186c6ce428c4f09L).build2();
+  public static final SMethod<Boolean> contributesToLiteralSideTransform_id6OI5j2OlTY_ = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("contributesToLiteralSideTransform").modifiers(9, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(7867248897991090085L).languageId(0xa9df73d9e86c27d3L, 0x5186c6ce428c4f09L).build2();
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(getExpression_id6q45UTytEvW, getPresentation_idhEwIMiw, canTagExpression_id2Ux6GHgZEiG, getName_id76ZhK6XVfon, getDescription_id76ZhK6XViJl, getTaggedExpressionScope_id76ZhK6XUPd6, canSubstitute_id42$mjgeIjbE, combine_idV9WAJSLzx5, subsumes_id1RcasK0V7Pl, getGroupingTagConcept_idx_aN5M65iL, components_id1KUmgSF_6Sp, isSameAs_id4HxogODPWaJ, requireBraces_id3wrpJuuH6pN);
+  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(getExpression_id6q45UTytEvW, getPresentation_idhEwIMiw, canTagExpression_id2Ux6GHgZEiG, getName_id76ZhK6XVfon, getDescription_id76ZhK6XViJl, getTaggedExpressionScope_id76ZhK6XUPd6, canSubstitute_id42$mjgeIjbE, combine_idV9WAJSLzx5, subsumes_id1RcasK0V7Pl, getGroupingTagConcept_idx_aN5M65iL, components_id1KUmgSF_6Sp, isSameAs_id4HxogODPWaJ, requireBraces_id3wrpJuuH6pN, contributesToLiteralSideTransform_id6OI5j2OlTY_);
 
   private static void ___init___(@NotNull SNode __thisNode__) {
   }
@@ -100,6 +101,9 @@ public final class UnitSpecification__BehaviorDescriptor extends BaseBHDescripto
   }
   /*package*/ static boolean requireBraces_id3wrpJuuH6pN(@NotNull SNode __thisNode__) {
     return ListSequence.fromList(SNodeOperations.getNodeDescendants(SLinkOperations.getTarget(SNodeOperations.getNodeAncestor(__thisNode__, CONCEPTS.TaggedExpression$jU, false, false), LINKS.expr$CW3E), null, true, new SAbstractConcept[]{})).count() > 1;
+  }
+  /*package*/ static boolean contributesToLiteralSideTransform_id6OI5j2OlTY_(@NotNull SAbstractConcept __thisConcept__) {
+    return false;
   }
 
   /*package*/ UnitSpecification__BehaviorDescriptor() {
@@ -155,6 +159,8 @@ public final class UnitSpecification__BehaviorDescriptor extends BaseBHDescripto
         return (T) ((Boolean) subsumes_id1RcasK0V7Pl(concept, (SNode) parameters[0], (SNode) parameters[1]));
       case 9:
         return (T) ((SAbstractConcept) getGroupingTagConcept_idx_aN5M65iL(concept));
+      case 13:
+        return (T) ((Boolean) contributesToLiteralSideTransform_id6OI5j2OlTY_(concept));
       default:
         throw new BHMethodNotFoundException(this, method);
     }

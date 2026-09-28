@@ -9,6 +9,8 @@ import org.jetbrains.mps.openapi.language.SAbstractConcept;
 import jetbrains.mps.smodel.runtime.ConceptPresentationBuilder;
 
 public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase {
+  private ConceptPresentation props_AbstractEnumInTarget;
+  private ConceptPresentation props_AbstractEnumSingleInTarget;
   private ConceptPresentation props_AbstractEnumSortOrder;
   private ConceptPresentation props_AbstractFunctionAdapter;
   private ConceptPresentation props_AbstractFunctionLikeAdapter;
@@ -26,6 +28,8 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
   private ConceptPresentation props_EnumIndexOp;
   private ConceptPresentation props_EnumIsInSelector;
   private ConceptPresentation props_EnumIsInTarget;
+  private ConceptPresentation props_EnumIsNotInTarget;
+  private ConceptPresentation props_EnumIsNotTarget;
   private ConceptPresentation props_EnumIsTarget;
   private ConceptPresentation props_EnumLiteral;
   private ConceptPresentation props_EnumLiteralRef;
@@ -87,6 +91,18 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
   public ConceptPresentation getDescriptor(SAbstractConcept c) {
     StructureAspectDescriptor structureDescriptor = (StructureAspectDescriptor) myLanguageRuntime.getAspect(jetbrains.mps.smodel.runtime.StructureAspectDescriptor.class);
     switch (structureDescriptor.internalIndex(c)) {
+      case LanguageConceptSwitch.AbstractEnumInTarget:
+        if (props_AbstractEnumInTarget == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          props_AbstractEnumInTarget = cpb.create();
+        }
+        return props_AbstractEnumInTarget;
+      case LanguageConceptSwitch.AbstractEnumSingleInTarget:
+        if (props_AbstractEnumSingleInTarget == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          props_AbstractEnumSingleInTarget = cpb.create();
+        }
+        return props_AbstractEnumSingleInTarget;
       case LanguageConceptSwitch.AbstractEnumSortOrder:
         if (props_AbstractEnumSortOrder == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
@@ -157,7 +173,7 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
           cpb.shortDesc("a global constant");
           cpb.presentationByName();
-          cpb.icon(IconContainer.RESOURCE_a0a3a0a9b0vc);
+          cpb.icon(IconContainer.RESOURCE_a0a3a0a11b0zc);
           props_Constant = cpb.create();
         }
         return props_Constant;
@@ -190,7 +206,7 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
           cpb.shortDesc("an enumeration declaration");
           cpb.presentationByName();
-          cpb.icon(IconContainer.RESOURCE_a0a3a0a31b0vc);
+          cpb.icon(IconContainer.RESOURCE_a0a3a0a51b0zc);
           props_EnumDeclaration = cpb.create();
         }
         return props_EnumDeclaration;
@@ -212,15 +228,33 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
         return props_EnumIsInSelector;
       case LanguageConceptSwitch.EnumIsInTarget:
         if (props_EnumIsInTarget == null) {
-          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder(0x71934284d7d145eeL, 0xa0548c072591085fL, 0x6f1c76e8c8cb0187L);
+          cpb.deprecateAggregation(0x6f1c76e8c8cb018aL, "selectors_old");
           cpb.shortDesc("check the enumeration literal against several literals");
           cpb.rawPresentation("isIn");
           props_EnumIsInTarget = cpb.create();
         }
         return props_EnumIsInTarget;
+      case LanguageConceptSwitch.EnumIsNotInTarget:
+        if (props_EnumIsNotInTarget == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.shortDesc("check the enumeration literal is NOT in several literals");
+          cpb.rawPresentation("isNotIn");
+          props_EnumIsNotInTarget = cpb.create();
+        }
+        return props_EnumIsNotInTarget;
+      case LanguageConceptSwitch.EnumIsNotTarget:
+        if (props_EnumIsNotTarget == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.shortDesc("check the enumeration literal is NOT equal to another literal");
+          cpb.rawPresentation("isNot");
+          props_EnumIsNotTarget = cpb.create();
+        }
+        return props_EnumIsNotTarget;
       case LanguageConceptSwitch.EnumIsTarget:
         if (props_EnumIsTarget == null) {
-          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder(0x71934284d7d145eeL, 0xa0548c072591085fL, 0x5a9550a5f5da059dL);
+          cpb.deprecateAssociation(0x5a9550a5f5e318deL, "literal_old");
           cpb.shortDesc("check the enumeration literal against another literal");
           cpb.rawPresentation("is");
           props_EnumIsTarget = cpb.create();
@@ -310,7 +344,7 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           cpb.deprecateProperty(0x27b717d14a8df4edL, "ext_old");
           cpb.shortDesc("a function");
           cpb.presentationByName();
-          cpb.icon(IconContainer.RESOURCE_a0a4a0a82b0vc);
+          cpb.icon(IconContainer.RESOURCE_a0a4a0a23b0zc);
           props_Function = cpb.create();
         }
         return props_Function;
@@ -472,7 +506,7 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
           cpb.shortDesc("a library");
           cpb.presentationByName();
-          cpb.icon(IconContainer.RESOURCE_a0a3a0a15b0vc);
+          cpb.icon(IconContainer.RESOURCE_a0a3a0a55b0zc);
           props_Library = cpb.create();
         }
         return props_Library;
@@ -554,7 +588,7 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           cpb.deprecateAggregation(0x7a477bfec237e8f0L, "members_old");
           cpb.shortDesc("a record (structure with named members)");
           cpb.presentationByName();
-          cpb.icon(IconContainer.RESOURCE_a0a4a0a16b0vc);
+          cpb.icon(IconContainer.RESOURCE_a0a4a0a56b0zc);
           props_RecordDeclaration = cpb.create();
         }
         return props_RecordDeclaration;
@@ -619,7 +653,7 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
           cpb.shortDesc("a derived (constrained) type based on an existing type");
           cpb.presentationByName();
-          cpb.icon(IconContainer.RESOURCE_a0a3a0a96b0vc);
+          cpb.icon(IconContainer.RESOURCE_a0a3a0a37b0zc);
           props_Typedef = cpb.create();
         }
         return props_Typedef;

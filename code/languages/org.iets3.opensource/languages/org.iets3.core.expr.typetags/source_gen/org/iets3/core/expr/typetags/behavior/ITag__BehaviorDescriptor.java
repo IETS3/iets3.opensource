@@ -40,8 +40,9 @@ public final class ITag__BehaviorDescriptor extends BaseBHDescriptor {
   public static final SMethod<SNode> getBaseTag_id1RcasK0UAlt = new SMethodBuilder<SNode>(new SJavaCompoundTypeImpl((Class<SNode>) ((Class) Object.class))).name("getBaseTag").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(2147137078514312541L).languageId(0xa9df73d9e86c27d3L, 0x5186c6ce428c4f09L).build2();
   public static final SMethod<Boolean> canBeNegated_id6KxoTHgKls2 = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("canBeNegated").modifiers(9, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(7791618349053597442L).languageId(0xa9df73d9e86c27d3L, 0x5186c6ce428c4f09L).build2();
   public static final SMethod<Boolean> requireBraces_id3wrpJuuH6pN = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("requireBraces").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(4042938304200730227L).languageId(0xa9df73d9e86c27d3L, 0x5186c6ce428c4f09L).build2();
+  public static final SMethod<Boolean> contributesToLiteralSideTransform_id6OI5j2OlTY_ = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("contributesToLiteralSideTransform").modifiers(9, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(7867248897991090085L).languageId(0xa9df73d9e86c27d3L, 0x5186c6ce428c4f09L).build2();
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(canTagExpression_id2Ux6GHgZEiG, canTagExpression_id52qjO8Ir6jN, canSubstitute_id42$mjgeIjbE, getTaggedExpressionScope_id76ZhK6XUPd6, getName_id76ZhK6XVfon, getDescription_id76ZhK6XViJl, isSameAs_id4HxogODPWaJ, combine_old_id4HxogODTmVB, combine_idV9WAJSLzx5, subsumes_id1RcasK0V7Pl, getDefault_id1WJTL5jvcNW, getGroupingTagConcept_idx_aN5M65iL, isAtLeast_id52gSz9iqRup, IsAtMost_id52gSz9iqREL, isNegative_id1RcasK0SECn, isPositive_id1RcasK0V9pJ, getBaseTag_id1RcasK0UAlt, canBeNegated_id6KxoTHgKls2, requireBraces_id3wrpJuuH6pN);
+  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(canTagExpression_id2Ux6GHgZEiG, canTagExpression_id52qjO8Ir6jN, canSubstitute_id42$mjgeIjbE, getTaggedExpressionScope_id76ZhK6XUPd6, getName_id76ZhK6XVfon, getDescription_id76ZhK6XViJl, isSameAs_id4HxogODPWaJ, combine_old_id4HxogODTmVB, combine_idV9WAJSLzx5, subsumes_id1RcasK0V7Pl, getDefault_id1WJTL5jvcNW, getGroupingTagConcept_idx_aN5M65iL, isAtLeast_id52gSz9iqRup, IsAtMost_id52gSz9iqREL, isNegative_id1RcasK0SECn, isPositive_id1RcasK0V9pJ, getBaseTag_id1RcasK0UAlt, canBeNegated_id6KxoTHgKls2, requireBraces_id3wrpJuuH6pN, contributesToLiteralSideTransform_id6OI5j2OlTY_);
 
   private static void ___init___(@NotNull SNode __thisNode__) {
   }
@@ -128,6 +129,9 @@ public final class ITag__BehaviorDescriptor extends BaseBHDescriptor {
   /*package*/ static boolean requireBraces_id3wrpJuuH6pN(@NotNull SNode __thisNode__) {
     return false;
   }
+  /*package*/ static boolean contributesToLiteralSideTransform_id6OI5j2OlTY_(@NotNull SAbstractConcept __thisConcept__) {
+    return true;
+  }
 
   /*package*/ ITag__BehaviorDescriptor() {
   }
@@ -194,6 +198,8 @@ public final class ITag__BehaviorDescriptor extends BaseBHDescriptor {
         return (T) ((SAbstractConcept) getGroupingTagConcept_idx_aN5M65iL(concept));
       case 17:
         return (T) ((Boolean) canBeNegated_id6KxoTHgKls2(concept));
+      case 19:
+        return (T) ((Boolean) contributesToLiteralSideTransform_id6OI5j2OlTY_(concept));
       default:
         throw new BHMethodNotFoundException(this, method);
     }
