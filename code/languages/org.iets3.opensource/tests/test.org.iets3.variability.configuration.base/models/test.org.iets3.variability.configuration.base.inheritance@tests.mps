@@ -14,6 +14,7 @@
     <use id="c7fb639f-be78-4307-89b0-b5959c3fa8c8" name="jetbrains.mps.lang.text" version="0" />
     <use id="6b277d9a-d52d-416f-a209-1919bd737f50" name="org.iets3.core.expr.simpleTypes" version="11" />
     <use id="d7a92d38-f7db-40d0-8431-763b0c3c9f20" name="jetbrains.mps.lang.intentions" version="1" />
+    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="12" />
   </languages>
   <imports>
     <import index="lte6" ref="r:dedd19c9-9ff3-4f30-aa73-ce61203b2296(org.iets3.variability.configuration.base.behavior)" />
@@ -125,8 +126,12 @@
       <concept id="1178549954367" name="jetbrains.mps.baseLanguage.structure.IVisible" flags="ngI" index="1B3ioH">
         <child id="1178549979242" name="visibility" index="1B3o_S" />
       </concept>
+      <concept id="6329021646629104957" name="jetbrains.mps.baseLanguage.structure.TextCommentPart" flags="nn" index="3SKdUq">
+        <property id="6329021646629104958" name="text" index="3SKdUp" />
+      </concept>
       <concept id="6329021646629104954" name="jetbrains.mps.baseLanguage.structure.SingleLineComment" flags="nn" index="3SKdUt">
         <child id="8356039341262087992" name="line" index="1aUNEU" />
+        <child id="6329021646629175155" name="commentPart" index="3SKWNk" />
       </concept>
       <concept id="1146644602865" name="jetbrains.mps.baseLanguage.structure.PublicVisibility" flags="nn" index="3Tm1VV" />
       <concept id="1146644623116" name="jetbrains.mps.baseLanguage.structure.PrivateVisibility" flags="nn" index="3Tm6S6" />
@@ -290,6 +295,7 @@
       <concept id="1171983834376" name="jetbrains.mps.baseLanguage.unitTest.structure.AssertFalse" flags="nn" index="3vFxKo">
         <child id="1171983854940" name="condition" index="3vFALc" />
       </concept>
+      <concept id="1171985735491" name="jetbrains.mps.baseLanguage.unitTest.structure.AssertSame" flags="nn" index="3vMLTj" />
       <concept id="1172028177041" name="jetbrains.mps.baseLanguage.unitTest.structure.AssertIsNull" flags="nn" index="3ykFI1">
         <child id="1172028236559" name="expression" index="3ykU8v" />
       </concept>
@@ -8768,6 +8774,93 @@
           <node concept="7OXhh" id="1HFAdoN0cr6" role="7EUXB">
             <property role="G7GLQ" value="false" />
             <property role="G7GLP" value="false" />
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="1lH9Xt" id="5plP6f7IDDH">
+    <property role="TrG5h" value="FindConfigurationThroughFeatureModelInclude" />
+    <property role="3DII0k" value="command" />
+    <node concept="1qefOq" id="5plP6f7IDDI" role="1SKRRt">
+      <node concept="12icEM" id="5plP6f7IDDJ" role="1qenE9">
+        <property role="TrG5h" value="V" />
+        <node concept="12iwZl" id="5plP6f7IDDK" role="12i2BX">
+          <property role="bVyBI" value="527115853" />
+          <node concept="12iwV3" id="5plP6f7IDDL" role="12iwV8">
+            <property role="TrG5h" value="Body" />
+            <node concept="12iwV3" id="5plP6f7IDDM" role="12iwVe">
+              <property role="TrG5h" value="Red" />
+              <node concept="3xLA65" id="5plP6f7IDDN" role="lGtFl">
+                <property role="TrG5h" value="red" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="12i7jc" id="5plP6f7IDDO" role="12i2BX" />
+        <node concept="12iwZl" id="5plP6f7IDDP" role="12i2BX">
+          <property role="bVyBI" value="-174655605" />
+          <node concept="12iwV3" id="5plP6f7IDDQ" role="12iwV8">
+            <property role="TrG5h" value="Car" />
+            <node concept="12iSMG" id="5plP6f7IDDR" role="12iwVe">
+              <property role="TrG5h" value="body" />
+              <ref role="12iSMH" node="5plP6f7IDDK" resolve="Body" />
+            </node>
+          </node>
+        </node>
+        <node concept="12i7jc" id="5plP6f7IDDS" role="12i2BX" />
+        <node concept="rqKB5" id="5plP6f7IDDT" role="12i2BX">
+          <property role="TrG5h" value="CCar" />
+          <property role="bVyBI" value="1253808928" />
+          <property role="bROok" value="-1013932385" />
+          <property role="26YOJW" value="" />
+          <property role="0Rz4W" value="1661926390" />
+          <property role="1n_0Gn" value="true" />
+          <property role="1nQUAq" value="true" />
+          <ref role="rqKBe" node="5plP6f7IDDQ" resolve="Car" />
+          <node concept="3xLA65" id="5plP6f7IDDU" role="lGtFl">
+            <property role="TrG5h" value="car" />
+          </node>
+          <node concept="rqCGG" id="5plP6f7IDDV" role="rqCGo">
+            <node concept="rqKBd" id="5plP6f7IDDW" role="rqKBa">
+              <ref role="rqKBe" node="5plP6f7IDDR" resolve="body" />
+              <node concept="rqCGG" id="5plP6f7IDDX" role="rqCGo">
+                <node concept="rqKBd" id="5plP6f7IDDY" role="rqKBa">
+                  <ref role="rqKBe" node="5plP6f7IDDM" resolve="Red" />
+                  <node concept="3xLA65" id="5plP6f7IDDZ" role="lGtFl">
+                    <property role="TrG5h" value="redCfg" />
+                  </node>
+                  <node concept="rqCGG" id="5plP6f7IDE0" role="rqCGo" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1LZb2c" id="5plP6f7IDE1" role="1SL9yI">
+      <property role="TrG5h" value="findConfigOfFeatureInIncludedFeatureModel" />
+      <node concept="3cqZAl" id="5plP6f7IDE2" role="3clF45" />
+      <node concept="3clFbS" id="5plP6f7IDE3" role="3clF47">
+        <node concept="3SKdUt" id="5plP6f7IDE4" role="3cqZAp">
+          <node concept="3SKdUq" id="5plP6f7IDE5" role="3SKWNk">
+            <property role="3SKdUp" value="Path from Car to Red is [body, Body, Red], but the configuration has no node for the included root 'Body'" />
+          </node>
+        </node>
+        <node concept="3vMLTj" id="5plP6f7IDE6" role="3cqZAp">
+          <node concept="3xONca" id="5plP6f7IDE7" role="3tpDZB">
+            <ref role="3xOPvv" node="5plP6f7IDDZ" resolve="redCfg" />
+          </node>
+          <node concept="2OqwBi" id="5plP6f7IDE8" role="3tpDZA">
+            <node concept="3xONca" id="5plP6f7IDE9" role="2Oq$k0">
+              <ref role="3xOPvv" node="5plP6f7IDDU" resolve="car" />
+            </node>
+            <node concept="2qgKlT" id="5plP6f7IDEa" role="2OqNvi">
+              <ref role="37wK5l" to="lte6:4zfp5i3BhvO" resolve="findConfiguration" />
+              <node concept="3xONca" id="5plP6f7IDEb" role="37wK5m">
+                <ref role="3xOPvv" node="5plP6f7IDDN" resolve="red" />
+              </node>
+            </node>
           </node>
         </node>
       </node>
