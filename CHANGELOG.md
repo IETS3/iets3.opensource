@@ -7,22 +7,32 @@ The project does _not_ follow Semantic Versioning and the changes are documented
 
 ## September 2026
 
-### Added
-- Variability: New intention "Adapt Extending Configurations to Changes" on abstract feature model configurations. It propagates changes of the abstract configuration to *all* transitively extending configurations in one step (with progress reporting), instead of applying the per-configuration fix "Adapt this Configuration to the extended Configuration" one-by-one.
-
 ### Changed
+- KernelF: `EnumLiteral` now implements `ISmartReferent` and derives its `resolveInfo` from the same presentation (qualified for a qualified enum, bare otherwise), so completion, the editor cell and `renderReadable()` agree. The hand-written `EnumLiteralRef` substitute menus and the qualified filter in its scope were dropped in favour of the smart-reference machinery MPS generates. The auxiliary concept `QualifierRef` was removed; it had no instances and was never part of a valid model, so no migration is required.
 - Variability: The update-configurations tasks were refactored - the common functionality of the tasks updating one, all, or all extending configurations now lives in the shared base classes `AbstractUpdateConfigsTask` / `ConfigFromFeatureModelUpdater`.
 
 ### Fixed
--  Physical units: Units are no longer offered twice in the code completion menu of a number literal.
+- KernelF: an exception thrown by the interpreter no longer costs the whole trace. `Show Trace` now opens with everything that was computed before the exception, and the node that threw is marked with the exception and highlighted in the trace tree. This covers the generic trace roots (functions, constants, function calls) as well as the test items, whose `catch` branches used to drop the trace.
+- KernelF: `renderReadable()` of the `isIn`/`isNotIn` enumeration dot targets rendered `isIn([, , ])` instead of `isIn(blue, green, red)`: the separator was joined onto each selector's presentation instead of onto the sequence, which resolved to the varargs `String.join(CharSequence, CharSequence...)` with no elements.
+- KernelF: the `is`/`isIn` enumeration dot targets are backwards compatible with models that have not run the "move link up" migration of the `EnumIsTarget`/`EnumIsInTarget` refactoring yet. `EnumIsTarget` and `EnumIsInTarget` now have their own editors that show the deprecated `literal_old`/`selectors_old` elements in red, hidden as soon as the deprecated reference/child is empty. Behavior, generator and interpreter read the value through the new `AbstractEnumSingleInTarget.effectiveLiteral()`/`AbstractEnumInTarget.effectiveSelectors()` behavior methods, which the two legacy concepts override to fall back to the deprecated link, so an unmigrated model still renders, interprets and generates correctly.
+- KernelF: `RecordValue` no longer throws a `NullPointerException` from `equals` or `compareTo` when a record member has no value, nor from `compareTo` for inline records, which carry no record declaration. `equals`, `hashCode` and `compareTo` are consistent with each other again, so record values behave correctly in Java-side hash-based and sorted collections.
+- KernelF: a broken reference to a literal of a qualified enum no longer rebinds to a same-named literal of a different enum, because the persisted `resolve=` info now carries the qualified name instead of the simple one.
+- KernelF: entries in the trace explorer are no longer truncated after a very low character limit, which made traces hard to read. The limit was raised and the tooltip now shows the full, untruncated text.
+- KernelF: Consistent usage of indent layout in Expression concepts.
+- KernelF: Added a workaround that allows the deletion of whole number literals nodes by pressing BACKSPACE or DELETE in case that the number literal value is presented in hexadecimal format. This kind of deletion was only possible for decimal number literals before due to an internal implementation problem.
+Physical units: Units are no longer offered twice in the code completion menu of a number literal.
 - Variability: Intention "Adapt this configuration to the extended configuration" no longer skips sub-configurations whose content is still unspecified. Such a content is now materialized as an inline configuration derived from the referenced feature model, so the values of the extended configuration are inherited.
 
+
+### Added
+- Variability: New intention "Adapt Extending Configurations to Changes" on abstract feature model configurations. It propagates changes of the abstract configuration to *all* transitively extending configurations in one step (with progress reporting), instead of applying the per-configuration fix "Adapt this Configuration to the extended Configuration" one-by-one.
 
 ## August 2026
 
 ### Fixed
 - Improve uniqueness name check of `IFunctionLike` `getUniquelyNamedElements()` behavior to avoid overzealous checking.
 - Variability: Feature attribute values are not overwritten anymore if the value stays the same. This avoids changing the model if not necessary, esp. it avoids merge conflicts.
+- `IFunctionLike` `getUniquelyNamedElements()` no longer reports duplicate names for commented out code.
 
 
 ## July 2026
@@ -55,6 +65,7 @@ The project does _not_ follow Semantic Versioning and the changes are documented
 - Variability: The editing of feature models in tree layout has been improved. E.g., typing ENTER on a feature will create a new sibling. Typing ":" in a feature's name will change it to a feature model include node. The intentions "Change to feature / feature model include" previously lost information about the feature, this is also fixed.
 - Variability: Fix workaround for using for-all-variants checking rules outside the IDE (e.g., on a build server). Due to MPS-34340, the for-all-variants checking cannot be done outside the IDE if the model under check has more than one root nodes. This bugfix includes roots of LogicalChildren in the list of used root nodes.
 - Physical units (language `org.iets3.core.expr.typetags.physunits`): Update unit in typesystem after prefix has been removed (e.g., from "cm" to "m").
+- `org.iets3.core.expr.datetime.runtime` catch DateTimeException causing an internal interpreter exception ([#1773](https://github.com/IETS3/iets3.opensource/issues/1773))
 
 
 ## April 2026
@@ -86,6 +97,7 @@ The project does _not_ follow Semantic Versioning and the changes are documented
 - Fixed a bug in the `execTestsByInterpreter` task which would result in a wrong JNA path
 - Variability: Newly created feature models will not show a "Property constraint violation" error anymore.
 
+- Hexadecimal number support now works for MPS 2025.1 and above.
 
 ## February 2026
 
@@ -143,13 +155,18 @@ The project does _not_ follow Semantic Versioning and the changes are documented
 
 - The Maven POM now contains all bundled JARs as dependencies with `provided` scope to help with automated license and
   vulnerability scanning.
+- The Grammar Cells of KernelF editors can now be customized through the extension point `EditorCustomization`. Optional cells, flag cells, constant cells, substitute cells and side transformations can be customized (activation of substitutions, side transformations, description text, post-processing etc.).
 
 ### Fixed
 
 - A bug was fixed that caused the editor of NumberLiteral to break if a property macro was used for its value.
 - Added missing support for IndexExpr for the operations findFirst and forEach.
+- The AssessmentAnalyzer doesn't try to modify read-only models on the CI anymore.
 - An invalid checking rule for parameter value types of functional component instances has been removed. It was introduced by a move of IETS3.Core languages in February 2025.
 
+### Improved
+
+- Some editor action descriptions were improved.
 
 ## October 2025
 

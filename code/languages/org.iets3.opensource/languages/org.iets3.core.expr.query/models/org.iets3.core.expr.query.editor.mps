@@ -2,7 +2,7 @@
 <model ref="r:42c2d1a4-0d47-42e3-b2f8-b91eb0136663(org.iets3.core.expr.query.editor)">
   <persistence version="9" />
   <languages>
-    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="14" />
+    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="15" />
     <use id="1919c723-b60b-4592-9318-9ce96d91da44" name="de.itemis.mps.editor.celllayout" version="0" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
@@ -21,7 +21,6 @@
       <concept id="1078308402140" name="jetbrains.mps.lang.editor.structure.CellModel_Custom" flags="sg" stub="8104358048506730068" index="gc7cB">
         <child id="1176795024817" name="cellProvider" index="3YsKMw" />
       </concept>
-      <concept id="1106270549637" name="jetbrains.mps.lang.editor.structure.CellLayout_Horizontal" flags="nn" index="2iRfu4" />
       <concept id="1237303669825" name="jetbrains.mps.lang.editor.structure.CellLayout_Indent" flags="nn" index="l2Vlx" />
       <concept id="1142886221719" name="jetbrains.mps.lang.editor.structure.QueryFunction_NodeCondition" flags="in" index="pkWqt" />
       <concept id="1142886811589" name="jetbrains.mps.lang.editor.structure.ConceptFunctionParameter_node" flags="nn" index="pncrf" />
@@ -104,7 +103,7 @@
   <node concept="24kQdi" id="5QDPRL$oihD">
     <ref role="1XX52x" to="ysgh:5QDPRL$ohHz" resolve="QueryExpr" />
     <node concept="3EZMnI" id="5QDPRL$oimO" role="2wV5jI">
-      <node concept="2iRfu4" id="1OEjBB5GrGS" role="2iSdaV" />
+      <node concept="l2Vlx" id="4L4_gU2zVJR" role="2iSdaV" />
       <node concept="PMmxH" id="1znK7yZdfgD" role="3EZMnx">
         <ref role="PMmxG" to="buwp:1znK7yZhztN" resolve="ExpressionKeywordAlias" />
       </node>
