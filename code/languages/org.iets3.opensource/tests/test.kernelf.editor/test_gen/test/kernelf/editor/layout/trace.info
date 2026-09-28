@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<debug-info version="2">
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123140:jetbrains.mps.baseLanguage.structure.ConstructorDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123155:jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1144226303539:jetbrains.mps.baseLanguage.structure.ForeachStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123159:jetbrains.mps.baseLanguage.structure.IfStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123165:jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242864:jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242878:jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1070462154015:jetbrains.mps.baseLanguage.structure.StaticFieldDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1070475587102:jetbrains.mps.baseLanguage.structure.SuperConstructorInvocation" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/5351203823916750322:jetbrains.mps.baseLanguage.structure.TryUniversalStatement" />
+  <root nodeRef="r:0584d616-8e57-4860-aa8c-c5911fef31e7(test.kernelf.editor.layout@tests)/6627915934851844240">
+    <file name="BracketLayout_Test.java">
+      <node id="6627915934851844240" at="25,31,26,60" concept="8" />
+      <node id="6627915934851844360" at="30,62,31,53" concept="1" />
+      <node id="6627915934855071431" at="34,53,35,44" concept="1" />
+      <node id="6627915934855071445" at="38,49,39,40" concept="1" />
+      <node id="6627915934855071459" at="42,58,43,49" concept="1" />
+      <node id="6627915934851844240" at="48,52,49,19" concept="8" />
+      <node id="6627915934851844240" at="53,36,54,115" concept="1" />
+      <node id="6627915934851844360" at="57,64,58,22" concept="1" />
+      <node id="6627915934851844360" at="58,22,59,131" concept="1" />
+      <node id="6627915934855071431" at="61,55,62,22" concept="1" />
+      <node id="6627915934855071431" at="62,22,63,135" concept="1" />
+      <node id="6627915934855071445" at="65,51,66,22" concept="1" />
+      <node id="6627915934855071445" at="66,22,67,135" concept="1" />
+      <node id="6627915934855071459" at="69,60,70,22" concept="1" />
+      <node id="6627915934855071459" at="70,22,71,145" concept="1" />
+      <node id="6627915934851844268" at="76,63,77,75" concept="5" />
+      <node id="6627915934851844291" at="78,30,79,25" concept="6" />
+      <node id="6627915934851844293" at="81,9,82,20" concept="6" />
+      <node id="6627915934851844295" at="83,7,84,104" concept="6" />
+      <node id="6627915934855070890" at="86,77,87,97" concept="5" />
+      <node id="6627915934855070908" at="88,11,89,39" concept="1" />
+      <node id="6627915934855070916" at="89,39,90,88" concept="5" />
+      <node id="6627915934855070934" at="90,88,91,88" concept="5" />
+      <node id="6627915934855070952" at="91,88,92,93" concept="1" />
+      <node id="6627915934855070973" at="92,93,93,71" concept="5" />
+      <node id="6627915934855070981" at="93,71,94,151" concept="1" />
+      <node id="6627915934855071003" at="94,151,95,40" concept="5" />
+      <node id="6627915934855071014" at="95,40,96,65" concept="5" />
+      <node id="6627915934855071033" at="96,65,97,53" concept="5" />
+      <node id="6627915934855071048" at="97,53,98,90" concept="5" />
+      <node id="6627915934855071075" at="98,90,99,165" concept="5" />
+      <node id="6627915934855071132" at="99,165,100,166" concept="5" />
+      <node id="6627915934855071189" at="100,166,101,103" concept="5" />
+      <node id="6627915934855071212" at="101,103,102,216" concept="1" />
+      <node id="6627915934855071265" at="102,216,103,248" concept="1" />
+      <node id="6627915934855071328" at="103,248,104,191" concept="1" />
+      <node id="6627915934855071362" at="105,17,106,28" concept="1" />
+      <node id="6627915934851844240" at="22,0,24,0" concept="7" trace="ourParametersCacheExtension" />
+      <node id="6627915934851844240" at="25,0,28,0" concept="0" trace="BracketLayout_Test#()V" />
+      <node id="6627915934851844240" at="48,0,51,0" concept="0" trace="TestBody#(Ljetbrains/mps/lang/test/runtime/TransformationTest;)V" />
+      <node id="6627915934851844282" at="77,75,80,11" concept="3" />
+      <node id="6627915934851844360" at="29,0,33,0" concept="4" trace="test_alternativesExpression#()V" />
+      <node id="6627915934855071431" at="33,0,37,0" concept="4" trace="test_operatorGroup#()V" />
+      <node id="6627915934855071445" at="37,0,41,0" concept="4" trace="test_queryExpr#()V" />
+      <node id="6627915934855071459" at="41,0,45,0" concept="4" trace="test_validateStringExpr#()V" />
+      <node id="6627915934851844240" at="52,0,56,0" concept="4" trace="initTestNodes#()V" />
+      <node id="6627915934851844360" at="57,0,61,0" concept="4" trace="test_alternativesExpression#()V" />
+      <node id="6627915934855071431" at="61,0,65,0" concept="4" trace="test_operatorGroup#()V" />
+      <node id="6627915934855071445" at="65,0,69,0" concept="4" trace="test_queryExpr#()V" />
+      <node id="6627915934855071459" at="69,0,73,0" concept="4" trace="test_validateStringExpr#()V" />
+      <node id="6627915934851844255" at="75,50,81,9" concept="2" />
+      <node id="6627915934851844246" at="74,87,83,7" concept="3" />
+      <node id="6627915934851844241" at="74,0,86,0" concept="4" trace="findLeafWithText#(Ljetbrains/mps/openapi/editor/cells/EditorCell;Lorg/jetbrains/mps/openapi/model/SNode;Ljava/lang/String;)Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
+      <node id="6627915934855070904" at="87,97,107,7" concept="9" />
+      <node id="6627915934855070885" at="86,0,109,0" concept="4" trace="assertBracketsEncloseContent#(Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;)V" />
+      <scope id="6627915934851844240" at="25,31,26,60" />
+      <scope id="6627915934851844360" at="30,62,31,53" />
+      <scope id="6627915934855071431" at="34,53,35,44" />
+      <scope id="6627915934855071445" at="38,49,39,40" />
+      <scope id="6627915934855071459" at="42,58,43,49" />
+      <scope id="6627915934851844240" at="48,52,49,19" />
+      <scope id="6627915934851844240" at="53,36,54,115" />
+      <scope id="6627915934851844290" at="78,30,79,25" />
+      <scope id="6627915934855071361" at="105,17,106,28" />
+      <scope id="6627915934851844360" at="57,64,59,131" />
+      <scope id="6627915934855071431" at="61,55,63,135" />
+      <scope id="6627915934855071445" at="65,51,67,135" />
+      <scope id="6627915934855071459" at="69,60,71,145" />
+      <scope id="6627915934851844240" at="25,0,28,0" />
+      <scope id="6627915934851844240" at="48,0,51,0">
+        <var name="owner" id="6627915934851844240" />
+      </scope>
+      <scope id="6627915934851844360" at="29,0,33,0" />
+      <scope id="6627915934855071431" at="33,0,37,0" />
+      <scope id="6627915934855071445" at="37,0,41,0" />
+      <scope id="6627915934855071459" at="41,0,45,0" />
+      <scope id="6627915934851844240" at="52,0,56,0" />
+      <scope id="6627915934851844360" at="57,0,61,0" />
+      <scope id="6627915934855071431" at="61,0,65,0" />
+      <scope id="6627915934855071445" at="65,0,69,0" />
+      <scope id="6627915934855071459" at="69,0,73,0" />
+      <scope id="6627915934851844267" at="76,63,80,11">
+        <var name="found" id="6627915934851844271" />
+      </scope>
+      <scope id="6627915934851844255" at="75,50,81,9">
+        <var name="child" id="6627915934851844259" />
+      </scope>
+      <scope id="6627915934851844254" at="75,50,82,20" />
+      <scope id="6627915934851844241" at="74,87,84,104" />
+      <scope id="6627915934851844241" at="74,0,86,0">
+        <var name="cell" id="6627915934851844328" />
+        <var name="leafText" id="6627915934851844334" />
+        <var name="owner" id="6627915934851844331" />
+      </scope>
+      <scope id="6627915934855070907" at="88,11,104,191">
+        <var name="bracketsBottom" id="6627915934855071051" />
+        <var name="bracketsSpanContent" id="6627915934855071192" />
+        <var name="bracketsTop" id="6627915934855071036" />
+        <var name="closing" id="6627915934855070937" />
+        <var name="closingRightOfContent" id="6627915934855071135" />
+        <var name="content" id="6627915934855070976" />
+        <var name="contentBottom" id="6627915934855071017" />
+        <var name="contentTop" id="6627915934855071006" />
+        <var name="opening" id="6627915934855070919" />
+        <var name="openingLeftOfContent" id="6627915934855071078" />
+      </scope>
+      <scope id="6627915934855070885" at="86,77,107,7">
+        <var name="component" id="6627915934855070893" />
+      </scope>
+      <scope id="6627915934855070885" at="86,0,109,0">
+        <var name="editedNode" id="6627915934855071369" />
+        <var name="owner" id="6627915934855071372" />
+      </scope>
+      <unit id="6627915934851844240" at="46,0,110,0" name="test.kernelf.editor.layout.BracketLayout_Test$TestBody" />
+      <unit id="6627915934851844240" at="20,0,111,0" name="test.kernelf.editor.layout.BracketLayout_Test" />
+    </file>
+  </root>
+</debug-info>
+

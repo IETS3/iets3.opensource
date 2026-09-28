@@ -1978,13 +1978,17 @@
         </dependencies>
         <uses>
           <language id="l:f3061a53-9226-4cc5-a443-f952ceaf5816:jetbrains.mps.baseLanguage" />
+          <language id="l:443f4c36-fcf5-4eb6-9500-8d06ed259e3e:jetbrains.mps.baseLanguage.classifiers" />
           <language id="l:f2801650-65d5-424e-bb1b-463a8781b786:jetbrains.mps.baseLanguage.javadoc" />
           <language id="l:f61473f9-130f-42f6-b98d-6c438812c2f6:jetbrains.mps.baseLanguage.unitTest" />
+          <language id="l:7866978e-a0f0-4cc7-81bc-4d213d9375e1:jetbrains.mps.lang.smodel" />
           <language id="l:8585453e-6bfb-4d80-98de-b16074f1d86c:jetbrains.mps.lang.test" />
           <language id="l:953e4089-c643-455b-8629-636de7085d1c:nl.f1re.testing" />
           <language id="l:cfaa4966-b7d5-4b69-b66a-309a6e1a7290:org.iets3.core.expr.base" />
           <language id="l:2f7e2e35-6e74-4c43-9fa5-2465d68f5996:org.iets3.core.expr.collections" />
+          <language id="l:10e056b2-49fd-40ca-8b64-de69c81163ac:org.iets3.core.expr.query" />
           <language id="l:6b277d9a-d52d-416f-a209-1919bd737f50:org.iets3.core.expr.simpleTypes" />
+          <language id="l:f003a0fe-c140-41d7-a145-ea42368e581c:org.iets3.core.expr.stringvalidation" />
           <language id="l:71934284-d7d1-45ee-a054-8c072591085f:org.iets3.core.expr.toplevel" />
         </uses>
         <classpath>
