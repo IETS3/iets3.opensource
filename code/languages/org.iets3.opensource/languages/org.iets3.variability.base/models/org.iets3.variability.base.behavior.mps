@@ -62,9 +62,14 @@
       </concept>
       <concept id="1188207840427" name="jetbrains.mps.baseLanguage.structure.AnnotationInstance" flags="nn" index="2AHcQZ">
         <reference id="1188208074048" name="annotation" index="2AI5Lk" />
+        <child id="1188214630783" name="value" index="2B76xF" />
       </concept>
       <concept id="1188208481402" name="jetbrains.mps.baseLanguage.structure.HasAnnotation" flags="ngI" index="2AJDlI">
         <child id="1188208488637" name="annotation" index="2AJF6D" />
+      </concept>
+      <concept id="1188214545140" name="jetbrains.mps.baseLanguage.structure.AnnotationInstanceValue" flags="ng" index="2B6LJw">
+        <reference id="1188214555875" name="key" index="2B6OnR" />
+        <child id="1188214607812" name="value" index="2B70Vg" />
       </concept>
       <concept id="4678410916365116210" name="jetbrains.mps.baseLanguage.structure.DefaultModifier" flags="ng" index="2JFqV2" />
       <concept id="1154032098014" name="jetbrains.mps.baseLanguage.structure.AbstractLoopStatement" flags="nn" index="2LF5Ji">
@@ -219,6 +224,9 @@
       </concept>
       <concept id="8465538089690331500" name="jetbrains.mps.baseLanguage.javadoc.structure.CommentLine" flags="ng" index="TZ5HA">
         <child id="8970989240999019149" name="part" index="1dT_Ay" />
+      </concept>
+      <concept id="8465538089690331492" name="jetbrains.mps.baseLanguage.javadoc.structure.DeprecatedBlockDocTag" flags="ng" index="TZ5HI">
+        <child id="2667874559098216723" name="text" index="3HnX3l" />
       </concept>
       <concept id="8970989240999019143" name="jetbrains.mps.baseLanguage.javadoc.structure.TextCommentLinePart" flags="ng" index="1dT_AC">
         <property id="8970989240999019144" name="text" index="1dT_AB" />
@@ -1714,7 +1722,23 @@
       <node concept="P$JXv" id="7SixFixE0Cz" role="lGtFl">
         <node concept="TZ5HA" id="7SixFixE0C$" role="TZ5H$">
           <node concept="1dT_AC" id="7SixFixE0C_" role="1dT_Ay">
-            <property role="1dT_AB" value="TODO: Replace this method's body by some method from class &quot;Traversal&quot; (from mpsutil) and deprecate it." />
+            <property role="1dT_AB" value="" />
+          </node>
+        </node>
+        <node concept="TZ5HI" id="7QfxH97xaCo" role="3nqlJM">
+          <node concept="TZ5HA" id="7QfxH97xaCp" role="3HnX3l">
+            <node concept="1dT_AC" id="7QfxH97xco3" role="1dT_Ay">
+              <property role="1dT_AB" value="Use com.mbeddr.mpsutil.common.util.Traversal instead." />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="2AHcQZ" id="7QfxH97xaCq" role="2AJF6D">
+        <ref role="2AI5Lk" to="wyt6:~Deprecated" resolve="Deprecated" />
+        <node concept="2B6LJw" id="7QfxH97xL_V" role="2B76xF">
+          <ref role="2B6OnR" to="wyt6:~Deprecated.since()" resolve="since" />
+          <node concept="Xl_RD" id="7QfxH97xNuR" role="2B70Vg">
+            <property role="Xl_RC" value="2026-09-25" />
           </node>
         </node>
       </node>

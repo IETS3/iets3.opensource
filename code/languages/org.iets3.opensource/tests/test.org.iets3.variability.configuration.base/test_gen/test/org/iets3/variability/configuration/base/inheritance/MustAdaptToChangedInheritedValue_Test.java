@@ -10,6 +10,10 @@ import jetbrains.mps.lang.test.runtime.TestParametersCacheBuilder;
 import org.junit.jupiter.api.Test;
 import jetbrains.mps.lang.test.runtime.BaseTestBody;
 import jetbrains.mps.lang.test.runtime.TransformationTest;
+import org.jetbrains.mps.openapi.model.SNode;
+import jetbrains.mps.lang.test.runtime.CheckExpectedMessageRunnable;
+import jetbrains.mps.errors.MessageStatus;
+import jetbrains.mps.smodel.SNodePointer;
 
 @MPSLaunch
 public class MustAdaptToChangedInheritedValue_Test extends BaseTransformationTest {
@@ -23,6 +27,14 @@ public class MustAdaptToChangedInheritedValue_Test extends BaseTransformationTes
   @Test
   public void test_mustAdopToChangesOfInheritedAttribute() throws Throwable {
     new TestBody(this).test_mustAdopToChangesOfInheritedAttribute();
+  }
+  @Test
+  public void test_NodeConflictWithExtendedConfigurationCheck2959357398684583745() throws Throwable {
+    new TestBody(this).test_NodeConflictWithExtendedConfigurationCheck2959357398684583745();
+  }
+  @Test
+  public void test_NodeAttentionThereAreInconsistenciesCheck2959357398684468127() throws Throwable {
+    new TestBody(this).test_NodeAttentionThereAreInconsistenciesCheck2959357398684468127();
   }
 
   /*package*/ static class TestBody extends BaseTestBody {
@@ -39,6 +51,20 @@ public class MustAdaptToChangedInheritedValue_Test extends BaseTransformationTes
     public void test_mustAdopToChangesOfInheritedAttribute() throws Exception {
       initTestNodes();
       runWithinCommand(() -> InheritanceTestUtil.adaptToConfigTraversingTopDownAndCheck(getAnnotatedNode("given"), getAnnotatedNode("expected")));
+    }
+    public void test_NodeConflictWithExtendedConfigurationCheck2959357398684583745() throws Exception {
+      initTestNodes();
+      runWithinCommand(() -> {
+        SNode nodeToCheck = getNodeById("3583423826983096049");
+        new CheckExpectedMessageRunnable.CheckExpectedRuleMessageRunnable(nodeToCheck, MessageStatus.ERROR, new SNodePointer("r:791971f5-b094-4342-a75c-0ce6c1b43e9d(org.iets3.variability.configuration.base.typesystem)", "8133409599038458974"), "", myProject.getRepository(), myProject.getPlatform()).run();
+      });
+    }
+    public void test_NodeAttentionThereAreInconsistenciesCheck2959357398684468127() throws Exception {
+      initTestNodes();
+      runWithinCommand(() -> {
+        SNode nodeToCheck = getNodeById("3583423826983096045");
+        new CheckExpectedMessageRunnable.CheckExpectedRuleMessageRunnable(nodeToCheck, MessageStatus.ERROR, new SNodePointer("r:791971f5-b094-4342-a75c-0ce6c1b43e9d(org.iets3.variability.configuration.base.typesystem)", "3543850148881346954"), "", myProject.getRepository(), myProject.getPlatform()).run();
+      });
     }
 
   }

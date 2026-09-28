@@ -24,6 +24,8 @@ import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
 import jetbrains.mps.internal.collections.runtime.SetSequence;
 import java.util.HashSet;
 import jetbrains.mps.internal.collections.runtime.ListSequence;
+import jetbrains.mps.internal.collections.runtime.NotNullWhereFilter;
+import com.mbeddr.mpsutil.common.util.Traversal;
 import jetbrains.mps.internal.collections.runtime.Sequence;
 import java.util.Collections;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SEnumOperations;
@@ -37,13 +39,11 @@ import org.iets3.analysis.base.plugin.AsyncSolverTaskExecutor;
 import java.time.Duration;
 import com.intellij.openapi.application.ApplicationManager;
 import jetbrains.mps.baseLanguage.closures.runtime._FunctionTypes;
-import org.iets3.variability.base.behavior.TreeWalker;
 import com.mbeddr.mpsutil.common.graph.Graph;
 import com.mbeddr.core.base.behavior.IDetectCycle__BehaviorDescriptor;
 import com.mbeddr.mpsutil.common.graph.GraphUtil;
 import java.util.ArrayList;
 import org.iets3.variability.base.behavior.IVariabilityContent__BehaviorDescriptor;
-import jetbrains.mps.internal.collections.runtime.NotNullWhereFilter;
 import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
@@ -62,6 +62,8 @@ public final class FeatureModel__BehaviorDescriptor extends BaseBHDescriptor {
   public static final SMethod<Iterable<SNode>> getDependenciesRelevantForCycleDetection_id59HbAIOYveX = new SMethodBuilder<Iterable<SNode>>(new SJavaCompoundTypeImpl((Class<Iterable<SNode>>) ((Class) Object.class))).name("getDependenciesRelevantForCycleDetection").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5939454523704210365L).languageId(0xaa41d1b2bffa7eb1L, 0xd4280a54f6df4383L).build2();
   public static final SMethod<Set<SNode>> traceBackElementInCycle_id17fjvcLF7UR = new SMethodBuilder<Set<SNode>>(new SJavaCompoundTypeImpl((Class<Set<SNode>>) ((Class) Object.class))).name("traceBackElementInCycle").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(1283330125729660599L).languageId(0xaa41d1b2bffa7eb1L, 0xd4280a54f6df4383L).build2(SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""));
   public static final SMethod<Iterable<SNode>> getIncludedFeatureModels_id4$KkN8iCYUq = new SMethodBuilder<Iterable<SNode>>(new SJavaCompoundTypeImpl((Class<Iterable<SNode>>) ((Class) Object.class))).name("getIncludedFeatureModels").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5273806638177054362L).languageId(0x895e1424f54166ecL, 0x165f1d0525064544L).build2();
+  public static final SMethod<Iterable<SNode>> getTransitivelyIncludedFeatureModels_id7QfxH96H3PL = new SMethodBuilder<Iterable<SNode>>(new SJavaCompoundTypeImpl((Class<Iterable<SNode>>) ((Class) Object.class))).name("getTransitivelyIncludedFeatureModels").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(9047598414098087281L).languageId(0x895e1424f54166ecL, 0x165f1d0525064544L).build2();
+  public static final SMethod<Iterable<SNode>> getTransitivelyIncludedFeatureModels_id7QfxH97_PYq = new SMethodBuilder<Iterable<SNode>>(new SJavaCompoundTypeImpl((Class<Iterable<SNode>>) ((Class) Object.class))).name("getTransitivelyIncludedFeatureModels").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(9047598414112972698L).languageId(0x895e1424f54166ecL, 0x165f1d0525064544L).build2(SMethodBuilder.createJavaParameter(Boolean.TYPE, ""));
   public static final SMethod<SNode> getContextFeature_id30ECcbtSVMe = new SMethodBuilder<SNode>(new SJavaCompoundTypeImpl((Class<SNode>) ((Class) Object.class))).name("getContextFeature").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(3470763221649177742L).languageId(0x895e1424f54166ecL, 0x165f1d0525064544L).build2();
   public static final SMethod<Iterable<SNode>> usingParams_idMYWxk17YoO = new SMethodBuilder<Iterable<SNode>>(new SJavaCompoundTypeImpl((Class<Iterable<SNode>>) ((Class) Object.class))).name("usingParams").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(918437546057262644L).languageId(0x895e1424f54166ecL, 0x165f1d0525064544L).build2();
   public static final SMethod<Iterable<SNode>> enumDeclarations_id4eA6KATu5ZO = new SMethodBuilder<Iterable<SNode>>(new SJavaCompoundTypeImpl((Class<Iterable<SNode>>) ((Class) Object.class))).name("enumDeclarations").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(4874613375255470068L).languageId(0x895e1424f54166ecL, 0x165f1d0525064544L).build2();
@@ -79,7 +81,7 @@ public final class FeatureModel__BehaviorDescriptor extends BaseBHDescriptor {
   public static final SMethod<Iterable<SNode>> directDependencies_id6Gx9iNnB7_2 = new SMethodBuilder<Iterable<SNode>>(new SJavaCompoundTypeImpl((Class<Iterable<SNode>>) ((Class) Object.class))).name("directDependencies").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(7719492110815885634L).languageId(0xa96f9f4e212c69cbL, 0x9b66c5c938bf4315L).build2();
   public static final SMethod<Boolean> highlightWarning_id4358bbCIl2g = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("highlightWarning").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(4667172541620113552L).languageId(0xbd9c05c0f8725a35L, 0x7b68d745a7b848b9L).build2();
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(getUniquelyNamedElements_id4qSf1u1TRfj, createSolverTask_id4pkidg67Lgb, getSolvableName_idWieAE6TWOo, getDependenciesRelevantForCycleDetection_id59HbAIOYveX, traceBackElementInCycle_id17fjvcLF7UR, getIncludedFeatureModels_id4$KkN8iCYUq, getContextFeature_id30ECcbtSVMe, usingParams_idMYWxk17YoO, enumDeclarations_id4eA6KATu5ZO, defaultRelationChildren_id4eA6KATXKnM, orRelationChildren_id4eA6KAU38cU, xorRelationChildren_id4eA6KAU36NL, relationChildren_id4eA6KAU3cXl, runManually_id3R3AIvumrTm, showSubResults_id4MH81Y0VldB, addConstraint_id1GMgmu$nBJk, constraints_id1wX6IAeW7Y1, featureAttributesInConstraints_idZsB2gDAfu$, remove_id4hLJNwY_IA1, containsCycle_id3eg222GEqlF, directDependencies_id6Gx9iNnB7_2, highlightWarning_id4358bbCIl2g);
+  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(getUniquelyNamedElements_id4qSf1u1TRfj, createSolverTask_id4pkidg67Lgb, getSolvableName_idWieAE6TWOo, getDependenciesRelevantForCycleDetection_id59HbAIOYveX, traceBackElementInCycle_id17fjvcLF7UR, getIncludedFeatureModels_id4$KkN8iCYUq, getTransitivelyIncludedFeatureModels_id7QfxH96H3PL, getTransitivelyIncludedFeatureModels_id7QfxH97_PYq, getContextFeature_id30ECcbtSVMe, usingParams_idMYWxk17YoO, enumDeclarations_id4eA6KATu5ZO, defaultRelationChildren_id4eA6KATXKnM, orRelationChildren_id4eA6KAU38cU, xorRelationChildren_id4eA6KAU36NL, relationChildren_id4eA6KAU3cXl, runManually_id3R3AIvumrTm, showSubResults_id4MH81Y0VldB, addConstraint_id1GMgmu$nBJk, constraints_id1wX6IAeW7Y1, featureAttributesInConstraints_idZsB2gDAfu$, remove_id4hLJNwY_IA1, containsCycle_id3eg222GEqlF, directDependencies_id6Gx9iNnB7_2, highlightWarning_id4358bbCIl2g);
 
   private static void ___init___(@NotNull SNode __thisNode__) {
   }
@@ -106,7 +108,19 @@ public final class FeatureModel__BehaviorDescriptor extends BaseBHDescriptor {
     return result;
   }
   /*package*/ static Iterable<SNode> getIncludedFeatureModels_id4$KkN8iCYUq(@NotNull SNode __thisNode__) {
-    return ListSequence.fromList(SNodeOperations.getNodeDescendants(SLinkOperations.getTarget(__thisNode__, LINKS.root$XEj1), CONCEPTS.FeatureModelInclude$Iq, false, new SAbstractConcept[]{})).select((it) -> SLinkOperations.getTarget(it, LINKS.fm$EY24));
+    return ListSequence.fromList(SNodeOperations.getNodeDescendants(SLinkOperations.getTarget(__thisNode__, LINKS.root$XEj1), CONCEPTS.FeatureModelInclude$Iq, false, new SAbstractConcept[]{})).select((it) -> SLinkOperations.getTarget(it, LINKS.fm$EY24)).where(new NotNullWhereFilter()).distinct();
+  }
+  /*package*/ static Iterable<SNode> getTransitivelyIncludedFeatureModels_id7QfxH96H3PL(@NotNull SNode __thisNode__) {
+    return ((Iterable<SNode>) FeatureModel__BehaviorDescriptor.getTransitivelyIncludedFeatureModels_id7QfxH97_PYq.invoke(__thisNode__, ((boolean) false)));
+  }
+  /*package*/ static Iterable<SNode> getTransitivelyIncludedFeatureModels_id7QfxH97_PYq(@NotNull SNode __thisNode__, boolean includingSelf) {
+    Traversal<SNode> traversal = Traversal.<SNode>create((fm) -> (Iterable<SNode>) FeatureModel__BehaviorDescriptor.getIncludedFeatureModels_id4$KkN8iCYUq.invoke(fm));
+    if (includingSelf) {
+      traversal.doBreadthFirst(__thisNode__);
+    } else {
+      traversal.doBreadthFirst(FeatureModel__BehaviorDescriptor.getIncludedFeatureModels_id4$KkN8iCYUq.invoke(__thisNode__));
+    }
+    return traversal.getVisited();
   }
   /*package*/ static SNode getContextFeature_id30ECcbtSVMe(@NotNull SNode __thisNode__) {
     return (SNode) IFeatureContext__BehaviorDescriptor.getContextFeature_id30ECcbtSVMe.invoke(SLinkOperations.getTarget(__thisNode__, LINKS.root$XEj1));
@@ -175,11 +189,9 @@ public final class FeatureModel__BehaviorDescriptor extends BaseBHDescriptor {
     ListSequence.fromList(SLinkOperations.getChildren(__thisNode__, LINKS.constraints$SJXp)).removeElement(constraint);
   }
   /*package*/ static boolean containsCycle_id3eg222GEqlF(@NotNull SNode __thisNode__) {
-
-    Iterable<SNode> models = TreeWalker.gatherChildren(__thisNode__, CONCEPTS.FeatureModel$X0, CONCEPTS.FeatureModelInclude$Iq, (SNode n) -> SLinkOperations.getTarget(((SNode) n), LINKS.fm$EY24));
+    Iterable<SNode> models = FeatureModel__BehaviorDescriptor.getTransitivelyIncludedFeatureModels_id7QfxH97_PYq.invoke(__thisNode__, ((boolean) true));
 
     Graph<SNode> dependencyGraph = IDetectCycle__BehaviorDescriptor.getDependencyGraph_id17fjvcLC_kB.invoke(__thisNode__);
-
     for (SNode elem : Sequence.fromIterable(models)) {
       if (SNodeOperations.isInstanceOf(elem, CONCEPTS.FeatureModel$X0)) {
         SNode feature = (SNode) elem;
@@ -230,39 +242,43 @@ public final class FeatureModel__BehaviorDescriptor extends BaseBHDescriptor {
       case 5:
         return (T) ((Iterable<SNode>) getIncludedFeatureModels_id4$KkN8iCYUq(node));
       case 6:
-        return (T) ((SNode) getContextFeature_id30ECcbtSVMe(node));
+        return (T) ((Iterable<SNode>) getTransitivelyIncludedFeatureModels_id7QfxH96H3PL(node));
       case 7:
-        return (T) ((Iterable<SNode>) usingParams_idMYWxk17YoO(node));
+        return (T) ((Iterable<SNode>) getTransitivelyIncludedFeatureModels_id7QfxH97_PYq(node, ((boolean) (Boolean) parameters[0])));
       case 8:
-        return (T) ((Iterable<SNode>) enumDeclarations_id4eA6KATu5ZO(node));
+        return (T) ((SNode) getContextFeature_id30ECcbtSVMe(node));
       case 9:
-        return (T) ((Iterable<SNode>) defaultRelationChildren_id4eA6KATXKnM(node));
+        return (T) ((Iterable<SNode>) usingParams_idMYWxk17YoO(node));
       case 10:
-        return (T) ((Iterable<SNode>) orRelationChildren_id4eA6KAU38cU(node));
+        return (T) ((Iterable<SNode>) enumDeclarations_id4eA6KATu5ZO(node));
       case 11:
-        return (T) ((Iterable<SNode>) xorRelationChildren_id4eA6KAU36NL(node));
+        return (T) ((Iterable<SNode>) defaultRelationChildren_id4eA6KATXKnM(node));
       case 12:
-        return (T) ((Iterable<SNode>) relationChildren_id4eA6KAU3cXl(node, (SEnumerationLiteral) parameters[0]));
+        return (T) ((Iterable<SNode>) orRelationChildren_id4eA6KAU38cU(node));
       case 13:
+        return (T) ((Iterable<SNode>) xorRelationChildren_id4eA6KAU36NL(node));
+      case 14:
+        return (T) ((Iterable<SNode>) relationChildren_id4eA6KAU3cXl(node, (SEnumerationLiteral) parameters[0]));
+      case 15:
         runManually_id3R3AIvumrTm(node, (EditorContext) parameters[0]);
         return null;
-      case 14:
+      case 16:
         return (T) ((Boolean) showSubResults_id4MH81Y0VldB(node));
-      case 15:
+      case 17:
         addConstraint_id1GMgmu$nBJk(node, (SNode) parameters[0]);
         return null;
-      case 16:
-        return (T) ((Iterable<SNode>) constraints_id1wX6IAeW7Y1(node));
-      case 17:
-        return (T) ((Iterable<SNode>) featureAttributesInConstraints_idZsB2gDAfu$(node));
       case 18:
+        return (T) ((Iterable<SNode>) constraints_id1wX6IAeW7Y1(node));
+      case 19:
+        return (T) ((Iterable<SNode>) featureAttributesInConstraints_idZsB2gDAfu$(node));
+      case 20:
         remove_id4hLJNwY_IA1(node, (SNode) parameters[0]);
         return null;
-      case 19:
-        return (T) ((Boolean) containsCycle_id3eg222GEqlF(node));
-      case 20:
-        return (T) ((Iterable<SNode>) directDependencies_id6Gx9iNnB7_2(node));
       case 21:
+        return (T) ((Boolean) containsCycle_id3eg222GEqlF(node));
+      case 22:
+        return (T) ((Iterable<SNode>) directDependencies_id6Gx9iNnB7_2(node));
+      case 23:
         return (T) ((Boolean) highlightWarning_id4358bbCIl2g(node));
       default:
         throw new BHMethodNotFoundException(this, method);
