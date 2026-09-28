@@ -9,6 +9,7 @@ The project does _not_ follow Semantic Versioning and the changes are documented
 
 ### Changed
 - KernelF: `EnumLiteral` now implements `ISmartReferent` and derives its `resolveInfo` from the same presentation (qualified for a qualified enum, bare otherwise), so completion, the editor cell and `renderReadable()` agree. The hand-written `EnumLiteralRef` substitute menus and the qualified filter in its scope were dropped in favour of the smart-reference machinery MPS generates. The auxiliary concept `QualifierRef` was removed; it had no instances and was never part of a valid model, so no migration is required.
+- Variability: The update-configurations tasks were refactored - the common functionality of the tasks updating one, all, or all extending configurations now lives in the shared base classes `AbstractUpdateConfigsTask` / `ConfigFromFeatureModelUpdater`.
 
 ### Fixed
 - KernelF: an exception thrown by the interpreter no longer costs the whole trace. `Show Trace` now opens with everything that was computed before the exception, and the node that threw is marked with the exception and highlighted in the trace tree. This covers the generic trace roots (functions, constants, function calls) as well as the test items, whose `catch` branches used to drop the trace.
@@ -19,7 +20,12 @@ The project does _not_ follow Semantic Versioning and the changes are documented
 - KernelF: entries in the trace explorer are no longer truncated after a very low character limit, which made traces hard to read. The limit was raised and the tooltip now shows the full, untruncated text.
 - KernelF: Consistent usage of indent layout in Expression concepts.
 - KernelF: Added a workaround that allows the deletion of whole number literals nodes by pressing BACKSPACE or DELETE in case that the number literal value is presented in hexadecimal format. This kind of deletion was only possible for decimal number literals before due to an internal implementation problem.
+Physical units: Units are no longer offered twice in the code completion menu of a number literal.
+- Variability: Intention "Adapt this configuration to the extended configuration" no longer skips sub-configurations whose content is still unspecified. Such a content is now materialized as an inline configuration derived from the referenced feature model, so the values of the extended configuration are inherited.
 
+
+### Added
+- Variability: New intention "Adapt Extending Configurations to Changes" on abstract feature model configurations. It propagates changes of the abstract configuration to *all* transitively extending configurations in one step (with progress reporting), instead of applying the per-configuration fix "Adapt this Configuration to the extended Configuration" one-by-one.
 
 ## August 2026
 
@@ -27,6 +33,7 @@ The project does _not_ follow Semantic Versioning and the changes are documented
 - Improve uniqueness name check of `IFunctionLike` `getUniquelyNamedElements()` behavior to avoid overzealous checking.
 - Variability: Feature attribute values are not overwritten anymore if the value stays the same. This avoids changing the model if not necessary, esp. it avoids merge conflicts.
 - `IFunctionLike` `getUniquelyNamedElements()` no longer reports duplicate names for commented out code.
+
 
 ## July 2026
 
