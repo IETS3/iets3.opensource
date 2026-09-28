@@ -23,7 +23,7 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
           cpb.shortDesc("a user with personal information");
           cpb.presentationByName();
-          cpb.icon(IconContainer.RESOURCE_a0a3a0a0b0e);
+          cpb.icon(IconContainer.RESOURCE_0);
           props_User = cpb.create();
         }
         return props_User;

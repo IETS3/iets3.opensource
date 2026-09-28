@@ -16,7 +16,7 @@ import org.jetbrains.mps.openapi.language.SConcept;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 
 public class AddSiblingRequirement_Action extends BaseAction {
-  private static final Icon ICON = IconContainer.ICON_a0_0;
+  private static final Icon ICON = IconContainer.ICON4;
 
   public AddSiblingRequirement_Action() {
     super("New Sibling Requirement", "", ICON);

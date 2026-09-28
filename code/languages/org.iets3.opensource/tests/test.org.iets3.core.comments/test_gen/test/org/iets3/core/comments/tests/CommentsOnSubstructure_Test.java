@@ -34,7 +34,7 @@ public class CommentsOnSubstructure_Test extends BaseTransformationTest {
     @Override
     public void testMethodImpl() throws Exception {
       initEditorComponent("6134088534208310378", "6134088534208310410");
-      typeString("//");
+      typeString("// ");
     }
   }
 }

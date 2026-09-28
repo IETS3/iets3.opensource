@@ -51,7 +51,7 @@ public class ISolvableMonitorWidget implements StatusBarWidget, UISettingsListen
   });
 
 
-  private final Icon myIcon = IconContainer.ICON_a5;
+  private final Icon myIcon = IconContainer.ICON0;
 
 
   private ISolvablePanel component;

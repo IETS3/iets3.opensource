@@ -18,6 +18,7 @@ import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
 import org.jetbrains.mps.openapi.model.SNode;
 import com.mbeddr.mpsutil.grammarcells.runtime.GrammarCellsUtil;
 import jetbrains.mps.openapi.editor.EditorContext;
+import org.iets3.core.expr.base.plugin.EditorCustomizationConfigHelper;
 import com.mbeddr.mpsutil.grammarcells.runtime.FlagSubstituteMenuItem;
 import com.mbeddr.mpsutil.grammarcells.runtime.DefaultFlagModelAccess;
 import org.jetbrains.annotations.Nullable;
@@ -66,6 +67,11 @@ public class GrammarActionsDescriptor extends AbstractGrammarActionDescriptor im
               for (final SAbstractConcept subconcept : GrammarCellsUtil.getVisibleSubconceptsNonAbstract(outputConcept, _context.getModel(), StateMachine_Editor.class, _context.getEditorContext())) {
                 EditorContext editorContext = _context.getEditorContext();
                 boolean applicable = GrammarCellsUtil.canBeChild(subconcept, _context);
+                applicable &= new Object() {
+                  public boolean query() {
+                    return EditorCustomizationConfigHelper.getConfig().isFlagCellSubstitutionActivated(EditorCustomizationConfigHelper.getIdentifier(CONCEPTS.StateMachine$He, PROPS.isStrict$_qyl), subconcept, substitutedNode, parentNode, editorContext);
+                  }
+                }.query();
                 if (applicable) {
                   ListSequence.fromList(result).addElement(new FlagSubstituteMenuItem(parentNode, _context.getCurrentTargetNode(), subconcept, "strict", _context, new DefaultFlagModelAccess(PROPS.isStrict$_qyl)) {
                     @Nullable
@@ -73,7 +79,8 @@ public class GrammarActionsDescriptor extends AbstractGrammarActionDescriptor im
                     public String getDescriptionText(@NotNull String pattern) {
                       String originalText = super.getDescriptionText(pattern);
                       EditorContext editorContext = _context.getEditorContext();
-                      return "fail when no transition applies";
+                      String descriptiontext = EditorCustomizationConfigHelper.getConfig().getFlagCellDescriptionText(EditorCustomizationConfigHelper.getIdentifier(CONCEPTS.StateMachine$He, PROPS.isStrict$_qyl), originalText, editorContext);
+                      return ((descriptiontext != null && descriptiontext.length() > 0) ? descriptiontext : "a state machine that fails when no transition applies");
                     }
                   });
                 }
@@ -98,12 +105,26 @@ public class GrammarActionsDescriptor extends AbstractGrammarActionDescriptor im
 
                 if (SConceptOperations.isSubConceptOf(SNodeOperations.asSConcept(outputConcept), SNodeOperations.asSConcept(expectedOutputConcept))) {
                   boolean isApplicable = GrammarCellsUtil.canBeChild(subconcept, _context);
+                  isApplicable &= new Object() {
+                    public boolean query(SAbstractConcept expectedConcept) {
+                      return EditorCustomizationConfigHelper.getConfig().isWrapperCellSubstitutionActivated(EditorCustomizationConfigHelper.getIdentifier(CONCEPTS.EventArg$Ph, PROPS.name$MnvL), expectedConcept, null, null);
+                    }
+                  }.query(expectedOutputConcept);
                   if (isApplicable) {
                     ListSequence.fromList(result).addElement(new GrammarCellsSubstituteMenuItem(_context) {
                       private SProperty myProperty = PROPS.name$MnvL;
 
                       public String getMatchingText(String pattern) {
                         return pattern;
+                      }
+                      @Override
+                      public String getDescriptionText(@NotNull String pattern) {
+                        String originalText = super.getDescriptionText(pattern);
+                        SNode wrappedNode = null;
+                        SAbstractConcept wrappedConcept = getOutputConcept();
+                        EditorContext editorContext = _context.getEditorContext();
+                        String descriptiontext = EditorCustomizationConfigHelper.getConfig().getWrapperCellSubstitutionDescriptionText(EditorCustomizationConfigHelper.getIdentifier(CONCEPTS.EventArg$Ph, PROPS.name$MnvL), wrappedNode, wrappedConcept, subconcept, originalText, editorContext);
+                        return ((descriptiontext != null && descriptiontext.length() > 0) ? descriptiontext : originalText);
                       }
                       @Override
                       public boolean canExecute(@NotNull String pattern) {
@@ -122,6 +143,11 @@ public class GrammarActionsDescriptor extends AbstractGrammarActionDescriptor im
                         SNode newNode = SNodeFactoryOperations.createNewNode(expectedOutputConceptExactly, null);
                         SPropertyOperations.assign(newNode, PROPS.name$MnvL, GrammarCellsUtil.toInternalPropertyValue(myProperty, pattern));
 
+                        new Object() {
+                          public void postProcess(SNode node, EditorContext editorContext, SNode parentNode) {
+                            EditorCustomizationConfigHelper.getConfig().wrapperCellSubstitutionPostProcess(EditorCustomizationConfigHelper.getIdentifier(CONCEPTS.EventArg$Ph, PROPS.name$MnvL), node, editorContext);
+                          }
+                        }.postProcess(newNode, _context.getEditorContext(), _context.getParentNode());
                         return newNode;
                       }
 
@@ -160,6 +186,11 @@ public class GrammarActionsDescriptor extends AbstractGrammarActionDescriptor im
               for (final SAbstractConcept subconcept : GrammarCellsUtil.getVisibleSubconceptsNonAbstract(outputConcept, _context.getModel(), StatemachineVar_Editor.class, _context.getEditorContext())) {
                 EditorContext editorContext = _context.getEditorContext();
                 boolean applicable = GrammarCellsUtil.canBeChild(subconcept, _context);
+                applicable &= new Object() {
+                  public boolean query() {
+                    return EditorCustomizationConfigHelper.getConfig().isFlagCellSubstitutionActivated(EditorCustomizationConfigHelper.getIdentifier(CONCEPTS.StatemachineVar$Qb, PROPS.observable$wgmr), subconcept, substitutedNode, parentNode, editorContext);
+                  }
+                }.query();
                 if (applicable) {
                   ListSequence.fromList(result).addElement(new FlagSubstituteMenuItem(parentNode, _context.getCurrentTargetNode(), subconcept, "observable", _context, new DefaultFlagModelAccess(PROPS.observable$wgmr)) {
                     @Nullable
@@ -167,7 +198,8 @@ public class GrammarActionsDescriptor extends AbstractGrammarActionDescriptor im
                     public String getDescriptionText(@NotNull String pattern) {
                       String originalText = super.getDescriptionText(pattern);
                       EditorContext editorContext = _context.getEditorContext();
-                      return "make the variable observable";
+                      String descriptiontext = EditorCustomizationConfigHelper.getConfig().getFlagCellDescriptionText(EditorCustomizationConfigHelper.getIdentifier(CONCEPTS.StatemachineVar$Qb, PROPS.observable$wgmr), originalText, editorContext);
+                      return ((descriptiontext != null && descriptiontext.length() > 0) ? descriptiontext : "an observable state machine variable");
                     }
                   });
                 }
@@ -192,12 +224,26 @@ public class GrammarActionsDescriptor extends AbstractGrammarActionDescriptor im
 
                 if (SConceptOperations.isSubConceptOf(SNodeOperations.asSConcept(outputConcept), SNodeOperations.asSConcept(expectedOutputConcept))) {
                   boolean isApplicable = GrammarCellsUtil.canBeChild(subconcept, _context);
+                  isApplicable &= new Object() {
+                    public boolean query(SAbstractConcept expectedConcept) {
+                      return EditorCustomizationConfigHelper.getConfig().isWrapperCellSubstitutionActivated(EditorCustomizationConfigHelper.getIdentifier(CONCEPTS.Parameter$Is, PROPS.name$MnvL), expectedConcept, null, null);
+                    }
+                  }.query(expectedOutputConcept);
                   if (isApplicable) {
                     ListSequence.fromList(result).addElement(new GrammarCellsSubstituteMenuItem(_context) {
                       private SProperty myProperty = PROPS.name$MnvL;
 
                       public String getMatchingText(String pattern) {
                         return pattern;
+                      }
+                      @Override
+                      public String getDescriptionText(@NotNull String pattern) {
+                        String originalText = super.getDescriptionText(pattern);
+                        SNode wrappedNode = null;
+                        SAbstractConcept wrappedConcept = getOutputConcept();
+                        EditorContext editorContext = _context.getEditorContext();
+                        String descriptiontext = EditorCustomizationConfigHelper.getConfig().getWrapperCellSubstitutionDescriptionText(EditorCustomizationConfigHelper.getIdentifier(CONCEPTS.Parameter$Is, PROPS.name$MnvL), wrappedNode, wrappedConcept, subconcept, originalText, editorContext);
+                        return ((descriptiontext != null && descriptiontext.length() > 0) ? descriptiontext : originalText);
                       }
                       @Override
                       public boolean canExecute(@NotNull String pattern) {
@@ -216,6 +262,11 @@ public class GrammarActionsDescriptor extends AbstractGrammarActionDescriptor im
                         SNode newNode = SNodeFactoryOperations.createNewNode(expectedOutputConceptExactly, null);
                         SPropertyOperations.assign(newNode, PROPS.name$MnvL, GrammarCellsUtil.toInternalPropertyValue(myProperty, pattern));
 
+                        new Object() {
+                          public void postProcess(SNode node, EditorContext editorContext, SNode parentNode) {
+                            EditorCustomizationConfigHelper.getConfig().wrapperCellSubstitutionPostProcess(EditorCustomizationConfigHelper.getIdentifier(CONCEPTS.Parameter$Is, PROPS.name$MnvL), node, editorContext);
+                          }
+                        }.postProcess(newNode, _context.getEditorContext(), _context.getParentNode());
                         return newNode;
                       }
 
@@ -254,8 +305,22 @@ public class GrammarActionsDescriptor extends AbstractGrammarActionDescriptor im
               for (final SAbstractConcept subconcept : GrammarCellsUtil.getVisibleSubconceptsNonAbstract(outputConcept, _context.getModel(), StatemachineQuery_Editor.class, _context.getEditorContext())) {
                 EditorContext editorContext = _context.getEditorContext();
                 boolean applicable = GrammarCellsUtil.canBeChild(subconcept, _context);
+                applicable &= new Object() {
+                  public boolean query() {
+                    return EditorCustomizationConfigHelper.getConfig().isFlagCellSubstitutionActivated(EditorCustomizationConfigHelper.getIdentifier(CONCEPTS.StatemachineQuery$4e, PROPS.observable$4F$u), subconcept, substitutedNode, parentNode, editorContext);
+                  }
+                }.query();
                 if (applicable) {
-                  ListSequence.fromList(result).addElement(new FlagSubstituteMenuItem(parentNode, _context.getCurrentTargetNode(), subconcept, "observable", _context, new DefaultFlagModelAccess(PROPS.observable$4F$u)) {});
+                  ListSequence.fromList(result).addElement(new FlagSubstituteMenuItem(parentNode, _context.getCurrentTargetNode(), subconcept, "observable", _context, new DefaultFlagModelAccess(PROPS.observable$4F$u)) {
+                    @Nullable
+                    @Override
+                    public String getDescriptionText(@NotNull String pattern) {
+                      String originalText = super.getDescriptionText(pattern);
+                      EditorContext editorContext = _context.getEditorContext();
+                      String descriptiontext = EditorCustomizationConfigHelper.getConfig().getFlagCellDescriptionText(EditorCustomizationConfigHelper.getIdentifier(CONCEPTS.StatemachineQuery$4e, PROPS.observable$4F$u), originalText, editorContext);
+                      return ((descriptiontext != null && descriptiontext.length() > 0) ? descriptiontext : originalText);
+                    }
+                  });
                 }
               }
             }

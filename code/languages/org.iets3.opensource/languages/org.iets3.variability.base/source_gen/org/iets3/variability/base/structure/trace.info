@@ -13,7 +13,7 @@
       <unit at="11,0,61,0" name="org.iets3.variability.base.structure.ConceptPresentationAspectImpl" />
     </file>
     <file name="IconContainer.java">
-      <unit at="7,0,10,0" name="org.iets3.variability.base.structure.IconContainer" />
+      <unit at="8,0,12,0" name="org.iets3.variability.base.structure.IconContainer" />
     </file>
     <file name="LanguageConceptSwitch.java">
       <unit at="10,0,36,0" name="org.iets3.variability.base.structure.LanguageConceptSwitch" />
@@ -62,8 +62,8 @@
       <node id="3989254429232883574" at="16,0,17,0" concept="1" trace="props_VariabilityModelChunk" />
       <node id="3989254429232883574" at="50,50,51,76" concept="3" />
       <node id="3989254429232883574" at="51,76,52,35" concept="0" />
-      <node id="3989254429232883574" at="52,35,53,55" concept="0" />
-      <node id="3989254429232883574" at="53,55,54,53" concept="0" />
+      <node id="3989254429232883574" at="52,35,53,45" concept="0" />
+      <node id="3989254429232883574" at="53,45,54,53" concept="0" />
       <node id="3989254429232883574" at="55,9,56,43" concept="4" />
       <node id="3989254429232883574" at="49,55,55,9" concept="2" />
       <scope id="3989254429232883574" at="50,50,54,53">

@@ -37,7 +37,7 @@ public class Sheet_Constraints extends BaseConstraintsDescriptor {
         boolean result = staticCanBeAnAncestor(context.getNode(), context.getChildNode(), context.getChildConcept(), context.getParentNode(), context.getLink());
 
         if (!(result) && checkingNodeContext != null) {
-          checkingNodeContext.setBreakingNode(canBeRootBreakingPoint);
+          checkingNodeContext.setBreakingNode(canBeAncestorBreakingPoint);
         }
 
         return result;
@@ -69,7 +69,7 @@ public class Sheet_Constraints extends BaseConstraintsDescriptor {
     }
     return true;
   }
-  private static final SNodePointer canBeRootBreakingPoint = new SNodePointer("r:098cd5d2-6719-4a9b-9976-ee98e642cc00(org.iets3.core.expr.repl.constraints)", "5953575425759878240");
+  private static final SNodePointer canBeAncestorBreakingPoint = new SNodePointer("r:098cd5d2-6719-4a9b-9976-ee98e642cc00(org.iets3.core.expr.repl.constraints)", "5953575425759878240");
 
   private static final class CONCEPTS {
     /*package*/ static final SConcept Sheet$I_ = MetaAdapterFactory.getConcept(0x18001c9433a74f68L, 0xa7c1ffddc4b39be1L, 0x586a62ac9b580ccbL, "org.iets3.core.expr.repl.structure.Sheet");

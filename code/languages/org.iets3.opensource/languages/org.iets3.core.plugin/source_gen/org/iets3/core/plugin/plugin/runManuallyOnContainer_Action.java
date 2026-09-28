@@ -23,7 +23,7 @@ import org.jetbrains.mps.openapi.language.SInterfaceConcept;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 
 public class runManuallyOnContainer_Action extends BaseAction {
-  private static final Icon ICON = IconContainer.ICON_a0_2;
+  private static final Icon ICON = IconContainer.ICON3;
 
   public runManuallyOnContainer_Action() {
     super("Run/Evaluate/Check Children Manually", "", ICON);

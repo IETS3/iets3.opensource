@@ -7,19 +7,20 @@ import java.util.Map;
 import jetbrains.mps.internal.collections.runtime.MapSequence;
 import java.util.HashMap;
 import org.jetbrains.mps.openapi.model.SNode;
-import jetbrains.mps.internal.collections.runtime.IMapping;
 import java.util.Objects;
+import jetbrains.mps.internal.collections.runtime.IMapping;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations;
+import jetbrains.mps.internal.collections.runtime.Sequence;
 import jetbrains.mps.internal.collections.runtime.ListSequence;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
-import org.iets3.core.expr.simpleTypes.runtime.OH;
 import org.iets3.core.expr.toplevel.behavior.IRecordDeclaration__BehaviorDescriptor;
+import org.iets3.core.expr.simpleTypes.runtime.OH;
 import org.jetbrains.mps.openapi.language.SProperty;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
-import org.jetbrains.mps.openapi.language.SReferenceLink;
-import org.jetbrains.mps.openapi.language.SContainmentLink;
 import org.jetbrains.mps.openapi.language.SInterfaceConcept;
+import org.jetbrains.mps.openapi.language.SContainmentLink;
+import org.jetbrains.mps.openapi.language.SReferenceLink;
 
 public class RecordValue implements IRecordValue, Comparable<RecordValue> {
 
@@ -64,6 +65,9 @@ public class RecordValue implements IRecordValue, Comparable<RecordValue> {
   public boolean equals(Object object) {
     if (object instanceof RecordValue) {
       RecordValue rv = ((RecordValue) object);
+      if (!(Objects.equals(this.recordDeclaration, rv.recordDeclaration()))) {
+        return false;
+      }
       if (MapSequence.fromMap(this.memberData).count() != MapSequence.fromMap(rv.memberData).count()) {
         return false;
       }
@@ -71,7 +75,7 @@ public class RecordValue implements IRecordValue, Comparable<RecordValue> {
         if (!(MapSequence.fromMap(rv.memberData).containsKey(e.key()))) {
           return false;
         }
-        if (!(MapSequence.fromMap(rv.memberData).get(e.key()).equals(e.value()))) {
+        if (!(Objects.equals(MapSequence.fromMap(rv.memberData).get(e.key()), e.value()))) {
           return false;
         }
       }
@@ -108,45 +112,55 @@ public class RecordValue implements IRecordValue, Comparable<RecordValue> {
 
   @Override
   public int compareTo(RecordValue value) {
-    if (ListSequence.fromList(SLinkOperations.getChildren(SNodeOperations.as(recordDeclaration, CONCEPTS.IRecordDeclaration$Cv), LINKS.comparisonOrder$fACp)).isNotEmpty()) {
-      for (SNode comparisonOrder : SLinkOperations.getChildren(SNodeOperations.as(recordDeclaration, CONCEPTS.IRecordDeclaration$Cv), LINKS.comparisonOrder$fACp)) {
-        Object thisValue = getValueForPath(SLinkOperations.getTarget(comparisonOrder, LINKS.member$2ryB));
-        Object otherValue = value.getValueForPath(SLinkOperations.getTarget(comparisonOrder, LINKS.member$2ryB));
-
-        if (thisValue != null && otherValue != null) {
-          int memberComparison = OH.compare(thisValue, otherValue);
-          if (memberComparison != 0) {
-            return memberComparison;
-          }
+    if (recordDeclaration == null) {
+      // An inline record has no declaration to take the member order from, so compare by member name.
+      for (String name : Sequence.fromIterable(this.memberNames()).union(Sequence.fromIterable(value.memberNames())).sort((it) -> it, true)) {
+        int memberComparison = compareMemberValues(this.getValueByName(name), value.getValueByName(name));
+        if (memberComparison != 0) {
+          return memberComparison;
         }
-
+      }
+    } else if (ListSequence.fromList(SLinkOperations.getChildren(SNodeOperations.as(recordDeclaration, CONCEPTS.IRecordDeclaration$Cv), LINKS.comparisonOrder$fACp)).isNotEmpty()) {
+      for (SNode comparisonOrder : SLinkOperations.getChildren(SNodeOperations.as(recordDeclaration, CONCEPTS.IRecordDeclaration$Cv), LINKS.comparisonOrder$fACp)) {
+        int memberComparison = compareMemberValues(getValueForPath(SLinkOperations.getTarget(comparisonOrder, LINKS.member$2ryB)), value.getValueForPath(SLinkOperations.getTarget(comparisonOrder, LINKS.member$2ryB)));
+        if (memberComparison != 0) {
+          return memberComparison;
+        }
       }
     } else {
       for (SNode member : IRecordDeclaration__BehaviorDescriptor.effectiveMembers_id1qrYg08iahZ.invoke(SNodeOperations.as(recordDeclaration, CONCEPTS.IRecordDeclaration$Cv))) {
-        Object thisValue = getValueForPath(member);
-        Object otherValue = value.getValueByName(SPropertyOperations.getString(member, PROPS.name$MnvL));
-
-        if (thisValue != null && otherValue != null) {
-          int memberComparison = OH.compare(thisValue, otherValue);
-          if (memberComparison != 0) {
-            return memberComparison;
-          }
+        int memberComparison = compareMemberValues(getValueForPath(member), value.getValueByName(SPropertyOperations.getString(member, PROPS.name$MnvL)));
+        if (memberComparison != 0) {
+          return memberComparison;
         }
       }
     }
     return 0;
+  }
+  private static int compareMemberValues(Object thisValue, Object otherValue) {
+    // A member without a value sorts before one that has a value, so that the order stays transitive.
+    if (thisValue == null && otherValue == null) {
+      return 0;
+    }
+    if (thisValue == null) {
+      return -1;
+    }
+    if (otherValue == null) {
+      return 1;
+    }
+    return OH.compare(thisValue, otherValue);
   }
 
   private static final class PROPS {
     /*package*/ static final SProperty name$MnvL = MetaAdapterFactory.getProperty(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L, 0x110396ec041L, "name");
   }
 
-  private static final class LINKS {
-    /*package*/ static final SReferenceLink member$2ryB = MetaAdapterFactory.getReferenceLink(0x71934284d7d145eeL, 0xa0548c072591085fL, 0x373cc1802a0589c0L, 0x373cc1802a0589c1L, "member");
-    /*package*/ static final SContainmentLink comparisonOrder$fACp = MetaAdapterFactory.getContainmentLink(0x71934284d7d145eeL, 0xa0548c072591085fL, 0x85e1e1330497e6fL, 0x67fa8a3063137fecL, "comparisonOrder");
-  }
-
   private static final class CONCEPTS {
     /*package*/ static final SInterfaceConcept IRecordDeclaration$Cv = MetaAdapterFactory.getInterfaceConcept(0x71934284d7d145eeL, 0xa0548c072591085fL, 0x85e1e1330497e6fL, "org.iets3.core.expr.toplevel.structure.IRecordDeclaration");
+  }
+
+  private static final class LINKS {
+    /*package*/ static final SContainmentLink comparisonOrder$fACp = MetaAdapterFactory.getContainmentLink(0x71934284d7d145eeL, 0xa0548c072591085fL, 0x85e1e1330497e6fL, 0x67fa8a3063137fecL, "comparisonOrder");
+    /*package*/ static final SReferenceLink member$2ryB = MetaAdapterFactory.getReferenceLink(0x71934284d7d145eeL, 0xa0548c072591085fL, 0x373cc1802a0589c0L, 0x373cc1802a0589c1L, "member");
   }
 }

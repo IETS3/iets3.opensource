@@ -22,6 +22,7 @@ import org.iets3.core.expr.base.plugin.CVH;
 import org.iets3.core.expr.base.behavior.IValueAndTraceAndEnv;
 import org.iets3.core.expr.base.plugin.MessageValue;
 import com.mbeddr.mpsutil.interpreter.rt.InvalidValueException;
+import org.iets3.core.expr.base.behavior.TraceFailures;
 import org.iets3.core.expr.base.plugin.ConstraintFailedException;
 import com.mbeddr.mpsutil.interpreter.rt.InterpreterEscapeException;
 import org.iets3.core.base.behavior.ICanStoreCheckResult__BehaviorDescriptor;
@@ -88,22 +89,24 @@ public final class AssertTestItem__BehaviorDescriptor extends BaseBHDescriptor {
         result.setOk(false);
         result.setActual("<invalid value detected>");
         result.setErrorMessage(AbstractTestItem__BehaviorDescriptor.wrapException_id3YhAT14QasA.invoke(__thisNode__, "invalid value detected: " + ex.msg.toString(), ex));
-        result.setTrace(ex.failedTrace);
+        result.setTrace(TraceFailures.markFailure(ex));
       } catch (ConstraintFailedException ex) {
         System.err.println("Cause: " + ex.causingValue());
         result.setOk(false);
         result.setActual("<constraint failed>");
         result.setErrorMessage(AbstractTestItem__BehaviorDescriptor.wrapException_id3YhAT14QasA.invoke(__thisNode__, "constraint failed", ex));
-        result.setTrace(ex.failedTrace);
+        result.setTrace(TraceFailures.markFailure(ex));
       } catch (InterpreterEscapeException ex) {
         result.setOk(false);
         result.setActual("<interpreter failed>");
         result.setErrorMessage(AbstractTestItem__BehaviorDescriptor.wrapException_id3YhAT14QasA.invoke(__thisNode__, "interpreter failed", ex));
-        result.setTrace(ex.failedTrace);
+        result.setTrace(TraceFailures.markFailure(ex));
       } catch (Throwable t) {
         result.setOk(false);
         result.setActual("<interpreter failed internally>");
         result.setErrorMessage(AbstractTestItem__BehaviorDescriptor.wrapException_id3YhAT14QasA.invoke(__thisNode__, "interpreter failed internally", t));
+        // Keep the trace the interpreter had built when it threw, so that Show Trace still works.
+        result.setTrace(TraceFailures.markFailure(t));
         t.printStackTrace();
       } finally {
         CVH.overrideWithException = false;
@@ -119,6 +122,11 @@ public final class AssertTestItem__BehaviorDescriptor extends BaseBHDescriptor {
     ComputationTrace res = new ComputationTrace(__thisNode__);
     res.addChild(ct.descendantForNode(SLinkOperations.getTarget(__thisNode__, LINKS.actual$7fmO)), true, "actual");
     res.addChild(ct.descendantForNode(SLinkOperations.getTarget(__thisNode__, LINKS.expected$7fOQ)), true, "expected");
+    if (ct.hasConstraintFailure()) {
+      // A failure recorded on the trace root must not be lost when the frame is rebuilt.
+      res.setConstraintFailure(ct.getConstrainFailureMessage());
+      res.markForReveal();
+    }
     return res;
   }
   /*package*/ static String asString_id6iqfHNBPkjP(@NotNull SNode __thisNode__) {
