@@ -12632,7 +12632,6 @@
         <version>${version}</version>
         <depends>com.intellij.modules.mps</depends>
         <depends>org.iets3.core.os</depends>
-        <depends>org.iets3.core.expr.tracing</depends>
         <depends>com.mbeddr.mpsutil.editor.displayControl</depends>
         <depends>com.mbeddr.mpsutil.logicalChild</depends>
         <depends>org.iets3.contextfilter</depends>
