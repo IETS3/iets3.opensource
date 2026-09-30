@@ -292,6 +292,8 @@ val checkmodels by tasks.registering(MpsCheck::class) {
     pluginRoots.add(mpsHomeDir.dir("plugins"))
     folderMacros.put("iets3.github.opensource.home", layout.projectDirectory)
 
+    models.set(listOf("org.iets3.variability.os.sandbox.homeNetwork"))
+
     junitFile.set(layout.buildDirectory.file("TEST-checkProject.xml"))
     junitFormat.set("message")
     ignoreFailures = true
