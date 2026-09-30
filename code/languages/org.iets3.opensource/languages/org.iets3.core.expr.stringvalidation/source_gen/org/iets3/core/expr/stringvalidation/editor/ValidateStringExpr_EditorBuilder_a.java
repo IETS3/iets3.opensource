@@ -18,6 +18,7 @@ import org.jetbrains.mps.openapi.language.SAbstractConcept;
 import jetbrains.mps.openapi.editor.cells.DefaultSubstituteInfo;
 import jetbrains.mps.nodeEditor.cellMenu.SEmptyContainmentSubstituteInfo;
 import jetbrains.mps.nodeEditor.cellMenu.SChildSubstituteInfo;
+import jetbrains.mps.nodeEditor.cellLayout.CellLayout_Horizontal;
 import jetbrains.mps.nodeEditor.AbstractCellProvider;
 import jetbrains.mps.baseLanguage.closures.runtime._FunctionTypes;
 import com.mbeddr.core.base.editor.OpeningBracketCell;
@@ -61,9 +62,7 @@ import org.jetbrains.mps.openapi.language.SConcept;
     setCellContext(editorCell);
     editorCell.addEditorCell(createComponent_0());
     editorCell.addEditorCell(createRefNode_0());
-    editorCell.addEditorCell(createCustom_0());
-    editorCell.addEditorCell(createRefNodeList_0());
-    editorCell.addEditorCell(createCustom_1());
+    editorCell.addEditorCell(createCollection_1());
     editorCell.addEditorCell(createCustom_2());
     return editorCell;
   }
@@ -129,28 +128,36 @@ import org.jetbrains.mps.openapi.language.SConcept;
       return "<no candidate>";
     }
   }
+  private EditorCell createCollection_1() {
+    EditorCell_Collection editorCell = new EditorCell_Collection(getEditorContext(), myNode, new CellLayout_Horizontal());
+    editorCell.setCellId("Collection_a0ljh4_c0");
+    editorCell.addEditorCell(createCustom_0());
+    editorCell.addEditorCell(createRefNodeList_0());
+    editorCell.addEditorCell(createCustom_1());
+    return editorCell;
+  }
   private EditorCell createCustom_0() {
     AbstractCellProvider provider = ((_FunctionTypes._return_P0_E0<OpeningBracketCell>) () -> new OpeningBracketCell(myNode, new JBColor(Color.black, Color.lightGray))).invoke();
     EditorCell editorCell = provider.createEditorCell(getEditorContext());
-    editorCell.setCellId("Custom_a0ljh4_c0");
+    editorCell.setCellId("Custom_a0ljh4_a2a");
     Style style = new StyleImpl();
     style.set(StyleAttributes.PUNCTUATION_RIGHT, true);
     editorCell.getStyle().putAll(style);
     return editorCell;
   }
   private EditorCell createRefNodeList_0() {
-    AbstractCellListHandler handler = new clausesListHandler_a0ljh4_d0(myNode, getEditorContext());
+    AbstractCellListHandler handler = new clausesListHandler_a0ljh4_b2a(myNode, getEditorContext());
     EditorCell_Collection editorCell = handler.createCells(new CellLayout_Vertical(), false);
     editorCell.setCellId("refNodeList_clauses");
     editorCell.setGridLayout(true);
     editorCell.setSRole(handler.getElementSRole());
     return editorCell;
   }
-  private static class clausesListHandler_a0ljh4_d0 extends RefNodeListHandler {
+  private static class clausesListHandler_a0ljh4_b2a extends RefNodeListHandler {
     @NotNull
     private SNode myNode;
 
-    public clausesListHandler_a0ljh4_d0(SNode ownerNode, EditorContext context) {
+    public clausesListHandler_a0ljh4_b2a(SNode ownerNode, EditorContext context) {
       super(context, false);
       myNode = ownerNode;
     }
@@ -173,7 +180,7 @@ import org.jetbrains.mps.openapi.language.SConcept;
     }
     public EditorCell createEmptyCell() {
       getCellFactory().pushCellContext();
-      getCellFactory().setNodeLocation(new SNodeLocation.FromParentAndLink(clausesListHandler_a0ljh4_d0.this.getNode(), LINKS.clauses$VM32));
+      getCellFactory().setNodeLocation(new SNodeLocation.FromParentAndLink(clausesListHandler_a0ljh4_b2a.this.getNode(), LINKS.clauses$VM32));
       try {
         EditorCell emptyCell = null;
         emptyCell = super.createEmptyCell();
@@ -216,13 +223,13 @@ import org.jetbrains.mps.openapi.language.SConcept;
   private EditorCell createCustom_1() {
     AbstractCellProvider provider = ((_FunctionTypes._return_P0_E0<ClosingBracketCell>) () -> new ClosingBracketCell(myNode, new JBColor(Color.black, Color.lightGray))).invoke();
     EditorCell editorCell = provider.createEditorCell(getEditorContext());
-    editorCell.setCellId("Custom_a0ljh4_e0");
+    editorCell.setCellId("Custom_a0ljh4_c2a");
     return editorCell;
   }
   private EditorCell createCustom_2() {
     AbstractCellProvider provider = ((_FunctionTypes._return_P0_E0<EndCell>) () -> new EndCell(myNode)).invoke();
     EditorCell editorCell = provider.createEditorCell(getEditorContext());
-    editorCell.setCellId("Custom_a0ljh4_f0");
+    editorCell.setCellId("Custom_a0ljh4_d0");
     return editorCell;
   }
 
