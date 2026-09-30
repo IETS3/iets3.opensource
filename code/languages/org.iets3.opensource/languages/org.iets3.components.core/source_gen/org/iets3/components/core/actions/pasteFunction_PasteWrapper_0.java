@@ -22,22 +22,21 @@ public final class pasteFunction_PasteWrapper_0 implements PasteWrapper {
   }
   @Override
   public SNode wrap(SNode sourceNode) {
-    return createCompFunctionAdapter_nz2yf9_a0a0a(sourceNode);
+    return createCompFunctionAdapter_old_nz2yf9_a0a0a(sourceNode);
   }
-  private static SNode createCompFunctionAdapter_nz2yf9_a0a0a(SNode p0) {
-    SNodeBuilder n0 = new SNodeBuilder().init(CONCEPTS.CompFunctionAdapter$XP);
-    n0.forChild(LINKS.functionLike$1qr0).initNode(p0, CONCEPTS.IFunctionLike$t6, true);
+  private static SNode createCompFunctionAdapter_old_nz2yf9_a0a0a(SNode p0) {
+    SNodeBuilder n0 = new SNodeBuilder().init(CONCEPTS.CompFunctionAdapter_old$L8);
+    n0.forChild(LINKS.fun$NLoa).initNode(p0, CONCEPTS.Function$iC, true);
     return n0.getResult();
   }
 
   private static final class CONCEPTS {
     /*package*/ static final SConcept Function$iC = MetaAdapterFactory.getConcept(0x71934284d7d145eeL, 0xa0548c072591085fL, 0x427ce523083c44a3L, "org.iets3.core.expr.toplevel.structure.Function");
     /*package*/ static final SInterfaceConcept IComponentContent$jl = MetaAdapterFactory.getInterfaceConcept(0xf0fd486f857743e9L, 0xb6713d118449c6e7L, 0x6c4f9fd23e48465bL, "org.iets3.components.core.structure.IComponentContent");
-    /*package*/ static final SConcept CompFunctionAdapter$XP = MetaAdapterFactory.getConcept(0xf0fd486f857743e9L, 0xb6713d118449c6e7L, 0x3493a42992c5b1c5L, "org.iets3.components.core.structure.CompFunctionAdapter");
-    /*package*/ static final SInterfaceConcept IFunctionLike$t6 = MetaAdapterFactory.getInterfaceConcept(0x9464fa065ab9409bL, 0x927464ab29588457L, 0x427ce523083b8a2fL, "org.iets3.core.expr.lambda.structure.IFunctionLike");
+    /*package*/ static final SConcept CompFunctionAdapter_old$L8 = MetaAdapterFactory.getConcept(0xf0fd486f857743e9L, 0xb6713d118449c6e7L, 0x2c1847a3cf9155bdL, "org.iets3.components.core.structure.CompFunctionAdapter_old");
   }
 
   private static final class LINKS {
-    /*package*/ static final SContainmentLink functionLike$1qr0 = MetaAdapterFactory.getContainmentLink(0x71934284d7d145eeL, 0xa0548c072591085fL, 0x4aa68aac0c23aa4L, 0x4aa68aac0c267f3L, "functionLike");
+    /*package*/ static final SContainmentLink fun$NLoa = MetaAdapterFactory.getContainmentLink(0x71934284d7d145eeL, 0xa0548c072591085fL, 0x5b6b0ca1fa4e6b6L, 0x5b6b0ca1f838e57L, "fun");
   }
 }
