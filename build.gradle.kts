@@ -238,16 +238,21 @@ val buildAndRunTests by tasks.registering(TestLanguages::class) {
 val failOnTestError by tasks.registering {
     description = "evaluate junit result and fail on error"
     doLast {
-        val junitXml = file("TESTS-TestSuites.xml")
-        if (junitXml.exists()) {
+        val junitXmls = listOf(
+            // written by buildAndRunTests' Ant junitreport aggregation into the project directory
+            file("TESTS-TestSuites.xml"),
+            // written directly by the checkmodels task into the build directory, via its own junitFile property
+            layout.buildDirectory.file("TEST-checkProject.xml").get().asFile
+        )
+        val errorsAndFailures = junitXmls.filter { it.exists() }.sumOf { junitXml ->
             val junitResult = XmlSlurper().parse(junitXml)
             val testSuites = junitResult.childNodes().asSequence().map { it as groovy.xml.slurpersupport.Node }
-            val errorsAndFailures = testSuites.sumOf {
+            testSuites.sumOf {
                 it.attributes()["errors"].toString().toInt() + it.attributes()["failures"].toString().toInt()
             }
-            if (errorsAndFailures > 0) {
-                throw GradleException("$errorsAndFailures JUnit tests failed. Check the report for details.")
-            }
+        }
+        if (errorsAndFailures > 0) {
+            throw GradleException("$errorsAndFailures JUnit tests failed. Check the report for details.")
         }
     }
 }
@@ -284,7 +289,7 @@ val remigrate by tasks.registering(Remigrate::class) {
 }
 
 val checkmodels by tasks.registering(MpsCheck::class) {
-    dependsOn(resolveMPS)
+    dependsOn(resolveMPS, buildLanguages)
     javaLauncher.set(tasks.downloadJbr.get().javaLauncher)
 
     projectLocation.set(file("$projectDir/code/languages/org.iets3.opensource"))
@@ -299,6 +304,18 @@ val checkmodels by tasks.registering(MpsCheck::class) {
     ignoreFailures = true
     debug = false
     maxHeapSize = "4G"
+}
+
+// checkmodels must finish before failOnTestError runs, so that TEST-checkProject.xml exists
+// in time to be evaluated. Ordered via buildAndRunTests, since failOnTestError finalizes it
+// (Ant's own junitreport aggregation doesn't accept checkmodels' XML format, so
+// failOnTestError reads TEST-checkProject.xml directly instead).
+buildAndRunTests {
+    mustRunAfter(checkmodels)
+}
+
+tasks.check {
+    dependsOn(checkmodels)
 }
 
 val packageLanguages by tasks.registering(Zip::class) {
