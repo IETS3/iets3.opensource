@@ -13,7 +13,7 @@
       <unit at="11,0,56,0" name="org.iets3.opensource.build.gentests.structure.ConceptPresentationAspectImpl" />
     </file>
     <file name="LanguageConceptSwitch.java">
-      <unit at="10,0,34,0" name="org.iets3.opensource.build.gentests.structure.LanguageConceptSwitch" />
+      <unit at="12,0,42,0" name="org.iets3.opensource.build.gentests.structure.LanguageConceptSwitch" />
     </file>
     <file name="StructureAspectDescriptor.java">
       <unit at="14,0,104,0" name="org.iets3.opensource.build.gentests.structure.StructureAspectDescriptor" />
@@ -34,8 +34,8 @@
       <scope id="1269312529424569797" at="36,65,43,53" />
     </file>
     <file name="LanguageConceptSwitch.java">
-      <node id="1269312529424569797" at="14,0,15,0" concept="6" trace="GeneratedTestsDependency_Module" />
-      <node id="1269312529424569797" at="20,57,21,70" concept="0" />
+      <node id="1269312529424569797" at="16,0,17,0" concept="6" trace="GeneratedTestsDependency_Module" />
+      <node id="1269312529424569797" at="22,57,23,70" concept="0" />
     </file>
     <file name="StructureAspectDescriptor.java">
       <node id="1269312529424569797" at="17,0,18,0" concept="1" trace="myConceptGeneratedTestsDependency_Module" />
@@ -69,8 +69,8 @@
       <scope id="4604852045247358203" at="44,58,51,46" />
     </file>
     <file name="LanguageConceptSwitch.java">
-      <node id="4604852045247358203" at="15,0,16,0" concept="6" trace="RunKernelFGeneratedTests" />
-      <node id="4604852045247358203" at="21,70,22,63" concept="0" />
+      <node id="4604852045247358203" at="17,0,18,0" concept="6" trace="RunKernelFGeneratedTests" />
+      <node id="4604852045247358203" at="23,70,24,63" concept="0" />
     </file>
     <file name="StructureAspectDescriptor.java">
       <node id="4604852045247358203" at="18,0,19,0" concept="1" trace="myConceptRunKernelFGeneratedTests" />
@@ -107,8 +107,8 @@
       <scope id="6030121483520591885" at="22,47,28,35" />
     </file>
     <file name="LanguageConceptSwitch.java">
-      <node id="6030121483520591885" at="12,0,13,0" concept="6" trace="BuildMacroRef" />
-      <node id="6030121483520591885" at="18,116,19,52" concept="0" />
+      <node id="6030121483520591885" at="14,0,15,0" concept="6" trace="BuildMacroRef" />
+      <node id="6030121483520591885" at="20,116,21,52" concept="0" />
     </file>
     <file name="StructureAspectDescriptor.java">
       <node id="6030121483520591885" at="15,0,16,0" concept="1" trace="myConceptBuildMacroRef" />
@@ -142,8 +142,8 @@
       <scope id="8961448726281507188" at="29,52,35,40" />
     </file>
     <file name="LanguageConceptSwitch.java">
-      <node id="8961448726281507188" at="13,0,14,0" concept="6" trace="CustomRunnerAspect" />
-      <node id="8961448726281507188" at="19,52,20,57" concept="0" />
+      <node id="8961448726281507188" at="15,0,16,0" concept="6" trace="CustomRunnerAspect" />
+      <node id="8961448726281507188" at="21,52,22,57" concept="0" />
     </file>
     <file name="StructureAspectDescriptor.java">
       <node id="8961448726281507188" at="16,0,17,0" concept="1" trace="myConceptCustomRunnerAspect" />

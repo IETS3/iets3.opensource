@@ -8,7 +8,6 @@ import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import org.jetbrains.mps.openapi.model.SNode;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import java.util.List;
 import java.util.Arrays;
@@ -17,7 +16,6 @@ import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
 import jetbrains.mps.internal.collections.runtime.ListSequence;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations;
-import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 import org.jetbrains.mps.openapi.language.SConcept;
@@ -27,24 +25,22 @@ import org.jetbrains.mps.openapi.language.SProperty;
 public final class AlgebraicConstructor__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getConcept(0x5fe6cb132fbd4e21L, 0x9842785bdd6fc5b1L, 0x52a5783d22c9d77cL, "org.iets3.core.expr.adt.structure.AlgebraicConstructor");
 
-  public static final SMethod<SNode> decl_id5a_u3OyMB2Y = new SMethodBuilder<SNode>(new SJavaCompoundTypeImpl((Class<SNode>) ((Class) Object.class))).name("decl").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5955298286239379646L).languageId(0x9842785bdd6fc5b1L, 0x5fe6cb132fbd4e21L).build2();
-  public static final SMethod<Boolean> isSubconstructor_id5a_u3OzNlbQ = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("isSubconstructor").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5955298286256345846L).languageId(0x9842785bdd6fc5b1L, 0x5fe6cb132fbd4e21L).build2();
-  public static final SMethod<SNode> toplevelConstructor_id5a_u3OzNoIT = new SMethodBuilder<SNode>(new SJavaCompoundTypeImpl((Class<SNode>) ((Class) Object.class))).name("toplevelConstructor").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5955298286256360377L).languageId(0x9842785bdd6fc5b1L, 0x5fe6cb132fbd4e21L).build2();
-  public static final SMethod<List<SNode>> argumentTypes_id5a_u3OzNoA1 = new SMethodBuilder<List<SNode>>(new SJavaCompoundTypeImpl((Class<List<SNode>>) ((Class) Object.class))).name("argumentTypes").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5955298286256359809L).languageId(0x9842785bdd6fc5b1L, 0x5fe6cb132fbd4e21L).build2();
-  public static final SMethod<List<SNode>> arguments_id28$LOSBWeOh = new SMethodBuilder<List<SNode>>(new SJavaCompoundTypeImpl((Class<List<SNode>>) ((Class) Object.class))).name("arguments").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(2460310434942610705L).languageId(0x9842785bdd6fc5b1L, 0x5fe6cb132fbd4e21L).build2();
-  public static final SMethod<List<SNode>> superconstructors_id5a_u3OzQq0D = new SMethodBuilder<List<SNode>>(new SJavaCompoundTypeImpl((Class<List<SNode>>) ((Class) Object.class))).name("superconstructors").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5955298286257152041L).languageId(0x9842785bdd6fc5b1L, 0x5fe6cb132fbd4e21L).build2();
-  public static final SMethod<Boolean> hideType_id7aipPVqaulG = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("hideType").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(8255774724008306028L).languageId(0x9842785bdd6fc5b1L, 0x5fe6cb132fbd4e21L).build2();
-  public static final SMethod<Integer> minNumberOfArgs_id28$LOSBIIWA = new SMethodBuilder<Integer>(new SJavaCompoundTypeImpl(Integer.TYPE)).name("minNumberOfArgs").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(2460310434939072294L).languageId(0x9842785bdd6fc5b1L, 0x5fe6cb132fbd4e21L).build2();
-  public static final SMethod<Integer> declatedNumberOfArgs_id28$LOSBLtmr = new SMethodBuilder<Integer>(new SJavaCompoundTypeImpl(Integer.TYPE)).name("declatedNumberOfArgs").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(2460310434939786651L).languageId(0x9842785bdd6fc5b1L, 0x5fe6cb132fbd4e21L).build2();
-  public static final SMethod<Integer> maxNumberOfArgs_id28$LOSBJ3iM = new SMethodBuilder<Integer>(new SJavaCompoundTypeImpl(Integer.TYPE)).name("maxNumberOfArgs").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(2460310434939155634L).languageId(0x9842785bdd6fc5b1L, 0x5fe6cb132fbd4e21L).build2();
-  public static final SMethod<SNode> patternTypeAtPosition_id28$LOSBJasb = new SMethodBuilder<SNode>(new SJavaCompoundTypeImpl((Class<SNode>) ((Class) Object.class))).name("patternTypeAtPosition").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(2460310434939184907L).languageId(0x9842785bdd6fc5b1L, 0x5fe6cb132fbd4e21L).build2(SMethodBuilder.createJavaParameter(Integer.TYPE, ""));
-  public static final SMethod<SNode> consTypeAtPosition_id28$LOSBOEHq = new SMethodBuilder<SNode>(new SJavaCompoundTypeImpl((Class<SNode>) ((Class) Object.class))).name("consTypeAtPosition").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(2460310434940627802L).languageId(0x9842785bdd6fc5b1L, 0x5fe6cb132fbd4e21L).build2(SMethodBuilder.createJavaParameter(Integer.TYPE, ""));
-  public static final SMethod<Boolean> isNumberOfArgsValid_id28$LOSBMC$e = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("isNumberOfArgsValid").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(2460310434940094734L).languageId(0x9842785bdd6fc5b1L, 0x5fe6cb132fbd4e21L).build2(SMethodBuilder.createJavaParameter(Integer.TYPE, ""));
+  public static final SMethod<SNode> decl_id5a_u3OyMB2Y = new SMethodBuilder<>(SNode.class).name("decl").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5955298286239379646L).languageId(0x9842785bdd6fc5b1L, 0x5fe6cb132fbd4e21L).build2();
+  public static final SMethod<Boolean> isSubconstructor_id5a_u3OzNlbQ = new SMethodBuilder<>(Boolean.TYPE).name("isSubconstructor").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5955298286256345846L).languageId(0x9842785bdd6fc5b1L, 0x5fe6cb132fbd4e21L).build2();
+  public static final SMethod<SNode> toplevelConstructor_id5a_u3OzNoIT = new SMethodBuilder<>(SNode.class).name("toplevelConstructor").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5955298286256360377L).languageId(0x9842785bdd6fc5b1L, 0x5fe6cb132fbd4e21L).build2();
+  public static final SMethod<List<SNode>> argumentTypes_id5a_u3OzNoA1 = new SMethodBuilder<>((Class<List<SNode>>) ((Class) Object.class)).name("argumentTypes").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5955298286256359809L).languageId(0x9842785bdd6fc5b1L, 0x5fe6cb132fbd4e21L).build2();
+  public static final SMethod<List<SNode>> arguments_id28$LOSBWeOh = new SMethodBuilder<>((Class<List<SNode>>) ((Class) Object.class)).name("arguments").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(2460310434942610705L).languageId(0x9842785bdd6fc5b1L, 0x5fe6cb132fbd4e21L).build2();
+  public static final SMethod<List<SNode>> superconstructors_id5a_u3OzQq0D = new SMethodBuilder<>((Class<List<SNode>>) ((Class) Object.class)).name("superconstructors").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5955298286257152041L).languageId(0x9842785bdd6fc5b1L, 0x5fe6cb132fbd4e21L).build2();
+  public static final SMethod<Boolean> hideType_id7aipPVqaulG = new SMethodBuilder<>(Boolean.TYPE).name("hideType").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(8255774724008306028L).languageId(0x9842785bdd6fc5b1L, 0x5fe6cb132fbd4e21L).build2();
+  public static final SMethod<Integer> minNumberOfArgs_id28$LOSBIIWA = new SMethodBuilder<>(Integer.TYPE).name("minNumberOfArgs").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(2460310434939072294L).languageId(0x9842785bdd6fc5b1L, 0x5fe6cb132fbd4e21L).build2();
+  public static final SMethod<Integer> declatedNumberOfArgs_id28$LOSBLtmr = new SMethodBuilder<>(Integer.TYPE).name("declatedNumberOfArgs").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(2460310434939786651L).languageId(0x9842785bdd6fc5b1L, 0x5fe6cb132fbd4e21L).build2();
+  public static final SMethod<Integer> maxNumberOfArgs_id28$LOSBJ3iM = new SMethodBuilder<>(Integer.TYPE).name("maxNumberOfArgs").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(2460310434939155634L).languageId(0x9842785bdd6fc5b1L, 0x5fe6cb132fbd4e21L).build2();
+  public static final SMethod<SNode> patternTypeAtPosition_id28$LOSBJasb = new SMethodBuilder<>(SNode.class).name("patternTypeAtPosition").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(2460310434939184907L).languageId(0x9842785bdd6fc5b1L, 0x5fe6cb132fbd4e21L).build2(SMethodBuilder.createJavaParameter(Integer.TYPE, "pos"));
+  public static final SMethod<SNode> consTypeAtPosition_id28$LOSBOEHq = new SMethodBuilder<>(SNode.class).name("consTypeAtPosition").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(2460310434940627802L).languageId(0x9842785bdd6fc5b1L, 0x5fe6cb132fbd4e21L).build2(SMethodBuilder.createJavaParameter(Integer.TYPE, "pos"));
+  public static final SMethod<Boolean> isNumberOfArgsValid_id28$LOSBMC$e = new SMethodBuilder<>(Boolean.TYPE).name("isNumberOfArgsValid").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(2460310434940094734L).languageId(0x9842785bdd6fc5b1L, 0x5fe6cb132fbd4e21L).build2(SMethodBuilder.createJavaParameter(Integer.TYPE, "count"));
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(decl_id5a_u3OyMB2Y, isSubconstructor_id5a_u3OzNlbQ, toplevelConstructor_id5a_u3OzNoIT, argumentTypes_id5a_u3OzNoA1, arguments_id28$LOSBWeOh, superconstructors_id5a_u3OzQq0D, hideType_id7aipPVqaulG, minNumberOfArgs_id28$LOSBIIWA, declatedNumberOfArgs_id28$LOSBLtmr, maxNumberOfArgs_id28$LOSBJ3iM, patternTypeAtPosition_id28$LOSBJasb, consTypeAtPosition_id28$LOSBOEHq, isNumberOfArgsValid_id28$LOSBMC$e);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(decl_id5a_u3OyMB2Y, isSubconstructor_id5a_u3OzNlbQ, toplevelConstructor_id5a_u3OzNoIT, argumentTypes_id5a_u3OzNoA1, arguments_id28$LOSBWeOh, superconstructors_id5a_u3OzQq0D, hideType_id7aipPVqaulG, minNumberOfArgs_id28$LOSBIIWA, declatedNumberOfArgs_id28$LOSBLtmr, maxNumberOfArgs_id28$LOSBJ3iM, patternTypeAtPosition_id28$LOSBJasb, consTypeAtPosition_id28$LOSBOEHq, isNumberOfArgsValid_id28$LOSBMC$e);
 
-  private static void ___init___(@NotNull SNode __thisNode__) {
-  }
 
   /*package*/ static SNode decl_id5a_u3OyMB2Y(@NotNull SNode __thisNode__) {
     return SNodeOperations.getNodeAncestor(__thisNode__, CONCEPTS.AlgebraicDeclaration$JM, false, false);
@@ -121,10 +117,6 @@ public final class AlgebraicConstructor__BehaviorDescriptor extends BaseBHDescri
   /*package*/ AlgebraicConstructor__BehaviorDescriptor() {
   }
 
-  @Override
-  protected void initNode(@NotNull SNode node, @NotNull SConstructor constructor, @Nullable Object[] parameters) {
-    ___init___(node);
-  }
 
   @Override
   protected <T> T invokeSpecial0(@NotNull SNode node, @NotNull SMethod<T> method, @Nullable Object[] parameters) {

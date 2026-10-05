@@ -8,14 +8,12 @@ import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import org.jetbrains.mps.openapi.model.SNode;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import java.util.List;
 import java.util.Arrays;
 import org.jetbrains.annotations.NotNull;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
-import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 import org.jetbrains.mps.openapi.language.SContainmentLink;
@@ -23,13 +21,11 @@ import org.jetbrains.mps.openapi.language.SContainmentLink;
 public final class OperatorTag__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getConcept(0xcfaa4966b7d54b69L, 0xb66a309a6e1a7290L, 0x4a147296d680c07cL, "org.iets3.core.expr.base.structure.OperatorTag");
 
-  public static final SMethod<SNode> build_id4CksDrmwc2x = new SMethodBuilder<SNode>(new SJavaCompoundTypeImpl((Class<SNode>) ((Class) Object.class))).name("build").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5338017450510303393L).languageId(0xb66a309a6e1a7290L, 0xcfaa4966b7d54b69L).build2(SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""), SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""));
-  public static final SMethod<SNode> buildOperator_id4CksDrmwfht = new SMethodBuilder<SNode>(new SJavaCompoundTypeImpl((Class<SNode>) ((Class) Object.class))).name("buildOperator").modifiers(12, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5338017450510316637L).languageId(0xb66a309a6e1a7290L, 0xcfaa4966b7d54b69L).build2();
+  public static final SMethod<SNode> build_id4CksDrmwc2x = new SMethodBuilder<>(SNode.class).name("build").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5338017450510303393L).languageId(0xb66a309a6e1a7290L, 0xcfaa4966b7d54b69L).build2(SMethodBuilder.createJavaParameter(SNode.class, "left"), SMethodBuilder.createJavaParameter(SNode.class, "right"));
+  public static final SMethod<SNode> buildOperator_id4CksDrmwfht = new SMethodBuilder<>(SNode.class).name("buildOperator").modifiers(12, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5338017450510316637L).languageId(0xb66a309a6e1a7290L, 0xcfaa4966b7d54b69L).build2();
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(build_id4CksDrmwc2x, buildOperator_id4CksDrmwfht);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(build_id4CksDrmwc2x, buildOperator_id4CksDrmwfht);
 
-  private static void ___init___(@NotNull SNode __thisNode__) {
-  }
 
   /*package*/ static SNode build_id4CksDrmwc2x(@NotNull SNode __thisNode__, SNode left, SNode right) {
     if (right == null) {
@@ -45,10 +41,6 @@ public final class OperatorTag__BehaviorDescriptor extends BaseBHDescriptor {
   /*package*/ OperatorTag__BehaviorDescriptor() {
   }
 
-  @Override
-  protected void initNode(@NotNull SNode node, @NotNull SConstructor constructor, @Nullable Object[] parameters) {
-    ___init___(node);
-  }
 
   @Override
   protected <T> T invokeSpecial0(@NotNull SNode node, @NotNull SMethod<T> method, @Nullable Object[] parameters) {

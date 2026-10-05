@@ -22,7 +22,7 @@ public class EnumerationDescriptor_ASILLevelEnum extends EnumerationDescriptorBa
   private final EnumerationDescriptor.MemberDescriptor myMember__1_0 = new EnumerationDescriptor.MemberDescriptor("_1", "QM", 0x16177b37bbf2cbdL, "r:b53239c7-3de8-44c4-9520-b85ab78eddfd(org.iets3.safety.attributes.structure)/5939066662398655335");
 
   private final EnumerationLiteralsIndex myIndex = EnumerationLiteralsIndex.build(0x3d5cb9202b5f4dcbL, 0x834968b4bf077e63L, 0x3ce7d4897445a3c0L, 0x3ce7d4897445a3c1L, 0x3ce7d4897445a3c2L, 0x3ce7d4897445a3c5L, 0x3ce7d4897445a3c9L, 0x16177b37bbf2cbdL);
-  private final List<EnumerationDescriptor.MemberDescriptor> myMembers = new EnumerationDescriptorBase.MembersList(myIndex, myMember__7_0, myMember__8_0, myMember__9_0, myMember__10_0, myMember__1_0);
+  private final List<EnumerationDescriptor.MemberDescriptor> myMembers = new EnumerationDescriptorBase.MembersList0(myIndex, myMember__7_0, myMember__8_0, myMember__9_0, myMember__10_0, myMember__1_0);
 
   @Nullable
   @Override

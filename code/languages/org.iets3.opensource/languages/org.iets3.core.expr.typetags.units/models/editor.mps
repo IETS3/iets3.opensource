@@ -30,6 +30,9 @@
     <import index="cj4x" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.openapi.editor(MPS.Editor/)" implicit="true" />
   </imports>
   <registry>
+    <language id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior">
+      <concept id="3235159848334022093" name="jetbrains.mps.lang.behavior.structure.Node_ConceptMethodCall" flags="nn" index="3zqWPK" />
+    </language>
     <language id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor">
       <concept id="1402906326895675325" name="jetbrains.mps.lang.editor.structure.CellActionMap_FunctionParm_selectedNode" flags="nn" index="0IXxy" />
       <concept id="5991739802479784074" name="jetbrains.mps.lang.editor.structure.MenuTypeNamed" flags="ng" index="22hDWg" />
@@ -410,7 +413,6 @@
       <concept id="1138411891628" name="jetbrains.mps.lang.smodel.structure.SNodeOperation" flags="nn" index="eCIE_">
         <child id="1144104376918" name="parameter" index="1xVPHs" />
       </concept>
-      <concept id="1179409122411" name="jetbrains.mps.lang.smodel.structure.Node_ConceptMethodCall" flags="nn" index="2qgKlT" />
       <concept id="2396822768958367367" name="jetbrains.mps.lang.smodel.structure.AbstractTypeCastExpression" flags="nn" index="$5XWr">
         <child id="6733348108486823193" name="leftExpression" index="1m5AlR" />
         <child id="3906496115198199033" name="conceptArgument" index="3oSUPX" />
@@ -1219,7 +1221,7 @@
                         </node>
                       </node>
                     </node>
-                    <node concept="2qgKlT" id="5Q6EZP6Kzv$" role="2OqNvi">
+                    <node concept="3zqWPK" id="5DJjBfj0aE6" role="2OqNvi">
                       <ref role="37wK5l" to="dntf:1wGuEUvYk55" resolve="getConversionRule" />
                     </node>
                   </node>
@@ -1272,7 +1274,7 @@
                       </node>
                     </node>
                   </node>
-                  <node concept="2qgKlT" id="5Q6EZP6KyYT" role="2OqNvi">
+                  <node concept="3zqWPK" id="5DJjBfj0aE8" role="2OqNvi">
                     <ref role="37wK5l" to="dntf:1wGuEUvYk55" resolve="getConversionRule" />
                   </node>
                 </node>

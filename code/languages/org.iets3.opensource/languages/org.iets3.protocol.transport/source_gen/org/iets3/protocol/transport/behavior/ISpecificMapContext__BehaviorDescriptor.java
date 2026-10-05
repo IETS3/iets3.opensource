@@ -8,34 +8,26 @@ import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import java.util.List;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import java.util.Arrays;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.mps.openapi.model.SNode;
-import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 
 public final class ISpecificMapContext__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getInterfaceConcept(0xa50d629093d242afL, 0x9ae0b2fefc6ee754L, 0x145712db18ae6769L, "org.iets3.protocol.transport.structure.ISpecificMapContext");
 
-  public static final SMethod<List<SAbstractConcept>> getExpectedMapTargets_id1hn4HGoFAu6 = new SMethodBuilder<List<SAbstractConcept>>(new SJavaCompoundTypeImpl((Class<List<SAbstractConcept>>) ((Class) Object.class))).name("getExpectedMapTargets").modifiers(13, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(1465660935953606534L).languageId(0x9ae0b2fefc6ee754L, 0xa50d629093d242afL).build2();
-  public static final SMethod<SAbstractConcept> getExpectedProtocol_id1hn4HGoFAum = new SMethodBuilder<SAbstractConcept>(new SJavaCompoundTypeImpl((Class<SAbstractConcept>) ((Class) Object.class))).name("getExpectedProtocol").modifiers(13, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(1465660935953606550L).languageId(0x9ae0b2fefc6ee754L, 0xa50d629093d242afL).build2();
+  public static final SMethod<List<SAbstractConcept>> getExpectedMapTargets_id1hn4HGoFAu6 = new SMethodBuilder<>((Class<List<SAbstractConcept>>) ((Class) Object.class)).name("getExpectedMapTargets").modifiers(13, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(1465660935953606534L).languageId(0x9ae0b2fefc6ee754L, 0xa50d629093d242afL).build2();
+  public static final SMethod<SAbstractConcept> getExpectedProtocol_id1hn4HGoFAum = new SMethodBuilder<>(SAbstractConcept.class).name("getExpectedProtocol").modifiers(13, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(1465660935953606550L).languageId(0x9ae0b2fefc6ee754L, 0xa50d629093d242afL).build2();
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(getExpectedMapTargets_id1hn4HGoFAu6, getExpectedProtocol_id1hn4HGoFAum);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(getExpectedMapTargets_id1hn4HGoFAu6, getExpectedProtocol_id1hn4HGoFAum);
 
-  private static void ___init___(@NotNull SNode __thisNode__) {
-  }
 
 
   /*package*/ ISpecificMapContext__BehaviorDescriptor() {
   }
 
-  @Override
-  protected void initNode(@NotNull SNode node, @NotNull SConstructor constructor, @Nullable Object[] parameters) {
-    ___init___(node);
-  }
 
   @Override
   protected <T> T invokeSpecial0(@NotNull SNode node, @NotNull SMethod<T> method, @Nullable Object[] parameters) {

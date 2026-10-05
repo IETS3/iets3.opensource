@@ -7,7 +7,6 @@ import org.jetbrains.mps.openapi.language.SAbstractConcept;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import org.iets3.core.base.behavior.IResult;
 import java.util.List;
@@ -18,7 +17,6 @@ import org.iets3.core.expr.base.runtime.runtime.StringRepresentation;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
 import jetbrains.mps.internal.collections.runtime.ListSequence;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations;
-import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 import org.jetbrains.mps.openapi.language.SContainmentLink;
@@ -27,17 +25,15 @@ import org.jetbrains.mps.openapi.language.SProperty;
 public final class ErrorSolverTask__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getConcept(0xdb8bd0353f5141d8L, 0x8fed954c202d18beL, 0xf5136bc1ff76858L, "org.iets3.analysis.base.structure.ErrorSolverTask");
 
-  public static final SMethod<String> getPresentation_idhEwIMiw = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("getPresentation").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(1213877396640L).languageId(0x9b92103b95ca8c0cL, 0xceab519525ea4f22L).build2();
-  public static final SMethod<IResult> run_id7rOSrvnGeUQ = new SMethodBuilder<IResult>(new SJavaCompoundTypeImpl(IResult.class)).name("run").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(8571724170506858166L).languageId(0x8fed954c202d18beL, 0xdb8bd0353f5141d8L).build2();
-  public static final SMethod<Void> finishAndCleanup_id7rOSrvnHe0i = new SMethodBuilder<Void>(new SJavaCompoundTypeImpl(Void.class)).name("finishAndCleanup").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(8571724170507116562L).languageId(0x8fed954c202d18beL, 0xdb8bd0353f5141d8L).build2();
-  public static final SMethod<String> getWarning_id7rOSrvnH60y = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("getWarning").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(8571724170507083810L).languageId(0x8fed954c202d18beL, 0xdb8bd0353f5141d8L).build2();
-  public static final SMethod<Void> setCreationTime_id4u26ju1JEr$ = new SMethodBuilder<Void>(new SJavaCompoundTypeImpl(Void.class)).name("setCreationTime").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5152708649855919844L).languageId(0x8fed954c202d18beL, 0xdb8bd0353f5141d8L).build2(SMethodBuilder.createJavaParameter(Long.TYPE, ""));
-  public static final SMethod<String> allErrorsAsString_idXhdFKw2OsE = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("allErrorsAsString").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(1103723565301843754L).languageId(0x8fed954c202d18beL, 0xdb8bd0353f5141d8L).build2();
+  public static final SMethod<String> getPresentation_idhEwIMiw = new SMethodBuilder<>(String.class).name("getPresentation").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(1213877396640L).languageId(0x9b92103b95ca8c0cL, 0xceab519525ea4f22L).build2();
+  public static final SMethod<IResult> run_id7rOSrvnGeUQ = new SMethodBuilder<>(IResult.class).name("run").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(8571724170506858166L).languageId(0x8fed954c202d18beL, 0xdb8bd0353f5141d8L).build2();
+  public static final SMethod<Void> finishAndCleanup_id7rOSrvnHe0i = new SMethodBuilder<>(Void.TYPE).name("finishAndCleanup").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(8571724170507116562L).languageId(0x8fed954c202d18beL, 0xdb8bd0353f5141d8L).build2();
+  public static final SMethod<String> getWarning_id7rOSrvnH60y = new SMethodBuilder<>(String.class).name("getWarning").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(8571724170507083810L).languageId(0x8fed954c202d18beL, 0xdb8bd0353f5141d8L).build2();
+  public static final SMethod<Void> setCreationTime_id4u26ju1JEr$ = new SMethodBuilder<>(Void.TYPE).name("setCreationTime").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5152708649855919844L).languageId(0x8fed954c202d18beL, 0xdb8bd0353f5141d8L).build2(SMethodBuilder.createJavaParameter(Long.TYPE, "t"));
+  public static final SMethod<String> allErrorsAsString_idXhdFKw2OsE = new SMethodBuilder<>(String.class).name("allErrorsAsString").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(1103723565301843754L).languageId(0x8fed954c202d18beL, 0xdb8bd0353f5141d8L).build2();
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(getPresentation_idhEwIMiw, run_id7rOSrvnGeUQ, finishAndCleanup_id7rOSrvnHe0i, getWarning_id7rOSrvnH60y, setCreationTime_id4u26ju1JEr$, allErrorsAsString_idXhdFKw2OsE);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(getPresentation_idhEwIMiw, run_id7rOSrvnGeUQ, finishAndCleanup_id7rOSrvnHe0i, getWarning_id7rOSrvnH60y, setCreationTime_id4u26ju1JEr$, allErrorsAsString_idXhdFKw2OsE);
 
-  private static void ___init___(@NotNull SNode __thisNode__) {
-  }
 
   /*package*/ static String getPresentation_idhEwIMiw(@NotNull SNode __thisNode__) {
     StringRepresentation text = StringRepresentation.forMultipleSentences();
@@ -62,10 +58,6 @@ public final class ErrorSolverTask__BehaviorDescriptor extends BaseBHDescriptor 
   /*package*/ ErrorSolverTask__BehaviorDescriptor() {
   }
 
-  @Override
-  protected void initNode(@NotNull SNode node, @NotNull SConstructor constructor, @Nullable Object[] parameters) {
-    ___init___(node);
-  }
 
   @Override
   protected <T> T invokeSpecial0(@NotNull SNode node, @NotNull SMethod<T> method, @Nullable Object[] parameters) {

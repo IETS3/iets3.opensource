@@ -7,7 +7,6 @@ import org.jetbrains.mps.openapi.language.SAbstractConcept;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import java.util.List;
 import org.jetbrains.mps.openapi.model.SNode;
@@ -29,7 +28,6 @@ import org.iets3.core.expr.toplevel.behavior.EnumDeclaration__BehaviorDescriptor
 import org.iets3.core.expr.simpleTypes.behavior.NumberType__BehaviorDescriptor;
 import jetbrains.mps.baseLanguage.tuples.runtime.Tuples;
 import org.iets3.core.expr.simpleTypes.behavior.NumberLiteral__BehaviorDescriptor;
-import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 import jetbrains.mps.smodel.builder.SNodeBuilder;
@@ -41,18 +39,16 @@ import org.jetbrains.mps.openapi.language.SProperty;
 public final class EqClassProducer__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getConcept(0x7bcf9284ca29484fL, 0xa3b32855bdd813adL, 0x78949de3fd31f71L, "org.iets3.core.expr.simpleTypes.tests.structure.EqClassProducer");
 
-  public static final SMethod<Void> populate_id1bwJEEfG$x9 = new SMethodBuilder<Void>(new SJavaCompoundTypeImpl(Void.class)).name("populate").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(1360296727230433353L).languageId(0xb723dad7b65da615L, 0xd441fba0f46b43cdL).build2();
-  public static final SMethod<List<SNode>> getValues_idu9itSZORFC = new SMethodBuilder<List<SNode>>(new SJavaCompoundTypeImpl((Class<List<SNode>>) ((Class) Object.class))).name("getValues").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(543046448977246952L).languageId(0xa3b32855bdd813adL, 0x7bcf9284ca29484fL).build2(SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""));
-  public static final SMethod<String> decimals_idu9itSZPF$B = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("decimals").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(543046448977459495L).languageId(0xa3b32855bdd813adL, 0x7bcf9284ca29484fL).build2(SMethodBuilder.createJavaParameter(Double.TYPE, ""), SMethodBuilder.createJavaParameter(Integer.TYPE, ""));
-  public static final SMethod<SNode> makeCollectionWithNValues_id3M8$ImsmMNi = new SMethodBuilder<SNode>(new SJavaCompoundTypeImpl((Class<SNode>) ((Class) Object.class))).name("makeCollectionWithNValues").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(4361897753976712402L).languageId(0xa3b32855bdd813adL, 0x7bcf9284ca29484fL).build2(SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""), SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""), SMethodBuilder.createJavaParameter(Integer.TYPE, ""));
-  public static final SMethod<Boolean> supportsType_id1bwJEEfKt$D = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("supportsType").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(1360296727231453481L).languageId(0xb723dad7b65da615L, 0xd441fba0f46b43cdL).build2(SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""));
-  /*package*/ static final SMethod<Void> addForInt_idu9itSZTxO0 = new SMethodBuilder<Void>(new SJavaCompoundTypeImpl(Void.class)).name("addForInt").modifiers(0, AccessPrivileges.PRIVATE).concept(CONCEPT).baseMethodId(543046448978468096L).languageId(0xa3b32855bdd813adL, 0x7bcf9284ca29484fL).build2(SMethodBuilder.createJavaParameter((Class<List<SNode>>) ((Class) Object.class), ""));
-  /*package*/ static final SMethod<Void> addForReal_idu9itSZTBUD = new SMethodBuilder<Void>(new SJavaCompoundTypeImpl(Void.class)).name("addForReal").modifiers(0, AccessPrivileges.PRIVATE).concept(CONCEPT).baseMethodId(543046448978493097L).languageId(0xa3b32855bdd813adL, 0x7bcf9284ca29484fL).build2(SMethodBuilder.createJavaParameter((Class<List<SNode>>) ((Class) Object.class), ""));
+  public static final SMethod<Void> populate_id1bwJEEfG$x9 = new SMethodBuilder<>(Void.TYPE).name("populate").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(1360296727230433353L).languageId(0xb723dad7b65da615L, 0xd441fba0f46b43cdL).build2();
+  public static final SMethod<List<SNode>> getValues_idu9itSZORFC = new SMethodBuilder<>((Class<List<SNode>>) ((Class) Object.class)).name("getValues").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(543046448977246952L).languageId(0xa3b32855bdd813adL, 0x7bcf9284ca29484fL).build2(SMethodBuilder.createJavaParameter(SNode.class, "type"));
+  public static final SMethod<String> decimals_idu9itSZPF$B = new SMethodBuilder<>(String.class).name("decimals").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(543046448977459495L).languageId(0xa3b32855bdd813adL, 0x7bcf9284ca29484fL).build2(SMethodBuilder.createJavaParameter(Double.TYPE, "d"), SMethodBuilder.createJavaParameter(Integer.TYPE, "decs"));
+  public static final SMethod<SNode> makeCollectionWithNValues_id3M8$ImsmMNi = new SMethodBuilder<>(SNode.class).name("makeCollectionWithNValues").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(4361897753976712402L).languageId(0xa3b32855bdd813adL, 0x7bcf9284ca29484fL).build2(SMethodBuilder.createJavaParameter(SNode.class, "collType"), SMethodBuilder.createJavaParameter(SNode.class, "elType"), SMethodBuilder.createJavaParameter(Integer.TYPE, "n"));
+  public static final SMethod<Boolean> supportsType_id1bwJEEfKt$D = new SMethodBuilder<>(Boolean.TYPE).name("supportsType").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(1360296727231453481L).languageId(0xb723dad7b65da615L, 0xd441fba0f46b43cdL).build2(SMethodBuilder.createJavaParameter(SNode.class, "type"));
+  /*package*/ static final SMethod<Void> addForInt_idu9itSZTxO0 = new SMethodBuilder<>(Void.TYPE).name("addForInt").modifiers(0, AccessPrivileges.PRIVATE).concept(CONCEPT).baseMethodId(543046448978468096L).languageId(0xa3b32855bdd813adL, 0x7bcf9284ca29484fL).build2(SMethodBuilder.createJavaParameter((Class<List<SNode>>) ((Class) Object.class), "res"));
+  /*package*/ static final SMethod<Void> addForReal_idu9itSZTBUD = new SMethodBuilder<>(Void.TYPE).name("addForReal").modifiers(0, AccessPrivileges.PRIVATE).concept(CONCEPT).baseMethodId(543046448978493097L).languageId(0xa3b32855bdd813adL, 0x7bcf9284ca29484fL).build2(SMethodBuilder.createJavaParameter((Class<List<SNode>>) ((Class) Object.class), "res"));
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(populate_id1bwJEEfG$x9, getValues_idu9itSZORFC, decimals_idu9itSZPF$B, makeCollectionWithNValues_id3M8$ImsmMNi, supportsType_id1bwJEEfKt$D, addForInt_idu9itSZTxO0, addForReal_idu9itSZTBUD);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(populate_id1bwJEEfG$x9, getValues_idu9itSZORFC, decimals_idu9itSZPF$B, makeCollectionWithNValues_id3M8$ImsmMNi, supportsType_id1bwJEEfKt$D, addForInt_idu9itSZTxO0, addForReal_idu9itSZTBUD);
 
-  private static void ___init___(@NotNull SNode __thisNode__) {
-  }
 
   /*package*/ static void populate_id1bwJEEfG$x9(@NotNull SNode __thisNode__) {
     List<List<SNode>> data = ListSequence.fromList(new ArrayList<List<SNode>>());
@@ -239,10 +235,6 @@ public final class EqClassProducer__BehaviorDescriptor extends BaseBHDescriptor 
   /*package*/ EqClassProducer__BehaviorDescriptor() {
   }
 
-  @Override
-  protected void initNode(@NotNull SNode node, @NotNull SConstructor constructor, @Nullable Object[] parameters) {
-    ___init___(node);
-  }
 
   @Override
   protected <T> T invokeSpecial0(@NotNull SNode node, @NotNull SMethod<T> method, @Nullable Object[] parameters) {

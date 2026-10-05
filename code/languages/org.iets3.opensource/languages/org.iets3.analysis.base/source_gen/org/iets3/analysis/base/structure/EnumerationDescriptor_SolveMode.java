@@ -19,7 +19,7 @@ public class EnumerationDescriptor_SolveMode extends EnumerationDescriptorBase {
   private final EnumerationDescriptor.MemberDescriptor myMember_ignore_0 = new EnumerationDescriptor.MemberDescriptor("ignore", "ignore", 0x3a7ea77800f377a4L, "r:9e71c0de-f9ab-4b67-96cc-7d9c857513f6(org.iets3.analysis.base.structure)/1293474851211742444");
 
   private final EnumerationLiteralsIndex myIndex = EnumerationLiteralsIndex.build(0xdb8bd0353f5141d8L, 0x8fed954c202d18beL, 0x3a7ea77800f377a2L, 0x3a7ea77800f377a3L, 0x3a7ea77800f377a4L);
-  private final List<EnumerationDescriptor.MemberDescriptor> myMembers = new EnumerationDescriptorBase.MembersList(myIndex, myMember_check_0, myMember_ignore_0);
+  private final List<EnumerationDescriptor.MemberDescriptor> myMembers = new EnumerationDescriptorBase.MembersList0(myIndex, myMember_check_0, myMember_ignore_0);
 
   @Nullable
   @Override

@@ -21,7 +21,7 @@ public class EnumerationDescriptor_ExposureEnum extends EnumerationDescriptorBas
   private final EnumerationDescriptor.MemberDescriptor myMember__4_0 = new EnumerationDescriptor.MemberDescriptor("_4", "E4", 0x710b4f5487c7a151L, "r:b53239c7-3de8-44c4-9520-b85ab78eddfd(org.iets3.safety.attributes.structure)/5939066662398655562");
 
   private final EnumerationLiteralsIndex myIndex = EnumerationLiteralsIndex.build(0x3d5cb9202b5f4dcbL, 0x834968b4bf077e63L, 0x710b4f5487c7a133L, 0x710b4f5487c7a13cL, 0x710b4f5487c7a141L, 0x710b4f5487c7a148L, 0x710b4f5487c7a151L);
-  private final List<EnumerationDescriptor.MemberDescriptor> myMembers = new EnumerationDescriptorBase.MembersList(myIndex, myMember__1_0, myMember__2_0, myMember__3_0, myMember__4_0);
+  private final List<EnumerationDescriptor.MemberDescriptor> myMembers = new EnumerationDescriptorBase.MembersList0(myIndex, myMember__1_0, myMember__2_0, myMember__3_0, myMember__4_0);
 
   @Nullable
   @Override

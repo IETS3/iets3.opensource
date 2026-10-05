@@ -16,6 +16,9 @@
     <import index="9mzm" ref="r:08e310e2-1ed6-4914-837b-0066c6508332(org.iets3.contextfilter.behavior)" implicit="true" />
   </imports>
   <registry>
+    <language id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior">
+      <concept id="3235159848334022093" name="jetbrains.mps.lang.behavior.structure.Node_ConceptMethodCall" flags="nn" index="3zqWPK" />
+    </language>
     <language id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor">
       <concept id="1071666914219" name="jetbrains.mps.lang.editor.structure.ConceptEditorDeclaration" flags="ig" index="24kQdi" />
       <concept id="1140524381322" name="jetbrains.mps.lang.editor.structure.CellModel_ListWithRole" flags="ng" index="2czfm3">
@@ -161,9 +164,6 @@
         <child id="8760592470373394508" name="child" index="3j0Cwz" />
       </concept>
     </language>
-    <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
-      <concept id="1179409122411" name="jetbrains.mps.lang.smodel.structure.Node_ConceptMethodCall" flags="nn" index="2qgKlT" />
-    </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ngI" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
@@ -220,7 +220,7 @@
                       <node concept="2OqwBi" id="1UWdA_UkcX2" role="2Oq$k0">
                         <node concept="2OqwBi" id="1UWdA_Ukcga" role="2Oq$k0">
                           <node concept="3GMtW1" id="1UWdA_UkbXd" role="2Oq$k0" />
-                          <node concept="2qgKlT" id="1UWdA_Ukc_T" role="2OqNvi">
+                          <node concept="3zqWPK" id="5DJjBfj0c2a" role="2OqNvi">
                             <ref role="37wK5l" to="9mzm:1UWdA_UjjPg" resolve="selectorItems" />
                           </node>
                         </node>
@@ -260,7 +260,7 @@
                 <node concept="2OqwBi" id="64qCanZeein" role="3uHU7B">
                   <node concept="2OqwBi" id="64qCanZeeio" role="2Oq$k0">
                     <node concept="pncrf" id="64qCanZeeip" role="2Oq$k0" />
-                    <node concept="2qgKlT" id="64qCanZeeiq" role="2OqNvi">
+                    <node concept="3zqWPK" id="5DJjBfj0c2c" role="2OqNvi">
                       <ref role="37wK5l" to="9mzm:1UWdA_UjjPg" resolve="selectorItems" />
                     </node>
                   </node>
@@ -285,7 +285,7 @@
                   <node concept="2OqwBi" id="1UWdA_UkkXe" role="2Oq$k0">
                     <node concept="2OqwBi" id="1UWdA_Ukkhl" role="2Oq$k0">
                       <node concept="pncrf" id="1UWdA_Ukk4i" role="2Oq$k0" />
-                      <node concept="2qgKlT" id="1UWdA_Ukkz5" role="2OqNvi">
+                      <node concept="3zqWPK" id="5DJjBfj0c2e" role="2OqNvi">
                         <ref role="37wK5l" to="9mzm:1UWdA_UjjPg" resolve="selectorItems" />
                       </node>
                     </node>
@@ -305,7 +305,7 @@
               <node concept="1Wc70l" id="1UWdA_UkiS7" role="3clFbG">
                 <node concept="2OqwBi" id="1UWdA_Ukjbl" role="3uHU7w">
                   <node concept="pncrf" id="1UWdA_UkiVf" role="2Oq$k0" />
-                  <node concept="2qgKlT" id="1UWdA_Ukk0m" role="2OqNvi">
+                  <node concept="3zqWPK" id="5DJjBfj0c2g" role="2OqNvi">
                     <ref role="37wK5l" to="9mzm:1UWdA_UjxqD" resolve="showIfUnique" />
                   </node>
                 </node>
@@ -313,7 +313,7 @@
                   <node concept="2OqwBi" id="1UWdA_UkgU8" role="3uHU7B">
                     <node concept="2OqwBi" id="1UWdA_Ukgi7" role="2Oq$k0">
                       <node concept="pncrf" id="1UWdA_Ukg3O" role="2Oq$k0" />
-                      <node concept="2qgKlT" id="1UWdA_UkgvE" role="2OqNvi">
+                      <node concept="3zqWPK" id="5DJjBfj0c2i" role="2OqNvi">
                         <ref role="37wK5l" to="9mzm:1UWdA_UjjPg" resolve="selectorItems" />
                       </node>
                     </node>

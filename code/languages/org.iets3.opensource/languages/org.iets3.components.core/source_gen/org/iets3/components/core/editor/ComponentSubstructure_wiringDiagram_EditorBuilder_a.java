@@ -615,7 +615,7 @@ import org.jetbrains.mps.openapi.language.SConcept;
     return editorCell.value;
   }
   private EditorCell createDiagram_1() {
-    return createDiagram_0(getEditorContext(), myNode);
+    return createDiagram_0(getEditorContext(), getNode());
   }
   /*package*/ static class Inline_Builder_3b3739_a1b0 extends AbstractEditorBuilder {
     @NotNull
@@ -627,7 +627,7 @@ import org.jetbrains.mps.openapi.language.SConcept;
     }
 
     /*package*/ EditorCell createCell() {
-      return createTooltip_1();
+      return createTooltip_0();
     }
 
     @NotNull
@@ -636,16 +636,13 @@ import org.jetbrains.mps.openapi.language.SConcept;
       return myNode;
     }
 
-    private EditorCell createTooltip_0(final EditorContext editorContext, final SNode node) {
-      LazyTooltipCellEvaluator tooltip = new LazyTooltipCellEvaluator(editorContext, node, "org.iets3.components.core.editor.GeneratedHints.tooltipHint_3b3739_a0b1a", false);
+    private EditorCell createTooltip_0() {
+      LazyTooltipCellEvaluator tooltip = new LazyTooltipCellEvaluator(getEditorContext(), myNode, "org.iets3.components.core.editor.GeneratedHints.tooltipHint_3b3739_a0b1a", false);
       EditorCell visibleCell = createCollection_1();
 
-      TooltipWrapper editorCell = new TooltipWrapper(editorContext, node, visibleCell, tooltip, TooltipTimingProperties.DEFAULT);
+      TooltipWrapper editorCell = new TooltipWrapper(getEditorContext(), myNode, visibleCell, tooltip, TooltipTimingProperties.DEFAULT);
       editorCell.setCellId("Tooltip_3b3739_a0b1a");
       return editorCell;
-    }
-    private EditorCell createTooltip_1() {
-      return createTooltip_0(getEditorContext(), myNode);
     }
     private EditorCell createCollection_1() {
       EditorCell_Collection editorCell = new EditorCell_Collection(getEditorContext(), myNode, new CellLayout_Vertical());
@@ -754,7 +751,7 @@ import org.jetbrains.mps.openapi.language.SConcept;
       return editorCell.value;
     }
     private EditorCell createShape_1() {
-      return createShape_0(getEditorContext(), myNode);
+      return createShape_0(getEditorContext(), getNode());
     }
     private EditorCell createCollection_5() {
       EditorCell_Collection editorCell = new EditorCell_Collection(getEditorContext(), myNode, new CellLayout_Indent());
@@ -787,7 +784,7 @@ import org.jetbrains.mps.openapi.language.SConcept;
       return editorCell.value;
     }
     private EditorCell createShape_3() {
-      return createShape_2(getEditorContext(), myNode);
+      return createShape_2(getEditorContext(), getNode());
     }
     private EditorCell createCollection_7() {
       EditorCell_Collection editorCell = new EditorCell_Collection(getEditorContext(), myNode, new CellLayout_Indent());
@@ -890,7 +887,7 @@ import org.jetbrains.mps.openapi.language.SConcept;
       return editorCell.value;
     }
     private EditorCell createShape_5() {
-      return createShape_4(getEditorContext(), myNode);
+      return createShape_4(getEditorContext(), getNode());
     }
     private EditorCell createCollection_11() {
       EditorCell_Collection editorCell = new EditorCell_Collection(getEditorContext(), myNode, new CellLayout_Indent());
@@ -923,7 +920,7 @@ import org.jetbrains.mps.openapi.language.SConcept;
       return editorCell.value;
     }
     private EditorCell createShape_7() {
-      return createShape_6(getEditorContext(), myNode);
+      return createShape_6(getEditorContext(), getNode());
     }
     private EditorCell createCollection_13() {
       EditorCell_Collection editorCell = new EditorCell_Collection(getEditorContext(), myNode, new CellLayout_Indent());

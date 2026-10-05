@@ -52,9 +52,9 @@ import org.jetbrains.mps.openapi.language.SContainmentLink;
 import org.jetbrains.mps.openapi.language.SReferenceLink;
 
 /**
- * Compute top-level nodes affected by selections in a configuration and 
+ * Compute top-level nodes affected by selections in a configuration and
  * preview an instance of affected artifacts according to the selected criteria.
- * For example if can hide not selected nodes and its dependencies or 
+ * For example if can hide not selected nodes and its dependencies or
  * highlight those nodes.
  * 
  * Note: This class depends on an ISkeletonTreeBuilder and an IArtifactEvaluator. Depending on the extensions
@@ -587,7 +587,7 @@ public class ArtifactInstancePreviewer {
 
   /**
    * The listener is used to render editors on open and reset render status on close.
-   * It avoids re-computation of preview visualization data and assures update of editors 
+   * It avoids re-computation of preview visualization data and assures update of editors
    * that are closed in the moment of the computation.
    * 
    * It replaces the solution based on checking rules, because it could not be used with

@@ -15,6 +15,9 @@
     <import index="hwgx" ref="r:fd2980c8-676c-4b19-b524-18c70e02f8b7(com.mbeddr.core.base.behavior)" implicit="true" />
   </imports>
   <registry>
+    <language id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior">
+      <concept id="3235159848334022093" name="jetbrains.mps.lang.behavior.structure.Node_ConceptMethodCall" flags="nn" index="3zqWPK" />
+    </language>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
       <concept id="4836112446988635817" name="jetbrains.mps.baseLanguage.structure.UndefinedType" flags="in" index="2jxLKc" />
       <concept id="1197027756228" name="jetbrains.mps.baseLanguage.structure.DotExpression" flags="nn" index="2OqwBi">
@@ -105,7 +108,6 @@
       <concept id="1138411891628" name="jetbrains.mps.lang.smodel.structure.SNodeOperation" flags="nn" index="eCIE_">
         <child id="1144104376918" name="parameter" index="1xVPHs" />
       </concept>
-      <concept id="1179409122411" name="jetbrains.mps.lang.smodel.structure.Node_ConceptMethodCall" flags="nn" index="2qgKlT" />
       <concept id="4693937538533521280" name="jetbrains.mps.lang.smodel.structure.OfConceptOperation" flags="ng" index="v3k3i">
         <child id="4693937538533538124" name="requestedConcept" index="v3oSu" />
       </concept>
@@ -248,9 +250,9 @@
           <node concept="3clFbF" id="1u1U5lEZM1o" role="3cqZAp">
             <node concept="2OqwBi" id="1u1U5lEZM4w" role="3clFbG">
               <node concept="3kakTB" id="1u1U5lEZM1n" role="2Oq$k0" />
-              <node concept="2qgKlT" id="5Q45tqZqXmw" role="2OqNvi">
+              <node concept="3zqWPK" id="5DJjBfj0bXu" role="2OqNvi">
                 <ref role="37wK5l" to="d3du:1u1U5lEZM8a" resolve="init" />
-                <node concept="3khVwk" id="5Q45tqZqXtv" role="37wK5m" />
+                <node concept="3khVwk" id="5DJjBfj0bXw" role="37wK5m" />
               </node>
             </node>
           </node>
@@ -279,9 +281,9 @@
                         </node>
                       </node>
                     </node>
-                    <node concept="2qgKlT" id="1F1F0IV2N8X" role="2OqNvi">
+                    <node concept="3zqWPK" id="5DJjBfj0bXx" role="2OqNvi">
                       <ref role="37wK5l" to="hwgx:3g6LnlWuSo8" resolve="visibleContentsOfTypeAsSequence" />
-                      <node concept="35c_gC" id="3Q$zA1CAIL5" role="37wK5m">
+                      <node concept="35c_gC" id="5DJjBfj0bXz" role="37wK5m">
                         <ref role="35c_gD" to="zzzn:49WTic8eSCJ" resolve="IFunctionLike" />
                       </node>
                     </node>

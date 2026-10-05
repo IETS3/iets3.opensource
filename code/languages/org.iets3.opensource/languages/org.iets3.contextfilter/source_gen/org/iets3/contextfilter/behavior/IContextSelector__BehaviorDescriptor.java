@@ -8,27 +8,23 @@ import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import java.util.List;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import java.util.Arrays;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.mps.openapi.model.SNode;
 import jetbrains.mps.internal.collections.runtime.ListSequence;
 import java.util.ArrayList;
-import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 
 public final class IContextSelector__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getInterfaceConcept(0xdcb9d48f1fb64793L, 0x88cff6f4971432a5L, 0x1ebc36697a4d3d2aL, "org.iets3.contextfilter.structure.IContextSelector");
 
-  public static final SMethod<List<AbstractSelectorItem>> selectorItems_id1UWdA_UjjPg = new SMethodBuilder<List<AbstractSelectorItem>>(new SJavaCompoundTypeImpl((Class<List<AbstractSelectorItem>>) ((Class) Object.class))).name("selectorItems").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(2214704943410789712L).languageId(0x88cff6f4971432a5L, 0xdcb9d48f1fb64793L).build2();
-  public static final SMethod<Iterable<String>> selectorItemLabels_id3j0RMEs87uA = new SMethodBuilder<Iterable<String>>(new SJavaCompoundTypeImpl((Class<Iterable<String>>) ((Class) Object.class))).name("selectorItemLabels").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(3801283459601692582L).languageId(0x88cff6f4971432a5L, 0xdcb9d48f1fb64793L).build2();
+  public static final SMethod<List<AbstractSelectorItem>> selectorItems_id1UWdA_UjjPg = new SMethodBuilder<>((Class<List<AbstractSelectorItem>>) ((Class) Object.class)).name("selectorItems").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(2214704943410789712L).languageId(0x88cff6f4971432a5L, 0xdcb9d48f1fb64793L).build2();
+  public static final SMethod<Iterable<String>> selectorItemLabels_id3j0RMEs87uA = new SMethodBuilder<>((Class<Iterable<String>>) ((Class) Object.class)).name("selectorItemLabels").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(3801283459601692582L).languageId(0x88cff6f4971432a5L, 0xdcb9d48f1fb64793L).build2();
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(selectorItems_id1UWdA_UjjPg, selectorItemLabels_id3j0RMEs87uA);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(selectorItems_id1UWdA_UjjPg, selectorItemLabels_id3j0RMEs87uA);
 
-  private static void ___init___(@NotNull SNode __thisNode__) {
-  }
 
   /*package*/ static List<AbstractSelectorItem> selectorItems_id1UWdA_UjjPg(@NotNull SNode __thisNode__) {
     // default implementation, should be overridden
@@ -41,10 +37,6 @@ public final class IContextSelector__BehaviorDescriptor extends BaseBHDescriptor
   /*package*/ IContextSelector__BehaviorDescriptor() {
   }
 
-  @Override
-  protected void initNode(@NotNull SNode node, @NotNull SConstructor constructor, @Nullable Object[] parameters) {
-    ___init___(node);
-  }
 
   @Override
   protected <T> T invokeSpecial0(@NotNull SNode node, @NotNull SMethod<T> method, @Nullable Object[] parameters) {

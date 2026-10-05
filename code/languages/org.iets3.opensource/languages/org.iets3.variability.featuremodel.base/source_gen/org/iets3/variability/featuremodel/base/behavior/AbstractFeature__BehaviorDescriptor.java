@@ -8,7 +8,6 @@ import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import org.jetbrains.mps.openapi.model.SNode;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import org.jetbrains.mps.openapi.language.SEnumerationLiteral;
 import java.util.List;
@@ -18,7 +17,6 @@ import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
 import jetbrains.mps.internal.collections.runtime.Sequence;
 import java.util.Collections;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
-import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 import org.jetbrains.mps.openapi.language.SInterfaceConcept;
@@ -28,15 +26,13 @@ import org.jetbrains.mps.openapi.language.SReferenceLink;
 public final class AbstractFeature__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getConcept(0x165f1d0525064544L, 0x895e1424f54166ecL, 0x6b3fb620c4f9ac90L, "org.iets3.variability.featuremodel.base.structure.AbstractFeature");
 
-  public static final SMethod<Iterable<SNode>> attributes_id6GZHy357BWb = new SMethodBuilder<Iterable<SNode>>(new SJavaCompoundTypeImpl((Class<Iterable<SNode>>) ((Class) Object.class))).name("attributes").modifiers(12, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(7728095737453379339L).languageId(0x895e1424f54166ecL, 0x165f1d0525064544L).build2();
-  public static final SMethod<SEnumerationLiteral> subFeatureRelationShip_id6GZHy357BWt = new SMethodBuilder<SEnumerationLiteral>(new SJavaCompoundTypeImpl((Class<SEnumerationLiteral>) ((Class) Object.class))).name("subFeatureRelationShip").modifiers(12, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(7728095737453379357L).languageId(0x895e1424f54166ecL, 0x165f1d0525064544L).build2();
-  public static final SMethod<Iterable<SNode>> subFeatures_id6GZHy357BW_ = new SMethodBuilder<Iterable<SNode>>(new SJavaCompoundTypeImpl((Class<Iterable<SNode>>) ((Class) Object.class))).name("subFeatures").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(7728095737453379365L).languageId(0x895e1424f54166ecL, 0x165f1d0525064544L).build2();
-  public static final SMethod<Iterable<SNode>> enumDeclarations_id3GmPeQeVSEh = new SMethodBuilder<Iterable<SNode>>(new SJavaCompoundTypeImpl((Class<Iterable<SNode>>) ((Class) Object.class))).name("enumDeclarations").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(4257824614495783569L).languageId(0x895e1424f54166ecL, 0x165f1d0525064544L).build2();
+  public static final SMethod<Iterable<SNode>> attributes_id6GZHy357BWb = new SMethodBuilder<>((Class<Iterable<SNode>>) ((Class) Object.class)).name("attributes").modifiers(12, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(7728095737453379339L).languageId(0x895e1424f54166ecL, 0x165f1d0525064544L).build2();
+  public static final SMethod<SEnumerationLiteral> subFeatureRelationShip_id6GZHy357BWt = new SMethodBuilder<>(SEnumerationLiteral.class).name("subFeatureRelationShip").modifiers(12, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(7728095737453379357L).languageId(0x895e1424f54166ecL, 0x165f1d0525064544L).build2();
+  public static final SMethod<Iterable<SNode>> subFeatures_id6GZHy357BW_ = new SMethodBuilder<>((Class<Iterable<SNode>>) ((Class) Object.class)).name("subFeatures").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(7728095737453379365L).languageId(0x895e1424f54166ecL, 0x165f1d0525064544L).build2();
+  public static final SMethod<Iterable<SNode>> enumDeclarations_id3GmPeQeVSEh = new SMethodBuilder<>((Class<Iterable<SNode>>) ((Class) Object.class)).name("enumDeclarations").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(4257824614495783569L).languageId(0x895e1424f54166ecL, 0x165f1d0525064544L).build2();
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(attributes_id6GZHy357BWb, subFeatureRelationShip_id6GZHy357BWt, subFeatures_id6GZHy357BW_, enumDeclarations_id3GmPeQeVSEh);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(attributes_id6GZHy357BWb, subFeatureRelationShip_id6GZHy357BWt, subFeatures_id6GZHy357BW_, enumDeclarations_id3GmPeQeVSEh);
 
-  private static void ___init___(@NotNull SNode __thisNode__) {
-  }
 
   /*package*/ static Iterable<SNode> subFeatures_id6GZHy357BW_(@NotNull SNode __thisNode__) {
     // delegate to ICanHaveSubFeature, if possible
@@ -56,10 +52,6 @@ public final class AbstractFeature__BehaviorDescriptor extends BaseBHDescriptor 
   /*package*/ AbstractFeature__BehaviorDescriptor() {
   }
 
-  @Override
-  protected void initNode(@NotNull SNode node, @NotNull SConstructor constructor, @Nullable Object[] parameters) {
-    ___init___(node);
-  }
 
   @Override
   protected <T> T invokeSpecial0(@NotNull SNode node, @NotNull SMethod<T> method, @Nullable Object[] parameters) {

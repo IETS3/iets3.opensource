@@ -9,7 +9,6 @@ import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import java.util.List;
 import org.jetbrains.mps.openapi.model.SNode;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import jetbrains.mps.baseLanguage.tuples.runtime.Tuples;
 import java.util.Set;
@@ -31,7 +30,6 @@ import org.iets3.core.expr.base.plugin.ProgramLocationValue;
 import org.iets3.core.expr.simpleTypes.runtime.EqualsHelper;
 import jetbrains.mps.internal.collections.runtime.SetSequence;
 import java.util.HashSet;
-import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 import org.jetbrains.mps.openapi.language.SReferenceLink;
@@ -42,19 +40,17 @@ import org.jetbrains.mps.openapi.language.SConcept;
 public final class FunctionSubjectAdapter__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getConcept(0xd441fba0f46b43cdL, 0xb723dad7b65da615L, 0x12e0beaa8fda1a51L, "org.iets3.core.expr.tests.structure.FunctionSubjectAdapter");
 
-  public static final SMethod<List<SNode>> arguments_id1bwJEEeSLhl = new SMethodBuilder<List<SNode>>(new SJavaCompoundTypeImpl((Class<List<SNode>>) ((Class) Object.class))).name("arguments").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(1360296727216854101L).languageId(0xb723dad7b65da615L, 0xd441fba0f46b43cdL).build2();
-  public static final SMethod<List<Tuples._2<SNode, String>>> outputs_id1bwJEEg42nb = new SMethodBuilder<List<Tuples._2<SNode, String>>>(new SJavaCompoundTypeImpl((Class<List<Tuples._2<SNode, String>>>) ((Class) Object.class))).name("outputs").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(1360296727236584907L).languageId(0xb723dad7b65da615L, 0xd441fba0f46b43cdL).build2();
-  public static final SMethod<EvalResult> run_id5AG05XYAiHw = new SMethodBuilder<EvalResult>(new SJavaCompoundTypeImpl(EvalResult.class)).name("run").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(6461539975515679584L).languageId(0xb723dad7b65da615L, 0xd441fba0f46b43cdL).build2(SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""));
-  public static final SMethod<SNode> getSubject_id3_xsRJ4sekF = new SMethodBuilder<SNode>(new SJavaCompoundTypeImpl((Class<SNode>) ((Class) Object.class))).name("getSubject").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(4134712908316730667L).languageId(0xb723dad7b65da615L, 0xd441fba0f46b43cdL).build2();
-  public static final SMethod<String> getName_id7WSgHRKUTmg = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("getName").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(9167150562509821328L).languageId(0xb723dad7b65da615L, 0xd441fba0f46b43cdL).build2();
-  public static final SMethod<Boolean> supportsMutations_id3yVmeSjI$c6 = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("supportsMutations").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(4087958866325291782L).languageId(0xb723dad7b65da615L, 0xd441fba0f46b43cdL).build2();
-  public static final SMethod<List<SNode>> getMutatableSubtrees_id3yVmeSjI$yN = new SMethodBuilder<List<SNode>>(new SJavaCompoundTypeImpl((Class<List<SNode>>) ((Class) Object.class))).name("getMutatableSubtrees").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(4087958866325293235L).languageId(0xb723dad7b65da615L, 0xd441fba0f46b43cdL).build2();
-  public static final SMethod<Void> collectFunctionBodies_id3yVmeSjID71 = new SMethodBuilder<Void>(new SJavaCompoundTypeImpl(Void.class)).name("collectFunctionBodies").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(4087958866325311937L).languageId(0xb723dad7b65da615L, 0xd441fba0f46b43cdL).build2(SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""), SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""), SMethodBuilder.createJavaParameter((Class<Set<SNode>>) ((Class) Object.class), ""));
+  public static final SMethod<List<SNode>> arguments_id1bwJEEeSLhl = new SMethodBuilder<>((Class<List<SNode>>) ((Class) Object.class)).name("arguments").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(1360296727216854101L).languageId(0xb723dad7b65da615L, 0xd441fba0f46b43cdL).build2();
+  public static final SMethod<List<Tuples._2<SNode, String>>> outputs_id1bwJEEg42nb = new SMethodBuilder<>((Class<List<Tuples._2<SNode, String>>>) ((Class) Object.class)).name("outputs").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(1360296727236584907L).languageId(0xb723dad7b65da615L, 0xd441fba0f46b43cdL).build2();
+  public static final SMethod<EvalResult> run_id5AG05XYAiHw = new SMethodBuilder<>(EvalResult.class).name("run").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(6461539975515679584L).languageId(0xb723dad7b65da615L, 0xd441fba0f46b43cdL).build2(SMethodBuilder.createJavaParameter(SNode.class, "vector"));
+  public static final SMethod<SNode> getSubject_id3_xsRJ4sekF = new SMethodBuilder<>(SNode.class).name("getSubject").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(4134712908316730667L).languageId(0xb723dad7b65da615L, 0xd441fba0f46b43cdL).build2();
+  public static final SMethod<String> getName_id7WSgHRKUTmg = new SMethodBuilder<>(String.class).name("getName").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(9167150562509821328L).languageId(0xb723dad7b65da615L, 0xd441fba0f46b43cdL).build2();
+  public static final SMethod<Boolean> supportsMutations_id3yVmeSjI$c6 = new SMethodBuilder<>(Boolean.TYPE).name("supportsMutations").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(4087958866325291782L).languageId(0xb723dad7b65da615L, 0xd441fba0f46b43cdL).build2();
+  public static final SMethod<List<SNode>> getMutatableSubtrees_id3yVmeSjI$yN = new SMethodBuilder<>((Class<List<SNode>>) ((Class) Object.class)).name("getMutatableSubtrees").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(4087958866325293235L).languageId(0xb723dad7b65da615L, 0xd441fba0f46b43cdL).build2();
+  public static final SMethod<Void> collectFunctionBodies_id3yVmeSjID71 = new SMethodBuilder<>(Void.TYPE).name("collectFunctionBodies").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(4087958866325311937L).languageId(0xb723dad7b65da615L, 0xd441fba0f46b43cdL).build2(SMethodBuilder.createJavaParameter(SNode.class, "start"), SMethodBuilder.createJavaParameter(SNode.class, "f"), SMethodBuilder.createJavaParameter((Class<Set<SNode>>) ((Class) Object.class), "bodies"));
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(arguments_id1bwJEEeSLhl, outputs_id1bwJEEg42nb, run_id5AG05XYAiHw, getSubject_id3_xsRJ4sekF, getName_id7WSgHRKUTmg, supportsMutations_id3yVmeSjI$c6, getMutatableSubtrees_id3yVmeSjI$yN, collectFunctionBodies_id3yVmeSjID71);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(arguments_id1bwJEEeSLhl, outputs_id1bwJEEg42nb, run_id5AG05XYAiHw, getSubject_id3_xsRJ4sekF, getName_id7WSgHRKUTmg, supportsMutations_id3yVmeSjI$c6, getMutatableSubtrees_id3yVmeSjI$yN, collectFunctionBodies_id3yVmeSjID71);
 
-  private static void ___init___(@NotNull SNode __thisNode__) {
-  }
 
   /*package*/ static List<SNode> arguments_id1bwJEEeSLhl(@NotNull SNode __thisNode__) {
     return SLinkOperations.getChildren(SLinkOperations.getTarget(__thisNode__, LINKS.fun$ddJP), LINKS.args$XOIh);
@@ -151,10 +147,6 @@ public final class FunctionSubjectAdapter__BehaviorDescriptor extends BaseBHDesc
   /*package*/ FunctionSubjectAdapter__BehaviorDescriptor() {
   }
 
-  @Override
-  protected void initNode(@NotNull SNode node, @NotNull SConstructor constructor, @Nullable Object[] parameters) {
-    ___init___(node);
-  }
 
   @Override
   protected <T> T invokeSpecial0(@NotNull SNode node, @NotNull SMethod<T> method, @Nullable Object[] parameters) {

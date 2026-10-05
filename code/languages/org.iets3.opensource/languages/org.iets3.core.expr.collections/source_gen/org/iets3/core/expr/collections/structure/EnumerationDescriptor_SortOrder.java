@@ -19,7 +19,7 @@ public class EnumerationDescriptor_SortOrder extends EnumerationDescriptorBase {
   private final EnumerationDescriptor.MemberDescriptor myMember_DESC_0 = new EnumerationDescriptor.MemberDescriptor("DESC", "DESC", 0xc5b7621e8c0d00eL, "r:61b1de80-490d-4fee-8e95-b956503290e9(org.iets3.core.expr.collections.structure)/1293474851211742454");
 
   private final EnumerationLiteralsIndex myIndex = EnumerationLiteralsIndex.build(0x2f7e2e356e744c43L, 0x9fa52465d68f5996L, 0xc5b7621e8c0d006L, 0xc5b7621e8c0d007L, 0xc5b7621e8c0d00eL);
-  private final List<EnumerationDescriptor.MemberDescriptor> myMembers = new EnumerationDescriptorBase.MembersList(myIndex, myMember_ASC_0, myMember_DESC_0);
+  private final List<EnumerationDescriptor.MemberDescriptor> myMembers = new EnumerationDescriptorBase.MembersList0(myIndex, myMember_ASC_0, myMember_DESC_0);
 
   @Nullable
   @Override

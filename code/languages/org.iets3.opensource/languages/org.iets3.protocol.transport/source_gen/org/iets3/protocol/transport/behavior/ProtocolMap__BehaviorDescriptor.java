@@ -7,7 +7,6 @@ import org.jetbrains.mps.openapi.language.SAbstractConcept;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import org.jetbrains.mps.openapi.model.SNode;
 import java.util.List;
@@ -29,11 +28,11 @@ import org.jetbrains.mps.openapi.language.SProperty;
 public final class ProtocolMap__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getConcept(0xa50d629093d242afL, 0x9ae0b2fefc6ee754L, 0x7ef7796277ace0dL, "org.iets3.protocol.transport.structure.ProtocolMap");
 
-  public static final SMethod<String> getAutomaticName_idcJpacq408C = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("getAutomaticName").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(229512757698888232L).languageId(0xbd9c05c0f8725a35L, 0x7b68d745a7b848b9L).build2();
-  public static final SMethod<Iterable<SNode>> dependencies_id1WCh2the5Vh = new SMethodBuilder<Iterable<SNode>>(new SJavaCompoundTypeImpl((Class<Iterable<SNode>>) ((Class) Object.class))).name("dependencies").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(2245119349901254353L).languageId(0xb6713d118449c6e7L, 0xf0fd486f857743e9L).build2();
-  public static final SMethod<Boolean> canBeInContent_id65sbyp4FWa4 = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("canBeInContent").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(7015533061432394372L).languageId(0x9ae0b2fefc6ee754L, 0xa50d629093d242afL).build2(SMethodBuilder.createJavaParameter((Class<SAbstractConcept>) ((Class) Object.class), ""), SMethodBuilder.createJavaParameter((Class<List<SAbstractConcept>>) ((Class) Object.class), ""));
+  public static final SMethod<String> getAutomaticName_idcJpacq408C = new SMethodBuilder<>(String.class).name("getAutomaticName").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(229512757698888232L).languageId(0xbd9c05c0f8725a35L, 0x7b68d745a7b848b9L).build2();
+  public static final SMethod<Iterable<SNode>> dependencies_id1WCh2the5Vh = new SMethodBuilder<>((Class<Iterable<SNode>>) ((Class) Object.class)).name("dependencies").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(2245119349901254353L).languageId(0xb6713d118449c6e7L, 0xf0fd486f857743e9L).build2();
+  public static final SMethod<Boolean> canBeInContent_id65sbyp4FWa4 = new SMethodBuilder<>(Boolean.TYPE).name("canBeInContent").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(7015533061432394372L).languageId(0x9ae0b2fefc6ee754L, 0xa50d629093d242afL).build2(SMethodBuilder.createJavaParameter(SAbstractConcept.class, "expectedProtocol"), SMethodBuilder.createJavaParameter((Class<List<SAbstractConcept>>) ((Class) Object.class), "expectedMapTargets"));
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(getAutomaticName_idcJpacq408C, dependencies_id1WCh2the5Vh, canBeInContent_id65sbyp4FWa4);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(getAutomaticName_idcJpacq408C, dependencies_id1WCh2the5Vh, canBeInContent_id65sbyp4FWa4);
 
   private static void ___init___(@NotNull SNode __thisNode__) {
     SLinkOperations.addNewChild(__thisNode__, LINKS.protocolMapContent$CIdB, CONCEPTS.EmptyProtocolContent$yC);

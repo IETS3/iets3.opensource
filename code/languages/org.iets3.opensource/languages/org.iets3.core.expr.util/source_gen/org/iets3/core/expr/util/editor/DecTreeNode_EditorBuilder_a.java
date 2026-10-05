@@ -103,7 +103,7 @@ import org.jetbrains.mps.openapi.language.SProperty;
     Style style = new StyleImpl();
     style.set(StyleAttributes.SELECTABLE, false);
     editorCell.getStyle().putAll(style);
-    editorCell.addEditorCell(createFrameCell_1());
+    editorCell.addEditorCell(createFrameCell_0());
     return editorCell;
   }
   private EditorCell createRefNode_0() {
@@ -161,8 +161,8 @@ import org.jetbrains.mps.openapi.language.SProperty;
       return "<no expression>";
     }
   }
-  private EditorCell createFrameCell_0(final EditorContext editorContext, final SNode node) {
-    FrameCell editorCell = new FrameCell(editorContext, node);
+  private EditorCell createFrameCell_0() {
+    FrameCell editorCell = new FrameCell(getEditorContext(), getNode());
     editorCell.setCellId("FrameCell_rfcout_a0a");
     Style style = new StyleImpl();
     style.set(StyleAttributes.BACKGROUND_COLOR, getStyleRegistry().getSimpleColor(new Color(15658734)));
@@ -171,9 +171,6 @@ import org.jetbrains.mps.openapi.language.SProperty;
     editorCell.getStyle().putAll(style);
     editorCell.addEditorCell(createRefNode_0());
     return editorCell;
-  }
-  private EditorCell createFrameCell_1() {
-    return createFrameCell_0(getEditorContext(), myNode);
   }
   private int _StyleParameter_QueryFunction_rfcout_a1a0a() {
     return 2;
@@ -210,7 +207,7 @@ import org.jetbrains.mps.openapi.language.SProperty;
     EditorCell_Collection editorCell = new EditorCell_Collection(getEditorContext(), myNode, new CellLayout_Vertical());
     editorCell.setCellId("Collection_rfcout_a1a");
     if (nodeCondition_rfcout_a0a1a()) {
-      editorCell.addEditorCell(createQueryProperty_1());
+      editorCell.addEditorCell(createQueryProperty_0());
     }
     if (nodeCondition_rfcout_a1a1a()) {
       editorCell.addEditorCell(createConstant_0());
@@ -223,7 +220,7 @@ import org.jetbrains.mps.openapi.language.SProperty;
   private boolean nodeCondition_rfcout_a1a1a() {
     return SLinkOperations.getTarget(myNode, LINKS.group$1SXo) != null;
   }
-  private EditorCell createQueryProperty_0(EditorContext editorContext, SNode node) {
+  private EditorCell createQueryProperty_0() {
     final QueryPropertyData data = new QueryPropertyData();
     new Object() {
       public void loadData(QueryPropertyData queryPropertyData, SNode node, EditorContext editorContext) {
@@ -231,9 +228,9 @@ import org.jetbrains.mps.openapi.language.SProperty;
         queryPropertyData.setProperty(ListSequence.fromList(SLinkOperations.getChildren(SNodeOperations.asNode(CONCEPTS.TreeGroup$EX), LINKS.propertyDeclaration$YUgg)).findFirst((it) -> Objects.equals(SPropertyOperations.getString(it, PROPS.name$MnvL), "label")));
         queryPropertyData.setNullText("Label");
       }
-    }.loadData(data, node, editorContext);
+    }.loadData(data, getNode(), getEditorContext());
 
-    final PropertyAccessor accessor = new PropertyAccessor(data.getNode(), data.getProperty(), false, true, editorContext);
+    final PropertyAccessor accessor = new PropertyAccessor(data.getNode(), data.getProperty(), false, true, getEditorContext());
 
     ModelAccessor modelAccessor = new ModelAccessor() {
       public String getText() {
@@ -253,7 +250,7 @@ import org.jetbrains.mps.openapi.language.SProperty;
         return accessor.isValidText(text);
       }
     };
-    EditorCell_Property editorCell = EditorCell_Property.create(editorContext, modelAccessor, node);
+    EditorCell_Property editorCell = EditorCell_Property.create(getEditorContext(), modelAccessor, getNode());
     editorCell.setAction(CellActionType.DELETE, EmptyCellAction.getInstance());
     Style style = new StyleImpl();
     style.set(StyleAttributes.UNDERLINED, true);
@@ -262,9 +259,6 @@ import org.jetbrains.mps.openapi.language.SProperty;
     editorCell.getStyle().putAll(style);
     editorCell.setDefaultText(data.getNullText());
     return editorCell;
-  }
-  private EditorCell createQueryProperty_1() {
-    return createQueryProperty_0(getEditorContext(), myNode);
   }
   private EditorCell createConstant_0() {
     EditorCell_Constant editorCell = new EditorCell_Constant(getEditorContext(), myNode, "");
@@ -290,7 +284,7 @@ import org.jetbrains.mps.openapi.language.SProperty;
     style.set(StyleAttributes.getInstance().<Integer>getAttribute("com.mbeddr.mpsutil.treenotation.styles", "tree-node-spacing"), _StyleParameter_QueryFunction_rfcout_a3b1a());
     style.set(StyleAttributes.getInstance().<Color>getAttribute("com.mbeddr.mpsutil.treenotation.styles", "tree-incoming-line-color"), _StyleParameter_QueryFunction_rfcout_a4b1a());
     editorCell.getStyle().putAll(style);
-    editorCell.setTreeRoot(createFrameCell_3());
+    editorCell.setTreeRoot(createFrameCell_1());
     {
       boolean showChildren = true;
       if (showChildren) {
@@ -325,7 +319,7 @@ import org.jetbrains.mps.openapi.language.SProperty;
     return editorCell;
   }
   private EditorCell createTreeCell_1() {
-    return createTreeCell_0(getEditorContext(), myNode);
+    return createTreeCell_0(getEditorContext(), getNode());
   }
   private EditorCell createRefNode_1() {
     SingleRoleCellProvider provider = new expressionSingleRoleHandler_rfcout_a0b1a(myNode, LINKS.expression$rQ6U, getEditorContext());
@@ -382,8 +376,8 @@ import org.jetbrains.mps.openapi.language.SProperty;
       return "<no expression>";
     }
   }
-  private EditorCell createFrameCell_2(final EditorContext editorContext, final SNode node) {
-    FrameCell editorCell = new FrameCell(editorContext, node);
+  private EditorCell createFrameCell_1() {
+    FrameCell editorCell = new FrameCell(getEditorContext(), getNode());
     editorCell.setCellId("FrameCell_rfcout_a1b0");
     Style style = new StyleImpl();
     style.set(StyleAttributes.getInstance().<Integer>getAttribute("com.mbeddr.mpsutil.framecell", "frame-width"), _StyleParameter_QueryFunction_rfcout_a0a1b0());
@@ -391,9 +385,6 @@ import org.jetbrains.mps.openapi.language.SProperty;
     editorCell.getStyle().putAll(style);
     editorCell.addEditorCell(createRefNode_1());
     return editorCell;
-  }
-  private EditorCell createFrameCell_3() {
-    return createFrameCell_2(getEditorContext(), myNode);
   }
   private int _StyleParameter_QueryFunction_rfcout_a0a1b0() {
     return 2;

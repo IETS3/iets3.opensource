@@ -13,7 +13,7 @@
       <unit at="11,0,49,0" name="org.iets3.core.expr.genjava.contracts.structure.ConceptPresentationAspectImpl" />
     </file>
     <file name="LanguageConceptSwitch.java">
-      <unit at="10,0,32,0" name="org.iets3.core.expr.genjava.contracts.structure.LanguageConceptSwitch" />
+      <unit at="12,0,40,0" name="org.iets3.core.expr.genjava.contracts.structure.LanguageConceptSwitch" />
     </file>
     <file name="StructureAspectDescriptor.java">
       <unit at="15,0,91,0" name="org.iets3.core.expr.genjava.contracts.structure.StructureAspectDescriptor" />
@@ -34,8 +34,8 @@
       <scope id="391130746957825247" at="37,49,44,37" />
     </file>
     <file name="LanguageConceptSwitch.java">
-      <node id="391130746957825247" at="14,0,15,0" concept="6" trace="ContractSubject" />
-      <node id="391130746957825247" at="19,52,20,53" concept="0" />
+      <node id="391130746957825247" at="16,0,17,0" concept="6" trace="ContractSubject" />
+      <node id="391130746957825247" at="21,52,22,53" concept="0" />
     </file>
     <file name="StructureAspectDescriptor.java">
       <node id="391130746957825247" at="18,0,19,0" concept="1" trace="myConceptContractSubject" />
@@ -71,8 +71,8 @@
       <scope id="391130746987872595" at="29,48,36,36" />
     </file>
     <file name="LanguageConceptSwitch.java">
-      <node id="391130746987872595" at="13,0,14,0" concept="6" trace="CheckStatement" />
-      <node id="391130746987872595" at="18,49,19,52" concept="0" />
+      <node id="391130746987872595" at="15,0,16,0" concept="6" trace="CheckStatement" />
+      <node id="391130746987872595" at="20,49,21,52" concept="0" />
     </file>
     <file name="StructureAspectDescriptor.java">
       <node id="391130746987872595" at="17,0,18,0" concept="1" trace="myConceptCheckStatement" />
@@ -110,8 +110,8 @@
       <scope id="391130746987872598" at="21,45,28,33" />
     </file>
     <file name="LanguageConceptSwitch.java">
-      <node id="391130746987872598" at="12,0,13,0" concept="6" trace="CheckClause" />
-      <node id="391130746987872598" at="17,116,18,49" concept="0" />
+      <node id="391130746987872598" at="14,0,15,0" concept="6" trace="CheckClause" />
+      <node id="391130746987872598" at="19,116,20,49" concept="0" />
     </file>
     <file name="StructureAspectDescriptor.java">
       <node id="391130746987872598" at="16,0,17,0" concept="1" trace="myConceptCheckClause" />

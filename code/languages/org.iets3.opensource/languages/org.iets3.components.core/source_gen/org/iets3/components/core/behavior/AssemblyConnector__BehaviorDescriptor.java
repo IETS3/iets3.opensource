@@ -9,7 +9,6 @@ import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import jetbrains.mps.baseLanguage.tuples.runtime.Tuples;
 import org.jetbrains.mps.openapi.model.SNode;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import java.util.List;
 import java.util.Arrays;
@@ -28,12 +27,12 @@ import org.jetbrains.mps.openapi.language.SProperty;
 public final class AssemblyConnector__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getConcept(0xf0fd486f857743e9L, 0xb6713d118449c6e7L, 0x7fdf70a1447d7f1aL, "org.iets3.components.core.structure.AssemblyConnector");
 
-  public static final SMethod<Tuples._2<SNode, SNode>> getPorts_idmIQkxg5ZT6 = new SMethodBuilder<Tuples._2<SNode, SNode>>(new SJavaCompoundTypeImpl((Class<Tuples._2<SNode, SNode>>) ((Class) Object.class))).name("getPorts").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(409503520741916230L).languageId(0xb6713d118449c6e7L, 0xf0fd486f857743e9L).build2();
-  public static final SMethod<String> treeViewLabel_id7Atos1ybm9U = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("treeViewLabel").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(8763267928841609850L).languageId(0xb6713d118449c6e7L, 0xf0fd486f857743e9L).build2();
-  public static final SMethod<SNode> getGoverningPort_idmIQkxg5V$2 = new SMethodBuilder<SNode>(new SJavaCompoundTypeImpl((Class<SNode>) ((Class) Object.class))).name("getGoverningPort").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(409503520741898498L).languageId(0xb6713d118449c6e7L, 0xf0fd486f857743e9L).build2();
-  public static final SMethod<SNode> getInstanceForPort_id4VHfdEqkeO4 = new SMethodBuilder<SNode>(new SJavaCompoundTypeImpl((Class<SNode>) ((Class) Object.class))).name("getInstanceForPort").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5687268814028336388L).languageId(0xb6713d118449c6e7L, 0xf0fd486f857743e9L).build2(SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""));
+  public static final SMethod<Tuples._2<SNode, SNode>> getPorts_idmIQkxg5ZT6 = new SMethodBuilder<>((Class<Tuples._2<SNode, SNode>>) ((Class) Object.class)).name("getPorts").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(409503520741916230L).languageId(0xb6713d118449c6e7L, 0xf0fd486f857743e9L).build2();
+  public static final SMethod<String> treeViewLabel_id7Atos1ybm9U = new SMethodBuilder<>(String.class).name("treeViewLabel").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(8763267928841609850L).languageId(0xb6713d118449c6e7L, 0xf0fd486f857743e9L).build2();
+  public static final SMethod<SNode> getGoverningPort_idmIQkxg5V$2 = new SMethodBuilder<>(SNode.class).name("getGoverningPort").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(409503520741898498L).languageId(0xb6713d118449c6e7L, 0xf0fd486f857743e9L).build2();
+  public static final SMethod<SNode> getInstanceForPort_id4VHfdEqkeO4 = new SMethodBuilder<>(SNode.class).name("getInstanceForPort").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5687268814028336388L).languageId(0xb6713d118449c6e7L, 0xf0fd486f857743e9L).build2(SMethodBuilder.createJavaParameter(SNode.class, "port"));
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(getPorts_idmIQkxg5ZT6, treeViewLabel_id7Atos1ybm9U, getGoverningPort_idmIQkxg5V$2, getInstanceForPort_id4VHfdEqkeO4);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(getPorts_idmIQkxg5ZT6, treeViewLabel_id7Atos1ybm9U, getGoverningPort_idmIQkxg5V$2, getInstanceForPort_id4VHfdEqkeO4);
 
   private static void ___init___(@NotNull SNode __thisNode__) {
     SLinkOperations.setNewChild(__thisNode__, LINKS.sourceInstance$LjmV, null);

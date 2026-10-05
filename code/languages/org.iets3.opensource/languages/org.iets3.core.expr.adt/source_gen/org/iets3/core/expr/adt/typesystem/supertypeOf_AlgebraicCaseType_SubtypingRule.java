@@ -30,9 +30,6 @@ public class supertypeOf_AlgebraicCaseType_SubtypingRule extends SubtypingRule_R
   public boolean isWeak() {
     return false;
   }
-  public boolean surelyKeepsConcept() {
-    return true;
-  }
   private static SNode createAlgebraicType_j5ot3q_a0a1(SNode p0) {
     SNodeBuilder n0 = new SNodeBuilder().init(CONCEPTS.AlgebraicType$Df);
     n0.setReferenceTarget(LINKS.declaration$4bEv, p0);

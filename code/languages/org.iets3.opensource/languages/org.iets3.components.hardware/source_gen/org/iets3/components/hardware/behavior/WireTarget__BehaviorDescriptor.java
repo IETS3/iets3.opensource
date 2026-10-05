@@ -8,25 +8,21 @@ import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import org.jetbrains.mps.openapi.model.SNode;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import java.util.List;
 import java.util.Arrays;
 import org.jetbrains.annotations.NotNull;
-import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 
 public final class WireTarget__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getInterfaceConcept(0xc35abfa80db04d42L, 0xbb3ff46112aeb888L, 0x443d0f2f0f397aadL, "org.iets3.components.hardware.structure.WireTarget");
 
-  public static final SMethod<SNode> connectedBusKind_id4gX3MWfg4sK = new SMethodBuilder<SNode>(new SJavaCompoundTypeImpl((Class<SNode>) ((Class) Object.class))).name("connectedBusKind").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(4917103062952199984L).languageId(0xbb3ff46112aeb888L, 0xc35abfa80db04d42L).build2();
-  public static final SMethod<SNode> connectedBusType_id4lFnCmbEK5U = new SMethodBuilder<SNode>(new SJavaCompoundTypeImpl((Class<SNode>) ((Class) Object.class))).name("connectedBusType").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5002195738791969146L).languageId(0xbb3ff46112aeb888L, 0xc35abfa80db04d42L).build2();
+  public static final SMethod<SNode> connectedBusKind_id4gX3MWfg4sK = new SMethodBuilder<>(SNode.class).name("connectedBusKind").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(4917103062952199984L).languageId(0xbb3ff46112aeb888L, 0xc35abfa80db04d42L).build2();
+  public static final SMethod<SNode> connectedBusType_id4lFnCmbEK5U = new SMethodBuilder<>(SNode.class).name("connectedBusType").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5002195738791969146L).languageId(0xbb3ff46112aeb888L, 0xc35abfa80db04d42L).build2();
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(connectedBusKind_id4gX3MWfg4sK, connectedBusType_id4lFnCmbEK5U);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(connectedBusKind_id4gX3MWfg4sK, connectedBusType_id4lFnCmbEK5U);
 
-  private static void ___init___(@NotNull SNode __thisNode__) {
-  }
 
   @Deprecated
   /*package*/ static SNode connectedBusKind_id4gX3MWfg4sK(@NotNull SNode __thisNode__) {
@@ -41,10 +37,6 @@ public final class WireTarget__BehaviorDescriptor extends BaseBHDescriptor {
   /*package*/ WireTarget__BehaviorDescriptor() {
   }
 
-  @Override
-  protected void initNode(@NotNull SNode node, @NotNull SConstructor constructor, @Nullable Object[] parameters) {
-    ___init___(node);
-  }
 
   @Override
   protected <T> T invokeSpecial0(@NotNull SNode node, @NotNull SMethod<T> method, @Nullable Object[] parameters) {

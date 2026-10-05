@@ -8,7 +8,6 @@ import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import org.iets3.core.expr.base.behavior.ConstraintAndError;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import org.jetbrains.mps.openapi.model.SNode;
 import java.util.List;
@@ -18,7 +17,6 @@ import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
 import org.iets3.core.expr.base.behavior.ISSDelegatingType__BehaviorDescriptor;
 import org.iets3.core.expr.base.behavior.Type__BehaviorDescriptor;
-import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 import org.jetbrains.mps.openapi.language.SReferenceLink;
@@ -29,16 +27,14 @@ import org.jetbrains.mps.openapi.language.SConcept;
 public final class TypedefType__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getConcept(0x71934284d7d145eeL, 0xa0548c072591085fL, 0x6b6d642f1741ded6L, "org.iets3.core.expr.toplevel.structure.TypedefType");
 
-  public static final SMethod<Iterable<ConstraintAndError>> applicableConstraints_id2S3ZC$oEyBR = new SMethodBuilder<Iterable<ConstraintAndError>>(new SJavaCompoundTypeImpl((Class<Iterable<ConstraintAndError>>) ((Class) Object.class))).name("applicableConstraints").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(3315773615452596727L).languageId(0xb66a309a6e1a7290L, 0xcfaa4966b7d54b69L).build2();
-  public static final SMethod<SNode> effectiveType_id69JueU2Zy7c = new SMethodBuilder<SNode>(new SJavaCompoundTypeImpl((Class<SNode>) ((Class) Object.class))).name("effectiveType").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(7093020903927062988L).languageId(0xb66a309a6e1a7290L, 0xcfaa4966b7d54b69L).build2();
-  public static final SMethod<SNode> baseType_idXhdFKv3UAU = new SMethodBuilder<SNode>(new SJavaCompoundTypeImpl((Class<SNode>) ((Class) Object.class))).name("baseType").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(1103723565285353914L).languageId(0xb66a309a6e1a7290L, 0xcfaa4966b7d54b69L).build2();
-  public static final SMethod<Boolean> isSameAs_idfIXgjlt4VE = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("isSameAs").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(283433227680763626L).languageId(0xb66a309a6e1a7290L, 0xcfaa4966b7d54b69L).build2(SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""));
-  public static final SMethod<Boolean> isDiscrete_id8XWEtesn15 = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("isDiscrete").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(161551962044723269L).languageId(0xb66a309a6e1a7290L, 0xcfaa4966b7d54b69L).build2();
+  public static final SMethod<Iterable<ConstraintAndError>> applicableConstraints_id2S3ZC$oEyBR = new SMethodBuilder<>((Class<Iterable<ConstraintAndError>>) ((Class) Object.class)).name("applicableConstraints").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(3315773615452596727L).languageId(0xb66a309a6e1a7290L, 0xcfaa4966b7d54b69L).build2();
+  public static final SMethod<SNode> effectiveType_id69JueU2Zy7c = new SMethodBuilder<>(SNode.class).name("effectiveType").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(7093020903927062988L).languageId(0xb66a309a6e1a7290L, 0xcfaa4966b7d54b69L).build2();
+  public static final SMethod<SNode> baseType_idXhdFKv3UAU = new SMethodBuilder<>(SNode.class).name("baseType").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(1103723565285353914L).languageId(0xb66a309a6e1a7290L, 0xcfaa4966b7d54b69L).build2();
+  public static final SMethod<Boolean> isSameAs_idfIXgjlt4VE = new SMethodBuilder<>(Boolean.TYPE).name("isSameAs").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(283433227680763626L).languageId(0xb66a309a6e1a7290L, 0xcfaa4966b7d54b69L).build2(SMethodBuilder.createJavaParameter(SNode.class, "other"));
+  public static final SMethod<Boolean> isDiscrete_id8XWEtesn15 = new SMethodBuilder<>(Boolean.TYPE).name("isDiscrete").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(161551962044723269L).languageId(0xb66a309a6e1a7290L, 0xcfaa4966b7d54b69L).build2();
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(applicableConstraints_id2S3ZC$oEyBR, effectiveType_id69JueU2Zy7c, baseType_idXhdFKv3UAU, isSameAs_idfIXgjlt4VE, isDiscrete_id8XWEtesn15);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(applicableConstraints_id2S3ZC$oEyBR, effectiveType_id69JueU2Zy7c, baseType_idXhdFKv3UAU, isSameAs_idfIXgjlt4VE, isDiscrete_id8XWEtesn15);
 
-  private static void ___init___(@NotNull SNode __thisNode__) {
-  }
 
   /*package*/ static Iterable<ConstraintAndError> applicableConstraints_id2S3ZC$oEyBR(@NotNull SNode __thisNode__) {
     return (Iterable<ConstraintAndError>) Typedef__BehaviorDescriptor.applicableConstraints_id2S3ZC$oz3DX.invoke(SLinkOperations.getTarget(__thisNode__, LINKS.typedef$m_k7));
@@ -70,10 +66,6 @@ public final class TypedefType__BehaviorDescriptor extends BaseBHDescriptor {
   /*package*/ TypedefType__BehaviorDescriptor() {
   }
 
-  @Override
-  protected void initNode(@NotNull SNode node, @NotNull SConstructor constructor, @Nullable Object[] parameters) {
-    ___init___(node);
-  }
 
   @Override
   protected <T> T invokeSpecial0(@NotNull SNode node, @NotNull SMethod<T> method, @Nullable Object[] parameters) {

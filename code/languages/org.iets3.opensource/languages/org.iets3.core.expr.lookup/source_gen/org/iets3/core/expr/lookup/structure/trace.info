@@ -13,7 +13,7 @@
       <unit at="11,0,76,0" name="org.iets3.core.expr.lookup.structure.ConceptPresentationAspectImpl" />
     </file>
     <file name="LanguageConceptSwitch.java">
-      <unit at="10,0,38,0" name="org.iets3.core.expr.lookup.structure.LanguageConceptSwitch" />
+      <unit at="12,0,46,0" name="org.iets3.core.expr.lookup.structure.LanguageConceptSwitch" />
     </file>
     <file name="StructureAspectDescriptor.java">
       <unit at="14,0,135,0" name="org.iets3.core.expr.lookup.structure.StructureAspectDescriptor" />
@@ -34,8 +34,8 @@
       <scope id="5860825012162728630" at="24,45,31,33" />
     </file>
     <file name="LanguageConceptSwitch.java">
-      <node id="5860825012162728630" at="12,0,13,0" concept="6" trace="LookupTable" />
-      <node id="5860825012162728630" at="20,115,21,50" concept="0" />
+      <node id="5860825012162728630" at="14,0,15,0" concept="6" trace="LookupTable" />
+      <node id="5860825012162728630" at="22,115,23,50" concept="0" />
     </file>
     <file name="StructureAspectDescriptor.java">
       <node id="5860825012162728630" at="15,0,16,0" concept="1" trace="myConceptLookupTable" />
@@ -76,8 +76,8 @@
       <scope id="5860825012163523163" at="32,49,39,37" />
     </file>
     <file name="LanguageConceptSwitch.java">
-      <node id="5860825012163523163" at="13,0,14,0" concept="6" trace="LookupTableCell" />
-      <node id="5860825012163523163" at="21,50,22,54" concept="0" />
+      <node id="5860825012163523163" at="15,0,16,0" concept="6" trace="LookupTableCell" />
+      <node id="5860825012163523163" at="23,50,24,54" concept="0" />
     </file>
     <file name="StructureAspectDescriptor.java">
       <node id="5860825012163523163" at="16,0,17,0" concept="1" trace="myConceptLookupTableCell" />
@@ -113,8 +113,8 @@
       <scope id="5860825012164260232" at="40,51,47,39" />
     </file>
     <file name="LanguageConceptSwitch.java">
-      <node id="5860825012164260232" at="14,0,15,0" concept="6" trace="LookupTableHeader" />
-      <node id="5860825012164260232" at="22,54,23,56" concept="0" />
+      <node id="5860825012164260232" at="16,0,17,0" concept="6" trace="LookupTableHeader" />
+      <node id="5860825012164260232" at="24,54,25,56" concept="0" />
     </file>
     <file name="StructureAspectDescriptor.java">
       <node id="5860825012164260232" at="17,0,18,0" concept="1" trace="myConceptLookupTableHeader" />
@@ -148,8 +148,8 @@
       <scope id="5860825012167904587" at="56,49,63,37" />
     </file>
     <file name="LanguageConceptSwitch.java">
-      <node id="5860825012167904587" at="16,0,17,0" concept="6" trace="LookupTableType" />
-      <node id="5860825012167904587" at="24,53,25,54" concept="0" />
+      <node id="5860825012167904587" at="18,0,19,0" concept="6" trace="LookupTableType" />
+      <node id="5860825012167904587" at="26,53,27,54" concept="0" />
     </file>
     <file name="StructureAspectDescriptor.java">
       <node id="5860825012167904587" at="19,0,20,0" concept="1" trace="myConceptLookupTableType" />
@@ -188,8 +188,8 @@
       <scope id="5860825012168429198" at="64,46,71,34" />
     </file>
     <file name="LanguageConceptSwitch.java">
-      <node id="5860825012168429198" at="17,0,18,0" concept="6" trace="LookupTarget" />
-      <node id="5860825012168429198" at="25,54,26,51" concept="0" />
+      <node id="5860825012168429198" at="19,0,20,0" concept="6" trace="LookupTarget" />
+      <node id="5860825012168429198" at="27,54,28,51" concept="0" />
     </file>
     <file name="StructureAspectDescriptor.java">
       <node id="5860825012168429198" at="20,0,21,0" concept="1" trace="myConceptLookupTarget" />
@@ -226,8 +226,8 @@
       <scope id="5860825012168681163" at="48,48,55,36" />
     </file>
     <file name="LanguageConceptSwitch.java">
-      <node id="5860825012168681163" at="15,0,16,0" concept="6" trace="LookupTableRef" />
-      <node id="5860825012168681163" at="23,56,24,53" concept="0" />
+      <node id="5860825012168681163" at="17,0,18,0" concept="6" trace="LookupTableRef" />
+      <node id="5860825012168681163" at="25,56,26,53" concept="0" />
     </file>
     <file name="StructureAspectDescriptor.java">
       <node id="5860825012168681163" at="18,0,19,0" concept="1" trace="myConceptLookupTableRef" />
