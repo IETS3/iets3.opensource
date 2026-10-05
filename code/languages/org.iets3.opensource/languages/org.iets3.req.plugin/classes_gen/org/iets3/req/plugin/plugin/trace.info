@@ -533,9 +533,9 @@
       <node id="5151426049053718439" at="45,0,46,0" concept="10" trace="INSTANCE" />
       <node id="5151426049053718439" at="48,56,49,101" concept="6" />
       <node id="5151426049053718439" at="49,101,50,0" concept="9" />
-      <node id="5151426049053730242" at="53,70,54,50" concept="7" />
-      <node id="8812464827223072881" at="58,70,59,50" concept="7" />
-      <node id="5376544076591052288" at="63,70,64,50" concept="7" />
+      <node id="5151426049053730242" at="53,70,54,35" concept="7" />
+      <node id="8812464827223072881" at="58,70,59,35" concept="7" />
+      <node id="5376544076591052288" at="63,70,64,35" concept="7" />
       <node id="8906162732673368791" at="72,60,73,178" concept="7" />
       <node id="4048037625504686981" at="80,68,81,75" concept="7" />
       <node id="4048037625504686981" at="84,71,85,102" concept="7" />
@@ -666,9 +666,9 @@
       <node id="4048037625504614372" at="77,7,131,7" concept="2" />
       <node id="6906000695315473920" at="131,7,252,7" concept="2" />
       <node id="5151426049053718439" at="47,0,339,0" concept="5" trace="getActionSources#()Ljava/util/List;" />
-      <scope id="5151426049053730242" at="53,70,54,50" />
-      <scope id="8812464827223072881" at="58,70,59,50" />
-      <scope id="5376544076591052288" at="63,70,64,50" />
+      <scope id="5151426049053730242" at="53,70,54,35" />
+      <scope id="8812464827223072881" at="58,70,59,35" />
+      <scope id="5376544076591052288" at="63,70,64,35" />
       <scope id="8906162732673368791" at="72,60,73,178" />
       <scope id="4048037625504686981" at="80,68,81,75" />
       <scope id="4048037625504686981" at="84,71,85,102" />
@@ -929,9 +929,9 @@
       <unit id="5151426049053718439" at="43,0,357,0" name="org.iets3.req.plugin.plugin.ContextActionsDescriptor" />
     </file>
     <file name="IconContainer.java">
-      <node id="463890849064549469" at="9,0,10,0" concept="10" trace="ICON_a0a0a0a0a0a0c0d" />
-      <node id="463890849064780920" at="10,0,11,0" concept="10" trace="ICON_a0a0a0b0a0a0c0d" />
-      <node id="463890849064782226" at="11,0,12,0" concept="10" trace="ICON_a0a0a0c0a0a0c0d" />
+      <node id="463890849064549469" at="9,0,10,0" concept="10" trace="ICON0" />
+      <node id="463890849064780920" at="10,0,11,0" concept="10" trace="ICON1" />
+      <node id="463890849064782226" at="11,0,12,0" concept="10" trace="ICON2" />
     </file>
   </root>
   <root nodeRef="r:6152f7b8-7ec7-4c3a-ad96-68855bbe5797(org.iets3.req.plugin.plugin)/5151426049053731669">

@@ -2,7 +2,7 @@
 <model ref="r:a7e2f963-3e46-49e0-a385-e8c7f33c91b7(org.iets3.variability.featuremodel.base.structure)">
   <persistence version="9" />
   <languages>
-    <use id="982eb8df-2c96-4bd7-9963-11712ea622e5" name="jetbrains.mps.lang.resources" version="2" />
+    <use id="982eb8df-2c96-4bd7-9963-11712ea622e5" name="jetbrains.mps.lang.resources" version="3" />
     <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="9" />
     <devkit ref="78434eb8-b0e5-444b-850d-e7c4ad2da9ab(jetbrains.mps.devkit.aspect.structure)" />
   </languages>
@@ -845,8 +845,8 @@
   </node>
   <node concept="25R3W" id="59FNqAPCJGh">
     <property role="TrG5h" value="FeatureSelectionState" />
-    <property role="3F6X1D" value="6751014741090830963" />
     <property role="3GE5qa" value="configuration" />
+    <property role="3F6X1D" value="6751014741090830963" />
     <ref role="1H5jkz" node="59FNqAPCJGj" resolve="untouched" />
     <node concept="25R33" id="59FNqAPCJGj" role="25R1y">
       <property role="TrG5h" value="untouched" />

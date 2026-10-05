@@ -74,6 +74,10 @@ public class vars_Test extends BaseTransformationTest {
   public void test_NodeDuplicateNameCheck7401509881541035061() throws Throwable {
     new TestBody(this).test_NodeDuplicateNameCheck7401509881541035061();
   }
+  @Test
+  public void test_ErrorMessagesCheck7417943039708018950() throws Throwable {
+    new TestBody(this).test_ErrorMessagesCheck7417943039708018950();
+  }
 
   /*package*/ static class TestBody extends BaseTestBody {
 
@@ -83,7 +87,7 @@ public class vars_Test extends BaseTransformationTest {
 
     @Override
     protected void initTestNodes() {
-      prepareTestNodes("2222228766292969935");
+      prepareTestNodes("2222228766292969935", "7417943039708017283");
     }
 
     public void test_NodeErrorCheck2222228766294924664() throws Exception {
@@ -168,6 +172,13 @@ public class vars_Test extends BaseTransformationTest {
       runWithinCommand(() -> {
         SNode nodeToCheck = getNodeById("7401509881541035059");
         new CheckExpectedMessageRunnable.CheckExpectedRuleMessageRunnable(nodeToCheck, MessageStatus.ERROR, new SNodePointer("r:1b0f275e-bd62-4f6e-8c4b-51b05d651a63(com.mbeddr.core.base.typesystem)", "5095889050031059992"), "", myProject.getRepository(), myProject.getPlatform()).run();
+      });
+    }
+    public void test_ErrorMessagesCheck7417943039708018950() throws Exception {
+      initTestNodes();
+      runWithinCommand(() -> {
+        SNode nodeToCheck = getNodeById("7417943039708018934");
+        new CheckErrorMessagesRunnable(nodeToCheck, true, false, myProject.getPlatform()).includeSelf(true).exclude(Arrays.<CheckExpectedMessageRunnable>asList()).run();
       });
     }
 

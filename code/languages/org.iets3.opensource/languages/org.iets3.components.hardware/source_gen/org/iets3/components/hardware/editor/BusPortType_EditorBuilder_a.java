@@ -71,7 +71,7 @@ import org.jetbrains.mps.openapi.language.SProperty;
     if (alternationCondition) {
       editorCell = createCustomFactory_1();
     } else {
-      editorCell = createRefNode_0();
+      editorCell = createCustomFactory_5();
     }
     EditorCell bigCell = BigCellUtil.findBigCell(editorCell, getNode());
     if (bigCell != null) {
@@ -263,15 +263,35 @@ import org.jetbrains.mps.openapi.language.SProperty;
       return editorCell;
     }
   }
+  private EditorCell createCustomFactory_4(final EditorContext editorContext, final SNode node) {
+
+
+    final EditorCell cell = createCustomFactory_7();
+    EditorCell editorCell = ((_FunctionTypes._return_P0_E0<EditorCell>) () -> cell).invoke();
+    return editorCell;
+  }
+  private EditorCell createCustomFactory_5() {
+    return createCustomFactory_4(getEditorContext(), myNode);
+  }
+  private EditorCell createCustomFactory_6(final EditorContext editorContext, final SNode node) {
+
+
+    final EditorCell cell = createRefNode_0();
+    EditorCell editorCell = ((_FunctionTypes._return_P0_E0<EditorCell>) () -> cell).invoke();
+    return editorCell;
+  }
+  private EditorCell createCustomFactory_7() {
+    return createCustomFactory_6(getEditorContext(), myNode);
+  }
   private EditorCell createRefNode_0() {
-    SingleRoleCellProvider provider = new busTypeSingleRoleHandler_uwjeig_a0(myNode, LINKS.busType$HmsX, getEditorContext());
+    SingleRoleCellProvider provider = new busTypeSingleRoleHandler_uwjeig_a0a0(myNode, LINKS.busType$HmsX, getEditorContext());
     return provider.createCell();
   }
-  private static class busTypeSingleRoleHandler_uwjeig_a0 extends SingleRoleCellProvider {
+  private static class busTypeSingleRoleHandler_uwjeig_a0a0 extends SingleRoleCellProvider {
     @NotNull
     private SNode myNode;
 
-    public busTypeSingleRoleHandler_uwjeig_a0(SNode ownerNode, SContainmentLink containmentLink, EditorContext context) {
+    public busTypeSingleRoleHandler_uwjeig_a0a0(SNode ownerNode, SContainmentLink containmentLink, EditorContext context) {
       super(containmentLink, context);
       myNode = ownerNode;
     }

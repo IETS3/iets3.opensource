@@ -119,7 +119,7 @@
         <ref role="1MFYO6" to="gfi:3m8H$lmFM6H" resolve="addDocumentation" />
       </node>
       <node concept="2TK7Tu" id="4hVICRIxFvH" role="3cqZAp">
-        <property role="2TTd_B" value="Some documentation" />
+        <property role="2TTd_B" value="Some documentation " />
       </node>
       <node concept="3clFbH" id="4hVICRIxN5T" role="3cqZAp" />
     </node>

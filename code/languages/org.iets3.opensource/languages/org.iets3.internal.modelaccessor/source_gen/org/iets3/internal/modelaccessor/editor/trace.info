@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<debug-info version="2">
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123140:jetbrains.mps.baseLanguage.structure.ConstructorDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123155:jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068390468200:jetbrains.mps.baseLanguage.structure.FieldDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123159:jetbrains.mps.baseLanguage.structure.IfStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123165:jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242864:jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242878:jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1070462154015:jetbrains.mps.baseLanguage.structure.StaticFieldDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1070475587102:jetbrains.mps.baseLanguage.structure.SuperConstructorInvocation" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/5351203823916750322:jetbrains.mps.baseLanguage.structure.TryUniversalStatement" />
+  <root>
+    <file name="EditorAspectDescriptorImpl.java">
+      <unit at="15,0,31,0" name="org.iets3.internal.modelaccessor.editor.EditorAspectDescriptorImpl" />
+    </file>
+  </root>
+  <root nodeRef="r:fed71db0-5226-4119-8c1a-436978d16b2b(org.iets3.internal.modelaccessor.editor)/205330958481969317">
+    <file name="WithModelAccessor_Editor.java">
+      <node id="205330958481969317" at="11,79,12,83" concept="6" />
+      <node id="205330958481969317" at="14,82,15,86" concept="6" />
+      <node id="205330958481969317" at="11,0,14,0" concept="4" trace="createEditorCell#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
+      <node id="205330958481969317" at="14,0,17,0" concept="4" trace="createInspectedCell#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
+      <scope id="205330958481969317" at="11,79,12,83" />
+      <scope id="205330958481969317" at="14,82,15,86" />
+      <scope id="205330958481969317" at="11,0,14,0">
+        <var name="editorContext" id="205330958481969317" />
+        <var name="node" id="205330958481969317" />
+      </scope>
+      <scope id="205330958481969317" at="14,0,17,0">
+        <var name="editorContext" id="205330958481969317" />
+        <var name="node" id="205330958481969317" />
+      </scope>
+      <unit id="205330958481969317" at="10,0,18,0" name="org.iets3.internal.modelaccessor.editor.WithModelAccessor_Editor" />
+    </file>
+    <file name="WithModelAccessor_EditorBuilder_a.java">
+      <node id="205330958481969317" at="20,97,21,19" concept="8" />
+      <node id="205330958481969317" at="21,19,22,18" concept="1" />
+      <node id="205330958481969317" at="27,26,28,18" concept="6" />
+      <node id="205330958481969317" at="31,39,32,32" concept="6" />
+      <node id="205330958481969317" at="35,43,36,120" concept="5" />
+      <node id="205330958481969317" at="36,120,37,48" concept="1" />
+      <node id="205330958481969317" at="37,48,38,28" concept="1" />
+      <node id="205330958481969317" at="38,28,39,31" concept="1" />
+      <node id="205330958481969347" at="39,31,40,59" concept="1" />
+      <node id="205330958481969374" at="40,59,41,49" concept="1" />
+      <node id="205330958481969317" at="41,49,42,22" concept="6" />
+      <node id="205330958481969347" at="44,51,45,85" concept="5" />
+      <node id="205330958481969347" at="45,85,46,93" concept="5" />
+      <node id="205330958481969347" at="46,93,47,22" concept="6" />
+      <node id="205330958481969374" at="49,41,50,120" concept="5" />
+      <node id="205330958481969374" at="50,120,51,47" concept="1" />
+      <node id="205330958481969374" at="51,47,52,34" concept="1" />
+      <node id="205330958481969374" at="52,34,53,22" concept="6" />
+      <node id="205330958481969317" at="17,0,19,0" concept="2" trace="myNode" />
+      <node id="205330958481969317" at="31,0,34,0" concept="4" trace="createCell#()Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
+      <node id="205330958481969317" at="20,0,24,0" concept="0" trace="WithModelAccessor_EditorBuilder_a#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)V" />
+      <node id="205330958481969317" at="25,0,30,0" concept="4" trace="getNode#()Lorg/jetbrains/mps/openapi/model/SNode;" />
+      <node id="205330958481969347" at="44,0,49,0" concept="4" trace="createAttributedNodeCell_0#()Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
+      <node id="205330958481969374" at="49,0,55,0" concept="4" trace="createConstant_0#()Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
+      <node id="205330958481969317" at="35,0,44,0" concept="4" trace="createCollection_0#()Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
+      <scope id="205330958481969317" at="27,26,28,18" />
+      <scope id="205330958481969317" at="31,39,32,32" />
+      <scope id="205330958481969317" at="20,97,22,18" />
+      <scope id="205330958481969317" at="31,0,34,0" />
+      <scope id="205330958481969347" at="44,51,47,22">
+        <var name="editorCell" id="205330958481969347" />
+        <var name="manager" id="205330958481969347" />
+      </scope>
+      <scope id="205330958481969317" at="20,0,24,0">
+        <var name="context" id="205330958481969317" />
+        <var name="node" id="205330958481969317" />
+      </scope>
+      <scope id="205330958481969374" at="49,41,53,22">
+        <var name="editorCell" id="205330958481969374" />
+      </scope>
+      <scope id="205330958481969317" at="25,0,30,0" />
+      <scope id="205330958481969347" at="44,0,49,0" />
+      <scope id="205330958481969374" at="49,0,55,0" />
+      <scope id="205330958481969317" at="35,43,42,22">
+        <var name="editorCell" id="205330958481969317" />
+      </scope>
+      <scope id="205330958481969317" at="35,0,44,0" />
+      <unit id="205330958481969317" at="16,0,56,0" name="org.iets3.internal.modelaccessor.editor.WithModelAccessor_EditorBuilder_a" />
+    </file>
+    <file name="WithModelAccessor_InspectorBuilder_a.java">
+      <node id="205330958481969317" at="27,100,28,19" concept="8" />
+      <node id="205330958481969317" at="28,19,29,18" concept="1" />
+      <node id="205330958481969317" at="34,26,35,18" concept="6" />
+      <node id="205330958481969317" at="38,39,39,32" concept="6" />
+      <node id="205330958481969317" at="42,43,43,118" concept="5" />
+      <node id="205330958481969317" at="43,118,44,48" concept="1" />
+      <node id="205330958481969317" at="44,48,45,28" concept="1" />
+      <node id="205330958481969317" at="45,28,46,31" concept="1" />
+      <node id="205330958481969410" at="46,31,47,49" concept="1" />
+      <node id="205330958481969419" at="47,49,48,48" concept="1" />
+      <node id="205330958481969317" at="48,48,49,22" concept="6" />
+      <node id="205330958481969410" at="51,41,52,118" concept="5" />
+      <node id="205330958481969410" at="52,118,53,46" concept="1" />
+      <node id="205330958481969410" at="53,46,54,34" concept="1" />
+      <node id="205330958481969410" at="54,34,55,22" concept="6" />
+      <node id="205330958481969317" at="57,40,58,121" concept="5" />
+      <node id="205330958481969317" at="58,121,59,33" concept="6" />
+      <node id="205330958481969317" at="65,119,66,38" concept="8" />
+      <node id="205330958481969317" at="66,38,67,25" concept="1" />
+      <node id="205330958481969317" at="72,28,73,20" concept="6" />
+      <node id="205330958481969317" at="76,55,77,76" concept="5" />
+      <node id="205330958481969317" at="77,76,78,114" concept="1" />
+      <node id="205330958481969317" at="78,114,79,117" concept="1" />
+      <node id="205330958481969317" at="79,117,80,48" concept="1" />
+      <node id="205330958481969317" at="80,48,81,24" concept="6" />
+      <node id="205330958481969317" at="87,118,88,137" concept="1" />
+      <node id="205330958481969317" at="90,42,91,46" concept="1" />
+      <node id="205330958481969317" at="95,44,96,41" concept="1" />
+      <node id="205330958481969317" at="96,41,97,105" concept="1" />
+      <node id="205330958481969317" at="98,11,99,56" concept="5" />
+      <node id="205330958481969317" at="99,56,100,44" concept="1" />
+      <node id="205330958481969317" at="100,44,101,48" concept="1" />
+      <node id="205330958481969317" at="101,48,102,35" concept="1" />
+      <node id="205330958481969317" at="102,35,103,26" concept="6" />
+      <node id="205330958481969317" at="104,17,105,42" concept="1" />
+      <node id="205330958481969317" at="108,40,109,26" concept="6" />
+      <node id="205330958481969317" at="114,0,115,0" concept="7" trace="query$z1QA" />
+      <node id="205330958481969317" at="24,0,26,0" concept="2" trace="myNode" />
+      <node id="205330958481969317" at="62,0,64,0" concept="2" trace="myNode" />
+      <node id="205330958481969317" at="38,0,41,0" concept="4" trace="createCell#()Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
+      <node id="205330958481969317" at="86,87,89,7" concept="3" />
+      <node id="205330958481969317" at="89,7,92,7" concept="3" />
+      <node id="205330958481969317" at="108,0,111,0" concept="4" trace="getNoTargetText#()Ljava/lang/String;" />
+      <node id="205330958481969317" at="27,0,31,0" concept="0" trace="WithModelAccessor_InspectorBuilder_a#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)V" />
+      <node id="205330958481969317" at="57,0,61,0" concept="4" trace="createRefNode_0#()Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
+      <node id="205330958481969317" at="65,0,69,0" concept="0" trace="querySingleRoleHandler_h4rklt_b0#(Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/language/SContainmentLink;Ljetbrains/mps/openapi/editor/EditorContext;)V" />
+      <node id="205330958481969317" at="32,0,37,0" concept="4" trace="getNode#()Lorg/jetbrains/mps/openapi/model/SNode;" />
+      <node id="205330958481969317" at="70,0,75,0" concept="4" trace="getNode#()Lorg/jetbrains/mps/openapi/model/SNode;" />
+      <node id="205330958481969410" at="51,0,57,0" concept="4" trace="createConstant_0#()Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
+      <node id="205330958481969317" at="76,0,83,0" concept="4" trace="createChildCell#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
+      <node id="205330958481969317" at="86,0,94,0" concept="4" trace="installCellInfo#(Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/openapi/editor/cells/EditorCell;Z)V" />
+      <node id="205330958481969317" at="42,0,51,0" concept="4" trace="createCollection_0#()Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
+      <node id="205330958481969317" at="97,105,106,7" concept="9" />
+      <node id="205330958481969317" at="94,0,108,0" concept="4" trace="createEmptyCell#()Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
+      <scope id="205330958481969317" at="34,26,35,18" />
+      <scope id="205330958481969317" at="38,39,39,32" />
+      <scope id="205330958481969317" at="72,28,73,20" />
+      <scope id="205330958481969317" at="87,118,88,137" />
+      <scope id="205330958481969317" at="90,42,91,46" />
+      <scope id="205330958481969317" at="104,17,105,42" />
+      <scope id="205330958481969317" at="108,40,109,26" />
+      <scope id="205330958481969317" at="27,100,29,18" />
+      <scope id="205330958481969317" at="57,40,59,33">
+        <var name="provider" id="205330958481969317" />
+      </scope>
+      <scope id="205330958481969317" at="65,119,67,25" />
+      <scope id="205330958481969317" at="38,0,41,0" />
+      <scope id="205330958481969317" at="108,0,111,0" />
+      <scope id="205330958481969317" at="27,0,31,0">
+        <var name="context" id="205330958481969317" />
+        <var name="node" id="205330958481969317" />
+      </scope>
+      <scope id="205330958481969410" at="51,41,55,22">
+        <var name="editorCell" id="205330958481969410" />
+      </scope>
+      <scope id="205330958481969317" at="57,0,61,0" />
+      <scope id="205330958481969317" at="65,0,69,0">
+        <var name="containmentLink" id="205330958481969317" />
+        <var name="context" id="205330958481969317" />
+        <var name="ownerNode" id="205330958481969317" />
+      </scope>
+      <scope id="205330958481969317" at="32,0,37,0" />
+      <scope id="205330958481969317" at="70,0,75,0" />
+      <scope id="205330958481969317" at="76,55,81,24">
+        <var name="editorCell" id="205330958481969317" />
+      </scope>
+      <scope id="205330958481969317" at="98,11,103,26">
+        <var name="editorCell" id="205330958481969317" />
+      </scope>
+      <scope id="205330958481969410" at="51,0,57,0" />
+      <scope id="205330958481969317" at="86,87,92,7" />
+      <scope id="205330958481969317" at="42,43,49,22">
+        <var name="editorCell" id="205330958481969317" />
+      </scope>
+      <scope id="205330958481969317" at="76,0,83,0">
+        <var name="child" id="205330958481969317" />
+      </scope>
+      <scope id="205330958481969317" at="86,0,94,0">
+        <var name="child" id="205330958481969317" />
+        <var name="editorCell" id="205330958481969317" />
+        <var name="isEmpty" id="205330958481969317" />
+      </scope>
+      <scope id="205330958481969317" at="42,0,51,0" />
+      <scope id="205330958481969317" at="95,44,106,7" />
+      <scope id="205330958481969317" at="94,0,108,0" />
+      <unit id="205330958481969317" at="113,0,116,0" name="org.iets3.internal.modelaccessor.editor.WithModelAccessor_InspectorBuilder_a$LINKS" />
+      <unit id="205330958481969317" at="61,0,112,0" name="org.iets3.internal.modelaccessor.editor.WithModelAccessor_InspectorBuilder_a$querySingleRoleHandler_h4rklt_b0" />
+      <unit id="205330958481969317" at="23,0,117,0" name="org.iets3.internal.modelaccessor.editor.WithModelAccessor_InspectorBuilder_a" />
+    </file>
+  </root>
+</debug-info>
+

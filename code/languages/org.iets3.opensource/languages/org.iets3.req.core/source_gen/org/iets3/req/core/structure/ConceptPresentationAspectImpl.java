@@ -46,7 +46,7 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
         if (props_AbstractRequirement == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
           cpb.shortDesc("a base concept for requirements");
-          cpb.icon(IconContainer.RESOURCE_a0a2a0a0b0cb);
+          cpb.icon(IconContainer.RESOURCE_0);
           props_AbstractRequirement = cpb.create();
         }
         return props_AbstractRequirement;
@@ -193,7 +193,7 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
           cpb.shortDesc("a requirements chunk declaration");
           cpb.presentationByName();
-          cpb.icon(IconContainer.RESOURCE_a0a3a0a02b0cb);
+          cpb.icon(IconContainer.RESOURCE_1);
           props_RequirementsChunk = cpb.create();
         }
         return props_RequirementsChunk;

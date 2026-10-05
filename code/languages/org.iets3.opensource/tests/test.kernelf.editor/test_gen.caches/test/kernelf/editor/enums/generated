@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<product version="3" modelHash="4lh0da70cn2s1yuzmdo5jkv4u58gucc">
+  <files names="BareNameBindsToUnqualifiedEnumNotToQualifiedOne_Test.java:QualifiedLiteralNotOfferedByBareName_Test.java:QualifiedLiteralTypedByQualifiedName_Test.java:RetypeQualifiedLiteralToSiblingLiteral_Test.java:UnqualifiedLiteralTypedByBareName_Test.java" />
+</product>
+
