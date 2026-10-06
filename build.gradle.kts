@@ -189,7 +189,7 @@ val execTestsByInterpreterPre by tasks.registering(TestLanguages::class) {
 }
 
 val execTestsByInterpreter by tasks.registering(TestLanguages::class) {
-    dependsOn(execTestsByInterpreterPre)
+    dependsOn(buildLanguages)
     script = scriptsDir.file("build-testInterpreterExec.xml")
     targets("generate", "build")
     doLast {
