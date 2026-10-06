@@ -15,6 +15,7 @@ import jetbrains.mps.lang.test.runtime.CheckErrorMessagesRunnable;
 import java.util.Arrays;
 import jetbrains.mps.lang.test.runtime.CheckExpectedMessageRunnable;
 import jetbrains.mps.errors.MessageStatus;
+import jetbrains.mps.smodel.SNodePointer;
 
 @MPSLaunch
 public class InheritanceExtendsConflict_Test extends BaseTransformationTest {
@@ -30,12 +31,12 @@ public class InheritanceExtendsConflict_Test extends BaseTransformationTest {
     new TestBody(this).test_ErrorMessagesCheck588069925765062054();
   }
   @Test
-  public void test_NodeErrorCheck588069925765011431() throws Throwable {
-    new TestBody(this).test_NodeErrorCheck588069925765011431();
+  public void test_NodeInheritanceCanNotBeAppliedCheck588069925765011431() throws Throwable {
+    new TestBody(this).test_NodeInheritanceCanNotBeAppliedCheck588069925765011431();
   }
   @Test
-  public void test_NodeErrorCheck588069925764967700() throws Throwable {
-    new TestBody(this).test_NodeErrorCheck588069925764967700();
+  public void test_NodeConflictWithExtendedConfigurationCheck9132903883493477061() throws Throwable {
+    new TestBody(this).test_NodeConflictWithExtendedConfigurationCheck9132903883493477061();
   }
 
   /*package*/ static class TestBody extends BaseTestBody {
@@ -53,21 +54,21 @@ public class InheritanceExtendsConflict_Test extends BaseTransformationTest {
       initTestNodes();
       runWithinCommand(() -> {
         SNode nodeToCheck = getNodeById("588069925757513545");
-        new CheckErrorMessagesRunnable(nodeToCheck, false, false, myProject.getPlatform()).includeSelf(false).exclude(Arrays.<CheckExpectedMessageRunnable>asList(new CheckExpectedMessageRunnable.CheckAnyMessageRunnable(getNodeById("588069925764966350"), MessageStatus.ERROR, "", myProject.getRepository(), myProject.getPlatform()), new CheckExpectedMessageRunnable.CheckAnyMessageRunnable(getNodeById("588069925764966375"), MessageStatus.ERROR, "", myProject.getRepository(), myProject.getPlatform()))).run();
+        new CheckErrorMessagesRunnable(nodeToCheck, false, false, myProject.getPlatform()).includeSelf(false).exclude(Arrays.<CheckExpectedMessageRunnable>asList(new CheckExpectedMessageRunnable.CheckExpectedRuleMessageRunnable(getNodeById("588069925764966350"), MessageStatus.ERROR, new SNodePointer("r:791971f5-b094-4342-a75c-0ce6c1b43e9d(org.iets3.variability.configuration.base.typesystem)", "3543850148881346886"), "", myProject.getRepository(), myProject.getPlatform()), new CheckExpectedMessageRunnable.CheckExpectedRuleMessageRunnable(getNodeById("588069925764966375"), MessageStatus.ERROR, new SNodePointer("r:791971f5-b094-4342-a75c-0ce6c1b43e9d(org.iets3.variability.configuration.base.typesystem)", "3543850148881346895"), "", myProject.getRepository(), myProject.getPlatform()))).run();
       });
     }
-    public void test_NodeErrorCheck588069925765011431() throws Exception {
+    public void test_NodeInheritanceCanNotBeAppliedCheck588069925765011431() throws Exception {
       initTestNodes();
       runWithinCommand(() -> {
         SNode nodeToCheck = getNodeById("588069925764966350");
-        new CheckExpectedMessageRunnable.CheckAnyMessageRunnable(nodeToCheck, MessageStatus.ERROR, "", myProject.getRepository(), myProject.getPlatform()).run();
+        new CheckExpectedMessageRunnable.CheckExpectedRuleMessageRunnable(nodeToCheck, MessageStatus.ERROR, new SNodePointer("r:791971f5-b094-4342-a75c-0ce6c1b43e9d(org.iets3.variability.configuration.base.typesystem)", "3543850148881346886"), "", myProject.getRepository(), myProject.getPlatform()).run();
       });
     }
-    public void test_NodeErrorCheck588069925764967700() throws Exception {
+    public void test_NodeConflictWithExtendedConfigurationCheck9132903883493477061() throws Exception {
       initTestNodes();
       runWithinCommand(() -> {
         SNode nodeToCheck = getNodeById("588069925764966375");
-        new CheckExpectedMessageRunnable.CheckAnyMessageRunnable(nodeToCheck, MessageStatus.ERROR, "", myProject.getRepository(), myProject.getPlatform()).run();
+        new CheckExpectedMessageRunnable.CheckExpectedRuleMessageRunnable(nodeToCheck, MessageStatus.ERROR, new SNodePointer("r:791971f5-b094-4342-a75c-0ce6c1b43e9d(org.iets3.variability.configuration.base.typesystem)", "3543850148881346895"), "", myProject.getRepository(), myProject.getPlatform()).run();
       });
     }
 
