@@ -7,7 +7,7 @@
     <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="12" />
     <use id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections" version="2" />
     <use id="c7fb639f-be78-4307-89b0-b5959c3fa8c8" name="jetbrains.mps.lang.text" version="0" />
-    <use id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc" version="2" />
+    <use id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc" version="3" />
     <use id="fd392034-7849-419d-9071-12563d152375" name="jetbrains.mps.baseLanguage.closures" version="0" />
     <use id="3a13115c-633c-4c5c-bbcc-75c4219e9555" name="jetbrains.mps.lang.quotation" version="5" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
@@ -44,7 +44,7 @@
       </concept>
       <concept id="1225194628440" name="jetbrains.mps.lang.behavior.structure.SuperNodeExpression" flags="nn" index="13iAh5" />
       <concept id="1225194691553" name="jetbrains.mps.lang.behavior.structure.ThisNodeExpression" flags="nn" index="13iPFW" />
-      <concept id="3235159848334022093" name="jetbrains.mps.lang.behavior.structure.Node_ConceptMethodCall" flags="ng" index="3zqWPK" />
+      <concept id="3235159848334022093" name="jetbrains.mps.lang.behavior.structure.Node_ConceptMethodCall" flags="nn" index="3zqWPK" />
     </language>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
       <concept id="1080223426719" name="jetbrains.mps.baseLanguage.structure.OrExpression" flags="nn" index="22lmx$" />
@@ -215,7 +215,6 @@
         <reference id="6832197706140518108" name="param" index="zr_51" />
       </concept>
       <concept id="5349172909345501395" name="jetbrains.mps.baseLanguage.javadoc.structure.BaseDocComment" flags="ng" index="P$AiS">
-        <child id="8465538089690331502" name="body" index="TZ5H$" />
         <child id="5383422241790532083" name="tags" index="3nqlJM" />
       </concept>
       <concept id="5349172909345532724" name="jetbrains.mps.baseLanguage.javadoc.structure.MethodDocComment" flags="ng" index="P$JXv" />
@@ -223,16 +222,8 @@
         <property id="8465538089690881934" name="text" index="TUZQ4" />
         <child id="6832197706140518123" name="parameter" index="zr_5Q" />
       </concept>
-      <concept id="8465538089690331500" name="jetbrains.mps.baseLanguage.javadoc.structure.CommentLine" flags="ng" index="TZ5HA">
-        <child id="8970989240999019149" name="part" index="1dT_Ay" />
-      </concept>
-      <concept id="8465538089690331492" name="jetbrains.mps.baseLanguage.javadoc.structure.DeprecatedBlockDocTag" flags="ng" index="TZ5HI">
-        <child id="2667874559098216723" name="text" index="3HnX3l" />
-      </concept>
-      <concept id="8970989240999019143" name="jetbrains.mps.baseLanguage.javadoc.structure.TextCommentLinePart" flags="ng" index="1dT_AC">
-        <property id="8970989240999019144" name="text" index="1dT_AB" />
-      </concept>
-      <concept id="5085607816302529296" name="jetbrains.mps.baseLanguage.javadoc.structure.IHoldCommentLines" flags="ng" index="1VezTd">
+      <concept id="8465538089690331492" name="jetbrains.mps.baseLanguage.javadoc.structure.DeprecatedBlockDocTag" flags="ng" index="TZ5HI" />
+      <concept id="5085607816302529296" name="jetbrains.mps.baseLanguage.javadoc.structure.IHoldCommentLines" flags="ngI" index="1VezTd">
         <child id="5085607816302529587" name="commentBody" index="1Vez_I" />
       </concept>
     </language>
@@ -3082,16 +3073,67 @@
         </node>
       </node>
       <node concept="P$JXv" id="7SixFixE0Cz" role="lGtFl">
-        <node concept="TZ5HA" id="7SixFixE0C$" role="TZ5H$">
-          <node concept="1dT_AC" id="7SixFixE0C_" role="1dT_Ay">
-            <property role="1dT_AB" value="TODO: Replace this method's body by some method from class &quot;Traversal&quot; (from mpsutil) and deprecate it." />
+        <node concept="TZ5HI" id="7QfxH97xaCo" role="3nqlJM">
+          <node concept="1PaTwC" id="2brRxNyraoM" role="1Vez_I">
+            <node concept="3oM_SD" id="2brRxNyraoN" role="1PaTwD">
+              <property role="3oM_SC" value="Use" />
+            </node>
+            <node concept="3oM_SD" id="2brRxNyraoO" role="1PaTwD">
+              <property role="3oM_SC" value="com.mbeddr.mpsutil.common.util.Traversal" />
+            </node>
+            <node concept="3oM_SD" id="2brRxNyraoP" role="1PaTwD">
+              <property role="3oM_SC" value="instead." />
+            </node>
           </node>
         </node>
-        <node concept="TZ5HI" id="7QfxH97xaCo" role="3nqlJM">
-          <node concept="TZ5HA" id="7QfxH97xaCp" role="3HnX3l">
-            <node concept="1dT_AC" id="7QfxH97xco3" role="1dT_Ay">
-              <property role="1dT_AB" value="Use com.mbeddr.mpsutil.common.util.Traversal instead." />
-            </node>
+        <node concept="1PaTwC" id="2brRxNyraox" role="1Vez_I">
+          <node concept="3oM_SD" id="2brRxNyraoy" role="1PaTwD">
+            <property role="3oM_SC" value="TODO:" />
+          </node>
+          <node concept="3oM_SD" id="2brRxNyraoz" role="1PaTwD">
+            <property role="3oM_SC" value="Replace" />
+          </node>
+          <node concept="3oM_SD" id="2brRxNyrao$" role="1PaTwD">
+            <property role="3oM_SC" value="this" />
+          </node>
+          <node concept="3oM_SD" id="2brRxNyrao_" role="1PaTwD">
+            <property role="3oM_SC" value="method's" />
+          </node>
+          <node concept="3oM_SD" id="2brRxNyraoA" role="1PaTwD">
+            <property role="3oM_SC" value="body" />
+          </node>
+          <node concept="3oM_SD" id="2brRxNyraoB" role="1PaTwD">
+            <property role="3oM_SC" value="by" />
+          </node>
+          <node concept="3oM_SD" id="2brRxNyraoC" role="1PaTwD">
+            <property role="3oM_SC" value="some" />
+          </node>
+          <node concept="3oM_SD" id="2brRxNyraoD" role="1PaTwD">
+            <property role="3oM_SC" value="method" />
+          </node>
+          <node concept="3oM_SD" id="2brRxNyraoE" role="1PaTwD">
+            <property role="3oM_SC" value="from" />
+          </node>
+          <node concept="3oM_SD" id="2brRxNyraoF" role="1PaTwD">
+            <property role="3oM_SC" value="class" />
+          </node>
+          <node concept="3oM_SD" id="2brRxNyraoG" role="1PaTwD">
+            <property role="3oM_SC" value="&quot;Traversal&quot;" />
+          </node>
+          <node concept="3oM_SD" id="2brRxNyraoH" role="1PaTwD">
+            <property role="3oM_SC" value="(from" />
+          </node>
+          <node concept="3oM_SD" id="2brRxNyraoI" role="1PaTwD">
+            <property role="3oM_SC" value="mpsutil)" />
+          </node>
+          <node concept="3oM_SD" id="2brRxNyraoJ" role="1PaTwD">
+            <property role="3oM_SC" value="and" />
+          </node>
+          <node concept="3oM_SD" id="2brRxNyraoK" role="1PaTwD">
+            <property role="3oM_SC" value="deprecate" />
+          </node>
+          <node concept="3oM_SD" id="2brRxNyraoL" role="1PaTwD">
+            <property role="3oM_SC" value="it." />
           </node>
         </node>
       </node>

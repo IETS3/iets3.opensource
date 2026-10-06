@@ -26,7 +26,7 @@
   </imports>
   <registry>
     <language id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior">
-      <concept id="3235159848334022093" name="jetbrains.mps.lang.behavior.structure.Node_ConceptMethodCall" flags="ng" index="3zqWPK" />
+      <concept id="3235159848334022093" name="jetbrains.mps.lang.behavior.structure.Node_ConceptMethodCall" flags="nn" index="3zqWPK" />
     </language>
     <language id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor">
       <concept id="1402906326895675325" name="jetbrains.mps.lang.editor.structure.CellActionMap_FunctionParm_selectedNode" flags="nn" index="0IXxy" />
@@ -320,7 +320,6 @@
       <concept id="1138411891628" name="jetbrains.mps.lang.smodel.structure.SNodeOperation" flags="nn" index="eCIE_">
         <child id="1144104376918" name="parameter" index="1xVPHs" />
       </concept>
-      <concept id="1179409122411" name="jetbrains.mps.lang.smodel.structure.Node_ConceptMethodCall" flags="nn" index="2qgKlT" />
       <concept id="7453996997717780434" name="jetbrains.mps.lang.smodel.structure.Node_GetSConceptOperation" flags="nn" index="2yIwOk" />
       <concept id="2396822768958367367" name="jetbrains.mps.lang.smodel.structure.AbstractTypeCastExpression" flags="nn" index="$5XWr">
         <child id="6733348108486823193" name="leftExpression" index="1m5AlR" />
@@ -1751,7 +1750,7 @@
                               <node concept="37vLTw" id="6OI5j2OmcQG" role="2Oq$k0">
                                 <ref role="3cqZAo" node="4z0AnX817jK" resolve="it" />
                               </node>
-                              <node concept="2qgKlT" id="6OI5j2OmcQH" role="2OqNvi">
+                              <node concept="3zqWPK" id="2brRxNyp$mF" role="2OqNvi">
                                 <ref role="37wK5l" to="qlm2:2Ux6GHgZEiG" resolve="canTagExpression" />
                               </node>
                             </node>
@@ -1759,7 +1758,7 @@
                               <node concept="37vLTw" id="6OI5j2OmcQJ" role="2Oq$k0">
                                 <ref role="3cqZAo" node="4z0AnX817jK" resolve="it" />
                               </node>
-                              <node concept="2qgKlT" id="6OI5j2OmcQK" role="2OqNvi">
+                              <node concept="3zqWPK" id="2brRxNyp$mH" role="2OqNvi">
                                 <ref role="37wK5l" to="qlm2:6OI5j2OlTY_" resolve="contributesToLiteralSideTransform" />
                               </node>
                             </node>
