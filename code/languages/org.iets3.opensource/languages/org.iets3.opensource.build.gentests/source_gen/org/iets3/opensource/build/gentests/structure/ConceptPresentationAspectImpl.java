@@ -10,8 +10,8 @@ import jetbrains.mps.smodel.runtime.ConceptPresentationBuilder;
 
 public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase {
   private ConceptPresentation props_BuildMacroRef;
-  private ConceptPresentation props_CustomRunnerAspect;
   private ConceptPresentation props_GeneratedTestsDependency_Module;
+  private ConceptPresentation props_InterpreterTestRunnerAspect;
   private ConceptPresentation props_RunKernelFGeneratedTests;
 
   @Override
@@ -22,17 +22,10 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
       case LanguageConceptSwitch.BuildMacroRef:
         if (props_BuildMacroRef == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
-          cpb.rawPresentation("output directory");
+          cpb.presentationByReference(0x9d000fbdbdca4a46L, 0xb39bc5ba9e79b38cL, 0x53af4b8a51b2480dL, 0x53af4b8a51b2480eL, "ref", "", "");
           props_BuildMacroRef = cpb.create();
         }
         return props_BuildMacroRef;
-      case LanguageConceptSwitch.CustomRunnerAspect:
-        if (props_CustomRunnerAspect == null) {
-          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
-          cpb.rawPresentation("run code on steroids");
-          props_CustomRunnerAspect = cpb.create();
-        }
-        return props_CustomRunnerAspect;
       case LanguageConceptSwitch.GeneratedTestsDependency_Module:
         if (props_GeneratedTestsDependency_Module == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
@@ -41,6 +34,13 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           props_GeneratedTestsDependency_Module = cpb.create();
         }
         return props_GeneratedTestsDependency_Module;
+      case LanguageConceptSwitch.InterpreterTestRunnerAspect:
+        if (props_InterpreterTestRunnerAspect == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.rawPresentation("run interpretable tests");
+          props_InterpreterTestRunnerAspect = cpb.create();
+        }
+        return props_InterpreterTestRunnerAspect;
       case LanguageConceptSwitch.RunKernelFGeneratedTests:
         if (props_RunKernelFGeneratedTests == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();

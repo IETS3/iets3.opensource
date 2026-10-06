@@ -1482,7 +1482,7 @@
         <node concept="3cpWs6" id="5P" role="3cqZAp">
           <uo k="s:originTrace" v="n:4450806019279274351" />
           <node concept="35c_gC" id="5Q" role="3cqZAk">
-            <ref role="35c_gD" to="dc1n:7Lttyc2SH5O" resolve="CustomRunnerAspect" />
+            <ref role="35c_gD" to="dc1n:7Lttyc2SH5O" resolve="InterpreterTestRunnerAspect" />
             <uo k="s:originTrace" v="n:4450806019279274351" />
           </node>
         </node>

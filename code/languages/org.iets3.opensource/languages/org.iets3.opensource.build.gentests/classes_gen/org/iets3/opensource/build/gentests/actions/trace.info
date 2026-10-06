@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<debug-info version="2">
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123155:jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1144226303539:jetbrains.mps.baseLanguage.structure.ForeachStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123159:jetbrains.mps.baseLanguage.structure.IfStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123165:jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242864:jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242878:jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1070462154015:jetbrains.mps.baseLanguage.structure.StaticFieldDeclaration" />
+  <root>
+    <file name="ActionAspectDescriptorImpl.java">
+      <unit at="12,0,28,0" name="org.iets3.opensource.build.gentests.actions.ActionAspectDescriptorImpl" />
+    </file>
+  </root>
+  <root nodeRef="r:6f740d35-a188-47db-9be3-ffb7a54dd8b6(org.iets3.opensource.build.gentests.actions)/222380692410076940">
+    <file name="PrefillRunner.java">
+      <node id="222380692410077252" at="23,102,24,108" concept="4" />
+      <node id="222380692410087399" at="25,30,26,15" concept="5" />
+      <node id="222380692410576956" at="27,7,28,162" concept="4" />
+      <node id="222380692410576966" at="28,162,29,58" concept="0" />
+      <node id="222380692410576991" at="32,113,33,71" concept="0" />
+      <node id="222380692410576997" at="33,71,34,19" concept="5" />
+      <node id="222380692410076940" at="42,0,43,0" concept="6" trace="BuildProject$ae" />
+      <node id="222380692410076940" at="43,0,44,0" concept="6" trace="BuildMps_Solution$R7" />
+      <node id="222380692410076940" at="47,0,48,0" concept="6" trace="uuid$pC01" />
+      <node id="222380692410076940" at="51,0,52,0" concept="6" trace="solution$MOiH" />
+      <node id="222380692410085522" at="24,108,27,7" concept="2" />
+      <node id="222380692410576983" at="31,150,35,11" concept="2" />
+      <node id="222380692410576975" at="30,55,36,9" concept="1" />
+      <node id="222380692410576971" at="29,58,37,7" concept="1" />
+      <node id="222380692410077232" at="23,0,39,0" concept="3" trace="setup#(Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;ILorg/jetbrains/mps/openapi/model/SModel;)V" />
+      <scope id="222380692410085524" at="25,30,26,15" />
+      <scope id="222380692410576990" at="32,113,34,19" />
+      <scope id="222380692410576982" at="31,150,35,11" />
+      <scope id="222380692410576974" at="30,55,36,9" />
+      <scope id="222380692410576975" at="30,55,36,9">
+        <var name="s" id="222380692410576976" />
+      </scope>
+      <scope id="222380692410576971" at="29,58,37,7">
+        <var name="p" id="222380692410576972" />
+      </scope>
+      <scope id="222380692410077232" at="23,102,37,7">
+        <var name="project" id="222380692410077255" />
+        <var name="projects" id="222380692410576957" />
+      </scope>
+      <scope id="222380692410077232" at="23,0,39,0">
+        <var name="enclosingNode" id="222380692410077232" />
+        <var name="index" id="222380692410077232" />
+        <var name="model" id="222380692410077232" />
+        <var name="newNode" id="222380692410077232" />
+        <var name="sampleNode" id="222380692410077232" />
+      </scope>
+      <unit id="222380692410076940" at="46,0,49,0" name="org.iets3.opensource.build.gentests.actions.PrefillRunner$PROPS" />
+      <unit id="222380692410076940" at="50,0,53,0" name="org.iets3.opensource.build.gentests.actions.PrefillRunner$LINKS" />
+      <unit id="222380692410076940" at="41,0,45,0" name="org.iets3.opensource.build.gentests.actions.PrefillRunner$CONCEPTS" />
+      <unit id="222380692410077232" at="22,0,40,0" name="org.iets3.opensource.build.gentests.actions.PrefillRunner$NodeFactory_222380692410077232" />
+      <unit id="222380692410076940" at="21,0,54,0" name="org.iets3.opensource.build.gentests.actions.PrefillRunner" />
+    </file>
+  </root>
+</debug-info>
+
