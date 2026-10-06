@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<product version="3" modelHash="36c0s1ovv72s4u0eonan5qr284mogl6">
+<product version="3" modelHash="-5d4widjwnq3qw7xcmunsuj95ukashit">
   <files names="BehaviorAspectDescriptor.java:EmptyVariabilityContent__BehaviorDescriptor.java:IVariabilityContainer__BehaviorDescriptor.java:IVariabilityContent__BehaviorDescriptor.java:MpsActions.java:SolverNotRunTask__BehaviorDescriptor.java:TreeWalker.java:VariabilityModelChunk__BehaviorDescriptor.java:VariabilityTypeRestrictions.java" />
 </product>
 
