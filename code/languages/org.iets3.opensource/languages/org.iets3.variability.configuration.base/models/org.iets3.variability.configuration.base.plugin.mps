@@ -18,7 +18,6 @@
     <use id="c0080a47-7e37-4558-bee9-9ae18e690549" name="jetbrains.mps.lang.extension" version="2" />
     <use id="c7d5b9dd-a05f-4be2-bc73-f2e16994cc67" name="jetbrains.mps.baseLanguage.lightweightdsl" version="1" />
     <use id="760a0a8c-eabb-4521-8bfd-65db761a9ba3" name="jetbrains.mps.baseLanguage.logging" version="0" />
-    <use id="63e0e566-5131-447e-90e3-12ea330e1a00" name="com.mbeddr.mpsutil.blutil" version="3" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -13172,6 +13171,13 @@
       </node>
     </node>
   </node>
+  <node concept="vrV6u" id="7Sbg4UjOAZ$">
+    <property role="3GE5qa" value="tailoring.logic" />
+    <property role="TrG5h" value="configCombinationLogicExtPoint" />
+    <node concept="3uibUv" id="7Sbg4UjOAZ_" role="luc8K">
+      <ref role="3uigEE" node="7Sbg4UjOBdB" resolve="IConfigCombinationLogic" />
+    </node>
+  </node>
   <node concept="3HP615" id="7Sbg4UjOBdB">
     <property role="TrG5h" value="IConfigCombinationLogic" />
     <property role="3GE5qa" value="tailoring.logic" />
@@ -13233,11 +13239,39 @@
       <ref role="3uigEE" to="2rbz:7Sbg4UjPvkH" resolve="AbstractExtensionWithPriority" />
     </node>
   </node>
-  <node concept="vrV6u" id="7Sbg4UjOAZ$">
+  <node concept="1lYeZD" id="7Sbg4UjOGdF">
+    <property role="TrG5h" value="DefaultConfigCombinationLogicExtension" />
     <property role="3GE5qa" value="tailoring.logic" />
-    <property role="TrG5h" value="configCombinationLogicExtPoint" />
-    <node concept="3uibUv" id="7Sbg4UjOAZ_" role="luc8K">
-      <ref role="3uigEE" node="7Sbg4UjOBdB" resolve="IConfigCombinationLogic" />
+    <ref role="1lYe$Y" node="7Sbg4UjOAZ$" resolve="configCombinationLogicExtPoint" />
+    <node concept="3Tm1VV" id="7Sbg4UjOGdG" role="1B3o_S" />
+    <node concept="2tJIrI" id="7Sbg4UjOGdH" role="jymVt" />
+    <node concept="3tTeZs" id="7Sbg4UjOGdI" role="jymVt">
+      <property role="3tTeZt" value="activate" />
+      <ref role="3tTeZr" to="90d:3zLwYDe0CPy" resolve="activate" />
+    </node>
+    <node concept="3tTeZs" id="7Sbg4UjOGdJ" role="jymVt">
+      <property role="3tTeZt" value="deactivate" />
+      <ref role="3tTeZr" to="90d:3zLwYDe0BDO" resolve="deactivate" />
+    </node>
+    <node concept="2tJIrI" id="7Sbg4UjOGdK" role="jymVt" />
+    <node concept="q3mfD" id="7Sbg4UjOGdL" role="jymVt">
+      <property role="TrG5h" value="get" />
+      <ref role="2VtyIY" to="90d:3zLwYDe0svr" resolve="get" />
+      <node concept="3Tm1VV" id="7Sbg4UjOGdM" role="1B3o_S" />
+      <node concept="3clFbS" id="7Sbg4UjOGdN" role="3clF47">
+        <node concept="3cpWs6" id="7Sbg4UjOGdO" role="3cqZAp">
+          <node concept="2ShNRf" id="7Sbg4UjOGdP" role="3cqZAk">
+            <node concept="HV5vD" id="7Sbg4UjOGdQ" role="2ShVmc">
+              <property role="373rjd" value="true" />
+              <ref role="HV5vE" node="7Sbg4UjOCBA" resolve="DefaultConfigCombinationLogic" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="q3mfm" id="7Sbg4UjOGdR" role="3clF45">
+        <ref role="q3mfh" to="90d:3zLwYDe0sv$" />
+        <ref role="1QQUv3" node="7Sbg4UjOGdL" resolve="get" />
+      </node>
     </node>
   </node>
   <node concept="312cEu" id="7Sbg4UjP3T$">
@@ -13293,41 +13327,6 @@
     <node concept="3Tm1VV" id="7Sbg4UjP3Uf" role="1B3o_S" />
     <node concept="3uibUv" id="7Sbg4UjPS$D" role="1zkMxy">
       <ref role="3uigEE" to="2rbz:7Sbg4UjPNNA" resolve="AbstractExtensionProvider" />
-    </node>
-  </node>
-  <node concept="1lYeZD" id="7Sbg4UjOGdF">
-    <property role="TrG5h" value="DefaultConfigCombinationLogicExtension" />
-    <property role="3GE5qa" value="tailoring.logic" />
-    <ref role="1lYe$Y" node="7Sbg4UjOAZ$" resolve="configCombinationLogicExtPoint" />
-    <node concept="3Tm1VV" id="7Sbg4UjOGdG" role="1B3o_S" />
-    <node concept="2tJIrI" id="7Sbg4UjOGdH" role="jymVt" />
-    <node concept="3tTeZs" id="7Sbg4UjOGdI" role="jymVt">
-      <property role="3tTeZt" value="activate" />
-      <ref role="3tTeZr" to="90d:3zLwYDe0CPy" resolve="activate" />
-    </node>
-    <node concept="3tTeZs" id="7Sbg4UjOGdJ" role="jymVt">
-      <property role="3tTeZt" value="deactivate" />
-      <ref role="3tTeZr" to="90d:3zLwYDe0BDO" resolve="deactivate" />
-    </node>
-    <node concept="2tJIrI" id="7Sbg4UjOGdK" role="jymVt" />
-    <node concept="q3mfD" id="7Sbg4UjOGdL" role="jymVt">
-      <property role="TrG5h" value="get" />
-      <ref role="2VtyIY" to="90d:3zLwYDe0svr" resolve="get" />
-      <node concept="3Tm1VV" id="7Sbg4UjOGdM" role="1B3o_S" />
-      <node concept="3clFbS" id="7Sbg4UjOGdN" role="3clF47">
-        <node concept="3cpWs6" id="7Sbg4UjOGdO" role="3cqZAp">
-          <node concept="2ShNRf" id="7Sbg4UjOGdP" role="3cqZAk">
-            <node concept="HV5vD" id="7Sbg4UjOGdQ" role="2ShVmc">
-              <property role="373rjd" value="true" />
-              <ref role="HV5vE" node="7Sbg4UjOCBA" resolve="DefaultConfigCombinationLogic" />
-            </node>
-          </node>
-        </node>
-      </node>
-      <node concept="q3mfm" id="7Sbg4UjOGdR" role="3clF45">
-        <ref role="q3mfh" to="90d:3zLwYDe0sv$" />
-        <ref role="1QQUv3" node="7Sbg4UjOGdL" resolve="get" />
-      </node>
     </node>
   </node>
   <node concept="312cEu" id="6Y_FTmCDhWp">

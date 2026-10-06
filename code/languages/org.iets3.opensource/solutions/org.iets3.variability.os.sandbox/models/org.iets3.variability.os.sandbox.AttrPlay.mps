@@ -25,10 +25,18 @@
         <property id="4791626744562666548" name="initiallyChecked" index="1n_0Gn" />
         <property id="4791626744558055097" name="complete" index="1nQUAq" />
         <child id="5050560734061908085" name="extendedFMC" index="30ne9f" />
+        <child id="9038024733918345127" name="usedConfigs" index="1l23gV" />
       </concept>
       <concept id="6698472021570799901" name="org.iets3.variability.configuration.base.structure.FeatureConfiguration" flags="ng" index="rqKBd" />
+      <concept id="6698472021570809194" name="org.iets3.variability.configuration.base.structure.FeatureModelConfigurationRef" flags="ng" index="rqMQU">
+        <reference id="6698472021570809195" name="config" index="rqMQV" />
+      </concept>
       <concept id="5050560734061908022" name="org.iets3.variability.configuration.base.structure.ExtendedFeatureModelConfigurationRef" flags="ng" index="30ne8c">
         <reference id="5050560734061908041" name="config" index="30ne9N" />
+      </concept>
+      <concept id="9038024733918343481" name="org.iets3.variability.configuration.base.structure.FMConfigActualParam" flags="ng" index="1l23a_">
+        <reference id="9038024733918408566" name="param" index="1l2MNE" />
+        <reference id="9038024733918409166" name="config" index="1l2N9i" />
       </concept>
       <concept id="3470763221645494592" name="org.iets3.variability.configuration.base.structure.AbstractFeatureConfiguration" flags="ng" index="3HwiA2">
         <property id="5939066662398655707" name="selectionState" index="3BMj5M" />
@@ -40,6 +48,14 @@
         <property id="7044756316066073770" name="inherited" index="lyGKx" />
         <reference id="3470763221647506824" name="attribute" index="3HS9Pa" />
         <child id="3470763221648007850" name="value" index="3HYO9C" />
+      </concept>
+    </language>
+    <language id="cfaa4966-b7d5-4b69-b66a-309a6e1a7290" name="org.iets3.core.expr.base">
+      <concept id="4261931054731905240" name="org.iets3.core.expr.base.structure.IContainExpressionParam" flags="ngI" index="2lDidI">
+        <child id="4261931054731905241" name="expr" index="2lDidJ" />
+      </concept>
+      <concept id="9002563722476995145" name="org.iets3.core.expr.base.structure.DotExpression" flags="ng" index="1QScDb">
+        <child id="9002563722476995147" name="target" index="1QScD9" />
       </concept>
     </language>
     <language id="6b277d9a-d52d-416f-a209-1919bd737f50" name="org.iets3.core.expr.simpleTypes">
@@ -59,11 +75,17 @@
       </concept>
     </language>
     <language id="165f1d05-2506-4544-895e-1424f54166ec" name="org.iets3.variability.featuremodel.base">
+      <concept id="8997672845438204620" name="org.iets3.variability.featuremodel.base.structure.SubFeatureDotTarget" flags="ng" index="21mTOb">
+        <reference id="8997672845438204633" name="feature" index="21mTOu" />
+      </concept>
       <concept id="8997672845436117511" name="org.iets3.variability.featuremodel.base.structure.FeatureAttribute" flags="ng" index="21IWn0">
         <child id="8997672845436636231" name="type" index="21GYI0" />
       </concept>
       <concept id="3414566187106618468" name="org.iets3.variability.featuremodel.base.structure.ICalculateHashForUpdateWarning" flags="ngI" index="bVzmZ">
         <property id="3414566187106619445" name="__updateHash" index="bVyBI" />
+      </concept>
+      <concept id="7725497592275044117" name="org.iets3.variability.featuremodel.base.structure.FMParam" flags="ng" index="2vxJKP">
+        <reference id="7725497592275220872" name="fm" index="2vxkaC" />
       </concept>
       <concept id="3989254429233029895" name="org.iets3.variability.featuremodel.base.structure.Feature" flags="ng" index="12iwV3">
         <child id="8997672845436698678" name="attributes" index="21GevL" />
@@ -71,6 +93,21 @@
       </concept>
       <concept id="3989254429233029649" name="org.iets3.variability.featuremodel.base.structure.FeatureModel" flags="ng" index="12iwZl">
         <child id="3989254429233029900" name="root" index="12iwV8" />
+        <child id="9038024733911849114" name="using" index="1lrLG6" />
+      </concept>
+      <concept id="3989254429233062248" name="org.iets3.variability.featuremodel.base.structure.FeatureModelInclude" flags="ng" index="12iSMG">
+        <reference id="3989254429233062249" name="fm" index="12iSMH" />
+        <child id="9038024733924655344" name="actualParams" index="1lESdG" />
+      </concept>
+      <concept id="9038024733911845702" name="org.iets3.variability.featuremodel.base.structure.UsingSection" flags="ng" index="1lrKzq">
+        <child id="7725497592275220946" name="params" index="2vxkbM" />
+      </concept>
+      <concept id="9038024733925292129" name="org.iets3.variability.featuremodel.base.structure.FMIncludeRefExpr" flags="ng" index="1lCzJX">
+        <reference id="9038024733925293013" name="fmInclude" index="1lCzx9" />
+      </concept>
+      <concept id="9038024733924620726" name="org.iets3.variability.featuremodel.base.structure.FMActualParam" flags="ng" index="1lEfCE">
+        <reference id="9038024733924623734" name="param" index="1lE0rE" />
+        <child id="9038024733924625381" name="rhs" index="1lE0xT" />
       </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
@@ -166,6 +203,172 @@
       </node>
     </node>
     <node concept="12i7jc" id="21ivJ6Atd7G" role="12i2BX" />
+    <node concept="12i7jc" id="3BzdP7fvTK2" role="12i2BX" />
+    <node concept="12iwZl" id="3BzdP7fvTK3" role="12i2BX">
+      <property role="bVyBI" value="-133127856" />
+      <node concept="12iwV3" id="3BzdP7fvTK4" role="12iwV8">
+        <property role="TrG5h" value="Palette" />
+        <node concept="12iwV3" id="3BzdP7fvTK5" role="12iwVe">
+          <property role="TrG5h" value="Red" />
+        </node>
+        <node concept="12iwV3" id="3BzdP7fvTK6" role="12iwVe">
+          <property role="TrG5h" value="Blue" />
+        </node>
+      </node>
+    </node>
+    <node concept="12i7jc" id="3BzdP7fvTK7" role="12i2BX" />
+    <node concept="12iwZl" id="3BzdP7fvTK8" role="12i2BX">
+      <property role="bVyBI" value="1777998991" />
+      <node concept="12iwV3" id="3BzdP7fvTK9" role="12iwV8">
+        <property role="TrG5h" value="Body" />
+        <node concept="12iSMG" id="3BzdP7fvTKa" role="12iwVe">
+          <property role="TrG5h" value="paint" />
+          <ref role="12iSMH" node="3BzdP7fvTK3" resolve="Palette" />
+        </node>
+      </node>
+    </node>
+    <node concept="12i7jc" id="3BzdP7fvTKb" role="12i2BX" />
+    <node concept="12iwZl" id="3BzdP7fvTKc" role="12i2BX">
+      <property role="bVyBI" value="-241440055" />
+      <node concept="1lrKzq" id="3BzdP7fvTKd" role="1lrLG6">
+        <node concept="2vxJKP" id="3BzdP7fvTKe" role="2vxkbM">
+          <property role="TrG5h" value="p" />
+          <ref role="2vxkaC" node="3BzdP7fvTK3" resolve="Palette" />
+        </node>
+      </node>
+      <node concept="12iwV3" id="3BzdP7fvTKf" role="12iwV8">
+        <property role="TrG5h" value="Trim" />
+        <node concept="12iwV3" id="3BzdP7fvTKg" role="12iwVe">
+          <property role="TrG5h" value="Stripes" />
+        </node>
+      </node>
+    </node>
+    <node concept="12i7jc" id="3BzdP7fvTKh" role="12i2BX" />
+    <node concept="12iwZl" id="3BzdP7fvTKi" role="12i2BX">
+      <property role="bVyBI" value="-1663874046" />
+      <node concept="12iwV3" id="3BzdP7fvTKj" role="12iwV8">
+        <property role="TrG5h" value="Car" />
+        <node concept="12iSMG" id="3BzdP7fvTKk" role="12iwVe">
+          <property role="TrG5h" value="body" />
+          <ref role="12iSMH" node="3BzdP7fvTK8" resolve="Body" />
+        </node>
+        <node concept="12iSMG" id="3BzdP7fvTKl" role="12iwVe">
+          <property role="TrG5h" value="trim" />
+          <ref role="12iSMH" node="3BzdP7fvTKc" resolve="Trim" />
+          <node concept="1lEfCE" id="3BzdP7fvTKm" role="1lESdG">
+            <ref role="1lE0rE" node="3BzdP7fvTKe" resolve="p" />
+            <node concept="1QScDb" id="2$hJXZK1Ivz" role="1lE0xT">
+              <node concept="21mTOb" id="2$hJXZK1IyQ" role="1QScD9">
+                <ref role="21mTOu" node="3BzdP7fvTKa" resolve="paint" />
+              </node>
+              <node concept="1lCzJX" id="3BzdP7fvTKn" role="2lDidJ">
+                <ref role="1lCzx9" node="3BzdP7fvTKk" resolve="body" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="12i7jc" id="3BzdP7fvTKo" role="12i2BX" />
+    <node concept="rqKB5" id="3BzdP7fvTKp" role="12i2BX">
+      <property role="TrG5h" value="CPalette" />
+      <property role="33ZQ4u" value="true" />
+      <property role="bVyBI" value="1002357483" />
+      <property role="bROok" value="-133127856" />
+      <property role="1n_0Gn" value="true" />
+      <property role="1nQUAq" value="true" />
+      <ref role="rqKBe" node="3BzdP7fvTK4" resolve="Palette" />
+      <node concept="rqCGG" id="3BzdP7fvTKq" role="rqCGo">
+        <node concept="rqKBd" id="3BzdP7fvTKr" role="rqKBa">
+          <ref role="rqKBe" node="3BzdP7fvTK5" resolve="Red" />
+          <node concept="rqCGG" id="3BzdP7fvTKs" role="rqCGo" />
+        </node>
+        <node concept="rqKBd" id="3BzdP7fvTKt" role="rqKBa">
+          <ref role="rqKBe" node="3BzdP7fvTK6" resolve="Blue" />
+          <node concept="rqCGG" id="3BzdP7fvTKu" role="rqCGo" />
+        </node>
+      </node>
+    </node>
+    <node concept="12i7jc" id="3BzdP7fvTKv" role="12i2BX" />
+    <node concept="rqKB5" id="3BzdP7fvTKw" role="12i2BX">
+      <property role="TrG5h" value="CBodyBase" />
+      <property role="33ZQ4u" value="true" />
+      <property role="bVyBI" value="936030010" />
+      <property role="bROok" value="1777998991" />
+      <property role="1n_0Gn" value="true" />
+      <property role="1nQUAq" value="true" />
+      <ref role="rqKBe" node="3BzdP7fvTK9" resolve="Body" />
+      <node concept="rqCGG" id="3BzdP7fvTKx" role="rqCGo">
+        <node concept="rqKBd" id="3BzdP7fvTKy" role="rqKBa">
+          <ref role="rqKBe" node="3BzdP7fvTKa" resolve="paint" />
+          <node concept="rqMQU" id="3BzdP7fvTKz" role="rqCGo">
+            <ref role="rqMQV" node="3BzdP7fvTKp" resolve="CPalette" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="12i7jc" id="3BzdP7fvTK$" role="12i2BX" />
+    <node concept="rqKB5" id="3BzdP7fvTK_" role="12i2BX">
+      <property role="TrG5h" value="CBody" />
+      <property role="33ZQ4u" value="true" />
+      <property role="bVyBI" value="973706343" />
+      <property role="bROok" value="936030010" />
+      <property role="1n_0Gn" value="true" />
+      <property role="26YOJW" value="" />
+      <property role="1nQUAq" value="true" />
+      <ref role="rqKBe" node="3BzdP7fvTK9" resolve="Body" />
+      <node concept="rqCGG" id="3BzdP7fvTKB" role="rqCGo" />
+      <node concept="30ne8c" id="3BzdP7fvTSS" role="30ne9f">
+        <ref role="30ne9N" node="3BzdP7fvTKw" resolve="CBodyBase" />
+      </node>
+    </node>
+    <node concept="12i7jc" id="3BzdP7fvTKC" role="12i2BX" />
+    <node concept="rqKB5" id="3BzdP7fvTKD" role="12i2BX">
+      <property role="TrG5h" value="CTrim" />
+      <property role="33ZQ4u" value="true" />
+      <property role="bVyBI" value="1153031246" />
+      <property role="bROok" value="-241440055" />
+      <property role="1n_0Gn" value="true" />
+      <property role="1nQUAq" value="true" />
+      <ref role="rqKBe" node="3BzdP7fvTKf" resolve="Trim" />
+      <node concept="1l23a_" id="3BzdP7fvTKE" role="1l23gV">
+        <ref role="1l2MNE" node="3BzdP7fvTKe" resolve="p" />
+        <ref role="1l2N9i" node="3BzdP7fvTKp" resolve="CPalette" />
+      </node>
+      <node concept="rqCGG" id="3BzdP7fvTKF" role="rqCGo">
+        <node concept="rqKBd" id="3BzdP7fvTKG" role="rqKBa">
+          <ref role="rqKBe" node="3BzdP7fvTKg" resolve="Stripes" />
+          <node concept="rqCGG" id="3BzdP7fvTKH" role="rqCGo" />
+        </node>
+      </node>
+    </node>
+    <node concept="12i7jc" id="3BzdP7fvTKI" role="12i2BX" />
+    <node concept="rqKB5" id="3BzdP7fvTKJ" role="12i2BX">
+      <property role="TrG5h" value="CCar" />
+      <property role="bVyBI" value="1517283164" />
+      <property role="bROok" value="-1663874046" />
+      <property role="1n_0Gn" value="true" />
+      <property role="33ZQ4u" value="true" />
+      <property role="26YOJW" value="" />
+      <property role="0Rz4W" value="-530556757" />
+      <property role="1nQUAq" value="true" />
+      <ref role="rqKBe" node="3BzdP7fvTKj" resolve="Car" />
+      <node concept="rqCGG" id="3BzdP7fvTKK" role="rqCGo">
+        <node concept="rqKBd" id="3BzdP7fvTKL" role="rqKBa">
+          <ref role="rqKBe" node="3BzdP7fvTKk" resolve="body" />
+          <node concept="rqMQU" id="3BzdP7fvTKM" role="rqCGo">
+            <ref role="rqMQV" node="3BzdP7fvTK_" resolve="CBody" />
+          </node>
+        </node>
+        <node concept="rqKBd" id="3BzdP7fvTKN" role="rqKBa">
+          <ref role="rqKBe" node="3BzdP7fvTKl" resolve="trim" />
+          <node concept="rqMQU" id="3BzdP7fvTKO" role="rqCGo">
+            <ref role="rqMQV" node="3BzdP7fvTKD" resolve="CTrim" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="12i7jc" id="3BzdP7fvTKP" role="12i2BX" />
   </node>
 </model>
 

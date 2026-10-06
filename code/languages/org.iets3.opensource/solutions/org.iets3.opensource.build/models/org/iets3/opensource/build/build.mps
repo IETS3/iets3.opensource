@@ -2153,6 +2153,11 @@
             <ref role="3bR37D" node="JUiQTzdslj" resolve="org.iets3.core.expr.typetags" />
           </node>
         </node>
+        <node concept="1SiIV0" id="64l_37QnW2n" role="3bR37C">
+          <node concept="3bR9La" id="64l_37QnW2o" role="1SiIV1">
+            <ref role="3bR37D" to="90a9:54z9_KDR0Ol" resolve="com.mbeddr.mpsutil.intentions" />
+          </node>
+        </node>
       </node>
       <node concept="1E1JtD" id="7yHH$DDpBOh" role="2G$12L">
         <property role="BnDLt" value="true" />
@@ -17818,6 +17823,11 @@
             <node concept="3qWCbU" id="76EiapPSb0W" role="3LXTna">
               <property role="3qWCbO" value="**/*.mps, **/*.mpsr, **/.model" />
             </node>
+          </node>
+        </node>
+        <node concept="1SiIV0" id="7FNYGQj8E63" role="3bR37C">
+          <node concept="3bR9La" id="7FNYGQj8E64" role="1SiIV1">
+            <ref role="3bR37D" to="ffeo:1TaHNgiIbIZ" resolve="MPS.Editor" />
           </node>
         </node>
       </node>
