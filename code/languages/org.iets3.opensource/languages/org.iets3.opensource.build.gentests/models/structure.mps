@@ -25,6 +25,9 @@
       <concept id="1169127622168" name="jetbrains.mps.lang.structure.structure.InterfaceConceptReference" flags="ig" index="PrWs8">
         <reference id="1169127628841" name="intfc" index="PrY4T" />
       </concept>
+      <concept id="8842732777748207592" name="jetbrains.mps.lang.structure.structure.SmartReferenceAttribute" flags="ng" index="RPilO">
+        <reference id="8842732777748207597" name="charactersticReference" index="RPilL" />
+      </concept>
       <concept id="1071489090640" name="jetbrains.mps.lang.structure.structure.ConceptDeclaration" flags="ig" index="1TIwiD">
         <reference id="1071489389519" name="extends" index="1TJDcQ" />
         <child id="1169129564478" name="implements" index="PzmwI" />
@@ -38,6 +41,9 @@
       </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
+      <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
+        <child id="5169995583184591170" name="smodelAttribute" index="lGtFl" />
+      </concept>
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ngI" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
       </concept>
@@ -75,8 +81,8 @@
   </node>
   <node concept="1TIwiD" id="7Lttyc2SH5O">
     <property role="EcuMT" value="8961448726281507188" />
-    <property role="TrG5h" value="CustomRunnerAspect" />
-    <property role="34LRSv" value="run code on steroids" />
+    <property role="TrG5h" value="InterpreterTestRunnerAspect" />
+    <property role="34LRSv" value="run interpretable tests" />
     <ref role="1TJDcQ" to="as3y:3BExUgsK89Y" resolve="BuildSolutionRunnerAspect" />
     <node concept="1TJgyj" id="7Lttyc2SIcb" role="1TKVEi">
       <property role="IQ2ns" value="8961448726281511691" />
@@ -108,6 +114,9 @@
       <property role="20kJfa" value="ref" />
       <property role="20lbJX" value="fLJekj4/_1" />
       <ref role="20lvS9" to="3ior:6qcrfIJFt02" resolve="BuildFolderMacro" />
+    </node>
+    <node concept="RPilO" id="cm3wZ064Kh" role="lGtFl">
+      <ref role="RPilL" node="5eJiSDhG$we" resolve="ref" />
     </node>
   </node>
 </model>

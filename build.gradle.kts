@@ -190,7 +190,7 @@ val execTestsByInterpreterPre by tasks.registering(TestLanguages::class) {
 
 val execTestsByInterpreter by tasks.registering(TestLanguages::class) {
     dependsOn(buildLanguages)
-    script = scriptsDir.file("build-testInterpreterExec.xml")
+    script = scriptsDir.file("build-interpreted-test-run.xml")
     targets("generate", "build")
     doLast {
         // there is limited ant support for kotlin so we fall back to groovy
