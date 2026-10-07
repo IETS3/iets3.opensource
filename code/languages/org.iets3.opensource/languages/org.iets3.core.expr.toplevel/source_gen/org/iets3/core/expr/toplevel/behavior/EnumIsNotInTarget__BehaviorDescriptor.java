@@ -15,16 +15,15 @@ import java.util.Arrays;
 import org.jetbrains.annotations.NotNull;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SConceptOperations;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
-import jetbrains.mps.internal.collections.runtime.ListSequence;
-import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
+import jetbrains.mps.internal.collections.runtime.Sequence;
 import jetbrains.mps.lang.core.behavior.BaseConcept__BehaviorDescriptor;
 import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 import jetbrains.mps.smodel.builder.SNodeBuilder;
+import org.jetbrains.mps.openapi.language.SConcept;
 import org.jetbrains.mps.openapi.language.SContainmentLink;
 import org.jetbrains.mps.openapi.language.SReferenceLink;
-import org.jetbrains.mps.openapi.language.SConcept;
 
 public final class EnumIsNotInTarget__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getConcept(0x71934284d7d145eeL, 0xa0548c072591085fL, 0x6cf1aec429856528L, "org.iets3.core.expr.toplevel.structure.EnumIsNotInTarget");
@@ -39,7 +38,7 @@ public final class EnumIsNotInTarget__BehaviorDescriptor extends BaseBHDescripto
   }
 
   /*package*/ static String renderReadable_id6kR0qIbI2yi(@NotNull SNode __thisNode__) {
-    return SConceptOperations.conceptAlias(SNodeOperations.getConcept(__thisNode__)) + "(" + ListSequence.fromList(SLinkOperations.getChildren(__thisNode__, LINKS.selectors$Hqrd)).select((it) -> BaseConcept__BehaviorDescriptor.getPresentation_idhEwIMiw.invoke(it).join(",")) + ")";
+    return SConceptOperations.conceptAlias(SNodeOperations.getConcept(__thisNode__)) + "(" + String.join(", ", Sequence.fromIterable(AbstractEnumInTarget__BehaviorDescriptor.effectiveSelectors_id48Zi1gznqdX.invoke(__thisNode__)).select((it) -> (String) BaseConcept__BehaviorDescriptor.getPresentation_idhEwIMiw.invoke(it))) + ")";
   }
   /*package*/ static SNode compose_id4L5R3LmDwOh(@NotNull SNode __thisNode__, SNode literal, SNode leftExpr, SNode ctx) {
     return createLogicalAndExpression_zcp21_a0a1(leftExpr, AbstractEnumInTarget__BehaviorDescriptor.single_id3wraVjnnEfa.invoke(__thisNode__, ctx, literal));
@@ -109,16 +108,15 @@ public final class EnumIsNotInTarget__BehaviorDescriptor extends BaseBHDescripto
     return n0.getResult();
   }
 
-  private static final class LINKS {
-    /*package*/ static final SContainmentLink selectors$Hqrd = MetaAdapterFactory.getContainmentLink(0x71934284d7d145eeL, 0xa0548c072591085fL, 0x4c45dc3c56a5dd6cL, 0x358e78f08b0d1158L, "selectors");
-    /*package*/ static final SContainmentLink left$zxUa = MetaAdapterFactory.getContainmentLink(0xcfaa4966b7d54b69L, 0xb66a309a6e1a7290L, 0x46ff3b3d86c99c15L, 0x46ff3b3d86c99c16L, "left");
-    /*package*/ static final SContainmentLink right$zBjx = MetaAdapterFactory.getContainmentLink(0xcfaa4966b7d54b69L, 0xb66a309a6e1a7290L, 0x46ff3b3d86c99c15L, 0x46ff3b3d86c99c18L, "right");
-    /*package*/ static final SReferenceLink literal$7Jlb = MetaAdapterFactory.getReferenceLink(0x71934284d7d145eeL, 0xa0548c072591085fL, 0x33d02016c58c3783L, 0x358e78f08aec038fL, "literal");
-  }
-
   private static final class CONCEPTS {
     /*package*/ static final SConcept LogicalAndExpression$m8 = MetaAdapterFactory.getConcept(0xcfaa4966b7d54b69L, 0xb66a309a6e1a7290L, 0x46ff3b3d86cbdd39L, "org.iets3.core.expr.base.structure.LogicalAndExpression");
     /*package*/ static final SConcept Expression$D_ = MetaAdapterFactory.getConcept(0xcfaa4966b7d54b69L, 0xb66a309a6e1a7290L, 0x670d5e92f854a047L, "org.iets3.core.expr.base.structure.Expression");
     /*package*/ static final SConcept EnumIsNotTarget$32 = MetaAdapterFactory.getConcept(0x71934284d7d145eeL, 0xa0548c072591085fL, 0x3f3f1c6541af6e30L, "org.iets3.core.expr.toplevel.structure.EnumIsNotTarget");
+  }
+
+  private static final class LINKS {
+    /*package*/ static final SContainmentLink left$zxUa = MetaAdapterFactory.getContainmentLink(0xcfaa4966b7d54b69L, 0xb66a309a6e1a7290L, 0x46ff3b3d86c99c15L, 0x46ff3b3d86c99c16L, "left");
+    /*package*/ static final SContainmentLink right$zBjx = MetaAdapterFactory.getContainmentLink(0xcfaa4966b7d54b69L, 0xb66a309a6e1a7290L, 0x46ff3b3d86c99c15L, 0x46ff3b3d86c99c18L, "right");
+    /*package*/ static final SReferenceLink literal$7Jlb = MetaAdapterFactory.getReferenceLink(0x71934284d7d145eeL, 0xa0548c072591085fL, 0x33d02016c58c3783L, 0x358e78f08aec038fL, "literal");
   }
 }

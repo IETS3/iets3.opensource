@@ -13,7 +13,7 @@
       <unit at="11,0,250,0" name="org.iets3.req.core.structure.ConceptPresentationAspectImpl" />
     </file>
     <file name="IconContainer.java">
-      <unit at="7,0,11,0" name="org.iets3.req.core.structure.IconContainer" />
+      <unit at="8,0,13,0" name="org.iets3.req.core.structure.IconContainer" />
     </file>
     <file name="LanguageConceptSwitch.java">
       <unit at="10,0,80,0" name="org.iets3.req.core.structure.LanguageConceptSwitch" />
@@ -132,8 +132,8 @@
       <node id="5151426049053136028" at="192,46,193,76" concept="3" />
       <node id="5151426049053136028" at="193,76,194,60" concept="0" />
       <node id="5151426049053136028" at="194,60,195,35" concept="0" />
-      <node id="5151426049053136028" at="195,35,196,57" concept="0" />
-      <node id="5151426049053136028" at="196,57,197,49" concept="0" />
+      <node id="5151426049053136028" at="195,35,196,45" concept="0" />
+      <node id="5151426049053136028" at="196,45,197,49" concept="0" />
       <node id="5151426049053136028" at="198,9,199,39" concept="4" />
       <node id="5151426049053136028" at="191,51,198,9" concept="2" />
       <scope id="5151426049053136028" at="192,46,197,49">
@@ -171,8 +171,8 @@
       <node id="5151426049053136302" at="12,0,13,0" concept="1" trace="props_AbstractRequirement" />
       <node id="5151426049053136302" at="46,48,47,76" concept="3" />
       <node id="5151426049053136302" at="47,76,48,59" concept="0" />
-      <node id="5151426049053136302" at="48,59,49,56" concept="0" />
-      <node id="5151426049053136302" at="49,56,50,51" concept="0" />
+      <node id="5151426049053136302" at="48,59,49,45" concept="0" />
+      <node id="5151426049053136302" at="49,45,50,51" concept="0" />
       <node id="5151426049053136302" at="51,9,52,41" concept="4" />
       <node id="5151426049053136302" at="45,53,51,9" concept="2" />
       <scope id="5151426049053136302" at="46,48,50,51">

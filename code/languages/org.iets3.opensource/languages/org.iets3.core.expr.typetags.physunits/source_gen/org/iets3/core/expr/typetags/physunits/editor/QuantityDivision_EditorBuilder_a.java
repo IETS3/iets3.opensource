@@ -130,7 +130,7 @@ import org.jetbrains.mps.openapi.language.SConcept;
     style.set(StyleAttributes.BASE_LINE_CELL, true);
     editorCell.getStyle().putAll(style);
     editorCell.addEditorCell(createCustomFactory_1());
-    editorCell.addEditorCell(createCustomFactory_3());
+    editorCell.addEditorCell(createCustomFactory_7());
     editorCell.init();
     return editorCell;
   }
@@ -138,6 +138,26 @@ import org.jetbrains.mps.openapi.language.SConcept;
     return createMathBase_0(getEditorContext(), myNode);
   }
   private EditorCell createCustomFactory_0(final EditorContext editorContext, final SNode node) {
+
+
+    final EditorCell cell = createCustomFactory_3();
+    EditorCell editorCell = ((_FunctionTypes._return_P0_E0<EditorCell>) () -> cell).invoke();
+    return editorCell;
+  }
+  private EditorCell createCustomFactory_1() {
+    return createCustomFactory_0(getEditorContext(), myNode);
+  }
+  private EditorCell createCustomFactory_2(final EditorContext editorContext, final SNode node) {
+
+
+    final EditorCell cell = createCustomFactory_5();
+    EditorCell editorCell = ((_FunctionTypes._return_P0_E0<EditorCell>) () -> cell).invoke();
+    return editorCell;
+  }
+  private EditorCell createCustomFactory_3() {
+    return createCustomFactory_2(getEditorContext(), myNode);
+  }
+  private EditorCell createCustomFactory_4(final EditorContext editorContext, final SNode node) {
 
 
     final EditorCell cell = createRefNode_0();
@@ -228,18 +248,18 @@ import org.jetbrains.mps.openapi.language.SConcept;
     }).invoke();
     return editorCell;
   }
-  private EditorCell createCustomFactory_1() {
-    return createCustomFactory_0(getEditorContext(), myNode);
+  private EditorCell createCustomFactory_5() {
+    return createCustomFactory_4(getEditorContext(), myNode);
   }
   private EditorCell createRefNode_0() {
-    SingleRoleCellProvider provider = new numeratorSingleRoleHandler_y9a4yi_a0a0(myNode, LINKS.numerator$clxk, getEditorContext());
+    SingleRoleCellProvider provider = new numeratorSingleRoleHandler_y9a4yi_a0a0a0(myNode, LINKS.numerator$clxk, getEditorContext());
     return provider.createCell();
   }
-  private static class numeratorSingleRoleHandler_y9a4yi_a0a0 extends SingleRoleCellProvider {
+  private static class numeratorSingleRoleHandler_y9a4yi_a0a0a0 extends SingleRoleCellProvider {
     @NotNull
     private SNode myNode;
 
-    public numeratorSingleRoleHandler_y9a4yi_a0a0(SNode ownerNode, SContainmentLink containmentLink, EditorContext context) {
+    public numeratorSingleRoleHandler_y9a4yi_a0a0a0(SNode ownerNode, SContainmentLink containmentLink, EditorContext context) {
       super(containmentLink, context);
       myNode = ownerNode;
     }
@@ -286,7 +306,27 @@ import org.jetbrains.mps.openapi.language.SConcept;
       return "<no numerator>";
     }
   }
-  private EditorCell createCustomFactory_2(final EditorContext editorContext, final SNode node) {
+  private EditorCell createCustomFactory_6(final EditorContext editorContext, final SNode node) {
+
+
+    final EditorCell cell = createCustomFactory_9();
+    EditorCell editorCell = ((_FunctionTypes._return_P0_E0<EditorCell>) () -> cell).invoke();
+    return editorCell;
+  }
+  private EditorCell createCustomFactory_7() {
+    return createCustomFactory_6(getEditorContext(), myNode);
+  }
+  private EditorCell createCustomFactory_8(final EditorContext editorContext, final SNode node) {
+
+
+    final EditorCell cell = createCustomFactory_11();
+    EditorCell editorCell = ((_FunctionTypes._return_P0_E0<EditorCell>) () -> cell).invoke();
+    return editorCell;
+  }
+  private EditorCell createCustomFactory_9() {
+    return createCustomFactory_8(getEditorContext(), myNode);
+  }
+  private EditorCell createCustomFactory_10(final EditorContext editorContext, final SNode node) {
 
 
     final EditorCell cell = createRefNode_1();
@@ -377,18 +417,18 @@ import org.jetbrains.mps.openapi.language.SConcept;
     }).invoke();
     return editorCell;
   }
-  private EditorCell createCustomFactory_3() {
-    return createCustomFactory_2(getEditorContext(), myNode);
+  private EditorCell createCustomFactory_11() {
+    return createCustomFactory_10(getEditorContext(), myNode);
   }
   private EditorCell createRefNode_1() {
-    SingleRoleCellProvider provider = new denominatorSingleRoleHandler_y9a4yi_a0b0(myNode, LINKS.denominator$F8jm, getEditorContext());
+    SingleRoleCellProvider provider = new denominatorSingleRoleHandler_y9a4yi_a0a0b0(myNode, LINKS.denominator$F8jm, getEditorContext());
     return provider.createCell();
   }
-  private static class denominatorSingleRoleHandler_y9a4yi_a0b0 extends SingleRoleCellProvider {
+  private static class denominatorSingleRoleHandler_y9a4yi_a0a0b0 extends SingleRoleCellProvider {
     @NotNull
     private SNode myNode;
 
-    public denominatorSingleRoleHandler_y9a4yi_a0b0(SNode ownerNode, SContainmentLink containmentLink, EditorContext context) {
+    public denominatorSingleRoleHandler_y9a4yi_a0a0b0(SNode ownerNode, SContainmentLink containmentLink, EditorContext context) {
       super(containmentLink, context);
       myNode = ownerNode;
     }
