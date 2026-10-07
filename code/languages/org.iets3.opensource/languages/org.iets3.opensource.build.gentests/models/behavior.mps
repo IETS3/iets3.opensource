@@ -990,7 +990,7 @@
     </node>
   </node>
   <node concept="13h7C7" id="7Lttyc2SHJQ">
-    <ref role="13h7C2" to="dc1n:7Lttyc2SH5O" resolve="CustomRunnerAspect" />
+    <ref role="13h7C2" to="dc1n:7Lttyc2SH5O" resolve="InterpreterTestRunnerAspect" />
     <node concept="13hLZK" id="7Lttyc2SHJR" role="13h7CW">
       <node concept="3clFbS" id="7Lttyc2SHJS" role="2VODD2" />
     </node>

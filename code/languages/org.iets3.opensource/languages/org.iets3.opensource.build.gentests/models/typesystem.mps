@@ -1182,7 +1182,7 @@
     </node>
     <node concept="1YaCAy" id="3R4s7SZjW5M" role="1YuTPh">
       <property role="TrG5h" value="customRunnerAspect" />
-      <ref role="1YaFvo" to="dc1n:7Lttyc2SH5O" resolve="CustomRunnerAspect" />
+      <ref role="1YaFvo" to="dc1n:7Lttyc2SH5O" resolve="InterpreterTestRunnerAspect" />
     </node>
   </node>
 </model>
