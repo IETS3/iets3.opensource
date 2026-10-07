@@ -53,6 +53,7 @@
       </concept>
     </language>
     <language id="9b66c5c9-38bf-4315-a96f-9f4e212c69cb" name="org.iets3.variability.base">
+      <concept id="3989254429232912648" name="org.iets3.variability.base.structure.EmptyVariabilityContent" flags="ng" index="12i7jc" />
       <concept id="3989254429232883574" name="org.iets3.variability.base.structure.VariabilityModelChunk" flags="ng" index="12icEM">
         <child id="3989254429232890937" name="contents" index="12i2BX" />
       </concept>
@@ -194,10 +195,10 @@
     <node concept="rqKB5" id="47N6Ml8JdEQ" role="12i2BX">
       <property role="TrG5h" value="DutchBike" />
       <property role="1n_0Gn" value="true" />
-      <property role="bVyBI" value="1528189821" />
+      <property role="bVyBI" value="-616026317" />
       <property role="26YOJW" value="" />
-      <property role="bROok" value="1219862790" />
-      <property role="0Rz4W" value="-761411075" />
+      <property role="bROok" value="1831666134" />
+      <property role="0Rz4W" value="-385929797" />
       <property role="1nQUAq" value="true" />
       <ref role="rqKBe" node="47N6Ml8JdEo" resolve="Bicycle" />
       <node concept="rqCGG" id="47N6Ml8JdES" role="rqCGo">
@@ -239,6 +240,7 @@
         </node>
       </node>
     </node>
+    <node concept="12i7jc" id="69y89CCKgZ1" role="12i2BX" />
     <node concept="12iwZl" id="47N6Ml8QRzT" role="12i2BX">
       <property role="TrG5h" value="Drivetrain" />
       <property role="bVyBI" value="649008004" />
@@ -250,6 +252,7 @@
         </node>
       </node>
     </node>
+    <node concept="12i7jc" id="69y89CCKgZ2" role="12i2BX" />
     <node concept="12iwZl" id="47N6Ml8QRzW" role="12i2BX">
       <property role="TrG5h" value="Shifter" />
       <property role="bVyBI" value="-1623735750" />
@@ -266,6 +269,7 @@
         </node>
       </node>
     </node>
+    <node concept="12i7jc" id="69y89CCKgZ3" role="12i2BX" />
     <node concept="12iwZl" id="47N6Ml8QR$1" role="12i2BX">
       <property role="TrG5h" value="Bike" />
       <property role="bVyBI" value="-1397969575" />
@@ -292,6 +296,7 @@
         </node>
       </node>
     </node>
+    <node concept="12i7jc" id="69y89CCKgYZ" role="12i2BX" />
     <node concept="rqKB5" id="47N6Ml8QR$9" role="12i2BX">
       <property role="TrG5h" value="CGears" />
       <property role="33ZQ4u" value="true" />
@@ -315,6 +320,7 @@
         </node>
       </node>
     </node>
+    <node concept="12i7jc" id="69y89CCKgZ0" role="12i2BX" />
     <node concept="rqKB5" id="47N6Ml8QR$f" role="12i2BX">
       <property role="TrG5h" value="CDrivetrain" />
       <property role="33ZQ4u" value="true" />
@@ -330,6 +336,7 @@
         <ref role="30ne9N" node="47N6Ml8Yp$h" resolve="CDrivetrainBase" />
       </node>
     </node>
+    <node concept="12i7jc" id="69y89CCKgYY" role="12i2BX" />
     <node concept="rqKB5" id="47N6Ml8QR$j" role="12i2BX">
       <property role="TrG5h" value="CShifter" />
       <property role="33ZQ4u" value="true" />
@@ -352,6 +359,7 @@
         </node>
       </node>
     </node>
+    <node concept="12i7jc" id="69y89CCKgYX" role="12i2BX" />
     <node concept="rqKB5" id="47N6Ml8QR$o" role="12i2BX">
       <property role="TrG5h" value="CBikeBase" />
       <property role="33ZQ4u" value="true" />
@@ -382,26 +390,34 @@
     <node concept="rqKB5" id="47N6Ml8QR$u" role="12i2BX">
       <property role="TrG5h" value="CityBike" />
       <property role="1n_0Gn" value="true" />
-      <property role="bVyBI" value="1691936504" />
+      <property role="bVyBI" value="-237895161" />
       <property role="26YOJW" value="" />
-      <property role="0Rz4W" value="-389813923" />
-      <property role="bROok" value="-997122014" />
-      <property role="1nQUAq" value="true" />
+      <property role="0Rz4W" value="710564581" />
+      <property role="bROok" value="771891302" />
       <property role="33ZQ4u" value="true" />
+      <property role="1nQUAq" value="true" />
       <ref role="rqKBe" node="47N6Ml8QR$2" resolve="Bike" />
       <node concept="30ne8c" id="47N6Ml8QR$v" role="30ne9f">
         <ref role="30ne9N" node="47N6Ml8QR$o" resolve="CBikeBase" />
       </node>
       <node concept="rqCGG" id="47N6Ml8QR$w" role="rqCGo">
+        <node concept="rqKBd" id="69y89CCKgY$" role="rqKBa">
+          <property role="3BMj5M" value="2wLdcSYDcHT/inheritedTrue" />
+          <ref role="rqKBe" node="47N6Ml8QR$3" resolve="drivetrain" />
+          <node concept="rqMQU" id="69y89CCKgYF" role="rqCGo">
+            <ref role="rqMQV" node="47N6Ml8QR$f" resolve="CDrivetrain" />
+          </node>
+        </node>
         <node concept="rqKBd" id="47N6Ml8QR$x" role="rqKBa">
-          <property role="3BMj5M" value="5QKr2dW9gDW/userTrue" />
+          <property role="3BMj5M" value="2wLdcSYDcHT/inheritedTrue" />
           <ref role="rqKBe" node="47N6Ml8QR$4" resolve="shifter" />
-          <node concept="rqMQU" id="47N6Ml8QR$y" role="rqCGo">
+          <node concept="rqMQU" id="69y89CCKgYG" role="rqCGo">
             <ref role="rqMQV" node="47N6Ml8QR$j" resolve="CShifter" />
           </node>
         </node>
       </node>
     </node>
+    <node concept="12i7jc" id="69y89CCKgZ4" role="12i2BX" />
     <node concept="rqKB5" id="47N6Ml8Yp$h" role="12i2BX">
       <property role="TrG5h" value="CDrivetrainBase" />
       <property role="33ZQ4u" value="true" />
@@ -421,6 +437,7 @@
         </node>
       </node>
     </node>
+    <node concept="12i7jc" id="69y89CCKgZ5" role="12i2BX" />
     <node concept="rqKB5" id="1HFAdoLiV50" role="12i2BX">
       <property role="TrG5h" value="SoloBike" />
       <property role="33ZQ4u" value="true" />
@@ -441,6 +458,8 @@
         </node>
       </node>
     </node>
+    <node concept="12i7jc" id="69y89CCKgZ6" role="12i2BX" />
+    <node concept="12i7jc" id="69y89CCKgZ7" role="12i2BX" />
   </node>
 </model>
 
