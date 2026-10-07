@@ -10,6 +10,8 @@ The project does _not_ follow Semantic Versioning and the changes are documented
 ### Added
 - Build: `checkmodels` (MPS model checker) now runs as part of `check`/`build` and fails the build on model-check errors.
 
+### Fixed
+- Ship the interpreter-test runner in the main artifact and fix completion
 
 ## September 2026
 
