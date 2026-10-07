@@ -16202,6 +16202,22 @@
             </node>
           </node>
         </node>
+        <node concept="3rtmxn" id="cm3wZ0fNWL" role="3bR31x">
+          <node concept="3LXTmp" id="cm3wZ0fNWM" role="3rtmxm">
+            <node concept="398BVA" id="cm3wZ0fNWN" role="3LXTmr">
+              <ref role="398BVh" node="5wLtKNeTaqD" resolve="iets3.lang.opensource" />
+              <node concept="2Ry0Ak" id="cm3wZ0fNWO" role="iGT6I">
+                <property role="2Ry0Am" value="solutions" />
+                <node concept="2Ry0Ak" id="cm3wZ0fNWP" role="2Ry0An">
+                  <property role="2Ry0Am" value="org.iets3.opensource.interpreterExecutor" />
+                </node>
+              </node>
+            </node>
+            <node concept="3qWCbU" id="cm3wZ0fNWQ" role="3LXTna">
+              <property role="3qWCbO" value="icons/**, resources/**" />
+            </node>
+          </node>
+        </node>
       </node>
     </node>
     <node concept="2igEWh" id="44RyrhrDweX" role="1hWBAP">
