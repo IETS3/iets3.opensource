@@ -7,7 +7,6 @@ import org.jetbrains.mps.openapi.language.SAbstractConcept;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import org.jetbrains.mps.openapi.model.SNode;
 import org.iets3.core.expr.base.plugin.EffectDescriptor;
@@ -22,7 +21,6 @@ import org.iets3.analysis.base.plugin.STF;
 import java.util.Collections;
 import jetbrains.mps.internal.collections.runtime.SetSequence;
 import java.util.HashSet;
-import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 import org.jetbrains.mps.openapi.language.SContainmentLink;
@@ -30,20 +28,18 @@ import org.jetbrains.mps.openapi.language.SContainmentLink;
 public final class CastExpression__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getConcept(0xcfaa4966b7d54b69L, 0xb66a309a6e1a7290L, 0x2d8b76405dcec884L, "org.iets3.core.expr.base.structure.CastExpression");
 
-  public static final SMethod<String> renderReadable_id4Y0vh0cfqjE = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("renderReadable").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5728716233893586154L).languageId(0xb66a309a6e1a7290L, 0xcfaa4966b7d54b69L).build2();
-  public static final SMethod<Iterable<SNode>> getChildrenForCoverage_id5IKJrJHNCE8 = new SMethodBuilder<Iterable<SNode>>(new SJavaCompoundTypeImpl((Class<Iterable<SNode>>) ((Class) Object.class))).name("getChildrenForCoverage").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(6606989268198787720L).languageId(0xa6067ce0236c8023L, 0x47f075a6558e4640L).build2();
-  public static final SMethod<EffectDescriptor> effectDescriptor_id6GySMNjjWfO = new SMethodBuilder<EffectDescriptor>(new SJavaCompoundTypeImpl(EffectDescriptor.class)).name("effectDescriptor").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(7719982492929737716L).languageId(0xb66a309a6e1a7290L, 0xcfaa4966b7d54b69L).build2();
-  public static final SMethod<SNode> createSolverTask_id4pkidg67Lgb = new SMethodBuilder<SNode>(new SJavaCompoundTypeImpl((Class<SNode>) ((Class) Object.class))).name("createSolverTask").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5067755556171617291L).languageId(0x8fed954c202d18beL, 0xdb8bd0353f5141d8L).build2();
-  public static final SMethod<SNode> getISSVariable_id5GL30CqMVFo = new SMethodBuilder<SNode>(new SJavaCompoundTypeImpl((Class<SNode>) ((Class) Object.class))).name("getISSVariable").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(6571046568849029848L).languageId(0xb66a309a6e1a7290L, 0xcfaa4966b7d54b69L).build2();
-  public static final SMethod<String> getVariableName_id7BxfuU7QrrQ = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("getVariableName").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(8782368843039880950L).languageId(0xb66a309a6e1a7290L, 0xcfaa4966b7d54b69L).build2();
-  public static final SMethod<SNode> getVariableType_id7BxfuU7QrsR = new SMethodBuilder<SNode>(new SJavaCompoundTypeImpl((Class<SNode>) ((Class) Object.class))).name("getVariableType").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(8782368843039881015L).languageId(0xb66a309a6e1a7290L, 0xcfaa4966b7d54b69L).build2();
-  public static final SMethod<Iterable<SNode>> getVariableConstraints_id7BxfuU7Qruw = new SMethodBuilder<Iterable<SNode>>(new SJavaCompoundTypeImpl((Class<Iterable<SNode>>) ((Class) Object.class))).name("getVariableConstraints").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(8782368843039881120L).languageId(0xb66a309a6e1a7290L, 0xcfaa4966b7d54b69L).build2();
-  public static final SMethod<Set<SNode>> getDependentValues_id1xFBUnwWaWp = new SMethodBuilder<Set<SNode>>(new SJavaCompoundTypeImpl((Class<Set<SNode>>) ((Class) Object.class))).name("getDependentValues").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(1759675614210600729L).languageId(0xb66a309a6e1a7290L, 0xcfaa4966b7d54b69L).build2();
+  public static final SMethod<String> renderReadable_id4Y0vh0cfqjE = new SMethodBuilder<>(String.class).name("renderReadable").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5728716233893586154L).languageId(0xb66a309a6e1a7290L, 0xcfaa4966b7d54b69L).build2();
+  public static final SMethod<Iterable<SNode>> getChildrenForCoverage_id5IKJrJHNCE8 = new SMethodBuilder<>((Class<Iterable<SNode>>) ((Class) Object.class)).name("getChildrenForCoverage").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(6606989268198787720L).languageId(0xa6067ce0236c8023L, 0x47f075a6558e4640L).build2();
+  public static final SMethod<EffectDescriptor> effectDescriptor_id6GySMNjjWfO = new SMethodBuilder<>(EffectDescriptor.class).name("effectDescriptor").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(7719982492929737716L).languageId(0xb66a309a6e1a7290L, 0xcfaa4966b7d54b69L).build2();
+  public static final SMethod<SNode> createSolverTask_id4pkidg67Lgb = new SMethodBuilder<>(SNode.class).name("createSolverTask").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5067755556171617291L).languageId(0x8fed954c202d18beL, 0xdb8bd0353f5141d8L).build2();
+  public static final SMethod<SNode> getISSVariable_id5GL30CqMVFo = new SMethodBuilder<>(SNode.class).name("getISSVariable").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(6571046568849029848L).languageId(0xb66a309a6e1a7290L, 0xcfaa4966b7d54b69L).build2();
+  public static final SMethod<String> getVariableName_id7BxfuU7QrrQ = new SMethodBuilder<>(String.class).name("getVariableName").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(8782368843039880950L).languageId(0xb66a309a6e1a7290L, 0xcfaa4966b7d54b69L).build2();
+  public static final SMethod<SNode> getVariableType_id7BxfuU7QrsR = new SMethodBuilder<>(SNode.class).name("getVariableType").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(8782368843039881015L).languageId(0xb66a309a6e1a7290L, 0xcfaa4966b7d54b69L).build2();
+  public static final SMethod<Iterable<SNode>> getVariableConstraints_id7BxfuU7Qruw = new SMethodBuilder<>((Class<Iterable<SNode>>) ((Class) Object.class)).name("getVariableConstraints").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(8782368843039881120L).languageId(0xb66a309a6e1a7290L, 0xcfaa4966b7d54b69L).build2();
+  public static final SMethod<Set<SNode>> getDependentValues_id1xFBUnwWaWp = new SMethodBuilder<>((Class<Set<SNode>>) ((Class) Object.class)).name("getDependentValues").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(1759675614210600729L).languageId(0xb66a309a6e1a7290L, 0xcfaa4966b7d54b69L).build2();
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(renderReadable_id4Y0vh0cfqjE, getChildrenForCoverage_id5IKJrJHNCE8, effectDescriptor_id6GySMNjjWfO, createSolverTask_id4pkidg67Lgb, getISSVariable_id5GL30CqMVFo, getVariableName_id7BxfuU7QrrQ, getVariableType_id7BxfuU7QrsR, getVariableConstraints_id7BxfuU7Qruw, getDependentValues_id1xFBUnwWaWp);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(renderReadable_id4Y0vh0cfqjE, getChildrenForCoverage_id5IKJrJHNCE8, effectDescriptor_id6GySMNjjWfO, createSolverTask_id4pkidg67Lgb, getISSVariable_id5GL30CqMVFo, getVariableName_id7BxfuU7QrrQ, getVariableType_id7BxfuU7QrsR, getVariableConstraints_id7BxfuU7Qruw, getDependentValues_id1xFBUnwWaWp);
 
-  private static void ___init___(@NotNull SNode __thisNode__) {
-  }
 
   /*package*/ static String renderReadable_id4Y0vh0cfqjE(@NotNull SNode __thisNode__) {
     return "cast<" + BaseConcept__BehaviorDescriptor.getPresentation_idhEwIMiw.invoke(SLinkOperations.getTarget(__thisNode__, LINKS.expectedType$SdFI)) + ">(" + Expression__BehaviorDescriptor.renderReadable_id4Y0vh0cfqjE.invoke(SLinkOperations.getTarget(__thisNode__, LINKS.expr$CW3E)) + ")";
@@ -76,10 +72,6 @@ public final class CastExpression__BehaviorDescriptor extends BaseBHDescriptor {
   /*package*/ CastExpression__BehaviorDescriptor() {
   }
 
-  @Override
-  protected void initNode(@NotNull SNode node, @NotNull SConstructor constructor, @Nullable Object[] parameters) {
-    ___init___(node);
-  }
 
   @Override
   protected <T> T invokeSpecial0(@NotNull SNode node, @NotNull SMethod<T> method, @Nullable Object[] parameters) {

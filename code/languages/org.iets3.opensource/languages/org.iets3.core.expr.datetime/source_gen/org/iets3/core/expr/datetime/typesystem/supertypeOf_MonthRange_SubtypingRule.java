@@ -27,9 +27,6 @@ public class supertypeOf_MonthRange_SubtypingRule extends SubtypingRule_Runtime 
   public boolean isWeak() {
     return false;
   }
-  public boolean surelyKeepsConcept() {
-    return true;
-  }
   private static SNode createDiscreteDateRangeType_qxz0gi_a0a1() {
     SNodeBuilder n0 = new SNodeBuilder().init(CONCEPTS.DiscreteDateRangeType$Ih);
     return n0.getResult();

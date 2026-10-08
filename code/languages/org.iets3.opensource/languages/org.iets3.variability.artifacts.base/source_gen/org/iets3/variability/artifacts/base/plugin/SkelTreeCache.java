@@ -12,7 +12,7 @@ import org.iets3.variability.artifacts.base.behavior.HashUtil;
  * Cache skeleton tree for a given IVAA and its IVAA group.
  * 
  * The cached skeleton tree is stored as user object at its IVAA
- * and has to be recomputed when the ASTs in the IVAA's context 
+ * and has to be recomputed when the ASTs in the IVAA's context
  * have changed.
  */
 public class SkelTreeCache {

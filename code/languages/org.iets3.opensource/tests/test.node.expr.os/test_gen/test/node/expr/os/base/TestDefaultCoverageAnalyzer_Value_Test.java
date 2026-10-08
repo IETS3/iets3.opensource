@@ -87,7 +87,7 @@ public class TestDefaultCoverageAnalyzer_Value_Test extends BaseTransformationTe
 
         Assert.assertNull(analyzer.getValue(node));
 
-        Assert.assertEquals(1, ListSequence.fromList(analyzer.getAllValues(node)).count());
+        Assert.assertEquals(Integer.valueOf(1), Integer.valueOf(ListSequence.fromList(analyzer.getAllValues(node)).count()));
         Assert.assertNull(ListSequence.fromList(analyzer.getAllValues(node)).first());
 
         Assert.assertTrue(analyzer.isNodeCoveredEx(node));
@@ -106,7 +106,7 @@ public class TestDefaultCoverageAnalyzer_Value_Test extends BaseTransformationTe
 
         Assert.assertNull(analyzer.getValue(node));
 
-        Assert.assertEquals(2, ListSequence.fromList(analyzer.getAllValues(node)).count());
+        Assert.assertEquals(Integer.valueOf(2), Integer.valueOf(ListSequence.fromList(analyzer.getAllValues(node)).count()));
         Assert.assertNull(ListSequence.fromList(analyzer.getAllValues(node)).first());
         Assert.assertNull(ListSequence.fromList(analyzer.getAllValues(node)).last());
 
@@ -123,10 +123,10 @@ public class TestDefaultCoverageAnalyzer_Value_Test extends BaseTransformationTe
         SNode node = createDefaultValueExpression_apk5dd_a0d0a0b0i11();
         analyzer.coverValue(node, 10);
 
-        Assert.assertEquals(10, analyzer.getValue(node));
+        Assert.assertEquals(Integer.valueOf(10), analyzer.getValue(node));
 
-        Assert.assertEquals(1, ListSequence.fromList(analyzer.getAllValues(node)).count());
-        Assert.assertEquals(10, ListSequence.fromList(analyzer.getAllValues(node)).first());
+        Assert.assertEquals(Integer.valueOf(1), Integer.valueOf(ListSequence.fromList(analyzer.getAllValues(node)).count()));
+        Assert.assertEquals(Integer.valueOf(10), ListSequence.fromList(analyzer.getAllValues(node)).first());
 
         Assert.assertTrue(analyzer.isNodeCoveredEx(node));
         Assert.assertTrue(Sequence.fromIterable(analyzer.getAllConceptsStatus()).any((it) -> Objects.equals(it.concept(), CONCEPTS.DefaultValueExpression$3A) && it.isComplete()));
@@ -142,11 +142,11 @@ public class TestDefaultCoverageAnalyzer_Value_Test extends BaseTransformationTe
         analyzer.coverValue(node, 10);
         analyzer.coverValue(node, 20);
 
-        Assert.assertEquals(20, analyzer.getValue(node));
+        Assert.assertEquals(Integer.valueOf(20), analyzer.getValue(node));
 
-        Assert.assertEquals(2, ListSequence.fromList(analyzer.getAllValues(node)).count());
-        Assert.assertEquals(10, ListSequence.fromList(analyzer.getAllValues(node)).first());
-        Assert.assertEquals(20, ListSequence.fromList(analyzer.getAllValues(node)).last());
+        Assert.assertEquals(Integer.valueOf(2), Integer.valueOf(ListSequence.fromList(analyzer.getAllValues(node)).count()));
+        Assert.assertEquals(Integer.valueOf(10), ListSequence.fromList(analyzer.getAllValues(node)).first());
+        Assert.assertEquals(Integer.valueOf(20), ListSequence.fromList(analyzer.getAllValues(node)).last());
 
         Assert.assertTrue(analyzer.isNodeCoveredEx(node));
         Assert.assertTrue(Sequence.fromIterable(analyzer.getAllConceptsStatus()).any((it) -> Objects.equals(it.concept(), CONCEPTS.DefaultValueExpression$3A) && it.isComplete()));
@@ -164,7 +164,7 @@ public class TestDefaultCoverageAnalyzer_Value_Test extends BaseTransformationTe
 
         Assert.assertEquals(new BigInteger("11"), analyzer.getValue(node));
 
-        Assert.assertEquals(1, ListSequence.fromList(analyzer.getAllValues(node)).count());
+        Assert.assertEquals(Integer.valueOf(1), Integer.valueOf(ListSequence.fromList(analyzer.getAllValues(node)).count()));
         Assert.assertEquals(new BigInteger("11"), ListSequence.fromList(analyzer.getAllValues(node)).first());
 
         Assert.assertTrue(analyzer.isNodeCoveredEx(node));

@@ -8,14 +8,12 @@ import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import java.awt.Color;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import java.util.List;
 import java.util.Arrays;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.mps.openapi.model.SNode;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
-import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 import org.jetbrains.mps.openapi.language.SContainmentLink;
@@ -24,12 +22,10 @@ import org.jetbrains.mps.openapi.language.SReferenceLink;
 public final class ConstraintGroupAnnotation__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getConcept(0x165f1d0525064544L, 0x895e1424f54166ecL, 0x6d20ecb3d752405cL, "org.iets3.variability.featuremodel.base.structure.ConstraintGroupAnnotation");
 
-  public static final SMethod<Color> getColor_id6OwVbfnTUjE = new SMethodBuilder<Color>(new SJavaCompoundTypeImpl(Color.class)).name("getColor").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(7863545206554469610L).languageId(0x895e1424f54166ecL, 0x165f1d0525064544L).build2();
+  public static final SMethod<Color> getColor_id6OwVbfnTUjE = new SMethodBuilder<>(Color.class).name("getColor").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(7863545206554469610L).languageId(0x895e1424f54166ecL, 0x165f1d0525064544L).build2();
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(getColor_id6OwVbfnTUjE);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(getColor_id6OwVbfnTUjE);
 
-  private static void ___init___(@NotNull SNode __thisNode__) {
-  }
 
   /*package*/ static Color getColor_id6OwVbfnTUjE(@NotNull SNode __thisNode__) {
     return (Color) ConstraintGroup__BehaviorDescriptor.getColor_id6OwVbfnk$cR.invoke(SLinkOperations.getTarget(SLinkOperations.getTarget(__thisNode__, LINKS.groupRef$eCvW), LINKS.group$BceS));
@@ -38,10 +34,6 @@ public final class ConstraintGroupAnnotation__BehaviorDescriptor extends BaseBHD
   /*package*/ ConstraintGroupAnnotation__BehaviorDescriptor() {
   }
 
-  @Override
-  protected void initNode(@NotNull SNode node, @NotNull SConstructor constructor, @Nullable Object[] parameters) {
-    ___init___(node);
-  }
 
   @Override
   protected <T> T invokeSpecial0(@NotNull SNode node, @NotNull SMethod<T> method, @Nullable Object[] parameters) {

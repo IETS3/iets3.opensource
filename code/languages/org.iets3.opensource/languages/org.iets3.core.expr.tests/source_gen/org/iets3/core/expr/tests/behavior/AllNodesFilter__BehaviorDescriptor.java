@@ -7,25 +7,21 @@ import org.jetbrains.mps.openapi.language.SAbstractConcept;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import org.jetbrains.mps.openapi.model.SNode;
 import java.util.List;
 import java.util.Arrays;
 import org.jetbrains.annotations.NotNull;
-import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 
 public final class AllNodesFilter__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getConcept(0xd441fba0f46b43cdL, 0xb723dad7b65da615L, 0x58d19d48d8b43aa5L, "org.iets3.core.expr.tests.structure.AllNodesFilter");
 
-  public static final SMethod<Boolean> appliesForNode_idCrzyxmEdQ4 = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("appliesForNode").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(728332068654210436L).languageId(0xb723dad7b65da615L, 0xd441fba0f46b43cdL).build2(SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""));
+  public static final SMethod<Boolean> appliesForNode_idCrzyxmEdQ4 = new SMethodBuilder<>(Boolean.TYPE).name("appliesForNode").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(728332068654210436L).languageId(0xb723dad7b65da615L, 0xd441fba0f46b43cdL).build2(SMethodBuilder.createJavaParameter(SNode.class, "n"));
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(appliesForNode_idCrzyxmEdQ4);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(appliesForNode_idCrzyxmEdQ4);
 
-  private static void ___init___(@NotNull SNode __thisNode__) {
-  }
 
   /*package*/ static boolean appliesForNode_idCrzyxmEdQ4(@NotNull SNode __thisNode__, SNode n) {
     return true;
@@ -34,10 +30,6 @@ public final class AllNodesFilter__BehaviorDescriptor extends BaseBHDescriptor {
   /*package*/ AllNodesFilter__BehaviorDescriptor() {
   }
 
-  @Override
-  protected void initNode(@NotNull SNode node, @NotNull SConstructor constructor, @Nullable Object[] parameters) {
-    ___init___(node);
-  }
 
   @Override
   protected <T> T invokeSpecial0(@NotNull SNode node, @NotNull SMethod<T> method, @Nullable Object[] parameters) {

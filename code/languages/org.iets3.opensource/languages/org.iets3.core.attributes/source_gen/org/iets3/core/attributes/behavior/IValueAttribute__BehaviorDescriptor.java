@@ -8,7 +8,6 @@ import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import org.jetbrains.mps.openapi.model.SNode;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import java.util.List;
 import java.util.Arrays;
@@ -16,7 +15,6 @@ import org.jetbrains.annotations.NotNull;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
 import jetbrains.mps.lang.core.behavior.BaseConcept__BehaviorDescriptor;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
-import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 import org.jetbrains.mps.openapi.language.SContainmentLink;
@@ -24,13 +22,11 @@ import org.jetbrains.mps.openapi.language.SContainmentLink;
 public final class IValueAttribute__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getInterfaceConcept(0x583939beded04735L, 0xa055a74f8477fc34L, 0x1b5a6519ee876afdL, "org.iets3.core.attributes.structure.IValueAttribute");
 
-  public static final SMethod<SNode> getEffectiveValue_id1HqphBICm56 = new SMethodBuilder<SNode>(new SJavaCompoundTypeImpl((Class<SNode>) ((Class) Object.class))).name("getEffectiveValue").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(1970998948980154694L).languageId(0xa055a74f8477fc34L, 0x583939beded04735L).build2();
-  public static final SMethod<String> qualifiedPresentation_id1HqphBJ7KGf = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("qualifiedPresentation").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(1970998948988390159L).languageId(0xa055a74f8477fc34L, 0x583939beded04735L).build2();
+  public static final SMethod<SNode> getEffectiveValue_id1HqphBICm56 = new SMethodBuilder<>(SNode.class).name("getEffectiveValue").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(1970998948980154694L).languageId(0xa055a74f8477fc34L, 0x583939beded04735L).build2();
+  public static final SMethod<String> qualifiedPresentation_id1HqphBJ7KGf = new SMethodBuilder<>(String.class).name("qualifiedPresentation").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(1970998948988390159L).languageId(0xa055a74f8477fc34L, 0x583939beded04735L).build2();
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(getEffectiveValue_id1HqphBICm56, qualifiedPresentation_id1HqphBJ7KGf);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(getEffectiveValue_id1HqphBICm56, qualifiedPresentation_id1HqphBJ7KGf);
 
-  private static void ___init___(@NotNull SNode __thisNode__) {
-  }
 
   /*package*/ static SNode getEffectiveValue_id1HqphBICm56(@NotNull SNode __thisNode__) {
     return SLinkOperations.getTarget(__thisNode__, LINKS.value$GE3X);
@@ -42,10 +38,6 @@ public final class IValueAttribute__BehaviorDescriptor extends BaseBHDescriptor 
   /*package*/ IValueAttribute__BehaviorDescriptor() {
   }
 
-  @Override
-  protected void initNode(@NotNull SNode node, @NotNull SConstructor constructor, @Nullable Object[] parameters) {
-    ___init___(node);
-  }
 
   @Override
   protected <T> T invokeSpecial0(@NotNull SNode node, @NotNull SMethod<T> method, @Nullable Object[] parameters) {

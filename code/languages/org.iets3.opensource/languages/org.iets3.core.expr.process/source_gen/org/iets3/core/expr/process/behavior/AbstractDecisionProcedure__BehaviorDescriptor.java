@@ -7,7 +7,6 @@ import org.jetbrains.mps.openapi.language.SAbstractConcept;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import java.util.List;
 import org.pcollections.PSet;
@@ -16,28 +15,21 @@ import com.mbeddr.mpsutil.interpreter.rt.ComputationTrace;
 import java.util.Arrays;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.mps.openapi.model.SNode;
-import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 
 public final class AbstractDecisionProcedure__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getConcept(0x50b470e714ad46c3L, 0xb5404586f56d2e9cL, 0x30d6adb796c98f3fL, "org.iets3.core.expr.process.structure.AbstractDecisionProcedure");
 
-  public static final SMethod<Boolean> isDecided_id1mDdTFSeTs = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("isDecided").modifiers(12, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(24388123196714588L).languageId(0xb5404586f56d2e9cL, 0x50b470e714ad46c3L).build2(SMethodBuilder.createJavaParameter((Class<List<Object>>) ((Class) Object.class), ""), SMethodBuilder.createJavaParameter(PSet.class, ""), SMethodBuilder.createJavaParameter(IETS3ExprContext.class, ""), SMethodBuilder.createJavaParameter(ComputationTrace.class, ""));
+  public static final SMethod<Boolean> isDecided_id1mDdTFSeTs = new SMethodBuilder<>(Boolean.TYPE).name("isDecided").modifiers(12, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(24388123196714588L).languageId(0xb5404586f56d2e9cL, 0x50b470e714ad46c3L).build2(SMethodBuilder.createJavaParameter((Class<List<Object>>) ((Class) Object.class), "parties"), SMethodBuilder.createJavaParameter(PSet.class, "whoVoted"), SMethodBuilder.createJavaParameter(IETS3ExprContext.class, "ctx"), SMethodBuilder.createJavaParameter(ComputationTrace.class, "trace"));
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(isDecided_id1mDdTFSeTs);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(isDecided_id1mDdTFSeTs);
 
-  private static void ___init___(@NotNull SNode __thisNode__) {
-  }
 
 
   /*package*/ AbstractDecisionProcedure__BehaviorDescriptor() {
   }
 
-  @Override
-  protected void initNode(@NotNull SNode node, @NotNull SConstructor constructor, @Nullable Object[] parameters) {
-    ___init___(node);
-  }
 
   @Override
   protected <T> T invokeSpecial0(@NotNull SNode node, @NotNull SMethod<T> method, @Nullable Object[] parameters) {

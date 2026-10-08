@@ -13,7 +13,7 @@ import org.jetbrains.mps.openapi.language.SConcept;
 import org.jetbrains.mps.openapi.language.SReferenceLink;
 
 /**
- * The intended use of this class is to play the role of dummy 
+ * The intended use of this class is to play the role of dummy
  * For any 'ISolvable' which does not define another implementation of 'SolverTaskFactory' (with a real intention of some action)
  * 'SolverNotRunTaskFactory' is a substitute Null-Object
  */

@@ -27,9 +27,6 @@ public class supertypeOf_IntegerType_SubtypingRule extends SubtypingRule_Runtime
   public boolean isWeak() {
     return false;
   }
-  public boolean surelyKeepsConcept() {
-    return true;
-  }
   private static SNode createRealType_xgr3f0_a0a1() {
     SNodeBuilder n0 = new SNodeBuilder().init(CONCEPTS.RealType$36);
     return n0.getResult();

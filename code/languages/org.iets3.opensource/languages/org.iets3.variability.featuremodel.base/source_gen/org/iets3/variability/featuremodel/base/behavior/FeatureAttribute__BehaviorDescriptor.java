@@ -7,7 +7,6 @@ import org.jetbrains.mps.openapi.language.SAbstractConcept;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import org.jetbrains.mps.openapi.model.SNode;
 import java.util.Optional;
@@ -19,7 +18,6 @@ import jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
 import org.iets3.core.expr.base.behavior.ISSDelegatingType__BehaviorDescriptor;
-import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 import org.jetbrains.mps.openapi.language.SProperty;
@@ -29,15 +27,13 @@ import org.jetbrains.mps.openapi.language.SConcept;
 public final class FeatureAttribute__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getConcept(0x165f1d0525064544L, 0x895e1424f54166ecL, 0x7cde27c7fd65e207L, "org.iets3.variability.featuremodel.base.structure.FeatureAttribute");
 
-  public static final SMethod<String> solverName_id3rysoRx5$0U = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("solverName").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(3954848276965376058L).languageId(0x895e1424f54166ecL, 0x165f1d0525064544L).build2(SMethodBuilder.createJavaParameter(String.class, ""));
-  public static final SMethod<SNode> effectiveType_id3rysoRwbqUB = new SMethodBuilder<SNode>(new SJavaCompoundTypeImpl((Class<SNode>) ((Class) Object.class))).name("effectiveType").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(3954848276950134439L).languageId(0x895e1424f54166ecL, 0x165f1d0525064544L).build2();
-  public static final SMethod<SNode> defaultValue_id3rysoRwsNOP = new SMethodBuilder<SNode>(new SJavaCompoundTypeImpl((Class<SNode>) ((Class) Object.class))).name("defaultValue").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(3954848276954692917L).languageId(0x895e1424f54166ecL, 0x165f1d0525064544L).build2();
-  public static final SMethod<Optional<SNode>> notPresentValueForSolver_idRJ4G$UUrsi = new SMethodBuilder<Optional<SNode>>(new SJavaCompoundTypeImpl(Optional.class)).name("notPresentValueForSolver").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(1004041897413031698L).languageId(0x895e1424f54166ecL, 0x165f1d0525064544L).build2();
+  public static final SMethod<String> solverName_id3rysoRx5$0U = new SMethodBuilder<>(String.class).name("solverName").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(3954848276965376058L).languageId(0x895e1424f54166ecL, 0x165f1d0525064544L).build2(SMethodBuilder.createJavaParameter(String.class, "ctx"));
+  public static final SMethod<SNode> effectiveType_id3rysoRwbqUB = new SMethodBuilder<>(SNode.class).name("effectiveType").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(3954848276950134439L).languageId(0x895e1424f54166ecL, 0x165f1d0525064544L).build2();
+  public static final SMethod<SNode> defaultValue_id3rysoRwsNOP = new SMethodBuilder<>(SNode.class).name("defaultValue").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(3954848276954692917L).languageId(0x895e1424f54166ecL, 0x165f1d0525064544L).build2();
+  public static final SMethod<Optional<SNode>> notPresentValueForSolver_idRJ4G$UUrsi = new SMethodBuilder<>((Class<Optional<SNode>>) ((Class) Object.class)).name("notPresentValueForSolver").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(1004041897413031698L).languageId(0x895e1424f54166ecL, 0x165f1d0525064544L).build2();
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(solverName_id3rysoRx5$0U, effectiveType_id3rysoRwbqUB, defaultValue_id3rysoRwsNOP, notPresentValueForSolver_idRJ4G$UUrsi);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(solverName_id3rysoRx5$0U, effectiveType_id3rysoRwbqUB, defaultValue_id3rysoRwsNOP, notPresentValueForSolver_idRJ4G$UUrsi);
 
-  private static void ___init___(@NotNull SNode __thisNode__) {
-  }
 
   /*package*/ static String solverName_id3rysoRx5$0U(@NotNull SNode __thisNode__, String ctx) {
     return ctx + GeneratorDefinitions.ATTRIBUTE_DELIMITER + SPropertyOperations.getString(__thisNode__, PROPS.name$MnvL);
@@ -61,10 +57,6 @@ public final class FeatureAttribute__BehaviorDescriptor extends BaseBHDescriptor
   /*package*/ FeatureAttribute__BehaviorDescriptor() {
   }
 
-  @Override
-  protected void initNode(@NotNull SNode node, @NotNull SConstructor constructor, @Nullable Object[] parameters) {
-    ___init___(node);
-  }
 
   @Override
   protected <T> T invokeSpecial0(@NotNull SNode node, @NotNull SMethod<T> method, @Nullable Object[] parameters) {

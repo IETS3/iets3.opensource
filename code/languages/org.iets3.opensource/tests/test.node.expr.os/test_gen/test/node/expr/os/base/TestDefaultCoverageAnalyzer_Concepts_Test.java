@@ -104,8 +104,8 @@ public class TestDefaultCoverageAnalyzer_Concepts_Test extends BaseTransformatio
 
         int allConceptsCount = ListSequence.fromList(ListSequence.fromListAndArray(new ArrayList<SLanguage>(), MetaAdapterFactory.getLanguage(0xcfaa4966b7d54b69L, 0xb66a309a6e1a7290L, "org.iets3.core.expr.base"), MetaAdapterFactory.getLanguage(0x2f7e2e356e744c43L, 0x9fa52465d68f5996L, "org.iets3.core.expr.collections"))).translate((it) -> it.getConcepts()).where((it) -> !(it.isAbstract())).count();
 
-        Assert.assertEquals(allConceptsCount, ListSequence.fromList(analyzer.getAllConcepts()).count());
-        Assert.assertEquals(allConceptsCount, Sequence.fromIterable(analyzer.getAllConceptsStatus()).count());
+        Assert.assertEquals(Integer.valueOf(allConceptsCount), Integer.valueOf(ListSequence.fromList(analyzer.getAllConcepts()).count()));
+        Assert.assertEquals(Integer.valueOf(allConceptsCount), Integer.valueOf(Sequence.fromIterable(analyzer.getAllConceptsStatus()).count()));
 
         for (IDefaultCoverageAnalyzer.IConceptData c : Sequence.fromIterable(analyzer.getAllConceptsStatus())) {
           Assert.assertEquals(IDefaultCoverageAnalyzer.MISSING, c.status());
@@ -125,8 +125,8 @@ public class TestDefaultCoverageAnalyzer_Concepts_Test extends BaseTransformatio
 
         int allConceptsCount = ListSequence.fromList(ListSequence.fromListAndArray(new ArrayList<SLanguage>(), MetaAdapterFactory.getLanguage(0xcfaa4966b7d54b69L, 0xb66a309a6e1a7290L, "org.iets3.core.expr.base"), MetaAdapterFactory.getLanguage(0x2f7e2e356e744c43L, 0x9fa52465d68f5996L, "org.iets3.core.expr.collections"))).translate((it) -> it.getConcepts()).where((it) -> !(it.isAbstract())).count();
 
-        Assert.assertEquals(allConceptsCount, ListSequence.fromList(IDefaultCoverageAnalyzer.allConcepts()).count());
-        Assert.assertEquals(allConceptsCount, Sequence.fromIterable(IDefaultCoverageAnalyzer.allConceptsStatus()).count());
+        Assert.assertEquals(Integer.valueOf(allConceptsCount), Integer.valueOf(ListSequence.fromList(IDefaultCoverageAnalyzer.allConcepts()).count()));
+        Assert.assertEquals(Integer.valueOf(allConceptsCount), Integer.valueOf(Sequence.fromIterable(IDefaultCoverageAnalyzer.allConceptsStatus()).count()));
 
         for (IDefaultCoverageAnalyzer.IConceptData c : Sequence.fromIterable(IDefaultCoverageAnalyzer.allConceptsStatus())) {
           Assert.assertEquals(IDefaultCoverageAnalyzer.MISSING, c.status());
@@ -158,7 +158,7 @@ public class TestDefaultCoverageAnalyzer_Concepts_Test extends BaseTransformatio
         IDefaultCoverageAnalyzer.IConceptData empty = Sequence.fromIterable(analyzer.getAllConceptsStatus()).findFirst((it) -> Objects.equals(it.concept(), CONCEPTS.DefaultValueExpression$3A));
 
         Assert.assertEquals("Partial. Missing: [aaa]", empty.status());
-        Assert.assertEquals(1, Sequence.fromIterable(empty.unvisitedBranches()).count());
+        Assert.assertEquals(Integer.valueOf(1), Integer.valueOf(Sequence.fromIterable(empty.unvisitedBranches()).count()));
         Assert.assertEquals("aaa", Sequence.fromIterable(empty.unvisitedBranches()).first());
       });
     }
@@ -190,7 +190,7 @@ public class TestDefaultCoverageAnalyzer_Concepts_Test extends BaseTransformatio
         analyzer.visitedConceptBranch(CONCEPTS.DefaultValueExpression$3A, "bbb");
 
         Assert.assertEquals("Partial. Missing: [aaa]", empty.status());
-        Assert.assertEquals(1, Sequence.fromIterable(empty.unvisitedBranches()).count());
+        Assert.assertEquals(Integer.valueOf(1), Integer.valueOf(Sequence.fromIterable(empty.unvisitedBranches()).count()));
         Assert.assertEquals("aaa", Sequence.fromIterable(empty.unvisitedBranches()).first());
       });
     }
@@ -203,7 +203,7 @@ public class TestDefaultCoverageAnalyzer_Concepts_Test extends BaseTransformatio
         analyzer.registerBranches(CONCEPTS.PlusExpression$mx, new String[]{"aaa"});
         analyzer.visitedConceptBranch(CONCEPTS.DefaultValueExpression$3A, "aaa");
 
-        Assert.assertEquals(ListSequence.fromList(analyzer.getAllConcepts()).count() - 1, Sequence.fromIterable(analyzer.getMissingConceptsOrIncomplete()).count());
+        Assert.assertEquals(Integer.valueOf(ListSequence.fromList(analyzer.getAllConcepts()).count() - 1), Integer.valueOf(Sequence.fromIterable(analyzer.getMissingConceptsOrIncomplete()).count()));
       });
     }
     public void test_missingConceptsOrIncomplete() throws Exception {
@@ -215,7 +215,7 @@ public class TestDefaultCoverageAnalyzer_Concepts_Test extends BaseTransformatio
         IDefaultCoverageAnalyzer.getInstance().registerBranches(CONCEPTS.PlusExpression$mx, new String[]{"aaa"});
         IDefaultCoverageAnalyzer.getInstance().visitedConceptBranch(CONCEPTS.DefaultValueExpression$3A, "aaa");
 
-        Assert.assertEquals(ListSequence.fromList(IDefaultCoverageAnalyzer.allConcepts()).count() - 1, Sequence.fromIterable(IDefaultCoverageAnalyzer.missingConceptsOrIncomplete()).count());
+        Assert.assertEquals(Integer.valueOf(ListSequence.fromList(IDefaultCoverageAnalyzer.allConcepts()).count() - 1), Integer.valueOf(Sequence.fromIterable(IDefaultCoverageAnalyzer.missingConceptsOrIncomplete()).count()));
       });
     }
     public void test_ratioEx_empty() throws Exception {
@@ -225,7 +225,7 @@ public class TestDefaultCoverageAnalyzer_Concepts_Test extends BaseTransformatio
 
         int ratio = analyzer.ratioEx();
 
-        Assert.assertEquals(100, ratio);
+        Assert.assertEquals(Integer.valueOf(100), Integer.valueOf(ratio));
       });
     }
     public void test_ratioEx_oneCovered() throws Exception {
@@ -238,7 +238,7 @@ public class TestDefaultCoverageAnalyzer_Concepts_Test extends BaseTransformatio
 
         int ratio = analyzer.ratioEx();
 
-        Assert.assertEquals(2, ratio);
+        Assert.assertEquals(Integer.valueOf(2), Integer.valueOf(ratio));
       });
     }
     public void test_ratioEx_allCovered() throws Exception {
@@ -253,7 +253,7 @@ public class TestDefaultCoverageAnalyzer_Concepts_Test extends BaseTransformatio
 
         int ratio = analyzer.ratioEx();
 
-        Assert.assertEquals(100, ratio);
+        Assert.assertEquals(Integer.valueOf(100), Integer.valueOf(ratio));
       });
     }
     public void test_ratio() throws Exception {
@@ -266,7 +266,7 @@ public class TestDefaultCoverageAnalyzer_Concepts_Test extends BaseTransformatio
 
         int ratio = IDefaultCoverageAnalyzer.ratio();
 
-        Assert.assertEquals(2, ratio);
+        Assert.assertEquals(Integer.valueOf(2), Integer.valueOf(ratio));
       });
     }
 

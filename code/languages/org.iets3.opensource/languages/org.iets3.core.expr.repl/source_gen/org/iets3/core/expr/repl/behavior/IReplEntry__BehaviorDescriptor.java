@@ -7,7 +7,6 @@ import org.jetbrains.mps.openapi.language.SAbstractConcept;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import org.jetbrains.mps.openapi.model.SNode;
 import java.util.List;
@@ -18,7 +17,6 @@ import jetbrains.mps.internal.collections.runtime.ListSequence;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
 import jetbrains.mps.baseLanguage.closures.runtime._FunctionTypes;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
-import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 import org.jetbrains.mps.openapi.language.SConcept;
@@ -27,15 +25,13 @@ import org.jetbrains.mps.openapi.language.SReferenceLink;
 public final class IReplEntry__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getInterfaceConcept(0x18001c9433a74f68L, 0xa7c1ffddc4b39be1L, 0x1137be0341408231L, "org.iets3.core.expr.repl.structure.IReplEntry");
 
-  public static final SMethod<Boolean> isReferenceable_id2QxWJFK_S9T = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("isReferenceable").modifiers(12, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(3288176362549379705L).languageId(0xa7c1ffddc4b39be1L, 0x18001c9433a74f68L).build2();
-  public static final SMethod<ReplResult> evaluateEntry_id4nY0kF8p1AF = new SMethodBuilder<ReplResult>(new SJavaCompoundTypeImpl(ReplResult.class)).name("evaluateEntry").modifiers(12, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5043470053402745259L).languageId(0xa7c1ffddc4b39be1L, 0x18001c9433a74f68L).build2();
-  public static final SMethod<Void> evaluateEntryWithDownstreamUpdates_id4nY0kF8seDJ = new SMethodBuilder<Void>(new SJavaCompoundTypeImpl(Void.class)).name("evaluateEntryWithDownstreamUpdates").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5043470053403585135L).languageId(0xa7c1ffddc4b39be1L, 0x18001c9433a74f68L).build2();
-  public static final SMethod<Iterable<SNode>> findDependentEntries_id4nY0kF8owDc = new SMethodBuilder<Iterable<SNode>>(new SJavaCompoundTypeImpl((Class<Iterable<SNode>>) ((Class) Object.class))).name("findDependentEntries").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5043470053402610252L).languageId(0xa7c1ffddc4b39be1L, 0x18001c9433a74f68L).build2();
+  public static final SMethod<Boolean> isReferenceable_id2QxWJFK_S9T = new SMethodBuilder<>(Boolean.TYPE).name("isReferenceable").modifiers(12, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(3288176362549379705L).languageId(0xa7c1ffddc4b39be1L, 0x18001c9433a74f68L).build2();
+  public static final SMethod<ReplResult> evaluateEntry_id4nY0kF8p1AF = new SMethodBuilder<>(ReplResult.class).name("evaluateEntry").modifiers(12, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5043470053402745259L).languageId(0xa7c1ffddc4b39be1L, 0x18001c9433a74f68L).build2();
+  public static final SMethod<Void> evaluateEntryWithDownstreamUpdates_id4nY0kF8seDJ = new SMethodBuilder<>(Void.TYPE).name("evaluateEntryWithDownstreamUpdates").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5043470053403585135L).languageId(0xa7c1ffddc4b39be1L, 0x18001c9433a74f68L).build2();
+  public static final SMethod<Iterable<SNode>> findDependentEntries_id4nY0kF8owDc = new SMethodBuilder<>((Class<Iterable<SNode>>) ((Class) Object.class)).name("findDependentEntries").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5043470053402610252L).languageId(0xa7c1ffddc4b39be1L, 0x18001c9433a74f68L).build2();
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(isReferenceable_id2QxWJFK_S9T, evaluateEntry_id4nY0kF8p1AF, evaluateEntryWithDownstreamUpdates_id4nY0kF8seDJ, findDependentEntries_id4nY0kF8owDc);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(isReferenceable_id2QxWJFK_S9T, evaluateEntry_id4nY0kF8p1AF, evaluateEntryWithDownstreamUpdates_id4nY0kF8seDJ, findDependentEntries_id4nY0kF8owDc);
 
-  private static void ___init___(@NotNull SNode __thisNode__) {
-  }
 
   /*package*/ static void evaluateEntryWithDownstreamUpdates_id4nY0kF8seDJ(@NotNull SNode __thisNode__) {
     IReplEntry__BehaviorDescriptor.evaluateEntry_id4nY0kF8p1AF.invoke(__thisNode__);
@@ -61,10 +57,6 @@ public final class IReplEntry__BehaviorDescriptor extends BaseBHDescriptor {
   /*package*/ IReplEntry__BehaviorDescriptor() {
   }
 
-  @Override
-  protected void initNode(@NotNull SNode node, @NotNull SConstructor constructor, @Nullable Object[] parameters) {
-    ___init___(node);
-  }
 
   @Override
   protected <T> T invokeSpecial0(@NotNull SNode node, @NotNull SMethod<T> method, @Nullable Object[] parameters) {

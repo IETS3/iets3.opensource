@@ -20,7 +20,7 @@ public class EnumerationDescriptor_SomeOrNoneOrColl extends EnumerationDescripto
   private final EnumerationDescriptor.MemberDescriptor myMember_coll_0 = new EnumerationDescriptor.MemberDescriptor("coll", "coll", 0x350dae2c7e460cb1L, "r:ba7faab6-2b80-43d5-8b95-0c440665312c(org.iets3.core.expr.tests.structure)/1293474851211742465");
 
   private final EnumerationLiteralsIndex myIndex = EnumerationLiteralsIndex.build(0xd441fba0f46b43cdL, 0xb723dad7b65da615L, 0x350dae2c7e460c9bL, 0x350dae2c7e460c9cL, 0x350dae2c7e460cacL, 0x350dae2c7e460cb1L);
-  private final List<EnumerationDescriptor.MemberDescriptor> myMembers = new EnumerationDescriptorBase.MembersList(myIndex, myMember_some_0, myMember_none_0, myMember_coll_0);
+  private final List<EnumerationDescriptor.MemberDescriptor> myMembers = new EnumerationDescriptorBase.MembersList0(myIndex, myMember_some_0, myMember_none_0, myMember_coll_0);
 
   @Nullable
   @Override

@@ -8,7 +8,6 @@ import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import org.jetbrains.mps.openapi.model.SNode;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import java.util.List;
 import java.util.Arrays;
@@ -22,7 +21,6 @@ import jetbrains.mps.internal.collections.runtime.Sequence;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
 import jetbrains.mps.baseLanguage.closures.runtime._FunctionTypes;
 import java.util.Objects;
-import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 import org.jetbrains.mps.openapi.language.SReferenceLink;
@@ -33,18 +31,16 @@ import org.jetbrains.mps.openapi.language.SConcept;
 public final class FeatureModelInclude__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getConcept(0x165f1d0525064544L, 0x895e1424f54166ecL, 0x375cadc475172168L, "org.iets3.variability.featuremodel.base.structure.FeatureModelInclude");
 
-  public static final SMethod<Iterable<SNode>> visibleDescendantFeatures_id7Nu9WvXxM0g = new SMethodBuilder<Iterable<SNode>>(new SJavaCompoundTypeImpl((Class<Iterable<SNode>>) ((Class) Object.class))).name("visibleDescendantFeatures").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(8997672845438296080L).languageId(0x895e1424f54166ecL, 0x165f1d0525064544L).build2(SMethodBuilder.createJavaParameter(Boolean.TYPE, ""));
-  public static final SMethod<String> solverTaskVarNameInternal_id5zIygk2WKgl = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("solverTaskVarName").modifiers(8, AccessPrivileges.PROTECTED).concept(CONCEPT).baseMethodId(6408209974412117013L).languageId(0x895e1424f54166ecL, 0x165f1d0525064544L).build2(SMethodBuilder.createJavaParameter(String.class, ""));
-  public static final SMethod<SNode> effectiveFeature_id6GZHy352t67 = new SMethodBuilder<SNode>(new SJavaCompoundTypeImpl((Class<SNode>) ((Class) Object.class))).name("effectiveFeature").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(7728095737452024199L).languageId(0x895e1424f54166ecL, 0x165f1d0525064544L).build2();
-  public static final SMethod<Iterable<SNode>> allConstraints_id6GZHy357BWk = new SMethodBuilder<Iterable<SNode>>(new SJavaCompoundTypeImpl((Class<Iterable<SNode>>) ((Class) Object.class))).name("allConstraints").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(7728095737453379348L).languageId(0x895e1424f54166ecL, 0x165f1d0525064544L).build2();
-  public static final SMethod<Iterable<SNode>> featureModelConstraintsLocal_id29xi2qnXyJ = new SMethodBuilder<Iterable<SNode>>(new SJavaCompoundTypeImpl((Class<Iterable<SNode>>) ((Class) Object.class))).name("featureModelConstraintsLocal").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(38708446884780207L).languageId(0x895e1424f54166ecL, 0x165f1d0525064544L).build2();
-  public static final SMethod<SNode> getActualParam_id2Kcps_lX6rb = new SMethodBuilder<SNode>(new SJavaCompoundTypeImpl((Class<SNode>) ((Class) Object.class))).name("getActualParam").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(3174023752794269387L).languageId(0x895e1424f54166ecL, 0x165f1d0525064544L).build2(SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""));
-  public static final SMethod<SNode> docForTooltip_id2PSWwRwDeKz = new SMethodBuilder<SNode>(new SJavaCompoundTypeImpl((Class<SNode>) ((Class) Object.class))).name("docForTooltip").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(3276634870329437219L).languageId(0x895e1424f54166ecL, 0x165f1d0525064544L).build2();
+  public static final SMethod<Iterable<SNode>> visibleDescendantFeatures_id7Nu9WvXxM0g = new SMethodBuilder<>((Class<Iterable<SNode>>) ((Class) Object.class)).name("visibleDescendantFeatures").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(8997672845438296080L).languageId(0x895e1424f54166ecL, 0x165f1d0525064544L).build2(SMethodBuilder.createJavaParameter(Boolean.TYPE, "includeSelf"));
+  public static final SMethod<String> solverTaskVarNameInternal_id5zIygk2WKgl = new SMethodBuilder<>(String.class).name("solverTaskVarName").modifiers(8, AccessPrivileges.PROTECTED).concept(CONCEPT).baseMethodId(6408209974412117013L).languageId(0x895e1424f54166ecL, 0x165f1d0525064544L).build2(SMethodBuilder.createJavaParameter(String.class, "context"));
+  public static final SMethod<SNode> effectiveFeature_id6GZHy352t67 = new SMethodBuilder<>(SNode.class).name("effectiveFeature").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(7728095737452024199L).languageId(0x895e1424f54166ecL, 0x165f1d0525064544L).build2();
+  public static final SMethod<Iterable<SNode>> allConstraints_id6GZHy357BWk = new SMethodBuilder<>((Class<Iterable<SNode>>) ((Class) Object.class)).name("allConstraints").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(7728095737453379348L).languageId(0x895e1424f54166ecL, 0x165f1d0525064544L).build2();
+  public static final SMethod<Iterable<SNode>> featureModelConstraintsLocal_id29xi2qnXyJ = new SMethodBuilder<>((Class<Iterable<SNode>>) ((Class) Object.class)).name("featureModelConstraintsLocal").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(38708446884780207L).languageId(0x895e1424f54166ecL, 0x165f1d0525064544L).build2();
+  public static final SMethod<SNode> getActualParam_id2Kcps_lX6rb = new SMethodBuilder<>(SNode.class).name("getActualParam").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(3174023752794269387L).languageId(0x895e1424f54166ecL, 0x165f1d0525064544L).build2(SMethodBuilder.createJavaParameter(SNode.class, "param"));
+  public static final SMethod<SNode> docForTooltip_id2PSWwRwDeKz = new SMethodBuilder<>(SNode.class).name("docForTooltip").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(3276634870329437219L).languageId(0x895e1424f54166ecL, 0x165f1d0525064544L).build2();
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(visibleDescendantFeatures_id7Nu9WvXxM0g, solverTaskVarNameInternal_id5zIygk2WKgl, effectiveFeature_id6GZHy352t67, allConstraints_id6GZHy357BWk, featureModelConstraintsLocal_id29xi2qnXyJ, getActualParam_id2Kcps_lX6rb, docForTooltip_id2PSWwRwDeKz);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(visibleDescendantFeatures_id7Nu9WvXxM0g, solverTaskVarNameInternal_id5zIygk2WKgl, effectiveFeature_id6GZHy352t67, allConstraints_id6GZHy357BWk, featureModelConstraintsLocal_id29xi2qnXyJ, getActualParam_id2Kcps_lX6rb, docForTooltip_id2PSWwRwDeKz);
 
-  private static void ___init___(@NotNull SNode __thisNode__) {
-  }
 
   /*package*/ static Iterable<SNode> visibleDescendantFeatures_id7Nu9WvXxM0g(@NotNull SNode __thisNode__, boolean includeSelf) {
     return FeatureModelTraversal.findAllDirectlyReferenzableSubFeatures(__thisNode__, includeSelf);
@@ -98,10 +94,6 @@ public final class FeatureModelInclude__BehaviorDescriptor extends BaseBHDescrip
   /*package*/ FeatureModelInclude__BehaviorDescriptor() {
   }
 
-  @Override
-  protected void initNode(@NotNull SNode node, @NotNull SConstructor constructor, @Nullable Object[] parameters) {
-    ___init___(node);
-  }
 
   @Override
   protected <T> T invokeSpecial0(@NotNull SNode node, @NotNull SMethod<T> method, @Nullable Object[] parameters) {

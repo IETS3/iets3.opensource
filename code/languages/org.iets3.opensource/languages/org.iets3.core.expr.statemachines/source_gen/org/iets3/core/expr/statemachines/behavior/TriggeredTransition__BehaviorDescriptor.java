@@ -7,7 +7,6 @@ import org.jetbrains.mps.openapi.language.SAbstractConcept;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import java.util.List;
 import java.util.Arrays;
@@ -17,7 +16,6 @@ import jetbrains.mps.internal.collections.runtime.Sequence;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
 import org.iets3.core.expr.mutable.behavior.IInterceptor__BehaviorDescriptor;
-import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 import org.jetbrains.mps.openapi.language.SInterfaceConcept;
@@ -26,12 +24,10 @@ import org.jetbrains.mps.openapi.language.SContainmentLink;
 public final class TriggeredTransition__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getConcept(0xcd87ddab6434448eL, 0xa0111e1c898de18eL, 0x7939418a3e285cddL, "org.iets3.core.expr.statemachines.structure.TriggeredTransition");
 
-  public static final SMethod<Iterable<SAbstractConcept>> guaranteesContextArguments_id4IV0h47G1Zf = new SMethodBuilder<Iterable<SAbstractConcept>>(new SJavaCompoundTypeImpl((Class<Iterable<SAbstractConcept>>) ((Class) Object.class))).name("guaranteesContextArguments").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5456956546144542671L).languageId(0x9c3b0b4469830440L, 0xfbba51185fc649ffL).build2();
+  public static final SMethod<Iterable<SAbstractConcept>> guaranteesContextArguments_id4IV0h47G1Zf = new SMethodBuilder<>((Class<Iterable<SAbstractConcept>>) ((Class) Object.class)).name("guaranteesContextArguments").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5456956546144542671L).languageId(0x9c3b0b4469830440L, 0xfbba51185fc649ffL).build2();
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(guaranteesContextArguments_id4IV0h47G1Zf);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(guaranteesContextArguments_id4IV0h47G1Zf);
 
-  private static void ___init___(@NotNull SNode __thisNode__) {
-  }
 
   /*package*/ static Iterable<SAbstractConcept> guaranteesContextArguments_id4IV0h47G1Zf(@NotNull SNode __thisNode__) {
     return Sequence.fromIterable(SLinkOperations.collectMany(SNodeOperations.getNodeAncestors(__thisNode__, CONCEPTS.IInterceptorContainer$D2, false), LINKS.interceptors$BQ9K)).translate((it) -> (Iterable<SAbstractConcept>) IInterceptor__BehaviorDescriptor.guaranteesContextArguments_id4IV0h47FYNX.invoke(it)).distinct();
@@ -40,10 +36,6 @@ public final class TriggeredTransition__BehaviorDescriptor extends BaseBHDescrip
   /*package*/ TriggeredTransition__BehaviorDescriptor() {
   }
 
-  @Override
-  protected void initNode(@NotNull SNode node, @NotNull SConstructor constructor, @Nullable Object[] parameters) {
-    ___init___(node);
-  }
 
   @Override
   protected <T> T invokeSpecial0(@NotNull SNode node, @NotNull SMethod<T> method, @Nullable Object[] parameters) {

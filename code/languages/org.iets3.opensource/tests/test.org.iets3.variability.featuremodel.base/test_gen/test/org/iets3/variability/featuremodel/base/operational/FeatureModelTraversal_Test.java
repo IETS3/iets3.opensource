@@ -74,7 +74,7 @@ public class FeatureModelTraversal_Test extends BaseTransformationTest {
           }
         });
 
-        Assert.assertEquals(2, ListSequence.fromList(paths).count());
+        Assert.assertEquals(Integer.valueOf(2), Integer.valueOf(ListSequence.fromList(paths).count()));
         List<List<SNode>> prunedPaths = FeatureModelTraversal.prunePaths(paths, getAnnotatedNode("targetA"));
 
         assert ListSequence.fromList(prunedPaths).contains(Arrays.asList(getAnnotatedNode("m1"), getAnnotatedNode("targetA")));
@@ -90,7 +90,7 @@ public class FeatureModelTraversal_Test extends BaseTransformationTest {
           }
         });
 
-        Assert.assertEquals(3, ListSequence.fromList(paths).count());
+        Assert.assertEquals(Integer.valueOf(3), Integer.valueOf(ListSequence.fromList(paths).count()));
         for (List<SNode> p : ListSequence.fromList(paths)) {
           Assert.assertEquals(getAnnotatedNode("source"), SNodeOperations.getParent(ListSequence.fromList(p).getElement(0)));
           Assert.assertEquals(getAnnotatedNode("target"), ListSequence.fromList(p).getElement(ListSequence.fromList(p).count() - 1));

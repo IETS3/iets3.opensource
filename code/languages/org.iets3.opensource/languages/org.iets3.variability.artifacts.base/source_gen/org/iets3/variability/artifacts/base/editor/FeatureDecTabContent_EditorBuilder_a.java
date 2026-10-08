@@ -94,7 +94,7 @@ import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
     }
   }
   private EditorCell createPartialTable_1() {
-    return createPartialTable_0(getEditorContext(), myNode);
+    return createPartialTable_0(getEditorContext(), getNode());
   }
   public Grid createStaticHorizontal_240exa_a0(final EditorContext editorContext, final SNode node) {
     Grid grid = new Grid();

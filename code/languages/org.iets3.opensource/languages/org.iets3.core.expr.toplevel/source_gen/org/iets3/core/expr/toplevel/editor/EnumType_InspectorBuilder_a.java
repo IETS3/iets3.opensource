@@ -46,15 +46,15 @@ import org.jetbrains.mps.openapi.language.SContainmentLink;
   }
 
   /*package*/ EditorCell createCell() {
-    return createQueryList_1();
+    return createQueryList_0();
   }
 
-  private EditorCell createQueryList_0(final EditorContext editorContext, final SNode node) {
+  private EditorCell createQueryList_0() {
 
-    QueryListHandler handler = new QueryListHandler_tqnc4o_a(editorContext, node, true);
+    QueryListHandler handler = new QueryListHandler_tqnc4o_a(getEditorContext(), getNode(), true);
     EditorCell_QueryList editorCell = handler.createCells(new CellLayout_Vertical());
     editorCell.setTargeConcept(CONCEPTS.EnumLiteral$S9);
-    editorCell.setOwner(SNodeOperations.getConcept(node));
+    editorCell.setOwner(SNodeOperations.getConcept(getNode()));
     editorCell.setCellId("QueryList_tqnc4o_0");
     editorCell.setBig(true);
     setCellContext(editorCell);
@@ -63,9 +63,6 @@ import org.jetbrains.mps.openapi.language.SContainmentLink;
     editorCell.getStyle().putAll(style);
     return editorCell;
 
-  }
-  private EditorCell createQueryList_1() {
-    return createQueryList_0(getEditorContext(), myNode);
   }
   private static class QueryListHandler_tqnc4o_a extends QueryListHandler {
     /**

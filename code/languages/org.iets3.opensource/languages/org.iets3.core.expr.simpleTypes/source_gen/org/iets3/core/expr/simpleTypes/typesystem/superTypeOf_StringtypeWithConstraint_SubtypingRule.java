@@ -27,9 +27,6 @@ public class superTypeOf_StringtypeWithConstraint_SubtypingRule extends Subtypin
   public boolean isWeak() {
     return false;
   }
-  public boolean surelyKeepsConcept() {
-    return true;
-  }
   private static SNode createStringType_eia0fe_a0a1() {
     SNodeBuilder n0 = new SNodeBuilder().init(CONCEPTS.StringType$B3);
     return n0.getResult();

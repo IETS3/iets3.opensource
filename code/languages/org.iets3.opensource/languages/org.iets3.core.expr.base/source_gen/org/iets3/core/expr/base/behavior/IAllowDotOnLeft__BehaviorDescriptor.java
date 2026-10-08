@@ -7,26 +7,22 @@ import org.jetbrains.mps.openapi.language.SAbstractConcept;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import org.jetbrains.mps.openapi.model.SNode;
 import java.util.List;
 import java.util.Arrays;
 import org.jetbrains.annotations.NotNull;
-import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 
 public final class IAllowDotOnLeft__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getInterfaceConcept(0xcfaa4966b7d54b69L, 0xb66a309a6e1a7290L, 0x45d6f895c8b83417L, "org.iets3.core.expr.base.structure.IAllowDotOnLeft");
 
-  public static final SMethod<Boolean> allowsInsertDotOnLeft_id4nmY9n8I3O7 = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("allowsInsertDotOnLeft").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5032482955834440967L).languageId(0xb66a309a6e1a7290L, 0xcfaa4966b7d54b69L).build2();
-  public static final SMethod<SNode> createTarget_id4nmY9n8I45o = new SMethodBuilder<SNode>(new SJavaCompoundTypeImpl((Class<SNode>) ((Class) Object.class))).name("createTarget").modifiers(12, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5032482955834442072L).languageId(0xb66a309a6e1a7290L, 0xcfaa4966b7d54b69L).build2();
+  public static final SMethod<Boolean> allowsInsertDotOnLeft_id4nmY9n8I3O7 = new SMethodBuilder<>(Boolean.TYPE).name("allowsInsertDotOnLeft").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5032482955834440967L).languageId(0xb66a309a6e1a7290L, 0xcfaa4966b7d54b69L).build2();
+  public static final SMethod<SNode> createTarget_id4nmY9n8I45o = new SMethodBuilder<>(SNode.class).name("createTarget").modifiers(12, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5032482955834442072L).languageId(0xb66a309a6e1a7290L, 0xcfaa4966b7d54b69L).build2();
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(allowsInsertDotOnLeft_id4nmY9n8I3O7, createTarget_id4nmY9n8I45o);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(allowsInsertDotOnLeft_id4nmY9n8I3O7, createTarget_id4nmY9n8I45o);
 
-  private static void ___init___(@NotNull SNode __thisNode__) {
-  }
 
   /*package*/ static boolean allowsInsertDotOnLeft_id4nmY9n8I3O7(@NotNull SNode __thisNode__) {
     return true;
@@ -35,10 +31,6 @@ public final class IAllowDotOnLeft__BehaviorDescriptor extends BaseBHDescriptor 
   /*package*/ IAllowDotOnLeft__BehaviorDescriptor() {
   }
 
-  @Override
-  protected void initNode(@NotNull SNode node, @NotNull SConstructor constructor, @Nullable Object[] parameters) {
-    ___init___(node);
-  }
 
   @Override
   protected <T> T invokeSpecial0(@NotNull SNode node, @NotNull SMethod<T> method, @Nullable Object[] parameters) {

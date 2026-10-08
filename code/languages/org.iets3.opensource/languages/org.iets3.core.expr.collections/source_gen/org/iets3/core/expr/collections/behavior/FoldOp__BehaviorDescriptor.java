@@ -7,7 +7,6 @@ import org.jetbrains.mps.openapi.language.SAbstractConcept;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import org.jetbrains.mps.openapi.model.SNode;
 import java.util.List;
@@ -30,12 +29,12 @@ import org.jetbrains.mps.openapi.language.SProperty;
 public final class FoldOp__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getConcept(0x2f7e2e356e744c43L, 0x9fa52465d68f5996L, 0x4471391c39ffd310L, "org.iets3.core.expr.collections.structure.FoldOp");
 
-  public static final SMethod<String> renderReadable_id6kR0qIbI2yi = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("renderReadable").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(7293299957844945042L).languageId(0xb66a309a6e1a7290L, 0xcfaa4966b7d54b69L).build2();
-  public static final SMethod<Boolean> checkCombinerIsFunctionType_id4hLehKU5pi7 = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("checkCombinerIsFunctionType").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(4931785860343764103L).languageId(0x9fa52465d68f5996L, 0x2f7e2e356e744c43L).build2();
-  public static final SMethod<Void> fixCombinerFunctionType_id4hLehKU5tgW = new SMethodBuilder<Void>(new SJavaCompoundTypeImpl(Void.class)).name("fixCombinerFunctionType").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(4931785860343780412L).languageId(0x9fa52465d68f5996L, 0x2f7e2e356e744c43L).build2();
-  public static final SMethod<String> allowsEffectForNode_idORfz$DS6Ap = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("allowsEffectForNode").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(952298261448780185L).languageId(0xb66a309a6e1a7290L, 0xcfaa4966b7d54b69L).build2(SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""));
+  public static final SMethod<String> renderReadable_id6kR0qIbI2yi = new SMethodBuilder<>(String.class).name("renderReadable").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(7293299957844945042L).languageId(0xb66a309a6e1a7290L, 0xcfaa4966b7d54b69L).build2();
+  public static final SMethod<Boolean> checkCombinerIsFunctionType_id4hLehKU5pi7 = new SMethodBuilder<>(Boolean.TYPE).name("checkCombinerIsFunctionType").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(4931785860343764103L).languageId(0x9fa52465d68f5996L, 0x2f7e2e356e744c43L).build2();
+  public static final SMethod<Void> fixCombinerFunctionType_id4hLehKU5tgW = new SMethodBuilder<>(Void.TYPE).name("fixCombinerFunctionType").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(4931785860343780412L).languageId(0x9fa52465d68f5996L, 0x2f7e2e356e744c43L).build2();
+  public static final SMethod<String> allowsEffectForNode_idORfz$DS6Ap = new SMethodBuilder<>(String.class).name("allowsEffectForNode").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(952298261448780185L).languageId(0xb66a309a6e1a7290L, 0xcfaa4966b7d54b69L).build2(SMethodBuilder.createJavaParameter(SNode.class, "n"));
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(renderReadable_id6kR0qIbI2yi, checkCombinerIsFunctionType_id4hLehKU5pi7, fixCombinerFunctionType_id4hLehKU5tgW, allowsEffectForNode_idORfz$DS6Ap);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(renderReadable_id6kR0qIbI2yi, checkCombinerIsFunctionType_id4hLehKU5pi7, fixCombinerFunctionType_id4hLehKU5tgW, allowsEffectForNode_idORfz$DS6Ap);
 
   private static void ___init___(@NotNull SNode __thisNode__) {
     FoldOp__BehaviorDescriptor.fixCombinerFunctionType_id4hLehKU5tgW.invoke(__thisNode__);

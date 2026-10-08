@@ -8,7 +8,6 @@ import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import jetbrains.mps.scope.Scope;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import org.jetbrains.mps.openapi.model.SNode;
 import java.util.Optional;
@@ -23,7 +22,6 @@ import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
 import org.iets3.variability.artifacts.base.plugin.ArtifactHelper;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
 import jetbrains.mps.lang.core.behavior.BaseConcept__BehaviorDescriptor;
-import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 import org.jetbrains.mps.openapi.language.SReferenceLink;
@@ -31,17 +29,15 @@ import org.jetbrains.mps.openapi.language.SReferenceLink;
 public final class IVariantBaselineConfigItem__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getInterfaceConcept(0xbad8e421fc944104L, 0x8c1e6fc9d2dccf07L, 0x4ca06df4e4c16866L, "org.iets3.variability.artifacts.baseline.structure.IVariantBaselineConfigItem");
 
-  public static final SMethod<Scope> scopeForArtifact_id4Mwrvj$KoYt = new SMethodBuilder<Scope>(new SJavaCompoundTypeImpl(Scope.class)).name("scopeForArtifact").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5521534041733566365L).languageId(0x8c1e6fc9d2dccf07L, 0xbad8e421fc944104L).build2(SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""));
-  public static final SMethod<Scope> scopeForConfiguration_id4U4WDylIOP8 = new SMethodBuilder<Scope>(new SJavaCompoundTypeImpl(Scope.class)).name("scopeForConfiguration").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5657913769045216584L).languageId(0x8c1e6fc9d2dccf07L, 0xbad8e421fc944104L).build2(SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""));
-  public static final SMethod<Optional<SNode>> ivaa_id5o9wjw02jJe = new SMethodBuilder<Optional<SNode>>(new SJavaCompoundTypeImpl(Optional.class)).name("ivaa").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(6199628439570955214L).languageId(0x8c1e6fc9d2dccf07L, 0xbad8e421fc944104L).build2();
-  public static final SMethod<Iterable<SModel>> allModelsInModuleOf_id3jj0rvsBSqq = new SMethodBuilder<Iterable<SModel>>(new SJavaCompoundTypeImpl((Class<Iterable<SModel>>) ((Class) Object.class))).name("allModelsInModuleOf").modifiers(0, AccessPrivileges.PROTECTED).concept(CONCEPT).baseMethodId(3806387999250286234L).languageId(0x8c1e6fc9d2dccf07L, 0xbad8e421fc944104L).build2(SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""));
-  public static final SMethod<Void> postprocess_id1xsXReQTuZ$ = new SMethodBuilder<Void>(new SJavaCompoundTypeImpl(Void.class)).name("postprocess").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(1755550031129472996L).languageId(0x8c1e6fc9d2dccf07L, 0xbad8e421fc944104L).build2(SMethodBuilder.createJavaParameter((Class<List<SModel>>) ((Class) Object.class), ""));
-  public static final SMethod<FilterParams> filteringParameters_id5bEmt06_eiH = new SMethodBuilder<FilterParams>(new SJavaCompoundTypeImpl(FilterParams.class)).name("filteringParameters").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5974686605658875053L).languageId(0x8c1e6fc9d2dccf07L, 0xbad8e421fc944104L).build2();
+  public static final SMethod<Scope> scopeForArtifact_id4Mwrvj$KoYt = new SMethodBuilder<>(Scope.class).name("scopeForArtifact").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5521534041733566365L).languageId(0x8c1e6fc9d2dccf07L, 0xbad8e421fc944104L).build2(SMethodBuilder.createJavaParameter(SNode.class, "contextNode"));
+  public static final SMethod<Scope> scopeForConfiguration_id4U4WDylIOP8 = new SMethodBuilder<>(Scope.class).name("scopeForConfiguration").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5657913769045216584L).languageId(0x8c1e6fc9d2dccf07L, 0xbad8e421fc944104L).build2(SMethodBuilder.createJavaParameter(SNode.class, "contextNode"));
+  public static final SMethod<Optional<SNode>> ivaa_id5o9wjw02jJe = new SMethodBuilder<>((Class<Optional<SNode>>) ((Class) Object.class)).name("ivaa").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(6199628439570955214L).languageId(0x8c1e6fc9d2dccf07L, 0xbad8e421fc944104L).build2();
+  public static final SMethod<Iterable<SModel>> allModelsInModuleOf_id3jj0rvsBSqq = new SMethodBuilder<>((Class<Iterable<SModel>>) ((Class) Object.class)).name("allModelsInModuleOf").modifiers(0, AccessPrivileges.PROTECTED).concept(CONCEPT).baseMethodId(3806387999250286234L).languageId(0x8c1e6fc9d2dccf07L, 0xbad8e421fc944104L).build2(SMethodBuilder.createJavaParameter(SNode.class, "contextNode"));
+  public static final SMethod<Void> postprocess_id1xsXReQTuZ$ = new SMethodBuilder<>(Void.TYPE).name("postprocess").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(1755550031129472996L).languageId(0x8c1e6fc9d2dccf07L, 0xbad8e421fc944104L).build2(SMethodBuilder.createJavaParameter((Class<List<SModel>>) ((Class) Object.class), "filteredModels"));
+  public static final SMethod<FilterParams> filteringParameters_id5bEmt06_eiH = new SMethodBuilder<>(FilterParams.class).name("filteringParameters").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5974686605658875053L).languageId(0x8c1e6fc9d2dccf07L, 0xbad8e421fc944104L).build2();
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(scopeForArtifact_id4Mwrvj$KoYt, scopeForConfiguration_id4U4WDylIOP8, ivaa_id5o9wjw02jJe, allModelsInModuleOf_id3jj0rvsBSqq, postprocess_id1xsXReQTuZ$, filteringParameters_id5bEmt06_eiH);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(scopeForArtifact_id4Mwrvj$KoYt, scopeForConfiguration_id4U4WDylIOP8, ivaa_id5o9wjw02jJe, allModelsInModuleOf_id3jj0rvsBSqq, postprocess_id1xsXReQTuZ$, filteringParameters_id5bEmt06_eiH);
 
-  private static void ___init___(@NotNull SNode __thisNode__) {
-  }
 
   /*package*/ static Scope scopeForArtifact_id4Mwrvj$KoYt(@NotNull SNode __thisNode__, SNode contextNode) {
     return new EmptyScope();
@@ -75,10 +71,6 @@ public final class IVariantBaselineConfigItem__BehaviorDescriptor extends BaseBH
   /*package*/ IVariantBaselineConfigItem__BehaviorDescriptor() {
   }
 
-  @Override
-  protected void initNode(@NotNull SNode node, @NotNull SConstructor constructor, @Nullable Object[] parameters) {
-    ___init___(node);
-  }
 
   @Override
   protected <T> T invokeSpecial0(@NotNull SNode node, @NotNull SMethod<T> method, @Nullable Object[] parameters) {

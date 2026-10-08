@@ -21,7 +21,7 @@ public class EnumerationDescriptor_TimeUnit extends EnumerationDescriptorBase {
   private final EnumerationDescriptor.MemberDescriptor myMember_YEARS_0 = new EnumerationDescriptor.MemberDescriptor("YEARS", "YEARS", 0x35ec8ca87a764007L, "r:d6904536-4de8-40ba-b54e-09fcdfe1b62a(org.iets3.core.expr.temporal.structure)/1293474851211742460");
 
   private final EnumerationLiteralsIndex myIndex = EnumerationLiteralsIndex.build(0x4621d3e3b8a34bbeL, 0xb7ac234b6e2d1d68L, 0x35ec8ca87a763ff8L, 0x35ec8ca87a763ff9L, 0x35ec8ca87a764000L, 0x35ec8ca87a763ffdL, 0x35ec8ca87a764007L);
-  private final List<EnumerationDescriptor.MemberDescriptor> myMembers = new EnumerationDescriptorBase.MembersList(myIndex, myMember_DAYS_0, myMember_WEEKS_0, myMember_MONTHS_0, myMember_YEARS_0);
+  private final List<EnumerationDescriptor.MemberDescriptor> myMembers = new EnumerationDescriptorBase.MembersList0(myIndex, myMember_DAYS_0, myMember_WEEKS_0, myMember_MONTHS_0, myMember_YEARS_0);
 
   @Nullable
   @Override

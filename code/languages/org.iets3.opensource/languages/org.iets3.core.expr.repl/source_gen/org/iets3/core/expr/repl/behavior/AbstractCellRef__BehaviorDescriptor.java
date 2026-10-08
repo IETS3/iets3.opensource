@@ -8,7 +8,6 @@ import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import org.jetbrains.mps.openapi.model.SNode;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import jetbrains.mps.baseLanguage.tuples.runtime.Tuples;
 import java.util.List;
@@ -18,7 +17,6 @@ import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SConceptOperations;
 import jetbrains.mps.internal.collections.runtime.ListSequence;
-import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 import org.jetbrains.mps.openapi.language.SContainmentLink;
@@ -27,15 +25,13 @@ import org.jetbrains.mps.openapi.language.SConcept;
 public final class AbstractCellRef__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getConcept(0x18001c9433a74f68L, 0xa7c1ffddc4b39be1L, 0x586a62ac9ba78ab4L, "org.iets3.core.expr.repl.structure.AbstractCellRef");
 
-  public static final SMethod<SNode> resolve_id5xEoEMrDTcu = new SMethodBuilder<SNode>(new SJavaCompoundTypeImpl((Class<SNode>) ((Class) Object.class))).name("resolve").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(6371013116354335518L).languageId(0xa7c1ffddc4b39be1L, 0x18001c9433a74f68L).build2();
-  public static final SMethod<SNode> resolve_id3pIANU$YNoz = new SMethodBuilder<SNode>(new SJavaCompoundTypeImpl((Class<SNode>) ((Class) Object.class))).name("resolve").modifiers(12, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(3922243018844485155L).languageId(0xa7c1ffddc4b39be1L, 0x18001c9433a74f68L).build2(SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""), SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""));
-  public static final SMethod<Boolean> needsActuals_id5xEoEMrFtHl = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("needsActuals").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(6371013116354747221L).languageId(0xa7c1ffddc4b39be1L, 0x18001c9433a74f68L).build2();
-  public static final SMethod<Tuples._2<Integer, Integer>> resolveCoordinates_id5avmkTFlQpR = new SMethodBuilder<Tuples._2<Integer, Integer>>(new SJavaCompoundTypeImpl((Class<Tuples._2<Integer, Integer>>) ((Class) Object.class))).name("resolveCoordinates").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5953575425750296183L).languageId(0xa7c1ffddc4b39be1L, 0x18001c9433a74f68L).build2();
+  public static final SMethod<SNode> resolve_id5xEoEMrDTcu = new SMethodBuilder<>(SNode.class).name("resolve").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(6371013116354335518L).languageId(0xa7c1ffddc4b39be1L, 0x18001c9433a74f68L).build2();
+  public static final SMethod<SNode> resolve_id3pIANU$YNoz = new SMethodBuilder<>(SNode.class).name("resolve").modifiers(12, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(3922243018844485155L).languageId(0xa7c1ffddc4b39be1L, 0x18001c9433a74f68L).build2(SMethodBuilder.createJavaParameter(SNode.class, "contextSheet"), SMethodBuilder.createJavaParameter(SNode.class, "contextCell"));
+  public static final SMethod<Boolean> needsActuals_id5xEoEMrFtHl = new SMethodBuilder<>(Boolean.TYPE).name("needsActuals").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(6371013116354747221L).languageId(0xa7c1ffddc4b39be1L, 0x18001c9433a74f68L).build2();
+  public static final SMethod<Tuples._2<Integer, Integer>> resolveCoordinates_id5avmkTFlQpR = new SMethodBuilder<>((Class<Tuples._2<Integer, Integer>>) ((Class) Object.class)).name("resolveCoordinates").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5953575425750296183L).languageId(0xa7c1ffddc4b39be1L, 0x18001c9433a74f68L).build2();
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(resolve_id5xEoEMrDTcu, resolve_id3pIANU$YNoz, needsActuals_id5xEoEMrFtHl, resolveCoordinates_id5avmkTFlQpR);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(resolve_id5xEoEMrDTcu, resolve_id3pIANU$YNoz, needsActuals_id5xEoEMrFtHl, resolveCoordinates_id5avmkTFlQpR);
 
-  private static void ___init___(@NotNull SNode __thisNode__) {
-  }
 
   /*package*/ static SNode resolve_id5xEoEMrDTcu(@NotNull SNode __thisNode__) {
     if (SLinkOperations.getTarget(__thisNode__, LINKS.finder$SYh4) == null) {
@@ -69,10 +65,6 @@ public final class AbstractCellRef__BehaviorDescriptor extends BaseBHDescriptor 
   /*package*/ AbstractCellRef__BehaviorDescriptor() {
   }
 
-  @Override
-  protected void initNode(@NotNull SNode node, @NotNull SConstructor constructor, @Nullable Object[] parameters) {
-    ___init___(node);
-  }
 
   @Override
   protected <T> T invokeSpecial0(@NotNull SNode node, @NotNull SMethod<T> method, @Nullable Object[] parameters) {

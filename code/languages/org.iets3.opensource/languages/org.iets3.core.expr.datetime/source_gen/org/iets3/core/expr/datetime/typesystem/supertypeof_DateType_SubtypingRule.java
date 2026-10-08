@@ -27,9 +27,6 @@ public class supertypeof_DateType_SubtypingRule extends SubtypingRule_Runtime im
   public boolean isWeak() {
     return false;
   }
-  public boolean surelyKeepsConcept() {
-    return true;
-  }
   private static SNode createAbstractDateType_epsr6f_a0a1() {
     SNodeBuilder n0 = new SNodeBuilder().init(CONCEPTS.AbstractDateType$Jj);
     return n0.getResult();
