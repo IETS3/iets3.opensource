@@ -152,7 +152,7 @@ import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
       getCellFactory().pushCellContext();
       try {
         getCellFactory().setNodeLocation(new SNodeLocation.FromNode(node));
-        cell = createCellDuplicatesSafe(() -> context.getEditorComponent().getUpdater().getCurrentUpdateSession().updateReferencedNodeCell(() -> context.getEditorComponent().getUpdater().getCurrentUpdateSession().updateChildNodeCell(node), node, new DummyReferenceLink("querylist9185733321638000134")));
+        cell = createCellDuplicatesSafe(() -> context.getEditorComponent().getUpdater().getCurrentUpdateSession().updateReferencedNodeCell(() -> context.getEditorComponent().getUpdater().getCurrentUpdateSession().updateChildNodeCell(node), node, new DummyReferenceLink("querylist2751909138871931280")));
       } finally {
         getCellFactory().popCellContext();
       }
