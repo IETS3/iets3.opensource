@@ -241,7 +241,7 @@ val failOnTestError by tasks.registering {
     doLast {
         val junitXmls = listOf(
             // written by buildAndRunTests' Ant junitreport aggregation into the project directory
-            file(xml"),
+            file("TESTS-TestSuites.xml"),
             // written directly by the checkmodels task into the build directory, via its own junitFile property
             layout.buildDirectory.file("TEST-checkProject.xml").get().asFile,
             // written by execTestsByInterpreter's Ant junitreport aggregation into the build directory;
