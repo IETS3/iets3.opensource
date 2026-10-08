@@ -13,7 +13,78 @@
   <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1070462154015:jetbrains.mps.baseLanguage.structure.StaticFieldDeclaration" />
   <root>
     <file name="TypesystemDescriptor.java">
-      <unit at="8,0,16,0" name="org.iets3.opensource.build.gentests.typesystem.TypesystemDescriptor" />
+      <unit at="8,0,20,0" name="org.iets3.opensource.build.gentests.typesystem.TypesystemDescriptor" />
+    </file>
+  </root>
+  <root nodeRef="r:4cb2316b-1997-488d-96e2-a0f658b31925(org.iets3.opensource.build.gentests.typesystem)/1342792364410552720">
+    <file name="TypesystemDescriptor.java">
+      <node id="1342792364410552720" at="14,5,15,134" concept="6" />
+      <node id="1342792364410552720" at="15,134,16,55" concept="2" />
+      <node id="1342792364410552720" at="13,5,17,5" concept="0" />
+      <scope id="1342792364410552720" at="14,5,16,55">
+        <var name="nonTypesystemRule" id="1342792364410552720" />
+      </scope>
+    </file>
+    <file name="check_InterpreterTestRunnerAspectRequiredPluginsReachable_NonTypesystemRule.java">
+      <node id="1342792364410552723" at="30,119,31,100" concept="6" />
+      <node id="1342792364410552736" at="32,28,33,13" concept="7" />
+      <node id="1342792364410552737" at="34,5,35,159" concept="6" />
+      <node id="1342792364410552747" at="35,159,36,55" concept="2" />
+      <node id="1342792364410552758" at="37,108,38,142" concept="6" />
+      <node id="1342792364410552779" at="40,9,41,68" concept="6" />
+      <node id="1342792364410552779" at="41,68,42,428" concept="6" />
+      <node id="1342792364410552720" at="47,50,48,51" concept="7" />
+      <node id="1342792364410552720" at="50,68,51,102" concept="7" />
+      <node id="1342792364410552720" at="53,30,54,17" concept="7" />
+      <node id="1342792364410552720" at="58,0,59,0" concept="10" trace="BuildProject$ae" />
+      <node id="1342792364410552720" at="59,0,60,0" concept="10" trace="InterpreterTestRunnerAspect$eN" />
+      <node id="1342792364410552720" at="63,0,64,0" concept="10" trace="plugin$9MhS" />
+      <node id="1342792364410552720" at="64,0,65,0" concept="10" trace="requiredPlugin$RiWU" />
+      <node id="1342792364410552720" at="68,0,69,0" concept="10" trace="id$W4AX" />
+      <node id="1342792364410552720" at="28,0,30,0" concept="1" trace="check_InterpreterTestRunnerAspectRequiredPluginsReachable_NonTypesystemRule#()V" />
+      <node id="1342792364410552731" at="31,100,34,5" concept="4" />
+      <node id="1342792364410552720" at="47,0,50,0" concept="5" trace="getApplicableConcept#()Lorg/jetbrains/mps/openapi/language/SAbstractConcept;" />
+      <node id="1342792364410552720" at="50,0,53,0" concept="5" trace="isApplicableAndPattern#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljetbrains/mps/lang/typesystem/runtime/IsApplicableStatus;" />
+      <node id="1342792364410552720" at="53,0,56,0" concept="5" trace="overrides#()Z" />
+      <node id="1342792364410552779" at="39,81,43,9" concept="0" />
+      <node id="1342792364410552768" at="38,142,44,7" concept="4" />
+      <node id="1342792364410552752" at="36,55,45,5" concept="3" />
+      <node id="1342792364410552720" at="30,0,47,0" concept="5" trace="applyRule#(Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/typesystem/inference/TypeCheckingContext;Ljetbrains/mps/lang/typesystem/runtime/IsApplicableStatus;)V" />
+      <scope id="1342792364410552720" at="28,88,28,88" />
+      <scope id="1342792364410552735" at="32,28,33,13" />
+      <scope id="1342792364410552720" at="47,50,48,51" />
+      <scope id="1342792364410552720" at="50,68,51,102" />
+      <scope id="1342792364410552720" at="53,30,54,17" />
+      <scope id="1342792364410552720" at="28,0,30,0" />
+      <scope id="1342792364410552779" at="40,9,42,428">
+        <var name="_reporter_2309309498" id="1342792364410552779" />
+        <var name="errorTarget" id="1342792364410552779" />
+      </scope>
+      <scope id="1342792364410552720" at="47,0,50,0" />
+      <scope id="1342792364410552720" at="50,0,53,0">
+        <var name="argument" id="1342792364410552720" />
+      </scope>
+      <scope id="1342792364410552720" at="53,0,56,0" />
+      <scope id="1342792364410552778" at="39,81,43,9" />
+      <scope id="1342792364410552757" at="37,108,44,7">
+        <var name="owner" id="1342792364410552759" />
+      </scope>
+      <scope id="1342792364410552752" at="36,55,45,5">
+        <var name="rp" id="1342792364410552753" />
+      </scope>
+      <scope id="1342792364410552722" at="30,119,45,5">
+        <var name="project" id="1342792364410552724" />
+        <var name="visible" id="1342792364410552738" />
+      </scope>
+      <scope id="1342792364410552720" at="30,0,47,0">
+        <var name="aspect" id="1342792364410552720" />
+        <var name="status" id="1342792364410552720" />
+        <var name="typeCheckingContext" id="1342792364410552720" />
+      </scope>
+      <unit id="1342792364410552720" at="67,0,70,0" name="org.iets3.opensource.build.gentests.typesystem.check_InterpreterTestRunnerAspectRequiredPluginsReachable_NonTypesystemRule$PROPS" />
+      <unit id="1342792364410552720" at="57,0,61,0" name="org.iets3.opensource.build.gentests.typesystem.check_InterpreterTestRunnerAspectRequiredPluginsReachable_NonTypesystemRule$CONCEPTS" />
+      <unit id="1342792364410552720" at="62,0,66,0" name="org.iets3.opensource.build.gentests.typesystem.check_InterpreterTestRunnerAspectRequiredPluginsReachable_NonTypesystemRule$LINKS" />
+      <unit id="1342792364410552720" at="27,0,71,0" name="org.iets3.opensource.build.gentests.typesystem.check_InterpreterTestRunnerAspectRequiredPluginsReachable_NonTypesystemRule" />
     </file>
   </root>
   <root nodeRef="r:4cb2316b-1997-488d-96e2-a0f658b31925(org.iets3.opensource.build.gentests.typesystem)/4450806019279274351">
