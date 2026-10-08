@@ -17,8 +17,9 @@ import java.util.Arrays;
 import org.jetbrains.annotations.NotNull;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
 import org.jetbrains.annotations.Nullable;
-import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
+import org.iets3.variability.featuremodel.base.plugin.FeatureModelTraversal;
 import jetbrains.mps.internal.collections.runtime.ListSequence;
+import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
 import java.util.Objects;
 import java.util.function.Function;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations;
@@ -33,7 +34,6 @@ import java.util.ArrayList;
 import org.iets3.variability.configuration.base.plugin.FeatureSelectionStateUtil;
 import org.iets3.variability.featuremodel.base.behavior.FeatureTreeNode__BehaviorDescriptor;
 import jetbrains.mps.lang.core.behavior.BaseConcept__BehaviorDescriptor;
-import org.iets3.variability.featuremodel.base.plugin.FeatureModelTraversal;
 import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 import org.iets3.variability.base.behavior.IVariabilityContent__BehaviorDescriptor;
@@ -49,9 +49,10 @@ public final class AbstractFeatureConfiguration__BehaviorDescriptor extends Base
   public static final SMethod<SNode> getContextFeature_id30ECcbtSVMe = new SMethodBuilder<SNode>(new SJavaCompoundTypeImpl((Class<SNode>) ((Class) Object.class))).name("getContextFeature").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(3470763221649177742L).languageId(0x895e1424f54166ecL, 0x165f1d0525064544L).build2();
   public static final SMethod<Iterable<SNode>> constraints_id1GuOf_A$Bqq = new SMethodBuilder<Iterable<SNode>>(new SJavaCompoundTypeImpl((Class<Iterable<SNode>>) ((Class) Object.class))).name("constraints").modifiers(12, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(1954229057911682714L).languageId(0xa41d20b97237156cL, 0x71226ee2bbc445d2L).build2();
   public static final SMethod<SNode> findConfiguration_id4zfp5i3BhvO = new SMethodBuilder<SNode>(new SJavaCompoundTypeImpl((Class<SNode>) ((Class) Object.class))).name("findConfiguration").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5246522405058058228L).languageId(0xa41d20b97237156cL, 0x71226ee2bbc445d2L).build2(SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""));
+  public static final SMethod<Optional<SNode>> findConfiguration2_id6F0PTEeQvEx = new SMethodBuilder<Optional<SNode>>(new SJavaCompoundTypeImpl(Optional.class)).name("findConfiguration2").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(7692385222370392737L).languageId(0xa41d20b97237156cL, 0x71226ee2bbc445d2L).build2(SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""));
   /*package*/ static final SMethod<Optional<SNode>> findConfigDirect_id4UXd9usJEzn = new SMethodBuilder<Optional<SNode>>(new SJavaCompoundTypeImpl(Optional.class)).name("findConfigDirect").modifiers(0, AccessPrivileges.PRIVATE).concept(CONCEPT).baseMethodId(5673748931331139799L).languageId(0xa41d20b97237156cL, 0x71226ee2bbc445d2L).build2(SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""));
   /*package*/ static final SMethod<Optional<SNode>> findInContent_id5plP6f7Xbpl = new SMethodBuilder<Optional<SNode>>(new SJavaCompoundTypeImpl(Optional.class)).name("findInContent").modifiers(0, AccessPrivileges.PRIVATE).concept(CONCEPT).baseMethodId(6221111985303762517L).languageId(0xa41d20b97237156cL, 0x71226ee2bbc445d2L).build2(SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""));
-  public static final SMethod<Optional<SNode>> searchInheritanceChain_idhMocy8Lehw = new SMethodBuilder<Optional<SNode>>(new SJavaCompoundTypeImpl(Optional.class)).name("searchInheritanceChain").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(320424937901057120L).languageId(0xa41d20b97237156cL, 0x71226ee2bbc445d2L).build2(SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""), SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""));
+  /*package*/ static final SMethod<Optional<SNode>> searchInheritanceChain_idhMocy8Lehw = new SMethodBuilder<Optional<SNode>>(new SJavaCompoundTypeImpl(Optional.class)).name("searchInheritanceChain").modifiers(0, AccessPrivileges.PRIVATE).concept(CONCEPT).baseMethodId(320424937901057120L).languageId(0xa41d20b97237156cL, 0x71226ee2bbc445d2L).build2(SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""), SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""));
   public static final SMethod<Void> changeSelectionState_id5vcbt7LUNyC = new SMethodBuilder<Void>(new SJavaCompoundTypeImpl(Void.class)).name("changeSelectionState").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(6326481956278843560L).languageId(0xa41d20b97237156cL, 0x71226ee2bbc445d2L).build2(SMethodBuilder.createJavaParameter((Class<_FunctionTypes._void_P1_E0<? super SNode>>) ((Class) Object.class), ""), SMethodBuilder.createJavaParameter(Boolean.TYPE, ""));
   /*package*/ static final SMethod<Void> changeSelectionStateHlp_id5vcbt7LVt2j = new SMethodBuilder<Void>(new SJavaCompoundTypeImpl(Void.class)).name("changeSelectionStateHlp").modifiers(0, AccessPrivileges.PRIVATE).concept(CONCEPT).baseMethodId(6326481956279013523L).languageId(0xa41d20b97237156cL, 0x71226ee2bbc445d2L).build2(SMethodBuilder.createJavaParameter((Class<_FunctionTypes._void_P1_E0<? super SNode>>) ((Class) Object.class), ""), SMethodBuilder.createJavaParameter(Boolean.TYPE, ""));
   public static final SMethod<Void> setTargetFeatureSelectionUntouched_idWXOPPXmy3H = new SMethodBuilder<Void>(new SJavaCompoundTypeImpl(Void.class)).name("setTargetFeatureSelectionUntouched").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(1098266282636746989L).languageId(0xa41d20b97237156cL, 0x71226ee2bbc445d2L).build2();
@@ -98,9 +99,8 @@ public final class AbstractFeatureConfiguration__BehaviorDescriptor extends Base
   public static final SMethod<String> getPresentation_idhEwIMiw = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("getPresentation").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(1213877396640L).languageId(0x9b92103b95ca8c0cL, 0xceab519525ea4f22L).build2();
   public static final SMethod<String> getDetailedPresentation_id22G2W3WJ92t = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("getDetailedPresentation").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(2354269628709769373L).languageId(0x9b92103b95ca8c0cL, 0xceab519525ea4f22L).build2();
   public static final SMethod<ConfigCursor> asCursor_id2Kcps_lTuIP = new SMethodBuilder<ConfigCursor>(new SJavaCompoundTypeImpl(ConfigCursor.class)).name("asCursor").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(3174023752793320373L).languageId(0xa41d20b97237156cL, 0x71226ee2bbc445d2L).build2();
-  public static final SMethod<Optional<SNode>> findConfiguration2_id6F0PTEeQvEx = new SMethodBuilder<Optional<SNode>>(new SJavaCompoundTypeImpl(Optional.class)).name("findConfiguration2").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(7692385222370392737L).languageId(0xa41d20b97237156cL, 0x71226ee2bbc445d2L).build2(SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""));
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(attributeAssignments_id30ECcbtQkN2, getContextFeature_id30ECcbtSVMe, constraints_id1GuOf_A$Bqq, findConfiguration_id4zfp5i3BhvO, findConfigDirect_id4UXd9usJEzn, findInContent_id5plP6f7Xbpl, searchInheritanceChain_idhMocy8Lehw, changeSelectionState_id5vcbt7LUNyC, changeSelectionStateHlp_id5vcbt7LVt2j, setTargetFeatureSelectionUntouched_idWXOPPXmy3H, childOfFeatureConfigurationWithCardinality_id3ilerxzZg4M, variabilityContainer_id7VwzhOKytg$, directChildConfigItems_id5Bs7u1ZK4V$, descendantConfigItems_id24slSGEQ$MS, descendantConfigItemsWithoutUserSelection_id6SMbav4BSVm, hasNotAnyUserSelection_id7_2J9675kRK, descendantLocalConfigItems_id7Sn21ZwO0hh, descendantLocalConfigItemsAux_idgaEw9lOwkf, getUsedSubConfigurations_id4I8sp9GGHJ2, getUsedSubConfigsRec_id4I8sp9GGYPC, configurationRoot_id6SMbav4Irm1, allAttributeAssignments_id58DfSnqtfhS, isSelected_id79zES$XKwaU, isAutoSelected_id72bTBsCt0jd, allAncestorsSelected_id6PKIVEbrgkt, anyAncestorDisSelected_id6PKIVEbz5WX, isDisSelected_id3ilerxzqGXK, activelySelected_id2tsYCsji1Mf, activelyDisSelected_id2tsYCsjjt7j, hasAutoDecison_id2nkP8exm3rI, isAutoDisSelected_id72bTBsCt62$, isForcedTrue_id7yoiok7KC7b, isForcedFalse_id7yoiok7KEd_, hasForcedSelection_id1wdBX7uVtPv, isVisible_idul08NiF6PE, withoutUserSelection_id4aYaOlg6lwY, isUntouched_id5njM4APCUof, getTriState_id1P_ZNIGdBN2, updateTargetFeatureAndSelectionState_id1ZxhL$Gfq9a, updateTargetFeatureRaw_id6_PQ_lIOwso, subfeatureConfigurationsTransitive_id1lUmdle4kqX, addConfigAtIndex_id5Bs7u207px$, applyInheritance_id5Bs7u1ZK2oU, featureFor_idEb9eLhjPye, allSubfeatureConfigsDetached_id6yVv9rbvZxj, allAssignmentsInherited_id7VnoEdFws_X, anyUnfinishedAssignment_id142XOBDzcYe, parentConfigItem_idgaEw9mDyqJ, hasParentConfig_id2NjwOUXrBy, configuresSameFeature_id4JeqzBDPjC1, getPresentation_idhEwIMiw, getDetailedPresentation_id22G2W3WJ92t, asCursor_id2Kcps_lTuIP, findConfiguration2_id6F0PTEeQvEx);
+  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(attributeAssignments_id30ECcbtQkN2, getContextFeature_id30ECcbtSVMe, constraints_id1GuOf_A$Bqq, findConfiguration_id4zfp5i3BhvO, findConfiguration2_id6F0PTEeQvEx, findConfigDirect_id4UXd9usJEzn, findInContent_id5plP6f7Xbpl, searchInheritanceChain_idhMocy8Lehw, changeSelectionState_id5vcbt7LUNyC, changeSelectionStateHlp_id5vcbt7LVt2j, setTargetFeatureSelectionUntouched_idWXOPPXmy3H, childOfFeatureConfigurationWithCardinality_id3ilerxzZg4M, variabilityContainer_id7VwzhOKytg$, directChildConfigItems_id5Bs7u1ZK4V$, descendantConfigItems_id24slSGEQ$MS, descendantConfigItemsWithoutUserSelection_id6SMbav4BSVm, hasNotAnyUserSelection_id7_2J9675kRK, descendantLocalConfigItems_id7Sn21ZwO0hh, descendantLocalConfigItemsAux_idgaEw9lOwkf, getUsedSubConfigurations_id4I8sp9GGHJ2, getUsedSubConfigsRec_id4I8sp9GGYPC, configurationRoot_id6SMbav4Irm1, allAttributeAssignments_id58DfSnqtfhS, isSelected_id79zES$XKwaU, isAutoSelected_id72bTBsCt0jd, allAncestorsSelected_id6PKIVEbrgkt, anyAncestorDisSelected_id6PKIVEbz5WX, isDisSelected_id3ilerxzqGXK, activelySelected_id2tsYCsji1Mf, activelyDisSelected_id2tsYCsjjt7j, hasAutoDecison_id2nkP8exm3rI, isAutoDisSelected_id72bTBsCt62$, isForcedTrue_id7yoiok7KC7b, isForcedFalse_id7yoiok7KEd_, hasForcedSelection_id1wdBX7uVtPv, isVisible_idul08NiF6PE, withoutUserSelection_id4aYaOlg6lwY, isUntouched_id5njM4APCUof, getTriState_id1P_ZNIGdBN2, updateTargetFeatureAndSelectionState_id1ZxhL$Gfq9a, updateTargetFeatureRaw_id6_PQ_lIOwso, subfeatureConfigurationsTransitive_id1lUmdle4kqX, addConfigAtIndex_id5Bs7u207px$, applyInheritance_id5Bs7u1ZK2oU, featureFor_idEb9eLhjPye, allSubfeatureConfigsDetached_id6yVv9rbvZxj, allAssignmentsInherited_id7VnoEdFws_X, anyUnfinishedAssignment_id142XOBDzcYe, parentConfigItem_idgaEw9mDyqJ, hasParentConfig_id2NjwOUXrBy, configuresSameFeature_id4JeqzBDPjC1, getPresentation_idhEwIMiw, getDetailedPresentation_id22G2W3WJ92t, asCursor_id2Kcps_lTuIP);
 
   private static void ___init___(@NotNull SNode __thisNode__) {
   }
@@ -115,6 +115,19 @@ public final class AbstractFeatureConfiguration__BehaviorDescriptor extends Base
   /*package*/ static SNode findConfiguration_id4zfp5i3BhvO(@NotNull SNode __thisNode__, SNode ftn) {
     return AbstractFeatureConfiguration__BehaviorDescriptor.findConfiguration2_id6F0PTEeQvEx.invoke(__thisNode__, ftn).orElse(null);
   }
+  /*package*/ static Optional<SNode> findConfiguration2_id6F0PTEeQvEx(@NotNull SNode __thisNode__, SNode ftn) {
+    List<List<SNode>> paths = FeatureModelTraversal.findAllPathsToSubFeature(SLinkOperations.getTarget(__thisNode__, LINKS.targetFeature$16lA), ftn);
+    assert ListSequence.fromList(paths).isNotEmpty() : "Could not find Path from " + SNodeOperations.present(SLinkOperations.getTarget(__thisNode__, LINKS.targetFeature$16lA)) + " to " + SNodeOperations.present(ftn);
+    // if there is more than one path, use the first one as default (the UI will show an error that the path is not unique anyway)
+    List<SNode> path = ListSequence.fromList(paths).first();
+    if (!(Objects.equals(ListSequence.fromList(path).last(), ftn))) {
+      // if 'ftn' is a FeatureModelRef then the last part of the past is currently the 'effectiveFeature'.
+      // Remove it we do not need it
+      ListSequence.fromList(path).removeLastElement();
+    }
+    // the path consists of a list of FeatureModelIncludes, one for each sub-config relation
+    return ListSequence.fromList(path).foldLeft(Optional.of(__thisNode__), (Optional<SNode> afc, SNode it) -> (afc.isPresent() ? AbstractFeatureConfiguration__BehaviorDescriptor.findConfigDirect_id4UXd9usJEzn.invoke(afc.get(), it) : afc));
+  }
   /*package*/ static Optional<SNode> findConfigDirect_id4UXd9usJEzn(@NotNull final SNode __thisNode__, final SNode ftn) {
     {
       final SNode fmcb = SLinkOperations.getTarget(__thisNode__, LINKS.content$Wdfq);
@@ -124,7 +137,7 @@ public final class AbstractFeatureConfiguration__BehaviorDescriptor extends Base
     }
 
     // look up under the current configuration, if not found -> in the extended configuration
-    Optional<SNode> featureConfig = AbstractFeatureConfiguration__BehaviorDescriptor.findInContent_id5plP6f7Xbpl.invokeSpecial(__thisNode__, ftn).or(() -> ((Optional<SNode>) AbstractFeatureConfiguration__BehaviorDescriptor.searchInheritanceChain_idhMocy8Lehw.invoke(__thisNode__, AbstractFeatureConfiguration__BehaviorDescriptor.configurationRoot_id6SMbav4Irm1.invoke(__thisNode__), ftn)));
+    Optional<SNode> featureConfig = AbstractFeatureConfiguration__BehaviorDescriptor.findInContent_id5plP6f7Xbpl.invokeSpecial(__thisNode__, ftn).or(() -> ((Optional<SNode>) AbstractFeatureConfiguration__BehaviorDescriptor.searchInheritanceChain_idhMocy8Lehw.invokeSpecial(__thisNode__, AbstractFeatureConfiguration__BehaviorDescriptor.configurationRoot_id6SMbav4Irm1.invoke(__thisNode__), ftn)));
     // found under the current configuration or one of its extended configurations
     if (featureConfig.isPresent()) {
       return featureConfig;
@@ -156,7 +169,7 @@ public final class AbstractFeatureConfiguration__BehaviorDescriptor extends Base
   /*package*/ static Optional<SNode> searchInheritanceChain_idhMocy8Lehw(@NotNull SNode __thisNode__, SNode fmcNullable, final SNode ftn) {
     return Optional.ofNullable(fmcNullable).map(new Function<SNode, SNode>() {
       public SNode apply(SNode fmc) {
-        return check_8ts58n_a0a0a0a0g(check_8ts58n_a0a0a0a0a6(check_8ts58n_a0a0a0a0a0g(check_8ts58n_a0a0a0a0a0a6(fmc)), ftn));
+        return check_8ts58n_a0a0a0a0h(check_8ts58n_a0a0a0a0a7(check_8ts58n_a0a0a0a0a0h(check_8ts58n_a0a0a0a0a0a7(fmc)), ftn));
       }
     });
   }
@@ -195,7 +208,7 @@ public final class AbstractFeatureConfiguration__BehaviorDescriptor extends Base
     return false;
   }
   /*package*/ static SNode variabilityContainer_id7VwzhOKytg$(@NotNull SNode __thisNode__) {
-    return check_8ts58n_a0a11(AbstractFeatureConfiguration__BehaviorDescriptor.configurationRoot_id6SMbav4Irm1.invoke(__thisNode__));
+    return check_8ts58n_a0a21(AbstractFeatureConfiguration__BehaviorDescriptor.configurationRoot_id6SMbav4Irm1.invoke(__thisNode__));
   }
   /*package*/ static Iterable<SNode> directChildConfigItems_id5Bs7u1ZK4V$(@NotNull SNode __thisNode__) {
     return (SNodeOperations.isInstanceOf(SLinkOperations.getTarget(__thisNode__, LINKS.content$Wdfq), CONCEPTS.InlineFeatureConfigurationContent$P5) ? AbstractFeatureConfigurationContent__BehaviorDescriptor.effectiveChildConfigItems_id6jHrUgdscqV.invoke(SLinkOperations.getTarget(__thisNode__, LINKS.content$Wdfq)) : Sequence.fromIterable(Collections.emptyList()));
@@ -356,7 +369,7 @@ public final class AbstractFeatureConfiguration__BehaviorDescriptor extends Base
     return Sequence.fromIterable(AbstractFeatureConfiguration__BehaviorDescriptor.attributeAssignments_id30ECcbtQkN2.invoke(__thisNode__)).any((it) -> (FeatureAttributeAssignment__BehaviorDescriptor.getValue_id5Bs7u20FcLE.invoke(it) == null));
   }
   /*package*/ static SNode parentConfigItem_idgaEw9mDyqJ(@NotNull SNode __thisNode__) {
-    SNode afc = check_8ts58n_a0a0vb(SNodeOperations.getParent(__thisNode__));
+    SNode afc = check_8ts58n_a0a0wb(SNodeOperations.getParent(__thisNode__));
     return (SNodeOperations.isInstanceOf(afc, CONCEPTS.AbstractFeatureConfiguration$3P) ? SNodeOperations.cast(afc, CONCEPTS.AbstractFeatureConfiguration$3P) : null);
   }
   /*package*/ static boolean hasParentConfig_id2NjwOUXrBy(@NotNull SNode __thisNode__) {
@@ -374,19 +387,6 @@ public final class AbstractFeatureConfiguration__BehaviorDescriptor extends Base
   }
   /*package*/ static ConfigCursor asCursor_id2Kcps_lTuIP(@NotNull SNode __thisNode__) {
     return ConfigCursor.create(__thisNode__);
-  }
-  /*package*/ static Optional<SNode> findConfiguration2_id6F0PTEeQvEx(@NotNull SNode __thisNode__, SNode ftn) {
-    List<List<SNode>> paths = FeatureModelTraversal.findAllPathsToSubFeature(SLinkOperations.getTarget(__thisNode__, LINKS.targetFeature$16lA), ftn);
-    assert ListSequence.fromList(paths).isNotEmpty() : "Could not find Path from " + SNodeOperations.present(SLinkOperations.getTarget(__thisNode__, LINKS.targetFeature$16lA)) + " to " + SNodeOperations.present(ftn);
-    // if there is more than one path, use the first one as default (the UI will show an error that the path is not unique anyway)
-    List<SNode> path = ListSequence.fromList(paths).first();
-    if (!(Objects.equals(ListSequence.fromList(path).last(), ftn))) {
-      // if 'ftn' is a FeatureModelRef then the last part of the past is currently the 'effectiveFeature'.
-      // Remove it we do not need it
-      ListSequence.fromList(path).removeLastElement();
-    }
-    // the path consists of a list of FeatureModelIncludes, one for each sub-config relation
-    return ListSequence.fromList(path).foldLeft(Optional.of(__thisNode__), (Optional<SNode> afc, SNode it) -> (afc.isPresent() ? AbstractFeatureConfiguration__BehaviorDescriptor.findConfigDirect_id4UXd9usJEzn.invoke(afc.get(), it) : afc));
   }
 
   /*package*/ AbstractFeatureConfiguration__BehaviorDescriptor() {
@@ -411,112 +411,112 @@ public final class AbstractFeatureConfiguration__BehaviorDescriptor extends Base
       case 3:
         return (T) ((SNode) findConfiguration_id4zfp5i3BhvO(node, (SNode) parameters[0]));
       case 4:
-        return (T) ((Optional<SNode>) findConfigDirect_id4UXd9usJEzn(node, (SNode) parameters[0]));
+        return (T) ((Optional<SNode>) findConfiguration2_id6F0PTEeQvEx(node, (SNode) parameters[0]));
       case 5:
-        return (T) ((Optional<SNode>) findInContent_id5plP6f7Xbpl(node, (SNode) parameters[0]));
+        return (T) ((Optional<SNode>) findConfigDirect_id4UXd9usJEzn(node, (SNode) parameters[0]));
       case 6:
-        return (T) ((Optional<SNode>) searchInheritanceChain_idhMocy8Lehw(node, (SNode) parameters[0], (SNode) parameters[1]));
+        return (T) ((Optional<SNode>) findInContent_id5plP6f7Xbpl(node, (SNode) parameters[0]));
       case 7:
+        return (T) ((Optional<SNode>) searchInheritanceChain_idhMocy8Lehw(node, (SNode) parameters[0], (SNode) parameters[1]));
+      case 8:
         changeSelectionState_id5vcbt7LUNyC(node, (_FunctionTypes._void_P1_E0<? super SNode>) parameters[0], ((boolean) (Boolean) parameters[1]));
         return null;
-      case 8:
+      case 9:
         changeSelectionStateHlp_id5vcbt7LVt2j(node, (_FunctionTypes._void_P1_E0<? super SNode>) parameters[0], ((boolean) (Boolean) parameters[1]));
         return null;
-      case 9:
+      case 10:
         setTargetFeatureSelectionUntouched_idWXOPPXmy3H(node);
         return null;
-      case 10:
-        return (T) ((Boolean) childOfFeatureConfigurationWithCardinality_id3ilerxzZg4M(node));
       case 11:
-        return (T) ((SNode) variabilityContainer_id7VwzhOKytg$(node));
+        return (T) ((Boolean) childOfFeatureConfigurationWithCardinality_id3ilerxzZg4M(node));
       case 12:
-        return (T) ((Iterable<SNode>) directChildConfigItems_id5Bs7u1ZK4V$(node));
+        return (T) ((SNode) variabilityContainer_id7VwzhOKytg$(node));
       case 13:
-        return (T) ((List<SNode>) descendantConfigItems_id24slSGEQ$MS(node));
+        return (T) ((Iterable<SNode>) directChildConfigItems_id5Bs7u1ZK4V$(node));
       case 14:
-        return (T) ((List<SNode>) descendantConfigItemsWithoutUserSelection_id6SMbav4BSVm(node));
+        return (T) ((List<SNode>) descendantConfigItems_id24slSGEQ$MS(node));
       case 15:
-        return (T) ((Boolean) hasNotAnyUserSelection_id7_2J9675kRK(node));
+        return (T) ((List<SNode>) descendantConfigItemsWithoutUserSelection_id6SMbav4BSVm(node));
       case 16:
-        return (T) ((Iterable<SNode>) descendantLocalConfigItems_id7Sn21ZwO0hh(node));
+        return (T) ((Boolean) hasNotAnyUserSelection_id7_2J9675kRK(node));
       case 17:
-        return (T) ((Iterable<SNode>) descendantLocalConfigItemsAux_idgaEw9lOwkf(node, ((boolean) (Boolean) parameters[0])));
+        return (T) ((Iterable<SNode>) descendantLocalConfigItems_id7Sn21ZwO0hh(node));
       case 18:
-        return (T) ((List<SNode>) getUsedSubConfigurations_id4I8sp9GGHJ2(node));
+        return (T) ((Iterable<SNode>) descendantLocalConfigItemsAux_idgaEw9lOwkf(node, ((boolean) (Boolean) parameters[0])));
       case 19:
+        return (T) ((List<SNode>) getUsedSubConfigurations_id4I8sp9GGHJ2(node));
+      case 20:
         getUsedSubConfigsRec_id4I8sp9GGYPC(node, (List<SNode>) parameters[0]);
         return null;
-      case 20:
-        return (T) ((SNode) configurationRoot_id6SMbav4Irm1(node));
       case 21:
-        return (T) ((List<SNode>) allAttributeAssignments_id58DfSnqtfhS(node));
+        return (T) ((SNode) configurationRoot_id6SMbav4Irm1(node));
       case 22:
-        return (T) ((Boolean) isSelected_id79zES$XKwaU(node));
+        return (T) ((List<SNode>) allAttributeAssignments_id58DfSnqtfhS(node));
       case 23:
-        return (T) ((Boolean) isAutoSelected_id72bTBsCt0jd(node));
+        return (T) ((Boolean) isSelected_id79zES$XKwaU(node));
       case 24:
-        return (T) ((Boolean) allAncestorsSelected_id6PKIVEbrgkt(node));
+        return (T) ((Boolean) isAutoSelected_id72bTBsCt0jd(node));
       case 25:
-        return (T) ((Boolean) anyAncestorDisSelected_id6PKIVEbz5WX(node));
+        return (T) ((Boolean) allAncestorsSelected_id6PKIVEbrgkt(node));
       case 26:
-        return (T) ((Boolean) isDisSelected_id3ilerxzqGXK(node));
+        return (T) ((Boolean) anyAncestorDisSelected_id6PKIVEbz5WX(node));
       case 27:
-        return (T) ((Boolean) activelySelected_id2tsYCsji1Mf(node));
+        return (T) ((Boolean) isDisSelected_id3ilerxzqGXK(node));
       case 28:
-        return (T) ((Boolean) activelyDisSelected_id2tsYCsjjt7j(node));
+        return (T) ((Boolean) activelySelected_id2tsYCsji1Mf(node));
       case 29:
-        return (T) ((Boolean) hasAutoDecison_id2nkP8exm3rI(node));
+        return (T) ((Boolean) activelyDisSelected_id2tsYCsjjt7j(node));
       case 30:
-        return (T) ((Boolean) isAutoDisSelected_id72bTBsCt62$(node));
+        return (T) ((Boolean) hasAutoDecison_id2nkP8exm3rI(node));
       case 31:
-        return (T) ((Boolean) isForcedTrue_id7yoiok7KC7b(node));
+        return (T) ((Boolean) isAutoDisSelected_id72bTBsCt62$(node));
       case 32:
-        return (T) ((Boolean) isForcedFalse_id7yoiok7KEd_(node));
+        return (T) ((Boolean) isForcedTrue_id7yoiok7KC7b(node));
       case 33:
-        return (T) ((Boolean) hasForcedSelection_id1wdBX7uVtPv(node));
+        return (T) ((Boolean) isForcedFalse_id7yoiok7KEd_(node));
       case 34:
-        return (T) ((Boolean) isVisible_idul08NiF6PE(node));
+        return (T) ((Boolean) hasForcedSelection_id1wdBX7uVtPv(node));
       case 35:
-        return (T) ((Boolean) withoutUserSelection_id4aYaOlg6lwY(node));
+        return (T) ((Boolean) isVisible_idul08NiF6PE(node));
       case 36:
-        return (T) ((Boolean) isUntouched_id5njM4APCUof(node));
+        return (T) ((Boolean) withoutUserSelection_id4aYaOlg6lwY(node));
       case 37:
-        return (T) ((Boolean) getTriState_id1P_ZNIGdBN2(node));
+        return (T) ((Boolean) isUntouched_id5njM4APCUof(node));
       case 38:
+        return (T) ((Boolean) getTriState_id1P_ZNIGdBN2(node));
+      case 39:
         updateTargetFeatureAndSelectionState_id1ZxhL$Gfq9a(node, (SNode) parameters[0]);
         return null;
-      case 39:
+      case 40:
         updateTargetFeatureRaw_id6_PQ_lIOwso(node, (SNode) parameters[0]);
         return null;
-      case 40:
-        return (T) ((Iterable<SNode>) subfeatureConfigurationsTransitive_id1lUmdle4kqX(node));
       case 41:
+        return (T) ((Iterable<SNode>) subfeatureConfigurationsTransitive_id1lUmdle4kqX(node));
+      case 42:
         addConfigAtIndex_id5Bs7u207px$(node, (SNode) parameters[0], ((int) (Integer) parameters[1]));
         return null;
-      case 42:
-        return (T) ((Boolean) applyInheritance_id5Bs7u1ZK2oU(node, (SNode) parameters[0]));
       case 43:
-        return (T) ((SNode) featureFor_idEb9eLhjPye(node));
+        return (T) ((Boolean) applyInheritance_id5Bs7u1ZK2oU(node, (SNode) parameters[0]));
       case 44:
-        return (T) ((Boolean) allSubfeatureConfigsDetached_id6yVv9rbvZxj(node));
+        return (T) ((SNode) featureFor_idEb9eLhjPye(node));
       case 45:
-        return (T) ((Boolean) allAssignmentsInherited_id7VnoEdFws_X(node));
+        return (T) ((Boolean) allSubfeatureConfigsDetached_id6yVv9rbvZxj(node));
       case 46:
-        return (T) ((Boolean) anyUnfinishedAssignment_id142XOBDzcYe(node));
+        return (T) ((Boolean) allAssignmentsInherited_id7VnoEdFws_X(node));
       case 47:
-        return (T) ((SNode) parentConfigItem_idgaEw9mDyqJ(node));
+        return (T) ((Boolean) anyUnfinishedAssignment_id142XOBDzcYe(node));
       case 48:
-        return (T) ((Boolean) hasParentConfig_id2NjwOUXrBy(node));
+        return (T) ((SNode) parentConfigItem_idgaEw9mDyqJ(node));
       case 49:
-        return (T) ((Boolean) configuresSameFeature_id4JeqzBDPjC1(node, (SNode) parameters[0]));
+        return (T) ((Boolean) hasParentConfig_id2NjwOUXrBy(node));
       case 50:
-        return (T) ((String) getPresentation_idhEwIMiw(node));
+        return (T) ((Boolean) configuresSameFeature_id4JeqzBDPjC1(node, (SNode) parameters[0]));
       case 51:
-        return (T) ((String) getDetailedPresentation_id22G2W3WJ92t(node));
+        return (T) ((String) getPresentation_idhEwIMiw(node));
       case 52:
-        return (T) ((ConfigCursor) asCursor_id2Kcps_lTuIP(node));
+        return (T) ((String) getDetailedPresentation_id22G2W3WJ92t(node));
       case 53:
-        return (T) ((Optional<SNode>) findConfiguration2_id6F0PTEeQvEx(node, (SNode) parameters[0]));
+        return (T) ((ConfigCursor) asCursor_id2Kcps_lTuIP(node));
       default:
         throw new BHMethodNotFoundException(this, method);
     }
@@ -545,37 +545,37 @@ public final class AbstractFeatureConfiguration__BehaviorDescriptor extends Base
   public SAbstractConcept getConcept() {
     return CONCEPT;
   }
-  private static SNode check_8ts58n_a0a0a0a0g(Optional<SNode> checkedDotOperand) {
+  private static SNode check_8ts58n_a0a0a0a0h(Optional<SNode> checkedDotOperand) {
     if (null != checkedDotOperand) {
       return checkedDotOperand.orElse(null);
     }
     return null;
   }
-  private static Optional<SNode> check_8ts58n_a0a0a0a0a6(SNode checkedDotOperand, SNode ftn) {
+  private static Optional<SNode> check_8ts58n_a0a0a0a0a7(SNode checkedDotOperand, SNode ftn) {
     if (null != checkedDotOperand) {
       return AbstractFeatureConfiguration__BehaviorDescriptor.findConfiguration2_id6F0PTEeQvEx.invoke(checkedDotOperand, ftn);
     }
     return null;
   }
-  private static SNode check_8ts58n_a0a0a0a0a0g(SNode checkedDotOperand) {
+  private static SNode check_8ts58n_a0a0a0a0a0h(SNode checkedDotOperand) {
     if (null != checkedDotOperand) {
       return SLinkOperations.getTarget(checkedDotOperand, LINKS.config$ID3f);
     }
     return null;
   }
-  private static SNode check_8ts58n_a0a0a0a0a0a6(SNode checkedDotOperand) {
+  private static SNode check_8ts58n_a0a0a0a0a0a7(SNode checkedDotOperand) {
     if (null != checkedDotOperand) {
       return SLinkOperations.getTarget(checkedDotOperand, LINKS.extendedFMC$tFbw);
     }
     return null;
   }
-  private static SNode check_8ts58n_a0a11(SNode checkedDotOperand) {
+  private static SNode check_8ts58n_a0a21(SNode checkedDotOperand) {
     if (null != checkedDotOperand) {
       return IVariabilityContent__BehaviorDescriptor.container_id3D4yX3IUbRd.invoke(checkedDotOperand);
     }
     return null;
   }
-  private static SNode check_8ts58n_a0a0vb(SNode checkedDotOperand) {
+  private static SNode check_8ts58n_a0a0wb(SNode checkedDotOperand) {
     if (null != checkedDotOperand) {
       return SNodeOperations.getParent(checkedDotOperand);
     }
