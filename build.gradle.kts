@@ -183,11 +183,6 @@ val buildLanguages by tasks.registering(BuildLanguages::class) {
     script = scriptsDir.file("build-languages.xml")
 }
 
-val execTestsByInterpreterPre by tasks.registering(TestLanguages::class) {
-    script = scriptsDir.file("build-testInterpreter.xml")
-    targets("generate", "build")
-}
-
 val execTestsByInterpreter by tasks.registering(TestLanguages::class) {
     dependsOn(buildLanguages)
     script = scriptsDir.file("build-interpreted-test-run.xml")
@@ -246,10 +241,14 @@ val failOnTestError by tasks.registering {
     doLast {
         val junitXmls = listOf(
             // written by buildAndRunTests' Ant junitreport aggregation into the project directory
-            file("TESTS-TestSuites.xml"),
+            file(xml"),
             // written directly by the checkmodels task into the build directory, via its own junitFile property
-            layout.buildDirectory.file("TEST-checkProject.xml").get().asFile
-        )
+            layout.buildDirectory.file("TEST-checkProject.xml").get().asFile,
+            // written by execTestsByInterpreter's Ant junitreport aggregation into the build directory;
+            // only evaluated if the task is part of this build, as the file might be stale otherwise
+            layout.buildDirectory.file("TESTS-TestSuites.xml").get().asFile
+                .takeIf { gradle.taskGraph.hasTask(execTestsByInterpreter.get()) }
+        ).filterNotNull()
         val errorsAndFailures = junitXmls.filter { it.exists() }.sumOf { junitXml ->
             val junitResult = XmlSlurper().parse(junitXml)
             val testSuites = junitResult.childNodes().asSequence().map { it as groovy.xml.slurpersupport.Node }
@@ -320,8 +319,19 @@ buildAndRunTests {
     mustRunAfter(checkmodels)
 }
 
+// execTestsByInterpreter aggregates into build/TESTS-TestSuites.xml, which matches buildAndRunTests'
+// "**/TEST*.xml" fileset. Running it afterwards keeps the interpreter results out of the regular test report.
+execTestsByInterpreter {
+    mustRunAfter(buildAndRunTests)
+}
+
+// failOnTestError finalizes buildAndRunTests, but must also wait for the interpreter results to exist
+failOnTestError {
+    mustRunAfter(execTestsByInterpreter)
+}
+
 tasks.check {
-    dependsOn(checkmodels)
+    dependsOn(checkmodels, execTestsByInterpreter)
 }
 
 val packageLanguages by tasks.registering(Zip::class) {
