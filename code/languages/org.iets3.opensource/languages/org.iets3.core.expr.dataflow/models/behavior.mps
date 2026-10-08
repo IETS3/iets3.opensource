@@ -31,6 +31,7 @@
         <reference id="1225194472831" name="overriddenMethod" index="13i0hy" />
       </concept>
       <concept id="1225194691553" name="jetbrains.mps.lang.behavior.structure.ThisNodeExpression" flags="nn" index="13iPFW" />
+      <concept id="3235159848334022093" name="jetbrains.mps.lang.behavior.structure.Node_ConceptMethodCall" flags="nn" index="3zqWPK" />
     </language>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
       <concept id="1082485599095" name="jetbrains.mps.baseLanguage.structure.BlockStatement" flags="nn" index="9aQIb">
@@ -193,7 +194,6 @@
       <concept id="1138411891628" name="jetbrains.mps.lang.smodel.structure.SNodeOperation" flags="nn" index="eCIE_">
         <child id="1144104376918" name="parameter" index="1xVPHs" />
       </concept>
-      <concept id="1179409122411" name="jetbrains.mps.lang.smodel.structure.Node_ConceptMethodCall" flags="nn" index="2qgKlT" />
       <concept id="2396822768958367367" name="jetbrains.mps.lang.smodel.structure.AbstractTypeCastExpression" flags="nn" index="$5XWr">
         <child id="6733348108486823193" name="leftExpression" index="1m5AlR" />
         <child id="3906496115198199033" name="conceptArgument" index="3oSUPX" />
@@ -1509,7 +1509,7 @@
               <node concept="37vLTw" id="2nByCcxIBJT" role="2Oq$k0">
                 <ref role="3cqZAo" node="2vkvJYTeLL3" resolve="blk" />
               </node>
-              <node concept="2qgKlT" id="2nByCcxIFAm" role="2OqNvi">
+              <node concept="3zqWPK" id="5DJjBfj0bC5" role="2OqNvi">
                 <ref role="37wK5l" node="2nByCcx$A7b" resolve="makeFunctionSig" />
               </node>
             </node>
@@ -1937,9 +1937,9 @@
                           <node concept="37vLTw" id="2vkvJYTf3Zb" role="2Oq$k0">
                             <ref role="3cqZAo" node="4z0AnX8178o" resolve="it" />
                           </node>
-                          <node concept="2qgKlT" id="2vkvJYTf3Zc" role="2OqNvi">
+                          <node concept="3zqWPK" id="5DJjBfj0bC7" role="2OqNvi">
                             <ref role="37wK5l" node="5Q9FzcI4YUK" resolve="connectsToOutsidePort" />
-                            <node concept="37vLTw" id="2vkvJYTf3Zd" role="37wK5m">
+                            <node concept="37vLTw" id="5DJjBfj0bC9" role="37wK5m">
                               <ref role="3cqZAo" node="2vkvJYTeVAp" resolve="out" />
                             </node>
                           </node>
@@ -2090,9 +2090,9 @@
                   <node concept="37vLTw" id="2nByCcxO3hI" role="2Oq$k0">
                     <ref role="3cqZAo" node="2vkvJYTfsA0" resolve="b" />
                   </node>
-                  <node concept="2qgKlT" id="2nByCcxO3hJ" role="2OqNvi">
+                  <node concept="3zqWPK" id="5DJjBfj0bCa" role="2OqNvi">
                     <ref role="37wK5l" node="2nByCcx_v36" resolve="makeFunction" />
-                    <node concept="37vLTw" id="5I_8B5ubDBJ" role="37wK5m">
+                    <node concept="37vLTw" id="5DJjBfj0bCc" role="37wK5m">
                       <ref role="3cqZAo" node="5I_8B5ubBm4" resolve="myCollector" />
                     </node>
                   </node>
@@ -2259,12 +2259,12 @@
                             <node concept="37vLTw" id="2vkvJYTf_OM" role="2Oq$k0">
                               <ref role="3cqZAo" node="4z0AnX8178u" resolve="it" />
                             </node>
-                            <node concept="2qgKlT" id="2vkvJYTf_ON" role="2OqNvi">
+                            <node concept="3zqWPK" id="5DJjBfj0bCd" role="2OqNvi">
                               <ref role="37wK5l" node="5Q9FzcI6bZ6" resolve="connectsToInsideInPort" />
-                              <node concept="37vLTw" id="2vkvJYTf_OO" role="37wK5m">
+                              <node concept="37vLTw" id="5DJjBfj0bCf" role="37wK5m">
                                 <ref role="3cqZAo" node="2vkvJYTfgQF" resolve="instance" />
                               </node>
-                              <node concept="2GrUjf" id="2vkvJYTf_OP" role="37wK5m">
+                              <node concept="2GrUjf" id="5DJjBfj0bCg" role="37wK5m">
                                 <ref role="2Gs0qQ" node="2vkvJYTfwFX" resolve="in" />
                               </node>
                             </node>
