@@ -29,6 +29,7 @@ The project does _not_ follow Semantic Versioning and the changes are documented
 - KernelF: Added a workaround that allows the deletion of whole number literals nodes by pressing BACKSPACE or DELETE in case that the number literal value is presented in hexadecimal format. This kind of deletion was only possible for decimal number literals before due to an internal implementation problem.
 Physical units: Units are no longer offered twice in the code completion menu of a number literal.
 - Variability: Intention "Adapt this configuration to the extended configuration" no longer skips sub-configurations whose content is still unspecified. Such a content is now materialized as an inline configuration derived from the referenced feature model, so the values of the extended configuration are inherited.
+- Variability: Intention "Inline referenced configuration" now inlines the content of the whole `extends` chain, and looking up sub-configurations of referenced configurations also considers the configurations they extend (e.g. for `using` arguments).
 
 
 ### Added
