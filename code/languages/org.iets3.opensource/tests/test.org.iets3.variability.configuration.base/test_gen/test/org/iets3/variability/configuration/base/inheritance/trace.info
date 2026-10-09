@@ -288,6 +288,106 @@
       <unit id="1806246553958380856" at="14,0,46,0" name="test.org.iets3.variability.configuration.base.inheritance.ExtendsWithSameConfigRefInInclude_Test" />
     </file>
   </root>
+  <root nodeRef="r:67b8c8a1-c2c2-4db8-bb17-956b347d6975(test.org.iets3.variability.configuration.base.inheritance@tests)/1975840907276820765">
+    <file name="UsingWithFeatueModelConfigurationRef_Test.java">
+      <node id="1975840907276820765" at="23,54,24,60" concept="11" />
+      <node id="1975840907278206662" at="28,77,29,68" concept="2" />
+      <node id="1975840907276820765" at="34,52,35,19" concept="11" />
+      <node id="1975840907276820765" at="39,36,40,46" concept="2" />
+      <node id="1975840907278206662" at="43,79,44,22" concept="2" />
+      <node id="1975840907278206662" at="45,30,46,63" concept="5" />
+      <node id="1975840907278206662" at="46,63,47,171" concept="2" />
+      <node id="1975840907276820765" at="20,0,22,0" concept="9" trace="ourParametersCacheExtension" />
+      <node id="1975840907276820765" at="23,0,26,0" concept="1" trace="UsingWithFeatueModelConfigurationRef_Test#()V" />
+      <node id="1975840907276820765" at="34,0,37,0" concept="1" trace="TestBody#(Ljetbrains/mps/lang/test/runtime/TransformationTest;)V" />
+      <node id="1975840907278206662" at="27,0,31,0" concept="4" trace="test_ErrorMessagesCheck1975840907278206662#()V" />
+      <node id="1975840907276820765" at="38,0,42,0" concept="4" trace="initTestNodes#()V" />
+      <node id="1975840907278206662" at="44,22,48,9" concept="2" />
+      <node id="1975840907278206662" at="43,0,50,0" concept="4" trace="test_ErrorMessagesCheck1975840907278206662#()V" />
+      <scope id="1975840907276820765" at="23,54,24,60" />
+      <scope id="1975840907278206662" at="28,77,29,68" />
+      <scope id="1975840907276820765" at="34,52,35,19" />
+      <scope id="1975840907276820765" at="39,36,40,46" />
+      <scope id="1975840907278206662" at="45,30,47,171">
+        <var name="nodeToCheck" id="1975840907278206662" />
+      </scope>
+      <scope id="1975840907276820765" at="23,0,26,0" />
+      <scope id="1975840907276820765" at="34,0,37,0">
+        <var name="owner" id="1975840907276820765" />
+      </scope>
+      <scope id="1975840907278206662" at="27,0,31,0" />
+      <scope id="1975840907276820765" at="38,0,42,0" />
+      <scope id="1975840907278206662" at="43,79,48,9" />
+      <scope id="1975840907278206662" at="43,0,50,0" />
+      <unit id="1975840907276820765" at="32,0,52,0" name="test.org.iets3.variability.configuration.base.inheritance.UsingWithFeatueModelConfigurationRef_Test$TestBody" />
+      <unit id="1975840907276820765" at="18,0,53,0" name="test.org.iets3.variability.configuration.base.inheritance.UsingWithFeatueModelConfigurationRef_Test" />
+    </file>
+  </root>
+  <root nodeRef="r:67b8c8a1-c2c2-4db8-bb17-956b347d6975(test.org.iets3.variability.configuration.base.inheritance@tests)/2052546787536267582">
+    <file name="InlineReferencedConfigurations_Test.java">
+      <node id="2052546787536267582" at="36,48,37,60" concept="11" />
+      <node id="2052546787536315608" at="41,57,42,48" concept="2" />
+      <node id="2052546787536267582" at="47,52,48,19" concept="11" />
+      <node id="2052546787536267582" at="52,36,53,46" concept="2" />
+      <node id="2052546787536315608" at="56,59,57,22" concept="2" />
+      <node id="2052546787536290226" at="58,30,59,85" concept="2" />
+      <node id="2052546787536828072" at="60,9,61,92" concept="5" />
+      <node id="2052546787536828072" at="61,92,62,82" concept="5" />
+      <node id="2052546787536828072" at="63,183,64,70" concept="5" />
+      <node id="2052546787536828072" at="64,70,65,43" concept="2" />
+      <node id="2052546787536828072" at="65,43,66,46" concept="2" />
+      <node id="2052546787536828072" at="66,46,67,36" concept="2" />
+      <node id="2052546787536828072" at="67,36,68,139" concept="2" />
+      <node id="2052546787536828072" at="68,139,69,148" concept="2" />
+      <node id="2052546787536828072" at="69,148,70,154" concept="2" />
+      <node id="2052546787536828072" at="70,154,71,27" concept="6" />
+      <node id="2052546787536828072" at="75,15,76,136" concept="5" />
+      <node id="2052546787536828072" at="76,136,77,219" concept="5" />
+      <node id="2052546787536828072" at="77,219,78,134" concept="2" />
+      <node id="2052546787536828072" at="80,13,81,71" concept="2" />
+      <node id="2052546787536267582" at="33,0,35,0" concept="9" trace="ourParametersCacheExtension" />
+      <node id="2052546787536267582" at="36,0,39,0" concept="1" trace="InlineReferencedConfigurations_Test#()V" />
+      <node id="2052546787536267582" at="47,0,50,0" concept="1" trace="TestBody#(Ljetbrains/mps/lang/test/runtime/TransformationTest;)V" />
+      <node id="2052546787536315608" at="40,0,44,0" concept="4" trace="test_inlineUnspecified#()V" />
+      <node id="2052546787536267582" at="51,0,55,0" concept="4" trace="initTestNodes#()V" />
+      <node id="2052546787536828072" at="74,81,79,15" concept="0" />
+      <node id="2052546787536828072" at="73,47,80,13" concept="3" />
+      <node id="2052546787536828072" at="62,82,72,23" concept="5" />
+      <node id="2052546787536828072" at="72,23,82,11" concept="3" />
+      <node id="2052546787536828072" at="59,85,83,9" concept="0" />
+      <node id="2052546787536315608" at="57,22,84,9" concept="2" />
+      <node id="2052546787536315608" at="56,0,86,0" concept="4" trace="test_inlineUnspecified#()V" />
+      <scope id="2052546787536267582" at="36,48,37,60" />
+      <scope id="2052546787536315608" at="41,57,42,48" />
+      <scope id="2052546787536267582" at="47,52,48,19" />
+      <scope id="2052546787536267582" at="52,36,53,46" />
+      <scope id="2052546787536267582" at="36,0,39,0" />
+      <scope id="2052546787536267582" at="47,0,50,0">
+        <var name="owner" id="2052546787536267582" />
+      </scope>
+      <scope id="2052546787536828072" at="75,15,78,134">
+        <var name="input_b0a0b0f6" id="2052546787536828072" />
+        <var name="repository" id="2052546787536828072" />
+      </scope>
+      <scope id="2052546787536315608" at="40,0,44,0" />
+      <scope id="2052546787536267582" at="51,0,55,0" />
+      <scope id="2052546787536828072" at="74,81,79,15" />
+      <scope id="2052546787536828072" at="63,183,71,27">
+        <var name="options" id="2052546787536828072" />
+      </scope>
+      <scope id="2052546787536828072" at="73,47,81,71" />
+      <scope id="2052546787536828072" at="60,9,82,11">
+        <var name="actualNode_b0a0b0f6" id="2052546787536828072" />
+        <var name="expectedNode_b0a0b0f6" id="2052546787536828072" />
+        <var name="result_b0a0b0f6" id="2052546787536828072" />
+      </scope>
+      <scope id="2052546787536315608" at="58,30,83,9" />
+      <scope id="2052546787536315608" at="56,59,84,9" />
+      <scope id="2052546787536315608" at="56,0,86,0" />
+      <unit id="2052546787536267582" at="45,0,88,0" name="test.org.iets3.variability.configuration.base.inheritance.InlineReferencedConfigurations_Test$TestBody" />
+      <unit id="2052546787536267582" at="31,0,89,0" name="test.org.iets3.variability.configuration.base.inheritance.InlineReferencedConfigurations_Test" />
+    </file>
+  </root>
   <root nodeRef="r:67b8c8a1-c2c2-4db8-bb17-956b347d6975(test.org.iets3.variability.configuration.base.inheritance@tests)/2869035181859516664">
     <file name="AttributeRestore_Test.java">
       <node id="2869035181859516664" at="19,34,20,60" concept="11" />
@@ -969,6 +1069,39 @@
       <scope id="4999651317693009722" at="43,0,50,0" />
       <unit id="4999651317693008452" at="32,0,52,0" name="test.org.iets3.variability.configuration.base.inheritance.ReferenceToAbstractConfig_Test$TestBody" />
       <unit id="4999651317693008452" at="18,0,53,0" name="test.org.iets3.variability.configuration.base.inheritance.ReferenceToAbstractConfig_Test" />
+    </file>
+  </root>
+  <root nodeRef="r:67b8c8a1-c2c2-4db8-bb17-956b347d6975(test.org.iets3.variability.configuration.base.inheritance@tests)/6221111985299954285">
+    <file name="FindConfigurationThroughFeatureModelInclude_Test.java">
+      <node id="6221111985299954285" at="21,61,22,60" concept="11" />
+      <node id="6221111985299954305" at="26,81,27,72" concept="2" />
+      <node id="6221111985299954285" at="32,52,33,19" concept="11" />
+      <node id="6221111985299954285" at="37,36,38,46" concept="2" />
+      <node id="6221111985299954305" at="41,83,42,22" concept="2" />
+      <node id="6221111985299954308" at="43,30,44,116" concept="7" />
+      <node id="6221111985299954310" at="44,116,45,193" concept="2" />
+      <node id="6221111985299954285" at="18,0,20,0" concept="9" trace="ourParametersCacheExtension" />
+      <node id="6221111985299954285" at="21,0,24,0" concept="1" trace="FindConfigurationThroughFeatureModelInclude_Test#()V" />
+      <node id="6221111985299954285" at="32,0,35,0" concept="1" trace="TestBody#(Ljetbrains/mps/lang/test/runtime/TransformationTest;)V" />
+      <node id="6221111985299954305" at="25,0,29,0" concept="4" trace="test_findConfigOfFeatureInIncludedFeatureModel#()V" />
+      <node id="6221111985299954285" at="36,0,40,0" concept="4" trace="initTestNodes#()V" />
+      <node id="6221111985299954305" at="42,22,46,9" concept="2" />
+      <node id="6221111985299954305" at="41,0,48,0" concept="4" trace="test_findConfigOfFeatureInIncludedFeatureModel#()V" />
+      <scope id="6221111985299954285" at="21,61,22,60" />
+      <scope id="6221111985299954305" at="26,81,27,72" />
+      <scope id="6221111985299954285" at="32,52,33,19" />
+      <scope id="6221111985299954285" at="37,36,38,46" />
+      <scope id="6221111985299954305" at="43,30,45,193" />
+      <scope id="6221111985299954285" at="21,0,24,0" />
+      <scope id="6221111985299954285" at="32,0,35,0">
+        <var name="owner" id="6221111985299954285" />
+      </scope>
+      <scope id="6221111985299954305" at="25,0,29,0" />
+      <scope id="6221111985299954285" at="36,0,40,0" />
+      <scope id="6221111985299954305" at="41,83,46,9" />
+      <scope id="6221111985299954305" at="41,0,48,0" />
+      <unit id="6221111985299954285" at="30,0,50,0" name="test.org.iets3.variability.configuration.base.inheritance.FindConfigurationThroughFeatureModelInclude_Test$TestBody" />
+      <unit id="6221111985299954285" at="16,0,51,0" name="test.org.iets3.variability.configuration.base.inheritance.FindConfigurationThroughFeatureModelInclude_Test" />
     </file>
   </root>
   <root nodeRef="r:67b8c8a1-c2c2-4db8-bb17-956b347d6975(test.org.iets3.variability.configuration.base.inheritance@tests)/6475083214318112830">
