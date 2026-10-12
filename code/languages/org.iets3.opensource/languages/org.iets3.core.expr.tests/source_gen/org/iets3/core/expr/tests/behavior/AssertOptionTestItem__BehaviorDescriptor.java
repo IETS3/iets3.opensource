@@ -21,6 +21,7 @@ import jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations;
 import java.util.Collection;
 import org.iets3.core.expr.base.plugin.MessageValue;
 import org.iets3.core.expr.base.plugin.ConstraintFailedException;
+import org.iets3.core.expr.base.behavior.TraceFailures;
 import com.mbeddr.mpsutil.interpreter.rt.InvalidValueException;
 import org.iets3.core.expr.base.plugin.CVH;
 import org.iets3.core.base.behavior.ICanStoreCheckResult__BehaviorDescriptor;
@@ -72,10 +73,14 @@ public final class AssertOptionTestItem__BehaviorDescriptor extends BaseBHDescri
       result.setOk(false);
       result.setActual("<constraint failed>");
       result.setErrorMessage(AbstractTestItem__BehaviorDescriptor.wrapException_id3YhAT14QasA.invoke(__thisNode__, "constraint failed", ex));
+      // Keep the trace the interpreter had built when it threw, so that Show Trace still works.
+      result.setTrace(TraceFailures.markFailure(ex));
     } catch (InvalidValueException ex) {
       result.setOk(false);
       result.setActual("invalid value>");
       result.setErrorMessage(AbstractTestItem__BehaviorDescriptor.wrapException_id3YhAT14QasA.invoke(__thisNode__, "invalid value", ex));
+      // Keep the trace the interpreter had built when it threw, so that Show Trace still works.
+      result.setTrace(TraceFailures.markFailure(ex));
     } finally {
       CVH.overrideWithException = false;
     }

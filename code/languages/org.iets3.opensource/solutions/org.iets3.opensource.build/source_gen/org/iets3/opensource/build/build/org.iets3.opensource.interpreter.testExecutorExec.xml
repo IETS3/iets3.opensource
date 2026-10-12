@@ -94,7 +94,6 @@
       <plugin path="${artifacts.com.mbeddr.platform}/com.mbeddr.mpsutil.filepicker" id="com.mbeddr.mpsutil.filepicker" />
       <plugin path="${artifacts.com.mbeddr.platform}/com.mbeddr.mpsutil.genreview" id="com.mbeddr.mpsutil.genreview" />
       <plugin path="${artifacts.com.mbeddr.platform}/com.mbeddr.mpsutil.gensupport" id="com.mbeddr.mpsutil.gensupport" />
-      <plugin path="${artifacts.com.mbeddr.platform}/com.mbeddr.mpsutil.httpsupport" id="com.mbeddr.mpsutil.httpsupport" />
       <plugin path="${artifacts.com.mbeddr.platform}/com.mbeddr.mpsutil.incrementalcomputation" id="com.mbeddr.mpsutil.incrementalcomputation" />
       <plugin path="${artifacts.com.mbeddr.platform}/com.mbeddr.mpsutil.infrastructure.misc" id="com.mbeddr.mpsutil.infrastructure.misc" />
       <plugin path="${artifacts.com.mbeddr.platform}/com.mbeddr.mpsutil.intentions" id="com.mbeddr.mpsutil.intentions" />
@@ -382,8 +381,8 @@
       <library file="${artifacts.mps}/plugins/mps-debugger-api/languages/jetbrains.mps.debugger.api.api.jar" />
       <library file="${artifacts.mps}/plugins/mps-debugger-api/languages/jetbrains.mps.debugger.api.lang.jar" />
       <library file="${artifacts.mps}/plugins/mps-debugger-api/languages/jetbrains.mps.debugger.api.runtime.jar" />
+      <library file="${artifacts.mps}/plugins/mps-debugger-api/languages/jetbrains.mps.debugger.core.jar" />
       <library file="${artifacts.mps}/plugins/mps-debugger-java/languages/JDK-tools.jar" />
-      <library file="${artifacts.mps}/plugins/mps-debugger-java/languages/jetbrains.mps.debugger.core.jar" />
       <library file="${artifacts.mps}/plugins/mps-debugger-java/languages/jetbrains.mps.debugger.java.api.jar" />
       <library file="${artifacts.mps}/plugins/mps-debugger-java/languages/jetbrains.mps.debugger.java.evaluation.jar" />
       <library file="${artifacts.mps}/plugins/mps-debugger-java/languages/jetbrains.mps.debugger.java.runtime.jar" />
@@ -439,6 +438,7 @@
       <library file="${artifacts.org.iets3.opensource}/org.iets3.core.os/languages/iets3.core.os/org.iets3.core.expr.testExecution.jar" />
       <library file="${artifacts.org.iets3.opensource}/org.iets3.core.os/languages/iets3.core.os/org.iets3.core.expr.tests.jar" />
       <library file="${artifacts.org.iets3.opensource}/org.iets3.core.os/languages/iets3.core.os/org.iets3.core.expr.toplevel.jar" />
+      <library file="${artifacts.org.iets3.opensource}/org.iets3.core.os/languages/iets3.core.os/org.iets3.internal.modelaccessor.jar" />
       <library file="${iets3.lang.opensource}/tests/test.in.expr.os" />
       <library file="${iets3.lang.opensource}/tests/test.ts.expr.os" />
       <macro name="iets3.github.opensource.home" path="${iets3.github.opensource.home}" />

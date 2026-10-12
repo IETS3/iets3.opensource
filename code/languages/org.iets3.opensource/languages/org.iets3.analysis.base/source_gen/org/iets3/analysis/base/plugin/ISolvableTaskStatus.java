@@ -6,12 +6,12 @@ import javax.swing.Icon;
 import java.util.Arrays;
 
 public enum ISolvableTaskStatus {
-  Timeout(IconContainer.ICON_a0, 6),
-  Failure(IconContainer.ICON_a1, 5),
-  Running(IconContainer.ICON_a2, 2),
-  Done(IconContainer.ICON_a3, 4),
-  Rejected(IconContainer.ICON_a4, 4),
-  Queued(IconContainer.ICON_a5_0, 3);
+  Timeout(IconContainer.ICON1, 6),
+  Failure(IconContainer.ICON2, 5),
+  Running(IconContainer.ICON3, 2),
+  Done(IconContainer.ICON4, 4),
+  Rejected(IconContainer.ICON5, 4),
+  Queued(IconContainer.ICON6, 3);
 
 
   private Icon icon;

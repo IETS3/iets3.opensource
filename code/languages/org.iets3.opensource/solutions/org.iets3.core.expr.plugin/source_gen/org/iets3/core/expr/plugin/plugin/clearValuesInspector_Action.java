@@ -21,7 +21,7 @@ import org.jetbrains.mps.openapi.language.SConcept;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 
 public class clearValuesInspector_Action extends BaseAction {
-  private static final Icon ICON = IconContainer.ICON_a0_1;
+  private static final Icon ICON = IconContainer.ICON2;
 
   public clearValuesInspector_Action() {
     super("Clear Inspectors", "", ICON);

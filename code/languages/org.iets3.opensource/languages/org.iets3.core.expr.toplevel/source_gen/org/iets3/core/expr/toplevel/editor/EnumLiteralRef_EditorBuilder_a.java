@@ -28,15 +28,12 @@ import jetbrains.mps.lang.core.behavior.LinkAttribute__BehaviorDescriptor;
 import jetbrains.mps.nodeEditor.EditorManager;
 import jetbrains.mps.openapi.editor.update.AttributeKind;
 import jetbrains.mps.nodeEditor.cells.EditorCell_Property;
-import jetbrains.mps.nodeEditor.cells.ModelAccessor;
-import jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations;
-import org.iets3.core.expr.toplevel.behavior.EnumLiteral__BehaviorDescriptor;
-import jetbrains.mps.editor.runtime.cells.EmptyCellAction;
+import jetbrains.mps.nodeEditor.cells.EditorCell_RefPresentation;
+import jetbrains.mps.smodel.action.IReferentPresentationProvider;
 import jetbrains.mps.nodeEditor.MPSFonts;
 import jetbrains.mps.nodeEditor.MPSColors;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import org.jetbrains.mps.openapi.language.SConcept;
-import org.jetbrains.mps.openapi.language.SProperty;
 
 /*package*/ class EnumLiteralRef_EditorBuilder_a extends AbstractEditorBuilder {
   @NotNull
@@ -115,7 +112,7 @@ import org.jetbrains.mps.openapi.language.SProperty;
     }
 
     /*package*/ EditorCell createCell() {
-      return createReadOnlyModelAccessor_0();
+      return createReferencePresentation_0();
     }
 
     @NotNull
@@ -124,23 +121,14 @@ import org.jetbrains.mps.openapi.language.SProperty;
       return myNode;
     }
 
-    private EditorCell createReadOnlyModelAccessor_0() {
-      EditorCell_Property editorCell = EditorCell_Property.create(getEditorContext(), new ModelAccessor.ReadOnly() {
-        public String getText() {
-          if (SPropertyOperations.getBoolean(EnumLiteral__BehaviorDescriptor.enumDecl_id67Y8mp$M9$v.invoke(myNode), PROPS.qualified$Uqnz)) {
-            return EnumLiteral__BehaviorDescriptor.nameWithEnum_id67Y8mp$HuPC.invoke(myNode);
-          } else {
-            return SPropertyOperations.getString(myNode, PROPS.name$MnvL);
-          }
-        }
-      }, myNode);
-      editorCell.setAction(CellActionType.DELETE, EmptyCellAction.getInstance());
-      editorCell.setAction(CellActionType.BACKSPACE, EmptyCellAction.getInstance());
-      editorCell.setCellId("ReadOnlyModelAccessor_3htvbn_a0a0");
+    private EditorCell createReferencePresentation_0() {
+      EditorCell_Property editorCell = EditorCell_RefPresentation.create(getEditorContext(), myNode, myReferencingNode, IReferentPresentationProvider.DEFAULT_PRESENTATION);
+      editorCell.setCellId("literal");
       Style style = new StyleImpl();
       style.set(StyleAttributes.FONT_STYLE, MPSFonts.BOLD_ITALIC);
       style.set(StyleAttributes.TEXT_COLOR, getStyleRegistry().getSimpleColor(MPSColors.darkGray));
       style.set(StyleAttributes.EDITABLE, true);
+      style.set(StyleAttributes.AUTO_DELETABLE, true);
       editorCell.getStyle().putAll(style);
       return editorCell;
     }
@@ -152,10 +140,5 @@ import org.jetbrains.mps.openapi.language.SProperty;
 
   private static final class CONCEPTS {
     /*package*/ static final SConcept LinkAttribute$v_ = MetaAdapterFactory.getConcept(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x2eb1ad060897da51L, "jetbrains.mps.lang.core.structure.LinkAttribute");
-  }
-
-  private static final class PROPS {
-    /*package*/ static final SProperty qualified$Uqnz = MetaAdapterFactory.getProperty(0x71934284d7d145eeL, 0xa0548c072591085fL, 0x61fe216664a72eaeL, 0x61fe216664c89321L, "qualified");
-    /*package*/ static final SProperty name$MnvL = MetaAdapterFactory.getProperty(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L, 0x110396ec041L, "name");
   }
 }
