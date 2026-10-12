@@ -21,10 +21,13 @@ import de.slisson.mps.tables.runtime.style.ITableStyleFactory;
 import jetbrains.mps.openapi.editor.style.Style;
 import jetbrains.mps.editor.runtime.style.StyleImpl;
 import jetbrains.mps.internal.collections.runtime.ListSequence;
+import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
+import de.slisson.mps.tables.runtime.cells.PartialTableEditor;
+import de.slisson.mps.tables.runtime.gridmodel.EditorCellGridLeaf;
+import jetbrains.mps.nodeEditor.cells.EditorCell_Constant;
 import de.slisson.mps.tables.runtime.gridmodel.GridAdapter;
 import de.slisson.mps.tables.runtime.gridmodel.IHeaderNodeInsertAction;
 import de.slisson.mps.tables.runtime.gridmodel.ChildNodesInsertAction;
-import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
 import jetbrains.mps.internal.collections.runtime.Sequence;
 import jetbrains.mps.openapi.editor.cells.SubstituteInfo;
 import de.slisson.mps.hacks.editor.SubstituteUtil;
@@ -41,9 +44,6 @@ import jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations;
 import org.iets3.variability.artifacts.base.behavior.IPreviewableArtifact__BehaviorDescriptor;
 import org.iets3.variability.artifacts.base.plugin.PreviewCriteria;
 import org.iets3.variability.artifacts.base.behavior.IVariationPointBase__BehaviorDescriptor;
-import de.slisson.mps.tables.runtime.cells.PartialTableEditor;
-import de.slisson.mps.tables.runtime.gridmodel.EditorCellGridLeaf;
-import jetbrains.mps.nodeEditor.cells.EditorCell_Constant;
 import org.iets3.variability.artifacts.base.editor.ArtifactStyles_StyleSheet.FeatureDecTabTableStyleClass;
 import jetbrains.mps.lang.editor.cellProviders.SingleRoleCellProvider;
 import org.jetbrains.mps.openapi.language.SContainmentLink;
@@ -106,6 +106,8 @@ import org.jetbrains.mps.openapi.language.SProperty;
           editorCell.value.setCellId("Table_wguyup_a");
           editorCell.value.setBig(true);
           setCellContext(editorCell.value);
+          if (true) {
+          }
           TableSelectionActionMap.setCellActions(editorCell.value, myNode, getEditorContext());
           ITableStyleFactory factory = new ITableStyleFactory() {
             public Style createStyle(final int columnIndex, final int rowIndex) {
@@ -136,12 +138,23 @@ import org.jetbrains.mps.openapi.language.SProperty;
   public Grid createStaticVertical_wguyup_a0(final EditorContext editorContext, final SNode node) {
     Grid grid = new Grid();
 
-    List<Grid> children = new ArrayList<Grid>(2);
-    if (true) {
-      children.add(createChildsVertical_wguyup_a0a(editorContext, node));
+    List<Grid> children = new ArrayList<Grid>(3);
+    if (new Object() {
+      public boolean condition() {
+        return ListSequence.fromList(SLinkOperations.getChildren(node, LINKS.contents$oelO)).isEmpty();
+      }
+    }.condition()) {
+      children.add(createTableCell_wguyup_a0a(editorContext, node));
+    }
+    if (new Object() {
+      public boolean condition() {
+        return ListSequence.fromList(SLinkOperations.getChildren(node, LINKS.contents$oelO)).isNotEmpty();
+      }
+    }.condition()) {
+      children.add(createChildsVertical_wguyup_b0a(editorContext, node));
     }
     if (true) {
-      children.add(createStaticHorizontal_wguyup_b0a(editorContext, node));
+      children.add(createStaticHorizontal_wguyup_c0a(editorContext, node));
     }
     int maxWidth = grid.getColumnHeadersSizeX();
     for (Grid child : ListSequence.fromList(children)) {
@@ -163,7 +176,51 @@ import org.jetbrains.mps.openapi.language.SProperty;
     grid.setOrAddStyle(style);
     return grid;
   }
-  public Grid createChildsVertical_wguyup_a0a(final EditorContext editorContext, final SNode node) {
+  public Grid createTableCell_wguyup_a0a(final EditorContext editorContext, final SNode node) {
+    if (!(new Object() {
+      public boolean condition() {
+        return ListSequence.fromList(SLinkOperations.getChildren(node, LINKS.contents$oelO)).isEmpty();
+      }
+    }.condition())) {
+      return new Grid();
+    }
+
+    EditorCell cell = createConstant_0();
+    final Style style = new ITableStyleFactory() {
+      public Style createStyle(final int columnIndex, final int rowIndex) {
+        Style style = new StyleImpl();
+        final EditorCell editorCell = null;
+        return style;
+      }
+    }.createStyle(0, 0);
+
+    Grid grid;
+    if (cell instanceof PartialTableEditor) {
+      grid = ((PartialTableEditor) cell).getGrid().clone();
+    } else {
+      grid = new Grid();
+      EditorCellGridLeaf leaf = new EditorCellGridLeaf(cell);
+      leaf.setStyle(style);
+      grid.setElement(0, 0, leaf);
+    }
+
+    return grid;
+  }
+  private EditorCell createConstant_0() {
+    EditorCell_Constant editorCell = new EditorCell_Constant(getEditorContext(), myNode, "<no contents>");
+    editorCell.setCellId("empty_contents");
+    FeatureDecTab_Empty_ActionMap.setCellActions(editorCell, myNode, getEditorContext());
+    editorCell.setDefaultText("");
+    return editorCell;
+  }
+  public Grid createChildsVertical_wguyup_b0a(final EditorContext editorContext, final SNode node) {
+    if (!(new Object() {
+      public boolean condition() {
+        return ListSequence.fromList(SLinkOperations.getChildren(node, LINKS.contents$oelO)).isNotEmpty();
+      }
+    }.condition())) {
+      return new Grid();
+    }
     Grid grid = new Grid();
     GridAdapter gridAdapter = new GridAdapter(grid, editorContext, node);
 
@@ -237,7 +294,7 @@ import org.jetbrains.mps.openapi.language.SProperty;
     grid.flattenOneLevel();
     return grid;
   }
-  public Grid createStaticHorizontal_wguyup_b0a(final EditorContext editorContext, final SNode node) {
+  public Grid createStaticHorizontal_wguyup_c0a(final EditorContext editorContext, final SNode node) {
     Grid grid = new Grid();
 
     List<Grid> children = new ArrayList<Grid>(2);
@@ -265,7 +322,7 @@ import org.jetbrains.mps.openapi.language.SProperty;
         return true;
       }
     }.condition()) {
-      children.add(createTableCell_wguyup_a1a0(editorContext, node));
+      children.add(createTableCell_wguyup_a2a0(editorContext, node));
     }
     if (new Object() {
       public boolean condition() {
@@ -287,7 +344,7 @@ import org.jetbrains.mps.openapi.language.SProperty;
         return true;
       }
     }.condition()) {
-      children.add(createTableCell_wguyup_b1a0(editorContext, node));
+      children.add(createTableCell_wguyup_b2a0(editorContext, node));
     }
     int maxHeight = grid.getRowHeadersSizeY();
     for (Grid child : ListSequence.fromList(children)) {
@@ -309,7 +366,7 @@ import org.jetbrains.mps.openapi.language.SProperty;
     grid.setOrAddStyle(style);
     return grid;
   }
-  public Grid createTableCell_wguyup_a1a0(final EditorContext editorContext, final SNode node) {
+  public Grid createTableCell_wguyup_a2a0(final EditorContext editorContext, final SNode node) {
     if (!(new Object() {
       public boolean condition() {
         final SNode ivaa = ArtifactHelper.findIVAA(node);
@@ -337,7 +394,7 @@ import org.jetbrains.mps.openapi.language.SProperty;
       return new Grid();
     }
 
-    EditorCell cell = createConstant_0();
+    EditorCell cell = createConstant_1();
     final Style style = new ITableStyleFactory() {
       public Style createStyle(final int columnIndex, final int rowIndex) {
         Style style = new StyleImpl();
@@ -358,16 +415,16 @@ import org.jetbrains.mps.openapi.language.SProperty;
 
     return grid;
   }
-  private EditorCell createConstant_0() {
+  private EditorCell createConstant_1() {
     EditorCell_Constant editorCell = new EditorCell_Constant(getEditorContext(), myNode, "default:");
-    editorCell.setCellId("Constant_wguyup_a0b0a");
+    editorCell.setCellId("Constant_wguyup_a0c0a");
     Style style = new StyleImpl();
     new FeatureDecTabTableStyleClass(this).apply(style, editorCell);
     editorCell.getStyle().putAll(style);
     editorCell.setDefaultText("");
     return editorCell;
   }
-  public Grid createTableCell_wguyup_b1a0(final EditorContext editorContext, final SNode node) {
+  public Grid createTableCell_wguyup_b2a0(final EditorContext editorContext, final SNode node) {
     if (!(new Object() {
       public boolean condition() {
         final SNode ivaa = ArtifactHelper.findIVAA(node);
@@ -413,14 +470,14 @@ import org.jetbrains.mps.openapi.language.SProperty;
     return grid;
   }
   private EditorCell createRefNode_0() {
-    SingleRoleCellProvider provider = new defaultSingleRoleHandler_wguyup_a1b0a(myNode, LINKS.default$k9_M, getEditorContext());
+    SingleRoleCellProvider provider = new defaultSingleRoleHandler_wguyup_a1c0a(myNode, LINKS.default$k9_M, getEditorContext());
     return provider.createCell();
   }
-  private static class defaultSingleRoleHandler_wguyup_a1b0a extends SingleRoleCellProvider {
+  private static class defaultSingleRoleHandler_wguyup_a1c0a extends SingleRoleCellProvider {
     @NotNull
     private SNode myNode;
 
-    public defaultSingleRoleHandler_wguyup_a1b0a(SNode ownerNode, SContainmentLink containmentLink, EditorContext context) {
+    public defaultSingleRoleHandler_wguyup_a1c0a(SNode ownerNode, SContainmentLink containmentLink, EditorContext context) {
       super(containmentLink, context);
       myNode = ownerNode;
     }

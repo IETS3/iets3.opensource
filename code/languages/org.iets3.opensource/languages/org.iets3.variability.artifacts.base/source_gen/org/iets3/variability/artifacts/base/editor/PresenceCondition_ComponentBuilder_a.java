@@ -121,6 +121,8 @@ import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
       style.set(StyleAttributes.READ_ONLY, _StyleParameter_QueryFunction_76n8kg_a0b0());
       style.set(StyleAttributes.BACKGROUND_COLOR, getStyleRegistry().getSimpleColor(_StyleParameter_QueryFunction_76n8kg_a1b0()));
       editorCell.getStyle().putAll(style);
+      if (true) {
+      }
     }
     @Override
     protected EditorCell createEmptyCell() {
