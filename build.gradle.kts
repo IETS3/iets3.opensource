@@ -249,12 +249,18 @@ val failOnTestError by tasks.registering {
             layout.buildDirectory.file("TESTS-TestSuites.xml").get().asFile
                 .takeIf { gradle.taskGraph.hasTask(execTestsByInterpreter.get()) }
         ).filterNotNull()
-        val errorsAndFailures = junitXmls.filter { it.exists() }.sumOf { junitXml ->
+        val errorsAndFailures = junitXmls.sumOf { junitXml ->
+            if (!junitXml.exists()) {
+                logger.warn("JUnit result file not found, skipping: $junitXml")
+                return@sumOf 0
+            }
             val junitResult = XmlSlurper().parse(junitXml)
             val testSuites = junitResult.childNodes().asSequence().map { it as groovy.xml.slurpersupport.Node }
-            testSuites.sumOf {
+            val count = testSuites.sumOf {
                 it.attributes()["errors"].toString().toInt() + it.attributes()["failures"].toString().toInt()
             }
+            if (count > 0) logger.error("JUnit errors or failures found in $junitXml")
+            count
         }
         if (errorsAndFailures > 0) {
             throw GradleException("$errorsAndFailures JUnit tests failed. Check the report for details.")

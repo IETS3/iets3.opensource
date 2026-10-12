@@ -11,6 +11,7 @@ import jetbrains.mps.internal.collections.runtime.Sequence;
 import jetbrains.mps.build.behavior.BuildProject__BehaviorDescriptor;
 import jetbrains.mps.internal.collections.runtime.ListSequence;
 import org.jetbrains.mps.openapi.language.SAbstractConcept;
+import org.jetbrains.mps.openapi.persistence.PersistenceFacade;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
 import org.jetbrains.mps.openapi.language.SConcept;
@@ -29,7 +30,7 @@ public class PrefillRunner {
       ListSequence.fromList(projects).addElement(project);
       for (SNode p : ListSequence.fromList(projects)) {
         for (SNode s : ListSequence.fromList(SNodeOperations.getNodeDescendants(p, CONCEPTS.BuildMps_Solution$R7, false, new SAbstractConcept[]{}))) {
-          if ("26c41006-651b-45a4-aced-69694c3d5234".equals(SPropertyOperations.getString(s, PROPS.uuid$pC01))) {
+          if (PersistenceFacade.getInstance().createModuleReference("26c41006-651b-45a4-aced-69694c3d5234(org.iets3.opensource.interpreterExecutor)").getModuleId().toString().equals(SPropertyOperations.getString(s, PROPS.uuid$pC01))) {
             SLinkOperations.setTarget(newNode, LINKS.solution$MOiH, s);
             return;
           }
