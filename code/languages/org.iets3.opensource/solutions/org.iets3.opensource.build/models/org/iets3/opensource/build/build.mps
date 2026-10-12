@@ -17600,6 +17600,11 @@
           </node>
         </node>
       </node>
+      <node concept="1SiIV0" id="4zE7o4wmM3T" role="3bR37C">
+        <node concept="3bR9La" id="4zE7o4wmM3U" role="1SiIV1">
+          <ref role="3bR37D" to="ffeo:1TaHNgiIbJ$" resolve="jetbrains.mps.ide.editor" />
+        </node>
+      </node>
     </node>
     <node concept="1E1JtA" id="4dUR79id6MA" role="3989C9">
       <property role="BnDLt" value="true" />
