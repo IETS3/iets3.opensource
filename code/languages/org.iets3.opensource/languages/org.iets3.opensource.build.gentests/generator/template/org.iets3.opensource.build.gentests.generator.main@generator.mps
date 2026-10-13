@@ -2577,8 +2577,8 @@
     </node>
   </node>
   <node concept="13MO4I" id="7a5Ko4x$u8K">
-    <property role="TrG5h" value="reduce_CustomRunnerAspect" />
-    <ref role="3gUMe" to="dc1n:7Lttyc2SH5O" resolve="CustomRunnerAspect" />
+    <property role="TrG5h" value="reduce_InterpreterTestRunnerAspect" />
+    <ref role="3gUMe" to="dc1n:7Lttyc2SH5O" resolve="InterpreterTestRunnerAspect" />
     <node concept="1l3spW" id="3BExUgsKgFP" role="13RCb5">
       <property role="TrG5h" value="_project" />
       <node concept="1y0Vig" id="3BExUgsKkP9" role="1hWBAP">
@@ -3943,12 +3943,12 @@
     </node>
   </node>
   <node concept="jVnub" id="7a5Ko4x$q6U">
-    <property role="TrG5h" value="switchCustomBuildAspect" />
+    <property role="TrG5h" value="switchInterpreterTestRunnerAspect" />
     <ref role="phYkn" to="426s:L6i6iqJ68P" resolve="switch_RunAspectForMPS" />
     <node concept="3aamgX" id="7a5Ko4x$qFF" role="3aUrZf">
-      <ref role="30HIoZ" to="dc1n:7Lttyc2SH5O" resolve="CustomRunnerAspect" />
+      <ref role="30HIoZ" to="dc1n:7Lttyc2SH5O" resolve="InterpreterTestRunnerAspect" />
       <node concept="j$656" id="7a5Ko4x$u8M" role="1lVwrX">
-        <ref role="v9R2y" node="7a5Ko4x$u8K" resolve="reduce_CustomRunnerAspect" />
+        <ref role="v9R2y" node="7a5Ko4x$u8K" resolve="reduce_InterpreterTestRunnerAspect" />
       </node>
     </node>
   </node>
