@@ -6,6 +6,9 @@ import org.jetbrains.mps.openapi.model.SNode;
 import org.iets3.variability.configuration.base.plugin.FeatureModelIncludeUtil;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
+import org.iets3.variability.configuration.base.behavior.FeatureModelConfiguration__BehaviorDescriptor;
+import org.iets3.variability.configuration.base.behavior.FeatureModelConfigurationBase__BehaviorDescriptor;
+import org.iets3.variability.configuration.base.plugin.FeatureModelConfigurationConstraintsUtil;
 import org.jetbrains.mps.openapi.language.SContainmentLink;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import org.jetbrains.mps.openapi.language.SReferenceLink;
@@ -33,10 +36,33 @@ public class IntentionUtilConfiguration {
     return (SLinkOperations.getTarget(fmc, LINKS.extendedFMC$tFbw) != null);
   }
 
+  public static void doInlining(SNode node) {
+    {
+      final SNode fmcr = SLinkOperations.getTarget(node, LINKS.content$Wdfq);
+      if (SNodeOperations.isInstanceOf(fmcr, CONCEPTS.FeatureModelConfigurationRef$kq)) {
+        // Make a copy inline all the inherited content
+        SNode copy = SNodeOperations.copyNode(SLinkOperations.getTarget(fmcr, LINKS.config$VWuN));
+        FeatureModelConfiguration__BehaviorDescriptor.inlineConfigsFromExtendedFeatureModelInGenerator_id3A1Wl6Mi48l.invoke(copy);
+        // Add that content
+        SLinkOperations.setTarget(node, LINKS.content$Wdfq, SLinkOperations.getTarget(copy, LINKS.content$Wdfq));
+      }
+    }
+    {
+      final SNode fmcb = SLinkOperations.getTarget(node, LINKS.content$Wdfq);
+      if (SNodeOperations.isInstanceOf(fmcb, CONCEPTS.FeatureModelConfigurationBase$y8)) {
+        SNode root = SLinkOperations.getTarget(FeatureModelConfigurationBase__BehaviorDescriptor.featureModel_id27K8O1MvJyD.invoke(fmcb), LINKS.root$XEj1);
+        SNode content = FeatureModelConfigurationConstraintsUtil.configContentByFeature(root);
+        SLinkOperations.setTarget(node, LINKS.content$Wdfq, content);
+      }
+    }
+  }
+
   private static final class LINKS {
     /*package*/ static final SContainmentLink content$Wdfq = MetaAdapterFactory.getContainmentLink(0x71226ee2bbc445d2L, 0xa41d20b97237156cL, 0x302aa0c2ddab8940L, 0x5cf5c0d0479f4bc8L, "content");
     /*package*/ static final SReferenceLink targetFeature$16lA = MetaAdapterFactory.getReferenceLink(0x71226ee2bbc445d2L, 0xa41d20b97237156cL, 0x302aa0c2ddab8940L, 0x5cf5c0d0479ec91eL, "targetFeature");
     /*package*/ static final SContainmentLink extendedFMC$tFbw = MetaAdapterFactory.getContainmentLink(0x71226ee2bbc445d2L, 0xa41d20b97237156cL, 0x5cf5c0d0479ec915L, 0x4617323a864bd075L, "extendedFMC");
+    /*package*/ static final SReferenceLink config$VWuN = MetaAdapterFactory.getReferenceLink(0x71226ee2bbc445d2L, 0xa41d20b97237156cL, 0x5cf5c0d0479eed6aL, 0x5cf5c0d0479eed6bL, "config");
+    /*package*/ static final SContainmentLink root$XEj1 = MetaAdapterFactory.getContainmentLink(0x165f1d0525064544L, 0x895e1424f54166ecL, 0x375cadc47516a211L, 0x375cadc47516a30cL, "root");
   }
 
   private static final class CONCEPTS {
