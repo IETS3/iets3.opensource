@@ -58,6 +58,10 @@
     </language>
     <language id="f0fd486f-8577-43e9-b671-3d118449c6e7" name="org.iets3.components.core">
       <concept id="3788552209998204407" name="org.iets3.components.core.structure.CompConstantAdapter" flags="ng" index="2_pmBu" />
+      <concept id="596856272727131445" name="org.iets3.components.core.structure.ComponentInterface" flags="ng" index="H_j2F">
+        <child id="596856272727132646" name="content" index="H_jLS" />
+      </concept>
+      <concept id="596856272727148586" name="org.iets3.components.core.structure.EmptyComponentInterfaceContent" flags="ng" index="H_vQO" />
       <concept id="7804632404593341326" name="org.iets3.components.core.structure.ComponentsChunk" flags="ng" index="1i1ALs">
         <child id="7804632404593342038" name="contents" index="1i1AA4" />
       </concept>
@@ -100,6 +104,9 @@
         <property role="TrG5h" value="C" />
         <node concept="1i1XBj" id="2mIlJ4mBW$G" role="1i1AA4">
           <property role="TrG5h" value="J" />
+          <node concept="H_j2F" id="71N5UNIKUHs" role="1i1XAe">
+            <node concept="H_vQO" id="71N5UNIKUHt" role="H_jLS" />
+          </node>
           <node concept="1i1Xx2" id="2mIlJ4mBWMK" role="1i1XAe" />
           <node concept="1i1Xx2" id="2mIlJ4mBWMP" role="1i1XAe" />
           <node concept="2_pmBu" id="2mIlJ4mBWMW" role="1i1XAe">
@@ -133,6 +140,9 @@
         <property role="TrG5h" value="C" />
         <node concept="1i1XBj" id="2mIlJ4mGEMI" role="1i1AA4">
           <property role="TrG5h" value="J" />
+          <node concept="H_j2F" id="71N5UNIKUHu" role="1i1XAe">
+            <node concept="H_vQO" id="71N5UNIKUHv" role="H_jLS" />
+          </node>
           <node concept="1i1Xx2" id="2mIlJ4mGEMJ" role="1i1XAe" />
           <node concept="1i1Xx2" id="2mIlJ4mGEMK" role="1i1XAe" />
           <node concept="2_pmBu" id="2mIlJ4mGEML" role="1i1XAe">
@@ -179,6 +189,9 @@
         <property role="TrG5h" value="C" />
         <node concept="1i1XBj" id="2mIlJ4mI1aU" role="1i1AA4">
           <property role="TrG5h" value="J" />
+          <node concept="H_j2F" id="71N5UNIKUHw" role="1i1XAe">
+            <node concept="H_vQO" id="71N5UNIKUHx" role="H_jLS" />
+          </node>
           <node concept="1i1Xx2" id="2mIlJ4mI1aV" role="1i1XAe" />
           <node concept="1i1Xx2" id="2mIlJ4mI1aW" role="1i1XAe" />
           <node concept="2_pmBu" id="2mIlJ4mI1aX" role="1i1XAe">
@@ -200,6 +213,9 @@
         <property role="TrG5h" value="C" />
         <node concept="1i1XBj" id="2mIlJ4mI1b7" role="1i1AA4">
           <property role="TrG5h" value="J" />
+          <node concept="H_j2F" id="71N5UNIKUHy" role="1i1XAe">
+            <node concept="H_vQO" id="71N5UNIKUHz" role="H_jLS" />
+          </node>
           <node concept="1i1Xx2" id="2mIlJ4mI1b8" role="1i1XAe" />
           <node concept="1i1Xx2" id="2mIlJ4mI1b9" role="1i1XAe" />
           <node concept="2_pmBu" id="2mIlJ4mI1ba" role="1i1XAe">
@@ -238,6 +254,9 @@
         <property role="TrG5h" value="C" />
         <node concept="1i1XBj" id="4zE7o4wqm7U" role="1i1AA4">
           <property role="TrG5h" value="J" />
+          <node concept="H_j2F" id="71N5UNIKUH$" role="1i1XAe">
+            <node concept="H_vQO" id="71N5UNIKUH_" role="H_jLS" />
+          </node>
           <node concept="1i1Xx2" id="4zE7o4y08oH" role="1i1XAe" />
           <node concept="1i1Xx2" id="_Fbb89kFL6" role="1i1XAe" />
           <node concept="2_pmBu" id="4zE7o4wqm7X" role="1i1XAe">
@@ -269,6 +288,9 @@
         <property role="TrG5h" value="C" />
         <node concept="1i1XBj" id="4zE7o4wqm84" role="1i1AA4">
           <property role="TrG5h" value="J" />
+          <node concept="H_j2F" id="71N5UNIKUHA" role="1i1XAe">
+            <node concept="H_vQO" id="71N5UNIKUHB" role="H_jLS" />
+          </node>
           <node concept="1i1Xx2" id="4zE7o4wqm85" role="1i1XAe" />
           <node concept="1i1Xx2" id="4zE7o4wqm86" role="1i1XAe" />
           <node concept="2_pmBu" id="4zE7o4wqm87" role="1i1XAe">
@@ -307,6 +329,9 @@
         <property role="TrG5h" value="C" />
         <node concept="1i1XBj" id="4zE7o4wqqdg" role="1i1AA4">
           <property role="TrG5h" value="J" />
+          <node concept="H_j2F" id="71N5UNIKUHC" role="1i1XAe">
+            <node concept="H_vQO" id="71N5UNIKUHD" role="H_jLS" />
+          </node>
           <node concept="1i1Xx2" id="4zE7o4wqqdh" role="1i1XAe" />
           <node concept="1i1Xx2" id="4zE7o4wqqdi" role="1i1XAe" />
           <node concept="2_pmBu" id="4zE7o4wqqdj" role="1i1XAe">
@@ -338,6 +363,9 @@
         <property role="TrG5h" value="C" />
         <node concept="1i1XBj" id="4zE7o4wqqdu" role="1i1AA4">
           <property role="TrG5h" value="J" />
+          <node concept="H_j2F" id="71N5UNIKUHE" role="1i1XAe">
+            <node concept="H_vQO" id="71N5UNIKUHF" role="H_jLS" />
+          </node>
           <node concept="1i1Xx2" id="4zE7o4wqqdv" role="1i1XAe" />
           <node concept="1i1Xx2" id="4zE7o4wqqdw" role="1i1XAe" />
           <node concept="2_pmBu" id="4zE7o4wqqdx" role="1i1XAe">
