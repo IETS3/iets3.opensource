@@ -34,6 +34,7 @@
     <dependency reexport="false">9b66c5c9-38bf-4315-a96f-9f4e212c69cb(org.iets3.variability.base)</dependency>
     <dependency reexport="false">71226ee2-bbc4-45d2-a41d-20b97237156c(org.iets3.variability.configuration.base)</dependency>
     <dependency reexport="false">f3061a53-9226-4cc5-a443-f952ceaf5816(jetbrains.mps.baseLanguage)</dependency>
+    <dependency reexport="false">6ed54515-acc8-4d1e-a16c-9fd6cfe951ea(MPS.Core)</dependency>
   </dependencies>
   <languageVersions>
     <language slang="l:d4280a54-f6df-4383-aa41-d1b2bffa7eb1:com.mbeddr.core.base" version="6" />
