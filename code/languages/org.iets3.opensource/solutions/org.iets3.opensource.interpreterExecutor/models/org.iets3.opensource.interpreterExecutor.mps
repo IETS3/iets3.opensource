@@ -181,7 +181,7 @@
               </node>
               <node concept="2OqwBi" id="5oK6FmqoqBc" role="37wK5m">
                 <node concept="35c_gC" id="5oK6FmqoqBd" role="2Oq$k0">
-                  <ref role="35c_gD" to="dc1n:7Lttyc2SH5O" resolve="CustomRunnerAspect" />
+                  <ref role="35c_gD" to="dc1n:7Lttyc2SH5O" resolve="InterpreterTestRunnerAspect" />
                 </node>
                 <node concept="liA8E" id="5oK6FmqoqBe" role="2OqNvi">
                   <ref role="37wK5l" to="c17a:~SAbstractConcept.getName()" resolve="getName" />

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<product version="3" modelHash="-3rb0ebn83orhcc7f7fjv6kdsgcedhg8">
-  <files names="iets3.os.prebuild.xml:org.iets3.opensource.distro.xml:org.iets3.opensource.interpreter.testExecutor.xml:org.iets3.opensource.interpreter.testExecutorExec.xml:org.iets3.opensource.tests.xml:org.iets3.opensource.xml" />
+<product version="3" modelHash="5zmfm1kmw62jzy4r1gpy0nrtlfivan3">
+  <files names="iets3.os.prebuild.xml:org.iets3.opensource.distro.xml:org.iets3.opensource.interpreted.test.run.xml:org.iets3.opensource.tests.xml:org.iets3.opensource.xml" />
 </product>
 

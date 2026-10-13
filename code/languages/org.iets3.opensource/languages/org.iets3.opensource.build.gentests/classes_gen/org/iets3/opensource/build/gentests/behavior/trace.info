@@ -200,7 +200,7 @@
     </file>
   </root>
   <root nodeRef="r:8f2b5e7d-bab3-409e-93c3-6055bdcd2a68(org.iets3.opensource.build.gentests.behavior)/8961448726281509878">
-    <file name="CustomRunnerAspect__BehaviorDescriptor.java">
+    <file name="InterpreterTestRunnerAspect__BehaviorDescriptor.java">
       <node id="8961448726281509878" at="36,0,37,0" concept="9" trace="CONCEPT" />
       <node id="8961448726281509878" at="38,0,39,0" concept="9" trace="getScope_id52_Geb4QDV$" />
       <node id="8961448726281509878" at="39,0,40,0" concept="9" trace="tarnsitiveBuildProjects_idBt8sbO6rFd" />
@@ -209,8 +209,8 @@
       <node id="710761437394572442" at="49,5,50,111" concept="5" />
       <node id="710761437397115353" at="51,31,52,30" concept="6" />
       <node id="710761437397118582" at="53,5,54,0" concept="8" />
-      <node id="710761437396986075" at="54,0,55,264" concept="5" />
-      <node id="710761437397041492" at="55,264,56,0" concept="8" />
+      <node id="710761437396986075" at="54,0,55,273" concept="5" />
+      <node id="710761437397041492" at="55,273,56,0" concept="8" />
       <node id="710761437394889874" at="56,0,57,63" concept="5" />
       <node id="710761437394900001" at="57,63,58,86" concept="2" />
       <node id="710761437394864976" at="58,86,59,26" concept="6" />
@@ -237,7 +237,7 @@
       <node id="8961448726281509878" at="125,0,126,0" concept="9" trace="dependencies$redY" />
       <node id="8961448726281509878" at="126,0,127,0" concept="9" trace="script$6Ehy" />
       <node id="8961448726281509878" at="43,0,45,0" concept="10" trace="___init___#(Lorg/jetbrains/mps/openapi/model/SNode;)V" />
-      <node id="8961448726281509878" at="68,0,70,0" concept="1" trace="CustomRunnerAspect__BehaviorDescriptor#()V" />
+      <node id="8961448726281509878" at="68,0,70,0" concept="1" trace="InterpreterTestRunnerAspect__BehaviorDescriptor#()V" />
       <node id="7389400916848182255" at="46,122,49,5" concept="3" />
       <node id="710761437397112123" at="50,111,53,5" concept="3" />
       <node id="8961448726281509878" at="78,49,81,5" concept="3" />
@@ -252,7 +252,7 @@
       <node id="8961448726281509878" at="46,0,61,0" concept="10" trace="getScope_id52_Geb4QDV$#(Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/language/SAbstractConcept;Lorg/jetbrains/mps/openapi/model/SNode;)Ljetbrains/mps/scope/Scope;" />
       <node id="8961448726281509878" at="76,0,91,0" concept="4" trace="invokeSpecial0#(Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/core/aspects/behaviour/api/SMethod;[Ljava/lang/Object;)null" />
       <scope id="8961448726281509878" at="43,63,43,63" />
-      <scope id="8961448726281509878" at="68,56,68,56" />
+      <scope id="8961448726281509878" at="68,65,68,65" />
       <scope id="7389400916848182256" at="47,102,48,178" />
       <scope id="710761437397112125" at="51,31,52,30" />
       <scope id="8961448726281509878" at="72,114,73,21" />
@@ -308,9 +308,9 @@
         <var name="node" id="8961448726281509878" />
         <var name="parameters" id="8961448726281509878" />
       </scope>
-      <unit id="8961448726281509878" at="123,0,128,0" name="org.iets3.opensource.build.gentests.behavior.CustomRunnerAspect__BehaviorDescriptor$LINKS" />
-      <unit id="8961448726281509878" at="116,0,122,0" name="org.iets3.opensource.build.gentests.behavior.CustomRunnerAspect__BehaviorDescriptor$CONCEPTS" />
-      <unit id="8961448726281509878" at="35,0,129,0" name="org.iets3.opensource.build.gentests.behavior.CustomRunnerAspect__BehaviorDescriptor" />
+      <unit id="8961448726281509878" at="123,0,128,0" name="org.iets3.opensource.build.gentests.behavior.InterpreterTestRunnerAspect__BehaviorDescriptor$LINKS" />
+      <unit id="8961448726281509878" at="116,0,122,0" name="org.iets3.opensource.build.gentests.behavior.InterpreterTestRunnerAspect__BehaviorDescriptor$CONCEPTS" />
+      <unit id="8961448726281509878" at="35,0,129,0" name="org.iets3.opensource.build.gentests.behavior.InterpreterTestRunnerAspect__BehaviorDescriptor" />
     </file>
   </root>
 </debug-info>

@@ -24,7 +24,7 @@ import java.util.regex.Pattern;
  * https://ant.apache.org/manual/api/org/apache/tools/ant/taskdefs/optional/junit/XMLConstants.html
  */
 public class InterpreterTestReporter implements IInterpreterTestReporter {
-  private static final String ISO8601_DATETIME_PATTERN = "YYYY-MM-DD'T'hh:mm:ss";
+  private static final String ISO8601_DATETIME_PATTERN = "yyyy-MM-dd'T'HH:mm:ss";
   private SimpleDateFormat simpleDateFormat;
 
 
@@ -150,7 +150,7 @@ public class InterpreterTestReporter implements IInterpreterTestReporter {
     }
     public void stop() {
       endtime = System.currentTimeMillis();
-      setTime(String.valueOf((endtime - starttime) / 1000));
+      setTime(String.valueOf((endtime - starttime) / 1000.0));
     }
   }
 
@@ -169,7 +169,7 @@ public class InterpreterTestReporter implements IInterpreterTestReporter {
     }
     public void stop() {
       endtime = System.currentTimeMillis();
-      setTime(String.valueOf((endtime - starttime) / 1000));
+      setTime(String.valueOf((endtime - starttime) / 1000.0));
     }
   }
 

@@ -77,7 +77,7 @@ public class check_CustomRunnerAspectPlugInForMissingDevKits_NonTypesystemRule e
 
   }
   public SAbstractConcept getApplicableConcept() {
-    return CONCEPTS.CustomRunnerAspect$eN;
+    return CONCEPTS.InterpreterTestRunnerAspect$eN;
   }
   public IsApplicableStatus isApplicableAndPattern(SNode argument) {
     return new IsApplicableStatus(argument.getConcept().isSubConceptOf(getApplicableConcept()), null);
@@ -101,7 +101,7 @@ public class check_CustomRunnerAspectPlugInForMissingDevKits_NonTypesystemRule e
     /*package*/ static final SConcept BuildMps_IdeaPlugin$po = MetaAdapterFactory.getConcept(0xcf935df46994e9cL, 0xa132fa109541cba3L, 0x5b7be37b4de9bb74L, "jetbrains.mps.build.mps.structure.BuildMps_IdeaPlugin");
     /*package*/ static final SConcept BuildMps_IdeaPluginModule$rY = MetaAdapterFactory.getConcept(0xcf935df46994e9cL, 0xa132fa109541cba3L, 0x5b7be37b4de9bbdcL, "jetbrains.mps.build.mps.structure.BuildMps_IdeaPluginModule");
     /*package*/ static final SConcept BuildMps_IdeaPluginGroup$_R = MetaAdapterFactory.getConcept(0xcf935df46994e9cL, 0xa132fa109541cba3L, 0x5b7be37b4deb1201L, "jetbrains.mps.build.mps.structure.BuildMps_IdeaPluginGroup");
-    /*package*/ static final SConcept CustomRunnerAspect$eN = MetaAdapterFactory.getConcept(0x9d000fbdbdca4a46L, 0xb39bc5ba9e79b38cL, 0x7c5d762302e2d174L, "org.iets3.opensource.build.gentests.structure.CustomRunnerAspect");
+    /*package*/ static final SConcept InterpreterTestRunnerAspect$eN = MetaAdapterFactory.getConcept(0x9d000fbdbdca4a46L, 0xb39bc5ba9e79b38cL, 0x7c5d762302e2d174L, "org.iets3.opensource.build.gentests.structure.InterpreterTestRunnerAspect");
     /*package*/ static final SConcept BuildMps_DevKit$jc = MetaAdapterFactory.getConcept(0xcf935df46994e9cL, 0xa132fa109541cba3L, 0x4780308f5d2060eL, "jetbrains.mps.build.mps.structure.BuildMps_DevKit");
   }
 
