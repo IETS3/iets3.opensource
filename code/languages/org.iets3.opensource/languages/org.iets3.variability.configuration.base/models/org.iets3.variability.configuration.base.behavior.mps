@@ -7,7 +7,7 @@
     <use id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior" version="2" />
     <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="12" />
     <use id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections" version="2" />
-    <use id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc" version="2" />
+    <use id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc" version="3" />
     <use id="fd392034-7849-419d-9071-12563d152375" name="jetbrains.mps.baseLanguage.closures" version="0" />
     <use id="c7fb639f-be78-4307-89b0-b5959c3fa8c8" name="jetbrains.mps.lang.text" version="0" />
     <use id="774bf8a0-62e5-41e1-af63-f4812e60e48b" name="jetbrains.mps.baseLanguage.checkedDots" version="0" />
@@ -457,7 +457,6 @@
       <concept id="1140725362528" name="jetbrains.mps.lang.smodel.structure.Link_SetTargetOperation" flags="nn" index="2oxUTD">
         <child id="1140725362529" name="linkTarget" index="2oxUTC" />
       </concept>
-      <concept id="1179409122411" name="jetbrains.mps.lang.smodel.structure.Node_ConceptMethodCall" flags="nn" index="2qgKlT" />
       <concept id="1138661924179" name="jetbrains.mps.lang.smodel.structure.Property_SetOperation" flags="nn" index="tyxLq">
         <child id="1138662048170" name="value" index="tz02z" />
       </concept>
@@ -1155,9 +1154,9 @@
                             <ref role="3cqZAo" node="3WHQbwtvlAY" resolve="afc" />
                           </node>
                         </node>
-                        <node concept="2qgKlT" id="3WHQbwtvlAS" role="2OqNvi">
+                        <node concept="3zqWPK" id="1I2k_0XgO4I" role="2OqNvi">
                           <ref role="37wK5l" node="4UXd9usJEzn" resolve="findConfigDirect" />
-                          <node concept="37vLTw" id="3WHQbwtvlAT" role="37wK5m">
+                          <node concept="37vLTw" id="1I2k_0XgO4K" role="37wK5m">
                             <ref role="3cqZAo" node="3WHQbwtvlB1" resolve="it" />
                           </node>
                         </node>
@@ -1832,12 +1831,12 @@
                       <node concept="3clFbF" id="5plP6f7XxjL" role="3cqZAp">
                         <node concept="2OqwBi" id="5plP6f7XxjM" role="3clFbG">
                           <node concept="13iPFW" id="5plP6f7XxjN" role="2Oq$k0" />
-                          <node concept="2qgKlT" id="5plP6f7XxjO" role="2OqNvi">
+                          <node concept="3zqWPK" id="1I2k_0XgO4L" role="2OqNvi">
                             <ref role="37wK5l" node="hMocy8Lehw" resolve="searchInheritanceChain" />
-                            <node concept="37vLTw" id="5plP6f7XxjP" role="37wK5m">
+                            <node concept="37vLTw" id="1I2k_0XgO4N" role="37wK5m">
                               <ref role="3cqZAo" node="5plP6f7Xbq6" resolve="refConfig" />
                             </node>
-                            <node concept="37vLTw" id="5plP6f7XxjQ" role="37wK5m">
+                            <node concept="37vLTw" id="1I2k_0XgO4O" role="37wK5m">
                               <ref role="3cqZAo" node="5plP6f7Xbpq" resolve="ftn" />
                             </node>
                           </node>
@@ -1913,9 +1912,9 @@
                             <ref role="3Tt5mk" to="4ndm:4onczE6iX19" resolve="config" />
                           </node>
                         </node>
-                        <node concept="2qgKlT" id="6PG01vGYhi3" role="2OqNvi">
+                        <node concept="3zqWPK" id="1I2k_0XgO4P" role="2OqNvi">
                           <ref role="37wK5l" node="6F0PTEeQvEx" resolve="findConfiguration2" />
-                          <node concept="37vLTw" id="6PG01vGYhi4" role="37wK5m">
+                          <node concept="37vLTw" id="1I2k_0XgO4R" role="37wK5m">
                             <ref role="3cqZAo" node="hMocy8L$oW" resolve="ftn" />
                           </node>
                         </node>

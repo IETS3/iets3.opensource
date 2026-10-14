@@ -161,7 +161,6 @@
       <concept id="1138411891628" name="jetbrains.mps.lang.smodel.structure.SNodeOperation" flags="nn" index="eCIE_">
         <child id="1144104376918" name="parameter" index="1xVPHs" />
       </concept>
-      <concept id="1179409122411" name="jetbrains.mps.lang.smodel.structure.Node_ConceptMethodCall" flags="nn" index="2qgKlT" />
       <concept id="4693937538533521280" name="jetbrains.mps.lang.smodel.structure.OfConceptOperation" flags="ng" index="v3k3i">
         <child id="4693937538533538124" name="requestedConcept" index="v3oSu" />
       </concept>
@@ -1247,9 +1246,9 @@
               <node concept="37vLTw" id="1ayzCDZN46B" role="2Oq$k0">
                 <ref role="3cqZAo" node="1ayzCDZN46k" resolve="project" />
               </node>
-              <node concept="2qgKlT" id="1ayzCDZN46C" role="2OqNvi">
+              <node concept="3zqWPK" id="1I2k_0XgO4B" role="2OqNvi">
                 <ref role="37wK5l" to="vbkb:13YBgBBRSOL" resolve="getVisibleProjects" />
-                <node concept="3clFbT" id="1ayzCDZN46D" role="37wK5m">
+                <node concept="3clFbT" id="1I2k_0XgO4D" role="37wK5m">
                   <property role="3clFbU" value="false" />
                 </node>
               </node>

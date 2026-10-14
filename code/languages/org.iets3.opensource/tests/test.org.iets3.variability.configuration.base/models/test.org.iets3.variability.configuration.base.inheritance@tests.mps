@@ -306,7 +306,6 @@
       <concept id="1177026924588" name="jetbrains.mps.lang.smodel.structure.RefConcept_Reference" flags="nn" index="chp4Y">
         <reference id="1177026940964" name="conceptDeclaration" index="cht4Q" />
       </concept>
-      <concept id="1179409122411" name="jetbrains.mps.lang.smodel.structure.Node_ConceptMethodCall" flags="nn" index="2qgKlT" />
       <concept id="1138661924179" name="jetbrains.mps.lang.smodel.structure.Property_SetOperation" flags="nn" index="tyxLq">
         <child id="1138662048170" name="value" index="tz02z" />
       </concept>
@@ -8913,9 +8912,9 @@
             <node concept="3xONca" id="5plP6f7IDE9" role="2Oq$k0">
               <ref role="3xOPvv" node="5plP6f7IDDU" resolve="car" />
             </node>
-            <node concept="2qgKlT" id="5plP6f7IDEa" role="2OqNvi">
+            <node concept="3zqWPK" id="1I2k_0XgO4t" role="2OqNvi">
               <ref role="37wK5l" to="lte6:4zfp5i3BhvO" resolve="findConfiguration" />
-              <node concept="3xONca" id="5plP6f7IDEb" role="37wK5m">
+              <node concept="3xONca" id="1I2k_0XgO4v" role="37wK5m">
                 <ref role="3xOPvv" node="5plP6f7IDDN" resolve="red" />
               </node>
             </node>

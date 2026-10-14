@@ -113,7 +113,6 @@
       </concept>
     </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
-      <concept id="1179409122411" name="jetbrains.mps.lang.smodel.structure.Node_ConceptMethodCall" flags="nn" index="2qgKlT" />
       <concept id="1172008320231" name="jetbrains.mps.lang.smodel.structure.Node_IsNotNullOperation" flags="nn" index="3x8VRR" />
       <concept id="1138056143562" name="jetbrains.mps.lang.smodel.structure.SLinkAccess" flags="nn" index="3TrEf2">
         <reference id="1138056516764" name="link" index="3Tt5mk" />
@@ -216,7 +215,7 @@
                                 <node concept="3cpWs3" id="6rDosczOEG_" role="3uHU7B">
                                   <node concept="2OqwBi" id="1aYLt$9efOO" role="3uHU7B">
                                     <node concept="pncrf" id="1aYLt$9efGu" role="2Oq$k0" />
-                                    <node concept="2qgKlT" id="1aYLt$9e_Ff" role="2OqNvi">
+                                    <node concept="3zqWPK" id="1I2k_0XgO4E" role="2OqNvi">
                                       <ref role="37wK5l" to="tos2:1aYLt$9eyUg" resolve="getFQClassName" />
                                     </node>
                                   </node>
@@ -226,7 +225,7 @@
                                 </node>
                                 <node concept="2OqwBi" id="1aYLt$9egYd" role="3uHU7w">
                                   <node concept="pncrf" id="1aYLt$9egKT" role="2Oq$k0" />
-                                  <node concept="2qgKlT" id="1aYLt$9eh$o" role="2OqNvi">
+                                  <node concept="3zqWPK" id="1I2k_0XgO4G" role="2OqNvi">
                                     <ref role="37wK5l" to="tos2:1aYLt$9dX0a" resolve="getMethodName" />
                                   </node>
                                 </node>

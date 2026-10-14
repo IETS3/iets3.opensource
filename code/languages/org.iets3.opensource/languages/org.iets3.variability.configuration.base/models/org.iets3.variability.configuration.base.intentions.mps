@@ -259,7 +259,6 @@
       <concept id="1140725362528" name="jetbrains.mps.lang.smodel.structure.Link_SetTargetOperation" flags="nn" index="2oxUTD">
         <child id="1140725362529" name="linkTarget" index="2oxUTC" />
       </concept>
-      <concept id="1179409122411" name="jetbrains.mps.lang.smodel.structure.Node_ConceptMethodCall" flags="nn" index="2qgKlT" />
       <concept id="1138661924179" name="jetbrains.mps.lang.smodel.structure.Property_SetOperation" flags="nn" index="tyxLq">
         <child id="1138662048170" name="value" index="tz02z" />
       </concept>
@@ -3384,7 +3383,7 @@
                 <node concept="37vLTw" id="1LW76QFY45S" role="2Oq$k0">
                   <ref role="3cqZAo" node="1LW76QFY45J" resolve="copy" />
                 </node>
-                <node concept="2qgKlT" id="1LW76QFY45T" role="2OqNvi">
+                <node concept="3zqWPK" id="1I2k_0XgO4w" role="2OqNvi">
                   <ref role="37wK5l" to="lte6:3A1Wl6Mi48l" resolve="inlineConfigsFromExtendedFeatureModelInGenerator" />
                 </node>
               </node>
@@ -3452,7 +3451,7 @@
                     <node concept="Jnkvi" id="1LW76QFY46k" role="2Oq$k0">
                       <ref role="1M0zk5" node="1LW76QFY46z" resolve="fmcb" />
                     </node>
-                    <node concept="2qgKlT" id="1LW76QFY46l" role="2OqNvi">
+                    <node concept="3zqWPK" id="1I2k_0XgO4y" role="2OqNvi">
                       <ref role="37wK5l" to="lte6:27K8O1MvJyD" resolve="featureModel" />
                     </node>
                   </node>
