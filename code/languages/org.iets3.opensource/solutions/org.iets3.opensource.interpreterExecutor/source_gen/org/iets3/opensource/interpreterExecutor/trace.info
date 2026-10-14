@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<debug-info version="2">
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123155:jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123159:jetbrains.mps.baseLanguage.structure.IfStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242864:jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242878:jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1070462154015:jetbrains.mps.baseLanguage.structure.StaticFieldDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1081236700938:jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" />
+  <root nodeRef="r:e6296aef-14ff-4b06-8295-6014b91a9014(org.iets3.opensource.interpreterExecutor)/5152867537901834215">
+    <file name="MainClass.java">
+      <node id="5152867537901834215" at="20,0,21,0" concept="4" trace="LOG" />
+      <node id="4067700650319148805" at="24,31,25,59" concept="0" />
+      <node id="4942831938713468780" at="26,7,27,13" concept="3" />
+      <node id="6962548927783670015" at="28,5,29,85" concept="2" />
+      <node id="6962548927783671908" at="29,85,30,122" concept="0" />
+      <node id="6962548927783740949" at="30,122,31,126" concept="0" />
+      <node id="6210493253425293342" at="31,126,32,73" concept="2" />
+      <node id="2393174431571470779" at="33,44,34,77" concept="2" />
+      <node id="6210493253425270108" at="34,77,35,64" concept="0" />
+      <node id="5152867537901834215" at="40,0,41,0" concept="4" trace="InterpreterTestRunnerAspect$eN" />
+      <node id="5152867537901834215" at="41,0,42,0" concept="4" trace="BuildMacroRef$4f" />
+      <node id="4067700650319148805" at="23,27,26,7" concept="1" />
+      <node id="2393174431571464463" at="32,73,36,5" concept="1" />
+      <node id="4942831938713117570" at="22,49,28,5" concept="1" />
+      <node id="9022445546689293025" at="22,0,38,0" concept="5" trace="mpsMain#(Ljetbrains/mps/core/platform/Platform;)V" />
+      <scope id="4067700650319148805" at="24,31,25,59" />
+      <scope id="2393174431571464465" at="33,44,35,64">
+        <var name="testableNodes" id="2393174431571470780" />
+      </scope>
+      <scope id="4942831938713117572" at="23,27,27,13" />
+      <scope id="9022445546689293028" at="22,49,36,5">
+        <var name="config" id="6962548927783670016" />
+        <var name="executor" id="6210493253425293343" />
+      </scope>
+      <scope id="9022445546689293025" at="22,0,38,0">
+        <var name="platform" id="4942831938713102066" />
+      </scope>
+      <unit id="5152867537901834215" at="39,0,43,0" name="org.iets3.opensource.interpreterExecutor.MainClass$CONCEPTS" />
+      <unit id="5152867537901834215" at="19,0,44,0" name="org.iets3.opensource.interpreterExecutor.MainClass" />
+    </file>
+  </root>
+</debug-info>
+

@@ -149,7 +149,7 @@
     </file>
   </root>
   <root nodeRef="r:8f2b5e7d-bab3-409e-93c3-6055bdcd2a68(org.iets3.opensource.build.gentests.behavior)/8961448726281509878">
-    <file name="CustomRunnerAspect__BehaviorDescriptor.java">
+    <file name="InterpreterTestRunnerAspect__BehaviorDescriptor.java">
       <node id="8961448726281509878" at="34,0,35,0" concept="10" trace="CONCEPT" />
       <node id="8961448726281509878" at="36,0,37,0" concept="10" trace="getScope_id52_Geb4QDV$" />
       <node id="8961448726281509878" at="37,0,38,0" concept="10" trace="tarnsitiveBuildProjects_idBt8sbO6rFd" />
@@ -158,8 +158,8 @@
       <node id="710761437394572442" at="45,5,46,111" concept="6" />
       <node id="710761437397115353" at="47,31,48,30" concept="7" />
       <node id="710761437397118582" at="49,5,50,0" concept="9" />
-      <node id="710761437396986075" at="50,0,51,264" concept="6" />
-      <node id="710761437397041492" at="51,264,52,0" concept="9" />
+      <node id="710761437396986075" at="50,0,51,273" concept="6" />
+      <node id="710761437397041492" at="51,273,52,0" concept="9" />
       <node id="710761437394889874" at="52,0,53,63" concept="6" />
       <node id="710761437394900001" at="53,63,54,86" concept="2" />
       <node id="710761437394864976" at="54,86,55,26" concept="7" />
@@ -184,7 +184,7 @@
       <node id="8961448726281509878" at="116,0,117,0" concept="10" trace="parts$mGDj" />
       <node id="8961448726281509878" at="117,0,118,0" concept="10" trace="dependencies$redY" />
       <node id="8961448726281509878" at="118,0,119,0" concept="10" trace="script$6Ehy" />
-      <node id="8961448726281509878" at="64,0,66,0" concept="1" trace="CustomRunnerAspect__BehaviorDescriptor#()V" />
+      <node id="8961448726281509878" at="64,0,66,0" concept="1" trace="InterpreterTestRunnerAspect__BehaviorDescriptor#()V" />
       <node id="7389400916848182255" at="42,122,45,5" concept="4" />
       <node id="710761437397112123" at="46,111,49,5" concept="4" />
       <node id="8961448726281509878" at="70,49,73,5" concept="4" />
@@ -197,7 +197,7 @@
       <node id="8961448726281509878" at="84,0,95,0" concept="5" trace="invokeSpecial0#(Lorg/jetbrains/mps/openapi/language/SAbstractConcept;Ljetbrains/mps/core/aspects/behaviour/api/SMethod;[Ljava/lang/Object;)null" />
       <node id="8961448726281509878" at="42,0,57,0" concept="11" trace="getScope_id52_Geb4QDV$#(Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/language/SAbstractConcept;Lorg/jetbrains/mps/openapi/model/SNode;)Ljetbrains/mps/scope/Scope;" />
       <node id="8961448726281509878" at="68,0,83,0" concept="5" trace="invokeSpecial0#(Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/core/aspects/behaviour/api/SMethod;[Ljava/lang/Object;)null" />
-      <scope id="8961448726281509878" at="64,56,64,56" />
+      <scope id="8961448726281509878" at="64,65,64,65" />
       <scope id="7389400916848182256" at="43,102,44,178" />
       <scope id="710761437397112125" at="47,31,48,30" />
       <scope id="8961448726281509878" at="71,26,72,56" />
@@ -244,9 +244,9 @@
         <var name="node" id="8961448726281509878" />
         <var name="parameters" id="8961448726281509878" />
       </scope>
-      <unit id="8961448726281509878" at="115,0,120,0" name="org.iets3.opensource.build.gentests.behavior.CustomRunnerAspect__BehaviorDescriptor$LINKS" />
-      <unit id="8961448726281509878" at="108,0,114,0" name="org.iets3.opensource.build.gentests.behavior.CustomRunnerAspect__BehaviorDescriptor$CONCEPTS" />
-      <unit id="8961448726281509878" at="33,0,121,0" name="org.iets3.opensource.build.gentests.behavior.CustomRunnerAspect__BehaviorDescriptor" />
+      <unit id="8961448726281509878" at="115,0,120,0" name="org.iets3.opensource.build.gentests.behavior.InterpreterTestRunnerAspect__BehaviorDescriptor$LINKS" />
+      <unit id="8961448726281509878" at="108,0,114,0" name="org.iets3.opensource.build.gentests.behavior.InterpreterTestRunnerAspect__BehaviorDescriptor$CONCEPTS" />
+      <unit id="8961448726281509878" at="33,0,121,0" name="org.iets3.opensource.build.gentests.behavior.InterpreterTestRunnerAspect__BehaviorDescriptor" />
     </file>
   </root>
 </debug-info>

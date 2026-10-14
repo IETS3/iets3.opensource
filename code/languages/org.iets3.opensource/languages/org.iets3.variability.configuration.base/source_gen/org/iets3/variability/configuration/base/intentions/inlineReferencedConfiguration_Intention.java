@@ -15,12 +15,9 @@ import jetbrains.mps.intentions.AbstractIntentionExecutable;
 import org.iets3.variability.base.plugin.Settings;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
-import org.iets3.variability.configuration.base.behavior.FeatureModelConfigurationBase__BehaviorDescriptor;
-import org.iets3.variability.configuration.base.plugin.FeatureModelConfigurationConstraintsUtil;
 import jetbrains.mps.openapi.intentions.IntentionDescriptor;
 import org.jetbrains.mps.openapi.language.SContainmentLink;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
-import org.jetbrains.mps.openapi.language.SReferenceLink;
 import org.jetbrains.mps.openapi.language.SConcept;
 
 public final class inlineReferencedConfiguration_Intention extends AbstractIntentionDescriptor implements IntentionFactory {
@@ -59,20 +56,7 @@ public final class inlineReferencedConfiguration_Intention extends AbstractInten
 
     @Override
     public void execute(final SNode node, final EditorContext editorContext) {
-      {
-        final SNode fmcr = SLinkOperations.getTarget(node, LINKS.content$Wdfq);
-        if (SNodeOperations.isInstanceOf(fmcr, CONCEPTS.FeatureModelConfigurationRef$kq)) {
-          SLinkOperations.setTarget(node, LINKS.content$Wdfq, SNodeOperations.copyNode(SLinkOperations.getTarget(SLinkOperations.getTarget(fmcr, LINKS.config$VWuN), LINKS.content$Wdfq)));
-        }
-      }
-      {
-        final SNode fmcb = SLinkOperations.getTarget(node, LINKS.content$Wdfq);
-        if (SNodeOperations.isInstanceOf(fmcb, CONCEPTS.FeatureModelConfigurationBase$y8)) {
-          SNode root = SLinkOperations.getTarget(FeatureModelConfigurationBase__BehaviorDescriptor.featureModel_id27K8O1MvJyD.invoke(fmcb), LINKS.root$XEj1);
-          SNode content = FeatureModelConfigurationConstraintsUtil.configContentByFeature(root);
-          SLinkOperations.setTarget(node, LINKS.content$Wdfq, content);
-        }
-      }
+      IntentionUtilConfiguration.doInlining(node);
     }
 
     @Override
@@ -97,12 +81,9 @@ public final class inlineReferencedConfiguration_Intention extends AbstractInten
 
   private static final class LINKS {
     /*package*/ static final SContainmentLink content$Wdfq = MetaAdapterFactory.getContainmentLink(0x71226ee2bbc445d2L, 0xa41d20b97237156cL, 0x302aa0c2ddab8940L, 0x5cf5c0d0479f4bc8L, "content");
-    /*package*/ static final SReferenceLink config$VWuN = MetaAdapterFactory.getReferenceLink(0x71226ee2bbc445d2L, 0xa41d20b97237156cL, 0x5cf5c0d0479eed6aL, 0x5cf5c0d0479eed6bL, "config");
-    /*package*/ static final SContainmentLink root$XEj1 = MetaAdapterFactory.getContainmentLink(0x165f1d0525064544L, 0x895e1424f54166ecL, 0x375cadc47516a211L, 0x375cadc47516a30cL, "root");
   }
 
   private static final class CONCEPTS {
     /*package*/ static final SConcept FeatureModelConfigurationBase$y8 = MetaAdapterFactory.getConcept(0x71226ee2bbc445d2L, 0xa41d20b97237156cL, 0x2e34d227ff954d8bL, "org.iets3.variability.configuration.base.structure.FeatureModelConfigurationBase");
-    /*package*/ static final SConcept FeatureModelConfigurationRef$kq = MetaAdapterFactory.getConcept(0x71226ee2bbc445d2L, 0xa41d20b97237156cL, 0x5cf5c0d0479eed6aL, "org.iets3.variability.configuration.base.structure.FeatureModelConfigurationRef");
   }
 }

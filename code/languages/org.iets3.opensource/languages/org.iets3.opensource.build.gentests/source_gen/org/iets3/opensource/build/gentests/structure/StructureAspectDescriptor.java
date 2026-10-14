@@ -13,8 +13,8 @@ import jetbrains.mps.smodel.runtime.impl.ConceptDescriptorBuilder2;
 
 public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
   /*package*/ final ConceptDescriptor myConceptBuildMacroRef = createDescriptorForBuildMacroRef();
-  /*package*/ final ConceptDescriptor myConceptCustomRunnerAspect = createDescriptorForCustomRunnerAspect();
   /*package*/ final ConceptDescriptor myConceptGeneratedTestsDependency_Module = createDescriptorForGeneratedTestsDependency_Module();
+  /*package*/ final ConceptDescriptor myConceptInterpreterTestRunnerAspect = createDescriptorForInterpreterTestRunnerAspect();
   /*package*/ final ConceptDescriptor myConceptRunKernelFGeneratedTests = createDescriptorForRunKernelFGeneratedTests();
   private final LanguageConceptSwitch myIndexSwitch;
 
@@ -33,7 +33,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
 
   @Override
   public Collection<ConceptDescriptor> getDescriptors() {
-    return Arrays.asList(myConceptBuildMacroRef, myConceptCustomRunnerAspect, myConceptGeneratedTestsDependency_Module, myConceptRunKernelFGeneratedTests);
+    return Arrays.asList(myConceptBuildMacroRef, myConceptGeneratedTestsDependency_Module, myConceptInterpreterTestRunnerAspect, myConceptRunKernelFGeneratedTests);
   }
 
   @Override
@@ -42,10 +42,10 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     switch (myIndexSwitch.index(id)) {
       case LanguageConceptSwitch.BuildMacroRef:
         return myConceptBuildMacroRef;
-      case LanguageConceptSwitch.CustomRunnerAspect:
-        return myConceptCustomRunnerAspect;
       case LanguageConceptSwitch.GeneratedTestsDependency_Module:
         return myConceptGeneratedTestsDependency_Module;
+      case LanguageConceptSwitch.InterpreterTestRunnerAspect:
+        return myConceptInterpreterTestRunnerAspect;
       case LanguageConceptSwitch.RunKernelFGeneratedTests:
         return myConceptRunKernelFGeneratedTests;
       default:
@@ -67,8 +67,16 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.alias("output directory");
     return b.create();
   }
-  private static ConceptDescriptor createDescriptorForCustomRunnerAspect() {
-    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("org.iets3.opensource.build.gentests", "CustomRunnerAspect", 0x9d000fbdbdca4a46L, 0xb39bc5ba9e79b38cL, 0x7c5d762302e2d174L);
+  private static ConceptDescriptor createDescriptorForGeneratedTestsDependency_Module() {
+    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("org.iets3.opensource.build.gentests", "GeneratedTestsDependency_Module", 0x9d000fbdbdca4a46L, 0xb39bc5ba9e79b38cL, 0x119d8105394dd5c5L);
+    b.class_(false, false, false);
+    b.origin("r:2ce4b587-5587-43f7-8005-e3fb84f231b0(org.iets3.opensource.build.gentests.structure)/1269312529424569797");
+    b.version(3);
+    b.associate("module", 0x119d8105394dd710L).target(0xcf935df46994e9cL, 0xa132fa109541cba3L, 0x4780308f5d333ebL).optional(false).origin("1269312529424570128").done();
+    return b.create();
+  }
+  private static ConceptDescriptor createDescriptorForInterpreterTestRunnerAspect() {
+    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("org.iets3.opensource.build.gentests", "InterpreterTestRunnerAspect", 0x9d000fbdbdca4a46L, 0xb39bc5ba9e79b38cL, 0x7c5d762302e2d174L);
     b.class_(false, false, false);
     // extends: jetbrains.mps.build.mps.runner.structure.BuildSolutionRunnerAspect
     b.super_(0x427a473d5177432cL, 0x9905bcbceb71b996L, 0x39ea87a41cc0827eL);
@@ -77,15 +85,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.aggregate("path", 0x7c5d762302e2e30bL).target(0x798100da4f0a421aL, 0xb99171f8c50ce5d2L, 0x668c6cfbafacdc3eL).optional(true).ordered(true).multiple(true).origin("8961448726281511691").done();
     b.aggregate("outputPath", 0x53af4b8a517c934bL).target(0x9d000fbdbdca4a46L, 0xb39bc5ba9e79b38cL, 0x53af4b8a51b2480dL).optional(true).ordered(true).multiple(false).origin("6030121483517072203").done();
     b.aggregate("jvmArgs", 0x321879066b697c19L).target(0x798100da4f0a421aL, 0xb99171f8c50ce5d2L, 0x3cca41cd0fe51d4fL).optional(true).ordered(true).multiple(false).origin("3609768169816292377").done();
-    b.alias("run code on steroids");
-    return b.create();
-  }
-  private static ConceptDescriptor createDescriptorForGeneratedTestsDependency_Module() {
-    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("org.iets3.opensource.build.gentests", "GeneratedTestsDependency_Module", 0x9d000fbdbdca4a46L, 0xb39bc5ba9e79b38cL, 0x119d8105394dd5c5L);
-    b.class_(false, false, false);
-    b.origin("r:2ce4b587-5587-43f7-8005-e3fb84f231b0(org.iets3.opensource.build.gentests.structure)/1269312529424569797");
-    b.version(3);
-    b.associate("module", 0x119d8105394dd710L).target(0xcf935df46994e9cL, 0xa132fa109541cba3L, 0x4780308f5d333ebL).optional(false).origin("1269312529424570128").done();
+    b.alias("run interpretable tests");
     return b.create();
   }
   private static ConceptDescriptor createDescriptorForRunKernelFGeneratedTests() {

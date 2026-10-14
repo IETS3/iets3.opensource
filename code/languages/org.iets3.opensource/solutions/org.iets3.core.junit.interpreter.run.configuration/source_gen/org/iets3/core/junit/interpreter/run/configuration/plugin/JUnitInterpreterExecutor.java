@@ -92,9 +92,6 @@ public class JUnitInterpreterExecutor {
       myException = e;
     }
 
-    if (wrapper.isTestCase()) {
-      doExecute(wrapper.getTestCase());
-    }
   }
 
   public int getFailureCount() {
