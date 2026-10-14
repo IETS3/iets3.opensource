@@ -25,7 +25,6 @@ import com.mbeddr.mpsutil.interpreter.rt.InvalidValueException;
 import org.iets3.core.expr.base.behavior.TraceFailures;
 import org.iets3.core.expr.base.plugin.ConstraintFailedException;
 import com.mbeddr.mpsutil.interpreter.rt.InterpreterEscapeException;
-import org.iets3.core.base.behavior.ICanStoreCheckResult__BehaviorDescriptor;
 import com.mbeddr.mpsutil.interpreter.rt.ComputationTrace;
 import org.iets3.core.expr.base.behavior.Expression__BehaviorDescriptor;
 import jetbrains.mps.lang.core.behavior.BaseConcept__BehaviorDescriptor;
@@ -114,7 +113,6 @@ public final class AssertTestItem__BehaviorDescriptor extends BaseBHDescriptor {
     }
     long end = System.currentTimeMillis();
     result.setTime(end - begin);
-    ICanStoreCheckResult__BehaviorDescriptor.storeLastResult_id3R3AIvuq5Dp.invoke(__thisNode__, result);
     return result;
   }
   /*package*/ static ITraceRecord constructCustomFrame_id2kg0xI3thT2(@NotNull SNode __thisNode__, ITraceRecord parent, ITraceRecord original) {

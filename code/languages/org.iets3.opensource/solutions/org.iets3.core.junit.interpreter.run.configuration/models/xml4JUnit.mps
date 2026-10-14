@@ -118,6 +118,9 @@
       <concept id="4972933694980447171" name="jetbrains.mps.baseLanguage.structure.BaseVariableDeclaration" flags="ng" index="19Szcq">
         <child id="5680397130376446158" name="type" index="1tU5fm" />
       </concept>
+      <concept id="1111509017652" name="jetbrains.mps.baseLanguage.structure.FloatingPointConstant" flags="nn" index="3b6qkQ">
+        <property id="1113006610751" name="value" index="$nhwW" />
+      </concept>
       <concept id="1068580123132" name="jetbrains.mps.baseLanguage.structure.BaseMethodDeclaration" flags="ng" index="3clF44">
         <property id="1181808852946" name="isFinal" index="DiZV1" />
         <child id="1068580123133" name="returnType" index="3clF45" />
@@ -7601,7 +7604,7 @@
       </node>
       <node concept="3Tm6S6" id="2doG_VG7LY5" role="1B3o_S" />
       <node concept="Xl_RD" id="2doG_VG7LY6" role="33vP2m">
-        <property role="Xl_RC" value="YYYY-MM-DD'T'hh:mm:ss" />
+        <property role="Xl_RC" value="yyyy-MM-dd'T'HH:mm:ss" />
       </node>
     </node>
     <node concept="312cEg" id="2doG_VG7LZ$" role="jymVt">
@@ -8906,12 +8909,9 @@
             <node concept="1rXfSq" id="3AK4C1h$Ned" role="3clFbG">
               <ref role="37wK5l" node="5ZZgOa8J6i7" resolve="setTime" />
               <node concept="2YIFZM" id="3AK4C1h$VEK" role="37wK5m">
-                <ref role="37wK5l" to="wyt6:~String.valueOf(long)" resolve="valueOf" />
+                <ref role="37wK5l" to="wyt6:~String.valueOf(double)" resolve="valueOf" />
                 <ref role="1Pybhc" to="wyt6:~String" resolve="String" />
                 <node concept="FJ1c_" id="SzDjEKo3Tt" role="37wK5m">
-                  <node concept="3cmrfG" id="SzDjEKo3Vb" role="3uHU7w">
-                    <property role="3cmrfH" value="1000" />
-                  </node>
                   <node concept="1eOMI4" id="SzDjEKo1QL" role="3uHU7B">
                     <node concept="3cpWsd" id="3AK4C1h_2ki" role="1eOMHV">
                       <node concept="37vLTw" id="3AK4C1h_4qH" role="3uHU7w">
@@ -8921,6 +8921,9 @@
                         <ref role="3cqZAo" node="3AK4C1hz2yq" resolve="endtime" />
                       </node>
                     </node>
+                  </node>
+                  <node concept="3b6qkQ" id="7jCoh182bTh" role="3uHU7w">
+                    <property role="$nhwW" value="1000.0" />
                   </node>
                 </node>
               </node>
@@ -9033,12 +9036,9 @@
             <node concept="1rXfSq" id="3AK4C1h_cyQ" role="3clFbG">
               <ref role="37wK5l" node="5ZZgOa8J5Wa" resolve="setTime" />
               <node concept="2YIFZM" id="3AK4C1h_cyR" role="37wK5m">
-                <ref role="37wK5l" to="wyt6:~String.valueOf(long)" resolve="valueOf" />
+                <ref role="37wK5l" to="wyt6:~String.valueOf(double)" resolve="valueOf" />
                 <ref role="1Pybhc" to="wyt6:~String" resolve="String" />
                 <node concept="FJ1c_" id="SzDjEKnRAs" role="37wK5m">
-                  <node concept="3cmrfG" id="SzDjEKnRCa" role="3uHU7w">
-                    <property role="3cmrfH" value="1000" />
-                  </node>
                   <node concept="1eOMI4" id="SzDjEKnPAn" role="3uHU7B">
                     <node concept="3cpWsd" id="3AK4C1h_cyS" role="1eOMHV">
                       <node concept="37vLTw" id="3AK4C1h_cyT" role="3uHU7w">
@@ -9048,6 +9048,9 @@
                         <ref role="3cqZAo" node="3AK4C1hz8EJ" resolve="endtime" />
                       </node>
                     </node>
+                  </node>
+                  <node concept="3b6qkQ" id="7jCoh182bTi" role="3uHU7w">
+                    <property role="$nhwW" value="1000.0" />
                   </node>
                 </node>
               </node>

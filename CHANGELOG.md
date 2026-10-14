@@ -10,6 +10,11 @@ The project does _not_ follow Semantic Versioning and the changes are documented
 ### Added
 - Build: `checkmodels` (MPS model checker) now runs as part of `check`/`build` and fails the build on model-check errors.
 
+### Changed
+- Results of manually run checks (`ICanStoreCheckResult`: test items, REPL entries, solver results) are stored in the view model `CheckResults` (MPS-extensions view models) instead of user objects on the nodes. Editors that show a result are updated when it is stored or removed, so the explicit editor refreshes after running a check were dropped. The result of a test item (and of each test vector) records the nodes its evaluation read and is removed as soon as one of them changes; other results stay until they are replaced or their node is deleted. `check_ICanRunCheckManually` no longer deletes a result after reporting it. Results are not stored when no project is open (headless runs that only use the returned result).
+
+### Fixed
+- Ship the interpreter-test runner in the main artifact and fix completion and improved UX of the interpreter config.
 
 ## September 2026
 
@@ -29,6 +34,7 @@ The project does _not_ follow Semantic Versioning and the changes are documented
 - KernelF: Added a workaround that allows the deletion of whole number literals nodes by pressing BACKSPACE or DELETE in case that the number literal value is presented in hexadecimal format. This kind of deletion was only possible for decimal number literals before due to an internal implementation problem.
 Physical units: Units are no longer offered twice in the code completion menu of a number literal.
 - Variability: Intention "Adapt this configuration to the extended configuration" no longer skips sub-configurations whose content is still unspecified. Such a content is now materialized as an inline configuration derived from the referenced feature model, so the values of the extended configuration are inherited.
+- Variability: Intention "Inline referenced configuration" now inlines the content of the whole `extends` chain, and looking up sub-configurations of referenced configurations also considers the configurations they extend (e.g. for `using` arguments).
 
 
 ### Added
