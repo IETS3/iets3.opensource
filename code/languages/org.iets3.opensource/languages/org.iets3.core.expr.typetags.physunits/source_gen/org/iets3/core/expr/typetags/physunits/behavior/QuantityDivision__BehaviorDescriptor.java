@@ -8,13 +8,11 @@ import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import org.jetbrains.mps.openapi.model.SNode;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import java.util.List;
 import java.util.Arrays;
 import org.jetbrains.annotations.NotNull;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
-import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 import jetbrains.mps.smodel.builder.SNodeBuilder;
@@ -24,14 +22,12 @@ import org.jetbrains.mps.openapi.language.SConcept;
 public final class QuantityDivision__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getConcept(0x7ee265bd59864709L, 0x86ed2c6daa33cd8cL, 0x729d46b7ce97ab00L, "org.iets3.core.expr.typetags.physunits.structure.QuantityDivision");
 
-  public static final SMethod<SNode> getNumerator_id1JynhuWrSSG = new SMethodBuilder<SNode>(new SJavaCompoundTypeImpl((Class<SNode>) ((Class) Object.class))).name("getNumerator").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(2009270740287721004L).languageId(0x86ed2c6daa33cd8cL, 0x7ee265bd59864709L).build2();
-  public static final SMethod<SNode> getDenominator_id1JynhuWrTer = new SMethodBuilder<SNode>(new SJavaCompoundTypeImpl((Class<SNode>) ((Class) Object.class))).name("getDenominator").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(2009270740287722395L).languageId(0x86ed2c6daa33cd8cL, 0x7ee265bd59864709L).build2();
-  public static final SMethod<SNode> getReducedExpr_id69ZGumtuChd = new SMethodBuilder<SNode>(new SJavaCompoundTypeImpl((Class<SNode>) ((Class) Object.class))).name("getReducedExpr").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(7097587137506870349L).languageId(0x86ed2c6daa33cd8cL, 0x7ee265bd59864709L).build2();
+  public static final SMethod<SNode> getNumerator_id1JynhuWrSSG = new SMethodBuilder<>(SNode.class).name("getNumerator").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(2009270740287721004L).languageId(0x86ed2c6daa33cd8cL, 0x7ee265bd59864709L).build2();
+  public static final SMethod<SNode> getDenominator_id1JynhuWrTer = new SMethodBuilder<>(SNode.class).name("getDenominator").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(2009270740287722395L).languageId(0x86ed2c6daa33cd8cL, 0x7ee265bd59864709L).build2();
+  public static final SMethod<SNode> getReducedExpr_id69ZGumtuChd = new SMethodBuilder<>(SNode.class).name("getReducedExpr").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(7097587137506870349L).languageId(0x86ed2c6daa33cd8cL, 0x7ee265bd59864709L).build2();
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(getNumerator_id1JynhuWrSSG, getDenominator_id1JynhuWrTer, getReducedExpr_id69ZGumtuChd);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(getNumerator_id1JynhuWrSSG, getDenominator_id1JynhuWrTer, getReducedExpr_id69ZGumtuChd);
 
-  private static void ___init___(@NotNull SNode __thisNode__) {
-  }
 
   /*package*/ static SNode getNumerator_id1JynhuWrSSG(@NotNull SNode __thisNode__) {
     return SLinkOperations.getTarget(__thisNode__, LINKS.numerator$clxk);
@@ -46,10 +42,6 @@ public final class QuantityDivision__BehaviorDescriptor extends BaseBHDescriptor
   /*package*/ QuantityDivision__BehaviorDescriptor() {
   }
 
-  @Override
-  protected void initNode(@NotNull SNode node, @NotNull SConstructor constructor, @Nullable Object[] parameters) {
-    ___init___(node);
-  }
 
   @Override
   protected <T> T invokeSpecial0(@NotNull SNode node, @NotNull SMethod<T> method, @Nullable Object[] parameters) {

@@ -49,7 +49,7 @@ public class PrefixedUnitIsStillOfferedInCompletionMenu_Test extends BaseTransfo
             matches = matches + 1;
           }
         }
-        Assert.assertEquals("Prefixed unit 'kqux' must be offered exactly once in the code completion menu", 1, matches);
+        Assert.assertEquals("Prefixed unit 'kqux' must be offered exactly once in the code completion menu", Integer.valueOf(1), Integer.valueOf(matches));
       });
     }
   }

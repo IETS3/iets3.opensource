@@ -69,29 +69,29 @@ public class DerivePrecisionFromRange_Test extends BaseTransformationTest {
     public void test_noInfinity() throws Exception {
       initTestNodes();
       runWithinCommand(() -> {
-        Assert.assertEquals(0, (int) NumberType__BehaviorDescriptor.derivePrecisionFromRange_id19PglA24OAE.invoke(getAnnotatedNode("n1")));
-        Assert.assertEquals(-1, (int) NumberType__BehaviorDescriptor.derivePrecisionFromRange_id19PglA24OAE.invoke(getAnnotatedNode("n2")));
-        Assert.assertEquals(0, (int) NumberType__BehaviorDescriptor.derivePrecisionFromRange_id19PglA24OAE.invoke(getAnnotatedNode("n3")));
-        Assert.assertEquals(-1, (int) NumberType__BehaviorDescriptor.derivePrecisionFromRange_id19PglA24OAE.invoke(getAnnotatedNode("n4")));
-        Assert.assertEquals(-1, (int) NumberType__BehaviorDescriptor.derivePrecisionFromRange_id19PglA24OAE.invoke(getAnnotatedNode("n5")));
-        Assert.assertEquals(1, (int) NumberType__BehaviorDescriptor.derivePrecisionFromRange_id19PglA24OAE.invoke(getAnnotatedNode("n6")));
-        Assert.assertEquals(-1, (int) NumberType__BehaviorDescriptor.derivePrecisionFromRange_id19PglA24OAE.invoke(getAnnotatedNode("n7")));
-        Assert.assertEquals(1, (int) NumberType__BehaviorDescriptor.derivePrecisionFromRange_id19PglA24OAE.invoke(getAnnotatedNode("n8")));
-        Assert.assertEquals(5, (int) NumberType__BehaviorDescriptor.derivePrecisionFromRange_id19PglA24OAE.invoke(getAnnotatedNode("n18")));
+        Assert.assertEquals(Integer.valueOf(0), Integer.valueOf((int) NumberType__BehaviorDescriptor.derivePrecisionFromRange_id19PglA24OAE.invoke(getAnnotatedNode("n1"))));
+        Assert.assertEquals(Integer.valueOf(-1), Integer.valueOf((int) NumberType__BehaviorDescriptor.derivePrecisionFromRange_id19PglA24OAE.invoke(getAnnotatedNode("n2"))));
+        Assert.assertEquals(Integer.valueOf(0), Integer.valueOf((int) NumberType__BehaviorDescriptor.derivePrecisionFromRange_id19PglA24OAE.invoke(getAnnotatedNode("n3"))));
+        Assert.assertEquals(Integer.valueOf(-1), Integer.valueOf((int) NumberType__BehaviorDescriptor.derivePrecisionFromRange_id19PglA24OAE.invoke(getAnnotatedNode("n4"))));
+        Assert.assertEquals(Integer.valueOf(-1), Integer.valueOf((int) NumberType__BehaviorDescriptor.derivePrecisionFromRange_id19PglA24OAE.invoke(getAnnotatedNode("n5"))));
+        Assert.assertEquals(Integer.valueOf(1), Integer.valueOf((int) NumberType__BehaviorDescriptor.derivePrecisionFromRange_id19PglA24OAE.invoke(getAnnotatedNode("n6"))));
+        Assert.assertEquals(Integer.valueOf(-1), Integer.valueOf((int) NumberType__BehaviorDescriptor.derivePrecisionFromRange_id19PglA24OAE.invoke(getAnnotatedNode("n7"))));
+        Assert.assertEquals(Integer.valueOf(1), Integer.valueOf((int) NumberType__BehaviorDescriptor.derivePrecisionFromRange_id19PglA24OAE.invoke(getAnnotatedNode("n8"))));
+        Assert.assertEquals(Integer.valueOf(5), Integer.valueOf((int) NumberType__BehaviorDescriptor.derivePrecisionFromRange_id19PglA24OAE.invoke(getAnnotatedNode("n18"))));
       });
     }
     public void test_infinity() throws Exception {
       initTestNodes();
       runWithinCommand(() -> {
-        Assert.assertEquals(0, (int) NumberType__BehaviorDescriptor.derivePrecisionFromRange_id19PglA24OAE.invoke(getAnnotatedNode("n9")));
-        Assert.assertEquals(1, (int) NumberType__BehaviorDescriptor.derivePrecisionFromRange_id19PglA24OAE.invoke(getAnnotatedNode("n10")));
-        Assert.assertEquals(0, (int) NumberType__BehaviorDescriptor.derivePrecisionFromRange_id19PglA24OAE.invoke(getAnnotatedNode("n11")));
-        Assert.assertEquals(1, (int) NumberType__BehaviorDescriptor.derivePrecisionFromRange_id19PglA24OAE.invoke(getAnnotatedNode("n12")));
-        Assert.assertEquals(0, (int) NumberType__BehaviorDescriptor.derivePrecisionFromRange_id19PglA24OAE.invoke(getAnnotatedNode("n13")));
-        Assert.assertEquals(1, (int) NumberType__BehaviorDescriptor.derivePrecisionFromRange_id19PglA24OAE.invoke(getAnnotatedNode("n14")));
-        Assert.assertEquals(0, (int) NumberType__BehaviorDescriptor.derivePrecisionFromRange_id19PglA24OAE.invoke(getAnnotatedNode("n15")));
-        Assert.assertEquals(1, (int) NumberType__BehaviorDescriptor.derivePrecisionFromRange_id19PglA24OAE.invoke(getAnnotatedNode("n16")));
-        Assert.assertEquals(-1, (int) NumberType__BehaviorDescriptor.derivePrecisionFromRange_id19PglA24OAE.invoke(getAnnotatedNode("n17")));
+        Assert.assertEquals(Integer.valueOf(0), Integer.valueOf((int) NumberType__BehaviorDescriptor.derivePrecisionFromRange_id19PglA24OAE.invoke(getAnnotatedNode("n9"))));
+        Assert.assertEquals(Integer.valueOf(1), Integer.valueOf((int) NumberType__BehaviorDescriptor.derivePrecisionFromRange_id19PglA24OAE.invoke(getAnnotatedNode("n10"))));
+        Assert.assertEquals(Integer.valueOf(0), Integer.valueOf((int) NumberType__BehaviorDescriptor.derivePrecisionFromRange_id19PglA24OAE.invoke(getAnnotatedNode("n11"))));
+        Assert.assertEquals(Integer.valueOf(1), Integer.valueOf((int) NumberType__BehaviorDescriptor.derivePrecisionFromRange_id19PglA24OAE.invoke(getAnnotatedNode("n12"))));
+        Assert.assertEquals(Integer.valueOf(0), Integer.valueOf((int) NumberType__BehaviorDescriptor.derivePrecisionFromRange_id19PglA24OAE.invoke(getAnnotatedNode("n13"))));
+        Assert.assertEquals(Integer.valueOf(1), Integer.valueOf((int) NumberType__BehaviorDescriptor.derivePrecisionFromRange_id19PglA24OAE.invoke(getAnnotatedNode("n14"))));
+        Assert.assertEquals(Integer.valueOf(0), Integer.valueOf((int) NumberType__BehaviorDescriptor.derivePrecisionFromRange_id19PglA24OAE.invoke(getAnnotatedNode("n15"))));
+        Assert.assertEquals(Integer.valueOf(1), Integer.valueOf((int) NumberType__BehaviorDescriptor.derivePrecisionFromRange_id19PglA24OAE.invoke(getAnnotatedNode("n16"))));
+        Assert.assertEquals(Integer.valueOf(-1), Integer.valueOf((int) NumberType__BehaviorDescriptor.derivePrecisionFromRange_id19PglA24OAE.invoke(getAnnotatedNode("n17"))));
       });
     }
     public void test_NodePrecisionCannotBeDerivedCheck5942228361806346007() throws Exception {

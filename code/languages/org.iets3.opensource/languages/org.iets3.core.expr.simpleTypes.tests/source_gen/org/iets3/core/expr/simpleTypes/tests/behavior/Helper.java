@@ -15,7 +15,7 @@ public class Helper {
     return res;
   }
   /**
-   * Recursive implementation for {@link #permutations(List, Collection)} 
+   * Recursive implementation for {@link #permutations(List, Collection)}
    */
   private static void permutationsImpl(List<List<SNode>> ori, List<List<SNode>> res, int d, List<SNode> current) {
     if (d == ListSequence.fromList(ori).count()) {

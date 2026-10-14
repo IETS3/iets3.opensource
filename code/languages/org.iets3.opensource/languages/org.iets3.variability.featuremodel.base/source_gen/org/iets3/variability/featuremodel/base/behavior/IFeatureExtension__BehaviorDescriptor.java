@@ -7,7 +7,6 @@ import org.jetbrains.mps.openapi.language.SAbstractConcept;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import org.jetbrains.mps.openapi.model.SNode;
 import java.util.List;
@@ -17,7 +16,6 @@ import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
 import jetbrains.mps.internal.collections.runtime.ListSequence;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SConceptOperations;
-import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 import org.jetbrains.mps.openapi.language.SContainmentLink;
@@ -25,16 +23,14 @@ import org.jetbrains.mps.openapi.language.SContainmentLink;
 public final class IFeatureExtension__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getInterfaceConcept(0x165f1d0525064544L, 0x895e1424f54166ecL, 0x247c551ab04d3919L, "org.iets3.variability.featuremodel.base.structure.IFeatureExtension");
 
-  public static final SMethod<FeatureExtensionPosition> position_id2hWlhEKvLq3 = new SMethodBuilder<FeatureExtensionPosition>(new SJavaCompoundTypeImpl(FeatureExtensionPosition.class)).name("position").modifiers(9, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(2629069855596156547L).languageId(0x895e1424f54166ecL, 0x165f1d0525064544L).build2();
-  public static final SMethod<FeatureExtensionPosition> position_id2hWlhEKvR1G = new SMethodBuilder<FeatureExtensionPosition>(new SJavaCompoundTypeImpl(FeatureExtensionPosition.class)).name("position").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(2629069855596179564L).languageId(0x895e1424f54166ecL, 0x165f1d0525064544L).build2();
-  public static final SMethod<SNode> find_id2hWlhEKKXWK = new SMethodBuilder<SNode>(new SJavaCompoundTypeImpl((Class<SNode>) ((Class) Object.class))).name("find").modifiers(9, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(2629069855600664368L).languageId(0x895e1424f54166ecL, 0x165f1d0525064544L).build2(SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""));
-  public static final SMethod<SNode> toggle_id2hWlhEKKSTz = new SMethodBuilder<SNode>(new SJavaCompoundTypeImpl((Class<SNode>) ((Class) Object.class))).name("toggle").modifiers(9, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(2629069855600643683L).languageId(0x895e1424f54166ecL, 0x165f1d0525064544L).build2(SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""));
-  public static final SMethod<Boolean> isEmpty_id2hWlhEKzjED = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("isEmpty").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(2629069855597083305L).languageId(0x895e1424f54166ecL, 0x165f1d0525064544L).build2();
+  public static final SMethod<FeatureExtensionPosition> position_id2hWlhEKvLq3 = new SMethodBuilder<>(FeatureExtensionPosition.class).name("position").modifiers(9, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(2629069855596156547L).languageId(0x895e1424f54166ecL, 0x165f1d0525064544L).build2();
+  public static final SMethod<FeatureExtensionPosition> position_id2hWlhEKvR1G = new SMethodBuilder<>(FeatureExtensionPosition.class).name("position").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(2629069855596179564L).languageId(0x895e1424f54166ecL, 0x165f1d0525064544L).build2();
+  public static final SMethod<SNode> find_id2hWlhEKKXWK = new SMethodBuilder<>(SNode.class).name("find").modifiers(9, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(2629069855600664368L).languageId(0x895e1424f54166ecL, 0x165f1d0525064544L).build2(SMethodBuilder.createJavaParameter(SNode.class, "parent"));
+  public static final SMethod<SNode> toggle_id2hWlhEKKSTz = new SMethodBuilder<>(SNode.class).name("toggle").modifiers(9, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(2629069855600643683L).languageId(0x895e1424f54166ecL, 0x165f1d0525064544L).build2(SMethodBuilder.createJavaParameter(SNode.class, "parent"));
+  public static final SMethod<Boolean> isEmpty_id2hWlhEKzjED = new SMethodBuilder<>(Boolean.TYPE).name("isEmpty").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(2629069855597083305L).languageId(0x895e1424f54166ecL, 0x165f1d0525064544L).build2();
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(position_id2hWlhEKvLq3, position_id2hWlhEKvR1G, find_id2hWlhEKKXWK, toggle_id2hWlhEKKSTz, isEmpty_id2hWlhEKzjED);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(position_id2hWlhEKvLq3, position_id2hWlhEKvR1G, find_id2hWlhEKKXWK, toggle_id2hWlhEKKSTz, isEmpty_id2hWlhEKzjED);
 
-  private static void ___init___(@NotNull SNode __thisNode__) {
-  }
 
   /*package*/ static FeatureExtensionPosition position_id2hWlhEKvLq3(@NotNull SAbstractConcept __thisConcept__) {
     return FeatureExtensionPosition.BEFORE_NAME;
@@ -62,10 +58,6 @@ public final class IFeatureExtension__BehaviorDescriptor extends BaseBHDescripto
   /*package*/ IFeatureExtension__BehaviorDescriptor() {
   }
 
-  @Override
-  protected void initNode(@NotNull SNode node, @NotNull SConstructor constructor, @Nullable Object[] parameters) {
-    ___init___(node);
-  }
 
   @Override
   protected <T> T invokeSpecial0(@NotNull SNode node, @NotNull SMethod<T> method, @Nullable Object[] parameters) {

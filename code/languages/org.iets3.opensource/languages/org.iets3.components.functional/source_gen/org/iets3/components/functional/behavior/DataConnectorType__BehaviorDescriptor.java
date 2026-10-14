@@ -8,27 +8,23 @@ import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import org.jetbrains.mps.openapi.model.SNode;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import java.util.List;
 import java.util.Arrays;
 import org.jetbrains.annotations.NotNull;
 import org.iets3.analysis.base.plugin.STF;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
-import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 
 public final class DataConnectorType__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getConcept(0x257976063fb647b8L, 0xbc3cb4384df7da44L, 0x4c293bba4870cc92L, "org.iets3.components.functional.structure.DataConnectorType");
 
-  public static final SMethod<SNode> createSolverTask_id4pkidg67Lgb = new SMethodBuilder<SNode>(new SJavaCompoundTypeImpl((Class<SNode>) ((Class) Object.class))).name("createSolverTask").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5067755556171617291L).languageId(0x8fed954c202d18beL, 0xdb8bd0353f5141d8L).build2();
-  public static final SMethod<SNode> nodeForDebuggerAndErrorMessage_id6MbsW86o$bl = new SMethodBuilder<SNode>(new SJavaCompoundTypeImpl((Class<SNode>) ((Class) Object.class))).name("nodeForDebuggerAndErrorMessage").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(7821472455026950869L).languageId(0x8fed954c202d18beL, 0xdb8bd0353f5141d8L).build2();
+  public static final SMethod<SNode> createSolverTask_id4pkidg67Lgb = new SMethodBuilder<>(SNode.class).name("createSolverTask").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5067755556171617291L).languageId(0x8fed954c202d18beL, 0xdb8bd0353f5141d8L).build2();
+  public static final SMethod<SNode> nodeForDebuggerAndErrorMessage_id6MbsW86o$bl = new SMethodBuilder<>(SNode.class).name("nodeForDebuggerAndErrorMessage").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(7821472455026950869L).languageId(0x8fed954c202d18beL, 0xdb8bd0353f5141d8L).build2();
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(createSolverTask_id4pkidg67Lgb, nodeForDebuggerAndErrorMessage_id6MbsW86o$bl);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(createSolverTask_id4pkidg67Lgb, nodeForDebuggerAndErrorMessage_id6MbsW86o$bl);
 
-  private static void ___init___(@NotNull SNode __thisNode__) {
-  }
 
   /*package*/ static SNode createSolverTask_id4pkidg67Lgb(@NotNull SNode __thisNode__) {
     return STF.createSolverTask(__thisNode__, "check connection");
@@ -40,10 +36,6 @@ public final class DataConnectorType__BehaviorDescriptor extends BaseBHDescripto
   /*package*/ DataConnectorType__BehaviorDescriptor() {
   }
 
-  @Override
-  protected void initNode(@NotNull SNode node, @NotNull SConstructor constructor, @Nullable Object[] parameters) {
-    ___init___(node);
-  }
 
   @Override
   protected <T> T invokeSpecial0(@NotNull SNode node, @NotNull SMethod<T> method, @Nullable Object[] parameters) {

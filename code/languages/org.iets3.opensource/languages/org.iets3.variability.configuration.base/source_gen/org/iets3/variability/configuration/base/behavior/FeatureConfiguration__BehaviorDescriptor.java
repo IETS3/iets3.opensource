@@ -7,7 +7,6 @@ import org.jetbrains.mps.openapi.language.SAbstractConcept;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import org.jetbrains.mps.openapi.model.SNode;
 import java.util.List;
@@ -19,7 +18,6 @@ import jetbrains.mps.lang.core.behavior.ISuppressErrors__BehaviorDescriptor;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SEnumOperations;
 import org.iets3.variability.featuremodel.base.behavior.ICanHaveConstraint__BehaviorDescriptor;
-import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 import org.jetbrains.mps.openapi.language.SReferenceLink;
@@ -31,15 +29,13 @@ import org.jetbrains.mps.openapi.language.SProperty;
 public final class FeatureConfiguration__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getConcept(0x71226ee2bbc445d2L, 0xa41d20b97237156cL, 0x5cf5c0d0479ec91dL, "org.iets3.variability.configuration.base.structure.FeatureConfiguration");
 
-  public static final SMethod<String> getPresentation_idhEwIMiw = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("getPresentation").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(1213877396640L).languageId(0x9b92103b95ca8c0cL, 0xceab519525ea4f22L).build2();
-  public static final SMethod<Boolean> suppress_id2WmWrdnSpX7 = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("suppress").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(3393165121846091591L).languageId(0x9b92103b95ca8c0cL, 0xceab519525ea4f22L).build2(SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""));
-  public static final SMethod<Boolean> parentHasCardinality_id4aYaOlejU0w = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("parentHasCardinality").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(4809329028744847392L).languageId(0xa41d20b97237156cL, 0x71226ee2bbc445d2L).build2();
-  public static final SMethod<Iterable<SNode>> constraints_id1GuOf_A$Bqq = new SMethodBuilder<Iterable<SNode>>(new SJavaCompoundTypeImpl((Class<Iterable<SNode>>) ((Class) Object.class))).name("constraints").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(1954229057911682714L).languageId(0xa41d20b97237156cL, 0x71226ee2bbc445d2L).build2();
+  public static final SMethod<String> getPresentation_idhEwIMiw = new SMethodBuilder<>(String.class).name("getPresentation").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(1213877396640L).languageId(0x9b92103b95ca8c0cL, 0xceab519525ea4f22L).build2();
+  public static final SMethod<Boolean> suppress_id2WmWrdnSpX7 = new SMethodBuilder<>(Boolean.TYPE).name("suppress").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(3393165121846091591L).languageId(0x9b92103b95ca8c0cL, 0xceab519525ea4f22L).build2(SMethodBuilder.createJavaParameter(SNode.class, "child"));
+  public static final SMethod<Boolean> parentHasCardinality_id4aYaOlejU0w = new SMethodBuilder<>(Boolean.TYPE).name("parentHasCardinality").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(4809329028744847392L).languageId(0xa41d20b97237156cL, 0x71226ee2bbc445d2L).build2();
+  public static final SMethod<Iterable<SNode>> constraints_id1GuOf_A$Bqq = new SMethodBuilder<>((Class<Iterable<SNode>>) ((Class) Object.class)).name("constraints").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(1954229057911682714L).languageId(0xa41d20b97237156cL, 0x71226ee2bbc445d2L).build2();
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(getPresentation_idhEwIMiw, suppress_id2WmWrdnSpX7, parentHasCardinality_id4aYaOlejU0w, constraints_id1GuOf_A$Bqq);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(getPresentation_idhEwIMiw, suppress_id2WmWrdnSpX7, parentHasCardinality_id4aYaOlejU0w, constraints_id1GuOf_A$Bqq);
 
-  private static void ___init___(@NotNull SNode __thisNode__) {
-  }
 
   /*package*/ static String getPresentation_idhEwIMiw(@NotNull SNode __thisNode__) {
     return "cfg:" + SNodeOperations.present(SLinkOperations.getTarget(__thisNode__, LINKS.targetFeature$16lA));
@@ -61,10 +57,6 @@ public final class FeatureConfiguration__BehaviorDescriptor extends BaseBHDescri
   /*package*/ FeatureConfiguration__BehaviorDescriptor() {
   }
 
-  @Override
-  protected void initNode(@NotNull SNode node, @NotNull SConstructor constructor, @Nullable Object[] parameters) {
-    ___init___(node);
-  }
 
   @Override
   protected <T> T invokeSpecial0(@NotNull SNode node, @NotNull SMethod<T> method, @Nullable Object[] parameters) {

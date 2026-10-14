@@ -7,7 +7,6 @@ import org.jetbrains.mps.openapi.language.SAbstractConcept;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import org.jetbrains.mps.openapi.model.SNode;
 import org.iets3.core.expr.base.plugin.EffectDescriptor;
@@ -17,7 +16,6 @@ import org.jetbrains.annotations.NotNull;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
 import org.iets3.core.expr.base.runtime.runtime.PTF;
-import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 import org.jetbrains.mps.openapi.language.SContainmentLink;
@@ -26,18 +24,16 @@ import org.jetbrains.mps.openapi.language.SConcept;
 public final class AltOption__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getConcept(0xcfaa4966b7d54b69L, 0xb66a309a6e1a7290L, 0x6ea1ae96e110d65bL, "org.iets3.core.expr.base.structure.AltOption");
 
-  public static final SMethod<String> renderReadable_idHywGhj7ndd = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("renderReadable").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(820361861854491469L).languageId(0xb66a309a6e1a7290L, 0xcfaa4966b7d54b69L).build2();
-  public static final SMethod<String> getPresentation_idhEwIMiw = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("getPresentation").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(1213877396640L).languageId(0x9b92103b95ca8c0cL, 0xceab519525ea4f22L).build2();
-  public static final SMethod<String> asString_id6iqfHNBPkjP = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("asString").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(7249175668709475573L).languageId(0xb66a309a6e1a7290L, 0xcfaa4966b7d54b69L).build2();
-  public static final SMethod<Iterable<SNode>> getAllOtherwiseSiblings_id53cOfDpcBbK = new SMethodBuilder<Iterable<SNode>>(new SJavaCompoundTypeImpl((Class<Iterable<SNode>>) ((Class) Object.class))).name("getAllOtherwiseSiblings").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5822258191940088560L).languageId(0xb66a309a6e1a7290L, 0xcfaa4966b7d54b69L).build2(SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""));
-  public static final SMethod<Boolean> isOtherwise_id74geI_h4G8M = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("isOtherwise").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(8147076499675202098L).languageId(0xb66a309a6e1a7290L, 0xcfaa4966b7d54b69L).build2();
-  public static final SMethod<EffectDescriptor> effectDescriptor_id6GySMNjjWfO = new SMethodBuilder<EffectDescriptor>(new SJavaCompoundTypeImpl(EffectDescriptor.class)).name("effectDescriptor").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(7719982492929737716L).languageId(0xb66a309a6e1a7290L, 0xcfaa4966b7d54b69L).build2();
-  public static final SMethod<String> allowsEffectForNode_idORfz$DS6Ap = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("allowsEffectForNode").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(952298261448780185L).languageId(0xb66a309a6e1a7290L, 0xcfaa4966b7d54b69L).build2(SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""));
+  public static final SMethod<String> renderReadable_idHywGhj7ndd = new SMethodBuilder<>(String.class).name("renderReadable").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(820361861854491469L).languageId(0xb66a309a6e1a7290L, 0xcfaa4966b7d54b69L).build2();
+  public static final SMethod<String> getPresentation_idhEwIMiw = new SMethodBuilder<>(String.class).name("getPresentation").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(1213877396640L).languageId(0x9b92103b95ca8c0cL, 0xceab519525ea4f22L).build2();
+  public static final SMethod<String> asString_id6iqfHNBPkjP = new SMethodBuilder<>(String.class).name("asString").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(7249175668709475573L).languageId(0xb66a309a6e1a7290L, 0xcfaa4966b7d54b69L).build2();
+  public static final SMethod<Iterable<SNode>> getAllOtherwiseSiblings_id53cOfDpcBbK = new SMethodBuilder<>((Class<Iterable<SNode>>) ((Class) Object.class)).name("getAllOtherwiseSiblings").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5822258191940088560L).languageId(0xb66a309a6e1a7290L, 0xcfaa4966b7d54b69L).build2(SMethodBuilder.createJavaParameter(SNode.class, "otherwiseLiteral"));
+  public static final SMethod<Boolean> isOtherwise_id74geI_h4G8M = new SMethodBuilder<>(Boolean.TYPE).name("isOtherwise").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(8147076499675202098L).languageId(0xb66a309a6e1a7290L, 0xcfaa4966b7d54b69L).build2();
+  public static final SMethod<EffectDescriptor> effectDescriptor_id6GySMNjjWfO = new SMethodBuilder<>(EffectDescriptor.class).name("effectDescriptor").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(7719982492929737716L).languageId(0xb66a309a6e1a7290L, 0xcfaa4966b7d54b69L).build2();
+  public static final SMethod<String> allowsEffectForNode_idORfz$DS6Ap = new SMethodBuilder<>(String.class).name("allowsEffectForNode").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(952298261448780185L).languageId(0xb66a309a6e1a7290L, 0xcfaa4966b7d54b69L).build2(SMethodBuilder.createJavaParameter(SNode.class, "n"));
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(renderReadable_idHywGhj7ndd, getPresentation_idhEwIMiw, asString_id6iqfHNBPkjP, getAllOtherwiseSiblings_id53cOfDpcBbK, isOtherwise_id74geI_h4G8M, effectDescriptor_id6GySMNjjWfO, allowsEffectForNode_idORfz$DS6Ap);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(renderReadable_idHywGhj7ndd, getPresentation_idhEwIMiw, asString_id6iqfHNBPkjP, getAllOtherwiseSiblings_id53cOfDpcBbK, isOtherwise_id74geI_h4G8M, effectDescriptor_id6GySMNjjWfO, allowsEffectForNode_idORfz$DS6Ap);
 
-  private static void ___init___(@NotNull SNode __thisNode__) {
-  }
 
   /*package*/ static String renderReadable_idHywGhj7ndd(@NotNull SNode __thisNode__) {
     return Expression__BehaviorDescriptor.renderReadable_id4Y0vh0cfqjE.invoke(SLinkOperations.getTarget(__thisNode__, LINKS.when$ywD6)) + " => " + Expression__BehaviorDescriptor.renderReadable_id4Y0vh0cfqjE.invoke(SLinkOperations.getTarget(__thisNode__, LINKS.then$yx78));
@@ -67,10 +63,6 @@ public final class AltOption__BehaviorDescriptor extends BaseBHDescriptor {
   /*package*/ AltOption__BehaviorDescriptor() {
   }
 
-  @Override
-  protected void initNode(@NotNull SNode node, @NotNull SConstructor constructor, @Nullable Object[] parameters) {
-    ___init___(node);
-  }
 
   @Override
   protected <T> T invokeSpecial0(@NotNull SNode node, @NotNull SMethod<T> method, @Nullable Object[] parameters) {

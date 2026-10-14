@@ -8,7 +8,6 @@ import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import org.jetbrains.mps.openapi.model.SNode;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import java.util.List;
 import java.util.Arrays;
@@ -27,12 +26,12 @@ import org.jetbrains.mps.openapi.language.SProperty;
 public final class AlgebraicDeclaration__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getConcept(0x5fe6cb132fbd4e21L, 0x9842785bdd6fc5b1L, 0x52a5783d22c9d318L, "org.iets3.core.expr.adt.structure.AlgebraicDeclaration");
 
-  public static final SMethod<Iterable<SNode>> getUniquelyNamedElements_id4qSf1u1TRfj = new SMethodBuilder<Iterable<SNode>>(new SJavaCompoundTypeImpl((Class<Iterable<SNode>>) ((Class) Object.class))).name("getUniquelyNamedElements").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5095889050031059923L).languageId(0xaa41d1b2bffa7eb1L, 0xd4280a54f6df4383L).build2();
-  public static final SMethod<Iterable<SNode>> allConstructors_id5a_u3OzPizZ = new SMethodBuilder<Iterable<SNode>>(new SJavaCompoundTypeImpl((Class<Iterable<SNode>>) ((Class) Object.class))).name("allConstructors").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5955298286256859391L).languageId(0x9842785bdd6fc5b1L, 0x5fe6cb132fbd4e21L).build2();
-  public static final SMethod<Iterable<SNode>> concreteConstructors_id5a_u3OzPjJn = new SMethodBuilder<Iterable<SNode>>(new SJavaCompoundTypeImpl((Class<Iterable<SNode>>) ((Class) Object.class))).name("concreteConstructors").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5955298286256864215L).languageId(0x9842785bdd6fc5b1L, 0x5fe6cb132fbd4e21L).build2();
-  public static final SMethod<Iterable<SNode>> abstractConstructors_id5a_u3OzPrSF = new SMethodBuilder<Iterable<SNode>>(new SJavaCompoundTypeImpl((Class<Iterable<SNode>>) ((Class) Object.class))).name("abstractConstructors").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5955298286256897579L).languageId(0x9842785bdd6fc5b1L, 0x5fe6cb132fbd4e21L).build2();
+  public static final SMethod<Iterable<SNode>> getUniquelyNamedElements_id4qSf1u1TRfj = new SMethodBuilder<>((Class<Iterable<SNode>>) ((Class) Object.class)).name("getUniquelyNamedElements").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5095889050031059923L).languageId(0xaa41d1b2bffa7eb1L, 0xd4280a54f6df4383L).build2();
+  public static final SMethod<Iterable<SNode>> allConstructors_id5a_u3OzPizZ = new SMethodBuilder<>((Class<Iterable<SNode>>) ((Class) Object.class)).name("allConstructors").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5955298286256859391L).languageId(0x9842785bdd6fc5b1L, 0x5fe6cb132fbd4e21L).build2();
+  public static final SMethod<Iterable<SNode>> concreteConstructors_id5a_u3OzPjJn = new SMethodBuilder<>((Class<Iterable<SNode>>) ((Class) Object.class)).name("concreteConstructors").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5955298286256864215L).languageId(0x9842785bdd6fc5b1L, 0x5fe6cb132fbd4e21L).build2();
+  public static final SMethod<Iterable<SNode>> abstractConstructors_id5a_u3OzPrSF = new SMethodBuilder<>((Class<Iterable<SNode>>) ((Class) Object.class)).name("abstractConstructors").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5955298286256897579L).languageId(0x9842785bdd6fc5b1L, 0x5fe6cb132fbd4e21L).build2();
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(getUniquelyNamedElements_id4qSf1u1TRfj, allConstructors_id5a_u3OzPizZ, concreteConstructors_id5a_u3OzPjJn, abstractConstructors_id5a_u3OzPrSF);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(getUniquelyNamedElements_id4qSf1u1TRfj, allConstructors_id5a_u3OzPizZ, concreteConstructors_id5a_u3OzPjJn, abstractConstructors_id5a_u3OzPrSF);
 
   private static void ___init___(@NotNull SNode __thisNode__) {
     SLinkOperations.addNewChild(__thisNode__, LINKS.constructors$$Bqc, null);

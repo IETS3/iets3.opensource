@@ -7,7 +7,6 @@ import org.jetbrains.mps.openapi.language.SAbstractConcept;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import java.util.List;
 import java.util.Arrays;
@@ -27,10 +26,10 @@ import org.jetbrains.mps.openapi.language.SReferenceLink;
 public final class LookupTable__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getConcept(0x406e4b3cffd4d16L, 0x85336bc50680ab3bL, 0x5155d54becaf12b6L, "org.iets3.core.expr.lookup.structure.LookupTable");
 
-  public static final SMethod<Void> init_id55lPkJGMvFt = new SMethodBuilder<Void>(new SJavaCompoundTypeImpl(Void.class)).name("init").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5860825012164491997L).languageId(0x85336bc50680ab3bL, 0x406e4b3cffd4d16L).build2();
-  public static final SMethod<Void> addRow_id55lPkJGQLme = new SMethodBuilder<Void>(new SJavaCompoundTypeImpl(Void.class)).name("addRow").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5860825012165612942L).languageId(0x85336bc50680ab3bL, 0x406e4b3cffd4d16L).build2(SMethodBuilder.createJavaParameter(Integer.TYPE, ""), SMethodBuilder.createJavaParameter(String[].class, ""));
+  public static final SMethod<Void> init_id55lPkJGMvFt = new SMethodBuilder<>(Void.TYPE).name("init").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5860825012164491997L).languageId(0x85336bc50680ab3bL, 0x406e4b3cffd4d16L).build2();
+  public static final SMethod<Void> addRow_id55lPkJGQLme = new SMethodBuilder<>(Void.TYPE).name("addRow").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5860825012165612942L).languageId(0x85336bc50680ab3bL, 0x406e4b3cffd4d16L).build2(SMethodBuilder.createJavaParameter(Integer.TYPE, "rowHeaderVal"), SMethodBuilder.createJavaParameter(String[].class, "cellVals"));
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(init_id55lPkJGMvFt, addRow_id55lPkJGQLme);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(init_id55lPkJGMvFt, addRow_id55lPkJGQLme);
 
   private static void ___init___(@NotNull SNode __thisNode__) {
     LookupTable__BehaviorDescriptor.init_id55lPkJGMvFt.invoke(__thisNode__);

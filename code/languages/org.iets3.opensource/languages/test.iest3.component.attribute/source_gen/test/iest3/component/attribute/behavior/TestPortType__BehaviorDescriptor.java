@@ -7,13 +7,11 @@ import org.jetbrains.mps.openapi.language.SAbstractConcept;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import org.jetbrains.mps.openapi.model.SNode;
 import java.util.List;
 import java.util.Arrays;
 import org.jetbrains.annotations.NotNull;
-import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 import jetbrains.mps.smodel.builder.SNodeBuilder;
@@ -22,13 +20,11 @@ import org.jetbrains.mps.openapi.language.SConcept;
 public final class TestPortType__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getConcept(0x3c910f627ca945f3L, 0xa98ac6239acaa8f1L, 0x3dbd14d2e5a89dbbL, "test.iest3.component.attribute.structure.TestPortType");
 
-  public static final SMethod<Boolean> isCompatibleWithGoverningType_idcJpacq1kKx = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("isCompatibleWithGoverningType").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(229512757698186273L).languageId(0xb6713d118449c6e7L, 0xf0fd486f857743e9L).build2(SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""));
-  public static final SMethod<SNode> createConnectorType_id4KDeVD8s9TJ = new SMethodBuilder<SNode>(new SJavaCompoundTypeImpl((Class<SNode>) ((Class) Object.class))).name("createConnectorType").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5487983292192956015L).languageId(0xb6713d118449c6e7L, 0xf0fd486f857743e9L).build2();
+  public static final SMethod<Boolean> isCompatibleWithGoverningType_idcJpacq1kKx = new SMethodBuilder<>(Boolean.TYPE).name("isCompatibleWithGoverningType").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(229512757698186273L).languageId(0xb6713d118449c6e7L, 0xf0fd486f857743e9L).build2(SMethodBuilder.createJavaParameter(SNode.class, "governingPortType"));
+  public static final SMethod<SNode> createConnectorType_id4KDeVD8s9TJ = new SMethodBuilder<>(SNode.class).name("createConnectorType").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5487983292192956015L).languageId(0xb6713d118449c6e7L, 0xf0fd486f857743e9L).build2();
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(isCompatibleWithGoverningType_idcJpacq1kKx, createConnectorType_id4KDeVD8s9TJ);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(isCompatibleWithGoverningType_idcJpacq1kKx, createConnectorType_id4KDeVD8s9TJ);
 
-  private static void ___init___(@NotNull SNode __thisNode__) {
-  }
 
   /*package*/ static boolean isCompatibleWithGoverningType_idcJpacq1kKx(@NotNull SNode __thisNode__, SNode governingPortType) {
     return true;
@@ -40,10 +36,6 @@ public final class TestPortType__BehaviorDescriptor extends BaseBHDescriptor {
   /*package*/ TestPortType__BehaviorDescriptor() {
   }
 
-  @Override
-  protected void initNode(@NotNull SNode node, @NotNull SConstructor constructor, @Nullable Object[] parameters) {
-    ___init___(node);
-  }
 
   @Override
   protected <T> T invokeSpecial0(@NotNull SNode node, @NotNull SMethod<T> method, @Nullable Object[] parameters) {

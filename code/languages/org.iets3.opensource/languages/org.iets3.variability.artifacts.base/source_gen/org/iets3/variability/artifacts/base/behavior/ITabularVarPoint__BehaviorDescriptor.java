@@ -8,7 +8,6 @@ import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import org.jetbrains.mps.openapi.model.SNode;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import com.mbeddr.mpsutil.interpreter.rt.IContext;
 import java.util.List;
@@ -18,7 +17,6 @@ import java.util.Optional;
 import jetbrains.mps.internal.collections.runtime.Sequence;
 import org.iets3.variability.artifacts.base.plugin.EvalVarPointCache;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
-import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 import org.jetbrains.mps.openapi.language.SConcept;
@@ -26,17 +24,15 @@ import org.jetbrains.mps.openapi.language.SConcept;
 public final class ITabularVarPoint__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getInterfaceConcept(0xf08835038eaa4bc8L, 0x8846eb63220ab1ddL, 0xf3bd927d24fa475L, "org.iets3.variability.artifacts.base.structure.ITabularVarPoint");
 
-  public static final SMethod<Iterable<SNode>> items_idWVQivijUir = new SMethodBuilder<Iterable<SNode>>(new SJavaCompoundTypeImpl((Class<Iterable<SNode>>) ((Class) Object.class))).name("items").modifiers(12, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(1097709699250234523L).languageId(0x8846eb63220ab1ddL, 0xf08835038eaa4bc8L).build2();
-  public static final SMethod<SNode> defaultNode_idWVQivijUjF = new SMethodBuilder<SNode>(new SJavaCompoundTypeImpl((Class<SNode>) ((Class) Object.class))).name("defaultNode").modifiers(12, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(1097709699250234603L).languageId(0x8846eb63220ab1ddL, 0xf08835038eaa4bc8L).build2();
-  public static final SMethod<SNode> defaultNodeData_id1JhYWW6mqVP = new SMethodBuilder<SNode>(new SJavaCompoundTypeImpl((Class<SNode>) ((Class) Object.class))).name("defaultNodeData").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(2004660175739924213L).languageId(0x8846eb63220ab1ddL, 0xf08835038eaa4bc8L).build2();
-  public static final SMethod<Boolean> isDefaultPresentTernary_idWVQiviqHwt = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.class)).name("isDefaultPresentTernary").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(1097709699252017181L).languageId(0x8846eb63220ab1ddL, 0xf08835038eaa4bc8L).build2(SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""), SMethodBuilder.createJavaParameter(IContext.class, ""));
-  public static final SMethod<Boolean> standardDefaultPresent_id7M6a9rD4tPt = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.class)).name("standardDefaultPresent").modifiers(0, AccessPrivileges.PROTECTED).concept(CONCEPT).baseMethodId(8972903936202759517L).languageId(0x8846eb63220ab1ddL, 0xf08835038eaa4bc8L).build2(SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""), SMethodBuilder.createJavaParameter(IContext.class, ""));
-  public static final SMethod<Iterable<SNode>> featureModelsOf_id5BGbpGNfukL = new SMethodBuilder<Iterable<SNode>>(new SJavaCompoundTypeImpl((Class<Iterable<SNode>>) ((Class) Object.class))).name("featureModelsOf").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(6479604108482176305L).languageId(0x8846eb63220ab1ddL, 0xf08835038eaa4bc8L).build2();
+  public static final SMethod<Iterable<SNode>> items_idWVQivijUir = new SMethodBuilder<>((Class<Iterable<SNode>>) ((Class) Object.class)).name("items").modifiers(12, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(1097709699250234523L).languageId(0x8846eb63220ab1ddL, 0xf08835038eaa4bc8L).build2();
+  public static final SMethod<SNode> defaultNode_idWVQivijUjF = new SMethodBuilder<>(SNode.class).name("defaultNode").modifiers(12, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(1097709699250234603L).languageId(0x8846eb63220ab1ddL, 0xf08835038eaa4bc8L).build2();
+  public static final SMethod<SNode> defaultNodeData_id1JhYWW6mqVP = new SMethodBuilder<>(SNode.class).name("defaultNodeData").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(2004660175739924213L).languageId(0x8846eb63220ab1ddL, 0xf08835038eaa4bc8L).build2();
+  public static final SMethod<Boolean> isDefaultPresentTernary_idWVQiviqHwt = new SMethodBuilder<>(Boolean.class).name("isDefaultPresentTernary").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(1097709699252017181L).languageId(0x8846eb63220ab1ddL, 0xf08835038eaa4bc8L).build2(SMethodBuilder.createJavaParameter(SNode.class, "featureConfig"), SMethodBuilder.createJavaParameter(IContext.class, "context"));
+  public static final SMethod<Boolean> standardDefaultPresent_id7M6a9rD4tPt = new SMethodBuilder<>(Boolean.class).name("standardDefaultPresent").modifiers(0, AccessPrivileges.PROTECTED).concept(CONCEPT).baseMethodId(8972903936202759517L).languageId(0x8846eb63220ab1ddL, 0xf08835038eaa4bc8L).build2(SMethodBuilder.createJavaParameter(SNode.class, "featureConfig"), SMethodBuilder.createJavaParameter(IContext.class, "context"));
+  public static final SMethod<Iterable<SNode>> featureModelsOf_id5BGbpGNfukL = new SMethodBuilder<>((Class<Iterable<SNode>>) ((Class) Object.class)).name("featureModelsOf").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(6479604108482176305L).languageId(0x8846eb63220ab1ddL, 0xf08835038eaa4bc8L).build2();
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(items_idWVQivijUir, defaultNode_idWVQivijUjF, defaultNodeData_id1JhYWW6mqVP, isDefaultPresentTernary_idWVQiviqHwt, standardDefaultPresent_id7M6a9rD4tPt, featureModelsOf_id5BGbpGNfukL);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(items_idWVQivijUir, defaultNode_idWVQivijUjF, defaultNodeData_id1JhYWW6mqVP, isDefaultPresentTernary_idWVQiviqHwt, standardDefaultPresent_id7M6a9rD4tPt, featureModelsOf_id5BGbpGNfukL);
 
-  private static void ___init___(@NotNull SNode __thisNode__) {
-  }
 
   /*package*/ static SNode defaultNodeData_id1JhYWW6mqVP(@NotNull SNode __thisNode__) {
     return ((SNode) ITabularVarPoint__BehaviorDescriptor.defaultNode_idWVQivijUjF.invoke(__thisNode__));
@@ -67,10 +63,6 @@ public final class ITabularVarPoint__BehaviorDescriptor extends BaseBHDescriptor
   /*package*/ ITabularVarPoint__BehaviorDescriptor() {
   }
 
-  @Override
-  protected void initNode(@NotNull SNode node, @NotNull SConstructor constructor, @Nullable Object[] parameters) {
-    ___init___(node);
-  }
 
   @Override
   protected <T> T invokeSpecial0(@NotNull SNode node, @NotNull SMethod<T> method, @Nullable Object[] parameters) {

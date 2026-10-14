@@ -8,26 +8,22 @@ import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import org.iets3.core.expr.stringvalidation.runtime.runtime.XCheckKind;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import java.util.List;
 import java.util.Arrays;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.mps.openapi.model.SNode;
 import org.iets3.core.expr.stringvalidation.runtime.runtime.XMustBeCheckKind;
-import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 
 public final class MustBeCheckKind__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getConcept(0xf003a0fec14041d7L, 0xa145ea42368e581cL, 0x4568eac1f475bfc9L, "org.iets3.core.expr.stringvalidation.structure.MustBeCheckKind");
 
-  public static final SMethod<XCheckKind> makeX_id5wF$o0BFLyx = new SMethodBuilder<XCheckKind>(new SJavaCompoundTypeImpl(XCheckKind.class)).name("makeX").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(6353331678943844513L).languageId(0xa145ea42368e581cL, 0xf003a0fec14041d7L).build2();
+  public static final SMethod<XCheckKind> makeX_id5wF$o0BFLyx = new SMethodBuilder<>(XCheckKind.class).name("makeX").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(6353331678943844513L).languageId(0xa145ea42368e581cL, 0xf003a0fec14041d7L).build2();
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(makeX_id5wF$o0BFLyx);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(makeX_id5wF$o0BFLyx);
 
-  private static void ___init___(@NotNull SNode __thisNode__) {
-  }
 
   /*package*/ static XCheckKind makeX_id5wF$o0BFLyx(@NotNull SNode __thisNode__) {
     return new XMustBeCheckKind();
@@ -36,10 +32,6 @@ public final class MustBeCheckKind__BehaviorDescriptor extends BaseBHDescriptor 
   /*package*/ MustBeCheckKind__BehaviorDescriptor() {
   }
 
-  @Override
-  protected void initNode(@NotNull SNode node, @NotNull SConstructor constructor, @Nullable Object[] parameters) {
-    ___init___(node);
-  }
 
   @Override
   protected <T> T invokeSpecial0(@NotNull SNode node, @NotNull SMethod<T> method, @Nullable Object[] parameters) {

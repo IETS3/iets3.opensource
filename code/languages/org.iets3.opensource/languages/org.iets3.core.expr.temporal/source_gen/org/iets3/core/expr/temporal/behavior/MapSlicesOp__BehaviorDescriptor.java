@@ -8,7 +8,6 @@ import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import org.jetbrains.mps.openapi.model.SNode;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import java.util.List;
 import java.util.Arrays;
@@ -26,9 +25,9 @@ import org.jetbrains.mps.openapi.language.SConcept;
 public final class MapSlicesOp__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getConcept(0x4621d3e3b8a34bbeL, 0xb7ac234b6e2d1d68L, 0x6a0281468755b8caL, "org.iets3.core.expr.temporal.structure.MapSlicesOp");
 
-  public static final SMethod<SNode> requiredType_id6zmBjqUm7MF = new SMethodBuilder<SNode>(new SJavaCompoundTypeImpl((Class<SNode>) ((Class) Object.class))).name("requiredType").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(7554398283340741803L).languageId(0x927464ab29588457L, 0x9464fa065ab9409bL).build2();
+  public static final SMethod<SNode> requiredType_id6zmBjqUm7MF = new SMethodBuilder<>(SNode.class).name("requiredType").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(7554398283340741803L).languageId(0x927464ab29588457L, 0x9464fa065ab9409bL).build2();
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(requiredType_id6zmBjqUm7MF);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(requiredType_id6zmBjqUm7MF);
 
   private static void ___init___(@NotNull SNode __thisNode__) {
     SNode sle = SLinkOperations.setNewChild(__thisNode__, LINKS.expr$CW3E, CONCEPTS.ShortLambdaExpression$Xg);
