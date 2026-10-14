@@ -15,9 +15,10 @@ import java.util.Arrays;
 import org.jetbrains.annotations.NotNull;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SConceptOperations;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
+import jetbrains.mps.internal.collections.runtime.Sequence;
+import jetbrains.mps.lang.core.behavior.BaseConcept__BehaviorDescriptor;
 import jetbrains.mps.internal.collections.runtime.ListSequence;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
-import jetbrains.mps.lang.core.behavior.BaseConcept__BehaviorDescriptor;
 import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
@@ -32,20 +33,27 @@ public final class EnumIsInTarget__BehaviorDescriptor extends BaseBHDescriptor {
   public static final SMethod<String> renderReadable_id6kR0qIbI2yi = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("renderReadable").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(7293299957844945042L).languageId(0xb66a309a6e1a7290L, 0xcfaa4966b7d54b69L).build2();
   public static final SMethod<SNode> compose_id4L5R3LmDwOh = new SMethodBuilder<SNode>(new SJavaCompoundTypeImpl((Class<SNode>) ((Class) Object.class))).name("compose").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5496041071985429777L).languageId(0xa0548c072591085fL, 0x71934284d7d145eeL).build2(SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""), SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""), SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""));
   public static final SMethod<SNode> singleOp_id3wraVjnnC5i = new SMethodBuilder<SNode>(new SJavaCompoundTypeImpl((Class<SNode>) ((Class) Object.class))).name("singleOp").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(4042873146202554706L).languageId(0xa0548c072591085fL, 0x71934284d7d145eeL).build2(SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""));
+  public static final SMethod<Iterable<SNode>> effectiveSelectors_id48Zi1gznqdX = new SMethodBuilder<Iterable<SNode>>(new SJavaCompoundTypeImpl((Class<Iterable<SNode>>) ((Class) Object.class))).name("effectiveSelectors").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(4773613381365900157L).languageId(0xa0548c072591085fL, 0x71934284d7d145eeL).build2();
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(renderReadable_id6kR0qIbI2yi, compose_id4L5R3LmDwOh, singleOp_id3wraVjnnC5i);
+  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(renderReadable_id6kR0qIbI2yi, compose_id4L5R3LmDwOh, singleOp_id3wraVjnnC5i, effectiveSelectors_id48Zi1gznqdX);
 
   private static void ___init___(@NotNull SNode __thisNode__) {
   }
 
   /*package*/ static String renderReadable_id6kR0qIbI2yi(@NotNull SNode __thisNode__) {
-    return SConceptOperations.conceptAlias(SNodeOperations.getConcept(__thisNode__)) + "(" + ListSequence.fromList(SLinkOperations.getChildren(__thisNode__, LINKS.selectors$Hqrd)).select((it) -> BaseConcept__BehaviorDescriptor.getPresentation_idhEwIMiw.invoke(it).join(",")) + ")";
+    return SConceptOperations.conceptAlias(SNodeOperations.getConcept(__thisNode__)) + "(" + String.join(", ", Sequence.fromIterable(AbstractEnumInTarget__BehaviorDescriptor.effectiveSelectors_id48Zi1gznqdX.invoke(__thisNode__)).select((it) -> (String) BaseConcept__BehaviorDescriptor.getPresentation_idhEwIMiw.invoke(it))) + ")";
   }
   /*package*/ static SNode compose_id4L5R3LmDwOh(@NotNull SNode __thisNode__, SNode literal, SNode leftExpr, SNode ctx) {
     return createLogicalOrExpression_93d07c_a0a1(leftExpr, AbstractEnumInTarget__BehaviorDescriptor.single_id3wraVjnnEfa.invoke(__thisNode__, ctx, literal));
   }
   /*package*/ static SNode singleOp_id3wraVjnnC5i(@NotNull SNode __thisNode__, SNode literal) {
     return createEnumIsTarget_93d07c_a0a2(literal);
+  }
+  /*package*/ static Iterable<SNode> effectiveSelectors_id48Zi1gznqdX(@NotNull SNode __thisNode__) {
+    if (ListSequence.fromList(SLinkOperations.getChildren(__thisNode__, LINKS.selectors$Hqrd)).isNotEmpty()) {
+      return SLinkOperations.getChildren(__thisNode__, LINKS.selectors$Hqrd);
+    }
+    return SLinkOperations.getChildren(__thisNode__, LINKS.selectors_old$9mRD);
   }
 
   /*package*/ EnumIsInTarget__BehaviorDescriptor() {
@@ -69,6 +77,8 @@ public final class EnumIsInTarget__BehaviorDescriptor extends BaseBHDescriptor {
         return (T) ((SNode) compose_id4L5R3LmDwOh(node, (SNode) parameters[0], (SNode) parameters[1], (SNode) parameters[2]));
       case 2:
         return (T) ((SNode) singleOp_id3wraVjnnC5i(node, (SNode) parameters[0]));
+      case 3:
+        return (T) ((Iterable<SNode>) effectiveSelectors_id48Zi1gznqdX(node));
       default:
         throw new BHMethodNotFoundException(this, method);
     }
@@ -111,6 +121,7 @@ public final class EnumIsInTarget__BehaviorDescriptor extends BaseBHDescriptor {
 
   private static final class LINKS {
     /*package*/ static final SContainmentLink selectors$Hqrd = MetaAdapterFactory.getContainmentLink(0x71934284d7d145eeL, 0xa0548c072591085fL, 0x4c45dc3c56a5dd6cL, 0x358e78f08b0d1158L, "selectors");
+    /*package*/ static final SContainmentLink selectors_old$9mRD = MetaAdapterFactory.getContainmentLink(0x71934284d7d145eeL, 0xa0548c072591085fL, 0x6f1c76e8c8cb0187L, 0x6f1c76e8c8cb018aL, "selectors_old");
     /*package*/ static final SContainmentLink left$zxUa = MetaAdapterFactory.getContainmentLink(0xcfaa4966b7d54b69L, 0xb66a309a6e1a7290L, 0x46ff3b3d86c99c15L, 0x46ff3b3d86c99c16L, "left");
     /*package*/ static final SContainmentLink right$zBjx = MetaAdapterFactory.getContainmentLink(0xcfaa4966b7d54b69L, 0xb66a309a6e1a7290L, 0x46ff3b3d86c99c15L, 0x46ff3b3d86c99c18L, "right");
     /*package*/ static final SReferenceLink literal$7Jlb = MetaAdapterFactory.getReferenceLink(0x71934284d7d145eeL, 0xa0548c072591085fL, 0x33d02016c58c3783L, 0x358e78f08aec038fL, "literal");

@@ -60,7 +60,7 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
           cpb.shortDesc("a block composing other blocks");
           cpb.presentationByName();
-          cpb.icon(IconContainer.RESOURCE_a0a3a0a3b0s);
+          cpb.icon(IconContainer.RESOURCE_0);
           props_CompositeBlock = cpb.create();
         }
         return props_CompositeBlock;
@@ -84,7 +84,7 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
           cpb.shortDesc("a block declaration");
           cpb.presentationByName();
-          cpb.icon(IconContainer.RESOURCE_a0a3a0a6b0s);
+          cpb.icon(IconContainer.RESOURCE_1);
           props_ExprBlock = cpb.create();
         }
         return props_ExprBlock;
