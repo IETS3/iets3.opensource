@@ -8,7 +8,6 @@ import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import java.awt.Color;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import java.util.List;
 import java.util.Arrays;
@@ -17,7 +16,6 @@ import org.jetbrains.mps.openapi.model.SNode;
 import com.intellij.ui.JBColor;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations;
 import com.intellij.ui.ColorUtil;
-import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 import org.jetbrains.mps.openapi.language.SProperty;
@@ -25,12 +23,10 @@ import org.jetbrains.mps.openapi.language.SProperty;
 public final class ConstraintGroup__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getConcept(0x165f1d0525064544L, 0x895e1424f54166ecL, 0x6d20ecb3d733a266L, "org.iets3.variability.featuremodel.base.structure.ConstraintGroup");
 
-  public static final SMethod<Color> getColor_id6OwVbfnk$cR = new SMethodBuilder<Color>(new SJavaCompoundTypeImpl(Color.class)).name("getColor").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(7863545206544679735L).languageId(0x895e1424f54166ecL, 0x165f1d0525064544L).build2();
+  public static final SMethod<Color> getColor_id6OwVbfnk$cR = new SMethodBuilder<>(Color.class).name("getColor").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(7863545206544679735L).languageId(0x895e1424f54166ecL, 0x165f1d0525064544L).build2();
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(getColor_id6OwVbfnk$cR);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(getColor_id6OwVbfnk$cR);
 
-  private static void ___init___(@NotNull SNode __thisNode__) {
-  }
 
   /*package*/ static Color getColor_id6OwVbfnk$cR(@NotNull SNode __thisNode__) {
     JBColor defaultColor = JBColor.BLACK;
@@ -43,10 +39,6 @@ public final class ConstraintGroup__BehaviorDescriptor extends BaseBHDescriptor 
   /*package*/ ConstraintGroup__BehaviorDescriptor() {
   }
 
-  @Override
-  protected void initNode(@NotNull SNode node, @NotNull SConstructor constructor, @Nullable Object[] parameters) {
-    ___init___(node);
-  }
 
   @Override
   protected <T> T invokeSpecial0(@NotNull SNode node, @NotNull SMethod<T> method, @Nullable Object[] parameters) {

@@ -8,14 +8,12 @@ import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import org.jetbrains.mps.openapi.model.SNode;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import java.util.List;
 import java.util.Arrays;
 import org.jetbrains.annotations.NotNull;
 import jetbrains.mps.internal.collections.runtime.ListSequence;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
-import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 import org.jetbrains.mps.openapi.language.SContainmentLink;
@@ -23,12 +21,10 @@ import org.jetbrains.mps.openapi.language.SContainmentLink;
 public final class ContextFilterFrame__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getConcept(0xdcb9d48f1fb64793L, 0x88cff6f4971432a5L, 0x1ebc36697a4d55b4L, "org.iets3.contextfilter.structure.ContextFilterFrame");
 
-  public static final SMethod<Iterable<SNode>> getSelectorsOf_id1UWdA_Ujq3v = new SMethodBuilder<Iterable<SNode>>(new SJavaCompoundTypeImpl((Class<Iterable<SNode>>) ((Class) Object.class))).name("getSelectorsOf").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(2214704943410815199L).languageId(0x88cff6f4971432a5L, 0xdcb9d48f1fb64793L).build2(SMethodBuilder.createJavaParameter((Class<SAbstractConcept>) ((Class) Object.class), ""));
+  public static final SMethod<Iterable<SNode>> getSelectorsOf_id1UWdA_Ujq3v = new SMethodBuilder<>((Class<Iterable<SNode>>) ((Class) Object.class)).name("getSelectorsOf").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(2214704943410815199L).languageId(0x88cff6f4971432a5L, 0xdcb9d48f1fb64793L).build2(SMethodBuilder.createJavaParameter(SAbstractConcept.class, "ofConcept"));
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(getSelectorsOf_id1UWdA_Ujq3v);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(getSelectorsOf_id1UWdA_Ujq3v);
 
-  private static void ___init___(@NotNull SNode __thisNode__) {
-  }
 
   /*package*/ static Iterable<SNode> getSelectorsOf_id1UWdA_Ujq3v(@NotNull SNode __thisNode__, final SAbstractConcept ofConcept) {
     return ListSequence.fromList(SLinkOperations.getChildren(__thisNode__, LINKS.selectors$ZSFh)).where((it) -> it.isInstanceOfConcept(ofConcept));
@@ -37,10 +33,6 @@ public final class ContextFilterFrame__BehaviorDescriptor extends BaseBHDescript
   /*package*/ ContextFilterFrame__BehaviorDescriptor() {
   }
 
-  @Override
-  protected void initNode(@NotNull SNode node, @NotNull SConstructor constructor, @Nullable Object[] parameters) {
-    ___init___(node);
-  }
 
   @Override
   protected <T> T invokeSpecial0(@NotNull SNode node, @NotNull SMethod<T> method, @Nullable Object[] parameters) {

@@ -8,29 +8,25 @@ import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import org.jetbrains.mps.openapi.model.SNode;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import java.time.LocalDate;
 import org.iets3.core.expr.datetime.runtime.DiscreteDateRangeValue;
 import java.util.List;
 import java.util.Arrays;
 import org.jetbrains.annotations.NotNull;
-import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 
 public final class IProvideTemporalContext__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getInterfaceConcept(0x4621d3e3b8a34bbeL, 0xb7ac234b6e2d1d68L, 0x2696a44e3c9d0038L, "org.iets3.core.expr.temporal.structure.IProvideTemporalContext");
 
-  public static final SMethod<SNode> getContextExpression_id5kIYKlplr8$ = new SMethodBuilder<SNode>(new SJavaCompoundTypeImpl((Class<SNode>) ((Class) Object.class))).name("getContextExpression").modifiers(12, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(6138119342544761380L).languageId(0xb7ac234b6e2d1d68L, 0x4621d3e3b8a34bbeL).build2();
-  public static final SMethod<LocalDate> extractDate_id2FRvhneWvhz = new SMethodBuilder<LocalDate>(new SJavaCompoundTypeImpl(LocalDate.class)).name("extractDate").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(3096080801460253795L).languageId(0xb7ac234b6e2d1d68L, 0x4621d3e3b8a34bbeL).build2(SMethodBuilder.createJavaParameter(Object.class, ""));
-  public static final SMethod<DiscreteDateRangeValue> extractRange_id2FRvhneWF5k = new SMethodBuilder<DiscreteDateRangeValue>(new SJavaCompoundTypeImpl(DiscreteDateRangeValue.class)).name("extractRange").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(3096080801460302164L).languageId(0xb7ac234b6e2d1d68L, 0x4621d3e3b8a34bbeL).build2(SMethodBuilder.createJavaParameter(Object.class, ""));
-  public static final SMethod<String> getContextPresentation_id4t4tOuDd1LC = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("getContextPresentation").modifiers(12, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5135360624774356072L).languageId(0xb7ac234b6e2d1d68L, 0x4621d3e3b8a34bbeL).build2();
+  public static final SMethod<SNode> getContextExpression_id5kIYKlplr8$ = new SMethodBuilder<>(SNode.class).name("getContextExpression").modifiers(12, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(6138119342544761380L).languageId(0xb7ac234b6e2d1d68L, 0x4621d3e3b8a34bbeL).build2();
+  public static final SMethod<LocalDate> extractDate_id2FRvhneWvhz = new SMethodBuilder<>(LocalDate.class).name("extractDate").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(3096080801460253795L).languageId(0xb7ac234b6e2d1d68L, 0x4621d3e3b8a34bbeL).build2(SMethodBuilder.createJavaParameter(Object.class, "contextObject"));
+  public static final SMethod<DiscreteDateRangeValue> extractRange_id2FRvhneWF5k = new SMethodBuilder<>(DiscreteDateRangeValue.class).name("extractRange").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(3096080801460302164L).languageId(0xb7ac234b6e2d1d68L, 0x4621d3e3b8a34bbeL).build2(SMethodBuilder.createJavaParameter(Object.class, "contextObject"));
+  public static final SMethod<String> getContextPresentation_id4t4tOuDd1LC = new SMethodBuilder<>(String.class).name("getContextPresentation").modifiers(12, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5135360624774356072L).languageId(0xb7ac234b6e2d1d68L, 0x4621d3e3b8a34bbeL).build2();
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(getContextExpression_id5kIYKlplr8$, extractDate_id2FRvhneWvhz, extractRange_id2FRvhneWF5k, getContextPresentation_id4t4tOuDd1LC);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(getContextExpression_id5kIYKlplr8$, extractDate_id2FRvhneWvhz, extractRange_id2FRvhneWF5k, getContextPresentation_id4t4tOuDd1LC);
 
-  private static void ___init___(@NotNull SNode __thisNode__) {
-  }
 
   /*package*/ static LocalDate extractDate_id2FRvhneWvhz(@NotNull SNode __thisNode__, Object contextObject) {
     if (contextObject instanceof LocalDate) {
@@ -51,10 +47,6 @@ public final class IProvideTemporalContext__BehaviorDescriptor extends BaseBHDes
   /*package*/ IProvideTemporalContext__BehaviorDescriptor() {
   }
 
-  @Override
-  protected void initNode(@NotNull SNode node, @NotNull SConstructor constructor, @Nullable Object[] parameters) {
-    ___init___(node);
-  }
 
   @Override
   protected <T> T invokeSpecial0(@NotNull SNode node, @NotNull SMethod<T> method, @Nullable Object[] parameters) {

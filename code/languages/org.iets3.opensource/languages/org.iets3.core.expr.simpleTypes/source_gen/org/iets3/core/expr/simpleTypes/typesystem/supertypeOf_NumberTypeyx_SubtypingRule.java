@@ -80,9 +80,6 @@ public class supertypeOf_NumberTypeyx_SubtypingRule extends SubtypingRule_Runtim
   public boolean isWeak() {
     return false;
   }
-  public boolean surelyKeepsConcept() {
-    return true;
-  }
 
   private static final class LINKS {
     /*package*/ static final SContainmentLink range$RnOa = MetaAdapterFactory.getContainmentLink(0x6b277d9ad52d416fL, 0xa2091919bd737f50L, 0x7211e50064d40ea8L, 0x127541598201af78L, "range");

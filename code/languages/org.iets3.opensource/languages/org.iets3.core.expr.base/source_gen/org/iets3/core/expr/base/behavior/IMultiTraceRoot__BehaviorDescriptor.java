@@ -8,29 +8,25 @@ import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import java.util.List;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import com.mbeddr.mpsutil.traceExplorer.plugin.ITraceRecord;
 import java.util.Arrays;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.mps.openapi.model.SNode;
 import jetbrains.mps.lang.core.behavior.BaseConcept__BehaviorDescriptor;
-import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 
 public final class IMultiTraceRoot__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getInterfaceConcept(0xcfaa4966b7d54b69L, 0xb66a309a6e1a7290L, 0xf4b54f714ba06c9L, "org.iets3.core.expr.base.structure.IMultiTraceRoot");
 
-  public static final SMethod<List<String>> getTraceCategories_idXblfskIwx1 = new SMethodBuilder<List<String>>(new SJavaCompoundTypeImpl((Class<List<String>>) ((Class) Object.class))).name("getTraceCategories").modifiers(12, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(1102067954003609665L).languageId(0xb66a309a6e1a7290L, 0xcfaa4966b7d54b69L).build2();
-  public static final SMethod<Boolean> isTraceAvailable_idXblfskIwx7 = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("isTraceAvailable").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(1102067954003609671L).languageId(0xb66a309a6e1a7290L, 0xcfaa4966b7d54b69L).build2(SMethodBuilder.createJavaParameter(String.class, ""));
-  public static final SMethod<String> getTabTitle_idXblfskIwxh = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("getTabTitle").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(1102067954003609681L).languageId(0xb66a309a6e1a7290L, 0xcfaa4966b7d54b69L).build2(SMethodBuilder.createJavaParameter(String.class, ""));
-  public static final SMethod<ITraceRecord> getRootTrace_idXblfskIwxp = new SMethodBuilder<ITraceRecord>(new SJavaCompoundTypeImpl(ITraceRecord.class)).name("getRootTrace").modifiers(12, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(1102067954003609689L).languageId(0xb66a309a6e1a7290L, 0xcfaa4966b7d54b69L).build2(SMethodBuilder.createJavaParameter(String.class, ""));
+  public static final SMethod<List<String>> getTraceCategories_idXblfskIwx1 = new SMethodBuilder<>((Class<List<String>>) ((Class) Object.class)).name("getTraceCategories").modifiers(12, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(1102067954003609665L).languageId(0xb66a309a6e1a7290L, 0xcfaa4966b7d54b69L).build2();
+  public static final SMethod<Boolean> isTraceAvailable_idXblfskIwx7 = new SMethodBuilder<>(Boolean.TYPE).name("isTraceAvailable").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(1102067954003609671L).languageId(0xb66a309a6e1a7290L, 0xcfaa4966b7d54b69L).build2(SMethodBuilder.createJavaParameter(String.class, "cat"));
+  public static final SMethod<String> getTabTitle_idXblfskIwxh = new SMethodBuilder<>(String.class).name("getTabTitle").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(1102067954003609681L).languageId(0xb66a309a6e1a7290L, 0xcfaa4966b7d54b69L).build2(SMethodBuilder.createJavaParameter(String.class, "cat"));
+  public static final SMethod<ITraceRecord> getRootTrace_idXblfskIwxp = new SMethodBuilder<>(ITraceRecord.class).name("getRootTrace").modifiers(12, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(1102067954003609689L).languageId(0xb66a309a6e1a7290L, 0xcfaa4966b7d54b69L).build2(SMethodBuilder.createJavaParameter(String.class, "cat"));
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(getTraceCategories_idXblfskIwx1, isTraceAvailable_idXblfskIwx7, getTabTitle_idXblfskIwxh, getRootTrace_idXblfskIwxp);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(getTraceCategories_idXblfskIwx1, isTraceAvailable_idXblfskIwx7, getTabTitle_idXblfskIwxh, getRootTrace_idXblfskIwxp);
 
-  private static void ___init___(@NotNull SNode __thisNode__) {
-  }
 
   /*package*/ static boolean isTraceAvailable_idXblfskIwx7(@NotNull SNode __thisNode__, String cat) {
     return IMultiTraceRoot__BehaviorDescriptor.getRootTrace_idXblfskIwxp.invoke(__thisNode__, cat) != null;
@@ -42,10 +38,6 @@ public final class IMultiTraceRoot__BehaviorDescriptor extends BaseBHDescriptor 
   /*package*/ IMultiTraceRoot__BehaviorDescriptor() {
   }
 
-  @Override
-  protected void initNode(@NotNull SNode node, @NotNull SConstructor constructor, @Nullable Object[] parameters) {
-    ___init___(node);
-  }
 
   @Override
   protected <T> T invokeSpecial0(@NotNull SNode node, @NotNull SMethod<T> method, @Nullable Object[] parameters) {

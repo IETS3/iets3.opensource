@@ -8,7 +8,6 @@ import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import org.jetbrains.mps.openapi.model.SNode;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import java.util.List;
 import java.util.Arrays;
@@ -17,7 +16,6 @@ import de.itemis.mps.utils.serializer.xml.serializer.NodeSerializer;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations;
 import jetbrains.mps.internal.collections.runtime.ListSequence;
 import java.util.ArrayList;
-import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 import org.jetbrains.mps.openapi.language.SProperty;
@@ -25,16 +23,14 @@ import org.jetbrains.mps.openapi.language.SProperty;
 public final class ICalculateHashForUpdateWarning__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getInterfaceConcept(0x165f1d0525064544L, 0x895e1424f54166ecL, 0x2f62f9db248ccc64L, "org.iets3.variability.featuremodel.base.structure.ICalculateHashForUpdateWarning");
 
-  public static final SMethod<SNode> hashRootNode_id6MJy$PGs$IZ = new SMethodBuilder<SNode>(new SJavaCompoundTypeImpl((Class<SNode>) ((Class) Object.class))).name("hashRootNode").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(7831630342157126591L).languageId(0x895e1424f54166ecL, 0x165f1d0525064544L).build2();
-  public static final SMethod<Integer> calculateUpdateHash_id6MJy$PGsrIf = new SMethodBuilder<Integer>(new SJavaCompoundTypeImpl(Integer.TYPE)).name("calculateUpdateHash").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(7831630342157089679L).languageId(0x895e1424f54166ecL, 0x165f1d0525064544L).build2();
-  public static final SMethod<Integer> getUpdateHash_idhXRDtvlc8I = new SMethodBuilder<Integer>(new SJavaCompoundTypeImpl(Integer.TYPE)).name("getUpdateHash").modifiers(0, AccessPrivileges.PROTECTED).concept(CONCEPT).baseMethodId(323659489961361966L).languageId(0x895e1424f54166ecL, 0x165f1d0525064544L).build2(SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""));
-  public static final SMethod<Void> updateUpdateHash_id6MJy$PGs_q4 = new SMethodBuilder<Void>(new SJavaCompoundTypeImpl(Void.class)).name("updateUpdateHash").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(7831630342157129348L).languageId(0x895e1424f54166ecL, 0x165f1d0525064544L).build2();
-  public static final SMethod<Iterable<String>> IgnoredPropertyNames_id1v5X_U3eBVx = new SMethodBuilder<Iterable<String>>(new SJavaCompoundTypeImpl((Class<Iterable<String>>) ((Class) Object.class))).name("IgnoredPropertyNames").modifiers(8, AccessPrivileges.PROTECTED).concept(CONCEPT).baseMethodId(1713046119073349345L).languageId(0x895e1424f54166ecL, 0x165f1d0525064544L).build2();
+  public static final SMethod<SNode> hashRootNode_id6MJy$PGs$IZ = new SMethodBuilder<>(SNode.class).name("hashRootNode").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(7831630342157126591L).languageId(0x895e1424f54166ecL, 0x165f1d0525064544L).build2();
+  public static final SMethod<Integer> calculateUpdateHash_id6MJy$PGsrIf = new SMethodBuilder<>(Integer.TYPE).name("calculateUpdateHash").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(7831630342157089679L).languageId(0x895e1424f54166ecL, 0x165f1d0525064544L).build2();
+  public static final SMethod<Integer> getUpdateHash_idhXRDtvlc8I = new SMethodBuilder<>(Integer.TYPE).name("getUpdateHash").modifiers(0, AccessPrivileges.PROTECTED).concept(CONCEPT).baseMethodId(323659489961361966L).languageId(0x895e1424f54166ecL, 0x165f1d0525064544L).build2(SMethodBuilder.createJavaParameter(SNode.class, "n"));
+  public static final SMethod<Void> updateUpdateHash_id6MJy$PGs_q4 = new SMethodBuilder<>(Void.TYPE).name("updateUpdateHash").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(7831630342157129348L).languageId(0x895e1424f54166ecL, 0x165f1d0525064544L).build2();
+  public static final SMethod<Iterable<String>> IgnoredPropertyNames_id1v5X_U3eBVx = new SMethodBuilder<>((Class<Iterable<String>>) ((Class) Object.class)).name("IgnoredPropertyNames").modifiers(8, AccessPrivileges.PROTECTED).concept(CONCEPT).baseMethodId(1713046119073349345L).languageId(0x895e1424f54166ecL, 0x165f1d0525064544L).build2();
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(hashRootNode_id6MJy$PGs$IZ, calculateUpdateHash_id6MJy$PGsrIf, getUpdateHash_idhXRDtvlc8I, updateUpdateHash_id6MJy$PGs_q4, IgnoredPropertyNames_id1v5X_U3eBVx);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(hashRootNode_id6MJy$PGs$IZ, calculateUpdateHash_id6MJy$PGsrIf, getUpdateHash_idhXRDtvlc8I, updateUpdateHash_id6MJy$PGs_q4, IgnoredPropertyNames_id1v5X_U3eBVx);
 
-  private static void ___init___(@NotNull SNode __thisNode__) {
-  }
 
   /*package*/ static SNode hashRootNode_id6MJy$PGs$IZ(@NotNull SNode __thisNode__) {
     return __thisNode__;
@@ -64,10 +60,6 @@ public final class ICalculateHashForUpdateWarning__BehaviorDescriptor extends Ba
   /*package*/ ICalculateHashForUpdateWarning__BehaviorDescriptor() {
   }
 
-  @Override
-  protected void initNode(@NotNull SNode node, @NotNull SConstructor constructor, @Nullable Object[] parameters) {
-    ___init___(node);
-  }
 
   @Override
   protected <T> T invokeSpecial0(@NotNull SNode node, @NotNull SMethod<T> method, @Nullable Object[] parameters) {

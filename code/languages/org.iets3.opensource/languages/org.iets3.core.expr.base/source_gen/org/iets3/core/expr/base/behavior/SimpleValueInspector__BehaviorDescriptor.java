@@ -7,7 +7,6 @@ import org.jetbrains.mps.openapi.language.SAbstractConcept;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import java.util.List;
 import java.util.Arrays;
@@ -19,7 +18,6 @@ import jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations;
 import jetbrains.mps.ide.httpsupport.runtime.base.HttpSupportUtil;
 import jetbrains.mps.lang.core.behavior.BaseConcept__BehaviorDescriptor;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
-import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 import org.jetbrains.mps.openapi.language.SProperty;
@@ -27,14 +25,12 @@ import org.jetbrains.mps.openapi.language.SProperty;
 public final class SimpleValueInspector__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getConcept(0xcfaa4966b7d54b69L, 0xb66a309a6e1a7290L, 0x278f63fdaec2d699L, "org.iets3.core.expr.base.structure.SimpleValueInspector");
 
-  public static final SMethod<Void> addValue_id2ufoZQIGI7Z = new SMethodBuilder<Void>(new SJavaCompoundTypeImpl(Void.class)).name("addValue").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(2850607030357647871L).languageId(0xa6067ce0236c8023L, 0x47f075a6558e4640L).build2(SMethodBuilder.createJavaParameter(Object.class, ""));
-  public static final SMethod<Void> clearValues_id2ufoZQIGI9k = new SMethodBuilder<Void>(new SJavaCompoundTypeImpl(Void.class)).name("clearValues").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(2850607030357647956L).languageId(0xa6067ce0236c8023L, 0x47f075a6558e4640L).build2();
-  public static final SMethod<List<Object>> getValues_id2ufoZQIKMt6 = new SMethodBuilder<List<Object>>(new SJavaCompoundTypeImpl((Class<List<Object>>) ((Class) Object.class))).name("getValues").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(2850607030358714182L).languageId(0xb66a309a6e1a7290L, 0xcfaa4966b7d54b69L).build2();
+  public static final SMethod<Void> addValue_id2ufoZQIGI7Z = new SMethodBuilder<>(Void.TYPE).name("addValue").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(2850607030357647871L).languageId(0xa6067ce0236c8023L, 0x47f075a6558e4640L).build2(SMethodBuilder.createJavaParameter(Object.class, "value"));
+  public static final SMethod<Void> clearValues_id2ufoZQIGI9k = new SMethodBuilder<>(Void.TYPE).name("clearValues").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(2850607030357647956L).languageId(0xa6067ce0236c8023L, 0x47f075a6558e4640L).build2();
+  public static final SMethod<List<Object>> getValues_id2ufoZQIKMt6 = new SMethodBuilder<>((Class<List<Object>>) ((Class) Object.class)).name("getValues").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(2850607030358714182L).languageId(0xb66a309a6e1a7290L, 0xcfaa4966b7d54b69L).build2();
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(addValue_id2ufoZQIGI7Z, clearValues_id2ufoZQIGI9k, getValues_id2ufoZQIKMt6);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(addValue_id2ufoZQIGI7Z, clearValues_id2ufoZQIGI9k, getValues_id2ufoZQIKMt6);
 
-  private static void ___init___(@NotNull SNode __thisNode__) {
-  }
 
   /*package*/ static void addValue_id2ufoZQIGI7Z(@NotNull SNode __thisNode__, Object value) {
     List<Object> l = SimpleValueInspector__BehaviorDescriptor.getValues_id2ufoZQIKMt6.invoke(__thisNode__);
@@ -61,10 +57,6 @@ public final class SimpleValueInspector__BehaviorDescriptor extends BaseBHDescri
   /*package*/ SimpleValueInspector__BehaviorDescriptor() {
   }
 
-  @Override
-  protected void initNode(@NotNull SNode node, @NotNull SConstructor constructor, @Nullable Object[] parameters) {
-    ___init___(node);
-  }
 
   @Override
   protected <T> T invokeSpecial0(@NotNull SNode node, @NotNull SMethod<T> method, @Nullable Object[] parameters) {

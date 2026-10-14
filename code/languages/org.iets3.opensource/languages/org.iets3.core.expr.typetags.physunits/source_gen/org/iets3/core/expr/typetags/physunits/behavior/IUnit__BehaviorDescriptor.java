@@ -7,29 +7,25 @@ import org.jetbrains.mps.openapi.language.SAbstractConcept;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import org.jetbrains.mps.openapi.model.SNode;
 import java.util.Optional;
 import java.util.List;
 import java.util.Arrays;
 import org.jetbrains.annotations.NotNull;
-import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 
 public final class IUnit__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getInterfaceConcept(0x7ee265bd59864709L, 0x86ed2c6daa33cd8cL, 0x73b48a125b0d40ceL, "org.iets3.core.expr.typetags.physunits.structure.IUnit");
 
-  public static final SMethod<Boolean> allowNonIdentifierNames_id4SwD0JT7m0l = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("allowNonIdentifierNames").modifiers(9, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5629679905544167445L).languageId(0xbd9c05c0f8725a35L, 0x7b68d745a7b848b9L).build2();
-  public static final SMethod<SNode> specification_id1KUmgSF_6QP = new SMethodBuilder<SNode>(new SJavaCompoundTypeImpl((Class<SNode>) ((Class) Object.class))).name("specification").modifiers(12, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(2034036099106762165L).languageId(0x86ed2c6daa33cd8cL, 0x7ee265bd59864709L).build2();
-  public static final SMethod<SNode> quantity_id7JDqwWRWT0R = new SMethodBuilder<SNode>(new SJavaCompoundTypeImpl((Class<SNode>) ((Class) Object.class))).name("quantity").modifiers(12, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(8928784349834481719L).languageId(0x86ed2c6daa33cd8cL, 0x7ee265bd59864709L).build2();
-  public static final SMethod<Optional<SNode>> getUnit_idQWlYnY5DVv = new SMethodBuilder<Optional<SNode>>(new SJavaCompoundTypeImpl(Optional.class)).name("getUnit").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(989762663436689119L).languageId(0x86ed2c6daa33cd8cL, 0x7ee265bd59864709L).build2();
+  public static final SMethod<Boolean> allowNonIdentifierNames_id4SwD0JT7m0l = new SMethodBuilder<>(Boolean.TYPE).name("allowNonIdentifierNames").modifiers(9, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5629679905544167445L).languageId(0xbd9c05c0f8725a35L, 0x7b68d745a7b848b9L).build2();
+  public static final SMethod<SNode> specification_id1KUmgSF_6QP = new SMethodBuilder<>(SNode.class).name("specification").modifiers(12, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(2034036099106762165L).languageId(0x86ed2c6daa33cd8cL, 0x7ee265bd59864709L).build2();
+  public static final SMethod<SNode> quantity_id7JDqwWRWT0R = new SMethodBuilder<>(SNode.class).name("quantity").modifiers(12, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(8928784349834481719L).languageId(0x86ed2c6daa33cd8cL, 0x7ee265bd59864709L).build2();
+  public static final SMethod<Optional<SNode>> getUnit_idQWlYnY5DVv = new SMethodBuilder<>((Class<Optional<SNode>>) ((Class) Object.class)).name("getUnit").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(989762663436689119L).languageId(0x86ed2c6daa33cd8cL, 0x7ee265bd59864709L).build2();
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(allowNonIdentifierNames_id4SwD0JT7m0l, specification_id1KUmgSF_6QP, quantity_id7JDqwWRWT0R, getUnit_idQWlYnY5DVv);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(allowNonIdentifierNames_id4SwD0JT7m0l, specification_id1KUmgSF_6QP, quantity_id7JDqwWRWT0R, getUnit_idQWlYnY5DVv);
 
-  private static void ___init___(@NotNull SNode __thisNode__) {
-  }
 
   /*package*/ static boolean allowNonIdentifierNames_id4SwD0JT7m0l(@NotNull SAbstractConcept __thisConcept__) {
     return true;
@@ -41,10 +37,6 @@ public final class IUnit__BehaviorDescriptor extends BaseBHDescriptor {
   /*package*/ IUnit__BehaviorDescriptor() {
   }
 
-  @Override
-  protected void initNode(@NotNull SNode node, @NotNull SConstructor constructor, @Nullable Object[] parameters) {
-    ___init___(node);
-  }
 
   @Override
   protected <T> T invokeSpecial0(@NotNull SNode node, @NotNull SMethod<T> method, @Nullable Object[] parameters) {

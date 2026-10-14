@@ -33,7 +33,7 @@ import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import org.jetbrains.mps.openapi.language.SConcept;
 
 /**
- * Complete non-static implementation of {@link org.iets3.core.expr.base.behavior.IDefaultCoverageAnalyzer }.
+ * Complete non-static implementation of {@link org.iets3.core.expr.base.behavior.IDefaultCoverageAnalyzer} .
  */
 public class DefaultCoverageAnalyzerBase implements IDefaultCoverageAnalyzer {
   public static class ConceptDataBase implements IDefaultCoverageAnalyzer.IConceptData {

@@ -8,14 +8,12 @@ import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import org.jetbrains.mps.openapi.model.SNode;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import java.util.List;
 import java.util.Arrays;
 import org.jetbrains.annotations.NotNull;
 import jetbrains.mps.internal.collections.runtime.ListSequence;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
-import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 import org.jetbrains.mps.openapi.language.SInterfaceConcept;
@@ -23,14 +21,12 @@ import org.jetbrains.mps.openapi.language.SInterfaceConcept;
 public final class IPreferredProposalContext__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getInterfaceConcept(0xcfaa4966b7d54b69L, 0xb66a309a6e1a7290L, 0x68236e1c43211294L, "org.iets3.core.expr.base.structure.IPreferredProposalContext");
 
-  public static final SMethod<SNode> relevantType_id6wzrxL3bLaK = new SMethodBuilder<SNode>(new SJavaCompoundTypeImpl((Class<SNode>) ((Class) Object.class))).name("relevantType").modifiers(12, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(7503962471794676400L).languageId(0xb66a309a6e1a7290L, 0xcfaa4966b7d54b69L).build2(SMethodBuilder.createJavaParameter(Integer.TYPE, ""));
-  public static final SMethod<Boolean> isPreferred_id6wzrxL38h$$ = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("isPreferred").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(7503962471793760548L).languageId(0xb66a309a6e1a7290L, 0xcfaa4966b7d54b69L).build2(SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""), SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""));
-  public static final SMethod<Boolean> isPreferred_idjqB9UdsEeJ = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("isPreferred").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(349764125866501039L).languageId(0xb66a309a6e1a7290L, 0xcfaa4966b7d54b69L).build2(SMethodBuilder.createJavaParameter((Class<SAbstractConcept>) ((Class) Object.class), ""), SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""));
+  public static final SMethod<SNode> relevantType_id6wzrxL3bLaK = new SMethodBuilder<>(SNode.class).name("relevantType").modifiers(12, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(7503962471794676400L).languageId(0xb66a309a6e1a7290L, 0xcfaa4966b7d54b69L).build2(SMethodBuilder.createJavaParameter(Integer.TYPE, "pos"));
+  public static final SMethod<Boolean> isPreferred_id6wzrxL38h$$ = new SMethodBuilder<>(Boolean.TYPE).name("isPreferred").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(7503962471793760548L).languageId(0xb66a309a6e1a7290L, 0xcfaa4966b7d54b69L).build2(SMethodBuilder.createJavaParameter(SNode.class, "n"), SMethodBuilder.createJavaParameter(SNode.class, "locationNode"));
+  public static final SMethod<Boolean> isPreferred_idjqB9UdsEeJ = new SMethodBuilder<>(Boolean.TYPE).name("isPreferred").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(349764125866501039L).languageId(0xb66a309a6e1a7290L, 0xcfaa4966b7d54b69L).build2(SMethodBuilder.createJavaParameter(SAbstractConcept.class, "c"), SMethodBuilder.createJavaParameter(SNode.class, "locationNode"));
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(relevantType_id6wzrxL3bLaK, isPreferred_id6wzrxL38h$$, isPreferred_idjqB9UdsEeJ);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(relevantType_id6wzrxL3bLaK, isPreferred_id6wzrxL38h$$, isPreferred_idjqB9UdsEeJ);
 
-  private static void ___init___(@NotNull SNode __thisNode__) {
-  }
 
   /*package*/ static boolean isPreferred_id6wzrxL38h$$(@NotNull final SNode __thisNode__, SNode n, SNode locationNode) {
     int loc = -1;
@@ -68,10 +64,6 @@ public final class IPreferredProposalContext__BehaviorDescriptor extends BaseBHD
   /*package*/ IPreferredProposalContext__BehaviorDescriptor() {
   }
 
-  @Override
-  protected void initNode(@NotNull SNode node, @NotNull SConstructor constructor, @Nullable Object[] parameters) {
-    ___init___(node);
-  }
 
   @Override
   protected <T> T invokeSpecial0(@NotNull SNode node, @NotNull SMethod<T> method, @Nullable Object[] parameters) {
