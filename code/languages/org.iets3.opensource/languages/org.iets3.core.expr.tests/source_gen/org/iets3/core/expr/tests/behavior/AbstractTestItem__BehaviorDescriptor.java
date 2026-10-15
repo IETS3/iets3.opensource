@@ -31,6 +31,8 @@ import jetbrains.mps.nodeEditor.DefaultEditorMessage;
 import jetbrains.mps.errors.MessageStatus;
 import org.iets3.core.expr.tests.editor.TestColors;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations;
+import com.jetbrains.mpsext.viewmodel.runtime.Computed;
+import com.jetbrains.mpsext.viewmodel.runtime.ViewModels;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SConceptOperations;
@@ -120,10 +122,14 @@ public final class AbstractTestItem__BehaviorDescriptor extends BaseBHDescriptor
   /*package*/ static void runManually_id3R3AIvumrTm(@NotNull SNode __thisNode__, EditorContext edCtxOrNull) {
     AbstractTestItem__BehaviorDescriptor.executeTest_id4KZjPKUdEYm.invoke(__thisNode__);
   }
-  /*package*/ static EvalResult executeTest_id4KZjPKUdEYm(@NotNull SNode __thisNode__) {
+  /*package*/ static EvalResult executeTest_id4KZjPKUdEYm(@NotNull final SNode __thisNode__) {
     if (!(SPropertyOperations.getBoolean(__thisNode__, PROPS.isIgnored$hvX5))) {
-      AbstractTestItem__BehaviorDescriptor.executeSetupInternal_id1cd9HYW_D_k.invoke(__thisNode__);
-      return AbstractTestItem__BehaviorDescriptor.executeTestInternal_id78hTg1$THJg.invoke(__thisNode__);
+      Computed<EvalResult> computed = ViewModels.named("org.iets3.core.base.behavior.CheckResults").compute(() -> {
+        AbstractTestItem__BehaviorDescriptor.executeSetupInternal_id1cd9HYW_D_k.invoke(__thisNode__);
+        return ((EvalResult) AbstractTestItem__BehaviorDescriptor.executeTestInternal_id78hTg1$THJg.invoke(__thisNode__));
+      });
+      ICanStoreCheckResult__BehaviorDescriptor.storeLastResultWithDependencies_id55VuGTOFj73.invoke(__thisNode__, computed.getValue(), computed.getDependencies());
+      return computed.getValue();
     }
     return new EvalResult(true);
   }
