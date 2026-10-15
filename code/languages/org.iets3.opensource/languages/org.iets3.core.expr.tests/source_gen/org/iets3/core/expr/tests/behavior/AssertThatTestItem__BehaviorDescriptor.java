@@ -26,7 +26,6 @@ import org.iets3.core.expr.base.behavior.TraceFailures;
 import com.mbeddr.mpsutil.interpreter.rt.InvalidValueException;
 import com.mbeddr.mpsutil.interpreter.rt.InterpreterEscapeException;
 import org.iets3.core.expr.base.plugin.CVH;
-import org.iets3.core.base.behavior.ICanStoreCheckResult__BehaviorDescriptor;
 import org.hamcrest.Description;
 import org.hamcrest.StringDescription;
 import org.iets3.core.expr.base.behavior.Expression__BehaviorDescriptor;
@@ -121,7 +120,6 @@ public final class AssertThatTestItem__BehaviorDescriptor extends BaseBHDescript
     }
     long end = System.currentTimeMillis();
     result.setTime(end - begin);
-    ICanStoreCheckResult__BehaviorDescriptor.storeLastResult_id3R3AIvuq5Dp.invoke(__thisNode__, result);
     return result;
   }
   /*package*/ static String formatErrorMessage_id5Pgo_AS7m_e(@NotNull SNode __thisNode__, Object value, Matcher matcher) {
