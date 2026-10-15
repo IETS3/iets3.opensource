@@ -14,6 +14,7 @@ The project does _not_ follow Semantic Versioning and the changes are documented
 
 ### Changed
 - Variability: Better editing of feature decision tables: the caret moves to the new row on insert (Shift+Enter inserts above) and to the neighbouring row on delete. The last row can no longer be deleted.
+- Results of manually run checks (`ICanStoreCheckResult`: test items, REPL entries, solver results) are stored in the view model `CheckResults` (MPS-extensions view models) instead of user objects on the nodes. Editors that show a result are updated when it is stored or removed, so the explicit editor refreshes after running a check were dropped. The result of a test item (and of each test vector) records the nodes its evaluation read and is removed as soon as one of them changes; other results stay until they are replaced or their node is deleted. `check_ICanRunCheckManually` no longer deletes a result after reporting it. Results are not stored when no project is open (headless runs that only use the returned result).
 
 ### Fixed
 
