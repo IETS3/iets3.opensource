@@ -5,11 +5,8 @@ package org.iets3.opensource.interpreterExecutor;
 import jetbrains.mps.logging.Logger;
 import jetbrains.mps.core.platform.Platform;
 import xml4JUnit.TestExecutorConfigForCommandLine;
-import jetbrains.mps.lang.smodel.generator.smodelAdapter.SConceptOperations;
 import xml4JUnit.TestModelExecutor;
 import jetbrains.mps.baseLanguage.unitTest.execution.client.ITestNodeWrapper;
-import org.jetbrains.mps.openapi.language.SConcept;
-import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 
 /**
  * This is an application entry point that can be used for interpreting tests.
@@ -20,15 +17,19 @@ public class MainClass {
   private static final Logger LOG = Logger.getLogger(MainClass.class);
 
   public static void mpsMain(Platform platform) {
+    if (LOG.isInfoLevel()) {
+      LOG.info("Interpreter Executor starts execution");
+    }
+
     if (platform == null) {
       if (LOG.isErrorLevel()) {
         LOG.error("Argument 'platform' must not be null!");
       }
       return;
     }
+
     TestExecutorConfigForCommandLine config = new TestExecutorConfigForCommandLine();
-    config.put(TestExecutorConfigForCommandLine.keyCustomRunnerAspect, CONCEPTS.InterpreterTestRunnerAspect$eN.getName());
-    config.put(TestExecutorConfigForCommandLine.keyBuildMacroRef, SConceptOperations.conceptAlias(CONCEPTS.BuildMacroRef$4f));
+
     TestModelExecutor executor = new TestModelExecutor(platform, config);
     if (executor.checkExecutionPossible()) {
       Iterable<ITestNodeWrapper> testableNodes = executor.getTestableNodes();
@@ -36,8 +37,4 @@ public class MainClass {
     }
   }
 
-  private static final class CONCEPTS {
-    /*package*/ static final SConcept InterpreterTestRunnerAspect$eN = MetaAdapterFactory.getConcept(0x9d000fbdbdca4a46L, 0xb39bc5ba9e79b38cL, 0x7c5d762302e2d174L, "org.iets3.opensource.build.gentests.structure.InterpreterTestRunnerAspect");
-    /*package*/ static final SConcept BuildMacroRef$4f = MetaAdapterFactory.getConcept(0x9d000fbdbdca4a46L, 0xb39bc5ba9e79b38cL, 0x53af4b8a51b2480dL, "org.iets3.opensource.build.gentests.structure.BuildMacroRef");
-  }
 }

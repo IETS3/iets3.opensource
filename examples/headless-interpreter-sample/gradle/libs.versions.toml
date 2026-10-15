@@ -1,0 +1,28 @@
+[versions]
+# plugins
+downloadJBRPlugin = "1.30.1.1.bc0f59d"
+mpsGradlePlugin = "1.30.1.1.bc0f59d"
+
+# MPS / JBR
+jbr = "21.0.7-b895.130"
+mps = "2025.1.4"
+
+# dependencies
+antjunit = "1.10.5"
+mpsExtensions = "2025.1.3505.916ce90"
+mbeddr = "2025.1.26619.e47bad1"
+iets3Opensource = "2025.1-SNAPSHOT"
+
+[plugins]
+mps-downloadJBR = { id = "download-jbr", version.ref = "downloadJBRPlugin" }
+
+[libraries]
+ant-junit = { group = "org.apache.ant", name = "ant-junit", version.ref = "antjunit" }
+
+mps = { group = "com.jetbrains", name = "mps", version.ref = "mps" }
+mps-gradlePlugin = { group = "de.itemis.mps", name = "mps-gradle-plugin", version.ref = "mpsGradlePlugin" }
+
+mps-extensions = { group = "de.itemis.mps", name = "extensions", version.ref = "mpsExtensions" }
+mps-mbeddr = { group = "com.mbeddr", name = "mbeddr", version.ref = "mbeddr" }
+mps-mbeddr-platform = { group = "com.mbeddr", name = "platform", version.ref = "mbeddr" }
+mps-iets3-opensource = { group = "org.iets3", name = "opensource", version.ref = "iets3Opensource" }

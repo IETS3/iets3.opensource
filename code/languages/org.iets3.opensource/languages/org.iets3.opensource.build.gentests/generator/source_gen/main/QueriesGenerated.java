@@ -157,24 +157,28 @@ public class QueriesGenerated extends QueryProviderBase {
     return "${" + SPropertyOperations.getString(_context.getNode(), PROPS.name$MnvL) + "}";
   }
   public static Object propertyMacro_GetValue_2_8(final PropertyMacroContext _context) {
-    return SPropertyOperations.getString(_context.getNode(), PROPS.path$oN2q);
+    //  
+    return "-Diets3.interpreterExecutor.outputPath=${" + SPropertyOperations.getString(SLinkOperations.getTarget(SLinkOperations.getTarget(_context.getNode(), LINKS.outputPath$5JAw), LINKS.ref$_Kyj), PROPS.name$MnvL) + "}";
   }
   public static Object propertyMacro_GetValue_2_9(final PropertyMacroContext _context) {
-    return ((String) _context.getVariable("var:jvmargs"));
+    return SPropertyOperations.getString(_context.getNode(), PROPS.path$oN2q);
   }
   public static Object propertyMacro_GetValue_2_10(final PropertyMacroContext _context) {
-    return (String) BuildMps_AbstractModule__BehaviorDescriptor.getModuleReference_id41K1b4v5ZCB.invoke(SLinkOperations.getTarget(_context.getNode(), LINKS.solution$MOiH));
+    return ((String) _context.getVariable("var:jvmargs"));
   }
   public static Object propertyMacro_GetValue_2_11(final PropertyMacroContext _context) {
-    return (String) BuildSolutionRunnerAspect__BehaviorDescriptor.getFQClassName_id1aYLt$9eyUg.invoke(_context.getNode());
+    return (String) BuildMps_AbstractModule__BehaviorDescriptor.getModuleReference_id41K1b4v5ZCB.invoke(SLinkOperations.getTarget(_context.getNode(), LINKS.solution$MOiH));
   }
   public static Object propertyMacro_GetValue_2_12(final PropertyMacroContext _context) {
-    return (String) BuildSolutionRunnerAspect__BehaviorDescriptor.getMethodName_id1aYLt$9dX0a.invoke(_context.getNode());
+    return (String) BuildSolutionRunnerAspect__BehaviorDescriptor.getFQClassName_id1aYLt$9eyUg.invoke(_context.getNode());
   }
   public static Object propertyMacro_GetValue_2_13(final PropertyMacroContext _context) {
-    return "lib/jna/" + System.getProperty("os.arch");
+    return (String) BuildSolutionRunnerAspect__BehaviorDescriptor.getMethodName_id1aYLt$9dX0a.invoke(_context.getNode());
   }
   public static Object propertyMacro_GetValue_2_14(final PropertyMacroContext _context) {
+    return "lib/jna/" + System.getProperty("os.arch");
+  }
+  public static Object propertyMacro_GetValue_2_15(final PropertyMacroContext _context) {
     return "run." + SPropertyOperations.getString(SLinkOperations.getTarget(_context.getNode(), LINKS.solution$MOiH), PROPS.name$MnvL);
   }
   public static Object referenceMacro_GetReferent_0_0(final ReferenceMacroContext _context) {
@@ -196,9 +200,6 @@ public class QueriesGenerated extends QueryProviderBase {
     return ListSequence.fromList(SLinkOperations.getChildren(SLinkOperations.getTarget(_context.getNode(), LINKS.testModules$dtVN), LINKS.modules$V7vE)).isNotEmpty();
   }
   public static boolean ifMacro_Condition_2_0(final IfMacroContext _context) {
-    return (SLinkOperations.getTarget(_context.getNode(), LINKS.outputPath$5JAw) != null);
-  }
-  public static boolean ifMacro_Condition_2_1(final IfMacroContext _context) {
     // in case there's reference to a macro variable, use `<arg line>` attribute,
     // otherwise, keep distinct `<arg value>` to generate same xml files as before
     // FIXME I do it for fun, I see no reason not to use jvmarg line universally to keep this code simple
@@ -384,6 +385,7 @@ public class QueriesGenerated extends QueryProviderBase {
     pvqMethods.put("8252214652587084537", new PVQ(i++, MetaAdapterFactory.getProperty(0x479c7a8c02f943b5L, 0x9139d910cb22f298L, 0x5c842a42c54cfd1fL, 0x5c842a42c54cfd20L, "text"), "relative.path.to.model.directory"));
     pvqMethods.put("3919210978214632530", new PVQ(i++, MetaAdapterFactory.getProperty(0x479c7a8c02f943b5L, 0x9139d910cb22f298L, 0x5c842a42c54cfd1fL, 0x5c842a42c54cfd20L, "text"), "name"));
     pvqMethods.put("3919210978214676894", new PVQ(i++, MetaAdapterFactory.getProperty(0x479c7a8c02f943b5L, 0x9139d910cb22f298L, 0x5c842a42c54cfd1fL, 0x5c842a42c54cfd20L, "text"), "value"));
+    pvqMethods.put("8070843538582005993", new PVQ(i++, MetaAdapterFactory.getProperty(0x479c7a8c02f943b5L, 0x9139d910cb22f298L, 0x5c842a42c54cfd1fL, 0x5c842a42c54cfd20L, "text"), "-Diets3.interpreterExecutor.outputPath=${outputFolder}"));
     pvqMethods.put("625241853851521389", new PVQ(i++, MetaAdapterFactory.getProperty(0x479c7a8c02f943b5L, 0x9139d910cb22f298L, 0x5c842a42c54cfd1fL, 0x5c842a42c54cfd20L, "text"), "-Xmx1024m"));
     pvqMethods.put("625241853851521518", new PVQ(i++, MetaAdapterFactory.getProperty(0x479c7a8c02f943b5L, 0x9139d910cb22f298L, 0x5c842a42c54cfd1fL, 0x5c842a42c54cfd20L, "text"), null));
     pvqMethods.put("6102524510012313448", new PVQ(i++, MetaAdapterFactory.getProperty(0x479c7a8c02f943b5L, 0x9139d910cb22f298L, 0x5c842a42c54cfd1fL, 0x5c842a42c54cfd20L, "text"), "moduleRef"));
@@ -477,6 +479,8 @@ public class QueriesGenerated extends QueryProviderBase {
           return QueriesGenerated.propertyMacro_GetValue_2_13(ctx);
         case 34:
           return QueriesGenerated.propertyMacro_GetValue_2_14(ctx);
+        case 35:
+          return QueriesGenerated.propertyMacro_GetValue_2_15(ctx);
         default:
           throw new GenerationFailureException(String.format("Inconsistent QueriesGenerated: there's no method for query %s (key: #%d)", ctx.getTemplateReference(), methodKey));
       }
@@ -488,7 +492,6 @@ public class QueriesGenerated extends QueryProviderBase {
     imcMethods.put("7459197473276644769", new IfMC(i++));
     imcMethods.put("3609768169816336811", new IfMC(i++));
     imcMethods.put("7459197473282491893", new IfMC(i++));
-    imcMethods.put("6030121483519159853", new IfMC(i++));
     imcMethods.put("625241853851521446", new IfMC(i++));
   }
   @NotNull
@@ -513,8 +516,6 @@ public class QueriesGenerated extends QueryProviderBase {
           return QueriesGenerated.ifMacro_Condition_0_2(ctx);
         case 3:
           return QueriesGenerated.ifMacro_Condition_2_0(ctx);
-        case 4:
-          return QueriesGenerated.ifMacro_Condition_2_1(ctx);
         default:
           throw new GenerationFailureException(String.format("Inconsistent QueriesGenerated: there's no condition method for if macro %s (key: #%d)", ctx.getTemplateReference(), methodKey));
       }

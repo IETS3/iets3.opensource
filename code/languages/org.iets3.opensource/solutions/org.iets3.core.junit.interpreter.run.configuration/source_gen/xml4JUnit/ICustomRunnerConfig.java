@@ -5,13 +5,10 @@ package xml4JUnit;
 import org.iets3.core.junit.interpreter.run.configuration.plugin.IInterpreterRunListener;
 
 public interface ICustomRunnerConfig {
-  String getOutputPathMacroName();
+  String getOutputPathProperty();
   void setReportFileNamePrefix(String prefix);
   String getReportFileNamePrefix();
   IInterpreterRunListener getListener();
   IInterpreterTestReporter getReporter();
   boolean isTerminationRequested();
-  void put(String key, String value);
-  String get(String key);
-  void clear();
 }

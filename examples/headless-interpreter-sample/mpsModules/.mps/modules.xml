@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="MPSProject">
+    <projectModules>
+      <modulePath path="$PROJECT_DIR$/languages/HeadlessInterpreterTest/HeadlessInterpreterTest.mpl" folder="02-modules" />
+      <modulePath path="$PROJECT_DIR$/solutions/HeadlessInterpreterTest.interpreter/HeadlessInterpreterTest.interpreter.msd" folder="02-modules" />
+      <modulePath path="$PROJECT_DIR$/solutions/HeadlessInterpreterTest.languageTests/HeadlessInterpreterTest.languageTests.msd" folder="02-modules" />
+      <modulePath path="$PROJECT_DIR$/solutions/HeadlessInterpreterTest.tests/HeadlessInterpreterTest.tests.msd" folder="02-modules" />
+      <modulePath path="$PROJECT_DIR$/solutions/buildScripts/build.msd" folder="01-build" />
+      <modulePath path="$PROJECT_DIR$/solutions/buildScriptsBootstrap/buildAll.msd" folder="01-build" />
+    </projectModules>
+  </component>
+</project>
