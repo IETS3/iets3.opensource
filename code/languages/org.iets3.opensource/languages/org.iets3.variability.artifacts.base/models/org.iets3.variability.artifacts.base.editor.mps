@@ -43,6 +43,7 @@
     <import index="rmn3" ref="r:2f587aa6-2d3f-4726-9564-7648183caf97(org.iets3.variability.base.structure)" />
     <import index="4ndm" ref="r:a9fe59d7-0b4f-42b0-925a-71cc04f93df1(org.iets3.variability.configuration.base.structure)" />
     <import index="2rbz" ref="r:aeef8772-8af4-45c3-a762-623d4009d953(org.iets3.variability.base.plugin)" />
+    <import index="d0ez" ref="r:808762ce-2531-4e02-a4f2-cf8959f89a1e(org.iets3.variability.artifacts.base.actions)" />
     <import index="7wpd" ref="c7a315e6-1d93-4186-85bc-2dfafd1ccc21/r:fb1c47d7-a72e-4e01-92dc-1e9f2ba4a118(com.mbeddr.mpsutil.common/com.mbeddr.mpsutil.common.util)" implicit="true" />
   </imports>
   <registry>
@@ -364,6 +365,7 @@
       </concept>
       <concept id="6329021646629104954" name="jetbrains.mps.baseLanguage.structure.SingleLineComment" flags="nn" index="3SKdUt">
         <child id="8356039341262087992" name="line" index="1aUNEU" />
+        <child id="1350122676458893092" name="text" index="3ndbpf" />
       </concept>
       <concept id="1146644602865" name="jetbrains.mps.baseLanguage.structure.PublicVisibility" flags="nn" index="3Tm1VV" />
       <concept id="1146644623116" name="jetbrains.mps.baseLanguage.structure.PrivateVisibility" flags="nn" index="3Tm6S6" />
@@ -427,7 +429,10 @@
       </concept>
       <concept id="1397920687864683158" name="de.slisson.mps.tables.structure.Table" flags="ng" index="2rfBfz">
         <child id="1397920687864865354" name="cells" index="2rf8GZ" />
+        <child id="6097863121587726798" name="gridPostprocessor" index="3nFLZX" />
       </concept>
+      <concept id="6097863121587719264" name="de.slisson.mps.tables.structure.GridPostprocessor" flags="ig" index="3nFNDj" />
+      <concept id="1450914667648882274" name="de.slisson.mps.tables.structure.QueryParameter_Grid" flags="ng" index="3wJN_h" />
       <concept id="6466068411884348300" name="de.slisson.mps.tables.structure.EditorCellHeader" flags="ng" index="1A0rlU">
         <child id="6466068411884348445" name="editorCell" index="1A0rbF" />
       </concept>
@@ -1290,6 +1295,54 @@
                   </node>
                 </node>
               </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3nFNDj" id="5DM8XKCHw82" role="3nFLZX">
+        <node concept="3clFbS" id="5DM8XKCHw83" role="2VODD2">
+          <node concept="3SKdUt" id="5DM8XKCHw84" role="3cqZAp">
+            <node concept="1PaTwC" id="5DM8XKCHw85" role="3ndbpf">
+              <node concept="3oM_SD" id="5DM8XKCHw86" role="1PaTwD">
+                <property role="3oM_SC" value="guard" />
+              </node>
+              <node concept="3oM_SD" id="5DM8XKD46Q8" role="1PaTwD">
+                <property role="3oM_SC" value="the" />
+              </node>
+              <node concept="3oM_SD" id="5DM8XKD46Q9" role="1PaTwD">
+                <property role="3oM_SC" value="row" />
+              </node>
+              <node concept="3oM_SD" id="5DM8XKD46Qa" role="1PaTwD">
+                <property role="3oM_SC" value="end" />
+              </node>
+              <node concept="3oM_SD" id="5DM8XKD46Qb" role="1PaTwD">
+                <property role="3oM_SC" value="cells'" />
+              </node>
+              <node concept="3oM_SD" id="5DM8XKD46Qc" role="1PaTwD">
+                <property role="3oM_SC" value="delete/backspace:" />
+              </node>
+              <node concept="3oM_SD" id="5DM8XKD46Qd" role="1PaTwD">
+                <property role="3oM_SC" value="never" />
+              </node>
+              <node concept="3oM_SD" id="5DM8XKD46Qe" role="1PaTwD">
+                <property role="3oM_SC" value="delete" />
+              </node>
+              <node concept="3oM_SD" id="5DM8XKD46Qf" role="1PaTwD">
+                <property role="3oM_SC" value="the" />
+              </node>
+              <node concept="3oM_SD" id="5DM8XKD46Qg" role="1PaTwD">
+                <property role="3oM_SC" value="last" />
+              </node>
+              <node concept="3oM_SD" id="5DM8XKD46Qh" role="1PaTwD">
+                <property role="3oM_SC" value="row" />
+              </node>
+            </node>
+          </node>
+          <node concept="3clFbF" id="5DM8XKCHw87" role="3cqZAp">
+            <node concept="2YIFZM" id="5DM8XKCHw88" role="3clFbG">
+              <ref role="1Pybhc" to="d0ez:5DM8XKCHrZg" resolve="FeatureDecTabGuardedRowDelete" />
+              <ref role="37wK5l" to="d0ez:5DM8XKCHrZr" resolve="install" />
+              <node concept="3wJN_h" id="5DM8XKCHw89" role="37wK5m" />
             </node>
           </node>
         </node>
