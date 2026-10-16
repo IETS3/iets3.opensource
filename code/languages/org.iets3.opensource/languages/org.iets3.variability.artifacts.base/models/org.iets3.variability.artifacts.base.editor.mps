@@ -365,7 +365,6 @@
       </concept>
       <concept id="6329021646629104954" name="jetbrains.mps.baseLanguage.structure.SingleLineComment" flags="nn" index="3SKdUt">
         <child id="8356039341262087992" name="line" index="1aUNEU" />
-        <child id="1350122676458893092" name="text" index="3ndbpf" />
       </concept>
       <concept id="1146644602865" name="jetbrains.mps.baseLanguage.structure.PublicVisibility" flags="nn" index="3Tm1VV" />
       <concept id="1146644623116" name="jetbrains.mps.baseLanguage.structure.PrivateVisibility" flags="nn" index="3Tm6S6" />
@@ -1302,7 +1301,7 @@
       <node concept="3nFNDj" id="5DM8XKCHw82" role="3nFLZX">
         <node concept="3clFbS" id="5DM8XKCHw83" role="2VODD2">
           <node concept="3SKdUt" id="5DM8XKCHw84" role="3cqZAp">
-            <node concept="1PaTwC" id="5DM8XKCHw85" role="3ndbpf">
+            <node concept="1PaTwC" id="5DM8XKCHw85" role="1aUNEU">
               <node concept="3oM_SD" id="5DM8XKCHw86" role="1PaTwD">
                 <property role="3oM_SC" value="guard" />
               </node>

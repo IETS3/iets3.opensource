@@ -108,7 +108,7 @@ import org.jetbrains.mps.openapi.language.SProperty;
 
           editorCell.value = new TableEditor(editorContext, node, grid, new IGridPostprocessor() {
             public void postprocess(ITableGrid grid, SNode node, EditorContext editorContext, SubstituteInfoFactory substituteInfoFactory) {
-              //  
+              // guard the row end cells' delete/backspace: never delete the last row
               FeatureDecTabGuardedRowDelete.install(grid);
             }
           });
