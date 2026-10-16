@@ -1700,6 +1700,7 @@
           <module ref="63b449db-0918-4a4a-a891-2c430ab133e4(org.junit.junit5)" kind="rt" />
           <module ref="5b1f863d-65a0-41a6-a801-33896be24202(jetbrains.mps.ide.editor)" kind="cl" />
           <module ref="f0fd486f-8577-43e9-b671-3d118449c6e7(org.iets3.components.core)" kind="cl" />
+          <module ref="6b277d9a-d52d-416f-a209-1919bd737f50(org.iets3.core.expr.simpleTypes)" kind="cl" />
           <module ref="f0883503-8eaa-4bc8-8846-eb63220ab1dd(org.iets3.variability.artifacts.base)" kind="cl" />
         </dependencies>
         <uses>
@@ -1709,6 +1710,7 @@
           <language id="l:8585453e-6bfb-4d80-98de-b16074f1d86c:jetbrains.mps.lang.test" />
           <language id="l:f0fd486f-8577-43e9-b671-3d118449c6e7:org.iets3.components.core" />
           <language id="l:cfaa4966-b7d5-4b69-b66a-309a6e1a7290:org.iets3.core.expr.base" />
+          <language id="l:6b277d9a-d52d-416f-a209-1919bd737f50:org.iets3.core.expr.simpleTypes" />
           <language id="l:71934284-d7d1-45ee-a054-8c072591085f:org.iets3.core.expr.toplevel" />
           <language id="l:f0883503-8eaa-4bc8-8846-eb63220ab1dd:org.iets3.variability.artifacts.base" />
           <language id="l:3c910f62-7ca9-45f3-a98a-c6239acaa8f1:test.iest3.component.attribute" />
@@ -4376,6 +4378,7 @@
         <fileset file="${artifacts.org.iets3.opensource}/org.iets3.core.os/languages/iets3.core.os/org.iets3.core.expr.collections.jar" />
         <fileset file="${artifacts.org.iets3.opensource}/org.iets3.core.os/languages/iets3.core.os/org.iets3.core.expr.lambda.jar" />
         <fileset file="${artifacts.org.iets3.opensource}/org.iets3.core.os/languages/iets3.core.os/org.iets3.core.expr.path.jar" />
+        <fileset file="${artifacts.org.iets3.opensource}/org.iets3.core.os/languages/iets3.core.os/org.iets3.core.expr.simpleTypes.jar" />
         <fileset file="${artifacts.org.iets3.opensource}/org.iets3.core.os/languages/iets3.core.os/org.iets3.core.expr.toplevel.jar" />
         <fileset file="${artifacts.org.iets3.opensource}/org.iets3.variability.os/languages/org.iets3.variability.os/org.iets3.variability.artifacts.base.jar" />
         <fileset file="${artifacts.org.iets3.opensource}/org.iets3.variability.os/languages/org.iets3.variability.os/org.iets3.variability.artifacts.vanguard.jar" />

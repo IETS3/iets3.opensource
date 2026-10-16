@@ -17,6 +17,10 @@ import de.slisson.mps.tables.runtime.gridmodel.Grid;
 import java.util.List;
 import de.slisson.mps.tables.runtime.gridmodel.HeaderGrid;
 import java.util.ArrayList;
+import de.slisson.mps.tables.runtime.cells.IGridPostprocessor;
+import de.slisson.mps.tables.runtime.gridmodel.ITableGrid;
+import de.slisson.mps.tables.runtime.substitute.SubstituteInfoFactory;
+import org.iets3.variability.artifacts.base.actions.FeatureDecTabGuardedRowDelete;
 import de.slisson.mps.tables.runtime.style.ITableStyleFactory;
 import jetbrains.mps.openapi.editor.style.Style;
 import jetbrains.mps.editor.runtime.style.StyleImpl;
@@ -102,7 +106,12 @@ import org.jetbrains.mps.openapi.language.SProperty;
           childGrid.setSpanY(Math.max(1, grid.getRowHeadersSizeY()));
           grid.setElement(0, 0, childGrid);
 
-          editorCell.value = new TableEditor(editorContext, node, grid);
+          editorCell.value = new TableEditor(editorContext, node, grid, new IGridPostprocessor() {
+            public void postprocess(ITableGrid grid, SNode node, EditorContext editorContext, SubstituteInfoFactory substituteInfoFactory) {
+              //  
+              FeatureDecTabGuardedRowDelete.install(grid);
+            }
+          });
           editorCell.value.setCellId("Table_wguyup_a");
           editorCell.value.setBig(true);
           setCellContext(editorCell.value);

@@ -4,6 +4,7 @@
   <uses language="l:8585453e-6bfb-4d80-98de-b16074f1d86c:jetbrains.mps.lang.test" />
   <uses language="l:f0fd486f-8577-43e9-b671-3d118449c6e7:org.iets3.components.core" />
   <uses language="l:cfaa4966-b7d5-4b69-b66a-309a6e1a7290:org.iets3.core.expr.base" />
+  <uses language="l:6b277d9a-d52d-416f-a209-1919bd737f50:org.iets3.core.expr.simpleTypes" />
   <uses language="l:71934284-d7d1-45ee-a054-8c072591085f:org.iets3.core.expr.toplevel" />
   <uses language="l:f0883503-8eaa-4bc8-8846-eb63220ab1dd:org.iets3.variability.artifacts.base" />
   <uses language="l:3c910f62-7ca9-45f3-a98a-c6239acaa8f1:test.iest3.component.attribute" />

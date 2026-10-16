@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <debug-info version="2">
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123140:jetbrains.mps.baseLanguage.structure.ConstructorDeclaration" />
   <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123155:jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1144231330558:jetbrains.mps.baseLanguage.structure.ForStatement" />
   <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1144226303539:jetbrains.mps.baseLanguage.structure.ForeachStatement" />
   <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123159:jetbrains.mps.baseLanguage.structure.IfStatement" />
   <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123165:jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" />
@@ -9,6 +11,7 @@
   <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/6329021646629104954:jetbrains.mps.baseLanguage.structure.SingleLineComment" />
   <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1070462154015:jetbrains.mps.baseLanguage.structure.StaticFieldDeclaration" />
   <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1081236700938:jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1070475587102:jetbrains.mps.baseLanguage.structure.SuperConstructorInvocation" />
   <root>
     <file name="ActionAspectDescriptorImpl.java">
       <unit at="12,0,30,0" name="org.iets3.variability.artifacts.base.actions.ActionAspectDescriptorImpl" />
@@ -16,9 +19,9 @@
   </root>
   <root nodeRef="r:808762ce-2531-4e02-a4f2-cf8959f89a1e(org.iets3.variability.artifacts.base.actions)/2497890189699054814">
     <file name="IVAA_Factory.java">
-      <node id="5727957801049146195" at="14,102,15,71" concept="0" />
-      <node id="2497890189699054814" at="20,0,21,0" concept="7" trace="isRunning$8CV2" />
-      <node id="2497890189699054815" at="14,0,17,0" concept="3" trace="setup#(Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;ILorg/jetbrains/mps/openapi/model/SModel;)V" />
+      <node id="5727957801049146195" at="14,102,15,71" concept="1" />
+      <node id="2497890189699054814" at="20,0,21,0" concept="9" trace="isRunning$8CV2" />
+      <node id="2497890189699054815" at="14,0,17,0" concept="5" trace="setup#(Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;ILorg/jetbrains/mps/openapi/model/SModel;)V" />
       <scope id="2497890189699054815" at="14,102,15,71" />
       <scope id="2497890189699054815" at="14,0,17,0">
         <var name="enclosingNode" id="2497890189699054815" />
@@ -34,33 +37,33 @@
   </root>
   <root nodeRef="r:808762ce-2531-4e02-a4f2-cf8959f89a1e(org.iets3.variability.artifacts.base.actions)/5254044355743211913">
     <file name="FeatureDecTabFocus.java">
-      <node id="678685312024005132" at="21,34,22,65" concept="4" />
-      <node id="678685312024005144" at="23,54,24,80" concept="4" />
-      <node id="678685312024005150" at="24,80,25,42" concept="4" />
-      <node id="678685312024005160" at="26,53,27,17" concept="5" />
-      <node id="678685312024005164" at="28,9,29,36" concept="0" />
-      <node id="678685312024005171" at="29,36,30,84" concept="0" />
-      <node id="678685312023081204" at="37,92,38,78" concept="4" />
-      <node id="678685312023081210" at="39,30,40,25" concept="5" />
-      <node id="678685312023081213" at="43,5,44,16" concept="5" />
-      <node id="678685312023081219" at="48,53,49,18" concept="5" />
-      <node id="678685312023081226" at="50,5,51,66" concept="4" />
-      <node id="678685312023084855" at="51,66,52,87" concept="4" />
-      <node id="678685312023084867" at="53,65,54,18" concept="5" />
-      <node id="678685312023084880" at="56,83,57,18" concept="5" />
-      <node id="678685312023084885" at="58,5,59,40" concept="5" />
-      <node id="678685312024005151" at="25,42,28,9" concept="2" />
-      <node id="678685312023081205" at="38,78,41,9" concept="2" />
-      <node id="678685312023081215" at="47,76,50,5" concept="2" />
-      <node id="678685312023084856" at="52,87,55,5" concept="2" />
-      <node id="678685312023084869" at="55,5,58,5" concept="2" />
-      <node id="678685312023077081" at="36,76,42,7" concept="1" />
-      <node id="678685312023069355" at="35,61,43,5" concept="1" />
-      <node id="678685312024005172" at="22,65,31,9" concept="0" />
-      <node id="678685312023069293" at="35,0,46,0" concept="8" trace="findEditorContext#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljetbrains/mps/openapi/editor/EditorContext;" />
-      <node id="678685312024005173" at="20,52,32,7" concept="0" />
-      <node id="5254044355743211915" at="20,0,34,0" concept="8" trace="markForFocus#(Lorg/jetbrains/mps/openapi/model/SNode;)V" />
-      <node id="678685312023069298" at="47,0,61,0" concept="8" trace="contextOf#(Lcom/intellij/openapi/fileEditor/FileEditor;Lorg/jetbrains/mps/openapi/model/SNode;)Ljetbrains/mps/openapi/editor/EditorContext;" />
+      <node id="678685312024005132" at="21,34,22,65" concept="6" />
+      <node id="678685312024005144" at="23,54,24,80" concept="6" />
+      <node id="678685312024005150" at="24,80,25,42" concept="6" />
+      <node id="678685312024005160" at="26,53,27,17" concept="7" />
+      <node id="678685312024005164" at="28,9,29,36" concept="1" />
+      <node id="678685312024005171" at="29,36,30,84" concept="1" />
+      <node id="678685312023081204" at="37,92,38,78" concept="6" />
+      <node id="678685312023081210" at="39,30,40,25" concept="7" />
+      <node id="678685312023081213" at="43,5,44,16" concept="7" />
+      <node id="678685312023081219" at="48,53,49,18" concept="7" />
+      <node id="678685312023081226" at="50,5,51,66" concept="6" />
+      <node id="678685312023084855" at="51,66,52,87" concept="6" />
+      <node id="678685312023084867" at="53,65,54,18" concept="7" />
+      <node id="678685312023084880" at="56,83,57,18" concept="7" />
+      <node id="678685312023084885" at="58,5,59,40" concept="7" />
+      <node id="678685312024005151" at="25,42,28,9" concept="4" />
+      <node id="678685312023081205" at="38,78,41,9" concept="4" />
+      <node id="678685312023081215" at="47,76,50,5" concept="4" />
+      <node id="678685312023084856" at="52,87,55,5" concept="4" />
+      <node id="678685312023084869" at="55,5,58,5" concept="4" />
+      <node id="678685312023077081" at="36,76,42,7" concept="3" />
+      <node id="678685312023069355" at="35,61,43,5" concept="3" />
+      <node id="678685312024005172" at="22,65,31,9" concept="1" />
+      <node id="678685312023069293" at="35,0,46,0" concept="10" trace="findEditorContext#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljetbrains/mps/openapi/editor/EditorContext;" />
+      <node id="678685312024005173" at="20,52,32,7" concept="1" />
+      <node id="5254044355743211915" at="20,0,34,0" concept="10" trace="markForFocus#(Lorg/jetbrains/mps/openapi/model/SNode;)V" />
+      <node id="678685312023069298" at="47,0,61,0" concept="10" trace="contextOf#(Lcom/intellij/openapi/fileEditor/FileEditor;Lorg/jetbrains/mps/openapi/model/SNode;)Ljetbrains/mps/openapi/editor/EditorContext;" />
       <scope id="678685312024005159" at="26,53,27,17" />
       <scope id="678685312023081209" at="39,30,40,25" />
       <scope id="678685312023081218" at="48,53,49,18" />
@@ -104,12 +107,12 @@
   </root>
   <root nodeRef="r:808762ce-2531-4e02-a4f2-cf8959f89a1e(org.iets3.variability.artifacts.base.actions)/5496884887036707003">
     <file name="FeatureDecTab_Factory.java">
-      <node id="5496884887036707007" at="15,102,16,62" concept="6" />
-      <node id="5496884887036707018" at="16,62,17,98" concept="0" />
-      <node id="5254044355739555255" at="17,98,18,47" concept="0" />
-      <node id="5496884887036707003" at="23,0,24,0" concept="7" trace="contents$oelO" />
-      <node id="5496884887036707003" at="27,0,28,0" concept="7" trace="FeatureDecTabContent$V4" />
-      <node id="5496884887036707004" at="15,0,20,0" concept="3" trace="setup#(Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;ILorg/jetbrains/mps/openapi/model/SModel;)V" />
+      <node id="5496884887036707007" at="15,102,16,62" concept="8" />
+      <node id="5496884887036707018" at="16,62,17,98" concept="1" />
+      <node id="5254044355739555255" at="17,98,18,47" concept="1" />
+      <node id="5496884887036707003" at="23,0,24,0" concept="9" trace="contents$oelO" />
+      <node id="5496884887036707003" at="27,0,28,0" concept="9" trace="FeatureDecTabContent$V4" />
+      <node id="5496884887036707004" at="15,0,20,0" concept="5" trace="setup#(Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;ILorg/jetbrains/mps/openapi/model/SModel;)V" />
       <scope id="5496884887036707004" at="15,102,18,47" />
       <scope id="5496884887036707004" at="15,0,20,0">
         <var name="enclosingNode" id="5496884887036707004" />
@@ -122,6 +125,72 @@
       <unit id="5496884887036707003" at="26,0,29,0" name="org.iets3.variability.artifacts.base.actions.FeatureDecTab_Factory$CONCEPTS" />
       <unit id="5496884887036707004" at="14,0,21,0" name="org.iets3.variability.artifacts.base.actions.FeatureDecTab_Factory$NodeFactory_5496884887036707004" />
       <unit id="5496884887036707003" at="13,0,30,0" name="org.iets3.variability.artifacts.base.actions.FeatureDecTab_Factory" />
+    </file>
+  </root>
+  <root nodeRef="r:808762ce-2531-4e02-a4f2-cf8959f89a1e(org.iets3.variability.artifacts.base.actions)/6517311039241306064">
+    <file name="FeatureDecTabGuardedRowDelete.java">
+      <node id="6517311039241306726" at="16,131,17,49" concept="11" />
+      <node id="6517311039243385193" at="22,49,23,50" concept="6" />
+      <node id="6517311039243385204" at="24,52,25,75" concept="6" />
+      <node id="6517311039243385215" at="26,43,27,58" concept="6" />
+      <node id="6517311039243385231" at="27,58,28,153" concept="1" />
+      <node id="6517311039243385247" at="28,153,29,147" concept="1" />
+      <node id="6517311039241306557" at="36,46,37,31" concept="6" />
+      <node id="6517311039241306572" at="38,49,39,19" concept="6" />
+      <node id="6517311039241306587" at="40,83,41,15" concept="1" />
+      <node id="6517311039241306593" at="43,22,44,15" concept="7" />
+      <node id="6517311039241306598" at="46,5,47,27" concept="1" />
+      <node id="6517311039241306066" at="16,0,19,0" concept="0" trace="FeatureDecTabGuardedRowDelete#(Ljetbrains/mps/openapi/editor/cells/EditorCell;Lde/slisson/mps/tables/runtime/cells/TableActions/DeleteRowAction/DeleteType;Z)V" />
+      <node id="6517311039241306573" at="39,19,42,7" concept="3" />
+      <node id="6517311039241306588" at="42,7,45,7" concept="4" />
+      <node id="6517311039243385205" at="25,75,30,11" concept="4" />
+      <node id="6517311039243385194" at="23,50,31,9" concept="4" />
+      <node id="6517311039241306558" at="37,31,46,5" concept="4" />
+      <node id="6517311039243385174" at="21,47,32,7" concept="2" />
+      <node id="6517311039243385162" at="20,47,33,5" concept="2" />
+      <node id="6517311039241306080" at="36,0,49,0" concept="5" trace="execute#(Ljetbrains/mps/openapi/editor/EditorContext;)V" />
+      <node id="6517311039241306075" at="20,0,35,0" concept="10" trace="install#(Lde/slisson/mps/tables/runtime/gridmodel/ITableGrid;)V" />
+      <scope id="6517311039241306599" at="16,131,17,49" />
+      <scope id="6517311039241306584" at="40,83,41,15" />
+      <scope id="6517311039241306592" at="43,22,44,15" />
+      <scope id="6517311039241306066" at="16,0,19,0">
+        <var name="cell" id="6517311039241306069" />
+        <var name="deleteType" id="6517311039241306071" />
+        <var name="fromLeftSide" id="6517311039241306073" />
+      </scope>
+      <scope id="6517311039243385207" at="26,43,29,147">
+        <var name="isLeft" id="6517311039243385208" />
+      </scope>
+      <scope id="6517311039241306573" at="39,19,42,7">
+        <var name="sibling" id="6517311039241306574" />
+      </scope>
+      <scope id="6517311039243385196" at="24,52,30,11">
+        <var name="cell" id="6517311039243385197" />
+      </scope>
+      <scope id="6517311039241306568" at="38,49,45,7">
+        <var name="rows" id="6517311039241306569" />
+      </scope>
+      <scope id="6517311039243385185" at="22,49,31,9">
+        <var name="element" id="6517311039243385186" />
+      </scope>
+      <scope id="6517311039243385173" at="21,47,32,7" />
+      <scope id="6517311039243385174" at="21,47,32,7">
+        <var name="y" id="6517311039243385175" />
+      </scope>
+      <scope id="6517311039241306553" at="36,46,47,27">
+        <var name="row" id="6517311039241306554" />
+      </scope>
+      <scope id="6517311039243385161" at="20,47,33,5" />
+      <scope id="6517311039243385162" at="20,47,33,5">
+        <var name="x" id="6517311039243385163" />
+      </scope>
+      <scope id="6517311039241306080" at="36,0,49,0">
+        <var name="context" id="6517311039241306083" />
+      </scope>
+      <scope id="6517311039241306075" at="20,0,35,0">
+        <var name="grid" id="6517311039243385159" />
+      </scope>
+      <unit id="6517311039241306064" at="15,0,50,0" name="org.iets3.variability.artifacts.base.actions.FeatureDecTabGuardedRowDelete" />
     </file>
   </root>
 </debug-info>
