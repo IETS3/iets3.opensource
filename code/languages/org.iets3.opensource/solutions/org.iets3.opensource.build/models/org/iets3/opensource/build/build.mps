@@ -17613,12 +17613,17 @@
           <ref role="3bR37D" to="ffeo:1TaHNgiIbJ$" resolve="jetbrains.mps.ide.editor" />
         </node>
       </node>
-          <node concept="1SiIV0" id="vAbDep1" role="3bR37C">
+      <node concept="1SiIV0" id="vAbDep1" role="3bR37C">
         <node concept="3bR9La" id="vAbDep2" role="1SiIV1">
           <ref role="3bR37D" node="7yHH$DDpyJJ" resolve="org.iets3.variability.artifacts.base" />
         </node>
       </node>
-</node>
+      <node concept="1SiIV0" id="5DM8XKD4d6x" role="3bR37C">
+        <node concept="3bR9La" id="5DM8XKD4d6y" role="1SiIV1">
+          <ref role="3bR37D" node="5wLtKNeSRQd" resolve="org.iets3.core.expr.simpleTypes" />
+        </node>
+      </node>
+    </node>
     <node concept="1E1JtA" id="48ZWgAGrsP1" role="3989C9">
       <property role="BnDLt" value="true" />
       <property role="TrG5h" value="test.ts.components.core" />

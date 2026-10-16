@@ -11,9 +11,11 @@
     <use id="28f9e497-3b42-4291-aeba-0a1039153ab1" name="jetbrains.mps.lang.plugin" version="6" />
     <use id="cfaa4966-b7d5-4b69-b66a-309a6e1a7290" name="org.iets3.core.expr.base" version="22" />
     <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="12" />
+    <use id="6b277d9a-d52d-416f-a209-1919bd737f50" name="org.iets3.core.expr.simpleTypes" version="11" />
   </languages>
   <imports>
     <import index="ekwn" ref="r:9832fb5f-2578-4b58-8014-a5de79da988e(jetbrains.mps.ide.editor.actions)" />
+    <import index="5qo5" ref="r:6d93ddb1-b0b0-4eee-8079-51303666672a(org.iets3.core.expr.simpleTypes.structure)" />
   </imports>
   <registry>
     <language id="8585453e-6bfb-4d80-98de-b16074f1d86c" name="jetbrains.mps.lang.test">
@@ -49,6 +51,9 @@
         <child id="4261931054731905241" name="expr" index="2lDidJ" />
       </concept>
       <concept id="7425695345928347719" name="org.iets3.core.expr.base.structure.Expression" flags="ng" index="2vmvVl" />
+    </language>
+    <language id="6b277d9a-d52d-416f-a209-1919bd737f50" name="org.iets3.core.expr.simpleTypes">
+      <concept id="7425695345928358745" name="org.iets3.core.expr.simpleTypes.structure.TrueLiteral" flags="ng" index="2vmpnb" />
     </language>
     <language id="71934284-d7d1-45ee-a054-8c072591085f" name="org.iets3.core.expr.toplevel">
       <concept id="7089558164906249676" name="org.iets3.core.expr.toplevel.structure.Constant" flags="ng" index="2zPypq" />
@@ -264,10 +269,9 @@
               <property role="TrG5h" value="f" />
               <node concept="JRp8p" id="4zE7o4wqm7Z" role="2lDidJ">
                 <node concept="JRpN9" id="4zE7o4wqm8i" role="JRpNe">
-                  <node concept="2vmvVl" id="4zE7o4wqm8j" role="JRlu9" />
+                  <node concept="2vmpnb" id="5DM8XKD4d90" role="JRlu9" />
                 </node>
                 <node concept="JRpN9" id="4zE7o4wqm8k" role="JRpNe">
-                  <node concept="2vmvVl" id="4zE7o4wqm8l" role="JRlu9" />
                   <node concept="LIFWc" id="4zE7o4wqyu3" role="lGtFl">
                     <property role="ZRATv" value="true" />
                     <property role="OXtK3" value="true" />
@@ -275,6 +279,7 @@
                     <property role="p6zMs" value="0" />
                     <property role="LIFWd" value="empty_featureExpr" />
                   </node>
+                  <node concept="2vmpnb" id="5DM8XKD4d91" role="JRlu9" />
                 </node>
               </node>
             </node>
@@ -298,7 +303,6 @@
               <property role="TrG5h" value="f" />
               <node concept="JRp8p" id="4zE7o4wqm89" role="2lDidJ">
                 <node concept="JRpN9" id="4zE7o4wqm8a" role="JRpNe">
-                  <node concept="2vmvVl" id="4zE7o4wqm8b" role="JRlu9" />
                   <node concept="LIFWc" id="4zE7o4wqm8c" role="lGtFl">
                     <property role="ZRATv" value="true" />
                     <property role="OXtK3" value="true" />
@@ -306,6 +310,7 @@
                     <property role="p6zMs" value="0" />
                     <property role="LIFWd" value="empty_featureExpr" />
                   </node>
+                  <node concept="2vmpnb" id="5DM8XKD4d92" role="JRlu9" />
                 </node>
               </node>
             </node>
@@ -339,7 +344,6 @@
               <property role="TrG5h" value="f" />
               <node concept="JRp8p" id="4zE7o4wqqdl" role="2lDidJ">
                 <node concept="JRpN9" id="4zE7o4wqqdm" role="JRpNe">
-                  <node concept="2vmvVl" id="4zE7o4wqqdn" role="JRlu9" />
                   <node concept="LIFWc" id="4zE7o4wqyto" role="lGtFl">
                     <property role="ZRATv" value="true" />
                     <property role="OXtK3" value="true" />
@@ -347,9 +351,10 @@
                     <property role="p6zMs" value="0" />
                     <property role="LIFWd" value="empty_featureExpr" />
                   </node>
+                  <node concept="2vmpnb" id="5DM8XKD4d93" role="JRlu9" />
                 </node>
                 <node concept="JRpN9" id="4zE7o4wqqdo" role="JRpNe">
-                  <node concept="2vmvVl" id="4zE7o4wqqdp" role="JRlu9" />
+                  <node concept="2vmpnb" id="5DM8XKD4d94" role="JRlu9" />
                 </node>
               </node>
             </node>
@@ -373,7 +378,6 @@
               <property role="TrG5h" value="f" />
               <node concept="JRp8p" id="4zE7o4wqqdz" role="2lDidJ">
                 <node concept="JRpN9" id="4zE7o4wqqd$" role="JRpNe">
-                  <node concept="2vmvVl" id="4zE7o4wqqd_" role="JRlu9" />
                   <node concept="LIFWc" id="4zE7o4wqqdA" role="lGtFl">
                     <property role="ZRATv" value="true" />
                     <property role="OXtK3" value="true" />
@@ -381,6 +385,7 @@
                     <property role="p6zMs" value="0" />
                     <property role="LIFWd" value="empty_featureExpr" />
                   </node>
+                  <node concept="2vmpnb" id="5DM8XKD4d95" role="JRlu9" />
                 </node>
               </node>
             </node>
@@ -499,7 +504,6 @@
               <property role="TrG5h" value="f" />
               <node concept="JRp8p" id="243X65tD7iX" role="2lDidJ">
                 <node concept="JRpN9" id="2GHTlMzCmw3" role="JRpNe">
-                  <node concept="2vmvVl" id="W9W$AYyFL3" role="JRlu9" />
                   <node concept="LIFWc" id="2UrV$7YHfZb" role="lGtFl">
                     <property role="ZRATv" value="true" />
                     <property role="OXtK3" value="true" />
@@ -507,6 +511,7 @@
                     <property role="p6zMs" value="0" />
                     <property role="LIFWd" value="empty_featureExpr" />
                   </node>
+                  <node concept="2vmpnb" id="5DM8XKD4d96" role="JRlu9" />
                 </node>
               </node>
             </node>
@@ -530,7 +535,6 @@
               <property role="TrG5h" value="f" />
               <node concept="JRp8p" id="6JxDtl8qgo" role="2lDidJ">
                 <node concept="JRpN9" id="2yShZjQNAjt" role="JRpNe">
-                  <node concept="2vmvVl" id="6hhQtH$siu" role="JRlu9" />
                   <node concept="LIFWc" id="25AgBkPIfII" role="lGtFl">
                     <property role="ZRATv" value="true" />
                     <property role="OXtK3" value="true" />
@@ -538,6 +542,7 @@
                     <property role="p6zMs" value="0" />
                     <property role="LIFWd" value="empty_featureExpr" />
                   </node>
+                  <node concept="2vmpnb" id="5DM8XKD4d98" role="JRlu9" />
                 </node>
               </node>
             </node>
@@ -571,7 +576,6 @@
               <property role="TrG5h" value="f" />
               <node concept="JRp8p" id="5DM8XKCxV57" role="2lDidJ">
                 <node concept="JRpN9" id="5DM8XKCxV58" role="JRpNe">
-                  <node concept="2vmvVl" id="5DM8XKCxV59" role="JRlu9" />
                   <node concept="LIFWc" id="5DM8XKCxV5a" role="lGtFl">
                     <property role="ZRATv" value="true" />
                     <property role="OXtK3" value="true" />
@@ -579,6 +583,7 @@
                     <property role="p6zMs" value="0" />
                     <property role="LIFWd" value="empty_featureExpr" />
                   </node>
+                  <node concept="2vmpnb" id="5DM8XKD4d9a" role="JRlu9" />
                 </node>
               </node>
             </node>
@@ -602,7 +607,6 @@
               <property role="TrG5h" value="f" />
               <node concept="JRp8p" id="5DM8XKCxV5l" role="2lDidJ">
                 <node concept="JRpN9" id="5DM8XKCxV5m" role="JRpNe">
-                  <node concept="2vmvVl" id="5DM8XKCxV5n" role="JRlu9" />
                   <node concept="LIFWc" id="5DM8XKCxV5o" role="lGtFl">
                     <property role="ZRATv" value="true" />
                     <property role="OXtK3" value="true" />
@@ -610,6 +614,7 @@
                     <property role="p6zMs" value="0" />
                     <property role="LIFWd" value="empty_featureExpr" />
                   </node>
+                  <node concept="2vmpnb" id="5DM8XKD4d9c" role="JRlu9" />
                 </node>
               </node>
             </node>

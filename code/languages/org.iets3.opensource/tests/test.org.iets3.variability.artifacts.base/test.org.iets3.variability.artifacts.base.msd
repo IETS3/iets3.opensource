@@ -15,6 +15,7 @@
     <dependency reexport="false">f0fd486f-8577-43e9-b671-3d118449c6e7(org.iets3.components.core)</dependency>
     <dependency reexport="false">f0883503-8eaa-4bc8-8846-eb63220ab1dd(org.iets3.variability.artifacts.base)</dependency>
     <dependency reexport="false">5b1f863d-65a0-41a6-a801-33896be24202(jetbrains.mps.ide.editor)</dependency>
+    <dependency reexport="false">6b277d9a-d52d-416f-a209-1919bd737f50(org.iets3.core.expr.simpleTypes)</dependency>
   </dependencies>
   <languageVersions>
     <language slang="l:d4280a54-f6df-4383-aa41-d1b2bffa7eb1:com.mbeddr.core.base" version="6" />
@@ -47,6 +48,7 @@
     <language slang="l:2f7e2e35-6e74-4c43-9fa5-2465d68f5996:org.iets3.core.expr.collections" version="11" />
     <language slang="l:9464fa06-5ab9-409b-9274-64ab29588457:org.iets3.core.expr.lambda" version="6" />
     <language slang="l:f3eafff0-30d2-46d6-9150-f0f3b880ce27:org.iets3.core.expr.path" version="0" />
+    <language slang="l:6b277d9a-d52d-416f-a209-1919bd737f50:org.iets3.core.expr.simpleTypes" version="11" />
     <language slang="l:71934284-d7d1-45ee-a054-8c072591085f:org.iets3.core.expr.toplevel" version="8" />
     <language slang="l:f0883503-8eaa-4bc8-8846-eb63220ab1dd:org.iets3.variability.artifacts.base" version="2" />
     <language slang="l:c6ff3b3b-aff6-455e-9637-7955ccbfec22:org.iets3.variability.artifacts.vanguard" version="0" />
@@ -101,6 +103,7 @@
     <module reference="2f7e2e35-6e74-4c43-9fa5-2465d68f5996(org.iets3.core.expr.collections)" version="11" />
     <module reference="9464fa06-5ab9-409b-9274-64ab29588457(org.iets3.core.expr.lambda)" version="5" />
     <module reference="f3eafff0-30d2-46d6-9150-f0f3b880ce27(org.iets3.core.expr.path)" version="0" />
+    <module reference="6b277d9a-d52d-416f-a209-1919bd737f50(org.iets3.core.expr.simpleTypes)" version="9" />
     <module reference="71934284-d7d1-45ee-a054-8c072591085f(org.iets3.core.expr.toplevel)" version="6" />
     <module reference="f0883503-8eaa-4bc8-8846-eb63220ab1dd(org.iets3.variability.artifacts.base)" version="18" />
     <module reference="c6ff3b3b-aff6-455e-9637-7955ccbfec22(org.iets3.variability.artifacts.vanguard)" version="0" />
