@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<model ref="r:eb9350e2-c2b3-4be1-b6f7-a55bf39714b3(test.ts.components.core.dectab@tests)">
+<model ref="r:eb9350e2-c2b3-4be1-b6f7-a55bf39714b3(test.org.iets3.variability.artifacts.base.dectab@tests)">
   <persistence version="9" />
   <languages>
     <use id="8585453e-6bfb-4d80-98de-b16074f1d86c" name="jetbrains.mps.lang.test" version="6" />
