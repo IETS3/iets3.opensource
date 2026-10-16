@@ -106,8 +106,6 @@ import org.jetbrains.mps.openapi.language.SProperty;
           editorCell.value.setCellId("Table_wguyup_a");
           editorCell.value.setBig(true);
           setCellContext(editorCell.value);
-          if (true) {
-          }
           TableSelectionActionMap.setCellActions(editorCell.value, myNode, getEditorContext());
           ITableStyleFactory factory = new ITableStyleFactory() {
             public Style createStyle(final int columnIndex, final int rowIndex) {

@@ -43,7 +43,7 @@ public class FeatureDecTabContent_PresenceCondition_ActionMap {
       }
       public void execute_internal(EditorContext editorContext, SNode node) {
         // keep the caret in the presence condition of the new row
-        SNode newContent = SNodeFactoryOperations.insertNewNextSiblingChild(node, CONCEPTS.FeatureDecTabContent$V4);
+        SNode newContent = SNodeFactoryOperations.insertNewPrevSiblingChild(node, CONCEPTS.FeatureDecTabContent$V4);
         SelectionUtil.selectCell(editorContext, newContent, SelectionManager.FIRST_CELL);
       }
 

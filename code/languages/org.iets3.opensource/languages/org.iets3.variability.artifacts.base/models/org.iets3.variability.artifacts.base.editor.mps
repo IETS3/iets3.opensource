@@ -160,7 +160,6 @@
         <reference id="1140103550593" name="relationDeclaration" index="1NtTu8" />
       </concept>
       <concept id="1073389214265" name="jetbrains.mps.lang.editor.structure.EditorCellModel" flags="ng" index="3EYTF0">
-        <property id="1130859485024" name="attractsFocus" index="1cu_pB" />
         <reference id="1139959269582" name="actionMap" index="1ERwB7" />
         <child id="1142887637401" name="renderingCondition" index="pqm2j" />
         <child id="4323500428121274054" name="id" index="2SqHTX" />
@@ -403,6 +402,7 @@
       <concept id="5979988948250981289" name="jetbrains.mps.lang.actions.structure.SNodeCreatorAndInitializer" flags="nn" index="2fJWfE" />
       <concept id="767145758118872833" name="jetbrains.mps.lang.actions.structure.NF_LinkList_AddNewChildOperation" flags="nn" index="2DeJg1" />
       <concept id="767145758118872824" name="jetbrains.mps.lang.actions.structure.NF_Node_InsertNewNextSiblingOperation" flags="nn" index="2DeJnS" />
+      <concept id="767145758118872826" name="jetbrains.mps.lang.actions.structure.NF_Node_InsertNewPrevSiblingOperation" flags="nn" index="2DeJnU" />
     </language>
     <language id="7e450f4e-1ac3-41ef-a851-4598161bdb94" name="de.slisson.mps.tables">
       <concept id="1397920687865593407" name="de.slisson.mps.tables.structure.PartialTable" flags="ng" index="2r0Tta">
@@ -447,6 +447,9 @@
       <concept id="2396822768958367367" name="jetbrains.mps.lang.smodel.structure.AbstractTypeCastExpression" flags="nn" index="$5XWr">
         <child id="6733348108486823193" name="leftExpression" index="1m5AlR" />
         <child id="3906496115198199033" name="conceptArgument" index="3oSUPX" />
+      </concept>
+      <concept id="1143221076066" name="jetbrains.mps.lang.smodel.structure.Node_InsertNewPrevSiblingOperation" flags="nn" index="Hik5C">
+        <reference id="1143221076069" name="concept" index="Hik5J" />
       </concept>
       <concept id="1883223317721008708" name="jetbrains.mps.lang.smodel.structure.IfInstanceOfStatement" flags="nn" index="Jncv_">
         <reference id="1883223317721008712" name="nodeConcept" index="JncvD" />
@@ -697,7 +700,6 @@
     <property role="3GE5qa" value="dectab" />
     <ref role="1XX52x" to="i9mv:2RwPr82fkuF" resolve="FeatureDecTab" />
     <node concept="2rfBfz" id="4zE7o4xT9q9" role="2wV5jI">
-      <property role="1cu_pB" value="" />
       <node concept="2reCLu" id="4zE7o4xT9qa" role="2rf8GZ">
         <node concept="2reCLy" id="4zE7o4xT9qb" role="2reCL6">
           <node concept="3F0ifn" id="4zE7o4xT9qc" role="2reSmM">
@@ -1307,7 +1309,6 @@
             </node>
           </node>
           <node concept="PMmxH" id="3PRltoWQn$b" role="2reSmM">
-            <property role="1cu_pB" value="" />
             <ref role="PMmxG" node="3PRltoW$qcR" resolve="PresenceCondition" />
             <ref role="1ERwB7" node="4L8QUTlWjeG" resolve="FeatureDecTabContent_PresenceCondition_ActionMap" />
           </node>
@@ -1551,7 +1552,6 @@
         </node>
       </node>
       <node concept="3F1sOY" id="3PRltoW$qdj" role="3EZMnx">
-        <property role="1cu_pB" value="" />
         <ref role="1NtTu8" to="i9mv:5kBnKN86chi" resolve="featureExpr" />
         <ref role="1k5W1q" node="6yBLDO2gPk6" resolve="PresenceCondition" />
         <node concept="xShMh" id="3PRltoW$qdk" role="3F10Kt">
@@ -3881,8 +3881,8 @@
               </node>
               <node concept="2OqwBi" id="5HCuFbO2UO5" role="33vP2m">
                 <node concept="0IXxy" id="5HCuFbO2UO6" role="2Oq$k0" />
-                <node concept="2DeJnS" id="5HCuFbO2UO7" role="2OqNvi">
-                  <ref role="1$SOMD" to="i9mv:2RwPr82fk_V" resolve="FeatureDecTabContent" />
+                <node concept="2DeJnU" id="6UISwkfoUOt" role="2OqNvi">
+                  <ref role="Hik5J" to="i9mv:2RwPr82fk_V" resolve="FeatureDecTabContent" />
                 </node>
               </node>
             </node>
