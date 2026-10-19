@@ -29,9 +29,6 @@ public interface IRenamer {
    * This method is called during variability filtering, allowing the application code to rename
    * instantiated nodes. It provides some additional arguments which can be used by the renaming-logic.
    * 
-   * Usually it will be easier to use the renameInstances() method instead, which will provide the
-   * full information and run as a post-processing step.
-   * 
    * @param newInstance the instantiated node being created
    * @param oldInstances all instances which have been created up to now
    * @param artifactPivot the pivot node on which the instantiation is based

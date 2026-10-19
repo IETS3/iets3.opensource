@@ -311,7 +311,7 @@ public class TreeComputation_Test extends BaseTransformationTest {
         Tree fromMappingContainer = Tree.initFunctionTree(getAnnotatedNode("FCLeafsMapping"));
         List<TreeNode> leafs = fromMappingContainer.getRoot().getLeafs();
         List<SNode> leafCompInst = ListSequence.fromList(leafs).select((it) -> it.getInstace()).toList();
-        Assert.assertEquals(5, ListSequence.fromList(leafCompInst).count());
+        Assert.assertEquals(Integer.valueOf(5), Integer.valueOf(ListSequence.fromList(leafCompInst).count()));
 
         ListSequence.fromList(leafCompInst).visitAll((it) -> {
           {
@@ -347,7 +347,7 @@ public class TreeComputation_Test extends BaseTransformationTest {
         Tree tree = Tree.initComponentInstanceTree(getAnnotatedNode("treeFromFCInst"));
         List<TreeNode> leafs = tree.getRoot().getLeafs();
         List<SNode> leafCompInst = ListSequence.fromList(leafs).select((it) -> it.getInstace()).toList();
-        Assert.assertEquals(5, ListSequence.fromList(leafCompInst).count());
+        Assert.assertEquals(Integer.valueOf(5), Integer.valueOf(ListSequence.fromList(leafCompInst).count()));
 
         ListSequence.fromList(leafCompInst).visitAll((it) -> {
           {

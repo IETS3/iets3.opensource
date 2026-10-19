@@ -8,7 +8,6 @@ import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import org.jetbrains.mps.openapi.model.SNode;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import java.util.List;
 import java.util.Arrays;
@@ -16,7 +15,6 @@ import org.jetbrains.annotations.NotNull;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
 import org.iets3.core.expr.path.behavior.IPathPart__BehaviorDescriptor;
-import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 import org.jetbrains.mps.openapi.language.SContainmentLink;
@@ -26,15 +24,13 @@ import org.jetbrains.mps.openapi.language.SInterfaceConcept;
 public final class IAttributeWithContext__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getInterfaceConcept(0x583939beded04735L, 0xa055a74f8477fc34L, 0x43d0987d9b9f45bfL, "org.iets3.core.attributes.structure.IAttributeWithContext");
 
-  public static final SMethod<SNode> context_id4fgA7QrBIoA = new SMethodBuilder<SNode>(new SJavaCompoundTypeImpl((Class<SNode>) ((Class) Object.class))).name("context").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(4886573260946204198L).languageId(0xa055a74f8477fc34L, 0x583939beded04735L).build2();
-  public static final SMethod<Boolean> isValidContext_id4fgA7QrBQwX = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("isValidContext").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(4886573260946237501L).languageId(0xa055a74f8477fc34L, 0x583939beded04735L).build2();
-  public static final SMethod<SNode> contextInternal_id4fgA7QrBX7_ = new SMethodBuilder<SNode>(new SJavaCompoundTypeImpl((Class<SNode>) ((Class) Object.class))).name("contextInternal").modifiers(8, AccessPrivileges.PROTECTED).concept(CONCEPT).baseMethodId(4886573260946264549L).languageId(0xa055a74f8477fc34L, 0x583939beded04735L).build2(SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""));
-  public static final SMethod<Boolean> isValidContextInternal_id4fgA7QrC8BJ = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("isValidContextInternal").modifiers(0, AccessPrivileges.PROTECTED).concept(CONCEPT).baseMethodId(4886573260946311663L).languageId(0xa055a74f8477fc34L, 0x583939beded04735L).build2(SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""));
+  public static final SMethod<SNode> context_id4fgA7QrBIoA = new SMethodBuilder<>(SNode.class).name("context").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(4886573260946204198L).languageId(0xa055a74f8477fc34L, 0x583939beded04735L).build2();
+  public static final SMethod<Boolean> isValidContext_id4fgA7QrBQwX = new SMethodBuilder<>(Boolean.TYPE).name("isValidContext").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(4886573260946237501L).languageId(0xa055a74f8477fc34L, 0x583939beded04735L).build2();
+  public static final SMethod<SNode> contextInternal_id4fgA7QrBX7_ = new SMethodBuilder<>(SNode.class).name("contextInternal").modifiers(8, AccessPrivileges.PROTECTED).concept(CONCEPT).baseMethodId(4886573260946264549L).languageId(0xa055a74f8477fc34L, 0x583939beded04735L).build2(SMethodBuilder.createJavaParameter(SNode.class, "expr"));
+  public static final SMethod<Boolean> isValidContextInternal_id4fgA7QrC8BJ = new SMethodBuilder<>(Boolean.TYPE).name("isValidContextInternal").modifiers(0, AccessPrivileges.PROTECTED).concept(CONCEPT).baseMethodId(4886573260946311663L).languageId(0xa055a74f8477fc34L, 0x583939beded04735L).build2(SMethodBuilder.createJavaParameter(SNode.class, "ctx"));
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(context_id4fgA7QrBIoA, isValidContext_id4fgA7QrBQwX, contextInternal_id4fgA7QrBX7_, isValidContextInternal_id4fgA7QrC8BJ);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(context_id4fgA7QrBIoA, isValidContext_id4fgA7QrBQwX, contextInternal_id4fgA7QrBX7_, isValidContextInternal_id4fgA7QrC8BJ);
 
-  private static void ___init___(@NotNull SNode __thisNode__) {
-  }
 
   /*package*/ static SNode context_id4fgA7QrBIoA(@NotNull SNode __thisNode__) {
     return ((SNode) IAttributeWithContext__BehaviorDescriptor.contextInternal_id4fgA7QrBX7_.invoke(__thisNode__, SLinkOperations.getTarget(__thisNode__, LINKS.ctx$ooyX)));
@@ -85,10 +81,6 @@ public final class IAttributeWithContext__BehaviorDescriptor extends BaseBHDescr
   /*package*/ IAttributeWithContext__BehaviorDescriptor() {
   }
 
-  @Override
-  protected void initNode(@NotNull SNode node, @NotNull SConstructor constructor, @Nullable Object[] parameters) {
-    ___init___(node);
-  }
 
   @Override
   protected <T> T invokeSpecial0(@NotNull SNode node, @NotNull SMethod<T> method, @Nullable Object[] parameters) {

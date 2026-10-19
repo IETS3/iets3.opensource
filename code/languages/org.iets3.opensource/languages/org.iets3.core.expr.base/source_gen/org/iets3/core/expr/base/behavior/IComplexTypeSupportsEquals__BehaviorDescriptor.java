@@ -7,25 +7,21 @@ import org.jetbrains.mps.openapi.language.SAbstractConcept;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import org.jetbrains.mps.openapi.model.SNode;
 import java.util.List;
 import java.util.Arrays;
 import org.jetbrains.annotations.NotNull;
-import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 
 public final class IComplexTypeSupportsEquals__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getInterfaceConcept(0xcfaa4966b7d54b69L, 0xb66a309a6e1a7290L, 0x685fcf8a931a7c8bL, "org.iets3.core.expr.base.structure.IComplexTypeSupportsEquals");
 
-  public static final SMethod<Boolean> isComparableTo_id6xvNSEj6BML = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("isComparableTo").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(7520958096812440753L).languageId(0xb66a309a6e1a7290L, 0xcfaa4966b7d54b69L).build2(SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""));
+  public static final SMethod<Boolean> isComparableTo_id6xvNSEj6BML = new SMethodBuilder<>(Boolean.TYPE).name("isComparableTo").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(7520958096812440753L).languageId(0xb66a309a6e1a7290L, 0xcfaa4966b7d54b69L).build2(SMethodBuilder.createJavaParameter(SNode.class, "other"));
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(isComparableTo_id6xvNSEj6BML);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(isComparableTo_id6xvNSEj6BML);
 
-  private static void ___init___(@NotNull SNode __thisNode__) {
-  }
 
   /*package*/ static boolean isComparableTo_id6xvNSEj6BML(@NotNull SNode __thisNode__, SNode other) {
     return false;
@@ -34,10 +30,6 @@ public final class IComplexTypeSupportsEquals__BehaviorDescriptor extends BaseBH
   /*package*/ IComplexTypeSupportsEquals__BehaviorDescriptor() {
   }
 
-  @Override
-  protected void initNode(@NotNull SNode node, @NotNull SConstructor constructor, @Nullable Object[] parameters) {
-    ___init___(node);
-  }
 
   @Override
   protected <T> T invokeSpecial0(@NotNull SNode node, @NotNull SMethod<T> method, @Nullable Object[] parameters) {

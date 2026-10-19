@@ -8,7 +8,6 @@ import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import org.jetbrains.mps.openapi.model.SNode;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import jetbrains.mps.scope.Scope;
 import java.util.Set;
@@ -25,7 +24,6 @@ import org.iets3.core.expr.base.behavior.ITypeable__BehaviorDescriptor;
 import jetbrains.mps.internal.collections.runtime.SetSequence;
 import java.util.HashSet;
 import java.util.Objects;
-import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 import jetbrains.mps.smodel.builder.SNodeBuilder;
@@ -37,24 +35,22 @@ import org.jetbrains.mps.openapi.language.SReferenceLink;
 public final class IRecordDeclaration__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getInterfaceConcept(0x71934284d7d145eeL, 0xa0548c072591085fL, 0x85e1e1330497e6fL, "org.iets3.core.expr.toplevel.structure.IRecordDeclaration");
 
-  public static final SMethod<Iterable<SNode>> nonEmptyMembers_id58eyHuUgYVm = new SMethodBuilder<Iterable<SNode>>(new SJavaCompoundTypeImpl((Class<Iterable<SNode>>) ((Class) Object.class))).name("nonEmptyMembers").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5912816019931655894L).languageId(0xa0548c072591085fL, 0x71934284d7d145eeL).build2();
-  public static final SMethod<Iterable<SNode>> visibleMembers_id6NHlpK$oaBU = new SMethodBuilder<Iterable<SNode>>(new SJavaCompoundTypeImpl((Class<Iterable<SNode>>) ((Class) Object.class))).name("visibleMembers").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(7849023854690216442L).languageId(0xa0548c072591085fL, 0x71934284d7d145eeL).build2();
-  public static final SMethod<Iterable<SNode>> namedNodesForComment_id5ElkanPUl6T = new SMethodBuilder<Iterable<SNode>>(new SJavaCompoundTypeImpl((Class<Iterable<SNode>>) ((Class) Object.class))).name("namedNodesForComment").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(6527211908668936633L).languageId(0xb66a309a6e1a7290L, 0xcfaa4966b7d54b69L).build2();
-  public static final SMethod<Iterable<SNode>> visibleContentsOfType_id6clJcrJXo2_ = new SMethodBuilder<Iterable<SNode>>(new SJavaCompoundTypeImpl((Class<Iterable<SNode>>) ((Class) Object.class))).name("visibleContentsOfType").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(7139820346881179813L).languageId(0xaa41d1b2bffa7eb1L, 0xd4280a54f6df4383L).build2(SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""));
-  public static final SMethod<Scope> visibleContentsOfType_id79$zShlSHxZ = new SMethodBuilder<Scope>(new SJavaCompoundTypeImpl(Scope.class)).name("visibleContentsOfType").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(8242871016534235263L).languageId(0xaa41d1b2bffa7eb1L, 0xd4280a54f6df4383L).build2(SMethodBuilder.createJavaParameter((Class<SAbstractConcept>) ((Class) Object.class), ""));
-  public static final SMethod<Iterable<SNode>> getDependenciesRelevantForCycleDetection_id59HbAIOYveX = new SMethodBuilder<Iterable<SNode>>(new SJavaCompoundTypeImpl((Class<Iterable<SNode>>) ((Class) Object.class))).name("getDependenciesRelevantForCycleDetection").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5939454523704210365L).languageId(0xaa41d1b2bffa7eb1L, 0xd4280a54f6df4383L).build2();
-  public static final SMethod<Set<SNode>> traceBackElementInCycle_id17fjvcLF7UR = new SMethodBuilder<Set<SNode>>(new SJavaCompoundTypeImpl((Class<Set<SNode>>) ((Class) Object.class))).name("traceBackElementInCycle").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(1283330125729660599L).languageId(0xaa41d1b2bffa7eb1L, 0xd4280a54f6df4383L).build2(SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""));
-  public static final SMethod<String> getErrorMessageForElementInCycle_id2G8yZXxNStd = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("getErrorMessageForElementInCycle").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(3100882272418498381L).languageId(0xaa41d1b2bffa7eb1L, 0xd4280a54f6df4383L).build2();
-  public static final SMethod<Boolean> canBeReferenced_id6JZACDWPqWY = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("canBeReferenced").modifiers(12, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(7782108600710049598L).languageId(0xa0548c072591085fL, 0x71934284d7d145eeL).build2();
-  public static final SMethod<Boolean> hasItsOwnType_idMIkgqljGnG = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("hasItsOwnType").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(913756863119410668L).languageId(0xa0548c072591085fL, 0x71934284d7d145eeL).build2();
-  public static final SMethod<SNode> createTypeNode_id42g3Tih0Tsk = new SMethodBuilder<SNode>(new SJavaCompoundTypeImpl((Class<SNode>) ((Class) Object.class))).name("createTypeNode").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(4652235545836230420L).languageId(0xa0548c072591085fL, 0x71934284d7d145eeL).build2();
-  public static final SMethod<Iterable<SNode>> effectiveMembers_id1qrYg08iahZ = new SMethodBuilder<Iterable<SNode>>(new SJavaCompoundTypeImpl((Class<Iterable<SNode>>) ((Class) Object.class))).name("effectiveMembers").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(1629169468758860927L).languageId(0xa0548c072591085fL, 0x71934284d7d145eeL).build2();
-  public static final SMethod<Boolean> equals_id3i_T7GdgtPy = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("equals").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(3793689478284041570L).languageId(0xa0548c072591085fL, 0x71934284d7d145eeL).build2(SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""));
+  public static final SMethod<Iterable<SNode>> nonEmptyMembers_id58eyHuUgYVm = new SMethodBuilder<>((Class<Iterable<SNode>>) ((Class) Object.class)).name("nonEmptyMembers").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5912816019931655894L).languageId(0xa0548c072591085fL, 0x71934284d7d145eeL).build2();
+  public static final SMethod<Iterable<SNode>> visibleMembers_id6NHlpK$oaBU = new SMethodBuilder<>((Class<Iterable<SNode>>) ((Class) Object.class)).name("visibleMembers").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(7849023854690216442L).languageId(0xa0548c072591085fL, 0x71934284d7d145eeL).build2();
+  public static final SMethod<Iterable<SNode>> namedNodesForComment_id5ElkanPUl6T = new SMethodBuilder<>((Class<Iterable<SNode>>) ((Class) Object.class)).name("namedNodesForComment").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(6527211908668936633L).languageId(0xb66a309a6e1a7290L, 0xcfaa4966b7d54b69L).build2();
+  public static final SMethod<Iterable<SNode>> visibleContentsOfType_id6clJcrJXo2_ = new SMethodBuilder<>((Class<Iterable<SNode>>) ((Class) Object.class)).name("visibleContentsOfType").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(7139820346881179813L).languageId(0xaa41d1b2bffa7eb1L, 0xd4280a54f6df4383L).build2(SMethodBuilder.createJavaParameter(SNode.class, "targetConcept"));
+  public static final SMethod<Scope> visibleContentsOfType_id79$zShlSHxZ = new SMethodBuilder<>(Scope.class).name("visibleContentsOfType").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(8242871016534235263L).languageId(0xaa41d1b2bffa7eb1L, 0xd4280a54f6df4383L).build2(SMethodBuilder.createJavaParameter(SAbstractConcept.class, "targetConcept"));
+  public static final SMethod<Iterable<SNode>> getDependenciesRelevantForCycleDetection_id59HbAIOYveX = new SMethodBuilder<>((Class<Iterable<SNode>>) ((Class) Object.class)).name("getDependenciesRelevantForCycleDetection").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5939454523704210365L).languageId(0xaa41d1b2bffa7eb1L, 0xd4280a54f6df4383L).build2();
+  public static final SMethod<Set<SNode>> traceBackElementInCycle_id17fjvcLF7UR = new SMethodBuilder<>((Class<Set<SNode>>) ((Class) Object.class)).name("traceBackElementInCycle").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(1283330125729660599L).languageId(0xaa41d1b2bffa7eb1L, 0xd4280a54f6df4383L).build2(SMethodBuilder.createJavaParameter(SNode.class, "dependency"));
+  public static final SMethod<String> getErrorMessageForElementInCycle_id2G8yZXxNStd = new SMethodBuilder<>(String.class).name("getErrorMessageForElementInCycle").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(3100882272418498381L).languageId(0xaa41d1b2bffa7eb1L, 0xd4280a54f6df4383L).build2();
+  public static final SMethod<Boolean> canBeReferenced_id6JZACDWPqWY = new SMethodBuilder<>(Boolean.TYPE).name("canBeReferenced").modifiers(12, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(7782108600710049598L).languageId(0xa0548c072591085fL, 0x71934284d7d145eeL).build2();
+  public static final SMethod<Boolean> hasItsOwnType_idMIkgqljGnG = new SMethodBuilder<>(Boolean.TYPE).name("hasItsOwnType").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(913756863119410668L).languageId(0xa0548c072591085fL, 0x71934284d7d145eeL).build2();
+  public static final SMethod<SNode> createTypeNode_id42g3Tih0Tsk = new SMethodBuilder<>(SNode.class).name("createTypeNode").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(4652235545836230420L).languageId(0xa0548c072591085fL, 0x71934284d7d145eeL).build2();
+  public static final SMethod<Iterable<SNode>> effectiveMembers_id1qrYg08iahZ = new SMethodBuilder<>((Class<Iterable<SNode>>) ((Class) Object.class)).name("effectiveMembers").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(1629169468758860927L).languageId(0xa0548c072591085fL, 0x71934284d7d145eeL).build2();
+  public static final SMethod<Boolean> equals_id3i_T7GdgtPy = new SMethodBuilder<>(Boolean.TYPE).name("equals").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(3793689478284041570L).languageId(0xa0548c072591085fL, 0x71934284d7d145eeL).build2(SMethodBuilder.createJavaParameter(SNode.class, "declaration"));
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(nonEmptyMembers_id58eyHuUgYVm, visibleMembers_id6NHlpK$oaBU, namedNodesForComment_id5ElkanPUl6T, visibleContentsOfType_id6clJcrJXo2_, visibleContentsOfType_id79$zShlSHxZ, getDependenciesRelevantForCycleDetection_id59HbAIOYveX, traceBackElementInCycle_id17fjvcLF7UR, getErrorMessageForElementInCycle_id2G8yZXxNStd, canBeReferenced_id6JZACDWPqWY, hasItsOwnType_idMIkgqljGnG, createTypeNode_id42g3Tih0Tsk, effectiveMembers_id1qrYg08iahZ, equals_id3i_T7GdgtPy);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(nonEmptyMembers_id58eyHuUgYVm, visibleMembers_id6NHlpK$oaBU, namedNodesForComment_id5ElkanPUl6T, visibleContentsOfType_id6clJcrJXo2_, visibleContentsOfType_id79$zShlSHxZ, getDependenciesRelevantForCycleDetection_id59HbAIOYveX, traceBackElementInCycle_id17fjvcLF7UR, getErrorMessageForElementInCycle_id2G8yZXxNStd, canBeReferenced_id6JZACDWPqWY, hasItsOwnType_idMIkgqljGnG, createTypeNode_id42g3Tih0Tsk, effectiveMembers_id1qrYg08iahZ, equals_id3i_T7GdgtPy);
 
-  private static void ___init___(@NotNull SNode __thisNode__) {
-  }
 
   /*package*/ static Iterable<SNode> nonEmptyMembers_id58eyHuUgYVm(@NotNull SNode __thisNode__) {
     return Sequence.fromIterable(IRecordDeclaration__BehaviorDescriptor.effectiveMembers_id1qrYg08iahZ.invoke(__thisNode__)).where((it) -> !(SNodeOperations.isInstanceOf(it, CONCEPTS.IEmpty$6_)));
@@ -105,10 +101,6 @@ public final class IRecordDeclaration__BehaviorDescriptor extends BaseBHDescript
   /*package*/ IRecordDeclaration__BehaviorDescriptor() {
   }
 
-  @Override
-  protected void initNode(@NotNull SNode node, @NotNull SConstructor constructor, @Nullable Object[] parameters) {
-    ___init___(node);
-  }
 
   @Override
   protected <T> T invokeSpecial0(@NotNull SNode node, @NotNull SMethod<T> method, @Nullable Object[] parameters) {

@@ -10,7 +10,6 @@ import jetbrains.mps.baseLanguage.tuples.runtime.Tuples;
 import org.iets3.core.expr.mutable.plugin.IDElement;
 import org.iets3.core.expr.mutable.plugin.InterceptorState;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import java.util.List;
 import org.iets3.core.expr.mutable.plugin.ContextValue;
@@ -30,7 +29,6 @@ import com.mbeddr.mpsutil.interpreter.rt.NullCoverageAnalyzer;
 import jetbrains.mps.internal.collections.runtime.ListSequence;
 import org.iets3.core.expr.mutable.plugin.InterceptorFailedException;
 import org.iets3.core.expr.base.plugin.MessageValue;
-import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 import org.jetbrains.mps.openapi.language.SProperty;
@@ -39,13 +37,11 @@ import org.jetbrains.mps.openapi.language.SContainmentLink;
 public final class RateLimitInterceptor__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getConcept(0xfbba51185fc649ffL, 0x9c3b0b4469830440L, 0x4bbb011107db10aaL, "org.iets3.core.expr.mutable.structure.RateLimitInterceptor");
 
-  public static final SMethod<Tuples._2<IDElement, InterceptorState>> processOrThrow_id4IV0h47deV3 = new SMethodBuilder<Tuples._2<IDElement, InterceptorState>>(new SJavaCompoundTypeImpl((Class<Tuples._2<IDElement, InterceptorState>>) ((Class) Object.class))).name("processOrThrow").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5456956546136469187L).languageId(0x9c3b0b4469830440L, 0xfbba51185fc649ffL).build2(SMethodBuilder.createJavaParameter(IDElement.class, ""), SMethodBuilder.createJavaParameter(InterceptorState.class, ""), SMethodBuilder.createJavaParameter((Class<List<Object>>) ((Class) Object.class), ""), SMethodBuilder.createJavaParameter((Class<List<ContextValue>>) ((Class) Object.class), ""), SMethodBuilder.createJavaParameter(IContext.class, ""), SMethodBuilder.createJavaParameter(ComputationTrace.class, ""));
-  public static final SMethod<InterceptorState> createStateObject_id4IV0h47VEDy = new SMethodBuilder<InterceptorState>(new SJavaCompoundTypeImpl(InterceptorState.class)).name("createStateObject").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5456956546148641378L).languageId(0x9c3b0b4469830440L, 0xfbba51185fc649ffL).build2(SMethodBuilder.createJavaParameter(IContext.class, ""), SMethodBuilder.createJavaParameter(ComputationTrace.class, ""));
+  public static final SMethod<Tuples._2<IDElement, InterceptorState>> processOrThrow_id4IV0h47deV3 = new SMethodBuilder<>((Class<Tuples._2<IDElement, InterceptorState>>) ((Class) Object.class)).name("processOrThrow").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5456956546136469187L).languageId(0x9c3b0b4469830440L, 0xfbba51185fc649ffL).build2(SMethodBuilder.createJavaParameter(IDElement.class, "element"), SMethodBuilder.createJavaParameter(InterceptorState.class, "state"), SMethodBuilder.createJavaParameter((Class<List<Object>>) ((Class) Object.class), "payload"), SMethodBuilder.createJavaParameter((Class<List<ContextValue>>) ((Class) Object.class), "contextArgs"), SMethodBuilder.createJavaParameter(IContext.class, "ctx"), SMethodBuilder.createJavaParameter(ComputationTrace.class, "trace"));
+  public static final SMethod<InterceptorState> createStateObject_id4IV0h47VEDy = new SMethodBuilder<>(InterceptorState.class).name("createStateObject").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5456956546148641378L).languageId(0x9c3b0b4469830440L, 0xfbba51185fc649ffL).build2(SMethodBuilder.createJavaParameter(IContext.class, "ctx"), SMethodBuilder.createJavaParameter(ComputationTrace.class, "trace"));
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(processOrThrow_id4IV0h47deV3, createStateObject_id4IV0h47VEDy);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(processOrThrow_id4IV0h47deV3, createStateObject_id4IV0h47VEDy);
 
-  private static void ___init___(@NotNull SNode __thisNode__) {
-  }
 
   /*package*/ static Tuples._2<IDElement, InterceptorState> processOrThrow_id4IV0h47deV3(@NotNull SNode __thisNode__, IDElement element, InterceptorState state, List<Object> payload, List<ContextValue> contextArgs, IContext ctx, ComputationTrace trace) {
     if (SPropertyOperations.getBoolean(__thisNode__, PROPS.commandsOnly$FpqO) && element instanceof IDValue) {
@@ -70,10 +66,6 @@ public final class RateLimitInterceptor__BehaviorDescriptor extends BaseBHDescri
   /*package*/ RateLimitInterceptor__BehaviorDescriptor() {
   }
 
-  @Override
-  protected void initNode(@NotNull SNode node, @NotNull SConstructor constructor, @Nullable Object[] parameters) {
-    ___init___(node);
-  }
 
   @Override
   protected <T> T invokeSpecial0(@NotNull SNode node, @NotNull SMethod<T> method, @Nullable Object[] parameters) {

@@ -13,7 +13,7 @@
       <unit at="11,0,79,0" name="org.iets3.core.expr.typetags.bindingtime.structure.ConceptPresentationAspectImpl" />
     </file>
     <file name="LanguageConceptSwitch.java">
-      <unit at="10,0,40,0" name="org.iets3.core.expr.typetags.bindingtime.structure.LanguageConceptSwitch" />
+      <unit at="12,0,48,0" name="org.iets3.core.expr.typetags.bindingtime.structure.LanguageConceptSwitch" />
     </file>
     <file name="StructureAspectDescriptor.java">
       <unit at="15,0,142,0" name="org.iets3.core.expr.typetags.bindingtime.structure.StructureAspectDescriptor" />
@@ -34,8 +34,8 @@
       <scope id="1210980326440656119" at="40,41,47,29" />
     </file>
     <file name="LanguageConceptSwitch.java">
-      <node id="1210980326440656119" at="14,0,15,0" concept="6" trace="BTGroup" />
-      <node id="1210980326440656119" at="23,55,24,46" concept="0" />
+      <node id="1210980326440656119" at="16,0,17,0" concept="6" trace="BTGroup" />
+      <node id="1210980326440656119" at="25,55,26,46" concept="0" />
     </file>
     <file name="StructureAspectDescriptor.java">
       <node id="1210980326440656119" at="18,0,19,0" concept="1" trace="myConceptBTGroup" />
@@ -72,8 +72,8 @@
       <scope id="2171557551192550808" at="68,39,74,27" />
     </file>
     <file name="LanguageConceptSwitch.java">
-      <node id="2171557551192550808" at="18,0,19,0" concept="6" trace="BTtag" />
-      <node id="2171557551192550808" at="27,49,28,44" concept="0" />
+      <node id="2171557551192550808" at="20,0,21,0" concept="6" trace="BTtag" />
+      <node id="2171557551192550808" at="29,49,30,44" concept="0" />
     </file>
     <file name="StructureAspectDescriptor.java">
       <node id="2171557551192550808" at="22,0,23,0" concept="1" trace="myConceptBTtag" />
@@ -108,8 +108,8 @@
       <scope id="2278760416889295565" at="48,44,54,32" />
     </file>
     <file name="LanguageConceptSwitch.java">
-      <node id="2278760416889295565" at="15,0,16,0" concept="6" trace="BTGroupRef" />
-      <node id="2278760416889295565" at="24,46,25,49" concept="0" />
+      <node id="2278760416889295565" at="17,0,18,0" concept="6" trace="BTGroupRef" />
+      <node id="2278760416889295565" at="26,46,27,49" concept="0" />
     </file>
     <file name="StructureAspectDescriptor.java">
       <node id="2278760416889295565" at="19,0,20,0" concept="1" trace="myConceptBTGroupRef" />
@@ -141,8 +141,8 @@
       <scope id="2278760416889435297" at="62,44,67,32" />
     </file>
     <file name="LanguageConceptSwitch.java">
-      <node id="2278760416889435297" at="17,0,18,0" concept="6" trace="BTStageRef" />
-      <node id="2278760416889435297" at="26,54,27,49" concept="0" />
+      <node id="2278760416889435297" at="19,0,20,0" concept="6" trace="BTStageRef" />
+      <node id="2278760416889435297" at="28,54,29,49" concept="0" />
     </file>
     <file name="StructureAspectDescriptor.java">
       <node id="2278760416889435297" at="21,0,22,0" concept="1" trace="myConceptBTStageRef" />
@@ -174,8 +174,8 @@
       <scope id="2278760416889436425" at="33,50,39,38" />
     </file>
     <file name="LanguageConceptSwitch.java">
-      <node id="2278760416889436425" at="13,0,14,0" concept="6" trace="BTDeclarationRef" />
-      <node id="2278760416889436425" at="22,52,23,55" concept="0" />
+      <node id="2278760416889436425" at="15,0,16,0" concept="6" trace="BTDeclarationRef" />
+      <node id="2278760416889436425" at="24,52,25,55" concept="0" />
     </file>
     <file name="StructureAspectDescriptor.java">
       <node id="2278760416889436425" at="17,0,18,0" concept="1" trace="myConceptBTDeclarationRef" />
@@ -210,8 +210,8 @@
       <scope id="2278760416889436431" at="55,49,61,37" />
     </file>
     <file name="LanguageConceptSwitch.java">
-      <node id="2278760416889436431" at="16,0,17,0" concept="6" trace="BTGroupStageRef" />
-      <node id="2278760416889436431" at="25,49,26,54" concept="0" />
+      <node id="2278760416889436431" at="18,0,19,0" concept="6" trace="BTGroupStageRef" />
+      <node id="2278760416889436431" at="27,49,28,54" concept="0" />
     </file>
     <file name="StructureAspectDescriptor.java">
       <node id="2278760416889436431" at="20,0,21,0" concept="1" trace="myConceptBTGroupStageRef" />
@@ -247,8 +247,8 @@
       <scope id="2836753531041675569" at="25,47,32,35" />
     </file>
     <file name="LanguageConceptSwitch.java">
-      <node id="2836753531041675569" at="12,0,13,0" concept="6" trace="BTDeclaration" />
-      <node id="2836753531041675569" at="21,116,22,52" concept="0" />
+      <node id="2836753531041675569" at="14,0,15,0" concept="6" trace="BTDeclaration" />
+      <node id="2836753531041675569" at="23,116,24,52" concept="0" />
     </file>
     <file name="StructureAspectDescriptor.java">
       <node id="2836753531041675569" at="16,0,17,0" concept="1" trace="myConceptBTDeclaration" />

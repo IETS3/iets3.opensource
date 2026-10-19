@@ -8,12 +8,10 @@ import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import org.jetbrains.mps.openapi.model.SNode;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import java.util.List;
 import java.util.Arrays;
 import org.jetbrains.annotations.NotNull;
-import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 import jetbrains.mps.smodel.builder.SNodeBuilder;
@@ -22,13 +20,11 @@ import org.jetbrains.mps.openapi.language.SConcept;
 public final class IHardwareComponentContent__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getInterfaceConcept(0xc35abfa80db04d42L, 0xbb3ff46112aeb888L, 0x952418520a59fc6L, "org.iets3.components.hardware.structure.IHardwareComponentContent");
 
-  public static final SMethod<SNode> kind_id6LfBX8Yl7Hz = new SMethodBuilder<SNode>(new SJavaCompoundTypeImpl((Class<SNode>) ((Class) Object.class))).name("kind").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(7804632404594031459L).languageId(0xb6713d118449c6e7L, 0xf0fd486f857743e9L).build2();
-  public static final SMethod<SNode> evaluateKindStatic_id4PGMP7xZXtK = new SMethodBuilder<SNode>(new SJavaCompoundTypeImpl((Class<SNode>) ((Class) Object.class))).name("kind").modifiers(9, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5579057590949631856L).languageId(0xb6713d118449c6e7L, 0xf0fd486f857743e9L).build2();
+  public static final SMethod<SNode> kind_id6LfBX8Yl7Hz = new SMethodBuilder<>(SNode.class).name("kind").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(7804632404594031459L).languageId(0xb6713d118449c6e7L, 0xf0fd486f857743e9L).build2();
+  public static final SMethod<SNode> evaluateKindStatic_id4PGMP7xZXtK = new SMethodBuilder<>(SNode.class).name("kind").modifiers(9, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5579057590949631856L).languageId(0xb6713d118449c6e7L, 0xf0fd486f857743e9L).build2();
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(kind_id6LfBX8Yl7Hz, evaluateKindStatic_id4PGMP7xZXtK);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(kind_id6LfBX8Yl7Hz, evaluateKindStatic_id4PGMP7xZXtK);
 
-  private static void ___init___(@NotNull SNode __thisNode__) {
-  }
 
   /*package*/ static SNode kind_id6LfBX8Yl7Hz(@NotNull SNode __thisNode__) {
     return createHardwareKind_dfzxgi_a0a0();
@@ -40,10 +36,6 @@ public final class IHardwareComponentContent__BehaviorDescriptor extends BaseBHD
   /*package*/ IHardwareComponentContent__BehaviorDescriptor() {
   }
 
-  @Override
-  protected void initNode(@NotNull SNode node, @NotNull SConstructor constructor, @Nullable Object[] parameters) {
-    ___init___(node);
-  }
 
   @Override
   protected <T> T invokeSpecial0(@NotNull SNode node, @NotNull SMethod<T> method, @Nullable Object[] parameters) {

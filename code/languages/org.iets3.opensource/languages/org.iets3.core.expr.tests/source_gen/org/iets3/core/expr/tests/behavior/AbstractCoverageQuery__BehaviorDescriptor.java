@@ -8,7 +8,6 @@ import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import org.jetbrains.mps.openapi.model.SNode;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import java.util.List;
 import java.util.Arrays;
@@ -16,7 +15,6 @@ import org.jetbrains.annotations.NotNull;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
 import com.mbeddr.core.base.behavior.AssessmentScope__BehaviorDescriptor;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
-import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 import org.jetbrains.mps.openapi.language.SContainmentLink;
@@ -25,12 +23,10 @@ import org.jetbrains.mps.openapi.language.SConcept;
 public final class AbstractCoverageQuery__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getConcept(0xd441fba0f46b43cdL, 0xb723dad7b65da615L, 0x4f55d70399245979L, "org.iets3.core.expr.tests.structure.AbstractCoverageQuery");
 
-  public static final SMethod<Iterable<SNode>> findAllTestsSuites_id18$bUx5qaUV = new SMethodBuilder<Iterable<SNode>>(new SJavaCompoundTypeImpl((Class<Iterable<SNode>>) ((Class) Object.class))).name("findAllTestsSuites").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(1307222191609786043L).languageId(0xb723dad7b65da615L, 0xd441fba0f46b43cdL).build2();
+  public static final SMethod<Iterable<SNode>> findAllTestsSuites_id18$bUx5qaUV = new SMethodBuilder<>((Class<Iterable<SNode>>) ((Class) Object.class)).name("findAllTestsSuites").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(1307222191609786043L).languageId(0xb723dad7b65da615L, 0xd441fba0f46b43cdL).build2();
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(findAllTestsSuites_id18$bUx5qaUV);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(findAllTestsSuites_id18$bUx5qaUV);
 
-  private static void ___init___(@NotNull SNode __thisNode__) {
-  }
 
   /*package*/ static Iterable<SNode> findAllTestsSuites_id18$bUx5qaUV(@NotNull SNode __thisNode__) {
     return SNodeOperations.ofConcept(AssessmentScope__BehaviorDescriptor.findElements_id7nkDZJXluPi.invoke(SLinkOperations.getTarget(__thisNode__, LINKS.scope$VAmc), SNodeOperations.getModel(__thisNode__)), CONCEPTS.TestSuite$it);
@@ -39,10 +35,6 @@ public final class AbstractCoverageQuery__BehaviorDescriptor extends BaseBHDescr
   /*package*/ AbstractCoverageQuery__BehaviorDescriptor() {
   }
 
-  @Override
-  protected void initNode(@NotNull SNode node, @NotNull SConstructor constructor, @Nullable Object[] parameters) {
-    ___init___(node);
-  }
 
   @Override
   protected <T> T invokeSpecial0(@NotNull SNode node, @NotNull SMethod<T> method, @Nullable Object[] parameters) {

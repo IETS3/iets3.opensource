@@ -7,26 +7,22 @@ import org.jetbrains.mps.openapi.language.SAbstractConcept;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import org.jetbrains.mps.openapi.model.SNode;
 import java.util.List;
 import java.util.Arrays;
 import org.jetbrains.annotations.NotNull;
-import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 
 public final class IMainSlot__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getInterfaceConcept(0xcfaa4966b7d54b69L, 0xb66a309a6e1a7290L, 0x241656660e75685L, "org.iets3.core.expr.base.structure.IMainSlot");
 
-  public static final SMethod<Void> addChildToMainSlot_id91pmpwTPqy = new SMethodBuilder<Void>(new SJavaCompoundTypeImpl(Void.class)).name("addChildToMainSlot").modifiers(12, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(162522551948891810L).languageId(0xb66a309a6e1a7290L, 0xcfaa4966b7d54b69L).build2(SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""), SMethodBuilder.createJavaParameter(String.class, ""));
-  public static final SMethod<String[]> getMultiSlotNames_id91pmpx1Rgq = new SMethodBuilder<String[]>(new SJavaCompoundTypeImpl(String[].class)).name("getMultiSlotNames").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(162522551950996506L).languageId(0xb66a309a6e1a7290L, 0xcfaa4966b7d54b69L).build2();
+  public static final SMethod<Void> addChildToMainSlot_id91pmpwTPqy = new SMethodBuilder<>(Void.TYPE).name("addChildToMainSlot").modifiers(12, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(162522551948891810L).languageId(0xb66a309a6e1a7290L, 0xcfaa4966b7d54b69L).build2(SMethodBuilder.createJavaParameter(SNode.class, "c"), SMethodBuilder.createJavaParameter(String.class, "slot"));
+  public static final SMethod<String[]> getMultiSlotNames_id91pmpx1Rgq = new SMethodBuilder<>(String[].class).name("getMultiSlotNames").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(162522551950996506L).languageId(0xb66a309a6e1a7290L, 0xcfaa4966b7d54b69L).build2();
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(addChildToMainSlot_id91pmpwTPqy, getMultiSlotNames_id91pmpx1Rgq);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(addChildToMainSlot_id91pmpwTPqy, getMultiSlotNames_id91pmpx1Rgq);
 
-  private static void ___init___(@NotNull SNode __thisNode__) {
-  }
 
   /*package*/ static String[] getMultiSlotNames_id91pmpx1Rgq(@NotNull SNode __thisNode__) {
     return null;
@@ -35,10 +31,6 @@ public final class IMainSlot__BehaviorDescriptor extends BaseBHDescriptor {
   /*package*/ IMainSlot__BehaviorDescriptor() {
   }
 
-  @Override
-  protected void initNode(@NotNull SNode node, @NotNull SConstructor constructor, @Nullable Object[] parameters) {
-    ___init___(node);
-  }
 
   @Override
   protected <T> T invokeSpecial0(@NotNull SNode node, @NotNull SMethod<T> method, @Nullable Object[] parameters) {
