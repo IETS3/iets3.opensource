@@ -50,7 +50,7 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
         if (props_VariabilityModelChunk == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
           cpb.presentationByName();
-          cpb.icon(IconContainer.RESOURCE_a0a2a0a4b0g);
+          cpb.icon(IconContainer.RESOURCE_0);
           props_VariabilityModelChunk = cpb.create();
         }
         return props_VariabilityModelChunk;

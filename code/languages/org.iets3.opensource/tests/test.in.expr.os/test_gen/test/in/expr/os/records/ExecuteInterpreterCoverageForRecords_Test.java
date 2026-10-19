@@ -49,11 +49,15 @@ public class ExecuteInterpreterCoverageForRecords_Test extends BaseTransformatio
         // assessmentNode/.getNodeID().toString()
         String nodId = "4372229961988420860";
 
-        AssessmentAnalyzer helper = new AssessmentAnalyzer(nodId, mdlName, mdlId, myProject.getRepository());
-        SNode ass = helper.assessment;
+        AssessmentAnalyzer analyzer = new AssessmentAnalyzer(nodId, mdlName, mdlId, myProject.getRepository());
+        SNode ass = analyzer.assessment;
         assert (ass != null);
 
-        helper.checkCoverage();
+        try {
+          analyzer.checkCoverage(myProject);
+        } finally {
+          analyzer.dispose();
+        }
       });
     }
 

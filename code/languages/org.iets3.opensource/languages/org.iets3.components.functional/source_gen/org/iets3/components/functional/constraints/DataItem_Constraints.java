@@ -30,7 +30,7 @@ public class DataItem_Constraints extends BaseConstraintsDescriptor {
         boolean result = staticCanBeAnAncestor(context.getNode(), context.getChildNode(), context.getChildConcept(), context.getParentNode(), context.getLink());
 
         if (!(result) && checkingNodeContext != null) {
-          checkingNodeContext.setBreakingNode(canBeRootBreakingPoint);
+          checkingNodeContext.setBreakingNode(canBeAncestorBreakingPoint);
         }
 
         return result;
@@ -43,7 +43,7 @@ public class DataItem_Constraints extends BaseConstraintsDescriptor {
     }
     return true;
   }
-  private static final SNodePointer canBeRootBreakingPoint = new SNodePointer("r:f851cd61-8f8d-4520-ace8-e456afe93904(org.iets3.components.functional.constraints)", "1844547991031620340");
+  private static final SNodePointer canBeAncestorBreakingPoint = new SNodePointer("r:f851cd61-8f8d-4520-ace8-e456afe93904(org.iets3.components.functional.constraints)", "1844547991031620340");
 
   private static final class CONCEPTS {
     /*package*/ static final SConcept DataItem$8n = MetaAdapterFactory.getConcept(0x257976063fb647b8L, 0xbc3cb4384df7da44L, 0x6c4f9fd23e4bfa58L, "org.iets3.components.functional.structure.DataItem");

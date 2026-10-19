@@ -16,6 +16,7 @@ import java.util.List;
 import java.util.Random;
 import java.util.Set;
 import org.jetbrains.mps.openapi.model.EditableSModel;
+import org.jetbrains.mps.openapi.persistence.ModelRoot;
 import java.util.Arrays;
 import org.jetbrains.annotations.NotNull;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations;
@@ -29,9 +30,7 @@ import jetbrains.mps.model.ModelDeleteHelper;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SModelOperations;
 import org.iets3.core.expr.tests.plugin.MutationRegistry;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.IAttributeDescriptor;
-import org.jetbrains.mps.openapi.persistence.ModelRoot;
 import jetbrains.mps.persistence.DefaultModelRoot;
-import jetbrains.mps.project.SModuleOperations;
 import jetbrains.mps.smodel.ModelImports;
 import jetbrains.mps.smodel.CopyUtil;
 import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
@@ -54,10 +53,11 @@ public final class MutationEngine__BehaviorDescriptor extends BaseBHDescriptor {
   public static final SMethod<Void> makeChange_id3_xsRJ4wolt = new SMethodBuilder<Void>(new SJavaCompoundTypeImpl(Void.class)).name("makeChange").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(4134712908317820253L).languageId(0xb723dad7b65da615L, 0xd441fba0f46b43cdL).build2(SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""), SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""), SMethodBuilder.createJavaParameter((Class<Set<String>>) ((Class) Object.class), ""), SMethodBuilder.createJavaParameter((Class<List<SNode>>) ((Class) Object.class), ""), SMethodBuilder.createJavaParameter(Random.class, ""));
   public static final SMethod<SNode> replaceWith_id1qjbRymQQWe = new SMethodBuilder<SNode>(new SJavaCompoundTypeImpl((Class<SNode>) ((Class) Object.class))).name("replaceWith").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(1626696085384425230L).languageId(0xb723dad7b65da615L, 0xd441fba0f46b43cdL).build2(SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""), SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""), SMethodBuilder.createJavaParameter((Class<Set<String>>) ((Class) Object.class), ""));
   public static final SMethod<Void> deleteAllMutationModels_id1qjbRymWTp$ = new SMethodBuilder<Void>(new SJavaCompoundTypeImpl(Void.class)).name("deleteAllMutationModels").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(1626696085386008164L).languageId(0xb723dad7b65da615L, 0xd441fba0f46b43cdL).build2();
+  /*package*/ static final SMethod<EditableSModel> createModelWithAdjustments_id7ah6lNITZbV = new SMethodBuilder<EditableSModel>(new SJavaCompoundTypeImpl(EditableSModel.class)).name("createModelWithAdjustments").modifiers(0, AccessPrivileges.PRIVATE).concept(CONCEPT).baseMethodId(8255407478882693883L).languageId(0xb723dad7b65da615L, 0xd441fba0f46b43cdL).build2(SMethodBuilder.createJavaParameter(String.class, ""), SMethodBuilder.createJavaParameter(ModelRoot.class, ""));
   /*package*/ static final SMethod<EditableSModel> createClonedModel_id3_xsRJ4wgFT = new SMethodBuilder<EditableSModel>(new SJavaCompoundTypeImpl(EditableSModel.class)).name("createClonedModel").modifiers(0, AccessPrivileges.PRIVATE).concept(CONCEPT).baseMethodId(4134712908317788921L).languageId(0xb723dad7b65da615L, 0xd441fba0f46b43cdL).build2(SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""), SMethodBuilder.createJavaParameter(String.class, ""));
   public static final SMethod<String> nodeIdentifier_id1qjbRynmQXx = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("nodeIdentifier").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(1626696085392813921L).languageId(0xb723dad7b65da615L, 0xd441fba0f46b43cdL).build2(SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""));
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(mutate_id3_xsRJ4oOrE, optionallyDelete_id1qjbRymONRy, findAdapterByInternalID_id3_xsRJ4LDk5, findRandomMutator_id7WSgHRL8UlQ, findRandomNode_id7WSgHRL9pFP, makeChange_id3_xsRJ4wolt, replaceWith_id1qjbRymQQWe, deleteAllMutationModels_id1qjbRymWTp$, createClonedModel_id3_xsRJ4wgFT, nodeIdentifier_id1qjbRynmQXx);
+  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(mutate_id3_xsRJ4oOrE, optionallyDelete_id1qjbRymONRy, findAdapterByInternalID_id3_xsRJ4LDk5, findRandomMutator_id7WSgHRL8UlQ, findRandomNode_id7WSgHRL9pFP, makeChange_id3_xsRJ4wolt, replaceWith_id1qjbRymQQWe, deleteAllMutationModels_id1qjbRymWTp$, createModelWithAdjustments_id7ah6lNITZbV, createClonedModel_id3_xsRJ4wgFT, nodeIdentifier_id1qjbRynmQXx);
 
   private static void ___init___(@NotNull SNode __thisNode__) {
     SPropertyOperations.assign(__thisNode__, PROPS.numberOfMutations$E8ru, 10);
@@ -135,14 +135,17 @@ public final class MutationEngine__BehaviorDescriptor extends BaseBHDescriptor {
       SNodeOperations.deleteNode(it);
     });
   }
+  /*package*/ static EditableSModel createModelWithAdjustments_id7ah6lNITZbV(@NotNull SNode __thisNode__, @NotNull String name, @NotNull ModelRoot root) {
+    EditableSModel model = ((EditableSModel) root.createModel(name));
+    model.save();
+    return model;
+  }
   /*package*/ static EditableSModel createClonedModel_id3_xsRJ4wgFT(@NotNull SNode __thisNode__, SNode adapter, String name) {
     SModel orgModel = adapter.getModel();
     ModelRoot mr = adapter.getModel().getModelRoot();
     EditableSModel result = null;
     if (mr instanceof DefaultModelRoot) {
-      result = SModuleOperations.createModelWithAdjustments(name, mr);
-    } else {
-      result = SModuleOperations.createModelWithAdjustments(name, mr);
+      result = MutationEngine__BehaviorDescriptor.createModelWithAdjustments_id7ah6lNITZbV.invokeSpecial(__thisNode__, name, mr);
     }
     ModelImports imports = new ModelImports(result);
     imports.copyImportedModelsFrom(orgModel);
@@ -210,8 +213,10 @@ public final class MutationEngine__BehaviorDescriptor extends BaseBHDescriptor {
         deleteAllMutationModels_id1qjbRymWTp$(node);
         return null;
       case 8:
-        return (T) ((EditableSModel) createClonedModel_id3_xsRJ4wgFT(node, (SNode) parameters[0], (String) parameters[1]));
+        return (T) ((EditableSModel) createModelWithAdjustments_id7ah6lNITZbV(node, (String) parameters[0], (ModelRoot) parameters[1]));
       case 9:
+        return (T) ((EditableSModel) createClonedModel_id3_xsRJ4wgFT(node, (SNode) parameters[0], (String) parameters[1]));
+      case 10:
         return (T) ((String) nodeIdentifier_id1qjbRynmQXx(node, (SNode) parameters[0]));
       default:
         throw new BHMethodNotFoundException(this, method);
