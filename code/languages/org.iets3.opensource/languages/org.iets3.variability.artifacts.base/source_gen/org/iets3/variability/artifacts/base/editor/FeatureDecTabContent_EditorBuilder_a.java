@@ -175,6 +175,7 @@ import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
   }
   private EditorCell createComponent_0() {
     EditorCell editorCell = getCellFactory().createEditorComponentCell(myNode, "org.iets3.variability.artifacts.base.editor.PresenceCondition");
+    FeatureDecTabContent_PresenceCondition_ActionMap.setCellActions(editorCell, myNode, getEditorContext());
     return editorCell;
   }
   public HeaderGrid createEditorCellHeader_240exa_a0a0(final EditorContext editorContext, final SNode node) {
