@@ -10,6 +10,7 @@ The project does _not_ follow Semantic Versioning and the changes are documented
 ### Added
 
 - Build: `checkmodels` (MPS model checker) now runs as part of `check`/`build` and fails the build on model-check errors.
+- Interpreter test runner: JUnit reports link to the tested nodes – suite properties `nodeRef`/`nodeRef.<testcase>` hold the node references, failure messages contain the node URL of the failing test item
 
 ### Fixed
 
