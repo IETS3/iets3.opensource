@@ -91,7 +91,9 @@ val buildLanguages = tasks.register<BuildLanguages>("buildLanguages") {
 fun BuildLanguages.runInterpreterTests(antScript: String, resultsDir: Provider<Directory>) {
     group = "verification"
     script = antScript
-    targets("generate", "build")
+    // 'clean' drops the MPS system dir of the previous run: its cached file contents would otherwise hide
+    // model changes made since then (headless MPS does not refresh them on startup)
+    targets("clean", "generate", "build")
     doFirst { delete(resultsDir) }
     doLast {
         val results = resultsDir.get().asFile
@@ -139,6 +141,14 @@ val runInterpretedLanguageTests = tasks.register<BuildLanguages>("runInterpreted
 
 tasks.check {
     dependsOn(runInterpretedTests, runInterpretedLanguageTests)
+}
+
+// Demo of a failing run - not part of 'check'. HeadlessInterpreterTest.failingTests contains a test that fails
+// on purpose; the task fails and the report shows the failure with its node URL and the nodeRef properties.
+tasks.register<BuildLanguages>("runFailingInterpretedTests") {
+    dependsOn(setup)
+    description = "Interpret HeadlessInterpreterTest.failingTests, which contains a broken test - this task is expected to fail."
+    runInterpreterTests("run-interpreted-failing-tests.xml", layout.buildDirectory.dir("test-results/interpreted-failing"))
 }
 
 tasks.assemble {
