@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<debug-info version="2">
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123140:jetbrains.mps.baseLanguage.structure.ConstructorDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123155:jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123165:jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1070462154015:jetbrains.mps.baseLanguage.structure.StaticFieldDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1070475587102:jetbrains.mps.baseLanguage.structure.SuperConstructorInvocation" />
+  <root nodeRef="r:eb9350e2-c2b3-4be1-b6f7-a55bf39714b3(test.org.iets3.variability.artifacts.base.dectab@tests)/2085186178546636677">
+    <file name="InsertRowAboveInNonEmptyTable_Test.java">
+      <node id="2085186178546636677" at="19,47,20,60" concept="4" />
+      <node id="2085186178546636677" at="24,69,25,36" concept="1" />
+      <node id="2085186178546636677" at="30,52,31,19" concept="4" />
+      <node id="2085186178546636677" at="35,51,36,72" concept="1" />
+      <node id="3773677069728318395" at="36,72,37,75" concept="1" />
+      <node id="2085186178546636677" at="16,0,18,0" concept="3" trace="ourParametersCacheExtension" />
+      <node id="2085186178546636677" at="19,0,22,0" concept="0" trace="InsertRowAboveInNonEmptyTable_Test#()V" />
+      <node id="2085186178546636677" at="30,0,33,0" concept="0" trace="TestBody#(Ljetbrains/mps/lang/test/runtime/TransformationTest;)V" />
+      <node id="2085186178546636677" at="23,0,27,0" concept="2" trace="test_InsertRowAboveInNonEmptyTable#()V" />
+      <node id="2085186178546636677" at="34,0,39,0" concept="2" trace="testMethodImpl#()V" />
+      <scope id="2085186178546636677" at="19,47,20,60" />
+      <scope id="2085186178546636677" at="24,69,25,36" />
+      <scope id="2085186178546636677" at="30,52,31,19" />
+      <scope id="2085186178546636677" at="35,51,37,75" />
+      <scope id="2085186178546636677" at="19,0,22,0" />
+      <scope id="2085186178546636677" at="30,0,33,0">
+        <var name="owner" id="2085186178546636677" />
+      </scope>
+      <scope id="2085186178546636677" at="23,0,27,0" />
+      <scope id="2085186178546636677" at="34,0,39,0" />
+      <unit id="2085186178546636677" at="28,0,40,0" name="test.org.iets3.variability.artifacts.base.dectab.InsertRowAboveInNonEmptyTable_Test$TestBody" />
+      <unit id="2085186178546636677" at="14,0,41,0" name="test.org.iets3.variability.artifacts.base.dectab.InsertRowAboveInNonEmptyTable_Test" />
+    </file>
+  </root>
+  <root nodeRef="r:eb9350e2-c2b3-4be1-b6f7-a55bf39714b3(test.org.iets3.variability.artifacts.base.dectab@tests)/2715203218818903122">
+    <file name="InsertRowBelowInNonEmptyTable_Test.java">
+      <node id="2715203218818903122" at="19,47,20,60" concept="4" />
+      <node id="2715203218818903122" at="24,69,25,36" concept="1" />
+      <node id="2715203218818903122" at="30,52,31,19" concept="4" />
+      <node id="2715203218818903122" at="35,51,36,72" concept="1" />
+      <node id="2715203218819179216" at="36,72,37,69" concept="1" />
+      <node id="2715203218818903122" at="16,0,18,0" concept="3" trace="ourParametersCacheExtension" />
+      <node id="2715203218818903122" at="19,0,22,0" concept="0" trace="InsertRowBelowInNonEmptyTable_Test#()V" />
+      <node id="2715203218818903122" at="30,0,33,0" concept="0" trace="TestBody#(Ljetbrains/mps/lang/test/runtime/TransformationTest;)V" />
+      <node id="2715203218818903122" at="23,0,27,0" concept="2" trace="test_InsertRowBelowInNonEmptyTable#()V" />
+      <node id="2715203218818903122" at="34,0,39,0" concept="2" trace="testMethodImpl#()V" />
+      <scope id="2715203218818903122" at="19,47,20,60" />
+      <scope id="2715203218818903122" at="24,69,25,36" />
+      <scope id="2715203218818903122" at="30,52,31,19" />
+      <scope id="2715203218818903122" at="35,51,37,69" />
+      <scope id="2715203218818903122" at="19,0,22,0" />
+      <scope id="2715203218818903122" at="30,0,33,0">
+        <var name="owner" id="2715203218818903122" />
+      </scope>
+      <scope id="2715203218818903122" at="23,0,27,0" />
+      <scope id="2715203218818903122" at="34,0,39,0" />
+      <unit id="2715203218818903122" at="28,0,40,0" name="test.org.iets3.variability.artifacts.base.dectab.InsertRowBelowInNonEmptyTable_Test$TestBody" />
+      <unit id="2715203218818903122" at="14,0,41,0" name="test.org.iets3.variability.artifacts.base.dectab.InsertRowBelowInNonEmptyTable_Test" />
+    </file>
+  </root>
+  <root nodeRef="r:eb9350e2-c2b3-4be1-b6f7-a55bf39714b3(test.org.iets3.variability.artifacts.base.dectab@tests)/2715203218819257015">
+    <file name="InsertFirstRowInEmptyTable_Test.java">
+      <node id="2715203218819257015" at="19,44,20,60" concept="4" />
+      <node id="2715203218819257015" at="24,66,25,36" concept="1" />
+      <node id="2715203218819257015" at="30,52,31,19" concept="4" />
+      <node id="2715203218819257015" at="35,51,36,72" concept="1" />
+      <node id="2715203218820390939" at="36,72,37,69" concept="1" />
+      <node id="2715203218819257015" at="16,0,18,0" concept="3" trace="ourParametersCacheExtension" />
+      <node id="2715203218819257015" at="19,0,22,0" concept="0" trace="InsertFirstRowInEmptyTable_Test#()V" />
+      <node id="2715203218819257015" at="30,0,33,0" concept="0" trace="TestBody#(Ljetbrains/mps/lang/test/runtime/TransformationTest;)V" />
+      <node id="2715203218819257015" at="23,0,27,0" concept="2" trace="test_InsertFirstRowInEmptyTable#()V" />
+      <node id="2715203218819257015" at="34,0,39,0" concept="2" trace="testMethodImpl#()V" />
+      <scope id="2715203218819257015" at="19,44,20,60" />
+      <scope id="2715203218819257015" at="24,66,25,36" />
+      <scope id="2715203218819257015" at="30,52,31,19" />
+      <scope id="2715203218819257015" at="35,51,37,69" />
+      <scope id="2715203218819257015" at="19,0,22,0" />
+      <scope id="2715203218819257015" at="30,0,33,0">
+        <var name="owner" id="2715203218819257015" />
+      </scope>
+      <scope id="2715203218819257015" at="23,0,27,0" />
+      <scope id="2715203218819257015" at="34,0,39,0" />
+      <unit id="2715203218819257015" at="28,0,40,0" name="test.org.iets3.variability.artifacts.base.dectab.InsertFirstRowInEmptyTable_Test$TestBody" />
+      <unit id="2715203218819257015" at="14,0,41,0" name="test.org.iets3.variability.artifacts.base.dectab.InsertFirstRowInEmptyTable_Test" />
+    </file>
+  </root>
+  <root nodeRef="r:eb9350e2-c2b3-4be1-b6f7-a55bf39714b3(test.org.iets3.variability.artifacts.base.dectab@tests)/3968962797177465021">
+    <file name="DeleteOnlyRowKeepsRow_Test.java">
+      <node id="3968962797177465021" at="19,39,20,60" concept="4" />
+      <node id="3968962797177465021" at="24,61,25,36" concept="1" />
+      <node id="3968962797177465021" at="30,52,31,19" concept="4" />
+      <node id="3968962797177465021" at="35,51,36,72" concept="1" />
+      <node id="486212493619283784" at="36,72,37,69" concept="1" />
+      <node id="3968962797177465021" at="16,0,18,0" concept="3" trace="ourParametersCacheExtension" />
+      <node id="3968962797177465021" at="19,0,22,0" concept="0" trace="DeleteOnlyRowKeepsRow_Test#()V" />
+      <node id="3968962797177465021" at="30,0,33,0" concept="0" trace="TestBody#(Ljetbrains/mps/lang/test/runtime/TransformationTest;)V" />
+      <node id="3968962797177465021" at="23,0,27,0" concept="2" trace="test_DeleteOnlyRowKeepsRow#()V" />
+      <node id="3968962797177465021" at="34,0,39,0" concept="2" trace="testMethodImpl#()V" />
+      <scope id="3968962797177465021" at="19,39,20,60" />
+      <scope id="3968962797177465021" at="24,61,25,36" />
+      <scope id="3968962797177465021" at="30,52,31,19" />
+      <scope id="3968962797177465021" at="35,51,37,69" />
+      <scope id="3968962797177465021" at="19,0,22,0" />
+      <scope id="3968962797177465021" at="30,0,33,0">
+        <var name="owner" id="3968962797177465021" />
+      </scope>
+      <scope id="3968962797177465021" at="23,0,27,0" />
+      <scope id="3968962797177465021" at="34,0,39,0" />
+      <unit id="3968962797177465021" at="28,0,40,0" name="test.org.iets3.variability.artifacts.base.dectab.DeleteOnlyRowKeepsRow_Test$TestBody" />
+      <unit id="3968962797177465021" at="14,0,41,0" name="test.org.iets3.variability.artifacts.base.dectab.DeleteOnlyRowKeepsRow_Test" />
+    </file>
+  </root>
+  <root nodeRef="r:eb9350e2-c2b3-4be1-b6f7-a55bf39714b3(test.org.iets3.variability.artifacts.base.dectab@tests)/5254044355712868855">
+    <file name="DeleteLastRowFocusesPreviousFeatureExpr_Test.java">
+      <node id="5254044355712868855" at="19,57,20,60" concept="4" />
+      <node id="5254044355712868855" at="24,79,25,36" concept="1" />
+      <node id="5254044355712868855" at="30,52,31,19" concept="4" />
+      <node id="5254044355712868855" at="35,51,36,72" concept="1" />
+      <node id="5254044355712868879" at="36,72,37,69" concept="1" />
+      <node id="5254044355712868855" at="16,0,18,0" concept="3" trace="ourParametersCacheExtension" />
+      <node id="5254044355712868855" at="19,0,22,0" concept="0" trace="DeleteLastRowFocusesPreviousFeatureExpr_Test#()V" />
+      <node id="5254044355712868855" at="30,0,33,0" concept="0" trace="TestBody#(Ljetbrains/mps/lang/test/runtime/TransformationTest;)V" />
+      <node id="5254044355712868855" at="23,0,27,0" concept="2" trace="test_DeleteLastRowFocusesPreviousFeatureExpr#()V" />
+      <node id="5254044355712868855" at="34,0,39,0" concept="2" trace="testMethodImpl#()V" />
+      <scope id="5254044355712868855" at="19,57,20,60" />
+      <scope id="5254044355712868855" at="24,79,25,36" />
+      <scope id="5254044355712868855" at="30,52,31,19" />
+      <scope id="5254044355712868855" at="35,51,37,69" />
+      <scope id="5254044355712868855" at="19,0,22,0" />
+      <scope id="5254044355712868855" at="30,0,33,0">
+        <var name="owner" id="5254044355712868855" />
+      </scope>
+      <scope id="5254044355712868855" at="23,0,27,0" />
+      <scope id="5254044355712868855" at="34,0,39,0" />
+      <unit id="5254044355712868855" at="28,0,40,0" name="test.org.iets3.variability.artifacts.base.dectab.DeleteLastRowFocusesPreviousFeatureExpr_Test$TestBody" />
+      <unit id="5254044355712868855" at="14,0,41,0" name="test.org.iets3.variability.artifacts.base.dectab.DeleteLastRowFocusesPreviousFeatureExpr_Test" />
+    </file>
+  </root>
+  <root nodeRef="r:eb9350e2-c2b3-4be1-b6f7-a55bf39714b3(test.org.iets3.variability.artifacts.base.dectab@tests)/5254044355712885581">
+    <file name="DeleteFirstRowFocusesNextFeatureExpr_Test.java">
+      <node id="5254044355712885581" at="19,54,20,60" concept="4" />
+      <node id="5254044355712885581" at="24,76,25,36" concept="1" />
+      <node id="5254044355712885581" at="30,52,31,19" concept="4" />
+      <node id="5254044355712885581" at="35,51,36,72" concept="1" />
+      <node id="5254044355712885609" at="36,72,37,69" concept="1" />
+      <node id="5254044355712885581" at="16,0,18,0" concept="3" trace="ourParametersCacheExtension" />
+      <node id="5254044355712885581" at="19,0,22,0" concept="0" trace="DeleteFirstRowFocusesNextFeatureExpr_Test#()V" />
+      <node id="5254044355712885581" at="30,0,33,0" concept="0" trace="TestBody#(Ljetbrains/mps/lang/test/runtime/TransformationTest;)V" />
+      <node id="5254044355712885581" at="23,0,27,0" concept="2" trace="test_DeleteFirstRowFocusesNextFeatureExpr#()V" />
+      <node id="5254044355712885581" at="34,0,39,0" concept="2" trace="testMethodImpl#()V" />
+      <scope id="5254044355712885581" at="19,54,20,60" />
+      <scope id="5254044355712885581" at="24,76,25,36" />
+      <scope id="5254044355712885581" at="30,52,31,19" />
+      <scope id="5254044355712885581" at="35,51,37,69" />
+      <scope id="5254044355712885581" at="19,0,22,0" />
+      <scope id="5254044355712885581" at="30,0,33,0">
+        <var name="owner" id="5254044355712885581" />
+      </scope>
+      <scope id="5254044355712885581" at="23,0,27,0" />
+      <scope id="5254044355712885581" at="34,0,39,0" />
+      <unit id="5254044355712885581" at="28,0,40,0" name="test.org.iets3.variability.artifacts.base.dectab.DeleteFirstRowFocusesNextFeatureExpr_Test$TestBody" />
+      <unit id="5254044355712885581" at="14,0,41,0" name="test.org.iets3.variability.artifacts.base.dectab.DeleteFirstRowFocusesNextFeatureExpr_Test" />
+    </file>
+  </root>
+  <root nodeRef="r:eb9350e2-c2b3-4be1-b6f7-a55bf39714b3(test.org.iets3.variability.artifacts.base.dectab@tests)/6517311039238287677">
+    <file name="BackspaceOnlyRowKeepsRow_Test.java">
+      <node id="6517311039238287677" at="19,42,20,60" concept="4" />
+      <node id="6517311039238287677" at="24,64,25,36" concept="1" />
+      <node id="6517311039238287677" at="30,52,31,19" concept="4" />
+      <node id="6517311039238287677" at="35,51,36,72" concept="1" />
+      <node id="6517311039238287707" at="36,72,37,72" concept="1" />
+      <node id="6517311039238287677" at="16,0,18,0" concept="3" trace="ourParametersCacheExtension" />
+      <node id="6517311039238287677" at="19,0,22,0" concept="0" trace="BackspaceOnlyRowKeepsRow_Test#()V" />
+      <node id="6517311039238287677" at="30,0,33,0" concept="0" trace="TestBody#(Ljetbrains/mps/lang/test/runtime/TransformationTest;)V" />
+      <node id="6517311039238287677" at="23,0,27,0" concept="2" trace="test_BackspaceOnlyRowKeepsRow#()V" />
+      <node id="6517311039238287677" at="34,0,39,0" concept="2" trace="testMethodImpl#()V" />
+      <scope id="6517311039238287677" at="19,42,20,60" />
+      <scope id="6517311039238287677" at="24,64,25,36" />
+      <scope id="6517311039238287677" at="30,52,31,19" />
+      <scope id="6517311039238287677" at="35,51,37,72" />
+      <scope id="6517311039238287677" at="19,0,22,0" />
+      <scope id="6517311039238287677" at="30,0,33,0">
+        <var name="owner" id="6517311039238287677" />
+      </scope>
+      <scope id="6517311039238287677" at="23,0,27,0" />
+      <scope id="6517311039238287677" at="34,0,39,0" />
+      <unit id="6517311039238287677" at="28,0,40,0" name="test.org.iets3.variability.artifacts.base.dectab.BackspaceOnlyRowKeepsRow_Test$TestBody" />
+      <unit id="6517311039238287677" at="14,0,41,0" name="test.org.iets3.variability.artifacts.base.dectab.BackspaceOnlyRowKeepsRow_Test" />
+    </file>
+  </root>
+</debug-info>
+
