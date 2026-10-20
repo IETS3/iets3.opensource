@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<product version="3" modelHash="-2eyrd6asm4ct4jzwa834jxkihrif61d">
+<product version="3" modelHash="-ahdscdqrfia8wv19znpmtj16cqxq4k2">
   <files names="Error.java:Failure.java:ICustomRunnerConfig.java:IInterpreterTestReporter.java:InterpreterTestReporter.java:NullXMLReporter.java:ObjectFactory.java:Properties.java:Property.java:TestExecutorConfigForCommandLine.java:TestExecutorConfigForIDE.java:TestModelExecutor.java:Testcase.java:Testsuite.java:Testsuites.java" />
 </product>
 

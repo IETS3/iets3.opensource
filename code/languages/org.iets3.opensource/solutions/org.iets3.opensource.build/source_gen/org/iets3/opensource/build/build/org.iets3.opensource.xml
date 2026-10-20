@@ -4454,6 +4454,7 @@
         <depends>com.intellij.modules.mps</depends>
         <depends>jetbrains.mps.execution.configurations</depends>
         <depends>org.iets3.core.os</depends>
+        <depends>jetbrains.mps.ide.httpsupport</depends>
         
         <extensions defaultExtensionNs="com.intellij">
           <mps.LanguageLibrary dir="/languages" />
@@ -4503,6 +4504,7 @@
           <module ref="bf659d6c-5638-4ea1-972b-4d492b5a91f2(jetbrains.mps.execution.configurations.implementation.plugin)" kind="cl" />
           <module ref="04b376d5-fc16-403b-a344-c68b30193c6a(jetbrains.mps.execution.library)" kind="cl" />
           <module ref="019b622b-0aef-4dd3-86d0-4eef01f3f6bb(jetbrains.mps.ide)" kind="cl" />
+          <module ref="ae6d8005-36be-4cb6-945b-8c8cfc033c51(jetbrains.mps.ide.httpsupport.runtime)" kind="cl" />
           <module ref="ceab5195-25ea-4f22-9b92-103b95ca8c0c(jetbrains.mps.lang.core)" kind="cl" />
           <module ref="86ef8290-12bb-4ca7-947f-093788f263a9(jetbrains.mps.lang.project)" kind="cl" />
           <module ref="b0f8641f-bd77-4421-8425-30d9088a82f7(org.apache.commons)" kind="cl" />
@@ -15972,6 +15974,7 @@
         <fileset file="${artifacts.mps}/plugins/mps-execution-configurations/languages/jetbrains.mps.baselanguage.unitTest.launcher.jar" />
         <fileset file="${artifacts.mps}/plugins/mps-execution-configurations/languages/jetbrains.mps.execution.configurations.implementation.plugin.jar" />
         <fileset file="${artifacts.mps}/plugins/mps-execution-languages/languages/jetbrains.mps.execution.library.jar" />
+        <fileset file="${artifacts.mps}/plugins/mps-httpsupport/solutions/jetbrains.mps.ide.httpsupport.runtime.jar" />
         <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.core.jar" />
         <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.modelapi.jar" />
         <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.project.jar" />
@@ -29420,6 +29423,7 @@
         <fileset file="${artifacts.mps}/plugins/mps-debugger-api/lib/debugger-api.jar" />
         <fileset file="${artifacts.mps}/plugins/mps-debugger-java/lib/debugger-java.jar" />
         <fileset file="${artifacts.mps}/plugins/mps-execution-languages/lib/execution-languages.jar" />
+        <fileset file="${artifacts.mps}/plugins/mps-httpsupport/lib/httpsupport.jar" />
         <fileset file="${artifacts.mps}/lib/mps-persistence.jar" />
         <fileset file="${artifacts.mps}/lib/mps-project-check.jar" />
         <pathelement path="${build.tmp}/java/out/org.iets3.core.junit.interpreter.run.configuration" />

@@ -695,5 +695,126 @@
       </node>
     </node>
   </node>
+  <node concept="1l3spW" id="1k6Zbp5XNAx">
+    <property role="TrG5h" value="headless-interpreter-sample.interpreted.failing.tests" />
+    <property role="turDy" value="run-interpreted-failing-tests.xml" />
+    <property role="2DA0ip" value="../../.." />
+    <node concept="3b7kt6" id="1k6Zbp5XNAy" role="10PD9s" />
+    <node concept="_l39y" id="1k6Zbp5XNAz" role="10PD9s" />
+    <node concept="398rNT" id="1k6Zbp5XNA$" role="1l3spd">
+      <property role="TrG5h" value="path.project" />
+      <node concept="55IIr" id="1k6Zbp5XNA_" role="398pKh">
+        <node concept="2Ry0Ak" id="1k6Zbp5XNAA" role="iGT6I">
+          <property role="2Ry0Am" value="" />
+        </node>
+      </node>
+    </node>
+    <node concept="398rNT" id="1k6Zbp5XNAB" role="1l3spd">
+      <property role="TrG5h" value="path.modules" />
+      <node concept="398BVA" id="1k6Zbp5XNAC" role="398pKh">
+        <ref role="398BVh" node="1k6Zbp5XNA$" resolve="path.project" />
+        <node concept="2Ry0Ak" id="1k6Zbp5XNAD" role="iGT6I">
+          <property role="2Ry0Am" value="mpsModules" />
+        </node>
+      </node>
+    </node>
+    <node concept="398rNT" id="1k6Zbp5XNAE" role="1l3spd">
+      <property role="TrG5h" value="path.build" />
+      <node concept="398BVA" id="1k6Zbp5XNAF" role="398pKh">
+        <ref role="398BVh" node="1k6Zbp5XNA$" resolve="path.project" />
+        <node concept="2Ry0Ak" id="1k6Zbp5XNAG" role="iGT6I">
+          <property role="2Ry0Am" value="build" />
+        </node>
+      </node>
+    </node>
+    <node concept="398rNT" id="1k6Zbp5XNAH" role="1l3spd">
+      <property role="TrG5h" value="path.dependencies" />
+      <node concept="398BVA" id="1k6Zbp5XNAI" role="398pKh">
+        <ref role="398BVh" node="1k6Zbp5XNAE" resolve="path.build" />
+        <node concept="2Ry0Ak" id="1k6Zbp5XNAJ" role="iGT6I">
+          <property role="2Ry0Am" value="dependencies" />
+        </node>
+      </node>
+    </node>
+    <node concept="398rNT" id="1k6Zbp5XNAK" role="1l3spd">
+      <property role="TrG5h" value="mps_home" />
+      <node concept="398BVA" id="1k6Zbp5XNAL" role="398pKh">
+        <ref role="398BVh" node="1k6Zbp5XNAE" resolve="path.build" />
+        <node concept="2Ry0Ak" id="1k6Zbp5XNAM" role="iGT6I">
+          <property role="2Ry0Am" value="mps" />
+        </node>
+      </node>
+    </node>
+    <node concept="398rNT" id="1k6Zbp5XNAN" role="1l3spd">
+      <property role="TrG5h" value="test.output.dir" />
+      <node concept="398BVA" id="1k6Zbp5XNAO" role="398pKh">
+        <ref role="398BVh" node="1k6Zbp5XNAE" resolve="path.build" />
+        <node concept="2Ry0Ak" id="1k6Zbp5XNAP" role="iGT6I">
+          <property role="2Ry0Am" value="test-results" />
+          <node concept="2Ry0Ak" id="1k6Zbp5XNAQ" role="2Ry0An">
+            <property role="2Ry0Am" value="interpreted-failing" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="2sgV4H" id="1k6Zbp5XNAR" role="1l3spa">
+      <ref role="1l3spb" to="ffeo:3IKDaVZmzS6" resolve="mps" />
+      <node concept="398BVA" id="1k6Zbp5XNAS" role="2JcizS">
+        <ref role="398BVh" node="1k6Zbp5XNAK" resolve="mps_home" />
+      </node>
+    </node>
+    <node concept="2sgV4H" id="1k6Zbp5XNAT" role="1l3spa">
+      <ref role="1l3spb" to="p6ld:4i9pOwKTFVe" resolve="mbeddr" />
+      <node concept="398BVA" id="1k6Zbp5XNAU" role="2JcizS">
+        <ref role="398BVh" node="1k6Zbp5XNAH" resolve="path.dependencies" />
+        <node concept="2Ry0Ak" id="1k6Zbp5XNAV" role="iGT6I">
+          <property role="2Ry0Am" value="mbeddr" />
+        </node>
+      </node>
+    </node>
+    <node concept="2sgV4H" id="1k6Zbp5XNAW" role="1l3spa">
+      <ref role="1l3spb" to="al5i:3AVJcIMlF8l" resolve="com.mbeddr.platform" />
+      <node concept="398BVA" id="1k6Zbp5XNAX" role="2JcizS">
+        <ref role="398BVh" node="1k6Zbp5XNAH" resolve="path.dependencies" />
+        <node concept="2Ry0Ak" id="1k6Zbp5XNAY" role="iGT6I">
+          <property role="2Ry0Am" value="com.mbeddr.platform" />
+        </node>
+      </node>
+    </node>
+    <node concept="2sgV4H" id="1k6Zbp5XNAZ" role="1l3spa">
+      <ref role="1l3spb" to="ip48:5wLtKNeSRPl" resolve="org.iets3.opensource" />
+      <node concept="398BVA" id="1k6Zbp5XNB0" role="2JcizS">
+        <ref role="398BVh" node="1k6Zbp5XNAH" resolve="path.dependencies" />
+        <node concept="2Ry0Ak" id="1k6Zbp5XNB1" role="iGT6I">
+          <property role="2Ry0Am" value="org.iets3.opensource" />
+        </node>
+      </node>
+    </node>
+    <node concept="1YJUtn" id="1k6Zbp5XNB2" role="1hWBAP">
+      <property role="3MWwXZ" value="MainClass" />
+      <ref role="30Vec$" to="ip48:65GA3KslPpV" resolve="org.iets3.opensource.interpreterExecutor" />
+      <node concept="398BVA" id="1k6Zbp5XNB3" role="1YJTkC">
+        <ref role="398BVh" node="1k6Zbp5XNAB" resolve="path.modules" />
+        <node concept="2Ry0Ak" id="1k6Zbp5XNB4" role="iGT6I">
+          <property role="2Ry0Am" value="solutions" />
+          <node concept="2Ry0Ak" id="1k6Zbp5XNB5" role="2Ry0An">
+            <property role="2Ry0Am" value="HeadlessInterpreterTest.failingTests" />
+          </node>
+        </node>
+      </node>
+      <node concept="27ge7" id="1k6Zbp5XNB6" role="2OXz1">
+        <ref role="27ge4" node="1k6Zbp5XNAN" resolve="test.output.dir" />
+      </node>
+      <node concept="NbPM2" id="1k6Zbp5XNB7" role="1psgkv">
+        <node concept="3Mxwew" id="1k6Zbp5XNB8" role="3MwsjC">
+          <property role="3MwjfP" value="-Xss2048k -Xmx4096m" />
+        </node>
+      </node>
+      <node concept="24YFd4" id="1k6Zbp5XNB9" role="5id3f">
+        <ref role="24YFd5" to="ffeo:1jjxZP6JyD_" resolve="jetbrains.mps.console" />
+      </node>
+    </node>
+    <node concept="1l3spV" id="1k6Zbp5XNBa" role="1l3spN" />
+  </node>
 </model>
 

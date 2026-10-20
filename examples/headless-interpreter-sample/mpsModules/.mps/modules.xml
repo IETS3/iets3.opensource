@@ -4,6 +4,7 @@
     <projectModules>
       <modulePath path="$PROJECT_DIR$/languages/HeadlessInterpreterTest/HeadlessInterpreterTest.mpl" folder="02-modules" />
       <modulePath path="$PROJECT_DIR$/solutions/HeadlessInterpreterTest.interpreter/HeadlessInterpreterTest.interpreter.msd" folder="02-modules" />
+      <modulePath path="$PROJECT_DIR$/solutions/HeadlessInterpreterTest.failingTests/HeadlessInterpreterTest.failingTests.msd" folder="02-modules" />
       <modulePath path="$PROJECT_DIR$/solutions/HeadlessInterpreterTest.languageTests/HeadlessInterpreterTest.languageTests.msd" folder="02-modules" />
       <modulePath path="$PROJECT_DIR$/solutions/HeadlessInterpreterTest.tests/HeadlessInterpreterTest.tests.msd" folder="02-modules" />
       <modulePath path="$PROJECT_DIR$/solutions/buildScripts/build.msd" folder="01-build" />
