@@ -45,7 +45,7 @@ public final class InterpreterTestRunnerAspect__BehaviorDescriptor extends BaseB
 
   /*package*/ static Scope getScope_id52_Geb4QDV$(@NotNull SNode __thisNode__, final SAbstractConcept kind, SNode child) {
     if (SConceptOperations.isSubConceptOf(SNodeOperations.asSConcept(kind), CONCEPTS.BuildMacro$qd)) {
-      return ScopeProvider__BehaviorDescriptor.getScope_id52_Geb4QDV$.invoke(SNodeOperations.getNodeAncestor(__thisNode__, CONCEPTS.ScopeProvider$aq, false, false), kind, child);
+      return ScopeProvider__BehaviorDescriptor.getScope_id52_Geb4QDV$.invoke(SNodeOperations.getNodeAncestor(__thisNode__, CONCEPTS.ScopeProvider$aq, false, false), kind, __thisNode__);
     }
     SNode buildProject = SNodeOperations.getNodeAncestor(__thisNode__, CONCEPTS.BuildProject$ae, false, false);
     if (buildProject == null) {
