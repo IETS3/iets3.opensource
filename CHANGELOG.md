@@ -10,6 +10,9 @@ The project does _not_ follow Semantic Versioning and the changes are documented
 ### Added
 - Build: `checkmodels` (MPS model checker) now runs as part of `check`/`build` and fails the build on model-check errors.
 
+### Changed
+- Variability: Better editing of feature decision tables: the caret moves to the new row on insert (Shift+Enter inserts above) and to the neighbouring row on delete. The last row can no longer be deleted.
+
 
 ## September 2026
 
