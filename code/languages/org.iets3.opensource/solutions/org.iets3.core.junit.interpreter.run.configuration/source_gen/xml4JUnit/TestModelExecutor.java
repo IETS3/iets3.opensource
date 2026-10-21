@@ -6,8 +6,6 @@ import jetbrains.mps.logging.Logger;
 import jetbrains.mps.core.platform.Platform;
 import jetbrains.mps.smodel.MPSModuleRepository;
 import org.jetbrains.annotations.NotNull;
-import jetbrains.mps.project.PathMacros;
-import java.util.Set;
 import jetbrains.mps.baseLanguage.unitTest.execution.client.ITestNodeWrapper;
 import jetbrains.mps.internal.collections.runtime.SetSequence;
 import org.jetbrains.mps.openapi.model.SNode;
@@ -16,6 +14,7 @@ import jetbrains.mps.baseLanguage.unitTest.execution.client.TestNodeWrapperFacto
 import jetbrains.mps.internal.collections.runtime.NotNullWhereFilter;
 import jetbrains.mps.internal.collections.runtime.Sequence;
 import org.iets3.core.junit.interpreter.run.configuration.plugin.JUnitInterpreterExecutor;
+import java.util.Set;
 import java.util.HashSet;
 import org.jetbrains.mps.openapi.module.SModule;
 import org.jetbrains.mps.openapi.model.SModel;
@@ -45,35 +44,10 @@ public class TestModelExecutor {
       }
       return false;
     }
-    PathMacros pathMacros = platform.findComponent(PathMacros.class);
-    if (pathMacros == null) {
+    evaluationOutputPath = System.getProperty(config.getOutputPathProperty());
+    if (evaluationOutputPath == null || ((evaluationOutputPath == null ? null : evaluationOutputPath.trim())).length() == 0) {
       if (LOG.isErrorLevel()) {
-        LOG.error("Could not get required path macros!");
-      }
-      return false;
-    }
-    Set<String> macroNames = pathMacros.getNames();
-    if (!(macroNames.contains(config.getOutputPathMacroName()))) {
-      if (LOG.isErrorLevel()) {
-        LOG.error("1. You need to specify '" + config.getOutputPathMacroName() + "' in the macros of your build script.", new IllegalArgumentException());
-      }
-      if (LOG.isErrorLevel()) {
-        LOG.error("2. You need to refer the macro '" + config.getOutputPathMacroName() + "' in the " + config.get(config.keyBuildMacroRef) + " within " + config.get(config.keyCustomRunnerAspect), new IllegalArgumentException());
-      }
-      if (LOG.isErrorLevel()) {
-        LOG.error("\tCurrently found macros:");
-      }
-      macroNames.forEach((name) -> {
-        if (LOG.isErrorLevel()) {
-          LOG.error("\t" + name);
-        }
-      });
-      return false;
-    }
-    evaluationOutputPath = pathMacros.getValue(config.getOutputPathMacroName());
-    if (((evaluationOutputPath == null ? null : evaluationOutputPath.trim())).length() == 0) {
-      if (LOG.isErrorLevel()) {
-        LOG.error("The path variable'" + config.getOutputPathMacroName() + " must contain a legal path");
+        LOG.error("No output folder: system property '" + config.getOutputPathProperty() + "' is not set. Set the output folder of the interpreter test runner in your build script and regenerate the script.");
       }
       return false;
     }
@@ -106,6 +80,10 @@ public class TestModelExecutor {
     final Set<SNode> testItemContainers = SetSequence.fromSet(new HashSet<SNode>());
     repo.getModelAccess().runReadAction(() -> {
       for (SModule existingModule : Sequence.fromIterable(repo.getModules())) {
+        // skip whatever is external / from dependencies
+        if (existingModule.isReadOnly() || existingModule.isPackaged()) {
+          continue;
+        }
         for (SModel mdl : existingModule.getModels()) {
           ListSequence.fromList(SModelOperations.nodes(mdl, CONCEPTS.ITestItemContainer$ow)).visitAll((it) -> SetSequence.fromSet(testItemContainers).addElement(it));
         }

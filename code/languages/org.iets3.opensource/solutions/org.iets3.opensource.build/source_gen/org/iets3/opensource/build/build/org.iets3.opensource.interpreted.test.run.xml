@@ -448,6 +448,7 @@
       <jvmargs>
         <arg value="-Didea.config.path=${build.mps.config.path}" />
         <arg value="-Didea.system.path=${build.mps.system.path}" />
+        <arg value="-Diets3.interpreterExecutor.outputPath=${iets3.interpreterExecutor.genPath}" />
         <arg value="-ea" />
         <arg value="-Xss2048k" />
         <arg value="-Xmx4096m" />

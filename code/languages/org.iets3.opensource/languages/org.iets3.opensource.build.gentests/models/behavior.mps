@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <model ref="r:8f2b5e7d-bab3-409e-93c3-6055bdcd2a68(org.iets3.opensource.build.gentests.behavior)">
   <persistence version="9" />
+  <attribute name="doNotGenerate" value="false" />
   <languages>
     <use id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior" version="2" />
     <use id="d7706f63-9be2-479c-a3da-ae92af1e64d5" name="jetbrains.mps.lang.generator.generationContext" version="2" />
@@ -675,14 +676,12 @@
                     </node>
                   </node>
                 </node>
-                <node concept="3zqWPK" id="5DJjBfj0b7c" role="2OqNvi">
+                <node concept="3zqWPK" id="3NHt1B9Zu$C" role="2OqNvi">
                   <ref role="37wK5l" to="tpcu:52_Geb4QDV$" resolve="getScope" />
-                  <node concept="37vLTw" id="5DJjBfj0b7e" role="37wK5m">
+                  <node concept="37vLTw" id="3NHt1B9Zu$E" role="37wK5m">
                     <ref role="3cqZAo" node="7Lttyc2W1LD" resolve="kind" />
                   </node>
-                  <node concept="37vLTw" id="5DJjBfj0b7f" role="37wK5m">
-                    <ref role="3cqZAo" node="7Lttyc2W1LF" resolve="child" />
-                  </node>
+                  <node concept="13iPFW" id="3NHt1B9Zu$F" role="37wK5m" />
                 </node>
               </node>
             </node>

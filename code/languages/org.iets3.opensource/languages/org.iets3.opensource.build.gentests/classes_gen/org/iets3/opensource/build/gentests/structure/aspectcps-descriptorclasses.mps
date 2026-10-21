@@ -1760,9 +1760,7 @@
                     </node>
                     <node concept="liA8E" id="9q" role="2OqNvi">
                       <ref role="37wK5l" to="bzg8:~ConceptDescriptorBuilder2$AggregationLinkBuilder.optional(boolean)" resolve="optional" />
-                      <node concept="3clFbT" id="9$" role="37wK5m">
-                        <property role="3clFbU" value="true" />
-                      </node>
+                      <node concept="3clFbT" id="9$" role="37wK5m" />
                     </node>
                   </node>
                   <node concept="liA8E" id="9o" role="2OqNvi">
