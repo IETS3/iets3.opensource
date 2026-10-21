@@ -17,6 +17,8 @@ import java.util.regex.Matcher;
 import java.util.TimeZone;
 import java.net.InetAddress;
 import java.net.UnknownHostException;
+import org.jetbrains.mps.openapi.persistence.PersistenceFacade;
+import jetbrains.mps.ide.httpsupport.runtime.base.HttpSupportUtil;
 import java.util.regex.Pattern;
 
 /**
@@ -50,6 +52,7 @@ public class InterpreterTestReporter implements IInterpreterTestReporter {
     currentSuite.setSystemErr("");
     currentSuite.setSystemOut("");
     root.getTestsuite().add(currentSuite);
+    addNodeReference("nodeRef", node);
   }
   @Override
   public void testSuiteFinished(String testSuiteFQName, SNode node) {
@@ -65,6 +68,7 @@ public class InterpreterTestReporter implements IInterpreterTestReporter {
     currentCase.setClassname(prefix(testCaseFQname));
     currentCase.setTime("0");
     currentSuite.getTestcase().add(currentCase);
+    addNodeReference("nodeRef." + currentCase.getName(), node);
   }
   @Override
   public void testCaseFinished(String testCaseFQname, SNode node) {
@@ -73,7 +77,7 @@ public class InterpreterTestReporter implements IInterpreterTestReporter {
   @Override
   public void testCaseFailed(String testCaseFQname, SNode node, String msg, String longMsg) {
     Failure failure = new Failure();
-    failure.setMessage(msg);
+    failure.setMessage(msg + nodeUrlSuffix(node));
     currentCase.getFailure().add(failure);
     currentCase.incFailure();
   }
@@ -173,6 +177,30 @@ public class InterpreterTestReporter implements IInterpreterTestReporter {
     }
   }
 
+
+  private void addNodeReference(String name, SNode node) {
+    if (node == null) {
+      return;
+    }
+    if (this.currentSuite.getProperties() == null) {
+      this.currentSuite.setProperties(new Properties());
+    }
+    Property property = new Property();
+    property.setName(name);
+    property.setValue(PersistenceFacade.getInstance().asString(node.getReference()));
+    this.currentSuite.getProperties().getProperty().add(property);
+  }
+
+  private String nodeUrlSuffix(SNode node) {
+    if (node == null) {
+      return "";
+    }
+    try {
+      return " [" + HttpSupportUtil.getURL(node) + "]";
+    } catch (RuntimeException ignored) {
+      return "";
+    }
+  }
   private static final Pattern REGEXP = Pattern.compile(".+\\.([^\\.]+)$", 0);
   private static final Pattern REGEXP1 = Pattern.compile("(.*)\\.[^\\.]+$", 0);
 }

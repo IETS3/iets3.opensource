@@ -1182,6 +1182,9 @@
       <node concept="m$f5U" id="2MB0tFbUQUF" role="m$_yh">
         <ref role="m$f5T" node="5loVtKNYYlW" resolve="org.iets3.core.junit.interpreter.run.configuration" />
       </node>
+      <node concept="m$_yC" id="3sFEKbxoGfP" role="m$_yJ">
+        <ref role="m$_y1" to="ffeo:5xhjlkpPhJu" resolve="jetbrains.mps.ide.httpsupport" />
+      </node>
     </node>
     <node concept="m$_wf" id="5Ky8UT4nhy3" role="3989C9">
       <property role="m$_wk" value="org.iets3.core.expr.genjava" />
@@ -3048,6 +3051,11 @@
         <node concept="1SiIV0" id="62vWlLjQioQ" role="3bR37C">
           <node concept="3bR9La" id="62vWlLjQioR" role="1SiIV1">
             <ref role="3bR37D" to="90a9:PE3B26QCrP" resolve="org.apache.commons" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="3sFEKbxoGfN" role="3bR37C">
+          <node concept="3bR9La" id="3sFEKbxoGfO" role="1SiIV1">
+            <ref role="3bR37D" to="ffeo:xSXmQZAqVi" resolve="jetbrains.mps.ide.httpsupport.runtime" />
           </node>
         </node>
       </node>

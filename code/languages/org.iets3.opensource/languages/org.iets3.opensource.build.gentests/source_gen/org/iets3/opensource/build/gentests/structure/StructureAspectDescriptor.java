@@ -83,7 +83,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.origin("r:2ce4b587-5587-43f7-8005-e3fb84f231b0(org.iets3.opensource.build.gentests.structure)/8961448726281507188");
     b.version(3);
     b.aggregate("path", 0x7c5d762302e2e30bL).target(0x798100da4f0a421aL, 0xb99171f8c50ce5d2L, 0x668c6cfbafacdc3eL).optional(true).ordered(true).multiple(true).origin("8961448726281511691").done();
-    b.aggregate("outputPath", 0x53af4b8a517c934bL).target(0x9d000fbdbdca4a46L, 0xb39bc5ba9e79b38cL, 0x53af4b8a51b2480dL).optional(true).ordered(true).multiple(false).origin("6030121483517072203").done();
+    b.aggregate("outputPath", 0x53af4b8a517c934bL).target(0x9d000fbdbdca4a46L, 0xb39bc5ba9e79b38cL, 0x53af4b8a51b2480dL).optional(false).ordered(true).multiple(false).origin("6030121483517072203").done();
     b.aggregate("jvmArgs", 0x321879066b697c19L).target(0x798100da4f0a421aL, 0xb99171f8c50ce5d2L, 0x3cca41cd0fe51d4fL).optional(true).ordered(true).multiple(false).origin("3609768169816292377").done();
     b.alias("run interpretable tests");
     return b.create();
