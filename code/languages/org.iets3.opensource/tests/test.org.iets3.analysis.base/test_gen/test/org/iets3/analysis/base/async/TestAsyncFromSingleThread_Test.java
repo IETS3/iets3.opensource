@@ -94,7 +94,7 @@ public class TestAsyncFromSingleThread_Test extends BaseTransformationTest {
           }
         });
         // All Tasks should return
-        Assert.assertEquals(no, i.value);
+        Assert.assertEquals(Integer.valueOf(no), Integer.valueOf(i.value));
       } finally {
         if (modelTmp.value != null) {
           myProject.getRepository().getModelAccess().runWriteAction(() -> TemporaryModels.getInstance().dispose(modelTmp.value));

@@ -8,7 +8,6 @@ import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import jetbrains.mps.scope.Scope;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import java.util.List;
 import java.util.Arrays;
@@ -21,7 +20,6 @@ import jetbrains.mps.internal.collections.runtime.Sequence;
 import java.util.Objects;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
 import jetbrains.mps.scope.EmptyScope;
-import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 import org.jetbrains.mps.openapi.language.SInterfaceConcept;
@@ -32,12 +30,10 @@ import org.jetbrains.mps.openapi.language.SContainmentLink;
 public final class FeatureModelGlobalVariable__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getConcept(0xf08835038eaa4bc8L, 0x8846eb63220ab1ddL, 0x48cf645483bfd1c2L, "org.iets3.variability.artifacts.base.structure.FeatureModelGlobalVariable");
 
-  public static final SMethod<Scope> getAvailableConfigurations_id5bXbDSdjI5A = new SMethodBuilder<Scope>(new SJavaCompoundTypeImpl(Scope.class)).name("getAvailableConfigurations").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5979987136580870502L).languageId(0x8846eb63220ab1ddL, 0xf08835038eaa4bc8L).build2();
+  public static final SMethod<Scope> getAvailableConfigurations_id5bXbDSdjI5A = new SMethodBuilder<>(Scope.class).name("getAvailableConfigurations").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5979987136580870502L).languageId(0x8846eb63220ab1ddL, 0xf08835038eaa4bc8L).build2();
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(getAvailableConfigurations_id5bXbDSdjI5A);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(getAvailableConfigurations_id5bXbDSdjI5A);
 
-  private static void ___init___(@NotNull SNode __thisNode__) {
-  }
 
   /*package*/ static Scope getAvailableConfigurations_id5bXbDSdjI5A(@NotNull final SNode __thisNode__) {
     SNode elementsProvider = SNodeOperations.getNodeAncestor(__thisNode__, CONCEPTS.IVisibleElementProvider$$O, false, false);
@@ -53,10 +49,6 @@ public final class FeatureModelGlobalVariable__BehaviorDescriptor extends BaseBH
   /*package*/ FeatureModelGlobalVariable__BehaviorDescriptor() {
   }
 
-  @Override
-  protected void initNode(@NotNull SNode node, @NotNull SConstructor constructor, @Nullable Object[] parameters) {
-    ___init___(node);
-  }
 
   @Override
   protected <T> T invokeSpecial0(@NotNull SNode node, @NotNull SMethod<T> method, @Nullable Object[] parameters) {

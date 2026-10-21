@@ -33,7 +33,7 @@ import org.jetbrains.mps.openapi.language.SProperty;
 public class BusRefactoringHelper {
 
   /**
-   * Tries to derive a concrete instance of a BusType from athe name of a "buskind component". 
+   * Tries to derive a concrete instance of a BusType from athe name of a "buskind component".
    * 
    * @param busComp component with a buskind
    * @return derived instance of a AbstractBusType etherwise null
@@ -90,7 +90,7 @@ public class BusRefactoringHelper {
    * replaces a deprecated buskind with an instance of the given bustype-concept and fixed all references
    * 
    * @param cmp the component attached with buskind
-   * @param newBusTypeCpt the new bustype concept that should be used. 
+   * @param newBusTypeCpt the new bustype concept that should be used.
    */
   public static void fixDeprecatedBuskinds(SNode cmp, final SConcept newBusTypeCpt) {
 

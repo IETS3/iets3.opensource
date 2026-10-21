@@ -27,9 +27,6 @@ public class supertypeof_YearsType_SubtypingRule extends SubtypingRule_Runtime i
   public boolean isWeak() {
     return false;
   }
-  public boolean surelyKeepsConcept() {
-    return true;
-  }
   private static SNode createDateDeltaType_aphm94_a0a1() {
     SNodeBuilder n0 = new SNodeBuilder().init(CONCEPTS.DateDeltaType$BG);
     return n0.getResult();

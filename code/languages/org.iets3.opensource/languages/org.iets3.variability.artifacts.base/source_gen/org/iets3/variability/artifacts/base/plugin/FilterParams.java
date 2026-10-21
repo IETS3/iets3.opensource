@@ -225,7 +225,7 @@ public class FilterParams {
   }
 
   /**
-   * During Instantiation references which referred to a component now should refer to the instantiation. 
+   * During Instantiation references which referred to a component now should refer to the instantiation.
    * if true tries to fix such broken links
    */
   public boolean fixBrokenLinks = true;

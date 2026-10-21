@@ -7,30 +7,26 @@ import org.jetbrains.mps.openapi.language.SAbstractConcept;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import org.jetbrains.mps.openapi.model.SNode;
 import java.util.List;
 import java.util.Arrays;
 import org.jetbrains.annotations.NotNull;
 import jetbrains.mps.internal.collections.runtime.Sequence;
-import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 
 public final class IBookmark__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getInterfaceConcept(0x32190be623f74e17L, 0xaad4fb739bb3569fL, 0x96019f7cca2f61L, "org.iets3.core.expr.doc.structure.IBookmark");
 
-  public static final SMethod<String[]> getQualifiedName_id2m0pXWMyYL = new SMethodBuilder<String[]>(new SJavaCompoundTypeImpl(String[].class)).name("getQualifiedName").modifiers(12, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(42223031011651505L).languageId(0xaad4fb739bb3569fL, 0x32190be623f74e17L).build2();
-  public static final SMethod<Iterable<String>> getFolder_id2m0pXWPbKT = new SMethodBuilder<Iterable<String>>(new SJavaCompoundTypeImpl((Class<Iterable<String>>) ((Class) Object.class))).name("getFolder").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(42223031012342841L).languageId(0xaad4fb739bb3569fL, 0x32190be623f74e17L).build2();
-  public static final SMethod<String> getName_id2m0pXWPfqG = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("getName").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(42223031012357804L).languageId(0xaad4fb739bb3569fL, 0x32190be623f74e17L).build2();
-  public static final SMethod<Boolean> hideBookmark_id2m0pXWMLk6 = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("hideBookmark").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(42223031011710214L).languageId(0xaad4fb739bb3569fL, 0x32190be623f74e17L).build2();
-  public static final SMethod<SNode> getBookmarkedNode_id4vZ65iK1hOY = new SMethodBuilder<SNode>(new SJavaCompoundTypeImpl((Class<SNode>) ((Class) Object.class))).name("getBookmarkedNode").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5187892047763545406L).languageId(0xaad4fb739bb3569fL, 0x32190be623f74e17L).build2();
+  public static final SMethod<String[]> getQualifiedName_id2m0pXWMyYL = new SMethodBuilder<>(String[].class).name("getQualifiedName").modifiers(12, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(42223031011651505L).languageId(0xaad4fb739bb3569fL, 0x32190be623f74e17L).build2();
+  public static final SMethod<Iterable<String>> getFolder_id2m0pXWPbKT = new SMethodBuilder<>((Class<Iterable<String>>) ((Class) Object.class)).name("getFolder").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(42223031012342841L).languageId(0xaad4fb739bb3569fL, 0x32190be623f74e17L).build2();
+  public static final SMethod<String> getName_id2m0pXWPfqG = new SMethodBuilder<>(String.class).name("getName").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(42223031012357804L).languageId(0xaad4fb739bb3569fL, 0x32190be623f74e17L).build2();
+  public static final SMethod<Boolean> hideBookmark_id2m0pXWMLk6 = new SMethodBuilder<>(Boolean.TYPE).name("hideBookmark").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(42223031011710214L).languageId(0xaad4fb739bb3569fL, 0x32190be623f74e17L).build2();
+  public static final SMethod<SNode> getBookmarkedNode_id4vZ65iK1hOY = new SMethodBuilder<>(SNode.class).name("getBookmarkedNode").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5187892047763545406L).languageId(0xaad4fb739bb3569fL, 0x32190be623f74e17L).build2();
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(getQualifiedName_id2m0pXWMyYL, getFolder_id2m0pXWPbKT, getName_id2m0pXWPfqG, hideBookmark_id2m0pXWMLk6, getBookmarkedNode_id4vZ65iK1hOY);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(getQualifiedName_id2m0pXWMyYL, getFolder_id2m0pXWPbKT, getName_id2m0pXWPfqG, hideBookmark_id2m0pXWMLk6, getBookmarkedNode_id4vZ65iK1hOY);
 
-  private static void ___init___(@NotNull SNode __thisNode__) {
-  }
 
   /*package*/ static Iterable<String> getFolder_id2m0pXWPbKT(@NotNull SNode __thisNode__) {
     String[] qn = IBookmark__BehaviorDescriptor.getQualifiedName_id2m0pXWMyYL.invoke(__thisNode__);
@@ -52,10 +48,6 @@ public final class IBookmark__BehaviorDescriptor extends BaseBHDescriptor {
   /*package*/ IBookmark__BehaviorDescriptor() {
   }
 
-  @Override
-  protected void initNode(@NotNull SNode node, @NotNull SConstructor constructor, @Nullable Object[] parameters) {
-    ___init___(node);
-  }
 
   @Override
   protected <T> T invokeSpecial0(@NotNull SNode node, @NotNull SMethod<T> method, @Nullable Object[] parameters) {

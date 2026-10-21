@@ -7,7 +7,6 @@ import org.jetbrains.mps.openapi.language.SAbstractConcept;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import jetbrains.mps.baseLanguage.tuples.runtime.Tuples;
 import java.util.List;
@@ -17,7 +16,6 @@ import org.jetbrains.mps.openapi.model.SNode;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations;
 import jetbrains.mps.baseLanguage.tuples.runtime.MultiTuple;
-import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 import org.jetbrains.mps.openapi.language.SContainmentLink;
@@ -26,14 +24,12 @@ import org.jetbrains.mps.openapi.language.SProperty;
 public final class MPPortCategory__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getConcept(0x257976063fb647b8L, 0xbc3cb4384df7da44L, 0x2142daea63707830L, "org.iets3.components.functional.structure.MPPortCategory");
 
-  public static final SMethod<Boolean> isDirectional_idmIQkxfpvfA = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("isDirectional").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(409503520730248166L).languageId(0xb6713d118449c6e7L, 0xf0fd486f857743e9L).build2();
-  public static final SMethod<Tuples._2<Integer, Integer>> multiplicity_id7Atos1y391f = new SMethodBuilder<Tuples._2<Integer, Integer>>(new SJavaCompoundTypeImpl((Class<Tuples._2<Integer, Integer>>) ((Class) Object.class))).name("multiplicity").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(8763267928839458895L).languageId(0xb6713d118449c6e7L, 0xf0fd486f857743e9L).build2();
-  public static final SMethod<Tuples._2<Integer, Integer>> defaultMultiplicity_idx8tpS_G3kM = new SMethodBuilder<Tuples._2<Integer, Integer>>(new SJavaCompoundTypeImpl((Class<Tuples._2<Integer, Integer>>) ((Class) Object.class))).name("defaultMultiplicity").modifiers(12, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(596856272724178226L).languageId(0xbc3cb4384df7da44L, 0x257976063fb647b8L).build2();
+  public static final SMethod<Boolean> isDirectional_idmIQkxfpvfA = new SMethodBuilder<>(Boolean.TYPE).name("isDirectional").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(409503520730248166L).languageId(0xb6713d118449c6e7L, 0xf0fd486f857743e9L).build2();
+  public static final SMethod<Tuples._2<Integer, Integer>> multiplicity_id7Atos1y391f = new SMethodBuilder<>((Class<Tuples._2<Integer, Integer>>) ((Class) Object.class)).name("multiplicity").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(8763267928839458895L).languageId(0xb6713d118449c6e7L, 0xf0fd486f857743e9L).build2();
+  public static final SMethod<Tuples._2<Integer, Integer>> defaultMultiplicity_idx8tpS_G3kM = new SMethodBuilder<>((Class<Tuples._2<Integer, Integer>>) ((Class) Object.class)).name("defaultMultiplicity").modifiers(12, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(596856272724178226L).languageId(0xbc3cb4384df7da44L, 0x257976063fb647b8L).build2();
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(isDirectional_idmIQkxfpvfA, multiplicity_id7Atos1y391f, defaultMultiplicity_idx8tpS_G3kM);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(isDirectional_idmIQkxfpvfA, multiplicity_id7Atos1y391f, defaultMultiplicity_idx8tpS_G3kM);
 
-  private static void ___init___(@NotNull SNode __thisNode__) {
-  }
 
   /*package*/ static boolean isDirectional_idmIQkxfpvfA(@NotNull SNode __thisNode__) {
     return true;
@@ -51,10 +47,6 @@ public final class MPPortCategory__BehaviorDescriptor extends BaseBHDescriptor {
   /*package*/ MPPortCategory__BehaviorDescriptor() {
   }
 
-  @Override
-  protected void initNode(@NotNull SNode node, @NotNull SConstructor constructor, @Nullable Object[] parameters) {
-    ___init___(node);
-  }
 
   @Override
   protected <T> T invokeSpecial0(@NotNull SNode node, @NotNull SMethod<T> method, @Nullable Object[] parameters) {

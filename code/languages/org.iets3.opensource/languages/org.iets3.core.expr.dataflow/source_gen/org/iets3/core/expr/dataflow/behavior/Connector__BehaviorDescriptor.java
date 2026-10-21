@@ -7,7 +7,6 @@ import org.jetbrains.mps.openapi.language.SAbstractConcept;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import org.jetbrains.mps.openapi.model.SNode;
 import java.util.List;
@@ -15,7 +14,6 @@ import java.util.Arrays;
 import org.jetbrains.annotations.NotNull;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
-import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 import org.jetbrains.mps.openapi.language.SContainmentLink;
@@ -25,14 +23,12 @@ import org.jetbrains.mps.openapi.language.SConcept;
 public final class Connector__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getConcept(0xcee4aa62aca94f26L, 0x960275129cd457c9L, 0x395649586dce5477L, "org.iets3.core.expr.dataflow.structure.Connector");
 
-  public static final SMethod<Boolean> connectsToInstance_id30L$xlcejQ2 = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("connectsToInstance").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(3472717407850151298L).languageId(0x960275129cd457c9L, 0xcee4aa62aca94f26L).build2(SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""));
-  public static final SMethod<Boolean> connectsToInsideInPort_id5Q9FzcI6bZ6 = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("connectsToInsideInPort").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(6740109852176596934L).languageId(0x960275129cd457c9L, 0xcee4aa62aca94f26L).build2(SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""), SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""));
-  public static final SMethod<Boolean> connectsToOutsidePort_id5Q9FzcI4YUK = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("connectsToOutsidePort").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(6740109852176281264L).languageId(0x960275129cd457c9L, 0xcee4aa62aca94f26L).build2(SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""));
+  public static final SMethod<Boolean> connectsToInstance_id30L$xlcejQ2 = new SMethodBuilder<>(Boolean.TYPE).name("connectsToInstance").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(3472717407850151298L).languageId(0x960275129cd457c9L, 0xcee4aa62aca94f26L).build2(SMethodBuilder.createJavaParameter(SNode.class, "i"));
+  public static final SMethod<Boolean> connectsToInsideInPort_id5Q9FzcI6bZ6 = new SMethodBuilder<>(Boolean.TYPE).name("connectsToInsideInPort").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(6740109852176596934L).languageId(0x960275129cd457c9L, 0xcee4aa62aca94f26L).build2(SMethodBuilder.createJavaParameter(SNode.class, "i"), SMethodBuilder.createJavaParameter(SNode.class, "p"));
+  public static final SMethod<Boolean> connectsToOutsidePort_id5Q9FzcI4YUK = new SMethodBuilder<>(Boolean.TYPE).name("connectsToOutsidePort").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(6740109852176281264L).languageId(0x960275129cd457c9L, 0xcee4aa62aca94f26L).build2(SMethodBuilder.createJavaParameter(SNode.class, "p"));
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(connectsToInstance_id30L$xlcejQ2, connectsToInsideInPort_id5Q9FzcI6bZ6, connectsToOutsidePort_id5Q9FzcI4YUK);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(connectsToInstance_id30L$xlcejQ2, connectsToInsideInPort_id5Q9FzcI6bZ6, connectsToOutsidePort_id5Q9FzcI4YUK);
 
-  private static void ___init___(@NotNull SNode __thisNode__) {
-  }
 
   /*package*/ static boolean connectsToInstance_id30L$xlcejQ2(@NotNull SNode __thisNode__, SNode i) {
     if (SNodeOperations.isInstanceOf(SLinkOperations.getTarget(__thisNode__, LINKS.left$rT$n), CONCEPTS.InsideEndpoint$Ek) && SLinkOperations.getTarget(SNodeOperations.cast(SLinkOperations.getTarget(__thisNode__, LINKS.left$rT$n), CONCEPTS.InsideEndpoint$Ek), LINKS.instance$qJ6s) == i) {
@@ -65,10 +61,6 @@ public final class Connector__BehaviorDescriptor extends BaseBHDescriptor {
   /*package*/ Connector__BehaviorDescriptor() {
   }
 
-  @Override
-  protected void initNode(@NotNull SNode node, @NotNull SConstructor constructor, @Nullable Object[] parameters) {
-    ___init___(node);
-  }
 
   @Override
   protected <T> T invokeSpecial0(@NotNull SNode node, @NotNull SMethod<T> method, @Nullable Object[] parameters) {

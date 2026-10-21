@@ -7,14 +7,12 @@ import org.jetbrains.mps.openapi.language.SAbstractConcept;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import org.jetbrains.mps.openapi.model.SNode;
 import java.util.List;
 import java.util.Arrays;
 import org.jetbrains.annotations.NotNull;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
-import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 import org.jetbrains.mps.openapi.language.SInterfaceConcept;
@@ -22,13 +20,11 @@ import org.jetbrains.mps.openapi.language.SInterfaceConcept;
 public final class IUseSolver__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getInterfaceConcept(0xdb8bd0353f5141d8L, 0x8fed954c202d18beL, 0x7d9c37fa6680e334L, "org.iets3.analysis.base.structure.IUseSolver");
 
-  public static final SMethod<Boolean> isSolverEnabledUnderThisRoot_id7QsdZDAwed0 = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("isSolverEnabledUnderThisRoot").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(9051170899708928832L).languageId(0x8fed954c202d18beL, 0xdb8bd0353f5141d8L).build2();
-  public static final SMethod<Boolean> isSolverEnabled_id7QsdZDAweeW = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("isSolverEnabled").modifiers(1, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(9051170899708928956L).languageId(0x8fed954c202d18beL, 0xdb8bd0353f5141d8L).build2(SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""));
+  public static final SMethod<Boolean> isSolverEnabledUnderThisRoot_id7QsdZDAwed0 = new SMethodBuilder<>(Boolean.TYPE).name("isSolverEnabledUnderThisRoot").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(9051170899708928832L).languageId(0x8fed954c202d18beL, 0xdb8bd0353f5141d8L).build2();
+  public static final SMethod<Boolean> isSolverEnabled_id7QsdZDAweeW = new SMethodBuilder<>(Boolean.TYPE).name("isSolverEnabled").modifiers(1, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(9051170899708928956L).languageId(0x8fed954c202d18beL, 0xdb8bd0353f5141d8L).build2(SMethodBuilder.createJavaParameter(SNode.class, "n"));
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(isSolverEnabledUnderThisRoot_id7QsdZDAwed0, isSolverEnabled_id7QsdZDAweeW);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(isSolverEnabledUnderThisRoot_id7QsdZDAwed0, isSolverEnabled_id7QsdZDAweeW);
 
-  private static void ___init___(@NotNull SNode __thisNode__) {
-  }
 
   /*package*/ static boolean isSolverEnabledUnderThisRoot_id7QsdZDAwed0(@NotNull SNode __thisNode__) {
     return true;
@@ -46,10 +42,6 @@ public final class IUseSolver__BehaviorDescriptor extends BaseBHDescriptor {
   /*package*/ IUseSolver__BehaviorDescriptor() {
   }
 
-  @Override
-  protected void initNode(@NotNull SNode node, @NotNull SConstructor constructor, @Nullable Object[] parameters) {
-    ___init___(node);
-  }
 
   @Override
   protected <T> T invokeSpecial0(@NotNull SNode node, @NotNull SMethod<T> method, @Nullable Object[] parameters) {

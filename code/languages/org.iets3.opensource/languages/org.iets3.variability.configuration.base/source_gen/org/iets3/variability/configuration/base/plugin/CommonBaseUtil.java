@@ -19,7 +19,7 @@ import org.jetbrains.mps.openapi.language.SInterfaceConcept;
 
 public class CommonBaseUtil {
   /**
-   * Attach attribute values computed by a solver to the assignment nodes. 
+   * Attach attribute values computed by a solver to the assignment nodes.
    * 
    * If the attribute has a physical unit attached, then also attach it to the computed value.
    * The solver cannot do it as it does not know about physical units.
