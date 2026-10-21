@@ -3,7 +3,7 @@
   <persistence version="9" />
   <languages>
     <use id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior" version="2" />
-    <use id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc" version="-1" />
+    <use id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc" version="3" />
     <devkit ref="2677cb18-f558-4e33-bc38-a5139cee06dc(jetbrains.mps.devkit.language-design)" />
   </languages>
   <imports>
@@ -39,6 +39,7 @@
         <reference id="1225194472831" name="overriddenMethod" index="13i0hy" />
       </concept>
       <concept id="1225194691553" name="jetbrains.mps.lang.behavior.structure.ThisNodeExpression" flags="nn" index="13iPFW" />
+      <concept id="3235159848334022093" name="jetbrains.mps.lang.behavior.structure.Node_ConceptMethodCall" flags="nn" index="3zqWPK" />
     </language>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
       <concept id="1215693861676" name="jetbrains.mps.baseLanguage.structure.BaseAssignmentExpression" flags="nn" index="d038R">
@@ -137,7 +138,6 @@
         <reference id="6832197706140518108" name="param" index="zr_51" />
       </concept>
       <concept id="5349172909345501395" name="jetbrains.mps.baseLanguage.javadoc.structure.BaseDocComment" flags="ng" index="P$AiS">
-        <child id="8465538089690331502" name="body" index="TZ5H$" />
         <child id="5383422241790532083" name="tags" index="3nqlJM" />
       </concept>
       <concept id="5349172909345532724" name="jetbrains.mps.baseLanguage.javadoc.structure.MethodDocComment" flags="ng" index="P$JXv" />
@@ -145,11 +145,8 @@
         <property id="8465538089690881934" name="text" index="TUZQ4" />
         <child id="6832197706140518123" name="parameter" index="zr_5Q" />
       </concept>
-      <concept id="8465538089690331500" name="jetbrains.mps.baseLanguage.javadoc.structure.CommentLine" flags="ng" index="TZ5HA">
-        <child id="8970989240999019149" name="part" index="1dT_Ay" />
-      </concept>
-      <concept id="8970989240999019143" name="jetbrains.mps.baseLanguage.javadoc.structure.TextCommentLinePart" flags="ng" index="1dT_AC">
-        <property id="8970989240999019144" name="text" index="1dT_AB" />
+      <concept id="5085607816302529296" name="jetbrains.mps.baseLanguage.javadoc.structure.IHoldCommentLines" flags="ngI" index="1VezTd">
+        <child id="5085607816302529587" name="commentBody" index="1Vez_I" />
       </concept>
     </language>
     <language id="c7d5b9dd-a05f-4be2-bc73-f2e16994cc67" name="jetbrains.mps.baseLanguage.lightweightdsl">
@@ -175,7 +172,6 @@
       <concept id="1138411891628" name="jetbrains.mps.lang.smodel.structure.SNodeOperation" flags="nn" index="eCIE_">
         <child id="1144104376918" name="parameter" index="1xVPHs" />
       </concept>
-      <concept id="1179409122411" name="jetbrains.mps.lang.smodel.structure.Node_ConceptMethodCall" flags="nn" index="2qgKlT" />
       <concept id="4693937538533521280" name="jetbrains.mps.lang.smodel.structure.OfConceptOperation" flags="ng" index="v3k3i">
         <child id="4693937538533538124" name="requestedConcept" index="v3oSu" />
       </concept>
@@ -230,6 +226,14 @@
       </concept>
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ngI" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
+      </concept>
+    </language>
+    <language id="c7fb639f-be78-4307-89b0-b5959c3fa8c8" name="jetbrains.mps.lang.text">
+      <concept id="155656958578482948" name="jetbrains.mps.lang.text.structure.Word" flags="nn" index="3oM_SD">
+        <property id="155656958578482949" name="value" index="3oM_SC" />
+      </concept>
+      <concept id="2535923850359271782" name="jetbrains.mps.lang.text.structure.Line" flags="nn" index="1PaTwC">
+        <child id="2535923850359271783" name="elements" index="1PaTwD" />
       </concept>
     </language>
     <language id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections">
@@ -306,7 +310,7 @@
                       <ref role="3Tt5mk" to="boyp:6JtAeCuN9lA" resolve="protocolMapTarget" />
                     </node>
                   </node>
-                  <node concept="2qgKlT" id="6JtAeCuNdRY" role="2OqNvi">
+                  <node concept="3zqWPK" id="5DJjBfj0csF" role="2OqNvi">
                     <ref role="37wK5l" node="6JtAeCuNd2x" resolve="getTarget" />
                   </node>
                 </node>
@@ -322,7 +326,7 @@
                   <ref role="3Tt5mk" to="boyp:6JtAeCuN9l$" resolve="protocol" />
                 </node>
               </node>
-              <node concept="2qgKlT" id="6JtAeCuSswY" role="2OqNvi">
+              <node concept="3zqWPK" id="5DJjBfj0csH" role="2OqNvi">
                 <ref role="37wK5l" node="6JtAeCuSn_1" resolve="simpleName" />
               </node>
             </node>
@@ -391,7 +395,7 @@
                     <ref role="3Tt5mk" to="boyp:6JtAeCuN9lA" resolve="protocolMapTarget" />
                   </node>
                 </node>
-                <node concept="2qgKlT" id="65sbyp4GSRT" role="2OqNvi">
+                <node concept="3zqWPK" id="5DJjBfj0csJ" role="2OqNvi">
                   <ref role="37wK5l" node="6JtAeCuNd2x" resolve="getTarget" />
                 </node>
               </node>
@@ -664,19 +668,89 @@
         </node>
       </node>
       <node concept="P$JXv" id="43uwa4Yu$NN" role="lGtFl">
-        <node concept="TZ5HA" id="43uwa4Yu$NO" role="TZ5H$">
-          <node concept="1dT_AC" id="43uwa4Yu$NP" role="1dT_Ay">
-            <property role="1dT_AB" value="Will find all ITyped elements (args) of a given mapContext" />
-          </node>
-        </node>
         <node concept="TUZQ0" id="43uwa4Yu$NQ" role="3nqlJM">
-          <property role="TUZQ4" value="might in this case be a Message" />
+          <property role="TUZQ4" value="" />
           <node concept="zr_55" id="43uwa4Yu$NS" role="zr_5Q">
             <ref role="zr_51" node="43uwa4Yuukl" resolve="mapContext" />
           </node>
+          <node concept="1PaTwC" id="3MzwgoR0T2m" role="1Vez_I">
+            <node concept="3oM_SD" id="3MzwgoR0T2n" role="1PaTwD">
+              <property role="3oM_SC" value="might" />
+            </node>
+            <node concept="3oM_SD" id="3MzwgoR0T2o" role="1PaTwD">
+              <property role="3oM_SC" value="in" />
+            </node>
+            <node concept="3oM_SD" id="3MzwgoR0T2p" role="1PaTwD">
+              <property role="3oM_SC" value="this" />
+            </node>
+            <node concept="3oM_SD" id="3MzwgoR0T2q" role="1PaTwD">
+              <property role="3oM_SC" value="case" />
+            </node>
+            <node concept="3oM_SD" id="3MzwgoR0T2r" role="1PaTwD">
+              <property role="3oM_SC" value="be" />
+            </node>
+            <node concept="3oM_SD" id="3MzwgoR0T2s" role="1PaTwD">
+              <property role="3oM_SC" value="a" />
+            </node>
+            <node concept="3oM_SD" id="3MzwgoR0T2t" role="1PaTwD">
+              <property role="3oM_SC" value="Message" />
+            </node>
+          </node>
         </node>
         <node concept="x79VA" id="43uwa4Yu$NT" role="3nqlJM">
-          <property role="x79VB" value="list of args of this mapContext" />
+          <property role="x79VB" value="" />
+          <node concept="1PaTwC" id="3MzwgoR0T2u" role="1Vez_I">
+            <node concept="3oM_SD" id="3MzwgoR0T2v" role="1PaTwD">
+              <property role="3oM_SC" value="list" />
+            </node>
+            <node concept="3oM_SD" id="3MzwgoR0T2w" role="1PaTwD">
+              <property role="3oM_SC" value="of" />
+            </node>
+            <node concept="3oM_SD" id="3MzwgoR0T2x" role="1PaTwD">
+              <property role="3oM_SC" value="args" />
+            </node>
+            <node concept="3oM_SD" id="3MzwgoR0T2y" role="1PaTwD">
+              <property role="3oM_SC" value="of" />
+            </node>
+            <node concept="3oM_SD" id="3MzwgoR0T2z" role="1PaTwD">
+              <property role="3oM_SC" value="this" />
+            </node>
+            <node concept="3oM_SD" id="3MzwgoR0T2$" role="1PaTwD">
+              <property role="3oM_SC" value="mapContext" />
+            </node>
+          </node>
+        </node>
+        <node concept="1PaTwC" id="3MzwgoR0T2b" role="1Vez_I">
+          <node concept="3oM_SD" id="3MzwgoR0T2c" role="1PaTwD">
+            <property role="3oM_SC" value="Will" />
+          </node>
+          <node concept="3oM_SD" id="3MzwgoR0T2d" role="1PaTwD">
+            <property role="3oM_SC" value="find" />
+          </node>
+          <node concept="3oM_SD" id="3MzwgoR0T2e" role="1PaTwD">
+            <property role="3oM_SC" value="all" />
+          </node>
+          <node concept="3oM_SD" id="3MzwgoR0T2f" role="1PaTwD">
+            <property role="3oM_SC" value="ITyped" />
+          </node>
+          <node concept="3oM_SD" id="3MzwgoR0T2g" role="1PaTwD">
+            <property role="3oM_SC" value="elements" />
+          </node>
+          <node concept="3oM_SD" id="3MzwgoR0T2h" role="1PaTwD">
+            <property role="3oM_SC" value="(args)" />
+          </node>
+          <node concept="3oM_SD" id="3MzwgoR0T2i" role="1PaTwD">
+            <property role="3oM_SC" value="of" />
+          </node>
+          <node concept="3oM_SD" id="3MzwgoR0T2j" role="1PaTwD">
+            <property role="3oM_SC" value="a" />
+          </node>
+          <node concept="3oM_SD" id="3MzwgoR0T2k" role="1PaTwD">
+            <property role="3oM_SC" value="given" />
+          </node>
+          <node concept="3oM_SD" id="3MzwgoR0T2l" role="1PaTwD">
+            <property role="3oM_SC" value="mapContext" />
+          </node>
         </node>
       </node>
     </node>
@@ -955,7 +1029,7 @@
                                     <node concept="37vLTw" id="4FLRp99yWQ7" role="2Oq$k0">
                                       <ref role="3cqZAo" node="2r1kIC$yArW" resolve="mapTarget" />
                                     </node>
-                                    <node concept="2qgKlT" id="4FLRp99yWQ8" role="2OqNvi">
+                                    <node concept="3zqWPK" id="5DJjBfj0csL" role="2OqNvi">
                                       <ref role="37wK5l" node="6JtAeCuNd2x" resolve="getTarget" />
                                     </node>
                                   </node>
@@ -1055,7 +1129,7 @@
                                   <node concept="37vLTw" id="2YYo1jI2jjS" role="2Oq$k0">
                                     <ref role="3cqZAo" node="2r1kIC$yAs0" resolve="mapTarget" />
                                   </node>
-                                  <node concept="2qgKlT" id="2YYo1jI2jjT" role="2OqNvi">
+                                  <node concept="3zqWPK" id="5DJjBfj0csN" role="2OqNvi">
                                     <ref role="37wK5l" node="6JtAeCuNd2x" resolve="getTarget" />
                                   </node>
                                 </node>
@@ -1121,7 +1195,7 @@
             </node>
             <node concept="2OqwBi" id="4FLRp9a2cWW" role="2Oq$k0">
               <node concept="13iPFW" id="4FLRp9a2cLH" role="2Oq$k0" />
-              <node concept="2qgKlT" id="4FLRp9a2di9" role="2OqNvi">
+              <node concept="3zqWPK" id="5DJjBfj0csP" role="2OqNvi">
                 <ref role="37wK5l" node="2HsTbibmy9E" resolve="protocoledElements" />
               </node>
             </node>
@@ -1157,7 +1231,7 @@
                             <ref role="3Tt5mk" to="boyp:6JtAeCuN9lA" resolve="protocolMapTarget" />
                           </node>
                         </node>
-                        <node concept="2qgKlT" id="4FLRp99wDL6" role="2OqNvi">
+                        <node concept="3zqWPK" id="5DJjBfj0csR" role="2OqNvi">
                           <ref role="37wK5l" node="6JtAeCuNd2x" resolve="getTarget" />
                         </node>
                       </node>
@@ -1304,7 +1378,7 @@
                 <ref role="3Tt5mk" to="boyp:2HsTbibjSbz" resolve="lib" />
               </node>
             </node>
-            <node concept="2qgKlT" id="4ETZusGDVEZ" role="2OqNvi">
+            <node concept="3zqWPK" id="5DJjBfj0csT" role="2OqNvi">
               <ref role="37wK5l" node="4ETZusGCO9f" resolve="includedProtocolMaps" />
             </node>
           </node>
@@ -1345,7 +1419,7 @@
                       <node concept="37vLTw" id="6FL_GAh9wlg" role="2Oq$k0">
                         <ref role="3cqZAo" node="2r1kIC$yAs8" resolve="it" />
                       </node>
-                      <node concept="2qgKlT" id="6FL_GAh9xrD" role="2OqNvi">
+                      <node concept="3zqWPK" id="5DJjBfj0csV" role="2OqNvi">
                         <ref role="37wK5l" to="3eba:4KDeVD8s9TJ" resolve="createConnectorType" />
                       </node>
                     </node>
@@ -1421,7 +1495,7 @@
                         <node concept="37vLTw" id="4FLRp99XKX9" role="2Oq$k0">
                           <ref role="3cqZAo" node="2r1kIC$yAsa" resolve="it" />
                         </node>
-                        <node concept="2qgKlT" id="4FLRp99XKXa" role="2OqNvi">
+                        <node concept="3zqWPK" id="5DJjBfj0csX" role="2OqNvi">
                           <ref role="37wK5l" to="3eba:siw10GjEcX" resolve="getReferencedNode" />
                         </node>
                       </node>
@@ -1496,7 +1570,7 @@
                 </node>
               </node>
             </node>
-            <node concept="2qgKlT" id="6FL_GAh96HJ" role="2OqNvi">
+            <node concept="3zqWPK" id="5DJjBfj0csZ" role="2OqNvi">
               <ref role="37wK5l" to="2k20:6FL_GAgYY$I" resolve="getMappedSourcePorts" />
             </node>
           </node>
@@ -1524,7 +1598,7 @@
                 </node>
               </node>
             </node>
-            <node concept="2qgKlT" id="6FL_GAh98gM" role="2OqNvi">
+            <node concept="3zqWPK" id="5DJjBfj0ct1" role="2OqNvi">
               <ref role="37wK5l" to="2k20:6FL_GAgYY$_" resolve="getMappedTargetPorts" />
             </node>
           </node>
@@ -1569,7 +1643,7 @@
                 <ref role="3Tt5mk" to="boyp:vJtToBuAu6" resolve="protocol" />
               </node>
             </node>
-            <node concept="2qgKlT" id="2HsTbibHRiF" role="2OqNvi">
+            <node concept="3zqWPK" id="5DJjBfj0ct3" role="2OqNvi">
               <ref role="37wK5l" to="tpcu:hEwIMiw" resolve="getPresentation" />
             </node>
           </node>
@@ -1607,7 +1681,7 @@
             <node concept="BsUDl" id="3wMQ0tmrY8W" role="2Oq$k0">
               <ref role="37wK5l" node="3wMQ0tmrlMr" resolve="mapSection" />
             </node>
-            <node concept="2qgKlT" id="3wMQ0tmrYxX" role="2OqNvi">
+            <node concept="3zqWPK" id="5DJjBfj0ct5" role="2OqNvi">
               <ref role="37wK5l" node="4ETZusGCO9f" resolve="includedProtocolMaps" />
             </node>
           </node>
@@ -1631,9 +1705,9 @@
             <node concept="BsUDl" id="3wMQ0tms0JG" role="2Oq$k0">
               <ref role="37wK5l" node="3wMQ0tmrlMr" resolve="mapSection" />
             </node>
-            <node concept="2qgKlT" id="3wMQ0tms18R" role="2OqNvi">
+            <node concept="3zqWPK" id="5DJjBfj0ct7" role="2OqNvi">
               <ref role="37wK5l" node="4ETZusGCT6G" resolve="includedProtocolMapsByProtocol" />
-              <node concept="37vLTw" id="3wMQ0tms1ee" role="37wK5m">
+              <node concept="37vLTw" id="5DJjBfj0ct9" role="37wK5m">
                 <ref role="3cqZAo" node="3wMQ0tmrkpQ" resolve="transportProtocol" />
               </node>
             </node>
@@ -1703,9 +1777,9 @@
             </node>
             <node concept="2OqwBi" id="791OiB7zq73" role="33vP2m">
               <node concept="13iPFW" id="791OiB7zq74" role="2Oq$k0" />
-              <node concept="2qgKlT" id="791OiB7zq75" role="2OqNvi">
+              <node concept="3zqWPK" id="5DJjBfj0cta" role="2OqNvi">
                 <ref role="37wK5l" node="4FLRp99wBxW" resolve="protocolMapsForElement" />
-                <node concept="37vLTw" id="791OiB7zq76" role="37wK5m">
+                <node concept="37vLTw" id="5DJjBfj0ctc" role="37wK5m">
                   <ref role="3cqZAo" node="791OiB7xZWj" resolve="element" />
                 </node>
               </node>
@@ -1769,17 +1843,65 @@
         <node concept="3Tqbb2" id="791OiB7xZWi" role="1tU5fm" />
       </node>
       <node concept="P$JXv" id="791OiB7yi0F" role="lGtFl">
-        <node concept="TZ5HA" id="791OiB7yi0G" role="TZ5H$">
-          <node concept="1dT_AC" id="791OiB7yi0H" role="1dT_Ay" />
-        </node>
         <node concept="TUZQ0" id="791OiB7yi0I" role="3nqlJM">
-          <property role="TUZQ4" value="might be an Mpinterface" />
+          <property role="TUZQ4" value="" />
           <node concept="zr_55" id="791OiB7yi0K" role="zr_5Q">
             <ref role="zr_51" node="791OiB7xZWj" resolve="element" />
           </node>
+          <node concept="1PaTwC" id="3MzwgoR0T2B" role="1Vez_I">
+            <node concept="3oM_SD" id="3MzwgoR0T2C" role="1PaTwD">
+              <property role="3oM_SC" value="might" />
+            </node>
+            <node concept="3oM_SD" id="3MzwgoR0T2D" role="1PaTwD">
+              <property role="3oM_SC" value="be" />
+            </node>
+            <node concept="3oM_SD" id="3MzwgoR0T2E" role="1PaTwD">
+              <property role="3oM_SC" value="an" />
+            </node>
+            <node concept="3oM_SD" id="3MzwgoR0T2F" role="1PaTwD">
+              <property role="3oM_SC" value="Mpinterface" />
+            </node>
+          </node>
         </node>
         <node concept="x79VA" id="791OiB7yi0L" role="3nqlJM">
-          <property role="x79VB" value="the protocolMap that is used for this interface for this.protocl" />
+          <property role="x79VB" value="" />
+          <node concept="1PaTwC" id="3MzwgoR0T2G" role="1Vez_I">
+            <node concept="3oM_SD" id="3MzwgoR0T2H" role="1PaTwD">
+              <property role="3oM_SC" value="the" />
+            </node>
+            <node concept="3oM_SD" id="3MzwgoR0T2I" role="1PaTwD">
+              <property role="3oM_SC" value="protocolMap" />
+            </node>
+            <node concept="3oM_SD" id="3MzwgoR0T2J" role="1PaTwD">
+              <property role="3oM_SC" value="that" />
+            </node>
+            <node concept="3oM_SD" id="3MzwgoR0T2K" role="1PaTwD">
+              <property role="3oM_SC" value="is" />
+            </node>
+            <node concept="3oM_SD" id="3MzwgoR0T2L" role="1PaTwD">
+              <property role="3oM_SC" value="used" />
+            </node>
+            <node concept="3oM_SD" id="3MzwgoR0T2M" role="1PaTwD">
+              <property role="3oM_SC" value="for" />
+            </node>
+            <node concept="3oM_SD" id="3MzwgoR0T2N" role="1PaTwD">
+              <property role="3oM_SC" value="this" />
+            </node>
+            <node concept="3oM_SD" id="3MzwgoR0T2O" role="1PaTwD">
+              <property role="3oM_SC" value="interface" />
+            </node>
+            <node concept="3oM_SD" id="3MzwgoR0T2P" role="1PaTwD">
+              <property role="3oM_SC" value="for" />
+            </node>
+            <node concept="3oM_SD" id="3MzwgoR0T2Q" role="1PaTwD">
+              <property role="3oM_SC" value="this.protocl" />
+            </node>
+          </node>
+        </node>
+        <node concept="1PaTwC" id="3MzwgoR0T2_" role="1Vez_I">
+          <node concept="3oM_SD" id="3MzwgoR0T2A" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
         </node>
       </node>
     </node>
@@ -1856,7 +1978,7 @@
                       <node concept="37vLTw" id="2HsTbibzJcN" role="2Oq$k0">
                         <ref role="3cqZAo" node="2r1kIC$yAse" resolve="it" />
                       </node>
-                      <node concept="2qgKlT" id="2HsTbibzJK9" role="2OqNvi">
+                      <node concept="3zqWPK" id="5DJjBfj0ctd" role="2OqNvi">
                         <ref role="37wK5l" node="2HsTbibjFCb" resolve="protocolMaps" />
                       </node>
                     </node>
@@ -1912,7 +2034,7 @@
                         <node concept="37vLTw" id="3wMQ0tmpMbB" role="2Oq$k0">
                           <ref role="3cqZAo" node="2r1kIC$yAsi" resolve="it" />
                         </node>
-                        <node concept="2qgKlT" id="3wMQ0tmpMbC" role="2OqNvi">
+                        <node concept="3zqWPK" id="5DJjBfj0ctf" role="2OqNvi">
                           <ref role="37wK5l" node="2HsTbibjFCb" resolve="protocolMaps" />
                         </node>
                       </node>
