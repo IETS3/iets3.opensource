@@ -21,7 +21,7 @@
       <concept id="4604852045247358203" name="org.iets3.opensource.build.gentests.structure.RunKernelFGeneratedTests" flags="ng" index="2vP9LM">
         <reference id="4604852045247358204" name="testModules" index="2vP9LP" />
       </concept>
-      <concept id="8961448726281507188" name="org.iets3.opensource.build.gentests.structure.CustomRunnerAspect" flags="ng" index="1YJUtn">
+      <concept id="8961448726281507188" name="org.iets3.opensource.build.gentests.structure.InterpreterTestRunnerAspect" flags="ng" index="1YJUtn">
         <child id="6030121483517072203" name="outputPath" index="2OXz1" />
         <child id="3609768169816292377" name="jvmArgs" index="1psgkv" />
         <child id="8961448726281511691" name="path" index="1YJTkC" />
