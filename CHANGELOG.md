@@ -12,6 +12,9 @@ The project does _not_ follow Semantic Versioning and the changes are documented
 - Build: `checkmodels` (MPS model checker) now runs as part of `check`/`build` and fails the build on model-check errors.
 - Interpreter test runner: JUnit reports link to the tested nodes – suite properties `nodeRef`/`nodeRef.<testcase>` hold the node references, failure messages contain the node URL of the failing test item
 
+### Changed
+- Variability: Better editing of feature decision tables: the caret moves to the new row on insert (Shift+Enter inserts above) and to the neighbouring row on delete. The last row can no longer be deleted.
+
 ### Fixed
 
 - Ship the interpreter-test runner in the main artifact and fix completion and improved UX of the interpreter config.
