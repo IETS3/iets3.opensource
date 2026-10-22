@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <solution name="org.iets3.core.expr.genjava.functionalJava" uuid="708a03ad-8699-43c9-821a-6cd00b68e9f8" moduleVersion="0">
   <models>
-    <modelRoot type="java_classes" contentPath="${module}/lib">
+    <modelRoot contentPath="${module}/lib" type="java_classes">
       <sourceRoot location="functionaljava.jar" />
     </modelRoot>
   </models>

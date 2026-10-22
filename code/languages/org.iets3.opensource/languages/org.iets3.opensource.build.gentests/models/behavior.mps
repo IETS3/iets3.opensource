@@ -990,7 +990,7 @@
     </node>
   </node>
   <node concept="13h7C7" id="7Lttyc2SHJQ">
-    <ref role="13h7C2" to="dc1n:7Lttyc2SH5O" resolve="CustomRunnerAspect" />
+    <ref role="13h7C2" to="dc1n:7Lttyc2SH5O" resolve="InterpreterTestRunnerAspect" />
     <node concept="13hLZK" id="7Lttyc2SHJR" role="13h7CW">
       <node concept="3clFbS" id="7Lttyc2SHJS" role="2VODD2" />
     </node>
@@ -1018,9 +1018,7 @@
                   <node concept="37vLTw" id="7Lttyc2W6aZ" role="37wK5m">
                     <ref role="3cqZAo" node="7Lttyc2W1LD" resolve="kind" />
                   </node>
-                  <node concept="37vLTw" id="7Lttyc2W6b0" role="37wK5m">
-                    <ref role="3cqZAo" node="7Lttyc2W1LF" resolve="child" />
-                  </node>
+                  <node concept="13iPFW" id="3DeAMIU$q_j" role="37wK5m" />
                 </node>
               </node>
             </node>
