@@ -1572,6 +1572,16 @@
             </node>
           </node>
         </node>
+        <node concept="1SiIV0" id="_Fbb89yYsJ" role="3bR37C">
+          <node concept="3bR9La" id="_Fbb89yYsK" role="1SiIV1">
+            <ref role="3bR37D" to="ffeo:1TaHNgiIbIQ" resolve="MPS.Core" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="5DM8XKCHwa0" role="3bR37C">
+          <node concept="3bR9La" id="5DM8XKCHwa1" role="1SiIV1">
+            <ref role="3bR37D" to="90a9:29so9Vb$6T5" resolve="de.slisson.mps.tables.runtime" />
+          </node>
+        </node>
       </node>
       <node concept="1E1JtD" id="7yHH$DDp$e7" role="2G$12L">
         <property role="BnDLt" value="true" />
@@ -2197,11 +2207,6 @@
         <node concept="1SiIV0" id="2L0OAuQ2Fu9" role="3bR37C">
           <node concept="3bR9La" id="2L0OAuQ2Fua" role="1SiIV1">
             <ref role="3bR37D" node="JUiQTzdslj" resolve="org.iets3.core.expr.typetags" />
-          </node>
-        </node>
-        <node concept="1SiIV0" id="64l_37QnW2n" role="3bR37C">
-          <node concept="3bR9La" id="64l_37QnW2o" role="1SiIV1">
-            <ref role="3bR37D" to="90a9:54z9_KDR0Ol" resolve="com.mbeddr.mpsutil.intentions" />
           </node>
         </node>
       </node>
@@ -16145,6 +16150,10 @@
         </node>
       </node>
     </node>
+    <node concept="2igEWh" id="44RyrhrDweX" role="1hWBAP">
+      <property role="3UIfUI" value="10000" />
+      <property role="1YnnvL" value="1024" />
+    </node>
     <node concept="2G$12M" id="65GA3KslPg9" role="3989C9">
       <property role="TrG5h" value="org.iets3.interpeterExecutor" />
       <node concept="1E1JtA" id="65GA3KslPpV" role="2G$12L">
@@ -16227,10 +16236,6 @@
           </node>
         </node>
       </node>
-    </node>
-    <node concept="2igEWh" id="44RyrhrDweX" role="1hWBAP">
-      <property role="3UIfUI" value="10000" />
-      <property role="1YnnvL" value="1024" />
     </node>
   </node>
   <node concept="1l3spW" id="OJuIQpzfqR">
