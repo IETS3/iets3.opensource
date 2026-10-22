@@ -13,7 +13,7 @@ import jetbrains.mps.smodel.adapter.ids.MetaIdFactory;
 
 public final class BehaviorAspectDescriptor extends BaseBehaviorAspectDescriptor {
   private final BHDescriptor myRunKernelFGeneratedTests__BehaviorDescriptor = new RunKernelFGeneratedTests__BehaviorDescriptor();
-  private final BHDescriptor myCustomRunnerAspect__BehaviorDescriptor = new CustomRunnerAspect__BehaviorDescriptor();
+  private final BHDescriptor myInterpreterTestRunnerAspect__BehaviorDescriptor = new InterpreterTestRunnerAspect__BehaviorDescriptor();
 
   public BehaviorAspectDescriptor() {
   }
@@ -23,7 +23,7 @@ public final class BehaviorAspectDescriptor extends BaseBehaviorAspectDescriptor
     SAbstractConcept cncpt = concept;
     switch (conceptIndex.index(cncpt)) {
       case 0:
-        return myCustomRunnerAspect__BehaviorDescriptor;
+        return myInterpreterTestRunnerAspect__BehaviorDescriptor;
       case 1:
         return myRunKernelFGeneratedTests__BehaviorDescriptor;
       default:

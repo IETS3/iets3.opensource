@@ -19,6 +19,7 @@ import org.iets3.core.expr.base.plugin.MessageValue;
 import com.mbeddr.mpsutil.interpreter.rt.InterpreterEscapeException;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations;
 import com.mbeddr.mpsutil.interpreter.rt.InterpreterRuntimeException;
+import org.iets3.core.expr.base.behavior.TraceFailures;
 import org.iets3.core.base.behavior.ICanStoreCheckResult__BehaviorDescriptor;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
 import jetbrains.mps.internal.collections.runtime.ListSequence;
@@ -71,6 +72,8 @@ public final class ConstraintFailedTestItem__BehaviorDescriptor extends BaseBHDe
         result.setOk(false);
         result.setErrorMessage(new MessageValue("failed with InterpreterRuntimeException: " + ire.getMessage()));
         result.setException(ire);
+        // Keep the trace the interpreter had built when it threw, so that Show Trace still works.
+        result.setTrace(TraceFailures.markFailure(ire));
       } finally {
         CVH.overrideWithException = false;
       }

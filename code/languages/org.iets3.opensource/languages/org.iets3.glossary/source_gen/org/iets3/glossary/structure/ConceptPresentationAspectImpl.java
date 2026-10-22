@@ -63,7 +63,7 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
           cpb.shortDesc("a glossary of terms");
           cpb.presentationByName();
-          cpb.icon(IconContainer.RESOURCE_a0a3a0a4b0m);
+          cpb.icon(IconContainer.RESOURCE_0);
           props_GlossaryChunk = cpb.create();
         }
         return props_GlossaryChunk;

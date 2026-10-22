@@ -8,46 +8,67 @@ The project does _not_ follow Semantic Versioning and the changes are documented
 ## October 2026
 
 ### Added
+
 - Build: `checkmodels` (MPS model checker) now runs as part of `check`/`build` and fails the build on model-check errors.
+- Interpreter test runner: JUnit reports link to the tested nodes – suite properties `nodeRef`/`nodeRef.<testcase>` hold the node references, failure messages contain the node URL of the failing test item
 
 ### Changed
 - Variability: Better editing of feature decision tables: the caret moves to the new row on insert (Shift+Enter inserts above) and to the neighbouring row on delete. The last row can no longer be deleted.
 
+### Fixed
+
+- Ship the interpreter-test runner in the main artifact and fix completion and improved UX of the interpreter config.
+- Interpreter test runner: required output folder, faster discovery, cleanup
 
 ## September 2026
 
-### Added
-- Variability: New intention "Adapt Extending Configurations to Changes" on abstract feature model configurations. It propagates changes of the abstract configuration to *all* transitively extending configurations in one step (with progress reporting), instead of applying the per-configuration fix "Adapt this Configuration to the extended Configuration" one-by-one.
-
 ### Changed
+
+- KernelF: `EnumLiteral` now implements `ISmartReferent` and derives its `resolveInfo` from the same presentation (qualified for a qualified enum, bare otherwise), so completion, the editor cell and `renderReadable()` agree. The hand-written `EnumLiteralRef` substitute menus and the qualified filter in its scope were dropped in favour of the smart-reference machinery MPS generates. The auxiliary concept `QualifierRef` was removed; it had no instances and was never part of a valid model, so no migration is required.
 - Variability: The update-configurations tasks were refactored - the common functionality of the tasks updating one, all, or all extending configurations now lives in the shared base classes `AbstractUpdateConfigsTask` / `ConfigFromFeatureModelUpdater`.
 
 ### Fixed
--  Physical units: Units are no longer offered twice in the code completion menu of a number literal.
+
+- KernelF: an exception thrown by the interpreter no longer costs the whole trace. `Show Trace` now opens with everything that was computed before the exception, and the node that threw is marked with the exception and highlighted in the trace tree. This covers the generic trace roots (functions, constants, function calls) as well as the test items, whose `catch` branches used to drop the trace.
+- KernelF: `renderReadable()` of the `isIn`/`isNotIn` enumeration dot targets rendered `isIn([, , ])` instead of `isIn(blue, green, red)`: the separator was joined onto each selector's presentation instead of onto the sequence, which resolved to the varargs `String.join(CharSequence, CharSequence...)` with no elements.
+- KernelF: the `is`/`isIn` enumeration dot targets are backwards compatible with models that have not run the "move link up" migration of the `EnumIsTarget`/`EnumIsInTarget` refactoring yet. `EnumIsTarget` and `EnumIsInTarget` now have their own editors that show the deprecated `literal_old`/`selectors_old` elements in red, hidden as soon as the deprecated reference/child is empty. Behavior, generator and interpreter read the value through the new `AbstractEnumSingleInTarget.effectiveLiteral()`/`AbstractEnumInTarget.effectiveSelectors()` behavior methods, which the two legacy concepts override to fall back to the deprecated link, so an unmigrated model still renders, interprets and generates correctly.
+- KernelF: `RecordValue` no longer throws a `NullPointerException` from `equals` or `compareTo` when a record member has no value, nor from `compareTo` for inline records, which carry no record declaration. `equals`, `hashCode` and `compareTo` are consistent with each other again, so record values behave correctly in Java-side hash-based and sorted collections.
+- KernelF: a broken reference to a literal of a qualified enum no longer rebinds to a same-named literal of a different enum, because the persisted `resolve=` info now carries the qualified name instead of the simple one.
+- KernelF: entries in the trace explorer are no longer truncated after a very low character limit, which made traces hard to read. The limit was raised and the tooltip now shows the full, untruncated text.
+- KernelF: Consistent usage of indent layout in Expression concepts.
+- KernelF: the square brackets of `alt`, operator groups, `query` and `validate` expressions are no longer misplaced when the expression is too wide for one line. The indent layout could wrap the line between a bracket and the list it encloses, and the brackets, which are painted across the height of their parent collection, then spanned several lines. The brackets and their list are laid out horizontally again, so they always stay together.
+- KernelF: Added a workaround that allows the deletion of whole number literals nodes by pressing BACKSPACE or DELETE in case that the number literal value is presented in hexadecimal format. This kind of deletion was only possible for decimal number literals before due to an internal implementation problem.
+  Physical units: Units are no longer offered twice in the code completion menu of a number literal.
 - Variability: Intention "Adapt this configuration to the extended configuration" no longer skips sub-configurations whose content is still unspecified. Such a content is now materialized as an inline configuration derived from the referenced feature model, so the values of the extended configuration are inherited.
 - Variability: Intention "Inline referenced configuration" now inlines the content of the whole `extends` chain, and looking up sub-configurations of referenced configurations also considers the configurations they extend (e.g. for `using` arguments).
 
+### Added
+
+- Variability: New intention "Adapt Extending Configurations to Changes" on abstract feature model configurations. It propagates changes of the abstract configuration to _all_ transitively extending configurations in one step (with progress reporting), instead of applying the per-configuration fix "Adapt this Configuration to the extended Configuration" one-by-one.
 
 ## August 2026
 
 ### Fixed
+
 - Improve uniqueness name check of `IFunctionLike` `getUniquelyNamedElements()` behavior to avoid overzealous checking.
 - Variability: Feature attribute values are not overwritten anymore if the value stays the same. This avoids changing the model if not necessary, esp. it avoids merge conflicts.
-
+- `IFunctionLike` `getUniquelyNamedElements()` no longer reports duplicate names for commented out code.
 
 ## July 2026
 
 ### Added
+
 - IFunctionLike takes arguments and named body content into account when performing ab uniqueness name check
 - Developer tooling: the repository now ships an `iets3-os-developer` agent skill (under `.claude/skills/`) capturing repo-specific MPS language-engineering knowledge (variability, KernelF, physical units) for AI-assisted development with Claude Code.
 
 ### Fixed
-- Variability: `EvalVarPointCache.flushCaches()` was a no-op when the variability-aware artifact (IVAA) was implemented as a node attribute (annotation).
 
+- Variability: `EvalVarPointCache.flushCaches()` was a no-op when the variability-aware artifact (IVAA) was implemented as a node attribute (annotation).
 
 ## June 2026
 
 ### Added
+
 - Operatore 'isNot' and 'isNotIn' have been introduced for enumerations. The first checks if a given enumeration element is not equal to another one. The second checks whether this element is not contained in a list.
 - Variability: For the filtering of 150% models, a new API for `IRenamer` is provided. It allows renaming all clones of an instantiated element in one step. The old API which allows renaming only one-by-one is still available - this is not a breaking change.
 - Variability: Introduced extension point `configCombinationLogicExtPoint` (interface `IConfigCombinationLogic`) to make the logic of combining configurations (via `extends`, `abstract` and referenced sub-configurations) configurable per application.
@@ -57,7 +78,6 @@ The project does _not_ follow Semantic Versioning and the changes are documented
 
 - CLI interpreter: Relaxed the reference scope of `CustomRunnerAspect` so it can reference `BuildMps_Solution`s outside its containing root, allowing a proper MPS build to be composed for command-line interpreter test runs. The generator was adapted accordingly, so the `execTestsByInterpreter` Gradle task works end-to-end again.
 
-
 ## May 2026
 
 ### Fixed
@@ -65,7 +85,7 @@ The project does _not_ follow Semantic Versioning and the changes are documented
 - Variability: The editing of feature models in tree layout has been improved. E.g., typing ENTER on a feature will create a new sibling. Typing ":" in a feature's name will change it to a feature model include node. The intentions "Change to feature / feature model include" previously lost information about the feature, this is also fixed.
 - Variability: Fix workaround for using for-all-variants checking rules outside the IDE (e.g., on a build server). Due to MPS-34340, the for-all-variants checking cannot be done outside the IDE if the model under check has more than one root nodes. This bugfix includes roots of LogicalChildren in the list of used root nodes.
 - Physical units (language `org.iets3.core.expr.typetags.physunits`): Update unit in typesystem after prefix has been removed (e.g., from "cm" to "m").
-
+- `org.iets3.core.expr.datetime.runtime` catch DateTimeException causing an internal interpreter exception ([#1773](https://github.com/IETS3/iets3.opensource/issues/1773))
 
 ## April 2026
 
@@ -96,6 +116,7 @@ The project does _not_ follow Semantic Versioning and the changes are documented
 - Fixed a bug in the `execTestsByInterpreter` task which would result in a wrong JNA path
 - Variability: Newly created feature models will not show a "Property constraint violation" error anymore.
 
+- Hexadecimal number support now works for MPS 2025.1 and above.
 
 ## February 2026
 
@@ -113,9 +134,9 @@ The project does _not_ follow Semantic Versioning and the changes are documented
 - The behaviour methods of `IValidNamedConcept` for umlauts, paragraphs and apostrophes in language `org.iets3.core.base` were refactored internally and allow now customization via extension point.
 
 ### Fixed
+
 - Add missing deps. to SBOM
 - Add missing dependencies to build scripts
-
 
 ## January 2026
 
@@ -127,7 +148,6 @@ The project does _not_ follow Semantic Versioning and the changes are documented
 - Variability: Viewer for skeleton trees has been improved (better error reporting, more stable, does not break on nodes which are string literals).
 - ShortLambda Interpreter: Fixed a bug which resulted in a `RuntimeErrorType` when interpreting ShortLambdas.
 - InterpreterCoverageAssResult: fix unique ID calculation ([#1617](https://github.com/IETS3/iets3.opensource/issues/1617))
-
 
 ## December 2025
 
@@ -143,9 +163,8 @@ The project does _not_ follow Semantic Versioning and the changes are documented
 ### Changed
 
 - Variability: Remove deprecated concepts `VariabilityModelChunk_old`, and some related concepts.
-- Typesystem: All usages of colon casts were transformed to the 'as' cast for null safety. From now on no colon casts are allowed in the typesystem, also read this issue for more info: https://github.com/IETS3/iets3.opensource/issues/688
+- Typesystem: All usages of colon casts were transformed to the 'as' cast for null safety. From now on no colon casts are allowed in the typesystem, also read this issue for more info: <https://github.com/IETS3/iets3.opensource/issues/688>
 - Variability: The grouping of root constraints has been improved. New root constraints will be added next to the other constraints in the respective groups. This helps to avoid merge conflicts.
-
 
 ## November 2025
 
@@ -153,13 +172,18 @@ The project does _not_ follow Semantic Versioning and the changes are documented
 
 - The Maven POM now contains all bundled JARs as dependencies with `provided` scope to help with automated license and
   vulnerability scanning.
+- The Grammar Cells of KernelF editors can now be customized through the extension point `EditorCustomization`. Optional cells, flag cells, constant cells, substitute cells and side transformations can be customized (activation of substitutions, side transformations, description text, post-processing etc.).
 
 ### Fixed
 
 - A bug was fixed that caused the editor of NumberLiteral to break if a property macro was used for its value.
 - Added missing support for IndexExpr for the operations findFirst and forEach.
+- The AssessmentAnalyzer doesn't try to modify read-only models on the CI anymore.
 - An invalid checking rule for parameter value types of functional component instances has been removed. It was introduced by a move of IETS3.Core languages in February 2025.
 
+### Improved
+
+- Some editor action descriptions were improved.
 
 ## October 2025
 
@@ -182,7 +206,6 @@ The project does _not_ follow Semantic Versioning and the changes are documented
 - A DecTab bug not respecting the default value was fixed and a corresponding warning was added to warn users which default value takes precedence
 - Ignored concepts of the coverage analyzer are now colored with IGNORED_COLOR.
 
-
 ## September 2025
 
 ### Added
@@ -199,7 +222,6 @@ The project does _not_ follow Semantic Versioning and the changes are documented
 
 - Data tables, binary and multi-criteria decision tables now support deletion, copying and pasting when multiple cells are selected with the mouse.
 
-
 ## July 2025
 
 ### Fixed
@@ -214,7 +236,6 @@ The project does _not_ follow Semantic Versioning and the changes are documented
 - Solver: Add test infrastructure to ensure that errors computed by any solver are converted to editor messages properly.
 - Variability: APIs for FilterParams (configuration of filter&instantiate process) and skeleton tree data structure were extended
 - Warning for BangOp in case type is not OptionType
-
 
 ## June 2025
 
@@ -235,7 +256,6 @@ The project does _not_ follow Semantic Versioning and the changes are documented
 
   An [enhancement script](http://127.0.0.1:63320/node?ref=r%3A531014dc-62ca-45fa-b1c2-cf992369440b%28org.iets3.core.expr.typetags.physunits.scripts%29%2F6252521573649140294)
   is provided to replace 'mu' with 'micro sign'.
-
 
 ## May 2025
 
@@ -282,7 +302,6 @@ The project does _not_ follow Semantic Versioning and the changes are documented
 - a new approach to run interpreter test case from command line (and inside MPS) directly without invoking JUnit code generation
 - Added EmptyType to Pluggable Type Facade (PTF). If your language has some kind of _NixType_, you should override `PrimitiveTypeMapper.isEmptyType()` to recognize your _NixType_.
 
-
 ### Fixed
 
 - Strings are not comparable with strings with constraints.
@@ -325,7 +344,6 @@ The project does _not_ follow Semantic Versioning and the changes are documented
 
 - Physical units now also support metric scaling for only the positive and negative prefixes. Scaling can also be overwritten for units by overwritten `IUnitLangConfig#getOverwrittenScaling` for the extension point `PhysUnitLangConfig`.
 - Execution of Test by Interpreter can be done without generation and compilation.
-
 
 ### Added
 
@@ -402,13 +420,14 @@ The project does _not_ follow Semantic Versioning and the changes are documented
 ### Added
 
 ### Changed
+
 - Reduction rule for EnumLiterals can now also be applied for subconcepts
 
 ## June 2024
 
 ### Added
 
-- A new memory prefix for units was implemented (https://en.wikipedia.org/wiki/JEDEC_memory_standards#Unit_prefixes_for_semiconductor_storage_capacity)
+- A new memory prefix for units was implemented (<https://en.wikipedia.org/wiki/JEDEC_memory_standards#Unit_prefixes_for_semiconductor_storage_capacity>)
 - Quantities now support transformation properties such as scalar or vector, so that you can't incorrectly mix units such as speed (scalar) and velocity (vector).
 - The error message that a unit is shadowed, can now be ignored through an annotation.
 
@@ -446,13 +465,13 @@ The project does _not_ follow Semantic Versioning and the changes are documented
 ### Added
 
 - Numbers ranges now support exclusive and inclusive intervals.
-- Various small improvements and fixes were made in  `org.iets3.core.expr.typetags.physunits`.
+- Various small improvements and fixes were made in `org.iets3.core.expr.typetags.physunits`.
 
 ## March 2024
 
 ### Added
 
-- *MessageDefiniton* uses *extensionPoint/IdentifierConfigurator/* that allows the user to decide to use german umlauts and paragraphs in it.
+- _MessageDefiniton_ uses _extensionPoint/IdentifierConfigurator/_ that allows the user to decide to use german umlauts and paragraphs in it.
 - This extensionPoint got a new method to select which implementation will be chosen.
 - A new (experimental) language `org.iets3.core.expr.typetags.physunits` was added that should eventually replace the old unit language. Read the documentation in `org.iets3.core.expr.typetags.physunits.documentation` to learn more about the features of the new language.
 
@@ -465,13 +484,13 @@ The project does _not_ follow Semantic Versioning and the changes are documented
 ## February 2024
 
 ### Added
+
 - updated gradle build. Build will now fail in case tests were failing.
 - Enumerations can have an order by declaration, by literal or by value associated with the literal
 - A new devkit `org.iets3.core.expr.base.devkit` was added that excludes the REPL and tracing language.
 - `org.iets3.core.expr.core.devkit` and `org.iets3.core.expr.advanced.devkit` were extracted into a separate plugin `org.iets3.core.expr.devkits`.
 - A new devkit `org.iets3.core.expr.interpreter.devkit` was created for all expression interpreters.
 - A new devkit `org.iets3.core.expr.repl.devkit` was created for the REPL language.
-
 
 ### Changed
 
@@ -480,7 +499,8 @@ The project does _not_ follow Semantic Versioning and the changes are documented
 - Enumerations can have an order by declaration, by literal or by value ascociated with the literal
 
 ### Fixed
-- Update java generator to fix compilation error of generated [TupleAccess]( https://github.com/IETS3/iets3.opensource/issues/774)
+
+- Update java generator to fix compilation error of generated [TupleAccess](https://github.com/IETS3/iets3.opensource/issues/774)
 
 ## January 2024
 
@@ -498,7 +518,7 @@ The project does _not_ follow Semantic Versioning and the changes are documented
 - `NumberLiteral` can now be converted to a `BigDecimal` with the method `toBigDecimal`.
 - Uncatched `DateTimeException` during check DateLiteral
 - The type parameter is now used in the Java generation of the FailExpr.
--  Named based access of result columns of multi decision tables were added. Columns can be referenced by name and coexist with the index based access.
+- Named based access of result columns of multi decision tables were added. Columns can be referenced by name and coexist with the index based access.
 
 ## December 2023
 
@@ -521,8 +541,8 @@ The project does _not_ follow Semantic Versioning and the changes are documented
 ### Added
 
 - The `sort` method of collections now supports more types: all primitive types, the option type, all datetime types, the temporal type and the record type
-   - Records: The sorting order can be added through the intention `Add a Comparison Order`, otherwise, the records are sorted based on the declaration order of the members
-   - Option: Sorting removes all `none` values since the underlying data structure of collections doesn't support null values.
+  - Records: The sorting order can be added through the intention `Add a Comparison Order`, otherwise, the records are sorted based on the declaration order of the members
+  - Option: Sorting removes all `none` values since the underlying data structure of collections doesn't support null values.
 
 ### Changed
 
@@ -535,6 +555,7 @@ The project does _not_ follow Semantic Versioning and the changes are documented
 - String validation: A bug in the number detection logic was fixed
 - String validation: A bug in the successor execution logic was fixed
 -
+
 ## October 2023
 
 ### Fixed
@@ -574,7 +595,7 @@ The language extends typetags with support for different binding times of values
 ### Added
 
 - Tuples are now handled within the type system.
-   Instead of allowing JoinTypes within tuples we merge different tuple types by JoinTypes.
+  Instead of allowing JoinTypes within tuples we merge different tuple types by JoinTypes.
 - Each subconcept of IValidNamedConcept can now contribute and customize naming constraints
 
 ### Changed

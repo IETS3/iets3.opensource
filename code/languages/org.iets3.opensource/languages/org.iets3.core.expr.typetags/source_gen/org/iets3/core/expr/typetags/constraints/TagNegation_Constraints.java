@@ -30,7 +30,7 @@ public class TagNegation_Constraints extends BaseConstraintsDescriptor {
         boolean result = staticCanBeAnAncestor(context.getNode(), context.getChildNode(), context.getChildConcept(), context.getParentNode(), context.getLink());
 
         if (!(result) && checkingNodeContext != null) {
-          checkingNodeContext.setBreakingNode(canBeRootBreakingPoint);
+          checkingNodeContext.setBreakingNode(canBeAncestorBreakingPoint);
         }
 
         return result;
@@ -40,7 +40,7 @@ public class TagNegation_Constraints extends BaseConstraintsDescriptor {
   private static boolean staticCanBeAnAncestor(SNode node, SNode childNode, SAbstractConcept childConcept, SNode parentNode, SContainmentLink link) {
     return SConceptOperations.isSubConceptOf(SNodeOperations.asSConcept(childConcept), CONCEPTS.UnaryTag$1r);
   }
-  private static final SNodePointer canBeRootBreakingPoint = new SNodePointer("r:293ffad1-a743-4e41-94d9-eecb8a2e0dcb(org.iets3.core.expr.typetags.constraints)", "1844547991031624882");
+  private static final SNodePointer canBeAncestorBreakingPoint = new SNodePointer("r:293ffad1-a743-4e41-94d9-eecb8a2e0dcb(org.iets3.core.expr.typetags.constraints)", "1844547991031624882");
 
   private static final class CONCEPTS {
     /*package*/ static final SConcept TagNegation$5E = MetaAdapterFactory.getConcept(0x5186c6ce428c4f09L, 0xa9df73d9e86c27d3L, 0x1dcc29cc00ea5f01L, "org.iets3.core.expr.typetags.structure.TagNegation");

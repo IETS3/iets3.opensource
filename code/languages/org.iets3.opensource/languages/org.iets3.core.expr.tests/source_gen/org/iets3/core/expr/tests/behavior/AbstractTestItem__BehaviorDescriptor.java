@@ -37,6 +37,7 @@ import jetbrains.mps.lang.smodel.generator.smodelAdapter.SConceptOperations;
 import com.mbeddr.mpsutil.traceExplorer.plugin.ITraceRerunner;
 import com.mbeddr.mpsutil.traceExplorer.plugin.IRerunnableTraceRecord;
 import com.mbeddr.mpsutil.interpreter.rt.ComputationTrace;
+import org.iets3.core.expr.base.behavior.TraceFailures;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.lang.test.runtime.NodeCheckerUtil;
 import jetbrains.mps.lang.test.behavior.NodeCheckOperation__BehaviorDescriptor;
@@ -146,8 +147,16 @@ public final class AbstractTestItem__BehaviorDescriptor extends BaseBHDescriptor
     final SNode testItem = __thisNode__;
     final ITraceRerunner runner = new ITraceRerunner() {
       public IRerunnableTraceRecord rerun() {
-        IEvalResult r = AbstractTestItem__BehaviorDescriptor.executeTest_id4KZjPKUdEYm.invoke(testItem);
-        ComputationTrace t = r.getTrace();
+        ComputationTrace t;
+        try {
+          IEvalResult r = AbstractTestItem__BehaviorDescriptor.executeTest_id4KZjPKUdEYm.invoke(testItem);
+          t = r.getTrace();
+        } catch (Throwable ex) {
+          // An exception must not cost the whole trace: show what the interpreter computed
+          // before it, with the node that threw marked as the failure.
+          ex.printStackTrace();
+          t = TraceFailures.traceForFailure(testItem, null, ex);
+        }
         if (t != null) {
           t.setRerunner(this);
         }

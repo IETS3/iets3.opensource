@@ -41,7 +41,7 @@ import javax.swing.JComponent;
 
 public class SkeletonTreeViewer_Tool extends GeneratedTool {
   private static final Logger LOG = Logger.getLogger(SkeletonTreeViewer_Tool.class);
-  private static final Icon ICON = IconContainer.ICON_a0_0;
+  private static final Icon ICON = IconContainer.ICON1;
   private JBCefBrowser browser;
   private JPanel rootPanel;
   private SNode ivaa;
