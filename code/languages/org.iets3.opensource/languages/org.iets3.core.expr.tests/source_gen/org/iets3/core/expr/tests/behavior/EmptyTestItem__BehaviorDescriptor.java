@@ -13,7 +13,6 @@ import java.util.List;
 import java.util.Arrays;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.mps.openapi.model.SNode;
-import org.iets3.core.base.behavior.ICanStoreCheckResult__BehaviorDescriptor;
 import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
@@ -32,7 +31,6 @@ public final class EmptyTestItem__BehaviorDescriptor extends BaseBHDescriptor {
   /*package*/ static EvalResult executeTestInternal_id78hTg1$THJg(@NotNull SNode __thisNode__) {
     EvalResult r = new EvalResult();
     r.setOk(true);
-    ICanStoreCheckResult__BehaviorDescriptor.storeLastResult_id3R3AIvuq5Dp.invoke(__thisNode__, r);
     return r;
   }
   /*package*/ static String asString_id6iqfHNBPkjP(@NotNull SNode __thisNode__) {

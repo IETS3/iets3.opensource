@@ -22,7 +22,6 @@ import com.mbeddr.mpsutil.interpreter.rt.InvalidValueException;
 import org.iets3.core.expr.base.plugin.MessageValue;
 import org.iets3.core.expr.base.plugin.ConstraintFailedException;
 import com.mbeddr.mpsutil.interpreter.rt.InterpreterEscapeException;
-import org.iets3.core.base.behavior.ICanStoreCheckResult__BehaviorDescriptor;
 import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
@@ -83,7 +82,6 @@ public final class ReportTestItem__BehaviorDescriptor extends BaseBHDescriptor {
         CVH.overrideWithException = false;
       }
     }
-    ICanStoreCheckResult__BehaviorDescriptor.storeLastResult_id3R3AIvuq5Dp.invoke(__thisNode__, result);
     return result;
   }
   /*package*/ static String asString_id6iqfHNBPkjP(@NotNull SNode __thisNode__) {
