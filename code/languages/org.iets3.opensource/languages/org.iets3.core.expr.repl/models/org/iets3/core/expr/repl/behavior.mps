@@ -5487,14 +5487,6 @@
             </node>
           </node>
         </node>
-        <node concept="3clFbF" id="ub9nkyPTQ9" role="3cqZAp">
-          <node concept="BsUDl" id="ub9nkyPTQ7" role="3clFbG">
-            <ref role="37wK5l" to="gdgh:3R3AIvuq5Dp" resolve="storeLastResult" />
-            <node concept="37vLTw" id="ub9nkyPTWo" role="37wK5m">
-              <ref role="3cqZAo" node="ub9nkyOIWH" resolve="result" />
-            </node>
-          </node>
-        </node>
         <node concept="3clFbF" id="ub9nkyONn4" role="3cqZAp">
           <node concept="37vLTw" id="ub9nkyONn2" role="3clFbG">
             <ref role="3cqZAo" node="ub9nkyOIWH" resolve="result" />
