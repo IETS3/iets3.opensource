@@ -19,7 +19,6 @@ import org.jetbrains.mps.openapi.model.SNode;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SModelOperations;
 import jetbrains.mps.internal.collections.runtime.ListSequence;
 import org.iets3.core.base.behavior.ICanRunCheckManually__BehaviorDescriptor;
-import org.iets3.core.base.behavior.RunManuallyUtil;
 import org.jetbrains.mps.openapi.language.SInterfaceConcept;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 
@@ -67,16 +66,7 @@ public class runAllManuallyOnModel_Action extends BaseAction {
   @Override
   public void doExecute(@NotNull final AnActionEvent event, final Map<String, Object> _params) {
     final List<SNode> manuals = SModelOperations.nodes(((SModel) MapSequence.fromMap(_params).get("model")), CONCEPTS.ICanRunCheckManually$e);
-    final EditorContext context = ((EditorContext) MapSequence.fromMap(_params).get("ctx"));
-    CommandWithMessage.execute("running for " + ListSequence.fromList(manuals).count() + " nodes.", ((MPSProject) MapSequence.fromMap(_params).get("mpsProject")).getRepository(), new Runnable() {
-      public void run() {
-        for (SNode m : ListSequence.fromList(manuals).where((it) -> (boolean) ICanRunCheckManually__BehaviorDescriptor.mustBeRunManually_id3R3AIvumAZH.invoke(it) && (boolean) ICanRunCheckManually__BehaviorDescriptor.readyToRunManually_id3R3AIvumwpv.invoke(it))) {
-          ICanRunCheckManually__BehaviorDescriptor.runManually_id3R3AIvumrTm.invoke(m, context);
-        }
-        RunManuallyUtil.updateEditors(context, manuals);
-      }
-    });
-
+    RunManuallyWithProgress.run("running for " + ListSequence.fromList(manuals).count() + " nodes.", ((MPSProject) MapSequence.fromMap(_params).get("mpsProject")), ((EditorContext) MapSequence.fromMap(_params).get("ctx")), ListSequence.fromList(manuals).where((it) -> (boolean) ICanRunCheckManually__BehaviorDescriptor.mustBeRunManually_id3R3AIvumAZH.invoke(it) && (boolean) ICanRunCheckManually__BehaviorDescriptor.readyToRunManually_id3R3AIvumwpv.invoke(it)), manuals);
   }
 
   private static final class CONCEPTS {

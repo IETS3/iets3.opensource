@@ -704,7 +704,7 @@
       <scope id="378138962376332723" at="102,0,122,0">
         <var name="mtrn" id="378138962376332730" />
       </scope>
-      <unit id="378138962376360503" at="93,158,98,5" name="org.iets3.core.expr.tracing.plugin.plugin.DefaultTraceExplorerActionHandler$1" />
+      <unit id="378138962376360503" at="93,142,98,5" name="org.iets3.core.expr.tracing.plugin.plugin.DefaultTraceExplorerActionHandler$1" />
       <unit id="378138962375649286" at="142,0,147,0" name="org.iets3.core.expr.tracing.plugin.plugin.DefaultTraceExplorerActionHandler$CONCEPTS" />
       <unit id="378138962376332789" at="110,35,117,7" name="org.iets3.core.expr.tracing.plugin.plugin.DefaultTraceExplorerActionHandler$2" />
       <unit id="378138962375649286" at="37,0,148,0" name="org.iets3.core.expr.tracing.plugin.plugin.DefaultTraceExplorerActionHandler" />

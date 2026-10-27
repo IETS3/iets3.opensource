@@ -73,7 +73,7 @@ public class runManuallyOnNode_Action extends BaseAction {
   public void doExecute(@NotNull final AnActionEvent event, final Map<String, Object> _params) {
     final SNode checkable = SNodeOperations.getNodeAncestor(((SNode) MapSequence.fromMap(_params).get("selected")), CONCEPTS.ICanRunCheckManually$e, true, false);
     final EditorContext context = ((EditorContext) MapSequence.fromMap(_params).get("ctx"));
-    CommandWithMessage.execute("running " + BaseConcept__BehaviorDescriptor.getPresentation_idhEwIMiw.invoke(checkable), ((MPSProject) MapSequence.fromMap(_params).get("mpsProject")).getRepository(), new Runnable() {
+    CommandWithMessage.execute("running " + BaseConcept__BehaviorDescriptor.getPresentation_idhEwIMiw.invoke(checkable), ((MPSProject) MapSequence.fromMap(_params).get("mpsProject")), new Runnable() {
       public void run() {
         ICanRunCheckManually__BehaviorDescriptor.runManuallyWithUIUpdate_idub9nkyQ908.invoke(checkable, context);
       }
