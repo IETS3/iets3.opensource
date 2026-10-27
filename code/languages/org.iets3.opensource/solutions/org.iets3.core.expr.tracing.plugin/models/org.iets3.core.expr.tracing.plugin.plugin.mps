@@ -3330,7 +3330,7 @@
         <node concept="3clFbF" id="kZqQ80bo8E" role="3cqZAp">
           <node concept="2YIFZM" id="kZqQ80bo8F" role="3clFbG">
             <ref role="1Pybhc" to="h587:70aAUsa54Vr" resolve="CommandWithMessage" />
-            <ref role="37wK5l" to="h587:70aAUsa54ZB" resolve="execute" />
+            <ref role="37wK5l" to="h587:74TE5_rs2xa" resolve="execute" />
             <node concept="3cpWs3" id="kZqQ80bo8G" role="37wK5m">
               <node concept="2OqwBi" id="kZqQ80bo8H" role="3uHU7w">
                 <node concept="37vLTw" id="kZqQ80bo8I" role="2Oq$k0">
@@ -3344,13 +3344,8 @@
                 <property role="Xl_RC" value="Preparing Trace of " />
               </node>
             </node>
-            <node concept="2OqwBi" id="kZqQ80bo8L" role="37wK5m">
-              <node concept="37vLTw" id="kZqQ80dJUs" role="2Oq$k0">
-                <ref role="3cqZAo" to="jpm3:3ApArNFASVZ" resolve="mpsProject" />
-              </node>
-              <node concept="liA8E" id="kZqQ80bo8O" role="2OqNvi">
-                <ref role="37wK5l" to="z1c3:~Project.getRepository()" resolve="getRepository" />
-              </node>
+            <node concept="37vLTw" id="kZqQ80dJUs" role="37wK5m">
+              <ref role="3cqZAo" to="jpm3:3ApArNFASVZ" resolve="mpsProject" />
             </node>
             <node concept="2ShNRf" id="kZqQ80bo8P" role="37wK5m">
               <node concept="YeOm9" id="kZqQ80bo8Q" role="2ShVmc">
