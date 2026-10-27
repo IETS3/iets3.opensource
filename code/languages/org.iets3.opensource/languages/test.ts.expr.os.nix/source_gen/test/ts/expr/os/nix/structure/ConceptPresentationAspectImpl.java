@@ -11,6 +11,7 @@ import jetbrains.mps.smodel.runtime.ConceptPresentationBuilder;
 public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase {
   private ConceptPresentation props_NixLiteral;
   private ConceptPresentation props_NixType;
+  private ConceptPresentation props_RecordingManualCheck;
 
   @Override
   @Nullable
@@ -31,6 +32,13 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           props_NixType = cpb.create();
         }
         return props_NixType;
+      case LanguageConceptSwitch.RecordingManualCheck:
+        if (props_RecordingManualCheck == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.presentationByName();
+          props_RecordingManualCheck = cpb.create();
+        }
+        return props_RecordingManualCheck;
     }
     return null;
   }
