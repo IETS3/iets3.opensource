@@ -6,6 +6,7 @@ import org.jetbrains.mps.openapi.model.SNode;
 import org.junit.Assert;
 import org.iets3.core.expr.tests.behavior.IEvalResult;
 import org.iets3.core.expr.tests.behavior.AbstractTestItem__BehaviorDescriptor;
+import jetbrains.mps.ide.httpsupport.runtime.base.HttpSupportUtil;
 
 public class TestRunner {
 
@@ -13,7 +14,18 @@ public class TestRunner {
     Assert.assertNotNull(ti);
     IEvalResult executeTest = AbstractTestItem__BehaviorDescriptor.executeTest_id4KZjPKUdEYm.invoke(ti);
     if (!(executeTest.isOk())) {
-      Assert.fail(executeTest.getErrorMessage().toString());
+      Assert.fail(executeTest.getErrorMessage().toString() + nodeUrlSuffix(ti));
+    }
+  }
+
+  private static String nodeUrlSuffix(SNode node) {
+    if (node == null) {
+      return "";
+    }
+    try {
+      return " [" + HttpSupportUtil.getURL(node) + "]";
+    } catch (RuntimeException | LinkageError ignored) {
+      return "";
     }
   }
 }
