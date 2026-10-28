@@ -652,6 +652,9 @@
       <node concept="m$_yC" id="7UIkNvvhXNW" role="m$_yJ">
         <ref role="m$_y1" to="90a9:55VuGTPzgYW" resolve="com.jetbrains.mpsext.viewmodel" />
       </node>
+      <node concept="m$_yC" id="2Bi$RVuoPWO" role="m$_yJ">
+        <ref role="m$_y1" to="ffeo:5xhjlkpPhJu" resolve="jetbrains.mps.ide.httpsupport" />
+      </node>
     </node>
     <node concept="m$_wf" id="7uAdOXh9aSZ" role="3989C9">
       <property role="m$_wk" value="org.iets3.core.expr.repl" />
@@ -7947,6 +7950,16 @@
             <node concept="3qWCbU" id="1RMC8GHEwIf" role="3LXTna">
               <property role="3qWCbO" value="**/*.mps, **/*.mpsr, **/.model" />
             </node>
+          </node>
+        </node>
+        <node concept="1SiIV0" id="2Bi$RVuoPWI" role="3bR37C">
+          <node concept="3bR9La" id="2Bi$RVuoPWJ" role="1SiIV1">
+            <ref role="3bR37D" to="ffeo:mXGwHwhVPj" resolve="JDK" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="2Bi$RVuoPWK" role="3bR37C">
+          <node concept="3bR9La" id="2Bi$RVuoPWL" role="1SiIV1">
+            <ref role="3bR37D" to="ffeo:xSXmQZAqVi" resolve="jetbrains.mps.ide.httpsupport.runtime" />
           </node>
         </node>
       </node>
