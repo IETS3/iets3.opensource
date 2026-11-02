@@ -1518,6 +1518,16 @@
             </node>
           </node>
         </node>
+        <node concept="1SiIV0" id="_Fbb89yYsJ" role="3bR37C">
+          <node concept="3bR9La" id="_Fbb89yYsK" role="1SiIV1">
+            <ref role="3bR37D" to="ffeo:1TaHNgiIbIQ" resolve="MPS.Core" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="5DM8XKCHwa0" role="3bR37C">
+          <node concept="3bR9La" id="5DM8XKCHwa1" role="1SiIV1">
+            <ref role="3bR37D" to="90a9:29so9Vb$6T5" resolve="de.slisson.mps.tables.runtime" />
+          </node>
+        </node>
       </node>
       <node concept="1E1JtD" id="7yHH$DDp$e7" role="2G$12L">
         <property role="BnDLt" value="true" />
@@ -2143,11 +2153,6 @@
         <node concept="1SiIV0" id="2L0OAuQ2Fu9" role="3bR37C">
           <node concept="3bR9La" id="2L0OAuQ2Fua" role="1SiIV1">
             <ref role="3bR37D" node="JUiQTzdslj" resolve="org.iets3.core.expr.typetags" />
-          </node>
-        </node>
-        <node concept="1SiIV0" id="64l_37QnW2n" role="3bR37C">
-          <node concept="3bR9La" id="64l_37QnW2o" role="1SiIV1">
-            <ref role="3bR37D" to="90a9:54z9_KDR0Ol" resolve="com.mbeddr.mpsutil.intentions" />
           </node>
         </node>
       </node>
@@ -16097,6 +16102,9 @@
         <node concept="L2wRC" id="48ZWgAGrvuG" role="39821P">
           <ref role="L2wRA" node="48ZWgAGrsP1" resolve="test.ts.components.core" />
         </node>
+        <node concept="L2wRC" id="vAbAgg1" role="39821P">
+          <ref role="L2wRA" node="vAb0001" resolve="test.org.iets3.variability.artifacts.base" />
+        </node>
         <node concept="L2wRC" id="4dUR79id6UR" role="39821P">
           <ref role="L2wRA" node="4dUR79id6MA" resolve="test.ts.components.hardware" />
         </node>
@@ -17540,6 +17548,82 @@
         </node>
       </node>
     </node>
+    <node concept="1E1JtA" id="vAb0001" role="3989C9">
+      <property role="BnDLt" value="true" />
+      <property role="TrG5h" value="test.org.iets3.variability.artifacts.base" />
+      <property role="3LESm3" value="0739c1d4-1d92-40aa-bea9-a6af6939871a" />
+      <property role="aoJFB" value="eYcmk9QOlj/sources_and_tests" />
+      <node concept="3rtmxn" id="vAb0002" role="3bR31x">
+        <node concept="3LXTmp" id="vAb0003" role="3rtmxm">
+          <node concept="3qWCbU" id="vAb0004" role="3LXTna">
+            <property role="3qWCbO" value="icons/**, resources/**" />
+          </node>
+          <node concept="398BVA" id="vAb0005" role="3LXTmr">
+            <ref role="398BVh" node="OJuIQp$deE" resolve="iets3.lang.opensource" />
+            <node concept="2Ry0Ak" id="vAb0006" role="iGT6I">
+              <property role="2Ry0Am" value="tests" />
+              <node concept="2Ry0Ak" id="vAb0007" role="2Ry0An">
+                <property role="2Ry0Am" value="test.org.iets3.variability.artifacts.base" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="398BVA" id="vAb0008" role="3LF7KH">
+        <ref role="398BVh" node="OJuIQp$deE" resolve="iets3.lang.opensource" />
+        <node concept="2Ry0Ak" id="vAb0009" role="iGT6I">
+          <property role="2Ry0Am" value="tests" />
+          <node concept="2Ry0Ak" id="vAb0010" role="2Ry0An">
+            <property role="2Ry0Am" value="test.org.iets3.variability.artifacts.base" />
+            <node concept="2Ry0Ak" id="vAb0011" role="2Ry0An">
+              <property role="2Ry0Am" value="test.org.iets3.variability.artifacts.base.msd" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="1SiIV0" id="vAb0012" role="3bR37C">
+        <node concept="3bR9La" id="vAb0013" role="1SiIV1">
+          <ref role="3bR37D" node="5wLtKNeSRRr" resolve="org.iets3.components.core" />
+        </node>
+      </node>
+      <node concept="1BupzO" id="vAb0014" role="3bR31x">
+        <property role="3ZfqAx" value="models" />
+        <property role="1Hdu6h" value="true" />
+        <property role="1HemKv" value="true" />
+        <node concept="3LXTmp" id="vAb0015" role="1HemKq">
+          <node concept="398BVA" id="vAb0016" role="3LXTmr">
+            <ref role="398BVh" node="OJuIQp$deE" resolve="iets3.lang.opensource" />
+            <node concept="2Ry0Ak" id="vAb0017" role="iGT6I">
+              <property role="2Ry0Am" value="tests" />
+              <node concept="2Ry0Ak" id="vAb0018" role="2Ry0An">
+                <property role="2Ry0Am" value="test.org.iets3.variability.artifacts.base" />
+                <node concept="2Ry0Ak" id="vAb0019" role="2Ry0An">
+                  <property role="2Ry0Am" value="models" />
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="3qWCbU" id="vAb0020" role="3LXTna">
+            <property role="3qWCbO" value="**/*.mps, **/*.mpsr, **/.model" />
+          </node>
+        </node>
+      </node>
+      <node concept="1SiIV0" id="vAb0021" role="3bR37C">
+        <node concept="3bR9La" id="vAb0022" role="1SiIV1">
+          <ref role="3bR37D" to="ffeo:1TaHNgiIbJ$" resolve="jetbrains.mps.ide.editor" />
+        </node>
+      </node>
+      <node concept="1SiIV0" id="vAbDep1" role="3bR37C">
+        <node concept="3bR9La" id="vAbDep2" role="1SiIV1">
+          <ref role="3bR37D" node="7yHH$DDpyJJ" resolve="org.iets3.variability.artifacts.base" />
+        </node>
+      </node>
+      <node concept="1SiIV0" id="5DM8XKD4d6x" role="3bR37C">
+        <node concept="3bR9La" id="5DM8XKD4d6y" role="1SiIV1">
+          <ref role="3bR37D" node="5wLtKNeSRQd" resolve="org.iets3.core.expr.simpleTypes" />
+        </node>
+      </node>
+    </node>
     <node concept="1E1JtA" id="48ZWgAGrsP1" role="3989C9">
       <property role="BnDLt" value="true" />
       <property role="TrG5h" value="test.ts.components.core" />
@@ -18000,6 +18084,9 @@
       </node>
       <node concept="22LTRM" id="48ZWgAGrv_8" role="22LTRK">
         <ref role="22LTRN" node="48ZWgAGrsP1" resolve="test.ts.components.core" />
+      </node>
+      <node concept="22LTRM" id="vAbAgg2" role="22LTRK">
+        <ref role="22LTRN" node="vAb0001" resolve="test.org.iets3.variability.artifacts.base" />
       </node>
       <node concept="22LTRM" id="1WrO9kaEJAC" role="22LTRK">
         <ref role="22LTRN" node="4dUR79id6MA" resolve="test.ts.components.hardware" />
