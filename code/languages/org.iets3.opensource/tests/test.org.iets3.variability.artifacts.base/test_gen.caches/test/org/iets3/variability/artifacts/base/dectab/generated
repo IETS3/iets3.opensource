@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<product version="3" modelHash="-6u0uwqrxw7p6fjzhjf8s8ab7q9klmfp">
-  <files names="BackspaceOnlyRowKeepsRow_Test.java:DeleteFirstRowFocusesNextFeatureExpr_Test.java:DeleteLastRowFocusesPreviousFeatureExpr_Test.java:DeleteOnlyRowKeepsRow_Test.java:InsertFirstRowInEmptyTable_Test.java:InsertRowAboveInNonEmptyTable_Test.java:InsertRowBelowInNonEmptyTable_Test.java" />
+<product version="3" modelHash="bli7yfkuo5cxgypa6zd91ty3a0n1qqv">
+  <files names="BackspaceOnlyRowKeepsRow_Test.java:DeleteFirstRowFocusesNextFeatureExpr_Test.java:DeleteLastRowFocusesPreviousFeatureExpr_Test.java:DeleteOnlyRowKeepsRow_Test.java:InsertFirstRowInEmptyTable_Test.java:InsertRowAboveInNonEmptyTable_Test.java:InsertRowBelowInNonEmptyTable_Test.java:TypeFirstRowInEmptyTable_Test.java" />
 </product>
 
