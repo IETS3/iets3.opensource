@@ -75,7 +75,6 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
   /*package*/ final ConceptDescriptor myConceptProjectIt = createDescriptorForProjectIt();
   /*package*/ final ConceptDescriptor myConceptProjectMember = createDescriptorForProjectMember();
   /*package*/ final ConceptDescriptor myConceptProjectOp = createDescriptorForProjectOp();
-  /*package*/ final ConceptDescriptor myConceptQualifierRef = createDescriptorForQualifierRef();
   /*package*/ final ConceptDescriptor myConceptRecordChangeTarget = createDescriptorForRecordChangeTarget();
   /*package*/ final ConceptDescriptor myConceptRecordComparisonOrder = createDescriptorForRecordComparisonOrder();
   /*package*/ final ConceptDescriptor myConceptRecordDeclaration = createDescriptorForRecordDeclaration();
@@ -114,7 +113,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
 
   @Override
   public Collection<ConceptDescriptor> getDescriptors() {
-    return Arrays.asList(myConceptAbstractEnumInTarget, myConceptAbstractEnumSingleInTarget, myConceptAbstractEnumSortOrder, myConceptAbstractFunctionAdapter, myConceptAbstractFunctionLikeAdapter, myConceptAbstractToplevelExprAdapter, myConceptAbstractTypeDeclaration, myConceptAllLitList, myConceptBuilderAdapter, myConceptBuilderElement, myConceptBuilderExpression, myConceptConstant, myConceptConstantRef, myConceptEmptyMember, myConceptEmptyToplevelContent, myConceptEnumDeclaration, myConceptEnumIndexOp, myConceptEnumIsInSelector, myConceptEnumIsInTarget, myConceptEnumIsNotInTarget, myConceptEnumIsNotTarget, myConceptEnumIsTarget, myConceptEnumLiteral, myConceptEnumLiteralRef, myConceptEnumSortByDeclaration, myConceptEnumSortByLiteral, myConceptEnumSortByValue, myConceptEnumType, myConceptEnumValueAccessor, myConceptExtensionFunctionCall, myConceptFieldSetter, myConceptFunRef, myConceptFunction, myConceptFunctionCall, myConceptGroupByOp, myConceptGroupKeyTarget, myConceptGroupMembersTarget, myConceptGroupType, myConceptIConstantScopeProvider, myConceptIDeclarationExtensionContext, myConceptIEnumScopeProvider, myConceptIFunctionContainer, myConceptIFunctionLikeContainer, myConceptIFunctionScopeProvider, myConceptIRecordDeclaration, myConceptIRecordMember, myConceptIRecordMemberScopeProvider, myConceptIRecordScopeProvider, myConceptIRecordType, myConceptITopLevelContainer, myConceptIToplevelExprContent, myConceptIToplevelExprContentContainer, myConceptITypedefScopeProvider, myConceptInlineRecordMemberAccess, myConceptInlineRecordType, myConceptLibrary, myConceptNewValueSetter, myConceptOldMemberRef, myConceptOldValueExpr, myConceptProjectIt, myConceptProjectMember, myConceptProjectOp, myConceptQualifierRef, myConceptRecordChangeTarget, myConceptRecordComparisonOrder, myConceptRecordDeclaration, myConceptRecordLiteral, myConceptRecordMember, myConceptRecordMemberRefInConstraint, myConceptRecordType, myConceptRecordTypeAdapter, myConceptReferenceableFlag, myConceptSectionMarker, myConceptTypedef, myConceptTypedefContractValExpr, myConceptTypedefType);
+    return Arrays.asList(myConceptAbstractEnumInTarget, myConceptAbstractEnumSingleInTarget, myConceptAbstractEnumSortOrder, myConceptAbstractFunctionAdapter, myConceptAbstractFunctionLikeAdapter, myConceptAbstractToplevelExprAdapter, myConceptAbstractTypeDeclaration, myConceptAllLitList, myConceptBuilderAdapter, myConceptBuilderElement, myConceptBuilderExpression, myConceptConstant, myConceptConstantRef, myConceptEmptyMember, myConceptEmptyToplevelContent, myConceptEnumDeclaration, myConceptEnumIndexOp, myConceptEnumIsInSelector, myConceptEnumIsInTarget, myConceptEnumIsNotInTarget, myConceptEnumIsNotTarget, myConceptEnumIsTarget, myConceptEnumLiteral, myConceptEnumLiteralRef, myConceptEnumSortByDeclaration, myConceptEnumSortByLiteral, myConceptEnumSortByValue, myConceptEnumType, myConceptEnumValueAccessor, myConceptExtensionFunctionCall, myConceptFieldSetter, myConceptFunRef, myConceptFunction, myConceptFunctionCall, myConceptGroupByOp, myConceptGroupKeyTarget, myConceptGroupMembersTarget, myConceptGroupType, myConceptIConstantScopeProvider, myConceptIDeclarationExtensionContext, myConceptIEnumScopeProvider, myConceptIFunctionContainer, myConceptIFunctionLikeContainer, myConceptIFunctionScopeProvider, myConceptIRecordDeclaration, myConceptIRecordMember, myConceptIRecordMemberScopeProvider, myConceptIRecordScopeProvider, myConceptIRecordType, myConceptITopLevelContainer, myConceptIToplevelExprContent, myConceptIToplevelExprContentContainer, myConceptITypedefScopeProvider, myConceptInlineRecordMemberAccess, myConceptInlineRecordType, myConceptLibrary, myConceptNewValueSetter, myConceptOldMemberRef, myConceptOldValueExpr, myConceptProjectIt, myConceptProjectMember, myConceptProjectOp, myConceptRecordChangeTarget, myConceptRecordComparisonOrder, myConceptRecordDeclaration, myConceptRecordLiteral, myConceptRecordMember, myConceptRecordMemberRefInConstraint, myConceptRecordType, myConceptRecordTypeAdapter, myConceptReferenceableFlag, myConceptSectionMarker, myConceptTypedef, myConceptTypedefContractValExpr, myConceptTypedefType);
   }
 
   @Override
@@ -245,8 +244,6 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
         return myConceptProjectMember;
       case LanguageConceptSwitch.ProjectOp:
         return myConceptProjectOp;
-      case LanguageConceptSwitch.QualifierRef:
-        return myConceptQualifierRef;
       case LanguageConceptSwitch.RecordChangeTarget:
         return myConceptRecordChangeTarget;
       case LanguageConceptSwitch.RecordComparisonOrder:
@@ -515,6 +512,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.class_(false, false, false);
     b.parent(0x7b68d745a7b848b9L, 0xbd9c05c0f8725a35L, 0x32f64a31a179034L);
     b.parent(0xd4280a54f6df4383L, 0xaa41d1b2bffa7eb1L, 0x3588b64556af2180L);
+    b.parent(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x62763dc803b97bd8L);
     b.origin("r:da65683e-ff6f-430d-ab68-32a77df72c93(org.iets3.core.expr.toplevel.structure)/7061117989422575313");
     b.version(3);
     b.aggregate("value", 0x3f863cbc0116bc84L).target(0xcfaa4966b7d54b69L, 0xb66a309a6e1a7290L, 0x670d5e92f854a047L).optional(true).ordered(true).multiple(false).origin("4577412849438473348").done();
@@ -924,17 +922,6 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.version(3);
     b.aggregate("members", 0x73194702f12a0d6aL).target(0x71934284d7d145eeL, 0xa0548c072591085fL, 0x73194702f12a0d28L).optional(true).ordered(true).multiple(true).origin("8293738266741050730").done();
     b.alias("project");
-    return b.create();
-  }
-  private static ConceptDescriptor createDescriptorForQualifierRef() {
-    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("org.iets3.core.expr.toplevel", "QualifierRef", 0x71934284d7d145eeL, 0xa0548c072591085fL, 0x48dc5b40f074fef7L);
-    b.class_(false, false, false);
-    // extends: org.iets3.core.expr.base.structure.Expression
-    b.super_(0xcfaa4966b7d54b69L, 0xb66a309a6e1a7290L, 0x670d5e92f854a047L);
-    b.origin("r:da65683e-ff6f-430d-ab68-32a77df72c93(org.iets3.core.expr.toplevel.structure)/5250171600077389559");
-    b.version(3);
-    b.associate("enum", 0x48dc5b40f074fef8L).target(0x71934284d7d145eeL, 0xa0548c072591085fL, 0x61fe216664a72eaeL).optional(false).origin("5250171600077389560").done();
-    b.associate("lit", 0x48dc5b40f081a0c1L).target(0x71934284d7d145eeL, 0xa0548c072591085fL, 0x61fe216664a72ed1L).optional(false).origin("5250171600078217409").done();
     return b.create();
   }
   private static ConceptDescriptor createDescriptorForRecordChangeTarget() {

@@ -21,7 +21,7 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
           cpb.shortDesc("a components requirement paragraph");
           cpb.presentationByName();
-          cpb.icon(IconContainer.RESOURCE_a0a3a0a0b0c);
+          cpb.icon(IconContainer.RESOURCE_0);
           props_ComponentsParagraph = cpb.create();
         }
         return props_ComponentsParagraph;

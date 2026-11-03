@@ -271,7 +271,7 @@
       <node id="5953575425759878239" at="28,30,29,29" concept="10" />
       <node id="5953575425759878239" at="36,130,37,161" concept="5" />
       <node id="5953575425759878239" at="37,161,38,0" concept="7" />
-      <node id="5953575425759878239" at="39,55,40,70" concept="1" />
+      <node id="5953575425759878239" at="39,55,40,74" concept="1" />
       <node id="5953575425759878239" at="41,9,42,0" concept="7" />
       <node id="5953575425759878239" at="42,0,43,22" concept="6" />
       <node id="8891169595164382450" at="48,59,49,60" concept="10" />
@@ -283,7 +283,7 @@
       <node id="5953575425759878239" at="63,61,64,22" concept="6" />
       <node id="5953575425759889889" at="67,118,68,19" concept="6" />
       <node id="5953575425759891298" at="69,5,70,16" concept="6" />
-      <node id="5953575425759878239" at="72,0,73,0" concept="8" trace="canBeRootBreakingPoint" />
+      <node id="5953575425759878239" at="72,0,73,0" concept="8" trace="canBeAncestorBreakingPoint" />
       <node id="5953575425759878239" at="75,0,76,0" concept="8" trace="Sheet$I_" />
       <node id="5953575425759878239" at="76,0,77,0" concept="8" trace="TopLevelSheet$M3" />
       <node id="5953575425759878239" at="77,0,78,0" concept="8" trace="StringInterpolationExpr$zy" />
@@ -300,7 +300,7 @@
       <node id="5953575425759878239" at="33,109,45,6" concept="6" />
       <node id="5953575425759878239" at="32,0,47,0" concept="4" trace="calculateCanBeAncestorConstraint#()Ljetbrains/mps/smodel/runtime/ConstraintFunction;" />
       <scope id="5953575425759878239" at="28,30,29,29" />
-      <scope id="5953575425759878239" at="39,55,40,70" />
+      <scope id="5953575425759878239" at="39,55,40,74" />
       <scope id="8891169595164382450" at="48,59,49,60" />
       <scope id="8891169595164383920" at="54,25,55,66" />
       <scope id="5953575425759878699" at="67,118,68,19" />

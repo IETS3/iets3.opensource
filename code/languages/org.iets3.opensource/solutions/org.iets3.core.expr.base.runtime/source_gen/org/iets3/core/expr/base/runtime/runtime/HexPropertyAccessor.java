@@ -5,7 +5,6 @@ package org.iets3.core.expr.base.runtime.runtime;
 import jetbrains.mps.nodeEditor.cells.PropertyAccessor;
 import org.jetbrains.mps.openapi.model.SNode;
 import org.jetbrains.mps.openapi.language.SProperty;
-import jetbrains.mps.openapi.editor.EditorContext;
 import org.iets3.core.expr.base.behavior.ISupportHexValues__BehaviorDescriptor;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
@@ -14,8 +13,8 @@ public class HexPropertyAccessor extends PropertyAccessor {
 
   private SNode node;
 
-  public HexPropertyAccessor(SNode node, SProperty property, boolean readOnly, boolean allowEmptyText, EditorContext editorContext) {
-    super(node, property, readOnly, allowEmptyText, editorContext);
+  public HexPropertyAccessor(SNode node, SProperty property, boolean readOnly, boolean allowEmptyText) {
+    super(node, property, readOnly, allowEmptyText);
     this.node = node;
   }
 

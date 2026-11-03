@@ -11,8 +11,8 @@ import org.junit.jupiter.api.Test;
 import jetbrains.mps.lang.test.runtime.BaseTestBody;
 import jetbrains.mps.lang.test.runtime.TransformationTest;
 import org.junit.Assert;
-import org.jetbrains.mps.openapi.model.SNode;
 import org.iets3.core.expr.toplevel.plugin.RecordValue;
+import org.jetbrains.mps.openapi.model.SNode;
 
 @MPSLaunch
 public class RecordValueTest_Test extends BaseTransformationTest {
@@ -26,6 +26,18 @@ public class RecordValueTest_Test extends BaseTransformationTest {
   @Test
   public void test_checkDefaultPresentation() throws Throwable {
     new TestBody(this).test_checkDefaultPresentation();
+  }
+  @Test
+  public void test_equalsIsNullSafeForNullMemberValues() throws Throwable {
+    new TestBody(this).test_equalsIsNullSafeForNullMemberValues();
+  }
+  @Test
+  public void test_compareToWorksWithoutRecordDeclaration() throws Throwable {
+    new TestBody(this).test_compareToWorksWithoutRecordDeclaration();
+  }
+  @Test
+  public void test_compareToOrdersNullMemberValuesConsistently() throws Throwable {
+    new TestBody(this).test_compareToOrdersNullMemberValuesConsistently();
   }
 
   /*package*/ static class TestBody extends BaseTestBody {
@@ -42,6 +54,62 @@ public class RecordValueTest_Test extends BaseTransformationTest {
     public void test_checkDefaultPresentation() throws Exception {
       initTestNodes();
       runWithinCommand(() -> Assert.assertEquals(TestBody.this.getRecordString(), "#myRecord{x : X1, y : 1}"));
+    }
+    public void test_equalsIsNullSafeForNullMemberValues() throws Exception {
+      initTestNodes();
+      runWithinCommand(() -> {
+        RecordValue withNull = new RecordValue(getAnnotatedNode("r"));
+        withNull.add("x", "A");
+        withNull.add("y", null);
+        RecordValue withValue = new RecordValue(getAnnotatedNode("r"));
+        withValue.add("x", "A");
+        withValue.add("y", 1);
+        RecordValue alsoWithNull = new RecordValue(getAnnotatedNode("r"));
+        alsoWithNull.add("x", "A");
+        alsoWithNull.add("y", null);
+        Assert.assertFalse(withNull.equals(withValue));
+        Assert.assertFalse(withValue.equals(withNull));
+        Assert.assertTrue(withNull.equals(alsoWithNull));
+      });
+    }
+    public void test_compareToWorksWithoutRecordDeclaration() throws Exception {
+      initTestNodes();
+      runWithinCommand(() -> {
+        RecordValue a = new RecordValue(null);
+        a.add("x", "A");
+        RecordValue b = new RecordValue(null);
+        b.add("x", "B");
+        Assert.assertTrue(a.compareTo(b) < 0);
+        Assert.assertTrue(b.compareTo(a) > 0);
+        Assert.assertTrue(a.compareTo(a) == 0);
+        RecordValue justX = new RecordValue(null);
+        justX.add("x", "A");
+        RecordValue xAndZ = new RecordValue(null);
+        xAndZ.add("x", "A");
+        xAndZ.add("z", "Q");
+        Assert.assertTrue(justX.compareTo(xAndZ) < 0);
+        Assert.assertTrue(xAndZ.compareTo(justX) > 0);
+      });
+    }
+    public void test_compareToOrdersNullMemberValuesConsistently() throws Exception {
+      initTestNodes();
+      runWithinCommand(() -> {
+        RecordValue withNull = new RecordValue(getAnnotatedNode("r"));
+        withNull.add("x", "A");
+        withNull.add("y", null);
+        RecordValue one = new RecordValue(getAnnotatedNode("r"));
+        one.add("x", "A");
+        one.add("y", 1);
+        RecordValue two = new RecordValue(getAnnotatedNode("r"));
+        two.add("x", "A");
+        two.add("y", 2);
+        // a null member value sorts before any present value, and does so consistently,
+        // so that the ordering stays transitive: withNull < one < two
+        Assert.assertTrue(withNull.compareTo(one) < 0);
+        Assert.assertTrue(one.compareTo(withNull) > 0);
+        Assert.assertTrue(withNull.compareTo(two) < 0);
+        Assert.assertTrue(one.compareTo(two) < 0);
+      });
     }
 
     public String getRecordString() {

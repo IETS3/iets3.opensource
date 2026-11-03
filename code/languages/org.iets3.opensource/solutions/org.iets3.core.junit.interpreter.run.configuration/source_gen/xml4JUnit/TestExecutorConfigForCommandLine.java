@@ -4,23 +4,17 @@ package xml4JUnit;
 
 import org.iets3.core.junit.interpreter.run.configuration.plugin.IInterpreterRunListener;
 import org.iets3.core.junit.interpreter.run.configuration.plugin.NullRunListener;
-import java.util.Map;
-import jetbrains.mps.internal.collections.runtime.MapSequence;
-import java.util.HashMap;
 
 public class TestExecutorConfigForCommandLine implements ICustomRunnerConfig {
 
   private String myReportsFilenamePrefix = "InterpreterTestSuite";
-  private static final String outputPathMacro = "iets3.interpreterExecutor.genPath";
+  private static final String outputPathProperty = "iets3.interpreterExecutor.outputPath";
   private static final IInterpreterRunListener listener = new NullRunListener();
   private static final IInterpreterTestReporter reporter = new InterpreterTestReporter();
-  private final Map<String, String> myMap = MapSequence.fromMap(new HashMap<String, String>());
-  public static String keyCustomRunnerAspect = "CustomRunnerAspect";
-  public static String keyBuildMacroRef = "BuildMacroRef";
 
   @Override
-  public String getOutputPathMacroName() {
-    return outputPathMacro;
+  public String getOutputPathProperty() {
+    return outputPathProperty;
   }
   @Override
   public String getReportFileNamePrefix() {
@@ -41,17 +35,5 @@ public class TestExecutorConfigForCommandLine implements ICustomRunnerConfig {
   @Override
   public boolean isTerminationRequested() {
     return false;
-  }
-  @Override
-  public void put(String key, String value) {
-    MapSequence.fromMap(myMap).put(key, value);
-  }
-  @Override
-  public String get(String key) {
-    return MapSequence.fromMap(myMap).get(key);
-  }
-  @Override
-  public void clear() {
-    MapSequence.fromMap(myMap).clear();
   }
 }

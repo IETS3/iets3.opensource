@@ -71,7 +71,6 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
   private ConceptPresentation props_ProjectIt;
   private ConceptPresentation props_ProjectMember;
   private ConceptPresentation props_ProjectOp;
-  private ConceptPresentation props_QualifierRef;
   private ConceptPresentation props_RecordChangeTarget;
   private ConceptPresentation props_RecordComparisonOrder;
   private ConceptPresentation props_RecordDeclaration;
@@ -173,7 +172,7 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
           cpb.shortDesc("a global constant");
           cpb.presentationByName();
-          cpb.icon(IconContainer.RESOURCE_a0a3a0a11b0zc);
+          cpb.icon(IconContainer.RESOURCE_0);
           props_Constant = cpb.create();
         }
         return props_Constant;
@@ -206,7 +205,7 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
           cpb.shortDesc("an enumeration declaration");
           cpb.presentationByName();
-          cpb.icon(IconContainer.RESOURCE_a0a3a0a51b0zc);
+          cpb.icon(IconContainer.RESOURCE_1);
           props_EnumDeclaration = cpb.create();
         }
         return props_EnumDeclaration;
@@ -344,7 +343,7 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           cpb.deprecateProperty(0x27b717d14a8df4edL, "ext_old");
           cpb.shortDesc("a function");
           cpb.presentationByName();
-          cpb.icon(IconContainer.RESOURCE_a0a4a0a23b0zc);
+          cpb.icon(IconContainer.RESOURCE_2);
           props_Function = cpb.create();
         }
         return props_Function;
@@ -506,7 +505,7 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
           cpb.shortDesc("a library");
           cpb.presentationByName();
-          cpb.icon(IconContainer.RESOURCE_a0a3a0a55b0zc);
+          cpb.icon(IconContainer.RESOURCE_3);
           props_Library = cpb.create();
         }
         return props_Library;
@@ -559,14 +558,6 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           props_ProjectOp = cpb.create();
         }
         return props_ProjectOp;
-      case LanguageConceptSwitch.QualifierRef:
-        if (props_QualifierRef == null) {
-          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
-          cpb.shortDesc("a qualified reference to an enumeration literal");
-          cpb.presentationByReference(0x71934284d7d145eeL, 0xa0548c072591085fL, 0x48dc5b40f074fef7L, 0x48dc5b40f074fef8L, "enum", "", "");
-          props_QualifierRef = cpb.create();
-        }
-        return props_QualifierRef;
       case LanguageConceptSwitch.RecordChangeTarget:
         if (props_RecordChangeTarget == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
@@ -588,7 +579,7 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           cpb.deprecateAggregation(0x7a477bfec237e8f0L, "members_old");
           cpb.shortDesc("a record (structure with named members)");
           cpb.presentationByName();
-          cpb.icon(IconContainer.RESOURCE_a0a4a0a56b0zc);
+          cpb.icon(IconContainer.RESOURCE_4);
           props_RecordDeclaration = cpb.create();
         }
         return props_RecordDeclaration;
@@ -653,7 +644,7 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
           cpb.shortDesc("a derived (constrained) type based on an existing type");
           cpb.presentationByName();
-          cpb.icon(IconContainer.RESOURCE_a0a3a0a37b0zc);
+          cpb.icon(IconContainer.RESOURCE_5);
           props_Typedef = cpb.create();
         }
         return props_Typedef;

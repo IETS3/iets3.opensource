@@ -47,6 +47,7 @@
   <uses language="l:7a5dda62-9140-4668-ab76-d5ed1746f2b2:jetbrains.mps.lang.typesystem" />
   <uses language="l:c9d137c4-3259-44f8-80ff-33ab2b506ee4:jetbrains.mps.lang.util.order" />
   <uses language="l:696c1165-4a59-463b-bc5d-902caab85dd0:jetbrains.mps.make.facet" />
+  <uses language="l:a541f0ab-35e1-4095-90fe-2e552a0cc7c5:org.iets3.internal.modelaccessor" />
   <uses module="3f233e7f-b8a6-46d2-a57f-795d56775243(Annotations)" kind="dp" />
   <uses module="6354ebe7-c22a-4a0f-ac54-50b52ab9b065(JDK)" kind="rt+dp" />
   <uses module="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea(MPS.Core)" kind="rt+dp" />
