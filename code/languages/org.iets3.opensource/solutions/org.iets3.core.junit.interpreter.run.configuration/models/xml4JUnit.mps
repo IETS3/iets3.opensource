@@ -245,6 +245,7 @@
     <language id="760a0a8c-eabb-4521-8bfd-65db761a9ba3" name="jetbrains.mps.baseLanguage.logging">
       <concept id="2034914114981261497" name="jetbrains.mps.baseLanguage.logging.structure.LogLowLevelStatement" flags="ng" index="RRSsy">
         <property id="2034914114981261751" name="severity" index="RRSoG" />
+        <child id="2034914114981261755" name="throwable" index="RRSow" />
         <child id="2034914114981261753" name="message" index="RRSoy" />
       </concept>
     </language>
@@ -9129,7 +9130,7 @@
           </node>
           <node concept="3uVAMA" id="2Bi$RVur5rV" role="1zxBo5">
             <node concept="XOnhg" id="2Bi$RVur5rW" role="1zc67B">
-              <property role="TrG5h" value="ignored" />
+              <property role="TrG5h" value="e" />
               <node concept="nSUau" id="2Bi$RVur5rX" role="1tU5fm">
                 <node concept="3uibUv" id="2Bi$RVur5rY" role="nSUat">
                   <ref role="3uigEE" to="wyt6:~RuntimeException" resolve="RuntimeException" />
@@ -9140,6 +9141,15 @@
               </node>
             </node>
             <node concept="3clFbS" id="2Bi$RVur5s0" role="1zc67A">
+              <node concept="RRSsy" id="2UiY2$7LTQl" role="3cqZAp">
+                <property role="RRSoG" value="warn" />
+                <node concept="Xl_RD" id="2UiY2$7LTQm" role="RRSoy">
+                  <property role="Xl_RC" value="Could not determine the node URL of the failing test item" />
+                </node>
+                <node concept="37vLTw" id="2UiY2$7LTQn" role="RRSow">
+                  <ref role="3cqZAo" node="2Bi$RVur5rW" resolve="e" />
+                </node>
+              </node>
               <node concept="3cpWs6" id="2Bi$RVur5s1" role="3cqZAp">
                 <node concept="Xl_RD" id="2Bi$RVur5s2" role="3cqZAk">
                   <property role="Xl_RC" value="" />

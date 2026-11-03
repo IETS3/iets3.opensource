@@ -32,7 +32,6 @@
       <concept id="1081236700937" name="jetbrains.mps.baseLanguage.structure.StaticMethodCall" flags="nn" index="2YIFZM">
         <reference id="1144433194310" name="classConcept" index="1Pybhc" />
       </concept>
-      <concept id="1070534058343" name="jetbrains.mps.baseLanguage.structure.NullLiteral" flags="nn" index="10Nm6u" />
       <concept id="1068390468198" name="jetbrains.mps.baseLanguage.structure.ClassConcept" flags="ig" index="312cEu" />
       <concept id="1068431474542" name="jetbrains.mps.baseLanguage.structure.VariableDeclaration" flags="ng" index="33uBYm">
         <child id="1068431790190" name="initializer" index="33vP2m" />
@@ -52,7 +51,6 @@
         <child id="1068580123134" name="parameter" index="3clF46" />
         <child id="1068580123135" name="body" index="3clF47" />
       </concept>
-      <concept id="1068580123152" name="jetbrains.mps.baseLanguage.structure.EqualsExpression" flags="nn" index="3clFbC" />
       <concept id="1068580123159" name="jetbrains.mps.baseLanguage.structure.IfStatement" flags="nn" index="3clFbJ">
         <child id="1068580123160" name="condition" index="3clFbw" />
         <child id="1068580123161" name="ifTrue" index="3clFbx" />
@@ -114,6 +112,13 @@
       </concept>
       <concept id="1172075514136" name="jetbrains.mps.baseLanguage.unitTest.structure.MessageHolder" flags="ngI" index="3_9gw8">
         <child id="1172075534298" name="message" index="3_9lra" />
+      </concept>
+    </language>
+    <language id="760a0a8c-eabb-4521-8bfd-65db761a9ba3" name="jetbrains.mps.baseLanguage.logging">
+      <concept id="2034914114981261497" name="jetbrains.mps.baseLanguage.logging.structure.LogLowLevelStatement" flags="ng" index="RRSsy">
+        <property id="2034914114981261751" name="severity" index="RRSoG" />
+        <child id="2034914114981261755" name="throwable" index="RRSow" />
+        <child id="2034914114981261753" name="message" index="RRSoy" />
       </concept>
     </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
@@ -218,21 +223,6 @@
         <node concept="3Tqbb2" id="2Bi$RVur5s3" role="1tU5fm" />
       </node>
       <node concept="3clFbS" id="2Bi$RVuqMZS" role="3clF47">
-        <node concept="3clFbJ" id="2Bi$RVuqMZT" role="3cqZAp">
-          <node concept="3clFbC" id="2Bi$RVuqMZU" role="3clFbw">
-            <node concept="37vLTw" id="2Bi$RVuqMZV" role="3uHU7B">
-              <ref role="3cqZAo" node="2Bi$RVuqMZP" resolve="node" />
-            </node>
-            <node concept="10Nm6u" id="2Bi$RVuqMZW" role="3uHU7w" />
-          </node>
-          <node concept="3clFbS" id="2Bi$RVuqMZX" role="3clFbx">
-            <node concept="3cpWs6" id="2Bi$RVuqMZY" role="3cqZAp">
-              <node concept="Xl_RD" id="2Bi$RVuqMZZ" role="3cqZAk">
-                <property role="Xl_RC" value="" />
-              </node>
-            </node>
-          </node>
-        </node>
         <node concept="3J1_TO" id="2Bi$RVuqN0f" role="3cqZAp">
           <node concept="3clFbS" id="2Bi$RVuqN0g" role="1zxBo7">
             <node concept="3cpWs6" id="2Bi$RVuqN0h" role="3cqZAp">
@@ -257,7 +247,7 @@
           </node>
           <node concept="3uVAMA" id="2Bi$RVuqN0o" role="1zxBo5">
             <node concept="XOnhg" id="2Bi$RVuqN0p" role="1zc67B">
-              <property role="TrG5h" value="ignored" />
+              <property role="TrG5h" value="e" />
               <node concept="nSUau" id="2Bi$RVuqN0q" role="1tU5fm">
                 <node concept="3uibUv" id="2Bi$RVuqN0r" role="nSUat">
                   <ref role="3uigEE" to="wyt6:~RuntimeException" resolve="RuntimeException" />
@@ -268,6 +258,15 @@
               </node>
             </node>
             <node concept="3clFbS" id="2Bi$RVuqN0t" role="1zc67A">
+              <node concept="RRSsy" id="2UiY2$7LHOm" role="3cqZAp">
+                <property role="RRSoG" value="warn" />
+                <node concept="Xl_RD" id="2UiY2$7LHOn" role="RRSoy">
+                  <property role="Xl_RC" value="Could not determine the node URL of the failing test item" />
+                </node>
+                <node concept="37vLTw" id="2UiY2$7LHOo" role="RRSow">
+                  <ref role="3cqZAo" node="2Bi$RVuqN0p" resolve="e" />
+                </node>
+              </node>
               <node concept="3cpWs6" id="2Bi$RVuqN0u" role="3cqZAp">
                 <node concept="Xl_RD" id="2Bi$RVuqN0v" role="3cqZAk">
                   <property role="Xl_RC" value="" />
