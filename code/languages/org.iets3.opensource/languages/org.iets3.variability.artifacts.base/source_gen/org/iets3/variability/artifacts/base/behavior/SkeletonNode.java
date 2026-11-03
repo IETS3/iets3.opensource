@@ -49,8 +49,8 @@ public class SkeletonNode implements IInstantiationContext {
 
   /**
    * indicates if for this SkeletonNode an Instantiation is necessary for the 100%-Model
-   * Is there instantiation necessary in the 100%-Model. This deviates from the 'isInstance'-value of the last
-   * segment of the ArtifactPath (in case this SkeletonNode has been created by a VarPoint-Entry of a TabularVarPoint). 
+   * Is there instantiation necessary in the 100%-Model. This deviates from the 'isInstance'-value of the last 
+   * segment of the ArtifactPath (in case this SkeletonNode has been created by a VarPoint-Entry of a TabularVarPoint).
    */
   private boolean isInstance = false;
   /**

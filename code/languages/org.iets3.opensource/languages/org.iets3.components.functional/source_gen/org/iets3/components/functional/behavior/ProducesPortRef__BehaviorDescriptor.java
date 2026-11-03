@@ -8,7 +8,6 @@ import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import java.awt.Color;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import java.util.List;
 import java.util.Arrays;
@@ -17,7 +16,6 @@ import org.jetbrains.mps.openapi.model.SNode;
 import org.iets3.components.functional.editor.FunctionalColors;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
 import java.util.Objects;
-import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 import org.jetbrains.mps.openapi.language.SConcept;
@@ -26,14 +24,12 @@ import org.jetbrains.mps.openapi.language.SContainmentLink;
 public final class ProducesPortRef__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getConcept(0x257976063fb647b8L, 0xbc3cb4384df7da44L, 0x4086b3ebc19c7bfdL, "org.iets3.components.functional.structure.ProducesPortRef");
 
-  public static final SMethod<Color> textColor_id2Df8LH1ib7L = new SMethodBuilder<Color>(new SJavaCompoundTypeImpl(Color.class)).name("textColor").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(3048694072719487473L).languageId(0xb6713d118449c6e7L, 0xf0fd486f857743e9L).build2();
-  public static final SMethod<Boolean> isLValue_idaPhVmWYjn5 = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("isLValue").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(195141004745586117L).languageId(0xb66a309a6e1a7290L, 0xcfaa4966b7d54b69L).build2();
-  public static final SMethod<Boolean> isUsedAsLValue_idYMJl2BJIOO = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("isUsedAsLValue").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(1131174610532756788L).languageId(0xb66a309a6e1a7290L, 0xcfaa4966b7d54b69L).build2();
+  public static final SMethod<Color> textColor_id2Df8LH1ib7L = new SMethodBuilder<>(Color.class).name("textColor").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(3048694072719487473L).languageId(0xb6713d118449c6e7L, 0xf0fd486f857743e9L).build2();
+  public static final SMethod<Boolean> isLValue_idaPhVmWYjn5 = new SMethodBuilder<>(Boolean.TYPE).name("isLValue").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(195141004745586117L).languageId(0xb66a309a6e1a7290L, 0xcfaa4966b7d54b69L).build2();
+  public static final SMethod<Boolean> isUsedAsLValue_idYMJl2BJIOO = new SMethodBuilder<>(Boolean.TYPE).name("isUsedAsLValue").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(1131174610532756788L).languageId(0xb66a309a6e1a7290L, 0xcfaa4966b7d54b69L).build2();
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(textColor_id2Df8LH1ib7L, isLValue_idaPhVmWYjn5, isUsedAsLValue_idYMJl2BJIOO);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(textColor_id2Df8LH1ib7L, isLValue_idaPhVmWYjn5, isUsedAsLValue_idYMJl2BJIOO);
 
-  private static void ___init___(@NotNull SNode __thisNode__) {
-  }
 
   /*package*/ static Color textColor_id2Df8LH1ib7L(@NotNull SNode __thisNode__) {
     return FunctionalColors.dataColor;
@@ -48,10 +44,6 @@ public final class ProducesPortRef__BehaviorDescriptor extends BaseBHDescriptor 
   /*package*/ ProducesPortRef__BehaviorDescriptor() {
   }
 
-  @Override
-  protected void initNode(@NotNull SNode node, @NotNull SConstructor constructor, @Nullable Object[] parameters) {
-    ___init___(node);
-  }
 
   @Override
   protected <T> T invokeSpecial0(@NotNull SNode node, @NotNull SMethod<T> method, @Nullable Object[] parameters) {

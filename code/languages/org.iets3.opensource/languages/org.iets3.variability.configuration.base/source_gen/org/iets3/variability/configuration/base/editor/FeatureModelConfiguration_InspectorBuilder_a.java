@@ -77,7 +77,7 @@ import org.jetbrains.mps.openapi.language.SConcept;
     EditorCell_Collection editorCell = new EditorCell_Collection(getEditorContext(), myNode, new CellLayout_Vertical());
     editorCell.setCellId("Collection_as05hg_1");
     editorCell.addEditorCell(createCollection_2());
-    editorCell.addEditorCell(createHorizontalLineCell_1());
+    editorCell.addEditorCell(createHorizontalLineCell_0());
     return editorCell;
   }
   private EditorCell createCollection_2() {
@@ -112,13 +112,10 @@ import org.jetbrains.mps.openapi.language.SConcept;
     editorCell.getStyle().putAll(style);
     return editorCell;
   }
-  private EditorCell createHorizontalLineCell_0(EditorContext editorContext, SNode node) {
-    HorizontalLineCell editorCell = new HorizontalLineCell(editorContext, node);
+  private EditorCell createHorizontalLineCell_0() {
+    HorizontalLineCell editorCell = new HorizontalLineCell(getEditorContext(), getNode());
     editorCell.setCellId("HorizontalLineCell_as05hg_0");
     return editorCell;
-  }
-  private EditorCell createHorizontalLineCell_1() {
-    return createHorizontalLineCell_0(getEditorContext(), myNode);
   }
   private EditorCell createCollection_3() {
     EditorCell_Collection editorCell = new EditorCell_Collection(getEditorContext(), myNode, new CellLayout_Horizontal());

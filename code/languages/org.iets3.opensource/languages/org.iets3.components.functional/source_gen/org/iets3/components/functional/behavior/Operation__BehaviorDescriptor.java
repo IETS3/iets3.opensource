@@ -8,13 +8,11 @@ import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import org.jetbrains.mps.openapi.model.SNode;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import java.util.List;
 import java.util.Arrays;
 import org.jetbrains.annotations.NotNull;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
-import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 import org.jetbrains.mps.openapi.language.SContainmentLink;
@@ -22,14 +20,12 @@ import org.jetbrains.mps.openapi.language.SContainmentLink;
 public final class Operation__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getConcept(0x257976063fb647b8L, 0xbc3cb4384df7da44L, 0x55a63ae09826d405L, "org.iets3.components.functional.structure.Operation");
 
-  public static final SMethod<Iterable<SNode>> inputSymbols_id5mAeI2oeJhu = new SMethodBuilder<Iterable<SNode>>(new SJavaCompoundTypeImpl((Class<Iterable<SNode>>) ((Class) Object.class))).name("inputSymbols").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(6171685075658929246L).languageId(0xbc3cb4384df7da44L, 0x257976063fb647b8L).build2();
-  public static final SMethod<Iterable<SNode>> outputSymbols_id5mAeI2oeJQ1 = new SMethodBuilder<Iterable<SNode>>(new SJavaCompoundTypeImpl((Class<Iterable<SNode>>) ((Class) Object.class))).name("outputSymbols").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(6171685075658931585L).languageId(0xbc3cb4384df7da44L, 0x257976063fb647b8L).build2();
-  public static final SMethod<Iterable<SNode>> getUniquelyNamedElements_id4qSf1u1TRfj = new SMethodBuilder<Iterable<SNode>>(new SJavaCompoundTypeImpl((Class<Iterable<SNode>>) ((Class) Object.class))).name("getUniquelyNamedElements").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5095889050031059923L).languageId(0xaa41d1b2bffa7eb1L, 0xd4280a54f6df4383L).build2();
+  public static final SMethod<Iterable<SNode>> inputSymbols_id5mAeI2oeJhu = new SMethodBuilder<>((Class<Iterable<SNode>>) ((Class) Object.class)).name("inputSymbols").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(6171685075658929246L).languageId(0xbc3cb4384df7da44L, 0x257976063fb647b8L).build2();
+  public static final SMethod<Iterable<SNode>> outputSymbols_id5mAeI2oeJQ1 = new SMethodBuilder<>((Class<Iterable<SNode>>) ((Class) Object.class)).name("outputSymbols").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(6171685075658931585L).languageId(0xbc3cb4384df7da44L, 0x257976063fb647b8L).build2();
+  public static final SMethod<Iterable<SNode>> getUniquelyNamedElements_id4qSf1u1TRfj = new SMethodBuilder<>((Class<Iterable<SNode>>) ((Class) Object.class)).name("getUniquelyNamedElements").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5095889050031059923L).languageId(0xaa41d1b2bffa7eb1L, 0xd4280a54f6df4383L).build2();
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(inputSymbols_id5mAeI2oeJhu, outputSymbols_id5mAeI2oeJQ1, getUniquelyNamedElements_id4qSf1u1TRfj);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(inputSymbols_id5mAeI2oeJhu, outputSymbols_id5mAeI2oeJQ1, getUniquelyNamedElements_id4qSf1u1TRfj);
 
-  private static void ___init___(@NotNull SNode __thisNode__) {
-  }
 
   /*package*/ static Iterable<SNode> inputSymbols_id5mAeI2oeJhu(@NotNull SNode __thisNode__) {
     return SLinkOperations.getChildren(__thisNode__, LINKS.parameters$v59k);
@@ -44,10 +40,6 @@ public final class Operation__BehaviorDescriptor extends BaseBHDescriptor {
   /*package*/ Operation__BehaviorDescriptor() {
   }
 
-  @Override
-  protected void initNode(@NotNull SNode node, @NotNull SConstructor constructor, @Nullable Object[] parameters) {
-    ___init___(node);
-  }
 
   @Override
   protected <T> T invokeSpecial0(@NotNull SNode node, @NotNull SMethod<T> method, @Nullable Object[] parameters) {

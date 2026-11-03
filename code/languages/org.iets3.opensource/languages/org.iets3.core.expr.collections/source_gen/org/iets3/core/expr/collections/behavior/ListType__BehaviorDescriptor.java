@@ -7,7 +7,6 @@ import org.jetbrains.mps.openapi.language.SAbstractConcept;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import java.util.List;
 import org.jetbrains.mps.openapi.model.SNode;
@@ -20,7 +19,6 @@ import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
 import java.util.ArrayList;
 import jetbrains.mps.internal.collections.runtime.ListSequence;
 import org.iets3.core.expr.base.behavior.Type__BehaviorDescriptor;
-import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 import jetbrains.mps.smodel.builder.SNodeBuilder;
@@ -30,17 +28,15 @@ import org.jetbrains.mps.openapi.language.SConcept;
 public final class ListType__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getConcept(0x2f7e2e356e744c43L, 0x9fa52465d68f5996L, 0x68d69d36ba497720L, "org.iets3.core.expr.collections.structure.ListType");
 
-  public static final SMethod<String> getPresentation_idhEwIMiw = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("getPresentation").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(1213877396640L).languageId(0x9b92103b95ca8c0cL, 0xceab519525ea4f22L).build2();
-  public static final SMethod<Boolean> isReadOnly_id1RHynufnzD2 = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("isReadOnly").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(2156530943179766338L).languageId(0x9fa52465d68f5996L, 0x2f7e2e356e744c43L).build2();
-  public static final SMethod<List<SNode>> allSupertypes_id4Q4DxjDsh$t = new SMethodBuilder<List<SNode>>(new SJavaCompoundTypeImpl((Class<List<SNode>>) ((Class) Object.class))).name("allSupertypes").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5585772046592317725L).languageId(0xb66a309a6e1a7290L, 0xcfaa4966b7d54b69L).build2();
-  public static final SMethod<SNode> createDefaultVarExpr_id60Qa1k_nI2O = new SMethodBuilder<SNode>(new SJavaCompoundTypeImpl((Class<SNode>) ((Class) Object.class))).name("createDefaultVarExpr").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(6932772747669856436L).languageId(0xb66a309a6e1a7290L, 0xcfaa4966b7d54b69L).build2();
-  public static final SMethod<Boolean> supportsDefault_id60Qa1k_sqM4 = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("supportsDefault").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(6932772747671088260L).languageId(0xb66a309a6e1a7290L, 0xcfaa4966b7d54b69L).build2();
-  public static final SMethod<List<SNode>> getTypeParameters_idKoRsm$Us0E = new SMethodBuilder<List<SNode>>(new SJavaCompoundTypeImpl((Class<List<SNode>>) ((Class) Object.class))).name("getTypeParameters").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(871690368841269290L).languageId(0xb66a309a6e1a7290L, 0xcfaa4966b7d54b69L).build2();
+  public static final SMethod<String> getPresentation_idhEwIMiw = new SMethodBuilder<>(String.class).name("getPresentation").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(1213877396640L).languageId(0x9b92103b95ca8c0cL, 0xceab519525ea4f22L).build2();
+  public static final SMethod<Boolean> isReadOnly_id1RHynufnzD2 = new SMethodBuilder<>(Boolean.TYPE).name("isReadOnly").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(2156530943179766338L).languageId(0x9fa52465d68f5996L, 0x2f7e2e356e744c43L).build2();
+  public static final SMethod<List<SNode>> allSupertypes_id4Q4DxjDsh$t = new SMethodBuilder<>((Class<List<SNode>>) ((Class) Object.class)).name("allSupertypes").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5585772046592317725L).languageId(0xb66a309a6e1a7290L, 0xcfaa4966b7d54b69L).build2();
+  public static final SMethod<SNode> createDefaultVarExpr_id60Qa1k_nI2O = new SMethodBuilder<>(SNode.class).name("createDefaultVarExpr").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(6932772747669856436L).languageId(0xb66a309a6e1a7290L, 0xcfaa4966b7d54b69L).build2();
+  public static final SMethod<Boolean> supportsDefault_id60Qa1k_sqM4 = new SMethodBuilder<>(Boolean.TYPE).name("supportsDefault").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(6932772747671088260L).languageId(0xb66a309a6e1a7290L, 0xcfaa4966b7d54b69L).build2();
+  public static final SMethod<List<SNode>> getTypeParameters_idKoRsm$Us0E = new SMethodBuilder<>((Class<List<SNode>>) ((Class) Object.class)).name("getTypeParameters").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(871690368841269290L).languageId(0xb66a309a6e1a7290L, 0xcfaa4966b7d54b69L).build2();
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(getPresentation_idhEwIMiw, isReadOnly_id1RHynufnzD2, allSupertypes_id4Q4DxjDsh$t, createDefaultVarExpr_id60Qa1k_nI2O, supportsDefault_id60Qa1k_sqM4, getTypeParameters_idKoRsm$Us0E);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(getPresentation_idhEwIMiw, isReadOnly_id1RHynufnzD2, allSupertypes_id4Q4DxjDsh$t, createDefaultVarExpr_id60Qa1k_nI2O, supportsDefault_id60Qa1k_sqM4, getTypeParameters_idKoRsm$Us0E);
 
-  private static void ___init___(@NotNull SNode __thisNode__) {
-  }
 
   /*package*/ static String getPresentation_idhEwIMiw(@NotNull SNode __thisNode__) {
     final String constraint = (SLinkOperations.getTarget(__thisNode__, LINKS.sizeConstraint$C3Ch) != null ? BaseConcept__BehaviorDescriptor.getPresentation_idhEwIMiw.invoke(SLinkOperations.getTarget(__thisNode__, LINKS.sizeConstraint$C3Ch)) : "");
@@ -83,10 +79,6 @@ public final class ListType__BehaviorDescriptor extends BaseBHDescriptor {
   /*package*/ ListType__BehaviorDescriptor() {
   }
 
-  @Override
-  protected void initNode(@NotNull SNode node, @NotNull SConstructor constructor, @Nullable Object[] parameters) {
-    ___init___(node);
-  }
 
   @Override
   protected <T> T invokeSpecial0(@NotNull SNode node, @NotNull SMethod<T> method, @Nullable Object[] parameters) {

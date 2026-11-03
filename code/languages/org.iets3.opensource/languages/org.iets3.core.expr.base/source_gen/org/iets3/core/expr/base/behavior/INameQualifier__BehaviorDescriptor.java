@@ -7,34 +7,26 @@ import org.jetbrains.mps.openapi.language.SAbstractConcept;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import java.util.List;
 import java.util.Arrays;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.mps.openapi.model.SNode;
-import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 
 public final class INameQualifier__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getInterfaceConcept(0xcfaa4966b7d54b69L, 0xb66a309a6e1a7290L, 0x488adb107e398e30L, "org.iets3.core.expr.base.structure.INameQualifier");
 
-  public static final SMethod<String> makeQualifiedName_id4yaQL1YeoUt = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("makeQualifiedName").modifiers(12, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5227231181400542877L).languageId(0xb66a309a6e1a7290L, 0xcfaa4966b7d54b69L).build2(SMethodBuilder.createJavaParameter(String.class, ""));
+  public static final SMethod<String> makeQualifiedName_id4yaQL1YeoUt = new SMethodBuilder<>(String.class).name("makeQualifiedName").modifiers(12, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5227231181400542877L).languageId(0xb66a309a6e1a7290L, 0xcfaa4966b7d54b69L).build2(SMethodBuilder.createJavaParameter(String.class, "simpleName"));
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(makeQualifiedName_id4yaQL1YeoUt);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(makeQualifiedName_id4yaQL1YeoUt);
 
-  private static void ___init___(@NotNull SNode __thisNode__) {
-  }
 
 
   /*package*/ INameQualifier__BehaviorDescriptor() {
   }
 
-  @Override
-  protected void initNode(@NotNull SNode node, @NotNull SConstructor constructor, @Nullable Object[] parameters) {
-    ___init___(node);
-  }
 
   @Override
   protected <T> T invokeSpecial0(@NotNull SNode node, @NotNull SMethod<T> method, @Nullable Object[] parameters) {

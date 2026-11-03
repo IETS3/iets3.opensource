@@ -11,7 +11,7 @@ import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 
 /**
  * This renamer does not change the name of the first instance. Subsequent instances are renamed with an
- * integer suffix starting from 2. 
+ * integer suffix starting from 2.
  */
 public class DefaultRenamer extends AbstractRenamer {
 

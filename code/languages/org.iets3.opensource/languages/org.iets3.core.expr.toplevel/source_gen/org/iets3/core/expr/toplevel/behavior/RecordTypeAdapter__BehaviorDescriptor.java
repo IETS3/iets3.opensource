@@ -8,7 +8,6 @@ import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import org.jetbrains.mps.openapi.model.SNode;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import java.util.List;
 import java.util.Arrays;
@@ -19,7 +18,6 @@ import org.iets3.core.expr.base.behavior.ITypeable__BehaviorDescriptor;
 import jetbrains.mps.typechecking.TypecheckingFacade;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
 import jetbrains.mps.internal.collections.runtime.ListSequence;
-import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 import org.jetbrains.mps.openapi.language.SInterfaceConcept;
@@ -29,14 +27,12 @@ import org.jetbrains.mps.openapi.language.SContainmentLink;
 public final class RecordTypeAdapter__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getConcept(0x71934284d7d145eeL, 0xa0548c072591085fL, 0x465d5f01132db232L, "org.iets3.core.expr.toplevel.structure.RecordTypeAdapter");
 
-  public static final SMethod<Iterable<SNode>> getMandatoryFields_id4ptnK4jbrao = new SMethodBuilder<Iterable<SNode>>(new SJavaCompoundTypeImpl((Class<Iterable<SNode>>) ((Class) Object.class))).name("getMandatoryFields").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5070313213710414488L).languageId(0xa0548c072591085fL, 0x71934284d7d145eeL).build2();
-  public static final SMethod<Iterable<SNode>> getAllFields_id4ptnK4jbrbr = new SMethodBuilder<Iterable<SNode>>(new SJavaCompoundTypeImpl((Class<Iterable<SNode>>) ((Class) Object.class))).name("getAllFields").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5070313213710414555L).languageId(0xa0548c072591085fL, 0x71934284d7d145eeL).build2();
-  public static final SMethod<Iterable<SNode>> getChildrenForCoverage_id5IKJrJHNCE8 = new SMethodBuilder<Iterable<SNode>>(new SJavaCompoundTypeImpl((Class<Iterable<SNode>>) ((Class) Object.class))).name("getChildrenForCoverage").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(6606989268198787720L).languageId(0xa6067ce0236c8023L, 0x47f075a6558e4640L).build2();
+  public static final SMethod<Iterable<SNode>> getMandatoryFields_id4ptnK4jbrao = new SMethodBuilder<>((Class<Iterable<SNode>>) ((Class) Object.class)).name("getMandatoryFields").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5070313213710414488L).languageId(0xa0548c072591085fL, 0x71934284d7d145eeL).build2();
+  public static final SMethod<Iterable<SNode>> getAllFields_id4ptnK4jbrbr = new SMethodBuilder<>((Class<Iterable<SNode>>) ((Class) Object.class)).name("getAllFields").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5070313213710414555L).languageId(0xa0548c072591085fL, 0x71934284d7d145eeL).build2();
+  public static final SMethod<Iterable<SNode>> getChildrenForCoverage_id5IKJrJHNCE8 = new SMethodBuilder<>((Class<Iterable<SNode>>) ((Class) Object.class)).name("getChildrenForCoverage").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(6606989268198787720L).languageId(0xa6067ce0236c8023L, 0x47f075a6558e4640L).build2();
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(getMandatoryFields_id4ptnK4jbrao, getAllFields_id4ptnK4jbrbr, getChildrenForCoverage_id5IKJrJHNCE8);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(getMandatoryFields_id4ptnK4jbrao, getAllFields_id4ptnK4jbrbr, getChildrenForCoverage_id5IKJrJHNCE8);
 
-  private static void ___init___(@NotNull SNode __thisNode__) {
-  }
 
   /*package*/ static Iterable<SNode> getMandatoryFields_id4ptnK4jbrao(@NotNull SNode __thisNode__) {
     return Sequence.fromIterable(BuilderAdapter__BehaviorDescriptor.getAllFields_id4ptnK4jbrbr.invoke(__thisNode__)).where((it) -> {
@@ -54,10 +50,6 @@ public final class RecordTypeAdapter__BehaviorDescriptor extends BaseBHDescripto
   /*package*/ RecordTypeAdapter__BehaviorDescriptor() {
   }
 
-  @Override
-  protected void initNode(@NotNull SNode node, @NotNull SConstructor constructor, @Nullable Object[] parameters) {
-    ___init___(node);
-  }
 
   @Override
   protected <T> T invokeSpecial0(@NotNull SNode node, @NotNull SMethod<T> method, @Nullable Object[] parameters) {

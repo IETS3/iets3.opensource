@@ -9,7 +9,6 @@ import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import java.util.List;
 import org.jetbrains.mps.openapi.model.SNode;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import java.util.Arrays;
 import org.jetbrains.annotations.NotNull;
@@ -20,7 +19,6 @@ import jetbrains.mps.internal.collections.runtime.ListSequence;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
 import jetbrains.mps.lang.core.behavior.BaseConcept__BehaviorDescriptor;
 import org.iets3.core.expr.base.behavior.ITypeSupportsDefaultValue__BehaviorDescriptor;
-import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 import jetbrains.mps.smodel.builder.SNodeBuilder;
@@ -30,15 +28,13 @@ import org.jetbrains.mps.openapi.language.SConcept;
 public final class BoxType__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getConcept(0xfbba51185fc649ffL, 0x9c3b0b4469830440L, 0x3b0d68f3e7c18996L, "org.iets3.core.expr.mutable.structure.BoxType");
 
-  public static final SMethod<List<SNode>> allSupertypes_id4Q4DxjDsh$t = new SMethodBuilder<List<SNode>>(new SJavaCompoundTypeImpl((Class<List<SNode>>) ((Class) Object.class))).name("allSupertypes").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5585772046592317725L).languageId(0xb66a309a6e1a7290L, 0xcfaa4966b7d54b69L).build2();
-  public static final SMethod<String> getPresentation_idhEwIMiw = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("getPresentation").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(1213877396640L).languageId(0x9b92103b95ca8c0cL, 0xceab519525ea4f22L).build2();
-  public static final SMethod<SNode> createDefaultVarExpr_id60Qa1k_nI2O = new SMethodBuilder<SNode>(new SJavaCompoundTypeImpl((Class<SNode>) ((Class) Object.class))).name("createDefaultVarExpr").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(6932772747669856436L).languageId(0xb66a309a6e1a7290L, 0xcfaa4966b7d54b69L).build2();
-  public static final SMethod<Boolean> supportsDefault_id60Qa1k_sqM4 = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("supportsDefault").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(6932772747671088260L).languageId(0xb66a309a6e1a7290L, 0xcfaa4966b7d54b69L).build2();
+  public static final SMethod<List<SNode>> allSupertypes_id4Q4DxjDsh$t = new SMethodBuilder<>((Class<List<SNode>>) ((Class) Object.class)).name("allSupertypes").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5585772046592317725L).languageId(0xb66a309a6e1a7290L, 0xcfaa4966b7d54b69L).build2();
+  public static final SMethod<String> getPresentation_idhEwIMiw = new SMethodBuilder<>(String.class).name("getPresentation").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(1213877396640L).languageId(0x9b92103b95ca8c0cL, 0xceab519525ea4f22L).build2();
+  public static final SMethod<SNode> createDefaultVarExpr_id60Qa1k_nI2O = new SMethodBuilder<>(SNode.class).name("createDefaultVarExpr").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(6932772747669856436L).languageId(0xb66a309a6e1a7290L, 0xcfaa4966b7d54b69L).build2();
+  public static final SMethod<Boolean> supportsDefault_id60Qa1k_sqM4 = new SMethodBuilder<>(Boolean.TYPE).name("supportsDefault").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(6932772747671088260L).languageId(0xb66a309a6e1a7290L, 0xcfaa4966b7d54b69L).build2();
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(allSupertypes_id4Q4DxjDsh$t, getPresentation_idhEwIMiw, createDefaultVarExpr_id60Qa1k_nI2O, supportsDefault_id60Qa1k_sqM4);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(allSupertypes_id4Q4DxjDsh$t, getPresentation_idhEwIMiw, createDefaultVarExpr_id60Qa1k_nI2O, supportsDefault_id60Qa1k_sqM4);
 
-  private static void ___init___(@NotNull SNode __thisNode__) {
-  }
 
   /*package*/ static List<SNode> allSupertypes_id4Q4DxjDsh$t(@NotNull SNode __thisNode__) {
     List<SNode> supertypes = new ArrayList<SNode>();
@@ -61,10 +57,6 @@ public final class BoxType__BehaviorDescriptor extends BaseBHDescriptor {
   /*package*/ BoxType__BehaviorDescriptor() {
   }
 
-  @Override
-  protected void initNode(@NotNull SNode node, @NotNull SConstructor constructor, @Nullable Object[] parameters) {
-    ___init___(node);
-  }
 
   @Override
   protected <T> T invokeSpecial0(@NotNull SNode node, @NotNull SMethod<T> method, @Nullable Object[] parameters) {

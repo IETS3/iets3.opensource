@@ -8,7 +8,6 @@ import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import org.jetbrains.mps.openapi.model.SNode;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import java.awt.Color;
 import java.util.List;
@@ -24,7 +23,6 @@ import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
 import jetbrains.mps.lang.core.behavior.BaseConcept__BehaviorDescriptor;
 import com.intellij.ui.JBColor;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SConceptOperations;
-import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 import org.jetbrains.mps.openapi.language.SContainmentLink;
@@ -33,22 +31,20 @@ import org.jetbrains.mps.openapi.language.SConcept;
 public final class ProtocoledComponentMappingAttr__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getConcept(0xa50d629093d242afL, 0x9ae0b2fefc6ee754L, 0x2b5ce4b48ba6f6f1L, "org.iets3.protocol.transport.structure.ProtocoledComponentMappingAttr");
 
-  public static final SMethod<Iterable<SNode>> availableHardwareConnectorTypes_id6JtAeCuVOz7 = new SMethodBuilder<Iterable<SNode>>(new SJavaCompoundTypeImpl((Class<Iterable<SNode>>) ((Class) Object.class))).name("availableHardwareConnectorTypes").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(7772536663220111559L).languageId(0x9ae0b2fefc6ee754L, 0xa50d629093d242afL).build2();
-  public static final SMethod<Iterable<SNode>> protocoledElements_id2HsTbibmy9E = new SMethodBuilder<Iterable<SNode>>(new SJavaCompoundTypeImpl((Class<Iterable<SNode>>) ((Class) Object.class))).name("protocoledElements").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(3124623705571467882L).languageId(0x9ae0b2fefc6ee754L, 0xa50d629093d242afL).build2();
-  /*package*/ static final SMethod<Iterable<SNode>> sourcePorts_id4FLRp9a2ihy = new SMethodBuilder<Iterable<SNode>>(new SJavaCompoundTypeImpl((Class<Iterable<SNode>>) ((Class) Object.class))).name("sourcePorts").modifiers(0, AccessPrivileges.PRIVATE).concept(CONCEPT).baseMethodId(5400341048571012194L).languageId(0x9ae0b2fefc6ee754L, 0xa50d629093d242afL).build2();
-  /*package*/ static final SMethod<Iterable<SNode>> targetPorts_id4FLRp9a2m69 = new SMethodBuilder<Iterable<SNode>>(new SJavaCompoundTypeImpl((Class<Iterable<SNode>>) ((Class) Object.class))).name("targetPorts").modifiers(0, AccessPrivileges.PRIVATE).concept(CONCEPT).baseMethodId(5400341048571027849L).languageId(0x9ae0b2fefc6ee754L, 0xa50d629093d242afL).build2();
-  public static final SMethod<Iterable<SAbstractConcept>> canBeUsedUnder_id1WCh2th1Boz = new SMethodBuilder<Iterable<SAbstractConcept>>(new SJavaCompoundTypeImpl((Class<Iterable<SAbstractConcept>>) ((Class) Object.class))).name("canBeUsedUnder").modifiers(9, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(2245119349897983523L).languageId(0xb6713d118449c6e7L, 0xf0fd486f857743e9L).build2();
-  public static final SMethod<String> summaryString_id4A8SzOVam5y = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("summaryString").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5298733714214838626L).languageId(0xa055a74f8477fc34L, 0x583939beded04735L).build2();
-  public static final SMethod<Color> summaryColor_id4A8SzOVam5R = new SMethodBuilder<Color>(new SJavaCompoundTypeImpl(Color.class)).name("summaryColor").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5298733714214838647L).languageId(0xa055a74f8477fc34L, 0x583939beded04735L).build2();
-  public static final SMethod<Iterable<SNode>> availableProtocolMaps_id3wMQ0tmq7Ce = new SMethodBuilder<Iterable<SNode>>(new SJavaCompoundTypeImpl((Class<Iterable<SNode>>) ((Class) Object.class))).name("availableProtocolMaps").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(4049536540985555470L).languageId(0x9ae0b2fefc6ee754L, 0xa50d629093d242afL).build2();
-  public static final SMethod<Iterable<SNode>> availableProtocolMapsByProtocol_id3wMQ0tmq7Fr = new SMethodBuilder<Iterable<SNode>>(new SJavaCompoundTypeImpl((Class<Iterable<SNode>>) ((Class) Object.class))).name("availableProtocolMapsByProtocol").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(4049536540985555675L).languageId(0x9ae0b2fefc6ee754L, 0xa50d629093d242afL).build2(SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""));
-  /*package*/ static final SMethod<SNode> mapSection_id3wMQ0tmrlMr = new SMethodBuilder<SNode>(new SJavaCompoundTypeImpl((Class<SNode>) ((Class) Object.class))).name("mapSection").modifiers(0, AccessPrivileges.PRIVATE).concept(CONCEPT).baseMethodId(4049536540985875611L).languageId(0x9ae0b2fefc6ee754L, 0xa50d629093d242afL).build2();
-  public static final SMethod<SNode> protocolMapForElement_id791OiB7xYGl = new SMethodBuilder<SNode>(new SJavaCompoundTypeImpl((Class<SNode>) ((Class) Object.class))).name("protocolMapForElement").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(8233091571181415189L).languageId(0x9ae0b2fefc6ee754L, 0xa50d629093d242afL).build2(SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""));
+  public static final SMethod<Iterable<SNode>> availableHardwareConnectorTypes_id6JtAeCuVOz7 = new SMethodBuilder<>((Class<Iterable<SNode>>) ((Class) Object.class)).name("availableHardwareConnectorTypes").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(7772536663220111559L).languageId(0x9ae0b2fefc6ee754L, 0xa50d629093d242afL).build2();
+  public static final SMethod<Iterable<SNode>> protocoledElements_id2HsTbibmy9E = new SMethodBuilder<>((Class<Iterable<SNode>>) ((Class) Object.class)).name("protocoledElements").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(3124623705571467882L).languageId(0x9ae0b2fefc6ee754L, 0xa50d629093d242afL).build2();
+  /*package*/ static final SMethod<Iterable<SNode>> sourcePorts_id4FLRp9a2ihy = new SMethodBuilder<>((Class<Iterable<SNode>>) ((Class) Object.class)).name("sourcePorts").modifiers(0, AccessPrivileges.PRIVATE).concept(CONCEPT).baseMethodId(5400341048571012194L).languageId(0x9ae0b2fefc6ee754L, 0xa50d629093d242afL).build2();
+  /*package*/ static final SMethod<Iterable<SNode>> targetPorts_id4FLRp9a2m69 = new SMethodBuilder<>((Class<Iterable<SNode>>) ((Class) Object.class)).name("targetPorts").modifiers(0, AccessPrivileges.PRIVATE).concept(CONCEPT).baseMethodId(5400341048571027849L).languageId(0x9ae0b2fefc6ee754L, 0xa50d629093d242afL).build2();
+  public static final SMethod<Iterable<SAbstractConcept>> canBeUsedUnder_id1WCh2th1Boz = new SMethodBuilder<>((Class<Iterable<SAbstractConcept>>) ((Class) Object.class)).name("canBeUsedUnder").modifiers(9, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(2245119349897983523L).languageId(0xb6713d118449c6e7L, 0xf0fd486f857743e9L).build2();
+  public static final SMethod<String> summaryString_id4A8SzOVam5y = new SMethodBuilder<>(String.class).name("summaryString").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5298733714214838626L).languageId(0xa055a74f8477fc34L, 0x583939beded04735L).build2();
+  public static final SMethod<Color> summaryColor_id4A8SzOVam5R = new SMethodBuilder<>(Color.class).name("summaryColor").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5298733714214838647L).languageId(0xa055a74f8477fc34L, 0x583939beded04735L).build2();
+  public static final SMethod<Iterable<SNode>> availableProtocolMaps_id3wMQ0tmq7Ce = new SMethodBuilder<>((Class<Iterable<SNode>>) ((Class) Object.class)).name("availableProtocolMaps").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(4049536540985555470L).languageId(0x9ae0b2fefc6ee754L, 0xa50d629093d242afL).build2();
+  public static final SMethod<Iterable<SNode>> availableProtocolMapsByProtocol_id3wMQ0tmq7Fr = new SMethodBuilder<>((Class<Iterable<SNode>>) ((Class) Object.class)).name("availableProtocolMapsByProtocol").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(4049536540985555675L).languageId(0x9ae0b2fefc6ee754L, 0xa50d629093d242afL).build2(SMethodBuilder.createJavaParameter(SNode.class, "transportProtocol"));
+  /*package*/ static final SMethod<SNode> mapSection_id3wMQ0tmrlMr = new SMethodBuilder<>(SNode.class).name("mapSection").modifiers(0, AccessPrivileges.PRIVATE).concept(CONCEPT).baseMethodId(4049536540985875611L).languageId(0x9ae0b2fefc6ee754L, 0xa50d629093d242afL).build2();
+  public static final SMethod<SNode> protocolMapForElement_id791OiB7xYGl = new SMethodBuilder<>(SNode.class).name("protocolMapForElement").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(8233091571181415189L).languageId(0x9ae0b2fefc6ee754L, 0xa50d629093d242afL).build2(SMethodBuilder.createJavaParameter(SNode.class, "element"));
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(availableHardwareConnectorTypes_id6JtAeCuVOz7, protocoledElements_id2HsTbibmy9E, sourcePorts_id4FLRp9a2ihy, targetPorts_id4FLRp9a2m69, canBeUsedUnder_id1WCh2th1Boz, summaryString_id4A8SzOVam5y, summaryColor_id4A8SzOVam5R, availableProtocolMaps_id3wMQ0tmq7Ce, availableProtocolMapsByProtocol_id3wMQ0tmq7Fr, mapSection_id3wMQ0tmrlMr, protocolMapForElement_id791OiB7xYGl);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(availableHardwareConnectorTypes_id6JtAeCuVOz7, protocoledElements_id2HsTbibmy9E, sourcePorts_id4FLRp9a2ihy, targetPorts_id4FLRp9a2m69, canBeUsedUnder_id1WCh2th1Boz, summaryString_id4A8SzOVam5y, summaryColor_id4A8SzOVam5R, availableProtocolMaps_id3wMQ0tmq7Ce, availableProtocolMapsByProtocol_id3wMQ0tmq7Fr, mapSection_id3wMQ0tmrlMr, protocolMapForElement_id791OiB7xYGl);
 
-  private static void ___init___(@NotNull SNode __thisNode__) {
-  }
 
   /*package*/ static Iterable<SNode> availableHardwareConnectorTypes_id6JtAeCuVOz7(@NotNull SNode __thisNode__) {
     return Sequence.fromIterable(SLinkOperations.collect(ProtocoledComponentMappingAttr__BehaviorDescriptor.targetPorts_id4FLRp9a2m69.invokeSpecial(__thisNode__), LINKS.type$5Gl6)).select((it) -> (SNode) IPortType__BehaviorDescriptor.createConnectorType_id4KDeVD8s9TJ.invoke(it));
@@ -98,10 +94,6 @@ public final class ProtocoledComponentMappingAttr__BehaviorDescriptor extends Ba
   /*package*/ ProtocoledComponentMappingAttr__BehaviorDescriptor() {
   }
 
-  @Override
-  protected void initNode(@NotNull SNode node, @NotNull SConstructor constructor, @Nullable Object[] parameters) {
-    ___init___(node);
-  }
 
   @Override
   protected <T> T invokeSpecial0(@NotNull SNode node, @NotNull SMethod<T> method, @Nullable Object[] parameters) {

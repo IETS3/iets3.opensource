@@ -13,7 +13,7 @@ import org.jetbrains.annotations.NotNull;
 /**
  * Note: This was simply copied and modified from DefaultRunListener
  * 
- * JUnit test listener that spits out control sequences into supplied stream. 
+ * JUnit test listener that spits out control sequences into supplied stream.
  * These control sequences are for external process to receive JUnit events.
  * 
  * for the explicit contract for the events

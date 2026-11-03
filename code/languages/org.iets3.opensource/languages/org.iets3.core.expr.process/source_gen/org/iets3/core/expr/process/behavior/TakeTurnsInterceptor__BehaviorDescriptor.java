@@ -10,7 +10,6 @@ import jetbrains.mps.baseLanguage.tuples.runtime.Tuples;
 import org.iets3.core.expr.mutable.plugin.IDElement;
 import org.iets3.core.expr.mutable.plugin.InterceptorState;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import java.util.List;
 import org.iets3.core.expr.mutable.plugin.ContextValue;
@@ -36,7 +35,6 @@ import java.util.Objects;
 import org.iets3.core.expr.process.plugin.TakeTurnsUnorderedInterceptorState;
 import jetbrains.mps.internal.collections.runtime.Sequence;
 import org.iets3.core.expr.base.plugin.EffectDescriptor;
-import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 import org.jetbrains.mps.openapi.language.SConcept;
@@ -46,15 +44,13 @@ import org.jetbrains.mps.openapi.language.SProperty;
 public final class TakeTurnsInterceptor__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getConcept(0x50b470e714ad46c3L, 0xb5404586f56d2e9cL, 0x4bbb01110854f1ddL, "org.iets3.core.expr.process.structure.TakeTurnsInterceptor");
 
-  public static final SMethod<Tuples._2<IDElement, InterceptorState>> processOrThrow_id4IV0h47deV3 = new SMethodBuilder<Tuples._2<IDElement, InterceptorState>>(new SJavaCompoundTypeImpl((Class<Tuples._2<IDElement, InterceptorState>>) ((Class) Object.class))).name("processOrThrow").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5456956546136469187L).languageId(0x9c3b0b4469830440L, 0xfbba51185fc649ffL).build2(SMethodBuilder.createJavaParameter(IDElement.class, ""), SMethodBuilder.createJavaParameter(InterceptorState.class, ""), SMethodBuilder.createJavaParameter((Class<List<Object>>) ((Class) Object.class), ""), SMethodBuilder.createJavaParameter((Class<List<ContextValue>>) ((Class) Object.class), ""), SMethodBuilder.createJavaParameter(IContext.class, ""), SMethodBuilder.createJavaParameter(ComputationTrace.class, ""));
-  public static final SMethod<Iterable<SAbstractConcept>> guaranteesContextArguments_id4IV0h47FYNX = new SMethodBuilder<Iterable<SAbstractConcept>>(new SJavaCompoundTypeImpl((Class<Iterable<SAbstractConcept>>) ((Class) Object.class))).name("guaranteesContextArguments").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5456956546144529661L).languageId(0x9c3b0b4469830440L, 0xfbba51185fc649ffL).build2();
-  public static final SMethod<InterceptorState> createStateObject_id4IV0h47VEDy = new SMethodBuilder<InterceptorState>(new SJavaCompoundTypeImpl(InterceptorState.class)).name("createStateObject").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5456956546148641378L).languageId(0x9c3b0b4469830440L, 0xfbba51185fc649ffL).build2(SMethodBuilder.createJavaParameter(IContext.class, ""), SMethodBuilder.createJavaParameter(ComputationTrace.class, ""));
-  public static final SMethod<String> allowsEffectForNode_idORfz$DS6Ap = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("allowsEffectForNode").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(952298261448780185L).languageId(0xb66a309a6e1a7290L, 0xcfaa4966b7d54b69L).build2(SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""));
+  public static final SMethod<Tuples._2<IDElement, InterceptorState>> processOrThrow_id4IV0h47deV3 = new SMethodBuilder<>((Class<Tuples._2<IDElement, InterceptorState>>) ((Class) Object.class)).name("processOrThrow").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5456956546136469187L).languageId(0x9c3b0b4469830440L, 0xfbba51185fc649ffL).build2(SMethodBuilder.createJavaParameter(IDElement.class, "element"), SMethodBuilder.createJavaParameter(InterceptorState.class, "state"), SMethodBuilder.createJavaParameter((Class<List<Object>>) ((Class) Object.class), "payload"), SMethodBuilder.createJavaParameter((Class<List<ContextValue>>) ((Class) Object.class), "contextArgs"), SMethodBuilder.createJavaParameter(IContext.class, "ctx"), SMethodBuilder.createJavaParameter(ComputationTrace.class, "trace"));
+  public static final SMethod<Iterable<SAbstractConcept>> guaranteesContextArguments_id4IV0h47FYNX = new SMethodBuilder<>((Class<Iterable<SAbstractConcept>>) ((Class) Object.class)).name("guaranteesContextArguments").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5456956546144529661L).languageId(0x9c3b0b4469830440L, 0xfbba51185fc649ffL).build2();
+  public static final SMethod<InterceptorState> createStateObject_id4IV0h47VEDy = new SMethodBuilder<>(InterceptorState.class).name("createStateObject").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5456956546148641378L).languageId(0x9c3b0b4469830440L, 0xfbba51185fc649ffL).build2(SMethodBuilder.createJavaParameter(IContext.class, "ctx"), SMethodBuilder.createJavaParameter(ComputationTrace.class, "trace"));
+  public static final SMethod<String> allowsEffectForNode_idORfz$DS6Ap = new SMethodBuilder<>(String.class).name("allowsEffectForNode").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(952298261448780185L).languageId(0xb66a309a6e1a7290L, 0xcfaa4966b7d54b69L).build2(SMethodBuilder.createJavaParameter(SNode.class, "n"));
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(processOrThrow_id4IV0h47deV3, guaranteesContextArguments_id4IV0h47FYNX, createStateObject_id4IV0h47VEDy, allowsEffectForNode_idORfz$DS6Ap);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(processOrThrow_id4IV0h47deV3, guaranteesContextArguments_id4IV0h47FYNX, createStateObject_id4IV0h47VEDy, allowsEffectForNode_idORfz$DS6Ap);
 
-  private static void ___init___(@NotNull SNode __thisNode__) {
-  }
 
   /*package*/ static Tuples._2<IDElement, InterceptorState> processOrThrow_id4IV0h47deV3(@NotNull SNode __thisNode__, IDElement element, InterceptorState state, List<Object> payload, List<ContextValue> contextArgs, IContext ctx, ComputationTrace trace) {
     if (element instanceof IDValue) {
@@ -123,10 +119,6 @@ public final class TakeTurnsInterceptor__BehaviorDescriptor extends BaseBHDescri
   /*package*/ TakeTurnsInterceptor__BehaviorDescriptor() {
   }
 
-  @Override
-  protected void initNode(@NotNull SNode node, @NotNull SConstructor constructor, @Nullable Object[] parameters) {
-    ___init___(node);
-  }
 
   @Override
   protected <T> T invokeSpecial0(@NotNull SNode node, @NotNull SMethod<T> method, @Nullable Object[] parameters) {

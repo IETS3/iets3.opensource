@@ -155,7 +155,7 @@ import org.jetbrains.mps.openapi.language.SConcept;
     }
   }
   private EditorCell createEnumCheckbox_1() {
-    return createEnumCheckbox_0(getEditorContext(), myNode);
+    return createEnumCheckbox_0(getEditorContext(), getNode());
   }
   private EditorCell createAlternation_0() {
     boolean alternationCondition = true;

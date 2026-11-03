@@ -8,25 +8,21 @@ import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import org.iets3.core.expr.base.behavior.ICapabilityRequirement;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import java.util.List;
 import java.util.Arrays;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.mps.openapi.model.SNode;
-import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 
 public final class AbstractTaggedType__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getConcept(0x5186c6ce428c4f09L, 0xa9df73d9e86c27d3L, 0x4b61610d29e578f2L, "org.iets3.core.expr.typetags.structure.AbstractTaggedType");
 
-  public static final SMethod<ICapabilityRequirement> getCapabilityRequirement_id7McqtXGyz8c = new SMethodBuilder<ICapabilityRequirement>(new SJavaCompoundTypeImpl(ICapabilityRequirement.class)).name("getCapabilityRequirement").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(8974664565762175500L).languageId(0xb66a309a6e1a7290L, 0xcfaa4966b7d54b69L).build2();
+  public static final SMethod<ICapabilityRequirement> getCapabilityRequirement_id7McqtXGyz8c = new SMethodBuilder<>(ICapabilityRequirement.class).name("getCapabilityRequirement").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(8974664565762175500L).languageId(0xb66a309a6e1a7290L, 0xcfaa4966b7d54b69L).build2();
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(getCapabilityRequirement_id7McqtXGyz8c);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(getCapabilityRequirement_id7McqtXGyz8c);
 
-  private static void ___init___(@NotNull SNode __thisNode__) {
-  }
 
   /*package*/ static ICapabilityRequirement getCapabilityRequirement_id7McqtXGyz8c(@NotNull SNode __thisNode__) {
     return TagHandlingCapability.INSTANCE;
@@ -35,10 +31,6 @@ public final class AbstractTaggedType__BehaviorDescriptor extends BaseBHDescript
   /*package*/ AbstractTaggedType__BehaviorDescriptor() {
   }
 
-  @Override
-  protected void initNode(@NotNull SNode node, @NotNull SConstructor constructor, @Nullable Object[] parameters) {
-    ___init___(node);
-  }
 
   @Override
   protected <T> T invokeSpecial0(@NotNull SNode node, @NotNull SMethod<T> method, @Nullable Object[] parameters) {

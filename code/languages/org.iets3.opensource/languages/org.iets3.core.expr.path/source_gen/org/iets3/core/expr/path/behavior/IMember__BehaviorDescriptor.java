@@ -7,7 +7,6 @@ import org.jetbrains.mps.openapi.language.SAbstractConcept;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import java.awt.Color;
 import java.util.List;
@@ -15,7 +14,6 @@ import java.util.Arrays;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.mps.openapi.model.SNode;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations;
-import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 import org.jetbrains.mps.openapi.language.SProperty;
@@ -23,14 +21,12 @@ import org.jetbrains.mps.openapi.language.SProperty;
 public final class IMember__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getInterfaceConcept(0xf3eafff030d246d6L, 0x9150f0f3b880ce27L, 0x6c71b19f6f070e1aL, "org.iets3.core.expr.path.structure.IMember");
 
-  public static final SMethod<String> getPathLabel_id6LLGpXJ4YES = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("getPathLabel").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(7814222126786013880L).languageId(0x9150f0f3b880ce27L, 0xf3eafff030d246d6L).build2();
-  public static final SMethod<Color> getPathColor_id2U5Q01Ug$y6 = new SMethodBuilder<Color>(new SJavaCompoundTypeImpl(Color.class)).name("getPathColor").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(3352322994209966214L).languageId(0x9150f0f3b880ce27L, 0xf3eafff030d246d6L).build2();
-  public static final SMethod<Boolean> overrideDefaultAllowUmlaute_id5D8v3P4jYKp = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("overrideDefaultAllowUmlaute").modifiers(9, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(6505586264317619225L).languageId(0xbd9c05c0f8725a35L, 0x7b68d745a7b848b9L).build2();
+  public static final SMethod<String> getPathLabel_id6LLGpXJ4YES = new SMethodBuilder<>(String.class).name("getPathLabel").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(7814222126786013880L).languageId(0x9150f0f3b880ce27L, 0xf3eafff030d246d6L).build2();
+  public static final SMethod<Color> getPathColor_id2U5Q01Ug$y6 = new SMethodBuilder<>(Color.class).name("getPathColor").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(3352322994209966214L).languageId(0x9150f0f3b880ce27L, 0xf3eafff030d246d6L).build2();
+  public static final SMethod<Boolean> overrideDefaultAllowUmlaute_id5D8v3P4jYKp = new SMethodBuilder<>(Boolean.TYPE).name("overrideDefaultAllowUmlaute").modifiers(9, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(6505586264317619225L).languageId(0xbd9c05c0f8725a35L, 0x7b68d745a7b848b9L).build2();
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(getPathLabel_id6LLGpXJ4YES, getPathColor_id2U5Q01Ug$y6, overrideDefaultAllowUmlaute_id5D8v3P4jYKp);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(getPathLabel_id6LLGpXJ4YES, getPathColor_id2U5Q01Ug$y6, overrideDefaultAllowUmlaute_id5D8v3P4jYKp);
 
-  private static void ___init___(@NotNull SNode __thisNode__) {
-  }
 
   /*package*/ static String getPathLabel_id6LLGpXJ4YES(@NotNull SNode __thisNode__) {
     return SPropertyOperations.getString(__thisNode__, PROPS.name$MnvL);
@@ -45,10 +41,6 @@ public final class IMember__BehaviorDescriptor extends BaseBHDescriptor {
   /*package*/ IMember__BehaviorDescriptor() {
   }
 
-  @Override
-  protected void initNode(@NotNull SNode node, @NotNull SConstructor constructor, @Nullable Object[] parameters) {
-    ___init___(node);
-  }
 
   @Override
   protected <T> T invokeSpecial0(@NotNull SNode node, @NotNull SMethod<T> method, @Nullable Object[] parameters) {

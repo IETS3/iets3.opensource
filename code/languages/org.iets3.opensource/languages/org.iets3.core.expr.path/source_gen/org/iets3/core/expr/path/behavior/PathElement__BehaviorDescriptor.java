@@ -7,7 +7,6 @@ import org.jetbrains.mps.openapi.language.SAbstractConcept;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import org.jetbrains.mps.openapi.model.SNode;
 import java.util.List;
@@ -16,7 +15,6 @@ import org.jetbrains.annotations.NotNull;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
 import org.iets3.core.expr.base.behavior.ICanBeLValue__BehaviorDescriptor;
-import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 import org.jetbrains.mps.openapi.language.SReferenceLink;
@@ -26,17 +24,15 @@ import org.jetbrains.mps.openapi.language.SInterfaceConcept;
 public final class PathElement__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getConcept(0xf3eafff030d246d6L, 0x9150f0f3b880ce27L, 0x6c71b19f6f13ea6fL, "org.iets3.core.expr.path.structure.PathElement");
 
-  public static final SMethod<String> renderReadable_id6kR0qIbI2yi = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("renderReadable").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(7293299957844945042L).languageId(0xb66a309a6e1a7290L, 0xcfaa4966b7d54b69L).build2();
-  public static final SMethod<SNode> target_id6rGLT0TevFd = new SMethodBuilder<SNode>(new SJavaCompoundTypeImpl((Class<SNode>) ((Class) Object.class))).name("target").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(7416522108621683405L).languageId(0xb66a309a6e1a7290L, 0xcfaa4966b7d54b69L).build2();
-  public static final SMethod<Boolean> isSameAs_id4o9aP47qdiC = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("isSameAs").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5046612484462007464L).languageId(0x9150f0f3b880ce27L, 0xf3eafff030d246d6L).build2(SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""));
-  public static final SMethod<SNode> target_id4fgA7QrEdeJ = new SMethodBuilder<SNode>(new SJavaCompoundTypeImpl((Class<SNode>) ((Class) Object.class))).name("target").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(4886573260946854831L).languageId(0x9150f0f3b880ce27L, 0xf3eafff030d246d6L).build2();
-  public static final SMethod<Boolean> isLValue_idaPhVmWYjn5 = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("isLValue").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(195141004745586117L).languageId(0xb66a309a6e1a7290L, 0xcfaa4966b7d54b69L).build2();
-  public static final SMethod<Boolean> isUsedAsLValue_idYMJl2BJIOO = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("isUsedAsLValue").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(1131174610532756788L).languageId(0xb66a309a6e1a7290L, 0xcfaa4966b7d54b69L).build2();
+  public static final SMethod<String> renderReadable_id6kR0qIbI2yi = new SMethodBuilder<>(String.class).name("renderReadable").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(7293299957844945042L).languageId(0xb66a309a6e1a7290L, 0xcfaa4966b7d54b69L).build2();
+  public static final SMethod<SNode> target_id6rGLT0TevFd = new SMethodBuilder<>(SNode.class).name("target").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(7416522108621683405L).languageId(0xb66a309a6e1a7290L, 0xcfaa4966b7d54b69L).build2();
+  public static final SMethod<Boolean> isSameAs_id4o9aP47qdiC = new SMethodBuilder<>(Boolean.TYPE).name("isSameAs").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5046612484462007464L).languageId(0x9150f0f3b880ce27L, 0xf3eafff030d246d6L).build2(SMethodBuilder.createJavaParameter(SNode.class, "other"));
+  public static final SMethod<SNode> target_id4fgA7QrEdeJ = new SMethodBuilder<>(SNode.class).name("target").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(4886573260946854831L).languageId(0x9150f0f3b880ce27L, 0xf3eafff030d246d6L).build2();
+  public static final SMethod<Boolean> isLValue_idaPhVmWYjn5 = new SMethodBuilder<>(Boolean.TYPE).name("isLValue").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(195141004745586117L).languageId(0xb66a309a6e1a7290L, 0xcfaa4966b7d54b69L).build2();
+  public static final SMethod<Boolean> isUsedAsLValue_idYMJl2BJIOO = new SMethodBuilder<>(Boolean.TYPE).name("isUsedAsLValue").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(1131174610532756788L).languageId(0xb66a309a6e1a7290L, 0xcfaa4966b7d54b69L).build2();
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(renderReadable_id6kR0qIbI2yi, target_id6rGLT0TevFd, isSameAs_id4o9aP47qdiC, target_id4fgA7QrEdeJ, isLValue_idaPhVmWYjn5, isUsedAsLValue_idYMJl2BJIOO);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(renderReadable_id6kR0qIbI2yi, target_id6rGLT0TevFd, isSameAs_id4o9aP47qdiC, target_id4fgA7QrEdeJ, isLValue_idaPhVmWYjn5, isUsedAsLValue_idYMJl2BJIOO);
 
-  private static void ___init___(@NotNull SNode __thisNode__) {
-  }
 
   /*package*/ static String renderReadable_id6kR0qIbI2yi(@NotNull SNode __thisNode__) {
     return (String) IMember__BehaviorDescriptor.getPathLabel_id6LLGpXJ4YES.invoke(SLinkOperations.getTarget(__thisNode__, LINKS.member$d1yc));
@@ -68,10 +64,6 @@ public final class PathElement__BehaviorDescriptor extends BaseBHDescriptor {
   /*package*/ PathElement__BehaviorDescriptor() {
   }
 
-  @Override
-  protected void initNode(@NotNull SNode node, @NotNull SConstructor constructor, @Nullable Object[] parameters) {
-    ___init___(node);
-  }
 
   @Override
   protected <T> T invokeSpecial0(@NotNull SNode node, @NotNull SMethod<T> method, @Nullable Object[] parameters) {

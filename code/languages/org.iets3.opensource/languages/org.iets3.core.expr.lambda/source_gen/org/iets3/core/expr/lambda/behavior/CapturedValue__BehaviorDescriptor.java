@@ -7,7 +7,6 @@ import org.jetbrains.mps.openapi.language.SAbstractConcept;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import java.util.List;
 import java.util.Arrays;
@@ -15,7 +14,6 @@ import org.jetbrains.annotations.NotNull;
 import org.jetbrains.mps.openapi.model.SNode;
 import jetbrains.mps.lang.core.behavior.BaseConcept__BehaviorDescriptor;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
-import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 import org.jetbrains.mps.openapi.language.SContainmentLink;
@@ -23,14 +21,12 @@ import org.jetbrains.mps.openapi.language.SContainmentLink;
 public final class CapturedValue__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getConcept(0x9464fa065ab9409bL, 0x927464ab29588457L, 0x20915a5023bede87L, "org.iets3.core.expr.lambda.structure.CapturedValue");
 
-  public static final SMethod<Void> setValue_id22hm_0zJHWz = new SMethodBuilder<Void>(new SJavaCompoundTypeImpl(Void.class)).name("setValue").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(2346756181080334115L).languageId(0x927464ab29588457L, 0x9464fa065ab9409bL).build2(SMethodBuilder.createJavaParameter(Object.class, ""));
-  public static final SMethod<Object> getValue_id22hm_0zJIbF = new SMethodBuilder<Object>(new SJavaCompoundTypeImpl(Object.class)).name("getValue").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(2346756181080335083L).languageId(0x927464ab29588457L, 0x9464fa065ab9409bL).build2();
-  public static final SMethod<String> renderReadable_id4Y0vh0cfqjE = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("renderReadable").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5728716233893586154L).languageId(0xb66a309a6e1a7290L, 0xcfaa4966b7d54b69L).build2();
+  public static final SMethod<Void> setValue_id22hm_0zJHWz = new SMethodBuilder<>(Void.TYPE).name("setValue").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(2346756181080334115L).languageId(0x927464ab29588457L, 0x9464fa065ab9409bL).build2(SMethodBuilder.createJavaParameter(Object.class, "o"));
+  public static final SMethod<Object> getValue_id22hm_0zJIbF = new SMethodBuilder<>(Object.class).name("getValue").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(2346756181080335083L).languageId(0x927464ab29588457L, 0x9464fa065ab9409bL).build2();
+  public static final SMethod<String> renderReadable_id4Y0vh0cfqjE = new SMethodBuilder<>(String.class).name("renderReadable").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5728716233893586154L).languageId(0xb66a309a6e1a7290L, 0xcfaa4966b7d54b69L).build2();
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(setValue_id22hm_0zJHWz, getValue_id22hm_0zJIbF, renderReadable_id4Y0vh0cfqjE);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(setValue_id22hm_0zJHWz, getValue_id22hm_0zJIbF, renderReadable_id4Y0vh0cfqjE);
 
-  private static void ___init___(@NotNull SNode __thisNode__) {
-  }
 
   /*package*/ static void setValue_id22hm_0zJHWz(@NotNull SNode __thisNode__, Object o) {
     __thisNode__.putUserObject("value", o);
@@ -45,10 +41,6 @@ public final class CapturedValue__BehaviorDescriptor extends BaseBHDescriptor {
   /*package*/ CapturedValue__BehaviorDescriptor() {
   }
 
-  @Override
-  protected void initNode(@NotNull SNode node, @NotNull SConstructor constructor, @Nullable Object[] parameters) {
-    ___init___(node);
-  }
 
   @Override
   protected <T> T invokeSpecial0(@NotNull SNode node, @NotNull SMethod<T> method, @Nullable Object[] parameters) {

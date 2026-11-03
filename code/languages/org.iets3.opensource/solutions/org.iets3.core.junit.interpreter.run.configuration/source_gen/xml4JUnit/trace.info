@@ -29,46 +29,44 @@
       <node id="8070843538581934805" at="51,7,52,19" concept="8" />
       <node id="6210493253425452099" at="53,5,54,16" concept="8" />
       <node id="590500986460195163" at="58,127,59,88" concept="7" />
-      <node id="590500986460288336" at="59,88,60,102" concept="2" />
-      <node id="6962548927774808048" at="60,102,61,27" concept="8" />
-      <node id="2393174431571280967" at="62,39,63,28" concept="8" />
-      <node id="6210493253424827393" at="68,33,69,75" concept="2" />
-      <node id="6210493253424827395" at="70,7,71,13" concept="8" />
-      <node id="6210493253424827406" at="72,5,73,133" concept="7" />
-      <node id="6210493253424827421" at="73,133,74,23" concept="2" />
-      <node id="6210493253424827425" at="74,23,75,94" concept="2" />
-      <node id="6210493253424855019" at="78,76,79,84" concept="7" />
-      <node id="3975459124941658879" at="81,79,82,56" concept="9" />
-      <node id="3975459124941370226" at="83,73,84,19" concept="1" />
-      <node id="6210493253424855036" at="86,55,87,166" concept="2" />
-      <node id="6210493253424855063" at="90,7,91,30" concept="8" />
-      <node id="6210493253424785557" at="95,0,96,0" concept="10" trace="ITestItemContainer$ow" />
+      <node id="4139348896268865747" at="59,88,60,78" concept="7" />
+      <node id="590500986460288336" at="60,78,61,83" concept="2" />
+      <node id="6962548927774808048" at="61,83,62,27" concept="8" />
+      <node id="2393174431571280967" at="63,39,64,28" concept="8" />
+      <node id="6210493253424827393" at="69,33,70,75" concept="2" />
+      <node id="6210493253424827395" at="71,7,72,13" concept="8" />
+      <node id="6210493253424827406" at="73,5,74,133" concept="7" />
+      <node id="6210493253424827421" at="74,133,75,23" concept="2" />
+      <node id="6210493253424827425" at="75,23,76,94" concept="2" />
+      <node id="6210493253424855019" at="79,76,80,84" concept="7" />
+      <node id="3975459124941658879" at="82,79,83,56" concept="9" />
+      <node id="3975459124941370226" at="84,73,85,19" concept="1" />
+      <node id="6210493253424855036" at="87,55,88,166" concept="2" />
+      <node id="6210493253424855063" at="91,7,92,30" concept="8" />
+      <node id="6210493253424785557" at="96,0,97,0" concept="10" trace="ITestItemContainer$ow" />
       <node id="6210493253425408418" at="41,23,44,7" concept="5" />
       <node id="8070843538581934797" at="48,126,51,7" concept="5" />
-      <node id="6210493253424827393" at="67,63,70,7" concept="5" />
-      <node id="3975459124941370217" at="82,56,85,9" concept="5" />
-      <node id="6210493253424855034" at="85,9,88,9" concept="4" />
+      <node id="6210493253424827393" at="68,63,71,7" concept="5" />
+      <node id="3975459124941370217" at="83,56,86,9" concept="5" />
+      <node id="6210493253424855034" at="86,9,89,9" concept="4" />
       <node id="6210493253425089274" at="34,0,38,0" concept="0" trace="TestModelExecutor#(Ljetbrains/mps/core/platform/Platform;Lxml4JUnit/TestExecutorConfigForCommandLine;)V" />
-      <node id="6210493253424827339" at="57,56,62,39" concept="7" />
       <node id="6210493253425408416" at="40,61,46,5" concept="5" />
       <node id="8070843538581934784" at="47,78,53,5" concept="5" />
-      <node id="6210493253424827391" at="66,114,72,5" concept="5" />
-      <node id="2393174431571216784" at="57,0,65,0" concept="6" trace="getTestableNodes#()Ljava/lang/Iterable;" />
-      <node id="6210493253424855031" at="80,47,89,7" concept="4" />
-      <node id="6210493253424827208" at="66,0,77,0" concept="6" trace="executeTestsByInterpreter#(Ljava/lang/Iterable;Lxml4JUnit/ICustomRunnerConfig;)V" />
-      <node id="6210493253424855026" at="79,84,90,7" concept="2" />
-      <node id="6210493253424855013" at="78,0,93,0" concept="6" trace="getTestItemContainers#(Ljetbrains/mps/smodel/MPSModuleRepository;)Ljava/util/Set;" />
+      <node id="6210493253424827339" at="57,56,63,39" concept="7" />
+      <node id="6210493253424827391" at="67,114,73,5" concept="5" />
+      <node id="2393174431571216784" at="57,0,66,0" concept="6" trace="getTestableNodes#()Ljava/lang/Iterable;" />
+      <node id="6210493253424855031" at="81,47,90,7" concept="4" />
+      <node id="6210493253424827208" at="67,0,78,0" concept="6" trace="executeTestsByInterpreter#(Ljava/lang/Iterable;Lxml4JUnit/ICustomRunnerConfig;)V" />
+      <node id="6210493253424855026" at="80,84,91,7" concept="2" />
+      <node id="6210493253424855013" at="79,0,94,0" concept="6" trace="getTestItemContainers#(Ljetbrains/mps/smodel/MPSModuleRepository;)Ljava/util/Set;" />
       <node id="6210493253425379931" at="39,0,56,0" concept="6" trace="checkExecutionPossible#()Z" />
       <scope id="6210493253425408418" at="42,31,43,43" />
       <scope id="8070843538581934797" at="49,31,50,209" />
-      <scope id="6210493253424827393" at="68,33,69,75" />
-      <scope id="3975459124941370225" at="83,73,84,19" />
-      <scope id="6210493253424855035" at="86,55,87,166" />
+      <scope id="6210493253424827393" at="69,33,70,75" />
+      <scope id="3975459124941370225" at="84,73,85,19" />
+      <scope id="6210493253424855035" at="87,55,88,166" />
       <scope id="6210493253425089278" at="34,106,36,29" />
-      <scope id="6210493253424827349" at="58,127,61,27">
-        <var name="wrapper" id="590500986460195164" />
-      </scope>
-      <scope id="6210493253424855034" at="85,9,88,9">
+      <scope id="6210493253424855034" at="86,9,89,9">
         <var name="mdl" id="6210493253424855052" />
       </scope>
       <scope id="6210493253425089274" at="34,0,38,0">
@@ -77,33 +75,37 @@
       </scope>
       <scope id="6210493253425408417" at="41,23,45,19" />
       <scope id="8070843538581934796" at="48,126,52,19" />
-      <scope id="6210493253424827392" at="67,63,71,13" />
-      <scope id="2393174431571216787" at="57,56,63,28">
+      <scope id="6210493253424827349" at="58,127,62,27">
+        <var name="tnf" id="4139348896268359265" />
+        <var name="wrapper" id="590500986460195164" />
+      </scope>
+      <scope id="6210493253424827392" at="68,63,72,13" />
+      <scope id="2393174431571216787" at="57,56,64,28">
         <var name="wrappedTestNodes" id="6210493253424827340" />
       </scope>
-      <scope id="6210493253424855033" at="81,79,88,9" />
-      <scope id="2393174431571216784" at="57,0,65,0" />
-      <scope id="6210493253424827210" at="66,114,75,94">
+      <scope id="6210493253424855033" at="82,79,89,9" />
+      <scope id="2393174431571216784" at="57,0,66,0" />
+      <scope id="6210493253424827210" at="67,114,76,94">
         <var name="executor" id="6210493253424827407" />
       </scope>
-      <scope id="6210493253424855030" at="80,47,89,7" />
-      <scope id="6210493253424855031" at="80,47,89,7">
+      <scope id="6210493253424855030" at="81,47,90,7" />
+      <scope id="6210493253424855031" at="81,47,90,7">
         <var name="existingModule" id="6210493253424855032" />
       </scope>
-      <scope id="6210493253424827208" at="66,0,77,0">
+      <scope id="6210493253424827208" at="67,0,78,0">
         <var name="config" id="6962548927778578287" />
         <var name="wrappedTestNodes" id="2393174431571236169" />
       </scope>
-      <scope id="6210493253424855018" at="78,76,91,30">
+      <scope id="6210493253424855018" at="79,76,92,30">
         <var name="testItemContainers" id="6210493253424855020" />
       </scope>
       <scope id="6210493253425379934" at="39,43,54,16" />
-      <scope id="6210493253424855013" at="78,0,93,0">
+      <scope id="6210493253424855013" at="79,0,94,0">
         <var name="repo" id="6210493253424855016" />
       </scope>
       <scope id="6210493253425379931" at="39,0,56,0" />
-      <unit id="6210493253424785557" at="94,0,97,0" name="xml4JUnit.TestModelExecutor$CONCEPTS" />
-      <unit id="6210493253424785557" at="26,0,98,0" name="xml4JUnit.TestModelExecutor" />
+      <unit id="6210493253424785557" at="95,0,98,0" name="xml4JUnit.TestModelExecutor$CONCEPTS" />
+      <unit id="6210493253424785557" at="26,0,99,0" name="xml4JUnit.TestModelExecutor" />
     </file>
   </root>
   <root nodeRef="r:3b363c34-a1ec-4ae6-92cc-95c0273ad0c2(xml4JUnit)/6210493253424925917">

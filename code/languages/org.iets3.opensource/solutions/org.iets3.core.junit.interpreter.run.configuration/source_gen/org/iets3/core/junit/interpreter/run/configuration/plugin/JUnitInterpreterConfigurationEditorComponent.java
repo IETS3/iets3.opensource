@@ -42,7 +42,7 @@ public final class JUnitInterpreterConfigurationEditorComponent extends JCompone
 
   /**
    * Disable supplied component when 'in-process' setting has been activated.
-   * Intended for use from run configurations that use JUnit settings along with other settings that may need to reflect 
+   * Intended for use from run configurations that use JUnit settings along with other settings that may need to reflect
    * state of the 'in-process' setting.
    */
   public void disableComponentWhenInProcess(JComponent... component) {
