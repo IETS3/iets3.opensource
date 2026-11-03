@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <model ref="r:8f2b5e7d-bab3-409e-93c3-6055bdcd2a68(org.iets3.opensource.build.gentests.behavior)">
   <persistence version="9" />
-  <attribute name="doNotGenerate" value="false" />
   <languages>
     <use id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior" version="2" />
     <use id="d7706f63-9be2-479c-a3da-ae92af1e64d5" name="jetbrains.mps.lang.generator.generationContext" version="2" />
@@ -12,6 +11,8 @@
     <import index="vbkb" ref="r:08f2b659-8469-4592-93bf-a6edb46ec86d(jetbrains.mps.build.behavior)" />
     <import index="o3n2" ref="r:26eadcf0-f275-4e90-be37-e4432772a74d(jetbrains.mps.build.util)" />
     <import index="3ior" ref="r:e9081cad-d8c3-45f2-b4ad-1dabd5ff82af(jetbrains.mps.build.structure)" />
+    <import index="t6h5" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang.reflect(JDK/)" />
+    <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" />
     <import index="o8zo" ref="r:314576fc-3aee-4386-a0a5-a38348ac317d(jetbrains.mps.scope)" />
     <import index="dc1n" ref="r:2ce4b587-5587-43f7-8005-e3fb84f231b0(org.iets3.opensource.build.gentests.structure)" />
     <import index="7wpd" ref="c7a315e6-1d93-4186-85bc-2dfafd1ccc21/r:fb1c47d7-a72e-4e01-92dc-1e9f2ba4a118(com.mbeddr.mpsutil.common/com.mbeddr.mpsutil.common.util)" />
@@ -35,7 +36,6 @@
         <reference id="1225194472831" name="overriddenMethod" index="13i0hy" />
       </concept>
       <concept id="1225194691553" name="jetbrains.mps.lang.behavior.structure.ThisNodeExpression" flags="nn" index="13iPFW" />
-      <concept id="3235159848334022093" name="jetbrains.mps.lang.behavior.structure.Node_ConceptMethodCall" flags="nn" index="3zqWPK" />
     </language>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
       <concept id="1082485599095" name="jetbrains.mps.baseLanguage.structure.BlockStatement" flags="nn" index="9aQIb">
@@ -137,6 +137,11 @@
       </concept>
     </language>
     <language id="d7706f63-9be2-479c-a3da-ae92af1e64d5" name="jetbrains.mps.lang.generator.generationContext">
+      <concept id="1217960179967" name="jetbrains.mps.lang.generator.generationContext.structure.GenerationContextOp_ShowErrorMessage" flags="nn" index="2k5nB$" />
+      <concept id="1217960314443" name="jetbrains.mps.lang.generator.generationContext.structure.GenerationContextOp_ShowMessageBase" flags="nn" index="2k5Stg">
+        <child id="1217960314448" name="messageText" index="2k5Stb" />
+        <child id="1217960407512" name="referenceNode" index="2k6f33" />
+      </concept>
       <concept id="1216860049633" name="jetbrains.mps.lang.generator.generationContext.structure.GenerationContextType" flags="in" index="1iwH7U" />
     </language>
     <language id="446c26eb-2b7b-4bf0-9b35-f83fa582753e" name="jetbrains.mps.lang.modelapi">
@@ -158,6 +163,7 @@
       <concept id="1138411891628" name="jetbrains.mps.lang.smodel.structure.SNodeOperation" flags="nn" index="eCIE_">
         <child id="1144104376918" name="parameter" index="1xVPHs" />
       </concept>
+      <concept id="1179409122411" name="jetbrains.mps.lang.smodel.structure.Node_ConceptMethodCall" flags="nn" index="2qgKlT" />
       <concept id="4693937538533521280" name="jetbrains.mps.lang.smodel.structure.OfConceptOperation" flags="ng" index="v3k3i">
         <child id="4693937538533538124" name="requestedConcept" index="v3oSu" />
       </concept>
@@ -260,6 +266,20 @@
       <node concept="3Tm1VV" id="79dWhRIaTmh" role="1B3o_S" />
       <node concept="3clFbS" id="79dWhRIaTmo" role="3clF47">
         <node concept="3clFbH" id="4nDalG8Q9ip" role="3cqZAp" />
+        <node concept="3SKdUt" id="5Vm9DVz6Aax" role="3cqZAp">
+          <node concept="1PaTwC" id="5Vm9DVz6Aay" role="1aUNEU">
+            <node concept="3oM_SD" id="5Vm9DVz6Aaz" role="1PaTwD">
+              <property role="3oM_SC" value="since MPS 2026.1, genContext is no longer reachable from RequiredDependenciesBuilder/UnpackHelper; problems are logged" />
+            </node>
+          </node>
+        </node>
+        <node concept="3cpWs8" id="79dWhRIb0hV" role="3cqZAp">
+          <node concept="3cpWsn" id="79dWhRIb0hW" role="3cpWs9">
+            <property role="TrG5h" value="genContext" />
+            <node concept="1iwH7U" id="79dWhRIb0hT" role="1tU5fm" />
+            <node concept="10Nm6u" id="4CG20QXQy11" role="33vP2m" />
+          </node>
+        </node>
         <node concept="3cpWs8" id="79dWhRIb1oW" role="3cqZAp">
           <node concept="3cpWsn" id="79dWhRIb1oU" role="3cpWs9">
             <property role="3TUv4t" value="true" />
@@ -310,16 +330,16 @@
                   <node concept="37vLTw" id="42PYVEWFvWq" role="2Oq$k0">
                     <ref role="3cqZAo" node="2TqXzNe$YQE" resolve="project" />
                   </node>
-                  <node concept="3zqWPK" id="5DJjBfj0b75" role="2OqNvi">
+                  <node concept="2qgKlT" id="2TqXzNe_6HT" role="2OqNvi">
                     <ref role="37wK5l" to="tpcu:52_Geb4QFgX" resolve="getScope" />
-                    <node concept="35c_gC" id="5DJjBfj0b77" role="37wK5m">
+                    <node concept="35c_gC" id="42Bx8VcbZCi" role="37wK5m">
                       <ref role="35c_gD" to="kdzh:2L4pT56gD3R" resolve="BuildMps_Solution" />
                     </node>
-                    <node concept="359W_D" id="5DJjBfj0b78" role="37wK5m">
+                    <node concept="359W_D" id="42Bx8VcbZKj" role="37wK5m">
                       <ref role="359W_E" to="3ior:4RPz6WoY4Cj" resolve="BuildProject" />
                       <ref role="359W_F" to="3ior:6qcrfIJFfrM" resolve="parts" />
                     </node>
-                    <node concept="3cmrfG" id="5DJjBfj0b79" role="37wK5m">
+                    <node concept="3cmrfG" id="2TqXzNe_HOq" role="37wK5m">
                       <property role="3cmrfH" value="0" />
                     </node>
                   </node>
@@ -348,6 +368,39 @@
             <node concept="3w_OXm" id="79dWhRIaZHB" role="2OqNvi" />
           </node>
           <node concept="3clFbS" id="79dWhRIaYJC" role="3clFbx">
+            <node concept="3clFbJ" id="7M$HqcR477Q" role="3cqZAp">
+              <node concept="3clFbS" id="7M$HqcR477S" role="3clFbx">
+                <node concept="3clFbF" id="79dWhRIaZKA" role="3cqZAp">
+                  <node concept="2OqwBi" id="79dWhRIb0Fl" role="3clFbG">
+                    <node concept="37vLTw" id="79dWhRIb0i0" role="2Oq$k0">
+                      <ref role="3cqZAo" node="79dWhRIb0hW" resolve="genContext" />
+                    </node>
+                    <node concept="2k5nB$" id="79dWhRIb0JX" role="2OqNvi">
+                      <node concept="3cpWs3" id="79dWhRIbp8M" role="2k5Stb">
+                        <node concept="Xl_RD" id="79dWhRIbp8P" role="3uHU7w">
+                          <property role="Xl_RC" value=" in scope" />
+                        </node>
+                        <node concept="3cpWs3" id="79dWhRIb1XP" role="3uHU7B">
+                          <node concept="Xl_RD" id="79dWhRIb0LE" role="3uHU7B">
+                            <property role="Xl_RC" value="Cannot find solution " />
+                          </node>
+                          <node concept="37vLTw" id="79dWhRIb24f" role="3uHU7w">
+                            <ref role="3cqZAo" node="79dWhRIb1oU" resolve="gentestsRtSolutionName" />
+                          </node>
+                        </node>
+                      </node>
+                      <node concept="13iPFW" id="79dWhRIb2ab" role="2k6f33" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+              <node concept="3y3z36" id="7M$HqcR47l$" role="3clFbw">
+                <node concept="10Nm6u" id="7M$HqcR47rs" role="3uHU7w" />
+                <node concept="37vLTw" id="7M$HqcR47h8" role="3uHU7B">
+                  <ref role="3cqZAo" node="79dWhRIb0hW" resolve="genContext" />
+                </node>
+              </node>
+            </node>
             <node concept="RRSsy" id="70Mo24wXXpP" role="3cqZAp">
               <property role="RRSoG" value="gZ5fh_4/error" />
               <node concept="3cpWs3" id="70Mo24wXZf0" role="RRSoy">
@@ -372,7 +425,7 @@
                       </node>
                       <node concept="2OqwBi" id="1br4Vy9oLb" role="3uHU7w">
                         <node concept="13iPFW" id="1br4Vy9oLc" role="2Oq$k0" />
-                        <node concept="3zqWPK" id="5DJjBfj0b7a" role="2OqNvi">
+                        <node concept="2qgKlT" id="1br4Vy9oLd" role="2OqNvi">
                           <ref role="37wK5l" to="tpcu:hEwIMiw" resolve="getPresentation" />
                         </node>
                       </node>
@@ -425,6 +478,33 @@
             <node concept="3w_OXm" id="70LA$CKGGxg" role="2OqNvi" />
           </node>
           <node concept="3clFbS" id="79dWhRIbnfT" role="3clFbx">
+            <node concept="3clFbJ" id="7M$HqcR47LV" role="3cqZAp">
+              <node concept="3y3z36" id="7M$HqcR47WZ" role="3clFbw">
+                <node concept="10Nm6u" id="7M$HqcR482R" role="3uHU7w" />
+                <node concept="37vLTw" id="7M$HqcR47Sz" role="3uHU7B">
+                  <ref role="3cqZAo" node="79dWhRIb0hW" resolve="genContext" />
+                </node>
+              </node>
+              <node concept="3clFbS" id="7M$HqcR47LX" role="3clFbx">
+                <node concept="3clFbF" id="79dWhRIboEG" role="3cqZAp">
+                  <node concept="2OqwBi" id="79dWhRIboLo" role="3clFbG">
+                    <node concept="37vLTw" id="79dWhRIboEF" role="2Oq$k0">
+                      <ref role="3cqZAo" node="79dWhRIb0hW" resolve="genContext" />
+                    </node>
+                    <node concept="2k5nB$" id="79dWhRIboPS" role="2OqNvi">
+                      <node concept="3cpWs3" id="79dWhRIbpFX" role="2k5Stb">
+                        <node concept="Xl_RD" id="79dWhRIboQg" role="3uHU7B">
+                          <property role="Xl_RC" value="Cannot find artifact for solution " />
+                        </node>
+                        <node concept="37vLTw" id="79dWhRIbpHK" role="3uHU7w">
+                          <ref role="3cqZAo" node="79dWhRIb1oU" resolve="gentestsRtSolutionName" />
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
             <node concept="RRSsy" id="70Mo24wXXaP" role="3cqZAp">
               <property role="RRSoG" value="gZ5fh_4/error" />
               <node concept="3cpWs3" id="70Mo24wXXcW" role="RRSoy">
@@ -676,12 +756,12 @@
                     </node>
                   </node>
                 </node>
-                <node concept="3zqWPK" id="3NHt1B9Zu$C" role="2OqNvi">
+                <node concept="2qgKlT" id="7Lttyc2W6aY" role="2OqNvi">
                   <ref role="37wK5l" to="tpcu:52_Geb4QDV$" resolve="getScope" />
-                  <node concept="37vLTw" id="3NHt1B9Zu$E" role="37wK5m">
+                  <node concept="37vLTw" id="7Lttyc2W6aZ" role="37wK5m">
                     <ref role="3cqZAo" node="7Lttyc2W1LD" resolve="kind" />
                   </node>
-                  <node concept="13iPFW" id="3NHt1B9Zu$F" role="37wK5m" />
+                  <node concept="13iPFW" id="3DeAMIU$q_j" role="37wK5m" />
                 </node>
               </node>
             </node>
