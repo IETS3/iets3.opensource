@@ -4745,6 +4745,7 @@
         <depends>jetbrains.mps.console</depends>
         <depends>com.mbeddr.doc</depends>
         <depends>com.jetbrains.mpsext.viewmodel</depends>
+        <depends>jetbrains.mps.ide.httpsupport</depends>
         
         <extensions defaultExtensionNs="com.intellij">
           <mps.LanguageLibrary dir="/languages" />
@@ -9250,6 +9251,8 @@
           <module ref="d936855b-48da-4812-a8a0-2bfddd633ac4(jetbrains.mps.lang.behavior.runtime)" kind="rt" />
           <module ref="9a4afe51-f114-4595-b5df-048ce3c596be(jetbrains.mps.runtime)" kind="rt" />
           <module ref="63b449db-0918-4a4a-a891-2c430ab133e4(org.junit.junit5)" kind="rt" />
+          <module ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065(JDK)" kind="cl" />
+          <module ref="ae6d8005-36be-4cb6-945b-8c8cfc033c51(jetbrains.mps.ide.httpsupport.runtime)" kind="cl" />
           <module ref="d441fba0-f46b-43cd-b723-dad7b65da615(org.iets3.core.expr.tests)" kind="cl" />
         </dependencies>
         <uses>
@@ -21407,6 +21410,7 @@
         <fileset file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.scopes.jar" />
         <fileset file="${artifacts.mps}/plugins/mps-testing/languages/baseLanguage/jetbrains.mps.baseLanguage.unitTest.jar" />
         <fileset file="${artifacts.mps}/plugins/mps-testing/languages/baseLanguage/jetbrains.mps.baseLanguage.unitTest.runtime.jar" />
+        <fileset file="${artifacts.mps}/plugins/mps-httpsupport/solutions/jetbrains.mps.ide.httpsupport.runtime.jar" />
         <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.core.jar" />
         <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.modelapi.jar" />
         <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.scopes.runtime.jar" />
@@ -25274,6 +25278,7 @@
         <pathelement path="${build.tmp}/java/out/org.iets3.core.expr.genjava.toplevel.rt" />
         <pathelement path="${build.tmp}/java/out/org.iets3.core.expr.simpleTypes.runtime" />
         <pathelement path="${build.tmp}/java/out/org.iets3.core.expr.stringvalidation.runtime" />
+        <fileset file="${artifacts.mps}/plugins/mps-httpsupport/lib/httpsupport.jar" />
         <pathelement path="${build.tmp}/java/out/org.iets3.core.expr.tests.rt" />
         <fileset file="${artifacts.mps}/lib/mps-test.jar" />
         <fileset file="${iets3.lang.opensource}/solutions/org.iets3.core.expr.base.collections.stubs/lib/pcollections.jar" />
