@@ -47,7 +47,7 @@
   <node concept="1TIwiD" id="1mzU7KvxkYH">
     <property role="EcuMT" value="168814063794512659" />
     <property role="TrG5h" value="RecordingManualCheck" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="1mzU7KvxkYI" role="PzmwI">
       <ref role="PrY4T" to="4kwy:3R3AIvumrSU" resolve="ICanRunCheckManually" />
     </node>

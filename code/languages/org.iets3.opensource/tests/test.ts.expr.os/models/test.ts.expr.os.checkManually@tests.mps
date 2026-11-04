@@ -646,7 +646,7 @@
             </node>
             <node concept="2ShNRf" id="1mzU7KvGAm2" role="33vP2m">
               <node concept="1pGfFk" id="1mzU7KvGAm4" role="2ShVmc">
-                <ref role="37wK5l" node="1mzU7KvGAk7" />
+                <ref role="37wK5l" node="1mzU7KvGAk7" resolve="ScaledRootPane" />
                 <node concept="37vLTw" id="1mzU7KvGAm5" role="37wK5m">
                   <ref role="3cqZAo" node="1mzU7KvGAlh" resolve="g" />
                 </node>
@@ -664,7 +664,7 @@
           <node concept="2OqwBi" id="1mzU7KvGAma" role="3clFbG">
             <node concept="2ShNRf" id="1mzU7KvGAmd" role="2Oq$k0">
               <node concept="1pGfFk" id="1mzU7KvGAmf" role="2ShVmc">
-                <ref role="37wK5l" to="h587:7KGO58TMKIy" />
+                <ref role="37wK5l" to="h587:7KGO58TMKIy" resolve="ProgressOverlay" />
                 <node concept="Xl_RD" id="1mzU7KvGAmg" role="37wK5m">
                   <property role="Xl_RC" value="Checking" />
                 </node>
@@ -1808,7 +1808,7 @@
             </node>
             <node concept="2ShNRf" id="1mzU7KvV$hh" role="33vP2m">
               <node concept="1pGfFk" id="1mzU7KvV$hj" role="2ShVmc">
-                <ref role="37wK5l" node="1mzU7KvGAk7" />
+                <ref role="37wK5l" node="1mzU7KvGAk7" resolve="ScaledRootPane" />
                 <node concept="2OqwBi" id="1mzU7KvV$hk" role="37wK5m">
                   <node concept="37vLTw" id="1mzU7KvV$hn" role="2Oq$k0">
                     <ref role="3cqZAo" node="1mzU7KvV$h2" resolve="image" />
