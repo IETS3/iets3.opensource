@@ -11,8 +11,10 @@ The project does _not_ follow Semantic Versioning and the changes are documented
 
 - Build: `checkmodels` (MPS model checker) now runs as part of `check`/`build` and fails the build on model-check errors.
 - Interpreter test runner: JUnit reports link to the tested nodes – suite properties `nodeRef`/`nodeRef.<testcase>` hold the node references, failure messages contain the node URL of the failing test item
+- Generated iets3 JUnit tests (`TestSuite` → `MPSTestCase`): failure messages end with the node URL of the failing test item, in the same format as the interpreter test runner
 
 ### Changed
+- Interpreter test runner: the JUnit reports no longer contain the suite properties `nodeRef`/`nodeRef.<testcase>`; the node URL in the failure message carries the same information
 - Variability: Better editing of feature decision tables: the caret moves to the new row on insert (Shift+Enter inserts above) and to the neighbouring row on delete. The last row can no longer be deleted.
 - Results of manually run checks (`ICanStoreCheckResult`: test items, REPL entries, solver results) are stored in the view model `CheckResults` (MPS-extensions view models) instead of user objects on the nodes. Editors that show a result are updated when it is stored or removed, so the explicit editor refreshes after running a check were dropped. The result of a test item (and of each test vector) records the nodes its evaluation read and is removed as soon as one of them changes; other results stay until they are replaced or their node is deleted. `check_ICanRunCheckManually` no longer deletes a result after reporting it. Results are not stored when no project is open (headless runs that only use the returned result).
 
