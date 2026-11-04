@@ -93,7 +93,7 @@ public class ProgressOverlay implements Runnable {
     return ((c == null ? fallback : c));
   }
 
-  private static String fit(String text, FontMetrics metrics, int width) {
+  public static String fit(String text, FontMetrics metrics, int width) {
     if (text == null) {
       return "";
     }
@@ -107,7 +107,7 @@ public class ProgressOverlay implements Runnable {
     return shortened + "...";
   }
 
-  private static String elapsed(long millis) {
+  public static String elapsed(long millis) {
     long tenths = millis / 100;
     return tenths / 10 + "." + tenths % 10 + " s";
   }
@@ -119,7 +119,7 @@ public class ProgressOverlay implements Runnable {
     double radius = (SPINNER_SIZE - dot) / 2.0;
     for (int i = 0; i < dots; i++) {
       double angle = 2 * Math.PI * i / dots;
-      int alpha = 40 + 215 * ((i + spinnerFrame) % dots) / (dots - 1);
+      int alpha = 40 + 215 * ((i + dots - spinnerFrame % dots) % dots) / (dots - 1);
       g.setColor(new Color(c.getRed(), c.getGreen(), c.getBlue(), Math.min(255, alpha)));
       int dx = (int) Math.round(x + SPINNER_SIZE / 2.0 + Math.cos(angle) * radius - dot / 2.0);
       int dy = (int) Math.round(y + SPINNER_SIZE / 2.0 + Math.sin(angle) * radius - dot / 2.0);
@@ -147,7 +147,7 @@ public class ProgressOverlay implements Runnable {
     }
   }
 
-  private void paint() {
+  public void paint() {
     if (pane == null || pane.getWidth() <= 0 || pane.getHeight() <= 0) {
       return;
     }

@@ -186,6 +186,8 @@
       <library file="${artifacts.com.mbeddr.platform}/com.mbeddr.mpsutil.modellisteners/languages/group.modellisteners/com.mbeddr.mpsutil.modellisteners.jar" />
       <library file="${artifacts.com.mbeddr.platform}/com.mbeddr.mpsutil.modellisteners/languages/group.modellisteners/com.mbeddr.mpsutil.modellisteners.runtime.jar" />
       <library file="${artifacts.com.mbeddr.platform}/com.mbeddr.mpsutil.plantuml/languages/group.plantuml/com.mbeddr.mpsutil.plantuml.node.jar" />
+      <library file="${artifacts.com.mbeddr.platform}/com.mbeddr.mpsutil.projectview/languages/group.projectview/com.mbeddr.mpsutil.projectview.jar" />
+      <library file="${artifacts.com.mbeddr.platform}/com.mbeddr.mpsutil.projectview/languages/group.projectview/com.mbeddr.mpsutil.projectview.runtime.jar" />
       <library file="${artifacts.com.mbeddr.platform}/com.mbeddr.mpsutil.spreferences/languages/group.spreferences/com.mbeddr.mpsutil.spreferences.context.jar" />
       <library file="${artifacts.com.mbeddr.platform}/com.mbeddr.mpsutil.spreferences/languages/group.spreferences/com.mbeddr.mpsutil.spreferences.jar" />
       <library file="${artifacts.com.mbeddr.platform}/com.mbeddr.mpsutil.spreferences/languages/group.spreferences/com.mbeddr.mpsutil.spreferences.runtime.jar" />
@@ -439,6 +441,7 @@
       <library file="${artifacts.org.iets3.opensource}/org.iets3.core.os/languages/iets3.core.os/org.iets3.core.expr.testExecution.jar" />
       <library file="${artifacts.org.iets3.opensource}/org.iets3.core.os/languages/iets3.core.os/org.iets3.core.expr.tests.jar" />
       <library file="${artifacts.org.iets3.opensource}/org.iets3.core.os/languages/iets3.core.os/org.iets3.core.expr.toplevel.jar" />
+      <library file="${artifacts.org.iets3.opensource}/org.iets3.core.os/languages/iets3.core.os/org.iets3.core.plugin.jar" />
       <library file="${artifacts.org.iets3.opensource}/org.iets3.core.os/languages/iets3.core.os/org.iets3.internal.modelaccessor.jar" />
       <library file="${artifacts.org.iets3.opensource}/org.iets3.interpreterExecutor/languages/org.iets3.opensource.interpreterExecutor.jar" />
       <library file="${iets3.lang.opensource}/tests/test.in.expr.os" />

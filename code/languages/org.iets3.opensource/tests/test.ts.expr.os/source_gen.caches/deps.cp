@@ -134,6 +134,7 @@
   <uses module="cb91a38e-738a-4811-a96d-448d08f526fa(org.iets3.core.expr.typetags.units)" kind="dp" />
   <uses module="1c761cfd-81b1-4794-9999-148fa76881b8(org.iets3.core.expr.typetags.units.si)" kind="dp" />
   <uses module="8bb1251e-eae5-47ab-9843-33adfae8edaa(org.iets3.core.expr.util)" kind="dp" />
+  <uses module="07e2118e-763f-4d93-8ae6-23cf5ede3d59(org.iets3.core.plugin)" kind="dp" />
   <uses module="63b449db-0918-4a4a-a891-2c430ab133e4(org.junit.junit5)" kind="rt+dp" />
   <uses module="cf55cddb-d431-4f2e-93f4-3a4305c63d12(test.ts.expr.os)" kind="dp" />
   <uses module="b80fab4e-53f2-409c-81d8-3475855e0e42(test.ts.expr.os.nix)" kind="dp" />

@@ -14,7 +14,6 @@
   <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1070462154015:jetbrains.mps.baseLanguage.structure.StaticFieldDeclaration" />
   <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1081236700938:jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" />
   <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1070475587102:jetbrains.mps.baseLanguage.structure.SuperConstructorInvocation" />
-  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/5351203823916750322:jetbrains.mps.baseLanguage.structure.TryUniversalStatement" />
   <root>
     <file name="IntentionsDescriptor.java">
       <unit at="18,0,174,0" name="org.iets3.core.expr.base.intentions.IntentionsDescriptor" />
@@ -2106,37 +2105,6 @@
       <unit id="7814222126778120926" at="78,0,82,0" name="org.iets3.core.expr.base.intentions.wrapWithParens_Intention$CONCEPTS" />
       <unit id="7814222126778120926" at="45,0,72,0" name="org.iets3.core.expr.base.intentions.wrapWithParens_Intention$IntentionImplementation" />
       <unit id="7814222126778120926" at="22,0,87,0" name="org.iets3.core.expr.base.intentions.wrapWithParens_Intention" />
-    </file>
-  </root>
-  <root nodeRef="r:7d06857c-251f-4454-ac9c-c398e5200a04(org.iets3.core.expr.base.intentions)/8073436423745982171">
-    <file name="CommandWithMessage.java">
-      <node id="8073436423745983342" at="13,107,14,38" concept="7" />
-      <node id="8073436423745983347" at="14,38,15,39" concept="7" />
-      <node id="8073436423745983353" at="15,39,16,69" concept="2" />
-      <node id="8073436423745983362" at="16,69,17,19" concept="2" />
-      <node id="8073436423745983367" at="17,19,18,15" concept="2" />
-      <node id="8073436423745983371" at="18,15,19,36" concept="2" />
-      <node id="8073436423745983376" at="19,36,20,25" concept="2" />
-      <node id="8073436423745983381" at="20,25,21,0" concept="10" />
-      <node id="8073436423745983382" at="21,0,22,58" concept="9" />
-      <node id="8073436423745983398" at="24,11,25,73" concept="2" />
-      <node id="8073436423745983421" at="26,17,27,30" concept="2" />
-      <node id="8073436423745983396" at="23,104,28,7" concept="14" />
-      <node id="8073436423745983384" at="22,58,29,9" concept="2" />
-      <node id="8073436423745982439" at="13,0,31,0" concept="12" trace="execute#(Ljava/lang/String;Lorg/jetbrains/mps/openapi/module/SRepository;Ljava/lang/Runnable;)V" />
-      <scope id="8073436423745983397" at="24,11,25,73" />
-      <scope id="8073436423745983420" at="26,17,27,30" />
-      <scope id="8073436423745983395" at="23,104,28,7" />
-      <scope id="8073436423745982359" at="13,107,29,9">
-        <var name="label" id="8073436423745983348" />
-        <var name="win" id="8073436423745983343" />
-      </scope>
-      <scope id="8073436423745982439" at="13,0,31,0">
-        <var name="message" id="8073436423745982490" />
-        <var name="repository" id="8073436423745982971" />
-        <var name="runnable" id="8073436423745982644" />
-      </scope>
-      <unit id="8073436423745982171" at="11,0,33,0" name="org.iets3.core.expr.base.intentions.CommandWithMessage" />
     </file>
   </root>
   <root nodeRef="r:7d06857c-251f-4454-ac9c-c398e5200a04(org.iets3.core.expr.base.intentions)/8092372783983859440">

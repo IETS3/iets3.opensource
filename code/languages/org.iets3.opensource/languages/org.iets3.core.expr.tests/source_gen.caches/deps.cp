@@ -147,5 +147,6 @@
   <uses module="52a8c4c0-f4b0-4243-bf00-9dfac3472876(org.iets3.core.expr.simpleTypes.runtime)" kind="dp" />
   <uses module="d441fba0-f46b-43cd-b723-dad7b65da615(org.iets3.core.expr.tests)" kind="dp" />
   <uses module="71934284-d7d1-45ee-a054-8c072591085f(org.iets3.core.expr.toplevel)" kind="dp" />
+  <uses module="07e2118e-763f-4d93-8ae6-23cf5ede3d59(org.iets3.core.plugin)" kind="dp" />
 </dependenciesRoot>
 

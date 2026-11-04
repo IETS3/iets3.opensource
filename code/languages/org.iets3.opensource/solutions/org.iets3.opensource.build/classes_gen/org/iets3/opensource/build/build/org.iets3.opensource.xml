@@ -4745,6 +4745,7 @@
         <depends>jetbrains.mps.console</depends>
         <depends>com.mbeddr.doc</depends>
         <depends>com.jetbrains.mpsext.viewmodel</depends>
+        <depends>jetbrains.mps.ide.httpsupport</depends>
         
         <extensions defaultExtensionNs="com.intellij">
           <mps.LanguageLibrary dir="/languages" />
@@ -9021,6 +9022,7 @@
           <module ref="cbb71b24-470d-4374-b77c-ebd0d3b3bb27(org.iets3.core.expr.plugin)" kind="cl" />
           <module ref="52a8c4c0-f4b0-4243-bf00-9dfac3472876(org.iets3.core.expr.simpleTypes.runtime)" kind="cl" />
           <module ref="71934284-d7d1-45ee-a054-8c072591085f(org.iets3.core.expr.toplevel)" kind="cl" />
+          <module ref="07e2118e-763f-4d93-8ae6-23cf5ede3d59(org.iets3.core.plugin)" kind="cl" />
           <module ref="63b449db-0918-4a4a-a891-2c430ab133e4(org.junit.junit5)" kind="cl" />
         </dependencies>
         <uses>
@@ -9250,6 +9252,8 @@
           <module ref="d936855b-48da-4812-a8a0-2bfddd633ac4(jetbrains.mps.lang.behavior.runtime)" kind="rt" />
           <module ref="9a4afe51-f114-4595-b5df-048ce3c596be(jetbrains.mps.runtime)" kind="rt" />
           <module ref="63b449db-0918-4a4a-a891-2c430ab133e4(org.junit.junit5)" kind="rt" />
+          <module ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065(JDK)" kind="cl" />
+          <module ref="ae6d8005-36be-4cb6-945b-8c8cfc033c51(jetbrains.mps.ide.httpsupport.runtime)" kind="cl" />
           <module ref="d441fba0-f46b-43cd-b723-dad7b65da615(org.iets3.core.expr.tests)" kind="cl" />
         </dependencies>
         <uses>
@@ -20962,7 +20966,7 @@
     </copy>
   </target>
   
-  <target name="java.compile.org.iets3.core.expr.tests" depends="java.compile.org.iets3.analysis.base, java.compile.org.iets3.core.base, java.compile.org.iets3.core.expr.base, java.compile.org.iets3.core.expr.base.runtime, java.compile.org.iets3.core.expr.collections, java.compile.org.iets3.core.expr.lambda, java.compile.org.iets3.core.expr.path, java.compile.org.iets3.core.expr.plugin, java.compile.org.iets3.core.expr.simpleTypes.runtime, java.compile.org.iets3.core.expr.toplevel, fetchDependencies">
+  <target name="java.compile.org.iets3.core.expr.tests" depends="java.compile.org.iets3.analysis.base, java.compile.org.iets3.core.base, java.compile.org.iets3.core.expr.base, java.compile.org.iets3.core.expr.base.runtime, java.compile.org.iets3.core.expr.collections, java.compile.org.iets3.core.expr.lambda, java.compile.org.iets3.core.expr.path, java.compile.org.iets3.core.expr.plugin, java.compile.org.iets3.core.expr.simpleTypes.runtime, java.compile.org.iets3.core.expr.toplevel, java.compile.org.iets3.core.plugin, fetchDependencies">
     <mkdir dir="${iets3.lang.opensource}/languages/org.iets3.core.expr.tests/source_gen" />
     <mkdir dir="${build.tmp}/java/out/org.iets3.core.expr.tests" />
     <javac2 destdir="${build.tmp}/java/out/org.iets3.core.expr.tests" fork="false" encoding="utf8" includeantruntime="false" debug="true" source="1.8" target="1.8">
@@ -21010,6 +21014,7 @@
         <pathelement path="${build.tmp}/java/out/org.iets3.core.expr.plugin" />
         <pathelement path="${build.tmp}/java/out/org.iets3.core.expr.simpleTypes.runtime" />
         <pathelement path="${build.tmp}/java/out/org.iets3.core.expr.toplevel" />
+        <pathelement path="${build.tmp}/java/out/org.iets3.core.plugin" />
         <fileset file="${artifacts.mps}/lib/mps-test.jar" />
         <fileset file="${artifacts.mps}/lib/ant/lib/ant.jar" />
         <fileset file="${artifacts.mps}/lib/junit4.jar" />
@@ -21410,6 +21415,7 @@
         <fileset file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.scopes.jar" />
         <fileset file="${artifacts.mps}/plugins/mps-testing/languages/baseLanguage/jetbrains.mps.baseLanguage.unitTest.jar" />
         <fileset file="${artifacts.mps}/plugins/mps-testing/languages/baseLanguage/jetbrains.mps.baseLanguage.unitTest.runtime.jar" />
+        <fileset file="${artifacts.mps}/plugins/mps-httpsupport/solutions/jetbrains.mps.ide.httpsupport.runtime.jar" />
         <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.core.jar" />
         <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.modelapi.jar" />
         <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.scopes.runtime.jar" />
@@ -25277,6 +25283,7 @@
         <pathelement path="${build.tmp}/java/out/org.iets3.core.expr.genjava.toplevel.rt" />
         <pathelement path="${build.tmp}/java/out/org.iets3.core.expr.simpleTypes.runtime" />
         <pathelement path="${build.tmp}/java/out/org.iets3.core.expr.stringvalidation.runtime" />
+        <fileset file="${artifacts.mps}/plugins/mps-httpsupport/lib/httpsupport.jar" />
         <pathelement path="${build.tmp}/java/out/org.iets3.core.expr.tests.rt" />
         <fileset file="${artifacts.mps}/lib/mps-test.jar" />
         <fileset file="${iets3.lang.opensource}/solutions/org.iets3.core.expr.base.collections.stubs/lib/pcollections.jar" />

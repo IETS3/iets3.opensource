@@ -20,22 +20,24 @@ public class RunManuallyWithProgress {
   }
 
   public static void run(String message, Project project, final EditorContext context, final Iterable<SNode> toRun, final Iterable<SNode> toUpdate) {
-    CommandWithMessage.execute(message, project, () -> {
-      List<SNode> nodes = Sequence.fromIterable(toRun).toList();
-      ProgressIndicator indicator = ProgressManager.getInstance().getProgressIndicator();
+    CommandWithMessage.execute(message, project, () -> runNodes(context, toRun, toUpdate));
+  }
+
+  public static void runNodes(EditorContext context, Iterable<SNode> toRun, Iterable<SNode> toUpdate) {
+    List<SNode> nodes = Sequence.fromIterable(toRun).toList();
+    ProgressIndicator indicator = ProgressManager.getInstance().getProgressIndicator();
+    if (indicator != null) {
+      indicator.setIndeterminate(false);
+    }
+    int done = 0;
+    for (SNode n : ListSequence.fromList(nodes)) {
       if (indicator != null) {
-        indicator.setIndeterminate(false);
+        indicator.setText2(BaseConcept__BehaviorDescriptor.getPresentation_idhEwIMiw.invoke(n));
+        indicator.setFraction(done / (double) ListSequence.fromList(nodes).count());
       }
-      int done = 0;
-      for (SNode n : ListSequence.fromList(nodes)) {
-        if (indicator != null) {
-          indicator.setText2(BaseConcept__BehaviorDescriptor.getPresentation_idhEwIMiw.invoke(n));
-          indicator.setFraction(done / (double) ListSequence.fromList(nodes).count());
-        }
-        ICanRunCheckManually__BehaviorDescriptor.runManually_id3R3AIvumrTm.invoke(n, context);
-        done++;
-      }
-      RunManuallyUtil.updateEditors(context, toUpdate);
-    });
+      ICanRunCheckManually__BehaviorDescriptor.runManually_id3R3AIvumrTm.invoke(n, context);
+      done++;
+    }
+    RunManuallyUtil.updateEditors(context, toUpdate);
   }
 }
