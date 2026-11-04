@@ -3,7 +3,7 @@
   <persistence version="9" />
   <languages>
     <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="9" />
-    <use id="982eb8df-2c96-4bd7-9963-11712ea622e5" name="jetbrains.mps.lang.resources" version="2" />
+    <use id="982eb8df-2c96-4bd7-9963-11712ea622e5" name="jetbrains.mps.lang.resources" version="3" />
     <devkit ref="78434eb8-b0e5-444b-850d-e7c4ad2da9ab(jetbrains.mps.devkit.aspect.structure)" />
   </languages>
   <imports>
@@ -112,11 +112,11 @@
     </node>
   </node>
   <node concept="1TIwiD" id="5NPKd17BG_g">
+    <property role="3GE5qa" value="content" />
     <property role="TrG5h" value="AbstractFeatureConfigurationContent" />
     <property role="R5$K7" value="true" />
     <property role="R5$K2" value="false" />
     <property role="EcuMT" value="6698472021570799952" />
-    <property role="3GE5qa" value="content" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
   </node>
   <node concept="25R3W" id="zJQZm6SRYQ">
@@ -311,10 +311,10 @@
     </node>
   </node>
   <node concept="1TIwiD" id="5NPKd17BOJW">
+    <property role="3GE5qa" value="content" />
     <property role="TrG5h" value="InlineFeatureConfigurationContent" />
     <property role="34LRSv" value="inline configuration" />
     <property role="EcuMT" value="6698472021570833404" />
-    <property role="3GE5qa" value="content" />
     <ref role="1TJDcQ" node="5NPKd17BG_g" resolve="AbstractFeatureConfigurationContent" />
     <node concept="1TJgyj" id="30ECcbtLqSj" role="1TKVEi">
       <property role="20lmBu" value="fLJjDmT/aggregation" />

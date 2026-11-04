@@ -139,6 +139,12 @@ val resolveDependencies by tasks.registering {
     bundledDependencyResolveTasks.forEach { dependsOn(it) }
 }
 
+val setup by tasks.registering {
+    dependsOn(resolveDependencies, resolveLanguageLibs)
+    group = "setup"
+    description = "Download the dependencies necessary to build the project in MPS."
+}
+
 // Default arguments for ant scripts
 val defaultScriptArgs = mutableMapOf(
     "mps.home" to mpsHomeDir.asFile,
@@ -177,14 +183,9 @@ val buildLanguages by tasks.registering(BuildLanguages::class) {
     script = scriptsDir.file("build-languages.xml")
 }
 
-val execTestsByInterpreterPre by tasks.registering(TestLanguages::class) {
-    script = scriptsDir.file("build-testInterpreter.xml")
-    targets("generate", "build")
-}
-
 val execTestsByInterpreter by tasks.registering(TestLanguages::class) {
-    dependsOn(execTestsByInterpreterPre)
-    script = scriptsDir.file("build-testInterpreterExec.xml")
+    dependsOn(buildLanguages)
+    script = scriptsDir.file("build-interpreted-test-run.xml")
     targets("generate", "build")
     doLast {
         // there is limited ant support for kotlin so we fall back to groovy
@@ -242,14 +243,24 @@ val failOnTestError by tasks.registering {
             // written by buildAndRunTests' Ant junitreport aggregation into the project directory
             file("TESTS-TestSuites.xml"),
             // written directly by the checkmodels task into the build directory, via its own junitFile property
-            layout.buildDirectory.file("TEST-checkProject.xml").get().asFile
-        )
-        val errorsAndFailures = junitXmls.filter { it.exists() }.sumOf { junitXml ->
+            layout.buildDirectory.file("TEST-checkProject.xml").get().asFile,
+            // written by execTestsByInterpreter's Ant junitreport aggregation into the build directory;
+            // only evaluated if the task is part of this build, as the file might be stale otherwise
+            layout.buildDirectory.file("TESTS-TestSuites.xml").get().asFile
+                .takeIf { gradle.taskGraph.hasTask(execTestsByInterpreter.get()) }
+        ).filterNotNull()
+        val errorsAndFailures = junitXmls.sumOf { junitXml ->
+            if (!junitXml.exists()) {
+                logger.warn("JUnit result file not found, skipping: $junitXml")
+                return@sumOf 0
+            }
             val junitResult = XmlSlurper().parse(junitXml)
             val testSuites = junitResult.childNodes().asSequence().map { it as groovy.xml.slurpersupport.Node }
-            testSuites.sumOf {
+            val count = testSuites.sumOf {
                 it.attributes()["errors"].toString().toInt() + it.attributes()["failures"].toString().toInt()
             }
+            if (count > 0) logger.error("JUnit errors or failures found in $junitXml")
+            count
         }
         if (errorsAndFailures > 0) {
             throw GradleException("$errorsAndFailures JUnit tests failed. Check the report for details.")
@@ -314,8 +325,19 @@ buildAndRunTests {
     mustRunAfter(checkmodels)
 }
 
+// execTestsByInterpreter aggregates into build/TESTS-TestSuites.xml, which matches buildAndRunTests'
+// "**/TEST*.xml" fileset. Running it afterwards keeps the interpreter results out of the regular test report.
+execTestsByInterpreter {
+    mustRunAfter(buildAndRunTests)
+}
+
+// failOnTestError finalizes buildAndRunTests, but must also wait for the interpreter results to exist
+failOnTestError {
+    mustRunAfter(execTestsByInterpreter)
+}
+
 tasks.check {
-    dependsOn(checkmodels)
+    dependsOn(checkmodels, execTestsByInterpreter)
 }
 
 val packageLanguages by tasks.registering(Zip::class) {
