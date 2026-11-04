@@ -8,13 +8,11 @@ import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import org.jetbrains.mps.openapi.model.SNode;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import java.util.List;
 import java.util.Arrays;
 import org.jetbrains.annotations.NotNull;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
-import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 import org.jetbrains.mps.openapi.language.SInterfaceConcept;
@@ -22,13 +20,11 @@ import org.jetbrains.mps.openapi.language.SInterfaceConcept;
 public final class IVariabilityContent__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getInterfaceConcept(0x9b66c5c938bf4315L, 0xa96f9f4e212c69cbL, 0x375cadc47514ce61L, "org.iets3.variability.base.structure.IVariabilityContent");
 
-  public static final SMethod<SNode> container_id3D4yX3IUbRd = new SMethodBuilder<SNode>(new SJavaCompoundTypeImpl((Class<SNode>) ((Class) Object.class))).name("container").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(4198634482093833677L).languageId(0xa96f9f4e212c69cbL, 0x9b66c5c938bf4315L).build2();
-  public static final SMethod<Iterable<SNode>> directDependencies_id6Gx9iNnB7_2 = new SMethodBuilder<Iterable<SNode>>(new SJavaCompoundTypeImpl((Class<Iterable<SNode>>) ((Class) Object.class))).name("directDependencies").modifiers(12, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(7719492110815885634L).languageId(0xa96f9f4e212c69cbL, 0x9b66c5c938bf4315L).build2();
+  public static final SMethod<SNode> container_id3D4yX3IUbRd = new SMethodBuilder<>(SNode.class).name("container").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(4198634482093833677L).languageId(0xa96f9f4e212c69cbL, 0x9b66c5c938bf4315L).build2();
+  public static final SMethod<Iterable<SNode>> directDependencies_id6Gx9iNnB7_2 = new SMethodBuilder<>((Class<Iterable<SNode>>) ((Class) Object.class)).name("directDependencies").modifiers(12, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(7719492110815885634L).languageId(0xa96f9f4e212c69cbL, 0x9b66c5c938bf4315L).build2();
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(container_id3D4yX3IUbRd, directDependencies_id6Gx9iNnB7_2);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(container_id3D4yX3IUbRd, directDependencies_id6Gx9iNnB7_2);
 
-  private static void ___init___(@NotNull SNode __thisNode__) {
-  }
 
   /*package*/ static SNode container_id3D4yX3IUbRd(@NotNull SNode __thisNode__) {
     return SNodeOperations.getNodeAncestor(__thisNode__, CONCEPTS.IVariabilityContainer$Cw, false, false);
@@ -37,10 +33,6 @@ public final class IVariabilityContent__BehaviorDescriptor extends BaseBHDescrip
   /*package*/ IVariabilityContent__BehaviorDescriptor() {
   }
 
-  @Override
-  protected void initNode(@NotNull SNode node, @NotNull SConstructor constructor, @Nullable Object[] parameters) {
-    ___init___(node);
-  }
 
   @Override
   protected <T> T invokeSpecial0(@NotNull SNode node, @NotNull SMethod<T> method, @Nullable Object[] parameters) {

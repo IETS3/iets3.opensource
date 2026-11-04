@@ -41,9 +41,6 @@ public class supertypeOf_OptionType_SubtypingRule extends SubtypingRule_Runtime 
   public boolean isWeak() {
     return false;
   }
-  public boolean surelyKeepsConcept() {
-    return true;
-  }
   private static SNode createOptionType_uy1p63_a0a0a2a1(SNode p0) {
     SNodeBuilder n0 = new SNodeBuilder().init(CONCEPTS.OptionType$eU);
     n0.forChild(LINKS.baseType$Cv_a).initNode(p0, CONCEPTS.Type$WK, true);

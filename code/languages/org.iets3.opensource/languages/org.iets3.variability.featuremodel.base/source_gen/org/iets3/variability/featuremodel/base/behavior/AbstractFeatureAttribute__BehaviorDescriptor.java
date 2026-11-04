@@ -8,28 +8,24 @@ import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import org.jetbrains.mps.openapi.model.SNode;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import java.util.Optional;
 import java.util.List;
 import java.util.Arrays;
 import org.jetbrains.annotations.NotNull;
-import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 
 public final class AbstractFeatureAttribute__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getConcept(0x165f1d0525064544L, 0x895e1424f54166ecL, 0x36e2718de01a95ffL, "org.iets3.variability.featuremodel.base.structure.AbstractFeatureAttribute");
 
-  public static final SMethod<SNode> effectiveType_id3rysoRwbqUB = new SMethodBuilder<SNode>(new SJavaCompoundTypeImpl((Class<SNode>) ((Class) Object.class))).name("effectiveType").modifiers(12, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(3954848276950134439L).languageId(0x895e1424f54166ecL, 0x165f1d0525064544L).build2();
-  public static final SMethod<SNode> defaultValue_id3rysoRwsNOP = new SMethodBuilder<SNode>(new SJavaCompoundTypeImpl((Class<SNode>) ((Class) Object.class))).name("defaultValue").modifiers(12, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(3954848276954692917L).languageId(0x895e1424f54166ecL, 0x165f1d0525064544L).build2();
-  public static final SMethod<Optional<SNode>> notPresentValueForSolver_idRJ4G$UUrsi = new SMethodBuilder<Optional<SNode>>(new SJavaCompoundTypeImpl(Optional.class)).name("notPresentValueForSolver").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(1004041897413031698L).languageId(0x895e1424f54166ecL, 0x165f1d0525064544L).build2();
-  public static final SMethod<String> solverName_id3rysoRx5$0U = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("solverName").modifiers(12, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(3954848276965376058L).languageId(0x895e1424f54166ecL, 0x165f1d0525064544L).build2(SMethodBuilder.createJavaParameter(String.class, ""));
+  public static final SMethod<SNode> effectiveType_id3rysoRwbqUB = new SMethodBuilder<>(SNode.class).name("effectiveType").modifiers(12, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(3954848276950134439L).languageId(0x895e1424f54166ecL, 0x165f1d0525064544L).build2();
+  public static final SMethod<SNode> defaultValue_id3rysoRwsNOP = new SMethodBuilder<>(SNode.class).name("defaultValue").modifiers(12, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(3954848276954692917L).languageId(0x895e1424f54166ecL, 0x165f1d0525064544L).build2();
+  public static final SMethod<Optional<SNode>> notPresentValueForSolver_idRJ4G$UUrsi = new SMethodBuilder<>((Class<Optional<SNode>>) ((Class) Object.class)).name("notPresentValueForSolver").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(1004041897413031698L).languageId(0x895e1424f54166ecL, 0x165f1d0525064544L).build2();
+  public static final SMethod<String> solverName_id3rysoRx5$0U = new SMethodBuilder<>(String.class).name("solverName").modifiers(12, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(3954848276965376058L).languageId(0x895e1424f54166ecL, 0x165f1d0525064544L).build2(SMethodBuilder.createJavaParameter(String.class, "ctx"));
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(effectiveType_id3rysoRwbqUB, defaultValue_id3rysoRwsNOP, notPresentValueForSolver_idRJ4G$UUrsi, solverName_id3rysoRx5$0U);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(effectiveType_id3rysoRwbqUB, defaultValue_id3rysoRwsNOP, notPresentValueForSolver_idRJ4G$UUrsi, solverName_id3rysoRx5$0U);
 
-  private static void ___init___(@NotNull SNode __thisNode__) {
-  }
 
   /*package*/ static Optional<SNode> notPresentValueForSolver_idRJ4G$UUrsi(@NotNull SNode __thisNode__) {
     return Optional.<SNode>empty();
@@ -38,10 +34,6 @@ public final class AbstractFeatureAttribute__BehaviorDescriptor extends BaseBHDe
   /*package*/ AbstractFeatureAttribute__BehaviorDescriptor() {
   }
 
-  @Override
-  protected void initNode(@NotNull SNode node, @NotNull SConstructor constructor, @Nullable Object[] parameters) {
-    ___init___(node);
-  }
 
   @Override
   protected <T> T invokeSpecial0(@NotNull SNode node, @NotNull SMethod<T> method, @Nullable Object[] parameters) {

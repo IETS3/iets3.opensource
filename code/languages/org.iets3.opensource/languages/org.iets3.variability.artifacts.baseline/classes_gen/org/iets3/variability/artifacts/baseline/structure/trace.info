@@ -12,7 +12,7 @@
       <unit at="11,0,37,0" name="org.iets3.variability.artifacts.baseline.structure.ConceptPresentationAspectImpl" />
     </file>
     <file name="LanguageConceptSwitch.java">
-      <unit at="10,0,30,0" name="org.iets3.variability.artifacts.baseline.structure.LanguageConceptSwitch" />
+      <unit at="12,0,38,0" name="org.iets3.variability.artifacts.baseline.structure.LanguageConceptSwitch" />
     </file>
     <file name="StructureAspectDescriptor.java">
       <unit at="14,0,71,0" name="org.iets3.variability.artifacts.baseline.structure.StructureAspectDescriptor" />
@@ -31,8 +31,8 @@
       <scope id="5521534041733556326" at="20,60,25,48" />
     </file>
     <file name="LanguageConceptSwitch.java">
-      <node id="5521534041733556326" at="12,0,13,0" concept="5" trace="IVariantBaselineConfigItem" />
-      <node id="5521534041733556326" at="16,116,17,65" concept="0" />
+      <node id="5521534041733556326" at="14,0,15,0" concept="5" trace="IVariantBaselineConfigItem" />
+      <node id="5521534041733556326" at="18,116,19,65" concept="0" />
     </file>
     <file name="StructureAspectDescriptor.java">
       <node id="5521534041733556326" at="15,0,16,0" concept="1" trace="myConceptIVariantBaselineConfigItem" />
@@ -66,8 +66,8 @@
       <scope id="5678173081850862846" at="26,55,32,43" />
     </file>
     <file name="LanguageConceptSwitch.java">
-      <node id="5678173081850862846" at="13,0,14,0" concept="5" trace="VariantBaselineConfig" />
-      <node id="5678173081850862846" at="17,65,18,60" concept="0" />
+      <node id="5678173081850862846" at="15,0,16,0" concept="5" trace="VariantBaselineConfig" />
+      <node id="5678173081850862846" at="19,65,20,60" concept="0" />
     </file>
     <file name="StructureAspectDescriptor.java">
       <node id="5678173081850862846" at="16,0,17,0" concept="1" trace="myConceptVariantBaselineConfig" />

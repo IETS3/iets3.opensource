@@ -8,25 +8,21 @@ import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import org.jetbrains.mps.openapi.model.SNode;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import java.util.List;
 import java.util.Arrays;
 import org.jetbrains.annotations.NotNull;
-import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 
 public final class NAryTag__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getConcept(0x5186c6ce428c4f09L, 0xa9df73d9e86c27d3L, 0x1f2fe711537c9c33L, "org.iets3.core.expr.typetags.structure.NAryTag");
 
-  public static final SMethod<SNode> getDefault_id1WJTL5jvcNW = new SMethodBuilder<SNode>(new SJavaCompoundTypeImpl((Class<SNode>) ((Class) Object.class))).name("getDefault").modifiers(9, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(2247268800682315004L).languageId(0xa9df73d9e86c27d3L, 0x5186c6ce428c4f09L).build2();
-  public static final SMethod<Boolean> canBeNegated_id6KxoTHgKls2 = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("canBeNegated").modifiers(9, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(7791618349053597442L).languageId(0xa9df73d9e86c27d3L, 0x5186c6ce428c4f09L).build2();
+  public static final SMethod<SNode> getDefault_id1WJTL5jvcNW = new SMethodBuilder<>(SNode.class).name("getDefault").modifiers(9, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(2247268800682315004L).languageId(0xa9df73d9e86c27d3L, 0x5186c6ce428c4f09L).build2();
+  public static final SMethod<Boolean> canBeNegated_id6KxoTHgKls2 = new SMethodBuilder<>(Boolean.TYPE).name("canBeNegated").modifiers(9, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(7791618349053597442L).languageId(0xa9df73d9e86c27d3L, 0x5186c6ce428c4f09L).build2();
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(getDefault_id1WJTL5jvcNW, canBeNegated_id6KxoTHgKls2);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(getDefault_id1WJTL5jvcNW, canBeNegated_id6KxoTHgKls2);
 
-  private static void ___init___(@NotNull SNode __thisNode__) {
-  }
 
   /*package*/ static SNode getDefault_id1WJTL5jvcNW(@NotNull SAbstractConcept __thisConcept__) {
     return null;
@@ -38,10 +34,6 @@ public final class NAryTag__BehaviorDescriptor extends BaseBHDescriptor {
   /*package*/ NAryTag__BehaviorDescriptor() {
   }
 
-  @Override
-  protected void initNode(@NotNull SNode node, @NotNull SConstructor constructor, @Nullable Object[] parameters) {
-    ___init___(node);
-  }
 
   @Override
   protected <T> T invokeSpecial0(@NotNull SNode node, @NotNull SMethod<T> method, @Nullable Object[] parameters) {

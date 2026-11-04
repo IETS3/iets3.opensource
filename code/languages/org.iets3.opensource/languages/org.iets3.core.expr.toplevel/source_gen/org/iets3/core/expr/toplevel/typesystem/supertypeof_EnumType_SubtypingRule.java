@@ -32,9 +32,6 @@ public class supertypeof_EnumType_SubtypingRule extends SubtypingRule_Runtime im
   public boolean isWeak() {
     return false;
   }
-  public boolean surelyKeepsConcept() {
-    return true;
-  }
 
   private static final class LINKS {
     /*package*/ static final SReferenceLink enum$2YBB = MetaAdapterFactory.getReferenceLink(0x71934284d7d145eeL, 0xa0548c072591085fL, 0x61fe216664a730bbL, 0x61fe216664a730f3L, "enum");

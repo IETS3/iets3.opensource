@@ -7,7 +7,6 @@ import org.jetbrains.mps.openapi.language.SAbstractConcept;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import org.jetbrains.mps.openapi.model.SNode;
 import java.util.List;
@@ -25,11 +24,11 @@ import org.jetbrains.mps.openapi.language.SContainmentLink;
 public final class Revealer__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getConcept(0xcfaa4966b7d54b69L, 0xb66a309a6e1a7290L, 0x447c2333802f6f96L, "org.iets3.core.expr.base.structure.Revealer");
 
-  public static final SMethod<String> getPresentation_idhEwIMiw = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("getPresentation").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(1213877396640L).languageId(0x9b92103b95ca8c0cL, 0xceab519525ea4f22L).build2();
-  public static final SMethod<Boolean> mustBeRevealed_id4hW8Ne0aLJi = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("mustBeRevealed").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(4934857995791834066L).languageId(0xa6067ce0236c8023L, 0x47f075a6558e4640L).build2(SMethodBuilder.createJavaParameter(Object.class, ""));
-  public static final SMethod<SNode> getTheNodeToEvalute_id4hW8Ne0mTH4 = new SMethodBuilder<SNode>(new SJavaCompoundTypeImpl((Class<SNode>) ((Class) Object.class))).name("getTheNodeToEvalute").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(4934857995795012420L).languageId(0xa6067ce0236c8023L, 0x47f075a6558e4640L).build2();
+  public static final SMethod<String> getPresentation_idhEwIMiw = new SMethodBuilder<>(String.class).name("getPresentation").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(1213877396640L).languageId(0x9b92103b95ca8c0cL, 0xceab519525ea4f22L).build2();
+  public static final SMethod<Boolean> mustBeRevealed_id4hW8Ne0aLJi = new SMethodBuilder<>(Boolean.TYPE).name("mustBeRevealed").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(4934857995791834066L).languageId(0xa6067ce0236c8023L, 0x47f075a6558e4640L).build2(SMethodBuilder.createJavaParameter(Object.class, "conditionValue"));
+  public static final SMethod<SNode> getTheNodeToEvalute_id4hW8Ne0mTH4 = new SMethodBuilder<>(SNode.class).name("getTheNodeToEvalute").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(4934857995795012420L).languageId(0xa6067ce0236c8023L, 0x47f075a6558e4640L).build2();
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(getPresentation_idhEwIMiw, mustBeRevealed_id4hW8Ne0aLJi, getTheNodeToEvalute_id4hW8Ne0mTH4);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(getPresentation_idhEwIMiw, mustBeRevealed_id4hW8Ne0aLJi, getTheNodeToEvalute_id4hW8Ne0mTH4);
 
   private static void ___init___(@NotNull SNode __thisNode__) {
     SLinkOperations.setTarget(__thisNode__, LINKS.condition$u1TZ, PTF.createTrueLiteral());

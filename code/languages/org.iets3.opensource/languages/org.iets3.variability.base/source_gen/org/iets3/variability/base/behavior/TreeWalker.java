@@ -14,7 +14,7 @@ import java.util.Objects;
 public class TreeWalker {
 
   /**
-   * 
+   * TODO: Replace this method's body by some method from class "Traversal" (from mpsutil) and deprecate it.
    * 
    * @deprecated Use com.mbeddr.mpsutil.common.util.Traversal instead.
    */

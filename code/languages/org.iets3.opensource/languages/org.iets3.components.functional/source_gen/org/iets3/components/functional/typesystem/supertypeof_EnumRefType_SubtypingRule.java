@@ -27,9 +27,6 @@ public class supertypeof_EnumRefType_SubtypingRule extends SubtypingRule_Runtime
   public boolean isWeak() {
     return false;
   }
-  public boolean surelyKeepsConcept() {
-    return true;
-  }
 
   private static final class CONCEPTS {
     /*package*/ static final SConcept EnumRefType$3c = MetaAdapterFactory.getConcept(0x257976063fb647b8L, 0xbc3cb4384df7da44L, 0x1e46270caedc183L, "org.iets3.components.functional.structure.EnumRefType");

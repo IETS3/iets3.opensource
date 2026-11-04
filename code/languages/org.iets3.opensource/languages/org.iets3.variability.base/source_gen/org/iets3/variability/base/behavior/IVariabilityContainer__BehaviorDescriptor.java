@@ -7,7 +7,6 @@ import org.jetbrains.mps.openapi.language.SAbstractConcept;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import org.jetbrains.mps.openapi.model.SNode;
 import java.util.List;
@@ -15,25 +14,22 @@ import java.util.Arrays;
 import org.jetbrains.annotations.NotNull;
 import jetbrains.mps.internal.collections.runtime.Sequence;
 import java.util.Collections;
-import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 
 public final class IVariabilityContainer__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getInterfaceConcept(0x9b66c5c938bf4315L, 0xa96f9f4e212c69cbL, 0x2094847e8426ce97L, "org.iets3.variability.base.structure.IVariabilityContainer");
 
-  public static final SMethod<Boolean> mayAdd_id3D4yX3IOARB = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("mayAdd").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(4198634482092371431L).languageId(0xa96f9f4e212c69cbL, 0x9b66c5c938bf4315L).build2(SMethodBuilder.createJavaParameter((Class<SAbstractConcept>) ((Class) Object.class), ""));
-  public static final SMethod<Void> addContent_id22kx7U4aH3P = new SMethodBuilder<Void>(new SJavaCompoundTypeImpl(Void.class)).name("addContent").modifiers(12, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(2347646984685015285L).languageId(0xa96f9f4e212c69cbL, 0x9b66c5c938bf4315L).build2(SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""));
-  public static final SMethod<Void> addContent_id22kx7U4IoRa = new SMethodBuilder<Void>(new SJavaCompoundTypeImpl(Void.class)).name("addContent").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(2347646984694369738L).languageId(0xa96f9f4e212c69cbL, 0x9b66c5c938bf4315L).build2(SMethodBuilder.createJavaParameter(Integer.TYPE, ""), SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""));
-  public static final SMethod<List<SNode>> getContents_id22kx7U4Ix5a = new SMethodBuilder<List<SNode>>(new SJavaCompoundTypeImpl((Class<List<SNode>>) ((Class) Object.class))).name("getContents").modifiers(12, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(2347646984694403402L).languageId(0xa96f9f4e212c69cbL, 0x9b66c5c938bf4315L).build2();
-  public static final SMethod<Iterable<SNode>> getOtherContents_id3D4yX3Jvijy = new SMethodBuilder<Iterable<SNode>>(new SJavaCompoundTypeImpl((Class<Iterable<SNode>>) ((Class) Object.class))).name("getOtherContents").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(4198634482103559394L).languageId(0xa96f9f4e212c69cbL, 0x9b66c5c938bf4315L).build2();
-  public static final SMethod<List<SNode>> allContainerDependencies_id6PXN44oCEB8 = new SMethodBuilder<List<SNode>>(new SJavaCompoundTypeImpl((Class<List<SNode>>) ((Class) Object.class))).name("allContainerDependencies").modifiers(12, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(7889686702181231048L).languageId(0xa96f9f4e212c69cbL, 0x9b66c5c938bf4315L).build2();
-  public static final SMethod<Iterable<SNode>> allImportedContainers_id1KUGD$rV2Pp = new SMethodBuilder<Iterable<SNode>>(new SJavaCompoundTypeImpl((Class<Iterable<SNode>>) ((Class) Object.class))).name("allImportedContainers").modifiers(12, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(2034134552379403609L).languageId(0xa96f9f4e212c69cbL, 0x9b66c5c938bf4315L).build2(SMethodBuilder.createJavaParameter(Boolean.TYPE, ""));
+  public static final SMethod<Boolean> mayAdd_id3D4yX3IOARB = new SMethodBuilder<>(Boolean.TYPE).name("mayAdd").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(4198634482092371431L).languageId(0xa96f9f4e212c69cbL, 0x9b66c5c938bf4315L).build2(SMethodBuilder.createJavaParameter(SAbstractConcept.class, "conc"));
+  public static final SMethod<Void> addContent_id22kx7U4aH3P = new SMethodBuilder<>(Void.TYPE).name("addContent").modifiers(12, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(2347646984685015285L).languageId(0xa96f9f4e212c69cbL, 0x9b66c5c938bf4315L).build2(SMethodBuilder.createJavaParameter(SNode.class, "content"));
+  public static final SMethod<Void> addContent_id22kx7U4IoRa = new SMethodBuilder<>(Void.TYPE).name("addContent").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(2347646984694369738L).languageId(0xa96f9f4e212c69cbL, 0x9b66c5c938bf4315L).build2(SMethodBuilder.createJavaParameter(Integer.TYPE, "position"), SMethodBuilder.createJavaParameter(SNode.class, "content"));
+  public static final SMethod<List<SNode>> getContents_id22kx7U4Ix5a = new SMethodBuilder<>((Class<List<SNode>>) ((Class) Object.class)).name("getContents").modifiers(12, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(2347646984694403402L).languageId(0xa96f9f4e212c69cbL, 0x9b66c5c938bf4315L).build2();
+  public static final SMethod<Iterable<SNode>> getOtherContents_id3D4yX3Jvijy = new SMethodBuilder<>((Class<Iterable<SNode>>) ((Class) Object.class)).name("getOtherContents").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(4198634482103559394L).languageId(0xa96f9f4e212c69cbL, 0x9b66c5c938bf4315L).build2();
+  public static final SMethod<List<SNode>> allContainerDependencies_id6PXN44oCEB8 = new SMethodBuilder<>((Class<List<SNode>>) ((Class) Object.class)).name("allContainerDependencies").modifiers(12, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(7889686702181231048L).languageId(0xa96f9f4e212c69cbL, 0x9b66c5c938bf4315L).build2();
+  public static final SMethod<Iterable<SNode>> allImportedContainers_id1KUGD$rV2Pp = new SMethodBuilder<>((Class<Iterable<SNode>>) ((Class) Object.class)).name("allImportedContainers").modifiers(12, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(2034134552379403609L).languageId(0xa96f9f4e212c69cbL, 0x9b66c5c938bf4315L).build2(SMethodBuilder.createJavaParameter(Boolean.TYPE, "restrictToReexport"));
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(mayAdd_id3D4yX3IOARB, addContent_id22kx7U4aH3P, addContent_id22kx7U4IoRa, getContents_id22kx7U4Ix5a, getOtherContents_id3D4yX3Jvijy, allContainerDependencies_id6PXN44oCEB8, allImportedContainers_id1KUGD$rV2Pp);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(mayAdd_id3D4yX3IOARB, addContent_id22kx7U4aH3P, addContent_id22kx7U4IoRa, getContents_id22kx7U4Ix5a, getOtherContents_id3D4yX3Jvijy, allContainerDependencies_id6PXN44oCEB8, allImportedContainers_id1KUGD$rV2Pp);
 
-  private static void ___init___(@NotNull SNode __thisNode__) {
-  }
 
   /*package*/ static boolean mayAdd_id3D4yX3IOARB(@NotNull SNode __thisNode__, SAbstractConcept conc) {
     // default: allow adding all concepts the addContent-methods allow (i.e., any implementations of IVariabilityContent)
@@ -50,10 +46,6 @@ public final class IVariabilityContainer__BehaviorDescriptor extends BaseBHDescr
   /*package*/ IVariabilityContainer__BehaviorDescriptor() {
   }
 
-  @Override
-  protected void initNode(@NotNull SNode node, @NotNull SConstructor constructor, @Nullable Object[] parameters) {
-    ___init___(node);
-  }
 
   @Override
   protected <T> T invokeSpecial0(@NotNull SNode node, @NotNull SMethod<T> method, @Nullable Object[] parameters) {

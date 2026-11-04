@@ -7,7 +7,6 @@ import org.jetbrains.mps.openapi.language.SAbstractConcept;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import org.jetbrains.mps.openapi.model.SNode;
 import java.util.Optional;
@@ -17,7 +16,6 @@ import org.jetbrains.annotations.NotNull;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
 import jetbrains.mps.internal.collections.runtime.ListSequence;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
-import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 import org.jetbrains.mps.openapi.language.SInterfaceConcept;
@@ -26,13 +24,11 @@ import org.jetbrains.mps.openapi.language.SContainmentLink;
 public final class IVariationPoint__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getInterfaceConcept(0xc6ff3b3baff6455eL, 0x96377955ccbfec22L, 0x79c38a47d53e9b5aL, "org.iets3.variability.artifacts.vanguard.structure.IVariationPoint");
 
-  public static final SMethod<Boolean> isVariationPoint_id7B3y$vlfFZt = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("isVariationPoint").modifiers(1, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(8774008540172828637L).languageId(0x96377955ccbfec22L, 0xc6ff3b3baff6455eL).build2(SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""));
-  public static final SMethod<Optional<SNode>> getPresenceCondition_id4G1C74Q8D4_ = new SMethodBuilder<Optional<SNode>>(new SJavaCompoundTypeImpl(Optional.class)).name("getPresenceCondition").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5404777435921289509L).languageId(0x96377955ccbfec22L, 0xc6ff3b3baff6455eL).build2();
+  public static final SMethod<Boolean> isVariationPoint_id7B3y$vlfFZt = new SMethodBuilder<>(Boolean.TYPE).name("isVariationPoint").modifiers(1, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(8774008540172828637L).languageId(0x96377955ccbfec22L, 0xc6ff3b3baff6455eL).build2(SMethodBuilder.createJavaParameter(SNode.class, "queriedNode"));
+  public static final SMethod<Optional<SNode>> getPresenceCondition_id4G1C74Q8D4_ = new SMethodBuilder<>((Class<Optional<SNode>>) ((Class) Object.class)).name("getPresenceCondition").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5404777435921289509L).languageId(0x96377955ccbfec22L, 0xc6ff3b3baff6455eL).build2();
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(isVariationPoint_id7B3y$vlfFZt, getPresenceCondition_id4G1C74Q8D4_);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(isVariationPoint_id7B3y$vlfFZt, getPresenceCondition_id4G1C74Q8D4_);
 
-  private static void ___init___(@NotNull SNode __thisNode__) {
-  }
 
   /*package*/ static boolean isVariationPoint_id7B3y$vlfFZt(@NotNull SAbstractConcept __thisConcept__, SNode queriedNode) {
     return SNodeOperations.isInstanceOf(queriedNode, CONCEPTS.IVariationPoint$8L) || ListSequence.fromList(SLinkOperations.getChildren(queriedNode, LINKS.smodelAttribute$KJ43)).any((it) -> SNodeOperations.isInstanceOf(it, CONCEPTS.IVariationPoint$8L));
@@ -44,10 +40,6 @@ public final class IVariationPoint__BehaviorDescriptor extends BaseBHDescriptor 
   /*package*/ IVariationPoint__BehaviorDescriptor() {
   }
 
-  @Override
-  protected void initNode(@NotNull SNode node, @NotNull SConstructor constructor, @Nullable Object[] parameters) {
-    ___init___(node);
-  }
 
   @Override
   protected <T> T invokeSpecial0(@NotNull SNode node, @NotNull SMethod<T> method, @Nullable Object[] parameters) {

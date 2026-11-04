@@ -8,13 +8,11 @@ import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import org.jetbrains.mps.openapi.model.SNode;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import java.util.List;
 import java.util.Arrays;
 import org.jetbrains.annotations.NotNull;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
-import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 import org.jetbrains.mps.openapi.language.SConcept;
@@ -22,12 +20,10 @@ import org.jetbrains.mps.openapi.language.SConcept;
 public final class AbstractQueryComponent__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getConcept(0x10e056b249fd40caL, 0x8b64de69c81163acL, 0x5da9d77c6463ee5cL, "org.iets3.core.expr.query.structure.AbstractQueryComponent");
 
-  public static final SMethod<SNode> query_id5QDPRL$oZHJ = new SMethodBuilder<SNode>(new SJavaCompoundTypeImpl((Class<SNode>) ((Class) Object.class))).name("query").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(6749162445851589487L).languageId(0x8b64de69c81163acL, 0x10e056b249fd40caL).build2();
+  public static final SMethod<SNode> query_id5QDPRL$oZHJ = new SMethodBuilder<>(SNode.class).name("query").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(6749162445851589487L).languageId(0x8b64de69c81163acL, 0x10e056b249fd40caL).build2();
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(query_id5QDPRL$oZHJ);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(query_id5QDPRL$oZHJ);
 
-  private static void ___init___(@NotNull SNode __thisNode__) {
-  }
 
   /*package*/ static SNode query_id5QDPRL$oZHJ(@NotNull SNode __thisNode__) {
     return SNodeOperations.getNodeAncestor(__thisNode__, CONCEPTS.QueryExpr$TY, false, false);
@@ -36,10 +32,6 @@ public final class AbstractQueryComponent__BehaviorDescriptor extends BaseBHDesc
   /*package*/ AbstractQueryComponent__BehaviorDescriptor() {
   }
 
-  @Override
-  protected void initNode(@NotNull SNode node, @NotNull SConstructor constructor, @Nullable Object[] parameters) {
-    ___init___(node);
-  }
 
   @Override
   protected <T> T invokeSpecial0(@NotNull SNode node, @NotNull SMethod<T> method, @Nullable Object[] parameters) {

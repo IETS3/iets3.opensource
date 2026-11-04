@@ -7,7 +7,7 @@ import java.util.Map;
 import java.util.Collection;
 
 /**
- * Interface used by the filterIntantiator to evaluate 150% expressions and replace them 
+ * Interface used by the filterIntantiator to evaluate 150% expressions and replace them
  * by a 100% expression representing the value specific for the given configuration.
  * 
  * The basic filterInstantiator does not support this, so the interface is never called there.
@@ -17,7 +17,7 @@ public interface IVarExprReplacer {
   /**
    * Replace a set of 150% expressions. The scope of the set is always a skeleton node.
    * So each call to this method will contain all 150% expressions in the AST of this skeleton node,
-   * including logical children. 
+   * including logical children.
    * 
    * The union(old2new.keys, invalid) consists of all 150% expressions found in the skeleton node's scope.
    * Note that some expressions of that union might be part of the same Expression sub-AST.

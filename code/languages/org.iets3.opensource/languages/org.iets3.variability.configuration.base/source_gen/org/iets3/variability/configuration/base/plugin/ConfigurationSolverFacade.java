@@ -47,7 +47,7 @@ import org.jetbrains.mps.openapi.language.SConcept;
 import org.jetbrains.mps.openapi.language.SContainmentLink;
 
 /**
- * Provides functionality for checking constraints of a FMC and deriving values (SelectionStates, AttributeValues) 
+ * Provides functionality for checking constraints of a FMC and deriving values (SelectionStates, AttributeValues)
  * from them.
  */
 public class ConfigurationSolverFacade {
@@ -176,7 +176,7 @@ public class ConfigurationSolverFacade {
 
   /**
    * override for the case of setting default values. Note that due to constraints
-   * it might be the case that not all default values for attributes can be set. 
+   * it might be the case that not all default values for attributes can be set.
    * 
    * @param allChecks  
    * @param expressionForAttributeAssignmentAlreadySet  

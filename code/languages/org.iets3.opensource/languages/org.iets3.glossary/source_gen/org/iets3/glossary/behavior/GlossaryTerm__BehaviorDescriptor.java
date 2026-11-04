@@ -21,7 +21,7 @@ public final class GlossaryTerm__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getConcept(0x8e4e17debc104a34L, 0xa376a243fbde540eL, 0x68caade118d74a57L, "org.iets3.glossary.structure.GlossaryTerm");
 
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList();
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList();
 
   private static void ___init___(@NotNull SNode __thisNode__) {
     SNode d = SLinkOperations.setNewChild(__thisNode__, LINKS.doc$YUQC, null);
