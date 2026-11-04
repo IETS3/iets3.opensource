@@ -7584,11 +7584,6 @@
               <ref role="3bR37D" to="ffeo:nbn5Dym2sp" resolve="Testbench" />
             </node>
           </node>
-          <node concept="1SiIV0" id="1mzU7Kvxg$N" role="3bR37C">
-            <node concept="3bR9La" id="1mzU7Kvxg$O" role="1SiIV1">
-              <ref role="3bR37D" node="5wLtKNeSRQp" resolve="org.iets3.core.plugin" />
-            </node>
-          </node>
           <node concept="1SiIV0" id="36boutet3I3" role="3bR37C">
             <node concept="3bR9La" id="36boutet3I4" role="1SiIV1">
               <ref role="3bR37D" to="ffeo:ymnOULAU1u" resolve="jetbrains.mps.lang.test.runtime" />
@@ -7795,6 +7790,11 @@
         <node concept="1SiIV0" id="6ycJs$Ayp7j" role="3bR37C">
           <node concept="3bR9La" id="6ycJs$Ayp7k" role="1SiIV1">
             <ref role="3bR37D" node="3FexrMiSOe$" resolve="org.iets3.core.expr.plugin" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="1mzU7Kvxg$N" role="3bR37C">
+          <node concept="3bR9La" id="1mzU7Kvxg$O" role="1SiIV1">
+            <ref role="3bR37D" node="5wLtKNeSRQp" resolve="org.iets3.core.plugin" />
           </node>
         </node>
         <node concept="1SiIV0" id="230lIJVLk_" role="3bR37C">
