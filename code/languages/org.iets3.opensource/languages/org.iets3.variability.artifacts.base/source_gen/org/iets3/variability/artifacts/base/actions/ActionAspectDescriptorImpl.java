@@ -16,6 +16,8 @@ public class ActionAspectDescriptorImpl extends BaseActionAspectDescriptor imple
   public Collection<NodeFactory> getFactories(SAbstractConcept concept) {
     if (LANGUAGE_FQ_NAME.equals(concept.getLanguage().getQualifiedName())) {
       switch (concept.getName()) {
+        case "FeatureDecTab":
+          return Collections.<NodeFactory>singletonList(new FeatureDecTab_Factory.NodeFactory_5496884887036707004());
         case "IVariabilityAwareArtifact":
           return Collections.<NodeFactory>singletonList(new IVAA_Factory.NodeFactory_2497890189699054815());
         default:

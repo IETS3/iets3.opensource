@@ -23,7 +23,6 @@ import org.iets3.core.expr.base.plugin.ConstraintFailedException;
 import org.iets3.core.expr.base.behavior.TraceFailures;
 import com.mbeddr.mpsutil.interpreter.rt.InvalidValueException;
 import org.iets3.core.expr.base.plugin.CVH;
-import org.iets3.core.base.behavior.ICanStoreCheckResult__BehaviorDescriptor;
 import org.iets3.core.expr.base.behavior.Expression__BehaviorDescriptor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
@@ -82,7 +81,6 @@ public final class AssertOptionTestItem__BehaviorDescriptor extends BaseBHDescri
     }
     long end = System.currentTimeMillis();
     result.setTime(end - begin);
-    ICanStoreCheckResult__BehaviorDescriptor.storeLastResult_id3R3AIvuq5Dp.invoke(__thisNode__, result);
     return result;
   }
   /*package*/ static String asString_id6iqfHNBPkjP(@NotNull SNode __thisNode__) {

@@ -19,7 +19,6 @@ import com.mbeddr.mpsutil.interpreter.rt.InterpreterEscapeException;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations;
 import com.mbeddr.mpsutil.interpreter.rt.InterpreterRuntimeException;
 import org.iets3.core.expr.base.behavior.TraceFailures;
-import org.iets3.core.base.behavior.ICanStoreCheckResult__BehaviorDescriptor;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
 import jetbrains.mps.internal.collections.runtime.ListSequence;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
@@ -76,7 +75,6 @@ public final class ConstraintFailedTestItem__BehaviorDescriptor extends BaseBHDe
     }
     long end = System.currentTimeMillis();
     result.setTime(end - begin);
-    ICanStoreCheckResult__BehaviorDescriptor.storeLastResult_id3R3AIvuq5Dp.invoke(__thisNode__, result);
     return result;
   }
   /*package*/ static boolean isStructurallyValid_id78hTg1$TOs3(@NotNull SNode __thisNode__) {

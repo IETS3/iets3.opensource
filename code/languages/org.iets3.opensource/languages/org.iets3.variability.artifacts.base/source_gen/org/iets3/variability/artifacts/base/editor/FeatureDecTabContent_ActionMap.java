@@ -9,6 +9,8 @@ import jetbrains.mps.internal.collections.runtime.ListSequence;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
 import jetbrains.mps.editor.runtime.deletionApprover.DeletionApproverUtil;
+import jetbrains.mps.editor.runtime.selection.SelectionUtil;
+import jetbrains.mps.openapi.editor.selection.SelectionManager;
 import jetbrains.mps.openapi.editor.cells.EditorCell;
 import jetbrains.mps.openapi.editor.cells.CellAction;
 import jetbrains.mps.openapi.editor.cells.CellActionType;
@@ -16,6 +18,7 @@ import jetbrains.mps.nodeEditor.cellProviders.AbstractCellListHandler;
 import java.util.Objects;
 import org.jetbrains.mps.openapi.language.SConcept;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
+import org.jetbrains.mps.openapi.language.SInterfaceConcept;
 import org.jetbrains.mps.openapi.language.SContainmentLink;
 
 public class FeatureDecTabContent_ActionMap {
@@ -30,7 +33,18 @@ public class FeatureDecTabContent_ActionMap {
         if (nItems > 1) {
           // do usual two-step approve/delete logic only if this isn't the last item in the list
           if (!(DeletionApproverUtil.approve(editorContext, node))) {
+            SNode target = ((SNodeOperations.getPrevSibling(node) != null) ? SNodeOperations.getPrevSibling(node) : SNodeOperations.getNextSibling(node));
             SNodeOperations.deleteNode(node);
+
+            if ((target != null)) {
+              // keep the caret in the presence condition of the surviving row
+              SNode presenceCondition = SLinkOperations.getTarget(SNodeOperations.cast(target, CONCEPTS.IConditionVarPoint$bG), LINKS.featureExpr$cJRc);
+              if ((presenceCondition != null)) {
+                SelectionUtil.selectCell(editorContext, presenceCondition, SelectionManager.FIRST_CELL);
+              } else {
+                SelectionUtil.selectCell(editorContext, target, SelectionManager.FIRST_CELL);
+              }
+            }
           } else {
             // will not delete this node if it is the only item in the parent's list
           }
@@ -83,9 +97,11 @@ public class FeatureDecTabContent_ActionMap {
 
   private static final class CONCEPTS {
     /*package*/ static final SConcept FeatureDecTab$p6 = MetaAdapterFactory.getConcept(0xf08835038eaa4bc8L, 0x8846eb63220ab1ddL, 0x2de0d5b2023d47abL, "org.iets3.variability.artifacts.base.structure.FeatureDecTab");
+    /*package*/ static final SInterfaceConcept IConditionVarPoint$bG = MetaAdapterFactory.getInterfaceConcept(0xf08835038eaa4bc8L, 0x8846eb63220ab1ddL, 0xe86d1af52aae5ceL, "org.iets3.variability.artifacts.base.structure.IConditionVarPoint");
   }
 
   private static final class LINKS {
     /*package*/ static final SContainmentLink contents$oelO = MetaAdapterFactory.getContainmentLink(0xf08835038eaa4bc8L, 0x8846eb63220ab1ddL, 0x2de0d5b2023d47abL, 0x2de0d5b2023d497cL, "contents");
+    /*package*/ static final SContainmentLink featureExpr$cJRc = MetaAdapterFactory.getContainmentLink(0xf08835038eaa4bc8L, 0x8846eb63220ab1ddL, 0xe86d1af52aae5ceL, 0x55275f0cc818c452L, "featureExpr");
   }
 }

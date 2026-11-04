@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<product version="3" modelHash="-7m09tuyct2leqv2yzr9e619m1ctxp1u">
-  <files names="ActionAspectDescriptorImpl.java:IVAA_Factory.java" />
+<product version="3" modelHash="-bdmjyskdr89lk03n9xzb51pg9bl3qag">
+  <files names="ActionAspectDescriptorImpl.java:FeatureDecTabFocus.java:FeatureDecTabGuardedRowDelete.java:FeatureDecTab_Factory.java:IVAA_Factory.java" />
 </product>
 
