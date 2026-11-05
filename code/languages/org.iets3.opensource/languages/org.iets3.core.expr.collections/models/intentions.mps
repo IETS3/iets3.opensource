@@ -13,6 +13,7 @@
     <import index="pbu6" ref="r:83e946de-2a7f-4a4c-b3c9-4f671aa7f2db(org.iets3.core.expr.base.behavior)" implicit="true" />
     <import index="b1h1" ref="r:ac5f749f-6179-4d4f-ad24-ad9edbd8077b(org.iets3.core.expr.simpleTypes.behavior)" implicit="true" />
     <import index="5qo5" ref="r:6d93ddb1-b0b0-4eee-8079-51303666672a(org.iets3.core.expr.simpleTypes.structure)" implicit="true" />
+    <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -96,6 +97,7 @@
       <concept id="1192795911897" name="jetbrains.mps.lang.intentions.structure.ExecuteBlock" flags="in" index="2Sbjvc" />
       <concept id="1192796902958" name="jetbrains.mps.lang.intentions.structure.ConceptFunctionParameter_node" flags="nn" index="2Sf5sV" />
       <concept id="2522969319638091381" name="jetbrains.mps.lang.intentions.structure.BaseIntentionDeclaration" flags="ig" index="2ZfUlf">
+        <property id="2522969319638091386" name="isAvailableInChildNodes" index="2ZfUl0" />
         <reference id="2522969319638198290" name="forConcept" index="2ZfgGC" />
         <child id="2522969319638198291" name="executeFunction" index="2ZfgGD" />
         <child id="2522969319638093995" name="isApplicableFunction" index="2ZfVeh" />
@@ -986,6 +988,61 @@
                       </node>
                     </node>
                   </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="2S6QgY" id="1wpDbQg2m0G">
+    <property role="3GE5qa" value="list" />
+    <property role="TrG5h" value="toggleListLiteralVerticalLayout" />
+    <property role="2ZfUl0" value="true" />
+    <ref role="2ZfgGC" to="700h:6zmBjqUinVn" resolve="ListLiteral" />
+    <node concept="2S6ZIM" id="1wpDbQg2m0H" role="2ZfVej">
+      <node concept="3clFbS" id="1wpDbQg3K9_" role="2VODD2">
+        <node concept="3clFbF" id="1wpDbQg3K9J" role="3cqZAp">
+          <node concept="2YIFZM" id="1wpDbQg3K9I" role="3clFbG">
+            <ref role="37wK5l" to="wyt6:~String.format(java.lang.String,java.lang.Object...)" resolve="format" />
+            <ref role="1Pybhc" to="wyt6:~String" resolve="String" />
+            <node concept="Xl_RD" id="1wpDbQg3K9A" role="37wK5m">
+              <property role="Xl_RC" value="Switch To %s Layout" />
+            </node>
+            <node concept="3K4zz7" id="1wpDbQg3K9B" role="37wK5m">
+              <node concept="2OqwBi" id="1wpDbQg3K9E" role="3K4Cdx">
+                <node concept="2Sf5sV" id="1wpDbQg3K9F" role="2Oq$k0" />
+                <node concept="3TrcHB" id="1wpDbQg3K9D" role="2OqNvi">
+                  <ref role="3TsBF5" to="700h:1wpDbQfWl5U" resolve="useVerticalLayout" />
+                </node>
+              </node>
+              <node concept="Xl_RD" id="1wpDbQg3K9G" role="3K4E3e">
+                <property role="Xl_RC" value="Automatic" />
+              </node>
+              <node concept="Xl_RD" id="1wpDbQg3K9H" role="3K4GZi">
+                <property role="Xl_RC" value="Vertical" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="2Sbjvc" id="1wpDbQg2m0T" role="2ZfgGD">
+      <node concept="3clFbS" id="1wpDbQg3KMc" role="2VODD2">
+        <node concept="3clFbF" id="1wpDbQg3KMn" role="3cqZAp">
+          <node concept="37vLTI" id="1wpDbQg3KMd" role="3clFbG">
+            <node concept="2OqwBi" id="1wpDbQg3KMg" role="37vLTJ">
+              <node concept="2Sf5sV" id="1wpDbQg3KMh" role="2Oq$k0" />
+              <node concept="3TrcHB" id="1wpDbQg3KMf" role="2OqNvi">
+                <ref role="3TsBF5" to="700h:1wpDbQfWl5U" resolve="useVerticalLayout" />
+              </node>
+            </node>
+            <node concept="3fqX7Q" id="1wpDbQg3KMi" role="37vLTx">
+              <node concept="2OqwBi" id="1wpDbQg3KMl" role="3fr31v">
+                <node concept="2Sf5sV" id="1wpDbQg3KMm" role="2Oq$k0" />
+                <node concept="3TrcHB" id="1wpDbQg3KMk" role="2OqNvi">
+                  <ref role="3TsBF5" to="700h:1wpDbQfWl5U" resolve="useVerticalLayout" />
                 </node>
               </node>
             </node>
