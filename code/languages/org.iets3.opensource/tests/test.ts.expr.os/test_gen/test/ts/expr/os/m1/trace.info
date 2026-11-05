@@ -13882,6 +13882,83 @@
       <unit id="9017328610537949368" at="17,0,52,0" name="test.ts.expr.os.m1.errors_Test" />
     </file>
   </root>
+  <root nodeRef="r:75f6a9e9-cf21-495f-b1aa-7fd992d0d7d0(test.ts.expr.os.m1@tests)/9096503253623287066">
+    <file name="conditionalAndSpreadCollectionElements_Test.java">
+      <node id="9096503253623287066" at="22,56,23,60" concept="13" />
+      <node id="9096503253623287106" at="27,73,28,64" concept="3" />
+      <node id="9096503253623287112" at="31,73,32,64" concept="3" />
+      <node id="9096503253623287119" at="35,73,36,64" concept="3" />
+      <node id="9096503253623287126" at="39,73,40,64" concept="3" />
+      <node id="9096503253623287066" at="45,52,46,19" concept="13" />
+      <node id="9096503253623287066" at="50,36,51,46" concept="3" />
+      <node id="9096503253623287106" at="54,75,55,22" concept="3" />
+      <node id="9096503253623287106" at="56,30,57,63" concept="7" />
+      <node id="9096503253623287106" at="57,63,58,161" concept="3" />
+      <node id="9096503253623287112" at="61,75,62,22" concept="3" />
+      <node id="9096503253623287112" at="63,30,64,63" concept="7" />
+      <node id="9096503253623287112" at="64,63,65,161" concept="3" />
+      <node id="9096503253623287119" at="68,75,69,22" concept="3" />
+      <node id="9096503253623287119" at="70,30,71,63" concept="7" />
+      <node id="9096503253623287119" at="71,63,72,161" concept="3" />
+      <node id="9096503253623287126" at="75,75,76,22" concept="3" />
+      <node id="9096503253623287126" at="77,30,78,63" concept="7" />
+      <node id="9096503253623287126" at="78,63,79,161" concept="3" />
+      <node id="9096503253623287066" at="19,0,21,0" concept="11" trace="ourParametersCacheExtension" />
+      <node id="9096503253623287066" at="22,0,25,0" concept="2" trace="conditionalAndSpreadCollectionElements_Test#()V" />
+      <node id="9096503253623287066" at="45,0,48,0" concept="2" trace="TestBody#(Ljetbrains/mps/lang/test/runtime/TransformationTest;)V" />
+      <node id="9096503253623287106" at="26,0,30,0" concept="6" trace="test_NodeErrorCheck9096503253623287106#()V" />
+      <node id="9096503253623287112" at="30,0,34,0" concept="6" trace="test_NodeErrorCheck9096503253623287112#()V" />
+      <node id="9096503253623287119" at="34,0,38,0" concept="6" trace="test_NodeErrorCheck9096503253623287119#()V" />
+      <node id="9096503253623287126" at="38,0,42,0" concept="6" trace="test_NodeErrorCheck9096503253623287126#()V" />
+      <node id="9096503253623287066" at="49,0,53,0" concept="6" trace="initTestNodes#()V" />
+      <node id="9096503253623287106" at="55,22,59,9" concept="3" />
+      <node id="9096503253623287112" at="62,22,66,9" concept="3" />
+      <node id="9096503253623287119" at="69,22,73,9" concept="3" />
+      <node id="9096503253623287126" at="76,22,80,9" concept="3" />
+      <node id="9096503253623287106" at="54,0,61,0" concept="6" trace="test_NodeErrorCheck9096503253623287106#()V" />
+      <node id="9096503253623287112" at="61,0,68,0" concept="6" trace="test_NodeErrorCheck9096503253623287112#()V" />
+      <node id="9096503253623287119" at="68,0,75,0" concept="6" trace="test_NodeErrorCheck9096503253623287119#()V" />
+      <node id="9096503253623287126" at="75,0,82,0" concept="6" trace="test_NodeErrorCheck9096503253623287126#()V" />
+      <scope id="9096503253623287066" at="22,56,23,60" />
+      <scope id="9096503253623287106" at="27,73,28,64" />
+      <scope id="9096503253623287112" at="31,73,32,64" />
+      <scope id="9096503253623287119" at="35,73,36,64" />
+      <scope id="9096503253623287126" at="39,73,40,64" />
+      <scope id="9096503253623287066" at="45,52,46,19" />
+      <scope id="9096503253623287066" at="50,36,51,46" />
+      <scope id="9096503253623287106" at="56,30,58,161">
+        <var name="nodeToCheck" id="9096503253623287106" />
+      </scope>
+      <scope id="9096503253623287112" at="63,30,65,161">
+        <var name="nodeToCheck" id="9096503253623287112" />
+      </scope>
+      <scope id="9096503253623287119" at="70,30,72,161">
+        <var name="nodeToCheck" id="9096503253623287119" />
+      </scope>
+      <scope id="9096503253623287126" at="77,30,79,161">
+        <var name="nodeToCheck" id="9096503253623287126" />
+      </scope>
+      <scope id="9096503253623287066" at="22,0,25,0" />
+      <scope id="9096503253623287066" at="45,0,48,0">
+        <var name="owner" id="9096503253623287066" />
+      </scope>
+      <scope id="9096503253623287106" at="26,0,30,0" />
+      <scope id="9096503253623287112" at="30,0,34,0" />
+      <scope id="9096503253623287119" at="34,0,38,0" />
+      <scope id="9096503253623287126" at="38,0,42,0" />
+      <scope id="9096503253623287066" at="49,0,53,0" />
+      <scope id="9096503253623287106" at="54,75,59,9" />
+      <scope id="9096503253623287112" at="61,75,66,9" />
+      <scope id="9096503253623287119" at="68,75,73,9" />
+      <scope id="9096503253623287126" at="75,75,80,9" />
+      <scope id="9096503253623287106" at="54,0,61,0" />
+      <scope id="9096503253623287112" at="61,0,68,0" />
+      <scope id="9096503253623287119" at="68,0,75,0" />
+      <scope id="9096503253623287126" at="75,0,82,0" />
+      <unit id="9096503253623287066" at="43,0,84,0" name="test.ts.expr.os.m1.conditionalAndSpreadCollectionElements_Test$TestBody" />
+      <unit id="9096503253623287066" at="17,0,85,0" name="test.ts.expr.os.m1.conditionalAndSpreadCollectionElements_Test" />
+    </file>
+  </root>
   <root nodeRef="r:75f6a9e9-cf21-495f-b1aa-7fd992d0d7d0(test.ts.expr.os.m1@tests)/9142018459474282925">
     <file name="join_Test.java">
       <node id="9142018459474282925" at="24,22,25,60" concept="13" />

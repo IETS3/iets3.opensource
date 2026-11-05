@@ -2262,6 +2262,42 @@ public class collections_Test extends BaseTransformationTest {
   public void commentedListElements_item1_5590204388274485454() throws Throwable {
     new TestBody(this).commentedListElements_item1_5590204388274485454();
   }
+  @Test
+  public void conditionalAndSpreadElements_item0_9096503253605672036() throws Throwable {
+    new TestBody(this).conditionalAndSpreadElements_item0_9096503253605672036();
+  }
+  @Test
+  public void conditionalAndSpreadElements_item1_9096503253605672048() throws Throwable {
+    new TestBody(this).conditionalAndSpreadElements_item1_9096503253605672048();
+  }
+  @Test
+  public void conditionalAndSpreadElements_item2_9096503253605672059() throws Throwable {
+    new TestBody(this).conditionalAndSpreadElements_item2_9096503253605672059();
+  }
+  @Test
+  public void conditionalAndSpreadElements_item3_9096503253605672069() throws Throwable {
+    new TestBody(this).conditionalAndSpreadElements_item3_9096503253605672069();
+  }
+  @Test
+  public void conditionalAndSpreadElements_item4_9096503253605672087() throws Throwable {
+    new TestBody(this).conditionalAndSpreadElements_item4_9096503253605672087();
+  }
+  @Test
+  public void conditionalAndSpreadElements_item5_9096503253605672103() throws Throwable {
+    new TestBody(this).conditionalAndSpreadElements_item5_9096503253605672103();
+  }
+  @Test
+  public void conditionalAndSpreadElements_item6_9096503253605672112() throws Throwable {
+    new TestBody(this).conditionalAndSpreadElements_item6_9096503253605672112();
+  }
+  @Test
+  public void conditionalAndSpreadElements_item7_9096503253605672127() throws Throwable {
+    new TestBody(this).conditionalAndSpreadElements_item7_9096503253605672127();
+  }
+  @Test
+  public void conditionalAndSpreadElements_item8_1736600265413728776() throws Throwable {
+    new TestBody(this).conditionalAndSpreadElements_item8_1736600265413728776();
+  }
 
 
   public static class TestBody extends BaseTestBody {
@@ -7293,6 +7329,87 @@ public class collections_Test extends BaseTransformationTest {
         @Override
         public void run() throws Exception {
           SNode ti = SNodeOperations.cast(getRealNodeById("5590204388274485454"), CONCEPTS.AbstractTestItem$9u);
+          TestRunner.doExecuteTest(ti);
+        }
+      });
+    }
+    public void conditionalAndSpreadElements_item0_9096503253605672036() throws Exception {
+      runWithinCommand(new BaseTestBody.ExceptionRunnable() {
+        @Override
+        public void run() throws Exception {
+          SNode ti = SNodeOperations.cast(getRealNodeById("9096503253605672036"), CONCEPTS.AbstractTestItem$9u);
+          TestRunner.doExecuteTest(ti);
+        }
+      });
+    }
+    public void conditionalAndSpreadElements_item1_9096503253605672048() throws Exception {
+      runWithinCommand(new BaseTestBody.ExceptionRunnable() {
+        @Override
+        public void run() throws Exception {
+          SNode ti = SNodeOperations.cast(getRealNodeById("9096503253605672048"), CONCEPTS.AbstractTestItem$9u);
+          TestRunner.doExecuteTest(ti);
+        }
+      });
+    }
+    public void conditionalAndSpreadElements_item2_9096503253605672059() throws Exception {
+      runWithinCommand(new BaseTestBody.ExceptionRunnable() {
+        @Override
+        public void run() throws Exception {
+          SNode ti = SNodeOperations.cast(getRealNodeById("9096503253605672059"), CONCEPTS.AbstractTestItem$9u);
+          TestRunner.doExecuteTest(ti);
+        }
+      });
+    }
+    public void conditionalAndSpreadElements_item3_9096503253605672069() throws Exception {
+      runWithinCommand(new BaseTestBody.ExceptionRunnable() {
+        @Override
+        public void run() throws Exception {
+          SNode ti = SNodeOperations.cast(getRealNodeById("9096503253605672069"), CONCEPTS.AbstractTestItem$9u);
+          TestRunner.doExecuteTest(ti);
+        }
+      });
+    }
+    public void conditionalAndSpreadElements_item4_9096503253605672087() throws Exception {
+      runWithinCommand(new BaseTestBody.ExceptionRunnable() {
+        @Override
+        public void run() throws Exception {
+          SNode ti = SNodeOperations.cast(getRealNodeById("9096503253605672087"), CONCEPTS.AbstractTestItem$9u);
+          TestRunner.doExecuteTest(ti);
+        }
+      });
+    }
+    public void conditionalAndSpreadElements_item5_9096503253605672103() throws Exception {
+      runWithinCommand(new BaseTestBody.ExceptionRunnable() {
+        @Override
+        public void run() throws Exception {
+          SNode ti = SNodeOperations.cast(getRealNodeById("9096503253605672103"), CONCEPTS.AbstractTestItem$9u);
+          TestRunner.doExecuteTest(ti);
+        }
+      });
+    }
+    public void conditionalAndSpreadElements_item6_9096503253605672112() throws Exception {
+      runWithinCommand(new BaseTestBody.ExceptionRunnable() {
+        @Override
+        public void run() throws Exception {
+          SNode ti = SNodeOperations.cast(getRealNodeById("9096503253605672112"), CONCEPTS.AbstractTestItem$9u);
+          TestRunner.doExecuteTest(ti);
+        }
+      });
+    }
+    public void conditionalAndSpreadElements_item7_9096503253605672127() throws Exception {
+      runWithinCommand(new BaseTestBody.ExceptionRunnable() {
+        @Override
+        public void run() throws Exception {
+          SNode ti = SNodeOperations.cast(getRealNodeById("9096503253605672127"), CONCEPTS.AbstractTestItem$9u);
+          TestRunner.doExecuteTest(ti);
+        }
+      });
+    }
+    public void conditionalAndSpreadElements_item8_1736600265413728776() throws Exception {
+      runWithinCommand(new BaseTestBody.ExceptionRunnable() {
+        @Override
+        public void run() throws Exception {
+          SNode ti = SNodeOperations.cast(getRealNodeById("1736600265413728776"), CONCEPTS.AbstractTestItem$9u);
           TestRunner.doExecuteTest(ti);
         }
       });
