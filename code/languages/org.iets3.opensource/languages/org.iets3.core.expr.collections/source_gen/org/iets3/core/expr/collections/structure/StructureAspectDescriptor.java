@@ -735,6 +735,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.super_(0xcfaa4966b7d54b69L, 0xb66a309a6e1a7290L, 0x670d5e92f854a047L);
     b.parent(0x47f075a6558e4640L, 0xa6067ce0236c8023L, 0x5bb0bdbbedce7ccbL);
     b.parent(0xcfaa4966b7d54b69L, 0xb66a309a6e1a7290L, 0x6c21639b50c5f96eL);
+    b.parent(0xcfaa4966b7d54b69L, 0xb66a309a6e1a7290L, 0x35d20fc48d83ecebL);
     b.origin("r:61b1de80-490d-4fee-8e95-b956503290e9(org.iets3.core.expr.collections.structure)/7554398283339759319");
     b.version(3);
     b.aggregate("typeConstraint", 0x78a93d5e5aeb45b9L).target(0x2f7e2e356e744c43L, 0x9fa52465d68f5996L, 0x78a93d5e5aeb3e99L).optional(true).ordered(true).multiple(false).origin("8694548031077041593").done();

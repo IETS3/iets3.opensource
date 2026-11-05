@@ -17139,6 +17139,45 @@ public class Generated_collections_Test {
       }).findFirst().orElse(null));
     }).invoke()));
   }
+  public static final PVector<Number> commentedList_ = ((_FunctionTypes._return_P0_E0<TreePVector<Number>>) () -> {
+    TreePVector<Number> tpv = TreePVector.empty();
+    tpv = tpv.plus(/* 
+     * base amount
+     */
+    /* 
+     * base amount
+     */
+    ((Number) new BigInteger("100")));
+    tpv = tpv.plus(/* 
+     * surcharge
+     */
+    /* 
+     * surcharge
+     */
+    ((Number) new BigInteger("200")));
+    tpv = tpv.plus(((Number) new BigInteger("300")));
+    return tpv;
+  }).invoke();
+  @Test
+  public void commentedListElements_item0_5590204388274485448() throws Throwable {
+    Assert.assertTrue("Expected: " + (((Number) new BigInteger("3"))) + ", but was: " + (BigInteger.valueOf(Generated_collections_Test.commentedList_.size())), EqualsTestOp.matches(((Number) new BigInteger("3")), BigInteger.valueOf(Generated_collections_Test.commentedList_.size())));
+  }
+  @Test
+  public void commentedListElements_item1_5590204388274485454() throws Throwable {
+    Assert.assertEquals("Expected: " + (((_FunctionTypes._return_P0_E0<TreePVector<Number>>) () -> {
+      TreePVector<Number> tpv = TreePVector.empty();
+      tpv = tpv.plus(((Number) new BigInteger("100")));
+      tpv = tpv.plus(((Number) new BigInteger("200")));
+      tpv = tpv.plus(((Number) new BigInteger("300")));
+      return tpv;
+    }).invoke()) + ", but was: " + (Generated_collections_Test.commentedList_), (Object) ((_FunctionTypes._return_P0_E0<TreePVector<Number>>) () -> {
+      TreePVector<Number> tpv = TreePVector.empty();
+      tpv = tpv.plus(((Number) new BigInteger("100")));
+      tpv = tpv.plus(((Number) new BigInteger("200")));
+      tpv = tpv.plus(((Number) new BigInteger("300")));
+      return tpv;
+    }).invoke(), (Object) Generated_collections_Test.commentedList_);
+  }
 
 
 
