@@ -10,6 +10,9 @@ The project does _not_ follow Semantic Versioning and the changes are documented
 ### Fixed
 
 - Variability: attribute values only proposed by the solver (e.g. default values) are no longer inherited by extending configurations.
+### Added
+
+- Collections: elements of a list literal can carry a documentation comment (`DOC: Add Documentation`), e.g. to name the individual entries of long lists
 
 ## October 2026
 

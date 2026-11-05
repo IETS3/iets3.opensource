@@ -142,6 +142,9 @@
     <node concept="PrWs8" id="4qVjx3kqU9m" role="PzmwI">
       <ref role="PrY4T" to="hm2y:6KxoTHgLv_I" resolve="IMayHaveEffect" />
     </node>
+    <node concept="PrWs8" id="4QkpknwTfp8" role="PzmwI">
+      <ref role="PrY4T" to="hm2y:3ni3WidwYNF" resolve="IAllowsDocInChildExpressions" />
+    </node>
   </node>
   <node concept="PlHQZ" id="6zmBjqUivxU">
     <property role="TrG5h" value="ICollectionOp" />
