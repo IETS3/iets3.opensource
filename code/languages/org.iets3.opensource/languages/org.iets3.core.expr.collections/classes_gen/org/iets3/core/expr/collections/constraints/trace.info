@@ -14,7 +14,7 @@
   <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/5351203823916750322:jetbrains.mps.baseLanguage.structure.TryUniversalStatement" />
   <root>
     <file name="ConstraintsAspectDescriptor.java">
-      <unit at="13,0,69,0" name="org.iets3.core.expr.collections.constraints.ConstraintsAspectDescriptor" />
+      <unit at="13,0,73,0" name="org.iets3.core.expr.collections.constraints.ConstraintsAspectDescriptor" />
     </file>
   </root>
   <root nodeRef="r:4fb4439d-f0bb-4e10-af94-6474b0ac1392(org.iets3.core.expr.collections.constraints)/1632110353430270705">
@@ -1183,6 +1183,95 @@
       <unit id="890442848561996634" at="46,0,51,0" name="org.iets3.core.expr.collections.constraints.ListInsertOp_Constraints$CONCEPTS" />
       <unit id="890442848561996634" at="28,15,39,5" name="org.iets3.core.expr.collections.constraints.ListInsertOp_Constraints$1" />
       <unit id="890442848561996634" at="21,0,56,0" name="org.iets3.core.expr.collections.constraints.ListInsertOp_Constraints" />
+    </file>
+  </root>
+  <root nodeRef="r:4fb4439d-f0bb-4e10-af94-6474b0ac1392(org.iets3.core.expr.collections.constraints)/9096503253604711099">
+    <file name="ConditionalCollectionElement_Constraints.java">
+      <node id="9096503253604711099" at="20,53,21,52" concept="10" />
+      <node id="9096503253604711099" at="28,127,29,128" concept="5" />
+      <node id="9096503253604711099" at="29,128,30,0" concept="7" />
+      <node id="9096503253604711099" at="31,55,32,71" concept="2" />
+      <node id="9096503253604711099" at="33,9,34,0" concept="7" />
+      <node id="9096503253604711099" at="34,0,35,22" concept="6" />
+      <node id="9096503253604711102" at="39,128,40,145" concept="6" />
+      <node id="9096503253604711099" at="42,0,43,0" concept="8" trace="canBeChildBreakingPoint" />
+      <node id="9096503253604711099" at="45,0,46,0" concept="8" trace="ConditionalCollectionElement$VV" />
+      <node id="9096503253604711099" at="46,0,47,0" concept="8" trace="ListLiteral$zq" />
+      <node id="9096503253604711099" at="47,0,48,0" concept="8" trace="SetLiteral$Js" />
+      <node id="9096503253604711099" at="20,0,23,0" concept="1" trace="ConditionalCollectionElement_Constraints#()V" />
+      <node id="9096503253604711099" at="30,0,33,9" concept="3" />
+      <node id="9096503253604711099" at="39,0,42,0" concept="9" trace="staticCanBeAChild#(Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/language/SAbstractConcept;Lorg/jetbrains/mps/openapi/language/SContainmentLink;)Z" />
+      <node id="9096503253604711099" at="27,0,37,0" concept="4" trace="invoke#(Ljetbrains/mps/smodel/runtime/ConstraintContext_CanBeChild;Ljetbrains/mps/smodel/runtime/CheckingNodeContext;)Ljava/lang/Boolean;" />
+      <node id="9096503253604711099" at="25,103,37,6" concept="6" />
+      <node id="9096503253604711099" at="24,0,39,0" concept="4" trace="calculateCanBeChildConstraint#()Ljetbrains/mps/smodel/runtime/ConstraintFunction;" />
+      <scope id="9096503253604711099" at="20,53,21,52" />
+      <scope id="9096503253604711099" at="31,55,32,71" />
+      <scope id="9096503253604711101" at="39,128,40,145" />
+      <scope id="9096503253604711099" at="20,0,23,0" />
+      <scope id="9096503253604711099" at="39,0,42,0">
+        <var name="childConcept" id="9096503253604711099" />
+        <var name="link" id="9096503253604711099" />
+        <var name="node" id="9096503253604711099" />
+        <var name="parentNode" id="9096503253604711099" />
+      </scope>
+      <scope id="9096503253604711099" at="28,127,35,22">
+        <var name="result" id="9096503253604711099" />
+      </scope>
+      <scope id="9096503253604711099" at="27,0,37,0">
+        <var name="checkingNodeContext" id="9096503253604711099" />
+        <var name="context" id="9096503253604711099" />
+      </scope>
+      <scope id="9096503253604711099" at="25,103,37,6" />
+      <scope id="9096503253604711099" at="24,0,39,0" />
+      <unit id="9096503253604711099" at="44,0,49,0" name="org.iets3.core.expr.collections.constraints.ConditionalCollectionElement_Constraints$CONCEPTS" />
+      <unit id="9096503253604711099" at="26,15,37,5" name="org.iets3.core.expr.collections.constraints.ConditionalCollectionElement_Constraints$1" />
+      <unit id="9096503253604711099" at="19,0,50,0" name="org.iets3.core.expr.collections.constraints.ConditionalCollectionElement_Constraints" />
+    </file>
+  </root>
+  <root nodeRef="r:4fb4439d-f0bb-4e10-af94-6474b0ac1392(org.iets3.core.expr.collections.constraints)/9096503253604711112">
+    <file name="SpreadCollectionElement_Constraints.java">
+      <node id="9096503253604711112" at="20,48,21,47" concept="10" />
+      <node id="9096503253604711112" at="28,127,29,128" concept="5" />
+      <node id="9096503253604711112" at="29,128,30,0" concept="7" />
+      <node id="9096503253604711112" at="31,55,32,71" concept="2" />
+      <node id="9096503253604711112" at="33,9,34,0" concept="7" />
+      <node id="9096503253604711112" at="34,0,35,22" concept="6" />
+      <node id="9096503253604711115" at="39,128,40,260" concept="6" />
+      <node id="9096503253604711112" at="42,0,43,0" concept="8" trace="canBeChildBreakingPoint" />
+      <node id="9096503253604711112" at="45,0,46,0" concept="8" trace="SpreadCollectionElement$Vp" />
+      <node id="9096503253604711112" at="46,0,47,0" concept="8" trace="ListLiteral$zq" />
+      <node id="9096503253604711112" at="47,0,48,0" concept="8" trace="SetLiteral$Js" />
+      <node id="9096503253604711112" at="48,0,49,0" concept="8" trace="ConditionalCollectionElement$VV" />
+      <node id="9096503253604711112" at="52,0,53,0" concept="8" trace="then$bDV2" />
+      <node id="9096503253604711112" at="20,0,23,0" concept="1" trace="SpreadCollectionElement_Constraints#()V" />
+      <node id="9096503253604711112" at="30,0,33,9" concept="3" />
+      <node id="9096503253604711112" at="39,0,42,0" concept="9" trace="staticCanBeAChild#(Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/language/SAbstractConcept;Lorg/jetbrains/mps/openapi/language/SContainmentLink;)Z" />
+      <node id="9096503253604711112" at="27,0,37,0" concept="4" trace="invoke#(Ljetbrains/mps/smodel/runtime/ConstraintContext_CanBeChild;Ljetbrains/mps/smodel/runtime/CheckingNodeContext;)Ljava/lang/Boolean;" />
+      <node id="9096503253604711112" at="25,103,37,6" concept="6" />
+      <node id="9096503253604711112" at="24,0,39,0" concept="4" trace="calculateCanBeChildConstraint#()Ljetbrains/mps/smodel/runtime/ConstraintFunction;" />
+      <scope id="9096503253604711112" at="20,48,21,47" />
+      <scope id="9096503253604711112" at="31,55,32,71" />
+      <scope id="9096503253604711114" at="39,128,40,260" />
+      <scope id="9096503253604711112" at="20,0,23,0" />
+      <scope id="9096503253604711112" at="39,0,42,0">
+        <var name="childConcept" id="9096503253604711112" />
+        <var name="link" id="9096503253604711112" />
+        <var name="node" id="9096503253604711112" />
+        <var name="parentNode" id="9096503253604711112" />
+      </scope>
+      <scope id="9096503253604711112" at="28,127,35,22">
+        <var name="result" id="9096503253604711112" />
+      </scope>
+      <scope id="9096503253604711112" at="27,0,37,0">
+        <var name="checkingNodeContext" id="9096503253604711112" />
+        <var name="context" id="9096503253604711112" />
+      </scope>
+      <scope id="9096503253604711112" at="25,103,37,6" />
+      <scope id="9096503253604711112" at="24,0,39,0" />
+      <unit id="9096503253604711112" at="51,0,54,0" name="org.iets3.core.expr.collections.constraints.SpreadCollectionElement_Constraints$LINKS" />
+      <unit id="9096503253604711112" at="44,0,50,0" name="org.iets3.core.expr.collections.constraints.SpreadCollectionElement_Constraints$CONCEPTS" />
+      <unit id="9096503253604711112" at="26,15,37,5" name="org.iets3.core.expr.collections.constraints.SpreadCollectionElement_Constraints$1" />
+      <unit id="9096503253604711112" at="19,0,55,0" name="org.iets3.core.expr.collections.constraints.SpreadCollectionElement_Constraints" />
     </file>
   </root>
 </debug-info>

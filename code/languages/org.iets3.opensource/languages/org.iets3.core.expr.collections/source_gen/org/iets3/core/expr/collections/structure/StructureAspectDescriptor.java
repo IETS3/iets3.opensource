@@ -29,6 +29,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
   /*package*/ final ConceptDescriptor myConceptBracketOp = createDescriptorForBracketOp();
   /*package*/ final ConceptDescriptor myConceptCollectionSizeSpec = createDescriptorForCollectionSizeSpec();
   /*package*/ final ConceptDescriptor myConceptCollectionType = createDescriptorForCollectionType();
+  /*package*/ final ConceptDescriptor myConceptConditionalCollectionElement = createDescriptorForConditionalCollectionElement();
   /*package*/ final ConceptDescriptor myConceptContainsOp = createDescriptorForContainsOp();
   /*package*/ final ConceptDescriptor myConceptDistinctOp = createDescriptorForDistinctOp();
   /*package*/ final ConceptDescriptor myConceptElementTypeConstraintMap = createDescriptorForElementTypeConstraintMap();
@@ -88,6 +89,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
   /*package*/ final ConceptDescriptor myConceptSetWithoutOp = createDescriptorForSetWithoutOp();
   /*package*/ final ConceptDescriptor myConceptSimpleSortOp = createDescriptorForSimpleSortOp();
   /*package*/ final ConceptDescriptor myConceptSizeOp = createDescriptorForSizeOp();
+  /*package*/ final ConceptDescriptor myConceptSpreadCollectionElement = createDescriptorForSpreadCollectionElement();
   /*package*/ final ConceptDescriptor myConceptStringJoinOp = createDescriptorForStringJoinOp();
   /*package*/ final ConceptDescriptor myConceptStringTerminateOp = createDescriptorForStringTerminateOp();
   /*package*/ final ConceptDescriptor myConceptSumOp = createDescriptorForSumOp();
@@ -116,7 +118,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
 
   @Override
   public Collection<ConceptDescriptor> getDescriptors() {
-    return Arrays.asList(myConceptAbstractStringListJoiner, myConceptAllOp, myConceptAllWithIndexOp, myConceptAnyOp, myConceptAnyWithIndexOp, myConceptAsImmutableListOp, myConceptAsImmutableSetOp, myConceptAsMapOp, myConceptAsSingletonList, myConceptAtOp, myConceptBracketOp, myConceptCollectionSizeSpec, myConceptCollectionType, myConceptContainsOp, myConceptDistinctOp, myConceptElementTypeConstraintMap, myConceptElementTypeConstraintSingle, myConceptFindFirstOp, myConceptFirstNOp, myConceptFirstOp, myConceptFlattenOp, myConceptFoldLeftOp, myConceptFoldOp, myConceptForeachOp, myConceptICollectionOp, myConceptIContextTypedCollOp, myConceptIElementTyped, myConceptIListOneArgOp, myConceptIMapOneArgOp, myConceptIOrderedCollection, myConceptIOrderedCollectionOp, myConceptIProvideIndex, myConceptISetOneArgOp, myConceptIndexExpr, myConceptIndexOfOp, myConceptIsEmptyOp, myConceptIsNotEmptyOp, myConceptKeyValuePair, myConceptLastNOp, myConceptLastOp, myConceptListInsertOp, myConceptListLiteral, myConceptListPickOp, myConceptListType, myConceptListWithAllOp, myConceptListWithOp, myConceptListWithoutOp, myConceptMapContainsKeyOp, myConceptMapKeysOp, myConceptMapLikeType, myConceptMapLiteral, myConceptMapOp, myConceptMapSizeOp, myConceptMapType, myConceptMapValuesOp, myConceptMapWithOp, myConceptMapWithoutOp, myConceptMaxOp, myConceptMinOp, myConceptNoArgCollectionOp, myConceptOneArgCollectionOp, myConceptOneArgPredicateCollectionOp, myConceptOneCollBaseTypedArgCollectionOp, myConceptReverseOp, myConceptSetDiffOp, myConceptSetLiteral, myConceptSetType, myConceptSetUnionOp, myConceptSetWithOp, myConceptSetWithoutOp, myConceptSimpleSortOp, myConceptSizeOp, myConceptStringJoinOp, myConceptStringTerminateOp, myConceptSumOp, myConceptTailOp, myConceptTwoArgPredicateCollectionOp, myConceptUnpackOptionsOp, myConceptUpToTarget, myConceptWhereOp);
+    return Arrays.asList(myConceptAbstractStringListJoiner, myConceptAllOp, myConceptAllWithIndexOp, myConceptAnyOp, myConceptAnyWithIndexOp, myConceptAsImmutableListOp, myConceptAsImmutableSetOp, myConceptAsMapOp, myConceptAsSingletonList, myConceptAtOp, myConceptBracketOp, myConceptCollectionSizeSpec, myConceptCollectionType, myConceptConditionalCollectionElement, myConceptContainsOp, myConceptDistinctOp, myConceptElementTypeConstraintMap, myConceptElementTypeConstraintSingle, myConceptFindFirstOp, myConceptFirstNOp, myConceptFirstOp, myConceptFlattenOp, myConceptFoldLeftOp, myConceptFoldOp, myConceptForeachOp, myConceptICollectionOp, myConceptIContextTypedCollOp, myConceptIElementTyped, myConceptIListOneArgOp, myConceptIMapOneArgOp, myConceptIOrderedCollection, myConceptIOrderedCollectionOp, myConceptIProvideIndex, myConceptISetOneArgOp, myConceptIndexExpr, myConceptIndexOfOp, myConceptIsEmptyOp, myConceptIsNotEmptyOp, myConceptKeyValuePair, myConceptLastNOp, myConceptLastOp, myConceptListInsertOp, myConceptListLiteral, myConceptListPickOp, myConceptListType, myConceptListWithAllOp, myConceptListWithOp, myConceptListWithoutOp, myConceptMapContainsKeyOp, myConceptMapKeysOp, myConceptMapLikeType, myConceptMapLiteral, myConceptMapOp, myConceptMapSizeOp, myConceptMapType, myConceptMapValuesOp, myConceptMapWithOp, myConceptMapWithoutOp, myConceptMaxOp, myConceptMinOp, myConceptNoArgCollectionOp, myConceptOneArgCollectionOp, myConceptOneArgPredicateCollectionOp, myConceptOneCollBaseTypedArgCollectionOp, myConceptReverseOp, myConceptSetDiffOp, myConceptSetLiteral, myConceptSetType, myConceptSetUnionOp, myConceptSetWithOp, myConceptSetWithoutOp, myConceptSimpleSortOp, myConceptSizeOp, myConceptSpreadCollectionElement, myConceptStringJoinOp, myConceptStringTerminateOp, myConceptSumOp, myConceptTailOp, myConceptTwoArgPredicateCollectionOp, myConceptUnpackOptionsOp, myConceptUpToTarget, myConceptWhereOp);
   }
 
   @Override
@@ -149,6 +151,8 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
         return myConceptCollectionSizeSpec;
       case LanguageConceptSwitch.CollectionType:
         return myConceptCollectionType;
+      case LanguageConceptSwitch.ConditionalCollectionElement:
+        return myConceptConditionalCollectionElement;
       case LanguageConceptSwitch.ContainsOp:
         return myConceptContainsOp;
       case LanguageConceptSwitch.DistinctOp:
@@ -267,6 +271,8 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
         return myConceptSimpleSortOp;
       case LanguageConceptSwitch.SizeOp:
         return myConceptSizeOp;
+      case LanguageConceptSwitch.SpreadCollectionElement:
+        return myConceptSpreadCollectionElement;
       case LanguageConceptSwitch.StringJoinOp:
         return myConceptStringJoinOp;
       case LanguageConceptSwitch.StringTerminateOp:
@@ -434,6 +440,19 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.aggregate("sizeConstraint", 0x375e37596567ed39L).target(0x2f7e2e356e744c43L, 0x9fa52465d68f5996L, 0x127541598201af65L).optional(true).ordered(true).multiple(false).origin("3989687176989764921").done();
     b.aggregate("baseType", 0x68d69d36ba495886L).target(0xcfaa4966b7d54b69L, 0xb66a309a6e1a7290L, 0x670d5e92f854a614L).optional(false).ordered(true).multiple(false).origin("7554398283339749510").done();
     b.alias("collection");
+    return b.create();
+  }
+  private static ConceptDescriptor createDescriptorForConditionalCollectionElement() {
+    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("org.iets3.core.expr.collections", "ConditionalCollectionElement", 0x2f7e2e356e744c43L, 0x9fa52465d68f5996L, 0x16f4d125d9d93b9dL);
+    b.class_(false, false, false);
+    // extends: org.iets3.core.expr.base.structure.Expression
+    b.super_(0xcfaa4966b7d54b69L, 0xb66a309a6e1a7290L, 0x670d5e92f854a047L);
+    b.parent(0xcfaa4966b7d54b69L, 0xb66a309a6e1a7290L, 0x6c21639b50c5f96eL);
+    b.origin("r:61b1de80-490d-4fee-8e95-b956503290e9(org.iets3.core.expr.collections.structure)/9096503253604707548");
+    b.version(3);
+    b.aggregate("condition", 0x56d76c6508318f54L).target(0xcfaa4966b7d54b69L, 0xb66a309a6e1a7290L, 0x670d5e92f854a047L).optional(false).ordered(true).multiple(false).origin("9096503253604707550").done();
+    b.aggregate("then", 0x1d0a68ad9c70a2faL).target(0xcfaa4966b7d54b69L, 0xb66a309a6e1a7290L, 0x670d5e92f854a047L).optional(false).ordered(true).multiple(false).origin("9096503253604707551").done();
+    b.alias("when");
     return b.create();
   }
   private static ConceptDescriptor createDescriptorForContainsOp() {
@@ -738,6 +757,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.parent(0xcfaa4966b7d54b69L, 0xb66a309a6e1a7290L, 0x35d20fc48d83ecebL);
     b.origin("r:61b1de80-490d-4fee-8e95-b956503290e9(org.iets3.core.expr.collections.structure)/7554398283339759319");
     b.version(3);
+    b.property("useVerticalLayout", 0x1819a4bd8ff1517aL).type(PrimitiveTypeId.BOOLEAN).origin("1736600265398767994").done();
     b.aggregate("typeConstraint", 0x78a93d5e5aeb45b9L).target(0x2f7e2e356e744c43L, 0x9fa52465d68f5996L, 0x78a93d5e5aeb3e99L).optional(true).ordered(true).multiple(false).origin("8694548031077041593").done();
     b.aggregate("elements", 0x68d69d36ba497ed8L).target(0xcfaa4966b7d54b69L, 0xb66a309a6e1a7290L, 0x670d5e92f854a047L).optional(true).ordered(true).multiple(true).origin("7554398283339759320").done();
     b.alias("list");
@@ -1058,6 +1078,18 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.origin("r:61b1de80-490d-4fee-8e95-b956503290e9(org.iets3.core.expr.collections.structure)/7554398283339796915");
     b.version(3);
     b.alias("size");
+    return b.create();
+  }
+  private static ConceptDescriptor createDescriptorForSpreadCollectionElement() {
+    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("org.iets3.core.expr.collections", "SpreadCollectionElement", 0x2f7e2e356e744c43L, 0x9fa52465d68f5996L, 0x4001cb5db1885418L);
+    b.class_(false, false, false);
+    // extends: org.iets3.core.expr.base.structure.Expression
+    b.super_(0xcfaa4966b7d54b69L, 0xb66a309a6e1a7290L, 0x670d5e92f854a047L);
+    b.parent(0xcfaa4966b7d54b69L, 0xb66a309a6e1a7290L, 0x6c21639b50c5f96eL);
+    b.origin("r:61b1de80-490d-4fee-8e95-b956503290e9(org.iets3.core.expr.collections.structure)/9096503253604707552");
+    b.version(3);
+    b.aggregate("collection", 0x2d2639add91db0ccL).target(0xcfaa4966b7d54b69L, 0xb66a309a6e1a7290L, 0x670d5e92f854a047L).optional(false).ordered(true).multiple(false).origin("9096503253604707554").done();
+    b.alias("...");
     return b.create();
   }
   private static ConceptDescriptor createDescriptorForStringJoinOp() {

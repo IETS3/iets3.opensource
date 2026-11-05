@@ -29,40 +29,44 @@ public class ConstraintsAspectDescriptor extends BaseConstraintsAspectDescriptor
       case 4:
         return new CollectionType_Constraints();
       case 5:
-        return new ICollectionOp_Constraints();
+        return new ConditionalCollectionElement_Constraints();
       case 6:
-        return new IListOneArgOp_Constraints();
+        return new ICollectionOp_Constraints();
       case 7:
-        return new IMapOneArgOp_Constraints();
+        return new IListOneArgOp_Constraints();
       case 8:
-        return new IOrderedCollectionOp_Constraints();
+        return new IMapOneArgOp_Constraints();
       case 9:
-        return new ISetOneArgOp_Constraints();
+        return new IOrderedCollectionOp_Constraints();
       case 10:
-        return new IndexExpr_Constraints();
+        return new ISetOneArgOp_Constraints();
       case 11:
-        return new ListInsertOp_Constraints();
+        return new IndexExpr_Constraints();
       case 12:
-        return new ListPickOp_Constraints();
+        return new ListInsertOp_Constraints();
       case 13:
-        return new MapKeysOp_Constraints();
+        return new ListPickOp_Constraints();
       case 14:
-        return new MapSizeOp_Constraints();
+        return new MapKeysOp_Constraints();
       case 15:
-        return new MapValuesOp_Constraints();
+        return new MapSizeOp_Constraints();
       case 16:
-        return new MaxOp_Constraints();
+        return new MapValuesOp_Constraints();
       case 17:
-        return new MinOp_Constraints();
+        return new MaxOp_Constraints();
       case 18:
-        return new SimpleSortOp_Constraints();
+        return new MinOp_Constraints();
       case 19:
-        return new SumOp_Constraints();
+        return new SimpleSortOp_Constraints();
       case 20:
+        return new SpreadCollectionElement_Constraints();
+      case 21:
+        return new SumOp_Constraints();
+      case 22:
         return new UpToTarget_Constraints();
       default:
     }
     return new BaseConstraintsDescriptor(concept);
   }
-  private static final ConceptSwitchIndex conceptIndex = new ConceptSwitchIndexBuilder().put(MetaIdFactory.conceptId(0x2f7e2e356e744c43L, 0x9fa52465d68f5996L, 0x465d5f011278359dL), MetaIdFactory.conceptId(0x2f7e2e356e744c43L, 0x9fa52465d68f5996L, 0x56a4de6ce89200L), MetaIdFactory.conceptId(0x2f7e2e356e744c43L, 0x9fa52465d68f5996L, 0x5904507fab429027L), MetaIdFactory.conceptId(0x2f7e2e356e744c43L, 0x9fa52465d68f5996L, 0x127541598201af65L), MetaIdFactory.conceptId(0x2f7e2e356e744c43L, 0x9fa52465d68f5996L, 0x68d69d36ba495885L), MetaIdFactory.conceptId(0x2f7e2e356e744c43L, 0x9fa52465d68f5996L, 0x68d69d36ba49f87aL), MetaIdFactory.conceptId(0x2f7e2e356e744c43L, 0x9fa52465d68f5996L, 0x4970ca8202b418b9L), MetaIdFactory.conceptId(0x2f7e2e356e744c43L, 0x9fa52465d68f5996L, 0x6ba7e41839911d59L), MetaIdFactory.conceptId(0x2f7e2e356e744c43L, 0x9fa52465d68f5996L, 0x68d69d36ba4adb6fL), MetaIdFactory.conceptId(0x2f7e2e356e744c43L, 0x9fa52465d68f5996L, 0x7515112832b3a95L), MetaIdFactory.conceptId(0x2f7e2e356e744c43L, 0x9fa52465d68f5996L, 0x10bebceaded2ac9L), MetaIdFactory.conceptId(0x2f7e2e356e744c43L, 0x9fa52465d68f5996L, 0xc5b7d0d914eb88fL), MetaIdFactory.conceptId(0x2f7e2e356e744c43L, 0x9fa52465d68f5996L, 0x760f345f6cac7b9L), MetaIdFactory.conceptId(0x2f7e2e356e744c43L, 0x9fa52465d68f5996L, 0x6ba7e4183a3ae629L), MetaIdFactory.conceptId(0x2f7e2e356e744c43L, 0x9fa52465d68f5996L, 0x56a4de6d0156b2L), MetaIdFactory.conceptId(0x2f7e2e356e744c43L, 0x9fa52465d68f5996L, 0x6ba7e4183a3aae3eL), MetaIdFactory.conceptId(0x2f7e2e356e744c43L, 0x9fa52465d68f5996L, 0x4d84a614e92e2689L), MetaIdFactory.conceptId(0x2f7e2e356e744c43L, 0x9fa52465d68f5996L, 0x6b6d642f177d57b0L), MetaIdFactory.conceptId(0x2f7e2e356e744c43L, 0x9fa52465d68f5996L, 0xc5b7621e8c0cff9L), MetaIdFactory.conceptId(0x2f7e2e356e744c43L, 0x9fa52465d68f5996L, 0x4d84a614e991a763L), MetaIdFactory.conceptId(0x2f7e2e356e744c43L, 0x9fa52465d68f5996L, 0x375e375966d32ccfL)).seal();
+  private static final ConceptSwitchIndex conceptIndex = new ConceptSwitchIndexBuilder().put(MetaIdFactory.conceptId(0x2f7e2e356e744c43L, 0x9fa52465d68f5996L, 0x465d5f011278359dL), MetaIdFactory.conceptId(0x2f7e2e356e744c43L, 0x9fa52465d68f5996L, 0x56a4de6ce89200L), MetaIdFactory.conceptId(0x2f7e2e356e744c43L, 0x9fa52465d68f5996L, 0x5904507fab429027L), MetaIdFactory.conceptId(0x2f7e2e356e744c43L, 0x9fa52465d68f5996L, 0x127541598201af65L), MetaIdFactory.conceptId(0x2f7e2e356e744c43L, 0x9fa52465d68f5996L, 0x68d69d36ba495885L), MetaIdFactory.conceptId(0x2f7e2e356e744c43L, 0x9fa52465d68f5996L, 0x16f4d125d9d93b9dL), MetaIdFactory.conceptId(0x2f7e2e356e744c43L, 0x9fa52465d68f5996L, 0x68d69d36ba49f87aL), MetaIdFactory.conceptId(0x2f7e2e356e744c43L, 0x9fa52465d68f5996L, 0x4970ca8202b418b9L), MetaIdFactory.conceptId(0x2f7e2e356e744c43L, 0x9fa52465d68f5996L, 0x6ba7e41839911d59L), MetaIdFactory.conceptId(0x2f7e2e356e744c43L, 0x9fa52465d68f5996L, 0x68d69d36ba4adb6fL), MetaIdFactory.conceptId(0x2f7e2e356e744c43L, 0x9fa52465d68f5996L, 0x7515112832b3a95L), MetaIdFactory.conceptId(0x2f7e2e356e744c43L, 0x9fa52465d68f5996L, 0x10bebceaded2ac9L), MetaIdFactory.conceptId(0x2f7e2e356e744c43L, 0x9fa52465d68f5996L, 0xc5b7d0d914eb88fL), MetaIdFactory.conceptId(0x2f7e2e356e744c43L, 0x9fa52465d68f5996L, 0x760f345f6cac7b9L), MetaIdFactory.conceptId(0x2f7e2e356e744c43L, 0x9fa52465d68f5996L, 0x6ba7e4183a3ae629L), MetaIdFactory.conceptId(0x2f7e2e356e744c43L, 0x9fa52465d68f5996L, 0x56a4de6d0156b2L), MetaIdFactory.conceptId(0x2f7e2e356e744c43L, 0x9fa52465d68f5996L, 0x6ba7e4183a3aae3eL), MetaIdFactory.conceptId(0x2f7e2e356e744c43L, 0x9fa52465d68f5996L, 0x4d84a614e92e2689L), MetaIdFactory.conceptId(0x2f7e2e356e744c43L, 0x9fa52465d68f5996L, 0x6b6d642f177d57b0L), MetaIdFactory.conceptId(0x2f7e2e356e744c43L, 0x9fa52465d68f5996L, 0xc5b7621e8c0cff9L), MetaIdFactory.conceptId(0x2f7e2e356e744c43L, 0x9fa52465d68f5996L, 0x4001cb5db1885418L), MetaIdFactory.conceptId(0x2f7e2e356e744c43L, 0x9fa52465d68f5996L, 0x4d84a614e991a763L), MetaIdFactory.conceptId(0x2f7e2e356e744c43L, 0x9fa52465d68f5996L, 0x375e375966d32ccfL)).seal();
 }
