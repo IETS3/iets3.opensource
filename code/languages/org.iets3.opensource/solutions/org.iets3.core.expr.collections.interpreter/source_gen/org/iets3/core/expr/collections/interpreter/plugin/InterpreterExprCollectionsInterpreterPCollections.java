@@ -45,6 +45,7 @@ import jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations;
 import java.util.Comparator;
 import java.util.Objects;
 import java.math.BigInteger;
+import org.iets3.core.expr.collections.rt.rt.ElementContribution;
 import org.iets3.core.expr.collections.plugin.CollectionEnvConstants;
 import org.iets3.core.expr.lambda.plugin.ExecutableValue;
 import org.pcollections.TreePVector;
@@ -1494,7 +1495,7 @@ public class InterpreterExprCollectionsInterpreterPCollections extends Interpret
             Object evaledElement = context.getRootInterpreter().evaluate(e, context, coverage, trace, false);
             // I don't think we have to check the constraint,
             // the type checker should find those
-            l = l.plus(evaledElement);
+            l = ElementContribution.addTo(l, evaledElement);
           }
           return l;
         } catch (StopAndReturnException stop) {
@@ -1543,7 +1544,7 @@ public class InterpreterExprCollectionsInterpreterPCollections extends Interpret
             Object evaledElement = context.getRootInterpreter().evaluate(e, context, coverage, trace, false);
             // I don't think we have to check the constraint,
             // the type checker should find those
-            s = s.plus(evaledElement);
+            s = ElementContribution.addTo(s, evaledElement);
           }
           return s;
         } catch (StopAndReturnException stop) {
@@ -2912,6 +2913,67 @@ public class InterpreterExprCollectionsInterpreterPCollections extends Interpret
         return true;
       }
     });
+    ListSequence.fromList(((List<IEvaluator>) evaluators)).addElement(new ConceptEvaluatorBase(CONCEPTS.ConditionalCollectionElement$VV, "r:2864d21d-eb2b-488f-a943-a765959cab0a(org.iets3.core.expr.collections.interpreter.plugin)/9096503253605410792", false) {
+      public Object evaluateEvaluator(SNode node, IContext context, ICoverageAnalyzer coverage, ComputationTrace trace) {
+        try {
+          coverage.visitedEvaluator(this);
+          coverage.visitedConcept(this.concept);
+          coverage.visitedConcept(SNodeOperations.getConcept(node));
+          if (((Boolean) context.getRootInterpreter().evaluate(SLinkOperations.getTarget(node, LINKS.condition$DTiY), context, coverage, trace, false))) {
+            return context.getRootInterpreter().evaluate(SLinkOperations.getTarget(node, LINKS.then$bDV2), context, coverage, trace, false);
+          }
+          return ElementContribution.none();
+        } catch (StopAndReturnException stop) {
+          return stop.value();
+        } catch (InterpreterEscapeException ex) {
+          throw ex;
+        } catch (RuntimeException ex) {
+          throw new InterpreterRuntimeException("when()", node, ex, trace);
+        }
+      }
+      public EvaluatorInfo getInfo() {
+        return new EvaluatorInfo("ConditionalCollectionElement", "http://127.0.0.1:63320/node?ref=r%3A2864d21d-eb2b-488f-a943-a765959cab0a%28org.iets3.core.expr.collections.interpreter.plugin%29%2F9096503253605410792");
+      }
+
+      @Override
+      public String toString() {
+        return "ConditionalCollectionElement";
+      }
+
+      @Override
+      public boolean canLookupBeCached() {
+        return true;
+      }
+    });
+    ListSequence.fromList(((List<IEvaluator>) evaluators)).addElement(new ConceptEvaluatorBase(CONCEPTS.SpreadCollectionElement$Vp, "r:2864d21d-eb2b-488f-a943-a765959cab0a(org.iets3.core.expr.collections.interpreter.plugin)/9096503253605410812", false) {
+      public Object evaluateEvaluator(SNode node, IContext context, ICoverageAnalyzer coverage, ComputationTrace trace) {
+        try {
+          coverage.visitedEvaluator(this);
+          coverage.visitedConcept(this.concept);
+          coverage.visitedConcept(SNodeOperations.getConcept(node));
+          return ElementContribution.all(context.getRootInterpreter().evaluate(SLinkOperations.getTarget(node, LINKS.collection$1kgD), context, coverage, trace, false));
+        } catch (StopAndReturnException stop) {
+          return stop.value();
+        } catch (InterpreterEscapeException ex) {
+          throw ex;
+        } catch (RuntimeException ex) {
+          throw new InterpreterRuntimeException("...()", node, ex, trace);
+        }
+      }
+      public EvaluatorInfo getInfo() {
+        return new EvaluatorInfo("SpreadCollectionElement", "http://127.0.0.1:63320/node?ref=r%3A2864d21d-eb2b-488f-a943-a765959cab0a%28org.iets3.core.expr.collections.interpreter.plugin%29%2F9096503253605410812");
+      }
+
+      @Override
+      public String toString() {
+        return "SpreadCollectionElement";
+      }
+
+      @Override
+      public boolean canLookupBeCached() {
+        return true;
+      }
+    });
   }
 
 
@@ -3005,6 +3067,8 @@ public class InterpreterExprCollectionsInterpreterPCollections extends Interpret
     /*package*/ static final SConcept AllWithIndexOp$zV = MetaAdapterFactory.getConcept(0x2f7e2e356e744c43L, 0x9fa52465d68f5996L, 0x62c01cba4b35b04L, "org.iets3.core.expr.collections.structure.AllWithIndexOp");
     /*package*/ static final SConcept ListPickOp$Zo = MetaAdapterFactory.getConcept(0x2f7e2e356e744c43L, 0x9fa52465d68f5996L, 0x760f345f6cac7b9L, "org.iets3.core.expr.collections.structure.ListPickOp");
     /*package*/ static final SConcept UpToTarget$h2 = MetaAdapterFactory.getConcept(0x2f7e2e356e744c43L, 0x9fa52465d68f5996L, 0x375e375966d32ccfL, "org.iets3.core.expr.collections.structure.UpToTarget");
+    /*package*/ static final SConcept ConditionalCollectionElement$VV = MetaAdapterFactory.getConcept(0x2f7e2e356e744c43L, 0x9fa52465d68f5996L, 0x16f4d125d9d93b9dL, "org.iets3.core.expr.collections.structure.ConditionalCollectionElement");
+    /*package*/ static final SConcept SpreadCollectionElement$Vp = MetaAdapterFactory.getConcept(0x2f7e2e356e744c43L, 0x9fa52465d68f5996L, 0x4001cb5db1885418L, "org.iets3.core.expr.collections.structure.SpreadCollectionElement");
   }
 
   private static final class LINKS {
@@ -3022,6 +3086,9 @@ public class InterpreterExprCollectionsInterpreterPCollections extends Interpret
     /*package*/ static final SContainmentLink seed$l9w1 = MetaAdapterFactory.getContainmentLink(0x2f7e2e356e744c43L, 0x9fa52465d68f5996L, 0x4471391c39ffd310L, 0x4471391c3a005345L, "seed");
     /*package*/ static final SContainmentLink combiner$lad4 = MetaAdapterFactory.getContainmentLink(0x2f7e2e356e744c43L, 0x9fa52465d68f5996L, 0x4471391c39ffd310L, 0x4471391c3a005348L, "combiner");
     /*package*/ static final SContainmentLink selectorList$xm0m = MetaAdapterFactory.getContainmentLink(0x2f7e2e356e744c43L, 0x9fa52465d68f5996L, 0x760f345f6cac7b9L, 0x760f345f6cad350L, "selectorList");
+    /*package*/ static final SContainmentLink condition$DTiY = MetaAdapterFactory.getContainmentLink(0x2f7e2e356e744c43L, 0x9fa52465d68f5996L, 0x16f4d125d9d93b9dL, 0x56d76c6508318f54L, "condition");
+    /*package*/ static final SContainmentLink then$bDV2 = MetaAdapterFactory.getContainmentLink(0x2f7e2e356e744c43L, 0x9fa52465d68f5996L, 0x16f4d125d9d93b9dL, 0x1d0a68ad9c70a2faL, "then");
+    /*package*/ static final SContainmentLink collection$1kgD = MetaAdapterFactory.getContainmentLink(0x2f7e2e356e744c43L, 0x9fa52465d68f5996L, 0x4001cb5db1885418L, 0x2d2639add91db0ccL, "collection");
   }
 
   private static final class PROPS {

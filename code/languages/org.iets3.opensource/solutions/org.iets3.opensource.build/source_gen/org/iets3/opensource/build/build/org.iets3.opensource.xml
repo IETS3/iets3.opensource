@@ -1388,6 +1388,7 @@
           <module ref="b76a0f63-5959-456b-993a-c796cc0d0c13(org.iets3.core.expr.base.collections.stubs)" kind="cl" />
           <module ref="dbe08fb5-334d-4b64-86a0-622406fa0e87(org.iets3.core.expr.base.runtime)" kind="cl" />
           <module ref="2f7e2e35-6e74-4c43-9fa5-2465d68f5996(org.iets3.core.expr.collections)" kind="cl" />
+          <module ref="272bf1ac-d70c-4dac-96a3-976884f641b8(org.iets3.core.expr.collections.rt)" kind="cl" />
           <module ref="3a6ebc02-087e-4791-9854-65244ce22d8d(org.iets3.core.expr.genjava.base.rt)" kind="cl" />
           <module ref="708a03ad-8699-43c9-821a-6cd00b68e9f8(org.iets3.core.expr.genjava.functionalJava)" kind="cl" />
           <module ref="646d63c6-d580-4c19-8759-e3a3123f5424(org.iets3.core.expr.genjava.messages.rt)" kind="cl" />
@@ -1485,6 +1486,7 @@
           <module ref="b76a0f63-5959-456b-993a-c796cc0d0c13(org.iets3.core.expr.base.collections.stubs)" kind="cl" />
           <module ref="dbe08fb5-334d-4b64-86a0-622406fa0e87(org.iets3.core.expr.base.runtime)" kind="cl" />
           <module ref="2f7e2e35-6e74-4c43-9fa5-2465d68f5996(org.iets3.core.expr.collections)" kind="cl" />
+          <module ref="272bf1ac-d70c-4dac-96a3-976884f641b8(org.iets3.core.expr.collections.rt)" kind="cl" />
           <module ref="30254c5b-f87e-4bb3-a60a-77a7ec6ed411(org.iets3.core.expr.genjava.base)" kind="cl" />
           <module ref="3a6ebc02-087e-4791-9854-65244ce22d8d(org.iets3.core.expr.genjava.base.rt)" kind="cl" />
           <module ref="708a03ad-8699-43c9-821a-6cd00b68e9f8(org.iets3.core.expr.genjava.functionalJava)" kind="cl" />
@@ -25347,7 +25349,7 @@
     </copy>
   </target>
   
-  <target name="java.compile.org.iets3.core.expr.genjava.base" depends="java.compile.org.iets3.analysis.base, java.compile.org.iets3.core.base, java.compile.org.iets3.core.expr.base, java.compile.org.iets3.core.expr.base.collections.stubs, java.compile.org.iets3.core.expr.base.runtime, java.compile.org.iets3.core.expr.collections, java.compile.org.iets3.core.expr.genjava.base.rt, java.compile.org.iets3.core.expr.genjava.messages.rt, java.compile.org.iets3.core.expr.lambda, java.compile.org.iets3.core.expr.messages, java.compile.org.iets3.core.expr.metafunction, java.compile.org.iets3.core.expr.mutable, java.compile.org.iets3.core.expr.path, java.compile.org.iets3.core.expr.simpleTypes, java.compile.org.iets3.core.expr.toplevel, fetchDependencies">
+  <target name="java.compile.org.iets3.core.expr.genjava.base" depends="java.compile.org.iets3.analysis.base, java.compile.org.iets3.core.base, java.compile.org.iets3.core.expr.base, java.compile.org.iets3.core.expr.base.collections.stubs, java.compile.org.iets3.core.expr.base.runtime, java.compile.org.iets3.core.expr.collections, java.compile.org.iets3.core.expr.collections.rt, java.compile.org.iets3.core.expr.genjava.base.rt, java.compile.org.iets3.core.expr.genjava.messages.rt, java.compile.org.iets3.core.expr.lambda, java.compile.org.iets3.core.expr.messages, java.compile.org.iets3.core.expr.metafunction, java.compile.org.iets3.core.expr.mutable, java.compile.org.iets3.core.expr.path, java.compile.org.iets3.core.expr.simpleTypes, java.compile.org.iets3.core.expr.toplevel, fetchDependencies">
     <mkdir dir="${iets3.lang.opensource}/languages/org.iets3.core.expr.genjava.base/source_gen" />
     <mkdir dir="${build.tmp}/java/out/org.iets3.core.expr.genjava.base" />
     <javac2 destdir="${build.tmp}/java/out/org.iets3.core.expr.genjava.base" fork="false" encoding="utf8" includeantruntime="false" debug="true" source="1.8" target="1.8">
@@ -25391,6 +25393,7 @@
         <pathelement path="${build.tmp}/java/out/org.iets3.core.expr.base.collections.stubs" />
         <pathelement path="${build.tmp}/java/out/org.iets3.core.expr.base.runtime" />
         <pathelement path="${build.tmp}/java/out/org.iets3.core.expr.collections" />
+        <pathelement path="${build.tmp}/java/out/org.iets3.core.expr.collections.rt" />
         <pathelement path="${build.tmp}/java/out/org.iets3.core.expr.genjava.base.rt" />
         <pathelement path="${build.tmp}/java/out/org.iets3.core.expr.genjava.messages.rt" />
         <pathelement path="${build.tmp}/java/out/org.iets3.core.expr.lambda" />
@@ -25458,7 +25461,7 @@
     </copy>
   </target>
   
-  <target name="java.compile.org.iets3.core.expr.genjava.base#8286534136181746510" depends="java.compile.org.iets3.analysis.base, java.compile.org.iets3.core.base, java.compile.org.iets3.core.expr.base, java.compile.org.iets3.core.expr.base.collections.stubs, java.compile.org.iets3.core.expr.base.runtime, java.compile.org.iets3.core.expr.collections, java.compile.org.iets3.core.expr.genjava.base, java.compile.org.iets3.core.expr.genjava.base.rt, java.compile.org.iets3.core.expr.genjava.messages.rt, java.compile.org.iets3.core.expr.lambda, java.compile.org.iets3.core.expr.messages, java.compile.org.iets3.core.expr.metafunction, java.compile.org.iets3.core.expr.mutable, java.compile.org.iets3.core.expr.path, java.compile.org.iets3.core.expr.simpleTypes, java.compile.org.iets3.core.expr.toplevel, fetchDependencies">
+  <target name="java.compile.org.iets3.core.expr.genjava.base#8286534136181746510" depends="java.compile.org.iets3.analysis.base, java.compile.org.iets3.core.base, java.compile.org.iets3.core.expr.base, java.compile.org.iets3.core.expr.base.collections.stubs, java.compile.org.iets3.core.expr.base.runtime, java.compile.org.iets3.core.expr.collections, java.compile.org.iets3.core.expr.collections.rt, java.compile.org.iets3.core.expr.genjava.base, java.compile.org.iets3.core.expr.genjava.base.rt, java.compile.org.iets3.core.expr.genjava.messages.rt, java.compile.org.iets3.core.expr.lambda, java.compile.org.iets3.core.expr.messages, java.compile.org.iets3.core.expr.metafunction, java.compile.org.iets3.core.expr.mutable, java.compile.org.iets3.core.expr.path, java.compile.org.iets3.core.expr.simpleTypes, java.compile.org.iets3.core.expr.toplevel, fetchDependencies">
     <mkdir dir="${iets3.lang.opensource}/languages/org.iets3.core.expr.genjava.base/generator/source_gen" />
     <mkdir dir="${build.tmp}/java/out/org.iets3.core.expr.genjava.base#8286534136181746510" />
     <javac2 destdir="${build.tmp}/java/out/org.iets3.core.expr.genjava.base#8286534136181746510" fork="false" encoding="utf8" includeantruntime="false" debug="true" source="1.8" target="1.8">
@@ -25502,6 +25505,7 @@
         <pathelement path="${build.tmp}/java/out/org.iets3.core.expr.base.collections.stubs" />
         <pathelement path="${build.tmp}/java/out/org.iets3.core.expr.base.runtime" />
         <pathelement path="${build.tmp}/java/out/org.iets3.core.expr.collections" />
+        <pathelement path="${build.tmp}/java/out/org.iets3.core.expr.collections.rt" />
         <pathelement path="${build.tmp}/java/out/org.iets3.core.expr.genjava.base" />
         <pathelement path="${build.tmp}/java/out/org.iets3.core.expr.genjava.base.rt" />
         <pathelement path="${build.tmp}/java/out/org.iets3.core.expr.genjava.messages.rt" />

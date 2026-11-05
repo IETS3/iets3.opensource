@@ -46,6 +46,7 @@ import org.iets3.core.expr.genjava.toplevel.rt.rt.InlineRecordTypeMember;
 import org.pcollections.MapPSet;
 import java.util.Iterator;
 import jetbrains.mps.internal.collections.runtime.CollectionSequence;
+import org.iets3.core.expr.collections.rt.rt.ElementContribution;
 
 /**
  * 
@@ -17138,6 +17139,195 @@ public class Generated_collections_Test {
         }
       }).findFirst().orElse(null));
     }).invoke()));
+  }
+  public static final PVector<Number> commentedList_ = ((_FunctionTypes._return_P0_E0<TreePVector<Number>>) () -> {
+    TreePVector<Number> tpv = TreePVector.empty();
+    tpv = tpv.plus(/* 
+     * base amount
+     * 
+     * multiline text
+     * 
+     * more text
+     */
+    /* 
+     * base amount
+     * 
+     * multiline text
+     * 
+     * more text
+     */
+    ((Number) new BigInteger("100")));
+    tpv = tpv.plus(/* 
+     * surcharge
+     */
+    /* 
+     * surcharge
+     */
+    ((Number) new BigInteger("200")));
+    tpv = tpv.plus(((Number) new BigInteger("300")));
+    return tpv;
+  }).invoke();
+  @Test
+  public void commentedListElements_item0_5590204388274485448() throws Throwable {
+    Assert.assertTrue("Expected: " + (((Number) new BigInteger("3"))) + ", but was: " + (BigInteger.valueOf(Generated_collections_Test.commentedList_.size())), EqualsTestOp.matches(((Number) new BigInteger("3")), BigInteger.valueOf(Generated_collections_Test.commentedList_.size())));
+  }
+  @Test
+  public void commentedListElements_item1_5590204388274485454() throws Throwable {
+    Assert.assertEquals("Expected: " + (((_FunctionTypes._return_P0_E0<TreePVector<Number>>) () -> {
+      TreePVector<Number> tpv = TreePVector.empty();
+      tpv = tpv.plus(((Number) new BigInteger("100")));
+      tpv = tpv.plus(((Number) new BigInteger("200")));
+      tpv = tpv.plus(((Number) new BigInteger("300")));
+      return tpv;
+    }).invoke()) + ", but was: " + (Generated_collections_Test.commentedList_), (Object) ((_FunctionTypes._return_P0_E0<TreePVector<Number>>) () -> {
+      TreePVector<Number> tpv = TreePVector.empty();
+      tpv = tpv.plus(((Number) new BigInteger("100")));
+      tpv = tpv.plus(((Number) new BigInteger("200")));
+      tpv = tpv.plus(((Number) new BigInteger("300")));
+      return tpv;
+    }).invoke(), (Object) Generated_collections_Test.commentedList_);
+  }
+  public static final PVector<Number> baseItems_ = ((_FunctionTypes._return_P0_E0<TreePVector<Number>>) () -> {
+    TreePVector<Number> tpv = TreePVector.empty();
+    tpv = tpv.plus(((Number) new BigInteger("1")));
+    tpv = tpv.plus(((Number) new BigInteger("2")));
+    return tpv;
+  }).invoke();
+  public static final PVector<Number> extraItems_ = ((_FunctionTypes._return_P0_E0<TreePVector<Number>>) () -> {
+    TreePVector<Number> tpv = TreePVector.empty();
+    tpv = tpv.plus(((Number) new BigInteger("3")));
+    tpv = tpv.plus(((Number) new BigInteger("4")));
+    return tpv;
+  }).invoke();
+  @Test
+  public void conditionalAndSpreadElements_item0_9096503253605672036() throws Throwable {
+    Assert.assertEquals("Expected: " + (((_FunctionTypes._return_P0_E0<TreePVector<Number>>) () -> {
+      TreePVector<Number> tpv = TreePVector.empty();
+      tpv = tpv.plus(((Number) new BigInteger("1")));
+      tpv = tpv.plus(((Number) new BigInteger("2")));
+      tpv = tpv.plus(((Number) new BigInteger("3")));
+      return tpv;
+    }).invoke()) + ", but was: " + (((TreePVector) TreePVector.from(ElementContribution.flatten(Arrays.asList(((Number) new BigInteger("1")), ((true ? (Object) ((Number) new BigInteger("2")) : ElementContribution.none())), ((Number) new BigInteger("3"))))))), (Object) ((_FunctionTypes._return_P0_E0<TreePVector<Number>>) () -> {
+      TreePVector<Number> tpv = TreePVector.empty();
+      tpv = tpv.plus(((Number) new BigInteger("1")));
+      tpv = tpv.plus(((Number) new BigInteger("2")));
+      tpv = tpv.plus(((Number) new BigInteger("3")));
+      return tpv;
+    }).invoke(), (Object) ((TreePVector) TreePVector.from(ElementContribution.flatten(Arrays.asList(((Number) new BigInteger("1")), ((true ? (Object) ((Number) new BigInteger("2")) : ElementContribution.none())), ((Number) new BigInteger("3")))))));
+  }
+  @Test
+  public void conditionalAndSpreadElements_item1_9096503253605672048() throws Throwable {
+    Assert.assertEquals("Expected: " + (((_FunctionTypes._return_P0_E0<TreePVector<Number>>) () -> {
+      TreePVector<Number> tpv = TreePVector.empty();
+      tpv = tpv.plus(((Number) new BigInteger("1")));
+      tpv = tpv.plus(((Number) new BigInteger("3")));
+      return tpv;
+    }).invoke()) + ", but was: " + (((TreePVector) TreePVector.from(ElementContribution.flatten(Arrays.asList(((Number) new BigInteger("1")), ((false ? (Object) ((Number) new BigInteger("2")) : ElementContribution.none())), ((Number) new BigInteger("3"))))))), (Object) ((_FunctionTypes._return_P0_E0<TreePVector<Number>>) () -> {
+      TreePVector<Number> tpv = TreePVector.empty();
+      tpv = tpv.plus(((Number) new BigInteger("1")));
+      tpv = tpv.plus(((Number) new BigInteger("3")));
+      return tpv;
+    }).invoke(), (Object) ((TreePVector) TreePVector.from(ElementContribution.flatten(Arrays.asList(((Number) new BigInteger("1")), ((false ? (Object) ((Number) new BigInteger("2")) : ElementContribution.none())), ((Number) new BigInteger("3")))))));
+  }
+  @Test
+  public void conditionalAndSpreadElements_item2_9096503253605672059() throws Throwable {
+    Assert.assertEquals("Expected: " + (((_FunctionTypes._return_P0_E0<TreePVector<Number>>) () -> {
+      TreePVector<Number> tpv = TreePVector.empty();
+      tpv = tpv.plus(((Number) new BigInteger("1")));
+      tpv = tpv.plus(((Number) new BigInteger("2")));
+      tpv = tpv.plus(((Number) new BigInteger("5")));
+      return tpv;
+    }).invoke()) + ", but was: " + (((TreePVector) TreePVector.from(ElementContribution.flatten(Arrays.asList(ElementContribution.all(Generated_collections_Test.baseItems_), ((Number) new BigInteger("5"))))))), (Object) ((_FunctionTypes._return_P0_E0<TreePVector<Number>>) () -> {
+      TreePVector<Number> tpv = TreePVector.empty();
+      tpv = tpv.plus(((Number) new BigInteger("1")));
+      tpv = tpv.plus(((Number) new BigInteger("2")));
+      tpv = tpv.plus(((Number) new BigInteger("5")));
+      return tpv;
+    }).invoke(), (Object) ((TreePVector) TreePVector.from(ElementContribution.flatten(Arrays.asList(ElementContribution.all(Generated_collections_Test.baseItems_), ((Number) new BigInteger("5")))))));
+  }
+  @Test
+  public void conditionalAndSpreadElements_item3_9096503253605672069() throws Throwable {
+    Assert.assertEquals("Expected: " + (((_FunctionTypes._return_P0_E0<TreePVector<Number>>) () -> {
+      TreePVector<Number> tpv = TreePVector.empty();
+      tpv = tpv.plus(((Number) new BigInteger("1")));
+      tpv = tpv.plus(((Number) new BigInteger("2")));
+      tpv = tpv.plus(((Number) new BigInteger("3")));
+      tpv = tpv.plus(((Number) new BigInteger("4")));
+      return tpv;
+    }).invoke()) + ", but was: " + (((TreePVector) TreePVector.from(ElementContribution.flatten(Arrays.asList(ElementContribution.all(Generated_collections_Test.baseItems_), ((AH.isGreater(BigInteger.valueOf(Generated_collections_Test.baseItems_.size()), ((Number) new BigInteger("1"))) ? (Object) ElementContribution.all(Generated_collections_Test.extraItems_) : ElementContribution.none()))))))), (Object) ((_FunctionTypes._return_P0_E0<TreePVector<Number>>) () -> {
+      TreePVector<Number> tpv = TreePVector.empty();
+      tpv = tpv.plus(((Number) new BigInteger("1")));
+      tpv = tpv.plus(((Number) new BigInteger("2")));
+      tpv = tpv.plus(((Number) new BigInteger("3")));
+      tpv = tpv.plus(((Number) new BigInteger("4")));
+      return tpv;
+    }).invoke(), (Object) ((TreePVector) TreePVector.from(ElementContribution.flatten(Arrays.asList(ElementContribution.all(Generated_collections_Test.baseItems_), ((AH.isGreater(BigInteger.valueOf(Generated_collections_Test.baseItems_.size()), ((Number) new BigInteger("1"))) ? (Object) ElementContribution.all(Generated_collections_Test.extraItems_) : ElementContribution.none())))))));
+  }
+  @Test
+  public void conditionalAndSpreadElements_item4_9096503253605672087() throws Throwable {
+    Assert.assertEquals("Expected: " + (((_FunctionTypes._return_P0_E0<TreePVector<Number>>) () -> {
+      TreePVector<Number> tpv = TreePVector.empty();
+      tpv = tpv.plus(((Number) new BigInteger("1")));
+      tpv = tpv.plus(((Number) new BigInteger("2")));
+      return tpv;
+    }).invoke()) + ", but was: " + (((TreePVector) TreePVector.from(ElementContribution.flatten(Arrays.asList(ElementContribution.all(Generated_collections_Test.baseItems_), ((AH.isGreater(BigInteger.valueOf(Generated_collections_Test.baseItems_.size()), ((Number) new BigInteger("2"))) ? (Object) ElementContribution.all(Generated_collections_Test.extraItems_) : ElementContribution.none()))))))), (Object) ((_FunctionTypes._return_P0_E0<TreePVector<Number>>) () -> {
+      TreePVector<Number> tpv = TreePVector.empty();
+      tpv = tpv.plus(((Number) new BigInteger("1")));
+      tpv = tpv.plus(((Number) new BigInteger("2")));
+      return tpv;
+    }).invoke(), (Object) ((TreePVector) TreePVector.from(ElementContribution.flatten(Arrays.asList(ElementContribution.all(Generated_collections_Test.baseItems_), ((AH.isGreater(BigInteger.valueOf(Generated_collections_Test.baseItems_.size()), ((Number) new BigInteger("2"))) ? (Object) ElementContribution.all(Generated_collections_Test.extraItems_) : ElementContribution.none())))))));
+  }
+  @Test
+  public void conditionalAndSpreadElements_item5_9096503253605672103() throws Throwable {
+    Assert.assertTrue("Expected: " + (((Number) new BigInteger("0"))) + ", but was: " + (BigInteger.valueOf(((TreePVector) TreePVector.from(ElementContribution.flatten(Arrays.asList(((false ? (Object) ((Number) new BigInteger("1")) : ElementContribution.none())))))).size())), EqualsTestOp.matches(((Number) new BigInteger("0")), BigInteger.valueOf(((TreePVector) TreePVector.from(ElementContribution.flatten(Arrays.asList(((false ? (Object) ((Number) new BigInteger("1")) : ElementContribution.none())))))).size())));
+  }
+  @Test
+  public void conditionalAndSpreadElements_item6_9096503253605672112() throws Throwable {
+    Assert.assertEquals("Expected: " + (HashTreePSet.from(Arrays.asList(((Number) new BigInteger("1")), ((Number) new BigInteger("3")), ((Number) new BigInteger("4"))))) + ", but was: " + (((PSet) HashTreePSet.from(ElementContribution.flatten(Arrays.asList(((Number) new BigInteger("1")), ((false ? (Object) ((Number) new BigInteger("2")) : ElementContribution.none())), ElementContribution.all(HashTreePSet.from(Arrays.asList(((Number) new BigInteger("3")), ((Number) new BigInteger("4")))))))))), (Object) HashTreePSet.from(Arrays.asList(((Number) new BigInteger("1")), ((Number) new BigInteger("3")), ((Number) new BigInteger("4")))), (Object) ((PSet) HashTreePSet.from(ElementContribution.flatten(Arrays.asList(((Number) new BigInteger("1")), ((false ? (Object) ((Number) new BigInteger("2")) : ElementContribution.none())), ElementContribution.all(HashTreePSet.from(Arrays.asList(((Number) new BigInteger("3")), ((Number) new BigInteger("4"))))))))));
+  }
+  @Test
+  public void conditionalAndSpreadElements_item7_9096503253605672127() throws Throwable {
+    Assert.assertEquals("Expected: " + (HashTreePSet.from(Arrays.asList(((Number) new BigInteger("1")), ((Number) new BigInteger("2"))))) + ", but was: " + (((PSet) HashTreePSet.from(ElementContribution.flatten(Arrays.asList(((Number) new BigInteger("1")), ElementContribution.all(Generated_collections_Test.baseItems_)))))), (Object) HashTreePSet.from(Arrays.asList(((Number) new BigInteger("1")), ((Number) new BigInteger("2")))), (Object) ((PSet) HashTreePSet.from(ElementContribution.flatten(Arrays.asList(((Number) new BigInteger("1")), ElementContribution.all(Generated_collections_Test.baseItems_))))));
+  }
+  @Test
+  public void conditionalAndSpreadElements_item8_1736600265413728776() throws Throwable {
+    Assert.assertEquals("Expected: " + (((_FunctionTypes._return_P0_E0<TreePVector<Number>>) () -> {
+      TreePVector<Number> tpv = TreePVector.empty();
+      tpv = tpv.plus(((Number) new BigInteger("100")));
+      tpv = tpv.plus(((Number) new BigInteger("200")));
+      tpv = tpv.plus(((Number) new BigInteger("300")));
+      tpv = tpv.plus(((Number) new BigInteger("1")));
+      tpv = tpv.plus(((Number) new BigInteger("2")));
+      tpv = tpv.plus(((Number) new BigInteger("3")));
+      tpv = tpv.plus(((Number) new BigInteger("4")));
+      tpv = tpv.plus(((Number) new BigInteger("3")));
+      tpv = tpv.plus(((Number) new BigInteger("4")));
+      return tpv;
+    }).invoke()) + ", but was: " + (((TreePVector) TreePVector.from(ElementContribution.flatten(Arrays.asList(ElementContribution.all(Generated_collections_Test.commentedList_), ((Number) new BigInteger("1")), ((Number) new BigInteger("2")), ((Number) new BigInteger("3")), /* 
+     * some comment here
+     */
+    /* 
+     * some comment here
+     */
+    ((Number) new BigInteger("4")), ElementContribution.all(Generated_collections_Test.extraItems_)))))), (Object) ((_FunctionTypes._return_P0_E0<TreePVector<Number>>) () -> {
+      TreePVector<Number> tpv = TreePVector.empty();
+      tpv = tpv.plus(((Number) new BigInteger("100")));
+      tpv = tpv.plus(((Number) new BigInteger("200")));
+      tpv = tpv.plus(((Number) new BigInteger("300")));
+      tpv = tpv.plus(((Number) new BigInteger("1")));
+      tpv = tpv.plus(((Number) new BigInteger("2")));
+      tpv = tpv.plus(((Number) new BigInteger("3")));
+      tpv = tpv.plus(((Number) new BigInteger("4")));
+      tpv = tpv.plus(((Number) new BigInteger("3")));
+      tpv = tpv.plus(((Number) new BigInteger("4")));
+      return tpv;
+    }).invoke(), (Object) ((TreePVector) TreePVector.from(ElementContribution.flatten(Arrays.asList(ElementContribution.all(Generated_collections_Test.commentedList_), ((Number) new BigInteger("1")), ((Number) new BigInteger("2")), ((Number) new BigInteger("3")), /* 
+     * some comment here
+     */
+    /* 
+     * some comment here
+     */
+    ((Number) new BigInteger("4")), ElementContribution.all(Generated_collections_Test.extraItems_))))));
   }
 
 

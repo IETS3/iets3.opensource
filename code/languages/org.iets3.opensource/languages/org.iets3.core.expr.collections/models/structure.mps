@@ -142,6 +142,14 @@
     <node concept="PrWs8" id="4qVjx3kqU9m" role="PzmwI">
       <ref role="PrY4T" to="hm2y:6KxoTHgLv_I" resolve="IMayHaveEffect" />
     </node>
+    <node concept="PrWs8" id="4QkpknwTfp8" role="PzmwI">
+      <ref role="PrY4T" to="hm2y:3ni3WidwYNF" resolve="IAllowsDocInChildExpressions" />
+    </node>
+    <node concept="1TJgyi" id="1wpDbQfWl5U" role="1TKVEl">
+      <property role="TrG5h" value="useVerticalLayout" />
+      <property role="IQ2nx" value="1736600265398767994" />
+      <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
+    </node>
   </node>
   <node concept="PlHQZ" id="6zmBjqUivxU">
     <property role="TrG5h" value="ICollectionOp" />
@@ -1223,6 +1231,49 @@
     <ref role="1TJDcQ" node="6zmBjqUjnKs" resolve="OneArgCollectionOp" />
     <node concept="PrWs8" id="1e59C2QAniR" role="PzmwI">
       <ref role="PrY4T" node="6zmBjqUiHHJ" resolve="IOrderedCollectionOp" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="7SXhoe9iMNw">
+    <property role="TrG5h" value="SpreadCollectionElement" />
+    <property role="34LRSv" value="..." />
+    <property role="R4oN_" value="collection literal element that adds all elements of another collection" />
+    <property role="EcuMT" value="4612191096674997272" />
+    <property role="3GE5qa" value="collection.elements" />
+    <ref role="1TJDcQ" to="hm2y:6sdnDbSla17" resolve="Expression" />
+    <node concept="PrWs8" id="7SXhoe9iMNx" role="PzmwI">
+      <ref role="PrY4T" to="hm2y:6KxoTHgLv_I" resolve="IMayHaveEffect" />
+    </node>
+    <node concept="1TJgyj" id="7SXhoe9iMNy" role="1TKVEi">
+      <property role="20kJfa" value="collection" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20lbJX" value="fLJekj4/_1" />
+      <property role="IQ2ns" value="3253351199656489164" />
+      <ref role="20lvS9" to="hm2y:6sdnDbSla17" resolve="Expression" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="7SXhoe9iMNs">
+    <property role="TrG5h" value="ConditionalCollectionElement" />
+    <property role="34LRSv" value="when" />
+    <property role="R4oN_" value="collection literal element that is only added when the condition holds" />
+    <property role="EcuMT" value="1654176923650702237" />
+    <property role="3GE5qa" value="collection.elements" />
+    <ref role="1TJDcQ" to="hm2y:6sdnDbSla17" resolve="Expression" />
+    <node concept="PrWs8" id="7SXhoe9iMNt" role="PzmwI">
+      <ref role="PrY4T" to="hm2y:6KxoTHgLv_I" resolve="IMayHaveEffect" />
+    </node>
+    <node concept="1TJgyj" id="7SXhoe9iMNu" role="1TKVEi">
+      <property role="20kJfa" value="condition" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20lbJX" value="fLJekj4/_1" />
+      <property role="IQ2ns" value="6257589388439555924" />
+      <ref role="20lvS9" to="hm2y:6sdnDbSla17" resolve="Expression" />
+    </node>
+    <node concept="1TJgyj" id="7SXhoe9iMNv" role="1TKVEi">
+      <property role="20kJfa" value="then" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20lbJX" value="fLJekj4/_1" />
+      <property role="IQ2ns" value="2092600071730275066" />
+      <ref role="20lvS9" to="hm2y:6sdnDbSla17" resolve="Expression" />
     </node>
   </node>
 </model>

@@ -14,13 +14,76 @@
   <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1070475587102:jetbrains.mps.baseLanguage.structure.SuperConstructorInvocation" />
   <root>
     <file name="IntentionsDescriptor.java">
-      <unit at="18,0,82,0" name="org.iets3.core.expr.collections.intentions.IntentionsDescriptor" />
+      <unit at="18,0,90,0" name="org.iets3.core.expr.collections.intentions.IntentionsDescriptor" />
+    </file>
+  </root>
+  <root nodeRef="r:db43e6ca-9bf0-4a94-b4b5-10d2e7071c54(org.iets3.core.expr.collections.intentions)/1736600265400344620">
+    <file name="IntentionsDescriptor.java">
+      <node id="1736600265400344620" at="66,47,67,74" concept="2" />
+      <node id="1736600265400344620" at="84,60,85,60" concept="2" />
+    </file>
+    <file name="toggleListLiteralVerticalLayout_Intention.java">
+      <node id="1736600265400344620" at="21,0,22,0" concept="3" trace="myCachedExecutable" />
+      <node id="1736600265400344620" at="23,54,24,156" concept="11" />
+      <node id="1736600265400344620" at="28,35,29,45" concept="7" />
+      <node id="1736600265400344620" at="33,35,34,17" concept="7" />
+      <node id="1736600265400344620" at="38,37,39,105" concept="2" />
+      <node id="1736600265400344620" at="40,5,41,30" concept="7" />
+      <node id="1736600265400713839" at="48,87,49,147" concept="7" />
+      <node id="1736600265400716439" at="53,78,54,140" concept="2" />
+      <node id="1736600265400344620" at="58,86,59,18" concept="7" />
+      <node id="1736600265400344620" at="65,48,66,60" concept="7" />
+      <node id="1736600265400344620" at="72,0,73,0" concept="9" trace="useVerticalLayout$Iucy" />
+      <node id="1736600265400344620" at="44,0,46,0" concept="1" trace="IntentionImplementation#()V" />
+      <node id="1736600265400344620" at="23,0,26,0" concept="1" trace="toggleListLiteralVerticalLayout_Intention#()V" />
+      <node id="1736600265400344620" at="37,99,40,5" concept="4" />
+      <node id="1736600265400344620" at="27,0,31,0" concept="5" trace="getPresentation#()Ljava/lang/String;" />
+      <node id="1736600265400344620" at="32,0,36,0" concept="5" trace="isSurroundWith#()Z" />
+      <node id="1736600265400344620" at="47,0,51,0" concept="5" trace="getDescription#(Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/openapi/editor/EditorContext;)Ljava/lang/String;" />
+      <node id="1736600265400344620" at="52,0,56,0" concept="5" trace="execute#(Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/openapi/editor/EditorContext;)V" />
+      <node id="1736600265400344620" at="57,0,61,0" concept="5" trace="isApplicable#(Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/openapi/editor/EditorContext;)Z" />
+      <node id="1736600265400344620" at="64,0,68,0" concept="5" trace="getDescriptor#()Ljetbrains/mps/openapi/intentions/IntentionDescriptor;" />
+      <node id="1736600265400344620" at="37,0,43,0" concept="5" trace="instances#(Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/openapi/editor/EditorContext;)Ljava/util/Collection;" />
+      <scope id="1736600265400344620" at="44,38,44,38" />
+      <scope id="1736600265400344620" at="23,54,24,156" />
+      <scope id="1736600265400344620" at="28,35,29,45" />
+      <scope id="1736600265400344620" at="33,35,34,17" />
+      <scope id="1736600265400344620" at="38,37,39,105" />
+      <scope id="1736600265400713829" at="48,87,49,147" />
+      <scope id="1736600265400716428" at="53,78,54,140" />
+      <scope id="1736600265400344620" at="58,86,59,18" />
+      <scope id="1736600265400344620" at="65,48,66,60" />
+      <scope id="1736600265400344620" at="44,0,46,0" />
+      <scope id="1736600265400344620" at="23,0,26,0" />
+      <scope id="1736600265400344620" at="27,0,31,0" />
+      <scope id="1736600265400344620" at="32,0,36,0" />
+      <scope id="1736600265400344620" at="37,99,41,30" />
+      <scope id="1736600265400344620" at="47,0,51,0">
+        <var name="editorContext" id="1736600265400344620" />
+        <var name="node" id="1736600265400344620" />
+      </scope>
+      <scope id="1736600265400344620" at="52,0,56,0">
+        <var name="editorContext" id="1736600265400344620" />
+        <var name="node" id="1736600265400344620" />
+      </scope>
+      <scope id="1736600265400344620" at="57,0,61,0">
+        <var name="editorContext" id="1736600265400344620" />
+        <var name="node" id="1736600265400344620" />
+      </scope>
+      <scope id="1736600265400344620" at="64,0,68,0" />
+      <scope id="1736600265400344620" at="37,0,43,0">
+        <var name="context" id="1736600265400344620" />
+        <var name="node" id="1736600265400344620" />
+      </scope>
+      <unit id="1736600265400344620" at="71,0,74,0" name="org.iets3.core.expr.collections.intentions.toggleListLiteralVerticalLayout_Intention$PROPS" />
+      <unit id="1736600265400344620" at="43,0,70,0" name="org.iets3.core.expr.collections.intentions.toggleListLiteralVerticalLayout_Intention$IntentionImplementation" />
+      <unit id="1736600265400344620" at="20,0,75,0" name="org.iets3.core.expr.collections.intentions.toggleListLiteralVerticalLayout_Intention" />
     </file>
   </root>
   <root nodeRef="r:db43e6ca-9bf0-4a94-b4b5-10d2e7071c54(org.iets3.core.expr.collections.intentions)/24388123216275991">
     <file name="IntentionsDescriptor.java">
       <node id="24388123216275991" at="59,47,60,54" concept="2" />
-      <node id="24388123216275991" at="74,50,75,40" concept="2" />
+      <node id="24388123216275991" at="81,50,82,40" concept="2" />
     </file>
     <file name="addBrackets_Intention.java">
       <node id="24388123216275991" at="26,0,27,0" concept="3" trace="myCachedExecutable" />
@@ -100,7 +163,7 @@
   <root nodeRef="r:db43e6ca-9bf0-4a94-b4b5-10d2e7071c54(org.iets3.core.expr.collections.intentions)/7023368003706206137">
     <file name="IntentionsDescriptor.java">
       <node id="7023368003706206137" at="52,74,53,74" concept="2" />
-      <node id="7023368003706206137" at="76,60,77,60" concept="2" />
+      <node id="7023368003706206137" at="83,60,84,60" concept="2" />
     </file>
     <file name="toggleCollectionSizeHexMinValue_Intention.java">
       <node id="7023368003706206137" at="26,0,27,0" concept="3" trace="myCachedExecutable" />
@@ -194,7 +257,7 @@
   <root nodeRef="r:db43e6ca-9bf0-4a94-b4b5-10d2e7071c54(org.iets3.core.expr.collections.intentions)/7023368003706245990">
     <file name="IntentionsDescriptor.java">
       <node id="7023368003706245990" at="51,47,52,74" concept="2" />
-      <node id="7023368003706245990" at="75,40,76,60" concept="2" />
+      <node id="7023368003706245990" at="82,40,83,60" concept="2" />
     </file>
     <file name="toggleCollectionSizeHexMaxValue_Intention.java">
       <node id="7023368003706245990" at="26,0,27,0" concept="3" trace="myCachedExecutable" />
@@ -288,7 +351,7 @@
   <root nodeRef="r:db43e6ca-9bf0-4a94-b4b5-10d2e7071c54(org.iets3.core.expr.collections.intentions)/7832682464420246010">
     <file name="IntentionsDescriptor.java">
       <node id="7832682464420246010" at="37,47,38,64" concept="2" />
-      <node id="7832682464420246010" at="72,52,73,50" concept="2" />
+      <node id="7832682464420246010" at="79,52,80,50" concept="2" />
     </file>
     <file name="negateConditionForAll_Intention.java">
       <node id="7832682464420246010" at="24,0,25,0" concept="3" trace="myCachedExecutable" />
@@ -397,7 +460,7 @@
   <root nodeRef="r:db43e6ca-9bf0-4a94-b4b5-10d2e7071c54(org.iets3.core.expr.collections.intentions)/7832682464420418366">
     <file name="IntentionsDescriptor.java">
       <node id="7832682464420418366" at="44,47,45,64" concept="2" />
-      <node id="7832682464420418366" at="73,50,74,50" concept="2" />
+      <node id="7832682464420418366" at="80,50,81,50" concept="2" />
     </file>
     <file name="negateConditionForAny_Intention.java">
       <node id="7832682464420418366" at="24,0,25,0" concept="3" trace="myCachedExecutable" />
