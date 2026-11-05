@@ -5184,19 +5184,18 @@
                 </node>
                 <node concept="3clFbF" id="46cplYxUvxF" role="3cqZAp">
                   <node concept="37vLTI" id="v9lBEVgHT_" role="3clFbG">
-                    <node concept="2OqwBi" id="v9lBEVgI5R" role="37vLTx">
-                      <node concept="37vLTw" id="v9lBEVgHYl" role="2Oq$k0">
-                        <ref role="3cqZAo" node="v9lBEVgHnA" resolve="l" />
-                      </node>
-                      <node concept="liA8E" id="v9lBEVgIO7" role="2OqNvi">
-                        <ref role="37wK5l" to="j10v:~PVector.plus(java.lang.Object)" resolve="plus" />
-                        <node concept="37vLTw" id="2ufoZQJ3DUH" role="37wK5m">
-                          <ref role="3cqZAo" node="2ufoZQJ3DUE" resolve="evaledElement" />
-                        </node>
-                      </node>
-                    </node>
                     <node concept="37vLTw" id="v9lBEVgHL9" role="37vLTJ">
                       <ref role="3cqZAo" node="v9lBEVgHnA" resolve="l" />
+                    </node>
+                    <node concept="2YIFZM" id="7SXhoe9ltQO" role="37vLTx">
+                      <ref role="1Pybhc" to="wfax:7SXhoe9jsD5" resolve="ElementContribution" />
+                      <ref role="37wK5l" to="wfax:7SXhoe9jsDw" resolve="addTo" />
+                      <node concept="37vLTw" id="7SXhoe9ltQP" role="37wK5m">
+                        <ref role="3cqZAo" node="v9lBEVgHnA" resolve="l" />
+                      </node>
+                      <node concept="37vLTw" id="7SXhoe9ltQQ" role="37wK5m">
+                        <ref role="3cqZAo" node="2ufoZQJ3DUE" resolve="evaledElement" />
+                      </node>
                     </node>
                   </node>
                 </node>
@@ -5390,19 +5389,18 @@
                 </node>
                 <node concept="3clFbF" id="2ufoZQJ3H8K" role="3cqZAp">
                   <node concept="37vLTI" id="2ufoZQJ3H8L" role="3clFbG">
-                    <node concept="2OqwBi" id="2ufoZQJ3H8M" role="37vLTx">
-                      <node concept="37vLTw" id="2ufoZQJ3KEk" role="2Oq$k0">
-                        <ref role="3cqZAo" node="v9lBEVgLQZ" resolve="s" />
-                      </node>
-                      <node concept="liA8E" id="2ufoZQJ3H8O" role="2OqNvi">
-                        <ref role="37wK5l" to="j10v:~PSet.plus(java.lang.Object)" resolve="plus" />
-                        <node concept="37vLTw" id="2ufoZQJ3H8P" role="37wK5m">
-                          <ref role="3cqZAo" node="2ufoZQJ3H8x" resolve="evaledElement" />
-                        </node>
-                      </node>
-                    </node>
                     <node concept="37vLTw" id="2ufoZQJ3KDS" role="37vLTJ">
                       <ref role="3cqZAo" node="v9lBEVgLQZ" resolve="s" />
+                    </node>
+                    <node concept="2YIFZM" id="7SXhoe9ltQR" role="37vLTx">
+                      <ref role="1Pybhc" to="wfax:7SXhoe9jsD5" resolve="ElementContribution" />
+                      <ref role="37wK5l" to="wfax:7SXhoe9jsDD" resolve="addTo" />
+                      <node concept="37vLTw" id="7SXhoe9ltQS" role="37wK5m">
+                        <ref role="3cqZAo" node="v9lBEVgLQZ" resolve="s" />
+                      </node>
+                      <node concept="37vLTw" id="7SXhoe9ltQT" role="37wK5m">
+                        <ref role="3cqZAo" node="2ufoZQJ3H8x" resolve="evaledElement" />
+                      </node>
                     </node>
                   </node>
                 </node>
@@ -9259,6 +9257,75 @@
             <node concept="3cpWs6" id="3tudP_AP3Nt" role="3cqZAp">
               <node concept="37vLTw" id="3tudP_AP3Nu" role="3cqZAk">
                 <ref role="3cqZAo" node="3tudP_AP3Nj" resolve="res" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="qq9P1" id="7SXhoe9luvC" role="qq9xR">
+      <property role="2TnfIJ" value="false" />
+      <ref role="qq9wM" to="700h:7SXhoe9iMNs" resolve="ConditionalCollectionElement" />
+      <node concept="3dA_Gj" id="7SXhoe9luvD" role="3vQZUl">
+        <node concept="9aQIb" id="7SXhoe9luvE" role="3vcmbn">
+          <node concept="3clFbS" id="7SXhoe9luvF" role="9aQI4">
+            <node concept="3clFbJ" id="7SXhoe9luvG" role="3cqZAp">
+              <node concept="1eOMI4" id="7SXhoe9luvH" role="3clFbw">
+                <node concept="10QFUN" id="7SXhoe9luvI" role="1eOMHV">
+                  <node concept="3uibUv" id="7SXhoe9luvJ" role="10QFUM">
+                    <ref role="3uigEE" to="wyt6:~Boolean" resolve="Boolean" />
+                  </node>
+                  <node concept="qpA2v" id="7SXhoe9luvK" role="10QFUP">
+                    <node concept="2OqwBi" id="7SXhoe9luvL" role="3SLO0q">
+                      <node concept="oxGPV" id="7SXhoe9luvM" role="2Oq$k0" />
+                      <node concept="3TrEf2" id="7SXhoe9luvN" role="2OqNvi">
+                        <ref role="3Tt5mk" to="700h:7SXhoe9iMNu" resolve="condition" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+              <node concept="3clFbS" id="7SXhoe9luvO" role="3clFbx">
+                <node concept="3cpWs6" id="7SXhoe9luvP" role="3cqZAp">
+                  <node concept="qpA2v" id="7SXhoe9luvQ" role="3cqZAk">
+                    <node concept="2OqwBi" id="7SXhoe9luvR" role="3SLO0q">
+                      <node concept="oxGPV" id="7SXhoe9luvS" role="2Oq$k0" />
+                      <node concept="3TrEf2" id="7SXhoe9luvT" role="2OqNvi">
+                        <ref role="3Tt5mk" to="700h:7SXhoe9iMNv" resolve="then" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3cpWs6" id="7SXhoe9luvU" role="3cqZAp">
+              <node concept="2YIFZM" id="7SXhoe9luvV" role="3cqZAk">
+                <ref role="1Pybhc" to="wfax:7SXhoe9jsD5" resolve="ElementContribution" />
+                <ref role="37wK5l" to="wfax:7SXhoe9jsDl" resolve="none" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="qq9P1" id="7SXhoe9luvW" role="qq9xR">
+      <property role="2TnfIJ" value="false" />
+      <ref role="qq9wM" to="700h:7SXhoe9iMNw" resolve="SpreadCollectionElement" />
+      <node concept="3dA_Gj" id="7SXhoe9luvX" role="3vQZUl">
+        <node concept="9aQIb" id="7SXhoe9luvY" role="3vcmbn">
+          <node concept="3clFbS" id="7SXhoe9luvZ" role="9aQI4">
+            <node concept="3cpWs6" id="7SXhoe9luw0" role="3cqZAp">
+              <node concept="2YIFZM" id="7SXhoe9luw1" role="3cqZAk">
+                <ref role="1Pybhc" to="wfax:7SXhoe9jsD5" resolve="ElementContribution" />
+                <ref role="37wK5l" to="wfax:7SXhoe9jsDo" resolve="all" />
+                <node concept="qpA2v" id="7SXhoe9luw2" role="37wK5m">
+                  <node concept="2OqwBi" id="7SXhoe9luw3" role="3SLO0q">
+                    <node concept="oxGPV" id="7SXhoe9luw4" role="2Oq$k0" />
+                    <node concept="3TrEf2" id="7SXhoe9luw5" role="2OqNvi">
+                      <ref role="3Tt5mk" to="700h:7SXhoe9iMNy" resolve="collection" />
+                    </node>
+                  </node>
+                </node>
               </node>
             </node>
           </node>
