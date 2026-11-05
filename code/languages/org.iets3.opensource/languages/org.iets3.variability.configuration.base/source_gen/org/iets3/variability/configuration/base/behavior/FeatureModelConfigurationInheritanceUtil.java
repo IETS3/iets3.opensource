@@ -64,6 +64,12 @@ public class FeatureModelConfigurationInheritanceUtil {
     for (Pair<SNode, SNode> paired : ListSequence.fromList(pairBySameFeatureAttribute(AbstractFeatureConfiguration__BehaviorDescriptor.attributeAssignments_id30ECcbtQkN2.invoke(afc), AbstractFeatureConfiguration__BehaviorDescriptor.attributeAssignments_id30ECcbtQkN2.invoke(efc)))) {
       SNode afcAAs = paired.getLeft();
       SNode efcAAs = paired.getRight();
+
+      // a proposed value of the extended config is not inherited and thus cannot conflict
+      if ((boolean) FeatureAttributeAssignment__BehaviorDescriptor.proposed_idiJPTCYkgto.invoke(efcAAs)) {
+        continue;
+      }
+
       if ((SLinkOperations.getTarget(afcAAs, LINKS.value$kgDc) != null) && (FeatureAttributeAssignment__BehaviorDescriptor.getValue_id5Bs7u20FcLE.invoke(efcAAs) != null) && !(BaseConcept__BehaviorDescriptor.getPresentation_idhEwIMiw.invoke(FeatureAttributeAssignment__BehaviorDescriptor.getValue_id5Bs7u20FcLE.invoke(afcAAs)).equals(BaseConcept__BehaviorDescriptor.getPresentation_idhEwIMiw.invoke(FeatureAttributeAssignment__BehaviorDescriptor.getValue_id5Bs7u20FcLE.invoke(efcAAs))))) {
         return false;
       }
@@ -308,7 +314,8 @@ public class FeatureModelConfigurationInheritanceUtil {
       SNode extendedAssignment = paired.getRight();
       SNode inheritingAssignment = paired.getLeft();
 
-      SNode baseValue = SLinkOperations.getTarget(extendedAssignment, LINKS.value$kgDc);
+      // a proposed value (e.g. the default value assigned by the solver) is only a suggestion and must not be inherited
+      SNode baseValue = ((boolean) FeatureAttributeAssignment__BehaviorDescriptor.proposed_idiJPTCYkgto.invoke(extendedAssignment) ? null : SLinkOperations.getTarget(extendedAssignment, LINKS.value$kgDc));
       if ((baseValue != null)) {
         if (!(Objects.equals(SLinkOperations.getTarget(inheritingAssignment, LINKS.value$kgDc), baseValue))) {
           SLinkOperations.setTarget(inheritingAssignment, LINKS.value$kgDc, SNodeOperations.copyNode(baseValue));
