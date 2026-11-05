@@ -61,6 +61,7 @@
       <concept id="4972933694980447171" name="jetbrains.mps.baseLanguage.structure.BaseVariableDeclaration" flags="ng" index="19Szcq">
         <child id="5680397130376446158" name="type" index="1tU5fm" />
       </concept>
+      <concept id="1068580123152" name="jetbrains.mps.baseLanguage.structure.EqualsExpression" flags="nn" index="3clFbC" />
       <concept id="1068580123155" name="jetbrains.mps.baseLanguage.structure.ExpressionStatement" flags="nn" index="3clFbF">
         <child id="1068580123156" name="expression" index="3clFbG" />
       </concept>
@@ -125,6 +126,7 @@
       <concept id="6702802731807351367" name="jetbrains.mps.lang.constraints.structure.ConstraintFunction_CanBeAChild" flags="in" index="9S07l" />
       <concept id="6702802731807420587" name="jetbrains.mps.lang.constraints.structure.ConstraintFunction_CanBeAParent" flags="ig" index="9SLcT" />
       <concept id="1202989658459" name="jetbrains.mps.lang.constraints.structure.ConstraintFunctionParameter_parentNode" flags="nn" index="nLn13" />
+      <concept id="4303308395523343364" name="jetbrains.mps.lang.constraints.structure.ConstraintFunctionParameter_link" flags="ng" index="2DA6wF" />
       <concept id="1147467115080" name="jetbrains.mps.lang.constraints.structure.NodePropertyConstraint" flags="ng" index="EnEH3">
         <reference id="1147467295099" name="applicableProperty" index="EomxK" />
         <child id="1147468630220" name="propertyGetter" index="EtsB7" />
@@ -190,6 +192,10 @@
       <concept id="2644386474302386080" name="jetbrains.mps.lang.smodel.structure.PropertyIdRefExpression" flags="nn" index="355D3s">
         <reference id="2644386474302386081" name="conceptDeclaration" index="355D3t" />
         <reference id="2644386474302386082" name="propertyDeclaration" index="355D3u" />
+      </concept>
+      <concept id="2644386474301421077" name="jetbrains.mps.lang.smodel.structure.LinkIdRefExpression" flags="nn" index="359W_D">
+        <reference id="2644386474301421078" name="conceptDeclaration" index="359W_E" />
+        <reference id="2644386474301421079" name="linkDeclaration" index="359W_F" />
       </concept>
       <concept id="2644386474300074836" name="jetbrains.mps.lang.smodel.structure.ConceptIdRefExpression" flags="nn" index="35c_gC">
         <reference id="2644386474300074837" name="conceptDeclaration" index="35c_gD" />
@@ -1736,6 +1742,81 @@
             <node concept="1mIQ4w" id="twWOnQMLu8" role="2OqNvi">
               <node concept="chp4Y" id="twWOnQMLu9" role="cj9EA">
                 <ref role="cht4Q" to="700h:6zmBjqUinsw" resolve="ListType" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="1M2fIO" id="7SXhoe9iNEV">
+    <ref role="1M2myG" to="700h:7SXhoe9iMNs" resolve="ConditionalCollectionElement" />
+    <node concept="9S07l" id="7SXhoe9iNEW" role="9Vyp8">
+      <node concept="3clFbS" id="7SXhoe9iNEX" role="2VODD2">
+        <node concept="3cpWs6" id="7SXhoe9iNEY" role="3cqZAp">
+          <node concept="22lmx$" id="7SXhoe9iNEZ" role="3cqZAk">
+            <node concept="2OqwBi" id="7SXhoe9iNF0" role="3uHU7B">
+              <node concept="nLn13" id="7SXhoe9iNF1" role="2Oq$k0" />
+              <node concept="1mIQ4w" id="7SXhoe9iNF2" role="2OqNvi">
+                <node concept="chp4Y" id="7SXhoe9iNF3" role="cj9EA">
+                  <ref role="cht4Q" to="700h:6zmBjqUinVn" resolve="ListLiteral" />
+                </node>
+              </node>
+            </node>
+            <node concept="2OqwBi" id="7SXhoe9iNF4" role="3uHU7w">
+              <node concept="nLn13" id="7SXhoe9iNF5" role="2Oq$k0" />
+              <node concept="1mIQ4w" id="7SXhoe9iNF6" role="2OqNvi">
+                <node concept="chp4Y" id="7SXhoe9iNF7" role="cj9EA">
+                  <ref role="cht4Q" to="700h:7GwCuf2WbAd" resolve="SetLiteral" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="1M2fIO" id="7SXhoe9iNF8">
+    <ref role="1M2myG" to="700h:7SXhoe9iMNw" resolve="SpreadCollectionElement" />
+    <node concept="9S07l" id="7SXhoe9iNF9" role="9Vyp8">
+      <node concept="3clFbS" id="7SXhoe9iNFa" role="2VODD2">
+        <node concept="3cpWs6" id="7SXhoe9iNFb" role="3cqZAp">
+          <node concept="22lmx$" id="7SXhoe9iNFc" role="3cqZAk">
+            <node concept="22lmx$" id="7SXhoe9iNFd" role="3uHU7B">
+              <node concept="2OqwBi" id="7SXhoe9iNFe" role="3uHU7B">
+                <node concept="nLn13" id="7SXhoe9iNFf" role="2Oq$k0" />
+                <node concept="1mIQ4w" id="7SXhoe9iNFg" role="2OqNvi">
+                  <node concept="chp4Y" id="7SXhoe9iNFh" role="cj9EA">
+                    <ref role="cht4Q" to="700h:6zmBjqUinVn" resolve="ListLiteral" />
+                  </node>
+                </node>
+              </node>
+              <node concept="2OqwBi" id="7SXhoe9iNFi" role="3uHU7w">
+                <node concept="nLn13" id="7SXhoe9iNFj" role="2Oq$k0" />
+                <node concept="1mIQ4w" id="7SXhoe9iNFk" role="2OqNvi">
+                  <node concept="chp4Y" id="7SXhoe9iNFl" role="cj9EA">
+                    <ref role="cht4Q" to="700h:7GwCuf2WbAd" resolve="SetLiteral" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="1eOMI4" id="7SXhoe9iNFm" role="3uHU7w">
+              <node concept="1Wc70l" id="7SXhoe9iNFn" role="1eOMHV">
+                <node concept="2OqwBi" id="7SXhoe9iNFo" role="3uHU7B">
+                  <node concept="nLn13" id="7SXhoe9iNFp" role="2Oq$k0" />
+                  <node concept="1mIQ4w" id="7SXhoe9iNFq" role="2OqNvi">
+                    <node concept="chp4Y" id="7SXhoe9iNFr" role="cj9EA">
+                      <ref role="cht4Q" to="700h:7SXhoe9iMNs" resolve="ConditionalCollectionElement" />
+                    </node>
+                  </node>
+                </node>
+                <node concept="3clFbC" id="7SXhoe9iNFs" role="3uHU7w">
+                  <node concept="2DA6wF" id="7SXhoe9iNFt" role="3uHU7B" />
+                  <node concept="359W_D" id="7SXhoe9iNFu" role="3uHU7w">
+                    <ref role="359W_E" to="700h:7SXhoe9iMNs" resolve="ConditionalCollectionElement" />
+                    <ref role="359W_F" to="700h:7SXhoe9iMNv" resolve="then" />
+                  </node>
+                </node>
               </node>
             </node>
           </node>
