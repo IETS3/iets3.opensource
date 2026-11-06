@@ -1472,6 +1472,7 @@
           <module ref="49808fad-9d41-4b96-83fa-9231640f6b2b(JUnit)" kind="cl" />
           <module ref="c6420b75-4569-420d-aaf7-9bc590ad7b2a(de.itemis.mps.comparator)" kind="cl" />
           <module ref="ecfb9949-7433-4db5-85de-0f84d172e4ce(de.q60.mps.collections.libs)" kind="cl" />
+          <module ref="8585453e-6bfb-4d80-98de-b16074f1d86c(jetbrains.mps.lang.test)" kind="cl" />
           <module ref="b0f8641f-bd77-4421-8425-30d9088a82f7(org.apache.commons)" kind="cl" />
           <module ref="cfaa4966-b7d5-4b69-b66a-309a6e1a7290(org.iets3.core.expr.base)" kind="cl" />
           <module ref="6b277d9a-d52d-416f-a209-1919bd737f50(org.iets3.core.expr.simpleTypes)" kind="cl" />
