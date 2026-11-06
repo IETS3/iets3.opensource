@@ -6,7 +6,7 @@
     <use id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior" version="2" />
     <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="12" />
     <use id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections" version="2" />
-    <use id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc" version="2" />
+    <use id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc" version="3" />
     <use id="fd392034-7849-419d-9071-12563d152375" name="jetbrains.mps.baseLanguage.closures" version="0" />
     <use id="c7fb639f-be78-4307-89b0-b5959c3fa8c8" name="jetbrains.mps.lang.text" version="0" />
     <use id="774bf8a0-62e5-41e1-af63-f4812e60e48b" name="jetbrains.mps.baseLanguage.checkedDots" version="0" />
@@ -456,7 +456,6 @@
       <concept id="1140725362528" name="jetbrains.mps.lang.smodel.structure.Link_SetTargetOperation" flags="nn" index="2oxUTD">
         <child id="1140725362529" name="linkTarget" index="2oxUTC" />
       </concept>
-      <concept id="1179409122411" name="jetbrains.mps.lang.smodel.structure.Node_ConceptMethodCall" flags="nn" index="2qgKlT" />
       <concept id="1138661924179" name="jetbrains.mps.lang.smodel.structure.Property_SetOperation" flags="nn" index="tyxLq">
         <child id="1138662048170" name="value" index="tz02z" />
       </concept>
@@ -22982,7 +22981,7 @@
                 <node concept="37vLTw" id="7_2J9668MX1" role="2Oq$k0">
                   <ref role="3cqZAo" node="7_2J9668MXN" resolve="afc" />
                 </node>
-                <node concept="2qgKlT" id="7_2J9668MX2" role="2OqNvi">
+                <node concept="3zqWPK" id="RdlC9Jv5Fb" role="2OqNvi">
                   <ref role="37wK5l" node="30ECcbtQkN2" resolve="attributeAssignments" />
                 </node>
               </node>
@@ -22990,7 +22989,7 @@
                 <node concept="37vLTw" id="7_2J9668MX4" role="2Oq$k0">
                   <ref role="3cqZAo" node="7_2J9668MXP" resolve="efc" />
                 </node>
-                <node concept="2qgKlT" id="7_2J9668MX5" role="2OqNvi">
+                <node concept="3zqWPK" id="RdlC9Jv5Fd" role="2OqNvi">
                   <ref role="37wK5l" node="30ECcbtQkN2" resolve="attributeAssignments" />
                 </node>
               </node>
@@ -23066,7 +23065,7 @@
                         <node concept="37vLTw" id="3HEZZz2FfVw" role="2Oq$k0">
                           <ref role="3cqZAo" node="3HEZZz2EXld" resolve="efcAAs" />
                         </node>
-                        <node concept="2qgKlT" id="3HEZZz2FfVx" role="2OqNvi">
+                        <node concept="3zqWPK" id="RdlC9Jv5Ff" role="2OqNvi">
                           <ref role="37wK5l" node="iJPTCYkgto" resolve="proposed" />
                         </node>
                       </node>
@@ -25897,7 +25896,7 @@
                     <node concept="37vLTw" id="3HEZZz2Lz7X" role="2Oq$k0">
                       <ref role="3cqZAo" node="7_2J966vbSO" resolve="extendedAssignment" />
                     </node>
-                    <node concept="2qgKlT" id="3HEZZz2Lz7Y" role="2OqNvi">
+                    <node concept="3zqWPK" id="RdlC9Jv5Fh" role="2OqNvi">
                       <ref role="37wK5l" node="iJPTCYkgto" resolve="proposed" />
                     </node>
                   </node>
