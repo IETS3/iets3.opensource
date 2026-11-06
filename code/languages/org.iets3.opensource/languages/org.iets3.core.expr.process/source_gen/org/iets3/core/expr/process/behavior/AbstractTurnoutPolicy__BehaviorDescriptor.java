@@ -7,7 +7,6 @@ import org.jetbrains.mps.openapi.language.SAbstractConcept;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import org.pcollections.PSet;
 import org.pcollections.PCollection;
@@ -17,28 +16,21 @@ import java.util.List;
 import java.util.Arrays;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.mps.openapi.model.SNode;
-import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 
 public final class AbstractTurnoutPolicy__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getConcept(0x50b470e714ad46c3L, 0xb5404586f56d2e9cL, 0x383d50dcbb50c287L, "org.iets3.core.expr.process.structure.AbstractTurnoutPolicy");
 
-  public static final SMethod<Boolean> turnoutAchieved_id3wXkdMVmH69 = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("turnoutAchieved").modifiers(12, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(4052484148669632905L).languageId(0xb5404586f56d2e9cL, 0x50b470e714ad46c3L).build2(SMethodBuilder.createJavaParameter(PSet.class, ""), SMethodBuilder.createJavaParameter(PCollection.class, ""), SMethodBuilder.createJavaParameter(IETS3ExprContext.class, ""), SMethodBuilder.createJavaParameter(ComputationTrace.class, ""));
+  public static final SMethod<Boolean> turnoutAchieved_id3wXkdMVmH69 = new SMethodBuilder<>(Boolean.TYPE).name("turnoutAchieved").modifiers(12, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(4052484148669632905L).languageId(0xb5404586f56d2e9cL, 0x50b470e714ad46c3L).build2(SMethodBuilder.createJavaParameter(PSet.class, "parties"), SMethodBuilder.createJavaParameter(PCollection.class, "whoVoted"), SMethodBuilder.createJavaParameter(IETS3ExprContext.class, "ctx"), SMethodBuilder.createJavaParameter(ComputationTrace.class, "trace"));
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(turnoutAchieved_id3wXkdMVmH69);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(turnoutAchieved_id3wXkdMVmH69);
 
-  private static void ___init___(@NotNull SNode __thisNode__) {
-  }
 
 
   /*package*/ AbstractTurnoutPolicy__BehaviorDescriptor() {
   }
 
-  @Override
-  protected void initNode(@NotNull SNode node, @NotNull SConstructor constructor, @Nullable Object[] parameters) {
-    ___init___(node);
-  }
 
   @Override
   protected <T> T invokeSpecial0(@NotNull SNode node, @NotNull SMethod<T> method, @Nullable Object[] parameters) {

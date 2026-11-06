@@ -13,7 +13,7 @@
       <unit at="11,0,94,0" name="org.iets3.core.expr.query.structure.ConceptPresentationAspectImpl" />
     </file>
     <file name="LanguageConceptSwitch.java">
-      <unit at="10,0,42,0" name="org.iets3.core.expr.query.structure.LanguageConceptSwitch" />
+      <unit at="12,0,50,0" name="org.iets3.core.expr.query.structure.LanguageConceptSwitch" />
     </file>
     <file name="StructureAspectDescriptor.java">
       <unit at="14,0,152,0" name="org.iets3.core.expr.query.structure.StructureAspectDescriptor" />
@@ -34,8 +34,8 @@
       <scope id="6749162445851401059" at="33,43,40,31" />
     </file>
     <file name="LanguageConceptSwitch.java">
-      <node id="6749162445851401059" at="13,0,14,0" concept="6" trace="QueryExpr" />
-      <node id="6749162445851401059" at="23,61,24,48" concept="0" />
+      <node id="6749162445851401059" at="15,0,16,0" concept="6" trace="QueryExpr" />
+      <node id="6749162445851401059" at="25,61,26,48" concept="0" />
     </file>
     <file name="StructureAspectDescriptor.java">
       <node id="6749162445851401059" at="16,0,17,0" concept="1" trace="myConceptQueryExpr" />
@@ -75,8 +75,8 @@
       <scope id="6749162445851567924" at="41,45,48,33" />
     </file>
     <file name="LanguageConceptSwitch.java">
-      <node id="6749162445851567924" at="14,0,15,0" concept="6" trace="QueryFilter" />
-      <node id="6749162445851567924" at="24,48,25,50" concept="0" />
+      <node id="6749162445851567924" at="16,0,17,0" concept="6" trace="QueryFilter" />
+      <node id="6749162445851567924" at="26,48,27,50" concept="0" />
     </file>
     <file name="StructureAspectDescriptor.java">
       <node id="6749162445851567924" at="17,0,18,0" concept="1" trace="myConceptQueryFilter" />
@@ -111,8 +111,8 @@
       <scope id="6749162445851586140" at="26,56,32,44" />
     </file>
     <file name="LanguageConceptSwitch.java">
-      <node id="6749162445851586140" at="12,0,13,0" concept="6" trace="AbstractQueryComponent" />
-      <node id="6749162445851586140" at="22,116,23,61" concept="0" />
+      <node id="6749162445851586140" at="14,0,15,0" concept="6" trace="AbstractQueryComponent" />
+      <node id="6749162445851586140" at="24,116,25,61" concept="0" />
     </file>
     <file name="StructureAspectDescriptor.java">
       <node id="6749162445851586140" at="15,0,16,0" concept="1" trace="myConceptAbstractQueryComponent" />
@@ -147,8 +147,8 @@
       <scope id="6749162445851725436" at="73,45,81,33" />
     </file>
     <file name="LanguageConceptSwitch.java">
-      <node id="6749162445851725436" at="18,0,19,0" concept="6" trace="QuerySource" />
-      <node id="6749162445851725436" at="28,51,29,50" concept="0" />
+      <node id="6749162445851725436" at="20,0,21,0" concept="6" trace="QuerySource" />
+      <node id="6749162445851725436" at="30,51,31,50" concept="0" />
     </file>
     <file name="StructureAspectDescriptor.java">
       <node id="6749162445851725436" at="21,0,22,0" concept="1" trace="myConceptQuerySource" />
@@ -183,8 +183,8 @@
       <scope id="6749162445851924465" at="82,48,89,36" />
     </file>
     <file name="LanguageConceptSwitch.java">
-      <node id="6749162445851924465" at="19,0,20,0" concept="6" trace="QueryTransform" />
-      <node id="6749162445851924465" at="29,50,30,53" concept="0" />
+      <node id="6749162445851924465" at="21,0,22,0" concept="6" trace="QueryTransform" />
+      <node id="6749162445851924465" at="31,50,32,53" concept="0" />
     </file>
     <file name="StructureAspectDescriptor.java">
       <node id="6749162445851924465" at="22,0,23,0" concept="1" trace="myConceptQueryTransform" />
@@ -220,8 +220,8 @@
       <scope id="6749162445853697599" at="49,44,56,32" />
     </file>
     <file name="LanguageConceptSwitch.java">
-      <node id="6749162445853697599" at="15,0,16,0" concept="6" trace="QueryGroup" />
-      <node id="6749162445853697599" at="25,50,26,49" concept="0" />
+      <node id="6749162445853697599" at="17,0,18,0" concept="6" trace="QueryGroup" />
+      <node id="6749162445853697599" at="27,50,28,49" concept="0" />
     </file>
     <file name="StructureAspectDescriptor.java">
       <node id="6749162445853697599" at="18,0,19,0" concept="1" trace="myConceptQueryGroup" />
@@ -256,8 +256,8 @@
       <scope id="6749162445853702901" at="65,46,72,34" />
     </file>
     <file name="LanguageConceptSwitch.java">
-      <node id="6749162445853702901" at="17,0,18,0" concept="6" trace="QueryGroupBy" />
-      <node id="6749162445853702901" at="27,54,28,51" concept="0" />
+      <node id="6749162445853702901" at="19,0,20,0" concept="6" trace="QueryGroupBy" />
+      <node id="6749162445853702901" at="29,54,30,51" concept="0" />
     </file>
     <file name="StructureAspectDescriptor.java">
       <node id="6749162445853702901" at="20,0,21,0" concept="1" trace="myConceptQueryGroupBy" />
@@ -292,8 +292,8 @@
       <scope id="6749162445853827420" at="57,49,64,37" />
     </file>
     <file name="LanguageConceptSwitch.java">
-      <node id="6749162445853827420" at="16,0,17,0" concept="6" trace="QueryGroupBuild" />
-      <node id="6749162445853827420" at="26,49,27,54" concept="0" />
+      <node id="6749162445853827420" at="18,0,19,0" concept="6" trace="QueryGroupBuild" />
+      <node id="6749162445853827420" at="28,49,29,54" concept="0" />
     </file>
     <file name="StructureAspectDescriptor.java">
       <node id="6749162445853827420" at="19,0,20,0" concept="1" trace="myConceptQueryGroupBuild" />

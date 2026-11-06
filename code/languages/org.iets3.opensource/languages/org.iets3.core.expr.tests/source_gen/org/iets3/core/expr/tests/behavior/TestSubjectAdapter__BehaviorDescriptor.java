@@ -9,7 +9,6 @@ import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import java.util.List;
 import org.jetbrains.mps.openapi.model.SNode;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import jetbrains.mps.baseLanguage.tuples.runtime.Tuples;
 import java.util.Arrays;
@@ -23,15 +22,15 @@ import org.jetbrains.mps.openapi.language.SProperty;
 public final class TestSubjectAdapter__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getConcept(0xd441fba0f46b43cdL, 0xb723dad7b65da615L, 0x12e0beaa8fda1a08L, "org.iets3.core.expr.tests.structure.TestSubjectAdapter");
 
-  public static final SMethod<List<SNode>> arguments_id1bwJEEeSLhl = new SMethodBuilder<List<SNode>>(new SJavaCompoundTypeImpl((Class<List<SNode>>) ((Class) Object.class))).name("arguments").modifiers(12, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(1360296727216854101L).languageId(0xb723dad7b65da615L, 0xd441fba0f46b43cdL).build2();
-  public static final SMethod<List<Tuples._2<SNode, String>>> outputs_id1bwJEEg42nb = new SMethodBuilder<List<Tuples._2<SNode, String>>>(new SJavaCompoundTypeImpl((Class<List<Tuples._2<SNode, String>>>) ((Class) Object.class))).name("outputs").modifiers(12, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(1360296727236584907L).languageId(0xb723dad7b65da615L, 0xd441fba0f46b43cdL).build2();
-  public static final SMethod<EvalResult> run_id5AG05XYAiHw = new SMethodBuilder<EvalResult>(new SJavaCompoundTypeImpl(EvalResult.class)).name("run").modifiers(12, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(6461539975515679584L).languageId(0xb723dad7b65da615L, 0xd441fba0f46b43cdL).build2(SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""));
-  public static final SMethod<SNode> getSubject_id3_xsRJ4sekF = new SMethodBuilder<SNode>(new SJavaCompoundTypeImpl((Class<SNode>) ((Class) Object.class))).name("getSubject").modifiers(12, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(4134712908316730667L).languageId(0xb723dad7b65da615L, 0xd441fba0f46b43cdL).build2();
-  public static final SMethod<String> getName_id7WSgHRKUTmg = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("getName").modifiers(12, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(9167150562509821328L).languageId(0xb723dad7b65da615L, 0xd441fba0f46b43cdL).build2();
-  public static final SMethod<Boolean> supportsMutations_id3yVmeSjI$c6 = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("supportsMutations").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(4087958866325291782L).languageId(0xb723dad7b65da615L, 0xd441fba0f46b43cdL).build2();
-  public static final SMethod<List<SNode>> getMutatableSubtrees_id3yVmeSjI$yN = new SMethodBuilder<List<SNode>>(new SJavaCompoundTypeImpl((Class<List<SNode>>) ((Class) Object.class))).name("getMutatableSubtrees").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(4087958866325293235L).languageId(0xb723dad7b65da615L, 0xd441fba0f46b43cdL).build2();
+  public static final SMethod<List<SNode>> arguments_id1bwJEEeSLhl = new SMethodBuilder<>((Class<List<SNode>>) ((Class) Object.class)).name("arguments").modifiers(12, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(1360296727216854101L).languageId(0xb723dad7b65da615L, 0xd441fba0f46b43cdL).build2();
+  public static final SMethod<List<Tuples._2<SNode, String>>> outputs_id1bwJEEg42nb = new SMethodBuilder<>((Class<List<Tuples._2<SNode, String>>>) ((Class) Object.class)).name("outputs").modifiers(12, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(1360296727236584907L).languageId(0xb723dad7b65da615L, 0xd441fba0f46b43cdL).build2();
+  public static final SMethod<EvalResult> run_id5AG05XYAiHw = new SMethodBuilder<>(EvalResult.class).name("run").modifiers(12, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(6461539975515679584L).languageId(0xb723dad7b65da615L, 0xd441fba0f46b43cdL).build2(SMethodBuilder.createJavaParameter(SNode.class, "vector"));
+  public static final SMethod<SNode> getSubject_id3_xsRJ4sekF = new SMethodBuilder<>(SNode.class).name("getSubject").modifiers(12, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(4134712908316730667L).languageId(0xb723dad7b65da615L, 0xd441fba0f46b43cdL).build2();
+  public static final SMethod<String> getName_id7WSgHRKUTmg = new SMethodBuilder<>(String.class).name("getName").modifiers(12, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(9167150562509821328L).languageId(0xb723dad7b65da615L, 0xd441fba0f46b43cdL).build2();
+  public static final SMethod<Boolean> supportsMutations_id3yVmeSjI$c6 = new SMethodBuilder<>(Boolean.TYPE).name("supportsMutations").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(4087958866325291782L).languageId(0xb723dad7b65da615L, 0xd441fba0f46b43cdL).build2();
+  public static final SMethod<List<SNode>> getMutatableSubtrees_id3yVmeSjI$yN = new SMethodBuilder<>((Class<List<SNode>>) ((Class) Object.class)).name("getMutatableSubtrees").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(4087958866325293235L).languageId(0xb723dad7b65da615L, 0xd441fba0f46b43cdL).build2();
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(arguments_id1bwJEEeSLhl, outputs_id1bwJEEg42nb, run_id5AG05XYAiHw, getSubject_id3_xsRJ4sekF, getName_id7WSgHRKUTmg, supportsMutations_id3yVmeSjI$c6, getMutatableSubtrees_id3yVmeSjI$yN);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(arguments_id1bwJEEeSLhl, outputs_id1bwJEEg42nb, run_id5AG05XYAiHw, getSubject_id3_xsRJ4sekF, getName_id7WSgHRKUTmg, supportsMutations_id3yVmeSjI$c6, getMutatableSubtrees_id3yVmeSjI$yN);
 
   private static void ___init___(@NotNull SNode __thisNode__) {
     SPropertyOperations.assign(__thisNode__, PROPS.internalUniqueID$u16H, System.currentTimeMillis() + "/" + System.getProperty("user.name"));

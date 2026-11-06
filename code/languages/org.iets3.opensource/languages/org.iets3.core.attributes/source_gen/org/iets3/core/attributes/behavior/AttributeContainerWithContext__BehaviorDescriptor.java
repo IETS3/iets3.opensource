@@ -20,7 +20,7 @@ public final class AttributeContainerWithContext__BehaviorDescriptor extends Bas
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getConcept(0x583939beded04735L, 0xa055a74f8477fc34L, 0x43d0987d9ba5891eL, "org.iets3.core.attributes.structure.AttributeContainerWithContext");
 
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList();
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList();
 
   private static void ___init___(@NotNull SNode __thisNode__) {
     SLinkOperations.setNewChild(__thisNode__, LINKS.container$9Osz, null);

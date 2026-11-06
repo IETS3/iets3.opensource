@@ -8,7 +8,6 @@ import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import org.jetbrains.mps.openapi.language.SEnumerationLiteral;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import jetbrains.mps.baseLanguage.tuples.runtime.Tuples;
 import org.jetbrains.mps.openapi.language.SConcept;
@@ -19,29 +18,26 @@ import org.jetbrains.mps.openapi.model.SNode;
 import java.awt.Shape;
 import java.awt.geom.Rectangle2D;
 import java.awt.Polygon;
-import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 
 public final class PortCategory__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getConcept(0xf0fd486f857743e9L, 0xb6713d118449c6e7L, 0x71280102d0186c2L, "org.iets3.components.core.structure.PortCategory");
 
-  public static final SMethod<SEnumerationLiteral> kind_idsiw10H0omi = new SMethodBuilder<SEnumerationLiteral>(new SJavaCompoundTypeImpl((Class<SEnumerationLiteral>) ((Class) Object.class))).name("kind").modifiers(12, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(509610514809193874L).languageId(0xb6713d118449c6e7L, 0xf0fd486f857743e9L).build2();
-  public static final SMethod<Boolean> isGoverningSide_idsiw10H0o$5 = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("isGoverningSide").modifiers(12, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(509610514809194757L).languageId(0xb6713d118449c6e7L, 0xf0fd486f857743e9L).build2();
-  public static final SMethod<Boolean> actsAsSourceOfConnector_idmIQkxfpv6p = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("actsAsSourceOfConnector").modifiers(12, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(409503520730247577L).languageId(0xb6713d118449c6e7L, 0xf0fd486f857743e9L).build2();
-  public static final SMethod<Boolean> actsAsTargetOfConnector_id1Q0bloV3JFY = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("actsAsTargetOfConnector").modifiers(12, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(2125748872500148990L).languageId(0xb6713d118449c6e7L, 0xf0fd486f857743e9L).build2();
-  public static final SMethod<Boolean> isDirectional_idmIQkxfpvfA = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("isDirectional").modifiers(12, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(409503520730248166L).languageId(0xb6713d118449c6e7L, 0xf0fd486f857743e9L).build2();
-  public static final SMethod<Tuples._2<Integer, Integer>> multiplicity_id7Atos1y391f = new SMethodBuilder<Tuples._2<Integer, Integer>>(new SJavaCompoundTypeImpl((Class<Tuples._2<Integer, Integer>>) ((Class) Object.class))).name("multiplicity").modifiers(12, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(8763267928839458895L).languageId(0xb6713d118449c6e7L, 0xf0fd486f857743e9L).build2();
-  public static final SMethod<String> categoryString_idmIQkxgI2fs = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("categoryString").modifiers(12, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(409503520752411612L).languageId(0xb6713d118449c6e7L, 0xf0fd486f857743e9L).build2();
-  public static final SMethod<SConcept> oppositeCategory_idmIQkxfpv6J = new SMethodBuilder<SConcept>(new SJavaCompoundTypeImpl((Class<SConcept>) ((Class) Object.class))).name("oppositeCategory").modifiers(12, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(409503520730247599L).languageId(0xb6713d118449c6e7L, 0xf0fd486f857743e9L).build2();
-  public static final SMethod<Boolean> preserverOrder_id4a5BwhuNU42 = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("preserverOrder").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(4793411120013484290L).languageId(0xb6713d118449c6e7L, 0xf0fd486f857743e9L).build2();
-  public static final SMethod<PortShapeRenderer> shapeRenderer_idmIQkxgiY42 = new SMethodBuilder<PortShapeRenderer>(new SJavaCompoundTypeImpl(PortShapeRenderer.class)).name("shapeRenderer").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(409503520745316610L).languageId(0xb6713d118449c6e7L, 0xf0fd486f857743e9L).build2();
-  public static final SMethod<String> portNameSuffix_id3v9srRUC3fV = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("portNameSuffix").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(4019869203172439035L).languageId(0xb6713d118449c6e7L, 0xf0fd486f857743e9L).build2();
+  public static final SMethod<SEnumerationLiteral> kind_idsiw10H0omi = new SMethodBuilder<>(SEnumerationLiteral.class).name("kind").modifiers(12, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(509610514809193874L).languageId(0xb6713d118449c6e7L, 0xf0fd486f857743e9L).build2();
+  public static final SMethod<Boolean> isGoverningSide_idsiw10H0o$5 = new SMethodBuilder<>(Boolean.TYPE).name("isGoverningSide").modifiers(12, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(509610514809194757L).languageId(0xb6713d118449c6e7L, 0xf0fd486f857743e9L).build2();
+  public static final SMethod<Boolean> actsAsSourceOfConnector_idmIQkxfpv6p = new SMethodBuilder<>(Boolean.TYPE).name("actsAsSourceOfConnector").modifiers(12, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(409503520730247577L).languageId(0xb6713d118449c6e7L, 0xf0fd486f857743e9L).build2();
+  public static final SMethod<Boolean> actsAsTargetOfConnector_id1Q0bloV3JFY = new SMethodBuilder<>(Boolean.TYPE).name("actsAsTargetOfConnector").modifiers(12, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(2125748872500148990L).languageId(0xb6713d118449c6e7L, 0xf0fd486f857743e9L).build2();
+  public static final SMethod<Boolean> isDirectional_idmIQkxfpvfA = new SMethodBuilder<>(Boolean.TYPE).name("isDirectional").modifiers(12, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(409503520730248166L).languageId(0xb6713d118449c6e7L, 0xf0fd486f857743e9L).build2();
+  public static final SMethod<Tuples._2<Integer, Integer>> multiplicity_id7Atos1y391f = new SMethodBuilder<>((Class<Tuples._2<Integer, Integer>>) ((Class) Object.class)).name("multiplicity").modifiers(12, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(8763267928839458895L).languageId(0xb6713d118449c6e7L, 0xf0fd486f857743e9L).build2();
+  public static final SMethod<String> categoryString_idmIQkxgI2fs = new SMethodBuilder<>(String.class).name("categoryString").modifiers(12, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(409503520752411612L).languageId(0xb6713d118449c6e7L, 0xf0fd486f857743e9L).build2();
+  public static final SMethod<SConcept> oppositeCategory_idmIQkxfpv6J = new SMethodBuilder<>(SConcept.class).name("oppositeCategory").modifiers(12, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(409503520730247599L).languageId(0xb6713d118449c6e7L, 0xf0fd486f857743e9L).build2();
+  public static final SMethod<Boolean> preserverOrder_id4a5BwhuNU42 = new SMethodBuilder<>(Boolean.TYPE).name("preserverOrder").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(4793411120013484290L).languageId(0xb6713d118449c6e7L, 0xf0fd486f857743e9L).build2();
+  public static final SMethod<PortShapeRenderer> shapeRenderer_idmIQkxgiY42 = new SMethodBuilder<>(PortShapeRenderer.class).name("shapeRenderer").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(409503520745316610L).languageId(0xb6713d118449c6e7L, 0xf0fd486f857743e9L).build2();
+  public static final SMethod<String> portNameSuffix_id3v9srRUC3fV = new SMethodBuilder<>(String.class).name("portNameSuffix").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(4019869203172439035L).languageId(0xb6713d118449c6e7L, 0xf0fd486f857743e9L).build2();
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(kind_idsiw10H0omi, isGoverningSide_idsiw10H0o$5, actsAsSourceOfConnector_idmIQkxfpv6p, actsAsTargetOfConnector_id1Q0bloV3JFY, isDirectional_idmIQkxfpvfA, multiplicity_id7Atos1y391f, categoryString_idmIQkxgI2fs, oppositeCategory_idmIQkxfpv6J, preserverOrder_id4a5BwhuNU42, shapeRenderer_idmIQkxgiY42, portNameSuffix_id3v9srRUC3fV);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(kind_idsiw10H0omi, isGoverningSide_idsiw10H0o$5, actsAsSourceOfConnector_idmIQkxfpv6p, actsAsTargetOfConnector_id1Q0bloV3JFY, isDirectional_idmIQkxfpvfA, multiplicity_id7Atos1y391f, categoryString_idmIQkxgI2fs, oppositeCategory_idmIQkxfpv6J, preserverOrder_id4a5BwhuNU42, shapeRenderer_idmIQkxgiY42, portNameSuffix_id3v9srRUC3fV);
 
-  private static void ___init___(@NotNull SNode __thisNode__) {
-  }
 
   /*package*/ static boolean preserverOrder_id4a5BwhuNU42(@NotNull SNode __thisNode__) {
     return false;
@@ -66,10 +62,6 @@ public final class PortCategory__BehaviorDescriptor extends BaseBHDescriptor {
   /*package*/ PortCategory__BehaviorDescriptor() {
   }
 
-  @Override
-  protected void initNode(@NotNull SNode node, @NotNull SConstructor constructor, @Nullable Object[] parameters) {
-    ___init___(node);
-  }
 
   @Override
   protected <T> T invokeSpecial0(@NotNull SNode node, @NotNull SMethod<T> method, @Nullable Object[] parameters) {

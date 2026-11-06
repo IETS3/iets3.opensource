@@ -58,7 +58,7 @@ public class IdentifierConfiguratorAccess {
    * This method is only intended for testing purposes!
    * 
    * It allows to reset the chosen ExtensionPoint implementation for the EP identifierConfigurator
-   * For more information see TestingIdentifierConfiguratorEP: 
+   * For more information see TestingIdentifierConfiguratorEP:
    * http://127.0.0.1:63320/node?ref=r%3A6a32786e-0823-4465-b671-9705159d21d5%28test.in.expr.os.messages%40tests%29%2F3338854161630853284
    */
   public static void reset() {

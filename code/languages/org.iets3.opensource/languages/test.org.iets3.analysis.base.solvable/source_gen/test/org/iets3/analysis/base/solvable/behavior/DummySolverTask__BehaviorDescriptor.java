@@ -8,7 +8,6 @@ import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import org.iets3.core.base.behavior.IResult;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import java.util.List;
 import java.util.Arrays;
@@ -16,7 +15,6 @@ import org.jetbrains.annotations.NotNull;
 import org.jetbrains.mps.openapi.model.SNode;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations;
 import java.util.Collections;
-import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 import org.jetbrains.mps.openapi.language.SProperty;
@@ -24,15 +22,13 @@ import org.jetbrains.mps.openapi.language.SProperty;
 public final class DummySolverTask__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getConcept(0x5a0fae258093498fL, 0x81fe3b264864819aL, 0x782a6ab7cbd03ebbL, "test.org.iets3.analysis.base.solvable.structure.DummySolverTask");
 
-  public static final SMethod<IResult> run_id7rOSrvnGeUQ = new SMethodBuilder<IResult>(new SJavaCompoundTypeImpl(IResult.class)).name("run").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(8571724170506858166L).languageId(0x8fed954c202d18beL, 0xdb8bd0353f5141d8L).build2();
-  public static final SMethod<Void> finishAndCleanup_id7rOSrvnHe0i = new SMethodBuilder<Void>(new SJavaCompoundTypeImpl(Void.class)).name("finishAndCleanup").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(8571724170507116562L).languageId(0x8fed954c202d18beL, 0xdb8bd0353f5141d8L).build2();
-  public static final SMethod<String> getWarning_id7rOSrvnH60y = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("getWarning").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(8571724170507083810L).languageId(0x8fed954c202d18beL, 0xdb8bd0353f5141d8L).build2();
-  public static final SMethod<Void> setCreationTime_id4u26ju1JEr$ = new SMethodBuilder<Void>(new SJavaCompoundTypeImpl(Void.class)).name("setCreationTime").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5152708649855919844L).languageId(0x8fed954c202d18beL, 0xdb8bd0353f5141d8L).build2(SMethodBuilder.createJavaParameter(Long.TYPE, ""));
+  public static final SMethod<IResult> run_id7rOSrvnGeUQ = new SMethodBuilder<>(IResult.class).name("run").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(8571724170506858166L).languageId(0x8fed954c202d18beL, 0xdb8bd0353f5141d8L).build2();
+  public static final SMethod<Void> finishAndCleanup_id7rOSrvnHe0i = new SMethodBuilder<>(Void.TYPE).name("finishAndCleanup").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(8571724170507116562L).languageId(0x8fed954c202d18beL, 0xdb8bd0353f5141d8L).build2();
+  public static final SMethod<String> getWarning_id7rOSrvnH60y = new SMethodBuilder<>(String.class).name("getWarning").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(8571724170507083810L).languageId(0x8fed954c202d18beL, 0xdb8bd0353f5141d8L).build2();
+  public static final SMethod<Void> setCreationTime_id4u26ju1JEr$ = new SMethodBuilder<>(Void.TYPE).name("setCreationTime").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5152708649855919844L).languageId(0x8fed954c202d18beL, 0xdb8bd0353f5141d8L).build2(SMethodBuilder.createJavaParameter(Long.TYPE, "t"));
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(run_id7rOSrvnGeUQ, finishAndCleanup_id7rOSrvnHe0i, getWarning_id7rOSrvnH60y, setCreationTime_id4u26ju1JEr$);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(run_id7rOSrvnGeUQ, finishAndCleanup_id7rOSrvnHe0i, getWarning_id7rOSrvnH60y, setCreationTime_id4u26ju1JEr$);
 
-  private static void ___init___(@NotNull SNode __thisNode__) {
-  }
 
   /*package*/ static IResult run_id7rOSrvnGeUQ(@NotNull SNode __thisNode__) {
     try {
@@ -56,10 +52,6 @@ public final class DummySolverTask__BehaviorDescriptor extends BaseBHDescriptor 
   /*package*/ DummySolverTask__BehaviorDescriptor() {
   }
 
-  @Override
-  protected void initNode(@NotNull SNode node, @NotNull SConstructor constructor, @Nullable Object[] parameters) {
-    ___init___(node);
-  }
 
   @Override
   protected <T> T invokeSpecial0(@NotNull SNode node, @NotNull SMethod<T> method, @Nullable Object[] parameters) {

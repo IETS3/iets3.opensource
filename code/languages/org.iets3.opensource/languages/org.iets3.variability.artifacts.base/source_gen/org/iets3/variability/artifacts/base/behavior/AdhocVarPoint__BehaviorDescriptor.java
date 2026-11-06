@@ -7,7 +7,6 @@ import org.jetbrains.mps.openapi.language.SAbstractConcept;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import org.jetbrains.mps.openapi.model.SNode;
 import java.util.List;
@@ -15,7 +14,6 @@ import java.util.Arrays;
 import org.jetbrains.annotations.NotNull;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
 import org.apache.commons.lang3.RandomStringUtils;
-import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 import org.jetbrains.mps.openapi.language.SContainmentLink;
@@ -23,14 +21,12 @@ import org.jetbrains.mps.openapi.language.SContainmentLink;
 public final class AdhocVarPoint__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getConcept(0xf08835038eaa4bc8L, 0x8846eb63220ab1ddL, 0x37ad9e34b79dfe1cL, "org.iets3.variability.artifacts.base.structure.AdhocVarPoint");
 
-  public static final SMethod<String> nameForSolver_id3q2wVeozeaM = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("nameForSolver").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(3927846632402248370L).languageId(0x8846eb63220ab1ddL, 0xf08835038eaa4bc8L).build2();
-  public static final SMethod<SNode> artifactNode_id3q2wVepCV0v = new SMethodBuilder<SNode>(new SJavaCompoundTypeImpl((Class<SNode>) ((Class) Object.class))).name("artifactNode").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(3927846632420519967L).languageId(0x8846eb63220ab1ddL, 0xf08835038eaa4bc8L).build2();
-  public static final SMethod<String> uuid_id3uHBziRBxeV = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("uuid").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(4012036792313058235L).languageId(0x8846eb63220ab1ddL, 0xf08835038eaa4bc8L).build2();
+  public static final SMethod<String> nameForSolver_id3q2wVeozeaM = new SMethodBuilder<>(String.class).name("nameForSolver").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(3927846632402248370L).languageId(0x8846eb63220ab1ddL, 0xf08835038eaa4bc8L).build2();
+  public static final SMethod<SNode> artifactNode_id3q2wVepCV0v = new SMethodBuilder<>(SNode.class).name("artifactNode").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(3927846632420519967L).languageId(0x8846eb63220ab1ddL, 0xf08835038eaa4bc8L).build2();
+  public static final SMethod<String> uuid_id3uHBziRBxeV = new SMethodBuilder<>(String.class).name("uuid").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(4012036792313058235L).languageId(0x8846eb63220ab1ddL, 0xf08835038eaa4bc8L).build2();
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(nameForSolver_id3q2wVeozeaM, artifactNode_id3q2wVepCV0v, uuid_id3uHBziRBxeV);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(nameForSolver_id3q2wVeozeaM, artifactNode_id3q2wVepCV0v, uuid_id3uHBziRBxeV);
 
-  private static void ___init___(@NotNull SNode __thisNode__) {
-  }
 
   /*package*/ static String nameForSolver_id3q2wVeozeaM(@NotNull SNode __thisNode__) {
     return "Adhoc_" + AdhocVarPoint__BehaviorDescriptor.uuid_id3uHBziRBxeV.invoke(__thisNode__);
@@ -50,10 +46,6 @@ public final class AdhocVarPoint__BehaviorDescriptor extends BaseBHDescriptor {
   /*package*/ AdhocVarPoint__BehaviorDescriptor() {
   }
 
-  @Override
-  protected void initNode(@NotNull SNode node, @NotNull SConstructor constructor, @Nullable Object[] parameters) {
-    ___init___(node);
-  }
 
   @Override
   protected <T> T invokeSpecial0(@NotNull SNode node, @NotNull SMethod<T> method, @Nullable Object[] parameters) {

@@ -54,7 +54,7 @@ public class WalkOnVariationModels_Test extends BaseTransformationTest {
       runWithinCommand(() -> {
         List<SNode> configurations = TreeWalker.gatherChildren(getAnnotatedNode("configurationModel"), CONCEPTS.FeatureConfiguration$x2, CONCEPTS.FeatureModelConfigurationRef$kq, (SNode n) -> SLinkOperations.getTarget(((SNode) n), LINKS.config$VWuN));
 
-        Assert.assertEquals(9, ListSequence.fromList(configurations).count());
+        Assert.assertEquals(Integer.valueOf(9), Integer.valueOf(ListSequence.fromList(configurations).count()));
 
       });
     }

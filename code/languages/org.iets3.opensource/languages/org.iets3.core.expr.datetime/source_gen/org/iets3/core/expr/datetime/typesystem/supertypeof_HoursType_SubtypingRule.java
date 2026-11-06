@@ -27,9 +27,6 @@ public class supertypeof_HoursType_SubtypingRule extends SubtypingRule_Runtime i
   public boolean isWeak() {
     return false;
   }
-  public boolean surelyKeepsConcept() {
-    return true;
-  }
   private static SNode createTimeDeltaType_lsft5x_a0a1() {
     SNodeBuilder n0 = new SNodeBuilder().init(CONCEPTS.TimeDeltaType$tq);
     return n0.getResult();

@@ -7,7 +7,6 @@ import org.jetbrains.mps.openapi.language.SAbstractConcept;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import org.jetbrains.mps.openapi.model.SNode;
 import jetbrains.mps.scope.Scope;
@@ -21,7 +20,6 @@ import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
 import com.mbeddr.core.base.behavior.IVisibleElementProvider__BehaviorDescriptor;
 import jetbrains.mps.internal.collections.runtime.Sequence;
 import jetbrains.mps.scope.ListScope;
-import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 import jetbrains.mps.smodel.builder.SNodeBuilder;
@@ -33,16 +31,14 @@ import org.jetbrains.mps.openapi.language.SInterfaceConcept;
 public final class Quantity__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getConcept(0x7ee265bd59864709L, 0x86ed2c6daa33cd8cL, 0x1c3a590e2b660f17L, "org.iets3.core.expr.typetags.physunits.structure.Quantity");
 
-  public static final SMethod<Boolean> allowNonIdentifierNames_id4SwD0JT7m0l = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("allowNonIdentifierNames").modifiers(9, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5629679905544167445L).languageId(0xbd9c05c0f8725a35L, 0x7b68d745a7b848b9L).build2();
-  public static final SMethod<Iterable<SNode>> getDependenciesRelevantForCycleDetection_id59HbAIOYveX = new SMethodBuilder<Iterable<SNode>>(new SJavaCompoundTypeImpl((Class<Iterable<SNode>>) ((Class) Object.class))).name("getDependenciesRelevantForCycleDetection").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5939454523704210365L).languageId(0xaa41d1b2bffa7eb1L, 0xd4280a54f6df4383L).build2();
-  public static final SMethod<Iterable<SNode>> visibleContentsOfType_id6clJcrJXo2_ = new SMethodBuilder<Iterable<SNode>>(new SJavaCompoundTypeImpl((Class<Iterable<SNode>>) ((Class) Object.class))).name("visibleContentsOfType").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(7139820346881179813L).languageId(0xaa41d1b2bffa7eb1L, 0xd4280a54f6df4383L).build2(SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""));
-  public static final SMethod<Scope> visibleContentsOfType_id79$zShlSHxZ = new SMethodBuilder<Scope>(new SJavaCompoundTypeImpl(Scope.class)).name("visibleContentsOfType").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(8242871016534235263L).languageId(0xaa41d1b2bffa7eb1L, 0xd4280a54f6df4383L).build2(SMethodBuilder.createJavaParameter((Class<SAbstractConcept>) ((Class) Object.class), ""));
-  public static final SMethod<SNode> getCalculatedDimensionExpression_idu36xDg44He = new SMethodBuilder<SNode>(new SJavaCompoundTypeImpl((Class<SNode>) ((Class) Object.class))).name("getCalculatedDimensionExpression").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(541305080529308494L).languageId(0x86ed2c6daa33cd8cL, 0x7ee265bd59864709L).build2(SMethodBuilder.createJavaParameter(SRepository.class, ""));
+  public static final SMethod<Boolean> allowNonIdentifierNames_id4SwD0JT7m0l = new SMethodBuilder<>(Boolean.TYPE).name("allowNonIdentifierNames").modifiers(9, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5629679905544167445L).languageId(0xbd9c05c0f8725a35L, 0x7b68d745a7b848b9L).build2();
+  public static final SMethod<Iterable<SNode>> getDependenciesRelevantForCycleDetection_id59HbAIOYveX = new SMethodBuilder<>((Class<Iterable<SNode>>) ((Class) Object.class)).name("getDependenciesRelevantForCycleDetection").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5939454523704210365L).languageId(0xaa41d1b2bffa7eb1L, 0xd4280a54f6df4383L).build2();
+  public static final SMethod<Iterable<SNode>> visibleContentsOfType_id6clJcrJXo2_ = new SMethodBuilder<>((Class<Iterable<SNode>>) ((Class) Object.class)).name("visibleContentsOfType").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(7139820346881179813L).languageId(0xaa41d1b2bffa7eb1L, 0xd4280a54f6df4383L).build2(SMethodBuilder.createJavaParameter(SNode.class, "targetConcept"));
+  public static final SMethod<Scope> visibleContentsOfType_id79$zShlSHxZ = new SMethodBuilder<>(Scope.class).name("visibleContentsOfType").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(8242871016534235263L).languageId(0xaa41d1b2bffa7eb1L, 0xd4280a54f6df4383L).build2(SMethodBuilder.createJavaParameter(SAbstractConcept.class, "targetConcept"));
+  public static final SMethod<SNode> getCalculatedDimensionExpression_idu36xDg44He = new SMethodBuilder<>(SNode.class).name("getCalculatedDimensionExpression").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(541305080529308494L).languageId(0x86ed2c6daa33cd8cL, 0x7ee265bd59864709L).build2(SMethodBuilder.createJavaParameter(SRepository.class, "repository"));
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(allowNonIdentifierNames_id4SwD0JT7m0l, getDependenciesRelevantForCycleDetection_id59HbAIOYveX, visibleContentsOfType_id6clJcrJXo2_, visibleContentsOfType_id79$zShlSHxZ, getCalculatedDimensionExpression_idu36xDg44He);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(allowNonIdentifierNames_id4SwD0JT7m0l, getDependenciesRelevantForCycleDetection_id59HbAIOYveX, visibleContentsOfType_id6clJcrJXo2_, visibleContentsOfType_id79$zShlSHxZ, getCalculatedDimensionExpression_idu36xDg44He);
 
-  private static void ___init___(@NotNull SNode __thisNode__) {
-  }
 
   /*package*/ static boolean allowNonIdentifierNames_id4SwD0JT7m0l(@NotNull SAbstractConcept __thisConcept__) {
     return true;
@@ -72,10 +68,6 @@ public final class Quantity__BehaviorDescriptor extends BaseBHDescriptor {
   /*package*/ Quantity__BehaviorDescriptor() {
   }
 
-  @Override
-  protected void initNode(@NotNull SNode node, @NotNull SConstructor constructor, @Nullable Object[] parameters) {
-    ___init___(node);
-  }
 
   @Override
   protected <T> T invokeSpecial0(@NotNull SNode node, @NotNull SMethod<T> method, @Nullable Object[] parameters) {

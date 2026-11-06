@@ -8,7 +8,6 @@ import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import org.jetbrains.mps.openapi.model.SNode;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import java.util.List;
 import java.util.Arrays;
@@ -23,9 +22,9 @@ import org.jetbrains.mps.openapi.language.SConcept;
 public final class AbstractVectorCollection__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getConcept(0xd441fba0f46b43cdL, 0xb723dad7b65da615L, 0x12e0beaa8ee31422L, "org.iets3.core.expr.tests.structure.AbstractVectorCollection");
 
-  public static final SMethod<SNode> subject_id1bwJEEeTss8 = new SMethodBuilder<SNode>(new SJavaCompoundTypeImpl((Class<SNode>) ((Class) Object.class))).name("subject").modifiers(12, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(1360296727217030920L).languageId(0xb723dad7b65da615L, 0xd441fba0f46b43cdL).build2();
+  public static final SMethod<SNode> subject_id1bwJEEeTss8 = new SMethodBuilder<>(SNode.class).name("subject").modifiers(12, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(1360296727217030920L).languageId(0xb723dad7b65da615L, 0xd441fba0f46b43cdL).build2();
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(subject_id1bwJEEeTss8);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(subject_id1bwJEEeTss8);
 
   private static void ___init___(@NotNull SNode __thisNode__) {
     SLinkOperations.setNewChild(__thisNode__, LINKS.producer$h0oT, CONCEPTS.TestDataProducer$U6);
