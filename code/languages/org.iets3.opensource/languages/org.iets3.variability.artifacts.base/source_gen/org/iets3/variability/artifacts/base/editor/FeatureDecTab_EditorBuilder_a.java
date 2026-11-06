@@ -28,7 +28,7 @@ import jetbrains.mps.internal.collections.runtime.ListSequence;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
 import de.slisson.mps.tables.runtime.cells.PartialTableEditor;
 import de.slisson.mps.tables.runtime.gridmodel.EditorCellGridLeaf;
-import jetbrains.mps.nodeEditor.cells.EditorCell_Constant;
+import jetbrains.mps.nodeEditor.AbstractCellProvider;
 import de.slisson.mps.tables.runtime.gridmodel.GridAdapter;
 import de.slisson.mps.tables.runtime.gridmodel.IHeaderNodeInsertAction;
 import de.slisson.mps.tables.runtime.gridmodel.ChildNodesInsertAction;
@@ -49,6 +49,7 @@ import jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations;
 import org.iets3.variability.artifacts.base.behavior.IPreviewableArtifact__BehaviorDescriptor;
 import org.iets3.variability.artifacts.base.plugin.PreviewCriteria;
 import org.iets3.variability.artifacts.base.behavior.IVariationPointBase__BehaviorDescriptor;
+import jetbrains.mps.nodeEditor.cells.EditorCell_Constant;
 import org.iets3.variability.artifacts.base.editor.ArtifactStyles_StyleSheet.FeatureDecTabTableStyleClass;
 import jetbrains.mps.lang.editor.cellProviders.SingleRoleCellProvider;
 import org.jetbrains.mps.openapi.language.SContainmentLink;
@@ -193,7 +194,7 @@ import org.jetbrains.mps.openapi.language.SProperty;
       return new Grid();
     }
 
-    EditorCell cell = createConstant_0();
+    EditorCell cell = createCustom_0();
     final Style style = new ITableStyleFactory() {
       public Style createStyle(final int columnIndex, final int rowIndex) {
         Style style = new StyleImpl();
@@ -214,11 +215,11 @@ import org.jetbrains.mps.openapi.language.SProperty;
 
     return grid;
   }
-  private EditorCell createConstant_0() {
-    EditorCell_Constant editorCell = new EditorCell_Constant(getEditorContext(), myNode, "<no contents>");
+  private EditorCell createCustom_0() {
+    AbstractCellProvider provider = ((_FunctionTypes._return_P0_E0<FeatureDecTabEmptyContentsCellProvider>) () -> new FeatureDecTabEmptyContentsCellProvider(myNode)).invoke();
+    EditorCell editorCell = provider.createEditorCell(getEditorContext());
     editorCell.setCellId("empty_contents");
     FeatureDecTab_Empty_ActionMap.setCellActions(editorCell, myNode, getEditorContext());
-    editorCell.setDefaultText("");
     return editorCell;
   }
   public Grid createChildsVertical_wguyup_b0a(final EditorContext editorContext, final SNode node) {
@@ -402,7 +403,7 @@ import org.jetbrains.mps.openapi.language.SProperty;
       return new Grid();
     }
 
-    EditorCell cell = createConstant_1();
+    EditorCell cell = createConstant_0();
     final Style style = new ITableStyleFactory() {
       public Style createStyle(final int columnIndex, final int rowIndex) {
         Style style = new StyleImpl();
@@ -423,7 +424,7 @@ import org.jetbrains.mps.openapi.language.SProperty;
 
     return grid;
   }
-  private EditorCell createConstant_1() {
+  private EditorCell createConstant_0() {
     EditorCell_Constant editorCell = new EditorCell_Constant(getEditorContext(), myNode, "default:");
     editorCell.setCellId("Constant_wguyup_a0c0a");
     Style style = new StyleImpl();
