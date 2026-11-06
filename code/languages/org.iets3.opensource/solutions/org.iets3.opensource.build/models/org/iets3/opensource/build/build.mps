@@ -17449,6 +17449,11 @@
             <ref role="3bR37D" to="90a9:6fQhGuklQWU" resolve="de.q60.mps.collections.libs" />
           </node>
         </node>
+        <node concept="1SiIV0" id="10w6U_TC6YW" role="3bR37C">
+          <node concept="3bR9La" id="10w6U_TC6YX" role="1SiIV1">
+            <ref role="3bR37D" to="ffeo:ymnOULAU0H" resolve="jetbrains.mps.lang.test" />
+          </node>
+        </node>
       </node>
       <node concept="1E1JtA" id="7tVUji9MfSt" role="2G$12L">
         <property role="BnDLt" value="true" />
