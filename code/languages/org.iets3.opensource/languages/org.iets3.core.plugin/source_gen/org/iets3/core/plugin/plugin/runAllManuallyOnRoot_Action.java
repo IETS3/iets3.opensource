@@ -18,6 +18,7 @@ import jetbrains.mps.project.MPSProject;
 import java.util.List;
 import org.jetbrains.mps.openapi.language.SAbstractConcept;
 import jetbrains.mps.internal.collections.runtime.ListSequence;
+import org.iets3.core.expr.base.plugin.InterpreterTestRunScope;
 import org.iets3.core.base.behavior.ICanRunCheckManually__BehaviorDescriptor;
 import org.iets3.core.base.behavior.RunManuallyUtil;
 import org.jetbrains.mps.openapi.language.SInterfaceConcept;
@@ -77,9 +78,11 @@ public class runAllManuallyOnRoot_Action extends BaseAction {
     final EditorContext context = ((EditorContext) MapSequence.fromMap(_params).get("ctx"));
     CommandWithMessage.execute("running for " + ListSequence.fromList(manuals).count() + " nodes.", ((MPSProject) MapSequence.fromMap(_params).get("mpsProject")).getRepository(), new Runnable() {
       public void run() {
-        for (SNode m : ListSequence.fromList(manuals).where((it) -> (boolean) ICanRunCheckManually__BehaviorDescriptor.mustBeRunManually_id3R3AIvumAZH.invoke(it) && (boolean) ICanRunCheckManually__BehaviorDescriptor.readyToRunManually_id3R3AIvumwpv.invoke(it))) {
-          ICanRunCheckManually__BehaviorDescriptor.runManually_id3R3AIvumrTm.invoke(m, context);
-        }
+        InterpreterTestRunScope.withScope(context.getRepository(), () -> {
+          for (SNode m : ListSequence.fromList(manuals).where((it) -> (boolean) ICanRunCheckManually__BehaviorDescriptor.mustBeRunManually_id3R3AIvumAZH.invoke(it) && (boolean) ICanRunCheckManually__BehaviorDescriptor.readyToRunManually_id3R3AIvumwpv.invoke(it))) {
+            ICanRunCheckManually__BehaviorDescriptor.runManually_id3R3AIvumrTm.invoke(m, context);
+          }
+        });
         RunManuallyUtil.updateEditors(context, manuals);
       }
     });
