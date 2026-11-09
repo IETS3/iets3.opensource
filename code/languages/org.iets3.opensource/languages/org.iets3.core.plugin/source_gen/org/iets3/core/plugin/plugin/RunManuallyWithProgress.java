@@ -5,6 +5,7 @@ package org.iets3.core.plugin.plugin;
 import jetbrains.mps.project.Project;
 import jetbrains.mps.openapi.editor.EditorContext;
 import org.jetbrains.mps.openapi.model.SNode;
+import org.iets3.core.expr.base.plugin.InterpreterTestRunScope;
 import java.util.List;
 import jetbrains.mps.internal.collections.runtime.Sequence;
 import com.intellij.openapi.progress.ProgressIndicator;
@@ -19,8 +20,8 @@ public class RunManuallyWithProgress {
   public RunManuallyWithProgress() {
   }
 
-  public static void run(String message, Project project, final EditorContext context, final Iterable<SNode> toRun, final Iterable<SNode> toUpdate) {
-    CommandWithMessage.execute(message, project, () -> runNodes(context, toRun, toUpdate));
+  public static void run(String message, final Project project, final EditorContext context, final Iterable<SNode> toRun, final Iterable<SNode> toUpdate) {
+    CommandWithMessage.execute(message, project, () -> InterpreterTestRunScope.withScope(project.getRepository(), () -> runNodes(context, toRun, toUpdate)));
   }
 
   public static void runNodes(EditorContext context, Iterable<SNode> toRun, Iterable<SNode> toUpdate) {
