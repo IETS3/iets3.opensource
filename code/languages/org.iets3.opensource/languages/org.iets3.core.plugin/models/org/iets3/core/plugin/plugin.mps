@@ -39,6 +39,7 @@
     <import index="jkny" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.openapi.wm(MPS.IDEA/)" />
     <import index="alof" ref="742f6602-5a2f-4313-aa6e-ae1cd4ffdc61/java:jetbrains.mps.ide.project(MPS.Platform/)" />
     <import index="uzhr" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.openapi.diagnostic(MPS.IDEA/)" />
+    <import index="oq0c" ref="r:6c6155f0-4bbe-4af5-8c26-244d570e21e4(org.iets3.core.expr.base.plugin)" />
     <import index="tpcu" ref="r:00000000-0000-4000-0000-011c89590282(jetbrains.mps.lang.core.behavior)" implicit="true" />
   </imports>
   <registry>
@@ -336,6 +337,7 @@
         <child id="1235746996653" name="function" index="2SgG2M" />
       </concept>
       <concept id="1199569711397" name="jetbrains.mps.baseLanguage.closures.structure.ClosureLiteral" flags="nn" index="1bVj0M">
+        <property id="890797661671409019" name="forceMultiLine" index="3yWfEV" />
         <child id="1199569906740" name="parameter" index="1bW2Oz" />
         <child id="1199569916463" name="body" index="1bW5cS" />
       </concept>
@@ -5647,6 +5649,7 @@
       </node>
       <node concept="37vLTG" id="7KGO58TOrwm" role="3clF46">
         <property role="TrG5h" value="project" />
+        <property role="3TUv4t" value="true" />
         <node concept="3uibUv" id="7KGO58TOrwo" role="1tU5fm">
           <ref role="3uigEE" to="z1c3:~Project" resolve="Project" />
         </node>
@@ -5688,18 +5691,37 @@
               <ref role="3cqZAo" node="7KGO58TOrwm" resolve="project" />
             </node>
             <node concept="1bVj0M" id="7KGO58TOrwG" role="37wK5m">
+              <property role="3yWfEV" value="true" />
               <node concept="3clFbS" id="7KGO58TOrwI" role="1bW5cS">
                 <node concept="3clFbF" id="1mzU7KvtdKh" role="3cqZAp">
-                  <node concept="1rXfSq" id="1mzU7KvtdKj" role="3clFbG">
-                    <ref role="37wK5l" node="1mzU7KvtdKo" resolve="runNodes" />
-                    <node concept="37vLTw" id="1mzU7KvtdKk" role="37wK5m">
-                      <ref role="3cqZAo" node="7KGO58TOrwp" resolve="context" />
+                  <node concept="2YIFZM" id="4KEpWP$foug" role="3clFbG">
+                    <ref role="1Pybhc" to="oq0c:p7mnEsF_W6" resolve="InterpreterTestRunScope" />
+                    <ref role="37wK5l" to="oq0c:40zFNIruJkS" resolve="withScope" />
+                    <node concept="2OqwBi" id="4KEpWP$fouh" role="37wK5m">
+                      <node concept="37vLTw" id="4KEpWP$fouk" role="2Oq$k0">
+                        <ref role="3cqZAo" node="7KGO58TOrwm" resolve="project" />
+                      </node>
+                      <node concept="liA8E" id="4KEpWP$foul" role="2OqNvi">
+                        <ref role="37wK5l" to="z1c3:~Project.getRepository()" resolve="getRepository" />
+                      </node>
                     </node>
-                    <node concept="37vLTw" id="1mzU7KvtdKl" role="37wK5m">
-                      <ref role="3cqZAo" node="7KGO58TOrws" resolve="toRun" />
-                    </node>
-                    <node concept="37vLTw" id="1mzU7KvtdKm" role="37wK5m">
-                      <ref role="3cqZAo" node="7KGO58TOrwx" resolve="toUpdate" />
+                    <node concept="1bVj0M" id="4KEpWP$foum" role="37wK5m">
+                      <node concept="3clFbS" id="4KEpWP$fouo" role="1bW5cS">
+                        <node concept="3clFbF" id="4KEpWP$foup" role="3cqZAp">
+                          <node concept="1rXfSq" id="4KEpWP$four" role="3clFbG">
+                            <ref role="37wK5l" node="1mzU7KvtdKo" resolve="runNodes" />
+                            <node concept="37vLTw" id="4KEpWP$fous" role="37wK5m">
+                              <ref role="3cqZAo" node="7KGO58TOrwp" resolve="context" />
+                            </node>
+                            <node concept="37vLTw" id="4KEpWP$fout" role="37wK5m">
+                              <ref role="3cqZAo" node="7KGO58TOrws" resolve="toRun" />
+                            </node>
+                            <node concept="37vLTw" id="4KEpWP$fouu" role="37wK5m">
+                              <ref role="3cqZAo" node="7KGO58TOrwx" resolve="toUpdate" />
+                            </node>
+                          </node>
+                        </node>
+                      </node>
                     </node>
                   </node>
                 </node>
