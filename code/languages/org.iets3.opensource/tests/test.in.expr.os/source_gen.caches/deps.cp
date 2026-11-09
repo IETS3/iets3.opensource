@@ -18,6 +18,7 @@
   <uses language="l:7866978e-a0f0-4cc7-81bc-4d213d9375e1:jetbrains.mps.lang.smodel" />
   <uses language="l:8585453e-6bfb-4d80-98de-b16074f1d86c:jetbrains.mps.lang.test" />
   <uses language="l:c7fb639f-be78-4307-89b0-b5959c3fa8c8:jetbrains.mps.lang.text" />
+  <uses language="l:7a5dda62-9140-4668-ab76-d5ed1746f2b2:jetbrains.mps.lang.typesystem" />
   <uses language="l:7b68d745-a7b8-48b9-bd9c-05c0f8725a35:org.iets3.core.base" />
   <uses language="l:5fe6cb13-2fbd-4e21-9842-785bdd6fc5b1:org.iets3.core.expr.adt" />
   <uses language="l:cfaa4966-b7d5-4b69-b66a-309a6e1a7290:org.iets3.core.expr.base" />
@@ -57,6 +58,7 @@
   <uses module="920eaa0e-ecca-46bc-bee7-4e5c59213dd6(Testbench)" kind="dp" />
   <uses module="4c6a28d1-2c60-478d-b36e-db9b3cbb21fb(closures.runtime)" kind="rt+dp" />
   <uses module="9b80526e-f0bf-4992-bdf5-cee39c1833f3(collections.runtime)" kind="rt+dp" />
+  <uses module="fd8b81ba-e4f1-4a7a-891a-b50df98beabd(com.jetbrains.mpsext.viewmodel.runtime)" kind="dp" />
   <uses module="d4280a54-f6df-4383-aa41-d1b2bffa7eb1(com.mbeddr.core.base)" kind="dp" />
   <uses module="63e0e566-5131-447e-90e3-12ea330e1a00(com.mbeddr.mpsutil.blutil)" kind="dp" />
   <uses module="360a4e25-e902-4667-a0a6-0e971c4f3177(com.mbeddr.mpsutil.blutil.rt)" kind="rt" />
