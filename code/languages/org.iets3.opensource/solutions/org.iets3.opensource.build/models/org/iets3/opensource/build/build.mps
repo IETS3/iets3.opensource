@@ -3069,6 +3069,11 @@
             <ref role="3bR37D" to="ffeo:xSXmQZAqVi" resolve="jetbrains.mps.ide.httpsupport.runtime" />
           </node>
         </node>
+        <node concept="1SiIV0" id="1pVVBIrdzqA" role="3bR37C">
+          <node concept="3bR9La" id="1pVVBIrdzq_" role="1SiIV1">
+            <ref role="3bR37D" node="5wLtKNeSRPD" resolve="org.iets3.core.expr.base" />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="2G$12M" id="5wLtKNeSWz5" role="3989C9">
@@ -9710,6 +9715,11 @@
             <ref role="3bR37D" to="ffeo:xSXmQZAqVi" resolve="jetbrains.mps.ide.httpsupport.runtime" />
           </node>
         </node>
+        <node concept="1SiIV0" id="fWrWhfVBMA" role="3bR37C">
+          <node concept="3bR9La" id="fWrWhfVBMB" role="1SiIV1">
+            <ref role="3bR37D" to="ffeo:1TaHNgiIbJb" resolve="MPS.Platform" />
+          </node>
+        </node>
       </node>
       <node concept="1E1JtA" id="44TucI396gt" role="2G$12L">
         <property role="BnDLt" value="true" />
@@ -10468,6 +10478,11 @@
             <node concept="3qWCbU" id="1RMC8GHEwRn" role="3LXTna">
               <property role="3qWCbO" value="**/*.mps, **/*.mpsr, **/.model" />
             </node>
+          </node>
+        </node>
+        <node concept="1SiIV0" id="1pVVBIrdzqC" role="3bR37C">
+          <node concept="3bR9La" id="1pVVBIrdzqB" role="1SiIV1">
+            <ref role="3bR37D" node="5wLtKNeSRPD" resolve="org.iets3.core.expr.base" />
           </node>
         </node>
       </node>
@@ -16985,6 +17000,11 @@
             <ref role="3bR37D" to="ffeo:1TaHNgiIbIQ" resolve="MPS.Core" />
           </node>
         </node>
+        <node concept="1SiIV0" id="fWrWhg0PgX" role="3bR37C">
+          <node concept="3bR9La" id="fWrWhg0PgY" role="1SiIV1">
+            <ref role="3bR37D" to="90a9:55VuGTPw6_u" resolve="com.jetbrains.mpsext.viewmodel.runtime" />
+          </node>
+        </node>
       </node>
       <node concept="1E1JtA" id="7YuIrXB5Sn0" role="2G$12L">
         <property role="BnDLt" value="true" />
@@ -19058,6 +19078,11 @@
       <node concept="1SiIV0" id="54b6uwtyEmx" role="3bR37C">
         <node concept="3bR9La" id="54b6uwtyEmy" role="1SiIV1">
           <ref role="3bR37D" to="ffeo:xSXmQZAqVi" resolve="jetbrains.mps.ide.httpsupport.runtime" />
+        </node>
+      </node>
+      <node concept="1SiIV0" id="fWrWhfVBMC" role="3bR37C">
+        <node concept="3bR9La" id="fWrWhfVBMD" role="1SiIV1">
+          <ref role="3bR37D" to="ffeo:1TaHNgiIbJb" resolve="MPS.Platform" />
         </node>
       </node>
     </node>

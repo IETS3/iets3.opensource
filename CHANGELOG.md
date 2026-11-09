@@ -7,6 +7,10 @@ The project does _not_ follow Semantic Versioning and the changes are documented
 
 ## November 2026
 
+### Added
+
+- KernelF: interpreter runs that belong together share caches. `InterpreterSession` (in `org.iets3.core.expr.base.plugin`) groups them on one thread, offers `cached` for values computed from the models and `onClose` to release resources; `AbstractTestItem.executeTest` runs in one. `TypecheckingSessionScope` keeps one incremental typechecking context per root for the duration of a session, so type queries of the interpreter are no longer recomputed from scratch on every call. A query answered by such a context reports the nodes its type depends on, taken from MPS's incremental typechecking, so stored test results are still invalidated when a declaration they rely on changes. Known limitation: a stored result is invalidated when MPS's incremental typechecker would recompute the type it used, and not otherwise; reads MPS leaves out of its own dependency graph (subtyping, coercion, inequality solving, type expansion) are left out here too, so the result goes stale in roughly the cases where the editor's type errors do. `InterpreterTestRunScope` opens both for a whole run of checks: the interpreter test runner (`JUnitInterpreterExecutor`, used by "Run Tests" and headless/CI runs) and the actions "Run/Evaluate/Check All in Root/Model Manually" and "Run/Evaluate/Check Children Manually" use it.
+
 ### Fixed
 
 - Variability: attribute values only proposed by the solver (e.g. default values) are no longer inherited by extending configurations.
