@@ -13,6 +13,7 @@ import xml4JUnit.ICustomRunnerConfig;
 import jetbrains.mps.internal.collections.runtime.SetSequence;
 import java.util.HashSet;
 import jetbrains.mps.internal.collections.runtime.ListSequence;
+import org.iets3.core.expr.base.plugin.InterpreterTestRunScope;
 import jetbrains.mps.baseLanguage.logging.rt.LogContext;
 import org.jetbrains.mps.openapi.model.SNode;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
@@ -58,12 +59,17 @@ public class JUnitInterpreterExecutor {
     if (wrappers == null || ListSequence.fromList(wrappers).isEmpty()) {
       return;
     }
-    for (ITestNodeWrapper wrapper : wrappers) {
-      if (config.isTerminationRequested()) {
-        break;
+    // Each test item runs in a write action of its own (handleTestItem), and the scope spans all of them. In between,
+    // the user may edit models and each test stores its result. The scope's typechecking contexts follow those changes
+    // through their model listeners and do not cache types of detached trees, so no test sees types of an earlier state.
+    InterpreterTestRunScope.withScope(repo, () -> {
+      for (ITestNodeWrapper wrapper : wrappers) {
+        if (config.isTerminationRequested()) {
+          break;
+        }
+        doExecute(wrapper);
       }
-      doExecute(wrapper);
-    }
+    });
     SetSequence.fromSet(setOfConcepts).visitAll((it) -> LogContext.with(JUnitInterpreterExecutor.class, null, null, null).warning("concept not supported: " + it));
     config.getListener().testRunFinished(null);
     config.getReporter().runFinished();
