@@ -17,13 +17,13 @@ import org.jetbrains.annotations.NotNull;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SConceptOperations;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
-import org.jetbrains.mps.openapi.language.SConcept;
 import jetbrains.mps.internal.collections.runtime.ListSequence;
-import jetbrains.mps.internal.collections.runtime.Sequence;
+import java.util.ArrayList;
 import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 import org.jetbrains.mps.openapi.language.SContainmentLink;
+import org.jetbrains.mps.openapi.language.SConcept;
 
 public final class BinaryExpression__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getConcept(0xcfaa4966b7d54b69L, 0xb66a309a6e1a7290L, 0x46ff3b3d86c99c15L, "org.iets3.core.expr.base.structure.BinaryExpression");
@@ -55,21 +55,46 @@ public final class BinaryExpression__BehaviorDescriptor extends BaseBHDescriptor
     }
   }
   /*package*/ static boolean requiresVerticalLayout_id15gN1OJkoy_(@NotNull SNode __thisNode__) {
-    final SConcept c = SNodeOperations.getConcept(__thisNode__);
-    List<SNode> allAncestorBinaries = SNodeOperations.getNodeAncestors(__thisNode__, CONCEPTS.BinaryExpression$j$, true);
-    boolean allAreSameType = ListSequence.fromList(allAncestorBinaries).all((it) -> (int) BinaryExpression__BehaviorDescriptor.priority_id4rZeNQ6MpZB.invoke(SNodeOperations.asSConcept(SNodeOperations.getConcept(it))) == (int) BinaryExpression__BehaviorDescriptor.priority_id4rZeNQ6MpZB.invoke(SNodeOperations.asSConcept(c)));
+    int priority = ((int) BinaryExpression__BehaviorDescriptor.priority_id4rZeNQ6MpZB.invoke(__thisNode__.getConcept()));
 
-    Iterable<SNode> allOfSameType = ListSequence.fromList(allAncestorBinaries).where((it) -> (int) BinaryExpression__BehaviorDescriptor.priority_id4rZeNQ6MpZB.invoke(SNodeOperations.asSConcept(SNodeOperations.getConcept(it))) == (int) BinaryExpression__BehaviorDescriptor.priority_id4rZeNQ6MpZB.invoke(SNodeOperations.asSConcept(c)));
-    SNode topSameTypeBinary = Sequence.fromIterable(allOfSameType).last();
-    boolean minimumThreeDeep = Sequence.fromIterable(SNodeOperations.ofConcept(SNodeOperations.getNodeDescendants(topSameTypeBinary, null, false, new SAbstractConcept[]{}), CONCEPTS.BinaryExpression$j$)).where((it) -> (int) BinaryExpression__BehaviorDescriptor.priority_id4rZeNQ6MpZB.invoke(SNodeOperations.asSConcept(SNodeOperations.getConcept(it))) == (int) BinaryExpression__BehaviorDescriptor.priority_id4rZeNQ6MpZB.invoke(SNodeOperations.asSConcept(c))).count() >= 1;
+    // The chain of binary expressions this one belongs to consists of directly nested binary expressions only
+    // (left/right children). Any other node (function call, parentheses, if, ...) ends the chain.
+    SNode top = __thisNode__;
+    while (SNodeOperations.isInstanceOf(SNodeOperations.getParent(top), CONCEPTS.BinaryExpression$j$)) {
+      SNode parentBinary = SNodeOperations.cast(SNodeOperations.getParent(top), CONCEPTS.BinaryExpression$j$);
+      if ((int) BinaryExpression__BehaviorDescriptor.priority_id4rZeNQ6MpZB.invoke(SNodeOperations.asSConcept(SNodeOperations.getConcept(parentBinary))) != priority) {
+        return false;
+      }
+      top = parentBinary;
+    }
 
-    Iterable<SNode> allNonBinaries = ListSequence.fromList(SNodeOperations.getNodeDescendants(topSameTypeBinary, null, false, new SAbstractConcept[]{})).where((it) -> !(SConceptOperations.isSubConceptOf(SNodeOperations.asSConcept(SNodeOperations.getConcept(it)), CONCEPTS.BinaryExpression$j$)));
-    boolean elementIsLong = Sequence.fromIterable(allNonBinaries).any((it) -> {
-      String renderReadable = Expression__BehaviorDescriptor.renderReadable_id4Y0vh0cfqjE.invoke(SNodeOperations.as(it, CONCEPTS.Expression$D_));
-      return (renderReadable != null && renderReadable.length() > 0) && renderReadable.length() > 20;
+    // collect the members of the chain below the top (same priority) and its operands (everything else)
+    List<SNode> chain = ListSequence.fromList(new ArrayList<SNode>());
+    List<SNode> operands = ListSequence.fromList(new ArrayList<SNode>());
+    ListSequence.fromList(chain).addElement(top);
+    int next = 0;
+    while (next < ListSequence.fromList(chain).count()) {
+      SNode current = ListSequence.fromList(chain).getElement(next);
+      next++;
+      for (SNode side : ListSequence.fromListAndArray(new ArrayList<SNode>(), SLinkOperations.getTarget(current, LINKS.left$zxUa), SLinkOperations.getTarget(current, LINKS.right$zBjx))) {
+        if (SNodeOperations.isInstanceOf(side, CONCEPTS.BinaryExpression$j$) && (int) BinaryExpression__BehaviorDescriptor.priority_id4rZeNQ6MpZB.invoke(SNodeOperations.asSConcept(SNodeOperations.getConcept((SNodeOperations.cast(side, CONCEPTS.BinaryExpression$j$))))) == priority) {
+          ListSequence.fromList(chain).addElement(SNodeOperations.cast(side, CONCEPTS.BinaryExpression$j$));
+        } else {
+          ListSequence.fromList(operands).addElement(side);
+        }
+      }
+    }
+
+    // vertical layout only for 3 operands or more
+    if (ListSequence.fromList(chain).count() < 2) {
+      return false;
+    }
+
+    // >=3 operands, and at least one must be long
+    return ListSequence.fromList(operands).any((it) -> {
+      String rendered = Expression__BehaviorDescriptor.renderReadable_id4Y0vh0cfqjE.invoke(it);
+      return rendered != null && rendered.length() > 20;
     });
-
-    return allAreSameType && minimumThreeDeep && elementIsLong;
   }
 
   /*package*/ BinaryExpression__BehaviorDescriptor() {

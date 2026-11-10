@@ -10,6 +10,7 @@ The project does _not_ follow Semantic Versioning and the changes are documented
 ### Fixed
 
 - Variability: attribute values only proposed by the solver (e.g. default values) are no longer inherited by extending configurations.
+- KernelF: binary expressions inside calls or parentheses (`f(1 + 2) + 7`) are no longer wrapped as part of the enclosing operator chain (#2030).
 
 ## October 2026
 
