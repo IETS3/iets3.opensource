@@ -8,6 +8,11 @@ import java.util.Set;
 import java.util.HashSet;
 import jetbrains.mps.openapi.editor.cells.EditorCell;
 import jetbrains.mps.openapi.editor.cells.EditorCell_Collection;
+import java.util.List;
+import java.util.TreeMap;
+import jetbrains.mps.openapi.editor.cells.CellTraversalUtil;
+import java.util.ArrayList;
+import jetbrains.mps.nodeEditor.EditorSettings;
 
 public class EditorLineCounter {
   /**
@@ -38,6 +43,71 @@ public class EditorLineCounter {
         lines.add(cell.getBaseline());
         return;
       }
+    }
+  }
+
+  /**
+   * Opens the editor of editedNode (headless) and returns, for each text line occupied by the node subtree
+   * (top to bottom), the smallest x coordinate of its leaf cells, i.e. where the line starts.
+   */
+  public static List<Integer> lineStarts(SNode editedNode, SNode subtree) {
+    HeadlessEditorComponent component = new HeadlessEditorComponent(editedNode.getModel().getRepository());
+    try {
+      component.editNode(editedNode);
+      TreeMap<Integer, Integer> startPerLine = new TreeMap<Integer, Integer>();
+      for (EditorCell leaf = CellTraversalUtil.getFirstLeaf(component.getRootCell()); leaf != null; leaf = CellTraversalUtil.getNextLeaf(leaf)) {
+        if (isInside(leaf.getSNode(), subtree)) {
+          Integer line = leaf.getBaseline();
+          Integer start = startPerLine.get(line);
+          if (start == null || leaf.getX() < start) {
+            startPerLine.put(line, leaf.getX());
+          }
+        }
+      }
+      return new ArrayList<Integer>(startPerLine.values());
+    } finally {
+      component.dispose();
+    }
+  }
+
+  /**
+   * Opens the editor of editedNode (headless) and returns the x coordinate of the first leaf cell owned by
+   * owner that shows the given text, or -1 if there is none.
+   */
+  public static int xOfText(SNode editedNode, SNode owner, String text) {
+    HeadlessEditorComponent component = new HeadlessEditorComponent(editedNode.getModel().getRepository());
+    try {
+      component.editNode(editedNode);
+      for (EditorCell leaf = CellTraversalUtil.getFirstLeaf(component.getRootCell()); leaf != null; leaf = CellTraversalUtil.getNextLeaf(leaf)) {
+        if (leaf.getSNode() == owner && text.equals(leaf.renderText().getText())) {
+          return leaf.getX();
+        }
+      }
+      return -1;
+    } finally {
+      component.dispose();
+    }
+  }
+
+  private static boolean isInside(SNode node, SNode subtree) {
+    for (SNode n = node; n != null; n = n.getParent()) {
+      if (n == subtree) {
+        return true;
+      }
+    }
+    return false;
+  }
+
+  /**
+   * Returns the width in pixels of one indent unit, as used by the indent layout of the editor of editedNode.
+   */
+  public static int indentUnit(SNode editedNode) {
+    HeadlessEditorComponent component = new HeadlessEditorComponent(editedNode.getModel().getRepository());
+    try {
+      component.editNode(editedNode);
+      return component.getEditorComponentSettings().getWidth(' ', EditorSettings.getInstance().getIndentSize());
+    } finally {
+      component.dispose();
     }
   }
 }

@@ -12,6 +12,8 @@ import jetbrains.mps.lang.test.runtime.BaseTestBody;
 import jetbrains.mps.lang.test.runtime.TransformationTest;
 import org.junit.Assert;
 import org.iets3.core.expr.base.behavior.BinaryExpression__BehaviorDescriptor;
+import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
+import java.util.List;
 
 @MPSLaunch
 public class BinaryExpressionVerticalLayout_Test extends BaseTransformationTest {
@@ -73,6 +75,14 @@ public class BinaryExpressionVerticalLayout_Test extends BaseTransformationTest 
   @Test
   public void test_renderedMultiplyInPlusChainIsOnOneLine() throws Throwable {
     new TestBody(this).test_renderedMultiplyInPlusChainIsOnOneLine();
+  }
+  @Test
+  public void test_renderedContinuationLinesAreIndentedLikeWrappedLines() throws Throwable {
+    new TestBody(this).test_renderedContinuationLinesAreIndentedLikeWrappedLines();
+  }
+  @Test
+  public void test_renderedNestedChainIsIndentedDeeperThanTheEnclosingChain() throws Throwable {
+    new TestBody(this).test_renderedNestedChainIsIndentedDeeperThanTheEnclosingChain();
   }
 
   /*package*/ static class TestBody extends BaseTestBody {
@@ -161,6 +171,32 @@ public class BinaryExpressionVerticalLayout_Test extends BaseTransformationTest 
     public void test_renderedMultiplyInPlusChainIsOnOneLine() throws Exception {
       initTestNodes();
       runWithinCommand(() -> Assert.assertEquals("the multiplication 1 * 2 in 'long + 1 * 2 + 3' must be rendered on a single line", 1, EditorLineCounter.countLines(getAnnotatedNode("layoutCases"), getAnnotatedNode("mixedMul"))));
+    }
+    public void test_renderedContinuationLinesAreIndentedLikeWrappedLines() throws Exception {
+      initTestNodes();
+      runWithinCommand(() -> {
+        // automatically wrapped lines of the indent layout are indented by two indent units; the lines of a vertical chain should look the same
+        int expectedX = EditorLineCounter.lineStarts(getAnnotatedNode("layoutCases"), SNodeOperations.getParent(getAnnotatedNode("longChainTop"))).get(0) + 2 * EditorLineCounter.indentUnit(getAnnotatedNode("layoutCases"));
+        List<Integer> starts = EditorLineCounter.lineStarts(getAnnotatedNode("layoutCases"), getAnnotatedNode("longChainTop"));
+        Assert.assertEquals("long + 1 + 2 must be rendered with one operand per line", 3, starts.size());
+        Assert.assertEquals("2nd line (+ 1) must be indented like a wrapped line", expectedX, (int) starts.get(1));
+        Assert.assertEquals("3rd line (+ 2) must be indented like a wrapped line", expectedX, (int) starts.get(2));
+      });
+    }
+    public void test_renderedNestedChainIsIndentedDeeperThanTheEnclosingChain() throws Exception {
+      initTestNodes();
+      runWithinCommand(() -> {
+        int lineStart = EditorLineCounter.lineStarts(getAnnotatedNode("layoutCases"), SNodeOperations.getParent(getAnnotatedNode("nestedOuterTop"))).get(0);
+        int unit = EditorLineCounter.indentUnit(getAnnotatedNode("layoutCases"));
+        List<Integer> outer = EditorLineCounter.lineStarts(getAnnotatedNode("layoutCases"), getAnnotatedNode("nestedOuterTop"));
+        List<Integer> inner = EditorLineCounter.lineStarts(getAnnotatedNode("layoutCases"), getAnnotatedNode("nestedInnerTop"));
+        Assert.assertEquals("f(1 + 2 + f(3)) + 7 + 8 must be rendered in 5 lines", 5, outer.size());
+        Assert.assertEquals("+ 7 is a continuation of the enclosing chain", lineStart + 2 * unit, (int) outer.get(3));
+        Assert.assertEquals("+ 8 is a continuation of the enclosing chain", lineStart + 2 * unit, (int) outer.get(4));
+        Assert.assertEquals("the nested chain must be rendered in 3 lines", 3, inner.size());
+        Assert.assertEquals("+ 2 belongs to the nested chain and must be indented deeper than the enclosing chain", lineStart + 3 * unit, (int) inner.get(1));
+        Assert.assertEquals("+ f(3) belongs to the nested chain and must be indented deeper than the enclosing chain", lineStart + 3 * unit, (int) inner.get(2));
+      });
     }
 
   }

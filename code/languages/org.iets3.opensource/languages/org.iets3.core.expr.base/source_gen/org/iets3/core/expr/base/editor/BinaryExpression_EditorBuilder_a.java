@@ -14,12 +14,12 @@ import jetbrains.mps.nodeEditor.cellLayout.CellLayout_Indent;
 import jetbrains.mps.openapi.editor.style.Style;
 import jetbrains.mps.editor.runtime.style.StyleImpl;
 import jetbrains.mps.editor.runtime.style.StyleAttributes;
+import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
 import jetbrains.mps.baseLanguage.closures.runtime._FunctionTypes;
 import jetbrains.mps.openapi.editor.cells.CellActionType;
 import com.mbeddr.mpsutil.grammarcells.runtime.CellActionWithReadAccess;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
 import org.jetbrains.mps.openapi.language.SAbstractConcept;
-import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
 import com.mbeddr.mpsutil.grammarcells.runtime.GrammarCellsUtil;
 import jetbrains.mps.smodel.action.SNodeFactoryOperations;
 import jetbrains.mps.editor.runtime.selection.SelectionUtil;
@@ -40,8 +40,8 @@ import com.mbeddr.mpsutil.grammarcells.runtime.IToken;
 import jetbrains.mps.internal.collections.runtime.ListSequence;
 import java.util.ArrayList;
 import com.mbeddr.mpsutil.grammarcells.runtime.ChildToken;
-import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import org.jetbrains.mps.openapi.language.SConcept;
+import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 
 /*package*/ class BinaryExpression_EditorBuilder_a extends AbstractEditorBuilder {
   @NotNull
@@ -86,10 +86,17 @@ import org.jetbrains.mps.openapi.language.SConcept;
     editorCell.setCellId("Collection_uefsp_a0");
     Style style = new StyleImpl();
     style.set(StyleAttributes.getInstance().<Boolean>getAttribute("de.itemis.mps.editor.celllayout.styles", "_grid-layout-flatten"), true);
+    style.set(StyleAttributes.INDENT_LAYOUT_INDENT, _StyleParameter_QueryFunction_uefsp_a1a0());
     editorCell.getStyle().putAll(style);
     editorCell.addEditorCell(createCustomFactory_1());
     editorCell.addEditorCell(createCollection_1());
     return editorCell;
+  }
+  private boolean _StyleParameter_QueryFunction_uefsp_a1a0() {
+    // A vertical chain nested in another vertical chain (e.g. inside a call argument or parentheses)
+    // is indented one level deeper than the enclosing chain, so the lines can be assigned to their chain.
+    SNode enclosing = SNodeOperations.getNodeAncestor(getNode(), CONCEPTS.BinaryExpression$j$, false, false);
+    return !(SNodeOperations.isInstanceOf(SNodeOperations.getParent(getNode()), CONCEPTS.BinaryExpression$j$)) && (enclosing != null) && (boolean) BinaryExpression__BehaviorDescriptor.requiresVerticalLayout_id15gN1OJkoy_.invoke(enclosing);
   }
   private EditorCell createCustomFactory_0(final EditorContext editorContext, final SNode node) {
 
@@ -245,6 +252,7 @@ import org.jetbrains.mps.openapi.language.SConcept;
     editorCell.setCellId("Collection_uefsp_b0a");
     Style style = new StyleImpl();
     style.set(StyleAttributes.INDENT_LAYOUT_ON_NEW_LINE, true);
+    style.set(StyleAttributes.INDENT_LAYOUT_INDENT, true);
     editorCell.getStyle().putAll(style);
     editorCell.addEditorCell(createCustomFactory_3());
     editorCell.addEditorCell(createCustomFactory_7());
@@ -324,6 +332,9 @@ import org.jetbrains.mps.openapi.language.SConcept;
       constant.setOriginalText(text);
       return cell;
     }).invoke();
+    Style style = new StyleImpl();
+    style.set(StyleAttributes.INDENT_LAYOUT_INDENT, true);
+    editorCell.getStyle().putAll(style);
     return editorCell;
   }
   private EditorCell createCustomFactory_5() {
@@ -332,6 +343,9 @@ import org.jetbrains.mps.openapi.language.SConcept;
   private EditorCell createConstant_0() {
     EditorCell_Constant editorCell = new EditorCell_Constant(getEditorContext(), myNode, "");
     editorCell.setCellId("Constant_uefsp_a0a1a0");
+    Style style = new StyleImpl();
+    style.set(StyleAttributes.INDENT_LAYOUT_INDENT, true);
+    editorCell.getStyle().putAll(style);
     editorCell.setDefaultText("");
     return editorCell;
   }
@@ -1001,13 +1015,13 @@ import org.jetbrains.mps.openapi.language.SConcept;
     }
   }
 
+  private static final class CONCEPTS {
+    /*package*/ static final SConcept BinaryExpression$j$ = MetaAdapterFactory.getConcept(0xcfaa4966b7d54b69L, 0xb66a309a6e1a7290L, 0x46ff3b3d86c99c15L, "org.iets3.core.expr.base.structure.BinaryExpression");
+    /*package*/ static final SConcept Expression$D_ = MetaAdapterFactory.getConcept(0xcfaa4966b7d54b69L, 0xb66a309a6e1a7290L, 0x670d5e92f854a047L, "org.iets3.core.expr.base.structure.Expression");
+  }
+
   private static final class LINKS {
     /*package*/ static final SContainmentLink left$zxUa = MetaAdapterFactory.getContainmentLink(0xcfaa4966b7d54b69L, 0xb66a309a6e1a7290L, 0x46ff3b3d86c99c15L, 0x46ff3b3d86c99c16L, "left");
     /*package*/ static final SContainmentLink right$zBjx = MetaAdapterFactory.getContainmentLink(0xcfaa4966b7d54b69L, 0xb66a309a6e1a7290L, 0x46ff3b3d86c99c15L, 0x46ff3b3d86c99c18L, "right");
-  }
-
-  private static final class CONCEPTS {
-    /*package*/ static final SConcept Expression$D_ = MetaAdapterFactory.getConcept(0xcfaa4966b7d54b69L, 0xb66a309a6e1a7290L, 0x670d5e92f854a047L, "org.iets3.core.expr.base.structure.Expression");
-    /*package*/ static final SConcept BinaryExpression$j$ = MetaAdapterFactory.getConcept(0xcfaa4966b7d54b69L, 0xb66a309a6e1a7290L, 0x46ff3b3d86c99c15L, "org.iets3.core.expr.base.structure.BinaryExpression");
   }
 }
