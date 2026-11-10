@@ -30,16 +30,20 @@ public class EmptyContentAfterFeatureModel_Test extends BaseTransformationTest {
   }
 
   @Test
-  public void test_addingFeatureModelLeavesTwoEmptyLines() throws Throwable {
-    new TestBody(this).test_addingFeatureModelLeavesTwoEmptyLines();
+  public void test_addingFeatureModelLeavesOneEmptyLine() throws Throwable {
+    new TestBody(this).test_addingFeatureModelLeavesOneEmptyLine();
   }
   @Test
-  public void test_replacingEmptyLineWithConfigurationLeavesMoreEmptyLines() throws Throwable {
-    new TestBody(this).test_replacingEmptyLineWithConfigurationLeavesMoreEmptyLines();
+  public void test_replacingEmptyLineWithConfigurationLeavesOneEmptyLine() throws Throwable {
+    new TestBody(this).test_replacingEmptyLineWithConfigurationLeavesOneEmptyLine();
   }
   @Test
   public void test_insertingContentPreservesFollowingContentAndAddsLinesImmediatelyAfter() throws Throwable {
     new TestBody(this).test_insertingContentPreservesFollowingContentAndAddsLinesImmediatelyAfter();
+  }
+  @Test
+  public void test_insertingBetweenExistingContentDoesNotDuplicateEmptyLine() throws Throwable {
+    new TestBody(this).test_insertingBetweenExistingContentDoesNotDuplicateEmptyLine();
   }
   @Test
   public void test_addingEmptyLineDoesNotRecursivelyAddUnboundedLines() throws Throwable {
@@ -57,32 +61,29 @@ public class EmptyContentAfterFeatureModel_Test extends BaseTransformationTest {
       prepareTestNodes("2509802792080189827");
     }
 
-    public void test_addingFeatureModelLeavesTwoEmptyLines() throws Exception {
+    public void test_addingFeatureModelLeavesOneEmptyLine() throws Exception {
       initTestNodes();
       runWithinCommand(() -> {
         ListSequence.fromList(SLinkOperations.getChildren(getAnnotatedNode("chunk"), LINKS.contents$7Ohx)).clear();
         SNode featureModel = SConceptOperations.createNewNode(MetaAdapterFactory.getConcept(0x165f1d0525064544L, 0x895e1424f54166ecL, 0x375cadc47516a211L, "org.iets3.variability.featuremodel.base.structure.FeatureModel"));
         ListSequence.fromList(SLinkOperations.getChildren(getAnnotatedNode("chunk"), LINKS.contents$7Ohx)).addElement(featureModel);
-        Assert.assertEquals(3, ListSequence.fromList(SLinkOperations.getChildren(getAnnotatedNode("chunk"), LINKS.contents$7Ohx)).count());
+        Assert.assertEquals(2, ListSequence.fromList(SLinkOperations.getChildren(getAnnotatedNode("chunk"), LINKS.contents$7Ohx)).count());
         Assert.assertSame(featureModel, ListSequence.fromList(SLinkOperations.getChildren(getAnnotatedNode("chunk"), LINKS.contents$7Ohx)).getElement(0));
         Assert.assertTrue(SNodeOperations.isInstanceOf(ListSequence.fromList(SLinkOperations.getChildren(getAnnotatedNode("chunk"), LINKS.contents$7Ohx)).getElement(1), CONCEPTS.EmptyVariabilityContent$Xk));
-        Assert.assertTrue(SNodeOperations.isInstanceOf(ListSequence.fromList(SLinkOperations.getChildren(getAnnotatedNode("chunk"), LINKS.contents$7Ohx)).getElement(2), CONCEPTS.EmptyVariabilityContent$Xk));
       });
     }
-    public void test_replacingEmptyLineWithConfigurationLeavesMoreEmptyLines() throws Exception {
+    public void test_replacingEmptyLineWithConfigurationLeavesOneEmptyLine() throws Exception {
       initTestNodes();
       runWithinCommand(() -> {
         ListSequence.fromList(SLinkOperations.getChildren(getAnnotatedNode("chunk"), LINKS.contents$7Ohx)).clear();
         SNode featureModel = SConceptOperations.createNewNode(MetaAdapterFactory.getConcept(0x165f1d0525064544L, 0x895e1424f54166ecL, 0x375cadc47516a211L, "org.iets3.variability.featuremodel.base.structure.FeatureModel"));
         ListSequence.fromList(SLinkOperations.getChildren(getAnnotatedNode("chunk"), LINKS.contents$7Ohx)).addElement(featureModel);
         SNode configuration = SConceptOperations.createNewNode(MetaAdapterFactory.getConcept(0x71226ee2bbc445d2L, 0xa41d20b97237156cL, 0x5cf5c0d0479ec915L, "org.iets3.variability.configuration.base.structure.FeatureModelConfiguration"));
-        ListSequence.fromList(SLinkOperations.getChildren(getAnnotatedNode("chunk"), LINKS.contents$7Ohx)).setElement(2, configuration);
-        Assert.assertEquals(5, ListSequence.fromList(SLinkOperations.getChildren(getAnnotatedNode("chunk"), LINKS.contents$7Ohx)).count());
+        ListSequence.fromList(SLinkOperations.getChildren(getAnnotatedNode("chunk"), LINKS.contents$7Ohx)).setElement(1, configuration);
+        Assert.assertEquals(3, ListSequence.fromList(SLinkOperations.getChildren(getAnnotatedNode("chunk"), LINKS.contents$7Ohx)).count());
         Assert.assertSame(featureModel, ListSequence.fromList(SLinkOperations.getChildren(getAnnotatedNode("chunk"), LINKS.contents$7Ohx)).getElement(0));
-        Assert.assertSame(configuration, ListSequence.fromList(SLinkOperations.getChildren(getAnnotatedNode("chunk"), LINKS.contents$7Ohx)).getElement(2));
-        Assert.assertTrue(SNodeOperations.isInstanceOf(ListSequence.fromList(SLinkOperations.getChildren(getAnnotatedNode("chunk"), LINKS.contents$7Ohx)).getElement(1), CONCEPTS.EmptyVariabilityContent$Xk));
-        Assert.assertTrue(SNodeOperations.isInstanceOf(ListSequence.fromList(SLinkOperations.getChildren(getAnnotatedNode("chunk"), LINKS.contents$7Ohx)).getElement(3), CONCEPTS.EmptyVariabilityContent$Xk));
-        Assert.assertTrue(SNodeOperations.isInstanceOf(ListSequence.fromList(SLinkOperations.getChildren(getAnnotatedNode("chunk"), LINKS.contents$7Ohx)).getElement(4), CONCEPTS.EmptyVariabilityContent$Xk));
+        Assert.assertSame(configuration, ListSequence.fromList(SLinkOperations.getChildren(getAnnotatedNode("chunk"), LINKS.contents$7Ohx)).getElement(1));
+        Assert.assertTrue(SNodeOperations.isInstanceOf(ListSequence.fromList(SLinkOperations.getChildren(getAnnotatedNode("chunk"), LINKS.contents$7Ohx)).getElement(2), CONCEPTS.EmptyVariabilityContent$Xk));
       });
     }
     public void test_insertingContentPreservesFollowingContentAndAddsLinesImmediatelyAfter() throws Exception {
@@ -93,13 +94,29 @@ public class EmptyContentAfterFeatureModel_Test extends BaseTransformationTest {
         ListSequence.fromList(SLinkOperations.getChildren(getAnnotatedNode("chunk"), LINKS.contents$7Ohx)).addElement(following);
         SNode inserted = SConceptOperations.createNewNode(MetaAdapterFactory.getConcept(0x165f1d0525064544L, 0x895e1424f54166ecL, 0x375cadc47516a211L, "org.iets3.variability.featuremodel.base.structure.FeatureModel"));
         ListSequence.fromList(SLinkOperations.getChildren(getAnnotatedNode("chunk"), LINKS.contents$7Ohx)).insertElement(0, inserted);
-        Assert.assertEquals(6, ListSequence.fromList(SLinkOperations.getChildren(getAnnotatedNode("chunk"), LINKS.contents$7Ohx)).count());
+        Assert.assertEquals(4, ListSequence.fromList(SLinkOperations.getChildren(getAnnotatedNode("chunk"), LINKS.contents$7Ohx)).count());
         Assert.assertSame(inserted, ListSequence.fromList(SLinkOperations.getChildren(getAnnotatedNode("chunk"), LINKS.contents$7Ohx)).getElement(0));
         Assert.assertTrue(SNodeOperations.isInstanceOf(ListSequence.fromList(SLinkOperations.getChildren(getAnnotatedNode("chunk"), LINKS.contents$7Ohx)).getElement(1), CONCEPTS.EmptyVariabilityContent$Xk));
+        Assert.assertSame(following, ListSequence.fromList(SLinkOperations.getChildren(getAnnotatedNode("chunk"), LINKS.contents$7Ohx)).getElement(2));
+        Assert.assertTrue(SNodeOperations.isInstanceOf(ListSequence.fromList(SLinkOperations.getChildren(getAnnotatedNode("chunk"), LINKS.contents$7Ohx)).getElement(3), CONCEPTS.EmptyVariabilityContent$Xk));
+      });
+    }
+    public void test_insertingBetweenExistingContentDoesNotDuplicateEmptyLine() throws Exception {
+      initTestNodes();
+      runWithinCommand(() -> {
+        ListSequence.fromList(SLinkOperations.getChildren(getAnnotatedNode("chunk"), LINKS.contents$7Ohx)).clear();
+        SNode first = SConceptOperations.createNewNode(MetaAdapterFactory.getConcept(0x165f1d0525064544L, 0x895e1424f54166ecL, 0x375cadc47516a211L, "org.iets3.variability.featuremodel.base.structure.FeatureModel"));
+        ListSequence.fromList(SLinkOperations.getChildren(getAnnotatedNode("chunk"), LINKS.contents$7Ohx)).addElement(first);
+        SNode second = SConceptOperations.createNewNode(MetaAdapterFactory.getConcept(0x165f1d0525064544L, 0x895e1424f54166ecL, 0x375cadc47516a211L, "org.iets3.variability.featuremodel.base.structure.FeatureModel"));
+        ListSequence.fromList(SLinkOperations.getChildren(getAnnotatedNode("chunk"), LINKS.contents$7Ohx)).addElement(second);
+        SNode inserted = SConceptOperations.createNewNode(MetaAdapterFactory.getConcept(0x165f1d0525064544L, 0x895e1424f54166ecL, 0x375cadc47516a211L, "org.iets3.variability.featuremodel.base.structure.FeatureModel"));
+        ListSequence.fromList(SLinkOperations.getChildren(getAnnotatedNode("chunk"), LINKS.contents$7Ohx)).insertElement(1, inserted);
+        Assert.assertEquals(5, ListSequence.fromList(SLinkOperations.getChildren(getAnnotatedNode("chunk"), LINKS.contents$7Ohx)).count());
+        Assert.assertSame(first, ListSequence.fromList(SLinkOperations.getChildren(getAnnotatedNode("chunk"), LINKS.contents$7Ohx)).getElement(0));
+        Assert.assertSame(inserted, ListSequence.fromList(SLinkOperations.getChildren(getAnnotatedNode("chunk"), LINKS.contents$7Ohx)).getElement(1));
         Assert.assertTrue(SNodeOperations.isInstanceOf(ListSequence.fromList(SLinkOperations.getChildren(getAnnotatedNode("chunk"), LINKS.contents$7Ohx)).getElement(2), CONCEPTS.EmptyVariabilityContent$Xk));
-        Assert.assertSame(following, ListSequence.fromList(SLinkOperations.getChildren(getAnnotatedNode("chunk"), LINKS.contents$7Ohx)).getElement(3));
+        Assert.assertSame(second, ListSequence.fromList(SLinkOperations.getChildren(getAnnotatedNode("chunk"), LINKS.contents$7Ohx)).getElement(3));
         Assert.assertTrue(SNodeOperations.isInstanceOf(ListSequence.fromList(SLinkOperations.getChildren(getAnnotatedNode("chunk"), LINKS.contents$7Ohx)).getElement(4), CONCEPTS.EmptyVariabilityContent$Xk));
-        Assert.assertTrue(SNodeOperations.isInstanceOf(ListSequence.fromList(SLinkOperations.getChildren(getAnnotatedNode("chunk"), LINKS.contents$7Ohx)).getElement(5), CONCEPTS.EmptyVariabilityContent$Xk));
       });
     }
     public void test_addingEmptyLineDoesNotRecursivelyAddUnboundedLines() throws Exception {

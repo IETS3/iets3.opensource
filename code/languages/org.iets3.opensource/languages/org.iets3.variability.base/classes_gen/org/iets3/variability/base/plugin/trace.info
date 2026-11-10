@@ -238,6 +238,31 @@
       <unit id="5945895419954055713" at="12,0,22,0" name="org.iets3.variability.base.plugin.ITableWriter" />
     </file>
   </root>
+  <root nodeRef="r:aeef8772-8af4-45c3-a762-623d4009d953(org.iets3.variability.base.plugin)/6268037462346826453">
+    <file name="EmptyVariabilityContentHelper.java">
+      <node id="6268037462346826479" at="27,191,28,13" concept="6" />
+      <node id="6268037462346826488" at="29,5,30,112" concept="5" />
+      <node id="6268037462346826498" at="30,112,31,300" concept="2" />
+      <node id="6268037462346826453" at="35,0,36,0" concept="9" trace="EmptyVariabilityContent$Xk" />
+      <node id="6268037462346826453" at="39,0,40,0" concept="9" trace="contents$7Ohx" />
+      <node id="6268037462346826455" at="19,0,21,0" concept="1" trace="EmptyVariabilityContentHelper#()V" />
+      <node id="6268037462346826466" at="26,69,29,5" concept="3" />
+      <node id="6268037462346826458" at="26,0,33,0" concept="10" trace="ensureEmptyLineAfter#(Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;)V" />
+      <scope id="6268037462346826499" at="19,43,19,43" />
+      <scope id="6268037462346826478" at="27,191,28,13" />
+      <scope id="6268037462346826455" at="19,0,21,0" />
+      <scope id="6268037462346826465" at="26,69,31,300">
+        <var name="indexOf" id="6268037462346826480" />
+      </scope>
+      <scope id="6268037462346826458" at="26,0,33,0">
+        <var name="child" id="6268037462346826463" />
+        <var name="chunk" id="6268037462346826461" />
+      </scope>
+      <unit id="6268037462346826453" at="34,0,37,0" name="org.iets3.variability.base.plugin.EmptyVariabilityContentHelper$CONCEPTS" />
+      <unit id="6268037462346826453" at="38,0,41,0" name="org.iets3.variability.base.plugin.EmptyVariabilityContentHelper$LINKS" />
+      <unit id="6268037462346826453" at="18,0,42,0" name="org.iets3.variability.base.plugin.EmptyVariabilityContentHelper" />
+    </file>
+  </root>
   <root nodeRef="r:aeef8772-8af4-45c3-a762-623d4009d953(org.iets3.variability.base.plugin)/6499139380144615169">
     <file name="GeneratorDefinitions.java">
       <node id="6499139380165239812" at="8,0,9,0" concept="9" trace="PATH_DELIMITER" />
