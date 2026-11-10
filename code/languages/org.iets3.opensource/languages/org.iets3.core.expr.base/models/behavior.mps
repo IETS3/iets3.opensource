@@ -8297,23 +8297,31 @@
                 <node concept="2OqwBi" id="2nydsCf$fXR" role="2Oq$k0">
                   <node concept="2OqwBi" id="2nydsCf$fXS" role="2Oq$k0">
                     <node concept="2OqwBi" id="2nydsCf$fXT" role="2Oq$k0">
-                      <node concept="2ShNRf" id="2nydsCf$fXU" role="2Oq$k0">
-                        <node concept="HV5vD" id="2nydsCf$fXV" role="2ShVmc">
-                          <property role="373rjd" value="true" />
-                          <ref role="HV5vE" node="2nydsCfyYD0" resolve="IETS3ExprEvaluator" />
+                      <node concept="2OqwBi" id="6TnxZGmQdbR" role="2Oq$k0">
+                        <node concept="2ShNRf" id="6TnxZGmQdbU" role="2Oq$k0">
+                          <node concept="HV5vD" id="6TnxZGmQdbW" role="2ShVmc">
+                            <property role="373rjd" value="true" />
+                            <ref role="HV5vE" node="2nydsCfyYD0" resolve="IETS3ExprEvaluator" />
+                          </node>
+                        </node>
+                        <node concept="liA8E" id="6TnxZGmQdbX" role="2OqNvi">
+                          <ref role="37wK5l" node="2nydsCfvv5Z" resolve="withContext" />
+                          <node concept="37vLTw" id="6TnxZGmQdbY" role="37wK5m">
+                            <ref role="3cqZAo" node="5ElQ4Zyzog" resolve="context" />
+                          </node>
                         </node>
                       </node>
                       <node concept="liA8E" id="2nydsCf$fXW" role="2OqNvi">
-                        <ref role="37wK5l" node="2nydsCfvv5Z" resolve="withContext" />
+                        <ref role="37wK5l" node="2nydsCfw1oG" resolve="withCoverAnalyzer" />
                         <node concept="37vLTw" id="2nydsCf$fXX" role="37wK5m">
-                          <ref role="3cqZAo" node="5ElQ4Zyzog" resolve="context" />
+                          <ref role="3cqZAo" node="5ElQ4ZyMvG" resolve="coverage" />
                         </node>
                       </node>
                     </node>
                     <node concept="liA8E" id="2nydsCf$fXY" role="2OqNvi">
-                      <ref role="37wK5l" node="2nydsCfw1oG" resolve="withCoverAnalyzer" />
-                      <node concept="37vLTw" id="2nydsCf$fXZ" role="37wK5m">
-                        <ref role="3cqZAo" node="5ElQ4ZyMvG" resolve="coverage" />
+                      <ref role="37wK5l" node="2nydsCfvLxS" resolve="withComputationTrace" />
+                      <node concept="3clFbT" id="6TnxZGmQdbZ" role="37wK5m">
+                        <property role="3clFbU" value="false" />
                       </node>
                     </node>
                   </node>
@@ -8940,16 +8948,24 @@
               <node concept="2OqwBi" id="2nydsCfB4SG" role="3cqZAk">
                 <node concept="2OqwBi" id="2nydsCfB2JJ" role="2Oq$k0">
                   <node concept="2OqwBi" id="2nydsCfB0sQ" role="2Oq$k0">
-                    <node concept="2ShNRf" id="2nydsCfAZ1L" role="2Oq$k0">
-                      <node concept="HV5vD" id="2nydsCfAZSo" role="2ShVmc">
-                        <property role="373rjd" value="true" />
-                        <ref role="HV5vE" node="2nydsCfyYD0" resolve="IETS3ExprEvaluator" />
+                    <node concept="2OqwBi" id="6TnxZGmQual" role="2Oq$k0">
+                      <node concept="2ShNRf" id="6TnxZGmQuao" role="2Oq$k0">
+                        <node concept="HV5vD" id="6TnxZGmQuaq" role="2ShVmc">
+                          <property role="373rjd" value="true" />
+                          <ref role="HV5vE" node="2nydsCfyYD0" resolve="IETS3ExprEvaluator" />
+                        </node>
+                      </node>
+                      <node concept="liA8E" id="6TnxZGmQuar" role="2OqNvi">
+                        <ref role="37wK5l" node="2nydsCfw1oG" resolve="withCoverAnalyzer" />
+                        <node concept="37vLTw" id="6TnxZGmQuas" role="37wK5m">
+                          <ref role="3cqZAo" node="5ElQ4Z$pOr" resolve="coverage" />
+                        </node>
                       </node>
                     </node>
                     <node concept="liA8E" id="2nydsCfB130" role="2OqNvi">
-                      <ref role="37wK5l" node="2nydsCfw1oG" resolve="withCoverAnalyzer" />
-                      <node concept="37vLTw" id="2nydsCfB2bs" role="37wK5m">
-                        <ref role="3cqZAo" node="5ElQ4Z$pOr" resolve="coverage" />
+                      <ref role="37wK5l" node="2nydsCfvLxS" resolve="withComputationTrace" />
+                      <node concept="3clFbT" id="6TnxZGmQuat" role="37wK5m">
+                        <property role="3clFbU" value="false" />
                       </node>
                     </node>
                   </node>
@@ -25083,12 +25099,7 @@
             <node concept="3cpWs6" id="7gBavbyuRAR" role="3cqZAp">
               <node concept="2OqwBi" id="7gBavbyuRAS" role="3cqZAk">
                 <node concept="2OqwBi" id="7gBavbyuRAT" role="2Oq$k0">
-                  <node concept="2ShNRf" id="7gBavbyuRAU" role="2Oq$k0">
-                    <node concept="HV5vD" id="7gBavbyuRAV" role="2ShVmc">
-                      <property role="373rjd" value="true" />
-                      <ref role="HV5vE" node="2nydsCfyYD0" resolve="IETS3ExprEvaluator" />
-                    </node>
-                  </node>
+                  <node concept="Xjq3P" id="6TnxZGmQGj4" role="2Oq$k0" />
                   <node concept="liA8E" id="7gBavbyuRAW" role="2OqNvi">
                     <ref role="37wK5l" node="2nydsCfz7eH" resolve="evaluate" />
                     <node concept="37vLTw" id="7gBavbyuRAX" role="37wK5m">

@@ -29,7 +29,10 @@ public class CVH {
     if (warning) {
       handlerToUse.reportWarning(kind, causingValue, ctx, nodeWithError, msg, trace);
     } else {
-      trace.markForReveal();
+      // the trace is null when the evaluation runs without a computation trace
+      if (trace != null) {
+        trace.markForReveal();
+      }
       handlerToUse.reportError(kind, causingValue, ctx, nodeWithError, msg, trace);
     }
   }

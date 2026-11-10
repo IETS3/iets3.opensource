@@ -36,7 +36,7 @@ public class IETS3ExprEvalHelper {
 
   private static Object evaluateWithContextInternal(SNode expr, IETS3ExprContext context, ICoverageAnalyzer coverage) {
     try {
-      return new IETS3ExprEvaluator().withContext(context).withCoverAnalyzer(coverage).evaluate(expr).getValue();
+      return new IETS3ExprEvaluator().withContext(context).withCoverAnalyzer(coverage).withComputationTrace(false).evaluate(expr).getValue();
     } catch (StopAndReturnException stopEx) {
       return stopEx.value();
     }
@@ -98,7 +98,7 @@ public class IETS3ExprEvalHelper {
 
   private static Object evaluateAndThrowConstraintFailuresInternal(SNode expr, ICoverageAnalyzer coverage) {
     try {
-      return new IETS3ExprEvaluator().withCoverAnalyzer(coverage).evaluate(expr).getValue();
+      return new IETS3ExprEvaluator().withCoverAnalyzer(coverage).withComputationTrace(false).evaluate(expr).getValue();
     } catch (ConstraintFailedException cfe) {
       throw cfe;
     } catch (StopAndReturnException stopEx) {

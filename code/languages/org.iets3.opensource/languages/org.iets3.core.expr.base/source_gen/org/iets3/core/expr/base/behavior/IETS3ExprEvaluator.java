@@ -55,7 +55,7 @@ public class IETS3ExprEvaluator {
 
   public Object evaluateAndThrowConstraintFailures(SNode expr) {
     try {
-      return new IETS3ExprEvaluator().evaluate(expr).getValue();
+      return this.evaluate(expr).getValue();
     } catch (ConstraintFailedException cfe) {
       throw cfe;
     } catch (StopAndReturnException stopEx) {

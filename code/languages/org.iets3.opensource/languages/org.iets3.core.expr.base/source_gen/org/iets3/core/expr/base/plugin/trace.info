@@ -2540,34 +2540,36 @@
       <node id="4770439604297000665" at="26,0,27,68" concept="11" />
       <node id="4770439604297000513" at="27,68,28,0" concept="14" />
       <node id="4770439604297002078" at="29,18,30,85" concept="5" />
-      <node id="4770439604297011663" at="31,12,32,28" concept="5" />
-      <node id="4770439604297015915" at="32,28,33,83" concept="5" />
-      <node id="4770439604296995000" at="37,63,38,44" concept="11" />
-      <node id="4770439604296994945" at="39,32,40,59" concept="5" />
-      <node id="4770439604296994955" at="42,32,43,158" concept="11" />
-      <node id="4770439604296994959" at="43,158,44,72" concept="11" />
-      <node id="4770439604296994968" at="45,56,46,63" concept="5" />
-      <node id="4770439604296994978" at="47,16,48,64" concept="5" />
-      <node id="4770439604296994987" at="50,7,51,33" concept="5" />
-      <node id="4770439604296994991" at="52,5,53,24" concept="12" />
-      <node id="4770439604296994976" at="47,14,49,9" concept="1" />
+      <node id="7950973179635595700" at="31,12,32,79" concept="13" />
+      <node id="7950973179635595727" at="33,26,34,30" concept="5" />
+      <node id="4770439604297015915" at="35,7,36,83" concept="5" />
+      <node id="4770439604296995000" at="40,63,41,44" concept="11" />
+      <node id="4770439604296994945" at="42,32,43,59" concept="5" />
+      <node id="4770439604296994955" at="45,32,46,158" concept="11" />
+      <node id="4770439604296994959" at="46,158,47,72" concept="11" />
+      <node id="4770439604296994968" at="48,56,49,63" concept="5" />
+      <node id="4770439604296994978" at="50,16,51,64" concept="5" />
+      <node id="4770439604296994987" at="53,7,54,33" concept="5" />
+      <node id="4770439604296994991" at="55,5,56,24" concept="12" />
+      <node id="4770439604296994976" at="50,14,52,9" concept="1" />
       <node id="4577412849443004493" at="16,0,19,0" concept="16" trace="reportErrorIfFalse#(Lcom/mbeddr/mpsutil/interpreter/rt/IContext;Ljava/lang/String;Ljava/lang/Object;Ljava/lang/Object;Lorg/jetbrains/mps/openapi/model/SNode;Lorg/iets3/core/expr/base/plugin/MessageValue;Lcom/mbeddr/mpsutil/interpreter/rt/ComputationTrace;)V" />
       <node id="1163530755626352913" at="20,182,23,5" concept="9" />
-      <node id="4770439604297010019" at="31,10,34,5" concept="1" />
-      <node id="4770439604296994966" at="44,72,49,9" concept="9" />
-      <node id="4770439604297000325" at="28,0,34,5" concept="9" />
-      <node id="4770439604296994953" at="41,12,50,7" concept="9" />
-      <node id="4770439604296994951" at="41,10,52,5" concept="1" />
-      <node id="4770439604296994943" at="38,44,52,5" concept="9" />
-      <node id="4770439604296999256" at="20,0,36,0" concept="16" trace="reportIfFalse#(Lcom/mbeddr/mpsutil/interpreter/rt/IContext;Ljava/lang/String;Ljava/lang/Object;Ljava/lang/Object;Lorg/jetbrains/mps/openapi/model/SNode;Lorg/iets3/core/expr/base/plugin/MessageValue;Lcom/mbeddr/mpsutil/interpreter/rt/ComputationTrace;Z)V" />
-      <node id="4770439604296994995" at="37,0,55,0" concept="16" trace="getHandlerToUse#()Lorg/iets3/core/expr/base/plugin/ConstraintViolationHandler;" />
+      <node id="7950973179635595718" at="32,79,35,7" concept="9" />
+      <node id="4770439604296994966" at="47,72,52,9" concept="9" />
+      <node id="4770439604297010019" at="31,10,37,5" concept="1" />
+      <node id="4770439604297000325" at="28,0,37,5" concept="9" />
+      <node id="4770439604296994953" at="44,12,53,7" concept="9" />
+      <node id="4770439604296994951" at="44,10,55,5" concept="1" />
+      <node id="4770439604296994943" at="41,44,55,5" concept="9" />
+      <node id="4770439604296994995" at="40,0,58,0" concept="16" trace="getHandlerToUse#()Lorg/iets3/core/expr/base/plugin/ConstraintViolationHandler;" />
+      <node id="4770439604296999256" at="20,0,39,0" concept="16" trace="reportIfFalse#(Lcom/mbeddr/mpsutil/interpreter/rt/IContext;Ljava/lang/String;Ljava/lang/Object;Ljava/lang/Object;Lorg/jetbrains/mps/openapi/model/SNode;Lorg/iets3/core/expr/base/plugin/MessageValue;Lcom/mbeddr/mpsutil/interpreter/rt/ComputationTrace;Z)V" />
       <scope id="4577412849442987052" at="16,170,17,88" />
       <scope id="1163530755626352915" at="21,41,22,13" />
       <scope id="4770439604297000327" at="29,18,30,85" />
-      <scope id="4770439604296994944" at="39,32,40,59" />
-      <scope id="4770439604296994967" at="45,56,46,63" />
-      <scope id="4770439604296994977" at="47,16,48,64" />
-      <scope id="4770439604297010020" at="31,12,33,83" />
+      <scope id="7950973179635595726" at="33,26,34,30" />
+      <scope id="4770439604296994944" at="42,32,43,59" />
+      <scope id="4770439604296994967" at="48,56,49,63" />
+      <scope id="4770439604296994977" at="50,16,51,64" />
       <scope id="4577412849443004493" at="16,0,19,0">
         <var name="causingValue" id="4577412849442987056" />
         <var name="ctx" id="4577412849442987054" />
@@ -2577,15 +2579,20 @@
         <var name="trace" id="2662069320760075652" />
         <var name="trueOrNot" id="4089451559932065551" />
       </scope>
-      <scope id="4770439604296994954" at="42,32,49,9">
+      <scope id="4770439604297010020" at="31,12,36,83" />
+      <scope id="4770439604296994954" at="45,32,52,9">
         <var name="ep" id="4770439604296994956" />
         <var name="handlers" id="4770439604296994960" />
       </scope>
-      <scope id="4770439604296994952" at="41,12,51,33" />
-      <scope id="4770439604296999259" at="20,182,34,5">
+      <scope id="4770439604296994952" at="44,12,54,33" />
+      <scope id="4770439604296994940" at="40,63,56,24">
+        <var name="handlerToUse" id="4770439604296994999" />
+      </scope>
+      <scope id="4770439604296999259" at="20,182,37,5">
         <var name="handlerToUse" id="4770439604297000666" />
       </scope>
-      <scope id="4770439604296999256" at="20,0,36,0">
+      <scope id="4770439604296994995" at="40,0,58,0" />
+      <scope id="4770439604296999256" at="20,0,39,0">
         <var name="causingValue" id="4770439604296999467" />
         <var name="ctx" id="4770439604296999463" />
         <var name="kind" id="4770439604296999465" />
@@ -2595,11 +2602,7 @@
         <var name="trueOrNot" id="4770439604296999469" />
         <var name="warning" id="4770439604296999607" />
       </scope>
-      <scope id="4770439604296994940" at="37,63,53,24">
-        <var name="handlerToUse" id="4770439604296994999" />
-      </scope>
-      <scope id="4770439604296994995" at="37,0,55,0" />
-      <unit id="4577412849442986942" at="11,0,57,0" name="org.iets3.core.expr.base.plugin.CVH" />
+      <unit id="4577412849442986942" at="11,0,60,0" name="org.iets3.core.expr.base.plugin.CVH" />
     </file>
   </root>
   <root nodeRef="r:6c6155f0-4bbe-4af5-8c26-244d570e21e4(org.iets3.core.expr.base.plugin)/4577412849443506577">
@@ -2640,15 +2643,21 @@
   </root>
   <root nodeRef="r:6c6155f0-4bbe-4af5-8c26-244d570e21e4(org.iets3.core.expr.base.plugin)/4577412849443509533">
     <file name="ThrowConstraintViolationHandler.java">
-      <node id="2662069320769409404" at="11,138,12,47" concept="5" />
-      <node id="1054099405306293387" at="12,47,13,69" concept="5" />
-      <node id="4577412849443510942" at="13,69,14,92" concept="20" />
-      <node id="4770439604296625080" at="18,142,19,108" concept="5" />
-      <node id="4770439604296484255" at="17,0,21,0" concept="10" trace="reportWarning#(Ljava/lang/String;Ljava/lang/Object;Lcom/mbeddr/mpsutil/interpreter/rt/IContext;Lorg/jetbrains/mps/openapi/model/SNode;Lorg/iets3/core/expr/base/plugin/MessageValue;Lcom/mbeddr/mpsutil/interpreter/rt/ComputationTrace;)V" />
-      <node id="4577412849443509537" at="11,0,16,0" concept="10" trace="reportError#(Ljava/lang/String;Ljava/lang/Object;Lcom/mbeddr/mpsutil/interpreter/rt/IContext;Lorg/jetbrains/mps/openapi/model/SNode;Lorg/iets3/core/expr/base/plugin/MessageValue;Lcom/mbeddr/mpsutil/interpreter/rt/ComputationTrace;)V" />
-      <scope id="4770439604296484273" at="18,142,19,108" />
-      <scope id="4577412849443509548" at="11,138,14,92" />
-      <scope id="4770439604296484255" at="17,0,21,0">
+      <node id="7950973179635614013" at="11,138,12,77" concept="13" />
+      <node id="7950973179635614040" at="13,24,14,49" concept="5" />
+      <node id="7950973179635614052" at="14,49,15,71" concept="5" />
+      <node id="4577412849443510942" at="16,5,17,92" concept="20" />
+      <node id="7950973179635646660" at="21,142,22,77" concept="13" />
+      <node id="7950973179635646687" at="23,24,24,110" concept="5" />
+      <node id="7950973179635646678" at="22,77,25,5" concept="9" />
+      <node id="7950973179635614031" at="12,77,16,5" concept="9" />
+      <node id="4770439604296484255" at="20,0,27,0" concept="10" trace="reportWarning#(Ljava/lang/String;Ljava/lang/Object;Lcom/mbeddr/mpsutil/interpreter/rt/IContext;Lorg/jetbrains/mps/openapi/model/SNode;Lorg/iets3/core/expr/base/plugin/MessageValue;Lcom/mbeddr/mpsutil/interpreter/rt/ComputationTrace;)V" />
+      <node id="4577412849443509537" at="11,0,19,0" concept="10" trace="reportError#(Ljava/lang/String;Ljava/lang/Object;Lcom/mbeddr/mpsutil/interpreter/rt/IContext;Lorg/jetbrains/mps/openapi/model/SNode;Lorg/iets3/core/expr/base/plugin/MessageValue;Lcom/mbeddr/mpsutil/interpreter/rt/ComputationTrace;)V" />
+      <scope id="7950973179635646686" at="23,24,24,110" />
+      <scope id="7950973179635614039" at="13,24,15,71" />
+      <scope id="4770439604296484273" at="21,142,25,5" />
+      <scope id="4577412849443509548" at="11,138,17,92" />
+      <scope id="4770439604296484255" at="20,0,27,0">
         <var name="causingValue" id="4770439604296484258" />
         <var name="ctx" id="4770439604296484260" />
         <var name="kind" id="4770439604296484256" />
@@ -2656,7 +2665,7 @@
         <var name="nodeWithWarning" id="4770439604296484264" />
         <var name="trace" id="4770439604296484268" />
       </scope>
-      <scope id="4577412849443509537" at="11,0,16,0">
+      <scope id="4577412849443509537" at="11,0,19,0">
         <var name="causingValue" id="4089451559930580130" />
         <var name="ctx" id="4577412849443509539" />
         <var name="kind" id="4774967512954697129" />
@@ -2664,7 +2673,7 @@
         <var name="nodeWithError" id="4577412849443509543" />
         <var name="trace" id="2662069320760073324" />
       </scope>
-      <unit id="4577412849443509533" at="9,0,22,0" name="org.iets3.core.expr.base.plugin.ThrowConstraintViolationHandler" />
+      <unit id="4577412849443509533" at="9,0,28,0" name="org.iets3.core.expr.base.plugin.ThrowConstraintViolationHandler" />
     </file>
   </root>
   <root nodeRef="r:6c6155f0-4bbe-4af5-8c26-244d570e21e4(org.iets3.core.expr.base.plugin)/4630855354763479366">

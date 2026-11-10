@@ -9,13 +9,19 @@ import com.mbeddr.mpsutil.interpreter.rt.ComputationTrace;
 public class ThrowConstraintViolationHandler extends ConstraintViolationHandler {
 
   public void reportError(String kind, Object causingValue, IContext ctx, SNode nodeWithError, MessageValue msg, ComputationTrace trace) {
-    trace.setConstraintFailure(msg.toString());
-    msg.setContext(trace.createStackTraceToThisOneAsString(true, 5));
+    // the trace is null when the evaluation runs without a computation trace
+    if (trace != null) {
+      trace.setConstraintFailure(msg.toString());
+      msg.setContext(trace.createStackTraceToThisOneAsString(true, 5));
+    }
     throw new ConstraintFailedException(kind, causingValue, nodeWithError, msg, ctx, trace);
   }
 
   @Override
   public void reportWarning(String kind, Object causingValue, IContext ctx, SNode nodeWithWarning, MessageValue msg, ComputationTrace trace) {
-    trace.newChild(nodeWithWarning, false, "warning constraint violation: " + msg.toString()).setInfo(true);
+    // the trace is null when the evaluation runs without a computation trace
+    if (trace != null) {
+      trace.newChild(nodeWithWarning, false, "warning constraint violation: " + msg.toString()).setInfo(true);
+    }
   }
 }
