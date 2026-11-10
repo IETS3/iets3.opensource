@@ -10825,10 +10825,16 @@
                   </node>
                   <node concept="2OqwBi" id="25rRV02p6Ki" role="33vP2m">
                     <node concept="2OqwBi" id="25rRV02p6Kj" role="2Oq$k0">
-                      <node concept="2ShNRf" id="25rRV02p6Kk" role="2Oq$k0">
-                        <node concept="HV5vD" id="25rRV02p6Kl" role="2ShVmc">
-                          <property role="373rjd" value="true" />
-                          <ref role="HV5vE" to="pbu6:2nydsCfyYD0" resolve="IETS3ExprEvaluator" />
+                      <node concept="2OqwBi" id="6TnxZGmQZU3" role="2Oq$k0">
+                        <node concept="2ShNRf" id="25rRV02p6Kk" role="2Oq$k0">
+                          <node concept="HV5vD" id="25rRV02p6Kl" role="2ShVmc">
+                            <property role="373rjd" value="true" />
+                            <ref role="HV5vE" to="pbu6:2nydsCfyYD0" resolve="IETS3ExprEvaluator" />
+                          </node>
+                        </node>
+                        <node concept="liA8E" id="6TnxZGmQZU4" role="2OqNvi">
+                          <ref role="37wK5l" to="pbu6:2nydsCfvLxS" resolve="withComputationTrace" />
+                          <node concept="3clFbT" id="6TnxZGmQZU5" role="37wK5m" />
                         </node>
                       </node>
                       <node concept="liA8E" id="25rRV02p6Km" role="2OqNvi">
