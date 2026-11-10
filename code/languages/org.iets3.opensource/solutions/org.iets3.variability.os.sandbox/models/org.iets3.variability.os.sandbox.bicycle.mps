@@ -10,7 +10,7 @@
   <imports />
   <registry>
     <language id="7b68d745-a7b8-48b9-bd9c-05c0f8725a35" name="org.iets3.core.base">
-      <concept id="7831630342157089621" name="org.iets3.core.base.structure.IDetectNeedToRunManually" flags="ngI" index="0Rz4o">
+      <concept id="7831630342157089621" name="org.iets3.core.base.structure.IDetectNeedToRunManually" flags="ng" index="0Rz4o">
         <property id="7831630342157089649" name="__hash" index="0Rz4W" />
       </concept>
     </language>
@@ -45,7 +45,7 @@
       </concept>
     </language>
     <language id="cfaa4966-b7d5-4b69-b66a-309a6e1a7290" name="org.iets3.core.expr.base">
-      <concept id="4261931054731905240" name="org.iets3.core.expr.base.structure.IContainExpressionParam" flags="ngI" index="2lDidI">
+      <concept id="4261931054731905240" name="org.iets3.core.expr.base.structure.IContainExpressionParam" flags="ng" index="2lDidI">
         <child id="4261931054731905241" name="expr" index="2lDidJ" />
       </concept>
       <concept id="9002563722476995145" name="org.iets3.core.expr.base.structure.DotExpression" flags="ng" index="1QScDb">
@@ -62,7 +62,7 @@
       <concept id="8997672845438204620" name="org.iets3.variability.featuremodel.base.structure.SubFeatureDotTarget" flags="ng" index="21mTOb">
         <reference id="8997672845438204633" name="feature" index="21mTOu" />
       </concept>
-      <concept id="3414566187106618468" name="org.iets3.variability.featuremodel.base.structure.ICalculateHashForUpdateWarning" flags="ngI" index="bVzmZ">
+      <concept id="3414566187106618468" name="org.iets3.variability.featuremodel.base.structure.ICalculateHashForUpdateWarning" flags="ng" index="bVzmZ">
         <property id="3414566187106619445" name="__updateHash" index="bVyBI" />
       </concept>
       <concept id="7725497592275044117" name="org.iets3.variability.featuremodel.base.structure.FMParam" flags="ng" index="2vxJKP">
@@ -143,49 +143,49 @@
       <property role="26YOJW" value="" />
       <property role="0Rz4W" value="240486924" />
       <property role="1nQUAq" value="true" />
-      <ref role="rqKBe" node="47N6Ml8JdEo" resolve="Bicycle" />
+      <ref role="rqKBe" node="47N6Ml8JdEo" />
       <node concept="rqCGG" id="47N6Ml8JdEz" role="rqCGo">
         <node concept="rqKBd" id="47N6Ml8JdE$" role="rqKBa">
-          <ref role="rqKBe" node="47N6Ml8JdEp" resolve="Frame" />
+          <ref role="rqKBe" node="47N6Ml8JdEp" />
           <node concept="rqCGG" id="47N6Ml8JdE_" role="rqCGo">
             <node concept="rqKBd" id="47N6Ml8JdEA" role="rqKBa">
-              <ref role="rqKBe" node="47N6Ml8JdEq" resolve="Steel" />
+              <ref role="rqKBe" node="47N6Ml8JdEq" />
               <node concept="rqCGG" id="47N6Ml8JdEB" role="rqCGo" />
             </node>
             <node concept="rqKBd" id="47N6Ml8JdEC" role="rqKBa">
-              <ref role="rqKBe" node="47N6Ml8JdEr" resolve="Carbon" />
+              <ref role="rqKBe" node="47N6Ml8JdEr" />
               <node concept="rqCGG" id="47N6Ml8JdED" role="rqCGo" />
             </node>
           </node>
         </node>
         <node concept="rqKBd" id="47N6Ml8JdEE" role="rqKBa">
           <property role="3BMj5M" value="5QKr2dW9gDW/userTrue" />
-          <ref role="rqKBe" node="47N6Ml8JdEs" resolve="Gearing" />
+          <ref role="rqKBe" node="47N6Ml8JdEs" />
           <node concept="rqCGG" id="47N6Ml8JdEF" role="rqCGo">
             <node concept="rqKBd" id="47N6Ml8JdEG" role="rqKBa">
               <property role="3BMj5M" value="5QKr2dW9gE1/userFalse" />
-              <ref role="rqKBe" node="47N6Ml8JdEt" resolve="Derailleur" />
+              <ref role="rqKBe" node="47N6Ml8JdEt" />
               <node concept="rqCGG" id="47N6Ml8JdEH" role="rqCGo" />
             </node>
             <node concept="rqKBd" id="47N6Ml8JdEI" role="rqKBa">
               <property role="3BMj5M" value="5QKr2dW9gDW/userTrue" />
-              <ref role="rqKBe" node="47N6Ml8JdEu" resolve="HubGear" />
+              <ref role="rqKBe" node="47N6Ml8JdEu" />
               <node concept="rqCGG" id="47N6Ml8JdEJ" role="rqCGo" />
             </node>
           </node>
         </node>
         <node concept="rqKBd" id="47N6Ml8JdEK" role="rqKBa">
           <property role="3BMj5M" value="5QKr2dW9gDW/userTrue" />
-          <ref role="rqKBe" node="47N6Ml8JdEv" resolve="Lighting" />
+          <ref role="rqKBe" node="47N6Ml8JdEv" />
           <node concept="rqCGG" id="47N6Ml8JdEL" role="rqCGo">
             <node concept="rqKBd" id="47N6Ml8JdEM" role="rqKBa">
               <property role="3BMj5M" value="5QKr2dW9gDW/userTrue" />
-              <ref role="rqKBe" node="47N6Ml8JdEw" resolve="Dynamo" />
+              <ref role="rqKBe" node="47N6Ml8JdEw" />
               <node concept="rqCGG" id="47N6Ml8JdEN" role="rqCGo" />
             </node>
             <node concept="rqKBd" id="47N6Ml8JdEO" role="rqKBa">
               <property role="3BMj5M" value="5QKr2dW9gE1/userFalse" />
-              <ref role="rqKBe" node="47N6Ml8JdEx" resolve="BatteryLight" />
+              <ref role="rqKBe" node="47N6Ml8JdEx" />
               <node concept="rqCGG" id="47N6Ml8JdEP" role="rqCGo" />
             </node>
           </node>
@@ -200,27 +200,27 @@
       <property role="bROok" value="1831666134" />
       <property role="0Rz4W" value="-385929797" />
       <property role="1nQUAq" value="true" />
-      <ref role="rqKBe" node="47N6Ml8JdEo" resolve="Bicycle" />
+      <ref role="rqKBe" node="47N6Ml8JdEo" />
       <node concept="rqCGG" id="47N6Ml8JdES" role="rqCGo">
         <node concept="rqKBd" id="47N6Ml8JdET" role="rqKBa">
           <property role="3BMj5M" value="5QKr2dW9gDW/userTrue" />
-          <ref role="rqKBe" node="47N6Ml8JdEp" resolve="Frame" />
+          <ref role="rqKBe" node="47N6Ml8JdEp" />
           <node concept="rqCGG" id="47N6Ml8JdEU" role="rqCGo">
             <node concept="rqKBd" id="47N6Ml8JdEV" role="rqKBa">
               <property role="3BMj5M" value="5QKr2dW9gDW/userTrue" />
-              <ref role="rqKBe" node="47N6Ml8JdEq" resolve="Steel" />
+              <ref role="rqKBe" node="47N6Ml8JdEq" />
               <node concept="rqCGG" id="47N6Ml8JdEW" role="rqCGo" />
             </node>
             <node concept="rqKBd" id="47N6Ml8JdEX" role="rqKBa">
               <property role="3BMj5M" value="5QKr2dW9gE1/userFalse" />
-              <ref role="rqKBe" node="47N6Ml8JdEr" resolve="Carbon" />
+              <ref role="rqKBe" node="47N6Ml8JdEr" />
               <node concept="rqCGG" id="47N6Ml8JdEY" role="rqCGo" />
             </node>
           </node>
         </node>
       </node>
       <node concept="30ne8c" id="47N6Ml8JdHM" role="30ne9f">
-        <ref role="30ne9N" node="47N6Ml8JdEy" resolve="CityBase" />
+        <ref role="30ne9N" node="47N6Ml8JdEy" />
       </node>
     </node>
   </node>
@@ -248,7 +248,7 @@
         <property role="TrG5h" value="Drivetrain" />
         <node concept="12iSMG" id="47N6Ml8QRzV" role="12iwVe">
           <property role="TrG5h" value="gears" />
-          <ref role="12iSMH" node="47N6Ml8QRzP" resolve="Gears" />
+          <ref role="12iSMH" node="47N6Ml8QRzP" />
         </node>
       </node>
     </node>
@@ -259,7 +259,7 @@
       <node concept="1lrKzq" id="47N6Ml8QRzX" role="1lrLG6">
         <node concept="2vxJKP" id="47N6Ml8QRzY" role="2vxkbM">
           <property role="TrG5h" value="g" />
-          <ref role="2vxkaC" node="47N6Ml8QRzP" resolve="Gears" />
+          <ref role="2vxkaC" node="47N6Ml8QRzP" />
         </node>
       </node>
       <node concept="12iwV3" id="47N6Ml8QRzZ" role="12iwV8">
@@ -277,19 +277,19 @@
         <property role="TrG5h" value="Bike" />
         <node concept="12iSMG" id="47N6Ml8QR$3" role="12iwVe">
           <property role="TrG5h" value="drivetrain" />
-          <ref role="12iSMH" node="47N6Ml8QRzT" resolve="Drivetrain" />
+          <ref role="12iSMH" node="47N6Ml8QRzT" />
         </node>
         <node concept="12iSMG" id="47N6Ml8QR$4" role="12iwVe">
           <property role="TrG5h" value="shifter" />
-          <ref role="12iSMH" node="47N6Ml8QRzW" resolve="Shifter" />
+          <ref role="12iSMH" node="47N6Ml8QRzW" />
           <node concept="1lEfCE" id="47N6Ml8QR$5" role="1lESdG">
-            <ref role="1lE0rE" node="47N6Ml8QRzY" resolve="g" />
+            <ref role="1lE0rE" node="47N6Ml8QRzY" />
             <node concept="1QScDb" id="47N6Ml8QR$6" role="1lE0xT">
               <node concept="21mTOb" id="47N6Ml8QR$8" role="1QScD9">
-                <ref role="21mTOu" node="47N6Ml8QRzV" resolve="gears" />
+                <ref role="21mTOu" node="47N6Ml8QRzV" />
               </node>
               <node concept="1lCzJX" id="47N6Ml8QR_u" role="2lDidJ">
-                <ref role="1lCzx9" node="47N6Ml8QR$3" resolve="drivetrain" />
+                <ref role="1lCzx9" node="47N6Ml8QR$3" />
               </node>
             </node>
           </node>
@@ -306,16 +306,16 @@
       <property role="26YOJW" value="" />
       <property role="0Rz4W" value="99072878" />
       <property role="1nQUAq" value="true" />
-      <ref role="rqKBe" node="47N6Ml8QRzQ" resolve="Gears" />
+      <ref role="rqKBe" node="47N6Ml8QRzQ" />
       <node concept="rqCGG" id="47N6Ml8QR$a" role="rqCGo">
         <node concept="rqKBd" id="47N6Ml8QR$d" role="rqKBa">
           <property role="3BMj5M" value="5QKr2dW9gE1/userFalse" />
-          <ref role="rqKBe" node="47N6Ml8QRzR" resolve="Derailleur" />
+          <ref role="rqKBe" node="47N6Ml8QRzR" />
           <node concept="rqCGG" id="47N6Ml8QR$e" role="rqCGo" />
         </node>
         <node concept="rqKBd" id="47N6Ml8QR$b" role="rqKBa">
           <property role="3BMj5M" value="5QKr2dW9gDW/userTrue" />
-          <ref role="rqKBe" node="47N6Ml8QRzS" resolve="HubGear" />
+          <ref role="rqKBe" node="47N6Ml8QRzS" />
           <node concept="rqCGG" id="47N6Ml8QR$c" role="rqCGo" />
         </node>
       </node>
@@ -330,10 +330,10 @@
       <property role="26YOJW" value="" />
       <property role="0Rz4W" value="1244759006" />
       <property role="1nQUAq" value="true" />
-      <ref role="rqKBe" node="47N6Ml8QRzU" resolve="Drivetrain" />
+      <ref role="rqKBe" node="47N6Ml8QRzU" />
       <node concept="rqCGG" id="47N6Ml8QR$g" role="rqCGo" />
       <node concept="30ne8c" id="47N6Ml8YKlD" role="30ne9f">
-        <ref role="30ne9N" node="47N6Ml8Yp$h" resolve="CDrivetrainBase" />
+        <ref role="30ne9N" node="47N6Ml8Yp$h" />
       </node>
     </node>
     <node concept="12i7jc" id="69y89CCKgYY" role="12i2BX" />
@@ -346,15 +346,15 @@
       <property role="0Rz4W" value="-1398535347" />
       <property role="bROok" value="-1623735750" />
       <property role="1nQUAq" value="true" />
-      <ref role="rqKBe" node="47N6Ml8QRzZ" resolve="Shifter" />
+      <ref role="rqKBe" node="47N6Ml8QRzZ" />
       <node concept="1l23a_" id="47N6Ml8QR$k" role="1l23gV">
-        <ref role="1l2MNE" node="47N6Ml8QRzY" resolve="g" />
-        <ref role="1l2N9i" node="47N6Ml8QR$9" resolve="CGears" />
+        <ref role="1l2MNE" node="47N6Ml8QRzY" />
+        <ref role="1l2N9i" node="47N6Ml8QR$9" />
       </node>
       <node concept="rqCGG" id="47N6Ml8QR$l" role="rqCGo">
         <node concept="rqKBd" id="47N6Ml8QR$m" role="rqKBa">
           <property role="3BMj5M" value="5QKr2dW9gDW/userTrue" />
-          <ref role="rqKBe" node="47N6Ml8QR$0" resolve="Trigger" />
+          <ref role="rqKBe" node="47N6Ml8QR$0" />
           <node concept="rqCGG" id="47N6Ml8QR$n" role="rqCGo" />
         </node>
       </node>
@@ -369,20 +369,20 @@
       <property role="0Rz4W" value="198934730" />
       <property role="bROok" value="-1397969575" />
       <property role="1nQUAq" value="true" />
-      <ref role="rqKBe" node="47N6Ml8QR$2" resolve="Bike" />
+      <ref role="rqKBe" node="47N6Ml8QR$2" />
       <node concept="rqCGG" id="47N6Ml8QR$p" role="rqCGo">
         <node concept="rqKBd" id="47N6Ml8QR$q" role="rqKBa">
           <property role="3BMj5M" value="5QKr2dW9gDW/userTrue" />
-          <ref role="rqKBe" node="47N6Ml8QR$3" resolve="drivetrain" />
+          <ref role="rqKBe" node="47N6Ml8QR$3" />
           <node concept="rqMQU" id="47N6Ml8QR$r" role="rqCGo">
-            <ref role="rqMQV" node="47N6Ml8QR$f" resolve="CDrivetrain" />
+            <ref role="rqMQV" node="47N6Ml8QR$f" />
           </node>
         </node>
         <node concept="rqKBd" id="47N6Ml8QR$s" role="rqKBa">
           <property role="3BMj5M" value="5QKr2dW9gDW/userTrue" />
-          <ref role="rqKBe" node="47N6Ml8QR$4" resolve="shifter" />
+          <ref role="rqKBe" node="47N6Ml8QR$4" />
           <node concept="rqMQU" id="47N6Ml8QR$t" role="rqCGo">
-            <ref role="rqMQV" node="47N6Ml8QR$j" resolve="CShifter" />
+            <ref role="rqMQV" node="47N6Ml8QR$j" />
           </node>
         </node>
       </node>
@@ -396,23 +396,23 @@
       <property role="bROok" value="771891302" />
       <property role="33ZQ4u" value="true" />
       <property role="1nQUAq" value="true" />
-      <ref role="rqKBe" node="47N6Ml8QR$2" resolve="Bike" />
+      <ref role="rqKBe" node="47N6Ml8QR$2" />
       <node concept="30ne8c" id="47N6Ml8QR$v" role="30ne9f">
-        <ref role="30ne9N" node="47N6Ml8QR$o" resolve="CBikeBase" />
+        <ref role="30ne9N" node="47N6Ml8QR$o" />
       </node>
       <node concept="rqCGG" id="47N6Ml8QR$w" role="rqCGo">
         <node concept="rqKBd" id="69y89CCKgY$" role="rqKBa">
           <property role="3BMj5M" value="2wLdcSYDcHT/inheritedTrue" />
-          <ref role="rqKBe" node="47N6Ml8QR$3" resolve="drivetrain" />
+          <ref role="rqKBe" node="47N6Ml8QR$3" />
           <node concept="rqMQU" id="69y89CCKgYF" role="rqCGo">
-            <ref role="rqMQV" node="47N6Ml8QR$f" resolve="CDrivetrain" />
+            <ref role="rqMQV" node="47N6Ml8QR$f" />
           </node>
         </node>
         <node concept="rqKBd" id="47N6Ml8QR$x" role="rqKBa">
           <property role="3BMj5M" value="2wLdcSYDcHT/inheritedTrue" />
-          <ref role="rqKBe" node="47N6Ml8QR$4" resolve="shifter" />
+          <ref role="rqKBe" node="47N6Ml8QR$4" />
           <node concept="rqMQU" id="69y89CCKgYG" role="rqCGo">
-            <ref role="rqMQV" node="47N6Ml8QR$j" resolve="CShifter" />
+            <ref role="rqMQV" node="47N6Ml8QR$j" />
           </node>
         </node>
       </node>
@@ -427,12 +427,12 @@
       <property role="26YOJW" value="" />
       <property role="0Rz4W" value="1800374160" />
       <property role="1nQUAq" value="true" />
-      <ref role="rqKBe" node="47N6Ml8QRzU" resolve="Drivetrain" />
+      <ref role="rqKBe" node="47N6Ml8QRzU" />
       <node concept="rqCGG" id="47N6Ml8Yp$i" role="rqCGo">
         <node concept="rqKBd" id="47N6Ml8Yp$j" role="rqKBa">
-          <ref role="rqKBe" node="47N6Ml8QRzV" resolve="gears" />
+          <ref role="rqKBe" node="47N6Ml8QRzV" />
           <node concept="rqMQU" id="47N6Ml8Yp$k" role="rqCGo">
-            <ref role="rqMQV" node="47N6Ml8QR$9" resolve="CGears" />
+            <ref role="rqMQV" node="47N6Ml8QR$9" />
           </node>
         </node>
       </node>
@@ -447,13 +447,13 @@
       <property role="26YOJW" value="" />
       <property role="0Rz4W" value="-1701218428" />
       <property role="1nQUAq" value="true" />
-      <ref role="rqKBe" node="47N6Ml8QR$2" resolve="Bike" />
+      <ref role="rqKBe" node="47N6Ml8QR$2" />
       <node concept="rqCGG" id="1HFAdoLiV51" role="rqCGo">
         <node concept="rqKBd" id="1HFAdoLiV52" role="rqKBa">
           <property role="3BMj5M" value="5QKr2dW9gDW/userTrue" />
-          <ref role="rqKBe" node="47N6Ml8QR$4" resolve="shifter" />
+          <ref role="rqKBe" node="47N6Ml8QR$4" />
           <node concept="rqMQU" id="1HFAdoLiV53" role="rqCGo">
-            <ref role="rqMQV" node="47N6Ml8QR$j" resolve="CShifter" />
+            <ref role="rqMQV" node="47N6Ml8QR$j" />
           </node>
         </node>
       </node>

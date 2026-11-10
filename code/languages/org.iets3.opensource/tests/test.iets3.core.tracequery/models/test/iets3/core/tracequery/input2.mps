@@ -13,11 +13,11 @@
   </imports>
   <registry>
     <language id="7d21cc4b-4c24-41db-9868-8af4a7f3eba9" name="org.iets3.core.trace">
-      <concept id="2117670517801950028" name="org.iets3.core.trace.structure.ITraceTargetProvider" flags="ngI" index="2Dx65h">
+      <concept id="2117670517801950028" name="org.iets3.core.trace.structure.ITraceTargetProvider" flags="ng" index="2Dx65h">
         <reference id="2117670517801950029" name="traceTarget" index="2Dx65g" />
       </concept>
       <concept id="2117670517801951066" name="org.iets3.core.trace.structure.NamedTargetProvider" flags="ng" index="2Dx6l7" />
-      <concept id="2117670517801898047" name="org.iets3.core.trace.structure.ITrace" flags="ngI" index="2DxiCy">
+      <concept id="2117670517801898047" name="org.iets3.core.trace.structure.ITrace" flags="ng" index="2DxiCy">
         <child id="2117670517801898058" name="traceTarget" index="2DxiDn" />
         <child id="2117670517801898048" name="traceKind" index="2DxiDt" />
       </concept>
@@ -25,10 +25,10 @@
       <concept id="2117670517802470200" name="org.iets3.core.trace.structure.TraceAttribute" flags="ng" index="2Dz74_" />
     </language>
     <language id="583939be-ded0-4735-a055-a74f8477fc34" name="org.iets3.core.attributes">
-      <concept id="4388710048722005709" name="org.iets3.core.attributes.structure.IAttributed" flags="ngI" index="18DfD4">
+      <concept id="4388710048722005709" name="org.iets3.core.attributes.structure.IAttributed" flags="ng" index="18DfD4">
         <child id="4388710048722005710" name="attributes" index="18DfD7" />
       </concept>
-      <concept id="1970998948978453245" name="org.iets3.core.attributes.structure.IValueAttribute" flags="ngI" index="3PRgZ$">
+      <concept id="1970998948978453245" name="org.iets3.core.attributes.structure.IValueAttribute" flags="ng" index="3PRgZ$">
         <child id="1970998948979996854" name="value" index="3PL9QJ" />
       </concept>
     </language>
@@ -86,7 +86,7 @@
         <node concept="2DxjnZ" id="1HLccB8wSr4" role="3PL9QJ">
           <node concept="3jWAPd" id="1HLccB8wSSk" role="2DxiDt" />
           <node concept="2Dx6l7" id="1Sur9ckX6Zu" role="2DxiDn">
-            <ref role="2Dx65g" to="ecrc:1Sur9ckX6Yc" resolve="handlebars" />
+            <ref role="2Dx65g" to="ecrc:1Sur9ckX6Yc" />
           </node>
         </node>
       </node>
@@ -101,7 +101,7 @@
         <node concept="2DxjnZ" id="1HLccB8wTrl" role="3PL9QJ">
           <node concept="3jWOz2" id="1HLccB8wTrp" role="2DxiDt" />
           <node concept="2Dx6l7" id="mhbzaHv9o4" role="2DxiDn">
-            <ref role="2Dx65g" node="1HLccB8wSqS" resolve="F" />
+            <ref role="2Dx65g" node="1HLccB8wSqS" />
           </node>
         </node>
       </node>
@@ -119,7 +119,7 @@
     <node concept="1i1AuW" id="1HLccB8wSqK" role="1i1AA4" />
     <node concept="1i1AuW" id="1HLccB8wSqz" role="1i1AA4" />
     <node concept="3GEVxB" id="1Sur9ckX6Zq" role="38kjvB">
-      <ref role="3GEb4d" to="ecrc:1Sur9ckX6Pc" resolve="bikeComponents" />
+      <ref role="3GEb4d" to="ecrc:1Sur9ckX6Pc" />
     </node>
   </node>
 </model>

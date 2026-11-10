@@ -116,7 +116,7 @@
       </concept>
     </language>
     <language id="cfaa4966-b7d5-4b69-b66a-309a6e1a7290" name="org.iets3.core.expr.base">
-      <concept id="4261931054731905240" name="org.iets3.core.expr.base.structure.IContainExpressionParam" flags="ngI" index="2lDidI">
+      <concept id="4261931054731905240" name="org.iets3.core.expr.base.structure.IContainExpressionParam" flags="ng" index="2lDidI">
         <child id="4261931054731905241" name="expr" index="2lDidJ" />
       </concept>
     </language>
@@ -190,7 +190,7 @@
           <property role="TrG5h" value="zap" />
           <property role="1o$tow" value="zapUnit" />
           <property role="22P1Ek" value="2hbaSyABMZM/unscaled" />
-          <ref role="Rn5ok" node="69dpzzInySJ" resolve="MyQuantity" />
+          <ref role="Rn5ok" node="69dpzzInySJ" />
         </node>
         <node concept="2zPypq" id="69dpzzInySL" role="_iOnB">
           <property role="TrG5h" value="c" />
@@ -339,7 +339,7 @@
         <node concept="CIrOH" id="6OI5j2Ovv3o" role="_iOnB">
           <property role="TrG5h" value="zup" />
           <property role="1o$tow" value="zupUnit" />
-          <ref role="Rn5ok" node="6OI5j2Ovv3n" resolve="quax" />
+          <ref role="Rn5ok" node="6OI5j2Ovv3n" />
         </node>
         <node concept="2zPypq" id="6OI5j2Ovv3p" role="_iOnB">
           <property role="TrG5h" value="c" />
@@ -489,7 +489,7 @@
           <property role="TrG5h" value="qux" />
           <property role="1o$tow" value="quxUnit" />
           <property role="22P1Ek" value="2hbaSyABMZN/metric" />
-          <ref role="Rn5ok" node="6OI5j2Ovv3w" resolve="quux" />
+          <ref role="Rn5ok" node="6OI5j2Ovv3w" />
         </node>
         <node concept="2zPypq" id="6OI5j2Ovv3y" role="_iOnB">
           <property role="TrG5h" value="c" />

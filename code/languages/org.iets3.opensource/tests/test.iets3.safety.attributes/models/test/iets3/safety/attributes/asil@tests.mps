@@ -64,7 +64,7 @@
       </concept>
     </language>
     <language id="583939be-ded0-4735-a055-a74f8477fc34" name="org.iets3.core.attributes">
-      <concept id="1970998948978453245" name="org.iets3.core.attributes.structure.IValueAttribute" flags="ngI" index="3PRgZ$">
+      <concept id="1970998948978453245" name="org.iets3.core.attributes.structure.IValueAttribute" flags="ng" index="3PRgZ$">
         <child id="1970998948979996854" name="value" index="3PL9QJ" />
       </concept>
     </language>
