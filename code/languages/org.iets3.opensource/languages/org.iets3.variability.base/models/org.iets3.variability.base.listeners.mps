@@ -140,27 +140,6 @@
                 </node>
               </node>
             </node>
-            <node concept="3clFbF" id="2bkB5u6dnYK" role="3cqZAp">
-              <node concept="2OqwBi" id="2bkB5u6dnYL" role="3clFbG">
-                <node concept="j_vvf" id="2bkB5u6dnYM" role="2Oq$k0" />
-                <node concept="2qgKlT" id="2bkB5u6dnYN" role="2OqNvi">
-                  <ref role="37wK5l" to="n8u2:22kx7U4IoRa" resolve="addContent" />
-                  <node concept="3cpWs3" id="2bkB5u6dnYO" role="37wK5m">
-                    <node concept="37vLTw" id="2bkB5u6dnYQ" role="3uHU7B">
-                      <ref role="3cqZAo" node="2bkB5u6c_cD" resolve="indexOf" />
-                    </node>
-                    <node concept="3cmrfG" id="2bkB5u6dpBV" role="3uHU7w">
-                      <property role="3cmrfH" value="2" />
-                    </node>
-                  </node>
-                  <node concept="2pJPEk" id="2bkB5u6dnYR" role="37wK5m">
-                    <node concept="2pJPED" id="2bkB5u6dnYS" role="2pJPEn">
-                      <ref role="2pJxaS" to="rmn3:3tsFshP5d$8" resolve="EmptyVariabilityContent" />
-                    </node>
-                  </node>
-                </node>
-              </node>
-            </node>
           </node>
           <node concept="3fqX7Q" id="2bkB5u6eMba" role="3clFbw">
             <node concept="2OqwBi" id="2bkB5u6eMbc" role="3fr31v">
