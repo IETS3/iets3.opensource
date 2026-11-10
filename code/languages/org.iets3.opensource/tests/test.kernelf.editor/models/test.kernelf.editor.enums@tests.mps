@@ -37,7 +37,7 @@
       </concept>
     </language>
     <language id="cfaa4966-b7d5-4b69-b66a-309a6e1a7290" name="org.iets3.core.expr.base">
-      <concept id="4261931054731905240" name="org.iets3.core.expr.base.structure.IContainExpressionParam" flags="ngI" index="2lDidI">
+      <concept id="4261931054731905240" name="org.iets3.core.expr.base.structure.IContainExpressionParam" flags="ng" index="2lDidI">
         <child id="4261931054731905241" name="expr" index="2lDidJ" />
       </concept>
       <concept id="7425695345928347719" name="org.iets3.core.expr.base.structure.Expression" flags="ng" index="2vmvVl" />
@@ -133,7 +133,7 @@
         <node concept="2zPypq" id="7F82HbPoLUe" role="_iOnB">
           <property role="TrG5h" value="c" />
           <node concept="5mhuz" id="7F82HbPpFu$" role="2lDidJ">
-            <ref role="5mhpJ" node="7F82HbPoLU9" resolve="red" />
+            <ref role="5mhpJ" node="7F82HbPoLU9" />
           </node>
         </node>
       </node>
@@ -207,7 +207,7 @@
         <node concept="2zPypq" id="7F82HbPru30" role="_iOnB">
           <property role="TrG5h" value="c" />
           <node concept="5mhuz" id="7F82HbPrZ04" role="2lDidJ">
-            <ref role="5mhpJ" node="7F82HbPru2V" resolve="large" />
+            <ref role="5mhpJ" node="7F82HbPru2V" />
           </node>
         </node>
       </node>
@@ -281,7 +281,7 @@
         <node concept="2zPypq" id="7F82HbPru5r" role="_iOnB">
           <property role="TrG5h" value="c" />
           <node concept="5mhuz" id="7F82HbPrZ07" role="2lDidJ">
-            <ref role="5mhpJ" node="7F82HbPru5p" resolve="Starbucks:large" />
+            <ref role="5mhpJ" node="7F82HbPru5p" />
           </node>
         </node>
       </node>
@@ -316,7 +316,7 @@
         <node concept="2zPypq" id="7F82HbP$rAY" role="_iOnB">
           <property role="TrG5h" value="c" />
           <node concept="5mhuz" id="7F82HbP_bJc" role="2lDidJ">
-            <ref role="5mhpJ" node="7F82HbP$rAW" resolve="Starbucks:large" />
+            <ref role="5mhpJ" node="7F82HbP$rAW" />
             <node concept="LIFWc" id="7F82HbP_bJd" role="lGtFl">
               <property role="LIFWd" value="literal" />
               <property role="OXtK3" value="true" />
@@ -350,7 +350,7 @@
         <node concept="2zPypq" id="7F82HbP$rB8" role="_iOnB">
           <property role="TrG5h" value="c" />
           <node concept="5mhuz" id="7F82HbP_bJe" role="2lDidJ">
-            <ref role="5mhpJ" node="7F82HbP$rB7" resolve="Starbucks:venti" />
+            <ref role="5mhpJ" node="7F82HbP$rB7" />
           </node>
         </node>
       </node>

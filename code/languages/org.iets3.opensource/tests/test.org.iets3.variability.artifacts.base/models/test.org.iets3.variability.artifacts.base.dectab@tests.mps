@@ -50,7 +50,7 @@
       </concept>
     </language>
     <language id="cfaa4966-b7d5-4b69-b66a-309a6e1a7290" name="org.iets3.core.expr.base">
-      <concept id="4261931054731905240" name="org.iets3.core.expr.base.structure.IContainExpressionParam" flags="ngI" index="2lDidI">
+      <concept id="4261931054731905240" name="org.iets3.core.expr.base.structure.IContainExpressionParam" flags="ng" index="2lDidI">
         <child id="4261931054731905241" name="expr" index="2lDidJ" />
       </concept>
       <concept id="7425695345928347719" name="org.iets3.core.expr.base.structure.Expression" flags="ng" index="2vmvVl" />
@@ -89,7 +89,7 @@
       <concept id="3305877087008409979" name="org.iets3.variability.artifacts.base.structure.FeatureDecTabContent" flags="ng" index="JRpN9">
         <child id="3305877087008424507" name="result" index="JRlu9" />
       </concept>
-      <concept id="1046754514346632654" name="org.iets3.variability.artifacts.base.structure.IConditionVarPoint" flags="ngI" index="1sb3hx">
+      <concept id="1046754514346632654" name="org.iets3.variability.artifacts.base.structure.IConditionVarPoint" flags="ng" index="1sb3hx">
         <child id="6135977525816902738" name="featureExpr" index="2tfTHu" />
       </concept>
     </language>
@@ -123,10 +123,10 @@
               <node concept="JRp8p" id="2mIlJ4mBXhR" role="2lDidJ">
                 <node concept="JRpN9" id="2mIlJ4mHcvq" role="JRpNe">
                   <node concept="1oXTi_" id="2mIlJ4mHkFL" role="JRlu9">
-                    <ref role="1oXTi$" node="2mIlJ4mBW$G" resolve="J" />
+                    <ref role="1oXTi$" node="2mIlJ4mBW$G" />
                   </node>
                   <node concept="1oXTi_" id="2mIlJ4mHkEy" role="2tfTHu">
-                    <ref role="1oXTi$" node="2mIlJ4mBW$G" resolve="J" />
+                    <ref role="1oXTi$" node="2mIlJ4mBW$G" />
                     <node concept="LIFWc" id="2mIlJ4mHx0L" role="lGtFl">
                       <property role="ZRATv" value="true" />
                       <property role="OXtK3" value="true" />
@@ -159,10 +159,10 @@
               <node concept="JRp8p" id="2mIlJ4mGEMN" role="2lDidJ">
                 <node concept="JRpN9" id="2mIlJ4mHcvS" role="JRpNe">
                   <node concept="1oXTi_" id="2mIlJ4mHkGg" role="JRlu9">
-                    <ref role="1oXTi$" node="2mIlJ4mGEMI" resolve="J" />
+                    <ref role="1oXTi$" node="2mIlJ4mGEMI" />
                   </node>
                   <node concept="1oXTi_" id="2mIlJ4mHkG6" role="2tfTHu">
-                    <ref role="1oXTi$" node="2mIlJ4mGEMI" resolve="J" />
+                    <ref role="1oXTi$" node="2mIlJ4mGEMI" />
                   </node>
                 </node>
                 <node concept="JRpN9" id="2mIlJ4mGEMV" role="JRpNe">
@@ -423,10 +423,10 @@
               <node concept="JRp8p" id="3uhaBoP2gFW" role="2lDidJ">
                 <node concept="JRpN9" id="2xhU6hrKpDK" role="JRpNe">
                   <node concept="1oXTi_" id="2HqkDlf9YYg" role="JRlu9">
-                    <ref role="1oXTi$" node="1zLc1gglR6Y" resolve="J" />
+                    <ref role="1oXTi$" node="1zLc1gglR6Y" />
                   </node>
                   <node concept="1oXTi_" id="5KEpvVvHMO" role="2tfTHu">
-                    <ref role="1oXTi$" node="1zLc1gglR6Y" resolve="J" />
+                    <ref role="1oXTi$" node="1zLc1gglR6Y" />
                     <node concept="LIFWc" id="3KxRb_Yf8Wp" role="lGtFl">
                       <property role="ZRATv" value="true" />
                       <property role="OXtK3" value="true" />
@@ -469,10 +469,10 @@
                 </node>
                 <node concept="JRpN9" id="1DF$jMl2_3" role="JRpNe">
                   <node concept="1oXTi_" id="yHN1CxIsGP" role="JRlu9">
-                    <ref role="1oXTi$" node="2P3i09Dvx8c" resolve="J" />
+                    <ref role="1oXTi$" node="2P3i09Dvx8c" />
                   </node>
                   <node concept="1oXTi_" id="1QxuwWBk5Lq" role="2tfTHu">
-                    <ref role="1oXTi$" node="2P3i09Dvx8c" resolve="J" />
+                    <ref role="1oXTi$" node="2P3i09Dvx8c" />
                   </node>
                 </node>
               </node>

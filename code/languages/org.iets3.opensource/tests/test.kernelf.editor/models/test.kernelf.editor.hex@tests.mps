@@ -148,11 +148,11 @@
       </concept>
     </language>
     <language id="cfaa4966-b7d5-4b69-b66a-309a6e1a7290" name="org.iets3.core.expr.base">
-      <concept id="4261931054731905240" name="org.iets3.core.expr.base.structure.IContainExpressionParam" flags="ngI" index="2lDidI">
+      <concept id="4261931054731905240" name="org.iets3.core.expr.base.structure.IContainExpressionParam" flags="ng" index="2lDidI">
         <child id="4261931054731905241" name="expr" index="2lDidJ" />
       </concept>
       <concept id="7425695345928347719" name="org.iets3.core.expr.base.structure.Expression" flags="ng" index="2vmvVl" />
-      <concept id="7089558164905593724" name="org.iets3.core.expr.base.structure.IOptionallyTyped" flags="ngI" index="2zM23E">
+      <concept id="7089558164905593724" name="org.iets3.core.expr.base.structure.IOptionallyTyped" flags="ng" index="2zM23E">
         <child id="7089558164905593725" name="type" index="2zM23F" />
       </concept>
       <concept id="6889545856364470865" name="org.iets3.core.expr.base.structure.HexValue" flags="ng" index="1BKJs_">
@@ -250,12 +250,12 @@
       <concept id="4790956042240407469" name="org.iets3.core.expr.lambda.structure.ArgRef" flags="ng" index="1afdae">
         <reference id="4790956042240460422" name="arg" index="1afue_" />
       </concept>
-      <concept id="4790956042240100911" name="org.iets3.core.expr.lambda.structure.IFunctionLike" flags="ngI" index="1ahQWc">
+      <concept id="4790956042240100911" name="org.iets3.core.expr.lambda.structure.IFunctionLike" flags="ng" index="1ahQWc">
         <child id="4790956042240100927" name="args" index="1ahQWs" />
         <child id="4790956042240100950" name="body" index="1ahQXP" />
       </concept>
       <concept id="4790956042240100929" name="org.iets3.core.expr.lambda.structure.FunctionArgument" flags="ng" index="1ahQXy" />
-      <concept id="7554398283340318473" name="org.iets3.core.expr.lambda.structure.IArgument" flags="ngI" index="3ix9CZ">
+      <concept id="7554398283340318473" name="org.iets3.core.expr.lambda.structure.IArgument" flags="ng" index="3ix9CZ">
         <child id="7554398283340318476" name="type" index="3ix9CU" />
       </concept>
     </language>
@@ -766,7 +766,7 @@
           </node>
         </node>
         <node concept="1afdae" id="2mWlB9yWucT" role="1ahQXP">
-          <ref role="1afue_" node="2mWlB9yWu1Y" resolve="arg" />
+          <ref role="1afue_" node="2mWlB9yWu1Y" />
         </node>
       </node>
     </node>
@@ -783,7 +783,7 @@
           </node>
         </node>
         <node concept="1afdae" id="2mWlB9yWueH" role="1ahQXP">
-          <ref role="1afue_" node="2mWlB9yWu4z" resolve="arg" />
+          <ref role="1afue_" node="2mWlB9yWu4z" />
         </node>
       </node>
     </node>
@@ -887,7 +887,7 @@
           </node>
         </node>
         <node concept="1afdae" id="2mWlB9yWuyf" role="1ahQXP">
-          <ref role="1afue_" node="2mWlB9yWuya" resolve="arg" />
+          <ref role="1afue_" node="2mWlB9yWuya" />
         </node>
       </node>
     </node>
@@ -909,7 +909,7 @@
           </node>
         </node>
         <node concept="1afdae" id="2mWlB9yWuFu" role="1ahQXP">
-          <ref role="1afue_" node="2mWlB9yWuFq" resolve="arg" />
+          <ref role="1afue_" node="2mWlB9yWuFq" />
         </node>
       </node>
     </node>

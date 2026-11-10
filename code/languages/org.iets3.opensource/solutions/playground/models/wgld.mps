@@ -11,11 +11,11 @@
       <concept id="5585772046594451299" name="org.iets3.core.expr.collections.structure.SumOp" flags="ng" index="2$5g5R" />
     </language>
     <language id="cfaa4966-b7d5-4b69-b66a-309a6e1a7290" name="org.iets3.core.expr.base">
-      <concept id="4261931054731905240" name="org.iets3.core.expr.base.structure.IContainExpressionParam" flags="ngI" index="2lDidI">
+      <concept id="4261931054731905240" name="org.iets3.core.expr.base.structure.IContainExpressionParam" flags="ng" index="2lDidI">
         <child id="4261931054731905241" name="expr" index="2lDidJ" />
       </concept>
       <concept id="606861080870797309" name="org.iets3.core.expr.base.structure.IfElseSection" flags="ng" index="pf3Wd" />
-      <concept id="7071042522334260296" name="org.iets3.core.expr.base.structure.ITyped" flags="ngI" index="2_iKZX">
+      <concept id="7071042522334260296" name="org.iets3.core.expr.base.structure.ITyped" flags="ng" index="2_iKZX">
         <child id="8811147530085329321" name="type" index="2S399n" />
       </concept>
       <concept id="5115872837156761033" name="org.iets3.core.expr.base.structure.EqualsExpression" flags="ng" index="30cPrO" />
@@ -147,16 +147,16 @@
       <concept id="4790956042240407469" name="org.iets3.core.expr.lambda.structure.ArgRef" flags="ng" index="1afdae">
         <reference id="4790956042240460422" name="arg" index="1afue_" />
       </concept>
-      <concept id="4790956042240522396" name="org.iets3.core.expr.lambda.structure.IFunctionCall" flags="ngI" index="1afhQZ">
+      <concept id="4790956042240522396" name="org.iets3.core.expr.lambda.structure.IFunctionCall" flags="ng" index="1afhQZ">
         <reference id="4790956042240522408" name="function" index="1afhQb" />
         <child id="4790956042240522406" name="args" index="1afhQ5" />
       </concept>
-      <concept id="4790956042240100911" name="org.iets3.core.expr.lambda.structure.IFunctionLike" flags="ngI" index="1ahQWc">
+      <concept id="4790956042240100911" name="org.iets3.core.expr.lambda.structure.IFunctionLike" flags="ng" index="1ahQWc">
         <child id="4790956042240100927" name="args" index="1ahQWs" />
         <child id="4790956042240100950" name="body" index="1ahQXP" />
       </concept>
       <concept id="4790956042240100929" name="org.iets3.core.expr.lambda.structure.FunctionArgument" flags="ng" index="1ahQXy" />
-      <concept id="7554398283340318473" name="org.iets3.core.expr.lambda.structure.IArgument" flags="ngI" index="3ix9CZ">
+      <concept id="7554398283340318473" name="org.iets3.core.expr.lambda.structure.IArgument" flags="ng" index="3ix9CZ">
         <child id="7554398283340318476" name="type" index="3ix9CU" />
       </concept>
     </language>
@@ -648,7 +648,7 @@
         <node concept="330lDZ" id="JV9IWPRPvZ" role="_fkuY">
           <property role="TF9X8" value="E4" />
           <node concept="2joYC1" id="JV9IWPRPwj" role="2iydEp">
-            <ref role="2joYDy" node="2c2AzQdfKOc" resolve="AnotherExampleSheet" />
+            <ref role="2joYDy" node="2c2AzQdfKOc" />
           </node>
         </node>
         <node concept="30bXRB" id="JV9IWPRVue" role="_fkuS">
@@ -664,10 +664,10 @@
       <property role="TrG5h" value="add" />
       <node concept="30dDZf" id="5avmkTFGoRx" role="1ahQXP">
         <node concept="1afdae" id="5avmkTFGoRR" role="30dEs_">
-          <ref role="1afue_" node="5avmkTFGoQS" resolve="b" />
+          <ref role="1afue_" node="5avmkTFGoQS" />
         </node>
         <node concept="1afdae" id="5avmkTFGoRn" role="30dEsF">
-          <ref role="1afue_" node="5avmkTFGoQu" resolve="a" />
+          <ref role="1afue_" node="5avmkTFGoQu" />
         </node>
       </node>
       <node concept="1ahQXy" id="5avmkTFGoQu" role="1ahQWs">
@@ -718,7 +718,7 @@
           </node>
           <node concept="33c$z$" id="5avmkTFKxh4" role="33dGG4">
             <node concept="1af_rf" id="5avmkTFKTL8" role="33cOLO">
-              <ref role="1afhQb" node="5avmkTFGoQh" resolve="add" />
+              <ref role="1afhQb" node="5avmkTFGoQh" />
               <node concept="330lDZ" id="5avmkTFKTLf" role="1afhQ5">
                 <property role="TF9X8" value="l" />
               </node>
@@ -729,7 +729,7 @@
           </node>
           <node concept="33c$z$" id="5avmkTFKxh5" role="33dGG4">
             <node concept="1af_rf" id="5avmkTFKTSU" role="33cOLO">
-              <ref role="1afhQb" node="5avmkTFGoQh" resolve="add" />
+              <ref role="1afhQb" node="5avmkTFGoQh" />
               <node concept="330lDZ" id="5avmkTFKTSV" role="1afhQ5">
                 <property role="TF9X8" value="l" />
               </node>
@@ -740,7 +740,7 @@
           </node>
           <node concept="33c$z$" id="5avmkTFKxh6" role="33dGG4">
             <node concept="1af_rf" id="5avmkTFKTVp" role="33cOLO">
-              <ref role="1afhQb" node="5avmkTFGoQh" resolve="add" />
+              <ref role="1afhQb" node="5avmkTFGoQh" />
               <node concept="330lDZ" id="5avmkTFKTVq" role="1afhQ5">
                 <property role="TF9X8" value="l" />
               </node>
@@ -751,7 +751,7 @@
           </node>
           <node concept="33c$z$" id="5avmkTFKxh7" role="33dGG4">
             <node concept="1af_rf" id="5avmkTFKTYE" role="33cOLO">
-              <ref role="1afhQb" node="5avmkTFGoQh" resolve="add" />
+              <ref role="1afhQb" node="5avmkTFGoQh" />
               <node concept="330lDZ" id="5avmkTFKTYF" role="1afhQ5">
                 <property role="TF9X8" value="l" />
               </node>
@@ -762,7 +762,7 @@
           </node>
           <node concept="33c$z$" id="5avmkTFKxh8" role="33dGG4">
             <node concept="1af_rf" id="5avmkTFKU2H" role="33cOLO">
-              <ref role="1afhQb" node="5avmkTFGoQh" resolve="add" />
+              <ref role="1afhQb" node="5avmkTFGoQh" />
               <node concept="330lDZ" id="5avmkTFKU2I" role="1afhQ5">
                 <property role="TF9X8" value="l" />
               </node>
@@ -945,7 +945,7 @@
       <node concept="_fkuZ" id="JV9IWPTLE4" role="_fkp5">
         <node concept="_fku$" id="JV9IWPTLE5" role="_fkur" />
         <node concept="_emDc" id="JV9IWPTLEl" role="_fkuY">
-          <ref role="_emDf" node="JV9IWPTHFH" resolve="twentyThree" />
+          <ref role="_emDf" node="JV9IWPTHFH" />
         </node>
         <node concept="30bXRB" id="JV9IWPTLEA" role="_fkuS">
           <property role="30bXRw" value="23" />
@@ -1102,7 +1102,7 @@
     <node concept="3junBk" id="56SqGtkUDYM" role="_iOnB">
       <property role="TrG5h" value="SimpleNumberCalculatorEmpty" />
       <node concept="yNhXg" id="56SqGtkUDYN" role="3junBq">
-        <ref role="3jq2bk" node="2DnmbxUKT9c" resolve="SimpleNumberCalculator" />
+        <ref role="3jq2bk" node="2DnmbxUKT9c" />
         <node concept="33cATB" id="56SqGtkUE3R" role="yNhII">
           <property role="T3p$L" value="5" />
           <property role="T3pBa" value="5" />
@@ -1110,7 +1110,7 @@
           <property role="TrG5h" value="sheet1521052290656" />
           <property role="3m1v9o" value="false" />
           <property role="TCVZL" value="true" />
-          <ref role="3m6S2j" node="2DnmbxUKT9l" resolve="sheet1521052290656" />
+          <ref role="3m6S2j" node="2DnmbxUKT9l" />
           <node concept="33c$z$" id="56SqGtkUE3S" role="33dGG4">
             <node concept="TuajH" id="56SqGtkUE3T" role="33cOLO">
               <property role="TuajE" value="First Number:" />
@@ -1245,7 +1245,7 @@
     <node concept="3junBk" id="56SqGtkR1CL" role="_iOnB">
       <property role="TrG5h" value="FiveAndFive" />
       <node concept="yNhXg" id="56SqGtkR1CN" role="3junBq">
-        <ref role="3jq2bk" node="2DnmbxUKT9c" resolve="SimpleNumberCalculator" />
+        <ref role="3jq2bk" node="2DnmbxUKT9c" />
         <node concept="33cATB" id="56SqGtkR1Gg" role="yNhII">
           <property role="T3p$L" value="5" />
           <property role="T3pBa" value="5" />
@@ -1253,7 +1253,7 @@
           <property role="TrG5h" value="sheet1521052290656" />
           <property role="3m1v9o" value="false" />
           <property role="TCVZL" value="true" />
-          <ref role="3m6S2j" node="2DnmbxUKT9l" resolve="sheet1521052290656" />
+          <ref role="3m6S2j" node="2DnmbxUKT9l" />
           <node concept="33c$z$" id="56SqGtkR1Gh" role="33dGG4">
             <node concept="TuajH" id="56SqGtkR1Gi" role="33cOLO">
               <property role="TuajE" value="First Number" />
@@ -1394,7 +1394,7 @@
     <node concept="3junBk" id="56SqGtkUE$s" role="_iOnB">
       <property role="TrG5h" value="SevenAndTwelve" />
       <node concept="yNhXg" id="56SqGtkUE$t" role="3junBq">
-        <ref role="3jq2bk" node="2DnmbxUKT9c" resolve="SimpleNumberCalculator" />
+        <ref role="3jq2bk" node="2DnmbxUKT9c" />
         <node concept="33cATB" id="56SqGtkUE$u" role="yNhII">
           <property role="T3p$L" value="5" />
           <property role="T3pBa" value="5" />
@@ -1402,7 +1402,7 @@
           <property role="TrG5h" value="sheet1521052290656" />
           <property role="3m1v9o" value="false" />
           <property role="TCVZL" value="true" />
-          <ref role="3m6S2j" node="2DnmbxUKT9l" resolve="sheet1521052290656" />
+          <ref role="3m6S2j" node="2DnmbxUKT9l" />
           <node concept="33c$z$" id="56SqGtkUE$v" role="33dGG4">
             <node concept="TuajH" id="56SqGtkUE$w" role="33cOLO">
               <property role="TuajE" value="First Number" />
