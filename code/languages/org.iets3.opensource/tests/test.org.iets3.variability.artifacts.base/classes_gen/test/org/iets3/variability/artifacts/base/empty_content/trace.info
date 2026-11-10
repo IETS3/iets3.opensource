@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<debug-info version="2">
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123140:jetbrains.mps.baseLanguage.structure.ConstructorDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123155:jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123165:jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242864:jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1070462154015:jetbrains.mps.baseLanguage.structure.StaticFieldDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1070475587102:jetbrains.mps.baseLanguage.structure.SuperConstructorInvocation" />
+  <root nodeRef="r:48a20d3b-243a-4412-a163-85980e458b1c(test.org.iets3.variability.artifacts.base.empty_content@tests)/2509802792080189826">
+    <file name="EmptyContentAfterFeatureModel_Test.java">
+      <node id="2509802792080189826" at="28,47,29,60" concept="5" />
+      <node id="2509802792080189832" at="33,77,34,68" concept="1" />
+      <node id="2509802792080209328" at="37,95,38,86" concept="1" />
+      <node id="2509802792080219810" at="41,109,42,100" concept="1" />
+      <node id="2509802792080231260" at="45,90,46,81" concept="1" />
+      <node id="2509802792080189826" at="51,52,52,19" concept="5" />
+      <node id="2509802792080189826" at="56,36,57,46" concept="1" />
+      <node id="2509802792080189832" at="60,79,61,22" concept="1" />
+      <node id="2509802792080206073" at="62,30,63,115" concept="1" />
+      <node id="2509802792080206079" at="63,115,64,222" concept="3" />
+      <node id="2509802792080206086" at="64,222,65,132" concept="1" />
+      <node id="2509802792080206087" at="65,132,66,139" concept="1" />
+      <node id="2509802792080206094" at="66,139,67,154" concept="1" />
+      <node id="2509802792080206102" at="67,154,68,207" concept="1" />
+      <node id="2509802792080206112" at="68,207,69,207" concept="1" />
+      <node id="2509802792080209328" at="72,97,73,22" concept="1" />
+      <node id="2509802792080209336" at="74,30,75,115" concept="1" />
+      <node id="2509802792080209342" at="75,115,76,222" concept="3" />
+      <node id="2509802792080209349" at="76,222,77,132" concept="1" />
+      <node id="2509802792080209355" at="77,132,78,237" concept="3" />
+      <node id="2509802792080209363" at="78,237,79,136" concept="1" />
+      <node id="2509802792080209364" at="79,136,80,139" concept="1" />
+      <node id="2509802792080209371" at="80,139,81,154" concept="1" />
+      <node id="2509802792080209379" at="81,154,82,155" concept="1" />
+      <node id="2509802792080209387" at="82,155,83,207" concept="1" />
+      <node id="2509802792080209397" at="83,207,84,207" concept="1" />
+      <node id="2509802792080209407" at="84,207,85,207" concept="1" />
+      <node id="2509802792080219810" at="88,111,89,22" concept="1" />
+      <node id="2509802792080219818" at="90,30,91,115" concept="1" />
+      <node id="2509802792080219824" at="91,115,92,219" concept="3" />
+      <node id="2509802792080219831" at="92,219,93,129" concept="1" />
+      <node id="2509802792080219837" at="93,129,94,218" concept="3" />
+      <node id="2509802792080219845" at="94,218,95,134" concept="1" />
+      <node id="2509802792080219846" at="95,134,96,139" concept="1" />
+      <node id="2509802792080219853" at="96,139,97,150" concept="1" />
+      <node id="2509802792080219861" at="97,150,98,207" concept="1" />
+      <node id="2509802792080219871" at="98,207,99,207" concept="1" />
+      <node id="2509802792080219881" at="99,207,100,151" concept="1" />
+      <node id="2509802792080219889" at="100,151,101,207" concept="1" />
+      <node id="2509802792080219899" at="101,207,102,207" concept="1" />
+      <node id="2509802792080231260" at="105,92,106,22" concept="1" />
+      <node id="2509802792080231268" at="107,30,108,115" concept="1" />
+      <node id="2509802792080231274" at="108,115,109,217" concept="3" />
+      <node id="2509802792080231281" at="109,217,110,129" concept="1" />
+      <node id="2509802792080231282" at="110,129,111,139" concept="1" />
+      <node id="2509802792080231289" at="111,139,112,151" concept="1" />
+      <node id="2509802792080189826" at="119,0,120,0" concept="4" trace="contents$7Ohx" />
+      <node id="2509802792080189826" at="123,0,124,0" concept="4" trace="EmptyVariabilityContent$Xk" />
+      <node id="2509802792080189826" at="25,0,27,0" concept="4" trace="ourParametersCacheExtension" />
+      <node id="2509802792080189826" at="28,0,31,0" concept="0" trace="EmptyContentAfterFeatureModel_Test#()V" />
+      <node id="2509802792080189826" at="51,0,54,0" concept="0" trace="TestBody#(Ljetbrains/mps/lang/test/runtime/TransformationTest;)V" />
+      <node id="2509802792080189832" at="32,0,36,0" concept="2" trace="test_addingFeatureModelLeavesTwoEmptyLines#()V" />
+      <node id="2509802792080209328" at="36,0,40,0" concept="2" trace="test_replacingEmptyLineWithConfigurationLeavesMoreEmptyLines#()V" />
+      <node id="2509802792080219810" at="40,0,44,0" concept="2" trace="test_insertingContentPreservesFollowingContentAndAddsLinesImmediatelyAfter#()V" />
+      <node id="2509802792080231260" at="44,0,48,0" concept="2" trace="test_addingEmptyLineDoesNotRecursivelyAddUnboundedLines#()V" />
+      <node id="2509802792080189826" at="55,0,59,0" concept="2" trace="initTestNodes#()V" />
+      <node id="2509802792080231260" at="106,22,113,9" concept="1" />
+      <node id="2509802792080189832" at="61,22,70,9" concept="1" />
+      <node id="2509802792080231260" at="105,0,115,0" concept="2" trace="test_addingEmptyLineDoesNotRecursivelyAddUnboundedLines#()V" />
+      <node id="2509802792080189832" at="60,0,72,0" concept="2" trace="test_addingFeatureModelLeavesTwoEmptyLines#()V" />
+      <node id="2509802792080209328" at="73,22,86,9" concept="1" />
+      <node id="2509802792080219810" at="89,22,103,9" concept="1" />
+      <node id="2509802792080209328" at="72,0,88,0" concept="2" trace="test_replacingEmptyLineWithConfigurationLeavesMoreEmptyLines#()V" />
+      <node id="2509802792080219810" at="88,0,105,0" concept="2" trace="test_insertingContentPreservesFollowingContentAndAddsLinesImmediatelyAfter#()V" />
+      <scope id="2509802792080189826" at="28,47,29,60" />
+      <scope id="2509802792080189832" at="33,77,34,68" />
+      <scope id="2509802792080209328" at="37,95,38,86" />
+      <scope id="2509802792080219810" at="41,109,42,100" />
+      <scope id="2509802792080231260" at="45,90,46,81" />
+      <scope id="2509802792080189826" at="51,52,52,19" />
+      <scope id="2509802792080189826" at="56,36,57,46" />
+      <scope id="2509802792080189826" at="28,0,31,0" />
+      <scope id="2509802792080189826" at="51,0,54,0">
+        <var name="owner" id="2509802792080189826" />
+      </scope>
+      <scope id="2509802792080189832" at="32,0,36,0" />
+      <scope id="2509802792080209328" at="36,0,40,0" />
+      <scope id="2509802792080219810" at="40,0,44,0" />
+      <scope id="2509802792080231260" at="44,0,48,0" />
+      <scope id="2509802792080189826" at="55,0,59,0" />
+      <scope id="2509802792080231260" at="107,30,112,151">
+        <var name="emptyLine" id="2509802792080231269" />
+      </scope>
+      <scope id="2509802792080189832" at="62,30,69,207">
+        <var name="featureModel" id="2509802792080206074" />
+      </scope>
+      <scope id="2509802792080231260" at="105,92,113,9" />
+      <scope id="2509802792080189832" at="60,79,70,9" />
+      <scope id="2509802792080231260" at="105,0,115,0" />
+      <scope id="2509802792080209328" at="74,30,85,207">
+        <var name="configuration" id="2509802792080209350" />
+        <var name="featureModel" id="2509802792080209337" />
+      </scope>
+      <scope id="2509802792080189832" at="60,0,72,0" />
+      <scope id="2509802792080219810" at="90,30,102,207">
+        <var name="following" id="2509802792080219819" />
+        <var name="inserted" id="2509802792080219832" />
+      </scope>
+      <scope id="2509802792080209328" at="72,97,86,9" />
+      <scope id="2509802792080219810" at="88,111,103,9" />
+      <scope id="2509802792080209328" at="72,0,88,0" />
+      <scope id="2509802792080219810" at="88,0,105,0" />
+      <unit id="2509802792080189826" at="118,0,121,0" name="test.org.iets3.variability.artifacts.base.empty_content.EmptyContentAfterFeatureModel_Test$LINKS" />
+      <unit id="2509802792080189826" at="122,0,125,0" name="test.org.iets3.variability.artifacts.base.empty_content.EmptyContentAfterFeatureModel_Test$CONCEPTS" />
+      <unit id="2509802792080189826" at="49,0,117,0" name="test.org.iets3.variability.artifacts.base.empty_content.EmptyContentAfterFeatureModel_Test$TestBody" />
+      <unit id="2509802792080189826" at="23,0,126,0" name="test.org.iets3.variability.artifacts.base.empty_content.EmptyContentAfterFeatureModel_Test" />
+    </file>
+  </root>
+</debug-info>
+
