@@ -18,7 +18,6 @@ import org.iets3.core.expr.base.plugin.MessageValue;
 import com.mbeddr.mpsutil.interpreter.rt.InvalidValueException;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations;
 import java.util.Objects;
-import org.iets3.core.base.behavior.ICanStoreCheckResult__BehaviorDescriptor;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
 import jetbrains.mps.internal.collections.runtime.ListSequence;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
@@ -70,7 +69,6 @@ public final class InvalidValueTestItem__BehaviorDescriptor extends BaseBHDescri
     }
     long end = System.currentTimeMillis();
     result.setTime(end - begin);
-    ICanStoreCheckResult__BehaviorDescriptor.storeLastResult_id3R3AIvuq5Dp.invoke(__thisNode__, result);
     return result;
   }
   /*package*/ static boolean isStructurallyValid_id4e_7uAt7r3Y(@NotNull SNode __thisNode__) {

@@ -6,10 +6,10 @@ import javax.swing.Icon;
 import jetbrains.mps.ide.icons.IconLoadingUtil;
 
 public class IconContainer {
-  protected static Icon ICON_a0a0a0a0a0a0c0d = IconLoadingUtil.loadIcon("addChild.png", IconContainer.class);
-  protected static Icon ICON_a0a0a0b0a0a0c0d = IconLoadingUtil.loadIcon("addSibling.png", IconContainer.class);
-  protected static Icon ICON_a0a0a0c0a0a0c0d = IconLoadingUtil.loadIcon("delete.png", IconContainer.class);
-  protected static Icon ICON_a0 = IconLoadingUtil.loadIcon("addChild.png", IconContainer.class);
-  protected static Icon ICON_a0_0 = IconLoadingUtil.loadIcon("addSibling.png", IconContainer.class);
-  protected static Icon ICON_a0_1 = IconLoadingUtil.loadIcon("delete.png", IconContainer.class);
+  protected static Icon ICON0 = IconLoadingUtil.loadIcon("/icons/addChild.png", IconContainer.class);
+  protected static Icon ICON1 = IconLoadingUtil.loadIcon("/icons/addSibling.png", IconContainer.class);
+  protected static Icon ICON2 = IconLoadingUtil.loadIcon("/icons/delete.png", IconContainer.class);
+  protected static Icon ICON3 = IconLoadingUtil.loadIcon("/icons/addChild.png", IconContainer.class);
+  protected static Icon ICON4 = IconLoadingUtil.loadIcon("/icons/addSibling.png", IconContainer.class);
+  protected static Icon ICON5 = IconLoadingUtil.loadIcon("/icons/delete.png", IconContainer.class);
 }

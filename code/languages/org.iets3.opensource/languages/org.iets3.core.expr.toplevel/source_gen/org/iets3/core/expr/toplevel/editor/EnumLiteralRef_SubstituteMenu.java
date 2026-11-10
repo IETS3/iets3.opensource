@@ -12,66 +12,39 @@ import jetbrains.mps.openapi.editor.menus.substitute.SubstituteMenuItem;
 import jetbrains.mps.openapi.editor.menus.substitute.SubstituteMenuContext;
 import java.util.ArrayList;
 import jetbrains.mps.lang.editor.menus.substitute.ConstraintsFilteringSubstituteMenuPartDecorator;
-import jetbrains.mps.lang.editor.menus.substitute.IncludeSubstituteMenuSubstituteMenuPart;
-import org.jetbrains.annotations.Nullable;
-import jetbrains.mps.openapi.editor.menus.substitute.SubstituteMenuLookup;
-import jetbrains.mps.openapi.editor.EditorContext;
-import org.jetbrains.mps.openapi.language.SAbstractConcept;
-import jetbrains.mps.lang.editor.menus.substitute.NamedSubstituteMenuLookup;
-import jetbrains.mps.smodel.language.LanguageRegistry;
+import jetbrains.mps.lang.editor.menus.substitute.ReferenceScopeSubstituteMenuPart;
 import jetbrains.mps.lang.editor.menus.ConceptMenusPart;
 import java.util.Collection;
+import org.jetbrains.mps.openapi.language.SAbstractConcept;
 import jetbrains.mps.lang.editor.menus.substitute.DefaultSubstituteMenuLookup;
-import jetbrains.mps.lang.editor.menus.ParameterizedMenuPart;
-import org.jetbrains.mps.openapi.model.SNode;
-import jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations;
-import org.iets3.core.expr.toplevel.behavior.EnumLiteral__BehaviorDescriptor;
-import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
-import jetbrains.mps.lang.editor.menus.substitute.SingleItemSubstituteMenuPart;
-import jetbrains.mps.lang.editor.menus.substitute.DefaultSubstituteMenuItem;
-import jetbrains.mps.editor.runtime.completion.CompletionItemInformation;
-import jetbrains.mps.smodel.runtime.IconResource;
-import jetbrains.mps.smodel.builder.SNodeBuilder;
+import jetbrains.mps.smodel.language.LanguageRegistry;
 import org.jetbrains.mps.openapi.language.SConcept;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import org.jetbrains.mps.openapi.language.SReferenceLink;
-import org.jetbrains.mps.openapi.language.SContainmentLink;
-import org.jetbrains.mps.openapi.language.SProperty;
 
 public class EnumLiteralRef_SubstituteMenu extends SubstituteMenuBase {
   public EnumLiteralRef_SubstituteMenu() {
-    super(false, new EditorMenuDescriptorBase("default substitute menu for " + "EnumLiteralRef", new SNodePointer("r:1d6bd88a-7393-4b32-b0e6-2d8b3094776e(org.iets3.core.expr.toplevel.editor)", "8297803270191517216")));
+    super(false, new EditorMenuDescriptorBase("default substitute menu for EnumLiteralRef. Generated from implicit smart reference attribute.", new SNodePointer("r:da65683e-ff6f-430d-ab68-32a77df72c93(org.iets3.core.expr.toplevel.structure)", "7061117989422577349")));
   }
   @NotNull
   @Override
   protected List<MenuPart<SubstituteMenuItem, SubstituteMenuContext>> getParts(final SubstituteMenuContext _context) {
     List<MenuPart<SubstituteMenuItem, SubstituteMenuContext>> result = new ArrayList<MenuPart<SubstituteMenuItem, SubstituteMenuContext>>();
-    result.add(new SMP_Include_ndph2h_a());
+    result.add(new ConstraintsFilteringSubstituteMenuPartDecorator(new SMP_ReferenceScope_ndph2h_a(), CONCEPTS.EnumLiteralRef$$8));
     result.add(new SMP_Subconcepts_ndph2h_b());
-    result.add(new ConstraintsFilteringSubstituteMenuPartDecorator(new SMP_Param_ndph2h_c(), CONCEPTS.EnumLiteralRef$$8));
     return result;
   }
 
-  public class SMP_Include_ndph2h_a extends IncludeSubstituteMenuSubstituteMenuPart {
+  public class SMP_ReferenceScope_ndph2h_a extends ReferenceScopeSubstituteMenuPart {
 
-    public SMP_Include_ndph2h_a() {
-      super(new EditorMenuDescriptorBase("include " + "named substitute menu " + "EnumLiteralRef_SmartReference", new SNodePointer("r:1d6bd88a-7393-4b32-b0e6-2d8b3094776e(org.iets3.core.expr.toplevel.editor)", "8297803270191517217")));
+    public SMP_ReferenceScope_ndph2h_a() {
+      super(CONCEPTS.EnumLiteralRef$$8, LINKS.literal$llO8, new EditorMenuDescriptorBase("reference scope substitute menu part", null));
     }
 
-    @Nullable
-    @Override
-    protected SubstituteMenuLookup getMenuLookup(SubstituteMenuContext _context) {
-      final EditorContext editorContext = _context.getEditorContext();
-      SAbstractConcept conceptToFindMenuFor = getConceptToFindMenuFor(_context);
-      return new NamedSubstituteMenuLookup(LanguageRegistry.getInstance(editorContext.getRepository()), conceptToFindMenuFor, "org.iets3.core.expr.toplevel.editor.EnumLiteralRef_SmartReference");
-    }
-    private SAbstractConcept getConceptToFindMenuFor(SubstituteMenuContext _context) {
-      return CONCEPTS.EnumLiteralRef$$8;
-    }
   }
   public class SMP_Subconcepts_ndph2h_b extends ConceptMenusPart<SubstituteMenuItem, SubstituteMenuContext> {
     public SMP_Subconcepts_ndph2h_b() {
-      super(new EditorMenuDescriptorBase("include menus for all the direct subconcepts of " + "EnumLiteralRef", new SNodePointer("r:1d6bd88a-7393-4b32-b0e6-2d8b3094776e(org.iets3.core.expr.toplevel.editor)", "8297803270191517219")));
+      super(new EditorMenuDescriptorBase("include menus for all the direct subconcepts of " + "EnumLiteralRef", null));
     }
 
     @Override
@@ -84,86 +57,6 @@ public class EnumLiteralRef_SubstituteMenu extends SubstituteMenuBase {
       return context.createItems(new DefaultSubstituteMenuLookup(LanguageRegistry.getInstance(context.getEditorContext().getRepository()), concept));
     }
   }
-  private class SMP_Param_ndph2h_c extends ParameterizedMenuPart<SNode, SubstituteMenuItem, SubstituteMenuContext> {
-    /*package*/ SMP_Param_ndph2h_c() {
-      super(new EditorMenuDescriptorBase("parameterized substitute menu part", new SNodePointer("r:1d6bd88a-7393-4b32-b0e6-2d8b3094776e(org.iets3.core.expr.toplevel.editor)", "8379653541543088000")));
-    }
-    @NotNull
-    @Override
-    protected List<SubstituteMenuItem> createItems(SNode parameter, SubstituteMenuContext context) {
-      return new SMP_Action_ndph2h_a2(parameter).createItems(context);
-    }
-    @Nullable
-    @Override
-    protected Iterable<? extends SNode> getParameters(SubstituteMenuContext _context) {
-      // these additional actions allow to directly reference other literals from the currently used qualified enum
-      // (referenced in the currentTargetNode), which are otherwise not in the direct scope for using with smart reference  
-      if (SPropertyOperations.getBoolean(EnumLiteral__BehaviorDescriptor.enumDecl_id67Y8mp$M9$v.invoke(SLinkOperations.getTarget(_context.getCurrentTargetNode(), LINKS.literal$llO8)), PROPS.qualified$Uqnz)) {
-        return SLinkOperations.getChildren(EnumLiteral__BehaviorDescriptor.enumDecl_id67Y8mp$M9$v.invoke(SLinkOperations.getTarget(_context.getCurrentTargetNode(), LINKS.literal$llO8)), LINKS.literals$K_NE);
-      } else {
-        return null;
-      }
-    }
-    private class SMP_Action_ndph2h_a2 extends SingleItemSubstituteMenuPart {
-      private final SNode myParameterObject;
-      public SMP_Action_ndph2h_a2(SNode parameterObject) {
-        myParameterObject = parameterObject;
-      }
-
-      @Nullable
-      @Override
-      protected SubstituteMenuItem createItem(SubstituteMenuContext _context) {
-        Item item = new Item(_context);
-        item.resetTraceInfo();
-        return item;
-      }
-      private class Item extends DefaultSubstituteMenuItem {
-        private final SubstituteMenuContext _context;
-        public Item(SubstituteMenuContext context) {
-          super(CONCEPTS.EnumLiteralRef$$8, context);
-          _context = context;
-        }
-
-        /*package*/ void resetTraceInfo() {
-          String description = "Substitute item: " + getMatchingText("");
-          description += ". Parameter object: " + myParameterObject;
-          updateTraceInfo(description, new SNodePointer("r:1d6bd88a-7393-4b32-b0e6-2d8b3094776e(org.iets3.core.expr.toplevel.editor)", "8379653541543088932"));
-        }
-
-        @Nullable
-        @Override
-        public SNode createNode(@NotNull String pattern) {
-          return createEnumLiteralRef_ndph2h_a0a0a2(myParameterObject);
-        }
-
-        @NotNull
-        protected CompletionItemInformation createInformation(String pattern) {
-          return new CompletionItemInformation(myParameterObject, CONCEPTS.EnumLiteralRef$$8, getMatchingText(pattern), getDescriptionText(pattern));
-        }
-        @Nullable
-        @Override
-        public String getDescriptionText(@NotNull String pattern) {
-          return defaultDescriptionTextForParameter(myParameterObject, pattern);
-        }
-        @Nullable
-        @Override
-        public IconResource getIcon(@NotNull String pattern) {
-          return defaultIconForParameter(myParameterObject, pattern);
-        }
-        @Nullable
-        @Override
-        public String getMatchingText(@NotNull String pattern) {
-          return (String) EnumLiteral__BehaviorDescriptor.nameWithEnum_id67Y8mp$HuPC.invoke(myParameterObject);
-        }
-      }
-    }
-
-  }
-  private static SNode createEnumLiteralRef_ndph2h_a0a0a2(SNode p0) {
-    SNodeBuilder n0 = new SNodeBuilder().init(CONCEPTS.EnumLiteralRef$$8);
-    n0.setReferenceTarget(LINKS.literal$llO8, p0);
-    return n0.getResult();
-  }
 
   private static final class CONCEPTS {
     /*package*/ static final SConcept EnumLiteralRef$$8 = MetaAdapterFactory.getConcept(0x71934284d7d145eeL, 0xa0548c072591085fL, 0x61fe216664a736c5L, "org.iets3.core.expr.toplevel.structure.EnumLiteralRef");
@@ -171,10 +64,5 @@ public class EnumLiteralRef_SubstituteMenu extends SubstituteMenuBase {
 
   private static final class LINKS {
     /*package*/ static final SReferenceLink literal$llO8 = MetaAdapterFactory.getReferenceLink(0x71934284d7d145eeL, 0xa0548c072591085fL, 0x61fe216664a736c5L, 0x61fe216664a73709L, "literal");
-    /*package*/ static final SContainmentLink literals$K_NE = MetaAdapterFactory.getContainmentLink(0x71934284d7d145eeL, 0xa0548c072591085fL, 0x61fe216664a72eaeL, 0x61fe216664a72ef4L, "literals");
-  }
-
-  private static final class PROPS {
-    /*package*/ static final SProperty qualified$Uqnz = MetaAdapterFactory.getProperty(0x71934284d7d145eeL, 0xa0548c072591085fL, 0x61fe216664a72eaeL, 0x61fe216664c89321L, "qualified");
   }
 }

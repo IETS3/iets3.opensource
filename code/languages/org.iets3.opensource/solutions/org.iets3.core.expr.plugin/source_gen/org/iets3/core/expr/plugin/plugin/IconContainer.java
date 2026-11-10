@@ -6,8 +6,8 @@ import javax.swing.Icon;
 import jetbrains.mps.ide.icons.IconLoadingUtil;
 
 public class IconContainer {
-  protected static Icon ICON_a0 = IconLoadingUtil.loadIcon("deleteInspectors.png", IconContainer.class);
-  protected static Icon ICON_a0_0 = IconLoadingUtil.loadIcon("addInspector.png", IconContainer.class);
-  protected static Icon ICON_a0_1 = IconLoadingUtil.loadIcon("clearInspectors.png", IconContainer.class);
-  protected static Icon ICON_a0_2 = IconLoadingUtil.loadIcon("coverage.png", IconContainer.class);
+  protected static Icon ICON0 = IconLoadingUtil.loadIcon("/icons/deleteInspectors.png", IconContainer.class);
+  protected static Icon ICON1 = IconLoadingUtil.loadIcon("/icons/addInspector.png", IconContainer.class);
+  protected static Icon ICON2 = IconLoadingUtil.loadIcon("/icons/clearInspectors.png", IconContainer.class);
+  protected static Icon ICON3 = IconLoadingUtil.loadIcon("/icons/coverage.png", IconContainer.class);
 }

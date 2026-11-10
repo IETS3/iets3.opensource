@@ -3,7 +3,7 @@
   <persistence version="9" />
   <languages>
     <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="-1" />
-    <use id="982eb8df-2c96-4bd7-9963-11712ea622e5" name="jetbrains.mps.lang.resources" version="-1" />
+    <use id="982eb8df-2c96-4bd7-9963-11712ea622e5" name="jetbrains.mps.lang.resources" version="3" />
     <use id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc" version="-1" />
     <devkit ref="78434eb8-b0e5-444b-850d-e7c4ad2da9ab(jetbrains.mps.devkit.aspect.structure)" />
   </languages>
@@ -396,6 +396,7 @@
     <property role="3GE5qa" value="unary.p3000" />
     <property role="EcuMT" value="9002563722476995145" />
     <property role="R4oN_" value="a dot expression" />
+    <property role="34LRSv" value="." />
     <ref role="1TJDcQ" node="4rZeNQ6NgXD" resolve="UnaryExpression" />
     <node concept="1TJgyj" id="7NJy08a3O9b" role="1TKVEi">
       <property role="20lmBu" value="fLJjDmT/aggregation" />

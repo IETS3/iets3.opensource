@@ -29,7 +29,7 @@ public class FeatureDecTab_Constraints extends BaseConstraintsDescriptor {
         boolean result = staticCanBeAnAncestor(context.getNode(), context.getChildNode(), context.getChildConcept(), context.getParentNode(), context.getLink());
 
         if (!(result) && checkingNodeContext != null) {
-          checkingNodeContext.setBreakingNode(canBeRootBreakingPoint);
+          checkingNodeContext.setBreakingNode(canBeAncestorBreakingPoint);
         }
 
         return result;
@@ -39,7 +39,7 @@ public class FeatureDecTab_Constraints extends BaseConstraintsDescriptor {
   private static boolean staticCanBeAnAncestor(SNode node, SNode childNode, SAbstractConcept childConcept, SNode parentNode, SContainmentLink link) {
     return !(ConstraintsUtils.isForbiddenListOp(childConcept));
   }
-  private static final SNodePointer canBeRootBreakingPoint = new SNodePointer("r:5258aee4-21db-4874-b08a-288a78f8a679(org.iets3.variability.artifacts.base.constraints)", "3108285579034242088");
+  private static final SNodePointer canBeAncestorBreakingPoint = new SNodePointer("r:5258aee4-21db-4874-b08a-288a78f8a679(org.iets3.variability.artifacts.base.constraints)", "3108285579034242088");
 
   private static final class CONCEPTS {
     /*package*/ static final SConcept FeatureDecTab$p6 = MetaAdapterFactory.getConcept(0xf08835038eaa4bc8L, 0x8846eb63220ab1ddL, 0x2de0d5b2023d47abL, "org.iets3.variability.artifacts.base.structure.FeatureDecTab");

@@ -83,12 +83,12 @@
       <settings refid="m2m-defaults" />
       <plugin path="${artifacts.com.mbeddr.platform}/MPS.Kotlin" id="MPS.Kotlin" />
       <plugin path="${artifacts.com.mbeddr.platform}/MPS.ThirdParty" id="MPS.ThirdParty" />
+      <plugin path="${artifacts.com.mbeddr.platform}/com.jetbrains.mpsext.viewmodel" id="com.jetbrains.mpsext.viewmodel" />
       <plugin path="${artifacts.com.mbeddr.platform}/com.mbeddr.mpsutil.common" id="com.mbeddr.mpsutil.common" />
       <plugin path="${artifacts.com.mbeddr.platform}/com.mbeddr.mpsutil.contextactions" id="com.mbeddr.mpsutil.contextactions" />
       <plugin path="${artifacts.com.mbeddr.platform}/com.mbeddr.mpsutil.editor.querylist" id="com.mbeddr.mpsutil.editor.querylist" />
       <plugin path="${artifacts.com.mbeddr.platform}/com.mbeddr.mpsutil.editorsupport" id="com.mbeddr.mpsutil.editorsupport" />
       <plugin path="${artifacts.com.mbeddr.platform}/com.mbeddr.mpsutil.filepicker" id="com.mbeddr.mpsutil.filepicker" />
-      <plugin path="${artifacts.com.mbeddr.platform}/com.mbeddr.mpsutil.httpsupport" id="com.mbeddr.mpsutil.httpsupport" />
       <plugin path="${artifacts.com.mbeddr.platform}/com.mbeddr.mpsutil.infrastructure.misc" id="com.mbeddr.mpsutil.infrastructure.misc" />
       <plugin path="${artifacts.com.mbeddr.platform}/com.mbeddr.mpsutil.intentions" id="com.mbeddr.mpsutil.intentions" />
       <plugin path="${artifacts.com.mbeddr.platform}/com.mbeddr.mpsutil.interpreter" id="com.mbeddr.mpsutil.interpreter" />
@@ -126,6 +126,9 @@
       <plugin path="${artifacts.mps}/plugins/mps-vcs" id="jetbrains.mps.vcs" />
       <plugin path="${artifacts.mps}/plugins/vcs-git" id="Git4Idea" />
       <plugin path="${artifacts.mps}/plugins/vcs-svn" id="Subversion" />
+      <library file="${artifacts.mps}/languages/editor/jetbrains.mps.ide.editor.jar" />
+      <library file="${artifacts.mps}/languages/plaf/jetbrains.mps.ide.refactoring.platform.jar" />
+      <library file="${artifacts.mps}/languages/plaf/jetbrains.mps.ide.ui.jar" />
       <library file="${artifacts.mps}/languages/util/jetbrains.mps.lang.extension.jar" />
       <library file="${artifacts.mps}/languages/workbench-stub.jar" />
       <library file="${artifacts.mps}/languages/workbench/jetbrains.mps.ide.jar" />
@@ -254,9 +257,9 @@
         <fileset dir="${artifacts.com.mbeddr.platform}/mps-apache-commons/lib" includes="commons-primitives.jar" />
         <fileset dir="${artifacts.com.mbeddr.platform}/mps-apache-commons/lib" includes="miglayout-core.jar" />
         <fileset dir="${artifacts.com.mbeddr.platform}/mps-apache-commons/lib" includes="miglayout-swing.jar" />
+        <fileset file="${artifacts.com.mbeddr.platform}/com.jetbrains.mpsext.viewmodel/languages/com.jetbrains.mpsext.viewmodel/com.jetbrains.mpsext.viewmodel.runtime.jar" />
         <fileset file="${artifacts.com.mbeddr.platform}/com.mbeddr.mpsutil.userstyles/languages/group.userstyles/com.mbeddr.mpsutil.userstyles.runtime.jar" />
         <fileset file="${artifacts.com.mbeddr.platform}/de.itemis.mps.utils/languages/de.itemis.mps.utils/de.itemis.mps.utils.serializer.xml.jar" />
-        <fileset file="${artifacts.com.mbeddr.platform}/de.slisson.mps.hacks/languages/de.slisson.mps.hacks/de.slisson.mps.hacks.editor.jar" />
         <fileset file="${artifacts.mps}/languages/runtimes/jetbrains.mps.analyzers.runtime.jar" />
         <fileset dir="${artifacts.com.mbeddr.platform}/de.itemis.mps.utils/lib" includes="lib/jaxen-1.1.6.jar" />
         <fileset dir="${artifacts.com.mbeddr.platform}/de.itemis.mps.utils/lib" includes="jdom2-2.0.6.jar" />
@@ -264,6 +267,7 @@
         <fileset file="${artifacts.com.mbeddr.platform}/mpsutil.refactoring/languages/group.refactoring/com.mbeddr.mpsutil.refactoring.rt.jar" />
         <fileset file="${artifacts.com.mbeddr.platform}/com.mbeddr.mpsutil.editorsupport/languages/group.editor-support/com.mbeddr.mpsutil.targetchooser.jar" />
         <fileset file="${artifacts.com.mbeddr.platform}/de.slisson.mps.conditionalEditor/languages/de.slisson.mps.conditionalEditor/de.slisson.mps.conditionalEditor.runtime.jar" />
+        <fileset file="${artifacts.com.mbeddr.platform}/de.slisson.mps.hacks/languages/de.slisson.mps.hacks/de.slisson.mps.hacks.editor.jar" />
         <fileset file="${artifacts.com.mbeddr.platform}/de.slisson.mps.hacks/languages/de.slisson.mps.hacks/de.slisson.mps.reflection.runtime.jar" />
         <fileset file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.classifiers.jar" />
         <fileset file="${artifacts.mps}/plugins/mps-httpsupport/solutions/jetbrains.mps.ide.httpsupport.runtime.jar" />
@@ -430,6 +434,7 @@
         <fileset file="${artifacts.mps}/lib/platform-loader.jar" />
         <fileset file="${artifacts.mps}/lib/annotations.jar" />
         <fileset file="${artifacts.mps}/lib/trove.jar" />
+        <fileset file="${artifacts.com.mbeddr.platform}/com.jetbrains.mpsext.viewmodel/languages/com.jetbrains.mpsext.viewmodel/com.jetbrains.mpsext.viewmodel.runtime.jar" />
         <fileset file="${artifacts.com.mbeddr.platform}/mbeddr.platform/languages/com.mbeddr.platform/com.mbeddr.core.base.jar" />
         <fileset file="${artifacts.com.mbeddr.platform}/de.itemis.mps.blutil/languages/de.itemis.mps.blutil/com.mbeddr.mpsutil.blutil.jar" />
         <fileset file="${artifacts.com.mbeddr.platform}/com.mbeddr.mpsutil.editor.querylist/languages/group.editor.querylist/com.mbeddr.mpsutil.editor.querylist.runtime.jar" />
@@ -442,7 +447,6 @@
         <fileset file="${artifacts.com.mbeddr.platform}/de-itemis-mps-selection/languages/de.itemis.mps.selection/de.itemis.mps.selection.runtime.jar" />
         <fileset file="${artifacts.com.mbeddr.platform}/de.itemis.mps.utils/languages/de.itemis.mps.utils/de.itemis.mps.utils.serializer.xml.jar" />
         <fileset file="${artifacts.com.mbeddr.platform}/mps-multiline/languages/mps-multiline/de.slisson.mps.editor.multiline.runtime.jar" />
-        <fileset file="${artifacts.com.mbeddr.platform}/de.slisson.mps.hacks/languages/de.slisson.mps.hacks/de.slisson.mps.hacks.editor.jar" />
         <fileset file="${artifacts.com.mbeddr.platform}/mps-richtext/languages/mps-richtext/de.slisson.mps.richtext.jar" />
         <fileset file="${artifacts.mps}/languages/runtimes/jetbrains.mps.analyzers.runtime.jar" />
         <fileset file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.jar" />

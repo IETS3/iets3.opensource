@@ -45,6 +45,7 @@
   <uses language="l:cfaa4966-b7d5-4b69-b66a-309a6e1a7290:org.iets3.core.expr.base" />
   <uses language="l:9464fa06-5ab9-409b-9274-64ab29588457:org.iets3.core.expr.lambda" />
   <uses language="l:6b277d9a-d52d-416f-a209-1919bd737f50:org.iets3.core.expr.simpleTypes" />
+  <uses language="l:a541f0ab-35e1-4095-90fe-2e552a0cc7c5:org.iets3.internal.modelaccessor" />
   <uses module="3f233e7f-b8a6-46d2-a57f-795d56775243(Annotations)" kind="dp" />
   <uses module="6354ebe7-c22a-4a0f-ac54-50b52ab9b065(JDK)" kind="rt+dp" />
   <uses module="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea(MPS.Core)" kind="rt+dp" />
