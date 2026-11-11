@@ -40,6 +40,7 @@
     <dependency reexport="false">da21218f-a674-474d-8b4e-d59e33007003(de.slisson.mps.tables.runtime)</dependency>
     <dependency reexport="false">1ed103c3-3aa6-49b7-9c21-6765ee11f224(MPS.Editor)</dependency>
     <dependency reexport="false">34e84b8f-afa8-4364-abcd-a279fddddbe7(jetbrains.mps.editor.runtime)</dependency>
+    <dependency reexport="false">07e2118e-763f-4d93-8ae6-23cf5ede3d59(org.iets3.core.plugin)</dependency>
   </dependencies>
   <languageVersions>
     <language slang="l:d4280a54-f6df-4383-aa41-d1b2bffa7eb1:com.mbeddr.core.base" version="6" />
@@ -176,6 +177,7 @@
     <module reference="cb91a38e-738a-4811-a96d-448d08f526fa(org.iets3.core.expr.typetags.units)" version="1" />
     <module reference="1c761cfd-81b1-4794-9999-148fa76881b8(org.iets3.core.expr.typetags.units.si)" version="0" />
     <module reference="8bb1251e-eae5-47ab-9843-33adfae8edaa(org.iets3.core.expr.util)" version="7" />
+    <module reference="07e2118e-763f-4d93-8ae6-23cf5ede3d59(org.iets3.core.plugin)" version="0" />
     <module reference="cf55cddb-d431-4f2e-93f4-3a4305c63d12(test.ts.expr.os)" version="0" />
     <module reference="b80fab4e-53f2-409c-81d8-3475855e0e42(test.ts.expr.os.nix)" version="0" />
     <module reference="a2242e6f-d308-41e6-ac06-28b0a2a4ad79(test.ts.expr.os.validNameConcept)" version="0" />

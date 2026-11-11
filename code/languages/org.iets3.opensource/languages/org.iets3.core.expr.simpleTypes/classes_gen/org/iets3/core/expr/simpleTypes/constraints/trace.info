@@ -299,11 +299,11 @@
       <node id="4735327607204181560" at="21,35,22,34" concept="11" />
       <node id="4735327607204181560" at="29,130,30,161" concept="6" />
       <node id="4735327607204181560" at="30,161,31,0" concept="8" />
-      <node id="4735327607204181560" at="32,55,33,70" concept="2" />
+      <node id="4735327607204181560" at="32,55,33,74" concept="2" />
       <node id="4735327607204181560" at="34,9,35,0" concept="8" />
       <node id="4735327607204181560" at="35,0,36,22" concept="7" />
       <node id="4735327607204182437" at="40,149,41,121" concept="7" />
-      <node id="4735327607204181560" at="43,0,44,0" concept="9" trace="canBeRootBreakingPoint" />
+      <node id="4735327607204181560" at="43,0,44,0" concept="9" trace="canBeAncestorBreakingPoint" />
       <node id="4735327607204181560" at="46,0,47,0" concept="9" trace="StringType$B3" />
       <node id="4735327607204181560" at="47,0,48,0" concept="9" trace="MatchParensRegexp$Ea" />
       <node id="4735327607204181560" at="21,0,24,0" concept="1" trace="StringType_Constraints#()V" />
@@ -313,7 +313,7 @@
       <node id="4735327607204181560" at="26,109,38,6" concept="7" />
       <node id="4735327607204181560" at="25,0,40,0" concept="5" trace="calculateCanBeAncestorConstraint#()Ljetbrains/mps/smodel/runtime/ConstraintFunction;" />
       <scope id="4735327607204181560" at="21,35,22,34" />
-      <scope id="4735327607204181560" at="32,55,33,70" />
+      <scope id="4735327607204181560" at="32,55,33,74" />
       <scope id="4735327607204181562" at="40,149,41,121" />
       <scope id="4735327607204181560" at="21,0,24,0" />
       <scope id="4735327607204181560" at="40,0,43,0">

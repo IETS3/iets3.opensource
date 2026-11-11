@@ -80,6 +80,7 @@ public class JUnitInterpreterExecutor {
     SNode node = getNode(wrapper.getNodePointer());
     try {
       if (SNodeOperations.isInstanceOf(node, CONCEPTS.ITestItemContainer$ow)) {
+        // this actually calls doExecute
         handleNonEmptyItems(wrapper, node);
       } else {
         if (SNodeOperations.isInstanceOf(node, CONCEPTS.AbstractTestItem$9u)) {
@@ -90,10 +91,6 @@ public class JUnitInterpreterExecutor {
       }
     } catch (Exception e) {
       myException = e;
-    }
-
-    if (wrapper.isTestCase()) {
-      doExecute(wrapper.getTestCase());
     }
   }
 

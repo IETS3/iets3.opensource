@@ -11,11 +11,13 @@ public final class LanguageConceptSwitch {
   private final LanguageConceptIndex myIndex;
   public static final int NixLiteral = 0;
   public static final int NixType = 1;
+  public static final int RecordingManualCheck = 2;
 
   public LanguageConceptSwitch() {
     LanguageConceptIndexBuilder builder = new LanguageConceptIndexBuilder(0xb80fab4e53f2409cL, 0x81d83475855e0e42L);
     builder.put(0x7a72bbb1ba989eceL, NixLiteral);
     builder.put(0x7a72bbb1ba9937b3L, NixType);
+    builder.put(0x257bf7f218fe313L, RecordingManualCheck);
     myIndex = builder.seal();
   }
 

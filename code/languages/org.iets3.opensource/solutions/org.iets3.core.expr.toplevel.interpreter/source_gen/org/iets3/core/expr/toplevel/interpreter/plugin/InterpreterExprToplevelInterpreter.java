@@ -47,6 +47,8 @@ import org.iets3.core.expr.base.plugin.MarkerNodes;
 import org.iets3.core.expr.base.behavior.IETS3ExprContext;
 import jetbrains.mps.typechecking.TypecheckingFacade;
 import org.iets3.core.expr.base.plugin.RRC;
+import org.iets3.core.expr.toplevel.behavior.AbstractEnumInTarget__BehaviorDescriptor;
+import org.iets3.core.expr.toplevel.behavior.AbstractEnumSingleInTarget__BehaviorDescriptor;
 import com.mbeddr.mpsutil.interpreter.rt.ITypeMapper;
 import com.mbeddr.mpsutil.interpreter.rt.IRelationship;
 import com.mbeddr.mpsutil.interpreter.rt.InterpretBeforeRelationshipImpl;
@@ -919,7 +921,7 @@ public class InterpreterExprToplevelInterpreter extends InterpreterBase {
           coverage.visitedConcept(this.concept);
           coverage.visitedConcept(SNodeOperations.getConcept(node));
           final Object ctx = MapSequence.fromMap(context.getEnvironment()).get(SLinkOperations.getTarget(SNodeOperations.cast(SNodeOperations.getParent(node), CONCEPTS.DotExpression$jp), LINKS.expr$CW3E));
-          boolean ret = ListSequence.fromList(SLinkOperations.getChildren(node, LINKS.selectors$Hqrd)).any((it) -> ctx == EnumLiteral.getInstance(SLinkOperations.getTarget(it, LINKS.literal$XL8B), context, coverage, ((_FunctionTypes._return_P0_E0<ComputationTrace>) () -> {
+          boolean ret = Sequence.fromIterable(AbstractEnumInTarget__BehaviorDescriptor.effectiveSelectors_id48Zi1gznqdX.invoke(node)).any((it) -> ctx == EnumLiteral.getInstance(SLinkOperations.getTarget(it, LINKS.literal$XL8B), context, coverage, ((_FunctionTypes._return_P0_E0<ComputationTrace>) () -> {
             if (trace != null) {
               return trace;
             } else {
@@ -927,7 +929,7 @@ public class InterpreterExprToplevelInterpreter extends InterpreterBase {
             }
           }).invoke()));
           if (ret) {
-            ListSequence.fromList(SLinkOperations.getChildren(node, LINKS.selectors$Hqrd)).visitAll((it) -> coverage.coverValue(it, null));
+            Sequence.fromIterable(AbstractEnumInTarget__BehaviorDescriptor.effectiveSelectors_id48Zi1gznqdX.invoke(node)).visitAll((it) -> coverage.coverValue(it, null));
           }
           return ret;
         } catch (StopAndReturnException stop) {
@@ -1038,7 +1040,7 @@ public class InterpreterExprToplevelInterpreter extends InterpreterBase {
           coverage.visitedConcept(this.concept);
           coverage.visitedConcept(SNodeOperations.getConcept(node));
           Object ctx = MapSequence.fromMap(context.getEnvironment()).get(SLinkOperations.getTarget(SNodeOperations.cast(SNodeOperations.getParent(node), CONCEPTS.DotExpression$jp), LINKS.expr$CW3E));
-          return ctx == EnumLiteral.getInstance(SLinkOperations.getTarget(node, LINKS.literal$7Jlb), context, coverage, ((_FunctionTypes._return_P0_E0<ComputationTrace>) () -> {
+          return ctx == EnumLiteral.getInstance(AbstractEnumSingleInTarget__BehaviorDescriptor.effectiveLiteral_id48Zi1gznep_.invoke(node), context, coverage, ((_FunctionTypes._return_P0_E0<ComputationTrace>) () -> {
             if (trace != null) {
               return trace;
             } else {
@@ -1175,8 +1177,8 @@ public class InterpreterExprToplevelInterpreter extends InterpreterBase {
     /*package*/ static final SContainmentLink args$hM$s = MetaAdapterFactory.getContainmentLink(0x71934284d7d145eeL, 0xa0548c072591085fL, 0x27b717d14a8f82d7L, 0x27b717d14a903157L, "args");
     /*package*/ static final SReferenceLink extFun$udGR = MetaAdapterFactory.getReferenceLink(0x71934284d7d145eeL, 0xa0548c072591085fL, 0x27b717d14a8f82d7L, 0x27b717d14a8f82e8L, "extFun");
     /*package*/ static final SContainmentLink args$XOIh = MetaAdapterFactory.getContainmentLink(0x9464fa065ab9409bL, 0x927464ab29588457L, 0x427ce523083b8a2fL, 0x427ce523083b8a3fL, "args");
-    /*package*/ static final SContainmentLink selectors$Hqrd = MetaAdapterFactory.getContainmentLink(0x71934284d7d145eeL, 0xa0548c072591085fL, 0x4c45dc3c56a5dd6cL, 0x358e78f08b0d1158L, "selectors");
     /*package*/ static final SReferenceLink literal$XL8B = MetaAdapterFactory.getReferenceLink(0x71934284d7d145eeL, 0xa0548c072591085fL, 0x6f1c76e8c8cb0fcdL, 0x6f1c76e8c8cb0fceL, "literal");
+    /*package*/ static final SContainmentLink selectors$Hqrd = MetaAdapterFactory.getContainmentLink(0x71934284d7d145eeL, 0xa0548c072591085fL, 0x4c45dc3c56a5dd6cL, 0x358e78f08b0d1158L, "selectors");
     /*package*/ static final SContainmentLink enumType$fTEX = MetaAdapterFactory.getContainmentLink(0x71934284d7d145eeL, 0xa0548c072591085fL, 0x28e06ca064d916e8L, 0x28e06ca064d91ca1L, "enumType");
     /*package*/ static final SReferenceLink enum$2YBB = MetaAdapterFactory.getReferenceLink(0x71934284d7d145eeL, 0xa0548c072591085fL, 0x61fe216664a730bbL, 0x61fe216664a730f3L, "enum");
     /*package*/ static final SContainmentLink literals$K_NE = MetaAdapterFactory.getContainmentLink(0x71934284d7d145eeL, 0xa0548c072591085fL, 0x61fe216664a72eaeL, 0x61fe216664a72ef4L, "literals");

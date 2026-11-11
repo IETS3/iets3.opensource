@@ -13,7 +13,7 @@
       <node id="4749011560167682144" at="36,51,37,72" concept="1" />
       <node id="4934742935469520312" at="37,72,38,128" concept="1" />
       <node id="4934742935469520314" at="38,128,39,103" concept="1" />
-      <node id="4934742935469520315" at="39,103,40,39" concept="1" />
+      <node id="4934742935469520315" at="39,103,40,40" concept="1" />
       <node id="4749011560167682144" at="17,0,19,0" concept="3" trace="ourParametersCacheExtension" />
       <node id="4749011560167682144" at="20,0,23,0" concept="0" trace="AddDocumentationIntoConfigurationModel_Test#()V" />
       <node id="4749011560167682144" at="31,0,34,0" concept="0" trace="TestBody#(Ljetbrains/mps/lang/test/runtime/TransformationTest;)V" />
@@ -27,7 +27,7 @@
         <var name="owner" id="4749011560167682144" />
       </scope>
       <scope id="4749011560167682144" at="24,0,28,0" />
-      <scope id="4749011560167682144" at="36,51,40,39" />
+      <scope id="4749011560167682144" at="36,51,40,40" />
       <scope id="4749011560167682144" at="35,0,42,0" />
       <unit id="4749011560167682144" at="29,0,43,0" name="test.org.iets3.variability.configuration.base.documentation.AddDocumentationIntoConfigurationModel_Test$TestBody" />
       <unit id="4749011560167682144" at="15,0,44,0" name="test.org.iets3.variability.configuration.base.documentation.AddDocumentationIntoConfigurationModel_Test" />

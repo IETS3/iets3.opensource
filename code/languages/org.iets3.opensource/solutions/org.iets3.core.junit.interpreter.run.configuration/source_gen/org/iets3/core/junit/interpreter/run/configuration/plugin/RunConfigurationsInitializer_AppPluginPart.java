@@ -25,7 +25,7 @@ public class RunConfigurationsInitializer_AppPluginPart extends ApplicationPlugi
     // register kinds
     ExtensionPoint<ConfigurationType> configurationExtensionPoint = Extensions.getRootArea().getExtensionPoint(ConfigurationType.CONFIGURATION_TYPE_EP);
     {
-      ConfigTypeEnvoy runConfigurationKind = new ConfigTypeEnvoy("JUnit Interpreter Test", IconContainer.ICON_b0a0a0c0d, "JUnit Interpreter Test", "JUnit Interpreter Test");
+      ConfigTypeEnvoy runConfigurationKind = new ConfigTypeEnvoy("JUnit Interpreter Test", IconContainer.ICON0, "JUnit Interpreter Test", "JUnit Interpreter Test");
       runConfigurationKind.addFactoryFor("JUnit Interpreter Test", JUnitInterpreterTest_Configuration.class);
       RunConfigurationsInitializer_AppPluginPart.this.myRegisteredKinds.add(runConfigurationKind);
       configurationExtensionPoint.registerExtension(runConfigurationKind);

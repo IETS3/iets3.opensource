@@ -18,8 +18,11 @@ import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
 import org.jetbrains.mps.openapi.model.SNode;
 import com.mbeddr.mpsutil.grammarcells.runtime.GrammarCellsUtil;
 import jetbrains.mps.openapi.editor.EditorContext;
+import org.iets3.core.expr.base.plugin.EditorCustomizationConfigHelper;
 import com.mbeddr.mpsutil.grammarcells.runtime.FlagSubstituteMenuItem;
 import com.mbeddr.mpsutil.grammarcells.runtime.DefaultFlagModelAccess;
+import org.jetbrains.annotations.Nullable;
+import org.jetbrains.annotations.NotNull;
 import jetbrains.mps.smodel.SNodePointer;
 import jetbrains.mps.openapi.editor.menus.transformation.TransformationMenuItem;
 import jetbrains.mps.openapi.editor.menus.transformation.TransformationMenuContext;
@@ -59,8 +62,22 @@ public class GrammarActionsDescriptor extends AbstractGrammarActionDescriptor im
               for (final SAbstractConcept subconcept : GrammarCellsUtil.getVisibleSubconceptsNonAbstract(outputConcept, _context.getModel(), BTDeclaration_Editor.class, _context.getEditorContext())) {
                 EditorContext editorContext = _context.getEditorContext();
                 boolean applicable = GrammarCellsUtil.canBeChild(subconcept, _context);
+                applicable &= new Object() {
+                  public boolean query() {
+                    return EditorCustomizationConfigHelper.getConfig().isFlagCellSubstitutionActivated(EditorCustomizationConfigHelper.getIdentifier(CONCEPTS.BTDeclaration$58, PROPS.initial$ccDb), subconcept, substitutedNode, parentNode, editorContext);
+                  }
+                }.query();
                 if (applicable) {
-                  ListSequence.fromList(result).addElement(new FlagSubstituteMenuItem(parentNode, _context.getCurrentTargetNode(), subconcept, "initial", _context, new DefaultFlagModelAccess(PROPS.initial$ccDb)) {});
+                  ListSequence.fromList(result).addElement(new FlagSubstituteMenuItem(parentNode, _context.getCurrentTargetNode(), subconcept, "initial", _context, new DefaultFlagModelAccess(PROPS.initial$ccDb)) {
+                    @Nullable
+                    @Override
+                    public String getDescriptionText(@NotNull String pattern) {
+                      String originalText = super.getDescriptionText(pattern);
+                      EditorContext editorContext = _context.getEditorContext();
+                      String descriptiontext = EditorCustomizationConfigHelper.getConfig().getFlagCellDescriptionText(EditorCustomizationConfigHelper.getIdentifier(CONCEPTS.BTDeclaration$58, PROPS.initial$ccDb), originalText, editorContext);
+                      return ((descriptiontext != null && descriptiontext.length() > 0) ? descriptiontext : originalText);
+                    }
+                  });
                 }
               }
             }
@@ -94,8 +111,22 @@ public class GrammarActionsDescriptor extends AbstractGrammarActionDescriptor im
               for (final SAbstractConcept subconcept : GrammarCellsUtil.getVisibleSubconceptsNonAbstract(outputConcept, _context.getModel(), BTGroup_Editor.class, _context.getEditorContext())) {
                 EditorContext editorContext = _context.getEditorContext();
                 boolean applicable = GrammarCellsUtil.canBeChild(subconcept, _context);
+                applicable &= new Object() {
+                  public boolean query() {
+                    return EditorCustomizationConfigHelper.getConfig().isFlagCellSubstitutionActivated(EditorCustomizationConfigHelper.getIdentifier(CONCEPTS.BTGroup$F6, PROPS.initial$OMgP), subconcept, substitutedNode, parentNode, editorContext);
+                  }
+                }.query();
                 if (applicable) {
-                  ListSequence.fromList(result).addElement(new FlagSubstituteMenuItem(parentNode, _context.getCurrentTargetNode(), subconcept, "initial", _context, new DefaultFlagModelAccess(PROPS.initial$OMgP)) {});
+                  ListSequence.fromList(result).addElement(new FlagSubstituteMenuItem(parentNode, _context.getCurrentTargetNode(), subconcept, "initial", _context, new DefaultFlagModelAccess(PROPS.initial$OMgP)) {
+                    @Nullable
+                    @Override
+                    public String getDescriptionText(@NotNull String pattern) {
+                      String originalText = super.getDescriptionText(pattern);
+                      EditorContext editorContext = _context.getEditorContext();
+                      String descriptiontext = EditorCustomizationConfigHelper.getConfig().getFlagCellDescriptionText(EditorCustomizationConfigHelper.getIdentifier(CONCEPTS.BTGroup$F6, PROPS.initial$OMgP), originalText, editorContext);
+                      return ((descriptiontext != null && descriptiontext.length() > 0) ? descriptiontext : originalText);
+                    }
+                  });
                 }
               }
             }

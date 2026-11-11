@@ -250,7 +250,7 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
           cpb.shortDesc("a read–eval–print loop (REPL), also called interactive toplevel shell");
           cpb.presentationByName();
-          cpb.icon(IconContainer.RESOURCE_a0a3a0a52b0lb);
+          cpb.icon(IconContainer.RESOURCE_0);
           props_REPL = cpb.create();
         }
         return props_REPL;

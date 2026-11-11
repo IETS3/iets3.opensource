@@ -8,8 +8,8 @@ import jetbrains.mps.baseLanguage.closures.runtime._FunctionTypes;
 
 public class TestExecutorConfigForIDE implements ICustomRunnerConfig {
 
-  private static String myReportsFilenamePrefix = "InterpreterTestSuite";
-  private static final String outputPathMacro = "iets3.interpreterExecutor.genPath";
+  private String myReportsFilenamePrefix = "InterpreterTestSuite";
+  private static final String outputPathProperty = "iets3.interpreterExecutor.outputPath";
   private static final IInterpreterRunListener listener = new InterpreterRunListener();
   private static final IInterpreterTestReporter reporter = new NullXMLReporter();
   private final _FunctionTypes._return_P0_E0<? extends Boolean> terminateRequestedFunction;
@@ -17,12 +17,13 @@ public class TestExecutorConfigForIDE implements ICustomRunnerConfig {
   public TestExecutorConfigForIDE(_FunctionTypes._return_P0_E0<? extends Boolean> termiateRequestedFunction) {
     this.terminateRequestedFunction = termiateRequestedFunction;
   }
-  public String getOutputPathMacroName() {
-    return outputPathMacro;
+  public String getOutputPathProperty() {
+    return outputPathProperty;
   }
 
+  @Override
   public String getReportFileNamePrefix() {
-    return myReportsFilenamePrefix;
+    return this.myReportsFilenamePrefix;
   }
   @Override
   public IInterpreterRunListener getListener() {
@@ -35,16 +36,6 @@ public class TestExecutorConfigForIDE implements ICustomRunnerConfig {
   @Override
   public boolean isTerminationRequested() {
     return terminateRequestedFunction.invoke();
-  }
-  @Override
-  public void put(String key, String value) {
-  }
-  @Override
-  public String get(String key) {
-    return "";
-  }
-  @Override
-  public void clear() {
   }
   @Override
   public void setReportFileNamePrefix(String prefix) {

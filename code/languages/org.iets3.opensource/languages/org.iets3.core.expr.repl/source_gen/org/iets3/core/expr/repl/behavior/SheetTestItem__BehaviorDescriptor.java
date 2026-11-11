@@ -18,7 +18,6 @@ import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations;
 import org.iets3.core.base.behavior.ICanRunCheckManually__BehaviorDescriptor;
 import org.iets3.core.expr.base.plugin.MessageValue;
-import org.iets3.core.base.behavior.ICanStoreCheckResult__BehaviorDescriptor;
 import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
@@ -58,7 +57,6 @@ public final class SheetTestItem__BehaviorDescriptor extends BaseBHDescriptor {
     }
     long end = System.currentTimeMillis();
     result.setTime(end - begin);
-    ICanStoreCheckResult__BehaviorDescriptor.storeLastResult_id3R3AIvuq5Dp.invoke(__thisNode__, result);
     return result;
   }
   /*package*/ static String asString_id6iqfHNBPkjP(@NotNull SNode __thisNode__) {
