@@ -11,22 +11,7 @@ import org.junit.jupiter.api.Test;
 import jetbrains.mps.lang.test.runtime.BaseTestBody;
 import jetbrains.mps.lang.test.runtime.TransformationTest;
 import org.iets3.variability.featuremodel.base.intentions.ExtractFeatureModelHelper;
-import org.jetbrains.mps.openapi.model.SNode;
-import de.itemis.mps.comparator.code.MPSNodeComparisonResult;
-import de.itemis.mps.comparator.code.MPSNodeComparator;
-import jetbrains.mps.baseLanguage.closures.runtime._FunctionTypes;
-import de.itemis.mps.comparator.code.MPSComparatorOptions;
-import jetbrains.mps.internal.collections.runtime.ListSequence;
 import test.org.iets3.common.base.util.CommonTestUtil;
-import java.util.ArrayList;
-import de.itemis.mps.comparator.code.IgnoredChild;
-import de.itemis.mps.comparator.code.IgnoredReference;
-import com.intellij.openapi.application.ApplicationManager;
-import jetbrains.mps.smodel.MPSModuleRepository;
-import jetbrains.mps.ide.MPSCoreComponents;
-import jetbrains.mps.smodel.SNodePointer;
-import de.itemis.mps.comparator.code.DiffView;
-import org.junit.Assert;
 
 @MPSLaunch
 public class ExtractFeatureModel_Test extends BaseTransformationTest {
@@ -89,60 +74,14 @@ public class ExtractFeatureModel_Test extends BaseTransformationTest {
       initTestNodes();
       runWithinCommand(() -> {
         ExtractFeatureModelHelper.split(getAnnotatedNode("featI"));
-        {
-          final SNode expectedNode_b0a0b0f41 = getAnnotatedNode("expectedPushDownCOnstraintsWithAttributes");
-          final SNode actualNode_b0a0b0f41 = getAnnotatedNode("givenPushDownConstraintsWithAttributes");
-          MPSNodeComparisonResult result_b0a0b0f41 = MPSNodeComparator.compare(expectedNode_b0a0b0f41, actualNode_b0a0b0f41, ((_FunctionTypes._return_P0_E0<MPSComparatorOptions>) () -> {
-            MPSComparatorOptions options = new MPSComparatorOptions();
-            options.compareChildren = true;
-            options.compareAnnotations = true;
-            options.verbose = false;
-            ListSequence.fromList(options.ignoredProperties).addSequence(ListSequence.fromList(CommonTestUtil.commonPropertiesToIgnore()));
-            ListSequence.fromList(options.ignoredChildren).addSequence(ListSequence.fromList(ListSequence.fromList(new ArrayList<IgnoredChild>())));
-            ListSequence.fromList(options.ignoredReferences).addSequence(ListSequence.fromList(ListSequence.fromList(new ArrayList<IgnoredReference>())));
-            return options;
-          }).invoke());
-          if (!(result_b0a0b0f41.areEquals())) {
-            if (!(ApplicationManager.getApplication().isHeadlessEnvironment())) {
-              {
-                MPSModuleRepository repository = MPSCoreComponents.getInstance().getPlatform().findComponent(MPSModuleRepository.class);
-                SNode input_b0a0b0f41 = (SNode) SNodePointer.deserialize("r:d6bc629b-7e76-4d7c-b56d-ed7cc0573909(test.org.iets3.variability.featuremodel.base.editor@tests)/6992347247664142016").resolve(repository);
-                DiffView.showNonEditibleDiff(expectedNode_b0a0b0f41, actualNode_b0a0b0f41, result_b0a0b0f41, input_b0a0b0f41, repository);
-              }
-            }
-            Assert.assertTrue(result_b0a0b0f41.getDescription(), false);
-          }
-        }
+        CommonTestUtil.assertNodeEqualsIgnoringEmptyVariabilityContent(getAnnotatedNode("expectedPushDownCOnstraintsWithAttributes"), getAnnotatedNode("givenPushDownConstraintsWithAttributes"));
       });
     }
     public void test_constraintsPushedDown() throws Exception {
       initTestNodes();
       runWithinCommand(() -> {
         ExtractFeatureModelHelper.split(getAnnotatedNode("featDPushDown"));
-        {
-          final SNode expectedNode_b0a0b0g41 = getAnnotatedNode("expectedPushDownConstraints");
-          final SNode actualNode_b0a0b0g41 = getAnnotatedNode("givenPushDownConstraints");
-          MPSNodeComparisonResult result_b0a0b0g41 = MPSNodeComparator.compare(expectedNode_b0a0b0g41, actualNode_b0a0b0g41, ((_FunctionTypes._return_P0_E0<MPSComparatorOptions>) () -> {
-            MPSComparatorOptions options = new MPSComparatorOptions();
-            options.compareChildren = true;
-            options.compareAnnotations = true;
-            options.verbose = false;
-            ListSequence.fromList(options.ignoredProperties).addSequence(ListSequence.fromList(CommonTestUtil.commonPropertiesToIgnore()));
-            ListSequence.fromList(options.ignoredChildren).addSequence(ListSequence.fromList(ListSequence.fromList(new ArrayList<IgnoredChild>())));
-            ListSequence.fromList(options.ignoredReferences).addSequence(ListSequence.fromList(ListSequence.fromList(new ArrayList<IgnoredReference>())));
-            return options;
-          }).invoke());
-          if (!(result_b0a0b0g41.areEquals())) {
-            if (!(ApplicationManager.getApplication().isHeadlessEnvironment())) {
-              {
-                MPSModuleRepository repository = MPSCoreComponents.getInstance().getPlatform().findComponent(MPSModuleRepository.class);
-                SNode input_b0a0b0g41 = (SNode) SNodePointer.deserialize("r:d6bc629b-7e76-4d7c-b56d-ed7cc0573909(test.org.iets3.variability.featuremodel.base.editor@tests)/2135851729064432834").resolve(repository);
-                DiffView.showNonEditibleDiff(expectedNode_b0a0b0g41, actualNode_b0a0b0g41, result_b0a0b0g41, input_b0a0b0g41, repository);
-              }
-            }
-            Assert.assertTrue(result_b0a0b0g41.getDescription(), false);
-          }
-        }
+        CommonTestUtil.assertNodeEqualsIgnoringEmptyVariabilityContent(getAnnotatedNode("expectedPushDownConstraints"), getAnnotatedNode("givenPushDownConstraints"));
       });
     }
     public void test_mandatoryTransferred() throws Exception {
@@ -150,30 +89,7 @@ public class ExtractFeatureModel_Test extends BaseTransformationTest {
       runWithinCommand(() -> {
         ExtractFeatureModelHelper.split(getAnnotatedNode("featD4"));
 
-        {
-          final SNode expectedNode_c0a0b0h41 = getAnnotatedNode("expectedMandatory");
-          final SNode actualNode_c0a0b0h41 = getAnnotatedNode("givenMandatory");
-          MPSNodeComparisonResult result_c0a0b0h41 = MPSNodeComparator.compare(expectedNode_c0a0b0h41, actualNode_c0a0b0h41, ((_FunctionTypes._return_P0_E0<MPSComparatorOptions>) () -> {
-            MPSComparatorOptions options = new MPSComparatorOptions();
-            options.compareChildren = true;
-            options.compareAnnotations = true;
-            options.verbose = false;
-            ListSequence.fromList(options.ignoredProperties).addSequence(ListSequence.fromList(CommonTestUtil.commonPropertiesToIgnore()));
-            ListSequence.fromList(options.ignoredChildren).addSequence(ListSequence.fromList(ListSequence.fromList(new ArrayList<IgnoredChild>())));
-            ListSequence.fromList(options.ignoredReferences).addSequence(ListSequence.fromList(ListSequence.fromList(new ArrayList<IgnoredReference>())));
-            return options;
-          }).invoke());
-          if (!(result_c0a0b0h41.areEquals())) {
-            if (!(ApplicationManager.getApplication().isHeadlessEnvironment())) {
-              {
-                MPSModuleRepository repository = MPSCoreComponents.getInstance().getPlatform().findComponent(MPSModuleRepository.class);
-                SNode input_c0a0b0h41 = (SNode) SNodePointer.deserialize("r:d6bc629b-7e76-4d7c-b56d-ed7cc0573909(test.org.iets3.variability.featuremodel.base.editor@tests)/1403160372736625400").resolve(repository);
-                DiffView.showNonEditibleDiff(expectedNode_c0a0b0h41, actualNode_c0a0b0h41, result_c0a0b0h41, input_c0a0b0h41, repository);
-              }
-            }
-            Assert.assertTrue(result_c0a0b0h41.getDescription(), false);
-          }
-        }
+        CommonTestUtil.assertNodeEqualsIgnoringEmptyVariabilityContent(getAnnotatedNode("expectedMandatory"), getAnnotatedNode("givenMandatory"));
       });
     }
     public void test_visulaizationTransferred() throws Exception {
@@ -181,30 +97,7 @@ public class ExtractFeatureModel_Test extends BaseTransformationTest {
       runWithinCommand(() -> {
         ExtractFeatureModelHelper.split(getAnnotatedNode("featD3"));
 
-        {
-          final SNode expectedNode_c0a0b0i41 = getAnnotatedNode("expectedVisualization");
-          final SNode actualNode_c0a0b0i41 = getAnnotatedNode("givenVisualization");
-          MPSNodeComparisonResult result_c0a0b0i41 = MPSNodeComparator.compare(expectedNode_c0a0b0i41, actualNode_c0a0b0i41, ((_FunctionTypes._return_P0_E0<MPSComparatorOptions>) () -> {
-            MPSComparatorOptions options = new MPSComparatorOptions();
-            options.compareChildren = true;
-            options.compareAnnotations = true;
-            options.verbose = false;
-            ListSequence.fromList(options.ignoredProperties).addSequence(ListSequence.fromList(CommonTestUtil.commonPropertiesToIgnore()));
-            ListSequence.fromList(options.ignoredChildren).addSequence(ListSequence.fromList(ListSequence.fromList(new ArrayList<IgnoredChild>())));
-            ListSequence.fromList(options.ignoredReferences).addSequence(ListSequence.fromList(ListSequence.fromList(new ArrayList<IgnoredReference>())));
-            return options;
-          }).invoke());
-          if (!(result_c0a0b0i41.areEquals())) {
-            if (!(ApplicationManager.getApplication().isHeadlessEnvironment())) {
-              {
-                MPSModuleRepository repository = MPSCoreComponents.getInstance().getPlatform().findComponent(MPSModuleRepository.class);
-                SNode input_c0a0b0i41 = (SNode) SNodePointer.deserialize("r:d6bc629b-7e76-4d7c-b56d-ed7cc0573909(test.org.iets3.variability.featuremodel.base.editor@tests)/2429588553149601226").resolve(repository);
-                DiffView.showNonEditibleDiff(expectedNode_c0a0b0i41, actualNode_c0a0b0i41, result_c0a0b0i41, input_c0a0b0i41, repository);
-              }
-            }
-            Assert.assertTrue(result_c0a0b0i41.getDescription(), false);
-          }
-        }
+        CommonTestUtil.assertNodeEqualsIgnoringEmptyVariabilityContent(getAnnotatedNode("expectedVisualization"), getAnnotatedNode("givenVisualization"));
       });
     }
     public void test_cardinalityTransferred() throws Exception {
@@ -212,30 +105,7 @@ public class ExtractFeatureModel_Test extends BaseTransformationTest {
       runWithinCommand(() -> {
         ExtractFeatureModelHelper.split(getAnnotatedNode("featD2"));
 
-        {
-          final SNode expectedNode_c0a0b0j41 = getAnnotatedNode("expectedCardinality");
-          final SNode actualNode_c0a0b0j41 = getAnnotatedNode("givenCardinality");
-          MPSNodeComparisonResult result_c0a0b0j41 = MPSNodeComparator.compare(expectedNode_c0a0b0j41, actualNode_c0a0b0j41, ((_FunctionTypes._return_P0_E0<MPSComparatorOptions>) () -> {
-            MPSComparatorOptions options = new MPSComparatorOptions();
-            options.compareChildren = true;
-            options.compareAnnotations = true;
-            options.verbose = false;
-            ListSequence.fromList(options.ignoredProperties).addSequence(ListSequence.fromList(CommonTestUtil.commonPropertiesToIgnore()));
-            ListSequence.fromList(options.ignoredChildren).addSequence(ListSequence.fromList(ListSequence.fromList(new ArrayList<IgnoredChild>())));
-            ListSequence.fromList(options.ignoredReferences).addSequence(ListSequence.fromList(ListSequence.fromList(new ArrayList<IgnoredReference>())));
-            return options;
-          }).invoke());
-          if (!(result_c0a0b0j41.areEquals())) {
-            if (!(ApplicationManager.getApplication().isHeadlessEnvironment())) {
-              {
-                MPSModuleRepository repository = MPSCoreComponents.getInstance().getPlatform().findComponent(MPSModuleRepository.class);
-                SNode input_c0a0b0j41 = (SNode) SNodePointer.deserialize("r:d6bc629b-7e76-4d7c-b56d-ed7cc0573909(test.org.iets3.variability.featuremodel.base.editor@tests)/2429588553149387922").resolve(repository);
-                DiffView.showNonEditibleDiff(expectedNode_c0a0b0j41, actualNode_c0a0b0j41, result_c0a0b0j41, input_c0a0b0j41, repository);
-              }
-            }
-            Assert.assertTrue(result_c0a0b0j41.getDescription(), false);
-          }
-        }
+        CommonTestUtil.assertNodeEqualsIgnoringEmptyVariabilityContent(getAnnotatedNode("expectedCardinality"), getAnnotatedNode("givenCardinality"));
       });
     }
     public void test_initallyCheckStateTransfered() throws Exception {
@@ -243,30 +113,7 @@ public class ExtractFeatureModel_Test extends BaseTransformationTest {
       runWithinCommand(() -> {
         ExtractFeatureModelHelper.split(getAnnotatedNode("featD"));
 
-        {
-          final SNode expectedNode_c0a0b0k41 = getAnnotatedNode("expectedInitCheck");
-          final SNode actualNode_c0a0b0k41 = getAnnotatedNode("givenInitCheck");
-          MPSNodeComparisonResult result_c0a0b0k41 = MPSNodeComparator.compare(expectedNode_c0a0b0k41, actualNode_c0a0b0k41, ((_FunctionTypes._return_P0_E0<MPSComparatorOptions>) () -> {
-            MPSComparatorOptions options = new MPSComparatorOptions();
-            options.compareChildren = true;
-            options.compareAnnotations = true;
-            options.verbose = false;
-            ListSequence.fromList(options.ignoredProperties).addSequence(ListSequence.fromList(CommonTestUtil.commonPropertiesToIgnore()));
-            ListSequence.fromList(options.ignoredChildren).addSequence(ListSequence.fromList(ListSequence.fromList(new ArrayList<IgnoredChild>())));
-            ListSequence.fromList(options.ignoredReferences).addSequence(ListSequence.fromList(ListSequence.fromList(new ArrayList<IgnoredReference>())));
-            return options;
-          }).invoke());
-          if (!(result_c0a0b0k41.areEquals())) {
-            if (!(ApplicationManager.getApplication().isHeadlessEnvironment())) {
-              {
-                MPSModuleRepository repository = MPSCoreComponents.getInstance().getPlatform().findComponent(MPSModuleRepository.class);
-                SNode input_c0a0b0k41 = (SNode) SNodePointer.deserialize("r:d6bc629b-7e76-4d7c-b56d-ed7cc0573909(test.org.iets3.variability.featuremodel.base.editor@tests)/2429588553149054810").resolve(repository);
-                DiffView.showNonEditibleDiff(expectedNode_c0a0b0k41, actualNode_c0a0b0k41, result_c0a0b0k41, input_c0a0b0k41, repository);
-              }
-            }
-            Assert.assertTrue(result_c0a0b0k41.getDescription(), false);
-          }
-        }
+        CommonTestUtil.assertNodeEqualsIgnoringEmptyVariabilityContent(getAnnotatedNode("expectedInitCheck"), getAnnotatedNode("givenInitCheck"));
       });
     }
     public void test_extractFeatureModel() throws Exception {
@@ -274,30 +121,7 @@ public class ExtractFeatureModel_Test extends BaseTransformationTest {
       runWithinCommand(() -> {
         ExtractFeatureModelHelper.split(getAnnotatedNode("featGear"));
 
-        {
-          final SNode expectedNode_c0a0b0l41 = getAnnotatedNode("expected");
-          final SNode actualNode_c0a0b0l41 = getAnnotatedNode("given");
-          MPSNodeComparisonResult result_c0a0b0l41 = MPSNodeComparator.compare(expectedNode_c0a0b0l41, actualNode_c0a0b0l41, ((_FunctionTypes._return_P0_E0<MPSComparatorOptions>) () -> {
-            MPSComparatorOptions options = new MPSComparatorOptions();
-            options.compareChildren = true;
-            options.compareAnnotations = true;
-            options.verbose = false;
-            ListSequence.fromList(options.ignoredProperties).addSequence(ListSequence.fromList(CommonTestUtil.commonPropertiesToIgnore()));
-            ListSequence.fromList(options.ignoredChildren).addSequence(ListSequence.fromList(ListSequence.fromList(new ArrayList<IgnoredChild>())));
-            ListSequence.fromList(options.ignoredReferences).addSequence(ListSequence.fromList(ListSequence.fromList(new ArrayList<IgnoredReference>())));
-            return options;
-          }).invoke());
-          if (!(result_c0a0b0l41.areEquals())) {
-            if (!(ApplicationManager.getApplication().isHeadlessEnvironment())) {
-              {
-                MPSModuleRepository repository = MPSCoreComponents.getInstance().getPlatform().findComponent(MPSModuleRepository.class);
-                SNode input_c0a0b0l41 = (SNode) SNodePointer.deserialize("r:d6bc629b-7e76-4d7c-b56d-ed7cc0573909(test.org.iets3.variability.featuremodel.base.editor@tests)/5968954128066348717").resolve(repository);
-                DiffView.showNonEditibleDiff(expectedNode_c0a0b0l41, actualNode_c0a0b0l41, result_c0a0b0l41, input_c0a0b0l41, repository);
-              }
-            }
-            Assert.assertTrue(result_c0a0b0l41.getDescription(), false);
-          }
-        }
+        CommonTestUtil.assertNodeEqualsIgnoringEmptyVariabilityContent(getAnnotatedNode("expected"), getAnnotatedNode("given"));
       });
     }
     public void test_extractFeatureModel2() throws Exception {
@@ -305,30 +129,7 @@ public class ExtractFeatureModel_Test extends BaseTransformationTest {
       runWithinCommand(() -> {
         ExtractFeatureModelHelper.split(getAnnotatedNode("featA"));
 
-        {
-          final SNode expectedNode_c0a0b0m41 = getAnnotatedNode("expected2");
-          final SNode actualNode_c0a0b0m41 = getAnnotatedNode("given2");
-          MPSNodeComparisonResult result_c0a0b0m41 = MPSNodeComparator.compare(expectedNode_c0a0b0m41, actualNode_c0a0b0m41, ((_FunctionTypes._return_P0_E0<MPSComparatorOptions>) () -> {
-            MPSComparatorOptions options = new MPSComparatorOptions();
-            options.compareChildren = true;
-            options.compareAnnotations = true;
-            options.verbose = false;
-            ListSequence.fromList(options.ignoredProperties).addSequence(ListSequence.fromList(CommonTestUtil.commonPropertiesToIgnore()));
-            ListSequence.fromList(options.ignoredChildren).addSequence(ListSequence.fromList(ListSequence.fromList(new ArrayList<IgnoredChild>())));
-            ListSequence.fromList(options.ignoredReferences).addSequence(ListSequence.fromList(ListSequence.fromList(new ArrayList<IgnoredReference>())));
-            return options;
-          }).invoke());
-          if (!(result_c0a0b0m41.areEquals())) {
-            if (!(ApplicationManager.getApplication().isHeadlessEnvironment())) {
-              {
-                MPSModuleRepository repository = MPSCoreComponents.getInstance().getPlatform().findComponent(MPSModuleRepository.class);
-                SNode input_c0a0b0m41 = (SNode) SNodePointer.deserialize("r:d6bc629b-7e76-4d7c-b56d-ed7cc0573909(test.org.iets3.variability.featuremodel.base.editor@tests)/2426050293865009097").resolve(repository);
-                DiffView.showNonEditibleDiff(expectedNode_c0a0b0m41, actualNode_c0a0b0m41, result_c0a0b0m41, input_c0a0b0m41, repository);
-              }
-            }
-            Assert.assertTrue(result_c0a0b0m41.getDescription(), false);
-          }
-        }
+        CommonTestUtil.assertNodeEqualsIgnoringEmptyVariabilityContent(getAnnotatedNode("expected2"), getAnnotatedNode("given2"));
 
       });
     }
@@ -337,30 +138,7 @@ public class ExtractFeatureModel_Test extends BaseTransformationTest {
       runWithinCommand(() -> {
         ExtractFeatureModelHelper.split(getAnnotatedNode("featAdvanced"));
 
-        {
-          final SNode expectedNode_c0a0b0n41 = getAnnotatedNode("expected3");
-          final SNode actualNode_c0a0b0n41 = getAnnotatedNode("given");
-          MPSNodeComparisonResult result_c0a0b0n41 = MPSNodeComparator.compare(expectedNode_c0a0b0n41, actualNode_c0a0b0n41, ((_FunctionTypes._return_P0_E0<MPSComparatorOptions>) () -> {
-            MPSComparatorOptions options = new MPSComparatorOptions();
-            options.compareChildren = true;
-            options.compareAnnotations = true;
-            options.verbose = false;
-            ListSequence.fromList(options.ignoredProperties).addSequence(ListSequence.fromList(CommonTestUtil.commonPropertiesToIgnore()));
-            ListSequence.fromList(options.ignoredChildren).addSequence(ListSequence.fromList(ListSequence.fromList(new ArrayList<IgnoredChild>())));
-            ListSequence.fromList(options.ignoredReferences).addSequence(ListSequence.fromList(ListSequence.fromList(new ArrayList<IgnoredReference>())));
-            return options;
-          }).invoke());
-          if (!(result_c0a0b0n41.areEquals())) {
-            if (!(ApplicationManager.getApplication().isHeadlessEnvironment())) {
-              {
-                MPSModuleRepository repository = MPSCoreComponents.getInstance().getPlatform().findComponent(MPSModuleRepository.class);
-                SNode input_c0a0b0n41 = (SNode) SNodePointer.deserialize("r:d6bc629b-7e76-4d7c-b56d-ed7cc0573909(test.org.iets3.variability.featuremodel.base.editor@tests)/5968954128070444557").resolve(repository);
-                DiffView.showNonEditibleDiff(expectedNode_c0a0b0n41, actualNode_c0a0b0n41, result_c0a0b0n41, input_c0a0b0n41, repository);
-              }
-            }
-            Assert.assertTrue(result_c0a0b0n41.getDescription(), false);
-          }
-        }
+        CommonTestUtil.assertNodeEqualsIgnoringEmptyVariabilityContent(getAnnotatedNode("expected3"), getAnnotatedNode("given"));
       });
     }
 
