@@ -5,6 +5,12 @@ All notable changes to this project are documented in this file.
 Format of the log is _loosely_ based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 The project does _not_ follow Semantic Versioning and the changes are documented in reverse chronological order, grouped by calendar month.
 
+## November 2026
+
+### Added
+- Variability: After inserting variability content, an empty line is kept below it, so configurations can be added below a feature model. No additional empty line is added when the inserted content is already followed by an empty line or is itself an empty content.
+
+
 ## October 2026
 
 ### Added
