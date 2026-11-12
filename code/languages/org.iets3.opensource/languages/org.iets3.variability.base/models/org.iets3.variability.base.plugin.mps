@@ -24,10 +24,13 @@
     <import index="l80j" ref="r:9e71c0de-f9ab-4b67-96cc-7d9c857513f6(org.iets3.analysis.base.structure)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" />
     <import index="82uw" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.util.function(JDK/)" />
+    <import index="mhbf" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.model(MPS.OpenAPI/)" />
+    <import index="n8u2" ref="r:452e57fa-fd4c-45a8-b9ba-964614a5a66e(org.iets3.variability.base.behavior)" />
     <import index="90d" ref="r:421d64ed-8024-497f-aeab-8bddeb389dd2(jetbrains.mps.lang.extension.methods)" implicit="true" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
+      <concept id="1080223426719" name="jetbrains.mps.baseLanguage.structure.OrExpression" flags="nn" index="22lmx$" />
       <concept id="1215693861676" name="jetbrains.mps.baseLanguage.structure.BaseAssignmentExpression" flags="nn" index="d038R">
         <child id="1068498886297" name="rValue" index="37vLTx" />
         <child id="1068498886295" name="lValue" index="37vLTJ" />
@@ -77,6 +80,7 @@
       </concept>
       <concept id="1068390468198" name="jetbrains.mps.baseLanguage.structure.ClassConcept" flags="ig" index="312cEu">
         <property id="1075300953594" name="abstractClass" index="1sVAO0" />
+        <property id="1221565133444" name="isFinal" index="1EXbeo" />
         <child id="1095933932569" name="implementedInterface" index="EKbjA" />
         <child id="1165602531693" name="superclass" index="1zkMxy" />
       </concept>
@@ -126,6 +130,7 @@
       <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" stub="5293379017992965193" index="3clFbS">
         <child id="1068581517665" name="statement" index="3cqZAp" />
       </concept>
+      <concept id="1068580123140" name="jetbrains.mps.baseLanguage.structure.ConstructorDeclaration" flags="ig" index="3clFbW" />
       <concept id="1068580320020" name="jetbrains.mps.baseLanguage.structure.IntegerConstant" flags="nn" index="3cmrfG">
         <property id="1068580320021" name="value" index="3cmrfH" />
       </concept>
@@ -247,12 +252,26 @@
       </concept>
     </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
+      <concept id="1177026924588" name="jetbrains.mps.lang.smodel.structure.RefConcept_Reference" flags="nn" index="chp4Y">
+        <reference id="1177026940964" name="conceptDeclaration" index="cht4Q" />
+      </concept>
+      <concept id="1179409122411" name="jetbrains.mps.lang.smodel.structure.Node_ConceptMethodCall" flags="nn" index="2qgKlT" />
+      <concept id="1143512015885" name="jetbrains.mps.lang.smodel.structure.Node_GetNextSiblingOperation" flags="nn" index="YCak7" />
       <concept id="2644386474300074836" name="jetbrains.mps.lang.smodel.structure.ConceptIdRefExpression" flags="nn" index="35c_gC">
         <reference id="2644386474300074837" name="conceptDeclaration" index="35c_gD" />
       </concept>
       <concept id="6677504323281689838" name="jetbrains.mps.lang.smodel.structure.SConceptType" flags="in" index="3bZ5Sz" />
+      <concept id="1139621453865" name="jetbrains.mps.lang.smodel.structure.Node_IsInstanceOfOperation" flags="nn" index="1mIQ4w">
+        <child id="1177027386292" name="conceptArgument" index="cj9EA" />
+      </concept>
+      <concept id="1180636770613" name="jetbrains.mps.lang.smodel.structure.SNodeCreator" flags="nn" index="3zrR0B">
+        <child id="1180636770616" name="createdType" index="3zrR0E" />
+      </concept>
       <concept id="1138055754698" name="jetbrains.mps.lang.smodel.structure.SNodeType" flags="in" index="3Tqbb2">
         <reference id="1138405853777" name="concept" index="ehGHo" />
+      </concept>
+      <concept id="1138056282393" name="jetbrains.mps.lang.smodel.structure.SLinkListAccess" flags="nn" index="3Tsc0h">
+        <reference id="1138056546658" name="link" index="3TtcxE" />
       </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
@@ -276,6 +295,9 @@
       <concept id="1204796164442" name="jetbrains.mps.baseLanguage.collections.structure.InternalSequenceOperation" flags="nn" index="23sCx2">
         <child id="1204796294226" name="closure" index="23t8la" />
       </concept>
+      <concept id="540871147943773365" name="jetbrains.mps.baseLanguage.collections.structure.SingleArgumentSequenceOperation" flags="nn" index="25WWJ4">
+        <child id="540871147943773366" name="argument" index="25WWJ7" />
+      </concept>
       <concept id="1151689724996" name="jetbrains.mps.baseLanguage.collections.structure.SequenceType" flags="in" index="A3Dl8">
         <child id="1151689745422" name="elementType" index="A3Ik2" />
       </concept>
@@ -286,6 +308,7 @@
       <concept id="1205679737078" name="jetbrains.mps.baseLanguage.collections.structure.SortOperation" flags="nn" index="2S7cBI">
         <child id="1205679832066" name="ascending" index="2S7zOq" />
       </concept>
+      <concept id="1171391069720" name="jetbrains.mps.baseLanguage.collections.structure.GetIndexOfOperation" flags="nn" index="2WmjW8" />
       <concept id="1178286324487" name="jetbrains.mps.baseLanguage.collections.structure.SortDirection" flags="nn" index="1nlBCl" />
       <concept id="1165525191778" name="jetbrains.mps.baseLanguage.collections.structure.GetFirstOperation" flags="nn" index="1uHKPH" />
     </language>
@@ -1569,6 +1592,132 @@
     </node>
     <node concept="3uibUv" id="7Sbg4UjR9d6" role="1zkMxy">
       <ref role="3uigEE" node="7Sbg4UjPvkH" resolve="AbstractExtensionWithPriority" />
+    </node>
+  </node>
+  <node concept="312cEu" id="5rWyHNe1wbl">
+    <property role="TrG5h" value="EmptyVariabilityContentHelper" />
+    <property role="1EXbeo" value="true" />
+    <node concept="3Tm1VV" id="5rWyHNe1wbm" role="1B3o_S" />
+    <node concept="3clFbW" id="5rWyHNe1wbn" role="jymVt">
+      <property role="TrG5h" value="EmptyVariabilityContentHelper" />
+      <node concept="3Tm6S6" id="5rWyHNe1wbo" role="1B3o_S" />
+      <node concept="3cqZAl" id="5rWyHNe1wbp" role="3clF45" />
+      <node concept="3clFbS" id="5rWyHNe1wc3" role="3clF47" />
+    </node>
+    <node concept="2tJIrI" id="5rWyHNe1wcc" role="jymVt" />
+    <node concept="2YIFZL" id="5rWyHNe1wbq" role="jymVt">
+      <property role="TrG5h" value="ensureEmptyLineAfter" />
+      <node concept="3Tm1VV" id="5rWyHNe1wbr" role="1B3o_S" />
+      <node concept="3cqZAl" id="5rWyHNe1wbs" role="3clF45" />
+      <node concept="37vLTG" id="5rWyHNe1wbt" role="3clF46">
+        <property role="TrG5h" value="chunk" />
+        <node concept="3Tqbb2" id="5rWyHNe1wbu" role="1tU5fm">
+          <ref role="ehGHo" to="rmn3:3tsFshP56tQ" resolve="VariabilityModelChunk" />
+        </node>
+      </node>
+      <node concept="37vLTG" id="5rWyHNe1wbv" role="3clF46">
+        <property role="TrG5h" value="child" />
+        <node concept="3Tqbb2" id="5rWyHNe1wbw" role="1tU5fm">
+          <ref role="ehGHo" to="rmn3:3tsFshP5cTx" resolve="IVariabilityContent" />
+        </node>
+      </node>
+      <node concept="3clFbS" id="5rWyHNe1wbx" role="3clF47">
+        <node concept="3clFbJ" id="5rWyHNe1wby" role="3cqZAp">
+          <node concept="22lmx$" id="5rWyHNe1wbz" role="3clFbw">
+            <node concept="2OqwBi" id="5rWyHNe1wbA" role="3uHU7B">
+              <node concept="37vLTw" id="5rWyHNe1wbB" role="2Oq$k0">
+                <ref role="3cqZAo" node="5rWyHNe1wbv" resolve="child" />
+              </node>
+              <node concept="1mIQ4w" id="5rWyHNe1wb$" role="2OqNvi">
+                <node concept="chp4Y" id="5rWyHNe1wb_" role="cj9EA">
+                  <ref role="cht4Q" to="rmn3:3tsFshP5d$8" resolve="EmptyVariabilityContent" />
+                </node>
+              </node>
+            </node>
+            <node concept="2OqwBi" id="5rWyHNe1wbG" role="3uHU7w">
+              <node concept="2OqwBi" id="5rWyHNe1wbD" role="2Oq$k0">
+                <node concept="37vLTw" id="5rWyHNe1wbC" role="2Oq$k0">
+                  <ref role="3cqZAo" node="5rWyHNe1wbv" resolve="child" />
+                </node>
+                <node concept="YCak7" id="5rWyHNe1wnq" role="2OqNvi" />
+              </node>
+              <node concept="1mIQ4w" id="5rWyHNe1wns" role="2OqNvi">
+                <node concept="chp4Y" id="5rWyHNe1wnt" role="cj9EA">
+                  <ref role="cht4Q" to="rmn3:3tsFshP5d$8" resolve="EmptyVariabilityContent" />
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="3clFbS" id="5rWyHNe1wbI" role="3clFbx">
+            <node concept="3cpWs6" id="5rWyHNe1wbJ" role="3cqZAp" />
+          </node>
+        </node>
+        <node concept="3cpWs8" id="5rWyHNe1wbS" role="3cqZAp">
+          <node concept="3cpWsn" id="5rWyHNe1wbK" role="3cpWs9">
+            <property role="TrG5h" value="indexOf" />
+            <node concept="10Oyi0" id="5rWyHNe1wbL" role="1tU5fm" />
+            <node concept="2OqwBi" id="5rWyHNe1wbO" role="33vP2m">
+              <node concept="2OqwBi" id="5rWyHNe1wbQ" role="2Oq$k0">
+                <node concept="37vLTw" id="5rWyHNe1wbR" role="2Oq$k0">
+                  <ref role="3cqZAo" node="5rWyHNe1wbt" resolve="chunk" />
+                </node>
+                <node concept="3Tsc0h" id="5rWyHNe1wbP" role="2OqNvi">
+                  <ref role="3TtcxE" to="rmn3:3tsFshP58gT" resolve="contents" />
+                </node>
+              </node>
+              <node concept="2WmjW8" id="5rWyHNe1wbM" role="2OqNvi">
+                <node concept="37vLTw" id="5rWyHNe1wbN" role="25WWJ7">
+                  <ref role="3cqZAo" node="5rWyHNe1wbv" resolve="child" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="5rWyHNe1wc2" role="3cqZAp">
+          <node concept="2OqwBi" id="5rWyHNe1wc0" role="3clFbG">
+            <node concept="37vLTw" id="5rWyHNe1wc1" role="2Oq$k0">
+              <ref role="3cqZAo" node="5rWyHNe1wbt" resolve="chunk" />
+            </node>
+            <node concept="2qgKlT" id="5rWyHNe1wbT" role="2OqNvi">
+              <ref role="37wK5l" to="n8u2:22kx7U4IoRa" resolve="addContent" />
+              <node concept="3cpWs3" id="5rWyHNe1wbU" role="37wK5m">
+                <node concept="37vLTw" id="5rWyHNe1wbV" role="3uHU7B">
+                  <ref role="3cqZAo" node="5rWyHNe1wbK" resolve="indexOf" />
+                </node>
+                <node concept="3cmrfG" id="5rWyHNe1wbW" role="3uHU7w">
+                  <property role="3cmrfH" value="1" />
+                </node>
+              </node>
+              <node concept="2ShNRf" id="5rWyHNe1wbZ" role="37wK5m">
+                <node concept="3zrR0B" id="5rWyHNe1wbY" role="2ShVmc">
+                  <node concept="3Tqbb2" id="5rWyHNe1wbX" role="3zrR0E">
+                    <ref role="ehGHo" to="rmn3:3tsFshP5d$8" resolve="EmptyVariabilityContent" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="P$JXv" id="5rWyHNe1wc7" role="lGtFl">
+        <node concept="TZ5HA" id="5rWyHNe1wc8" role="TZ5H$">
+          <node concept="1dT_AC" id="5rWyHNe1wc9" role="1dT_Ay">
+            <property role="1dT_AB" value="Inserts an EmptyVariabilityContent directly after the added child, unless the child itself" />
+          </node>
+        </node>
+        <node concept="TZ5HA" id="5rWyHNe1wca" role="TZ5H$">
+          <node concept="1dT_AC" id="5rWyHNe1wcb" role="1dT_Ay">
+            <property role="1dT_AB" value="is an empty line or an empty line already follows it." />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="3UR2Jj" id="5rWyHNe1wc4" role="lGtFl">
+      <node concept="TZ5HA" id="5rWyHNe1wc5" role="TZ5H$">
+        <node concept="1dT_AC" id="5rWyHNe1wc6" role="1dT_Ay">
+          <property role="1dT_AB" value="Keeps an empty line (EmptyVariabilityContent) after content added to a VariabilityModelChunk." />
+        </node>
+      </node>
     </node>
   </node>
 </model>

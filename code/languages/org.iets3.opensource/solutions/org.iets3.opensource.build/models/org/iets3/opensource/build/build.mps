@@ -1995,6 +1995,11 @@
             <ref role="1Busuk" node="49WTic8jAaa" resolve="org.iets3.analysis.base" />
           </node>
         </node>
+        <node concept="1SiIV0" id="2bkB5u6eDPT" role="3bR37C">
+          <node concept="3bR9La" id="2bkB5u6eDPU" role="1SiIV1">
+            <ref role="3bR37D" to="ffeo:mXGwHwhVPj" resolve="JDK" />
+          </node>
+        </node>
       </node>
       <node concept="1E1JtA" id="7yHH$DDpG7t" role="2G$12L">
         <property role="BnDLt" value="true" />
@@ -18086,6 +18091,26 @@
           <node concept="3qWCbU" id="2lSsyuKzNbD" role="3LXTna">
             <property role="3qWCbO" value="**/*.mps, **/*.mpsr, **/.model" />
           </node>
+        </node>
+      </node>
+      <node concept="1SiIV0" id="vAb0021" role="3bR37C">
+        <node concept="3bR9La" id="vAb0022" role="1SiIV1">
+          <ref role="3bR37D" to="ffeo:1TaHNgiIbJ$" resolve="jetbrains.mps.ide.editor" />
+        </node>
+      </node>
+      <node concept="1SiIV0" id="vAbDep1" role="3bR37C">
+        <node concept="3bR9La" id="vAbDep2" role="1SiIV1">
+          <ref role="3bR37D" node="7yHH$DDpyJJ" resolve="org.iets3.variability.artifacts.base" />
+        </node>
+      </node>
+      <node concept="1SiIV0" id="5DM8XKD4d6x" role="3bR37C">
+        <node concept="3bR9La" id="5DM8XKD4d6y" role="1SiIV1">
+          <ref role="3bR37D" node="5wLtKNeSRQd" resolve="org.iets3.core.expr.simpleTypes" />
+        </node>
+      </node>
+      <node concept="1SiIV0" id="2bkB5u6eElp" role="3bR37C">
+        <node concept="3bR9La" id="2bkB5u6eElq" role="1SiIV1">
+          <ref role="3bR37D" node="7yHH$DDpB4c" resolve="org.iets3.variability.configuration.base" />
         </node>
       </node>
     </node>
