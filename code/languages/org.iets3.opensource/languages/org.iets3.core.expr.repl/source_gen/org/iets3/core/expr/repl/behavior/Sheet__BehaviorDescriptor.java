@@ -23,6 +23,7 @@ import org.iets3.core.expr.base.behavior.IETS3ExprContext;
 import org.iets3.core.expr.base.behavior.IDefaultCoverageAnalyzer;
 import org.iets3.core.expr.base.behavior.DefaultCoverageAnalyzer;
 import com.mbeddr.mpsutil.interpreter.rt.InterpreterEvaluationHelper;
+import org.iets3.core.expr.base.plugin.InterpreterTestRunScope;
 import com.mbeddr.mpsutil.interpreter.rt.InterpreterBaseException;
 import java.util.ArrayList;
 import jetbrains.mps.references.BLOperations;
@@ -66,24 +67,26 @@ public final class Sheet__BehaviorDescriptor extends BaseBHDescriptor {
   /*package*/ static Iterable<SNode> getUniquelyNamedElements_id4qSf1u1TRfj(@NotNull SNode __thisNode__) {
     return SNodeOperations.getNodeDescendants(__thisNode__, CONCEPTS.CellLabel$uD, false, new SAbstractConcept[]{});
   }
-  /*package*/ static void runManually_id3R3AIvumrTm(@NotNull SNode __thisNode__, EditorContext edCtxOrNull) {
+  /*package*/ static void runManually_id3R3AIvumrTm(@NotNull final SNode __thisNode__, EditorContext edCtxOrNull) {
     if (SLinkOperations.getTarget(__thisNode__, LINKS.template$C1OT) != null) {
       Sheet__BehaviorDescriptor.updateFromTemplate_id7HzLUeHEjOc.invokeSpecial(__thisNode__);
     }
 
-    IETS3ExprContext ctx = new IETS3ExprContext();
+    final IETS3ExprContext ctx = new IETS3ExprContext();
     IDefaultCoverageAnalyzer coverage = new DefaultCoverageAnalyzer();
-    InterpreterEvaluationHelper helper = new InterpreterEvaluationHelper("arithmetic");
-    for (SNode c : ListSequence.fromList(SNodeOperations.getNodeDescendants(__thisNode__, CONCEPTS.Cell$3y, false, new SAbstractConcept[]{})).where((it) -> SLinkOperations.getTarget(it, LINKS.expr$9rIp) != null)) {
-      if ((boolean) Cell__BehaviorDescriptor.canBeEvaluated_id5avmkTFqh7d.invoke(c)) {
-        try {
-          Object o = helper.evaluateWithContext(SLinkOperations.getTarget(c, LINKS.expr$9rIp), ctx);
-          c.putUserObject("___val", o);
-        } catch (InterpreterBaseException e) {
-          c.putUserObject("___val", e);
+    final InterpreterEvaluationHelper helper = new InterpreterEvaluationHelper("arithmetic");
+    InterpreterTestRunScope.withScope(SNodeOperations.getModel(__thisNode__).getRepository(), () -> {
+      for (SNode c : ListSequence.fromList(SNodeOperations.getNodeDescendants(__thisNode__, CONCEPTS.Cell$3y, false, new SAbstractConcept[]{})).where((it) -> SLinkOperations.getTarget(it, LINKS.expr$9rIp) != null)) {
+        if ((boolean) Cell__BehaviorDescriptor.canBeEvaluated_id5avmkTFqh7d.invoke(c)) {
+          try {
+            Object o = helper.evaluateWithContext(SLinkOperations.getTarget(c, LINKS.expr$9rIp), ctx);
+            c.putUserObject("___val", o);
+          } catch (InterpreterBaseException e) {
+            c.putUserObject("___val", e);
+          }
         }
       }
-    }
+    });
   }
   /*package*/ static boolean hasFailedCells_id5avmkTFFHXF(@NotNull SNode __thisNode__) {
     for (SNode c : ListSequence.fromList(SNodeOperations.getNodeDescendants(__thisNode__, CONCEPTS.Cell$3y, false, new SAbstractConcept[]{})).where((it) -> SLinkOperations.getTarget(it, LINKS.expr$9rIp) != null)) {

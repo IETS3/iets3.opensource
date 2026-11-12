@@ -17,6 +17,7 @@ import com.google.common.base.CaseFormat;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
 import org.apache.commons.lang3.text.WordUtils;
 import org.iets3.core.expr.tests.behavior.ITestItemContainer__BehaviorDescriptor;
+import org.iets3.core.expr.base.plugin.InterpreterTestRunScope;
 import jetbrains.mps.internal.collections.runtime.Sequence;
 import org.iets3.core.base.behavior.ICanRunCheckManually__BehaviorDescriptor;
 import org.iets3.core.base.behavior.RunManuallyUtil;
@@ -58,8 +59,8 @@ public final class evaluateTestItemsInContainer_Intention extends AbstractIntent
 
     @Override
     public void execute(final SNode node, final EditorContext editorContext) {
-      Iterable<SNode> nonEmptyItems = ITestItemContainer__BehaviorDescriptor.nonEmptyItems_id59WscmUTju7.invoke(node);
-      Sequence.fromIterable(nonEmptyItems).visitAll((it) -> ICanRunCheckManually__BehaviorDescriptor.runManually_id3R3AIvumrTm.invoke(it, editorContext));
+      final Iterable<SNode> nonEmptyItems = ITestItemContainer__BehaviorDescriptor.nonEmptyItems_id59WscmUTju7.invoke(node);
+      InterpreterTestRunScope.withScope(editorContext.getRepository(), () -> Sequence.fromIterable(nonEmptyItems).visitAll((it) -> ICanRunCheckManually__BehaviorDescriptor.runManually_id3R3AIvumrTm.invoke(it, editorContext)));
       RunManuallyUtil.updateEditors(editorContext, nonEmptyItems);
     }
 

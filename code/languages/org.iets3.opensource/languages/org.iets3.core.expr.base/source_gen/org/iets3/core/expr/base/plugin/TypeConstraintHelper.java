@@ -10,6 +10,7 @@ import org.iets3.core.expr.base.behavior.ConstraintAndError;
 import org.iets3.core.expr.base.behavior.Type__BehaviorDescriptor;
 import jetbrains.mps.internal.collections.runtime.Sequence;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
+import com.mbeddr.mpsutil.interpreter.rt.DummyComputationTrace;
 
 public class TypeConstraintHelper {
 
@@ -38,10 +39,7 @@ public class TypeConstraintHelper {
 
     if (Sequence.fromIterable(Type__BehaviorDescriptor.applicableConstraints_id2S3ZC$oEyBR.invoke(expectedType)).isNotEmpty()) {
       ctx.getEnvironment().put(MarkerNodes.TYPECONSTRAINT, value);
-      ComputationTrace ct = new ComputationTrace();
-      if (trace != null) {
-        ct = trace;
-      }
+      ComputationTrace ct = (trace != null ? trace : new DummyComputationTrace(expectedType));
       for (ConstraintAndError conAndError : Sequence.fromIterable(Type__BehaviorDescriptor.applicableConstraints_id2S3ZC$oEyBR.invoke(expectedType))) {
         // Skip warnings
         if (conAndError.warning) {

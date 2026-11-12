@@ -30,6 +30,7 @@ import org.iets3.core.expr.base.behavior.IETS3ExprContext;
 import jetbrains.mps.baseLanguage.tuples.runtime.MultiTuple;
 import com.mbeddr.mpsutil.interpreter.rt.NullCoverageAnalyzer;
 import com.mbeddr.mpsutil.interpreter.rt.ComputationTrace;
+import org.iets3.core.expr.base.plugin.InterpreterTestRunScope;
 import de.slisson.mps.hacks.editor.EditorComponentHacks;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SConceptOperations;
 import jetbrains.mps.editor.runtime.selection.SelectionUtil;
@@ -110,9 +111,11 @@ public final class REPL__BehaviorDescriptor extends BaseBHDescriptor {
     return iAndC._0().evaluate(n, iAndC._1(), new NullCoverageAnalyzer(), new ComputationTrace(), false);
   }
   /*package*/ static void reevaluate_id69FYpZqwrFF(@NotNull final SNode __thisNode__) {
-    for (SNode e : Sequence.fromIterable(SNodeOperations.ofConcept(SLinkOperations.getChildren(__thisNode__, LINKS.entries$77qo), CONCEPTS.DefaultEntry$YA))) {
-      IReplEntry__BehaviorDescriptor.evaluateEntry_id4nY0kF8p1AF.invoke(e);
-    }
+    InterpreterTestRunScope.withScope(SNodeOperations.getModel(__thisNode__).getRepository(), () -> {
+      for (SNode e : Sequence.fromIterable(SNodeOperations.ofConcept(SLinkOperations.getChildren(__thisNode__, LINKS.entries$77qo), CONCEPTS.DefaultEntry$YA))) {
+        IReplEntry__BehaviorDescriptor.evaluateEntry_id4nY0kF8p1AF.invoke(e);
+      }
+    });
     ListSequence.fromList(EditorComponentHacks.findAllInstances()).where((it) -> it.getRootCell().getSNode() == __thisNode__).visitAll((it) -> it.update());
   }
   /*package*/ static SNode addEntry_id69FYpZqzT5W(@NotNull SNode __thisNode__, EditorContext ctx) {

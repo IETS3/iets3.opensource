@@ -49,8 +49,7 @@ public class FunctionRefValue extends ExecutableValue {
       context.getEnvironment().put(ListSequence.fromList(SLinkOperations.getChildren(fun, LINKS.args$XOIh)).getElement(argIdx), ListSequence.fromList(evaluatedArgs).getElement(i));
       argIdx++;
     }
-    ComputationTrace tt = new ComputationTrace(fun, true);
-    contextTrace.addChild(tt);
+    ComputationTrace tt = contextTrace.newChild(fun, true, null);
     Object res = context.getRootInterpreter().evaluate(SLinkOperations.getTarget(fun, LINKS.body$Y8TB), context, coverage, tt, stopOnStop);
     tt.setValue(res);
     context.popEnvironment(fun);
