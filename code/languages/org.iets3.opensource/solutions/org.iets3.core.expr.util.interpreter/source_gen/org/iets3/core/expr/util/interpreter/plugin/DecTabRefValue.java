@@ -26,8 +26,7 @@ public class DecTabRefValue {
     for (Tuples._2<SNode, Object> item : Sequence.fromIterable(seq)) {
       context.getEnvironment().put(item._0(), item._1());
     }
-    ComputationTrace tt = new ComputationTrace(tab, true);
-    contextTrace.addChild(tt);
+    ComputationTrace tt = contextTrace.newChild(tab, true, null);
     Object res = context.getRootInterpreter().evaluate(tab, context, coverage, tt, stopOnStop);
     tt.setValue(res);
     context.popEnvironment(tab);

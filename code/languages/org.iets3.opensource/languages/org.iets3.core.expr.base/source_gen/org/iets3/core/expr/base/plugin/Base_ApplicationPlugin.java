@@ -6,6 +6,8 @@ import jetbrains.mps.plugins.applicationplugins.BaseApplicationPlugin;
 import com.intellij.openapi.extensions.PluginId;
 import org.jetbrains.annotations.NotNull;
 import jetbrains.mps.ide.actions.Tools_ActionGroup;
+import java.util.List;
+import jetbrains.mps.plugins.part.ApplicationPluginPart;
 
 public class Base_ApplicationPlugin extends BaseApplicationPlugin {
   private final PluginId myId = PluginId.getId("org.iets3.core.expr.base");
@@ -27,5 +29,9 @@ public class Base_ApplicationPlugin extends BaseApplicationPlugin {
   public void adjustRegularGroups() {
     insertGroupIntoAnother(TestCoverageGroup_ActionGroup.ID, Tools_ActionGroup.ID, Tools_ActionGroup.LABEL_ID_devkitTools);
     insertGroupIntoAnother(Group_interpreterTestCoverage_ActionGroup.ID, TestCoverageGroup_ActionGroup.ID, null);
+  }
+  @Override
+  public void fillCustomParts(List<ApplicationPluginPart> parts) {
+    parts.add(new TypecheckingApplicationPlugin_AppPluginPart());
   }
 }

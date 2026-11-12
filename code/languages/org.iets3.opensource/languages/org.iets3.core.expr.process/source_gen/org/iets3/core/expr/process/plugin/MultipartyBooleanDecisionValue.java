@@ -15,11 +15,12 @@ import org.pcollections.PCollection;
 import com.mbeddr.mpsutil.interpreter.rt.IContext;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
 import org.iets3.core.expr.mutable.plugin.GlobalClockContainer;
-import com.mbeddr.mpsutil.interpreter.rt.ComputationTrace;
+import com.mbeddr.mpsutil.interpreter.rt.DummyComputationTrace;
 import jetbrains.mps.baseLanguage.closures.runtime.Wrappers;
 import jetbrains.mps.internal.collections.runtime.Sequence;
 import org.iets3.core.expr.mutable.plugin.InteractionDescriptor;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations;
+import com.mbeddr.mpsutil.interpreter.rt.ComputationTrace;
 import java.util.Iterator;
 import org.iets3.core.expr.mutable.plugin.IDElement;
 import java.util.List;
@@ -115,13 +116,13 @@ public class MultipartyBooleanDecisionValue extends InteractorValue {
     this.decision = decision;
     if (SLinkOperations.getTarget(decision, LINKS.timeLimit$E_5m) != null) {
       BigInteger now = GlobalClockContainer.clock().timeMillis();
-      deadline = now.add((BigInteger) eval(SLinkOperations.getTarget(decision, LINKS.timeLimit$E_5m), new ComputationTrace()));
+      deadline = now.add((BigInteger) eval(SLinkOperations.getTarget(decision, LINKS.timeLimit$E_5m), new DummyComputationTrace(SLinkOperations.getTarget(decision, LINKS.timeLimit$E_5m))));
     }
   }
 
   public PSet addInitialParties(Iterable<SNode> parties) {
     final Wrappers._T<PSet> res = new Wrappers._T<PSet>(Empty.set());
-    Sequence.fromIterable(parties).visitAll((it) -> res.value = res.value.plus(eval(it, new ComputationTrace())));
+    Sequence.fromIterable(parties).visitAll((it) -> res.value = res.value.plus(eval(it, new DummyComputationTrace(it))));
     return res.value;
   }
 

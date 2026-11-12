@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<debug-info version="2">
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123140:jetbrains.mps.baseLanguage.structure.ConstructorDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123155:jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123165:jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242864:jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242878:jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/6329021646629104954:jetbrains.mps.baseLanguage.structure.SingleLineComment" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1070462154015:jetbrains.mps.baseLanguage.structure.StaticFieldDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1070475587102:jetbrains.mps.baseLanguage.structure.SuperConstructorInvocation" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1164991038168:jetbrains.mps.baseLanguage.structure.ThrowStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/5351203823916750322:jetbrains.mps.baseLanguage.structure.TryUniversalStatement" />
+  <root nodeRef="r:eb423bbb-723e-4e3d-84f7-2142c3c5d2d8(test.in.expr.os.interpreterSession@tests)/287227365173140073">
+    <file name="suite_Test.java">
+      <node id="287227365173140073" at="25,23,26,71" concept="7" />
+      <node id="287227365173140076" at="30,68,31,59" concept="1" />
+      <node id="287227365173140076" at="40,44,41,111" concept="3" />
+      <node id="287227365173140076" at="41,111,42,39" concept="1" />
+      <node id="287227365173140073" at="47,50,48,19" concept="7" />
+      <node id="287227365173140073" at="53,0,54,0" concept="6" trace="AbstractTestItem$9u" />
+      <node id="287227365173140073" at="22,0,24,0" concept="6" trace="ourParametersCacheExtension" />
+      <node id="287227365173140073" at="25,0,28,0" concept="0" trace="suite_Test#()V" />
+      <node id="287227365173140073" at="47,0,50,0" concept="0" trace="TestBody#(Ljetbrains/mps/lang/test/runtime/TransformationTest;)V" />
+      <node id="287227365173140076" at="29,0,33,0" concept="2" trace="addition_item0_287227365173140076#()V" />
+      <node id="287227365173140076" at="39,0,44,0" concept="2" trace="run#()V" />
+      <node id="287227365173140076" at="37,70,44,9" concept="1" />
+      <node id="287227365173140076" at="37,0,46,0" concept="2" trace="addition_item0_287227365173140076#()V" />
+      <scope id="287227365173140073" at="25,23,26,71" />
+      <scope id="287227365173140076" at="30,68,31,59" />
+      <scope id="287227365173140073" at="47,50,48,19" />
+      <scope id="287227365173140076" at="40,44,42,39">
+        <var name="ti" id="287227365173140076" />
+      </scope>
+      <scope id="287227365173140073" at="25,0,28,0" />
+      <scope id="287227365173140073" at="47,0,50,0">
+        <var name="owner" id="287227365173140073" />
+      </scope>
+      <scope id="287227365173140076" at="29,0,33,0" />
+      <scope id="287227365173140076" at="39,0,44,0" />
+      <scope id="287227365173140076" at="37,70,44,9" />
+      <scope id="287227365173140076" at="37,0,46,0" />
+      <unit id="287227365173140073" at="52,0,55,0" name="test.in.expr.os.interpreterSession.suite_Test$CONCEPTS" />
+      <unit id="287227365173140076" at="38,27,44,7" name="test.in.expr.os.interpreterSession.suite_Test$TestBody$1" />
+      <unit id="287227365173140073" at="35,0,51,0" name="test.in.expr.os.interpreterSession.suite_Test$TestBody" />
+      <unit id="287227365173140073" at="19,0,56,0" name="test.in.expr.os.interpreterSession.suite_Test" />
+    </file>
+  </root>
+  <root nodeRef="r:eb423bbb-723e-4e3d-84f7-2142c3c5d2d8(test.in.expr.os.interpreterSession@tests)/287227365191565210">
+    <file name="InjectedFailure.java">
+      <node id="287227365191565223" at="7,42,8,84" concept="5" />
+      <node id="287227365191565244" at="8,84,9,19" concept="7" />
+      <node id="287227365191565214" at="7,0,11,0" concept="0" trace="InjectedFailure#(Ljava/lang/String;)V" />
+      <scope id="287227365191565222" at="7,42,9,19" />
+      <scope id="287227365191565214" at="7,0,11,0">
+        <var name="message" id="287227365191565219" />
+      </scope>
+      <unit id="287227365191565210" at="6,0,12,0" name="test.in.expr.os.interpreterSession.InjectedFailure" />
+    </file>
+  </root>
+  <root nodeRef="r:eb423bbb-723e-4e3d-84f7-2142c3c5d2d8(test.in.expr.os.interpreterSession@tests)/287227365191601007">
+    <file name="InterpreterSessionLifecycle_Test.java">
+      <node id="287227365191601019" at="14,70,15,106" concept="1" />
+      <node id="287227365191601030" at="15,106,16,63" concept="3" />
+      <node id="287227365191601040" at="17,9,18,111" concept="1" />
+      <node id="287227365191601051" at="18,111,19,107" concept="1" />
+      <node id="287227365191601062" at="19,107,20,105" concept="3" />
+      <node id="287227365191601075" at="20,105,21,107" concept="1" />
+      <node id="287227365191601086" at="21,107,22,116" concept="1" />
+      <node id="287227365191601100" at="23,15,24,20" concept="1" />
+      <node id="287227365191601107" at="25,5,26,111" concept="1" />
+      <node id="287227365191601125" at="29,68,30,81" concept="3" />
+      <node id="287227365191601137" at="30,81,31,59" concept="3" />
+      <node id="287227365191601162" at="33,50,34,58" concept="1" />
+      <node id="287227365191601171" at="34,58,35,23" concept="4" />
+      <node id="287227365191601189" at="37,51,38,58" concept="1" />
+      <node id="287227365191601198" at="38,58,39,23" concept="4" />
+      <node id="287227365191601201" at="40,9,41,103" concept="1" />
+      <node id="287227365191601212" at="41,103,42,109" concept="1" />
+      <node id="287227365191601226" at="43,15,44,22" concept="1" />
+      <node id="287227365191601240" at="48,75,49,76" concept="3" />
+      <node id="287227365191601252" at="49,76,50,59" concept="3" />
+      <node id="287227365191601259" at="50,59,51,74" concept="1" />
+      <node id="287227365191601288" at="52,27,53,49" concept="8" />
+      <node id="287227365191601304" at="55,27,56,53" concept="1" />
+      <node id="287227365191601313" at="56,53,57,54" concept="8" />
+      <node id="287227365191601322" at="59,9,60,22" concept="1" />
+      <node id="287227365191601329" at="60,22,61,77" concept="1" />
+      <node id="287227365191601342" at="62,39,63,130" concept="1" />
+      <node id="287227365191601353" at="63,130,64,97" concept="1" />
+      <node id="287227365191601368" at="64,97,65,133" concept="1" />
+      <node id="287227365191601387" at="66,5,67,168" concept="1" />
+      <node id="287227365191601399" at="67,168,68,119" concept="1" />
+      <node id="287227365191601278" at="51,74,54,7" concept="1" />
+      <node id="287227365191601147" at="32,9,36,9" concept="3" />
+      <node id="287227365191601174" at="36,9,40,9" concept="3" />
+      <node id="287227365191601294" at="54,7,58,7" concept="1" />
+      <node id="287227365191601319" at="58,7,66,5" concept="9" />
+      <node id="287227365191601037" at="16,63,25,5" concept="9" />
+      <node id="287227365191601144" at="31,59,45,5" concept="9" />
+      <node id="287227365191601012" at="13,0,28,0" concept="2" trace="test_nestedSessionsShareTheOuterOne#()V" />
+      <node id="287227365191601118" at="28,0,47,0" concept="2" trace="test_cachedComputesOncePerSession#()V" />
+      <node id="287227365191601233" at="47,0,70,0" concept="2" trace="test_closeRunsEveryActionDespiteFailures#()V" />
+      <scope id="287227365191601099" at="23,15,24,20" />
+      <scope id="287227365191601225" at="43,15,44,22" />
+      <scope id="287227365191601287" at="52,27,53,49" />
+      <scope id="287227365191601161" at="33,50,35,23" />
+      <scope id="287227365191601188" at="37,51,39,23" />
+      <scope id="287227365191601303" at="55,27,57,54" />
+      <scope id="287227365191601321" at="59,9,61,77" />
+      <scope id="287227365191601341" at="62,39,65,133" />
+      <scope id="287227365191601332" at="62,5,66,5">
+        <var name="e" id="287227365191601336" />
+      </scope>
+      <scope id="287227365191601039" at="17,9,22,116">
+        <var name="seenInside" id="287227365191601065" />
+      </scope>
+      <scope id="287227365191601146" at="32,9,42,109">
+        <var name="first" id="287227365191601150" />
+        <var name="second" id="287227365191601177" />
+      </scope>
+      <scope id="287227365191601018" at="14,70,26,111">
+        <var name="outer" id="287227365191601033" />
+      </scope>
+      <scope id="287227365191601012" at="13,0,28,0" />
+      <scope id="287227365191601124" at="29,68,45,5">
+        <var name="computed" id="287227365191601128" />
+        <var name="session" id="287227365191601140" />
+      </scope>
+      <scope id="287227365191601118" at="28,0,47,0" />
+      <scope id="287227365191601239" at="48,75,68,119">
+        <var name="ran" id="287227365191601243" />
+        <var name="session" id="287227365191601255" />
+      </scope>
+      <scope id="287227365191601233" at="47,0,70,0" />
+      <unit id="287227365191601007" at="12,0,71,0" name="test.in.expr.os.interpreterSession.InterpreterSessionLifecycle_Test" />
+    </file>
+  </root>
+</debug-info>
+

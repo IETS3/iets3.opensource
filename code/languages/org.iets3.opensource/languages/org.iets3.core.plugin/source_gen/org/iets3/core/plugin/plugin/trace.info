@@ -1122,49 +1122,49 @@
   </root>
   <root nodeRef="r:cdcdec44-a636-42c8-b599-c146eb2ca77d(org.iets3.core.plugin.plugin)/8947755611254274050">
     <file name="RunManuallyWithProgress.java">
-      <node id="8947755611254274087" at="22,149,23,91" concept="2" />
-      <node id="1559345515801664556" at="26,103,27,62" concept="8" />
-      <node id="1559345515801664569" at="27,62,28,87" concept="8" />
-      <node id="1559345515801664589" at="29,28,30,40" concept="2" />
-      <node id="1559345515801664597" at="31,5,32,17" concept="8" />
-      <node id="1559345515801664620" at="34,30,35,96" concept="2" />
-      <node id="1559345515801664632" at="35,96,36,84" concept="2" />
-      <node id="1559345515801664652" at="37,7,38,92" concept="2" />
-      <node id="1559345515801664660" at="38,92,39,13" concept="2" />
-      <node id="1559345515801664665" at="40,5,41,53" concept="2" />
-      <node id="8947755611254274054" at="19,0,21,0" concept="1" trace="RunManuallyWithProgress#()V" />
-      <node id="8947755611254274061" at="22,0,25,0" concept="13" trace="run#(Ljava/lang/String;Ljetbrains/mps/project/Project;Ljetbrains/mps/openapi/editor/EditorContext;Ljava/lang/Iterable;Ljava/lang/Iterable;)V" />
-      <node id="1559345515801664580" at="28,87,31,5" concept="6" />
-      <node id="1559345515801664611" at="33,50,37,7" concept="6" />
-      <node id="1559345515801664604" at="32,17,40,5" concept="5" />
-      <node id="1559345515801664536" at="26,0,43,0" concept="13" trace="runNodes#(Ljetbrains/mps/openapi/editor/EditorContext;Ljava/lang/Iterable;Ljava/lang/Iterable;)V" />
-      <scope id="8947755611254274059" at="19,36,19,36" />
-      <scope id="8947755611254274086" at="22,149,23,91" />
-      <scope id="1559345515801664588" at="29,28,30,40" />
-      <scope id="8947755611254274054" at="19,0,21,0" />
-      <scope id="1559345515801664619" at="34,30,36,84" />
-      <scope id="8947755611254274061" at="22,0,25,0">
+      <node id="8947755611254274087" at="23,155,24,157" concept="2" />
+      <node id="1559345515801664556" at="27,103,28,62" concept="8" />
+      <node id="1559345515801664569" at="28,62,29,87" concept="8" />
+      <node id="1559345515801664589" at="30,28,31,40" concept="2" />
+      <node id="1559345515801664597" at="32,5,33,17" concept="8" />
+      <node id="1559345515801664620" at="35,30,36,96" concept="2" />
+      <node id="1559345515801664632" at="36,96,37,84" concept="2" />
+      <node id="1559345515801664652" at="38,7,39,92" concept="2" />
+      <node id="1559345515801664660" at="39,92,40,13" concept="2" />
+      <node id="1559345515801664665" at="41,5,42,53" concept="2" />
+      <node id="8947755611254274054" at="20,0,22,0" concept="1" trace="RunManuallyWithProgress#()V" />
+      <node id="8947755611254274061" at="23,0,26,0" concept="13" trace="run#(Ljava/lang/String;Ljetbrains/mps/project/Project;Ljetbrains/mps/openapi/editor/EditorContext;Ljava/lang/Iterable;Ljava/lang/Iterable;)V" />
+      <node id="1559345515801664580" at="29,87,32,5" concept="6" />
+      <node id="1559345515801664611" at="34,50,38,7" concept="6" />
+      <node id="1559345515801664604" at="33,17,41,5" concept="5" />
+      <node id="1559345515801664536" at="27,0,44,0" concept="13" trace="runNodes#(Ljetbrains/mps/openapi/editor/EditorContext;Ljava/lang/Iterable;Ljava/lang/Iterable;)V" />
+      <scope id="8947755611254274059" at="20,36,20,36" />
+      <scope id="8947755611254274086" at="23,155,24,157" />
+      <scope id="1559345515801664588" at="30,28,31,40" />
+      <scope id="8947755611254274054" at="20,0,22,0" />
+      <scope id="1559345515801664619" at="35,30,37,84" />
+      <scope id="8947755611254274061" at="23,0,26,0">
         <var name="context" id="8947755611254274073" />
         <var name="message" id="8947755611254274067" />
         <var name="project" id="8947755611254274070" />
         <var name="toRun" id="8947755611254274076" />
         <var name="toUpdate" id="8947755611254274081" />
       </scope>
-      <scope id="1559345515801664610" at="33,50,39,13" />
-      <scope id="1559345515801664604" at="32,17,40,5">
+      <scope id="1559345515801664610" at="34,50,40,13" />
+      <scope id="1559345515801664604" at="33,17,41,5">
         <var name="n" id="1559345515801664608" />
       </scope>
-      <scope id="1559345515801664555" at="26,103,41,53">
+      <scope id="1559345515801664555" at="27,103,42,53">
         <var name="done" id="1559345515801664600" />
         <var name="indicator" id="1559345515801664572" />
         <var name="nodes" id="1559345515801664559" />
       </scope>
-      <scope id="1559345515801664536" at="26,0,43,0">
+      <scope id="1559345515801664536" at="27,0,44,0">
         <var name="context" id="1559345515801664542" />
         <var name="toRun" id="1559345515801664545" />
         <var name="toUpdate" id="1559345515801664550" />
       </scope>
-      <unit id="8947755611254274050" at="17,0,44,0" name="org.iets3.core.plugin.plugin.RunManuallyWithProgress" />
+      <unit id="8947755611254274050" at="18,0,45,0" name="org.iets3.core.plugin.plugin.RunManuallyWithProgress" />
     </file>
   </root>
 </debug-info>

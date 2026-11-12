@@ -20,6 +20,7 @@ import jetbrains.mps.lang.smodel.generator.smodelAdapter.SConceptOperations;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
 import jetbrains.mps.internal.collections.runtime.Sequence;
+import org.iets3.core.expr.base.plugin.InterpreterTestRunScope;
 import org.iets3.core.base.behavior.ICanRunCheckManually__BehaviorDescriptor;
 import org.iets3.core.base.behavior.IResult;
 import org.iets3.core.base.behavior.ICanStoreCheckResult__BehaviorDescriptor;
@@ -87,8 +88,8 @@ public final class TestSuite__BehaviorDescriptor extends BaseBHDescriptor {
   /*package*/ static Iterable<SNode> nonEmptyItems_id59WscmUTju7(@NotNull SNode __thisNode__) {
     return Sequence.fromIterable(SNodeOperations.ofConcept(SLinkOperations.getChildren(__thisNode__, LINKS.contents$e48Q), CONCEPTS.ITestItemContainer$ow)).translate((it) -> (Iterable<SNode>) ITestItemContainer__BehaviorDescriptor.nonEmptyItems_id59WscmUTju7.invoke(it));
   }
-  /*package*/ static void evaluateAll_id3_DFadMJ62m(@NotNull SNode __thisNode__) {
-    Sequence.fromIterable(ITestItemContainer__BehaviorDescriptor.nonEmptyItems_id59WscmUTju7.invoke(__thisNode__)).visitAll((it) -> ICanRunCheckManually__BehaviorDescriptor.runManually_id3R3AIvumrTm.invoke(it, null));
+  /*package*/ static void evaluateAll_id3_DFadMJ62m(@NotNull final SNode __thisNode__) {
+    InterpreterTestRunScope.withScope(SNodeOperations.getModel(__thisNode__).getRepository(), () -> Sequence.fromIterable(ITestItemContainer__BehaviorDescriptor.nonEmptyItems_id59WscmUTju7.invoke(__thisNode__)).visitAll((it) -> ICanRunCheckManually__BehaviorDescriptor.runManually_id3R3AIvumrTm.invoke(it, null)));
   }
   /*package*/ static boolean evaluateAllAndReport_ideCXD91qMCZ(@NotNull SNode __thisNode__) {
     for (SNode rm : Sequence.fromIterable(ITestItemContainer__BehaviorDescriptor.nonEmptyItems_id59WscmUTju7.invoke(__thisNode__))) {
