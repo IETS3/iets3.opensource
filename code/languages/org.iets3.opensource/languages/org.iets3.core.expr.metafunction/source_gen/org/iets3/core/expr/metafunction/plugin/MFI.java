@@ -11,8 +11,8 @@ import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations;
 import com.mbeddr.mpsutil.interpreter.rt.ComputationTrace;
 import com.mbeddr.mpsutil.interpreter.rt.IEnvironment;
-import com.mbeddr.mpsutil.interpreter.rt.NullCoverageAnalyzer;
 import jetbrains.mps.lang.core.behavior.BaseConcept__BehaviorDescriptor;
+import com.mbeddr.mpsutil.interpreter.rt.NullCoverageAnalyzer;
 import org.jetbrains.mps.openapi.language.SContainmentLink;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import org.jetbrains.mps.openapi.language.SProperty;
@@ -64,9 +64,8 @@ public class MFI {
         throw new MFIException("no value found in environment for argument '" + SPropertyOperations.getString(arg, PROPS.name$MnvL) + "'");
       }
     }
-    ComputationTrace tt = new ComputationTrace(this.function);
+    ComputationTrace tt = trace.newChild(this.function, true, BaseConcept__BehaviorDescriptor.getPresentation_idhEwIMiw.invoke(this.function));
     Object val = interpreter.evaluate(function, ctx, new NullCoverageAnalyzer(), tt, false);
-    trace.addChild(tt, true, BaseConcept__BehaviorDescriptor.getPresentation_idhEwIMiw.invoke(this.function));
     tt.setValue(val);
     return val;
   }

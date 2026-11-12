@@ -11,6 +11,10 @@ The project does _not_ follow Semantic Versioning and the changes are documented
 
 - KernelF: interpreter runs that belong together share caches. `InterpreterSession` (in `org.iets3.core.expr.base.plugin`) groups them on one thread, offers `cached` for values computed from the models and `onClose` to release resources; `AbstractTestItem.executeTest` runs in one. `TypecheckingSessionScope` keeps one incremental typechecking context per root for the duration of a session, so type queries of the interpreter are no longer recomputed from scratch on every call. Type queries inside such a scope record no dependencies. Known limitation: a stored test result is no longer invalidated when only a type it used changes (e.g. the declared type of a referenced declaration); run the check again to refresh it. `InterpreterTestRunScope` opens both for a whole run of checks: the interpreter test runner (`JUnitInterpreterExecutor`, used by "Run Tests" and headless/CI runs) and the actions "Run/Evaluate/Check All in Root/Model Manually" and "Run/Evaluate/Check Children Manually", the intention "Evaluate this …" on test item containers, `TestSuite.evaluateAll` (used by the test and interpreter coverage assessments), and the REPL's "Re-evaluate complete REPL" and sheet evaluation use it.
 
+### Changed
+
+- KernelF interpreter: calls of lambdas, function references, decision tables and meta functions no longer build a computation trace of their body when the call itself is not traced (`contextTrace.newChild` instead of a new `ComputationTrace`). The initialization of state machines and multi-party decisions, and `TypeConstraintHelper.isValidInteractive` without a trace, evaluate with a `DummyComputationTrace` instead of a trace nobody sees. This saves time and memory with tracing off; the full effect needs the mbeddr interpreter to treat a `DummyComputationTrace` like no trace.
+
 ### Fixed
 
 - Variability: attribute values only proposed by the solver (e.g. default values) are no longer inherited by extending configurations.

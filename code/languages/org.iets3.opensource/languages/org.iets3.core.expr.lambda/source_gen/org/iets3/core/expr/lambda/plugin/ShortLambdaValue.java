@@ -104,8 +104,7 @@ public class ShortLambdaValue extends ExecutableValue {
     context.pushEnvironment(lambda, null);
 
     context.getEnvironment().put(ListSequence.fromList(SLinkOperations.getChildren(lambda, LINKS.args$8wKH)).getElement(0), ListSequence.fromList(evaluatedArgs).getElement(0));
-    ComputationTrace tt = new ComputationTrace(lambda, false);
-    contextTrace.addChild(tt);
+    ComputationTrace tt = contextTrace.newChild(lambda, false, null);
     Object res = context.getRootInterpreter().evaluate(SLinkOperations.getTarget(lambda, LINKS.expression$T2aj), context, coverage, tt, stopOnStop);
 
     ListSequence.fromList(SNodeOperations.getNodeDescendants(lambda, null, true, new SAbstractConcept[]{})).visitAll((final SNode descendant) -> {

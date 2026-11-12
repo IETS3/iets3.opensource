@@ -10,7 +10,7 @@ import org.iets3.core.expr.statemachines.behavior.IStateContainer__BehaviorDescr
 import jetbrains.mps.internal.collections.runtime.Sequence;
 import org.iets3.core.expr.statemachines.behavior.StateMachine__BehaviorDescriptor;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
-import com.mbeddr.mpsutil.interpreter.rt.ComputationTrace;
+import com.mbeddr.mpsutil.interpreter.rt.DummyComputationTrace;
 import org.iets3.core.expr.mutable.plugin.GlobalClockContainer;
 import org.iets3.core.expr.statemachines.behavior.State__BehaviorDescriptor;
 import jetbrains.mps.internal.collections.runtime.MapSequence;
@@ -24,6 +24,7 @@ import org.iets3.core.expr.mutable.plugin.IDCommand;
 import org.iets3.core.expr.mutable.plugin.IDArg;
 import org.iets3.core.expr.mutable.plugin.IDElement;
 import org.iets3.core.expr.mutable.plugin.ContextValue;
+import com.mbeddr.mpsutil.interpreter.rt.ComputationTrace;
 import org.iets3.core.expr.mutable.plugin.InterceptorState;
 import jetbrains.mps.baseLanguage.tuples.runtime.Tuples;
 import org.iets3.core.expr.mutable.behavior.IInterceptor__BehaviorDescriptor;
@@ -57,13 +58,14 @@ public class SmValue extends InteractorValue {
   public void start() {
     final SNode is = IStateContainer__BehaviorDescriptor.initialState_id3H4W4dizefM.invoke(myMachine);
     data = new SmInternalData(is);
+    // the traces of the initialization are not attached anywhere, so it is evaluated untraced
     for (SNode v : Sequence.fromIterable(StateMachine__BehaviorDescriptor.variables_idaPhVmWXB8g.invoke(this.machine()))) {
-      setVar(v, eval(SLinkOperations.getTarget(v, LINKS.expr$CW3E), new ComputationTrace(v)));
+      setVar(v, eval(SLinkOperations.getTarget(v, LINKS.expr$CW3E), new DummyComputationTrace(v)));
     }
     data.currentStateEntryTime = GlobalClockContainer.clock().timeMillis();
     data.lastTriggeredTransitionTime = GlobalClockContainer.clock().timeMillis();
     Iterable<SNode> eads = State__BehaviorDescriptor.entryActions_id7$TgoCYlwiZ.invoke(is);
-    Sequence.fromIterable(eads).visitAll((it) -> eval(it, new ComputationTrace(is)));
+    Sequence.fromIterable(eads).visitAll((it) -> eval(it, new DummyComputationTrace(is)));
   }
 
 
