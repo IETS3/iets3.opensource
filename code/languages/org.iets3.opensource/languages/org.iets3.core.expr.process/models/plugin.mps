@@ -1256,7 +1256,15 @@
                         </node>
                         <node concept="2ShNRf" id="4voDClG$qyl" role="37wK5m">
                           <node concept="1pGfFk" id="4voDClG$qym" role="2ShVmc">
-                            <ref role="37wK5l" to="2ahs:7obiejCbKeO" resolve="ComputationTrace" />
+                            <ref role="37wK5l" to="2ahs:1nsRmdNe_zj" />
+                            <node concept="2OqwBi" id="7UBudSKmZjH" role="37wK5m">
+                              <node concept="37vLTw" id="7UBudSKmZjK" role="2Oq$k0">
+                                <ref role="3cqZAo" node="7WFhXJlVWqk" resolve="decision" />
+                              </node>
+                              <node concept="3TrEf2" id="7UBudSKmZjL" role="2OqNvi">
+                                <ref role="3Tt5mk" to="7y2b:4voDClGzENw" />
+                              </node>
+                            </node>
                           </node>
                         </node>
                       </node>
@@ -1341,7 +1349,10 @@
                             </node>
                             <node concept="2ShNRf" id="VApoyDGfZ3" role="37wK5m">
                               <node concept="1pGfFk" id="VApoyDGfXi" role="2ShVmc">
-                                <ref role="37wK5l" to="2ahs:7obiejCbKeO" resolve="ComputationTrace" />
+                                <ref role="37wK5l" to="2ahs:1nsRmdNe_zj" />
+                                <node concept="37vLTw" id="7UBudSKk2uS" role="37wK5m">
+                                  <ref role="3cqZAo" node="4z0AnX817cE" resolve="it" />
+                                </node>
                               </node>
                             </node>
                           </node>
