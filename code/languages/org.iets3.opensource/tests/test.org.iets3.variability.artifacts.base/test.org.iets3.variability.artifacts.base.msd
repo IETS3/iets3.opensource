@@ -16,6 +16,7 @@
     <dependency reexport="false">f0883503-8eaa-4bc8-8846-eb63220ab1dd(org.iets3.variability.artifacts.base)</dependency>
     <dependency reexport="false">5b1f863d-65a0-41a6-a801-33896be24202(jetbrains.mps.ide.editor)</dependency>
     <dependency reexport="false">6b277d9a-d52d-416f-a209-1919bd737f50(org.iets3.core.expr.simpleTypes)</dependency>
+    <dependency reexport="false">71226ee2-bbc4-45d2-a41d-20b97237156c(org.iets3.variability.configuration.base)</dependency>
   </dependencies>
   <languageVersions>
     <language slang="l:d4280a54-f6df-4383-aa41-d1b2bffa7eb1:com.mbeddr.core.base" version="6" />
@@ -108,6 +109,7 @@
     <module reference="f0883503-8eaa-4bc8-8846-eb63220ab1dd(org.iets3.variability.artifacts.base)" version="18" />
     <module reference="c6ff3b3b-aff6-455e-9637-7955ccbfec22(org.iets3.variability.artifacts.vanguard)" version="0" />
     <module reference="9b66c5c9-38bf-4315-a96f-9f4e212c69cb(org.iets3.variability.base)" version="0" />
+    <module reference="71226ee2-bbc4-45d2-a41d-20b97237156c(org.iets3.variability.configuration.base)" version="6" />
     <module reference="165f1d05-2506-4544-895e-1424f54166ec(org.iets3.variability.featuremodel.base)" version="36" />
     <module reference="0739c1d4-1d92-40aa-bea9-a6af6939871a(test.org.iets3.variability.artifacts.base)" version="0" />
   </dependencyVersions>
