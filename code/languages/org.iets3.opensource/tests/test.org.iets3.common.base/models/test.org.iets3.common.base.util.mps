@@ -6,7 +6,7 @@
     <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="12" />
     <use id="fd392034-7849-419d-9071-12563d152375" name="jetbrains.mps.baseLanguage.closures" version="0" />
     <use id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections" version="2" />
-    <use id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc" version="2" />
+    <use id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc" version="3" />
     <use id="f47b95d4-5e73-4c04-9204-18076950153b" name="de.itemis.mps.compare" version="0" />
   </languages>
   <imports>
@@ -98,15 +98,9 @@
       </concept>
     </language>
     <language id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc">
-      <concept id="5349172909345501395" name="jetbrains.mps.baseLanguage.javadoc.structure.BaseDocComment" flags="ng" index="P$AiS">
-        <child id="8465538089690331502" name="body" index="TZ5H$" />
-      </concept>
       <concept id="5349172909345532724" name="jetbrains.mps.baseLanguage.javadoc.structure.MethodDocComment" flags="ng" index="P$JXv" />
-      <concept id="8465538089690331500" name="jetbrains.mps.baseLanguage.javadoc.structure.CommentLine" flags="ng" index="TZ5HA">
-        <child id="8970989240999019149" name="part" index="1dT_Ay" />
-      </concept>
-      <concept id="8970989240999019143" name="jetbrains.mps.baseLanguage.javadoc.structure.TextCommentLinePart" flags="ng" index="1dT_AC">
-        <property id="8970989240999019144" name="text" index="1dT_AB" />
+      <concept id="5085607816302529296" name="jetbrains.mps.baseLanguage.javadoc.structure.IHoldCommentLines" flags="ngI" index="1VezTd">
+        <child id="5085607816302529587" name="commentBody" index="1Vez_I" />
       </concept>
     </language>
     <language id="f47b95d4-5e73-4c04-9204-18076950153b" name="de.itemis.mps.compare">
@@ -147,6 +141,14 @@
       </concept>
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ngI" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
+      </concept>
+    </language>
+    <language id="c7fb639f-be78-4307-89b0-b5959c3fa8c8" name="jetbrains.mps.lang.text">
+      <concept id="155656958578482948" name="jetbrains.mps.lang.text.structure.Word" flags="nn" index="3oM_SD">
+        <property id="155656958578482949" name="value" index="3oM_SC" />
+      </concept>
+      <concept id="2535923850359271782" name="jetbrains.mps.lang.text.structure.Line" flags="nn" index="1PaTwC">
+        <child id="2535923850359271783" name="elements" index="1PaTwD" />
       </concept>
     </language>
     <language id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections">
@@ -462,9 +464,51 @@
         </node>
       </node>
       <node concept="P$JXv" id="$BWFNzezKu" role="lGtFl">
-        <node concept="TZ5HA" id="$BWFNzezKv" role="TZ5H$">
-          <node concept="1dT_AC" id="$BWFNzezKw" role="1dT_Ay">
-            <property role="1dT_AB" value="Removes all EmptyVariabilityContent nodes below the given node, so that node comparisons ignore empty lines." />
+        <node concept="1PaTwC" id="439dG2EoqM_" role="1Vez_I">
+          <node concept="3oM_SD" id="439dG2EoqMA" role="1PaTwD">
+            <property role="3oM_SC" value="Removes" />
+          </node>
+          <node concept="3oM_SD" id="439dG2EoqMB" role="1PaTwD">
+            <property role="3oM_SC" value="all" />
+          </node>
+          <node concept="3oM_SD" id="439dG2EoqMC" role="1PaTwD">
+            <property role="3oM_SC" value="EmptyVariabilityContent" />
+          </node>
+          <node concept="3oM_SD" id="439dG2EoqMD" role="1PaTwD">
+            <property role="3oM_SC" value="nodes" />
+          </node>
+          <node concept="3oM_SD" id="439dG2EoqME" role="1PaTwD">
+            <property role="3oM_SC" value="below" />
+          </node>
+          <node concept="3oM_SD" id="439dG2EoqMF" role="1PaTwD">
+            <property role="3oM_SC" value="the" />
+          </node>
+          <node concept="3oM_SD" id="439dG2EoqMG" role="1PaTwD">
+            <property role="3oM_SC" value="given" />
+          </node>
+          <node concept="3oM_SD" id="439dG2EoqMH" role="1PaTwD">
+            <property role="3oM_SC" value="node," />
+          </node>
+          <node concept="3oM_SD" id="439dG2EoqMI" role="1PaTwD">
+            <property role="3oM_SC" value="so" />
+          </node>
+          <node concept="3oM_SD" id="439dG2EoqMJ" role="1PaTwD">
+            <property role="3oM_SC" value="that" />
+          </node>
+          <node concept="3oM_SD" id="439dG2EoqMK" role="1PaTwD">
+            <property role="3oM_SC" value="node" />
+          </node>
+          <node concept="3oM_SD" id="439dG2EoqML" role="1PaTwD">
+            <property role="3oM_SC" value="comparisons" />
+          </node>
+          <node concept="3oM_SD" id="439dG2EoqMM" role="1PaTwD">
+            <property role="3oM_SC" value="ignore" />
+          </node>
+          <node concept="3oM_SD" id="439dG2EoqMN" role="1PaTwD">
+            <property role="3oM_SC" value="empty" />
+          </node>
+          <node concept="3oM_SD" id="439dG2EoqMO" role="1PaTwD">
+            <property role="3oM_SC" value="lines." />
           </node>
         </node>
       </node>
@@ -512,9 +556,51 @@
         </node>
       </node>
       <node concept="P$JXv" id="$BWFNzf3qF" role="lGtFl">
-        <node concept="TZ5HA" id="$BWFNzf3qG" role="TZ5H$">
-          <node concept="1dT_AC" id="$BWFNzf3qH" role="1dT_Ay">
-            <property role="1dT_AB" value="Asserts that both nodes are equal, ignoring EmptyVariabilityContent nodes and the common properties to ignore." />
+        <node concept="1PaTwC" id="439dG2EoqMP" role="1Vez_I">
+          <node concept="3oM_SD" id="439dG2EoqMQ" role="1PaTwD">
+            <property role="3oM_SC" value="Asserts" />
+          </node>
+          <node concept="3oM_SD" id="439dG2EoqMR" role="1PaTwD">
+            <property role="3oM_SC" value="that" />
+          </node>
+          <node concept="3oM_SD" id="439dG2EoqMS" role="1PaTwD">
+            <property role="3oM_SC" value="both" />
+          </node>
+          <node concept="3oM_SD" id="439dG2EoqMT" role="1PaTwD">
+            <property role="3oM_SC" value="nodes" />
+          </node>
+          <node concept="3oM_SD" id="439dG2EoqMU" role="1PaTwD">
+            <property role="3oM_SC" value="are" />
+          </node>
+          <node concept="3oM_SD" id="439dG2EoqMV" role="1PaTwD">
+            <property role="3oM_SC" value="equal," />
+          </node>
+          <node concept="3oM_SD" id="439dG2EoqMW" role="1PaTwD">
+            <property role="3oM_SC" value="ignoring" />
+          </node>
+          <node concept="3oM_SD" id="439dG2EoqMX" role="1PaTwD">
+            <property role="3oM_SC" value="EmptyVariabilityContent" />
+          </node>
+          <node concept="3oM_SD" id="439dG2EoqMY" role="1PaTwD">
+            <property role="3oM_SC" value="nodes" />
+          </node>
+          <node concept="3oM_SD" id="439dG2EoqMZ" role="1PaTwD">
+            <property role="3oM_SC" value="and" />
+          </node>
+          <node concept="3oM_SD" id="439dG2EoqN0" role="1PaTwD">
+            <property role="3oM_SC" value="the" />
+          </node>
+          <node concept="3oM_SD" id="439dG2EoqN1" role="1PaTwD">
+            <property role="3oM_SC" value="common" />
+          </node>
+          <node concept="3oM_SD" id="439dG2EoqN2" role="1PaTwD">
+            <property role="3oM_SC" value="properties" />
+          </node>
+          <node concept="3oM_SD" id="439dG2EoqN3" role="1PaTwD">
+            <property role="3oM_SC" value="to" />
+          </node>
+          <node concept="3oM_SD" id="439dG2EoqN4" role="1PaTwD">
+            <property role="3oM_SC" value="ignore." />
           </node>
         </node>
       </node>
