@@ -7,6 +7,9 @@ The project does _not_ follow Semantic Versioning and the changes are documented
 
 ## November 2026
 
+### Added
+- Variability: After inserting variability content, an empty line is kept below it, so configurations can be added below a feature model. No additional empty line is added when the inserted content is already followed by an empty line or is itself an empty content.
+
 ### Fixed
 
 - Variability: attribute values only proposed by the solver (e.g. default values) are no longer inherited by extending configurations.
