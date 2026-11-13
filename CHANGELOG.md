@@ -13,6 +13,11 @@ The project does _not_ follow Semantic Versioning and the changes are documented
 ### Fixed
 
 - Variability: attribute values only proposed by the solver (e.g. default values) are no longer inherited by extending configurations.
+### Added
+
+- Collections: elements of a list literal can carry a documentation comment (`DOC: Add Documentation`), e.g. to name the individual entries of long lists
+- Collections: list and set literals support conditional elements (`list(a, if c then b)`, the element is only added if the condition holds) and spread elements (`list(...xs, b)`, adds all elements of another collection); both can be combined (`if c then ...xs`). Supported by the interpreter and the Java generator
+- Collections: list literals can be laid out vertically, one element per line, with documentation comments placed above their element. The intention `Switch To Vertical Layout` forces it; otherwise a list switches automatically when an element is a big expression, carries a documentation comment, or the list would exceed about 80 characters
 
 ## October 2026
 
