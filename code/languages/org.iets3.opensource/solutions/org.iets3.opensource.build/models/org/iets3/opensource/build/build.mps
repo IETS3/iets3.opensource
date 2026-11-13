@@ -1244,6 +1244,9 @@
       <node concept="m$_yC" id="7yHH$DDpOn9" role="m$_yJ">
         <ref role="m$_y1" node="7yHH$DDoBdm" resolve="org.iets3.contextfilter" />
       </node>
+      <node concept="m$_yC" id="21ASjxbS1UN" role="m$_yJ">
+        <ref role="m$_y1" to="90a9:7jcf0001" resolve="de.itemis.stubs.jcef" />
+      </node>
     </node>
     <node concept="2G$12M" id="7B3y$vlfXUD" role="3989C9">
       <property role="TrG5h" value="org.iets3.variability.os" />
@@ -2009,8 +2012,8 @@
             </node>
           </node>
         </node>
-        <node concept="1SiIV0" id="7JWk$PithFJ" role="3bR37C">
-          <node concept="3bR9La" id="7JWk$PithFK" role="1SiIV1">
+        <node concept="1SiIV0" id="21ASjxbRRs1" role="3bR37C">
+          <node concept="3bR9La" id="21ASjxbRRs2" role="1SiIV1">
             <ref role="3bR37D" to="90a9:7jcf0015" resolve="de.itemis.stubs.jcef" />
           </node>
         </node>
