@@ -36,7 +36,7 @@
     <import index="33ny" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.util(JDK/)" />
     <import index="eagd" ref="r:154fabcc-b3d3-4e79-bb19-4903ef6965db(org.iets3.variability.artifacts.base.plugin)" />
     <import index="eoo2" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.nio.file(JDK/)" />
-    <import index="i5ca" ref="4368e872-3beb-47e5-b702-b599cefe324b/java:com.intellij.ui.jcef(de.itemis.stubs.jcef/)" />
+    <import index="i5ca" ref="4368e872-3beb-47e5-b702-b599cefe324b/java:com.intellij.ui.jcef(com.jetbrains.mpsext.stubs.jcef/)" />
   </imports>
   <registry>
     <language id="982eb8df-2c96-4bd7-9963-11712ea622e5" name="jetbrains.mps.lang.resources">

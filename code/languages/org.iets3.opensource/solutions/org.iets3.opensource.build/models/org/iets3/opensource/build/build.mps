@@ -11,7 +11,7 @@
   <imports>
     <import index="ffeo" ref="r:874d959d-e3b4-4d04-b931-ca849af130dd(jetbrains.mps.ide.build)" />
     <import index="al5i" ref="r:742f344d-4dc4-4862-992c-4bc94b094870(com.mbeddr.mpsutil.dev.build)" />
-    <import index="90a9" ref="r:fb24ac52-5985-4947-bba9-25be6fd32c1a(de.itemis.mps.extensions.build)" implicit="true" />
+    <import index="90a9" ref="r:fb24ac52-5985-4947-bba9-25be6fd32c1a(de.itemis.mps.extensions.build)" />
   </imports>
   <registry>
     <language id="9d000fbd-bdca-4a46-b39b-c5ba9e79b38c" name="org.iets3.opensource.build.gentests">
@@ -81,6 +81,10 @@
         <child id="8618885170173601778" name="tail" index="2Ry0An" />
       </concept>
       <concept id="6647099934206700647" name="jetbrains.mps.build.structure.BuildJavaPlugin" flags="ng" index="10PD9b" />
+      <concept id="7181125477683417252" name="jetbrains.mps.build.structure.BuildExternalLayoutDependency" flags="ng" index="13uUGR">
+        <reference id="7181125477683417255" name="layout" index="13uUGO" />
+        <child id="7181125477683417254" name="artifacts" index="13uUGP" />
+      </concept>
       <concept id="7389400916848050060" name="jetbrains.mps.build.structure.BuildLayout_NamedContainer" flags="ng" index="3981dR">
         <child id="4380385936562148502" name="containerName" index="Nbhlr" />
       </concept>
@@ -1245,7 +1249,7 @@
         <ref role="m$_y1" node="7yHH$DDoBdm" resolve="org.iets3.contextfilter" />
       </node>
       <node concept="m$_yC" id="21ASjxbS1UN" role="m$_yJ">
-        <ref role="m$_y1" to="90a9:7jcf0001" resolve="de.itemis.stubs.jcef" />
+        <ref role="m$_y1" to="90a9:7jcf0001" resolve="com.jetbrains.mpsext.stubs.jcef" />
       </node>
     </node>
     <node concept="2G$12M" id="7B3y$vlfXUD" role="3989C9">
@@ -2014,7 +2018,7 @@
         </node>
         <node concept="1SiIV0" id="21ASjxbRRs1" role="3bR37C">
           <node concept="3bR9La" id="21ASjxbRRs2" role="1SiIV1">
-            <ref role="3bR37D" to="90a9:7jcf0015" resolve="de.itemis.stubs.jcef" />
+            <ref role="3bR37D" to="90a9:7jcf0015" resolve="com.jetbrains.mpsext.stubs.jcef" />
           </node>
         </node>
       </node>
@@ -16114,6 +16118,12 @@
     <node concept="2igEWh" id="44RyrhrDweX" role="1hWBAP">
       <property role="3UIfUI" value="10000" />
       <property role="1YnnvL" value="1024" />
+    </node>
+    <node concept="13uUGR" id="75qazh66MtW" role="1l3spa">
+      <ref role="13uUGO" to="90a9:75qazh5EP1k" resolve="jcef-plugin" />
+      <node concept="398BVA" id="75qazh66MtX" role="13uUGP">
+        <ref role="398BVh" node="5wLtKNeSRPo" resolve="mps.home" />
+      </node>
     </node>
   </node>
   <node concept="1l3spW" id="OJuIQpzfqR">
