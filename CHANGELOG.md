@@ -9,6 +9,7 @@ The project does _not_ follow Semantic Versioning and the changes are documented
 
 ### Added
 - Variability: After inserting variability content, an empty line is kept below it, so configurations can be added below a feature model. No additional empty line is added when the inserted content is already followed by an empty line or is itself an empty content.
+- Variability: A new checking rule reports feature model configurations which assign the same feature attribute more than once (e.g., after an erroneous manual merge). A quickfix removes the selected duplicate assignment; the user decides which one to keep (#2046).
 
 
 ## October 2026
