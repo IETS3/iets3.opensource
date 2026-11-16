@@ -10,6 +10,7 @@ import jetbrains.mps.lang.typesystem.runtime.IsApplicableStatus;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
 import jetbrains.mps.internal.collections.runtime.ListSequence;
+import java.util.Objects;
 import jetbrains.mps.errors.messageTargets.MessageTarget;
 import jetbrains.mps.errors.messageTargets.NodeMessageTarget;
 import jetbrains.mps.errors.IErrorReporter;
@@ -31,7 +32,7 @@ public class check_FeatureAttributeAssignment_NonTypesystemRule extends Abstract
     if ((content == null) || (SLinkOperations.getTarget(faa, LINKS.attribute$J5jI) == null)) {
       return;
     }
-    if (ListSequence.fromList(SLinkOperations.getChildren(content, LINKS.attributeAssignments$seL5)).any((it) -> it != faa && SLinkOperations.getTarget(it, LINKS.attribute$J5jI) == SLinkOperations.getTarget(faa, LINKS.attribute$J5jI))) {
+    if (ListSequence.fromList(SLinkOperations.getChildren(content, LINKS.attributeAssignments$seL5)).any((it) -> !(Objects.equals(it, faa)) && Objects.equals(SLinkOperations.getTarget(it, LINKS.attribute$J5jI), SLinkOperations.getTarget(faa, LINKS.attribute$J5jI)))) {
       {
         final MessageTarget errorTarget = new NodeMessageTarget();
         IErrorReporter _reporter_2309309498 = typeCheckingContext.reportTypeError(faa, "Non-unique assignment of attribute '" + SPropertyOperations.getString(SLinkOperations.getTarget(faa, LINKS.attribute$J5jI), PROPS.name$MnvL) + "', use quickfix to repair", "r:791971f5-b094-4342-a75c-0ce6c1b43e9d(org.iets3.variability.configuration.base.typesystem)", "8573733161978301941", null, errorTarget);

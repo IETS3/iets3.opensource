@@ -1036,62 +1036,62 @@
       </scope>
     </file>
     <file name="check_FeatureAttributeAssignment_NonTypesystemRule.java">
-      <node id="8573733161978301881" at="28,116,29,105" concept="8" />
-      <node id="8573733161978301905" at="29,105,30,118" concept="6" />
-      <node id="8573733161978301917" at="31,94,32,13" concept="7" />
-      <node id="8573733161978301941" at="35,7,36,66" concept="6" />
-      <node id="8573733161978301941" at="36,66,37,397" concept="6" />
-      <node id="8573733161978301953" at="38,9,39,203" concept="6" />
-      <node id="8573733161978301954" at="39,203,40,52" concept="2" />
-      <node id="8573733161978301953" at="40,52,41,71" concept="2" />
-      <node id="8573733161978301875" at="46,50,47,50" concept="7" />
-      <node id="8573733161978301875" at="49,68,50,102" concept="7" />
-      <node id="8573733161978301875" at="52,30,53,17" concept="7" />
-      <node id="8573733161978301875" at="57,0,58,0" concept="10" trace="InlineFeatureConfigurationContent$P5" />
-      <node id="8573733161978301875" at="58,0,59,0" concept="10" trace="FeatureAttributeAssignment$1f" />
-      <node id="8573733161978301875" at="62,0,63,0" concept="10" trace="attribute$J5jI" />
-      <node id="8573733161978301875" at="63,0,64,0" concept="10" trace="attributeAssignments$seL5" />
-      <node id="8573733161978301875" at="67,0,68,0" concept="10" trace="name$MnvL" />
-      <node id="8573733161978301875" at="26,0,28,0" concept="1" trace="check_FeatureAttributeAssignment_NonTypesystemRule#()V" />
-      <node id="8573733161978301906" at="30,118,33,5" concept="4" />
-      <node id="8573733161978301875" at="46,0,49,0" concept="5" trace="getApplicableConcept#()Lorg/jetbrains/mps/openapi/language/SAbstractConcept;" />
-      <node id="8573733161978301875" at="49,0,52,0" concept="5" trace="isApplicableAndPattern#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljetbrains/mps/lang/typesystem/runtime/IsApplicableStatus;" />
-      <node id="8573733161978301875" at="52,0,55,0" concept="5" trace="overrides#()Z" />
-      <node id="8573733161978301953" at="37,397,42,9" concept="0" />
-      <node id="8573733161978301941" at="34,237,43,7" concept="0" />
-      <node id="8573733161978301918" at="33,5,44,5" concept="4" />
-      <node id="8573733161978301875" at="28,0,46,0" concept="5" trace="applyRule#(Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/typesystem/inference/TypeCheckingContext;Ljetbrains/mps/lang/typesystem/runtime/IsApplicableStatus;)V" />
-      <scope id="8573733161978301875" at="26,63,26,63" />
-      <scope id="8573733161978301916" at="31,94,32,13" />
-      <scope id="8573733161978301875" at="46,50,47,50" />
-      <scope id="8573733161978301875" at="49,68,50,102" />
-      <scope id="8573733161978301875" at="52,30,53,17" />
-      <scope id="8573733161978301875" at="26,0,28,0" />
-      <scope id="8573733161978301953" at="38,9,41,71">
+      <node id="8573733161978301881" at="29,116,30,105" concept="8" />
+      <node id="8573733161978301905" at="30,105,31,118" concept="6" />
+      <node id="8573733161978301917" at="32,94,33,13" concept="7" />
+      <node id="8573733161978301941" at="36,7,37,66" concept="6" />
+      <node id="8573733161978301941" at="37,66,38,397" concept="6" />
+      <node id="8573733161978301953" at="39,9,40,203" concept="6" />
+      <node id="8573733161978301954" at="40,203,41,52" concept="2" />
+      <node id="8573733161978301953" at="41,52,42,71" concept="2" />
+      <node id="8573733161978301875" at="47,50,48,50" concept="7" />
+      <node id="8573733161978301875" at="50,68,51,102" concept="7" />
+      <node id="8573733161978301875" at="53,30,54,17" concept="7" />
+      <node id="8573733161978301875" at="58,0,59,0" concept="10" trace="InlineFeatureConfigurationContent$P5" />
+      <node id="8573733161978301875" at="59,0,60,0" concept="10" trace="FeatureAttributeAssignment$1f" />
+      <node id="8573733161978301875" at="63,0,64,0" concept="10" trace="attribute$J5jI" />
+      <node id="8573733161978301875" at="64,0,65,0" concept="10" trace="attributeAssignments$seL5" />
+      <node id="8573733161978301875" at="68,0,69,0" concept="10" trace="name$MnvL" />
+      <node id="8573733161978301875" at="27,0,29,0" concept="1" trace="check_FeatureAttributeAssignment_NonTypesystemRule#()V" />
+      <node id="8573733161978301906" at="31,118,34,5" concept="4" />
+      <node id="8573733161978301875" at="47,0,50,0" concept="5" trace="getApplicableConcept#()Lorg/jetbrains/mps/openapi/language/SAbstractConcept;" />
+      <node id="8573733161978301875" at="50,0,53,0" concept="5" trace="isApplicableAndPattern#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljetbrains/mps/lang/typesystem/runtime/IsApplicableStatus;" />
+      <node id="8573733161978301875" at="53,0,56,0" concept="5" trace="overrides#()Z" />
+      <node id="8573733161978301953" at="38,397,43,9" concept="0" />
+      <node id="8573733161978301941" at="35,268,44,7" concept="0" />
+      <node id="8573733161978301918" at="34,5,45,5" concept="4" />
+      <node id="8573733161978301875" at="29,0,47,0" concept="5" trace="applyRule#(Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/typesystem/inference/TypeCheckingContext;Ljetbrains/mps/lang/typesystem/runtime/IsApplicableStatus;)V" />
+      <scope id="8573733161978301875" at="27,63,27,63" />
+      <scope id="8573733161978301916" at="32,94,33,13" />
+      <scope id="8573733161978301875" at="47,50,48,50" />
+      <scope id="8573733161978301875" at="50,68,51,102" />
+      <scope id="8573733161978301875" at="53,30,54,17" />
+      <scope id="8573733161978301875" at="27,0,29,0" />
+      <scope id="8573733161978301953" at="39,9,42,71">
         <var name="intentionProvider" id="8573733161978301953" />
       </scope>
-      <scope id="8573733161978301875" at="46,0,49,0" />
-      <scope id="8573733161978301875" at="49,0,52,0">
+      <scope id="8573733161978301875" at="47,0,50,0" />
+      <scope id="8573733161978301875" at="50,0,53,0">
         <var name="argument" id="8573733161978301875" />
       </scope>
-      <scope id="8573733161978301875" at="52,0,55,0" />
-      <scope id="8573733161978301941" at="35,7,42,9">
+      <scope id="8573733161978301875" at="53,0,56,0" />
+      <scope id="8573733161978301941" at="36,7,43,9">
         <var name="_reporter_2309309498" id="8573733161978301941" />
         <var name="errorTarget" id="8573733161978301941" />
       </scope>
-      <scope id="8573733161978301940" at="34,237,43,7" />
-      <scope id="8573733161978301880" at="28,116,44,5">
+      <scope id="8573733161978301940" at="35,268,44,7" />
+      <scope id="8573733161978301880" at="29,116,45,5">
         <var name="content" id="8573733161978301898" />
       </scope>
-      <scope id="8573733161978301875" at="28,0,46,0">
+      <scope id="8573733161978301875" at="29,0,47,0">
         <var name="faa" id="8573733161978301875" />
         <var name="status" id="8573733161978301875" />
         <var name="typeCheckingContext" id="8573733161978301875" />
       </scope>
-      <unit id="8573733161978301875" at="66,0,69,0" name="org.iets3.variability.configuration.base.typesystem.check_FeatureAttributeAssignment_NonTypesystemRule$PROPS" />
-      <unit id="8573733161978301875" at="56,0,60,0" name="org.iets3.variability.configuration.base.typesystem.check_FeatureAttributeAssignment_NonTypesystemRule$CONCEPTS" />
-      <unit id="8573733161978301875" at="61,0,65,0" name="org.iets3.variability.configuration.base.typesystem.check_FeatureAttributeAssignment_NonTypesystemRule$LINKS" />
-      <unit id="8573733161978301875" at="25,0,70,0" name="org.iets3.variability.configuration.base.typesystem.check_FeatureAttributeAssignment_NonTypesystemRule" />
+      <unit id="8573733161978301875" at="67,0,70,0" name="org.iets3.variability.configuration.base.typesystem.check_FeatureAttributeAssignment_NonTypesystemRule$PROPS" />
+      <unit id="8573733161978301875" at="57,0,61,0" name="org.iets3.variability.configuration.base.typesystem.check_FeatureAttributeAssignment_NonTypesystemRule$CONCEPTS" />
+      <unit id="8573733161978301875" at="62,0,66,0" name="org.iets3.variability.configuration.base.typesystem.check_FeatureAttributeAssignment_NonTypesystemRule$LINKS" />
+      <unit id="8573733161978301875" at="26,0,71,0" name="org.iets3.variability.configuration.base.typesystem.check_FeatureAttributeAssignment_NonTypesystemRule" />
     </file>
   </root>
   <root nodeRef="r:791971f5-b094-4342-a75c-0ce6c1b43e9d(org.iets3.variability.configuration.base.typesystem)/9159423170672956616">
