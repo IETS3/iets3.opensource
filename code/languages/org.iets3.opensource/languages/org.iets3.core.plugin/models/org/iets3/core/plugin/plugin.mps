@@ -9,7 +9,7 @@
     <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="12" />
     <use id="443f4c36-fcf5-4eb6-9500-8d06ed259e3e" name="jetbrains.mps.baseLanguage.classifiers" version="-1" />
     <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="19" />
-    <use id="982eb8df-2c96-4bd7-9963-11712ea622e5" name="jetbrains.mps.lang.resources" version="3" />
+    <use id="982eb8df-2c96-4bd7-9963-11712ea622e5" name="jetbrains.mps.lang.resources" version="4" />
     <use id="63650c59-16c8-498a-99c8-005c7ee9515d" name="jetbrains.mps.lang.access" version="0" />
     <use id="c0080a47-7e37-4558-bee9-9ae18e690549" name="jetbrains.mps.lang.extension" version="2" />
     <use id="c7fb639f-be78-4307-89b0-b5959c3fa8c8" name="jetbrains.mps.lang.text" version="0" />
@@ -382,7 +382,6 @@
       <concept id="1138411891628" name="jetbrains.mps.lang.smodel.structure.SNodeOperation" flags="nn" index="eCIE_">
         <child id="1144104376918" name="parameter" index="1xVPHs" />
       </concept>
-      <concept id="1179409122411" name="jetbrains.mps.lang.smodel.structure.Node_ConceptMethodCall" flags="nn" index="2qgKlT" />
       <concept id="1143226024141" name="jetbrains.mps.lang.smodel.structure.SModelType" flags="in" index="H_c77" />
       <concept id="1145383075378" name="jetbrains.mps.lang.smodel.structure.SNodeListType" flags="in" index="2I9FWS">
         <reference id="1145383142433" name="elementConcept" index="2I9WkF" />
@@ -6022,7 +6021,7 @@
                         <node concept="2GrUjf" id="1mzU7KvtdLQ" role="2Oq$k0">
                           <ref role="2Gs0qQ" node="1mzU7KvtdLw" resolve="n" />
                         </node>
-                        <node concept="2qgKlT" id="1mzU7KvtdLR" role="2OqNvi">
+                        <node concept="3zqWPK" id="20HCJ0_2xrO" role="2OqNvi">
                           <ref role="37wK5l" to="tpcu:hEwIMiw" resolve="getPresentation" />
                         </node>
                       </node>
@@ -6060,9 +6059,9 @@
                 <node concept="2GrUjf" id="1mzU7KvtdMh" role="2Oq$k0">
                   <ref role="2Gs0qQ" node="1mzU7KvtdLw" resolve="n" />
                 </node>
-                <node concept="2qgKlT" id="1mzU7KvtdMi" role="2OqNvi">
+                <node concept="3zqWPK" id="20HCJ0_2xrQ" role="2OqNvi">
                   <ref role="37wK5l" to="gdgh:3R3AIvumrTm" resolve="runManually" />
-                  <node concept="37vLTw" id="1mzU7KvtdMj" role="37wK5m">
+                  <node concept="37vLTw" id="20HCJ0_2xrS" role="37wK5m">
                     <ref role="3cqZAo" node="1mzU7KvtdKu" resolve="context" />
                   </node>
                 </node>

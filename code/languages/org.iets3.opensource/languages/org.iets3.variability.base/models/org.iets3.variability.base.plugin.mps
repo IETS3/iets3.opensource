@@ -29,6 +29,9 @@
     <import index="90d" ref="r:421d64ed-8024-497f-aeab-8bddeb389dd2(jetbrains.mps.lang.extension.methods)" implicit="true" />
   </imports>
   <registry>
+    <language id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior">
+      <concept id="3235159848334022093" name="jetbrains.mps.lang.behavior.structure.Node_ConceptMethodCall" flags="nn" index="3zqWPK" />
+    </language>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
       <concept id="1080223426719" name="jetbrains.mps.baseLanguage.structure.OrExpression" flags="nn" index="22lmx$" />
       <concept id="1215693861676" name="jetbrains.mps.baseLanguage.structure.BaseAssignmentExpression" flags="nn" index="d038R">
@@ -210,16 +213,7 @@
     </language>
     <language id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc">
       <concept id="6832197706140896242" name="jetbrains.mps.baseLanguage.javadoc.structure.FieldDocComment" flags="ng" index="z59LJ" />
-      <concept id="5349172909345501395" name="jetbrains.mps.baseLanguage.javadoc.structure.BaseDocComment" flags="ng" index="P$AiS">
-        <child id="8465538089690331502" name="body" index="TZ5H$" />
-      </concept>
       <concept id="5349172909345532724" name="jetbrains.mps.baseLanguage.javadoc.structure.MethodDocComment" flags="ng" index="P$JXv" />
-      <concept id="8465538089690331500" name="jetbrains.mps.baseLanguage.javadoc.structure.CommentLine" flags="ng" index="TZ5HA">
-        <child id="8970989240999019149" name="part" index="1dT_Ay" />
-      </concept>
-      <concept id="8970989240999019143" name="jetbrains.mps.baseLanguage.javadoc.structure.TextCommentLinePart" flags="ng" index="1dT_AC">
-        <property id="8970989240999019144" name="text" index="1dT_AB" />
-      </concept>
       <concept id="2068944020170241612" name="jetbrains.mps.baseLanguage.javadoc.structure.ClassifierDocComment" flags="ng" index="3UR2Jj" />
       <concept id="5085607816302529296" name="jetbrains.mps.baseLanguage.javadoc.structure.IHoldCommentLines" flags="ngI" index="1VezTd">
         <child id="5085607816302529587" name="commentBody" index="1Vez_I" />
@@ -258,7 +252,6 @@
       <concept id="1177026924588" name="jetbrains.mps.lang.smodel.structure.RefConcept_Reference" flags="nn" index="chp4Y">
         <reference id="1177026940964" name="conceptDeclaration" index="cht4Q" />
       </concept>
-      <concept id="1179409122411" name="jetbrains.mps.lang.smodel.structure.Node_ConceptMethodCall" flags="nn" index="2qgKlT" />
       <concept id="1143512015885" name="jetbrains.mps.lang.smodel.structure.Node_GetNextSiblingOperation" flags="nn" index="YCak7" />
       <concept id="2644386474300074836" name="jetbrains.mps.lang.smodel.structure.ConceptIdRefExpression" flags="nn" index="35c_gC">
         <reference id="2644386474300074837" name="conceptDeclaration" index="35c_gD" />
@@ -2029,19 +2022,19 @@
             <node concept="37vLTw" id="5rWyHNe1wc1" role="2Oq$k0">
               <ref role="3cqZAo" node="5rWyHNe1wbt" resolve="chunk" />
             </node>
-            <node concept="2qgKlT" id="5rWyHNe1wbT" role="2OqNvi">
+            <node concept="3zqWPK" id="20HCJ0_2xrG" role="2OqNvi">
               <ref role="37wK5l" to="n8u2:22kx7U4IoRa" resolve="addContent" />
-              <node concept="3cpWs3" id="5rWyHNe1wbU" role="37wK5m">
-                <node concept="37vLTw" id="5rWyHNe1wbV" role="3uHU7B">
+              <node concept="3cpWs3" id="20HCJ0_2xrI" role="37wK5m">
+                <node concept="37vLTw" id="20HCJ0_2xrJ" role="3uHU7B">
                   <ref role="3cqZAo" node="5rWyHNe1wbK" resolve="indexOf" />
                 </node>
-                <node concept="3cmrfG" id="5rWyHNe1wbW" role="3uHU7w">
+                <node concept="3cmrfG" id="20HCJ0_2xrK" role="3uHU7w">
                   <property role="3cmrfH" value="1" />
                 </node>
               </node>
-              <node concept="2ShNRf" id="5rWyHNe1wbZ" role="37wK5m">
-                <node concept="3zrR0B" id="5rWyHNe1wbY" role="2ShVmc">
-                  <node concept="3Tqbb2" id="5rWyHNe1wbX" role="3zrR0E">
+              <node concept="2ShNRf" id="20HCJ0_2xrL" role="37wK5m">
+                <node concept="3zrR0B" id="20HCJ0_2xrM" role="2ShVmc">
+                  <node concept="3Tqbb2" id="20HCJ0_2xrN" role="3zrR0E">
                     <ref role="ehGHo" to="rmn3:3tsFshP5d$8" resolve="EmptyVariabilityContent" />
                   </node>
                 </node>
@@ -2051,22 +2044,115 @@
         </node>
       </node>
       <node concept="P$JXv" id="5rWyHNe1wc7" role="lGtFl">
-        <node concept="TZ5HA" id="5rWyHNe1wc8" role="TZ5H$">
-          <node concept="1dT_AC" id="5rWyHNe1wc9" role="1dT_Ay">
-            <property role="1dT_AB" value="Inserts an EmptyVariabilityContent directly after the added child, unless the child itself" />
+        <node concept="1PaTwC" id="20HCJ0_47tX" role="1Vez_I">
+          <node concept="3oM_SD" id="20HCJ0_47tY" role="1PaTwD">
+            <property role="3oM_SC" value="Inserts" />
+          </node>
+          <node concept="3oM_SD" id="20HCJ0_47tZ" role="1PaTwD">
+            <property role="3oM_SC" value="an" />
+          </node>
+          <node concept="3oM_SD" id="20HCJ0_47u0" role="1PaTwD">
+            <property role="3oM_SC" value="EmptyVariabilityContent" />
+          </node>
+          <node concept="3oM_SD" id="20HCJ0_47u1" role="1PaTwD">
+            <property role="3oM_SC" value="directly" />
+          </node>
+          <node concept="3oM_SD" id="20HCJ0_47u2" role="1PaTwD">
+            <property role="3oM_SC" value="after" />
+          </node>
+          <node concept="3oM_SD" id="20HCJ0_47u3" role="1PaTwD">
+            <property role="3oM_SC" value="the" />
+          </node>
+          <node concept="3oM_SD" id="20HCJ0_47u4" role="1PaTwD">
+            <property role="3oM_SC" value="added" />
+          </node>
+          <node concept="3oM_SD" id="20HCJ0_47u5" role="1PaTwD">
+            <property role="3oM_SC" value="child," />
+          </node>
+          <node concept="3oM_SD" id="20HCJ0_47u6" role="1PaTwD">
+            <property role="3oM_SC" value="unless" />
+          </node>
+          <node concept="3oM_SD" id="20HCJ0_47u7" role="1PaTwD">
+            <property role="3oM_SC" value="the" />
+          </node>
+          <node concept="3oM_SD" id="20HCJ0_47u8" role="1PaTwD">
+            <property role="3oM_SC" value="child" />
+          </node>
+          <node concept="3oM_SD" id="20HCJ0_47u9" role="1PaTwD">
+            <property role="3oM_SC" value="itself" />
           </node>
         </node>
-        <node concept="TZ5HA" id="5rWyHNe1wca" role="TZ5H$">
-          <node concept="1dT_AC" id="5rWyHNe1wcb" role="1dT_Ay">
-            <property role="1dT_AB" value="is an empty line or an empty line already follows it." />
+        <node concept="1PaTwC" id="20HCJ0_47ua" role="1Vez_I">
+          <node concept="3oM_SD" id="20HCJ0_47ub" role="1PaTwD">
+            <property role="3oM_SC" value="is" />
+          </node>
+          <node concept="3oM_SD" id="20HCJ0_47uc" role="1PaTwD">
+            <property role="3oM_SC" value="an" />
+          </node>
+          <node concept="3oM_SD" id="20HCJ0_47ud" role="1PaTwD">
+            <property role="3oM_SC" value="empty" />
+          </node>
+          <node concept="3oM_SD" id="20HCJ0_47ue" role="1PaTwD">
+            <property role="3oM_SC" value="line" />
+          </node>
+          <node concept="3oM_SD" id="20HCJ0_47uf" role="1PaTwD">
+            <property role="3oM_SC" value="or" />
+          </node>
+          <node concept="3oM_SD" id="20HCJ0_47ug" role="1PaTwD">
+            <property role="3oM_SC" value="an" />
+          </node>
+          <node concept="3oM_SD" id="20HCJ0_47uh" role="1PaTwD">
+            <property role="3oM_SC" value="empty" />
+          </node>
+          <node concept="3oM_SD" id="20HCJ0_47ui" role="1PaTwD">
+            <property role="3oM_SC" value="line" />
+          </node>
+          <node concept="3oM_SD" id="20HCJ0_47uj" role="1PaTwD">
+            <property role="3oM_SC" value="already" />
+          </node>
+          <node concept="3oM_SD" id="20HCJ0_47uk" role="1PaTwD">
+            <property role="3oM_SC" value="follows" />
+          </node>
+          <node concept="3oM_SD" id="20HCJ0_47ul" role="1PaTwD">
+            <property role="3oM_SC" value="it." />
           </node>
         </node>
       </node>
     </node>
     <node concept="3UR2Jj" id="5rWyHNe1wc4" role="lGtFl">
-      <node concept="TZ5HA" id="5rWyHNe1wc5" role="TZ5H$">
-        <node concept="1dT_AC" id="5rWyHNe1wc6" role="1dT_Ay">
-          <property role="1dT_AB" value="Keeps an empty line (EmptyVariabilityContent) after content added to a VariabilityModelChunk." />
+      <node concept="1PaTwC" id="20HCJ0_47tL" role="1Vez_I">
+        <node concept="3oM_SD" id="20HCJ0_47tM" role="1PaTwD">
+          <property role="3oM_SC" value="Keeps" />
+        </node>
+        <node concept="3oM_SD" id="20HCJ0_47tN" role="1PaTwD">
+          <property role="3oM_SC" value="an" />
+        </node>
+        <node concept="3oM_SD" id="20HCJ0_47tO" role="1PaTwD">
+          <property role="3oM_SC" value="empty" />
+        </node>
+        <node concept="3oM_SD" id="20HCJ0_47tP" role="1PaTwD">
+          <property role="3oM_SC" value="line" />
+        </node>
+        <node concept="3oM_SD" id="20HCJ0_47tQ" role="1PaTwD">
+          <property role="3oM_SC" value="(EmptyVariabilityContent)" />
+        </node>
+        <node concept="3oM_SD" id="20HCJ0_47tR" role="1PaTwD">
+          <property role="3oM_SC" value="after" />
+        </node>
+        <node concept="3oM_SD" id="20HCJ0_47tS" role="1PaTwD">
+          <property role="3oM_SC" value="content" />
+        </node>
+        <node concept="3oM_SD" id="20HCJ0_47tT" role="1PaTwD">
+          <property role="3oM_SC" value="added" />
+        </node>
+        <node concept="3oM_SD" id="20HCJ0_47tU" role="1PaTwD">
+          <property role="3oM_SC" value="to" />
+        </node>
+        <node concept="3oM_SD" id="20HCJ0_47tV" role="1PaTwD">
+          <property role="3oM_SC" value="a" />
+        </node>
+        <node concept="3oM_SD" id="20HCJ0_47tW" role="1PaTwD">
+          <property role="3oM_SC" value="VariabilityModelChunk." />
         </node>
       </node>
     </node>
