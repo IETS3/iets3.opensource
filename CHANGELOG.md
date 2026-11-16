@@ -7,6 +7,9 @@ The project does _not_ follow Semantic Versioning and the changes are documented
 
 ## November 2026
 
+### Added
+- Variability: After inserting variability content, an empty line is kept below it, so configurations can be added below a feature model. No additional empty line is added when the inserted content is already followed by an empty line or is itself an empty content.
+
 ### Fixed
 
 - Variability: attribute values only proposed by the solver (e.g. default values) are no longer inherited by extending configurations.
@@ -29,6 +32,7 @@ The project does _not_ follow Semantic Versioning and the changes are documented
 
 - Ship the interpreter-test runner in the main artifact and fix completion and improved UX of the interpreter config.
 - Interpreter test runner: required output folder, faster discovery, cleanup
+- Manually run checks (Run/Evaluate/Check Manually and the actions on children, root and model) now show a progress overlay that stays painted and updated while the run blocks the UI thread: the current node, a progress bar and the elapsed time. The message window shown before was often never painted, and could appear on the wrong screen. `CommandWithMessage.execute` now also takes the `Project` to show the progress on; the variant taking an `SRepository` still works and looks up the project's frame. Code inside `CommandWithMessage.execute` can report its own progress to `ProgressManager.getInstance().getProgressIndicator()`. The second copy of `CommandWithMessage` in `org.iets3.core.expr.base.intentions` was removed: use the one in `org.iets3.core.plugin`, which the "Run Mutator" and "Run Producer" intentions now do as well.
 
 ## September 2026
 
