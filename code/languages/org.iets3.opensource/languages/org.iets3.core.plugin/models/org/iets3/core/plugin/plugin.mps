@@ -1172,6 +1172,21 @@
             </node>
           </node>
         </node>
+        <node concept="3cpWs8" id="53f0GWHVUT9" role="3cqZAp">
+          <node concept="3cpWsn" id="53f0GWHVUTa" role="3cpWs9">
+            <property role="TrG5h" value="context" />
+            <property role="3TUv4t" value="true" />
+            <node concept="3uibUv" id="53f0GWHVUTb" role="1tU5fm">
+              <ref role="3uigEE" to="cj4x:~EditorContext" resolve="EditorContext" />
+            </node>
+            <node concept="2OqwBi" id="53f0GWHVUTc" role="33vP2m">
+              <node concept="2WthIp" id="53f0GWHVUTd" role="2Oq$k0" />
+              <node concept="1DTwFV" id="53f0GWHVUTe" role="2OqNvi">
+                <ref role="2WH_rO" node="3a2FJuC77bF" resolve="ctx" />
+              </node>
+            </node>
+          </node>
+        </node>
         <node concept="3clFbF" id="7KGO58TP9Ba" role="3cqZAp">
           <node concept="2YIFZM" id="4Pi6J8CbKDt" role="3clFbG">
             <ref role="37wK5l" node="70aAUsa54ZB" resolve="execute" />
