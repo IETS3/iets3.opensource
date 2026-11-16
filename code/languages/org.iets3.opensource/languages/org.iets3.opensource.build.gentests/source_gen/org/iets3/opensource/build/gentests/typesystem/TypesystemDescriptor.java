@@ -11,5 +11,9 @@ public class TypesystemDescriptor extends BaseHelginsDescriptor {
       NonTypesystemRule_Runtime nonTypesystemRule = new check_CustomRunnerAspectPlugInForMissingDevKits_NonTypesystemRule();
       this.myNonTypesystemRules.add(nonTypesystemRule);
     }
+    {
+      NonTypesystemRule_Runtime nonTypesystemRule = new check_InterpreterTestRunnerAspectRequiredPluginsReachable_NonTypesystemRule();
+      this.myNonTypesystemRules.add(nonTypesystemRule);
+    }
   }
 }

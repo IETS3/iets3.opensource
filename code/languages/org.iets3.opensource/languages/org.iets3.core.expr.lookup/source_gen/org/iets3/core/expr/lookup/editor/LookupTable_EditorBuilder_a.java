@@ -63,13 +63,14 @@ import java.util.ArrayList;
 import com.mbeddr.mpsutil.grammarcells.runtime.StringOrSequenceQuery;
 import com.mbeddr.mpsutil.grammarcells.runtime.MultiTextActionItem;
 import jetbrains.mps.smodel.action.SNodeFactoryOperations;
+import org.iets3.core.expr.base.plugin.EditorCustomizationConfigHelper;
 import org.jetbrains.annotations.Nullable;
 import org.jetbrains.mps.openapi.util.TreeIterator;
 import jetbrains.mps.openapi.editor.cells.CellTraversalUtil;
 import de.slisson.mps.tables.runtime.cells.EditorCell_GridCell;
 import jetbrains.mps.baseLanguage.closures.runtime.Wrappers;
 import de.slisson.mps.tables.runtime.cells.TableEditor;
-import de.slisson.mps.hacks.editor.EditorCacheHacks;
+import de.slisson.mps.tables.runtime.cells.CellCaching;
 import de.slisson.mps.tables.runtime.cells.ChildsTracker;
 import de.slisson.mps.tables.runtime.cells.PartialTableExtractor;
 import de.slisson.mps.tables.runtime.gridmodel.Grid;
@@ -386,6 +387,11 @@ import org.jetbrains.mps.openapi.language.SReferenceLink;
             final SNode sourceNode = ctx.getNode();
             EditorContext editorContext = ctx.getEditorContext();
             SNode newNode = SNodeFactoryOperations.setNewChild(SNodeOperations.cast(sourceNode, CONCEPTS.LookupTable$$Y), LINKS.resultType$$6ih, null);
+            new Object() {
+              public void postprocess(SNode node) {
+                EditorCustomizationConfigHelper.getConfig().postProcessOptionalCell(EditorCustomizationConfigHelper.getIdentifier(CONCEPTS.LookupTable$$Y, LINKS.resultType$$6ih), node, editorContext);
+              }
+            }.postprocess(sourceNode);
           }
           @Override
           public SAbstractConcept getOutputConcept() {
@@ -398,7 +404,8 @@ import org.jetbrains.mps.openapi.language.SReferenceLink;
             SNode node = ctx.getNode();
             String originalText = super.getShortDescriptionText(pattern);
             EditorContext editorContext = ctx.getEditorContext();
-            return "a result type for the lookup table";
+            String description = EditorCustomizationConfigHelper.getConfig().getOptionalCellDescriptionText(EditorCustomizationConfigHelper.getIdentifier(CONCEPTS.LookupTable$$Y, LINKS.resultType$$6ih), node, originalText, editorContext);
+            return ((description != null && description.length() > 0) ? description : "add a result type for the lookup table");
           }
         });
       }
@@ -435,7 +442,7 @@ import org.jetbrains.mps.openapi.language.SReferenceLink;
 
     final Wrappers._T<TableEditor> editorCell = new Wrappers._T<TableEditor>(null);
     _FunctionTypes._void_P0_E0 creator = () -> {
-      EditorCacheHacks.noCaching(editorContext, () -> {
+      CellCaching.maybeDisableCache(node, editorContext, () -> {
         try {
 
           ChildsTracker.pushNewInstance();
@@ -851,7 +858,7 @@ import org.jetbrains.mps.openapi.language.SReferenceLink;
                       return super.canExecute(context);
                     }
                     public void execute(EditorContext ec) {
-                      List<SNode> nodesFromClipboard = CopyPasteUtil.getNodesFromClipboard(SNodeOperations.getModel(node));
+                      List<SNode> nodesFromClipboard = CopyPasteUtil.getNodesFromClipboard();
                       SNode nodeFromClipboard = (nodesFromClipboard.size() > 0 ? nodesFromClipboard.get(0) : null);
                       if (nodeFromClipboard != null && SNodeOperations.isInstanceOf(nodeFromClipboard, CONCEPTS.Expression$D_)) {
                         if ((SNodeOperations.getParent(nodeFromClipboard) != null)) {

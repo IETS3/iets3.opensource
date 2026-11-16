@@ -19,7 +19,7 @@ import org.iets3.core.expr.base.plugin.MessageValue;
 import com.mbeddr.mpsutil.interpreter.rt.InterpreterEscapeException;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations;
 import com.mbeddr.mpsutil.interpreter.rt.InterpreterRuntimeException;
-import org.iets3.core.base.behavior.ICanStoreCheckResult__BehaviorDescriptor;
+import org.iets3.core.expr.base.behavior.TraceFailures;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
 import jetbrains.mps.internal.collections.runtime.ListSequence;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
@@ -71,13 +71,14 @@ public final class ConstraintFailedTestItem__BehaviorDescriptor extends BaseBHDe
         result.setOk(false);
         result.setErrorMessage(new MessageValue("failed with InterpreterRuntimeException: " + ire.getMessage()));
         result.setException(ire);
+        // Keep the trace the interpreter had built when it threw, so that Show Trace still works.
+        result.setTrace(TraceFailures.markFailure(ire));
       } finally {
         CVH.overrideWithException = false;
       }
     }
     long end = System.currentTimeMillis();
     result.setTime(end - begin);
-    ICanStoreCheckResult__BehaviorDescriptor.storeLastResult_id3R3AIvuq5Dp.invoke(__thisNode__, result);
     return result;
   }
   /*package*/ static boolean isStructurallyValid_id78hTg1$TOs3(@NotNull SNode __thisNode__) {

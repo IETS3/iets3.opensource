@@ -197,12 +197,12 @@
       <unit id="1189396497912680673" at="8,0,36,0" name="org.iets3.analysis.base.plugin.ISolvableTaskStatus" />
     </file>
     <file name="IconContainer.java">
-      <node id="4599215742716876314" at="10,0,11,0" concept="12" trace="ICON_a0" />
-      <node id="4599215742708213887" at="11,0,12,0" concept="12" trace="ICON_a1" />
-      <node id="1189396497926392089" at="12,0,13,0" concept="12" trace="ICON_a2" />
-      <node id="1189396497913466301" at="13,0,14,0" concept="12" trace="ICON_a3" />
-      <node id="1189396497923973644" at="14,0,15,0" concept="12" trace="ICON_a4" />
-      <node id="1189396497913448376" at="15,0,16,0" concept="12" trace="ICON_a5_0" />
+      <node id="4599215742716876314" at="10,0,11,0" concept="12" trace="ICON1" />
+      <node id="4599215742708213887" at="11,0,12,0" concept="12" trace="ICON2" />
+      <node id="1189396497926392089" at="12,0,13,0" concept="12" trace="ICON3" />
+      <node id="1189396497913466301" at="13,0,14,0" concept="12" trace="ICON4" />
+      <node id="1189396497923973644" at="14,0,15,0" concept="12" trace="ICON5" />
+      <node id="1189396497913448376" at="15,0,16,0" concept="12" trace="ICON6" />
     </file>
   </root>
   <root nodeRef="r:d354209e-0bea-497f-b905-d66f72900fa8(org.iets3.analysis.base.plugin)/1189396497913155094">
@@ -1476,7 +1476,7 @@
       <unit id="9068904117262403762" at="43,0,186,0" name="org.iets3.analysis.base.plugin.ISolvableMonitorWidget" />
     </file>
     <file name="IconContainer.java">
-      <node id="2580812468020589503" at="9,0,10,0" concept="12" trace="ICON_a5" />
+      <node id="2580812468020589503" at="9,0,10,0" concept="12" trace="ICON0" />
     </file>
   </root>
   <root nodeRef="r:d354209e-0bea-497f-b905-d66f72900fa8(org.iets3.analysis.base.plugin)/9081294911658876655">

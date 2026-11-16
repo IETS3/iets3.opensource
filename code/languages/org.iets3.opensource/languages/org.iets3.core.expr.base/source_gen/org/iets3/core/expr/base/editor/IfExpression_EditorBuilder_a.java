@@ -53,6 +53,7 @@ import jetbrains.mps.openapi.editor.menus.transformation.TransformationMenuConte
 import jetbrains.mps.internal.collections.runtime.ListSequence;
 import java.util.ArrayList;
 import com.mbeddr.mpsutil.grammarcells.runtime.StringOrSequenceQuery;
+import org.iets3.core.expr.base.plugin.EditorCustomizationConfigHelper;
 import com.mbeddr.mpsutil.grammarcells.runtime.MultiTextActionItem;
 import jetbrains.mps.smodel.action.SNodeFactoryOperations;
 import org.jetbrains.annotations.Nullable;
@@ -438,7 +439,8 @@ import org.jetbrains.mps.openapi.language.SInterfaceConcept;
             public Iterable<String> query(SNode node) {
               return new StringOrSequenceQuery() {
                 public Object queryStringOrSequence() {
-                  return "else";
+                  String description = EditorCustomizationConfigHelper.getConfig().getOptionalCellTransformationText(EditorCustomizationConfigHelper.getIdentifier(CONCEPTS.IfExpression$6$, LINKS.elseSection$kbJ$), node, editorContext);
+                  return ((description != null && description.length() > 0) ? description : "else");
                 }
               }.query();
             }
@@ -454,6 +456,11 @@ import org.jetbrains.mps.openapi.language.SInterfaceConcept;
             final SNode sourceNode = ctx.getNode();
             EditorContext editorContext = ctx.getEditorContext();
             SNode newNode = SNodeFactoryOperations.setNewChild(SNodeOperations.cast(sourceNode, CONCEPTS.IfExpression$6$), LINKS.elseSection$kbJ$, null);
+            new Object() {
+              public void postprocess(SNode node) {
+                EditorCustomizationConfigHelper.getConfig().postProcessOptionalCell(EditorCustomizationConfigHelper.getIdentifier(CONCEPTS.IfExpression$6$, LINKS.elseSection$kbJ$), node, editorContext);
+              }
+            }.postprocess(sourceNode);
           }
           @Override
           public SAbstractConcept getOutputConcept() {
@@ -466,7 +473,8 @@ import org.jetbrains.mps.openapi.language.SInterfaceConcept;
             SNode node = ctx.getNode();
             String originalText = super.getShortDescriptionText(pattern);
             EditorContext editorContext = ctx.getEditorContext();
-            return "an else clause";
+            String description = EditorCustomizationConfigHelper.getConfig().getOptionalCellDescriptionText(EditorCustomizationConfigHelper.getIdentifier(CONCEPTS.IfExpression$6$, LINKS.elseSection$kbJ$), node, originalText, editorContext);
+            return ((description != null && description.length() > 0) ? description : "add an else clause");
           }
         });
       }
