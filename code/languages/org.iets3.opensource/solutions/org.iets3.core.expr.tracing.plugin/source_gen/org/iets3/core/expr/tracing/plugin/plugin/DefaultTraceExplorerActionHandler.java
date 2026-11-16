@@ -90,7 +90,7 @@ public class DefaultTraceExplorerActionHandler extends AbstractTraceExplorerActi
   }
 
   /*package*/ void buildTraceAndRun(final SNode trn) {
-    CommandWithMessage.execute("Preparing Trace of " + BaseConcept__BehaviorDescriptor.getPresentation_idhEwIMiw.invoke(trn), mpsProject.getRepository(), new Runnable() {
+    CommandWithMessage.execute("Preparing Trace of " + BaseConcept__BehaviorDescriptor.getPresentation_idhEwIMiw.invoke(trn), mpsProject, new Runnable() {
       public void run() {
         ITraceRecord rootTrace = ITraceRoot__BehaviorDescriptor.getRootTrace_id7obiejCh8Tv.invoke(trn);
         runTracer(ITraceRoot__BehaviorDescriptor.getTabTitle_id2CFPPn7rG02.invoke(trn), GlobalIconManager.getInstance().getIconFor(trn), getRoot(rootTrace));

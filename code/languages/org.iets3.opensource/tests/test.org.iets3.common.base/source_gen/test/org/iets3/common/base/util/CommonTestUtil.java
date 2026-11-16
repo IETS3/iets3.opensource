@@ -5,6 +5,22 @@ package test.org.iets3.common.base.util;
 import java.util.List;
 import de.itemis.mps.comparator.code.IgnoredProperty;
 import java.util.ArrayList;
+import org.jetbrains.mps.openapi.model.SNode;
+import jetbrains.mps.internal.collections.runtime.ListSequence;
+import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
+import org.jetbrains.mps.openapi.language.SAbstractConcept;
+import de.itemis.mps.comparator.code.MPSNodeComparisonResult;
+import de.itemis.mps.comparator.code.MPSNodeComparator;
+import jetbrains.mps.baseLanguage.closures.runtime._FunctionTypes;
+import de.itemis.mps.comparator.code.MPSComparatorOptions;
+import de.itemis.mps.comparator.code.IgnoredChild;
+import de.itemis.mps.comparator.code.IgnoredReference;
+import com.intellij.openapi.application.ApplicationManager;
+import jetbrains.mps.smodel.MPSModuleRepository;
+import jetbrains.mps.ide.MPSCoreComponents;
+import jetbrains.mps.smodel.SNodePointer;
+import de.itemis.mps.comparator.code.DiffView;
+import org.junit.Assert;
 import org.jetbrains.mps.openapi.language.SInterfaceConcept;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import org.jetbrains.mps.openapi.language.SConcept;
@@ -26,11 +42,52 @@ public class CommonTestUtil {
     return toBeIgnored;
   }
 
+
+  /**
+   * Removes all EmptyVariabilityContent nodes below the given node, so that node comparisons ignore empty lines.
+   */
+  public static void removeEmptyVariabilityContent(SNode root) {
+    ListSequence.fromList(ListSequence.fromList(SNodeOperations.getNodeDescendants(root, CONCEPTS.EmptyVariabilityContent$Xk, false, new SAbstractConcept[]{})).toList()).visitAll((it) -> SNodeOperations.deleteNode(it));
+  }
+
+  /**
+   * Asserts that both nodes are equal, ignoring EmptyVariabilityContent nodes and the common properties to ignore.
+   */
+  public static void assertNodeEqualsIgnoringEmptyVariabilityContent(SNode expected, SNode actual) {
+    removeEmptyVariabilityContent(expected);
+    removeEmptyVariabilityContent(actual);
+    {
+      final SNode expectedNode_c0g = expected;
+      final SNode actualNode_c0g = actual;
+      MPSNodeComparisonResult result_c0g = MPSNodeComparator.compare(expectedNode_c0g, actualNode_c0g, ((_FunctionTypes._return_P0_E0<MPSComparatorOptions>) () -> {
+        MPSComparatorOptions options = new MPSComparatorOptions();
+        options.compareChildren = true;
+        options.compareAnnotations = true;
+        options.verbose = false;
+        ListSequence.fromList(options.ignoredProperties).addSequence(ListSequence.fromList(commonPropertiesToIgnore()));
+        ListSequence.fromList(options.ignoredChildren).addSequence(ListSequence.fromList(ListSequence.fromList(new ArrayList<IgnoredChild>())));
+        ListSequence.fromList(options.ignoredReferences).addSequence(ListSequence.fromList(ListSequence.fromList(new ArrayList<IgnoredReference>())));
+        return options;
+      }).invoke());
+      if (!(result_c0g.areEquals())) {
+        if (!(ApplicationManager.getApplication().isHeadlessEnvironment())) {
+          {
+            MPSModuleRepository repository = MPSCoreComponents.getInstance().getPlatform().findComponent(MPSModuleRepository.class);
+            SNode input_c0g = (SNode) SNodePointer.deserialize("r:47440061-d7b2-45b0-8507-64028fc49a72(test.org.iets3.common.base.util)/659762763513220568").resolve(repository);
+            DiffView.showNonEditibleDiff(expectedNode_c0g, actualNode_c0g, result_c0g, input_c0g, repository);
+          }
+        }
+        Assert.assertTrue(result_c0g.getDescription(), false);
+      }
+    }
+  }
+
   private static final class CONCEPTS {
     /*package*/ static final SInterfaceConcept IDetectNeedToRunManually$no = MetaAdapterFactory.getInterfaceConcept(0x7b68d745a7b848b9L, 0xbd9c05c0f8725a35L, 0x6caf8a4d6c71bb55L, "org.iets3.core.base.structure.IDetectNeedToRunManually");
     /*package*/ static final SConcept SolveControl$Vn = MetaAdapterFactory.getConcept(0xdb8bd0353f5141d8L, 0x8fed954c202d18beL, 0x3a7ea77800f376f5L, "org.iets3.analysis.base.structure.SolveControl");
     /*package*/ static final SConcept FeatureModelConfiguration$nE = MetaAdapterFactory.getConcept(0x71226ee2bbc445d2L, 0xa41d20b97237156cL, 0x5cf5c0d0479ec915L, "org.iets3.variability.configuration.base.structure.FeatureModelConfiguration");
     /*package*/ static final SConcept BaseConcept$gP = MetaAdapterFactory.getConcept(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x10802efe25aL, "jetbrains.mps.lang.core.structure.BaseConcept");
+    /*package*/ static final SConcept EmptyVariabilityContent$Xk = MetaAdapterFactory.getConcept(0x9b66c5c938bf4315L, 0xa96f9f4e212c69cbL, 0x375cadc47514d908L, "org.iets3.variability.base.structure.EmptyVariabilityContent");
   }
 
   private static final class PROPS {

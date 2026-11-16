@@ -76,7 +76,6 @@ public class runAllManuallyOnModel_Action extends BaseAction {
         RunManuallyUtil.updateEditors(context, manuals);
       }
     });
-
   }
 
   private static final class CONCEPTS {

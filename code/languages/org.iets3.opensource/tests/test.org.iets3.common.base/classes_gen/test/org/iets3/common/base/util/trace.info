@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <debug-info version="2">
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1082485599095:jetbrains.mps.baseLanguage.structure.BlockStatement" />
   <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123155:jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123159:jetbrains.mps.baseLanguage.structure.IfStatement" />
   <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242864:jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
   <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242878:jetbrains.mps.baseLanguage.structure.ReturnStatement" />
   <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123157:jetbrains.mps.baseLanguage.structure.Statement" />
@@ -8,37 +10,85 @@
   <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1081236700938:jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" />
   <root nodeRef="r:47440061-d7b2-45b0-8507-64028fc49a72(test.org.iets3.common.base.util)/3612940571170611266">
     <file name="CommonTestUtil.java">
-      <node id="3612940571170611271" at="15,66,16,73" concept="1" />
-      <node id="3612940571170611278" at="16,73,17,108" concept="0" />
-      <node id="3612940571170611288" at="17,108,18,94" concept="0" />
-      <node id="3612940571170611298" at="18,94,19,115" concept="0" />
-      <node id="3612940571170611308" at="19,115,20,114" concept="0" />
-      <node id="3612940571170611318" at="20,114,21,111" concept="0" />
-      <node id="3612940571170611328" at="21,111,22,117" concept="0" />
-      <node id="3612940571170611338" at="22,117,23,121" concept="0" />
-      <node id="3612940571170611348" at="23,121,24,93" concept="0" />
-      <node id="3612940571170611356" at="24,93,25,0" concept="3" />
-      <node id="3612940571170611357" at="25,0,26,23" concept="2" />
-      <node id="3612940571170611266" at="30,0,31,0" concept="4" trace="IDetectNeedToRunManually$no" />
-      <node id="3612940571170611266" at="31,0,32,0" concept="4" trace="SolveControl$Vn" />
-      <node id="3612940571170611266" at="32,0,33,0" concept="4" trace="FeatureModelConfiguration$nE" />
-      <node id="3612940571170611266" at="33,0,34,0" concept="4" trace="BaseConcept$gP" />
-      <node id="3612940571170611266" at="37,0,38,0" concept="4" trace="__hash$uJSm" />
-      <node id="3612940571170611266" at="38,0,39,0" concept="4" trace="mode$kQof" />
-      <node id="3612940571170611266" at="39,0,40,0" concept="4" trace="__updateHash$vTMx" />
-      <node id="3612940571170611266" at="40,0,41,0" concept="4" trace="__adaptHash$54Is" />
-      <node id="3612940571170611266" at="41,0,42,0" concept="4" trace="complete$4SB6" />
-      <node id="3612940571170611266" at="42,0,43,0" concept="4" trace="hasSolverError$yxrG" />
-      <node id="3612940571170611266" at="43,0,44,0" concept="4" trace="solverErrorMessage$DYqd" />
-      <node id="3612940571170611266" at="44,0,45,0" concept="4" trace="virtualPackage$EkXl" />
-      <node id="3612940571170611269" at="15,0,28,0" concept="5" trace="commonPropertiesToIgnore#()Ljava/util/List;" />
-      <scope id="3612940571170611270" at="15,66,26,23">
+      <node id="3612940571170611271" at="31,66,32,73" concept="3" />
+      <node id="3612940571170611278" at="32,73,33,108" concept="1" />
+      <node id="3612940571170611288" at="33,108,34,94" concept="1" />
+      <node id="3612940571170611298" at="34,94,35,115" concept="1" />
+      <node id="3612940571170611308" at="35,115,36,114" concept="1" />
+      <node id="3612940571170611318" at="36,114,37,111" concept="1" />
+      <node id="3612940571170611328" at="37,111,38,117" concept="1" />
+      <node id="3612940571170611338" at="38,117,39,121" concept="1" />
+      <node id="3612940571170611348" at="39,121,40,93" concept="1" />
+      <node id="3612940571170611356" at="40,93,41,0" concept="5" />
+      <node id="3612940571170611357" at="41,0,42,23" concept="4" />
+      <node id="659762763513084957" at="49,64,50,219" concept="1" />
+      <node id="659762763513214631" at="56,100,57,44" concept="1" />
+      <node id="659762763513214634" at="57,44,58,42" concept="1" />
+      <node id="659762763513220568" at="59,5,60,46" concept="3" />
+      <node id="659762763513220568" at="60,46,61,42" concept="3" />
+      <node id="659762763513220568" at="62,164,63,66" concept="3" />
+      <node id="659762763513220568" at="63,66,64,39" concept="1" />
+      <node id="659762763513220568" at="64,39,65,42" concept="1" />
+      <node id="659762763513220568" at="65,42,66,32" concept="1" />
+      <node id="659762763513220568" at="66,32,67,120" concept="1" />
+      <node id="659762763513220568" at="67,120,68,144" concept="1" />
+      <node id="659762763513220568" at="68,144,69,150" concept="1" />
+      <node id="659762763513220568" at="69,150,70,23" concept="4" />
+      <node id="659762763513220568" at="74,11,75,132" concept="3" />
+      <node id="659762763513220568" at="75,132,76,177" concept="3" />
+      <node id="659762763513220568" at="76,177,77,110" concept="1" />
+      <node id="659762763513220568" at="79,9,80,62" concept="1" />
+      <node id="3612940571170611266" at="86,0,87,0" concept="6" trace="IDetectNeedToRunManually$no" />
+      <node id="3612940571170611266" at="87,0,88,0" concept="6" trace="SolveControl$Vn" />
+      <node id="3612940571170611266" at="88,0,89,0" concept="6" trace="FeatureModelConfiguration$nE" />
+      <node id="3612940571170611266" at="89,0,90,0" concept="6" trace="BaseConcept$gP" />
+      <node id="3612940571170611266" at="90,0,91,0" concept="6" trace="EmptyVariabilityContent$Xk" />
+      <node id="3612940571170611266" at="94,0,95,0" concept="6" trace="__hash$uJSm" />
+      <node id="3612940571170611266" at="95,0,96,0" concept="6" trace="mode$kQof" />
+      <node id="3612940571170611266" at="96,0,97,0" concept="6" trace="__updateHash$vTMx" />
+      <node id="3612940571170611266" at="97,0,98,0" concept="6" trace="__adaptHash$54Is" />
+      <node id="3612940571170611266" at="98,0,99,0" concept="6" trace="complete$4SB6" />
+      <node id="3612940571170611266" at="99,0,100,0" concept="6" trace="hasSolverError$yxrG" />
+      <node id="3612940571170611266" at="100,0,101,0" concept="6" trace="solverErrorMessage$DYqd" />
+      <node id="3612940571170611266" at="101,0,102,0" concept="6" trace="virtualPackage$EkXl" />
+      <node id="659762763513084933" at="49,0,52,0" concept="7" trace="removeEmptyVariabilityContent#(Lorg/jetbrains/mps/openapi/model/SNode;)V" />
+      <node id="659762763513220568" at="73,77,78,11" concept="0" />
+      <node id="659762763513220568" at="72,38,79,9" concept="2" />
+      <node id="659762763513220568" at="61,42,71,19" concept="3" />
+      <node id="659762763513220568" at="71,19,81,7" concept="2" />
+      <node id="3612940571170611269" at="31,0,44,0" concept="7" trace="commonPropertiesToIgnore#()Ljava/util/List;" />
+      <node id="659762763513220568" at="58,42,82,5" concept="0" />
+      <node id="659762763513214620" at="56,0,84,0" concept="7" trace="assertNodeEqualsIgnoringEmptyVariabilityContent#(Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;)V" />
+      <scope id="659762763513084939" at="49,64,50,219" />
+      <scope id="659762763513084933" at="49,0,52,0">
+        <var name="root" id="659762763513084936" />
+      </scope>
+      <scope id="659762763513220568" at="74,11,77,110">
+        <var name="input_c0g" id="659762763513220568" />
+        <var name="repository" id="659762763513220568" />
+      </scope>
+      <scope id="659762763513220568" at="73,77,78,11" />
+      <scope id="659762763513220568" at="62,164,70,23">
+        <var name="options" id="659762763513220568" />
+      </scope>
+      <scope id="659762763513220568" at="72,38,80,62" />
+      <scope id="3612940571170611270" at="31,66,42,23">
         <var name="toBeIgnored" id="3612940571170611272" />
       </scope>
-      <scope id="3612940571170611269" at="15,0,28,0" />
-      <unit id="3612940571170611266" at="29,0,35,0" name="test.org.iets3.common.base.util.CommonTestUtil$CONCEPTS" />
-      <unit id="3612940571170611266" at="36,0,46,0" name="test.org.iets3.common.base.util.CommonTestUtil$PROPS" />
-      <unit id="3612940571170611266" at="13,0,47,0" name="test.org.iets3.common.base.util.CommonTestUtil" />
+      <scope id="3612940571170611269" at="31,0,44,0" />
+      <scope id="659762763513220568" at="59,5,81,7">
+        <var name="actualNode_c0g" id="659762763513220568" />
+        <var name="expectedNode_c0g" id="659762763513220568" />
+        <var name="result_c0g" id="659762763513220568" />
+      </scope>
+      <scope id="659762763513214628" at="56,100,82,5" />
+      <scope id="659762763513214620" at="56,0,84,0">
+        <var name="actual" id="659762763513214625" />
+        <var name="expected" id="659762763513214623" />
+      </scope>
+      <unit id="3612940571170611266" at="85,0,92,0" name="test.org.iets3.common.base.util.CommonTestUtil$CONCEPTS" />
+      <unit id="3612940571170611266" at="93,0,103,0" name="test.org.iets3.common.base.util.CommonTestUtil$PROPS" />
+      <unit id="3612940571170611266" at="29,0,104,0" name="test.org.iets3.common.base.util.CommonTestUtil" />
     </file>
   </root>
 </debug-info>

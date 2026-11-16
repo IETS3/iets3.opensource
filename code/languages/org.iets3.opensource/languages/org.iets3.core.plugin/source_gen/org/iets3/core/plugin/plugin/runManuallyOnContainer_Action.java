@@ -89,8 +89,6 @@ public class runManuallyOnContainer_Action extends BaseAction {
         RunManuallyUtil.updateEditors(context, manuallyRunNodes);
       }
     });
-
-
   }
 
   private static final class CONCEPTS {

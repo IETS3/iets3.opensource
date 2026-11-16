@@ -12,6 +12,7 @@ import jetbrains.mps.lang.smodel.ConceptSwitchIndexBuilder;
 import jetbrains.mps.smodel.adapter.ids.MetaIdFactory;
 
 public final class BehaviorAspectDescriptor extends BaseBehaviorAspectDescriptor {
+  private final BHDescriptor myRecordingManualCheck__BehaviorDescriptor = new RecordingManualCheck__BehaviorDescriptor();
   private final BHDescriptor myNixLiteral__BehaviorDescriptor = new NixLiteral__BehaviorDescriptor();
 
   public BehaviorAspectDescriptor() {
@@ -23,9 +24,11 @@ public final class BehaviorAspectDescriptor extends BaseBehaviorAspectDescriptor
     switch (conceptIndex.index(cncpt)) {
       case 0:
         return myNixLiteral__BehaviorDescriptor;
+      case 1:
+        return myRecordingManualCheck__BehaviorDescriptor;
       default:
     }
     return null;
   }
-  private static final ConceptSwitchIndex conceptIndex = new ConceptSwitchIndexBuilder().put(MetaIdFactory.conceptId(0xb80fab4e53f2409cL, 0x81d83475855e0e42L, 0x7a72bbb1ba989eceL)).seal();
+  private static final ConceptSwitchIndex conceptIndex = new ConceptSwitchIndexBuilder().put(MetaIdFactory.conceptId(0xb80fab4e53f2409cL, 0x81d83475855e0e42L, 0x7a72bbb1ba989eceL), MetaIdFactory.conceptId(0xb80fab4e53f2409cL, 0x81d83475855e0e42L, 0x257bf7f218fe313L)).seal();
 }
