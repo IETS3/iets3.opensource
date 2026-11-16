@@ -589,27 +589,24 @@
       <node id="5955298286239375988" at="24,50,25,48" concept="8" />
       <node id="5955298286239375988" at="27,68,28,102" concept="8" />
       <node id="5955298286239375988" at="30,27,31,17" concept="8" />
-      <node id="5955298286239375988" at="33,39,34,16" concept="8" />
-      <node id="5955298286239386756" at="36,66,37,73" concept="7" />
-      <node id="5955298286239386756" at="37,73,38,54" concept="3" />
-      <node id="5955298286239386756" at="38,54,39,26" concept="8" />
-      <node id="5955298286239375988" at="43,0,44,0" concept="9" trace="constructor$F6Xq" />
-      <node id="5955298286239375988" at="44,0,45,0" concept="9" trace="declaration$4bEv" />
-      <node id="5955298286239375988" at="48,0,49,0" concept="9" trace="AlgebraicConstructorType$ja" />
-      <node id="5955298286239375988" at="49,0,50,0" concept="9" trace="AlgebraicType$Df" />
+      <node id="5955298286239386756" at="33,66,34,73" concept="7" />
+      <node id="5955298286239386756" at="34,73,35,54" concept="3" />
+      <node id="5955298286239386756" at="35,54,36,26" concept="8" />
+      <node id="5955298286239375988" at="40,0,41,0" concept="9" trace="constructor$F6Xq" />
+      <node id="5955298286239375988" at="41,0,42,0" concept="9" trace="declaration$4bEv" />
+      <node id="5955298286239375988" at="45,0,46,0" concept="9" trace="AlgebraicConstructorType$ja" />
+      <node id="5955298286239375988" at="46,0,47,0" concept="9" trace="AlgebraicType$Df" />
       <node id="5955298286239375988" at="19,0,21,0" concept="1" trace="supertypeOf_AlgebraicCaseType_SubtypingRule#()V" />
       <node id="5955298286239375988" at="21,0,24,0" concept="6" trace="getSubOrSuperType#(Lorg/jetbrains/mps/openapi/model/SNode;Ljetbrains/mps/typesystem/inference/TypeCheckingContext;Ljetbrains/mps/lang/typesystem/runtime/IsApplicableStatus;)Lorg/jetbrains/mps/openapi/model/SNode;" />
       <node id="5955298286239375988" at="24,0,27,0" concept="6" trace="getApplicableConcept#()Lorg/jetbrains/mps/openapi/language/SAbstractConcept;" />
       <node id="5955298286239375988" at="27,0,30,0" concept="6" trace="isApplicableAndPattern#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljetbrains/mps/lang/typesystem/runtime/IsApplicableStatus;" />
       <node id="5955298286239375988" at="30,0,33,0" concept="6" trace="isWeak#()Z" />
-      <node id="5955298286239375988" at="33,0,36,0" concept="6" trace="surelyKeepsConcept#()Z" />
-      <node id="5955298286239386756" at="36,0,41,0" concept="10" trace="createAlgebraicType_j5ot3q_a0a1#(Lorg/jetbrains/mps/openapi/model/SNode;)Lorg/jetbrains/mps/openapi/model/SNode;" />
+      <node id="5955298286239386756" at="33,0,38,0" concept="10" trace="createAlgebraicType_j5ot3q_a0a1#(Lorg/jetbrains/mps/openapi/model/SNode;)Lorg/jetbrains/mps/openapi/model/SNode;" />
       <scope id="5955298286239375988" at="19,56,19,56" />
       <scope id="5955298286239375989" at="21,113,22,167" />
       <scope id="5955298286239375988" at="24,50,25,48" />
       <scope id="5955298286239375988" at="27,68,28,102" />
       <scope id="5955298286239375988" at="30,27,31,17" />
-      <scope id="5955298286239375988" at="33,39,34,16" />
       <scope id="5955298286239375988" at="19,0,21,0" />
       <scope id="5955298286239375988" at="21,0,24,0">
         <var name="act" id="5955298286239375988" />
@@ -621,16 +618,15 @@
         <var name="argument" id="5955298286239375988" />
       </scope>
       <scope id="5955298286239375988" at="30,0,33,0" />
-      <scope id="5955298286239375988" at="33,0,36,0" />
-      <scope id="5955298286239386756" at="36,66,39,26">
+      <scope id="5955298286239386756" at="33,66,36,26">
         <var name="n0" id="5955298286239386756" />
       </scope>
-      <scope id="5955298286239386756" at="36,0,41,0">
+      <scope id="5955298286239386756" at="33,0,38,0">
         <var name="p0" id="5955298286239386756" />
       </scope>
-      <unit id="5955298286239375988" at="42,0,46,0" name="org.iets3.core.expr.adt.typesystem.supertypeOf_AlgebraicCaseType_SubtypingRule$LINKS" />
-      <unit id="5955298286239375988" at="47,0,51,0" name="org.iets3.core.expr.adt.typesystem.supertypeOf_AlgebraicCaseType_SubtypingRule$CONCEPTS" />
-      <unit id="5955298286239375988" at="18,0,52,0" name="org.iets3.core.expr.adt.typesystem.supertypeOf_AlgebraicCaseType_SubtypingRule" />
+      <unit id="5955298286239375988" at="39,0,43,0" name="org.iets3.core.expr.adt.typesystem.supertypeOf_AlgebraicCaseType_SubtypingRule$LINKS" />
+      <unit id="5955298286239375988" at="44,0,48,0" name="org.iets3.core.expr.adt.typesystem.supertypeOf_AlgebraicCaseType_SubtypingRule$CONCEPTS" />
+      <unit id="5955298286239375988" at="18,0,49,0" name="org.iets3.core.expr.adt.typesystem.supertypeOf_AlgebraicCaseType_SubtypingRule" />
     </file>
   </root>
   <root nodeRef="r:55ae05df-8f25-48f0-a826-0655584ce598(org.iets3.core.expr.adt.typesystem)/5955298286239453760">

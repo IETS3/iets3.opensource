@@ -48,7 +48,7 @@ public class QuantityIsStillOfferedInCompletionMenu_Test extends BaseTransformat
             matches = matches + 1;
           }
         }
-        Assert.assertEquals("Quantity 'quax' must still be offered exactly once in the code completion menu", 1, matches);
+        Assert.assertEquals("Quantity 'quax' must still be offered exactly once in the code completion menu", Integer.valueOf(1), Integer.valueOf(matches));
       });
     }
   }

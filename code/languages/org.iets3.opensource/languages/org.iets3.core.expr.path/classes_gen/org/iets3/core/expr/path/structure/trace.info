@@ -12,7 +12,7 @@
       <unit at="11,0,59,0" name="org.iets3.core.expr.path.structure.ConceptPresentationAspectImpl" />
     </file>
     <file name="LanguageConceptSwitch.java">
-      <unit at="10,0,36,0" name="org.iets3.core.expr.path.structure.LanguageConceptSwitch" />
+      <unit at="12,0,44,0" name="org.iets3.core.expr.path.structure.LanguageConceptSwitch" />
     </file>
     <file name="StructureAspectDescriptor.java">
       <unit at="14,0,106,0" name="org.iets3.core.expr.path.structure.StructureAspectDescriptor" />
@@ -31,8 +31,8 @@
       <scope id="4886573260946854791" at="41,43,46,31" />
     </file>
     <file name="LanguageConceptSwitch.java">
-      <node id="4886573260946854791" at="15,0,16,0" concept="5" trace="IPathPart" />
-      <node id="4886573260946854791" at="22,46,23,48" concept="0" />
+      <node id="4886573260946854791" at="17,0,18,0" concept="5" trace="IPathPart" />
+      <node id="4886573260946854791" at="24,46,25,48" concept="0" />
     </file>
     <file name="StructureAspectDescriptor.java">
       <node id="4886573260946854791" at="18,0,19,0" concept="1" trace="myConceptIPathPart" />
@@ -64,8 +64,8 @@
       <scope id="5046612484462007436" at="29,53,34,41" />
     </file>
     <file name="LanguageConceptSwitch.java">
-      <node id="5046612484462007436" at="13,0,14,0" concept="5" trace="IComparablePathPart" />
-      <node id="5046612484462007436" at="20,58,21,58" concept="0" />
+      <node id="5046612484462007436" at="15,0,16,0" concept="5" trace="IComparablePathPart" />
+      <node id="5046612484462007436" at="22,58,23,58" concept="0" />
     </file>
     <file name="StructureAspectDescriptor.java">
       <node id="5046612484462007436" at="16,0,17,0" concept="1" trace="myConceptIComparablePathPart" />
@@ -97,8 +97,8 @@
       <scope id="7814222126785170799" at="23,53,28,41" />
     </file>
     <file name="LanguageConceptSwitch.java">
-      <node id="7814222126785170799" at="12,0,13,0" concept="5" trace="ICanHaveMembersType" />
-      <node id="7814222126785170799" at="19,116,20,58" concept="0" />
+      <node id="7814222126785170799" at="14,0,15,0" concept="5" trace="ICanHaveMembersType" />
+      <node id="7814222126785170799" at="21,116,22,58" concept="0" />
     </file>
     <file name="StructureAspectDescriptor.java">
       <node id="7814222126785170799" at="15,0,16,0" concept="1" trace="myConceptICanHaveMembersType" />
@@ -129,8 +129,8 @@
       <scope id="7814222126785170970" at="35,41,40,29" />
     </file>
     <file name="LanguageConceptSwitch.java">
-      <node id="7814222126785170970" at="14,0,15,0" concept="5" trace="IMember" />
-      <node id="7814222126785170970" at="21,58,22,46" concept="0" />
+      <node id="7814222126785170970" at="16,0,17,0" concept="5" trace="IMember" />
+      <node id="7814222126785170970" at="23,58,24,46" concept="0" />
     </file>
     <file name="StructureAspectDescriptor.java">
       <node id="7814222126785170970" at="17,0,18,0" concept="1" trace="myConceptIMember" />
@@ -164,8 +164,8 @@
       <scope id="7814222126786013807" at="47,45,54,33" />
     </file>
     <file name="LanguageConceptSwitch.java">
-      <node id="7814222126786013807" at="16,0,17,0" concept="5" trace="PathElement" />
-      <node id="7814222126786013807" at="23,48,24,50" concept="0" />
+      <node id="7814222126786013807" at="18,0,19,0" concept="5" trace="PathElement" />
+      <node id="7814222126786013807" at="25,48,26,50" concept="0" />
     </file>
     <file name="StructureAspectDescriptor.java">
       <node id="7814222126786013807" at="19,0,20,0" concept="1" trace="myConceptPathElement" />

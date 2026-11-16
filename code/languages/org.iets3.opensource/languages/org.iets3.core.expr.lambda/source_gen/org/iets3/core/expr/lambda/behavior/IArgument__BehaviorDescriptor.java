@@ -7,7 +7,6 @@ import org.jetbrains.mps.openapi.language.SAbstractConcept;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import org.jetbrains.mps.openapi.model.SNode;
 import java.util.Set;
@@ -20,7 +19,6 @@ import jetbrains.mps.internal.collections.runtime.Sequence;
 import java.util.Collections;
 import jetbrains.mps.internal.collections.runtime.SetSequence;
 import java.util.HashSet;
-import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 import org.jetbrains.mps.openapi.language.SProperty;
@@ -29,16 +27,14 @@ import org.jetbrains.mps.openapi.language.SContainmentLink;
 public final class IArgument__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getInterfaceConcept(0x9464fa065ab9409bL, 0x927464ab29588457L, 0x68d69d36ba520709L, "org.iets3.core.expr.lambda.structure.IArgument");
 
-  public static final SMethod<String> getVariableName_id7BxfuU7QrrQ = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("getVariableName").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(8782368843039880950L).languageId(0xb66a309a6e1a7290L, 0xcfaa4966b7d54b69L).build2();
-  public static final SMethod<SNode> getVariableType_id7BxfuU7QrsR = new SMethodBuilder<SNode>(new SJavaCompoundTypeImpl((Class<SNode>) ((Class) Object.class))).name("getVariableType").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(8782368843039881015L).languageId(0xb66a309a6e1a7290L, 0xcfaa4966b7d54b69L).build2();
-  public static final SMethod<Iterable<SNode>> getVariableConstraints_id7BxfuU7Qruw = new SMethodBuilder<Iterable<SNode>>(new SJavaCompoundTypeImpl((Class<Iterable<SNode>>) ((Class) Object.class))).name("getVariableConstraints").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(8782368843039881120L).languageId(0xb66a309a6e1a7290L, 0xcfaa4966b7d54b69L).build2();
-  public static final SMethod<Set<SNode>> getDependentValues_id1xFBUnwWaWp = new SMethodBuilder<Set<SNode>>(new SJavaCompoundTypeImpl((Class<Set<SNode>>) ((Class) Object.class))).name("getDependentValues").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(1759675614210600729L).languageId(0xb66a309a6e1a7290L, 0xcfaa4966b7d54b69L).build2();
-  public static final SMethod<Boolean> overrideDefaultAllowUmlaute_id5D8v3P4jYKp = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("overrideDefaultUmlaute").modifiers(9, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(6505586264317619225L).languageId(0xbd9c05c0f8725a35L, 0x7b68d745a7b848b9L).build2();
+  public static final SMethod<String> getVariableName_id7BxfuU7QrrQ = new SMethodBuilder<>(String.class).name("getVariableName").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(8782368843039880950L).languageId(0xb66a309a6e1a7290L, 0xcfaa4966b7d54b69L).build2();
+  public static final SMethod<SNode> getVariableType_id7BxfuU7QrsR = new SMethodBuilder<>(SNode.class).name("getVariableType").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(8782368843039881015L).languageId(0xb66a309a6e1a7290L, 0xcfaa4966b7d54b69L).build2();
+  public static final SMethod<Iterable<SNode>> getVariableConstraints_id7BxfuU7Qruw = new SMethodBuilder<>((Class<Iterable<SNode>>) ((Class) Object.class)).name("getVariableConstraints").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(8782368843039881120L).languageId(0xb66a309a6e1a7290L, 0xcfaa4966b7d54b69L).build2();
+  public static final SMethod<Set<SNode>> getDependentValues_id1xFBUnwWaWp = new SMethodBuilder<>((Class<Set<SNode>>) ((Class) Object.class)).name("getDependentValues").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(1759675614210600729L).languageId(0xb66a309a6e1a7290L, 0xcfaa4966b7d54b69L).build2();
+  public static final SMethod<Boolean> overrideDefaultAllowUmlaute_id5D8v3P4jYKp = new SMethodBuilder<>(Boolean.TYPE).name("overrideDefaultUmlaute").modifiers(9, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(6505586264317619225L).languageId(0xbd9c05c0f8725a35L, 0x7b68d745a7b848b9L).build2();
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(getVariableName_id7BxfuU7QrrQ, getVariableType_id7BxfuU7QrsR, getVariableConstraints_id7BxfuU7Qruw, getDependentValues_id1xFBUnwWaWp, overrideDefaultAllowUmlaute_id5D8v3P4jYKp);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(getVariableName_id7BxfuU7QrrQ, getVariableType_id7BxfuU7QrsR, getVariableConstraints_id7BxfuU7Qruw, getDependentValues_id1xFBUnwWaWp, overrideDefaultAllowUmlaute_id5D8v3P4jYKp);
 
-  private static void ___init___(@NotNull SNode __thisNode__) {
-  }
 
   /*package*/ static String getVariableName_id7BxfuU7QrrQ(@NotNull SNode __thisNode__) {
     return SPropertyOperations.getString(__thisNode__, PROPS.name$MnvL);
@@ -59,10 +55,6 @@ public final class IArgument__BehaviorDescriptor extends BaseBHDescriptor {
   /*package*/ IArgument__BehaviorDescriptor() {
   }
 
-  @Override
-  protected void initNode(@NotNull SNode node, @NotNull SConstructor constructor, @Nullable Object[] parameters) {
-    ___init___(node);
-  }
 
   @Override
   protected <T> T invokeSpecial0(@NotNull SNode node, @NotNull SMethod<T> method, @Nullable Object[] parameters) {

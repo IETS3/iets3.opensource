@@ -25,6 +25,9 @@
     <import index="87nw" ref="r:ca2ab6bb-f6e7-4c0f-a88c-b78b9b31fff3(de.slisson.mps.richtext.structure)" implicit="true" />
   </imports>
   <registry>
+    <language id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior">
+      <concept id="3235159848334022093" name="jetbrains.mps.lang.behavior.structure.Node_ConceptMethodCall" flags="nn" index="3zqWPK" />
+    </language>
     <language id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor">
       <concept id="5991739802479784073" name="jetbrains.mps.lang.editor.structure.MenuTypeDefault" flags="ng" index="22hDWj" />
       <concept id="2000375450116423800" name="jetbrains.mps.lang.editor.structure.SubstituteMenu" flags="ng" index="22mcaB" />
@@ -278,7 +281,6 @@
       <concept id="1177026924588" name="jetbrains.mps.lang.smodel.structure.RefConcept_Reference" flags="nn" index="chp4Y">
         <reference id="1177026940964" name="conceptDeclaration" index="cht4Q" />
       </concept>
-      <concept id="1179409122411" name="jetbrains.mps.lang.smodel.structure.Node_ConceptMethodCall" flags="nn" index="2qgKlT" />
       <concept id="7453996997717780434" name="jetbrains.mps.lang.smodel.structure.Node_GetSConceptOperation" flags="nn" index="2yIwOk" />
       <concept id="2396822768958367367" name="jetbrains.mps.lang.smodel.structure.AbstractTypeCastExpression" flags="nn" index="$5XWr">
         <child id="6733348108486823193" name="leftExpression" index="1m5AlR" />
@@ -978,7 +980,7 @@
                                   <ref role="cht4Q" to="tuf9:6zaFu4oS_ac" resolve="FoundWordAssResult" />
                                 </node>
                               </node>
-                              <node concept="2qgKlT" id="lp3OKvf7ej" role="2OqNvi">
+                              <node concept="3zqWPK" id="5DJjBfj0bQK" role="2OqNvi">
                                 <ref role="37wK5l" to="d2dp:6zaFu4oTy25" resolve="replace" />
                               </node>
                             </node>
@@ -1077,7 +1079,7 @@
                         <ref role="3Tt5mk" to="tuf9:6zaFu4oS_bx" resolve="word" />
                       </node>
                     </node>
-                    <node concept="2qgKlT" id="6zaFu4oSSBv" role="2OqNvi">
+                    <node concept="3zqWPK" id="5DJjBfj0bQM" role="2OqNvi">
                       <ref role="37wK5l" to="tbr6:ehGfXvI_DB" resolve="getText" />
                     </node>
                   </node>

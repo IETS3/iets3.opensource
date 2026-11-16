@@ -40,7 +40,7 @@ public enum JUnitInterpreterRunTypes implements JUnitInterpreterRunType {
   PROJECT() {
     @Override
     public List<ITestNodeWrapper> doCollect(JUnitInterpreterSettings_Configuration configuration, MPSProject project, ProgressMonitor monitor) {
-      return new ProjectTestCollector(project, monitor, false).collect();
+      return new ProjectTestCollector(project).collect(monitor, false);
     }
     @Override
     public String check(JUnitInterpreterSettings_Configuration configuration, MPSProject project) {
@@ -52,7 +52,7 @@ public enum JUnitInterpreterRunTypes implements JUnitInterpreterRunType {
       return null;
     }
     public boolean hasTests(JUnitInterpreterSettings_Configuration configuration, MPSProject project) {
-      return ListSequence.fromList(new ProjectTestCollector(project, null, true).collect()).isNotEmpty();
+      return ListSequence.fromList(new ProjectTestCollector(project).collect(null, true)).isNotEmpty();
     }
 
   },
@@ -63,7 +63,7 @@ public enum JUnitInterpreterRunTypes implements JUnitInterpreterRunType {
       if (module == null) {
         return ListSequence.fromList(new ArrayList<ITestNodeWrapper>());
       }
-      return new ModuleTestCollector(module, monitor, false).collect();
+      return new ModuleTestCollector(project, module).collect(monitor, false);
     }
     public String check(JUnitInterpreterSettings_Configuration configuration, MPSProject project) {
       if (configuration.getModuleReference() == null) {
@@ -86,7 +86,7 @@ public enum JUnitInterpreterRunTypes implements JUnitInterpreterRunType {
       if (module == null) {
         return false;
       }
-      return ListSequence.fromList(new ModuleTestCollector(module, null, true).collect()).isNotEmpty();
+      return ListSequence.fromList(new ModuleTestCollector(project, module).collect(null, true)).isNotEmpty();
     }
 
   },
@@ -97,7 +97,7 @@ public enum JUnitInterpreterRunTypes implements JUnitInterpreterRunType {
       if (model == null) {
         return ListSequence.fromList(new ArrayList<ITestNodeWrapper>());
       }
-      return new ModelTestCollector(model, monitor, false).collect();
+      return new ModelTestCollector(project, model).collect(monitor, false);
     }
     @Override
     public String check(JUnitInterpreterSettings_Configuration configuration, MPSProject project) {
@@ -123,7 +123,7 @@ public enum JUnitInterpreterRunTypes implements JUnitInterpreterRunType {
       if (model == null) {
         return false;
       }
-      return ListSequence.fromList(new ModelTestCollector(model, null, true).collect()).isNotEmpty();
+      return ListSequence.fromList(new ModelTestCollector(project, model).collect(null, true)).isNotEmpty();
     }
 
   },
@@ -148,7 +148,7 @@ public enum JUnitInterpreterRunTypes implements JUnitInterpreterRunType {
                 return "The module's " + SNodeOperations.present(module) + " compile output is not managed by MPS.";
               }
             }
-            if (testNode == null || TestNodeWrapperFactory.tryToWrap(testNode) == null) {
+            if (testNode == null || new TestNodeWrapperFactory(project.getPlatform()).tryToWrap(testNode) == null) {
               return "Could not find test case for id " + testCase + ".";
             }
           }
@@ -183,7 +183,7 @@ public enum JUnitInterpreterRunTypes implements JUnitInterpreterRunType {
                 return "The module's " + SNodeOperations.present(module) + " compile output is not managed by MPS.";
               }
             }
-            if (testMethodNode == null || TestNodeWrapperFactory.tryToWrap(testMethodNode) == null) {
+            if (testMethodNode == null || new TestNodeWrapperFactory(project.getPlatform()).tryToWrap(testMethodNode) == null) {
               return "Could not find test method for id " + method + ".";
             }
           }

@@ -7,26 +7,22 @@ import org.jetbrains.mps.openapi.language.SAbstractConcept;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import org.jetbrains.mps.openapi.model.SNode;
 import java.util.List;
 import java.util.Arrays;
 import org.jetbrains.annotations.NotNull;
-import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 
 public final class IUnit__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getInterfaceConcept(0xcb91a38e738a4811L, 0xa96d448d08f526faL, 0x73b48a125b0d40ceL, "org.iets3.core.expr.typetags.units.structure.IUnit");
 
-  public static final SMethod<Boolean> allowNonIdentifierNames_id4SwD0JT7m0l = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("allowNonIdentifierNames").modifiers(9, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5629679905544167445L).languageId(0xbd9c05c0f8725a35L, 0x7b68d745a7b848b9L).build2();
-  public static final SMethod<SNode> specification_id1KUmgSF_6QP = new SMethodBuilder<SNode>(new SJavaCompoundTypeImpl((Class<SNode>) ((Class) Object.class))).name("specification").modifiers(12, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(2034036099106762165L).languageId(0xa96d448d08f526faL, 0xcb91a38e738a4811L).build2();
+  public static final SMethod<Boolean> allowNonIdentifierNames_id4SwD0JT7m0l = new SMethodBuilder<>(Boolean.TYPE).name("allowNonIdentifierNames").modifiers(9, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5629679905544167445L).languageId(0xbd9c05c0f8725a35L, 0x7b68d745a7b848b9L).build2();
+  public static final SMethod<SNode> specification_id1KUmgSF_6QP = new SMethodBuilder<>(SNode.class).name("specification").modifiers(12, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(2034036099106762165L).languageId(0xa96d448d08f526faL, 0xcb91a38e738a4811L).build2();
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(allowNonIdentifierNames_id4SwD0JT7m0l, specification_id1KUmgSF_6QP);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(allowNonIdentifierNames_id4SwD0JT7m0l, specification_id1KUmgSF_6QP);
 
-  private static void ___init___(@NotNull SNode __thisNode__) {
-  }
 
   /*package*/ static boolean allowNonIdentifierNames_id4SwD0JT7m0l(@NotNull SAbstractConcept __thisConcept__) {
     return true;
@@ -35,10 +31,6 @@ public final class IUnit__BehaviorDescriptor extends BaseBHDescriptor {
   /*package*/ IUnit__BehaviorDescriptor() {
   }
 
-  @Override
-  protected void initNode(@NotNull SNode node, @NotNull SConstructor constructor, @Nullable Object[] parameters) {
-    ___init___(node);
-  }
 
   @Override
   protected <T> T invokeSpecial0(@NotNull SNode node, @NotNull SMethod<T> method, @Nullable Object[] parameters) {

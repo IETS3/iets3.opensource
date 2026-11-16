@@ -7,7 +7,6 @@ import org.jetbrains.mps.openapi.language.SAbstractConcept;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import org.jetbrains.mps.openapi.model.SNode;
 import java.util.List;
@@ -17,7 +16,6 @@ import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
 import jetbrains.mps.internal.collections.runtime.ListSequence;
 import jetbrains.mps.internal.collections.runtime.Sequence;
-import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 import jetbrains.mps.smodel.builder.SNodeBuilder;
@@ -28,15 +26,13 @@ import org.jetbrains.mps.openapi.language.SConcept;
 public final class DataIsInTarget__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getConcept(0xb25b8ad14d3d4e45L, 0x8c7872091b39fddaL, 0x3886d6f8346755b7L, "org.iets3.core.expr.data.structure.DataIsInTarget");
 
-  public static final SMethod<String> renderReadable_id6kR0qIbI2yi = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("renderReadable").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(7293299957844945042L).languageId(0xb66a309a6e1a7290L, 0xcfaa4966b7d54b69L).build2();
-  public static final SMethod<SNode> reduce_id4CksDrmwwdX = new SMethodBuilder<SNode>(new SJavaCompoundTypeImpl((Class<SNode>) ((Class) Object.class))).name("reduce").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5338017450510386045L).languageId(0x8c7872091b39fddaL, 0xb25b8ad14d3d4e45L).build2();
-  /*package*/ static final SMethod<SNode> process_id4CksDrmwweS = new SMethodBuilder<SNode>(new SJavaCompoundTypeImpl((Class<SNode>) ((Class) Object.class))).name("process").modifiers(0, AccessPrivileges.PRIVATE).concept(CONCEPT).baseMethodId(5338017450510386104L).languageId(0x8c7872091b39fddaL, 0xb25b8ad14d3d4e45L).build2(SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""), SMethodBuilder.createJavaParameter((Class<Iterable<SNode>>) ((Class) Object.class), ""));
-  /*package*/ static final SMethod<SNode> single_id7rdMSLlhiZ5 = new SMethodBuilder<SNode>(new SJavaCompoundTypeImpl((Class<SNode>) ((Class) Object.class))).name("single").modifiers(0, AccessPrivileges.PRIVATE).concept(CONCEPT).baseMethodId(8560722270287638469L).languageId(0x8c7872091b39fddaL, 0xb25b8ad14d3d4e45L).build2(SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""), SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""));
+  public static final SMethod<String> renderReadable_id6kR0qIbI2yi = new SMethodBuilder<>(String.class).name("renderReadable").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(7293299957844945042L).languageId(0xb66a309a6e1a7290L, 0xcfaa4966b7d54b69L).build2();
+  public static final SMethod<SNode> reduce_id4CksDrmwwdX = new SMethodBuilder<>(SNode.class).name("reduce").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5338017450510386045L).languageId(0x8c7872091b39fddaL, 0xb25b8ad14d3d4e45L).build2();
+  /*package*/ static final SMethod<SNode> process_id4CksDrmwweS = new SMethodBuilder<>(SNode.class).name("process").modifiers(0, AccessPrivileges.PRIVATE).concept(CONCEPT).baseMethodId(5338017450510386104L).languageId(0x8c7872091b39fddaL, 0xb25b8ad14d3d4e45L).build2(SMethodBuilder.createJavaParameter(SNode.class, "ctx"), SMethodBuilder.createJavaParameter((Class<Iterable<SNode>>) ((Class) Object.class), "remaining"));
+  /*package*/ static final SMethod<SNode> single_id7rdMSLlhiZ5 = new SMethodBuilder<>(SNode.class).name("single").modifiers(0, AccessPrivileges.PRIVATE).concept(CONCEPT).baseMethodId(8560722270287638469L).languageId(0x8c7872091b39fddaL, 0xb25b8ad14d3d4e45L).build2(SMethodBuilder.createJavaParameter(SNode.class, "ctx"), SMethodBuilder.createJavaParameter(SNode.class, "lit"));
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(renderReadable_id6kR0qIbI2yi, reduce_id4CksDrmwwdX, process_id4CksDrmwweS, single_id7rdMSLlhiZ5);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(renderReadable_id6kR0qIbI2yi, reduce_id4CksDrmwwdX, process_id4CksDrmwweS, single_id7rdMSLlhiZ5);
 
-  private static void ___init___(@NotNull SNode __thisNode__) {
-  }
 
   /*package*/ static String renderReadable_id6kR0qIbI2yi(@NotNull SNode __thisNode__) {
     return "isIn" + SLinkOperations.getChildren(__thisNode__, LINKS.selectors$jSGg);
@@ -62,10 +58,6 @@ public final class DataIsInTarget__BehaviorDescriptor extends BaseBHDescriptor {
   /*package*/ DataIsInTarget__BehaviorDescriptor() {
   }
 
-  @Override
-  protected void initNode(@NotNull SNode node, @NotNull SConstructor constructor, @Nullable Object[] parameters) {
-    ___init___(node);
-  }
 
   @Override
   protected <T> T invokeSpecial0(@NotNull SNode node, @NotNull SMethod<T> method, @Nullable Object[] parameters) {

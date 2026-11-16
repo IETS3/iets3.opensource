@@ -48,7 +48,7 @@ public class UnitIsOfferedOnlyOnceInCompletionMenu_Test extends BaseTransformati
             matches = matches + 1;
           }
         }
-        Assert.assertEquals("Unit 'zap' must be offered exactly once in the code completion menu", 1, matches);
+        Assert.assertEquals("Unit 'zap' must be offered exactly once in the code completion menu", Integer.valueOf(1), Integer.valueOf(matches));
       });
     }
   }

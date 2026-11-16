@@ -23,7 +23,7 @@ public class EnumerationDescriptor_UnitScalingType extends EnumerationDescriptor
   private final EnumerationDescriptor.MemberDescriptor myMember_binary_memory_0 = new EnumerationDescriptor.MemberDescriptor("binary_memory", "binary-scaled (memory)", 0x6a4c8d8eb8b0cfd5L, "r:4f64e2f0-6a4e-4db3-b3bf-7977f44949b6(org.iets3.core.expr.typetags.physunits.structure)/7659652710373838805");
 
   private final EnumerationLiteralsIndex myIndex = EnumerationLiteralsIndex.build(0x7ee265bd59864709L, 0x86ed2c6daa33cd8cL, 0x244b2b88a69f2ff1L, 0x244b2b88a69f2ff2L, 0x244b2b88a69f2ff3L, 0x48da63eea2d878c3L, 0x48da63eea2d878c4L, 0x244b2b88a69f2ff6L, 0x6a4c8d8eb8b0cfd5L);
-  private final List<EnumerationDescriptor.MemberDescriptor> myMembers = new EnumerationDescriptorBase.MembersList(myIndex, myMember_unscaled_0, myMember_metric_0, myMember_metric_positive_0, myMember_metric_negative_0, myMember_binary_iec_0, myMember_binary_memory_0);
+  private final List<EnumerationDescriptor.MemberDescriptor> myMembers = new EnumerationDescriptorBase.MembersList0(myIndex, myMember_unscaled_0, myMember_metric_0, myMember_metric_positive_0, myMember_metric_negative_0, myMember_binary_iec_0, myMember_binary_memory_0);
 
   @Nullable
   @Override

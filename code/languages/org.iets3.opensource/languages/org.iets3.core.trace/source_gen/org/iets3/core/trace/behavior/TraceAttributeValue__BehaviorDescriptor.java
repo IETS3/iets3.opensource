@@ -8,7 +8,6 @@ import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import org.jetbrains.mps.openapi.model.SNode;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import java.util.List;
 import java.util.Arrays;
@@ -17,7 +16,6 @@ import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
 import jetbrains.mps.internal.collections.runtime.Sequence;
 import jetbrains.mps.lang.core.behavior.BaseConcept__BehaviorDescriptor;
-import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 import org.jetbrains.mps.openapi.language.SInterfaceConcept;
@@ -27,13 +25,11 @@ import org.jetbrains.mps.openapi.language.SReferenceLink;
 public final class TraceAttributeValue__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getConcept(0x7d21cc4b4c2441dbL, 0x98688af4a7f3eba9L, 0x1d637a1db4e64fe2L, "org.iets3.core.trace.structure.TraceAttributeValue");
 
-  public static final SMethod<SNode> getTraceSource_id7qN5a9Pfhlm = new SMethodBuilder<SNode>(new SJavaCompoundTypeImpl((Class<SNode>) ((Class) Object.class))).name("getTraceSource").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(8553202805290898774L).languageId(0x98688af4a7f3eba9L, 0x7d21cc4b4c2441dbL).build2();
-  public static final SMethod<String> getPresentation_idhEwIMiw = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("getPresentation").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(1213877396640L).languageId(0x9b92103b95ca8c0cL, 0xceab519525ea4f22L).build2();
+  public static final SMethod<SNode> getTraceSource_id7qN5a9Pfhlm = new SMethodBuilder<>(SNode.class).name("getTraceSource").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(8553202805290898774L).languageId(0x98688af4a7f3eba9L, 0x7d21cc4b4c2441dbL).build2();
+  public static final SMethod<String> getPresentation_idhEwIMiw = new SMethodBuilder<>(String.class).name("getPresentation").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(1213877396640L).languageId(0x9b92103b95ca8c0cL, 0xceab519525ea4f22L).build2();
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(getTraceSource_id7qN5a9Pfhlm, getPresentation_idhEwIMiw);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(getTraceSource_id7qN5a9Pfhlm, getPresentation_idhEwIMiw);
 
-  private static void ___init___(@NotNull SNode __thisNode__) {
-  }
 
   /*package*/ static SNode getTraceSource_id7qN5a9Pfhlm(@NotNull SNode __thisNode__) {
     return SNodeOperations.getNodeAncestor(__thisNode__, CONCEPTS.IAttributed$9p, false, false);
@@ -50,10 +46,6 @@ public final class TraceAttributeValue__BehaviorDescriptor extends BaseBHDescrip
   /*package*/ TraceAttributeValue__BehaviorDescriptor() {
   }
 
-  @Override
-  protected void initNode(@NotNull SNode node, @NotNull SConstructor constructor, @Nullable Object[] parameters) {
-    ___init___(node);
-  }
 
   @Override
   protected <T> T invokeSpecial0(@NotNull SNode node, @NotNull SMethod<T> method, @Nullable Object[] parameters) {

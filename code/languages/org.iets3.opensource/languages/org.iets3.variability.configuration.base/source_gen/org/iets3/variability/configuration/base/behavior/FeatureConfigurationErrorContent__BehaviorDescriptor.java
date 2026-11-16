@@ -8,7 +8,6 @@ import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import org.jetbrains.mps.openapi.model.SNode;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import java.util.List;
 import java.util.Arrays;
@@ -16,23 +15,20 @@ import org.jetbrains.annotations.NotNull;
 import jetbrains.mps.internal.collections.runtime.Sequence;
 import java.util.Collections;
 import java.util.ArrayList;
-import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 
 public final class FeatureConfigurationErrorContent__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getConcept(0x71226ee2bbc445d2L, 0xa41d20b97237156cL, 0x34aae17cd64425dbL, "org.iets3.variability.configuration.base.structure.FeatureConfigurationErrorContent");
 
-  public static final SMethod<Iterable<SNode>> effectiveChildConfigItems_id6jHrUgdscqV = new SMethodBuilder<Iterable<SNode>>(new SJavaCompoundTypeImpl((Class<Iterable<SNode>>) ((Class) Object.class))).name("effectiveChildConfigItems").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(7272591723664033467L).languageId(0xa41d20b97237156cL, 0x71226ee2bbc445d2L).build2();
-  public static final SMethod<Iterable<SNode>> descendantConfigItems_id7_2J966PQrp = new SMethodBuilder<Iterable<SNode>>(new SJavaCompoundTypeImpl((Class<Iterable<SNode>>) ((Class) Object.class))).name("descendantConfigItems").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(8737753560270726873L).languageId(0xa41d20b97237156cL, 0x71226ee2bbc445d2L).build2();
-  public static final SMethod<Iterable<SNode>> descendantConfigItemsWithoutUserSelection_id7_2J96757xl = new SMethodBuilder<Iterable<SNode>>(new SJavaCompoundTypeImpl((Class<Iterable<SNode>>) ((Class) Object.class))).name("descendantConfigItemsWithoutUserSelection").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(8737753560274729045L).languageId(0xa41d20b97237156cL, 0x71226ee2bbc445d2L).build2();
-  public static final SMethod<Iterable<SNode>> attributeAssignments_id30ECcbtQl70 = new SMethodBuilder<Iterable<SNode>>(new SJavaCompoundTypeImpl((Class<Iterable<SNode>>) ((Class) Object.class))).name("attributeAssignments").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(3470763221648495040L).languageId(0xa41d20b97237156cL, 0x71226ee2bbc445d2L).build2();
-  public static final SMethod<Iterable<SNode>> allAttributeAssignments_id7_2J9673LL1 = new SMethodBuilder<Iterable<SNode>>(new SJavaCompoundTypeImpl((Class<Iterable<SNode>>) ((Class) Object.class))).name("allAttributeAssignments").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(8737753560274377793L).languageId(0xa41d20b97237156cL, 0x71226ee2bbc445d2L).build2();
+  public static final SMethod<Iterable<SNode>> effectiveChildConfigItems_id6jHrUgdscqV = new SMethodBuilder<>((Class<Iterable<SNode>>) ((Class) Object.class)).name("effectiveChildConfigItems").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(7272591723664033467L).languageId(0xa41d20b97237156cL, 0x71226ee2bbc445d2L).build2();
+  public static final SMethod<Iterable<SNode>> descendantConfigItems_id7_2J966PQrp = new SMethodBuilder<>((Class<Iterable<SNode>>) ((Class) Object.class)).name("descendantConfigItems").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(8737753560270726873L).languageId(0xa41d20b97237156cL, 0x71226ee2bbc445d2L).build2();
+  public static final SMethod<Iterable<SNode>> descendantConfigItemsWithoutUserSelection_id7_2J96757xl = new SMethodBuilder<>((Class<Iterable<SNode>>) ((Class) Object.class)).name("descendantConfigItemsWithoutUserSelection").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(8737753560274729045L).languageId(0xa41d20b97237156cL, 0x71226ee2bbc445d2L).build2();
+  public static final SMethod<Iterable<SNode>> attributeAssignments_id30ECcbtQl70 = new SMethodBuilder<>((Class<Iterable<SNode>>) ((Class) Object.class)).name("attributeAssignments").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(3470763221648495040L).languageId(0xa41d20b97237156cL, 0x71226ee2bbc445d2L).build2();
+  public static final SMethod<Iterable<SNode>> allAttributeAssignments_id7_2J9673LL1 = new SMethodBuilder<>((Class<Iterable<SNode>>) ((Class) Object.class)).name("allAttributeAssignments").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(8737753560274377793L).languageId(0xa41d20b97237156cL, 0x71226ee2bbc445d2L).build2();
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(effectiveChildConfigItems_id6jHrUgdscqV, descendantConfigItems_id7_2J966PQrp, descendantConfigItemsWithoutUserSelection_id7_2J96757xl, attributeAssignments_id30ECcbtQl70, allAttributeAssignments_id7_2J9673LL1);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(effectiveChildConfigItems_id6jHrUgdscqV, descendantConfigItems_id7_2J966PQrp, descendantConfigItemsWithoutUserSelection_id7_2J96757xl, attributeAssignments_id30ECcbtQl70, allAttributeAssignments_id7_2J9673LL1);
 
-  private static void ___init___(@NotNull SNode __thisNode__) {
-  }
 
   /*package*/ static Iterable<SNode> effectiveChildConfigItems_id6jHrUgdscqV(@NotNull SNode __thisNode__) {
     return Sequence.fromIterable(Collections.<SNode>emptyList());
@@ -54,10 +50,6 @@ public final class FeatureConfigurationErrorContent__BehaviorDescriptor extends 
   /*package*/ FeatureConfigurationErrorContent__BehaviorDescriptor() {
   }
 
-  @Override
-  protected void initNode(@NotNull SNode node, @NotNull SConstructor constructor, @Nullable Object[] parameters) {
-    ___init___(node);
-  }
 
   @Override
   protected <T> T invokeSpecial0(@NotNull SNode node, @NotNull SMethod<T> method, @Nullable Object[] parameters) {
