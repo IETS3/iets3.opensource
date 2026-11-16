@@ -155,7 +155,7 @@
     <module reference="7ee265bd-5986-4709-86ed-2c6daa33cd8c(org.iets3.core.expr.typetags.physunits)" version="0" />
     <module reference="9b66c5c9-38bf-4315-a96f-9f4e212c69cb(org.iets3.variability.base)" version="0" />
     <module reference="71226ee2-bbc4-45d2-a41d-20b97237156c(org.iets3.variability.configuration.base)" version="6" />
-    <module reference="165f1d05-2506-4544-895e-1424f54166ec(org.iets3.variability.featuremodel.base)" version="36" />
+    <module reference="165f1d05-2506-4544-895e-1424f54166ec(org.iets3.variability.featuremodel.base)" version="37" />
   </dependencyVersions>
   <extendedLanguages>
     <extendedLanguage>165f1d05-2506-4544-895e-1424f54166ec(org.iets3.variability.featuremodel.base)</extendedLanguage>
