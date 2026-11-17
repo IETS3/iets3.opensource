@@ -18,6 +18,8 @@ import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
 import org.iets3.core.expr.base.plugin.MessageValue;
 import org.iets3.core.base.behavior.ICanStoreCheckResult__BehaviorDescriptor;
+import com.jetbrains.mpsext.viewmodel.runtime.Computed;
+import com.jetbrains.mpsext.viewmodel.runtime.ViewModels;
 import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
@@ -35,26 +37,28 @@ public final class VectorTestItem__BehaviorDescriptor extends BaseBHDescriptor {
   private static void ___init___(@NotNull SNode __thisNode__) {
   }
 
-  /*package*/ static EvalResult executeTestInternal_id78hTg1$THJg(@NotNull SNode __thisNode__) {
+  /*package*/ static EvalResult executeTestInternal_id78hTg1$THJg(@NotNull final SNode __thisNode__) {
     boolean thereWasAnError = false;
     for (SNode v : ListSequence.fromList(SLinkOperations.getChildren(SLinkOperations.getTarget(__thisNode__, LINKS.vectors$gjRd), LINKS.vectors$90PO))) {
       IEvalResult vr;
       if (SNodeOperations.isInstanceOf(SLinkOperations.getTarget(v, LINKS.outcome$jAoe), CONCEPTS.InvalidInputOutcome$HM)) {
         vr = new EvalResult(true);
         vr.setErrorMessage(new MessageValue("not executed"));
+        ICanStoreCheckResult__BehaviorDescriptor.storeLastResult_id3R3AIvuq5Dp.invoke(v, vr);
       } else {
-        vr = TestSubjectAdapter__BehaviorDescriptor.run_id5AG05XYAiHw.invoke(SLinkOperations.getTarget(__thisNode__, LINKS.subject$Zng6), v);
+        final SNode vector = v;
+        Computed<EvalResult> computed = ViewModels.named("org.iets3.core.base.behavior.CheckResults").compute(() -> (EvalResult) TestSubjectAdapter__BehaviorDescriptor.run_id5AG05XYAiHw.invoke(SLinkOperations.getTarget(__thisNode__, LINKS.subject$Zng6), vector));
+        vr = computed.getValue();
+        ICanStoreCheckResult__BehaviorDescriptor.storeLastResultWithDependencies_id55VuGTOFj73.invoke(v, vr, computed.getDependencies());
         if (!(vr.isOk())) {
           thereWasAnError = true;
         }
       }
-      ICanStoreCheckResult__BehaviorDescriptor.storeLastResult_id3R3AIvuq5Dp.invoke(v, vr);
     }
     EvalResult overallRes = new EvalResult(!(thereWasAnError));
     if (thereWasAnError) {
       overallRes.setErrorMessage(new MessageValue("at least one vector failed"));
     }
-    ICanStoreCheckResult__BehaviorDescriptor.storeLastResult_id3R3AIvuq5Dp.invoke(__thisNode__, overallRes);
     return overallRes;
   }
   /*package*/ static String asString_id6iqfHNBPkjP(@NotNull SNode __thisNode__) {

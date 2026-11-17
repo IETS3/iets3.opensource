@@ -9,10 +9,13 @@ import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
 import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
+import java.util.Set;
+import org.jetbrains.mps.openapi.model.SNodeReference;
 import java.util.List;
 import java.util.Arrays;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.mps.openapi.model.SNode;
+import com.jetbrains.mpsext.viewmodel.runtime.ViewModels;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
 import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
@@ -24,12 +27,14 @@ public final class ICanStoreCheckResult__BehaviorDescriptor extends BaseBHDescri
 
   public static final SMethod<String> userObjectKey_id3R3AIvum$_6 = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("userObjectKey").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(4450571177430763846L).languageId(0xbd9c05c0f8725a35L, 0x7b68d745a7b848b9L).build2();
   public static final SMethod<Void> storeLastResult_id3R3AIvuq5Dp = new SMethodBuilder<Void>(new SJavaCompoundTypeImpl(Void.class)).name("storeLastResult").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(4450571177431685721L).languageId(0xbd9c05c0f8725a35L, 0x7b68d745a7b848b9L).build2(SMethodBuilder.createJavaParameter(IResult.class, ""));
+  public static final SMethod<Void> storeLastResultWithDependencies_id55VuGTOFj73 = new SMethodBuilder<Void>(new SJavaCompoundTypeImpl(Void.class)).name("storeLastResultWithDependencies").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5871421566346932675L).languageId(0xbd9c05c0f8725a35L, 0x7b68d745a7b848b9L).build2(SMethodBuilder.createJavaParameter(IResult.class, ""), SMethodBuilder.createJavaParameter((Class<Set<SNodeReference>>) ((Class) Object.class), ""));
   public static final SMethod<IResult> deleteLastResult_id5yiuuzNYbce = new SMethodBuilder<IResult>(new SJavaCompoundTypeImpl(IResult.class)).name("deleteLastResult").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(6382297663369949966L).languageId(0xbd9c05c0f8725a35L, 0x7b68d745a7b848b9L).build2();
   public static final SMethod<Boolean> hasExistingResult_id3R3AIvumwpO = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("hasExistingResult").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(4450571177430746740L).languageId(0xbd9c05c0f8725a35L, 0x7b68d745a7b848b9L).build2();
   public static final SMethod<Boolean> hasCounterExample_idhXRDtv5Cyz = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("hasCounterExample").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(323659489957284003L).languageId(0xbd9c05c0f8725a35L, 0x7b68d745a7b848b9L).build2();
   public static final SMethod<IResult> getLastResult_id3R3AIvumwq7 = new SMethodBuilder<IResult>(new SJavaCompoundTypeImpl(IResult.class)).name("getLastResult").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(4450571177430746759L).languageId(0xbd9c05c0f8725a35L, 0x7b68d745a7b848b9L).build2();
+  public static final SMethod<IResult> getStoredResult_id55VuGTOFj9K = new SMethodBuilder<IResult>(new SJavaCompoundTypeImpl(IResult.class)).name("getStoredResult").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5871421566346932848L).languageId(0xbd9c05c0f8725a35L, 0x7b68d745a7b848b9L).build2();
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(userObjectKey_id3R3AIvum$_6, storeLastResult_id3R3AIvuq5Dp, deleteLastResult_id5yiuuzNYbce, hasExistingResult_id3R3AIvumwpO, hasCounterExample_idhXRDtv5Cyz, getLastResult_id3R3AIvumwq7);
+  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(userObjectKey_id3R3AIvum$_6, storeLastResult_id3R3AIvuq5Dp, storeLastResultWithDependencies_id55VuGTOFj73, deleteLastResult_id5yiuuzNYbce, hasExistingResult_id3R3AIvumwpO, hasCounterExample_idhXRDtv5Cyz, getLastResult_id3R3AIvumwq7, getStoredResult_id55VuGTOFj9K);
 
   private static void ___init___(@NotNull SNode __thisNode__) {
   }
@@ -38,19 +43,21 @@ public final class ICanStoreCheckResult__BehaviorDescriptor extends BaseBHDescri
     return "ICanRunCheckManually.lastResult";
   }
   /*package*/ static void storeLastResult_id3R3AIvuq5Dp(@NotNull SNode __thisNode__, IResult result) {
-    __thisNode__.putUserObject(ICanStoreCheckResult__BehaviorDescriptor.userObjectKey_id3R3AIvum$_6.invoke(__thisNode__), result);
+    ICanStoreCheckResult__BehaviorDescriptor.storeLastResultWithDependencies_id55VuGTOFj73.invoke(__thisNode__, result, null);
+  }
+  /*package*/ static void storeLastResultWithDependencies_id55VuGTOFj73(@NotNull SNode __thisNode__, IResult result, Set<SNodeReference> dependencies) {
+    ViewModels.named("org.iets3.core.base.behavior.CheckResults").write(__thisNode__, result, dependencies);
     if (result instanceof IPersistentResult && SNodeOperations.isInstanceOf(__thisNode__, CONCEPTS.ICanStorePersistentResult$LT)) {
       ((IPersistentResult) result).writeToFile();
     }
   }
   /*package*/ static IResult deleteLastResult_id5yiuuzNYbce(@NotNull SNode __thisNode__) {
-    IResult result = (IResult) __thisNode__.getUserObject(ICanStoreCheckResult__BehaviorDescriptor.userObjectKey_id3R3AIvum$_6.invoke(__thisNode__));
-    __thisNode__.putUserObject(ICanStoreCheckResult__BehaviorDescriptor.userObjectKey_id3R3AIvum$_6.invoke(__thisNode__), null);
+    IResult result = ICanStoreCheckResult__BehaviorDescriptor.getStoredResult_id55VuGTOFj9K.invoke(__thisNode__);
+    ICanStoreCheckResult__BehaviorDescriptor.storeLastResult_id3R3AIvuq5Dp.invoke(__thisNode__, null);
     return result;
   }
   /*package*/ static boolean hasExistingResult_id3R3AIvumwpO(@NotNull SNode __thisNode__) {
-    boolean hasResult = __thisNode__.getUserObject(ICanStoreCheckResult__BehaviorDescriptor.userObjectKey_id3R3AIvum$_6.invoke(__thisNode__)) != null;
-    if (hasResult) {
+    if (ICanStoreCheckResult__BehaviorDescriptor.getStoredResult_id55VuGTOFj9K.invoke(__thisNode__) != null) {
       return true;
     }
     if (!(SNodeOperations.isInstanceOf(__thisNode__, CONCEPTS.ICanReadPersistentResult$QS))) {
@@ -62,21 +69,18 @@ public final class ICanStoreCheckResult__BehaviorDescriptor extends BaseBHDescri
     return ICanStoreCheckResult__BehaviorDescriptor.getLastResult_id3R3AIvumwq7.invoke(__thisNode__) != null && !(ICanStoreCheckResult__BehaviorDescriptor.getLastResult_id3R3AIvumwq7.invoke(__thisNode__).isOk());
   }
   /*package*/ static IResult getLastResult_id3R3AIvumwq7(@NotNull SNode __thisNode__) {
-    try {
-      IResult result = (IResult) __thisNode__.getUserObject(ICanStoreCheckResult__BehaviorDescriptor.userObjectKey_id3R3AIvum$_6.invoke(__thisNode__));
-      if (result != null) {
-        return result;
-      }
-      if (!(SNodeOperations.isInstanceOf(__thisNode__, CONCEPTS.ICanReadPersistentResult$QS))) {
-        return null;
-      }
-      return ICanReadPersistentResult__BehaviorDescriptor.getPersistentResult_id3UrItPobvnj.invoke(SNodeOperations.cast(__thisNode__, CONCEPTS.ICanReadPersistentResult$QS));
-    } catch (ClassCastException cex) {
-      // happens after classes are reloaded
-      cex.printStackTrace();
-      ICanStoreCheckResult__BehaviorDescriptor.storeLastResult_id3R3AIvuq5Dp.invoke(__thisNode__, null);
+    IResult result = ICanStoreCheckResult__BehaviorDescriptor.getStoredResult_id55VuGTOFj9K.invoke(__thisNode__);
+    if (result != null) {
+      return result;
+    }
+    if (!(SNodeOperations.isInstanceOf(__thisNode__, CONCEPTS.ICanReadPersistentResult$QS))) {
       return null;
     }
+    return ICanReadPersistentResult__BehaviorDescriptor.getPersistentResult_id3UrItPobvnj.invoke(SNodeOperations.cast(__thisNode__, CONCEPTS.ICanReadPersistentResult$QS));
+  }
+  /*package*/ static IResult getStoredResult_id55VuGTOFj9K(@NotNull SNode __thisNode__) {
+    Object result = ViewModels.named("org.iets3.core.base.behavior.CheckResults").get(__thisNode__);
+    return ((result instanceof IResult ? (IResult) result : null));
   }
 
   /*package*/ ICanStoreCheckResult__BehaviorDescriptor() {
@@ -100,13 +104,18 @@ public final class ICanStoreCheckResult__BehaviorDescriptor extends BaseBHDescri
         storeLastResult_id3R3AIvuq5Dp(node, (IResult) parameters[0]);
         return null;
       case 2:
-        return (T) ((IResult) deleteLastResult_id5yiuuzNYbce(node));
+        storeLastResultWithDependencies_id55VuGTOFj73(node, (IResult) parameters[0], (Set<SNodeReference>) parameters[1]);
+        return null;
       case 3:
-        return (T) ((Boolean) hasExistingResult_id3R3AIvumwpO(node));
+        return (T) ((IResult) deleteLastResult_id5yiuuzNYbce(node));
       case 4:
-        return (T) ((Boolean) hasCounterExample_idhXRDtv5Cyz(node));
+        return (T) ((Boolean) hasExistingResult_id3R3AIvumwpO(node));
       case 5:
+        return (T) ((Boolean) hasCounterExample_idhXRDtv5Cyz(node));
+      case 6:
         return (T) ((IResult) getLastResult_id3R3AIvumwq7(node));
+      case 7:
+        return (T) ((IResult) getStoredResult_id55VuGTOFj9K(node));
       default:
         throw new BHMethodNotFoundException(this, method);
     }

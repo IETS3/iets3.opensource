@@ -213,7 +213,7 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
           cpb.shortDesc("an assembly connector");
           cpb.rawPresentation("connect");
-          cpb.icon(IconContainer.RESOURCE_a0a3a0a41b0nd);
+          cpb.icon(IconContainer.RESOURCE_0);
           props_AssemblyConnector = cpb.create();
         }
         return props_AssemblyConnector;
@@ -264,7 +264,7 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           cpb.deprecateAggregation(0x71280102b4d0004L, "substructure");
           cpb.shortDesc("a component");
           cpb.presentationByName();
-          cpb.icon(IconContainer.RESOURCE_a0a4a0a02b0nd);
+          cpb.icon(IconContainer.RESOURCE_1);
           props_Component = cpb.create();
         }
         return props_Component;
@@ -275,7 +275,7 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           cpb.deprecateAggregation(0x4e908ff85cae58b9L, "parameterValues_old");
           cpb.shortDesc("a component instance");
           cpb.presentationByName();
-          cpb.icon(IconContainer.RESOURCE_a0a5a0a12b0nd);
+          cpb.icon(IconContainer.RESOURCE_2);
           props_ComponentInstance = cpb.create();
         }
         return props_ComponentInstance;
@@ -339,7 +339,7 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
           cpb.shortDesc("a chunk to declare components");
           cpb.presentationByName();
-          cpb.icon(IconContainer.RESOURCE_a0a3a0a92b0nd);
+          cpb.icon(IconContainer.RESOURCE_3);
           props_ComponentsChunk = cpb.create();
         }
         return props_ComponentsChunk;
@@ -419,7 +419,7 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
           cpb.shortDesc("an export connector");
           cpb.rawPresentation("export");
-          cpb.icon(IconContainer.RESOURCE_a0a3a0a93b0nd);
+          cpb.icon(IconContainer.RESOURCE_4);
           props_ExportConnector = cpb.create();
         }
         return props_ExportConnector;
@@ -604,7 +604,7 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
           cpb.shortDesc("an import connector");
           cpb.rawPresentation("import");
-          cpb.icon(IconContainer.RESOURCE_a0a3a0a86b0nd);
+          cpb.icon(IconContainer.RESOURCE_5);
           props_ImportConnector = cpb.create();
         }
         return props_ImportConnector;
