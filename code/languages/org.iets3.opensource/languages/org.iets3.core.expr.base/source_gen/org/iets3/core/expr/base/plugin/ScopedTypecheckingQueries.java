@@ -139,11 +139,11 @@ public final class ScopedTypecheckingQueries implements TypecheckingQueries {
     if (context == null) {
       return;
     }
-    Consumer<NodeReportItem> consumer = (Consumer<NodeReportItem>) errorsConsumer;
     context.checkIfNotChecked(root, false);
     for (Pair<SNode, List<IErrorReporter>> pair : SetSequence.fromSet(context.getNodesWithErrors(true))) {
       for (IErrorReporter reporter : ListSequence.fromList(pair.o2)) {
-        consumer.accept(new TypesystemReportItemAdapter(reporter));
+        NodeReportItem item = new TypesystemReportItemAdapter(reporter);
+        errorsConsumer.accept(item);
       }
     }
   }
@@ -151,12 +151,8 @@ public final class ScopedTypecheckingQueries implements TypecheckingQueries {
   @Override
   public void clearCache(SNode root) {
     TypecheckingSessionScope currentScope = TypecheckingSessionScope.current();
-    if (currentScope == null) {
-      return;
-    }
-    IncrementalTypecheckingContext scopedContext = currentScope.contextFor(root, helper);
-    if (scopedContext != null) {
-      scopedContext.clear();
+    if (currentScope != null) {
+      currentScope.clearCache(root);
     }
   }
 

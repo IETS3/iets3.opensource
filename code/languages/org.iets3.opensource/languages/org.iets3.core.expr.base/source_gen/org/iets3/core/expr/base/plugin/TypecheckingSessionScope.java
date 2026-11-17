@@ -111,14 +111,15 @@ public final class TypecheckingSessionScope {
   }
 
   /**
-   * Whether node stays unchanged while this scope is open, so it may be typechecked incrementally and serve as the key of derivedNode: true for nodes in a model and in trees built by derivedNode.  
+   * Whether node stays unchanged while this scope is open, or every change to it reaches the context's model listeners, so it may be typechecked incrementally and serve as the key of derivedNode: true for nodes in a model of a repository and in trees built by derivedNode. MPS attaches no listeners to a model outside a repository, so its nodes are not stable.  
    */
   public boolean isStable(SNode node) {
     SNode root = SNodeOperations.getContainingRoot(node);
-    return SNodeOperations.getModel(root) != null || SetSequence.fromSet(derivedRoots).contains(root);
+    SModel rootModel = SNodeOperations.getModel(root);
+    return (rootModel != null && rootModel.getRepository() != null) || SetSequence.fromSet(derivedRoots).contains(root);
   }
   /**
-   * Returns null for a detached tree not built by derivedNode: the interpreter builds and changes such trees, which raises no change events, so a cached context would answer stale types. 
+   * Returns null for a root that is not stable: a detached tree not built by derivedNode, which the interpreter builds and changes without raising change events, or a model outside a repository, to which MPS attaches no listeners. A cached context would answer stale types for either.  
    */
   public IncrementalTypecheckingContext contextFor(SNode node, TypeCheckerHelper helper) {
     SNode root = SNodeOperations.getContainingRoot(node);
@@ -132,39 +133,29 @@ public final class TypecheckingSessionScope {
     }
     return context;
   }
+  /**
+   * Drops the cached types of node's root, if this scope holds a context for it; creates none.  
+   */
+  public void clearCache(SNode node) {
+    IncrementalTypecheckingContext rootContext = MapSequence.fromMap(contexts).get(SNodeOperations.getContainingRoot(node));
+    if (rootContext != null) {
+      rootContext.clear();
+    }
+  }
 
   /**
    * Disposes every context, also when one of them fails to (each holds listeners on its models), and rethrows the first failure afterwards.  
    */
   public void close() {
-    Throwable failure = null;
-    try {
-      for (IncrementalTypecheckingContext context : Sequence.fromIterable(MapSequence.fromMap(contexts).values())) {
-        try {
-          context.dispose();
-        } catch (Throwable e) {
-          if (failure == null) {
-            failure = e;
-          } else if (failure != e) {
-            failure.addSuppressed(e);
-          }
-        }
-      }
-    } finally {
-      MapSequence.fromMap(contexts).clear();
-      MapSequence.fromMap(derivedNodes).clear();
-      SetSequence.fromSet(derivedRoots).clear();
-      CURRENT.remove();
+    CleanupFailures failures = new CleanupFailures();
+    for (final IncrementalTypecheckingContext scopedContext : Sequence.fromIterable(MapSequence.fromMap(contexts).values())) {
+      failures.run(() -> scopedContext.dispose());
     }
-    if (failure instanceof RuntimeException) {
-      throw (RuntimeException) failure;
-    }
-    if (failure instanceof Error) {
-      throw (Error) failure;
-    }
-    if (failure != null) {
-      throw new RuntimeException(failure);
-    }
+    MapSequence.fromMap(contexts).clear();
+    MapSequence.fromMap(derivedNodes).clear();
+    SetSequence.fromSet(derivedRoots).clear();
+    CURRENT.remove();
+    failures.rethrowFirst();
   }
   public static void joinSession(SNode anchor) {
     InterpreterSession session = InterpreterSession.current();

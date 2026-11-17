@@ -67,32 +67,13 @@ public final class InterpreterSession {
    * Runs every close action, in reverse order of registration, even when one throws (an Error included): a skipped release would leave its thread-local state on a pooled thread, where the next run finds it. The first failure is rethrown afterwards, later ones are added to it as suppressed.  
    */
   public void close() {
-    Throwable failure = null;
-    try {
-      for (int i = ListSequence.fromList(closeActions).count() - 1; i >= 0; i--) {
-        try {
-          ListSequence.fromList(closeActions).getElement(i).run();
-        } catch (Throwable e) {
-          if (failure == null) {
-            failure = e;
-          } else if (failure != e) {
-            failure.addSuppressed(e);
-          }
-        }
-      }
-    } finally {
-      ListSequence.fromList(closeActions).clear();
-      MapSequence.fromMap(cache).clear();
-      CURRENT.remove();
+    CleanupFailures failures = new CleanupFailures();
+    for (int i = ListSequence.fromList(closeActions).count() - 1; i >= 0; i--) {
+      failures.run(ListSequence.fromList(closeActions).getElement(i));
     }
-    if (failure instanceof RuntimeException) {
-      throw (RuntimeException) failure;
-    }
-    if (failure instanceof Error) {
-      throw (Error) failure;
-    }
-    if (failure != null) {
-      throw new RuntimeException(failure);
-    }
+    ListSequence.fromList(closeActions).clear();
+    MapSequence.fromMap(cache).clear();
+    CURRENT.remove();
+    failures.rethrowFirst();
   }
 }

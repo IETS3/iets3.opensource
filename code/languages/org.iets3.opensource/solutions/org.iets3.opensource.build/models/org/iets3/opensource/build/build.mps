@@ -17010,11 +17010,6 @@
             <ref role="3bR37D" to="ffeo:1TaHNgiIbIQ" resolve="MPS.Core" />
           </node>
         </node>
-        <node concept="1SiIV0" id="fWrWhg0PgX" role="3bR37C">
-          <node concept="3bR9La" id="fWrWhg0PgY" role="1SiIV1">
-            <ref role="3bR37D" to="90a9:55VuGTPw6_u" resolve="com.jetbrains.mpsext.viewmodel.runtime" />
-          </node>
-        </node>
       </node>
       <node concept="1E1JtA" id="7YuIrXB5Sn0" role="2G$12L">
         <property role="BnDLt" value="true" />

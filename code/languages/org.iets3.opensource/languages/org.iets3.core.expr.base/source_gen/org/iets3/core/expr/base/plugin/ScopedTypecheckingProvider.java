@@ -13,7 +13,7 @@ import jetbrains.mps.typesystem.inference.TypeCheckerHelper;
 import jetbrains.mps.typesystem.inference.TypeChecker;
 
 /**
- * Serves type queries from the TypecheckingSessionScope open on the current thread. MPS asks it before its default provider.It declines whenever no scope is open on the asking thread, for sessions of a particular root (an editor's) and during generation, so everything else keeps going to MPS's own provider.Installed and uninstalled only by TypecheckingApplicationPlugin, whose dispose runs when this module's classes are unloaded. Where no application plugins are loaded it is not installed, TypecheckingSessionScope.open returns null and nothing is cached.  
+ * Serves type queries from the TypecheckingSessionScope open on the current thread. MPS asks it before its default provider. It declines whenever no scope is open on the asking thread, for sessions of a particular root (an editor's) and during generation, so everything else keeps going to MPS's own provider. Installed and uninstalled only by TypecheckingApplicationPlugin, whose dispose runs when this module's classes are unloaded. Where no application plugins are loaded it is not installed, TypecheckingSessionScope.open returns null and nothing is cached.  
  */
 public final class ScopedTypecheckingProvider implements TypecheckingProvider<TypecheckingQueries> {
   private static final Object LOCK = new Object();
