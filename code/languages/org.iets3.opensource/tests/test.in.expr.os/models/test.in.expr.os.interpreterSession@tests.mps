@@ -178,9 +178,6 @@
         <child id="543569365052056269" name="expected" index="_fkuS" />
         <child id="543569365052056267" name="actual" index="_fkuY" />
       </concept>
-      <concept id="543569365052711055" name="org.iets3.core.expr.tests.structure.TestSuite" flags="ng" index="_iOnU">
-        <child id="543569365052711058" name="contents" index="_iOnB" />
-      </concept>
     </language>
     <language id="6b277d9a-d52d-416f-a209-1919bd737f50" name="org.iets3.core.expr.simpleTypes">
       <concept id="5115872837157054170" name="org.iets3.core.expr.simpleTypes.structure.NumberLiteral" flags="ng" index="30bXRB">
@@ -189,8 +186,8 @@
     </language>
     <language id="71934284-d7d1-45ee-a054-8c072591085f" name="org.iets3.core.expr.toplevel">
       <concept id="7089558164906249676" name="org.iets3.core.expr.toplevel.structure.Constant" flags="ng" index="2zPypq" />
-      <concept id="543569365052711055" name="org.iets3.core.expr.toplevel.structure.Library" flags="ng" index="_iOnV">
-        <child id="543569365052711058" name="contents" index="_iOnC" />
+      <concept id="543569365052711055" name="org.iets3.core.expr.toplevel.structure.Library" flags="ng" index="_iOnU">
+        <child id="543569365052711058" name="contents" index="_iOnB" />
       </concept>
     </language>
     <language id="fd392034-7849-419d-9071-12563d152375" name="jetbrains.mps.baseLanguage.closures">
@@ -944,9 +941,9 @@
     <property role="3DII0k" value="2hh8MJdVwqX/command" />
     <property role="TrG5h" value="InterpreterSessionScopes" />
     <node concept="1qefOq" id="2zySNzixot1" role="1SKRRt">
-      <node concept="_iOnV" id="2zySNzixot3" role="1qenE9">
+      <node concept="_iOnU" id="2zySNzixot3" role="1qenE9">
         <property role="TrG5h" value="types" />
-        <node concept="2zPypq" id="2zySNzixot4" role="_iOnC">
+        <node concept="2zPypq" id="2zySNzixot4" role="_iOnB">
           <property role="TrG5h" value="sum" />
           <node concept="30dDZf" id="2zySNzixot6" role="2lDidJ">
             <node concept="3xLA65" id="2zySNzixot9" role="lGtFl">
@@ -966,8 +963,8 @@
       </node>
     </node>
     <node concept="1qefOq" id="2zySNzixotd" role="1SKRRt">
-      <node concept="_iOnU" id="2zySNzixotf" role="1qenE9">
-        <property role="TrG5h" value="suite" />
+      <node concept="_iOnU" id="2zySNzj4CW_" role="1qenE9">
+        <property role="TrG5h" value="tests" />
         <node concept="_fkuM" id="2zySNzixoth" role="_iOnB">
           <property role="TrG5h" value="addition" />
           <node concept="_fkuZ" id="2zySNzixoti" role="_fkp5">
@@ -3237,6 +3234,121 @@
           <node concept="3_1$Yv" id="2zySNzixoPz" role="3_9lra">
             <node concept="Xl_RD" id="2zySNzixoP$" role="3_1BAH">
               <property role="Xl_RC" value="the application plugin installed the scoped typechecking provider" />
+            </node>
+          </node>
+        </node>
+        <node concept="3SKdUt" id="2zySNzj3Z8T" role="3cqZAp">
+          <node concept="1PaTwC" id="2zySNzj3Z8X" role="1aUNEU">
+            <node concept="3oM_SD" id="2zySNzj3Z8Z" role="1PaTwD">
+              <property role="3oM_SC" value="The" />
+            </node>
+            <node concept="3oM_SD" id="2zySNzj3Z90" role="1PaTwD">
+              <property role="3oM_SC" value="item's" />
+            </node>
+            <node concept="3oM_SD" id="2zySNzj3Z91" role="1PaTwD">
+              <property role="3oM_SC" value="TestCase" />
+            </node>
+            <node concept="3oM_SD" id="2zySNzj3Z92" role="1PaTwD">
+              <property role="3oM_SC" value="is" />
+            </node>
+            <node concept="3oM_SD" id="2zySNzj3Z93" role="1PaTwD">
+              <property role="3oM_SC" value="in" />
+            </node>
+            <node concept="3oM_SD" id="2zySNzj3Z94" role="1PaTwD">
+              <property role="3oM_SC" value="a" />
+            </node>
+            <node concept="3oM_SD" id="2zySNzj3Z95" role="1PaTwD">
+              <property role="3oM_SC" value="Library" />
+            </node>
+            <node concept="3oM_SD" id="2zySNzj3Z96" role="1PaTwD">
+              <property role="3oM_SC" value="and" />
+            </node>
+            <node concept="3oM_SD" id="2zySNzj3Z97" role="1PaTwD">
+              <property role="3oM_SC" value="not" />
+            </node>
+            <node concept="3oM_SD" id="2zySNzj3Z98" role="1PaTwD">
+              <property role="3oM_SC" value="in" />
+            </node>
+            <node concept="3oM_SD" id="2zySNzj3Z99" role="1PaTwD">
+              <property role="3oM_SC" value="a" />
+            </node>
+            <node concept="3oM_SD" id="2zySNzj3Z9a" role="1PaTwD">
+              <property role="3oM_SC" value="TestSuite:" />
+            </node>
+            <node concept="3oM_SD" id="2zySNzj3Z9b" role="1PaTwD">
+              <property role="3oM_SC" value="the" />
+            </node>
+            <node concept="3oM_SD" id="2zySNzj3Z9c" role="1PaTwD">
+              <property role="3oM_SC" value="re-runnable" />
+            </node>
+            <node concept="3oM_SD" id="2zySNzj3Z9d" role="1PaTwD">
+              <property role="3oM_SC" value="migration" />
+            </node>
+            <node concept="3oM_SD" id="2zySNzj3Z9e" role="1PaTwD">
+              <property role="3oM_SC" value="removeNodeTestCaseFromTestSuite" />
+            </node>
+            <node concept="3oM_SD" id="2zySNzj3Z9f" role="1PaTwD">
+              <property role="3oM_SC" value="(org.iets3.core.expr.tests)" />
+            </node>
+            <node concept="3oM_SD" id="2zySNzj3Z9g" role="1PaTwD">
+              <property role="3oM_SC" value="moves" />
+            </node>
+            <node concept="3oM_SD" id="2zySNzj3Z9h" role="1PaTwD">
+              <property role="3oM_SC" value="a" />
+            </node>
+            <node concept="3oM_SD" id="2zySNzj3Z9i" role="1PaTwD">
+              <property role="3oM_SC" value="TestSuite" />
+            </node>
+            <node concept="3oM_SD" id="2zySNzj3Z9j" role="1PaTwD">
+              <property role="3oM_SC" value="test" />
+            </node>
+            <node concept="3oM_SD" id="2zySNzj3Z9k" role="1PaTwD">
+              <property role="3oM_SC" value="node" />
+            </node>
+            <node concept="3oM_SD" id="2zySNzj3Z9l" role="1PaTwD">
+              <property role="3oM_SC" value="to" />
+            </node>
+            <node concept="3oM_SD" id="2zySNzj3Z9m" role="1PaTwD">
+              <property role="3oM_SC" value="a" />
+            </node>
+            <node concept="3oM_SD" id="2zySNzj3Z9n" role="1PaTwD">
+              <property role="3oM_SC" value="root" />
+            </node>
+            <node concept="3oM_SD" id="2zySNzj3Z9o" role="1PaTwD">
+              <property role="3oM_SC" value="and" />
+            </node>
+            <node concept="3oM_SD" id="2zySNzj3Z9p" role="1PaTwD">
+              <property role="3oM_SC" value="deletes" />
+            </node>
+            <node concept="3oM_SD" id="2zySNzj5$MQ" role="1PaTwD">
+              <property role="3oM_SC" value="its" />
+            </node>
+            <node concept="3oM_SD" id="2zySNzj5$MR" role="1PaTwD">
+              <property role="3oM_SC" value="NodesTestCase," />
+            </node>
+            <node concept="3oM_SD" id="2zySNzj5$MS" role="1PaTwD">
+              <property role="3oM_SC" value="and" />
+            </node>
+            <node concept="3oM_SD" id="2zySNzj5$MT" role="1PaTwD">
+              <property role="3oM_SC" value="remigrate" />
+            </node>
+            <node concept="3oM_SD" id="2zySNzj5$MU" role="1PaTwD">
+              <property role="3oM_SC" value="runs" />
+            </node>
+            <node concept="3oM_SD" id="2zySNzj5$MV" role="1PaTwD">
+              <property role="3oM_SC" value="it" />
+            </node>
+            <node concept="3oM_SD" id="2zySNzj5$MW" role="1PaTwD">
+              <property role="3oM_SC" value="on" />
+            </node>
+            <node concept="3oM_SD" id="2zySNzj5$MX" role="1PaTwD">
+              <property role="3oM_SC" value="every" />
+            </node>
+            <node concept="3oM_SD" id="2zySNzj5$MY" role="1PaTwD">
+              <property role="3oM_SC" value="CI" />
+            </node>
+            <node concept="3oM_SD" id="2zySNzj5$MZ" role="1PaTwD">
+              <property role="3oM_SC" value="build." />
             </node>
           </node>
         </node>
