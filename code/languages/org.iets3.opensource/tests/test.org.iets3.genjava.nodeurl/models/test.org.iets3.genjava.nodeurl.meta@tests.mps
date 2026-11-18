@@ -26,6 +26,7 @@
   <registry>
     <language id="8585453e-6bfb-4d80-98de-b16074f1d86c" name="jetbrains.mps.lang.test">
       <concept id="1216913645126" name="jetbrains.mps.lang.test.structure.NodesTestCase" flags="lg" index="1lH9Xt">
+        <property id="2616911529524314943" name="accessMode" index="3DII0k" />
         <child id="1217501895093" name="testMethods" index="1SL9yI" />
       </concept>
       <concept id="1225978065297" name="jetbrains.mps.lang.test.structure.SimpleNodeTest" flags="ng" index="1LZb2c" />
@@ -1343,6 +1344,7 @@
   </node>
   <node concept="1lH9Xt" id="1xfJekm_sDo">
     <property role="TrG5h" value="SourceNodeUrlsMatchHttpSupport" />
+    <property role="3DII0k" value="2hh8MJdVwqX/command" />
     <node concept="1LZb2c" id="1xfJekm_sFz" role="1SL9yI">
       <property role="TrG5h" value="sameUrlAsHttpSupport" />
       <node concept="3cqZAl" id="1xfJekm_vvM" role="3clF45" />
