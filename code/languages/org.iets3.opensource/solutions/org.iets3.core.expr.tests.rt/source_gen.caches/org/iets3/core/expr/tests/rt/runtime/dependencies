@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <dependenciesRoot>
   <uses language="l:f3061a53-9226-4cc5-a443-f952ceaf5816:jetbrains.mps.baseLanguage" />
-  <uses language="l:760a0a8c-eabb-4521-8bfd-65db761a9ba3:jetbrains.mps.baseLanguage.logging" />
   <uses language="l:f61473f9-130f-42f6-b98d-6c438812c2f6:jetbrains.mps.baseLanguage.unitTest" />
   <uses language="l:df345b11-b8c7-4213-ac66-48d2a9b75d88:jetbrains.mps.baseLanguageInternal" />
   <uses language="l:7866978e-a0f0-4cc7-81bc-4d213d9375e1:jetbrains.mps.lang.smodel" />
@@ -33,13 +32,10 @@
   <uses module="443f4c36-fcf5-4eb6-9500-8d06ed259e3e(jetbrains.mps.baseLanguage.classifiers)" kind="dp" />
   <uses module="fd392034-7849-419d-9071-12563d152375(jetbrains.mps.baseLanguage.closures)" kind="dp" />
   <uses module="83888646-71ce-4f1c-9c53-c54016f6ad4f(jetbrains.mps.baseLanguage.collections)" kind="dp" />
-  <uses module="a3e4657f-a76c-45bb-bbda-c764596ecc65(jetbrains.mps.baseLanguage.logging.runtime)" kind="rt" />
   <uses module="52b81ac7-93fd-4e9e-b972-4995882da6d4(jetbrains.mps.baseLanguage.references.runtime)" kind="rt" />
   <uses module="daafa647-f1f7-4b0b-b096-69cd7c8408c0(jetbrains.mps.baseLanguage.regexp)" kind="dp" />
   <uses module="e39e4a59-8cb6-498e-860e-8fa8361c0d90(jetbrains.mps.baseLanguage.scopes)" kind="dp" />
   <uses module="f61473f9-130f-42f6-b98d-6c438812c2f6(jetbrains.mps.baseLanguage.unitTest)" kind="dp" />
-  <uses module="23865718-e2ed-41b5-a132-0da1d04e266d(jetbrains.mps.ide.httpsupport.manager)" kind="dp" />
-  <uses module="ae6d8005-36be-4cb6-945b-8c8cfc033c51(jetbrains.mps.ide.httpsupport.runtime)" kind="dp" />
   <uses module="2d3c70e9-aab2-4870-8d8d-6036800e4103(jetbrains.mps.kernel)" kind="dp" />
   <uses module="d936855b-48da-4812-a8a0-2bfddd633ac5(jetbrains.mps.lang.behavior.api)" kind="rt+dp" />
   <uses module="d936855b-48da-4812-a8a0-2bfddd633ac4(jetbrains.mps.lang.behavior.runtime)" kind="rt" />
@@ -55,6 +51,7 @@
   <uses module="7b68d745-a7b8-48b9-bd9c-05c0f8725a35(org.iets3.core.base)" kind="dp" />
   <uses module="cfaa4966-b7d5-4b69-b66a-309a6e1a7290(org.iets3.core.expr.base)" kind="dp" />
   <uses module="2f7e2e35-6e74-4c43-9fa5-2465d68f5996(org.iets3.core.expr.collections)" kind="dp" />
+  <uses module="c51317cf-7edb-4089-991b-42c7b3a5f8e5(org.iets3.core.expr.genjava.tests.genutil)" kind="dp" />
   <uses module="9464fa06-5ab9-409b-9274-64ab29588457(org.iets3.core.expr.lambda)" kind="dp" />
   <uses module="f3eafff0-30d2-46d6-9150-f0f3b880ce27(org.iets3.core.expr.path)" kind="dp" />
   <uses module="d441fba0-f46b-43cd-b723-dad7b65da615(org.iets3.core.expr.tests)" kind="dp" />

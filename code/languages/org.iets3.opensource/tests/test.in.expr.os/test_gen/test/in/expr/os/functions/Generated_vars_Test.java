@@ -15,6 +15,7 @@ import org.iets3.core.expr.genjava.base.rt.rt.GlobalContext;
 import org.junit.Test;
 import org.junit.Assert;
 import org.iets3.core.expr.genjava.tests.rt.rt.EqualsTestOp;
+import org.iets3.core.expr.genjava.tests.rt.rt.SourceNodeFailures;
 import org.pcollections.PVector;
 import org.pcollections.TreePVector;
 
@@ -77,15 +78,27 @@ public class Generated_vars_Test {
   }
   @Test
   public void testLocalVar_item0_2222228766295551315() throws Throwable {
-    Assert.assertTrue("Expected: " + (((Number) new BigInteger("7"))) + ", but was: " + (Generated_vars_Test.add(((Number) new BigInteger("1")), ((Number) new BigInteger("2")))), EqualsTestOp.matches(((Number) new BigInteger("7")), Generated_vars_Test.add(((Number) new BigInteger("1")), ((Number) new BigInteger("2")))));
+    try {
+      Assert.assertTrue("Expected: " + (((Number) new BigInteger("7"))) + ", but was: " + (Generated_vars_Test.add(((Number) new BigInteger("1")), ((Number) new BigInteger("2")))), EqualsTestOp.matches(((Number) new BigInteger("7")), Generated_vars_Test.add(((Number) new BigInteger("1")), ((Number) new BigInteger("2")))));
+    } catch (Throwable failure) {
+      throw SourceNodeFailures.attach(failure, "http://127.0.0.1:63320/node?ref=r%3Af9a70877-66f3-464b-86cb-67a9d543be8c%28test.in.expr.os.functions%40tests%29%2F2222228766295551315");
+    }
   }
   @Test
   public void testLocalVar_item1_2222228766308450141() throws Throwable {
-    Assert.assertTrue("Expected: " + (((Number) new BigInteger("3"))) + ", but was: " + (Generated_vars_Test.assignVal(((Number) new BigInteger("3")))), EqualsTestOp.matches(((Number) new BigInteger("3")), Generated_vars_Test.assignVal(((Number) new BigInteger("3")))));
+    try {
+      Assert.assertTrue("Expected: " + (((Number) new BigInteger("3"))) + ", but was: " + (Generated_vars_Test.assignVal(((Number) new BigInteger("3")))), EqualsTestOp.matches(((Number) new BigInteger("3")), Generated_vars_Test.assignVal(((Number) new BigInteger("3")))));
+    } catch (Throwable failure) {
+      throw SourceNodeFailures.attach(failure, "http://127.0.0.1:63320/node?ref=r%3Af9a70877-66f3-464b-86cb-67a9d543be8c%28test.in.expr.os.functions%40tests%29%2F2222228766308450141");
+    }
   }
   @Test
   public void testLocalVar_item2_2222228766308454615() throws Throwable {
-    Assert.assertTrue("Expected: " + (((Number) new BigInteger("3"))) + ", but was: " + (Generated_vars_Test.readVal(((Number) new BigInteger("3")))), EqualsTestOp.matches(((Number) new BigInteger("3")), Generated_vars_Test.readVal(((Number) new BigInteger("3")))));
+    try {
+      Assert.assertTrue("Expected: " + (((Number) new BigInteger("3"))) + ", but was: " + (Generated_vars_Test.readVal(((Number) new BigInteger("3")))), EqualsTestOp.matches(((Number) new BigInteger("3")), Generated_vars_Test.readVal(((Number) new BigInteger("3")))));
+    } catch (Throwable failure) {
+      throw SourceNodeFailures.attach(failure, "http://127.0.0.1:63320/node?ref=r%3Af9a70877-66f3-464b-86cb-67a9d543be8c%28test.in.expr.os.functions%40tests%29%2F2222228766308454615");
+    }
   }
   public static final PVector tuple_ = ((TreePVector) TreePVector.<Object>from(Arrays.<Object>asList(((Number) new BigInteger("1")), ((Number) new BigInteger("2")))));
   public static Number assign() {
@@ -131,15 +144,27 @@ public class Generated_vars_Test {
   }
   @Test
   public void assigningTuples_i_item0_8270504681824948476() throws Throwable {
-    Assert.assertTrue("Expected: " + (((Number) new BigInteger("3"))) + ", but was: " + (Generated_vars_Test.assign()), EqualsTestOp.matches(((Number) new BigInteger("3")), Generated_vars_Test.assign()));
+    try {
+      Assert.assertTrue("Expected: " + (((Number) new BigInteger("3"))) + ", but was: " + (Generated_vars_Test.assign()), EqualsTestOp.matches(((Number) new BigInteger("3")), Generated_vars_Test.assign()));
+    } catch (Throwable failure) {
+      throw SourceNodeFailures.attach(failure, "http://127.0.0.1:63320/node?ref=r%3Af9a70877-66f3-464b-86cb-67a9d543be8c%28test.in.expr.os.functions%40tests%29%2F8270504681824948476");
+    }
   }
   @Test
   public void assigningTuples_i_item1_8888617110175219471() throws Throwable {
-    Assert.assertEquals("Expected: " + (((TreePVector) TreePVector.<Object>from(Arrays.<Object>asList(((Number) new BigInteger("5")), ((Number) new BigInteger("3")))))) + ", but was: " + (Generated_vars_Test.swap()), (Object) ((TreePVector) TreePVector.<Object>from(Arrays.<Object>asList(((Number) new BigInteger("5")), ((Number) new BigInteger("3"))))), (Object) Generated_vars_Test.swap());
+    try {
+      Assert.assertEquals("Expected: " + (((TreePVector) TreePVector.<Object>from(Arrays.<Object>asList(((Number) new BigInteger("5")), ((Number) new BigInteger("3")))))) + ", but was: " + (Generated_vars_Test.swap()), (Object) ((TreePVector) TreePVector.<Object>from(Arrays.<Object>asList(((Number) new BigInteger("5")), ((Number) new BigInteger("3"))))), (Object) Generated_vars_Test.swap());
+    } catch (Throwable failure) {
+      throw SourceNodeFailures.attach(failure, "http://127.0.0.1:63320/node?ref=r%3Af9a70877-66f3-464b-86cb-67a9d543be8c%28test.in.expr.os.functions%40tests%29%2F8888617110175219471");
+    }
   }
   @Test
   public void assigningTuples_i_item2_6492165038408703061() throws Throwable {
-    Assert.assertEquals("Expected: " + (((TreePVector) TreePVector.<Object>from(Arrays.<Object>asList(((Number) new BigInteger("5")), ((Number) new BigInteger("3")))))) + ", but was: " + (Generated_vars_Test.swap1()), (Object) ((TreePVector) TreePVector.<Object>from(Arrays.<Object>asList(((Number) new BigInteger("5")), ((Number) new BigInteger("3"))))), (Object) Generated_vars_Test.swap1());
+    try {
+      Assert.assertEquals("Expected: " + (((TreePVector) TreePVector.<Object>from(Arrays.<Object>asList(((Number) new BigInteger("5")), ((Number) new BigInteger("3")))))) + ", but was: " + (Generated_vars_Test.swap1()), (Object) ((TreePVector) TreePVector.<Object>from(Arrays.<Object>asList(((Number) new BigInteger("5")), ((Number) new BigInteger("3"))))), (Object) Generated_vars_Test.swap1());
+    } catch (Throwable failure) {
+      throw SourceNodeFailures.attach(failure, "http://127.0.0.1:63320/node?ref=r%3Af9a70877-66f3-464b-86cb-67a9d543be8c%28test.in.expr.os.functions%40tests%29%2F6492165038408703061");
+    }
   }
 
 

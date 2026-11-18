@@ -6,6 +6,7 @@ import java.math.BigInteger;
 import org.junit.Test;
 import org.junit.Assert;
 import org.iets3.core.expr.genjava.tests.rt.rt.EqualsTestOp;
+import org.iets3.core.expr.genjava.tests.rt.rt.SourceNodeFailures;
 import jetbrains.mps.baseLanguage.closures.runtime._FunctionTypes;
 import org.iets3.core.expr.simpleTypes.runtime.AH;
 import org.iets3.core.expr.genjava.messages.rt.rt.Message;
@@ -24,87 +25,171 @@ public class Generated_functions_Test {
   public static final Number constantNumber_ = ((Number) new BigInteger("9"));
   @Test
   public void functions_item1_1922523186434496220() throws Throwable {
-    Assert.assertTrue("Expected: " + (((Number) new BigInteger("0"))) + ", but was: " + (Generated_functions_Test.valFun1()), EqualsTestOp.matches(((Number) new BigInteger("0")), Generated_functions_Test.valFun1()));
+    try {
+      Assert.assertTrue("Expected: " + (((Number) new BigInteger("0"))) + ", but was: " + (Generated_functions_Test.valFun1()), EqualsTestOp.matches(((Number) new BigInteger("0")), Generated_functions_Test.valFun1()));
+    } catch (Throwable failure) {
+      throw SourceNodeFailures.attach(failure, "http://127.0.0.1:63320/node?ref=r%3Af9a70877-66f3-464b-86cb-67a9d543be8c%28test.in.expr.os.functions%40tests%29%2F1922523186434496220");
+    }
   }
   @Test
   public void functions_item2_1922523186434629327() throws Throwable {
-    Assert.assertTrue("Expected: " + (((Number) new BigInteger("0"))) + ", but was: " + (Generated_functions_Test.valFun2()), EqualsTestOp.matches(((Number) new BigInteger("0")), Generated_functions_Test.valFun2()));
+    try {
+      Assert.assertTrue("Expected: " + (((Number) new BigInteger("0"))) + ", but was: " + (Generated_functions_Test.valFun2()), EqualsTestOp.matches(((Number) new BigInteger("0")), Generated_functions_Test.valFun2()));
+    } catch (Throwable failure) {
+      throw SourceNodeFailures.attach(failure, "http://127.0.0.1:63320/node?ref=r%3Af9a70877-66f3-464b-86cb-67a9d543be8c%28test.in.expr.os.functions%40tests%29%2F1922523186434629327");
+    }
   }
   @Test
   public void functions_item3_1922523186434798664() throws Throwable {
-    Assert.assertTrue("Expected: " + (((Number) new BigInteger("0"))) + ", but was: " + (Generated_functions_Test.valFun3()), EqualsTestOp.matches(((Number) new BigInteger("0")), Generated_functions_Test.valFun3()));
+    try {
+      Assert.assertTrue("Expected: " + (((Number) new BigInteger("0"))) + ", but was: " + (Generated_functions_Test.valFun3()), EqualsTestOp.matches(((Number) new BigInteger("0")), Generated_functions_Test.valFun3()));
+    } catch (Throwable failure) {
+      throw SourceNodeFailures.attach(failure, "http://127.0.0.1:63320/node?ref=r%3Af9a70877-66f3-464b-86cb-67a9d543be8c%28test.in.expr.os.functions%40tests%29%2F1922523186434798664");
+    }
   }
   @Test
   public void functions_item5_1783401584936289612() throws Throwable {
-    Assert.assertTrue("Expected: " + (((Number) new BigInteger("5"))) + ", but was: " + (Generated_functions_Test.noArg()), EqualsTestOp.matches(((Number) new BigInteger("5")), Generated_functions_Test.noArg()));
+    try {
+      Assert.assertTrue("Expected: " + (((Number) new BigInteger("5"))) + ", but was: " + (Generated_functions_Test.noArg()), EqualsTestOp.matches(((Number) new BigInteger("5")), Generated_functions_Test.noArg()));
+    } catch (Throwable failure) {
+      throw SourceNodeFailures.attach(failure, "http://127.0.0.1:63320/node?ref=r%3Af9a70877-66f3-464b-86cb-67a9d543be8c%28test.in.expr.os.functions%40tests%29%2F1783401584936289612");
+    }
   }
   @Test
   public void functions_item6_1783401584936325931() throws Throwable {
-    Assert.assertTrue("Expected: " + (((Number) new BigInteger("0"))) + ", but was: " + (Generated_functions_Test.inc(((Number) new BigInteger("-1")))), EqualsTestOp.matches(((Number) new BigInteger("0")), Generated_functions_Test.inc(((Number) new BigInteger("-1")))));
+    try {
+      Assert.assertTrue("Expected: " + (((Number) new BigInteger("0"))) + ", but was: " + (Generated_functions_Test.inc(((Number) new BigInteger("-1")))), EqualsTestOp.matches(((Number) new BigInteger("0")), Generated_functions_Test.inc(((Number) new BigInteger("-1")))));
+    } catch (Throwable failure) {
+      throw SourceNodeFailures.attach(failure, "http://127.0.0.1:63320/node?ref=r%3Af9a70877-66f3-464b-86cb-67a9d543be8c%28test.in.expr.os.functions%40tests%29%2F1783401584936325931");
+    }
   }
   @Test
   public void functions_x_7740953487930648664() throws Throwable {
-    Assert.assertTrue("Expected: " + (((Number) new BigInteger("3"))) + ", but was: " + (Generated_functions_Test.add(((Number) new BigInteger("1")), ((Number) new BigInteger("2")))), EqualsTestOp.matches(((Number) new BigInteger("3")), Generated_functions_Test.add(((Number) new BigInteger("1")), ((Number) new BigInteger("2")))));
+    try {
+      Assert.assertTrue("Expected: " + (((Number) new BigInteger("3"))) + ", but was: " + (Generated_functions_Test.add(((Number) new BigInteger("1")), ((Number) new BigInteger("2")))), EqualsTestOp.matches(((Number) new BigInteger("3")), Generated_functions_Test.add(((Number) new BigInteger("1")), ((Number) new BigInteger("2")))));
+    } catch (Throwable failure) {
+      throw SourceNodeFailures.attach(failure, "http://127.0.0.1:63320/node?ref=r%3Af9a70877-66f3-464b-86cb-67a9d543be8c%28test.in.expr.os.functions%40tests%29%2F7740953487930648664");
+    }
   }
   @Test
   public void functions_y_7740953487930648671() throws Throwable {
-    Assert.assertTrue("Expected: " + (((Number) new BigInteger("6"))) + ", but was: " + (addExt.addExt(Generated_functions_Test.add(((Number) new BigInteger("1")), ((Number) new BigInteger("2"))), ((Number) new BigInteger("3")))), EqualsTestOp.matches(((Number) new BigInteger("6")), addExt.addExt(Generated_functions_Test.add(((Number) new BigInteger("1")), ((Number) new BigInteger("2"))), ((Number) new BigInteger("3")))));
+    try {
+      Assert.assertTrue("Expected: " + (((Number) new BigInteger("6"))) + ", but was: " + (addExt.addExt(Generated_functions_Test.add(((Number) new BigInteger("1")), ((Number) new BigInteger("2"))), ((Number) new BigInteger("3")))), EqualsTestOp.matches(((Number) new BigInteger("6")), addExt.addExt(Generated_functions_Test.add(((Number) new BigInteger("1")), ((Number) new BigInteger("2"))), ((Number) new BigInteger("3")))));
+    } catch (Throwable failure) {
+      throw SourceNodeFailures.attach(failure, "http://127.0.0.1:63320/node?ref=r%3Af9a70877-66f3-464b-86cb-67a9d543be8c%28test.in.expr.os.functions%40tests%29%2F7740953487930648671");
+    }
   }
   @Test
   public void functions_item9_1783401584936398654() throws Throwable {
-    Assert.assertTrue("Expected: " + (((Number) new BigInteger("4"))) + ", but was: " + (incExt.incExt(Generated_functions_Test.add(((Number) new BigInteger("1")), ((Number) new BigInteger("2"))))), EqualsTestOp.matches(((Number) new BigInteger("4")), incExt.incExt(Generated_functions_Test.add(((Number) new BigInteger("1")), ((Number) new BigInteger("2"))))));
+    try {
+      Assert.assertTrue("Expected: " + (((Number) new BigInteger("4"))) + ", but was: " + (incExt.incExt(Generated_functions_Test.add(((Number) new BigInteger("1")), ((Number) new BigInteger("2"))))), EqualsTestOp.matches(((Number) new BigInteger("4")), incExt.incExt(Generated_functions_Test.add(((Number) new BigInteger("1")), ((Number) new BigInteger("2"))))));
+    } catch (Throwable failure) {
+      throw SourceNodeFailures.attach(failure, "http://127.0.0.1:63320/node?ref=r%3Af9a70877-66f3-464b-86cb-67a9d543be8c%28test.in.expr.os.functions%40tests%29%2F1783401584936398654");
+    }
   }
   @Test
   public void functions_item10_1783401584937899811() throws Throwable {
-    Assert.assertTrue("Expected: " + (((Number) new BigInteger("5"))) + ", but was: " + (Generated_functions_Test.inc(incExt.incExt(Generated_functions_Test.add(((Number) new BigInteger("1")), ((Number) new BigInteger("2")))))), EqualsTestOp.matches(((Number) new BigInteger("5")), Generated_functions_Test.inc(incExt.incExt(Generated_functions_Test.add(((Number) new BigInteger("1")), ((Number) new BigInteger("2")))))));
+    try {
+      Assert.assertTrue("Expected: " + (((Number) new BigInteger("5"))) + ", but was: " + (Generated_functions_Test.inc(incExt.incExt(Generated_functions_Test.add(((Number) new BigInteger("1")), ((Number) new BigInteger("2")))))), EqualsTestOp.matches(((Number) new BigInteger("5")), Generated_functions_Test.inc(incExt.incExt(Generated_functions_Test.add(((Number) new BigInteger("1")), ((Number) new BigInteger("2")))))));
+    } catch (Throwable failure) {
+      throw SourceNodeFailures.attach(failure, "http://127.0.0.1:63320/node?ref=r%3Af9a70877-66f3-464b-86cb-67a9d543be8c%28test.in.expr.os.functions%40tests%29%2F1783401584937899811");
+    }
   }
   @Test
   public void functions_item11_1783401584937944147() throws Throwable {
-    Assert.assertTrue("Expected: " + (((Number) new BigInteger("5"))) + ", but was: " + (incExt.incExt(incExt.incExt(Generated_functions_Test.add(((Number) new BigInteger("1")), ((Number) new BigInteger("2")))))), EqualsTestOp.matches(((Number) new BigInteger("5")), incExt.incExt(incExt.incExt(Generated_functions_Test.add(((Number) new BigInteger("1")), ((Number) new BigInteger("2")))))));
+    try {
+      Assert.assertTrue("Expected: " + (((Number) new BigInteger("5"))) + ", but was: " + (incExt.incExt(incExt.incExt(Generated_functions_Test.add(((Number) new BigInteger("1")), ((Number) new BigInteger("2")))))), EqualsTestOp.matches(((Number) new BigInteger("5")), incExt.incExt(incExt.incExt(Generated_functions_Test.add(((Number) new BigInteger("1")), ((Number) new BigInteger("2")))))));
+    } catch (Throwable failure) {
+      throw SourceNodeFailures.attach(failure, "http://127.0.0.1:63320/node?ref=r%3Af9a70877-66f3-464b-86cb-67a9d543be8c%28test.in.expr.os.functions%40tests%29%2F1783401584937944147");
+    }
   }
   @Test
   public void functions_item12_1783401584938168759() throws Throwable {
-    Assert.assertTrue("Expected: " + (((Number) new BigInteger("11"))) + ", but was: " + (Generated_functions_Test.add(incExt.incExt(Generated_functions_Test.add(((Number) new BigInteger("1")), ((Number) new BigInteger("2")))), incExt.incExt(addExt.addExt(Generated_functions_Test.add(((Number) new BigInteger("1")), ((Number) new BigInteger("2"))), ((Number) new BigInteger("3")))))), EqualsTestOp.matches(((Number) new BigInteger("11")), Generated_functions_Test.add(incExt.incExt(Generated_functions_Test.add(((Number) new BigInteger("1")), ((Number) new BigInteger("2")))), incExt.incExt(addExt.addExt(Generated_functions_Test.add(((Number) new BigInteger("1")), ((Number) new BigInteger("2"))), ((Number) new BigInteger("3")))))));
+    try {
+      Assert.assertTrue("Expected: " + (((Number) new BigInteger("11"))) + ", but was: " + (Generated_functions_Test.add(incExt.incExt(Generated_functions_Test.add(((Number) new BigInteger("1")), ((Number) new BigInteger("2")))), incExt.incExt(addExt.addExt(Generated_functions_Test.add(((Number) new BigInteger("1")), ((Number) new BigInteger("2"))), ((Number) new BigInteger("3")))))), EqualsTestOp.matches(((Number) new BigInteger("11")), Generated_functions_Test.add(incExt.incExt(Generated_functions_Test.add(((Number) new BigInteger("1")), ((Number) new BigInteger("2")))), incExt.incExt(addExt.addExt(Generated_functions_Test.add(((Number) new BigInteger("1")), ((Number) new BigInteger("2"))), ((Number) new BigInteger("3")))))));
+    } catch (Throwable failure) {
+      throw SourceNodeFailures.attach(failure, "http://127.0.0.1:63320/node?ref=r%3Af9a70877-66f3-464b-86cb-67a9d543be8c%28test.in.expr.os.functions%40tests%29%2F1783401584938168759");
+    }
   }
   @Test
   public void functions_item13_1783401584938151942() throws Throwable {
-    Assert.assertTrue("Expected: " + (((Number) new BigInteger("8"))) + ", but was: " + (addIncExt.addIncExt(Generated_functions_Test.add(((Number) new BigInteger("1")), ((Number) new BigInteger("2"))), ((Number) new BigInteger("3")))), EqualsTestOp.matches(((Number) new BigInteger("8")), addIncExt.addIncExt(Generated_functions_Test.add(((Number) new BigInteger("1")), ((Number) new BigInteger("2"))), ((Number) new BigInteger("3")))));
+    try {
+      Assert.assertTrue("Expected: " + (((Number) new BigInteger("8"))) + ", but was: " + (addIncExt.addIncExt(Generated_functions_Test.add(((Number) new BigInteger("1")), ((Number) new BigInteger("2"))), ((Number) new BigInteger("3")))), EqualsTestOp.matches(((Number) new BigInteger("8")), addIncExt.addIncExt(Generated_functions_Test.add(((Number) new BigInteger("1")), ((Number) new BigInteger("2"))), ((Number) new BigInteger("3")))));
+    } catch (Throwable failure) {
+      throw SourceNodeFailures.attach(failure, "http://127.0.0.1:63320/node?ref=r%3Af9a70877-66f3-464b-86cb-67a9d543be8c%28test.in.expr.os.functions%40tests%29%2F1783401584938151942");
+    }
   }
   @Test
   public void functions_item14_1922523186430007031() throws Throwable {
-    Assert.assertTrue("Expected: " + (((Number) new BigInteger("9"))) + ", but was: " + (Generated_functions_Test.getConstantNumber1()), EqualsTestOp.matches(((Number) new BigInteger("9")), Generated_functions_Test.getConstantNumber1()));
+    try {
+      Assert.assertTrue("Expected: " + (((Number) new BigInteger("9"))) + ", but was: " + (Generated_functions_Test.getConstantNumber1()), EqualsTestOp.matches(((Number) new BigInteger("9")), Generated_functions_Test.getConstantNumber1()));
+    } catch (Throwable failure) {
+      throw SourceNodeFailures.attach(failure, "http://127.0.0.1:63320/node?ref=r%3Af9a70877-66f3-464b-86cb-67a9d543be8c%28test.in.expr.os.functions%40tests%29%2F1922523186430007031");
+    }
   }
   @Test
   public void functions_item15_1922523186430121964() throws Throwable {
-    Assert.assertTrue("Expected: " + (((Number) new BigInteger("9"))) + ", but was: " + (Generated_functions_Test.getConstantNumber2()), EqualsTestOp.matches(((Number) new BigInteger("9")), Generated_functions_Test.getConstantNumber2()));
+    try {
+      Assert.assertTrue("Expected: " + (((Number) new BigInteger("9"))) + ", but was: " + (Generated_functions_Test.getConstantNumber2()), EqualsTestOp.matches(((Number) new BigInteger("9")), Generated_functions_Test.getConstantNumber2()));
+    } catch (Throwable failure) {
+      throw SourceNodeFailures.attach(failure, "http://127.0.0.1:63320/node?ref=r%3Af9a70877-66f3-464b-86cb-67a9d543be8c%28test.in.expr.os.functions%40tests%29%2F1922523186430121964");
+    }
   }
   @Test
   public void functions_item16_1922523186431142423() throws Throwable {
-    Assert.assertTrue("Expected: " + (((Number) new BigInteger("9"))) + ", but was: " + (Generated_functions_Test.getConstantNumber3(((Number) new BigInteger("1")))), EqualsTestOp.matches(((Number) new BigInteger("9")), Generated_functions_Test.getConstantNumber3(((Number) new BigInteger("1")))));
+    try {
+      Assert.assertTrue("Expected: " + (((Number) new BigInteger("9"))) + ", but was: " + (Generated_functions_Test.getConstantNumber3(((Number) new BigInteger("1")))), EqualsTestOp.matches(((Number) new BigInteger("9")), Generated_functions_Test.getConstantNumber3(((Number) new BigInteger("1")))));
+    } catch (Throwable failure) {
+      throw SourceNodeFailures.attach(failure, "http://127.0.0.1:63320/node?ref=r%3Af9a70877-66f3-464b-86cb-67a9d543be8c%28test.in.expr.os.functions%40tests%29%2F1922523186431142423");
+    }
   }
   @Test
   public void functions_item17_1922523186431439087() throws Throwable {
-    Assert.assertTrue("Expected: " + (((Number) new BigInteger("1"))) + ", but was: " + (Generated_functions_Test.getNotConstantNumber(((Number) new BigInteger("1")))), EqualsTestOp.matches(((Number) new BigInteger("1")), Generated_functions_Test.getNotConstantNumber(((Number) new BigInteger("1")))));
+    try {
+      Assert.assertTrue("Expected: " + (((Number) new BigInteger("1"))) + ", but was: " + (Generated_functions_Test.getNotConstantNumber(((Number) new BigInteger("1")))), EqualsTestOp.matches(((Number) new BigInteger("1")), Generated_functions_Test.getNotConstantNumber(((Number) new BigInteger("1")))));
+    } catch (Throwable failure) {
+      throw SourceNodeFailures.attach(failure, "http://127.0.0.1:63320/node?ref=r%3Af9a70877-66f3-464b-86cb-67a9d543be8c%28test.in.expr.os.functions%40tests%29%2F1922523186431439087");
+    }
   }
   @Test
   public void functions_item19_1922523186430430514() throws Throwable {
-    Assert.assertTrue("Expected: " + (((Number) new BigInteger("2"))) + ", but was: " + (Generated_functions_Test.returnArg(((Number) new BigInteger("2")))), EqualsTestOp.matches(((Number) new BigInteger("2")), Generated_functions_Test.returnArg(((Number) new BigInteger("2")))));
+    try {
+      Assert.assertTrue("Expected: " + (((Number) new BigInteger("2"))) + ", but was: " + (Generated_functions_Test.returnArg(((Number) new BigInteger("2")))), EqualsTestOp.matches(((Number) new BigInteger("2")), Generated_functions_Test.returnArg(((Number) new BigInteger("2")))));
+    } catch (Throwable failure) {
+      throw SourceNodeFailures.attach(failure, "http://127.0.0.1:63320/node?ref=r%3Af9a70877-66f3-464b-86cb-67a9d543be8c%28test.in.expr.os.functions%40tests%29%2F1922523186430430514");
+    }
   }
   @Test
   public void functions_item20_1783401584937967827() throws Throwable {
-    Assert.assertTrue("Expected: " + (((Number) new BigInteger("7"))) + ", but was: " + (Generated_functions_Test.nested()), EqualsTestOp.matches(((Number) new BigInteger("7")), Generated_functions_Test.nested()));
+    try {
+      Assert.assertTrue("Expected: " + (((Number) new BigInteger("7"))) + ", but was: " + (Generated_functions_Test.nested()), EqualsTestOp.matches(((Number) new BigInteger("7")), Generated_functions_Test.nested()));
+    } catch (Throwable failure) {
+      throw SourceNodeFailures.attach(failure, "http://127.0.0.1:63320/node?ref=r%3Af9a70877-66f3-464b-86cb-67a9d543be8c%28test.in.expr.os.functions%40tests%29%2F1783401584937967827");
+    }
   }
   @Test
   public void functions_item21_2143211017906938182() throws Throwable {
-    Assert.assertTrue("Expected: " + (((Number) new BigInteger("11"))) + ", but was: " + (addExt.addExt(Generated_functions_Test.constantNumber_, ((Number) new BigInteger("2")))), EqualsTestOp.matches(((Number) new BigInteger("11")), addExt.addExt(Generated_functions_Test.constantNumber_, ((Number) new BigInteger("2")))));
+    try {
+      Assert.assertTrue("Expected: " + (((Number) new BigInteger("11"))) + ", but was: " + (addExt.addExt(Generated_functions_Test.constantNumber_, ((Number) new BigInteger("2")))), EqualsTestOp.matches(((Number) new BigInteger("11")), addExt.addExt(Generated_functions_Test.constantNumber_, ((Number) new BigInteger("2")))));
+    } catch (Throwable failure) {
+      throw SourceNodeFailures.attach(failure, "http://127.0.0.1:63320/node?ref=r%3Af9a70877-66f3-464b-86cb-67a9d543be8c%28test.in.expr.os.functions%40tests%29%2F2143211017906938182");
+    }
   }
   @Test
   public void functions_item22_2143211017907226142() throws Throwable {
-    Assert.assertTrue("Expected: " + (((Number) new BigInteger("11"))) + ", but was: " + (addExt1.addExt1(Generated_functions_Test.constantNumber_, ((Number) new BigInteger("2")))), EqualsTestOp.matches(((Number) new BigInteger("11")), addExt1.addExt1(Generated_functions_Test.constantNumber_, ((Number) new BigInteger("2")))));
+    try {
+      Assert.assertTrue("Expected: " + (((Number) new BigInteger("11"))) + ", but was: " + (addExt1.addExt1(Generated_functions_Test.constantNumber_, ((Number) new BigInteger("2")))), EqualsTestOp.matches(((Number) new BigInteger("11")), addExt1.addExt1(Generated_functions_Test.constantNumber_, ((Number) new BigInteger("2")))));
+    } catch (Throwable failure) {
+      throw SourceNodeFailures.attach(failure, "http://127.0.0.1:63320/node?ref=r%3Af9a70877-66f3-464b-86cb-67a9d543be8c%28test.in.expr.os.functions%40tests%29%2F2143211017907226142");
+    }
   }
   @Test
   public void functions_item23_2143211017907385006() throws Throwable {
-    Assert.assertTrue("Expected: " + (((Number) new BigInteger("13"))) + ", but was: " + (addExt2.addExt2(Generated_functions_Test.constantNumber_, ((Number) new BigInteger("2")), ((Number) new BigInteger("2")))), EqualsTestOp.matches(((Number) new BigInteger("13")), addExt2.addExt2(Generated_functions_Test.constantNumber_, ((Number) new BigInteger("2")), ((Number) new BigInteger("2")))));
+    try {
+      Assert.assertTrue("Expected: " + (((Number) new BigInteger("13"))) + ", but was: " + (addExt2.addExt2(Generated_functions_Test.constantNumber_, ((Number) new BigInteger("2")), ((Number) new BigInteger("2")))), EqualsTestOp.matches(((Number) new BigInteger("13")), addExt2.addExt2(Generated_functions_Test.constantNumber_, ((Number) new BigInteger("2")), ((Number) new BigInteger("2")))));
+    } catch (Throwable failure) {
+      throw SourceNodeFailures.attach(failure, "http://127.0.0.1:63320/node?ref=r%3Af9a70877-66f3-464b-86cb-67a9d543be8c%28test.in.expr.os.functions%40tests%29%2F2143211017907385006");
+    }
   }
   public static Number valFun1() {
     Number res = ((_FunctionTypes._return_P0_E0<Number>) () -> {

@@ -4,6 +4,7 @@ package test.in.expr.os.options;
 
 import org.junit.Test;
 import org.junit.Assert;
+import org.iets3.core.expr.genjava.tests.rt.rt.SourceNodeFailures;
 
 /**
  * 
@@ -12,11 +13,19 @@ public class Generated_optionDefaultValues_Test {
 
   @Test
   public void TestDefaultValues_item0_6932772747675576602() throws Throwable {
-    Assert.assertEquals("Expected: " + (null) + ", but was: " + (null), (Object) null, (Object) null);
+    try {
+      Assert.assertEquals("Expected: " + (null) + ", but was: " + (null), (Object) null, (Object) null);
+    } catch (Throwable failure) {
+      throw SourceNodeFailures.attach(failure, "http://127.0.0.1:63320/node?ref=r%3Aea293304-2b79-4cc3-9b45-e3362a713a17%28test.in.expr.os.options%40tests%29%2F6932772747675576602");
+    }
   }
   @Test
   public void TestDefaultValues_item1_4638701830921386526() throws Throwable {
-    Assert.assertEquals("Expected: " + (null) + ", but was: " + (null), (Object) null, (Object) null);
+    try {
+      Assert.assertEquals("Expected: " + (null) + ", but was: " + (null), (Object) null, (Object) null);
+    } catch (Throwable failure) {
+      throw SourceNodeFailures.attach(failure, "http://127.0.0.1:63320/node?ref=r%3Aea293304-2b79-4cc3-9b45-e3362a713a17%28test.in.expr.os.options%40tests%29%2F4638701830921386526");
+    }
   }
 
 

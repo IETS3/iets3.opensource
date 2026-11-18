@@ -17,6 +17,7 @@ import java.util.Arrays;
 import org.iets3.core.expr.genjava.base.rt.rt.GlobalContext;
 import org.junit.Test;
 import org.junit.Assert;
+import org.iets3.core.expr.genjava.tests.rt.rt.SourceNodeFailures;
 import org.iets3.core.expr.genjava.tests.rt.rt.EqualsTestOp;
 
 /**
@@ -94,71 +95,95 @@ public class Generated_error_Test {
   public static final Validation<KernelFErrorException, String> s_ = Generated_error_Test.tryInComplete(((Number) new BigInteger("42")));
   @Test
   public void try_item0_9212286833127726445() throws Throwable {
-    Assert.assertEquals("Expected: " + ("success") + ", but was: " + (Generated_error_Test.tryComplete(((Number) new BigInteger("1")))), (Object) "success", (Object) Generated_error_Test.tryComplete(((Number) new BigInteger("1"))));
+    try {
+      Assert.assertEquals("Expected: " + ("success") + ", but was: " + (Generated_error_Test.tryComplete(((Number) new BigInteger("1")))), (Object) "success", (Object) Generated_error_Test.tryComplete(((Number) new BigInteger("1"))));
+    } catch (Throwable failure) {
+      throw SourceNodeFailures.attach(failure, "http://127.0.0.1:63320/node?ref=r%3A88ec7cd5-2a4a-4f67-acf4-2cc4711c1bed%28test.in.expr.os.error%40tests%29%2F9212286833127726445");
+    }
   }
   @Test
   public void try_item1_9212286833127767694() throws Throwable {
-    Assert.assertEquals("Expected: " + ("A") + ", but was: " + (Generated_error_Test.tryComplete(((Number) new BigInteger("2")))), (Object) "A", (Object) Generated_error_Test.tryComplete(((Number) new BigInteger("2"))));
+    try {
+      Assert.assertEquals("Expected: " + ("A") + ", but was: " + (Generated_error_Test.tryComplete(((Number) new BigInteger("2")))), (Object) "A", (Object) Generated_error_Test.tryComplete(((Number) new BigInteger("2"))));
+    } catch (Throwable failure) {
+      throw SourceNodeFailures.attach(failure, "http://127.0.0.1:63320/node?ref=r%3A88ec7cd5-2a4a-4f67-acf4-2cc4711c1bed%28test.in.expr.os.error%40tests%29%2F9212286833127767694");
+    }
   }
   @Test
   public void try_item2_9212286833127849796() throws Throwable {
-    Assert.assertEquals("Expected: " + ("B") + ", but was: " + (Generated_error_Test.tryComplete(((Number) new BigInteger("3")))), (Object) "B", (Object) Generated_error_Test.tryComplete(((Number) new BigInteger("3"))));
+    try {
+      Assert.assertEquals("Expected: " + ("B") + ", but was: " + (Generated_error_Test.tryComplete(((Number) new BigInteger("3")))), (Object) "B", (Object) Generated_error_Test.tryComplete(((Number) new BigInteger("3"))));
+    } catch (Throwable failure) {
+      throw SourceNodeFailures.attach(failure, "http://127.0.0.1:63320/node?ref=r%3A88ec7cd5-2a4a-4f67-acf4-2cc4711c1bed%28test.in.expr.os.error%40tests%29%2F9212286833127849796");
+    }
   }
   @Test
   public void try_item3_9212286833128031377() throws Throwable {
-    Assert.assertEquals("Expected: " + ("A") + ", but was: " + (Generated_error_Test.tryComplete(((Number) new BigInteger("4")))), (Object) "A", (Object) Generated_error_Test.tryComplete(((Number) new BigInteger("4"))));
+    try {
+      Assert.assertEquals("Expected: " + ("A") + ", but was: " + (Generated_error_Test.tryComplete(((Number) new BigInteger("4")))), (Object) "A", (Object) Generated_error_Test.tryComplete(((Number) new BigInteger("4"))));
+    } catch (Throwable failure) {
+      throw SourceNodeFailures.attach(failure, "http://127.0.0.1:63320/node?ref=r%3A88ec7cd5-2a4a-4f67-acf4-2cc4711c1bed%28test.in.expr.os.error%40tests%29%2F9212286833128031377");
+    }
   }
   @Test
   public void try_item4_9212286833130292821() throws Throwable {
-    Assert.assertEquals("Expected: " + ("B") + ", but was: " + (((_FunctionTypes._return_P0_E0<String>) () -> {
-      try {
-        Generated_error_Test.tryInComplete(((Number) new BigInteger("3"))).success();
-        return "nope";
-      } catch (Error e) {
-        if (Generated_error_Test.tryInComplete(((Number) new BigInteger("3"))).fail().getErrorLiteral().equals("B")) {
-          return "B";
-        }
-        throw new RuntimeException("Try failed");
+    try {
+      Assert.assertEquals("Expected: " + ("B") + ", but was: " + (((_FunctionTypes._return_P0_E0<String>) () -> {
+        try {
+          Generated_error_Test.tryInComplete(((Number) new BigInteger("3"))).success();
+          return "nope";
+        } catch (Error e) {
+          if (Generated_error_Test.tryInComplete(((Number) new BigInteger("3"))).fail().getErrorLiteral().equals("B")) {
+            return "B";
+          }
+          throw new RuntimeException("Try failed");
 
-      }
-    }).invoke()), (Object) "B", (Object) ((_FunctionTypes._return_P0_E0<String>) () -> {
-      try {
-        Generated_error_Test.tryInComplete(((Number) new BigInteger("3"))).success();
-        return "nope";
-      } catch (Error e) {
-        if (Generated_error_Test.tryInComplete(((Number) new BigInteger("3"))).fail().getErrorLiteral().equals("B")) {
-          return "B";
         }
-        throw new RuntimeException("Try failed");
+      }).invoke()), (Object) "B", (Object) ((_FunctionTypes._return_P0_E0<String>) () -> {
+        try {
+          Generated_error_Test.tryInComplete(((Number) new BigInteger("3"))).success();
+          return "nope";
+        } catch (Error e) {
+          if (Generated_error_Test.tryInComplete(((Number) new BigInteger("3"))).fail().getErrorLiteral().equals("B")) {
+            return "B";
+          }
+          throw new RuntimeException("Try failed");
 
-      }
-    }).invoke());
+        }
+      }).invoke());
+    } catch (Throwable failure) {
+      throw SourceNodeFailures.attach(failure, "http://127.0.0.1:63320/node?ref=r%3A88ec7cd5-2a4a-4f67-acf4-2cc4711c1bed%28test.in.expr.os.error%40tests%29%2F9212286833130292821");
+    }
   }
   @Test
   public void try_item5_9212286833134230082() throws Throwable {
-    Assert.assertEquals("Expected: " + ("nope") + ", but was: " + (((_FunctionTypes._return_P0_E0<String>) () -> {
-      try {
-        Generated_error_Test.tryInComplete(((Number) new BigInteger("4"))).success();
-        return "nope";
-      } catch (Error e) {
-        if (Generated_error_Test.tryInComplete(((Number) new BigInteger("4"))).fail().getErrorLiteral().equals("B")) {
-          return "B";
-        }
-        return "Z";
+    try {
+      Assert.assertEquals("Expected: " + ("nope") + ", but was: " + (((_FunctionTypes._return_P0_E0<String>) () -> {
+        try {
+          Generated_error_Test.tryInComplete(((Number) new BigInteger("4"))).success();
+          return "nope";
+        } catch (Error e) {
+          if (Generated_error_Test.tryInComplete(((Number) new BigInteger("4"))).fail().getErrorLiteral().equals("B")) {
+            return "B";
+          }
+          return "Z";
 
-      }
-    }).invoke()), (Object) "nope", (Object) ((_FunctionTypes._return_P0_E0<String>) () -> {
-      try {
-        Generated_error_Test.tryInComplete(((Number) new BigInteger("4"))).success();
-        return "nope";
-      } catch (Error e) {
-        if (Generated_error_Test.tryInComplete(((Number) new BigInteger("4"))).fail().getErrorLiteral().equals("B")) {
-          return "B";
         }
-        return "Z";
+      }).invoke()), (Object) "nope", (Object) ((_FunctionTypes._return_P0_E0<String>) () -> {
+        try {
+          Generated_error_Test.tryInComplete(((Number) new BigInteger("4"))).success();
+          return "nope";
+        } catch (Error e) {
+          if (Generated_error_Test.tryInComplete(((Number) new BigInteger("4"))).fail().getErrorLiteral().equals("B")) {
+            return "B";
+          }
+          return "Z";
 
-      }
-    }).invoke());
+        }
+      }).invoke());
+    } catch (Throwable failure) {
+      throw SourceNodeFailures.attach(failure, "http://127.0.0.1:63320/node?ref=r%3A88ec7cd5-2a4a-4f67-acf4-2cc4711c1bed%28test.in.expr.os.error%40tests%29%2F9212286833134230082");
+    }
   }
   public static Number attempParamFunc(Validation<KernelFErrorException, String> in) {
     Number res = ((_FunctionTypes._return_P0_E0<Number>) () -> {
@@ -203,31 +228,59 @@ public class Generated_error_Test {
   }
   @Test
   public void attemptParam_item0_5424171137900326645() throws Throwable {
-    Assert.assertTrue("Expected: " + (((Number) new BigInteger("1"))) + ", but was: " + (Generated_error_Test.attempParamFunc(Validation.success("success"))), EqualsTestOp.matches(((Number) new BigInteger("1")), Generated_error_Test.attempParamFunc(Validation.success("success"))));
+    try {
+      Assert.assertTrue("Expected: " + (((Number) new BigInteger("1"))) + ", but was: " + (Generated_error_Test.attempParamFunc(Validation.success("success"))), EqualsTestOp.matches(((Number) new BigInteger("1")), Generated_error_Test.attempParamFunc(Validation.success("success"))));
+    } catch (Throwable failure) {
+      throw SourceNodeFailures.attach(failure, "http://127.0.0.1:63320/node?ref=r%3A88ec7cd5-2a4a-4f67-acf4-2cc4711c1bed%28test.in.expr.os.error%40tests%29%2F5424171137900326645");
+    }
   }
   @Test
   public void attemptParam_item1_5424171137900326651() throws Throwable {
-    Assert.assertTrue("Expected: " + (((Number) new BigInteger("2"))) + ", but was: " + (Generated_error_Test.attempParamFunc(Validation.fail(new KernelFErrorException("A")))), EqualsTestOp.matches(((Number) new BigInteger("2")), Generated_error_Test.attempParamFunc(Validation.fail(new KernelFErrorException("A")))));
+    try {
+      Assert.assertTrue("Expected: " + (((Number) new BigInteger("2"))) + ", but was: " + (Generated_error_Test.attempParamFunc(Validation.fail(new KernelFErrorException("A")))), EqualsTestOp.matches(((Number) new BigInteger("2")), Generated_error_Test.attempParamFunc(Validation.fail(new KernelFErrorException("A")))));
+    } catch (Throwable failure) {
+      throw SourceNodeFailures.attach(failure, "http://127.0.0.1:63320/node?ref=r%3A88ec7cd5-2a4a-4f67-acf4-2cc4711c1bed%28test.in.expr.os.error%40tests%29%2F5424171137900326651");
+    }
   }
   @Test
   public void attemptParam_item2_5424171137900326657() throws Throwable {
-    Assert.assertTrue("Expected: " + (((Number) new BigInteger("3"))) + ", but was: " + (Generated_error_Test.attempParamFunc(Validation.fail(new KernelFErrorException("B")))), EqualsTestOp.matches(((Number) new BigInteger("3")), Generated_error_Test.attempParamFunc(Validation.fail(new KernelFErrorException("B")))));
+    try {
+      Assert.assertTrue("Expected: " + (((Number) new BigInteger("3"))) + ", but was: " + (Generated_error_Test.attempParamFunc(Validation.fail(new KernelFErrorException("B")))), EqualsTestOp.matches(((Number) new BigInteger("3")), Generated_error_Test.attempParamFunc(Validation.fail(new KernelFErrorException("B")))));
+    } catch (Throwable failure) {
+      throw SourceNodeFailures.attach(failure, "http://127.0.0.1:63320/node?ref=r%3A88ec7cd5-2a4a-4f67-acf4-2cc4711c1bed%28test.in.expr.os.error%40tests%29%2F5424171137900326657");
+    }
   }
   @Test
   public void attemptParam_item3_3611639268121069848() throws Throwable {
-    Assert.assertTrue("Expected: " + (((Number) new BigInteger("1"))) + ", but was: " + (Generated_error_Test.attempParamFunc(Generated_error_Test.errorFunc(((Number) new BigInteger("1"))))), EqualsTestOp.matches(((Number) new BigInteger("1")), Generated_error_Test.attempParamFunc(Generated_error_Test.errorFunc(((Number) new BigInteger("1"))))));
+    try {
+      Assert.assertTrue("Expected: " + (((Number) new BigInteger("1"))) + ", but was: " + (Generated_error_Test.attempParamFunc(Generated_error_Test.errorFunc(((Number) new BigInteger("1"))))), EqualsTestOp.matches(((Number) new BigInteger("1")), Generated_error_Test.attempParamFunc(Generated_error_Test.errorFunc(((Number) new BigInteger("1"))))));
+    } catch (Throwable failure) {
+      throw SourceNodeFailures.attach(failure, "http://127.0.0.1:63320/node?ref=r%3A88ec7cd5-2a4a-4f67-acf4-2cc4711c1bed%28test.in.expr.os.error%40tests%29%2F3611639268121069848");
+    }
   }
   @Test
   public void attemptParam_item4_3611639268121069854() throws Throwable {
-    Assert.assertTrue("Expected: " + (((Number) new BigInteger("2"))) + ", but was: " + (Generated_error_Test.attempParamFunc(Generated_error_Test.errorFunc(((Number) new BigInteger("2"))))), EqualsTestOp.matches(((Number) new BigInteger("2")), Generated_error_Test.attempParamFunc(Generated_error_Test.errorFunc(((Number) new BigInteger("2"))))));
+    try {
+      Assert.assertTrue("Expected: " + (((Number) new BigInteger("2"))) + ", but was: " + (Generated_error_Test.attempParamFunc(Generated_error_Test.errorFunc(((Number) new BigInteger("2"))))), EqualsTestOp.matches(((Number) new BigInteger("2")), Generated_error_Test.attempParamFunc(Generated_error_Test.errorFunc(((Number) new BigInteger("2"))))));
+    } catch (Throwable failure) {
+      throw SourceNodeFailures.attach(failure, "http://127.0.0.1:63320/node?ref=r%3A88ec7cd5-2a4a-4f67-acf4-2cc4711c1bed%28test.in.expr.os.error%40tests%29%2F3611639268121069854");
+    }
   }
   @Test
   public void attemptParam_item5_3611639268121069860() throws Throwable {
-    Assert.assertTrue("Expected: " + (((Number) new BigInteger("3"))) + ", but was: " + (Generated_error_Test.attempParamFunc(Generated_error_Test.errorFunc(((Number) new BigInteger("3"))))), EqualsTestOp.matches(((Number) new BigInteger("3")), Generated_error_Test.attempParamFunc(Generated_error_Test.errorFunc(((Number) new BigInteger("3"))))));
+    try {
+      Assert.assertTrue("Expected: " + (((Number) new BigInteger("3"))) + ", but was: " + (Generated_error_Test.attempParamFunc(Generated_error_Test.errorFunc(((Number) new BigInteger("3"))))), EqualsTestOp.matches(((Number) new BigInteger("3")), Generated_error_Test.attempParamFunc(Generated_error_Test.errorFunc(((Number) new BigInteger("3"))))));
+    } catch (Throwable failure) {
+      throw SourceNodeFailures.attach(failure, "http://127.0.0.1:63320/node?ref=r%3A88ec7cd5-2a4a-4f67-acf4-2cc4711c1bed%28test.in.expr.os.error%40tests%29%2F3611639268121069860");
+    }
   }
   @Test
   public void attemptParam_item6_3611639268121069866() throws Throwable {
-    Assert.assertTrue("Expected: " + (((Number) new BigInteger("2"))) + ", but was: " + (Generated_error_Test.attempParamFunc(Generated_error_Test.errorFunc(((Number) new BigInteger("4"))))), EqualsTestOp.matches(((Number) new BigInteger("2")), Generated_error_Test.attempParamFunc(Generated_error_Test.errorFunc(((Number) new BigInteger("4"))))));
+    try {
+      Assert.assertTrue("Expected: " + (((Number) new BigInteger("2"))) + ", but was: " + (Generated_error_Test.attempParamFunc(Generated_error_Test.errorFunc(((Number) new BigInteger("4"))))), EqualsTestOp.matches(((Number) new BigInteger("2")), Generated_error_Test.attempParamFunc(Generated_error_Test.errorFunc(((Number) new BigInteger("4"))))));
+    } catch (Throwable failure) {
+      throw SourceNodeFailures.attach(failure, "http://127.0.0.1:63320/node?ref=r%3A88ec7cd5-2a4a-4f67-acf4-2cc4711c1bed%28test.in.expr.os.error%40tests%29%2F3611639268121069866");
+    }
   }
   public static Validation<KernelFErrorException, String> f(Boolean b) {
     Validation<KernelFErrorException, String> res = ((_FunctionTypes._return_P0_E0<Validation<KernelFErrorException, String>>) () -> {
@@ -242,29 +295,33 @@ public class Generated_error_Test {
   }
   @Test
   public void TRY_item0_9212286833126123939() throws Throwable {
-    Assert.assertTrue("Expected: " + (((Number) new BigInteger("10"))) + ", but was: " + (((_FunctionTypes._return_P0_E0<Number>) () -> {
-      try {
-        Generated_error_Test.f(true).success();
-        return ((Number) new BigInteger("10"));
-      } catch (Error e) {
-        if (Generated_error_Test.f(true).fail().getErrorLiteral().equals("X")) {
-          return ((Number) new BigInteger("30"));
-        }
-        throw new RuntimeException("Try failed");
+    try {
+      Assert.assertTrue("Expected: " + (((Number) new BigInteger("10"))) + ", but was: " + (((_FunctionTypes._return_P0_E0<Number>) () -> {
+        try {
+          Generated_error_Test.f(true).success();
+          return ((Number) new BigInteger("10"));
+        } catch (Error e) {
+          if (Generated_error_Test.f(true).fail().getErrorLiteral().equals("X")) {
+            return ((Number) new BigInteger("30"));
+          }
+          throw new RuntimeException("Try failed");
 
-      }
-    }).invoke()), EqualsTestOp.matches(((Number) new BigInteger("10")), ((_FunctionTypes._return_P0_E0<Number>) () -> {
-      try {
-        Generated_error_Test.f(true).success();
-        return ((Number) new BigInteger("10"));
-      } catch (Error e) {
-        if (Generated_error_Test.f(true).fail().getErrorLiteral().equals("X")) {
-          return ((Number) new BigInteger("30"));
         }
-        throw new RuntimeException("Try failed");
+      }).invoke()), EqualsTestOp.matches(((Number) new BigInteger("10")), ((_FunctionTypes._return_P0_E0<Number>) () -> {
+        try {
+          Generated_error_Test.f(true).success();
+          return ((Number) new BigInteger("10"));
+        } catch (Error e) {
+          if (Generated_error_Test.f(true).fail().getErrorLiteral().equals("X")) {
+            return ((Number) new BigInteger("30"));
+          }
+          throw new RuntimeException("Try failed");
 
-      }
-    }).invoke()));
+        }
+      }).invoke()));
+    } catch (Throwable failure) {
+      throw SourceNodeFailures.attach(failure, "http://127.0.0.1:63320/node?ref=r%3A88ec7cd5-2a4a-4f67-acf4-2cc4711c1bed%28test.in.expr.os.error%40tests%29%2F9212286833126123939");
+    }
   }
   public static Validation<KernelFErrorException, Number> div(Number c, Number d) {
     Validation<KernelFErrorException, Number> res = ((_FunctionTypes._return_P0_E0<Validation<KernelFErrorException, Number>>) () -> {
@@ -281,27 +338,31 @@ public class Generated_error_Test {
   public static final Validation<KernelFErrorException, Number> two2_ = Generated_error_Test.div(((Number) new BigInteger("4")), ((Number) new BigInteger("2")));
   @Test
   public void testDivision_item0_3822903164807978076() throws Throwable {
-    Assert.assertTrue("Expected: " + (((Number) new BigInteger("3"))) + ", but was: " + (AH.add(((_FunctionTypes._return_P0_E0<Number>) () -> {
-      try {
-        Number res = Generated_error_Test.two1_.success();
-        return res;
-      } catch (Error e) {
-        if (Generated_error_Test.two1_.fail().getErrorLiteral().equals("DIVBYZERO")) {
-          return ((BigInteger) ((Number) new BigInteger("1"))).negate();
+    try {
+      Assert.assertTrue("Expected: " + (((Number) new BigInteger("3"))) + ", but was: " + (AH.add(((_FunctionTypes._return_P0_E0<Number>) () -> {
+        try {
+          Number res = Generated_error_Test.two1_.success();
+          return res;
+        } catch (Error e) {
+          if (Generated_error_Test.two1_.fail().getErrorLiteral().equals("DIVBYZERO")) {
+            return ((BigInteger) ((Number) new BigInteger("1"))).negate();
+          }
+          throw new RuntimeException("Try failed");
         }
-        throw new RuntimeException("Try failed");
-      }
-    }).invoke(), ((Number) new BigInteger("1")))), EqualsTestOp.matches(((Number) new BigInteger("3")), AH.add(((_FunctionTypes._return_P0_E0<Number>) () -> {
-      try {
-        Number res = Generated_error_Test.two1_.success();
-        return res;
-      } catch (Error e) {
-        if (Generated_error_Test.two1_.fail().getErrorLiteral().equals("DIVBYZERO")) {
-          return ((BigInteger) ((Number) new BigInteger("1"))).negate();
+      }).invoke(), ((Number) new BigInteger("1")))), EqualsTestOp.matches(((Number) new BigInteger("3")), AH.add(((_FunctionTypes._return_P0_E0<Number>) () -> {
+        try {
+          Number res = Generated_error_Test.two1_.success();
+          return res;
+        } catch (Error e) {
+          if (Generated_error_Test.two1_.fail().getErrorLiteral().equals("DIVBYZERO")) {
+            return ((BigInteger) ((Number) new BigInteger("1"))).negate();
+          }
+          throw new RuntimeException("Try failed");
         }
-        throw new RuntimeException("Try failed");
-      }
-    }).invoke(), ((Number) new BigInteger("1")))));
+      }).invoke(), ((Number) new BigInteger("1")))));
+    } catch (Throwable failure) {
+      throw SourceNodeFailures.attach(failure, "http://127.0.0.1:63320/node?ref=r%3A88ec7cd5-2a4a-4f67-acf4-2cc4711c1bed%28test.in.expr.os.error%40tests%29%2F3822903164807978076");
+    }
   }
   public static Validation<KernelFErrorException, String> strangeString(Boolean b) {
     Validation<KernelFErrorException, String> res = ((_FunctionTypes._return_P0_E0<Validation<KernelFErrorException, String>>) () -> {
@@ -316,215 +377,255 @@ public class Generated_error_Test {
   }
   @Test
   public void StringDot_item0_3822903164814416874() throws Throwable {
-    Assert.assertEquals("Expected: " + ("STRANGEX") + ", but was: " + (((_FunctionTypes._return_P0_E0<String>) () -> {
-      try {
-        Generated_error_Test.strangeString(true).success();
-        return AH.addString(Generated_error_Test.strangeString(true).success(), "X");
-      } catch (Error e) {
-        if (Generated_error_Test.strangeString(true).fail().getErrorLiteral().equals("DEAD")) {
-          return "err";
-        }
-        throw new RuntimeException("Try failed");
+    try {
+      Assert.assertEquals("Expected: " + ("STRANGEX") + ", but was: " + (((_FunctionTypes._return_P0_E0<String>) () -> {
+        try {
+          Generated_error_Test.strangeString(true).success();
+          return AH.addString(Generated_error_Test.strangeString(true).success(), "X");
+        } catch (Error e) {
+          if (Generated_error_Test.strangeString(true).fail().getErrorLiteral().equals("DEAD")) {
+            return "err";
+          }
+          throw new RuntimeException("Try failed");
 
-      }
-    }).invoke()), (Object) "STRANGEX", (Object) ((_FunctionTypes._return_P0_E0<String>) () -> {
-      try {
-        Generated_error_Test.strangeString(true).success();
-        return AH.addString(Generated_error_Test.strangeString(true).success(), "X");
-      } catch (Error e) {
-        if (Generated_error_Test.strangeString(true).fail().getErrorLiteral().equals("DEAD")) {
-          return "err";
         }
-        throw new RuntimeException("Try failed");
+      }).invoke()), (Object) "STRANGEX", (Object) ((_FunctionTypes._return_P0_E0<String>) () -> {
+        try {
+          Generated_error_Test.strangeString(true).success();
+          return AH.addString(Generated_error_Test.strangeString(true).success(), "X");
+        } catch (Error e) {
+          if (Generated_error_Test.strangeString(true).fail().getErrorLiteral().equals("DEAD")) {
+            return "err";
+          }
+          throw new RuntimeException("Try failed");
 
-      }
-    }).invoke());
+        }
+      }).invoke());
+    } catch (Throwable failure) {
+      throw SourceNodeFailures.attach(failure, "http://127.0.0.1:63320/node?ref=r%3A88ec7cd5-2a4a-4f67-acf4-2cc4711c1bed%28test.in.expr.os.error%40tests%29%2F3822903164814416874");
+    }
   }
   @Test
   public void StringDot_item1_3822903164814429478() throws Throwable {
-    Assert.assertEquals("Expected: " + ("err") + ", but was: " + (((_FunctionTypes._return_P0_E0<String>) () -> {
-      try {
-        Generated_error_Test.strangeString(false).success();
-        return Generated_error_Test.strangeString(false).success();
-      } catch (Error e) {
-        if (Generated_error_Test.strangeString(false).fail().getErrorLiteral().equals("DEAD")) {
-          return "err";
-        }
-        throw new RuntimeException("Try failed");
+    try {
+      Assert.assertEquals("Expected: " + ("err") + ", but was: " + (((_FunctionTypes._return_P0_E0<String>) () -> {
+        try {
+          Generated_error_Test.strangeString(false).success();
+          return Generated_error_Test.strangeString(false).success();
+        } catch (Error e) {
+          if (Generated_error_Test.strangeString(false).fail().getErrorLiteral().equals("DEAD")) {
+            return "err";
+          }
+          throw new RuntimeException("Try failed");
 
-      }
-    }).invoke()), (Object) "err", (Object) ((_FunctionTypes._return_P0_E0<String>) () -> {
-      try {
-        Generated_error_Test.strangeString(false).success();
-        return Generated_error_Test.strangeString(false).success();
-      } catch (Error e) {
-        if (Generated_error_Test.strangeString(false).fail().getErrorLiteral().equals("DEAD")) {
-          return "err";
         }
-        throw new RuntimeException("Try failed");
+      }).invoke()), (Object) "err", (Object) ((_FunctionTypes._return_P0_E0<String>) () -> {
+        try {
+          Generated_error_Test.strangeString(false).success();
+          return Generated_error_Test.strangeString(false).success();
+        } catch (Error e) {
+          if (Generated_error_Test.strangeString(false).fail().getErrorLiteral().equals("DEAD")) {
+            return "err";
+          }
+          throw new RuntimeException("Try failed");
 
-      }
-    }).invoke());
+        }
+      }).invoke());
+    } catch (Throwable failure) {
+      throw SourceNodeFailures.attach(failure, "http://127.0.0.1:63320/node?ref=r%3A88ec7cd5-2a4a-4f67-acf4-2cc4711c1bed%28test.in.expr.os.error%40tests%29%2F3822903164814429478");
+    }
   }
   @Test
   public void StringDot_item2_7030748110942108459() throws Throwable {
-    Assert.assertTrue("Expected: " + (((Number) new BigInteger("7"))) + ", but was: " + (AH.stringLength(((_FunctionTypes._return_P0_E0<String>) () -> {
-      try {
-        String res = Generated_error_Test.strangeString(true).success();
-        return res;
-      } catch (Error e) {
-        if (Generated_error_Test.strangeString(true).fail().getErrorLiteral().equals("DEAD")) {
-          return "DEAD";
+    try {
+      Assert.assertTrue("Expected: " + (((Number) new BigInteger("7"))) + ", but was: " + (AH.stringLength(((_FunctionTypes._return_P0_E0<String>) () -> {
+        try {
+          String res = Generated_error_Test.strangeString(true).success();
+          return res;
+        } catch (Error e) {
+          if (Generated_error_Test.strangeString(true).fail().getErrorLiteral().equals("DEAD")) {
+            return "DEAD";
+          }
+          throw new RuntimeException("Try failed");
         }
-        throw new RuntimeException("Try failed");
-      }
-    }).invoke())), EqualsTestOp.matches(((Number) new BigInteger("7")), AH.stringLength(((_FunctionTypes._return_P0_E0<String>) () -> {
-      try {
-        String res = Generated_error_Test.strangeString(true).success();
-        return res;
-      } catch (Error e) {
-        if (Generated_error_Test.strangeString(true).fail().getErrorLiteral().equals("DEAD")) {
-          return "DEAD";
+      }).invoke())), EqualsTestOp.matches(((Number) new BigInteger("7")), AH.stringLength(((_FunctionTypes._return_P0_E0<String>) () -> {
+        try {
+          String res = Generated_error_Test.strangeString(true).success();
+          return res;
+        } catch (Error e) {
+          if (Generated_error_Test.strangeString(true).fail().getErrorLiteral().equals("DEAD")) {
+            return "DEAD";
+          }
+          throw new RuntimeException("Try failed");
         }
-        throw new RuntimeException("Try failed");
-      }
-    }).invoke())));
+      }).invoke())));
+    } catch (Throwable failure) {
+      throw SourceNodeFailures.attach(failure, "http://127.0.0.1:63320/node?ref=r%3A88ec7cd5-2a4a-4f67-acf4-2cc4711c1bed%28test.in.expr.os.error%40tests%29%2F7030748110942108459");
+    }
   }
   @Test
   public void StringDot_item3_3822903164808064355() throws Throwable {
-    Assert.assertTrue("Expected: " + (((Number) new BigInteger("8"))) + ", but was: " + (AH.add(AH.stringLength(((_FunctionTypes._return_P0_E0<String>) () -> {
-      try {
-        String res = Generated_error_Test.strangeString(true).success();
-        return res;
-      } catch (Error e) {
-        if (Generated_error_Test.strangeString(true).fail().getErrorLiteral().equals("DEAD")) {
-          return "DEAD";
+    try {
+      Assert.assertTrue("Expected: " + (((Number) new BigInteger("8"))) + ", but was: " + (AH.add(AH.stringLength(((_FunctionTypes._return_P0_E0<String>) () -> {
+        try {
+          String res = Generated_error_Test.strangeString(true).success();
+          return res;
+        } catch (Error e) {
+          if (Generated_error_Test.strangeString(true).fail().getErrorLiteral().equals("DEAD")) {
+            return "DEAD";
+          }
+          throw new RuntimeException("Try failed");
         }
-        throw new RuntimeException("Try failed");
-      }
-    }).invoke()), ((Number) new BigInteger("1")))), EqualsTestOp.matches(((Number) new BigInteger("8")), AH.add(AH.stringLength(((_FunctionTypes._return_P0_E0<String>) () -> {
-      try {
-        String res = Generated_error_Test.strangeString(true).success();
-        return res;
-      } catch (Error e) {
-        if (Generated_error_Test.strangeString(true).fail().getErrorLiteral().equals("DEAD")) {
-          return "DEAD";
+      }).invoke()), ((Number) new BigInteger("1")))), EqualsTestOp.matches(((Number) new BigInteger("8")), AH.add(AH.stringLength(((_FunctionTypes._return_P0_E0<String>) () -> {
+        try {
+          String res = Generated_error_Test.strangeString(true).success();
+          return res;
+        } catch (Error e) {
+          if (Generated_error_Test.strangeString(true).fail().getErrorLiteral().equals("DEAD")) {
+            return "DEAD";
+          }
+          throw new RuntimeException("Try failed");
         }
-        throw new RuntimeException("Try failed");
-      }
-    }).invoke()), ((Number) new BigInteger("1")))));
+      }).invoke()), ((Number) new BigInteger("1")))));
+    } catch (Throwable failure) {
+      throw SourceNodeFailures.attach(failure, "http://127.0.0.1:63320/node?ref=r%3A88ec7cd5-2a4a-4f67-acf4-2cc4711c1bed%28test.in.expr.os.error%40tests%29%2F3822903164808064355");
+    }
   }
   @Test
   public void StringDot_item4_5096151429187155313() throws Throwable {
-    Assert.assertEquals("Expected: " + ("STRANGEX") + ", but was: " + (((_FunctionTypes._return_P0_E0<String>) () -> {
-      try {
-        Generated_error_Test.strangeString(true).success();
-        return AH.addString(Generated_error_Test.strangeString(true).success(), "X");
-      } catch (Error e) {
-        if (Generated_error_Test.strangeString(true).fail().getErrorLiteral().equals("DEAD")) {
-          return "err";
-        }
-        throw new RuntimeException("Try failed");
+    try {
+      Assert.assertEquals("Expected: " + ("STRANGEX") + ", but was: " + (((_FunctionTypes._return_P0_E0<String>) () -> {
+        try {
+          Generated_error_Test.strangeString(true).success();
+          return AH.addString(Generated_error_Test.strangeString(true).success(), "X");
+        } catch (Error e) {
+          if (Generated_error_Test.strangeString(true).fail().getErrorLiteral().equals("DEAD")) {
+            return "err";
+          }
+          throw new RuntimeException("Try failed");
 
-      }
-    }).invoke()), (Object) "STRANGEX", (Object) ((_FunctionTypes._return_P0_E0<String>) () -> {
-      try {
-        Generated_error_Test.strangeString(true).success();
-        return AH.addString(Generated_error_Test.strangeString(true).success(), "X");
-      } catch (Error e) {
-        if (Generated_error_Test.strangeString(true).fail().getErrorLiteral().equals("DEAD")) {
-          return "err";
         }
-        throw new RuntimeException("Try failed");
+      }).invoke()), (Object) "STRANGEX", (Object) ((_FunctionTypes._return_P0_E0<String>) () -> {
+        try {
+          Generated_error_Test.strangeString(true).success();
+          return AH.addString(Generated_error_Test.strangeString(true).success(), "X");
+        } catch (Error e) {
+          if (Generated_error_Test.strangeString(true).fail().getErrorLiteral().equals("DEAD")) {
+            return "err";
+          }
+          throw new RuntimeException("Try failed");
 
-      }
-    }).invoke());
+        }
+      }).invoke());
+    } catch (Throwable failure) {
+      throw SourceNodeFailures.attach(failure, "http://127.0.0.1:63320/node?ref=r%3A88ec7cd5-2a4a-4f67-acf4-2cc4711c1bed%28test.in.expr.os.error%40tests%29%2F5096151429187155313");
+    }
   }
   @Test
   public void StringDot_item5_5096151429187155326() throws Throwable {
-    Assert.assertEquals("Expected: " + ("err") + ", but was: " + (((_FunctionTypes._return_P0_E0<String>) () -> {
-      try {
-        Generated_error_Test.strangeString(false).success();
-        return Generated_error_Test.strangeString(false).success();
-      } catch (Error e) {
-        if (Generated_error_Test.strangeString(false).fail().getErrorLiteral().equals("DEAD")) {
-          return "err";
-        }
-        throw new RuntimeException("Try failed");
+    try {
+      Assert.assertEquals("Expected: " + ("err") + ", but was: " + (((_FunctionTypes._return_P0_E0<String>) () -> {
+        try {
+          Generated_error_Test.strangeString(false).success();
+          return Generated_error_Test.strangeString(false).success();
+        } catch (Error e) {
+          if (Generated_error_Test.strangeString(false).fail().getErrorLiteral().equals("DEAD")) {
+            return "err";
+          }
+          throw new RuntimeException("Try failed");
 
-      }
-    }).invoke()), (Object) "err", (Object) ((_FunctionTypes._return_P0_E0<String>) () -> {
-      try {
-        Generated_error_Test.strangeString(false).success();
-        return Generated_error_Test.strangeString(false).success();
-      } catch (Error e) {
-        if (Generated_error_Test.strangeString(false).fail().getErrorLiteral().equals("DEAD")) {
-          return "err";
         }
-        throw new RuntimeException("Try failed");
+      }).invoke()), (Object) "err", (Object) ((_FunctionTypes._return_P0_E0<String>) () -> {
+        try {
+          Generated_error_Test.strangeString(false).success();
+          return Generated_error_Test.strangeString(false).success();
+        } catch (Error e) {
+          if (Generated_error_Test.strangeString(false).fail().getErrorLiteral().equals("DEAD")) {
+            return "err";
+          }
+          throw new RuntimeException("Try failed");
 
-      }
-    }).invoke());
+        }
+      }).invoke());
+    } catch (Throwable failure) {
+      throw SourceNodeFailures.attach(failure, "http://127.0.0.1:63320/node?ref=r%3A88ec7cd5-2a4a-4f67-acf4-2cc4711c1bed%28test.in.expr.os.error%40tests%29%2F5096151429187155326");
+    }
   }
   @Test
   public void StringDot_item6_8412544101431728130() throws Throwable {
-    Assert.assertEquals("Expected: " + ("STRANGEX") + ", but was: " + (((_FunctionTypes._return_P0_E0<String>) () -> {
-      try {
-        Generated_error_Test.strangeString(true).success();
-        return AH.addString(Generated_error_Test.strangeString(true).success(), "X");
-      } catch (Error e) {
-        if (Generated_error_Test.strangeString(true).fail().getErrorLiteral().equals("DEAD")) {
-          return "err";
-        }
-        throw new RuntimeException("Try failed");
+    try {
+      Assert.assertEquals("Expected: " + ("STRANGEX") + ", but was: " + (((_FunctionTypes._return_P0_E0<String>) () -> {
+        try {
+          Generated_error_Test.strangeString(true).success();
+          return AH.addString(Generated_error_Test.strangeString(true).success(), "X");
+        } catch (Error e) {
+          if (Generated_error_Test.strangeString(true).fail().getErrorLiteral().equals("DEAD")) {
+            return "err";
+          }
+          throw new RuntimeException("Try failed");
 
-      }
-    }).invoke()), (Object) "STRANGEX", (Object) ((_FunctionTypes._return_P0_E0<String>) () -> {
-      try {
-        Generated_error_Test.strangeString(true).success();
-        return AH.addString(Generated_error_Test.strangeString(true).success(), "X");
-      } catch (Error e) {
-        if (Generated_error_Test.strangeString(true).fail().getErrorLiteral().equals("DEAD")) {
-          return "err";
         }
-        throw new RuntimeException("Try failed");
+      }).invoke()), (Object) "STRANGEX", (Object) ((_FunctionTypes._return_P0_E0<String>) () -> {
+        try {
+          Generated_error_Test.strangeString(true).success();
+          return AH.addString(Generated_error_Test.strangeString(true).success(), "X");
+        } catch (Error e) {
+          if (Generated_error_Test.strangeString(true).fail().getErrorLiteral().equals("DEAD")) {
+            return "err";
+          }
+          throw new RuntimeException("Try failed");
 
-      }
-    }).invoke());
+        }
+      }).invoke());
+    } catch (Throwable failure) {
+      throw SourceNodeFailures.attach(failure, "http://127.0.0.1:63320/node?ref=r%3A88ec7cd5-2a4a-4f67-acf4-2cc4711c1bed%28test.in.expr.os.error%40tests%29%2F8412544101431728130");
+    }
   }
   @Test
   public void StringDot_item7_8412544101431728143() throws Throwable {
-    Assert.assertEquals("Expected: " + ("err") + ", but was: " + (((_FunctionTypes._return_P0_E0<String>) () -> {
-      try {
-        Generated_error_Test.strangeString(false).success();
-        return Generated_error_Test.strangeString(false).success();
-      } catch (Error e) {
-        if (Generated_error_Test.strangeString(false).fail().getErrorLiteral().equals("DEAD")) {
-          return "err";
-        }
-        throw new RuntimeException("Try failed");
+    try {
+      Assert.assertEquals("Expected: " + ("err") + ", but was: " + (((_FunctionTypes._return_P0_E0<String>) () -> {
+        try {
+          Generated_error_Test.strangeString(false).success();
+          return Generated_error_Test.strangeString(false).success();
+        } catch (Error e) {
+          if (Generated_error_Test.strangeString(false).fail().getErrorLiteral().equals("DEAD")) {
+            return "err";
+          }
+          throw new RuntimeException("Try failed");
 
-      }
-    }).invoke()), (Object) "err", (Object) ((_FunctionTypes._return_P0_E0<String>) () -> {
-      try {
-        Generated_error_Test.strangeString(false).success();
-        return Generated_error_Test.strangeString(false).success();
-      } catch (Error e) {
-        if (Generated_error_Test.strangeString(false).fail().getErrorLiteral().equals("DEAD")) {
-          return "err";
         }
-        throw new RuntimeException("Try failed");
+      }).invoke()), (Object) "err", (Object) ((_FunctionTypes._return_P0_E0<String>) () -> {
+        try {
+          Generated_error_Test.strangeString(false).success();
+          return Generated_error_Test.strangeString(false).success();
+        } catch (Error e) {
+          if (Generated_error_Test.strangeString(false).fail().getErrorLiteral().equals("DEAD")) {
+            return "err";
+          }
+          throw new RuntimeException("Try failed");
 
-      }
-    }).invoke());
+        }
+      }).invoke());
+    } catch (Throwable failure) {
+      throw SourceNodeFailures.attach(failure, "http://127.0.0.1:63320/node?ref=r%3A88ec7cd5-2a4a-4f67-acf4-2cc4711c1bed%28test.in.expr.os.error%40tests%29%2F8412544101431728143");
+    }
   }
   @Test
   public void defaultValues_item0_6932772747675576602() throws Throwable {
-    Assert.assertEquals("Expected: " + (Validation.success("")) + ", but was: " + (Validation.success("")), (Object) Validation.success(""), (Object) Validation.success(""));
+    try {
+      Assert.assertEquals("Expected: " + (Validation.success("")) + ", but was: " + (Validation.success("")), (Object) Validation.success(""), (Object) Validation.success(""));
+    } catch (Throwable failure) {
+      throw SourceNodeFailures.attach(failure, "http://127.0.0.1:63320/node?ref=r%3A88ec7cd5-2a4a-4f67-acf4-2cc4711c1bed%28test.in.expr.os.error%40tests%29%2F6932772747675576602");
+    }
   }
   @Test
   public void defaultValues_item1_4638701830924825909() throws Throwable {
-    Assert.assertEquals("Expected: " + (Validation.fail(new KernelFErrorException("A"))) + ", but was: " + (Validation.fail(new KernelFErrorException("A"))), (Object) Validation.fail(new KernelFErrorException("A")), (Object) Validation.fail(new KernelFErrorException("A")));
+    try {
+      Assert.assertEquals("Expected: " + (Validation.fail(new KernelFErrorException("A"))) + ", but was: " + (Validation.fail(new KernelFErrorException("A"))), (Object) Validation.fail(new KernelFErrorException("A")), (Object) Validation.fail(new KernelFErrorException("A")));
+    } catch (Throwable failure) {
+      throw SourceNodeFailures.attach(failure, "http://127.0.0.1:63320/node?ref=r%3A88ec7cd5-2a4a-4f67-acf4-2cc4711c1bed%28test.in.expr.os.error%40tests%29%2F4638701830924825909");
+    }
   }
 
 

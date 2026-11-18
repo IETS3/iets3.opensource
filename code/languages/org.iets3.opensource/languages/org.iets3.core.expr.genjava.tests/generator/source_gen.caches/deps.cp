@@ -10,6 +10,7 @@
   <uses language="l:86ef8290-12bb-4ca7-947f-093788f263a9:jetbrains.mps.lang.project" />
   <uses language="l:13744753-c81f-424a-9c1b-cf8943bf4e86:jetbrains.mps.lang.sharedConcepts" />
   <uses language="l:7866978e-a0f0-4cc7-81bc-4d213d9375e1:jetbrains.mps.lang.smodel" />
+  <uses language="l:c7fb639f-be78-4307-89b0-b5959c3fa8c8:jetbrains.mps.lang.text" />
   <uses language="l:7a5dda62-9140-4668-ab76-d5ed1746f2b2:jetbrains.mps.lang.typesystem" />
   <uses module="3f233e7f-b8a6-46d2-a57f-795d56775243(Annotations)" kind="dp" />
   <uses module="6354ebe7-c22a-4a0f-ac54-50b52ab9b065(JDK)" kind="rt+dp" />
@@ -62,6 +63,7 @@
   <uses module="4517af98-2eaa-4f19-a962-92df60010094(org.iets3.core.expr.genjava.base#8286534136181746510)" kind="dp" />
   <uses module="3a6ebc02-087e-4791-9854-65244ce22d8d(org.iets3.core.expr.genjava.base.rt)" kind="dp" />
   <uses module="646d63c6-d580-4c19-8759-e3a3123f5424(org.iets3.core.expr.genjava.messages.rt)" kind="dp" />
+  <uses module="c51317cf-7edb-4089-991b-42c7b3a5f8e5(org.iets3.core.expr.genjava.tests.genutil)" kind="dp" />
   <uses module="68da6d9d-3ccf-4255-b4f7-37603cd89090(org.iets3.core.expr.genjava.tests.rt)" kind="dp" />
   <uses module="9464fa06-5ab9-409b-9274-64ab29588457(org.iets3.core.expr.lambda)" kind="dp" />
   <uses module="f3eafff0-30d2-46d6-9150-f0f3b880ce27(org.iets3.core.expr.path)" kind="dp" />

@@ -1,26 +1,118 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <debug-info version="2">
   <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1082485599095:jetbrains.mps.baseLanguage.structure.BlockStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123140:jetbrains.mps.baseLanguage.structure.ConstructorDeclaration" />
   <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123155:jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068390468200:jetbrains.mps.baseLanguage.structure.FieldDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1144226303539:jetbrains.mps.baseLanguage.structure.ForeachStatement" />
   <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123159:jetbrains.mps.baseLanguage.structure.IfStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123165:jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" />
   <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242864:jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
   <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242878:jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/6329021646629104954:jetbrains.mps.baseLanguage.structure.SingleLineComment" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1070462154015:jetbrains.mps.baseLanguage.structure.StaticFieldDeclaration" />
   <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1081236700938:jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1070475587102:jetbrains.mps.baseLanguage.structure.SuperConstructorInvocation" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/5351203823916750322:jetbrains.mps.baseLanguage.structure.TryUniversalStatement" />
+  <root nodeRef="r:b7227cbc-baff-4db9-b647-35204726ce23(org.iets3.core.expr.genjava.tests.rt.rt)/1751826472182514223">
+    <file name="SourceNodeTestException.java">
+      <node id="1751826472182514668" at="12,0,13,0" concept="3" trace="sourceNodeUrl" />
+      <node id="1751826472182514850" at="14,89,15,26" concept="12" />
+      <node id="1751826472182514699" at="15,26,16,39" concept="2" />
+      <node id="1751826472182514687" at="23,36,24,30" concept="8" />
+      <node id="1751826472182514680" at="23,0,26,0" concept="6" trace="getSourceNodeUrl#()Ljava/lang/String;" />
+      <node id="1751826472182514671" at="14,0,18,0" concept="1" trace="SourceNodeTestException#(Ljava/lang/String;Ljava/lang/Throwable;Ljava/lang/String;)V" />
+      <scope id="1751826472182514683" at="23,36,24,30" />
+      <scope id="1751826472182514688" at="14,89,16,39" />
+      <scope id="1751826472182514680" at="23,0,26,0" />
+      <scope id="1751826472182514671" at="14,0,18,0">
+        <var name="cause" id="1751826472182514676" />
+        <var name="message" id="1751826472182514674" />
+        <var name="sourceNodeUrl" id="1751826472182514678" />
+      </scope>
+      <unit id="1751826472182514223" at="11,0,27,0" name="org.iets3.core.expr.genjava.tests.rt.rt.SourceNodeTestException" />
+    </file>
+  </root>
+  <root nodeRef="r:b7227cbc-baff-4db9-b647-35204726ce23(org.iets3.core.expr.genjava.tests.rt.rt)/1751826472182522631">
+    <file name="SourceNodeFailures.java">
+      <node id="1751826472182522633" at="15,0,16,0" concept="10" trace="URL_MARKER" />
+      <node id="1751826472182522637" at="16,0,17,0" concept="10" trace="PASS_THROUGH_CLASSES" />
+      <node id="1751826472182522675" at="27,84,28,21" concept="8" />
+      <node id="1751826472182522682" at="29,5,30,42" concept="7" />
+      <node id="1751826472182522693" at="31,77,32,21" concept="8" />
+      <node id="1751826472182522701" at="34,50,35,41" concept="2" />
+      <node id="1751826472182522709" at="36,5,37,36" concept="7" />
+      <node id="1751826472182522728" at="38,44,39,107" concept="7" />
+      <node id="1751826472182522733" at="39,107,40,35" concept="2" />
+      <node id="1751826472182522740" at="40,35,41,55" concept="2" />
+      <node id="1751826472182522741" at="41,55,42,23" concept="8" />
+      <node id="1751826472182522764" at="43,5,44,106" concept="7" />
+      <node id="1751826472182522772" at="44,106,45,84" concept="7" />
+      <node id="1751826472182522779" at="45,84,46,49" concept="2" />
+      <node id="1751826472182522781" at="46,49,47,17" concept="8" />
+      <node id="1751826472182548192" at="51,49,52,18" concept="8" />
+      <node id="1751826472182548214" at="56,98,57,22" concept="8" />
+      <node id="1751826472182548222" at="59,70,60,90" concept="9" />
+      <node id="1751826472182548240" at="62,5,63,17" concept="8" />
+      <node id="1751826472182522659" at="26,65,29,5" concept="5" />
+      <node id="1751826472182522683" at="30,42,33,5" concept="5" />
+      <node id="1751826472182522695" at="33,5,36,5" concept="5" />
+      <node id="1751826472182548189" at="50,59,53,5" concept="5" />
+      <node id="1751826472182548201" at="55,11,58,9" concept="5" />
+      <node id="1751826472182522710" at="37,36,43,5" concept="5" />
+      <node id="1751826472182548199" at="54,65,61,7" concept="13" />
+      <node id="1751826472182548195" at="53,5,62,5" concept="4" />
+      <node id="1751826472182522653" at="50,0,65,0" concept="11" trace="isPassThrough#(Ljava/lang/Throwable;)Z" />
+      <node id="1751826472182522646" at="26,0,49,0" concept="11" trace="attach#(Ljava/lang/Throwable;Ljava/lang/String;)Ljava/lang/Throwable;" />
+      <scope id="1751826472182522674" at="27,84,28,21" />
+      <scope id="1751826472182522692" at="31,77,32,21" />
+      <scope id="1751826472182522697" at="34,50,35,41" />
+      <scope id="1751826472182548191" at="51,49,52,18" />
+      <scope id="1751826472182548213" at="56,98,57,22" />
+      <scope id="1751826472182548221" at="59,70,60,90" />
+      <scope id="1751826472182548216" at="59,7,61,7">
+        <var name="notOnClasspath" id="1751826472182548217" />
+      </scope>
+      <scope id="1751826472182548200" at="55,11,58,9" />
+      <scope id="1751826472182522712" at="38,44,42,23">
+        <var name="assertion" id="1751826472182522713" />
+      </scope>
+      <scope id="1751826472182548198" at="54,65,61,7" />
+      <scope id="1751826472182548195" at="53,5,62,5">
+        <var name="name" id="1751826472182548196" />
+      </scope>
+      <scope id="1751826472182548188" at="50,59,63,17" />
+      <scope id="1751826472182522653" at="50,0,65,0">
+        <var name="failure" id="1751826472182548186" />
+      </scope>
+      <scope id="1751826472182522658" at="26,65,47,17">
+        <var name="error" id="1751826472182522765" />
+        <var name="message" id="1751826472182522677" />
+        <var name="suffix" id="1751826472182522702" />
+        <var name="text" id="1751826472182522743" />
+      </scope>
+      <scope id="1751826472182522646" at="26,0,49,0">
+        <var name="failure" id="1751826472182522649" />
+        <var name="url" id="1751826472182522651" />
+      </scope>
+      <unit id="1751826472182522631" at="11,0,67,0" name="org.iets3.core.expr.genjava.tests.rt.rt.SourceNodeFailures" />
+    </file>
+  </root>
   <root nodeRef="r:b7227cbc-baff-4db9-b647-35204726ce23(org.iets3.core.expr.genjava.tests.rt.rt)/8286534136182087239">
     <file name="RealEqualsTestOp.java">
-      <node id="4988624180052598351" at="11,37,12,18" concept="4" />
-      <node id="4988624180052598362" at="13,44,14,19" concept="4" />
-      <node id="4988624180052598373" at="15,44,16,19" concept="4" />
-      <node id="4988624180052951233" at="18,67,19,44" concept="3" />
-      <node id="4988624180052952849" at="19,44,20,44" concept="3" />
-      <node id="4988624180052945325" at="20,44,21,56" concept="1" />
-      <node id="4988624180052949360" at="21,56,22,56" concept="1" />
-      <node id="4988624180052950768" at="22,56,23,39" concept="4" />
-      <node id="4988624180052598384" at="24,7,25,29" concept="4" />
-      <node id="4988624180052918420" at="17,12,24,7" concept="2" />
+      <node id="4988624180052598351" at="11,37,12,18" concept="8" />
+      <node id="4988624180052598362" at="13,44,14,19" concept="8" />
+      <node id="4988624180052598373" at="15,44,16,19" concept="8" />
+      <node id="4988624180052951233" at="18,67,19,44" concept="7" />
+      <node id="4988624180052952849" at="19,44,20,44" concept="7" />
+      <node id="4988624180052945325" at="20,44,21,56" concept="2" />
+      <node id="4988624180052949360" at="21,56,22,56" concept="2" />
+      <node id="4988624180052950768" at="22,56,23,39" concept="8" />
+      <node id="4988624180052598384" at="24,7,25,29" concept="8" />
+      <node id="4988624180052918420" at="17,12,24,7" concept="5" />
       <node id="4988624180052598382" at="17,10,26,5" concept="0" />
-      <node id="4988624180052598349" at="10,71,26,5" concept="2" />
-      <node id="8286534136182140450" at="10,0,28,0" concept="5" trace="matches#(Ljava/lang/Object;Ljava/lang/Object;I)Z" />
+      <node id="4988624180052598349" at="10,71,26,5" concept="5" />
+      <node id="8286534136182140450" at="10,0,28,0" concept="11" trace="matches#(Ljava/lang/Object;Ljava/lang/Object;I)Z" />
       <scope id="4988624180052598350" at="11,37,12,18" />
       <scope id="4988624180052598361" at="13,44,14,19" />
       <scope id="4988624180052598372" at="15,44,16,19" />
@@ -40,29 +132,29 @@
   </root>
   <root nodeRef="r:b7227cbc-baff-4db9-b647-35204726ce23(org.iets3.core.expr.genjava.tests.rt.rt)/8286534136182108561">
     <file name="EqualsTestOp.java">
-      <node id="8286534136182120198" at="11,37,12,18" concept="4" />
-      <node id="8286534136182120209" at="13,44,14,19" concept="4" />
-      <node id="8286534136182120220" at="15,44,16,19" concept="4" />
-      <node id="8286534136182120233" at="18,67,19,44" concept="3" />
-      <node id="8286534136182120240" at="19,44,20,44" concept="3" />
-      <node id="8286534136182120247" at="20,44,21,39" concept="4" />
-      <node id="8286534136182120263" at="23,67,24,44" concept="3" />
-      <node id="8286534136182120270" at="24,44,25,44" concept="3" />
-      <node id="8286534136182120277" at="25,44,26,39" concept="4" />
-      <node id="8286534136182120293" at="28,67,29,44" concept="3" />
-      <node id="8286534136182120300" at="29,44,30,60" concept="3" />
-      <node id="8286534136182120309" at="30,60,31,39" concept="4" />
-      <node id="8286534136182120325" at="33,67,34,60" concept="3" />
-      <node id="8286534136182120334" at="34,60,35,44" concept="3" />
-      <node id="8286534136182120341" at="35,44,36,39" concept="4" />
-      <node id="8286534136182120355" at="37,7,38,29" concept="4" />
-      <node id="8286534136182120231" at="17,12,22,7" concept="2" />
-      <node id="8286534136182120261" at="22,7,27,7" concept="2" />
-      <node id="8286534136182120291" at="27,7,32,7" concept="2" />
-      <node id="8286534136182120323" at="32,7,37,7" concept="2" />
+      <node id="8286534136182120198" at="11,37,12,18" concept="8" />
+      <node id="8286534136182120209" at="13,44,14,19" concept="8" />
+      <node id="8286534136182120220" at="15,44,16,19" concept="8" />
+      <node id="8286534136182120233" at="18,67,19,44" concept="7" />
+      <node id="8286534136182120240" at="19,44,20,44" concept="7" />
+      <node id="8286534136182120247" at="20,44,21,39" concept="8" />
+      <node id="8286534136182120263" at="23,67,24,44" concept="7" />
+      <node id="8286534136182120270" at="24,44,25,44" concept="7" />
+      <node id="8286534136182120277" at="25,44,26,39" concept="8" />
+      <node id="8286534136182120293" at="28,67,29,44" concept="7" />
+      <node id="8286534136182120300" at="29,44,30,60" concept="7" />
+      <node id="8286534136182120309" at="30,60,31,39" concept="8" />
+      <node id="8286534136182120325" at="33,67,34,60" concept="7" />
+      <node id="8286534136182120334" at="34,60,35,44" concept="7" />
+      <node id="8286534136182120341" at="35,44,36,39" concept="8" />
+      <node id="8286534136182120355" at="37,7,38,29" concept="8" />
+      <node id="8286534136182120231" at="17,12,22,7" concept="5" />
+      <node id="8286534136182120261" at="22,7,27,7" concept="5" />
+      <node id="8286534136182120291" at="27,7,32,7" concept="5" />
+      <node id="8286534136182120323" at="32,7,37,7" concept="5" />
       <node id="8286534136182120229" at="17,10,39,5" concept="0" />
-      <node id="8286534136182120196" at="10,57,39,5" concept="2" />
-      <node id="8286534136182120185" at="10,0,41,0" concept="5" trace="matches#(Ljava/lang/Object;Ljava/lang/Object;)Z" />
+      <node id="8286534136182120196" at="10,57,39,5" concept="5" />
+      <node id="8286534136182120185" at="10,0,41,0" concept="11" trace="matches#(Ljava/lang/Object;Ljava/lang/Object;)Z" />
       <scope id="8286534136182120197" at="11,37,12,18" />
       <scope id="8286534136182120208" at="13,44,14,19" />
       <scope id="8286534136182120219" at="15,44,16,19" />

@@ -58,6 +58,7 @@
   <uses module="dbe08fb5-334d-4b64-86a0-622406fa0e87(org.iets3.core.expr.base.runtime)" kind="rt" />
   <uses module="3a6ebc02-087e-4791-9854-65244ce22d8d(org.iets3.core.expr.genjava.base.rt)" kind="dp" />
   <uses module="646d63c6-d580-4c19-8759-e3a3123f5424(org.iets3.core.expr.genjava.messages.rt)" kind="rt+dp" />
+  <uses module="68da6d9d-3ccf-4255-b4f7-37603cd89090(org.iets3.core.expr.genjava.tests.rt)" kind="dp" />
   <uses module="52a8c4c0-f4b0-4243-bf00-9dfac3472876(org.iets3.core.expr.simpleTypes.runtime)" kind="dp" />
   <uses module="6effa8ea-ddf9-441a-a29e-80a73b7d0fc7(org.iets3.core.expr.tests.rt)" kind="rt+dp" />
   <uses module="63b449db-0918-4a4a-a891-2c430ab133e4(org.junit.junit5)" kind="rt+dp" />

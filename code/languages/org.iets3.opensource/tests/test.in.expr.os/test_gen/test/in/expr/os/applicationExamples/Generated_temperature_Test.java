@@ -22,6 +22,7 @@ import jetbrains.mps.baseLanguage.closures.runtime._FunctionTypes;
 import org.junit.Test;
 import org.junit.Assert;
 import org.iets3.core.expr.genjava.tests.rt.rt.EqualsTestOp;
+import org.iets3.core.expr.genjava.tests.rt.rt.SourceNodeFailures;
 
 /**
  * 
@@ -219,11 +220,19 @@ public class Generated_temperature_Test {
   public static final Number validTempInF_ = ((Number) (new BigDecimal("100.0").setScale(1, RoundingMode.DOWN)));
   @Test
   public void TempConversion_item0_6527211908667126376() throws Throwable {
-    Assert.assertTrue("Expected: " + (((Number) (new BigDecimal("37.7").setScale(1, RoundingMode.DOWN)))) + ", but was: " + (Generated_temperature_Test.FtoC(((Number) (new BigDecimal("100.0").setScale(1, RoundingMode.DOWN))))), EqualsTestOp.matches(((Number) (new BigDecimal("37.7").setScale(1, RoundingMode.DOWN))), Generated_temperature_Test.FtoC(((Number) (new BigDecimal("100.0").setScale(1, RoundingMode.DOWN))))));
+    try {
+      Assert.assertTrue("Expected: " + (((Number) (new BigDecimal("37.7").setScale(1, RoundingMode.DOWN)))) + ", but was: " + (Generated_temperature_Test.FtoC(((Number) (new BigDecimal("100.0").setScale(1, RoundingMode.DOWN))))), EqualsTestOp.matches(((Number) (new BigDecimal("37.7").setScale(1, RoundingMode.DOWN))), Generated_temperature_Test.FtoC(((Number) (new BigDecimal("100.0").setScale(1, RoundingMode.DOWN))))));
+    } catch (Throwable failure) {
+      throw SourceNodeFailures.attach(failure, "http://127.0.0.1:63320/node?ref=r%3A206e2f16-1e9d-4dba-a48f-a14d1e82c7a3%28test.in.expr.os.applicationExamples%40tests%29%2F6527211908667126376");
+    }
   }
   @Test
   public void TempConversion_item2_6527211908667503678() throws Throwable {
-    Assert.assertTrue("Expected: " + (((Number) (new BigDecimal("37.7").setScale(1, RoundingMode.DOWN)))) + ", but was: " + (toC.toC(Generated_temperature_Test.someDataFromUI_)), EqualsTestOp.matches(((Number) (new BigDecimal("37.7").setScale(1, RoundingMode.DOWN))), toC.toC(Generated_temperature_Test.someDataFromUI_)));
+    try {
+      Assert.assertTrue("Expected: " + (((Number) (new BigDecimal("37.7").setScale(1, RoundingMode.DOWN)))) + ", but was: " + (toC.toC(Generated_temperature_Test.someDataFromUI_)), EqualsTestOp.matches(((Number) (new BigDecimal("37.7").setScale(1, RoundingMode.DOWN))), toC.toC(Generated_temperature_Test.someDataFromUI_)));
+    } catch (Throwable failure) {
+      throw SourceNodeFailures.attach(failure, "http://127.0.0.1:63320/node?ref=r%3A206e2f16-1e9d-4dba-a48f-a14d1e82c7a3%28test.in.expr.os.applicationExamples%40tests%29%2F6527211908667503678");
+    }
   }
 
 
