@@ -89,5 +89,7 @@ The original stack trace is kept.
 - Failures in `@Before`/`@BeforeClass` methods and static initializers are outside the wrapped method body and get no URL.
 - JUnit's `ComparisonFailure` becomes a plain `AssertionError`; the expected/actual text stays in the message, IDE diff
   views for that failure are lost.
+- MPS `jetbrains.mps.lang.test` tests (editor tests, node checks such as "has error") carry no node URL. Their failure
+  messages come from the MPS test runtime, which iets3 does not control.
 - Models whose generation plan uses `org.iets3.core.expr.genall.advanced.devkit` need the corrected `Java_genplan`
   (smodel and baseLanguageInternal steps) shipped with this change.
