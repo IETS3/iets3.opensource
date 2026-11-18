@@ -19,6 +19,9 @@
     <import index="4lqd" ref="r:4ce62e6d-8c9b-46a5-83ca-ffa0c624b76d(org.iets3.core.expr.mutable.behavior)" implicit="true" />
   </imports>
   <registry>
+    <language id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior">
+      <concept id="3235159848334022093" name="jetbrains.mps.lang.behavior.structure.Node_ConceptMethodCall" flags="nn" index="3zqWPK" />
+    </language>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
       <concept id="1219920932475" name="jetbrains.mps.baseLanguage.structure.VariableArityType" flags="in" index="8X2XB">
         <child id="1219921048460" name="componentType" index="8Xvag" />
@@ -215,7 +218,6 @@
       <concept id="1138411891628" name="jetbrains.mps.lang.smodel.structure.SNodeOperation" flags="nn" index="eCIE_">
         <child id="1144104376918" name="parameter" index="1xVPHs" />
       </concept>
-      <concept id="1179409122411" name="jetbrains.mps.lang.smodel.structure.Node_ConceptMethodCall" flags="nn" index="2qgKlT" />
       <concept id="7453996997717780434" name="jetbrains.mps.lang.smodel.structure.Node_GetSConceptOperation" flags="nn" index="2yIwOk" />
       <concept id="1173122760281" name="jetbrains.mps.lang.smodel.structure.Node_GetAncestorsOperation" flags="nn" index="z$bX8" />
       <concept id="8866923313515890008" name="jetbrains.mps.lang.smodel.structure.AsNodeOperation" flags="nn" index="FGMqu" />
@@ -1608,7 +1610,7 @@
             <node concept="37vLTw" id="7WFhXJlVVx7" role="2Oq$k0">
               <ref role="3cqZAo" node="7WFhXJlVVlx" resolve="myInteractor" />
             </node>
-            <node concept="2qgKlT" id="7WFhXJlVW0Q" role="2OqNvi">
+            <node concept="3zqWPK" id="5DJjBfj0amk" role="2OqNvi">
               <ref role="37wK5l" to="4lqd:5y3VELft_Ye" resolve="getDescriptor" />
             </node>
           </node>
@@ -3328,7 +3330,7 @@
                   <ref role="2Oxat5" node="Z4fkwzaoIT" resolve="type" />
                 </node>
               </node>
-              <node concept="2qgKlT" id="Z4fkwzb5Xl" role="2OqNvi">
+              <node concept="3zqWPK" id="5DJjBfj0amm" role="2OqNvi">
                 <ref role="37wK5l" to="tpcu:hEwIMiw" resolve="getPresentation" />
               </node>
             </node>
@@ -4264,12 +4266,12 @@
                   <node concept="37vLTw" id="4IV0h48ekG5" role="2Oq$k0">
                     <ref role="3cqZAo" node="4IV0h48eh73" resolve="interceptor" />
                   </node>
-                  <node concept="2qgKlT" id="4IV0h48el1n" role="2OqNvi">
+                  <node concept="3zqWPK" id="5DJjBfj0amo" role="2OqNvi">
                     <ref role="37wK5l" to="4lqd:4IV0h47VEDy" resolve="createStateObject" />
-                    <node concept="37vLTw" id="31HpwbwmWy2" role="37wK5m">
+                    <node concept="37vLTw" id="5DJjBfj0amq" role="37wK5m">
                       <ref role="3cqZAo" node="31HpwbwmVVw" resolve="ctx" />
                     </node>
-                    <node concept="37vLTw" id="31HpwbwmWAl" role="37wK5m">
+                    <node concept="37vLTw" id="5DJjBfj0amr" role="37wK5m">
                       <ref role="3cqZAo" node="31HpwbwmWg1" resolve="trace" />
                     </node>
                   </node>
