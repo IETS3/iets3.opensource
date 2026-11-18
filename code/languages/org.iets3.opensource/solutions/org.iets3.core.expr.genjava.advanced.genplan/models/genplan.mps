@@ -148,6 +148,28 @@
         </node>
       </node>
     </node>
+    <node concept="2VgMA2" id="1xfJekmuHsZ" role="2VgMA7">
+      <node concept="2Qf6Nf" id="1xfJekmuHt0" role="2Qf7GQ">
+        <node concept="2V$Bhx" id="1xfJekmuHt1" role="2Qf6Ng">
+          <property role="2V$B1Q" value="jetbrains.mps.lang.smodel" />
+          <property role="2V$B1T" value="7866978e-a0f0-4cc7-81bc-4d213d9375e1" />
+        </node>
+      </node>
+      <node concept="2Qf6Nf" id="1xfJekmuHt2" role="2Qf7GQ">
+        <node concept="2V$Bhx" id="1xfJekmuHt3" role="2Qf6Ng">
+          <property role="2V$B1Q" value="jetbrains.mps.baseLanguage" />
+          <property role="2V$B1T" value="f3061a53-9226-4cc5-a443-f952ceaf5816" />
+        </node>
+      </node>
+    </node>
+    <node concept="2VgMA2" id="1xfJekmwt39" role="2VgMA7">
+      <node concept="2Qf6Nf" id="1xfJekmwt3a" role="2Qf7GQ">
+        <node concept="2V$Bhx" id="1xfJekmwt3b" role="2Qf6Ng">
+          <property role="2V$B1Q" value="jetbrains.mps.baseLanguageInternal" />
+          <property role="2V$B1T" value="df345b11-b8c7-4213-ac66-48d2a9b75d88" />
+        </node>
+      </node>
+    </node>
   </node>
 </model>
 
