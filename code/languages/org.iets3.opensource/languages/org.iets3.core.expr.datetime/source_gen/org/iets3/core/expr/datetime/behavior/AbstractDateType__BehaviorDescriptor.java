@@ -7,25 +7,21 @@ import org.jetbrains.mps.openapi.language.SAbstractConcept;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import java.util.List;
 import java.util.Arrays;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.mps.openapi.model.SNode;
-import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 
 public final class AbstractDateType__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getConcept(0x289fb12b7f534ef7L, 0xbc2e1ed2c6a7c998L, 0x35ec8ca87ade359fL, "org.iets3.core.expr.datetime.structure.AbstractDateType");
 
-  public static final SMethod<Boolean> canBeSorted_id7k6A8Wfp3IU = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("canBeSorted").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(8432595092503804858L).languageId(0xb66a309a6e1a7290L, 0xcfaa4966b7d54b69L).build2();
+  public static final SMethod<Boolean> canBeSorted_id7k6A8Wfp3IU = new SMethodBuilder<>(Boolean.TYPE).name("canBeSorted").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(8432595092503804858L).languageId(0xb66a309a6e1a7290L, 0xcfaa4966b7d54b69L).build2();
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(canBeSorted_id7k6A8Wfp3IU);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(canBeSorted_id7k6A8Wfp3IU);
 
-  private static void ___init___(@NotNull SNode __thisNode__) {
-  }
 
   /*package*/ static boolean canBeSorted_id7k6A8Wfp3IU(@NotNull SNode __thisNode__) {
     return true;
@@ -34,10 +30,6 @@ public final class AbstractDateType__BehaviorDescriptor extends BaseBHDescriptor
   /*package*/ AbstractDateType__BehaviorDescriptor() {
   }
 
-  @Override
-  protected void initNode(@NotNull SNode node, @NotNull SConstructor constructor, @Nullable Object[] parameters) {
-    ___init___(node);
-  }
 
   @Override
   protected <T> T invokeSpecial0(@NotNull SNode node, @NotNull SMethod<T> method, @Nullable Object[] parameters) {

@@ -7,7 +7,6 @@ import org.jetbrains.mps.openapi.language.SAbstractConcept;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import org.jetbrains.mps.openapi.model.SNode;
 import java.util.List;
@@ -17,7 +16,6 @@ import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
 import org.iets3.safety.attributes.enumMigration.ASILLevelEnum_MigrationUtils;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
-import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 import org.jetbrains.mps.openapi.language.SConcept;
@@ -27,13 +25,11 @@ import org.jetbrains.mps.openapi.language.SContainmentLink;
 public final class ASILLevelValue__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getConcept(0x3d5cb9202b5f4dcbL, 0x834968b4bf077e63L, 0x1b5a6519ee9e81e2L, "org.iets3.safety.attributes.structure.ASILLevelValue");
 
-  public static final SMethod<Integer> compareTo_id1HqphBI_m8C = new SMethodBuilder<Integer>(new SJavaCompoundTypeImpl(Integer.TYPE)).name("compareTo").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(1970998948979368488L).languageId(0xa055a74f8477fc34L, 0x583939beded04735L).build2(SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""));
-  public static final SMethod<Boolean> canComputeValue_idspmH6czuzV = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("canComputeValue").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(511539888736037115L).languageId(0x834968b4bf077e63L, 0x3d5cb9202b5f4dcbL).build2();
+  public static final SMethod<Integer> compareTo_id1HqphBI_m8C = new SMethodBuilder<>(Integer.TYPE).name("compareTo").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(1970998948979368488L).languageId(0xa055a74f8477fc34L, 0x583939beded04735L).build2(SMethodBuilder.createJavaParameter(SNode.class, "other"));
+  public static final SMethod<Boolean> canComputeValue_idspmH6czuzV = new SMethodBuilder<>(Boolean.TYPE).name("canComputeValue").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(511539888736037115L).languageId(0x834968b4bf077e63L, 0x3d5cb9202b5f4dcbL).build2();
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(compareTo_id1HqphBI_m8C, canComputeValue_idspmH6czuzV);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(compareTo_id1HqphBI_m8C, canComputeValue_idspmH6czuzV);
 
-  private static void ___init___(@NotNull SNode __thisNode__) {
-  }
 
   /*package*/ static int compareTo_id1HqphBI_m8C(@NotNull SNode __thisNode__, SNode other) {
     if (!(SNodeOperations.isInstanceOf(other, CONCEPTS.ASILLevelValue$fW))) {
@@ -48,10 +44,6 @@ public final class ASILLevelValue__BehaviorDescriptor extends BaseBHDescriptor {
   /*package*/ ASILLevelValue__BehaviorDescriptor() {
   }
 
-  @Override
-  protected void initNode(@NotNull SNode node, @NotNull SConstructor constructor, @Nullable Object[] parameters) {
-    ___init___(node);
-  }
 
   @Override
   protected <T> T invokeSpecial0(@NotNull SNode node, @NotNull SMethod<T> method, @Nullable Object[] parameters) {

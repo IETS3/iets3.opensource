@@ -42,18 +42,15 @@ import com.intellij.ui.JBColor;
   }
 
   /*package*/ EditorCell createCell() {
-    return createPriorityInfoCell_1();
+    return createPriorityInfoCell_0();
   }
 
-  private EditorCell createPriorityInfoCell_0(EditorContext editorContext, SNode node) {
+  private EditorCell createPriorityInfoCell_0() {
     EditorCell editorCell = null;
     editorCell = createAlternation_0();
     editorCell.setBig(true);
     setCellContext(editorCell);
     return editorCell;
-  }
-  private EditorCell createPriorityInfoCell_1() {
-    return createPriorityInfoCell_0(getEditorContext(), myNode);
   }
   private EditorCell createAlternation_0() {
     boolean alternationCondition = true;
@@ -92,7 +89,7 @@ import com.intellij.ui.JBColor;
     style.set(StyleAttributes.BASE_LINE_CELL, true);
     style.set(StyleAttributes.SELECTABLE, false);
     editorCell.getStyle().putAll(style);
-    editorCell.addEditorCell(createFrameCell_1());
+    editorCell.addEditorCell(createFrameCell_0());
     editorCell.addEditorCell(createReadOnlyModelAccessor_0());
     return editorCell;
   }
@@ -111,8 +108,8 @@ import com.intellij.ui.JBColor;
       return editorCell;
     }
   }
-  private EditorCell createFrameCell_0(final EditorContext editorContext, final SNode node) {
-    FrameCell editorCell = new FrameCell(editorContext, node);
+  private EditorCell createFrameCell_0() {
+    FrameCell editorCell = new FrameCell(getEditorContext(), getNode());
     editorCell.setCellId("FrameCell_z39m8j_a0a0a");
     Style style = new StyleImpl();
     style.set(StyleAttributes.BACKGROUND_COLOR, getStyleRegistry().getSimpleColor(_StyleParameter_QueryFunction_z39m8j_a0a0a0a()));
@@ -122,9 +119,6 @@ import com.intellij.ui.JBColor;
     editorCell.getStyle().putAll(style);
     editorCell.addEditorCell(createCollection_1());
     return editorCell;
-  }
-  private EditorCell createFrameCell_1() {
-    return createFrameCell_0(getEditorContext(), myNode);
   }
   private Color _StyleParameter_QueryFunction_z39m8j_a0a0a0a() {
     return BoxColors.getBrightColor(getNode());

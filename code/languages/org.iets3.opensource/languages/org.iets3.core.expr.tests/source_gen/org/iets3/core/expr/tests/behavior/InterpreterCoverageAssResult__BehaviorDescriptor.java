@@ -7,7 +7,6 @@ import org.jetbrains.mps.openapi.language.SAbstractConcept;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import org.jetbrains.mps.openapi.model.SNode;
 import java.util.List;
@@ -19,7 +18,6 @@ import jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
 import jetbrains.mps.internal.collections.runtime.ListSequence;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SModelOperations;
-import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 import org.jetbrains.mps.openapi.language.SReferenceLink;
@@ -29,15 +27,13 @@ import org.jetbrains.mps.openapi.language.SConcept;
 public final class InterpreterCoverageAssResult__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getConcept(0xd441fba0f46b43cdL, 0xb723dad7b65da615L, 0x3969aca372b2dd91L, "org.iets3.core.expr.tests.structure.InterpreterCoverageAssResult");
 
-  public static final SMethod<String> uniqueIdentifier_idK292flwHwe = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("uniqueIdentifier").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(865293814733133838L).languageId(0xaa41d1b2bffa7eb1L, 0xd4280a54f6df4383L).build2();
-  public static final SMethod<Void> updateValues_id5L$H31Kf5$y = new SMethodBuilder<Void>(new SJavaCompoundTypeImpl(Void.class)).name("updateValues").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(6657644269294868770L).languageId(0xaa41d1b2bffa7eb1L, 0xd4280a54f6df4383L).build2(SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""));
-  public static final SMethod<SNode> groupNode_id26F1SwiacwF = new SMethodBuilder<SNode>(new SJavaCompoundTypeImpl((Class<SNode>) ((Class) Object.class))).name("groupNode").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(2426041105270753323L).languageId(0xaa41d1b2bffa7eb1L, 0xd4280a54f6df4383L).build2();
-  public static final SMethod<String> groupLabel_id26F1Swi9trp = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("groupLabel").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(2426041105270560473L).languageId(0xaa41d1b2bffa7eb1L, 0xd4280a54f6df4383L).build2();
+  public static final SMethod<String> uniqueIdentifier_idK292flwHwe = new SMethodBuilder<>(String.class).name("uniqueIdentifier").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(865293814733133838L).languageId(0xaa41d1b2bffa7eb1L, 0xd4280a54f6df4383L).build2();
+  public static final SMethod<Void> updateValues_id5L$H31Kf5$y = new SMethodBuilder<>(Void.TYPE).name("updateValues").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(6657644269294868770L).languageId(0xaa41d1b2bffa7eb1L, 0xd4280a54f6df4383L).build2(SMethodBuilder.createJavaParameter(SNode.class, "updatedResult"));
+  public static final SMethod<SNode> groupNode_id26F1SwiacwF = new SMethodBuilder<>(SNode.class).name("groupNode").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(2426041105270753323L).languageId(0xaa41d1b2bffa7eb1L, 0xd4280a54f6df4383L).build2();
+  public static final SMethod<String> groupLabel_id26F1Swi9trp = new SMethodBuilder<>(String.class).name("groupLabel").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(2426041105270560473L).languageId(0xaa41d1b2bffa7eb1L, 0xd4280a54f6df4383L).build2();
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(uniqueIdentifier_idK292flwHwe, updateValues_id5L$H31Kf5$y, groupNode_id26F1SwiacwF, groupLabel_id26F1Swi9trp);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(uniqueIdentifier_idK292flwHwe, updateValues_id5L$H31Kf5$y, groupNode_id26F1SwiacwF, groupLabel_id26F1Swi9trp);
 
-  private static void ___init___(@NotNull SNode __thisNode__) {
-  }
 
   /*package*/ static String uniqueIdentifier_idK292flwHwe(@NotNull SNode __thisNode__) {
     if (SLinkOperations.getTarget(__thisNode__, LINKS.concept$EaN1) == null) {
@@ -67,10 +63,6 @@ public final class InterpreterCoverageAssResult__BehaviorDescriptor extends Base
   /*package*/ InterpreterCoverageAssResult__BehaviorDescriptor() {
   }
 
-  @Override
-  protected void initNode(@NotNull SNode node, @NotNull SConstructor constructor, @Nullable Object[] parameters) {
-    ___init___(node);
-  }
 
   @Override
   protected <T> T invokeSpecial0(@NotNull SNode node, @NotNull SMethod<T> method, @Nullable Object[] parameters) {

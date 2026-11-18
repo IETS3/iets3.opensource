@@ -7,7 +7,6 @@ import org.jetbrains.mps.openapi.language.SAbstractConcept;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import org.jetbrains.mps.openapi.model.SNode;
 import java.util.List;
@@ -18,7 +17,6 @@ import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SConceptOperations;
 import de.slisson.mps.richtext.behavior.Text__BehaviorDescriptor;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.IAttributeDescriptor;
-import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 import org.jetbrains.mps.openapi.language.SContainmentLink;
@@ -28,13 +26,11 @@ import org.jetbrains.mps.openapi.language.SConcept;
 public final class NatLangFunctionCall__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getConcept(0x64e7917630a14836L, 0x821cbf62ff6c6091L, 0x1781e8556af254ecL, "org.iets3.core.expr.natlang.structure.NatLangFunctionCall");
 
-  public static final SMethod<Void> init_id1u1U5lEZM8a = new SMethodBuilder<Void>(new SJavaCompoundTypeImpl(Void.class)).name("init").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(1693890388432986634L).languageId(0x821cbf62ff6c6091L, 0x64e7917630a14836L).build2(SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""));
-  public static final SMethod<String> renderReadable_id6kR0qIbI2yi = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("renderReadable").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(7293299957844945042L).languageId(0xb66a309a6e1a7290L, 0xcfaa4966b7d54b69L).build2();
+  public static final SMethod<Void> init_id1u1U5lEZM8a = new SMethodBuilder<>(Void.TYPE).name("init").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(1693890388432986634L).languageId(0x821cbf62ff6c6091L, 0x64e7917630a14836L).build2(SMethodBuilder.createJavaParameter(SNode.class, "fl"));
+  public static final SMethod<String> renderReadable_id6kR0qIbI2yi = new SMethodBuilder<>(String.class).name("renderReadable").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(7293299957844945042L).languageId(0xb66a309a6e1a7290L, 0xcfaa4966b7d54b69L).build2();
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(init_id1u1U5lEZM8a, renderReadable_id6kR0qIbI2yi);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(init_id1u1U5lEZM8a, renderReadable_id6kR0qIbI2yi);
 
-  private static void ___init___(@NotNull SNode __thisNode__) {
-  }
 
   /*package*/ static void init_id1u1U5lEZM8a(@NotNull SNode __thisNode__, SNode fl) {
     ListSequence.fromList(SLinkOperations.getChildren(__thisNode__, LINKS.args$U5u9)).clear();
@@ -51,10 +47,6 @@ public final class NatLangFunctionCall__BehaviorDescriptor extends BaseBHDescrip
   /*package*/ NatLangFunctionCall__BehaviorDescriptor() {
   }
 
-  @Override
-  protected void initNode(@NotNull SNode node, @NotNull SConstructor constructor, @Nullable Object[] parameters) {
-    ___init___(node);
-  }
 
   @Override
   protected <T> T invokeSpecial0(@NotNull SNode node, @NotNull SMethod<T> method, @Nullable Object[] parameters) {

@@ -7,7 +7,6 @@ import org.jetbrains.mps.openapi.language.SAbstractConcept;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import org.jetbrains.mps.openapi.model.SNode;
 import org.iets3.variability.artifacts.base.plugin.PreviewCriteria;
@@ -16,7 +15,6 @@ import java.util.Arrays;
 import org.jetbrains.annotations.NotNull;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
-import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 import org.jetbrains.mps.openapi.language.SProperty;
@@ -24,17 +22,15 @@ import org.jetbrains.mps.openapi.language.SProperty;
 public final class IPreviewableArtifact__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getInterfaceConcept(0xf08835038eaa4bc8L, 0x8846eb63220ab1ddL, 0x41a5090d088f66bcL, "org.iets3.variability.artifacts.base.structure.IPreviewableArtifact");
 
-  public static final SMethod<Boolean> enforceHighlighterPreview_id2eXfxf9wG9q = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("enforceHighlighterPreview").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(2575282816631882330L).languageId(0x8846eb63220ab1ddL, 0xf08835038eaa4bc8L).build2();
-  public static final SMethod<Boolean> showPreviewFilterDropdown_id78bHui5OCbO = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("showPreviewFilterDropdown").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(8217861938169938676L).languageId(0x8846eb63220ab1ddL, 0xf08835038eaa4bc8L).build2();
-  public static final SMethod<Boolean> isShownPresenceCondition_id6wr6VOzTwxC = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("isShownPresenceCondition").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(7501620103480739944L).languageId(0x8846eb63220ab1ddL, 0xf08835038eaa4bc8L).build2(SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""));
-  public static final SMethod<PreviewCriteria> previewCriteria_id6ViAOjRttY = new SMethodBuilder<PreviewCriteria>(new SJavaCompoundTypeImpl(PreviewCriteria.class)).name("previewCriteria").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(124775247028017022L).languageId(0x8846eb63220ab1ddL, 0xf08835038eaa4bc8L).build2();
-  public static final SMethod<Void> previewCriteria_id51XFjh5Ptnl = new SMethodBuilder<Void>(new SJavaCompoundTypeImpl(Void.class)).name("previewCriteria").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5799982335144613333L).languageId(0x8846eb63220ab1ddL, 0xf08835038eaa4bc8L).build2(SMethodBuilder.createJavaParameter(PreviewCriteria.class, ""));
-  /*package*/ static final SMethod<Object> getPreviewCriteria_id5M8D$h4MF6w = new SMethodBuilder<Object>(new SJavaCompoundTypeImpl(Object.class)).name("getPreviewCriteria").modifiers(0, AccessPrivileges.PRIVATE).concept(CONCEPT).baseMethodId(6667762060464140704L).languageId(0x8846eb63220ab1ddL, 0xf08835038eaa4bc8L).build2();
+  public static final SMethod<Boolean> enforceHighlighterPreview_id2eXfxf9wG9q = new SMethodBuilder<>(Boolean.TYPE).name("enforceHighlighterPreview").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(2575282816631882330L).languageId(0x8846eb63220ab1ddL, 0xf08835038eaa4bc8L).build2();
+  public static final SMethod<Boolean> showPreviewFilterDropdown_id78bHui5OCbO = new SMethodBuilder<>(Boolean.TYPE).name("showPreviewFilterDropdown").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(8217861938169938676L).languageId(0x8846eb63220ab1ddL, 0xf08835038eaa4bc8L).build2();
+  public static final SMethod<Boolean> isShownPresenceCondition_id6wr6VOzTwxC = new SMethodBuilder<>(Boolean.TYPE).name("isShownPresenceCondition").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(7501620103480739944L).languageId(0x8846eb63220ab1ddL, 0xf08835038eaa4bc8L).build2(SMethodBuilder.createJavaParameter(SNode.class, "variationPoint"));
+  public static final SMethod<PreviewCriteria> previewCriteria_id6ViAOjRttY = new SMethodBuilder<>(PreviewCriteria.class).name("previewCriteria").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(124775247028017022L).languageId(0x8846eb63220ab1ddL, 0xf08835038eaa4bc8L).build2();
+  public static final SMethod<Void> previewCriteria_id51XFjh5Ptnl = new SMethodBuilder<>(Void.TYPE).name("previewCriteria").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5799982335144613333L).languageId(0x8846eb63220ab1ddL, 0xf08835038eaa4bc8L).build2(SMethodBuilder.createJavaParameter(PreviewCriteria.class, "previewCriteria"));
+  /*package*/ static final SMethod<Object> getPreviewCriteria_id5M8D$h4MF6w = new SMethodBuilder<>(Object.class).name("getPreviewCriteria").modifiers(0, AccessPrivileges.PRIVATE).concept(CONCEPT).baseMethodId(6667762060464140704L).languageId(0x8846eb63220ab1ddL, 0xf08835038eaa4bc8L).build2();
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(enforceHighlighterPreview_id2eXfxf9wG9q, showPreviewFilterDropdown_id78bHui5OCbO, isShownPresenceCondition_id6wr6VOzTwxC, previewCriteria_id6ViAOjRttY, previewCriteria_id51XFjh5Ptnl, getPreviewCriteria_id5M8D$h4MF6w);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(enforceHighlighterPreview_id2eXfxf9wG9q, showPreviewFilterDropdown_id78bHui5OCbO, isShownPresenceCondition_id6wr6VOzTwxC, previewCriteria_id6ViAOjRttY, previewCriteria_id51XFjh5Ptnl, getPreviewCriteria_id5M8D$h4MF6w);
 
-  private static void ___init___(@NotNull SNode __thisNode__) {
-  }
 
   /*package*/ static boolean enforceHighlighterPreview_id2eXfxf9wG9q(@NotNull SNode __thisNode__) {
     return true;
@@ -59,7 +55,7 @@ public final class IPreviewableArtifact__BehaviorDescriptor extends BaseBHDescri
     if (null != IPreviewableArtifact__BehaviorDescriptor.getPreviewCriteria_id5M8D$h4MF6w.invokeSpecial(__thisNode__)) {
       Object previewObject = IPreviewableArtifact__BehaviorDescriptor.getPreviewCriteria_id5M8D$h4MF6w.invokeSpecial(__thisNode__);
       if (previewObject instanceof PreviewCriteria) {
-        return as_maohyu_a0a0b0c0q(previewObject, PreviewCriteria.class);
+        return as_maohyu_a0a0b0c0p(previewObject, PreviewCriteria.class);
       }
     }
     return PreviewCriteria.defaultCriteria();
@@ -74,10 +70,6 @@ public final class IPreviewableArtifact__BehaviorDescriptor extends BaseBHDescri
   /*package*/ IPreviewableArtifact__BehaviorDescriptor() {
   }
 
-  @Override
-  protected void initNode(@NotNull SNode node, @NotNull SConstructor constructor, @Nullable Object[] parameters) {
-    ___init___(node);
-  }
 
   @Override
   protected <T> T invokeSpecial0(@NotNull SNode node, @NotNull SMethod<T> method, @Nullable Object[] parameters) {
@@ -127,7 +119,7 @@ public final class IPreviewableArtifact__BehaviorDescriptor extends BaseBHDescri
   public SAbstractConcept getConcept() {
     return CONCEPT;
   }
-  private static <T> T as_maohyu_a0a0b0c0q(Object o, Class<T> type) {
+  private static <T> T as_maohyu_a0a0b0c0p(Object o, Class<T> type) {
     return (type.isInstance(o) ? (T) o : null);
   }
 

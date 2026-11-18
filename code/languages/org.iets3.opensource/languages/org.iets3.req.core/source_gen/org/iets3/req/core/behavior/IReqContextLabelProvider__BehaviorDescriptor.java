@@ -7,26 +7,22 @@ import org.jetbrains.mps.openapi.language.SAbstractConcept;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import java.util.List;
 import java.util.Arrays;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.mps.openapi.model.SNode;
-import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 
 public final class IReqContextLabelProvider__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getInterfaceConcept(0xa3c6f64241b744cbL, 0x951b463b8427a245L, 0x4d2d9394a45982e8L, "org.iets3.req.core.structure.IReqContextLabelProvider");
 
-  public static final SMethod<String> getReqStructureFolderName_id4OH$Ti$mom4 = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("getReqStructureFolderName").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5561263381494203780L).languageId(0x951b463b8427a245L, 0xa3c6f64241b744cbL).build2();
-  public static final SMethod<String> getReqGeneralFolderName_id4OH$Ti$momj = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("getReqGeneralFolderName").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5561263381494203795L).languageId(0x951b463b8427a245L, 0xa3c6f64241b744cbL).build2();
+  public static final SMethod<String> getReqStructureFolderName_id4OH$Ti$mom4 = new SMethodBuilder<>(String.class).name("getReqStructureFolderName").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5561263381494203780L).languageId(0x951b463b8427a245L, 0xa3c6f64241b744cbL).build2();
+  public static final SMethod<String> getReqGeneralFolderName_id4OH$Ti$momj = new SMethodBuilder<>(String.class).name("getReqGeneralFolderName").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5561263381494203795L).languageId(0x951b463b8427a245L, 0xa3c6f64241b744cbL).build2();
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(getReqStructureFolderName_id4OH$Ti$mom4, getReqGeneralFolderName_id4OH$Ti$momj);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(getReqStructureFolderName_id4OH$Ti$mom4, getReqGeneralFolderName_id4OH$Ti$momj);
 
-  private static void ___init___(@NotNull SNode __thisNode__) {
-  }
 
   /*package*/ static String getReqStructureFolderName_id4OH$Ti$mom4(@NotNull SNode __thisNode__) {
     return "Requirements Structure";
@@ -38,10 +34,6 @@ public final class IReqContextLabelProvider__BehaviorDescriptor extends BaseBHDe
   /*package*/ IReqContextLabelProvider__BehaviorDescriptor() {
   }
 
-  @Override
-  protected void initNode(@NotNull SNode node, @NotNull SConstructor constructor, @Nullable Object[] parameters) {
-    ___init___(node);
-  }
 
   @Override
   protected <T> T invokeSpecial0(@NotNull SNode node, @NotNull SMethod<T> method, @Nullable Object[] parameters) {

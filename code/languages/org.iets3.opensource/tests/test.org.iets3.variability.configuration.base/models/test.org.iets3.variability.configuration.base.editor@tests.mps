@@ -17,10 +17,10 @@
     <import index="nzwl" ref="r:dfaa2422-aef5-456d-a8cd-942c81b870e6(org.iets3.variability.configuration.base.intentions)" />
     <import index="ch50" ref="r:83d54567-d361-47ca-a949-7374ea89921d(org.iets3.variability.configuration.base.plugin)" />
     <import index="4ndm" ref="r:a9fe59d7-0b4f-42b0-925a-71cc04f93df1(org.iets3.variability.configuration.base.structure)" />
-    <import index="3o3z" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.google.common.collect(MPS.IDEA/)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" />
     <import index="s6b7" ref="r:a7e2f963-3e46-49e0-a385-e8c7f33c91b7(org.iets3.variability.featuremodel.base.structure)" />
     <import index="8w4h" ref="r:47440061-d7b2-45b0-8507-64028fc49a72(test.org.iets3.common.base.util)" />
+    <import index="3o3z" ref="ecfb9949-7433-4db5-85de-0f84d172e4ce/java:com.google.common.collect(de.q60.mps.collections.libs/)" />
   </imports>
   <registry>
     <language id="8585453e-6bfb-4d80-98de-b16074f1d86c" name="jetbrains.mps.lang.test">
@@ -67,6 +67,9 @@
       <concept id="1225989773458" name="jetbrains.mps.lang.test.structure.InvokeIntentionStatement" flags="nn" index="1MFPAf">
         <reference id="1225989811227" name="intention" index="1MFYO6" />
       </concept>
+    </language>
+    <language id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior">
+      <concept id="3235159848334022093" name="jetbrains.mps.lang.behavior.structure.Node_ConceptMethodCall" flags="nn" index="3zqWPK" />
     </language>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
       <concept id="1197027756228" name="jetbrains.mps.baseLanguage.structure.DotExpression" flags="nn" index="2OqwBi">
@@ -278,7 +281,6 @@
       <concept id="1140725362528" name="jetbrains.mps.lang.smodel.structure.Link_SetTargetOperation" flags="nn" index="2oxUTD">
         <child id="1140725362529" name="linkTarget" index="2oxUTC" />
       </concept>
-      <concept id="1179409122411" name="jetbrains.mps.lang.smodel.structure.Node_ConceptMethodCall" flags="nn" index="2qgKlT" />
       <concept id="1139621453865" name="jetbrains.mps.lang.smodel.structure.Node_IsInstanceOfOperation" flags="nn" index="1mIQ4w">
         <child id="1177027386292" name="conceptArgument" index="cj9EA" />
       </concept>
@@ -321,7 +323,7 @@
             <node concept="3xONca" id="3LmKzvWV0Qb" role="2Oq$k0">
               <ref role="3xOPvv" node="3LmKzvWValD" resolve="conf" />
             </node>
-            <node concept="2qgKlT" id="3LmKzvWV1JL" role="2OqNvi">
+            <node concept="3zqWPK" id="5DJjBfj0acD" role="2OqNvi">
               <ref role="37wK5l" to="lte6:1VDhrxMZEaT" resolve="canAddUsingSection" />
             </node>
           </node>
@@ -337,7 +339,7 @@
             <node concept="3xONca" id="3LmKzvWVtJr" role="2Oq$k0">
               <ref role="3xOPvv" node="3LmKzvWVtxx" resolve="conf2" />
             </node>
-            <node concept="2qgKlT" id="3LmKzvWVvl9" role="2OqNvi">
+            <node concept="3zqWPK" id="5DJjBfj0acF" role="2OqNvi">
               <ref role="37wK5l" to="lte6:1VDhrxMZEaT" resolve="canAddUsingSection" />
             </node>
           </node>
@@ -1760,7 +1762,7 @@
             <node concept="3xONca" id="1VDhrxNdeYQ" role="2Oq$k0">
               <ref role="3xOPvv" node="1VDhrxNdeRj" resolve="conf" />
             </node>
-            <node concept="2qgKlT" id="1VDhrxNdfRO" role="2OqNvi">
+            <node concept="3zqWPK" id="5DJjBfj0acH" role="2OqNvi">
               <ref role="37wK5l" to="lte6:1VDhrxMZEaT" resolve="canAddUsingSection" />
             </node>
           </node>
@@ -1776,7 +1778,7 @@
             <node concept="3xONca" id="1VDhrxNpkju" role="2Oq$k0">
               <ref role="3xOPvv" node="1VDhrxNpkbN" resolve="conf2" />
             </node>
-            <node concept="2qgKlT" id="1VDhrxNplUs" role="2OqNvi">
+            <node concept="3zqWPK" id="5DJjBfj0acJ" role="2OqNvi">
               <ref role="37wK5l" to="lte6:1VDhrxMZEaT" resolve="canAddUsingSection" />
             </node>
           </node>
@@ -1792,7 +1794,7 @@
             <node concept="3xONca" id="1VDhrxPvcD6" role="2Oq$k0">
               <ref role="3xOPvv" node="1VDhrxPvcjX" resolve="conf3" />
             </node>
-            <node concept="2qgKlT" id="1VDhrxPvdy4" role="2OqNvi">
+            <node concept="3zqWPK" id="5DJjBfj0acL" role="2OqNvi">
               <ref role="37wK5l" to="lte6:1VDhrxMZEaT" resolve="canAddUsingSection" />
             </node>
           </node>
@@ -1808,7 +1810,7 @@
             <node concept="3xONca" id="3LmKzvVJXV2" role="2Oq$k0">
               <ref role="3xOPvv" node="3LmKzvVJXNv" resolve="conf4" />
             </node>
-            <node concept="2qgKlT" id="3LmKzvVJZxo" role="2OqNvi">
+            <node concept="3zqWPK" id="5DJjBfj0acN" role="2OqNvi">
               <ref role="37wK5l" to="lte6:1VDhrxMZEaT" resolve="canAddUsingSection" />
             </node>
           </node>

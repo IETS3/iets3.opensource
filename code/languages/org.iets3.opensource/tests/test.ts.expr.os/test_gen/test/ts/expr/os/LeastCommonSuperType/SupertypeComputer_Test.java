@@ -243,8 +243,8 @@ public class SupertypeComputer_Test extends BaseTransformationTest {
 
         Assert.assertTrue(Sequence.fromIterable(SNodeOperations.ofConcept(allActual, CONCEPTS.StringTypeWithConstraint$H$)).isEmpty());
 
-        Assert.assertEquals(7, Sequence.fromIterable(SNodeOperations.ofConcept(allActual, CONCEPTS.StringType$B3)).count());
-        Assert.assertEquals(7, Sequence.fromIterable(SNodeOperations.ofConcept(allActual, CONCEPTS.StringType$B3)).distinct().count());
+        Assert.assertEquals(Integer.valueOf(7), Integer.valueOf(Sequence.fromIterable(SNodeOperations.ofConcept(allActual, CONCEPTS.StringType$B3)).count()));
+        Assert.assertEquals(Integer.valueOf(7), Integer.valueOf(Sequence.fromIterable(SNodeOperations.ofConcept(allActual, CONCEPTS.StringType$B3)).distinct().count()));
       });
     }
 

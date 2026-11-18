@@ -55,6 +55,9 @@
     <import index="5qo5" ref="r:6d93ddb1-b0b0-4eee-8079-51303666672a(org.iets3.core.expr.simpleTypes.structure)" implicit="true" />
   </imports>
   <registry>
+    <language id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior">
+      <concept id="3235159848334022093" name="jetbrains.mps.lang.behavior.structure.Node_ConceptMethodCall" flags="nn" index="3zqWPK" />
+    </language>
     <language id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor">
       <concept id="1402906326895675325" name="jetbrains.mps.lang.editor.structure.CellActionMap_FunctionParm_selectedNode" flags="nn" index="0IXxy" />
       <concept id="5991739802479784073" name="jetbrains.mps.lang.editor.structure.MenuTypeDefault" flags="ng" index="22hDWj" />
@@ -509,7 +512,6 @@
       <concept id="1138411891628" name="jetbrains.mps.lang.smodel.structure.SNodeOperation" flags="nn" index="eCIE_">
         <child id="1144104376918" name="parameter" index="1xVPHs" />
       </concept>
-      <concept id="1179409122411" name="jetbrains.mps.lang.smodel.structure.Node_ConceptMethodCall" flags="nn" index="2qgKlT" />
       <concept id="2396822768958367367" name="jetbrains.mps.lang.smodel.structure.AbstractTypeCastExpression" flags="nn" index="$5XWr">
         <child id="6733348108486823193" name="leftExpression" index="1m5AlR" />
         <child id="3906496115198199033" name="conceptArgument" index="3oSUPX" />
@@ -2391,7 +2393,7 @@
                   </node>
                   <node concept="2OqwBi" id="wW2kvIoIuy" role="3clFbw">
                     <node concept="pncrf" id="wW2kvIoIsC" role="2Oq$k0" />
-                    <node concept="2qgKlT" id="wW2kvIoIy$" role="2OqNvi">
+                    <node concept="3zqWPK" id="5DJjBfj0bOM" role="2OqNvi">
                       <ref role="37wK5l" to="wthy:22hm_0$b7pE" resolve="isLeaf" />
                     </node>
                   </node>
@@ -2432,7 +2434,7 @@
                 </node>
                 <node concept="2OqwBi" id="6Xdk0AIlC_b" role="3clFbw">
                   <node concept="pncrf" id="6Xdk0AIlC_c" role="2Oq$k0" />
-                  <node concept="2qgKlT" id="6Xdk0AIlC_d" role="2OqNvi">
+                  <node concept="3zqWPK" id="5DJjBfj0bOO" role="2OqNvi">
                     <ref role="37wK5l" to="wthy:22hm_0$b7pE" resolve="isLeaf" />
                   </node>
                 </node>
@@ -4986,7 +4988,7 @@
                               <ref role="cht4Q" to="vs0r:7uLL3Mf3udZ" resolve="ITextBlockOwner" />
                             </node>
                           </node>
-                          <node concept="2qgKlT" id="264ij5$S6xk" role="2OqNvi">
+                          <node concept="3zqWPK" id="5DJjBfj0bOQ" role="2OqNvi">
                             <ref role="37wK5l" to="hwgx:BsHjoDQZaR" resolve="getTextColor" />
                           </node>
                         </node>
@@ -5322,7 +5324,7 @@
             <node concept="3clFbF" id="Nuz63eFsUH" role="3cqZAp">
               <node concept="2OqwBi" id="Nuz63eFtaS" role="3clFbG">
                 <node concept="pncrf" id="Nuz63eFsX7" role="2Oq$k0" />
-                <node concept="2qgKlT" id="Nuz63eFtwr" role="2OqNvi">
+                <node concept="3zqWPK" id="5DJjBfj0bOS" role="2OqNvi">
                   <ref role="37wK5l" to="wthy:Nuz63e$fnb" resolve="effectiveContents" />
                 </node>
               </node>

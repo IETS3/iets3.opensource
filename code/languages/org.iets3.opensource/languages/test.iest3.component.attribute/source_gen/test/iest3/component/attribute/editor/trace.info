@@ -31,49 +31,42 @@
       <node id="4448734902938499281" at="19,19,20,18" concept="1" />
       <node id="4448734902938499281" at="25,26,26,18" concept="6" />
       <node id="4448734902938499281" at="29,39,30,29" concept="6" />
-      <node id="4448734902938499281" at="33,91,34,172" concept="5" />
-      <node id="4448734902938499281" at="34,172,35,49" concept="5" />
+      <node id="4448734902938499281" at="33,40,34,179" concept="5" />
+      <node id="4448734902938499281" at="34,179,35,49" concept="5" />
       <node id="4448734902938499281" at="35,49,36,0" concept="7" />
-      <node id="4448734902938499281" at="36,0,37,127" concept="5" />
-      <node id="4448734902938499281" at="37,127,38,45" concept="1" />
+      <node id="4448734902938499281" at="36,0,37,134" concept="5" />
+      <node id="4448734902938499281" at="37,134,38,45" concept="1" />
       <node id="4448734902938499281" at="38,45,39,28" concept="1" />
       <node id="4448734902938499281" at="39,28,40,31" concept="1" />
       <node id="4448734902938499281" at="40,31,41,22" concept="6" />
-      <node id="4448734902938499281" at="43,40,44,55" concept="6" />
-      <node id="4448734902938499283" at="46,42,47,119" concept="5" />
-      <node id="4448734902938499283" at="47,119,48,22" concept="6" />
+      <node id="4448734902938499283" at="43,42,44,119" concept="5" />
+      <node id="4448734902938499283" at="44,119,45,22" concept="6" />
       <node id="4448734902938499281" at="15,0,17,0" concept="2" trace="myNode" />
       <node id="4448734902938499281" at="29,0,32,0" concept="4" trace="createCell#()Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
-      <node id="4448734902938499281" at="43,0,46,0" concept="4" trace="createTooltip_1#()Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
       <node id="4448734902938499281" at="18,0,22,0" concept="0" trace="TestAttribute_EditorBuilder_a#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)V" />
-      <node id="4448734902938499283" at="46,0,50,0" concept="4" trace="createComponent_0#()Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
+      <node id="4448734902938499283" at="43,0,47,0" concept="4" trace="createComponent_0#()Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
       <node id="4448734902938499281" at="23,0,28,0" concept="4" trace="getNode#()Lorg/jetbrains/mps/openapi/model/SNode;" />
-      <node id="4448734902938499281" at="33,0,43,0" concept="4" trace="createTooltip_0#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
+      <node id="4448734902938499281" at="33,0,43,0" concept="4" trace="createTooltip_0#()Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
       <scope id="4448734902938499281" at="25,26,26,18" />
       <scope id="4448734902938499281" at="29,39,30,29" />
-      <scope id="4448734902938499281" at="43,40,44,55" />
       <scope id="4448734902938499281" at="18,93,20,18" />
-      <scope id="4448734902938499283" at="46,42,48,22">
+      <scope id="4448734902938499283" at="43,42,45,22">
         <var name="editorCell" id="4448734902938499283" />
       </scope>
       <scope id="4448734902938499281" at="29,0,32,0" />
-      <scope id="4448734902938499281" at="43,0,46,0" />
       <scope id="4448734902938499281" at="18,0,22,0">
         <var name="context" id="4448734902938499281" />
         <var name="node" id="4448734902938499281" />
       </scope>
-      <scope id="4448734902938499283" at="46,0,50,0" />
+      <scope id="4448734902938499283" at="43,0,47,0" />
       <scope id="4448734902938499281" at="23,0,28,0" />
-      <scope id="4448734902938499281" at="33,91,41,22">
+      <scope id="4448734902938499281" at="33,40,41,22">
         <var name="editorCell" id="4448734902938499281" />
         <var name="tooltip" id="4448734902938499281" />
         <var name="visibleCell" id="4448734902938499281" />
       </scope>
-      <scope id="4448734902938499281" at="33,0,43,0">
-        <var name="editorContext" id="4448734902938499281" />
-        <var name="node" id="4448734902938499281" />
-      </scope>
-      <unit id="4448734902938499281" at="14,0,51,0" name="test.iest3.component.attribute.editor.TestAttribute_EditorBuilder_a" />
+      <scope id="4448734902938499281" at="33,0,43,0" />
+      <unit id="4448734902938499281" at="14,0,48,0" name="test.iest3.component.attribute.editor.TestAttribute_EditorBuilder_a" />
     </file>
     <file name="TestAttribute_tooltipHint_mb9os1_a_Editor.java">
       <node id="4773799153885796219" at="14,0,15,0" concept="2" trace="myContextHints" />

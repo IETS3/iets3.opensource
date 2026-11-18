@@ -36,9 +36,6 @@ public class basetypOf_ListType_SubtypingRule extends SubtypingRule_Runtime impl
   public boolean isWeak() {
     return false;
   }
-  public boolean surelyKeepsConcept() {
-    return true;
-  }
 
   private static final class CONCEPTS {
     /*package*/ static final SConcept MultiPlus$pR = MetaAdapterFactory.getConcept(0xb4244272c048403bL, 0x93da1c4a1df18d3fL, 0x4d972cb9b6cdd4c4L, "org.iets3.analysis.logic.operator.structure.MultiPlus");

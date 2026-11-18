@@ -8,7 +8,6 @@ import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import org.iets3.core.expr.mutable.plugin.InteractionDescriptor;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import org.iets3.core.expr.mutable.plugin.InteractorValue;
 import com.mbeddr.mpsutil.interpreter.rt.IContext;
@@ -17,20 +16,17 @@ import java.util.Arrays;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.mps.openapi.model.SNode;
 import org.iets3.core.expr.process.plugin.MultipartyBooleanDecisionValue;
-import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 
 public final class MultipartyBooleanDecision__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getConcept(0x50b470e714ad46c3L, 0xb5404586f56d2e9cL, 0x7f2b47dbd5d4ada7L, "org.iets3.core.expr.process.structure.MultipartyBooleanDecision");
 
-  public static final SMethod<InteractionDescriptor> getDescriptor_id5y3VELft_Ye = new SMethodBuilder<InteractionDescriptor>(new SJavaCompoundTypeImpl(InteractionDescriptor.class)).name("getDescriptor").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(6378203921121697678L).languageId(0x9c3b0b4469830440L, 0xfbba51185fc649ffL).build2();
-  public static final SMethod<InteractorValue> createNewValue_id7WFhXJlVW$d = new SMethodBuilder<InteractorValue>(new SJavaCompoundTypeImpl(InteractorValue.class)).name("createNewValue").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(9163496876328077581L).languageId(0x9c3b0b4469830440L, 0xfbba51185fc649ffL).build2(SMethodBuilder.createJavaParameter(IContext.class, ""));
+  public static final SMethod<InteractionDescriptor> getDescriptor_id5y3VELft_Ye = new SMethodBuilder<>(InteractionDescriptor.class).name("getDescriptor").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(6378203921121697678L).languageId(0x9c3b0b4469830440L, 0xfbba51185fc649ffL).build2();
+  public static final SMethod<InteractorValue> createNewValue_id7WFhXJlVW$d = new SMethodBuilder<>(InteractorValue.class).name("createNewValue").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(9163496876328077581L).languageId(0x9c3b0b4469830440L, 0xfbba51185fc649ffL).build2(SMethodBuilder.createJavaParameter(IContext.class, "ctx"));
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(getDescriptor_id5y3VELft_Ye, createNewValue_id7WFhXJlVW$d);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(getDescriptor_id5y3VELft_Ye, createNewValue_id7WFhXJlVW$d);
 
-  private static void ___init___(@NotNull SNode __thisNode__) {
-  }
 
   /*package*/ static InteractionDescriptor getDescriptor_id5y3VELft_Ye(@NotNull SNode __thisNode__) {
     return MultipartyBooleanDecisionValue.descriptor(__thisNode__);
@@ -42,10 +38,6 @@ public final class MultipartyBooleanDecision__BehaviorDescriptor extends BaseBHD
   /*package*/ MultipartyBooleanDecision__BehaviorDescriptor() {
   }
 
-  @Override
-  protected void initNode(@NotNull SNode node, @NotNull SConstructor constructor, @Nullable Object[] parameters) {
-    ___init___(node);
-  }
 
   @Override
   protected <T> T invokeSpecial0(@NotNull SNode node, @NotNull SMethod<T> method, @Nullable Object[] parameters) {
