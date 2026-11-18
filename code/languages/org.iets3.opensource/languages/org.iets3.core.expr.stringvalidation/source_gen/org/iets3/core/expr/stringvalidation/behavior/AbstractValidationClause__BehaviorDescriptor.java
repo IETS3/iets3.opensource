@@ -8,34 +8,26 @@ import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import org.iets3.core.expr.stringvalidation.runtime.runtime.XAbstractValidationClause;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import java.util.List;
 import java.util.Arrays;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.mps.openapi.model.SNode;
-import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 
 public final class AbstractValidationClause__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getConcept(0xf003a0fec14041d7L, 0xa145ea42368e581cL, 0x6c1f4b80b08345ebL, "org.iets3.core.expr.stringvalidation.structure.AbstractValidationClause");
 
-  public static final SMethod<XAbstractValidationClause> makeX_id5wF$o0BEPkN = new SMethodBuilder<XAbstractValidationClause>(new SJavaCompoundTypeImpl(XAbstractValidationClause.class)).name("makeX").modifiers(12, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(6353331678943597875L).languageId(0xa145ea42368e581cL, 0xf003a0fec14041d7L).build2();
+  public static final SMethod<XAbstractValidationClause> makeX_id5wF$o0BEPkN = new SMethodBuilder<>(XAbstractValidationClause.class).name("makeX").modifiers(12, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(6353331678943597875L).languageId(0xa145ea42368e581cL, 0xf003a0fec14041d7L).build2();
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(makeX_id5wF$o0BEPkN);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(makeX_id5wF$o0BEPkN);
 
-  private static void ___init___(@NotNull SNode __thisNode__) {
-  }
 
 
   /*package*/ AbstractValidationClause__BehaviorDescriptor() {
   }
 
-  @Override
-  protected void initNode(@NotNull SNode node, @NotNull SConstructor constructor, @Nullable Object[] parameters) {
-    ___init___(node);
-  }
 
   @Override
   protected <T> T invokeSpecial0(@NotNull SNode node, @NotNull SMethod<T> method, @Nullable Object[] parameters) {

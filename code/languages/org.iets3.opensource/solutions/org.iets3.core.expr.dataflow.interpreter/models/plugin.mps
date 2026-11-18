@@ -16,6 +16,9 @@
     <import index="b4m9" ref="r:f73fffcc-e6a1-406e-b40b-65eaaa19bd69(org.iets3.core.expr.dataflow.behavior)" />
   </imports>
   <registry>
+    <language id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior">
+      <concept id="3235159848334022093" name="jetbrains.mps.lang.behavior.structure.Node_ConceptMethodCall" flags="nn" index="3zqWPK" />
+    </language>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
       <concept id="1082485599095" name="jetbrains.mps.baseLanguage.structure.BlockStatement" flags="nn" index="9aQIb">
         <child id="1082485599096" name="statements" index="9aQI4" />
@@ -156,7 +159,6 @@
       <concept id="1177026924588" name="jetbrains.mps.lang.smodel.structure.RefConcept_Reference" flags="nn" index="chp4Y">
         <reference id="1177026940964" name="conceptDeclaration" index="cht4Q" />
       </concept>
-      <concept id="1179409122411" name="jetbrains.mps.lang.smodel.structure.Node_ConceptMethodCall" flags="nn" index="2qgKlT" />
       <concept id="2396822768958367367" name="jetbrains.mps.lang.smodel.structure.AbstractTypeCastExpression" flags="nn" index="$5XWr">
         <child id="6733348108486823193" name="leftExpression" index="1m5AlR" />
         <child id="3906496115198199033" name="conceptArgument" index="3oSUPX" />
@@ -832,9 +834,9 @@
                           <node concept="37vLTw" id="2vkvJYTf3Zb" role="2Oq$k0">
                             <ref role="3cqZAo" node="4z0AnX817ng" resolve="it" />
                           </node>
-                          <node concept="2qgKlT" id="2vkvJYTf3Zc" role="2OqNvi">
+                          <node concept="3zqWPK" id="5DJjBfj0bJt" role="2OqNvi">
                             <ref role="37wK5l" to="b4m9:5Q9FzcI4YUK" resolve="connectsToOutsidePort" />
-                            <node concept="37vLTw" id="2vkvJYTf3Zd" role="37wK5m">
+                            <node concept="37vLTw" id="5DJjBfj0bJv" role="37wK5m">
                               <ref role="3cqZAo" node="2vkvJYTeVAp" resolve="out" />
                             </node>
                           </node>
@@ -993,12 +995,12 @@
                                 <node concept="37vLTw" id="2vkvJYTf_OM" role="2Oq$k0">
                                   <ref role="3cqZAo" node="4z0AnX817ni" resolve="it" />
                                 </node>
-                                <node concept="2qgKlT" id="2vkvJYTf_ON" role="2OqNvi">
+                                <node concept="3zqWPK" id="5DJjBfj0bJw" role="2OqNvi">
                                   <ref role="37wK5l" to="b4m9:5Q9FzcI6bZ6" resolve="connectsToInsideInPort" />
-                                  <node concept="37vLTw" id="2vkvJYTf_OO" role="37wK5m">
+                                  <node concept="37vLTw" id="5DJjBfj0bJy" role="37wK5m">
                                     <ref role="3cqZAo" node="2vkvJYTfgQF" resolve="instance" />
                                   </node>
-                                  <node concept="2GrUjf" id="2vkvJYTf_OP" role="37wK5m">
+                                  <node concept="2GrUjf" id="5DJjBfj0bJz" role="37wK5m">
                                     <ref role="2Gs0qQ" node="2vkvJYTfwFX" resolve="in" />
                                   </node>
                                 </node>

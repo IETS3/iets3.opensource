@@ -8,7 +8,6 @@ import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import org.jetbrains.mps.openapi.model.SNode;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import java.util.List;
 import java.util.Arrays;
@@ -17,7 +16,6 @@ import jetbrains.mps.internal.collections.runtime.Sequence;
 import java.util.Collections;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
-import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 import org.jetbrains.mps.openapi.language.SConcept;
@@ -27,15 +25,13 @@ import org.jetbrains.mps.openapi.language.SReferenceLink;
 public final class BuilderAdapter__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getConcept(0x71934284d7d145eeL, 0xa0548c072591085fL, 0x465d5f01132db228L, "org.iets3.core.expr.toplevel.structure.BuilderAdapter");
 
-  public static final SMethod<Iterable<SNode>> getMandatoryFields_id4ptnK4jbrao = new SMethodBuilder<Iterable<SNode>>(new SJavaCompoundTypeImpl((Class<Iterable<SNode>>) ((Class) Object.class))).name("getMandatoryFields").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5070313213710414488L).languageId(0xa0548c072591085fL, 0x71934284d7d145eeL).build2();
-  public static final SMethod<Iterable<SNode>> getAllFields_id4ptnK4jbrbr = new SMethodBuilder<Iterable<SNode>>(new SJavaCompoundTypeImpl((Class<Iterable<SNode>>) ((Class) Object.class))).name("getAllFields").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5070313213710414555L).languageId(0xa0548c072591085fL, 0x71934284d7d145eeL).build2();
-  public static final SMethod<Iterable<SNode>> missingSetters_id4ptnK4jbJRO = new SMethodBuilder<Iterable<SNode>>(new SJavaCompoundTypeImpl((Class<Iterable<SNode>>) ((Class) Object.class))).name("missingSetters").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5070313213710499316L).languageId(0xa0548c072591085fL, 0x71934284d7d145eeL).build2();
-  public static final SMethod<SNode> nodeForTypingFieldSetter_id7SszixhZVRp = new SMethodBuilder<SNode>(new SJavaCompoundTypeImpl((Class<SNode>) ((Class) Object.class))).name("nodeForTypingFieldSetter").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(9087293352440741337L).languageId(0xa0548c072591085fL, 0x71934284d7d145eeL).build2(SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""));
+  public static final SMethod<Iterable<SNode>> getMandatoryFields_id4ptnK4jbrao = new SMethodBuilder<>((Class<Iterable<SNode>>) ((Class) Object.class)).name("getMandatoryFields").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5070313213710414488L).languageId(0xa0548c072591085fL, 0x71934284d7d145eeL).build2();
+  public static final SMethod<Iterable<SNode>> getAllFields_id4ptnK4jbrbr = new SMethodBuilder<>((Class<Iterable<SNode>>) ((Class) Object.class)).name("getAllFields").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5070313213710414555L).languageId(0xa0548c072591085fL, 0x71934284d7d145eeL).build2();
+  public static final SMethod<Iterable<SNode>> missingSetters_id4ptnK4jbJRO = new SMethodBuilder<>((Class<Iterable<SNode>>) ((Class) Object.class)).name("missingSetters").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5070313213710499316L).languageId(0xa0548c072591085fL, 0x71934284d7d145eeL).build2();
+  public static final SMethod<SNode> nodeForTypingFieldSetter_id7SszixhZVRp = new SMethodBuilder<>(SNode.class).name("nodeForTypingFieldSetter").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(9087293352440741337L).languageId(0xa0548c072591085fL, 0x71934284d7d145eeL).build2(SMethodBuilder.createJavaParameter(SNode.class, "setter"));
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(getMandatoryFields_id4ptnK4jbrao, getAllFields_id4ptnK4jbrbr, missingSetters_id4ptnK4jbJRO, nodeForTypingFieldSetter_id7SszixhZVRp);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(getMandatoryFields_id4ptnK4jbrao, getAllFields_id4ptnK4jbrbr, missingSetters_id4ptnK4jbJRO, nodeForTypingFieldSetter_id7SszixhZVRp);
 
-  private static void ___init___(@NotNull SNode __thisNode__) {
-  }
 
   /*package*/ static Iterable<SNode> getMandatoryFields_id4ptnK4jbrao(@NotNull SNode __thisNode__) {
     return Sequence.fromIterable(Collections.<SNode>emptyList());
@@ -55,10 +51,6 @@ public final class BuilderAdapter__BehaviorDescriptor extends BaseBHDescriptor {
   /*package*/ BuilderAdapter__BehaviorDescriptor() {
   }
 
-  @Override
-  protected void initNode(@NotNull SNode node, @NotNull SConstructor constructor, @Nullable Object[] parameters) {
-    ___init___(node);
-  }
 
   @Override
   protected <T> T invokeSpecial0(@NotNull SNode node, @NotNull SMethod<T> method, @Nullable Object[] parameters) {

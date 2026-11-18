@@ -33,7 +33,7 @@ public class SolverResultUIHelper {
   }
 
   /**
-   * TODO: What does this method do? The name "massage" is quite generic... 
+   * TODO: What does this method do? The name "massage" is quite generic...
    */
   private static IResult massage(List<IResult> results) {
     List<IResult> results2 = results;

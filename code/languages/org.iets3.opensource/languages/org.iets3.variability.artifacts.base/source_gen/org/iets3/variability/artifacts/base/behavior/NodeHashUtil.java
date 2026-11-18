@@ -6,10 +6,12 @@ import org.jetbrains.mps.openapi.model.SNode;
 
 public class NodeHashUtil {
   /**
-   * <p>Helper function for computing short unique identifier from node-id.</p>
+   * <p>Helper function for computing short unique identifier from node-id.</p> 
    * 
-   * <p>The identifier will be represented as 6-digit hexadecimal code.
-   * The purpose of this function is to compute human-friendly solver variable names.</p>
+   * <p>
+   * The identifier will be represented as 6-digit hexadecimal code.
+   * The purpose of this function is to compute human-friendly solver variable names.
+   * </p> 
    * 
    * @param n the node to be identified
    * @return the 6-digit hex unique identifier

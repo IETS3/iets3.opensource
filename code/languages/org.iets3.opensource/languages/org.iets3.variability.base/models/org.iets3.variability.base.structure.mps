@@ -3,7 +3,7 @@
   <persistence version="9" />
   <languages>
     <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="9" />
-    <use id="982eb8df-2c96-4bd7-9963-11712ea622e5" name="jetbrains.mps.lang.resources" version="3" />
+    <use id="982eb8df-2c96-4bd7-9963-11712ea622e5" name="jetbrains.mps.lang.resources" version="4" />
     <devkit ref="78434eb8-b0e5-444b-850d-e7c4ad2da9ab(jetbrains.mps.devkit.aspect.structure)" />
   </languages>
   <imports>
@@ -23,6 +23,7 @@
       </concept>
       <concept id="2756621024541674821" name="jetbrains.mps.lang.resources.structure.TextIcon" flags="ng" index="1irR5M">
         <property id="1358878980655415353" name="iconId" index="2$rrk2" />
+        <child id="8984883884167239995" name="newuiLayers" index="2rmM5M" />
         <child id="2756621024541675110" name="layers" index="1irR9h" />
       </concept>
       <concept id="2756621024541675104" name="jetbrains.mps.lang.resources.structure.Circle" flags="ng" index="1irR9n" />
@@ -129,6 +130,20 @@
       <node concept="1irPie" id="3nzq23wvUeW" role="1irR9h">
         <property role="1irPi9" value="V" />
         <node concept="3PKj8D" id="3nzq23wvUf4" role="3PKjny">
+          <property role="3PKj8l" value="F8F8F8" />
+        </node>
+      </node>
+      <node concept="1irR9n" id="2Vv3RHRsEDU" role="2rmM5M">
+        <node concept="3PKj8D" id="2Vv3RHRsEDV" role="3PKjn_">
+          <property role="3PKj8l" value="209090" />
+        </node>
+        <node concept="3PKj8D" id="2Vv3RHRsEDW" role="3PKjnB">
+          <property role="3PKj8l" value="209020" />
+        </node>
+      </node>
+      <node concept="1irPie" id="2Vv3RHRsEDX" role="2rmM5M">
+        <property role="1irPi9" value="V" />
+        <node concept="3PKj8D" id="2Vv3RHRsEDY" role="3PKjny">
           <property role="3PKj8l" value="F8F8F8" />
         </node>
       </node>

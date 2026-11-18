@@ -9,14 +9,12 @@ import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import java.util.List;
 import org.jetbrains.mps.openapi.model.SNode;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import java.util.Arrays;
 import org.jetbrains.annotations.NotNull;
 import jetbrains.mps.internal.collections.runtime.Sequence;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
-import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 import org.jetbrains.mps.openapi.language.SReferenceLink;
@@ -26,13 +24,11 @@ import org.jetbrains.mps.openapi.language.SConcept;
 public final class PartialDecTableType__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getConcept(0x8bb1251eeae547abL, 0x984333adfae8edaaL, 0x7ab0d4ebb8a24c89L, "org.iets3.core.expr.util.structure.PartialDecTableType");
 
-  public static final SMethod<List<SNode>> getUnboundColDefs_id7EKPeISzR35 = new SMethodBuilder<List<SNode>>(new SJavaCompoundTypeImpl((Class<List<SNode>>) ((Class) Object.class))).name("getUnboundColDefs").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(8840800177407094981L).languageId(0x984333adfae8edaaL, 0x8bb1251eeae547abL).build2();
-  public static final SMethod<SNode> getTable_id7EKPeISCSMm = new SMethodBuilder<SNode>(new SJavaCompoundTypeImpl((Class<SNode>) ((Class) Object.class))).name("getTable").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(8840800177408412822L).languageId(0x984333adfae8edaaL, 0x8bb1251eeae547abL).build2();
+  public static final SMethod<List<SNode>> getUnboundColDefs_id7EKPeISzR35 = new SMethodBuilder<>((Class<List<SNode>>) ((Class) Object.class)).name("getUnboundColDefs").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(8840800177407094981L).languageId(0x984333adfae8edaaL, 0x8bb1251eeae547abL).build2();
+  public static final SMethod<SNode> getTable_id7EKPeISCSMm = new SMethodBuilder<>(SNode.class).name("getTable").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(8840800177408412822L).languageId(0x984333adfae8edaaL, 0x8bb1251eeae547abL).build2();
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(getUnboundColDefs_id7EKPeISzR35, getTable_id7EKPeISCSMm);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(getUnboundColDefs_id7EKPeISzR35, getTable_id7EKPeISCSMm);
 
-  private static void ___init___(@NotNull SNode __thisNode__) {
-  }
 
   /*package*/ static List<SNode> getUnboundColDefs_id7EKPeISzR35(@NotNull SNode __thisNode__) {
     return Sequence.fromIterable(SNodeOperations.ofConcept(Sequence.fromIterable(IMultiDecTab__BehaviorDescriptor.inputColDefs_id7FuUjk_dUMU.invoke(SLinkOperations.getTarget(__thisNode__, LINKS.table$vRNL))).subtract(Sequence.fromIterable(SLinkOperations.collect(SLinkOperations.getChildren(__thisNode__, LINKS.boundCols$yn_q), LINKS.col$vTFq))), CONCEPTS.TopLevelColDef$tE)).toList();
@@ -44,10 +40,6 @@ public final class PartialDecTableType__BehaviorDescriptor extends BaseBHDescrip
   /*package*/ PartialDecTableType__BehaviorDescriptor() {
   }
 
-  @Override
-  protected void initNode(@NotNull SNode node, @NotNull SConstructor constructor, @Nullable Object[] parameters) {
-    ___init___(node);
-  }
 
   @Override
   protected <T> T invokeSpecial0(@NotNull SNode node, @NotNull SMethod<T> method, @Nullable Object[] parameters) {

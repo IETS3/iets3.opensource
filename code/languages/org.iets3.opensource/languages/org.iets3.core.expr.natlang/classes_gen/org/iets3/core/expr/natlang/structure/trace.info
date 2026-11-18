@@ -13,7 +13,7 @@
       <unit at="11,0,58,0" name="org.iets3.core.expr.natlang.structure.ConceptPresentationAspectImpl" />
     </file>
     <file name="LanguageConceptSwitch.java">
-      <unit at="10,0,34,0" name="org.iets3.core.expr.natlang.structure.LanguageConceptSwitch" />
+      <unit at="12,0,42,0" name="org.iets3.core.expr.natlang.structure.LanguageConceptSwitch" />
     </file>
     <file name="StructureAspectDescriptor.java">
       <unit at="14,0,101,0" name="org.iets3.core.expr.natlang.structure.StructureAspectDescriptor" />
@@ -34,8 +34,8 @@
       <scope id="1693890388431451161" at="30,51,37,39" />
     </file>
     <file name="LanguageConceptSwitch.java">
-      <node id="1693890388431451161" at="13,0,14,0" concept="6" trace="NatLangCallSyntax" />
-      <node id="1693890388431451161" at="19,54,20,56" concept="0" />
+      <node id="1693890388431451161" at="15,0,16,0" concept="6" trace="NatLangCallSyntax" />
+      <node id="1693890388431451161" at="21,54,22,56" concept="0" />
     </file>
     <file name="StructureAspectDescriptor.java">
       <node id="1693890388431451161" at="16,0,17,0" concept="1" trace="myConceptNatLangCallSyntax" />
@@ -71,8 +71,8 @@
       <scope id="1693890388432028841" at="38,55,45,43" />
     </file>
     <file name="LanguageConceptSwitch.java">
-      <node id="1693890388432028841" at="14,0,15,0" concept="6" trace="NatLangFunctionArgRef" />
-      <node id="1693890388432028841" at="20,56,21,60" concept="0" />
+      <node id="1693890388432028841" at="16,0,17,0" concept="6" trace="NatLangFunctionArgRef" />
+      <node id="1693890388432028841" at="22,56,23,60" concept="0" />
     </file>
     <file name="StructureAspectDescriptor.java">
       <node id="1693890388432028841" at="17,0,18,0" concept="1" trace="myConceptNatLangFunctionArgRef" />
@@ -107,8 +107,8 @@
       <scope id="1693890388432147692" at="46,53,53,41" />
     </file>
     <file name="LanguageConceptSwitch.java">
-      <node id="1693890388432147692" at="15,0,16,0" concept="6" trace="NatLangFunctionCall" />
-      <node id="1693890388432147692" at="21,60,22,58" concept="0" />
+      <node id="1693890388432147692" at="17,0,18,0" concept="6" trace="NatLangFunctionCall" />
+      <node id="1693890388432147692" at="23,60,24,58" concept="0" />
     </file>
     <file name="StructureAspectDescriptor.java">
       <node id="1693890388432147692" at="18,0,19,0" concept="1" trace="myConceptNatLangFunctionCall" />
@@ -144,8 +144,8 @@
       <scope id="1693890388432984452" at="22,49,29,37" />
     </file>
     <file name="LanguageConceptSwitch.java">
-      <node id="1693890388432984452" at="12,0,13,0" concept="6" trace="NatLangArgument" />
-      <node id="1693890388432984452" at="18,116,19,54" concept="0" />
+      <node id="1693890388432984452" at="14,0,15,0" concept="6" trace="NatLangArgument" />
+      <node id="1693890388432984452" at="20,116,21,54" concept="0" />
     </file>
     <file name="StructureAspectDescriptor.java">
       <node id="1693890388432984452" at="15,0,16,0" concept="1" trace="myConceptNatLangArgument" />

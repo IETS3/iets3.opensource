@@ -7,40 +7,36 @@ import org.jetbrains.mps.openapi.language.SAbstractConcept;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import java.util.List;
 import java.util.Arrays;
 import org.jetbrains.annotations.NotNull;
-import org.jetbrains.mps.openapi.model.SNode;
 import org.jetbrains.annotations.ApiStatus;
 import org.iets3.core.expr.base.runtime.runtime.IdentifierConfiguratorAccess;
 import org.jetbrains.annotations.Nullable;
+import org.jetbrains.mps.openapi.model.SNode;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations;
-import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 import org.jetbrains.mps.openapi.language.SProperty;
 
 public final class IValidNamedConcept__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getInterfaceConcept(0x7b68d745a7b848b9L, 0xbd9c05c0f8725a35L, 0x32f64a31a179034L, "org.iets3.core.base.structure.IValidNamedConcept");
 
-  public static final SMethod<Boolean> allowNonIdentifierNames_id4SwD0JT7m0l = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("allowNonIdentifierNames").modifiers(9, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5629679905544167445L).languageId(0xbd9c05c0f8725a35L, 0x7b68d745a7b848b9L).build2();
-  public static final SMethod<Boolean> allowEverythingExceptWhitespace_id64w0Iq2$5zE = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("allowEverythingExceptWhitespace").modifiers(9, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(6998597009989982442L).languageId(0xbd9c05c0f8725a35L, 0x7b68d745a7b848b9L).build2();
-  public static final SMethod<Boolean> overrideDefaultAllowUmlaute_id5D8v3P4jYKp = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("overrideDefaultAllowUmlaute").modifiers(9, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(6505586264317619225L).languageId(0xbd9c05c0f8725a35L, 0x7b68d745a7b848b9L).build2();
-  public static final SMethod<Boolean> overrideDefaultAllowParagraph_id5D8v3P4lqOn = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("overrideDefaultAllowParagraph").modifiers(9, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(6505586264317996311L).languageId(0xbd9c05c0f8725a35L, 0x7b68d745a7b848b9L).build2();
-  public static final SMethod<Boolean> overrideDefaultAllowApostrophe_id5TO$xcFx5xN = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("overrideDefaultAllowApostrophe").modifiers(9, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(6806225547895789683L).languageId(0xbd9c05c0f8725a35L, 0x7b68d745a7b848b9L).build2();
-  public static final SMethod<Boolean> allowUmlaute_id5YygIlbih$m = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("allowUmlaute").modifiers(9, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(6891143932408305942L).languageId(0xbd9c05c0f8725a35L, 0x7b68d745a7b848b9L).build2();
-  public static final SMethod<Boolean> allowParagraph_id4ZH31cjGRan = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("allowParagraph").modifiers(9, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5759272774551171735L).languageId(0xbd9c05c0f8725a35L, 0x7b68d745a7b848b9L).build2();
-  public static final SMethod<Boolean> allowApostrophe_id6OMpQn6QxQe = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("allowApostrophe").modifiers(9, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(7868465185795218830L).languageId(0xbd9c05c0f8725a35L, 0x7b68d745a7b848b9L).build2();
-  public static final SMethod<String> getRegExFirstLetter_id6OMpQn6XNJW = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("getRegExFirstLetter").modifiers(9, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(7868465185797127164L).languageId(0xbd9c05c0f8725a35L, 0x7b68d745a7b848b9L).build2();
-  public static final SMethod<String> getRegExOtherThanFirstLetter_id6OMpQn6XSaI = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("getRegExOtherThanFirstLetter").modifiers(9, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(7868465185797145262L).languageId(0xbd9c05c0f8725a35L, 0x7b68d745a7b848b9L).build2();
-  public static final SMethod<Boolean> isValidName_id39ERoteujbz = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("isValidName").modifiers(9, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(3632959622634615523L).languageId(0xbd9c05c0f8725a35L, 0x7b68d745a7b848b9L).build2(SMethodBuilder.createJavaParameter(String.class, ""));
-  public static final SMethod<String> getIdentifierName_id7NEp8pMMUwS = new SMethodBuilder<String>(new SJavaCompoundTypeImpl(String.class)).name("getIdentifierName").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(9001117333867702328L).languageId(0xbd9c05c0f8725a35L, 0x7b68d745a7b848b9L).build2();
+  public static final SMethod<Boolean> allowNonIdentifierNames_id4SwD0JT7m0l = new SMethodBuilder<>(Boolean.TYPE).name("allowNonIdentifierNames").modifiers(9, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5629679905544167445L).languageId(0xbd9c05c0f8725a35L, 0x7b68d745a7b848b9L).build2();
+  public static final SMethod<Boolean> allowEverythingExceptWhitespace_id64w0Iq2$5zE = new SMethodBuilder<>(Boolean.TYPE).name("allowEverythingExceptWhitespace").modifiers(9, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(6998597009989982442L).languageId(0xbd9c05c0f8725a35L, 0x7b68d745a7b848b9L).build2();
+  public static final SMethod<Boolean> overrideDefaultAllowUmlaute_id5D8v3P4jYKp = new SMethodBuilder<>(Boolean.TYPE).name("overrideDefaultAllowUmlaute").modifiers(9, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(6505586264317619225L).languageId(0xbd9c05c0f8725a35L, 0x7b68d745a7b848b9L).build2();
+  public static final SMethod<Boolean> overrideDefaultAllowParagraph_id5D8v3P4lqOn = new SMethodBuilder<>(Boolean.TYPE).name("overrideDefaultAllowParagraph").modifiers(9, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(6505586264317996311L).languageId(0xbd9c05c0f8725a35L, 0x7b68d745a7b848b9L).build2();
+  public static final SMethod<Boolean> overrideDefaultAllowApostrophe_id5TO$xcFx5xN = new SMethodBuilder<>(Boolean.TYPE).name("overrideDefaultAllowApostrophe").modifiers(9, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(6806225547895789683L).languageId(0xbd9c05c0f8725a35L, 0x7b68d745a7b848b9L).build2();
+  public static final SMethod<Boolean> allowUmlaute_id5YygIlbih$m = new SMethodBuilder<>(Boolean.TYPE).name("allowUmlaute").modifiers(9, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(6891143932408305942L).languageId(0xbd9c05c0f8725a35L, 0x7b68d745a7b848b9L).build2();
+  public static final SMethod<Boolean> allowParagraph_id4ZH31cjGRan = new SMethodBuilder<>(Boolean.TYPE).name("allowParagraph").modifiers(9, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5759272774551171735L).languageId(0xbd9c05c0f8725a35L, 0x7b68d745a7b848b9L).build2();
+  public static final SMethod<Boolean> allowApostrophe_id6OMpQn6QxQe = new SMethodBuilder<>(Boolean.TYPE).name("allowApostrophe").modifiers(9, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(7868465185795218830L).languageId(0xbd9c05c0f8725a35L, 0x7b68d745a7b848b9L).build2();
+  public static final SMethod<String> getRegExFirstLetter_id6OMpQn6XNJW = new SMethodBuilder<>(String.class).name("getRegExFirstLetter").modifiers(9, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(7868465185797127164L).languageId(0xbd9c05c0f8725a35L, 0x7b68d745a7b848b9L).build2();
+  public static final SMethod<String> getRegExOtherThanFirstLetter_id6OMpQn6XSaI = new SMethodBuilder<>(String.class).name("getRegExOtherThanFirstLetter").modifiers(9, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(7868465185797145262L).languageId(0xbd9c05c0f8725a35L, 0x7b68d745a7b848b9L).build2();
+  public static final SMethod<Boolean> isValidName_id39ERoteujbz = new SMethodBuilder<>(Boolean.TYPE).name("isValidName").modifiers(9, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(3632959622634615523L).languageId(0xbd9c05c0f8725a35L, 0x7b68d745a7b848b9L).build2(SMethodBuilder.createJavaParameter(String.class, "name"));
+  public static final SMethod<String> getIdentifierName_id7NEp8pMMUwS = new SMethodBuilder<>(String.class).name("getIdentifierName").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(9001117333867702328L).languageId(0xbd9c05c0f8725a35L, 0x7b68d745a7b848b9L).build2();
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(allowNonIdentifierNames_id4SwD0JT7m0l, allowEverythingExceptWhitespace_id64w0Iq2$5zE, overrideDefaultAllowUmlaute_id5D8v3P4jYKp, overrideDefaultAllowParagraph_id5D8v3P4lqOn, overrideDefaultAllowApostrophe_id5TO$xcFx5xN, allowUmlaute_id5YygIlbih$m, allowParagraph_id4ZH31cjGRan, allowApostrophe_id6OMpQn6QxQe, getRegExFirstLetter_id6OMpQn6XNJW, getRegExOtherThanFirstLetter_id6OMpQn6XSaI, isValidName_id39ERoteujbz, getIdentifierName_id7NEp8pMMUwS);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(allowNonIdentifierNames_id4SwD0JT7m0l, allowEverythingExceptWhitespace_id64w0Iq2$5zE, overrideDefaultAllowUmlaute_id5D8v3P4jYKp, overrideDefaultAllowParagraph_id5D8v3P4lqOn, overrideDefaultAllowApostrophe_id5TO$xcFx5xN, allowUmlaute_id5YygIlbih$m, allowParagraph_id4ZH31cjGRan, allowApostrophe_id6OMpQn6QxQe, getRegExFirstLetter_id6OMpQn6XNJW, getRegExOtherThanFirstLetter_id6OMpQn6XSaI, isValidName_id39ERoteujbz, getIdentifierName_id7NEp8pMMUwS);
 
-  private static void ___init___(@NotNull SNode __thisNode__) {
-  }
 
   /*package*/ static boolean allowNonIdentifierNames_id4SwD0JT7m0l(@NotNull SAbstractConcept __thisConcept__) {
     return false;
@@ -114,10 +110,6 @@ public final class IValidNamedConcept__BehaviorDescriptor extends BaseBHDescript
   /*package*/ IValidNamedConcept__BehaviorDescriptor() {
   }
 
-  @Override
-  protected void initNode(@NotNull SNode node, @NotNull SConstructor constructor, @Nullable Object[] parameters) {
-    ___init___(node);
-  }
 
   @Override
   protected <T> T invokeSpecial0(@NotNull SNode node, @NotNull SMethod<T> method, @Nullable Object[] parameters) {

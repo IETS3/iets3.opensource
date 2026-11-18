@@ -7,7 +7,6 @@ import org.jetbrains.mps.openapi.language.SAbstractConcept;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import org.jetbrains.mps.openapi.model.SNode;
 import jetbrains.mps.typesystem.inference.TypeCheckingContext;
@@ -15,22 +14,19 @@ import java.util.List;
 import java.util.Arrays;
 import org.jetbrains.annotations.NotNull;
 import jetbrains.mps.lang.typesystem.dependencies.InferenceMethod;
-import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 
 public final class IValidOtherwiseContainer__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getInterfaceConcept(0xcfaa4966b7d54b69L, 0xb66a309a6e1a7290L, 0x50ccd0fa593272c9L, "org.iets3.core.expr.base.structure.IValidOtherwiseContainer");
 
-  public static final SMethod<Boolean> allowsOtherwise_id4u1MGlrN8KT = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("allowsOtherwise").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5152622397686058041L).languageId(0xb66a309a6e1a7290L, 0xcfaa4966b7d54b69L).build2(SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""));
-  public static final SMethod<Iterable<SNode>> getAllOtherwiseSiblings_id53cOfDpcBbK = new SMethodBuilder<Iterable<SNode>>(new SJavaCompoundTypeImpl((Class<Iterable<SNode>>) ((Class) Object.class))).name("getAllOtherwiseSiblings").modifiers(12, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5822258191940088560L).languageId(0xb66a309a6e1a7290L, 0xcfaa4966b7d54b69L).build2(SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""));
-  public static final SMethod<Boolean> hasCustomOtherwiseType_id6KzF0hSIsAA = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("hasCustomOtherwiseType").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(7792260915486378406L).languageId(0xb66a309a6e1a7290L, 0xcfaa4966b7d54b69L).build2(SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""));
-  public static final SMethod<Void> inferOtherwiseType_id6KzF0hSD4Ox = new SMethodBuilder<Void>(new SJavaCompoundTypeImpl(Void.class)).name("inferOtherwiseType").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(7792260915484970273L).languageId(0xb66a309a6e1a7290L, 0xcfaa4966b7d54b69L).build2(SMethodBuilder.createJavaParameter(TypeCheckingContext.class, ""), SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""));
+  public static final SMethod<Boolean> allowsOtherwise_id4u1MGlrN8KT = new SMethodBuilder<>(Boolean.TYPE).name("allowsOtherwise").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5152622397686058041L).languageId(0xb66a309a6e1a7290L, 0xcfaa4966b7d54b69L).build2(SMethodBuilder.createJavaParameter(SNode.class, "subtree"));
+  public static final SMethod<Iterable<SNode>> getAllOtherwiseSiblings_id53cOfDpcBbK = new SMethodBuilder<>((Class<Iterable<SNode>>) ((Class) Object.class)).name("getAllOtherwiseSiblings").modifiers(12, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5822258191940088560L).languageId(0xb66a309a6e1a7290L, 0xcfaa4966b7d54b69L).build2(SMethodBuilder.createJavaParameter(SNode.class, "otherwiseLiteral"));
+  public static final SMethod<Boolean> hasCustomOtherwiseType_id6KzF0hSIsAA = new SMethodBuilder<>(Boolean.TYPE).name("hasCustomOtherwiseType").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(7792260915486378406L).languageId(0xb66a309a6e1a7290L, 0xcfaa4966b7d54b69L).build2(SMethodBuilder.createJavaParameter(SNode.class, "otherwiseLiteral"));
+  public static final SMethod<Void> inferOtherwiseType_id6KzF0hSD4Ox = new SMethodBuilder<>(Void.TYPE).name("inferOtherwiseType").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(7792260915484970273L).languageId(0xb66a309a6e1a7290L, 0xcfaa4966b7d54b69L).build2(SMethodBuilder.createJavaParameter(TypeCheckingContext.class, "typeCheckingContext"), SMethodBuilder.createJavaParameter(SNode.class, "otherwiseLiteral"));
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(allowsOtherwise_id4u1MGlrN8KT, getAllOtherwiseSiblings_id53cOfDpcBbK, hasCustomOtherwiseType_id6KzF0hSIsAA, inferOtherwiseType_id6KzF0hSD4Ox);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(allowsOtherwise_id4u1MGlrN8KT, getAllOtherwiseSiblings_id53cOfDpcBbK, hasCustomOtherwiseType_id6KzF0hSIsAA, inferOtherwiseType_id6KzF0hSD4Ox);
 
-  private static void ___init___(@NotNull SNode __thisNode__) {
-  }
 
   /*package*/ static boolean allowsOtherwise_id4u1MGlrN8KT(@NotNull SNode __thisNode__, SNode subtree) {
     return true;
@@ -45,10 +41,6 @@ public final class IValidOtherwiseContainer__BehaviorDescriptor extends BaseBHDe
   /*package*/ IValidOtherwiseContainer__BehaviorDescriptor() {
   }
 
-  @Override
-  protected void initNode(@NotNull SNode node, @NotNull SConstructor constructor, @Nullable Object[] parameters) {
-    ___init___(node);
-  }
 
   @Override
   protected <T> T invokeSpecial0(@NotNull SNode node, @NotNull SMethod<T> method, @Nullable Object[] parameters) {

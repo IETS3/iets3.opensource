@@ -8,7 +8,6 @@ import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import jetbrains.mps.baseLanguage.tuples.runtime.Tuples;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import java.util.List;
 import java.util.Arrays;
@@ -19,7 +18,6 @@ import jetbrains.mps.internal.collections.runtime.ListSequence;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
 import jetbrains.mps.baseLanguage.tuples.runtime.MultiTuple;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations;
-import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 import org.jetbrains.mps.openapi.language.SConcept;
@@ -30,16 +28,14 @@ import org.jetbrains.mps.openapi.language.SProperty;
 public final class Cell__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getConcept(0x18001c9433a74f68L, 0xa7c1ffddc4b39be1L, 0x586a62ac9b582a48L, "org.iets3.core.expr.repl.structure.Cell");
 
-  public static final SMethod<Tuples._2<Integer, Integer>> getCoords_id5avmkTFlEwK = new SMethodBuilder<Tuples._2<Integer, Integer>>(new SJavaCompoundTypeImpl((Class<Tuples._2<Integer, Integer>>) ((Class) Object.class))).name("getCoords").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5953575425750247472L).languageId(0xa7c1ffddc4b39be1L, 0x18001c9433a74f68L).build2();
-  public static final SMethod<Boolean> canBeEvaluated_id5avmkTFqh7d = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("canBeEvaluated").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5953575425751454157L).languageId(0xa7c1ffddc4b39be1L, 0x18001c9433a74f68L).build2();
-  public static final SMethod<Boolean> mustBeEvaluated_id5avmkTFqyBE = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("mustBeEvaluated").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5953575425751525866L).languageId(0xa7c1ffddc4b39be1L, 0x18001c9433a74f68L).build2();
-  public static final SMethod<Boolean> showValue_id1mFXz_FT89B = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("showValue").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(1561612422297715303L).languageId(0xa7c1ffddc4b39be1L, 0x18001c9433a74f68L).build2();
-  public static final SMethod<Boolean> isHighlighted_id1mFXz_FYhGj = new SMethodBuilder<Boolean>(new SJavaCompoundTypeImpl(Boolean.TYPE)).name("isHighlighted").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(1561612422299065107L).languageId(0xa7c1ffddc4b39be1L, 0x18001c9433a74f68L).build2();
+  public static final SMethod<Tuples._2<Integer, Integer>> getCoords_id5avmkTFlEwK = new SMethodBuilder<>((Class<Tuples._2<Integer, Integer>>) ((Class) Object.class)).name("getCoords").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5953575425750247472L).languageId(0xa7c1ffddc4b39be1L, 0x18001c9433a74f68L).build2();
+  public static final SMethod<Boolean> canBeEvaluated_id5avmkTFqh7d = new SMethodBuilder<>(Boolean.TYPE).name("canBeEvaluated").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5953575425751454157L).languageId(0xa7c1ffddc4b39be1L, 0x18001c9433a74f68L).build2();
+  public static final SMethod<Boolean> mustBeEvaluated_id5avmkTFqyBE = new SMethodBuilder<>(Boolean.TYPE).name("mustBeEvaluated").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(5953575425751525866L).languageId(0xa7c1ffddc4b39be1L, 0x18001c9433a74f68L).build2();
+  public static final SMethod<Boolean> showValue_id1mFXz_FT89B = new SMethodBuilder<>(Boolean.TYPE).name("showValue").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(1561612422297715303L).languageId(0xa7c1ffddc4b39be1L, 0x18001c9433a74f68L).build2();
+  public static final SMethod<Boolean> isHighlighted_id1mFXz_FYhGj = new SMethodBuilder<>(Boolean.TYPE).name("isHighlighted").modifiers(0, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(1561612422299065107L).languageId(0xa7c1ffddc4b39be1L, 0x18001c9433a74f68L).build2();
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(getCoords_id5avmkTFlEwK, canBeEvaluated_id5avmkTFqh7d, mustBeEvaluated_id5avmkTFqyBE, showValue_id1mFXz_FT89B, isHighlighted_id1mFXz_FYhGj);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(getCoords_id5avmkTFlEwK, canBeEvaluated_id5avmkTFqh7d, mustBeEvaluated_id5avmkTFqyBE, showValue_id1mFXz_FT89B, isHighlighted_id1mFXz_FYhGj);
 
-  private static void ___init___(@NotNull SNode __thisNode__) {
-  }
 
   /*package*/ static Tuples._2<Integer, Integer> getCoords_id5avmkTFlEwK(@NotNull SNode __thisNode__) {
     SNode sheet = SNodeOperations.getNodeAncestor(__thisNode__, CONCEPTS.Sheet$I_, false, false);
@@ -77,10 +73,6 @@ public final class Cell__BehaviorDescriptor extends BaseBHDescriptor {
   /*package*/ Cell__BehaviorDescriptor() {
   }
 
-  @Override
-  protected void initNode(@NotNull SNode node, @NotNull SConstructor constructor, @Nullable Object[] parameters) {
-    ___init___(node);
-  }
 
   @Override
   protected <T> T invokeSpecial0(@NotNull SNode node, @NotNull SMethod<T> method, @Nullable Object[] parameters) {

@@ -8,12 +8,10 @@ import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import org.jetbrains.mps.openapi.model.SNode;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import java.util.List;
 import java.util.Arrays;
 import org.jetbrains.annotations.NotNull;
-import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 import jetbrains.mps.smodel.builder.SNodeBuilder;
@@ -22,12 +20,10 @@ import org.jetbrains.mps.openapi.language.SConcept;
 public final class EthernetProtocol__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getConcept(0xa50d629093d242afL, 0x9ae0b2fefc6ee754L, 0x7ef7796277983b9L, "org.iets3.protocol.transport.structure.EthernetProtocol");
 
-  public static final SMethod<SNode> connectorType_id6JtAeCuVpNb = new SMethodBuilder<SNode>(new SJavaCompoundTypeImpl((Class<SNode>) ((Class) Object.class))).name("connectorType").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(7772536663220001995L).languageId(0x9ae0b2fefc6ee754L, 0xa50d629093d242afL).build2();
+  public static final SMethod<SNode> connectorType_id6JtAeCuVpNb = new SMethodBuilder<>(SNode.class).name("connectorType").modifiers(8, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(7772536663220001995L).languageId(0x9ae0b2fefc6ee754L, 0xa50d629093d242afL).build2();
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(connectorType_id6JtAeCuVpNb);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(connectorType_id6JtAeCuVpNb);
 
-  private static void ___init___(@NotNull SNode __thisNode__) {
-  }
 
   /*package*/ static SNode connectorType_id6JtAeCuVpNb(@NotNull SNode __thisNode__) {
     return createEthernetConnectorType_qj5zlt_a0a0();
@@ -36,10 +32,6 @@ public final class EthernetProtocol__BehaviorDescriptor extends BaseBHDescriptor
   /*package*/ EthernetProtocol__BehaviorDescriptor() {
   }
 
-  @Override
-  protected void initNode(@NotNull SNode node, @NotNull SConstructor constructor, @Nullable Object[] parameters) {
-    ___init___(node);
-  }
 
   @Override
   protected <T> T invokeSpecial0(@NotNull SNode node, @NotNull SMethod<T> method, @Nullable Object[] parameters) {

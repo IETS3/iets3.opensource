@@ -8,34 +8,26 @@ import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.core.aspects.behaviour.api.SMethod;
 import org.jetbrains.mps.openapi.model.SNode;
 import jetbrains.mps.core.aspects.behaviour.SMethodBuilder;
-import jetbrains.mps.core.aspects.behaviour.SJavaCompoundTypeImpl;
 import jetbrains.mps.core.aspects.behaviour.AccessPrivileges;
 import java.util.List;
 import java.util.Arrays;
 import org.jetbrains.annotations.NotNull;
-import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 
 public final class IJoinedBlockContext__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getInterfaceConcept(0x9464fa065ab9409bL, 0x927464ab29588457L, 0x54992997435a32f2L, "org.iets3.core.expr.lambda.structure.IJoinedBlockContext");
 
-  public static final SMethod<Iterable<SNode>> otherLocationsForRefsToMe_id5ipapt3mzcn = new SMethodBuilder<Iterable<SNode>>(new SJavaCompoundTypeImpl((Class<Iterable<SNode>>) ((Class) Object.class))).name("otherLocationsForRefsToMe").modifiers(12, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(6095949300269462295L).languageId(0x927464ab29588457L, 0x9464fa065ab9409bL).build2(SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""));
-  public static final SMethod<Iterable<SNode>> otherVisibleBlocks_id5ipapt3mzeF = new SMethodBuilder<Iterable<SNode>>(new SJavaCompoundTypeImpl((Class<Iterable<SNode>>) ((Class) Object.class))).name("otherVisibleBlocks").modifiers(12, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(6095949300269462443L).languageId(0x927464ab29588457L, 0x9464fa065ab9409bL).build2(SMethodBuilder.createJavaParameter((Class<SNode>) ((Class) Object.class), ""));
+  public static final SMethod<Iterable<SNode>> otherLocationsForRefsToMe_id5ipapt3mzcn = new SMethodBuilder<>((Class<Iterable<SNode>>) ((Class) Object.class)).name("otherLocationsForRefsToMe").modifiers(12, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(6095949300269462295L).languageId(0x927464ab29588457L, 0x9464fa065ab9409bL).build2(SMethodBuilder.createJavaParameter(SNode.class, "context"));
+  public static final SMethod<Iterable<SNode>> otherVisibleBlocks_id5ipapt3mzeF = new SMethodBuilder<>((Class<Iterable<SNode>>) ((Class) Object.class)).name("otherVisibleBlocks").modifiers(12, AccessPrivileges.PUBLIC).concept(CONCEPT).baseMethodId(6095949300269462443L).languageId(0x927464ab29588457L, 0x9464fa065ab9409bL).build2(SMethodBuilder.createJavaParameter(SNode.class, "context"));
 
-  private static final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(otherLocationsForRefsToMe_id5ipapt3mzcn, otherVisibleBlocks_id5ipapt3mzeF);
+  private final List<SMethod<?>> BH_METHODS = Arrays.<SMethod<?>>asList(otherLocationsForRefsToMe_id5ipapt3mzcn, otherVisibleBlocks_id5ipapt3mzeF);
 
-  private static void ___init___(@NotNull SNode __thisNode__) {
-  }
 
 
   /*package*/ IJoinedBlockContext__BehaviorDescriptor() {
   }
 
-  @Override
-  protected void initNode(@NotNull SNode node, @NotNull SConstructor constructor, @Nullable Object[] parameters) {
-    ___init___(node);
-  }
 
   @Override
   protected <T> T invokeSpecial0(@NotNull SNode node, @NotNull SMethod<T> method, @Nullable Object[] parameters) {

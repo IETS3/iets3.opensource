@@ -13,7 +13,7 @@
       <unit at="11,0,57,0" name="org.iets3.core.expr.testExecution.structure.ConceptPresentationAspectImpl" />
     </file>
     <file name="LanguageConceptSwitch.java">
-      <unit at="10,0,34,0" name="org.iets3.core.expr.testExecution.structure.LanguageConceptSwitch" />
+      <unit at="12,0,42,0" name="org.iets3.core.expr.testExecution.structure.LanguageConceptSwitch" />
     </file>
     <file name="StructureAspectDescriptor.java">
       <unit at="14,0,96,0" name="org.iets3.core.expr.testExecution.structure.StructureAspectDescriptor" />
@@ -34,8 +34,8 @@
       <scope id="4473287864570292399" at="45,53,52,41" />
     </file>
     <file name="LanguageConceptSwitch.java">
-      <node id="4473287864570292399" at="15,0,16,0" concept="6" trace="TestExecutionConfig" />
-      <node id="4473287864570292399" at="21,63,22,58" concept="0" />
+      <node id="4473287864570292399" at="17,0,18,0" concept="6" trace="TestExecutionConfig" />
+      <node id="4473287864570292399" at="23,63,24,58" concept="0" />
     </file>
     <file name="StructureAspectDescriptor.java">
       <node id="4473287864570292399" at="18,0,19,0" concept="1" trace="myConceptTestExecutionConfig" />
@@ -69,8 +69,8 @@
       <scope id="4473287864570320757" at="22,59,28,47" />
     </file>
     <file name="LanguageConceptSwitch.java">
-      <node id="4473287864570320757" at="12,0,13,0" concept="6" trace="AbstractTestExecutionMode" />
-      <node id="4473287864570320757" at="18,116,19,64" concept="0" />
+      <node id="4473287864570320757" at="14,0,15,0" concept="6" trace="AbstractTestExecutionMode" />
+      <node id="4473287864570320757" at="20,116,21,64" concept="0" />
     </file>
     <file name="StructureAspectDescriptor.java">
       <node id="4473287864570320757" at="15,0,16,0" concept="1" trace="myConceptAbstractTestExecutionMode" />
@@ -103,8 +103,8 @@
       <scope id="4473287864570320810" at="29,56,36,44" />
     </file>
     <file name="LanguageConceptSwitch.java">
-      <node id="4473287864570320810" at="13,0,14,0" concept="6" trace="GeneratorExecutionMode" />
-      <node id="4473287864570320810" at="19,64,20,61" concept="0" />
+      <node id="4473287864570320810" at="15,0,16,0" concept="6" trace="GeneratorExecutionMode" />
+      <node id="4473287864570320810" at="21,64,22,61" concept="0" />
     </file>
     <file name="StructureAspectDescriptor.java">
       <node id="4473287864570320810" at="16,0,17,0" concept="1" trace="myConceptGeneratorExecutionMode" />
@@ -140,8 +140,8 @@
       <scope id="4473287864570320840" at="37,58,44,46" />
     </file>
     <file name="LanguageConceptSwitch.java">
-      <node id="4473287864570320840" at="14,0,15,0" concept="6" trace="InterpreterExecutionMode" />
-      <node id="4473287864570320840" at="20,61,21,63" concept="0" />
+      <node id="4473287864570320840" at="16,0,17,0" concept="6" trace="InterpreterExecutionMode" />
+      <node id="4473287864570320840" at="22,61,23,63" concept="0" />
     </file>
     <file name="StructureAspectDescriptor.java">
       <node id="4473287864570320840" at="17,0,18,0" concept="1" trace="myConceptInterpreterExecutionMode" />

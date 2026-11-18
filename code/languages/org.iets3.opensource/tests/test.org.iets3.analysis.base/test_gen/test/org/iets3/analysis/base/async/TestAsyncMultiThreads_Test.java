@@ -105,7 +105,7 @@ public class TestAsyncMultiThreads_Test extends BaseTransformationTest {
           }
         }).where(new NotNullWhereFilter()).toList();
         // True if any Callable finished successfully to schedule its solvable
-        Assert.assertEquals(ListSequence.fromList(ph1).count(), ListSequence.fromList(phase2).count());
+        Assert.assertEquals(Integer.valueOf(ListSequence.fromList(ph1).count()), Integer.valueOf(ListSequence.fromList(phase2).count()));
 
         // Any solvable must have been run 
         try {

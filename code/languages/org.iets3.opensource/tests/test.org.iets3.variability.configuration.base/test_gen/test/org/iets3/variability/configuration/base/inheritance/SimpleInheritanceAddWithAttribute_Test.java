@@ -107,7 +107,7 @@ public class SimpleInheritanceAddWithAttribute_Test extends BaseTransformationTe
         // Then
         List<SNode> faas = Sequence.fromIterable(AbstractFeatureConfigurationContent__BehaviorDescriptor.attributeAssignments_id30ECcbtQl70.invoke(SLinkOperations.getTarget(getAnnotatedNode("FeatH"), LINKS.content$Wdfq))).toList();
 
-        Assert.assertEquals(1, ListSequence.fromList(faas).count());
+        Assert.assertEquals(Integer.valueOf(1), Integer.valueOf(ListSequence.fromList(faas).count()));
         SNode faaInheriting = ListSequence.fromList(faas).getElement(0);
         Assert.assertFalse(SPropertyOperations.getBoolean(faaInheriting, PROPS.inherited$oyCC));
         Assert.assertNull(SLinkOperations.getTarget(faaInheriting, LINKS.value$kgDc));
