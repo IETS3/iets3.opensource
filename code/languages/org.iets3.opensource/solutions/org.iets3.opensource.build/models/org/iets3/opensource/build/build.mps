@@ -18223,6 +18223,9 @@
         <node concept="398BVA" id="71RLIEFHzg5" role="1RZ71A">
           <ref role="398BVh" node="OJuIQp$deE" resolve="iets3.lang.opensource" />
         </node>
+        <node concept="24YFd4" id="3ACnbdRHgqi" role="24YFd7">
+          <ref role="24YFd5" to="90a9:75qazhazME$" resolve="com.intellij.modules.jcef" />
+        </node>
       </node>
       <node concept="22LTRF" id="2mWlB9yWxMB" role="22LTRK">
         <ref role="22LTRG" node="2mWlB9yWxGl" resolve="tests" />
