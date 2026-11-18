@@ -9,6 +9,7 @@ import org.iets3.core.expr.genjava.base.rt.rt.AlternativesException;
 import org.junit.Test;
 import org.junit.Assert;
 import org.iets3.core.expr.genjava.tests.rt.rt.EqualsTestOp;
+import org.iets3.core.expr.genjava.tests.rt.rt.SourceNodeFailures;
 
 /**
  * 
@@ -74,15 +75,27 @@ public class Generated_utils_dectab_ranges_Test {
   }
   @Test
   public void AssertPredef_item0_93572354141657378() throws Throwable {
-    Assert.assertTrue("Expected: " + (((Number) new BigInteger("1"))) + ", but was: " + (Generated_utils_dectab_ranges_Test.decideRanges(((Number) new BigInteger("0")), ((Number) new BigInteger("3")))), EqualsTestOp.matches(((Number) new BigInteger("1")), Generated_utils_dectab_ranges_Test.decideRanges(((Number) new BigInteger("0")), ((Number) new BigInteger("3")))));
+    try {
+      Assert.assertTrue("Expected: " + (((Number) new BigInteger("1"))) + ", but was: " + (Generated_utils_dectab_ranges_Test.decideRanges(((Number) new BigInteger("0")), ((Number) new BigInteger("3")))), EqualsTestOp.matches(((Number) new BigInteger("1")), Generated_utils_dectab_ranges_Test.decideRanges(((Number) new BigInteger("0")), ((Number) new BigInteger("3")))));
+    } catch (Throwable failure) {
+      throw SourceNodeFailures.attach(failure, "http://127.0.0.1:63320/node?ref=r%3Ab4500bb0-87e3-4d5a-a729-2379e1aab94c%28test.in.expr.os.dectabs%40tests%29%2F93572354141657378");
+    }
   }
   @Test
   public void AssertPredef_item1_93572354141657384() throws Throwable {
-    Assert.assertTrue("Expected: " + (((Number) new BigInteger("5"))) + ", but was: " + (Generated_utils_dectab_ranges_Test.decideRanges(((Number) new BigInteger("-2")), ((BigInteger) ((Number) new BigInteger("1"))).negate())), EqualsTestOp.matches(((Number) new BigInteger("5")), Generated_utils_dectab_ranges_Test.decideRanges(((Number) new BigInteger("-2")), ((BigInteger) ((Number) new BigInteger("1"))).negate())));
+    try {
+      Assert.assertTrue("Expected: " + (((Number) new BigInteger("5"))) + ", but was: " + (Generated_utils_dectab_ranges_Test.decideRanges(((Number) new BigInteger("-2")), ((BigInteger) ((Number) new BigInteger("1"))).negate())), EqualsTestOp.matches(((Number) new BigInteger("5")), Generated_utils_dectab_ranges_Test.decideRanges(((Number) new BigInteger("-2")), ((BigInteger) ((Number) new BigInteger("1"))).negate())));
+    } catch (Throwable failure) {
+      throw SourceNodeFailures.attach(failure, "http://127.0.0.1:63320/node?ref=r%3Ab4500bb0-87e3-4d5a-a729-2379e1aab94c%28test.in.expr.os.dectabs%40tests%29%2F93572354141657384");
+    }
   }
   @Test
   public void AssertPredef_item2_93572354141657390() throws Throwable {
-    Assert.assertTrue("Expected: " + (((Number) new BigInteger("7"))) + ", but was: " + (Generated_utils_dectab_ranges_Test.decideRanges(((Number) new BigInteger("0")), ((Number) new BigInteger("5")))), EqualsTestOp.matches(((Number) new BigInteger("7")), Generated_utils_dectab_ranges_Test.decideRanges(((Number) new BigInteger("0")), ((Number) new BigInteger("5")))));
+    try {
+      Assert.assertTrue("Expected: " + (((Number) new BigInteger("7"))) + ", but was: " + (Generated_utils_dectab_ranges_Test.decideRanges(((Number) new BigInteger("0")), ((Number) new BigInteger("5")))), EqualsTestOp.matches(((Number) new BigInteger("7")), Generated_utils_dectab_ranges_Test.decideRanges(((Number) new BigInteger("0")), ((Number) new BigInteger("5")))));
+    } catch (Throwable failure) {
+      throw SourceNodeFailures.attach(failure, "http://127.0.0.1:63320/node?ref=r%3Ab4500bb0-87e3-4d5a-a729-2379e1aab94c%28test.in.expr.os.dectabs%40tests%29%2F93572354141657390");
+    }
   }
 
 

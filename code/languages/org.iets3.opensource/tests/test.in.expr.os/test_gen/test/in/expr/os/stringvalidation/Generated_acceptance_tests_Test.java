@@ -19,6 +19,7 @@ import org.iets3.core.expr.stringvalidation.runtime.runtime.XFailCheck;
 import org.iets3.core.expr.stringvalidation.runtime.runtime.XMustBeCheckKind;
 import org.junit.Test;
 import org.junit.Assert;
+import org.iets3.core.expr.genjava.tests.rt.rt.SourceNodeFailures;
 import org.iets3.core.expr.genjava.tests.rt.rt.EqualsTestOp;
 import org.iets3.core.expr.stringvalidation.runtime.runtime.XMaxCountCheck;
 import org.iets3.core.expr.stringvalidation.runtime.runtime.XCannotBeCheckKind;
@@ -69,19 +70,35 @@ public class Generated_acceptance_tests_Test {
   }
   @Test
   public void T6a_item0_3191633378114612204() throws Throwable {
-    Assert.assertEquals("Expected: " + (Generated_acceptance_tests_Test.ok_) + ", but was: " + (Generated_acceptance_tests_Test.rule6a("HalloDerText")), (Object) Generated_acceptance_tests_Test.ok_, (Object) Generated_acceptance_tests_Test.rule6a("HalloDerText"));
+    try {
+      Assert.assertEquals("Expected: " + (Generated_acceptance_tests_Test.ok_) + ", but was: " + (Generated_acceptance_tests_Test.rule6a("HalloDerText")), (Object) Generated_acceptance_tests_Test.ok_, (Object) Generated_acceptance_tests_Test.rule6a("HalloDerText"));
+    } catch (Throwable failure) {
+      throw SourceNodeFailures.attach(failure, "http://127.0.0.1:63320/node?ref=r%3A4498a3f1-ffdc-46cb-b225-63bf7159e69e%28test.in.expr.os.stringvalidation%40tests%29%2F3191633378114612204");
+    }
   }
   @Test
   public void T6a_item1_3191633378114613051() throws Throwable {
-    Assert.assertEquals("Expected: " + (Generated_acceptance_tests_Test.ok_) + ", but was: " + (Generated_acceptance_tests_Test.rule6a("Hall6oDerText")), (Object) Generated_acceptance_tests_Test.ok_, (Object) Generated_acceptance_tests_Test.rule6a("Hall6oDerText"));
+    try {
+      Assert.assertEquals("Expected: " + (Generated_acceptance_tests_Test.ok_) + ", but was: " + (Generated_acceptance_tests_Test.rule6a("Hall6oDerText")), (Object) Generated_acceptance_tests_Test.ok_, (Object) Generated_acceptance_tests_Test.rule6a("Hall6oDerText"));
+    } catch (Throwable failure) {
+      throw SourceNodeFailures.attach(failure, "http://127.0.0.1:63320/node?ref=r%3A4498a3f1-ffdc-46cb-b225-63bf7159e69e%28test.in.expr.os.stringvalidation%40tests%29%2F3191633378114613051");
+    }
   }
   @Test
   public void T6a_item2_3191633378114614713() throws Throwable {
-    Assert.assertTrue("Expected: " + (Generated_acceptance_tests_Test.ok_) + ", but was: " + (Generated_acceptance_tests_Test.rule6a("Hall66oDerText")), !(EqualsTestOp.matches(Generated_acceptance_tests_Test.rule6a("Hall66oDerText"), Generated_acceptance_tests_Test.ok_)));
+    try {
+      Assert.assertTrue("Expected: " + (Generated_acceptance_tests_Test.ok_) + ", but was: " + (Generated_acceptance_tests_Test.rule6a("Hall66oDerText")), !(EqualsTestOp.matches(Generated_acceptance_tests_Test.rule6a("Hall66oDerText"), Generated_acceptance_tests_Test.ok_)));
+    } catch (Throwable failure) {
+      throw SourceNodeFailures.attach(failure, "http://127.0.0.1:63320/node?ref=r%3A4498a3f1-ffdc-46cb-b225-63bf7159e69e%28test.in.expr.os.stringvalidation%40tests%29%2F3191633378114614713");
+    }
   }
   @Test
   public void T6a_item3_3191633378114615556() throws Throwable {
-    Assert.assertTrue("Expected: " + (Generated_acceptance_tests_Test.ok_) + ", but was: " + (Generated_acceptance_tests_Test.rule6a("Hall666oDerText")), !(EqualsTestOp.matches(Generated_acceptance_tests_Test.rule6a("Hall666oDerText"), Generated_acceptance_tests_Test.ok_)));
+    try {
+      Assert.assertTrue("Expected: " + (Generated_acceptance_tests_Test.ok_) + ", but was: " + (Generated_acceptance_tests_Test.rule6a("Hall666oDerText")), !(EqualsTestOp.matches(Generated_acceptance_tests_Test.rule6a("Hall666oDerText"), Generated_acceptance_tests_Test.ok_)));
+    } catch (Throwable failure) {
+      throw SourceNodeFailures.attach(failure, "http://127.0.0.1:63320/node?ref=r%3A4498a3f1-ffdc-46cb-b225-63bf7159e69e%28test.in.expr.os.stringvalidation%40tests%29%2F3191633378114615556");
+    }
   }
   public static PVector<String> rule6c(String s) {
     PVector<String> res = Empty.<String>vector().plusAll(new XExecutor(new XValidateStringExpression(s, new LL<XAbstractValidationClause>(new XOccurenceBasedValidationClause(new XIfExistsOccurenceConstraint(), new XDigitMatch(), new LL<XAbstractOccurenceBasedCheck>(new XMaxCountCheck(new XMustBeCheckKind(), 2)).list)).list)).run());
@@ -100,59 +117,115 @@ public class Generated_acceptance_tests_Test {
   }
   @Test
   public void T6c_item0_3709229751378792815() throws Throwable {
-    Assert.assertTrue("Expected: " + (Generated_acceptance_tests_Test.ok_) + ", but was: " + (Generated_acceptance_tests_Test.rule6c("aaaaa")), !(EqualsTestOp.matches(Generated_acceptance_tests_Test.rule6c("aaaaa"), Generated_acceptance_tests_Test.ok_)));
+    try {
+      Assert.assertTrue("Expected: " + (Generated_acceptance_tests_Test.ok_) + ", but was: " + (Generated_acceptance_tests_Test.rule6c("aaaaa")), !(EqualsTestOp.matches(Generated_acceptance_tests_Test.rule6c("aaaaa"), Generated_acceptance_tests_Test.ok_)));
+    } catch (Throwable failure) {
+      throw SourceNodeFailures.attach(failure, "http://127.0.0.1:63320/node?ref=r%3A4498a3f1-ffdc-46cb-b225-63bf7159e69e%28test.in.expr.os.stringvalidation%40tests%29%2F3709229751378792815");
+    }
   }
   @Test
   public void T6c_item1_3709229751378804919() throws Throwable {
-    Assert.assertTrue("Expected: " + (Generated_acceptance_tests_Test.ok_) + ", but was: " + (Generated_acceptance_tests_Test.rule6c("a5a5aaa")), !(EqualsTestOp.matches(Generated_acceptance_tests_Test.rule6c("a5a5aaa"), Generated_acceptance_tests_Test.ok_)));
+    try {
+      Assert.assertTrue("Expected: " + (Generated_acceptance_tests_Test.ok_) + ", but was: " + (Generated_acceptance_tests_Test.rule6c("a5a5aaa")), !(EqualsTestOp.matches(Generated_acceptance_tests_Test.rule6c("a5a5aaa"), Generated_acceptance_tests_Test.ok_)));
+    } catch (Throwable failure) {
+      throw SourceNodeFailures.attach(failure, "http://127.0.0.1:63320/node?ref=r%3A4498a3f1-ffdc-46cb-b225-63bf7159e69e%28test.in.expr.os.stringvalidation%40tests%29%2F3709229751378804919");
+    }
   }
   @Test
   public void T6c_item2_3709229751378808738() throws Throwable {
-    Assert.assertTrue("Expected: " + (Generated_acceptance_tests_Test.ok_) + ", but was: " + (Generated_acceptance_tests_Test.rule6c("a5a5aaa")), !(EqualsTestOp.matches(Generated_acceptance_tests_Test.rule6c("a5a5aaa"), Generated_acceptance_tests_Test.ok_)));
+    try {
+      Assert.assertTrue("Expected: " + (Generated_acceptance_tests_Test.ok_) + ", but was: " + (Generated_acceptance_tests_Test.rule6c("a5a5aaa")), !(EqualsTestOp.matches(Generated_acceptance_tests_Test.rule6c("a5a5aaa"), Generated_acceptance_tests_Test.ok_)));
+    } catch (Throwable failure) {
+      throw SourceNodeFailures.attach(failure, "http://127.0.0.1:63320/node?ref=r%3A4498a3f1-ffdc-46cb-b225-63bf7159e69e%28test.in.expr.os.stringvalidation%40tests%29%2F3709229751378808738");
+    }
   }
   @Test
   public void T6c_item3_3709229751378808774() throws Throwable {
-    Assert.assertEquals("Expected: " + (Generated_acceptance_tests_Test.ok_) + ", but was: " + (Generated_acceptance_tests_Test.rule6c("a5a5aa5a")), (Object) Generated_acceptance_tests_Test.ok_, (Object) Generated_acceptance_tests_Test.rule6c("a5a5aa5a"));
+    try {
+      Assert.assertEquals("Expected: " + (Generated_acceptance_tests_Test.ok_) + ", but was: " + (Generated_acceptance_tests_Test.rule6c("a5a5aa5a")), (Object) Generated_acceptance_tests_Test.ok_, (Object) Generated_acceptance_tests_Test.rule6c("a5a5aa5a"));
+    } catch (Throwable failure) {
+      throw SourceNodeFailures.attach(failure, "http://127.0.0.1:63320/node?ref=r%3A4498a3f1-ffdc-46cb-b225-63bf7159e69e%28test.in.expr.os.stringvalidation%40tests%29%2F3709229751378808774");
+    }
   }
   @Test
   public void T6c_item4_3709229751378812687() throws Throwable {
-    Assert.assertEquals("Expected: " + (Generated_acceptance_tests_Test.ok_) + ", but was: " + (Generated_acceptance_tests_Test.rule6c("a555a")), (Object) Generated_acceptance_tests_Test.ok_, (Object) Generated_acceptance_tests_Test.rule6c("a555a"));
+    try {
+      Assert.assertEquals("Expected: " + (Generated_acceptance_tests_Test.ok_) + ", but was: " + (Generated_acceptance_tests_Test.rule6c("a555a")), (Object) Generated_acceptance_tests_Test.ok_, (Object) Generated_acceptance_tests_Test.rule6c("a555a"));
+    } catch (Throwable failure) {
+      throw SourceNodeFailures.attach(failure, "http://127.0.0.1:63320/node?ref=r%3A4498a3f1-ffdc-46cb-b225-63bf7159e69e%28test.in.expr.os.stringvalidation%40tests%29%2F3709229751378812687");
+    }
   }
   @Test
   public void T6d_item0_3709229751378819554() throws Throwable {
-    Assert.assertEquals("Expected: " + (Generated_acceptance_tests_Test.ok_) + ", but was: " + (Generated_acceptance_tests_Test.rule6d("aaaaa")), (Object) Generated_acceptance_tests_Test.ok_, (Object) Generated_acceptance_tests_Test.rule6d("aaaaa"));
+    try {
+      Assert.assertEquals("Expected: " + (Generated_acceptance_tests_Test.ok_) + ", but was: " + (Generated_acceptance_tests_Test.rule6d("aaaaa")), (Object) Generated_acceptance_tests_Test.ok_, (Object) Generated_acceptance_tests_Test.rule6d("aaaaa"));
+    } catch (Throwable failure) {
+      throw SourceNodeFailures.attach(failure, "http://127.0.0.1:63320/node?ref=r%3A4498a3f1-ffdc-46cb-b225-63bf7159e69e%28test.in.expr.os.stringvalidation%40tests%29%2F3709229751378819554");
+    }
   }
   @Test
   public void T6d_item1_3709229751378819559() throws Throwable {
-    Assert.assertEquals("Expected: " + (Generated_acceptance_tests_Test.ok_) + ", but was: " + (Generated_acceptance_tests_Test.rule6d("a5a5aaa")), (Object) Generated_acceptance_tests_Test.ok_, (Object) Generated_acceptance_tests_Test.rule6d("a5a5aaa"));
+    try {
+      Assert.assertEquals("Expected: " + (Generated_acceptance_tests_Test.ok_) + ", but was: " + (Generated_acceptance_tests_Test.rule6d("a5a5aaa")), (Object) Generated_acceptance_tests_Test.ok_, (Object) Generated_acceptance_tests_Test.rule6d("a5a5aaa"));
+    } catch (Throwable failure) {
+      throw SourceNodeFailures.attach(failure, "http://127.0.0.1:63320/node?ref=r%3A4498a3f1-ffdc-46cb-b225-63bf7159e69e%28test.in.expr.os.stringvalidation%40tests%29%2F3709229751378819559");
+    }
   }
   @Test
   public void T6d_item2_3709229751378819564() throws Throwable {
-    Assert.assertEquals("Expected: " + (Generated_acceptance_tests_Test.ok_) + ", but was: " + (Generated_acceptance_tests_Test.rule6d("a5a5aaa")), (Object) Generated_acceptance_tests_Test.ok_, (Object) Generated_acceptance_tests_Test.rule6d("a5a5aaa"));
+    try {
+      Assert.assertEquals("Expected: " + (Generated_acceptance_tests_Test.ok_) + ", but was: " + (Generated_acceptance_tests_Test.rule6d("a5a5aaa")), (Object) Generated_acceptance_tests_Test.ok_, (Object) Generated_acceptance_tests_Test.rule6d("a5a5aaa"));
+    } catch (Throwable failure) {
+      throw SourceNodeFailures.attach(failure, "http://127.0.0.1:63320/node?ref=r%3A4498a3f1-ffdc-46cb-b225-63bf7159e69e%28test.in.expr.os.stringvalidation%40tests%29%2F3709229751378819564");
+    }
   }
   @Test
   public void T6d_item3_3709229751378819569() throws Throwable {
-    Assert.assertTrue("Expected: " + (Generated_acceptance_tests_Test.ok_) + ", but was: " + (Generated_acceptance_tests_Test.rule6d("a5a5aa5a")), !(EqualsTestOp.matches(Generated_acceptance_tests_Test.rule6d("a5a5aa5a"), Generated_acceptance_tests_Test.ok_)));
+    try {
+      Assert.assertTrue("Expected: " + (Generated_acceptance_tests_Test.ok_) + ", but was: " + (Generated_acceptance_tests_Test.rule6d("a5a5aa5a")), !(EqualsTestOp.matches(Generated_acceptance_tests_Test.rule6d("a5a5aa5a"), Generated_acceptance_tests_Test.ok_)));
+    } catch (Throwable failure) {
+      throw SourceNodeFailures.attach(failure, "http://127.0.0.1:63320/node?ref=r%3A4498a3f1-ffdc-46cb-b225-63bf7159e69e%28test.in.expr.os.stringvalidation%40tests%29%2F3709229751378819569");
+    }
   }
   @Test
   public void T6d_item4_3709229751378819574() throws Throwable {
-    Assert.assertTrue("Expected: " + (Generated_acceptance_tests_Test.ok_) + ", but was: " + (Generated_acceptance_tests_Test.rule6d("a555a")), !(EqualsTestOp.matches(Generated_acceptance_tests_Test.rule6d("a555a"), Generated_acceptance_tests_Test.ok_)));
+    try {
+      Assert.assertTrue("Expected: " + (Generated_acceptance_tests_Test.ok_) + ", but was: " + (Generated_acceptance_tests_Test.rule6d("a555a")), !(EqualsTestOp.matches(Generated_acceptance_tests_Test.rule6d("a555a"), Generated_acceptance_tests_Test.ok_)));
+    } catch (Throwable failure) {
+      throw SourceNodeFailures.attach(failure, "http://127.0.0.1:63320/node?ref=r%3A4498a3f1-ffdc-46cb-b225-63bf7159e69e%28test.in.expr.os.stringvalidation%40tests%29%2F3709229751378819574");
+    }
   }
   @Test
   public void T6e_item0_3709229751379067445() throws Throwable {
-    Assert.assertEquals("Expected: " + (Generated_acceptance_tests_Test.ok_) + ", but was: " + (Generated_acceptance_tests_Test.rule6e("aaaaa")), (Object) Generated_acceptance_tests_Test.ok_, (Object) Generated_acceptance_tests_Test.rule6e("aaaaa"));
+    try {
+      Assert.assertEquals("Expected: " + (Generated_acceptance_tests_Test.ok_) + ", but was: " + (Generated_acceptance_tests_Test.rule6e("aaaaa")), (Object) Generated_acceptance_tests_Test.ok_, (Object) Generated_acceptance_tests_Test.rule6e("aaaaa"));
+    } catch (Throwable failure) {
+      throw SourceNodeFailures.attach(failure, "http://127.0.0.1:63320/node?ref=r%3A4498a3f1-ffdc-46cb-b225-63bf7159e69e%28test.in.expr.os.stringvalidation%40tests%29%2F3709229751379067445");
+    }
   }
   @Test
   public void T6e_item1_3709229751379067450() throws Throwable {
-    Assert.assertEquals("Expected: " + (Generated_acceptance_tests_Test.ok_) + ", but was: " + (Generated_acceptance_tests_Test.rule6e("a55a5aaa")), (Object) Generated_acceptance_tests_Test.ok_, (Object) Generated_acceptance_tests_Test.rule6e("a55a5aaa"));
+    try {
+      Assert.assertEquals("Expected: " + (Generated_acceptance_tests_Test.ok_) + ", but was: " + (Generated_acceptance_tests_Test.rule6e("a55a5aaa")), (Object) Generated_acceptance_tests_Test.ok_, (Object) Generated_acceptance_tests_Test.rule6e("a55a5aaa"));
+    } catch (Throwable failure) {
+      throw SourceNodeFailures.attach(failure, "http://127.0.0.1:63320/node?ref=r%3A4498a3f1-ffdc-46cb-b225-63bf7159e69e%28test.in.expr.os.stringvalidation%40tests%29%2F3709229751379067450");
+    }
   }
   @Test
   public void T6e_item2_3709229751379067455() throws Throwable {
-    Assert.assertEquals("Expected: " + (Generated_acceptance_tests_Test.ok_) + ", but was: " + (Generated_acceptance_tests_Test.rule6e("a57a120aaa")), (Object) Generated_acceptance_tests_Test.ok_, (Object) Generated_acceptance_tests_Test.rule6e("a57a120aaa"));
+    try {
+      Assert.assertEquals("Expected: " + (Generated_acceptance_tests_Test.ok_) + ", but was: " + (Generated_acceptance_tests_Test.rule6e("a57a120aaa")), (Object) Generated_acceptance_tests_Test.ok_, (Object) Generated_acceptance_tests_Test.rule6e("a57a120aaa"));
+    } catch (Throwable failure) {
+      throw SourceNodeFailures.attach(failure, "http://127.0.0.1:63320/node?ref=r%3A4498a3f1-ffdc-46cb-b225-63bf7159e69e%28test.in.expr.os.stringvalidation%40tests%29%2F3709229751379067455");
+    }
   }
   @Test
   public void T6e_item3_3709229751379067460() throws Throwable {
-    Assert.assertTrue("Expected: " + (Generated_acceptance_tests_Test.ok_) + ", but was: " + (Generated_acceptance_tests_Test.rule6e("a51 a 51 aa 500 a")), !(EqualsTestOp.matches(Generated_acceptance_tests_Test.rule6e("a51 a 51 aa 500 a"), Generated_acceptance_tests_Test.ok_)));
+    try {
+      Assert.assertTrue("Expected: " + (Generated_acceptance_tests_Test.ok_) + ", but was: " + (Generated_acceptance_tests_Test.rule6e("a51 a 51 aa 500 a")), !(EqualsTestOp.matches(Generated_acceptance_tests_Test.rule6e("a51 a 51 aa 500 a"), Generated_acceptance_tests_Test.ok_)));
+    } catch (Throwable failure) {
+      throw SourceNodeFailures.attach(failure, "http://127.0.0.1:63320/node?ref=r%3A4498a3f1-ffdc-46cb-b225-63bf7159e69e%28test.in.expr.os.stringvalidation%40tests%29%2F3709229751379067460");
+    }
   }
 /* 
    * A digit or sequence of digits must be preceded by a space (e.g. Maier 3).
@@ -164,19 +237,35 @@ public class Generated_acceptance_tests_Test {
   }
   @Test
   public void T7a_item0_3191633378145062851() throws Throwable {
-    Assert.assertEquals("Expected: " + (Generated_acceptance_tests_Test.ok_) + ", but was: " + (Generated_acceptance_tests_Test.rule7a("Hello")), (Object) Generated_acceptance_tests_Test.ok_, (Object) Generated_acceptance_tests_Test.rule7a("Hello"));
+    try {
+      Assert.assertEquals("Expected: " + (Generated_acceptance_tests_Test.ok_) + ", but was: " + (Generated_acceptance_tests_Test.rule7a("Hello")), (Object) Generated_acceptance_tests_Test.ok_, (Object) Generated_acceptance_tests_Test.rule7a("Hello"));
+    } catch (Throwable failure) {
+      throw SourceNodeFailures.attach(failure, "http://127.0.0.1:63320/node?ref=r%3A4498a3f1-ffdc-46cb-b225-63bf7159e69e%28test.in.expr.os.stringvalidation%40tests%29%2F3191633378145062851");
+    }
   }
   @Test
   public void T7a_item1_3191633378145074423() throws Throwable {
-    Assert.assertEquals("Expected: " + (Generated_acceptance_tests_Test.ok_) + ", but was: " + (Generated_acceptance_tests_Test.rule7a("1Hello")), (Object) Generated_acceptance_tests_Test.ok_, (Object) Generated_acceptance_tests_Test.rule7a("1Hello"));
+    try {
+      Assert.assertEquals("Expected: " + (Generated_acceptance_tests_Test.ok_) + ", but was: " + (Generated_acceptance_tests_Test.rule7a("1Hello")), (Object) Generated_acceptance_tests_Test.ok_, (Object) Generated_acceptance_tests_Test.rule7a("1Hello"));
+    } catch (Throwable failure) {
+      throw SourceNodeFailures.attach(failure, "http://127.0.0.1:63320/node?ref=r%3A4498a3f1-ffdc-46cb-b225-63bf7159e69e%28test.in.expr.os.stringvalidation%40tests%29%2F3191633378145074423");
+    }
   }
   @Test
   public void T7a_item2_3191633378145083516() throws Throwable {
-    Assert.assertEquals("Expected: " + (Generated_acceptance_tests_Test.ok_) + ", but was: " + (Generated_acceptance_tests_Test.rule7a("Hello 12")), (Object) Generated_acceptance_tests_Test.ok_, (Object) Generated_acceptance_tests_Test.rule7a("Hello 12"));
+    try {
+      Assert.assertEquals("Expected: " + (Generated_acceptance_tests_Test.ok_) + ", but was: " + (Generated_acceptance_tests_Test.rule7a("Hello 12")), (Object) Generated_acceptance_tests_Test.ok_, (Object) Generated_acceptance_tests_Test.rule7a("Hello 12"));
+    } catch (Throwable failure) {
+      throw SourceNodeFailures.attach(failure, "http://127.0.0.1:63320/node?ref=r%3A4498a3f1-ffdc-46cb-b225-63bf7159e69e%28test.in.expr.os.stringvalidation%40tests%29%2F3191633378145083516");
+    }
   }
   @Test
   public void T7a_item3_3191633378145182007() throws Throwable {
-    Assert.assertTrue("Expected: " + (Generated_acceptance_tests_Test.ok_) + ", but was: " + (Generated_acceptance_tests_Test.rule7a("Hello12")), !(EqualsTestOp.matches(Generated_acceptance_tests_Test.rule7a("Hello12"), Generated_acceptance_tests_Test.ok_)));
+    try {
+      Assert.assertTrue("Expected: " + (Generated_acceptance_tests_Test.ok_) + ", but was: " + (Generated_acceptance_tests_Test.rule7a("Hello12")), !(EqualsTestOp.matches(Generated_acceptance_tests_Test.rule7a("Hello12"), Generated_acceptance_tests_Test.ok_)));
+    } catch (Throwable failure) {
+      throw SourceNodeFailures.attach(failure, "http://127.0.0.1:63320/node?ref=r%3A4498a3f1-ffdc-46cb-b225-63bf7159e69e%28test.in.expr.os.stringvalidation%40tests%29%2F3191633378145182007");
+    }
   }
   public static List<String> rule7b(String s) {
     List<String> res = new XExecutor(new XValidateStringExpression(s, new LL<XAbstractValidationClause>(new XOccurenceBasedValidationClause(new XIfExistsOccurenceConstraint(), new XDigitMatch(), new LL<XAbstractOccurenceBasedCheck>(new XSuccessorCheck(new XMustBeCheckKind(), new XOneOfMatch(new LL<XAbstractMatch>(new XSpecificSequenceElementaryMatch(" "), new XDigitMatch()).list))).list)).list)).run();
@@ -185,27 +274,51 @@ public class Generated_acceptance_tests_Test {
   }
   @Test
   public void T7b_item0_5216254839084210313() throws Throwable {
-    Assert.assertEquals("Expected: " + (Generated_acceptance_tests_Test.ok_) + ", but was: " + (Generated_acceptance_tests_Test.rule7b("Hello")), (Object) Generated_acceptance_tests_Test.ok_, (Object) Generated_acceptance_tests_Test.rule7b("Hello"));
+    try {
+      Assert.assertEquals("Expected: " + (Generated_acceptance_tests_Test.ok_) + ", but was: " + (Generated_acceptance_tests_Test.rule7b("Hello")), (Object) Generated_acceptance_tests_Test.ok_, (Object) Generated_acceptance_tests_Test.rule7b("Hello"));
+    } catch (Throwable failure) {
+      throw SourceNodeFailures.attach(failure, "http://127.0.0.1:63320/node?ref=r%3A4498a3f1-ffdc-46cb-b225-63bf7159e69e%28test.in.expr.os.stringvalidation%40tests%29%2F5216254839084210313");
+    }
   }
   @Test
   public void T7b_item1_5216254839084210318() throws Throwable {
-    Assert.assertEquals("Expected: " + (Generated_acceptance_tests_Test.ok_) + ", but was: " + (Generated_acceptance_tests_Test.rule7b("1 Hello")), (Object) Generated_acceptance_tests_Test.ok_, (Object) Generated_acceptance_tests_Test.rule7b("1 Hello"));
+    try {
+      Assert.assertEquals("Expected: " + (Generated_acceptance_tests_Test.ok_) + ", but was: " + (Generated_acceptance_tests_Test.rule7b("1 Hello")), (Object) Generated_acceptance_tests_Test.ok_, (Object) Generated_acceptance_tests_Test.rule7b("1 Hello"));
+    } catch (Throwable failure) {
+      throw SourceNodeFailures.attach(failure, "http://127.0.0.1:63320/node?ref=r%3A4498a3f1-ffdc-46cb-b225-63bf7159e69e%28test.in.expr.os.stringvalidation%40tests%29%2F5216254839084210318");
+    }
   }
   @Test
   public void T7b_item2_5216254839084432173() throws Throwable {
-    Assert.assertTrue("Expected: " + (Generated_acceptance_tests_Test.ok_) + ", but was: " + (Generated_acceptance_tests_Test.rule7b("1Hello")), !(EqualsTestOp.matches(Generated_acceptance_tests_Test.rule7b("1Hello"), Generated_acceptance_tests_Test.ok_)));
+    try {
+      Assert.assertTrue("Expected: " + (Generated_acceptance_tests_Test.ok_) + ", but was: " + (Generated_acceptance_tests_Test.rule7b("1Hello")), !(EqualsTestOp.matches(Generated_acceptance_tests_Test.rule7b("1Hello"), Generated_acceptance_tests_Test.ok_)));
+    } catch (Throwable failure) {
+      throw SourceNodeFailures.attach(failure, "http://127.0.0.1:63320/node?ref=r%3A4498a3f1-ffdc-46cb-b225-63bf7159e69e%28test.in.expr.os.stringvalidation%40tests%29%2F5216254839084432173");
+    }
   }
   @Test
   public void T7b_item3_5216254839084210323() throws Throwable {
-    Assert.assertEquals("Expected: " + (Generated_acceptance_tests_Test.ok_) + ", but was: " + (Generated_acceptance_tests_Test.rule7b("12 Hello")), (Object) Generated_acceptance_tests_Test.ok_, (Object) Generated_acceptance_tests_Test.rule7b("12 Hello"));
+    try {
+      Assert.assertEquals("Expected: " + (Generated_acceptance_tests_Test.ok_) + ", but was: " + (Generated_acceptance_tests_Test.rule7b("12 Hello")), (Object) Generated_acceptance_tests_Test.ok_, (Object) Generated_acceptance_tests_Test.rule7b("12 Hello"));
+    } catch (Throwable failure) {
+      throw SourceNodeFailures.attach(failure, "http://127.0.0.1:63320/node?ref=r%3A4498a3f1-ffdc-46cb-b225-63bf7159e69e%28test.in.expr.os.stringvalidation%40tests%29%2F5216254839084210323");
+    }
   }
   @Test
   public void T7b_item4_5216254839084230247() throws Throwable {
-    Assert.assertTrue("Expected: " + (Generated_acceptance_tests_Test.ok_) + ", but was: " + (Generated_acceptance_tests_Test.rule7b("12Hello")), !(EqualsTestOp.matches(Generated_acceptance_tests_Test.rule7b("12Hello"), Generated_acceptance_tests_Test.ok_)));
+    try {
+      Assert.assertTrue("Expected: " + (Generated_acceptance_tests_Test.ok_) + ", but was: " + (Generated_acceptance_tests_Test.rule7b("12Hello")), !(EqualsTestOp.matches(Generated_acceptance_tests_Test.rule7b("12Hello"), Generated_acceptance_tests_Test.ok_)));
+    } catch (Throwable failure) {
+      throw SourceNodeFailures.attach(failure, "http://127.0.0.1:63320/node?ref=r%3A4498a3f1-ffdc-46cb-b225-63bf7159e69e%28test.in.expr.os.stringvalidation%40tests%29%2F5216254839084230247");
+    }
   }
   @Test
   public void T7b_item5_5216254839084210328() throws Throwable {
-    Assert.assertEquals("Expected: " + (Generated_acceptance_tests_Test.ok_) + ", but was: " + (Generated_acceptance_tests_Test.rule7b("Hello12")), (Object) Generated_acceptance_tests_Test.ok_, (Object) Generated_acceptance_tests_Test.rule7b("Hello12"));
+    try {
+      Assert.assertEquals("Expected: " + (Generated_acceptance_tests_Test.ok_) + ", but was: " + (Generated_acceptance_tests_Test.rule7b("Hello12")), (Object) Generated_acceptance_tests_Test.ok_, (Object) Generated_acceptance_tests_Test.rule7b("Hello12"));
+    } catch (Throwable failure) {
+      throw SourceNodeFailures.attach(failure, "http://127.0.0.1:63320/node?ref=r%3A4498a3f1-ffdc-46cb-b225-63bf7159e69e%28test.in.expr.os.stringvalidation%40tests%29%2F5216254839084210328");
+    }
   }
 /* 
    * A sequence of digits not starting at digit 1 must be preceded by a letter, a space, a hyphen, a slash or a period.
@@ -217,35 +330,67 @@ public class Generated_acceptance_tests_Test {
   }
   @Test
   public void T13_item0_3191633378145637110() throws Throwable {
-    Assert.assertEquals("Expected: " + (Generated_acceptance_tests_Test.ok_) + ", but was: " + (Generated_acceptance_tests_Test.rule13("12Hello")), (Object) Generated_acceptance_tests_Test.ok_, (Object) Generated_acceptance_tests_Test.rule13("12Hello"));
+    try {
+      Assert.assertEquals("Expected: " + (Generated_acceptance_tests_Test.ok_) + ", but was: " + (Generated_acceptance_tests_Test.rule13("12Hello")), (Object) Generated_acceptance_tests_Test.ok_, (Object) Generated_acceptance_tests_Test.rule13("12Hello"));
+    } catch (Throwable failure) {
+      throw SourceNodeFailures.attach(failure, "http://127.0.0.1:63320/node?ref=r%3A4498a3f1-ffdc-46cb-b225-63bf7159e69e%28test.in.expr.os.stringvalidation%40tests%29%2F3191633378145637110");
+    }
   }
   @Test
   public void T13_item1_3191633378145638922() throws Throwable {
-    Assert.assertEquals("Expected: " + (Generated_acceptance_tests_Test.ok_) + ", but was: " + (Generated_acceptance_tests_Test.rule13("12")), (Object) Generated_acceptance_tests_Test.ok_, (Object) Generated_acceptance_tests_Test.rule13("12"));
+    try {
+      Assert.assertEquals("Expected: " + (Generated_acceptance_tests_Test.ok_) + ", but was: " + (Generated_acceptance_tests_Test.rule13("12")), (Object) Generated_acceptance_tests_Test.ok_, (Object) Generated_acceptance_tests_Test.rule13("12"));
+    } catch (Throwable failure) {
+      throw SourceNodeFailures.attach(failure, "http://127.0.0.1:63320/node?ref=r%3A4498a3f1-ffdc-46cb-b225-63bf7159e69e%28test.in.expr.os.stringvalidation%40tests%29%2F3191633378145638922");
+    }
   }
   @Test
   public void T13_item2_3191633378145637115() throws Throwable {
-    Assert.assertEquals("Expected: " + (Generated_acceptance_tests_Test.ok_) + ", but was: " + (Generated_acceptance_tests_Test.rule13("1Hello")), (Object) Generated_acceptance_tests_Test.ok_, (Object) Generated_acceptance_tests_Test.rule13("1Hello"));
+    try {
+      Assert.assertEquals("Expected: " + (Generated_acceptance_tests_Test.ok_) + ", but was: " + (Generated_acceptance_tests_Test.rule13("1Hello")), (Object) Generated_acceptance_tests_Test.ok_, (Object) Generated_acceptance_tests_Test.rule13("1Hello"));
+    } catch (Throwable failure) {
+      throw SourceNodeFailures.attach(failure, "http://127.0.0.1:63320/node?ref=r%3A4498a3f1-ffdc-46cb-b225-63bf7159e69e%28test.in.expr.os.stringvalidation%40tests%29%2F3191633378145637115");
+    }
   }
   @Test
   public void T13_item3_3191633378145637120() throws Throwable {
-    Assert.assertEquals("Expected: " + (Generated_acceptance_tests_Test.ok_) + ", but was: " + (Generated_acceptance_tests_Test.rule13("Hello 12")), (Object) Generated_acceptance_tests_Test.ok_, (Object) Generated_acceptance_tests_Test.rule13("Hello 12"));
+    try {
+      Assert.assertEquals("Expected: " + (Generated_acceptance_tests_Test.ok_) + ", but was: " + (Generated_acceptance_tests_Test.rule13("Hello 12")), (Object) Generated_acceptance_tests_Test.ok_, (Object) Generated_acceptance_tests_Test.rule13("Hello 12"));
+    } catch (Throwable failure) {
+      throw SourceNodeFailures.attach(failure, "http://127.0.0.1:63320/node?ref=r%3A4498a3f1-ffdc-46cb-b225-63bf7159e69e%28test.in.expr.os.stringvalidation%40tests%29%2F3191633378145637120");
+    }
   }
   @Test
   public void T13_item4_3191633378145637125() throws Throwable {
-    Assert.assertEquals("Expected: " + (Generated_acceptance_tests_Test.ok_) + ", but was: " + (Generated_acceptance_tests_Test.rule13("Hello12")), (Object) Generated_acceptance_tests_Test.ok_, (Object) Generated_acceptance_tests_Test.rule13("Hello12"));
+    try {
+      Assert.assertEquals("Expected: " + (Generated_acceptance_tests_Test.ok_) + ", but was: " + (Generated_acceptance_tests_Test.rule13("Hello12")), (Object) Generated_acceptance_tests_Test.ok_, (Object) Generated_acceptance_tests_Test.rule13("Hello12"));
+    } catch (Throwable failure) {
+      throw SourceNodeFailures.attach(failure, "http://127.0.0.1:63320/node?ref=r%3A4498a3f1-ffdc-46cb-b225-63bf7159e69e%28test.in.expr.os.stringvalidation%40tests%29%2F3191633378145637125");
+    }
   }
   @Test
   public void T13_item5_3191633378145746001() throws Throwable {
-    Assert.assertEquals("Expected: " + (Generated_acceptance_tests_Test.ok_) + ", but was: " + (Generated_acceptance_tests_Test.rule13("Hello.12")), (Object) Generated_acceptance_tests_Test.ok_, (Object) Generated_acceptance_tests_Test.rule13("Hello.12"));
+    try {
+      Assert.assertEquals("Expected: " + (Generated_acceptance_tests_Test.ok_) + ", but was: " + (Generated_acceptance_tests_Test.rule13("Hello.12")), (Object) Generated_acceptance_tests_Test.ok_, (Object) Generated_acceptance_tests_Test.rule13("Hello.12"));
+    } catch (Throwable failure) {
+      throw SourceNodeFailures.attach(failure, "http://127.0.0.1:63320/node?ref=r%3A4498a3f1-ffdc-46cb-b225-63bf7159e69e%28test.in.expr.os.stringvalidation%40tests%29%2F3191633378145746001");
+    }
   }
   @Test
   public void T13_item6_3191633378145746103() throws Throwable {
-    Assert.assertEquals("Expected: " + (Generated_acceptance_tests_Test.ok_) + ", but was: " + (Generated_acceptance_tests_Test.rule13("Hello/12")), (Object) Generated_acceptance_tests_Test.ok_, (Object) Generated_acceptance_tests_Test.rule13("Hello/12"));
+    try {
+      Assert.assertEquals("Expected: " + (Generated_acceptance_tests_Test.ok_) + ", but was: " + (Generated_acceptance_tests_Test.rule13("Hello/12")), (Object) Generated_acceptance_tests_Test.ok_, (Object) Generated_acceptance_tests_Test.rule13("Hello/12"));
+    } catch (Throwable failure) {
+      throw SourceNodeFailures.attach(failure, "http://127.0.0.1:63320/node?ref=r%3A4498a3f1-ffdc-46cb-b225-63bf7159e69e%28test.in.expr.os.stringvalidation%40tests%29%2F3191633378145746103");
+    }
   }
   @Test
   public void T13_item7_3191633378145746217() throws Throwable {
-    Assert.assertTrue("Expected: " + (Generated_acceptance_tests_Test.ok_) + ", but was: " + (Generated_acceptance_tests_Test.rule13("Hello#12")), !(EqualsTestOp.matches(Generated_acceptance_tests_Test.rule13("Hello#12"), Generated_acceptance_tests_Test.ok_)));
+    try {
+      Assert.assertTrue("Expected: " + (Generated_acceptance_tests_Test.ok_) + ", but was: " + (Generated_acceptance_tests_Test.rule13("Hello#12")), !(EqualsTestOp.matches(Generated_acceptance_tests_Test.rule13("Hello#12"), Generated_acceptance_tests_Test.ok_)));
+    } catch (Throwable failure) {
+      throw SourceNodeFailures.attach(failure, "http://127.0.0.1:63320/node?ref=r%3A4498a3f1-ffdc-46cb-b225-63bf7159e69e%28test.in.expr.os.stringvalidation%40tests%29%2F3191633378145746217");
+    }
   }
 /* 
    * Allowed are letters, spaces, hyphens, apostrophes, numbers, brackets or dots.
@@ -257,23 +402,43 @@ public class Generated_acceptance_tests_Test {
   }
   @Test
   public void T5_item0_3191633378144475220() throws Throwable {
-    Assert.assertEquals("Expected: " + (Generated_acceptance_tests_Test.ok_) + ", but was: " + (Generated_acceptance_tests_Test.rule5("hallo")), (Object) Generated_acceptance_tests_Test.ok_, (Object) Generated_acceptance_tests_Test.rule5("hallo"));
+    try {
+      Assert.assertEquals("Expected: " + (Generated_acceptance_tests_Test.ok_) + ", but was: " + (Generated_acceptance_tests_Test.rule5("hallo")), (Object) Generated_acceptance_tests_Test.ok_, (Object) Generated_acceptance_tests_Test.rule5("hallo"));
+    } catch (Throwable failure) {
+      throw SourceNodeFailures.attach(failure, "http://127.0.0.1:63320/node?ref=r%3A4498a3f1-ffdc-46cb-b225-63bf7159e69e%28test.in.expr.os.stringvalidation%40tests%29%2F3191633378144475220");
+    }
   }
   @Test
   public void T5_item1_3191633378144486900() throws Throwable {
-    Assert.assertEquals("Expected: " + (Generated_acceptance_tests_Test.ok_) + ", but was: " + (Generated_acceptance_tests_Test.rule5("W X ")), (Object) Generated_acceptance_tests_Test.ok_, (Object) Generated_acceptance_tests_Test.rule5("W X "));
+    try {
+      Assert.assertEquals("Expected: " + (Generated_acceptance_tests_Test.ok_) + ", but was: " + (Generated_acceptance_tests_Test.rule5("W X ")), (Object) Generated_acceptance_tests_Test.ok_, (Object) Generated_acceptance_tests_Test.rule5("W X "));
+    } catch (Throwable failure) {
+      throw SourceNodeFailures.attach(failure, "http://127.0.0.1:63320/node?ref=r%3A4498a3f1-ffdc-46cb-b225-63bf7159e69e%28test.in.expr.os.stringvalidation%40tests%29%2F3191633378144486900");
+    }
   }
   @Test
   public void T5_item2_3191633378144706444() throws Throwable {
-    Assert.assertEquals("Expected: " + (Generated_acceptance_tests_Test.ok_) + ", but was: " + (Generated_acceptance_tests_Test.rule5(")")), (Object) Generated_acceptance_tests_Test.ok_, (Object) Generated_acceptance_tests_Test.rule5(")"));
+    try {
+      Assert.assertEquals("Expected: " + (Generated_acceptance_tests_Test.ok_) + ", but was: " + (Generated_acceptance_tests_Test.rule5(")")), (Object) Generated_acceptance_tests_Test.ok_, (Object) Generated_acceptance_tests_Test.rule5(")"));
+    } catch (Throwable failure) {
+      throw SourceNodeFailures.attach(failure, "http://127.0.0.1:63320/node?ref=r%3A4498a3f1-ffdc-46cb-b225-63bf7159e69e%28test.in.expr.os.stringvalidation%40tests%29%2F3191633378144706444");
+    }
   }
   @Test
   public void T5_item3_3191633378144706510() throws Throwable {
-    Assert.assertEquals("Expected: " + (Generated_acceptance_tests_Test.ok_) + ", but was: " + (Generated_acceptance_tests_Test.rule5("(a). ")), (Object) Generated_acceptance_tests_Test.ok_, (Object) Generated_acceptance_tests_Test.rule5("(a). "));
+    try {
+      Assert.assertEquals("Expected: " + (Generated_acceptance_tests_Test.ok_) + ", but was: " + (Generated_acceptance_tests_Test.rule5("(a). ")), (Object) Generated_acceptance_tests_Test.ok_, (Object) Generated_acceptance_tests_Test.rule5("(a). "));
+    } catch (Throwable failure) {
+      throw SourceNodeFailures.attach(failure, "http://127.0.0.1:63320/node?ref=r%3A4498a3f1-ffdc-46cb-b225-63bf7159e69e%28test.in.expr.os.stringvalidation%40tests%29%2F3191633378144706510");
+    }
   }
   @Test
   public void T5_item4_3191633378144707999() throws Throwable {
-    Assert.assertTrue("Expected: " + (Generated_acceptance_tests_Test.ok_) + ", but was: " + (Generated_acceptance_tests_Test.rule5("(a)#. ")), !(EqualsTestOp.matches(Generated_acceptance_tests_Test.rule5("(a)#. "), Generated_acceptance_tests_Test.ok_)));
+    try {
+      Assert.assertTrue("Expected: " + (Generated_acceptance_tests_Test.ok_) + ", but was: " + (Generated_acceptance_tests_Test.rule5("(a)#. ")), !(EqualsTestOp.matches(Generated_acceptance_tests_Test.rule5("(a)#. "), Generated_acceptance_tests_Test.ok_)));
+    } catch (Throwable failure) {
+      throw SourceNodeFailures.attach(failure, "http://127.0.0.1:63320/node?ref=r%3A4498a3f1-ffdc-46cb-b225-63bf7159e69e%28test.in.expr.os.stringvalidation%40tests%29%2F3191633378144707999");
+    }
   }
 /* 
    * At least 3 identical consecutive letters at the beginning of the street are not permitted, unless the street starts with "III" and is followed in the 4th place by a dot, which is not the last character of the street, or the street begins with the character string "MMM-Str"
@@ -293,19 +458,35 @@ public class Generated_acceptance_tests_Test {
   }
   @Test
   public void T12_item0_3191633378143359165() throws Throwable {
-    Assert.assertEquals("Expected: " + (Generated_acceptance_tests_Test.ok_) + ", but was: " + (Generated_acceptance_tests_Test.rule12("Hauptstrasse")), (Object) Generated_acceptance_tests_Test.ok_, (Object) Generated_acceptance_tests_Test.rule12("Hauptstrasse"));
+    try {
+      Assert.assertEquals("Expected: " + (Generated_acceptance_tests_Test.ok_) + ", but was: " + (Generated_acceptance_tests_Test.rule12("Hauptstrasse")), (Object) Generated_acceptance_tests_Test.ok_, (Object) Generated_acceptance_tests_Test.rule12("Hauptstrasse"));
+    } catch (Throwable failure) {
+      throw SourceNodeFailures.attach(failure, "http://127.0.0.1:63320/node?ref=r%3A4498a3f1-ffdc-46cb-b225-63bf7159e69e%28test.in.expr.os.stringvalidation%40tests%29%2F3191633378143359165");
+    }
   }
   @Test
   public void T12_item1_3191633378143360372() throws Throwable {
-    Assert.assertEquals("Expected: " + (Generated_acceptance_tests_Test.ok_) + ", but was: " + (Generated_acceptance_tests_Test.rule12("III. Strasse")), (Object) Generated_acceptance_tests_Test.ok_, (Object) Generated_acceptance_tests_Test.rule12("III. Strasse"));
+    try {
+      Assert.assertEquals("Expected: " + (Generated_acceptance_tests_Test.ok_) + ", but was: " + (Generated_acceptance_tests_Test.rule12("III. Strasse")), (Object) Generated_acceptance_tests_Test.ok_, (Object) Generated_acceptance_tests_Test.rule12("III. Strasse"));
+    } catch (Throwable failure) {
+      throw SourceNodeFailures.attach(failure, "http://127.0.0.1:63320/node?ref=r%3A4498a3f1-ffdc-46cb-b225-63bf7159e69e%28test.in.expr.os.stringvalidation%40tests%29%2F3191633378143360372");
+    }
   }
   @Test
   public void T12_item2_3191633378143362785() throws Throwable {
-    Assert.assertEquals("Expected: " + (Generated_acceptance_tests_Test.ok_) + ", but was: " + (Generated_acceptance_tests_Test.rule12("MMM-Str 12")), (Object) Generated_acceptance_tests_Test.ok_, (Object) Generated_acceptance_tests_Test.rule12("MMM-Str 12"));
+    try {
+      Assert.assertEquals("Expected: " + (Generated_acceptance_tests_Test.ok_) + ", but was: " + (Generated_acceptance_tests_Test.rule12("MMM-Str 12")), (Object) Generated_acceptance_tests_Test.ok_, (Object) Generated_acceptance_tests_Test.rule12("MMM-Str 12"));
+    } catch (Throwable failure) {
+      throw SourceNodeFailures.attach(failure, "http://127.0.0.1:63320/node?ref=r%3A4498a3f1-ffdc-46cb-b225-63bf7159e69e%28test.in.expr.os.stringvalidation%40tests%29%2F3191633378143362785");
+    }
   }
   @Test
   public void T12_item3_3191633378143365884() throws Throwable {
-    Assert.assertTrue("Expected: " + (Generated_acceptance_tests_Test.ok_) + ", but was: " + (Generated_acceptance_tests_Test.rule12("HHHauptstrasse")), !(EqualsTestOp.matches(Generated_acceptance_tests_Test.rule12("HHHauptstrasse"), Generated_acceptance_tests_Test.ok_)));
+    try {
+      Assert.assertTrue("Expected: " + (Generated_acceptance_tests_Test.ok_) + ", but was: " + (Generated_acceptance_tests_Test.rule12("HHHauptstrasse")), !(EqualsTestOp.matches(Generated_acceptance_tests_Test.rule12("HHHauptstrasse"), Generated_acceptance_tests_Test.ok_)));
+    } catch (Throwable failure) {
+      throw SourceNodeFailures.attach(failure, "http://127.0.0.1:63320/node?ref=r%3A4498a3f1-ffdc-46cb-b225-63bf7159e69e%28test.in.expr.os.stringvalidation%40tests%29%2F3191633378143365884");
+    }
   }
 /* 
    * (made up by me) At least 3 consecutive letters at the beginning of the family name are not allowed.
@@ -325,35 +506,67 @@ public class Generated_acceptance_tests_Test {
   }
   @Test
   public void T3a_item0_3191633378114212706() throws Throwable {
-    Assert.assertTrue("Expected: " + (Generated_acceptance_tests_Test.ok_) + ", but was: " + (Generated_acceptance_tests_Test.rule3a("hallo")), !(EqualsTestOp.matches(Generated_acceptance_tests_Test.rule3a("hallo"), Generated_acceptance_tests_Test.ok_)));
+    try {
+      Assert.assertTrue("Expected: " + (Generated_acceptance_tests_Test.ok_) + ", but was: " + (Generated_acceptance_tests_Test.rule3a("hallo")), !(EqualsTestOp.matches(Generated_acceptance_tests_Test.rule3a("hallo"), Generated_acceptance_tests_Test.ok_)));
+    } catch (Throwable failure) {
+      throw SourceNodeFailures.attach(failure, "http://127.0.0.1:63320/node?ref=r%3A4498a3f1-ffdc-46cb-b225-63bf7159e69e%28test.in.expr.os.stringvalidation%40tests%29%2F3191633378114212706");
+    }
   }
   @Test
   public void T3a_item1_3191633378114214911() throws Throwable {
-    Assert.assertTrue("Expected: " + (Generated_acceptance_tests_Test.ok_) + ", but was: " + (Generated_acceptance_tests_Test.rule3a("hhallo")), !(EqualsTestOp.matches(Generated_acceptance_tests_Test.rule3a("hhallo"), Generated_acceptance_tests_Test.ok_)));
+    try {
+      Assert.assertTrue("Expected: " + (Generated_acceptance_tests_Test.ok_) + ", but was: " + (Generated_acceptance_tests_Test.rule3a("hhallo")), !(EqualsTestOp.matches(Generated_acceptance_tests_Test.rule3a("hhallo"), Generated_acceptance_tests_Test.ok_)));
+    } catch (Throwable failure) {
+      throw SourceNodeFailures.attach(failure, "http://127.0.0.1:63320/node?ref=r%3A4498a3f1-ffdc-46cb-b225-63bf7159e69e%28test.in.expr.os.stringvalidation%40tests%29%2F3191633378114214911");
+    }
   }
   @Test
   public void T3a_item2_3191633378114201006() throws Throwable {
-    Assert.assertTrue("Expected: " + (Generated_acceptance_tests_Test.ok_) + ", but was: " + (Generated_acceptance_tests_Test.rule3a("hhhallo")), !(EqualsTestOp.matches(Generated_acceptance_tests_Test.rule3a("hhhallo"), Generated_acceptance_tests_Test.ok_)));
+    try {
+      Assert.assertTrue("Expected: " + (Generated_acceptance_tests_Test.ok_) + ", but was: " + (Generated_acceptance_tests_Test.rule3a("hhhallo")), !(EqualsTestOp.matches(Generated_acceptance_tests_Test.rule3a("hhhallo"), Generated_acceptance_tests_Test.ok_)));
+    } catch (Throwable failure) {
+      throw SourceNodeFailures.attach(failure, "http://127.0.0.1:63320/node?ref=r%3A4498a3f1-ffdc-46cb-b225-63bf7159e69e%28test.in.expr.os.stringvalidation%40tests%29%2F3191633378114201006");
+    }
   }
   @Test
   public void T3a_item3_3191633378142396654() throws Throwable {
-    Assert.assertEquals("Expected: " + (Generated_acceptance_tests_Test.ok_) + ", but was: " + (Generated_acceptance_tests_Test.rule3a("hh-hallo")), (Object) Generated_acceptance_tests_Test.ok_, (Object) Generated_acceptance_tests_Test.rule3a("hh-hallo"));
+    try {
+      Assert.assertEquals("Expected: " + (Generated_acceptance_tests_Test.ok_) + ", but was: " + (Generated_acceptance_tests_Test.rule3a("hh-hallo")), (Object) Generated_acceptance_tests_Test.ok_, (Object) Generated_acceptance_tests_Test.rule3a("hh-hallo"));
+    } catch (Throwable failure) {
+      throw SourceNodeFailures.attach(failure, "http://127.0.0.1:63320/node?ref=r%3A4498a3f1-ffdc-46cb-b225-63bf7159e69e%28test.in.expr.os.stringvalidation%40tests%29%2F3191633378142396654");
+    }
   }
   @Test
   public void T3a_item4_3191633378142393076() throws Throwable {
-    Assert.assertEquals("Expected: " + (Generated_acceptance_tests_Test.ok_) + ", but was: " + (Generated_acceptance_tests_Test.rule3a("h1hhallo")), (Object) Generated_acceptance_tests_Test.ok_, (Object) Generated_acceptance_tests_Test.rule3a("h1hhallo"));
+    try {
+      Assert.assertEquals("Expected: " + (Generated_acceptance_tests_Test.ok_) + ", but was: " + (Generated_acceptance_tests_Test.rule3a("h1hhallo")), (Object) Generated_acceptance_tests_Test.ok_, (Object) Generated_acceptance_tests_Test.rule3a("h1hhallo"));
+    } catch (Throwable failure) {
+      throw SourceNodeFailures.attach(failure, "http://127.0.0.1:63320/node?ref=r%3A4498a3f1-ffdc-46cb-b225-63bf7159e69e%28test.in.expr.os.stringvalidation%40tests%29%2F3191633378142393076");
+    }
   }
   @Test
   public void T3b_item0_3191633378142104254() throws Throwable {
-    Assert.assertEquals("Expected: " + (Generated_acceptance_tests_Test.ok_) + ", but was: " + (Generated_acceptance_tests_Test.rule3b("hallo")), (Object) Generated_acceptance_tests_Test.ok_, (Object) Generated_acceptance_tests_Test.rule3b("hallo"));
+    try {
+      Assert.assertEquals("Expected: " + (Generated_acceptance_tests_Test.ok_) + ", but was: " + (Generated_acceptance_tests_Test.rule3b("hallo")), (Object) Generated_acceptance_tests_Test.ok_, (Object) Generated_acceptance_tests_Test.rule3b("hallo"));
+    } catch (Throwable failure) {
+      throw SourceNodeFailures.attach(failure, "http://127.0.0.1:63320/node?ref=r%3A4498a3f1-ffdc-46cb-b225-63bf7159e69e%28test.in.expr.os.stringvalidation%40tests%29%2F3191633378142104254");
+    }
   }
   @Test
   public void T3b_item1_3191633378142104259() throws Throwable {
-    Assert.assertEquals("Expected: " + (Generated_acceptance_tests_Test.ok_) + ", but was: " + (Generated_acceptance_tests_Test.rule3b("hhallo")), (Object) Generated_acceptance_tests_Test.ok_, (Object) Generated_acceptance_tests_Test.rule3b("hhallo"));
+    try {
+      Assert.assertEquals("Expected: " + (Generated_acceptance_tests_Test.ok_) + ", but was: " + (Generated_acceptance_tests_Test.rule3b("hhallo")), (Object) Generated_acceptance_tests_Test.ok_, (Object) Generated_acceptance_tests_Test.rule3b("hhallo"));
+    } catch (Throwable failure) {
+      throw SourceNodeFailures.attach(failure, "http://127.0.0.1:63320/node?ref=r%3A4498a3f1-ffdc-46cb-b225-63bf7159e69e%28test.in.expr.os.stringvalidation%40tests%29%2F3191633378142104259");
+    }
   }
   @Test
   public void T3b_item2_3191633378142104264() throws Throwable {
-    Assert.assertTrue("Expected: " + (Generated_acceptance_tests_Test.ok_) + ", but was: " + (Generated_acceptance_tests_Test.rule3b("hhhallo")), !(EqualsTestOp.matches(Generated_acceptance_tests_Test.rule3b("hhhallo"), Generated_acceptance_tests_Test.ok_)));
+    try {
+      Assert.assertTrue("Expected: " + (Generated_acceptance_tests_Test.ok_) + ", but was: " + (Generated_acceptance_tests_Test.rule3b("hhhallo")), !(EqualsTestOp.matches(Generated_acceptance_tests_Test.rule3b("hhhallo"), Generated_acceptance_tests_Test.ok_)));
+    } catch (Throwable failure) {
+      throw SourceNodeFailures.attach(failure, "http://127.0.0.1:63320/node?ref=r%3A4498a3f1-ffdc-46cb-b225-63bf7159e69e%28test.in.expr.os.stringvalidation%40tests%29%2F3191633378142104264");
+    }
   }
 /* 
    * Only a letter other than "ß" or an apostrophe is allowed at the first position of the family name.
@@ -365,23 +578,43 @@ public class Generated_acceptance_tests_Test {
   }
   @Test
   public void T8_item0_7791028896464780547() throws Throwable {
-    Assert.assertEquals("Expected: " + (Generated_acceptance_tests_Test.ok_) + ", but was: " + (Generated_acceptance_tests_Test.rule8("Maier")), (Object) Generated_acceptance_tests_Test.ok_, (Object) Generated_acceptance_tests_Test.rule8("Maier"));
+    try {
+      Assert.assertEquals("Expected: " + (Generated_acceptance_tests_Test.ok_) + ", but was: " + (Generated_acceptance_tests_Test.rule8("Maier")), (Object) Generated_acceptance_tests_Test.ok_, (Object) Generated_acceptance_tests_Test.rule8("Maier"));
+    } catch (Throwable failure) {
+      throw SourceNodeFailures.attach(failure, "http://127.0.0.1:63320/node?ref=r%3A4498a3f1-ffdc-46cb-b225-63bf7159e69e%28test.in.expr.os.stringvalidation%40tests%29%2F7791028896464780547");
+    }
   }
   @Test
   public void T8_item1_7791028896464780642() throws Throwable {
-    Assert.assertTrue("Expected: " + (Generated_acceptance_tests_Test.ok_) + ", but was: " + (Generated_acceptance_tests_Test.rule8("ßeiler")), !(EqualsTestOp.matches(Generated_acceptance_tests_Test.rule8("ßeiler"), Generated_acceptance_tests_Test.ok_)));
+    try {
+      Assert.assertTrue("Expected: " + (Generated_acceptance_tests_Test.ok_) + ", but was: " + (Generated_acceptance_tests_Test.rule8("ßeiler")), !(EqualsTestOp.matches(Generated_acceptance_tests_Test.rule8("ßeiler"), Generated_acceptance_tests_Test.ok_)));
+    } catch (Throwable failure) {
+      throw SourceNodeFailures.attach(failure, "http://127.0.0.1:63320/node?ref=r%3A4498a3f1-ffdc-46cb-b225-63bf7159e69e%28test.in.expr.os.stringvalidation%40tests%29%2F7791028896464780642");
+    }
   }
   @Test
   public void T8_item2_7791028896464782027() throws Throwable {
-    Assert.assertTrue("Expected: " + (Generated_acceptance_tests_Test.ok_) + ", but was: " + (Generated_acceptance_tests_Test.rule8("12eiler")), !(EqualsTestOp.matches(Generated_acceptance_tests_Test.rule8("12eiler"), Generated_acceptance_tests_Test.ok_)));
+    try {
+      Assert.assertTrue("Expected: " + (Generated_acceptance_tests_Test.ok_) + ", but was: " + (Generated_acceptance_tests_Test.rule8("12eiler")), !(EqualsTestOp.matches(Generated_acceptance_tests_Test.rule8("12eiler"), Generated_acceptance_tests_Test.ok_)));
+    } catch (Throwable failure) {
+      throw SourceNodeFailures.attach(failure, "http://127.0.0.1:63320/node?ref=r%3A4498a3f1-ffdc-46cb-b225-63bf7159e69e%28test.in.expr.os.stringvalidation%40tests%29%2F7791028896464782027");
+    }
   }
   @Test
   public void T8_item3_7791028896464783296() throws Throwable {
-    Assert.assertTrue("Expected: " + (Generated_acceptance_tests_Test.ok_) + ", but was: " + (Generated_acceptance_tests_Test.rule8("#eiler")), !(EqualsTestOp.matches(Generated_acceptance_tests_Test.rule8("#eiler"), Generated_acceptance_tests_Test.ok_)));
+    try {
+      Assert.assertTrue("Expected: " + (Generated_acceptance_tests_Test.ok_) + ", but was: " + (Generated_acceptance_tests_Test.rule8("#eiler")), !(EqualsTestOp.matches(Generated_acceptance_tests_Test.rule8("#eiler"), Generated_acceptance_tests_Test.ok_)));
+    } catch (Throwable failure) {
+      throw SourceNodeFailures.attach(failure, "http://127.0.0.1:63320/node?ref=r%3A4498a3f1-ffdc-46cb-b225-63bf7159e69e%28test.in.expr.os.stringvalidation%40tests%29%2F7791028896464783296");
+    }
   }
   @Test
   public void T8_item4_7791028896464783971() throws Throwable {
-    Assert.assertEquals("Expected: " + (Generated_acceptance_tests_Test.ok_) + ", but was: " + (Generated_acceptance_tests_Test.rule8("\"Fritz\" Maier")), (Object) Generated_acceptance_tests_Test.ok_, (Object) Generated_acceptance_tests_Test.rule8("\"Fritz\" Maier"));
+    try {
+      Assert.assertEquals("Expected: " + (Generated_acceptance_tests_Test.ok_) + ", but was: " + (Generated_acceptance_tests_Test.rule8("\"Fritz\" Maier")), (Object) Generated_acceptance_tests_Test.ok_, (Object) Generated_acceptance_tests_Test.rule8("\"Fritz\" Maier"));
+    } catch (Throwable failure) {
+      throw SourceNodeFailures.attach(failure, "http://127.0.0.1:63320/node?ref=r%3A4498a3f1-ffdc-46cb-b225-63bf7159e69e%28test.in.expr.os.stringvalidation%40tests%29%2F7791028896464783971");
+    }
   }
 /* 
    * Only a letter, digit, closing parenthesis, period, or apostrophe is allowed as the last digit of the surname.
@@ -393,35 +626,67 @@ public class Generated_acceptance_tests_Test {
   }
   @Test
   public void T9_item0_7791028896462945848() throws Throwable {
-    Assert.assertEquals("Expected: " + (Generated_acceptance_tests_Test.ok_) + ", but was: " + (Generated_acceptance_tests_Test.rule9("Müller")), (Object) Generated_acceptance_tests_Test.ok_, (Object) Generated_acceptance_tests_Test.rule9("Müller"));
+    try {
+      Assert.assertEquals("Expected: " + (Generated_acceptance_tests_Test.ok_) + ", but was: " + (Generated_acceptance_tests_Test.rule9("Müller")), (Object) Generated_acceptance_tests_Test.ok_, (Object) Generated_acceptance_tests_Test.rule9("Müller"));
+    } catch (Throwable failure) {
+      throw SourceNodeFailures.attach(failure, "http://127.0.0.1:63320/node?ref=r%3A4498a3f1-ffdc-46cb-b225-63bf7159e69e%28test.in.expr.os.stringvalidation%40tests%29%2F7791028896462945848");
+    }
   }
   @Test
   public void T9_item1_7791028896463409622() throws Throwable {
-    Assert.assertEquals("Expected: " + (Generated_acceptance_tests_Test.ok_) + ", but was: " + (Generated_acceptance_tests_Test.rule9("Müller12")), (Object) Generated_acceptance_tests_Test.ok_, (Object) Generated_acceptance_tests_Test.rule9("Müller12"));
+    try {
+      Assert.assertEquals("Expected: " + (Generated_acceptance_tests_Test.ok_) + ", but was: " + (Generated_acceptance_tests_Test.rule9("Müller12")), (Object) Generated_acceptance_tests_Test.ok_, (Object) Generated_acceptance_tests_Test.rule9("Müller12"));
+    } catch (Throwable failure) {
+      throw SourceNodeFailures.attach(failure, "http://127.0.0.1:63320/node?ref=r%3A4498a3f1-ffdc-46cb-b225-63bf7159e69e%28test.in.expr.os.stringvalidation%40tests%29%2F7791028896463409622");
+    }
   }
   @Test
   public void T9_item2_7791028896463409676() throws Throwable {
-    Assert.assertEquals("Expected: " + (Generated_acceptance_tests_Test.ok_) + ", but was: " + (Generated_acceptance_tests_Test.rule9("Müller(2)")), (Object) Generated_acceptance_tests_Test.ok_, (Object) Generated_acceptance_tests_Test.rule9("Müller(2)"));
+    try {
+      Assert.assertEquals("Expected: " + (Generated_acceptance_tests_Test.ok_) + ", but was: " + (Generated_acceptance_tests_Test.rule9("Müller(2)")), (Object) Generated_acceptance_tests_Test.ok_, (Object) Generated_acceptance_tests_Test.rule9("Müller(2)"));
+    } catch (Throwable failure) {
+      throw SourceNodeFailures.attach(failure, "http://127.0.0.1:63320/node?ref=r%3A4498a3f1-ffdc-46cb-b225-63bf7159e69e%28test.in.expr.os.stringvalidation%40tests%29%2F7791028896463409676");
+    }
   }
   @Test
   public void T9_item3_7791028896463409742() throws Throwable {
-    Assert.assertEquals("Expected: " + (Generated_acceptance_tests_Test.ok_) + ", but was: " + (Generated_acceptance_tests_Test.rule9("Müller2.")), (Object) Generated_acceptance_tests_Test.ok_, (Object) Generated_acceptance_tests_Test.rule9("Müller2."));
+    try {
+      Assert.assertEquals("Expected: " + (Generated_acceptance_tests_Test.ok_) + ", but was: " + (Generated_acceptance_tests_Test.rule9("Müller2.")), (Object) Generated_acceptance_tests_Test.ok_, (Object) Generated_acceptance_tests_Test.rule9("Müller2."));
+    } catch (Throwable failure) {
+      throw SourceNodeFailures.attach(failure, "http://127.0.0.1:63320/node?ref=r%3A4498a3f1-ffdc-46cb-b225-63bf7159e69e%28test.in.expr.os.stringvalidation%40tests%29%2F7791028896463409742");
+    }
   }
   @Test
   public void T9_item4_7791028896463409860() throws Throwable {
-    Assert.assertEquals("Expected: " + (Generated_acceptance_tests_Test.ok_) + ", but was: " + (Generated_acceptance_tests_Test.rule9("Müller2.\"")), (Object) Generated_acceptance_tests_Test.ok_, (Object) Generated_acceptance_tests_Test.rule9("Müller2.\""));
+    try {
+      Assert.assertEquals("Expected: " + (Generated_acceptance_tests_Test.ok_) + ", but was: " + (Generated_acceptance_tests_Test.rule9("Müller2.\"")), (Object) Generated_acceptance_tests_Test.ok_, (Object) Generated_acceptance_tests_Test.rule9("Müller2.\""));
+    } catch (Throwable failure) {
+      throw SourceNodeFailures.attach(failure, "http://127.0.0.1:63320/node?ref=r%3A4498a3f1-ffdc-46cb-b225-63bf7159e69e%28test.in.expr.os.stringvalidation%40tests%29%2F7791028896463409860");
+    }
   }
   @Test
   public void T9_item5_7791028896463409956() throws Throwable {
-    Assert.assertTrue("Expected: " + (Generated_acceptance_tests_Test.ok_) + ", but was: " + (Generated_acceptance_tests_Test.rule9("Müller#")), !(EqualsTestOp.matches(Generated_acceptance_tests_Test.rule9("Müller#"), Generated_acceptance_tests_Test.ok_)));
+    try {
+      Assert.assertTrue("Expected: " + (Generated_acceptance_tests_Test.ok_) + ", but was: " + (Generated_acceptance_tests_Test.rule9("Müller#")), !(EqualsTestOp.matches(Generated_acceptance_tests_Test.rule9("Müller#"), Generated_acceptance_tests_Test.ok_)));
+    } catch (Throwable failure) {
+      throw SourceNodeFailures.attach(failure, "http://127.0.0.1:63320/node?ref=r%3A4498a3f1-ffdc-46cb-b225-63bf7159e69e%28test.in.expr.os.stringvalidation%40tests%29%2F7791028896463409956");
+    }
   }
   @Test
   public void T9_item6_7791028896463410173() throws Throwable {
-    Assert.assertTrue("Expected: " + (Generated_acceptance_tests_Test.ok_) + ", but was: " + (Generated_acceptance_tests_Test.rule9("Müller$")), !(EqualsTestOp.matches(Generated_acceptance_tests_Test.rule9("Müller$"), Generated_acceptance_tests_Test.ok_)));
+    try {
+      Assert.assertTrue("Expected: " + (Generated_acceptance_tests_Test.ok_) + ", but was: " + (Generated_acceptance_tests_Test.rule9("Müller$")), !(EqualsTestOp.matches(Generated_acceptance_tests_Test.rule9("Müller$"), Generated_acceptance_tests_Test.ok_)));
+    } catch (Throwable failure) {
+      throw SourceNodeFailures.attach(failure, "http://127.0.0.1:63320/node?ref=r%3A4498a3f1-ffdc-46cb-b225-63bf7159e69e%28test.in.expr.os.stringvalidation%40tests%29%2F7791028896463410173");
+    }
   }
   @Test
   public void T9_item7_7791028896463420948() throws Throwable {
-    Assert.assertTrue("Expected: " + (Generated_acceptance_tests_Test.ok_) + ", but was: " + (Generated_acceptance_tests_Test.rule9("Müller-")), !(EqualsTestOp.matches(Generated_acceptance_tests_Test.rule9("Müller-"), Generated_acceptance_tests_Test.ok_)));
+    try {
+      Assert.assertTrue("Expected: " + (Generated_acceptance_tests_Test.ok_) + ", but was: " + (Generated_acceptance_tests_Test.rule9("Müller-")), !(EqualsTestOp.matches(Generated_acceptance_tests_Test.rule9("Müller-"), Generated_acceptance_tests_Test.ok_)));
+    } catch (Throwable failure) {
+      throw SourceNodeFailures.attach(failure, "http://127.0.0.1:63320/node?ref=r%3A4498a3f1-ffdc-46cb-b225-63bf7159e69e%28test.in.expr.os.stringvalidation%40tests%29%2F7791028896463420948");
+    }
   }
 /* 
    * Hyphens must not follow each other more than once.
@@ -433,27 +698,51 @@ public class Generated_acceptance_tests_Test {
   }
   @Test
   public void T10_item0_7791028896462932455() throws Throwable {
-    Assert.assertEquals("Expected: " + (Generated_acceptance_tests_Test.ok_) + ", but was: " + (Generated_acceptance_tests_Test.rule10("hallo")), (Object) Generated_acceptance_tests_Test.ok_, (Object) Generated_acceptance_tests_Test.rule10("hallo"));
+    try {
+      Assert.assertEquals("Expected: " + (Generated_acceptance_tests_Test.ok_) + ", but was: " + (Generated_acceptance_tests_Test.rule10("hallo")), (Object) Generated_acceptance_tests_Test.ok_, (Object) Generated_acceptance_tests_Test.rule10("hallo"));
+    } catch (Throwable failure) {
+      throw SourceNodeFailures.attach(failure, "http://127.0.0.1:63320/node?ref=r%3A4498a3f1-ffdc-46cb-b225-63bf7159e69e%28test.in.expr.os.stringvalidation%40tests%29%2F7791028896462932455");
+    }
   }
   @Test
   public void T10_item1_7791028896462943029() throws Throwable {
-    Assert.assertEquals("Expected: " + (Generated_acceptance_tests_Test.ok_) + ", but was: " + (Generated_acceptance_tests_Test.rule10("hal-lo")), (Object) Generated_acceptance_tests_Test.ok_, (Object) Generated_acceptance_tests_Test.rule10("hal-lo"));
+    try {
+      Assert.assertEquals("Expected: " + (Generated_acceptance_tests_Test.ok_) + ", but was: " + (Generated_acceptance_tests_Test.rule10("hal-lo")), (Object) Generated_acceptance_tests_Test.ok_, (Object) Generated_acceptance_tests_Test.rule10("hal-lo"));
+    } catch (Throwable failure) {
+      throw SourceNodeFailures.attach(failure, "http://127.0.0.1:63320/node?ref=r%3A4498a3f1-ffdc-46cb-b225-63bf7159e69e%28test.in.expr.os.stringvalidation%40tests%29%2F7791028896462943029");
+    }
   }
   @Test
   public void T10_item2_7791028896462943972() throws Throwable {
-    Assert.assertEquals("Expected: " + (Generated_acceptance_tests_Test.ok_) + ", but was: " + (Generated_acceptance_tests_Test.rule10("hal-lo")), (Object) Generated_acceptance_tests_Test.ok_, (Object) Generated_acceptance_tests_Test.rule10("hal-lo"));
+    try {
+      Assert.assertEquals("Expected: " + (Generated_acceptance_tests_Test.ok_) + ", but was: " + (Generated_acceptance_tests_Test.rule10("hal-lo")), (Object) Generated_acceptance_tests_Test.ok_, (Object) Generated_acceptance_tests_Test.rule10("hal-lo"));
+    } catch (Throwable failure) {
+      throw SourceNodeFailures.attach(failure, "http://127.0.0.1:63320/node?ref=r%3A4498a3f1-ffdc-46cb-b225-63bf7159e69e%28test.in.expr.os.stringvalidation%40tests%29%2F7791028896462943972");
+    }
   }
   @Test
   public void T10_item3_7791028896462943087() throws Throwable {
-    Assert.assertTrue("Expected: " + (Generated_acceptance_tests_Test.ok_) + ", but was: " + (Generated_acceptance_tests_Test.rule10("hal--lo")), !(EqualsTestOp.matches(Generated_acceptance_tests_Test.rule10("hal--lo"), Generated_acceptance_tests_Test.ok_)));
+    try {
+      Assert.assertTrue("Expected: " + (Generated_acceptance_tests_Test.ok_) + ", but was: " + (Generated_acceptance_tests_Test.rule10("hal--lo")), !(EqualsTestOp.matches(Generated_acceptance_tests_Test.rule10("hal--lo"), Generated_acceptance_tests_Test.ok_)));
+    } catch (Throwable failure) {
+      throw SourceNodeFailures.attach(failure, "http://127.0.0.1:63320/node?ref=r%3A4498a3f1-ffdc-46cb-b225-63bf7159e69e%28test.in.expr.os.stringvalidation%40tests%29%2F7791028896462943087");
+    }
   }
   @Test
   public void T10_item4_7791028896462943157() throws Throwable {
-    Assert.assertTrue("Expected: " + (Generated_acceptance_tests_Test.ok_) + ", but was: " + (Generated_acceptance_tests_Test.rule10("hal--")), !(EqualsTestOp.matches(Generated_acceptance_tests_Test.rule10("hal--"), Generated_acceptance_tests_Test.ok_)));
+    try {
+      Assert.assertTrue("Expected: " + (Generated_acceptance_tests_Test.ok_) + ", but was: " + (Generated_acceptance_tests_Test.rule10("hal--")), !(EqualsTestOp.matches(Generated_acceptance_tests_Test.rule10("hal--"), Generated_acceptance_tests_Test.ok_)));
+    } catch (Throwable failure) {
+      throw SourceNodeFailures.attach(failure, "http://127.0.0.1:63320/node?ref=r%3A4498a3f1-ffdc-46cb-b225-63bf7159e69e%28test.in.expr.os.stringvalidation%40tests%29%2F7791028896462943157");
+    }
   }
   @Test
   public void T10_item5_7791028896462943322() throws Throwable {
-    Assert.assertEquals("Expected: " + (Generated_acceptance_tests_Test.ok_) + ", but was: " + (Generated_acceptance_tests_Test.rule10("-l-o-")), (Object) Generated_acceptance_tests_Test.ok_, (Object) Generated_acceptance_tests_Test.rule10("-l-o-"));
+    try {
+      Assert.assertEquals("Expected: " + (Generated_acceptance_tests_Test.ok_) + ", but was: " + (Generated_acceptance_tests_Test.rule10("-l-o-")), (Object) Generated_acceptance_tests_Test.ok_, (Object) Generated_acceptance_tests_Test.rule10("-l-o-"));
+    } catch (Throwable failure) {
+      throw SourceNodeFailures.attach(failure, "http://127.0.0.1:63320/node?ref=r%3A4498a3f1-ffdc-46cb-b225-63bf7159e69e%28test.in.expr.os.stringvalidation%40tests%29%2F7791028896462943322");
+    }
   }
 /* 
    * No spaces are allowed before and after hyphens.
@@ -473,19 +762,35 @@ public class Generated_acceptance_tests_Test {
   }
   @Test
   public void T4a_item0_7791028896444737449() throws Throwable {
-    Assert.assertTrue("Expected: " + (Generated_acceptance_tests_Test.ok_) + ", but was: " + (Generated_acceptance_tests_Test.rule4("aa- aa")), !(EqualsTestOp.matches(Generated_acceptance_tests_Test.rule4("aa- aa"), Generated_acceptance_tests_Test.ok_)));
+    try {
+      Assert.assertTrue("Expected: " + (Generated_acceptance_tests_Test.ok_) + ", but was: " + (Generated_acceptance_tests_Test.rule4("aa- aa")), !(EqualsTestOp.matches(Generated_acceptance_tests_Test.rule4("aa- aa"), Generated_acceptance_tests_Test.ok_)));
+    } catch (Throwable failure) {
+      throw SourceNodeFailures.attach(failure, "http://127.0.0.1:63320/node?ref=r%3A4498a3f1-ffdc-46cb-b225-63bf7159e69e%28test.in.expr.os.stringvalidation%40tests%29%2F7791028896444737449");
+    }
   }
   @Test
   public void T4a_item1_7791028896441810471() throws Throwable {
-    Assert.assertEquals("Expected: " + (Generated_acceptance_tests_Test.ok_) + ", but was: " + (Generated_acceptance_tests_Test.rule4("aa-aa")), (Object) Generated_acceptance_tests_Test.ok_, (Object) Generated_acceptance_tests_Test.rule4("aa-aa"));
+    try {
+      Assert.assertEquals("Expected: " + (Generated_acceptance_tests_Test.ok_) + ", but was: " + (Generated_acceptance_tests_Test.rule4("aa-aa")), (Object) Generated_acceptance_tests_Test.ok_, (Object) Generated_acceptance_tests_Test.rule4("aa-aa"));
+    } catch (Throwable failure) {
+      throw SourceNodeFailures.attach(failure, "http://127.0.0.1:63320/node?ref=r%3A4498a3f1-ffdc-46cb-b225-63bf7159e69e%28test.in.expr.os.stringvalidation%40tests%29%2F7791028896441810471");
+    }
   }
   @Test
   public void T4a_item2_7791028896444737454() throws Throwable {
-    Assert.assertTrue("Expected: " + (Generated_acceptance_tests_Test.ok_) + ", but was: " + (Generated_acceptance_tests_Test.rule4("aa -aa")), !(EqualsTestOp.matches(Generated_acceptance_tests_Test.rule4("aa -aa"), Generated_acceptance_tests_Test.ok_)));
+    try {
+      Assert.assertTrue("Expected: " + (Generated_acceptance_tests_Test.ok_) + ", but was: " + (Generated_acceptance_tests_Test.rule4("aa -aa")), !(EqualsTestOp.matches(Generated_acceptance_tests_Test.rule4("aa -aa"), Generated_acceptance_tests_Test.ok_)));
+    } catch (Throwable failure) {
+      throw SourceNodeFailures.attach(failure, "http://127.0.0.1:63320/node?ref=r%3A4498a3f1-ffdc-46cb-b225-63bf7159e69e%28test.in.expr.os.stringvalidation%40tests%29%2F7791028896444737454");
+    }
   }
   @Test
   public void T4a_item3_7791028896444737459() throws Throwable {
-    Assert.assertTrue("Expected: " + (Generated_acceptance_tests_Test.ok_) + ", but was: " + (Generated_acceptance_tests_Test.rule4("aa - aa")), !(EqualsTestOp.matches(Generated_acceptance_tests_Test.rule4("aa - aa"), Generated_acceptance_tests_Test.ok_)));
+    try {
+      Assert.assertTrue("Expected: " + (Generated_acceptance_tests_Test.ok_) + ", but was: " + (Generated_acceptance_tests_Test.rule4("aa - aa")), !(EqualsTestOp.matches(Generated_acceptance_tests_Test.rule4("aa - aa"), Generated_acceptance_tests_Test.ok_)));
+    } catch (Throwable failure) {
+      throw SourceNodeFailures.attach(failure, "http://127.0.0.1:63320/node?ref=r%3A4498a3f1-ffdc-46cb-b225-63bf7159e69e%28test.in.expr.os.stringvalidation%40tests%29%2F7791028896444737459");
+    }
   }
 /* 
    * Only one letter, closing parenthesis or period is allowed as the last digit of the place of residence.
@@ -497,23 +802,43 @@ public class Generated_acceptance_tests_Test {
   }
   @Test
   public void T11_item0_7791028896464907570() throws Throwable {
-    Assert.assertEquals("Expected: " + (Generated_acceptance_tests_Test.ok_) + ", but was: " + (Generated_acceptance_tests_Test.rule11("Strasse")), (Object) Generated_acceptance_tests_Test.ok_, (Object) Generated_acceptance_tests_Test.rule11("Strasse"));
+    try {
+      Assert.assertEquals("Expected: " + (Generated_acceptance_tests_Test.ok_) + ", but was: " + (Generated_acceptance_tests_Test.rule11("Strasse")), (Object) Generated_acceptance_tests_Test.ok_, (Object) Generated_acceptance_tests_Test.rule11("Strasse"));
+    } catch (Throwable failure) {
+      throw SourceNodeFailures.attach(failure, "http://127.0.0.1:63320/node?ref=r%3A4498a3f1-ffdc-46cb-b225-63bf7159e69e%28test.in.expr.os.stringvalidation%40tests%29%2F7791028896464907570");
+    }
   }
   @Test
   public void T11_item1_7791028896464918408() throws Throwable {
-    Assert.assertEquals("Expected: " + (Generated_acceptance_tests_Test.ok_) + ", but was: " + (Generated_acceptance_tests_Test.rule11("Strasse (derZweite)")), (Object) Generated_acceptance_tests_Test.ok_, (Object) Generated_acceptance_tests_Test.rule11("Strasse (derZweite)"));
+    try {
+      Assert.assertEquals("Expected: " + (Generated_acceptance_tests_Test.ok_) + ", but was: " + (Generated_acceptance_tests_Test.rule11("Strasse (derZweite)")), (Object) Generated_acceptance_tests_Test.ok_, (Object) Generated_acceptance_tests_Test.rule11("Strasse (derZweite)"));
+    } catch (Throwable failure) {
+      throw SourceNodeFailures.attach(failure, "http://127.0.0.1:63320/node?ref=r%3A4498a3f1-ffdc-46cb-b225-63bf7159e69e%28test.in.expr.os.stringvalidation%40tests%29%2F7791028896464918408");
+    }
   }
   @Test
   public void T11_item2_7791028896464919185() throws Throwable {
-    Assert.assertEquals("Expected: " + (Generated_acceptance_tests_Test.ok_) + ", but was: " + (Generated_acceptance_tests_Test.rule11("Strasse der 5.")), (Object) Generated_acceptance_tests_Test.ok_, (Object) Generated_acceptance_tests_Test.rule11("Strasse der 5."));
+    try {
+      Assert.assertEquals("Expected: " + (Generated_acceptance_tests_Test.ok_) + ", but was: " + (Generated_acceptance_tests_Test.rule11("Strasse der 5.")), (Object) Generated_acceptance_tests_Test.ok_, (Object) Generated_acceptance_tests_Test.rule11("Strasse der 5."));
+    } catch (Throwable failure) {
+      throw SourceNodeFailures.attach(failure, "http://127.0.0.1:63320/node?ref=r%3A4498a3f1-ffdc-46cb-b225-63bf7159e69e%28test.in.expr.os.stringvalidation%40tests%29%2F7791028896464919185");
+    }
   }
   @Test
   public void T11_item3_7791028896464919974() throws Throwable {
-    Assert.assertTrue("Expected: " + (Generated_acceptance_tests_Test.ok_) + ", but was: " + (Generated_acceptance_tests_Test.rule11("Strasse#")), !(EqualsTestOp.matches(Generated_acceptance_tests_Test.rule11("Strasse#"), Generated_acceptance_tests_Test.ok_)));
+    try {
+      Assert.assertTrue("Expected: " + (Generated_acceptance_tests_Test.ok_) + ", but was: " + (Generated_acceptance_tests_Test.rule11("Strasse#")), !(EqualsTestOp.matches(Generated_acceptance_tests_Test.rule11("Strasse#"), Generated_acceptance_tests_Test.ok_)));
+    } catch (Throwable failure) {
+      throw SourceNodeFailures.attach(failure, "http://127.0.0.1:63320/node?ref=r%3A4498a3f1-ffdc-46cb-b225-63bf7159e69e%28test.in.expr.os.stringvalidation%40tests%29%2F7791028896464919974");
+    }
   }
   @Test
   public void T11_item4_7791028896464920096() throws Throwable {
-    Assert.assertTrue("Expected: " + (Generated_acceptance_tests_Test.ok_) + ", but was: " + (Generated_acceptance_tests_Test.rule11("Strasse%")), !(EqualsTestOp.matches(Generated_acceptance_tests_Test.rule11("Strasse%"), Generated_acceptance_tests_Test.ok_)));
+    try {
+      Assert.assertTrue("Expected: " + (Generated_acceptance_tests_Test.ok_) + ", but was: " + (Generated_acceptance_tests_Test.rule11("Strasse%")), !(EqualsTestOp.matches(Generated_acceptance_tests_Test.rule11("Strasse%"), Generated_acceptance_tests_Test.ok_)));
+    } catch (Throwable failure) {
+      throw SourceNodeFailures.attach(failure, "http://127.0.0.1:63320/node?ref=r%3A4498a3f1-ffdc-46cb-b225-63bf7159e69e%28test.in.expr.os.stringvalidation%40tests%29%2F7791028896464920096");
+    }
   }
 /* 
    * The same special characters and spaces must not follow each other more than once.
@@ -525,19 +850,35 @@ public class Generated_acceptance_tests_Test {
   }
   @Test
   public void T14_item0_7791028896444974085() throws Throwable {
-    Assert.assertEquals("Expected: " + (Generated_acceptance_tests_Test.ok_) + ", but was: " + (Generated_acceptance_tests_Test.rule14("Hello")), (Object) Generated_acceptance_tests_Test.ok_, (Object) Generated_acceptance_tests_Test.rule14("Hello"));
+    try {
+      Assert.assertEquals("Expected: " + (Generated_acceptance_tests_Test.ok_) + ", but was: " + (Generated_acceptance_tests_Test.rule14("Hello")), (Object) Generated_acceptance_tests_Test.ok_, (Object) Generated_acceptance_tests_Test.rule14("Hello"));
+    } catch (Throwable failure) {
+      throw SourceNodeFailures.attach(failure, "http://127.0.0.1:63320/node?ref=r%3A4498a3f1-ffdc-46cb-b225-63bf7159e69e%28test.in.expr.os.stringvalidation%40tests%29%2F7791028896444974085");
+    }
   }
   @Test
   public void T14_item1_7791028896444974483() throws Throwable {
-    Assert.assertEquals("Expected: " + (Generated_acceptance_tests_Test.ok_) + ", but was: " + (Generated_acceptance_tests_Test.rule14("Hel!lo")), (Object) Generated_acceptance_tests_Test.ok_, (Object) Generated_acceptance_tests_Test.rule14("Hel!lo"));
+    try {
+      Assert.assertEquals("Expected: " + (Generated_acceptance_tests_Test.ok_) + ", but was: " + (Generated_acceptance_tests_Test.rule14("Hel!lo")), (Object) Generated_acceptance_tests_Test.ok_, (Object) Generated_acceptance_tests_Test.rule14("Hel!lo"));
+    } catch (Throwable failure) {
+      throw SourceNodeFailures.attach(failure, "http://127.0.0.1:63320/node?ref=r%3A4498a3f1-ffdc-46cb-b225-63bf7159e69e%28test.in.expr.os.stringvalidation%40tests%29%2F7791028896444974483");
+    }
   }
   @Test
   public void T14_item2_7791028896444975205() throws Throwable {
-    Assert.assertTrue("Expected: " + (Generated_acceptance_tests_Test.ok_) + ", but was: " + (Generated_acceptance_tests_Test.rule14("Hel!!lo")), !(EqualsTestOp.matches(Generated_acceptance_tests_Test.rule14("Hel!!lo"), Generated_acceptance_tests_Test.ok_)));
+    try {
+      Assert.assertTrue("Expected: " + (Generated_acceptance_tests_Test.ok_) + ", but was: " + (Generated_acceptance_tests_Test.rule14("Hel!!lo")), !(EqualsTestOp.matches(Generated_acceptance_tests_Test.rule14("Hel!!lo"), Generated_acceptance_tests_Test.ok_)));
+    } catch (Throwable failure) {
+      throw SourceNodeFailures.attach(failure, "http://127.0.0.1:63320/node?ref=r%3A4498a3f1-ffdc-46cb-b225-63bf7159e69e%28test.in.expr.os.stringvalidation%40tests%29%2F7791028896444975205");
+    }
   }
   @Test
   public void T14_item3_7791028896444976274() throws Throwable {
-    Assert.assertEquals("Expected: " + (Generated_acceptance_tests_Test.ok_) + ", but was: " + (Generated_acceptance_tests_Test.rule14("He.ll.lo")), (Object) Generated_acceptance_tests_Test.ok_, (Object) Generated_acceptance_tests_Test.rule14("He.ll.lo"));
+    try {
+      Assert.assertEquals("Expected: " + (Generated_acceptance_tests_Test.ok_) + ", but was: " + (Generated_acceptance_tests_Test.rule14("He.ll.lo")), (Object) Generated_acceptance_tests_Test.ok_, (Object) Generated_acceptance_tests_Test.rule14("He.ll.lo"));
+    } catch (Throwable failure) {
+      throw SourceNodeFailures.attach(failure, "http://127.0.0.1:63320/node?ref=r%3A4498a3f1-ffdc-46cb-b225-63bf7159e69e%28test.in.expr.os.stringvalidation%40tests%29%2F7791028896444976274");
+    }
   }
 /* 
    * The plus sign is only allowed on the first digit and the remaining digits must be home position (space).
@@ -549,39 +890,75 @@ public class Generated_acceptance_tests_Test {
   }
   @Test
   public void T1a_item0_5001505504945757348() throws Throwable {
-    Assert.assertEquals("Expected: " + (Generated_acceptance_tests_Test.ok_) + ", but was: " + (Generated_acceptance_tests_Test.rule1("Hello")), (Object) Generated_acceptance_tests_Test.ok_, (Object) Generated_acceptance_tests_Test.rule1("Hello"));
+    try {
+      Assert.assertEquals("Expected: " + (Generated_acceptance_tests_Test.ok_) + ", but was: " + (Generated_acceptance_tests_Test.rule1("Hello")), (Object) Generated_acceptance_tests_Test.ok_, (Object) Generated_acceptance_tests_Test.rule1("Hello"));
+    } catch (Throwable failure) {
+      throw SourceNodeFailures.attach(failure, "http://127.0.0.1:63320/node?ref=r%3A4498a3f1-ffdc-46cb-b225-63bf7159e69e%28test.in.expr.os.stringvalidation%40tests%29%2F5001505504945757348");
+    }
   }
   @Test
   public void T1a_item1_7791028896441233807() throws Throwable {
-    Assert.assertEquals("Expected: " + (Generated_acceptance_tests_Test.ok_) + ", but was: " + (Generated_acceptance_tests_Test.rule1("+Hello")), (Object) Generated_acceptance_tests_Test.ok_, (Object) Generated_acceptance_tests_Test.rule1("+Hello"));
+    try {
+      Assert.assertEquals("Expected: " + (Generated_acceptance_tests_Test.ok_) + ", but was: " + (Generated_acceptance_tests_Test.rule1("+Hello")), (Object) Generated_acceptance_tests_Test.ok_, (Object) Generated_acceptance_tests_Test.rule1("+Hello"));
+    } catch (Throwable failure) {
+      throw SourceNodeFailures.attach(failure, "http://127.0.0.1:63320/node?ref=r%3A4498a3f1-ffdc-46cb-b225-63bf7159e69e%28test.in.expr.os.stringvalidation%40tests%29%2F7791028896441233807");
+    }
   }
   @Test
   public void T1a_item2_7791028896441233881() throws Throwable {
-    Assert.assertTrue("Expected: " + (Generated_acceptance_tests_Test.ok_) + ", but was: " + (Generated_acceptance_tests_Test.rule1("Hel+lo")), !(EqualsTestOp.matches(Generated_acceptance_tests_Test.rule1("Hel+lo"), Generated_acceptance_tests_Test.ok_)));
+    try {
+      Assert.assertTrue("Expected: " + (Generated_acceptance_tests_Test.ok_) + ", but was: " + (Generated_acceptance_tests_Test.rule1("Hel+lo")), !(EqualsTestOp.matches(Generated_acceptance_tests_Test.rule1("Hel+lo"), Generated_acceptance_tests_Test.ok_)));
+    } catch (Throwable failure) {
+      throw SourceNodeFailures.attach(failure, "http://127.0.0.1:63320/node?ref=r%3A4498a3f1-ffdc-46cb-b225-63bf7159e69e%28test.in.expr.os.stringvalidation%40tests%29%2F7791028896441233881");
+    }
   }
   @Test
   public void T1b_item0_7791028896441218378() throws Throwable {
-    Assert.assertEquals("Expected: " + (Generated_acceptance_tests_Test.ok_) + ", but was: " + (Generated_acceptance_tests_Test.rule1("+")), (Object) Generated_acceptance_tests_Test.ok_, (Object) Generated_acceptance_tests_Test.rule1("+"));
+    try {
+      Assert.assertEquals("Expected: " + (Generated_acceptance_tests_Test.ok_) + ", but was: " + (Generated_acceptance_tests_Test.rule1("+")), (Object) Generated_acceptance_tests_Test.ok_, (Object) Generated_acceptance_tests_Test.rule1("+"));
+    } catch (Throwable failure) {
+      throw SourceNodeFailures.attach(failure, "http://127.0.0.1:63320/node?ref=r%3A4498a3f1-ffdc-46cb-b225-63bf7159e69e%28test.in.expr.os.stringvalidation%40tests%29%2F7791028896441218378");
+    }
   }
   @Test
   public void T1b_item1_7791028896441219070() throws Throwable {
-    Assert.assertTrue("Expected: " + (Generated_acceptance_tests_Test.ok_) + ", but was: " + (Generated_acceptance_tests_Test.rule1(" ")), !(EqualsTestOp.matches(Generated_acceptance_tests_Test.rule1(" "), Generated_acceptance_tests_Test.ok_)));
+    try {
+      Assert.assertTrue("Expected: " + (Generated_acceptance_tests_Test.ok_) + ", but was: " + (Generated_acceptance_tests_Test.rule1(" ")), !(EqualsTestOp.matches(Generated_acceptance_tests_Test.rule1(" "), Generated_acceptance_tests_Test.ok_)));
+    } catch (Throwable failure) {
+      throw SourceNodeFailures.attach(failure, "http://127.0.0.1:63320/node?ref=r%3A4498a3f1-ffdc-46cb-b225-63bf7159e69e%28test.in.expr.os.stringvalidation%40tests%29%2F7791028896441219070");
+    }
   }
   @Test
   public void T1b_item2_7791028896441219530() throws Throwable {
-    Assert.assertEquals("Expected: " + (Generated_acceptance_tests_Test.ok_) + ", but was: " + (Generated_acceptance_tests_Test.rule1("+ ")), (Object) Generated_acceptance_tests_Test.ok_, (Object) Generated_acceptance_tests_Test.rule1("+ "));
+    try {
+      Assert.assertEquals("Expected: " + (Generated_acceptance_tests_Test.ok_) + ", but was: " + (Generated_acceptance_tests_Test.rule1("+ ")), (Object) Generated_acceptance_tests_Test.ok_, (Object) Generated_acceptance_tests_Test.rule1("+ "));
+    } catch (Throwable failure) {
+      throw SourceNodeFailures.attach(failure, "http://127.0.0.1:63320/node?ref=r%3A4498a3f1-ffdc-46cb-b225-63bf7159e69e%28test.in.expr.os.stringvalidation%40tests%29%2F7791028896441219530");
+    }
   }
   @Test
   public void T1b_item3_7791028896441219953() throws Throwable {
-    Assert.assertEquals("Expected: " + (Generated_acceptance_tests_Test.ok_) + ", but was: " + (Generated_acceptance_tests_Test.rule1("+      ")), (Object) Generated_acceptance_tests_Test.ok_, (Object) Generated_acceptance_tests_Test.rule1("+      "));
+    try {
+      Assert.assertEquals("Expected: " + (Generated_acceptance_tests_Test.ok_) + ", but was: " + (Generated_acceptance_tests_Test.rule1("+      ")), (Object) Generated_acceptance_tests_Test.ok_, (Object) Generated_acceptance_tests_Test.rule1("+      "));
+    } catch (Throwable failure) {
+      throw SourceNodeFailures.attach(failure, "http://127.0.0.1:63320/node?ref=r%3A4498a3f1-ffdc-46cb-b225-63bf7159e69e%28test.in.expr.os.stringvalidation%40tests%29%2F7791028896441219953");
+    }
   }
   @Test
   public void T1b_item4_7791028896441220234() throws Throwable {
-    Assert.assertTrue("Expected: " + (Generated_acceptance_tests_Test.ok_) + ", but was: " + (Generated_acceptance_tests_Test.rule1("   +   ")), !(EqualsTestOp.matches(Generated_acceptance_tests_Test.rule1("   +   "), Generated_acceptance_tests_Test.ok_)));
+    try {
+      Assert.assertTrue("Expected: " + (Generated_acceptance_tests_Test.ok_) + ", but was: " + (Generated_acceptance_tests_Test.rule1("   +   ")), !(EqualsTestOp.matches(Generated_acceptance_tests_Test.rule1("   +   "), Generated_acceptance_tests_Test.ok_)));
+    } catch (Throwable failure) {
+      throw SourceNodeFailures.attach(failure, "http://127.0.0.1:63320/node?ref=r%3A4498a3f1-ffdc-46cb-b225-63bf7159e69e%28test.in.expr.os.stringvalidation%40tests%29%2F7791028896441220234");
+    }
   }
   @Test
   public void T1b_item5_7791028896441220671() throws Throwable {
-    Assert.assertTrue("Expected: " + (Generated_acceptance_tests_Test.ok_) + ", but was: " + (Generated_acceptance_tests_Test.rule1("     ")), !(EqualsTestOp.matches(Generated_acceptance_tests_Test.rule1("     "), Generated_acceptance_tests_Test.ok_)));
+    try {
+      Assert.assertTrue("Expected: " + (Generated_acceptance_tests_Test.ok_) + ", but was: " + (Generated_acceptance_tests_Test.rule1("     ")), !(EqualsTestOp.matches(Generated_acceptance_tests_Test.rule1("     "), Generated_acceptance_tests_Test.ok_)));
+    } catch (Throwable failure) {
+      throw SourceNodeFailures.attach(failure, "http://127.0.0.1:63320/node?ref=r%3A4498a3f1-ffdc-46cb-b225-63bf7159e69e%28test.in.expr.os.stringvalidation%40tests%29%2F7791028896441220671");
+    }
   }
 /* 
    * The same special characters and spaces must not follow each other more than once.
@@ -593,27 +970,51 @@ public class Generated_acceptance_tests_Test {
   }
   @Test
   public void T2_item0_7791028896441412489() throws Throwable {
-    Assert.assertEquals("Expected: " + (Generated_acceptance_tests_Test.ok_) + ", but was: " + (Empty.<String>vector().plusAll(Generated_acceptance_tests_Test.rule2("#"))), (Object) Generated_acceptance_tests_Test.ok_, (Object) Empty.<String>vector().plusAll(Generated_acceptance_tests_Test.rule2("#")));
+    try {
+      Assert.assertEquals("Expected: " + (Generated_acceptance_tests_Test.ok_) + ", but was: " + (Empty.<String>vector().plusAll(Generated_acceptance_tests_Test.rule2("#"))), (Object) Generated_acceptance_tests_Test.ok_, (Object) Empty.<String>vector().plusAll(Generated_acceptance_tests_Test.rule2("#")));
+    } catch (Throwable failure) {
+      throw SourceNodeFailures.attach(failure, "http://127.0.0.1:63320/node?ref=r%3A4498a3f1-ffdc-46cb-b225-63bf7159e69e%28test.in.expr.os.stringvalidation%40tests%29%2F7791028896441412489");
+    }
   }
   @Test
   public void T2_item1_7791028896441807084() throws Throwable {
-    Assert.assertEquals("Expected: " + (true) + ", but was: " + (ListSequence.fromList(Generated_acceptance_tests_Test.rule2("a")).isEmpty()), (Object) true, (Object) ListSequence.fromList(Generated_acceptance_tests_Test.rule2("a")).isEmpty());
+    try {
+      Assert.assertEquals("Expected: " + (true) + ", but was: " + (ListSequence.fromList(Generated_acceptance_tests_Test.rule2("a")).isEmpty()), (Object) true, (Object) ListSequence.fromList(Generated_acceptance_tests_Test.rule2("a")).isEmpty());
+    } catch (Throwable failure) {
+      throw SourceNodeFailures.attach(failure, "http://127.0.0.1:63320/node?ref=r%3A4498a3f1-ffdc-46cb-b225-63bf7159e69e%28test.in.expr.os.stringvalidation%40tests%29%2F7791028896441807084");
+    }
   }
   @Test
   public void T2_item2_7791028896441807313() throws Throwable {
-    Assert.assertEquals("Expected: " + (Generated_acceptance_tests_Test.ok_) + ", but was: " + (Empty.<String>vector().plusAll(Generated_acceptance_tests_Test.rule2("aa"))), (Object) Generated_acceptance_tests_Test.ok_, (Object) Empty.<String>vector().plusAll(Generated_acceptance_tests_Test.rule2("aa")));
+    try {
+      Assert.assertEquals("Expected: " + (Generated_acceptance_tests_Test.ok_) + ", but was: " + (Empty.<String>vector().plusAll(Generated_acceptance_tests_Test.rule2("aa"))), (Object) Generated_acceptance_tests_Test.ok_, (Object) Empty.<String>vector().plusAll(Generated_acceptance_tests_Test.rule2("aa")));
+    } catch (Throwable failure) {
+      throw SourceNodeFailures.attach(failure, "http://127.0.0.1:63320/node?ref=r%3A4498a3f1-ffdc-46cb-b225-63bf7159e69e%28test.in.expr.os.stringvalidation%40tests%29%2F7791028896441807313");
+    }
   }
   @Test
   public void T2_item3_7791028896441586296() throws Throwable {
-    Assert.assertEquals("Expected: " + (false) + ", but was: " + (ListSequence.fromList(Generated_acceptance_tests_Test.rule2("!!")).isEmpty()), (Object) false, (Object) ListSequence.fromList(Generated_acceptance_tests_Test.rule2("!!")).isEmpty());
+    try {
+      Assert.assertEquals("Expected: " + (false) + ", but was: " + (ListSequence.fromList(Generated_acceptance_tests_Test.rule2("!!")).isEmpty()), (Object) false, (Object) ListSequence.fromList(Generated_acceptance_tests_Test.rule2("!!")).isEmpty());
+    } catch (Throwable failure) {
+      throw SourceNodeFailures.attach(failure, "http://127.0.0.1:63320/node?ref=r%3A4498a3f1-ffdc-46cb-b225-63bf7159e69e%28test.in.expr.os.stringvalidation%40tests%29%2F7791028896441586296");
+    }
   }
   @Test
   public void T2_item4_7791028896441807563() throws Throwable {
-    Assert.assertEquals("Expected: " + (Generated_acceptance_tests_Test.ok_) + ", but was: " + (Empty.<String>vector().plusAll(Generated_acceptance_tests_Test.rule2("xxx!"))), (Object) Generated_acceptance_tests_Test.ok_, (Object) Empty.<String>vector().plusAll(Generated_acceptance_tests_Test.rule2("xxx!")));
+    try {
+      Assert.assertEquals("Expected: " + (Generated_acceptance_tests_Test.ok_) + ", but was: " + (Empty.<String>vector().plusAll(Generated_acceptance_tests_Test.rule2("xxx!"))), (Object) Generated_acceptance_tests_Test.ok_, (Object) Empty.<String>vector().plusAll(Generated_acceptance_tests_Test.rule2("xxx!")));
+    } catch (Throwable failure) {
+      throw SourceNodeFailures.attach(failure, "http://127.0.0.1:63320/node?ref=r%3A4498a3f1-ffdc-46cb-b225-63bf7159e69e%28test.in.expr.os.stringvalidation%40tests%29%2F7791028896441807563");
+    }
   }
   @Test
   public void T2_item5_7791028896441808037() throws Throwable {
-    Assert.assertTrue("Expected: " + (Generated_acceptance_tests_Test.ok_) + ", but was: " + (Empty.<String>vector().plusAll(Generated_acceptance_tests_Test.rule2("xxx&&&x"))), !(EqualsTestOp.matches(Empty.<String>vector().plusAll(Generated_acceptance_tests_Test.rule2("xxx&&&x")), Generated_acceptance_tests_Test.ok_)));
+    try {
+      Assert.assertTrue("Expected: " + (Generated_acceptance_tests_Test.ok_) + ", but was: " + (Empty.<String>vector().plusAll(Generated_acceptance_tests_Test.rule2("xxx&&&x"))), !(EqualsTestOp.matches(Empty.<String>vector().plusAll(Generated_acceptance_tests_Test.rule2("xxx&&&x")), Generated_acceptance_tests_Test.ok_)));
+    } catch (Throwable failure) {
+      throw SourceNodeFailures.attach(failure, "http://127.0.0.1:63320/node?ref=r%3A4498a3f1-ffdc-46cb-b225-63bf7159e69e%28test.in.expr.os.stringvalidation%40tests%29%2F7791028896441808037");
+    }
   }
 /* 
    * checking for the last position didn't work - fixed.
@@ -625,11 +1026,19 @@ public class Generated_acceptance_tests_Test {
   }
   @Test
   public void T_vorname_item0_5216254839083558561() throws Throwable {
-    Assert.assertTrue("Expected: " + (Generated_acceptance_tests_Test.ok_) + ", but was: " + (Empty.<String>vector().plusAll(Generated_acceptance_tests_Test.vorname("a#d"))), !(EqualsTestOp.matches(Empty.<String>vector().plusAll(Generated_acceptance_tests_Test.vorname("a#d")), Generated_acceptance_tests_Test.ok_)));
+    try {
+      Assert.assertTrue("Expected: " + (Generated_acceptance_tests_Test.ok_) + ", but was: " + (Empty.<String>vector().plusAll(Generated_acceptance_tests_Test.vorname("a#d"))), !(EqualsTestOp.matches(Empty.<String>vector().plusAll(Generated_acceptance_tests_Test.vorname("a#d")), Generated_acceptance_tests_Test.ok_)));
+    } catch (Throwable failure) {
+      throw SourceNodeFailures.attach(failure, "http://127.0.0.1:63320/node?ref=r%3A4498a3f1-ffdc-46cb-b225-63bf7159e69e%28test.in.expr.os.stringvalidation%40tests%29%2F5216254839083558561");
+    }
   }
   @Test
   public void T_vorname_item1_5216254839083579879() throws Throwable {
-    Assert.assertTrue("Expected: " + (Generated_acceptance_tests_Test.ok_) + ", but was: " + (Empty.<String>vector().plusAll(Generated_acceptance_tests_Test.vorname("ad#"))), !(EqualsTestOp.matches(Empty.<String>vector().plusAll(Generated_acceptance_tests_Test.vorname("ad#")), Generated_acceptance_tests_Test.ok_)));
+    try {
+      Assert.assertTrue("Expected: " + (Generated_acceptance_tests_Test.ok_) + ", but was: " + (Empty.<String>vector().plusAll(Generated_acceptance_tests_Test.vorname("ad#"))), !(EqualsTestOp.matches(Empty.<String>vector().plusAll(Generated_acceptance_tests_Test.vorname("ad#")), Generated_acceptance_tests_Test.ok_)));
+    } catch (Throwable failure) {
+      throw SourceNodeFailures.attach(failure, "http://127.0.0.1:63320/node?ref=r%3A4498a3f1-ffdc-46cb-b225-63bf7159e69e%28test.in.expr.os.stringvalidation%40tests%29%2F5216254839083579879");
+    }
   }
   public static List<String> dreiSindIllegal(String s) {
     List<String> res = new XExecutor(new XValidateStringExpression(s, new LL<XAbstractValidationClause>(new XPositionBasedValidationClause(new XPositionIndicatorFirst(), new XCannotBeCheckKind(), new XAllSameCharMatcher(new XSequenceMatch(new XLetterMatch(), 3)))).list)).run();
@@ -638,23 +1047,43 @@ public class Generated_acceptance_tests_Test {
   }
   @Test
   public void T_dreiSindIllegal_item0_5216254839083972400() throws Throwable {
-    Assert.assertEquals("Expected: " + (Generated_acceptance_tests_Test.ok_) + ", but was: " + (Empty.<String>vector().plusAll(Generated_acceptance_tests_Test.dreiSindIllegal("aa"))), (Object) Generated_acceptance_tests_Test.ok_, (Object) Empty.<String>vector().plusAll(Generated_acceptance_tests_Test.dreiSindIllegal("aa")));
+    try {
+      Assert.assertEquals("Expected: " + (Generated_acceptance_tests_Test.ok_) + ", but was: " + (Empty.<String>vector().plusAll(Generated_acceptance_tests_Test.dreiSindIllegal("aa"))), (Object) Generated_acceptance_tests_Test.ok_, (Object) Empty.<String>vector().plusAll(Generated_acceptance_tests_Test.dreiSindIllegal("aa")));
+    } catch (Throwable failure) {
+      throw SourceNodeFailures.attach(failure, "http://127.0.0.1:63320/node?ref=r%3A4498a3f1-ffdc-46cb-b225-63bf7159e69e%28test.in.expr.os.stringvalidation%40tests%29%2F5216254839083972400");
+    }
   }
   @Test
   public void T_dreiSindIllegal_item1_5216254839085031595() throws Throwable {
-    Assert.assertEquals("Expected: " + (Generated_acceptance_tests_Test.ok_) + ", but was: " + (Empty.<String>vector().plusAll(Generated_acceptance_tests_Test.dreiSindIllegal("a"))), (Object) Generated_acceptance_tests_Test.ok_, (Object) Empty.<String>vector().plusAll(Generated_acceptance_tests_Test.dreiSindIllegal("a")));
+    try {
+      Assert.assertEquals("Expected: " + (Generated_acceptance_tests_Test.ok_) + ", but was: " + (Empty.<String>vector().plusAll(Generated_acceptance_tests_Test.dreiSindIllegal("a"))), (Object) Generated_acceptance_tests_Test.ok_, (Object) Empty.<String>vector().plusAll(Generated_acceptance_tests_Test.dreiSindIllegal("a")));
+    } catch (Throwable failure) {
+      throw SourceNodeFailures.attach(failure, "http://127.0.0.1:63320/node?ref=r%3A4498a3f1-ffdc-46cb-b225-63bf7159e69e%28test.in.expr.os.stringvalidation%40tests%29%2F5216254839085031595");
+    }
   }
   @Test
   public void T_dreiSindIllegal_item2_5216254839084670107() throws Throwable {
-    Assert.assertEquals("Expected: " + (Generated_acceptance_tests_Test.ok_) + ", but was: " + (Empty.<String>vector().plusAll(Generated_acceptance_tests_Test.dreiSindIllegal("abcdefg"))), (Object) Generated_acceptance_tests_Test.ok_, (Object) Empty.<String>vector().plusAll(Generated_acceptance_tests_Test.dreiSindIllegal("abcdefg")));
+    try {
+      Assert.assertEquals("Expected: " + (Generated_acceptance_tests_Test.ok_) + ", but was: " + (Empty.<String>vector().plusAll(Generated_acceptance_tests_Test.dreiSindIllegal("abcdefg"))), (Object) Generated_acceptance_tests_Test.ok_, (Object) Empty.<String>vector().plusAll(Generated_acceptance_tests_Test.dreiSindIllegal("abcdefg")));
+    } catch (Throwable failure) {
+      throw SourceNodeFailures.attach(failure, "http://127.0.0.1:63320/node?ref=r%3A4498a3f1-ffdc-46cb-b225-63bf7159e69e%28test.in.expr.os.stringvalidation%40tests%29%2F5216254839084670107");
+    }
   }
   @Test
   public void T_dreiSindIllegal_item3_5216254839083981869() throws Throwable {
-    Assert.assertEquals("Expected: " + (Generated_acceptance_tests_Test.ok_) + ", but was: " + (Empty.<String>vector().plusAll(Generated_acceptance_tests_Test.dreiSindIllegal("aabcdefg"))), (Object) Generated_acceptance_tests_Test.ok_, (Object) Empty.<String>vector().plusAll(Generated_acceptance_tests_Test.dreiSindIllegal("aabcdefg")));
+    try {
+      Assert.assertEquals("Expected: " + (Generated_acceptance_tests_Test.ok_) + ", but was: " + (Empty.<String>vector().plusAll(Generated_acceptance_tests_Test.dreiSindIllegal("aabcdefg"))), (Object) Generated_acceptance_tests_Test.ok_, (Object) Empty.<String>vector().plusAll(Generated_acceptance_tests_Test.dreiSindIllegal("aabcdefg")));
+    } catch (Throwable failure) {
+      throw SourceNodeFailures.attach(failure, "http://127.0.0.1:63320/node?ref=r%3A4498a3f1-ffdc-46cb-b225-63bf7159e69e%28test.in.expr.os.stringvalidation%40tests%29%2F5216254839083981869");
+    }
   }
   @Test
   public void T_dreiSindIllegal_item4_5216254839083987075() throws Throwable {
-    Assert.assertTrue("Expected: " + (Generated_acceptance_tests_Test.ok_) + ", but was: " + (Empty.<String>vector().plusAll(Generated_acceptance_tests_Test.dreiSindIllegal("aaabcdefg"))), !(EqualsTestOp.matches(Empty.<String>vector().plusAll(Generated_acceptance_tests_Test.dreiSindIllegal("aaabcdefg")), Generated_acceptance_tests_Test.ok_)));
+    try {
+      Assert.assertTrue("Expected: " + (Generated_acceptance_tests_Test.ok_) + ", but was: " + (Empty.<String>vector().plusAll(Generated_acceptance_tests_Test.dreiSindIllegal("aaabcdefg"))), !(EqualsTestOp.matches(Empty.<String>vector().plusAll(Generated_acceptance_tests_Test.dreiSindIllegal("aaabcdefg")), Generated_acceptance_tests_Test.ok_)));
+    } catch (Throwable failure) {
+      throw SourceNodeFailures.attach(failure, "http://127.0.0.1:63320/node?ref=r%3A4498a3f1-ffdc-46cb-b225-63bf7159e69e%28test.in.expr.os.stringvalidation%40tests%29%2F5216254839083987075");
+    }
   }
   public static Boolean works(String s) {
     Boolean res = ListSequence.fromList(new XExecutor(new XValidateStringExpression(s, new LL<XAbstractValidationClause>(new XOccurenceBasedValidationClause(new XIfExistsOccurenceConstraint(), new XLetterMatch(), new LL<XAbstractOccurenceBasedCheck>(new XCannotRepeatCheck(new XMustBeCheckKind())).list)).list)).run()).isEmpty();
@@ -673,115 +1102,227 @@ public class Generated_acceptance_tests_Test {
   }
   @Test
   public void testBackslash_item0_719289292897828025() throws Throwable {
-    Assert.assertEquals("Expected: " + (true) + ", but was: " + (Generated_acceptance_tests_Test.backslashNotAtBeginning("hello")), (Object) true, (Object) Generated_acceptance_tests_Test.backslashNotAtBeginning("hello"));
+    try {
+      Assert.assertEquals("Expected: " + (true) + ", but was: " + (Generated_acceptance_tests_Test.backslashNotAtBeginning("hello")), (Object) true, (Object) Generated_acceptance_tests_Test.backslashNotAtBeginning("hello"));
+    } catch (Throwable failure) {
+      throw SourceNodeFailures.attach(failure, "http://127.0.0.1:63320/node?ref=r%3A4498a3f1-ffdc-46cb-b225-63bf7159e69e%28test.in.expr.os.stringvalidation%40tests%29%2F719289292897828025");
+    }
   }
   @Test
   public void testBackslash_item1_719289292897846457() throws Throwable {
-    Assert.assertEquals("Expected: " + (false) + ", but was: " + (Generated_acceptance_tests_Test.backslashNotAtBeginning("\\hello")), (Object) false, (Object) Generated_acceptance_tests_Test.backslashNotAtBeginning("\\hello"));
+    try {
+      Assert.assertEquals("Expected: " + (false) + ", but was: " + (Generated_acceptance_tests_Test.backslashNotAtBeginning("\\hello")), (Object) false, (Object) Generated_acceptance_tests_Test.backslashNotAtBeginning("\\hello"));
+    } catch (Throwable failure) {
+      throw SourceNodeFailures.attach(failure, "http://127.0.0.1:63320/node?ref=r%3A4498a3f1-ffdc-46cb-b225-63bf7159e69e%28test.in.expr.os.stringvalidation%40tests%29%2F719289292897846457");
+    }
   }
   @Test
   public void moreThingsThatFail_item0_7933534378421815597() throws Throwable {
-    Assert.assertTrue("Expected: " + (Generated_acceptance_tests_Test.ok_) + ", but was: " + (ListSequence.fromList(new XExecutor(new XValidateStringExpression("", new LL<XAbstractValidationClause>(new XPositionBasedValidationClause(new XPositionIndicatorFirst(), new XMustBeCheckKind(), new XOneOfMatch(new LL<XAbstractMatch>(new XLetterMatch(), new XDigitMatch(), new XSpecificSequenceElementaryMatch("'"), new XSpecificSequenceElementaryMatch("\"")).list))).list)).run()).isEmpty()), !(EqualsTestOp.matches(ListSequence.fromList(new XExecutor(new XValidateStringExpression("", new LL<XAbstractValidationClause>(new XPositionBasedValidationClause(new XPositionIndicatorFirst(), new XMustBeCheckKind(), new XOneOfMatch(new LL<XAbstractMatch>(new XLetterMatch(), new XDigitMatch(), new XSpecificSequenceElementaryMatch("'"), new XSpecificSequenceElementaryMatch("\"")).list))).list)).run()).isEmpty(), Generated_acceptance_tests_Test.ok_)));
+    try {
+      Assert.assertTrue("Expected: " + (Generated_acceptance_tests_Test.ok_) + ", but was: " + (ListSequence.fromList(new XExecutor(new XValidateStringExpression("", new LL<XAbstractValidationClause>(new XPositionBasedValidationClause(new XPositionIndicatorFirst(), new XMustBeCheckKind(), new XOneOfMatch(new LL<XAbstractMatch>(new XLetterMatch(), new XDigitMatch(), new XSpecificSequenceElementaryMatch("'"), new XSpecificSequenceElementaryMatch("\"")).list))).list)).run()).isEmpty()), !(EqualsTestOp.matches(ListSequence.fromList(new XExecutor(new XValidateStringExpression("", new LL<XAbstractValidationClause>(new XPositionBasedValidationClause(new XPositionIndicatorFirst(), new XMustBeCheckKind(), new XOneOfMatch(new LL<XAbstractMatch>(new XLetterMatch(), new XDigitMatch(), new XSpecificSequenceElementaryMatch("'"), new XSpecificSequenceElementaryMatch("\"")).list))).list)).run()).isEmpty(), Generated_acceptance_tests_Test.ok_)));
+    } catch (Throwable failure) {
+      throw SourceNodeFailures.attach(failure, "http://127.0.0.1:63320/node?ref=r%3A4498a3f1-ffdc-46cb-b225-63bf7159e69e%28test.in.expr.os.stringvalidation%40tests%29%2F7933534378421815597");
+    }
   }
   @Test
   public void moreThingsThatFail_item1_7933534378422675069() throws Throwable {
-    Assert.assertTrue("Expected: " + (Generated_acceptance_tests_Test.ok_) + ", but was: " + (ListSequence.fromList(new XExecutor(new XValidateStringExpression("", new LL<XAbstractValidationClause>(new XPositionBasedValidationClause(new XPositionIndicatorLast(), new XMustBeCheckKind(), new XOneOfMatch(new LL<XAbstractMatch>(new XLetterMatch(), new XDigitMatch(), new XSpecificSequenceElementaryMatch("'"), new XSpecificSequenceElementaryMatch(","), new XSpecificSequenceElementaryMatch("."), new XSpecificSequenceElementaryMatch("\"")).list))).list)).run()).isEmpty()), !(EqualsTestOp.matches(ListSequence.fromList(new XExecutor(new XValidateStringExpression("", new LL<XAbstractValidationClause>(new XPositionBasedValidationClause(new XPositionIndicatorLast(), new XMustBeCheckKind(), new XOneOfMatch(new LL<XAbstractMatch>(new XLetterMatch(), new XDigitMatch(), new XSpecificSequenceElementaryMatch("'"), new XSpecificSequenceElementaryMatch(","), new XSpecificSequenceElementaryMatch("."), new XSpecificSequenceElementaryMatch("\"")).list))).list)).run()).isEmpty(), Generated_acceptance_tests_Test.ok_)));
+    try {
+      Assert.assertTrue("Expected: " + (Generated_acceptance_tests_Test.ok_) + ", but was: " + (ListSequence.fromList(new XExecutor(new XValidateStringExpression("", new LL<XAbstractValidationClause>(new XPositionBasedValidationClause(new XPositionIndicatorLast(), new XMustBeCheckKind(), new XOneOfMatch(new LL<XAbstractMatch>(new XLetterMatch(), new XDigitMatch(), new XSpecificSequenceElementaryMatch("'"), new XSpecificSequenceElementaryMatch(","), new XSpecificSequenceElementaryMatch("."), new XSpecificSequenceElementaryMatch("\"")).list))).list)).run()).isEmpty()), !(EqualsTestOp.matches(ListSequence.fromList(new XExecutor(new XValidateStringExpression("", new LL<XAbstractValidationClause>(new XPositionBasedValidationClause(new XPositionIndicatorLast(), new XMustBeCheckKind(), new XOneOfMatch(new LL<XAbstractMatch>(new XLetterMatch(), new XDigitMatch(), new XSpecificSequenceElementaryMatch("'"), new XSpecificSequenceElementaryMatch(","), new XSpecificSequenceElementaryMatch("."), new XSpecificSequenceElementaryMatch("\"")).list))).list)).run()).isEmpty(), Generated_acceptance_tests_Test.ok_)));
+    } catch (Throwable failure) {
+      throw SourceNodeFailures.attach(failure, "http://127.0.0.1:63320/node?ref=r%3A4498a3f1-ffdc-46cb-b225-63bf7159e69e%28test.in.expr.os.stringvalidation%40tests%29%2F7933534378422675069");
+    }
   }
   @Test
   public void moreThingsThatFail_item2_7933534378422992295() throws Throwable {
-    Assert.assertTrue("Expected: " + (Generated_acceptance_tests_Test.ok_) + ", but was: " + (ListSequence.fromList(new XExecutor(new XValidateStringExpression("", new LL<XAbstractValidationClause>(new XPositionBasedValidationClause(new XPositionIndicatorFirst(), new XMustBeCheckKind(), new XOneOfMatch(new LL<XAbstractMatch>(new XLetterMatch(), new XDigitMatch()).list)), new XPositionBasedValidationClause(new XPositionIndicatorLast(), new XMustBeCheckKind(), new XOneOfMatch(new LL<XAbstractMatch>(new XLetterMatch(), new XDigitMatch()).list))).list)).run()).isEmpty()), !(EqualsTestOp.matches(ListSequence.fromList(new XExecutor(new XValidateStringExpression("", new LL<XAbstractValidationClause>(new XPositionBasedValidationClause(new XPositionIndicatorFirst(), new XMustBeCheckKind(), new XOneOfMatch(new LL<XAbstractMatch>(new XLetterMatch(), new XDigitMatch()).list)), new XPositionBasedValidationClause(new XPositionIndicatorLast(), new XMustBeCheckKind(), new XOneOfMatch(new LL<XAbstractMatch>(new XLetterMatch(), new XDigitMatch()).list))).list)).run()).isEmpty(), Generated_acceptance_tests_Test.ok_)));
+    try {
+      Assert.assertTrue("Expected: " + (Generated_acceptance_tests_Test.ok_) + ", but was: " + (ListSequence.fromList(new XExecutor(new XValidateStringExpression("", new LL<XAbstractValidationClause>(new XPositionBasedValidationClause(new XPositionIndicatorFirst(), new XMustBeCheckKind(), new XOneOfMatch(new LL<XAbstractMatch>(new XLetterMatch(), new XDigitMatch()).list)), new XPositionBasedValidationClause(new XPositionIndicatorLast(), new XMustBeCheckKind(), new XOneOfMatch(new LL<XAbstractMatch>(new XLetterMatch(), new XDigitMatch()).list))).list)).run()).isEmpty()), !(EqualsTestOp.matches(ListSequence.fromList(new XExecutor(new XValidateStringExpression("", new LL<XAbstractValidationClause>(new XPositionBasedValidationClause(new XPositionIndicatorFirst(), new XMustBeCheckKind(), new XOneOfMatch(new LL<XAbstractMatch>(new XLetterMatch(), new XDigitMatch()).list)), new XPositionBasedValidationClause(new XPositionIndicatorLast(), new XMustBeCheckKind(), new XOneOfMatch(new LL<XAbstractMatch>(new XLetterMatch(), new XDigitMatch()).list))).list)).run()).isEmpty(), Generated_acceptance_tests_Test.ok_)));
+    } catch (Throwable failure) {
+      throw SourceNodeFailures.attach(failure, "http://127.0.0.1:63320/node?ref=r%3A4498a3f1-ffdc-46cb-b225-63bf7159e69e%28test.in.expr.os.stringvalidation%40tests%29%2F7933534378422992295");
+    }
   }
   @Test
   public void moreThingsThatFail_item3_7933534378422997214() throws Throwable {
-    Assert.assertTrue("Expected: " + (Generated_acceptance_tests_Test.ok_) + ", but was: " + (ListSequence.fromList(new XExecutor(new XValidateStringExpression("", new LL<XAbstractValidationClause>(new XPositionBasedValidationClause(new XPositionIndicatorFirst(), new XMustBeCheckKind(), new XSpecificSequenceElementaryMatch("ß")), new XPositionBasedValidationClause(new XPositionIndicatorLast(), new XMustBeCheckKind(), new XOneOfMatch(new LL<XAbstractMatch>(new XLetterMatch(), new XSpecificSequenceElementaryMatch("'"), new XSpecificSequenceElementaryMatch(",")).list))).list)).run()).isEmpty()), !(EqualsTestOp.matches(ListSequence.fromList(new XExecutor(new XValidateStringExpression("", new LL<XAbstractValidationClause>(new XPositionBasedValidationClause(new XPositionIndicatorFirst(), new XMustBeCheckKind(), new XSpecificSequenceElementaryMatch("ß")), new XPositionBasedValidationClause(new XPositionIndicatorLast(), new XMustBeCheckKind(), new XOneOfMatch(new LL<XAbstractMatch>(new XLetterMatch(), new XSpecificSequenceElementaryMatch("'"), new XSpecificSequenceElementaryMatch(",")).list))).list)).run()).isEmpty(), Generated_acceptance_tests_Test.ok_)));
+    try {
+      Assert.assertTrue("Expected: " + (Generated_acceptance_tests_Test.ok_) + ", but was: " + (ListSequence.fromList(new XExecutor(new XValidateStringExpression("", new LL<XAbstractValidationClause>(new XPositionBasedValidationClause(new XPositionIndicatorFirst(), new XMustBeCheckKind(), new XSpecificSequenceElementaryMatch("ß")), new XPositionBasedValidationClause(new XPositionIndicatorLast(), new XMustBeCheckKind(), new XOneOfMatch(new LL<XAbstractMatch>(new XLetterMatch(), new XSpecificSequenceElementaryMatch("'"), new XSpecificSequenceElementaryMatch(",")).list))).list)).run()).isEmpty()), !(EqualsTestOp.matches(ListSequence.fromList(new XExecutor(new XValidateStringExpression("", new LL<XAbstractValidationClause>(new XPositionBasedValidationClause(new XPositionIndicatorFirst(), new XMustBeCheckKind(), new XSpecificSequenceElementaryMatch("ß")), new XPositionBasedValidationClause(new XPositionIndicatorLast(), new XMustBeCheckKind(), new XOneOfMatch(new LL<XAbstractMatch>(new XLetterMatch(), new XSpecificSequenceElementaryMatch("'"), new XSpecificSequenceElementaryMatch(",")).list))).list)).run()).isEmpty(), Generated_acceptance_tests_Test.ok_)));
+    } catch (Throwable failure) {
+      throw SourceNodeFailures.attach(failure, "http://127.0.0.1:63320/node?ref=r%3A4498a3f1-ffdc-46cb-b225-63bf7159e69e%28test.in.expr.os.stringvalidation%40tests%29%2F7933534378422997214");
+    }
   }
   @Test
   public void moreThingsThatFail_item4_7933534378423004391() throws Throwable {
-    Assert.assertTrue("Expected: " + (Generated_acceptance_tests_Test.ok_) + ", but was: " + (ListSequence.fromList(new XExecutor(new XValidateStringExpression("", new LL<XAbstractValidationClause>(new XPositionBasedValidationClause(new XPositionIndicatorLast(), new XMustBeCheckKind(), new XOneOfMatch(new LL<XAbstractMatch>(new XLetterMatch(), new XSpecificSequenceElementaryMatch(")"), new XSpecificSequenceElementaryMatch(".")).list))).list)).run()).isEmpty()), !(EqualsTestOp.matches(ListSequence.fromList(new XExecutor(new XValidateStringExpression("", new LL<XAbstractValidationClause>(new XPositionBasedValidationClause(new XPositionIndicatorLast(), new XMustBeCheckKind(), new XOneOfMatch(new LL<XAbstractMatch>(new XLetterMatch(), new XSpecificSequenceElementaryMatch(")"), new XSpecificSequenceElementaryMatch(".")).list))).list)).run()).isEmpty(), Generated_acceptance_tests_Test.ok_)));
+    try {
+      Assert.assertTrue("Expected: " + (Generated_acceptance_tests_Test.ok_) + ", but was: " + (ListSequence.fromList(new XExecutor(new XValidateStringExpression("", new LL<XAbstractValidationClause>(new XPositionBasedValidationClause(new XPositionIndicatorLast(), new XMustBeCheckKind(), new XOneOfMatch(new LL<XAbstractMatch>(new XLetterMatch(), new XSpecificSequenceElementaryMatch(")"), new XSpecificSequenceElementaryMatch(".")).list))).list)).run()).isEmpty()), !(EqualsTestOp.matches(ListSequence.fromList(new XExecutor(new XValidateStringExpression("", new LL<XAbstractValidationClause>(new XPositionBasedValidationClause(new XPositionIndicatorLast(), new XMustBeCheckKind(), new XOneOfMatch(new LL<XAbstractMatch>(new XLetterMatch(), new XSpecificSequenceElementaryMatch(")"), new XSpecificSequenceElementaryMatch(".")).list))).list)).run()).isEmpty(), Generated_acceptance_tests_Test.ok_)));
+    } catch (Throwable failure) {
+      throw SourceNodeFailures.attach(failure, "http://127.0.0.1:63320/node?ref=r%3A4498a3f1-ffdc-46cb-b225-63bf7159e69e%28test.in.expr.os.stringvalidation%40tests%29%2F7933534378423004391");
+    }
   }
   @Test
   public void predecessorSuccessor_item0_4809115475673806333() throws Throwable {
-    Assert.assertEquals("Expected: " + (true) + ", but was: " + (ListSequence.fromList(new XExecutor(new XValidateStringExpression("12345", new LL<XAbstractValidationClause>(new XOccurenceBasedValidationClause(new XIfExistsOccurenceConstraint(), new XSpecificSequenceElementaryMatch("3"), new LL<XAbstractOccurenceBasedCheck>(new XPredecessorCheck(new XCannotBeCheckKind(), new XSpecificSequenceElementaryMatch("1"))).list)).list)).run()).isEmpty()), (Object) true, (Object) ListSequence.fromList(new XExecutor(new XValidateStringExpression("12345", new LL<XAbstractValidationClause>(new XOccurenceBasedValidationClause(new XIfExistsOccurenceConstraint(), new XSpecificSequenceElementaryMatch("3"), new LL<XAbstractOccurenceBasedCheck>(new XPredecessorCheck(new XCannotBeCheckKind(), new XSpecificSequenceElementaryMatch("1"))).list)).list)).run()).isEmpty());
+    try {
+      Assert.assertEquals("Expected: " + (true) + ", but was: " + (ListSequence.fromList(new XExecutor(new XValidateStringExpression("12345", new LL<XAbstractValidationClause>(new XOccurenceBasedValidationClause(new XIfExistsOccurenceConstraint(), new XSpecificSequenceElementaryMatch("3"), new LL<XAbstractOccurenceBasedCheck>(new XPredecessorCheck(new XCannotBeCheckKind(), new XSpecificSequenceElementaryMatch("1"))).list)).list)).run()).isEmpty()), (Object) true, (Object) ListSequence.fromList(new XExecutor(new XValidateStringExpression("12345", new LL<XAbstractValidationClause>(new XOccurenceBasedValidationClause(new XIfExistsOccurenceConstraint(), new XSpecificSequenceElementaryMatch("3"), new LL<XAbstractOccurenceBasedCheck>(new XPredecessorCheck(new XCannotBeCheckKind(), new XSpecificSequenceElementaryMatch("1"))).list)).list)).run()).isEmpty());
+    } catch (Throwable failure) {
+      throw SourceNodeFailures.attach(failure, "http://127.0.0.1:63320/node?ref=r%3A4498a3f1-ffdc-46cb-b225-63bf7159e69e%28test.in.expr.os.stringvalidation%40tests%29%2F4809115475673806333");
+    }
   }
   @Test
   public void predecessorSuccessor_item1_4809115475673807834() throws Throwable {
-    Assert.assertEquals("Expected: " + (true) + ", but was: " + (ListSequence.fromList(new XExecutor(new XValidateStringExpression("12345", new LL<XAbstractValidationClause>(new XOccurenceBasedValidationClause(new XIfExistsOccurenceConstraint(), new XSpecificSequenceElementaryMatch("3"), new LL<XAbstractOccurenceBasedCheck>(new XSuccessorCheck(new XCannotBeCheckKind(), new XSpecificSequenceElementaryMatch("5"))).list)).list)).run()).isEmpty()), (Object) true, (Object) ListSequence.fromList(new XExecutor(new XValidateStringExpression("12345", new LL<XAbstractValidationClause>(new XOccurenceBasedValidationClause(new XIfExistsOccurenceConstraint(), new XSpecificSequenceElementaryMatch("3"), new LL<XAbstractOccurenceBasedCheck>(new XSuccessorCheck(new XCannotBeCheckKind(), new XSpecificSequenceElementaryMatch("5"))).list)).list)).run()).isEmpty());
+    try {
+      Assert.assertEquals("Expected: " + (true) + ", but was: " + (ListSequence.fromList(new XExecutor(new XValidateStringExpression("12345", new LL<XAbstractValidationClause>(new XOccurenceBasedValidationClause(new XIfExistsOccurenceConstraint(), new XSpecificSequenceElementaryMatch("3"), new LL<XAbstractOccurenceBasedCheck>(new XSuccessorCheck(new XCannotBeCheckKind(), new XSpecificSequenceElementaryMatch("5"))).list)).list)).run()).isEmpty()), (Object) true, (Object) ListSequence.fromList(new XExecutor(new XValidateStringExpression("12345", new LL<XAbstractValidationClause>(new XOccurenceBasedValidationClause(new XIfExistsOccurenceConstraint(), new XSpecificSequenceElementaryMatch("3"), new LL<XAbstractOccurenceBasedCheck>(new XSuccessorCheck(new XCannotBeCheckKind(), new XSpecificSequenceElementaryMatch("5"))).list)).list)).run()).isEmpty());
+    } catch (Throwable failure) {
+      throw SourceNodeFailures.attach(failure, "http://127.0.0.1:63320/node?ref=r%3A4498a3f1-ffdc-46cb-b225-63bf7159e69e%28test.in.expr.os.stringvalidation%40tests%29%2F4809115475673807834");
+    }
   }
   @Test
   public void predecessorSuccessor_item2_4809115475673807891() throws Throwable {
-    Assert.assertEquals("Expected: " + (true) + ", but was: " + (ListSequence.fromList(new XExecutor(new XValidateStringExpression("12345", new LL<XAbstractValidationClause>(new XOccurenceBasedValidationClause(new XIfExistsOccurenceConstraint(), new XSpecificSequenceElementaryMatch("3"), new LL<XAbstractOccurenceBasedCheck>(new XPredecessorCheck(new XMustBeCheckKind(), new XSpecificSequenceElementaryMatch("2"))).list)).list)).run()).isEmpty()), (Object) true, (Object) ListSequence.fromList(new XExecutor(new XValidateStringExpression("12345", new LL<XAbstractValidationClause>(new XOccurenceBasedValidationClause(new XIfExistsOccurenceConstraint(), new XSpecificSequenceElementaryMatch("3"), new LL<XAbstractOccurenceBasedCheck>(new XPredecessorCheck(new XMustBeCheckKind(), new XSpecificSequenceElementaryMatch("2"))).list)).list)).run()).isEmpty());
+    try {
+      Assert.assertEquals("Expected: " + (true) + ", but was: " + (ListSequence.fromList(new XExecutor(new XValidateStringExpression("12345", new LL<XAbstractValidationClause>(new XOccurenceBasedValidationClause(new XIfExistsOccurenceConstraint(), new XSpecificSequenceElementaryMatch("3"), new LL<XAbstractOccurenceBasedCheck>(new XPredecessorCheck(new XMustBeCheckKind(), new XSpecificSequenceElementaryMatch("2"))).list)).list)).run()).isEmpty()), (Object) true, (Object) ListSequence.fromList(new XExecutor(new XValidateStringExpression("12345", new LL<XAbstractValidationClause>(new XOccurenceBasedValidationClause(new XIfExistsOccurenceConstraint(), new XSpecificSequenceElementaryMatch("3"), new LL<XAbstractOccurenceBasedCheck>(new XPredecessorCheck(new XMustBeCheckKind(), new XSpecificSequenceElementaryMatch("2"))).list)).list)).run()).isEmpty());
+    } catch (Throwable failure) {
+      throw SourceNodeFailures.attach(failure, "http://127.0.0.1:63320/node?ref=r%3A4498a3f1-ffdc-46cb-b225-63bf7159e69e%28test.in.expr.os.stringvalidation%40tests%29%2F4809115475673807891");
+    }
   }
   @Test
   public void predecessorSuccessor_item3_4809115475673807961() throws Throwable {
-    Assert.assertEquals("Expected: " + (true) + ", but was: " + (ListSequence.fromList(new XExecutor(new XValidateStringExpression("12345", new LL<XAbstractValidationClause>(new XOccurenceBasedValidationClause(new XIfExistsOccurenceConstraint(), new XSpecificSequenceElementaryMatch("3"), new LL<XAbstractOccurenceBasedCheck>(new XSuccessorCheck(new XMustBeCheckKind(), new XSpecificSequenceElementaryMatch("4"))).list)).list)).run()).isEmpty()), (Object) true, (Object) ListSequence.fromList(new XExecutor(new XValidateStringExpression("12345", new LL<XAbstractValidationClause>(new XOccurenceBasedValidationClause(new XIfExistsOccurenceConstraint(), new XSpecificSequenceElementaryMatch("3"), new LL<XAbstractOccurenceBasedCheck>(new XSuccessorCheck(new XMustBeCheckKind(), new XSpecificSequenceElementaryMatch("4"))).list)).list)).run()).isEmpty());
+    try {
+      Assert.assertEquals("Expected: " + (true) + ", but was: " + (ListSequence.fromList(new XExecutor(new XValidateStringExpression("12345", new LL<XAbstractValidationClause>(new XOccurenceBasedValidationClause(new XIfExistsOccurenceConstraint(), new XSpecificSequenceElementaryMatch("3"), new LL<XAbstractOccurenceBasedCheck>(new XSuccessorCheck(new XMustBeCheckKind(), new XSpecificSequenceElementaryMatch("4"))).list)).list)).run()).isEmpty()), (Object) true, (Object) ListSequence.fromList(new XExecutor(new XValidateStringExpression("12345", new LL<XAbstractValidationClause>(new XOccurenceBasedValidationClause(new XIfExistsOccurenceConstraint(), new XSpecificSequenceElementaryMatch("3"), new LL<XAbstractOccurenceBasedCheck>(new XSuccessorCheck(new XMustBeCheckKind(), new XSpecificSequenceElementaryMatch("4"))).list)).list)).run()).isEmpty());
+    } catch (Throwable failure) {
+      throw SourceNodeFailures.attach(failure, "http://127.0.0.1:63320/node?ref=r%3A4498a3f1-ffdc-46cb-b225-63bf7159e69e%28test.in.expr.os.stringvalidation%40tests%29%2F4809115475673807961");
+    }
   }
   @Test
   public void predecessorSuccessor_item4_1179486170592277261() throws Throwable {
-    Assert.assertEquals("Expected: " + (true) + ", but was: " + (ListSequence.fromList(new XExecutor(new XValidateStringExpression("1A2A", new LL<XAbstractValidationClause>(new XOccurenceBasedValidationClause(new XIfExistsOccurenceConstraint(), new XNumberMatch(), new LL<XAbstractOccurenceBasedCheck>(new XSuccessorCheck(new XMustBeCheckKind(), new XLetterMatch())).list)).list)).run()).isEmpty()), (Object) true, (Object) ListSequence.fromList(new XExecutor(new XValidateStringExpression("1A2A", new LL<XAbstractValidationClause>(new XOccurenceBasedValidationClause(new XIfExistsOccurenceConstraint(), new XNumberMatch(), new LL<XAbstractOccurenceBasedCheck>(new XSuccessorCheck(new XMustBeCheckKind(), new XLetterMatch())).list)).list)).run()).isEmpty());
+    try {
+      Assert.assertEquals("Expected: " + (true) + ", but was: " + (ListSequence.fromList(new XExecutor(new XValidateStringExpression("1A2A", new LL<XAbstractValidationClause>(new XOccurenceBasedValidationClause(new XIfExistsOccurenceConstraint(), new XNumberMatch(), new LL<XAbstractOccurenceBasedCheck>(new XSuccessorCheck(new XMustBeCheckKind(), new XLetterMatch())).list)).list)).run()).isEmpty()), (Object) true, (Object) ListSequence.fromList(new XExecutor(new XValidateStringExpression("1A2A", new LL<XAbstractValidationClause>(new XOccurenceBasedValidationClause(new XIfExistsOccurenceConstraint(), new XNumberMatch(), new LL<XAbstractOccurenceBasedCheck>(new XSuccessorCheck(new XMustBeCheckKind(), new XLetterMatch())).list)).list)).run()).isEmpty());
+    } catch (Throwable failure) {
+      throw SourceNodeFailures.attach(failure, "http://127.0.0.1:63320/node?ref=r%3A4498a3f1-ffdc-46cb-b225-63bf7159e69e%28test.in.expr.os.stringvalidation%40tests%29%2F1179486170592277261");
+    }
   }
   @Test
   public void predecessorSuccessor_item5_6237210071886520457() throws Throwable {
-    Assert.assertEquals("Expected: " + (true) + ", but was: " + (ListSequence.fromList(new XExecutor(new XValidateStringExpression("19A", new LL<XAbstractValidationClause>(new XOccurenceBasedValidationClause(new XIfExistsOccurenceConstraint(), new XNumberMatch(), new LL<XAbstractOccurenceBasedCheck>(new XSuccessorCheck(new XMustBeCheckKind(), new XLetterMatch())).list)).list)).run()).isEmpty()), (Object) true, (Object) ListSequence.fromList(new XExecutor(new XValidateStringExpression("19A", new LL<XAbstractValidationClause>(new XOccurenceBasedValidationClause(new XIfExistsOccurenceConstraint(), new XNumberMatch(), new LL<XAbstractOccurenceBasedCheck>(new XSuccessorCheck(new XMustBeCheckKind(), new XLetterMatch())).list)).list)).run()).isEmpty());
+    try {
+      Assert.assertEquals("Expected: " + (true) + ", but was: " + (ListSequence.fromList(new XExecutor(new XValidateStringExpression("19A", new LL<XAbstractValidationClause>(new XOccurenceBasedValidationClause(new XIfExistsOccurenceConstraint(), new XNumberMatch(), new LL<XAbstractOccurenceBasedCheck>(new XSuccessorCheck(new XMustBeCheckKind(), new XLetterMatch())).list)).list)).run()).isEmpty()), (Object) true, (Object) ListSequence.fromList(new XExecutor(new XValidateStringExpression("19A", new LL<XAbstractValidationClause>(new XOccurenceBasedValidationClause(new XIfExistsOccurenceConstraint(), new XNumberMatch(), new LL<XAbstractOccurenceBasedCheck>(new XSuccessorCheck(new XMustBeCheckKind(), new XLetterMatch())).list)).list)).run()).isEmpty());
+    } catch (Throwable failure) {
+      throw SourceNodeFailures.attach(failure, "http://127.0.0.1:63320/node?ref=r%3A4498a3f1-ffdc-46cb-b225-63bf7159e69e%28test.in.expr.os.stringvalidation%40tests%29%2F6237210071886520457");
+    }
   }
   @Test
   public void predecessorSuccessor_item6_7272231208955124428() throws Throwable {
-    Assert.assertEquals("Expected: " + (true) + ", but was: " + (ListSequence.fromList(new XExecutor(new XValidateStringExpression("A19", new LL<XAbstractValidationClause>(new XOccurenceBasedValidationClause(new XIfExistsOccurenceConstraint(), new XNumberMatch(), new LL<XAbstractOccurenceBasedCheck>(new XPredecessorCheck(new XMustBeCheckKind(), new XLetterMatch())).list)).list)).run()).isEmpty()), (Object) true, (Object) ListSequence.fromList(new XExecutor(new XValidateStringExpression("A19", new LL<XAbstractValidationClause>(new XOccurenceBasedValidationClause(new XIfExistsOccurenceConstraint(), new XNumberMatch(), new LL<XAbstractOccurenceBasedCheck>(new XPredecessorCheck(new XMustBeCheckKind(), new XLetterMatch())).list)).list)).run()).isEmpty());
+    try {
+      Assert.assertEquals("Expected: " + (true) + ", but was: " + (ListSequence.fromList(new XExecutor(new XValidateStringExpression("A19", new LL<XAbstractValidationClause>(new XOccurenceBasedValidationClause(new XIfExistsOccurenceConstraint(), new XNumberMatch(), new LL<XAbstractOccurenceBasedCheck>(new XPredecessorCheck(new XMustBeCheckKind(), new XLetterMatch())).list)).list)).run()).isEmpty()), (Object) true, (Object) ListSequence.fromList(new XExecutor(new XValidateStringExpression("A19", new LL<XAbstractValidationClause>(new XOccurenceBasedValidationClause(new XIfExistsOccurenceConstraint(), new XNumberMatch(), new LL<XAbstractOccurenceBasedCheck>(new XPredecessorCheck(new XMustBeCheckKind(), new XLetterMatch())).list)).list)).run()).isEmpty());
+    } catch (Throwable failure) {
+      throw SourceNodeFailures.attach(failure, "http://127.0.0.1:63320/node?ref=r%3A4498a3f1-ffdc-46cb-b225-63bf7159e69e%28test.in.expr.os.stringvalidation%40tests%29%2F7272231208955124428");
+    }
   }
   @Test
   public void predecessorSuccessor_item7_6237210071890652389() throws Throwable {
-    Assert.assertEquals("Expected: " + (true) + ", but was: " + (ListSequence.fromList(new XExecutor(new XValidateStringExpression("A19A", new LL<XAbstractValidationClause>(new XOccurenceBasedValidationClause(new XIfExistsOccurenceConstraint(), new XNumberMatch(), new LL<XAbstractOccurenceBasedCheck>(new XSuccessorCheck(new XMustBeCheckKind(), new XLetterMatch())).list)).list)).run()).isEmpty()), (Object) true, (Object) ListSequence.fromList(new XExecutor(new XValidateStringExpression("A19A", new LL<XAbstractValidationClause>(new XOccurenceBasedValidationClause(new XIfExistsOccurenceConstraint(), new XNumberMatch(), new LL<XAbstractOccurenceBasedCheck>(new XSuccessorCheck(new XMustBeCheckKind(), new XLetterMatch())).list)).list)).run()).isEmpty());
+    try {
+      Assert.assertEquals("Expected: " + (true) + ", but was: " + (ListSequence.fromList(new XExecutor(new XValidateStringExpression("A19A", new LL<XAbstractValidationClause>(new XOccurenceBasedValidationClause(new XIfExistsOccurenceConstraint(), new XNumberMatch(), new LL<XAbstractOccurenceBasedCheck>(new XSuccessorCheck(new XMustBeCheckKind(), new XLetterMatch())).list)).list)).run()).isEmpty()), (Object) true, (Object) ListSequence.fromList(new XExecutor(new XValidateStringExpression("A19A", new LL<XAbstractValidationClause>(new XOccurenceBasedValidationClause(new XIfExistsOccurenceConstraint(), new XNumberMatch(), new LL<XAbstractOccurenceBasedCheck>(new XSuccessorCheck(new XMustBeCheckKind(), new XLetterMatch())).list)).list)).run()).isEmpty());
+    } catch (Throwable failure) {
+      throw SourceNodeFailures.attach(failure, "http://127.0.0.1:63320/node?ref=r%3A4498a3f1-ffdc-46cb-b225-63bf7159e69e%28test.in.expr.os.stringvalidation%40tests%29%2F6237210071890652389");
+    }
   }
   @Test
   public void predecessorSuccessor_item8_6237210071890815617() throws Throwable {
-    Assert.assertEquals("Expected: " + (true) + ", but was: " + (ListSequence.fromList(new XExecutor(new XValidateStringExpression("AA19A", new LL<XAbstractValidationClause>(new XOccurenceBasedValidationClause(new XIfExistsOccurenceConstraint(), new XNumberMatch(), new LL<XAbstractOccurenceBasedCheck>(new XSuccessorCheck(new XMustBeCheckKind(), new XLetterMatch())).list)).list)).run()).isEmpty()), (Object) true, (Object) ListSequence.fromList(new XExecutor(new XValidateStringExpression("AA19A", new LL<XAbstractValidationClause>(new XOccurenceBasedValidationClause(new XIfExistsOccurenceConstraint(), new XNumberMatch(), new LL<XAbstractOccurenceBasedCheck>(new XSuccessorCheck(new XMustBeCheckKind(), new XLetterMatch())).list)).list)).run()).isEmpty());
+    try {
+      Assert.assertEquals("Expected: " + (true) + ", but was: " + (ListSequence.fromList(new XExecutor(new XValidateStringExpression("AA19A", new LL<XAbstractValidationClause>(new XOccurenceBasedValidationClause(new XIfExistsOccurenceConstraint(), new XNumberMatch(), new LL<XAbstractOccurenceBasedCheck>(new XSuccessorCheck(new XMustBeCheckKind(), new XLetterMatch())).list)).list)).run()).isEmpty()), (Object) true, (Object) ListSequence.fromList(new XExecutor(new XValidateStringExpression("AA19A", new LL<XAbstractValidationClause>(new XOccurenceBasedValidationClause(new XIfExistsOccurenceConstraint(), new XNumberMatch(), new LL<XAbstractOccurenceBasedCheck>(new XSuccessorCheck(new XMustBeCheckKind(), new XLetterMatch())).list)).list)).run()).isEmpty());
+    } catch (Throwable failure) {
+      throw SourceNodeFailures.attach(failure, "http://127.0.0.1:63320/node?ref=r%3A4498a3f1-ffdc-46cb-b225-63bf7159e69e%28test.in.expr.os.stringvalidation%40tests%29%2F6237210071890815617");
+    }
   }
   @Test
   public void predecessorSuccessor_item9_7272231208955152575() throws Throwable {
-    Assert.assertEquals("Expected: " + (true) + ", but was: " + (ListSequence.fromList(new XExecutor(new XValidateStringExpression("AA19A", new LL<XAbstractValidationClause>(new XOccurenceBasedValidationClause(new XIfExistsOccurenceConstraint(), new XNumberMatch(), new LL<XAbstractOccurenceBasedCheck>(new XPredecessorCheck(new XMustBeCheckKind(), new XLetterMatch())).list)).list)).run()).isEmpty()), (Object) true, (Object) ListSequence.fromList(new XExecutor(new XValidateStringExpression("AA19A", new LL<XAbstractValidationClause>(new XOccurenceBasedValidationClause(new XIfExistsOccurenceConstraint(), new XNumberMatch(), new LL<XAbstractOccurenceBasedCheck>(new XPredecessorCheck(new XMustBeCheckKind(), new XLetterMatch())).list)).list)).run()).isEmpty());
+    try {
+      Assert.assertEquals("Expected: " + (true) + ", but was: " + (ListSequence.fromList(new XExecutor(new XValidateStringExpression("AA19A", new LL<XAbstractValidationClause>(new XOccurenceBasedValidationClause(new XIfExistsOccurenceConstraint(), new XNumberMatch(), new LL<XAbstractOccurenceBasedCheck>(new XPredecessorCheck(new XMustBeCheckKind(), new XLetterMatch())).list)).list)).run()).isEmpty()), (Object) true, (Object) ListSequence.fromList(new XExecutor(new XValidateStringExpression("AA19A", new LL<XAbstractValidationClause>(new XOccurenceBasedValidationClause(new XIfExistsOccurenceConstraint(), new XNumberMatch(), new LL<XAbstractOccurenceBasedCheck>(new XPredecessorCheck(new XMustBeCheckKind(), new XLetterMatch())).list)).list)).run()).isEmpty());
+    } catch (Throwable failure) {
+      throw SourceNodeFailures.attach(failure, "http://127.0.0.1:63320/node?ref=r%3A4498a3f1-ffdc-46cb-b225-63bf7159e69e%28test.in.expr.os.stringvalidation%40tests%29%2F7272231208955152575");
+    }
   }
   @Test
   public void predecessorSuccessor_item10_6237210071890819097() throws Throwable {
-    Assert.assertEquals("Expected: " + (true) + ", but was: " + (ListSequence.fromList(new XExecutor(new XValidateStringExpression("AA19AA19A", new LL<XAbstractValidationClause>(new XOccurenceBasedValidationClause(new XIfExistsOccurenceConstraint(), new XNumberMatch(), new LL<XAbstractOccurenceBasedCheck>(new XSuccessorCheck(new XMustBeCheckKind(), new XLetterMatch())).list)).list)).run()).isEmpty()), (Object) true, (Object) ListSequence.fromList(new XExecutor(new XValidateStringExpression("AA19AA19A", new LL<XAbstractValidationClause>(new XOccurenceBasedValidationClause(new XIfExistsOccurenceConstraint(), new XNumberMatch(), new LL<XAbstractOccurenceBasedCheck>(new XSuccessorCheck(new XMustBeCheckKind(), new XLetterMatch())).list)).list)).run()).isEmpty());
+    try {
+      Assert.assertEquals("Expected: " + (true) + ", but was: " + (ListSequence.fromList(new XExecutor(new XValidateStringExpression("AA19AA19A", new LL<XAbstractValidationClause>(new XOccurenceBasedValidationClause(new XIfExistsOccurenceConstraint(), new XNumberMatch(), new LL<XAbstractOccurenceBasedCheck>(new XSuccessorCheck(new XMustBeCheckKind(), new XLetterMatch())).list)).list)).run()).isEmpty()), (Object) true, (Object) ListSequence.fromList(new XExecutor(new XValidateStringExpression("AA19AA19A", new LL<XAbstractValidationClause>(new XOccurenceBasedValidationClause(new XIfExistsOccurenceConstraint(), new XNumberMatch(), new LL<XAbstractOccurenceBasedCheck>(new XSuccessorCheck(new XMustBeCheckKind(), new XLetterMatch())).list)).list)).run()).isEmpty());
+    } catch (Throwable failure) {
+      throw SourceNodeFailures.attach(failure, "http://127.0.0.1:63320/node?ref=r%3A4498a3f1-ffdc-46cb-b225-63bf7159e69e%28test.in.expr.os.stringvalidation%40tests%29%2F6237210071890819097");
+    }
   }
   @Test
   public void predecessorSuccessor_item11_7272231208955172644() throws Throwable {
-    Assert.assertEquals("Expected: " + (true) + ", but was: " + (ListSequence.fromList(new XExecutor(new XValidateStringExpression("AA19AA19A", new LL<XAbstractValidationClause>(new XOccurenceBasedValidationClause(new XIfExistsOccurenceConstraint(), new XNumberMatch(), new LL<XAbstractOccurenceBasedCheck>(new XPredecessorCheck(new XMustBeCheckKind(), new XLetterMatch())).list)).list)).run()).isEmpty()), (Object) true, (Object) ListSequence.fromList(new XExecutor(new XValidateStringExpression("AA19AA19A", new LL<XAbstractValidationClause>(new XOccurenceBasedValidationClause(new XIfExistsOccurenceConstraint(), new XNumberMatch(), new LL<XAbstractOccurenceBasedCheck>(new XPredecessorCheck(new XMustBeCheckKind(), new XLetterMatch())).list)).list)).run()).isEmpty());
+    try {
+      Assert.assertEquals("Expected: " + (true) + ", but was: " + (ListSequence.fromList(new XExecutor(new XValidateStringExpression("AA19AA19A", new LL<XAbstractValidationClause>(new XOccurenceBasedValidationClause(new XIfExistsOccurenceConstraint(), new XNumberMatch(), new LL<XAbstractOccurenceBasedCheck>(new XPredecessorCheck(new XMustBeCheckKind(), new XLetterMatch())).list)).list)).run()).isEmpty()), (Object) true, (Object) ListSequence.fromList(new XExecutor(new XValidateStringExpression("AA19AA19A", new LL<XAbstractValidationClause>(new XOccurenceBasedValidationClause(new XIfExistsOccurenceConstraint(), new XNumberMatch(), new LL<XAbstractOccurenceBasedCheck>(new XPredecessorCheck(new XMustBeCheckKind(), new XLetterMatch())).list)).list)).run()).isEmpty());
+    } catch (Throwable failure) {
+      throw SourceNodeFailures.attach(failure, "http://127.0.0.1:63320/node?ref=r%3A4498a3f1-ffdc-46cb-b225-63bf7159e69e%28test.in.expr.os.stringvalidation%40tests%29%2F7272231208955172644");
+    }
   }
   @Test
   public void predecessorSuccessor_item12_7272231208955178268() throws Throwable {
-    Assert.assertEquals("Expected: " + (false) + ", but was: " + (ListSequence.fromList(new XExecutor(new XValidateStringExpression("A_19AA19A", new LL<XAbstractValidationClause>(new XOccurenceBasedValidationClause(new XIfExistsOccurenceConstraint(), new XNumberMatch(), new LL<XAbstractOccurenceBasedCheck>(new XPredecessorCheck(new XMustBeCheckKind(), new XLetterMatch())).list)).list)).run()).isEmpty()), (Object) false, (Object) ListSequence.fromList(new XExecutor(new XValidateStringExpression("A_19AA19A", new LL<XAbstractValidationClause>(new XOccurenceBasedValidationClause(new XIfExistsOccurenceConstraint(), new XNumberMatch(), new LL<XAbstractOccurenceBasedCheck>(new XPredecessorCheck(new XMustBeCheckKind(), new XLetterMatch())).list)).list)).run()).isEmpty());
+    try {
+      Assert.assertEquals("Expected: " + (false) + ", but was: " + (ListSequence.fromList(new XExecutor(new XValidateStringExpression("A_19AA19A", new LL<XAbstractValidationClause>(new XOccurenceBasedValidationClause(new XIfExistsOccurenceConstraint(), new XNumberMatch(), new LL<XAbstractOccurenceBasedCheck>(new XPredecessorCheck(new XMustBeCheckKind(), new XLetterMatch())).list)).list)).run()).isEmpty()), (Object) false, (Object) ListSequence.fromList(new XExecutor(new XValidateStringExpression("A_19AA19A", new LL<XAbstractValidationClause>(new XOccurenceBasedValidationClause(new XIfExistsOccurenceConstraint(), new XNumberMatch(), new LL<XAbstractOccurenceBasedCheck>(new XPredecessorCheck(new XMustBeCheckKind(), new XLetterMatch())).list)).list)).run()).isEmpty());
+    } catch (Throwable failure) {
+      throw SourceNodeFailures.attach(failure, "http://127.0.0.1:63320/node?ref=r%3A4498a3f1-ffdc-46cb-b225-63bf7159e69e%28test.in.expr.os.stringvalidation%40tests%29%2F7272231208955178268");
+    }
   }
   @Test
   public void predecessorSuccessor_item13_7272231208955183133() throws Throwable {
-    Assert.assertEquals("Expected: " + (false) + ", but was: " + (ListSequence.fromList(new XExecutor(new XValidateStringExpression("AA19A_19A", new LL<XAbstractValidationClause>(new XOccurenceBasedValidationClause(new XIfExistsOccurenceConstraint(), new XNumberMatch(), new LL<XAbstractOccurenceBasedCheck>(new XPredecessorCheck(new XMustBeCheckKind(), new XLetterMatch())).list)).list)).run()).isEmpty()), (Object) false, (Object) ListSequence.fromList(new XExecutor(new XValidateStringExpression("AA19A_19A", new LL<XAbstractValidationClause>(new XOccurenceBasedValidationClause(new XIfExistsOccurenceConstraint(), new XNumberMatch(), new LL<XAbstractOccurenceBasedCheck>(new XPredecessorCheck(new XMustBeCheckKind(), new XLetterMatch())).list)).list)).run()).isEmpty());
+    try {
+      Assert.assertEquals("Expected: " + (false) + ", but was: " + (ListSequence.fromList(new XExecutor(new XValidateStringExpression("AA19A_19A", new LL<XAbstractValidationClause>(new XOccurenceBasedValidationClause(new XIfExistsOccurenceConstraint(), new XNumberMatch(), new LL<XAbstractOccurenceBasedCheck>(new XPredecessorCheck(new XMustBeCheckKind(), new XLetterMatch())).list)).list)).run()).isEmpty()), (Object) false, (Object) ListSequence.fromList(new XExecutor(new XValidateStringExpression("AA19A_19A", new LL<XAbstractValidationClause>(new XOccurenceBasedValidationClause(new XIfExistsOccurenceConstraint(), new XNumberMatch(), new LL<XAbstractOccurenceBasedCheck>(new XPredecessorCheck(new XMustBeCheckKind(), new XLetterMatch())).list)).list)).run()).isEmpty());
+    } catch (Throwable failure) {
+      throw SourceNodeFailures.attach(failure, "http://127.0.0.1:63320/node?ref=r%3A4498a3f1-ffdc-46cb-b225-63bf7159e69e%28test.in.expr.os.stringvalidation%40tests%29%2F7272231208955183133");
+    }
   }
   @Test
   public void predecessorSuccessor_item14_6237210071890858454() throws Throwable {
-    Assert.assertEquals("Expected: " + (false) + ", but was: " + (ListSequence.fromList(new XExecutor(new XValidateStringExpression("A19?", new LL<XAbstractValidationClause>(new XOccurenceBasedValidationClause(new XIfExistsOccurenceConstraint(), new XNumberMatch(), new LL<XAbstractOccurenceBasedCheck>(new XSuccessorCheck(new XMustBeCheckKind(), new XLetterMatch())).list)).list)).run()).isEmpty()), (Object) false, (Object) ListSequence.fromList(new XExecutor(new XValidateStringExpression("A19?", new LL<XAbstractValidationClause>(new XOccurenceBasedValidationClause(new XIfExistsOccurenceConstraint(), new XNumberMatch(), new LL<XAbstractOccurenceBasedCheck>(new XSuccessorCheck(new XMustBeCheckKind(), new XLetterMatch())).list)).list)).run()).isEmpty());
+    try {
+      Assert.assertEquals("Expected: " + (false) + ", but was: " + (ListSequence.fromList(new XExecutor(new XValidateStringExpression("A19?", new LL<XAbstractValidationClause>(new XOccurenceBasedValidationClause(new XIfExistsOccurenceConstraint(), new XNumberMatch(), new LL<XAbstractOccurenceBasedCheck>(new XSuccessorCheck(new XMustBeCheckKind(), new XLetterMatch())).list)).list)).run()).isEmpty()), (Object) false, (Object) ListSequence.fromList(new XExecutor(new XValidateStringExpression("A19?", new LL<XAbstractValidationClause>(new XOccurenceBasedValidationClause(new XIfExistsOccurenceConstraint(), new XNumberMatch(), new LL<XAbstractOccurenceBasedCheck>(new XSuccessorCheck(new XMustBeCheckKind(), new XLetterMatch())).list)).list)).run()).isEmpty());
+    } catch (Throwable failure) {
+      throw SourceNodeFailures.attach(failure, "http://127.0.0.1:63320/node?ref=r%3A4498a3f1-ffdc-46cb-b225-63bf7159e69e%28test.in.expr.os.stringvalidation%40tests%29%2F6237210071890858454");
+    }
   }
   @Test
   public void predecessorSuccessor_item15_7272231208955157909() throws Throwable {
-    Assert.assertEquals("Expected: " + (false) + ", but was: " + (ListSequence.fromList(new XExecutor(new XValidateStringExpression("?19A", new LL<XAbstractValidationClause>(new XOccurenceBasedValidationClause(new XIfExistsOccurenceConstraint(), new XNumberMatch(), new LL<XAbstractOccurenceBasedCheck>(new XPredecessorCheck(new XMustBeCheckKind(), new XLetterMatch())).list)).list)).run()).isEmpty()), (Object) false, (Object) ListSequence.fromList(new XExecutor(new XValidateStringExpression("?19A", new LL<XAbstractValidationClause>(new XOccurenceBasedValidationClause(new XIfExistsOccurenceConstraint(), new XNumberMatch(), new LL<XAbstractOccurenceBasedCheck>(new XPredecessorCheck(new XMustBeCheckKind(), new XLetterMatch())).list)).list)).run()).isEmpty());
+    try {
+      Assert.assertEquals("Expected: " + (false) + ", but was: " + (ListSequence.fromList(new XExecutor(new XValidateStringExpression("?19A", new LL<XAbstractValidationClause>(new XOccurenceBasedValidationClause(new XIfExistsOccurenceConstraint(), new XNumberMatch(), new LL<XAbstractOccurenceBasedCheck>(new XPredecessorCheck(new XMustBeCheckKind(), new XLetterMatch())).list)).list)).run()).isEmpty()), (Object) false, (Object) ListSequence.fromList(new XExecutor(new XValidateStringExpression("?19A", new LL<XAbstractValidationClause>(new XOccurenceBasedValidationClause(new XIfExistsOccurenceConstraint(), new XNumberMatch(), new LL<XAbstractOccurenceBasedCheck>(new XPredecessorCheck(new XMustBeCheckKind(), new XLetterMatch())).list)).list)).run()).isEmpty());
+    } catch (Throwable failure) {
+      throw SourceNodeFailures.attach(failure, "http://127.0.0.1:63320/node?ref=r%3A4498a3f1-ffdc-46cb-b225-63bf7159e69e%28test.in.expr.os.stringvalidation%40tests%29%2F7272231208955157909");
+    }
   }
   @Test
   public void predecessorSuccessor_item16_6237210071890872157() throws Throwable {
-    Assert.assertEquals("Expected: " + (false) + ", but was: " + (ListSequence.fromList(new XExecutor(new XValidateStringExpression("19_", new LL<XAbstractValidationClause>(new XOccurenceBasedValidationClause(new XIfExistsOccurenceConstraint(), new XNumberMatch(), new LL<XAbstractOccurenceBasedCheck>(new XSuccessorCheck(new XMustBeCheckKind(), new XLetterMatch())).list)).list)).run()).isEmpty()), (Object) false, (Object) ListSequence.fromList(new XExecutor(new XValidateStringExpression("19_", new LL<XAbstractValidationClause>(new XOccurenceBasedValidationClause(new XIfExistsOccurenceConstraint(), new XNumberMatch(), new LL<XAbstractOccurenceBasedCheck>(new XSuccessorCheck(new XMustBeCheckKind(), new XLetterMatch())).list)).list)).run()).isEmpty());
+    try {
+      Assert.assertEquals("Expected: " + (false) + ", but was: " + (ListSequence.fromList(new XExecutor(new XValidateStringExpression("19_", new LL<XAbstractValidationClause>(new XOccurenceBasedValidationClause(new XIfExistsOccurenceConstraint(), new XNumberMatch(), new LL<XAbstractOccurenceBasedCheck>(new XSuccessorCheck(new XMustBeCheckKind(), new XLetterMatch())).list)).list)).run()).isEmpty()), (Object) false, (Object) ListSequence.fromList(new XExecutor(new XValidateStringExpression("19_", new LL<XAbstractValidationClause>(new XOccurenceBasedValidationClause(new XIfExistsOccurenceConstraint(), new XNumberMatch(), new LL<XAbstractOccurenceBasedCheck>(new XSuccessorCheck(new XMustBeCheckKind(), new XLetterMatch())).list)).list)).run()).isEmpty());
+    } catch (Throwable failure) {
+      throw SourceNodeFailures.attach(failure, "http://127.0.0.1:63320/node?ref=r%3A4498a3f1-ffdc-46cb-b225-63bf7159e69e%28test.in.expr.os.stringvalidation%40tests%29%2F6237210071890872157");
+    }
   }
   @Test
   public void predecessorSuccessor_item17_7272231208955163679() throws Throwable {
-    Assert.assertEquals("Expected: " + (false) + ", but was: " + (ListSequence.fromList(new XExecutor(new XValidateStringExpression("_19", new LL<XAbstractValidationClause>(new XOccurenceBasedValidationClause(new XIfExistsOccurenceConstraint(), new XNumberMatch(), new LL<XAbstractOccurenceBasedCheck>(new XPredecessorCheck(new XMustBeCheckKind(), new XLetterMatch())).list)).list)).run()).isEmpty()), (Object) false, (Object) ListSequence.fromList(new XExecutor(new XValidateStringExpression("_19", new LL<XAbstractValidationClause>(new XOccurenceBasedValidationClause(new XIfExistsOccurenceConstraint(), new XNumberMatch(), new LL<XAbstractOccurenceBasedCheck>(new XPredecessorCheck(new XMustBeCheckKind(), new XLetterMatch())).list)).list)).run()).isEmpty());
+    try {
+      Assert.assertEquals("Expected: " + (false) + ", but was: " + (ListSequence.fromList(new XExecutor(new XValidateStringExpression("_19", new LL<XAbstractValidationClause>(new XOccurenceBasedValidationClause(new XIfExistsOccurenceConstraint(), new XNumberMatch(), new LL<XAbstractOccurenceBasedCheck>(new XPredecessorCheck(new XMustBeCheckKind(), new XLetterMatch())).list)).list)).run()).isEmpty()), (Object) false, (Object) ListSequence.fromList(new XExecutor(new XValidateStringExpression("_19", new LL<XAbstractValidationClause>(new XOccurenceBasedValidationClause(new XIfExistsOccurenceConstraint(), new XNumberMatch(), new LL<XAbstractOccurenceBasedCheck>(new XPredecessorCheck(new XMustBeCheckKind(), new XLetterMatch())).list)).list)).run()).isEmpty());
+    } catch (Throwable failure) {
+      throw SourceNodeFailures.attach(failure, "http://127.0.0.1:63320/node?ref=r%3A4498a3f1-ffdc-46cb-b225-63bf7159e69e%28test.in.expr.os.stringvalidation%40tests%29%2F7272231208955163679");
+    }
   }
   @Test
   public void predecessorSuccessor_item18_1602303387783693225() throws Throwable {
-    Assert.assertEquals("Expected: " + (true) + ", but was: " + (ListSequence.fromList(new XExecutor(new XValidateStringExpression("xx19yy", new LL<XAbstractValidationClause>(new XOccurenceBasedValidationClause(new XIfExistsOccurenceConstraint(), new XNumberMatch(), new LL<XAbstractOccurenceBasedCheck>(new XAtPositionCheck(new XMustBeCheckKind(), new XPositionIndicatorIndex(2))).list)).list)).run()).isEmpty()), (Object) true, (Object) ListSequence.fromList(new XExecutor(new XValidateStringExpression("xx19yy", new LL<XAbstractValidationClause>(new XOccurenceBasedValidationClause(new XIfExistsOccurenceConstraint(), new XNumberMatch(), new LL<XAbstractOccurenceBasedCheck>(new XAtPositionCheck(new XMustBeCheckKind(), new XPositionIndicatorIndex(2))).list)).list)).run()).isEmpty());
+    try {
+      Assert.assertEquals("Expected: " + (true) + ", but was: " + (ListSequence.fromList(new XExecutor(new XValidateStringExpression("xx19yy", new LL<XAbstractValidationClause>(new XOccurenceBasedValidationClause(new XIfExistsOccurenceConstraint(), new XNumberMatch(), new LL<XAbstractOccurenceBasedCheck>(new XAtPositionCheck(new XMustBeCheckKind(), new XPositionIndicatorIndex(2))).list)).list)).run()).isEmpty()), (Object) true, (Object) ListSequence.fromList(new XExecutor(new XValidateStringExpression("xx19yy", new LL<XAbstractValidationClause>(new XOccurenceBasedValidationClause(new XIfExistsOccurenceConstraint(), new XNumberMatch(), new LL<XAbstractOccurenceBasedCheck>(new XAtPositionCheck(new XMustBeCheckKind(), new XPositionIndicatorIndex(2))).list)).list)).run()).isEmpty());
+    } catch (Throwable failure) {
+      throw SourceNodeFailures.attach(failure, "http://127.0.0.1:63320/node?ref=r%3A4498a3f1-ffdc-46cb-b225-63bf7159e69e%28test.in.expr.os.stringvalidation%40tests%29%2F1602303387783693225");
+    }
   }
   @Test
   public void predecessorSuccessor_item19_7272231208951914247() throws Throwable {
-    Assert.assertEquals("Expected: " + (true) + ", but was: " + (ListSequence.fromList(new XExecutor(new XValidateStringExpression("xx123yy", new LL<XAbstractValidationClause>(new XOccurenceBasedValidationClause(new XIfExistsOccurenceConstraint(), new XNumberMatch(), new LL<XAbstractOccurenceBasedCheck>(new XAtPositionCheck(new XMustBeCheckKind(), new XPositionIndicatorIndex(2))).list)).list)).run()).isEmpty()), (Object) true, (Object) ListSequence.fromList(new XExecutor(new XValidateStringExpression("xx123yy", new LL<XAbstractValidationClause>(new XOccurenceBasedValidationClause(new XIfExistsOccurenceConstraint(), new XNumberMatch(), new LL<XAbstractOccurenceBasedCheck>(new XAtPositionCheck(new XMustBeCheckKind(), new XPositionIndicatorIndex(2))).list)).list)).run()).isEmpty());
+    try {
+      Assert.assertEquals("Expected: " + (true) + ", but was: " + (ListSequence.fromList(new XExecutor(new XValidateStringExpression("xx123yy", new LL<XAbstractValidationClause>(new XOccurenceBasedValidationClause(new XIfExistsOccurenceConstraint(), new XNumberMatch(), new LL<XAbstractOccurenceBasedCheck>(new XAtPositionCheck(new XMustBeCheckKind(), new XPositionIndicatorIndex(2))).list)).list)).run()).isEmpty()), (Object) true, (Object) ListSequence.fromList(new XExecutor(new XValidateStringExpression("xx123yy", new LL<XAbstractValidationClause>(new XOccurenceBasedValidationClause(new XIfExistsOccurenceConstraint(), new XNumberMatch(), new LL<XAbstractOccurenceBasedCheck>(new XAtPositionCheck(new XMustBeCheckKind(), new XPositionIndicatorIndex(2))).list)).list)).run()).isEmpty());
+    } catch (Throwable failure) {
+      throw SourceNodeFailures.attach(failure, "http://127.0.0.1:63320/node?ref=r%3A4498a3f1-ffdc-46cb-b225-63bf7159e69e%28test.in.expr.os.stringvalidation%40tests%29%2F7272231208951914247");
+    }
   }
   @Test
   public void defaultValues_item0_4638701830924626477() throws Throwable {
-    Assert.assertEquals("Expected: " + (new XExecutor(new XValidateStringExpression("", new LL<XAbstractValidationClause>().list)).run()) + ", but was: " + (new XExecutor(new XValidateStringExpression("", new LL<XAbstractValidationClause>().list)).run()), (Object) new XExecutor(new XValidateStringExpression("", new LL<XAbstractValidationClause>().list)).run(), (Object) new XExecutor(new XValidateStringExpression("", new LL<XAbstractValidationClause>().list)).run());
+    try {
+      Assert.assertEquals("Expected: " + (new XExecutor(new XValidateStringExpression("", new LL<XAbstractValidationClause>().list)).run()) + ", but was: " + (new XExecutor(new XValidateStringExpression("", new LL<XAbstractValidationClause>().list)).run()), (Object) new XExecutor(new XValidateStringExpression("", new LL<XAbstractValidationClause>().list)).run(), (Object) new XExecutor(new XValidateStringExpression("", new LL<XAbstractValidationClause>().list)).run());
+    } catch (Throwable failure) {
+      throw SourceNodeFailures.attach(failure, "http://127.0.0.1:63320/node?ref=r%3A4498a3f1-ffdc-46cb-b225-63bf7159e69e%28test.in.expr.os.stringvalidation%40tests%29%2F4638701830924626477");
+    }
   }
 
 

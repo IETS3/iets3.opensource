@@ -10,6 +10,7 @@ import org.junit.Test;
 import org.junit.Assert;
 import jetbrains.mps.baseLanguage.closures.runtime._FunctionTypes;
 import org.iets3.core.expr.genjava.tests.rt.rt.EqualsTestOp;
+import org.iets3.core.expr.genjava.tests.rt.rt.SourceNodeFailures;
 import org.iets3.core.expr.genjava.messages.rt.rt.Message;
 import org.iets3.core.expr.genjava.messages.rt.rt.BuiltinMessageKinds;
 import org.iets3.core.expr.genjava.base.rt.rt.ContractViolatedException;
@@ -60,75 +61,103 @@ public class Generated_lambda_Test {
   };
   @Test
   public void lambdaTests_fourtyTwo_7740953487930870528() throws Throwable {
-    Assert.assertTrue("Expected: " + (((Number) new BigInteger("47"))) + ", but was: " + (((_FunctionTypes._return_P0_E0<Number>) () -> {
-      ParameterSetWrapper param = new ParameterSetWrapper();
-      return Generated_lambda_Test.lambda_.apply(param);
-    }).invoke()), EqualsTestOp.matches(((Number) new BigInteger("47")), ((_FunctionTypes._return_P0_E0<Number>) () -> {
-      ParameterSetWrapper param = new ParameterSetWrapper();
-      return Generated_lambda_Test.lambda_.apply(param);
-    }).invoke()));
+    try {
+      Assert.assertTrue("Expected: " + (((Number) new BigInteger("47"))) + ", but was: " + (((_FunctionTypes._return_P0_E0<Number>) () -> {
+        ParameterSetWrapper param = new ParameterSetWrapper();
+        return Generated_lambda_Test.lambda_.apply(param);
+      }).invoke()), EqualsTestOp.matches(((Number) new BigInteger("47")), ((_FunctionTypes._return_P0_E0<Number>) () -> {
+        ParameterSetWrapper param = new ParameterSetWrapper();
+        return Generated_lambda_Test.lambda_.apply(param);
+      }).invoke()));
+    } catch (Throwable failure) {
+      throw SourceNodeFailures.attach(failure, "http://127.0.0.1:63320/node?ref=r%3Af6b93d14-1af1-4f84-a11b-cbe2d8c5efff%28test.in.expr.os.lambda%40tests%29%2F7740953487930870528");
+    }
   }
   @Test
   public void lambdaTests_i_7740953487930870535() throws Throwable {
-    Assert.assertTrue("Expected: " + (((Number) new BigInteger("3"))) + ", but was: " + (((_FunctionTypes._return_P0_E0<Number>) () -> {
-      ParameterSetWrapper param = new ParameterSetWrapper();
-      param.parameters.add(((Number) new BigInteger("1")));
-      param.parameters.add(((Number) new BigInteger("2")));
-      return Generated_lambda_Test.l3_.apply(param);
-    }).invoke()), EqualsTestOp.matches(((Number) new BigInteger("3")), ((_FunctionTypes._return_P0_E0<Number>) () -> {
-      ParameterSetWrapper param = new ParameterSetWrapper();
-      param.parameters.add(((Number) new BigInteger("1")));
-      param.parameters.add(((Number) new BigInteger("2")));
-      return Generated_lambda_Test.l3_.apply(param);
-    }).invoke()));
+    try {
+      Assert.assertTrue("Expected: " + (((Number) new BigInteger("3"))) + ", but was: " + (((_FunctionTypes._return_P0_E0<Number>) () -> {
+        ParameterSetWrapper param = new ParameterSetWrapper();
+        param.parameters.add(((Number) new BigInteger("1")));
+        param.parameters.add(((Number) new BigInteger("2")));
+        return Generated_lambda_Test.l3_.apply(param);
+      }).invoke()), EqualsTestOp.matches(((Number) new BigInteger("3")), ((_FunctionTypes._return_P0_E0<Number>) () -> {
+        ParameterSetWrapper param = new ParameterSetWrapper();
+        param.parameters.add(((Number) new BigInteger("1")));
+        param.parameters.add(((Number) new BigInteger("2")));
+        return Generated_lambda_Test.l3_.apply(param);
+      }).invoke()));
+    } catch (Throwable failure) {
+      throw SourceNodeFailures.attach(failure, "http://127.0.0.1:63320/node?ref=r%3Af6b93d14-1af1-4f84-a11b-cbe2d8c5efff%28test.in.expr.os.lambda%40tests%29%2F7740953487930870535");
+    }
   }
   @Test
   public void lambdaTests_sum_7740953487930870544() throws Throwable {
-    Assert.assertTrue("Expected: " + (((Number) new BigInteger("7"))) + ", but was: " + (Generated_lambda_Test.add(((Number) new BigInteger("3")), ((Number) new BigInteger("4")))), EqualsTestOp.matches(((Number) new BigInteger("7")), Generated_lambda_Test.add(((Number) new BigInteger("3")), ((Number) new BigInteger("4")))));
+    try {
+      Assert.assertTrue("Expected: " + (((Number) new BigInteger("7"))) + ", but was: " + (Generated_lambda_Test.add(((Number) new BigInteger("3")), ((Number) new BigInteger("4")))), EqualsTestOp.matches(((Number) new BigInteger("7")), Generated_lambda_Test.add(((Number) new BigInteger("3")), ((Number) new BigInteger("4")))));
+    } catch (Throwable failure) {
+      throw SourceNodeFailures.attach(failure, "http://127.0.0.1:63320/node?ref=r%3Af6b93d14-1af1-4f84-a11b-cbe2d8c5efff%28test.in.expr.os.lambda%40tests%29%2F7740953487930870544");
+    }
   }
   @Test
   public void lambdaTests_surprise_7740953487930870551() throws Throwable {
-    Assert.assertTrue("Expected: " + (((Number) new BigInteger("8"))) + ", but was: " + (Generated_lambda_Test.doWithTwoInts(new Function<ParameterSetWrapper, Number>() {
-      public Number apply(ParameterSetWrapper param) {
-        Number a = (Number) param.parameters.get(0);
-        Number b = (Number) param.parameters.get(1);
-        return AH.add(a, b);
-      }
-    }, ((Number) new BigInteger("3")), ((Number) new BigInteger("5")))), EqualsTestOp.matches(((Number) new BigInteger("8")), Generated_lambda_Test.doWithTwoInts(new Function<ParameterSetWrapper, Number>() {
-      public Number apply(ParameterSetWrapper param) {
-        Number a = (Number) param.parameters.get(0);
-        Number b = (Number) param.parameters.get(1);
-        return AH.add(a, b);
-      }
-    }, ((Number) new BigInteger("3")), ((Number) new BigInteger("5")))));
+    try {
+      Assert.assertTrue("Expected: " + (((Number) new BigInteger("8"))) + ", but was: " + (Generated_lambda_Test.doWithTwoInts(new Function<ParameterSetWrapper, Number>() {
+        public Number apply(ParameterSetWrapper param) {
+          Number a = (Number) param.parameters.get(0);
+          Number b = (Number) param.parameters.get(1);
+          return AH.add(a, b);
+        }
+      }, ((Number) new BigInteger("3")), ((Number) new BigInteger("5")))), EqualsTestOp.matches(((Number) new BigInteger("8")), Generated_lambda_Test.doWithTwoInts(new Function<ParameterSetWrapper, Number>() {
+        public Number apply(ParameterSetWrapper param) {
+          Number a = (Number) param.parameters.get(0);
+          Number b = (Number) param.parameters.get(1);
+          return AH.add(a, b);
+        }
+      }, ((Number) new BigInteger("3")), ((Number) new BigInteger("5")))));
+    } catch (Throwable failure) {
+      throw SourceNodeFailures.attach(failure, "http://127.0.0.1:63320/node?ref=r%3Af6b93d14-1af1-4f84-a11b-cbe2d8c5efff%28test.in.expr.os.lambda%40tests%29%2F7740953487930870551");
+    }
   }
   @Test
   public void lambdaTests_surprise2_7740953487930870566() throws Throwable {
-    Assert.assertTrue("Expected: " + (((Number) new BigInteger("4"))) + ", but was: " + (Generated_lambda_Test.doWithTwoInts(new Function<ParameterSetWrapper, Number>() {
-      public Number apply(ParameterSetWrapper param) {
-        return add((Number) param.parameters.get(0), (Number) param.parameters.get(1));
-      }
-    }, ((Number) new BigInteger("1")), ((Number) new BigInteger("3")))), EqualsTestOp.matches(((Number) new BigInteger("4")), Generated_lambda_Test.doWithTwoInts(new Function<ParameterSetWrapper, Number>() {
-      public Number apply(ParameterSetWrapper param) {
-        return add((Number) param.parameters.get(0), (Number) param.parameters.get(1));
-      }
-    }, ((Number) new BigInteger("1")), ((Number) new BigInteger("3")))));
+    try {
+      Assert.assertTrue("Expected: " + (((Number) new BigInteger("4"))) + ", but was: " + (Generated_lambda_Test.doWithTwoInts(new Function<ParameterSetWrapper, Number>() {
+        public Number apply(ParameterSetWrapper param) {
+          return add((Number) param.parameters.get(0), (Number) param.parameters.get(1));
+        }
+      }, ((Number) new BigInteger("1")), ((Number) new BigInteger("3")))), EqualsTestOp.matches(((Number) new BigInteger("4")), Generated_lambda_Test.doWithTwoInts(new Function<ParameterSetWrapper, Number>() {
+        public Number apply(ParameterSetWrapper param) {
+          return add((Number) param.parameters.get(0), (Number) param.parameters.get(1));
+        }
+      }, ((Number) new BigInteger("1")), ((Number) new BigInteger("3")))));
+    } catch (Throwable failure) {
+      throw SourceNodeFailures.attach(failure, "http://127.0.0.1:63320/node?ref=r%3Af6b93d14-1af1-4f84-a11b-cbe2d8c5efff%28test.in.expr.os.lambda%40tests%29%2F7740953487930870566");
+    }
   }
   @Test
   public void lambdaTests_surprise3_7740953487930870574() throws Throwable {
-    Assert.assertTrue("Expected: " + (((Number) new BigInteger("8"))) + ", but was: " + (Generated_lambda_Test.biggerFunction(((Number) new BigInteger("1")), ((Number) new BigInteger("3")))), EqualsTestOp.matches(((Number) new BigInteger("8")), Generated_lambda_Test.biggerFunction(((Number) new BigInteger("1")), ((Number) new BigInteger("3")))));
+    try {
+      Assert.assertTrue("Expected: " + (((Number) new BigInteger("8"))) + ", but was: " + (Generated_lambda_Test.biggerFunction(((Number) new BigInteger("1")), ((Number) new BigInteger("3")))), EqualsTestOp.matches(((Number) new BigInteger("8")), Generated_lambda_Test.biggerFunction(((Number) new BigInteger("1")), ((Number) new BigInteger("3")))));
+    } catch (Throwable failure) {
+      throw SourceNodeFailures.attach(failure, "http://127.0.0.1:63320/node?ref=r%3Af6b93d14-1af1-4f84-a11b-cbe2d8c5efff%28test.in.expr.os.lambda%40tests%29%2F7740953487930870574");
+    }
   }
   @Test
   public void lambdaTests_four_7740953487930870588() throws Throwable {
-    Assert.assertTrue("Expected: " + (((Number) new BigInteger("4"))) + ", but was: " + (((_FunctionTypes._return_P0_E0<Number>) () -> {
-      ParameterSetWrapper param = new ParameterSetWrapper();
-      param.parameters.add(((Number) new BigInteger("2")));
-      return Generated_lambda_Test.addTwo_.apply(param);
-    }).invoke()), EqualsTestOp.matches(((Number) new BigInteger("4")), ((_FunctionTypes._return_P0_E0<Number>) () -> {
-      ParameterSetWrapper param = new ParameterSetWrapper();
-      param.parameters.add(((Number) new BigInteger("2")));
-      return Generated_lambda_Test.addTwo_.apply(param);
-    }).invoke()));
+    try {
+      Assert.assertTrue("Expected: " + (((Number) new BigInteger("4"))) + ", but was: " + (((_FunctionTypes._return_P0_E0<Number>) () -> {
+        ParameterSetWrapper param = new ParameterSetWrapper();
+        param.parameters.add(((Number) new BigInteger("2")));
+        return Generated_lambda_Test.addTwo_.apply(param);
+      }).invoke()), EqualsTestOp.matches(((Number) new BigInteger("4")), ((_FunctionTypes._return_P0_E0<Number>) () -> {
+        ParameterSetWrapper param = new ParameterSetWrapper();
+        param.parameters.add(((Number) new BigInteger("2")));
+        return Generated_lambda_Test.addTwo_.apply(param);
+      }).invoke()));
+    } catch (Throwable failure) {
+      throw SourceNodeFailures.attach(failure, "http://127.0.0.1:63320/node?ref=r%3Af6b93d14-1af1-4f84-a11b-cbe2d8c5efff%28test.in.expr.os.lambda%40tests%29%2F7740953487930870588");
+    }
   }
   public static Number add(Number a, Number b) {
     Number res = AH.add(a, b);
@@ -228,59 +257,71 @@ public class Generated_lambda_Test {
   }).invoke();
   @Test
   public void binding_item0_1182725744908744545() throws Throwable {
-    Assert.assertTrue("Expected: " + (((Number) new BigInteger("6"))) + ", but was: " + (((_FunctionTypes._return_P0_E0<Number>) () -> {
-      ParameterSetWrapper param = new ParameterSetWrapper();
-      param.parameters.add(((Number) new BigInteger("3")));
-      return Generated_lambda_Test.lambda3Bind2_.apply(param);
-    }).invoke()), EqualsTestOp.matches(((Number) new BigInteger("6")), ((_FunctionTypes._return_P0_E0<Number>) () -> {
-      ParameterSetWrapper param = new ParameterSetWrapper();
-      param.parameters.add(((Number) new BigInteger("3")));
-      return Generated_lambda_Test.lambda3Bind2_.apply(param);
-    }).invoke()));
+    try {
+      Assert.assertTrue("Expected: " + (((Number) new BigInteger("6"))) + ", but was: " + (((_FunctionTypes._return_P0_E0<Number>) () -> {
+        ParameterSetWrapper param = new ParameterSetWrapper();
+        param.parameters.add(((Number) new BigInteger("3")));
+        return Generated_lambda_Test.lambda3Bind2_.apply(param);
+      }).invoke()), EqualsTestOp.matches(((Number) new BigInteger("6")), ((_FunctionTypes._return_P0_E0<Number>) () -> {
+        ParameterSetWrapper param = new ParameterSetWrapper();
+        param.parameters.add(((Number) new BigInteger("3")));
+        return Generated_lambda_Test.lambda3Bind2_.apply(param);
+      }).invoke()));
+    } catch (Throwable failure) {
+      throw SourceNodeFailures.attach(failure, "http://127.0.0.1:63320/node?ref=r%3Af6b93d14-1af1-4f84-a11b-cbe2d8c5efff%28test.in.expr.os.lambda%40tests%29%2F1182725744908744545");
+    }
   }
   @Test
   public void binding_item1_9212286833116737828() throws Throwable {
-    Assert.assertTrue("Expected: " + (((Number) new BigInteger("6"))) + ", but was: " + (((_FunctionTypes._return_P0_E0<Number>) () -> {
-      ParameterSetWrapper param = new ParameterSetWrapper();
-      param.parameters.add(((Number) new BigInteger("3")));
-      return new Function<ParameterSetWrapper, Number>() {
-        public Number apply(ParameterSetWrapper param) {
-          ParameterSetWrapper newParams = new ParameterSetWrapper();
-          newParams.parameters.add(((Number) new BigInteger("2")));
-          newParams.parameters.addAll(param.parameters);
-          return new Function<ParameterSetWrapper, Number>() {
-            public Number apply(ParameterSetWrapper param) {
-              ParameterSetWrapper newParams = new ParameterSetWrapper();
-              newParams.parameters.add(((Number) new BigInteger("1")));
-              newParams.parameters.addAll(param.parameters);
-              return Generated_lambda_Test.lambda3Arg_.apply(newParams);
-            }
-          }.apply(newParams);
-        }
-      }.apply(param);
-    }).invoke()), EqualsTestOp.matches(((Number) new BigInteger("6")), ((_FunctionTypes._return_P0_E0<Number>) () -> {
-      ParameterSetWrapper param = new ParameterSetWrapper();
-      param.parameters.add(((Number) new BigInteger("3")));
-      return new Function<ParameterSetWrapper, Number>() {
-        public Number apply(ParameterSetWrapper param) {
-          ParameterSetWrapper newParams = new ParameterSetWrapper();
-          newParams.parameters.add(((Number) new BigInteger("2")));
-          newParams.parameters.addAll(param.parameters);
-          return new Function<ParameterSetWrapper, Number>() {
-            public Number apply(ParameterSetWrapper param) {
-              ParameterSetWrapper newParams = new ParameterSetWrapper();
-              newParams.parameters.add(((Number) new BigInteger("1")));
-              newParams.parameters.addAll(param.parameters);
-              return Generated_lambda_Test.lambda3Arg_.apply(newParams);
-            }
-          }.apply(newParams);
-        }
-      }.apply(param);
-    }).invoke()));
+    try {
+      Assert.assertTrue("Expected: " + (((Number) new BigInteger("6"))) + ", but was: " + (((_FunctionTypes._return_P0_E0<Number>) () -> {
+        ParameterSetWrapper param = new ParameterSetWrapper();
+        param.parameters.add(((Number) new BigInteger("3")));
+        return new Function<ParameterSetWrapper, Number>() {
+          public Number apply(ParameterSetWrapper param) {
+            ParameterSetWrapper newParams = new ParameterSetWrapper();
+            newParams.parameters.add(((Number) new BigInteger("2")));
+            newParams.parameters.addAll(param.parameters);
+            return new Function<ParameterSetWrapper, Number>() {
+              public Number apply(ParameterSetWrapper param) {
+                ParameterSetWrapper newParams = new ParameterSetWrapper();
+                newParams.parameters.add(((Number) new BigInteger("1")));
+                newParams.parameters.addAll(param.parameters);
+                return Generated_lambda_Test.lambda3Arg_.apply(newParams);
+              }
+            }.apply(newParams);
+          }
+        }.apply(param);
+      }).invoke()), EqualsTestOp.matches(((Number) new BigInteger("6")), ((_FunctionTypes._return_P0_E0<Number>) () -> {
+        ParameterSetWrapper param = new ParameterSetWrapper();
+        param.parameters.add(((Number) new BigInteger("3")));
+        return new Function<ParameterSetWrapper, Number>() {
+          public Number apply(ParameterSetWrapper param) {
+            ParameterSetWrapper newParams = new ParameterSetWrapper();
+            newParams.parameters.add(((Number) new BigInteger("2")));
+            newParams.parameters.addAll(param.parameters);
+            return new Function<ParameterSetWrapper, Number>() {
+              public Number apply(ParameterSetWrapper param) {
+                ParameterSetWrapper newParams = new ParameterSetWrapper();
+                newParams.parameters.add(((Number) new BigInteger("1")));
+                newParams.parameters.addAll(param.parameters);
+                return Generated_lambda_Test.lambda3Arg_.apply(newParams);
+              }
+            }.apply(newParams);
+          }
+        }.apply(param);
+      }).invoke()));
+    } catch (Throwable failure) {
+      throw SourceNodeFailures.attach(failure, "http://127.0.0.1:63320/node?ref=r%3Af6b93d14-1af1-4f84-a11b-cbe2d8c5efff%28test.in.expr.os.lambda%40tests%29%2F9212286833116737828");
+    }
   }
   @Test
   public void binding_item2_6638908032070927349() throws Throwable {
-    Assert.assertTrue("Expected: " + (((Number) new BigInteger("6"))) + ", but was: " + (Generated_lambda_Test.lambda3BindAll_), EqualsTestOp.matches(((Number) new BigInteger("6")), Generated_lambda_Test.lambda3BindAll_));
+    try {
+      Assert.assertTrue("Expected: " + (((Number) new BigInteger("6"))) + ", but was: " + (Generated_lambda_Test.lambda3BindAll_), EqualsTestOp.matches(((Number) new BigInteger("6")), Generated_lambda_Test.lambda3BindAll_));
+    } catch (Throwable failure) {
+      throw SourceNodeFailures.attach(failure, "http://127.0.0.1:63320/node?ref=r%3Af6b93d14-1af1-4f84-a11b-cbe2d8c5efff%28test.in.expr.os.lambda%40tests%29%2F6638908032070927349");
+    }
   }
   public static PVector<PVector<Number>> shortlambdaWithIt() {
     PVector<PVector<Number>> res = ((_FunctionTypes._return_P0_E0<TreePVector<PVector<Number>>>) () -> {
@@ -378,95 +419,103 @@ public class Generated_lambda_Test {
   }
   @Test
   public void checkNestedShortLambda_item0_6746603296756019177() throws Throwable {
-    Assert.assertEquals("Expected: " + (((_FunctionTypes._return_P0_E0<TreePVector<PVector<Number>>>) () -> {
-      TreePVector<PVector<Number>> tpv = TreePVector.empty();
-      tpv = tpv.plus(new _FunctionTypes._return_P0_E0<TreePVector<Number>>() {
-        public TreePVector<Number> invoke() {
-          TreePVector<Number> tpv = TreePVector.empty();
-          tpv = tpv.plus(((Number) new BigInteger("2")));
-          tpv = tpv.plus(((Number) new BigInteger("3")));
-          tpv = tpv.plus(((Number) new BigInteger("4")));
-          return tpv;
-        }
-      }.invoke());
-      tpv = tpv.plus(new _FunctionTypes._return_P0_E0<TreePVector<Number>>() {
-        public TreePVector<Number> invoke() {
-          TreePVector<Number> tpv = TreePVector.empty();
-          tpv = tpv.plus(((Number) new BigInteger("2")));
-          tpv = tpv.plus(((Number) new BigInteger("3")));
-          tpv = tpv.plus(((Number) new BigInteger("4")));
-          return tpv;
-        }
-      }.invoke());
-      return tpv;
-    }).invoke()) + ", but was: " + (Generated_lambda_Test.shortlambdaWithIt()), (Object) ((_FunctionTypes._return_P0_E0<TreePVector<PVector<Number>>>) () -> {
-      TreePVector<PVector<Number>> tpv = TreePVector.empty();
-      tpv = tpv.plus(new _FunctionTypes._return_P0_E0<TreePVector<Number>>() {
-        public TreePVector<Number> invoke() {
-          TreePVector<Number> tpv = TreePVector.empty();
-          tpv = tpv.plus(((Number) new BigInteger("2")));
-          tpv = tpv.plus(((Number) new BigInteger("3")));
-          tpv = tpv.plus(((Number) new BigInteger("4")));
-          return tpv;
-        }
-      }.invoke());
-      tpv = tpv.plus(new _FunctionTypes._return_P0_E0<TreePVector<Number>>() {
-        public TreePVector<Number> invoke() {
-          TreePVector<Number> tpv = TreePVector.empty();
-          tpv = tpv.plus(((Number) new BigInteger("2")));
-          tpv = tpv.plus(((Number) new BigInteger("3")));
-          tpv = tpv.plus(((Number) new BigInteger("4")));
-          return tpv;
-        }
-      }.invoke());
-      return tpv;
-    }).invoke(), (Object) Generated_lambda_Test.shortlambdaWithIt());
+    try {
+      Assert.assertEquals("Expected: " + (((_FunctionTypes._return_P0_E0<TreePVector<PVector<Number>>>) () -> {
+        TreePVector<PVector<Number>> tpv = TreePVector.empty();
+        tpv = tpv.plus(new _FunctionTypes._return_P0_E0<TreePVector<Number>>() {
+          public TreePVector<Number> invoke() {
+            TreePVector<Number> tpv = TreePVector.empty();
+            tpv = tpv.plus(((Number) new BigInteger("2")));
+            tpv = tpv.plus(((Number) new BigInteger("3")));
+            tpv = tpv.plus(((Number) new BigInteger("4")));
+            return tpv;
+          }
+        }.invoke());
+        tpv = tpv.plus(new _FunctionTypes._return_P0_E0<TreePVector<Number>>() {
+          public TreePVector<Number> invoke() {
+            TreePVector<Number> tpv = TreePVector.empty();
+            tpv = tpv.plus(((Number) new BigInteger("2")));
+            tpv = tpv.plus(((Number) new BigInteger("3")));
+            tpv = tpv.plus(((Number) new BigInteger("4")));
+            return tpv;
+          }
+        }.invoke());
+        return tpv;
+      }).invoke()) + ", but was: " + (Generated_lambda_Test.shortlambdaWithIt()), (Object) ((_FunctionTypes._return_P0_E0<TreePVector<PVector<Number>>>) () -> {
+        TreePVector<PVector<Number>> tpv = TreePVector.empty();
+        tpv = tpv.plus(new _FunctionTypes._return_P0_E0<TreePVector<Number>>() {
+          public TreePVector<Number> invoke() {
+            TreePVector<Number> tpv = TreePVector.empty();
+            tpv = tpv.plus(((Number) new BigInteger("2")));
+            tpv = tpv.plus(((Number) new BigInteger("3")));
+            tpv = tpv.plus(((Number) new BigInteger("4")));
+            return tpv;
+          }
+        }.invoke());
+        tpv = tpv.plus(new _FunctionTypes._return_P0_E0<TreePVector<Number>>() {
+          public TreePVector<Number> invoke() {
+            TreePVector<Number> tpv = TreePVector.empty();
+            tpv = tpv.plus(((Number) new BigInteger("2")));
+            tpv = tpv.plus(((Number) new BigInteger("3")));
+            tpv = tpv.plus(((Number) new BigInteger("4")));
+            return tpv;
+          }
+        }.invoke());
+        return tpv;
+      }).invoke(), (Object) Generated_lambda_Test.shortlambdaWithIt());
+    } catch (Throwable failure) {
+      throw SourceNodeFailures.attach(failure, "http://127.0.0.1:63320/node?ref=r%3Af6b93d14-1af1-4f84-a11b-cbe2d8c5efff%28test.in.expr.os.lambda%40tests%29%2F6746603296756019177");
+    }
   }
   @Test
   public void checkNestedShortLambda_item1_3521514831956698859() throws Throwable {
-    Assert.assertEquals("Expected: " + (((_FunctionTypes._return_P0_E0<TreePVector<PVector<Number>>>) () -> {
-      TreePVector<PVector<Number>> tpv = TreePVector.empty();
-      tpv = tpv.plus(new _FunctionTypes._return_P0_E0<TreePVector<Number>>() {
-        public TreePVector<Number> invoke() {
-          TreePVector<Number> tpv = TreePVector.empty();
-          tpv = tpv.plus(((Number) new BigInteger("2")));
-          tpv = tpv.plus(((Number) new BigInteger("3")));
-          tpv = tpv.plus(((Number) new BigInteger("4")));
-          return tpv;
-        }
-      }.invoke());
-      tpv = tpv.plus(new _FunctionTypes._return_P0_E0<TreePVector<Number>>() {
-        public TreePVector<Number> invoke() {
-          TreePVector<Number> tpv = TreePVector.empty();
-          tpv = tpv.plus(((Number) new BigInteger("2")));
-          tpv = tpv.plus(((Number) new BigInteger("3")));
-          tpv = tpv.plus(((Number) new BigInteger("4")));
-          return tpv;
-        }
-      }.invoke());
-      return tpv;
-    }).invoke()) + ", but was: " + (Generated_lambda_Test.lambdaWithoutIt()), (Object) ((_FunctionTypes._return_P0_E0<TreePVector<PVector<Number>>>) () -> {
-      TreePVector<PVector<Number>> tpv = TreePVector.empty();
-      tpv = tpv.plus(new _FunctionTypes._return_P0_E0<TreePVector<Number>>() {
-        public TreePVector<Number> invoke() {
-          TreePVector<Number> tpv = TreePVector.empty();
-          tpv = tpv.plus(((Number) new BigInteger("2")));
-          tpv = tpv.plus(((Number) new BigInteger("3")));
-          tpv = tpv.plus(((Number) new BigInteger("4")));
-          return tpv;
-        }
-      }.invoke());
-      tpv = tpv.plus(new _FunctionTypes._return_P0_E0<TreePVector<Number>>() {
-        public TreePVector<Number> invoke() {
-          TreePVector<Number> tpv = TreePVector.empty();
-          tpv = tpv.plus(((Number) new BigInteger("2")));
-          tpv = tpv.plus(((Number) new BigInteger("3")));
-          tpv = tpv.plus(((Number) new BigInteger("4")));
-          return tpv;
-        }
-      }.invoke());
-      return tpv;
-    }).invoke(), (Object) Generated_lambda_Test.lambdaWithoutIt());
+    try {
+      Assert.assertEquals("Expected: " + (((_FunctionTypes._return_P0_E0<TreePVector<PVector<Number>>>) () -> {
+        TreePVector<PVector<Number>> tpv = TreePVector.empty();
+        tpv = tpv.plus(new _FunctionTypes._return_P0_E0<TreePVector<Number>>() {
+          public TreePVector<Number> invoke() {
+            TreePVector<Number> tpv = TreePVector.empty();
+            tpv = tpv.plus(((Number) new BigInteger("2")));
+            tpv = tpv.plus(((Number) new BigInteger("3")));
+            tpv = tpv.plus(((Number) new BigInteger("4")));
+            return tpv;
+          }
+        }.invoke());
+        tpv = tpv.plus(new _FunctionTypes._return_P0_E0<TreePVector<Number>>() {
+          public TreePVector<Number> invoke() {
+            TreePVector<Number> tpv = TreePVector.empty();
+            tpv = tpv.plus(((Number) new BigInteger("2")));
+            tpv = tpv.plus(((Number) new BigInteger("3")));
+            tpv = tpv.plus(((Number) new BigInteger("4")));
+            return tpv;
+          }
+        }.invoke());
+        return tpv;
+      }).invoke()) + ", but was: " + (Generated_lambda_Test.lambdaWithoutIt()), (Object) ((_FunctionTypes._return_P0_E0<TreePVector<PVector<Number>>>) () -> {
+        TreePVector<PVector<Number>> tpv = TreePVector.empty();
+        tpv = tpv.plus(new _FunctionTypes._return_P0_E0<TreePVector<Number>>() {
+          public TreePVector<Number> invoke() {
+            TreePVector<Number> tpv = TreePVector.empty();
+            tpv = tpv.plus(((Number) new BigInteger("2")));
+            tpv = tpv.plus(((Number) new BigInteger("3")));
+            tpv = tpv.plus(((Number) new BigInteger("4")));
+            return tpv;
+          }
+        }.invoke());
+        tpv = tpv.plus(new _FunctionTypes._return_P0_E0<TreePVector<Number>>() {
+          public TreePVector<Number> invoke() {
+            TreePVector<Number> tpv = TreePVector.empty();
+            tpv = tpv.plus(((Number) new BigInteger("2")));
+            tpv = tpv.plus(((Number) new BigInteger("3")));
+            tpv = tpv.plus(((Number) new BigInteger("4")));
+            return tpv;
+          }
+        }.invoke());
+        return tpv;
+      }).invoke(), (Object) Generated_lambda_Test.lambdaWithoutIt());
+    } catch (Throwable failure) {
+      throw SourceNodeFailures.attach(failure, "http://127.0.0.1:63320/node?ref=r%3Af6b93d14-1af1-4f84-a11b-cbe2d8c5efff%28test.in.expr.os.lambda%40tests%29%2F3521514831956698859");
+    }
   }
 
 

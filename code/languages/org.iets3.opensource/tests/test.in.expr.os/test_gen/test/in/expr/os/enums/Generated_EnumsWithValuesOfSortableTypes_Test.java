@@ -17,6 +17,7 @@ import java.time.LocalTime;
 import org.junit.Test;
 import org.junit.Assert;
 import org.iets3.core.expr.genjava.tests.rt.rt.EqualsTestOp;
+import org.iets3.core.expr.genjava.tests.rt.rt.SourceNodeFailures;
 
 /**
  * 
@@ -268,43 +269,83 @@ public class Generated_EnumsWithValuesOfSortableTypes_Test {
   }
   @Test
   public void SortRecordsHavingSortableEnumValues_item0_8432595092503075921() throws Throwable {
-    Assert.assertTrue("Expected: " + (((Number) new BigInteger("2"))) + ", but was: " + (new BigInteger(eDate.aDate.indexOf() + "")), EqualsTestOp.matches(((Number) new BigInteger("2")), new BigInteger(eDate.aDate.indexOf() + "")));
+    try {
+      Assert.assertTrue("Expected: " + (((Number) new BigInteger("2"))) + ", but was: " + (new BigInteger(eDate.aDate.indexOf() + "")), EqualsTestOp.matches(((Number) new BigInteger("2")), new BigInteger(eDate.aDate.indexOf() + "")));
+    } catch (Throwable failure) {
+      throw SourceNodeFailures.attach(failure, "http://127.0.0.1:63320/node?ref=r%3A97f27032-f638-4fda-b6f6-aafb3ccea323%28test.in.expr.os.enums%40tests%29%2F8432595092503075921");
+    }
   }
   @Test
   public void SortRecordsHavingSortableEnumValues_item1_5663752477437990412() throws Throwable {
-    Assert.assertTrue("Expected: " + (((Number) new BigInteger("2"))) + ", but was: " + (new BigInteger(eOpt.aOpt.indexOf() + "")), EqualsTestOp.matches(((Number) new BigInteger("2")), new BigInteger(eOpt.aOpt.indexOf() + "")));
+    try {
+      Assert.assertTrue("Expected: " + (((Number) new BigInteger("2"))) + ", but was: " + (new BigInteger(eOpt.aOpt.indexOf() + "")), EqualsTestOp.matches(((Number) new BigInteger("2")), new BigInteger(eOpt.aOpt.indexOf() + "")));
+    } catch (Throwable failure) {
+      throw SourceNodeFailures.attach(failure, "http://127.0.0.1:63320/node?ref=r%3A97f27032-f638-4fda-b6f6-aafb3ccea323%28test.in.expr.os.enums%40tests%29%2F5663752477437990412");
+    }
   }
   @Test
   public void SortRecordsHavingSortableEnumValues_item2_5663752477438081863() throws Throwable {
-    Assert.assertTrue("Expected: " + (((Number) new BigInteger("3"))) + ", but was: " + (new BigInteger(ePeriod.aPeriod.indexOf() + "")), EqualsTestOp.matches(((Number) new BigInteger("3")), new BigInteger(ePeriod.aPeriod.indexOf() + "")));
+    try {
+      Assert.assertTrue("Expected: " + (((Number) new BigInteger("3"))) + ", but was: " + (new BigInteger(ePeriod.aPeriod.indexOf() + "")), EqualsTestOp.matches(((Number) new BigInteger("3")), new BigInteger(ePeriod.aPeriod.indexOf() + "")));
+    } catch (Throwable failure) {
+      throw SourceNodeFailures.attach(failure, "http://127.0.0.1:63320/node?ref=r%3A97f27032-f638-4fda-b6f6-aafb3ccea323%28test.in.expr.os.enums%40tests%29%2F5663752477438081863");
+    }
   }
   @Test
   public void SortRecordsHavingSortableEnumValues_item3_5663752477438840735() throws Throwable {
-    Assert.assertTrue("Expected: " + (((Number) new BigInteger("2"))) + ", but was: " + (new BigInteger(eTemporal.aTemporal.indexOf() + "")), EqualsTestOp.matches(((Number) new BigInteger("2")), new BigInteger(eTemporal.aTemporal.indexOf() + "")));
+    try {
+      Assert.assertTrue("Expected: " + (((Number) new BigInteger("2"))) + ", but was: " + (new BigInteger(eTemporal.aTemporal.indexOf() + "")), EqualsTestOp.matches(((Number) new BigInteger("2")), new BigInteger(eTemporal.aTemporal.indexOf() + "")));
+    } catch (Throwable failure) {
+      throw SourceNodeFailures.attach(failure, "http://127.0.0.1:63320/node?ref=r%3A97f27032-f638-4fda-b6f6-aafb3ccea323%28test.in.expr.os.enums%40tests%29%2F5663752477438840735");
+    }
   }
   @Test
   public void SortRecordsHavingSortableEnumValues_item4_5663752477438877630() throws Throwable {
-    Assert.assertTrue("Expected: " + (((Number) new BigInteger("2"))) + ", but was: " + (new BigInteger(eTime.aTime.indexOf() + "")), EqualsTestOp.matches(((Number) new BigInteger("2")), new BigInteger(eTime.aTime.indexOf() + "")));
+    try {
+      Assert.assertTrue("Expected: " + (((Number) new BigInteger("2"))) + ", but was: " + (new BigInteger(eTime.aTime.indexOf() + "")), EqualsTestOp.matches(((Number) new BigInteger("2")), new BigInteger(eTime.aTime.indexOf() + "")));
+    } catch (Throwable failure) {
+      throw SourceNodeFailures.attach(failure, "http://127.0.0.1:63320/node?ref=r%3A97f27032-f638-4fda-b6f6-aafb3ccea323%28test.in.expr.os.enums%40tests%29%2F5663752477438877630");
+    }
   }
   @Test
   public void SortRecordsHavingSortableEnumValues_item5_5663752477438884990() throws Throwable {
-    Assert.assertTrue("Expected: " + (((Number) new BigInteger("1"))) + ", but was: " + (new BigInteger(eDate.cDate.indexOf() + "")), EqualsTestOp.matches(((Number) new BigInteger("1")), new BigInteger(eDate.cDate.indexOf() + "")));
+    try {
+      Assert.assertTrue("Expected: " + (((Number) new BigInteger("1"))) + ", but was: " + (new BigInteger(eDate.cDate.indexOf() + "")), EqualsTestOp.matches(((Number) new BigInteger("1")), new BigInteger(eDate.cDate.indexOf() + "")));
+    } catch (Throwable failure) {
+      throw SourceNodeFailures.attach(failure, "http://127.0.0.1:63320/node?ref=r%3A97f27032-f638-4fda-b6f6-aafb3ccea323%28test.in.expr.os.enums%40tests%29%2F5663752477438884990");
+    }
   }
   @Test
   public void SortRecordsHavingSortableEnumValues_item6_5663752477438884984() throws Throwable {
-    Assert.assertTrue("Expected: " + (((Number) new BigInteger("1"))) + ", but was: " + (new BigInteger(eOpt.cOpt.indexOf() + "")), EqualsTestOp.matches(((Number) new BigInteger("1")), new BigInteger(eOpt.cOpt.indexOf() + "")));
+    try {
+      Assert.assertTrue("Expected: " + (((Number) new BigInteger("1"))) + ", but was: " + (new BigInteger(eOpt.cOpt.indexOf() + "")), EqualsTestOp.matches(((Number) new BigInteger("1")), new BigInteger(eOpt.cOpt.indexOf() + "")));
+    } catch (Throwable failure) {
+      throw SourceNodeFailures.attach(failure, "http://127.0.0.1:63320/node?ref=r%3A97f27032-f638-4fda-b6f6-aafb3ccea323%28test.in.expr.os.enums%40tests%29%2F5663752477438884984");
+    }
   }
   @Test
   public void SortRecordsHavingSortableEnumValues_item7_5663752477438884978() throws Throwable {
-    Assert.assertTrue("Expected: " + (((Number) new BigInteger("2"))) + ", but was: " + (new BigInteger(ePeriod.cPeriod.indexOf() + "")), EqualsTestOp.matches(((Number) new BigInteger("2")), new BigInteger(ePeriod.cPeriod.indexOf() + "")));
+    try {
+      Assert.assertTrue("Expected: " + (((Number) new BigInteger("2"))) + ", but was: " + (new BigInteger(ePeriod.cPeriod.indexOf() + "")), EqualsTestOp.matches(((Number) new BigInteger("2")), new BigInteger(ePeriod.cPeriod.indexOf() + "")));
+    } catch (Throwable failure) {
+      throw SourceNodeFailures.attach(failure, "http://127.0.0.1:63320/node?ref=r%3A97f27032-f638-4fda-b6f6-aafb3ccea323%28test.in.expr.os.enums%40tests%29%2F5663752477438884978");
+    }
   }
   @Test
   public void SortRecordsHavingSortableEnumValues_item8_5663752477438884972() throws Throwable {
-    Assert.assertTrue("Expected: " + (((Number) new BigInteger("1"))) + ", but was: " + (new BigInteger(eTemporal.cTemporal.indexOf() + "")), EqualsTestOp.matches(((Number) new BigInteger("1")), new BigInteger(eTemporal.cTemporal.indexOf() + "")));
+    try {
+      Assert.assertTrue("Expected: " + (((Number) new BigInteger("1"))) + ", but was: " + (new BigInteger(eTemporal.cTemporal.indexOf() + "")), EqualsTestOp.matches(((Number) new BigInteger("1")), new BigInteger(eTemporal.cTemporal.indexOf() + "")));
+    } catch (Throwable failure) {
+      throw SourceNodeFailures.attach(failure, "http://127.0.0.1:63320/node?ref=r%3A97f27032-f638-4fda-b6f6-aafb3ccea323%28test.in.expr.os.enums%40tests%29%2F5663752477438884972");
+    }
   }
   @Test
   public void SortRecordsHavingSortableEnumValues_item9_5663752477438884966() throws Throwable {
-    Assert.assertTrue("Expected: " + (((Number) new BigInteger("1"))) + ", but was: " + (new BigInteger(eTime.cTime.indexOf() + "")), EqualsTestOp.matches(((Number) new BigInteger("1")), new BigInteger(eTime.cTime.indexOf() + "")));
+    try {
+      Assert.assertTrue("Expected: " + (((Number) new BigInteger("1"))) + ", but was: " + (new BigInteger(eTime.cTime.indexOf() + "")), EqualsTestOp.matches(((Number) new BigInteger("1")), new BigInteger(eTime.cTime.indexOf() + "")));
+    } catch (Throwable failure) {
+      throw SourceNodeFailures.attach(failure, "http://127.0.0.1:63320/node?ref=r%3A97f27032-f638-4fda-b6f6-aafb3ccea323%28test.in.expr.os.enums%40tests%29%2F5663752477438884966");
+    }
   }
 
 

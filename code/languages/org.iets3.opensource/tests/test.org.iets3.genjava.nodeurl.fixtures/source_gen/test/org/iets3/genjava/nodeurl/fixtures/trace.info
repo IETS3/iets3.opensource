@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<debug-info version="2">
+  <root>
+    <file name="NodeUrlExample_Checks.java">
+      <unit at="10,0,109,0" name="test.org.iets3.genjava.nodeurl.fixtures.NodeUrlExample_Checks" />
+    </file>
+  </root>
+</debug-info>
+

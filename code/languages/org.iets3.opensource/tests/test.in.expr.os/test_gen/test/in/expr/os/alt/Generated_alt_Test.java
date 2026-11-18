@@ -16,6 +16,7 @@ import org.iets3.core.expr.genjava.base.rt.rt.GlobalContext;
 import java.util.Objects;
 import org.junit.Test;
 import org.junit.Assert;
+import org.iets3.core.expr.genjava.tests.rt.rt.SourceNodeFailures;
 import org.iets3.core.expr.genjava.tests.rt.rt.EqualsTestOp;
 
 /**
@@ -133,151 +134,207 @@ public class Generated_alt_Test {
   @Test
   public void alt_item0_4874335060899225219() throws Throwable {
     try {
-      ((_FunctionTypes._void_P0_E0) () -> {
-        if (((_FunctionTypes._return_P0_E0<String>) () -> {
-          if (AH.isEqual(((Number) new BigInteger("1")), ((Number) new BigInteger("2")))) {
-            return "true";
-          } else if (AH.isEqual(((Number) new BigInteger("2")), ((Number) new BigInteger("1")))) {
-            return "true";
-          } else {
-            throw new AlternativesException("The proposed alternative does not exist.");
+      try {
+        ((_FunctionTypes._void_P0_E0) () -> {
+          if (((_FunctionTypes._return_P0_E0<String>) () -> {
+            if (AH.isEqual(((Number) new BigInteger("1")), ((Number) new BigInteger("2")))) {
+              return "true";
+            } else if (AH.isEqual(((Number) new BigInteger("2")), ((Number) new BigInteger("1")))) {
+              return "true";
+            } else {
+              throw new AlternativesException("The proposed alternative does not exist.");
+            }
+          }).invoke() == null) {
+            throw new NullPointerException("No Result in Invalid Testitem");
           }
-        }).invoke() == null) {
-          throw new NullPointerException("No Result in Invalid Testitem");
-        }
-      }).invoke();
-      Assert.fail("Invalid Value");
-    } catch (Exception e) {
-      // expected exception
+        }).invoke();
+        Assert.fail("Invalid Value");
+      } catch (Exception e) {
+        // expected exception
+      }
+    } catch (Throwable failure) {
+      throw SourceNodeFailures.attach(failure, "http://127.0.0.1:63320/node?ref=r%3A857bd1a9-fc6d-4f8f-b9d1-c2f774ee6e86%28test.in.expr.os.alt%40tests%29%2F4874335060899225219");
     }
   }
   @Test
   public void alt_item1_3611639268124042428() throws Throwable {
-    Assert.assertEquals("Expected: " + ("true") + ", but was: " + (((_FunctionTypes._return_P0_E0<String>) () -> {
-      if (AH.isEqual(((Number) new BigInteger("1")), ((Number) new BigInteger("1")))) {
-        return "true";
-      } else if (AH.isEqual(((Number) new BigInteger("2")), ((Number) new BigInteger("2")))) {
-        return "true";
-      } else {
-        throw new AlternativesException("The proposed alternative does not exist.");
-      }
-    }).invoke()), (Object) "true", (Object) ((_FunctionTypes._return_P0_E0<String>) () -> {
-      if (AH.isEqual(((Number) new BigInteger("1")), ((Number) new BigInteger("1")))) {
-        return "true";
-      } else if (AH.isEqual(((Number) new BigInteger("2")), ((Number) new BigInteger("2")))) {
-        return "true";
-      } else {
-        throw new AlternativesException("The proposed alternative does not exist.");
-      }
-    }).invoke());
+    try {
+      Assert.assertEquals("Expected: " + ("true") + ", but was: " + (((_FunctionTypes._return_P0_E0<String>) () -> {
+        if (AH.isEqual(((Number) new BigInteger("1")), ((Number) new BigInteger("1")))) {
+          return "true";
+        } else if (AH.isEqual(((Number) new BigInteger("2")), ((Number) new BigInteger("2")))) {
+          return "true";
+        } else {
+          throw new AlternativesException("The proposed alternative does not exist.");
+        }
+      }).invoke()), (Object) "true", (Object) ((_FunctionTypes._return_P0_E0<String>) () -> {
+        if (AH.isEqual(((Number) new BigInteger("1")), ((Number) new BigInteger("1")))) {
+          return "true";
+        } else if (AH.isEqual(((Number) new BigInteger("2")), ((Number) new BigInteger("2")))) {
+          return "true";
+        } else {
+          throw new AlternativesException("The proposed alternative does not exist.");
+        }
+      }).invoke());
+    } catch (Throwable failure) {
+      throw SourceNodeFailures.attach(failure, "http://127.0.0.1:63320/node?ref=r%3A857bd1a9-fc6d-4f8f-b9d1-c2f774ee6e86%28test.in.expr.os.alt%40tests%29%2F3611639268124042428");
+    }
   }
   @Test
   public void alt_item3_4421228160174381096() throws Throwable {
-    Assert.assertEquals("Expected: " + (true) + ", but was: " + (Generated_alt_Test.alt1ParamA(((Number) new BigInteger("0")))), (Object) true, (Object) Generated_alt_Test.alt1ParamA(((Number) new BigInteger("0"))));
+    try {
+      Assert.assertEquals("Expected: " + (true) + ", but was: " + (Generated_alt_Test.alt1ParamA(((Number) new BigInteger("0")))), (Object) true, (Object) Generated_alt_Test.alt1ParamA(((Number) new BigInteger("0"))));
+    } catch (Throwable failure) {
+      throw SourceNodeFailures.attach(failure, "http://127.0.0.1:63320/node?ref=r%3A857bd1a9-fc6d-4f8f-b9d1-c2f774ee6e86%28test.in.expr.os.alt%40tests%29%2F4421228160174381096");
+    }
   }
   @Test
   public void alt_item4_4421228160174381101() throws Throwable {
-    Assert.assertEquals("Expected: " + (false) + ", but was: " + (Generated_alt_Test.alt1ParamA(((Number) new BigInteger("1")))), (Object) false, (Object) Generated_alt_Test.alt1ParamA(((Number) new BigInteger("1"))));
+    try {
+      Assert.assertEquals("Expected: " + (false) + ", but was: " + (Generated_alt_Test.alt1ParamA(((Number) new BigInteger("1")))), (Object) false, (Object) Generated_alt_Test.alt1ParamA(((Number) new BigInteger("1"))));
+    } catch (Throwable failure) {
+      throw SourceNodeFailures.attach(failure, "http://127.0.0.1:63320/node?ref=r%3A857bd1a9-fc6d-4f8f-b9d1-c2f774ee6e86%28test.in.expr.os.alt%40tests%29%2F4421228160174381101");
+    }
   }
   @Test
   public void alt_item5_4421228160174381106() throws Throwable {
-    Assert.assertEquals("Expected: " + (true) + ", but was: " + (Generated_alt_Test.alt1ParamB(((Number) new BigInteger("0")))), (Object) true, (Object) Generated_alt_Test.alt1ParamB(((Number) new BigInteger("0"))));
+    try {
+      Assert.assertEquals("Expected: " + (true) + ", but was: " + (Generated_alt_Test.alt1ParamB(((Number) new BigInteger("0")))), (Object) true, (Object) Generated_alt_Test.alt1ParamB(((Number) new BigInteger("0"))));
+    } catch (Throwable failure) {
+      throw SourceNodeFailures.attach(failure, "http://127.0.0.1:63320/node?ref=r%3A857bd1a9-fc6d-4f8f-b9d1-c2f774ee6e86%28test.in.expr.os.alt%40tests%29%2F4421228160174381106");
+    }
   }
   @Test
   public void alt_item6_4421228160174381111() throws Throwable {
-    Assert.assertEquals("Expected: " + (false) + ", but was: " + (Generated_alt_Test.alt1ParamB(((Number) new BigInteger("1")))), (Object) false, (Object) Generated_alt_Test.alt1ParamB(((Number) new BigInteger("1"))));
+    try {
+      Assert.assertEquals("Expected: " + (false) + ", but was: " + (Generated_alt_Test.alt1ParamB(((Number) new BigInteger("1")))), (Object) false, (Object) Generated_alt_Test.alt1ParamB(((Number) new BigInteger("1"))));
+    } catch (Throwable failure) {
+      throw SourceNodeFailures.attach(failure, "http://127.0.0.1:63320/node?ref=r%3A857bd1a9-fc6d-4f8f-b9d1-c2f774ee6e86%28test.in.expr.os.alt%40tests%29%2F4421228160174381111");
+    }
   }
   @Test
   public void alt_item8_4421228160199088422() throws Throwable {
-    Assert.assertEquals("Expected: " + ("A") + ", but was: " + (((_FunctionTypes._return_P0_E0<String>) () -> {
-      if (Generated_alt_Test.alt1ParamA(((Number) new BigInteger("0")))) {
-        return "A";
-      } else {
-        return "B";
-      }
-    }).invoke()), (Object) "A", (Object) ((_FunctionTypes._return_P0_E0<String>) () -> {
-      if (Generated_alt_Test.alt1ParamA(((Number) new BigInteger("0")))) {
-        return "A";
-      } else {
-        return "B";
-      }
-    }).invoke());
+    try {
+      Assert.assertEquals("Expected: " + ("A") + ", but was: " + (((_FunctionTypes._return_P0_E0<String>) () -> {
+        if (Generated_alt_Test.alt1ParamA(((Number) new BigInteger("0")))) {
+          return "A";
+        } else {
+          return "B";
+        }
+      }).invoke()), (Object) "A", (Object) ((_FunctionTypes._return_P0_E0<String>) () -> {
+        if (Generated_alt_Test.alt1ParamA(((Number) new BigInteger("0")))) {
+          return "A";
+        } else {
+          return "B";
+        }
+      }).invoke());
+    } catch (Throwable failure) {
+      throw SourceNodeFailures.attach(failure, "http://127.0.0.1:63320/node?ref=r%3A857bd1a9-fc6d-4f8f-b9d1-c2f774ee6e86%28test.in.expr.os.alt%40tests%29%2F4421228160199088422");
+    }
   }
   @Test
   public void alt_item9_4421228160199841110() throws Throwable {
-    Assert.assertEquals("Expected: " + ("B") + ", but was: " + (((_FunctionTypes._return_P0_E0<String>) () -> {
-      if (Generated_alt_Test.alt1ParamA(((Number) new BigInteger("1")))) {
-        return "A";
-      } else {
-        return "B";
-      }
-    }).invoke()), (Object) "B", (Object) ((_FunctionTypes._return_P0_E0<String>) () -> {
-      if (Generated_alt_Test.alt1ParamA(((Number) new BigInteger("1")))) {
-        return "A";
-      } else {
-        return "B";
-      }
-    }).invoke());
+    try {
+      Assert.assertEquals("Expected: " + ("B") + ", but was: " + (((_FunctionTypes._return_P0_E0<String>) () -> {
+        if (Generated_alt_Test.alt1ParamA(((Number) new BigInteger("1")))) {
+          return "A";
+        } else {
+          return "B";
+        }
+      }).invoke()), (Object) "B", (Object) ((_FunctionTypes._return_P0_E0<String>) () -> {
+        if (Generated_alt_Test.alt1ParamA(((Number) new BigInteger("1")))) {
+          return "A";
+        } else {
+          return "B";
+        }
+      }).invoke());
+    } catch (Throwable failure) {
+      throw SourceNodeFailures.attach(failure, "http://127.0.0.1:63320/node?ref=r%3A857bd1a9-fc6d-4f8f-b9d1-c2f774ee6e86%28test.in.expr.os.alt%40tests%29%2F4421228160199841110");
+    }
   }
   @Test
   public void alt_item11_4421228160174381118() throws Throwable {
-    Assert.assertTrue("Expected: " + (((Number) new BigInteger("1"))) + ", but was: " + (Generated_alt_Test.alt2ParamA(((Number) new BigInteger("0")), "any")), EqualsTestOp.matches(((Number) new BigInteger("1")), Generated_alt_Test.alt2ParamA(((Number) new BigInteger("0")), "any")));
+    try {
+      Assert.assertTrue("Expected: " + (((Number) new BigInteger("1"))) + ", but was: " + (Generated_alt_Test.alt2ParamA(((Number) new BigInteger("0")), "any")), EqualsTestOp.matches(((Number) new BigInteger("1")), Generated_alt_Test.alt2ParamA(((Number) new BigInteger("0")), "any")));
+    } catch (Throwable failure) {
+      throw SourceNodeFailures.attach(failure, "http://127.0.0.1:63320/node?ref=r%3A857bd1a9-fc6d-4f8f-b9d1-c2f774ee6e86%28test.in.expr.os.alt%40tests%29%2F4421228160174381118");
+    }
   }
   @Test
   public void alt_item12_4421228160174381124() throws Throwable {
-    Assert.assertTrue("Expected: " + (((Number) new BigInteger("2"))) + ", but was: " + (Generated_alt_Test.alt2ParamA(((BigInteger) ((Number) new BigInteger("99383"))).negate(), "two")), EqualsTestOp.matches(((Number) new BigInteger("2")), Generated_alt_Test.alt2ParamA(((BigInteger) ((Number) new BigInteger("99383"))).negate(), "two")));
+    try {
+      Assert.assertTrue("Expected: " + (((Number) new BigInteger("2"))) + ", but was: " + (Generated_alt_Test.alt2ParamA(((BigInteger) ((Number) new BigInteger("99383"))).negate(), "two")), EqualsTestOp.matches(((Number) new BigInteger("2")), Generated_alt_Test.alt2ParamA(((BigInteger) ((Number) new BigInteger("99383"))).negate(), "two")));
+    } catch (Throwable failure) {
+      throw SourceNodeFailures.attach(failure, "http://127.0.0.1:63320/node?ref=r%3A857bd1a9-fc6d-4f8f-b9d1-c2f774ee6e86%28test.in.expr.os.alt%40tests%29%2F4421228160174381124");
+    }
   }
   @Test
   public void alt_item13_4421228160174381131() throws Throwable {
-    Assert.assertTrue("Expected: " + (((Number) new BigInteger("1"))) + ", but was: " + (Generated_alt_Test.alt2ParamB(((Number) new BigInteger("0")), "any")), EqualsTestOp.matches(((Number) new BigInteger("1")), Generated_alt_Test.alt2ParamB(((Number) new BigInteger("0")), "any")));
+    try {
+      Assert.assertTrue("Expected: " + (((Number) new BigInteger("1"))) + ", but was: " + (Generated_alt_Test.alt2ParamB(((Number) new BigInteger("0")), "any")), EqualsTestOp.matches(((Number) new BigInteger("1")), Generated_alt_Test.alt2ParamB(((Number) new BigInteger("0")), "any")));
+    } catch (Throwable failure) {
+      throw SourceNodeFailures.attach(failure, "http://127.0.0.1:63320/node?ref=r%3A857bd1a9-fc6d-4f8f-b9d1-c2f774ee6e86%28test.in.expr.os.alt%40tests%29%2F4421228160174381131");
+    }
   }
   @Test
   public void alt_item14_4421228160174381137() throws Throwable {
-    Assert.assertTrue("Expected: " + (((Number) new BigInteger("2"))) + ", but was: " + (Generated_alt_Test.alt2ParamA(((BigInteger) ((Number) new BigInteger("99383"))).negate(), "two")), EqualsTestOp.matches(((Number) new BigInteger("2")), Generated_alt_Test.alt2ParamA(((BigInteger) ((Number) new BigInteger("99383"))).negate(), "two")));
+    try {
+      Assert.assertTrue("Expected: " + (((Number) new BigInteger("2"))) + ", but was: " + (Generated_alt_Test.alt2ParamA(((BigInteger) ((Number) new BigInteger("99383"))).negate(), "two")), EqualsTestOp.matches(((Number) new BigInteger("2")), Generated_alt_Test.alt2ParamA(((BigInteger) ((Number) new BigInteger("99383"))).negate(), "two")));
+    } catch (Throwable failure) {
+      throw SourceNodeFailures.attach(failure, "http://127.0.0.1:63320/node?ref=r%3A857bd1a9-fc6d-4f8f-b9d1-c2f774ee6e86%28test.in.expr.os.alt%40tests%29%2F4421228160174381137");
+    }
   }
   @Test
   public void alt_withBlockExpression_item0_8086792206069713103() throws Throwable {
-    Assert.assertEquals("Expected: " + (true) + ", but was: " + (((_FunctionTypes._return_P0_E0<Boolean>) () -> {
-      if (AH.isEqual(((Number) new BigInteger("1")), ((Number) new BigInteger("1")))) {
-        return ((_FunctionTypes._return_P0_E0<Boolean>) () -> {
-          Number v1 = AH.mul(((Number) new BigInteger("5")), ((Number) new BigInteger("2")));
-          return AH.isEqual(v1, ((Number) new BigInteger("10")));
-        }).invoke();
-      } else {
-        return false;
-      }
-    }).invoke()), (Object) true, (Object) ((_FunctionTypes._return_P0_E0<Boolean>) () -> {
-      if (AH.isEqual(((Number) new BigInteger("1")), ((Number) new BigInteger("1")))) {
-        return ((_FunctionTypes._return_P0_E0<Boolean>) () -> {
-          Number v1 = AH.mul(((Number) new BigInteger("5")), ((Number) new BigInteger("2")));
-          return AH.isEqual(v1, ((Number) new BigInteger("10")));
-        }).invoke();
-      } else {
-        return false;
-      }
-    }).invoke());
+    try {
+      Assert.assertEquals("Expected: " + (true) + ", but was: " + (((_FunctionTypes._return_P0_E0<Boolean>) () -> {
+        if (AH.isEqual(((Number) new BigInteger("1")), ((Number) new BigInteger("1")))) {
+          return ((_FunctionTypes._return_P0_E0<Boolean>) () -> {
+            Number v1 = AH.mul(((Number) new BigInteger("5")), ((Number) new BigInteger("2")));
+            return AH.isEqual(v1, ((Number) new BigInteger("10")));
+          }).invoke();
+        } else {
+          return false;
+        }
+      }).invoke()), (Object) true, (Object) ((_FunctionTypes._return_P0_E0<Boolean>) () -> {
+        if (AH.isEqual(((Number) new BigInteger("1")), ((Number) new BigInteger("1")))) {
+          return ((_FunctionTypes._return_P0_E0<Boolean>) () -> {
+            Number v1 = AH.mul(((Number) new BigInteger("5")), ((Number) new BigInteger("2")));
+            return AH.isEqual(v1, ((Number) new BigInteger("10")));
+          }).invoke();
+        } else {
+          return false;
+        }
+      }).invoke());
+    } catch (Throwable failure) {
+      throw SourceNodeFailures.attach(failure, "http://127.0.0.1:63320/node?ref=r%3A857bd1a9-fc6d-4f8f-b9d1-c2f774ee6e86%28test.in.expr.os.alt%40tests%29%2F8086792206069713103");
+    }
   }
   @Test
   public void alt_withBlockExpression_item1_4862176901443507804() throws Throwable {
-    Assert.assertEquals("Expected: " + (false) + ", but was: " + (((_FunctionTypes._return_P0_E0<Boolean>) () -> {
-      if (AH.isEqual(((Number) new BigInteger("1")), ((Number) new BigInteger("2")))) {
-        return true;
-      } else {
-        return ((_FunctionTypes._return_P0_E0<Boolean>) () -> {
-          Number v1 = AH.mul(((Number) new BigInteger("5")), ((Number) new BigInteger("2")));
-          return AH.isEqual(v1, ((Number) new BigInteger("11")));
-        }).invoke();
-      }
-    }).invoke()), (Object) false, (Object) ((_FunctionTypes._return_P0_E0<Boolean>) () -> {
-      if (AH.isEqual(((Number) new BigInteger("1")), ((Number) new BigInteger("2")))) {
-        return true;
-      } else {
-        return ((_FunctionTypes._return_P0_E0<Boolean>) () -> {
-          Number v1 = AH.mul(((Number) new BigInteger("5")), ((Number) new BigInteger("2")));
-          return AH.isEqual(v1, ((Number) new BigInteger("11")));
-        }).invoke();
-      }
-    }).invoke());
+    try {
+      Assert.assertEquals("Expected: " + (false) + ", but was: " + (((_FunctionTypes._return_P0_E0<Boolean>) () -> {
+        if (AH.isEqual(((Number) new BigInteger("1")), ((Number) new BigInteger("2")))) {
+          return true;
+        } else {
+          return ((_FunctionTypes._return_P0_E0<Boolean>) () -> {
+            Number v1 = AH.mul(((Number) new BigInteger("5")), ((Number) new BigInteger("2")));
+            return AH.isEqual(v1, ((Number) new BigInteger("11")));
+          }).invoke();
+        }
+      }).invoke()), (Object) false, (Object) ((_FunctionTypes._return_P0_E0<Boolean>) () -> {
+        if (AH.isEqual(((Number) new BigInteger("1")), ((Number) new BigInteger("2")))) {
+          return true;
+        } else {
+          return ((_FunctionTypes._return_P0_E0<Boolean>) () -> {
+            Number v1 = AH.mul(((Number) new BigInteger("5")), ((Number) new BigInteger("2")));
+            return AH.isEqual(v1, ((Number) new BigInteger("11")));
+          }).invoke();
+        }
+      }).invoke());
+    } catch (Throwable failure) {
+      throw SourceNodeFailures.attach(failure, "http://127.0.0.1:63320/node?ref=r%3A857bd1a9-fc6d-4f8f-b9d1-c2f774ee6e86%28test.in.expr.os.alt%40tests%29%2F4862176901443507804");
+    }
   }
   public static Number f1() {
     Number res = ((Number) new BigInteger("1"));
@@ -286,41 +343,49 @@ public class Generated_alt_Test {
   }
   @Test
   public void alt_functions_item0_5096151429183367191() throws Throwable {
-    Assert.assertTrue("Expected: " + (((Number) new BigInteger("0"))) + ", but was: " + (((_FunctionTypes._return_P0_E0<Number>) () -> {
-      if (AH.isEqual(Generated_alt_Test.f1(), ((Number) new BigInteger("1")))) {
-        return ((Number) new BigInteger("0"));
-      } else {
-        return Generated_alt_Test.f1();
-      }
-    }).invoke()), EqualsTestOp.matches(((Number) new BigInteger("0")), ((_FunctionTypes._return_P0_E0<Number>) () -> {
-      if (AH.isEqual(Generated_alt_Test.f1(), ((Number) new BigInteger("1")))) {
-        return ((Number) new BigInteger("0"));
-      } else {
-        return Generated_alt_Test.f1();
-      }
-    }).invoke()));
+    try {
+      Assert.assertTrue("Expected: " + (((Number) new BigInteger("0"))) + ", but was: " + (((_FunctionTypes._return_P0_E0<Number>) () -> {
+        if (AH.isEqual(Generated_alt_Test.f1(), ((Number) new BigInteger("1")))) {
+          return ((Number) new BigInteger("0"));
+        } else {
+          return Generated_alt_Test.f1();
+        }
+      }).invoke()), EqualsTestOp.matches(((Number) new BigInteger("0")), ((_FunctionTypes._return_P0_E0<Number>) () -> {
+        if (AH.isEqual(Generated_alt_Test.f1(), ((Number) new BigInteger("1")))) {
+          return ((Number) new BigInteger("0"));
+        } else {
+          return Generated_alt_Test.f1();
+        }
+      }).invoke()));
+    } catch (Throwable failure) {
+      throw SourceNodeFailures.attach(failure, "http://127.0.0.1:63320/node?ref=r%3A857bd1a9-fc6d-4f8f-b9d1-c2f774ee6e86%28test.in.expr.os.alt%40tests%29%2F5096151429183367191");
+    }
   }
   public static final Number a_ = ((Number) new BigInteger("1"));
   public static final Number b_ = ((Number) new BigInteger("1"));
   @Test
   public void utils_alt_c_7740953487931420188() throws Throwable {
-    Assert.assertTrue("Expected: " + (((Number) new BigInteger("1"))) + ", but was: " + (((_FunctionTypes._return_P0_E0<Number>) () -> {
-      if (AH.isLess(Generated_alt_Test.a_, ((Number) new BigInteger("0"))) && AH.isGreater(Generated_alt_Test.b_, ((Number) new BigInteger("1")))) {
-        return ((Number) new BigInteger("2"));
-      } else if (AH.isGreater(Generated_alt_Test.a_, ((Number) new BigInteger("0"))) && AH.isEqual(Generated_alt_Test.b_, ((Number) new BigInteger("1")))) {
-        return ((Number) new BigInteger("1"));
-      } else {
-        throw new AlternativesException("The proposed alternative does not exist.");
-      }
-    }).invoke()), EqualsTestOp.matches(((Number) new BigInteger("1")), ((_FunctionTypes._return_P0_E0<Number>) () -> {
-      if (AH.isLess(Generated_alt_Test.a_, ((Number) new BigInteger("0"))) && AH.isGreater(Generated_alt_Test.b_, ((Number) new BigInteger("1")))) {
-        return ((Number) new BigInteger("2"));
-      } else if (AH.isGreater(Generated_alt_Test.a_, ((Number) new BigInteger("0"))) && AH.isEqual(Generated_alt_Test.b_, ((Number) new BigInteger("1")))) {
-        return ((Number) new BigInteger("1"));
-      } else {
-        throw new AlternativesException("The proposed alternative does not exist.");
-      }
-    }).invoke()));
+    try {
+      Assert.assertTrue("Expected: " + (((Number) new BigInteger("1"))) + ", but was: " + (((_FunctionTypes._return_P0_E0<Number>) () -> {
+        if (AH.isLess(Generated_alt_Test.a_, ((Number) new BigInteger("0"))) && AH.isGreater(Generated_alt_Test.b_, ((Number) new BigInteger("1")))) {
+          return ((Number) new BigInteger("2"));
+        } else if (AH.isGreater(Generated_alt_Test.a_, ((Number) new BigInteger("0"))) && AH.isEqual(Generated_alt_Test.b_, ((Number) new BigInteger("1")))) {
+          return ((Number) new BigInteger("1"));
+        } else {
+          throw new AlternativesException("The proposed alternative does not exist.");
+        }
+      }).invoke()), EqualsTestOp.matches(((Number) new BigInteger("1")), ((_FunctionTypes._return_P0_E0<Number>) () -> {
+        if (AH.isLess(Generated_alt_Test.a_, ((Number) new BigInteger("0"))) && AH.isGreater(Generated_alt_Test.b_, ((Number) new BigInteger("1")))) {
+          return ((Number) new BigInteger("2"));
+        } else if (AH.isGreater(Generated_alt_Test.a_, ((Number) new BigInteger("0"))) && AH.isEqual(Generated_alt_Test.b_, ((Number) new BigInteger("1")))) {
+          return ((Number) new BigInteger("1"));
+        } else {
+          throw new AlternativesException("The proposed alternative does not exist.");
+        }
+      }).invoke()));
+    } catch (Throwable failure) {
+      throw SourceNodeFailures.attach(failure, "http://127.0.0.1:63320/node?ref=r%3A857bd1a9-fc6d-4f8f-b9d1-c2f774ee6e86%28test.in.expr.os.alt%40tests%29%2F7740953487931420188");
+    }
   }
   public static Number sgnWithVars(Number in) {
     Number res = ((_FunctionTypes._return_P0_E0<Number>) () -> {
