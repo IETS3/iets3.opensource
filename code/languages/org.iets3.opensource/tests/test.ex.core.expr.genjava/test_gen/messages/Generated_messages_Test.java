@@ -6,6 +6,7 @@ import org.iets3.core.expr.genjava.messages.rt.rt.Message;
 import jetbrains.mps.baseLanguage.closures.runtime._FunctionTypes;
 import org.junit.Test;
 import org.junit.Assert;
+import org.iets3.core.expr.genjava.tests.rt.rt.SourceNodeFailures;
 import java.math.BigInteger;
 import org.iets3.core.expr.genjava.messages.rt.rt.BuiltinMessageKinds;
 import org.iets3.core.expr.simpleTypes.runtime.AH;
@@ -30,55 +31,107 @@ public class Generated_messages_Test {
   }
   @Test
   public void MessageEval_item0_4026566441522105256() throws Throwable {
-    Assert.assertEquals("Expected: " + ("m1") + ", but was: " + (Generated_messages_Test.funWithMsg().textWithKind()), (Object) "m1", (Object) Generated_messages_Test.funWithMsg().textWithKind());
+    try {
+      Assert.assertEquals("Expected: " + ("m1") + ", but was: " + (Generated_messages_Test.funWithMsg().textWithKind()), (Object) "m1", (Object) Generated_messages_Test.funWithMsg().textWithKind());
+    } catch (Throwable failure) {
+      throw SourceNodeFailures.attach(failure, "http://127.0.0.1:63320/node?ref=r%3Acc6f834a-e980-4402-b501-57396f6330a8%28messages%40tests%29%2F4026566441522105256");
+    }
   }
   @Test
   public void MessageEval_item1_5299123466388783842() throws Throwable {
-    Assert.assertEquals("Expected: " + ("m1") + ", but was: " + (Messages.m1("r:cc6f834a-e980-4402-b501-57396f6330a8(messages@tests)/5299123466390704284", "http://127.0.0.1:63320/node?ref=r%3Acc6f834a-e980-4402-b501-57396f6330a8%28messages%40tests%29%2F5299123466390704284").textWithKind()), (Object) "m1", (Object) Messages.m1("r:cc6f834a-e980-4402-b501-57396f6330a8(messages@tests)/5299123466390704284", "http://127.0.0.1:63320/node?ref=r%3Acc6f834a-e980-4402-b501-57396f6330a8%28messages%40tests%29%2F5299123466390704284").textWithKind());
+    try {
+      Assert.assertEquals("Expected: " + ("m1") + ", but was: " + (Messages.m1("r:cc6f834a-e980-4402-b501-57396f6330a8(messages@tests)/5299123466390704284", "http://127.0.0.1:63320/node?ref=r%3Acc6f834a-e980-4402-b501-57396f6330a8%28messages%40tests%29%2F5299123466390704284").textWithKind()), (Object) "m1", (Object) Messages.m1("r:cc6f834a-e980-4402-b501-57396f6330a8(messages@tests)/5299123466390704284", "http://127.0.0.1:63320/node?ref=r%3Acc6f834a-e980-4402-b501-57396f6330a8%28messages%40tests%29%2F5299123466390704284").textWithKind());
+    } catch (Throwable failure) {
+      throw SourceNodeFailures.attach(failure, "http://127.0.0.1:63320/node?ref=r%3Acc6f834a-e980-4402-b501-57396f6330a8%28messages%40tests%29%2F5299123466388783842");
+    }
   }
   @Test
   public void MessageEval_item2_4026566441522197413() throws Throwable {
-    Assert.assertEquals("Expected: " + ("m2") + ", but was: " + (Messages.m2("r:cc6f834a-e980-4402-b501-57396f6330a8(messages@tests)/4026566441522197415", "http://127.0.0.1:63320/node?ref=r%3Acc6f834a-e980-4402-b501-57396f6330a8%28messages%40tests%29%2F4026566441522197415").textWithKind()), (Object) "m2", (Object) Messages.m2("r:cc6f834a-e980-4402-b501-57396f6330a8(messages@tests)/4026566441522197415", "http://127.0.0.1:63320/node?ref=r%3Acc6f834a-e980-4402-b501-57396f6330a8%28messages%40tests%29%2F4026566441522197415").textWithKind());
+    try {
+      Assert.assertEquals("Expected: " + ("m2") + ", but was: " + (Messages.m2("r:cc6f834a-e980-4402-b501-57396f6330a8(messages@tests)/4026566441522197415", "http://127.0.0.1:63320/node?ref=r%3Acc6f834a-e980-4402-b501-57396f6330a8%28messages%40tests%29%2F4026566441522197415").textWithKind()), (Object) "m2", (Object) Messages.m2("r:cc6f834a-e980-4402-b501-57396f6330a8(messages@tests)/4026566441522197415", "http://127.0.0.1:63320/node?ref=r%3Acc6f834a-e980-4402-b501-57396f6330a8%28messages%40tests%29%2F4026566441522197415").textWithKind());
+    } catch (Throwable failure) {
+      throw SourceNodeFailures.attach(failure, "http://127.0.0.1:63320/node?ref=r%3Acc6f834a-e980-4402-b501-57396f6330a8%28messages%40tests%29%2F4026566441522197413");
+    }
   }
   @Test
   public void MessageEval_item3_4026566441522197444() throws Throwable {
-    Assert.assertEquals("Expected: " + ("m3") + ", but was: " + (Messages.m3("r:cc6f834a-e980-4402-b501-57396f6330a8(messages@tests)/4026566441522197446", "http://127.0.0.1:63320/node?ref=r%3Acc6f834a-e980-4402-b501-57396f6330a8%28messages%40tests%29%2F4026566441522197446").textWithKind()), (Object) "m3", (Object) Messages.m3("r:cc6f834a-e980-4402-b501-57396f6330a8(messages@tests)/4026566441522197446", "http://127.0.0.1:63320/node?ref=r%3Acc6f834a-e980-4402-b501-57396f6330a8%28messages%40tests%29%2F4026566441522197446").textWithKind());
+    try {
+      Assert.assertEquals("Expected: " + ("m3") + ", but was: " + (Messages.m3("r:cc6f834a-e980-4402-b501-57396f6330a8(messages@tests)/4026566441522197446", "http://127.0.0.1:63320/node?ref=r%3Acc6f834a-e980-4402-b501-57396f6330a8%28messages%40tests%29%2F4026566441522197446").textWithKind()), (Object) "m3", (Object) Messages.m3("r:cc6f834a-e980-4402-b501-57396f6330a8(messages@tests)/4026566441522197446", "http://127.0.0.1:63320/node?ref=r%3Acc6f834a-e980-4402-b501-57396f6330a8%28messages%40tests%29%2F4026566441522197446").textWithKind());
+    } catch (Throwable failure) {
+      throw SourceNodeFailures.attach(failure, "http://127.0.0.1:63320/node?ref=r%3Acc6f834a-e980-4402-b501-57396f6330a8%28messages%40tests%29%2F4026566441522197444");
+    }
   }
   @Test
   public void MessageEval_item4_4026566441522197487() throws Throwable {
-    Assert.assertEquals("Expected: " + ("m4 42") + ", but was: " + (Messages.withStringArgs.m4("r:cc6f834a-e980-4402-b501-57396f6330a8(messages@tests)/4026566441522197489", "http://127.0.0.1:63320/node?ref=r%3Acc6f834a-e980-4402-b501-57396f6330a8%28messages%40tests%29%2F4026566441522197489", "42").textWithKind()), (Object) "m4 42", (Object) Messages.withStringArgs.m4("r:cc6f834a-e980-4402-b501-57396f6330a8(messages@tests)/4026566441522197489", "http://127.0.0.1:63320/node?ref=r%3Acc6f834a-e980-4402-b501-57396f6330a8%28messages%40tests%29%2F4026566441522197489", "42").textWithKind());
+    try {
+      Assert.assertEquals("Expected: " + ("m4 42") + ", but was: " + (Messages.withStringArgs.m4("r:cc6f834a-e980-4402-b501-57396f6330a8(messages@tests)/4026566441522197489", "http://127.0.0.1:63320/node?ref=r%3Acc6f834a-e980-4402-b501-57396f6330a8%28messages%40tests%29%2F4026566441522197489", "42").textWithKind()), (Object) "m4 42", (Object) Messages.withStringArgs.m4("r:cc6f834a-e980-4402-b501-57396f6330a8(messages@tests)/4026566441522197489", "http://127.0.0.1:63320/node?ref=r%3Acc6f834a-e980-4402-b501-57396f6330a8%28messages%40tests%29%2F4026566441522197489", "42").textWithKind());
+    } catch (Throwable failure) {
+      throw SourceNodeFailures.attach(failure, "http://127.0.0.1:63320/node?ref=r%3Acc6f834a-e980-4402-b501-57396f6330a8%28messages%40tests%29%2F4026566441522197487");
+    }
   }
   @Test
   public void MessageEval_item5_4026566441522197542() throws Throwable {
-    Assert.assertEquals("Expected: " + ("m533") + ", but was: " + (Messages.withStringArgs.m5("r:cc6f834a-e980-4402-b501-57396f6330a8(messages@tests)/4026566441522197544", "http://127.0.0.1:63320/node?ref=r%3Acc6f834a-e980-4402-b501-57396f6330a8%28messages%40tests%29%2F4026566441522197544", "33").textWithKind()), (Object) "m533", (Object) Messages.withStringArgs.m5("r:cc6f834a-e980-4402-b501-57396f6330a8(messages@tests)/4026566441522197544", "http://127.0.0.1:63320/node?ref=r%3Acc6f834a-e980-4402-b501-57396f6330a8%28messages%40tests%29%2F4026566441522197544", "33").textWithKind());
+    try {
+      Assert.assertEquals("Expected: " + ("m533") + ", but was: " + (Messages.withStringArgs.m5("r:cc6f834a-e980-4402-b501-57396f6330a8(messages@tests)/4026566441522197544", "http://127.0.0.1:63320/node?ref=r%3Acc6f834a-e980-4402-b501-57396f6330a8%28messages%40tests%29%2F4026566441522197544", "33").textWithKind()), (Object) "m533", (Object) Messages.withStringArgs.m5("r:cc6f834a-e980-4402-b501-57396f6330a8(messages@tests)/4026566441522197544", "http://127.0.0.1:63320/node?ref=r%3Acc6f834a-e980-4402-b501-57396f6330a8%28messages%40tests%29%2F4026566441522197544", "33").textWithKind());
+    } catch (Throwable failure) {
+      throw SourceNodeFailures.attach(failure, "http://127.0.0.1:63320/node?ref=r%3Acc6f834a-e980-4402-b501-57396f6330a8%28messages%40tests%29%2F4026566441522197542");
+    }
   }
   @Test
   public void MessageEval_item6_4026566441522664487() throws Throwable {
-    Assert.assertEquals("Expected: " + ("m4 42") + ", but was: " + (Messages.withIntArgs.m4("r:cc6f834a-e980-4402-b501-57396f6330a8(messages@tests)/4026566441522664489", "http://127.0.0.1:63320/node?ref=r%3Acc6f834a-e980-4402-b501-57396f6330a8%28messages%40tests%29%2F4026566441522664489", ((Number) new BigInteger("42"))).textWithKind()), (Object) "m4 42", (Object) Messages.withIntArgs.m4("r:cc6f834a-e980-4402-b501-57396f6330a8(messages@tests)/4026566441522664489", "http://127.0.0.1:63320/node?ref=r%3Acc6f834a-e980-4402-b501-57396f6330a8%28messages%40tests%29%2F4026566441522664489", ((Number) new BigInteger("42"))).textWithKind());
+    try {
+      Assert.assertEquals("Expected: " + ("m4 42") + ", but was: " + (Messages.withIntArgs.m4("r:cc6f834a-e980-4402-b501-57396f6330a8(messages@tests)/4026566441522664489", "http://127.0.0.1:63320/node?ref=r%3Acc6f834a-e980-4402-b501-57396f6330a8%28messages%40tests%29%2F4026566441522664489", ((Number) new BigInteger("42"))).textWithKind()), (Object) "m4 42", (Object) Messages.withIntArgs.m4("r:cc6f834a-e980-4402-b501-57396f6330a8(messages@tests)/4026566441522664489", "http://127.0.0.1:63320/node?ref=r%3Acc6f834a-e980-4402-b501-57396f6330a8%28messages%40tests%29%2F4026566441522664489", ((Number) new BigInteger("42"))).textWithKind());
+    } catch (Throwable failure) {
+      throw SourceNodeFailures.attach(failure, "http://127.0.0.1:63320/node?ref=r%3Acc6f834a-e980-4402-b501-57396f6330a8%28messages%40tests%29%2F4026566441522664487");
+    }
   }
   @Test
   public void MessageEval_item7_4026566441522664478() throws Throwable {
-    Assert.assertEquals("Expected: " + ("m533") + ", but was: " + (Messages.withIntArgs.m5("r:cc6f834a-e980-4402-b501-57396f6330a8(messages@tests)/4026566441522664480", "http://127.0.0.1:63320/node?ref=r%3Acc6f834a-e980-4402-b501-57396f6330a8%28messages%40tests%29%2F4026566441522664480", ((Number) new BigInteger("33"))).textWithKind()), (Object) "m533", (Object) Messages.withIntArgs.m5("r:cc6f834a-e980-4402-b501-57396f6330a8(messages@tests)/4026566441522664480", "http://127.0.0.1:63320/node?ref=r%3Acc6f834a-e980-4402-b501-57396f6330a8%28messages%40tests%29%2F4026566441522664480", ((Number) new BigInteger("33"))).textWithKind());
+    try {
+      Assert.assertEquals("Expected: " + ("m533") + ", but was: " + (Messages.withIntArgs.m5("r:cc6f834a-e980-4402-b501-57396f6330a8(messages@tests)/4026566441522664480", "http://127.0.0.1:63320/node?ref=r%3Acc6f834a-e980-4402-b501-57396f6330a8%28messages%40tests%29%2F4026566441522664480", ((Number) new BigInteger("33"))).textWithKind()), (Object) "m533", (Object) Messages.withIntArgs.m5("r:cc6f834a-e980-4402-b501-57396f6330a8(messages@tests)/4026566441522664480", "http://127.0.0.1:63320/node?ref=r%3Acc6f834a-e980-4402-b501-57396f6330a8%28messages%40tests%29%2F4026566441522664480", ((Number) new BigInteger("33"))).textWithKind());
+    } catch (Throwable failure) {
+      throw SourceNodeFailures.attach(failure, "http://127.0.0.1:63320/node?ref=r%3Acc6f834a-e980-4402-b501-57396f6330a8%28messages%40tests%29%2F4026566441522664478");
+    }
   }
   @Test
   public void MessageEval_item8_4026566441522805704() throws Throwable {
-    Assert.assertEquals("Expected: " + ("m6 33 m6 true") + ", but was: " + (Messages.withIntArgs.sub.m6("r:cc6f834a-e980-4402-b501-57396f6330a8(messages@tests)/4026566441522805706", "http://127.0.0.1:63320/node?ref=r%3Acc6f834a-e980-4402-b501-57396f6330a8%28messages%40tests%29%2F4026566441522805706", ((Number) new BigInteger("33")), true).textWithKind()), (Object) "m6 33 m6 true", (Object) Messages.withIntArgs.sub.m6("r:cc6f834a-e980-4402-b501-57396f6330a8(messages@tests)/4026566441522805706", "http://127.0.0.1:63320/node?ref=r%3Acc6f834a-e980-4402-b501-57396f6330a8%28messages%40tests%29%2F4026566441522805706", ((Number) new BigInteger("33")), true).textWithKind());
+    try {
+      Assert.assertEquals("Expected: " + ("m6 33 m6 true") + ", but was: " + (Messages.withIntArgs.sub.m6("r:cc6f834a-e980-4402-b501-57396f6330a8(messages@tests)/4026566441522805706", "http://127.0.0.1:63320/node?ref=r%3Acc6f834a-e980-4402-b501-57396f6330a8%28messages%40tests%29%2F4026566441522805706", ((Number) new BigInteger("33")), true).textWithKind()), (Object) "m6 33 m6 true", (Object) Messages.withIntArgs.sub.m6("r:cc6f834a-e980-4402-b501-57396f6330a8(messages@tests)/4026566441522805706", "http://127.0.0.1:63320/node?ref=r%3Acc6f834a-e980-4402-b501-57396f6330a8%28messages%40tests%29%2F4026566441522805706", ((Number) new BigInteger("33")), true).textWithKind());
+    } catch (Throwable failure) {
+      throw SourceNodeFailures.attach(failure, "http://127.0.0.1:63320/node?ref=r%3Acc6f834a-e980-4402-b501-57396f6330a8%28messages%40tests%29%2F4026566441522805704");
+    }
   }
   @Test
   public void MessageEval_item9_6912784008700874155() throws Throwable {
-    Assert.assertEquals("Expected: " + ("WARNING: w") + ", but was: " + (Messages.withKinds.w("r:cc6f834a-e980-4402-b501-57396f6330a8(messages@tests)/6912784008700874161", "http://127.0.0.1:63320/node?ref=r%3Acc6f834a-e980-4402-b501-57396f6330a8%28messages%40tests%29%2F6912784008700874161").textWithKind()), (Object) "WARNING: w", (Object) Messages.withKinds.w("r:cc6f834a-e980-4402-b501-57396f6330a8(messages@tests)/6912784008700874161", "http://127.0.0.1:63320/node?ref=r%3Acc6f834a-e980-4402-b501-57396f6330a8%28messages%40tests%29%2F6912784008700874161").textWithKind());
+    try {
+      Assert.assertEquals("Expected: " + ("WARNING: w") + ", but was: " + (Messages.withKinds.w("r:cc6f834a-e980-4402-b501-57396f6330a8(messages@tests)/6912784008700874161", "http://127.0.0.1:63320/node?ref=r%3Acc6f834a-e980-4402-b501-57396f6330a8%28messages%40tests%29%2F6912784008700874161").textWithKind()), (Object) "WARNING: w", (Object) Messages.withKinds.w("r:cc6f834a-e980-4402-b501-57396f6330a8(messages@tests)/6912784008700874161", "http://127.0.0.1:63320/node?ref=r%3Acc6f834a-e980-4402-b501-57396f6330a8%28messages%40tests%29%2F6912784008700874161").textWithKind());
+    } catch (Throwable failure) {
+      throw SourceNodeFailures.attach(failure, "http://127.0.0.1:63320/node?ref=r%3Acc6f834a-e980-4402-b501-57396f6330a8%28messages%40tests%29%2F6912784008700874155");
+    }
   }
   @Test
   public void MessageEval_item10_6912784008700875808() throws Throwable {
-    Assert.assertEquals("Expected: " + ("ERROR 4711: e") + ", but was: " + (Messages.withKinds.e("r:cc6f834a-e980-4402-b501-57396f6330a8(messages@tests)/6912784008700875810", "http://127.0.0.1:63320/node?ref=r%3Acc6f834a-e980-4402-b501-57396f6330a8%28messages%40tests%29%2F6912784008700875810").textWithKind()), (Object) "ERROR 4711: e", (Object) Messages.withKinds.e("r:cc6f834a-e980-4402-b501-57396f6330a8(messages@tests)/6912784008700875810", "http://127.0.0.1:63320/node?ref=r%3Acc6f834a-e980-4402-b501-57396f6330a8%28messages%40tests%29%2F6912784008700875810").textWithKind());
+    try {
+      Assert.assertEquals("Expected: " + ("ERROR 4711: e") + ", but was: " + (Messages.withKinds.e("r:cc6f834a-e980-4402-b501-57396f6330a8(messages@tests)/6912784008700875810", "http://127.0.0.1:63320/node?ref=r%3Acc6f834a-e980-4402-b501-57396f6330a8%28messages%40tests%29%2F6912784008700875810").textWithKind()), (Object) "ERROR 4711: e", (Object) Messages.withKinds.e("r:cc6f834a-e980-4402-b501-57396f6330a8(messages@tests)/6912784008700875810", "http://127.0.0.1:63320/node?ref=r%3Acc6f834a-e980-4402-b501-57396f6330a8%28messages%40tests%29%2F6912784008700875810").textWithKind());
+    } catch (Throwable failure) {
+      throw SourceNodeFailures.attach(failure, "http://127.0.0.1:63320/node?ref=r%3Acc6f834a-e980-4402-b501-57396f6330a8%28messages%40tests%29%2F6912784008700875808");
+    }
   }
   @Test
   public void Coercions_item0_1887965683633945800() throws Throwable {
-    Assert.assertEquals("Expected: " + ("This is the point 1/2") + ", but was: " + (Messages.mPoint("r:cc6f834a-e980-4402-b501-57396f6330a8(messages@tests)/1887965683633949236", "http://127.0.0.1:63320/node?ref=r%3Acc6f834a-e980-4402-b501-57396f6330a8%28messages%40tests%29%2F1887965683633949236", new Data.Point(((Number) new BigInteger("1")), ((Number) new BigInteger("2")))).textWithKind()), (Object) "This is the point 1/2", (Object) Messages.mPoint("r:cc6f834a-e980-4402-b501-57396f6330a8(messages@tests)/1887965683633949236", "http://127.0.0.1:63320/node?ref=r%3Acc6f834a-e980-4402-b501-57396f6330a8%28messages%40tests%29%2F1887965683633949236", new Data.Point(((Number) new BigInteger("1")), ((Number) new BigInteger("2")))).textWithKind());
+    try {
+      Assert.assertEquals("Expected: " + ("This is the point 1/2") + ", but was: " + (Messages.mPoint("r:cc6f834a-e980-4402-b501-57396f6330a8(messages@tests)/1887965683633949236", "http://127.0.0.1:63320/node?ref=r%3Acc6f834a-e980-4402-b501-57396f6330a8%28messages%40tests%29%2F1887965683633949236", new Data.Point(((Number) new BigInteger("1")), ((Number) new BigInteger("2")))).textWithKind()), (Object) "This is the point 1/2", (Object) Messages.mPoint("r:cc6f834a-e980-4402-b501-57396f6330a8(messages@tests)/1887965683633949236", "http://127.0.0.1:63320/node?ref=r%3Acc6f834a-e980-4402-b501-57396f6330a8%28messages%40tests%29%2F1887965683633949236", new Data.Point(((Number) new BigInteger("1")), ((Number) new BigInteger("2")))).textWithKind());
+    } catch (Throwable failure) {
+      throw SourceNodeFailures.attach(failure, "http://127.0.0.1:63320/node?ref=r%3Acc6f834a-e980-4402-b501-57396f6330a8%28messages%40tests%29%2F1887965683633945800");
+    }
   }
   @Test
   public void Coercions_item1_1887965683634059109() throws Throwable {
-    Assert.assertEquals("Expected: " + ("This is a lot of 100 EUR") + ", but was: " + (Messages.mMoney("r:cc6f834a-e980-4402-b501-57396f6330a8(messages@tests)/1887965683634059111", "http://127.0.0.1:63320/node?ref=r%3Acc6f834a-e980-4402-b501-57396f6330a8%28messages%40tests%29%2F1887965683634059111", ((Number) new BigInteger("100"))).textWithKind()), (Object) "This is a lot of 100 EUR", (Object) Messages.mMoney("r:cc6f834a-e980-4402-b501-57396f6330a8(messages@tests)/1887965683634059111", "http://127.0.0.1:63320/node?ref=r%3Acc6f834a-e980-4402-b501-57396f6330a8%28messages%40tests%29%2F1887965683634059111", ((Number) new BigInteger("100"))).textWithKind());
+    try {
+      Assert.assertEquals("Expected: " + ("This is a lot of 100 EUR") + ", but was: " + (Messages.mMoney("r:cc6f834a-e980-4402-b501-57396f6330a8(messages@tests)/1887965683634059111", "http://127.0.0.1:63320/node?ref=r%3Acc6f834a-e980-4402-b501-57396f6330a8%28messages%40tests%29%2F1887965683634059111", ((Number) new BigInteger("100"))).textWithKind()), (Object) "This is a lot of 100 EUR", (Object) Messages.mMoney("r:cc6f834a-e980-4402-b501-57396f6330a8(messages@tests)/1887965683634059111", "http://127.0.0.1:63320/node?ref=r%3Acc6f834a-e980-4402-b501-57396f6330a8%28messages%40tests%29%2F1887965683634059111", ((Number) new BigInteger("100"))).textWithKind());
+    } catch (Throwable failure) {
+      throw SourceNodeFailures.attach(failure, "http://127.0.0.1:63320/node?ref=r%3Acc6f834a-e980-4402-b501-57396f6330a8%28messages%40tests%29%2F1887965683634059109");
+    }
   }
   public static class InlineMessages {
     public static Message xeey(String _nodeReference, String _nodeUrl, Number x, Number y) {
@@ -300,40 +353,52 @@ public class Generated_messages_Test {
   @Test
   public void AssertError_item0_5299123466391075129() throws Throwable {
     try {
-      ((_FunctionTypes._void_P0_E0) () -> {
-        if (new Point1(((Number) new BigInteger("1")), ((Number) new BigInteger("2"))) == null) {
-          throw new NullPointerException("No Result in Confail Testitem");
-        }
-      }).invoke();
-      Assert.fail("Constraint failed");
-    } catch (Exception e) {
-      // expected exception
+      try {
+        ((_FunctionTypes._void_P0_E0) () -> {
+          if (new Point1(((Number) new BigInteger("1")), ((Number) new BigInteger("2"))) == null) {
+            throw new NullPointerException("No Result in Confail Testitem");
+          }
+        }).invoke();
+        Assert.fail("Constraint failed");
+      } catch (Exception e) {
+        // expected exception
+      }
+    } catch (Throwable failure) {
+      throw SourceNodeFailures.attach(failure, "http://127.0.0.1:63320/node?ref=r%3Acc6f834a-e980-4402-b501-57396f6330a8%28messages%40tests%29%2F5299123466391075129");
     }
   }
   @Test
   public void AssertError_item1_5299123466391077273() throws Throwable {
     try {
-      ((_FunctionTypes._void_P0_E0) () -> {
-        if (new Point2(((Number) new BigInteger("1")), ((Number) new BigInteger("2"))) == null) {
-          throw new NullPointerException("No Result in Confail Testitem");
-        }
-      }).invoke();
-      Assert.fail("Constraint failed");
-    } catch (Exception e) {
-      // expected exception
+      try {
+        ((_FunctionTypes._void_P0_E0) () -> {
+          if (new Point2(((Number) new BigInteger("1")), ((Number) new BigInteger("2"))) == null) {
+            throw new NullPointerException("No Result in Confail Testitem");
+          }
+        }).invoke();
+        Assert.fail("Constraint failed");
+      } catch (Exception e) {
+        // expected exception
+      }
+    } catch (Throwable failure) {
+      throw SourceNodeFailures.attach(failure, "http://127.0.0.1:63320/node?ref=r%3Acc6f834a-e980-4402-b501-57396f6330a8%28messages%40tests%29%2F5299123466391077273");
     }
   }
   @Test
   public void failWithAMessage_item0_6563693853157220326() throws Throwable {
     try {
-      ((_FunctionTypes._void_P0_E0) () -> {
-        if (FailException.fail(Messages.failure42("r:cc6f834a-e980-4402-b501-57396f6330a8(messages@tests)/6563693853157222072", "http://127.0.0.1:63320/node?ref=r%3Acc6f834a-e980-4402-b501-57396f6330a8%28messages%40tests%29%2F6563693853157222072")) == null) {
-          throw new NullPointerException("No Result in Confail Testitem");
-        }
-      }).invoke();
-      Assert.fail("Constraint failed");
-    } catch (Exception e) {
-      // expected exception
+      try {
+        ((_FunctionTypes._void_P0_E0) () -> {
+          if (FailException.fail(Messages.failure42("r:cc6f834a-e980-4402-b501-57396f6330a8(messages@tests)/6563693853157222072", "http://127.0.0.1:63320/node?ref=r%3Acc6f834a-e980-4402-b501-57396f6330a8%28messages%40tests%29%2F6563693853157222072")) == null) {
+            throw new NullPointerException("No Result in Confail Testitem");
+          }
+        }).invoke();
+        Assert.fail("Constraint failed");
+      } catch (Exception e) {
+        // expected exception
+      }
+    } catch (Throwable failure) {
+      throw SourceNodeFailures.attach(failure, "http://127.0.0.1:63320/node?ref=r%3Acc6f834a-e980-4402-b501-57396f6330a8%28messages%40tests%29%2F6563693853157220326");
     }
   }
 

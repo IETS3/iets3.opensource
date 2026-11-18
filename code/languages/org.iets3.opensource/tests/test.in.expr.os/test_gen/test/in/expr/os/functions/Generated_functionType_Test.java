@@ -17,6 +17,7 @@ import java.util.Comparator;
 import org.pcollections.Empty;
 import org.junit.Test;
 import org.junit.Assert;
+import org.iets3.core.expr.genjava.tests.rt.rt.SourceNodeFailures;
 import org.iets3.core.expr.genjava.tests.rt.rt.EqualsTestOp;
 
 /**
@@ -529,673 +530,761 @@ public class Generated_functionType_Test {
   }
   @Test
   public void checkAllFunctionsCanBeExecuted_item0_6228467984864988025() throws Throwable {
-    Assert.assertEquals("Expected: " + (((_FunctionTypes._return_P0_E0<TreePVector<Number>>) () -> {
-      TreePVector<Number> tpv = TreePVector.empty();
-      tpv = tpv.plus(((Number) new BigInteger("1")));
-      tpv = tpv.plus(((Number) new BigInteger("2")));
-      tpv = tpv.plus(((Number) new BigInteger("3")));
-      return tpv;
-    }).invoke()) + ", but was: " + (Generated_functionType_Test.test_0(((_FunctionTypes._return_P0_E0<TreePVector<Number>>) () -> {
-      TreePVector<Number> tpv = TreePVector.empty();
-      tpv = tpv.plus(((Number) new BigInteger("1")));
-      tpv = tpv.plus(((Number) new BigInteger("2")));
-      tpv = tpv.plus(((Number) new BigInteger("3")));
-      return tpv;
-    }).invoke())), (Object) ((_FunctionTypes._return_P0_E0<TreePVector<Number>>) () -> {
-      TreePVector<Number> tpv = TreePVector.empty();
-      tpv = tpv.plus(((Number) new BigInteger("1")));
-      tpv = tpv.plus(((Number) new BigInteger("2")));
-      tpv = tpv.plus(((Number) new BigInteger("3")));
-      return tpv;
-    }).invoke(), (Object) Generated_functionType_Test.test_0(((_FunctionTypes._return_P0_E0<TreePVector<Number>>) () -> {
-      TreePVector<Number> tpv = TreePVector.empty();
-      tpv = tpv.plus(((Number) new BigInteger("1")));
-      tpv = tpv.plus(((Number) new BigInteger("2")));
-      tpv = tpv.plus(((Number) new BigInteger("3")));
-      return tpv;
-    }).invoke()));
+    try {
+      Assert.assertEquals("Expected: " + (((_FunctionTypes._return_P0_E0<TreePVector<Number>>) () -> {
+        TreePVector<Number> tpv = TreePVector.empty();
+        tpv = tpv.plus(((Number) new BigInteger("1")));
+        tpv = tpv.plus(((Number) new BigInteger("2")));
+        tpv = tpv.plus(((Number) new BigInteger("3")));
+        return tpv;
+      }).invoke()) + ", but was: " + (Generated_functionType_Test.test_0(((_FunctionTypes._return_P0_E0<TreePVector<Number>>) () -> {
+        TreePVector<Number> tpv = TreePVector.empty();
+        tpv = tpv.plus(((Number) new BigInteger("1")));
+        tpv = tpv.plus(((Number) new BigInteger("2")));
+        tpv = tpv.plus(((Number) new BigInteger("3")));
+        return tpv;
+      }).invoke())), (Object) ((_FunctionTypes._return_P0_E0<TreePVector<Number>>) () -> {
+        TreePVector<Number> tpv = TreePVector.empty();
+        tpv = tpv.plus(((Number) new BigInteger("1")));
+        tpv = tpv.plus(((Number) new BigInteger("2")));
+        tpv = tpv.plus(((Number) new BigInteger("3")));
+        return tpv;
+      }).invoke(), (Object) Generated_functionType_Test.test_0(((_FunctionTypes._return_P0_E0<TreePVector<Number>>) () -> {
+        TreePVector<Number> tpv = TreePVector.empty();
+        tpv = tpv.plus(((Number) new BigInteger("1")));
+        tpv = tpv.plus(((Number) new BigInteger("2")));
+        tpv = tpv.plus(((Number) new BigInteger("3")));
+        return tpv;
+      }).invoke()));
+    } catch (Throwable failure) {
+      throw SourceNodeFailures.attach(failure, "http://127.0.0.1:63320/node?ref=r%3Af9a70877-66f3-464b-86cb-67a9d543be8c%28test.in.expr.os.functions%40tests%29%2F6228467984864988025");
+    }
   }
   @Test
   public void checkAllFunctionsCanBeExecuted_item1_6228467984864990841() throws Throwable {
-    Assert.assertEquals("Expected: " + (((_FunctionTypes._return_P0_E0<TreePVector<Number>>) () -> {
-      TreePVector<Number> tpv = TreePVector.empty();
-      tpv = tpv.plus(((Number) new BigInteger("1")));
-      tpv = tpv.plus(((Number) new BigInteger("2")));
-      tpv = tpv.plus(((Number) new BigInteger("3")));
-      return tpv;
-    }).invoke()) + ", but was: " + (Generated_functionType_Test.test_1(((_FunctionTypes._return_P0_E0<TreePVector<Number>>) () -> {
-      TreePVector<Number> tpv = TreePVector.empty();
-      tpv = tpv.plus(((Number) new BigInteger("1")));
-      tpv = tpv.plus(((Number) new BigInteger("2")));
-      tpv = tpv.plus(((Number) new BigInteger("3")));
-      return tpv;
-    }).invoke())), (Object) ((_FunctionTypes._return_P0_E0<TreePVector<Number>>) () -> {
-      TreePVector<Number> tpv = TreePVector.empty();
-      tpv = tpv.plus(((Number) new BigInteger("1")));
-      tpv = tpv.plus(((Number) new BigInteger("2")));
-      tpv = tpv.plus(((Number) new BigInteger("3")));
-      return tpv;
-    }).invoke(), (Object) Generated_functionType_Test.test_1(((_FunctionTypes._return_P0_E0<TreePVector<Number>>) () -> {
-      TreePVector<Number> tpv = TreePVector.empty();
-      tpv = tpv.plus(((Number) new BigInteger("1")));
-      tpv = tpv.plus(((Number) new BigInteger("2")));
-      tpv = tpv.plus(((Number) new BigInteger("3")));
-      return tpv;
-    }).invoke()));
+    try {
+      Assert.assertEquals("Expected: " + (((_FunctionTypes._return_P0_E0<TreePVector<Number>>) () -> {
+        TreePVector<Number> tpv = TreePVector.empty();
+        tpv = tpv.plus(((Number) new BigInteger("1")));
+        tpv = tpv.plus(((Number) new BigInteger("2")));
+        tpv = tpv.plus(((Number) new BigInteger("3")));
+        return tpv;
+      }).invoke()) + ", but was: " + (Generated_functionType_Test.test_1(((_FunctionTypes._return_P0_E0<TreePVector<Number>>) () -> {
+        TreePVector<Number> tpv = TreePVector.empty();
+        tpv = tpv.plus(((Number) new BigInteger("1")));
+        tpv = tpv.plus(((Number) new BigInteger("2")));
+        tpv = tpv.plus(((Number) new BigInteger("3")));
+        return tpv;
+      }).invoke())), (Object) ((_FunctionTypes._return_P0_E0<TreePVector<Number>>) () -> {
+        TreePVector<Number> tpv = TreePVector.empty();
+        tpv = tpv.plus(((Number) new BigInteger("1")));
+        tpv = tpv.plus(((Number) new BigInteger("2")));
+        tpv = tpv.plus(((Number) new BigInteger("3")));
+        return tpv;
+      }).invoke(), (Object) Generated_functionType_Test.test_1(((_FunctionTypes._return_P0_E0<TreePVector<Number>>) () -> {
+        TreePVector<Number> tpv = TreePVector.empty();
+        tpv = tpv.plus(((Number) new BigInteger("1")));
+        tpv = tpv.plus(((Number) new BigInteger("2")));
+        tpv = tpv.plus(((Number) new BigInteger("3")));
+        return tpv;
+      }).invoke()));
+    } catch (Throwable failure) {
+      throw SourceNodeFailures.attach(failure, "http://127.0.0.1:63320/node?ref=r%3Af9a70877-66f3-464b-86cb-67a9d543be8c%28test.in.expr.os.functions%40tests%29%2F6228467984864990841");
+    }
   }
   @Test
   public void checkAllFunctionsCanBeExecuted_item2_6228467984864990876() throws Throwable {
-    Assert.assertEquals("Expected: " + (((_FunctionTypes._return_P0_E0<TreePVector<Number>>) () -> {
-      TreePVector<Number> tpv = TreePVector.empty();
-      tpv = tpv.plus(((Number) new BigInteger("1")));
-      tpv = tpv.plus(((Number) new BigInteger("2")));
-      tpv = tpv.plus(((Number) new BigInteger("3")));
-      return tpv;
-    }).invoke()) + ", but was: " + (Generated_functionType_Test.test_2(((_FunctionTypes._return_P0_E0<TreePVector<Number>>) () -> {
-      TreePVector<Number> tpv = TreePVector.empty();
-      tpv = tpv.plus(((Number) new BigInteger("1")));
-      tpv = tpv.plus(((Number) new BigInteger("2")));
-      tpv = tpv.plus(((Number) new BigInteger("3")));
-      return tpv;
-    }).invoke())), (Object) ((_FunctionTypes._return_P0_E0<TreePVector<Number>>) () -> {
-      TreePVector<Number> tpv = TreePVector.empty();
-      tpv = tpv.plus(((Number) new BigInteger("1")));
-      tpv = tpv.plus(((Number) new BigInteger("2")));
-      tpv = tpv.plus(((Number) new BigInteger("3")));
-      return tpv;
-    }).invoke(), (Object) Generated_functionType_Test.test_2(((_FunctionTypes._return_P0_E0<TreePVector<Number>>) () -> {
-      TreePVector<Number> tpv = TreePVector.empty();
-      tpv = tpv.plus(((Number) new BigInteger("1")));
-      tpv = tpv.plus(((Number) new BigInteger("2")));
-      tpv = tpv.plus(((Number) new BigInteger("3")));
-      return tpv;
-    }).invoke()));
+    try {
+      Assert.assertEquals("Expected: " + (((_FunctionTypes._return_P0_E0<TreePVector<Number>>) () -> {
+        TreePVector<Number> tpv = TreePVector.empty();
+        tpv = tpv.plus(((Number) new BigInteger("1")));
+        tpv = tpv.plus(((Number) new BigInteger("2")));
+        tpv = tpv.plus(((Number) new BigInteger("3")));
+        return tpv;
+      }).invoke()) + ", but was: " + (Generated_functionType_Test.test_2(((_FunctionTypes._return_P0_E0<TreePVector<Number>>) () -> {
+        TreePVector<Number> tpv = TreePVector.empty();
+        tpv = tpv.plus(((Number) new BigInteger("1")));
+        tpv = tpv.plus(((Number) new BigInteger("2")));
+        tpv = tpv.plus(((Number) new BigInteger("3")));
+        return tpv;
+      }).invoke())), (Object) ((_FunctionTypes._return_P0_E0<TreePVector<Number>>) () -> {
+        TreePVector<Number> tpv = TreePVector.empty();
+        tpv = tpv.plus(((Number) new BigInteger("1")));
+        tpv = tpv.plus(((Number) new BigInteger("2")));
+        tpv = tpv.plus(((Number) new BigInteger("3")));
+        return tpv;
+      }).invoke(), (Object) Generated_functionType_Test.test_2(((_FunctionTypes._return_P0_E0<TreePVector<Number>>) () -> {
+        TreePVector<Number> tpv = TreePVector.empty();
+        tpv = tpv.plus(((Number) new BigInteger("1")));
+        tpv = tpv.plus(((Number) new BigInteger("2")));
+        tpv = tpv.plus(((Number) new BigInteger("3")));
+        return tpv;
+      }).invoke()));
+    } catch (Throwable failure) {
+      throw SourceNodeFailures.attach(failure, "http://127.0.0.1:63320/node?ref=r%3Af9a70877-66f3-464b-86cb-67a9d543be8c%28test.in.expr.os.functions%40tests%29%2F6228467984864990876");
+    }
   }
   @Test
   public void checkAllFunctionsCanBeExecuted_item3_6228467984864990922() throws Throwable {
-    Assert.assertEquals("Expected: " + (((_FunctionTypes._return_P0_E0<TreePVector<Number>>) () -> {
-      TreePVector<Number> tpv = TreePVector.empty();
-      tpv = tpv.plus(((Number) new BigInteger("1")));
-      tpv = tpv.plus(((Number) new BigInteger("2")));
-      tpv = tpv.plus(((Number) new BigInteger("3")));
-      return tpv;
-    }).invoke()) + ", but was: " + (Generated_functionType_Test.test_3(((_FunctionTypes._return_P0_E0<TreePVector<Number>>) () -> {
-      TreePVector<Number> tpv = TreePVector.empty();
-      tpv = tpv.plus(((Number) new BigInteger("1")));
-      tpv = tpv.plus(((Number) new BigInteger("2")));
-      tpv = tpv.plus(((Number) new BigInteger("3")));
-      return tpv;
-    }).invoke())), (Object) ((_FunctionTypes._return_P0_E0<TreePVector<Number>>) () -> {
-      TreePVector<Number> tpv = TreePVector.empty();
-      tpv = tpv.plus(((Number) new BigInteger("1")));
-      tpv = tpv.plus(((Number) new BigInteger("2")));
-      tpv = tpv.plus(((Number) new BigInteger("3")));
-      return tpv;
-    }).invoke(), (Object) Generated_functionType_Test.test_3(((_FunctionTypes._return_P0_E0<TreePVector<Number>>) () -> {
-      TreePVector<Number> tpv = TreePVector.empty();
-      tpv = tpv.plus(((Number) new BigInteger("1")));
-      tpv = tpv.plus(((Number) new BigInteger("2")));
-      tpv = tpv.plus(((Number) new BigInteger("3")));
-      return tpv;
-    }).invoke()));
+    try {
+      Assert.assertEquals("Expected: " + (((_FunctionTypes._return_P0_E0<TreePVector<Number>>) () -> {
+        TreePVector<Number> tpv = TreePVector.empty();
+        tpv = tpv.plus(((Number) new BigInteger("1")));
+        tpv = tpv.plus(((Number) new BigInteger("2")));
+        tpv = tpv.plus(((Number) new BigInteger("3")));
+        return tpv;
+      }).invoke()) + ", but was: " + (Generated_functionType_Test.test_3(((_FunctionTypes._return_P0_E0<TreePVector<Number>>) () -> {
+        TreePVector<Number> tpv = TreePVector.empty();
+        tpv = tpv.plus(((Number) new BigInteger("1")));
+        tpv = tpv.plus(((Number) new BigInteger("2")));
+        tpv = tpv.plus(((Number) new BigInteger("3")));
+        return tpv;
+      }).invoke())), (Object) ((_FunctionTypes._return_P0_E0<TreePVector<Number>>) () -> {
+        TreePVector<Number> tpv = TreePVector.empty();
+        tpv = tpv.plus(((Number) new BigInteger("1")));
+        tpv = tpv.plus(((Number) new BigInteger("2")));
+        tpv = tpv.plus(((Number) new BigInteger("3")));
+        return tpv;
+      }).invoke(), (Object) Generated_functionType_Test.test_3(((_FunctionTypes._return_P0_E0<TreePVector<Number>>) () -> {
+        TreePVector<Number> tpv = TreePVector.empty();
+        tpv = tpv.plus(((Number) new BigInteger("1")));
+        tpv = tpv.plus(((Number) new BigInteger("2")));
+        tpv = tpv.plus(((Number) new BigInteger("3")));
+        return tpv;
+      }).invoke()));
+    } catch (Throwable failure) {
+      throw SourceNodeFailures.attach(failure, "http://127.0.0.1:63320/node?ref=r%3Af9a70877-66f3-464b-86cb-67a9d543be8c%28test.in.expr.os.functions%40tests%29%2F6228467984864990922");
+    }
   }
   @Test
   public void checkAllFunctionsCanBeExecuted_item4_6228467984864999818() throws Throwable {
-    Assert.assertEquals("Expected: " + (((_FunctionTypes._return_P0_E0<TreePVector<Number>>) () -> {
-      TreePVector<Number> tpv = TreePVector.empty();
-      tpv = tpv.plus(((Number) new BigInteger("1")));
-      tpv = tpv.plus(((Number) new BigInteger("2")));
-      tpv = tpv.plus(((Number) new BigInteger("3")));
-      return tpv;
-    }).invoke()) + ", but was: " + (Generated_functionType_Test.test_4(((_FunctionTypes._return_P0_E0<TreePVector<Number>>) () -> {
-      TreePVector<Number> tpv = TreePVector.empty();
-      tpv = tpv.plus(((Number) new BigInteger("1")));
-      tpv = tpv.plus(((Number) new BigInteger("2")));
-      tpv = tpv.plus(((Number) new BigInteger("3")));
-      return tpv;
-    }).invoke())), (Object) ((_FunctionTypes._return_P0_E0<TreePVector<Number>>) () -> {
-      TreePVector<Number> tpv = TreePVector.empty();
-      tpv = tpv.plus(((Number) new BigInteger("1")));
-      tpv = tpv.plus(((Number) new BigInteger("2")));
-      tpv = tpv.plus(((Number) new BigInteger("3")));
-      return tpv;
-    }).invoke(), (Object) Generated_functionType_Test.test_4(((_FunctionTypes._return_P0_E0<TreePVector<Number>>) () -> {
-      TreePVector<Number> tpv = TreePVector.empty();
-      tpv = tpv.plus(((Number) new BigInteger("1")));
-      tpv = tpv.plus(((Number) new BigInteger("2")));
-      tpv = tpv.plus(((Number) new BigInteger("3")));
-      return tpv;
-    }).invoke()));
+    try {
+      Assert.assertEquals("Expected: " + (((_FunctionTypes._return_P0_E0<TreePVector<Number>>) () -> {
+        TreePVector<Number> tpv = TreePVector.empty();
+        tpv = tpv.plus(((Number) new BigInteger("1")));
+        tpv = tpv.plus(((Number) new BigInteger("2")));
+        tpv = tpv.plus(((Number) new BigInteger("3")));
+        return tpv;
+      }).invoke()) + ", but was: " + (Generated_functionType_Test.test_4(((_FunctionTypes._return_P0_E0<TreePVector<Number>>) () -> {
+        TreePVector<Number> tpv = TreePVector.empty();
+        tpv = tpv.plus(((Number) new BigInteger("1")));
+        tpv = tpv.plus(((Number) new BigInteger("2")));
+        tpv = tpv.plus(((Number) new BigInteger("3")));
+        return tpv;
+      }).invoke())), (Object) ((_FunctionTypes._return_P0_E0<TreePVector<Number>>) () -> {
+        TreePVector<Number> tpv = TreePVector.empty();
+        tpv = tpv.plus(((Number) new BigInteger("1")));
+        tpv = tpv.plus(((Number) new BigInteger("2")));
+        tpv = tpv.plus(((Number) new BigInteger("3")));
+        return tpv;
+      }).invoke(), (Object) Generated_functionType_Test.test_4(((_FunctionTypes._return_P0_E0<TreePVector<Number>>) () -> {
+        TreePVector<Number> tpv = TreePVector.empty();
+        tpv = tpv.plus(((Number) new BigInteger("1")));
+        tpv = tpv.plus(((Number) new BigInteger("2")));
+        tpv = tpv.plus(((Number) new BigInteger("3")));
+        return tpv;
+      }).invoke()));
+    } catch (Throwable failure) {
+      throw SourceNodeFailures.attach(failure, "http://127.0.0.1:63320/node?ref=r%3Af9a70877-66f3-464b-86cb-67a9d543be8c%28test.in.expr.os.functions%40tests%29%2F6228467984864999818");
+    }
   }
   @Test
   public void checkAllFunctionsCanBeExecuted_item5_6228467984865003306() throws Throwable {
-    Assert.assertEquals("Expected: " + (((_FunctionTypes._return_P0_E0<TreePVector<Number>>) () -> {
-      TreePVector<Number> tpv = TreePVector.empty();
-      tpv = tpv.plus(((Number) new BigInteger("1")));
-      tpv = tpv.plus(((Number) new BigInteger("2")));
-      tpv = tpv.plus(((Number) new BigInteger("3")));
-      return tpv;
-    }).invoke()) + ", but was: " + (Generated_functionType_Test.test_a_4(((_FunctionTypes._return_P0_E0<TreePVector<Number>>) () -> {
-      TreePVector<Number> tpv = TreePVector.empty();
-      tpv = tpv.plus(((Number) new BigInteger("1")));
-      tpv = tpv.plus(((Number) new BigInteger("2")));
-      tpv = tpv.plus(((Number) new BigInteger("3")));
-      return tpv;
-    }).invoke())), (Object) ((_FunctionTypes._return_P0_E0<TreePVector<Number>>) () -> {
-      TreePVector<Number> tpv = TreePVector.empty();
-      tpv = tpv.plus(((Number) new BigInteger("1")));
-      tpv = tpv.plus(((Number) new BigInteger("2")));
-      tpv = tpv.plus(((Number) new BigInteger("3")));
-      return tpv;
-    }).invoke(), (Object) Generated_functionType_Test.test_a_4(((_FunctionTypes._return_P0_E0<TreePVector<Number>>) () -> {
-      TreePVector<Number> tpv = TreePVector.empty();
-      tpv = tpv.plus(((Number) new BigInteger("1")));
-      tpv = tpv.plus(((Number) new BigInteger("2")));
-      tpv = tpv.plus(((Number) new BigInteger("3")));
-      return tpv;
-    }).invoke()));
+    try {
+      Assert.assertEquals("Expected: " + (((_FunctionTypes._return_P0_E0<TreePVector<Number>>) () -> {
+        TreePVector<Number> tpv = TreePVector.empty();
+        tpv = tpv.plus(((Number) new BigInteger("1")));
+        tpv = tpv.plus(((Number) new BigInteger("2")));
+        tpv = tpv.plus(((Number) new BigInteger("3")));
+        return tpv;
+      }).invoke()) + ", but was: " + (Generated_functionType_Test.test_a_4(((_FunctionTypes._return_P0_E0<TreePVector<Number>>) () -> {
+        TreePVector<Number> tpv = TreePVector.empty();
+        tpv = tpv.plus(((Number) new BigInteger("1")));
+        tpv = tpv.plus(((Number) new BigInteger("2")));
+        tpv = tpv.plus(((Number) new BigInteger("3")));
+        return tpv;
+      }).invoke())), (Object) ((_FunctionTypes._return_P0_E0<TreePVector<Number>>) () -> {
+        TreePVector<Number> tpv = TreePVector.empty();
+        tpv = tpv.plus(((Number) new BigInteger("1")));
+        tpv = tpv.plus(((Number) new BigInteger("2")));
+        tpv = tpv.plus(((Number) new BigInteger("3")));
+        return tpv;
+      }).invoke(), (Object) Generated_functionType_Test.test_a_4(((_FunctionTypes._return_P0_E0<TreePVector<Number>>) () -> {
+        TreePVector<Number> tpv = TreePVector.empty();
+        tpv = tpv.plus(((Number) new BigInteger("1")));
+        tpv = tpv.plus(((Number) new BigInteger("2")));
+        tpv = tpv.plus(((Number) new BigInteger("3")));
+        return tpv;
+      }).invoke()));
+    } catch (Throwable failure) {
+      throw SourceNodeFailures.attach(failure, "http://127.0.0.1:63320/node?ref=r%3Af9a70877-66f3-464b-86cb-67a9d543be8c%28test.in.expr.os.functions%40tests%29%2F6228467984865003306");
+    }
   }
   @Test
   public void checkAllFunctionsCanBeExecuted_item6_6228467984865003628() throws Throwable {
-    Assert.assertEquals("Expected: " + (((_FunctionTypes._return_P0_E0<TreePVector<Number>>) () -> {
-      TreePVector<Number> tpv = TreePVector.empty();
-      tpv = tpv.plus(((Number) new BigInteger("1")));
-      tpv = tpv.plus(((Number) new BigInteger("2")));
-      tpv = tpv.plus(((Number) new BigInteger("3")));
-      return tpv;
-    }).invoke()) + ", but was: " + (Generated_functionType_Test.test_b_4(((_FunctionTypes._return_P0_E0<TreePVector<Number>>) () -> {
-      TreePVector<Number> tpv = TreePVector.empty();
-      tpv = tpv.plus(((Number) new BigInteger("1")));
-      tpv = tpv.plus(((Number) new BigInteger("2")));
-      tpv = tpv.plus(((Number) new BigInteger("3")));
-      return tpv;
-    }).invoke())), (Object) ((_FunctionTypes._return_P0_E0<TreePVector<Number>>) () -> {
-      TreePVector<Number> tpv = TreePVector.empty();
-      tpv = tpv.plus(((Number) new BigInteger("1")));
-      tpv = tpv.plus(((Number) new BigInteger("2")));
-      tpv = tpv.plus(((Number) new BigInteger("3")));
-      return tpv;
-    }).invoke(), (Object) Generated_functionType_Test.test_b_4(((_FunctionTypes._return_P0_E0<TreePVector<Number>>) () -> {
-      TreePVector<Number> tpv = TreePVector.empty();
-      tpv = tpv.plus(((Number) new BigInteger("1")));
-      tpv = tpv.plus(((Number) new BigInteger("2")));
-      tpv = tpv.plus(((Number) new BigInteger("3")));
-      return tpv;
-    }).invoke()));
+    try {
+      Assert.assertEquals("Expected: " + (((_FunctionTypes._return_P0_E0<TreePVector<Number>>) () -> {
+        TreePVector<Number> tpv = TreePVector.empty();
+        tpv = tpv.plus(((Number) new BigInteger("1")));
+        tpv = tpv.plus(((Number) new BigInteger("2")));
+        tpv = tpv.plus(((Number) new BigInteger("3")));
+        return tpv;
+      }).invoke()) + ", but was: " + (Generated_functionType_Test.test_b_4(((_FunctionTypes._return_P0_E0<TreePVector<Number>>) () -> {
+        TreePVector<Number> tpv = TreePVector.empty();
+        tpv = tpv.plus(((Number) new BigInteger("1")));
+        tpv = tpv.plus(((Number) new BigInteger("2")));
+        tpv = tpv.plus(((Number) new BigInteger("3")));
+        return tpv;
+      }).invoke())), (Object) ((_FunctionTypes._return_P0_E0<TreePVector<Number>>) () -> {
+        TreePVector<Number> tpv = TreePVector.empty();
+        tpv = tpv.plus(((Number) new BigInteger("1")));
+        tpv = tpv.plus(((Number) new BigInteger("2")));
+        tpv = tpv.plus(((Number) new BigInteger("3")));
+        return tpv;
+      }).invoke(), (Object) Generated_functionType_Test.test_b_4(((_FunctionTypes._return_P0_E0<TreePVector<Number>>) () -> {
+        TreePVector<Number> tpv = TreePVector.empty();
+        tpv = tpv.plus(((Number) new BigInteger("1")));
+        tpv = tpv.plus(((Number) new BigInteger("2")));
+        tpv = tpv.plus(((Number) new BigInteger("3")));
+        return tpv;
+      }).invoke()));
+    } catch (Throwable failure) {
+      throw SourceNodeFailures.attach(failure, "http://127.0.0.1:63320/node?ref=r%3Af9a70877-66f3-464b-86cb-67a9d543be8c%28test.in.expr.os.functions%40tests%29%2F6228467984865003628");
+    }
   }
   @Test
   public void checkAllFunctionsCanBeExecuted_item7_6228467984865003733() throws Throwable {
-    Assert.assertEquals("Expected: " + (((_FunctionTypes._return_P0_E0<TreePVector<Number>>) () -> {
-      TreePVector<Number> tpv = TreePVector.empty();
-      tpv = tpv.plus(((Number) new BigInteger("1")));
-      tpv = tpv.plus(((Number) new BigInteger("2")));
-      tpv = tpv.plus(((Number) new BigInteger("3")));
-      return tpv;
-    }).invoke()) + ", but was: " + (Generated_functionType_Test.test_c_4(((_FunctionTypes._return_P0_E0<TreePVector<Number>>) () -> {
-      TreePVector<Number> tpv = TreePVector.empty();
-      tpv = tpv.plus(((Number) new BigInteger("1")));
-      tpv = tpv.plus(((Number) new BigInteger("2")));
-      tpv = tpv.plus(((Number) new BigInteger("3")));
-      return tpv;
-    }).invoke())), (Object) ((_FunctionTypes._return_P0_E0<TreePVector<Number>>) () -> {
-      TreePVector<Number> tpv = TreePVector.empty();
-      tpv = tpv.plus(((Number) new BigInteger("1")));
-      tpv = tpv.plus(((Number) new BigInteger("2")));
-      tpv = tpv.plus(((Number) new BigInteger("3")));
-      return tpv;
-    }).invoke(), (Object) Generated_functionType_Test.test_c_4(((_FunctionTypes._return_P0_E0<TreePVector<Number>>) () -> {
-      TreePVector<Number> tpv = TreePVector.empty();
-      tpv = tpv.plus(((Number) new BigInteger("1")));
-      tpv = tpv.plus(((Number) new BigInteger("2")));
-      tpv = tpv.plus(((Number) new BigInteger("3")));
-      return tpv;
-    }).invoke()));
+    try {
+      Assert.assertEquals("Expected: " + (((_FunctionTypes._return_P0_E0<TreePVector<Number>>) () -> {
+        TreePVector<Number> tpv = TreePVector.empty();
+        tpv = tpv.plus(((Number) new BigInteger("1")));
+        tpv = tpv.plus(((Number) new BigInteger("2")));
+        tpv = tpv.plus(((Number) new BigInteger("3")));
+        return tpv;
+      }).invoke()) + ", but was: " + (Generated_functionType_Test.test_c_4(((_FunctionTypes._return_P0_E0<TreePVector<Number>>) () -> {
+        TreePVector<Number> tpv = TreePVector.empty();
+        tpv = tpv.plus(((Number) new BigInteger("1")));
+        tpv = tpv.plus(((Number) new BigInteger("2")));
+        tpv = tpv.plus(((Number) new BigInteger("3")));
+        return tpv;
+      }).invoke())), (Object) ((_FunctionTypes._return_P0_E0<TreePVector<Number>>) () -> {
+        TreePVector<Number> tpv = TreePVector.empty();
+        tpv = tpv.plus(((Number) new BigInteger("1")));
+        tpv = tpv.plus(((Number) new BigInteger("2")));
+        tpv = tpv.plus(((Number) new BigInteger("3")));
+        return tpv;
+      }).invoke(), (Object) Generated_functionType_Test.test_c_4(((_FunctionTypes._return_P0_E0<TreePVector<Number>>) () -> {
+        TreePVector<Number> tpv = TreePVector.empty();
+        tpv = tpv.plus(((Number) new BigInteger("1")));
+        tpv = tpv.plus(((Number) new BigInteger("2")));
+        tpv = tpv.plus(((Number) new BigInteger("3")));
+        return tpv;
+      }).invoke()));
+    } catch (Throwable failure) {
+      throw SourceNodeFailures.attach(failure, "http://127.0.0.1:63320/node?ref=r%3Af9a70877-66f3-464b-86cb-67a9d543be8c%28test.in.expr.os.functions%40tests%29%2F6228467984865003733");
+    }
   }
   @Test
   public void checkAllFunctionsCanBeExecuted_item8_4707892895167795394() throws Throwable {
-    Assert.assertEquals("Expected: " + (((_FunctionTypes._return_P0_E0<TreePVector<Number>>) () -> {
-      TreePVector<Number> tpv = TreePVector.empty();
-      tpv = tpv.plus(((Number) new BigInteger("1")));
-      tpv = tpv.plus(((Number) new BigInteger("2")));
-      tpv = tpv.plus(((Number) new BigInteger("3")));
-      return tpv;
-    }).invoke()) + ", but was: " + (Generated_functionType_Test.test_sort_4(((_FunctionTypes._return_P0_E0<TreePVector<Number>>) () -> {
-      TreePVector<Number> tpv = TreePVector.empty();
-      tpv = tpv.plus(((Number) new BigInteger("3")));
-      tpv = tpv.plus(((Number) new BigInteger("1")));
-      tpv = tpv.plus(((Number) new BigInteger("2")));
-      return tpv;
-    }).invoke())), (Object) ((_FunctionTypes._return_P0_E0<TreePVector<Number>>) () -> {
-      TreePVector<Number> tpv = TreePVector.empty();
-      tpv = tpv.plus(((Number) new BigInteger("1")));
-      tpv = tpv.plus(((Number) new BigInteger("2")));
-      tpv = tpv.plus(((Number) new BigInteger("3")));
-      return tpv;
-    }).invoke(), (Object) Generated_functionType_Test.test_sort_4(((_FunctionTypes._return_P0_E0<TreePVector<Number>>) () -> {
-      TreePVector<Number> tpv = TreePVector.empty();
-      tpv = tpv.plus(((Number) new BigInteger("3")));
-      tpv = tpv.plus(((Number) new BigInteger("1")));
-      tpv = tpv.plus(((Number) new BigInteger("2")));
-      return tpv;
-    }).invoke()));
+    try {
+      Assert.assertEquals("Expected: " + (((_FunctionTypes._return_P0_E0<TreePVector<Number>>) () -> {
+        TreePVector<Number> tpv = TreePVector.empty();
+        tpv = tpv.plus(((Number) new BigInteger("1")));
+        tpv = tpv.plus(((Number) new BigInteger("2")));
+        tpv = tpv.plus(((Number) new BigInteger("3")));
+        return tpv;
+      }).invoke()) + ", but was: " + (Generated_functionType_Test.test_sort_4(((_FunctionTypes._return_P0_E0<TreePVector<Number>>) () -> {
+        TreePVector<Number> tpv = TreePVector.empty();
+        tpv = tpv.plus(((Number) new BigInteger("3")));
+        tpv = tpv.plus(((Number) new BigInteger("1")));
+        tpv = tpv.plus(((Number) new BigInteger("2")));
+        return tpv;
+      }).invoke())), (Object) ((_FunctionTypes._return_P0_E0<TreePVector<Number>>) () -> {
+        TreePVector<Number> tpv = TreePVector.empty();
+        tpv = tpv.plus(((Number) new BigInteger("1")));
+        tpv = tpv.plus(((Number) new BigInteger("2")));
+        tpv = tpv.plus(((Number) new BigInteger("3")));
+        return tpv;
+      }).invoke(), (Object) Generated_functionType_Test.test_sort_4(((_FunctionTypes._return_P0_E0<TreePVector<Number>>) () -> {
+        TreePVector<Number> tpv = TreePVector.empty();
+        tpv = tpv.plus(((Number) new BigInteger("3")));
+        tpv = tpv.plus(((Number) new BigInteger("1")));
+        tpv = tpv.plus(((Number) new BigInteger("2")));
+        return tpv;
+      }).invoke()));
+    } catch (Throwable failure) {
+      throw SourceNodeFailures.attach(failure, "http://127.0.0.1:63320/node?ref=r%3Af9a70877-66f3-464b-86cb-67a9d543be8c%28test.in.expr.os.functions%40tests%29%2F4707892895167795394");
+    }
   }
   @Test
   public void checkAllFunctionsCanBeExecuted_item9_4707892895167512481() throws Throwable {
-    Assert.assertEquals("Expected: " + (((_FunctionTypes._return_P0_E0<TreePVector<Number>>) () -> {
-      TreePVector<Number> tpv = TreePVector.empty();
-      tpv = tpv.plus(((Number) new BigInteger("1")));
-      tpv = tpv.plus(((Number) new BigInteger("2")));
-      tpv = tpv.plus(((Number) new BigInteger("3")));
-      tpv = tpv.plus(((Number) new BigInteger("4")));
-      return tpv;
-    }).invoke()) + ", but was: " + (Generated_functionType_Test.test_firstN_4(((_FunctionTypes._return_P0_E0<TreePVector<Number>>) () -> {
-      TreePVector<Number> tpv = TreePVector.empty();
-      tpv = tpv.plus(((Number) new BigInteger("1")));
-      tpv = tpv.plus(((Number) new BigInteger("2")));
-      tpv = tpv.plus(((Number) new BigInteger("3")));
-      tpv = tpv.plus(((Number) new BigInteger("4")));
-      tpv = tpv.plus(((Number) new BigInteger("5")));
-      tpv = tpv.plus(((Number) new BigInteger("6")));
-      return tpv;
-    }).invoke())), (Object) ((_FunctionTypes._return_P0_E0<TreePVector<Number>>) () -> {
-      TreePVector<Number> tpv = TreePVector.empty();
-      tpv = tpv.plus(((Number) new BigInteger("1")));
-      tpv = tpv.plus(((Number) new BigInteger("2")));
-      tpv = tpv.plus(((Number) new BigInteger("3")));
-      tpv = tpv.plus(((Number) new BigInteger("4")));
-      return tpv;
-    }).invoke(), (Object) Generated_functionType_Test.test_firstN_4(((_FunctionTypes._return_P0_E0<TreePVector<Number>>) () -> {
-      TreePVector<Number> tpv = TreePVector.empty();
-      tpv = tpv.plus(((Number) new BigInteger("1")));
-      tpv = tpv.plus(((Number) new BigInteger("2")));
-      tpv = tpv.plus(((Number) new BigInteger("3")));
-      tpv = tpv.plus(((Number) new BigInteger("4")));
-      tpv = tpv.plus(((Number) new BigInteger("5")));
-      tpv = tpv.plus(((Number) new BigInteger("6")));
-      return tpv;
-    }).invoke()));
+    try {
+      Assert.assertEquals("Expected: " + (((_FunctionTypes._return_P0_E0<TreePVector<Number>>) () -> {
+        TreePVector<Number> tpv = TreePVector.empty();
+        tpv = tpv.plus(((Number) new BigInteger("1")));
+        tpv = tpv.plus(((Number) new BigInteger("2")));
+        tpv = tpv.plus(((Number) new BigInteger("3")));
+        tpv = tpv.plus(((Number) new BigInteger("4")));
+        return tpv;
+      }).invoke()) + ", but was: " + (Generated_functionType_Test.test_firstN_4(((_FunctionTypes._return_P0_E0<TreePVector<Number>>) () -> {
+        TreePVector<Number> tpv = TreePVector.empty();
+        tpv = tpv.plus(((Number) new BigInteger("1")));
+        tpv = tpv.plus(((Number) new BigInteger("2")));
+        tpv = tpv.plus(((Number) new BigInteger("3")));
+        tpv = tpv.plus(((Number) new BigInteger("4")));
+        tpv = tpv.plus(((Number) new BigInteger("5")));
+        tpv = tpv.plus(((Number) new BigInteger("6")));
+        return tpv;
+      }).invoke())), (Object) ((_FunctionTypes._return_P0_E0<TreePVector<Number>>) () -> {
+        TreePVector<Number> tpv = TreePVector.empty();
+        tpv = tpv.plus(((Number) new BigInteger("1")));
+        tpv = tpv.plus(((Number) new BigInteger("2")));
+        tpv = tpv.plus(((Number) new BigInteger("3")));
+        tpv = tpv.plus(((Number) new BigInteger("4")));
+        return tpv;
+      }).invoke(), (Object) Generated_functionType_Test.test_firstN_4(((_FunctionTypes._return_P0_E0<TreePVector<Number>>) () -> {
+        TreePVector<Number> tpv = TreePVector.empty();
+        tpv = tpv.plus(((Number) new BigInteger("1")));
+        tpv = tpv.plus(((Number) new BigInteger("2")));
+        tpv = tpv.plus(((Number) new BigInteger("3")));
+        tpv = tpv.plus(((Number) new BigInteger("4")));
+        tpv = tpv.plus(((Number) new BigInteger("5")));
+        tpv = tpv.plus(((Number) new BigInteger("6")));
+        return tpv;
+      }).invoke()));
+    } catch (Throwable failure) {
+      throw SourceNodeFailures.attach(failure, "http://127.0.0.1:63320/node?ref=r%3Af9a70877-66f3-464b-86cb-67a9d543be8c%28test.in.expr.os.functions%40tests%29%2F4707892895167512481");
+    }
   }
   @Test
   public void checkAllFunctionsCanBeExecuted_item10_4707892895167650826() throws Throwable {
-    Assert.assertEquals("Expected: " + (((_FunctionTypes._return_P0_E0<TreePVector<Number>>) () -> {
-      TreePVector<Number> tpv = TreePVector.empty();
-      tpv = tpv.plus(((Number) new BigInteger("3")));
-      tpv = tpv.plus(((Number) new BigInteger("4")));
-      tpv = tpv.plus(((Number) new BigInteger("5")));
-      tpv = tpv.plus(((Number) new BigInteger("6")));
-      return tpv;
-    }).invoke()) + ", but was: " + (Generated_functionType_Test.test_lastN_4(((_FunctionTypes._return_P0_E0<TreePVector<Number>>) () -> {
-      TreePVector<Number> tpv = TreePVector.empty();
-      tpv = tpv.plus(((Number) new BigInteger("1")));
-      tpv = tpv.plus(((Number) new BigInteger("2")));
-      tpv = tpv.plus(((Number) new BigInteger("3")));
-      tpv = tpv.plus(((Number) new BigInteger("4")));
-      tpv = tpv.plus(((Number) new BigInteger("5")));
-      tpv = tpv.plus(((Number) new BigInteger("6")));
-      return tpv;
-    }).invoke())), (Object) ((_FunctionTypes._return_P0_E0<TreePVector<Number>>) () -> {
-      TreePVector<Number> tpv = TreePVector.empty();
-      tpv = tpv.plus(((Number) new BigInteger("3")));
-      tpv = tpv.plus(((Number) new BigInteger("4")));
-      tpv = tpv.plus(((Number) new BigInteger("5")));
-      tpv = tpv.plus(((Number) new BigInteger("6")));
-      return tpv;
-    }).invoke(), (Object) Generated_functionType_Test.test_lastN_4(((_FunctionTypes._return_P0_E0<TreePVector<Number>>) () -> {
-      TreePVector<Number> tpv = TreePVector.empty();
-      tpv = tpv.plus(((Number) new BigInteger("1")));
-      tpv = tpv.plus(((Number) new BigInteger("2")));
-      tpv = tpv.plus(((Number) new BigInteger("3")));
-      tpv = tpv.plus(((Number) new BigInteger("4")));
-      tpv = tpv.plus(((Number) new BigInteger("5")));
-      tpv = tpv.plus(((Number) new BigInteger("6")));
-      return tpv;
-    }).invoke()));
+    try {
+      Assert.assertEquals("Expected: " + (((_FunctionTypes._return_P0_E0<TreePVector<Number>>) () -> {
+        TreePVector<Number> tpv = TreePVector.empty();
+        tpv = tpv.plus(((Number) new BigInteger("3")));
+        tpv = tpv.plus(((Number) new BigInteger("4")));
+        tpv = tpv.plus(((Number) new BigInteger("5")));
+        tpv = tpv.plus(((Number) new BigInteger("6")));
+        return tpv;
+      }).invoke()) + ", but was: " + (Generated_functionType_Test.test_lastN_4(((_FunctionTypes._return_P0_E0<TreePVector<Number>>) () -> {
+        TreePVector<Number> tpv = TreePVector.empty();
+        tpv = tpv.plus(((Number) new BigInteger("1")));
+        tpv = tpv.plus(((Number) new BigInteger("2")));
+        tpv = tpv.plus(((Number) new BigInteger("3")));
+        tpv = tpv.plus(((Number) new BigInteger("4")));
+        tpv = tpv.plus(((Number) new BigInteger("5")));
+        tpv = tpv.plus(((Number) new BigInteger("6")));
+        return tpv;
+      }).invoke())), (Object) ((_FunctionTypes._return_P0_E0<TreePVector<Number>>) () -> {
+        TreePVector<Number> tpv = TreePVector.empty();
+        tpv = tpv.plus(((Number) new BigInteger("3")));
+        tpv = tpv.plus(((Number) new BigInteger("4")));
+        tpv = tpv.plus(((Number) new BigInteger("5")));
+        tpv = tpv.plus(((Number) new BigInteger("6")));
+        return tpv;
+      }).invoke(), (Object) Generated_functionType_Test.test_lastN_4(((_FunctionTypes._return_P0_E0<TreePVector<Number>>) () -> {
+        TreePVector<Number> tpv = TreePVector.empty();
+        tpv = tpv.plus(((Number) new BigInteger("1")));
+        tpv = tpv.plus(((Number) new BigInteger("2")));
+        tpv = tpv.plus(((Number) new BigInteger("3")));
+        tpv = tpv.plus(((Number) new BigInteger("4")));
+        tpv = tpv.plus(((Number) new BigInteger("5")));
+        tpv = tpv.plus(((Number) new BigInteger("6")));
+        return tpv;
+      }).invoke()));
+    } catch (Throwable failure) {
+      throw SourceNodeFailures.attach(failure, "http://127.0.0.1:63320/node?ref=r%3Af9a70877-66f3-464b-86cb-67a9d543be8c%28test.in.expr.os.functions%40tests%29%2F4707892895167650826");
+    }
   }
   @Test
   public void checkAllFunctionsCanBeExecuted_item11_4707892895167652105() throws Throwable {
-    Assert.assertEquals("Expected: " + (((_FunctionTypes._return_P0_E0<TreePVector<Number>>) () -> {
-      TreePVector<Number> tpv = TreePVector.empty();
-      tpv = tpv.plus(((Number) new BigInteger("1")));
-      tpv = tpv.plus(((Number) new BigInteger("2")));
-      tpv = tpv.plus(((Number) new BigInteger("3")));
-      return tpv;
-    }).invoke()) + ", but was: " + (Generated_functionType_Test.test_map_4(((_FunctionTypes._return_P0_E0<TreePVector<Number>>) () -> {
-      TreePVector<Number> tpv = TreePVector.empty();
-      tpv = tpv.plus(((Number) new BigInteger("1")));
-      tpv = tpv.plus(((Number) new BigInteger("2")));
-      tpv = tpv.plus(((Number) new BigInteger("3")));
-      return tpv;
-    }).invoke())), (Object) ((_FunctionTypes._return_P0_E0<TreePVector<Number>>) () -> {
-      TreePVector<Number> tpv = TreePVector.empty();
-      tpv = tpv.plus(((Number) new BigInteger("1")));
-      tpv = tpv.plus(((Number) new BigInteger("2")));
-      tpv = tpv.plus(((Number) new BigInteger("3")));
-      return tpv;
-    }).invoke(), (Object) Generated_functionType_Test.test_map_4(((_FunctionTypes._return_P0_E0<TreePVector<Number>>) () -> {
-      TreePVector<Number> tpv = TreePVector.empty();
-      tpv = tpv.plus(((Number) new BigInteger("1")));
-      tpv = tpv.plus(((Number) new BigInteger("2")));
-      tpv = tpv.plus(((Number) new BigInteger("3")));
-      return tpv;
-    }).invoke()));
+    try {
+      Assert.assertEquals("Expected: " + (((_FunctionTypes._return_P0_E0<TreePVector<Number>>) () -> {
+        TreePVector<Number> tpv = TreePVector.empty();
+        tpv = tpv.plus(((Number) new BigInteger("1")));
+        tpv = tpv.plus(((Number) new BigInteger("2")));
+        tpv = tpv.plus(((Number) new BigInteger("3")));
+        return tpv;
+      }).invoke()) + ", but was: " + (Generated_functionType_Test.test_map_4(((_FunctionTypes._return_P0_E0<TreePVector<Number>>) () -> {
+        TreePVector<Number> tpv = TreePVector.empty();
+        tpv = tpv.plus(((Number) new BigInteger("1")));
+        tpv = tpv.plus(((Number) new BigInteger("2")));
+        tpv = tpv.plus(((Number) new BigInteger("3")));
+        return tpv;
+      }).invoke())), (Object) ((_FunctionTypes._return_P0_E0<TreePVector<Number>>) () -> {
+        TreePVector<Number> tpv = TreePVector.empty();
+        tpv = tpv.plus(((Number) new BigInteger("1")));
+        tpv = tpv.plus(((Number) new BigInteger("2")));
+        tpv = tpv.plus(((Number) new BigInteger("3")));
+        return tpv;
+      }).invoke(), (Object) Generated_functionType_Test.test_map_4(((_FunctionTypes._return_P0_E0<TreePVector<Number>>) () -> {
+        TreePVector<Number> tpv = TreePVector.empty();
+        tpv = tpv.plus(((Number) new BigInteger("1")));
+        tpv = tpv.plus(((Number) new BigInteger("2")));
+        tpv = tpv.plus(((Number) new BigInteger("3")));
+        return tpv;
+      }).invoke()));
+    } catch (Throwable failure) {
+      throw SourceNodeFailures.attach(failure, "http://127.0.0.1:63320/node?ref=r%3Af9a70877-66f3-464b-86cb-67a9d543be8c%28test.in.expr.os.functions%40tests%29%2F4707892895167652105");
+    }
   }
   @Test
   public void checkAllFunctionsCanBeExecuted_item12_4707892895167794193() throws Throwable {
-    Assert.assertEquals("Expected: " + (((_FunctionTypes._return_P0_E0<TreePVector<Number>>) () -> {
-      TreePVector<Number> tpv = TreePVector.empty();
-      tpv = tpv.plus(((Number) new BigInteger("3")));
-      tpv = tpv.plus(((Number) new BigInteger("2")));
-      tpv = tpv.plus(((Number) new BigInteger("1")));
-      return tpv;
-    }).invoke()) + ", but was: " + (Generated_functionType_Test.test_reverse_4(((_FunctionTypes._return_P0_E0<TreePVector<Number>>) () -> {
-      TreePVector<Number> tpv = TreePVector.empty();
-      tpv = tpv.plus(((Number) new BigInteger("1")));
-      tpv = tpv.plus(((Number) new BigInteger("2")));
-      tpv = tpv.plus(((Number) new BigInteger("3")));
-      return tpv;
-    }).invoke())), (Object) ((_FunctionTypes._return_P0_E0<TreePVector<Number>>) () -> {
-      TreePVector<Number> tpv = TreePVector.empty();
-      tpv = tpv.plus(((Number) new BigInteger("3")));
-      tpv = tpv.plus(((Number) new BigInteger("2")));
-      tpv = tpv.plus(((Number) new BigInteger("1")));
-      return tpv;
-    }).invoke(), (Object) Generated_functionType_Test.test_reverse_4(((_FunctionTypes._return_P0_E0<TreePVector<Number>>) () -> {
-      TreePVector<Number> tpv = TreePVector.empty();
-      tpv = tpv.plus(((Number) new BigInteger("1")));
-      tpv = tpv.plus(((Number) new BigInteger("2")));
-      tpv = tpv.plus(((Number) new BigInteger("3")));
-      return tpv;
-    }).invoke()));
+    try {
+      Assert.assertEquals("Expected: " + (((_FunctionTypes._return_P0_E0<TreePVector<Number>>) () -> {
+        TreePVector<Number> tpv = TreePVector.empty();
+        tpv = tpv.plus(((Number) new BigInteger("3")));
+        tpv = tpv.plus(((Number) new BigInteger("2")));
+        tpv = tpv.plus(((Number) new BigInteger("1")));
+        return tpv;
+      }).invoke()) + ", but was: " + (Generated_functionType_Test.test_reverse_4(((_FunctionTypes._return_P0_E0<TreePVector<Number>>) () -> {
+        TreePVector<Number> tpv = TreePVector.empty();
+        tpv = tpv.plus(((Number) new BigInteger("1")));
+        tpv = tpv.plus(((Number) new BigInteger("2")));
+        tpv = tpv.plus(((Number) new BigInteger("3")));
+        return tpv;
+      }).invoke())), (Object) ((_FunctionTypes._return_P0_E0<TreePVector<Number>>) () -> {
+        TreePVector<Number> tpv = TreePVector.empty();
+        tpv = tpv.plus(((Number) new BigInteger("3")));
+        tpv = tpv.plus(((Number) new BigInteger("2")));
+        tpv = tpv.plus(((Number) new BigInteger("1")));
+        return tpv;
+      }).invoke(), (Object) Generated_functionType_Test.test_reverse_4(((_FunctionTypes._return_P0_E0<TreePVector<Number>>) () -> {
+        TreePVector<Number> tpv = TreePVector.empty();
+        tpv = tpv.plus(((Number) new BigInteger("1")));
+        tpv = tpv.plus(((Number) new BigInteger("2")));
+        tpv = tpv.plus(((Number) new BigInteger("3")));
+        return tpv;
+      }).invoke()));
+    } catch (Throwable failure) {
+      throw SourceNodeFailures.attach(failure, "http://127.0.0.1:63320/node?ref=r%3Af9a70877-66f3-464b-86cb-67a9d543be8c%28test.in.expr.os.functions%40tests%29%2F4707892895167794193");
+    }
   }
   @Test
   public void checkAllFunctionsCanBeExecuted_item13_4707892895168081875() throws Throwable {
-    Assert.assertEquals("Expected: " + (((_FunctionTypes._return_P0_E0<TreePVector<Number>>) () -> {
-      TreePVector<Number> tpv = TreePVector.empty();
-      tpv = tpv.plus(((Number) new BigInteger("2")));
-      tpv = tpv.plus(((Number) new BigInteger("3")));
-      tpv = tpv.plus(((Number) new BigInteger("4")));
-      tpv = tpv.plus(((Number) new BigInteger("5")));
-      tpv = tpv.plus(((Number) new BigInteger("6")));
-      return tpv;
-    }).invoke()) + ", but was: " + (Generated_functionType_Test.test_tail_4(((_FunctionTypes._return_P0_E0<TreePVector<Number>>) () -> {
-      TreePVector<Number> tpv = TreePVector.empty();
-      tpv = tpv.plus(((Number) new BigInteger("1")));
-      tpv = tpv.plus(((Number) new BigInteger("2")));
-      tpv = tpv.plus(((Number) new BigInteger("3")));
-      tpv = tpv.plus(((Number) new BigInteger("4")));
-      tpv = tpv.plus(((Number) new BigInteger("5")));
-      tpv = tpv.plus(((Number) new BigInteger("6")));
-      return tpv;
-    }).invoke())), (Object) ((_FunctionTypes._return_P0_E0<TreePVector<Number>>) () -> {
-      TreePVector<Number> tpv = TreePVector.empty();
-      tpv = tpv.plus(((Number) new BigInteger("2")));
-      tpv = tpv.plus(((Number) new BigInteger("3")));
-      tpv = tpv.plus(((Number) new BigInteger("4")));
-      tpv = tpv.plus(((Number) new BigInteger("5")));
-      tpv = tpv.plus(((Number) new BigInteger("6")));
-      return tpv;
-    }).invoke(), (Object) Generated_functionType_Test.test_tail_4(((_FunctionTypes._return_P0_E0<TreePVector<Number>>) () -> {
-      TreePVector<Number> tpv = TreePVector.empty();
-      tpv = tpv.plus(((Number) new BigInteger("1")));
-      tpv = tpv.plus(((Number) new BigInteger("2")));
-      tpv = tpv.plus(((Number) new BigInteger("3")));
-      tpv = tpv.plus(((Number) new BigInteger("4")));
-      tpv = tpv.plus(((Number) new BigInteger("5")));
-      tpv = tpv.plus(((Number) new BigInteger("6")));
-      return tpv;
-    }).invoke()));
+    try {
+      Assert.assertEquals("Expected: " + (((_FunctionTypes._return_P0_E0<TreePVector<Number>>) () -> {
+        TreePVector<Number> tpv = TreePVector.empty();
+        tpv = tpv.plus(((Number) new BigInteger("2")));
+        tpv = tpv.plus(((Number) new BigInteger("3")));
+        tpv = tpv.plus(((Number) new BigInteger("4")));
+        tpv = tpv.plus(((Number) new BigInteger("5")));
+        tpv = tpv.plus(((Number) new BigInteger("6")));
+        return tpv;
+      }).invoke()) + ", but was: " + (Generated_functionType_Test.test_tail_4(((_FunctionTypes._return_P0_E0<TreePVector<Number>>) () -> {
+        TreePVector<Number> tpv = TreePVector.empty();
+        tpv = tpv.plus(((Number) new BigInteger("1")));
+        tpv = tpv.plus(((Number) new BigInteger("2")));
+        tpv = tpv.plus(((Number) new BigInteger("3")));
+        tpv = tpv.plus(((Number) new BigInteger("4")));
+        tpv = tpv.plus(((Number) new BigInteger("5")));
+        tpv = tpv.plus(((Number) new BigInteger("6")));
+        return tpv;
+      }).invoke())), (Object) ((_FunctionTypes._return_P0_E0<TreePVector<Number>>) () -> {
+        TreePVector<Number> tpv = TreePVector.empty();
+        tpv = tpv.plus(((Number) new BigInteger("2")));
+        tpv = tpv.plus(((Number) new BigInteger("3")));
+        tpv = tpv.plus(((Number) new BigInteger("4")));
+        tpv = tpv.plus(((Number) new BigInteger("5")));
+        tpv = tpv.plus(((Number) new BigInteger("6")));
+        return tpv;
+      }).invoke(), (Object) Generated_functionType_Test.test_tail_4(((_FunctionTypes._return_P0_E0<TreePVector<Number>>) () -> {
+        TreePVector<Number> tpv = TreePVector.empty();
+        tpv = tpv.plus(((Number) new BigInteger("1")));
+        tpv = tpv.plus(((Number) new BigInteger("2")));
+        tpv = tpv.plus(((Number) new BigInteger("3")));
+        tpv = tpv.plus(((Number) new BigInteger("4")));
+        tpv = tpv.plus(((Number) new BigInteger("5")));
+        tpv = tpv.plus(((Number) new BigInteger("6")));
+        return tpv;
+      }).invoke()));
+    } catch (Throwable failure) {
+      throw SourceNodeFailures.attach(failure, "http://127.0.0.1:63320/node?ref=r%3Af9a70877-66f3-464b-86cb-67a9d543be8c%28test.in.expr.os.functions%40tests%29%2F4707892895168081875");
+    }
   }
   @Test
   public void checkAllFunctionsCanBeExecuted_item14_4707892895168083116() throws Throwable {
-    Assert.assertEquals("Expected: " + (((_FunctionTypes._return_P0_E0<TreePVector<Number>>) () -> {
-      TreePVector<Number> tpv = TreePVector.empty();
-      tpv = tpv.plus(((Number) new BigInteger("1")));
-      tpv = tpv.plus(((Number) new BigInteger("2")));
-      tpv = tpv.plus(((Number) new BigInteger("3")));
-      tpv = tpv.plus(((Number) new BigInteger("100")));
-      return tpv;
-    }).invoke()) + ", but was: " + (Generated_functionType_Test.test_with100_4(((_FunctionTypes._return_P0_E0<TreePVector<Number>>) () -> {
-      TreePVector<Number> tpv = TreePVector.empty();
-      tpv = tpv.plus(((Number) new BigInteger("1")));
-      tpv = tpv.plus(((Number) new BigInteger("2")));
-      tpv = tpv.plus(((Number) new BigInteger("3")));
-      return tpv;
-    }).invoke())), (Object) ((_FunctionTypes._return_P0_E0<TreePVector<Number>>) () -> {
-      TreePVector<Number> tpv = TreePVector.empty();
-      tpv = tpv.plus(((Number) new BigInteger("1")));
-      tpv = tpv.plus(((Number) new BigInteger("2")));
-      tpv = tpv.plus(((Number) new BigInteger("3")));
-      tpv = tpv.plus(((Number) new BigInteger("100")));
-      return tpv;
-    }).invoke(), (Object) Generated_functionType_Test.test_with100_4(((_FunctionTypes._return_P0_E0<TreePVector<Number>>) () -> {
-      TreePVector<Number> tpv = TreePVector.empty();
-      tpv = tpv.plus(((Number) new BigInteger("1")));
-      tpv = tpv.plus(((Number) new BigInteger("2")));
-      tpv = tpv.plus(((Number) new BigInteger("3")));
-      return tpv;
-    }).invoke()));
+    try {
+      Assert.assertEquals("Expected: " + (((_FunctionTypes._return_P0_E0<TreePVector<Number>>) () -> {
+        TreePVector<Number> tpv = TreePVector.empty();
+        tpv = tpv.plus(((Number) new BigInteger("1")));
+        tpv = tpv.plus(((Number) new BigInteger("2")));
+        tpv = tpv.plus(((Number) new BigInteger("3")));
+        tpv = tpv.plus(((Number) new BigInteger("100")));
+        return tpv;
+      }).invoke()) + ", but was: " + (Generated_functionType_Test.test_with100_4(((_FunctionTypes._return_P0_E0<TreePVector<Number>>) () -> {
+        TreePVector<Number> tpv = TreePVector.empty();
+        tpv = tpv.plus(((Number) new BigInteger("1")));
+        tpv = tpv.plus(((Number) new BigInteger("2")));
+        tpv = tpv.plus(((Number) new BigInteger("3")));
+        return tpv;
+      }).invoke())), (Object) ((_FunctionTypes._return_P0_E0<TreePVector<Number>>) () -> {
+        TreePVector<Number> tpv = TreePVector.empty();
+        tpv = tpv.plus(((Number) new BigInteger("1")));
+        tpv = tpv.plus(((Number) new BigInteger("2")));
+        tpv = tpv.plus(((Number) new BigInteger("3")));
+        tpv = tpv.plus(((Number) new BigInteger("100")));
+        return tpv;
+      }).invoke(), (Object) Generated_functionType_Test.test_with100_4(((_FunctionTypes._return_P0_E0<TreePVector<Number>>) () -> {
+        TreePVector<Number> tpv = TreePVector.empty();
+        tpv = tpv.plus(((Number) new BigInteger("1")));
+        tpv = tpv.plus(((Number) new BigInteger("2")));
+        tpv = tpv.plus(((Number) new BigInteger("3")));
+        return tpv;
+      }).invoke()));
+    } catch (Throwable failure) {
+      throw SourceNodeFailures.attach(failure, "http://127.0.0.1:63320/node?ref=r%3Af9a70877-66f3-464b-86cb-67a9d543be8c%28test.in.expr.os.functions%40tests%29%2F4707892895168083116");
+    }
   }
   @Test
   public void checkAllFunctionsCanBeExecuted_item15_4707892895168086056() throws Throwable {
-    Assert.assertEquals("Expected: " + (((_FunctionTypes._return_P0_E0<TreePVector<Number>>) () -> {
-      TreePVector<Number> tpv = TreePVector.empty();
-      tpv = tpv.plus(((Number) new BigInteger("2")));
-      tpv = tpv.plus(((Number) new BigInteger("3")));
-      return tpv;
-    }).invoke()) + ", but was: " + (Generated_functionType_Test.test_without100_4(((_FunctionTypes._return_P0_E0<TreePVector<Number>>) () -> {
-      TreePVector<Number> tpv = TreePVector.empty();
-      tpv = tpv.plus(((Number) new BigInteger("100")));
-      tpv = tpv.plus(((Number) new BigInteger("2")));
-      tpv = tpv.plus(((Number) new BigInteger("3")));
-      return tpv;
-    }).invoke())), (Object) ((_FunctionTypes._return_P0_E0<TreePVector<Number>>) () -> {
-      TreePVector<Number> tpv = TreePVector.empty();
-      tpv = tpv.plus(((Number) new BigInteger("2")));
-      tpv = tpv.plus(((Number) new BigInteger("3")));
-      return tpv;
-    }).invoke(), (Object) Generated_functionType_Test.test_without100_4(((_FunctionTypes._return_P0_E0<TreePVector<Number>>) () -> {
-      TreePVector<Number> tpv = TreePVector.empty();
-      tpv = tpv.plus(((Number) new BigInteger("100")));
-      tpv = tpv.plus(((Number) new BigInteger("2")));
-      tpv = tpv.plus(((Number) new BigInteger("3")));
-      return tpv;
-    }).invoke()));
+    try {
+      Assert.assertEquals("Expected: " + (((_FunctionTypes._return_P0_E0<TreePVector<Number>>) () -> {
+        TreePVector<Number> tpv = TreePVector.empty();
+        tpv = tpv.plus(((Number) new BigInteger("2")));
+        tpv = tpv.plus(((Number) new BigInteger("3")));
+        return tpv;
+      }).invoke()) + ", but was: " + (Generated_functionType_Test.test_without100_4(((_FunctionTypes._return_P0_E0<TreePVector<Number>>) () -> {
+        TreePVector<Number> tpv = TreePVector.empty();
+        tpv = tpv.plus(((Number) new BigInteger("100")));
+        tpv = tpv.plus(((Number) new BigInteger("2")));
+        tpv = tpv.plus(((Number) new BigInteger("3")));
+        return tpv;
+      }).invoke())), (Object) ((_FunctionTypes._return_P0_E0<TreePVector<Number>>) () -> {
+        TreePVector<Number> tpv = TreePVector.empty();
+        tpv = tpv.plus(((Number) new BigInteger("2")));
+        tpv = tpv.plus(((Number) new BigInteger("3")));
+        return tpv;
+      }).invoke(), (Object) Generated_functionType_Test.test_without100_4(((_FunctionTypes._return_P0_E0<TreePVector<Number>>) () -> {
+        TreePVector<Number> tpv = TreePVector.empty();
+        tpv = tpv.plus(((Number) new BigInteger("100")));
+        tpv = tpv.plus(((Number) new BigInteger("2")));
+        tpv = tpv.plus(((Number) new BigInteger("3")));
+        return tpv;
+      }).invoke()));
+    } catch (Throwable failure) {
+      throw SourceNodeFailures.attach(failure, "http://127.0.0.1:63320/node?ref=r%3Af9a70877-66f3-464b-86cb-67a9d543be8c%28test.in.expr.os.functions%40tests%29%2F4707892895168086056");
+    }
   }
   @Test
   public void checkAllFunctionsCanBeExecuted_item16_6228467984864990983() throws Throwable {
-    Assert.assertEquals("Expected: " + (((_FunctionTypes._return_P0_E0<TreePVector<Number>>) () -> {
-      TreePVector<Number> tpv = TreePVector.empty();
-      tpv = tpv.plus(((Number) new BigInteger("1")));
-      tpv = tpv.plus(((Number) new BigInteger("2")));
-      tpv = tpv.plus(((Number) new BigInteger("3")));
-      return tpv;
-    }).invoke()) + ", but was: " + (Generated_functionType_Test.test_5(((_FunctionTypes._return_P0_E0<TreePVector<Number>>) () -> {
-      TreePVector<Number> tpv = TreePVector.empty();
-      tpv = tpv.plus(((Number) new BigInteger("1")));
-      tpv = tpv.plus(((Number) new BigInteger("2")));
-      tpv = tpv.plus(((Number) new BigInteger("3")));
-      return tpv;
-    }).invoke())), (Object) ((_FunctionTypes._return_P0_E0<TreePVector<Number>>) () -> {
-      TreePVector<Number> tpv = TreePVector.empty();
-      tpv = tpv.plus(((Number) new BigInteger("1")));
-      tpv = tpv.plus(((Number) new BigInteger("2")));
-      tpv = tpv.plus(((Number) new BigInteger("3")));
-      return tpv;
-    }).invoke(), (Object) Generated_functionType_Test.test_5(((_FunctionTypes._return_P0_E0<TreePVector<Number>>) () -> {
-      TreePVector<Number> tpv = TreePVector.empty();
-      tpv = tpv.plus(((Number) new BigInteger("1")));
-      tpv = tpv.plus(((Number) new BigInteger("2")));
-      tpv = tpv.plus(((Number) new BigInteger("3")));
-      return tpv;
-    }).invoke()));
+    try {
+      Assert.assertEquals("Expected: " + (((_FunctionTypes._return_P0_E0<TreePVector<Number>>) () -> {
+        TreePVector<Number> tpv = TreePVector.empty();
+        tpv = tpv.plus(((Number) new BigInteger("1")));
+        tpv = tpv.plus(((Number) new BigInteger("2")));
+        tpv = tpv.plus(((Number) new BigInteger("3")));
+        return tpv;
+      }).invoke()) + ", but was: " + (Generated_functionType_Test.test_5(((_FunctionTypes._return_P0_E0<TreePVector<Number>>) () -> {
+        TreePVector<Number> tpv = TreePVector.empty();
+        tpv = tpv.plus(((Number) new BigInteger("1")));
+        tpv = tpv.plus(((Number) new BigInteger("2")));
+        tpv = tpv.plus(((Number) new BigInteger("3")));
+        return tpv;
+      }).invoke())), (Object) ((_FunctionTypes._return_P0_E0<TreePVector<Number>>) () -> {
+        TreePVector<Number> tpv = TreePVector.empty();
+        tpv = tpv.plus(((Number) new BigInteger("1")));
+        tpv = tpv.plus(((Number) new BigInteger("2")));
+        tpv = tpv.plus(((Number) new BigInteger("3")));
+        return tpv;
+      }).invoke(), (Object) Generated_functionType_Test.test_5(((_FunctionTypes._return_P0_E0<TreePVector<Number>>) () -> {
+        TreePVector<Number> tpv = TreePVector.empty();
+        tpv = tpv.plus(((Number) new BigInteger("1")));
+        tpv = tpv.plus(((Number) new BigInteger("2")));
+        tpv = tpv.plus(((Number) new BigInteger("3")));
+        return tpv;
+      }).invoke()));
+    } catch (Throwable failure) {
+      throw SourceNodeFailures.attach(failure, "http://127.0.0.1:63320/node?ref=r%3Af9a70877-66f3-464b-86cb-67a9d543be8c%28test.in.expr.os.functions%40tests%29%2F6228467984864990983");
+    }
   }
   @Test
   public void checkAllFunctionsCanBeExecuted_item17_6228467984865004306() throws Throwable {
-    Assert.assertEquals("Expected: " + (((_FunctionTypes._return_P0_E0<TreePVector<Number>>) () -> {
-      TreePVector<Number> tpv = TreePVector.empty();
-      tpv = tpv.plus(((Number) new BigInteger("1")));
-      tpv = tpv.plus(((Number) new BigInteger("2")));
-      tpv = tpv.plus(((Number) new BigInteger("3")));
-      return tpv;
-    }).invoke()) + ", but was: " + (Generated_functionType_Test.test_a_5(((_FunctionTypes._return_P0_E0<TreePVector<Number>>) () -> {
-      TreePVector<Number> tpv = TreePVector.empty();
-      tpv = tpv.plus(((Number) new BigInteger("1")));
-      tpv = tpv.plus(((Number) new BigInteger("2")));
-      tpv = tpv.plus(((Number) new BigInteger("3")));
-      return tpv;
-    }).invoke())), (Object) ((_FunctionTypes._return_P0_E0<TreePVector<Number>>) () -> {
-      TreePVector<Number> tpv = TreePVector.empty();
-      tpv = tpv.plus(((Number) new BigInteger("1")));
-      tpv = tpv.plus(((Number) new BigInteger("2")));
-      tpv = tpv.plus(((Number) new BigInteger("3")));
-      return tpv;
-    }).invoke(), (Object) Generated_functionType_Test.test_a_5(((_FunctionTypes._return_P0_E0<TreePVector<Number>>) () -> {
-      TreePVector<Number> tpv = TreePVector.empty();
-      tpv = tpv.plus(((Number) new BigInteger("1")));
-      tpv = tpv.plus(((Number) new BigInteger("2")));
-      tpv = tpv.plus(((Number) new BigInteger("3")));
-      return tpv;
-    }).invoke()));
+    try {
+      Assert.assertEquals("Expected: " + (((_FunctionTypes._return_P0_E0<TreePVector<Number>>) () -> {
+        TreePVector<Number> tpv = TreePVector.empty();
+        tpv = tpv.plus(((Number) new BigInteger("1")));
+        tpv = tpv.plus(((Number) new BigInteger("2")));
+        tpv = tpv.plus(((Number) new BigInteger("3")));
+        return tpv;
+      }).invoke()) + ", but was: " + (Generated_functionType_Test.test_a_5(((_FunctionTypes._return_P0_E0<TreePVector<Number>>) () -> {
+        TreePVector<Number> tpv = TreePVector.empty();
+        tpv = tpv.plus(((Number) new BigInteger("1")));
+        tpv = tpv.plus(((Number) new BigInteger("2")));
+        tpv = tpv.plus(((Number) new BigInteger("3")));
+        return tpv;
+      }).invoke())), (Object) ((_FunctionTypes._return_P0_E0<TreePVector<Number>>) () -> {
+        TreePVector<Number> tpv = TreePVector.empty();
+        tpv = tpv.plus(((Number) new BigInteger("1")));
+        tpv = tpv.plus(((Number) new BigInteger("2")));
+        tpv = tpv.plus(((Number) new BigInteger("3")));
+        return tpv;
+      }).invoke(), (Object) Generated_functionType_Test.test_a_5(((_FunctionTypes._return_P0_E0<TreePVector<Number>>) () -> {
+        TreePVector<Number> tpv = TreePVector.empty();
+        tpv = tpv.plus(((Number) new BigInteger("1")));
+        tpv = tpv.plus(((Number) new BigInteger("2")));
+        tpv = tpv.plus(((Number) new BigInteger("3")));
+        return tpv;
+      }).invoke()));
+    } catch (Throwable failure) {
+      throw SourceNodeFailures.attach(failure, "http://127.0.0.1:63320/node?ref=r%3Af9a70877-66f3-464b-86cb-67a9d543be8c%28test.in.expr.os.functions%40tests%29%2F6228467984865004306");
+    }
   }
   @Test
   public void checkAllFunctionsCanBeExecuted_item18_7525807922155791505() throws Throwable {
-    Assert.assertEquals("Expected: " + (((_FunctionTypes._return_P0_E0<TreePVector<Number>>) () -> {
-      TreePVector<Number> tpv = TreePVector.empty();
-      tpv = tpv.plus(((Number) new BigInteger("1")));
-      tpv = tpv.plus(((Number) new BigInteger("2")));
-      tpv = tpv.plus(((Number) new BigInteger("3")));
-      tpv = tpv.plus(((Number) new BigInteger("4")));
-      return tpv;
-    }).invoke()) + ", but was: " + (Generated_functionType_Test.test_listFlatteningByAlt(((_FunctionTypes._return_P0_E0<TreePVector<PVector<Number>>>) () -> {
-      TreePVector<PVector<Number>> tpv = TreePVector.empty();
-      tpv = tpv.plus(new _FunctionTypes._return_P0_E0<TreePVector<Number>>() {
-        public TreePVector<Number> invoke() {
-          TreePVector<Number> tpv = TreePVector.empty();
-          tpv = tpv.plus(((Number) new BigInteger("1")));
-          tpv = tpv.plus(((Number) new BigInteger("2")));
-          return tpv;
-        }
-      }.invoke());
-      tpv = tpv.plus(new _FunctionTypes._return_P0_E0<TreePVector<Number>>() {
-        public TreePVector<Number> invoke() {
-          TreePVector<Number> tpv = TreePVector.empty();
-          tpv = tpv.plus(((Number) new BigInteger("3")));
-          tpv = tpv.plus(((Number) new BigInteger("4")));
-          return tpv;
-        }
-      }.invoke());
-      return tpv;
-    }).invoke())), (Object) ((_FunctionTypes._return_P0_E0<TreePVector<Number>>) () -> {
-      TreePVector<Number> tpv = TreePVector.empty();
-      tpv = tpv.plus(((Number) new BigInteger("1")));
-      tpv = tpv.plus(((Number) new BigInteger("2")));
-      tpv = tpv.plus(((Number) new BigInteger("3")));
-      tpv = tpv.plus(((Number) new BigInteger("4")));
-      return tpv;
-    }).invoke(), (Object) Generated_functionType_Test.test_listFlatteningByAlt(((_FunctionTypes._return_P0_E0<TreePVector<PVector<Number>>>) () -> {
-      TreePVector<PVector<Number>> tpv = TreePVector.empty();
-      tpv = tpv.plus(new _FunctionTypes._return_P0_E0<TreePVector<Number>>() {
-        public TreePVector<Number> invoke() {
-          TreePVector<Number> tpv = TreePVector.empty();
-          tpv = tpv.plus(((Number) new BigInteger("1")));
-          tpv = tpv.plus(((Number) new BigInteger("2")));
-          return tpv;
-        }
-      }.invoke());
-      tpv = tpv.plus(new _FunctionTypes._return_P0_E0<TreePVector<Number>>() {
-        public TreePVector<Number> invoke() {
-          TreePVector<Number> tpv = TreePVector.empty();
-          tpv = tpv.plus(((Number) new BigInteger("3")));
-          tpv = tpv.plus(((Number) new BigInteger("4")));
-          return tpv;
-        }
-      }.invoke());
-      return tpv;
-    }).invoke()));
+    try {
+      Assert.assertEquals("Expected: " + (((_FunctionTypes._return_P0_E0<TreePVector<Number>>) () -> {
+        TreePVector<Number> tpv = TreePVector.empty();
+        tpv = tpv.plus(((Number) new BigInteger("1")));
+        tpv = tpv.plus(((Number) new BigInteger("2")));
+        tpv = tpv.plus(((Number) new BigInteger("3")));
+        tpv = tpv.plus(((Number) new BigInteger("4")));
+        return tpv;
+      }).invoke()) + ", but was: " + (Generated_functionType_Test.test_listFlatteningByAlt(((_FunctionTypes._return_P0_E0<TreePVector<PVector<Number>>>) () -> {
+        TreePVector<PVector<Number>> tpv = TreePVector.empty();
+        tpv = tpv.plus(new _FunctionTypes._return_P0_E0<TreePVector<Number>>() {
+          public TreePVector<Number> invoke() {
+            TreePVector<Number> tpv = TreePVector.empty();
+            tpv = tpv.plus(((Number) new BigInteger("1")));
+            tpv = tpv.plus(((Number) new BigInteger("2")));
+            return tpv;
+          }
+        }.invoke());
+        tpv = tpv.plus(new _FunctionTypes._return_P0_E0<TreePVector<Number>>() {
+          public TreePVector<Number> invoke() {
+            TreePVector<Number> tpv = TreePVector.empty();
+            tpv = tpv.plus(((Number) new BigInteger("3")));
+            tpv = tpv.plus(((Number) new BigInteger("4")));
+            return tpv;
+          }
+        }.invoke());
+        return tpv;
+      }).invoke())), (Object) ((_FunctionTypes._return_P0_E0<TreePVector<Number>>) () -> {
+        TreePVector<Number> tpv = TreePVector.empty();
+        tpv = tpv.plus(((Number) new BigInteger("1")));
+        tpv = tpv.plus(((Number) new BigInteger("2")));
+        tpv = tpv.plus(((Number) new BigInteger("3")));
+        tpv = tpv.plus(((Number) new BigInteger("4")));
+        return tpv;
+      }).invoke(), (Object) Generated_functionType_Test.test_listFlatteningByAlt(((_FunctionTypes._return_P0_E0<TreePVector<PVector<Number>>>) () -> {
+        TreePVector<PVector<Number>> tpv = TreePVector.empty();
+        tpv = tpv.plus(new _FunctionTypes._return_P0_E0<TreePVector<Number>>() {
+          public TreePVector<Number> invoke() {
+            TreePVector<Number> tpv = TreePVector.empty();
+            tpv = tpv.plus(((Number) new BigInteger("1")));
+            tpv = tpv.plus(((Number) new BigInteger("2")));
+            return tpv;
+          }
+        }.invoke());
+        tpv = tpv.plus(new _FunctionTypes._return_P0_E0<TreePVector<Number>>() {
+          public TreePVector<Number> invoke() {
+            TreePVector<Number> tpv = TreePVector.empty();
+            tpv = tpv.plus(((Number) new BigInteger("3")));
+            tpv = tpv.plus(((Number) new BigInteger("4")));
+            return tpv;
+          }
+        }.invoke());
+        return tpv;
+      }).invoke()));
+    } catch (Throwable failure) {
+      throw SourceNodeFailures.attach(failure, "http://127.0.0.1:63320/node?ref=r%3Af9a70877-66f3-464b-86cb-67a9d543be8c%28test.in.expr.os.functions%40tests%29%2F7525807922155791505");
+    }
   }
   @Test
   public void checkAllFunctionsCanBeExecuted_item19_9198858277398001283() throws Throwable {
-    Assert.assertEquals("Expected: " + (((_FunctionTypes._return_P0_E0<TreePVector<Number>>) () -> {
-      TreePVector<Number> tpv = TreePVector.empty();
-      tpv = tpv.plus(((Number) new BigInteger("1")));
-      tpv = tpv.plus(((Number) new BigInteger("2")));
-      tpv = tpv.plus(((Number) new BigInteger("3")));
-      tpv = tpv.plus(((Number) new BigInteger("4")));
-      return tpv;
-    }).invoke()) + ", but was: " + (Generated_functionType_Test.test_listFlatteningByIf(((_FunctionTypes._return_P0_E0<TreePVector<PVector<Number>>>) () -> {
-      TreePVector<PVector<Number>> tpv = TreePVector.empty();
-      tpv = tpv.plus(new _FunctionTypes._return_P0_E0<TreePVector<Number>>() {
-        public TreePVector<Number> invoke() {
-          TreePVector<Number> tpv = TreePVector.empty();
-          tpv = tpv.plus(((Number) new BigInteger("1")));
-          tpv = tpv.plus(((Number) new BigInteger("2")));
-          return tpv;
-        }
-      }.invoke());
-      tpv = tpv.plus(new _FunctionTypes._return_P0_E0<TreePVector<Number>>() {
-        public TreePVector<Number> invoke() {
-          TreePVector<Number> tpv = TreePVector.empty();
-          tpv = tpv.plus(((Number) new BigInteger("3")));
-          tpv = tpv.plus(((Number) new BigInteger("4")));
-          return tpv;
-        }
-      }.invoke());
-      return tpv;
-    }).invoke())), (Object) ((_FunctionTypes._return_P0_E0<TreePVector<Number>>) () -> {
-      TreePVector<Number> tpv = TreePVector.empty();
-      tpv = tpv.plus(((Number) new BigInteger("1")));
-      tpv = tpv.plus(((Number) new BigInteger("2")));
-      tpv = tpv.plus(((Number) new BigInteger("3")));
-      tpv = tpv.plus(((Number) new BigInteger("4")));
-      return tpv;
-    }).invoke(), (Object) Generated_functionType_Test.test_listFlatteningByIf(((_FunctionTypes._return_P0_E0<TreePVector<PVector<Number>>>) () -> {
-      TreePVector<PVector<Number>> tpv = TreePVector.empty();
-      tpv = tpv.plus(new _FunctionTypes._return_P0_E0<TreePVector<Number>>() {
-        public TreePVector<Number> invoke() {
-          TreePVector<Number> tpv = TreePVector.empty();
-          tpv = tpv.plus(((Number) new BigInteger("1")));
-          tpv = tpv.plus(((Number) new BigInteger("2")));
-          return tpv;
-        }
-      }.invoke());
-      tpv = tpv.plus(new _FunctionTypes._return_P0_E0<TreePVector<Number>>() {
-        public TreePVector<Number> invoke() {
-          TreePVector<Number> tpv = TreePVector.empty();
-          tpv = tpv.plus(((Number) new BigInteger("3")));
-          tpv = tpv.plus(((Number) new BigInteger("4")));
-          return tpv;
-        }
-      }.invoke());
-      return tpv;
-    }).invoke()));
+    try {
+      Assert.assertEquals("Expected: " + (((_FunctionTypes._return_P0_E0<TreePVector<Number>>) () -> {
+        TreePVector<Number> tpv = TreePVector.empty();
+        tpv = tpv.plus(((Number) new BigInteger("1")));
+        tpv = tpv.plus(((Number) new BigInteger("2")));
+        tpv = tpv.plus(((Number) new BigInteger("3")));
+        tpv = tpv.plus(((Number) new BigInteger("4")));
+        return tpv;
+      }).invoke()) + ", but was: " + (Generated_functionType_Test.test_listFlatteningByIf(((_FunctionTypes._return_P0_E0<TreePVector<PVector<Number>>>) () -> {
+        TreePVector<PVector<Number>> tpv = TreePVector.empty();
+        tpv = tpv.plus(new _FunctionTypes._return_P0_E0<TreePVector<Number>>() {
+          public TreePVector<Number> invoke() {
+            TreePVector<Number> tpv = TreePVector.empty();
+            tpv = tpv.plus(((Number) new BigInteger("1")));
+            tpv = tpv.plus(((Number) new BigInteger("2")));
+            return tpv;
+          }
+        }.invoke());
+        tpv = tpv.plus(new _FunctionTypes._return_P0_E0<TreePVector<Number>>() {
+          public TreePVector<Number> invoke() {
+            TreePVector<Number> tpv = TreePVector.empty();
+            tpv = tpv.plus(((Number) new BigInteger("3")));
+            tpv = tpv.plus(((Number) new BigInteger("4")));
+            return tpv;
+          }
+        }.invoke());
+        return tpv;
+      }).invoke())), (Object) ((_FunctionTypes._return_P0_E0<TreePVector<Number>>) () -> {
+        TreePVector<Number> tpv = TreePVector.empty();
+        tpv = tpv.plus(((Number) new BigInteger("1")));
+        tpv = tpv.plus(((Number) new BigInteger("2")));
+        tpv = tpv.plus(((Number) new BigInteger("3")));
+        tpv = tpv.plus(((Number) new BigInteger("4")));
+        return tpv;
+      }).invoke(), (Object) Generated_functionType_Test.test_listFlatteningByIf(((_FunctionTypes._return_P0_E0<TreePVector<PVector<Number>>>) () -> {
+        TreePVector<PVector<Number>> tpv = TreePVector.empty();
+        tpv = tpv.plus(new _FunctionTypes._return_P0_E0<TreePVector<Number>>() {
+          public TreePVector<Number> invoke() {
+            TreePVector<Number> tpv = TreePVector.empty();
+            tpv = tpv.plus(((Number) new BigInteger("1")));
+            tpv = tpv.plus(((Number) new BigInteger("2")));
+            return tpv;
+          }
+        }.invoke());
+        tpv = tpv.plus(new _FunctionTypes._return_P0_E0<TreePVector<Number>>() {
+          public TreePVector<Number> invoke() {
+            TreePVector<Number> tpv = TreePVector.empty();
+            tpv = tpv.plus(((Number) new BigInteger("3")));
+            tpv = tpv.plus(((Number) new BigInteger("4")));
+            return tpv;
+          }
+        }.invoke());
+        return tpv;
+      }).invoke()));
+    } catch (Throwable failure) {
+      throw SourceNodeFailures.attach(failure, "http://127.0.0.1:63320/node?ref=r%3Af9a70877-66f3-464b-86cb-67a9d543be8c%28test.in.expr.os.functions%40tests%29%2F9198858277398001283");
+    }
   }
   @Test
   public void checkAllFunctionsCanBeExecuted_item20_9198858277398011830() throws Throwable {
-    Assert.assertTrue("Expected: " + (((Number) new BigInteger("2"))) + ", but was: " + (Generated_functionType_Test.test_listChoiceByAlt(((_FunctionTypes._return_P0_E0<TreePVector<Number>>) () -> {
-      TreePVector<Number> tpv = TreePVector.empty();
-      tpv = tpv.plus(((Number) new BigInteger("1")));
-      tpv = tpv.plus(((Number) new BigInteger("2")));
-      return tpv;
-    }).invoke())), EqualsTestOp.matches(((Number) new BigInteger("2")), Generated_functionType_Test.test_listChoiceByAlt(((_FunctionTypes._return_P0_E0<TreePVector<Number>>) () -> {
-      TreePVector<Number> tpv = TreePVector.empty();
-      tpv = tpv.plus(((Number) new BigInteger("1")));
-      tpv = tpv.plus(((Number) new BigInteger("2")));
-      return tpv;
-    }).invoke())));
+    try {
+      Assert.assertTrue("Expected: " + (((Number) new BigInteger("2"))) + ", but was: " + (Generated_functionType_Test.test_listChoiceByAlt(((_FunctionTypes._return_P0_E0<TreePVector<Number>>) () -> {
+        TreePVector<Number> tpv = TreePVector.empty();
+        tpv = tpv.plus(((Number) new BigInteger("1")));
+        tpv = tpv.plus(((Number) new BigInteger("2")));
+        return tpv;
+      }).invoke())), EqualsTestOp.matches(((Number) new BigInteger("2")), Generated_functionType_Test.test_listChoiceByAlt(((_FunctionTypes._return_P0_E0<TreePVector<Number>>) () -> {
+        TreePVector<Number> tpv = TreePVector.empty();
+        tpv = tpv.plus(((Number) new BigInteger("1")));
+        tpv = tpv.plus(((Number) new BigInteger("2")));
+        return tpv;
+      }).invoke())));
+    } catch (Throwable failure) {
+      throw SourceNodeFailures.attach(failure, "http://127.0.0.1:63320/node?ref=r%3Af9a70877-66f3-464b-86cb-67a9d543be8c%28test.in.expr.os.functions%40tests%29%2F9198858277398011830");
+    }
   }
   @Test
   public void checkAllFunctionsCanBeExecuted_item21_9198858277398022160() throws Throwable {
-    Assert.assertTrue("Expected: " + (((Number) new BigInteger("2"))) + ", but was: " + (Generated_functionType_Test.test_listChoiceByIf(((_FunctionTypes._return_P0_E0<TreePVector<Number>>) () -> {
-      TreePVector<Number> tpv = TreePVector.empty();
-      tpv = tpv.plus(((Number) new BigInteger("1")));
-      tpv = tpv.plus(((Number) new BigInteger("2")));
-      return tpv;
-    }).invoke())), EqualsTestOp.matches(((Number) new BigInteger("2")), Generated_functionType_Test.test_listChoiceByIf(((_FunctionTypes._return_P0_E0<TreePVector<Number>>) () -> {
-      TreePVector<Number> tpv = TreePVector.empty();
-      tpv = tpv.plus(((Number) new BigInteger("1")));
-      tpv = tpv.plus(((Number) new BigInteger("2")));
-      return tpv;
-    }).invoke())));
+    try {
+      Assert.assertTrue("Expected: " + (((Number) new BigInteger("2"))) + ", but was: " + (Generated_functionType_Test.test_listChoiceByIf(((_FunctionTypes._return_P0_E0<TreePVector<Number>>) () -> {
+        TreePVector<Number> tpv = TreePVector.empty();
+        tpv = tpv.plus(((Number) new BigInteger("1")));
+        tpv = tpv.plus(((Number) new BigInteger("2")));
+        return tpv;
+      }).invoke())), EqualsTestOp.matches(((Number) new BigInteger("2")), Generated_functionType_Test.test_listChoiceByIf(((_FunctionTypes._return_P0_E0<TreePVector<Number>>) () -> {
+        TreePVector<Number> tpv = TreePVector.empty();
+        tpv = tpv.plus(((Number) new BigInteger("1")));
+        tpv = tpv.plus(((Number) new BigInteger("2")));
+        return tpv;
+      }).invoke())));
+    } catch (Throwable failure) {
+      throw SourceNodeFailures.attach(failure, "http://127.0.0.1:63320/node?ref=r%3Af9a70877-66f3-464b-86cb-67a9d543be8c%28test.in.expr.os.functions%40tests%29%2F9198858277398022160");
+    }
   }
 
 

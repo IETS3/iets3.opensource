@@ -4,6 +4,7 @@ package test.in.expr.os.strings;
 
 import org.junit.Test;
 import org.junit.Assert;
+import org.iets3.core.expr.genjava.tests.rt.rt.SourceNodeFailures;
 
 /**
  * 
@@ -12,7 +13,11 @@ public class Generated_stringsDefaultValues_Test {
 
   @Test
   public void TestDefaultValues_item0_6932772747675577671() throws Throwable {
-    Assert.assertEquals("Expected: " + ("") + ", but was: " + (""), (Object) "", (Object) "");
+    try {
+      Assert.assertEquals("Expected: " + ("") + ", but was: " + (""), (Object) "", (Object) "");
+    } catch (Throwable failure) {
+      throw SourceNodeFailures.attach(failure, "http://127.0.0.1:63320/node?ref=r%3A88f22b8b-30cf-42e2-ae08-ddc85066a7b8%28test.in.expr.os.strings%40tests%29%2F6932772747675577671");
+    }
   }
 
 

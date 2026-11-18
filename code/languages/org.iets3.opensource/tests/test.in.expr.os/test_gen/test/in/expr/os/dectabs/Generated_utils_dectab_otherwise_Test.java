@@ -9,6 +9,7 @@ import java.util.Objects;
 import org.junit.Test;
 import org.junit.Assert;
 import org.iets3.core.expr.genjava.tests.rt.rt.EqualsTestOp;
+import org.iets3.core.expr.genjava.tests.rt.rt.SourceNodeFailures;
 
 /**
  * 
@@ -215,75 +216,147 @@ public class Generated_utils_dectab_otherwise_Test {
   }
   @Test
   public void otherwise_item0_7792260915490914525() throws Throwable {
-    Assert.assertTrue("Expected: " + (((Number) new BigInteger("111"))) + ", but was: " + (Generated_utils_dectab_otherwise_Test.otherwiseWithoutPredef()), EqualsTestOp.matches(((Number) new BigInteger("111")), Generated_utils_dectab_otherwise_Test.otherwiseWithoutPredef()));
+    try {
+      Assert.assertTrue("Expected: " + (((Number) new BigInteger("111"))) + ", but was: " + (Generated_utils_dectab_otherwise_Test.otherwiseWithoutPredef()), EqualsTestOp.matches(((Number) new BigInteger("111")), Generated_utils_dectab_otherwise_Test.otherwiseWithoutPredef()));
+    } catch (Throwable failure) {
+      throw SourceNodeFailures.attach(failure, "http://127.0.0.1:63320/node?ref=r%3Ab4500bb0-87e3-4d5a-a729-2379e1aab94c%28test.in.expr.os.dectabs%40tests%29%2F7792260915490914525");
+    }
   }
   @Test
   public void otherwise_item1_4491089619974906055() throws Throwable {
-    Assert.assertTrue("Expected: " + (((Number) new BigInteger("100"))) + ", but was: " + (Generated_utils_dectab_otherwise_Test.otherwiseWithPredefXY(((Number) new BigInteger("0")), "0")), EqualsTestOp.matches(((Number) new BigInteger("100")), Generated_utils_dectab_otherwise_Test.otherwiseWithPredefXY(((Number) new BigInteger("0")), "0")));
+    try {
+      Assert.assertTrue("Expected: " + (((Number) new BigInteger("100"))) + ", but was: " + (Generated_utils_dectab_otherwise_Test.otherwiseWithPredefXY(((Number) new BigInteger("0")), "0")), EqualsTestOp.matches(((Number) new BigInteger("100")), Generated_utils_dectab_otherwise_Test.otherwiseWithPredefXY(((Number) new BigInteger("0")), "0")));
+    } catch (Throwable failure) {
+      throw SourceNodeFailures.attach(failure, "http://127.0.0.1:63320/node?ref=r%3Ab4500bb0-87e3-4d5a-a729-2379e1aab94c%28test.in.expr.os.dectabs%40tests%29%2F4491089619974906055");
+    }
   }
   @Test
   public void otherwise_item2_4491089619974906936() throws Throwable {
-    Assert.assertTrue("Expected: " + (((Number) new BigInteger("110"))) + ", but was: " + (Generated_utils_dectab_otherwise_Test.otherwiseWithPredefXY(((Number) new BigInteger("0")), "1")), EqualsTestOp.matches(((Number) new BigInteger("110")), Generated_utils_dectab_otherwise_Test.otherwiseWithPredefXY(((Number) new BigInteger("0")), "1")));
+    try {
+      Assert.assertTrue("Expected: " + (((Number) new BigInteger("110"))) + ", but was: " + (Generated_utils_dectab_otherwise_Test.otherwiseWithPredefXY(((Number) new BigInteger("0")), "1")), EqualsTestOp.matches(((Number) new BigInteger("110")), Generated_utils_dectab_otherwise_Test.otherwiseWithPredefXY(((Number) new BigInteger("0")), "1")));
+    } catch (Throwable failure) {
+      throw SourceNodeFailures.attach(failure, "http://127.0.0.1:63320/node?ref=r%3Ab4500bb0-87e3-4d5a-a729-2379e1aab94c%28test.in.expr.os.dectabs%40tests%29%2F4491089619974906936");
+    }
   }
   @Test
   public void otherwise_item3_7792260915491661952() throws Throwable {
-    Assert.assertTrue("Expected: " + (((Number) new BigInteger("111"))) + ", but was: " + (Generated_utils_dectab_otherwise_Test.otherwiseWithPredefXY(((Number) new BigInteger("1")), "1")), EqualsTestOp.matches(((Number) new BigInteger("111")), Generated_utils_dectab_otherwise_Test.otherwiseWithPredefXY(((Number) new BigInteger("1")), "1")));
+    try {
+      Assert.assertTrue("Expected: " + (((Number) new BigInteger("111"))) + ", but was: " + (Generated_utils_dectab_otherwise_Test.otherwiseWithPredefXY(((Number) new BigInteger("1")), "1")), EqualsTestOp.matches(((Number) new BigInteger("111")), Generated_utils_dectab_otherwise_Test.otherwiseWithPredefXY(((Number) new BigInteger("1")), "1")));
+    } catch (Throwable failure) {
+      throw SourceNodeFailures.attach(failure, "http://127.0.0.1:63320/node?ref=r%3Ab4500bb0-87e3-4d5a-a729-2379e1aab94c%28test.in.expr.os.dectabs%40tests%29%2F7792260915491661952");
+    }
   }
   @Test
   public void otherwise_item4_4491089619974788016() throws Throwable {
-    Assert.assertTrue("Expected: " + (((Number) new BigInteger("111"))) + ", but was: " + (Generated_utils_dectab_otherwise_Test.otherwiseWithPredefX(((Number) new BigInteger("1")))), EqualsTestOp.matches(((Number) new BigInteger("111")), Generated_utils_dectab_otherwise_Test.otherwiseWithPredefX(((Number) new BigInteger("1")))));
+    try {
+      Assert.assertTrue("Expected: " + (((Number) new BigInteger("111"))) + ", but was: " + (Generated_utils_dectab_otherwise_Test.otherwiseWithPredefX(((Number) new BigInteger("1")))), EqualsTestOp.matches(((Number) new BigInteger("111")), Generated_utils_dectab_otherwise_Test.otherwiseWithPredefX(((Number) new BigInteger("1")))));
+    } catch (Throwable failure) {
+      throw SourceNodeFailures.attach(failure, "http://127.0.0.1:63320/node?ref=r%3Ab4500bb0-87e3-4d5a-a729-2379e1aab94c%28test.in.expr.os.dectabs%40tests%29%2F4491089619974788016");
+    }
   }
   @Test
   public void otherwise_item5_4491089619974788759() throws Throwable {
-    Assert.assertTrue("Expected: " + (((Number) new BigInteger("111"))) + ", but was: " + (Generated_utils_dectab_otherwise_Test.otherwiseWithPredefY("1")), EqualsTestOp.matches(((Number) new BigInteger("111")), Generated_utils_dectab_otherwise_Test.otherwiseWithPredefY("1")));
+    try {
+      Assert.assertTrue("Expected: " + (((Number) new BigInteger("111"))) + ", but was: " + (Generated_utils_dectab_otherwise_Test.otherwiseWithPredefY("1")), EqualsTestOp.matches(((Number) new BigInteger("111")), Generated_utils_dectab_otherwise_Test.otherwiseWithPredefY("1")));
+    } catch (Throwable failure) {
+      throw SourceNodeFailures.attach(failure, "http://127.0.0.1:63320/node?ref=r%3Ab4500bb0-87e3-4d5a-a729-2379e1aab94c%28test.in.expr.os.dectabs%40tests%29%2F4491089619974788759");
+    }
   }
   @Test
   public void otherwise_item7_8783792530929432395() throws Throwable {
-    Assert.assertTrue("Expected: " + (((Number) new BigInteger("1"))) + ", but was: " + (Generated_utils_dectab_otherwise_Test.defaultNoOtherwise(((Number) new BigInteger("1")), ((Number) new BigInteger("1")))), EqualsTestOp.matches(((Number) new BigInteger("1")), Generated_utils_dectab_otherwise_Test.defaultNoOtherwise(((Number) new BigInteger("1")), ((Number) new BigInteger("1")))));
+    try {
+      Assert.assertTrue("Expected: " + (((Number) new BigInteger("1"))) + ", but was: " + (Generated_utils_dectab_otherwise_Test.defaultNoOtherwise(((Number) new BigInteger("1")), ((Number) new BigInteger("1")))), EqualsTestOp.matches(((Number) new BigInteger("1")), Generated_utils_dectab_otherwise_Test.defaultNoOtherwise(((Number) new BigInteger("1")), ((Number) new BigInteger("1")))));
+    } catch (Throwable failure) {
+      throw SourceNodeFailures.attach(failure, "http://127.0.0.1:63320/node?ref=r%3Ab4500bb0-87e3-4d5a-a729-2379e1aab94c%28test.in.expr.os.dectabs%40tests%29%2F8783792530929432395");
+    }
   }
   @Test
   public void otherwise_item8_8783792530929797125() throws Throwable {
-    Assert.assertTrue("Expected: " + (((Number) new BigInteger("1"))) + ", but was: " + (Generated_utils_dectab_otherwise_Test.defaultWithOtherwise(((Number) new BigInteger("1")), ((Number) new BigInteger("1")))), EqualsTestOp.matches(((Number) new BigInteger("1")), Generated_utils_dectab_otherwise_Test.defaultWithOtherwise(((Number) new BigInteger("1")), ((Number) new BigInteger("1")))));
+    try {
+      Assert.assertTrue("Expected: " + (((Number) new BigInteger("1"))) + ", but was: " + (Generated_utils_dectab_otherwise_Test.defaultWithOtherwise(((Number) new BigInteger("1")), ((Number) new BigInteger("1")))), EqualsTestOp.matches(((Number) new BigInteger("1")), Generated_utils_dectab_otherwise_Test.defaultWithOtherwise(((Number) new BigInteger("1")), ((Number) new BigInteger("1")))));
+    } catch (Throwable failure) {
+      throw SourceNodeFailures.attach(failure, "http://127.0.0.1:63320/node?ref=r%3Ab4500bb0-87e3-4d5a-a729-2379e1aab94c%28test.in.expr.os.dectabs%40tests%29%2F8783792530929797125");
+    }
   }
   @Test
   public void otherwise_item9_6965066150162952042() throws Throwable {
-    Assert.assertTrue("Expected: " + (((Number) new BigInteger("1"))) + ", but was: " + (Generated_utils_dectab_otherwise_Test.defaultWithOtherwiseWithPredefXY(((Number) new BigInteger("1")), ((Number) new BigInteger("1")))), EqualsTestOp.matches(((Number) new BigInteger("1")), Generated_utils_dectab_otherwise_Test.defaultWithOtherwiseWithPredefXY(((Number) new BigInteger("1")), ((Number) new BigInteger("1")))));
+    try {
+      Assert.assertTrue("Expected: " + (((Number) new BigInteger("1"))) + ", but was: " + (Generated_utils_dectab_otherwise_Test.defaultWithOtherwiseWithPredefXY(((Number) new BigInteger("1")), ((Number) new BigInteger("1")))), EqualsTestOp.matches(((Number) new BigInteger("1")), Generated_utils_dectab_otherwise_Test.defaultWithOtherwiseWithPredefXY(((Number) new BigInteger("1")), ((Number) new BigInteger("1")))));
+    } catch (Throwable failure) {
+      throw SourceNodeFailures.attach(failure, "http://127.0.0.1:63320/node?ref=r%3Ab4500bb0-87e3-4d5a-a729-2379e1aab94c%28test.in.expr.os.dectabs%40tests%29%2F6965066150162952042");
+    }
   }
   @Test
   public void otherwise_item11_8783792530929599814() throws Throwable {
-    Assert.assertTrue("Expected: " + (((Number) new BigInteger("0"))) + ", but was: " + (Generated_utils_dectab_otherwise_Test.defaultNoOtherwise(((Number) new BigInteger("1")), ((Number) new BigInteger("3")))), EqualsTestOp.matches(((Number) new BigInteger("0")), Generated_utils_dectab_otherwise_Test.defaultNoOtherwise(((Number) new BigInteger("1")), ((Number) new BigInteger("3")))));
+    try {
+      Assert.assertTrue("Expected: " + (((Number) new BigInteger("0"))) + ", but was: " + (Generated_utils_dectab_otherwise_Test.defaultNoOtherwise(((Number) new BigInteger("1")), ((Number) new BigInteger("3")))), EqualsTestOp.matches(((Number) new BigInteger("0")), Generated_utils_dectab_otherwise_Test.defaultNoOtherwise(((Number) new BigInteger("1")), ((Number) new BigInteger("3")))));
+    } catch (Throwable failure) {
+      throw SourceNodeFailures.attach(failure, "http://127.0.0.1:63320/node?ref=r%3Ab4500bb0-87e3-4d5a-a729-2379e1aab94c%28test.in.expr.os.dectabs%40tests%29%2F8783792530929599814");
+    }
   }
   @Test
   public void otherwise_item12_8783792530929803950() throws Throwable {
-    Assert.assertTrue("Expected: " + (((Number) new BigInteger("3"))) + ", but was: " + (Generated_utils_dectab_otherwise_Test.defaultWithOtherwise(((Number) new BigInteger("1")), ((Number) new BigInteger("3")))), EqualsTestOp.matches(((Number) new BigInteger("3")), Generated_utils_dectab_otherwise_Test.defaultWithOtherwise(((Number) new BigInteger("1")), ((Number) new BigInteger("3")))));
+    try {
+      Assert.assertTrue("Expected: " + (((Number) new BigInteger("3"))) + ", but was: " + (Generated_utils_dectab_otherwise_Test.defaultWithOtherwise(((Number) new BigInteger("1")), ((Number) new BigInteger("3")))), EqualsTestOp.matches(((Number) new BigInteger("3")), Generated_utils_dectab_otherwise_Test.defaultWithOtherwise(((Number) new BigInteger("1")), ((Number) new BigInteger("3")))));
+    } catch (Throwable failure) {
+      throw SourceNodeFailures.attach(failure, "http://127.0.0.1:63320/node?ref=r%3Ab4500bb0-87e3-4d5a-a729-2379e1aab94c%28test.in.expr.os.dectabs%40tests%29%2F8783792530929803950");
+    }
   }
   @Test
   public void otherwise_item13_6965066150162956589() throws Throwable {
-    Assert.assertTrue("Expected: " + (((Number) new BigInteger("3"))) + ", but was: " + (Generated_utils_dectab_otherwise_Test.defaultWithOtherwiseWithPredefXY(((Number) new BigInteger("1")), ((Number) new BigInteger("3")))), EqualsTestOp.matches(((Number) new BigInteger("3")), Generated_utils_dectab_otherwise_Test.defaultWithOtherwiseWithPredefXY(((Number) new BigInteger("1")), ((Number) new BigInteger("3")))));
+    try {
+      Assert.assertTrue("Expected: " + (((Number) new BigInteger("3"))) + ", but was: " + (Generated_utils_dectab_otherwise_Test.defaultWithOtherwiseWithPredefXY(((Number) new BigInteger("1")), ((Number) new BigInteger("3")))), EqualsTestOp.matches(((Number) new BigInteger("3")), Generated_utils_dectab_otherwise_Test.defaultWithOtherwiseWithPredefXY(((Number) new BigInteger("1")), ((Number) new BigInteger("3")))));
+    } catch (Throwable failure) {
+      throw SourceNodeFailures.attach(failure, "http://127.0.0.1:63320/node?ref=r%3Ab4500bb0-87e3-4d5a-a729-2379e1aab94c%28test.in.expr.os.dectabs%40tests%29%2F6965066150162956589");
+    }
   }
   @Test
   public void otherwise_item15_8783792530929604959() throws Throwable {
-    Assert.assertTrue("Expected: " + (((Number) new BigInteger("0"))) + ", but was: " + (Generated_utils_dectab_otherwise_Test.defaultNoOtherwise(((Number) new BigInteger("3")), ((Number) new BigInteger("1")))), EqualsTestOp.matches(((Number) new BigInteger("0")), Generated_utils_dectab_otherwise_Test.defaultNoOtherwise(((Number) new BigInteger("3")), ((Number) new BigInteger("1")))));
+    try {
+      Assert.assertTrue("Expected: " + (((Number) new BigInteger("0"))) + ", but was: " + (Generated_utils_dectab_otherwise_Test.defaultNoOtherwise(((Number) new BigInteger("3")), ((Number) new BigInteger("1")))), EqualsTestOp.matches(((Number) new BigInteger("0")), Generated_utils_dectab_otherwise_Test.defaultNoOtherwise(((Number) new BigInteger("3")), ((Number) new BigInteger("1")))));
+    } catch (Throwable failure) {
+      throw SourceNodeFailures.attach(failure, "http://127.0.0.1:63320/node?ref=r%3Ab4500bb0-87e3-4d5a-a729-2379e1aab94c%28test.in.expr.os.dectabs%40tests%29%2F8783792530929604959");
+    }
   }
   @Test
   public void otherwise_item16_8783792530929806625() throws Throwable {
-    Assert.assertTrue("Expected: " + (((Number) new BigInteger("7"))) + ", but was: " + (Generated_utils_dectab_otherwise_Test.defaultWithOtherwise(((Number) new BigInteger("3")), ((Number) new BigInteger("1")))), EqualsTestOp.matches(((Number) new BigInteger("7")), Generated_utils_dectab_otherwise_Test.defaultWithOtherwise(((Number) new BigInteger("3")), ((Number) new BigInteger("1")))));
+    try {
+      Assert.assertTrue("Expected: " + (((Number) new BigInteger("7"))) + ", but was: " + (Generated_utils_dectab_otherwise_Test.defaultWithOtherwise(((Number) new BigInteger("3")), ((Number) new BigInteger("1")))), EqualsTestOp.matches(((Number) new BigInteger("7")), Generated_utils_dectab_otherwise_Test.defaultWithOtherwise(((Number) new BigInteger("3")), ((Number) new BigInteger("1")))));
+    } catch (Throwable failure) {
+      throw SourceNodeFailures.attach(failure, "http://127.0.0.1:63320/node?ref=r%3Ab4500bb0-87e3-4d5a-a729-2379e1aab94c%28test.in.expr.os.dectabs%40tests%29%2F8783792530929806625");
+    }
   }
   @Test
   public void otherwise_item17_6965066150162961803() throws Throwable {
-    Assert.assertTrue("Expected: " + (((Number) new BigInteger("7"))) + ", but was: " + (Generated_utils_dectab_otherwise_Test.defaultWithOtherwiseWithPredefXY(((Number) new BigInteger("3")), ((Number) new BigInteger("1")))), EqualsTestOp.matches(((Number) new BigInteger("7")), Generated_utils_dectab_otherwise_Test.defaultWithOtherwiseWithPredefXY(((Number) new BigInteger("3")), ((Number) new BigInteger("1")))));
+    try {
+      Assert.assertTrue("Expected: " + (((Number) new BigInteger("7"))) + ", but was: " + (Generated_utils_dectab_otherwise_Test.defaultWithOtherwiseWithPredefXY(((Number) new BigInteger("3")), ((Number) new BigInteger("1")))), EqualsTestOp.matches(((Number) new BigInteger("7")), Generated_utils_dectab_otherwise_Test.defaultWithOtherwiseWithPredefXY(((Number) new BigInteger("3")), ((Number) new BigInteger("1")))));
+    } catch (Throwable failure) {
+      throw SourceNodeFailures.attach(failure, "http://127.0.0.1:63320/node?ref=r%3Ab4500bb0-87e3-4d5a-a729-2379e1aab94c%28test.in.expr.os.dectabs%40tests%29%2F6965066150162961803");
+    }
   }
   @Test
   public void otherwise_item19_8783792530929773236() throws Throwable {
-    Assert.assertTrue("Expected: " + (((Number) new BigInteger("0"))) + ", but was: " + (Generated_utils_dectab_otherwise_Test.defaultNoOtherwise(((Number) new BigInteger("3")), ((Number) new BigInteger("3")))), EqualsTestOp.matches(((Number) new BigInteger("0")), Generated_utils_dectab_otherwise_Test.defaultNoOtherwise(((Number) new BigInteger("3")), ((Number) new BigInteger("3")))));
+    try {
+      Assert.assertTrue("Expected: " + (((Number) new BigInteger("0"))) + ", but was: " + (Generated_utils_dectab_otherwise_Test.defaultNoOtherwise(((Number) new BigInteger("3")), ((Number) new BigInteger("3")))), EqualsTestOp.matches(((Number) new BigInteger("0")), Generated_utils_dectab_otherwise_Test.defaultNoOtherwise(((Number) new BigInteger("3")), ((Number) new BigInteger("3")))));
+    } catch (Throwable failure) {
+      throw SourceNodeFailures.attach(failure, "http://127.0.0.1:63320/node?ref=r%3Ab4500bb0-87e3-4d5a-a729-2379e1aab94c%28test.in.expr.os.dectabs%40tests%29%2F8783792530929773236");
+    }
   }
   @Test
   public void otherwise_item20_8783792530929809353() throws Throwable {
-    Assert.assertTrue("Expected: " + (((Number) new BigInteger("9"))) + ", but was: " + (Generated_utils_dectab_otherwise_Test.defaultWithOtherwise(((Number) new BigInteger("3")), ((Number) new BigInteger("3")))), EqualsTestOp.matches(((Number) new BigInteger("9")), Generated_utils_dectab_otherwise_Test.defaultWithOtherwise(((Number) new BigInteger("3")), ((Number) new BigInteger("3")))));
+    try {
+      Assert.assertTrue("Expected: " + (((Number) new BigInteger("9"))) + ", but was: " + (Generated_utils_dectab_otherwise_Test.defaultWithOtherwise(((Number) new BigInteger("3")), ((Number) new BigInteger("3")))), EqualsTestOp.matches(((Number) new BigInteger("9")), Generated_utils_dectab_otherwise_Test.defaultWithOtherwise(((Number) new BigInteger("3")), ((Number) new BigInteger("3")))));
+    } catch (Throwable failure) {
+      throw SourceNodeFailures.attach(failure, "http://127.0.0.1:63320/node?ref=r%3Ab4500bb0-87e3-4d5a-a729-2379e1aab94c%28test.in.expr.os.dectabs%40tests%29%2F8783792530929809353");
+    }
   }
   @Test
   public void otherwise_item21_6965066150162967123() throws Throwable {
-    Assert.assertTrue("Expected: " + (((Number) new BigInteger("9"))) + ", but was: " + (Generated_utils_dectab_otherwise_Test.defaultWithOtherwiseWithPredefXY(((Number) new BigInteger("3")), ((Number) new BigInteger("3")))), EqualsTestOp.matches(((Number) new BigInteger("9")), Generated_utils_dectab_otherwise_Test.defaultWithOtherwiseWithPredefXY(((Number) new BigInteger("3")), ((Number) new BigInteger("3")))));
+    try {
+      Assert.assertTrue("Expected: " + (((Number) new BigInteger("9"))) + ", but was: " + (Generated_utils_dectab_otherwise_Test.defaultWithOtherwiseWithPredefXY(((Number) new BigInteger("3")), ((Number) new BigInteger("3")))), EqualsTestOp.matches(((Number) new BigInteger("9")), Generated_utils_dectab_otherwise_Test.defaultWithOtherwiseWithPredefXY(((Number) new BigInteger("3")), ((Number) new BigInteger("3")))));
+    } catch (Throwable failure) {
+      throw SourceNodeFailures.attach(failure, "http://127.0.0.1:63320/node?ref=r%3Ab4500bb0-87e3-4d5a-a729-2379e1aab94c%28test.in.expr.os.dectabs%40tests%29%2F6965066150162967123");
+    }
   }
 
 

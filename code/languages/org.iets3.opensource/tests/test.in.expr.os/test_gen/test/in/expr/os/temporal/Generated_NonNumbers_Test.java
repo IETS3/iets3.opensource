@@ -10,6 +10,7 @@ import org.junit.Test;
 import org.junit.Assert;
 import org.iets3.core.expr.genjava.temporal.rt.runtime.TemporalValueHelper;
 import org.iets3.core.expr.temporal.runtime.TemporalOps;
+import org.iets3.core.expr.genjava.tests.rt.rt.SourceNodeFailures;
 import org.iets3.core.expr.simpleTypes.runtime.EqualsHelper;
 
 /**
@@ -33,45 +34,69 @@ public class Generated_NonNumbers_Test {
   }).invoke();
   @Test
   public void testBooleans_item0_7638810057883393166() throws Throwable {
-    Assert.assertEquals("Expected: " + (Generated_NonNumbers_Test.alwaysTrue_) + ", but was: " + (TemporalValueHelper.perform(Generated_NonNumbers_Test.alwaysTrue_, Generated_NonNumbers_Test.alwaysTrue_, ((_FunctionTypes._return_P2_E0<Boolean, Object, Object>) (Object l, Object r) -> TemporalOps.and(l, r)), null)), (Object) Generated_NonNumbers_Test.alwaysTrue_, (Object) TemporalValueHelper.perform(Generated_NonNumbers_Test.alwaysTrue_, Generated_NonNumbers_Test.alwaysTrue_, ((_FunctionTypes._return_P2_E0<Boolean, Object, Object>) (Object l, Object r) -> TemporalOps.and(l, r)), null));
+    try {
+      Assert.assertEquals("Expected: " + (Generated_NonNumbers_Test.alwaysTrue_) + ", but was: " + (TemporalValueHelper.perform(Generated_NonNumbers_Test.alwaysTrue_, Generated_NonNumbers_Test.alwaysTrue_, ((_FunctionTypes._return_P2_E0<Boolean, Object, Object>) (Object l, Object r) -> TemporalOps.and(l, r)), null)), (Object) Generated_NonNumbers_Test.alwaysTrue_, (Object) TemporalValueHelper.perform(Generated_NonNumbers_Test.alwaysTrue_, Generated_NonNumbers_Test.alwaysTrue_, ((_FunctionTypes._return_P2_E0<Boolean, Object, Object>) (Object l, Object r) -> TemporalOps.and(l, r)), null));
+    } catch (Throwable failure) {
+      throw SourceNodeFailures.attach(failure, "http://127.0.0.1:63320/node?ref=r%3A08bbdb26-9c27-4017-b6b0-44a8fa906889%28test.in.expr.os.temporal%40tests%29%2F7638810057883393166");
+    }
   }
   @Test
   public void testBooleans_item1_7638810057883565883() throws Throwable {
-    Assert.assertEquals("Expected: " + (Generated_NonNumbers_Test.alwaysTrue_) + ", but was: " + (TemporalValueHelper.perform(Generated_NonNumbers_Test.alwaysTrue_, Generated_NonNumbers_Test.alwaysTrue_, ((_FunctionTypes._return_P2_E0<Boolean, Object, Object>) (Object l, Object r) -> TemporalOps.or(l, r)), null)), (Object) Generated_NonNumbers_Test.alwaysTrue_, (Object) TemporalValueHelper.perform(Generated_NonNumbers_Test.alwaysTrue_, Generated_NonNumbers_Test.alwaysTrue_, ((_FunctionTypes._return_P2_E0<Boolean, Object, Object>) (Object l, Object r) -> TemporalOps.or(l, r)), null));
+    try {
+      Assert.assertEquals("Expected: " + (Generated_NonNumbers_Test.alwaysTrue_) + ", but was: " + (TemporalValueHelper.perform(Generated_NonNumbers_Test.alwaysTrue_, Generated_NonNumbers_Test.alwaysTrue_, ((_FunctionTypes._return_P2_E0<Boolean, Object, Object>) (Object l, Object r) -> TemporalOps.or(l, r)), null)), (Object) Generated_NonNumbers_Test.alwaysTrue_, (Object) TemporalValueHelper.perform(Generated_NonNumbers_Test.alwaysTrue_, Generated_NonNumbers_Test.alwaysTrue_, ((_FunctionTypes._return_P2_E0<Boolean, Object, Object>) (Object l, Object r) -> TemporalOps.or(l, r)), null));
+    } catch (Throwable failure) {
+      throw SourceNodeFailures.attach(failure, "http://127.0.0.1:63320/node?ref=r%3A08bbdb26-9c27-4017-b6b0-44a8fa906889%28test.in.expr.os.temporal%40tests%29%2F7638810057883565883");
+    }
   }
   @Test
   public void testBooleans_item2_7638810057883566025() throws Throwable {
-    Assert.assertEquals("Expected: " + (((_FunctionTypes._return_P0_E0<TemporalValue>) () -> {
-      TemporalValue value = new TemporalValue();
-      value = value.slice(((LocalDate) LocalDate.MIN), false);
-      value = value.slice(((LocalDate) Generated_NonNumbers_Test.date01_), true);
-      return value;
-    }).invoke()) + ", but was: " + (TemporalValueHelper.perform(Generated_NonNumbers_Test.alwaysTrue_, Generated_NonNumbers_Test.sometimesTrue_, ((_FunctionTypes._return_P2_E0<Boolean, Object, Object>) (Object l, Object r) -> TemporalOps.and(l, r)), null)), (Object) ((_FunctionTypes._return_P0_E0<TemporalValue>) () -> {
-      TemporalValue value = new TemporalValue();
-      value = value.slice(((LocalDate) LocalDate.MIN), false);
-      value = value.slice(((LocalDate) Generated_NonNumbers_Test.date01_), true);
-      return value;
-    }).invoke(), (Object) TemporalValueHelper.perform(Generated_NonNumbers_Test.alwaysTrue_, Generated_NonNumbers_Test.sometimesTrue_, ((_FunctionTypes._return_P2_E0<Boolean, Object, Object>) (Object l, Object r) -> TemporalOps.and(l, r)), null));
+    try {
+      Assert.assertEquals("Expected: " + (((_FunctionTypes._return_P0_E0<TemporalValue>) () -> {
+        TemporalValue value = new TemporalValue();
+        value = value.slice(((LocalDate) LocalDate.MIN), false);
+        value = value.slice(((LocalDate) Generated_NonNumbers_Test.date01_), true);
+        return value;
+      }).invoke()) + ", but was: " + (TemporalValueHelper.perform(Generated_NonNumbers_Test.alwaysTrue_, Generated_NonNumbers_Test.sometimesTrue_, ((_FunctionTypes._return_P2_E0<Boolean, Object, Object>) (Object l, Object r) -> TemporalOps.and(l, r)), null)), (Object) ((_FunctionTypes._return_P0_E0<TemporalValue>) () -> {
+        TemporalValue value = new TemporalValue();
+        value = value.slice(((LocalDate) LocalDate.MIN), false);
+        value = value.slice(((LocalDate) Generated_NonNumbers_Test.date01_), true);
+        return value;
+      }).invoke(), (Object) TemporalValueHelper.perform(Generated_NonNumbers_Test.alwaysTrue_, Generated_NonNumbers_Test.sometimesTrue_, ((_FunctionTypes._return_P2_E0<Boolean, Object, Object>) (Object l, Object r) -> TemporalOps.and(l, r)), null));
+    } catch (Throwable failure) {
+      throw SourceNodeFailures.attach(failure, "http://127.0.0.1:63320/node?ref=r%3A08bbdb26-9c27-4017-b6b0-44a8fa906889%28test.in.expr.os.temporal%40tests%29%2F7638810057883566025");
+    }
   }
   @Test
   public void testBooleans_item3_7638810057883567516() throws Throwable {
-    Assert.assertEquals("Expected: " + (((_FunctionTypes._return_P0_E0<TemporalValue>) () -> {
-      TemporalValue value = new TemporalValue();
-      value = value.slice(((LocalDate) LocalDate.MIN), true);
-      return value;
-    }).invoke()) + ", but was: " + (TemporalValueHelper.perform(Generated_NonNumbers_Test.alwaysTrue_, Generated_NonNumbers_Test.sometimesTrue_, ((_FunctionTypes._return_P2_E0<Boolean, Object, Object>) (Object l, Object r) -> TemporalOps.or(l, r)), null)), (Object) ((_FunctionTypes._return_P0_E0<TemporalValue>) () -> {
-      TemporalValue value = new TemporalValue();
-      value = value.slice(((LocalDate) LocalDate.MIN), true);
-      return value;
-    }).invoke(), (Object) TemporalValueHelper.perform(Generated_NonNumbers_Test.alwaysTrue_, Generated_NonNumbers_Test.sometimesTrue_, ((_FunctionTypes._return_P2_E0<Boolean, Object, Object>) (Object l, Object r) -> TemporalOps.or(l, r)), null));
+    try {
+      Assert.assertEquals("Expected: " + (((_FunctionTypes._return_P0_E0<TemporalValue>) () -> {
+        TemporalValue value = new TemporalValue();
+        value = value.slice(((LocalDate) LocalDate.MIN), true);
+        return value;
+      }).invoke()) + ", but was: " + (TemporalValueHelper.perform(Generated_NonNumbers_Test.alwaysTrue_, Generated_NonNumbers_Test.sometimesTrue_, ((_FunctionTypes._return_P2_E0<Boolean, Object, Object>) (Object l, Object r) -> TemporalOps.or(l, r)), null)), (Object) ((_FunctionTypes._return_P0_E0<TemporalValue>) () -> {
+        TemporalValue value = new TemporalValue();
+        value = value.slice(((LocalDate) LocalDate.MIN), true);
+        return value;
+      }).invoke(), (Object) TemporalValueHelper.perform(Generated_NonNumbers_Test.alwaysTrue_, Generated_NonNumbers_Test.sometimesTrue_, ((_FunctionTypes._return_P2_E0<Boolean, Object, Object>) (Object l, Object r) -> TemporalOps.or(l, r)), null));
+    } catch (Throwable failure) {
+      throw SourceNodeFailures.attach(failure, "http://127.0.0.1:63320/node?ref=r%3A08bbdb26-9c27-4017-b6b0-44a8fa906889%28test.in.expr.os.temporal%40tests%29%2F7638810057883567516");
+    }
   }
   @Test
   public void testBooleans_item4_7638810057883729267() throws Throwable {
-    Assert.assertEquals("Expected: " + (Generated_NonNumbers_Test.alwaysTrue_) + ", but was: " + (TemporalValueHelper.perform(Generated_NonNumbers_Test.alwaysTrue_, Generated_NonNumbers_Test.sometimesTrue_, ((_FunctionTypes._return_P2_E0<Boolean, Object, Object>) (Object l, Object r) -> TemporalOps.or(l, r)), null)), (Object) Generated_NonNumbers_Test.alwaysTrue_, (Object) TemporalValueHelper.perform(Generated_NonNumbers_Test.alwaysTrue_, Generated_NonNumbers_Test.sometimesTrue_, ((_FunctionTypes._return_P2_E0<Boolean, Object, Object>) (Object l, Object r) -> TemporalOps.or(l, r)), null));
+    try {
+      Assert.assertEquals("Expected: " + (Generated_NonNumbers_Test.alwaysTrue_) + ", but was: " + (TemporalValueHelper.perform(Generated_NonNumbers_Test.alwaysTrue_, Generated_NonNumbers_Test.sometimesTrue_, ((_FunctionTypes._return_P2_E0<Boolean, Object, Object>) (Object l, Object r) -> TemporalOps.or(l, r)), null)), (Object) Generated_NonNumbers_Test.alwaysTrue_, (Object) TemporalValueHelper.perform(Generated_NonNumbers_Test.alwaysTrue_, Generated_NonNumbers_Test.sometimesTrue_, ((_FunctionTypes._return_P2_E0<Boolean, Object, Object>) (Object l, Object r) -> TemporalOps.or(l, r)), null));
+    } catch (Throwable failure) {
+      throw SourceNodeFailures.attach(failure, "http://127.0.0.1:63320/node?ref=r%3A08bbdb26-9c27-4017-b6b0-44a8fa906889%28test.in.expr.os.temporal%40tests%29%2F7638810057883729267");
+    }
   }
   @Test
   public void testBooleans_item5_7638810057883648812() throws Throwable {
-    Assert.assertEquals("Expected: " + (Generated_NonNumbers_Test.alwaysTrue_) + ", but was: " + ((TemporalValueHelper.perform(Generated_NonNumbers_Test.alwaysTrue_, Generated_NonNumbers_Test.sometimesTrue_, ((_FunctionTypes._return_P2_E0<Boolean, Object, Object>) (Object l, Object r) -> TemporalOps.or(l, r)), null))), (Object) Generated_NonNumbers_Test.alwaysTrue_, (Object) (TemporalValueHelper.perform(Generated_NonNumbers_Test.alwaysTrue_, Generated_NonNumbers_Test.sometimesTrue_, ((_FunctionTypes._return_P2_E0<Boolean, Object, Object>) (Object l, Object r) -> TemporalOps.or(l, r)), null)));
+    try {
+      Assert.assertEquals("Expected: " + (Generated_NonNumbers_Test.alwaysTrue_) + ", but was: " + ((TemporalValueHelper.perform(Generated_NonNumbers_Test.alwaysTrue_, Generated_NonNumbers_Test.sometimesTrue_, ((_FunctionTypes._return_P2_E0<Boolean, Object, Object>) (Object l, Object r) -> TemporalOps.or(l, r)), null))), (Object) Generated_NonNumbers_Test.alwaysTrue_, (Object) (TemporalValueHelper.perform(Generated_NonNumbers_Test.alwaysTrue_, Generated_NonNumbers_Test.sometimesTrue_, ((_FunctionTypes._return_P2_E0<Boolean, Object, Object>) (Object l, Object r) -> TemporalOps.or(l, r)), null)));
+    } catch (Throwable failure) {
+      throw SourceNodeFailures.attach(failure, "http://127.0.0.1:63320/node?ref=r%3A08bbdb26-9c27-4017-b6b0-44a8fa906889%28test.in.expr.os.temporal%40tests%29%2F7638810057883648812");
+    }
   }
   public static final TemporalValue helloWorld_ = ((_FunctionTypes._return_P0_E0<TemporalValue>) () -> {
     TemporalValue value = new TemporalValue();
@@ -88,11 +113,19 @@ public class Generated_NonNumbers_Test {
   public static final TemporalValue c_ = TemporalValueHelper.perform(Generated_NonNumbers_Test.a_, "A", ((_FunctionTypes._return_P2_E0<Boolean, Object, Object>) (Object l, Object r) -> EqualsHelper.equals(l, r)), null);
   @Test
   public void others_item0_7702113793569777838() throws Throwable {
-    Assert.assertEquals("Expected: " + (true) + ", but was: " + (Generated_NonNumbers_Test.b_.all()), (Object) true, (Object) Generated_NonNumbers_Test.b_.all());
+    try {
+      Assert.assertEquals("Expected: " + (true) + ", but was: " + (Generated_NonNumbers_Test.b_.all()), (Object) true, (Object) Generated_NonNumbers_Test.b_.all());
+    } catch (Throwable failure) {
+      throw SourceNodeFailures.attach(failure, "http://127.0.0.1:63320/node?ref=r%3A08bbdb26-9c27-4017-b6b0-44a8fa906889%28test.in.expr.os.temporal%40tests%29%2F7702113793569777838");
+    }
   }
   @Test
   public void others_item1_7702113793570698744() throws Throwable {
-    Assert.assertEquals("Expected: " + (true) + ", but was: " + (Generated_NonNumbers_Test.b_.all()), (Object) true, (Object) Generated_NonNumbers_Test.b_.all());
+    try {
+      Assert.assertEquals("Expected: " + (true) + ", but was: " + (Generated_NonNumbers_Test.b_.all()), (Object) true, (Object) Generated_NonNumbers_Test.b_.all());
+    } catch (Throwable failure) {
+      throw SourceNodeFailures.attach(failure, "http://127.0.0.1:63320/node?ref=r%3A08bbdb26-9c27-4017-b6b0-44a8fa906889%28test.in.expr.os.temporal%40tests%29%2F7702113793570698744");
+    }
   }
 
 

@@ -8,6 +8,7 @@ import java.math.RoundingMode;
 import org.junit.Test;
 import org.junit.Assert;
 import org.iets3.core.expr.simpleTypes.runtime.AH;
+import org.iets3.core.expr.genjava.tests.rt.rt.SourceNodeFailures;
 
 /**
  * 
@@ -18,123 +19,243 @@ public class Generated_tolerance_Test {
   public static final Number hundredPointOne_ = ((Number) (new BigDecimal("100.1").setScale(1, RoundingMode.DOWN)));
   @Test
   public void IntegerEquals_item0_4668305294413594505() throws Throwable {
-    Assert.assertEquals("Expected: " + (true) + ", but was: " + (AH.equalsWithTolerance(Generated_tolerance_Test.hundred_, ((Number) new BigInteger("100")), ((Number) new BigInteger("0")))), (Object) true, (Object) AH.equalsWithTolerance(Generated_tolerance_Test.hundred_, ((Number) new BigInteger("100")), ((Number) new BigInteger("0"))));
+    try {
+      Assert.assertEquals("Expected: " + (true) + ", but was: " + (AH.equalsWithTolerance(Generated_tolerance_Test.hundred_, ((Number) new BigInteger("100")), ((Number) new BigInteger("0")))), (Object) true, (Object) AH.equalsWithTolerance(Generated_tolerance_Test.hundred_, ((Number) new BigInteger("100")), ((Number) new BigInteger("0"))));
+    } catch (Throwable failure) {
+      throw SourceNodeFailures.attach(failure, "http://127.0.0.1:63320/node?ref=r%3A75a3cb54-4b85-4f8e-ab91-c941d4f514e3%28test.in.expr.os.tolerance%40tests%29%2F4668305294413594505");
+    }
   }
   @Test
   public void IntegerEquals_item1_4668305294413596084() throws Throwable {
-    Assert.assertEquals("Expected: " + (true) + ", but was: " + (AH.equalsWithTolerance(Generated_tolerance_Test.hundred_, ((Number) new BigInteger("100")), ((Number) new BigInteger("1")))), (Object) true, (Object) AH.equalsWithTolerance(Generated_tolerance_Test.hundred_, ((Number) new BigInteger("100")), ((Number) new BigInteger("1"))));
+    try {
+      Assert.assertEquals("Expected: " + (true) + ", but was: " + (AH.equalsWithTolerance(Generated_tolerance_Test.hundred_, ((Number) new BigInteger("100")), ((Number) new BigInteger("1")))), (Object) true, (Object) AH.equalsWithTolerance(Generated_tolerance_Test.hundred_, ((Number) new BigInteger("100")), ((Number) new BigInteger("1"))));
+    } catch (Throwable failure) {
+      throw SourceNodeFailures.attach(failure, "http://127.0.0.1:63320/node?ref=r%3A75a3cb54-4b85-4f8e-ab91-c941d4f514e3%28test.in.expr.os.tolerance%40tests%29%2F4668305294413596084");
+    }
   }
   @Test
   public void IntegerEquals_item2_4668305294413596419() throws Throwable {
-    Assert.assertEquals("Expected: " + (false) + ", but was: " + (AH.equalsWithTolerance(Generated_tolerance_Test.hundred_, ((Number) new BigInteger("102")), ((Number) new BigInteger("1")))), (Object) false, (Object) AH.equalsWithTolerance(Generated_tolerance_Test.hundred_, ((Number) new BigInteger("102")), ((Number) new BigInteger("1"))));
+    try {
+      Assert.assertEquals("Expected: " + (false) + ", but was: " + (AH.equalsWithTolerance(Generated_tolerance_Test.hundred_, ((Number) new BigInteger("102")), ((Number) new BigInteger("1")))), (Object) false, (Object) AH.equalsWithTolerance(Generated_tolerance_Test.hundred_, ((Number) new BigInteger("102")), ((Number) new BigInteger("1"))));
+    } catch (Throwable failure) {
+      throw SourceNodeFailures.attach(failure, "http://127.0.0.1:63320/node?ref=r%3A75a3cb54-4b85-4f8e-ab91-c941d4f514e3%28test.in.expr.os.tolerance%40tests%29%2F4668305294413596419");
+    }
   }
   @Test
   public void IntegerEquals_item3_4668305294413598146() throws Throwable {
-    Assert.assertEquals("Expected: " + (true) + ", but was: " + (AH.equalsWithTolerance(Generated_tolerance_Test.hundred_, ((Number) new BigInteger("102")), ((Number) new BigInteger("2")))), (Object) true, (Object) AH.equalsWithTolerance(Generated_tolerance_Test.hundred_, ((Number) new BigInteger("102")), ((Number) new BigInteger("2"))));
+    try {
+      Assert.assertEquals("Expected: " + (true) + ", but was: " + (AH.equalsWithTolerance(Generated_tolerance_Test.hundred_, ((Number) new BigInteger("102")), ((Number) new BigInteger("2")))), (Object) true, (Object) AH.equalsWithTolerance(Generated_tolerance_Test.hundred_, ((Number) new BigInteger("102")), ((Number) new BigInteger("2"))));
+    } catch (Throwable failure) {
+      throw SourceNodeFailures.attach(failure, "http://127.0.0.1:63320/node?ref=r%3A75a3cb54-4b85-4f8e-ab91-c941d4f514e3%28test.in.expr.os.tolerance%40tests%29%2F4668305294413598146");
+    }
   }
   @Test
   public void IntegerEquals_item4_4668305294413599837() throws Throwable {
-    Assert.assertEquals("Expected: " + (false) + ", but was: " + (AH.equalsWithTolerance(Generated_tolerance_Test.hundred_, ((Number) new BigInteger("98")), ((Number) new BigInteger("1")))), (Object) false, (Object) AH.equalsWithTolerance(Generated_tolerance_Test.hundred_, ((Number) new BigInteger("98")), ((Number) new BigInteger("1"))));
+    try {
+      Assert.assertEquals("Expected: " + (false) + ", but was: " + (AH.equalsWithTolerance(Generated_tolerance_Test.hundred_, ((Number) new BigInteger("98")), ((Number) new BigInteger("1")))), (Object) false, (Object) AH.equalsWithTolerance(Generated_tolerance_Test.hundred_, ((Number) new BigInteger("98")), ((Number) new BigInteger("1"))));
+    } catch (Throwable failure) {
+      throw SourceNodeFailures.attach(failure, "http://127.0.0.1:63320/node?ref=r%3A75a3cb54-4b85-4f8e-ab91-c941d4f514e3%28test.in.expr.os.tolerance%40tests%29%2F4668305294413599837");
+    }
   }
   @Test
   public void IntegerEquals_item5_4668305294413599926() throws Throwable {
-    Assert.assertEquals("Expected: " + (true) + ", but was: " + (AH.equalsWithTolerance(Generated_tolerance_Test.hundred_, ((Number) new BigInteger("98")), ((Number) new BigInteger("2")))), (Object) true, (Object) AH.equalsWithTolerance(Generated_tolerance_Test.hundred_, ((Number) new BigInteger("98")), ((Number) new BigInteger("2"))));
+    try {
+      Assert.assertEquals("Expected: " + (true) + ", but was: " + (AH.equalsWithTolerance(Generated_tolerance_Test.hundred_, ((Number) new BigInteger("98")), ((Number) new BigInteger("2")))), (Object) true, (Object) AH.equalsWithTolerance(Generated_tolerance_Test.hundred_, ((Number) new BigInteger("98")), ((Number) new BigInteger("2"))));
+    } catch (Throwable failure) {
+      throw SourceNodeFailures.attach(failure, "http://127.0.0.1:63320/node?ref=r%3A75a3cb54-4b85-4f8e-ab91-c941d4f514e3%28test.in.expr.os.tolerance%40tests%29%2F4668305294413599926");
+    }
   }
   @Test
   public void IntegerNotEquals_item0_4668305294414852084() throws Throwable {
-    Assert.assertEquals("Expected: " + (false) + ", but was: " + (!(AH.equalsWithTolerance(Generated_tolerance_Test.hundred_, ((Number) new BigInteger("100")), ((Number) new BigInteger("0"))))), (Object) false, (Object) !(AH.equalsWithTolerance(Generated_tolerance_Test.hundred_, ((Number) new BigInteger("100")), ((Number) new BigInteger("0")))));
+    try {
+      Assert.assertEquals("Expected: " + (false) + ", but was: " + (!(AH.equalsWithTolerance(Generated_tolerance_Test.hundred_, ((Number) new BigInteger("100")), ((Number) new BigInteger("0"))))), (Object) false, (Object) !(AH.equalsWithTolerance(Generated_tolerance_Test.hundred_, ((Number) new BigInteger("100")), ((Number) new BigInteger("0")))));
+    } catch (Throwable failure) {
+      throw SourceNodeFailures.attach(failure, "http://127.0.0.1:63320/node?ref=r%3A75a3cb54-4b85-4f8e-ab91-c941d4f514e3%28test.in.expr.os.tolerance%40tests%29%2F4668305294414852084");
+    }
   }
   @Test
   public void IntegerNotEquals_item1_4668305294414852092() throws Throwable {
-    Assert.assertEquals("Expected: " + (false) + ", but was: " + (!(AH.equalsWithTolerance(Generated_tolerance_Test.hundred_, ((Number) new BigInteger("100")), ((Number) new BigInteger("1"))))), (Object) false, (Object) !(AH.equalsWithTolerance(Generated_tolerance_Test.hundred_, ((Number) new BigInteger("100")), ((Number) new BigInteger("1")))));
+    try {
+      Assert.assertEquals("Expected: " + (false) + ", but was: " + (!(AH.equalsWithTolerance(Generated_tolerance_Test.hundred_, ((Number) new BigInteger("100")), ((Number) new BigInteger("1"))))), (Object) false, (Object) !(AH.equalsWithTolerance(Generated_tolerance_Test.hundred_, ((Number) new BigInteger("100")), ((Number) new BigInteger("1")))));
+    } catch (Throwable failure) {
+      throw SourceNodeFailures.attach(failure, "http://127.0.0.1:63320/node?ref=r%3A75a3cb54-4b85-4f8e-ab91-c941d4f514e3%28test.in.expr.os.tolerance%40tests%29%2F4668305294414852092");
+    }
   }
   @Test
   public void IntegerNotEquals_item2_4668305294414852100() throws Throwable {
-    Assert.assertEquals("Expected: " + (true) + ", but was: " + (!(AH.equalsWithTolerance(Generated_tolerance_Test.hundred_, ((Number) new BigInteger("102")), ((Number) new BigInteger("1"))))), (Object) true, (Object) !(AH.equalsWithTolerance(Generated_tolerance_Test.hundred_, ((Number) new BigInteger("102")), ((Number) new BigInteger("1")))));
+    try {
+      Assert.assertEquals("Expected: " + (true) + ", but was: " + (!(AH.equalsWithTolerance(Generated_tolerance_Test.hundred_, ((Number) new BigInteger("102")), ((Number) new BigInteger("1"))))), (Object) true, (Object) !(AH.equalsWithTolerance(Generated_tolerance_Test.hundred_, ((Number) new BigInteger("102")), ((Number) new BigInteger("1")))));
+    } catch (Throwable failure) {
+      throw SourceNodeFailures.attach(failure, "http://127.0.0.1:63320/node?ref=r%3A75a3cb54-4b85-4f8e-ab91-c941d4f514e3%28test.in.expr.os.tolerance%40tests%29%2F4668305294414852100");
+    }
   }
   @Test
   public void IntegerNotEquals_item3_4668305294414852108() throws Throwable {
-    Assert.assertEquals("Expected: " + (false) + ", but was: " + (!(AH.equalsWithTolerance(Generated_tolerance_Test.hundred_, ((Number) new BigInteger("102")), ((Number) new BigInteger("2"))))), (Object) false, (Object) !(AH.equalsWithTolerance(Generated_tolerance_Test.hundred_, ((Number) new BigInteger("102")), ((Number) new BigInteger("2")))));
+    try {
+      Assert.assertEquals("Expected: " + (false) + ", but was: " + (!(AH.equalsWithTolerance(Generated_tolerance_Test.hundred_, ((Number) new BigInteger("102")), ((Number) new BigInteger("2"))))), (Object) false, (Object) !(AH.equalsWithTolerance(Generated_tolerance_Test.hundred_, ((Number) new BigInteger("102")), ((Number) new BigInteger("2")))));
+    } catch (Throwable failure) {
+      throw SourceNodeFailures.attach(failure, "http://127.0.0.1:63320/node?ref=r%3A75a3cb54-4b85-4f8e-ab91-c941d4f514e3%28test.in.expr.os.tolerance%40tests%29%2F4668305294414852108");
+    }
   }
   @Test
   public void IntegerNotEquals_item4_4668305294414852116() throws Throwable {
-    Assert.assertEquals("Expected: " + (true) + ", but was: " + (!(AH.equalsWithTolerance(Generated_tolerance_Test.hundred_, ((Number) new BigInteger("98")), ((Number) new BigInteger("1"))))), (Object) true, (Object) !(AH.equalsWithTolerance(Generated_tolerance_Test.hundred_, ((Number) new BigInteger("98")), ((Number) new BigInteger("1")))));
+    try {
+      Assert.assertEquals("Expected: " + (true) + ", but was: " + (!(AH.equalsWithTolerance(Generated_tolerance_Test.hundred_, ((Number) new BigInteger("98")), ((Number) new BigInteger("1"))))), (Object) true, (Object) !(AH.equalsWithTolerance(Generated_tolerance_Test.hundred_, ((Number) new BigInteger("98")), ((Number) new BigInteger("1")))));
+    } catch (Throwable failure) {
+      throw SourceNodeFailures.attach(failure, "http://127.0.0.1:63320/node?ref=r%3A75a3cb54-4b85-4f8e-ab91-c941d4f514e3%28test.in.expr.os.tolerance%40tests%29%2F4668305294414852116");
+    }
   }
   @Test
   public void IntegerNotEquals_item5_4668305294414852124() throws Throwable {
-    Assert.assertEquals("Expected: " + (false) + ", but was: " + (!(AH.equalsWithTolerance(Generated_tolerance_Test.hundred_, ((Number) new BigInteger("98")), ((Number) new BigInteger("2"))))), (Object) false, (Object) !(AH.equalsWithTolerance(Generated_tolerance_Test.hundred_, ((Number) new BigInteger("98")), ((Number) new BigInteger("2")))));
+    try {
+      Assert.assertEquals("Expected: " + (false) + ", but was: " + (!(AH.equalsWithTolerance(Generated_tolerance_Test.hundred_, ((Number) new BigInteger("98")), ((Number) new BigInteger("2"))))), (Object) false, (Object) !(AH.equalsWithTolerance(Generated_tolerance_Test.hundred_, ((Number) new BigInteger("98")), ((Number) new BigInteger("2")))));
+    } catch (Throwable failure) {
+      throw SourceNodeFailures.attach(failure, "http://127.0.0.1:63320/node?ref=r%3A75a3cb54-4b85-4f8e-ab91-c941d4f514e3%28test.in.expr.os.tolerance%40tests%29%2F4668305294414852124");
+    }
   }
   @Test
   public void RealEquals_item0_4668305294414585595() throws Throwable {
-    Assert.assertEquals("Expected: " + (false) + ", but was: " + (AH.equalsWithTolerance(Generated_tolerance_Test.hundredPointOne_, ((Number) new BigInteger("100")), ((Number) new BigInteger("0")))), (Object) false, (Object) AH.equalsWithTolerance(Generated_tolerance_Test.hundredPointOne_, ((Number) new BigInteger("100")), ((Number) new BigInteger("0"))));
+    try {
+      Assert.assertEquals("Expected: " + (false) + ", but was: " + (AH.equalsWithTolerance(Generated_tolerance_Test.hundredPointOne_, ((Number) new BigInteger("100")), ((Number) new BigInteger("0")))), (Object) false, (Object) AH.equalsWithTolerance(Generated_tolerance_Test.hundredPointOne_, ((Number) new BigInteger("100")), ((Number) new BigInteger("0"))));
+    } catch (Throwable failure) {
+      throw SourceNodeFailures.attach(failure, "http://127.0.0.1:63320/node?ref=r%3A75a3cb54-4b85-4f8e-ab91-c941d4f514e3%28test.in.expr.os.tolerance%40tests%29%2F4668305294414585595");
+    }
   }
   @Test
   public void RealEquals_item1_4668305294414585603() throws Throwable {
-    Assert.assertEquals("Expected: " + (true) + ", but was: " + (AH.equalsWithTolerance(Generated_tolerance_Test.hundredPointOne_, ((Number) new BigInteger("100")), ((Number) new BigInteger("1")))), (Object) true, (Object) AH.equalsWithTolerance(Generated_tolerance_Test.hundredPointOne_, ((Number) new BigInteger("100")), ((Number) new BigInteger("1"))));
+    try {
+      Assert.assertEquals("Expected: " + (true) + ", but was: " + (AH.equalsWithTolerance(Generated_tolerance_Test.hundredPointOne_, ((Number) new BigInteger("100")), ((Number) new BigInteger("1")))), (Object) true, (Object) AH.equalsWithTolerance(Generated_tolerance_Test.hundredPointOne_, ((Number) new BigInteger("100")), ((Number) new BigInteger("1"))));
+    } catch (Throwable failure) {
+      throw SourceNodeFailures.attach(failure, "http://127.0.0.1:63320/node?ref=r%3A75a3cb54-4b85-4f8e-ab91-c941d4f514e3%28test.in.expr.os.tolerance%40tests%29%2F4668305294414585603");
+    }
   }
   @Test
   public void RealEquals_item2_4668305294414585611() throws Throwable {
-    Assert.assertEquals("Expected: " + (false) + ", but was: " + (AH.equalsWithTolerance(Generated_tolerance_Test.hundredPointOne_, ((Number) new BigInteger("102")), ((Number) new BigInteger("1")))), (Object) false, (Object) AH.equalsWithTolerance(Generated_tolerance_Test.hundredPointOne_, ((Number) new BigInteger("102")), ((Number) new BigInteger("1"))));
+    try {
+      Assert.assertEquals("Expected: " + (false) + ", but was: " + (AH.equalsWithTolerance(Generated_tolerance_Test.hundredPointOne_, ((Number) new BigInteger("102")), ((Number) new BigInteger("1")))), (Object) false, (Object) AH.equalsWithTolerance(Generated_tolerance_Test.hundredPointOne_, ((Number) new BigInteger("102")), ((Number) new BigInteger("1"))));
+    } catch (Throwable failure) {
+      throw SourceNodeFailures.attach(failure, "http://127.0.0.1:63320/node?ref=r%3A75a3cb54-4b85-4f8e-ab91-c941d4f514e3%28test.in.expr.os.tolerance%40tests%29%2F4668305294414585611");
+    }
   }
   @Test
   public void RealEquals_item3_4668305294414585619() throws Throwable {
-    Assert.assertEquals("Expected: " + (true) + ", but was: " + (AH.equalsWithTolerance(Generated_tolerance_Test.hundredPointOne_, ((Number) new BigInteger("102")), ((Number) new BigInteger("2")))), (Object) true, (Object) AH.equalsWithTolerance(Generated_tolerance_Test.hundredPointOne_, ((Number) new BigInteger("102")), ((Number) new BigInteger("2"))));
+    try {
+      Assert.assertEquals("Expected: " + (true) + ", but was: " + (AH.equalsWithTolerance(Generated_tolerance_Test.hundredPointOne_, ((Number) new BigInteger("102")), ((Number) new BigInteger("2")))), (Object) true, (Object) AH.equalsWithTolerance(Generated_tolerance_Test.hundredPointOne_, ((Number) new BigInteger("102")), ((Number) new BigInteger("2"))));
+    } catch (Throwable failure) {
+      throw SourceNodeFailures.attach(failure, "http://127.0.0.1:63320/node?ref=r%3A75a3cb54-4b85-4f8e-ab91-c941d4f514e3%28test.in.expr.os.tolerance%40tests%29%2F4668305294414585619");
+    }
   }
   @Test
   public void RealEquals_item4_4668305294414585627() throws Throwable {
-    Assert.assertEquals("Expected: " + (false) + ", but was: " + (AH.equalsWithTolerance(Generated_tolerance_Test.hundredPointOne_, ((Number) new BigInteger("98")), ((Number) new BigInteger("1")))), (Object) false, (Object) AH.equalsWithTolerance(Generated_tolerance_Test.hundredPointOne_, ((Number) new BigInteger("98")), ((Number) new BigInteger("1"))));
+    try {
+      Assert.assertEquals("Expected: " + (false) + ", but was: " + (AH.equalsWithTolerance(Generated_tolerance_Test.hundredPointOne_, ((Number) new BigInteger("98")), ((Number) new BigInteger("1")))), (Object) false, (Object) AH.equalsWithTolerance(Generated_tolerance_Test.hundredPointOne_, ((Number) new BigInteger("98")), ((Number) new BigInteger("1"))));
+    } catch (Throwable failure) {
+      throw SourceNodeFailures.attach(failure, "http://127.0.0.1:63320/node?ref=r%3A75a3cb54-4b85-4f8e-ab91-c941d4f514e3%28test.in.expr.os.tolerance%40tests%29%2F4668305294414585627");
+    }
   }
   @Test
   public void RealEquals_item5_4668305294414585635() throws Throwable {
-    Assert.assertEquals("Expected: " + (false) + ", but was: " + (AH.equalsWithTolerance(Generated_tolerance_Test.hundredPointOne_, ((Number) new BigInteger("98")), ((Number) new BigInteger("2")))), (Object) false, (Object) AH.equalsWithTolerance(Generated_tolerance_Test.hundredPointOne_, ((Number) new BigInteger("98")), ((Number) new BigInteger("2"))));
+    try {
+      Assert.assertEquals("Expected: " + (false) + ", but was: " + (AH.equalsWithTolerance(Generated_tolerance_Test.hundredPointOne_, ((Number) new BigInteger("98")), ((Number) new BigInteger("2")))), (Object) false, (Object) AH.equalsWithTolerance(Generated_tolerance_Test.hundredPointOne_, ((Number) new BigInteger("98")), ((Number) new BigInteger("2"))));
+    } catch (Throwable failure) {
+      throw SourceNodeFailures.attach(failure, "http://127.0.0.1:63320/node?ref=r%3A75a3cb54-4b85-4f8e-ab91-c941d4f514e3%28test.in.expr.os.tolerance%40tests%29%2F4668305294414585635");
+    }
   }
   @Test
   public void RealNotEquals_item0_4668305294414866602() throws Throwable {
-    Assert.assertEquals("Expected: " + (true) + ", but was: " + (!(AH.equalsWithTolerance(Generated_tolerance_Test.hundredPointOne_, ((Number) new BigInteger("100")), ((Number) new BigInteger("0"))))), (Object) true, (Object) !(AH.equalsWithTolerance(Generated_tolerance_Test.hundredPointOne_, ((Number) new BigInteger("100")), ((Number) new BigInteger("0")))));
+    try {
+      Assert.assertEquals("Expected: " + (true) + ", but was: " + (!(AH.equalsWithTolerance(Generated_tolerance_Test.hundredPointOne_, ((Number) new BigInteger("100")), ((Number) new BigInteger("0"))))), (Object) true, (Object) !(AH.equalsWithTolerance(Generated_tolerance_Test.hundredPointOne_, ((Number) new BigInteger("100")), ((Number) new BigInteger("0")))));
+    } catch (Throwable failure) {
+      throw SourceNodeFailures.attach(failure, "http://127.0.0.1:63320/node?ref=r%3A75a3cb54-4b85-4f8e-ab91-c941d4f514e3%28test.in.expr.os.tolerance%40tests%29%2F4668305294414866602");
+    }
   }
   @Test
   public void RealNotEquals_item1_4668305294414866610() throws Throwable {
-    Assert.assertEquals("Expected: " + (false) + ", but was: " + (!(AH.equalsWithTolerance(Generated_tolerance_Test.hundredPointOne_, ((Number) new BigInteger("100")), ((Number) new BigInteger("1"))))), (Object) false, (Object) !(AH.equalsWithTolerance(Generated_tolerance_Test.hundredPointOne_, ((Number) new BigInteger("100")), ((Number) new BigInteger("1")))));
+    try {
+      Assert.assertEquals("Expected: " + (false) + ", but was: " + (!(AH.equalsWithTolerance(Generated_tolerance_Test.hundredPointOne_, ((Number) new BigInteger("100")), ((Number) new BigInteger("1"))))), (Object) false, (Object) !(AH.equalsWithTolerance(Generated_tolerance_Test.hundredPointOne_, ((Number) new BigInteger("100")), ((Number) new BigInteger("1")))));
+    } catch (Throwable failure) {
+      throw SourceNodeFailures.attach(failure, "http://127.0.0.1:63320/node?ref=r%3A75a3cb54-4b85-4f8e-ab91-c941d4f514e3%28test.in.expr.os.tolerance%40tests%29%2F4668305294414866610");
+    }
   }
   @Test
   public void RealNotEquals_item2_4668305294414866618() throws Throwable {
-    Assert.assertEquals("Expected: " + (true) + ", but was: " + (!(AH.equalsWithTolerance(Generated_tolerance_Test.hundredPointOne_, ((Number) new BigInteger("102")), ((Number) new BigInteger("1"))))), (Object) true, (Object) !(AH.equalsWithTolerance(Generated_tolerance_Test.hundredPointOne_, ((Number) new BigInteger("102")), ((Number) new BigInteger("1")))));
+    try {
+      Assert.assertEquals("Expected: " + (true) + ", but was: " + (!(AH.equalsWithTolerance(Generated_tolerance_Test.hundredPointOne_, ((Number) new BigInteger("102")), ((Number) new BigInteger("1"))))), (Object) true, (Object) !(AH.equalsWithTolerance(Generated_tolerance_Test.hundredPointOne_, ((Number) new BigInteger("102")), ((Number) new BigInteger("1")))));
+    } catch (Throwable failure) {
+      throw SourceNodeFailures.attach(failure, "http://127.0.0.1:63320/node?ref=r%3A75a3cb54-4b85-4f8e-ab91-c941d4f514e3%28test.in.expr.os.tolerance%40tests%29%2F4668305294414866618");
+    }
   }
   @Test
   public void RealNotEquals_item3_4668305294414866626() throws Throwable {
-    Assert.assertEquals("Expected: " + (false) + ", but was: " + (!(AH.equalsWithTolerance(Generated_tolerance_Test.hundredPointOne_, ((Number) new BigInteger("102")), ((Number) new BigInteger("2"))))), (Object) false, (Object) !(AH.equalsWithTolerance(Generated_tolerance_Test.hundredPointOne_, ((Number) new BigInteger("102")), ((Number) new BigInteger("2")))));
+    try {
+      Assert.assertEquals("Expected: " + (false) + ", but was: " + (!(AH.equalsWithTolerance(Generated_tolerance_Test.hundredPointOne_, ((Number) new BigInteger("102")), ((Number) new BigInteger("2"))))), (Object) false, (Object) !(AH.equalsWithTolerance(Generated_tolerance_Test.hundredPointOne_, ((Number) new BigInteger("102")), ((Number) new BigInteger("2")))));
+    } catch (Throwable failure) {
+      throw SourceNodeFailures.attach(failure, "http://127.0.0.1:63320/node?ref=r%3A75a3cb54-4b85-4f8e-ab91-c941d4f514e3%28test.in.expr.os.tolerance%40tests%29%2F4668305294414866626");
+    }
   }
   @Test
   public void RealNotEquals_item4_4668305294414866634() throws Throwable {
-    Assert.assertEquals("Expected: " + (true) + ", but was: " + (!(AH.equalsWithTolerance(Generated_tolerance_Test.hundredPointOne_, ((Number) new BigInteger("98")), ((Number) new BigInteger("1"))))), (Object) true, (Object) !(AH.equalsWithTolerance(Generated_tolerance_Test.hundredPointOne_, ((Number) new BigInteger("98")), ((Number) new BigInteger("1")))));
+    try {
+      Assert.assertEquals("Expected: " + (true) + ", but was: " + (!(AH.equalsWithTolerance(Generated_tolerance_Test.hundredPointOne_, ((Number) new BigInteger("98")), ((Number) new BigInteger("1"))))), (Object) true, (Object) !(AH.equalsWithTolerance(Generated_tolerance_Test.hundredPointOne_, ((Number) new BigInteger("98")), ((Number) new BigInteger("1")))));
+    } catch (Throwable failure) {
+      throw SourceNodeFailures.attach(failure, "http://127.0.0.1:63320/node?ref=r%3A75a3cb54-4b85-4f8e-ab91-c941d4f514e3%28test.in.expr.os.tolerance%40tests%29%2F4668305294414866634");
+    }
   }
   @Test
   public void RealNotEquals_item5_4668305294414866642() throws Throwable {
-    Assert.assertEquals("Expected: " + (true) + ", but was: " + (!(AH.equalsWithTolerance(Generated_tolerance_Test.hundredPointOne_, ((Number) new BigInteger("98")), ((Number) new BigInteger("2"))))), (Object) true, (Object) !(AH.equalsWithTolerance(Generated_tolerance_Test.hundredPointOne_, ((Number) new BigInteger("98")), ((Number) new BigInteger("2")))));
+    try {
+      Assert.assertEquals("Expected: " + (true) + ", but was: " + (!(AH.equalsWithTolerance(Generated_tolerance_Test.hundredPointOne_, ((Number) new BigInteger("98")), ((Number) new BigInteger("2"))))), (Object) true, (Object) !(AH.equalsWithTolerance(Generated_tolerance_Test.hundredPointOne_, ((Number) new BigInteger("98")), ((Number) new BigInteger("2")))));
+    } catch (Throwable failure) {
+      throw SourceNodeFailures.attach(failure, "http://127.0.0.1:63320/node?ref=r%3A75a3cb54-4b85-4f8e-ab91-c941d4f514e3%28test.in.expr.os.tolerance%40tests%29%2F4668305294414866642");
+    }
   }
   @Test
   public void Real2Equals_item0_4668305294414624708() throws Throwable {
-    Assert.assertEquals("Expected: " + (true) + ", but was: " + (AH.equalsWithTolerance(Generated_tolerance_Test.hundredPointOne_, ((Number) new BigInteger("100")), ((Number) (new BigDecimal("0.1").setScale(1, RoundingMode.DOWN))))), (Object) true, (Object) AH.equalsWithTolerance(Generated_tolerance_Test.hundredPointOne_, ((Number) new BigInteger("100")), ((Number) (new BigDecimal("0.1").setScale(1, RoundingMode.DOWN)))));
+    try {
+      Assert.assertEquals("Expected: " + (true) + ", but was: " + (AH.equalsWithTolerance(Generated_tolerance_Test.hundredPointOne_, ((Number) new BigInteger("100")), ((Number) (new BigDecimal("0.1").setScale(1, RoundingMode.DOWN))))), (Object) true, (Object) AH.equalsWithTolerance(Generated_tolerance_Test.hundredPointOne_, ((Number) new BigInteger("100")), ((Number) (new BigDecimal("0.1").setScale(1, RoundingMode.DOWN)))));
+    } catch (Throwable failure) {
+      throw SourceNodeFailures.attach(failure, "http://127.0.0.1:63320/node?ref=r%3A75a3cb54-4b85-4f8e-ab91-c941d4f514e3%28test.in.expr.os.tolerance%40tests%29%2F4668305294414624708");
+    }
   }
   @Test
   public void Real2Equals_item1_4668305294414631175() throws Throwable {
-    Assert.assertEquals("Expected: " + (true) + ", but was: " + (AH.equalsWithTolerance(Generated_tolerance_Test.hundredPointOne_, ((Number) new BigInteger("100")), ((Number) (new BigDecimal("0.2").setScale(1, RoundingMode.DOWN))))), (Object) true, (Object) AH.equalsWithTolerance(Generated_tolerance_Test.hundredPointOne_, ((Number) new BigInteger("100")), ((Number) (new BigDecimal("0.2").setScale(1, RoundingMode.DOWN)))));
+    try {
+      Assert.assertEquals("Expected: " + (true) + ", but was: " + (AH.equalsWithTolerance(Generated_tolerance_Test.hundredPointOne_, ((Number) new BigInteger("100")), ((Number) (new BigDecimal("0.2").setScale(1, RoundingMode.DOWN))))), (Object) true, (Object) AH.equalsWithTolerance(Generated_tolerance_Test.hundredPointOne_, ((Number) new BigInteger("100")), ((Number) (new BigDecimal("0.2").setScale(1, RoundingMode.DOWN)))));
+    } catch (Throwable failure) {
+      throw SourceNodeFailures.attach(failure, "http://127.0.0.1:63320/node?ref=r%3A75a3cb54-4b85-4f8e-ab91-c941d4f514e3%28test.in.expr.os.tolerance%40tests%29%2F4668305294414631175");
+    }
   }
   @Test
   public void Real2Equals_item2_4668305294414632286() throws Throwable {
-    Assert.assertEquals("Expected: " + (false) + ", but was: " + (AH.equalsWithTolerance(Generated_tolerance_Test.hundredPointOne_, ((Number) new BigInteger("100")), ((Number) (new BigDecimal("0.05").setScale(2, RoundingMode.DOWN))))), (Object) false, (Object) AH.equalsWithTolerance(Generated_tolerance_Test.hundredPointOne_, ((Number) new BigInteger("100")), ((Number) (new BigDecimal("0.05").setScale(2, RoundingMode.DOWN)))));
+    try {
+      Assert.assertEquals("Expected: " + (false) + ", but was: " + (AH.equalsWithTolerance(Generated_tolerance_Test.hundredPointOne_, ((Number) new BigInteger("100")), ((Number) (new BigDecimal("0.05").setScale(2, RoundingMode.DOWN))))), (Object) false, (Object) AH.equalsWithTolerance(Generated_tolerance_Test.hundredPointOne_, ((Number) new BigInteger("100")), ((Number) (new BigDecimal("0.05").setScale(2, RoundingMode.DOWN)))));
+    } catch (Throwable failure) {
+      throw SourceNodeFailures.attach(failure, "http://127.0.0.1:63320/node?ref=r%3A75a3cb54-4b85-4f8e-ab91-c941d4f514e3%28test.in.expr.os.tolerance%40tests%29%2F4668305294414632286");
+    }
   }
   @Test
   public void Real2NotEquals_item0_4668305294414888733() throws Throwable {
-    Assert.assertEquals("Expected: " + (false) + ", but was: " + (!(AH.equalsWithTolerance(Generated_tolerance_Test.hundredPointOne_, ((Number) new BigInteger("100")), ((Number) (new BigDecimal("0.1").setScale(1, RoundingMode.DOWN)))))), (Object) false, (Object) !(AH.equalsWithTolerance(Generated_tolerance_Test.hundredPointOne_, ((Number) new BigInteger("100")), ((Number) (new BigDecimal("0.1").setScale(1, RoundingMode.DOWN))))));
+    try {
+      Assert.assertEquals("Expected: " + (false) + ", but was: " + (!(AH.equalsWithTolerance(Generated_tolerance_Test.hundredPointOne_, ((Number) new BigInteger("100")), ((Number) (new BigDecimal("0.1").setScale(1, RoundingMode.DOWN)))))), (Object) false, (Object) !(AH.equalsWithTolerance(Generated_tolerance_Test.hundredPointOne_, ((Number) new BigInteger("100")), ((Number) (new BigDecimal("0.1").setScale(1, RoundingMode.DOWN))))));
+    } catch (Throwable failure) {
+      throw SourceNodeFailures.attach(failure, "http://127.0.0.1:63320/node?ref=r%3A75a3cb54-4b85-4f8e-ab91-c941d4f514e3%28test.in.expr.os.tolerance%40tests%29%2F4668305294414888733");
+    }
   }
   @Test
   public void Real2NotEquals_item1_4668305294414888741() throws Throwable {
-    Assert.assertEquals("Expected: " + (false) + ", but was: " + (!(AH.equalsWithTolerance(Generated_tolerance_Test.hundredPointOne_, ((Number) new BigInteger("100")), ((Number) (new BigDecimal("0.2").setScale(1, RoundingMode.DOWN)))))), (Object) false, (Object) !(AH.equalsWithTolerance(Generated_tolerance_Test.hundredPointOne_, ((Number) new BigInteger("100")), ((Number) (new BigDecimal("0.2").setScale(1, RoundingMode.DOWN))))));
+    try {
+      Assert.assertEquals("Expected: " + (false) + ", but was: " + (!(AH.equalsWithTolerance(Generated_tolerance_Test.hundredPointOne_, ((Number) new BigInteger("100")), ((Number) (new BigDecimal("0.2").setScale(1, RoundingMode.DOWN)))))), (Object) false, (Object) !(AH.equalsWithTolerance(Generated_tolerance_Test.hundredPointOne_, ((Number) new BigInteger("100")), ((Number) (new BigDecimal("0.2").setScale(1, RoundingMode.DOWN))))));
+    } catch (Throwable failure) {
+      throw SourceNodeFailures.attach(failure, "http://127.0.0.1:63320/node?ref=r%3A75a3cb54-4b85-4f8e-ab91-c941d4f514e3%28test.in.expr.os.tolerance%40tests%29%2F4668305294414888741");
+    }
   }
   @Test
   public void Real2NotEquals_item2_4668305294414888749() throws Throwable {
-    Assert.assertEquals("Expected: " + (true) + ", but was: " + (!(AH.equalsWithTolerance(Generated_tolerance_Test.hundredPointOne_, ((Number) new BigInteger("100")), ((Number) (new BigDecimal("0.05").setScale(2, RoundingMode.DOWN)))))), (Object) true, (Object) !(AH.equalsWithTolerance(Generated_tolerance_Test.hundredPointOne_, ((Number) new BigInteger("100")), ((Number) (new BigDecimal("0.05").setScale(2, RoundingMode.DOWN))))));
+    try {
+      Assert.assertEquals("Expected: " + (true) + ", but was: " + (!(AH.equalsWithTolerance(Generated_tolerance_Test.hundredPointOne_, ((Number) new BigInteger("100")), ((Number) (new BigDecimal("0.05").setScale(2, RoundingMode.DOWN)))))), (Object) true, (Object) !(AH.equalsWithTolerance(Generated_tolerance_Test.hundredPointOne_, ((Number) new BigInteger("100")), ((Number) (new BigDecimal("0.05").setScale(2, RoundingMode.DOWN))))));
+    } catch (Throwable failure) {
+      throw SourceNodeFailures.attach(failure, "http://127.0.0.1:63320/node?ref=r%3A75a3cb54-4b85-4f8e-ab91-c941d4f514e3%28test.in.expr.os.tolerance%40tests%29%2F4668305294414888749");
+    }
   }
 
 

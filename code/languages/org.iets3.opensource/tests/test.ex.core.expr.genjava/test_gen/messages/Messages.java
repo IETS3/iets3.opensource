@@ -27,9 +27,7 @@ public class Messages {
       return new Message(BuiltinMessageKinds.none(), ((_FunctionTypes._return_P0_E0<String>) () -> {
         StringBuilder sb = new StringBuilder();
 
-        {
-          sb.append("m4 ");
-        }
+        sb.append("m4 ");
         {
           final String content = String.valueOf(x);
           sb.append(content);
@@ -46,9 +44,7 @@ public class Messages {
       return new Message(BuiltinMessageKinds.none(), ((_FunctionTypes._return_P0_E0<String>) () -> {
         StringBuilder sb = new StringBuilder();
 
-        {
-          sb.append("m4 ");
-        }
+        sb.append("m4 ");
         {
           final String content = String.valueOf(x);
           sb.append(content);
@@ -64,16 +60,12 @@ public class Messages {
         return new Message(BuiltinMessageKinds.none(), ((_FunctionTypes._return_P0_E0<String>) () -> {
           StringBuilder sb = new StringBuilder();
 
-          {
-            sb.append("m6 ");
-          }
+          sb.append("m6 ");
           {
             final String content = String.valueOf(n);
             sb.append(content);
           }
-          {
-            sb.append(" m6 ");
-          }
+          sb.append(" m6 ");
           {
             final String content = String.valueOf(b);
             sb.append(content);
@@ -95,9 +87,7 @@ public class Messages {
     return new Message(BuiltinMessageKinds.none(), ((_FunctionTypes._return_P0_E0<String>) () -> {
       StringBuilder sb = new StringBuilder();
 
-      {
-        sb.append("This is the ");
-      }
+      sb.append("This is the ");
       {
         final String content = String.valueOf(coerce_w88nue_a(p));
         sb.append(content);
@@ -109,9 +99,7 @@ public class Messages {
     return new Message(BuiltinMessageKinds.none(), ((_FunctionTypes._return_P0_E0<String>) () -> {
       StringBuilder sb = new StringBuilder();
 
-      {
-        sb.append("This is a lot of ");
-      }
+      sb.append("This is a lot of ");
       {
         final String content = String.valueOf(coerce_w88nue_b(m));
         sb.append(content);

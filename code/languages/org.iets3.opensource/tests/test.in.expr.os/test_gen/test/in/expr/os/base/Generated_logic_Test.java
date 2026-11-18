@@ -4,6 +4,7 @@ package test.in.expr.os.base;
 
 import org.junit.Test;
 import org.junit.Assert;
+import org.iets3.core.expr.genjava.tests.rt.rt.SourceNodeFailures;
 import java.math.BigInteger;
 import jetbrains.mps.baseLanguage.closures.runtime._FunctionTypes;
 import org.iets3.core.expr.genjava.tests.rt.rt.EqualsTestOp;
@@ -15,35 +16,55 @@ public class Generated_logic_Test {
 
   @Test
   public void logic_b1_7740953487930548344() throws Throwable {
-    Assert.assertEquals("Expected: " + (true) + ", but was: " + (true), (Object) true, (Object) true);
+    try {
+      Assert.assertEquals("Expected: " + (true) + ", but was: " + (true), (Object) true, (Object) true);
+    } catch (Throwable failure) {
+      throw SourceNodeFailures.attach(failure, "http://127.0.0.1:63320/node?ref=r%3A5c3f8be4-b275-4108-be9a-6a052d5b2428%28test.in.expr.os.base%40tests%29%2F7740953487930548344");
+    }
   }
   @Test
   public void logic_b2_7740953487930548349() throws Throwable {
-    Assert.assertEquals("Expected: " + (false) + ", but was: " + (true && false), (Object) false, (Object) (true && false));
+    try {
+      Assert.assertEquals("Expected: " + (false) + ", but was: " + (true && false), (Object) false, (Object) (true && false));
+    } catch (Throwable failure) {
+      throw SourceNodeFailures.attach(failure, "http://127.0.0.1:63320/node?ref=r%3A5c3f8be4-b275-4108-be9a-6a052d5b2428%28test.in.expr.os.base%40tests%29%2F7740953487930548349");
+    }
   }
   @Test
   public void logic_b3_7740953487930548356() throws Throwable {
-    Assert.assertEquals("Expected: " + (true) + ", but was: " + (true || true && false), (Object) true, (Object) (true || true && false));
+    try {
+      Assert.assertEquals("Expected: " + (true) + ", but was: " + (true || true && false), (Object) true, (Object) (true || true && false));
+    } catch (Throwable failure) {
+      throw SourceNodeFailures.attach(failure, "http://127.0.0.1:63320/node?ref=r%3A5c3f8be4-b275-4108-be9a-6a052d5b2428%28test.in.expr.os.base%40tests%29%2F7740953487930548356");
+    }
   }
   @Test
   public void logic_b4_7740953487930548363() throws Throwable {
-    Assert.assertEquals("Expected: " + (false) + ", but was: " + (!(true)), (Object) false, (Object) !(true));
+    try {
+      Assert.assertEquals("Expected: " + (false) + ", but was: " + (!(true)), (Object) false, (Object) !(true));
+    } catch (Throwable failure) {
+      throw SourceNodeFailures.attach(failure, "http://127.0.0.1:63320/node?ref=r%3A5c3f8be4-b275-4108-be9a-6a052d5b2428%28test.in.expr.os.base%40tests%29%2F7740953487930548363");
+    }
   }
   @Test
   public void logic_b5_7740953487930548369() throws Throwable {
-    Assert.assertTrue("Expected: " + (((Number) new BigInteger("12"))) + ", but was: " + (((_FunctionTypes._return_P0_E0<Number>) () -> {
-      if (true) {
-        return ((Number) new BigInteger("12"));
-      } else {
-        return ((Number) new BigInteger("0"));
-      }
-    }).invoke()), EqualsTestOp.matches(((Number) new BigInteger("12")), ((_FunctionTypes._return_P0_E0<Number>) () -> {
-      if (true) {
-        return ((Number) new BigInteger("12"));
-      } else {
-        return ((Number) new BigInteger("0"));
-      }
-    }).invoke()));
+    try {
+      Assert.assertTrue("Expected: " + (((Number) new BigInteger("12"))) + ", but was: " + (((_FunctionTypes._return_P0_E0<Number>) () -> {
+        if (true) {
+          return ((Number) new BigInteger("12"));
+        } else {
+          return ((Number) new BigInteger("0"));
+        }
+      }).invoke()), EqualsTestOp.matches(((Number) new BigInteger("12")), ((_FunctionTypes._return_P0_E0<Number>) () -> {
+        if (true) {
+          return ((Number) new BigInteger("12"));
+        } else {
+          return ((Number) new BigInteger("0"));
+        }
+      }).invoke()));
+    } catch (Throwable failure) {
+      throw SourceNodeFailures.attach(failure, "http://127.0.0.1:63320/node?ref=r%3A5c3f8be4-b275-4108-be9a-6a052d5b2428%28test.in.expr.os.base%40tests%29%2F7740953487930548369");
+    }
   }
 
 

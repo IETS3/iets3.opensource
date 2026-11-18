@@ -7,6 +7,7 @@ import org.junit.Test;
 import org.junit.Assert;
 import org.pcollections.TreePVector;
 import java.util.ArrayList;
+import org.iets3.core.expr.genjava.tests.rt.rt.SourceNodeFailures;
 import org.pcollections.HashTreePSet;
 import java.util.HashSet;
 
@@ -63,51 +64,99 @@ public class Generated_collectionDefaultValues_Test {
   }
   @Test
   public void TestDefaultValues_item0_6932772747675577019() throws Throwable {
-    Assert.assertEquals("Expected: " + (TreePVector.<Number>from(new ArrayList<Number>())) + ", but was: " + (TreePVector.<Number>from(new ArrayList<Number>())), (Object) TreePVector.<Number>from(new ArrayList<Number>()), (Object) TreePVector.<Number>from(new ArrayList<Number>()));
+    try {
+      Assert.assertEquals("Expected: " + (TreePVector.<Number>from(new ArrayList<Number>())) + ", but was: " + (TreePVector.<Number>from(new ArrayList<Number>())), (Object) TreePVector.<Number>from(new ArrayList<Number>()), (Object) TreePVector.<Number>from(new ArrayList<Number>()));
+    } catch (Throwable failure) {
+      throw SourceNodeFailures.attach(failure, "http://127.0.0.1:63320/node?ref=r%3A2309ed17-e7b4-45b5-b25e-2c0f3ea87e8b%28test.in.expr.os.collections%40tests%29%2F6932772747675577019");
+    }
   }
   @Test
   public void TestDefaultValues_item1_6932772747675577522() throws Throwable {
-    Assert.assertEquals("Expected: " + (TreePVector.<String>from(new ArrayList<String>())) + ", but was: " + (TreePVector.<String>from(new ArrayList<String>())), (Object) TreePVector.<String>from(new ArrayList<String>()), (Object) TreePVector.<String>from(new ArrayList<String>()));
+    try {
+      Assert.assertEquals("Expected: " + (TreePVector.<String>from(new ArrayList<String>())) + ", but was: " + (TreePVector.<String>from(new ArrayList<String>())), (Object) TreePVector.<String>from(new ArrayList<String>()), (Object) TreePVector.<String>from(new ArrayList<String>()));
+    } catch (Throwable failure) {
+      throw SourceNodeFailures.attach(failure, "http://127.0.0.1:63320/node?ref=r%3A2309ed17-e7b4-45b5-b25e-2c0f3ea87e8b%28test.in.expr.os.collections%40tests%29%2F6932772747675577522");
+    }
   }
   @Test
   public void TestDefaultValues_item2_3438105021040261423() throws Throwable {
-    Assert.assertEquals("Expected: " + (TreePVector.<Number>from(new ArrayList<Number>())) + ", but was: " + (TreePVector.<Number>from(new ArrayList<Number>())), (Object) TreePVector.<Number>from(new ArrayList<Number>()), (Object) TreePVector.<Number>from(new ArrayList<Number>()));
+    try {
+      Assert.assertEquals("Expected: " + (TreePVector.<Number>from(new ArrayList<Number>())) + ", but was: " + (TreePVector.<Number>from(new ArrayList<Number>())), (Object) TreePVector.<Number>from(new ArrayList<Number>()), (Object) TreePVector.<Number>from(new ArrayList<Number>()));
+    } catch (Throwable failure) {
+      throw SourceNodeFailures.attach(failure, "http://127.0.0.1:63320/node?ref=r%3A2309ed17-e7b4-45b5-b25e-2c0f3ea87e8b%28test.in.expr.os.collections%40tests%29%2F3438105021040261423");
+    }
   }
   @Test
   public void TestDefaultValues_item3_3438105021040264034() throws Throwable {
-    Assert.assertEquals("Expected: " + (TreePVector.<Number>from(new ArrayList<Number>())) + ", but was: " + (TreePVector.<Number>from(new ArrayList<Number>())), (Object) TreePVector.<Number>from(new ArrayList<Number>()), (Object) TreePVector.<Number>from(new ArrayList<Number>()));
+    try {
+      Assert.assertEquals("Expected: " + (TreePVector.<Number>from(new ArrayList<Number>())) + ", but was: " + (TreePVector.<Number>from(new ArrayList<Number>())), (Object) TreePVector.<Number>from(new ArrayList<Number>()), (Object) TreePVector.<Number>from(new ArrayList<Number>()));
+    } catch (Throwable failure) {
+      throw SourceNodeFailures.attach(failure, "http://127.0.0.1:63320/node?ref=r%3A2309ed17-e7b4-45b5-b25e-2c0f3ea87e8b%28test.in.expr.os.collections%40tests%29%2F3438105021040264034");
+    }
   }
   @Test
   public void TestDefaultValues_item4_3438105021040267969() throws Throwable {
-    Assert.assertEquals("Expected: " + (TreePVector.<Boolean>from(new ArrayList<Boolean>())) + ", but was: " + (TreePVector.<Boolean>from(new ArrayList<Boolean>())), (Object) TreePVector.<Boolean>from(new ArrayList<Boolean>()), (Object) TreePVector.<Boolean>from(new ArrayList<Boolean>()));
+    try {
+      Assert.assertEquals("Expected: " + (TreePVector.<Boolean>from(new ArrayList<Boolean>())) + ", but was: " + (TreePVector.<Boolean>from(new ArrayList<Boolean>())), (Object) TreePVector.<Boolean>from(new ArrayList<Boolean>()), (Object) TreePVector.<Boolean>from(new ArrayList<Boolean>()));
+    } catch (Throwable failure) {
+      throw SourceNodeFailures.attach(failure, "http://127.0.0.1:63320/node?ref=r%3A2309ed17-e7b4-45b5-b25e-2c0f3ea87e8b%28test.in.expr.os.collections%40tests%29%2F3438105021040267969");
+    }
   }
   @Test
   public void TestDefaultValues_item5_3438105021040271720() throws Throwable {
-    Assert.assertEquals("Expected: " + (TreePVector.<Dummy>from(new ArrayList<Dummy>())) + ", but was: " + (TreePVector.<Dummy>from(new ArrayList<Dummy>())), (Object) TreePVector.<Dummy>from(new ArrayList<Dummy>()), (Object) TreePVector.<Dummy>from(new ArrayList<Dummy>()));
+    try {
+      Assert.assertEquals("Expected: " + (TreePVector.<Dummy>from(new ArrayList<Dummy>())) + ", but was: " + (TreePVector.<Dummy>from(new ArrayList<Dummy>())), (Object) TreePVector.<Dummy>from(new ArrayList<Dummy>()), (Object) TreePVector.<Dummy>from(new ArrayList<Dummy>()));
+    } catch (Throwable failure) {
+      throw SourceNodeFailures.attach(failure, "http://127.0.0.1:63320/node?ref=r%3A2309ed17-e7b4-45b5-b25e-2c0f3ea87e8b%28test.in.expr.os.collections%40tests%29%2F3438105021040271720");
+    }
   }
   @Test
   public void TestDefaultValues_item7_3438105021040274732() throws Throwable {
-    Assert.assertEquals("Expected: " + (HashTreePSet.from(new HashSet<Number>())) + ", but was: " + (HashTreePSet.from(new HashSet<Number>())), (Object) HashTreePSet.from(new HashSet<Number>()), (Object) HashTreePSet.from(new HashSet<Number>()));
+    try {
+      Assert.assertEquals("Expected: " + (HashTreePSet.from(new HashSet<Number>())) + ", but was: " + (HashTreePSet.from(new HashSet<Number>())), (Object) HashTreePSet.from(new HashSet<Number>()), (Object) HashTreePSet.from(new HashSet<Number>()));
+    } catch (Throwable failure) {
+      throw SourceNodeFailures.attach(failure, "http://127.0.0.1:63320/node?ref=r%3A2309ed17-e7b4-45b5-b25e-2c0f3ea87e8b%28test.in.expr.os.collections%40tests%29%2F3438105021040274732");
+    }
   }
   @Test
   public void TestDefaultValues_item8_3438105021040277001() throws Throwable {
-    Assert.assertEquals("Expected: " + (HashTreePSet.from(new HashSet<String>())) + ", but was: " + (HashTreePSet.from(new HashSet<String>())), (Object) HashTreePSet.from(new HashSet<String>()), (Object) HashTreePSet.from(new HashSet<String>()));
+    try {
+      Assert.assertEquals("Expected: " + (HashTreePSet.from(new HashSet<String>())) + ", but was: " + (HashTreePSet.from(new HashSet<String>())), (Object) HashTreePSet.from(new HashSet<String>()), (Object) HashTreePSet.from(new HashSet<String>()));
+    } catch (Throwable failure) {
+      throw SourceNodeFailures.attach(failure, "http://127.0.0.1:63320/node?ref=r%3A2309ed17-e7b4-45b5-b25e-2c0f3ea87e8b%28test.in.expr.os.collections%40tests%29%2F3438105021040277001");
+    }
   }
   @Test
   public void TestDefaultValues_item9_6932772747675578001() throws Throwable {
-    Assert.assertEquals("Expected: " + (HashTreePSet.from(new HashSet<Number>())) + ", but was: " + (HashTreePSet.from(new HashSet<Number>())), (Object) HashTreePSet.from(new HashSet<Number>()), (Object) HashTreePSet.from(new HashSet<Number>()));
+    try {
+      Assert.assertEquals("Expected: " + (HashTreePSet.from(new HashSet<Number>())) + ", but was: " + (HashTreePSet.from(new HashSet<Number>())), (Object) HashTreePSet.from(new HashSet<Number>()), (Object) HashTreePSet.from(new HashSet<Number>()));
+    } catch (Throwable failure) {
+      throw SourceNodeFailures.attach(failure, "http://127.0.0.1:63320/node?ref=r%3A2309ed17-e7b4-45b5-b25e-2c0f3ea87e8b%28test.in.expr.os.collections%40tests%29%2F6932772747675578001");
+    }
   }
   @Test
   public void TestDefaultValues_item10_3438105021040280171() throws Throwable {
-    Assert.assertEquals("Expected: " + (HashTreePSet.from(new HashSet<Number>())) + ", but was: " + (HashTreePSet.from(new HashSet<Number>())), (Object) HashTreePSet.from(new HashSet<Number>()), (Object) HashTreePSet.from(new HashSet<Number>()));
+    try {
+      Assert.assertEquals("Expected: " + (HashTreePSet.from(new HashSet<Number>())) + ", but was: " + (HashTreePSet.from(new HashSet<Number>())), (Object) HashTreePSet.from(new HashSet<Number>()), (Object) HashTreePSet.from(new HashSet<Number>()));
+    } catch (Throwable failure) {
+      throw SourceNodeFailures.attach(failure, "http://127.0.0.1:63320/node?ref=r%3A2309ed17-e7b4-45b5-b25e-2c0f3ea87e8b%28test.in.expr.os.collections%40tests%29%2F3438105021040280171");
+    }
   }
   @Test
   public void TestDefaultValues_item11_3438105021040286079() throws Throwable {
-    Assert.assertEquals("Expected: " + (HashTreePSet.from(new HashSet<Boolean>())) + ", but was: " + (HashTreePSet.from(new HashSet<Boolean>())), (Object) HashTreePSet.from(new HashSet<Boolean>()), (Object) HashTreePSet.from(new HashSet<Boolean>()));
+    try {
+      Assert.assertEquals("Expected: " + (HashTreePSet.from(new HashSet<Boolean>())) + ", but was: " + (HashTreePSet.from(new HashSet<Boolean>())), (Object) HashTreePSet.from(new HashSet<Boolean>()), (Object) HashTreePSet.from(new HashSet<Boolean>()));
+    } catch (Throwable failure) {
+      throw SourceNodeFailures.attach(failure, "http://127.0.0.1:63320/node?ref=r%3A2309ed17-e7b4-45b5-b25e-2c0f3ea87e8b%28test.in.expr.os.collections%40tests%29%2F3438105021040286079");
+    }
   }
   @Test
   public void TestDefaultValues_item12_6932772747675579713() throws Throwable {
-    Assert.assertEquals("Expected: " + (HashTreePSet.from(new HashSet<Dummy>())) + ", but was: " + (HashTreePSet.from(new HashSet<Dummy>())), (Object) HashTreePSet.from(new HashSet<Dummy>()), (Object) HashTreePSet.from(new HashSet<Dummy>()));
+    try {
+      Assert.assertEquals("Expected: " + (HashTreePSet.from(new HashSet<Dummy>())) + ", but was: " + (HashTreePSet.from(new HashSet<Dummy>())), (Object) HashTreePSet.from(new HashSet<Dummy>()), (Object) HashTreePSet.from(new HashSet<Dummy>()));
+    } catch (Throwable failure) {
+      throw SourceNodeFailures.attach(failure, "http://127.0.0.1:63320/node?ref=r%3A2309ed17-e7b4-45b5-b25e-2c0f3ea87e8b%28test.in.expr.os.collections%40tests%29%2F6932772747675579713");
+    }
   }
 
 

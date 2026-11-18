@@ -6,6 +6,7 @@ import jetbrains.mps.baseLanguage.closures.runtime._FunctionTypes;
 import org.iets3.core.expr.genjava.base.rt.rt.KernelFErrorException;
 import org.junit.Test;
 import org.junit.Assert;
+import org.iets3.core.expr.genjava.tests.rt.rt.SourceNodeFailures;
 import org.iets3.core.expr.simpleTypes.runtime.AH;
 import java.math.BigInteger;
 import org.iets3.core.expr.genjava.base.rt.rt.AlternativesException;
@@ -48,14 +49,18 @@ public class Generated_confail_Test {
   @Test
   public void ConFails_item0_6037003118842980671() throws Throwable {
     try {
-      ((_FunctionTypes._void_P0_E0) () -> {
-        if (Generated_confail_Test.f3() == null) {
-          throw new NullPointerException("No Result in Confail Testitem");
-        }
-      }).invoke();
-      Assert.fail("Constraint failed");
-    } catch (Exception e) {
-      // expected exception
+      try {
+        ((_FunctionTypes._void_P0_E0) () -> {
+          if (Generated_confail_Test.f3() == null) {
+            throw new NullPointerException("No Result in Confail Testitem");
+          }
+        }).invoke();
+        Assert.fail("Constraint failed");
+      } catch (Exception e) {
+        // expected exception
+      }
+    } catch (Throwable failure) {
+      throw SourceNodeFailures.attach(failure, "http://127.0.0.1:63320/node?ref=r%3A64810d62-6fc9-4e66-8e91-7e3ebadc7df6%28test.in.expr.os.tests%40tests%29%2F6037003118842980671");
     }
   }
   public static Number g1(Number i) {
@@ -107,23 +112,35 @@ public class Generated_confail_Test {
   }
   @Test
   public void Nulls_item0_6037003118842984401() throws Throwable {
-    Assert.assertTrue("Expected: " + (((Number) new BigInteger("1"))) + ", but was: " + (Generated_confail_Test.g3(((Number) new BigInteger("0")))), EqualsTestOp.matches(((Number) new BigInteger("1")), Generated_confail_Test.g3(((Number) new BigInteger("0")))));
+    try {
+      Assert.assertTrue("Expected: " + (((Number) new BigInteger("1"))) + ", but was: " + (Generated_confail_Test.g3(((Number) new BigInteger("0")))), EqualsTestOp.matches(((Number) new BigInteger("1")), Generated_confail_Test.g3(((Number) new BigInteger("0")))));
+    } catch (Throwable failure) {
+      throw SourceNodeFailures.attach(failure, "http://127.0.0.1:63320/node?ref=r%3A64810d62-6fc9-4e66-8e91-7e3ebadc7df6%28test.in.expr.os.tests%40tests%29%2F6037003118842984401");
+    }
   }
   @Test
   public void Nulls_item1_6037003118842984696() throws Throwable {
-    Assert.assertTrue("Expected: " + (((Number) new BigInteger("1"))) + ", but was: " + (Generated_confail_Test.g3(((Number) new BigInteger("1")))), EqualsTestOp.matches(((Number) new BigInteger("1")), Generated_confail_Test.g3(((Number) new BigInteger("1")))));
+    try {
+      Assert.assertTrue("Expected: " + (((Number) new BigInteger("1"))) + ", but was: " + (Generated_confail_Test.g3(((Number) new BigInteger("1")))), EqualsTestOp.matches(((Number) new BigInteger("1")), Generated_confail_Test.g3(((Number) new BigInteger("1")))));
+    } catch (Throwable failure) {
+      throw SourceNodeFailures.attach(failure, "http://127.0.0.1:63320/node?ref=r%3A64810d62-6fc9-4e66-8e91-7e3ebadc7df6%28test.in.expr.os.tests%40tests%29%2F6037003118842984696");
+    }
   }
   @Test
   public void Nulls_item2_6037003118842986467() throws Throwable {
     try {
-      ((_FunctionTypes._void_P0_E0) () -> {
-        if (Generated_confail_Test.g3(((Number) new BigInteger("2"))) == null) {
-          throw new NullPointerException("No Result in Confail Testitem");
-        }
-      }).invoke();
-      Assert.fail("Constraint failed");
-    } catch (Exception e) {
-      // expected exception
+      try {
+        ((_FunctionTypes._void_P0_E0) () -> {
+          if (Generated_confail_Test.g3(((Number) new BigInteger("2"))) == null) {
+            throw new NullPointerException("No Result in Confail Testitem");
+          }
+        }).invoke();
+        Assert.fail("Constraint failed");
+      } catch (Exception e) {
+        // expected exception
+      }
+    } catch (Throwable failure) {
+      throw SourceNodeFailures.attach(failure, "http://127.0.0.1:63320/node?ref=r%3A64810d62-6fc9-4e66-8e91-7e3ebadc7df6%28test.in.expr.os.tests%40tests%29%2F6037003118842986467");
     }
   }
 

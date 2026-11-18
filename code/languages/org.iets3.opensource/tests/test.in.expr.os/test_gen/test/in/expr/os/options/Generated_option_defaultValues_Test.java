@@ -5,6 +5,7 @@ package test.in.expr.os.options;
 import org.apache.commons.lang3.builder.HashCodeBuilder;
 import org.junit.Test;
 import org.junit.Assert;
+import org.iets3.core.expr.genjava.tests.rt.rt.SourceNodeFailures;
 
 /**
  * 
@@ -59,47 +60,91 @@ public class Generated_option_defaultValues_Test {
   }
   @Test
   public void TestDefaultValues_item0_8613480905490286320() throws Throwable {
-    Assert.assertEquals("Expected: " + (null) + ", but was: " + (null), (Object) null, (Object) null);
+    try {
+      Assert.assertEquals("Expected: " + (null) + ", but was: " + (null), (Object) null, (Object) null);
+    } catch (Throwable failure) {
+      throw SourceNodeFailures.attach(failure, "http://127.0.0.1:63320/node?ref=r%3Aea293304-2b79-4cc3-9b45-e3362a713a17%28test.in.expr.os.options%40tests%29%2F8613480905490286320");
+    }
   }
   @Test
   public void TestDefaultValues_item1_8613480905490286325() throws Throwable {
-    Assert.assertEquals("Expected: " + (null) + ", but was: " + (null), (Object) null, (Object) null);
+    try {
+      Assert.assertEquals("Expected: " + (null) + ", but was: " + (null), (Object) null, (Object) null);
+    } catch (Throwable failure) {
+      throw SourceNodeFailures.attach(failure, "http://127.0.0.1:63320/node?ref=r%3Aea293304-2b79-4cc3-9b45-e3362a713a17%28test.in.expr.os.options%40tests%29%2F8613480905490286325");
+    }
   }
   @Test
   public void TestDefaultValues_item2_8613480905490286331() throws Throwable {
-    Assert.assertEquals("Expected: " + (null) + ", but was: " + (null), (Object) null, (Object) null);
+    try {
+      Assert.assertEquals("Expected: " + (null) + ", but was: " + (null), (Object) null, (Object) null);
+    } catch (Throwable failure) {
+      throw SourceNodeFailures.attach(failure, "http://127.0.0.1:63320/node?ref=r%3Aea293304-2b79-4cc3-9b45-e3362a713a17%28test.in.expr.os.options%40tests%29%2F8613480905490286331");
+    }
   }
   @Test
   public void TestDefaultValues_item3_8613480905490286337() throws Throwable {
-    Assert.assertEquals("Expected: " + (null) + ", but was: " + (null), (Object) null, (Object) null);
+    try {
+      Assert.assertEquals("Expected: " + (null) + ", but was: " + (null), (Object) null, (Object) null);
+    } catch (Throwable failure) {
+      throw SourceNodeFailures.attach(failure, "http://127.0.0.1:63320/node?ref=r%3Aea293304-2b79-4cc3-9b45-e3362a713a17%28test.in.expr.os.options%40tests%29%2F8613480905490286337");
+    }
   }
   @Test
   public void TestDefaultValues_item4_8613480905490286343() throws Throwable {
-    Assert.assertEquals("Expected: " + (null) + ", but was: " + (null), (Object) null, (Object) null);
+    try {
+      Assert.assertEquals("Expected: " + (null) + ", but was: " + (null), (Object) null, (Object) null);
+    } catch (Throwable failure) {
+      throw SourceNodeFailures.attach(failure, "http://127.0.0.1:63320/node?ref=r%3Aea293304-2b79-4cc3-9b45-e3362a713a17%28test.in.expr.os.options%40tests%29%2F8613480905490286343");
+    }
   }
   @Test
   public void TestDefaultValues_item5_8613480905490286350() throws Throwable {
-    Assert.assertEquals("Expected: " + (null) + ", but was: " + (null), (Object) null, (Object) null);
+    try {
+      Assert.assertEquals("Expected: " + (null) + ", but was: " + (null), (Object) null, (Object) null);
+    } catch (Throwable failure) {
+      throw SourceNodeFailures.attach(failure, "http://127.0.0.1:63320/node?ref=r%3Aea293304-2b79-4cc3-9b45-e3362a713a17%28test.in.expr.os.options%40tests%29%2F8613480905490286350");
+    }
   }
   @Test
   public void TestDefaultValues_item6_8613480905490286356() throws Throwable {
-    Assert.assertEquals("Expected: " + (null) + ", but was: " + (null), (Object) null, (Object) null);
+    try {
+      Assert.assertEquals("Expected: " + (null) + ", but was: " + (null), (Object) null, (Object) null);
+    } catch (Throwable failure) {
+      throw SourceNodeFailures.attach(failure, "http://127.0.0.1:63320/node?ref=r%3Aea293304-2b79-4cc3-9b45-e3362a713a17%28test.in.expr.os.options%40tests%29%2F8613480905490286356");
+    }
   }
   @Test
   public void TestDefaultValues_item7_8613480905490286361() throws Throwable {
-    Assert.assertEquals("Expected: " + (null) + ", but was: " + (null), (Object) null, (Object) null);
+    try {
+      Assert.assertEquals("Expected: " + (null) + ", but was: " + (null), (Object) null, (Object) null);
+    } catch (Throwable failure) {
+      throw SourceNodeFailures.attach(failure, "http://127.0.0.1:63320/node?ref=r%3Aea293304-2b79-4cc3-9b45-e3362a713a17%28test.in.expr.os.options%40tests%29%2F8613480905490286361");
+    }
   }
   @Test
   public void TestDefaultValues_item8_8613480905490286369() throws Throwable {
-    Assert.assertEquals("Expected: " + (null) + ", but was: " + (null), (Object) null, (Object) null);
+    try {
+      Assert.assertEquals("Expected: " + (null) + ", but was: " + (null), (Object) null, (Object) null);
+    } catch (Throwable failure) {
+      throw SourceNodeFailures.attach(failure, "http://127.0.0.1:63320/node?ref=r%3Aea293304-2b79-4cc3-9b45-e3362a713a17%28test.in.expr.os.options%40tests%29%2F8613480905490286369");
+    }
   }
   @Test
   public void TestDefaultValues_item9_8613480905490286377() throws Throwable {
-    Assert.assertEquals("Expected: " + (null) + ", but was: " + (null), (Object) null, (Object) null);
+    try {
+      Assert.assertEquals("Expected: " + (null) + ", but was: " + (null), (Object) null, (Object) null);
+    } catch (Throwable failure) {
+      throw SourceNodeFailures.attach(failure, "http://127.0.0.1:63320/node?ref=r%3Aea293304-2b79-4cc3-9b45-e3362a713a17%28test.in.expr.os.options%40tests%29%2F8613480905490286377");
+    }
   }
   @Test
   public void TestDefaultValues_item10_8613480905490286387() throws Throwable {
-    Assert.assertEquals("Expected: " + (null) + ", but was: " + (null), (Object) null, (Object) null);
+    try {
+      Assert.assertEquals("Expected: " + (null) + ", but was: " + (null), (Object) null, (Object) null);
+    } catch (Throwable failure) {
+      throw SourceNodeFailures.attach(failure, "http://127.0.0.1:63320/node?ref=r%3Aea293304-2b79-4cc3-9b45-e3362a713a17%28test.in.expr.os.options%40tests%29%2F8613480905490286387");
+    }
   }
 
 

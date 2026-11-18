@@ -7,7 +7,7 @@ import org.junit.extensions.cpsuite.ClasspathSuite;
 
 @RunWith(ClasspathSuite.class)
 @ClasspathSuite.IncludeJars(true)
-@ClasspathSuite.ClassnameFilters(value = {".*Generated_.*_Test"})
+@ClasspathSuite.ClassnameFilters(value = {".*Generated_.*_Test", "!test[.]org[.]iets3[.]genjava[.]nodeurl[.]fixtures[.].*"})
 @ClasspathSuite.ClasspathProperty(value = "mps.test.modules")
 public class KernelFGeneratedTestsClasspathSuite {
 }

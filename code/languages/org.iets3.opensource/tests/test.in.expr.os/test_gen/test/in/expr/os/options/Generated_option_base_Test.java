@@ -6,6 +6,7 @@ import java.math.BigInteger;
 import org.junit.Test;
 import org.junit.Assert;
 import org.iets3.core.expr.genjava.tests.rt.rt.EqualsTestOp;
+import org.iets3.core.expr.genjava.tests.rt.rt.SourceNodeFailures;
 import jetbrains.mps.baseLanguage.closures.runtime._FunctionTypes;
 import org.iets3.core.expr.simpleTypes.runtime.AH;
 import org.iets3.core.expr.genjava.messages.rt.rt.Message;
@@ -25,53 +26,77 @@ public class Generated_option_base_Test {
   public static final Number constant5Ref_ = Generated_option_base_Test.constant5_;
   @Test
   public void constant_item0_8613480905495570574() throws Throwable {
-    Assert.assertTrue("Expected: " + (((Number) new BigInteger("5"))) + ", but was: " + (Generated_option_base_Test.constant5_), EqualsTestOp.matches(((Number) new BigInteger("5")), Generated_option_base_Test.constant5_));
+    try {
+      Assert.assertTrue("Expected: " + (((Number) new BigInteger("5"))) + ", but was: " + (Generated_option_base_Test.constant5_), EqualsTestOp.matches(((Number) new BigInteger("5")), Generated_option_base_Test.constant5_));
+    } catch (Throwable failure) {
+      throw SourceNodeFailures.attach(failure, "http://127.0.0.1:63320/node?ref=r%3Aea293304-2b79-4cc3-9b45-e3362a713a17%28test.in.expr.os.options%40tests%29%2F8613480905495570574");
+    }
   }
   @Test
   public void constant_item1_8613480905495570578() throws Throwable {
-    Assert.assertTrue("Expected: " + (((Number) new BigInteger("5"))) + ", but was: " + (Generated_option_base_Test.constant5Ref_), EqualsTestOp.matches(((Number) new BigInteger("5")), Generated_option_base_Test.constant5Ref_));
+    try {
+      Assert.assertTrue("Expected: " + (((Number) new BigInteger("5"))) + ", but was: " + (Generated_option_base_Test.constant5Ref_), EqualsTestOp.matches(((Number) new BigInteger("5")), Generated_option_base_Test.constant5Ref_));
+    } catch (Throwable failure) {
+      throw SourceNodeFailures.attach(failure, "http://127.0.0.1:63320/node?ref=r%3Aea293304-2b79-4cc3-9b45-e3362a713a17%28test.in.expr.os.options%40tests%29%2F8613480905495570578");
+    }
   }
   @Test
   public void constant_item2_8613480905495570582() throws Throwable {
-    Assert.assertEquals("Expected: " + (Generated_option_base_Test.constant5_) + ", but was: " + (Generated_option_base_Test.constant5Ref_), (Object) Generated_option_base_Test.constant5_, (Object) Generated_option_base_Test.constant5Ref_);
+    try {
+      Assert.assertEquals("Expected: " + (Generated_option_base_Test.constant5_) + ", but was: " + (Generated_option_base_Test.constant5Ref_), (Object) Generated_option_base_Test.constant5_, (Object) Generated_option_base_Test.constant5Ref_);
+    } catch (Throwable failure) {
+      throw SourceNodeFailures.attach(failure, "http://127.0.0.1:63320/node?ref=r%3Aea293304-2b79-4cc3-9b45-e3362a713a17%28test.in.expr.os.options%40tests%29%2F8613480905495570582");
+    }
   }
   @Test
   public void emptyAndValExpr_item0_8613480905495570606() throws Throwable {
-    Assert.assertEquals("Expected: " + ("blockWithEmptyAndValExpr5") + ", but was: " + (((_FunctionTypes._return_P0_E0<String>) () -> {
-      Number variable = ((Number) new BigInteger("5"));
-      return AH.addString("blockWithEmptyAndValExpr", variable);
-    }).invoke()), (Object) "blockWithEmptyAndValExpr5", (Object) ((_FunctionTypes._return_P0_E0<String>) () -> {
-      Number variable = ((Number) new BigInteger("5"));
-      return AH.addString("blockWithEmptyAndValExpr", variable);
-    }).invoke());
+    try {
+      Assert.assertEquals("Expected: " + ("blockWithEmptyAndValExpr5") + ", but was: " + (((_FunctionTypes._return_P0_E0<String>) () -> {
+        Number variable = ((Number) new BigInteger("5"));
+        return AH.addString("blockWithEmptyAndValExpr", variable);
+      }).invoke()), (Object) "blockWithEmptyAndValExpr5", (Object) ((_FunctionTypes._return_P0_E0<String>) () -> {
+        Number variable = ((Number) new BigInteger("5"));
+        return AH.addString("blockWithEmptyAndValExpr", variable);
+      }).invoke());
+    } catch (Throwable failure) {
+      throw SourceNodeFailures.attach(failure, "http://127.0.0.1:63320/node?ref=r%3Aea293304-2b79-4cc3-9b45-e3362a713a17%28test.in.expr.os.options%40tests%29%2F8613480905495570606");
+    }
   }
 
   @Test
   public void cast_item0_8613480905495570628() throws Throwable {
-    Assert.assertTrue("Expected: " + (((Number) new BigInteger("5"))) + ", but was: " + (((Number) ((Number) new BigInteger("5")))), EqualsTestOp.matches(((Number) new BigInteger("5")), ((Number) ((Number) new BigInteger("5")))));
+    try {
+      Assert.assertTrue("Expected: " + (((Number) new BigInteger("5"))) + ", but was: " + (((Number) ((Number) new BigInteger("5")))), EqualsTestOp.matches(((Number) new BigInteger("5")), ((Number) ((Number) new BigInteger("5")))));
+    } catch (Throwable failure) {
+      throw SourceNodeFailures.attach(failure, "http://127.0.0.1:63320/node?ref=r%3Aea293304-2b79-4cc3-9b45-e3362a713a17%28test.in.expr.os.options%40tests%29%2F8613480905495570628");
+    }
   }
   @Test
   public void cast_item1_8613480905495570634() throws Throwable {
     try {
-      ((_FunctionTypes._void_P0_E0) () -> {
-        if (((_FunctionTypes._return_P0_E0<Number>) () -> {
-          Number newValue = ((Number) new BigInteger("5"));
-          {
-            Number it = newValue;
-            if (!(AH.oneOf(it, ((Number) new BigInteger("1")), ((Number) new BigInteger("2")), ((Number) new BigInteger("3"))))) {
-              final Message message = new Message(BuiltinMessageKinds.error(), ContractViolatedException.CONSTRAINT_FAILED + ": " + "it.oneOf[1, 2, 3]").withLocation(new ProgramLocation("r:ea293304-2b79-4cc3-9b45-e3362a713a17(test.in.expr.os.options@tests)/8613480905495570620", "http://127.0.0.1:63320/node?ref=r%3Aea293304-2b79-4cc3-9b45-e3362a713a17%28test.in.expr.os.options%40tests%29%2F8613480905495570620")).withAffectedMemberNames(new HashSet<String>(Arrays.<String>asList()));
-              GlobalContext.MESSAGE_LOG.get().collect(message);
-              throw new ContractViolatedException(message);
+      try {
+        ((_FunctionTypes._void_P0_E0) () -> {
+          if (((_FunctionTypes._return_P0_E0<Number>) () -> {
+            Number newValue = ((Number) new BigInteger("5"));
+            {
+              Number it = newValue;
+              if (!(AH.oneOf(it, ((Number) new BigInteger("1")), ((Number) new BigInteger("2")), ((Number) new BigInteger("3"))))) {
+                final Message message = new Message(BuiltinMessageKinds.error(), ContractViolatedException.CONSTRAINT_FAILED + ": " + "it.oneOf[1, 2, 3]").withLocation(new ProgramLocation("r:ea293304-2b79-4cc3-9b45-e3362a713a17(test.in.expr.os.options@tests)/8613480905495570620", "http://127.0.0.1:63320/node?ref=r%3Aea293304-2b79-4cc3-9b45-e3362a713a17%28test.in.expr.os.options%40tests%29%2F8613480905495570620")).withAffectedMemberNames(new HashSet<String>(Arrays.<String>asList()));
+                GlobalContext.MESSAGE_LOG.get().collect(message);
+                throw new ContractViolatedException(message);
+              }
             }
+            return newValue;
+          }).invoke() == null) {
+            throw new NullPointerException("No Result in Confail Testitem");
           }
-          return newValue;
-        }).invoke() == null) {
-          throw new NullPointerException("No Result in Confail Testitem");
-        }
-      }).invoke();
-      Assert.fail("Constraint failed");
-    } catch (Exception e) {
-      // expected exception
+        }).invoke();
+        Assert.fail("Constraint failed");
+      } catch (Exception e) {
+        // expected exception
+      }
+    } catch (Throwable failure) {
+      throw SourceNodeFailures.attach(failure, "http://127.0.0.1:63320/node?ref=r%3Aea293304-2b79-4cc3-9b45-e3362a713a17%28test.in.expr.os.options%40tests%29%2F8613480905495570634");
     }
   }
 
