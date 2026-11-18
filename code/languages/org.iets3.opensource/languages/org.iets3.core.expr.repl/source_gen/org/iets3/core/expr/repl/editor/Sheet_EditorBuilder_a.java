@@ -38,7 +38,7 @@ import jetbrains.mps.lang.core.behavior.LinkAttribute__BehaviorDescriptor;
 import jetbrains.mps.baseLanguage.closures.runtime.Wrappers;
 import de.slisson.mps.tables.runtime.cells.TableEditor;
 import jetbrains.mps.baseLanguage.closures.runtime._FunctionTypes;
-import de.slisson.mps.hacks.editor.EditorCacheHacks;
+import de.slisson.mps.tables.runtime.cells.CellCaching;
 import de.slisson.mps.tables.runtime.cells.ChildsTracker;
 import de.slisson.mps.tables.runtime.cells.PartialTableExtractor;
 import de.slisson.mps.tables.runtime.gridmodel.Grid;
@@ -302,7 +302,7 @@ import org.jetbrains.mps.openapi.language.SConcept;
 
     final Wrappers._T<TableEditor> editorCell = new Wrappers._T<TableEditor>(null);
     _FunctionTypes._void_P0_E0 creator = () -> {
-      EditorCacheHacks.noCaching(editorContext, () -> {
+      CellCaching.maybeDisableCache(node, editorContext, () -> {
         try {
 
           ChildsTracker.pushNewInstance();
@@ -329,11 +329,11 @@ import org.jetbrains.mps.openapi.language.SConcept;
             public void postprocess(ITableGrid grid, SNode node, EditorContext editorContext, SubstituteInfoFactory substituteInfoFactory) {
               for (int x = 0; x < grid.getSizeX(); x++) {
                 for (int y = 0; y < grid.getSizeY(); y++) {
-                  EditorCellGridLeaf element = as_dlrz2w_a0a0a0a0a0a0d0a0p0a0b0a0a0c0bb(grid.getCell(x, y), EditorCellGridLeaf.class);
+                  EditorCellGridLeaf element = as_dlrz2w_a0a0a0a0a0a0d0a0p0a0c0a0a0c0bb(grid.getCell(x, y), EditorCellGridLeaf.class);
                   if (element == null) {
                     continue;
                   }
-                  RowEndCell endCell = as_dlrz2w_a0a2a0a0a0a0d0a0p0a0b0a0a0c0bb(element.getEditorCell(), RowEndCell.class);
+                  RowEndCell endCell = as_dlrz2w_a0a2a0a0a0a0d0a0p0a0c0a0a0c0bb(element.getEditorCell(), RowEndCell.class);
                   if (endCell == null) {
                     continue;
                   }
@@ -430,10 +430,10 @@ import org.jetbrains.mps.openapi.language.SConcept;
     editorCell.setDefaultText("");
     return editorCell;
   }
-  private static <T> T as_dlrz2w_a0a0a0a0a0a0d0a0p0a0b0a0a0c0bb(Object o, Class<T> type) {
+  private static <T> T as_dlrz2w_a0a0a0a0a0a0d0a0p0a0c0a0a0c0bb(Object o, Class<T> type) {
     return (type.isInstance(o) ? (T) o : null);
   }
-  private static <T> T as_dlrz2w_a0a2a0a0a0a0d0a0p0a0b0a0a0c0bb(Object o, Class<T> type) {
+  private static <T> T as_dlrz2w_a0a2a0a0a0a0d0a0p0a0c0a0a0c0bb(Object o, Class<T> type) {
     return (type.isInstance(o) ? (T) o : null);
   }
 

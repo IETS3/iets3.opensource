@@ -16,7 +16,6 @@ import jetbrains.mps.internal.collections.runtime.ListSequence;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
 import org.jetbrains.mps.openapi.language.SAbstractConcept;
 import org.iets3.core.base.behavior.ICanStoreCheckResult__BehaviorDescriptor;
-import de.slisson.mps.hacks.editor.EditorComponentHacks;
 import jetbrains.mps.openapi.intentions.IntentionDescriptor;
 import org.jetbrains.mps.openapi.language.SInterfaceConcept;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
@@ -58,8 +57,6 @@ public final class deleteStoredResult_Intention extends AbstractIntentionDescrip
       for (SNode res : ListSequence.fromList(SNodeOperations.getNodeDescendants(node, CONCEPTS.ICanStoreCheckResult$bY, true, new SAbstractConcept[]{}))) {
         ICanStoreCheckResult__BehaviorDescriptor.deleteLastResult_id5yiuuzNYbce.invoke(res);
       }
-      final SNode cr = SNodeOperations.getContainingRoot(node);
-      ListSequence.fromList(EditorComponentHacks.findAllInstances()).where((it) -> it.getRootCell().getSNode() == cr).visitAll((it) -> it.update());
     }
 
     @Override

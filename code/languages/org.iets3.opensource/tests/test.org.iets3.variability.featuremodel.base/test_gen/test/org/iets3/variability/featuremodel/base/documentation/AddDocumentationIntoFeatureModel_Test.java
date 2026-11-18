@@ -37,7 +37,7 @@ public class AddDocumentationIntoFeatureModel_Test extends BaseTransformationTes
       initEditorComponent("4749011560167535591", "4934742935469437287");
       Assert.assertTrue(isIntentionApplicable("com.mbeddr.core.base.intentions.addDocumentation_Intention", myStart.getNode()));
       invokeIntention("com.mbeddr.core.base.intentions.addDocumentation_Intention", myStart.getNode());
-      typeString("Some documentation");
+      typeString("Some documentation ");
 
     }
   }

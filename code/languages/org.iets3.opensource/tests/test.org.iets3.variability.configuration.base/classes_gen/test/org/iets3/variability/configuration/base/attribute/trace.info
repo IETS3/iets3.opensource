@@ -13,6 +13,73 @@
   <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1070462154015:jetbrains.mps.baseLanguage.structure.StaticFieldDeclaration" />
   <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1081236700938:jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" />
   <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1070475587102:jetbrains.mps.baseLanguage.structure.SuperConstructorInvocation" />
+  <root nodeRef="r:8d327ed1-fff7-46ea-9548-64471536244d(test.org.iets3.variability.configuration.base.attribute@tests)/4830010324297906309">
+    <file name="AttributeDefaultAndExtends_Test.java">
+      <node id="4830010324297906309" at="33,44,34,60" concept="12" />
+      <node id="4830010324298050908" at="38,78,39,69" concept="2" />
+      <node id="4830010324297906309" at="44,52,45,19" concept="12" />
+      <node id="4830010324297906309" at="49,36,50,46" concept="2" />
+      <node id="4830010324298050908" at="53,80,54,22" concept="2" />
+      <node id="4830010324298213820" at="55,30,56,80" concept="8" />
+      <node id="4830010324298099935" at="56,80,57,125" concept="2" />
+      <node id="4830010324298148389" at="57,125,58,324" concept="2" />
+      <node id="4830010324298923274" at="58,324,59,0" concept="9" />
+      <node id="4830010324298262334" at="59,0,60,58" concept="8" />
+      <node id="4830010324298671441" at="60,58,61,114" concept="8" />
+      <node id="4830010324298671447" at="61,114,62,110" concept="8" />
+      <node id="4830010324298671465" at="62,110,63,119" concept="8" />
+      <node id="4830010324298671481" at="63,119,64,117" concept="8" />
+      <node id="4830010324298671501" at="64,117,65,87" concept="8" />
+      <node id="4830010324298311380" at="65,87,66,64" concept="2" />
+      <node id="4830010324301496633" at="66,64,67,0" concept="9" />
+      <node id="4830010324298675801" at="67,0,68,85" concept="8" />
+      <node id="4830010324298675798" at="68,85,69,189" concept="6" />
+      <node id="4830010324298675815" at="69,189,70,34" concept="2" />
+      <node id="4830010324298315164" at="70,34,71,76" concept="2" />
+      <node id="4830010324298688622" at="71,76,72,86" concept="2" />
+      <node id="4830010324298125992" at="76,66,77,75" concept="6" />
+      <node id="4830010324298125992" at="77,75,78,44" concept="2" />
+      <node id="4830010324298125992" at="78,44,79,28" concept="7" />
+      <node id="4830010324297906309" at="84,0,85,0" concept="10" trace="value$kgDc" />
+      <node id="4830010324297906309" at="88,0,89,0" concept="10" trace="assignmentCause$9xP" />
+      <node id="4830010324297906309" at="89,0,90,0" concept="10" trace="inherited$oyCC" />
+      <node id="4830010324297906309" at="90,0,91,0" concept="10" trace="value$iWTK" />
+      <node id="4830010324297906309" at="94,0,95,0" concept="10" trace="FeatureAttributeAssignment$1f" />
+      <node id="4830010324297906309" at="95,0,96,0" concept="10" trace="NumberLiteral$wE" />
+      <node id="4830010324297906309" at="30,0,32,0" concept="10" trace="ourParametersCacheExtension" />
+      <node id="4830010324297906309" at="33,0,36,0" concept="1" trace="AttributeDefaultAndExtends_Test#()V" />
+      <node id="4830010324297906309" at="44,0,47,0" concept="1" trace="TestBody#(Ljetbrains/mps/lang/test/runtime/TransformationTest;)V" />
+      <node id="4830010324298050908" at="37,0,41,0" concept="5" trace="test_checkProposedAssignmentMustNotExtended#()V" />
+      <node id="4830010324297906309" at="48,0,52,0" concept="5" trace="initTestNodes#()V" />
+      <node id="4830010324298125992" at="76,0,81,0" concept="11" trace="createNumberLiteral_u1xpjp_a0b0a0b0f6#()Lorg/jetbrains/mps/openapi/model/SNode;" />
+      <node id="4830010324298050908" at="54,22,73,9" concept="2" />
+      <node id="4830010324298050908" at="53,0,75,0" concept="5" trace="test_checkProposedAssignmentMustNotExtended#()V" />
+      <scope id="4830010324297906309" at="33,44,34,60" />
+      <scope id="4830010324298050908" at="38,78,39,69" />
+      <scope id="4830010324297906309" at="44,52,45,19" />
+      <scope id="4830010324297906309" at="49,36,50,46" />
+      <scope id="4830010324297906309" at="33,0,36,0" />
+      <scope id="4830010324297906309" at="44,0,47,0">
+        <var name="owner" id="4830010324297906309" />
+      </scope>
+      <scope id="4830010324298125992" at="76,66,79,28">
+        <var name="n0" id="4830010324298125992" />
+      </scope>
+      <scope id="4830010324298050908" at="37,0,41,0" />
+      <scope id="4830010324297906309" at="48,0,52,0" />
+      <scope id="4830010324298125992" at="76,0,81,0" />
+      <scope id="4830010324298050908" at="55,30,72,86">
+        <var name="faa" id="4830010324298675799" />
+      </scope>
+      <scope id="4830010324298050908" at="53,80,73,9" />
+      <scope id="4830010324298050908" at="53,0,75,0" />
+      <unit id="4830010324297906309" at="83,0,86,0" name="test.org.iets3.variability.configuration.base.attribute.AttributeDefaultAndExtends_Test$LINKS" />
+      <unit id="4830010324297906309" at="93,0,97,0" name="test.org.iets3.variability.configuration.base.attribute.AttributeDefaultAndExtends_Test$CONCEPTS" />
+      <unit id="4830010324297906309" at="87,0,92,0" name="test.org.iets3.variability.configuration.base.attribute.AttributeDefaultAndExtends_Test$PROPS" />
+      <unit id="4830010324297906309" at="42,0,82,0" name="test.org.iets3.variability.configuration.base.attribute.AttributeDefaultAndExtends_Test$TestBody" />
+      <unit id="4830010324297906309" at="28,0,98,0" name="test.org.iets3.variability.configuration.base.attribute.AttributeDefaultAndExtends_Test" />
+    </file>
+  </root>
   <root nodeRef="r:8d327ed1-fff7-46ea-9548-64471536244d(test.org.iets3.variability.configuration.base.attribute@tests)/581140759181288880">
     <file name="WarningUnassignedAttribute_Test.java">
       <node id="581140759181288880" at="24,44,25,60" concept="12" />
@@ -272,6 +339,59 @@
       <unit id="793381542103321694" at="82,0,85,0" name="test.org.iets3.variability.configuration.base.attribute.SolverRerunKeepsUnchangedAttributeValueNode_Test$PROPS" />
       <unit id="793381542103321694" at="40,0,73,0" name="test.org.iets3.variability.configuration.base.attribute.SolverRerunKeepsUnchangedAttributeValueNode_Test$TestBody" />
       <unit id="793381542103321694" at="26,0,86,0" name="test.org.iets3.variability.configuration.base.attribute.SolverRerunKeepsUnchangedAttributeValueNode_Test" />
+    </file>
+  </root>
+  <root nodeRef="r:8d327ed1-fff7-46ea-9548-64471536244d(test.org.iets3.variability.configuration.base.attribute@tests)/9177155448225419882">
+    <file name="AttributeProposedNoConflict_Test.java">
+      <node id="9177155448225419882" at="35,45,36,60" concept="12" />
+      <node id="9177155448225419883" at="40,73,41,64" concept="2" />
+      <node id="9177155448225419882" at="46,52,47,19" concept="12" />
+      <node id="9177155448225419882" at="51,36,52,46" concept="2" />
+      <node id="9177155448225419883" at="55,75,56,22" concept="2" />
+      <node id="9177155448225769530" at="57,30,58,102" concept="8" />
+      <node id="9177155448225769546" at="58,102,59,44" concept="8" />
+      <node id="9177155448225769557" at="59,44,60,119" concept="2" />
+      <node id="9177155448228505628" at="60,119,61,0" concept="9" />
+      <node id="9177155448225769558" at="61,0,62,111" concept="8" />
+      <node id="9177155448225769578" at="62,111,63,150" concept="2" />
+      <node id="9177155448228511800" at="63,150,64,0" concept="9" />
+      <node id="9177155448225769583" at="64,0,65,103" concept="8" />
+      <node id="9177155448225769600" at="65,103,66,64" concept="2" />
+      <node id="9177155448228518122" at="66,64,67,0" concept="9" />
+      <node id="9177155448225769610" at="67,0,68,189" concept="6" />
+      <node id="9177155448225769611" at="68,189,69,34" concept="2" />
+      <node id="9177155448225769613" at="69,34,70,151" concept="2" />
+      <node id="9177155448225769623" at="70,151,71,86" concept="2" />
+      <node id="9177155448225419882" at="78,0,79,0" concept="10" trace="FeatureAttributeAssignment$1f" />
+      <node id="9177155448225419882" at="82,0,83,0" concept="10" trace="value$kgDc" />
+      <node id="9177155448225419882" at="86,0,87,0" concept="10" trace="inherited$oyCC" />
+      <node id="9177155448225419882" at="32,0,34,0" concept="10" trace="ourParametersCacheExtension" />
+      <node id="9177155448225419882" at="35,0,38,0" concept="1" trace="AttributeProposedNoConflict_Test#()V" />
+      <node id="9177155448225419882" at="46,0,49,0" concept="1" trace="TestBody#(Ljetbrains/mps/lang/test/runtime/TransformationTest;)V" />
+      <node id="9177155448225419883" at="39,0,43,0" concept="5" trace="test_checkProposedValueDoesNotConflict#()V" />
+      <node id="9177155448225419882" at="50,0,54,0" concept="5" trace="initTestNodes#()V" />
+      <node id="9177155448225419883" at="56,22,72,9" concept="2" />
+      <node id="9177155448225419883" at="55,0,74,0" concept="5" trace="test_checkProposedValueDoesNotConflict#()V" />
+      <scope id="9177155448225419882" at="35,45,36,60" />
+      <scope id="9177155448225419883" at="40,73,41,64" />
+      <scope id="9177155448225419882" at="46,52,47,19" />
+      <scope id="9177155448225419882" at="51,36,52,46" />
+      <scope id="9177155448225419882" at="35,0,38,0" />
+      <scope id="9177155448225419882" at="46,0,49,0">
+        <var name="owner" id="9177155448225419882" />
+      </scope>
+      <scope id="9177155448225419883" at="39,0,43,0" />
+      <scope id="9177155448225419882" at="50,0,54,0" />
+      <scope id="9177155448225419883" at="57,30,71,86">
+        <var name="faa" id="9177155448225769601" />
+      </scope>
+      <scope id="9177155448225419883" at="55,75,72,9" />
+      <scope id="9177155448225419883" at="55,0,74,0" />
+      <unit id="9177155448225419882" at="77,0,80,0" name="test.org.iets3.variability.configuration.base.attribute.AttributeProposedNoConflict_Test$CONCEPTS" />
+      <unit id="9177155448225419882" at="81,0,84,0" name="test.org.iets3.variability.configuration.base.attribute.AttributeProposedNoConflict_Test$LINKS" />
+      <unit id="9177155448225419882" at="85,0,88,0" name="test.org.iets3.variability.configuration.base.attribute.AttributeProposedNoConflict_Test$PROPS" />
+      <unit id="9177155448225419882" at="44,0,76,0" name="test.org.iets3.variability.configuration.base.attribute.AttributeProposedNoConflict_Test$TestBody" />
+      <unit id="9177155448225419882" at="30,0,89,0" name="test.org.iets3.variability.configuration.base.attribute.AttributeProposedNoConflict_Test" />
     </file>
   </root>
 </debug-info>

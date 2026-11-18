@@ -18,12 +18,11 @@ import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
 import jetbrains.mps.openapi.editor.EditorContext;
 import jetbrains.mps.ide.editor.MPSEditorDataKeys;
 import jetbrains.mps.project.MPSProject;
-import org.iets3.core.base.behavior.RunManuallyUtil;
 import org.jetbrains.mps.openapi.language.SInterfaceConcept;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 
 public class runManuallyOnContainer_Action extends BaseAction {
-  private static final Icon ICON = IconContainer.ICON_a0_2;
+  private static final Icon ICON = IconContainer.ICON3;
 
   public runManuallyOnContainer_Action() {
     super("Run/Evaluate/Check Children Manually", "", ICON);
@@ -80,17 +79,7 @@ public class runManuallyOnContainer_Action extends BaseAction {
   @Override
   public void doExecute(@NotNull final AnActionEvent event, final Map<String, Object> _params) {
     final Iterable<SNode> manuallyRunNodes = IContainsStuffToRunManually__BehaviorDescriptor.manuallyRunNodes_idTuTPrvRoDG.invoke(((SNode) MapSequence.fromMap(_params).get("selected")));
-    final EditorContext context = ((EditorContext) MapSequence.fromMap(_params).get("ctx"));
-    CommandWithMessage.execute("running for " + Sequence.fromIterable(manuallyRunNodes).count() + " nodes", ((MPSProject) MapSequence.fromMap(_params).get("mpsProject")).getRepository(), new Runnable() {
-      public void run() {
-        for (SNode mrn : Sequence.fromIterable(manuallyRunNodes)) {
-          ICanRunCheckManually__BehaviorDescriptor.runManually_id3R3AIvumrTm.invoke(mrn, context);
-        }
-        RunManuallyUtil.updateEditors(context, manuallyRunNodes);
-      }
-    });
-
-
+    RunManuallyWithProgress.run("running for " + Sequence.fromIterable(manuallyRunNodes).count() + " nodes", ((MPSProject) MapSequence.fromMap(_params).get("mpsProject")), ((EditorContext) MapSequence.fromMap(_params).get("ctx")), manuallyRunNodes, manuallyRunNodes);
   }
 
   private static final class CONCEPTS {

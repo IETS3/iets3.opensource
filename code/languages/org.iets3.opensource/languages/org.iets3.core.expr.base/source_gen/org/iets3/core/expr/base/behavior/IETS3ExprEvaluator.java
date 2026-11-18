@@ -49,7 +49,8 @@ public class IETS3ExprEvaluator {
   }
 
   public ComputationTrace getLastLog() {
-    return this.helper.getLastLog();
+    // Null before the helper is created, i.e. when evaluate() failed before it started evaluating.
+    return ((this.helper == null ? null : this.helper.getLastLog()));
   }
 
   public Object evaluateAndThrowConstraintFailures(SNode expr) {

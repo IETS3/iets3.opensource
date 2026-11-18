@@ -71,20 +71,19 @@ public final class LanguageConceptSwitch {
   public static final int ProjectIt = 59;
   public static final int ProjectMember = 60;
   public static final int ProjectOp = 61;
-  public static final int QualifierRef = 62;
-  public static final int RecordChangeTarget = 63;
-  public static final int RecordComparisonOrder = 64;
-  public static final int RecordDeclaration = 65;
-  public static final int RecordLiteral = 66;
-  public static final int RecordMember = 67;
-  public static final int RecordMemberRefInConstraint = 68;
-  public static final int RecordType = 69;
-  public static final int RecordTypeAdapter = 70;
-  public static final int ReferenceableFlag = 71;
-  public static final int SectionMarker = 72;
-  public static final int Typedef = 73;
-  public static final int TypedefContractValExpr = 74;
-  public static final int TypedefType = 75;
+  public static final int RecordChangeTarget = 62;
+  public static final int RecordComparisonOrder = 63;
+  public static final int RecordDeclaration = 64;
+  public static final int RecordLiteral = 65;
+  public static final int RecordMember = 66;
+  public static final int RecordMemberRefInConstraint = 67;
+  public static final int RecordType = 68;
+  public static final int RecordTypeAdapter = 69;
+  public static final int ReferenceableFlag = 70;
+  public static final int SectionMarker = 71;
+  public static final int Typedef = 72;
+  public static final int TypedefContractValExpr = 73;
+  public static final int TypedefType = 74;
 
   public LanguageConceptSwitch() {
     LanguageConceptIndexBuilder builder = new LanguageConceptIndexBuilder(0x71934284d7d145eeL, 0xa0548c072591085fL);
@@ -150,7 +149,6 @@ public final class LanguageConceptSwitch {
     builder.put(0x73194702f1408997L, ProjectIt);
     builder.put(0x73194702f12a0d28L, ProjectMember);
     builder.put(0x73194702f12a0d24L, ProjectOp);
-    builder.put(0x48dc5b40f074fef7L, QualifierRef);
     builder.put(0x1156bc3bceb768dbL, RecordChangeTarget);
     builder.put(0x373cc1802a0589c0L, RecordComparisonOrder);
     builder.put(0x7a477bfec237e8b6L, RecordDeclaration);
