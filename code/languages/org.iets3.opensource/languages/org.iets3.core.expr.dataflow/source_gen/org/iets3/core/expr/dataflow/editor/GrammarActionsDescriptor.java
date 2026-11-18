@@ -17,6 +17,7 @@ import jetbrains.mps.lang.smodel.generator.smodelAdapter.SConceptOperations;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
 import com.mbeddr.mpsutil.grammarcells.runtime.GrammarCellsUtil;
 import org.jetbrains.mps.openapi.language.SConcept;
+import org.iets3.core.expr.base.plugin.EditorCustomizationConfigHelper;
 import com.mbeddr.mpsutil.grammarcells.runtime.menu.GrammarCellsSubstituteMenuItem;
 import org.jetbrains.mps.openapi.language.SProperty;
 import org.jetbrains.annotations.NotNull;
@@ -73,6 +74,11 @@ public class GrammarActionsDescriptor extends AbstractGrammarActionDescriptor im
 
                 if (SConceptOperations.isSubConceptOf(SNodeOperations.asSConcept(outputConcept), SNodeOperations.asSConcept(expectedOutputConcept))) {
                   boolean isApplicable = GrammarCellsUtil.canBeChild(subconcept, _context);
+                  isApplicable &= new Object() {
+                    public boolean query(SAbstractConcept expectedConcept) {
+                      return EditorCustomizationConfigHelper.getConfig().isWrapperCellSubstitutionActivated(EditorCustomizationConfigHelper.getIdentifier(CONCEPTS.InPort$Ah, PROPS.name$MnvL), expectedConcept, null, null);
+                    }
+                  }.query(expectedOutputConcept);
                   if (isApplicable) {
                     ListSequence.fromList(result).addElement(new GrammarCellsSubstituteMenuItem(_context) {
                       private SProperty myProperty = PROPS.name$MnvL;
@@ -86,7 +92,8 @@ public class GrammarActionsDescriptor extends AbstractGrammarActionDescriptor im
                         SNode wrappedNode = null;
                         SAbstractConcept wrappedConcept = getOutputConcept();
                         EditorContext editorContext = _context.getEditorContext();
-                        return "the name of the incoming port";
+                        String descriptiontext = EditorCustomizationConfigHelper.getConfig().getWrapperCellSubstitutionDescriptionText(EditorCustomizationConfigHelper.getIdentifier(CONCEPTS.InPort$Ah, PROPS.name$MnvL), wrappedNode, wrappedConcept, subconcept, originalText, editorContext);
+                        return ((descriptiontext != null && descriptiontext.length() > 0) ? descriptiontext : "the name of the incoming port");
                       }
                       @Override
                       public boolean canExecute(@NotNull String pattern) {
@@ -105,6 +112,11 @@ public class GrammarActionsDescriptor extends AbstractGrammarActionDescriptor im
                         SNode newNode = SNodeFactoryOperations.createNewNode(expectedOutputConceptExactly, null);
                         SPropertyOperations.assign(newNode, PROPS.name$MnvL, GrammarCellsUtil.toInternalPropertyValue(myProperty, pattern));
 
+                        new Object() {
+                          public void postProcess(SNode node, EditorContext editorContext, SNode parentNode) {
+                            EditorCustomizationConfigHelper.getConfig().wrapperCellSubstitutionPostProcess(EditorCustomizationConfigHelper.getIdentifier(CONCEPTS.InPort$Ah, PROPS.name$MnvL), node, editorContext);
+                          }
+                        }.postProcess(newNode, _context.getEditorContext(), _context.getParentNode());
                         return newNode;
                       }
 
@@ -144,6 +156,11 @@ public class GrammarActionsDescriptor extends AbstractGrammarActionDescriptor im
 
                 if (SConceptOperations.isSubConceptOf(SNodeOperations.asSConcept(outputConcept), SNodeOperations.asSConcept(expectedOutputConcept))) {
                   boolean isApplicable = GrammarCellsUtil.canBeChild(subconcept, _context);
+                  isApplicable &= new Object() {
+                    public boolean query(SAbstractConcept expectedConcept) {
+                      return EditorCustomizationConfigHelper.getConfig().isWrapperCellSubstitutionActivated(EditorCustomizationConfigHelper.getIdentifier(CONCEPTS.OutPort$FI, PROPS.name$MnvL), expectedConcept, null, null);
+                    }
+                  }.query(expectedOutputConcept);
                   if (isApplicable) {
                     ListSequence.fromList(result).addElement(new GrammarCellsSubstituteMenuItem(_context) {
                       private SProperty myProperty = PROPS.name$MnvL;
@@ -157,7 +174,8 @@ public class GrammarActionsDescriptor extends AbstractGrammarActionDescriptor im
                         SNode wrappedNode = null;
                         SAbstractConcept wrappedConcept = getOutputConcept();
                         EditorContext editorContext = _context.getEditorContext();
-                        return "the name of the outgoing port";
+                        String descriptiontext = EditorCustomizationConfigHelper.getConfig().getWrapperCellSubstitutionDescriptionText(EditorCustomizationConfigHelper.getIdentifier(CONCEPTS.OutPort$FI, PROPS.name$MnvL), wrappedNode, wrappedConcept, subconcept, originalText, editorContext);
+                        return ((descriptiontext != null && descriptiontext.length() > 0) ? descriptiontext : "the name of the outgoing port");
                       }
                       @Override
                       public boolean canExecute(@NotNull String pattern) {
@@ -176,6 +194,11 @@ public class GrammarActionsDescriptor extends AbstractGrammarActionDescriptor im
                         SNode newNode = SNodeFactoryOperations.createNewNode(expectedOutputConceptExactly, null);
                         SPropertyOperations.assign(newNode, PROPS.name$MnvL, GrammarCellsUtil.toInternalPropertyValue(myProperty, pattern));
 
+                        new Object() {
+                          public void postProcess(SNode node, EditorContext editorContext, SNode parentNode) {
+                            EditorCustomizationConfigHelper.getConfig().wrapperCellSubstitutionPostProcess(EditorCustomizationConfigHelper.getIdentifier(CONCEPTS.OutPort$FI, PROPS.name$MnvL), node, editorContext);
+                          }
+                        }.postProcess(newNode, _context.getEditorContext(), _context.getParentNode());
                         return newNode;
                       }
 
@@ -215,6 +238,11 @@ public class GrammarActionsDescriptor extends AbstractGrammarActionDescriptor im
 
                 if (SConceptOperations.isSubConceptOf(SNodeOperations.asSConcept(outputConcept), SNodeOperations.asSConcept(expectedOutputConcept))) {
                   boolean isApplicable = GrammarCellsUtil.canBeChild(subconcept, _context);
+                  isApplicable &= new Object() {
+                    public boolean query(SAbstractConcept expectedConcept) {
+                      return EditorCustomizationConfigHelper.getConfig().isWrapperCellSubstitutionActivated(EditorCustomizationConfigHelper.getIdentifier(CONCEPTS.BlockParameter$jO, PROPS.name$MnvL), expectedConcept, null, null);
+                    }
+                  }.query(expectedOutputConcept);
                   if (isApplicable) {
                     ListSequence.fromList(result).addElement(new GrammarCellsSubstituteMenuItem(_context) {
                       private SProperty myProperty = PROPS.name$MnvL;
@@ -228,7 +256,8 @@ public class GrammarActionsDescriptor extends AbstractGrammarActionDescriptor im
                         SNode wrappedNode = null;
                         SAbstractConcept wrappedConcept = getOutputConcept();
                         EditorContext editorContext = _context.getEditorContext();
-                        return "the name of the block parameter";
+                        String descriptiontext = EditorCustomizationConfigHelper.getConfig().getWrapperCellSubstitutionDescriptionText(EditorCustomizationConfigHelper.getIdentifier(CONCEPTS.BlockParameter$jO, PROPS.name$MnvL), wrappedNode, wrappedConcept, subconcept, originalText, editorContext);
+                        return ((descriptiontext != null && descriptiontext.length() > 0) ? descriptiontext : "the name of the block parameter");
                       }
                       @Override
                       public boolean canExecute(@NotNull String pattern) {
@@ -247,6 +276,11 @@ public class GrammarActionsDescriptor extends AbstractGrammarActionDescriptor im
                         SNode newNode = SNodeFactoryOperations.createNewNode(expectedOutputConceptExactly, null);
                         SPropertyOperations.assign(newNode, PROPS.name$MnvL, GrammarCellsUtil.toInternalPropertyValue(myProperty, pattern));
 
+                        new Object() {
+                          public void postProcess(SNode node, EditorContext editorContext, SNode parentNode) {
+                            EditorCustomizationConfigHelper.getConfig().wrapperCellSubstitutionPostProcess(EditorCustomizationConfigHelper.getIdentifier(CONCEPTS.BlockParameter$jO, PROPS.name$MnvL), node, editorContext);
+                          }
+                        }.postProcess(newNode, _context.getEditorContext(), _context.getParentNode());
                         return newNode;
                       }
 
@@ -445,6 +479,11 @@ public class GrammarActionsDescriptor extends AbstractGrammarActionDescriptor im
                     SProperty property = PROPS.symbol$mCLh;
                     _context.getNode().setProperty(property, "");
                     SelectionUtil.selectCell(editorContext, _context.getNode(), "*" + CellIdManager.createPropertyId(property.getName()));
+                    new Object() {
+                      public void postprocess(SNode node) {
+                        EditorCustomizationConfigHelper.getConfig().postProcessOptionalCell(EditorCustomizationConfigHelper.getIdentifier(CONCEPTS.ExprBlock$YR, PROPS.symbol$mCLh), node, editorContext);
+                      }
+                    }.postprocess(_context.getNode());
                     return _context.getNode();
                   }
                   @Override
@@ -452,7 +491,8 @@ public class GrammarActionsDescriptor extends AbstractGrammarActionDescriptor im
                     String originalText = super.getShortDescriptionText(pattern);
                     SNode node = _context.getNode();
                     EditorContext editorContext = _context.getEditorContext();
-                    return "a symbol for the expression block";
+                    String description = EditorCustomizationConfigHelper.getConfig().getOptionalCellDescriptionText(EditorCustomizationConfigHelper.getIdentifier(CONCEPTS.ExprBlock$YR, PROPS.symbol$mCLh), node, originalText, editorContext);
+                    return ((description != null && description.length() > 0) ? description : "add a symbol for the expression block");
                   }
 
                   @Override
@@ -660,6 +700,11 @@ public class GrammarActionsDescriptor extends AbstractGrammarActionDescriptor im
                     SProperty property = PROPS.symbol$mCLh;
                     _context.getNode().setProperty(property, "");
                     SelectionUtil.selectCell(editorContext, _context.getNode(), "*" + CellIdManager.createPropertyId(property.getName()));
+                    new Object() {
+                      public void postprocess(SNode node) {
+                        EditorCustomizationConfigHelper.getConfig().postProcessOptionalCell(EditorCustomizationConfigHelper.getIdentifier(CONCEPTS.CompositeBlock$TJ, PROPS.symbol$mCLh), node, editorContext);
+                      }
+                    }.postprocess(_context.getNode());
                     return _context.getNode();
                   }
                   @Override
@@ -667,7 +712,8 @@ public class GrammarActionsDescriptor extends AbstractGrammarActionDescriptor im
                     String originalText = super.getShortDescriptionText(pattern);
                     SNode node = _context.getNode();
                     EditorContext editorContext = _context.getEditorContext();
-                    return "a symbol for the composite block";
+                    String description = EditorCustomizationConfigHelper.getConfig().getOptionalCellDescriptionText(EditorCustomizationConfigHelper.getIdentifier(CONCEPTS.CompositeBlock$TJ, PROPS.symbol$mCLh), node, originalText, editorContext);
+                    return ((description != null && description.length() > 0) ? description : "add a symbol for the composite block");
                   }
 
                   @Override
@@ -788,17 +834,17 @@ public class GrammarActionsDescriptor extends AbstractGrammarActionDescriptor im
     return rules;
   }
 
-  private static final class PROPS {
-    /*package*/ static final SProperty name$MnvL = MetaAdapterFactory.getProperty(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L, 0x110396ec041L, "name");
-    /*package*/ static final SProperty symbol$mCLh = MetaAdapterFactory.getProperty(0xcee4aa62aca94f26L, 0x960275129cd457c9L, 0x4f91a4533f716a5aL, 0x395649586dc2afb9L, "symbol");
-  }
-
   private static final class CONCEPTS {
     /*package*/ static final SConcept InPort$Ah = MetaAdapterFactory.getConcept(0xcee4aa62aca94f26L, 0x960275129cd457c9L, 0x4f91a4533f7169a0L, "org.iets3.core.expr.dataflow.structure.InPort");
     /*package*/ static final SConcept OutPort$FI = MetaAdapterFactory.getConcept(0xcee4aa62aca94f26L, 0x960275129cd457c9L, 0x4f91a4533f716b2fL, "org.iets3.core.expr.dataflow.structure.OutPort");
     /*package*/ static final SConcept BlockParameter$jO = MetaAdapterFactory.getConcept(0xcee4aa62aca94f26L, 0x960275129cd457c9L, 0x5d89ae332e211059L, "org.iets3.core.expr.dataflow.structure.BlockParameter");
     /*package*/ static final SConcept ExprBlock$YR = MetaAdapterFactory.getConcept(0xcee4aa62aca94f26L, 0x960275129cd457c9L, 0x4f91a4533f716984L, "org.iets3.core.expr.dataflow.structure.ExprBlock");
     /*package*/ static final SConcept CompositeBlock$TJ = MetaAdapterFactory.getConcept(0xcee4aa62aca94f26L, 0x960275129cd457c9L, 0x4f91a4533f716a5dL, "org.iets3.core.expr.dataflow.structure.CompositeBlock");
+  }
+
+  private static final class PROPS {
+    /*package*/ static final SProperty name$MnvL = MetaAdapterFactory.getProperty(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L, 0x110396ec041L, "name");
+    /*package*/ static final SProperty symbol$mCLh = MetaAdapterFactory.getProperty(0xcee4aa62aca94f26L, 0x960275129cd457c9L, 0x4f91a4533f716a5aL, 0x395649586dc2afb9L, "symbol");
   }
 
   private static final class LINKS {

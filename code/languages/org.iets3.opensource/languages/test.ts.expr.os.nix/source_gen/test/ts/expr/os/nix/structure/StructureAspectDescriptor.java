@@ -14,6 +14,7 @@ import jetbrains.mps.smodel.runtime.impl.ConceptDescriptorBuilder2;
 public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
   /*package*/ final ConceptDescriptor myConceptNixLiteral = createDescriptorForNixLiteral();
   /*package*/ final ConceptDescriptor myConceptNixType = createDescriptorForNixType();
+  /*package*/ final ConceptDescriptor myConceptRecordingManualCheck = createDescriptorForRecordingManualCheck();
   private final LanguageConceptSwitch myIndexSwitch;
 
   public StructureAspectDescriptor() {
@@ -24,11 +25,13 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
   @Override
   public void reportDependencies(jetbrains.mps.smodel.runtime.StructureAspectDescriptor.Dependencies deps) {
     deps.extendedLanguage(0xcfaa4966b7d54b69L, 0xb66a309a6e1a7290L, "org.iets3.core.expr.base");
+    deps.extendedLanguage(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, "jetbrains.mps.lang.core");
+    deps.extendedLanguage(0x7b68d745a7b848b9L, 0xbd9c05c0f8725a35L, "org.iets3.core.base");
   }
 
   @Override
   public Collection<ConceptDescriptor> getDescriptors() {
-    return Arrays.asList(myConceptNixLiteral, myConceptNixType);
+    return Arrays.asList(myConceptNixLiteral, myConceptNixType, myConceptRecordingManualCheck);
   }
 
   @Override
@@ -39,6 +42,8 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
         return myConceptNixLiteral;
       case LanguageConceptSwitch.NixType:
         return myConceptNixType;
+      case LanguageConceptSwitch.RecordingManualCheck:
+        return myConceptRecordingManualCheck;
       default:
         return null;
     }
@@ -68,6 +73,15 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.origin("r:76654092-7126-4d48-8113-566c63e58f87(test.ts.expr.os.nix.structure)/8823320991986431923");
     b.version(3);
     b.alias("nix");
+    return b.create();
+  }
+  private static ConceptDescriptor createDescriptorForRecordingManualCheck() {
+    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("test.ts.expr.os.nix", "RecordingManualCheck", 0xb80fab4e53f2409cL, 0x81d83475855e0e42L, 0x257bf7f218fe313L);
+    b.class_(false, false, false);
+    b.parent(0x7b68d745a7b848b9L, 0xbd9c05c0f8725a35L, 0x3dc39ae7de59be3aL);
+    b.parent(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L);
+    b.origin("r:76654092-7126-4d48-8113-566c63e58f87(test.ts.expr.os.nix.structure)/1559345515802742701");
+    b.version(3);
     return b.create();
   }
 }

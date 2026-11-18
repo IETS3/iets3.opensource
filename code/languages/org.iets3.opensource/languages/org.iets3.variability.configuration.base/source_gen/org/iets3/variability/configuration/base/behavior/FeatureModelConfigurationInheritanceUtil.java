@@ -61,9 +61,14 @@ public class FeatureModelConfigurationInheritanceUtil {
   }
 
   private static boolean attributesOkToApplyInheritance(SNode afc, SNode efc) {
-    for (Pair<SNode, SNode> paired : ListSequence.fromList(pairBySameFeatureAttribute(AbstractFeatureConfiguration__BehaviorDescriptor.attributeAssignments_id30ECcbtQkN2.invoke(afc), AbstractFeatureConfiguration__BehaviorDescriptor.attributeAssignments_id30ECcbtQkN2.invoke(efc)))) {
+    for (Pair<SNode, SNode> paired : ListSequence.fromList(pairBySameFeatureAttribute(AbstractFeatureConfiguration__BehaviorDescriptor.attributeAssignments_id30ECcbtQkN2.invoke(afc), AbstractFeatureConfiguration__BehaviorDescriptor.attributeAssignments_id30ECcbtQkN2.invoke(efc))).where((it) -> {
+      SNode efcAAs = it.getRight();
+      // a proposed value of the extended config is not inherited and thus cannot conflict
+      return !((boolean) FeatureAttributeAssignment__BehaviorDescriptor.proposed_idiJPTCYkgto.invoke(efcAAs));
+    })) {
       SNode afcAAs = paired.getLeft();
       SNode efcAAs = paired.getRight();
+
       if ((SLinkOperations.getTarget(afcAAs, LINKS.value$kgDc) != null) && (FeatureAttributeAssignment__BehaviorDescriptor.getValue_id5Bs7u20FcLE.invoke(efcAAs) != null) && !(BaseConcept__BehaviorDescriptor.getPresentation_idhEwIMiw.invoke(FeatureAttributeAssignment__BehaviorDescriptor.getValue_id5Bs7u20FcLE.invoke(afcAAs)).equals(BaseConcept__BehaviorDescriptor.getPresentation_idhEwIMiw.invoke(FeatureAttributeAssignment__BehaviorDescriptor.getValue_id5Bs7u20FcLE.invoke(efcAAs))))) {
         return false;
       }
@@ -308,8 +313,9 @@ public class FeatureModelConfigurationInheritanceUtil {
       SNode extendedAssignment = paired.getRight();
       SNode inheritingAssignment = paired.getLeft();
 
+      // a proposed value (e.g. the default value assigned by the solver) is only a suggestion and must not be inherited
       SNode baseValue = SLinkOperations.getTarget(extendedAssignment, LINKS.value$kgDc);
-      if ((baseValue != null)) {
+      if ((baseValue != null) && !((boolean) FeatureAttributeAssignment__BehaviorDescriptor.proposed_idiJPTCYkgto.invoke(extendedAssignment))) {
         if (!(Objects.equals(SLinkOperations.getTarget(inheritingAssignment, LINKS.value$kgDc), baseValue))) {
           SLinkOperations.setTarget(inheritingAssignment, LINKS.value$kgDc, SNodeOperations.copyNode(baseValue));
           SPropertyOperations.assign(inheritingAssignment, PROPS.inherited$oyCC, true);

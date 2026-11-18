@@ -26,22 +26,13 @@ public class Messages {
     public static Message m4(String _nodeReference, String _nodeUrl, String x) {
       return new Message(BuiltinMessageKinds.none(), ((_FunctionTypes._return_P0_E0<String>) () -> {
         StringBuilder sb = new StringBuilder();
-        boolean delayedSpace = false;
 
         {
-          if (delayedSpace) {
-            sb.append(' ');
-            delayedSpace = false;
-          }
-          sb.append("m4");
+          sb.append("m4 ");
         }
         {
           final String content = String.valueOf(x);
-          if (sb.length() > 0 || (!(content.isEmpty()) && delayedSpace)) {
-            sb.append(' ');
-          }
           sb.append(content);
-          delayedSpace = true;
         }
         return sb.toString();
       }).invoke(), _nodeReference, _nodeUrl);
@@ -54,22 +45,13 @@ public class Messages {
     public static Message m4(String _nodeReference, String _nodeUrl, Number x) {
       return new Message(BuiltinMessageKinds.none(), ((_FunctionTypes._return_P0_E0<String>) () -> {
         StringBuilder sb = new StringBuilder();
-        boolean delayedSpace = false;
 
         {
-          if (delayedSpace) {
-            sb.append(' ');
-            delayedSpace = false;
-          }
-          sb.append("m4");
+          sb.append("m4 ");
         }
         {
           final String content = String.valueOf(x);
-          if (sb.length() > 0 || (!(content.isEmpty()) && delayedSpace)) {
-            sb.append(' ');
-          }
           sb.append(content);
-          delayedSpace = true;
         }
         return sb.toString();
       }).invoke(), _nodeReference, _nodeUrl);
@@ -81,37 +63,20 @@ public class Messages {
       public static Message m6(String _nodeReference, String _nodeUrl, Number n, Boolean b) {
         return new Message(BuiltinMessageKinds.none(), ((_FunctionTypes._return_P0_E0<String>) () -> {
           StringBuilder sb = new StringBuilder();
-          boolean delayedSpace = false;
 
           {
-            if (delayedSpace) {
-              sb.append(' ');
-              delayedSpace = false;
-            }
-            sb.append("m6");
+            sb.append("m6 ");
           }
           {
             final String content = String.valueOf(n);
-            if (sb.length() > 0 || (!(content.isEmpty()) && delayedSpace)) {
-              sb.append(' ');
-            }
             sb.append(content);
-            delayedSpace = true;
           }
           {
-            if (delayedSpace) {
-              sb.append(' ');
-              delayedSpace = false;
-            }
-            sb.append("m6");
+            sb.append(" m6 ");
           }
           {
             final String content = String.valueOf(b);
-            if (sb.length() > 0 || (!(content.isEmpty()) && delayedSpace)) {
-              sb.append(' ');
-            }
             sb.append(content);
-            delayedSpace = true;
           }
           return sb.toString();
         }).invoke(), _nodeReference, _nodeUrl);
@@ -129,22 +94,13 @@ public class Messages {
   public static Message mPoint(String _nodeReference, String _nodeUrl, Data.Point p) {
     return new Message(BuiltinMessageKinds.none(), ((_FunctionTypes._return_P0_E0<String>) () -> {
       StringBuilder sb = new StringBuilder();
-      boolean delayedSpace = false;
 
       {
-        if (delayedSpace) {
-          sb.append(' ');
-          delayedSpace = false;
-        }
-        sb.append("This is the");
+        sb.append("This is the ");
       }
       {
         final String content = String.valueOf(coerce_w88nue_a(p));
-        if (sb.length() > 0 || (!(content.isEmpty()) && delayedSpace)) {
-          sb.append(' ');
-        }
         sb.append(content);
-        delayedSpace = true;
       }
       return sb.toString();
     }).invoke(), _nodeReference, _nodeUrl);
@@ -152,22 +108,13 @@ public class Messages {
   public static Message mMoney(String _nodeReference, String _nodeUrl, Number m) {
     return new Message(BuiltinMessageKinds.none(), ((_FunctionTypes._return_P0_E0<String>) () -> {
       StringBuilder sb = new StringBuilder();
-      boolean delayedSpace = false;
 
       {
-        if (delayedSpace) {
-          sb.append(' ');
-          delayedSpace = false;
-        }
-        sb.append("This is a lot of");
+        sb.append("This is a lot of ");
       }
       {
         final String content = String.valueOf(coerce_w88nue_b(m));
-        if (sb.length() > 0 || (!(content.isEmpty()) && delayedSpace)) {
-          sb.append(' ');
-        }
         sb.append(content);
-        delayedSpace = true;
       }
       return sb.toString();
     }).invoke(), _nodeReference, _nodeUrl);

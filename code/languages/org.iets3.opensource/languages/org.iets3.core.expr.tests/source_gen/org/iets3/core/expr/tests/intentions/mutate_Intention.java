@@ -12,7 +12,7 @@ import org.jetbrains.mps.openapi.model.SNode;
 import jetbrains.mps.openapi.editor.EditorContext;
 import java.util.Collections;
 import jetbrains.mps.intentions.AbstractIntentionExecutable;
-import org.iets3.core.expr.base.intentions.CommandWithMessage;
+import org.iets3.core.plugin.plugin.CommandWithMessage;
 import org.iets3.core.expr.tests.behavior.MutationEngine__BehaviorDescriptor;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
 import jetbrains.mps.openapi.intentions.IntentionDescriptor;

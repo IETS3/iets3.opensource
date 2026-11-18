@@ -15,6 +15,7 @@ import jetbrains.mps.editor.runtime.style.StyleAttributes;
 import java.awt.Color;
 import com.intellij.ui.JBColor;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
+import jetbrains.mps.baseLanguage.closures.runtime._FunctionTypes;
 import org.jetbrains.mps.openapi.language.SProperty;
 import jetbrains.mps.openapi.editor.menus.transformation.SPropertyInfo;
 import jetbrains.mps.nodeEditor.cells.EditorCell_Property;
@@ -66,7 +67,7 @@ import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
     style.set(StyleAttributes.getInstance().<Color>getAttribute("de.slisson.mps.tables", "border-left-color"), _StyleParameter_QueryFunction_gsoddh_a0a());
     style.set(StyleAttributes.getInstance().<Integer>getAttribute("de.slisson.mps.tables", "border-left-width"), _StyleParameter_QueryFunction_gsoddh_a1a());
     editorCell.getStyle().putAll(style);
-    editorCell.addEditorCell(createProperty_0());
+    editorCell.addEditorCell(createCustomFactory_1());
     editorCell.addEditorCell(createConstant_0());
     editorCell.addEditorCell(createRefNode_0());
     return editorCell;
@@ -80,6 +81,26 @@ import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
       return 2;
     }
     return 0;
+  }
+  private EditorCell createCustomFactory_0(final EditorContext editorContext, final SNode node) {
+
+
+    final EditorCell cell = createCustomFactory_3();
+    EditorCell editorCell = ((_FunctionTypes._return_P0_E0<EditorCell>) () -> cell).invoke();
+    return editorCell;
+  }
+  private EditorCell createCustomFactory_1() {
+    return createCustomFactory_0(getEditorContext(), myNode);
+  }
+  private EditorCell createCustomFactory_2(final EditorContext editorContext, final SNode node) {
+
+
+    final EditorCell cell = createProperty_0();
+    EditorCell editorCell = ((_FunctionTypes._return_P0_E0<EditorCell>) () -> cell).invoke();
+    return editorCell;
+  }
+  private EditorCell createCustomFactory_3() {
+    return createCustomFactory_2(getEditorContext(), myNode);
   }
   private EditorCell createProperty_0() {
     getCellFactory().pushCellContext();

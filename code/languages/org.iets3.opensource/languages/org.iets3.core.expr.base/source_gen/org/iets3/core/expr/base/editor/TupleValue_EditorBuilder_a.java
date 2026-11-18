@@ -29,7 +29,6 @@ import jetbrains.mps.nodeEditor.cellMenu.CellContext;
 import jetbrains.mps.lang.editor.menus.EditorMenuDescriptorBase;
 import jetbrains.mps.smodel.SNodePointer;
 import jetbrains.mps.nodeEditor.cellProviders.AbstractCellListHandler;
-import jetbrains.mps.nodeEditor.cellLayout.CellLayout_Horizontal;
 import jetbrains.mps.lang.editor.cellProviders.RefNodeListHandler;
 import org.jetbrains.mps.openapi.language.SContainmentLink;
 import jetbrains.mps.openapi.editor.menus.transformation.SNodeLocation;
@@ -100,7 +99,7 @@ import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
   }
   private EditorCell createRefNodeList_0() {
     AbstractCellListHandler handler = new valuesListHandler_6dkxkh_b0(myNode, getEditorContext());
-    EditorCell_Collection editorCell = handler.createCells(new CellLayout_Horizontal(), false);
+    EditorCell_Collection editorCell = handler.createCells(new CellLayout_Indent(), false);
     editorCell.setCellId("refNodeList_values");
     editorCell.setSRole(handler.getElementSRole());
     return editorCell;

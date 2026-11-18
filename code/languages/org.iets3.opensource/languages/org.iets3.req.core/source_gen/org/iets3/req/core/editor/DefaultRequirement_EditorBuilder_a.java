@@ -17,6 +17,7 @@ import jetbrains.mps.nodeEditor.cellLayout.CellLayout_Indent;
 import de.itemis.mps.editor.celllayout.runtime.cells.HorizontalLineCell;
 import java.awt.Color;
 import jetbrains.mps.nodeEditor.MPSColors;
+import jetbrains.mps.baseLanguage.closures.runtime._FunctionTypes;
 import org.jetbrains.mps.openapi.language.SProperty;
 import jetbrains.mps.openapi.editor.menus.transformation.SPropertyInfo;
 import jetbrains.mps.nodeEditor.cells.EditorCell_Property;
@@ -49,7 +50,6 @@ import jetbrains.mps.nodeEditor.cellMenu.SEmptyContainmentSubstituteInfo;
 import jetbrains.mps.nodeEditor.cellMenu.SChildSubstituteInfo;
 import jetbrains.mps.openapi.editor.menus.transformation.SNodeLocation;
 import jetbrains.mps.nodeEditor.AbstractCellProvider;
-import jetbrains.mps.baseLanguage.closures.runtime._FunctionTypes;
 import com.mbeddr.core.base.editor.ColoredVerticalBarCell;
 import com.intellij.ui.JBColor;
 import jetbrains.mps.nodeEditor.cellProviders.AbstractCellListHandler;
@@ -135,8 +135,28 @@ import org.jetbrains.mps.openapi.language.SConcept;
     Style style = new StyleImpl();
     style.set(StyleAttributes.SELECTABLE, false);
     editorCell.getStyle().putAll(style);
-    editorCell.addEditorCell(createProperty_0());
+    editorCell.addEditorCell(createCustomFactory_1());
     return editorCell;
+  }
+  private EditorCell createCustomFactory_0(final EditorContext editorContext, final SNode node) {
+
+
+    final EditorCell cell = createCustomFactory_3();
+    EditorCell editorCell = ((_FunctionTypes._return_P0_E0<EditorCell>) () -> cell).invoke();
+    return editorCell;
+  }
+  private EditorCell createCustomFactory_1() {
+    return createCustomFactory_0(getEditorContext(), myNode);
+  }
+  private EditorCell createCustomFactory_2(final EditorContext editorContext, final SNode node) {
+
+
+    final EditorCell cell = createProperty_0();
+    EditorCell editorCell = ((_FunctionTypes._return_P0_E0<EditorCell>) () -> cell).invoke();
+    return editorCell;
+  }
+  private EditorCell createCustomFactory_3() {
+    return createCustomFactory_2(getEditorContext(), myNode);
   }
   private EditorCell createProperty_0() {
     getCellFactory().pushCellContext();
@@ -148,7 +168,7 @@ import org.jetbrains.mps.openapi.language.SConcept;
       editorCell.setCellId("property_title");
       Style style = new StyleImpl();
       style.set(StyleAttributes.FONT_STYLE, MPSFonts.BOLD);
-      style.set(StyleAttributes.FONT_SIZE, _StyleParameter_QueryFunction_phoryd_a1a1a0());
+      style.set(StyleAttributes.FONT_SIZE, _StyleParameter_QueryFunction_phoryd_a1a0a1a0());
       new titleStyleClass(this).apply(style, editorCell);
       editorCell.getStyle().putAll(style);
       if (true) {
@@ -167,7 +187,7 @@ import org.jetbrains.mps.openapi.language.SConcept;
       getCellFactory().popCellContext();
     }
   }
-  private int _StyleParameter_QueryFunction_phoryd_a1a1a0() {
+  private int _StyleParameter_QueryFunction_phoryd_a1a0a1a0() {
     return ((int) (EditorSettings.getInstance().getFontSize() * 1.25));
   }
   private EditorCell createCollection_3() {
